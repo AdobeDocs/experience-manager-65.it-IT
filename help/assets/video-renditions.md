@@ -26,22 +26,22 @@ Le rappresentazioni con codifica DM vengono memorizzate nel server proxy e distr
 
 Experience Manager Assets fornisce il supporto per la riproduzione di queste rappresentazioni sul lato client.
 
-Per visualizzare le rappresentazioni di una particolare risorsa video, apri la pagina della risorsa e seleziona l’icona Navigazione globale. Quindi, scegli **[!UICONTROL Rappresentazioni]** dall&#39;elenco.
+Per visualizzare le rappresentazioni di una particolare risorsa video, apri la pagina della risorsa e seleziona l’icona Navigazione globale. Scegliere quindi **[!UICONTROL Rappresentazioni]** dall&#39;elenco.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-L’elenco delle rappresentazioni video viene visualizzato nel **[!UICONTROL Rappresentazioni]** pannello.
+L&#39;elenco delle rappresentazioni video viene visualizzato nel pannello **[!UICONTROL Rappresentazioni]**.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Per configurare il server proxy per le rappresentazioni con codifica DM: [configurare i servizi Dynamic Medie Cloud](config-dynamic.md).
+Per configurare il server proxy per le rappresentazioni con codifica DM, [configurare i servizi cloud di Dynamic Medie](config-dynamic.md).
 
-Per generare rappresentazioni video con i parametri desiderati: [crea un profilo video corrispondente](video-profiles.md).
+Per generare le rappresentazioni video con i parametri desiderati, [crea un profilo video corrispondente](video-profiles.md).
 
 Dopo aver configurato il server proxy e creato i profili video, puoi includere questo predefinito video in un profilo di elaborazione e applicare il profilo di elaborazione a una cartella.
 
 >[!NOTE]
 >
->La riproduzione audio non funziona per i file OGG e WAV su Microsoft® Internet Explorer 11. Un errore `Invalid Source` viene visualizzata nella pagina dei dettagli della risorsa per le risorse con estensione OGG o WAV.
+>La riproduzione audio non funziona per i file OGG e WAV su Microsoft® Internet Explorer 11. Nella pagina dei dettagli delle risorse con estensione OGG o WAV viene visualizzato l&#39;errore `Invalid Source`.
 >
 >In MS® Edge e iPad, i file OGG non vengono riprodotti e viene generato un errore di formato non supportato.

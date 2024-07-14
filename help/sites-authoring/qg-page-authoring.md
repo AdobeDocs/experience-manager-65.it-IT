@@ -49,12 +49,12 @@ Prima di fornire una panoramica delle specifiche, ecco una piccola raccolta di s
 
 * Collegamenti di navigazione
 
-   * ***I collegamenti non sono disponibili per la navigazione*** quando sei in modalità **Modifica**. Per navigare con i collegamenti, è necessario [anteprima della pagina](/help/sites-authoring/editing-content.md#previewing-pages) utilizzando:
+   * ***I collegamenti non sono disponibili per la navigazione*** quando sei in modalità **Modifica**. Per spostarti con i collegamenti, devi [visualizzare l&#39;anteprima della pagina](/help/sites-authoring/editing-content.md#previewing-pages) utilizzando:
 
       * [Modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode)
       * [Visualizza come pubblicato](/help/sites-authoring/editing-content.md#view-as-published)
 
-* Le versioni non vengono avviate/create dall’editor di pagine, questa operazione è ora eseguita dalla console Sites (tramite **Crea** o [Timeline](/help/sites-authoring/basic-handling.md#timeline) per una risorsa selezionata).
+* Le versioni non vengono avviate/create dall&#39;editor di pagine, questa operazione è ora eseguita dalla console Sites (tramite **Crea** o [Timeline](/help/sites-authoring/basic-handling.md#timeline) per una risorsa selezionata).
 
 >[!NOTE]
 >
@@ -68,13 +68,13 @@ Prima di fornire una panoramica delle specifiche, ecco una piccola raccolta di s
 
 Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseguire ricerche:
 
-1. Apri **Sites** console (utilizzando il **Sites** opzione in [Navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation)) - viene attivato (a discesa) quando si seleziona il collegamento Adobe Experience Manager (in alto a sinistra).
+1. Apri la console **Sites** (utilizzando l&#39;opzione **Sites** nella [Navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation)). Questa operazione viene attivata (a discesa) quando selezioni il collegamento Adobe Experience Manager (in alto a sinistra).
 
-1. Per spostarti verso il basso nella struttura, tocca o fai clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista in uso: [Scheda, elenco o colonna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
+1. Per spostarti verso il basso nella struttura, tocca o fai clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla visualizzazione in uso - [Scheda, Elenco o Colonna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
-   ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
+   ![schermata_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Per spostarsi verso l’alto nella struttura, utilizza [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), che consente di tornare alla posizione selezionata:
+1. Spostati verso l&#39;alto nella struttura utilizzando [la breadcrumb nell&#39;intestazione](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), che consente di tornare alla posizione selezionata:
 
    ![qgtap-01](assets/qgtap-01.png)
 
@@ -84,9 +84,9 @@ Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseg
 
 ### Creazione di una nuova pagina {#creating-a-new-page}
 
-A [creare una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+Per [creare una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Passa alla posizione](#finding-your-page) dove desideri creare la pagina.
+1. [Passare al percorso](#finding-your-page) in cui si desidera creare la pagina.
 1. Utilizza l’icona **Crea** e seleziona **Pagina** dall’elenco:
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -109,18 +109,18 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
 
 1. Vista a schede:
 
-   * Entra nella modalità di selezione per [selezione della risorsa richiesta](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) con:
+   * Attiva la modalità di selezione [selezionando la risorsa richiesta](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) con:
 
       * Dispositivo mobile: seleziona e mantieni
-      * Desktop: il [azione rapida](/help/sites-authoring/basic-handling.md#quick-actions) - icona di spunta:
+      * Desktop: [azione rapida](/help/sites-authoring/basic-handling.md#quick-actions) - icona di spunta:
 
-   ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
+   ![schermata_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
    * Sulla scheda compare un segno di spunta per indicare che è stata selezionata la pagina.
 
    >[!NOTE]
    >
-   >Una volta nella modalità di selezione, **Seleziona** (un segno di spunta) verrà modificata in **Deseleziona** (croce).
+   >Una volta attivata la modalità di selezione, l&#39;icona **Seleziona** (un segno di spunta) diventerà **Deseleziona** (un segno di spunta).
 
 ### Azioni rapide (solo vista a schede/desktop) {#quick-actions-card-view-desktop-only}
 
@@ -129,14 +129,14 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 1. [Passa alla pagina](#finding-your-page) sulla quale desideri intervenire.
 1. Passa il puntatore del mouse sulla scheda che rappresenta la risorsa desiderata; vengono visualizzate le azioni rapide:
 
-   ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
+   ![schermata_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
 ### Modifica del contenuto delle pagine {#editing-your-page-content}
 
 1. [Passa alla pagina](#finding-your-page) da modificare.
 1. [Apri la pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) tramite l’icona Modifica (matita):
 
-   ![screen_shot_2018-03-21at160607](assets/screen_shot_2018-03-21at160607.png)
+   ![schermata_shot_2018-03-21at160607](assets/screen_shot_2018-03-21at160607.png)
 
    È accessibile da:
 
@@ -148,7 +148,7 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
    * [Aggiungere un nuovo componente alla pagina](/help/sites-authoring/editing-content.md#inserting-a-component):
 
       * apertura del pannello laterale
-      * selezionando la scheda componenti (la [browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser))
+      * selezione della scheda componenti (browser [componenti](/help/sites-authoring/author-environment-tools.md#components-browser))
       * trascinamento del componente richiesto sulla pagina.
 
      Il pannello laterale può essere aperto (e chiuso) con:
@@ -170,11 +170,11 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
    * [Sposta un componente](/help/sites-authoring/editing-content.md#moving-a-component) con una delle seguenti operazioni:
 
       * Trascina il componente richiesto nella nuova posizione.
-      * Apri la barra degli strumenti del componente facendo clic su. Utilizza il **Taglia** allora **Incolla** icone, se necessario.
+      * Apri la barra degli strumenti del componente facendo clic su. Utilizza le icone **Taglia** e **Incolla** dove richiesto.
 
    * [Copiare (e incollare)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Apri la barra degli strumenti del componente facendo clic su. Utilizza il **Copia** allora **Incolla** icone, a seconda delle necessità.
+      * Apri la barra degli strumenti del componente facendo clic su. Utilizza le icone **Copia** e **Incolla** come richiesto.
 
    >[!NOTE]
    >
@@ -182,11 +182,11 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 
    * [Eliminare](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Apri la barra degli strumenti del componente facendo clic su, quindi utilizza **Elimina** icona.
+      * Apri la barra degli strumenti del componente facendo clic su, quindi utilizza l&#39;icona **Elimina**.
 
    * [Aggiungere annotazioni](/help/sites-authoring/annotations.md#annotations) alla pagina:
 
-      * Seleziona la **Annota** modalità (icona a forma di fumetto). Aggiungere annotazioni utilizzando **Aggiungi annotazione** (più). Esci dalla modalità di annotazione utilizzando la X in alto a destra.
+      * Selezionare la modalità **Annota** (icona a forma di fumetto). Aggiungi annotazioni utilizzando l&#39;icona **Aggiungi annotazione** (segno più). Esci dalla modalità di annotazione utilizzando la X in alto a destra.
 
      ![Annotazioni](do-not-localize/screen_shot_2018-03-21at160813.png)
 
@@ -198,7 +198,7 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 
    >[!NOTE]
    >
-   >Per navigare utilizzando i collegamenti presenti nel contenuto, è necessario utilizzare [Modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode).
+   >Per spostarsi utilizzando i collegamenti nel contenuto, è necessario utilizzare la [modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### Modifica delle proprietà pagina   {#editing-the-page-properties}
 
@@ -212,7 +212,7 @@ Esistono due metodi (principali) di [modifica delle proprietà di una pagina](/h
       * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
       * La barra degli strumenti, se la [pagina è stata selezionata](#selectiingyourpageforfurtheraction).
 
-  ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
+  ![schermata_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
    1. Vengono visualizzate le proprietà della pagina. È possibile apportare le modifiche desiderate e poi selezionare Salva per applicarle
 
@@ -221,7 +221,7 @@ Esistono due metodi (principali) di [modifica delle proprietà di una pagina](/h
    1. Apri il menu **Informazioni pagina**.
    1. Seleziona **Apri proprietà** per aprire la finestra di dialogo per la modifica delle proprietà.
 
-  ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
+  ![schermata_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Pubblicazione della pagina (o annullamento della pubblicazione) {#publishing-your-page-or-unpublishing}
 
@@ -235,20 +235,20 @@ Esistono due metodi principali per la [pubblicazione della pagina](/help/sites-a
       * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
       * La barra degli strumenti, se la [pagina è stata selezionata](#selectiingyourpageforfurtheraction) (consente anche di accedere a [Pubblica più tardi](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
-  ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
+  ![schermata_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Durante la [modifica della pagina](#editing-your-page-content):
 
    1. Apri il menu **Informazioni pagina**.
    1. Seleziona **Pubblica pagina**.
 
-  ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
+  ![schermata_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * L’annullamento della pubblicazione di una pagina dalla console può essere eseguito solo tramite l’opzione **Gestisci pubblicazione**, disponibile solamente nella barra degli strumenti (non tramite le azioni rapide).
 
   L’opzione **Annulla pubblicazione pagina** è ancora disponibile tramite il menu **Informazioni pagina** nell’editor.
 
-  ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
+  ![schermata_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
   Consulta [Pubblicazione delle pagine](/help/sites-authoring/publishing-pages.md#unpublishing-pages) per ulteriori informazioni.
 
@@ -290,15 +290,15 @@ Queste azioni possono essere tutte attivate nei seguenti modi:
 
 Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
-![screen_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png)
+![schermata_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png)
 
 ### Accesso ai riferimenti di pagina {#accessing-page-references}
 
-[Accesso rapido ai riferimenti](/help/sites-authoring/author-environment-tools.md#references) in una pagina o da una pagina sono disponibili nella barra laterale Riferimenti.
+[L&#39;accesso rapido ai riferimenti](/help/sites-authoring/author-environment-tools.md#references) a una pagina o da una pagina è disponibile nella barra laterale Riferimenti.
 
 1. Seleziona l’icona **Riferimenti** dalla barra degli strumenti (prima o dopo aver [selezionato la pagina](#selecting-your-page-for-further-action)):
 
-   ![screen_shot_2018-03-21at161210](assets/screen_shot_2018-03-21at161210.png)
+   ![schermata_shot_2018-03-21at161210](assets/screen_shot_2018-03-21at161210.png)
 
    Verrà visualizzato un elenco di tipi di riferimenti:
 
@@ -312,9 +312,9 @@ Per creare una [versione](/help/sites-authoring/working-with-page-versions.md) d
 
 1. Per aprire la barra laterale Timeline, seleziona l’icona **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** dalla barra degli strumenti (prima o dopo aver [selezionato la pagina](#selecting-your-page-for-further-action)):
 
-   ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
+   ![schermata_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Fate clic sulla freccia rivolta verso l&#39;alto nella parte inferiore destra della colonna Timeline per visualizzare pulsanti aggiuntivi, tra cui **Salva come versione**.
+1. Fai clic sulla freccia su in basso a destra della colonna Timeline per visualizzare pulsanti aggiuntivi, tra cui **Salva come versione**.
 
    ![schermata_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -326,7 +326,7 @@ Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto
 
 1. Seleziona l’icona **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** dalla barra degli strumenti (prima o dopo aver [selezionato la pagina](#selecting-your-page-for-further-action)):
 
-   ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
+   ![schermata_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
    Se una versione della pagina è già stata salvata, viene elencata nella Timeline.
 

@@ -28,7 +28,7 @@ La navigazione nel repository per il recupero dei dati è sempre più rapida ris
 
 ## Limitare l’ambito dell’osservazione JCR {#restrict-the-scope-of-jcr-observation}
 
-Quando si ascoltano gli eventi nell’archivio, è importante restringere il più possibile l’ambito. Ad esempio, è molto meglio ascoltare un evento all’indirizzo `/etc/mycompany` che per ascoltare `/etc`. Non ascoltare mai gli eventi nella directory principale dell’archivio. Inoltre, assicurati che i metodi di callback vengano eseguiti il più rapidamente possibile quando non hanno nulla da fare.
+Quando si ascoltano gli eventi nell’archivio, è importante restringere il più possibile l’ambito. Ad esempio, è molto meglio ascoltare un evento alle `/etc/mycompany` piuttosto che ascoltare alle `/etc`. Non ascoltare mai gli eventi nella directory principale dell’archivio. Inoltre, assicurati che i metodi di callback vengano eseguiti il più rapidamente possibile quando non hanno nulla da fare.
 
 ## Eliminare l’utilizzo dell’accesso come amministratore JCR {#eliminate-use-of-jcr-admin-access}
 

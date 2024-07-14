@@ -24,7 +24,7 @@ Il sito We.Finance è un sito di servizi finanziari progettato per aiutarti ad a
 
 Leggi una procedura dettagliata relativa a un caso d’uso di We.Finance Auto Insurance che illustra il modo in cui l’AEM si forma e la sua integrazione con Microsoft® Dynamics consente di personalizzare l’esperienza del cliente in una società di servizi finanziari. La procedura dettagliata interattiva è progettata per facilitare l’implementazione di transazioni digitali complesse e la comunicazione con i clienti in una società finanziaria.
 
-**Il percorso inizia con il caso d’uso:**
+**Il percorso inizia con il caso d&#39;uso:**
 
 Sarah Rose è un cliente We.Finance esistente e ha acquistato una polizza di assicurazione auto. È quel periodo dell&#39;anno in cui Sarah rinnova la sua polizza assicurativa. Gloria Rios è la sua agente assicurativo. We.Finance invia un promemoria a Sarah in merito al rinnovo della sua politica. Sarah segue le istruzioni fornite nell’e-mail e completa correttamente il processo.
 
@@ -37,7 +37,7 @@ Lo scenario di applicazione di Assicurazione automatica We.Finance è una narraz
 
 ### Gloria invia una comunicazione di rinnovo della polizza assicurativa da We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria accede all’istanza AEM e fa clic su **Rinnovo Assicurazione Automatica,** e quindi clic su **Apri interfaccia utente agente**. Il clic precompila il documento di assicurazione con i dettagli della polizza di Sarah Rose. Clic su Gloria **Invia** e viene visualizzato un messaggio sullo schermo &quot;Invio avviato&quot; e quindi tra pochi secondi &quot;Invio completato&quot;.
+Gloria accede all&#39;istanza dell&#39;AEM, fa clic su **Rinnovo assicurazione automatica,**, quindi fa clic su **Apri interfaccia utente agente**. Il clic precompila il documento di assicurazione con i dettagli della polizza di Sarah Rose. Gloria fa clic su **Invia** e viene visualizzato un messaggio nella schermata &quot;Invio avviato&quot; e quindi tra pochi secondi &quot;Invio completato&quot;.
 
 Sarah riceve un’e-mail con l’oggetto &quot;Rinnovo dell’assicurazione automatica&quot;.
 
@@ -45,17 +45,17 @@ Sarah riceve un’e-mail con l’oggetto &quot;Rinnovo dell’assicurazione auto
 
 #### Vedi tu stesso {#see-it-yourself}
 
-Vai a **Adobe Experience Manager** > **Forms** > **Forms e documenti** > **We.Finance** > **Assicurazione automatica**. Seleziona il rinnovo dell’assicurazione automatica **comunicazione interattiva** e fai clic su **Apri interfaccia utente agente**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Inserisci un indirizzo e-mail valido in modo che possano ricevere l’e-mail con il documento della policy allegato e fai clic su Invia.
+Vai a **Adobe Experience Manager** > **Forms** > **Forms e documenti** > **We.Finance** > **Assicurazione automatica**. Seleziona Rinnovo assicurazione automatica **comunicazione interattiva** e fai clic su **Apri interfaccia utente agente**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Inserisci un indirizzo e-mail valido in modo che possano ricevere l’e-mail con il documento della policy allegato e fai clic su Invia.
 
-Puoi accedere e rivedere la comunicazione interattiva Auto Insurance Renewal direttamente da `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+Puoi accedere alla comunicazione interattiva Rinnovo assicurazione automatica e rivederla direttamente da `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah riceve una comunicazione di rinnovo della polizza assicurativa da We.Finance e decide di rinnovare {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
 Sarah riceve un&#39;e-mail con un allegato da We.Finance, che ricorda a Sarah che la sua polizza di assicurazione automatica sta per scadere. L&#39;allegato è la versione stampata della lettera di Assicurazione automatica di Sarah.
 
-Sarah fa clic su **Rinnova ora** ed è diretto alla versione web della sua lettera di Assicurazione Automatica. Oltre a questa lettera, Sarah trova il tempo rimanente per la polizza prima della scadenza. La pagina fornisce a Sarah una panoramica di base dei dettagli della sua polizza assicurativa come il numero della polizza, l’importo dovuto e altre informazioni come le offerte di sconto e i premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
+Sarah fa clic su **Rinnova ora** e viene indirizzata alla versione Web della lettera di assicurazione automatica. Oltre a questa lettera, Sarah trova il tempo rimanente per la polizza prima della scadenza. La pagina fornisce a Sarah una panoramica di base dei dettagli della sua polizza assicurativa come il numero della polizza, l’importo dovuto e altre informazioni come le offerte di sconto e i premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo al criterio.
 
-![ref1](assets/ref1.png)
+![rif1](assets/ref1.png)
 
 #### Come funziona {#how-it-works}
 
@@ -65,13 +65,13 @@ Il pulsante Rinnova ora nell’e-mail è collegato all’applicazione Rinnova as
 
 #### Vedi tu stesso {#see-it-yourself-1}
 
-Devi aver ricevuto un&#39;e-mail con un PDF allegato. Il PDF è una versione stampata della lettera di Assicurazione automatica. Clic **Rinnova ora** per accedere alla versione web del criterio. Controlla le tue informazioni personali e i dettagli della policy e fai clic su **Rinnova ora** che ti porta a un&#39;altra comunicazione interattiva.
+Devi aver ricevuto un&#39;e-mail con un PDF allegato. Il PDF è una versione stampata della lettera di Assicurazione automatica. Fare clic su **Rinnova ora** per accedere alla versione Web del criterio. Controlla le tue informazioni personali e i dettagli dei criteri e fai clic su **Rinnova ora** per passare a un&#39;altra comunicazione interattiva.
 
-Il **Rinnova ora** nell’e-mail indirizza Sarah alla policy sul web. Puoi visitare il seguente URL:
+Il pulsante **Rinnova ora** nell&#39;e-mail indirizza Sarah al criterio sul Web. Puoi visitare il seguente URL:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
-Controlla il riepilogo dettagliato del rinnovo dell’assicurazione automatica e fai clic su **Rinnova ora** nella parte inferiore della pagina.
+Controlla il riepilogo dettagliato del rinnovo dell&#39;assicurazione automatica e fai clic su **Rinnova ora** nella parte inferiore della pagina.
 
 ### Sarah raggiunge la pagina dei pagamenti {#sarah-reaches-the-payment-page}
 
@@ -83,7 +83,7 @@ Il pulsante Rinnova ora indirizza Sarah alla pagina di pagamento. La pagina di p
 
 #### Vedi tu stesso {#see-it-yourself-2}
 
-Clic **Rinnova ora** per accedere alla pagina Pagamento. Inserisci le informazioni sulla carta di credito e fai clic su **Effettua pagamento**.
+Fai clic su **Rinnova ora** per accedere alla pagina Pagamento. Inserisci le informazioni sulla tua carta di credito e fai clic su **Paga**.
 
 Puoi accedere alla pagina dei pagamenti nell’istanza di authoring all’indirizzo
 
@@ -91,7 +91,7 @@ Puoi accedere alla pagina dei pagamenti nell’istanza di authoring all’indiri
 
 ### Sarah effettua il pagamento e completa la procedura {#sarah-makes-the-payment-and-completes-the-process}
 
-Sarah compila i dati della sua carta di credito e i suoi clic **Effettua pagamento**.
+Sarah compila i dettagli della sua carta di credito e fa clic su **Effettua pagamento**.
 
 #### Come funziona {#how-it-works-2}
 

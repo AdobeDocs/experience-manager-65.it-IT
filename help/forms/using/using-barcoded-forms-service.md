@@ -22,13 +22,13 @@ ht-degree: 0%
 
 Il servizio Barcoded Forms estrae i dati dalle immagini elettroniche dei codici a barre. Il servizio accetta file TIFF e PDF che includono uno o più codici a barre come input ed estrae i dati del codice a barre. I dati del codice a barre possono essere formattati in vari modi, inclusi XML, stringa delimitata o qualsiasi formato personalizzato creato con JavaScript.
 
-Il servizio Barcoded Forms supporta quanto segue **bidimensionale (2D)** simbologie fornite come documenti TIFF o PDF scansionati:
+Il servizio Barcoded Forms supporta le seguenti **simbologie bidimensionali (2D)** fornite come documenti TIFF o PDF digitalizzati:
 
 * PDF 417
 * Matrice di dati
 * Codice QR
 
-Il servizio supporta inoltre quanto segue **unidimensionale** simbologie fornite come documenti TIFF o PDF scansionati:
+Il servizio supporta inoltre le seguenti **simbologie unidimensionali** fornite come documenti TIFF o PDF digitalizzati:
 
 * Codabar
 * Codice128
@@ -94,7 +94,7 @@ Il servizio Barcoded Forms restituisce il seguente documento XML dopo la decodif
 
 ### Flussi di lavoro che utilizzano moduli con codice a barre {#workflows-that-use-barcoded-forms}
 
-Gli autori di moduli creano moduli interattivi con codice a barre utilizzando Designer. (vedere [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).) Quando un utente compila un modulo con codice a barre utilizzando Adobe Reader o Acrobat, il codice a barre viene aggiornato automaticamente per codificare i dati del modulo.
+Gli autori di moduli creano moduli interattivi con codice a barre utilizzando Designer. (Vedi [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).) Quando un utente compila un modulo con codice a barre utilizzando Adobe Reader o Acrobat, il codice a barre viene aggiornato automaticamente per codificare i dati del modulo.
 
 Il servizio Barcoded Forms è utile per convertire i dati esistenti su carta in formato elettronico. Ad esempio, quando un modulo codificato a barre viene compilato e stampato, la copia stampata può essere scansionata e utilizzata come input per il servizio Forms codificato a barre.
 
@@ -102,7 +102,7 @@ Gli endpoint delle cartelle controllate vengono in genere utilizzati per avviare
 
 ### Formati di codifica e decodifica consigliati {#recommended-encoding-and-decoding-formats}
 
-Gli autori di moduli con codice a barre sono invitati a utilizzare un formato semplice e delimitato (ad esempio delimitato da tabulazioni) durante la codifica dei dati nei codici a barre. Inoltre, evita di utilizzare il ritorno a capo come delimitatore di campo. Designer fornisce una selezione di codifiche delimitate che generano automaticamente script JavaScript per codificare i codici a barre. I dati decodificati hanno i nomi dei campi sulla prima riga e i loro valori sulla seconda riga, con tabulazioni tra ciascun campo.
+Gli autori di moduli con codice a barre sono invitati a utilizzare un formato semplice e delimitato (ad esempio delimitato da tabulazioni) durante la codifica dei dati nei codici a barre. Inoltre, evita di utilizzare il ritorno a capo come delimitatore di campo. Designer fornisce una selezione di codifiche delimitate che generano automaticamente lo script JavaScript per codificare i codici a barre. I dati decodificati hanno i nomi dei campi sulla prima riga e i loro valori sulla seconda riga, con tabulazioni tra ciascun campo.
 
 Quando si decodificano i codici a barre, specificare il carattere utilizzato per delimitare i campi. Il carattere specificato per la decodifica deve corrispondere al carattere utilizzato per la codifica del codice a barre. Ad esempio, quando si utilizza il formato delimitato da tabulazioni consigliato, l&#39;operazione Estrai in XML deve utilizzare il valore predefinito Tab come delimitatore di campo.
 
@@ -127,19 +127,19 @@ Inoltre, considera le seguenti limitazioni quando utilizzi il servizio Barcoded 
 * Il servizio supporta completamente AcroForms e i moduli statici contenenti codici a barre 2D salvati con Adobe Reader o Acrobat. Tuttavia, per i codici a barre 1D, appiattire il modulo o fornirlo come documento PDF o TIFF digitalizzato.
 * I moduli XFA dinamici non sono completamente supportati. Per decodificare correttamente i codici a barre 1D e 2D in un modulo dinamico, appiattire il modulo o fornirlo come documento PDF o TIFF digitalizzato.
 
-Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la simbologia supportata se si osservano le limitazioni di cui sopra. Per ulteriori informazioni su come creare moduli interattivi con codice a barre, consulta [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la simbologia supportata se si osservano le limitazioni di cui sopra. Per ulteriori informazioni sulla creazione di moduli interattivi con codice a barre, vedere [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Configurare le proprietà del servizio   {#configureproperties}
 
-È possibile utilizzare **Servizio Forms in codice a barre AEMFD** nella console AEM per configurare le proprietà per questo servizio. L’URL predefinito della console AEM è `https://[host]:'port'/system/console/configMgr`.
+È possibile utilizzare **AEMFD Barcoded Forms Service** nella console AEM per configurare le proprietà per questo servizio. L&#39;URL predefinito della console AEM è `https://[host]:'port'/system/console/configMgr`.
 
 ## Utilizzo del servizio {#using}
 
 Il servizio Forms in codice a barre fornisce le due API seguenti:
 
-* **[decodificare](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodifica tutti i codici a barre disponibili in un documento di input PDF o in un’immagine tiff. Restituisce un altro documento XML contenente dati recuperati da tutti i codici a barre disponibili nel documento o nell&#39;immagine di input.
+* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodifica tutti i codici a barre disponibili in un documento di input PDF o in un&#39;immagine tiff. Restituisce un altro documento XML contenente dati recuperati da tutti i codici a barre disponibili nel documento o nell&#39;immagine di input.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: converte i dati decodificati utilizzando l’API di decodifica in dati XML. Questi dati XML possono essere uniti a un modulo XFA. Restituisce un elenco di documenti XML, uno per ogni codice a barre.
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: converte i dati decodificati utilizzando l&#39;API di decodifica in dati XML. Questi dati XML possono essere uniti a un modulo XFA. Restituisce un elenco di documenti XML, uno per ogni codice a barre.
 
 ### Utilizzo del servizio BCF con una JSP o Servlet {#using-bcf-service-with-a-jsp-or-servlets}
 

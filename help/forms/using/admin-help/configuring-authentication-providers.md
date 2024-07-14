@@ -20,14 +20,14 @@ ht-degree: 0%
 
 I domini ibridi richiedono almeno un provider di autenticazione, mentre i domini enterprise richiedono almeno un provider di autenticazione o un provider di directory.
 
-Se si abilita SSO utilizzando SPNEGO, aggiungere un provider di autenticazione Kerberos con SPNEGO abilitato e un provider LDAP come backup. Questa configurazione abilita l&#39;autenticazione utente con un ID utente e una password se SPNEGO non funziona. (vedere [Abilita SSO tramite SPNEGO](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
+Se si abilita SSO utilizzando SPNEGO, aggiungere un provider di autenticazione Kerberos con SPNEGO abilitato e un provider LDAP come backup. Questa configurazione abilita l&#39;autenticazione utente con un ID utente e una password se SPNEGO non funziona. (Vedi [Abilitare l&#39;SSO tramite SPNEGO](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
 ## Aggiungere un provider di autenticazione {#add-an-authentication-provider}
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
-1. Selezionare un dominio esistente nell&#39;elenco. Se stai aggiungendo l’autenticazione per un nuovo dominio, consulta [Aggiungere un dominio enterprise](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) o [Aggiungere un dominio ibrido](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
+1. Selezionare un dominio esistente nell&#39;elenco. Se stai aggiungendo l&#39;autenticazione per un nuovo dominio, vedi [Aggiungere un dominio enterprise](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) o [Aggiungere un dominio ibrido](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
 1. Fare clic su Aggiungi autenticazione e, nell&#39;elenco Provider di autenticazione, selezionare un provider, a seconda del meccanismo di autenticazione utilizzato dall&#39;organizzazione.
-1. Fornisci eventuali informazioni aggiuntive richieste sulla pagina. (vedere [Impostazioni di autenticazione](configuring-authentication-providers.md#authentication-settings).)
+1. Fornisci eventuali informazioni aggiuntive richieste sulla pagina. (Vedi [Impostazioni di autenticazione](configuring-authentication-providers.md#authentication-settings).)
 1. (Facoltativo) Fai clic su Prova per verificare la configurazione.
 1. Fare clic su OK e quindi di nuovo su OK.
 
@@ -35,7 +35,7 @@ Se si abilita SSO utilizzando SPNEGO, aggiungere un provider di autenticazione K
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fare clic sul dominio appropriato nell&#39;elenco.
-1. Nella pagina visualizzata, seleziona il provider di autenticazione appropriato dall’elenco e apporta le modifiche necessarie. (vedere [Impostazioni di autenticazione](configuring-authentication-providers.md#authentication-settings).)
+1. Nella pagina visualizzata, seleziona il provider di autenticazione appropriato dall’elenco e apporta le modifiche necessarie. (Vedi [Impostazioni di autenticazione](configuring-authentication-providers.md#authentication-settings).)
 1. Fare clic su OK.
 
 ## Eliminare un provider di autenticazione {#delete-an-authentication-provider}
@@ -57,51 +57,52 @@ Per utilizzare il server LDAP specificato nella configurazione della directory, 
 
 Per utilizzare un server LDAP diverso per eseguire l&#39;autenticazione, selezionare LDAP come provider di autenticazione e selezionare la casella di controllo Autenticazione LDAP personalizzata. Vengono visualizzate le seguenti impostazioni di configurazione.
 
-**Server:** (Obbligatorio) Nome di dominio completo (FQDN) del server delle directory. Ad esempio, per un computer denominato x nella rete example.com, il nome di dominio completo è x.example.com. È possibile utilizzare un indirizzo IP al posto del nome del server FQDN.
+**Server:** (obbligatorio) Nome di dominio completo (FQDN) del server delle directory. Ad esempio, per un computer denominato x nella rete example.com, il nome di dominio completo è x.example.com. È possibile utilizzare un indirizzo IP al posto del nome del server FQDN.
 
-**Porta:** (Obbligatorio) Porta utilizzata dal server delle directory. In genere, 389 o 636 se il protocollo SSL (Secure Sockets Layer) viene utilizzato per l&#39;invio di informazioni di autenticazione sulla rete.
+**Porta:** (obbligatoria) Porta utilizzata dal server delle directory. In genere, 389 o 636 se il protocollo SSL (Secure Sockets Layer) viene utilizzato per l&#39;invio di informazioni di autenticazione sulla rete.
 
-**SSL:** (Obbligatorio) Specifica se il server delle directory utilizza SSL per l&#39;invio di dati in rete. Il valore predefinito è No. Se impostato su Sì, il certificato del server LDAP corrispondente deve essere considerato attendibile dall&#39;ambiente runtime Java™ (JRE) del server applicazioni.
+**SSL:** (obbligatorio) Specifica se il server delle directory utilizza SSL per l&#39;invio di dati in rete. Il valore predefinito è No. Se impostato su Sì, il certificato del server LDAP corrispondente deve essere considerato attendibile dall&#39;ambiente runtime Java™ (JRE) del server applicazioni.
 
-**Binding** (Obbligatorio) Specifica come accedere alla directory.
+**Binding** (obbligatorio) Specifica come accedere alla directory.
 
 **Anonimo:** Non è richiesto alcun nome utente o password.
 
-**Utente:** Autenticazione richiesta. Nella casella Nome specificare il nome del record utente che può accedere alla directory. È consigliabile immettere il nome distinto completo (DN) dell&#39;account utente, ad esempio cn=Jane Doe, ou=user, dc=can, dc=com. Nella casella Password specificare la password associata. Queste impostazioni sono necessarie quando si seleziona Utente come opzione di binding.
+**Utente:** autenticazione richiesta. Nella casella Nome specificare il nome del record utente che può accedere alla directory. È consigliabile immettere il nome distinto completo (DN) dell&#39;account utente, ad esempio cn=Jane Doe, ou=user, dc=can, dc=com. Nella casella Password specificare la password associata. Queste impostazioni sono necessarie quando si seleziona Utente come opzione di binding.
 
-**Recupera DN di base:** (Non obbligatorio) Recupera i DN di base e li visualizza nell’elenco a discesa. Questa impostazione è utile quando si dispone di più DN di base e si deve selezionare un valore.
+**Recupera DN di base:** (non obbligatorio) Recupera i DN di base e li visualizza nell&#39;elenco a discesa. Questa impostazione è utile quando si dispone di più DN di base e si deve selezionare un valore.
 
-**DN base:** (Obbligatorio) Utilizzato come punto di partenza per la sincronizzazione di utenti e gruppi dalla gerarchia LDAP. È consigliabile specificare un DN di base al livello più basso della gerarchia che includa tutti gli utenti e i gruppi che devono essere sincronizzati per i servizi. Non includere il DN dell’utente in questa impostazione. Per sincronizzare un utente specifico, utilizzare l&#39;impostazione Filtro di ricerca.
+**DN di base:** (obbligatorio) Utilizzato come punto iniziale per la sincronizzazione di utenti e gruppi dalla gerarchia LDAP. È consigliabile specificare un DN di base al livello più basso della gerarchia che includa tutti gli utenti e i gruppi che devono essere sincronizzati per i servizi. Non includere il DN dell’utente in questa impostazione. Per sincronizzare un utente specifico, utilizzare l&#39;impostazione Filtro di ricerca.
 
-**Popolare la pagina con:** (Non obbligatorio) Se questa opzione è selezionata, compila gli attributi nelle pagine delle impostazioni Utente e Gruppo con i corrispondenti valori LDAP predefiniti.
+**Popola pagina con:** (non obbligatorio) Se selezionata, compila gli attributi nelle pagine delle impostazioni Utente e Gruppo con i corrispondenti valori LDAP predefiniti.
 
-**Filtro di ricerca:** (Obbligatorio) Filtro di ricerca da utilizzare per trovare il record associato all’utente. Consulta Sintassi del filtro di ricerca.
+**Filtro di ricerca:** (obbligatorio) Filtro di ricerca da utilizzare per trovare il record associato all&#39;utente. Consulta Sintassi del filtro di ricerca.
 
 ### Impostazioni Kerberos {#kerberos-settings}
 
 Se si configura l&#39;autenticazione per un dominio enterprise o ibrido e si seleziona Autenticazione Kerberos, sono disponibili le impostazioni seguenti.
 
-**IP DNS:** Indirizzo IP DNS del server in cui è in esecuzione il modulo AEM. In Windows, è possibile determinare questo indirizzo IP eseguendo ipconfig /all nella riga di comando.
+**IP DNS:** indirizzo IP DNS del server in cui sono in esecuzione i moduli AEM. In Windows, è possibile determinare questo indirizzo IP eseguendo ipconfig /all nella riga di comando.
 
 **Host KDC:** Nome host completo o indirizzo IP del server Active Directory utilizzato per l&#39;autenticazione.
 
-**Utente servizio:** Se si utilizza Active Directory 2003, questo valore è il mapping creato per l&#39;entità servizio nel modulo `HTTP/<server name>`. Se si utilizza Active Directory 2008, questo valore è l&#39;ID di accesso dell&#39;entità servizio. Ad esempio, si supponga che l&#39;entità servizio sia denominata um spnego, che l&#39;ID utente sia spnegodemo e che la mappatura sia HTTP/example.yourcompany.com. Con Active Directory 2003, l&#39;utente del servizio viene impostato su HTTP/example.yourcompany.com. Con Active Directory 2008, l&#39;utente del servizio viene impostato su spnegodemo. Consultate Abilitare l&#39;SSO tramite SPNEGO.
+**Utente servizio:** Se si utilizza Active Directory 2003, questo valore è il mapping creato per l&#39;entità servizio nel formato `HTTP/<server name>`. Se si utilizza Active Directory 2008, questo valore è l&#39;ID di accesso dell&#39;entità servizio. Ad esempio, si supponga che l&#39;entità servizio sia denominata um spnego, che l&#39;ID utente sia spnegodemo e che la mappatura sia HTTP/example.yourcompany.com. Con Active Directory 2003, l&#39;utente del servizio viene impostato su HTTP/example.yourcompany.com. Con Active Directory 2008, l&#39;utente del servizio viene impostato su spnegodemo. Consultate Abilitare l&#39;SSO tramite SPNEGO.
 
 **Area di autenticazione servizio:** Nome dominio per Active Directory
 
-**Password servizio:** Password dell’utente del servizio
+**Password servizio:** Password utente servizio
 
-**Attiva SPNEGO:** Consente l&#39;utilizzo di SPNEGO per il Single Sign-On (SSO). Consultate Abilitare l&#39;SSO tramite SPNEGO.
+**Abilita SPNEGO:** Abilita l&#39;utilizzo di SPNEGO per Single Sign-On (SSO). Consultate Abilitare l&#39;SSO tramite SPNEGO.
 
 ### Impostazioni SAML {#saml-settings}
 
-Se stai configurando l’autenticazione per un dominio enterprise o ibrido e selezioni l’autenticazione SAML, sono disponibili le seguenti impostazioni. Per ulteriori informazioni sulle impostazioni SAML, vedere [Configura impostazioni provider di servizi SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
+Se stai configurando l’autenticazione per un dominio enterprise o ibrido e selezioni l’autenticazione SAML, sono disponibili le seguenti impostazioni. Per ulteriori informazioni sulle impostazioni SAML, vedere [Configurare le impostazioni del provider di servizi SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
-**Selezionare un file di metadati del provider di identità SAML da importare:** Fare clic su Sfoglia per selezionare un file di metadati del provider di identità SAML generato dall&#39;IDP, quindi fare clic su Importa. Vengono visualizzati i dettagli dell&#39;IDP.
+**Selezionare un metadati provider di identità SAML
+file da importare:** Fare clic su Sfoglia per selezionare un file di metadati del provider di identità SAML generato dall&#39;IDP, quindi fare clic su Importa. Vengono visualizzati i dettagli dell&#39;IDP.
 
 **Titolo:** Alias dell&#39;URL indicato da EntityID. Il titolo viene visualizzato anche nella pagina di accesso per gli utenti aziendali e locali.
 
-**Il provider di identità supporta l&#39;autenticazione di base del client:** L&#39;autenticazione di base del client viene utilizzata quando l&#39;IDP utilizza un profilo SAML Artifact Resolution. In questo profilo, User Management si connette a un servizio Web in esecuzione nell&#39;IDP per recuperare l&#39;asserzione SAML effettiva. L&#39;IDP potrebbe richiedere l&#39;autenticazione. Se l&#39;IDP richiede l&#39;autenticazione, selezionare questa opzione e specificare un nome utente e una password nelle caselle fornite.
+**Il provider di identità supporta l&#39;autenticazione di base del client:** l&#39;autenticazione di base del client viene utilizzata quando l&#39;IDP utilizza un profilo di risoluzione degli artefatti SAML. In questo profilo, User Management si connette a un servizio Web in esecuzione nell&#39;IDP per recuperare l&#39;asserzione SAML effettiva. L&#39;IDP potrebbe richiedere l&#39;autenticazione. Se l&#39;IDP richiede l&#39;autenticazione, selezionare questa opzione e specificare un nome utente e una password nelle caselle fornite.
 
 **Proprietà personalizzate:** Consente di specificare proprietà aggiuntive. Le proprietà aggiuntive sono coppie nome=valore separate da nuove righe.
 
@@ -110,7 +111,7 @@ Se si utilizza l&#39;associazione degli artefatti, sono necessarie le seguenti p
 * Aggiungi la seguente proprietà personalizzata per specificare un nome utente che rappresenti il provider di servizi AEM forms, utilizzato per l’autenticazione nel servizio IDP Artifact Resolution.
   `saml.idp.resolve.username=<username>`
 
-* Aggiungi la seguente proprietà personalizzata per specificare la password per l’utente specificato in `saml.idp.resolve.username`.
+* Aggiungere la seguente proprietà personalizzata per specificare la password per l&#39;utente specificato in `saml.idp.resolve.username`.
   `saml.idp.resolve.password=<password>`
 
 * Aggiungi la seguente proprietà personalizzata per consentire al provider di servizi di ignorare la convalida del certificato durante la creazione della connessione con il servizio di risoluzione degli artefatti tramite SSL.
@@ -130,11 +131,11 @@ Questa procedura descrive il funzionamento dell’autenticazione tradizionale ne
 1. Il provider di autenticazione convalida le credenziali.
 1. Il provider di autenticazione verifica quindi se l&#39;utente esiste nel database User Management. Sono possibili i seguenti stati:
 
-   **Esiste** Se l’utente è corrente e sbloccato, Gestione utenti restituisce il completamento dell’autenticazione. Tuttavia, se l’utente non è attuale o è bloccato, Gestione utenti restituisce un errore di autenticazione.
+   **Esiste** Se l&#39;utente è corrente e sbloccato, Gestione utenti restituirà l&#39;autenticazione completata. Tuttavia, se l’utente non è attuale o è bloccato, Gestione utenti restituisce un errore di autenticazione.
 
    **Non esiste** Gestione utenti restituisce un errore di autenticazione.
 
-   **Non valido** Gestione utenti restituisce un errore di autenticazione.
+   **Non valido** Gestione utenti ha restituito un errore di autenticazione.
 
 1. Viene valutato il risultato restituito dal provider di autenticazione. Se il provider di autenticazione ha restituito l&#39;autenticazione, l&#39;utente può accedere. In caso contrario, User Management controlla con il provider di autenticazione successivo (passaggi 2-3).
 1. Se nessun provider di autenticazione disponibile convalida le credenziali utente, viene restituito un errore di autenticazione.
@@ -145,7 +146,7 @@ Senza il provisioning just-in-time, quando un utente viene autenticato correttam
 
 ### Abilitare il provisioning just-in-time per un dominio {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Scrivere un contenitore di servizi che implementi le interfacce IdentityCreator e AssignmentProvider. (vedere [Programmazione con i moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63).)
+1. Scrivere un contenitore di servizi che implementi le interfacce IdentityCreator e AssignmentProvider. (Vedi [Programmazione con moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63).)
 1. Distribuire il contenitore del servizio nel server Forms.
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 
@@ -154,7 +155,7 @@ Senza il provisioning just-in-time, quando un utente viene autenticato correttam
 1. Per creare un dominio, fai clic su Nuovo dominio enterprise o Nuovo dominio ibrido. Per modificare un dominio esistente, fai clic sul nome del dominio.
 1. Selezionare Abilita provisioning Just In Time.
 
-   ***nota **: se la casella di controllo Abilita provisioning Just In Time non è presente, fai clic su Home > Impostazioni > Gestione utente > Configurazione > Attributi di sistema avanzati, quindi fai clic su Ricarica.*
+   ***nota **: se la casella di controllo Abilita provisioning Just In Time non è presente, fare clic su Home > Impostazioni > Gestione utente> Configurazione > Attributi di sistema avanzati, quindi fare clic su Ricarica.*
 
-1. Aggiungi provider di autenticazione. Durante l&#39;aggiunta dei provider di autenticazione, nella schermata Nuova autenticazione selezionare un creatore di identità e un provider di assegnazione registrati. (vedere [Configurazione dei provider di autenticazione](configuring-authentication-providers.md#configuring-authentication-providers).)
+1. Aggiungi provider di autenticazione. Durante l&#39;aggiunta dei provider di autenticazione, nella schermata Nuova autenticazione selezionare un creatore di identità e un provider di assegnazione registrati. (Vedere [Configurazione dei provider di autenticazione](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Salva il dominio.

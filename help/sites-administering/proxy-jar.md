@@ -45,17 +45,17 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ### Opzioni {#options}
 
-* **q (modalità non interattiva)** Non scrive le richieste nella finestra della console. Utilizzare questa opzione se non si desidera rallentare la connessione o se si registra l&#39;output in un file (vedere l&#39;opzione -logfile ).
+* **q (modalità non interattiva)** non scrive le richieste nella finestra della console. Utilizzare questa opzione se non si desidera rallentare la connessione o se si registra l&#39;output in un file (vedere l&#39;opzione -logfile ).
 * **b (modalità binaria)** Se stai cercando combinazioni di byte specifiche nel traffico, abilita la modalità binaria. L’output contiene l’output esadecimale e dei caratteri.
-* **t (voci di registro timestamp)** Aggiunge una marca temporale a ciascun output del registro. La marca temporale è in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzalo per individuare gli eventi che si sono verificati in un momento specifico se utilizzi il server proxy per un periodo di tempo più lungo.
-* **logfile &lt;filename> (scrittura su file di log)** Scrive la conversazione client-server in un file di log. Questo parametro funziona anche in modalità silenziosa.
-* **i &lt;numindentions> (aggiungi rientro)** Per una migliore leggibilità, a ogni connessione attiva viene applicato un rientro. Il valore predefinito è 16 livelli. (Novità della versione 1.16 di proxy.jar).
+* **t (voci di registro timestamp)** Aggiunge un timestamp a ogni output di registro. La marca temporale è in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzalo per individuare gli eventi che si sono verificati in un momento specifico se utilizzi il server proxy per un periodo di tempo più lungo.
+* **logfile &lt;nomefile> (scrittura nel file di log)** Scrive la conversazione client-server in un file di log. Questo parametro funziona anche in modalità silenziosa.
+* **i &lt;numIndentions> (aggiungi rientro)** Ogni connessione attiva è sottoposta a rientro per migliorarne la leggibilità. Il valore predefinito è 16 livelli. (Novità della versione 1.16 di proxy.jar).
 
 ## Utilizzo dello strumento Server proxy {#uses-of-the-proxy-server-tool}
 
 Gli scenari seguenti illustrano alcuni degli scopi per i quali è possibile utilizzare lo strumento Proxy Server:
 
-**Verifica la presenza di cookie e relativi valori**
+**Verifica cookie e relativi valori**
 
 L’esempio di voce di registro seguente mostra tutti i cookie e i relativi valori inviati dal client alla sesta connessione aperta dall’avvio del proxy:
 
@@ -63,7 +63,7 @@ L’esempio di voce di registro seguente mostra tutti i cookie e i relativi valo
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Verifica delle intestazioni e dei relativi valori** L&#39;esempio di voce di registro seguente mostra che il server è in grado di creare una connessione keep-alive e che l&#39;intestazione della lunghezza del contenuto è stata impostata correttamente:
+**Verifica delle intestazioni e dei relativi valori** L&#39;esempio di voce di registro seguente indica che il server è in grado di stabilire una connessione keep-alive e che l&#39;intestazione della lunghezza del contenuto è stata impostata correttamente:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -73,7 +73,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Verifica del funzionamento di Keep-Alive**
 
-**Keep-Alive** indica che un client riutilizza la connessione al server per trasportare più file (codice della pagina, immagini, fogli di stile e così via). Senza keep-alive, il client deve stabilire una nuova connessione per ogni richiesta.
+**Keep-Alive** significa che un client riutilizza la connessione al server per il trasporto di più file (codice della pagina, immagini, fogli di stile e così via). Senza keep-alive, il client deve stabilire una nuova connessione per ogni richiesta.
 
 Per verificare se keep-alive funziona:
 
@@ -85,7 +85,7 @@ Per verificare se keep-alive funziona:
 
 **Ricerca di richieste perse**
 
-Se perdi le richieste in un’impostazione server complessa, ad esempio con un firewall e un Dispatcher, puoi utilizzare il server proxy per scoprire dove è stata persa la richiesta. Se è presente un firewall:
+Se si perdono le richieste in un&#39;impostazione server complessa, ad esempio con un firewall e un Dispatcher, è possibile utilizzare il server proxy per individuare il punto in cui la richiesta è stata persa. Se è presente un firewall:
 
 1. Avviare un proxy prima di un firewall
 1. Avvia un altro proxy dopo un firewall
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa che questa voce proviene dal client (si tratta di una richiesta per una pagina Web)
 * 0 è il numero di connessione (il contatore di connessione inizia da 0)
 * #00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
-* [GET &lt;?>] è il contenuto della richiesta, nell’esempio una delle intestazioni HTTP (url).
+* [GET &lt;?>] è il contenuto della richiesta, nell&#39;esempio una delle intestazioni HTTP (url).
 
 Quando una connessione viene chiusa, vengono registrate le seguenti informazioni:
 
@@ -149,7 +149,7 @@ Se l&#39;AEM è in esecuzione su localhost:4303, avviare il server proxy come in
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-È possibile accedere al server (`localhost:4303`) senza il server proxy, ma se vi accedi tramite `localhost:4444`, il server proxy registra la comunicazione. Apri un browser e accedi a una pagina creata con il modello precedente. In seguito, controlla il file di registro.
+È possibile accedere al server (`localhost:4303`) senza il server proxy, ma se si accede tramite `localhost:4444`, il server proxy registra la comunicazione. Apri un browser e accedi a una pagina creata con il modello precedente. In seguito, controlla il file di registro.
 
 >[!NOTE]
 >

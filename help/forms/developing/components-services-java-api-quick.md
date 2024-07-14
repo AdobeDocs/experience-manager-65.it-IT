@@ -1,6 +1,6 @@
 ---
 title: Componenti e servizi Java&trade; APIQuick Start (SOAP)
-description: Scopri come manipolare in modo programmatico componenti e servizi di AEM Forms utilizzando Java&trade; API Quick Start (SOAP).
+description: Scopri come manipolare in modo programmatico i componenti e i servizi di AEM Forms utilizzando Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -42,7 +42,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->Gli avvii rapidi nella programmazione con i moduli AEM si basano sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi nella programmazione con i moduli AEM si basano sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 ## Quick Start (modalità SOAP): distribuzione di un componente utilizzando l’API Java™ {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-L’esempio Java™ seguente distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
+Nell&#39;esempio Java™ seguente viene distribuito un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
 
 ```java
  /* 
@@ -152,7 +152,7 @@ L’esempio Java™ seguente distribuisce un componente basato su un file JAR de
 
 ## Quick Start (modalità SOAP): impostazione del contesto di esecuzione di un servizio utilizzando l’API Java™ {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-Nell&#39;esempio di codice Java™ riportato di seguito il contesto di esecuzione di Run-As Invoker viene impostato su un servizio di esempio denominato *Crittografia documento*.
+Nell&#39;esempio di codice Java™ seguente il contesto di esecuzione di RunAs Invoker viene impostato su un servizio di esempio denominato *EncryptDocument*.
 
 ```java
  /* 
@@ -357,7 +357,7 @@ Esempio Nell&#39;esempio di codice Java™ riportato di seguito viene disattivat
 
 ## Quick Start (modalità SOAP): avvio di un servizio utilizzando l’API Java™ {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-Nell&#39;esempio di codice Java™ seguente viene avviato un servizio denominato *SendEmailService*.
+Il codice Java™ seguente avvia un servizio denominato *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 

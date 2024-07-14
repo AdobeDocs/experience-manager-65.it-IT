@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Con i moduli HTML5 puoi caricare, visualizzare in anteprima e inviare allegati. Per impostazione predefinita, il supporto degli allegati è disattivato. Per attivare il supporto degli allegati:
 
-1. Creare un [profilo personalizzato](/help/forms/using/custom-profile.md) con un `mfAttachmentOptions` proprietà stringa a selezione multipla. Ogni stringa nel `mfAttachmentOptions` la proprietà deve avere `property=value` per configurare le opzioni del widget file allegato. Il `property` e `value` può avere uno qualsiasi dei seguenti valori:
+1. Crea un [profilo personalizzato](/help/forms/using/custom-profile.md) con una proprietà stringa multiselezionata `mfAttachmentOptions`. Ogni stringa nella proprietà `mfAttachmentOptions` deve avere un formato `property=value` per configurare le opzioni del widget degli allegati. `property` e `value` possono avere uno qualsiasi dei seguenti valori:
 
    | Proprietà | Valore |
    |--- |---|
@@ -31,22 +31,22 @@ Con i moduli HTML5 puoi caricare, visualizzare in anteprima e inviare allegati. 
 
    Ad esempio:
 
-   ![configurare le opzioni](assets/mfAttachmentOptions.png)
+   ![configura opzioni](assets/mfAttachmentOptions.png)
 
-   Se necessario, puoi anche specificare altre opzioni personalizzate per il `mfAttachmentOptions` proprietà.
+   Se necessario, è inoltre possibile specificare altre opzioni personalizzate per la proprietà `mfAttachmentOptions`.
 
    >[!NOTE]
    >
    >In Microsoft Internet Explorer 9 gli utenti possono allegare file di dimensioni superiori al limite specificato. Si tratta di un problema noto.
 
-1. Utilizza il [editor metadati](/help/forms/using/manage-form-metadata.md) per selezionare il profilo personalizzato creato in precedenza per i moduli di HTML 5.
+1. Utilizza l&#39;[editor metadati](/help/forms/using/manage-form-metadata.md) per selezionare il profilo personalizzato creato in precedenza per i moduli di HTML 5.
 1. Eseguire il rendering del modello di modulo con un profilo personalizzato. L&#39;icona degli allegati verrà visualizzata sulla barra degli strumenti Moduli.
 
    >[!NOTE]
    >
-   >Il portale dei moduli fornisce automaticamente un profilo personalizzato con le funzionalità per bozze e allegati abilitate. Per ulteriori informazioni su **Salva come bozza** profilo, vedi [Salvataggio dei moduli HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).
+   >Il portale dei moduli fornisce automaticamente un profilo personalizzato con le funzionalità per bozze e allegati abilitate. Per ulteriori informazioni sul profilo **Salva come bozza**, vedere [Salvataggio dei moduli HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).
 
-1. Fare clic sull&#39;icona dell&#39;allegato per visualizzare una finestra di dialogo di selezione dell&#39;allegato. Sfoglia e seleziona l’allegato e fai clic su **Allega**.
+1. Fare clic sull&#39;icona dell&#39;allegato per visualizzare una finestra di dialogo di selezione dell&#39;allegato. Sfoglia e seleziona l&#39;allegato e fai clic su **Allega**.
 
    >[!NOTE]
    >
@@ -58,10 +58,10 @@ Con i moduli HTML5 puoi caricare, visualizzare in anteprima e inviare allegati. 
 
 ## Formato di invio dell’allegato {#attachment-submission-format}
 
-Quando gli allegati sono abilitati, il modulo HTML5 invia dati multipart. I dati di invio in più parti sono composti da due parti **dataXml** e **allegati**.
+Quando gli allegati sono abilitati, il modulo HTML5 invia dati multipart. I dati di invio in più parti contengono due parti: **dataXml** e **allegati**.
 
 >[!NOTE]
 >
->Per compatibilità con le versioni precedenti, se `mfAllowAttachments` l&#39;opzione è disattivata, quindi i moduli HTML5 non inviano i dati in più parti. Invia dati XML semplici in **application/xml** formato.
+>Per compatibilità con le versioni precedenti, se l&#39;opzione `mfAllowAttachments` è disattivata, i moduli HTML5 non inviano i dati in più parti. Invia dati XML semplici nel formato **application/xml**.
 
-Se il flag mfAllowAttachments è attivato, [invia servizio proxy](/help/forms/using/service-proxy.md) pubblica anche dati multipart con dataXml e allegati.
+Se il flag mfAllowAttachments è attivato, anche il servizio proxy [submit](/help/forms/using/service-proxy.md) pubblica dati multipart con dataXml e allegati.

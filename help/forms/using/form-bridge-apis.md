@@ -1,5 +1,5 @@
 ---
-title: API di bridge per moduli HTML5
+title: API Bridge per moduli HTML5
 description: Le applicazioni esterne utilizzano l’API FormBridge per connettersi al modulo mobile XFA. L'API invia un evento FormBridgeInitialized nella finestra padre.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ---
 
-# API di bridge per moduli HTML5 {#form-bridge-apis-for-html-forms}
+# API Bridge per moduli HTML5 {#form-bridge-apis-for-html-forms}
 
-È possibile utilizzare le API di Forms Bridge per aprire un canale di comunicazione tra moduli HTML5 basati su XFA e le applicazioni. Le API di Forms Bridge forniscono una **connetti** API per creare la connessione.
+Puoi utilizzare le API Bridge per moduli per aprire un canale di comunicazione tra moduli HTML5 basati su XFA e le tue applicazioni. Le API di Bridge Form forniscono un&#39;API **connect** per creare la connessione.
 
-Il **connetti** L’API accetta un gestore come argomento. Dopo aver creato una connessione tra il modulo HTML5 basato su XFA e il bridge di moduli, viene richiamato l&#39;handle.
+L&#39;API **connect** accetta un gestore come argomento. Dopo aver creato una connessione tra il modulo HTML5 basato su XFA e Form Bridge, viene richiamato l’handle.
 
 Per creare la connessione, puoi utilizzare il seguente codice di esempio.
 
@@ -38,44 +38,44 @@ window.addEventListener("FormBridgeInitialized",
 >
 >Assicurarsi di creare una connessione prima di includere il file formRuntime.jsp.
 
-## API bridge modulo disponibile  {#available-form-bridge-api-nbsp}
+## API Bridge modulo disponibile  {#available-form-bridge-api-nbsp}
 
 **getBridgeVersion()**
 
 Restituisce il numero di versione della libreria Script
 
-* **Input**: nessuna
-* **Output**: numero di versione della libreria Scripting
-* **Errori**: nessuna
+* **Input**: nessuno
+* **Output**: numero di versione della libreria di script
+* **Errori**: nessuno
 
-**isConnected()** Verifica se lo stato del modulo è stato inizializzato
+**isConnected()** Controlla se lo stato del modulo è stato inizializzato
 
-* **Input**: nessuna
-* **Output**: **Vero** se lo stato del modulo XFA è stato inizializzato
+* **Input**: nessuno
+* **Output**: **True** se lo stato del modulo XFA è stato inizializzato
 
-* **Errori**: nessuna
+* **Errori**: nessuno
 
-**connect(handler, context)** Effettua una connessione a FormBridge ed esegue la funzione dopo aver stabilito la connessione e aver inizializzato Form State
+**connect(handler, context)** Effettua una connessione a FormBridge ed esegue la funzione dopo aver stabilito la connessione e aver inizializzato lo stato del modulo
 
 * **Input**:
 
-   * **handler**: funzione da eseguire dopo la connessione del bridge di moduli
-   * **contesto**: l’oggetto a cui è associato il contesto (this) del *handler* funzione.
+   * **gestore**: funzione da eseguire dopo la connessione a Form Bridge
+   * **contesto**: l&#39;oggetto su cui è impostato il contesto (this) della funzione *handler*.
 
-* **Output**: nessuna
-* **Errore**: nessuna
+* **Output**: nessuno
+* **Errore**: nessuno
 
 **getDataXML(options)** Restituisce i dati del modulo corrente in formato XML
 
 * **Input:**
 
-   * **opzioni:** Oggetto JavaScript contenente le seguenti proprietà:
+   * **opzioni:** oggetto JavaScript contenente le proprietà seguenti:
 
-      * **Errore**: Funzione gestore errori
-      * **success**: funzione di gestore di successo. Questa funzione viene passata come oggetto contenente XML in *dati* proprietà.
-      * **contesto**: l’oggetto a cui è associato il contesto (this) del *success* funzione impostata
-      * **validationChecker**: funzione da chiamare per controllare gli errori di convalida ricevuti dal server. Alla funzione di convalida viene passata una matrice di stringhe di errore.
-      * **formState**: stato JSON del modulo XFA per il quale deve essere restituito l’XML dati. Se non viene specificato, verrà restituito il codice XML dei dati per il modulo di cui è stato eseguito il rendering.
+      * **Errore**: funzione gestore errori
+      * **success**: funzione gestore operazioni riuscite. Questa funzione ha passato un oggetto contenente XML nella proprietà *data*.
+      * **contesto**: l&#39;oggetto su cui è impostato il contesto (questo) della funzione *success*
+      * **validationChecker**: Funzione da chiamare per controllare gli errori di convalida ricevuti dal server. Alla funzione di convalida viene passata una matrice di stringhe di errore.
+      * **formState**: lo stato JSON del modulo XFA per il quale deve essere restituito l&#39;XML dati. Se non viene specificato, verrà restituito il codice XML dei dati per il modulo di cui è stato eseguito il rendering.
 
 * **Output:** Nessuno
 * **Errore:** Nessuno
@@ -86,15 +86,15 @@ Restituisce il numero di versione della libreria Script
 
    * **configName:** Nome della configurazione da ignorare
 
-      * **widgetConfig:** Consente all&#39;utente di sostituire i widget predefiniti nel modulo con widget personalizzati. La configurazione viene sovrascritta come segue:
+      * **widgetConfig:** consente all&#39;utente di sostituire i widget predefiniti nel modulo con widget personalizzati. La configurazione viene sovrascritta come segue:
 
         *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **pagingConfig:** Consente all&#39;utente di ignorare il comportamento predefinito del rendering solo della prima pagina. La configurazione viene sovrascritta come segue:
+      * **pagingConfig:** consente all&#39;utente di ignorare il comportamento predefinito del rendering solo della prima pagina. La configurazione viene sovrascritta come segue:
 
-        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, shrinkPageDisabled: &lt;true false=&quot;&quot;> }).*
+        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
-      * **LoggingConfig** Consente all’utente di ignorare il livello di registrazione, disabilitare la registrazione per una categoria, visualizzare la console dei registri o inviare dati al server. La configurazione può essere sovrascritta come segue:
+      * **LoggingConfig:** consente all&#39;utente di ignorare il livello di registrazione, disabilitare la registrazione per una categoria, visualizzare la console dei registri o inviare messaggi al server. La configurazione può essere sovrascritta come segue:
 
      ```javascript
      formBridge.registerConfig{
@@ -121,7 +121,7 @@ Restituisce il numero di versione della libreria Script
 
    * **config:** Valore della configurazione
 
-* **Output:** Oggetto contenente il valore originale della configurazione in *dati* proprietà.
+* **Output:** oggetto contenente il valore originale della configurazione nella proprietà *data*.
 
 * **Errore:** Nessuno
 
@@ -129,42 +129,42 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:**
 
-   * **fieldArray:** Array di alcune espressioni per i campi da nascondere
+   * **fieldArray:** Array di espressioni Som per i campi da nascondere
 
 * **Output:** Nessuno
 * **Errore:** Nessuno
 
-**showFields(fieldArray)** Mostra i campi le cui espressioni Som vengono fornite in fieldArray. Imposta la proprietà di presenza dei campi forniti su visibile
+**showFields(fieldArray)** Visualizza i campi le cui espressioni Som vengono fornite in fieldArray. Imposta la proprietà di presenza dei campi forniti su visibile
 
 * **Input:**
 
-   * **fieldArray:** Array di alcune espressioni per i campi da visualizzare
+   * **fieldArray:** Array di espressioni Som per i campi da visualizzare
 
 * **Output:** Nessuno
 * **Errore:** Nessuno
 
 **hideSubmitButtons()** Nasconde tutti i pulsanti di invio nel modulo
 
-* **Input**: nessuna
-* **Output**: nessuna
+* **Input**: nessuno
+* **Output**: nessuno
 * **Errore**: genera un&#39;eccezione se lo stato del modulo non è inizializzato
 
 **getFormState()** Restituisce il JSON che rappresenta lo stato del modulo
 
 * **Input:** Nessuno
-* **Output:** Oggetto contenente JSON che rappresenta lo stato corrente del modulo in *dati* proprietà.
+* **Output:** oggetto contenente JSON che rappresenta lo stato corrente del modulo nella proprietà *data*.
 
 * **Errore:** Nessuno
 
-**restoreFormState(options)** Ripristina lo stato del modulo dallo stato JSON fornito nell’oggetto options. Lo stato viene applicato e gli handler di esito positivo o di errore vengono chiamati al termine dell&#39;operazione
+**restoreFormState(options)** Ripristina lo stato del modulo dallo stato JSON fornito nell&#39;oggetto options. Lo stato viene applicato e gli handler di esito positivo o di errore vengono chiamati al termine dell&#39;operazione
 
 * **Input:**
 
-   * **Opzioni:** Oggetto JavaScript contenente le seguenti proprietà:
+   * **Opzioni:** oggetto JavaScript contenente le proprietà seguenti:
 
-      * **Errore**: Funzione gestore errori
-      * **success**: funzione gestore di successo
-      * **contesto**: l’oggetto a cui è associato il contesto (this) del *success* funzione impostata
+      * **Errore**: funzione gestore errori
+      * **success**: funzione gestore operazioni riuscite
+      * **contesto**: l&#39;oggetto su cui è impostato il contesto (questo) della funzione *success*
       * **formState**: stato JSON del modulo. Il modulo viene ripristinato allo stato JSON.
 
 * **Output:** Nessuno
@@ -174,22 +174,22 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:** Espressione del campo su cui impostare lo stato attivo
 * **Output:** Nessuno
-* **Errore:** Genera un&#39;eccezione se è presente un&#39;espressione Som errata
+* **Errore:** genera un&#39;eccezione se è presente un&#39;espressione Som non corretta
 
 **setFieldValue (som, value)** Imposta il valore dei campi per le espressioni Som specificate
 
 * **Input:**
 
    * **som:** Array contenente alcune espressioni del campo. L’espressione som per impostare il valore dei campi.
-   * **valore:** Matrice contenente i valori corrispondenti alle espressioni Som fornite in una **som** array. Se il tipo di dati del valore non è uguale a fieldType, il valore non viene modificato.
+   * **valore:** Array contenente i valori corrispondenti alle espressioni Som fornite in un array **som**. Se il tipo di dati del valore non è uguale a fieldType, il valore non viene modificato.
 
 * **Output:** Nessuno
-* **Errore:** Genera un&#39;eccezione se è presente un&#39;espressione Som errata
+* **Errore:** genera un&#39;eccezione se è presente un&#39;espressione Som non corretta
 
 **getFieldValue (som)** Restituisce il valore dei campi per le espressioni Som specificate
 
 * **Input:** Array contenente alcune espressioni dei campi il cui valore deve essere recuperato
-* **Output:** Oggetto contenente il risultato come array in **dati** proprietà.
+* **Output:** Oggetto contenente il risultato come matrice nella proprietà **data**.
 
 * **Errore:** Nessuno
 
@@ -206,14 +206,14 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, proprietà)** Recupera l’elenco di valori per la proprietà specificata dei campi specificati nelle espressioni Som
+**getFieldProperties(som, property)** Recupera l&#39;elenco di valori per la proprietà specificata dei campi specificati nelle espressioni Som
 
 * **Input:**
 
-   * **som:** Array contenente alcune espressioni per i campi
+   * **som:** Array contenente espressioni Som per i campi
    * **proprietà**: nome della proprietà il cui valore è obbligatorio
 
-* **Output:** Oggetto contenente il risultato come array in *dati* proprietà
+* **Output:** Oggetto contenente il risultato come array nella proprietà *data*
 
 * **Errore:** Nessuno
 
@@ -228,7 +228,7 @@ if(a.errors) {
 * **Output:** Nessuno
 * **Errore:** Nessuno
 
-## Esempio di utilizzo dell’API di bridge per moduli {#sample-usage-of-form-bridge-api}
+## Utilizzo di esempio dell’API Bridge del modulo {#sample-usage-of-form-bridge-api}
 
 ```JavaScript
 // Example 1: FormBridge.restoreFormState

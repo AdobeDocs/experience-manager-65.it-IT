@@ -32,12 +32,12 @@ Crea un marchio a cui sono associate le offerte. Apri un marchio nella console O
 
 Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato anche nella [Console Attività](/help/sites-authoring/activitylib.md) dove puoi aggiungere e amministrare attività per il marchio.
 
-1. Nella console Navigazione, fai clic su **Personalizzazione** > **Offerte**.
+1. Nella console di navigazione, fai clic su **Personalization** > **Offerte**.
 
-   ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
+   ![schermata_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Clic **Crea** e poi **Crea** **Marchio**.
-1. Seleziona il modello del brand e fai clic su **Successivo**.
+1. Fai clic su **Crea**, quindi su **Crea** **Marchio**.
+1. Seleziona il modello del brand e fai clic su **Avanti**.
 1. Digita un titolo per il marchio in base a come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
 1. Fai clic su **Crea**.
 
@@ -46,7 +46,7 @@ Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato
 Aggiungi una cartella alla libreria di offerte di un marchio per organizzare e archiviare le offerte. Puoi creare una cartella sotto il marchio o sotto altre cartelle.
 
 1. Nella console Offerte, apri il percorso in cui desideri creare la cartella. Ad esempio, apri il marchio per creare una cartella di livello superiore o apri un’altra cartella nella libreria.
-1. Clic **Crea** > **Crea cartella o offerta**.
+1. Fai clic su **Crea** > **Crea cartella o offerta**.
 
    ![schermata_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
@@ -64,13 +64,13 @@ Aggiungi un’offerta alla libreria di offerte di un marchio in modo che possa e
 Dopo aver creato l’offerta, puoi aprirla per eseguire l’authoring del contenuto.
 
 1. Nella console Offerte, apri la posizione in cui desideri creare l’offerta. Ad esempio, apri il marchio per creare un’offerta di livello superiore o apri una cartella nella libreria.
-1. Clic **Crea** > **Crea cartella o offerta**.
+1. Fai clic su **Crea** > **Crea cartella o offerta**.
 
-   ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
+   ![schermata_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Seleziona la **Pagina offerta** e quindi fare clic su **Successivo**.
-1. Digita un titolo per l’offerta e facoltativamente seleziona o digita uno o più tag da associare all’offerta, quindi fai clic su **Crea**.
-1. Nella finestra di dialogo di conferma, per aprire l’offerta da modificare fai clic su **Apri pagina**.
+1. Seleziona il modello **Pagina di offerta** e fai clic su **Avanti**.
+1. Digita un titolo per l&#39;offerta e facoltativamente seleziona o digita uno o più tag da associare all&#39;offerta, quindi fai clic su **Crea**.
+1. Nella finestra di dialogo di conferma, per aprire l&#39;offerta di modifica, fare clic su **Apri pagina**.
 
 ## Modifica di un’offerta {#editing-an-offer}
 
@@ -78,7 +78,7 @@ Apri un’offerta e modifica il contenuto in base a come desideri che appaia nel
 
 Puoi aprire un’offerta da una cartella in una libreria di offerte o dai risultati della ricerca. Puoi anche aprire un’offerta da un’esperienza che utilizza l’offerta.
 
-1. Nella console Offerte, fai clic sull’icona accanto all’offerta e fai clic su **Modifica**.
+1. Nella console Offerte, fai clic sull&#39;icona accanto all&#39;offerta e fai clic su **Modifica**.
 1. Aggiungi componenti all’offerta e modifica normalmente il contenuto dei componenti.
 
 ## Eliminazione di un’offerta {#deleting-an-offer}
@@ -87,15 +87,15 @@ Elimina un’offerta quando non è più necessaria. Quando tenti di eliminare un
 
 Puoi eliminare un’offerta quando visualizzi il contenuto di una cartella in una libreria di offerte o nei risultati della ricerca.
 
-1. Nella console Offerte, fai clic sull’icona accanto all’offerta e fai clic su **Elimina**.
+1. Nella console Offerte fare clic sull&#39;icona accanto all&#39;offerta e quindi su **Elimina**.
 
-   Seleziona l’offerta e fai clic su **Elimina**.
+   Seleziona l&#39;offerta e fai clic su **Elimina**.
 
-1. Nella finestra di dialogo visualizzata, fai clic su **Elimina** per confermare l’eliminazione.
+1. Nella finestra di dialogo visualizzata, fare clic su **Elimina** per confermare l&#39;eliminazione.
 1. Se l’offerta viene utilizzata in una o più esperienze, viene visualizzata una finestra di dialogo per indicare che si fa riferimento all’offerta:
 
-   * Per eliminare l’offerta e rimuoverla dalle esperienze, fai clic su **Forza eliminazione**.
-   * Per mantenere l’offerta, fai clic su **Annulla**.
+   * Per eliminare l&#39;offerta e rimuoverla dalle esperienze, fare clic su **Forza eliminazione**.
+   * Per mantenere l&#39;offerta, fare clic su **Annulla**.
 
 ## Ricerca di offerte {#searching-for-offers}
 

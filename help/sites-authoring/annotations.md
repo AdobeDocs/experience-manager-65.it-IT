@@ -44,7 +44,7 @@ Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [mo
 
 >[!NOTE]
 >
->Non dimentichi che [commenti](/help/sites-authoring/basic-handling.md#timeline) sono inoltre disponibili per fornire feedback su una pagina.
+>Non dimenticare che [commenti](/help/sites-authoring/basic-handling.md#timeline) sono disponibili anche per fornire feedback su una pagina.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
 1. Fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni saranno evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
 
-   ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
+   ![schermata_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
    Utilizzando il campo e/o l’icona appropriata puoi effettuare le seguenti operazioni:
 
@@ -85,7 +85,7 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
      Quando create uno sketch, il cursore si trasforma in un reticolo incrociato. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
 
-     ![Schizzo](do-not-localize/screen_shot_2018-03-22at110640.png)
+     ![Sketch](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Scegli o modifica il colore:
 
@@ -97,7 +97,7 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
 1. Per chiudere la finestra di dialogo dell’annotazione, tocca o fai clic all’esterno della finestra di dialogo. Viene mostrata una vista troncata (la prima parola) dell’annotazione, insieme a eventuali schizzi:
 
-   ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
+   ![schermata_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
 
 1. Dopo aver modificato un’annotazione, puoi effettuare le seguenti operazioni:
 
@@ -121,4 +121,4 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
 Le annotazioni non vengono visualizzate in modalità Modifica, ma il contrassegno in alto a destra della barra degli strumenti mostra il numero di annotazioni esistenti per la pagina corrente. Il contrassegno sostituisce l’icona Annotazioni predefinita, ma continua a fungere da collegamento rapido per attivare o disattivare la modalità Annota:
 
-![Indicatore delle annotazioni](assets/chlimage_1-242.png)
+![Indicatore annotazioni](assets/chlimage_1-242.png)

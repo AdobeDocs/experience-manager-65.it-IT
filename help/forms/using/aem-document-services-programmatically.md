@@ -19,19 +19,19 @@ ht-degree: 1%
 
 Esempi ed esempi in questo documento sono utili per comprendere e utilizzare i servizi documentali AEM in un ambiente AEM Forms su OSGi. Per esempi ed esempi sull’ambiente AEM Forms su JEE, consulta
 
-* [Guida introduttiva all’API Java di Signature Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+* [Guida rapida all&#39;API Java di Signature Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
 
-* [Servizio di crittografia API Java - Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+* [Guida rapida all&#39;API Java del servizio di crittografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
 
-* [Guida introduttiva al servizio Acrobat Reader extensions API Java](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
+* [Guida rapida all&#39;API Java del servizio Acrobat Reader extensions](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## Prerequisito {#prerequisite}
 
 * Prima di utilizzare le API del servizio DocAssurance, [configurare il servizio DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) con te progetto AEM maven. Le classi client necessarie per creare progetti Maven utilizzando i servizi documentali AEM sono disponibili nel [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) con il tuo progetto Maven AEM. Le classi client necessarie per creare progetti Maven utilizzando i servizi documentali AEM sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 
-* Scopri [come creare il progetto AEM utilizzando Maven](/help/sites-developing/ht-projects-maven.md)
+* Scopri [come creare il tuo progetto AEM utilizzando Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## Servizio DocAssurance {#docassurance-service}
 
@@ -71,7 +71,7 @@ Il servizio DocAssurance include i seguenti servizi:
 
 >[!NOTE]
 >
->Tutti questi servizi utilizzano l’oggetto Document come parametro di input per il quale è possibile trovare Javadoc nell’URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
+>Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Aggiunta di un campo di firma invisibile {#adding-an-invisible-signature-field}
 
@@ -97,11 +97,11 @@ Le firme digitali vengono visualizzate nei campi firma, ovvero nei campi modulo 
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>A <code>FieldMDPOptionSpec</code> oggetto che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo parametro è facoltativo e può accettare un valore nullo.</td>
+   <td>Oggetto <code>FieldMDPOptionSpec</code> che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo parametro è facoltativo e può accettare un valore nullo.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
-   <td>A <code>SeedValueOptions</code> oggetto che specifica i vari valori iniziali per il campo. T Questo parametro è facoltativo e può accettare un valore null.<span class="acrolinxCursorMarker"></span></td>
+   <td>Oggetto <code>SeedValueOptions</code> che specifica i vari valori di inizializzazione per il campo. T Questo parametro è facoltativo e può accettare un valore null.<span class="acrolinxCursorMarker"></span></td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -237,7 +237,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-Puoi anche utilizzare [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)specifica per la firma dei documenti. Utilizza il seguente codice di esempio per impostare il formato della firma su [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
+È inoltre possibile utilizzare la specifica [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)per firmare i documenti. Utilizzare il codice di esempio seguente per impostare il formato di firma su [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -282,15 +282,15 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td>A <code>PositionRectangle object</code> che specifica la posizione del campo firma. Questo parametro è obbligatorio e non può accettare un valore null. Se il rettangolo specificato non si trova almeno parzialmente nella casella di ritaglio della pagina specificata, <code>InvalidArgumentException</code> viene lanciato. Inoltre, né l'altezza né la larghezza del rettangolo specificato possono essere 0 o negative. Le coordinate X o Y in basso a sinistra possono essere 0 o maggiori ma non negative e sono relative alla casella di ritaglio della pagina.</td>
+   <td><code>PositionRectangle object</code> che specifica la posizione per il campo firma. Questo parametro è obbligatorio e non può accettare un valore null. Se il rettangolo specificato non si trova almeno parzialmente nella casella di ritaglio della pagina specificata, viene generato un <code>InvalidArgumentException</code>. Inoltre, né l'altezza né la larghezza del rettangolo specificato possono essere 0 o negative. Le coordinate X o Y in basso a sinistra possono essere 0 o maggiori ma non negative e sono relative alla casella di ritaglio della pagina.</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>A <code>FieldMDPOptionSpec</code> oggetto che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo è un parametro facoltativo e può essere nullo.</td>
+   <td>Oggetto <code>FieldMDPOptionSpec</code> che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo è un parametro facoltativo e può essere nullo.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
-   <td>A <code>SeedValueOptions</code> oggetto che specifica i vari valori iniziali per il campo. Questo è un parametro facoltativo e può essere nullo.</td>
+   <td>Oggetto <code>SeedValueOptions</code> che specifica i vari valori di inizializzazione per il campo. Questo è un parametro facoltativo e può essere nullo.</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -427,7 +427,7 @@ public class AddSignatureField {
 
 ### Applica la marca temporale al documento {#apply-document-timestamp}
 
-È possibile assegnare a un documento una marca temporale a livello di programmazione in base a [PAdES 4](https://en.wikipedia.org/wiki/PAdES) specifiche. Puoi anche utilizzare [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) specifica per i documenti relativi alla transazione.
+È possibile impostare la marca temporale di un documento a livello di programmazione in base alle specifiche di [PAdES 4](https://en.wikipedia.org/wiki/PAdES). È inoltre possibile utilizzare la specifica [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) per i documenti correlati alle transazioni.
 
 **Sintassi**: `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -445,7 +445,7 @@ public class AddSignatureField {
   </tr>
   <tr>
    <td><code>VerificationTime</code></td>
-   <td>L’ora in cui la firma deve essere convalidata<br /> </td>
+   <td>Ora in cui la firma deve essere convalidata<br /> </td>
   </tr>
   <tr>
    <td><code>ValidationPreferences</code> </td>
@@ -462,7 +462,7 @@ public class AddSignatureField {
  </tbody>
 </table>
 
-Nei seguenti esempi di codice viene aggiunto un timestamp a un documento in base a [PAdES 4](https://en.wikipedia.org/wiki/PAdES).
+Negli esempi di codice seguenti viene aggiunto un timestamp a un documento come da [PAdES 4](https://en.wikipedia.org/wiki/PAdES).
 
 ```java
 package com.adobe.signatures.test;
@@ -652,7 +652,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Nome del campo firma che contiene una firma. Specificare il nome completo del campo firma. Quando si utilizza un documento PDF basato su un modulo XFA, è possibile utilizzare il nome parziale del campo firma. Ad esempio: <code>form1[0].#subform[1].SignatureField3[3]</code> può essere specificato come <code>SignatureField3[3]</code>.</td>
+   <td>Nome del campo firma che contiene una firma. Specificare il nome completo del campo firma. Quando si utilizza un documento PDF basato su un modulo XFA, è possibile utilizzare il nome parziale del campo firma. Ad esempio, è possibile specificare <code>form1[0].#subform[1].SignatureField3[3]</code> come <code>SignatureField3[3]</code>.</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
@@ -899,7 +899,7 @@ Modificando un campo di firma esistente, è possibile modificare il documento PD
   </tr>
   <tr>
    <td><code>pdfSignatureFieldProperties</code></td>
-   <td>Oggetto che specifica informazioni sulla <code>PDFSeedValueOptionSpec</code> e <code>FieldMDPOptionSpec</code> valori del campo firma.</td>
+   <td>Oggetto che specifica informazioni sui valori <code>PDFSeedValueOptionSpec</code> e <code>FieldMDPOptionSpec</code> del campo firma.</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1063,7 +1063,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Documento input PDF documento<br /> </td>
+   <td>Documento PDF di input documento<br /> </td>
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
@@ -1347,11 +1347,11 @@ public class Certify {
 
 secureDocument consente di crittografare, firmare/certificare ed estendere un documento PDF singolarmente o in qualsiasi combinazione in un determinato ordine. Per accedere a questa funzionalità, passa l’argomento corrispondente. Se null, si presume che l&#39;elaborazione non sia necessaria.
 
-**Crittografia dei documenti PDF con password**
+**Crittografia dei documenti di PDF con password**
 
 Quando crittografi un documento PDF con una password, un utente deve specificare la password per aprire il documento PDF in Adobe Reader o Acrobat. Inoltre, prima che un’altra operazione di AEM Forms Document Services utilizzi il documento, è necessario sbloccare un documento PDF crittografato con password.
 
-**Crittografia di documenti PDF con certificati**
+**Crittografia dei documenti di PDF con certificati**
 
 La crittografia basata su certificato consente di crittografare un documento per destinatari specifici utilizzando la tecnologia a chiave pubblica.
 
@@ -1378,7 +1378,7 @@ Puoi applicare i diritti di utilizzo ai documenti di PDF utilizzando l’API cli
 
 Prima di poter eseguire il Reader Estendi un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio chiavi AEM.
 
-**Firma digitale di documenti PDF**
+**Firma digitale dei documenti di PDF**
 
 Le firme digitali possono essere applicate ai documenti PDF per garantire un livello di sicurezza adeguato. Le firme digitali, come le firme scritte a mano, forniscono un mezzo mediante il quale i firmatari si identificano e rilasciano dichiarazioni su un documento.
 
@@ -1394,7 +1394,7 @@ La chiave pubblica viene archiviata nel certificato dell&#39;utente che deve ess
 
 >[!NOTE]
 >
->AEM Forms supporta anche *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* specifica per la firma digitale di documenti PDF.
+>AEM Forms supporta anche la specifica *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* per la firma digitale di documenti PDF.
 
 **Certificazione dei documenti di PDF**
 
@@ -1461,7 +1461,7 @@ secureDocument(Document inDoc,
  </tbody>
 </table>
 
-**Esempio 1**: questo esempio viene utilizzato per eseguire la crittografia della password, certificando un campo di firma e un Reader Estensione del documento PDF.
+**Esempio 1**: questo esempio viene utilizzato per eseguire la crittografia della password, certificando un campo di firma e un Reader Estensione del documento di PDF.
 
 ```java
 /*************************************************************************
@@ -2105,7 +2105,7 @@ dove 100 si riferisce all’intervallo di timeout definito per l’esecuzione di
 
 ### Recupero diritti di utilizzo delle credenziali {#getting-credential-usage-rights}
 
-Per recuperare le informazioni sui diritti di utilizzo delle credenziali specificate dalla `credentialAlias`, chiama questa API dall&#39;interno di `SecureDocument` API.
+Per recuperare le informazioni sui diritti di utilizzo delle credenziali specificate da `credentialAlias` specificato, chiamare questa API dall&#39;API `SecureDocument`.
 
 **Sintassi**: `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
 
@@ -2119,11 +2119,11 @@ Per recuperare le informazioni sui diritti di utilizzo delle credenziali specifi
   </tr>
   <tr>
    <td><code>credentialAlias</code><br /> </td>
-   <td>Il <code>credentialAlias</code> che specifica le credenziali.<br /> </td>
+   <td><code>credentialAlias</code> che specifica le credenziali.<br /> </td>
   </tr>
   <tr>
    <td><code>credentialPassword</code><br /> </td>
-   <td>Password della credenziale se la credenziale è crittografata, se non è crittografata è necessario utilizzare null.<br /> </td>
+   <td>Password delle credenziali se le credenziali sono crittografate. Se le credenziali non sono crittografate, utilizzare null.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -2196,7 +2196,7 @@ public void getCredentialUsageRights() {
 
 ### Recupero diritti di utilizzo documento {#getting-document-usage-rights}
 
-Per recuperare le informazioni sui diritti di utilizzo per un dato documento, chiama questa API da `docAssuranceService`API.
+Per recuperare le informazioni sui diritti di utilizzo per un determinato documento, chiamare questa API dall&#39;API `docAssuranceService`.
 
 **Sintassi**: `getDocumentUsageRights(Document inDocument, UnlockOptions unlockOptions)`
 
@@ -2210,7 +2210,7 @@ Per recuperare le informazioni sui diritti di utilizzo per un dato documento, ch
   </tr>
   <tr>
    <td><code>inDocument</code><br /> </td>
-   <td>Documento da cui recuperare le informazioni sui diritti di utilizzo<br /> </td>
+   <td>Documento da cui recuperare le informazioni sui diritti di utilizzo <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -2316,7 +2316,7 @@ public void getDocumentUsageRights() {
 
 ### Rimozione dei diritti di utilizzo {#removing-usage-rights}
 
-È possibile rimuovere i diritti di utilizzo per un documento chiamando il `removeUsageRights`API dall&#39;interno di `docAssuranceService`API.
+È possibile rimuovere i diritti di utilizzo per un documento chiamando l&#39;API `removeUsageRights` dall&#39;API `docAssuranceService`.
 
 **Parametri di input**
 
@@ -2332,7 +2332,7 @@ public void getDocumentUsageRights() {
   </tr>
   <tr>
    <td><code>unlockOptions</code><br /> </td>
-   <td>Include i parametri necessari per sbloccare un file crittografato. Questa opzione è necessaria solo se il file è crittografato.<br /> </td>
+   <td>Include i parametri necessari per sbloccare un file crittografato. Questa operazione è necessaria solo se il file è crittografato.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -3530,7 +3530,7 @@ Nell&#39;esempio di codice seguente viene rimossa la crittografia basata su pass
   </tr>
   <tr>
    <td><code>alias</code><br /> </td>
-   <td>Alias che corrisponde alla chiave nell'archivio fonti attendibili Granite utilizzata per rimuovere la crittografia basata su certificati dal documento PDF.<br /> </td>
+   <td>Alias corrispondente alla chiave nell'archivio fonti attendibili Granite utilizzata per rimuovere la crittografia basata su certificati dal documento PDF.<br /> </td>
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
@@ -3636,17 +3636,17 @@ Nell&#39;esempio di codice Java seguente viene rimossa la crittografia basata su
 
 Il servizio di output fornisce API per il rendering di un file XDP nei formati .pdf, .pcl, .zpl e .ps. Il servizio supporta le seguenti API:
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Genera un documento PDF unendo una struttura di modulo con i dati memorizzati in un percorso di rete, un file system locale o un percorso HTTP come valori letterali.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Genera un documento PDF unendo come valori letterali una struttura di modulo con i dati archiviati in un percorso di rete, un file system locale o un percorso HTTP.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Genera un documento PDF unendo una struttura di modulo con i dati memorizzati in un&#39;applicazione.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** Unisce una struttura di modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ogni record o salva l&#39;output in un file PDF.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Genera un output PCL, PostScript o ZPL da una struttura di modulo e un file di dati archiviato in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Genera un documento PDF unendo una struttura di modulo con i dati archiviati in un&#39;applicazione.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** unisce una struttura di modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ogni record o salva l&#39;output in un file PDF.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** genera un output PCL, PostScript o ZPL da una struttura di modulo e da un file di dati archiviato in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Genera un output PCL, PostScript e ZPL da un progetto di modulo e da un file di dati archiviati in un&#39;applicazione.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** genera un output PCL, PostScript e ZPL da un file di progettazione e dati di un modulo archiviato in un&#39;applicazione.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-L’API generatePDFOutput genera un documento PDF unendo una progettazione di moduli con i dati. Facoltativamente, genera un file di metadati per ogni record o salva l&#39;output in un file PDF. Utilizza l’API generatePDFOutput per le progettazioni dei moduli o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali. Se la struttura del modulo e i dati XML sono memorizzati in un&#39;applicazione, utilizzare [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
+L’API generatePDFOutput genera un documento PDF unendo una progettazione di moduli con i dati. Facoltativamente, genera un file di metadati per ogni record o salva l&#39;output in un file PDF. Utilizza l’API generatePDFOutput per le progettazioni dei moduli o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali. Se la struttura del modulo e i dati XML sono archiviati in un&#39;applicazione, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
 
 **Sintassi:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3753,7 +3753,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene generato un d
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-L’API generatePDFOutput genera un documento PDF unendo una progettazione di moduli con i dati. Facoltativamente, genera un file di metadati per ogni record o salva l’output in un file PDF. Utilizza l’API generatePrintedOutput per le progettazioni dei moduli o i dati memorizzati in un’applicazione. Se la struttura del modulo e i dati XML vengono memorizzati in un percorso di rete, in locale o in un percorso HTTP come valori letterali, utilizzare [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
+L’API generatePDFOutput genera un documento PDF unendo una progettazione di moduli con i dati. Facoltativamente, genera un file di metadati per ogni record o salva l’output in un file PDF. Utilizza l’API generatePrintedOutput per le progettazioni dei moduli o i dati memorizzati in un’applicazione. Se la struttura del modulo e i dati XML sono memorizzati in un percorso di rete, in locale o in un percorso HTTP come valori letterali, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
 
 **Sintassi:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3877,7 +3877,7 @@ Unisce una struttura di modulo ai dati per creare un documento PDF. Facoltativam
   </tr>
   <tr>
    <td>modelli<br /> </td>
-   <td>Specifica la mappa del nome file della chiave e del modello.<br /> </td>
+   <td>Specifica la mappa del nome file di chiave e modello.<br /> </td>
   </tr>
   <tr>
    <td>dati</td>
@@ -3980,7 +3980,7 @@ String outputFolder="C:/Output";
 
 ### generatePrintedOutput {#generateprintedoutput}
 
-Genera un output PCL, PostScript e ZPL da un file di progettazione e dati di un modulo. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. È possibile inviare l&#39;output direttamente a una stampante o salvarlo come file. Utilizza l’API generatePrintedOutput per le progettazioni dei moduli o i dati memorizzati in un’applicazione.
+Genera un output PCL, PostScript e ZPL da un progetto di modulo e da un file di dati. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. È possibile inviare l&#39;output direttamente a una stampante o salvarlo come file. Utilizza l’API generatePrintedOutput per le progettazioni dei moduli o i dati memorizzati in un’applicazione.
 
 **Sintassi:** `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
 
@@ -4007,7 +4007,7 @@ Genera un output PCL, PostScript e ZPL da un file di progettazione e dati di un 
  </tbody>
 </table>
 
-Nell&#39;esempio di codice Java riportato di seguito viene generato un output PCL, PostScript e ZPL da un progetto di modulo e da dati. Il tipo di output dipende dal valore passato al `printConfig`parametro.
+Di seguito è riportato un esempio di codice Java che genera un output PCL, PostScript e ZPL da un progetto di modulo e da dati. Il tipo di output dipende dal valore passato al parametro `printConfig`.
 
 ```java
 @Reference private OutputService outputService;
@@ -4098,7 +4098,7 @@ Genera un output PCL, PostScript e ZPL in base alla progettazione del modulo e a
  </tbody>
 </table>
 
-Nell&#39;esempio di codice Java riportato di seguito viene generato un output PCL, PostScript e ZPL da un progetto di modulo e da dati. Il tipo di output dipende dal valore passato al `printConfig`parametro.
+Di seguito è riportato un esempio di codice Java che genera un output PCL, PostScript e ZPL da un progetto di modulo e da dati. Il tipo di output dipende dal valore passato al parametro `printConfig`.
 
 ```java
 @Reference private OutputService outputService;
@@ -4174,7 +4174,7 @@ Genera un documento in formato PS, PCL e ZPL unendo un progetto di modulo con i 
   </tr>
   <tr>
    <td>dati</td>
-   <td>Specifica la mappa della chiave e del documento di dati. Se la chiave non è null, il documento di dati viene renderizzato con il modello per la chiave corrispondente nella mappa dei modelli.<br /> </td>
+   <td>Specifica la mappa della chiave e del documento di dati. Se la chiave non è null, il documento dati viene sottoposto a rendering con il modello per la chiave corrispondente nella mappa dei modelli.<br /> </td>
   </tr>
   <tr>
    <td>opzioni</td>
@@ -4182,12 +4182,12 @@ Genera un documento in formato PS, PCL e ZPL unendo un progetto di modulo con i 
   </tr>
   <tr>
    <td>batchOptions</td>
-   <td>Specifica il valore della variabile generateManyFiles. Impostare il flag generateManyFiles per generare più file. Il parametro options accetta oggetti di tipo BatchOptions.<br /> </td>
+   <td>Specifica il valore della variabile generateManyFiles. Impostare il flag generateManyFiles per generare più file. Il parametro options accetta un oggetto di tipo BatchOptions.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-Nell&#39;esempio di codice Java riportato di seguito vengono generati output PCL, PostScript e ZPL in batch da più modelli di progettazione di moduli e file di dati. Il tipo di output dipende dal valore passato al `printConfig`parametro.
+Nell&#39;esempio di codice Java riportato di seguito vengono generati output PCL, PostScript e ZPL in batch da più modelli di progettazione di moduli e file di dati. Il tipo di output dipende dal valore passato al parametro `printConfig`.
 
 ```java
 @Reference private OutputService outputService;
@@ -4296,7 +4296,7 @@ String outputFolder="C:/Output";
 Il servizio Forms fornisce API per importare ed esportare dati da e verso un modulo interattivo di PDF. Un modulo PDF interattivo è un documento PDF che contiene uno o più campi utilizzati per visualizzare e raccogliere informazioni dagli utenti. Il servizio supporta le seguenti API:
 
 * **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** esporta dati da un modulo PDF.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa i dati in un modulo PDF interattivo.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa dati in un modulo PDF interattivo.
 
 ### exportData {#exportdata}
 
@@ -4318,7 +4318,7 @@ Esporta i dati di un modulo PDF interattivo in formati XML e XDP.
   </tr>
   <tr>
    <td>dataFormat<br /> </td>
-   <td>Specifica il formato in cui vengono esportati i dati. Accetta una variabile di tipo enum(XDP, XmlData, Auto).<br /> </td>
+   <td>Specifica il formato in cui vengono esportati i dati. Accetta variabile di tipo enum(XDP, XmlData, Auto).<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4466,10 +4466,10 @@ Il servizio PDF Generator fornisce API per la conversione di formati di file nat
 GeneratePDFService fornisce API per la conversione di vari formati di file, ad esempio doc, docx, ppt, pptx, xls, xlsx, odp, odt, ods, swf (obsoleto), jpg, bmp, tif, png, html e molti altri formati di file in PDF. Fornisce inoltre API per esportare PDF in vari formati di file e ottimizzare i PDF. Il servizio supporta le seguenti API:
 
 * **createPDF**: converte un tipo di file supportato in un documento PDF. Supporta formati di file come Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Oltre a queste applicazioni, qualsiasi PDF generico di terze parti che generi un tipo di applicazione può anche essere collegato all’API.
-* **exportPDF**: converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento di PDF in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3a(sRGB), formati/A-3b(sRGB). Puoi anche specificare [profili di verifica preliminare personalizzati](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) per le uscite PDF.
+* **exportPDF**: converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento di PDF in PostScript( eps) incapsulato, HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). È inoltre possibile specificare [profili di verifica preliminare personalizzati](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) per gli output PDF.
 
-* **optimizePDF**: ottimizza il documento PDF e converte anche un documento PDF da un tipo a un altro. Il metodo accetta un documento PDF come input.
-* **htmlToPdf2**: converte una pagina HTML in un documento PDF. Accetta l’URL della pagina HTML come input.
+* **optimizePDF**: ottimizza il documento PDF e converte un documento PDF da un tipo a un altro. Il metodo accetta un documento PDF come input.
+* **htmlToPdf2**: converte una pagina di HTML in un documento di PDF. Accetta l’URL della pagina HTML come input.
 
 >[!NOTE]
 >
@@ -4554,14 +4554,14 @@ Il servizio createPDF genera le seguenti eccezioni:
    <td>pdfSettings</td>
    <td><p>Output PDF per il documento convertito. È possibile applicare solo le impostazioni seguenti:</p>
     <ul>
-     <li>Stampa_alta_qualità<br /> </li>
+     <li>Stampa di alta_qualità<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
      <li>PDFA1b_2005_CMYK<br /> </li>
      <li>PDFX1a_2001<br /> </li>
      <li>PDFX3_2002<br /> </li>
-     <li>Press_Quality<br /> </li>
+     <li>Qualità_Stampa<br /> </li>
      <li>Dimensione_File_Più_Piccola</li>
-    </ul> <p>Si tratta di un parametro facoltativo.<br /> </p> </td>
+    </ul> <p>È un parametro facoltativo.<br /> </p> </td>
   </tr>
   <tr>
    <td>securitySettings</td>
@@ -4569,13 +4569,13 @@ Il servizio createPDF genera le seguenti eccezioni:
     <ul>
      <li>Nessuna protezione</li>
      <li>Sicurezza password<br /> </li>
-     <li>Sicurezza dei certificati<br /> </li>
+     <li>Sicurezza certificato<br /> </li>
      <li>Server dei criteri Adobe</li>
     </ul> <p>Si tratta di un parametro facoltativo.</p> </td>
   </tr>
   <tr>
    <td>settingsDoc</td>
-   <td>Il file contiene le impostazioni applicate durante la generazione del documento PDF (ad esempio, Ottimizzazione del documento PDF per la visualizzazione Web) e le impostazioni applicate dopo la creazione del documento PDF (ad esempio, Visualizzazione iniziale e Protezione). Si tratta di un parametro facoltativo.<br /> </td>
+   <td>Il file contiene le impostazioni applicate durante la generazione del documento PDF (ad esempio, Ottimizzazione del documento PDF per la visualizzazione Web) e le impostazioni applicate dopo la creazione del documento PDF (ad esempio, Visualizzazione iniziale e Protezione). È un parametro facoltativo.<br /> </td>
   </tr>
   <tr>
    <td>xmpDoc </td>
@@ -4680,11 +4680,11 @@ Map exportPDF(Document inputDoc, String inputFileName, String formatType, Docume
   </tr>
   <tr>
    <td>inputFileName<br /> </td>
-   <td>Il nome del file e l’estensione.<br /> </td>
+   <td>Nome del file con estensione.<br /> </td>
   </tr>
   <tr>
    <td>formatType</td>
-   <td>Il formato del file di output per l’API exportPDF.<br /> </td>
+   <td>Formato del file di output per l'API exportPDF.<br /> </td>
   </tr>
   <tr>
    <td>settingsDoc </td>
@@ -4773,11 +4773,11 @@ OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Docume
   </tr>
   <tr>
    <td>fileTypeSettings<br /> </td>
-   <td>Si tratta di un parametro facoltativo.<br /> </td>
+   <td>È un parametro facoltativo.<br /> </td>
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>Il file contiene le impostazioni applicate durante la generazione del documento PDF (ad esempio, Ottimizzazione del documento PDF per la visualizzazione Web) e le impostazioni applicate dopo la creazione del documento PDF (ad esempio, Visualizzazione iniziale e Protezione). Si tratta di un parametro facoltativo.<br /> </td>
+   <td>Il file contiene le impostazioni applicate durante la generazione del documento PDF (ad esempio, Ottimizzazione del documento PDF per la visualizzazione Web) e le impostazioni applicate dopo la creazione del documento PDF (ad esempio, Visualizzazione iniziale e Protezione). È un parametro facoltativo.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4863,11 +4863,11 @@ HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String 
   </tr>
   <tr>
    <td>fileTypeSettings<br /> </td>
-   <td>Si tratta di un parametro facoltativo.<br /> </td>
+   <td>È un parametro facoltativo.<br /> </td>
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>Il file contiene le impostazioni applicate durante la generazione del documento PDF (ad esempio, Ottimizzazione del documento PDF per la visualizzazione Web) e le impostazioni applicate dopo la creazione del documento PDF (ad esempio, Visualizzazione iniziale e Protezione). Si tratta di un parametro facoltativo.<br /> </td>
+   <td>Il file contiene le impostazioni applicate durante la generazione del documento PDF (ad esempio, Ottimizzazione del documento PDF per la visualizzazione Web) e le impostazioni applicate dopo la creazione del documento PDF (ad esempio, Visualizzazione iniziale e Protezione). È un parametro facoltativo.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4924,7 +4924,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-Il servizio Distiller converte i file PostScript, Incapsulated PostScript (EPS) e PRN (Printer Text File) in file PDF. Il servizio Distiller viene spesso utilizzato per convertire grandi quantità di documenti stampati in documenti elettronici, come fatture e rendiconti. La conversione dei documenti in PDF consente inoltre alle aziende di inviare ai propri clienti una versione cartacea e una versione elettronica di un documento. I formati di file supportati sono .ps, .eps e .prn. Il servizio supporta le seguenti API:
+Il servizio Distiller converte PostScript, PostScript incapsulati (EPS) e file di testo della stampante (PRN) in file PDF. Il servizio Distiller viene spesso utilizzato per convertire grandi quantità di documenti stampati in documenti elettronici, come fatture e rendiconti. La conversione dei documenti in PDF consente inoltre alle aziende di inviare ai propri clienti una versione cartacea e una versione elettronica di un documento. I formati di file supportati sono .ps, .eps e .prn. Il servizio supporta le seguenti API:
 
 Il servizio createPDF restituisce un file java.util.Map con i risultati. Le chiavi della mappa sono:
 
@@ -4967,12 +4967,12 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
    <td>pdfSettings</td>
    <td><p>Impostazioni di output PDF per il documento convertito. È possibile applicare solo le impostazioni seguenti:</p>
     <ul>
-     <li>Stampa_alta_qualità<br /> </li>
+     <li>Stampa di alta_qualità<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
      <li>PDFA1b_2005_CMYK<br /> </li>
      <li>PDFX1a_2001<br /> </li>
      <li>PDFX3_2002<br /> </li>
-     <li>Press_Quality<br /> </li>
+     <li>Qualità_Stampa<br /> </li>
      <li>Dimensione_File_Più_Piccola</li>
     </ul> <p>Si tratta di un parametro facoltativo.</p> </td>
   </tr>
@@ -4982,13 +4982,13 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
     <ul>
      <li>Nessuna protezione</li>
      <li>Sicurezza password<br /> </li>
-     <li>Sicurezza dei certificati<br /> </li>
+     <li>Sicurezza certificato<br /> </li>
      <li>Server dei criteri Adobe</li>
     </ul> <p>Si tratta di un parametro facoltativo.</p> </td>
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>Il file contiene le impostazioni applicate durante la generazione del documento PDF (ad esempio, Ottimizzazione del documento PDF per la visualizzazione Web) e le impostazioni applicate dopo la creazione del documento PDF (ad esempio, Visualizzazione iniziale e Protezione). Si tratta di un parametro facoltativo.<br /> </td>
+   <td>Il file contiene le impostazioni applicate durante la generazione del documento PDF (ad esempio, Ottimizzazione del documento PDF per la visualizzazione Web) e le impostazioni applicate dopo la creazione del documento PDF (ad esempio, Visualizzazione iniziale e Protezione). È un parametro facoltativo.<br /> </td>
   </tr>
   <tr>
    <td>xmpDoc </td>
@@ -4997,7 +4997,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
  </tbody>
 </table>
 
-Nell&#39;esempio di codice Java seguente i file di input di tipo PostScript (PS), Encapsulated PostScript (EPS) e i file di testo della stampante (PRN) vengono convertiti in file PDF.
+Il codice Java di esempio seguente converte i file di input di tipo PostScript (PS), Encapsulated PostScript (EPS) e i file di testo della stampante (PRN) in file PDF.
 
 ```java
 @Reference DistillerService distillerService;

@@ -72,7 +72,7 @@ Per abilitare l’endpoint corrispondente:
    >
    >Nella finestra di dialogo viene visualizzato il seguente avviso:
    >
-   >* *Se non vengono gestiti con attenzione, gli endpoint GraphQL possono causare problemi di prestazioni e sicurezza dei dati. Dopo aver creato un endpoint, assicurati di impostare le autorizzazioni appropriate.*
+   >* *Se non vengono gestiti con attenzione, gli endpoint GraphQL possono causare problemi di prestazioni e sicurezza dei dati. Assicurarsi di impostare le autorizzazioni appropriate dopo la creazione di un endpoint.*
 
 1. Per confermare, fai clic su **Crea**.
 1. La finestra di dialogo **Passaggi successivi** fornisce un collegamento diretto alla console Sicurezza per verificare che l’endpoint appena creato disponga delle autorizzazioni appropriate.

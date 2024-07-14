@@ -21,15 +21,15 @@ La pagina dei dettagli di un&#39;attività contiene informazioni su un&#39;attiv
 
 È possibile aggiungere le seguenti informazioni alla pagina dei dettagli dell&#39;attività:
 
-* Informazioni disponibili nell’oggetto JSON di un’attività (sezione Attività in [Descrizione oggetto JSON dell’area di lavoro di AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
-* Informazioni disponibili nell’oggetto JSON di un’istanza di processo (sezione Istanza di processo in [Descrizione oggetto JSON dell’area di lavoro di AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Informazioni disponibili nell&#39;oggetto JSON di un&#39;attività (sezione Attività in [Descrizione oggetto JSON dell&#39;area di lavoro AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Informazioni disponibili nell&#39;oggetto JSON di un&#39;istanza del processo (sezione Istanza del processo in [Descrizione oggetto JSON dell&#39;area di lavoro AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
 
 Per personalizzare la pagina dei dettagli dell&#39;operazione:
 
-1. Segui [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Per visualizzare ulteriori informazioni, aggiungi le coppie chiave-valore corrispondenti alla `translation.json` file in `todo`blocco > `details`blocco > `app`blocco > [`required`blocco].
+1. Segui [Passaggi generici per la personalizzazione dell&#39;area di lavoro AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Per visualizzare ulteriori informazioni, aggiungere coppie chiave-valore corrispondenti al file `translation.json` in `todo`blocco > `details`blocco > `app`blocco > [`required`blocco].
 
-   Il [`required`blocco] fa riferimento ai blocchi disponibili, ad esempio il blocco task per le informazioni sul task, il blocco processo per le informazioni sul processo e il blocco task corrente per le informazioni sui task in sospeso.
+   Il [`required`blocco] fa riferimento ai blocchi disponibili, ad esempio il blocco di attività per le informazioni sulle attività, il blocco di processo per le informazioni sui processi e il blocco di attività corrente per le informazioni sulle attività in sospeso.
 
    Ad esempio, per aggiungere informazioni sulla selezione route obbligatoria nella pagina dei dettagli dell&#39;attività, è possibile aggiungere la seguente coppia chiave-valore nel blocco dell&#39;attività:
 
@@ -54,9 +54,9 @@ Per personalizzare la pagina dei dettagli dell&#39;operazione:
    >
    >Aggiungi coppie chiave-valore corrispondenti per tutte le lingue supportate.
 
-1. Copia `/libs/ws/js/runtime/templates/taskdetails.html` a `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Copia `/libs/ws/js/runtime/templates/taskdetails.html` in `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Aggiungi le nuove informazioni a `/apps/ws/js/runtime/templates/taskdetails.html`. Ad esempio:
+   Aggiungere le nuove informazioni a `/apps/ws/js/runtime/templates/taskdetails.html`. Ad esempio:
 
    ```css
    <div class="detailsContainer">
@@ -83,6 +83,6 @@ Per personalizzare la pagina dei dettagli dell&#39;operazione:
 
 >[!NOTE]
 >
->Per personalizzare la pagina dei dettagli delle operazioni con le operazioni create in **Avvia processo** dell’area di lavoro di AEM Forms, aggiungi le nuove informazioni a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Per personalizzare la pagina dei dettagli delle attività con le attività create nella scheda **Avvia processo** dell&#39;area di lavoro di AEM Forms, aggiungere le nuove informazioni a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Per aggiungere nuovi stili per le informazioni aggiunte nella pagina dei dettagli, modifica il file CSS utilizzando *Modifiche all’interfaccia utente* sezione in [Personalizzazione di Workspace](changing-locale-user-interface.md).
+>Per aggiungere nuovi stili per le informazioni aggiunte nella pagina dei dettagli, modifica il file CSS utilizzando la sezione *Modifiche all&#39;interfaccia utente* in [Personalizzazione Workspace](changing-locale-user-interface.md).

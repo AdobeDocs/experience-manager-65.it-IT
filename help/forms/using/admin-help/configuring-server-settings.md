@@ -20,9 +20,9 @@ ht-degree: 0%
 
 La pagina Impostazioni server consente di accedere a varie impostazioni per il flusso di lavoro dei moduli:
 
-* **Impostazioni e-mail** che abilitano i messaggi e-mail in uscita, insieme alle impostazioni del server e-mail utilizzate per tali messaggi. (vedere [Configurazione delle impostazioni e-mail](configuring-server-settings.md#configuring-email-settings).)
-* **Impostazioni notifica attività** che abilitano, disabilitano o modificano i messaggi inviati tramite notifiche e-mail a utenti e gruppi finali in relazione alle loro attività. (vedere [Configurazione delle notifiche per utenti e gruppi](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
-* **Impostazioni delle notifiche per gli amministratori** che abilitano, disabilitano o modificano i messaggi inviati nelle notifiche e-mail per le attività amministrative. (vedere [Configurazione delle notifiche per gli amministratori](configuring-server-settings.md#configuring-notifications-for-administrators).)
+* **Impostazioni e-mail** che abilitano i messaggi e-mail in uscita, insieme alle impostazioni del server e-mail utilizzate per tali messaggi. (Vedi [Configurazione delle impostazioni e-mail](configuring-server-settings.md#configuring-email-settings).)
+* **Impostazioni notifica attività** che attivano, disabilitano o modificano i messaggi inviati tramite notifiche e-mail a utenti e gruppi finali in relazione alle loro attività. (Vedi [Configurazione delle notifiche per utenti e gruppi](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
+* **Impostazioni delle notifiche dell&#39;amministratore** che attivano, disattivano o modificano i messaggi inviati nelle notifiche e-mail per le attività amministrative. (Vedi [Configurazione delle notifiche per gli amministratori](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
 ## Configurazione delle impostazioni e-mail {#configuring-email-settings}
 
@@ -30,7 +30,7 @@ La pagina Impostazioni server consente di accedere a varie impostazioni per il f
 
 Per abilitare l’invio di messaggi e-mail tra i moduli AEM e gli utenti, configura le impostazioni e-mail in uscita nella pagina Impostazioni e-mail. L&#39;e-mail in uscita deve utilizzare un server SMTP.
 
-Per consentire ai moduli AEM di ricevere e gestire i messaggi e-mail in arrivo dagli utenti, creare un endpoint e-mail per il servizio Attività completa. (vedere [Creare un endpoint e-mail per il servizio Attività completa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
+Per consentire ai moduli AEM di ricevere e gestire i messaggi e-mail in arrivo dagli utenti, creare un endpoint e-mail per il servizio Attività completa. (Vedi [Creare un endpoint e-mail per il servizio Attività completo](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
 Se i processi sono progettati e implementati senza richiedere l’invio di e-mail, non è necessario configurare alcuna delle opzioni nella pagina Impostazioni e-mail.
 
@@ -44,7 +44,7 @@ Se i processi sono progettati e implementati senza richiedere l’invio di e-mai
 
    >[!NOTE]
    >
-   >Se si utilizza Microsoft Exchange Server e l&#39;indirizzo e-mail è un indirizzo e-mail non valido, il server Microsoft Exchange non riesce a inviare un messaggio e-mail alle liste di distribuzione. Per risolvere il problema, selezionare **Abilita comunicazione esterna** separatamente per ogni lista di distribuzione sul server Microsoft Exchange.
+   >Se si utilizza Microsoft Exchange Server e l&#39;indirizzo e-mail è un indirizzo e-mail non valido, il server Microsoft Exchange non riesce a inviare un messaggio e-mail alle liste di distribuzione. Per risolvere il problema, selezionare l&#39;opzione **Abilita comunicazione esterna** separatamente per ogni lista di distribuzione nel server Microsoft Exchange.
 
 1. Fai clic su Salva.
 
@@ -56,13 +56,13 @@ Se i processi sono progettati e implementati senza richiedere l’invio di e-mai
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione con moduli AEM.
+>Flex Workspace è obsoleto per il rilascio di moduli AEM.
 
 Per impostazione predefinita, le e-mail inviate dai moduli AEM contengono collegamenti a (obsoleto per i moduli AEM su JEE) Flex Workspace. Puoi configurare i moduli AEM per inviare e-mail con collegamenti ad AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di AEM Forms Workspace rispetto a (obsoleto per i moduli AEM su JEE) Flex Workspace, consulta [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo.
 
 1. Nella console di amministrazione, fai clic su Home > Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche attività.
 1. Aprire il modello di assegnazione delle attività.
-1. Nelle notifiche delle attività, imposta il modello come segue: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
+1. Impostare il modello nelle notifiche delle attività su: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
    ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
@@ -78,7 +78,7 @@ Puoi configurare i seguenti tipi di notifiche per utenti e gruppi:
 * assegnazioni attività
 * scadenze
 
-Per generare notifiche e-mail per un gruppo, specifica un indirizzo e-mail per il gruppo in Gestione utente. <!--Fix broken link See Setting up and organizing users -->Quando il flusso di lavoro Forms invia una notifica e-mail a un gruppo, la notifica e-mail viene inviata a ogni membro del gruppo che ha un indirizzo e-mail specificato. Quando un membro del gruppo riceve una notifica e-mail e desidera richiedere l’attività, deve fare clic sul collegamento attestazione nella notifica e-mail, che apre la pagina dei dettagli dell’attività in Workspace. Da questo punto, il membro può richiedere o richiedere e aprire l&#39;elemento di lavoro.
+Per generare notifiche e-mail per un gruppo, specifica un indirizzo e-mail per il gruppo in Gestione utente. <!--Fix broken link See Setting up and organizing users -->Quando il flusso di lavoro dei moduli invia una notifica e-mail a un gruppo, ogni membro del gruppo che ha un indirizzo e-mail specificato riceve la notifica e-mail. Quando un membro del gruppo riceve una notifica e-mail e desidera richiedere l’attività, deve fare clic sul collegamento attestazione nella notifica e-mail, che apre la pagina dei dettagli dell’attività in Workspace. Da questo punto, il membro può richiedere o richiedere e aprire l&#39;elemento di lavoro.
 
 >[!NOTE]
 >
@@ -92,8 +92,8 @@ Per generare notifiche e-mail per un gruppo, specifica un indirizzo e-mail per i
 1. In Tipo notifica fare clic su Promemoria (per utenti) o Gruppo - Promemoria (per gruppi).
 1. Selezionare Abilita promemoria o Abilita gruppo - Promemoria.
 1. (Solo notifiche utente) Per includere un allegato del modulo e i relativi dati con il messaggio e-mail di promemoria, selezionare Includi dati modulo.
-1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Nell&#39;elenco Formato messaggio selezionare il formato di invio del messaggio di posta elettronica, HTML o Testo. Il formato predefinito è HTML.
 1. Nell’elenco Codifica e-mail, seleziona il formato di codifica da utilizzare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fai clic su Salva.
@@ -106,8 +106,8 @@ Per generare notifiche e-mail per un gruppo, specifica un indirizzo e-mail per i
 1. In Tipo notifica fare clic su Assegnazione attività per utenti o su Gruppo - Assegnazione attività per gruppi.
 1. Selezionare Abilita assegnazione attività per gli utenti o Abilita gruppo - Assegnazione attività per i gruppi.
 1. (Solo notifiche utente) Per includere un allegato del modulo e i relativi dati con il messaggio e-mail di assegnazione delle attività, selezionare Includi dati modulo.
-1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Nell&#39;elenco Formato messaggio selezionare il formato di invio del messaggio di posta elettronica, HTML o Testo. Il formato predefinito è HTML.
 1. Nell’elenco Codifica e-mail, seleziona il formato di codifica da utilizzare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fai clic su Salva.
@@ -119,8 +119,8 @@ Puoi inviare notifiche di scadenza a utenti e gruppi una volta passata la scaden
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro di Forms > Impostazioni server > Notifiche attività.
 1. In Tipo di notifica, fai clic su Scadenza (per gli utenti) o Gruppo - Scadenza (per i gruppi).
 1. Seleziona Abilita scadenza o Abilita gruppo - Scadenza.
-1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Nell&#39;elenco Formato messaggio selezionare il formato di invio del messaggio di posta elettronica, HTML o Testo. Il formato predefinito è HTML.
 1. Nell’elenco Codifica e-mail, seleziona il formato di codifica da utilizzare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fai clic su Salva.
@@ -150,8 +150,8 @@ Se un ramo si arresta (smette di procedere deliberatamente o a causa di un error
 1. In Tipo notifica fare clic su Ramo bloccato.
 1. Selezionare Abilita ramo bloccato.
 1. Nella casella Indirizzo e-mail, digita gli indirizzi degli utenti a cui inviare una notifica quando un ramo si blocca. Utilizza il formato user@domain.com e separa ogni indirizzo con una virgola. In genere, questo indirizzo e-mail è per un amministratore.
-1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Nell&#39;elenco Formato messaggio selezionare il formato di invio del messaggio di posta elettronica, HTML o Testo. Il formato predefinito è HTML.
 1. Nell’elenco Codifica e-mail, seleziona il formato di codifica da utilizzare per il messaggio e-mail. Il valore predefinito è UTF-8, utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fai clic su Salva.
@@ -164,8 +164,8 @@ Se un&#39;operazione si arresta (interrompe l&#39;operazione deliberatamente o a
 1. In Tipo notifica fare clic su Operazione bloccata.
 1. Selezionare Abilita operazione bloccata.
 1. Nella casella Indirizzi e-mail digitare gli indirizzi degli utenti a cui inviare una notifica quando un&#39;operazione viene interrotta. Utilizza il formato user@domain.com e separa ogni indirizzo con una virgola. In genere, questo indirizzo e-mail è per un amministratore.
-1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications)
-1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedi [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto digitare il testo per la riga dell&#39;oggetto del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications)
+1. Nella casella Modello notifica digitare il testo del corpo del messaggio di posta elettronica. Questo campo viene precompilato con il testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Fai clic su Salva.
 
 ## Personalizzazione del contenuto delle notifiche {#customizing-the-content-of-notifications}
@@ -198,15 +198,15 @@ Solo per le notifiche di attività, il flusso di lavoro di Forms include due con
 
 Se la soluzione viene distribuita in un ambiente cluster, sostituire `@@notification-host@@` con l&#39;indirizzo del cluster.
 
-`<`*PORTA* `>` è il numero di porta del listener HTTP per il server applicazioni. La porta del listener HTTP predefinita per i server applicazioni supportati è la seguente:
+`<`*PORT* `>` è il numero di porta del listener HTTP per il server applicazioni. La porta del listener HTTP predefinita per i server applicazioni supportati è la seguente:
 
 **JBoss:** 8080
 
-**Oracle di server WebLogic:** 7001
+**Server Oracle WebLogic:** 7001
 
 **IBM WebSphere:** 9080
 
-Per far funzionare questi URL correttamente, sostituisci `<`*PORTA* `>` con il numero di porta appropriato per l’ambiente in uso.
+Per garantire il corretto funzionamento di questi URL, sostituire `<`*PORT* `>` con il numero di porta appropriato per l&#39;ambiente in uso.
 
 >[!NOTE]
 >
@@ -218,23 +218,23 @@ L&#39;elenco Selettore variabili fornisce variabili utili che è possibile trasc
 
 Per i promemoria, le assegnazioni di attività e le scadenze per utenti e gruppi, è possibile utilizzare le seguenti variabili nelle caselle Oggetto e Modello di notifica:
 
-**descrizione** Contenuto della proprietà Description, come definito nel passaggio utente (punto iniziale, operazione Assegna task o operazione Assegna più task) del processo in Workbench.
+**descrizione** Il contenuto della proprietà Description, come definito nel passaggio utente (punto iniziale, operazione Assegna attività o operazione Assegna più attività) del processo in Workbench.
 
-**istruzioni** Contenuto della proprietà Istruzioni attività, come definito nel passaggio utente del processo in Workbench.
+**istruzioni** Il contenuto della proprietà Istruzioni attività, come definito nel passaggio utente del processo in Workbench.
 
 **notification-host** Il nome host del server applicazioni AEM forms.
 
-**process-name** Nome del processo.
+**process-name** Il nome del processo.
 
 **operation-name** Nome del passaggio.
 
-**taskid** Identificatore univoco dell&#39;attività corrente.
+**taskid** L&#39;identificatore univoco dell&#39;attività corrente.
 
 **azioni** Produce un elenco numerato di route valide (ad esempio, Approva, Rifiuta) su cui il destinatario può fare clic.
 
 Inoltre, per i promemoria del gruppo, le assegnazioni delle attività del gruppo e le scadenze del gruppo, è possibile utilizzare anche:
 
-**group-name** Nome del gruppo a cui è assegnato l&#39;elemento di lavoro.
+**nome-gruppo** Il nome del gruppo a cui è assegnato l&#39;elemento di lavoro.
 
 >[!NOTE]
 >
@@ -242,19 +242,19 @@ Inoltre, per i promemoria del gruppo, le assegnazioni delle attività del gruppo
 
 Per i rami in stallo, è possibile utilizzare le seguenti variabili nelle caselle Oggetto e Modello di notifica:
 
-**branch-id** Identificatore della filiale.
+**branch-id** L&#39;identificatore del ramo.
 
-**process-id** Identificatore dell&#39;istanza del processo.
+**process-id** L&#39;identificatore dell&#39;istanza del processo.
 
 **notification-host** Il nome host del server applicazioni AEM forms.
 
 Per le operazioni in stallo, è possibile utilizzare le seguenti variabili nelle caselle Oggetto e Modello di notifica:
 
-**action-id** L’identificatore dell’operazione.
+**action-id** L&#39;identificatore dell&#39;operazione.
 
-**branch-id** Identificatore della filiale.
+**branch-id** L&#39;identificatore del ramo.
 
-**process-id** Identificatore dell&#39;istanza del processo.
+**process-id** L&#39;identificatore dell&#39;istanza del processo.
 
 **notification-host** Il nome host del server applicazioni AEM forms.
 
@@ -274,7 +274,7 @@ Se si digita il testo seguente nella casella Modello di notifica per le notifich
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
-Se il numero di filiale è 4868 e il nome del server è `ServerXYZ`:
+L&#39;amministratore riceve un messaggio di posta elettronica contenente il contenuto seguente se il numero di ramo è 4868 e il nome del server è `ServerXYZ`:
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 

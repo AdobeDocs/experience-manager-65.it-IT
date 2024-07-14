@@ -33,16 +33,16 @@ La tabella seguente elenca la risoluzione per tutte le versioni interessate:
 | Versione | Versione corrente | Azione utente |
 |---|---|---|
 | Experience Manager 6.5 Forms su JEE | 6.5.19.0 | [Installa il service pack più recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| Experience Manager 6.5 Forms su JEE | 6.5.13.0 - 6.5.18.0 | Utilizza uno dei seguenti metodi: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Installa il service pack più recente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Utilizzare i passaggi di mitigazione manuali </a> |
-| Experience Manager 6.5 Forms su JEE | 6,5 - 6.5.12,0 | [Installa il service pack più recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)  </br> </br> **NOTA:** AEM Forms supporta attualmente le versioni da 6.5.13.0 a 6.5.19.0. Se utilizzi una versione precedente, ti consigliamo di effettuare l’aggiornamento a 6.5.13.0 o a una versione successiva. Per istruzioni su come installare AEM 6.5.13.0 o versione successiva, consulta le note sulla versione. |
+| Experience Manager 6.5 Forms su JEE | 6.5.13.0 - 6.5.18.0 | Utilizza uno dei seguenti metodi: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Installare il service pack più recente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Utilizzare i passaggi di mitigazione manuali </a> |
+| Experience Manager 6.5 Forms su JEE | 6,5 - 6.5.12,0 | [Installa il service pack più recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **NOTA:** AEM Forms supporta attualmente le versioni da 6.5.13.0 a 6.5.19.0. Se utilizzi una versione precedente, ti consigliamo di effettuare l’aggiornamento a 6.5.13.0 o a una versione successiva. Per istruzioni su come installare AEM 6.5.13.0 o versione successiva, consulta le note sulla versione. |
 
 ### Utilizzare i passaggi di mitigazione manuali {#use-manual-mitigation-steps}
 
 È possibile utilizzare i passaggi di mitigazione manuali per risolvere il problema sul server di moduli AEM 6.5 con Service Pack 13 al server di moduli AEM 6.5 con Service Pack 18 (6.5.13.0 - 6.5.18.0):
 
-1. Scarica il file [jar struts-core 2.5.33](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) in una cartella locale. Ad esempio, C:\Users\labuser\Desktop\struts2-core-2.5.33.jar.
-1. Scarica lo strumento di applicazione di patch manuale AEM Forms su JEE da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
-1. Decomprimi l’archivio dello strumento di applicazione di patch manuale. Ad esempio, estrai in `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. Vengono estratti i seguenti file:
+1. Scarica [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) in una cartella locale. Ad esempio, C:\Users\labuser\Desktop\struts2-core-2.5.33.jar.
+1. Scarica lo strumento di patch manuale AEM Forms su JEE da [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
+1. Decomprimi l’archivio dello strumento di applicazione di patch manuale. Ad esempio, estrarre in `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. Vengono estratti i seguenti file:
    * archive-patcher-1.0.0.jar
    * patch-archive.bat
    * patch-archive.sh
@@ -67,7 +67,7 @@ La tabella seguente elenca la risoluzione per tutte le versioni interessate:
    >
    >Lo strumento richiede la connettività Internet in quanto scarica le dipendenze in fase di esecuzione. Quindi, prima di eseguire lo strumento, assicurarsi di essere connessi a Internet.
 
-1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms e `struts2-core-2.5.33.jar` file.
+1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando, sostituire il percorso nel comando con il percorso del server AEM Forms e del file `struts2-core-2.5.33.jar`.
 
 
 
@@ -99,7 +99,7 @@ La tabella seguente elenca la risoluzione per tutte le versioni interessate:
    >
    >Lo strumento richiede la connettività Internet in quanto scarica le dipendenze in fase di esecuzione. Quindi, prima di eseguire lo strumento, assicurarsi di essere connessi a Internet.
 
-1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms e `struts2-core-2.5.33.jar` file.
+1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando, sostituire il percorso nel comando con il percorso del server AEM Forms e del file `struts2-core-2.5.33.jar`.
 
 
 

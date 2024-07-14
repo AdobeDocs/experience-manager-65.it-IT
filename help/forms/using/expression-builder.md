@@ -22,7 +22,7 @@ Utilizzando il Generatore di espressioni, puoi creare espressioni o condizioni c
 
 ## Creazione di espressioni e funzioni remote con il generatore di espressioni {#creating-expressions-and-remote-functions-with-expression-builder}
 
-Il Generatore di espressioni utilizza internamente le librerie JSP EL, in modo che l’espressione sia conforme alla sintassi JSPEL. Per ulteriori informazioni, consulta [Espressioni di esempio](#exampleexpressions).
+Il Generatore di espressioni utilizza internamente le librerie JSP EL, in modo che l’espressione sia conforme alla sintassi JSPEL. Per ulteriori informazioni, vedere [Espressioni di esempio](#exampleexpressions).
 
 ![Generatore di espressioni](assets/expressionbuilder.png)
 
@@ -38,9 +38,9 @@ Di seguito sono riportati alcuni esempi JSP EL comunemente utilizzati che è pos
 * Per concatenare due stringhe: ${str1} ${str2}
 * Per confrontare due numeri: ${age &lt; 18}
 
-Per ulteriori informazioni, consulta [Specifiche JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
+Puoi trovare ulteriori informazioni nella [specifica JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
 
-* Indici di raccolta e chiavi di mappatura (utilizzando [] notation) non sono supportate nei nomi delle variabili per le espressioni valutate sul lato client.
+* Gli indici di raccolta e le chiavi di mappa (utilizzando la notazione []) non sono supportati nei nomi delle variabili per le espressioni valutate sul lato client.
 * Di seguito sono riportati i tipi di parametri o i tipi restituiti di funzioni utilizzati nelle espressioni:
 
    * java.lang.String
@@ -80,7 +80,7 @@ Puoi creare un bundle personalizzato per esportare le funzioni remote da utilizz
 
    1. **Abilitato**: determina se questo metodo è abilitato. Expression Manager ignora i metodi disabilitati.
    1. **familyId**: specifica la famiglia (gruppo) del metodo. Se vuoto, Gestione espressioni presuppone che il metodo appartenga alla famiglia predefinita. Non esiste un registro di famiglie (ad eccezione di quello predefinito) da cui vengono scelte le funzioni. Expression Manager crea in modo dinamico il Registro di sistema creando un’unione di tutti gli ID di famiglia specificati da tutte le funzioni esportate dai vari bundle. Assicurati che l’ID qui specificato sia ragionevolmente leggibile, poiché viene visualizzato anche nell’interfaccia utente di creazione delle espressioni.
-   1. **displayName**: nome leggibile della funzione. Questo nome viene utilizzato a scopo di visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea un nome predefinito utilizzando il prefisso e il nome locale della funzione.
+   1. **displayName**: nome leggibile per la funzione. Questo nome viene utilizzato a scopo di visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea un nome predefinito utilizzando il prefisso e il nome locale della funzione.
    1. **Descrizione**: descrizione dettagliata della funzione. Questa descrizione viene utilizzata a scopo di visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea una descrizione predefinita utilizzando il prefisso e il nome locale della funzione.
 
    ```java
@@ -126,7 +126,7 @@ Puoi creare un bundle personalizzato per esportare le funzioni remote da utilizz
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-La voce exm.service=true indica a Gestione espressioni che il servizio contiene funzioni remote idonee per l&#39;utilizzo nelle espressioni. Il &lt;service_id> il valore deve essere un identificatore Java valido (alfanumerico,$, _ senza altri caratteri speciali). Questo valore, preceduto dalla parola chiave REMOTE_, forma il prefisso utilizzato all&#39;interno delle espressioni. Ad esempio, è possibile fare riferimento a un&#39;interfaccia con una barra dei metodi con annotazioni e l&#39;ID del servizio nelle proprietà del servizio all&#39;interno delle espressioni utilizzando REMOTE_foo:bar().
+La voce exm.service=true indica a Gestione espressioni che il servizio contiene funzioni remote idonee per l&#39;utilizzo nelle espressioni. Il valore &lt;service_id> deve essere un identificatore Java valido (alfanumerico,$, _ senza altri caratteri speciali). Questo valore, preceduto dalla parola chiave REMOTE_, forma il prefisso utilizzato all&#39;interno delle espressioni. Ad esempio, è possibile fare riferimento a un&#39;interfaccia con una barra dei metodi con annotazioni e l&#39;ID del servizio nelle proprietà del servizio all&#39;interno delle espressioni utilizzando REMOTE_foo:bar().
 
 ```java
 package mergeandfuse.com;
@@ -154,8 +154,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Di seguito sono riportati alcuni archivi di esempio da utilizzare:
 
-* **GoodFunctions.jar.zip** è il file jar con un bundle contenente un esempio di definizione di funzione remota. Scarica il file GoodFunctions.jar.zip e decomprimi per ottenere il file jar.
-* **GoodFunctions.zip** è il pacchetto di codice sorgente per la definizione di una funzione remota personalizzata e la creazione di un bundle per essa.
+* **GoodFunctions.jar.zip** è il file jar con un bundle contenente una definizione di funzione remota di esempio. Scarica il file GoodFunctions.jar.zip e decomprimi per ottenere il file jar.
+* **GoodFunctions.zip** è il pacchetto del codice sorgente per la definizione di una funzione remota personalizzata e la creazione di un bundle per tale funzione.
 
 GoodFunctions.jar.zip
 

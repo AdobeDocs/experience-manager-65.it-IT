@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Problemi riscontrati durante la creazione di filtri in Internet Explorer 9 in Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Se crei filtri per rapporti predefiniti, i seguenti problemi si verificano a intermittenza in **Internet Explorer 9** per **Microsoft Windows 7** ambiente:
+Se si creano filtri per rapporti predefiniti, si verificano i seguenti problemi in modo intermittente nell&#39;ambiente **Internet Explorer 9** per **Microsoft Windows 7**:
 
 * Nell’elenco a discesa del campo Valore vengono visualizzati identificatori univoci anziché i valori.
 * Nel controllo Calendario del campo Valore vengono visualizzati i caratteri giapponesi.

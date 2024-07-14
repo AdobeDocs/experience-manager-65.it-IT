@@ -26,27 +26,27 @@ Nell’app AEM Forms, con il pulsante sinistro del mouse viene aperta una nuova 
 
 1. Apri il progetto.
 
-   * Per iOS, apri `Capture.xcodeproj` in Xcode
+   * Per iOS, apri `Capture.xcodeproj` in Xcode.
    * Per Android, apri il progetto Android in Eclipse.
-   * Per Windows, apri `MWSWindows.sln` in Visual Studio.
+   * Per Windows, aprire `MWSWindows.sln` in Visual Studio.
 
-1. Passa alla cartella delle viste e apri `task.js` file per la modifica.
+1. Passare alla cartella delle visualizzazioni e aprire il file `task.js` per la modifica.
 
-   * In Xcode, passa a **Acquisizione > www > wsmobile > js > runtime > visualizzazioni** cartella.
-   * In Eclipse, accedi al **assets > www > wsmobile > js > runtime > views** cartella.
-   * In Visual Studio, passare al **MWSWwindows > www > wsmobile > js > runtime > visualizzazioni** cartella.
+   * In Xcode, passa alla cartella **Capture > www > wsmobile > js > runtime > views**.
+   * In Eclipse, passa alla cartella **assets > www > wsmobile > js > runtime > views**.
+   * In Visual Studio, passare alla cartella **MWSWwindows > www > wsmobile > js > runtime > views**.
 
    >[!NOTE]
    >
    >Il file task.js contiene la vista backbone associata a ogni attività o punto d&#39;inizio elencato negli elenchi di attività o punto d&#39;inizio.
 
-1. In `task.js` , cercare la proprietà events della visualizzazione.
+1. Nel file `task.js`, cercare la proprietà degli eventi della visualizzazione.
 
    La proprietà events è una mappa con ogni voce nel formato:
 
    `"EventName Selector": "Function"`
 
-   Quando si attiva un evento JavaScript denominato `EventName`su un elemento HTML specificato da `Selector`, il `Function`viene chiamato.
+   Quando si attiva un evento JavaScript denominato `EventName` su un elemento HTML specificato da `Selector`, viene chiamato `Function`.
 
 1. Trova
 
@@ -68,7 +68,7 @@ Nell’app AEM Forms, con il pulsante sinistro del mouse viene aperta una nuova 
 
      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
-1. Salva e chiudi `task.js` file.
+1. Salvare e chiudere il file `task.js`.
 1. Crea ed esegui l’app AEM Forms. Ora è possibile aprire un utilizzando con le opzioni scorri a sinistra e scorri a destra.
 
 Analogamente, è possibile apportare modifiche in altre viste per varie combinazioni di movimenti, elementi HTML e funzioni.

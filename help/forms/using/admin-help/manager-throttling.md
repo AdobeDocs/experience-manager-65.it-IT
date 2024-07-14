@@ -36,7 +36,7 @@ Le operazioni asincrone vengono gestite in questo modo:
 1. Work Manager memorizza l&#39;elemento di lavoro in una tabella di database e assegna un identificatore univoco all&#39;elemento di lavoro. Il record del database contiene tutte le informazioni necessarie per eseguire l&#39;elemento di lavoro.
 1. I thread di Work Manager estraggono gli elementi di lavoro quando diventano liberi. Prima di estrarre gli elementi di lavoro, i thread possono verificare se i servizi richiesti sono stati avviati, se sono presenti dimensioni heap sufficienti per estrarre l&#39;elemento di lavoro successivo e se sono presenti cicli di CPU sufficienti per elaborare l&#39;elemento di lavoro. Work Manager valuta anche gli attributi dell’elemento di lavoro (come la sua priorità) durante la pianificazione dell’esecuzione.
 
-Gli amministratori di moduli AEM possono utilizzare Monitoraggio integrità per verificare le statistiche di Gestione lavoro, ad esempio il numero di elementi di lavoro nella coda e i relativi stati. È inoltre possibile utilizzare Health Monitor per sospendere, riprendere, riprovare o eliminare elementi di lavoro. (vedere [Visualizzare le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+Gli amministratori di moduli AEM possono utilizzare Monitoraggio integrità per verificare le statistiche di Gestione lavoro, ad esempio il numero di elementi di lavoro nella coda e i relativi stati. È inoltre possibile utilizzare Health Monitor per sospendere, riprendere, riprovare o eliminare elementi di lavoro. (Vedi [Visualizza statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
 ## Configurazione delle opzioni di limitazione di Work Manager {#configuring-work-manager-throttling-options}
 
@@ -56,11 +56,11 @@ Gli amministratori di moduli AEM possono utilizzare Monitoraggio integrità per 
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
-   <td><p>Imposta questa opzione su <code>true</code> per attivare la modalità di debug o su false per disattivarla. </p><p>In modalità di debug, vengono registrati i messaggi relativi alle violazioni dei criteri di Work Manager e alle azioni di pausa/ripresa di Work Manager. Impostare questa opzione su true solo durante la risoluzione dei problemi.</p></td>
+   <td><p>Impostare questa opzione su <code>true</code> per abilitare la modalità di debug o su false per disabilitarla. </p><p>In modalità di debug, vengono registrati i messaggi relativi alle violazioni dei criteri di Work Manager e alle azioni di pausa/ripresa di Work Manager. Impostare questa opzione su true solo durante la risoluzione dei problemi.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.enabled</code></td>
-   <td><p>Imposta questa opzione su <code>true</code> per abilitare la limitazione in base alle impostazioni di controllo della memoria descritte di seguito, oppure per <code>false</code> per disattivare la limitazione.</p></td>
+   <td><p>Impostare questa opzione su <code>true</code> per abilitare la limitazione in base alle impostazioni di controllo della memoria descritte di seguito oppure su <code>false</code> per disabilitare la limitazione.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.high-limit</code></td>
@@ -77,15 +77,15 @@ Gli amministratori di moduli AEM possono utilizzare Monitoraggio integrità per 
  </tbody>
 </table>
 
-**Aggiungere opzioni Java a JBoss**
+**Aggiungi opzioni Java a JBoss**
 
 1. Arresta il server applicazioni JBoss.
-1. Apri *[directory principale del server applicazioni]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungi una qualsiasi delle opzioni Java necessarie, nel formato `-Dproperty=value`.
+1. Aprire la directory principale *[appserver]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungere le opzioni Java necessarie nel formato `-Dproperty=value`.
 1. Riavviare il server.
 
 **Aggiungere opzioni Java a WebLogic**
 
-1. Avviare la console di amministrazione WebLogic digitando `https://[host name]:[port]/console` in un browser web.
+1. Avviare la console di amministrazione di WebLogic digitando `https://[host name]:[port]/console` in un browser Web.
 1. Digitare il nome utente e la password creati per il dominio del server WebLogic e fare clic su Registra In Centro modifiche fare clic su Blocca e modifica.
 1. In Struttura dominio fare clic su Ambiente > Server e nel riquadro di destra fare clic sul nome del server gestito.
 1. Nella schermata successiva, fai clic sulla scheda Configurazione > scheda Avvio server.

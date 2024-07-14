@@ -24,27 +24,27 @@ I moduli adattivi supportano l’invio di dati al processo AEM Forms su JEE per 
 
 Effettua le seguenti operazioni per consentire al tuo server AEM Forms di inviare dati a un server AEM Forms su JEE:
 
-1. Vai alla console di configurazione web AEM all’indirizzo https://[*host*]:[*porta*]/system/console/configMgr.
+1. Vai alla console di configurazione Web AEM all&#39;indirizzo https://[*host*]:[*porta*]/system/console/configMgr.
 
-1. Individua e fai clic su **Adobe configurazione dell’SDK del client del LiveCycle** componente.
+1. Individua e fai clic sul componente **Configurazione SDK client di Adobe LiveCycle**.
 1. Fai clic su per modificare l’URL, il nome utente e la password del server di configurazione per AEM Forms sul server JEE.
 1. Rivedi le impostazioni e fai clic su **Salva**.
 
-![Adobe configurazione dell’SDK client del LiveCycle](assets/clientsdkconfiguration.jpg)
+![Adobe configurazione SDK client LiveCycle](assets/clientsdkconfiguration.jpg)
 
 ## Mappare i dati con i campi del processo {#map-data-with-process-fields}
 
 Dopo aver configurato AEM Forms, mappa l’XML dati e gli allegati dal modulo inviato ai campi nel processo AEM Forms on JEE. Effettua le seguenti operazioni:
 
-1. Nella console di configurazione web dell’AEM, fai clic su per modificare **Individuazione processo e richiamo LiveCycle guida** configurazione.
+1. Nella console di configurazione Web AEM, fare clic per modificare la configurazione di **Individuazione processi di LiveCycle guida e Richiamatore**.
 1. Specifica i seguenti parametri:
 
-   * **Nome del parametro XML dati** (obbligatorio): specifica il file di proprietà XML del processo AEM Forms on JEE che deve elaborare i dati inviati. Il valore predefinito è **dataxml**.
+   * **Nome del parametro XML dati** (obbligatorio): specificare il file di proprietà XML del processo AEM Forms su JEE che deve elaborare i dati inviati. Il valore predefinito è **dataxml**.
 
-   * **Nome del parametro dei file allegati** (facoltativo): specifica l’elenco degli oggetti documento che il processo AEM Forms su JEE deve elaborare. Il valore predefinito è **fileAttachmentsList**.
+   * **Nome del parametro dei file allegati** (facoltativo): specificare l&#39;elenco degli oggetti documento che il processo AEM Forms su JEE deve elaborare. Il valore predefinito è **fileAttachmentsList**.
 
 1. Rivedi le impostazioni e fai clic su **Salva**.
 
-![Individuazione processo e richiamo LiveCycle guida](assets/test3.jpg)
+![Individuazione e richiamo processo LiveCycle guida](assets/test3.jpg)
 
 Una volta configurata, l’azione Invia al Forms Workflow elenca i processi del server AEM Forms su JEE contenenti il parametro xml dei dati specificato.

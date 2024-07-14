@@ -62,7 +62,7 @@ Se riscontri problemi con i servizi, disattiva gli endpoint associati per una mi
 
    >[!NOTE]
    >
-   >Non includere un carattere &lt; nel nome o nella descrizione, poiché il nome o la descrizione visualizzati in Workspace verranno troncati.
+   >Non includere un carattere &lt; nel nome o nella descrizione perché il nome o la descrizione visualizzati in Workspace verranno troncati.
 
 1. Per salvare le modifiche, fare clic su Aggiorna.
 

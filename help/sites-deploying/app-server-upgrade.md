@@ -16,9 +16,9 @@ ht-degree: 0%
 
 In questa sezione viene descritta la procedura da seguire per aggiornare AEM per le installazioni di Application Server.
 
-Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni e indicano che è già stata distribuita una versione funzionante di AEM. La procedura consente di documentare gli aggiornamenti eseguiti da **AEM versione da 6.4 a 6.5**.
+Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni e indicano che è già stata distribuita una versione funzionante di AEM. La procedura consente di documentare gli aggiornamenti eseguiti dalla **versione 6.4 dell&#39;AEM alla 6.5**.
 
-1. Per prima cosa, avvia TomCat. Nella maggior parte delle situazioni, è possibile farlo eseguendo il comando `./catalina.sh` avviare lo script di avvio eseguendo questo comando dal terminale:
+1. Per prima cosa, avvia TomCat. Nella maggior parte dei casi, è possibile eseguire lo script di avvio di `./catalina.sh` eseguendo questo comando dal terminale:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
@@ -61,15 +61,15 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
 
 1. Rimuovere i file e le cartelle non più necessari. Gli elementi da rimuovere in modo specifico sono:
 
-   * Il **cartella launchpad/startup**. Puoi eliminarlo eseguendo il seguente comando nel terminale: `rm -rf crx-quickstart/launchpad/startup`
+   * Cartella **launchpad/startup**. È possibile eliminarlo eseguendo il comando seguente nel terminale: `rm -rf crx-quickstart/launchpad/startup`
 
-   * Il **file base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * Il file **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * Il **BootstrapCommandFile_timestamp.txt, file**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * Il file **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
    * Rimuovi **sling.options.file** eseguendo: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. Ora crea l’archivio nodi e l’archivio dati utilizzati con AEM 6.5. A tale scopo, è possibile creare due file con i seguenti nomi in `crx-quickstart\install`:
+1. Ora crea l’archivio nodi e l’archivio dati utilizzati con AEM 6.5. A tale scopo, creare due file con i seguenti nomi in `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
@@ -82,7 +82,7 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
 
      `customBlobStore=true`
 
-   * Quindi aggiungi le seguenti righe a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
+   * Quindi aggiungere le righe seguenti a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
      ```
      path=./crx-quickstart/repository/datastore
@@ -95,13 +95,13 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
    jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Una volta estratto il contenuto, vai al **WEB-INF** e modificare il file web.xml per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nel file XML, cercare `sling.run.modes` stringa. Una volta individuato, modifica le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata su author:
+1. Una volta estratto il contenuto, passare alla cartella **WEB-INF** e modificare il file web.xml per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nel file XML, cercare la stringa `sling.run.modes`. Una volta individuato, modifica le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata su author:
 
    ```bash
    <param-value >author</param-value>
    ```
 
-1. Modifica il valore di authoring riportato sopra e imposta le modalità di esecuzione su: `author,crx3,crx3tar`. Il blocco di codice finale deve essere simile al seguente:
+1. Modificare il valore di authoring riportato sopra e impostare le modalità di esecuzione su: `author,crx3,crx3tar`. Il blocco di codice finale deve essere simile al seguente:
 
    ```
    <init-param>

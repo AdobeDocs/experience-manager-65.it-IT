@@ -22,41 +22,41 @@ Questa pagina presenta miglioramenti e perfezionamenti incrementali delle funzio
 
 Sono state aggiunte opzioni per migliorare la produttività lavorando con progetti di traduzione, come la promozione e l’eliminazione automatica dei lanci di traduzione e la pianificazione dell’esecuzione ricorrente di un progetto di traduzione.
 
-1. Nel progetto di traduzione, fai clic sui puntini di sospensione nella parte inferiore della sezione **Riepilogo traduzione** affiancare.
+1. Nel progetto di traduzione, fai clic sui puntini di sospensione nella parte inferiore del riquadro **Riepilogo traduzione**.
 
-   ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
+   ![schermata_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Passa a **Avanzate** scheda. In basso puoi selezionare **Promuovi automaticamente i lanci di traduzione**.
+1. Passa alla scheda **Avanzate**. In basso, puoi selezionare **Promuovi automaticamente i lanci di traduzione**.
 
-   ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
+   ![schermata_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
 1. Facoltativamente, puoi scegliere se, dopo aver ricevuto il contenuto tradotto, i lanci di traduzione debbano essere promossi ed eliminati automaticamente.
 
-   ![screen_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
+   ![schermata_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
 
-1. Per selezionare l’esecuzione ricorrente di un progetto di traduzione, seleziona la frequenza con il menu a discesa in **Ripeti traduzione**. L’esecuzione ricorrente di un progetto creerà ed eseguirà automaticamente i processi di traduzione negli intervalli specificati.
+1. Per selezionare l&#39;esecuzione ricorrente di un progetto di traduzione, selezionare la frequenza con il menu a discesa in **Ripeti traduzione**. L’esecuzione ricorrente di un progetto creerà ed eseguirà automaticamente i processi di traduzione negli intervalli specificati.
 
-   ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
+   ![schermata_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
 ## Progetti di traduzione multilingue {#multilingual-translation-projects}
 
 È possibile configurare più lingue di destinazione in un progetto di traduzione, per ridurre il numero totale di progetti di traduzione creati.
 
-1. Nel progetto di traduzione, fai clic sui punti nella parte inferiore della sezione **Riepilogo traduzione** affiancare.
+1. Nel progetto di traduzione, fai clic sui punti nella parte inferiore del riquadro **Riepilogo traduzione**.
 
-   ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
+   ![schermata_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Passa a **Avanzate** scheda. È possibile aggiungere più lingue in **Lingua di destinazione**.
+1. Passa alla scheda **Avanzate**. È possibile aggiungere più lingue in **Lingua di destinazione**.
 
-   ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
+   ![schermata_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
 1. In alternativa, se stai avviando la traduzione tramite la barra dei riferimenti in Sites, aggiungi le lingue e seleziona **Crea progetto di traduzione multilingue**.
 
-   ![screen_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
+   ![schermata_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
 
 1. I processi di traduzione verranno creati nel progetto per ogni lingua di destinazione. Possono essere avviati uno alla volta all’interno del progetto oppure tutti insieme eseguendo il progetto a livello globale in Projects Admin (Amministrazione progetti).
 
-   ![screen_shot_2018-04-22at213854](assets/screen_shot_2018-04-22at213854.jpg)
+   ![schermata_shot_2018-04-22at213854](assets/screen_shot_2018-04-22at213854.jpg)
 
 ## Aggiornamenti alla memoria di traduzione {#translation-memory-updates}
 
@@ -64,11 +64,11 @@ Le modifiche manuali dei contenuti tradotti possono essere sincronizzate con il 
 
 1. Dalla console Sites, dopo aver aggiornato il contenuto di testo in una pagina tradotta, seleziona **Aggiorna memoria di traduzione**.
 
-   ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
+   ![schermata_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Una vista a elenco mostra un confronto affiancato dell’originale e della traduzione per ogni componente di testo modificato. Seleziona gli aggiornamenti da sincronizzare con la memoria di traduzione e quindi fai clic su **Aggiorna memoria**.
+1. Una vista a elenco mostra un confronto affiancato dell’originale e della traduzione per ogni componente di testo modificato. Selezionare gli aggiornamenti da sincronizzare con la memoria di traduzione e selezionare **Aggiorna memoria**.
 
-   ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
+   ![schermata_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
 AEM aggiorna la traduzione delle stringhe esistenti nella memoria di traduzione del TMS configurato.
 
@@ -89,7 +89,7 @@ Nei casi in cui viene utilizzata una memoria di traduzione proprietaria, gli agg
 
 Le directory principali della lingua possono ora essere raggruppate in nodi, ad esempio per regione, pur essendo ancora riconosciute come directory principali delle copie della lingua.
 
-![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
+![schermata_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 
 >[!CAUTION]
 >
@@ -98,7 +98,7 @@ Le directory principali della lingua possono ora essere raggruppate in nodi, ad 
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
 >
->Questo `es` la copia per lingua non verrà rilevata poiché si trova a 2 livelli (america/america centrale) di distanza dal `en` nodo.
+>Questa copia della lingua `es` non verrà rilevata perché è 2 livelli (americhe/america centrale) lontano dal nodo `en`.
 
 >[!NOTE]
 >
@@ -108,18 +108,18 @@ Le directory principali della lingua possono ora essere raggruppate in nodi, ad 
 
 Ora è possibile selezionare una proprietà nella vista a elenco Sites che mostra se una pagina è stata tradotta, è in traduzione o non è ancora stata tradotta. Per visualizzarlo:
 
-1. In Sites, passa a **Vista a elenco.**
+1. In Sites, passa a **Visualizzazione elenco.**
 
-   ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
+   ![schermata_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Clic **Impostazioni vista**.
+1. Fare clic su **Visualizza impostazioni**.
 
-   ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
+   ![schermata_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Verifica **Tradotto** casella di controllo in **Traduzione** e fai clic su **Aggiorna**.
+1. Seleziona la casella di controllo **Tradotto** in **Traduzione** e fai clic su **Aggiorna**.
 
-   ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
+   ![schermata_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
-Ora puoi vedere un **Tradotto** che mostra lo stato di traduzione delle pagine.
+È ora possibile visualizzare una colonna **Tradotto** che mostra lo stato di traduzione delle pagine.
 
-![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
+![schermata_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)

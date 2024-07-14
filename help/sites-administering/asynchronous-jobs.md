@@ -24,7 +24,7 @@ Alcune di queste operazioni sono:
 * Recupero di risorse che superano il limite di soglia impostato da una implementazione remota di Experience Manager
 * Rollout di Live Copy
 
-È possibile visualizzare lo stato dei processi asincroni da **[!UICONTROL Stato processo asincrono]** dashboard in **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**.
+Puoi visualizzare lo stato dei processi asincroni dal dashboard **[!UICONTROL Stato processo asincrono]** in **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Lo stato delle operazioni asincrone è consultabile in dettaglio alla pagina **[
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Per visualizzare ulteriori dettagli, ad esempio descrizione e registri, seleziona l’operazione e fai clic su **[!UICONTROL Apri]** dalla barra degli strumenti.
+1. Per visualizzare ulteriori dettagli, ad esempio descrizione e registri, selezionare l&#39;operazione e fare clic su **[!UICONTROL Apri]** nella barra degli strumenti.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -133,7 +133,7 @@ Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia
 >
 >* [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md)
 >* [Creazione e sincronizzazione di Live Copy](/help/sites-administering/msm-livecopy.md)
->* [Configurare le e-mail in Experience Manager](/help/sites-administering/notification.md).
->* [Importare i metadati delle risorse](/help/assets/metadata.md#import-metadata).
->* [Esportare i metadati delle risorse](/help/assets/metadata.md#export-metadata).
+>* [Configura e-mail in Experience Manager](/help/sites-administering/notification.md).
+>* [Importa metadati risorsa](/help/assets/metadata.md#import-metadata).
+>* [Esporta metadati risorsa](/help/assets/metadata.md#export-metadata).
 >* [Utilizzare le risorse collegate per condividere le risorse DAM da implementazioni remote](/help/assets/use-assets-across-connected-assets-instances.md).

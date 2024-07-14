@@ -39,12 +39,12 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 1. Se si fa clic su Configura, viene visualizzata la pagina Configura endpoint, in cui è possibile apportare le modifiche necessarie:
 
    * Per rinominare un endpoint o modificarne la descrizione, fare clic su di esso.
-   * Per aggiungere un endpoint Task Manager, fare clic su Aggiungi TaskManager. Per ulteriori informazioni sulle impostazioni di Gestione attività, vedere [Configurazione degli endpoint di Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Per aggiungere un endpoint di tipo Cartella controllata, fare clic su Aggiungi cartella controllata. Per informazioni dettagliate sulle impostazioni della cartella controllata, vedi [Impostazioni endpoint cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Per aggiungere un endpoint e-mail, fai clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni e-mail, consulta [Impostazioni endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Per aggiungere un endpoint Task Manager, fare clic su Aggiungi TaskManager. Per informazioni dettagliate sulle impostazioni di Gestione attività, vedere [Configurazione degli endpoint di Gestione attività](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Per aggiungere un endpoint di tipo Cartella controllata, fare clic su Aggiungi cartella controllata. Per informazioni dettagliate sulle impostazioni della cartella controllata, vedere [Impostazioni dell&#39;endpoint della cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Per aggiungere un endpoint e-mail, fai clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni e-mail, vedere [Impostazioni endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Per aggiungere un endpoint EJB, fare clic su Aggiungi EJB e specificare un nome e una descrizione per l&#39;endpoint.
    * Per aggiungere un endpoint SOAP, fare clic su Aggiungi SOAP e specificare un nome e una descrizione per l&#39;endpoint.
-   * Per aggiungere un endpoint remoto, fare clic su Aggiungi remoto. Per ulteriori informazioni sulle impostazioni di comunicazione remota, vedere [Impostazioni endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Per aggiungere un endpoint remoto, fare clic su Aggiungi remoto. Per informazioni dettagliate sulle impostazioni di comunicazione remota, vedere [Impostazioni endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Per aggiungere un endpoint REST, fai clic su Aggiungi REST e specifica un nome e una descrizione per l’endpoint. Osserva l’URL di chiamata REST visualizzato nella pagina Aggiungi endpoint REST.
    * Per rimuovere un endpoint, selezionare la casella di controllo accanto a esso e fare clic su Rimuovi.
 
@@ -52,25 +52,25 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 1. Se un processo o un servizio nella LCA dispone di parametri di configurazione, viene visualizzata la pagina Configura parametri, in cui è possibile configurare i parametri del servizio e fare clic su Avanti.
 1. Nella pagina Configura profilo di sicurezza apportare le modifiche necessarie:
 
-   * **Richiedi autenticazione chiamanti:** Questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
+   * **Autenticazione obbligatoria per i chiamanti:** Questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
 
-     Se *Al momento è necessario che i chiamanti effettuino l&#39;autenticazione* è visualizzato, il chiamante del servizio deve essere autenticato e l&#39;entità utente principale per quel chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
+     Se sono attualmente necessari *chiamanti per l&#39;autenticazione*, il chiamante del servizio deve essere autenticato e l&#39;entità utente per il chiamante deve essere autorizzata a richiamare il servizio. In caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
 
-     Se *I chiamanti non sono tenuti ad autenticare* , il chiamante del servizio non deve essere autenticato. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fare clic su Richiedi autenticazione chiamanti.
+     Se *I chiamanti non sono obbligatori per l&#39;autenticazione*, non è necessario che il chiamante del servizio sia autenticato. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fare clic su Richiedi autenticazione chiamanti.
 
    * **Esegui come:** Specifica l&#39;identità di runtime utilizzata da un servizio dopo che è stato richiamato. Per modificare questa opzione, fare clic su Cambia. Scegli una delle seguenti opzioni:
 
      **Non specificato:** Viene utilizzato il comportamento predefinito.
 
-     **Richiamatore:** Utilizza la stessa identità dell’utente che ha richiamato il servizio.
+     **Richiamo:** utilizza la stessa identità dell&#39;utente che ha richiamato il servizio.
 
-     **Sistema:** Esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
+     **Sistema:** esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
 
-     **Utente con nome:** Consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando si seleziona questa opzione, fare clic su Seleziona utente per visualizzare la pagina Seleziona utente principale, in cui è possibile cercare e selezionare l&#39;utente.
+     **Utente con nome:** consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando si seleziona questa opzione, fare clic su Seleziona utente per visualizzare la pagina Seleziona utente principale, in cui è possibile cercare e selezionare l&#39;utente.
 
    * Per aggiungere un&#39;entità al profilo di sicurezza, fare clic su Aggiungi entità e selezionare l&#39;utente o il gruppo da aggiungere come entità. Fare clic su Avanti e quindi selezionare le autorizzazioni che si desidera assegnare all&#39;entità:
 
-     **INVOKE_PERM:** Per richiamare tutte le operazioni sul servizio
+     **INVOKE_PERM:** Per richiamare tutte le operazioni nel servizio
 
      **MODIFY_CONFIG_PERM:** Per modificare la configurazione di un servizio
 
@@ -106,12 +106,12 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 1. Viene visualizzata la pagina Configura endpoint, in cui è possibile apportare le modifiche necessarie:
 
    * Per rinominare un endpoint o modificarne la descrizione, fare clic su di esso.
-   * Per aggiungere un endpoint Task Manager, fare clic su Aggiungi TaskManager. Per ulteriori informazioni sulle impostazioni di Gestione attività, vedere [Configurazione degli endpoint di Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Per aggiungere un endpoint di tipo Cartella controllata, fare clic su Aggiungi cartella controllata. Per informazioni dettagliate sulle impostazioni della cartella controllata, vedi [Impostazioni endpoint cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Per aggiungere un endpoint e-mail, fai clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni e-mail, consulta [Impostazioni endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Per aggiungere un endpoint Task Manager, fare clic su Aggiungi TaskManager. Per informazioni dettagliate sulle impostazioni di Gestione attività, vedere [Configurazione degli endpoint di Gestione attività](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Per aggiungere un endpoint di tipo Cartella controllata, fare clic su Aggiungi cartella controllata. Per informazioni dettagliate sulle impostazioni della cartella controllata, vedere [Impostazioni dell&#39;endpoint della cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Per aggiungere un endpoint e-mail, fai clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni e-mail, vedere [Impostazioni endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Per aggiungere un endpoint EJB, fare clic su Aggiungi EJB e specificare un nome e una descrizione per l&#39;endpoint.
    * Per aggiungere un endpoint SOAP, fare clic su Aggiungi SOAP e specificare un nome e una descrizione per l&#39;endpoint.
-   * Per aggiungere un endpoint remoto, fare clic su Aggiungi remoto. Per ulteriori informazioni sulle impostazioni di comunicazione remota, vedere [Impostazioni endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Per aggiungere un endpoint remoto, fare clic su Aggiungi remoto. Per informazioni dettagliate sulle impostazioni di comunicazione remota, vedere [Impostazioni endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Per aggiungere un endpoint REST, fai clic su Aggiungi REST e specifica un nome e una descrizione per l’endpoint. Osserva l’URL di chiamata REST visualizzato nella pagina Aggiungi endpoint REST.
    * Per rimuovere un endpoint, selezionare la casella di controllo accanto a esso e fare clic su Rimuovi.
 
@@ -119,25 +119,25 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 1. Se un processo o un servizio nella LCA dispone di parametri di configurazione, viene visualizzata la pagina Configura parametri, in cui è possibile configurare i parametri del servizio e fare clic su Avanti.
 1. Nella pagina Configura profilo di sicurezza è possibile apportare le modifiche necessarie:
 
-   * **Richiedi autenticazione chiamanti:** Questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
+   * **Autenticazione obbligatoria per i chiamanti:** Questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
 
-     Se *Al momento è necessario che i chiamanti effettuino l&#39;autenticazione* è visualizzato, il chiamante del servizio deve essere autenticato e l&#39;entità utente principale per quel chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
+     Se sono attualmente necessari *chiamanti per l&#39;autenticazione*, il chiamante del servizio deve essere autenticato e l&#39;entità utente per il chiamante deve essere autorizzata a richiamare il servizio. In caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
 
-     Se *I chiamanti non sono tenuti ad autenticare* , il chiamante del servizio potrebbe essere autenticato o meno. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fare clic su Richiedi autenticazione chiamanti.
+     Se *I chiamanti non sono obbligatori per l&#39;autenticazione* viene visualizzato, è possibile che il chiamante del servizio sia autenticato o meno. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fare clic su Richiedi autenticazione chiamanti.
 
    * **Esegui come:** Specifica l&#39;identità di runtime utilizzata da un servizio dopo che è stato richiamato. Per modificare questa opzione, fare clic su Cambia. Scegli una delle seguenti opzioni:
 
      **Non specificato:** Viene utilizzato il comportamento predefinito.
 
-     **Richiamatore:** Utilizza la stessa identità dell’utente che ha richiamato il servizio.
+     **Richiamo:** utilizza la stessa identità dell&#39;utente che ha richiamato il servizio.
 
-     **Sistema:** Esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
+     **Sistema:** esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
 
-     **Utente con nome:** Consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando si seleziona questa opzione, fare clic su Seleziona utente per visualizzare la pagina Seleziona utente principale, in cui è possibile cercare e selezionare l&#39;utente.
+     **Utente con nome:** consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando si seleziona questa opzione, fare clic su Seleziona utente per visualizzare la pagina Seleziona utente principale, in cui è possibile cercare e selezionare l&#39;utente.
 
    * Per aggiungere un&#39;entità al profilo di sicurezza, fare clic su Aggiungi entità e selezionare l&#39;utente o il gruppo da aggiungere come entità. Fare clic su Avanti e quindi selezionare le autorizzazioni che si desidera assegnare all&#39;entità:
 
-     **INVOKE_PERM:** Per richiamare tutte le operazioni sul servizio
+     **INVOKE_PERM:** Per richiamare tutte le operazioni nel servizio
 
      **MODIFY_CONFIG_PERM:** Per modificare la configurazione di un servizio
 

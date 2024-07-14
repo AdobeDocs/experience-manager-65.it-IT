@@ -43,7 +43,7 @@ Consulta le risorse seguenti:
 * [Creazione di un’app AEM Mobile tramite la procedura guidata](/help/mobile/phonegap-create-new-app.md)
 * [Importa un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Per saperne di più **Content Services**, vedi [Panoramica di Content Services](/help/mobile/develop-content-as-a-service.md) per iniziare.
+Per informazioni su **Content Services**, vedere [Panoramica di Content Services](/help/mobile/develop-content-as-a-service.md) per iniziare.
 
 ## Risorse aggiuntive {#additional-resources}
 

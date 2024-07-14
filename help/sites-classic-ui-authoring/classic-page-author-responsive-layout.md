@@ -20,4 +20,4 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Anche se il componente Contenitore di layout è disponibile nell’interfaccia classica, la sua funzionalità completa è disponibile e supportata solo nell’interfaccia touch. Consulta [Layout reattivo](/help/sites-authoring/responsive-layout.md) per ulteriori informazioni, consulta la documentazione sull’authoring standard.
+>Anche se il componente Contenitore di layout è disponibile nell’interfaccia classica, la sua funzionalità completa è disponibile e supportata solo nell’interfaccia touch. Per ulteriori dettagli, vedi [Layout reattivo](/help/sites-authoring/responsive-layout.md) nella documentazione standard per l&#39;authoring.

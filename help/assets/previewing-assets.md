@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Puoi utilizzare Anteprima per visualizzare l’aspetto di una risorsa digitale caricata quando viene visualizzata da un cliente nel proprio browser web. Per l’anteprima viene utilizzato il visualizzatore integrato e multi-dispositivo predefinito assegnato alla risorsa.
 
-Un visualizzatore è una raccolta di varie impostazioni o *predefiniti*, ad esempio le dimensioni di visualizzazione del visualizzatore, il comportamento di zoom, le combinazioni di colori, i bordi e i font. Questi predefiniti determinano il modo in cui gli utenti visualizzano le risorse rich media sugli schermi dei loro computer e sui loro dispositivi mobili.
+Un visualizzatore è una raccolta di varie impostazioni o *predefiniti*, ad esempio le dimensioni di visualizzazione, il comportamento di zoom, le combinazioni di colori, i bordi e i font del visualizzatore. Questi predefiniti determinano il modo in cui gli utenti visualizzano le risorse rich media sugli schermi dei loro computer e sui loro dispositivi mobili.
 
 Oltre a utilizzare la funzione di anteprima dedicata per video, set 360 gradi e set di immagini, puoi anche visualizzare in anteprima una risorsa utilizzando i predefiniti visualizzatore che hai creato. In alternativa, utilizzate i predefiniti immagine per visualizzare in anteprima le rappresentazioni delle immagini.
 
@@ -30,16 +30,16 @@ Oltre a utilizzare la funzione di anteprima dedicata per video, set 360 gradi e 
 
 >[!NOTE]
 >
->Quando ti trovi su una pagina web (Sites) in Adobe Experience Manager, non puoi visualizzare in anteprima le risorse in **Modifica** modalità. Passa alla modalità Anteprima facendo clic su **[!UICONTROL Anteprima]** nell’angolo superiore destro della pagina.
+>Quando ti trovi su una pagina Web (Sites) in Adobe Experience Manager, non puoi visualizzare in anteprima le risorse in modalità **Modifica**. Passare alla modalità Anteprima facendo clic su **[!UICONTROL Anteprima]** nell&#39;angolo superiore destro della pagina.
 
-Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia utente, vedi [Gestisci predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
+Per attivare o disattivare i predefiniti visualizzatore nell&#39;interfaccia utente, vedere [Gestione predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
 
-**Per visualizzare in anteprima le risorse tramite l’interfaccia software:**
+**Per visualizzare in anteprima le risorse tramite l&#39;interfaccia software:**
 
-1. Da **[!UICONTROL Adobe Experience Manager]**, sulla **[!UICONTROL Navigazione]** pagina, seleziona **[!UICONTROL Risorse]**, quindi **[!UICONTROL File]** per accedere alle risorse.
-1. Nell&#39;angolo superiore destro della pagina, da **[!UICONTROL Visualizza]** elenco a discesa, seleziona **[!UICONTROL Vista a elenco]**.
-1. (Facoltativo) Utilizza il **[!UICONTROL Tipo]** per ordinare le risorse in base al tipo di anteprima.
-1. Sotto **[!UICONTROL Titolo]** , fai clic sul nome del titolo (non sull’immagine in miniatura) della risorsa da visualizzare in anteprima.
+1. Da **[!UICONTROL Adobe Experience Manager]**, nella pagina **[!UICONTROL Navigazione]**, seleziona **[!UICONTROL Assets]**, quindi **[!UICONTROL File]** per accedere alle risorse.
+1. Dall&#39;elenco a discesa **[!UICONTROL Visualizza]** nell&#39;angolo superiore destro della pagina selezionare **[!UICONTROL Visualizzazione elenco]**.
+1. (Facoltativo) Utilizza la colonna **[!UICONTROL Tipo]** per ordinare le risorse in base al tipo che desideri visualizzare in anteprima.
+1. Nella colonna **[!UICONTROL Titolo]** fai clic sul nome del titolo (non sull&#39;immagine di anteprima) della risorsa da visualizzare in anteprima.
 1. A seconda del tipo di risorsa su cui hai fatto clic, effettua una delle seguenti operazioni:
 
 
@@ -57,16 +57,16 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa 3D nel visualizzatore dimensionale</strong></p>
       <ul>
-      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi selezionare il visualizzatore Dimensionale.</li>
-      <li>Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.</li>
+      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona il visualizzatore dimensionale.</li>
+      <li>Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.</li>
       <li>Seleziona <strong>Schermo intero</strong> per ingrandire il visualizzatore sul dispositivo di visualizzazione.</li>
       </ul>
       <p><strong>Navigazione nella scena 3D</strong></p>
       <ul>
-      <li><p><strong>Ruota fotocamera 3D</strong> - Ruota la vista attorno alla scena 3D e agli oggetti.</p> Mouse: clic sinistro + trascinamento </p> Touch-screen: Premere e trascinare</p></li>
-      <li><p><strong>Sposta la fotocamera</strong> - Sposta la vista verso sinistra, destra, l'alto o il basso.</p> Mouse: clic con il pulsante destro del mouse e trascinamento </p> Touch-screen: pressione di due dita + trascinamento</p></li>
-      <li><p><strong>Zoom fotocamera</strong> - Ingrandire la fotocamera in modo da poterla spostare all'interno o all'esterno delle aree della scena 3D.</p> Mouse: rotellina </p> Touch-screen: pizzico di dito</p></li>
-      <li><p><strong>Ricentro fotocamera</strong> - Ruota la vista attorno alla scena 3D e agli oggetti.</p> Mouse: doppio clic </p> Touch-screen: selezione doppia</li></ul></td>
+      <li><p><strong>Ruota la fotocamera 3D</strong> - Ruota la vista attorno alla scena 3D e agli oggetti.</p> Mouse: clic sinistro + trascinamento </p> Touch-screen: Premere e trascinare</p></li>
+      <li><p><strong>Spostare la fotocamera</strong> - Spostare la visualizzazione verso sinistra, destra, l'alto o il basso.</p> Mouse: clic con il pulsante destro del mouse e trascinamento </p> Touch-screen: pressione di due dita + trascinamento</p></li>
+      <li><p><strong>Ingrandisci la fotocamera</strong> - Ingrandisci la fotocamera in modo da poter spostarti all'interno e all'esterno delle aree della scena 3D.</p> Mouse: rotellina </p> Touch-screen: pizzico di dito</p></li>
+      <li><p><strong>Ricentro della fotocamera</strong> - Ruota la vista attorno alla scena 3D e agli oggetti.</p> Mouse: doppio clic </p> Touch-screen: selezione doppia</li></ul></td>
       </tr>
       <tr>
       <td><p>Immagine</p> </td>
@@ -74,11 +74,11 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima la risorsa in una determinata rappresentazione</strong></p>
       <ul>
-      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Rappresentazioni </strong>dall’elenco, seleziona una determinata rappresentazione da visualizzare in anteprima.</li>
+      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Selezionare <strong>Copie trasformate </strong> dall'elenco, quindi selezionare una determinata copia trasformata da visualizzare in anteprima.</li>
       </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
       <ul>
-      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>File multimediali</td>
@@ -86,10 +86,10 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima la risorsa in una determinata rappresentazione</strong></p>
       <ul>
-      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Rappresentazioni </strong>dall’elenco, seleziona una determinata rappresentazione da visualizzare in anteprima.</li>
+      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Selezionare <strong>Copie trasformate </strong> dall'elenco, quindi selezionare una determinata copia trasformata da visualizzare in anteprima.</li>
       </ul> <p>Se si seleziona una rappresentazione video ad alta risoluzione da visualizzare in anteprima, il video potrebbe apparire troncato. Questo problema è dovuto al fatto che l’anteprima della rappresentazione mostra l’esatta risoluzione che i clienti vedranno nel contesto del visualizzatore incorporato utilizzato per l’anteprima.</p> <p>Quando visualizzi l’anteprima di un set di video adattivi a livello di risorsa, i rendering vengono raggruppati in un’unica esperienza di riproduzione. In altre parole, il video adattivo viene ridimensionato correttamente per la visualizzazione e la riproduzione utilizzando la risoluzione migliore nel contesto del dispositivo di visualizzazione e della velocità di connessione.<br /> </p> <p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
-      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
+      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
       </ul> </td>
       </tr>
       <tr>
@@ -98,8 +98,8 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
-      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> in modo da aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> per aumentare o ridurre rispettivamente lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set 360 gradi</td>
@@ -107,8 +107,8 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
-      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set di file multimediali diversi</td>
@@ -116,44 +116,44 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
-      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set carosello</td>
       <td>No</td>
       <td>Sì</td>
-      <td><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong>
+      <td><strong>Per visualizzare in anteprima una risorsa in un visualizzatore particolare</strong>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona un visualizzatore da applicare alla risorsa.</li>
       </ul> </td>
       </tr>
       <tr>
-      <td>Video a 360°<br /> </td>
+      <td>Video 360<br /> </td>
       <td>Sì</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima la risorsa in una determinata rappresentazione</strong></p>
       <ul>
-      <li>Nell’angolo in alto a sinistra della pagina, seleziona l’icona in modo da visualizzare l’elenco a discesa. Seleziona <strong>Rappresentazioni</strong>, quindi selezionare la rappresentazione da visualizzare in anteprima.</li>
+      <li>Nell’angolo in alto a sinistra della pagina, seleziona l’icona in modo da visualizzare l’elenco a discesa. Seleziona <strong>Copie trasformate</strong>, quindi seleziona la copia trasformata da visualizzare in anteprima.</li>
       </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Nell’angolo in alto a sinistra della pagina, seleziona l’icona in modo da visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong>, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
     </tbody>
     </table>
 
 ## Visualizzare l’anteprima delle risorse tramite tastiera {#keyboard-navigation-asset-preview}
 
-1. Dall’interfaccia utente Assets, accedi a una cartella contenente la risorsa di cui vuoi visualizzare l’anteprima.
+1. Dall’interfaccia utente di Assets, accedi a una cartella contenente una risorsa di cui vuoi visualizzare l’anteprima.
 
-1. Nella cartella, premere il tasto `<Tab>` tasti o frecce sulla tastiera per selezionare la risorsa.
+1. Nella cartella, premi il tasto `<Tab>` o i tasti freccia sulla tastiera per selezionare la risorsa.
 
-1. Premi `<Enter>` in modo da poter aprire la risorsa selezionata in modalità anteprima.
+1. Premi `<Enter>` per aprire la risorsa selezionata in modalità Anteprima.
 
 1. Effettua una delle seguenti operazioni:
 
-   * Per ingrandire, premere `<Tab>` per spostare lo stato attivo sull&#39;icona zoom in (+), quindi premere `<Enter>` una o più volte per eseguire lo zoom avanti in modo incrementale.
-   * Per ridurre, premere `<Tab>` per spostare lo stato attivo sull&#39;icona zoom out (-), quindi premere `<Enter>` una o più volte per eseguire lo zoom indietro in modo incrementale.
-   * Per spostare la vista di un *ingrandito* risorsa orizzontalmente o verticalmente, premere i rispettivi tasti freccia.
-   * Premi `<Shift>` + `<Tab>` in modo da poter reimpostare la visualizzazione e riportare lo stato attivo sulla risorsa.
+   * Per eseguire lo zoom avanti, premere `<Tab>` per spostare lo stato attivo sull&#39;icona di zoom in (+), quindi premere `<Enter>` una o più volte per eseguire lo zoom avanti in modo incrementale.
+   * Per eseguire lo zoom indietro, premere `<Tab>` per spostare lo stato attivo sull&#39;icona di zoom out (-), quindi premere `<Enter>` una o più volte per eseguire lo zoom indietro in modo incrementale.
+   * Per spostare la visualizzazione di una risorsa *ingrandita* orizzontalmente o verticalmente, premere i rispettivi tasti di direzione.
+   * Premi `<Shift>` + `<Tab>` per reimpostare la visualizzazione e riattivare la risorsa.

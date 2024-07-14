@@ -14,17 +14,17 @@ ht-degree: 64%
 
 # Creazione e organizzazione delle pagine {#creating-and-organizing-pages}
 
-Questa sezione descrive come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuti](/help/sites-authoring/editing-content.md) su tali pagine.
+In questa sezione viene descritto come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuto](/help/sites-authoring/editing-content.md) in tali pagine.
 
 >[!NOTE]
 >
->Il tuo account ha bisogno di [diritti di accesso appropriati](/help/sites-administering/security.md) e [autorizzazioni](/help/sites-administering/security.md#permissions) per intervenire sulle pagine, ad esempio per creare, copiare, spostare, modificare ed eliminare.
+>Il tuo account necessita dei [diritti di accesso appropriati](/help/sites-administering/security.md) e delle [autorizzazioni](/help/sites-administering/security.md#permissions) per intervenire sulle pagine, ad esempio per creare, copiare, spostare, modificare ed eliminare.
 >
 >Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
 >[!NOTE]
 >
->Ce ne sono diversi [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) che puoi utilizzare dalla console dei siti web per organizzare le pagine in modo più efficiente.
+>Esistono diverse [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) che è possibile utilizzare dalla console dei siti Web per organizzare le pagine in modo più efficiente.
 
 ## Organizzazione del sito web {#organizing-your-website}
 
@@ -37,15 +37,15 @@ In qualità di autore, organizza il tuo sito web all’interno dell’AEM. A tal
 
 La struttura di un sito web può essere considerata una struttura ad albero che racchiude le pagine dei contenuti. I nomi di queste pagine di contenuto vengono utilizzati per formare gli URL, mentre il titolo viene visualizzato quando viene visualizzato il contenuto della pagina.
 
-Di seguito è riportato un esempio tratto dal sito We.Retail, in cui una pagina di trekking utilizza i pantaloncini ( `desert-sky-shorts`) è accessibile:
+Di seguito è riportato un esempio tratto dal sito We.Retail, in cui è possibile accedere a una pagina con pantaloncini da trekking ( `desert-sky-shorts`):
 
 * Ambiente di authoring
   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Ambiente di pubblicazione
+* Ambiente Publish
   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-A seconda della configurazione dell’istanza, utilizza `/content` potrebbe essere facoltativo nell’ambiente di pubblicazione.
+A seconda della configurazione dell&#39;istanza, l&#39;utilizzo di `/content` potrebbe essere facoltativo nell&#39;ambiente di pubblicazione.
 
 ```xml
  /content
@@ -107,7 +107,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Durante la creazione di una pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+Durante la creazione di una pagina, l&#39;AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte dall&#39;AEM e dal JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -121,11 +121,11 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzi
 
 >[!NOTE]
 >
->Se l’AEM è in esecuzione su una [Distribuzione di MongoMK persistence Manager](/help/sites-deploying/recommended-deploys.md), i nomi delle pagine non possono superare i 150 caratteri.
+>Se AEM è in esecuzione in una [distribuzione di Gestione persistenza MongoMK](/help/sites-deploying/recommended-deploys.md), i nomi delle pagine sono limitati a 150 caratteri.
 
 #### Titolo {#title}
 
-Se si specifica solo una pagina **Titolo** quando si crea una pagina, l’AEM la deriva **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR. Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
+Se specifichi solo una pagina **Titolo** durante la creazione di una pagina, AEM deriva la pagina **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR. Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
@@ -134,7 +134,7 @@ Se si specifica solo una pagina **Titolo** quando si crea una pagina, l’AEM la
 
 #### Nome {#name}
 
-Quando si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
+Se specifichi il nome della pagina **Name** durante la creazione, l&#39;AEM [lo convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte dall&#39;AEM e da JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
 
 ![caop-02](assets/caop-02.png)
 
@@ -167,7 +167,7 @@ Elenco di modelli disponibili per la generazione della nuova pagina.
 
 ### Componenti {#components}
 
-I componenti sono gli elementi forniti da AEM che consentono di aggiungere specifici tipi di contenuto. L&#39;AEM viene fornito con una gamma [componenti pronti all’uso](/help/sites-authoring/default-components-console.md) che offrono funzionalità complete. Comprendono:
+I componenti sono gli elementi forniti da AEM che consentono di aggiungere specifici tipi di contenuto. AEM viene fornito con una serie di [componenti pronti all&#39;uso](/help/sites-authoring/default-components-console.md) che forniscono funzionalità complete. Comprendono:
 
 * Testo
 * Immagine
@@ -195,7 +195,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
 1. Nel primo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
-   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi fai clic su **Successivo** per procedere.
+   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi fai clic su **Avanti** per continuare.
 
    * Seleziona **Annulla** per interrompere la procedura.
 
@@ -203,7 +203,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
 1. Nell’ultimo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
-   * Utilizza le tre schede per inserire [proprietà pagina](/help/sites-authoring/editing-page-properties.md) vuoi assegnarlo alla nuova pagina, quindi fai clic su **Crea** per creare effettivamente la pagina.
+   * Utilizzare le tre schede per immettere le [proprietà di pagina](/help/sites-authoring/editing-page-properties.md) da assegnare alla nuova pagina, quindi fare clic su **Crea** per creare effettivamente la pagina.
 
    * Utilizza **Indietro** per tornare alla selezione del modello.
 
@@ -216,7 +216,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+      * Se durante la creazione di una pagina si specifica il nome **Name**, l&#39;AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
 
@@ -224,7 +224,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
 
-   Le informazioni minime necessarie per creare una pagina sono **Titolo**.
+   Le informazioni minime necessarie per creare una pagina sono il **Titolo**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -242,7 +242,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
 >[!CAUTION]
 >
->Una volta creata una pagina, il relativo modello non può essere modificato, a meno che tu non [creare un lancio con un nuovo modello](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), anche se questo determinerà la perdita di eventuali contenuti già esistenti.
+>Una volta creata una pagina, il relativo modello non può essere modificato - a meno che non si [crei un lancio con un nuovo modello](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), anche se questo determinerà la perdita di eventuali contenuti già esistenti.
 
 ### Apertura di una pagina per la modifica {#opening-a-page-for-editing}
 
@@ -257,7 +257,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
    Quindi seleziona l’icona **Modifica**:
 
-   ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
+   ![schermata_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
 
 1. La pagina verrà visualizzata e potrai [modificarla](/help/sites-authoring/editing-content.md#touchoptimizedui) come necessario.
 
@@ -277,24 +277,24 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
    E quindi l’icona **Copia** pagina:
 
-   ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
+   ![schermata_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
    >[!NOTE]
    >
    >Se sei in modalità di selezione, questa viene chiusa automaticamente non appena la pagina viene copiata.
 
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. Il **Incolla** L’icona è disponibile con una freccia a discesa a destra:
+1. L&#39;icona **Incolla** è disponibile con una freccia a discesa a destra:
 
    ![Incolla](assets/paste-without-children.png)
 
    Puoi effettuare le seguenti operazioni:
    * Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
-   * Seleziona la freccia a discesa per visualizzare **Incolla senza elementi figlio** opzione. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
+   * Selezionare la freccia a discesa per visualizzare l&#39;opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
 
    >[!NOTE]
    >
-   >Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già `winter` diventerà `winter1`.
+   >Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
 
 ### Spostamento o ridenominazione di una pagina {#moving-or-renaming-a-page}
 
@@ -322,13 +322,13 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    Quindi seleziona l’icona **Sposta** pagina:
 
-   ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
+   ![schermata_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
    Verrà avviata la procedura guidata Sposta pagina.
 
 1. Dal passaggio **Rinomina** della procedura guidata, puoi effettuare le seguenti operazioni:
 
-   * Specifica il nome da assegnare alla pagina spostata, quindi fai clic su **Successivo** per procedere.
+   * Specifica il nome da assegnare alla pagina spostata, quindi fai clic su **Avanti** per continuare.
 
    * Seleziona **Annulla** per interrompere la procedura.
 
@@ -338,7 +338,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    >[!NOTE]
    >
-   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già `winter` diventerà `winter1`.
+   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
 
 1. Nel passaggio **Seleziona destinazione** della procedura guidata, puoi effettuare le seguenti operazioni:
 
@@ -357,7 +357,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    >[!NOTE]
    >
-   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già `winter` diventerà `winter1`.
+   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
 
 1. Se la pagina è collegata o utilizzata in un riferimento, oppure se è stata pubblicata, i dettagli saranno elencati nel passaggio **Regola/Ripubblica**.
 
@@ -373,7 +373,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
 >[!NOTE]
 >
->Se la pagina è già stata pubblicata, lo spostamento ne determina automaticamente l’annullamento della pubblicazione. Per impostazione predefinita, viene ripubblicata al termine dello spostamento, ma questo comportamento può essere modificato deselezionando la casella di controllo **Ripubblica** campo in **Regola/Ripubblica** passaggio.
+>Se la pagina è già stata pubblicata, lo spostamento ne determina automaticamente l’annullamento della pubblicazione. Per impostazione predefinita, verrà ripubblicata al termine dello spostamento, ma questo comportamento può essere modificato deselezionando il campo **Ripubblica** nel passaggio **Regola/Ripubblica**.
 
 >[!NOTE]
 >
@@ -389,11 +389,11 @@ Le azioni di spostamento delle pagine vengono sempre elaborate in modo asincrono
 
   ![Spostamento asincrono delle pagine](assets/asynchronous-page-move.png)
 
-Lo stato dei processi asincroni può essere controllato in [**Stato processi asincroni** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) a **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**
+Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) in **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull’elaborazione asincrona dei processi e su come configurare il limite per le azioni di spostamento o ridenominazione delle pagine, consulta [Processi asincroni](/help/sites-administering/asynchronous-jobs.md) nella guida utente per l’amministrazione.
+>Per ulteriori informazioni sull&#39;elaborazione asincrona dei processi e su come configurare il limite per le azioni di spostamento o ridenominazione delle pagine, vedere il documento [Processi asincroni](/help/sites-administering/asynchronous-jobs.md) nella guida utente per l&#39;amministrazione.
 
 >[!NOTE]
 >
@@ -404,7 +404,7 @@ Lo stato dei processi asincroni può essere controllato in [**Stato processi asi
 1. Spostati fino a visualizzare la pagina da eliminare.
 1. Utilizza la [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) per selezionare la pagina richiesta, quindi utilizza **Elimina** dalla barra degli strumenti:
 
-   ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
+   ![schermata_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
    >
@@ -416,7 +416,7 @@ Lo stato dei processi asincroni può essere controllato in [**Stato processi asi
    * **Elimina** per confermare l’azione:
 
       * Se la pagina non ha riferimenti, verrà eliminata.
-      * Se la pagina contiene riferimenti, viene visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** Puoi selezionare **Forza eliminazione** o **Annulla**.
+      * Se la pagina contiene riferimenti, verrà visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
 
 >[!NOTE]
 >

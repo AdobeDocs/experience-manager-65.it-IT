@@ -20,9 +20,9 @@ ht-degree: 1%
 
 Gli argomenti riportati di seguito descrivono come eseguire specifiche attività di distribuzione dell’AEM:
 
-* [Come utilizzare il Visualizzatore registro](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
-* [Come eliminare i flussi di lavoro e il registro di controllo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
+* [Come utilizzare il Visualizzatore log](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
+* [Eliminare i flussi di lavoro e il registro di controllo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
 * [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
 * [Come rimuovere le funzionalità dalla schermata iniziale](/help/sites-developing/customizing-the-welcome-console.md)
-* [Disattivazione della funzione di localizzazione](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+* [Disattivare la funzionalità di localizzazione](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

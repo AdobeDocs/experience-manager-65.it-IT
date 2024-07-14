@@ -41,10 +41,10 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia una lettera p
 
 ### Aggiungi il pulsante all’interfaccia utente Crea corrispondenza {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
+1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedi come amministratore.
 1. Nella cartella delle app, crea una cartella denominata `defaultApp` con un percorso/struttura simile alla cartella defaultApp (nella cartella di configurazione). Per creare la cartella, effettua le seguenti operazioni:
 
-   1. Fare clic con il pulsante destro del mouse **defaultApp** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **defaultApp** nel percorso seguente e selezionare **Sovrapponi nodo**:
 
       /libs/fd/cm/config/defaultApp/
 
@@ -56,23 +56,23 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia una lettera p
 
       **Posizione sovrapposizione:** /apps/
 
-      **Corrispondenza tipi di nodo:** Selezionato
+      **Corrispondenza tipi di nodo:** selezionata
 
       ![Sovrapponi nodo](assets/2_defaultappoverlaynode.png)
 
    1. Fai clic su **OK**.
-   1. Clic **Salva tutto**.
+   1. Fare clic su **Salva tutto**.
 
 1. Crea una copia del file acmExtensionsConfig.xml (presente nel ramo /libs) nel ramo /apps.
 
    1. Vai a &quot;/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml&quot;
 
-   1. Fai clic con il pulsante destro del mouse sul file acmExtensionsConfig.xml e seleziona **Copia**.
+   1. Fare clic con il pulsante destro del mouse sul file acmExtensionsConfig.xml e selezionare **Copia**.
 
       ![Copia acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
-   1. Fare clic con il pulsante destro del mouse **defaultApp** cartella in &quot;/apps/fd/cm/config/defaultApp/&quot; e seleziona **Incolla**.
-   1. Clic **Salva tutto**.
+   1. Fare clic con il pulsante destro del mouse sulla cartella **defaultApp** in &quot;/apps/fd/cm/config/defaultApp/&quot; e selezionare **Incolla**.
+   1. Fare clic su **Salva tutto**.
 
 1. Fai doppio clic sulla copia di acmExtentionsConfig.xml appena creata nella cartella delle app. Il file viene aperto per la modifica.
 1. Individua il seguente codice:
@@ -120,13 +120,13 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia una lettera p
    | Parametri contenenti il prefisso cm_ nel nome del tag | Se un customAction contiene tag figlio che iniziano con name cm_, durante la fase di post-elaborazione (che si tratti di Letter Post Process o del processo speciale rappresentato dal tag serviceName) questi parametri sono disponibili nel codice XML di input sotto il tag pertinente con il prefisso cm_ rimosso. |
    | actionName | Ogni volta che un processo di post è dovuto a un clic, il codice XML inviato contiene un tag speciale con un nome sotto il tag con il nome dell’azione utente. |
 
-1. Clic **Salva tutto**.
+1. Fare clic su **Salva tutto**.
 
 #### Creare una cartella locale con il file delle proprietà nel ramo /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Il file ACMExtensionsMessages.properties include etichette e messaggi di descrizione dei vari campi nell&#39;interfaccia utente Crea corrispondenza. Affinché le azioni/i pulsanti personalizzati funzionino, crea una copia di questo file nel ramo /apps.
 
-1. Fare clic con il pulsante destro del mouse **lingua** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
+1. Fare clic con il pulsante destro del mouse sulla cartella **locale** nel percorso seguente e selezionare **Sovrapponi nodo**:
 
    /libs/fd/cm/config/defaultApp/locale
 
@@ -136,21 +136,21 @@ Il file ACMExtensionsMessages.properties include etichette e messaggi di descriz
 
    **Posizione sovrapposizione:** /apps/
 
-   **Corrispondenza tipi di nodo:** Selezionato
+   **Corrispondenza tipi di nodo:** selezionata
 
 1. Fai clic su **OK**.
-1. Clic **Salva tutto**.
+1. Fare clic su **Salva tutto**.
 1. Fare clic con il pulsante destro del mouse sul file seguente e selezionare **Copia**:
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
-1. Fare clic con il pulsante destro del mouse **lingua** cartella nel percorso seguente e selezionare **Incolla**:
+1. Fare clic con il pulsante destro del mouse sulla cartella **locale** nel percorso seguente e selezionare **Incolla**:
 
    `/apps/fd/cm/config/defaultApp/locale/`
 
    Il file ACMExtensionsMessages.properties viene copiato nella cartella locale.
 
-1. Per localizzare le etichette dell&#39;azione o del pulsante personalizzato appena aggiunto, creare il file ACMExtensionsMessages.properties per le impostazioni internazionali pertinenti in `/apps/fd/cm/config/defaultApp/locale/`.
+1. Per localizzare le etichette dell&#39;azione o del pulsante personalizzato appena aggiunto, creare il file ACMExtensionsMessages.properties per le impostazioni locali pertinenti in `/apps/fd/cm/config/defaultApp/locale/`.
 
    Ad esempio, per localizzare l’azione/pulsante personalizzato creato in questo articolo, crea un file denominato ACMExtensionsMessages_fr.properties con la seguente voce:
 
@@ -158,7 +158,7 @@ Il file ACMExtensionsMessages.properties include etichette e messaggi di descriz
 
    Allo stesso modo, in questo file è possibile aggiungere altre proprietà, ad esempio per la descrizione comando e lo stile.
 
-1. Clic **Salva tutto**.
+1. Fare clic su **Salva tutto**.
 
 #### Riavvia il bundle Adobe Asset Composer Building Block {#restart-the-adobe-asset-composer-building-block-bundle}
 
@@ -172,7 +172,7 @@ Dopo aver apportato ogni modifica lato server, riavvia il bundle Adobe Asset Com
 
 1. Individua il bundle Adobe Asset Composer Building Block. Riavvia il bundle: fai clic su Interrompi, quindi fai clic su Avvia.
 
-   ![Blocco predefinito di Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Blocco predefinito per il Compositore risorse di Adobe](assets/6_assetcomposerbuildingblockbundle.png)
 
 Dopo aver riavviato il bundle Adobe Asset Composer Building Block, il pulsante personalizzato viene visualizzato nell’interfaccia utente per la creazione di corrispondenza. È possibile aprire una lettera nell’interfaccia utente Crea corrispondenza per visualizzare in anteprima il pulsante personalizzato.
 
@@ -192,13 +192,13 @@ La gestione dell’azione/pulsante al momento del clic sull’azione/pulsante in
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessario, accedi come amministratore.
 
-1. Nella cartella delle app, crea una cartella denominata `js` nel ramo /apps di CRX con una struttura simile alla seguente cartella:
+1. Nella cartella delle app, crea una cartella denominata `js` nel ramo /apps di CRX con una struttura simile a quella della cartella seguente:
 
    `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
    Per creare la cartella, effettua le seguenti operazioni:
 
-   1. Fare clic con il pulsante destro del mouse **js** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **js** nel percorso seguente e selezionare **Sovrapponi nodo**:
 
       `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -208,20 +208,20 @@ La gestione dell’azione/pulsante al momento del clic sull’azione/pulsante in
 
       **Posizione sovrapposizione:** /apps/
 
-      **Corrispondenza tipi di nodo:** Selezionato
+      **Corrispondenza tipi di nodo:** selezionata
 
    1. Fai clic su **OK**.
-   1. Clic **Salva tutto**.
+   1. Fare clic su **Salva tutto**.
 
 1. Nella cartella js, crea un file denominato crcustomization.js con il codice per la gestione delle azioni del pulsante, seguendo la procedura riportata di seguito:
 
-   1. Fare clic con il pulsante destro del mouse **js** cartella nel percorso seguente e selezionare **Crea > Crea file**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **js** nel percorso seguente e selezionare **Crea > Crea file**:
 
       `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
       Denomina il file come customization.js.
 
-   1. Fai doppio clic sul file customization.js per aprirlo in CRX.
+   1. Fai doppio clic sul file ccrcustomization.js per aprirlo in CRX.
    1. Nel file, incolla il seguente codice e fai clic su **Salva tutto**:
 
       ```javascript
@@ -321,7 +321,7 @@ La gestione dell’azione/pulsante al momento del clic sull’azione/pulsante in
       '</div>';
       ```
 
-### Aggiungi il processo di LiveCycle per abilitare l&#39;azione <span class="acrolinxCursorMarker"></code>gestione {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Aggiungere il processo di LiveCycle per abilitare l&#39;azione <span class="acrolinxCursorMarker"></code>gestione {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 In questo scenario, abilita i seguenti componenti, che fanno parte del file components.zip allegato:
 
@@ -339,16 +339,16 @@ Scarica e decomprimi il file components.zip per ottenere i file DSCSample.jar e 
 
 Il processo LCA viene eseguito sul server di LiveCycle e richiede l&#39;indirizzo del server e le credenziali di accesso.
 
-1. Vai a `https://'[server]:[port]'/system/console/configMgr` e accedere come amministratore.
-1. Individua la configurazione Adobe LiveCycle Client SDK e fai clic su **Modifica** (icona di modifica). Viene visualizzato il pannello Configurazioni.
+1. Vai a `https://'[server]:[port]'/system/console/configMgr` e accedi come amministratore.
+1. Individua la configurazione Adobe LiveCycle Client SDK e fai clic su **Modifica** (icona Modifica). Viene visualizzato il pannello Configurazioni.
 
-1. Immetti i seguenti dettagli e fai clic su **Salva**:
+1. Immetti i dettagli seguenti e fai clic su **Salva**:
 
-   * **URL server**: URL del server LC di cui il codice del gestore azioni utilizza il servizio Send For Review.
+   * **Url server**: URL del server LC di cui viene utilizzato il codice del gestore di azioni nel servizio Send For Review.
    * **Nome utente**: nome utente amministratore del server LC
    * **Password**: password del nome utente amministratore
 
-   ![Adobe configurazione dell’SDK del client del LiveCycle](assets/3_clientsdkconfiguration.png)
+   ![Adobe configurazione SDK client LiveCycle](assets/3_clientsdkconfiguration.png)
 
 #### Installa archivio LiveCycle (LCA) {#install-livecycle-archive-lca}
 
@@ -358,34 +358,34 @@ Processo di LiveCycle richiesto che abilita il processo del servizio e-mail.
 >
 >Per visualizzare le operazioni eseguite da questo processo o per creare un processo analogo, è necessario Workbench.
 
-1. Accedi come amministratore all’interfaccia utente di LiveCycle® Server all’indirizzo `https:/[lc server]/:[lc port]/adminui`.
+1. Accedere come amministratore all&#39;interfaccia utente di LiveCycle® Server all&#39;indirizzo `https:/[lc server]/:[lc port]/adminui`.
 
-1. Accedi a **Home > Servizi > Applicazioni e servizi > Gestione delle applicazioni**.
+1. Passa a **Home > Servizi > Applicazioni e servizi > Gestione applicazioni**.
 
 1. Se l&#39;applicazione SendLetterForReview è già presente, ignorare i passaggi rimanenti di questa procedura, altrimenti continuare con i passaggi successivi.
 
-   ![Applicazione SendLetterForReview nell’interfaccia utente](assets/12_applicationmanagementlc.png)
+   ![Applicazione SendLetterForReview nell&#39;interfaccia utente](assets/12_applicationmanagementlc.png)
 
-1. Clic **Importa**.
+1. Fai clic su **Importa**.
 
-1. Clic **Scegli file** e selezionare SendLetterForReview.lca.
+1. Fare clic su **Scegli file** e selezionare SendLetterForReview.lca.
 
    ![Seleziona il file SendLetterForReview.lca](assets/14_sendletterforreview_lca.png)
 
-1. Clic **Anteprima**.
+1. Fare clic su **Anteprima**.
 
-1. Seleziona **Distribuire le risorse in fase di esecuzione al termine dell’importazione**.
+1. Selezionare **Distribuisci risorse in fase di esecuzione al termine dell&#39;importazione**.
 
-1. Clic **Importa**.
+1. Fai clic su **Importa**.
 
-#### Aggiunta di ServiceName all&#39;elenco dei servizi di Inserisce nell&#39;elenco Consentiti di in corso {#adding-servicename-to-the-allowlist-service-list}
+#### Aggiunta di ServiceName all&#39;elenco di servizi di Inserisce nell&#39;elenco Consentiti di servizi di {#adding-servicename-to-the-allowlist-service-list}
 
 Nel server di Experience Manager, indicare i servizi di LiveCycle che si desidera accedere al server di Experience Manager.
 
-1. Accedi come amministratore a `https:/[host]:'port'/system/console/configMgr`.
+1. Accedere come amministratore a `https:/[host]:'port'/system/console/configMgr`.
 
-1. Individua e fai clic su **Adobe configurazione dell’SDK del client del LiveCycle**. Viene visualizzato il pannello Configurazione di Adobe LiveCycle Client SDK.
-1. Nell&#39;elenco Nome servizio fare clic sull&#39;icona + e aggiungere un nome servizio **SendLetterForReview/SendLetterForReviewProcess**.
+1. Individua e fai clic su **Adobe configurazione SDK client LiveCycle**. Viene visualizzato il pannello Configurazione di Adobe LiveCycle Client SDK.
+1. Nell&#39;elenco Nome servizio fare clic sull&#39;icona + e aggiungere un serviceName **SendLetterForReview/SendLetterForReviewProcess**.
 
 1. Fai clic su **Salva**.
 
@@ -393,13 +393,13 @@ Nel server di Experience Manager, indicare i servizi di LiveCycle che si desider
 
 In questo scenario, affinché Gestione della corrispondenza possa inviare un messaggio e-mail, configura il servizio e-mail nel server di LiveCycle.
 
-1. Accedi con le credenziali amministratore all’interfaccia utente di LiveCycle Server all’indirizzo `https:/[lc server]:[lc port]/adminui`.
+1. Accedere con le credenziali di amministratore all&#39;interfaccia utente di amministrazione di LiveCycle Server all&#39;indirizzo `https:/[lc server]:[lc port]/adminui`.
 
-1. Accedi a **Home > Servizi > Applicazioni e servizi > Gestione dei servizi**.
+1. Passa a **Home > Servizi > Applicazioni e servizi > Gestione servizi**.
 
 1. Individua e fai clic su **EmailService**.
 
-1. In entrata **Host SMTP**, configura il servizio e-mail.
+1. In **Host SMTP**, configurare il servizio e-mail.
 
 1. Fai clic su **Salva**.
 
@@ -407,7 +407,7 @@ In questo scenario, affinché Gestione della corrispondenza possa inviare un mes
 
 Per utilizzare l’API di gestione della corrispondenza, scarica DSCSample.jar (allegato in questo documento come parte di components.zip) e caricalo sul server di LiveCycle. Dopo il caricamento del file DSCSample.jar nel server di LiveCycle, il server di Experience Manager utilizza il file DSCSample.jar per accedere all’API renderLetter.
 
-Per ulteriori informazioni, consulta [Collegamento di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+Per ulteriori informazioni, vedere [Connessione di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Aggiorna l’URL del server di Experience Manager in cmsa.properties in DSCSample.jar, che si trova nella seguente posizione:
 
@@ -415,7 +415,7 @@ Per ulteriori informazioni, consulta [Collegamento di AEM Forms con Adobe LiveCy
 
 1. Fornisci i seguenti parametri nel file di configurazione:
 
-   * **crx.serverUrl**=https:/host:port/[percorso di contesto]/[URL AEM]
+   * **crx.serverUrl**=https:/host:port/[percorso contestuale]/[URL AEM]
    * **crx.username**= nome utente Experience Manager
    * **crx.password**= password Experience Manager
    * **crx.appRoot**=/content/apps/cm
@@ -424,19 +424,19 @@ Per ulteriori informazioni, consulta [Collegamento di AEM Forms con Adobe LiveCy
    >
    >Ogni volta che si apportano modifiche sul lato server, riavviare il server di LiveCycle.
 
-   Il file DSCSample.jar utilizza l’API renderLetter. Per ulteriori informazioni sull’API renderLetter, consulta [LetterRenderService dell&#39;interfaccia](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+   Il file DSCSample.jar utilizza l’API renderLetter. Per ulteriori informazioni sull&#39;API renderLetter, vedere [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importa DSC in LiveCycle {#import-dsc-to-livecyle}
 
-Il file DSCSample.jar utilizza l&#39;API renderLetter per eseguire il rendering della lettera come byte PDF dai dati XML forniti da DSC come input. Per ulteriori informazioni su renderLetter e altre API, consulta [Servizio di rendering delle lettere](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+Il file DSCSample.jar utilizza l&#39;API renderLetter per eseguire il rendering della lettera come byte PDF dai dati XML forniti da DSC come input. Per ulteriori informazioni su renderLetter e altre API, vedere [Servizio rendering lettere](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Avvia Workbench e accedi.
-1. Seleziona **Finestra > Mostra viste > Componenti**. La vista Componenti viene aggiunta a Workbench ES2.
+1. Selezionare **Finestra > Mostra visualizzazioni > Componenti**. La vista Componenti viene aggiunta a Workbench ES2.
 
-1. Clic con il pulsante destro **Componenti** e seleziona **Installa componente**.
+1. Fare clic con il pulsante destro del mouse su **Componenti** e selezionare **Installa componente**.
 
-1. Seleziona la **DSCSample.jar** dal browser dei file e fai clic su **Apri**.
-1. Clic con il pulsante destro **RenderWrapper** e seleziona **Avvia componente**. Se il componente viene avviato, accanto al nome del componente viene visualizzata una freccia verde.
+1. Seleziona il file **DSCSample.jar** tramite il browser dei file e fai clic su **Apri**.
+1. Fare clic con il pulsante destro del mouse su **RenderWrapper** e selezionare **Avvia componente**. Se il componente viene avviato, accanto al nome del componente viene visualizzata una freccia verde.
 
 ## Invia lettera per revisione {#send-letter-for-review}
 
@@ -444,7 +444,7 @@ Dopo aver configurato l’azione e il pulsante per l’invio della lettera per l
 
 1. Cancella la cache del browser.
 
-1. Nell’interfaccia utente Crea corrispondenza, fai clic su **Revisione lettera** e specifica l’ID e-mail del revisore.
+1. Nell&#39;interfaccia utente per la creazione di corrispondenza, fare clic su **Revisione lettera** e specificare l&#39;ID e-mail del revisore.
 
 1. Fai clic su **Invia**.
 

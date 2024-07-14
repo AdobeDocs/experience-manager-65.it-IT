@@ -20,13 +20,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->La documentazione seguente si concentra sull’interfaccia utente classica. Per informazioni sull’authoring nella moderna interfaccia utente touch, consulta la sezione [Documentazione di authoring standard](/help/assets/assets.md).
+>La documentazione seguente si concentra sull’interfaccia utente classica. Per informazioni sull&#39;authoring nella moderna interfaccia utente touch, consulta la [documentazione standard sull&#39;authoring](/help/assets/assets.md).
 
 L’ambiente di authoring consente di eseguire attività relative a:
 
 * [Authoring](/help/sites-authoring/author.md) (incluso [authoring delle pagine](/help/sites-authoring/qg-page-authoring.md) e [gestione delle risorse](/help/assets/assets.md))
 
-* [Amministrazione](/help/sites-administering/administer-best-practices.md) attività necessarie per la generazione e la manutenzione del contenuto del sito web
+* [Amministrazione](/help/sites-administering/administer-best-practices.md) attività necessarie per generare e gestire il contenuto del sito Web
 
 Per ottenere questo risultato, sono disponibili due interfacce utente grafiche, accessibili tramite qualsiasi browser moderno:
 
@@ -36,7 +36,7 @@ Per ottenere questo risultato, sono disponibili due interfacce utente grafiche, 
    * È prevalentemente verde.
    * È stato progettato per essere utilizzato su dispositivi desktop.
    * Non viene più mantenuto.
-   * La documentazione seguente si concentra su questa interfaccia classica. Per informazioni sull’authoring nell’interfaccia utente moderna basata su touch, consulta la sezione [Documentazione di authoring standard](/help/sites-authoring/author.md).
+   * La documentazione seguente si concentra su questa interfaccia classica. Per informazioni sull&#39;authoring nell&#39;interfaccia utente moderna basata su touch, consulta la [documentazione standard sull&#39;authoring](/help/sites-authoring/author.md).
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -44,8 +44,8 @@ Per ottenere questo risultato, sono disponibili due interfacce utente grafiche, 
 
    * Questa è la moderna interfaccia utente AEM standard.
    * È prevalentemente grigia, con un&#39;interfaccia pulita e piatta.
-   * È progettato per essere utilizzato sia su dispositivi touch che desktop (ottimizzati per il touch). Il look and feel è lo stesso su tutti i dispositivi, tuttavia [visualizzazione e selezione delle risorse](/help/sites-authoring/basic-handling.md) differisce leggermente (tocchi rispetto a clic).
-   * Consulta la [Documentazione di authoring standard](/help/sites-authoring/author.md) per ulteriori dettagli su come effettuare l’authoring utilizzando l’interfaccia utente touch. La documentazione seguente si concentra sull’interfaccia utente classica.
+   * È progettato per essere utilizzato sia su dispositivi touch che desktop (ottimizzati per il touch). Il look and feel è lo stesso su tutti i dispositivi, anche se [la visualizzazione e la selezione delle risorse](/help/sites-authoring/basic-handling.md) differisce leggermente (tocchi e clic).
+   * Per ulteriori dettagli su come eseguire l&#39;authoring utilizzando l&#39;interfaccia utente touch, consulta la [documentazione standard per l&#39;authoring](/help/sites-authoring/author.md). La documentazione seguente si concentra sull’interfaccia utente classica.
 
    * Desktop:
 

@@ -32,15 +32,15 @@ Configura CLI PhoneGap (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.h
 
 Per iOS: per sviluppare per iPhone e iPad, è necessario Apple Xcode IDE.
 
-* Scaricala gratuitamente [qui](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
-* Guida alla piattaforma PhoneGap iOS (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
+* Scarica gratuitamente [qui](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
+* Guida alla piattaforma iOS PhoneGap (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Per Android™: per sviluppare per iPhone e iPad, è necessario Google Android™ Studio IDE.
 
-* Scaricala gratuitamente [qui](https://developer.android.com/studio).
-* Guida alla piattaforma PhoneGap Android™ (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
+* Scarica gratuitamente [qui](https://developer.android.com/studio).
+* Guida alla piattaforma Android™ PhoneGap (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
-## Scarica l’origine {#download-the-source}
+## Scarica il Source {#download-the-source}
 
 Dopo aver avviato correttamente l’ambiente di sviluppo, scarica l’origine dal riquadro di build dell’app AEM:
 
@@ -48,8 +48,8 @@ Dopo aver avviato correttamente l’ambiente di sviluppo, scarica l’origine da
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* Fai clic su Scarica origine.
-* Seleziona l’origine desiderata dal modale Scarica origine.
+* Fai clic su Scarica Source.
+* Seleziona l’origine desiderata dal modale Scarica Source.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -68,7 +68,7 @@ PhoneGap CLI può creare un progetto di piattaforma, compilare l’origine e dis
 
 >[!NOTE]
 >
->Puoi eseguire tutti questi passaggi separatamente, vedi i documenti CLI di PhoneGap (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
+>È possibile eseguire tutti questi passaggi separatamente. Consultare la documentazione di PhoneGap CLI (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
 
 1. Verifica di aver installato PhoneGap CLI, vedi sopra.
 1. In una finestra della console (o del terminale), passa alla directory principale della sorgente estratta.
@@ -91,13 +91,13 @@ phonegap run ios
 >1. Esegui `phonegap create helloWorld`
 >1. Navigare in helloWorld (cd helloWorld)
 >1. Esegui `phonegap run android` (o sostituisci Android™ con iOS come sopra).
->1. L’emulatore apre l’esecuzione dell’app PhoneGap appena creata, indicando &quot;Device Ready&quot; (Pronto per il dispositivo) se JavaScript Bridge to native è operativo.
+>1. L’emulatore apre l’esecuzione della nuova app PhoneGap creata, dicendo &quot;Device Ready&quot; (Pronto per il dispositivo) se il Bridge JavaScript to native è operativo.
 >
 >Questa risoluzione dei problemi verifica che l’ambiente di sviluppo CLI di PhoneGap funzioni correttamente.
 
-## Eseguire il debug di JavaScript con il debug di Safari e IOS {#debug-javascripts-with-safari-and-ios-debug}
+## Eseguire il debug di JavaScript con Safari e IOS debug {#debug-javascripts-with-safari-and-ios-debug}
 
-Puoi eseguire il debug del codice JavaScript dell’app utilizzando gli strumenti per sviluppatori di Safari, allo stesso modo che faresti con un’applicazione web.
+Puoi eseguire il debug del JavaScript dell’app utilizzando gli strumenti per sviluppatori di Safari, nello stesso modo in cui esegui un’applicazione web.
 
 ## Abilitare gli strumenti per sviluppatori Safari {#enable-safari-developer-tools}
 
@@ -137,7 +137,7 @@ phonegap run <platform> --emulator
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-## Debug di JavaScript con Safari Web Inspector {#debug-javascript-with-safari-s-web-inspector}
+## Eseguire il debug di JavaScript con Safari Web Inspector {#debug-javascript-with-safari-s-web-inspector}
 
 È possibile impostare i punti di interruzione in qualsiasi punto dell&#39;origine. Quando interagisci con l’emulatore o il dispositivo, l’esecuzione dell’app si interrompe in corrispondenza di tali punti di interruzione. Puoi analizzare in dettaglio l’esecuzione e controllare i valori nelle variabili.
 
@@ -158,4 +158,4 @@ phonegap run <platform> --emulator
 
 ## Passaggi successivi {#the-next-steps}
 
-Dopo aver appreso come sviluppare app con PhoneGap CLI, consulta [Accesso alle funzioni del dispositivo](/help/mobile/phonegap-access-device-features.md).
+Dopo aver appreso come sviluppare app con PhoneGap CLI, consulta [Accesso alle funzionalità del dispositivo](/help/mobile/phonegap-access-device-features.md).

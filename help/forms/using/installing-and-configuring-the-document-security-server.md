@@ -27,11 +27,11 @@ Document Security fornisce inoltre a client, visualizzatori e indicizzatori la p
 
 ## Topologia di distribuzione  {#deployment-topology}
 
-La funzionalità di protezione dei documenti è disponibile solo in AEM Forms su JEE. È necessaria una singola istanza di AEM Forms su JEE. Se necessario, puoi anche creare un cluster o una farm di server AEM Forms. La topologia seguente è indicativa per l’esecuzione della funzionalità di protezione dei documenti. Per informazioni dettagliate sulla topologia, vedere [Architettura e topologie di implementazione per AEM Forms](aem-forms-architecture-deployment.md).
+La funzionalità di protezione dei documenti è disponibile solo in AEM Forms su JEE. È necessaria una singola istanza di AEM Forms su JEE. Se necessario, puoi anche creare un cluster o una farm di server AEM Forms. La topologia seguente è indicativa per l’esecuzione della funzionalità di protezione dei documenti. Per informazioni dettagliate sulla topologia, vedere [Architettura e topologie di distribuzione per AEM Forms](aem-forms-architecture-deployment.md).
 
 <!--fix above link-->
 
-![Topologia del server di Document Security](do-not-localize/document-security-server_topology.png)
+![Topologia del server di protezione dei documenti](do-not-localize/document-security-server_topology.png)
 
 Il diagramma seguente mostra l’architettura tipica di AEM Forms Document Security:
 
@@ -41,15 +41,15 @@ Il diagramma seguente mostra l’architettura tipica di AEM Forms Document Secur
 
 Per installare e configurare AEM Forms su JEE, effettua le seguenti operazioni:
 
-1. Scarica il programma di installazione di Forms su JEE per AEM 6.5 da [Sito Web Adobe Licensing (LWS)](https://licensing.adobe.com/). Per scaricare il programma di installazione è necessario un contratto valido di manutenzione e supporto.
-1. Leggi le [Documento sulle piattaforme supportate da AEM Forms su JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) e assicurati che il software, l’hardware, i sistemi operativi, il server applicazioni, i database, i JDK e altre infrastrutture siano pronti per installare AEM Forms su JEE.
-1. (Solo installazioni non chiavi in mano) Leggi la [Preparazione all&#39;installazione di AEM Forms single server](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) o [Preparazione all&#39;installazione del cluster di server AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) e preparare l’ambiente per installare e configurare AEM Forms su JEE.
+1. Scarica il programma di installazione di Forms su JEE per AEM 6.5 dal [sito Web Adobe Licensing (LWS)](https://licensing.adobe.com/). Per scaricare il programma di installazione è necessario un contratto valido di manutenzione e supporto.
+1. Leggi il documento [AEM Forms sulle piattaforme supportate da JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) e assicurati che il software, l&#39;hardware, i sistemi operativi, il server applicazioni, i database, i JDK e l&#39;altra infrastruttura siano pronti per installare AEM Forms su JEE.
+1. (Solo installazioni non chiavi in mano) Leggi [Preparazione all&#39;installazione di AEM Forms single server](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) o [Preparazione all&#39;installazione del cluster di server AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) e prepara l&#39;ambiente per installare e configurare AEM Forms su JEE.
 1. A seconda dell&#39;ambiente e del server applicazioni in uso, scegliere uno dei seguenti documenti e seguire le istruzioni per completare l&#39;installazione
 
-   * [Installazione e distribuzione di AEM Forms su JEE utilizzando JBoss turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
-   * [Installazione e distribuzione di AEM Forms su JEE per JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64)
-   * [Installazione e distribuzione di AEM Forms su JEE per WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_64)
-   * [Installazione e distribuzione di AEM Forms su JEE per WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_64)
+   * [Installazione e distribuzione di AEM Forms in JEE con JBoss turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
+   * [Installazione e distribuzione di AEM Forms in JEE per JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64)
+   * [Installazione e distribuzione di AEM Forms in JEE per WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_64)
+   * [Installazione e distribuzione di AEM Forms in JEE per WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_64)
    * [Configurazione di AEM Forms su JEE nel cluster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
    * [Configurazione di AEM Forms su JEE nel cluster WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
    * [Configurazione di AEM Forms su JEE nel cluster WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)

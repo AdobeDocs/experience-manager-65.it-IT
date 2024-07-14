@@ -25,7 +25,7 @@ AEM si integra con PhoneGap in modo da poter creare facilmente app utilizzando l
 
 >[!NOTE]
 >
->Prima di iniziare a utilizzare AEM Mobile con Adobe PhoneGap, assicurati di configurare il tuo ambiente e di iniziare a utilizzare [Dashboard dell’applicazione AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
+>Prima di iniziare a utilizzare AEM Mobile con Adobe PhoneGap, assicurati di configurare il tuo ambiente e di iniziare a utilizzare [AEM Mobile Application Dashboard](/help/mobile/phonegap-authoring-apps.md).
 
 Le seguenti risorse sono utili per iniziare a usare AEM Mobile con Adobe PhoneGap:
 
@@ -36,12 +36,12 @@ Le seguenti risorse sono utili per iniziare a usare AEM Mobile con Adobe PhoneGa
 * [AEM Mobile Content Services: panoramica](/help/mobile/develop-content-as-a-service.md)
 
    * Per abilitare Content Services e modelli dati, vedere [Amministrazione di Content Services](/help/mobile/developing-content-services.md)
-   * Per informazioni sulla creazione di modelli, consulta [Sviluppo di modelli](/help/mobile/administer-mobile-apps.md)
-   * Per informazioni sul rendering e la consegna, consulta [Rendering e distribuzione di Content Services](/help/mobile/rendering-and-delivery.md)
+   * Per informazioni sulla creazione di modelli, vedere [Sviluppo di modelli](/help/mobile/administer-mobile-apps.md)
+   * Per informazioni sul rendering e la distribuzione, vedere [Rendering e distribuzione di Content Services](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->Per eseguire le applicazioni mobili AEM su qualsiasi dispositivo mobile iOS o Android, consulta [Quickstart per dispositivi mobili con l’app di verifica AEM](/help/mobile/phonegap-mobile-quickstart.md).
+>Per eseguire le applicazioni mobili AEM su qualsiasi dispositivo mobile iOS o Android, consulta [Mobile Quickstart tramite l&#39;app di verifica AEM](/help/mobile/phonegap-mobile-quickstart.md).
 
 ## Come procedere {#getting-ahead}
 

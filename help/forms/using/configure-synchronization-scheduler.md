@@ -24,38 +24,38 @@ Per impostazione predefinita, la pianificazione della sincronizzazione viene ese
 
 Per modificare l&#39;intervallo dell&#39;utilità di pianificazione della sincronizzazione, effettuare le operazioni riportate di seguito.
 
-1. Accedere a Gestione configurazione AEM. L’URL di Configuration Manager è `https://'[server]:[port]'/lc/system/console/configMgr`
+1. Accedere a Gestione configurazione AEM. URL di Configuration Manager: `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Individuare e aprire **FormsManagerConfiguration** pacchetto.
+1. Individua e apri il bundle **FormsManagerConfiguration**.
 
-1. Specifica un nuovo valore per **Frequenza utilità di pianificazione sincronizzazione** opzione.
+1. Specificare un nuovo valore per l&#39;opzione **Frequenza utilità di pianificazione sincronizzazione**.
 
    L&#39;unità della frequenza è minuti. Ad esempio, per configurare la pianificazione in modo che venga eseguita dopo ogni 60 minuti, specificare 60.
 
 ## Sincronizzazione delle risorse {#synchronizing-assets}
 
-È possibile utilizzare **Sincronizzare le risorse dall’archivio** per sincronizzare manualmente le risorse. Per sincronizzare manualmente le risorse, effettua le seguenti operazioni:
+È possibile utilizzare l&#39;opzione **Sincronizza Assets dall&#39;archivio** per sincronizzare manualmente le risorse. Per sincronizzare manualmente le risorse, effettua le seguenti operazioni:
 
-1. Accedi ad AEM Forms. L’URL predefinito è `https://'[server]:[port]'/lc/aem/forms/`.
+1. Accedi ad AEM Forms. URL predefinito: `https://'[server]:[port]'/lc/aem/forms/`.
 
    ![Interfaccia utente di AEM Forms](assets/aem_forms_ui.png)
 
    **Figura:** *Interfaccia utente di AEM Forms*
 
-1. Fai clic su ![aem6forms_sync](assets/aem6forms_sync.png) nella barra degli strumenti. Se non disponi di alcuna risorsa nell’ultimo percorso configurato, seleziona la finestra di dialogo come mostrato di seguito. Clic **Inizio** per avviare la sincronizzazione.
+1. Fai clic sull&#39;icona ![aem6forms_sync](assets/aem6forms_sync.png) nella barra degli strumenti. Se non disponi di alcuna risorsa nell’ultimo percorso configurato, seleziona la finestra di dialogo come mostrato di seguito. Fare clic su **Inizio** per avviare la sincronizzazione.
 
-   ![Finestra di dialogo Sincronizzazione](assets/migrate-and-syncronize.png)
+   ![Finestra di dialogo di sincronizzazione](assets/migrate-and-syncronize.png)
 
-   **Figura:** *Finestra di dialogo Sincronizzazione*
+   **Figura:** *Finestra di dialogo di sincronizzazione*
 
 ## Risoluzione dei problemi di sincronizzazione {#troubleshooting-synchronization-error}
 
 È possibile creare nuove applicazioni nel designer flusso di lavoro (LiveCycle Workbench).
 
-Se l’applicazione appena creata e una cartella in /content/dam/formsanddocuments hanno lo stesso nome, viene visualizzato un errore &quot;*A livello principale esiste già una risorsa con lo stesso nome di questa applicazione.*&quot; è registrato.
+Se l&#39;applicazione appena creata e una cartella in /content/dam/formsanddocuments hanno lo stesso nome, a livello principale esiste già un errore &quot;*Una risorsa con lo stesso nome di questa applicazione.*&quot; è registrato.
 
 Per risolvere il conflitto, rinomina l’applicazione e sincronizza manualmente le risorse.
 
-![Conflitti nella finestra di dialogo Sincronizzazione risorse](assets/sync-conflict.png)
+![Conflitti nella finestra di dialogo di sincronizzazione risorse](assets/sync-conflict.png)
 
-**Figura:** *Conflitti nella finestra di dialogo Sincronizzazione risorse*
+**Figura:** *Conflitti nella finestra di dialogo di sincronizzazione risorse*

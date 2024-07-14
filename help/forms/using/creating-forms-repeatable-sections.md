@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Creazione di moduli con sezioni ripetibili {#creating-forms-with-repeatable-sections}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 Le sezioni ripetibili sono pannelli che possono essere aggiunti o rimossi dinamicamente in un modulo.
 
@@ -27,7 +27,7 @@ Per creare pannelli ripetibili, potete utilizzare uno dei seguenti metodi:
 
 ## Utilizzo di Instance Manager tramite script  {#using-instance-manager-via-scripts-nbsp}
 
-1. In modalità di modifica, seleziona un pannello, quindi seleziona ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, abilita **Rendi il pannello ripetibile**. Specifica i valori per **[!UICONTROL Massimo]** e **[!UICONTROL Minimo]** campi.
+1. In modalità di modifica, seleziona un pannello, quindi seleziona ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, abilita **Rendi il pannello ripetibile**. Specificare i valori per i campi **[!UICONTROL Massimo]** e **[!UICONTROL Minimo]**.
 
    Il campo Massimo specifica il numero massimo di volte in cui un pannello può essere visualizzato sulla pagina. Puoi specificare -1 nel campo Conteggio massimo per consentire la visualizzazione del pannello per un numero infinito di volte.
 
@@ -39,27 +39,27 @@ Per creare pannelli ripetibili, potete utilizzare uno dei seguenti metodi:
 
 1. L’elemento principale del pannello, che deve essere ripetuto, deve contenere pulsanti di aggiunta ed eliminazione per gestire le istanze dei pannelli ripetibili. Per inserire pulsanti nell&#39;elemento padre e attivare gli script sui pulsanti, effettuare le seguenti operazioni:
 
-   1. Dalla barra laterale, trascina un componente pulsante nell’elemento principale del pannello. Seleziona il componente e seleziona ![edit-rules](assets/edit-rules.png). Le regole del pulsante si aprono nell’editor di regole.
+   1. Dalla barra laterale, trascina un componente pulsante nell’elemento principale del pannello. Selezionare il componente e selezionare ![edit-rules](assets/edit-rules.png). Le regole del pulsante si aprono nell’editor di regole.
    1. Nella finestra Editor regole, fai clic su **Crea**.
 
-      Seleziona **Editor visivo** nella riga Oggetti e funzioni modulo.
+      Selezionare **Editor visivo** nella riga Oggetti e funzioni modulo.
 
-      1. Nell&#39;area della regola, in QUANDO, selezionare lo stato **ha fatto clic su**.
+      1. Nell&#39;area delle regole, in WHEN, selezionare lo stato **su cui fare clic**.
       1. Sotto THEN:
 
-         * Per creare un pulsante Aggiungi pannello, seleziona **Aggiungi istanza**, e trascina il pannello tramite ![interruttore-pannello laterale](assets/toggle-side-panel.png) o selezionala utilizzando **Rilascia l’oggetto o seleziona qui.**
-         * Per creare un pulsante Elimina pannello, seleziona **Rimuovi istanza**, e trascina il pannello tramite ![interruttore-pannello laterale](assets/toggle-side-panel.png) o selezionala utilizzando **Rilascia l’oggetto o seleziona qui.**
+         * Per creare un pulsante Aggiungi pannello, seleziona **Aggiungi istanza** e trascina il pannello utilizzando ![toggle-side-panel](assets/toggle-side-panel.png) oppure selezionalo utilizzando **Rilascia oggetto o seleziona qui.**
+         * Per creare un pulsante Elimina pannello, seleziona **Rimuovi istanza** e trascina il pannello tramite ![toggle-side-panel](assets/toggle-side-panel.png) oppure selezionalo con **Rilascia oggetto o seleziona qui.**
 
-      Seleziona **Editor di codice** nella riga Oggetti e funzioni modulo. Clic **Modifica regole** e nell&#39;area di codice:
+      Selezionare **Editor di codice** nella riga Oggetti e funzioni modulo. Fai clic su **Modifica regole** e nell&#39;area del codice:
 
-      * Per creare un pulsante Aggiungi pannello, specifica `this.panel.instanceManager.addInstance()`
-      * Per creare un pulsante Elimina pannello, specifica `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+      * Per creare un pulsante Aggiungi pannello, specificare `this.panel.instanceManager.addInstance()`
+      * Per creare un pulsante Elimina pannello, specificare `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
       Fai clic su **Fine**.
 
       >[!NOTE]
       >
-      >Se un campo appartiene a un pannello ripetibile, non è possibile accedervi direttamente utilizzando il relativo nome negli script. Per accedere al campo, specifica l’istanza ripetibile a cui appartiene il campo utilizzando `instances` API in `InstanceManager`. Sintassi da utilizzare per `instances` API in `InstanceManager` è:
+      >Se un campo appartiene a un pannello ripetibile, non è possibile accedervi direttamente utilizzando il relativo nome negli script. Per accedere al campo, specificare l&#39;istanza ripetibile a cui appartiene il campo utilizzando l&#39;API `instances` in `InstanceManager`. Sintassi per l&#39;utilizzo dell&#39;API `instances` in `InstanceManager`:
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -89,7 +89,7 @@ Per creare pannelli ripetibili, potete utilizzare uno dei seguenti metodi:
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >Per ulteriori informazioni, vedere Classe: InstanceManager#instances in [Riferimento API Java di AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
+      >Per ulteriori informazioni, vedere: Classe: InstanceManager#instances in [Riferimento API Java di AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 
       >[!NOTE]
       >
@@ -99,10 +99,10 @@ Per creare pannelli ripetibili, potete utilizzare uno dei seguenti metodi:
 
 Un pannello dispone di varie opzioni di layout. L’opzione Layout per pannello a soffietto supporta i pannelli ripetibili come funzionalità integrata. Effettua le seguenti operazioni per creare un pannello ripetibile con l’opzione Layout per la progettazione del pannello a soffietto:
 
-1. Sulla parte superiore del pannello da ripetere, seleziona ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà nella barra laterale. In **Layout** a discesa, seleziona **Accordion**.
-1. In un pannello da ripetere, seleziona ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà del pannello nella barra laterale. Abilita **Rendi il pannello ripetibile** e specifica il valore per la scheda **Massimo** e **Minimo** campi.
+1. Selezionare ![cmppr](assets/cmppr.png) nell&#39;elemento padre del pannello da ripetere. Puoi visualizzare le proprietà nella barra laterale. Nel menu a discesa **Layout**, seleziona **Pannello a soffietto**.
+1. In un pannello da ripetere, selezionare ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà del pannello nella barra laterale. Abilita la scheda **Rendi il pannello ripetibile** e specifica il valore per i campi **Maximum** e **Minimum**.
 
-   Ora è possibile utilizzare il segno più (+) ed eliminare ( ![delete-panel](assets/delete-panel.png)) per aggiungere e rimuovere i pannelli.
+   Ora puoi utilizzare i pulsanti più (+) ed elimina ( ![elimina-panel](assets/delete-panel.png)) per aggiungere e rimuovere i pannelli.
 
 ## Utilizzo di sottomaschere ripetute dal modello di modulo (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
@@ -116,7 +116,7 @@ La sottomaschera ripetibile è simile ai pannelli ripetibili in Adaptive Forms. 
 1. Per specificare il numero minimo di ripetizioni, selezionare Conteggio minimo e digitare un numero nella casella associata. Se questa opzione è impostata su 0 e non vengono forniti dati per gli oggetti nel sottomodulo al momento dell&#39;unione dei dati, il sottomodulo non viene posizionato al momento del rendering del modulo.
 1. Per specificare il numero massimo di ripetizioni di sottomaschera, selezionare Max e digitare un numero nella casella associata. Se non si specifica un valore nella casella Max, il numero di ripetizioni della sottomaschera è illimitato.
 1. Per specificare un numero impostato di ripetizioni di sottomaschera, indipendentemente dalla quantità di dati, selezionare Conteggio iniziale e digitare un numero nella casella associata. Se si seleziona questa opzione e non sono disponibili dati o sono presenti meno voci di dati rispetto al valore Conteggio iniziale specificato, le istanze vuote del sottomodulo verranno comunque inserite nel modulo.
-1. Aggiungere due pulsanti nella sottomaschera padre: uno per aggiungere un&#39;istanza e un altro per eliminare un&#39;istanza di una sottomaschera ripetibile. Per i passaggi dettagliati, consulta [Creare un’azione](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
+1. Aggiungere due pulsanti nella sottomaschera padre: uno per aggiungere un&#39;istanza e un altro per eliminare un&#39;istanza di una sottomaschera ripetibile. Per i passaggi dettagliati, vedi [Generare un&#39;azione](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Collega ora il modello di modulo al modulo adattivo. Per i passaggi dettagliati, consulta [Creare un modulo adattivo basato su un modello](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Utilizzare i pulsanti creati nel passaggio 9 per aggiungere e rimuovere sottomaschere.
 
@@ -128,7 +128,7 @@ Il file .zip allegato contiene un modulo secondario ripetibile di esempio.
 
 È possibile creare pannelli ripetibili da uno schema XML e dalla proprietà minOccours &amp; maxOccurs di qualsiasi elemento di tipo complesso. Per informazioni dettagliate sullo schema XML, vedere [Creare moduli adattivi utilizzando lo schema XML come modello di modulo](/help/forms/using/adaptive-form-xml-schema-form-model.md).
 
-Nel codice seguente, la proprietà `SampleType`utilizza la proprietà minOccours &amp; maxOccurs.
+Nel codice seguente, il pannello `SampleType` utilizza la proprietà minOccours &amp; maxOccurs.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

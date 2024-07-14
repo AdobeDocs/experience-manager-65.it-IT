@@ -96,7 +96,7 @@ Per informazioni sulla sicurezza dei server applicazioni supportati da AEM Forms
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Cerca informazioni sulla sicurezza di WebLogic all'indirizzo <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
+   <td><p>Cerca informazioni sulla sicurezza WebLogic all'indirizzo <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM® WebSphere®</p> </td>
@@ -142,12 +142,12 @@ Per informazioni sulla sicurezza dei database supportati da AEM Forms su JEE, co
   </tr>
   <tr>
    <td><p>Oracle ® 12 quater</p> </td>
-   <td><p>Vedere il capitolo Sicurezza in <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12 octies documentazione</a></p> </td>
+   <td><p>Consulta il capitolo sulla sicurezza nella <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">documentazione di Oracle 12g</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-Questa tabella descrive le porte predefinite che devono essere aperte durante il processo di configurazione di AEM Forms su JEE. Se ti connetti tramite https, regola di conseguenza le informazioni sulla porta e gli indirizzi IP. Per ulteriori informazioni sulla configurazione delle porte, vedere *Installazione e distribuzione di AEM Forms su JEE* per il server applicazioni.
+Questa tabella descrive le porte predefinite che devono essere aperte durante il processo di configurazione di AEM Forms su JEE. Se ti connetti tramite https, regola di conseguenza le informazioni sulla porta e gli indirizzi IP. Per ulteriori informazioni sulla configurazione delle porte, vedere il documento *Installazione e distribuzione di AEM Forms su JEE* per il server applicazioni.
 
 <table>
  <thead>
@@ -210,11 +210,11 @@ JBoss® Application Server utilizza 8080 come porta HTTP predefinita. JBoss® di
 
 1. Apri il seguente file per la modifica:
 
-   Installazione su server singolo: [Directory principale JBoss®]/standalone/configuration/standalone.xml
+   Installazione su server singolo: [radice JBoss®]/standalone/configuration/standalone.xml
 
-   Installazioni cluster: [Directory principale JBoss®]/domain/configuration/domain.xml
+   Installazioni cluster: [radice JBoss®]/domain/configuration/domain.xml
 
-1. Modifica il valore di **porta** attributo in **&lt;socket-binding>** su un numero di porta personalizzato. Ad esempio, il seguente utilizza la porta 8090:
+1. Modificare il valore dell&#39;attributo **port** nel tag **&lt;socket-binding>** in un numero di porta personalizzato. Ad esempio, il seguente utilizza la porta 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
@@ -241,7 +241,7 @@ AEM Forms su JEE utilizza il database AEM Forms su JEE per memorizzare le inform
 
 Il server applicazioni utilizzato per eseguire AEM Forms su JEE richiede una propria configurazione per accedere al database tramite un’origine dati configurata sul server applicazioni. Verificare che il server applicazioni in uso non esponga la password del database in testo non crittografato nel file di configurazione dell&#39;origine dati.
 
-Il valore lc_[database]Il file xml non deve contenere password in formato testo non crittografato. Rivolgersi al fornitore del server applicazioni per informazioni su come crittografare le password per il server applicazioni.
+Il file lc_[database].xml non deve contenere password in formato testo non crittografato. Rivolgersi al fornitore del server applicazioni per informazioni su come crittografare le password per il server applicazioni.
 
 >[!NOTE]
 >

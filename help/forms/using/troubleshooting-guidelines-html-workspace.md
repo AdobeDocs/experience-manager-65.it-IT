@@ -22,17 +22,17 @@ Questo articolo illustra come eseguire il debug dell’area di lavoro di AEM For
 
 ## Impossibile installare il pacchetto dell’area di lavoro di AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Dopo aver installato la patch, apri l’area di lavoro di AEM Forms. Se riscontri l’errore Nessuna risorsa trovata, apri Gestione pacchetti CRX e reinstalla `adobe-lc-workspace-pkg-<version>.zip` pacchetto.
+Dopo aver installato la patch, apri l’area di lavoro di AEM Forms. Se si verifica l&#39;errore Nessuna risorsa trovata, aprire Gestione pacchetti di CRX e reinstallare il pacchetto `adobe-lc-workspace-pkg-<version>.zip`.
 
-Se durante l’installazione del pacchetto si verifica un errore `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, effettua le seguenti operazioni:
+Se durante l&#39;installazione del pacchetto si verifica un errore `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, eseguire la procedura seguente:
 
-1. Accedi a CRXDE Liti. L’URL predefinito è `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Accedi a CRXDE Lite. L&#39;URL predefinito è `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimina il seguente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Passa a Gestione pacchetti. L’URL predefinito è `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. Cerca e installa `adobe-lc-workspace-pkg-[version].zip` pacchetto.
+1. Passa a Gestione pacchetti. URL predefinito: `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
+1. Cerca e installa il pacchetto `adobe-lc-workspace-pkg-[version].zip`.
 1. Riavviare il server applicazioni.
 
 >[!NOTE]
@@ -45,9 +45,9 @@ Puoi generare i registri a vari livelli per consentire una risoluzione ottimale 
 
 Nell’area di lavoro AEM Forms:
 
-* Per ottenere le informazioni di registrazione relative a un file di componente specifico, aggiungere `/log/<ComponentFile>/<LogLevel>` nell’URL, quindi premi `Enter`. Tutte le informazioni di registrazione per il file componente al livello di registro specificato vengono stampate sulla console.
+* Per ottenere le informazioni di registrazione su un file di componente specifico, aggiungere `/log/<ComponentFile>/<LogLevel>` nell&#39;URL e premere `Enter`. Tutte le informazioni di registrazione per il file componente al livello di registro specificato vengono stampate sulla console.
 
-* Per ottenere le informazioni di registrazione di tutti i file dei componenti, aggiungi `/log/all/trace` nell’URL, quindi premi `Enter`.
+* Per ottenere le informazioni di registrazione di tutti i file dei componenti, aggiungere `/log/all/trace` nell&#39;URL e premere `Enter`.
 
 * Formato registro: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -158,15 +158,15 @@ Nell’area di lavoro AEM Forms:
 
 È possibile eseguire il debug di script e stili in browser diversi.
 
-* **Debug in IE**: per eseguire il debug dell’area di lavoro di AEM Forms in IE, consulta: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **Debug in IE**: per eseguire il debug dell&#39;area di lavoro di AEM Forms in IE, vedere: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Debug in Chrome**: per aprire il debugger in Chrome, utilizza la scelta rapida: Ctrl+Maiusc+I. Per ulteriori informazioni, consulta: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **Debug in Chrome**: per aprire il debugger in Chrome, utilizzare la scelta rapida: Ctrl+Maiusc+I. Per ulteriori informazioni, vedere: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Debug in Firefox**: sono disponibili diversi componenti aggiuntivi per il debug di script e stili in Firefox. Firebug, ad esempio, è una di queste utility di debug ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Domande frequenti {#faqs}
 
-1. Il modulo PDF non viene renderizzato o inviato in Google Chrome.
+1. Il modulo PDF non viene sottoposto a rendering o inviato in Google Chrome.
 
    1. Installare il plug-in Adobe® Reader®.
    1. In Chrome, apri chrome://plugins per visualizzare i plug-in disponibili.

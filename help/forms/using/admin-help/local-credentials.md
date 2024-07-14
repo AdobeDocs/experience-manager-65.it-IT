@@ -18,24 +18,24 @@ ht-degree: 0%
 
 # Gestione delle credenziali locali {#managing-local-credentials}
 
-Le credenziali locali sono credenziali di chiave privata ospitate in Gestione archivio fonti attendibili. A *credenziali locali* identifica la posizione in cui sono memorizzate le credenziali DES di un utente. Tramite Gestione archivio fonti attendibili è possibile importare e gestire le credenziali locali utilizzando, ad esempio, i file PFX esistenti, in modo da poter importare, modificare ed eliminare le credenziali locali.
+Le credenziali locali sono credenziali di chiave privata ospitate in Gestione archivio fonti attendibili. Una *credenziale locale* identifica la posizione in cui sono memorizzate le credenziali DES di un utente. Tramite Gestione archivio fonti attendibili è possibile importare e gestire le credenziali locali utilizzando, ad esempio, i file PFX esistenti, in modo da poter importare, modificare ed eliminare le credenziali locali.
 
 I moduli AEM supportano le credenziali RSA e DSA fino a 4096 bit nel formato standard PKCS12 (file .pfx e .p12).
 
 È possibile importare ed esportare un numero qualsiasi di credenziali. Se si desidera sostituire una credenziale scaduta utilizzando lo stesso alias, eliminare la credenziale e quindi importare la nuova credenziale con lo stesso alias.
 
-Per informazioni e istruzioni relative alle estensioni di Acrobat Reader DC, consulta [Configurazione delle credenziali per l’utilizzo con le estensioni di Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
+Per informazioni e istruzioni relative alle estensioni Acrobat Reader DC, vedere [Configurazione delle credenziali per l&#39;utilizzo con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
 ## Importa credenziali {#import-a-credential}
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
 1. Fai clic su Importa. In Tipo archivio fonti attendibili selezionare una delle opzioni seguenti:
 
-   * **Credenziali di firma documento:** Credenziale utilizzata per emettere una firma digitale su un documento.
-   * **Credenziali estensioni Acrobat Reader DC:** Certificato digitale specifico per le estensioni Acrobat Reader DC che consente l’attivazione dei diritti di utilizzo di Adobe Reader nei documenti PDF prodotti.
-   * **Predefinito:** Indica che si tratta delle credenziali predefinite da utilizzare con le estensioni di Acrobat Reader DC.
+   * **Credenziali firma documento:** Credenziali utilizzate per emettere una firma digitale su un documento.
+   * **Credenziali estensioni Acrobat Reader DC:** un certificato digitale specifico delle estensioni Acrobat Reader DC che consente l&#39;attivazione dei diritti di utilizzo Adobe Reader nei documenti PDF prodotti.
+   * **Predefinito:** indica che si tratta delle credenziali predefinite da utilizzare con le estensioni di Acrobat Reader DC.
 
-   Per informazioni su come ottenere le credenziali, vedere [Preparazione all’installazione dei moduli AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+   Per informazioni su come ottenere le credenziali, vedere [Preparazione all&#39;installazione dei moduli AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
 1. Nella casella Alias digitare un identificatore per le credenziali. Questo identificatore viene utilizzato come nome visualizzato per le credenziali nelle estensioni di Acrobat Reader DC e nel servizio Signature. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione tramite l’SDK per moduli AEM.
 

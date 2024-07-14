@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Questo tutorial descrive come impostare [MSRP](msrp.md) per *un autore* istanza e *una pubblicazione* dell&#39;istanza.
+Questo tutorial descrive come configurare [MSRP](msrp.md) per *una istanza Autore* e *una istanza Publish*.
 
 Con questa configurazione, il contenuto della community è accessibile sia dagli ambienti di authoring che da quelli di pubblicazione senza la necessità di inoltrare o invertire i contenuti generati dagli utenti (UGC, User-Generated Content).
 
-Questa configurazione è adatta per *non produzione* ambienti come quelli di sviluppo e/o dimostrazione.
+Questa configurazione è adatta per *ambienti non di produzione* come ad esempio per lo sviluppo e/o la dimostrazione.
 
-**A *produzione* L’ambiente deve:**
+**Un ambiente *produzione* deve:**
 
 * Eseguire MongoDB con un set di repliche
 * Usa SolrCloud
@@ -70,7 +70,7 @@ Verrà avviato un server MongoDB utilizzando la porta predefinita 27017.
 
 >[!NOTE]
 >
->Se MongoDB viene avviato *dopo* AEM **riavvia** tutto **AEM** in modo da connettersi correttamente a MongoDB.
+>Se MongoDB viene avviato *dopo* AEM, **riavviare** tutte le **istanze AEM** in modo che si connettano correttamente a MongoDB.
 
 ### Opzione produzione demo: Imposta replica MongoDB impostata {#demo-production-option-setup-mongodb-replica-set}
 
@@ -110,16 +110,16 @@ I seguenti comandi sono un esempio di configurazione di un set di repliche con 3
 
 Per configurare una raccolta Solr per MSRP per la dimostrazione, è necessario prendere due decisioni (per informazioni dettagliate, seleziona i collegamenti alla documentazione principale):
 
-1. Eseguire Solr in modalità standalone o [Modalità SolrCloud](msrp.md#solrcloudmode).
-1. Installa [standard](msrp.md#installingstandardmls) o [avanzato](msrp.md#installingadvancedmls) ricerca multilingue (MLS).
+1. Esegui Solr in modalità standalone o [SolrCloud](msrp.md#solrcloudmode).
+1. Installa [standard](msrp.md#installingstandardmls) o [advanced](msrp.md#installingadvancedmls) ricerca multilingue (MLS).
 
 ### Solr standalone {#standalone-solr}
 
-Il metodo di esecuzione di Solr può variare a seconda della versione e delle modalità di installazione. Il [Guida di riferimento Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) è la documentazione autorevole.
+Il metodo di esecuzione di Solr può variare a seconda della versione e delle modalità di installazione. La [Guida di riferimento Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) è la documentazione autorevole.
 
 Per semplicità, utilizzando la versione 4.10 come esempio, avviare Solr in modalità standalone:
 
-* cd a &lt;solrinstall>/example
+* da cd a &lt;solrinstall>/esempio
 * Java™ -jar start.jar
 
 Questo processo avvia un server HTTP Solr utilizzando la porta predefinita 8983. È possibile passare alla console Solr per ottenere una console Solr da testare.
@@ -128,9 +128,9 @@ Questo processo avvia un server HTTP Solr utilizzando la porta predefinita 8983.
 
 >[!NOTE]
 >
->Se Solr Console non è disponibile, controlla i registri in &lt;solrinstall>/example/logs. Verificare se SOLR sta tentando di eseguire il binding a un nome host specifico che non può essere risolto (ad esempio, &quot;user-macbook-pro&quot;).
+>Se la console Solr non è disponibile, controllare i registri in &lt;solrinstall>/example/logs. Verificare se SOLR sta tentando di eseguire il binding a un nome host specifico che non può essere risolto (ad esempio, &quot;user-macbook-pro&quot;).
 >
-In caso affermativo, aggiorna `etc/hosts` con una nuova voce per questo nome host (ad esempio, 127.0.0.1 user-macbook-pro) per avviare correttamente Solr.
+In tal caso, aggiornare il file `etc/hosts` con una nuova voce per questo nome host (ad esempio, 127.0.0.1 user-macbook-pro) in modo da avviare correttamente Solr.
 
 ### SolrCloud {#solrcloud}
 
@@ -144,34 +144,34 @@ Avvia l’authoring e pubblica le istanze AEM, se necessario.
 
 Se l’AEM era in esecuzione prima dell’avvio di MongoDB, è necessario riavviare le istanze dell’AEM.
 
-Segui le istruzioni riportate nella pagina della documentazione principale: [MSRP - Archivio comune MongoDB](msrp.md)
+Segui le istruzioni riportate nella pagina della documentazione principale: [MSRP - MongoDB Common Store](msrp.md)
 
 ## Test {#test}
 
 Per testare e verificare il Common Store MongoDB, pubblica un commento sull’istanza Publish e visualizzalo sull’istanza Autore, quindi visualizza il UGC in MongoDB e Solr:
 
-1. Nell’istanza di pubblicazione, passa a [Guida ai componenti della community](http://localhost:4503/content/community-components/en/comments.html) e selezionare il componente Commenti.
+1. Nell&#39;istanza di pubblicazione passare alla pagina [Guida ai componenti della community](http://localhost:4503/content/community-components/en/comments.html) e selezionare il componente Commenti.
 1. Effettua l&#39;accesso per pubblicare un commento:
-1. Immettere il testo nella casella di immissione testo commento e fare clic su **[!UICONTROL Pubblica]**
+1. Immettere il testo nella casella di immissione testo commento e fare clic su **[!UICONTROL Post]**
 
    ![post-commento](assets/post-comment.png)
 
-1. È sufficiente visualizzare il commento sulla [istanza autore](http://localhost:4502/content/community-components/en/comments.html) (probabilmente ancora connesso come amministratore/amministratore).
+1. È sufficiente visualizzare il commento nell&#39;[istanza autore](http://localhost:4502/content/community-components/en/comments.html) (probabilmente è ancora connesso come amministratore/amministratore).
 
-   ![view-comment](assets/view-comment.png)
+   ![visualizza-commento](assets/view-comment.png)
 
-   Nota: nonostante la presenza di nodi JCR sotto il *asipath* in authoring, questi nodi sono per il framework SCF. L’UGC effettivo non è in JCR, ma in MongoDB.
+   Nota: sebbene siano presenti nodi JCR in *asipath* sull&#39;istanza di authoring, questi sono per il framework SCF. L’UGC effettivo non è in JCR, ma in MongoDB.
 
-1. Visualizza UGC in mongodb **[!UICONTROL Community]** > **[!UICONTROL Raccolte]** > **[!UICONTROL Contenuto]**
+1. Visualizza UGC in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Raccolte]** > **[!UICONTROL Contenuto]**
 
-   ![ugc-content](assets/ugc-content.png)
+   ![contenuto-ugc](assets/ugc-content.png)
 
 1. Visualizza UGC in Solr:
 
    * Passa alla dashboard Solr: [http://localhost:8983/solr/](http://localhost:8983/solr/).
    * Utente `core selector` per selezionare `collection1`.
-   * Seleziona `Query`.
-   * Seleziona `Execute Query`.
+   * Selezionare `Query`.
+   * Selezionare `Execute Query`.
 
    ![ugc-solr](assets/ugc-solr.png)
 
@@ -183,9 +183,9 @@ Per testare e verificare il Common Store MongoDB, pubblica un commento sull’is
 
 1. Verificare che MSRP sia stato configurato come provider predefinito:
 
-   * Su tutte le istanze AEM di authoring e pubblicazione, rivedi il [Console di configurazione archiviazione](srp-config.md), o controlla l&#39;archivio AEM:
+   * Su tutte le istanze AEM di authoring e pubblicazione, visitare nuovamente la [console Configurazione archiviazione](srp-config.md) oppure controllare l&#39;archivio AEM:
 
-   * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) non contiene un [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) significa che il provider di archiviazione è JSRP.
-   * Se il nodo srpc esiste e contiene un nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito.
+   * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa che il provider di archiviazione è JSRP.
+   * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà di default configuration devono definire MSRP come provider predefinito.
 
 1. Assicurati che l’AEM sia stato riavviato dopo la selezione di MSRP.

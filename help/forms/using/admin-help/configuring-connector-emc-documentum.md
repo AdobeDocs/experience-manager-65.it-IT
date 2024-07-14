@@ -60,11 +60,11 @@ Se si immette un nome utente o una password errati, si otterranno i seguenti ris
 
 È possibile configurare il provider di servizi di repository da utilizzare con Documentum. Le chiamate al servizio archivio sono delegate al provider configurato. Sono disponibili le seguenti opzioni:
 
-**Nome del provider di servizi dell&#39;archivio corrente:** Nome del provider di servizi di repository corrente
+**Nome del provider del servizio repository corrente:** Nome del provider del servizio repository corrente
 
-**Provider repository ECM Documentum:** Rende il provider del repository Documentum il provider del repository. Questa opzione è obsoleta
+**Provider repository ECM Documentum:** Imposta il provider del repository Documentum come provider del repository. Questa opzione è obsoleta
 
-**provider di repository:** Rende il provider del repository nativo il provider del repository
+**provider del repository:** Imposta il provider del repository nativo come provider del repository
 
 >[!NOTE]
 >

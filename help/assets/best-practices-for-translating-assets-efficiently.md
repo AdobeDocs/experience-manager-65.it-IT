@@ -15,9 +15,9 @@ ht-degree: 1%
 
 # Best practice per tradurre le risorse {#best-practices-for-translating-assets-efficiently}
 
-[!DNL Adobe Experience Manager Assets] supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag per risorse digitali in più lingue e gestire le risorse tradotte. Per ulteriori informazioni, consulta [Risorse multilingue](multilingual-assets.md).
+[!DNL Adobe Experience Manager Assets] supporta flussi di lavoro multilingue per la traduzione di file binari, metadati e tag per risorse digitali in più lingue e per la gestione delle risorse tradotte. Per informazioni dettagliate, vedere [Assets multilingue](multilingual-assets.md).
 
-Per una gestione efficiente delle risorse e per garantire la sincronizzazione delle diverse versioni tradotte, crea [copie per lingua](preparing-assets-for-translation.md) delle risorse prima di eseguire i flussi di lavoro di traduzione.
+Per una gestione efficiente delle risorse e per garantire che diverse versioni tradotte rimangano sincronizzate, crea [copie in lingua](preparing-assets-for-translation.md) delle risorse prima di eseguire i flussi di lavoro di traduzione.
 
 Una copia in lingua di una risorsa o di un gruppo di risorse è un elemento di pari livello (o una versione delle risorse in un linguaggio simile) con una gerarchia di contenuti simile.
 
@@ -44,9 +44,9 @@ Puoi anche apportare alcune modifiche alla configurazione di un paio di flussi d
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 -->
 
-1. Abilita [!UICONTROL Data ultima modifica del set] flusso di lavoro.
+1. Abilita il flusso di lavoro [!UICONTROL Imposta data ultima modifica].
 
-   Il [!UICONTROL Writeback di metadati DAM] il flusso di lavoro configura la data dell’ultima modifica per una risorsa. Poiché questo flusso di lavoro viene disattivato al passaggio 2, [!DNL Assets] non è più in grado di mantenere aggiornata la data dell’ultima modifica delle risorse. Pertanto, abilita *Data ultima modifica del set* per garantire che le date dell’ultima modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
+   Il flusso di lavoro [!UICONTROL Writeback di metadati DAM] configura la data dell&#39;ultima modifica per una risorsa. Poiché hai disattivato questo flusso di lavoro nel passaggio 2, [!DNL Assets] non è più in grado di mantenere aggiornata la data dell&#39;ultima modifica delle risorse. Abilita pertanto il flusso di lavoro *Imposta data ultima modifica* per garantire che le date dell&#39;ultima modifica delle risorse siano aggiornate. Assets con le date dell’ultima modifica non aggiornate può causare errori.
 
-1. [Configurare il framework di integrazione della traduzione](/help/sites-administering/tc-tic.md) per interrompere la traduzione dei file binari delle risorse. Deseleziona il **[!UICONTROL Traduci risorse]** opzione sotto [!UICONTROL Risorse] per interrompere la traduzione dei file binari di Assets.
-1. Traduci metadati/tag risorse tramite [Flussi di lavoro per risorse multilingue](multilingual-assets.md).
+1. [Configura il framework di integrazione della traduzione](/help/sites-administering/tc-tic.md) per interrompere la traduzione dei file binari delle risorse. Deseleziona l&#39;opzione **[!UICONTROL Traduci Assets]** nella scheda [!UICONTROL Assets] per interrompere la traduzione dei file binari delle risorse.
+1. Traduci metadati/tag risorse utilizzando [Flussi di lavoro risorse multilingue](multilingual-assets.md).

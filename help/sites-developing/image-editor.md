@@ -22,7 +22,7 @@ L’Editor di immagini è un elemento fondamentale dell’AEM e può essere util
 
 >[!CAUTION]
 >
->Per utilizzare le funzioni dell&#39;Editor immagini descritte in questo articolo, [feature pack 24267](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) deve essere installato.
+>Per utilizzare le funzionalità dell&#39;Editor immagini descritte in questo articolo, è necessario installare [feature pack 24267](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267).
 
 ## Unità relative per mappa immagine {#relative-units-for-image-map}
 
@@ -30,7 +30,7 @@ L&#39;Editor immagini mantiene le aree della mappa immagine come unità assolute
 
 ### imageMap, proprietà {#imagemap-property}
 
-Le coordinate della mappa immagine vengono rese permanenti in JCR come `imageMap` dall&#39;editor di immagini. Ha il seguente formato.
+Le coordinate della mappa immagine vengono salvate in modo permanente in JCR come proprietà `imageMap` dall&#39;editor di immagini. Ha il seguente formato.
 
 La proprietà archivia le aree delle mappe come segue:
 
@@ -55,13 +55,13 @@ L&#39;editor di immagini supporta la grafica vettoriale scalabile (SVG).
 
 In alcune situazioni, l’authoring delle azioni deve essere limitato per alcuni tipi MIME, a causa della mancanza di supporto nell’elaborazione lato server. Ad esempio, la modifica di immagini SVG potrebbe non essere consentita.
 
-I plug-in nell’Editor immagini possono essere attivati in modo selettivo per tipo MIME impostando un’ `supportedMimeTypes` sul nodo di configurazione del singolo plug-in.
+I plug-in nell&#39;Editor immagini possono essere attivati in modo selettivo per tipo MIME impostando una proprietà `supportedMimeTypes` sul nodo di configurazione del singolo plug-in.
 
 ### Esempio {#example}
 
 Ad esempio, supponiamo che la possibilità di ritagliare debba essere consentita solo per immagini GIF, JPEG, PNG, WEBP e TIFF.
 
-Il `supportedMimeTypes` deve quindi essere impostata come stringa dei tipi MIME consentiti sul nodo di configurazione del plug-in nel `cq:editConfig` del componente immagine.
+La proprietà `supportedMimeTypes` deve quindi essere impostata come stringa dei tipi MIME consentiti nel nodo di configurazione del plug-in nel nodo `cq:editConfig` del componente immagine.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

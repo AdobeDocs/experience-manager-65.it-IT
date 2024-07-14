@@ -32,7 +32,7 @@ I banner rappresentano in genere collegamenti promozionali grafici.
 >
 >Consulta le seguenti risorse nella Guida in linea per scoprire i seguenti argomenti nelle app AEM Mobile:
 >
->* [Considerazioni di progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Creazione di banner](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
@@ -41,12 +41,12 @@ I banner rappresentano in genere collegamenti promozionali grafici.
 
 Il flusso di lavoro generale per la creazione di un articolo è il seguente:
 
-1. Seleziona **Dispositivi mobili** dalla barra laterale.
+1. Seleziona **Mobile** dalla barra laterale.
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Fare clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della **Gestisci banner** affiancare.
+1. Fai clic sulla freccia in giù nell&#39;angolo in alto a destra della sezione **Gestisci banner**.
 1. Segui i passaggi della procedura guidata per continuare a creare il nuovo banner.
-1. Quando è pronto, fai clic su **Crea**.
-1. Il nuovo banner verrà visualizzato nel **Gestisci banner** affiancare.
+1. Al termine, fare clic su **Crea**.
+1. Il nuovo banner verrà visualizzato nel riquadro **Gestione banner**.
 
 ![chlimage_1-6](assets/chlimage_1-6.gif)
 
@@ -61,9 +61,9 @@ Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mob
 Flusso di lavoro per importare un nuovo articolo
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Fare clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della **Gestisci banner** affiancare e selezionare Importa banner.
-1. Clic **Importa banner** nella finestra di dialogo, quindi Chiudi.
-1. Gli articoli Mobile On-Demand vengono ora visualizzati nel **Gestisci banner** affiancare.
+1. Fare clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro del riquadro **Gestisci banner** e selezionare Importa banner.
+1. Fai clic su **Importa banner** nella finestra di dialogo, quindi su Chiudi.
+1. Gli articoli Mobile On-Demand vengono ora visualizzati nella sezione **Gestione banner**.
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ Flusso di lavoro per importare un nuovo articolo
 
 ## Modifica di un banner {#editing-a-banner}
 
-Utilizza l’editor integrato di trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da Risorse DAM.
+Utilizza l’editor integrato di trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da DAM Assets.
 
 >[!CAUTION]
 >
@@ -91,11 +91,11 @@ I banner hanno numerose proprietà come titoli, descrizioni, immagini. Questa az
 Il flusso di lavoro generale per visualizzare/modificare un articolo:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Scegli un banner da **Gestisci banner** affiancare.
+1. Scegli un banner dalla sezione **Gestisci banner**.
 
 1. Seleziona **Proprietà** dalla barra delle azioni.
 1. Visualizza tutti i metadati disponibili per tale articolo.
-1. Se necessario, modifica i metadati e fai clic su **Salva** al termine.
+1. Modificare i metadati, se necessario, e al termine fare clic su **Salva**.
 1. Se necessario, carica le modifiche immediatamente in Mobile On-Demand.
 
 ## Caricamento di un banner {#uploading-a-banner}
@@ -104,10 +104,10 @@ L’azione di caricamento copia il contenuto selezionato e lo aggiunge a un prog
 
 Il flusso di lavoro generale per caricare un banner:
 
-1. Da **Dispositivi mobili**, scegli la tua app Mobile On-Demand dal catalogo.
-1. In **Gestisci banner** , seleziona un banner da caricare su Mobile On-Demand.
+1. Da **Mobile**, scegli la tua app Mobile On-Demand dal catalogo.
+1. Nel riquadro **Gestisci banner**, seleziona un banner da caricare su Mobile On-Demand.
 1. Se necessario, aggiungi altri banner dalla vista a elenco.
-1. Seleziona **Carica** dalla barra delle azioni, fai clic su Carica nella finestra di dialogo.
+1. Seleziona **Carica** dalla barra delle azioni, quindi fai clic su Carica nella finestra di dialogo.
 1. I banner ora sono caricati su Mobile On-Demand.
 
 ![chlimage_1-7](assets/chlimage_1-7.gif)
@@ -119,9 +119,9 @@ Questa operazione elimina il banner selezionato da Mobile On-Demand e, facoltati
 Flusso di lavoro generale per eliminare un banner:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Selezionare il banner da eliminare nel **Gestisci banner** affiancare.
+1. Selezionare il banner da eliminare nel riquadro **Gestione banner**.
 1. Assicurati che sia selezionato nell’elenco (seleziona gli altri da eliminare in base alle esigenze).
-1. Clic **Elimina** dalla barra delle azioni.
+1. Fai clic su **Elimina** nella barra delle azioni.
 1. Seleziona questa opzione se desideri eliminarla da AEM e Mobile On-Demand.
 1. Fai clic su **Elimina**.
 1. Il banner è stato rimosso dall&#39;elenco.

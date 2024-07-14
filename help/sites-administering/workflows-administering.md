@@ -22,7 +22,7 @@ La console Flusso di lavoro fornisce diversi strumenti per l’amministrazione d
 
 >[!NOTE]
 >
->Il [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornisce ulteriori operazioni di manutenzione del flusso di lavoro.
+>La [console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornisce ulteriori operazioni di manutenzione del flusso di lavoro.
 
 Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. Utilizza la [navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation) per aprire il riquadro **Strumenti**, quindi selezionare **Flusso di lavoro**:
 
@@ -36,7 +36,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 ## Monitoraggio dello stato delle istanze del flusso di lavoro {#monitoring-the-status-of-workflow-instances}
 
 1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
-1. Seleziona **Istanze** in modo da visualizzare l’elenco delle istanze del flusso di lavoro attualmente in corso.
+1. Seleziona **Istanze** per visualizzare l&#39;elenco delle istanze del flusso di lavoro attualmente in corso.
 
    ![wf-96](assets/wf-96.png)
 
@@ -65,7 +65,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 ## Sospensione, Ripresa e Chiusura di un’istanza di flusso di lavoro {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
-1. Seleziona **Istanze** in modo da visualizzare l’elenco delle istanze del flusso di lavoro attualmente in corso.
+1. Seleziona **Istanze** per visualizzare l&#39;elenco delle istanze del flusso di lavoro attualmente in corso.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -76,7 +76,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 ## Visualizzazione dei flussi di lavoro archiviati {#viewing-archived-workflows}
 
 1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
-1. Seleziona **Archivia** in modo da poter visualizzare l’elenco delle istanze del flusso di lavoro completate correttamente.
+1. Seleziona **Archivia** per visualizzare l&#39;elenco delle istanze del flusso di lavoro completate correttamente.
 
    ![wf-98](assets/wf-98.png)
 
@@ -93,22 +93,22 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
 ## Correzione degli errori di un&#39;istanza del flusso di lavoro {#fixing-workflow-instance-failures}
 
-Quando un flusso di lavoro non riesce, AEM fornisce **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
+Quando un flusso di lavoro non riesce, AEM fornisce la console **Errori** per consentirti di indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
-Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio**, e **Stack errori**.
+Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio** e **Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.
 
-* **Ritenta passaggio** : esegue nuovamente l’istanza del componente Passaggio di script. Utilizza il comando Ritenta passaggio dopo aver risolto la causa dell’errore originale. Ad esempio, prova a ripetere il passaggio dopo aver corretto un bug nello script eseguito dal passaggio del processo.
-* **Termina** - Termina il flusso di lavoro se l’errore ha causato una situazione inconciliabile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali quali le informazioni nell’archivio che non sono più valide per l’istanza del flusso di lavoro.
+* **Ritenta passaggio** - Esegue di nuovo l&#39;istanza del componente del passaggio di script. Utilizza il comando Ritenta passaggio dopo aver risolto la causa dell’errore originale. Ad esempio, prova a ripetere il passaggio dopo aver corretto un bug nello script eseguito dal passaggio del processo.
+* **Termina** - Termina il flusso di lavoro se l&#39;errore ha causato una situazione inconciliabile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali quali le informazioni nell’archivio che non sono più valide per l’istanza del flusso di lavoro.
 * **Termina e riprova** - Simile a **Termina** tranne per il fatto che una nuova istanza di flusso di lavoro viene avviata utilizzando il payload, il titolo e la descrizione originali.
 
 Per approfondire gli errori, quindi riprendere o terminare il flusso di lavoro in seguito, utilizza i seguenti passaggi:
 
 1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
-1. Seleziona **Errori** in modo da poter visualizzare l’elenco delle istanze del flusso di lavoro che non sono state completate correttamente.
+1. Seleziona **Errori** per visualizzare l&#39;elenco delle istanze del flusso di lavoro non completate correttamente.
 1. Seleziona un elemento specifico, quindi l’azione appropriata:
 
    ![wf-47](assets/wf-47.png)
@@ -121,7 +121,7 @@ Configura **Configurazione di eliminazione del flusso di lavoro di Adobe Granite
 
 Puoi anche creare più configurazioni del servizio per eliminare le istanze del flusso di lavoro che soddisfano criteri diversi. Ad esempio, crea una configurazione che elimina le istanze di un particolare modello di flusso di lavoro quando sono in esecuzione per un periodo di tempo superiore a quello previsto. Crea un’altra configurazione che elimina tutti i flussi di lavoro completati dopo un certo numero di giorni per ridurre al minimo le dimensioni dell’archivio.
 
-Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi.
+Per configurare il servizio, è possibile utilizzare la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all&#39;archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi.
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying
   <tr>
    <td>Modelli da eliminare</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>ID dei modelli di flusso di lavoro da eliminare. L’ID è il percorso del nodo del modello, ad esempio:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Per specificare più modelli, fai clic sul pulsante + nella console Web. </p> <p>Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.</p> </td>
+   <td><p>ID dei modelli di flusso di lavoro da eliminare. L'ID è il percorso del nodo del modello, ad esempio:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Per specificare più modelli, fai clic sul pulsante + nella console Web. </p> <p>Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.</p> </td>
   </tr>
   <tr>
    <td>Età del flusso di lavoro</td>
@@ -169,7 +169,7 @@ Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying
 
 ## Impostazione della dimensione massima della casella in entrata {#setting-the-maximum-size-of-the-inbox}
 
-È possibile impostare la dimensione massima della casella in entrata configurando **Servizio flusso di lavoro Adobe Granite**, utilizzando [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente viene descritta la proprietà configurata per entrambi i metodi.
+Puoi impostare la dimensione massima della casella in entrata configurando il **Servizio flusso di lavoro Adobe Granite**, utilizzando la [Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungi una configurazione OSGi al repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente viene descritta la proprietà configurata per entrambi i metodi.
 
 >[!NOTE]
 >

@@ -23,7 +23,7 @@ L’ambiente di authoring di AEM offre diversi metodi per organizzare e modifica
 
 ## Amministrazione sito {#site-administration}
 
-Il **Siti Web** console consente di gestire e navigare nel sito web. Utilizzando i due riquadri è possibile espandere la struttura del sito web e intraprendere azioni sull’elemento richiesto:
+La console **Siti Web** consente di gestire e navigare nel sito Web. Utilizzando i due riquadri è possibile espandere la struttura del sito web e intraprendere azioni sull’elemento richiesto:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -37,17 +37,17 @@ Il **Siti Web** console consente di gestire e navigare nel sito web. Utilizzando
 
 ## Accedere all’Aiuto   {#accessing-help}
 
-Varie **Aiuto** Le risorse sono accessibili direttamente dall&#39;AEM:
+È possibile accedere direttamente a diverse risorse **Help** dall&#39;interno di AEM:
 
-Oltre all&#39;accesso [aiuto dalle barre degli strumenti della console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), è inoltre possibile accedere alla guida dalla barra laterale (utilizzando la ? ) durante la modifica di una pagina:
+Oltre ad accedere alla [guida dalle barre degli strumenti della console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), è possibile accedere alla guida dalla barra laterale (utilizzando ? ) durante la modifica di una pagina:
 
 ![Sidekick compresso](do-not-localize/sidekick-collapsed-2.png)
 
-Oppure utilizzando **Aiuto** nella finestra di dialogo per modifica di componenti specifici; verrà visualizzata la guida contestuale.
+Oppure utilizzando il pulsante **Guida** nella finestra di dialogo per modifica di componenti specifici; in questo modo verrà visualizzata la Guida sensibile al contesto.
 
 ## Sidekick {#sidekick}
 
-Il **Componenti** scheda della barra laterale consente di sfogliare i componenti disponibili per l’aggiunta alla pagina corrente. Il gruppo richiesto può essere espanso, quindi un componente può essere trascinato nella posizione desiderata sulla pagina.
+La scheda **Componenti** della barra laterale consente di sfogliare i componenti disponibili per l&#39;aggiunta alla pagina corrente. Il gruppo richiesto può essere espanso, quindi un componente può essere trascinato nella posizione desiderata sulla pagina.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -65,9 +65,9 @@ Puoi utilizzare Content Finder per individuare una serie di risorse. Se necessar
 
 * [Paragrafi](#referencing-paragraphs-from-other-pages)
 * [Prodotti](#products)
-* Oppure a [sfogliare il sito web in base alla struttura dell’archivio](#the-content-finder)
+* Oppure per [esplorare il sito Web in base alla struttura dell&#39;archivio](#the-content-finder)
 
-Con tutte le opzioni è possibile [cerca elementi specifici](#the-content-finder).
+Con tutte le opzioni puoi [cercare elementi specifici](#the-content-finder).
 
 ### Ricerca di immagini {#finding-images}
 
@@ -121,7 +121,7 @@ Questa scheda mostra tutte le risorse nell’archivio.
 
 In tutte le opzioni è possibile cercare elementi specifici. Vengono elencati tutti i tag e le risorse corrispondenti al modello di ricerca:
 
-![screen_shot_2012-02-08at100746am](assets/screen_shot_2012-02-08at100746am.png)
+![schermata_shot_2012-02-08at100746am](assets/screen_shot_2012-02-08at100746am.png)
 
 È inoltre possibile utilizzare i caratteri jolly per la ricerca. I caratteri jolly supportati sono:
 
@@ -143,14 +143,14 @@ i seguenti modelli di ricerca lo troveranno (e qualsiasi altra immagine che corr
 
 * `name:*nmv*`
 * `name:AD*`
-la corrispondenza dei caratteri è *non* distinzione tra maiuscole e minuscole.
+la corrispondenza dei caratteri è *non* con distinzione tra maiuscole e minuscole.
 
 * `name:ad?nm??is.*`
 in una query è possibile utilizzare un numero qualsiasi di caratteri jolly.
 
 >[!NOTE]
 >
->Puoi anche utilizzare [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) ricerca.
+>È inoltre possibile utilizzare la ricerca [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Visualizzazione dei riferimenti {#showing-references}
 
@@ -158,13 +158,13 @@ L’AEM consente di visualizzare le pagine collegate alla pagina su cui stai lav
 
 Per visualizzare i riferimenti diretti alle pagine:
 
-1. Nella barra laterale, seleziona la **Pagina** icona della scheda.
+1. Nella barra laterale, seleziona l&#39;icona della scheda **Pagina**.
 
-   ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
+   ![schermata_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Seleziona **Mostra riferimenti...** AEM apre la finestra Riferimenti e visualizza le pagine che si riferiscono alla pagina selezionata, inclusi i relativi percorsi.
+1. Seleziona **Mostra riferimenti...** L&#39;AEM apre la finestra Riferimenti e visualizza le pagine che si riferiscono alla pagina selezionata, inclusi i relativi percorsi.
 
-   ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+   ![schermata_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
 In alcune situazioni sono disponibili ulteriori azioni da parte del Sidekick, tra cui:
 
@@ -173,17 +173,17 @@ In alcune situazioni sono disponibili ulteriori azioni da parte del Sidekick, tr
 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 
-Altro [Le relazioni tra pagine sono visibili nella console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
+Altre [relazioni tra pagine sono visibili nella console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
 ## Registro di controllo {#audit-log}
 
-Il **Registro di controllo** accessibile da **Informazioni** della barra laterale. Elenca le azioni recenti eseguite nella pagina corrente, ad esempio:
+È possibile accedere al **Registro di controllo** dalla scheda **Informazioni** della barra laterale. Elenca le azioni recenti eseguite nella pagina corrente, ad esempio:
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Informazioni sulle pagine {#page-information}
 
-Anche la console del sito web [fornisce informazioni sullo stato corrente della pagina.](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) ad esempio pubblicazione, modifica, bloccato, Live Copy e così via.
+La console del sito Web [fornisce inoltre informazioni sullo stato corrente della pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), ad esempio pubblicazione, modifica, blocco, Live Copy e così via.
 
 ## Modalità pagina   {#page-modes}
 

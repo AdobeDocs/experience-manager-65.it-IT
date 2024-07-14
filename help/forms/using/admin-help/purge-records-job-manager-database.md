@@ -20,9 +20,9 @@ ht-degree: 0%
 
 I dati di processo generati quando si richiama un processo di lunga durata possono diventare troppo grandi, con conseguente riduzione delle prestazioni dei moduli AEM e utilizzo di spazio su disco non necessario. È buona prassi eliminare i dati del processo quando i record non sono più necessari.
 
-È possibile utilizzare la console di amministrazione per eseguire una rimozione una tantum di record obsoleti o per pianificare eliminazioni automatiche regolari. Altri metodi per eliminare i record obsoleti sono descritti in [Rimozione dati processo](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
+È possibile utilizzare la console di amministrazione per eseguire una rimozione una tantum di record obsoleti o per pianificare eliminazioni automatiche regolari. Altri metodi per eliminare i record obsoleti sono descritti in [Rimozione dei dati del processo](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
-**Accedere alla pagina Utilità di pianificazione rimozione job**
+**Accedere alla pagina Utilità di pianificazione rimozione processi**
 
 1. In Administration Console, fare clic su Health Monitor nell&#39;angolo superiore destro della pagina.
 1. Fare clic sulla scheda Pianificazione rimozione job.
@@ -33,7 +33,7 @@ Le informazioni sulle rimozioni attualmente pianificate vengono visualizzate nel
 >
 >Facendo clic su Interrompi modulo di pianificazione vengono interrotte le rimozioni pianificate in futuro, ma non viene interrotto un processo di rimozione già in corso.
 
-**Pianificare una rimozione una tantum**
+**Pianifica un&#39;eliminazione una tantum**
 
 1. Selezionare Solo una volta.
 1. Nell&#39;area Filtro record completati rimozione specificare il numero di giorni o settimane dopo le quali un record viene considerato obsoleto e pronto per la rimozione.

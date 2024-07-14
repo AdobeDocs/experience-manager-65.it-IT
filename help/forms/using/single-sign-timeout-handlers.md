@@ -24,11 +24,11 @@ L’area di lavoro di AEM Forms è abilitata per l’SSO. Se un utente ha effett
 
 Il timeout della sessione di un utente può essere configurato nella console di amministrazione.
 
-Per impostare il timeout, accedi a `https://'[server]:[port]'/adminui`, passa a **Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati** e configurare le impostazioni desiderate.
+Per impostare il timeout, accedere a `https://'[server]:[port]'/adminui`, passare a **Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati** e impostare le impostazioni desiderate.
 
 In AEM Forms il timeout nell’area di lavoro viene gestito come:
 
-* La durata della sessione di un utente è disponibile in risposta a `initialize` chiamata che inizializza la sessione utente.
+* La durata della sessione per un utente è disponibile in risposta alla chiamata `initialize` che inizializza la sessione utente.
 * Una finestra di dialogo a comparsa notifica all&#39;utente che la sessione sta per scadere, 15 secondi prima della scadenza.
 
 In questa finestra di dialogo a comparsa:

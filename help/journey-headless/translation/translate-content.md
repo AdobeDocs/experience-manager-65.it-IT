@@ -18,7 +18,7 @@ Utilizzare l’integrazione della traduzione e le regole per tradurre il contenu
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione headless dell&#39;AEM, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare le regole di traduzione AEM per identificare il contenuto da tradurre. Ora dovresti:
+Nel documento precedente del percorso di traduzione headless AEM, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare le regole di traduzione AEM per identificare il contenuto da tradurre. Ora dovresti:
 
 * Comprendere come funzionano le regole di traduzione.
 * Essere in grado di definire le tue regole di traduzione.
@@ -57,13 +57,13 @@ Per i proprietari di contenuti che sono anche responsabili della traduzione, spe
 
 1. Passa a **Navigazione** -> **Risorse** -> **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
 1. Seleziona la directory principale della lingua del progetto. In questo caso, `/content/dam/wknd/en` è selezionato.
-1. Fai clic sul selettore della barra e mostra **Riferimenti** pannello.
-1. Clic **Copie per lingua**.
+1. Fai clic sul selettore della barra e mostra il pannello **Riferimenti**.
+1. Fai clic su **Copie per lingua**.
 1. Seleziona la casella di spunta delle **Copie in lingua**.
 1. Espandi la sezione **Aggiorna copie in lingua** nella parte inferiore del pannello dei riferimenti.
 1. Nel menu a discesa **Progetto**, seleziona **Crea progetto di traduzione**.
 1. Fornisci un titolo appropriato per il progetto di traduzione.
-1. Clic **Inizio**.
+1. Fare clic su **Inizio**.
 
 ![Crea un progetto di traduzione](assets/create-translation-project.png)
 
@@ -80,15 +80,15 @@ Viene visualizzato un messaggio che informa che il progetto è stato creato.
 Per i translation project manager, spesso è necessario selezionare manualmente contenuti specifici da includere in un progetto di traduzione. Per creare un progetto di traduzione manuale di questo tipo, devi iniziare creando un progetto vuoto e quindi selezionare il contenuto da aggiungere.
 
 1. Passa a **Navigazione** > **Progetti**.
-1. Clic **Crea** > **Cartella** per creare una cartella per i progetti.
+1. Fai clic su **Crea** > **Cartella** per creare una cartella per i progetti.
    * Questo è facoltativo, ma utile per organizzare le attività di traduzione.
-1. In **Crea cartella** finestra, aggiungi un **Titolo** per la cartella, quindi fare clic su **Crea**.
+1. Nella finestra **Crea cartella**, aggiungi un **Titolo** per la cartella, quindi fai clic su **Crea**.
 
    ![Crea cartella di progetto](assets/create-project-folder.png)
 
 1. Fai clic sulla cartella per aprirla.
 1. Nella nuova cartella del progetto, fai clic su **Crea** > **Progetto**.
-1. I progetti si basano su modelli. Fai clic su **Progetto di traduzione** per selezionarlo e quindi fare clic su **Successivo**.
+1. I progetti si basano su modelli. Fai clic sul modello **Progetto di traduzione** per selezionarlo, quindi fai clic su **Avanti**.
 
    ![Seleziona modello di progetto di traduzione](assets/select-translation-project-template.png)
 
@@ -96,11 +96,11 @@ Per i translation project manager, spesso è necessario selezionare manualmente 
 
    ![Scheda informazioni base del progetto](assets/project-basic-tab.png)
 
-1. Il giorno **Avanzate** , utilizza la scheda **Lingua di destinazione** per selezionare le lingue in cui tradurre il contenuto. Fai clic su **Crea**.
+1. Nella scheda **Avanzate**, utilizza il menu a discesa **Lingua di destinazione** per selezionare le lingue in cui tradurre il contenuto. Fai clic su **Crea**.
 
    ![Scheda Avanzate del progetto](assets/project-advanced-tab.png)
 
-1. Clic **Apri** nella finestra di dialogo di conferma.
+1. Fai clic su **Apri** nella finestra di conferma.
 
    ![Finestra di conferma del progetto](assets/project-confirmation-dialog.png)
 
@@ -120,7 +120,7 @@ Per visualizzare il progetto di traduzione:
 Il progetto è diviso in più schede.
 
 * **Riepilogo**: questa scheda mostra le informazioni di intestazione di base del progetto, inclusi il proprietario, la lingua e il provider di traduzione.
-* **Lavoro di traduzione** - Questa scheda o queste schede mostrano una panoramica del lavoro di traduzione effettivo, compreso lo stato, il numero di risorse e così via. In genere esiste un lavoro per lingua con il codice della lingua ISO-2 aggiunto al nome del processo.
+* **Processo di traduzione** - Questa scheda o queste schede mostrano una panoramica del processo di traduzione effettivo, compreso lo stato, il numero di risorse e così via. In genere esiste un lavoro per lingua con il codice della lingua ISO-2 aggiunto al nome del processo.
 * **Team**: questa scheda mostra gli utenti che stanno collaborando a questo progetto di traduzione. Questo percorso non tratta questo argomento.
 * **Attività**: attività aggiuntive associate alla traduzione del contenuto, ad esempio per eseguire elementi o elementi del flusso di lavoro. Questo percorso non tratta questo argomento.
 
@@ -132,16 +132,16 @@ Quando crei automaticamente il progetto di traduzione, AEM valuta il contenuto h
 
 Per visualizzare i dettagli del contenuto headless incluso in questo progetto:
 
-1. Fai clic sul pulsante con i puntini di sospensione nella parte inferiore della sezione **Lavoro di traduzione** Card.
+1. Fai clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda **Processo di traduzione**.
 1. Nella finestra **Lavoro di traduzione** vengono elencati tutti gli elementi del lavoro.
    ![Dettagli del lavoro di traduzione](assets/translation-job-detail.png)
 1. Fai clic su una riga per visualizzarne i dettagli, tenendo presente che può rappresentare più elementi di contenuto da tradurre.
-1. Fai clic sulla casella di controllo di selezione di un elemento per visualizzare ulteriori opzioni, ad esempio l’opzione per eliminarlo dal processo o visualizzarlo nelle console Frammenti di contenuto o Risorse.
+1. Fai clic sulla casella di controllo di selezione di un elemento per visualizzare ulteriori opzioni, ad esempio l’opzione per eliminarlo dal processo o visualizzarlo nelle console Frammenti di contenuto o Assets.
    ![Opzioni del lavoro di traduzione](assets/translation-job-options.png)
 
 In genere il contenuto del lavoro di traduzione inizia nello stato **Bozza** come indicato dalla colonna **Stato** nella finestra **Lavoro di traduzione**.
 
-Per avviare il lavoro di traduzione, torna alla panoramica del progetto di traduzione e fai clic sul pulsante con la freccia nella parte superiore della **Lavoro di traduzione** e seleziona **Inizio**.
+Per avviare il processo di traduzione, torna alla panoramica del progetto di traduzione e fai clic sul pulsante con freccia nella parte superiore della scheda **Processo di traduzione** e seleziona **Inizio**.
 
 ![Avviare il lavoro di traduzione](assets/start-translation-job.png)
 
@@ -157,8 +157,8 @@ Quando crei manualmente un progetto di traduzione, AEM crea i processi necessari
 
 Per aggiungere contenuto a un lavoro di traduzione:
 
-1. Fai clic sul pulsante con i puntini di sospensione nella parte inferiore di uno dei **Lavoro di traduzione** schede.
-1. Vedi che il processo non presenta contenunto. Fai clic su **Aggiungi** nella parte superiore della finestra e quindi **Risorse/Pagine** dal menu a discesa.
+1. Fai clic sul pulsante con i puntini di sospensione nella parte inferiore di una delle schede del **processo di traduzione**.
+1. Vedi che il processo non presenta contenunto. Fai clic sul pulsante **Aggiungi** nella parte superiore della finestra e quindi **Assets/Pages** dal menu a discesa.
 
    ![Lavoro di traduzione vuoto](assets/empty-translation-job.png)
 
@@ -166,7 +166,7 @@ Per aggiungere contenuto a un lavoro di traduzione:
 
    ![Browser percorsi](assets/path-browser.png)
 
-1. Clic **Seleziona** per aggiungere il contenuto selezionato al processo.
+1. Fai clic su **Seleziona** per aggiungere il contenuto selezionato al processo.
 1. Nella finestra di dialogo **Traduci**, specifica **Crea copia in lingua**.
 
    ![Crea copia per lingua](assets/translate-copy-master.png)
@@ -175,14 +175,14 @@ Per aggiungere contenuto a un lavoro di traduzione:
 
    ![Contenuto aggiunto al lavoro di traduzione](assets/content-added.png)
 
-1. Fai clic sulla casella di controllo di selezione di un elemento per visualizzare ulteriori opzioni, ad esempio l’opzione per eliminarlo dal processo o visualizzarlo nelle console Frammenti di contenuto o Risorse.
+1. Fai clic sulla casella di controllo di selezione di un elemento per visualizzare ulteriori opzioni, ad esempio l’opzione per eliminarlo dal processo o visualizzarlo nelle console Frammenti di contenuto o Assets.
    ![Opzioni del lavoro di traduzione](assets/translation-job-options-manual.png)
 
 1. Ripeti questi passaggi per includere nel lavoro tutto il contenuto necessario.
 
 >[!TIP]
 >
->Il browser del percorso è un potente strumento che consente di cercare, filtrare e navigare nel contenuto. Fai clic su **Solo contenuto/Filtri** per attivare/disattivare il pannello laterale e visualizzare filtri avanzati, ad esempio **Data di modifica** o **Stato traduzione**.
+>Il browser del percorso è un potente strumento che consente di cercare, filtrare e navigare nel contenuto. Fai clic sul pulsante **Solo contenuto/Filtri** per attivare/disattivare il pannello laterale e visualizzare filtri avanzati, ad esempio **Data di modifica** o **Stato traduzione**.
 >
 >Per ulteriori informazioni sul browser percorsi, consulta la [sezione risorse aggiuntive.](#additional-resources)
 
@@ -190,7 +190,7 @@ Puoi utilizzare i passaggi precedenti per aggiungere il contenuto necessario a t
 
 In genere il contenuto del processo di traduzione inizia nello stato **Bozza** come indicato dalla colonna **Stato** nella finestra **Lavoro di traduzione**.
 
-Per avviare il lavoro di traduzione, torna alla panoramica del progetto di traduzione e fai clic sul pulsante con la freccia nella parte superiore della **Lavoro di traduzione** e seleziona **Inizio**.
+Per avviare il processo di traduzione, torna alla panoramica del progetto di traduzione e fai clic sul pulsante con freccia nella parte superiore della scheda **Processo di traduzione** e seleziona **Inizio**.
 
 ![Avviare il lavoro di traduzione](assets/start-translation-job-manual.png)
 
@@ -202,7 +202,7 @@ Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. 
 
 ## Revisione dei contenuti tradotti {#reviewing}
 
-[Come visto in precedenza,](#using-translation-project) i contenuti tradotti automaticamente tornano nell’AEM con lo stato **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
+[Come visto in precedenza,](#using-translation-project) contenuto tradotto automaticamente torna in AEM con lo stato di **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
 
 Basta andare al lavoro di traduzione completato e selezionare una riga toccando o facendo clic sulla casella di spunta. L’icona **Mostra in Frammenti di contenuto** si trova nella barra degli strumenti.
 
@@ -220,7 +220,7 @@ Lo scopo del progetto è quello di raccogliere tutte le risorse relative a una t
 /content/dam/wknd/es
 ```
 
-Se passi a questa cartella tramite **Navigazione** > **Risorse** > **File**, vengono visualizzati i contenuti tradotti.
+Se passi a questa cartella tramite **Navigazione** > **Assets** > **File**, vengono visualizzati i contenuti tradotti.
 
 ![Struttura delle cartelle di contenuto tradotto](assets/translated-file-content.png)
 

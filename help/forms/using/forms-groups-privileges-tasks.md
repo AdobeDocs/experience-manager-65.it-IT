@@ -24,9 +24,9 @@ ht-degree: 6%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
 | AEM 6.5 | Questo articolo |
 
-È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in Adobe Experience Manager (AEM). Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
+Puoi [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in Adobe Experience Manager (AEM). Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 
-Dopo aver installato [Pacchetto del componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, ad esempio utenti di forms e utenti avanzati di forms, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni del gruppo:
+Dopo aver installato il pacchetto del componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, ad esempio forms-users e forms-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni del gruppo:
 
 <table>
  <tbody>
@@ -35,7 +35,7 @@ Dopo aver installato [Pacchetto del componente aggiuntivo AEM Forms](../../forms
    <td>Attività</td> 
   </tr>
   <tr>
-   <td>forms-users <sup>[1]</sup></td> 
+   <td>moduli-utenti <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Creare, visualizzare in anteprima, pubblicare e inviare moduli adattivi</li> 
@@ -65,7 +65,7 @@ Dopo aver installato [Pacchetto del componente aggiuntivo AEM Forms](../../forms
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-authors <sup>[2]</sup></td> 
+   <td>autori modello <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Creare e visualizzare in anteprima moduli adattivi o modelli di comunicazione interattivi</li> 
@@ -97,7 +97,7 @@ Dopo aver installato [Pacchetto del componente aggiuntivo AEM Forms](../../forms
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utilizzare le applicazioni casella in entrata AEM<br /> <strong>Nota: </strong>Per accedere all’interfaccia utente di Interactive Communications Agent nella casella in entrata AEM, è necessario disporre delle assegnazioni di gruppi cm-agent-users e workflow-users.</li> 
+     <li>Utilizza le applicazioni della casella in entrata AEM<br /> <strong>Nota: </strong>Per accedere all'interfaccia utente di Interactive Communications Agent nella casella in entrata AEM è necessario disporre di assegnazioni di gruppi di utenti di cm-agent e utenti del flusso di lavoro.</li> 
      <li>Gestire le istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>

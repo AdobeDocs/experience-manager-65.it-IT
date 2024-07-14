@@ -38,7 +38,7 @@ Il supporto SPA in AEM introduce un livello JS sottile che interagisce con il co
 Per ulteriori dettagli su SPA in AEM, consulta i seguenti documenti:
 
 * [Blueprint SPA](/help/sites-developing/spa-blueprint.md) per i requisiti tecnici di una SPA
-* [Guida introduttiva dell’SPA nell’AEM](/help/sites-developing/spa-getting-started-react.md) per una rapida presentazione di un semplice SPA
+* [Guida introduttiva all&#39;SPA nell&#39;AEM](/help/sites-developing/spa-getting-started-react.md) per una presentazione rapida di un semplice SPA
 
 ## Design {#design}
 
@@ -46,7 +46,7 @@ Il componente pagina per una SPA non fornisce gli elementi HTML dei suoi compone
 
 ### Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina sono delegate a una libreria `PageModel`. L’SPA deve utilizzare la libreria Modello pagina per essere inizializzata e creata dall’Editor SPA. La libreria Modello di pagina fornita indirettamente al componente Pagina AEM tramite l’npm `aem-react-editable-components`. Il Modello di pagina è un interprete tra AEM e SPA e quindi deve essere sempre presente. Quando viene creata la pagina, viene aggiunta una libreria `cq.authoring.pagemodel.messaging` per abilitare la comunicazione con l’editor pagina.
+La risoluzione e la gestione del modello di pagina sono delegate a una libreria `PageModel`. L’SPA deve utilizzare la libreria Modello pagina per essere inizializzata e creata dall’Editor SPA. La libreria Modello di pagina fornita indirettamente al componente Pagina AEM tramite l’npm `aem-react-editable-components`. Il Modello di pagina è un interprete tra AEM e SPA e quindi deve essere sempre presente. Quando si crea la pagina, è necessario aggiungere una libreria aggiuntiva `cq.authoring.pagemodel.messaging` per abilitare la comunicazione con l&#39;editor pagina.
 
 Se il componente pagina SPA eredita dal componente core della pagina, sono disponibili due opzioni per rendere la categoria libreria client `cq.authoring.pagemodel.messaging` disponibile:
 
@@ -55,7 +55,7 @@ Se il componente pagina SPA eredita dal componente core della pagina, sono dispo
 
 Per ogni risorsa nel modello esportato, la SPA mappa un componente effettivo che esegue il
 rendering. Il modello, rappresentato come JSON, viene quindi rappresentato utilizzando le mappature dei componenti all’interno di un contenitore.
-![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
+![schermata_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
 >
@@ -65,7 +65,7 @@ rendering. Il modello, rappresentato come JSON, viene quindi rappresentato utili
 
 Quando viene aggiunta la categoria `cq.authoring.pagemodel.messaging` alla pagina, invia un messaggio all’editor pagina per stabilire il tipo di dati di comunicazione JSON. Quando il tipo di dati di comunicazione è impostato su JSON, le richieste di GET comunicheranno con i punti finali del modello Sling di un componente. Dopo che si verifica un aggiornamento nell’editor di pagine, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello di pagina. La libreria Modello di pagina informa quindi la SPA degli aggiornamenti.
 
-![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
+![schermata_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
 ## Flusso di lavoro {#workflow}
 
@@ -76,13 +76,13 @@ Quando viene aggiunta la categoria `cq.authoring.pagemodel.messaging` alla pagin
 * Il gestore dei modelli di pagina notifica all’editor che è pronto per essere modificato e trasmette il modello di pagina come struttura JSON.
 * L’editor non modifica né accede alla struttura DOM della pagina in fase di creazione, ma fornisce l’ultimo modello di pagina.
 
-![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
+![schermata_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 
 ### Flusso di lavoro dell’editor di SPA di base {#basic-spa-editor-workflow}
 
 Tenendo presenti gli elementi chiave dell’editor di SPA, il flusso di lavoro di alto livello per la modifica di una SPA in AEM viene visualizzato dall’autore come segue.
 
-![untitled1](assets/untitled1.gif)
+![senza titolo1](assets/untitled1.gif)
 
 1. Viene caricato l’editor di SPA.
 1. SPA viene caricato in un frame separato.
@@ -158,7 +158,7 @@ Questa è una panoramica più dettagliata incentrata sull’esperienza di author
 
 ## Requisiti e limitazioni {#requirements-limitations}
 
-Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Consulta [Guida introduttiva dell’SPA nell’AEM](/help/sites-developing/spa-getting-started-react.md) per il minimo che è necessario sapere per far funzionare il tuo.
+Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Consulta la [Guida introduttiva all&#39;SPA nell&#39;AEM](/help/sites-developing/spa-getting-started-react.md) per sapere quanto meno se è necessario per eseguire le tue attività.
 
 ### Framework supportati {#supported-frameworks}
 
@@ -171,20 +171,20 @@ Le versioni precedenti di questi framework possono funzionare con l’SDK dell�
 
 ### Framework aggiuntivi {#additional-frameworks}
 
-Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Consulta la [Blueprint SPA](/help/sites-developing/spa-blueprint.md) per i requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l&#39;AEM SPA Editor.
+Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Per informazioni sui requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi da utilizzare con l&#39;Editor SPA dell&#39;AEM, vedere [Blueprint SPA](/help/sites-developing/spa-blueprint.md).
 
 ### Utilizzo di più selettori {#multiple-selectors}
 
-È possibile definire e utilizzare selettori personalizzati aggiuntivi come parte di una SPA sviluppata per l’SDK di SPA di AEM. Tuttavia, questo supporto richiede che `model` selettore essere il primo selettore e l’estensione essere `.json` as [richiesto dal modulo di esportazione JSON.](json-exporter-components.md#multiple-selectors)
+È possibile definire e utilizzare selettori personalizzati aggiuntivi come parte di una SPA sviluppata per l’SDK di SPA di AEM. Tuttavia, questo supporto richiede che il selettore `model` sia il primo selettore e che l&#39;estensione sia `.json` come [richiesto da JSON Exporter.](json-exporter-components.md#multiple-selectors)
 
 ### Requisiti dell’editor di testo {#text-editor-requirements}
 
 Se desideri utilizzare l’editor locale di un componente di testo creato in SPA è necessaria una configurazione aggiuntiva.
 
-1. Imposta un attributo (può essere qualsiasi) sull’elemento wrapper del contenitore contenente il testo HTML. Se è presente il contenuto di esempio di WKND Journal, si tratta di un `<div>` e il selettore che è stato utilizzato è `data-rte-editelement`.
+1. Imposta un attributo (può essere qualsiasi) sull’elemento wrapper del contenitore contenente il testo HTML. Se è presente il contenuto di esempio di WKND Journal, si tratta di un elemento `<div>` e il selettore utilizzato è `data-rte-editelement`.
 1. Imposta la configurazione `editElementQuery` sul componente di testo AEM corrispondente `cq:InplaceEditingConfig` che punta a tale selettore, ad esempio, `data-rte-editelement`. Questo consente all’editor di sapere quale elemento HTML si applica al testo di HTML.
 
-Per un esempio di questa procedura, vedere [Contenuto di esempio del diario WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Per un esempio di questa procedura, vedere il [contenuto di esempio del journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 Per ulteriori informazioni sulla proprietà `editElementQuery` e la configurazione dell’editor Rich Text, vedi [Configura l’editor Rich Text.](/help/sites-administering/rich-text-editor.md)
 

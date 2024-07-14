@@ -25,10 +25,10 @@ La configurazione di MSSL per la replica prevede l’esecuzione dei seguenti pas
 1. Crea o ottieni chiavi e certificati privati per le istanze di authoring e pubblicazione.
 1. Installa le chiavi e i certificati nelle istanze di authoring e pubblicazione:
 
-   * Autore: chiave privata dell’autore e certificato di pubblicazione.
-   * Publish (Pubblicazione): chiave privata di pubblicazione e certificato dell’autore. Il certificato è associato all’account utente autenticato con l’agente di replica.
+   * Autore: chiave privata dell’autore e certificato di Publish.
+   * Pubblicazione: chiave privata di Publish e certificato dell’autore. Il certificato è associato all’account utente autenticato con l’agente di replica.
 
-1. Configura il servizio HTTP basato su Jetty nell’istanza Publish.
+1. Configura il servizio HTTP basato su Jetty nell’istanza di Publish.
 1. Configura le proprietà di trasporto e SSL dell’agente di replica.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
@@ -45,9 +45,9 @@ Determinare quale account utente esegue la replica. Durante l’installazione de
 
 ### Formato JKS {#jks-format}
 
-Genera una chiave privata e un certificato in formato JKS. La chiave privata viene memorizzata in un file KeyStore e il certificato viene memorizzato in un file TrustStore. Utilizzare [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) per creare entrambi.
+Genera una chiave privata e un certificato in formato JKS. La chiave privata viene memorizzata in un file KeyStore e il certificato viene memorizzato in un file TrustStore. Utilizza [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) per creare entrambi.
 
-Segui i passaggi seguenti utilizzando Java `keytool` per creare la chiave privata e le credenziali:
+Eseguire i passaggi seguenti utilizzando Java `keytool` per creare la chiave privata e le credenziali:
 
 1. Genera una coppia di chiavi pubblica-privata in un KeyStore.
 1. Creare o ottenere il certificato:
@@ -84,7 +84,7 @@ Utilizza la procedura seguente per creare una chiave privata e un certificato au
 
 ### Formato pkcs#12 {#pkcs-format}
 
-Genera una chiave privata e un certificato in formato pkcs#12. Utilizzare [openSSL](https://www.openssl.org/) per generarli. Per generare una chiave privata e una richiesta di certificato, utilizza la procedura descritta di seguito. Per ottenere il certificato, firma la richiesta con la tua chiave privata (certificato autofirmato) o invia la richiesta a una CA. Quindi, genera l’archivio pkcs#12 che contiene la chiave privata e il certificato.
+Genera una chiave privata e un certificato in formato pkcs#12. Utilizza [openSSL](https://www.openssl.org/) per generarli. Per generare una chiave privata e una richiesta di certificato, utilizza la procedura descritta di seguito. Per ottenere il certificato, firma la richiesta con la tua chiave privata (certificato autofirmato) o invia la richiesta a una CA. Quindi, genera l’archivio pkcs#12 che contiene la chiave privata e il certificato.
 
 1. Aprire una finestra o un terminale della riga di comando. Per creare la chiave privata, immetti il comando seguente, utilizzando i valori delle opzioni della tabella seguente:
 
@@ -162,7 +162,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Installare il certificato di pubblicazione {#install-the-publish-certificate}
+### Installare il certificato Publish {#install-the-publish-certificate}
 
 1. Apri la pagina Gestione utente per l’istanza di authoring. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Per aprire le proprietà dell&#39;account utente, fare clic sul nome utente.
@@ -177,7 +177,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## Installa chiave privata e TrustStore durante la pubblicazione {#install-private-key-and-truststore-on-publish}
+## Installare Private Key e TrustStore in Publish {#install-private-key-and-truststore-on-publish}
 
 Installa i seguenti elementi nell’istanza di pubblicazione:
 
@@ -186,7 +186,7 @@ Installa i seguenti elementi nell’istanza di pubblicazione:
 
 Per eseguire la procedura seguente, devi aver effettuato l’accesso come amministratore dell’istanza Publish.
 
-### Installare la chiave privata di pubblicazione {#install-the-publish-private-key}
+### Installare la chiave privata di Publish {#install-the-publish-private-key}
 
 1. Apri la pagina Gestione utente per l’istanza Publish. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Per aprire le proprietà dell&#39;account utente, fare clic sul nome utente.
@@ -206,7 +206,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 1. Accertati che l’opzione Mappa certificato a utente sia selezionata. Fai clic su Seleziona file di certificato, seleziona author.cer, quindi fai clic su Apri.
 1. Fare clic su Invia, quindi chiudere la finestra di dialogo Gestione TrustStore.
 
-## Configurare il servizio HTTP al momento della pubblicazione {#configure-the-http-service-on-publish}
+## Configurare il servizio HTTP su Publish {#configure-the-http-service-on-publish}
 
 Configura le proprietà del servizio HTTP basato su Jetty Apache Felix sull’istanza Publish in modo che utilizzi HTTPS durante l’accesso a Granite Keystore. Il PID del servizio è `org.apache.felix.http`.
 
@@ -221,7 +221,7 @@ Nella tabella seguente sono elencate le proprietà OSGi che è necessario config
 
 ## Configurare l’agente di replica durante l’authoring {#configure-the-replication-agent-on-author}
 
-Configura l’agente di replica nell’istanza di authoring per utilizzare il protocollo HTTPS durante la connessione all’istanza di pubblicazione. Per informazioni complete sulla configurazione degli agenti di replica, consulta [Configurazione degli agenti di replica](/help/sites-deploying/replication.md#configuring-your-replication-agents).
+Configura l’agente di replica nell’istanza di authoring per utilizzare il protocollo HTTPS durante la connessione all’istanza di pubblicazione. Per informazioni complete sulla configurazione degli agenti di replica, vedere [Configurazione degli agenti di replica](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Per abilitare MSSL, configura le proprietà nella scheda Trasporto in base alla tabella seguente:
 

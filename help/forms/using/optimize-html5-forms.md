@@ -34,7 +34,7 @@ Ottieni il software del server web Apache applicabile al tuo sistema operativo:
 
 Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
 
-1. Rimuovi commento dalle seguenti configurazioni di modulo in *APACHE_HOME/conf/httpd.conf* file.
+1. Rimuovere il commento dalle seguenti configurazioni del modulo nel file *APACHE_HOME/conf/httpd.conf*.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -48,7 +48,7 @@ Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
 
 1. Configura il proxy sulla porta 8080 di JBoss.
 
-   Aggiungi la seguente configurazione a *APACHE_HOME/conf/httpd.conf* file di configurazione.
+   Aggiungi la seguente configurazione al file di configurazione *APACHE_HOME/conf/httpd.conf*.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -59,13 +59,13 @@ Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
    >
    >Quando si utilizza un proxy, sono necessarie le seguenti modifiche di configurazione:
    >
-   >* Accesso: *https://&lt;server>:&lt;port>/system/console/configMgr*
+   >* Accesso: *https://&lt;server>:&lt;porta>/system/console/configMgr*
    * Modifica la configurazione per il filtro Referrer Apache Sling
    * In Consenti host, aggiungi la voce per il server proxy
 
 1. Abilita Compressione.
 
-   Aggiungi la seguente configurazione a *APACHE_HOME/conf/httpd.conf* file di configurazione.
+   Aggiungi la seguente configurazione al file di configurazione *APACHE_HOME/conf/httpd.conf*.
 
    ```xml
    <Location /content/xfaforms>
@@ -83,4 +83,4 @@ Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
    </Location>
    ```
 
-1. Per accedere al server AEM, utilizzare https://[Apache_server]: 80.
+1. Per accedere al server AEM, utilizza https://[Apache_server]:80.

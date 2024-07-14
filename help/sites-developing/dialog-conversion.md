@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Lo strumento di conversione delle finestre di dialogo viene fornito per estendere i componenti esistenti che hanno una finestra di dialogo definita solo per l’interfaccia classica (basata su ExtJS) o basata sull’interfaccia Granite e Coral 2. Lo strumento utilizza la finestra di dialogo originale per creare una finestra di dialogo duplicata progettata per l’interfaccia utente standard, basata sull’interfaccia utente Granite e Coral 3.
 
-Lo strumento di conversione delle finestre di dialogo fa parte del [Suite di strumenti di modernizzazione Adobe](modernization-tools.md).
+Lo strumento di conversione delle finestre di dialogo fa parte della [suite di strumenti di modernizzazione di Adobe](modernization-tools.md).

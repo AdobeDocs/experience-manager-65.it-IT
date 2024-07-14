@@ -1,6 +1,6 @@
 ---
 title: Interazione dorsale
-description: Informazioni concettuali sull’utilizzo dei modelli JavaScript per backbone nell’area di lavoro di AEM Forms.
+description: Informazioni concettuali sull’utilizzo dei modelli Backbone JavaScript nell’area di lavoro di AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # Interazione dorsale{#backbone-interaction}
 
-Backbone è una libreria che aiuta a creare e seguire l’architettura MVC nelle applicazioni web. L’idea di base di Backbone consiste nell’organizzare l’interfaccia in viste logiche, supportate da modelli, ciascuno dei quali può essere aggiornato in modo indipendente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni su Backbone, consulta [https://backbonejs.org](https://backbonejs.org/).
+Backbone è una libreria che aiuta a creare e seguire l’architettura MVC nelle applicazioni web. L’idea di base di Backbone consiste nell’organizzare l’interfaccia in viste logiche, supportate da modelli, ciascuno dei quali può essere aggiornato in modo indipendente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni su Backbone, vedere [https://backbonejs.org](https://backbonejs.org/).
 
 Alcuni concetti chiave sono i seguenti:
 
-**Modello backbone** Contiene dati e la maggior parte della logica correlata a tali dati.
+**Modello backbone** Contiene dati e la maggior parte della logica relativa a tali dati.
 
-**Vista backbone** Utilizzato per rappresentare lo stato del modello corrispondente. Una vista backbone si comporta come un controller, ascoltando eventi dell’interfaccia utente come i clic dell’utente o gli eventi del modello (come i dati modificati) e modifica l’interfaccia utente in base alle esigenze.
+**Visualizzazione backbone** Utilizzata per rappresentare lo stato del modello corrispondente. Una vista backbone si comporta come un controller, ascoltando eventi dell’interfaccia utente come i clic dell’utente o gli eventi del modello (come i dati modificati) e modifica l’interfaccia utente in base alle esigenze.
 
-**Modello HTML** Un modello di wrapper con segnaposto popolati dal modello.
+**Modello HTML** Modello di wrapper con segnaposto popolati dal modello.
 
-**Area di lavoro di AEM Forms** Contiene diversi componenti singoli. Ciascun componente:
+**Area di lavoro AEM Forms** contiene diversi componenti singoli. Ciascun componente:
 
 * Rappresenta un singolo elemento dell&#39;interfaccia utente logico.
 * Può essere una raccolta di componenti simili.
@@ -46,7 +46,7 @@ Nella vista Backbone è disponibile una mappa degli eventi che mappa i vari even
 
 Quando una vista viene inizializzata, chiama il modello corrispondente per recuperare i dati dal server. Quando tutti i dati richiesti da una visualizzazione sono disponibili, la visualizzazione esegue il rendering dei dati nel formato specificato dal modello HTML. Più viste possono condividere lo stesso modello per la comunicazione.
 
-![L’AEM forma la vista della spina dorsale](do-not-localize/aem_forms_workflow.png)
+![Visualizzazione backbone moduli AEM](do-not-localize/aem_forms_workflow.png)
 
 Ecco un esempio:
 

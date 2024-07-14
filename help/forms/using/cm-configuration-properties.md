@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Proprietà di configurazione di Gestione corrispondenza {#correspondence-management-configuration-properties}
 
-Per configurare queste proprietà, apri il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e seleziona **Configurazioni gestione corrispondenza**.
+Per configurare queste proprietà, aprire il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selezionare **Configurazioni gestione corrispondenza**.
 
 Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
 
@@ -162,8 +162,8 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
    <td>—<p> </p> </td>
   </tr>
   <tr>
-   <td><p>Gestisci istanze lettere al momento della pubblicazione</p> </td>
-   <td><p>Attiva/disattiva la funzionalità Gestisci lettera (applicabile solo al server di pubblicazione)</p> </td>
+   <td><p>Gestisci istanze lettere su Publish</p> </td>
+   <td><p>Attiva/disattiva la funzionalità Gestisci lettera (applicabile solo per Publish Server)</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -198,7 +198,7 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Abilita controllo pubblicazione</p> </td>
+   <td><p>Abilita controllo Publish</p> </td>
    <td><p>Attivare/disattivare la funzionalità di controllo per la pubblicazione delle risorse</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
@@ -247,13 +247,13 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
   </tr>
   <tr>
    <td><p>Letter Cache Size</p> </td>
-   <td><p>Specifica il numero massimo di lettere da mantenere nella cache.</p> <p>La modifica di questo valore determinerà la pulizia di <code>in-memory</code> cache.</p> </td>
+   <td><p>Specifica il numero massimo di lettere da mantenere nella cache.</p> <p>La modifica di questo valore determinerà la pulizia della cache di <code>in-memory</code>.</p> </td>
    <td><p>100</p> </td>
    <td><p>Qualsiasi valore numerico</p> </td>
   </tr>
   <tr>
    <td><p>Abilita cache lettere</p> </td>
-   <td><p>Attiva/disattiva la cache delle lettere.</p> <p>La modifica di questo valore determinerà la pulizia di <code>in-memory </code> cache.</p> </td>
+   <td><p>Attiva/disattiva la cache delle lettere.</p> <p>La modifica di questo valore determinerà la pulizia della cache di <code>in-memory </code>.</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>

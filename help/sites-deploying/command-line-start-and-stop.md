@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Avvio di Adobe Experience Manager dalla riga di comando {#starting-adobe-experience-manager-from-the-command-line}
 
-Il `start` script disponibile in *il &lt;cq-installation>/bin* directory. Vengono fornite entrambe le versioni UNIX® e Windows. Lo script avvia l’istanza installata in *&lt;cq-installation>* directory.
+Lo script `start` è disponibile nella directory *&lt;cq-installation>/bin*. Vengono fornite entrambe le versioni UNIX® e Windows. Lo script avvia l&#39;istanza installata nella directory *&lt;cq-installation>*.
 
 Queste due versioni supportano un elenco di variabili di ambiente che possono essere utilizzate per avviare e regolare l’istanza Adobe Experience Manager (AEM).
 
@@ -40,7 +40,7 @@ Queste due versioni supportano un elenco di variabili di ambiente che possono es
   </tr>
   <tr>
    <td>CQ_INTERFACE</td>
-   <td>Interfaccia a cui il server deve essere in ascolto<br /> </td>
+   <td>Interfaccia a cui questo server deve essere in ascolto<br /> </td>
   </tr>
   <tr>
    <td>CQ_RUNMODE</td>
@@ -67,7 +67,7 @@ Queste due versioni supportano un elenco di variabili di ambiente che possono es
 
 >[!CAUTION]
 >
->Alcune modalità di esecuzione, tra cui authoring e pubblicazione, devono essere impostate prima di iniziare l’AEM e non possono essere modificate successivamente. Prima di configurare un’istanza AEM utilizzata in produzione, consulta [documentazione sulle modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) per i dettagli.
+>Alcune modalità di esecuzione, tra cui authoring e pubblicazione, devono essere impostate prima di iniziare l’AEM e non possono essere modificate successivamente. Prima di configurare un&#39;istanza AEM utilizzata in produzione, vedere la [documentazione sulle modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) per ulteriori dettagli.
 
 ### Esempio di script start.bat per piattaforma Windows {#windows-platform-start-bat-script-example}
 
@@ -83,7 +83,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->Lo script di avvio avvia Quickstart per AEM installato in *il &lt;cq-installation>/app* cartella.
+>Lo script di avvio avvia Quickstart per AEM installato nella cartella *&lt;cq-installation>/app*.
 
 ## Interruzione di Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -91,16 +91,16 @@ Per interrompere l&#39;AEM, effettuare una delle seguenti operazioni:
 
 * A seconda della piattaforma utilizzata:
 
-   * Se l&#39;AEM è stato avviato da uno script o dalla riga di comando, premere **CTRL+C** per arrestare il server.
+   * Se l&#39;AEM è stato avviato da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
    * Se è stato utilizzato lo script di avvio in UNIX®, è necessario utilizzare lo script di arresto per arrestare l&#39;AEM.
 
-* Se hai avviato AEM facendo doppio clic sul file jar, fai clic sul pulsante **On** nella finestra di avvio (il pulsante diventa quindi **Disattivato**) per arrestare il server.
+* Se hai avviato AEM facendo doppio clic sul file jar, fai clic sul pulsante **On** nella finestra di avvio (il pulsante diventa **Off**) per arrestare il server.
 
   ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Interruzione di Adobe Experience Manager dalla riga di comando {#stopping-adobe-experience-manager-from-the-command-line}
 
-Il `stop` script disponibile in *il &lt;cq-installation>/bin* directory. Vengono fornite entrambe le versioni UNIX® e Windows. Lo script arresta l&#39;istanza in esecuzione installata in *&lt;cq-installation>* directory.
+Lo script `stop` è disponibile nella directory *&lt;cq-installation>/bin*. Vengono fornite entrambe le versioni UNIX® e Windows. Lo script arresta l&#39;istanza in esecuzione installata nella directory *&lt;cq-installation>*.
 
 ### Esempio di script di arresto della piattaforma UNIX® {#unix-platform-stop-script-example}
 
@@ -116,10 +116,10 @@ Il `stop` script disponibile in *il &lt;cq-installation>/bin* directory. Vengono
 
 Se desideri solo preconfigurare l’archivio (senza riposizionarlo), devi solo:
 
-* Extract `repository.xml` nella posizione desiderata
+* Estrai `repository.xml` nel percorso richiesto
 
 * aggiorna `repository.xml` come richiesto
 
-* creare `bootstrap.properties` e definire `repository.config`
+* crea `bootstrap.properties` e definisci `repository.config`
 
 Di nuovo, prima di avviare l&#39;installazione effettiva.

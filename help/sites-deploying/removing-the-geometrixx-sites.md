@@ -28,13 +28,13 @@ I singoli pacchetti relativi a geometrixx sono:
 * `cq-geometrixx-commons-pkg-<version>.zip`
 * `cq-geometrixx-media-pkg-<version>.zip`
 
-Per rimuovere un singolo pacchetto, fare clic su **Disinstalla** su quel pacchetto.
+Per rimuovere un singolo pacchetto, è sufficiente fare clic su **Disinstalla** su tale pacchetto.
 
 C&#39;è anche un super-pacchetto:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Questo pacchetto include tutti i singoli pacchetti di cui sopra. Per rimuovere contemporaneamente tutti i contenuti correlati a geometrixx, fate clic su **Disinstalla** su questo pacchetto. Il super-pacchetto passa allo stato disinstallato e tutti i singoli pacchetti scompaiono dalla vista Gestione pacchetti.
+Questo pacchetto include tutti i singoli pacchetti di cui sopra. Per rimuovere contemporaneamente tutti i contenuti correlati a geometrixx, fare clic su **Disinstalla** su questo pacchetto. Il super-pacchetto passa allo stato disinstallato e tutti i singoli pacchetti scompaiono dalla vista Gestione pacchetti.
 
 Ora disponi di un’istanza AEM &quot;vuota&quot; senza siti dimostrativi.
 

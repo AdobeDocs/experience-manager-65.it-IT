@@ -26,13 +26,13 @@ Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono
 
 ## Panoramica raccolte {#collections-overview}
 
-Le raccolte rappresentano un *bucket* riempito con contenuti come articoli o banner adatti al tema della copertina.
+Le raccolte rappresentano un *bucket* ben definito e pieno di contenuti quali articoli o banner adatti al tema della copertina.
 
 >[!NOTE]
 >
 >Consulta le seguenti risorse nella Guida in linea per scoprire i seguenti argomenti nelle app AEM Mobile:
 >
->* [Considerazioni di progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Gestione delle raccolte](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
@@ -41,12 +41,12 @@ Le raccolte rappresentano un *bucket* riempito con contenuti come articoli o ban
 
 Il flusso di lavoro generale per creare una raccolta è il seguente:
 
-1. Seleziona **Dispositivi mobili** dalla barra laterale.
+1. Seleziona **Mobile** dalla barra laterale.
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Fare clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della **Gestisci raccolte** affiancare.
+1. Fai clic sulla freccia in giù nell&#39;angolo in alto a destra del riquadro **Gestisci raccolte**.
 1. Segui i passaggi della procedura guidata per continuare a creare il nuovo articolo.
-1. Quando è pronto, fai clic su **Crea**.
-1. Il nuovo articolo viene visualizzato in **Gestisci raccolte** affiancare.
+1. Al termine, fare clic su **Crea**.
+1. Il nuovo articolo verrà visualizzato nel riquadro **Gestisci raccolte**.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
@@ -61,9 +61,9 @@ Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mob
 Flusso di lavoro per importare una nuova raccolta
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Fare clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della **Gestisci raccolte** affianca e seleziona Importa raccolte.
-1. Clic **Importa raccolte** nella finestra di dialogo, quindi Chiudi.
-1. Le raccolte Mobile On-Demand ora vengono visualizzate nel **Gestisci raccolte** affiancare.
+1. Fare clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro del riquadro **Gestisci raccolte** e selezionare Importa raccolte.
+1. Fai clic su **Importa raccolte** nella finestra di dialogo, quindi su Chiudi.
+1. Le raccolte Mobile On-Demand vengono ora visualizzate nel riquadro **Gestisci raccolte**.
 
 >[!CAUTION]
 >
@@ -71,12 +71,12 @@ Flusso di lavoro per importare una nuova raccolta
 
 ## Modifica di una raccolta {#editing-a-collection}
 
-Utilizza l’editor integrato di trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da Risorse DAM.
+Utilizza l’editor integrato di trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da DAM Assets.
 
 Flusso di lavoro per modificare una raccolta:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Seleziona un articolo originato da AEM dalla sezione **Gestisci raccolte** affiancare.
+1. Seleziona un articolo originato da AEM dal riquadro **Gestisci raccolte**.
 1. Fai clic sulla raccolta evidenziata dalla vista a elenco per aprirla nell’editor di contenuti.
 1. Utilizza l’editor di contenuti per trascinare il contenuto della raccolta (manoscritti, immagini, testo e così via).
 
@@ -87,11 +87,11 @@ Le raccolte hanno numerose proprietà come titoli, descrizioni, immagini. Questa
 Il flusso di lavoro generale per visualizzare/modificare una raccolta:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Scegli una raccolta dalla **Gestisci raccolte** affiancare.
+1. Scegli una raccolta dal riquadro **Gestisci raccolte**.
 
 1. Seleziona **Proprietà** dalla barra delle azioni.
 1. Visualizza tutti i metadati disponibili per tale articolo.
-1. Se necessario, modifica i metadati e fai clic su **Salva** al termine.
+1. Modificare i metadati, se necessario, e al termine fare clic su **Salva**.
 1. Se necessario, carica le modifiche immediatamente in Mobile On-Demand.
 
 ## Caricamento di una raccolta {#uploading-a-collection}
@@ -100,10 +100,10 @@ L’azione di caricamento copia il contenuto selezionato e lo aggiunge a un prog
 
 Il flusso di lavoro generale per caricare una raccolta:
 
-1. Da **Dispositivi mobili**, scegli la tua app Mobile On-Demand dal catalogo.
-1. In **Gestisci raccolte** , seleziona un articolo da caricare su Mobile On-Demand.
+1. Da **Mobile**, scegli la tua app Mobile On-Demand dal catalogo.
+1. Nel riquadro **Gestisci raccolte**, seleziona un articolo da caricare su Mobile On-Demand.
 1. Se necessario, aggiungi altre raccolte dalla vista a elenco.
-1. Seleziona **Carica** dalla barra delle azioni, fai clic su Carica nella finestra di dialogo.
+1. Seleziona **Carica** dalla barra delle azioni, quindi fai clic su Carica nella finestra di dialogo.
 1. Le raccolte sono ora caricate su Mobile On-Demand.
 
 ## Eliminazione di una raccolta {#deleting-a-collection}
@@ -113,9 +113,9 @@ Questa operazione elimina la raccolta selezionata da Mobile On-Demand e, facolta
 Flusso di lavoro generale per eliminare una raccolta:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Seleziona l’articolo da eliminare nel **Gestisci raccolte** affiancare.
+1. Selezionare l&#39;articolo da eliminare nel riquadro **Gestisci raccolte**.
 1. Assicurati che sia selezionato nell’elenco; seleziona gli altri da eliminare in base alle esigenze.
-1. Clic **Elimina** dalla barra delle azioni.
+1. Fai clic su **Elimina** nella barra delle azioni.
 1. Seleziona questa opzione se desideri eliminarla da AEM e Mobile On-Demand.
 1. Fai clic su **Elimina**.
 1. La tua raccolta è stata rimossa dall&#39;elenco.
@@ -134,7 +134,7 @@ Le raccolte sono essenzialmente una categoria di contenuti correlati: raccolgono
 1. Seleziona un articolo (o banner/raccolta) caricato in precedenza
 1. Dalla barra delle azioni, seleziona Aggiungi a.
 1. Seleziona una raccolta caricata in precedenza dalla finestra di dialogo.
-1. Clic **Aggiorna** per aggiungere contenuto alla raccolta.
+1. Fai clic su **Aggiorna** per aggiungere contenuto alla raccolta.
 
 ![chlimage_1-2](assets/chlimage_1-2.gif)
 

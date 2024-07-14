@@ -34,11 +34,11 @@ Il seguente albero decisionale fornisce indicazioni per ridurre il collo di bott
 
 ## Configurazione dei file di registro e dei registri di controllo {#configuring-log-files-and-audit-logs}
 
-AEM registra registri dettagliati che è possibile configurare per la risoluzione dei problemi di installazione. Per informazioni, vedere [Utilizzo dei record di controllo e dei file di registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) sezione.
+AEM registra registri dettagliati che è possibile configurare per la risoluzione dei problemi di installazione. Per informazioni, vedere la sezione [Utilizzo dei record di controllo e dei file di registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Utilizzo dell&#39;opzione Dettagliato {#using-the-verbose-option}
 
-Quando si avvia AEM WCM, è possibile aggiungere l’opzione -v (dettagliata) alla riga di comando come in: java -jar cq-wcm-quickstart-&lt;version>.jar -v.
+Quando si avvia AEM WCM, è possibile aggiungere l&#39;opzione -v (verbose) alla riga di comando come in: java -jar cq-wcm-quickstart-&lt;versione>.jar -v.
 
 L’opzione dettagliata visualizza parte dell’output del registro Quickstart sulla console, in modo che possa essere utilizzato per la risoluzione dei problemi.
 
@@ -70,9 +70,9 @@ Per risolvere i problemi, effettuare le seguenti operazioni:
 >Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
-La stessa CRX ha un ingombro di memoria ridotto. Se l’applicazione in esecuzione all’interno di CRX ha requisiti di memoria più elevati o richiede operazioni con un utilizzo eccessivo della memoria (ad esempio, transazioni di grandi dimensioni), l’istanza JVM in cui viene eseguito CRX deve essere avviata con le impostazioni di memoria appropriate.
+La stessa CRX ha un ingombro di memoria ridotto. Se l’applicazione in esecuzione in CRX ha requisiti di memoria più elevati o richiede operazioni che richiedono molta memoria (ad esempio, transazioni di grandi dimensioni), l’istanza JVM in cui viene eseguito CRX deve essere avviata con le impostazioni di memoria appropriate.
 
-Utilizza le opzioni del comando Java™ per definire le impostazioni di memoria della JVM (ad esempio, java -Xmx512m -jar crx&amp;ast;.jar per impostare heapsize su 512 MB).
+Utilizza le opzioni di comando Java™ per definire le impostazioni di memoria della JVM (ad esempio, java -Xmx512m -jar crx&amp;ast;.jar per impostare heapsize su 512 MB).
 
 Specificare l&#39;opzione di impostazione della memoria durante l&#39;avvio di AEM WCM dalla riga di comando. È inoltre possibile modificare gli script di avvio/arresto di WCM AEM o gli script personalizzati per la gestione dell&#39;avvio di WCM AEM per definire le impostazioni di memoria richieste.
 
@@ -82,14 +82,14 @@ Per creare automaticamente un’immagine heap quando la memoria è esaurita, uti
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Questo metodo genera un file dell’immagine heap (**java_hprof**) ogni volta che il processo esaurisce la memoria. Il processo può continuare a essere eseguito dopo la generazione dell’immagine heap.
+Questo metodo genera un file dell&#39;immagine heap (**java_...hprof**) ogni volta che il processo esaurisce la memoria. Il processo può continuare a essere eseguito dopo la generazione dell’immagine heap.
 
 Spesso per analizzare il problema sono necessari tre file dell’immagine heap, raccolti in un periodo di tempo:
 
 * Prima che si verifichi un errore
 * Durante l&#39;errore 1
 * Durante l&#39;errore 2
-* *Idealmente, sarebbe utile raccogliere informazioni anche dopo la risoluzione dell’evento*
+* *Sarebbe opportuno raccogliere informazioni anche dopo la risoluzione dell&#39;evento*
 
 Questi possono essere confrontati per vedere le modifiche e come gli oggetti usano la memoria.
 
@@ -115,7 +115,7 @@ Esiste un problema noto con l’AEM 6.5 in esecuzione su Java™ 11, in cui il s
 
 Se si verifica questo problema, eseguire le operazioni seguenti:
 
-1. Apri `sling.properties` file sotto `crx-quickstart/conf/` cartella
+1. Apri il file `sling.properties` nella cartella `crx-quickstart/conf/`
 1. Individua la seguente riga:
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
@@ -130,17 +130,17 @@ Se si verifica questo problema, eseguire le operazioni seguenti:
 
 ### Pagina non trovata restituita durante la richiesta di una pagina geometrixx-outdoor {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
-**Applicabile a WebLogic 10.3.5 e JBoss® 5.1**
+**Si applica a WebLogic 10.3.5 e JBoss® 5.1**
 
 Quando una richiesta inviata a geometrixx-outdoors/en page restituisce un valore 404 (Pagina non trovata), è possibile verificare di aver impostato la proprietà sling aggiuntiva nel file sling.properties necessaria per questi Application Server specifici.
 
-Vedi in *Distribuire l’applicazione web AEM* passaggi per i dettagli.
+Per informazioni dettagliate, consulta i passaggi *Distribuisci applicazione Web AEM*.
 
 ### La dimensione dell’intestazione di risposta può essere maggiore di 4 KB {#response-header-size-can-be-greater-than-kb}
 
 Gli errori 502 possono indicare che il server web non è in grado di gestire le dimensioni dell’intestazione di risposta HTTP AEM. L’AEM può generare intestazioni di risposta HTTP che includono cookie di dimensioni superiori a 4 KB. Assicurati che il contenitore del servlet sia configurato in modo che la dimensione massima dell’intestazione di risposta possa superare i 4 KB.
 
-Ad esempio, per Tomcat 7.0, l’attributo maxHttpHeaderSize del [Connettore HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controlla le limitazioni sulla dimensione dell’intestazione.
+Ad esempio, per Tomcat 7.0, l&#39;attributo maxHttpHeaderSize del [connettore HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controlla le limitazioni relative alla dimensione dell&#39;intestazione.
 
 ## Disinstallazione di Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
@@ -150,11 +150,11 @@ Se l&#39;archiviazione persistente è incorporata nella directory di installazio
 
 >[!NOTE]
 >
->L’Adobe consiglia di eseguire il backup dell’archivio prima di eliminare l’AEM. Se si elimina l&#39;intero &lt;cq-installation-directory>, si elimina anche l’archivio. Per conservare i dati del repository prima dell&#39;eliminazione, spostare o copiare &lt;cq-installation-directory>/crx-quickstart/repository in un&#39;altra cartella prima di eliminare le altre cartelle.
+>L’Adobe consiglia di eseguire il backup dell’archivio prima di eliminare l’AEM. Se si elimina l&#39;intero &lt;cq-installation-directory>, verrà eliminato anche l&#39;archivio. Per conservare i dati del repository prima dell&#39;eliminazione, spostare o copiare la cartella &lt;cq-installation-directory>/crx-quickstart/repository altrove prima di eliminare le altre cartelle.
 
 Se l’installazione dell’AEM utilizza uno storage esterno, ad esempio un server di database, la rimozione della cartella non rimuove automaticamente i dati, ma rimuove la configurazione di archiviazione, rendendo difficile il ripristino del contenuto JCR.
 
 ### I file JSP non sono compilati su JBoss® {#jsp-files-are-not-compiled-on-jboss}
 
 Se installi o aggiorni i file JSP per l’Experience Manager su JBoss® e i servlet corrispondenti non vengono compilati, assicurati che il compilatore JSP JBoss® sia configurato correttamente. Per informazioni, vedere
-[Problemi di compilazione JSP in JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) articolo.
+[Problemi di compilazione JSP nell&#39;articolo JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).

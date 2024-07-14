@@ -16,21 +16,21 @@ ht-degree: 10%
 
 Quando l’istanza AEM è installata come preconfigurata, una selezione di componenti è immediatamente disponibile nel browser Componenti.
 
-Oltre a questi, sono disponibili vari altri componenti. È possibile utilizzare la modalità Progettazione per [attivare/disattivare tali componenti](#enable-disable-components). Se questa opzione è abilitata e si trova sulla pagina, è possibile utilizzare la modalità Progettazione per [configurare gli aspetti della progettazione del componente](#configuring-the-design-of-a-component) modificando i parametri degli attributi.
+Oltre a questi, sono disponibili vari altri componenti. È possibile utilizzare la modalità Progettazione per [abilitare/disabilitare tali componenti](#enable-disable-components). Se attivato e si trova nella pagina, è possibile utilizzare la modalità Progettazione per [configurare gli aspetti della progettazione del componente](#configuring-the-design-of-a-component) modificando i parametri dell&#39;attributo.
 
 >[!NOTE]
 >
->Presta attenzione quando modifichi questi componenti. Le impostazioni di progettazione sono spesso parte integrante della progettazione dell’intero sito web, pertanto devono essere modificate solo da un utente con i privilegi e l’esperienza appropriati, spesso un amministratore o uno sviluppatore. Consulta [Sviluppo di componenti](/help/sites-developing/components.md) per ulteriori informazioni.
+>Presta attenzione quando modifichi questi componenti. Le impostazioni di progettazione sono spesso parte integrante della progettazione dell’intero sito web, pertanto devono essere modificate solo da un utente con i privilegi e l’esperienza appropriati, spesso un amministratore o uno sviluppatore. Per ulteriori informazioni, vedere [Sviluppo di componenti](/help/sites-developing/components.md).
 
 >[!NOTE]
 >
->La modalità Progettazione è disponibile solo per i modelli statici. I modelli creati con modelli modificabili devono essere modificati utilizzando [editor modelli](/help/sites-authoring/templates.md).
+>La modalità Progettazione è disponibile solo per i modelli statici. I modelli creati con modelli modificabili devono essere modificati utilizzando l&#39;[editor modelli](/help/sites-authoring/templates.md).
 
 >[!NOTE]
 >
->La modalità Progettazione è disponibile solo per le configurazioni di progettazione memorizzate come contenuto in ( `/etc`).
+>La modalità progettazione è disponibile solo per le configurazioni di progettazione archiviate come contenuto in ( `/etc`).
 >
->A partire da AEM 6.4, si consiglia di memorizzare le progettazioni come dati di configurazione in `/apps` per supportare scenari di distribuzione continua. Progettazioni memorizzate in `/apps` non sono modificabili in fase di esecuzione e la modalità Progettazione non sarà disponibile per gli utenti non amministratori per tali modelli.
+>A partire da AEM 6.4, si consiglia di memorizzare le progettazioni come dati di configurazione in `/apps` per supportare scenari di distribuzione continua. Le progettazioni memorizzate in `/apps` non sono modificabili in fase di esecuzione e la modalità Progettazione non sarà disponibile per gli utenti non amministratori per tali modelli.
 
 Ciò comporta l’aggiunta o la rimozione dei componenti consentiti nel sistema paragrafo per la pagina. Il sistema paragrafo ( `parsys`) è un componente composto che contiene tutti gli altri componenti paragrafo. Il sistema paragrafo consente agli autori di aggiungere a una pagina componenti di tipi diversi, in quanto contiene tutti gli altri componenti paragrafo. Ogni tipo di paragrafo è rappresentato come componente.
 
@@ -43,33 +43,33 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 
 >[!NOTE]
 >
->Consulta [Sviluppo di componenti](/help/sites-developing/components.md) e [Linee guida per l’utilizzo di modelli e componenti](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) per ulteriori informazioni su `parsys`.
+>Per ulteriori informazioni su `parsys`, vedere [Sviluppo di componenti](/help/sites-developing/components.md) e [Linee guida per l&#39;utilizzo di modelli e componenti](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components).
 
 >[!CAUTION]
 >
 >La modifica della progettazione utilizzando la modalità Progettazione come descritto in questo articolo è il metodo consigliato per definire le progettazioni di modelli statici
 >
->La modifica dei progetti in CRX DE, ad esempio, non è una best practice e l’applicazione di tali progetti può variare rispetto al comportamento previsto. Consulta il documento per sviluppatori [Modelli di pagina - Statici](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) per ulteriori informazioni.
+>La modifica di progetti in CRX DE, ad esempio, non è una best practice e l’applicazione di tali progetti può variare rispetto al comportamento previsto. Per ulteriori informazioni, consulta il documento per sviluppatori [Modelli di pagina - Statici](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied).
 
 ## Abilita/Disabilita componenti {#enable-disable-components}
 
 Per attivare o disattivare un componente:
 
-1. Seleziona la **Progettazione** modalità.
+1. Selezionare la modalità **Progettazione**.
 
-   ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
+   ![schermata_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
 1. Fai clic su un componente. Se selezionato, il componente presenta un bordo blu.
 
-   ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
+   ![schermata_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Fai clic su **Elemento padre** icona.
+1. Fai clic sull&#39;icona **Elemento padre**.
 
    ![Elemento padre](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    In questo modo viene selezionato il sistema paragrafo contenente il componente corrente.
 
-1. Il **Configura** nella barra delle azioni dell&#39;elemento padre viene visualizzata l&#39;icona del sistema paragrafo.
+1. L&#39;icona **Configura** per il sistema paragrafo è visualizzata nella barra delle azioni dell&#39;elemento padre.
 
    ![Configura](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -77,7 +77,7 @@ Per attivare o disattivare un componente:
 
 1. Utilizza la finestra di dialogo per definire i componenti disponibili nel browser Componenti durante la modifica della pagina corrente.
 
-   ![screen_shot_2018-03-22at103329](assets/screen_shot_2018-03-22at103329.png)
+   ![schermata_shot_2018-03-22at103329](assets/screen_shot_2018-03-22at103329.png)
 
    La finestra di dialogo ha due schede:
 
@@ -86,7 +86,7 @@ Per attivare o disattivare un componente:
 
    **Componenti consentiti**
 
-   Il giorno **Componenti consentiti** , puoi definire quali componenti sono disponibili per parsys.
+   Nella scheda **Componenti consentiti**, puoi definire quali componenti sono disponibili per i parsys.
 
    * I componenti sono raggruppati in base ai rispettivi gruppi di componenti, che possono essere espansi e compressi.
    * È possibile selezionare un intero gruppo selezionando il nome del gruppo e deselezionando tutti gli elementi.
@@ -102,27 +102,27 @@ Per attivare o disattivare un componente:
 
    **Impostazioni**
 
-   Il giorno **Impostazioni** scheda puoi definire opzioni aggiuntive, ad esempio per disegnare un ancoraggio per ciascun componente e per definire la spaziatura interna delle celle di ciascun contenitore.
+   Nella scheda **Impostazioni** puoi definire opzioni aggiuntive, ad esempio per disegnare un ancoraggio per ciascun componente e definire la spaziatura interna delle celle di ciascun contenitore.
 
 1. Seleziona **Fine** per salvare la configurazione.
 
 ## Configurazione della progettazione di un componente {#configuring-the-design-of-a-component}
 
-1. Seleziona la **Progettazione** modalità.
+1. Selezionare la modalità **Progettazione**.
 
-   ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
+   ![schermata_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
 1. Fai clic su un componente con un bordo blu. In questo esempio, viene selezionato un componente immagine protagonista.
 
-   ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
+   ![schermata_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
-1. Utilizza il **Configura** per aprire la finestra di dialogo.
+1. Utilizza l&#39;icona **Configura** per aprire la finestra di dialogo.
 
    ![Icona Configura](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    Nella finestra di dialogo per progettazione puoi configurare il componente in base ai parametri di progettazione disponibili.
 
-   ![screen_shot_2018-03-22at103530](assets/screen_shot_2018-03-22at103530.png)
+   ![schermata_shot_2018-03-22at103530](assets/screen_shot_2018-03-22at103530.png)
 
    La finestra di dialogo ha tre schede:
 
@@ -132,28 +132,28 @@ Per attivare o disattivare un componente:
 
    **Proprietà**
 
-   Il **Proprietà** Questa scheda ti consente di configurare i parametri di progettazione importanti del componente. Ad esempio, per un componente immagine puoi definire le dimensioni minima e massima consentite per l’immagine.
+   La scheda **Proprietà** consente di configurare importanti parametri di progettazione del componente. Ad esempio, per un componente immagine puoi definire le dimensioni minima e massima consentite per l’immagine.
 
-   **Funzioni**
+   **Caratteristiche**
 
-   Il **Funzioni** Questa scheda ti consente di abilitare o disabilitare funzioni aggiuntive del componente. Ad esempio, per un componente immagine puoi definire l’orientamento dell’immagine, le opzioni di ritaglio disponibili e se è possibile caricare un’immagine.
+   La scheda **Funzionalità** consente di abilitare o disabilitare funzionalità aggiuntive del componente. Ad esempio, per un componente immagine puoi definire l’orientamento dell’immagine, le opzioni di ritaglio disponibili e se è possibile caricare un’immagine.
 
    **Stili**
 
-   Il **Stili** Questa scheda ti consente di definire le classi e gli stili CSS da utilizzare con il componente.
+   La scheda **Stili** consente di definire le classi e gli stili CSS da utilizzare con il componente.
 
-   ![screen_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
+   ![schermata_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
 
-   Utilizza il **Aggiungi** per aggiungere altre voci a un elenco di finestre di dialogo a più voci.
+   Utilizza il pulsante **Aggiungi** per aggiungere altre voci a un elenco di finestre di dialogo a più voci.
 
    ![Aggiungi voce aggiuntiva](assets/chlimage_1-94.png)
 
-   Utilizza il **Elimina** per rimuovere una voce da un elenco di finestre di dialogo a più voci.
+   Utilizza l&#39;icona **Elimina** per rimuovere una voce da un elenco di finestre di dialogo a più voci.
 
-   ![Eliminare](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![Elimina](do-not-localize/screen_shot_2018-03-22at103809.png)
 
-   Utilizza il **Sposta** per modificare l&#39;ordine delle voci in un elenco di finestre di dialogo a più voci.
+   Utilizza l&#39;icona **Sposta** per cambiare l&#39;ordine delle voci in un elenco di finestre di dialogo a più voci.
 
    ![Sposta](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Fai clic su **Fine** per salvare e chiudere la finestra.
+1. Fai clic sull&#39;icona **Fine** per salvare e chiudere la finestra di dialogo.

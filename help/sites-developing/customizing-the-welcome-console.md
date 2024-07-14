@@ -22,7 +22,7 @@ ht-degree: 6%
 >
 >Questa pagina tratta l’interfaccia utente classica.
 >
->Consulta [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md) per informazioni dettagliate sull’interfaccia utente standard touch.
+>Consulta [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md) per informazioni dettagliate sull&#39;interfaccia utente standard touch.
 
 La console di benvenuto fornisce un elenco di collegamenti alle varie console e funzionalità di AEM.
 
@@ -30,8 +30,8 @@ La console di benvenuto fornisce un elenco di collegamenti alle varie console e 
 
 È possibile configurare i collegamenti visibili. Questa può essere definita per utenti e/o gruppi specifici. Le azioni da intraprendere dipendono dal tipo di destinazione (che si collega alla sezione della console in cui si trovano):
 
-* [Console principali](#links-in-main-console-left-pane) - Collegamenti nella console principale (riquadro a sinistra)
-* [Risorse, documentazione e riferimenti, funzioni](#links-in-sidebar-right-pane) - Collegamenti nella barra laterale (riquadro destro)
+* [Console principale](#links-in-main-console-left-pane) - Collegamenti nella console principale (riquadro a sinistra)
+* [Risorse, documentazione e riferimenti, funzionalità](#links-in-sidebar-right-pane) - Collegamenti nella barra laterale (riquadro a destra)
 
 ## Collegamenti nella console principale (riquadro sinistro) {#links-in-main-console-left-pane}
 
@@ -45,13 +45,13 @@ Le autorizzazioni a livello di nodo determinano se il collegamento può essere v
 
 * **Siti Web:** `/libs/wcm/core/content/siteadmin`
 
-* **Risorse digitali:** `/libs/wcm/core/content/damadmin`
+* **Assets digitale:** `/libs/wcm/core/content/damadmin`
 
 * **Community:** `/libs/collab/core/content/admin`
 
 * **Campagne:** `/libs/mcm/content/admin`
 
-* **Casella in entrata:** `/libs/cq/workflow/content/inbox`
+* **Posta in arrivo:** `/libs/cq/workflow/content/inbox`
 
 * **Utenti:** `/libs/cq/security/content/admin`
 
@@ -65,13 +65,13 @@ Ad esempio:
 
   `/libs/wcm/core/content/misc`
 
-Consulta la [Sezione Sicurezza](/help/sites-administering/security.md) per ulteriori informazioni su come impostare le autorizzazioni desiderate.
+Per ulteriori informazioni su come impostare le autorizzazioni desiderate, vedere la [sezione Sicurezza](/help/sites-administering/security.md).
 
 ### Collegamenti nella barra laterale (riquadro destro) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
-Questi collegamenti si basano sull&#39;esistenza di *e* accesso in lettura ai nodi nel seguente percorso:
+Questi collegamenti si basano sull&#39;esistenza dell&#39;accesso in lettura *e* ai nodi nel percorso seguente:
 
 `/libs/cq/core/content/welcome`
 
@@ -176,7 +176,7 @@ Per impostazione predefinita, sono disponibili tre sezioni (leggermente distanzi
 
 Ad esempio:
 
-* Per rimuovere il collegamento a **Rapporti**, rimuovere l&#39;accesso in lettura da
+* Per rimuovere il collegamento a **Report**, rimuovere l&#39;accesso in lettura da
 
   `/libs/cq/core/content/welcome/resources/reports`
 
@@ -184,11 +184,11 @@ Ad esempio:
 
   `/libs/cq/core/content/welcome/features/packages`
 
-Consulta la [Sezione Sicurezza](/help/sites-administering/security.md) per ulteriori informazioni su come impostare le autorizzazioni desiderate.
+Per ulteriori informazioni su come impostare le autorizzazioni desiderate, vedere la [sezione Sicurezza](/help/sites-administering/security.md).
 
 ### Meccanismo di selezione dei collegamenti {#link-selection-mechanism}
 
-In entrata `/libs/cq/core/components/welcome/welcome.jsp` sia fatto di [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), che esegue una query sui nodi che dispongono della proprietà:
+In `/libs/cq/core/components/welcome/welcome.jsp` viene utilizzato [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), che esegue una query sui nodi con la proprietà:
 
 * `jcr:mixinTypes` con il valore: `cq:Console`
 
@@ -199,12 +199,12 @@ In entrata `/libs/cq/core/components/welcome/welcome.jsp` sia fatto di [ConsoleU
 >* `select * from cq:Console`
 >
 
-Quando un utente o un gruppo non dispone dell’autorizzazione di lettura per un nodo con il mixin `cq:Console`, tale nodo non viene recuperato da `ConsoleUtil` ricerca, pertanto non è elencato nella console.
+Quando un utente o un gruppo non dispone dell&#39;autorizzazione di lettura per un nodo con il mixin `cq:Console`, tale nodo non viene recuperato dalla ricerca `ConsoleUtil` e pertanto non è elencato nella console.
 
 ### Aggiunta di un elemento personalizzato {#adding-a-custom-item}
 
-Il [meccanismo di selezione dei collegamenti](#link-selection-mechanism) può essere utilizzato per aggiungere un elemento personalizzato all’elenco dei collegamenti.
+Il [meccanismo di selezione dei collegamenti](#link-selection-mechanism) può essere utilizzato per aggiungere un elemento personalizzato all&#39;elenco dei collegamenti.
 
-Aggiungere l&#39;elemento personalizzato all&#39;elenco aggiungendo `cq:Console` mixin al widget o alla risorsa. A tale scopo, definisci la proprietà:
+Aggiungi l&#39;elemento personalizzato all&#39;elenco aggiungendo il mixin `cq:Console` al widget o alla risorsa. A tale scopo, definisci la proprietà:
 
 * `jcr:mixinTypes` con il valore: `cq:Console`

@@ -32,23 +32,23 @@ Questa funzione consente di memorizzare tutte le proprietà di configurazione OS
 
 Questi passaggi mostrano come crittografare la password SMTP per il servizio di posta. Puoi completare questi passaggi per una proprietà OSGI che desideri crittografare.
 
-1. Passa alla console web dell’AEM all’indirizzo *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Nell’angolo in alto a sinistra, vai a **Principale - Supporto crittografia**
+1. Vai alla console Web AEM all&#39;indirizzo *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Nell&#39;angolo superiore sinistro, vai a **Principale - Supporto crittografia**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Il **Supporto crittografia console Web Adobe Experience Manager** viene visualizzata.
+1. Viene visualizzata la pagina **Supporto crittografia console Web Adobe Experience Manager**.
 
-   ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
+   ![schermata_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. In **Testo normale** immettere il testo dei dati sensibili che si desidera proteggere.
+1. Nel campo **Testo normale** immettere il testo dei dati sensibili che si desidera proteggere.
 1. Seleziona **Protect**. Il testo protetto viene visualizzato come testo crittografato.
 
-   ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
+   ![schermata_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Copia il testo protetto dal passaggio 5 e incollalo nel valore del modulo OSGI. In questo esempio, la **Password SMTP** viene aggiunto al *Day CQ Mail Service*.
+1. Copia il testo protetto dal passaggio 5 e incollalo nel valore del modulo OSGI. In questo esempio, la **password SMTP** crittografata viene aggiunta al servizio di posta CQ *Day*.
 
-   ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
+   ![schermata_shot_2016-12-18alle105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 
 1. Salva le proprietà del servizio di posta Day CQ. La password SMTP verrà ora inviata come valore crittografato.
 

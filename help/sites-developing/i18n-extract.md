@@ -21,7 +21,7 @@ ht-degree: 0%
 Utilizza xgettext-maven-plugin per estrarre le stringhe dal codice sorgente che devono essere tradotte. Il plug-in Maven estrae le stringhe in un file XLIFF che invii per la traduzione. Le stringhe vengono estratte dalle seguenti posizioni:
 
 * File Java di origine
-* File sorgente JavaScript
+* File di origine di JavaScript
 * Rappresentazioni XML delle risorse SVN (nodi JCR)
 
 ## Configurazione dell’estrazione della stringa {#configuring-string-extraction}
@@ -69,7 +69,7 @@ La parte pattern di una regola viene utilizzata per far corrispondere i nomi dei
 | &amp;ast; | Indica un file normale nel file system. |
 | nessuno | Nessun prefisso o pattern che inizia con una cartella o un nome di file indica un file normale nel file system. |
 
-Se utilizzato all’interno di un pattern, il carattere / indica una sottodirectory e il carattere &amp;ast; corrisponde a tutto. Nella tabella seguente sono elencati diversi esempi di regole.
+Se utilizzato all&#39;interno di un pattern, il carattere / indica una sottodirectory e il carattere &amp;ast; corrisponde a tutti. Nella tabella seguente sono elencati diversi esempi di regole.
 
 <table>
  <tbody>
@@ -135,9 +135,9 @@ mvn xgettext:extract
 ### File di output {#output-files}
 
 * `raw.xliff`: stringhe estratte
-* `warn.log`: avvertenze (se presenti), se `CQ.I18n.getMessage()` L’API non viene utilizzata correttamente. Per queste operazioni è sempre necessaria una correzione e quindi una nuova esecuzione.
+* `warn.log`: avvisi (se presenti), se l&#39;API `CQ.I18n.getMessage()` non viene utilizzata correttamente. Per queste operazioni è sempre necessaria una correzione e quindi una nuova esecuzione.
 
 * `parserwarn.log`: avvisi del parser (se presenti), ad esempio problemi del parser js
-* `potentials.xliff`: candidati &quot;potenziali&quot; che non vengono estratti, ma che potrebbero essere stringhe leggibili dall’uomo che necessitano di traduzione (possono essere ignorati, producono comunque una quantità enorme di falsi positivi)
+* `potentials.xliff`: candidati &quot;potenziali&quot; non estratti, ma che potrebbero essere stringhe leggibili dall&#39;utente che necessitano di traduzione (possono essere ignorati, producono comunque una quantità enorme di falsi positivi)
 * `strings.xliff`: file xliff appiattito, da importare in ALF
 * `backrefs.txt`: consente la ricerca rapida delle posizioni del codice sorgente per una determinata stringa

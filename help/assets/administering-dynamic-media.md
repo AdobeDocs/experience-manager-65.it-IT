@@ -16,18 +16,18 @@ ht-degree: 1%
 
 # Impostazione di Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse offrendo risorse visive avanzate per il merchandising e il marketing on-demand, scalabili automaticamente per il consumo su siti web, mobili e social. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ti consente di gestire le risorse distribuendo risorse di marketing e merchandising visivo su richiesta, scalabili automaticamente per l&#39;utilizzo su siti web, mobili e social. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 >[!NOTE]
 >
->Questa documentazione descrive le funzionalità di Dynamic Medie, integrate direttamente in Adobe Experience Manager. Se utilizzi Dynamic Media Classic integrato in Experience Manager, consulta [Documentazione sull’integrazione di Dynamic Media Classic](/help/sites-administering/scene7.md).
+>Questa documentazione descrive le funzionalità di Dynamic Medie, integrate direttamente in Adobe Experience Manager. Se utilizzi Dynamic Media Classic integrato in Experience Manager, consulta [Documentazione sull&#39;integrazione di Dynamic Media Classic](/help/sites-administering/scene7.md).
 >
 >Consulta [Scenario a doppio uso](/help/sites-administering/scene7.md#dual-use-scenario) per i casi in cui desideri utilizzare Experience Manager integrato con Dynamic Media Classic insieme a Dynamic Medie.
 
 Se si amministra Dynamic Medie, sono di interesse i seguenti argomenti:
 
-* [Configurare Dynamic Medie - Modalità Scene7](config-dms7.md) - Utilizza questa configurazione se sei un nuovo cliente Dynamic Medie.
-* [Configurare Dynamic Medie - Modalità ibrida](config-dynamic.md) : utilizza questa configurazione se sei un Experience Manager esistente di aggiornamento di un cliente Dynamic Medie.
+* [Configura Dynamic Medie - Modalità Scene7](config-dms7.md) - Utilizza questa configurazione se sei un nuovo cliente Dynamic Medie.
+* [Configura Dynamic Medie - Modalità ibrida](config-dynamic.md) - Utilizza questa configurazione se sei un Experience Manager esistente di aggiornamento del cliente Dynamic Medie.
 * [Gestire i predefiniti immagine](managing-image-presets.md)
 * [Gestire i predefiniti visualizzatore](managing-viewer-presets.md)
 * [Risoluzione dei problemi di Dynamic Medie - Modalità Scene7](troubleshoot-dms7.md)
@@ -39,7 +39,7 @@ Consulta anche i seguenti argomenti:
 
 >[!NOTE]
 >
->**Se si sta eseguendo l&#39;aggiornamento:**
+>**Se si sta aggiornando:**
 >
 >* Dopo aver avviato l’Experience Manager, per tutte le risorse caricate viene automaticamente abilitato Dynamic Medie (a meno che non sia stato esplicitamente disabilitato dall’amministratore di sistema). Se ti trovi in un’istanza aggiornata di Experience Manager e stai accedendo per la prima volta a Dynamic Medie, devi rielaborare le risorse per renderle abilitate per Dynamic Medie.
 

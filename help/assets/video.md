@@ -30,60 +30,60 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 >
 >Prima di lavorare con i video in Dynamic Medie, accertati che l’amministratore di Adobe Experience Manager abbia già abilitato e configurato i Cloud Service Dynamic Medie in modalità Dynamic Medie - Scene7 o Dynamic Medie - Hybrid.
 >
->* Consulta [Configurare Cloud Service Dynamic Medie](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Medie - Modalità Scene7 e [Risoluzione dei problemi di Dynamic Medie - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
+>* Consulta [Configurare i Cloud Service Dynamic Medie](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Medie - Modalità Scene7 e [Risolvere i problemi relativi a Dynamic Medie - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
 >
->* Consulta [Configurare Cloud Service Dynamic Medie](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Medie - Modalità ibrida.
+>* Consulta [Configurare i Cloud Service Dynamic Medie](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Medie - Modalità ibrida.
 >
->Problema di riproduzione video noto corrente in Dynamic Medie *solo sull&#39;Experience Manager 6.5.9.0*:
+>Problema di riproduzione video noto corrente in Dynamic Medie *solo con Experience Manager 6.5.9.0*:
 >
 >* Se un video pubblicato viene aggiornato, deve essere pubblicato nuovamente per riflettere le modifiche alla consegna.
 >
 
-1. **Carica i video Dynamic Medie** effettuando le seguenti operazioni:
+1. **Carica i tuoi video Dynamic Medie** eseguendo le seguenti operazioni:
 
-   * Crea un tuo profilo di codifica video. Oppure, puoi semplicemente utilizzare il predefinito _Codifica video adattiva_ profilo fornito con Dynamic Medie.
+   * Crea un tuo profilo di codifica video. In alternativa, puoi semplicemente utilizzare il profilo predefinito _Codifica video adattiva_ fornito con Dynamic Medie.
 
-      * [Creare un profilo di codifica video](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [Crea un profilo di codifica video](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Ulteriori informazioni su [Best practice per la codifica video](#best-practices-for-encoding-videos).
 
    * Associa il profilo di elaborazione video a una o più cartelle in cui stai per caricare i video sorgente principali.
 
       * [Applicare un profilo video alle cartelle](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * Ulteriori informazioni su [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
-      * Ulteriori informazioni su [Organizzare le risorse digitali](/help/assets/organize-assets.md).
+      * Ulteriori informazioni su [Organizzare risorse digitali](/help/assets/organize-assets.md).
 
    * Carica i video sorgente principali nelle cartelle. Quando aggiungi video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
       * Dynamic Medie supporta principalmente video in formato breve con una durata massima di 30 minuti e una risoluzione minima superiore a 25 x 25.
       * Puoi caricare file video con una capacità massima di 15 GB ciascuno.
-      * [Carica i video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
-      * Ulteriori informazioni su [Formati di file di input supportati](/help/assets/assets-formats.md#supported-multimedia-formats).
+      * [Carica i tuoi video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+      * Ulteriori informazioni sui [Formati di file di input supportati](/help/assets/assets-formats.md#supported-multimedia-formats).
 
-   * Monitorare come [codifica video in corso](#monitoring-video-encoding-and-youtube-publishing-progress) dalla vista delle risorse o del flusso di lavoro.
+   * Monitora l&#39;avanzamento della codifica [video](#monitoring-video-encoding-and-youtube-publishing-progress) dalla visualizzazione della risorsa o del flusso di lavoro.
 
-1. **Gestire i video Dynamic Medie** effettuando una delle seguenti operazioni:
+1. **Gestisci i tuoi video Dynamic Medie** eseguendo una delle seguenti operazioni:
 
    * Organizzare, sfogliare e cercare risorse video
 
-      * [Organizzare le risorse digitali](/help/assets/organize-assets.md)
-Ulteriori informazioni su [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](organize-assets.md)
+      * [Organizza risorse digitali](/help/assets/organize-assets.md)
+Ulteriori informazioni su [Best practice per organizzare le risorse digitali per l&#39;utilizzo dei profili di elaborazione](organize-assets.md)
 
-      * [Cercare risorse video](search-assets.md#custompredicates) o [Cercare risorse](/help/assets/search-assets.md)
+      * [Cerca risorse video](search-assets.md#custompredicates) o [Cerca risorse](/help/assets/search-assets.md)
 
    * Visualizzare in anteprima e pubblicare le risorse video
 
       * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
-        [Anteprima video](managing-video-assets.md#upload-and-preview-video-assets) o [Visualizzare in anteprima le risorse](previewing-assets.md)
+        [Anteprima video](managing-video-assets.md#upload-and-preview-video-assets) o [Anteprima risorse](previewing-assets.md)
         [Visualizza rappresentazioni video](video-renditions.md)
-        [Gestire le rappresentazioni video](manage-assets.md#managing-renditions)
+        [Gestione rappresentazioni video](manage-assets.md#managing-renditions)
 
       * [Gestire i predefiniti visualizzatore](managing-viewer-presets.md)
-      * [Pubblicare le risorse](publishing-dynamicmedia-assets.md)
+      * [Risorse Publish](publishing-dynamicmedia-assets.md)
 
    * Utilizzare i metadati video
 
       * Visualizza le proprietà di un rendering video codificato come frame rate, bitrate audio e video e codec:
-        [Visualizzare le proprietà della rappresentazione video](video-renditions.md)
+        [Visualizza proprietà rappresentazione video](video-renditions.md)
 
       * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
         [Modifica proprietà video](manage-assets.md#editing-properties)
@@ -93,35 +93,35 @@ Ulteriori informazioni su [Best practice per organizzare le risorse digitali per
 
    * Rivedi, approva e commenta video e mantieni il controllo completo della versione
 
-      * [Annotare i video](managing-video-assets.md#annotate-video-assets) o [Annotare risorse](manage-assets.md#annotating)
+      * [Annota video](managing-video-assets.md#annotate-video-assets) o [Annota risorse](manage-assets.md#annotating)
 
       * [Crea una versione](manage-assets.md#asset-versioning)
-      * [Applicare i flussi di lavoro alle risorse](assets-workflow.md) o vedi [Avviare un flusso di lavoro su una risorsa](manage-assets.md#starting-a-workflow-on-an-asset)
+      * [Applica flussi di lavoro alle risorse](assets-workflow.md) o vedi [Avvia un flusso di lavoro su una risorsa](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Esaminare le risorse della cartella](bulk-approval.md)
       * [Progetti](../sites-authoring/projects.md)
 
-1. **Pubblicare i video Dynamic Medie** effettuando una delle seguenti operazioni:
+1. **Publish i tuoi video Dynamic Medie** effettuando una delle seguenti operazioni:
 
    * Se utilizzi Adobe Experience Manager come sistema di gestione dei contenuti web, puoi aggiungere video direttamente alle pagine web.
 
-      * [Aggiungere video alle pagine web](adding-dynamic-media-assets-to-pages.md).
+      * [Aggiungi video alle pagine Web](adding-dynamic-media-assets-to-pages.md).
 
    * Se utilizzi un sistema di gestione dei contenuti web di terze parti, puoi collegare o incorporare video nelle pagine web.
 
       * Integra video tramite URL:
-        [Collegare gli URL all’applicazione web](linking-urls-to-yourwebapplication.md).
+        [Collega URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
       * Integra video utilizzando il codice di incorporamento in una pagina web:
-        [Incorporare il visualizzatore video in una pagina web](embed-code.md).
+        [Incorpora il visualizzatore video in una pagina Web](embed-code.md).
 
-   * [Generare rapporti video](#viewing-video-reports).
+   * [Genera report video](#viewing-video-reports).
 
    * [Aggiungi didascalie al video](#adding-captions-to-video).
 
 ## Utilizzare i video in Dynamic Medie {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Medie è una soluzione end-to-end che consente di pubblicare facilmente video adattivi di alta qualità per lo streaming su più schermi, tra cui desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows. Un set video adattivo raggruppa le versioni dello stesso video che sono codificate in diversi formati e bit rate, ad esempio 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
+Video in Dynamic Medie è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su più schermi, tra cui desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows. Un set video adattivo raggruppa le versioni dello stesso video che sono codificate in diversi formati e bit rate, ad esempio 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
 
 Ad esempio, su un dispositivo mobile iOS rileva una larghezza di banda come 3G, 4G o Wi-Fi. Quindi seleziona automaticamente il video codificato giusto tra i vari bit rate video all’interno del set video adattivo. Il video viene inviato in streaming a desktop, dispositivi mobili o tablet.
 
@@ -135,24 +135,24 @@ La logica utilizzata da un lettore video per determinare quale video codificato 
    1. Il lettore sceglie il flusso di larghezza di banda più alto al di sotto o uguale alla larghezza di banda stimata.
    1. Il lettore considera solo l&#39;80% della larghezza di banda disponibile. Tuttavia, in caso di passaggio, è più prudente con solo il 70% per evitare di sovrastimare e tornare subito indietro.
 
-Per informazioni tecniche dettagliate sull’algoritmo, consulta [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
+Per informazioni tecniche dettagliate sull&#39;algoritmo, vedere [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
 Per la gestione di set video singoli e adattivi, sono supportati i seguenti elementi:
 
 * Caricamento di video da numerosi formati video supportati e formati audio e codifica video in formato MP4 H.264 per la riproduzione su più schermi. È possibile utilizzare predefiniti per video adattivi, predefiniti per codifica video singola o personalizzare la propria codifica per controllare la qualità e le dimensioni del video.
 
    * Quando viene generato un set video adattivo, questo include video MP4.
-   * **Nota**: i video principali/sorgenti non vengono aggiunti a un set di video adattivi.
+   * **Nota**: i video principali/di origine non vengono aggiunti a un set di video adattivi.
 
 * Sottotitoli video in tutti i visualizzatori video di HTML5.
 * Organizza, sfoglia e cerca video con supporto completo per i metadati, per una gestione efficiente delle risorse video.
 * Distribuisci set video adattivi sul web e su desktop e dispositivi mobili, inclusi iPhone, iPad, Android™, BlackBerry® e Windows Phone.
 
-Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta [Guida di riferimento per i visualizzatori di Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
+Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori di Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
 Dynamic Medie supporta la riproduzione di video per dispositivi mobili per video MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
-I dispositivi Windows che supportano questo formato video sono disponibili nei seguenti percorsi: [Codec multimediali supportati per Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
+È possibile trovare i dispositivi Windows che supportano questo formato video nel seguente percorso: [Codec multimediali supportati per Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
 * Riproduci il video utilizzando i predefiniti visualizzatore video Dynamic Medie, inclusi i seguenti elementi:
 
@@ -164,7 +164,7 @@ I dispositivi Windows che supportano questo formato video sono disponibili nei s
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Vedi anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizzatori solo per risorse di Experience Manager](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Vedi anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizzatori per Experience Manager solo risorse](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ## Best practice: utilizzo del visualizzatore video di HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -182,7 +182,7 @@ Combinando in un singolo lettore quanto segue:
 
 È possibile estendere la portata dei contenuti rich media agli utenti desktop e mobili e garantire un&#39;esperienza video semplificata.
 
-Vedi anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Vedi anche [Informazioni sui visualizzatori di HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video di HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -216,7 +216,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>In Windows 8 e Windows 10 - Forza l’utilizzo di HTTPS ogni volta che viene richiesto DASH* o HLS. Limitazione nota: HTTP su DASH* o HLS non funziona in questa combinazione browser/sistema operativo<br /> <br /> Su Windows 7 - Download progressivo. Utilizza la logica standard per selezionare il protocollo HTTP rispetto al protocollo HTTPS.</td>
+   <td>In Windows 8 e Windows 10 - Forza l’utilizzo di HTTPS ogni volta che viene richiesto DASH* o HLS. Limitazione nota: HTTP su DASH* o HLS non funziona in questa combinazione browser/sistema operativo<br /> <br /> In Windows 7 - Download progressivo. Utilizza la logica standard per selezionare il protocollo HTTP rispetto al protocollo HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -273,7 +273,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
 
 >[!IMPORTANT]
 >
->*Per utilizzare DASH per i video, è necessario prima attivarlo con l&#39;assistenza tecnica Adobe sul tuo account. Consulta [Abilita DASH sul tuo account Dynamic Medie](#enable-dash).
+>*Per utilizzare DASH per i video, è necessario prima attivarlo con l&#39;assistenza tecnica Adobe sul tuo account. Vedi [Abilitare DASH sul tuo account Dynamic Medie](#enable-dash).
 
 ## Architettura della soluzione video Dynamic Medie {#architecture-of-dynamic-media-video-solution}
 
@@ -287,7 +287,7 @@ L’immagine seguente mostra il flusso di lavoro complessivo per l’authoring d
 
 ## Best practice per la codifica dei video {#best-practices-for-encoding-videos}
 
-Il **Codifica video Dynamic Medie** se hai attivato Dynamic Medie e hai impostato video cloud services, workflow codifica video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Se hai abilitato Dynamic Medie e hai impostato Cloud Services per i video, il **[!UICONTROL Codifica video Dynamic Medie]** il flusso di lavoro viene applicato automaticamente al caricamento di un video. Se non utilizzi Dynamic Medie, il **[!UICONTROL Aggiorna risorsa DAM]** il flusso di lavoro ha effetto.)
+Se hai attivato Dynamic Medie e hai impostato Cloud Services per i video, il flusso di lavoro **Codifica video Dynamic Medie** ti consente di eseguire la codifica dei video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Se hai attivato Dynamic Medie e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video Dynamic Medie]** viene applicato automaticamente al caricamento di un video. Se non utilizzi Dynamic Medie, viene applicato il flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -295,7 +295,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
 
-### File video sorgente {#source-video-files}
+### File video Source {#source-video-files}
 
 Quando codificate un file video, utilizzate un file video sorgente della massima qualità possibile. Evita di utilizzare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica crea un video di qualità inferiore.
 
@@ -347,7 +347,7 @@ Bitrate è la quantità di dati codificati per costituire un singolo secondo di 
 
 Quando si seleziona una codifica bitrate, è possibile scegliere tra due tipi:
 
-* **[!UICONTROL Codifica bitrate costante]** (CBR) - Durante la codifica CBR, il bitrate o il numero di bit al secondo viene mantenuto invariato durante il processo di codifica. La codifica CBR mantiene la velocità dati impostata sull’impostazione per l’intero video. Inoltre, la codifica CBR non ottimizza i file multimediali per la qualità, ma consente di risparmiare spazio di archiviazione.
+* **[!UICONTROL Codifica bitrate costante]** (CBR): durante la codifica CBR, il bitrate o il numero di bit al secondo viene mantenuto invariato durante tutto il processo di codifica. La codifica CBR mantiene la velocità dati impostata sull’impostazione per l’intero video. Inoltre, la codifica CBR non ottimizza i file multimediali per la qualità, ma consente di risparmiare spazio di archiviazione.
 Utilizzate CBR se il video contiene un livello di movimento simile per l&#39;intero video. CBR viene utilizzato più comunemente per lo streaming di contenuti video. Vedi anche [Utilizzare parametri di codifica video personalizzati](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
 * **[!UICONTROL Codifica bitrate variabile]** (VBR) - La codifica VBR regola la velocità dati verso il basso e al limite superiore impostato, in base ai dati richiesti dal compressore. Questa funzionalità significa che durante un processo di codifica VBR il bitrate del file multimediale aumenta o diminuisce in modo dinamico a seconda delle esigenze di bitrate dei file multimediali.
@@ -369,7 +369,7 @@ Questa tabella descrive la velocità dati delle velocità di connessione tipiche
 
 ### Risoluzione {#resolution}
 
-**Risoluzione** descrive l&#39;altezza e la larghezza in pixel di un file video. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). Ai fini dello streaming, il video sorgente viene compresso a una risoluzione inferiore (640 x 480 o inferiore).
+**La risoluzione** descrive l&#39;altezza e la larghezza in pixel di un file video. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). Ai fini dello streaming, il video sorgente viene compresso a una risoluzione inferiore (640 x 480 o inferiore).
 
 La risoluzione e la velocità dei dati sono due fattori strettamente collegati che determinano la qualità video. Per mantenere la stessa qualità video, maggiore è il numero di pixel in un file video (maggiore è la risoluzione), maggiore è la velocità dati. Ad esempio, si consideri il numero di pixel per fotogramma in un file video con risoluzione 320 x 240 e 640 x 480:
 
@@ -394,7 +394,7 @@ Quando scegli (o crei) un predefinito di codifica video per il file video sorgen
 | 240P | 240 | Schermo piccolo |
 | 300P | 300 | Schermo piccolo in genere per dispositivi mobili |
 | 360P | 360 | Schermo piccolo |
-| 480P | 480 | Schermo medio |
+| 480P | 480 | Schermata Medium |
 | 720P | 720 | Schermo grande |
 | 1080P | 1080 | Schermo ad alta definizione di grandi dimensioni |
 
@@ -427,8 +427,8 @@ Dynamic Medie consiglia di utilizzare i predefiniti di codifica video MP4 H.264.
 
 ### Abilita il supporto per DASH, sottotitoli multipli e tracce audio sul tuo account Dynamic Medie {#enable-dash}
 
-**Informazioni sull’abilitazione di DASH sul tuo account**
-DASH (Digital Adaptive Streaming over HTTP) è lo standard internazionale per lo streaming video ed è ampiamente adottato tra diversi visualizzatori video. Quando DASH è abilitato sul tuo account, puoi scegliere tra DASH o HLS per lo streaming video adattivo. Oppure, è possibile optare per entrambi con cambio automatico tra i lettori quando **[!UICONTROL auto]** viene selezionato come tipo di riproduzione nel predefinito Visualizzatore.
+**Informazioni sull&#39;abilitazione di DASH sul tuo account**
+DASH (Digital Adaptive Streaming over HTTP) è lo standard internazionale per lo streaming video ed è ampiamente adottato tra diversi visualizzatori video. Quando DASH è abilitato sul tuo account, puoi scegliere tra DASH o HLS per lo streaming video adattivo. In alternativa, è possibile optare per entrambi con il passaggio automatico tra i lettori quando si seleziona **[!UICONTROL auto]** come tipo di riproduzione nel predefinito visualizzatore.
 
 Alcuni vantaggi chiave dell&#39;attivazione di DASH sul tuo account includono:
 
@@ -444,29 +444,29 @@ L’attivazione di DASH sul tuo account richiede due passaggi:
 * Configurazione di Dynamic Medie per l’utilizzo di DASH, operazione che è possibile eseguire in modo semplice.
 * La configurazione dell’Experience Manager 6.5 per l’utilizzo di DASH viene eseguita tramite un caso di assistenza clienti di Adobe che hai creato e inviato.
 
-**Informazioni sull&#39;attivazione del supporto di didascalie multiple e tracce audio sul tuo account**
+**Informazioni sull&#39;abilitazione del supporto di più didascalie e tracce audio sul tuo account**
 
 Contemporaneamente alla creazione di un caso di supporto Adobe per abilitare DASH sul tuo account, puoi anche usufruire del supporto automatico per più didascalie e tracce audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di più didascalie e tracce audio ai video.
 
 >[!IMPORTANT]
 >
->Tutti i video caricati *prima di* abilitazione del supporto di didascalie multiple e tracce audio sul tuo account Dynamic Medie, [deve essere rielaborato](/help/assets/processing-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di didascalia multipla e di traccia audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
+>Tutti i video caricati *prima* dell&#39;abilitazione del supporto di didascalie multiple e tracce audio sul tuo account Dynamic Medie, [devono essere rielaborati](/help/assets/processing-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di didascalia multipla e di traccia audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
-**Per abilitare il DASH, sono supportati più sottotitoli e tracce audio sul tuo account Dynamic Medie:**
+**Per abilitare il supporto per DASH, sottotitoli multipli e tracce audio multiple sul tuo account Dynamic Medie:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
 1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
 1. To enable (turn on) DASH, select the checkbox. -->
-1. Inizia per **configurazione di Dynamic Medie per DASH** - Da un Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
+1. Inizia con **configurazione di Dynamic Medie per DASH**. Da Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
 
-1. Dalla sezione **[!UICONTROL Configurazione console Web Adobe Experience Manager]** pagina, scorri fino al nome *Flag per funzione Streaming avanzato video di AEM Assets Dynamic Medie*.
+1. Dalla pagina **[!UICONTROL Configurazione console Web Adobe Experience Manager]**, scorri fino al nome *Flag della funzione di streaming avanzato video di AEM Assets Dynamic Medie*.
 
 1. A sinistra del nome, selezionare la casella di controllo per attivare (attivare) DASH.
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-1. Ora [utilizza l’Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+1. Ora [utilizza l&#39;Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 1. Per creare un caso di supporto, attieniti alle istruzioni e accertati di fornire le seguenti informazioni:
 
    * Nome del contatto principale, e-mail, telefono.
@@ -478,8 +478,8 @@ Contemporaneamente alla creazione di un caso di supporto Adobe per abilitare DAS
 1. Ricevi una notifica dopo il completamento da parte dell’Assistenza clienti.
 1. A questo punto è possibile effettuare una delle seguenti operazioni:
 
-   * Crea [predefinito visualizzatore video](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) come al solito.
-   * [Aggiungere più didascalie e tracce audio](#add-msma) al tuo video.
+   * Crea il [predefinito visualizzatore video](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) come al solito.
+   * [Aggiungi più didascalie e tracce audio](#add-msma) al tuo video.
 
 ## Visualizzare rapporti video {#viewing-video-reports}
 
@@ -487,7 +487,7 @@ Contemporaneamente alla creazione di un caso di supporto Adobe per abilitare DAS
 >
 >I rapporti video sono disponibili solo quando si esegue Dynamic Medie in modalità ibrida.
 
-I rapporti video visualizzano diverse metriche aggregate in un determinato periodo di tempo per aiutarti a monitorare che *pubblicato* i singoli video e i video aggregati funzionano come previsto. I seguenti dati sulle metriche principali sono aggregati per tutti i video pubblicati sull’intero sito web:
+I report video visualizzano diverse metriche aggregate in un determinato periodo di tempo per aiutarti a monitorare che *video pubblicati* singoli e aggregati stiano ottenendo le prestazioni previste. I seguenti dati sulle metriche principali sono aggregati per tutti i video pubblicati sull’intero sito web:
 
 * Inizio video
 * Percentuale completata
@@ -495,13 +495,13 @@ I rapporti video visualizzano diverse metriche aggregate in un determinato perio
 * Tempo totale su video
 * Video per visita
 
-Una tabella di tutti *pubblicato* Sono elencati anche i video, in modo da poter tenere traccia dei video più visualizzati sul sito web in base al totale degli avvii dei video.
+È inoltre presente una tabella di tutti i video *pubblicati* che ti consente di tenere traccia dei video visualizzati più in alto sul tuo sito Web in base al totale degli avvii dei video.
 
 Quando selezioni un nome video nell’elenco, viene visualizzato il rapporto di conservazione del pubblico (a discesa) del video sotto forma di un grafico a linee. Il grafico mostra il numero di visualizzazioni per un dato momento della riproduzione video. Quando si riproduce il video, la barra verticale viene sincronizzata con l&#39;indicatore di tempo nel lettore. Le cadute nei dati del grafico a linee indicano dove il pubblico abbandona il disinteresse.
 
 Se il video è stato codificato al di fuori di Adobe Experience Manager Dynamic Medie, il grafico di conservazione del pubblico (a discesa) e i dati della percentuale di riproduzione nella tabella non sono disponibili.
 
-Vedi anche [Configurare Cloud Service Dynamic Medie](/help/assets/config-dynamic.md).
+Vedi anche [Configurare i Cloud Service Dynamic Medie](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
@@ -509,20 +509,20 @@ Vedi anche [Configurare Cloud Service Dynamic Medie](/help/assets/config-dynamic
 
 Per impostazione predefinita, la prima volta che si immettono i rapporti video, il rapporto visualizza i dati video a partire dal primo del mese corrente e termina con la data del mese corrente. Tuttavia, puoi sovrascrivere l’intervallo di date predefinito specificando un intervallo di date personalizzato. Alla successiva immissione di Report video, viene utilizzato l&#39;intervallo di date specificato.
 
-Affinché i rapporti video funzionino correttamente, viene creato automaticamente un ID suite di rapporti quando vengono configurati i Cloud Service Dynamic Medie. Allo stesso tempo, l’ID suite di rapporti viene inviato al server di pubblicazione, in modo che sia disponibile per la funzione Copia URL quando visualizzi l’anteprima delle risorse. Tuttavia, questa funzionalità richiede che il server di pubblicazione sia già configurato. Se il server di pubblicazione non è configurato, puoi comunque eseguire la pubblicazione per visualizzare il rapporto video. Tuttavia, devi tornare alla configurazione cloud di Dynamic Medie e selezionare **[!UICONTROL OK]**.
+Affinché i rapporti video funzionino correttamente, viene creato automaticamente un ID suite di rapporti quando vengono configurati i Cloud Service Dynamic Medie. Allo stesso tempo, l’ID suite di rapporti viene inviato al server Publish in modo che sia disponibile per la funzione Copia URL quando visualizzi l’anteprima delle risorse. Tuttavia, questa funzionalità richiede che il server Publish sia già configurato. Se il server Publish non è configurato, puoi comunque pubblicare per visualizzare il rapporto video. Tuttavia, devi tornare alla configurazione cloud di Dynamic Medie e selezionare **[!UICONTROL OK]**.
 
-**Per visualizzare i rapporti video:**
+**Per visualizzare i report video:**
 
-1. Nell’angolo in alto a sinistra dell’Experience Manager, seleziona il logo dell’Experience Manager, quindi nella barra a sinistra seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti video]**.
+1. Nell&#39;angolo superiore sinistro dell&#39;Experience Manager, seleziona il logo dell&#39;Experience Manager, quindi nella barra a sinistra seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Assets]** > **[!UICONTROL Rapporti video]**.
 1. Nella pagina Rapporti video eseguire una delle operazioni seguenti:
 
-   * Nell&#39;angolo superiore destro, selezionare **Aggiorna rapporto video** icona.
+   * Nell&#39;angolo superiore destro selezionare l&#39;icona **Aggiorna report video**.
 Utilizzare Aggiorna solo se la data di fine del rapporto è il giorno corrente. In questo modo potrai vedere il tracciamento video che si è verificato dall’ultima volta che hai eseguito il rapporto.
 
-   * Nell&#39;angolo superiore destro, selezionare **Selettore data** icona.
-Specifica l’intervallo di date iniziale e finale per il quale desideri visualizzare i dati video, quindi seleziona **[!UICONTROL Esegui rapporto]**.
+   * Nell&#39;angolo superiore destro, seleziona l&#39;icona **Selezione data**.
+Specificare l&#39;intervallo di date iniziale e finale per il quale si desidera visualizzare i dati video, quindi selezionare **[!UICONTROL Esegui report]**.
 
-   La casella di gruppo Metriche principali identifica varie misurazioni aggregate per tutti *pubblicato* video nel sito.
+   La casella di gruppo Metriche principali identifica varie misurazioni aggregate per tutti i video *published* nel sito.
 
 1. Nella tabella in cui sono elencati i video più pubblicati, seleziona un nome per riprodurre il video e consulta il rapporto sulla fidelizzazione del pubblico (drop-off) del video.
 
@@ -530,9 +530,9 @@ Specifica l’intervallo di date iniziale e finale per il quale desideri visuali
 
 Se utilizzi un visualizzatore video predefinito fornito da Dynamic Medie o se hai creato un predefinito visualizzatore personalizzato basato su un visualizzatore video predefinito, non sono necessari ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se hai creato un visualizzatore video personalizzato basato sull’API SDK del visualizzatore di HTML5, utilizza i passaggi seguenti per assicurarti che il visualizzatore video invii eventi di tracciamento ai rapporti video di Dynamic Medie.
 
-Utilizza il [Guida di riferimento per i visualizzatori Dynamic Medie di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) e [API SDK di HTML5 Viewer](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
+Utilizza la [Guida di riferimento per visualizzatori Dynamic Medie Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) e l&#39;API [HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
 
-**Per visualizzare i rapporti video basati su un visualizzatore video creato con l’SDK del visualizzatore di Dynamic Medie HTML5:**
+**Per visualizzare i report video basati su un visualizzatore video creato con l&#39;SDK del visualizzatore di Dynamic Medie HTML5:**
 
 1. Passa a qualsiasi risorsa video pubblicata.
 1. Seleziona **[!UICONTROL Visualizzatori]** dall’elenco a discesa dell’angolo in alto a sinistra della pagina della risorsa.
@@ -541,17 +541,17 @@ Utilizza il [Guida di riferimento per i visualizzatori Dynamic Medie di Adobe](h
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Il `config2` Il parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per l’azienda che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe Analytics specifiche per il cliente.
+   Il parametro `config2` abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per l’azienda che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe Analytics specifiche per il cliente.
 
-   Il valore corretto per il parametro config2 si trova in entrambi **[!UICONTROL Codice di incorporamento]** e nella copia **[!UICONTROL URL]** funzione. Nell’URL dalla copia **[!UICONTROL URL]** , il parametro da cercare è `&config2=<value>` . Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
+   Il valore corretto per il parametro config2 si trova sia nella funzione **[!UICONTROL Incorpora codice]** che nella copia **[!UICONTROL URL]**. Nell&#39;URL dal comando di copia **[!UICONTROL URL]**, il parametro da cercare è `&config2=<value>`. Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
 
 1. Nel codice del visualizzatore video personalizzato, aggiungi AppMeasurementBridge .jsp alla pagina del visualizzatore eseguendo le seguenti operazioni:
 
-   * Innanzitutto, determina se è necessario `&preset` parametro.
+   * Determinare innanzitutto se è necessario il parametro `&preset`.
 
-     Se il `config2` il parametro è `companypreset`, tu sì *non* bisogno `&preset=parameter`.
+     Se il parametro `config2` è `companypreset`, *non* richiede `&preset=parameter`.
 
-     Se `config2` è qualsiasi altra cosa, imposta il parametro di preselezione allo stesso modo del `config2` parametro. Ad esempio, se `config2=companypreset-2`, aggiungi `&param2=companypreset-2` all’URL AppMeasurmentBridge.jsp.
+     Se `config2` è qualcos&#39;altro, impostare il parametro predefinito come parametro `config2`. Ad esempio, se `config2=companypreset-2`, aggiungi `&param2=companypreset-2` all&#39;URL AppMeasurmentBridge.jsp.
 
    * Quindi, aggiungi lo script AppMeasurementBridge.jsp:
 
@@ -559,15 +559,15 @@ Utilizza il [Guida di riferimento per i visualizzatori Dynamic Medie di Adobe](h
 
 1. Creare il componente TrackingManager eseguendo le operazioni seguenti:
 
-   * Dopo aver chiamato `s7sdk.Util.init();`, crea un’istanza di Tracking Manager per tenere traccia degli eventi aggiungendo gli elementi seguenti:
+   * Dopo aver chiamato `s7sdk.Util.init();`, creare un&#39;istanza di Tracking Manager per tenere traccia degli eventi aggiungendo quanto segue:
 
      `var trackingManager = new s7sdk.TrackingManager();`
 
    * Connettere i componenti a Tracking Manager effettuando le seguenti operazioni:
 
-     In `s7sdk.Event.SDK_READY` , collegare il componente di cui si desidera tenere traccia a TrackingManager.
+     Nel gestore eventi `s7sdk.Event.SDK_READY`, allegare il componente di cui si desidera tenere traccia a TrackingManager.
 
-     Ad esempio, se il componente è `videoPlayer`, aggiungi
+     Ad esempio, se il componente è `videoPlayer`, aggiungere
 
      `trackingManager.attach(videoPlayer);`
 
@@ -596,7 +596,7 @@ Utilizza il [Guida di riferimento per i visualizzatori Dynamic Medie di Adobe](h
 
 Con la funzionalità di didascalia multipla e traccia audio in Dynamic Medie, è possibile aggiungere facilmente più sottotitoli e tracce audio a un video primario. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
 
-![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di sottotitoli .VTT caricati e i file di tracce audio .MP3 caricati per un video.](assets-dm/msma-subtitle-audiotracks-tab2.png)
+![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di didascalia .VTT caricati e i file di traccia audio .MP3 caricati per un video.](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
 Alcuni dei casi d’uso da considerare per aggiungere più didascalie e tracce audio al video principale sono i seguenti:
 
@@ -604,11 +604,11 @@ Alcuni dei casi d’uso da considerare per aggiungere più didascalie e tracce a
 |--- |--- |
 | **Sottotitoli** | Supporto di più lingue |
 |  | Testo descrittivo per accessibilità |
-| **Tracce audio** | Supporto di più lingue |
+| **Brani audio** | Supporto di più lingue |
 |  | Brani di commento |
 |  | Audio descrittivo |
 
-Tutti [formati video supportati in Dynamic Medie](/help/assets/assets-formats.md) e tutti i visualizzatori video di Dynamic Medie, ad eccezione di Dynamic Medie *Video_360* visualizzatore: sono supportate per l&#39;utilizzo con più didascalie e tracce audio.
+Tutti i formati video [supportati in Dynamic Medie](/help/assets/assets-formats.md) e tutti i visualizzatori video Dynamic Medie, ad eccezione del visualizzatore *Video_360* di Dynamic Medie, sono supportati per l&#39;utilizzo con più didascalie e tracce audio.
 
 L’account Dynamic Medie supporta l’utilizzo di più didascalie e tracce audio tramite un interruttore delle funzioni che deve essere abilitato (attivato) dall’Assistenza clienti Adobe.
 
@@ -617,14 +617,14 @@ L’account Dynamic Medie supporta l’utilizzo di più didascalie e tracce audi
 Prima di aggiungere più didascalie e tracce audio al video, assicurati di avere già le seguenti informazioni:
 
 * Dynamic Medie è configurato in un ambiente AEM.
-* A [Il profilo video Dynamic Medie viene applicato alla cartella in cui vengono acquisiti i video](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Sul tuo account Dynamic Medie sono abilitati più sottotitoli e tracce audio](#enable-dash).
+* Alla cartella in cui vengono acquisiti i video viene applicato il profilo video [Dynamic Medie](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+* [Sul tuo account Dynamic Medie sono abilitate più didascalie e tracce audio](#enable-dash).
 
 I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltre, i file di traccia audio aggiunti sono supportati con il formato MP3.
 
 >[!IMPORTANT]
 >
->Tutti i video caricati *prima di* abilitazione del supporto di didascalie multiple e tracce audio sul tuo account Dynamic Medie, [deve essere rielaborato](/help/assets/processing-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di didascalia multipla e di traccia audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
+>Tutti i video caricati *prima* dell&#39;abilitazione del supporto di didascalie multiple e tracce audio sul tuo account Dynamic Medie, [devono essere rielaborati](/help/assets/processing-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di didascalia multipla e di traccia audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
 **Per aggiungere più didascalie e tracce audio al video:**
 
@@ -632,62 +632,62 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
 1. Passa alla risorsa video caricata a cui desideri aggiungere più didascalie e tracce audio.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
 1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
-   ![La risorsa video selezionata con il segno di spunta sopra l’immagine della miniatura video e Visualizza proprietà sono evidenziate sulla barra degli strumenti.](assets-dm/msma-selectedasset-propertiesbutton.png)*Risorsa video selezionata nella vista a schede.*
-1. Nella pagina Proprietà del video, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda.
+   ![Risorsa video selezionata con segno di spunta sull&#39;immagine miniatura video e Proprietà visualizzazione evidenziate sulla barra degli strumenti.](assets-dm/msma-selectedasset-propertiesbutton.png)*Risorsa video selezionata nella vista a schede.*
+1. Nella pagina Proprietà del video, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 
    >[!TIP]
-   >Se non vede il **[!UICONTROL Sottotitoli e tracce audio]** , significa una delle due cose seguenti:
+   >Se la scheda **[!UICONTROL Sottotitoli e tracce audio]** non è visualizzata, significa che è presente uno dei due elementi seguenti:
    >
-   >* Alla cartella in cui si trova il video selezionato non è assegnato alcun profilo video. In questo caso, vedi [Applicare un profilo video alla cartella](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
-   >* In alternativa, il video deve essere rielaborato da Dynamic Medie. In questo caso, vedi [Rielaborazione delle risorse in una cartella](/help/assets/processing-profiles.md#reprocessing-assets).
+   >* Alla cartella in cui si trova il video selezionato non è assegnato alcun profilo video. In tal caso, vedere [Applicare un profilo video alla cartella](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
+   >* In alternativa, il video deve essere rielaborato da Dynamic Medie. In questo caso, vedi [Rielabora risorse in una cartella](/help/assets/processing-profiles.md#reprocessing-assets).
    >
    >Dopo aver completato una delle attività di cui sopra, torna a questi passaggi.
 
    ![Scheda Sottotitoli e tracce audio nella pagina Proprietà.](assets-dm/msma-audiotracks2.png)*Scheda Sottotitoli e tracce audio nella pagina Proprietà del video.*
 
 1. (Facoltativo) Per aggiungere uno o più file di didascalia a un video, effettuate le seguenti operazioni:
-   * Seleziona **[!UICONTROL Carica sottotitoli]**.
+   * Seleziona **[!UICONTROL Carica didascalie]**.
    * Passa a uno o più file .vtt (Video Text Tracks) e selezionali, quindi aprili.
-   * Affinché i sottotitoli siano visibili sul lettore multimediale, *deve* aggiungi dettagli richiesti (metadati) su *ogni* file di didascalia caricato. Seleziona l’icona a forma di matita a destra del nome di un file di didascalia. In **Modifica didascalia** immetti i seguenti dettagli richiesti sul file, quindi seleziona **[!UICONTROL Salva]**. Ripeti questa procedura per ogni file di didascalia caricato:
+   * Affinché i sottotitoli siano visibili sul lettore multimediale, *devi* aggiungere i dettagli richiesti (metadati) su *ogni* file di sottotitoli caricato. Seleziona l’icona a forma di matita a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia**, immetti i seguenti dettagli richiesti sul file, quindi seleziona **[!UICONTROL Salva]**. Ripeti questa procedura per ogni file di didascalia caricato:
 
      | Metadati didascalia | Descrizione |
      |--- |--- |
-     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
+     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
      | Lingua | Selezionare la lingua della didascalia. |
-     | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo** : il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di fondo, la differenziazione degli oratori e altre informazioni rilevanti, insieme alla traduzione o trascrizione del dialogo, rendendo il contenuto più accessibile per gli individui non udenti o ipoudenti. |
-     | Etichetta | Testo visualizzato per il nome della didascalia nella **[!UICONTROL Seleziona audio o sottotitolo]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+     | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di fondo, la differenziazione degli altoparlanti e altre informazioni rilevanti, oltre alla traduzione o alla trascrizione della finestra di dialogo, rendendo il contenuto più accessibile per gli utenti non udenti o ipoudenti. |
+     | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o sottotitoli]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
 
      Se necessario, puoi modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
 1. (Facoltativo) Per aggiungere una o più tracce audio a un video, effettuate le seguenti operazioni:
    * Seleziona **[!UICONTROL Carica tracce audio]**.
    * Passa a uno o più file .mp3 e selezionali, quindi aprili.
-   * Per rendere visibili le tracce audio nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa sul lettore multimediale, *deve* aggiungi i dettagli richiesti su *ogni* file di traccia audio aggiunto. Selezionate l&#39;icona della matita a destra del nome di un file di traccia audio. In **Modifica traccia audio** , immettere i dettagli richiesti seguenti, quindi selezionare **[!UICONTROL Salva]**. Ripetere questa procedura per ogni file di traccia audio caricato.
+   * Affinché le tracce audio siano visibili nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** sul lettore multimediale, *devi* aggiungere i dettagli richiesti su *ogni* file di traccia audio aggiunto. Selezionate l&#39;icona della matita a destra del nome di un file di traccia audio. Nella finestra di dialogo **Modifica traccia audio**, immetti i dettagli richiesti seguenti, quindi seleziona **[!UICONTROL Salva]**. Ripetere questa procedura per ogni file di traccia audio caricato.
 
      | Metadati traccia audio | Descrizione |
      |--- |--- |
-     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per file di traccia audio o di didascalia aggiuntivi. |
+     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per altri file di traccia audio o di didascalia. |
      | Lingua | Selezionate la lingua della traccia audio. |
-     | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - La traccia audio originariamente allegata al video e rappresentata come `[Original]` nell’etichetta con `English` lingua selezionata per impostazione predefinita. Mentre **[!UICONTROL Etichetta]** e **[!UICONTROL Lingua]** può essere modificato in **[!UICONTROL Modifica traccia audio]** , vengono utilizzati i valori originali se il video principale viene rielaborato.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio** - Traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
-     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o sottotitolo]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original]` per impostazione predefinita. |
+     | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - La traccia audio originariamente allegata al video e rappresentata come `[Original]` nell&#39;etichetta con la lingua `English` selezionata per impostazione predefinita. Anche se è possibile modificare **[!UICONTROL Label]** e **[!UICONTROL Language]** nella finestra di dialogo **[!UICONTROL Modifica traccia audio]**, se il video principale viene rielaborato, per impostazione predefinita vengono utilizzati i valori originali.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio**: traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
+     | Etichetta | Testo visualizzato come nome della traccia audio nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o sottotitoli]** nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta audio associata a un video è impostata su `[Original]` per impostazione predefinita. |
 
      Se necessario, potete modificare i metadati della traccia audio in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
-1. Nell’angolo superiore destro della pagina, dal menu **[!UICONTROL Salva e chiudi]** elenco a discesa, seleziona **[!UICONTROL Salva]**. I file vengono caricati e inizia l’elaborazione dei metadati, come mostrato nella **Stato** dell&#39;interfaccia.
+1. Nell&#39;angolo superiore destro della pagina, dall&#39;elenco a discesa **[!UICONTROL Salva e chiudi]**, selezionare **[!UICONTROL Salva]**. I file vengono caricati e inizia l&#39;elaborazione dei metadati, come mostrato nella colonna **Stato** dell&#39;interfaccia.
 
    >[!NOTE]
    >
    >In base alle impostazioni di caching dell’istanza, l’elaborazione dei metadati può richiedere diversi minuti prima che venga visualizzata nell’anteprima e negli URL pubblicati.
 
-1. (Facoltativo) Se hai selezionato **[!UICONTROL Salva e chiudi]** nel passaggio precedente, invece di selezionare **[!UICONTROL Salva]**, è comunque possibile visualizzare lo stato di elaborazione dei file caricati. Consulta [Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati](#lifecycle-status-video).
-1. (Facoltativo) Visualizza l&#39;anteprima del video prima della pubblicazione per assicurarti che i sottotitoli e l&#39;audio funzionino come previsto. Consulta [Anteprima di un video con più didascalie e tracce audio](#preview-video-audio-subtitle)
-1. Pubblica il video. Consulta [Pubblicare le risorse](publishing-dynamicmedia-assets.md).
+1. (Facoltativo) Se hai selezionato **[!UICONTROL Salva e chiudi]** nel passaggio precedente, invece di selezionare **[!UICONTROL Salva]**, puoi comunque visualizzare lo stato di elaborazione dei file caricati. Consulta [Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati](#lifecycle-status-video).
+1. (Facoltativo) Visualizza l&#39;anteprima del video prima della pubblicazione per assicurarti che i sottotitoli e l&#39;audio funzionino come previsto. Vedi [Anteprima di un video con più didascalie e tracce audio](#preview-video-audio-subtitle)
+1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 
 #### Informazioni sull&#39;aggiunta di file di didascalia e traccia audio a un video già pubblicato
 
-Quando carichi altri file di didascalia o di traccia audio in un video già pubblicato, questi file avranno un `Processed` stato dopo che sono stati preparati, dopo il caricamento. A questo punto, puoi visualizzare in anteprima il video in Dynamic Medie per vedere o ascoltare i file appena caricati.
+Quando carichi altri file di didascalia o di traccia audio in un video già pubblicato, questi file avranno lo stato `Processed` dopo essere stati preparati, dopo il caricamento. A questo punto, puoi visualizzare in anteprima il video in Dynamic Medie per vedere o ascoltare i file appena caricati.
 
-Dopo l’anteprima, tuttavia, devi *pubblicare* il video per pubblicare anche i file di didascalia o di traccia audio appena aggiunti. Dopo la pubblicazione, i sottotitoli o l’audio diventano disponibili con l’URL pubblico di Dynamic Medie.
+Dopo l&#39;anteprima, tuttavia, è necessario *pubblicare* di nuovo il video per pubblicare anche i file di didascalia o di traccia audio appena aggiunti. Dopo la pubblicazione, i sottotitoli o l’audio diventano disponibili con l’URL pubblico di Dynamic Medie.
 
 >[!NOTE]
 >
@@ -697,37 +697,37 @@ Nel caso in cui Dynamic Medie sia stato configurato per la pubblicazione immedia
 
 >[!CAUTION]
 >
->Quando si caricano file di didascalia o file audio in un video pubblicato o non pubblicato, i file vengono eliminati se [*rielabora*](/help/assets/processing-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file di didascalia e di traccia audio nel video.
+>Quando si caricano file di didascalia o file audio in un video pubblicato o non pubblicato, i file vengono eliminati se si [*rielabora*](/help/assets/processing-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file di didascalia e di traccia audio nel video.
 
 #### Aggiungere più sottotitoli a un video che ha un URL esistente con modificatore sottotitoli
 
-Dynamic Medie supporta l’aggiunta di una didascalia singola con video tramite un modificatore URL. Consulta [Aggiungi didascalie al video](#adding-captions-to-video).
+Dynamic Medie supporta l’aggiunta di una didascalia singola con video tramite un modificatore URL. Vedi [Aggiungere didascalie al video](#adding-captions-to-video).
 
 Le modifiche apportate a più sottotitoli hanno la precedenza su una didascalia aggiunta tramite un modificatore URL per i video pubblicati.
 
-**Per aggiungere più sottotitoli a un video che ha un URL esistente con modificatore sottotitoli:**
+**Per aggiungere più sottotitoli a un video che ha un URL esistente con modificatore di sottotitoli:**
 
 1. Carica il file di didascalia già aggiunto come modificatore al video, in modo da poter gestire il file esplicitamente.
 1. Carica eventuali file di didascalia aggiuntivi, se necessario.
-1. Pubblica il video come di consueto.
+1. Publish il video come al solito.
 L’URL esistente con il modificatore didascalia ora può caricare più didascalie.
 
 ### Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati{#lifecycle-status-video}
 
-Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o traccia audio caricato nel video principale da **Sottotitoli e tracce audio** scheda di **Proprietà**.
+Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o traccia audio caricato nel video principale dalla scheda **Sottotitoli e tracce audio** di **Proprietà**.
 
 **Per visualizzare lo stato del ciclo di vita di un video:**
 
 1. Passa alla risorsa video di cui desideri visualizzare lo stato del ciclo di vita.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
 1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
-1. Nella pagina Proprietà, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda. Nella colonna Stato (Status), notate lo stato di ogni didascalia o file audio.
+1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**. Nella colonna Stato (Status), notate lo stato di ogni didascalia o file audio.
 
 | Stato traccia audio o didascalia | Descrizione |
 | --- | --- |
 | Elaborazione | Quando viene aggiunta e salvata una nuova didascalia o un nuovo file di traccia audio, il file entra in uno stato di &quot;Elaborazione&quot;. Dynamic Medie elabora il file allegando il manifesto di streaming al video principale. |
-| Elaborato | Al termine dell&#39;elaborazione, il file di didascalia o di traccia audio, o la traccia audio originale associata al video principale, appare in stato &quot;Elaborato&quot;. È possibile visualizzare in anteprima i file di didascalia e traccia audio che appaiono come &quot;Elaborati&quot; *prima di* pubblichi il video in diretta. |
-| Pubblicato | Uno stato &quot;Pubblicato&quot; rappresenta uno stato simile a &quot;Pubblicato&quot; per un video principale. Le risorse vengono pubblicate quando il video principale viene pubblicato e sono disponibili sull’URL pubblico di Dynamic Medie. |
+| Elaborato | Al termine dell&#39;elaborazione, il file di didascalia o di traccia audio, o la traccia audio originale associata al video principale, appare in stato &quot;Elaborato&quot;. Puoi visualizzare in anteprima i file di didascalia e di traccia audio che appaiono come &quot;Elaborati&quot; *prima* che il video venga pubblicato live. |
+| Pubblicato | Uno stato &quot;Pubblicato&quot; rappresenta uno stato simile a &quot;Pubblicato&quot; per un video principale. Le Assets vengono pubblicate quando il video principale viene pubblicato e sono disponibili sull’URL pubblico di Dynamic Medie. |
 | Non riuscito | Lo stato &quot;Non riuscito&quot; indica che l&#39;elaborazione di un file di didascalia o di traccia audio non è stata completata. Elimina la didascalia o il file di traccia audio e caricalo di nuovo. |
 | La pagina di cui è stata annullata la pubblicazione   | Quando si annulla esplicitamente la pubblicazione di un video principale pubblicato, vengono annullati anche i file di didascalia o di traccia audio aggiunti al video. |
 
@@ -737,13 +737,13 @@ Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o trac
 
 Per impostazione predefinita, l&#39;audio originale di un video è impostato come audio predefinito da riprodurre.
 
-Tuttavia, tutti i file di traccia audio caricati possono essere impostati come audio predefinito da riprodurre dopo il caricamento di un video nel visualizzatore. Nell’interfaccia utente Proprietà, sotto **Sottotitoli e tracce audio** , la scheda `Default` l&#39;etichetta viene applicata a destra del file di traccia audio per la riproduzione video.
+Tuttavia, tutti i file di traccia audio caricati possono essere impostati come audio predefinito da riprodurre dopo il caricamento di un video nel visualizzatore. Nell&#39;interfaccia utente Proprietà, nella scheda **Sottotitoli e tracce audio**, l&#39;etichetta `Default` viene applicata a destra del file di traccia audio per la riproduzione video.
 
 >[!NOTE]
 >
 >La riproduzione dell’audio predefinito può anche dipendere da quanto impostato nei seguenti browser:
 >
->* Chrome - Viene riprodotto l&#39;audio predefinito impostato nel video.
+>* Chrome - Viene riprodotto l&#39;audio di default impostato nel video.
 >* Safari - Se la lingua predefinita è impostata in Safari, l&#39;audio viene riprodotto con la lingua predefinita impostata, se disponibile con il manifesto del video. In caso contrario, viene riprodotto l&#39;audio predefinito impostato come parte delle proprietà di un video.
 
 **Per impostare l&#39;audio predefinito per un video con più tracce audio:**
@@ -751,49 +751,49 @@ Tuttavia, tutti i file di traccia audio caricati possono essere impostati come a
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
 1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
-1. Nella pagina Proprietà, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda.
-1. Sotto **Tracce audio** selezionare il file di traccia audio che si desidera impostare come predefinito per il video.
+1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
+1. Sotto l&#39;intestazione **Tracce audio**, selezionare il file di traccia audio che si desidera impostare come predefinito del video.
 1. Seleziona **[!UICONTROL Imposta come predefinito]**.
-In **Imposta come predefinito** finestra di dialogo, seleziona **[!UICONTROL Sostituisci]**.
+Nella finestra di dialogo **Imposta come predefinito**, seleziona **[!UICONTROL Sostituisci]**.
 
-   ![L&#39;intestazione Tracce audio con un nome di file di traccia audio selezionato ed evidenziato il pulsante Imposta come predefinito.](assets-dm/msma-defaultaudiotrack2.png)*Impostazione della traccia audio predefinita per un video.*
+   ![L&#39;intestazione Tracce audio con il nome del file di traccia audio selezionato ed evidenziato il pulsante Imposta come predefinito.](assets-dm/msma-defaultaudiotrack2.png)*Impostazione della traccia audio predefinita per un video.*
 
-1. Nell’angolo superiore destro, seleziona **[!UICONTROL Salva e chiudi]**.
-1. Pubblica il video. Consulta [Pubblicare le risorse](publishing-dynamicmedia-assets.md).
+1. Nell&#39;angolo superiore destro selezionare **[!UICONTROL Salva e chiudi]**.
+1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 
 ### Anteprima di un video con più didascalie e tracce audio{#preview-video-audio-subtitle}
 
 Dopo aver caricato i file di didascalia e di traccia audio in un video ed elaborato, potete utilizzare il visualizzatore video Dynamic Medie (o altri tipi di visualizzatore, se necessario) per visualizzare in anteprima tutte le diverse tracce. L&#39;anteprima consente di vedere l&#39;aspetto e l&#39;audio del video per i clienti e di assicurarsi che si comporti come previsto.
 
-Quando sei soddisfatto del video, puoi [pubblicarlo](publishing-dynamicmedia-assets.md) utilizzando uno dei metodi seguenti.
+Se il video è soddisfacente, puoi [pubblicarlo](publishing-dynamicmedia-assets.md) utilizzando uno dei seguenti metodi.
 
-Consulta [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
-Consulta [Collegare gli URL all’applicazione web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
-Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+Consulta [Collegare gli URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
+Consulta [Aggiungere Dynamic Medie Assets alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 >[!NOTE]
 >
 >La scheda di anteprima Experience Manager predefinita non mostra più didascalie e tracce audio. Il motivo è che questi brani sono associati a Dynamic Medie e possono essere visualizzati solo utilizzando l&#39;anteprima di Dynamic Medie Viewer.
 
-**Per visualizzare in anteprima un video con più sottotitoli e tracce audio:**
+**Per visualizzare in anteprima un video con più didascalie e tracce audio:**
 
-1. In entrata **[!UICONTROL Risorse]**, passa a un video esistente a cui sono stati aggiunti più sottotitoli e tracce audio.
+1. In **[!UICONTROL Assets]**, passa a un video esistente a cui sono stati aggiunti più sottotitoli e tracce audio.
 1. Fai clic sulla risorsa video per aprirla in modalità anteprima.
-1. Nella pagina di anteprima, nell’angolo superiore sinistro della pagina, seleziona l’elenco a discesa, quindi fai clic su **[!UICONTROL Visualizzatori]**.
+1. Nella pagina di anteprima, nell&#39;angolo superiore sinistro della pagina, seleziona l&#39;elenco a discesa, quindi seleziona **[!UICONTROL Visualizzatori]**.
 
-   ![Elenco a discesa che mostra l’opzione Visualizzatori.](assets-dm/msma-selectviewers.png)
+   ![Elenco a discesa con l&#39;opzione Visualizzatori.](assets-dm/msma-selectviewers.png)
 
-1. Nell&#39;elenco Visualizzatori selezionare il visualizzatore che si desidera utilizzare per l&#39;anteprima video. Ad esempio, la schermata seguente mostra **[!UICONTROL Video]** visualizzatore selezionato.
+1. Nell&#39;elenco Visualizzatori selezionare il visualizzatore che si desidera utilizzare per l&#39;anteprima video. Ad esempio, la schermata seguente mostra il visualizzatore **[!UICONTROL Video]** selezionato.
 
-   ![Selezione del visualizzatore video dall’elenco a discesa Visualizzatori.](assets-dm/msma-dmviewerselected.png)
+   ![Selezione del visualizzatore video dall&#39;elenco a discesa Visualizzatori.](assets-dm/msma-dmviewerselected.png)
 
 1. Nell&#39;angolo in basso a destra, a sinistra dell&#39;icona del volume, selezionare l&#39;icona a forma di fumetto, quindi selezionare l&#39;audio o la didascalia che si desidera ascoltare o vedere o entrambi. Se lo desideri, in Sottotitoli puoi selezionare **[!UICONTROL Disattivato]** per non visualizzare sottotitoli.
 
-   ![L&#39;elenco a comparsa Audio e didascalie nel visualizzatore video.](assets-dm/msma-selectaudiosubtitle.png)*Simulazione di un utente che seleziona l’audio e la didascalia per la riproduzione video.*
+   ![Elenco a comparsa Audio e didascalie nel visualizzatore video.](assets-dm/msma-selectaudiosubtitle.png)*Simulazione di un utente che seleziona l&#39;audio e la didascalia per la riproduzione del video.*
 
-1. Per iniziare la riproduzione, seleziona il **[!UICONTROL Play]** pulsante.
-Osserva **[!UICONTROL URL]** e **[!UICONTROL Incorpora]** nell&#39;angolo inferiore sinistro. Utilizzare questi pulsanti per [collega l’URL del video alla tua applicazione web](/help/assets/linking-urls-to-yourwebapplication.md) o a [incorporare il video in una pagina web](/help/assets/embed-code.md), rispettivamente.
-1. Nell’angolo superiore destro della pagina di anteprima, seleziona **[!UICONTROL Chiudi]**.
+1. Per iniziare la riproduzione, seleziona il pulsante **[!UICONTROL Riproduci]** del video.
+Osserva i pulsanti **[!UICONTROL URL]** e **[!UICONTROL Incorpora]** nell&#39;angolo inferiore sinistro. Utilizza questi pulsanti per [collegare l&#39;URL del video all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md) o per [incorporare il video rispettivamente in una pagina Web](/help/assets/embed-code.md).
+1. Selezionare **[!UICONTROL Chiudi]** nell&#39;angolo superiore destro della pagina di anteprima.
 
 ### Eliminare i file di didascalia o di traccia audio da un video
 
@@ -806,14 +806,14 @@ Non è possibile eliminare la traccia audio originale estratta da un video princ
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
 1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
-1. Nella pagina Proprietà, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda.
+1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 1. Effettuare una delle seguenti operazioni:
 
-   * Sottotitoli: sotto **Sottotitoli** , seleziona uno o più file di didascalia da eliminare dal video, quindi fai clic su **[!UICONTROL Elimina]**.
-   * Tracce audio - Sotto il **Tracce audio** , seleziona uno o più file di traccia audio da eliminare dal video, quindi fai clic su **[!UICONTROL Elimina]**.
+   * Sottotitoli: sotto l&#39;intestazione **Sottotitoli**, seleziona uno o più file di sottotitoli da eliminare dal video, quindi seleziona **[!UICONTROL Elimina]**.
+   * Tracce audio: sotto l&#39;intestazione **Tracce audio**, selezionare uno o più file di traccia audio che si desidera eliminare dal video, quindi selezionare **[!UICONTROL Elimina]**.
 
 1. Nella finestra di dialogo Elimina selezionare **[!UICONTROL OK]**.
-1. Pubblica il video.
+1. Publish il video.
 
 ### Scarica i file di didascalia o di traccia audio caricati in un video
 
@@ -826,11 +826,11 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
 1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
-1. Nella pagina Proprietà, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda.
+1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 1. Effettuare una delle seguenti operazioni:
 
-   * Sottotitoli: sotto **Sottotitoli** , seleziona uno o più file di didascalia da scaricare dal video, quindi fai clic su **[!UICONTROL Scarica]**.
-   * Tracce audio - Sotto il **Tracce audio** , seleziona uno o più file di traccia audio da scaricare dal video, quindi fai clic su **[!UICONTROL Scarica]**.
+   * Sottotitoli: sotto l&#39;intestazione **Sottotitoli**, seleziona uno o più file di sottotitoli da scaricare dal video, quindi seleziona **[!UICONTROL Scarica]**.
+   * Tracce audio: sotto l&#39;intestazione **Tracce audio**, selezionare uno o più file di traccia audio da scaricare dal video, quindi selezionare **[!UICONTROL Scarica]**.
 
 1. Nella finestra di dialogo Scarica impostare le opzioni seguenti:
 
@@ -839,9 +839,9 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
    | Salva con nome | Utilizzare il nome file predefinito specificato nel campo di testo Salva con nome oppure specificare un nome personalizzato. |
    | Crea una cartella separata per ogni risorsa | Creare una cartella per ogni file di didascalia o di traccia audio selezionato per il download. |
    | E-mail | Utilizza il tuo programma e-mail predefinito per inviare il file .zip a un indirizzo e-mail specificato. |
-   | Risorse | Specifica il numero di file da scaricare e la dimensione totale combinata di tutti i file selezionati. Deselezionando questa opzione, il valore **[!UICONTROL Scarica]** , impedendo il download di qualsiasi file. |
+   | Risorse | Specifica il numero di file da scaricare e la dimensione totale combinata di tutti i file selezionati. Deselezionando questa opzione, il pulsante **[!UICONTROL Scarica]** viene disattivato, impedendo di scaricare qualsiasi file. |
 1. Seleziona **[!UICONTROL Scarica]**.
-1. Pubblica il video. Consulta [Pubblicare le risorse](publishing-dynamicmedia-assets.md).
+1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 
 
 
@@ -852,7 +852,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
 
 >[!IMPORTANT]
 >
->Adobe consiglia di: [abilitare capacità di didascalia multipla e traccia audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
+>L&#39;Adobe consiglia di [abilitare la funzionalità di didascalia multipla e traccia audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
 
 Puoi estendere la portata dei tuoi video ai mercati globali aggiungendo sottotitoli ai singoli video o ai set di video adattivi. Aggiungendo i sottotitoli, si evita di duplicare l&#39;audio o di utilizzare madrelingua per registrare nuovamente l&#39;audio per ogni lingua. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli delle lingue straniere vengono visualizzati in modo che persone di lingue diverse possano ancora comprendere la porzione audio.
 
@@ -862,11 +862,11 @@ I sottotitoli codificati consentono inoltre una maggiore accessibilità alle per
 >
 >Il lettore video utilizzato deve supportare la visualizzazione dei sottotitoli.
 
-Vedi anche [Accessibilità in Dynamic Medie](/help/assets/accessibility-dm.md).
+Vedere anche [Accessibilità in Dynamic Medie](/help/assets/accessibility-dm.md).
 
 Dynamic Medie converte i file di didascalia in formato JSON (JavaScript Object Notation). Questa conversione ti consente di incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi eseguire la ricerca per indicizzazione e indicizzare il contenuto per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Consulta [Distribuisci contenuti statici (non immagine)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) nel *Guida all’API per il server e il rendering immagini di Dynamic Medie* per ulteriori informazioni sull’utilizzo della funzione JSON in un URL.
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Server statico (non immagine)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) nella *Guida API di Dynamic Medie Image Server e rendering*.
 
 **Per aggiungere sottotitoli codificati a un video:**
 
@@ -874,7 +874,7 @@ Consulta [Distribuisci contenuti statici (non immagine)](https://experienceleagu
 
    Assicurati che il file creato segua lo standard WebVTT (Web Video Text Tracks). L&#39;estensione del nome file dei sottotitoli è .vtt. Ulteriori informazioni sullo standard per i sottotitoli WebVTT.
 
-   Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/webvtt/).
+   Vedere [WebVTT: formato delle tracce di testo per video Web](https://w3c.github.io/webvtt/).
 
    Esistono molti siti Web che offrono sia strumenti e servizi gratuiti che premium che è possibile utilizzare per creare file di sottotitoli/sottotitoli WebVTT al di fuori di Dynamic Medie. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
@@ -884,7 +884,7 @@ Consulta [Distribuisci contenuti statici (non immagine)](https://experienceleagu
 
    In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
-   Seguire le istruzioni visualizzate da un sito per creare e salvare il file WebVTT. Al termine, copiare il contenuto del file di didascalia e incollarlo in un editor di testo normale e salvarlo con un `.vtt` estensione del nome file.
+   Seguire le istruzioni visualizzate da un sito per creare e salvare il file WebVTT. Al termine, copiare il contenuto del file di didascalia e incollarlo in un editor di testo normale e salvarlo con l&#39;estensione `.vtt`.
 
    >[!NOTE]
    >
@@ -893,25 +893,25 @@ Consulta [Distribuisci contenuti statici (non immagine)](https://experienceleagu
    In genere, si desidera assegnare al file VTT della didascalia lo stesso nome del file video e aggiungerlo alla lingua locale, ad esempio -EN, -FR o -DE. In questo modo, è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
 
 1. Ad Experience Manager, carica il file di didascalia WebVTT in DAM.
-1. Accedi a *pubblicato* risorsa video da associare al file di didascalia caricato.
+1. Passa alla *risorsa video pubblicata* che vuoi associare al file di didascalia caricato.
 
    Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse.
 
-   Consulta [Pubblicare le risorse](/help/assets/publishing-dynamicmedia-assets.md).
+   Consulta [Risorse Publish](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Effettua una delle operazioni seguenti:
 
-   * Per visualizzare un video a comparsa, seleziona **[!UICONTROL URL]**. Nella finestra di dialogo URL, seleziona e copia l’URL negli Appunti, quindi trascina l’URL in un semplice editor di testo. Aggiungi all’URL copiato del video la seguente sintassi:
+   * Per visualizzare un video popup, seleziona **[!UICONTROL URL]**. Nella finestra di dialogo URL, seleziona e copia l’URL negli Appunti, quindi trascina l’URL in un semplice editor di testo. Aggiungi all’URL copiato del video la seguente sintassi:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-     Osserva `,1` alla fine del percorso della didascalia. Immediatamente dopo il `.vtt` estensione del nome file nel percorso, puoi facoltativamente abilitare (attivare) o disabilitare (disattivare) il pulsante sottotitoli codificati sulla barra del lettore video impostando su `,1` o `,0`, rispettivamente.
+     Annotare `,1` alla fine del percorso della didascalia. Subito dopo l&#39;estensione del nome file `.vtt` nel percorso, è possibile abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando rispettivamente su `,1` o `,0`.
 
-   * Per un’esperienza di visualizzazione video incorporata, seleziona **[!UICONTROL Codice di incorporamento]**. Nella finestra di dialogo Incorpora codice, seleziona e copia il codice da incorporare negli Appunti, quindi incolla il codice in un semplice editor di testo. Aggiungi il codice da incorporare copiato con la seguente sintassi:
+   * Per un&#39;esperienza di visualizzazione video incorporata, selezionare **[!UICONTROL Codice di incorporamento]**. Nella finestra di dialogo Incorpora codice, seleziona e copia il codice da incorporare negli Appunti, quindi incolla il codice in un semplice editor di testo. Aggiungi il codice da incorporare copiato con la seguente sintassi:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     Osserva `,1` alla fine del percorso della didascalia. Immediatamente dopo il `.vtt` estensione del nome file nel percorso, puoi facoltativamente abilitare (attivare) o disabilitare (disattivare) il pulsante sottotitoli codificati sulla barra del lettore video impostando su `,1` o `,0`, rispettivamente.
+     Annotare `,1` alla fine del percorso della didascalia. Subito dopo l&#39;estensione del nome file `.vtt` nel percorso, è possibile abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando rispettivamente su `,1` o `,0`.
 
 ## Aggiungere marcatori capitolo al video {#adding-chapter-markers-to-video}
 
@@ -921,7 +921,7 @@ Per semplificare la visualizzazione e la navigazione dei video lunghi, aggiungi 
 >
 >Il lettore video utilizzato deve supportare l’uso dei marcatori capitolo. I lettori video Dynamic Medie supportano i contrassegni dei capitoli, ma non i lettori video di terze parti.
 
-Se lo desideri, puoi creare un visualizzatore video personalizzato con i capitoli e aggiungerlo al tuo marchio, invece di utilizzare un predefinito visualizzatore video. Per istruzioni sulla creazione di un visualizzatore HTML5 personalizzato con navigazione dei capitoli, nell’API SDK del visualizzatore AdobeHTML 5, fai riferimento all’intestazione &quot;Personalizzazione del comportamento con i modificatori&quot; sotto le classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la [API SDK di HTML5 Viewer](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentazione.
+Se lo desideri, puoi creare un visualizzatore video personalizzato con i capitoli e aggiungerlo al tuo marchio, invece di utilizzare un predefinito visualizzatore video. Per istruzioni sulla creazione di un visualizzatore HTML5 personalizzato con navigazione dei capitoli, nell&#39;API SDK del visualizzatore Adobe HTML5, fai riferimento all&#39;intestazione &quot;Personalizzazione del comportamento con i modificatori&quot; nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la documentazione dell&#39;API SDK [HTML5 Viewer](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -947,20 +947,20 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-Nell’esempio precedente, `Chapter 1` è l’identificatore del cue ed è facoltativo. Il tempo di cue di `00:00:000 --> 01:04:364` specifica l&#39;ora di inizio e di fine del capitolo, in `00:00:000` formato. Le ultime tre cifre sono millisecondi e possono essere lasciate come `000`, se preferita. Titolo del capitolo di `The bicycle store behind it all` è la descrizione effettiva del contenuto del capitolo. L&#39;identificatore del cue, il tempo di cue iniziale e il titolo del capitolo vengono visualizzati in una finestra a comparsa del lettore video quando un utente passa il puntatore del mouse su un punto di cue visivo nella timeline del video.
+Nell&#39;esempio precedente, `Chapter 1` è l&#39;identificatore del cue ed è facoltativo. L&#39;ora di cue di `00:00:000 --> 01:04:364` specifica l&#39;ora di inizio e l&#39;ora di fine del capitolo, nel formato `00:00:000`. Le ultime tre cifre sono millisecondi e possono essere lasciate come `000`, se lo si desidera. Il titolo del capitolo di `The bicycle store behind it all` è la descrizione effettiva del contenuto del capitolo. L&#39;identificatore del cue, il tempo di cue iniziale e il titolo del capitolo vengono visualizzati in una finestra a comparsa del lettore video quando un utente passa il puntatore del mouse su un punto di cue visivo nella timeline del video.
 
-Poiché si utilizza un visualizzatore video di HTML5, assicurarsi che il file del capitolo creato segua lo standard WebVTT (Web Video Text Tracks). L’estensione del nome file del capitolo è `.vtt`. Ulteriori informazioni sullo standard per i sottotitoli WebVTT.
+Poiché si utilizza un visualizzatore video di HTML5, assicurarsi che il file del capitolo creato segua lo standard WebVTT (Web Video Text Tracks). L&#39;estensione del nome file del capitolo è `.vtt`. Ulteriori informazioni sullo standard per i sottotitoli WebVTT.
 
-Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/webvtt/)
+Vedere [WebVTT: formato delle tracce di testo per video Web](https://w3c.github.io/webvtt/)
 
-**Per aggiungere la navigazione ai capitoli video:**
+**Per aggiungere la navigazione del capitolo video:**
 
-1. Salva il `.vtt` file con codifica UTF8, per evitare problemi con la rappresentazione dei caratteri nel testo del titolo del capitolo.
+1. Salvare il file `.vtt` nella codifica UTF8 per evitare problemi con la rappresentazione dei caratteri nel testo del titolo del capitolo.
 
    In genere, si desidera assegnare al file VTT del capitolo lo stesso nome del file video e aggiungerlo ai capitoli. In questo modo, è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
 1. Ad Experience Manager, carica il file del capitolo WebVTT.
 
-   Consulta [Caricamento risorse](/help/assets/manage-assets.md#uploading-assets).
+   Vedi [Caricamento di Assets](/help/assets/manage-assets.md#uploading-assets).
 
 1. Effettua una delle operazioni seguenti:
 
@@ -970,20 +970,20 @@ Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/w
        <td>Per un'esperienza di visualizzazione video popup</td>
        <td>
        <ol>
-       <li>Accedi a <i>pubblicato </i>risorsa video da associare al file del capitolo caricato. Gli URL sono disponibili per la copia solo <i>dopo</i> la prima <i>pubblicazione</i> delle risorse. Consulta <a href="/help/assets/publishing-dynamicmedia-assets.md">Pubblicazione delle risorse.</a></li>
-       <li>Dal menu a discesa, quindi fai clic su <strong>Visualizzatori</strong>.</li>
+       <li>Passa alla <i>risorsa video </i> pubblicata che desideri associare al file del capitolo caricato. Gli URL sono disponibili per la copia solo <i>dopo</i> la prima <i>pubblicazione</i> delle risorse. Vedi <a href="/help/assets/publishing-dynamicmedia-assets.md">Pubblicazione di Assets.</a></li>
+       <li>Dal menu a discesa, fare clic su <strong>Visualizzatori</strong>.</li>
        <li>Nella barra a sinistra, fai clic sul nome del predefinito per visualizzatori video. Un’anteprima del video viene aperta in una pagina separata.</li>
        <li>Nella barra a sinistra, in basso, fai clic su <strong>URL</strong>.</li>
        <li>Nella finestra di dialogo URL, seleziona e copia l’URL negli Appunti, quindi trascina l’URL in un semplice editor di testo.</li>
-       <li>Aggiungi l’URL copiato del video con la seguente sintassi per associarlo all’URL copiato nel file del capitolo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>Aggiungi l'URL copiato del video con la seguente sintassi per associarlo all'URL copiato nel file del capitolo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
-       <td>Per un’esperienza di visualizzazione video incorporata<br /> </td>
+       <td>Per un'esperienza di visualizzazione video incorporata<br /> </td>
        <td>
        <ol>
-       <li>Accedi a <i>pubblicato </i>risorsa video da associare al file del capitolo caricato. Gli URL sono disponibili per la copia solo <i>dopo</i> la prima <i>pubblicazione</i> delle risorse. Consulta <a href="/help/assets/publishing-dynamicmedia-assets.md">Pubblicazione delle risorse.</a></li>
-       <li>Dal menu a discesa, quindi fai clic su <strong>Visualizzatori</strong>.</li>
+       <li>Passa alla <i>risorsa video </i> pubblicata che desideri associare al file del capitolo caricato. Gli URL sono disponibili per la copia solo <i>dopo</i> la prima <i>pubblicazione</i> delle risorse. Vedi <a href="/help/assets/publishing-dynamicmedia-assets.md">Pubblicazione di Assets.</a></li>
+       <li>Dal menu a discesa, fare clic su <strong>Visualizzatori</strong>.</li>
        <li>Nella barra a sinistra, fai clic sul nome del predefinito per visualizzatori video. Un’anteprima del video viene aperta in una pagina separata.</li>
        <li>Nella barra a sinistra, in basso, fai clic su <strong>Incorpora</strong>.</li>
        <li>Nella finestra di dialogo Incorpora codice, seleziona e copia l’intero codice negli Appunti, quindi incollalo in un semplice editor di testo.</li>
@@ -997,7 +997,7 @@ Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/w
 
 Una miniatura video è una versione di dimensioni ridotte di un fotogramma video o di una risorsa immagine che rappresenta il video per il cliente. La miniatura serve a incoraggiare un cliente a selezionare il video.
 
-A tutti i video dell&#39;Experience Manager deve essere associata una miniatura; non è possibile eliminare una miniatura senza sostituirla. Per impostazione predefinita, quando caricate un video in Experience Manager, il primo fotogramma viene utilizzato come miniatura. Tuttavia, puoi personalizzare la miniatura a scopo di branding o di ricerca visiva, ad esempio. Quando si personalizza una miniatura video, è possibile riprodurre il video e metterlo in pausa sul fotogramma che si desidera utilizzare. In alternativa, puoi selezionare una risorsa di immagine che hai già caricato e *pubblicato* nel gestore delle risorse digitali.
+A tutti i video dell&#39;Experience Manager deve essere associata una miniatura; non è possibile eliminare una miniatura senza sostituirla. Per impostazione predefinita, quando caricate un video in Experience Manager, il primo fotogramma viene utilizzato come miniatura. Tuttavia, puoi personalizzare la miniatura a scopo di branding o di ricerca visiva, ad esempio. Quando si personalizza una miniatura video, è possibile riprodurre il video e metterlo in pausa sul fotogramma che si desidera utilizzare. In alternativa, puoi selezionare una risorsa immagine che hai già caricato e *pubblicato* nel tuo gestore di risorse digitali.
 
 Un’immagine di miniatura video personalizzata selezionata da un video non viene estratta e salvata in DAM come risorsa separata e distinta. Tuttavia, una miniatura video personalizzata selezionata da una risorsa immagine esistente viene salvata in JCR. Il percorso della risorsa selezionata viene memorizzato nel nodo della risorsa video come nell’esempio di percorso seguente:
 
@@ -1016,42 +1016,42 @@ Questi passaggi si applicano solo a Dynamic Medie in esecuzione in modalità &qu
 1. Accertati di aver già eseguito le seguenti operazioni:
 
    * È stata creata una cartella per le risorse video.
-   * [Applicare un profilo video alla cartella](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+   * [Applica un profilo video alla cartella](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
-   * [Ha caricato i tuoi video nella cartella](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+   * [I tuoi video sono stati caricati nella cartella](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Passa a una risorsa video caricata di cui desideri modificare l’immagine in miniatura.
-1. Nella modalità di selezione delle risorse da **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**, seleziona la risorsa video.
-1. Sulla barra degli strumenti, seleziona **[!UICONTROL Proprietà]** (un cerchio contenente una &quot;i&quot;).
-1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Cambia miniatura]**.
+1. In modalità di selezione delle risorse da **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**, seleziona la risorsa video.
+1. Sulla barra degli strumenti, seleziona l&#39;icona **[!UICONTROL Proprietà]** (un cerchio con una &quot;i&quot; all&#39;interno).
+1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Modifica miniatura]**.
 1. Nella pagina Modifica miniatura eseguire una delle operazioni seguenti:
 
    * Per utilizzare un fotogramma del video come nuova miniatura:
 
-      * Sulla barra degli strumenti, seleziona **[!UICONTROL Seleziona fotogramma da video]**.
+      * Sulla barra degli strumenti, selezionare **[!UICONTROL Seleziona fotogramma da video]**.
       * Selezionare il pulsante Riproduci, quindi selezionare il pulsante Pausa sul fotogramma che si desidera catturare come nuova miniatura del video.
 
    * Per utilizzare una risorsa immagine come nuova miniatura:
 
-      * Sulla barra degli strumenti, seleziona **[!UICONTROL Seleziona miniatura da risorse]**.
+      * Sulla barra degli strumenti, selezionare **[!UICONTROL Seleziona miniatura da Assets]**.
       * Seleziona **[!UICONTROL Seleziona miniatura]**.
       * Passa a una risorsa immagine caricata e pubblicata in precedenza che desideri utilizzare. La risorsa viene ridimensionata automaticamente in modo da fungere da immagine miniatura per il video.
       * Seleziona la risorsa immagine, quindi seleziona **[!UICONTROL Seleziona]**.
 
 1. Nella pagina Modifica miniatura, seleziona **[!UICONTROL Salva modifica]**.
-1. Nella pagina Proprietà del video, nell’angolo superiore destro, seleziona **[!UICONTROL Salva e chiudi]**.
+1. Nella pagina Proprietà del video, nell&#39;angolo superiore destro, seleziona **[!UICONTROL Salva e chiudi]**.
 
 ## Informazioni sulle miniature video in Dynamic Medie - Modalità ibrida {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
 Puoi scegliere una delle dieci immagini in miniatura generate automaticamente da Dynamic Medie da aggiungere al video. Il lettore video mostra la miniatura selezionata quando una risorsa video viene utilizzata con il componente Dynamic Medie nell’ambiente di authoring di Experience Manager Sites, Experience Manager Mobile o Experienci Manager Screens. La miniatura funge da immagine statica che rappresenta al meglio il contenuto dell’intero video e incoraggia ulteriormente gli utenti a fare clic sul pulsante Play.
 
-In base al tempo totale del video, Dynamic Medie acquisisce dieci miniature (impostazione predefinita). Le immagini vengono acquisite a un tasso dell&#39;1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% e 91% nel video. Le dieci miniature persistono, il che significa che se decidi di scegliere un’altra miniatura in un secondo momento, non è necessario rigenerare la serie. Puoi visualizzare in anteprima le dieci immagini in miniatura e quindi selezionare quella che desideri usare con il video. Se desideri impostare l’impostazione predefinita, puoi utilizzare CRXDE Liti per configurare l’intervallo di tempo in cui vengono generate le immagini in miniatura. Ad esempio, se desideri generare solo una serie di quattro immagini miniatura con spaziatura uniforme dal video, puoi configurare l’intervallo in modo che sia compreso tra 24%, 49%, 74% e 99%.
+In base al tempo totale del video, Dynamic Medie acquisisce dieci miniature (impostazione predefinita). Le immagini vengono acquisite a un tasso dell&#39;1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% e 91% nel video. Le dieci miniature persistono, il che significa che se decidi di scegliere un’altra miniatura in un secondo momento, non è necessario rigenerare la serie. Puoi visualizzare in anteprima le dieci immagini in miniatura e quindi selezionare quella che desideri usare con il video. Se desideri impostare l’impostazione predefinita, puoi utilizzare CRXDE Lite per configurare l’intervallo di tempo in cui vengono generate le immagini in miniatura. Ad esempio, se desideri generare solo una serie di quattro immagini miniatura con spaziatura uniforme dal video, puoi configurare l’intervallo in modo che sia compreso tra 24%, 49%, 74% e 99%.
 
 Idealmente, puoi aggiungere una miniatura video in qualsiasi momento dopo aver caricato il video, ma prima di pubblicarlo sul sito web.
 
 Se lo desideri, puoi scegliere di caricare una miniatura personalizzata per rappresentare il video invece di utilizzare una miniatura generata da Dynamic Medie. Ad esempio, puoi creare un’immagine miniatura personalizzata con il titolo del video, un’immagine di apertura accattivante o un’immagine specifica acquisita dal video. L’immagine miniatura video personalizzata caricata deve avere una risoluzione massima di 1280 x 720 pixel (larghezza minima di 640 pixel) e non superare i 2 MB.
 
-Vedi anche [Informazioni sulle miniature video in Dynamic Medie - Modalità Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
+Vedi anche [Informazioni sulle miniature video in Dynamic Medie - modalità Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
 ### Aggiungi una miniatura video {#adding-a-video-thumbnail}
 
@@ -1061,46 +1061,46 @@ Questi passaggi si applicano solo a Dynamic Medie in esecuzione in modalità ibr
 
 1. Passa a una risorsa video caricata a cui desideri aggiungere una miniatura video.
 1. Nella modalità di selezione delle risorse, seleziona la risorsa video dalla Vista a elenco o dalla Vista a schede.
-1. Sulla barra degli strumenti, seleziona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente una &quot;i&quot;).
-1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Cambia miniatura]**.
-1. Nella pagina Modifica miniatura, sulla barra degli strumenti, seleziona **[!UICONTROL Seleziona frame]**.
+1. Sulla barra degli strumenti, selezionare l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente una &quot;i&quot;).
+1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Modifica miniatura]**.
+1. Nella pagina Cambia miniatura, sulla barra degli strumenti, selezionare **[!UICONTROL Seleziona fotogramma]**.
 
    Dynamic Medie genera una serie di miniature dal video, in base all&#39;intervallo di tempo predefinito o personalizzato.
 
 1. Visualizza l&#39;anteprima delle immagini in miniatura generate, quindi seleziona quella che desideri aggiungere al video.
 1. Seleziona **[!UICONTROL Salva modifica]**.
 
-   L&#39;immagine miniatura del video viene aggiornata in modo da utilizzare la miniatura selezionata. Se successivamente decidi di modificare l’immagine miniatura, puoi tornare al **[!UICONTROL Cambia miniatura]** e selezionarne una nuova.
+   L&#39;immagine miniatura del video viene aggiornata in modo da utilizzare la miniatura selezionata. Se successivamente decidi di modificare l&#39;immagine miniatura, puoi tornare alla pagina **[!UICONTROL Cambia miniatura]** e selezionarne una nuova.
 
    Se hai configurato nuovi intervalli di tempo predefiniti o hai caricato un nuovo video per sostituire quello esistente, chiedi a Dynamic Medie di rigenerare le miniature.
 
-   Consulta [Configura l&#39;intervallo di tempo predefinito per la generazione delle miniature video](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
+   Vedere [Configurare l&#39;intervallo di tempo predefinito per la generazione delle miniature video](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
 #### Configura l&#39;intervallo di tempo predefinito per la generazione delle miniature video {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 Quando configuri e salvi il nuovo intervallo di tempo predefinito, la modifica viene applicata automaticamente solo ai video caricati in futuro. Il nuovo predefinito non viene applicato automaticamente ai video caricati in precedenza. Per i video esistenti, è necessario rigenerare le miniature.
 
-Consulta [Aggiungi una miniatura video](#adding-a-video-thumbnail).
+Vedi [Aggiungere una miniatura video](#adding-a-video-thumbnail).
 
 **Per configurare l&#39;intervallo di tempo predefinito per la generazione delle miniature video:**
 
-1. Ad Experience Manager, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
+1. In Experience Manager, selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
 
-1. Nella pagina CRXDE Liti, nel pannello directory a sinistra, passa a `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. Nella pagina CRXDE Lite, nel pannello directory a sinistra, passa a `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
    se il pannello directory non è visibile, seleziona l’icona >> a sinistra della scheda Home.
 
-1. Nel pannello in basso a destra, nella scheda Proprietà, fai doppio clic su `thumbnailtime`.
-1. In **[!UICONTROL Modifica miniatura]** , utilizzare i campi di testo per immettere valori di intervallo come percentuali.
+1. Nel pannello in basso a destra, nella scheda Proprietà, seleziona doppio `thumbnailtime`.
+1. Nella finestra di dialogo **[!UICONTROL Modifica miniatura]**, utilizzare i campi di testo per immettere i valori dell&#39;intervallo come percentuali.
 
    * Selezionare l&#39;icona del segno più (+) se si desidera aggiungere uno o più campi del valore di intervallo. Se necessario, scorrere fino alla parte inferiore della finestra di dialogo per visualizzare l&#39;icona.
    * Selezionare l&#39;icona del segno meno (-) a destra di un campo del valore di intervallo per eliminarlo dall&#39;elenco.
    * Se si desidera riordinare i valori dell&#39;intervallo, selezionare l&#39;icona freccia su e l&#39;icona freccia giù.
 
-1. Seleziona **[!UICONTROL OK]** e tornare alla scheda Proprietà.
-1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona **[!UICONTROL Salva tutto]**, quindi seleziona l’icona Indietro Home nell’angolo in alto a sinistra per tornare a Experience Manager.
+1. Selezionare **[!UICONTROL OK]** e tornare alla scheda Proprietà.
+1. Nell&#39;angolo in alto a sinistra della pagina CRXDE Lite, seleziona **[!UICONTROL Salva tutto]**, quindi seleziona l&#39;icona Indietro Home nell&#39;angolo in alto a sinistra per tornare ad Experience Manager.
 
-   Consulta [Aggiungi una miniatura video](#adding-a-video-thumbnail).
+   Vedi [Aggiungere una miniatura video](#adding-a-video-thumbnail).
 
 ### Aggiungi una miniatura video personalizzata {#adding-a-custom-video-thumbnail-1}
 
@@ -1110,11 +1110,11 @@ Questi passaggi si applicano solo a Dynamic Medie in esecuzione in modalità ibr
 
 1. Passa a una risorsa video caricata per aggiungere una miniatura video personalizzata.
 1. Nella modalità di selezione delle risorse, seleziona la risorsa video dalla Vista a elenco o dalla Vista a schede.
-1. Sulla barra degli strumenti, seleziona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente una &quot;i&quot;).
-1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Cambia miniatura]**.
-1. Nella pagina Modifica miniatura, sulla barra degli strumenti, seleziona **[!UICONTROL Carica nuova miniatura]**.
-1. Passa alla miniatura da utilizzare, selezionala e fai clic su **[!UICONTROL Apri]** per iniziare a caricare l’immagine in Experience Manager. Dopo il caricamento, assicurati di pubblicare l’immagine.
-1. Dopo aver caricato e pubblicato correttamente l’immagine, nella pagina Modifica miniatura seleziona **[!UICONTROL Salva modifiche]**.
+1. Sulla barra degli strumenti, selezionare l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente una &quot;i&quot;).
+1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Modifica miniatura]**.
+1. Nella pagina Cambia miniatura, sulla barra degli strumenti, selezionare **[!UICONTROL Carica nuova miniatura]**.
+1. Passa alla miniatura da utilizzare, selezionala, quindi seleziona **[!UICONTROL Apri]** per iniziare a caricare l&#39;immagine in Experience Manager. Dopo il caricamento, assicurati di pubblicare l’immagine.
+1. Dopo aver caricato e pubblicato correttamente l&#39;immagine, nella pagina Modifica miniatura, seleziona **[!UICONTROL Salva modifiche]**.
 
    La miniatura personalizzata viene aggiunta al video.
 
@@ -1124,7 +1124,7 @@ I video elaborati in Dynamic Medie possono essere utilizzati tramite visualizzat
 
 ### Informazioni sull’API getVideoManifestURI
 
-Il `getVideoManifestURI`L’API è esposta tramite c`q-scene7-api:com.day.cq.dam.scene7.api` e possono essere utilizzati per generare i seguenti URL manifesto:
+L&#39;API `getVideoManifestURI`è esposta tramite c`q-scene7-api:com.day.cq.dam.scene7.api` e può essere utilizzata per generare i seguenti URL manifesto:
 
 ```java
 /**   
@@ -1150,24 +1150,24 @@ Questa API accetta i tre parametri seguenti:
 | `manifestType` | Può essere `ManifestType.DASH` o `ManifestType.HLS` |
 | `onlyIfPublished` | Imposta su true se l’URI del manifesto viene generato solo se è pubblicato e disponibile sul livello di consegna. |
 
-Per recuperare gli URL del manifesto per i video utilizzando il metodo precedente, aggiungi un [profilo di codifica video](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) in una cartella &quot;carica video&quot;. Dynamic Medie elabora questi video in base alle codifiche trovate nel file di codifica video assegnato alla cartella. Ora puoi richiamare la precedente API per recuperare gli URL del manifesto per i video caricati.
+Per recuperare gli URL del manifesto per i video utilizzando il metodo descritto sopra, aggiungere un [profilo di codifica video](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) a una cartella &quot;carica video&quot;. Dynamic Medie elabora questi video in base alle codifiche trovate nel file di codifica video assegnato alla cartella. Ora puoi richiamare la precedente API per recuperare gli URL del manifesto per i video caricati.
 
 ### Scenari di errore
 
 L’API restituisce null in caso di errori. Le eccezioni vengono registrate nei log degli errori di Experience Manager. Tutti gli errori registrati iniziano con `Could not generate Video Manifest URI`. Gli errori possono verificarsi nei seguenti scenari:
 
-* Un `IllegalArgumentException` viene registrato per uno dei seguenti elementi:
+* `IllegalArgumentException` viene registrato per uno dei seguenti elementi:
 
-   * Il `resource` il parametro passato è nullo.
-   * Il `resource` Il parametro passato non è un video.
-   * Il `manifestType` il parametro passato è nullo.
-   * Il `onlyIfPublished` Il parametro viene passato come true, ma il video non viene pubblicato.
+   * Il parametro `resource` passato è nullo.
+   * Il parametro `resource` passato non è un video.
+   * Il parametro `manifestType` passato è nullo.
+   * Il parametro `onlyIfPublished` viene passato come true, ma il video non viene pubblicato.
    * Il video non è stato acquisito utilizzando un set video adattivo di Dynamic Medie.
 
 * `IOException` viene registrato quando si verifica un problema di connessione a Dynamic Medie.
-* `UnsupportedOperationException` viene registrato quando `manifestType` il parametro passato è `ManifestType.DASH`, mentre il video non è stato elaborato utilizzando il formato DASH.
+* `UnsupportedOperationException` viene registrato quando un parametro `manifestType` passato è `ManifestType.DASH`, mentre il video non è stato elaborato utilizzando il formato DASH.
 
-Di seguito è riportato un esempio dell’API precedente utilizzando i servlet scritti in *HTTPWhiteBoard* specifica. Seleziona ogni scheda per la sintassi del codice.
+Di seguito è riportato un esempio dell&#39;API precedente che utilizza servlet scritti nella specifica *HTTPWhiteBoard*. Seleziona ogni scheda per la sintassi del codice.
 
 >[!BEGINTABS]
 
@@ -1314,11 +1314,11 @@ public final class Constants {
 
 +++
 
->[!TAB ServletContext]
+>[!TAB ContestoServlet]
 
-+++**ServletContext**
++++**ContestoServlet**
 
-Montare il servlet di cui sopra utilizzando un `servletContext`. Di seguito è riportato un esempio di `servletContext`.
+Montare il servlet di cui sopra utilizzando `servletContext`. Di seguito è riportato un esempio di `servletContext`.
 
 ```java
 public class DMSampleApiHttpContext extends ServletContextHelper { 
@@ -1428,20 +1428,20 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 
 ### Utilizza il servlet di esempio
 
-Il servlet viene richiamato eseguendo una `GET` operazione in `/dmSample/dynamicmedia/video/manifestUrl`. Vengono passati i seguenti parametri di query:
+Il servlet viene richiamato eseguendo un&#39;operazione `GET` in `/dmSample/dynamicmedia/video/manifestUrl`. Vengono passati i seguenti parametri di query:
 
 | Parametro query | Descrizione |
 | --- | --- |
-| `assetPath` | Obbligatorio Percorso del video per il quale `manifestUrl` viene generato. |
+| `assetPath` | Obbligatorio Percorso del video per il quale viene generato `manifestUrl`. |
 | `manifestType` | Facoltativo. Il parametro può essere DASH o HLS. Se non viene passato, per impostazione predefinita viene usato il DASH. |
-| `onlyIfPublished` | Facoltativo. Se superato, il `manifestUrl` viene restituito solo se il video è pubblicato. |
+| `onlyIfPublished` | Facoltativo. Se passato, `manifestUrl` viene restituito solo se il video è pubblicato. |
 
 In questo esempio, supponiamo la seguente configurazione:
 
 * L&#39;azienda è `samplecompany`.
-* L’istanza di authoring è `http://sample-aem-author.com`.
-* La cartella `/content/dam/video-example` dispone di un profilo di codifica video applicato.
-* Il video `scenery.mp4` viene caricato nella cartella `/content/dam/video-example`.
+* L&#39;istanza di authoring è `http://sample-aem-author.com`.
+* Alla cartella `/content/dam/video-example` è applicato un profilo di codifica video.
+* Il video `scenery.mp4` è stato caricato nella cartella `/content/dam/video-example`.
 
 Puoi richiamare il servlet nei seguenti modi:
 

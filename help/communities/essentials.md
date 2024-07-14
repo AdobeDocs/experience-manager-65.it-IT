@@ -18,9 +18,9 @@ ht-degree: 15%
 
 # Nozioni di base su componenti, funzioni e funzioni  {#component-function-and-feature-essentials}
 
-Le funzioni di Adobe Experience Manager (AEM) Communities richiedono che i visitatori del sito diventino membri e accedano al [sito community](overview.md#communitiessites) prima di poter pubblicare il contenuto. Pertanto, [modelli per sito community](sites.md), da cui è stato creato un sito community [creato](sites-console.md), sono progettati per includere una funzione di accesso e profili utente, messaggi, ricerca, moderazione e traduzione.
+Le funzionalità di Adobe Experience Manager (AEM) Communities richiedono che i visitatori del sito diventino membri e accedano al [sito community](overview.md#communitiessites) prima di poter pubblicare il contenuto. Pertanto, i [modelli di sito community](sites.md), da cui un sito community è [creato](sites-console.md), sono progettati per includere una funzionalità di accesso e profili utente, messaggistica, ricerca, moderazione e traduzione.
 
-Un sito community supporta i membri che creano gruppi community quando [funzione gruppi community](functions.md#groups-function) è incluso nel modello di sito community selezionato.
+Un sito community supporta i membri che creano gruppi community quando la funzione [gruppi community](functions.md#groups-function) è inclusa nel modello di sito community selezionato.
 
 Di seguito sono riportati collegamenti a informazioni essenziali per componenti, funzioni e funzioni di Communities.
 
@@ -66,8 +66,8 @@ Di seguito sono riportati collegamenti a informazioni essenziali per componenti,
 
 ## JavaScript {#javadocs}
 
-Il [javadoc online](../../help/sites-developing/reference-materials.md) riflette le API disponibili nella versione AEM 6.3.
-Le API delle community sono in `com.adobe.cq.social.*` pacchetti.
+I [documenti Java online](../../help/sites-developing/reference-materials.md) riflettono le API disponibili nella versione 6.3 di AEM.
+Le API delle community si trovano in `com.adobe.cq.social.*` pacchetti.
 
 Per ogni [feature pack](deploy-communities.md#latestfeaturepack), è disponibile un file javadoc jar. Per ulteriori informazioni, visita [Utilizzo di Maven per le community](maven.md#javadocs).
 

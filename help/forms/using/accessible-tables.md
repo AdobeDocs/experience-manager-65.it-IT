@@ -25,7 +25,7 @@ Per evitare problemi di accessibilità con gli assistenti vocali che non support
 * Intestazioni di riga
 * Estensione riga
 
-Per utilizzare il nuovo formato in HTML5 Forms, contrassegna la tabella come complessa. Per contrassegnare la tabella come complessa, aggiungere `extras` nell&#39;origine XML della sottomaschera di tabella, come segue:
+Per utilizzare il nuovo formato in HTML5 Forms, contrassegna la tabella come complessa. Per contrassegnare la tabella come complessa, aggiungere il tag `extras` nell&#39;origine XML della sottomaschera di tabella nel modo seguente:
 
 ```xml
 </extras>
@@ -33,7 +33,7 @@ Per utilizzare il nuovo formato in HTML5 Forms, contrassegna la tabella come com
  </extras>
 ```
 
-Tabelle contrassegnate come *complexTable* segui il rendering nativo di HTML e fornisci un migliore supporto per l’accessibilità di determinati assistenti vocali.  Per creare un&#39;estensione di riga, selezionare celle consecutive di una tabella nella stessa colonna, fare clic con il pulsante destro del mouse sulla selezione e quindi scegliere **[!UICONTROL Unisci celle]**.
+Le tabelle contrassegnate come *complexTable* seguono la rappresentazione nativa di HTML e forniscono un migliore supporto per l&#39;accessibilità per determinati assistenti vocali.  Per creare un&#39;estensione di riga, selezionare celle consecutive di una tabella nella stessa colonna, fare clic con il pulsante destro del mouse sulla selezione e quindi scegliere **[!UICONTROL Unisci celle]**.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Per contrassegnare una riga come intestazione di riga, selezionare tutte le cell
 
 Per contrassegnare una cella come intestazione di colonna, selezionare una cella qualsiasi nella colonna, fare clic con il pulsante destro del mouse sulla selezione e quindi scegliere **[!UICONTROL Contrassegna intestazione]**.
 
-Limitazioni nelle nuove *AccessibleTable* formato:
+Limitazioni nel nuovo formato *AccessibleTable*:
 
 * Mancanza di supporto per i campi espandibili se nella tabella viene utilizzato rowspan
 * Tabelle nidificate (tabelle all’interno di celle di tabella) non supportate

@@ -1,6 +1,6 @@
 ---
-title: Guida rapida (SOAP) di Application Manager Client JavaAPI
-description: Guida rapida (SOAP) di Application Manager Client JavaAPI
+title: Guida introduttiva di Application Manager Client JavaAPI (SOAP)
+description: Guida introduttiva di Application Manager Client JavaAPI (SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -40,7 +40,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida rapida alla programmazione con AEM Forms si basa sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida rapida alla programmazione con AEM Forms si basa sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Guida rapida (modalità SOAP): creazione della versione dell’applicazione tramite l’API Java™ {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -442,7 +442,7 @@ public class GetApplication_SOAP {
 
 Il seguente esempio di codice Java™ ottiene le applicazioni utilizzando l’API Java™.
 
-**Nota**: il metodo getApplications() dell’API dell’applicazione AEM Forms restituisce solo le applicazioni distribuite.
+**Nota**: il recupero dell&#39;API dell&#39;applicazione AEM Forms getApplications() restituisce solo le applicazioni distribuite.
 
 ```java
 /*

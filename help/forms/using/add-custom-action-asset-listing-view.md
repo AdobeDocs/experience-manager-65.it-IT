@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-La soluzione Gestione della corrispondenza consente di aggiungere azioni personalizzate all’interfaccia utente Gestione risorse.
+La soluzione Gestione della corrispondenza consente di aggiungere azioni personalizzate all’interfaccia utente Gestisci Assets.
 
 Puoi aggiungere un’azione personalizzata alla vista Elenco risorse per:
 
@@ -43,11 +43,11 @@ I passaggi seguenti aggiungono un comando &quot;Scarica Flat PDF&quot; alla visu
 
 La procedura seguente illustra come personalizzare Gestione della corrispondenza per consentire agli utenti di scaricare un PDF piatto di lettere:
 
-1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
+1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedi come amministratore.
 
 1. Nella cartella delle app, crea una cartella denominata items con un percorso/struttura simile a quello della cartella items nella cartella selection (selezione), seguendo la procedura descritta di seguito:
 
-   1. Fare clic con il pulsante destro del mouse **elementi** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **items** nel percorso seguente e selezionare **Overlay Node**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -66,19 +66,19 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Posizione:** /apps/
 
-      **Corrispondenza tipi di nodo:** Selezionato
+      **Corrispondenza tipi di nodo:** selezionati
 
       ![Sovrapponi nodo](assets/2_createnodedownloadflatpdf.png)
 
-   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
-      Clic **Salva tutto**.
+      Fare clic su **Salva tutto**.
 
 1. Nella cartella degli elementi appena creata, aggiungi un nodo per il pulsante/azione personalizzato in una particolare risorsa (Esempio: downloadFlatPDF) seguendo la procedura riportata di seguito:
 
-   1. Fare clic con il pulsante destro del mouse **elementi** cartella e seleziona **Crea** > **Crea nodo**.
+   1. Fare clic con il pulsante destro del mouse sulla cartella **items** e selezionare **Create** > **Create Node**.
 
-   1. Assicurati che la finestra di dialogo Crea nodo abbia i seguenti valori e fai clic su **OK**:
+   1. Verificare che la finestra di dialogo Crea nodo contenga i valori seguenti e fare clic su **OK**:
 
       **Nome:** downloadFlatPDF (o il nome da assegnare a questa proprietà)
 
@@ -103,12 +103,12 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
         <tr>
         <td>foundation-collection-action</td>
         <td>Stringa</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> può essere singolo o multiplo per consentire selezioni di una o più risorse sulle quali viene eseguita l’azione personalizzata.</p> <p><strong>tipo</strong> può essere una o più delle seguenti voci (separa virgole più voci): LETTERA,TESTO,ELENCO,CONDIZIONE,DIZIONARIO DATI</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> può essere singolo o multiplo per consentire selezioni di risorse singole o multiple su cui viene eseguita l'azione personalizzata.</p> <p><strong>type</strong> può essere uno o più dei seguenti elementi (separare più voci con virgola): LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
         </tr>
         <tr>
         <td>icon</td>
         <td>Stringa</td>
-        <td>icon-download<br /> <br /> Icona visualizzata da Gestione corrispondenza sul lato sinistro del comando o del menu. Per informazioni sulle diverse icone e impostazioni disponibili, vedere <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it" target="_blank">Documentazione delle icone di CoralUI</a>.<br /> </td>
+        <td>icon-download<br /> <br /> Icona visualizzata da Gestione corrispondenza sul lato sinistro del comando o del menu. Per le diverse icone e impostazioni disponibili, consulta <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it" target="_blank">Documentazione delle icone di CoralUI</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -128,19 +128,19 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
         <tr>
         <td>text</td>
         <td>Stringa</td>
-        <td>Scarica Flat PDF (o qualsiasi altra etichetta)<br /> <br /> Comando visualizzato nell’interfaccia Elenco risorse</td>
+        <td>Scarica Flat PDF (o qualsiasi altra etichetta)<br /> <br /> Il comando visualizzato nell'interfaccia di elenco risorse</td>
         </tr>
         <tr>
         <td>titolo</td>
         <td>Stringa</td>
-        <td>Scarica un PDF piatto della lettera selezionata (o qualsiasi altra etichetta/testo alternativo)<br /> <br /> Il titolo è il testo alternativo visualizzato da Gestione corrispondenza quando l’utente passa il puntatore sul comando personalizzato.</td>
+        <td>Scarica un PDF flat della lettera selezionata (o qualsiasi altra etichetta/testo alternativo)<br /> <br /> Il titolo è il testo alt visualizzato da Gestione corrispondenza quando l'utente passa il puntatore sul comando personalizzato.</td>
         </tr>
         </tbody>
        </table>
 
 1. Nella cartella apps, crea una cartella denominata js con un percorso/struttura simile a quello della cartella items nella cartella admin, seguendo la procedura riportata di seguito:
 
-   1. Fare clic con il pulsante destro del mouse **js** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **js** nel percorso seguente e selezionare **Sovrapponi nodo**:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -150,19 +150,19 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Posizione:** /apps/
 
-      **Corrispondenza tipi di nodo:** Selezionato
+      **Corrispondenza tipi di nodo:** selezionati
 
-   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app. Clic **Salva tutto**.
+   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app. Fare clic su **Salva tutto**.
 
 1. Nella cartella js, crea un file denominato formaction.js con il codice per la gestione delle azioni del pulsante, seguendo la procedura riportata di seguito:
 
-   1. Fare clic con il pulsante destro del mouse **js** cartella nel percorso seguente e selezionare **Crea > Crea file**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **js** nel percorso seguente e selezionare **Crea > Crea file**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
       Denomina il file come formaction.js.
 
-   1. Fai doppio clic sul file per aprirlo in CRX.
+   1. Fare doppio clic sul file per aprirlo in CRX.
    1. Nel file formaction.js (nel ramo /apps), copia il codice dal file formaction.js nel percorso seguente:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
@@ -230,7 +230,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
 1. Nella cartella delle app, crea una cartella denominata items con un percorso/struttura simile a quello della cartella items nella cartella actionhandlers, seguendo la procedura riportata di seguito:
 
-   1. Fare clic con il pulsante destro del mouse **elementi** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **items** nel percorso seguente e selezionare **Overlay Node**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -240,19 +240,19 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Posizione:** /apps/
 
-      **Corrispondenza tipi di nodo:** Selezionato
+      **Corrispondenza tipi di nodo:** selezionati
 
-   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
-   1. Clic **Salva tutto**.
+   1. Fare clic su **Salva tutto**.
 
 1. Nel nodo degli elementi appena creati, aggiungi un nodo per il pulsante/azione personalizzato in una particolare risorsa (Esempio: letterpdfdownloader) seguendo la procedura riportata di seguito:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella degli elementi e seleziona **Crea > Crea nodo**.
+   1. Fare clic con il pulsante destro del mouse sulla cartella degli elementi e selezionare **Crea > Crea nodo**.
 
-   1. Assicurati che la finestra di dialogo Crea nodo abbia i seguenti valori e fai clic su **OK**:
+   1. Verificare che la finestra di dialogo Crea nodo contenga i valori seguenti e fare clic su **OK**:
 
-      **Nome:** letterpdfdownloader (o il nome che si desidera assegnare a questa proprietà) deve essere univoco. Se utilizzi un nome diverso, specifica lo stesso nella variabile ACTION_URL del file formaction.js.
+      **Nome:** letterpdfdownloader (o il nome da assegnare a questa proprietà) deve essere univoco. Se utilizzi un nome diverso, specifica lo stesso nella variabile ACTION_URL del file formaction.js.
 
       **Tipo:** nt:unstructured
 
@@ -268,16 +268,16 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Fare clic con il pulsante destro del mouse **admin** cartella nel percorso seguente e selezionare **Crea > Crea file**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **admin** nel percorso seguente e selezionare **Crea > Crea file**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       Denomina il file come POST.jsp. Il nome del file deve essere solo POST.jsp.
 
-   1. Fai doppio clic su **POST.jsp** per aprirlo in CRX.
+   1. Fare doppio clic sul file **POST.jsp** per aprirlo in CRX.
    1. Aggiungi il codice seguente al file POST.jsp e fai clic su **Salva tutto**:
 
-      Questo codice è specifico per il servizio di rendering di lettere. Per qualsiasi altra risorsa, aggiungi le librerie Java™ di quella risorsa a questo codice. Per ulteriori informazioni sulle API di AEM Forms, consulta [API AEM FORMS](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
+      Questo codice è specifico per il servizio di rendering di lettere. Per qualsiasi altra risorsa, aggiungi le librerie Java™ di quella risorsa a questo codice. Per ulteriori informazioni sulle API di AEM Forms, vedi [API di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
 
       Per ulteriori informazioni sulle librerie AEM, vedi AEM [Componenti](/help/sites-developing/components.md).
 
@@ -352,19 +352,19 @@ Dopo aver aggiunto la funzionalità personalizzata per il download di flat PDF d
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/projects.html` e accedi.
 
-1. Seleziona **Forms > Lettere**. Gestione della corrispondenza elenca le lettere disponibili nel sistema.
-1. Clic **Seleziona** quindi fare clic su una lettera per selezionarla.
-1. Seleziona **Altro** > **&lt;download flat=&quot;&quot; pdf=&quot;&quot;>** La funzionalità personalizzata creata seguendo le istruzioni di questo articolo. Viene visualizzata la finestra di dialogo Scarica lettera come PDF.
+1. Selezionare **Forms > Lettere**. Gestione della corrispondenza elenca le lettere disponibili nel sistema.
+1. Fare clic su **Seleziona**, quindi fare clic su una lettera per selezionarla.
+1. Seleziona **Altro** > **&lt;Scarica Flat PDF>** (la funzionalità personalizzata creata seguendo le istruzioni di questo articolo). Viene visualizzata la finestra di dialogo Scarica lettera come PDF.
 
-   Il nome della voce di menu, la funzionalità e il testo alternativo dipendono dalla personalizzazione creata in [Scenario: aggiungere un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione flat PDF di una lettera.](#addcommandtoletters)
+   Il nome della voce di menu, la funzionalità e il testo alternativo dipendono dalla personalizzazione creata in [Scenario: aggiungere un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione di flat PDF di una lettera.](#addcommandtoletters)
 
-   ![Funzionalità personalizzata: scarica Flat PDF](assets/5_downloadflatpdf.png)
+   ![Funzionalità personalizzata: download di Flat PDF](assets/5_downloadflatpdf.png)
 
 1. Nella finestra di dialogo Scarica lettera come PDF, seleziona l’XML appropriato da cui vuoi popolare i dati nel PDF.
 
    >[!NOTE]
    >
-   >Prima di scaricare la lettera come PDF semplice, potete creare il file XML con i dati contenuti nella lettera utilizzando **Crea rapporto** opzione.
+   >Prima di scaricare la lettera come PDF flat, è possibile creare il file XML con i dati nella lettera utilizzando l&#39;opzione **Crea report**.
 
    ![Scarica lettera come PDF](assets/6_downloadflatpdf.png)
 

@@ -81,15 +81,15 @@ Per semplificare l’esperienza dell’API, AEM Forms fornisce con facilità un 
 
 Per creare una comunicazione interattiva dai record salvati in un file JSON:
 
-1. Creare un [Cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configuralo per utilizzare l’API Batch:
+1. Crea una [cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configurala per utilizzare l&#39;API Batch:
    1. Accedi all’istanza Autore AEM Forms.
-   1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Seleziona **[!UICONTROL Nuovo]**.
-   1. Specifica la **[!UICONTROL Nome]** e fisica **[!UICONTROL Percorso]** della cartella. Esempio: `c:\batchprocessing`.
-   1. Seleziona la **[!UICONTROL Servizio]** opzione in **[!UICONTROL Elabora file tramite]** campo.
-   1. Seleziona la **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** servizio in **[!UICONTROL Nome servizio]** campo.
-   1. Specifica un **[!UICONTROL Pattern file di output]**. Ad esempio, %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
+   1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Seleziona **[!UICONTROL Nuovo]**.
+   1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Esempio: `c:\batchprocessing`.
+   1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file tramite]**.
+   1. Selezionare il servizio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** nel campo **[!UICONTROL Nome servizio]**.
+   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
 1. Configura parametri avanzati:
-   1. Apri **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
+   1. Apri la scheda **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
 
       | Proprietà | Tipo | Descrizione |
       |--- |--- |--- |
@@ -106,12 +106,12 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
    1. Attendi che la cartella controllata elabori il file. All&#39;avvio dell&#39;elaborazione, il file di input e la sottocartella che contiene il file vengono spostati nella cartella di gestione temporanea.
    1. Apri la cartella di output per visualizzare l’output:
       * Quando specifichi l’opzione STAMPA in Configurazione cartella controllata, viene generato l’output PDF per la comunicazione interattiva.
-      * Quando specifichi l’opzione WEB in Configurazione cartella controllata, viene generato un file JSON per record. Puoi utilizzare il file JSON per [precompilare un modello web](#web-template).
+      * Quando specifichi l’opzione WEB in Configurazione cartella controllata, viene generato un file JSON per record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template).
       * Quando si specificano le opzioni PRINT e WEB, vengono generati sia i documenti PDF che un file JSON per record.
 
 #### Utilizzare i dati di input salvati in un&#39;origine dati esterna e a cui si accede tramite il modello dati del modulo per produrre una comunicazione interattiva {#use-fdm-as-data-source}
 
-I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un modello di comunicazione interattiva per produrre una comunicazione interattiva. Quando si crea una comunicazione interattiva, questa viene connessa a un&#39;origine dati esterna tramite un modello dati modulo (FDM) per accedere ai dati. Puoi configurare il servizio di elaborazione batch delle cartelle controllate per recuperare i dati utilizzando lo stesso modello dati del modulo da un’origine dati esterna. A [creare una comunicazione interattiva da record salvati in un&#39;origine dati esterna](/help/forms/using/work-with-form-data-model.md):
+I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un modello di comunicazione interattiva per produrre una comunicazione interattiva. Quando si crea una comunicazione interattiva, questa viene connessa a un&#39;origine dati esterna tramite un modello dati modulo (FDM) per accedere ai dati. Puoi configurare il servizio di elaborazione batch delle cartelle controllate per recuperare i dati utilizzando lo stesso modello dati del modulo da un’origine dati esterna. Per [creare una comunicazione interattiva dai record salvati in un&#39;origine dati esterna](/help/forms/using/work-with-form-data-model.md):
 
 1. Configura il modello dati modulo del modello:
    1. Apri il modello dati modulo associato al modello di comunicazione interattiva.
@@ -121,7 +121,7 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
 
       In questo esempio, l&#39;argomento id prende il valore dell&#39;attributo id del profilo utente e lo trasmette come argomento al servizio di lettura. Legge e restituisce i valori delle proprietà associate dall&#39;oggetto modello dati dipendente per l&#39;ID specificato. Pertanto, se si specifica 00250 nel campo ID del modulo, il servizio di lettura legge i dettagli del dipendente con 00250 ID dipendente.
 
-      ![Configurare l’attributo della richiesta](assets/request-attribute.png)
+      ![Configura attributo richiesta](assets/request-attribute.png)
 
    1. Salva proprietà e modello dati modulo.
 1. Configura valore per attributo richiesta:
@@ -141,15 +141,15 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
 
    1. Salva e chiudi il file.
 
-1. Creare un [Cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configuralo per utilizzare il servizio API Batch:
+1. Crea una [cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configurala per utilizzare il servizio API Batch:
    1. Accedi all’istanza Autore AEM Forms.
-   1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Seleziona **[!UICONTROL Nuovo]**.
-   1. Specifica la **[!UICONTROL Nome]** e fisica **[!UICONTROL Percorso]** della cartella. Esempio: `c:\batchprocessing`.
-   1. Seleziona la **[!UICONTROL Servizio]** opzione in **[!UICONTROL Elabora file tramite]** campo.
-   1. Seleziona la **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** servizio in **[!UICONTROL Nome servizio]** campo.
-   1. Specifica un **[!UICONTROL Pattern file di output]**. Ad esempio, %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
+   1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Seleziona **[!UICONTROL Nuovo]**.
+   1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Esempio: `c:\batchprocessing`.
+   1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file tramite]**.
+   1. Selezionare il servizio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** nel campo **[!UICONTROL Nome servizio]**.
+   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
 1. Configura parametri avanzati:
-   1. Apri **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
+   1. Apri la scheda **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
 
       | Proprietà | Tipo | Descrizione |
       |--- |--- |--- |
@@ -166,18 +166,18 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
    1. Attendi che la cartella controllata elabori il file. All&#39;avvio dell&#39;elaborazione, il file di input e la sottocartella che contiene il file vengono spostati nella cartella di gestione temporanea.
    1. Apri la cartella di output per visualizzare l’output:
       * Quando specifichi l’opzione STAMPA in Configurazione cartella controllata, viene generato l’output PDF per la comunicazione interattiva.
-      * Quando specifichi l’opzione WEB in Configurazione cartella controllata, viene generato un file JSON per record. Puoi utilizzare il file JSON per [precompilare un modello web](#web-template).
+      * Quando specifichi l’opzione WEB in Configurazione cartella controllata, viene generato un file JSON per record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template).
       * Quando si specificano le opzioni PRINT e WEB, vengono generati sia i documenti PDF che un file JSON per record.
 
 ## Richiama l’API Batch utilizzando le richieste REST
 
-Puoi richiamare [API Batch](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) tramite richieste di trasferimento dello stato di rappresentanza (REST). Ti consente di fornire un endpoint REST ad altri utenti per accedere all’API e configurare i tuoi metodi per l’elaborazione, l’archiviazione e la personalizzazione della comunicazione interattiva. Puoi sviluppare un servlet Java™ personalizzato per distribuire l’API sull’istanza AEM.
+È possibile richiamare [l&#39;API Batch](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) tramite richieste REST (Managational State Transfer). Ti consente di fornire un endpoint REST ad altri utenti per accedere all’API e configurare i tuoi metodi per l’elaborazione, l’archiviazione e la personalizzazione della comunicazione interattiva. Puoi sviluppare un servlet Java™ personalizzato per distribuire l’API sull’istanza AEM.
 
 Prima di distribuire il servlet Java™, assicurati di disporre di una comunicazione interattiva e che i file di dati corrispondenti siano pronti. Per creare e distribuire il servlet Java™, effettua le seguenti operazioni:
 
-1. Accedi all’istanza dell’AEM e crea una comunicazione interattiva. Per utilizzare la comunicazione interattiva indicata nel codice di esempio riportato di seguito: [fai clic qui](assets/SimpleMediumIC.zip).
-1. [Creare e distribuire un progetto AEM con Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) sull’istanza AEM.
-1. Aggiungi [AEM Forms Client SDK versione 6.0.12 o successiva](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) nell’elenco delle dipendenze del file POM del progetto AEM. Ad esempio:
+1. Accedi all’istanza dell’AEM e crea una comunicazione interattiva. Per utilizzare la comunicazione interattiva indicata nel codice di esempio fornito di seguito, [fai clic qui](assets/SimpleMediumIC.zip).
+1. [Crea e distribuisci un progetto AEM utilizzando Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) nella tua istanza AEM.
+1. Aggiungi [AEM Forms Client SDK versione 6.0.12 o successiva](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) nell&#39;elenco delle dipendenze del file POM del progetto AEM. Ad esempio:
 
    ```xml
        <dependency>
@@ -324,11 +324,11 @@ Prima di distribuire il servlet Java™, assicurati di disporre di una comunicaz
 
 1. Nel codice precedente, sostituisci il percorso del modello (setTemplatePath) con il percorso del modello e imposta il valore dell’API setBatchType:
    * Quando si specifica l&#39;opzione PRINT PDF, viene generato l&#39;output per la comunicazione interattiva.
-   * Quando si specifica l&#39;opzione WEB, viene generato un file JSON per record. Puoi utilizzare il file JSON per [precompilare un modello web](#web-template).
+   * Quando si specifica l&#39;opzione WEB, viene generato un file JSON per record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template).
    * Quando si specificano le opzioni PRINT e WEB, vengono generati sia i documenti PDF che un file JSON per record.
 
-1. [Utilizza Maven per distribuire il codice aggiornato all’istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
-1. Per generare la comunicazione interattiva, richiama l’API batch. L’API batch stampa restituisce un flusso di file PDF e .json a seconda del numero di record. Puoi utilizzare il file JSON per [precompilare un modello web](#web-template). Se utilizzi il codice riportato sopra, l’API viene distribuita in `http://localhost:4502/bin/batchServlet`. Il codice stampa e restituisce un flusso di un file PDF e un file JSON.
+1. [Utilizza maven per distribuire il codice aggiornato alla tua istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. Per generare la comunicazione interattiva, richiama l’API batch. L’API batch stampa restituisce un flusso di file PDF e .json a seconda del numero di record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template). Se si utilizza il codice riportato sopra, l&#39;API viene distribuita in `http://localhost:4502/bin/batchServlet`. Il codice stampa e restituisce un flusso di un file PDF e un file JSON.
 
 ### Precompilare un modello web {#web-template}
 
@@ -338,12 +338,12 @@ Quando imposti batchType per il rendering del canale web, l’API genera un file
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Esempio**
-Se il file JSON si trova in `C:\batch\mergedJsonPath.json` e utilizzi il seguente modello di comunicazione interattiva: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
+Se il file JSON si trova in `C:\batch\mergedJsonPath.json` e si utilizza il seguente modello di comunicazione interattiva: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
 Quindi, il seguente URL sul nodo di pubblicazione mostra il canale web della comunicazione interattiva
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
-Oltre a salvare i dati sul file system, memorizzi i file JSON nell’archivio CRX, nel file system o sul server web, oppure puoi accedere ai dati tramite il servizio di precaricamento OSGI. Sintassi per unire i dati utilizzando vari protocolli:
+Oltre a salvare i dati sul file system, puoi archiviare i file JSON in un archivio CRX, un file system o un server web oppure accedere ai dati tramite il servizio di precaricamento OSGI. Sintassi per unire i dati utilizzando vari protocolli:
 
 * **Protocollo CRX**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
@@ -351,16 +351,16 @@ Oltre a salvare i dati sul file system, memorizzi i file JSON nell’archivio CR
 * **Protocollo file**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
-* **Protocollo del servizio di preriempimento**
+* **Protocollo del servizio di precompilazione**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
   SERVICE_NAME fa riferimento al nome del servizio di precompilazione OSGI. Consulta Creare ed eseguire un servizio di precompilazione.
 
   IDENTIFIER rimanda a tutti i metadati richiesti dal servizio di precompilazione OSGI per recuperare i dati di precompilazione. Un identificatore dell’utente connesso è un esempio di metadati che potrebbe essere utilizzato.
 
-* **protocollo HTTP**
+* **Protocollo HTTP**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
 >
->Per impostazione predefinita, è abilitato solo il protocollo CRX. Per abilitare altri protocolli supportati, consulta [Configurazione del servizio di precompilazione tramite Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Per impostazione predefinita, è abilitato solo il protocollo CRX. Per abilitare altri protocolli supportati, vedere [Configurazione del servizio di precompilazione tramite Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

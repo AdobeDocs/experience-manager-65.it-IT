@@ -32,13 +32,13 @@ ContextHub fornisce diversi esempi di store candidati che puoi utilizzare nelle 
 
 Archivia per segmenti ContextHub risolti e non risolti. Recupera automaticamente i segmenti da ContextHub SegmentManager.
 
-### Percorso di origine {#source-location-segmentation}
+### Posizione Source {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
 ### Implementazione di base {#base-implementation-segmentation}
 
-Il candidato per l’archivio aem.segmentation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Il candidato dell&#39;archivio aem.segmentation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configurazione {#configuration-segmentation}
 
@@ -58,13 +58,13 @@ Quando crei un archivio aem.segmentation, non devi fornire una configurazione de
 
 Il candidato dell’archivio di esempio contexthub.geolocation utilizza Google Maps per ottenere e archiviare informazioni sulla posizione del client.
 
-### Percorso di origine {#source-location-geolocation}
+### Posizione Source {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
 ### Implementazione di base {#base-implementation-geolocation}
 
-Il candidato dell’archivio contexthub.geolocation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Il candidato dell&#39;archivio contexthub.geolocation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configurazione {#configuration-geolocation}
 
@@ -110,23 +110,23 @@ L’archivio utilizza una struttura dati simile a quella del seguente esempio:
 
 >[!NOTE]
 >
->Un criterio di sicurezza introdotto in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione vengano effettuate tramite una connessione protetta. Pertanto, l’AEM forza l’utilizzo di https per le chiamate API di geolocalizzazione se l’AEM è in esecuzione anche su https. Altrimenti http viene utilizzato per rispettare il criterio della stessa origine. Consulta [questo post di blog su Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) per ulteriori dettagli sulla modifica in Chrome.
+>Un criterio di sicurezza introdotto in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione vengano effettuate tramite una connessione protetta. Pertanto, l’AEM forza l’utilizzo di https per le chiamate API di geolocalizzazione se l’AEM è in esecuzione anche su https. Altrimenti http viene utilizzato per rispettare il criterio della stessa origine. Consulta [questo post di blog di Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) per ulteriori dettagli sulla modifica in Chrome.
 
 ## contexthub.surferinfo Sample Store Candidate {#contexthub-surferinfo-sample-store-candidate}
 
 Memorizza informazioni sull&#39;ambiente client corrente, ad esempio dispositivo, finestra, browser, data e ora.
 
-### Percorso di origine {#source-location-surferinfo}
+### Posizione Source {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
 ### Implementazione di base {#base-implementation-surferinfo}
 
-Il candidato dell’archivio contexthub.datetime estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Il candidato dell&#39;archivio contexthub.datetime estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configurazione {#configuration-surferinfo}
 
-La configurazione predefinita viene ereditata da `ContextHub.Store.PersistedStore`.
+La configurazione predefinita è ereditata da `ContextHub.Store.PersistedStore`.
 
 ### Elementi dati {#data-items-surferinfo}
 
@@ -183,17 +183,17 @@ Gli archivi che utilizzano questo candidato hanno una struttura dati simile a qu
 
 L&#39;archivio di esempio granite.emulators memorizza le informazioni sui dispositivi client.
 
-### Percorso di origine {#source-location-emulators}
+### Posizione Source {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
 ### Implementazione di base {#base-implementation-emulators}
 
-Il candidato dell’archivio contexthub.geolocation estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Il candidato dell&#39;archivio contexthub.geolocation estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configurazione {#configuration-emulators}
 
-La configurazione predefinita include un array denominato `defaultEmulators` che contiene informazioni su dispositivi diversi. Quando crei un archivio, fornisci diversi profili dispositivo nella proprietà Configurazione dettagli, utilizzando il formato illustrato nell’esempio seguente:
+La configurazione predefinita include un array denominato `defaultEmulators` che contiene informazioni sui diversi dispositivi. Quando crei un archivio, fornisci diversi profili dispositivo nella proprietà Configurazione dettagli, utilizzando il formato illustrato nell’esempio seguente:
 
 ```xml
 {
@@ -316,13 +316,13 @@ La struttura dati dell&#39;archivio è simile all&#39;esempio seguente:
 
 Memorizza informazioni sull&#39;utente corrente.
 
-### Percorso di origine {#source-location-profile}
+### Posizione Source {#source-location-profile}
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 
 ### Implementazione di base {#base-implementation-profile}
 
-Il candidato dell’archivio contexthub.datetime estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Il candidato dell&#39;archivio contexthub.datetime estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configurazione {#configuration-profile}
 

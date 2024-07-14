@@ -25,13 +25,13 @@ La rappresentazione HTML5 di un modello di modulo basato su XFA è costituita da
 >
 >Nelle classi CSS, non modificare il valore degli attributi width, height, border-thickness, top, left, right, bottom, padding, margin e altri attributi di posizione e dimensione. Qualsiasi modifica negli attributi di posizione e dimensione determina modifiche al layout del modulo.
 
-## Classi CSS per gli elementi  {#css-classes-nbsp-for-elements-nbsp}
+## Classi CSS  per gli elementi  {#css-classes-nbsp-for-elements-nbsp}
 
 Ogni elemento contiene classi CSS ben definite. È possibile modificare queste classi per modificare l&#39;aspetto di un elemento. Ogni elemento, ad eccezione degli elementi field e draw, dispone di due classi CSS: la classe Type e la classe Name.
 
-* Il **Classe tipo** rappresenta il tipo del campo XFA. Puoi sovrascrivere `type` per modificare gli stili di tutti gli elementi di un particolare tipo.
+* La **classe Type** rappresenta il tipo del campo XFA. È possibile sovrascrivere la classe `type` per modificare gli stili di tutti gli elementi di un determinato tipo.
 
-* Il **Classe nome** corrisponde al nome del campo XFA. Puoi sovrascrivere `name` classe per modificare e applicare uno stile personalizzato a un elemento.
+* La **classe nome** corrisponde al nome del campo XFA. È possibile sovrascrivere la classe `name` per modificare e applicare uno stile personalizzato a un elemento.
 
 >[!NOTE]
 >
@@ -48,8 +48,8 @@ L’elemento field contiene due elementi nidificati: widget e didascalia.
 L’elemento widget contiene l’elemento dell’interfaccia utente per l’interazione con gli utenti. Dispone di tre classi CSS:
 
 * **Widget**: ogni widget ha questa classe.
-* **nome**: tutti i widget forniti con AEM contengono la classe nome widget. Per i widget personalizzati, lo sviluppatore fornisce la classe Nome widget.
-* **tipo**: ogni widget ha un elemento dell’interfaccia utente. Questa classe definisce il tipo dell’elemento dell’interfaccia utente.
+* **name**: tutti i widget forniti con AEM contengono la classe nome widget. Per i widget personalizzati, lo sviluppatore fornisce la classe Nome widget.
+* **tipo**: ogni widget ha un elemento dell&#39;interfaccia utente. Questa classe definisce il tipo dell’elemento dell’interfaccia utente.
 
 ```xml
 <!--field with caption-->
@@ -68,7 +68,7 @@ L’elemento widget contiene l’elemento dell’interfaccia utente per l’inte
 </div>
 ```
 
-Oltre alla classe type e name, il componente field contiene anche una classe CSS aggiuntiva denominata **sottotipo**. Un sottotipo identifica il tipo di campo, ad esempio NumericField, DateField, TextField. È possibile sovrascrivere la classe del sottotipo per modificare lo stile di tutti i campi di tipo, sottotipo.
+Oltre alla classe type e name, il componente field contiene anche una classe CSS aggiuntiva denominata **subtype**. Un sottotipo identifica il tipo di campo, ad esempio NumericField, DateField, TextField. È possibile sovrascrivere la classe del sottotipo per modificare lo stile di tutti i campi di tipo, sottotipo.
 
 ## Classi CSS per componenti diversi {#css-classes-for-different-components}
 
@@ -82,7 +82,7 @@ Oltre alla classe type e name, il componente field contiene anche una classe CSS
   <tr>
    <td>Pagina</td>
    <td>pagina</td>
-   <td>Nome definito dall'utente<br /> o<br /> Pagina&lt;pagenumber&gt; (impostazione predefinita)</td>
+   <td>Nome definito dall'utente<br /> o<br /> Pagina&lt;numeroPagina&gt; (impostazione predefinita)</td>
   </tr>
   <tr>
    <td>Area contenuto</td>
@@ -146,7 +146,7 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
   </tr>
   <tr>
    <td>CheckButton<br type="_moz" /> </td>
-   <td>checkboxfield<br /> </td>
+   <td>checkbox<br /> </td>
    <td>XfaCheckBox<br type="_moz" /> </td>
    <td>checkbox fieldwidget<br type="_moz" /> </td>
    <td>input type=checkbox<br type="_moz" /> </td>
@@ -160,34 +160,34 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
   </tr>
   <tr>
    <td>DateTimeField<br type="_moz" /> </td>
-   <td>textfield<br type="_moz" /> </td>
+   <td>campo di testo<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget</td>
    <td>input type=text<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>DecimalField<br type="_moz" /> </td>
+   <td>CampoDecimale<br type="_moz" /> </td>
    <td>numericfield<br type="_moz" /> </td>
    <td>numericInput<br type="_moz" /> </td>
    <td>numericfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>Elenchi a discesa<br type="_moz" /> </td>
+   <td>DropDown<br type="_moz" /> </td>
    <td>elenco scelte<br type="_moz" /> </td>
    <td>dropDownListWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
    <td>seleziona</td>
   </tr>
   <tr>
-   <td>CasellaDiRiepilogo<br type="_moz" /> </td>
+   <td>ListBox<br type="_moz" /> </td>
    <td>elenco scelte<br type="_moz" /> </td>
    <td>listBoxWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
    <td>ol</td>
   </tr>
   <tr>
-   <td>NumericField<br type="_moz" /> </td>
+   <td>CampoNumerico<br type="_moz" /> </td>
    <td>numericfield<br type="_moz" /> </td>
    <td>numericInput<br type="_moz" /> </td>
    <td>numericfieldwidget<br type="_moz" /> </td>
@@ -209,14 +209,14 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
   </tr>
   <tr>
    <td>CampoTesto<br type="_moz" /> </td>
-   <td>textfield<br type="_moz" /> </td>
+   <td>campo di testo<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>TimeField<br type="_moz" /> </td>
-   <td>textfield<br type="_moz" /> </td>
+   <td>CampoOra<br type="_moz" /> </td>
+   <td>campo di testo<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
@@ -224,11 +224,11 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
  </tbody>
 </table>
 
-## Classi CSS per diversi elementi di disegno {#css-classes-for-different-draw-elements}
+## Classi CSS per diversi elementi di Draw {#css-classes-for-different-draw-elements}
 
 È possibile inserire elementi di disegno statici come testo e immagini utilizzando AEM Forms Designer. Per ogni elemento di disegno, a tale elemento è associata una classe CSS separata. L’elenco delle classi CSS per gli elementi disegno è elencato di seguito. A ogni elemento di disegno è associata una classe di disegno.
 
-| **Tipo di disegno** | **Classe CSS** |
+| **Tipo Draw** | **Classe CSS** |
 |---|---|
 | Testo | text |
 | Immagine | immagine |
@@ -241,12 +241,12 @@ Oltre all’aspetto dei componenti dell’interfaccia utente nel modulo HTML, pu
 
 `Styling Inline Errors`
 
-Quando la convalida di un campo genera un errore, quando il campo è attivo viene visualizzato un errore in linea. Per modificare lo stile degli errori in linea, sovrascrivi l’ID CSS **error-msg**.
+Quando la convalida di un campo genera un errore, quando il campo è attivo viene visualizzato un errore in linea. Per modificare lo stile degli errori in linea, ignora l&#39;ID CSS **error-msg**.
 
 `Styling Inline Warnings`
 
-Quando la convalida di un campo genera un avviso, quando il campo è attivo viene visualizzato un avviso in linea. Per modificare lo stile di questi avvisi in linea, sovrascrivi l’ID CSS **warning-msg**.
+Quando la convalida di un campo genera un avviso, quando il campo è attivo viene visualizzato un avviso in linea. Per modificare lo stile di questi avvisi in linea, ignora l&#39;ID CSS **warning-msg**.
 
 `Styling Fields with Validation Errors`
 
-Quando la convalida di un campo non riesce, lo stile del widget cambia. Questa modifica di stile viene eseguita applicando una classe CSS **widgetError** sul componente widget. Per modificare lo stile predefinito, sovrascrivi il **widgetError** classe.
+Quando la convalida di un campo non riesce, lo stile del widget cambia. Questa modifica di stile viene eseguita applicando una classe CSS **widgetError** al componente widget. Per modificare lo stile predefinito, sostituire la classe **widgetError**.

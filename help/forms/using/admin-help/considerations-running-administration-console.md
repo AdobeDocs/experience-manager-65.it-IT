@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Di seguito sono riportati alcuni aspetti da considerare durante l’esecuzione di Administration Console:
 
-* Se accedi alla console di amministrazione utilizzando l’URL `https://[hostname]:'port'/adminui`, il nome host specificato non può contenere trattini bassi. In caso contrario, i collegamenti ad alcune aree della console di amministrazione potrebbero non funzionare correttamente.
+* Se si accede alla console di amministrazione utilizzando l&#39;URL `https://[hostname]:'port'/adminui`, il nome host specificato non può contenere caratteri di sottolineatura. In caso contrario, i collegamenti ad alcune aree della console di amministrazione potrebbero non funzionare correttamente.
 * Se si esegue una console di amministrazione in Esplora risorse su un sistema operativo giapponese, è possibile che si verifichino i seguenti problemi:
 
    * Facendo clic su un collegamento si ritorna alla pagina di accesso anziché al collegamento previsto.

@@ -23,9 +23,9 @@ ht-degree: 1%
 1. Nella console di amministrazione, fai clic su Servizi > Moduli.
 1. Nell&#39;elenco Tipo di output della casella di gruppo Output modulo selezionare una delle opzioni seguenti:
 
-   **Full HTML:** Per eseguire il rendering del modulo all’interno di tag HTML completi (una pagina HTML completa). Questo valore è quello predefinito.
+   **Full HTML:** per eseguire il rendering del modulo all&#39;interno di tag full HTML (una pagina full HTML). Questo valore è quello predefinito.
 
-   **Corpo modulo:** Per eseguire il rendering del modulo in `<BODY>` (non è una pagina HTML completa).
+   **Corpo modulo:** Per eseguire il rendering del modulo entro `<BODY>` tag (non una pagina HTML completa).
 
 1. Fai clic su Salva.
 
@@ -33,11 +33,11 @@ ht-degree: 1%
 
 1. In Output modulo, nell&#39;elenco Rendering a (Render at), selezionate una delle seguenti opzioni:
 
-   **Cliente:** Per eseguire il rendering dei PDF forms in Adobe Acrobat o Adobe Reader. Il rendering lato client migliora le prestazioni dei moduli AEM e si applica solo alla trasformazione dei moduli PDFF.
+   **Client:** Per eseguire il rendering dei PDF forms in Adobe Acrobat o Adobe Reader. Il rendering lato client migliora le prestazioni dei moduli AEM e si applica solo alla trasformazione dei moduli PDFF.
 
-   **Server:** Per eseguire il rendering dei PDF forms sul server applicazioni.
+   **Server:** Per eseguire il rendering dei PDF forms nel server applicazioni.
 
-   **Automatico:** Per eseguire il rendering del modulo PDF nella posizione specificata da `dynamicRender` valore di configurazione del file XDP. Questo valore è quello predefinito.
+   **Auto:** per eseguire il rendering del modulo PDF nel percorso specificato dal valore di configurazione `dynamicRender` del file XDP. Questo valore è quello predefinito.
 
 1. Fai clic su Salva.
 
@@ -46,11 +46,11 @@ ht-degree: 1%
 Per abilitare la funzione, effettua le seguenti operazioni:
 
 1. Accedi alla console di amministrazione.
-1. Vai a **Servizi** > **moduli**.
+1. Vai a **Servizi** > **Moduli**.
 1. Specificate il tipo di output come corpo del modulo.
 1. Salva le impostazioni.
 1. Dichiara una variabile JavaScript, __CUSTOM_SCRIPTS_VERSION, nella sezione head del codice HTML e impostane il valore su 1.
 
    >[!NOTE]
    >
-   >*Per disattivare la funzione, puoi rimuovere la variabile JavaScript o impostarne il valore su 0.*
+   >*Per disattivare la funzionalità, è possibile rimuovere la variabile JavaScript o impostarne il valore su 0.*

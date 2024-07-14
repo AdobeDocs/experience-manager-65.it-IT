@@ -26,39 +26,39 @@ La funzionalità raccolta file consente ai visitatori del sito (membri della com
 Questa sezione della documentazione descrive:
 
 * Aggiunta della funzionalità di libreria file a un sito AEM.
-* Impostazioni di configurazione per `File Library` componente.
+* Impostazioni di configurazione per il componente `File Library`.
 
 ### Aggiunta di una libreria di file a una pagina {#adding-a-file-library-to-a-page}
 
-Per aggiungere una `File Library` per passare da un componente a una pagina in modalità di modifica, individua il componente:
+Per aggiungere un componente `File Library` a una pagina in modalità di creazione, individua il componente:
 
 * `Communities / File Library`
 
 Trascinarlo nella posizione desiderata su una pagina.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](/help/communities/basics.md).
 
-Quando [librerie lato client richieste](/help/communities/essentials-file-library.md#essentials-for-client-side) sono inclusi, è così che `File Library` viene visualizzato il componente:
+Quando sono incluse le [librerie lato client richieste](/help/communities/essentials-file-library.md#essentials-for-client-side), è così che viene visualizzato il componente `File Library`:
 
 ![file-library1](assets/file-library1.png)
 
 ### Configurazione della libreria dei file {#configuring-file-library}
 
-Seleziona la inserita `File Library` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo modifica.
+Selezionare il componente `File Library` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
-![configure-new](assets/configure-new.png)
+![configura-nuovo](assets/configure-new.png)
 
 ![file-library2](assets/file-library2.png)
 
 #### Scheda Commenti {#comments-tab}
 
-Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i file caricati:
+Nella scheda **Commenti**, specifica se e come vengono visualizzati i commenti per i file caricati:
 
 * **Consenti commenti su file**
 
   Se questa opzione è selezionata, consenti commenti sui file caricati. L&#39;impostazione predefinita è deselezionata.
 
-* **Commenti per pagina**
+* **Commenti Per Pagina**
 
   Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Il valore predefinito è **10**.
 
@@ -86,7 +86,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
   Se questa opzione è selezionata, la possibilità di aggiungere un tag al file è abilitata. L&#39;impostazione predefinita è deselezionata.
 
-* **Namespace consentiti**
+* **Spazi dei nomi consentiti**
 
   Se è selezionata l’opzione Consenti assegnazione tag, i tag disponibili sono limitati agli spazi dei nomi selezionati. Se non è selezionato alcuno spazio dei nomi, sono consentiti tutti. Il valore predefinito è tutti gli spazi dei nomi.
 
@@ -100,7 +100,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 * **Consenti Segui**
 
-  Se questa opzione è selezionata, includi la seguente funzione per gli articoli di blog, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, includere la seguente funzionalità per gli articoli di blog, che consente ai membri di ricevere [notifica](/help/communities/notifications.md) dei nuovi post. L&#39;impostazione predefinita è deselezionata.
 
 * **Abilita menzione**
 
@@ -120,7 +120,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Sotto **Moderazione utenti** , configura la moderazione dei commenti, se i commenti sono consentiti:
+Nella scheda **Moderazione utente** configura la moderazione dei commenti, se i commenti sono consentiti:
 
 * **Pre-moderazione**
 
@@ -154,9 +154,9 @@ Sotto **Moderazione utenti** , configura la moderazione dei commenti, se i comme
 
   Immetti il numero di volte in cui un commento deve essere segnalato dai visitatori prima che il moderatore riceva una notifica. Il valore predefinito è una tantum (**1**).
 
-* **Limite segnalazione**
+* **Limite di segnalazione**
 
-  Immettere il numero di volte in cui un commento deve essere segnalato prima di essere nascosto alla visualizzazione pubblica. Questo numero deve essere maggiore o uguale al **Soglia moderazione**. Il valore predefinito è 5.
+  Immettere il numero di volte in cui un commento deve essere segnalato prima di essere nascosto alla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla **soglia di moderazione**. Il valore predefinito è 5.
 
 ### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
@@ -166,8 +166,8 @@ Imposta come predefinito
 
 ### Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base sulla libreria dei file](/help/communities/essentials-file-library.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Nozioni di base sulla libreria dei file](/help/communities/essentials-file-library.md) per gli sviluppatori.
 
-Per la moderazione degli argomenti e dei commenti pubblicati, vedi [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
+Per la moderazione degli argomenti e dei commenti pubblicati, vedere [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
 
-Per assegnare tag agli argomenti e ai commenti pubblicati, consulta [Assegnazione di tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).
+Per assegnare tag agli argomenti e ai commenti pubblicati, vedere [Assegnazione di tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).

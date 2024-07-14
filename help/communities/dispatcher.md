@@ -1,5 +1,5 @@
 ---
-title: Configurazione di Dispatcher per le community
+title: Configurazione di Dispatcher per Communities
 description: Scopri come configurare Dispatcher per AEM Communities per garantire il corretto funzionamento dei siti della community.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 ---
 
-# Configurazione di Dispatcher per le community {#configuring-dispatcher-for-communities}
+# Configurazione di Dispatcher per Communities {#configuring-dispatcher-for-communities}
 
 ## Community AEM {#aem-communities}
 
@@ -26,65 +26,65 @@ Per scoprire cosa è necessario per la distribuzione e la progettazione del sito
 
 * Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support)
 
-Vedi anche la sezione principale [Documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it).
+Consulta anche la [documentazione principale di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it).
 
 ## Memorizzazione in cache di Dispatcher {#dispatcher-caching}
 
 ### Panoramica {#overview}
 
-Il caching di Dispatcher per AEM Communities consente a Dispatcher di distribuire versioni completamente memorizzate nella cache delle pagine di un sito community.
+La memorizzazione nella cache di Dispatcher per AEM Communities consente a Dispatcher di distribuire versioni completamente memorizzate nella cache delle pagine di un sito community.
 
 Attualmente, è supportato solo per i visitatori anonimi del sito, ad esempio gli utenti che navigano nel sito della community o che arrivano su una pagina della community dopo una ricerca, e per i motori di ricerca che indicizzano le pagine. Il vantaggio è che gli utenti anonimi e i motori di ricerca ottengono prestazioni migliori.
 
 Per i membri con accesso, Dispatcher ignora la cache, inoltrando le richieste direttamente all’editore in modo che tutte le pagine vengano generate e distribuite in modo dinamico.
 
-Quando è configurato per supportare il caching di Dispatcher, all’intestazione viene aggiunta una scadenza &quot;max age&quot; basata su TTL per garantire che le pagine memorizzate in cache di Dispatcher siano correnti.
+Quando è configurato per supportare il caching di Dispatcher, all’intestazione viene aggiunta una scadenza &quot;max age&quot; basata su TTL per garantire che le pagine Dispatcher memorizzate in cache siano correnti.
 
 ### Requisiti {#requirements}
 
-* Dispatcher versione 4.1.2 o successiva (vedi [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) per la versione più recente)
+* Dispatcher versione 4.1.2 o successiva (vedere [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) per la versione più recente)
 * [Pacchetto ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versione 3.3.2 o successiva
-   * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` Configurazione OSGi
+   * Configurazione OSGi `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 
 ### Configurazione {#configuration}
 
-Configurazione OSGi **ACS AEM Commons - Intestazione di controllo cache di Dispatcher - Età massima** imposta la scadenza delle pagine memorizzate nella cache che vengono visualizzate in un percorso specificato.
+La configurazione OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** imposta la scadenza delle pagine memorizzate nella cache che vengono visualizzate in un percorso specificato.
 
-* Dalla sezione [Console web](../../help/sites-deploying/configuring-osgi.md).
+* Dalla [console Web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Ad esempio: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Individua `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Seleziona l’icona &quot;+&quot; per creare una configurazione di connessione.
 
   ![dispatcher](assets/dispatcher.png)
 
-* **Modelli di filtro**
-  *(obbligatorio)* Uno o più percorsi per le pagine community. Esempio: `/content/sites/engage/(.*)`.
+* **Modelli filtro**
+  *(obbligatorio)* Uno o più percorsi alle pagine community. Esempio: `/content/sites/engage/(.*)`.
 
-* **Scadenza massima controllo cache**
-  *(obbligatorio)* Durata massima (in secondi) da aggiungere all’intestazione Controllo cache. Il valore deve essere maggiore di zero (0).
+* **Durata massima controllo cache**
+  *(obbligatorio)* La durata massima (in secondi) da aggiungere all&#39;intestazione Controllo cache. Il valore deve essere maggiore di zero (0).
 
-## Filtri di Dispatcher {#dispatcher-filters}
+## Filtri Dispatcher {#dispatcher-filters}
 
-La sezione /filter del `dispatcher.any` il file è documentato in [Configurazione dell’accesso al contenuto: /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
+La sezione /filter del file `dispatcher.any` è documentata in [Configurazione dell&#39;accesso al contenuto - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
 
 Questa sezione descrive le voci che potrebbero essere necessarie per il corretto funzionamento delle funzioni di Communities.
 
 I nomi delle proprietà del filtro seguono la convenzione di utilizzare un numero di quattro cifre per indicare l’ordine in cui applicare i pattern di filtro. Quando a una richiesta sono applicati più modelli di filtro, l’ultimo modello applicato ha effetto. Pertanto, il primo pattern di filtro viene spesso utilizzato per negare tutto, in modo che i seguenti pattern servano a ripristinare l’accesso in modo controllato.
 
-Negli esempi seguenti vengono utilizzati nomi di proprietà che probabilmente devono essere modificati per adattarsi a un particolare `dispatcher.any` file.
+Negli esempi seguenti vengono utilizzati nomi di proprietà che probabilmente devono essere modificati per adattarsi a un particolare file `dispatcher.any`.
 
 Consulta anche:
 
-* [Elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
+* [Elenco di controllo protezione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >
->**Esempi di nome proprietà**
->Vengono visualizzati tutti i nomi delle proprietà, ad esempio **/0050** e **/0170**, devono essere adattati per essere inclusi in un `dispatcher.any` file di configurazione.
+>**Esempi di nomi di proprietà**
+>Tutti i nomi di proprietà visualizzati, ad esempio **/0050** e **/0170**, devono essere regolati in modo da rientrare in un file di configurazione di `dispatcher.any` esistente.
 >
 
 >[!CAUTION]
@@ -222,9 +222,9 @@ Le seguenti voci devono essere aggiunte alla fine della sezione /filter, special
 ```
 -->
 
-## Regole di Dispatcher {#dispatcher-rules}
+## Regole Dispatcher {#dispatcher-rules}
 
-La sezione delle regole di `dispatcher.any` definisce quali risposte devono essere memorizzate nella cache in base all’URL richiesto. Per le community, la sezione regole viene utilizzata per definire cosa non deve mai essere memorizzato in cache.
+La sezione delle regole di `dispatcher.any` definisce quali risposte devono essere memorizzate nella cache in base all&#39;URL richiesto. Per le community, la sezione regole viene utilizzata per definire cosa non deve mai essere memorizzato in cache.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -278,7 +278,7 @@ Il primo modello di filtro viene spesso utilizzato per negare tutto in modo che 
 
 ## Esempio di dispatcher.any {#sample-dispatcher-any}
 
-Di seguito è riportato un esempio `dispatcher.any` che include Communities /filters e /rules.
+Di seguito è riportato un file `dispatcher.any` di esempio che include Communities /filters e /rules.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

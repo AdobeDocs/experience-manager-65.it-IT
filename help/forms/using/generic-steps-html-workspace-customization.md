@@ -21,19 +21,19 @@ ht-degree: 1%
 
 I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
 
-1. Accedi a CRXDE Liti accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Creare un `sling:Folder` cartella denominata `ws` a `/apps`, se non esiste. Per creare un `sling:Folder` cartella, fare clic con il pulsante destro del mouse sulla `apps` cartella e seleziona **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Specifica il nome come `ws`, seleziona digita come `sling:Folder`e fai clic su **[!UICONTROL OK]**. Clic **[!UICONTROL Salva tutto]**.
-1. Sfoglia per `/apps/ws`, e passare al **[!UICONTROL Controllo dell’accesso]** scheda.
-1. Seleziona la **[!UICONTROL Archivio]** opzione. In **[!UICONTROL Controllo dell’accesso]** , fare clic su **[!UICONTROL +]** per aggiungere una voce. Clic **[!UICONTROL +]** di nuovo.
-1. Cerca e seleziona la **PERM_WORKSPACE_USER** Principale.
+1. Accedere a CRXDE Lite accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Creare una cartella `sling:Folder` denominata `ws` in `/apps`, se non esiste. Per creare una cartella `sling:Folder`, fare clic con il pulsante destro del mouse sulla cartella `apps` e selezionare **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Specificare il nome come `ws`, selezionare il tipo come `sling:Folder` e fare clic su **[!UICONTROL OK]**. Fare clic su **[!UICONTROL Salva tutto]**.
+1. Passare a `/apps/ws` e passare alla scheda **[!UICONTROL Controllo dell&#39;accesso]**.
+1. Selezionare l&#39;opzione **[!UICONTROL Archivio]**. Nell&#39;elenco **[!UICONTROL Controllo di accesso]** fare clic su **[!UICONTROL +]** per aggiungere una voce. Fai di nuovo clic su **[!UICONTROL +]**.
+1. Cerca e seleziona l&#39;entità **PERM_WORKSPACE_USER**.
 
    ![Selezionare l&#39;entità PERM_WORKSPACE_USER come parte dei passaggi generici per personalizzare HTML Workspace](assets/perm_workspace_user.png)
 
-1. Assegna `jcr:read` privilegio dell&#39;entità.
-1. Clic **[!UICONTROL Salva tutto]**.
-1. Copia il `GET.jsp`, `index`, e `html.jsp` file da `/libs/ws` cartella al `/apps/ws` cartella.
-1. Copia il `/libs/ws/locales` cartella in `/apps/ws` cartella. Clic **[!UICONTROL Salva tutto]**.
-1. Aggiornare i riferimenti e i percorsi relativi in `GET.jsp` come mostrato di seguito, quindi fare clic su **[!UICONTROL Salva tutto]**.
+1. Assegnare il privilegio `jcr:read` all&#39;entità.
+1. Fare clic su **[!UICONTROL Salva tutto]**.
+1. Copiare i file `GET.jsp`, `index` e `html.jsp` dalla cartella `/libs/ws` nella cartella `/apps/ws`.
+1. Copiare la cartella `/libs/ws/locales` nella cartella `/apps/ws`. Fare clic su **[!UICONTROL Salva tutto]**.
+1. Aggiornare i riferimenti e i percorsi relativi nel file `GET.jsp`, come illustrato di seguito, e fare clic su **[!UICONTROL Salva tutto]**.
 
    ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -41,9 +41,9 @@ I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
 
 1. Per le personalizzazioni CSS, effettua le seguenti operazioni:
 
-   1. Accedi a `/apps/ws` e crea una cartella denominata `css`.
+   1. Passare alla cartella `/apps/ws` e creare una cartella denominata `css`.
 
-   1. In `css` cartella, crea un file denominato `newStyle.css`.
+   1. Nella cartella `css` creare un file denominato `newStyle.css`.
 
    1. Apri `/apps/ws/html`.jsp e cambia da
 
@@ -78,22 +78,22 @@ I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
 
 1. Effettua le seguenti operazioni:
 
-   1. Crea una cartella denominata `js` a `/apps/ws`. Clic **[!UICONTROL Salva tutto]**.
+   1. Creare una cartella denominata `js` in `/apps/ws`. Fare clic su **[!UICONTROL Salva tutto]**.
 
-   1. Crea una cartella denominata `libs` a `/apps/ws/js`. Clic **[!UICONTROL Salva tutto]**.
+   1. Creare una cartella denominata `libs` in `/apps/ws/js`. Fare clic su **[!UICONTROL Salva tutto]**.
 
-   1. Copia `/libs/ws/js/libs/jqueryui` cartella a `/apps/ws/js/libs`. Clic **[!UICONTROL Salva tutto]**.
+   1. Copia la cartella `/libs/ws/js/libs/jqueryui` in `/apps/ws/js/libs`. Fare clic su **[!UICONTROL Salva tutto]**.
 
 1. Per le personalizzazioni di HTML, effettuate le seguenti operazioni:
 
-   1. Sotto `/apps/ws/js`, crea una cartella denominata `runtime`. Clic **[!UICONTROL Salva tutto]**.
+   1. In `/apps/ws/js` creare una cartella denominata `runtime`. Fare clic su **[!UICONTROL Salva tutto]**.
 
-   1. Sotto `/apps/ws/js/runtime`, crea una cartella denominata `templates`. Clic **[!UICONTROL Salva tutto]**.
+   1. In `/apps/ws/js/runtime` creare una cartella denominata `templates`. Fare clic su **[!UICONTROL Salva tutto]**.
 
-   1. Copia `/libs/ws/js/main.js` a `/apps/ws/js/main.js`.
+   1. Copia `/libs/ws/js/main.js` in `/apps/ws/js/main.js`.
 
    1. Copia /libs/ws/js/registry.js in `/apps/ws/js/registry.js`.
 
-1. Clic **[!UICONTROL Salva tutto]**, cancella la cache e aggiorna l’area di lavoro di AEM Forms.
+1. Fai clic su **[!UICONTROL Salva tutto]**, cancella la cache e aggiorna l&#39;area di lavoro di AEM Forms.
 
-   Accedere all’URL `https://'[server]:[port]'/lc/ws` e accedere con le credenziali amministratore/password. Il browser reindirizza a `https://'[server]:[port]'/lc/apps/ws/index.html`.
+   Accedere all&#39;URL `https://'[server]:[port]'/lc/ws` e accedere con le credenziali amministratore/password. Il browser viene reindirizzato a `https://'[server]:[port]'/lc/apps/ws/index.html`.

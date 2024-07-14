@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Data l’ampia gamma di dispositivi sul mercato e di dispositivi in fase di rilascio, il test delle app è diventato imperativo. Si tratta di un’area in cui funzionalità e usabilità possono ottenere recensioni negative su un app store, ma un singolo difetto può causare la disinstallazione dell’app. Presta particolare attenzione ai piani di test e al controllo qualità. Il seguente collegamento tratta molti degli argomenti che devono essere trattati in generale, ad esempio l’identificazione dell’ambiente, la definizione dei casi di test, i tipi di test, i presupposti e il coinvolgimento dei clienti. Vengono inoltre descritti gli strumenti utili per l’attività di test. Strumenti interni, come [Hobbes](/help/sites-developing/hobbes.md), può essere utile per i test dell’interfaccia utente basati sul web. [Giornata difficile](/help/sites-developing/tough-day.md) può sollecitare le istanze con un carico simulato. Se l’ambiente di test ha già esperienza con strumenti di terze parti, come Selenium, puoi utilizzare anche questi.
+Data l’ampia gamma di dispositivi sul mercato e di dispositivi in fase di rilascio, il test delle app è diventato imperativo. Si tratta di un’area in cui funzionalità e usabilità possono ottenere recensioni negative su un app store, ma un singolo difetto può causare la disinstallazione dell’app. Presta particolare attenzione ai piani di test e al controllo qualità. Il seguente collegamento tratta molti degli argomenti che devono essere trattati in generale, ad esempio l’identificazione dell’ambiente, la definizione dei casi di test, i tipi di test, i presupposti e il coinvolgimento dei clienti. Vengono inoltre descritti gli strumenti utili per l’attività di test. Gli strumenti interni, come [Hobbes](/help/sites-developing/hobbes.md), possono essere utili per i test dell&#39;interfaccia utente basati sul Web. [Giorno difficile](/help/sites-developing/tough-day.md) può stressare le tue istanze con un carico simulato. Se l’ambiente di test ha già esperienza con strumenti di terze parti, come Selenium, puoi utilizzare anche questi.
 
 Quando si sviluppa un’app mobile, vi sono molti nuovi problemi specifici per i dispositivi che devono essere affrontati insieme a quelli dei test tradizionali.
 
@@ -45,7 +45,7 @@ Quando si sviluppa un’app mobile, vi sono molti nuovi problemi specifici per i
 
 ## Test manuale {#manual-testing}
 
-Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manuale. I clienti che eseguono l’app su un dispositivo reale non possono essere duplicati da uno script. Anche qui, hai molte opzioni. Puoi utilizzare una piattaforma, come HockeyApp, per definire chi ha accesso e raccogliere feedback. In alternativa, è possibile affidare l&#39;intero processo a un servizio come UTest, ElusiveStars o Testin. Se disponi di un gruppo di tester interni, ma non di dispositivi diversi, puoi eseguire test manuali sui loro pool di dispositivi tramite i servizi cloud. Un servizio di questo tipo è SauceLabs. Puoi anche creare app da remoto per PhoneGap Enterprise e installarle su dispositivi locali come livello di test di accettazione o dimostrazione. Visualizza PhoneGap (`https://phonegap.com/`) per le funzioni e la documentazione più recenti. Indipendentemente dall’approccio adottato, il test manuale deve effettuare le seguenti operazioni:
+Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manuale. I clienti che eseguono l’app su un dispositivo reale non possono essere duplicati da uno script. Anche qui, hai molte opzioni. Puoi utilizzare una piattaforma, come HockeyApp, per definire chi ha accesso e raccogliere feedback. In alternativa, è possibile affidare l&#39;intero processo a un servizio come UTest, ElusiveStars o Testin. Se disponi di un gruppo di tester interni, ma non di dispositivi diversi, puoi eseguire test manuali sui loro pool di dispositivi tramite i servizi cloud. Un servizio di questo tipo è SauceLabs. Puoi anche creare app da remoto per PhoneGap Enterprise e installarle su dispositivi locali come livello di test di accettazione o dimostrazione. Per informazioni sulle funzioni e la documentazione più recenti, visitare il sito Web PhoneGap (`https://phonegap.com/`). Indipendentemente dall’approccio adottato, il test manuale deve effettuare le seguenti operazioni:
 
 * ha raggiunto un vasto target di tester,
 * effettuare prove su un ampio pool di dispositivi (idealmente dispositivi reali, ma simulatori/emulatori se non sono disponibili dispositivi reali),
@@ -69,28 +69,28 @@ Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manu
 * SeleniumGrid indirizza i test tra nodi per i test paralleli.
 * L&#39;IDE di selenio aiuta a ridurre la scrittura di test case.
 
-Per ulteriori informazioni, consulta [https://www.selenium.dev/](https://www.selenium.dev/).
+Per ulteriori informazioni, vedere [https://www.selenium.dev/](https://www.selenium.dev/).
 
-**Testdroide**
+**Testdroid**
 
 * Servizio di test basato su cloud con hook di integrazione continua e test sul dispositivo reale.
 * Incluso è un App Crawler che controlla la compatibilità del dispositivo, analizza i registri, analizza le viste, acquisisce le schermate e monitora le prestazioni.
 
-Per ulteriori informazioni, consulta [https://testdroid.com/](https://testdroid.com/).
+Per ulteriori informazioni, vedere [https://testdroid.com/](https://testdroid.com/).
 
 **Appia**
 
 * Appium è un framework multipiattaforma popolare per l’automazione dei test mobili.
 * Inoltre, è incluso un ispettore con capacità di record per aiutare a codificare i casi di test.
 
-Per ulteriori informazioni, consulta [https://appium.io/](https://appium.io/).
+Per ulteriori informazioni, vedere [https://appium.io/](https://appium.io/).
 
-**Laboratori di salse**
+**Laboratori di salsa**
 
 * SauceLabs fornisce test basati su cloud e si integra con l’integrazione continua.
 * I test vengono eseguiti automaticamente nel relativo ambiente cloud oppure è possibile avviare un dispositivo o una piattaforma particolare ed eseguire test manuali per facilitare il debug dei problemi.
 
-Per ulteriori informazioni, consulta [https://saucelabs.com/](https://saucelabs.com/).
+Per ulteriori informazioni, vedere [https://saucelabs.com/](https://saucelabs.com/).
 
 <!-- **AppTestNow**
 
@@ -99,14 +99,14 @@ Per ulteriori informazioni, consulta [https://saucelabs.com/](https://saucelabs.
 
 For more information, see [https://apptestnow.com/](https://apptestnow.com/). -->
 
-**Hockey App**
+**HockeyApp**
 
 * HockeyApp rientra nel test manuale in cui l&#39;app mobile viene inviata a un app store personale dove i tester possono scaricarla e provarla.
 
-Per ulteriori informazioni, consulta [https://hockeyapp.net/features/](https://hockeyapp.net/features/).
+Per ulteriori informazioni, vedere [https://hockeyapp.net/features/](https://hockeyapp.net/features/).
 
 **Jenkins**
 
 * Anche se non è uno strumento di test, Jenkins è un framework di integrazione continua che fornisce la spina dorsale per i test automatizzati. Sono disponibili numerosi plug-in di terze parti per estendere la funzionalità. Ad esempio, il plugin SeleniumGrid fornisce un’interfaccia utente per aiutare a gestire l’hub e i nodi Selenium.
 
-Per ulteriori informazioni, consulta [https://www.jenkins.io/](https://www.jenkins.io/) e [https://plugins.jenkins.io/](https://plugins.jenkins.io/).
+Per ulteriori informazioni, vedere [https://www.jenkins.io/](https://www.jenkins.io/) e [https://plugins.jenkins.io/](https://plugins.jenkins.io/).

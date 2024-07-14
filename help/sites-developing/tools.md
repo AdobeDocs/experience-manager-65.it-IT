@@ -23,22 +23,22 @@ ht-degree: 1%
 
 AEM fornisce:
 
-* [un framework per testare l’interfaccia utente dei componenti](/help/sites-developing/hobbes.md).
-* [un meccanismo per testare e eseguire il debug dei componenti](/help/sites-developing/developer-mode.md).
+* [un framework per la verifica dell&#39;interfaccia utente del componente](/help/sites-developing/hobbes.md).
+* [un meccanismo per il test e il debug dei componenti](/help/sites-developing/developer-mode.md).
 
-Di seguito sono riportati due strumenti di test open source:
+Di seguito sono riportati due strumenti di prova di Open Source:
 
 **Selenio**
 
 Selenium viene utilizzato per il test di funzione in un browser con un utente per attività. Registra i passaggi di test (clic) come tabelle HTML o classi Java™.
 
-Per ulteriori informazioni, consulta [https://www.selenium.dev/](https://www.selenium.dev/).
+Per ulteriori informazioni, vedere [https://www.selenium.dev/](https://www.selenium.dev/).
 
 **JMeter**
 
 JMeter viene utilizzato per tenere traccia delle richieste e può essere utilizzato per test funzionali, di prestazioni e di stress.
 
-Per ulteriori informazioni, consulta [https://jmeter.apache.org/](https://jmeter.apache.org/).
+Per ulteriori informazioni, vedere [https://jmeter.apache.org/](https://jmeter.apache.org/).
 
 Esistono anche molti strumenti proprietari per automatizzare i test e gestire i piani di test.
 
@@ -52,7 +52,7 @@ Un sistema di tracciamento dei bug che può essere configurato in base alle tue 
 
 **Fogli di calcolo**
 
-Anche se non si tratta di uno strumento specifico per il monitoraggio dei bug, i fogli di calcolo sono spesso *errore* utilizzati per questo scopo in quanto sono facili da comprendere e la maggior parte degli utenti ha esperienza delle loro funzionalità.
+Anche se non si tratta di uno strumento specifico per il monitoraggio dei bug, i fogli di calcolo sono spesso *mis* utilizzati a questo scopo in quanto sono facili da comprendere e la maggior parte degli utenti ha esperienza delle loro funzionalità.
 
 Se questi fogli di calcolo vengono utilizzati per il tracciamento:
 

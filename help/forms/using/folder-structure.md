@@ -24,16 +24,16 @@ I componenti dell’area di lavoro AEM Forms sono progettati sull’architettura
 * Modello, un file HTML contenente controlli di interfaccia.
 * Visualizza, che funge da classe Controller per Template.
 
-Le risorse di tutti i componenti si trovano nella struttura di cartelle descritta di seguito. Per accedere alle risorse, accedi a CRXDE Liti e passa a `/libs/ws/js/runtime/`.
+Le risorse di tutti i componenti si trovano nella struttura di cartelle descritta di seguito. Per accedere alle risorse, accedi a CRXDE Lite e passa a `/libs/ws/js/runtime/`.
 
-**modelli** Contiene modelli di spina dorsale.
+**modelli** contiene modelli di backbone.
 
-**visualizzazioni** Contiene le viste della spina dorsale.
+**visualizzazioni** Contiene visualizzazioni backbone.
 
-**modelli** Contiene solo i modelli di HTML per i componenti.
+**modelli** contiene solo i modelli HTML per i componenti.
 
-**percorsi** Contiene percorsi universali. La cartella Templates all’interno delle route contiene il codice HTML e i riferimenti ai componenti.
+**route** contiene route universali. La cartella Templates all’interno delle route contiene il codice HTML e i riferimenti ai componenti.
 
-**servizi** Contiene l’interfaccia di servizio per chiamare le API del server Adobe Experience Manager sull’endpoint REST.
+**servizi** contiene l&#39;interfaccia di servizio per chiamare le API del server Adobe Experience Manager sull&#39;endpoint REST.
 
-**fino al** Contiene utility generiche utilizzabili da più componenti.
+**util** contiene utilità generiche utilizzabili da più componenti.

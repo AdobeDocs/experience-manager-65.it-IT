@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Le attività di un membro della community che ha effettuato l’accesso, ad esempio la pubblicazione in un forum o in un blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi tramite la configurazione di `Activity Streams` componente.
+Le attività di un membro della community con accesso, ad esempio la pubblicazione in un forum o in un blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi tramite la configurazione del componente `Activity Streams`.
 
 La possibilità di seguire aggiunge un&#39;altra vista delle attività in cui i membri della community seguono i post di interesse o seguono le attività di altri membri della community.
 
@@ -32,27 +32,27 @@ Il documento descrive:
 
 ### Aggiunta di flussi di attività a una pagina {#adding-activity-streams-to-a-page}
 
-Se si desidera aggiungere un `Activity Streams` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare
+Se si desidera aggiungere un componente `Activity Streams` a una pagina in modalità di creazione, utilizzare il browser componenti per individuare
 
 * `Communities / Activity Streams`
 
 Trascinalo in una pagina in cui dovrebbero apparire i flussi di attività.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](/help/communities/basics.md).
 
-Quando [librerie lato client richieste](/help/communities/essentials-activities.md#essentials-for-client-side) sono inclusi, è così che `Activity Streams` viene visualizzato il componente:
+Quando sono incluse le [librerie lato client richieste](/help/communities/essentials-activities.md#essentials-for-client-side), il componente `Activity Streams` viene visualizzato in questo modo:
 
-![activity-streams](assets/activity-component.png)
+![attività-flussi](assets/activity-component.png)
 
 ### Configurazione dei flussi di attività {#configuring-activity-streams}
 
-Seleziona la inserita `Activity Streams` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
+Selezionare il componente `Activity Streams` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo per modifica.
 
 ![configura](assets/configure-new.png)
 
-Sotto **Attività utente** , specificare le attività da visualizzare:
+Nella scheda **Attività utente**, specifica le attività da visualizzare:
 
-![attività degli utenti](assets/user-activities.png)
+![attività-utente](assets/user-activities.png)
 
 * **Numero massimo di attività**
 
@@ -62,7 +62,7 @@ Sotto **Attività utente** , specificare le attività da visualizzare:
 
   Lascia vuoto questo campo per impostare il sito community o il gruppo community come predefinito. Il percorso della risorsa del flusso identifica l’origine delle attività. Il valore predefinito è vuoto.
 
-* **Visualizza la vista Attività utente**
+* **Visualizzazione attività utente**
 
   Se questa opzione è selezionata, la pagina Attività include una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. Il valore predefinito è selezionato.
 
@@ -70,21 +70,21 @@ Sotto **Attività utente** , specificare le attività da visualizzare:
 
   Se questa opzione è selezionata, la pagina delle attività include una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. Il valore predefinito è selezionato.
 
-* **Visualizza la vista Segui**
+* **Visualizzazione successiva**
 
   Se questa opzione è selezionata, la pagina attività include una scheda che filtra le attività in base a quelle seguite dal membro corrente. Il valore predefinito è selezionato.
 
 ### Vista successiva {#following-view}
 
-I componenti devono essere configurati in modo da abilitare quanto segue. Le funzioni che consentono di: [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [D/R](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [libreria file](/help/communities/file-library.md), e [commenti](/help/communities/comments.md).
+I componenti devono essere configurati in modo da abilitare quanto segue. Le caratteristiche che consentono di eseguire le operazioni seguenti sono [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [libreria file](/help/communities/file-library.md) e [commenti](/help/communities/comments.md).
 
 ![visualizzazione successiva](assets/following-activities.png)
 
-Il **Segui** fornisce un mezzo per seguire le voci come attività, [notifiche](/help/communities/notifications.md), o [abbonamenti](/help/communities/subscriptions.md). Ogni volta che **Segui** è selezionato, è possibile attivare o disattivare una selezione. Il `Email Subscriptions` La selezione è presente solo se configurata.
+Il pulsante **Segui** consente di seguire le voci come attività, [notifiche](/help/communities/notifications.md) o [abbonamenti](/help/communities/subscriptions.md). Ogni volta che il pulsante **Segui** è selezionato, è possibile attivare o disattivare una selezione. La selezione `Email Subscriptions` è presente solo se configurata.
 
-Se è selezionato un metodo qualsiasi di seguito, il testo del pulsante diventa **Segue**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
+Se è selezionato un metodo qualsiasi di seguire, il testo del pulsante diventa **Segue**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
 
-Il **Segui** viene visualizzato il pulsante:
+Viene visualizzato il pulsante **Segui**:
 
 * Quando si visualizza il profilo di un altro membro.
 * In una pagina delle funzioni principali, ad esempio forum, domande e blog.
@@ -97,4 +97,4 @@ Il **Segui** viene visualizzato il pulsante:
 
 ### Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base sui flussi di attività](/help/communities/essentials-activities.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Activity Streams Essentials](/help/communities/essentials-activities.md) per sviluppatori.

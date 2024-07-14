@@ -44,7 +44,7 @@ Nella fase precedente del Percorso Headless, hai imparato a usare l’API GraphQ
 
 Allora perché è necessaria un&#39;altra API?
 
-L’API HTTP di Assets consente di: **Letto** contenuti, ma consente anche di: **Crea**, **Aggiorna** e **Elimina** content: azioni che non sono possibili con l’API di GraphQL.
+L&#39;API HTTP di Assets consente di **leggere** il contenuto, ma consente anche di **creare**, **aggiornare** e **eliminare** contenuto - azioni che non sono possibili con l&#39;API di GraphQL.
 
 L’API REST di Assets è disponibile su ogni installazione predefinita di una versione recente di Adobe Experience Manager.
 
@@ -253,7 +253,7 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 
 >[!CAUTION]
 >
->La configurazione del dispatcher sulle istanze AEM potrebbe bloccare l’accesso a `/api`.
+>La configurazione del dispatcher sulle istanze AEM potrebbe bloccare l&#39;accesso a `/api`.
 
 >[!NOTE]
 >
@@ -320,7 +320,7 @@ Ora che hai completato questa parte del percorso per sviluppatori headless di AE
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Dovresti continuare il tuo percorso headless AEM rivedendo il documento successivamente [Come utilizzare l&#39;applicazione headless](go-live.md) dove puoi portare in diretta il tuo progetto AEM Headless!
+Continua il tuo percorso di headless AEM esaminando il documento [How to Go Live with Your Headless Application](go-live.md) in cui realizzi il progetto AEM Headless.
 
 ## Risorse aggiuntive {#additional-resources}
 

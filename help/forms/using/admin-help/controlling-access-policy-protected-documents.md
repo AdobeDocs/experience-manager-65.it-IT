@@ -42,21 +42,21 @@ Per ogni documento elencato nella pagina Documenti, è possibile visualizzare il
 >
 >Utilizzare il collegamento Nome criterio nella pagina Dettagli documento per accedere ai criteri generati automaticamente in Microsoft Outlook per i destinatari di un documento allegato a un messaggio di posta elettronica. Questi criteri non vengono visualizzati nella pagina dei criteri.
 
-**Nome documento:** Nome del documento selezionato.
+**Nome documento:** il nome del documento selezionato.
 
-**ID documento:** Identificatore univoco assegnato da Document Security quando viene applicata una policy al documento. document security utilizza questo numero per tenere traccia del documento.
+**ID documento:** Identificatore univoco assegnato da Document Security quando viene applicato un criterio al documento. document security utilizza questo numero per tenere traccia del documento.
 
-**Stato documento:** Stato del documento, ad esempio attivo o revocato.
+**Stato documento:** Stato del documento (ad esempio, attivo o revocato).
 
-**Editore:** Nome dell’utente che ha allegato il criterio al documento.
+**Autore:** Nome dell&#39;utente che ha allegato il criterio al documento.
 
-**Nome criterio:** Nome del criterio utilizzato per proteggere il documento. Puoi fare clic sul nome per aprire il criterio. Utilizzare questo collegamento per accedere ai criteri generati da Acrobat per i destinatari di un documento allegato a un messaggio di posta elettronica in Outlook. Tali criteri non vengono visualizzati nella pagina Criteri.
+**Nome criterio:** Il nome del criterio utilizzato per proteggere il documento. Puoi fare clic sul nome per aprire il criterio. Utilizzare questo collegamento per accedere ai criteri generati da Acrobat per i destinatari di un documento allegato a un messaggio di posta elettronica in Outlook. Tali criteri non vengono visualizzati nella pagina Criteri.
 
-**Tipo di criterio:** Tipo di criterio applicato al documento.
+**Tipo di criterio:** Il tipo di criterio applicato al documento.
 
-**Data di pubblicazione:** Data in cui il criterio è stato applicato al documento.
+**Data di pubblicazione:** la data in cui il criterio è stato applicato al documento.
 
-**Iterazioni correlate:** Se nel documento sono presenti iterazioni correlate, anche questo elemento viene visualizzato nell&#39;elenco. Fare clic sul collegamento per visualizzare l&#39;elenco delle iterazioni correlate per il documento.
+**Iterazioni correlate:** Se il documento contiene iterazioni correlate, anche questo elemento verrà visualizzato nell&#39;elenco. Fare clic sul collegamento per visualizzare l&#39;elenco delle iterazioni correlate per il documento.
 
 Gli utenti possono visualizzare informazioni sui documenti protetti. Gli amministratori possono visualizzare informazioni sui documenti protetti da qualsiasi utente tramite una policy. I coordinatori dei set di policy possono visualizzare informazioni sui documenti protetti da policy dai propri set di policy.
 
@@ -71,14 +71,14 @@ Questa funzione è utile quando più utenti collaborano e salvano versioni diver
 
 Se questa funzione è abilitata, è possibile visualizzare le iterazioni correlate di un documento dalla pagina Documenti.
 
-1. Visualizzare la pagina Dettagli documento relativa a un documento. (vedere [Visualizzare informazioni su un documento](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
+1. Visualizzare la pagina Dettagli documento relativa a un documento. (Vedi [Visualizza informazioni su un documento](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
 1. Fare clic su Visualizza iterazioni correlate. L’opzione è disponibile solo se la funzione è abilitata. Viene visualizzato l&#39;elenco delle iterazioni correlate. Per ogni iterazione, potete visualizzare le seguenti informazioni:
 
    * **Iterazione:** Il nome del file. Può essere diverso dal nome file originale e alla fine è aggiunto un numero di versione.
-   * **Editore:** Autore del documento originale.
-   * **Creato da:** Utente che ha salvato l&#39;iterazione.
-   * **Data di creazione:** Data e ora in cui è stata salvata l&#39;iterazione.
-   * **Criteri:** Criterio che protegge l&#39;iterazione. Diverse iterazioni possono essere protette da diversi criteri.
+   * **Editore:** editore del documento originale.
+   * **Creato da:** L&#39;utente che ha salvato l&#39;iterazione.
+   * **Data creazione:** la data e l&#39;ora in cui è stata salvata l&#39;iterazione.
+   * **Criterio:** Criterio che protegge l&#39;iterazione. Diverse iterazioni possono essere protette da diversi criteri.
 
 1. Per visualizzare la pagina Dettagli documento relativa a tale iterazione, fare clic sul nome file di un&#39;iterazione.
 
@@ -86,11 +86,11 @@ Se questa funzione è abilitata, è possibile visualizzare le iterazioni correla
 
 È possibile revocare e ripristinare l’accesso ai documenti protetti tramite policy:
 
-**Utenti:** Possono revocare o ripristinare l’accesso ai documenti protetti con le proprie policy personali o con le policy condivise per le quali è abilitata la funzionalità di revoca per l’utente che applica la policy. Gli utenti che non possono revocare l’accesso a un documento o cambiare una policy devono contattare l’amministratore.
+**Utenti:** possono revocare o ripristinare l&#39;accesso ai documenti protetti con i propri criteri personali o con criteri condivisi per i quali la funzionalità di revoca è abilitata per l&#39;utente che applica i criteri. Gli utenti che non possono revocare l’accesso a un documento o cambiare una policy devono contattare l’amministratore.
 
-**Amministratori:** Possono revocare o ripristinare i privilegi di accesso a qualsiasi documento protetto tramite policy, inclusi quelli protetti tramite policy personali o condivise. Se un amministratore revoca l’accesso a un documento protetto con una policy condivisa, solo un amministratore può ripristinare i privilegi di accesso per quel documento.
+**Amministratori:** possono revocare o ripristinare i privilegi di accesso a qualsiasi documento protetto tramite policy, inclusi quelli protetti tramite criteri personali o condivisi. Se un amministratore revoca l’accesso a un documento protetto con una policy condivisa, solo un amministratore può ripristinare i privilegi di accesso per quel documento.
 
-**Coordinatori set di criteri:** È possibile revocare o ripristinare i privilegi di accesso per i documenti protetti dai propri set di criteri.
+**Coordinatori set di criteri:** possono revocare o ripristinare i privilegi di accesso per i documenti protetti dai propri set di criteri.
 
 Quando si revocano o si ripristinano i privilegi di accesso ai documenti, la modifica ha effetto nei seguenti momenti:
 
@@ -98,20 +98,20 @@ Quando si revocano o si ripristinano i privilegi di accesso ai documenti, la mod
 * Se il documento è online e aperto, la modifica ha effetto quando il destinatario chiude il documento.
 * Se il documento è offline, ovvero utilizzato senza una connessione Internet, ad esempio su un laptop, la modifica ha effetto alla successiva sincronizzazione del destinatario con la protezione dei documenti.
 
-**Revoca dell’accesso a un documento protetto tramite policy**
+**Revoca dell&#39;accesso a un documento protetto tramite policy**
 
 1. Nella pagina di protezione dei documenti fare clic su Documenti.
 1. Selezionare la casella di controllo accanto al documento appropriato e fare clic su Revoca. È possibile revocare l&#39;accesso a più documenti alla volta.
 1. Selezionare un messaggio da visualizzare agli utenti che tentano di aprire il documento dopo la revoca:
 
-   * **Messaggio generale:** Indica che l&#39;autore ha revocato il documento
-   * **Documento terminato:** Indica che l&#39;autore ha terminato il documento
-   * **Documento revisionato**: indica che l’autore ha rivisto il documento
+   * **Messaggio generale:** indica che l&#39;autore ha revocato il documento
+   * **Documento terminato:** indica che l&#39;autore ha terminato il documento
+   * **Documento rivisto**: indica che l&#39;autore ha rivisto il documento
 
 1. (Facoltativo) Se è disponibile una versione più recente del documento, immettere l&#39;URL e fare clic su Test per verificare l&#39;URL.
 1. Fare clic su OK, quindi di nuovo su OK per tornare alla pagina Documenti.
 
-**Ripristinare i privilegi di accesso ai documenti**
+**Ripristina i privilegi di accesso ai documenti**
 
 1. Nella pagina di protezione dei documenti fare clic su Documenti.
 1. Nell&#39;elenco dei documenti fare clic sul documento appropriato.
@@ -144,13 +144,13 @@ Quando si cambia un criterio, il nuovo criterio viene applicato come segue:
 
 Alcune opzioni di ricerca aggiuntive sono disponibili solo per gli amministratori:
 
-**ID documento:** Numero ID univoco assegnato da Document Security al documento quando viene applicata la policy.
+**ID documento:** Numero ID univoco assegnato dalla protezione dei documenti al documento quando viene applicato il criterio.
 
 **Nome documento:** Nome del documento.
 
-**Nome editore:** Nome dell’utente che ha allegato il criterio al documento. Puoi selezionare l’utente da tutti i domini o da un dominio specificato.
+**Nome editore:** Nome dell&#39;utente che ha allegato il criterio al documento. Puoi selezionare l’utente da tutti i domini o da un dominio specificato.
 
-**ID criterio:** Numero ID del criterio allegato al documento.
+**ID policy:** Numero ID del criterio allegato al documento.
 
 **Nome criterio:** Nome del criterio allegato al documento.
 
@@ -190,16 +190,17 @@ Se la maggior parte dei visualizzatori non è Adobe PDF, se apri un documento pr
 >
 >Quando si visualizzano tali documenti (contenenti una pagina 0) in Adobe Reader/Acrobat o in un Reader mobile, il documento protetto viene aperto per impostazione predefinita.
 
-**Per aggiungere una pagina di copertina a un documento protetto tramite policy**
+**Per aggiungere una copertina a un documento protetto tramite policy**
 
 Utilizza i seguenti processi in Workbench:
 
-**Documento Protect con copertina:** Protegge un documento PDF con la policy specificata e aggiunge una pagina di copertina al documento
+**Protect
+Documento con copertina:** protegge un documento PDF con la policy specificata e aggiunge una copertina al documento
 
-**Estrai documento protetto:** Estrae il documento PDF protetto tramite policy dal documento PDF con la pagina di copertina
+**Estrai documento protetto:** estrae il documento PDF protetto tramite policy dal documento PDF con frontespizio
 
 Utilizza le seguenti API di Document Security:
 
-**protectDocumentWithCoverPage:** Protegge un determinato PDF con la policy specificata e restituisce un documento con una pagina di copertina e il documento protetto come allegato
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Estrae il documento protetto che è un allegato del documento con la pagina di copertina. È possibile creare il documento con la pagina di copertina utilizzando il metodo protectDocumentWithCoverPage
+**protectDocumentWithCoverPage:** protegge un determinato PDF con il criterio specificato e restituisce un documento con una pagina di copertina e il documento protetto come allegato
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Estrae il documento protetto che è un allegato nel documento con frontespizio. È possibile creare il documento con la pagina di copertina utilizzando il metodo protectDocumentWithCoverPage
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

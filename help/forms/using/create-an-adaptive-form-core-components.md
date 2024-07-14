@@ -1,6 +1,6 @@
 ---
 title: Creare un modulo adattivo
-description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience Manager Forms]. I Forms adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni. Approfondisci le modalità di creazione di un modulo adattivo basato su un modello di dati modulo e uno schema XML o JSON.
+description: Scopri come creare un modulo adattivo utilizzando  [!DNL Experience Manager Forms]. I Forms adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni. Approfondisci le modalità di creazione di un modulo adattivo basato su un modello di dati modulo e uno schema XML o JSON.
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 contentOwner: Khushwant Singh
@@ -20,7 +20,7 @@ ht-degree: 24%
 # Creazione di componenti core basati su Adaptive Forms {#creating-an-adaptive-form-core-components}
 
 
-<span class="preview"> L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+<span class="preview"> Adobe consiglia di utilizzare i Componenti core per [aggiungere Forms adattivo a una pagina AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o per [creare Forms adattivo autonomo](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -35,21 +35,21 @@ Prima di iniziare, scopri i tipi di componenti dei moduli disponibili:
 
 * [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it): si tratta di componenti di acquisizione dati standardizzati. Questi componenti forniscono funzionalità di personalizzazione e riducono i tempi di sviluppo e i costi di manutenzione per le esperienze di registrazione digitale. Uno sviluppatore può facilmente personalizzare e assegnare uno stile a questi componenti. L’Adobe consiglia di utilizzare questi componenti moderni ed estensibili per sviluppare Forms adattivo.
 
-* [Componenti di base dei moduli adattivi](creating-adaptive-form.md): si tratta dei classici (precedenti) componenti di acquisizione dati. Puoi continuare a utilizzarli per modificare i componenti di base esistenti basati su modulo adattivo. Se stai creando moduli, l’Adobe consiglia di utilizzare  [Componenti core Forms adattivi](/help/forms/using/create-adaptive-form.md) per creare un Forms adattivo.
+* [Componenti di base dei moduli adattivi](creating-adaptive-form.md): si tratta dei classici (precedenti) componenti di acquisizione dati. Puoi continuare a utilizzarli per modificare i componenti di base esistenti basati su modulo adattivo. Se stai creando moduli, Adobe consiglia di utilizzare [Componenti core Forms adattivi](/help/forms/using/create-adaptive-form.md) per creare un Forms adattivo.
 
 ## Prerequisiti
 
 Per creare un modulo adattivo è necessario quanto segue:
 
-* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: è richiesto il progetto Archetipo AEM versione 41 o successiva per [abilitare i Componenti core per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Quando si abilitano i Componenti core per l’ambiente, viene **Forms adattivo (componente core)** Il modello e il tema Canvas vengono aggiunti al tuo ambiente.
+* **Abilita componenti core Forms adattivi per l&#39;ambiente**: per [abilitare i componenti core per l&#39;ambiente](/help/forms/using/enable-adaptive-forms-core-components.md) è necessario il progetto Archetipo AEM versione 41 o successiva. Quando si abilitano i Componenti core per l&#39;ambiente, il modello **Forms adattivo (Componente core)** e il tema Canvas vengono aggiunti all&#39;ambiente.
 
-* **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Puoi anche distribuire [modelli di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nell&#39;ambiente. che consentono di iniziare a creare rapidamente i moduli.
+* **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Puoi anche distribuire [modelli di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nel tuo ambiente. che consentono di iniziare a creare rapidamente i moduli.
 
   >[!NOTE]
   >
   > Se non disponi del modello **Moduli adattivi (componente core)** nell’ambiente, [abilita la funzione Componenti core dei moduli adattivi per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Quando abiliti i componenti core per il tuo ambiente, viene aggiunto il modello **Moduli adattivi (componente core)**.
 
-* **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il `Canvas` Il tema viene aggiunto per impostazione predefinita quando abiliti i componenti core per il tuo ambiente. È possibile  [scaricare e personalizzare i temi standard](create-or-customize-themes-for-adaptive-forms-core-components.md). Per **pronto all’uso** temi che puoi distribuire [temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nell&#39;ambiente. In questo modo è possibile iniziare a definire lo stile dei moduli e fornire una struttura di base per creare o personalizzare un tema in base alle proprie esigenze aziendali.
+* **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il tema `Canvas` viene aggiunto per impostazione predefinita quando si abilitano i Componenti core per il proprio ambiente. Puoi [scaricare e personalizzare i temi standard](create-or-customize-themes-for-adaptive-forms-core-components.md). Per **temi predefiniti** puoi distribuire [temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nel tuo ambiente. In questo modo è possibile iniziare a definire lo stile dei moduli e fornire una struttura di base per creare o personalizzare un tema in base alle proprie esigenze aziendali.
 
 * **Autorizzazioni**: aggiungi gli utenti a un gruppo [!DNL forms-users]. I membri del gruppo [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici per moduli, consulta [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
 
@@ -62,22 +62,22 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 ## Creare un modulo adattivo {#create-an-adaptive-form}
 
-1. Accedi al tuo account locale [Istanza di authoring AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
+1. Accedi alla tua [istanza Autore AEM locale](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
-1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l&#39;accesso, nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
-1. Seleziona **[!UICONTROL Crea]**  > **[!UICONTROL Creare un Forms adattivo]**.
+1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Crea Forms adattivo]**.
 
-1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **[!UICONTROL Successivo]**.
+1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **[!UICONTROL Avanti]**.
 
-1. Il **[!UICONTROL Aggiungi proprietà]** viene visualizzato. Specificare i valori per i seguenti campi proprietà. I campi Titolo e Nome sono obbligatori:
+1. Viene visualizzato **[!UICONTROL Aggiungi proprietà]**. Specificare i valori per i seguenti campi proprietà. I campi Titolo e Nome sono obbligatori:
 
    * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell’interfaccia utente di [!DNL Experience Manager Forms].
    * **[!UICONTROL Nome:]** specifica il nome del modulo. Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo del nome può contenere solo caratteri alfanumerici, trattini e trattini bassi.
    * **[!UICONTROL Descrizione:]** Specifica le informazioni dettagliate sul modulo.
-   * **[!UICONTROL Libreria client tema]:** Specifica il tema per un modulo adattivo. Per impostazione predefinita, il `adaptiveform.theme.canvas3` Il tema è selezionato. Puoi anche scegliere un tema diverso dal **[!UICONTROL Libreria client tema]** menu a discesa.
-   * **[!UICONTROL Contenitore configurazione:]**  Definisce un percorso in cui vengono memorizzati i file di configurazione per Adaptive Forms. Questi file di configurazione contengono impostazioni e proprietà relative al comportamento e all’aspetto di Adaptive Forms.
-   * **[!UICONTROL Tag:]** Specifica i tag per identificare in modo univoco il modulo adattivo. Aiuto sui tag nella ricerca nel modulo. Per creare i tag, digita i nuovi nomi dei tag nel **[!UICONTROL Tag]** casella.
+   * **[!UICONTROL Libreria client temi]:** Specifica il tema per un modulo adattivo. Per impostazione predefinita, il tema `adaptiveform.theme.canvas3` è selezionato. Puoi anche scegliere un tema diverso dal menu a discesa **[!UICONTROL Libreria client tema]**.
+   * **[!UICONTROL Contenitore configurazione:]** definisce un percorso in cui vengono archiviati i file di configurazione per Adaptive Forms. Questi file di configurazione contengono impostazioni e proprietà relative al comportamento e all’aspetto di Adaptive Forms.
+   * **[!UICONTROL Tag:]** specifica i tag per identificare in modo univoco il modulo adattivo. Aiuto sui tag nella ricerca nel modulo. Per creare i tag, digitare i nuovi nomi dei tag nella casella **[!UICONTROL Tag]**.
 1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
 
 
@@ -86,20 +86,20 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 ## Utilizzare i componenti core di Forms adattivi per creare il modulo
 
-Dopo aver aperto il modulo per la modifica, puoi utilizzare i componenti core Forms adattivi disponibili per aggiungere campi modulo al modulo. Puoi trascinare e rilasciare o utilizzare il tasto + [inserisci componente] per aggiungere questi componenti a un modulo. Per informazioni sulle funzioni disponibili, consulta la documentazione sui Componenti core AEM [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#components). Puoi anche visitare [https://aemcomponents.dev/](https://aemcomponents.dev/) per visualizzare i componenti core disponibili in azione.
+Dopo aver aperto il modulo per la modifica, puoi utilizzare i componenti core Forms adattivi disponibili per aggiungere campi modulo al modulo. È possibile trascinare o utilizzare l&#39;opzione + [inserisci componente] per aggiungere questi componenti a un modulo. Per informazioni sui [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#components) disponibili, consulta la documentazione dei Componenti core AEM. Puoi anche visitare [https://aemcomponents.dev/](https://aemcomponents.dev/) per visualizzare i componenti core disponibili in azione.
 
 ## Configurare l’azione di invio per un modulo adattivo {#configure-submit-action-for-form}
 
 Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic sul pulsante Invia in un modulo adattivo. I moduli adattivi includono alcune azioni di invio pronte all’uso. Puoi anche estendere un’azione di invio predefinita per creare un’azione di invio personalizzata. Per configurare un&#39;azione di invio per il modulo:
 
-1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
-1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
 
-1. Fai clic su  **[!UICONTROL Invio]** scheda.
+1. Fare clic sulla scheda **[!UICONTROL Invio]**.
 
-   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un’azione di invio](/help/forms/using/assets/adaptive-forms-submit-message.png)
+   ![Fai clic sull&#39;icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un&#39;azione di invio](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. Seleziona e configura un **[!UICONTROL Azione di invio]**, in base alle tue esigenze. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](/help/forms/using/configuring-submit-actions.md)
+1. Seleziona e configura un&#39;azione **[!UICONTROL Invia]** in base alle tue esigenze. Per informazioni dettagliate sulle azioni di invio, consulta [Azione di invio modulo adattivo](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -111,37 +111,37 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 
 All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altra pagina Web o a un messaggio. Per reindirizzare l’utente o configurare il messaggio di ringraziamento:
 
-1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
-1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
-1. Apri **[!UICONTROL Invio]** scheda.
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Apri la scheda **[!UICONTROL Invio]**.
 
-   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo per configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/forms/using/assets/adaptive-forms-submit-message.png)
+   ![Fai clic sull&#39;icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-   * Per configurare un URL di reindirizzamento, per l’opzione Invia seleziona la **[!UICONTROL Reindirizza a URL]** e sfoglia e seleziona una pagina AEM Sites oppure specifica l’URL di una pagina esterna.
+   * Per configurare un URL di reindirizzamento, per l&#39;opzione Invia selezionare l&#39;opzione **[!UICONTROL Reindirizza all&#39;URL]**, quindi sfogliare e selezionare una pagina AEM Sites o specificare l&#39;URL di una pagina esterna.
 
-   * Per configurare un messaggio personalizzato o di ringraziamento, per all’opzione Invia, seleziona la **[!UICONTROL Mostra messaggio]** e inserisci un messaggio nella sezione **[!UICONTROL Contenuto del messaggio]** casella. Si tratta di una casella di testo RTF, è possibile utilizzare l&#39;opzione a schermo intero per visualizzare tutti gli elementi RTF disponibili.
+   * Per configurare un messaggio personalizzato o di ringraziamento, per l&#39;opzione Invia selezionare l&#39;opzione **[!UICONTROL Mostra messaggio]** e specificare un messaggio nella casella **[!UICONTROL Contenuto messaggio]**. Si tratta di una casella di testo RTF, è possibile utilizzare l&#39;opzione a schermo intero per visualizzare tutti gli elementi RTF disponibili.
 
 ## Configurare uno schema o un modello di dati del modulo per un modulo adattivo {#configure-schema-or-data-model-for-form}
 
 È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
 
-* [Creare uno schema JSON e caricarlo nell’ambiente](/help/forms/using/adaptive-form-json-schema-form-model.md)
-* [Creare un modello di dati modulo](/help/forms/using/create-form-data-models.md)
+* [Crea uno schema JSON e carica nell&#39;ambiente](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
 
 ### Configurare uno schema JSON o un modello dati modulo per il modulo
 
 Per configurare uno schema JSON o un modello dati modulo per il modulo:
 
-1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
-1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
-1. Apri **[!UICONTROL Modello dati]** scheda.
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Apri la scheda **[!UICONTROL Modello dati]**.
 
-   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo per configurare uno schema JSON o un modello di dati del modulo](/help/forms/using/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
+   ![Fai clic sull&#39;icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare uno schema JSON o un modello dati modulo](/help/forms/using/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
 
 1. Seleziona e configura uno schema JSON o un modello dati modulo, in base ai requisiti:
 
-   * Quando selezioni il **[!UICONTROL Modello modulo]** , utilizza **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello di dati modulo preconfigurato.
-   * Quando selezioni il **[!UICONTROL Schema]** , utilizza **[!UICONTROL Schema]** per selezionare uno schema JSON per il modulo.
+   * Quando si seleziona l&#39;opzione **[!UICONTROL Modello modulo]**, utilizzare l&#39;opzione **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello dati modulo preconfigurato.
+   * Quando selezioni l&#39;opzione **[!UICONTROL Schema]**, utilizza l&#39;opzione **[!UICONTROL Schema]** per selezionare uno schema JSON per il modulo.
 
 1. Fai clic su **[!UICONTROL Fine]**.
 
@@ -158,26 +158,26 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 
 ### Utilizzare il servizio di precompilazione del modello dati modulo per precompilare i campi di un modulo adattivo {#fdm-prefill-service}
 
-È possibile utilizzare il servizio di precompilazione del modello dati modulo per precompilare i campi di un modulo adattivo utilizzando un modello dati modulo o un servizio di precompilazione personalizzato. Il servizio di precompilazione del modello dati del modulo utilizza [Ottieni il servizio del modello di dati del modulo configurato](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) per recuperare i dati. Per utilizzare il servizio di precompilazione del modello dati modulo per un modulo adattivo:
+È possibile utilizzare il servizio di precompilazione del modello dati modulo per precompilare i campi di un modulo adattivo utilizzando un modello dati modulo o un servizio di precompilazione personalizzato. Il servizio di precompilazione del modello dati modulo utilizza il servizio [Get Service del modello dati modulo configurato](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) per recuperare i dati. Per utilizzare il servizio di precompilazione del modello dati modulo per un modulo adattivo:
 
-1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
-1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
-1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
-   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo per configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
-1. Seleziona un modello di dati modulo. Apri **[!UICONTROL Base]** scheda. Nel servizio di preriempimento, seleziona **[!UICONTROL Servizio preriempimento modello dati modulo]**.
-1. Clic **[!UICONTROL Fine]**. Il modulo adattivo è ora configurato per l’utilizzo della precompilazione del modello dati del modulo. Ora è possibile utilizzare [editor di regole](rule-editor.md) per creare regole per precompilare i campi del modulo.
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
+   ![Fai clic sull&#39;icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
+1. Seleziona un modello di dati modulo. Apri la scheda **[!UICONTROL Base]**. Nel servizio di precompilazione, selezionare **[!UICONTROL Servizio di precompilazione modello dati modulo]**.
+1. Fai clic su **[!UICONTROL Fine]**. Il modulo adattivo è ora configurato per l’utilizzo della precompilazione del modello dati del modulo. Ora puoi utilizzare l&#39;[editor regole](rule-editor.md) per creare regole per precompilare i campi del modulo.
 
 ## Come rinominare un modulo adattivo per l’AEM?{#rename-an-AEM-Adaptive-Form}
 
 Per rinominare un modulo adattivo, effettua le seguenti operazioni:
 
 1. Seleziona un modulo adattivo nell’interfaccia utente di AEM Forms.
-1. Fai clic sul pulsante **Proprietà** si trova sulla barra superiore.
+1. Fai clic su **Proprietà** nella barra superiore.
 
    ![Proprietà](/help/forms/using/assets/rename-form-properties.png)
 
-1. Modificare il nome del modulo in **Titolo** come mostrato nell’immagine seguente.
-1. Clic **Salva e chiudi**.
+1. Modifica il nome del modulo nella scheda **Titolo**, come illustrato nell&#39;immagine seguente.
+1. Fare clic su **Salva e chiudi**.
 
    ![Rinominare un modulo adattivo AEM](/help/forms/using/assets/rename-form-title.png)
 
@@ -202,4 +202,4 @@ Per rinominare un modulo adattivo, effettua le seguenti operazioni:
 
 * [Creare componenti core basati sul modulo adattivo](create-an-adaptive-form-core-components.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

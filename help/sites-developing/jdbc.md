@@ -20,15 +20,15 @@ ht-degree: 0%
 
 Accedere a un database SQL esterno in modo che le applicazioni CQ possano interagire con i dati:
 
-1. [Crea o ottieni un bundle OSGi per esportare il pacchetto driver JDBC](#bundling-the-jdbc-database-driver).
+1. [Creare o ottenere un bundle OSGi che esporta il pacchetto driver JDBC](#bundling-the-jdbc-database-driver).
 1. [Configurare un provider del pool di origini dati JDBC](#configuring-the-jdbc-connection-pool-service).
-1. [Ottenere un oggetto origine dati e creare la connessione nel codice](#connecting-to-the-database).
+1. [Ottieni un oggetto origine dati e crea la connessione nel codice](#connecting-to-the-database).
 
 ## Bundling del driver di database JDBC {#bundling-the-jdbc-database-driver}
 
-Alcuni fornitori di database forniscono driver JDBC in un bundle OSGi, ad esempio: [MySQL](https://dev.mysql.com/downloads/connector/j/). Se il driver JDBC per il database non è disponibile come bundle OSGi, ottieni il JAR del driver e inseriscilo in un bundle OSGi. Il bundle deve esportare i pacchetti necessari per interagire con il server di database. Il bundle deve anche importare i pacchetti a cui fa riferimento.
+Alcuni fornitori di database forniscono driver JDBC in un bundle OSGi, ad esempio [MySQL](https://dev.mysql.com/downloads/connector/j/). Se il driver JDBC per il database non è disponibile come bundle OSGi, ottieni il JAR del driver e inseriscilo in un bundle OSGi. Il bundle deve esportare i pacchetti necessari per interagire con il server di database. Il bundle deve anche importare i pacchetti a cui fa riferimento.
 
-Nell&#39;esempio seguente viene utilizzato [Plug-in bundle per Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) per racchiudere il driver HSQLDB in un bundle OSGi. Il POM indica al plug-in di incorporare il file hsqldb.jar identificato come dipendenza. Tutti i pacchetti org.hsqldb vengono esportati.
+Nell&#39;esempio seguente viene utilizzato il plug-in [Bundle per Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) per racchiudere il driver HSQLDB in un bundle OSGi. Il POM indica al plug-in di incorporare il file hsqldb.jar identificato come dipendenza. Tutti i pacchetti org.hsqldb vengono esportati.
 
 Il plug-in determina automaticamente quali pacchetti importare e li elenca nel file MANIFEST.MF del bundle. Se uno dei pacchetti non è disponibile sul server CQ, il bundle non si avvia al momento dell’installazione. Due possibili soluzioni sono le seguenti:
 
@@ -93,40 +93,40 @@ I seguenti collegamenti aprono le pagine di download di alcuni prodotti di datab
 
 Aggiungere una configurazione per il servizio pool connessioni JDBC che utilizza il driver JDBC per creare oggetti origine dati. Il codice dell&#39;applicazione utilizza questo servizio per ottenere l&#39;oggetto e connettersi al database.
 
-Pool connessioni JDBC ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) è un servizio di fabbrica. Se hai bisogno di connessioni che utilizzano proprietà diverse, ad esempio accesso in sola lettura o in lettura/scrittura, crea più configurazioni.
+Il pool di connessioni JDBC ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) è un servizio di fabbrica. Se hai bisogno di connessioni che utilizzano proprietà diverse, ad esempio accesso in sola lettura o in lettura/scrittura, crea più configurazioni.
 
-Quando si lavora con CQ, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per informazioni dettagliate.
+Quando si lavora con CQ, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
-Per configurare un servizio di connessione in pool sono disponibili le seguenti proprietà. I nomi delle proprietà vengono elencati così come vengono visualizzati nella console Web. Il nome corrispondente per un `sling:OsgiConfig` Il nodo viene visualizzato tra parentesi. Vengono visualizzati valori di esempio per un server HSQLDB e un database con alias `mydb`:
+Per configurare un servizio di connessione in pool sono disponibili le seguenti proprietà. I nomi delle proprietà vengono elencati così come vengono visualizzati nella console Web. Il nome corrispondente per un nodo `sling:OsgiConfig` viene visualizzato tra parentesi. Vengono visualizzati valori di esempio per un server HSQLDB e un database con alias `mydb`:
 
-* Classe driver JDBC ( `jdbc.driver.class`): la classe Java™ da utilizzare che implementa l’interfaccia java.sql.Driver, ad esempio, `org.hsqldb.jdbc.JDBCDriver`. Il tipo di dati è `String`.
+* Classe driver JDBC ( `jdbc.driver.class`): la classe Java™ da utilizzare che implementa l&#39;interfaccia java.sql.Driver, ad esempio `org.hsqldb.jdbc.JDBCDriver`. Il tipo di dati è `String`.
 
 * URI connessione JDBC ( `jdbc.connection.uri`): URL del database da utilizzare per creare la connessione, ad esempio `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Il formato dell&#39;URL deve essere valido per l&#39;utilizzo con il metodo getConnection della classe java.sql.DriverManager. Il tipo di dati è `String`.
 
-* Nome utente ( `jdbc.username`): nome utente da utilizzare per l&#39;autenticazione con il server di database. Il tipo di dati è `String`.
+* Nome utente ( `jdbc.username`): il nome utente da utilizzare per l&#39;autenticazione con il server di database. Il tipo di dati è `String`.
 
-* Password ( `jdbc.password`): password da utilizzare per l’autenticazione dell’utente. Il tipo di dati è `String`.
+* Password ( `jdbc.password`): password da utilizzare per l&#39;autenticazione dell&#39;utente. Il tipo di dati è `String`.
 
-* Query di convalida ( `jdbc.validation.query`): l’istruzione SQL da utilizzare per verificare che la connessione abbia esito positivo, ad esempio, `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Il tipo di dati è `String`.
+* Query di convalida ( `jdbc.validation.query`): l&#39;istruzione SQL da utilizzare per verificare che la connessione sia riuscita, ad esempio `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Il tipo di dati è `String`.
 
 * Sola lettura per impostazione predefinita (default.readonly): selezionare questa opzione quando si desidera che la connessione fornisca l&#39;accesso in sola lettura. Il tipo di dati è `Boolean`.
-* Commit automatico per impostazione predefinita ( `default.autocommit`): selezionare questa opzione per creare transazioni separate per ogni comando SQL inviato al database e per eseguire automaticamente il commit di ogni transazione. Non selezionare questa opzione quando si esegue il commit esplicito delle transazioni nel codice. Il tipo di dati è `Boolean`.
+* Commit automatico per impostazione predefinita ( `default.autocommit`): selezionare questa opzione per creare transazioni separate per ogni comando SQL inviato al database e per ogni transazione viene eseguito automaticamente il commit. Non selezionare questa opzione quando si esegue il commit esplicito delle transazioni nel codice. Il tipo di dati è `Boolean`.
 
-* Dimensione pool ( `pool.size`): numero di connessioni simultanee da rendere disponibili al database. Il tipo di dati è `Long`.
+* Dimensione pool ( `pool.size`): numero di connessioni simultanee da rendere disponibili per il database. Il tipo di dati è `Long`.
 
-* Attesa pool ( `pool.max.wait.msec`): la quantità di tempo prima che una richiesta di connessione scada. Il tipo di dati è `Long`.
+* Attesa del pool ( `pool.max.wait.msec`): il tempo che deve trascorrere prima che una richiesta di connessione venga interrotta. Il tipo di dati è `Long`.
 
 * Nome origine dati ( `datasource.name`): nome dell&#39;origine dati. Il tipo di dati è `String`.
 
-* Proprietà servizio aggiuntive ( `datasource.svc.properties`): un set di coppie nome/valore che desideri aggiungere all’URL della connessione. Il tipo di dati è `String[]`.
+* Proprietà servizio aggiuntive ( `datasource.svc.properties`): un insieme di coppie nome/valore che si desidera aggiungere all&#39;URL di connessione. Il tipo di dati è `String[]`.
 
-Il servizio del pool di connessioni JDBC è un servizio di fabbrica. Pertanto, se utilizzi un’ `sling:OsgiConfig` per configurare il servizio di connessione, il nome del nodo deve includere il PID del servizio di fabbrica seguito da *`-alias`*. L’alias utilizzato deve essere univoco per tutti i nodi di configurazione per quel PID. Esempio di nome di nodo: `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+Il servizio del pool di connessioni JDBC è un servizio di fabbrica. Pertanto, se si utilizza un nodo `sling:OsgiConfig` per configurare il servizio di connessione, il nome del nodo deve includere il PID del servizio factory seguito da *`-alias`*. L’alias utilizzato deve essere univoco per tutti i nodi di configurazione per quel PID. Un esempio di nome di nodo è `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
 ### Connessione al database {#connecting-to-the-database}
 
-Nel codice Java™, utilizza il servizio DataSourcePool per ottenere un `javax.sql.DataSource` oggetto per la configurazione creata. Il servizio DataSourcePool fornisce `getDataSource` metodo che restituisce un `DataSource` oggetto per un determinato nome di origine dati. Come argomento del metodo, utilizzare il valore di Nome origine dati (o `datasource.name`) specificata per la configurazione del pool di connessioni JDBC.
+Nel codice Java™, utilizzare il servizio DataSourcePool per ottenere un oggetto `javax.sql.DataSource` per la configurazione creata. Il servizio DataSourcePool fornisce il metodo `getDataSource` che restituisce un oggetto `DataSource` per un determinato nome di origine dati. Come argomento del metodo, utilizzare il valore della proprietà Nome origine dati (o `datasource.name`) specificata per la configurazione del pool di connessioni JDBC.
 
 L&#39;esempio di codice JSP seguente ottiene un&#39;istanza dell&#39;origine dati hsqldbds, esegue una semplice query SQL e visualizza il numero di risultati restituiti.
 

@@ -34,11 +34,11 @@ Definendo quali componenti possono essere inclusi in ciascun parsys sulla pagina
 
 SOLID è un acronimo che descrive cinque principi architettonici che devono essere rispettati:
 
-* **S** Principio di responsabilità unico: ogni modulo, classe, metodo e così via dovrebbe avere una sola responsabilità.
-* **O** Penna/Principio chiuso: i moduli devono essere aperti per l’estensione e chiusi per la modifica.
-* **L** Principio di sostituzione iskov: i tipi devono essere sostituibili dai relativi sottotipi.
-* **I** Principio di segregazione dell’interfaccia: nessun client deve essere costretto a dipendere da metodi che non utilizza.
-* **D** Principio di inversione della dipendenza: i moduli di alto livello non devono dipendere da moduli di basso livello. Entrambi dovrebbero dipendere dalle astrazioni. Le astrazioni non devono dipendere dai dettagli. I dettagli devono dipendere dalle astrazioni.
+* **S** Principio di responsabilità singola: ogni modulo, classe, metodo e così via deve avere una sola responsabilità.
+* **O** pen/Closed Principle - i moduli devono essere aperti per l&#39;estensione e chiusi per la modifica.
+* **L** iskov Principio di sostituzione - i tipi devono essere sostituibili dai relativi sottotipi.
+* **I** Principio di segregazione dell&#39;interfaccia - nessun client deve essere obbligato a dipendere da metodi non utilizzati.
+* **D** principio di inversione delle dipendenze: i moduli di alto livello non devono dipendere da moduli di basso livello. Entrambi dovrebbero dipendere dalle astrazioni. Le astrazioni non devono dipendere dai dettagli. I dettagli devono dipendere dalle astrazioni.
 
 Il rispetto di questi cinque principi dovrebbe tradursi in un sistema rigorosamente distinto.
 
@@ -62,4 +62,4 @@ Gli script di migrazione dei dati, mentre il codice di produzione, vengono esegu
 
 ### Segui le convenzioni Maven pubblicate nei file POM {#follow-published-maven-conventions-in-pom-files}
 
-Apache ha pubblicato convenzioni di stile in [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). È meglio seguire queste convenzioni perché consente di velocizzare l&#39;emergere di nuove risorse.
+Apache ha pubblicato le convenzioni di stile in [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). È meglio seguire queste convenzioni perché consente di velocizzare l&#39;emergere di nuove risorse.

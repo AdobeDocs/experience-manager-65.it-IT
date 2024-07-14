@@ -35,10 +35,10 @@ Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modifi
 
 ### Modifica delle pagine di lanci soggette a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Se il lancio si basa su [live copy](/help/sites-administering/msm.md) in questo modo:
+Se il lancio si basa su una [Live Copy](/help/sites-administering/msm.md):
 
 * consulta bloccare i simboli (piccoli lucchetti) quando modifichi un componente (contenuto e/o proprietà).
-* vedi la **Live Copy** scheda in **Proprietà pagina**
+* visualizza la scheda **Live Copy** in **Proprietà pagina**
 
 Una Live Copy viene utilizzata per sincronizzare il contenuto *dal* ramo di origine *al* ramo lancio, al fine di mantenere aggiornato il lancio con le modifiche apportate nell’origine.
 
@@ -53,7 +53,7 @@ Consulta [Modifica del contenuto della Live Copy](/help/sites-administering/msm-
 
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
-1. In **Sites** console, [passa alla pagina sorgente del lancio e selezionala](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
+1. Nella console **Sites**, [passa alla pagina di origine del lancio e selezionala](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
 1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e seleziona **Lanci**.
 1. Seleziona il lancio specifico, quindi **Confronta con sorgente**:
 

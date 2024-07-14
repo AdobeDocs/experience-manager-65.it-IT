@@ -20,11 +20,11 @@ ht-degree: 0%
 
 A partire dalle community AEM 6.1, il modo più semplice per creare rapidamente una sandbox è quello di creare un sito community. Consulta [Guida introduttiva ad AEM Communities](getting-started.md).
 
-Un altro strumento utile per gli sviluppatori è il [Guida ai componenti della community](components-guide.md), che consente di esplorare e creare rapidamente un prototipo dei componenti e delle funzioni di Communities.
+Un altro strumento utile per gli sviluppatori è la [guida ai componenti della community](components-guide.md), che consente di esplorare e creare rapidamente prototipi per i componenti e le funzionalità della community.
 
-L&#39;esercizio di creazione di un sito web può essere utile per comprendere la struttura di un sito web AEM che può includere caratteristiche di Communities, fornendo allo stesso tempo semplici pagine su cui esplorare la possibilità di lavorare con [framework della componente social network (SCF)](scf.md).
+L&#39;esercizio di creazione di un sito Web può essere utile per comprendere la struttura di un sito Web dell&#39;AEM che può includere caratteristiche di Communities, fornendo al contempo pagine semplici sulle quali esplorare la possibilità di lavorare con il [framework dei componenti social (SCF)](scf.md).
 
-Questo tutorial è principalmente destinato agli sviluppatori, nuovi all’AEM, che sono interessati a utilizzare i componenti SCF. Questo video illustra la creazione del sito Sandbox SCF, in modo simile al tutorial per [Come creare un sito web Internet completo](../../help/sites-developing/website.md) che si concentra su strutture all’interno del sito, come la navigazione, il logo, la ricerca, la barra degli strumenti e l’elenco delle pagine figlie.
+Questo tutorial è principalmente destinato agli sviluppatori, nuovi all’AEM, che sono interessati a utilizzare i componenti SCF. Viene descritto come creare un sito Sandbox SCF, simile all&#39;esercitazione per [Creare un sito Web Internet completo](../../help/sites-developing/website.md) che si concentra su strutture del sito, quali navigazione, logo, ricerca, barra degli strumenti ed elenco di pagine figlie.
 
 Lo sviluppo avviene su un’istanza di authoring, mentre la sperimentazione con il sito è consigliata su un’istanza di pubblicazione.
 
@@ -39,49 +39,49 @@ I passaggi descritti in questa esercitazione sono i seguenti:
 
 >[!CAUTION]
 >
->Questo tutorial non crea un sito community con la funzionalità creata utilizzando [Console Siti community](sites-console.md). Ad esempio, questo tutorial non descrive come impostare l’accesso, la registrazione automatica, [accesso social network](social-login.md), messaggi, profili e così via.
+>Questo tutorial non crea un sito community con la funzionalità creata utilizzando la console [Siti community](sites-console.md). Ad esempio, questo tutorial non descrive come impostare l’accesso, la registrazione autonoma, l’[accesso social](social-login.md), i messaggi, i profili e così via.
 >
->Se si preferisce un sito di community semplice, seguire le istruzioni [Crea una pagina di esempio](create-sample-page.md) esercitazione.
+>Se si preferisce un sito community semplice, seguire l&#39;esercitazione [Crea pagina di esempio](create-sample-page.md).
 
 ## Prerequisiti {#prerequisites}
 
-Questa esercitazione presuppone che siano installati un autore AEM e un&#39;istanza di pubblicazione AEM con [versione più recente](deploy-communities.md#latest-releases) delle comunità.
+Questo tutorial presuppone che siano installati un autore AEM e un&#39;istanza di pubblicazione AEM con la [versione più recente](deploy-communities.md#latest-releases) di Communities.
 
 Di seguito sono riportati alcuni collegamenti utili per sviluppatori che non hanno mai utilizzato la piattaforma AEM:
 
 * [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started): per la distribuzione di istanze AEM.
 
-   * [Nozioni di base](../../help/sites-developing/the-basics.md): per sviluppatori di siti web e funzionalità.
-   * [Primi passaggi per gli autori](../../help/sites-authoring/first-steps.md): per l’authoring dei contenuti della pagina.
+   * [Nozioni di base](../../help/sites-developing/the-basics.md): per sviluppatori di siti Web e funzionalità.
+   * [Primi passi per autori](../../help/sites-authoring/first-steps.md): per la creazione di contenuti di pagina.
 
-## Utilizzo dell’ambiente di sviluppo di CRXDE Liti {#using-crxde-lite-development-environment}
+## Utilizzo dell’ambiente di sviluppo di CRXDE Lite {#using-crxde-lite-development-environment}
 
-Gli sviluppatori di AEM passano molto tempo nel [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md) ambiente di sviluppo in un’istanza di authoring. CRXDE Liti offre un accesso meno limitato all’archivio CRX. Gli strumenti dell’interfaccia classica e le console dell’interfaccia touch forniscono un accesso più strutturato a parti specifiche dell’archivio CRX.
+Gli sviluppatori AEM passano molto tempo nell&#39;ambiente di sviluppo [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md) in un&#39;istanza Autore. CRXDE Lite offre un accesso meno limitato all’archivio CRX. Gli strumenti dell’interfaccia classica e le console dell’interfaccia touch forniscono un accesso più strutturato a parti specifiche dell’archivio CRX.
 
-Dopo aver effettuato l’accesso con privilegi di amministratore, è possibile accedere a CRXDE Liti in diversi modi:
+Dopo aver effettuato l’accesso con privilegi di amministratore, è possibile accedere a CRXDE Lite in diversi modi:
 
-1. Dalla navigazione globale, seleziona navigazione **[!UICONTROL Strumenti > CRXDE Liti]**.
+1. Dalla navigazione globale, seleziona **[!UICONTROL Strumenti > CRXDE Liti]**.
 
    ![crxde-lite](assets/tools-crxde.png)
 
-2. Dalla sezione [pagina iniziale dell’interfaccia classica](http://localhost:4502/welcome.html), scorri verso il basso e fai clic su **[!UICONTROL CRXDE Liti]** nel pannello a destra.
+2. Dalla [pagina iniziale dell&#39;interfaccia classica](http://localhost:4502/welcome.html), scorri verso il basso e fai clic su **[!UICONTROL CRXDE Liti]** nel pannello di destra.
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 
-3. Cerca direttamente in `CRXDE Lite`: `<server>:<port>/crx/de`
+3. Sfoglia direttamente a `CRXDE Lite`: `<server>:<port>/crx/de`
 
-   Ad esempio, in un’istanza di authoring locale: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+   Ad esempio, in un&#39;istanza Autore locale: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-Per lavorare con CRXDE Liti, devi accedere con privilegi di sviluppatore o amministratore. Per l’istanza localhost predefinita, puoi accedere con
+Per lavorare con CRXDE Lite, devi accedere con privilegi di sviluppatore o amministratore. Per l’istanza localhost predefinita, puoi accedere con
 
 * `username: admin`
 * `password: admin`
 
 
-Questo login va in timeout ed è necessario effettuare nuovamente l’accesso periodicamente utilizzando il menu a discesa nell’estremità destra della barra degli strumenti di CRXDE Liti.
+Questo login va in timeout ed è necessario effettuare nuovamente l’accesso periodicamente utilizzando il menu a discesa nell’estremità destra della barra degli strumenti di CRXDE Lite.
 
 Se non hai effettuato l’accesso, non potrai navigare nell’archivio JCR o eseguire operazioni di modifica/salvataggio.
 
-***In caso di dubbi, effettua di nuovo l’accesso.***
+***In caso di dubbi, effettua di nuovo l&#39;accesso!***
 
-![riaccedi](assets/relogin.png)
+![riaccesso](assets/relogin.png)

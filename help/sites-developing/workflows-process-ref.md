@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Guida di riferimento per il processo dei flusso di lavoro{#workflow-process-reference}
 
-L’AEM fornisce diverse fasi del processo che possono essere utilizzate per creare modelli di flusso di lavoro. È inoltre possibile aggiungere passaggi di processo personalizzati per attività non incluse nei passaggi incorporati (vedere [Creazione di modelli di flussi di lavoro](/help/sites-developing/workflows-models.md)).
+L’AEM fornisce diverse fasi del processo che possono essere utilizzate per creare modelli di flusso di lavoro. È inoltre possibile aggiungere passaggi di processo personalizzati per attività non incluse nei passaggi predefiniti (vedere [Creazione di modelli di flussi di lavoro](/help/sites-developing/workflows-models.md)).
 
 ## Caratteristiche del processo {#process-characteristics}
 
@@ -35,7 +35,7 @@ I passaggi del processo sono definiti da una classe Java™ o da un ECMAScript.
 
 Il payload è l’entità su cui agisce un’istanza del flusso di lavoro. Il payload viene selezionato in modo implicito dal contesto all’interno del quale viene avviata un’istanza di flusso di lavoro.
 
-Ad esempio, se un flusso di lavoro viene applicato a una pagina AEM *P* allora *P* viene passato da un passaggio all’altro con l’avanzare del flusso di lavoro; ogni passaggio agisce facoltativamente su *P* in qualche modo.
+Ad esempio, se un flusso di lavoro viene applicato a una pagina AEM *P*, *P* viene passato da un passaggio all&#39;altro con l&#39;avanzare del flusso di lavoro, con ogni passaggio che può facoltativamente agire su *P* in qualche modo.
 
 Nel caso più comune, il payload è un nodo JCR nell’archivio (ad esempio, una pagina o una risorsa AEM). Un payload del nodo JCR viene passato come stringa costituita da un percorso JCR o da un identificatore JCR (UUID). A volte il payload può essere una proprietà JCR (passata come percorso JCR), un URL, un oggetto binario o un oggetto Java™ generico. Singoli passaggi del processo che agiscono sul payload solitamente si aspettano un payload di un determinato tipo, oppure agiscono in modo diverso a seconda del tipo di payload. Per ogni processo descritto di seguito, viene descritto il tipo di payload previsto, se presente.
 
@@ -43,7 +43,7 @@ Nel caso più comune, il payload è un nodo JCR nell’archivio (ad esempio, una
 
 Alcuni processi di workflow accettano gli argomenti specificati dall&#39;amministratore durante la configurazione del passaggio del workflow.
 
-Gli argomenti vengono immessi come una singola stringa nel **Argomenti processo** proprietà in **Proprietà** dell&#39;editor del flusso di lavoro. Per ogni processo descritto di seguito, il formato della stringa di argomento è descritto in una semplice grammatica EBNF. Ad esempio, quanto segue indica che la stringa dell’argomento è costituita da una o più coppie delimitate da virgole, in cui ogni coppia è costituita da un nome (che è una stringa) e da un valore, separati da due punti:
+Gli argomenti vengono immessi come stringa singola nella proprietà **Argomenti processo** nel riquadro **Proprietà** dell&#39;editor del flusso di lavoro. Per ogni processo descritto di seguito, il formato della stringa di argomento è descritto in una semplice grammatica EBNF. Ad esempio, quanto segue indica che la stringa dell’argomento è costituita da una o più coppie delimitate da virgole, in cui ogni coppia è costituita da un nome (che è una stringa) e da un valore, separati da due punti:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -58,7 +58,7 @@ Dopo questo periodo di timeout, il passaggio del flusso di lavoro non è più op
 
 ### Autorizzazioni {#permissions}
 
-La sessione è stata passata al `WorkflowProcess` è supportato dall’utente del servizio per il servizio di elaborazione del flusso di lavoro, che dispone delle seguenti autorizzazioni nella directory principale dell’archivio:
+La sessione passata a `WorkflowProcess` è supportata dall&#39;utente del servizio per il servizio del processo del flusso di lavoro, che dispone delle seguenti autorizzazioni nella radice dell&#39;archivio:
 
 * `jcr:read`
 * `rep:write`
@@ -66,7 +66,7 @@ La sessione è stata passata al `WorkflowProcess` è supportato dall’utente de
 * `jcr:lockManagement`
 * `crx:replicate`
 
-Se tale set di autorizzazioni non è sufficiente per `WorkflowProcess` , deve quindi utilizzare una sessione con le autorizzazioni necessarie.
+Se tale set di autorizzazioni non è sufficiente per l&#39;implementazione di `WorkflowProcess`, è necessario utilizzare una sessione con le autorizzazioni richieste.
 
 A tale scopo, si consiglia di utilizzare un utente del servizio creato con il sottoinsieme di autorizzazioni necessario, ma minimo.
 
@@ -74,17 +74,17 @@ A tale scopo, si consiglia di utilizzare un utente del servizio creato con il so
 >
 >Se aggiorni una versione precedente a AEM 6.2, potrebbe essere necessario aggiornare l’implementazione.
 >
->Nelle versioni precedenti, la sessione di amministrazione è stata passata al `WorkflowProcess` implementazioni e potrebbero quindi avere accesso completo all’archivio senza dover definire ACL specifici.
+>Nelle versioni precedenti, la sessione di amministrazione è stata passata alle implementazioni `WorkflowProcess` e potrebbe quindi avere accesso completo all&#39;archivio senza dover definire ACL specifici.
 >
 >Le autorizzazioni sono ora definite come sopra ([Autorizzazioni](#permissions)). Come è il metodo consigliato per aggiornare l’implementazione.
 >
 >Una soluzione a breve termine è disponibile anche per motivi di compatibilità con le versioni precedenti quando non è possibile apportare modifiche al codice:
 >
->* Utilizzo della console web ( `/system/console/configMgr` individuare **Servizio di configurazione del flusso di lavoro Adobe Granite**
+>* Utilizzo della console Web ( `/system/console/configMgr` individuare il **servizio di configurazione del flusso di lavoro Adobe Granite**
 >
->* abilita **Elaborazione flusso di lavoro in modalità legacy**
+>* abilita la modalità legacy del processo di **flusso di lavoro**
 >
->In questo modo si torna al vecchio comportamento di fornire una sessione di amministrazione al `WorkflowProcess` e fornire nuovamente l’accesso illimitato a tutto l’archivio.
+>Viene ripristinato il precedente comportamento, ovvero fornire una sessione di amministrazione all&#39;implementazione `WorkflowProcess` e fornire nuovamente l&#39;accesso illimitato all&#39;intero archivio.
 
 ## Processi di controllo del flusso di lavoro {#workflow-control-processes}
 
@@ -92,30 +92,30 @@ I processi seguenti non eseguono alcuna azione sul contenuto. Servono a controll
 
 ### AbsoluteTimeAutoAdvancer (Avanzamento automatico tempo assoluto) {#absolutetimeautoadvancer-absolute-time-auto-advancer}
 
-Il `AbsoluteTimeAutoAdvancer` (Avanzamento automatico tempo assoluto) si comporta in modo identico a **Avanzamento automatico**, con la differenza che il timeout avviene in un determinato momento e in una data specificata, invece che dopo un determinato periodo di tempo.
+Il processo `AbsoluteTimeAutoAdvancer` (Avanzamento automatico tempo assoluto) si comporta in modo identico a **Avanzamento automatico**, tranne per il fatto che si interrompe in un determinato momento e in una data specificata, anziché dopo un determinato periodo di tempo.
 
-* **Java™ Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
-* **Payload**: nessuna.
-* **Argomenti**: nessuna.
-* **Timeout**: il processo scade quando vengono raggiunte l’ora e la data impostate.
+* **Classe Java™**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Payload**: nessuno.
+* **Argomenti**: nessuno.
+* **Timeout**: timeout del processo quando vengono raggiunte l&#39;ora e la data impostate.
 
 ### Avanzamento automatico (Avanzamento automatico) {#autoadvancer-auto-advancer}
 
-Il `AutoAdvancer` Il processo porta automaticamente il flusso di lavoro al passaggio successivo. Se esiste più di un possibile passaggio successivo (ad esempio, in caso di suddivisione di un operatore OR), questo processo fa avanzare il flusso di lavoro lungo *ciclo di lavorazione predefinito*, se ne è stato specificato uno, altrimenti il flusso di lavoro non verrà avanzato.
+Il processo `AutoAdvancer` avanza automaticamente il flusso di lavoro al passaggio successivo. Se esiste più di un possibile passaggio successivo (ad esempio, se è presente una suddivisione OR), questo processo farà avanzare il flusso di lavoro lungo la *route predefinita*, se ne è stato specificato uno, altrimenti il flusso di lavoro non verrà avanzato.
 
-* **Java™ Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Classe Java™**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
-* **Payload**: nessuna.
-* **Argomenti**: nessuna.
+* **Payload**: nessuno.
+* **Argomenti**: nessuno.
 * **Timeout**: timeout del processo dopo un periodo di tempo impostato.
 
 ### ProcessAssembler (Assemblatore processi) {#processassembler-process-assembler}
 
-Il `ProcessAssembler` Il processo esegue più processi secondari in sequenza in un singolo passaggio del flusso di lavoro. Per utilizzare `ProcessAssembler`, creare un singolo passaggio di questo tipo nel flusso di lavoro e impostarne gli argomenti per indicare i nomi e gli argomenti dei sottoprocessi che si desidera eseguire.
+Il processo `ProcessAssembler` esegue più processi secondari in sequenza in un singolo passaggio del flusso di lavoro. Per utilizzare `ProcessAssembler`, creare un singolo passaggio di questo tipo nel flusso di lavoro e impostarne gli argomenti per indicare i nomi e gli argomenti dei processi secondari che si desidera eseguire.
 
-* **Java™ Class**: `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Classe Java™**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Payload**: risorsa DAM, pagina AEM o nessun payload (a seconda dei requisiti dei sottoprocessi).
+* **Payload**: una risorsa DAM, una pagina AEM o nessun payload (dipende dai requisiti dei sottoprocessi).
 * **Argomenti**:
 
 ```
@@ -129,7 +129,7 @@ Il `ProcessAssembler` Il processo esegue più processi secondari in sequenza in 
         listitem := /* A string */
 ```
 
-* **Timeout**: Rispettato.
+* **Timeout**: rispettato.
 
 Ad esempio:
 
@@ -151,9 +151,9 @@ I processi seguenti eseguono attività semplici o fungono da esempi.
 
 >[!CAUTION]
 >
->Non modificare nulla nella `/libs` percorso.
+>Non modificare nulla nel percorso `/libs`.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e può essere sovrascritto quando si applica un hotfix o un feature pack).
+>Il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack.
 
 ### elimina {#delete}
 
@@ -162,7 +162,7 @@ L’elemento nel percorso specificato viene eliminato.
 * **Percorso ECMAScript**: `/libs/workflow/scripts/delete.ecma`
 
 * **Payload**: percorso JCR
-* **Argomenti**: nessuna
+* **Argomenti**: nessuno
 * **Timeout**: ignorato
 
 ### noop {#noop}
@@ -171,18 +171,18 @@ Processo nullo. Non esegue alcuna operazione, ma registra un messaggio di debug.
 
 * **Percorso ECMAScript**: `/libs/workflow/scripts/noop.ecma`
 
-* **Payload**: nessuna
-* **Argomenti**: nessuna
+* **Payload**: nessuno
+* **Argomenti**: nessuno
 * **Timeout**: ignorato
 
 ### rule-false {#rule-false}
 
-Si tratta di un processo nullo che restituisce `false` il `check()` metodo.
+Processo null che restituisce `false` nel metodo `check()`.
 
 * **Percorso ECMAScript**: `/libs/workflow/scripts/rule-false.ecma`
 
-* **Payload**: nessuna
-* **Argomenti**: nessuna
+* **Payload**: nessuno
+* **Argomenti**: nessuno
 * **Timeout**: ignorato
 
 ### esempio {#sample}
@@ -191,8 +191,8 @@ Questo è un esempio di processo ECMAScript.
 
 * **Percorso ECMAScript**: `/libs/workflow/scripts/sample.ecma`
 
-* **Payload**: nessuna
-* **Argomenti**: nessuna
+* **Payload**: nessuno
+* **Argomenti**: nessuno
 * **Timeout**: ignorato
 
 ### BloccaProcesso {#lockprocess}
@@ -235,6 +235,6 @@ Crea una versione del payload del flusso di lavoro (pagina AEM o risorsa DAM).
 
 * **Classe Java™**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
-* **Payload**: percorso JCR o UUID che fa riferimento a una pagina o una risorsa DAM
-* **Argomenti**: nessuna
-* **Timeout**: Rispettato
+* **Payload**: percorso JCR o UUID che fa riferimento a una pagina o a una risorsa DAM
+* **Argomenti**: nessuno
+* **Timeout**: rispettato

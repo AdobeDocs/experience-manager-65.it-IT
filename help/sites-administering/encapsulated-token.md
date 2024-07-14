@@ -58,7 +58,7 @@ Di seguito puoi vedere come funziona in una distribuzione geograficamente distri
 >
 >* le sessioni permanenti sono abilitate, oppure
 >
->* Gli utenti vengono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati in situazioni in cui i gestori **creare** utenti durante il processo di sincronizzazione.
+>* Gli utenti vengono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui gli utenti dei gestori **create** durante il processo di sincronizzazione.
 
 Ci sono alcuni aspetti da tenere in considerazione durante la configurazione del token incapsulato:
 
@@ -70,11 +70,11 @@ Ci sono alcuni aspetti da tenere in considerazione durante la configurazione del
 Per replicare la chiave tra le istanze, è necessario:
 
 1. Accedere all’istanza AEM, in genere un’istanza Autore, che contiene il materiale chiave da copiare;
-1. Individua il `com.adobe.granite.crypto.file` nel file system locale. Ad esempio, in questo percorso:
+1. Individuare il bundle `com.adobe.granite.crypto.file` nel file system locale. Ad esempio, in questo percorso:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
-   Il `bundle.info` all’interno di ogni cartella identificherà il nome del bundle.
+   Il file `bundle.info` in ogni cartella identificherà il nome del bundle.
 
 1. Passa alla cartella dati. Ad esempio:
 
@@ -86,7 +86,7 @@ Per replicare la chiave tra le istanze, è necessario:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. Incolla i due file copiati in precedenza.
-1. [Aggiorna il pacchetto di crittografia](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) se l’istanza di destinazione è già in esecuzione.
+1. [Aggiornare il bundle di crittografia](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) se l&#39;istanza di destinazione è già in esecuzione.
 
 1. Ripeti i passaggi precedenti per tutte le istanze in cui desideri replicare la chiave.
 
@@ -95,5 +95,5 @@ Per replicare la chiave tra le istanze, è necessario:
 Una volta replicata la chiave HMAC, puoi abilitare il token incapsulato tramite la console web:
 
 1. Puntare il browser a `https://serveraddress:port/system/console/configMgr`
-1. Cerca una voce denominata **Adobe Gestore autenticazione token Granite** e fare clic su di esso.
-1. Nella finestra seguente, selezionare **Abilita supporto token incapsulato** e premere **Salva**.
+1. Cercare una voce denominata **Adobe Granite Token Authentication Handler** e fare clic su di essa.
+1. Nella finestra seguente, contrassegnare la casella **Abilita supporto token incapsulato** e premere **Salva**.

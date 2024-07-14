@@ -123,11 +123,11 @@ Grazie per la tua partecipazione al percorso headless di AEM Dopo aver letto que
 * Capire perché e quando è richiesto l&#39;headless.
 * Sapere bene come vengono utilizzati i concetti headless e come si relazionano.
 
-Approfondisci l&#39;argomento e continua il tuo percorso headless AEM esaminando il documento [Guida introduttiva di AEM Headless](getting-started.md) dove scoprirai come impostare gli strumenti necessari e iniziare a pensare a come l’AEM approccia la distribuzione di contenuti headless e i relativi prerequisiti.
+Approfondisci l&#39;argomento e continua il tuo percorso di headless AEM consultando il documento [Guida introduttiva di AEM Headless](getting-started.md) dove imparerai a configurare gli strumenti necessari e a pensare all&#39;approccio dell&#39;AEM alla distribuzione di contenuti headless e ai relativi prerequisiti.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva di AEM Headless](getting-started.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non è necessario che continuino sul percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva di AEM headless](getting-started.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

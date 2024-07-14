@@ -31,7 +31,7 @@ Per una panoramica e tutorial introduttivi, visita:
 
 ### Creazione e gestione di siti community {#communities-site-creation-and-management}
 
-* Community [console](consoles.md)
+* [console](consoles.md) community
 
    * [Sites](sites-console.md)
 
@@ -41,7 +41,7 @@ Per una panoramica e tutorial introduttivi, visita:
    * [Gestione di membri e gruppi](members.md)
    * [Rapporti](reports.md)
 
-* Community [*strumenti*](tools.md):
+* [*strumenti*](tools.md) per community:
 
    * [Modelli per siti](sites.md)
    * [Modelli per gruppi](tools-groups.md)
@@ -55,22 +55,22 @@ Per una panoramica e tutorial introduttivi, visita:
 
 Una funzione importante di AEM Communities è la generazione di contenuti generati dagli utenti (UGC, User Generated Content) da parte dei visitatori del sito (membri) che hanno effettuato l’accesso. Per ulteriori informazioni sull’utilizzo di UGC, visita:
 
-* [Archivio UGC comune](working-with-srp.md): scelta di SRP per lo storage condiviso di UGC
+* [Archivio UGC comune](working-with-srp.md): scelta dell&#39;SRP per l&#39;archiviazione condivisa di UGC
 * [Moderazione UGC](moderate-ugc.md): i membri attendibili possono moderare UGC in blocco o nel contesto
 * [Assegnazione tag UGC](tag-ugc.md): le funzionalità possono essere configurate per consentire ai membri di assegnare tag al contenuto
-* [Traduzione UGC](translate-ugc.md): le funzioni possono essere configurate per tradurre tutti i contenuti generati dagli utenti (UGC) o consentire ai membri di tradurre i post selezionati
-* [Configurazione analisi](analytics.md): consentendo ad Adobe Analytics di generare rapporti su varie metriche relative all’attività dei membri
+* [Traduzione UGC](translate-ugc.md): le funzionalità possono essere configurate per tradurre tutti i UGC o consentire ai membri di tradurre i post selezionati
+* [Configurazione di Analytics](analytics.md): abilitazione di Adobe Analytics per creare rapporti su varie metriche relative all&#39;attività dei membri
 
 ### Membri community {#community-members}
 
 * [Gestione di utenti e gruppi di utenti](users.md): dettagli dei membri della community e dei gruppi di membri, inclusi i membri con privilegi.
 * [Limiti contributi](limits.md): possibilità di vincolare la pubblicazione da parte di nuovi membri.
-* [Servizio tunnel](deploy-communities.md#tunnel-service-on-author): consente di accedere ai membri lato pubblicazione e ai gruppi di membri dall’ambiente di authoring.
-* [Console membri e gruppi](members.md): consente la creazione e la gestione di membri lato pubblicazione e gruppi di membri dall’ambiente di authoring.
-* [Sincronizzazione utente](sync.md): per sincronizzare membri e gruppi di membri tra più istanze di pubblicazione.
-* [Accesso social network con Facebook e Twitter](social-login.md): possibilità per i visitatori del sito di diventare membri della community utilizzando le credenziali Facebook o di Twitter.
-* [Punteggio e distintivi](implementing-scoring.md): possibilità di assegnare i distintivi per identificare i ruoli di un membro e di assegnare i distintivi ai membri tramite la loro partecipazione alla community.
-* [Notifiche](notifications.md): possibilità per i membri di essere informati delle attività che seguono.
+* [Servizio tunnel](deploy-communities.md#tunnel-service-on-author): consente l&#39;accesso ai membri e ai gruppi membri lato pubblicazione dall&#39;ambiente di authoring.
+* [Console membri e gruppi](members.md): consente la creazione e la gestione di membri e gruppi lato pubblicazione dall&#39;ambiente di authoring.
+* [Sincronizzazione utente](sync.md): per sincronizzare membri e gruppi di membri in più istanze di pubblicazione.
+* [Accesso social network tramite Facebook e Twitter](social-login.md): possibilità per i visitatori del sito di diventare membri della community utilizzando le credenziali Facebook o di Twitter.
+* [Punteggio e distintivi](implementing-scoring.md): possibilità per i distintivi di essere assegnati per identificare i ruoli di un membro e per i membri di guadagnare distintivi tramite la loro partecipazione alla community.
+* [Notifiche](notifications.md): possibilità per i membri di ricevere una notifica dell&#39;attività che seguono.
 * [Iscrizioni](subscriptions.md): possibilità per i membri di interagire con la community tramite e-mail esterna.
 * [Messaggistica](messaging.md): possibilità per i membri di interagire con la community utilizzando messaggi interni.
 
@@ -86,12 +86,12 @@ La natura dell’utilizzo dei contenuti della community influenza la struttura d
 
 * [Pacchetto di funzioni per community più recenti](deploy-communities.md#latestfeaturepack)
 
-Consulta la pagina della distribuzione per altre informazioni specifiche per la community, ad esempio per [Aggiornamento](upgrade.md), [Dispatcher](dispatcher.md), e [Replica](deploy-communities.md#replication-agents-on-author).
+Consulta la pagina della distribuzione per altre informazioni specifiche della community, ad esempio [Aggiornamento](upgrade.md), [Dispatcher](dispatcher.md) e [Replica](deploy-communities.md#replication-agents-on-author).
 
 ## Documentazione delle community correlate {#related-communities-documentation}
 
-* Visita [Distribuzione delle community](deploy-communities.md) dove puoi scoprire le distribuzioni consigliate.
+* Visita [Distribuzione di Communities](deploy-communities.md) per scoprire le distribuzioni consigliate.
 
-* Visita [Comunità in via di sviluppo](communities.md) dove puoi scoprire il framework dei componenti social (SCF) e personalizzare i componenti e le funzioni di Communities.
+* Visita [Sviluppo di community](communities.md) per scoprire il framework dei componenti social network (SCF) e personalizzare i componenti e le funzionalità di Communities.
 
-* Visita [Authoring dei componenti delle community](author-communities.md) dove puoi scoprire come effettuare l’authoring con e configurare i componenti di Communities.
+* Visita [Authoring dei componenti delle community](author-communities.md) per scoprire come creare e configurare i componenti delle community.

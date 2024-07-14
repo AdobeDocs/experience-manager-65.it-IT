@@ -64,7 +64,7 @@ Sebbene tu possa accedere direttamente a una sezione specifica del percorso, mol
 
 ## Passaggio successivo {#what-is-next}
 
-Ora sei pronto per iniziare il tuo percorso in Adobe headless. Ti invitiamo a continuare con la prossima parte del percorso e leggere l&#39;articolo [Authoring per AEM Headless - Introduzione.](introduction.md)
+Ora sei pronto per iniziare il tuo percorso in Adobe headless. Ti invitiamo a continuare con la sezione successiva del percorso e a leggere l&#39;articolo [Authoring per AEM Headless - Un&#39;introduzione.](introduction.md)
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -83,7 +83,7 @@ I percorsi sono progettati per resistere da soli. Tuttavia, diverse di esse poss
 
 * [Percorso di traduzione headless in AEM](/help/journey-headless/translation/overview.md) - Questo percorso di documentazione ti farà comprendere la tecnologia headless, come AEM gestisce i contenuti headless e in che modo sia possibile tradurli.
 * [Percorso per sviluppatori AEM headless](/help/journey-headless/developer/overview.md): inizia qui un percorso guidato per scoprire le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come sfruttarle nel tuo primo progetto.
-* [Percorso Architect headless](/help/journey-headless/architect/overview.md) - Inizia qui per un’introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e per vedere come modellare i contenuti per il tuo progetto.
+* [Percorso Architect headless](/help/journey-headless/architect/overview.md): fai clic qui per un&#39;introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e per vedere come modellare i contenuti per il tuo progetto.
 * [Documentazione tecnica AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) - Se hai già una solida conoscenza delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
    * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * [Tutorial AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): se preferisci imparare con la pratica e hai capacità tecniche, segui i nostri tutorial pratici organizzati per API e framework, che esplorano la creazione e l’utilizzo di applicazioni basate su AEM Headless.

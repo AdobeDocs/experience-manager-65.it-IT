@@ -84,7 +84,7 @@ Per modificare il contenuto senza problemi, AEM offre due solide API.
 * L’API GraphQL consente di creare richieste per accedere e distribuire Frammenti di contenuto.
 * L’API REST di Assets consente di creare e modificare Frammenti di contenuto (e altre risorse).
 
-Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure, consulta la [risorse aggiuntive](#additional-resources) per ulteriore documentazione, vedere la sezione seguente.
+Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure, consulta la sezione [risorse aggiuntive](#additional-resources) di seguito per ulteriore documentazione.
 
 ## Livelli di integrazione headless {#integration-levels}
 

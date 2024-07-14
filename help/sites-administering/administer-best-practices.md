@@ -52,12 +52,12 @@ Le best practice relative ad Assets, incluse la funzionalità Dynamic Medie e l�
   <tr>
    <td>Integrazione di Scene7 e AEM</td>
    <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Best practice per l’integrazione di Scene7 con AEM</a></td>
-   <td><p>Descrive quando attivare il modulo di importazione polling, come testare l’integrazione e quando utilizzare il browser dei contenuti rispetto a un caricamento diretto in Assets.</p> </td>
+   <td><p>Descrive quando attivare Importazione polling, come testare l’integrazione e quando utilizzare il browser dei contenuti rispetto a un caricamento diretto in Assets.</p> </td>
   </tr>
   <tr>
    <td>Opzioni predefinito immagine</td>
-   <td>Informazioni <a href="/help/assets/managing-image-presets.md#understanding-image-presets">predefiniti immagine</a> e <a href="/help/assets/managing-image-presets.md#image-preset-options">best practice per i predefiniti immagine</a></td>
-   <td>Come parte della documentazione su <a href="/help/assets/managing-image-presets.md">Gestione dei predefiniti per immagini</a>, questi argomenti descrivono cosa sono i predefiniti per immagini e le best practice per la selezione delle opzioni dei predefiniti per immagini.</td>
+   <td>Informazioni sulle <a href="/help/assets/managing-image-presets.md#understanding-image-presets">best practice per i predefiniti immagine</a> e <a href="/help/assets/managing-image-presets.md#image-preset-options">predefiniti immagine</a></td>
+   <td>Come parte della documentazione su <a href="/help/assets/managing-image-presets.md">Gestione dei predefiniti immagine</a>, questi argomenti descrivono i predefiniti immagine e le best practice per la selezione delle opzioni dei predefiniti immagine.</td>
   </tr>
   <tr>
    <td>Confronto tra Dynamic Medie e l'integrazione diretta con Scene7</td>

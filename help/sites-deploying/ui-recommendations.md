@@ -68,15 +68,15 @@ Di seguito è riportato un elenco di consigli di Product Management per Adobe Ex
    <td>Utilizza l’interfaccia utente predefinita.</td>
   </tr>
   <tr>
-   <td><p>Ha usato l'AEM per un po'.</p> <p>Ha utilizzato l’interfaccia utente del prodotto pronta all’uso e ha sviluppato componenti personalizzati per i siti.<br /> </p> </td>
+   <td><p>Ha usato l'AEM per un po'.</p> <p>Ha utilizzato l'interfaccia utente predefinita del prodotto e sviluppato componenti personalizzati per i siti.<br /> </p> </td>
    <td>
     <ol>
      <li>Aggiornamento a 6.5</li>
      <li>Utilizza l’interfaccia utente predefinita per amministrazione sito, risorse, .. ecc.<br /> </li>
-     <li>Configura l’azione "Modifica pagina" per aprire l’Editor pagina dell’interfaccia utente classica. Consulta <a href="#selecting-your-ui">Selezione dell’interfaccia utente</a>.</li>
+     <li>Configura l’azione "Modifica pagina" per aprire l’Editor pagina dell’interfaccia utente classica. Vedi <a href="#selecting-your-ui">Selezione della tua interfaccia utente</a>.</li>
     </ol> <p>Quindi, in una seconda fase:</p>
     <ol>
-     <li>Aggiorna le finestre di dialogo dei componenti per utilizzare il formato della finestra di dialogo Coral 3. L’Adobe consiglia di utilizzare <a href="/help/sites-developing/modernization-tools.md">Strumenti di modernizzazione AEM</a> per aggiornare i componenti.</li>
+     <li>Aggiorna le finestre di dialogo dei componenti per utilizzare il formato della finestra di dialogo Coral 3. L'Adobe consiglia di utilizzare <a href="/help/sites-developing/modernization-tools.md">Strumenti di modernizzazione AEM</a> per aggiornare i componenti.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -85,33 +85,33 @@ Di seguito è riportato un elenco di consigli di Product Management per Adobe Ex
     <ol>
      <li>Aggiornamento a 6.5</li>
      <li>Utilizza l’interfaccia utente predefinita per amministrazione sito, risorse, .. ecc.</li>
-     <li>Configura l’azione "Modifica pagina" per aprire l’Editor pagina dell’interfaccia utente classica. Consulta <a href="#selecting-your-ui">Selezione dell’interfaccia utente</a>.</li>
+     <li>Configura l’azione "Modifica pagina" per aprire l’Editor pagina dell’interfaccia utente classica. Vedi <a href="#selecting-your-ui">Selezione della tua interfaccia utente</a>.</li>
     </ol> <p>Quindi, in una seconda fase:</p>
     <ol>
-     <li>Aggiorna le finestre di dialogo dei componenti per utilizzare il formato della finestra di dialogo Coral 3. L’Adobe consiglia di utilizzare <a href="/help/sites-developing/modernization-tools.md">Strumenti di modernizzazione AEM</a> per aggiornare i componenti.</li>
+     <li>Aggiorna le finestre di dialogo dei componenti per utilizzare il formato della finestra di dialogo Coral 3. L'Adobe consiglia di utilizzare <a href="/help/sites-developing/modernization-tools.md">Strumenti di modernizzazione AEM</a> per aggiornare i componenti.</li>
      <li>Configura ContextHub (il sostituto del ClientContext) e aggiorna i modelli di pagina per utilizzare ContextHub. ContextHub dispone di una modalità di compatibilità che consente di caricare archivi di ClientContext personalizzati.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><p>Ha usato CQ/AEM per molti anni.</p> <p>Ha esteso l’interfaccia utente del prodotto (ad esempio, Amministratore sito) e creato componenti con ampie finestre di dialogo per modifica.</p> </td>
-   <td><p>Esegui l’aggiornamento alla versione 6.5 e configura l’interfaccia classica come predefinita per l’authoring delle pagine per tutti gli utenti. Consulta <a href="#selecting-your-ui">Selezione dell’interfaccia utente</a>.</p> <p>Quindi avvia un progetto per applicare la personalizzazione e ottimizzare le finestre di dialogo dei componenti in formato Coral 3. Consulta <a href="#resources-to-help">Risorse per l’Aiuto</a>.<br /> </p> </td>
+   <td><p>Esegui l’aggiornamento alla versione 6.5 e configura l’interfaccia classica come predefinita per l’authoring delle pagine per tutti gli utenti. Vedi <a href="#selecting-your-ui">Selezione della tua interfaccia utente</a>.</p> <p>Quindi avvia un progetto per applicare la personalizzazione e ottimizzare le finestre di dialogo dei componenti in formato Coral 3. Consulta <a href="#resources-to-help">Risorse per la Guida</a>.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Domande frequenti {#faq}
 
-Consulta l’articolo della Knowledge Base, [Domande frequenti sull’authoring dell’interfaccia touch](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), per dettagli, comprese eventuali informazioni sulla pianificazione obsoleta per l’interfaccia classica.
+Per informazioni dettagliate, consulta l&#39;articolo della Knowledge Base [Domande frequenti sulla creazione dell&#39;interfaccia utente touch](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), incluse eventuali informazioni sulla pianificazione di deprecazione per l&#39;interfaccia classica.
 
 ### Selezione dell’interfaccia utente {#selecting-your-ui}
 
-Consulta [Selezione dell’interfaccia utente](/help/sites-authoring/select-ui.md) per informazioni sulla configurazione del sistema in base alle esigenze.
+Consulta [Selezione dell&#39;interfaccia utente](/help/sites-authoring/select-ui.md) per informazioni sulla configurazione del sistema in base alle esigenze.
 
 ### Stato interfaccia touch {#touch-enabled-ui-status}
 
-Per informazioni dettagliate sui miglioramenti apportati all’interfaccia utente touch in AEM 6.5, consulta [Novità](/help/release-notes/release-notes.md#what-s-new) nelle Note sulla versione.
+Per informazioni dettagliate sui miglioramenti apportati all&#39;interfaccia utente touch in AEM 6.5, vedere [Novità](/help/release-notes/release-notes.md#what-s-new) nelle Note sulla versione.
 
-Panoramica completa consulta [Stato delle funzioni dell’interfaccia touch](/help/release-notes/touch-ui-features-status.md) pagina
+Panoramica completa: visita la pagina [Stato delle funzioni dell&#39;interfaccia utente touch](/help/release-notes/touch-ui-features-status.md)
 
 ### Risorse per l’Aiuto {#resources-to-help}
 
@@ -121,13 +121,13 @@ Per informazioni di base sulla manipolazione di base:
 
 Per informazioni dettagliate sullo sviluppo:
 
-* [Architettura dell’interfaccia touch](/help/sites-developing/touch-ui-concepts.md).
-* Utilizza il [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) per convertire le finestre di dialogo di modifica dei componenti dall’interfaccia classica all’interfaccia touch.
+* [Architettura interfaccia utente touch](/help/sites-developing/touch-ui-concepts.md).
+* Utilizza [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) per convertire le finestre di dialogo di modifica dei componenti dall&#39;interfaccia classica all&#39;interfaccia touch.
 
-* [Struttura dell’interfaccia touch](/help/sites-developing/touch-ui-structure.md).
+* [Struttura dell&#39;interfaccia utente touch](/help/sites-developing/touch-ui-structure.md).
 
-* [Personalizzazione delle console nell’interfaccia touch](/help/sites-developing/customizing-consoles-touch.md) (include il codice di esempio).
+* [Personalizzazione delle console nell&#39;interfaccia utente touch](/help/sites-developing/customizing-consoles-touch.md) (include il codice di esempio).
 
-* [Personalizzazione dell’authoring delle pagine nell’interfaccia utente touch](/help/sites-developing/customizing-page-authoring-touch.md) (include il codice di esempio).
+* [Personalizzazione dell&#39;authoring delle pagine nell&#39;interfaccia utente touch](/help/sites-developing/customizing-page-authoring-touch.md) (include codice di esempio).
 
-* [Documentazione dell’interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+* [Documentazione interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).

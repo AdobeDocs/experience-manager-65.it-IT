@@ -22,13 +22,13 @@ L’AEM consente di generare elementi grafici che incorporano testo estratto in 
 
 A questo scopo, puoi anche caricare e utilizzare i tuoi font.
 
-Al momento sono supportate tutte le implementazioni della piattaforma Java [TrueType](https://en.wikipedia.org/wiki/Truetype) font.
+Attualmente tutte le implementazioni della piattaforma Java supportano [caratteri TrueType](https://en.wikipedia.org/wiki/Truetype).
 
-1. Apri CRXDE Liti e passa alla cartella dell’applicazione del progetto:
+1. Apri CRXDE Lite e passa alla cartella dell’applicazione del progetto:
 
    `/apps/<your-project>/`
 
-1. Sotto `/apps/<your-project>/` creare un nodo:
+1. In `/apps/<your-project>/` creare un nodo:
 
    * **Nome**: `fonts`
    * **Tipo**: `sling:Folder`
@@ -41,10 +41,10 @@ Al momento sono supportate tutte le implementazioni della piattaforma Java [True
    >
    >I file di font nel repository devono avere il suffisso `*.ttf` o `*.TTF`.
 
-1. Aggiornare il [Configurazione OSGi](/help/sites-deploying/configuring-osgi.md) di [Supporto caratteri Day Commons GFX](/help/sites-deploying/osgi-configuration-settings.md). Aggiungere il percorso alla cartella dei caratteri, ovvero `/apps/<your-project>/fonts`.
+1. Aggiorna la [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) di [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Aggiungere il percorso alla cartella dei caratteri, ovvero `/apps/<your-project>/fonts`.
 
-1. Torna a CRXDE Liti. Ora dovresti vedere un `.fontlist` nella cartella contenente il nome dei caratteri importati.
+1. Torna a CRXDE Lite. Nella cartella dovrebbe essere presente un nodo `.fontlist` contenente il nome dei caratteri importati.
 
    Questi font sono ora pronti per essere utilizzati nell’API Java.
 
-Per informazioni dettagliate sull’utilizzo dei font con l’API Java, consulta la sezione [documentazione per la classe Font dell’API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
+Per informazioni dettagliate su come utilizzare i font con l&#39;API Java, consulta la [documentazione per la classe Font dell&#39;API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).

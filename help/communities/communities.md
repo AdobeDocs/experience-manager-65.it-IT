@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Le community Adobe Experience Manager (AEM) semplificano la creazione e la personalizzazione di funzioni quali forum, gruppi di utenti, blog, domande e risposte, calendari, commenti, recensioni, votazioni, valutazioni e assegnazioni. Queste funzioni consentono di immettere nell’ambiente di pubblicazione i contenuti generati dagli utenti (UGC, User-Generated Content).
 
-La base di un [sito community](overview.md#communitiessites) è il [framework della componente social](scf.md) (SCF). La creazione di un sito community inizia con la selezione di un [modello per sito community](sites-console.md) composto da [funzioni community](functions.md).
+La base di un [sito community](overview.md#communitiessites) è il [framework per componenti social](scf.md) (SCF). La creazione di un sito community inizia con la selezione di un [modello di sito community](sites-console.md) composto da [funzioni community](functions.md).
 
 Per una panoramica e tutorial introduttivi, visita:
 
@@ -31,26 +31,26 @@ Per una panoramica e tutorial introduttivi, visita:
 
 >[!NOTE]
 > 
->Si consiglia vivamente di essere sempre aggiornati con [ultime versioni](deploy-communities.md#latest-releases).
+>Si consiglia vivamente di essere sempre aggiornati con le [ultime versioni](deploy-communities.md#latest-releases).
 
 ## Distribuzioni consigliate {#recommended-deployments}
 
-* [Archiviazione contenuti community](working-with-srp.md): illustra le scelte del provider di risorse social network (SRP) disponibili per un archivio comune UGC
-* [Topologie consigliate per le community](topologies.md): descrive le topologie in base al caso d’uso e alla scelta SRP
+* [Archiviazione contenuto community](working-with-srp.md): illustra le scelte del provider di risorse social network (SRP) disponibili per un archivio comune UGC
+* [Topologie consigliate per le community](topologies.md): illustra le topologie in base al caso d&#39;uso e alla scelta SRP
 
 ## Framework componenti social {#social-component-framework}
 
-* [Framework componenti social](scf.md): panoramica del framework e delle API.
-* [Helper Handlebars SCF](handlebars-helpers.md): helper predefiniti e come scrivere helper personalizzati.
-* [Personalizzazione lato client](client-customize.md): personalizzazione del codice eseguito nel browser.
+* [Framework dei componenti social](scf.md): panoramica del framework e delle API.
+* [Helper Handlebars SCF](handlebars-helpers.md): helper predefiniti e modalità di scrittura di helper personalizzati.
+* [Personalizzazione lato client](client-customize.md): personalizzazione del codice in esecuzione nel browser.
 * [Personalizzazione lato server](server-customize.md): personalizzazione del codice in esecuzione sul server.
-* [Provider risorsa di archiviazione (SRP)](srp.md): panoramica dell’archiviazione dei contenuti della community.
+* [Provider risorsa di archiviazione (SRP)](srp.md): panoramica dell&#39;archiviazione dei contenuti della community.
 * [Linee guida per la codifica](code-guide.md): linee guida, suggerimenti.
 * [Guida ai componenti della community](components-guide.md): strumento di sviluppo interattivo.
 
 ## Nozioni di base su componenti, funzioni e funzioni {#component-function-and-feature-essentials}
 
-I componenti, le funzioni e le funzioni di AEM Communities forniscono i blocchi predefiniti per [siti community](sites-console.md).
+I componenti, le funzioni e le funzionalità di AEM Communities forniscono i blocchi predefiniti per [siti community](sites-console.md).
 
 * [Nozioni di base su componenti, funzioni e funzioni](essentials.md)
 * [Clientlibs per i componenti Communities](clientlibs.md)
@@ -65,7 +65,7 @@ I componenti, le funzioni e le funzioni di AEM Communities forniscono i blocchi 
 
 ## Gruppi community {#community-groups}
 
-[Gruppi community](overview.md#communitygroups) si tratta del concetto di consentire ai membri della community di creare sottocomunità all’interno del sito community. La creazione di un gruppo community può verificarsi nell’ambiente di pubblicazione o di authoring.
+[I gruppi di community](overview.md#communitygroups) consentono ai membri della community di creare comunità secondarie all&#39;interno del sito della community. La creazione di un gruppo community può verificarsi nell’ambiente di pubblicazione o di authoring.
 
 * [Nozioni di base sul gruppo community](essentials-groups.md)
 * [Funzione Gruppi](functions.md#groups-function)
@@ -75,8 +75,8 @@ I componenti, le funzioni e le funzioni di AEM Communities forniscono i blocchi 
 
 ## Gestione dei dati {#managing-data}
 
-* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità API SRP
-* [Nozioni di base sui tag](tag.md) - possibilità per i membri della community di assegnare tag alle risorse di abilitazione UGC e/o catalogate
+* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi dell&#39;utilità API SRP
+* [Tag Essentials](tag.md): possibilità per i membri della community di assegnare tag alle risorse di abilitazione UGC e/o catalogate
 
 ## Tutorial {#tutorials}
 
@@ -93,6 +93,6 @@ I componenti, le funzioni e le funzioni di AEM Communities forniscono i blocchi 
 
 * Visita [Distribuzione delle community](deploy-communities.md) per informazioni sulle distribuzioni consigliate e sulla configurazione di Dispatcher.
 
-* Visita [Amministrazione di siti community](administer-landing.md) per informazioni sulla creazione di un sito community, sulla configurazione di modelli di sito community, sulla moderazione del contenuto della community, sulla gestione dei membri e sulla configurazione dei messaggi.
+* Visita [Amministrazione di siti community](administer-landing.md) per scoprire come creare un sito community, configurare modelli di sito community, moderare il contenuto della community, gestire i membri e configurare i messaggi.
 
-* Visita [Authoring dei componenti delle community](author-communities.md) per scoprire come effettuare l’authoring con e configurare i componenti di Communities.
+* Visita [Authoring dei componenti delle community](author-communities.md) per scoprire come effettuare l&#39;authoring con e configurare i componenti delle community.

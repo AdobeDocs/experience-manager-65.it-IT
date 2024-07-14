@@ -20,19 +20,19 @@ ht-degree: 0%
 
 Eventi quali errori di runtime o di avvio vengono registrati nei file di registro del server applicazioni. In caso di problemi di distribuzione nel server applicazioni, è possibile utilizzare i file di registro per individuare il problema. È possibile aprire i file di registro utilizzando qualsiasi editor di testo.
 
-(JBoss) I seguenti file di registro sono in `[appserver root]/server/'server'/log` directory:
+(JBoss) I seguenti file di registro si trovano nella directory `[appserver root]/server/'server'/log`:
 
 * boot.log
 * server.log.*[aaaa-mm-gg]*
 * server.log
 
-(WebLogic) I file di registro del dominio sono in `[appserverdomain]` e i file di registro del server si trovano nella `[appserverdomain]/servers/[appserver name]/logs` directory:
+(WebLogic) I file di registro del dominio si trovano nella directory `[appserverdomain]` e i file di registro del server si trovano nella directory `[appserverdomain]/servers/[appserver name]/logs`:
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) I seguenti file di registro sono in `[appserver root]/profiles/default/logs/[appserver name]` directory:
+(WebSphere) I seguenti file di log si trovano nella directory `[appserver root]/profiles/default/logs/[appserver name]`:
 
 * SystemErr.log
 * SystemOut.log

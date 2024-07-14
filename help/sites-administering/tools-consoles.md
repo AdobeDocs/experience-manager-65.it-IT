@@ -19,7 +19,7 @@ ht-degree: 26%
 
 # Console Strumenti{#tools-consoles}
 
-Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Al momento esistono due versioni del **Strumenti** a seconda dell’interfaccia utente in uso:
+Le console **Strumenti** consentono di accedere a diversi strumenti specifici per la gestione dei siti Web, delle risorse digitali e di altri aspetti dell&#39;archivio dei contenuti. Attualmente esistono due versioni della console **Strumenti** che dipendono dall&#39;interfaccia utente in uso:
 
 * [Strumenti - Interfaccia touch](#tools-touch-optimized-ui)
 * [Strumenti - Interfaccia classica](#tools-classic-ui)

@@ -22,7 +22,7 @@ Per il servizio Document Management sono disponibili i seguenti Quick Start (obs
 
 >[!NOTE]
 >
->A partire dal 5 agosto 2011, Adobe sta eseguendo la migrazione dei clienti Content Services ES ad Adobe Digital Enterprise Platform Experience Services. La roadmap dei prodotti per i clienti che utilizzano Content Services prevede il passaggio al nuovo core ADEP Experience Services, che include un repository dei contenuti nativo basato sulla moderna architettura modulare CRX, acquisito durante l&#39;acquisizione Adobe di Day Software.
+>A partire dal 5 agosto 2011, Adobe sta eseguendo la migrazione dei clienti Content Services ES ad Adobe Digital Enterprise Platform Experience Services. La roadmap dei prodotti per i clienti che utilizzano Content Services prevede il passaggio al nuovo Experience Services - Core ADEP, che include un archivio dei contenuti nativo basato sulla moderna architettura modulare di CRX, acquisito durante l&#39;acquisizione Adobe di Day Software.
 
 [Guida rapida (modalità SOAP): creare spazi di Content Services utilizzando l’API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -44,11 +44,11 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->Gli avvii rapidi nella programmazione con i moduli AEM si basano sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi nella programmazione con i moduli AEM si basano sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Guida rapida (modalità SOAP): creare spazi di Content Services utilizzando l’API Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato *Directory di prova* nella Home della società. Il valore di identificazione del nuovo spazio viene scritto nella console.
+Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato *Directory di test* nella home della società. Il valore di identificazione del nuovo spazio viene scritto nella console.
 
 ```java
  /*
@@ -367,7 +367,7 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un file PDF denominato *
 
 ## Guida rapida (modalità SOAP): recuperare contenuti da Content Services tramite API Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene recuperato un file PDF denominato *MortgageForm.pdf* da /Company Home. Il file PDF viene salvato nel file system locale e denominato *UpdatedMortgageForm.pdf*.
+Esempio Nell&#39;esempio di codice Java riportato di seguito viene recuperato un file PDF denominato *MortgageForm.pdf* da /Company Home. Il file PDF è stato salvato nel file system locale ed è denominato *UpdatedMortgageForm.pdf*.
 
 ```java
  /*
@@ -473,7 +473,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene recuperato un
 
 ## Guida introduttiva (modalità SOAP): spostare il contenuto di Content Services utilizzando l’API Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene spostato un file PDF denominato *MortgageForm.pdf* da /Company Home/Test Directory a /Company Home. Il valore di identificazione del contenuto spostato viene scritto nella console.
+Nell&#39;esempio di codice Java seguente viene spostato un file PDF denominato *MortgageForm.pdf* da /Company Home/Test Directory a /Company Home. Il valore di identificazione del contenuto spostato viene scritto nella console.
 
 ```java
  /*
@@ -797,7 +797,7 @@ Il codice Java seguente cerca in /Company Home un documento contenente il testo 
 
 ## Guida introduttiva (modalità SOAP): impostazione delle autorizzazioni Content Services tramite Java API (obsoleto) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene impostata un&#39;autorizzazione per un utente denominato tony blue. Il dominio specificato è quello predefinito. Viene specificata l’autorizzazione Consumer e il nodo è `/Company Home/Test Directory`.
+Esempio Nell&#39;esempio di codice Java riportato di seguito viene impostata un&#39;autorizzazione per un utente denominato tony blue. Il dominio specificato è quello predefinito. L&#39;autorizzazione Consumer è specificata e il nodo è `/Company Home/Test Directory`.
 
 ```java
  /*

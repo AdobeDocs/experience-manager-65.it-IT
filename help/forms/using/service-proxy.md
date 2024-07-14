@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # proxy del servizio HTML5 forms{#html-forms-service-proxy}
 
-Il proxy del servizio HTML5 forms è una configurazione che consente di registrare un proxy per il servizio di invio. Per configurare Service Proxy, specifica l’URL del servizio di invio tramite il parametro della richiesta *submitServiceProxy*.
+Il proxy del servizio HTML5 forms è una configurazione che consente di registrare un proxy per il servizio di invio. Per configurare Service Proxy, specificare l&#39;URL del servizio di invio tramite il parametro di richiesta *submitServiceProxy*.
 
 ## Vantaggi del proxy di servizio {#benefits-of-service-proxy-br}
 
@@ -131,6 +131,6 @@ Il proxy del servizio di invio funge da pass-through se il submiturl non è pres
 Il proxy del servizio di invio seleziona una topologia se submiturl è presente nel parametro della richiesta.
 
 * Se i server AEM pubblicano i dati, il servizio proxy funge da pass-through. Invia la richiesta all’endpoint /bin/xfaforms/submitaction e invia la risposta al runtime XFA.
-* Se il proxy pubblica i dati, il servizio proxy trasmette tutti i parametri ad eccezione di submitUrl al */bin/xfaforms/submitaction* end point e riceve i byte xml nel flusso di risposta. Successivamente, il servizio proxy invia i byte XML dei dati all&#39;elemento submitUrl per l&#39;elaborazione.
+* Se il proxy invia i dati, il servizio proxy trasmette tutti i parametri ad eccezione di submitUrl all&#39;endpoint */bin/xfaforms/submitaction* e riceve byte xml nel flusso di risposta. Successivamente, il servizio proxy invia i byte XML dei dati all&#39;elemento submitUrl per l&#39;elaborazione.
 
-* Prima di inviare i dati (richiesta POST) a un server, i moduli HTML5 verificano la connettività e la disponibilità del server. Per verificare la connettività e la disponibilità, i moduli HTML inviano una richiesta head vuota al server. Se il server è disponibile, il modulo HTML5 invia i dati (richiesta POST) al server. Se il server non è disponibile, viene visualizzato un messaggio di errore, *Impossibile connettersi al server,* viene visualizzato. Il rilevamento avanzato impedisce agli utenti di riempire nuovamente il modulo. Il servlet proxy gestisce la richiesta head e non genera un’eccezione.
+* Prima di inviare i dati (richiesta POST) a un server, i moduli HTML5 verificano la connettività e la disponibilità del server. Per verificare la connettività e la disponibilità, i moduli HTML inviano una richiesta head vuota al server. Se il server è disponibile, il modulo HTML5 invia i dati (richiesta POST) al server. Se il server non è disponibile, viene visualizzato un messaggio di errore, *Impossibile connettersi al server,*. Il rilevamento avanzato impedisce agli utenti di riempire nuovamente il modulo. Il servlet proxy gestisce la richiesta head e non genera un’eccezione.

@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Personalizzazione delle azioni delle attività {#customizing-task-actions}
 
-L’area di lavoro di AEM Forms consente agli utenti di personalizzare le azioni dell’attività. Prima di personalizzare le azioni dell’attività, accertati di seguire i passaggi elencati in [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+L’area di lavoro di AEM Forms consente agli utenti di personalizzare le azioni dell’attività. Prima di personalizzare le azioni dell&#39;attività, assicurati di seguire i passaggi elencati in [Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Personalizzazione dello stile del testo {#customizing-text-style}
 
-Per personalizzare lo stile del testo, aggiungi il seguente frammento di codice nel `/apps/ws/css/newStyle.css` file:
+Per personalizzare lo stile del testo, aggiungere il seguente frammento di codice nel file `/apps/ws/css/newStyle.css`:
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -109,7 +109,7 @@ Per personalizzare lo stile del testo, aggiungi il seguente frammento di codice 
 
 ## Personalizzazione delle immagini {#customizing-images}
 
-Per personalizzare le immagini, aggiungi il seguente frammento di codice nel `/apps/ws/css/newStyle.css` file. Il seguente snippet di codice personalizza l’immagine per *blocca* azione:
+Per personalizzare le immagini, aggiungere il seguente frammento di codice nel file `/apps/ws/css/newStyle.css`. Il seguente frammento di codice personalizza l&#39;immagine per l&#39;azione *lock*:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -132,13 +132,13 @@ Per personalizzare le immagini, aggiungi il seguente frammento di codice nel `/a
 
 ## Visualizzazione delle sole immagini per le azioni {#showing-only-images-for-actions}
 
-Per visualizzare solo le immagini per le azioni, personalizzare le immagini utilizzate nelle azioni di indirizzamento. Per informazioni dettagliate, consulta [Immagini per le azioni di instradamento](/help/forms/using/images-route-actions.md).
+Per visualizzare solo le immagini per le azioni, personalizzare le immagini utilizzate nelle azioni di indirizzamento. Per informazioni dettagliate, vedere [Immagini per azioni di route](/help/forms/using/images-route-actions.md).
 
 ### Menu a comparsa dell&#39;azione dell&#39;attività Elenco attività {#task-list-task-action-nbsp-pop-up-menu}
 
-1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa dell’azione Elenco attività dell’area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consulta [Creazione del codice dell’area di lavoro di AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa dell’azione Elenco attività dell’area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, vedere [Creazione del codice dell&#39;area di lavoro di AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. Copia /libs/ws/js/runtime/templates/task.html in `/apps/ws/js/runtime/templates/task.html`sostituisci il seguente frammento di codice:
+1. Copiare /libs/ws/js/runtime/templates/task.html in `/apps/ws/js/runtime/templates/task.html`sostituire il seguente frammento di codice:
 
    ```html
    // Orignal code
@@ -211,7 +211,7 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
        </div>
    ```
 
-1. Rimuove la larghezza fissa assegnata a un tag di ancoraggio dal `/apps/ws/css/newStyle.css` file:
+1. Rimuovi la larghezza fissa assegnata a un tag di ancoraggio dal file `/apps/ws/css/newStyle.css`:
 
    ```css
    .task .taskActionsPopUp ul{
@@ -265,8 +265,8 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
 
 Per personalizzare il menu a comparsa delle azioni delle attività Dettagli, effettuare le seguenti operazioni:
 
-* Copiare il file /libs/ws/js/runtime/templates/taskdetails.html in `/apps/ws/js/runtime/templates/` cartella:
-* Incapsula il tag icona all’interno del tag di ancoraggio invece del testo. Ad esempio, il *nuovo codice* nell&#39;elenco seguente il tag icona è racchiuso all&#39;interno del tag di ancoraggio:
+* Copiare il file /libs/ws/js/runtime/templates/taskdetails.html nella cartella `/apps/ws/js/runtime/templates/`:
+* Incapsula il tag icona all’interno del tag di ancoraggio invece del testo. Ad esempio, il *nuovo codice* elencato di seguito racchiude il tag icona all&#39;interno del tag di ancoraggio:
 
 ```html
 // Original code
@@ -359,4 +359,4 @@ Per personalizzare il menu a comparsa delle azioni delle attività Dettagli, eff
 
 * Apri il file /apps/ws/js/registry.js per la modifica.
 * Individuare il testo seguente: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
-* Sostituire il testo individuato con il testo seguente: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
+* Sostituire il testo individuato con il seguente testo: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`

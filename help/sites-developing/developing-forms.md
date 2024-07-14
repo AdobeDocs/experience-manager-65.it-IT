@@ -25,9 +25,9 @@ La struttura di base di un modulo è la seguente:
 * Elementi modulo
 * Fine modulo
 
-Tutti questi elementi vengono realizzati con una serie di impostazioni predefinite [Componenti del modulo](/help/sites-authoring/default-components.md#form), disponibile in un&#39;installazione standard per AEM.
+Tutti questi elementi vengono realizzati con una serie di [componenti modulo](/help/sites-authoring/default-components.md#form) predefiniti, disponibili in un&#39;installazione AEM standard.
 
-Oltre a [sviluppo di nuovi componenti](/help/sites-developing/developing-components-samples.md) per l&#39;utilizzo nei moduli è inoltre possibile:
+Oltre a [sviluppare nuovi componenti](/help/sites-developing/developing-components-samples.md) da utilizzare nei moduli, è possibile:
 
 * [Precarica il modulo con i valori](#preloading-form-values)
 * [Precarica (determinati) campi con più valori](#preloading-form-fields-with-multiple-values)
@@ -35,15 +35,15 @@ Oltre a [sviluppo di nuovi componenti](/help/sites-developing/developing-compone
 * [Sviluppare nuovi vincoli](#developing-your-own-form-constraints)
 * [Mostrare o nascondere campi modulo specifici](#showing-and-hiding-form-components)
 
-[Utilizzo degli script](#developing-scripts-for-use-with-forms) per estendere la funzionalità, se necessario.
+[Utilizzo di script](#developing-scripts-for-use-with-forms) per estendere le funzionalità laddove necessario.
 
 >[!NOTE]
 >
->Questo documento si concentra sullo sviluppo di moduli utilizzando [Componenti di base](/help/sites-authoring/default-components-foundation.md) nell’interfaccia classica. L’Adobe consiglia di utilizzare il nuovo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Nascondi condizioni](/help/sites-developing/hide-conditions.md) per lo sviluppo di moduli nell’interfaccia utente touch.
+>Questo documento si concentra sullo sviluppo di moduli utilizzando [Componenti Foundation](/help/sites-authoring/default-components-foundation.md) nell&#39;interfaccia utente classica. L&#39;Adobe consiglia di utilizzare i nuovi [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Nascondi condizioni](/help/sites-developing/hide-conditions.md) per lo sviluppo di moduli nell&#39;interfaccia utente touch.
 
 ## Precaricamento dei valori modulo {#preloading-form-values}
 
-Il componente di inizio modulo fornisce un campo per **Percorso di caricamento**: percorso facoltativo che punta a un nodo nell’archivio.
+Il componente di inizio modulo fornisce un campo per il **percorso di caricamento**, un percorso facoltativo che punta a un nodo nell&#39;archivio.
 
 Il percorso di caricamento è il percorso delle proprietà del nodo utilizzato per caricare valori predefiniti in più campi del modulo.
 
@@ -51,29 +51,31 @@ Questo è un campo facoltativo che specifica il percorso di un nodo nell’archi
 
 >[!NOTE]
 >
->A [azione modulo](#developing-your-own-form-actions) può anche impostare la risorsa da cui caricare i valori iniziali. Questa operazione viene eseguita utilizzando `FormsHelper#setFormLoadResource` interno `init.jsp`.
+>Un&#39;azione [modulo](#developing-your-own-form-actions) può anche impostare la risorsa da cui caricare i valori iniziali. Questa operazione viene eseguita utilizzando `FormsHelper#setFormLoadResource` in `init.jsp`.
 >
 >Solo se non è impostato, il modulo verrà popolato dal percorso impostato nel componente modulo iniziale dall’autore.
 
 ### Precaricamento dei campi modulo con più valori {#preloading-form-fields-with-multiple-values}
 
-Vari campi del modulo presentano anche **Percorso di caricamento elementi**, di nuovo un percorso facoltativo che punta a un nodo nell’archivio.
+Vari campi modulo hanno anche il percorso di caricamento **Elementi**, di nuovo un percorso facoltativo che punta a un nodo nell&#39;archivio.
 
-Il **Percorso di caricamento elementi** è il percorso delle proprietà del nodo utilizzato per caricare valori predefiniti in quel campo specifico del modulo, ad esempio [elenco a discesa](/help/sites-authoring/default-components-foundation.md#dropdown-list), [gruppo di caselle di controllo](/help/sites-authoring/default-components-foundation.md#checkbox-group) o [gruppo radio](/help/sites-authoring/default-components-foundation.md#radio-group).
+Il percorso di caricamento **Elementi** è il percorso delle proprietà del nodo utilizzato per caricare valori predefiniti in quel campo specifico del modulo, ad esempio un [elenco a discesa](/help/sites-authoring/default-components-foundation.md#dropdown-list), [gruppo di caselle di controllo](/help/sites-authoring/default-components-foundation.md#checkbox-group) o [gruppo di caselle di controllo](/help/sites-authoring/default-components-foundation.md#radio-group).
 
 #### Esempio: precaricamento di un elenco a discesa con più valori {#example-preloading-a-dropdown-list-with-multiple-values}
 
 È possibile configurare un elenco a discesa con l’intervallo di valori desiderato.
 
-Il **Percorso di caricamento elementi** può essere utilizzato per accedere a un elenco da una cartella nel repository e precaricarli nel campo:
+Il percorso di caricamento **Elementi** può essere utilizzato per accedere a un elenco da una cartella nel repository e precaricarli nel campo:
 
-1. Creare una cartella Sling ( `sling:Folder`) ad esempio, `/etc/designs/<myDesign>/formlistvalues`
+1. Crea una cartella Sling ( `sling:Folder`)
+ad esempio, `/etc/designs/<myDesign>/formlistvalues`
 
-1. Aggiungi una nuova proprietà (ad esempio, `myList`) di tipo stringa con più valori ( `String[]`) per contenere l&#39;elenco degli elementi a discesa. Il contenuto può essere importato anche utilizzando uno script, ad esempio con uno script JSP o cURL in uno script shell.
+1. Aggiungere una nuova proprietà (ad esempio, `myList`) di tipo stringa con più valori ( `String[]`) per contenere l&#39;elenco di elementi a discesa. Il contenuto può essere importato anche utilizzando uno script, ad esempio con uno script JSP o cURL in uno script shell.
 
-1. Utilizza il percorso completo in **Percorso di caricamento elementi** campo: ad esempio, `/etc/designs/geometrixx/formlistvalues/myList`
+1. Utilizza il percorso completo nel campo **Percorso di caricamento elementi**:
+ad esempio, `/etc/designs/geometrixx/formlistvalues/myList`
 
-Tieni presente che se i valori in `String[]` sono dei formattati come segue:
+Nota che se i valori in `String[]` sono del formato seguente:
 
 * `AL=Alabama`
 * `AK=Alaska`
@@ -93,13 +95,13 @@ Una serie di azioni è fornita con un impianto AEM standard, come si può vedere
 
 `/libs/foundation/components/form/actions`
 
-e nella **Tipo di azione** elenco dei **Modulo** componente:
+e nell&#39;elenco **Tipo azione** del componente **Modulo**:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
 In questa sezione viene illustrato come sviluppare un&#39;azione modulo personalizzata da includere nell&#39;elenco.
 
-Puoi aggiungere una tua azione in `/apps` come segue:
+Puoi aggiungere la tua azione in `/apps` come segue:
 
 1. Creare un nodo di tipo `sling:Folder`. Specifica un nome che rifletta l’azione da implementare.
 
@@ -107,17 +109,17 @@ Puoi aggiungere una tua azione in `/apps` come segue:
 
    `/apps/myProject/components/customFormAction`
 
-1. Su questo nodo definisci le seguenti proprietà, quindi fai clic su **Salva tutto** per mantenere le modifiche:
+1. In questo nodo definisci le seguenti proprietà, quindi fai clic su **Salva tutto** per mantenere le modifiche:
 
-   * `sling:resourceType` - imposta come `foundation/components/form/action`
+   * `sling:resourceType` - impostato come `foundation/components/form/action`
 
    * `componentGroup` - definisci come `.hidden`
 
    * Facoltativamente:
 
-      * `jcr:title` : specifica un titolo che verrà visualizzato nell’elenco a discesa di selezione. Se non è impostato, viene visualizzato il nome del nodo
+      * `jcr:title` - specifica un titolo desiderato da visualizzare nell&#39;elenco a discesa. Se non è impostato, viene visualizzato il nome del nodo
 
-      * `jcr:description` - immettere una descrizione di propria scelta
+      * `jcr:description` - immetti una descrizione a tua scelta
 
 1. Nella cartella crea un nodo di dialogo:
 
@@ -126,7 +128,7 @@ Puoi aggiungere una tua azione in `/apps` come segue:
 1. Nella cartella crea:
 
    1. Uno script post.
-Il nome dello script è `post.POST.<extension>`ad esempio: `post.POST.jsp`
+Il nome dello script è `post.POST.<extension>`, ad esempio `post.POST.jsp`
 Lo script post viene richiamato quando un modulo viene inviato per elaborare il modulo, contiene il codice che gestisce i dati provenienti dal modulo `POST`.
 
    1. Aggiungi uno script di inoltro che viene richiamato al momento dell’invio del modulo.
@@ -135,11 +137,11 @@ Questo script può definire un percorso. La richiesta corrente viene quindi inol
 
    La chiamata necessaria è `FormsHelper#setForwardPath` (2 varianti). Un caso tipico è quello di eseguire una convalida, o logica, per trovare il percorso di destinazione e quindi inoltrarlo a tale percorso, consentendo al servlet Sling POST predefinito di eseguire l’archiviazione effettiva in JCR.
 
-   Potrebbe anche essere presente un altro servlet che esegue l’elaborazione effettiva, in questo caso l’azione modulo e `forward.jsp` fungerebbe solo da codice &quot;colla&quot;. Un esempio è l’azione e-mail in `/libs/foundation/components/form/actions/mail`, che inoltra i dettagli a `<currentpath>.mail.html`posizione di un servlet di posta.
+   Potrebbe esserci anche un altro servlet che esegue l&#39;elaborazione effettiva, in tal caso l&#39;azione del modulo e `forward.jsp` fungerebbero solo da codice &quot;glue&quot;. Un esempio è l&#39;azione di posta in `/libs/foundation/components/form/actions/mail`, che inoltra i dettagli a `<currentpath>.mail.html` dove si trova un servlet di posta.
 
    Quindi:
 
-   * a `post.POST.jsp` è utile per piccole operazioni eseguite completamente dall&#39;azione stessa
+   * un `post.POST.jsp` è utile per piccole operazioni che sono completamente eseguite dall&#39;azione stessa
    * mentre `forward.jsp` è utile quando è richiesta solo la delega.
 
    L’ordine di esecuzione per gli script è:
@@ -150,7 +152,7 @@ Questo script può definire un percorso. La richiesta corrente viene quindi inol
       1. per tutti i vincoli del campo: `clientvalidation.jsp`
       1. validationRT del modulo: `clientvalidation.jsp`
       1. il modulo viene caricato tramite la risorsa di caricamento se impostata
-      1. `addfields.jsp` durante il rendering interno `<form></form>`
+      1. `addfields.jsp` durante il rendering di `<form></form>`
 
    * durante la gestione di un modulo `POST`:
 
@@ -158,25 +160,25 @@ Questo script può definire un percorso. La richiesta corrente viene quindi inol
       1. per tutti i vincoli del campo: `servervalidation.jsp`
       1. validationRT del modulo: `servervalidation.jsp`
       1. `forward.jsp`
-      1. se è stato impostato un percorso di inoltro ( `FormsHelper.setForwardPath`), inoltra la richiesta, quindi chiama `cleanup.jsp`
+      1. se è stato impostato un percorso di inoltro ( `FormsHelper.setForwardPath`), inoltrare la richiesta, quindi chiamare `cleanup.jsp`
 
-      1. se non è stato impostato alcun percorso di inoltro, invoca `post.POST.jsp` (termina qui, no `cleanup.jsp` chiamato)
+      1. se non è stato impostato alcun percorso di inoltro, chiamare `post.POST.jsp` (termina qui, non è stato chiamato `cleanup.jsp`)
 
 1. Sempre nella cartella, se lo desideri, aggiungi:
 
    1. Script per l’aggiunta di campi.
-Il nome dello script è `addfields.<extension>`ad esempio: `addfields.jsp`
-Un `addfields` lo script viene richiamato immediatamente dopo la scrittura del HTML per l&#39;inizio del modulo. Questo consente all’azione di aggiungere campi di input personalizzati o altri HTML di questo tipo all’interno del modulo.
+Il nome dello script è `addfields.<extension>`, ad esempio `addfields.jsp`
+Uno script `addfields` viene richiamato immediatamente dopo la scrittura del HTML per l&#39;avvio del modulo. Questo consente all’azione di aggiungere campi di input personalizzati o altri HTML di questo tipo all’interno del modulo.
 
    1. Uno script di inizializzazione.
-Il nome dello script è `init.<extension>`ad esempio: `init.jsp`
+Il nome dello script è `init.<extension>`, ad esempio `init.jsp`
 Questo script viene richiamato al momento del rendering del modulo. Può essere utilizzato per inizializzare le specifiche dell’azione.
 
    1. Uno script di pulizia.
-Il nome dello script è `cleanup.<extension>`ad esempio: `cleanup.jsp`
+Il nome dello script è `cleanup.<extension>`, ad esempio `cleanup.jsp`
 Questo script può essere utilizzato per eseguire la pulizia.
 
-1. Utilizza il **Forms** componente in un parsys. Il **Tipo di azione** Il menu a discesa includerà ora la nuova azione.
+1. Utilizza il componente **Forms** in un parsys. Il menu a discesa **Tipo azione** includerà ora la nuova azione.
 
    >[!NOTE]
    >
@@ -190,7 +192,7 @@ Questo script può essere utilizzato per eseguire la pulizia.
 I vincoli possono essere imposti a due livelli:
 
 * Per [singoli campi (vedere la procedura seguente)](#constraints-for-individual-fields)
-* As [convalida globale del modulo](#form-global-constraints)
+* Come [convalida globale modulo](#form-global-constraints)
 
 #### Vincoli per singoli campi {#constraints-for-individual-fields}
 
@@ -202,23 +204,25 @@ I vincoli possono essere imposti a due livelli:
 
    `/apps/myProject/components/customFormConstraint`
 
-1. Su questo nodo definisci le seguenti proprietà, quindi fai clic su **Salva tutto** per mantenere le modifiche:
+1. In questo nodo definisci le seguenti proprietà, quindi fai clic su **Salva tutto** per mantenere le modifiche:
 
    * `sling:resourceType` - impostato su `foundation/components/form/constraint`
 
-   * `constraintMessage` : messaggio personalizzato visualizzato se il campo non è valido, in base al vincolo, al momento dell’invio del modulo
+   * `constraintMessage` - messaggio personalizzato visualizzato se il campo non è valido, in base al vincolo, al momento dell&#39;invio del modulo
 
    * Facoltativamente:
 
-      * `jcr:title` : specifica un titolo desiderato, da visualizzare nell’elenco di selezione. Se non è impostato, viene visualizzato il nome del nodo
-      * `hint` - ulteriori informazioni, destinate all&#39;utente, su come utilizzare il campo
+      * `jcr:title` - specifica un titolo desiderato da visualizzare nell&#39;elenco di selezione. Se non è impostato, viene visualizzato il nome del nodo
+      * `hint` - ulteriori informazioni per l&#39;utente su come utilizzare il campo
 
 1. All&#39;interno di questa cartella, possono essere necessari i seguenti script:
 
-   * Uno script di convalida client: il nome dello script è `clientvalidation.<extension>`ad esempio: `clientvalidation.jsp`
+   * Uno script di convalida client:
+Il nome dello script è `clientvalidation.<extension>`, ad esempio `clientvalidation.jsp`
 Viene richiamato quando viene eseguito il rendering del campo modulo. Può essere utilizzato per creare JavaScript client per convalidare il campo sul client.
 
-   * Uno script di convalida del server: il nome dello script è `servervalidation.<extension>`ad esempio: `servervalidation.jsp`
+   * Uno script di convalida del server:
+Il nome dello script è `servervalidation.<extension>`, ad esempio `servervalidation.jsp`
 Viene richiamato al momento dell’invio del modulo. Può essere utilizzato per convalidare il campo sul server dopo l’invio.
 
 >[!NOTE]
@@ -235,8 +239,8 @@ La convalida globale del modulo viene specificata configurando un tipo di risors
 
 Puoi quindi definire:
 
-* a `clientvalidation.jsp` : inserito dopo gli script di convalida client del campo
-* e un `servervalidation.jsp` - chiamato anche dopo le convalide dei singoli server di campo su un `POST`.
+* a `clientvalidation.jsp` - inserito dopo gli script di convalida client del campo
+* e un `servervalidation.jsp` - chiamato anche dopo le convalide del singolo server di campo su un `POST`.
 
 ### Mostrare e nascondere i componenti del modulo {#showing-and-hiding-form-components}
 
@@ -244,7 +248,7 @@ Puoi quindi definire:
 
 La modifica della visibilità di un campo modulo è utile quando il campo è necessario solo in determinate condizioni. Ad esempio, in un modulo di feedback, una domanda chiede ai clienti se desiderano ricevere informazioni sui prodotti tramite e-mail. Selezionando sì, viene visualizzato un campo di testo che consente al cliente di digitare il proprio indirizzo e-mail.
 
-Utilizza il **Modifica Regole Mostra/Nascondi** per specificare le condizioni in cui un componente modulo viene visualizzato o nascosto.
+Utilizzare la finestra di dialogo **Modifica regole di visualizzazione/nascondi** per specificare le condizioni in cui un componente del modulo viene visualizzato o nascosto.
 
 ![showhideeditor](assets/showhideeditor.png)
 
@@ -259,7 +263,7 @@ Sotto questi campi vengono visualizzate una o più condizioni. Una condizione co
 * Un operatore.
 * Viene confrontato un valore con il valore del campo.
 
-Ad esempio, un componente Gruppo pulsanti di scelta con il titolo `Receive email notifications?`* * contiene `Yes` e `No` pulsanti di scelta. Un componente Campo di testo con il titolo `Email Address` utilizza la seguente condizione per essere visibile se `Yes` è selezionato:
+Ad esempio, un componente Gruppo pulsanti di scelta con il titolo `Receive email notifications?`* * contiene `Yes` e `No` pulsanti di scelta. Un componente Campo di testo con titolo `Email Address` utilizza la seguente condizione in modo che sia visibile se `Yes` è selezionato:
 
 ![showhidecondition](assets/showhidecondition.png)
 
@@ -271,27 +275,27 @@ In JavaScript, le condizioni utilizzano il valore della proprietà Nome elemento
 
 1. Modifica il componente modulo specifico.
 
-1. Seleziona **Mostra/Nascondi** per aprire **Modifica regole Mostra/Nascondi** finestra di dialogo:
+1. Seleziona **Mostra/Nascondi** per aprire la finestra di dialogo **Modifica regole**:
 
-   * Nel primo elenco a discesa, seleziona **Spettacolo** o **Nascondi** per specificare se le condizioni determinano se mostrare o nascondere il componente.
+   * Nel primo elenco a discesa, selezionare **Mostra** o **Nascondi** per specificare se le condizioni determinano se mostrare o nascondere il componente.
 
    * Nell’elenco a discesa alla fine della riga superiore, seleziona:
 
-      * **tutto** - se tutte le condizioni devono essere true per mostrare o nascondere il componente
-      * **qualsiasi** - se solo una o più condizioni devono essere soddisfatte per mostrare o nascondere il componente
+      * **all** - se tutte le condizioni devono essere true per mostrare o nascondere il componente
+      * **any** - se solo una o più condizioni devono essere true per mostrare o nascondere il componente
 
    * Nella riga della condizione, visualizzata come predefinita, selezionare un componente, un operatore e quindi specificare un valore.
-   * Se necessario, aggiungi altre condizioni facendo clic su **Aggiungi condizione**.
+   * Se necessario, aggiungere altre condizioni facendo clic su **Aggiungi condizione**.
 
    Ad esempio:
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
-1. Clic **OK** per salvare la definizione.
+1. Fare clic su **OK** per salvare la definizione.
 
-1. Dopo aver salvato la definizione, **Modifica regole** viene visualizzato accanto al **Mostra/Nascondi** nelle proprietà del componente modulo. Fai clic su questo collegamento per aprire **Modifica regole Mostra/Nascondi** per apportare modifiche.
+1. Dopo aver salvato la definizione, accanto all&#39;opzione **Mostra/Nascondi** nelle proprietà del componente modulo viene visualizzato il collegamento **Modifica regole**. Fare clic su questo collegamento per aprire la finestra di dialogo **Modifica mostra/nascondi regole** per apportare modifiche.
 
-   Clic **OK** per salvare tutte le modifiche.
+   Fare clic su **OK** per salvare tutte le modifiche.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -299,7 +303,7 @@ In JavaScript, le condizioni utilizzano il valore della proprietà Nome elemento
    >
    >Gli effetti delle definizioni Mostra/Nascondi possono essere visualizzati e testati:
    >
-   >* in **Anteprima** modalità nell’ambiente di authoring (richiede un ricaricamento della pagina al primo passaggio all’anteprima)
+   >* in modalità **Anteprima** nell&#39;ambiente di authoring (è necessario ricaricare la pagina al primo passaggio all&#39;anteprima)
    >
    >* sull’ambiente di pubblicazione
 
@@ -311,11 +315,11 @@ Quando la configurazione Mostra/Nascondi non è valida, viene fornita solo come 
 
 ### Sviluppo di script da utilizzare con Forms {#developing-scripts-for-use-with-forms}
 
-Per ulteriori informazioni sugli elementi API che possono essere utilizzati durante la scrittura di script, vedi [javadoc relativi ai moduli](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Per ulteriori informazioni sugli elementi API che possono essere utilizzati durante la scrittura di script, vedi [JavaScript relativi ai moduli](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 È possibile utilizzarlo per azioni quali la chiamata di un servizio prima dell’invio del modulo e l’annullamento del servizio in caso di errore:
 
 * Definire il tipo di risorsa di convalida
 * Includi uno script per la convalida:
 
-   * Nella JSP, chiama il servizio web e crea un’ `com.day.cq.wcm.foundation.forms.ValidationInfo` oggetto contenente i messaggi di errore. In caso di errori, i dati del modulo non verranno registrati.
+   * Nel JSP, chiamare il servizio Web e creare un oggetto `com.day.cq.wcm.foundation.forms.ValidationInfo` contenente i messaggi di errore. In caso di errori, i dati del modulo non verranno registrati.

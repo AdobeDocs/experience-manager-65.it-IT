@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Ristrutturazione dell’archivio Sites in AEM 6.5 {#sites-repository-restructuring-in-aem}
 
-Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Sites. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Sites. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
-**Con aggiornamento 6.5**
+**Con Aggiornamento 6.5**
 
 * [Segmenti ContextHub](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#contexthub-segments)
 
@@ -56,16 +56,16 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Se alcuni segmenti ContextHub nuovi o modificati vengono modificati nel controllo del codice sorgente anziché essere modificati in AEM, è necessario migrarli alla nuova posizione:</p>
     <ol>
-     <li>Copia tutti i segmenti ContextHub nuovi o modificati dalla posizione precedente alla nuova posizione appropriata (/<code>apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>)</li>
-     <li>Aggiorna i riferimenti ai segmenti ContextHub nella posizione precedente nei segmenti ContextHub migrati nelle nuove posizioni (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
+     <li>Copia i segmenti ContextHub nuovi o modificati dalla posizione precedente alla nuova posizione appropriata (/<code>apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>)</li>
+     <li>Aggiornare i riferimenti ai segmenti ContextHub nella posizione precedente ai segmenti ContextHub migrati nelle nuove posizioni (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
     </ol> <p>La query QueryBuilder seguente individua tutti i riferimenti ai segmenti ContextHub nelle posizioni precedenti.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Questa operazione può essere eseguita tramite <a href="/help/sites-developing/querybuilder-api.md" target="_blank">Interfaccia utente di Debugger di AEM QueryBuilder</a>. Tieni presente che si tratta di una query di attraversamento, pertanto non eseguirla in produzione e assicurati che i limiti di attraversamento vengano corretti in base alle esigenze.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Questa operazione può essere eseguita tramite <a href="/help/sites-developing/querybuilder-api.md" target="_blank">Interfaccia utente di QueryBuilder Debugger di AEM</a>. Tieni presente che si tratta di una query di attraversamento, pertanto non eseguirla in produzione e assicurati che i limiti di attraversamento vengano corretti in base alle esigenze.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>I segmenti ContextHub persistenti nella posizione precedente vengono visualizzati in sola lettura in <strong>AEM &gt; Personalizzazione &gt; Tipi di pubblico</strong>.</p> <p>Se i segmenti ContextHub devono essere modificabili in AEM, è necessario migrarli alla nuova posizione (<code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>). Tutti i nuovi segmenti di ContentHub creati in AEM vengono salvati nella nuova posizione (<code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p> <p>Le proprietà della pagina di AEM Sites consentono solo la posizione precedente (<code>/etc</code>) o un'unica nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>) per essere selezionato, pertanto è necessario migrare di conseguenza i segmenti ContextHub.</p> <p>Eventuali segmenti ContextHub inutilizzati dai siti di riferimento AEM possono essere rimossi e non migrati alla nuova posizione:</p>
+   <td><p>I segmenti ContextHub persistenti nella posizione precedente vengono visualizzati in sola lettura in <strong>AEM &gt; Personalization &gt; Audiences</strong>.</p> <p>Se i segmenti ContextHub devono essere modificabili in AEM, è necessario migrarli alla nuova posizione (<code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>). Tutti i nuovi segmenti ContentHub creati in AEM vengono salvati in modo permanente nel nuovo percorso (<code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p> <p>Le proprietà di pagina di AEM Sites consentono di selezionare solo la posizione precedente (<code>/etc</code>) o una singola nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>), pertanto è necessario eseguire la migrazione dei segmenti ContextHub di conseguenza.</p> <p>Eventuali segmenti ContextHub inutilizzati dai siti di riferimento AEM possono essere rimossi e non migrati alla nuova posizione:</p>
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segmentation/geometrixx-outdoors</li>
@@ -92,8 +92,8 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Qualsiasi utilizzo personalizzato di queste librerie client deve fare riferimento alla libreria client per categoria e non per percorso:</p>
     <ol>
-     <li>Eventuali riferimenti alla libreria client per percorso nel percorso precedente devono essere aggiornati per l’utilizzo <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Framework di riferimento della libreria client AEM</a>.</li>
-     <li>Se non è possibile utilizzare il framework di riferimento della libreria client AEM, è possibile fare riferimento al percorso assoluto delle librerie client tramite il servlet proxy della libreria client AEM.
+     <li>Eventuali riferimenti alla libreria client per percorso nel percorso precedente devono essere aggiornati per utilizzare il framework di riferimento della libreria client <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM</a>.</li>
+     <li>Se non è possibile utilizzare il framework di riferimento della libreria client dell’AEM, è possibile fare riferimento al percorso assoluto delle librerie client tramite il servlet proxy della libreria client dell’AEM.
       <ul>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/plugins.js</code></li>
@@ -105,7 +105,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>La modifica di queste librerie client non è mai stata supportata.</p> <p>Per ottenere le categorie della libreria client, visita ciascuna <code>cq:ClientLIbraryFolder</code> tramite CRXDELite e controlla la proprietà Categories.</p>
+   <td><p>La modifica di queste librerie client non è mai stata supportata.</p> <p>Per ottenere le categorie della libreria client, visitare ogni nodo <code>cq:ClientLIbraryFolder</code> tramite CRXDELite e controllare la proprietà delle categorie.</p>
     <ul>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/appmeasurement</code></li>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/plugins</code></li>
@@ -133,14 +133,14 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Per qualsiasi design gestito in SCM e non scritto in fase di esecuzione tramite le finestre di dialogo per progettazione.</p>
     <ol>
-     <li>Copia le progettazioni dalla posizione precedente alla nuova posizione (<code>/apps</code>).</li>
-     <li>Convertire qualsiasi risorsa CSS, JavaScript e statica nella progettazione in una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Libreria client</a> con <code>allowProxy = true</code>.</li>
+     <li>Copiare le progettazioni dal percorso precedente al nuovo percorso (<code>/apps</code>).</li>
+     <li>Convertire le risorse CSS, JavaScript e statiche nella progettazione in una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Libreria client</a> con <code>allowProxy = true</code>.</li>
      <li>Aggiornare i riferimenti alla posizione precedente nella proprietà cq:designPath.</li>
      <li>Aggiorna tutte le pagine che fanno riferimento alla posizione precedente per utilizzare la nuova categoria Libreria client (è necessario aggiornare il codice di implementazione della pagina).</li>
-     <li>Aggiorna le regole del Dispatcher AEM per consentire la distribuzione delle librerie client tramite <code>/etc.clientlibs/</code> servlet proxy</li>
+     <li>Aggiornare le regole Dispatcher AEM per consentire la distribuzione di librerie client tramite il servlet proxy <code>/etc.clientlibs/</code>.</li>
     </ol> <p>Per tutte le progettazioni che NON sono state gestite in SCM e che sono state modificate in fase di esecuzione tramite le finestre di dialogo di progettazione:</p>
     <ul>
-     <li>Non spostare i design modificabili da <code>/etc</code>.</li>
+     <li>Non spostare design modificabili da <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -166,8 +166,8 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td>Tutte le nuove configurazioni dell’emulatore di dispositivi mobili devono essere migrate alla nuova posizione.
     <ol>
-     <li>Copia le nuove configurazioni dell’emulatore di dispositivi mobili dalla posizione precedente alla nuova posizione (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Per tutte le pagine AEM Sites che dipendono da queste configurazioni dell’emulatore di dispositivi mobili, aggiorna il <span class="code">
+     <li>Copiare le nuove configurazioni dell'emulatore di dispositivi mobili dal percorso precedente al nuovo percorso (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
+     <li>Per tutte le pagine AEM Sites che dipendono da queste configurazioni dell'emulatore di dispositivi mobili, aggiorna il <span class="code"> della pagina
        <code>
         jcr
        </code>
@@ -177,13 +177,13 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>Per tutti i modelli modificabili che dipendono da queste configurazioni dell’emulatore di dispositivi mobili, aggiorna i modelli modificabili, puntando il <span class="code">
+     <li>Per tutti i modelli modificabili che dipendono da queste configurazioni dell'emulatore di dispositivi mobili, aggiorna i modelli modificabili, puntando su <span class="code">
        <code>
         cq
        </code>:
        <code>
         deviceGroups
-       </code></span> nella nuova posizione.</li>
+       </code></span> nel nuovo percorso.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -210,19 +210,19 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Nuove posizioni</strong></td>
-   <td><p><code>/apps/msm</code> (Configurazioni blueprint cliente)</p> <p><code>/libs/msm</code> (Configurazioni blueprint predefinite per Screens, Commerce)</p> </td>
+   <td><p><code>/apps/msm</code> (Configurazioni blueprint cliente)</p> <p><code>/libs/msm</code> (Configurazioni blueprint pronte all’uso per Screens, Commerce)</p> </td>
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Qualsiasi configurazione blueprint di Multi-Site Manager nuova o modificata deve essere migrata alla nuova posizione (<code>/apps</code>).</p>
+   <td><p>Qualsiasi configurazione blueprint di Multi-Site Manager nuova o modificata deve essere migrata al nuovo percorso (<code>/apps</code>).</p>
     <ol>
-     <li>Copia tutte le configurazioni blueprint di Multi-Site Manager nuove o modificate dalla posizione precedente alla nuova posizione (<code>/apps</code>).</li>
+     <li>Copiare le configurazioni blueprint di Multi-Site Manager nuove o modificate dal percorso precedente al nuovo percorso (<code>/apps</code>).</li>
      <li>Rimuovi tutte le configurazioni blueprint di Multi-Site Manager migrate dalla posizione precedente.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>Tutte le configurazioni blueprint per Multi-Site Manager fornite dall’AEM esistono nella nuova posizione in <code>/libs</code>.</p> <p>Il contenuto non fa riferimento alle configurazioni blu di Multi-Site Manager, pertanto non sono presenti riferimenti al contenuto da regolare.</p> </td>
+   <td><p>Tutte le configurazioni blueprint per Multi-Site Manager fornite dall'AEM sono presenti nella nuova posizione in <code>/libs</code>.</p> <p>Il contenuto non fa riferimento alle configurazioni blu di Multi-Site Manager, pertanto non sono presenti riferimenti al contenuto da regolare.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -243,8 +243,8 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Tutte le configurazioni di rollout di Multi-Site Manager nuove o modificate devono essere migrate alla nuova posizione.</p>
     <ol>
-     <li>Copia tutte le configurazioni di rollout di Multi-Site Manager nuove o modificate dalla posizione precedente alla nuova posizione (<code>/apps</code>).</li>
-     <li>Aggiornare tutti i riferimenti nelle pagine AEM alle configurazioni di rollout di Multi-Site Manager nella posizione precedente, per puntare alle controparti nelle nuove posizioni (<code>/libs</code> o <code>/apps</code>).</li>
+     <li>Copiare le configurazioni di rollout di Multi-Site Manager nuove o modificate dal percorso precedente al nuovo percorso (<code>/apps</code>).</li>
+     <li>Aggiornare tutti i riferimenti nelle pagine AEM alle configurazioni di rollout di Multi-Site Manager nel percorso precedente, in modo che puntino alle relative controparti nei nuovi percorsi (<code>/libs</code> o <code>/apps</code>).</li>
     </ol> <p>Rimuovi le configurazioni di rollout di Multi-Site Manager migrate dalla posizione precedente.</p> </td>
   </tr>
   <tr>
@@ -277,9 +277,9 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>Qualsiasi modello di posta elettronica di notifica eventi pagina nuovo o modificato deve essere migrato nella nuova posizione in <code>/apps</code>:</p>
+   <td><p>Qualsiasi modello di posta elettronica di notifica eventi pagina nuovo o modificato deve essere migrato nel nuovo percorso in <code>/apps</code>:</p>
     <ol>
-     <li>Copiare nella nuova posizione tutti i modelli di messaggio di notifica eventi pagina nuovi o modificati dalla posizione precedente (<code>/apps</code>).</li>
+     <li>Copiare i modelli di posta elettronica per le notifiche di eventi pagina nuovi o modificati dal percorso precedente al nuovo percorso (<code>/apps</code>).</li>
      <li>Rimuovere i modelli di posta elettronica di notifica eventi pagina migrati dalla posizione precedente.</li>
     </ol> </td>
   </tr>
@@ -299,10 +299,10 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><p><span class="code">/libs/settings/
       <code>
        wcm
-      </code>/template-types/scaffolding/scaffolding</span></p> <p><span class="code">/apps/settings/
+      </code>/tipi-modello/scaffolding/scaffolding</span></p> <p><span class="code">/apps/settings/
       <code>
        wcm
-      </code>/template-types/scaffolding/scaffolding</span></p> </td>
+      </code>/tipi-modello/scaffolding/scaffolding</span></p> </td>
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
@@ -336,7 +336,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td>Con riferimento a un non esistente <code>grid_base.less</code> Il file impedisce il funzionamento della modalità Layout dell’Editor pagina e modello e altera il layout della pagina.</td>
+   <td>Il riferimento a un file <code>grid_base.less</code> non esistente comporta il mancato funzionamento della modalità Layout dell'Editor pagina e modello e l'interruzione del layout della pagina.</td>
   </tr>
  </tbody>
 </table>
@@ -357,14 +357,14 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Per qualsiasi design gestito in SCM e non scritto in fase di esecuzione tramite le finestre di dialogo per progettazione.</p>
     <ol>
-     <li>Copia le progettazioni dalla posizione precedente alla nuova posizione (<code>/apps</code>).</li>
-     <li>Convertire qualsiasi risorsa CSS, JavaScript e statica nella progettazione in una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Libreria client</a> con <code>allowProxy = true</code>.</li>
-     <li>Aggiornare i riferimenti alla posizione precedente in <code>cq:designPath</code> proprietà tramite <strong>AEM &gt; Sites &gt; Pagine del sito personalizzate &gt; Proprietà pagina &gt; Scheda Avanzate &gt; Campo di progettazione</strong>.</li>
+     <li>Copiare le progettazioni dal percorso precedente al nuovo percorso (<code>/apps</code>).</li>
+     <li>Convertire le risorse CSS, JavaScript e statiche nella progettazione in una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Libreria client</a> con <code>allowProxy = true</code>.</li>
+     <li>Aggiornare i riferimenti alla posizione precedente nella proprietà <code>cq:designPath</code> tramite <strong>AEM &gt; Siti &gt; Pagine del sito personalizzate &gt; Proprietà pagina &gt; Scheda Avanzate &gt; Campo di progettazione</strong>.</li>
      <li>Aggiorna tutte le pagine che fanno riferimento alla posizione precedente per utilizzare la nuova categoria Libreria client (è necessario aggiornare il codice di implementazione della pagina).</li>
-     <li>Aggiorna le regole del Dispatcher AEM per consentire la distribuzione delle librerie client tramite <code>/etc.clientlibs/</code> servlet proxy</li>
+     <li>Aggiornare le regole Dispatcher AEM per consentire la distribuzione di librerie client tramite il servlet proxy <code>/etc.clientlibs/</code>.</li>
     </ol> <p>Per tutte le progettazioni che NON sono state gestite in SCM e che sono state modificate in fase di esecuzione tramite le finestre di dialogo di progettazione:</p>
     <ul>
-     <li>Non spostare i design modificabili da <code>/etc</code>.</li>
+     <li>Non spostare design modificabili da <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -423,8 +423,8 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Qualsiasi utilizzo personalizzato di queste librerie client deve fare riferimento alla libreria client per categoria e non per percorso.</p>
     <ol>
-     <li>Eventuali riferimenti alla libreria client per percorso nel percorso precedente devono essere aggiornati per l’utilizzo <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Framework di riferimento della libreria client AEM</a>.</li>
-     <li>Se non è possibile utilizzare il framework di riferimento della libreria client AEM, è possibile fare riferimento al percorso assoluto delle librerie client tramite il servlet proxy della libreria client AEM:</li>
+     <li>Eventuali riferimenti alla libreria client per percorso nel percorso precedente devono essere aggiornati per utilizzare il framework di riferimento della libreria client <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM</a>.</li>
+     <li>Se non è possibile utilizzare il framework di riferimento della libreria client dell’AEM, è possibile fare riferimento al percorso assoluto delle librerie client tramite il servlet proxy della libreria client dell’AEM:</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/testandtarget.js</code></li>
@@ -468,8 +468,8 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Qualsiasi utilizzo personalizzato di queste librerie client deve fare riferimento alla libreria client per categoria e non per percorso.</p>
     <ol>
-     <li>Eventuali riferimenti alla libreria client per percorso nel percorso precedente devono essere aggiornati per l’utilizzo <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Framework di riferimento della libreria client AEM</a>.</li>
-     <li>Se non è possibile utilizzare il framework di riferimento della libreria client AEM, è possibile fare riferimento al percorso assoluto delle librerie client tramite il servlet proxy della libreria client AEM.</li>
+     <li>Eventuali riferimenti alla libreria client per percorso nel percorso precedente devono essere aggiornati per utilizzare il framework di riferimento della libreria client <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM</a>.</li>
+     <li>Se non è possibile utilizzare il framework di riferimento della libreria client dell’AEM, è possibile fare riferimento al percorso assoluto delle librerie client tramite il servlet proxy della libreria client dell’AEM.</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/wcm/foundation/clientlibs/accessibility.css</code></li>
@@ -479,7 +479,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>La modifica di queste librerie client non è mai stata supportata.</p> <p>Per ottenere le categorie della libreria client, visita ciascuna <code>cq:ClientLIbraryFolder</code> tramite CRXDELite ed esamina la proprietà Categories:</p>
+   <td><p>La modifica di queste librerie client non è mai stata supportata.</p> <p>Per ottenere le categorie della libreria client, visitare ogni nodo <code>cq:ClientLIbraryFolder</code> tramite CRXDELite e controllare la proprietà delle categorie:</p>
     <ul>
      <li><code>/libs/wcm/foundation/clientlibs/accessibility</code></li>
      <li><code>/libs/wcm/foundation/clientlibs/main</code></li>

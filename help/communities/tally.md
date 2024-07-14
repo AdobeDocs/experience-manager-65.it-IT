@@ -22,11 +22,11 @@ Tally è una classe astratta che fornisce un metodo standard per raccogliere fee
 
 È possibile creare un componente tally personalizzato estendendo la classe tally astratta.
 
-[Mi piace](essentials-liking.md) è un&#39;implementazione del conteggio che è una semplice forma di esprimere un parere positivo.
+[Mi piace](essentials-liking.md) è un&#39;implementazione di conteggio che è una semplice forma di esprimere un parere positivo.
 
-[Votazione](essentials-voting.md) è un&#39;implementazione di conteggio che è una semplice forma di esprimere un parere positivo o negativo.
+[Votare](essentials-voting.md) è un&#39;implementazione del conteggio che è una semplice forma di esprimere un parere positivo o negativo.
 
-[Valutazione](rating-basics.md) è un&#39;implementazione di tally che utilizza un sistema a stella per esprimere una serie di opinioni da positive a negative.
+[La valutazione](rating-basics.md) è un&#39;implementazione di tally che utilizza un sistema a stella per esprimere una serie di opinioni da positive a negative.
 
 A partire da AEM 6.1, la componente sondaggio non è più disponibile.
 
@@ -38,24 +38,24 @@ A partire da AEM 6.1, la componente sondaggio non è più disponibile.
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Punti finali conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoint conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
 ### Accesso alle tabelle pubblicate (UGC) {#accessing-posted-tallies-ugc}
 
 Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Vedere [Moderazione del contenuto generato dall&#39;utente](moderate-ugc.md).
 
-A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell&#39;UGC nell&#39;archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
-* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi ed esempi dell&#39;utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.
+* [Refactoring di SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti ai metodi di utilità SRP correnti.

@@ -26,10 +26,10 @@ Di seguito sono riportati i passaggi per avviare un nuovo processo dai dati di p
 
    * In Tracciamento fare clic sull&#39;istanza di processo di cui si desidera utilizzare i dati. Nella visualizzazione Cronologia processi del riquadro di destra fare clic sulla riga di attività corrispondente al punto iniziale.
    * In Tracciamento, selezionare un modello di ricerca per visualizzare un elenco di istanze di processo. Seleziona l’istanza di cui desideri utilizzare i dati.
-   * In **[!UICONTROL Da fare]** , selezionare l&#39;attività. Fai clic su **[!UICONTROL Cronologia]** e selezionare il task che ha avviato l&#39;istanza del processo.
+   * Nella scheda **[!UICONTROL Da fare]**, seleziona l&#39;attività. Fare clic sulla scheda **[!UICONTROL Cronologia]** e selezionare l&#39;attività che ha avviato l&#39;istanza del processo.
 
-   ![Seleziona l’attività](assets/start3_new.png) ![Seleziona l’attività](assets/start1_new.png)
+   ![Seleziona l&#39;attività](assets/start3_new.png) ![Seleziona l&#39;attività](assets/start1_new.png)
 
 1. Nella barra degli strumenti Azione attività fare clic su **[!UICONTROL Inizio]**. Viene visualizzato un modulo adattivo per la nuova istanza di processo con dati precompilati.
 
-1. Aggiorna i dati in base alle esigenze e fai clic su **[!UICONTROL Completa]** o un pulsante appropriato sul modulo.
+1. Aggiornare i dati in base alle esigenze e fare clic su **[!UICONTROL Completa]** o su un pulsante appropriato nel modulo.

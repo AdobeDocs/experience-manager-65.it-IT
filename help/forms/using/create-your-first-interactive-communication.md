@@ -27,7 +27,7 @@ Questo tutorial fornisce un framework end-to-end per creare una comunicazione in
 
 L’immagine seguente illustra i blocchi predefiniti necessari per creare una comunicazione interattiva.
 
-![workflow](assets/workflow.gif)
+![flusso di lavoro](assets/workflow.gif)
 
 Al termine di questa esercitazione, sarai in grado di:
 
@@ -48,9 +48,9 @@ Un operatore di telecomunicazioni invia fatture mensili ai clienti tramite e-mai
 ## Prerequisiti {#prerequisites}
 
 * Configura un’istanza di authoring AEM.
-* Installa [Componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) sull’istanza di authoring
+* Installa il componente aggiuntivo [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) nell&#39;istanza di authoring
 * Configurare il database MYSQL
-* Ottenere il driver del database JDBC (file JAR) dal provider del database. Gli esempi del tutorial si basano sul database MySQL e utilizzano Oracle [Driver di database MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Ottenere il driver del database JDBC (file JAR) dal provider del database. Gli esempi contenuti nell&#39;esercitazione sono basati sul database MySQL e utilizzano il driver di database JDBC [MySQL di Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Passaggio 1: pianificare la comunicazione interattiva {#step-plan-the-interactive-communication}
 
@@ -74,7 +74,7 @@ Per creare un&#39;anatomia per la comunicazione interattiva con le seguenti moda
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modello per dati modulo consente di collegare una comunicazione interattiva per utilizzare origini dati diverse. Ad esempio, profilo utente AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare i dati dalle origini dati connesse. Per ulteriori informazioni sul modello dati del modulo, consulta [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md).
+Un modello per dati modulo consente di collegare una comunicazione interattiva per utilizzare origini dati diverse. Ad esempio, profilo utente AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare i dati dalle origini dati connesse. Per ulteriori informazioni sul modello dati modulo, vedere [Integrazione dati AEM Forms](/help/forms/using/data-integration.md).
 
 **Obiettivi:**
 
@@ -140,7 +140,7 @@ Le comunicazioni interattive possono essere distribuite attraverso due canali: s
 
 [](/help/forms/using/create-interactive-communication0.md)
 
-## Passaggio 6: pubblicare la comunicazione interattiva {#step-publish-your-interactive-communication}
+## Passaggio 6: Publish la tua comunicazione interattiva {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

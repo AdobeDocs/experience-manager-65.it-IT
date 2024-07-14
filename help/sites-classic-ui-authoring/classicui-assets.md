@@ -18,7 +18,7 @@ ht-degree: 7%
 
 # Utilizzo delle risorse{#working-with-assets}
 
-Il [Ambiente e strumenti di authoring](/help/sites-authoring/author-environment-tools.md) fornisce informazioni sull’utilizzo di [!UICONTROL Content Finder] per trovare e utilizzare le risorse durante la modifica delle pagine. AEM Assets fornisce altri metodi per lavorare con le risorse:
+La sezione [Strumenti e ambiente di authoring](/help/sites-authoring/author-environment-tools.md) fornisce informazioni sull&#39;utilizzo di [!UICONTROL Content Finder] per trovare e utilizzare le risorse durante la modifica delle pagine. AEM Assets fornisce altri metodi per lavorare con le risorse:
 
 * [Aggiunta di funzioni di Dynamic Media Classic alla pagina](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Utilizzo di Dynamic Medie](/help/sites-classic-ui-authoring/dynamic-media-assets.md)

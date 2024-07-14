@@ -25,27 +25,27 @@ Un punto iniziale richiama un processo creato in Workbench. È associata a un mo
 >
 >I termini punti iniziali, processo iniziale e modulo vengono utilizzati in modo intercambiabile quando si fa riferimento a questo concetto.
 
-Per avviare un processo dall’app Forms di Adobe Experience Manager (AEM), è necessario disporre di un punto d’inizio di tipo **Workspace** nel processo. Inoltre, è necessario selezionare **[!UICONTROL Visibile in Mobile Workspace]** per il punto d&#39;inizio.
+Per avviare un processo dall&#39;app Forms di Adobe Experience Manager (AEM), è necessario che nel processo sia presente un punto d&#39;inizio di tipo **Workspace**. È inoltre necessario selezionare l&#39;opzione **[!UICONTROL Visibile in Mobile Workspace]** per il punto iniziale.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Per avviare un processo definito in Workbench**
 
-1. Per visualizzare i punti d&#39;inizio disponibili nell&#39;app AEM Forms, vai a [Schermata iniziale](../../forms/using/home-screen.md).
-1. Il giorno **[!UICONTROL Home]** schermata, per impostazione predefinita, la **[!UICONTROL Tutti i Forms]** viene visualizzato l&#39;elenco.
+1. Per visualizzare i punti iniziali disponibili nell&#39;app AEM Forms, vai alla [schermata iniziale](../../forms/using/home-screen.md).
+1. Nella schermata **[!UICONTROL Home]**, per impostazione predefinita, viene visualizzato l&#39;elenco **[!UICONTROL All Forms]**.
 
    Il punto iniziale è associato a un modulo. Selezionare il modulo associato al punto d&#39;inizio nell&#39;elenco per aprirlo.
 
    Viene aperto il modulo associato al punto d&#39;inizio.
 
-1. Inserisci i dettagli in **[!UICONTROL Punto d&#39;inizio]** modulo.
+1. Immetti i dettagli nel modulo **[!UICONTROL Startpoint]**.
 
-   È possibile aggiungere annotazioni a questa attività utilizzando [allegato](../../forms/using/add-attachments.md) pulsante.
+   Puoi aggiungere annotazioni a questa attività utilizzando il pulsante [allegato](../../forms/using/add-attachments.md).
 
-1. Dopo aver compilato il modulo, selezionare **[!UICONTROL Invia]** pulsante.
+1. Dopo aver compilato il modulo, seleziona il pulsante **[!UICONTROL Invia]**.
 
 Se l&#39;app non è in linea, il modulo e i relativi dati vengono salvati nella cartella Posta in uscita.
 
 Se l&#39;app è online, l&#39;attività viene sincronizzata con il server AEM Forms e assegnata all&#39;utente specificato nel processo.
 
-Per utilizzare l&#39;attività nell&#39;elenco delle attività, vedere [Apertura di un’attività](/help/forms/using/open-task.md).
+Per utilizzare l&#39;attività nell&#39;elenco delle attività, vedere [Apertura di un&#39;attività](/help/forms/using/open-task.md).

@@ -32,7 +32,7 @@ Per collegare un sito AEM e i componenti core CIF dell’AEM a una visualizzazio
 
 ## Configurazione {#configuration}
 
-1. Configura più store e viste store in base al pattern descritto in [Siti Web, store e visualizzazioni di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. Configura più store e viste store in base al pattern descritto in [Siti Web, store e viste di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. Assicurati che la connessione tra AEM e Adobe Commerce funzioni.
 
@@ -51,10 +51,10 @@ Per collegare un sito AEM e i componenti core CIF dell’AEM a una visualizzazio
 4. Assegnare la configurazione figlio a un sito AEM
 
    * Passa alla console AEM Sites
-   * Passa alla directory principale dell’area geografica o della lingua della struttura del sito, ad esempio, /content/venia/us _o_ /content/venia/us/it per la pagina di esempio di Venia
+   * Passa alla directory principale dell’area geografica o della lingua della struttura del sito; ad esempio, per la pagina di esempio di Venia: /content/venia/us _or_ /content/venia/us/it
    * Seleziona la pagina e apri le proprietà della pagina
    * Seleziona la scheda Avanzate.
-   * In `Configuration` sezione, seleziona la configurazione creata al passaggio
+   * Nella sezione `Configuration`, seleziona la configurazione creata al passaggio
 
 ## Risorse aggiuntive
 

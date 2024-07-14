@@ -18,7 +18,7 @@ ht-degree: 9%
 
 # Prova del layout dinamico in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Tutte le pagine We.Retail utilizzano il componente Contenitore di layout per implementare una progettazione reattiva. Il contenitore layout fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme al **Layout** nell’editor pagina, che consente di creare e modificare il layout dinamico a seconda del dispositivo.
+Tutte le pagine We.Retail utilizzano il componente Contenitore di layout per implementare una progettazione reattiva. Il contenitore layout fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme alla modalità **Layout** nell&#39;editor pagina, che consente di creare e modificare il layout dinamico in base al dispositivo.
 
 ## Prova {#trying-it-out}
 
@@ -26,7 +26,7 @@ Tutte le pagine We.Retail utilizzano il componente Contenitore di layout per imp
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Passa a **Anteprima** per visualizzare la pagina così come verrebbe sottoposta a rendering per un visitatore del sito web. Scorri verso il basso fino al contenuto dell’articolo *Aloha spirits nella Norvegia settentrionale*.
+1. Passa a **Anteprima** per visualizzare la pagina così come verrebbe visualizzata da un visitatore del sito Web. Scorri verso il basso fino al contenuto dell&#39;articolo *Aloha spirits in Norther Norway*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -46,4 +46,4 @@ Tutte le pagine We.Retail utilizzano il componente Contenitore di layout per imp
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni, consulta il documento di authoring [Layout reattivo](/help/sites-authoring/responsive-layout.md) o il documento dell’amministratore [Configurazione del contenitore di layout e della modalità layout](/help/sites-administering/configuring-responsive-layout.md) per dettagli tecnici completi.
+Per ulteriori informazioni, vedere il documento di creazione [Layout reattivo](/help/sites-authoring/responsive-layout.md) o il documento dell&#39;amministratore [Configurazione del contenitore di layout e della modalità di layout](/help/sites-administering/configuring-responsive-layout.md) per informazioni tecniche complete.

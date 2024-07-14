@@ -40,7 +40,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| simultaneo | [Simultaneo](#concurrent) (Dominio pubblico) |
+| simultaneo | [Simultaneo](#concurrent) (dominio pubblico) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -59,12 +59,12 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (contiene parti coperte da licenze di dominio pubblico e software W3C) |
+| xml-apis | [Apache](#apache) (contiene parti coperte da licenze software di dominio pubblico e W3C) |
 | XmlSchema | [Apache](#apache) |
 
-## Panoramica delle librerie di terze parti CRX {#overview-of-crx-rd-party-libraries}
+## Panoramica delle librerie di terze parti di CRX {#overview-of-crx-rd-party-libraries}
 
-Nella tabella seguente sono elencate le librerie di terze parti utilizzate in CRX, insieme alle licenze, alle note sul copyright o alle esclusioni di responsabilità per cui sono coperte:
+Nella tabella seguente sono elencate le librerie di terze parti utilizzate in CRX, insieme alle licenze, alle note sul copyright o alle liberatorie a cui si riferiscono:
 
 <table>
  <colgroup>

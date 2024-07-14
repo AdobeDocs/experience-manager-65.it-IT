@@ -19,7 +19,7 @@ Per iniziare a utilizzare Contenuto AEM e Commerce, è necessario installare il 
 
 ## Requisiti minimi del software
 
-[AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) 7 o versione successiva.
+È richiesto [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) 7 o versione successiva.
 
 ## Onboarding {#onboarding}
 
@@ -31,7 +31,7 @@ L’onboarding per contenuti AEM e Commerce è un processo in due fasi:
 
 ### Installare il componente aggiuntivo AEM Content and Commerce per AEM 6.5 {#install-add-on}
 
-AEM Scarica e installa il componente aggiuntivo Commerce per AEM 6.5 da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) portale.
+Scarica e installa il componente aggiuntivo Commerce AEM per AEM 6.5 dal portale [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
 
 Avviare e installare il Service Pack di AEM 6.5 richiesto. È consigliabile installare l&#39;ultimo service pack disponibile.
 
@@ -45,17 +45,17 @@ L&#39;AEM può essere connesso a qualsiasi sistema commerciale che abbia un endp
 
 In alternativa, è possibile fornire un’intestazione di autenticazione per utilizzare funzioni CIF aggiuntive che richiedono l’autenticazione.
 
-Progetti generati da [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype)e [Negozio di riferimento AEM Venia](https://github.com/adobe/aem-cif-guides-venia) che è già incluso nel [configurazione predefinita](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) deve essere regolato.
+I progetti generati da [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) e [Archivio riferimento Venia AEM](https://github.com/adobe/aem-cif-guides-venia) già inclusi nella [configurazione predefinita](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) devono essere regolati.
 
-Sostituisci il valore di `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` con l’endpoint GraphQL del sistema commerce. Questa configurazione può essere eseguita tramite la console OSGI o distribuendo la configurazione OSGI tramite il progetto. Sono supportate diverse configurazioni per i sistemi di staging e produzione utilizzando diverse modalità di esecuzione dell’AEM.
+Sostituisci il valore di `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` con l&#39;endpoint GraphQL del tuo sistema commerce. Questa configurazione può essere eseguita tramite la console OSGI o distribuendo la configurazione OSGI tramite il progetto. Sono supportate diverse configurazioni per i sistemi di staging e produzione utilizzando diverse modalità di esecuzione dell’AEM.
 
-I componenti core Contenuto AEM e Componente aggiuntivo Commerce e CIF utilizzano connessioni lato server e client AEM. Per impostazione predefinita, i componenti core CIF lato client e gli strumenti di creazione di componenti aggiuntivi CIF si connettono a `/api/graphql`. Se necessario, questo può essere regolato tramite la configurazione del Cloud Service CIF (vedi sotto).
+I componenti core Contenuto AEM e Componente aggiuntivo Commerce e CIF utilizzano connessioni lato server e client AEM. Per impostazione predefinita, i componenti core CIF lato client e gli strumenti di creazione del componente aggiuntivo CIF si connettono a `/api/graphql`. Se necessario, questo può essere regolato tramite la configurazione del Cloud Service CIF (vedi sotto).
 
-Il componente aggiuntivo CIF fornisce un servlet proxy di GraphQL all&#39;indirizzo `/api/graphql` che possono essere facoltativamente utilizzati per [sviluppo locale](develop.md). Per le distribuzioni in produzione, si consiglia vivamente di impostare un proxy inverso all’endpoint commerce GraphQL tramite il Dispatcher dell’AEM o ad altri livelli di rete (come CDN).
+Il componente aggiuntivo CIF fornisce un servlet proxy GraphQL in `/api/graphql` che può essere utilizzato facoltativamente per [lo sviluppo locale](develop.md). Per le distribuzioni in produzione, si consiglia vivamente di impostare un proxy inverso all’endpoint commerce GraphQL tramite il Dispatcher dell’AEM o ad altri livelli di rete (come CDN).
 
 ## Configurazione di store e cataloghi {#catalog}
 
-Il componente aggiuntivo e [Componenti core CIF](https://github.com/adobe/aem-core-cif-components) può essere utilizzato su più strutture di siti AEM collegate a diversi store commerciali (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si connette all’archivio e al catalogo predefiniti di Adobe Commerce.
+Il componente aggiuntivo e i [componenti core CIF](https://github.com/adobe/aem-core-cif-components) possono essere utilizzati in più strutture di siti AEM connesse a diversi store commerce (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si connette all’archivio e al catalogo predefiniti di Adobe Commerce.
 
 Questa configurazione può essere regolata per il progetto tramite la configurazione del Cloud Service CIF seguendo questi passaggi:
 
@@ -91,7 +91,7 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 
 La configurazione mostrata sopra è a scopo di riferimento. I progetti devono fornire le proprie configurazioni.
 
-Per configurazioni più complesse che utilizzano più strutture di siti AEM combinate con diversi cataloghi di e-commerce, vedi [Configurazione di Commerce Multi-Store](configuring/multi-store-setup.md) esercitazione.
+Per impostazioni più complesse che utilizzano più strutture di siti AEM combinate con diversi cataloghi di e-commerce, vedere l&#39;esercitazione [Configurazione di più store di Commerce](configuring/multi-store-setup.md).
 
 ## Risorse aggiuntive {#additional-resources}
 

@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # Anteprima di un modulo {#previewing-a-form}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Panoramica {#overview}
 
@@ -30,7 +30,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
 <table>
  <tbody>
   <tr>
-   <td><strong>Tipo di risorsa</strong><br /> </td>
+   <td><strong>Tipo risorsa</strong><br /> </td>
    <td><strong>Opzioni di anteprima disponibili</strong><br /> </td>
   </tr>
   <tr>
@@ -39,7 +39,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
   </tr>
   <tr>
    <td>Modulo PDF</td>
-   <td>Anteprima e anteprima PDF con i dati<br /> </td>
+   <td>Anteprima e anteprima PDF con dati<br /> </td>
   </tr>
   <tr>
    <td>modulo adattivo</td>
@@ -54,11 +54,11 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
 
 ## Anteprima di un modulo {#previewing-a-form-1}
 
-1. Seleziona una risorsa da visualizzare in anteprima e fai clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) nella barra delle azioni.
+1. Seleziona una risorsa da visualizzare in anteprima e fai clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) nella barra degli strumenti delle azioni.
 
    >[!NOTE]
    >
-   >Per selezionare una risorsa, passa alla vista a elenco dalla vista a schede predefinita. Clic ![aem6forms_viewlist](assets/aem6forms_viewlist.png) o ![aem6forms_viewcard](assets/aem6forms_viewcard.png) per cambiare visualizzazione.
+   >Per selezionare una risorsa, passa alla vista a elenco dalla vista a schede predefinita. Fai clic su ![aem6forms_viewlist](assets/aem6forms_viewlist.png) o ![aem6forms_viewcard](assets/aem6forms_viewcard.png) per cambiare visualizzazione.
 
 1. Facendo clic su Anteprima vengono elencate le possibili opzioni di anteprima applicabili al tipo di risorsa selezionato. Fai clic sull’opzione desiderata per eseguire il rendering della risorsa selezionata in una nuova scheda.
 
@@ -70,7 +70,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
 
 ## Anteprima con i dati {#preview-with-data}
 
-Quando selezioni **Anteprima con dati**, è possibile visualizzare l&#39;aspetto del modulo con i dati reali immessi. L’opzione Anteprima con dati consente di caricare un XML che contiene dati utente di esempio. I dati utente di esempio vengono utilizzati per compilare il modulo di anteprima nel formato scelto.
+Quando si seleziona **Anteprima con dati**, è possibile visualizzare l&#39;aspetto del modulo con i dati effettivi immessi. L’opzione Anteprima con dati consente di caricare un XML che contiene dati utente di esempio. I dati utente di esempio vengono utilizzati per compilare il modulo di anteprima nel formato scelto.
 
-1. Seleziona una risorsa e fai clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png), e seleziona **Anteprima con dati**.
+1. Seleziona una risorsa, fai clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) e seleziona **Anteprima con dati**.
 1. Nella finestra di dialogo Anteprima modulo, specificare FormData come file XML. Fare clic su Anteprima per eseguire il rendering del modulo con i dati uniti da XML.

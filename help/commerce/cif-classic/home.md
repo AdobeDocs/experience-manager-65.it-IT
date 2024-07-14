@@ -22,7 +22,7 @@ In questa pagina sono elencate le risorse di supporto autonomo relative a AEM CI
 >CIF Classic è in modalità di manutenzione.
 >
 >* I nuovi progetti devono utilizzare [CIF AEM](/help/commerce/cif/introduction.md).
->* Gli attuali CIF Classic dovrebbero [migrare all’AEM CIF](/help/commerce/cif/migration.md).
+>* L&#39;CIF Classic esistente dovrebbe [migrare all&#39;AEM CIF](/help/commerce/cif/migration.md).
 
 ## Articoli principali su CIF Classic {#key-articles}
 

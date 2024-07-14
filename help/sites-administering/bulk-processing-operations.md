@@ -16,13 +16,13 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Con la versione più recente di Adobe Experience Manager (AEM), il pulsante Seleziona tutto è stato esteso a tutte le visualizzazioni: Elenco, Colonna e Scheda. Il pulsante Seleziona tutto ora seleziona tutto il contenuto di una determinata cartella o raccolta e non solo le risorse e le pagine caricate e visibili nel browser client.
+Con la versione più recente di Adobe Experience Manager (AEM), il pulsante Seleziona tutto è stato esteso a tutte le visualizzazioni: Elenco, Colonna e Scheda. Il pulsante Seleziona tutto ora seleziona tutto il contenuto di una determinata cartella o raccolta e non solo l’Assets e le pagine caricate e visibili nel browser client.
 
-Le azioni chiave sono state abilitate per l&#39;operazione in blocco: **Sposta**, **Elimina**, e **Copia**. Una nuova finestra di dialogo consente ai clienti di sapere per quali azioni l’elaborazione in blocco non è disponibile.
+Le azioni chiave sono state abilitate per l&#39;operazione in blocco: **Sposta**, **Elimina** e **Copia**. Una nuova finestra di dialogo consente ai clienti di sapere per quali azioni l’elaborazione in blocco non è disponibile.
 
 ## Come Usare {#how-to-use}
 
-Un nuovo pulsante denominato **Seleziona tutto** è stato aggiunto alle viste Scheda, Elenco o Colonna. Questo pulsante può essere utilizzato in una qualsiasi delle viste per selezionare tutti gli elementi del set di dati.
+Un nuovo pulsante denominato **Seleziona tutto** è stato aggiunto alle viste a schede, a elenco o a colonne. Questo pulsante può essere utilizzato in una qualsiasi delle viste per selezionare tutti gli elementi del set di dati.
 
 Nelle versioni precedenti di AEM, la selezione limitava ciò che veniva caricato nel browser client. Questa nuova modifica è stata introdotta per evitare confusione riguardo al numero di elementi su cui viene eseguita un’operazione in blocco.
 
@@ -30,10 +30,10 @@ Per il momento, sono state aggiunte tre operazioni all’elaborazione in blocco:
 
 * Sposta
 * Copia
-* Eliminare
+* Elimina
 
 In futuro verrà aggiunto il supporto per ulteriori operazioni.
-Per utilizzare questa funzione, accedi alla cartella o raccolta in cui desideri eseguire l’operazione collettiva su Pagine o Risorse.
+Per utilizzare questa funzione, accedi alla cartella o raccolta in cui desideri eseguire l’operazione collettiva su Pages o Assets.
 
 Quindi, scegliete una delle viste, come illustrato di seguito:
 
@@ -43,38 +43,38 @@ Quindi, scegliete una delle viste, come illustrato di seguito:
 
 ### Selezione di massa nella vista a schede {#bulk-selection-in-card-view}
 
-È possibile selezionare risorse o pagine in blocco utilizzando **Seleziona tutto** pulsante in alto a destra:
+Assets o Pages possono essere selezionati in blocco utilizzando il pulsante **Seleziona tutto** in alto a destra:
 
-![Seleziona Tutto, nell’angolo superiore destro della Vista a schede.](assets/doi.png) ![Tutte le miniature delle risorse immagini nella Vista a schede vengono visualizzate come selezionate con segni di spunta.](assets/trei.png)
+![Pulsante Seleziona tutto nell&#39;angolo superiore destro della Vista a schede.](assets/doi.png) ![Tutte le miniature delle risorse immagini nella vista a schede sono visualizzate come selezionate con segni di spunta.](assets/trei.png)
 
-### Vista a elenco  {#list-view}
+### Vista a elenco {#list-view}
 
 Lo stesso vale per la vista a elenco:
 
-![Viene evidenziata l&#39;opzione Seleziona tutto nell&#39;angolo superiore destro della Vista elenco.](assets/patru_modified.png)
+![L&#39;opzione Seleziona tutto nell&#39;angolo superiore destro della visualizzazione elenco è evidenziata.](assets/patru_modified.png)
 
 ### Selezione in blocco nella vista a elenco {#bulk-selection-in-list-view}
 
-Nella Vista a elenco, utilizza **Seleziona tutto** oppure utilizzare la casella di controllo a sinistra per la selezione in serie.
+In Vista a elenco, utilizzare il pulsante **Seleziona tutto** oppure la casella di controllo a sinistra per la selezione in blocco.
 
-![La Vista live mostra le miniature e le immagini delle risorse delle immagini e viene visualizzata in righe orizzontali.](assets/cinci.png) ![Casella di riepilogo che mostra le miniature e le immagini delle risorse immagine e una casella di controllo a sinistra di Nome.](assets/sase.png)
+![La visualizzazione in tempo reale mostra le miniature e le immagini delle risorse immagine e viene visualizzata in righe orizzontali.](assets/cinci.png) ![Casella di riepilogo con miniature e immagini delle risorse immagine e una casella di controllo a sinistra di Nome.](assets/sase.png)
 
 ### Vista a colonne {#column-view}
 
-![La Vista a colonne mostra le miniature delle risorse di immagini visualizzate in colonne verticali.](assets/sapte.png)
+![Vista a colonne con miniature delle risorse di immagini visualizzate in colonne verticali.](assets/sapte.png)
 
 ### Selezione in blocco nella vista a colonne {#bulk-selection-in-column-view}
 
-![Tutte le miniature delle risorse immagini nella Vista a colonne vengono visualizzate come selezionate con segni di spunta.](assets/opt.png)
+![Tutte le miniature delle risorse immagini nella Vista a colonne sono visualizzate come selezionate con segni di spunta.](assets/opt.png)
 
 ## Operazioni abilitate in blocco {#bulk-enabled-operations}
 
 Dopo la selezione, è possibile eseguire una delle tre azioni abilitate in blocco: **Sposta**, **Copia** o **Elimina**.
 
-Qui, **Sposta** L&#39;operazione viene eseguita sulle risorse selezionate sopra. In una qualsiasi delle visualizzazioni, questo determina lo spostamento di tutte le risorse nella posizione scelta e non solo di quelle caricate sullo schermo.
+In questo caso, l&#39;operazione **Sposta** viene eseguita sull&#39;Assets selezionato in precedenza. In una qualsiasi delle visualizzazioni, questo fa sì che tutti gli Assets vengano spostati nella posizione scelta e non solo quelli caricati sullo schermo.
 
 ![Sposta le risorse mostrando una cartella selezionata nella Vista a colonne.](assets/noua.png)
 
-Per altre operazioni che non sono abilitate in blocco, come **Download,** viene visualizzato un avviso che indica che nell’operazione sono inclusi solo gli elementi caricati nel browser.
+Per altre operazioni che non sono abilitate in blocco, come **Download,** viene visualizzato un avviso che indica che solo gli elementi caricati nel browser sono inclusi nell&#39;operazione.
 
-![La vista Risorse mostra le risorse immagine selezionate e la finestra di dialogo a comparsa &quot;Azione di massa non supportata&quot;.](assets/zece.png)
+![Visualizzazione Assets con le risorse immagine selezionate e la finestra di dialogo a comparsa &quot;Azione collettiva non supportata&quot;.](assets/zece.png)

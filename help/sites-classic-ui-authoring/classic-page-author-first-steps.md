@@ -18,13 +18,13 @@ ht-degree: 7%
 
 # Primi passaggi per gli autori{#first-steps-for-authors}
 
-Questa sezione offre una panoramica delle attività principali che verranno utilizzate quando [avvio dell’authoring dei contenuti](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager (AEM).
+Questa sezione offre una panoramica delle attività principali che verranno utilizzate quando [inizierai a creare contenuti](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager (AEM).
 
 Esso comprende:
 
 * [Guida introduttiva](#getting-started): descrive la sequenza di base degli eventi necessari per creare e pubblicare la prima pagina.
 
-* [Ulteriori azioni](#further-actions): proseguendo con le molte altre azioni che puoi utilizzare durante l’authoring.
+* [Altre azioni](#further-actions): di seguito sono riportate tutte le altre azioni che è possibile utilizzare durante l&#39;authoring.
 
 ## Guida introduttiva {#getting-started}
 
@@ -32,19 +32,19 @@ Questi descrivono la sequenza di base degli eventi necessari per creare e pubbli
 
 ### Navigazione alla posizione della pagina {#navigating-to-the-page-location}
 
-Il contenuto del sito web si trova in una struttura ad albero. Per creare o modificare una pagina è necessario passare alla posizione con il [Console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#navigating-with-the-websites-console).
+Il contenuto del sito web si trova in una struttura ad albero. Per creare o modificare una pagina è necessario passare alla posizione con la [console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#navigating-with-the-websites-console).
 
 ### Creazione di una nuova pagina {#creating-a-new-page}
 
-Prima di apportare modifiche, è necessario [creare una pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+Prima di modificare, devi [creare una pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
 ### Apertura di una pagina {#opening-a-page}
 
-Per molte azioni, come la modifica, è necessario: [aprire una pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
+Per molte azioni, ad esempio la modifica, è necessario [aprire una pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
 ### Modifica di una pagina {#editing-a-page}
 
-Puoi specificare se la tua istanza contiene già pagine esistenti o se hai creato personalmente una nuova pagina [modificare una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) da:
+Se la tua istanza ha già pagine esistenti o hai creato una nuova pagina da solo, puoi [modificare una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md):
 
 * [Inserimento di un componente (paragrafo)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Modifica di un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)
@@ -52,13 +52,13 @@ Puoi specificare se la tua istanza contiene già pagine esistenti o se hai creat
 * [Eliminazione di un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#deleting-a-component)
 * [Tagliare, copiare e incollare un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
-* [Utilizzo della modalità Anteprima](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (per vedere come apparirà quando sarà pubblicato)
+* [Utilizzo della modalità Anteprima](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (per vedere come apparirà quando verrà pubblicato)
 * [Blocco di una pagina  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Sblocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Pubblicazione di una pagina {#publishing-a-page}
 
-Una volta completata la modifica della pagina, [pubblicare (o attivare) la pagina](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) in modo che sia disponibile ai visitatori del tuo sito web.
+Dopo aver modificato la pagina, [pubblica (o attiva) la pagina](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) in modo che sia disponibile per i visitatori del sito Web.
 
 ## Ulteriori azioni {#further-actions}
 
@@ -66,28 +66,28 @@ Oltre ai passaggi di base, durante l’authoring sono disponibili molte altre az
 
 ### Copiare una pagina {#copying-a-page}
 
-Talvolta è più facile [copiare una pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#copying-and-pasting-a-page) e riutilizzare il contenuto anziché ricreare tutto da zero.
+A volte è più semplice [copiare una pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#copying-and-pasting-a-page) e riutilizzare il contenuto, anziché ricreare tutto da zero.
 
 ### Spostamento o ridenominazione di una pagina {#moving-or-renaming-a-page}
 
-[Spostamento e ridenominazione di pagine](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page) viene sostanzialmente eseguito con la stessa azione.
+[Lo spostamento e la ridenominazione delle pagine](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page) viene eseguito essenzialmente con la stessa azione.
 
 ### Annullamento della pubblicazione di una pagina {#unpublishing-a-page}
 
-Per rendere non disponibili sul sito web pubblico i contenuti pubblicati in precedenza (o attivati), devi: [annullare la pubblicazione (o disattivare) della pagina](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
+Per rendere il contenuto precedentemente pubblicato (o attivato) non disponibile sul sito Web pubblico, [annullare la pubblicazione (o disattivare) della pagina](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
 
 ### Eliminazione di una pagina {#deleting-a-page}
 
-Se una pagina non è più necessaria, è possibile [elimina la pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#deleting-a-page).
+Se una pagina non è più necessaria, [eliminare la pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#deleting-a-page).
 
 ### Impostazione delle proprietà della pagina {#setting-the-page-properties}
 
-Ogni [la pagina ha proprietà](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) che puoi definire per determinarne gli aspetti operativi.
+Ogni [pagina ha proprietà](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) che puoi definire per determinarne gli aspetti operativi.
 
 ### Creazione di una versione di una pagina {#creating-a-version-of-a-page}
 
-È possibile [creare una versione di una pagina](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) e poi [ripristina una versione](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) se necessario.
+Puoi [creare una versione di una pagina](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) e quindi [ripristinare una versione](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) se necessario.
 
 ## Ulteriori informazioni {#more-information}
 
-Per accedere a ulteriori informazioni sull’authoring, consulta [Authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author.md) e [Utilizzo dell’ambiente di authoring](/help/sites-classic-ui-authoring/author-env.md).
+Per ulteriori informazioni sull&#39;authoring, accedere a [Authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author.md) e [Utilizzo dell&#39;ambiente di authoring](/help/sites-classic-ui-authoring/author-env.md).

@@ -22,13 +22,13 @@ ht-degree: 3%
 
 Quando selezioni uno o più criteri e specifichi anche una stringa di testo, l’intersezione del testo e dei criteri viene restituita come risultato della ricerca. I risultati della ricerca sono validi quanto il modulo e i metadati della risorsa forniti.
 
-Clic ![aem6forms_search](assets/aem6forms_search.png), per mostrare o nascondere il pannello di ricerca.
+Fai clic su ![aem6forms_search](assets/aem6forms_search.png) per mostrare o nascondere il pannello di ricerca.
 
 ## Ricerca di base {#basic-search}
 
 Una ricerca di base è la ricerca predefinita, eseguita senza specificare alcun filtro. AEM Forms esegue una ricerca full-text sulle proprietà dei metadati.
 
-Per eseguire una ricerca di base, immetti la query di ricerca nel campo di testo e premi Invio. È inoltre possibile immettere il carattere jolly (&#42;) per trovare una corrispondenza con un numero qualsiasi di caratteri.
+Per eseguire una ricerca di base, immetti la query di ricerca nel campo di testo e premi Invio. È inoltre possibile immettere il carattere jolly (&#42;) in modo che corrisponda a un numero qualsiasi di caratteri.
 
 Adobe Experience Manager cerca il testo immesso nelle proprietà dei metadati e restituisce i risultati corrispondenti. Se si digitano più parole, l&#39;operazione di ricerca corrisponderà al testo completo per la ricerca.
 
@@ -36,10 +36,10 @@ Per quanto riguarda la ricerca di base, tieni presente quanto segue:
 
 * La ricerca viene eseguita utilizzando le proprietà dei metadati del modulo e della risorsa.
 * Se si digitano più parole, l&#39;operazione di ricerca corrisponderà al testo completo per la ricerca.
-* La ricerca non fa distinzione tra maiuscole e minuscole. Ad esempio, quando si digita `geometrixx`, risorse con titoli `Geometrixx`, `GEOMETRIXX`, e `GeoMetRixx` vengono visualizzati nei risultati della ricerca.
+* La ricerca non fa distinzione tra maiuscole e minuscole. Ad esempio, quando digiti `geometrixx`, le risorse con titoli `Geometrixx`, `GEOMETRIXX` e `GeoMetRixx` vengono visualizzate nei risultati della ricerca.
 
-* Le corrispondenze parziali di una parola non sono supportate. Per eseguire una ricerca utilizzando stringhe parziali, utilizzare &#42; carattere jolly. Tuttavia, se la query di ricerca corrisponde a una parola completa, viene visualizzata la maschera o la risorsa corrispondente.
-* Gli spazi aggiuntivi vengono rispettati e non vengono tagliati durante la ricerca. Ad esempio: `My form` non è la stessa query di ricerca `My form`.
+* Le corrispondenze parziali di una parola non sono supportate. Per eseguire ricerche utilizzando stringhe parziali, utilizzare il carattere jolly &#42;. Tuttavia, se la query di ricerca corrisponde a una parola completa, viene visualizzata la maschera o la risorsa corrispondente.
+* Gli spazi aggiuntivi vengono rispettati e non vengono tagliati durante la ricerca. `My form`, ad esempio, non è la stessa query di ricerca di `My form`.
 
 * Se i dati e i valori visualizzati dei campi nelle proprietà dei metadati sono diversi, non è possibile utilizzare i valori visualizzati come parametri di ricerca. Ad esempio, non è possibile eseguire ricerche in base a uno stato, ad esempio Modificato o Pubblicato, poiché queste proprietà vengono memorizzate in un formato diverso.
 
@@ -72,7 +72,7 @@ Puoi cercare le risorse utilizzando uno dei seguenti stati:
 
 * **Pubblicato**: cerca tutte le risorse pubblicate e non modificate dopo la pubblicazione.
 
-* **Non pubblicato**: cerca tutte le risorse che non vengono mai pubblicate.
+* **Non pubblicato**: cerca tutte le risorse che non sono mai state pubblicate.
 
 * **Modificato**: cerca tutte le risorse modificate o non pubblicate dopo la pubblicazione.
 

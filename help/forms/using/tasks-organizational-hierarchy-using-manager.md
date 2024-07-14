@@ -23,15 +23,15 @@ Nell’area di lavoro di AEM Forms, i manager ora possono accedere alle attivit�
 
 **Inoltra** - Inoltra un&#39;attività da referente diretto a qualsiasi utente.
 
-**Richiesta di rimborso** - Rivendicare un compito di referto diretto.
+**Attestazione** - Attestazione di un&#39;attività di referente diretto.
 
-**Richieste di rimborso e aperte** - Richiedi un&#39;attività di un referente diretto e aprila automaticamente nell&#39;elenco Da fare del manager.
+**Attestazione e apertura** - Attestazione di un&#39;attività di un referente diretto e apertura automatica nell&#39;elenco Da fare del manager.
 
-**Rifiuta** - Rifiuta un&#39;attività inoltrata a una segnalazione diretta da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un referente diretto.
+**Rifiuta** - Rifiuta un&#39;attività inoltrata a un referente diretto da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un referente diretto.
 
 AEM Forms limita l’accesso degli utenti solo alle attività per le quali l’utente dispone di un controllo di accesso (ACL). Tale controllo garantisce che un utente possa recuperare solo le attività per le quali dispone di autorizzazioni di accesso. Utilizzando servizi web e implementazioni di terze parti per definire la gerarchia, un’organizzazione può personalizzare la definizione di manager e direct report in base alle proprie esigenze.
 
-1. Creare un DSC. Per ulteriori informazioni, consulta l’argomento &quot;Sviluppo di componenti per AEM Forms&quot; in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guida.
+1. Creare un DSC. Per ulteriori informazioni, vedere l&#39;argomento &#39;Sviluppo di componenti per AEM Forms&#39; nella guida [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. Nel DSC, definisci un nuovo SPI per la gestione della gerarchia per definire i rapporti diretti e la gerarchia all’interno degli utenti di AEM Forms. Di seguito è riportato un frammento di codice Java™ di esempio.
 
    ```java
@@ -111,7 +111,7 @@ AEM Forms limita l’accesso degli utenti solo alle attività per le quali l’u
    </component>
    ```
 
-1. Distribuire DSC tramite Workbench. Riavvia `ProcessManagementTeamTasksService` servizio.
+1. Distribuire DSC tramite Workbench. Riavviare il servizio `ProcessManagementTeamTasksService`.
 1. Potrebbe essere necessario aggiornare il browser o disconnettersi/accedere di nuovo con l&#39;utente.
 
 Nella schermata seguente viene illustrato l’accesso alle attività dei referenti diretti e alle azioni disponibili.

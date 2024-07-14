@@ -20,8 +20,8 @@ ht-degree: 0%
 
 Utilizza la pagina Utenti invitati e locali per gestire gli utenti invitati e locali. Questa pagina viene visualizzata solo se sono soddisfatti i seguenti requisiti:
 
-* Sei un amministratore a cui sono assegnati il ruolo di gestione della sicurezza dei documenti, Invitato e Utenti locali, e il ruolo Utente della console di amministrazione. (vedere [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
-* La registrazione degli utenti invitati è abilitata. (vedere [Configurazione della registrazione degli utenti invitati](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+* Sei un amministratore a cui sono assegnati il ruolo di gestione della sicurezza dei documenti, Invitato e Utenti locali, e il ruolo Utente della console di amministrazione. (Vedi [Creazione e configurazione dei ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+* La registrazione degli utenti invitati è abilitata. (Vedi [Configurazione della registrazione degli utenti invitati](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 La pagina Utenti invitati e locali contiene due schede che è possibile utilizzare per cercare, visualizzare, modificare, bloccare, sbloccare ed eliminare gli account utente invitati e locali.
 
@@ -38,7 +38,7 @@ Puoi aggiungere alla protezione dei documenti uno o più account utente invitati
 1. Nella console di amministrazione, fai clic su Servizi > Document Security > Utenti invitati e locali, quindi fai clic su Invita nuovo utente.
 1. Digita gli indirizzi e-mail degli utenti che desideri invitare. Inserisci più indirizzi su una riga, separati da una virgola.
 
-   Il messaggio creato quando si abilita la registrazione degli utenti invitati viene inviato agli utenti. (vedere [Configurazione della registrazione degli utenti invitati](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+   Il messaggio creato quando si abilita la registrazione degli utenti invitati viene inviato agli utenti. (Vedi [Configurazione della registrazione degli utenti invitati](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. Fare clic su OK.
 
@@ -63,7 +63,7 @@ Quando aggiungi un utente invitato, document security invia automaticamente all�
 
 Puoi reimpostare le password per gli utenti invitati attivati che si sono registrati con document security ma hanno dimenticato la password. Quando si reimposta una password, viene generato un messaggio e-mail contenente una nuova password temporanea per l’utente.
 
-Quando hai attivato il processo di registrazione degli utenti invitati, hai creato un messaggio e-mail che verrà inviato agli utenti chiedendo di reimpostare le password. (vedere [Configurazione della registrazione degli utenti invitati](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+Quando hai attivato il processo di registrazione degli utenti invitati, hai creato un messaggio e-mail che verrà inviato agli utenti chiedendo di reimpostare le password. (Vedi [Configurazione della registrazione degli utenti invitati](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. Nella console di amministrazione, fai clic su Servizi > Document Security > Utenti invitati e locali, quindi fai clic sulla scheda Utenti locali.
 1. Nell’elenco degli utenti, seleziona l’utente appropriato.
@@ -75,7 +75,7 @@ Quando hai attivato il processo di registrazione degli utenti invitati, hai crea
 
 È possibile abilitare un account utente locale attualmente disabilitato. Non è possibile abilitare un account utente invitato elencato come registrato. Lo stato di registrazione indica che l’utente invitato è registrato ma non ha ancora attivato l’account utilizzando il collegamento presente nell’e-mail di attivazione.
 
-**Limitare un account utente**
+**Limita un account utente**
 
 1. In Administration Console, fai clic su Servizi > Document Security > Utenti invitati e locali, quindi fai clic sulla scheda Utenti locali.
 1. Nell’elenco degli utenti, seleziona l’utente appropriato.

@@ -29,25 +29,25 @@ Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’int
 >
 >Esistono varie normative sulla protezione dei dati e sulla privacy; tra cui, ad esempio, RGPD e CCPA. AEM Sites è pronta ad aiutare i clienti a rispettare gli obblighi in materia di protezione dei dati e privacy. Questa pagina guida i clienti attraverso le procedure per il consenso (o la rinuncia) alla raccolta di statistiche di utilizzo aggregate.
 >
->Per ulteriori informazioni, consulta anche [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
+>Per ulteriori informazioni, visitare anche il Centro per la privacy [Adobe](https://www.adobe.com/it/privacy.html).
 
 >[!NOTE]
 >
->Puoi rinunciare in qualsiasi momento utilizzando [Console web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) oppure non selezionando l&#39;opzione di consenso nella schermata di consenso AEM.
+>Puoi rinunciare in qualsiasi momento utilizzando la [console Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) o non selezionando l&#39;opzione di consenso nella schermata di consenso dell&#39;AEM.
 
 ## Consenso tramite l’interfaccia utente touch {#opt-in-by-using-the-touch-ui}
 
 La prima volta che avvii l’AEM, puoi dare il consenso utilizzando l’interfaccia utente touch come segue:
 
-1. Nella schermata di navigazione AEM, fai clic su **Casella in entrata** (campana).
+1. Nella schermata di navigazione AEM, fare clic sull&#39;icona **Posta in arrivo** (campana).
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-1. Nell’elenco a discesa, fai clic su &quot;&quot;**Abilita raccolta dati di utilizzo aggregati**&quot;.
+1. Nell&#39;elenco a discesa fare clic su &quot;**Abilita raccolta statistiche di utilizzo aggregate**&quot;.
 
-   ![usage_statisticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
+   ![sintassi_statisticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. Nella schermata di consenso, seleziona &quot;**Consenti la raccolta di statistiche di utilizzo aggregate**&quot;.
+1. Nella schermata di consenso, selezionare &quot;**Consenti raccolta di statistiche di utilizzo aggregate**&quot;.
 
    ![usage_statisticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
@@ -57,20 +57,20 @@ La prima volta che avvii l’AEM, puoi dare il consenso utilizzando l’interfac
 
 Puoi acconsentire (o rinunciare) utilizzando la console web come segue:
 
-1. Nella schermata di navigazione AEM, fai clic su **Strumenti** e poi **Operazioni**.
+1. Nella schermata di navigazione AEM, fai clic su **Strumenti** e quindi su **Operazioni**.
 
    ![usage_statisticsopsdashboard](assets/usage_statisticsopsdashboard.png)
 
-1. Nella finestra Operazioni fare clic su **Console web**.
+1. Nella finestra Operazioni fare clic su **Console Web**.
 
    ![usage_statisticswebconsole](assets/usage_statisticswebconsole.png)
 
 1. Cerca &quot;**Raccolta di statistiche di utilizzo aggregate**&quot;.
-1. Fai clic su **Modifica** icona.
+1. Fai clic sull&#39;icona **Modifica**.
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
 
-1. Seleziona la **Abilitato** casella di controllo. In alternativa, è possibile deselezionare la casella di controllo se si desidera rinunciare alla raccolta delle statistiche di utilizzo.
+1. Selezionare la casella di controllo **Abilitato**. In alternativa, è possibile deselezionare la casella di controllo se si desidera rinunciare alla raccolta delle statistiche di utilizzo.
 
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 

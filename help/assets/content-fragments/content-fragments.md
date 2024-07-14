@@ -14,7 +14,7 @@ ht-degree: 69%
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM), i frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-authoring/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless.
+Con Adobe Experience Manager (AEM), i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-authoring/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless.
 
 I frammenti di contenuto contengono contenuto strutturato:
 
@@ -38,13 +38,13 @@ I frammenti di contenuto possono essere consegnati anche in formato JSON, utiliz
 Questa pagina e quelle seguenti descrivono le attività di creazione, configurazione, manutenzione e utilizzo dei frammenti di contenuto:
 
 * [Abilita funzionalità frammento di contenuto per la tua istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) : abilitazione, creazione e definizione dei modelli
-* [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) : crea frammenti di contenuto, quindi modifica, pubblica e fai riferimento a
+* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - abilitazione, creazione e definizione dei modelli
+* [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md): crea i frammenti di contenuto, quindi modifica, pubblica e fai riferimento a essi
 * [Varianti: authoring dei contenuti di frammenti](/help/assets/content-fragments/content-fragments-variations.md): come creare il contenuto di un frammento e quindi varianti del contenuto principale
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md): come utilizzare la sintassi markdown per il frammento
 * [Utilizzo di contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
 * [Metadati: proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md): come visualizzare e modificare le proprietà dei frammenti
-* Utilizzare [Frammenti di contenuto, insieme a GraphQL, per distribuire i contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Utilizzare [Frammenti di contenuto, insieme a GraphQL, per distribuire il contenuto](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare in anteprima [l&#39;output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Questi frammenti di contenuto possono quindi essere assemblati per fornire esper
 >
 >I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
 >
->* **Frammenti di contenuto** sono contenuti editoriali che possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza elementi visivi aggiuntivi di design e/o layout.
+>* **I frammenti di contenuto** sono contenuti editoriali che possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza elementi visivi aggiuntivi di design e/o layout.
 >
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
@@ -128,10 +128,10 @@ I frammenti di contenuto sono:
 
 * Memorizzati come **Risorse**:
 
-   * I frammenti di contenuto (e le relative varianti) possono essere creati e manutenuti dalla sezione **Risorse** console.
+   * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato in [Editor pagina con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor di pagine [ con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
 
    * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
@@ -140,7 +140,7 @@ I frammenti di contenuto sono:
 I frammenti di contenuto sono una struttura di contenuto che:
 
 * Non disporre di layout o progettazione (in modalità Testo formattato è possibile formattare del testo).
-* Disporre di uno o più [parti costitutive](#constituent-parts-of-a-content-fragment).
+* Avere una o più [parti costitutive](#constituent-parts-of-a-content-fragment).
 * può [contenere immagini o essere connessa ad esse](#fragments-with-visual-assets);
 * può utilizzare [contenuto intermedio](#in-between-content-when-page-authoring-with-content-fragments) se referenziato in una pagina;
 * è indipendente dal meccanismo di consegna (ad esempio, pagina, canale).
@@ -149,7 +149,7 @@ I frammenti di contenuto sono una struttura di contenuto che:
 
 Per dare agli autori un maggiore controllo sui contenuti, le immagini possono essere aggiunte a e/o integrate con un frammento di contenuto.
 
-Le risorse possono essere utilizzate con un frammento di contenuto in diversi modi, ciascuno con i propri vantaggi:
+Assets può essere utilizzato con un frammento di contenuto in diversi modi, ciascuno con i propri vantaggi:
 
 * Tramite **Inserisci risorsa** per inserire una risorsa in un frammento (frammenti con elementi multimediali diversi)
 
@@ -201,7 +201,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
    * Sono incorporate nel sistema paragrafo del frammento.
    * Possono essere formattate quando il [frammento viene utilizzato o inserito come riferimento in una pagina](/help/sites-authoring/content-fragments.md).
    * Possono solo essere aggiunte, eliminate o spostate all’interno di un frammento utilizzando l’editor di frammenti. Queste azioni non possono essere eseguite nell’editor pagina.
-   * Possono essere aggiunte, eliminate o spostate all’interno di un frammento solo utilizzando [Formato Rich Text nell’editor frammenti](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+   * Possono essere aggiunte, eliminate o spostate all&#39;interno di un frammento solo utilizzando il formato [Rich Text nell&#39;editor frammenti](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Possono essere aggiunte solo a elementi di testo su più righe (qualsiasi tipo di frammento).
    * Sono associate al testo che precede (paragrafo).
 
@@ -251,7 +251,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 * **Varianti**
 
    * Sono rappresentazioni di testo di frammenti specifiche a scopo editoriale; possono essere relative a un canale ma non sono obbligatorie; possono anche essere utilizzate per modifiche locali ad hoc.
-   * Sono create come copie di **Principale**, ma possono essere modificati in base alle esigenze; vi è una sovrapposizione di contenuti tra le varianti stesse.
+   * Sono create come copie di **Master**, ma possono essere modificate in base alle esigenze; vi è una sovrapposizione di contenuto tra le varianti stesse.
    * Possono essere definite durante l’authoring del frammento.
    * Sono memorizzate nel frammento, per evitare la dispersione delle copie del contenuto.
    * Le varianti possono essere [sincronizzate](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) con l’elemento principale se il suo contenuto viene aggiornato.
@@ -263,7 +263,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 Contenuto intermedio:
 
 * Può essere utilizzato nell’Editor pagina quando si lavora con frammenti di contenuto.
-* È [contenuto aggiuntivo aggiunto all’interno del flusso di un frammento](/help/sites-authoring/content-fragments.md#adding-in-between-content) una volta utilizzato o inserito come riferimento in una pagina.
+* È [contenuto aggiuntivo aggiunto all&#39;interno del flusso di un frammento](/help/sites-authoring/content-fragments.md#adding-in-between-content) una volta utilizzato o inserito come riferimento in una pagina.
 * Può essere utilizzato nell’[Editor pagina quando si lavora con frammenti di contenuto](/help/sites-authoring/content-fragments.md).
 * Il contenuto intermedio può essere aggiunto a qualsiasi frammento, in cui è visibile un solo elemento.
 * È possibile utilizzare il contenuto associato, così come le risorse e/o i componenti dal browser appropriato.

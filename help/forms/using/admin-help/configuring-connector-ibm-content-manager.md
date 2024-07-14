@@ -1,6 +1,6 @@
 ---
 title: Configurazione del connettore per IBM&reg; Content Manager
-description: Configura il connettore per IBM&reg; Content Manager per abilitare la comunicazione tra i moduli AEM e IBM&reg; Content Manager.
+description: Configurare il connettore per IBM&reg; Content Manager per abilitare la comunicazione tra i moduli AEM e IBM&reg; Content Manager.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system

@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Ristrutturazione dell&#39;archivio E-Commerce nell&#39;AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione E-Commerce dell’AEM. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nella pagina padre [Ristrutturazione dell&#39;archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l&#39;aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l&#39;impegno di lavoro associato alle modifiche dell&#39;archivio che influiscono sulla soluzione AEM E-Commerce. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
 ## Con aggiornamento 6.5 {#with-upgrade}
 
@@ -35,7 +35,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>È possibile utilizzare una <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migrazione lenta</a> attività per la migrazione dei dati di E-Commerce.</p> <p>Esegue i seguenti passaggi:</p>
+   <td><p>È possibile utilizzare un'attività <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> per eseguire la migrazione dei dati di E-Commerce.</p> <p>Esegue i seguenti passaggi:</p>
     <ul>
      <li>regola i riferimenti alla posizione precedente per puntare alla nuova posizione</li>
      <li>sposta il contenuto dalla posizione precedente alla nuova posizione</li>

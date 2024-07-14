@@ -35,41 +35,41 @@ La possibilità di includere contenuto può essere consentita o negata per ogni 
 Questa sezione della documentazione descrive:
 
 * Aggiunta di contenuto in primo piano a un sito community.
-* Impostazioni di configurazione per `Featured Content` componente.
+* Impostazioni di configurazione per il componente `Featured Content`.
 
 ## Aggiunta di contenuto in primo piano a una pagina {#adding-featured-content-to-a-page}
 
-Per aggiungere una `Featured Content` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare
+Per aggiungere un componente `Featured Content` a una pagina in modalità di creazione, utilizza il browser componenti per individuare
 
 * `Communities / Featured Content`
 
 Trascinalo in una pagina in cui dovrebbe apparire il contenuto in primo piano.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](basics.md).
 
-Quando [librerie lato client richieste](essentials-featured.md#essentials-for-client-side) sono inclusi, è così che `Featured Content` viene visualizzato il componente:
+Quando sono incluse le [librerie lato client richieste](essentials-featured.md#essentials-for-client-side), il componente `Featured Content` viene visualizzato in questo modo:
 
-![feature dcontent](assets/featuredcontent.png)
+![contenuto funzionalità](assets/featuredcontent.png)
 
 ## Configurazione del contenuto in primo piano {#configuring-featured-content}
 
-Seleziona la inserita `Featured Content` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
+Selezionare il componente `Featured Content` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo per modifica.
 
-![configure-new](assets/configure-new.png)
+![configura-nuovo](assets/configure-new.png)
 
-![featurecontent1](assets/featuredcontent1.png)
+![contenutofunzionalità1](assets/featuredcontent1.png)
 
 ### Scheda Impostazioni {#settings-tab}
 
-Sotto **[!UICONTROL Impostazioni]** , identifica il contenuto da visualizzare:
+Nella scheda **[!UICONTROL Impostazioni]**, identifica il contenuto da visualizzare:
 
 * **[!UICONTROL Nome visualizzato]**
 
-  Titolo dell’elenco dei contenuti in primo piano. Ad esempio: `Featured Questions` o `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
+  Titolo dell’elenco dei contenuti in primo piano. Ad esempio, `Featured Questions` o `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
 
 * **[!UICONTROL Posizione del contenuto in primo piano]**
 
-  *(Obbligatorio)* Passa alla pagina contenente il contenuto che potrebbe essere visualizzato (i componenti di quella pagina devono essere configurati per Consenti contenuto in primo piano). Esempio: `/content/sites/engage/en/forum`.
+  *(Obbligatorio)* Passa alla pagina contenente il contenuto che potrebbe essere visualizzato (i componenti della pagina devono essere configurati per Consentire contenuto in primo piano). Esempio: `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Limite di visualizzazione]**
 
@@ -79,20 +79,20 @@ Sotto **[!UICONTROL Impostazioni]** , identifica il contenuto da visualizzare:
 
 La possibilità di contrassegnare il contenuto come contenuto in primo piano richiede privilegi di moderatore.
 
-Quando un moderatore visualizza il contenuto pubblicato, ha accesso ai flag di moderazione nel contesto, che includono il nuovo `Feature` flag.
+Quando un moderatore visualizza il contenuto pubblicato, ha accesso ai flag di moderazione nel contesto, che includono il nuovo flag `Feature`.
 
-![site-visitor-experience](assets/site-visitor-experience.png)
+![esperienza-visitatore-sito](assets/site-visitor-experience.png)
 
-Dopo essere stato contrassegnato come caratteristica, il contrassegno di moderazione diventa `Unfeature`.
+Dopo essere stato contrassegnato come funzionalità, il flag di moderazione diventa `Unfeature`.
 
-La pagina contenente `Featured Content` componente, ora include questo post.
+La pagina contenente il componente `Featured Content`, ora include questo post.
 
-![site-visitor-experience1](assets/site-visitor-experience1.png)
+![esperienza-visitatore-sito1](assets/site-visitor-experience1.png)
 
-Il `Read More` collegamenti al post effettivo.
+`Read More` si collega al post effettivo.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Contenuto in primo piano](essentials-featured.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Contenuto in primo piano](essentials-featured.md) per gli sviluppatori.
 
-Per segnalare il contenuto come in primo piano, consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Per contrassegnare il contenuto come in primo piano, vedere [Moderazione del contenuto generato dall&#39;utente](moderate-ugc.md).

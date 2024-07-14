@@ -25,11 +25,11 @@ Questa pagina fornisce le informazioni essenziali per lavorare con la funzione d
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/idea/componenti/hbs/idea</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Questa pagina fornisce le informazioni essenziali per lavorare con la funzione d
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consulta <a href="ideation-feature.md">Funzione ideazione</a></td>
+   <td>Vedi <a href="ideation-feature.md">Funzione ideazione</a></td>
   </tr>
  </tbody>
 </table>
@@ -55,4 +55,4 @@ Questa pagina fornisce le informazioni essenziali per lavorare con la funzione d
 
 ### Funzione ideazione {#ideation-function}
 
-Una struttura del sito della community che include [Funzione ideazione](functions.md#ideation-function), include un `ideation` componente.
+Una struttura del sito della community che include la [funzione ideazione](functions.md#ideation-function), include un componente `ideation` configurato.

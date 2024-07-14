@@ -28,7 +28,7 @@ Questa funzione aggiunge la possibilità di impostare una nuova password amminis
 
 >[!CAUTION]
 >
->La funzione non copre la console Felix, per la quale la password deve essere modificata manualmente. Per ulteriori informazioni, consulta le [Sezione Elenco di controllo protezione](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
+>La funzione non copre la console Felix, per la quale la password deve essere modificata manualmente. Per ulteriori informazioni, vedere la [sezione Elenco di controllo protezione](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts) pertinente.
 
 ## Come Si Utilizza? {#how-do-i-use-it}
 
@@ -50,7 +50,7 @@ Dopo aver eseguito l’istanza dalla riga di comando, viene visualizzata l’opz
 
 ## Utilizzo del flag -nointeractive {#using-the-nointeractive-flag}
 
-Puoi anche scegliere di specificare la password da un file di proprietà. Questa operazione viene eseguita utilizzando `-nointeractive` combinato con il `-Dadmin.password.file` proprietà di sistema.
+Puoi anche scegliere di specificare la password da un file di proprietà. Questa operazione viene eseguita utilizzando il flag `-nointeractive` combinato con la proprietà di sistema `-Dadmin.password.file`.
 
 Di seguito è riportato un esempio:
 
@@ -58,7 +58,7 @@ Di seguito è riportato un esempio:
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-La password all&#39;interno del `passwordfile.properties` il file deve avere il seguente formato:
+La password all&#39;interno del file `passwordfile.properties` deve avere il seguente formato:
 
 ```xml
 admin.password = 12345678
@@ -66,4 +66,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Se si utilizza semplicemente il `-nointeractive` senza il parametro `-Dadmin.password.file` proprietà di sistema, l&#39;AEM utilizza la password predefinita dell&#39;amministratore senza chiedere di modificarla, essenzialmente replicando il comportamento delle versioni precedenti. Questa modalità non interattiva può essere utilizzata per le installazioni automatizzate tramite la riga di comando in uno script di installazione.
+>Se si utilizza semplicemente il parametro `-nointeractive` senza la proprietà di sistema `-Dadmin.password.file`, AEM utilizza la password predefinita dell&#39;amministratore senza chiedere di modificarla, essenzialmente replicando il comportamento delle versioni precedenti. Questa modalità non interattiva può essere utilizzata per le installazioni automatizzate tramite la riga di comando in uno script di installazione.

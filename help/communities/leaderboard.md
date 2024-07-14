@@ -20,20 +20,20 @@ ht-degree: 4%
 
 Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzione classifica.
 
-Prima di includere il componente classifica in una pagina, è necessario configurare [Punteggio community e badge](implementing-scoring.md).
+Prima di includere il componente classifica in una pagina, è necessario configurare [Punteggio community e distintivi](implementing-scoring.md).
 
-Consulta [Nozioni di base su punteggio e distintivi](configure-scoring.md).
+Consulta [Nozioni di base su punteggio e badge](configure-scoring.md).
 
 ## Nozioni di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/gamification/components/hbs/classifica</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ Consulta [Nozioni di base su punteggio e distintivi](configure-scoring.md).
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consulta <a href="enabling-leaderboard.md">Funzione classifica</a></td>
+   <td>Vedi <a href="enabling-leaderboard.md">Funzione classifica</a></td>
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ Consulta [Nozioni di base su punteggio e distintivi](configure-scoring.md).
 
 ### Funzione Libreria file {#file-library-function}
 
-Una struttura del sito della community che include [Funzione classifica](functions.md#leaderboard-function), include un `leaderboard` componente.
+Una struttura del sito della community che include la funzione [Classifica](functions.md#leaderboard-function), include un componente `leaderboard` configurato.

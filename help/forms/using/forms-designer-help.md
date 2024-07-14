@@ -21,5 +21,5 @@ ht-degree: 2%
 [Tutorials di avvio rapido di Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 [Esempi di Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
 [Nozioni di base sugli script di Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-[Riferimento script di Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-[Riferimento FormCalc Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+[Riferimento script Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+[Riferimento Designer FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65)

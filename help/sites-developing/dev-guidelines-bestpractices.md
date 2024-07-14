@@ -1,5 +1,5 @@
 ---
-title: Sviluppo AEM - Linee guida e best practice
+title: 'Sviluppo AEM: linee guida e best practice'
 description: Linee guida e best practice per lo sviluppo sull’AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,11 +12,11 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Sviluppo AEM - Linee guida e best practice{#aem-development-guidelines-and-best-practices}
+# Sviluppo AEM: linee guida e best practice{#aem-development-guidelines-and-best-practices}
 
 ## Linee guida per l’utilizzo di modelli e componenti {#guidelines-for-using-templates-and-components}
 
@@ -51,11 +51,11 @@ Le seguenti regole generali per gli sviluppatori hanno senso nella maggior parte
 
 Quando crei componenti personalizzati o personalizzi un componente esistente, spesso è più semplice (e sicuro) riutilizzare le definizioni esistenti. Gli stessi principi si applicano anche ad altri elementi all’interno dell’AEM, ad esempio il gestore degli errori.
 
-Questo può essere fatto copiando e sovrapponendo la definizione esistente. In altre parole, copiare la definizione da `/libs` a `/apps/<your-project>`. Questa nuova definizione, in `/apps`, può essere aggiornato in base alle tue esigenze.
+Questo può essere fatto copiando e sovrapponendo la definizione esistente. In altre parole, copia della definizione da `/libs` a `/apps/<your-project>`. Questa nuova definizione, in `/apps`, può essere aggiornata in base alle tue esigenze.
 
 >[!NOTE]
 >
->Consulta [Utilizzo delle sovrapposizioni](/help/sites-developing/overlays.md) per ulteriori dettagli.
+>Per ulteriori dettagli, vedi [Utilizzo delle sovrapposizioni](/help/sites-developing/overlays.md).
 
 Ad esempio:
 
@@ -81,14 +81,14 @@ Ad esempio:
 
 >[!CAUTION]
 >
->**Do not** modificare qualsiasi elemento in `/libs` percorso.
+>**Non** modificare nulla nel percorso `/libs`.
 >
->Il motivo è che il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+>Il motivo è che il contenuto di `/libs` viene sovrascritto al prossimo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 >
 >Per la configurazione e altre modifiche:
 >
->1. copia elemento in `/libs` a `/apps`
->1. apporta le modifiche in `/apps`
+>1. copia l&#39;elemento in `/libs` in `/apps`
+>1. apportare modifiche entro `/apps`
 
 ## Quando utilizzare le query JCR e quando non utilizzarle {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
@@ -109,14 +109,14 @@ Per il rendering del contenuto, utilizza l’accesso di navigazione alla struttu
 
 >[!NOTE]
 >
->Se si utilizza [Query Builder](/help/sites-developing/querybuilder-api.md), utilizzi le query JCR, in quanto Query Builder genera query JCR dal punto di vista tecnico.
+>Se si utilizza il [Generatore di query](/help/sites-developing/querybuilder-api.md), si utilizzano le query JCR, poiché il Generatore di query genera query JCR dal punto di vista tecnico.
 >
 
 ## Considerazioni sulla sicurezza {#security-considerations}
 
 >[!NOTE]
 >
->Vale anche la pena fare riferimento al [elenco di controllo protezione](/help/sites-administering/security-checklist.md).
+>È inoltre utile fare riferimento all&#39;[elenco di controllo della sicurezza](/help/sites-administering/security-checklist.md).
 
 ### Sessioni JCR (archivio) {#jcr-repository-sessions}
 
@@ -132,7 +132,7 @@ Il cross-site scripting (XSS) consente agli aggressori di inserire codice nelle 
 
 L&#39;AEM applica il principio di filtrare tutti i contenuti forniti dall&#39;utente al momento dell&#39;output. Prevenire l’XSS è data la massima priorità sia durante lo sviluppo che durante il test.
 
-Inoltre, un firewall per le applicazioni web, ad esempio [mod_security per Apache](https://modsecurity.org), è in grado di fornire un controllo centrale e affidabile sulla sicurezza dell&#39;ambiente di distribuzione e di proteggere da attacchi di cross-site scripting non rilevati in precedenza.
+Inoltre, un firewall dell&#39;applicazione Web, ad esempio [mod_security per Apache](https://modsecurity.org), può fornire un controllo centrale e affidabile sulla sicurezza dell&#39;ambiente di distribuzione e proteggere da attacchi di cross-site scripting non rilevati in precedenza.
 
 >[!CAUTION]
 >
@@ -159,10 +159,10 @@ Questo vale per le informazioni riservate al sistema (come la configurazione o l
 
 Le pagine di errore possono essere personalizzate per l’AEM. È consigliabile evitare che l’istanza riveli tracce sling in caso di errori interni del server.
 
-Consulta [Personalizzazione delle pagine di errore visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md) per informazioni dettagliate.
+Per informazioni dettagliate, vedere [Personalizzazione delle pagine di errore visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md).
 
 ### Apri file nel processo Java™ {#open-files-in-the-java-process}
 
-Poiché l’AEM può accedere a molti file, si consiglia di specificare il numero [aprire file per un processo Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) essere configurato in modo esplicito per l’AEM.
+Poiché l&#39;AEM può accedere a molti file, si consiglia di configurare in modo esplicito per l&#39;AEM il numero di [file aperti per un processo Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process).
 
 Per ridurre al minimo questo problema, lo sviluppo deve garantire che qualsiasi file aperto venga chiuso correttamente quando (significativamente) possibile.

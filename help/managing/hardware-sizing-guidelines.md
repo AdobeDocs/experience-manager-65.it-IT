@@ -51,23 +51,23 @@ I fattori di base da considerare sono (in questo ordine):
 
 ## Architettura {#architecture}
 
-Una tipica configurazione AEM è costituita da un ambiente di authoring e uno di pubblicazione. Questi ambienti presentano requisiti diversi per quanto riguarda le dimensioni dell&#39;hardware e la configurazione del sistema. Considerazioni dettagliate su entrambi gli ambienti sono descritte nella [ambiente di authoring](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) e [ambiente di pubblicazione](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) sezioni.
+Una tipica configurazione AEM è costituita da un ambiente di authoring e uno di pubblicazione. Questi ambienti presentano requisiti diversi per quanto riguarda le dimensioni dell&#39;hardware e la configurazione del sistema. Considerazioni dettagliate su entrambi gli ambienti sono descritte nelle sezioni [ambiente di authoring](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) e [ambiente di pubblicazione](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations).
 
 In una tipica configurazione di progetto, sono disponibili diversi ambienti in cui suddividere le fasi del progetto:
 
 * **Ambiente di sviluppo**
 Sviluppare nuove funzioni o apportare modifiche significative. Si consiglia di utilizzare un ambiente di sviluppo per sviluppatore (installazioni locali sui propri sistemi personali).
 
-* **Ambiente di test di authoring**
+* **Ambiente di test dell&#39;autore**
 Per verificare le modifiche. Il numero di ambienti di test può variare a seconda dei requisiti del progetto (ad esempio, separati per QA, test di integrazione o test di accettazione da parte dell’utente).
 
-* **Pubblica ambiente di test**
+* **Ambiente di test Publish**
 Principalmente per testare casi di utilizzo di collaborazione social e/o l’interazione tra l’istanza di authoring e più istanze di pubblicazione.
 
-* **Ambiente di produzione dell’autore**
+* **Ambiente di produzione autore**
 Consentire agli autori di modificare il contenuto.
 
-* **Pubblica ambiente di produzione**
+* **Ambiente di produzione Publish**
 Distribuire il contenuto pubblicato.
 
 Inoltre, gli ambienti possono variare, da un sistema a server singolo con AEM e un server applicazioni, fino a un set altamente scalabile di istanze cluster multi-server e multi-CPU. L&#39;Adobe consiglia di utilizzare un computer separato per ogni sistema di produzione e di non eseguire altre applicazioni su tali computer.
@@ -76,7 +76,7 @@ Inoltre, gli ambienti possono variare, da un sistema a server singolo con AEM e 
 
 Le sezioni seguenti forniscono indicazioni su come calcolare i requisiti hardware, tenendo conto di varie considerazioni. Per i sistemi di grandi dimensioni, ad Adobe, si consiglia di eseguire un semplice set di test di benchmark interni su una configurazione di riferimento.
 
-L’ottimizzazione delle prestazioni è un’attività fondamentale che deve essere eseguita prima di poter eseguire qualsiasi benchmark per un progetto specifico. Assicurati di applicare i consigli forniti nella [Documentazione sull’ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md) prima di eseguire test di benchmark e di utilizzare i risultati per i calcoli di dimensionamento hardware.
+L’ottimizzazione delle prestazioni è un’attività fondamentale che deve essere eseguita prima di poter eseguire qualsiasi benchmark per un progetto specifico. Prima di eseguire test di benchmark e di utilizzare i risultati per i calcoli di dimensionamento hardware, assicurarsi di applicare i suggerimenti forniti nella [documentazione sull&#39;ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
 
 I requisiti di dimensionamento dell&#39;hardware per i casi d&#39;uso avanzati devono essere basati su una valutazione dettagliata delle prestazioni del progetto. Le caratteristiche dei casi d&#39;uso avanzati che richiedono risorse hardware eccezionali includono:
 
@@ -107,30 +107,30 @@ L&#39;AEM funziona bene negli ambienti virtualizzati, ma ci possono essere fatto
 
 #### Parallelizzazione delle istanze AEM {#parallelization-of-aem-instances}
 
-**Sicurezza degli errori**
+**Sicurezza non riuscita**
 
 Un sito Web a prova di errore viene distribuito su almeno due sistemi separati. In caso di guasto di un sistema, un altro sistema può sostituire il sistema e quindi compensare il guasto.
 
-**Scalabilità delle risorse di sistema**
+**Scalabilità risorse di sistema**
 
-Mentre tutti i sistemi sono in esecuzione, è disponibile un aumento delle prestazioni di elaborazione. Tali prestazioni aggiuntive non sono necessariamente lineari con il numero di nodi cluster, in quanto la relazione dipende in larga misura dall’ambiente tecnico. Consulta [Documentazione del cluster](/help/sites-deploying/recommended-deploys.md) per ulteriori informazioni.
+Mentre tutti i sistemi sono in esecuzione, è disponibile un aumento delle prestazioni di elaborazione. Tali prestazioni aggiuntive non sono necessariamente lineari con il numero di nodi cluster, in quanto la relazione dipende in larga misura dall’ambiente tecnico. Per ulteriori informazioni, consulta la [documentazione del cluster](/help/sites-deploying/recommended-deploys.md).
 
 La stima del numero di nodi cluster necessari si basa sui requisiti di base e sui casi d’uso specifici del particolare progetto web:
 
 * Dal punto di vista della sicurezza in caso di guasto, è necessario determinare, per tutti gli ambienti, il livello di criticità del guasto e il tempo di compensazione del guasto in base al tempo necessario per il ripristino di un nodo cluster.
-* Per l&#39;aspetto della scalabilità, il numero di operazioni di scrittura è fondamentalmente il fattore più importante; vedere [Autori in parallelo](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) per l’ambiente di authoring e [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) per l’ambiente di pubblicazione. Il bilanciamento del carico può essere stabilito per le operazioni che accedono al sistema solo per elaborare operazioni di lettura; vedere [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) per i dettagli.
+* Per l&#39;aspetto della scalabilità, il numero di operazioni di scrittura è fondamentalmente il fattore più importante. Vedere [Autori che lavorano in parallelo](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) per l&#39;ambiente di authoring e [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) per l&#39;ambiente di pubblicazione. È possibile stabilire il bilanciamento del carico per le operazioni che accedono al sistema solo per elaborare operazioni di lettura. Per ulteriori informazioni, vedere [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it).
 
 ## Creare calcoli specifici per l’ambiente {#author-environment-specific-calculations}
 
 A scopo di benchmarking, Adobe ha sviluppato alcuni test di benchmark per le istanze di authoring autonome.
 
-* **Prova di riferimento 1**
+* **Test benchmark 1**
 Calcola la velocità effettiva massima di un profilo di caricamento in cui gli utenti eseguono un semplice esercizio di creazione pagina sopra un carico di base di 300 pagine esistenti tutte di natura simile. I passaggi necessari consistevano nell’accedere al sito, creare una pagina con un SWF e un’immagine o un testo, aggiungere un tag cloud e attivare la pagina.
 
    * **Risultato**
 La velocità effettiva massima per un semplice esercizio di creazione delle pagine come quello precedente, considerato come una transazione, è di 1730 transazioni/ora.
 
-* **Prova di riferimento 2**
+* **Test benchmark 2**
 Calcola la velocità effettiva massima quando il profilo di caricamento presenta un mix di creazione di nuove pagine (10%), modifica di una pagina esistente (80%) e creazione, quindi modifica di una pagina in successione (10%). La complessità delle pagine rimane la stessa del profilo del test di riferimento 1. La modifica di base della pagina viene eseguita aggiungendo un’immagine e modificando il contenuto del testo. Anche in questo caso, l’esercizio è stato eseguito in aggiunta a un carico di base di 300 pagine della stessa complessità definita nel test di riferimento 1.
 
    * **Risultato**
@@ -152,13 +152,13 @@ Nell’ambiente di authoring i principali fattori di limitazione sono il numero 
 
 Per tali scenari, Adobe ha eseguito test di benchmark su un cluster a due nodi condiviso-niente di istanze di authoring.
 
-* **Test comparativo 1a**
+* **Test benchmark 1a**
 Con un cluster active-active shared-Nothing di 2 istanze di authoring, calcola la velocità effettiva massima con un profilo di caricamento in cui gli utenti eseguono un semplice esercizio di creazione pagina sopra un carico di base di 300 pagine esistenti, tutte di natura simile.
 
    * **Risultato**
 La velocità effettiva massima per un semplice esercizio di creazione delle pagine, come quello di cui sopra, considerato come una transazione, è pari a 2016 transazioni/ora. Si tratta di un aumento di circa il 16% rispetto a un’istanza Autore indipendente per lo stesso test di benchmark.
 
-* **Prova comparativa 2b**
+* **Test benchmark 2b**
 Con un cluster active-active shared-Nothing di 2 istanze di authoring, calcola la velocità effettiva massima quando il profilo di caricamento presenta un mix di creazione di pagine nuove (10%), modifica di pagine esistenti (80%) e creazione e modifica di una pagina in successione (10%). La complessità della pagina rimane la stessa del profilo del test benchmark 1. La modifica di base della pagina viene eseguita aggiungendo un’immagine e modificando il contenuto del testo. Anche in questo caso, l’esercizio è stato eseguito in aggiunta a un carico di base di 300 pagine di complessità, come definito nel test di riferimento 1.
 
    * **Risultato**
@@ -195,11 +195,11 @@ I test di benchmark Adobe sono stati eseguiti utilizzando il sistema operativo R
 
 Le istanze AEM erano in esecuzione con una dimensione heap minima di 256 M, una dimensione heap massima di 1024 M.
 
-## Pubblicare calcoli specifici per l’ambiente {#publish-environment-specific-calculations}
+## Calcoli specifici per l’ambiente Publish {#publish-environment-specific-calculations}
 
 ### Efficienza e traffico della memorizzazione in cache {#caching-efficiency-and-traffic}
 
-L’efficienza della cache è fondamentale per la velocità del sito web. La tabella seguente mostra quante pagine al secondo un sistema AEM ottimizzato può gestire utilizzando un proxy inverso, come Dispatcher:
+L’efficienza della cache è fondamentale per la velocità del sito web. La tabella seguente mostra quante pagine al secondo un sistema AEM ottimizzato può gestire utilizzando un proxy inverso, come il Dispatcher:
 
 | Proporzione cache | Pagine/e (picco) | Milioni di pagine/giorno (media) |
 |---|---|---|
@@ -214,7 +214,7 @@ L’efficienza della cache è fondamentale per la velocità del sito web. La tab
 >
 >Esclusione di responsabilità: i numeri si basano su una configurazione hardware predefinita e possono variare a seconda dell&#39;hardware specifico utilizzato.
 
-Il rapporto cache è la percentuale di pagine che Dispatcher può restituire senza dover accedere all’AEM. 100% indica che Dispatcher risponde a tutte le richieste, 0% significa che AEM calcola ogni pagina.
+Il rapporto cache è la percentuale di pagine che il Dispatcher può restituire senza dover accedere all’AEM. 100% indica che Dispatcher risponde a tutte le richieste, 0% significa che AEM calcola ogni pagina.
 
 ### Complessità di modelli e applicazioni {#complexity-of-templates-and-applications}
 
@@ -251,7 +251,7 @@ Le variabili nell&#39;equazione sono le seguenti:
   </tr>
   <tr>
    <td>cacheRatio</td>
-   <td>La percentuale di pagine che fuoriescono dalla cache di Dispatcher. Usa 1 se tutte le pagine provengono dalla cache, oppure 0 se ogni pagina è calcolata dall’AEM.</td>
+   <td>Percentuale di pagine estratte dalla cache di Dispatcher. Usa 1 se tutte le pagine provengono dalla cache, oppure 0 se ogni pagina è calcolata dall’AEM.</td>
   </tr>
   <tr>
    <td>templateComplexity</td>
@@ -259,7 +259,7 @@ Le variabili nell&#39;equazione sono le seguenti:
   </tr>
   <tr>
    <td>attivazioni</td>
-   <td>Numero medio di attivazioni (replica di pagine e risorse di dimensioni medie dal livello di authoring a quello di pubblicazione) per ora diviso per x, dove x è il numero di attivazioni eseguite su un sistema senza effetti collaterali sulle prestazioni per altre attività elaborate dal sistema. Puoi anche predefinire un valore iniziale pessimistico come x = 100.<br /> </td>
+   <td>Numero medio di attivazioni (replica di pagine e risorse di dimensioni medie dal livello di authoring a quello di pubblicazione) per ora diviso per x, dove x è il numero di attivazioni eseguite su un sistema senza effetti collaterali sulle prestazioni per altre attività elaborate dal sistema. È inoltre possibile predefinire un valore iniziale pessimistico come x = 100.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -267,15 +267,15 @@ Le variabili nell&#39;equazione sono le seguenti:
 Se si dispone di un sito Web più complesso, è inoltre necessario disporre di server Web più potenti in modo che l&#39;AEM possa rispondere a una richiesta in un tempo accettabile.
 
 * Complessità inferiore a 4:
-   * RAM JVM 1024 MB&#42;
+   * 1024 MB di RAM JVM&#42;
    * CPU a prestazioni medio-basse
 
 * Complessità da 4 a 8:
-   * RAM JVM DA 2048 MB&#42;
+   * RAM JVM da 2.048 MB&#42;
    * CPU a prestazioni medio-elevate
 
 * Complessità superiore a 8:
-   * RAM JVM 4096 MB&#42;
+   * RAM JVM da 4.096 MB&#42;
    * CPU ad alte prestazioni
 
 >[!NOTE]
@@ -286,11 +286,11 @@ Se si dispone di un sito Web più complesso, è inoltre necessario disporre di s
 
 Oltre al calcolo per un’applicazione web predefinita, considera fattori specifici per i seguenti casi d’uso. I valori calcolati devono essere aggiunti al calcolo predefinito.
 
-### Considerazioni specifiche sulle risorse {#assets-specific-considerations}
+### Considerazioni specifiche per Assets {#assets-specific-considerations}
 
 L’elaborazione intensiva di risorse digitali richiede risorse hardware ottimizzate, i fattori più rilevanti sono le dimensioni delle immagini e il picco di trasmissione delle immagini elaborate.
 
-Assegna almeno 16 GB di heap e configura l&#39;elemento [!UICONTROL Aggiorna risorsa DAM] flusso di lavoro per utilizzare [pacchetto Camera Raw](/help/assets/camera-raw.md) per l’acquisizione di immagini non elaborate.
+Camera Raw Alloca almeno 16 GB di heap e configura il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per utilizzare il [pacchetto](/help/assets/camera-raw.md) per l&#39;acquisizione di immagini non elaborate.
 
 >[!NOTE]
 >
@@ -300,9 +300,9 @@ L&#39;utilizzo di dischi separati per TarPM, data store e indice di ricerca può
 
 >[!NOTE]
 >
-Consulta anche [Guida alle prestazioni di Assets](/help/sites-deploying/assets-performance-sizing.md).
+Consulta anche la [Guida alle prestazioni di Assets](/help/sites-deploying/assets-performance-sizing.md).
 
-### Gestione multisito {#multi-site-manager}
+### Responsabile di più siti {#multi-site-manager}
 
 Il consumo di risorse quando si utilizza AEM MSM in un ambiente di authoring dipende in larga misura dai casi d’uso specifici. I fattori di base sono:
 

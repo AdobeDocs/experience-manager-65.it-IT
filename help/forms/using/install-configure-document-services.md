@@ -17,39 +17,39 @@ ht-degree: 1%
 
 AEM Forms fornisce un set di servizi OSGi per eseguire diverse operazioni a livello di documento, ad esempio servizi per creare, assemblare, distribuire e archiviare documenti di PDF, aggiungere firme digitali per limitare l’accesso ai documenti e decodificare Forms in codice a barre. Questi servizi sono inclusi nel pacchetto del componente aggiuntivo AEM Forms. Nel complesso, questi servizi sono noti come servizi di documentazione. Di seguito è riportato un elenco dei servizi documentali disponibili e delle relative principali funzionalità:
 
-* **Servizio assemblatore:** Consente di combinare, ridisporre e migliorare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Consente inoltre di convertire e convalidare i documenti PDF in PDF/A standard, di trasformare PDF forms, moduli XML e PDF forms in PDF/A-1b, PDF/A-2b e PDFA/A-3b. Per ulteriori informazioni, consulta [Servizio assemblatore](/help/forms/using/assembler-service.md).
+* **Servizio Assembler:** consente di combinare, ridisporre e integrare documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Consente inoltre di convertire e convalidare i documenti PDF in PDF/A standard, di trasformare PDF forms, moduli XML e PDF forms in PDF/A-1b, PDF/A-2b e PDFA/A-3b. Per ulteriori informazioni, vedere [Servizio assemblatore](/help/forms/using/assembler-service.md).
 
-* **Servizio ConvertPDF:** Consente di convertire i documenti PDF in file PostScript o di immagine (JPEG, JPEG 2000, PNG e TIFF). Per ulteriori informazioni, consulta [Servizio ConvertPDF](/help/forms/using/using-convertpdf-service.md).
+* **Servizio ConvertPDF:** Consente di convertire i documenti PDF in file PostScript o di immagine (JPEG, JPEG 2000, PNG e TIFF). Per ulteriori informazioni, vedere [ConvertPDF Service](/help/forms/using/using-convertpdf-service.md).
 
-* **Servizio Forms in codice a barre:** Consente di estrarre dati da immagini elettroniche di codici a barre. Il servizio accetta file TIFF e PDF che includono uno o più codici a barre come input ed estrae i dati del codice a barre. Per ulteriori informazioni, consulta [Servizio Forms con codice a barre](/help/forms/using/using-barcoded-forms-service.md).
+* **Servizio Forms in codice a barre:** consente di estrarre dati da immagini elettroniche di codici a barre. Il servizio accetta file TIFF e PDF che includono uno o più codici a barre come input ed estrae i dati del codice a barre. Per ulteriori informazioni, vedere [Servizio Forms in codice a barre](/help/forms/using/using-barcoded-forms-service.md).
 
-* **Servizio DocAssurance:** Consente di crittografare e decrittografare i documenti, estendere le funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi e aggiungere firme digitali ai documenti. Il servizio Doc Assurance contiene tre servizi: firma, crittografia ed estensione del lettore. Per ulteriori informazioni, consulta [Servizio DocAssurance](/help/forms/using/overview-aem-document-services.md).
+* **Servizio DocAssurance:** Consente di crittografare e decrittografare documenti, estendere le funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi e aggiungere firme digitali ai documenti. Il servizio Doc Assurance contiene tre servizi: firma, crittografia ed estensione del lettore. Per ulteriori informazioni, vedere [Servizio DocAssurance](/help/forms/using/overview-aem-document-services.md).
 
-* **Servizio Encryption:** Consente di crittografare e decrittografare i documenti. Quando un documento viene crittografato, il suo contenuto diventa illeggibile. Un utente autorizzato può decrittografare il documento per ottenere l’accesso al relativo contenuto. Per ulteriori informazioni, consulta [Servizio Encryption](/help/forms/using/overview-aem-document-services.md#encryption-service).
+* **Servizio di crittografia:** consente di crittografare e decrittografare i documenti. Quando un documento viene crittografato, il suo contenuto diventa illeggibile. Un utente autorizzato può decrittografare il documento per ottenere l’accesso al relativo contenuto. Per ulteriori informazioni, vedere [Servizio di crittografia](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
-* **Servizio Forms:** Consente di creare applicazioni client di acquisizione dati interattive per la convalida, l&#39;elaborazione, la trasformazione e la distribuzione di moduli generalmente creati in Forms Designer. Il servizio Forms esegue il rendering di qualsiasi struttura di modulo sviluppata in documenti PDF. Per ulteriori informazioni, consulta [Servizio Forms](/help/forms/using/forms-service.md).
+* **Servizio Forms:** consente di creare applicazioni client di acquisizione dati interattive che convalidano, elaborano, trasformano e distribuiscono moduli generalmente creati in Forms Designer. Il servizio Forms esegue il rendering di qualsiasi struttura di modulo sviluppata in documenti PDF. Per ulteriori informazioni, vedere [Servizio Forms](/help/forms/using/forms-service.md).
 
-* **Servizio di output:** Consente di creare documenti in diversi formati, tra cui PDF, stampanti laser e stampanti di etichette. I formati delle stampanti laser sono PostScript e Printer Control Language (PCL). Per ulteriori informazioni, consulta [Servizio di output](/help/forms/using/output-service.md).
+* **Servizio di output:** consente di creare documenti in formati diversi, tra cui PDF, stampanti laser e stampanti di etichette. I formati delle stampanti laser sono PostScript e Printer Control Language (PCL). Per ulteriori informazioni, vedere [Servizio di output](/help/forms/using/output-service.md).
 
-* **Servizio PDF Generator:** Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF. Per ulteriori informazioni, consulta [Servizio PDF Generator](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **Servizio PDF Generator:** Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF. Per ulteriori informazioni, vedere [Servizio PDF Generator](aem-document-services-programmatically.md#pdfgeneratorservice).
 
-* **Servizio Estensione Reader:** Consente all’organizzazione di condividere facilmente i documenti interattivi di PDF estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio attiva funzioni non disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Per ulteriori informazioni, consulta [Servizio di estensione Reader](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
+* **Servizio di estensione Reader:** consente all&#39;organizzazione di condividere facilmente documenti interattivi di PDF estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio attiva funzioni non disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Per ulteriori informazioni, vedere [Servizio di estensione di Reader](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
-* **Servizio di firma:** Consente di utilizzare firme digitali e documenti sul server AEM. Ad esempio, il servizio di firma viene utilizzato in genere nelle situazioni seguenti:
+* **Servizio di firma:** consente di utilizzare le firme digitali e i documenti nel server AEM. Ad esempio, il servizio di firma viene utilizzato in genere nelle situazioni seguenti:
 
    * Il server AEM certifica un modulo prima che venga inviato a un utente per l’apertura tramite Acrobat o Adobe Reader.
    * Il server AEM convalida una firma aggiunta a un modulo tramite Acrobat o Adobe Reader.
    * Il server AEM firma un modulo per conto di un notaio pubblico.
 
-  Il servizio di firma accede ai certificati e alle credenziali archiviati nell&#39;archivio fonti attendibili. Per ulteriori informazioni, consulta [Servizio di firma](/help/forms/using/aem-document-services-programmatically.md).
+  Il servizio di firma accede ai certificati e alle credenziali archiviati nell&#39;archivio fonti attendibili. Per ulteriori informazioni, vedere [Servizio firma](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms è una potente piattaforma di classe enterprise e i servizi di documentazione sono solo una delle funzionalità di AEM Forms. Per l’elenco completo delle funzionalità, consulta [Introduzione ad AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms è una potente piattaforma di classe enterprise e i servizi di documentazione sono solo una delle funzionalità di AEM Forms. Per l&#39;elenco completo delle funzionalità, vedere [Introduzione ad AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Topologia di distribuzione {#deployment-topology}
 
-Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. In genere, per eseguire i servizi documentali di AEM Forms è necessaria una sola istanza AEM (di authoring o pubblicazione). Per eseguire i servizi documentali di AEM Forms, si consiglia di utilizzare la topologia seguente. Per informazioni dettagliate sulle topologie, vedere [Architettura e topologie di implementazione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. In genere, per eseguire i servizi documentali di AEM Forms è necessaria una sola istanza AEM (di authoring o pubblicazione). Per eseguire i servizi documentali di AEM Forms, si consiglia di utilizzare la topologia seguente. Per informazioni dettagliate sulle topologie, vedere [Architettura e topologie di distribuzione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![Architettura e topologie di implementazione per AEM Forms](do-not-localize/document-services.png)
+![Architettura e topologie di distribuzione per AEM Forms](do-not-localize/document-services.png)
 
 >[!NOTE]
 >
@@ -59,13 +59,13 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 
 Prima di iniziare l’installazione e la configurazione dei servizi documentali di AEM Forms, assicurati:
 
-* Infrastruttura hardware e software già esistente. Per un elenco dettagliato dell&#39;hardware e del software supportati, vedere [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
+* Infrastruttura hardware e software già esistente. Per un elenco dettagliato di hardware e software supportati, vedere [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
 * Il percorso di installazione dell’istanza AEM non contiene spazi vuoti.
 * Un’istanza AEM è operativa. Nella terminologia AEM, per &quot;istanza&quot; si intende una copia dell’AEM in esecuzione su un server in modalità di authoring o pubblicazione. In genere, per eseguire i servizi documentali di AEM Forms è necessaria una sola istanza AEM (creazione o pubblicazione):
 
-   * **Autore**: istanza AEM utilizzata per creare, caricare e modificare i contenuti e amministrare il sito web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
-   * **Pubblica**: istanza dell’AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
+   * **Autore**: istanza AEM utilizzata per creare, caricare e modificare contenuti e amministrare il sito Web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
+   * **Publish**: istanza AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
 
 * I requisiti di memoria sono soddisfatti. Il pacchetto del componente aggiuntivo AEM Forms richiede:
 
@@ -74,8 +74,8 @@ Prima di iniziare l’installazione e la configurazione dei servizi documentali 
 
 * Il software client necessario affinché PDF generator esegua la conversione su Microsoft® Windows e Linux® è installato:
 
-   * **Microsoft® Windows**: Installazione [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**: Installazione [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft® Windows**: installa [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+   * **Linux®**: installa [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ Se si utilizza un sistema operativo basato su UNIX, installare i seguenti pacche
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(solo PDF Generator)** Il servizio PDF Generator supporta le route WebKit e WebToPDF per convertire i file HTML in documenti PDF. Per abilitare la conversione per la route WebToPDF, installare le librerie a 64 bit elencate di seguito. In genere, queste librerie sono già installate. Se manca una libreria, installala manualmente:
+* **(solo PDF Generator)** Il servizio PDF Generator supporta le route WebKit e WebToPDF per la conversione di file HTML in documenti PDF. Per abilitare la conversione per la route WebToPDF, installare le librerie a 64 bit elencate di seguito. In genere, queste librerie sono già installate. Se manca una libreria, installala manualmente:
 
    * linux-gate.so.1
    * libz.so.1
@@ -195,13 +195,13 @@ Se si intende utilizzare il servizio PDF Generator per convertire i formati di f
 
 >[!NOTE]
 >
->* Se il server AEM Forms si trova in un ambiente offline o protetto e Internet non è disponibile per attivare Adobe Acrobat, consulta [Attivazione offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) istruzioni per attivare tali istanze di Adobe Acrobat.
+>* Se il tuo server AEM Forms si trova in un ambiente offline o protetto e Internet non è disponibile per attivare Adobe Acrobat, consulta [Attivazione offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) per le istruzioni su come attivare tali istanze di Adobe Acrobat.
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint sono disponibili solo per Microsoft® Windows. Se si utilizza il sistema operativo basato su UNIX, installare OpenOffice per convertire i file RTF e i file Microsoft® Office supportati in documenti PDF.
 >* Chiudi tutte le finestre di dialogo visualizzate dopo l’installazione di Adobe Acrobat e del software di terze parti per tutti gli utenti configurati per l’utilizzo del servizio PDF Generator.
 >* Avviare tutto il software installato almeno una volta. Chiudi tutte le finestre di dialogo per tutti gli utenti configurati per l’utilizzo del servizio PDF Generator.
->* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e impostare una data per aggiornare la licenza oppure [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
+>* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
 
-Dopo aver installato Acrobat, aprire Microsoft® Word. Il giorno **Acrobat** , fare clic su **Crea PDF** e convertire un file .doc o .docx disponibile nel computer in un documento PDF. Se la conversione ha esito positivo, AEM Forms è pronto a utilizzare Acrobat con il servizio PDF Generator.
+Dopo aver installato Acrobat, aprire Microsoft® Word. Nella scheda **Acrobat**, fai clic su **Crea PDF** e converti un file .doc o .docx disponibile nel computer in un documento PDF. Se la conversione ha esito positivo, AEM Forms è pronto a utilizzare Acrobat con il servizio PDF Generator.
 
 ### Configurare le variabili di ambiente {#setup-environment-variables}
 
@@ -285,18 +285,18 @@ Per configurare il provider di socket SSL IBM®, effettua le seguenti operazioni
 
 Modificare le impostazioni del Centro protezione di Microsoft® Office per consentire al servizio PDF Generator di convertire i file creati con versioni precedenti di Microsoft® Office.
 
-1. Aprire un&#39;applicazione di Microsoft® Office. Microsoft® Word. Accedi a **[!UICONTROL File]**> **[!UICONTROL Opzioni]**. Viene visualizzata la finestra di dialogo delle opzioni.
+1. Aprire un&#39;applicazione di Microsoft® Office. Microsoft® Word. Passa a **[!UICONTROL File]**> **[!UICONTROL Opzioni]**. Viene visualizzata la finestra di dialogo delle opzioni.
 
-1. Clic **[!UICONTROL Centro affidabilità]** e fai clic su **[!UICONTROL Impostazioni Centro protezione]**.
-1. In **[!UICONTROL Impostazioni Centro protezione]**, fai clic su **[!UICONTROL Impostazioni blocco file]**.
-1. In **[!UICONTROL Tipo di file]** elenco, deseleziona **[!UICONTROL Apri]** per il tipo di file che il servizio PDF Generator deve essere in grado di convertire in documenti PDF.
+1. Fare clic su **[!UICONTROL Centro protezione]** e quindi su **[!UICONTROL Impostazioni Centro protezione]**.
+1. Nelle **[!UICONTROL impostazioni Centro protezione]**, fare clic su **[!UICONTROL Impostazioni blocco file]**.
+1. Nell&#39;elenco **[!UICONTROL Tipo file]** deselezionare **[!UICONTROL Apri]** per il tipo di file che il servizio PDF Generator deve essere in grado di convertire in documenti PDF.
 
 ### (Solo Windows) Concedere il privilegio del token di livello processo Sostituisci {#grant-the-replace-a-process-level-token-privilege}
 
-L&#39;account utente utilizzato per avviare il server applicazioni richiede **Sostituire un token a livello di processo** privilegio. L’account di sistema locale dispone di **Sostituire un token a livello di processo** per impostazione predefinita. Per i server in esecuzione con un utente del gruppo Administrators locale, è necessario concedere esplicitamente il privilegio. Per concedere il privilegio, effettua le seguenti operazioni:
+L&#39;account utente utilizzato per avviare il server applicazioni richiede il privilegio **Replace a process level token**. L&#39;account di sistema locale dispone del privilegio **Sostituisci un token a livello di processo** per impostazione predefinita. Per i server in esecuzione con un utente del gruppo Administrators locale, è necessario concedere esplicitamente il privilegio. Per concedere il privilegio, effettua le seguenti operazioni:
 
-1. Aprire Editor Criteri di gruppo per Microsoft® Windows. Per aprire Editor Criteri di gruppo, fare clic su **[!UICONTROL Inizio]**, tipo **gpedit.msc** nella casella Avvia ricerca e fare clic su **[!UICONTROL Editor Criteri di gruppo]**.
-1. Accedi a **[!UICONTROL Criteri computer locale]** > **[!UICONTROL Configurazione computer]** > **[!UICONTROL Impostazioni di Windows]** > **[!UICONTROL Impostazioni di protezione]** > **[!UICONTROL Criteri locali]** > **[!UICONTROL Assegnazione diritti utente]** e modificare il **[!UICONTROL Sostituire un token a livello di processo]** e includere il gruppo Administrators.
+1. Aprire Editor Criteri di gruppo per Microsoft® Windows. Per aprire l&#39;Editor Criteri di gruppo, fare clic su **[!UICONTROL Inizio]**, digitare **gpedit.msc** nella casella Avvia ricerca, quindi fare clic su **[!UICONTROL Editor Criteri di gruppo]**.
+1. Passa a **[!UICONTROL Criteri computer locale]** > **[!UICONTROL Configurazione computer]** > **[!UICONTROL Impostazioni di Windows]** > **[!UICONTROL Impostazioni protezione]** > **[!UICONTROL Criteri locali]** > **[!UICONTROL Assegnazione diritti utente]** e modifica il criterio **[!UICONTROL Sostituisci un token a livello di processo]** e includi il gruppo Administrators.
 1. Aggiungere l&#39;utente alla voce Sostituisci token a livello di processo.
 
 >[!NOTE]
@@ -317,15 +317,15 @@ L&#39;account utente utilizzato per avviare il server applicazioni richiede **So
 
 ### (Solo Windows) Disabilita Controllo account utente {#disable-user-account-control-uac}
 
-1. Per accedere all&#39;Utilità Configurazione di sistema, passare a **[!UICONTROL Start > Esegui]** e quindi immetti **[!UICONTROL MSCONFIG]**.
-1. Fai clic su **[!UICONTROL Strumenti]** , scorri verso il basso e seleziona **[!UICONTROL Modifica impostazioni Controllo account utente]**. Clic **[!UICONTROL Launch]** per eseguire il comando in una nuova finestra.
+1. Per accedere all&#39;Utilità Configurazione di sistema, passare a **[!UICONTROL Start > Esegui]** e quindi immettere **[!UICONTROL MSCONFIG]**.
+1. Fai clic sulla scheda **[!UICONTROL Strumenti]**, scorri verso il basso e seleziona **[!UICONTROL Modifica impostazioni Controllo dell&#39;account utente]**. Fare clic su **[!UICONTROL Avvia]** per eseguire il comando in una nuova finestra.
 1. Regolare il dispositivo di scorrimento al livello di notifica Mai. Al termine, chiudere la finestra dei comandi e la finestra Configurazione di sistema.
 1. Verificare che l&#39;impostazione del Registro di sistema per Controllo account utente sia impostata su 0 (zero). Per verificare, effettua le seguenti operazioni:
 
-   1. Microsoft® consiglia di eseguire il backup del Registro di sistema prima di modificarlo. Per i passaggi dettagliati, consulta [Eseguire il backup e il ripristino del Registro di sistema in Windows](https://support.microsoft.com/en-us/help/322756).
+   1. Microsoft® consiglia di eseguire il backup del Registro di sistema prima di modificarlo. Per i passaggi dettagliati, vedere [Eseguire il backup e il ripristino del Registro di sistema in Windows](https://support.microsoft.com/en-us/help/322756).
    1. Aprire l&#39;editor del Registro di sistema di Microsoft® Windows. Per aprire l&#39;editor del Registro di sistema, passare a Start > Esegui, digitare regedit e fare clic su OK.
-   1. Accedi a `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Assicurarsi che il valore di EnableLUA sia impostato su 0 (zero).
-   1. Assicurati che il valore di **EnableLUA** è impostato su 0 (zero). Se il valore non è 0, modificare il valore in 0. Chiudi l’editor del Registro di sistema.
+   1. Passa a `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Assicurarsi che il valore di EnableLUA sia impostato su 0 (zero).
+   1. Assicurarsi che il valore di **EnableLUA** sia impostato su 0 (zero). Se il valore non è 0, modificare il valore in 0. Chiudi l’editor del Registro di sistema.
 
 1. Riavvia il computer.
 
@@ -333,7 +333,7 @@ L&#39;account utente utilizzato per avviare il server applicazioni richiede **So
 
 Durante la conversione di un documento in PDF tramite il servizio PDF Generator in Windows Server, in alcuni casi Windows Server segnala che l&#39;eseguibile ha rilevato un problema e deve essere chiuso. Tuttavia, non influisce sulla conversione PDF in quanto continua in background.
 
-Per evitare di ricevere l&#39;errore, è possibile disattivare la segnalazione errori di Windows. Per ulteriori informazioni sulla disattivazione della segnalazione degli errori, consulta [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx).
+Per evitare di ricevere l&#39;errore, è possibile disattivare la segnalazione errori di Windows. Per ulteriori informazioni sulla disattivazione della segnalazione errori, vedere [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx).
 
 ### (Solo Windows) Configura conversione da HTML a PDF {#configure-html-to-pdf-conversion}
 
@@ -374,25 +374,25 @@ Copiare il tipo di carattere Unicode in una delle seguenti directory, a seconda 
 Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. Il pacchetto contiene AEM Forms Document Services e altre funzionalità di AEM Forms. Per installare il pacchetto, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
-1. In **[!UICONTROL Filtri]** sezione:
-   1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
-   2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
-1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, quindi selezionare **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
-1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu intestazione.
+1. Nella sezione **[!UICONTROL Filtri]**:
+   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]**.
+   2. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
+1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nella [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) articolo.
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza AEM. **Non arrestare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel `[AEM-Installation-Directory]/crx-quickstart/logs/error`file .log e registro stabile.
+1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza AEM. **Non arrestare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e che il log sia stabile.
 
-## Configurazioni post-installazione {#post-installation-configurations}
+## Configurazioni di installazione Post {#post-installation-configurations}
 
 ### Configurare la delega di avvio per le librerie RSA/BouncyCastle  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
-1. Arresta l’istanza AEM. Accedi a [Directory di installazione AEM]cartella \crx-quickstart\conf\. Apri il file sling.properties per la modifica.
+1. Arresta l’istanza AEM. Passare alla cartella [Directory di installazione AEM]\crx-quickstart\conf\. Apri il file sling.properties per la modifica.
 
-   Se usa `[AEM installation directory]\crx-quickstart\bin\start.bat` per avviare un’istanza AEM, modifica il file sling.properties che si trova in `[AEM_root]\crx-quickstart\`.
+   Se utilizzi `[AEM installation directory]\crx-quickstart\bin\start.bat` per avviare un&#39;istanza AEM, modifica sling.properties che si trova in `[AEM_root]\crx-quickstart\`.
 
 1. Aggiungi le seguenti proprietà al file sling.properties:
 
@@ -410,8 +410,8 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 
 ### Configurazione del servizio Gestione tipi di carattere  {#configuring-the-font-manager-service}
 
-1. Accedi a [Gestione configurazione AEM](http://localhost:4502/system/console/configMgr) come amministratore.
-1. Individuare e aprire **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** servizio. Specificare il percorso delle directory System Fonts, Adobe Server Fonts e Customer Fonts. Fai clic su **[!UICONTROL Salva]**.
+1. Accedere a [Gestione configurazione AEM](http://localhost:4502/system/console/configMgr) come amministratore.
+1. Individua e apri il servizio **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]**. Specificare il percorso delle directory System Fonts, Adobe Server Fonts e Customer Fonts. Fai clic su **[!UICONTROL Salva]**.
 
    >[!NOTE]
    >
@@ -421,23 +421,23 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 
 ### Configurare un account utente locale per eseguire il servizio PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-Per eseguire il servizio PDF Generator è necessario un account utente locale. Per i passaggi per creare un utente locale, vedi [Creare un account utente in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) o creare un account utente nelle piattaforme basate su UNIX.
+Per eseguire il servizio PDF Generator è necessario un account utente locale. Per i passaggi per creare un utente locale, vedere [Creare un account utente in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) o creare un account utente in piattaforme basate su UNIX.
 
-1. Apri [Configurazione AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html) pagina.
+1. Aprire la pagina [Configurazione AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 
-1. In **[!UICONTROL Account utente]** , fornire le credenziali di un account utente locale e fare clic su **[!UICONTROL Invia]**. Se Microsoft® Windows richiede, consenti l’accesso all’utente. Quando aggiunto correttamente, l&#39;utente configurato viene visualizzato in **[!UICONTROL Account utente]** sezione nella sezione **[!UICONTROL Account utente]** scheda.
+1. Nella scheda **[!UICONTROL Account utente]**, fornisci le credenziali di un account utente locale e fai clic su **[!UICONTROL Invia]**. Se Microsoft® Windows richiede, consenti l’accesso all’utente. Una volta aggiunto, l&#39;utente configurato viene visualizzato nella sezione **[!UICONTROL Account utente]** della scheda **[!UICONTROL Account utente]**.
 
 ### Configurare le impostazioni di timeout {#configure-the-time-out-settings}
 
-1. In entrata [Gestione configurazione AEM](http://localhost:4502/system/console/configMgr), individuare e aprire **[!UICONTROL Provider ORB Jacorb]** servizio.
+1. In [Gestione configurazione AEM](http://localhost:4502/system/console/configMgr), individuare e aprire il servizio **[!UICONTROL Provider ORB Jacorb]**.
 
-   Aggiungi quanto segue a **[!UICONTROL Proprietà personalizzate.name]** e fai clic su **[!UICONTROL Salva]**. Imposta il timeout della risposta in sospeso (noto anche come timeout del client CORBA) su 600 secondi.
+   Aggiungi quanto segue al campo **[!UICONTROL Proprietà personalizzate.name]** e fai clic su **[!UICONTROL Salva]**. Imposta il timeout della risposta in sospeso (noto anche come timeout del client CORBA) su 600 secondi.
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. Accedi all’istanza di authoring dell’AEM e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura PDF Generator]**. L’URL predefinito è <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Accedi all&#39;istanza di creazione dell&#39;AEM e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura PDF Generator]**. URL predefinito: <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
 
-   Apri **[!UICONTROL Configurazione generale]** e modifica il valore dei seguenti campi per il tuo ambiente:
+   Apri la scheda **[!UICONTROL Configurazione generale]** e modifica il valore dei campi seguenti per l&#39;ambiente:
 
 <table>
  <tbody>
@@ -453,7 +453,7 @@ Per eseguire il servizio PDF Generator è necessario un account utente locale. P
   </tr>
   <tr>
    <td>Scansione di pulizia PDFG in secondi</td>
-   <td>Il numero di secondi necessari per eseguire le operazioni post-conversione.<br /> </td>
+   <td>Numero di secondi necessari per eseguire operazioni post-conversione.<br /> </td>
    <td>3600 secondi</td>
   </tr>
   <tr>
@@ -468,21 +468,21 @@ Per eseguire il servizio PDF Generator è necessario un account utente locale. P
 
 In Microsoft® Windows, il servizio PDF Generator utilizza Adobe Acrobat per convertire i formati di file supportati in un documento PDF. Per configurare Adobe Acrobat per il servizio PDF Generator, effettua le seguenti operazioni:
 
-1. Apri Acrobat e seleziona **[!UICONTROL Modifica]**> **[!UICONTROL Preferenze]**> **[!UICONTROL Updater]**. In Controlla aggiornamenti deselezionare **[!UICONTROL Installa automaticamente gli aggiornamenti]** e fai clic su **[!UICONTROL OK]**. Chiudi Acrobat.
+1. Apri Acrobat e seleziona **[!UICONTROL Modifica]**> **[!UICONTROL Preferenze]**> **[!UICONTROL Aggiornamento]**. In Verifica aggiornamenti deselezionare **[!UICONTROL Installa automaticamente gli aggiornamenti]** e fare clic su **[!UICONTROL OK]**. Chiudi Acrobat.
 1. Fare doppio clic su un documento di PDF nel sistema. Quando Acrobat viene avviato per la prima volta, vengono visualizzate le finestre di dialogo per l’accesso, la schermata di benvenuto e le condizioni di licenza. Chiudere queste finestre di dialogo per tutti gli utenti configurati per l&#39;utilizzo di PDF Generator.
 1. Esegui il file batch dell’utility PDF Generator per configurare Acrobat per il servizio PDF Generator:
 
-   1. Apri [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp) e scarica `adobe-aemfd-pdfg-common-pkg-[version].zip` file da Gestione pacchetti.
+   1. Aprire [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp) e scaricare il file `adobe-aemfd-pdfg-common-pkg-[version].zip` da Gestione pacchetti.
    1. Decomprimi il file .zip scaricato. Aprire il prompt dei comandi con privilegi amministrativi.
-   1. Accedi a `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
-   1. Decomprimi il `adobe-aemfd-pdfg-common-pkg-[version]`.
-   1. Accedi a `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directory. Esegui il seguente file batch:
+   1. Passa a `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
+   1. Decomprimi `adobe-aemfd-pdfg-common-pkg-[version]`.
+   1. Passare alla directory `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Esegui il seguente file batch:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
       Acrobat è configurato per l’esecuzione con il servizio PDF Generator.
 
-1. Esegui [Strumento di preparazione al sistema (SRT)](#SRT) per convalidare l’installazione di Acrobat.
+1. Esegui [Strumento di preparazione al sistema (SRT)](#SRT) per convalidare l&#39;installazione di Acrobat.
 
 ### (Solo per Windows) Configura la route principale per la conversione da HTML a PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -490,17 +490,17 @@ Il servizio PDF Generator fornisce più percorsi per convertire i file HTML in d
 
 La route principale predefinita per la conversione da HTML a PDF è Webkit. Per modificare il percorso di conversione:
 
-1. Nell’istanza di authoring dell’AEM, passa a **[!UICONTROL Strumenti]**> **[!UICONTROL Forms]**> **[!UICONTROL Configura PDF Generator]**.
+1. Nell&#39;istanza dell&#39;autore AEM passare a **[!UICONTROL Strumenti]**> **[!UICONTROL Forms]**> **[!UICONTROL Configura PDF Generator]**.
 
-1. In **[!UICONTROL Configurazione generale]** , selezionare il percorso di conversione preferito dalla scheda **[!UICONTROL Percorso principale per conversioni da HTML a PDF]** a discesa.
+1. Nella scheda **[!UICONTROL Configurazione generale]**, selezionare la route di conversione preferita dal menu a discesa **[!UICONTROL Route principale per conversioni da HTML a PDF]**.
 
 ### Inizializza archivio fonti attendibili globale {#intialize-global-trust-store}
 
 Tramite la gestione dell&#39;archivio fonti attendibili è possibile importare, modificare ed eliminare certificati attendibili nel server per la convalida delle firme digitali e l&#39;autenticazione dei certificati. È possibile importare ed esportare un numero qualsiasi di certificati. Dopo l&#39;importazione di un certificato, è possibile modificare le impostazioni di attendibilità e il tipo di archivio fonti attendibili. Per inizializzare un archivio fonti attendibili, eseguire la procedura seguente:
 
 1. Accedi all’istanza di AEM Forms come amministratore.
-1. Vai a  **[!UICONTROL Strumenti]** >  **[!UICONTROL Sicurezza]** >  **[!UICONTROL Archivio fonti attendibili]**.
-1. Clic  **[!UICONTROL Crea TrustStore]**. Imposta la password e seleziona **[!UICONTROL Salva]**.
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Archivio attendibile]**.
+1. Fare clic su **[!UICONTROL Crea TrustStore]**. Imposta la password e seleziona **[!UICONTROL Salva]**.
 
 ### Configurazione dei certificati per il servizio di crittografia e l&#39;estensione del Reader {#set-up-certificates-for-reader-extension-and-encryption-service}
 
@@ -520,25 +520,25 @@ Prima di impostare i certificati, assicurati di disporre di:
 Per configurare i certificati, effettua le seguenti operazioni:
 
 1. Accedi all’istanza di creazione dell’AEM come amministratore. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
-1. Fai clic su **[!UICONTROL nome]** dell’account utente. Il **[!UICONTROL Modifica impostazioni utente]** viene visualizzata la pagina. Nell’istanza Autore AEM, i certificati risiedono in un KeyStore. Se in precedenza non è stato creato un KeyStore, fare clic su **[!UICONTROL Crea registro chiavi]** e impostare una nuova password per KeyStore. Se il server contiene già un KeyStore, salta questo passaggio.  Se utilizzi il certificato Adobe per le estensioni di Reader, la password del file Keystore è sempre la stessa della password della chiave privata.
-1. Il giorno **[!UICONTROL Modifica impostazioni utente]** , seleziona la **[!UICONTROL KeyStore]** scheda. Espandi **[!UICONTROL Aggiungi chiave privata da file di archivio chiavi]** e fornire un alias. L’alias viene utilizzato per eseguire l’operazione Estensioni di Reader.
-1. Per caricare il file del certificato, fai clic su **[!UICONTROL Seleziona file di archivio chiavi]** e carica un &lt;filename>file PFX.
+1. Fai clic sul campo **[!UICONTROL name]** dell&#39;account utente. Viene visualizzata la pagina **[!UICONTROL Modifica impostazioni utente]**. Nell’istanza Autore AEM, i certificati risiedono in un KeyStore. Se in precedenza non è stato creato un KeyStore, fare clic su **[!UICONTROL Crea KeyStore]** e impostare una nuova password per il KeyStore. Se il server contiene già un KeyStore, salta questo passaggio.  Se utilizzi il certificato Adobe per le estensioni di Reader, la password del file Keystore è sempre la stessa della password della chiave privata.
+1. Nella pagina **[!UICONTROL Modifica impostazioni utente]** selezionare la scheda **[!UICONTROL KeyStore]**. Espandere l&#39;opzione **[!UICONTROL Aggiungi chiave privata dal file dell&#39;archivio chiavi]** e specificare un alias. L’alias viene utilizzato per eseguire l’operazione Estensioni di Reader.
+1. Per caricare il file del certificato, fare clic su **[!UICONTROL Seleziona file di archivio chiavi]** e caricare un file &lt;nomefile>.pfx.
 
-   Aggiungi il **[!UICONTROL Password archivio chiavi]**, **[!UICONTROL Password chiave privata]**, e **[!UICONTROL Alias chiave privata]** associato al certificato nei rispettivi campi. Fai clic su **[!UICONTROL Invia]**.
+   Aggiungi **[!UICONTROL Password archivio chiavi]**, **[!UICONTROL Password chiave privata]** e **[!UICONTROL Alias chiave privata]** associati al certificato ai rispettivi campi. Fai clic su **[!UICONTROL Invia]**.
 
    >[!NOTE]
    >
    >Nell’ambiente di produzione, sostituisci le credenziali di valutazione con le credenziali di produzione. Prima di aggiornare una credenziale scaduta o di valutazione, è necessario eliminare le credenziali delle estensioni di Reader precedenti.
 
-1. Clic **[!UICONTROL Salva e chiudi]** il **[!UICONTROL Modifica impostazioni utente]** pagina.
+1. Fare clic su **[!UICONTROL Salva e chiudi]** nella pagina **[!UICONTROL Modifica impostazioni utente]**.
 
 ### Abilita AES-256 {#enable-aes}
 
-Per utilizzare la crittografia AES 256 per i file PDF, è necessario ottenere e installare i file Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Sostituisci i file local_policy.jar e US_export_policy.jar nella cartella jre/lib/security. Ad esempio, se si utilizza Sun JDK, copiare i file scaricati in `[JAVA_HOME]/jre/lib/security` cartella.
+Per utilizzare la crittografia AES 256 per i file PDF, è necessario ottenere e installare i file Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Sostituisci i file local_policy.jar e US_export_policy.jar nella cartella jre/lib/security. Ad esempio, se si utilizza Sun JDK, copiare i file scaricati nella cartella `[JAVA_HOME]/jre/lib/security`.
 
 Il servizio Assembler dipende dal servizio Estensioni di Reader, dal servizio Signature, dal servizio Forms e dal servizio Output. Per verificare che i servizi richiesti siano operativi, effettua le seguenti operazioni:
 
-1. Accedi all’URL `https://'[server]:[port]'/system/console/bundles` come amministratore.
+1. Accedere all&#39;URL `https://'[server]:[port]'/system/console/bundles` come amministratore.
 1. Cerca nel seguente servizio e assicurati che i servizi siano attivi e funzionanti:
 
 <table>
@@ -571,7 +571,7 @@ Il servizio Assembler dipende dal servizio Estensioni di Reader, dal servizio Si
 Dopo aver installato il componente aggiuntivo AEM Forms e Microsoft® Project sul computer, registrare una voce per Microsoft® Project nel percorso a 64 bit. Facilita l’esecuzione dei test di conversione da Project a PDFG. Di seguito sono riportati i passaggi che descrivono la procedura per la voce del Registro di sistema:
 
 1. Aprire l&#39;editor del Registro di sistema di Microsoft® Windows (regedit). Per aprire l&#39;editor del Registro di sistema, scegliere Start > Esegui, digitare regedit e fare clic su OK.
-1. Accedi a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`e crea un nuovo **Valore binario** e rinominarlo in **Progetto**.
+1. Passare a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, creare un nuovo **Registro di sistema Valore binario** e rinominarlo **Progetto**.
 1. Modificare il valore dei dati del Registro di sistema binario creato su 01 e fare clic su OK.
 1. Chiudere la voce del Registro di sistema.
 
@@ -596,9 +596,9 @@ Dopo aver installato il componente aggiuntivo AEM Forms e Microsoft® Project su
 
 ## Strumento di preparazione al sistema (SRT) {#SRT}
 
-Il [Strumento di preparazione al sistema](#srt-configuration) controlla se il computer è configurato correttamente per eseguire le conversioni PDF Generator. Lo strumento genera il report nel percorso specificato. Per eseguire lo strumento:
+Lo strumento [Preparazione sistema](#srt-configuration) verifica se il computer è configurato correttamente per eseguire conversioni PDF Generator. Lo strumento genera il report nel percorso specificato. Per eseguire lo strumento:
 
-1. Apri il prompt dei comandi. Accedi a `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` cartella.
+1. Apri il prompt dei comandi. Passare alla cartella `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
 1. Esegui il comando seguente dal prompt dei comandi:
 
@@ -608,9 +608,9 @@ Il [Strumento di preparazione al sistema](#srt-configuration) controlla se il co
 
    >[!NOTE]
    >
-   >* Se System Readiness Tool segnala che il file pdfgen.api non è disponibile nella cartella dei plug-in di Acrobat, copia il file pdfgen.api dalla `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` alla directory `[Acrobat_root]\Acrobat\plug_ins` directory.
+   >* Se System Readiness Tool segnala che il file pdfgen.api non è disponibile nella cartella dei plug-in di Acrobat, copiare il file pdfgen.api dalla directory `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` alla directory `[Acrobat_root]\Acrobat\plug_ins`.
 
-1. Accedi a `[Path_of_reports_folder]`. Aprire il file SystemReadinessTool.html. Verifica il rapporto e correggi i problemi indicati.
+1. Passa a `[Path_of_reports_folder]`. Aprire il file SystemReadinessTool.html. Verifica il rapporto e correggi i problemi indicati.
 
 ### Configurazione delle opzioni per lo strumento SRT {#srt-configuration}
 
@@ -641,24 +641,24 @@ Potete utilizzare il file srt_config.yaml per configurare varie impostazioni per
    outputDir:
 ```
 
-* **Lingua:** È un parametro obbligatorio. Supporta inglese (en), tedesco (de), francese (fr) e giapponese (ja). Il valore predefinito è en. Non ha alcun impatto sui servizi PDF Generator in esecuzione su AEM Forms su OSGi.
-* **aemTempDir:** Si tratta di un parametro facoltativo. Specifica il percorso di archiviazione temporanea di Adobe Experience Manager.
+* **Impostazioni locali:** È un parametro obbligatorio. Supporta inglese (en), tedesco (de), francese (fr) e giapponese (ja). Il valore predefinito è en. Non ha alcun impatto sui servizi PDF Generator in esecuzione su AEM Forms su OSGi.
+* **aemTempDir:** È un parametro facoltativo. Specifica il percorso di archiviazione temporanea di Adobe Experience Manager.
 * **utenti:** Si tratta di un parametro facoltativo. Puoi specificare un utente per verificare se dispone delle autorizzazioni necessarie e dell’accesso in lettura e scrittura alle directory necessarie per eseguire PDF Generator. Se non viene specificato alcun utente, i controlli specifici dell&#39;utente vengono ignorati e visualizzati come non riusciti nel rapporto.
-* **outputDir:** Specifica il percorso in cui salvare il rapporto SRT. La posizione di default è la directory di lavoro corrente dello strumento SRT.
+* **outputDir:** Specificare il percorso in cui salvare il report SRT. La posizione di default è la directory di lavoro corrente dello strumento SRT.
 
 ## Risoluzione dei problemi
 
 Se si verificano problemi anche dopo aver risolto tutti i problemi segnalati dallo strumento SRT, eseguire i controlli seguenti:
 
-Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazione al sistema](#SRT) non segnala alcun errore.
+Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazione al sistema](#SRT) non riporti alcun errore.
 
 +++ Adobe Acrobat
 
-* Assicurati solo [versione supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di Microsoft® Office (32 bit) e Adobe Acrobat è installato e le finestre di dialogo di apertura sono annullate.
+* Verificare che sia installata solo la [versione supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di Microsoft® Office (32 bit) e Adobe Acrobat e che le finestre di dialogo di apertura siano annullate.
 * Assicurati che Adobe Acrobat Update Service sia disabilitato.
-* Assicurati che [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) file batch eseguito con privilegi di amministratore.
+* Verificare che il file batch [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) sia stato eseguito con privilegi di amministratore.
 * Accertati che un utente PDF Generator sia aggiunto nell’interfaccia utente di configurazione PDF.
-* Assicurati che [Sostituire un token a livello di processo](#grant-the-replace-a-process-level-token-privilege) è stata aggiunta l’autorizzazione per l’utente PDF Generator.
+* Assicurati che l&#39;autorizzazione [Sostituisci un token a livello di processo](#grant-the-replace-a-process-level-token-privilege) sia aggiunta per l&#39;utente PDF Generator.
 * Verificare che Acrobat PDFMaker Office COM Addin sia abilitato per le applicazioni Microsoft Office.
 
 +++
@@ -667,9 +667,9 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 **Microsoft® Windows**
 
-* Verificare che 32 bit [versione supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di Microsoft Office è installato e le finestre di dialogo di apertura vengono annullate per tutte le applicazioni.
+* Verificare che sia installata la versione [supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di Microsoft Office a 32 bit e che le finestre di dialogo di apertura vengano annullate per tutte le applicazioni.
 * Accertati che un utente PDF Generator sia aggiunto nell’interfaccia utente di configurazione PDF.
-* Assicurarsi che l&#39;utente PDF Generator sia membro del gruppo Administrators e che [Sostituire un token a livello di processo](#grant-the-replace-a-process-level-token-privilege) privilegio impostato per l&#39;utente.
+* Verificare che l&#39;utente PDF Generator sia membro del gruppo Administrators e che il privilegio [Sostituisci token a livello di processo](#grant-the-replace-a-process-level-token-privilege) sia impostato per l&#39;utente.
 * Assicurati che l’utente sia configurato nell’interfaccia utente di PDF Generator ed esegua le seguenti azioni:
    1. Accedere a Microsoft® Windows con l&#39;utente PDF Generator.
    1. Aprire applicazioni Microsoft® Office o OpenOffice e annullare tutte le finestre di dialogo.
@@ -681,10 +681,10 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 **Linux®**
 
-* Installare [versione supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di OpenOffice. AEM Forms supporta sia le versioni a 32 bit che quelle a 64 bit. Dopo l&#39;installazione, aprire tutte le applicazioni OpenOffice, annullare tutte le finestre di dialogo e chiudere le applicazioni. Riaprire le applicazioni e assicurarsi che all&#39;apertura di un&#39;applicazione OpenOffice non venga visualizzata alcuna finestra di dialogo.
+* Installa la [versione supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di OpenOffice. AEM Forms supporta sia le versioni a 32 bit che quelle a 64 bit. Dopo l&#39;installazione, aprire tutte le applicazioni OpenOffice, annullare tutte le finestre di dialogo e chiudere le applicazioni. Riaprire le applicazioni e assicurarsi che all&#39;apertura di un&#39;applicazione OpenOffice non venga visualizzata alcuna finestra di dialogo.
 
-* Creare una variabile di ambiente `OpenOffice_PATH` e impostarlo in modo che punti all&#39;installazione di OpenOffice è impostato nel [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o il profilo dt (Device Tree).
-* In caso di problemi durante l&#39;installazione di OpenOffice, assicurarsi che [Librerie a 32 bit](#extrarequirements) necessari per l&#39;installazione di OpenOffice.
+* Creare una variabile di ambiente `OpenOffice_PATH` e impostarla in modo che punti all&#39;installazione di OpenOffice è impostata nel profilo [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o nel profilo dt (Device Tree).
+* In caso di problemi durante l&#39;installazione di OpenOffice, verificare che siano disponibili le [librerie a 32 bit](#extrarequirements) necessarie per l&#39;installazione di OpenOffice.
 
 +++
 
@@ -692,7 +692,7 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 * Assicurati che le directory dei font vengano aggiunte nell’interfaccia utente di configurazione di PDF Generator.
 
-**Linux e Solaris (percorso di conversione WebToPDF)**
+**Linux e Solaris (route di conversione WebToPDF)**
 
 * Assicurati che la libreria a 32 bit sia disponibile (libicudata.so.42) per la conversione HTMLToPDF basata su Webkit e che le librerie a 64 bit (libicudata.so.42 siano disponibili per la conversione HTMLToPDF basata su WebToPDF.
 
@@ -702,9 +702,9 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
   ldd phantomjs | grep not
   ```
 
-**Linux® e Solaris™ (percorso di conversione WebKit)**
+**Linux® e Solaris™ (route di conversione WebKit)**
 
-* Assicurarsi che le directory `/usr/lib/X11/fonts` e `/usr/share/fonts` esiste. Se le directory non esistono, crea un collegamento simbolico da `/usr/share/X11/fonts` a `/usr/lib/X11/fonts` e un altro collegamento simbolico da `/usr/share/fonts` a `/usr/share/X11/fonts`.
+* Verificare che le directory `/usr/lib/X11/fonts` e `/usr/share/fonts` esistano. Se le directory non esistono, creare un collegamento simbolico da `/usr/share/X11/fonts` a `/usr/lib/X11/fonts` e un altro da `/usr/share/fonts` a `/usr/share/X11/fonts`.
 
   ```
   ln -s /usr/share/fonts /usr/share/X11/fonts
@@ -714,10 +714,10 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 * Assicurati che i font IBM siano copiati in usr/share/fonts.
 * Assicurati che la correzione della vulnerabilità fantasma glibc sia disponibile sul computer. Utilizza il gestore di pacchetti predefinito per eseguire l’aggiornamento alla versione più recente di glibc. Include la correzione della vulnerabilità fantasma.
-* Verifica che nel sistema siano installate le versioni più recenti delle librerie lib curl, libcrypto e libssl a 32 bit. Crea anche collegamenti simbolici `/usr/lib/libcurl.so` (o libcurl.a per AIX®), `/usr/lib/libcrypto.so` (o libcrypto.a per AIX®) e `/usr/lib/libssl.so` (o libssl.a per AIX®) che punta alle versioni più recenti (32 bit) delle rispettive librerie.
+* Verifica che nel sistema siano installate le versioni più recenti delle librerie lib curl, libcrypto e libssl a 32 bit. Creare anche i symlink `/usr/lib/libcurl.so` (o libcurl.a per AIX®), `/usr/lib/libcrypto.so` (o libcrypto.a per AIX®) e `/usr/lib/libssl.so` (o libssl.a per AIX®) che puntano alle versioni più recenti (32 bit) delle rispettive librerie.
 
 * Effettua le seguenti operazioni per il provider di socket SSL IBM®:
-   1. Copia il file java.security da `<WAS_Installed_JAVA>\jre\lib\security` in qualsiasi posizione sul server AEM Forms. La posizione predefinita è Posizione predefinita = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
+   1. Copiare il file java.security da `<WAS_Installed_JAVA>\jre\lib\security` in qualsiasi posizione sul server AEM Forms. La posizione predefinita è Posizione predefinita = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
    1. Modificare il file java.security nella posizione copiata e modificare le factory SSL Socket predefinite con factory JSSE2 (utilizzare factory JSSE2 invece di WebSphere®).
 
@@ -773,13 +773,13 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 +++Scadenza della licenza di Adobe Acrobat installata su AEM Forms Server
 
-* Se disponi di una licenza esistente di Adobe Acrobat ed è scaduta, [Scarica la versione più recente di Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)e la migrazione del numero di serie. Prima di [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+* Se si dispone di una licenza esistente di Adobe Acrobat ed è scaduta, [Scaricare l&#39;ultima versione di Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html) e migrare il numero di serie. Prima della [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Utilizza i seguenti comandi per generare prov.xml e reserializzare l’installazione esistente utilizzando il file prov.xml anziché i comandi forniti in [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) articolo numero.
+   * Utilizzare i comandi seguenti per generare prov.xml e reserializzare l&#39;installazione esistente utilizzando il file prov.xml anziché i comandi forniti nell&#39;articolo numero di serie [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
          &quot;
          
-         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;leid>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;absolute path=&quot;&quot; to=&quot;&quot; prov.xml=&quot;&quot;>]
+         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=elenco limitato di impostazioni locali in formato xx_XX o ALL>] [—provfile=&lt;Percorso assoluto a prov.xml>]
          
          &quot;
      
@@ -790,13 +790,13 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
          
          &quot;
      
-* Per le installazioni su larga scala, utilizzare [Customization Wizard Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) per rimuovere le versioni precedenti di Reader e Acrobat. Personalizzare il programma di installazione e distribuirlo in tutti i computer dell&#39;organizzazione.
+* Per le installazioni su larga scala, utilizzare [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) per rimuovere le versioni precedenti di Reader e Acrobat. Personalizzare il programma di installazione e distribuirlo in tutti i computer dell&#39;organizzazione.
 
 +++
 
 +++ AEM Forms Server è in un ambiente offline o protetto e Internet non è disponibile per attivare Acrobat.
 
-* È possibile accedere a Internet entro 7 giorni dal primo lancio del prodotto di Adobe per completare l&#39;attivazione e la registrazione online oppure utilizzare un dispositivo abilitato a Internet e il numero di serie del prodotto per completare la procedura. Per istruzioni dettagliate, consulta [Attivazione offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
+* È possibile accedere a Internet entro 7 giorni dal primo lancio del prodotto di Adobe per completare l&#39;attivazione e la registrazione online oppure utilizzare un dispositivo abilitato a Internet e il numero di serie del prodotto per completare la procedura. Per istruzioni dettagliate, vedere [Attivazione offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
 
@@ -804,9 +804,10 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 Quando l&#39;utente cerca di convertire i file Word o Excel in PDF in Microsoft Windows Server, si verifica il seguente errore:
 
-*Messaggio di errore del convertitore primario: ALC-PDG-015-003-Il sistema non può aprire il file di input. Invia di nuovo il file o contatta l’amministratore di sistema.*
+*Messaggio di errore del convertitore primario:
+ALC-PDG-015-003-Impossibile aprire il file di input. Invia di nuovo il file o contatta l&#39;amministratore di sistema.*
 
-Per risolvere il problema, vedi [Impossibile convertire file Word o Excel in PDF su Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Per risolvere il problema, vedere [Impossibile convertire file Word o Excel in PDF in Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
 +++
 
@@ -824,7 +825,7 @@ Quando si converte Microsoft Excel 2019 in PDF in Microsoft Windows Server 2019,
 
 +++ Impossibile convertire i file XPS in PDF
 
-Per risolvere il problema: [creare una chiave del Registro di sistema specifica della funzionalità in Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+Per risolvere il problema, [crea una chiave del Registro di sistema specifica della funzionalità in Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
 

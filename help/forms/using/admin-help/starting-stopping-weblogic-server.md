@@ -46,11 +46,11 @@ Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza del se
 
 >[!NOTE]
 >
->Se si esegue WebLogic Server su Red Hat® Enterprise Linux Advanced Server 4.0, impostare `LD_ASSUME_KERNEL` variabile di ambiente al 2.4.19 utilizzando `export LD_ASSUME_KERNEL=2.4.19` comando. Eseguire quindi WebLogic Server dalla stessa shell in cui si imposta la variabile di ambiente.
+>Se si esegue WebLogic Server su Red Hat® Enterprise Linux Advanced Server 4.0, impostare la variabile di ambiente `LD_ASSUME_KERNEL` su 2.4.19 utilizzando il comando `export LD_ASSUME_KERNEL=2.4.19`. Eseguire quindi WebLogic Server dalla stessa shell in cui si imposta la variabile di ambiente.
 
 ## Avvia server WebLogic {#start-weblogic-server}
 
-1. Da un prompt dei comandi, passare a *[directory principale del server applicazioni]*/user_projects/domains/*[appserverdomain]*.
+1. Da un prompt dei comandi, passare a *[appserver root]*/user_projects/domains/*[appserverdomain]*.
 1. Immetti il comando seguente:
 
    * (Windows) `startWebLogic.cmd`
@@ -58,7 +58,7 @@ Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza del se
 
 ## Arresta server WebLogic {#stop-weblogic-server}
 
-1. Avviare la console di amministrazione del server WebLogic digitando `https://[host name]:7001/console` nella riga URL di un browser web.
+1. Avviare la console di amministrazione del server WebLogic digitando `https://[host name]:7001/console` nella riga URL di un browser Web.
 1. Accedere digitando il nome utente e la password utilizzati durante la creazione della configurazione WebLogic e quindi fare clic su Accedi.
 1. In Cambia centro fare clic su Blocca e modifica.
 1. In Struttura dominio, fai clic su Ambiente > Server.
@@ -71,18 +71,18 @@ La console di amministrazione del server WebLogic non è più disponibile e il p
 
 ## Avvia console di amministrazione WebLogic {#start-weblogic-administration-console}
 
-1. Se WebLogic Admin Server non è già in esecuzione, da un prompt dei comandi passare alla *[directory principale del server applicazioni]\user_projects\domains\[domainname]* e immettere il comando seguente:
+1. Se il server di amministrazione WebLogic non è già in esecuzione, da un prompt dei comandi passare alla directory principale *[appserver]\user_projects\domains\[domainname]* e immettere il comando seguente:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Accedere alla console di amministrazione del server WebLogic digitando `https://[host name]:[port]/console` nella riga URL di un browser web, dove *[porta]* è la porta di ascolto non sicura. Per impostazione predefinita, il valore della porta è 7001.
+1. Accedere alla console di amministrazione del server WebLogic digitando `https://[host name]:[port]/console` nella riga URL di un browser Web, dove *[porta]* è la porta di ascolto non protetta. Per impostazione predefinita, il valore della porta è 7001.
 1. Nella schermata di accesso, digita il nome utente e la password dell’amministratore, quindi fai clic su Accedi.
 
 ## Avvia Node Manager {#start-node-manager}
 
 1. Verificare che WebLogic Server sia in esecuzione.
-1. Da un nuovo prompt dei comandi, vai a *[directory principale del server applicazioni]*/server/bin.
+1. Da un nuovo prompt dei comandi, passare a *[appserver root]*/server/bin.
 1. Immetti il comando seguente:
 
    * (Windows) `startNodeManager.cmd`
@@ -99,7 +99,7 @@ Dopo aver arrestato WebLogic Server, è possibile chiudere il prompt dei comandi
 >Questa attività può essere eseguita solo dopo aver creato un dominio WebLogic e un server gestito.
 
 1. Verificare che il server WebLogic e Node Manager siano in esecuzione.
-1. Avviare la console di amministrazione del server WebLogic digitando `https://host name]:[port]/console` nella riga URL di un browser web.
+1. Avviare la console di amministrazione del server WebLogic digitando `https://host name]:[port]/console` nella riga URL di un browser Web.
 1. In Struttura dominio, fai clic su Ambiente > Server.
 1. Nel riquadro destro fare clic sulla scheda Controllo.
 1. Selezionare il server gestito che si desidera avviare.
@@ -107,7 +107,7 @@ Dopo aver arrestato WebLogic Server, è possibile chiudere il prompt dei comandi
 
 ## Arrestare un server gestito WebLogic {#stop-a-weblogic-managed-server}
 
-1. Avviare la console di amministrazione del server WebLogic digitando `https://`*[nome host]:[porta ]*`/console` nella riga URL di un browser web.
+1. Avviare la console di amministrazione del server WebLogic digitando `https://`*[nome host]:[porta ]*`/console` nella riga URL di un browser Web.
 1. In Struttura dominio, fai clic su Ambiente > Server.
 1. Nel riquadro destro fare clic sulla scheda Controllo.
 1. Selezionare il server gestito da arrestare.

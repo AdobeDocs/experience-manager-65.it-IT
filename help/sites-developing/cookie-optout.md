@@ -21,7 +21,7 @@ ht-degree: 2%
 AEM fornisce un servizio che consente di configurare e controllare il modo in cui i cookie vengono utilizzati con le pagine web:
 
 * Un servizio lato server configurabile mantiene un elenco di cookie che possono essere utilizzati.
-* Un’API JavaScript consente al codice JavaScript di verificare che sia possibile utilizzare un cookie.
+* Un’API di JavaScript consente al codice JavaScript di verificare che sia possibile utilizzare un cookie.
 
 Utilizza questa funzione per assicurarti che le pagine siano conformi al consenso degli utenti per quanto riguarda l’utilizzo dei cookie.
 
@@ -29,7 +29,7 @@ Utilizza questa funzione per assicurarti che le pagine siano conformi al consens
 
 Configura il servizio di rinuncia di Adobe Granite per specificare come vengono utilizzati i cookie sulle pagine web. Nella tabella seguente sono descritte le proprietà che è possibile configurare.
 
-Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente vengono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il PID del servizio è `com.adobe.granite.optout`.
+Per configurare il servizio, è possibile utilizzare la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all&#39;archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente vengono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il PID del servizio è `com.adobe.granite.optout`.
 
 | Nome proprietà (console Web) | Nome proprietà OSGi | Descrizione |
 |---|---|---|
@@ -39,18 +39,18 @@ Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying
 
 ## Convalida dell’utilizzo dei cookie {#validating-cookie-usage}
 
-Utilizza JavaScript lato client per chiamare il servizio Opt-out di Adobe Granite e verificare che sia possibile utilizzare un cookie. Utilizzare l&#39;oggetto JavaScript Granite.OptOutUtil per eseguire una delle operazioni seguenti:
+Utilizza JavaScript lato client per chiamare il servizio Opt-out di Adobe Granite e verificare di poter utilizzare un cookie. Utilizzare l&#39;oggetto JavaScript Granite.OptOutUtil per eseguire una delle operazioni seguenti:
 
 * Ottieni un elenco di nomi di cookie che indicano che l’utente non acconsente all’utilizzo dei cookie a scopo di tracciamento.
 * Ottieni un elenco di cookie che possono essere utilizzati.
 * Determina se il browser web contiene un cookie che indica che l’utente non acconsente all’utilizzo dei cookie per il tracciamento.
 * Determina se è possibile utilizzare un cookie specifico.
 
-Granite.utils [cartella della libreria client](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) fornisce l&#39;oggetto Granite.OptOutUtil. Aggiungi il seguente codice all&#39;intestazione della pagina JSP per includere un collegamento alla libreria JavaScript:
+La [cartella della libreria client](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) di granite.utils fornisce l&#39;oggetto Granite.OptOutUtil. Aggiungi il seguente codice all&#39;intestazione della pagina JSP per includere un collegamento alla libreria JavaScript:
 
 `<ui:includeClientLib categories="granite.utils" />`
 
-Ad esempio, la seguente funzione JavaScript determina se il cookie COOKIE_NAME può essere utilizzato prima di scrivervi:
+Ad esempio, la seguente funzione di JavaScript determina se il cookie COOKIE_NAME può essere utilizzato prima di scrivervi:
 
 ```
 function writeCookie(value){
@@ -101,11 +101,11 @@ Nessuno.
 
 **Restituisce**
 
-Valore booleano di `true` se viene trovato un cookie che indica assenza di consenso e un valore di `false` se nessun cookie indica il mancato consenso.
+Valore booleano `true` se viene trovato un cookie che indica che non c&#39;è consenso e valore `false` se nessun cookie indica che non c&#39;è consenso.
 
 ### funzione maySetCookie(cookieName) {#maysetcookie-cookiename-function}
 
-Determina se è possibile utilizzare un cookie specifico nel browser dell&#39;utente. Questa funzione equivale a utilizzare il `isOptedOut` per determinare se il cookie specificato è incluso nell’elenco che il cookie `getWhitelistCookieNames` restituisce.
+Determina se è possibile utilizzare un cookie specifico nel browser dell&#39;utente. Questa funzione equivale a utilizzare la funzione `isOptedOut` per determinare se il cookie specificato è incluso nell&#39;elenco restituito dalla funzione `getWhitelistCookieNames`.
 
 **Parametri**
 
@@ -113,4 +113,4 @@ Determina se è possibile utilizzare un cookie specifico nel browser dell&#39;ut
 
 **Restituisce**
 
-Valore booleano di `true` se `cookieName` può essere utilizzato o un valore di `false` se `cookieName` non può essere utilizzato.
+Valore booleano `true` se è possibile utilizzare `cookieName` oppure valore `false` se non è possibile utilizzare `cookieName`.

@@ -22,9 +22,9 @@ ht-degree: 1%
 
 L&#39;offload distribuisce le attività di elaborazione tra le istanze di Experience Manager in una topologia. L&#39;offload consente di utilizzare istanze di Experience Manager specifiche per l&#39;esecuzione di tipi specifici di elaborazione. L&#39;elaborazione specializzata consente di ottimizzare l&#39;utilizzo delle risorse server disponibili.
 
-L&#39;offload si basa sul [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling Job Manager. Per utilizzare l&#39;offload, è possibile aggiungere cluster di Experienci Manager a una topologia e identificare gli argomenti dei processi elaborati dal cluster. I cluster sono composti da una o più istanze di Experience Manager, in modo che una singola istanza venga considerata un cluster.
+Offload basato sulle funzionalità [Discovery Apache Sling](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Per utilizzare l&#39;offload, è possibile aggiungere cluster di Experienci Manager a una topologia e identificare gli argomenti dei processi elaborati dal cluster. I cluster sono composti da una o più istanze di Experience Manager, in modo che una singola istanza venga considerata un cluster.
 
-Per informazioni sull&#39;aggiunta di istanze a una topologia, vedere [Amministrazione delle topologie](/help/sites-deploying/offloading.md#administering-topologies).
+Per informazioni sull&#39;aggiunta di istanze a una topologia, vedere [Amministrazione di topologie](/help/sites-deploying/offloading.md#administering-topologies).
 
 ### Distribuzione dei processi {#job-distribution}
 
@@ -38,7 +38,7 @@ Quando JobManager crea un processo, il framework Offload seleziona un cluster di
 * Il cluster deve includere una o più istanze che eseguono un JobConsumer registrato per l&#39;argomento del processo.
 * L&#39;argomento deve essere abilitato per almeno un&#39;istanza nel cluster.
 
-Consulta [Configurazione del consumo di argomenti](/help/sites-deploying/offloading.md#configuring-topic-consumption) per informazioni sull&#39;ottimizzazione della distribuzione dei processi.
+Per informazioni su come definire la distribuzione dei processi, vedere [Configurazione del consumo di argomenti](/help/sites-deploying/offloading.md#configuring-topic-consumption).
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -155,7 +155,7 @@ Utilizza la console web o un nodo sling:OsgiConfig per configurare le seguenti p
    <td>Nome descrittore archivio</td>
    <td>leaderElectionRepositoryDescriptor</td>
    <td> </td>
-   <td>&lt;no value&gt;</td>
+   <td>&lt;nessun valore&gt;</td>
   </tr>
  </tbody>
 </table>
@@ -199,7 +199,7 @@ I job vengono distribuiti tra le istanze che hanno l&#39;argomento associato abi
    * Disabilitata: questa istanza non utilizza processi di questo argomento.
    * Esclusivo: questa istanza utilizza solo processi di questo argomento.
 
-   **Nota:** Quando si seleziona Esclusivo per un argomento, tutti gli altri argomenti vengono automaticamente impostati su Disabilitato.
+   **Nota:** quando si seleziona Esclusivo per un argomento, tutti gli altri argomenti vengono automaticamente impostati su Disabilitato.
 
 ### Consumatori processi installati {#installed-job-consumers}
 
@@ -218,11 +218,11 @@ Con Experience Manager vengono installate diverse implementazioni di JobConsumer
 
 Il servizio Apache Sling Job Consumer Manager fornisce proprietà di elenco consentiti e elenco Bloccati per argomenti. Configura queste proprietà per abilitare o disabilitare l&#39;elaborazione di argomenti specifici in un&#39;istanza di Experience Manager.
 
-**Nota:** Se l&#39;istanza appartiene a una topologia, è inoltre possibile utilizzare Offload Browser in qualsiasi computer della topologia per attivare o disattivare gli argomenti.
+**Nota:** se l&#39;istanza appartiene a una topologia, è possibile utilizzare il browser Offload in qualsiasi computer della topologia per abilitare o disabilitare gli argomenti.
 
-La logica che crea l&#39;elenco degli argomenti abilitati consente innanzitutto tutti gli argomenti presenti nell&#39;elenco consentiti e quindi rimuove gli argomenti presenti nell&#39;elenco Bloccati. Per impostazione predefinita, tutti gli argomenti sono abilitati (il valore di elenco consentiti è `*`) e nessun argomento è disabilitato (l&#39;elenco Bloccati non ha valore).
+La logica che crea l&#39;elenco degli argomenti abilitati consente innanzitutto tutti gli argomenti presenti nell&#39;elenco consentiti e quindi rimuove gli argomenti presenti nell&#39;elenco Bloccati. Per impostazione predefinita, tutti gli argomenti sono abilitati (il valore di elenco consentiti è `*`) e nessun argomento è disabilitato (l&#39;elenco Bloccati non ha un valore).
 
-Utilizza la console web o un `sling:OsgiConfig` per configurare le seguenti proprietà. Per `sling:OsgiConfig` PID del servizio Job Consumer Manager: org.apache.sling.event.impl.jobs.JobConsumerManager.
+Utilizzare la console Web o un nodo `sling:OsgiConfig` per configurare le proprietà seguenti. Per i nodi `sling:OsgiConfig`, il PID del servizio Job Consumer Manager è org.apache.sling.event.impl.jobs.JobConsumerManager.
 
 | Nome proprietà nella console web | ID OSGi | Descrizione |
 |---|---|---|
@@ -255,27 +255,27 @@ Questo schema di replica è simile a quello utilizzato tra le istanze di authori
 
 ### Denominazione degli agenti di replica per l&#39;offload {#naming-the-replication-agents-for-offloading}
 
-Utilizza un formato specifico per ***Nome*** degli agenti di replica in modo che il framework di offload utilizzi automaticamente l&#39;agente corretto per istanze di lavoro specifiche.
+Utilizza un formato specifico per la proprietà ***Name*** degli agenti di replica in modo che il framework di offload utilizzi automaticamente l&#39;agente corretto per istanze di lavoro specifiche.
 
-**Denominazione dell’agente in uscita nell’istanza di authoring:**
+**Denominazione dell&#39;agente in uscita nell&#39;istanza di authoring:**
 
-`offloading_<slingid>`, dove `<slingid>` è l’ID Sling dell’istanza di lavoro.
+`offloading_<slingid>`, dove `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
 
 Esempio: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
-**Denominazione dell’agente inverso nell’istanza di authoring:**
+**Denominazione dell&#39;agente inverso nell&#39;istanza di authoring:**
 
-`offloading_reverse_<slingid>`, dove `<slingid>` è l’ID Sling dell’istanza di lavoro.
+`offloading_reverse_<slingid>`, dove `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
 
 Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
-**Denominazione della casella in uscita nell’istanza di lavoro:**
+**Denominazione della posta in uscita nell&#39;istanza di lavoro:**
 
 `offloading_outbox`
 
 ### Creazione dell&#39;agente in uscita {#creating-the-outgoing-agent}
 
-1. Creare un **Agente di replica** sull&#39;autore. (consultare la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md)). Specifica qualsiasi **Titolo**. Il **Nome** deve seguire la convenzione di denominazione.
+1. Crea un **agente di replica** sull&#39;autore. (Vedi la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md)). Specifica un **titolo**. **Name** deve seguire la convenzione di denominazione.
 1. Crea l’agente utilizzando le seguenti proprietà:
 
    | Proprietà | Valore |
@@ -285,11 +285,11 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Trasporto >Utente trasporto | Utente di replica sull’istanza di destinazione |
    | Trasporto >Password trasporto | Password utente di replica nell’istanza di destinazione |
    | Esteso > Metodo HTTP | POST |
-   | Triggers > Ignora predefinito | True |
+   | Triggers > Ignora predefinito | Vero |
 
 ### Creazione dell’agente inverso {#creating-the-reverse-agent}
 
-1. Creare un **Agente replica inversa** sull&#39;autore. (consultare la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md).) Specifica qualsiasi **Titolo**. Il **Nome** deve seguire la convenzione di denominazione.
+1. Crea un **agente di replica inversa** sull&#39;autore. (Vedi la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md).) Specifica un **titolo**. **Name** deve seguire la convenzione di denominazione.
 1. Crea l’agente utilizzando le seguenti proprietà:
 
    | Proprietà | Valore |
@@ -302,20 +302,20 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creazione dell’agente di posta in uscita {#creating-the-outbox-agent}
 
-1. Creare un **Agente di replica** sull&#39;istanza del lavoratore. (consultare la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md).) Specifica qualsiasi **Titolo**. Il **Nome** deve essere `offloading_outbox`.
+1. Crea un **agente di replica** nell&#39;istanza di lavoro. (Vedi la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md).) Specifica un **titolo**. Il **Nome** deve essere `offloading_outbox`.
 1. Crea l’agente utilizzando le seguenti proprietà.
 
    | Proprietà | Valore |
    |---|---|
    | Impostazioni > Tipo di serializzazione | Predefiniti |
    | Trasporto >URI trasporto | repo://var/replication/outbox |
-   | Trigger > Ignora predefinito | True |
+   | Trigger > Ignora predefinito | Vero |
 
 ### Ricerca dell’ID Sling {#finding-the-sling-id}
 
 Ottieni l’ID Sling di un’istanza Experience Manager utilizzando uno dei seguenti metodi:
 
-* Apri la console web e, nelle Impostazioni Sling, individua il valore della proprietà Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Questo metodo è utile se l&#39;istanza non fa ancora parte della topologia.
+* Apri la console Web e, nelle impostazioni Sling, individua il valore della proprietà Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Questo metodo è utile se l&#39;istanza non fa ancora parte della topologia.
 * Utilizzare il browser Topologia se l&#39;istanza fa già parte della topologia.
 
 <!--
@@ -354,4 +354,4 @@ The following procedure assumes the following characteristics for the offloading
 
 Oltre ai dettagli presentati in questa pagina, puoi leggere quanto segue:
 
-* Per informazioni sull’utilizzo delle API Java per creare processi e consumer di processi, consulta [Creazione e utilizzo di processi per l&#39;offload](/help/sites-developing/dev-offloading.md).
+* Per informazioni sull&#39;utilizzo delle API Java per creare processi e consumer di processi, vedere [Creazione e utilizzo di processi per l&#39;offload](/help/sites-developing/dev-offloading.md).

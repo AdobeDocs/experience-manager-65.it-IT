@@ -25,6 +25,6 @@ Consentono di creare contenuti indipendenti dal canale, con possibili varianti p
 
 >[!CAUTION]
 >
->La funzionalità completa di Gestione dei frammenti di contenuto non è disponibile nell’interfaccia classica. Consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-authoring/content-fragments.md) nella documentazione sull’authoring standard.
+>La funzionalità completa di Gestione dei frammenti di contenuto non è disponibile nell’interfaccia classica. Consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-authoring/content-fragments.md) nella documentazione di authoring standard.
 >
 >Il componente Frammento di contenuto può essere visualizzato nella barra laterale dell’interfaccia classica, ma non sono disponibili altre funzioni.

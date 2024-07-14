@@ -34,10 +34,10 @@ Dopo aver estratto il pacchetto, apri la cartella CustomErrorManager-1.0-SNAPSHO
 
 ### Personalizzazione della posizione dei messaggi di errore  {#customizing-the-position-of-error-messages-nbsp}
 
-Per personalizzare la posizione del messaggio di errore, aggiungere una &lt;div> per ogni campo di errore e avviso, posizionare il tag &lt;div> a sinistra o a destra e applicare gli stili css al &lt;div> tag. Per i passaggi dettagliati, consulta la procedura indicata di seguito:
+Per personalizzare la posizione del messaggio di errore, aggiungi un tag &lt;div> per ciascun campo di errore e di avviso, posiziona il tag &lt;div> a sinistra o a destra e applica gli stili CSS al tag &lt;div>. Per i passaggi dettagliati, consulta la procedura indicata di seguito:
 
-1. Accedi a `CustomErrorManager-1.0-SNAPSHOT`e aprire la `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` cartella.
-1. Apri `customErrorManager.js` file per la modifica. Il `markError` nel file accetta i seguenti parametri:
+1. Passare alla cartella `CustomErrorManager-1.0-SNAPSHOT` e aprire la cartella `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Apri il file `customErrorManager.js` per la modifica. La funzione `markError` nel file accetta i seguenti parametri:
 
    |   |  |
    |---|---|
@@ -75,7 +75,7 @@ Per personalizzare la posizione del messaggio di errore, aggiungere una &lt;div>
    ```
 
 1. Salva e chiudi il file.
-1. Accedi a `CustomErrorManager-1.0-SNAPSHOT` e creare un archivio di cartelle jcr_root e META-INF. Rinomina l’archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Passare alla cartella `CustomErrorManager-1.0-SNAPSHOT` e creare un archivio di cartelle jcr_root e META-INF. Rinomina l’archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilizza Gestione pacchetti per caricare e installare il pacchetto.
 
 ## Visualizzare messaggi di errore per più campi  {#display-error-messages-for-multiple-fields-nbsp}
@@ -118,9 +118,9 @@ Utilizza il pacchetto allegato per visualizzare simultaneamente i messaggi di er
 
 ## Esegui il rendering del modulo con il nuovo profilo.  {#render-the-form-with-the-new-profile-nbsp}
 
-I moduli html5 utilizzano un profilo predefinito per impostazione predefinita: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
+I moduli html5 utilizzano un profilo predefinito: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
-Per visualizzare un modulo con i messaggi di errore personalizzati, esegui il rendering del modulo con il profilo di errore: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
+Per visualizzare un modulo con i messaggi di errore personalizzati, eseguire il rendering del modulo con il profilo di errore: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 >[!NOTE]
 >

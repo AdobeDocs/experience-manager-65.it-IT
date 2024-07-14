@@ -32,27 +32,27 @@ Adobe Experience Manager (AEM) è parte integrante dei moduli AEM. Pertanto, è 
 
 La strategia di backup basata su moduli AEM prevede due tipi di backup:
 
-**Immagine del sistema:** Backup di sistema completo che può essere utilizzato per ripristinare il contenuto del computer se il disco rigido o l&#39;intero computer smette di funzionare. Il backup dell&#39;immagine del sistema è necessario solo prima della distribuzione di produzione dei moduli AEM. Le regole aziendali interne determinano quindi la frequenza con cui vengono richiesti i backup delle immagini di sistema.
+**Immagine di sistema:** Backup di sistema completo che è possibile utilizzare per ripristinare il contenuto del computer se il disco rigido o l&#39;intero computer smette di funzionare. Il backup dell&#39;immagine del sistema è necessario solo prima della distribuzione di produzione dei moduli AEM. Le regole aziendali interne determinano quindi la frequenza con cui vengono richiesti i backup delle immagini di sistema.
 
-**L’AEM forma dati specifici:** I dati dell&#39;applicazione esistono nel database, nel GDS (Global Document Storage) e nell&#39;archivio AEM e devono essere sottoposti a backup in tempo reale. GDS è una directory utilizzata per memorizzare i file di lunga durata utilizzati all&#39;interno di un processo. Tali file possono includere PDF, criteri o modelli di modulo.
+**L&#39;AEM costituisce dati specifici:** I dati dell&#39;applicazione esistono nel database, nel GDS (Global Document Storage) e nell&#39;archivio AEM e devono essere sottoposti a backup in tempo reale. GDS è una directory utilizzata per memorizzare i file di lunga durata utilizzati all&#39;interno di un processo. Tali file possono includere PDF, criteri o modelli di modulo.
 
 >[!NOTE]
 >
->Se è installato Content Services (obsoleto), eseguire anche il backup della directory principale di archiviazione dei contenuti. Consulta [Directory principale di archiviazione dei contenuti (solo Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
+>Se è installato Content Services (obsoleto), eseguire anche il backup della directory principale di archiviazione dei contenuti. Vedere [Directory principale di archiviazione dei contenuti (solo Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
 Il database viene utilizzato per memorizzare gli artefatti del modulo, le configurazioni del servizio, lo stato del processo e i riferimenti del database ai file GDS. Se nel database è stata abilitata l&#39;archiviazione dei documenti, anche i dati e i documenti persistenti in GDS vengono memorizzati nel database. È possibile eseguire il backup e il ripristino del database utilizzando i metodi seguenti:
 
-* **Backup snapshot** La modalità indica che il sistema AEM forms è in modalità di backup a tempo indeterminato o per un numero specificato di minuti, dopo di che la modalità di backup non è più attivata. Per attivare o disattivare la modalità di backup delle copie istantanee, è possibile utilizzare una delle opzioni seguenti. Dopo uno scenario di ripristino, la modalità di backup delle copie istantanee non deve essere abilitata.
+* La modalità **Backup snapshot** indica che il sistema dei moduli AEM è in modalità di backup indefinita o per un numero specificato di minuti, dopo di che la modalità di backup non è più abilitata. Per attivare o disattivare la modalità di backup delle copie istantanee, è possibile utilizzare una delle opzioni seguenti. Dopo uno scenario di ripristino, la modalità di backup delle copie istantanee non deve essere abilitata.
 
    * Utilizzare la pagina Impostazioni di backup nella console di amministrazione. Per attivare la modalità snapshot, selezionare la casella di controllo Esegui in modalità di backup sicuro. Deselezionare la casella di controllo per uscire dalla modalità snapshot.
-   * Utilizzare lo script LCBackupMode (vedere [Eseguire il backup del database, di GDS e delle directory principali di archiviazione dei contenuti](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Per uscire dalla modalità di backup delle copie istantanee, nell&#39;argomento script impostare `continuousCoverage` parametro a `false` o utilizza `leaveContinuousCoverage` opzione.
+   * Utilizzare lo script LCBackupMode (vedere [Eseguire il backup del database, di GDS e delle directory principali dell&#39;archiviazione dei contenuti](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Per uscire dalla modalità di backup dello snapshot, nell&#39;argomento dello script impostare il parametro `continuousCoverage` su `false` o utilizzare l&#39;opzione `leaveContinuousCoverage`.
    * Utilizzare l&#39;API di backup/ripristino fornita. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
-* **Backup continuo** La modalità indica che il sistema è sempre in modalità di backup e che una nuova sessione in modalità di backup viene avviata non appena viene rilasciata la sessione precedente. Alla modalità di backup continuo non è associato alcun timeout. Quando si chiama lo script o le API LCBackupMode per uscire dalla modalità di backup continuo, viene avviata una nuova sessione di tale modalità. Questa modalità è utile per supportare backup continui, ma consente comunque di eliminare dalla directory GDS i documenti vecchi e non necessari. La modalità di backup continuo non è supportata dalla pagina Backup e ripristino. Dopo uno scenario di ripristino, la modalità di backup continua a essere abilitata. È possibile uscire dalla modalità di backup continuo (modalità di backup continuo) utilizzando lo script LCBackupMode con `leaveContinuousCoverage` opzione.
+* **La modalità di backup continuo** indica che il sistema è sempre in modalità di backup, con una nuova sessione in modalità di backup avviata non appena viene rilasciata la sessione precedente. Alla modalità di backup continuo non è associato alcun timeout. Quando si chiama lo script o le API LCBackupMode per uscire dalla modalità di backup continuo, viene avviata una nuova sessione di tale modalità. Questa modalità è utile per supportare backup continui, ma consente comunque di eliminare dalla directory GDS i documenti vecchi e non necessari. La modalità di backup continuo non è supportata dalla pagina Backup e ripristino. Dopo uno scenario di ripristino, la modalità di backup continua a essere abilitata. È possibile uscire dalla modalità di backup continuo (modalità di backup continuo) utilizzando lo script LCBackupMode con l&#39;opzione `leaveContinuousCoverage`.
 
 >[!NOTE]
 >
->Se si abbandona immediatamente la modalità di backup continuo, viene avviata una nuova sessione in modalità di backup. Per disattivare completamente la modalità di backup continuo, utilizzare `leaveContinuousCoverage` nello script, che sovrascrive la sessione esistente di rollback. In modalità di backup delle copie istantanee, è possibile lasciare la modalità di backup come si fa di solito.
+>Se si abbandona immediatamente la modalità di backup continuo, viene avviata una nuova sessione in modalità di backup. Per disabilitare completamente la modalità di backup continuo, utilizzare l&#39;opzione `leaveContinuousCoverage` nello script, che sovrascrive la sessione di backup continuo esistente. In modalità di backup delle copie istantanee, è possibile lasciare la modalità di backup come si fa di solito.
 
 Per evitare la perdita di dati, è necessario eseguire il backup dei dati specifici dell&#39;AEM in modo da garantire la correlazione tra i documenti di directory radice di archiviazione dei contenuti e GDS e i riferimenti al database.
 
@@ -81,10 +81,10 @@ Prima di riavviare Forms Server dopo un ripristino, eseguire le operazioni segue
 1. Avviare il sistema in modalità di manutenzione.
 1. Effettua le seguenti operazioni per garantire che Form Manager sia sincronizzato con i moduli AEM in modalità di manutenzione:
 
-   1. Vai a https://&lt;*server*>:&lt;*porta*>/lc/fm e accedere utilizzando le credenziali amministratore/password.
+   1. Vai a https://&lt;*server*>:&lt;*porta*>/lc/fm e accedi utilizzando le credenziali amministratore/password.
    1. Fai clic sul nome dell’utente (in questo caso Amministratore privilegiato) nell’angolo in alto a destra.
-   1. Clic **Opzioni di amministrazione**.
-   1. Clic **Inizio** per sincronizzare le risorse dall’archivio.
+   1. Fare clic su **Opzioni amministratore**.
+   1. Fai clic su **Inizio** per sincronizzare le risorse dal repository.
 
 1. In un ambiente cluster, il nodo principale (rispetto all’AEM) deve essere posizionato prima dei nodi secondari.
 1. Verificare che non vengano avviati processi da origini interne o esterne, quali il Web, l&#39;SOAP o gli iniziatori di processi EJB, fino alla convalida del normale funzionamento del sistema.
@@ -105,10 +105,10 @@ Se si modificano i percorsi del file system per un nodo standalone, è necessari
 
 In un ambiente cluster, la configurazione del percorso del file system dell&#39;archivio deve essere la stessa per tutti i nodi del cluster prima del backup e dopo il ripristino.
 
-Utilizza il `LCSetGDS`script in `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` per impostare il percorso GDS dopo aver modificato i percorsi del file system. Consulta la `ReadMe.txt` nella stessa cartella per i dettagli. Se non è possibile utilizzare il percorso della directory GDS precedente, `LCSetGDS` È necessario utilizzare lo script per impostare il nuovo percorso del GDS prima di avviare i moduli AEM.
+Utilizzare lo script `LCSetGDS` nella cartella `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` per impostare il percorso GDS dopo aver modificato i percorsi del file system. Per ulteriori dettagli, vedere il file `ReadMe.txt` nella stessa cartella. Se non è possibile utilizzare il percorso della directory GDS precedente, è necessario utilizzare lo script `LCSetGDS` per impostare il nuovo percorso del GDS prima di avviare i moduli AEM.
 
 >[!NOTE]
 >
->Questa circostanza è l&#39;unica in base alla quale utilizzare questo script per modificare la posizione di GDS. Per modificare la posizione di GDS mentre i moduli AEM sono in esecuzione, utilizzare la console di amministrazione. (vedere [Configurare le impostazioni generali dei moduli AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
+>Questa circostanza è l&#39;unica in base alla quale utilizzare questo script per modificare la posizione di GDS. Per modificare la posizione di GDS mentre i moduli AEM sono in esecuzione, utilizzare la console di amministrazione. (Vedi [Configurare le impostazioni generali dei moduli AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
 Dopo aver impostato il percorso GDS, avviare Forms Server in modalità di manutenzione e utilizzare la console di amministrazione per aggiornare i percorsi del file system rimanenti per il nuovo nodo. Dopo aver verificato che tutte le configurazioni necessarie siano state aggiornate, riavviare e testare i moduli AEM.

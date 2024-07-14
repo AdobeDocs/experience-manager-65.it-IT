@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configurazione degli endpoint della cartella controllata {#configuring-watched-folder-endpoints}
 
-Un amministratore può configurare una cartella di rete, nota come *cartella controllata*, in modo che, quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, venga richiamata un’operazione di servizio configurata e il file venga manipolato. Dopo aver eseguito l&#39;operazione specificata, il servizio salva il file modificato in una cartella di output specificata.
+Un amministratore può configurare una cartella di rete, nota come *cartella controllata*, in modo che quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, venga richiamata un&#39;operazione di servizio configurata e il file venga manipolato. Dopo aver eseguito l&#39;operazione specificata, il servizio salva il file modificato in una cartella di output specificata.
 
 ## Configurazione del servizio Cartelle controllate {#configuring-the-watched-folder-service}
 
@@ -27,14 +27,14 @@ Prima di configurare un endpoint di cartella controllata, configura il servizio 
 * Per configurare gli attributi comuni a tutti gli endpoint della cartella controllata
 * Per fornire valori predefiniti per tutti gli endpoint della cartella controllata
 
-Dopo aver configurato il servizio Cartelle controllate, aggiungi un endpoint per il servizio di destinazione. Quando si aggiunge l&#39;endpoint, è possibile impostare valori quali il nome del servizio e il nome dell&#39;operazione da richiamare quando i file o le cartelle vengono inseriti nella cartella di input del servizio Cartella controllata configurato. Per informazioni dettagliate sulla configurazione del servizio Cartelle controllate, vedi [Impostazioni del servizio Cartelle controllate](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
+Dopo aver configurato il servizio Cartelle controllate, aggiungi un endpoint per il servizio di destinazione. Quando si aggiunge l&#39;endpoint, è possibile impostare valori quali il nome del servizio e il nome dell&#39;operazione da richiamare quando i file o le cartelle vengono inseriti nella cartella di input del servizio Cartella controllata configurato. Per informazioni dettagliate sulla configurazione del servizio Cartelle controllate, vedere [Impostazioni del servizio Cartelle controllate](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
 
 ## Creazione di una cartella controllata {#creating-a-watched-folder}
 
 Puoi creare una cartella controllata nei due modi seguenti:
 
 * Quando si configurano le impostazioni per un endpoint di cartella controllata, digitare il percorso completo della directory padre nella casella Percorso e aggiungere il nome della cartella controllata da creare, come illustrato nell&#39;esempio seguente:
-  `  C:\MyPDFs\MyWatchedFolder`Poiché la cartella MyWatchedFolder non esiste già, i moduli AEM tentano di crearla in tale posizione.
+  `  C:\MyPDFs\MyWatchedFolder`Poiché la cartella MyWatchedFolder non esiste già, i moduli AEM tentano di crearla nel percorso specificato.
 
 * Creare una cartella nel file system prima di configurare un endpoint di cartella controllata, quindi digitare il percorso completo nella casella Percorso.
 
@@ -42,12 +42,12 @@ In un ambiente cluster, la cartella utilizzata come cartella controllata deve es
 
 In Windows, se il server applicazioni è in esecuzione come servizio, deve essere avviato con l&#39;accesso appropriato alla cartella condivisa in uno dei modi seguenti:
 
-* Configurare il servizio Application Server Accedi come **parametro** per iniziare come utente specifico con l’accesso appropriato alla cartella controllata condivisa.
+* Configurare il servizio Application Server Accedi come **parametro** per avviarlo come utente specifico con l&#39;accesso appropriato alla cartella controllata condivisa.
 * Configurare l&#39;opzione Avvia servizio server applicazioni come sistema locale per consentire al servizio di interagire con il desktop. Questa opzione richiede che la cartella controllata condivisa sia accessibile e scrivibile a tutti.
 
 ## Concatenamento di cartelle controllate {#chaining-together-watched-folders}
 
-Le cartelle controllate possono essere concatenate in modo che il documento risultante di una cartella controllata sia il documento di input della cartella controllata successiva. Ogni cartella controllata può richiamare un servizio diverso. Configurando in questo modo le cartelle controllate, è possibile richiamare più servizi. Ad esempio, una cartella controllata può convertire i file PDF in Adobe PostScript® e una seconda cartella controllata può convertire i file PostScript in formato PDF/A. Per farlo, imposta semplicemente il *risultato* cartella della cartella controllata definita dal primo endpoint per puntare al *input* cartella della cartella controllata definita dal secondo endpoint.
+Le cartelle controllate possono essere concatenate in modo che il documento risultante di una cartella controllata sia il documento di input della cartella controllata successiva. Ogni cartella controllata può richiamare un servizio diverso. Configurando in questo modo le cartelle controllate, è possibile richiamare più servizi. Ad esempio, una cartella controllata poteva convertire i file PDF in Adobe PostScript® e una seconda cartella controllata poteva convertire i file PostScript in formato PDF/A. A questo scopo, imposta semplicemente la cartella *result* della cartella controllata definita dal primo endpoint in modo che punti alla cartella *input* della cartella controllata definita dal secondo endpoint.
 
 L&#39;output della prima conversione passerebbe a \path\result. L&#39;input per la seconda conversione sarà \path\result e l&#39;output della seconda conversione andrà a \path\result\result (oppure alla directory definita nella casella Cartella risultati per la seconda conversione).
 
@@ -96,10 +96,10 @@ Il processo di chiamata di un servizio utilizzando le cartelle controllate è il
 1. Il provider.file_scan_service esegue le seguenti operazioni:
 
 
-   * Esegue la scansione della cartella di input per individuare i file o le cartelle che corrispondono al modello di file di inclusione ed esclude i file o le cartelle per il modello di file di esclusione specificato. I file o le cartelle meno recenti vengono prelevati per primi. Vengono selezionati anche i file e le cartelle più vecchi del tempo di attesa. In una scansione, il numero di file o cartelle elaborati dipende dalle dimensioni del batch. Per informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](configuring-watched-folder-endpoints.md#about-file-patterns). Per informazioni sull&#39;impostazione della dimensione del batch, vedere [Impostazioni del servizio Cartelle controllate](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
-   * Raccoglie i file o le cartelle da elaborare. Se i file o le cartelle non vengono scaricati completamente, vengono rilevati nella scansione successiva. Per assicurarsi che le cartelle siano completamente scaricate, gli amministratori devono creare una cartella con un nome utilizzando il modello di file di esclusione. Una volta che la cartella contiene tutti i file, è necessario rinominarla in base al pattern specificato nel modello di file di inclusione. Questo passaggio assicura che la cartella disponga di tutti i file necessari per richiamare il servizio. Per ulteriori informazioni su come assicurarsi che le cartelle siano completamente scaricate, vedi [Suggerimenti per le cartelle controllate](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+   * Esegue la scansione della cartella di input per individuare i file o le cartelle che corrispondono al modello di file di inclusione ed esclude i file o le cartelle per il modello di file di esclusione specificato. I file o le cartelle meno recenti vengono prelevati per primi. Vengono selezionati anche i file e le cartelle più vecchi del tempo di attesa. In una scansione, il numero di file o cartelle elaborati dipende dalle dimensioni del batch. Per informazioni sui modelli di file, vedere [Informazioni sui modelli di file](configuring-watched-folder-endpoints.md#about-file-patterns). Per informazioni sull&#39;impostazione della dimensione del batch, vedere [Impostazioni del servizio Cartelle controllate](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
+   * Raccoglie i file o le cartelle da elaborare. Se i file o le cartelle non vengono scaricati completamente, vengono rilevati nella scansione successiva. Per assicurarsi che le cartelle siano completamente scaricate, gli amministratori devono creare una cartella con un nome utilizzando il modello di file di esclusione. Una volta che la cartella contiene tutti i file, è necessario rinominarla in base al pattern specificato nel modello di file di inclusione. Questo passaggio assicura che la cartella disponga di tutti i file necessari per richiamare il servizio. Per ulteriori informazioni sulla verifica del completamento del download delle cartelle, vedere [Suggerimenti per le cartelle controllate](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
    * Sposta i file o le cartelle nella cartella di stage dopo averli selezionati per l&#39;elaborazione.
-   * Converte i file o le cartelle nella cartella stage nell&#39;input appropriato in base alle mappature dei parametri di input dell&#39;endpoint. Per esempi di mappature dei parametri di input, consulta [Suggerimenti per le cartelle controllate](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+   * Converte i file o le cartelle nella cartella stage nell&#39;input appropriato in base alle mappature dei parametri di input dell&#39;endpoint. Per esempi di mapping dei parametri di input, vedere [Suggerimenti per le cartelle controllate](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 
 1. Il servizio di destinazione configurato per l&#39;endpoint viene richiamato in modo sincrono o asincrono. Il servizio di destinazione viene richiamato utilizzando il nome utente e la password configurati per l&#39;endpoint.
@@ -109,34 +109,34 @@ Il processo di chiamata di un servizio utilizzando le cartelle controllate è il
 
 1. Il provider.file_write_results_service gestisce la risposta o l&#39;errore della chiamata al servizio di destinazione. In caso di esito positivo, l’output viene salvato nella cartella dei risultati in base alla configurazione dell’endpoint. Il provider.file_write_results_service conserva inoltre l&#39;origine se l&#39;endpoint è configurato per conservare i risultati al completamento corretto.
 
-   Quando la chiamata del servizio di destinazione genera un errore, il provider.file_write_results_service registra il motivo dell&#39;errore in un file failure.log e inserisce tale file nella cartella degli errori. La cartella degli errori viene creata in base ai parametri di configurazione specificati per l&#39;endpoint. Quando l&#39;amministratore imposta l&#39;opzione Mantieni in caso di errore per la configurazione dell&#39;endpoint, il provider.file_write_results_service copia anche i file di origine nella cartella degli errori. Per informazioni sul ripristino dei file dalla cartella dei file con errori, vedere [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+   Quando la chiamata del servizio di destinazione genera un errore, il provider.file_write_results_service registra il motivo dell&#39;errore in un file failure.log e inserisce tale file nella cartella degli errori. La cartella degli errori viene creata in base ai parametri di configurazione specificati per l&#39;endpoint. Quando l&#39;amministratore imposta l&#39;opzione Mantieni in caso di errore per la configurazione dell&#39;endpoint, il provider.file_write_results_service copia anche i file di origine nella cartella degli errori. Per informazioni sul ripristino dei file dalla cartella degli errori, vedere [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Impostazioni endpoint cartella controllata {#watched-folder-endpoint-settings}
 
 Utilizza le seguenti impostazioni per configurare un endpoint per cartelle controllate.
 
-**Nome:** (Obbligatorio) Identifica l’endpoint. Non includere un carattere &lt; perché il nome visualizzato in Workspace verrà troncato. Se immetti un URL come nome dell’endpoint, accertati che sia conforme alle regole di sintassi specificate in RFC1738.
+**Nome:** (obbligatorio) identifica l&#39;endpoint. Non includere un carattere &lt; perché il nome visualizzato in Workspace verrà troncato. Se immetti un URL come nome dell’endpoint, accertati che sia conforme alle regole di sintassi specificate in RFC1738.
 
-**Descrizione:** Descrizione dell&#39;endpoint. Non includere un carattere &lt; perché la descrizione visualizzata in Workspace verrà troncata.
+**Descrizione:** una descrizione dell&#39;endpoint. Non includere un carattere &lt; perché la descrizione visualizzata in Workspace verrà troncata.
 
-**Percorso:** (Obbligatorio) Specifica il percorso della cartella controllata. In un ambiente cluster, questa impostazione deve puntare a una cartella di rete condivisa accessibile da tutti i computer del cluster.
+**Percorso:** (obbligatorio) Specifica il percorso della cartella controllata. In un ambiente cluster, questa impostazione deve puntare a una cartella di rete condivisa accessibile da tutti i computer del cluster.
 
-**Asincrono:** Identifica il tipo di chiamata come asincrona o sincrona. Il valore predefinito è asincrono. L&#39;asincronia è consigliata per i processi di lunga durata, mentre la sincronia è consigliata per i processi transitori o di breve durata.
+**Asincrono:** identifica il tipo di chiamata come asincrono o sincrono. Il valore predefinito è asincrono. L&#39;asincronia è consigliata per i processi di lunga durata, mentre la sincronia è consigliata per i processi transitori o di breve durata.
 
-**Espressione Cron:** Immetti un’espressione cron se la cartella controllata deve essere pianificata utilizzando un’espressione cron. Quando questa impostazione è configurata, Intervallo di ripetizione viene ignorato.
+**Espressione Cron:** Immettere un&#39;espressione cron se la cartella controllata deve essere pianificata utilizzando un&#39;espressione cron. Quando questa impostazione è configurata, Intervallo di ripetizione viene ignorato.
 
-**Intervallo ripetizione:** L’intervallo in secondi per la scansione della cartella controllata per l’input. Se l&#39;impostazione Limitazione non è abilitata, l&#39;intervallo di ripetizione deve essere più lungo del tempo necessario per elaborare un processo medio. In caso contrario, il sistema potrebbe sovraccaricare. Il valore predefinito è 5. Per ulteriori informazioni, consulta la descrizione di Dimensione batch.
+**Intervallo ripetizione:** l&#39;intervallo in secondi per la scansione della cartella controllata per l&#39;input. Se l&#39;impostazione Limitazione non è abilitata, l&#39;intervallo di ripetizione deve essere più lungo del tempo necessario per elaborare un processo medio. In caso contrario, il sistema potrebbe sovraccaricare. Il valore predefinito è 5. Per ulteriori informazioni, consulta la descrizione di Dimensione batch.
 
-**Conteggio ripetizioni:** Numero di volte in cui la cartella controllata esegue la scansione della cartella o della directory. Il valore -1 indica una scansione indefinita. Il valore predefinito è -1.
+**Conteggio ripetizioni:** numero di volte che la cartella controllata analizza la cartella o la directory. Il valore -1 indica una scansione indefinita. Il valore predefinito è -1.
 
-**Limitazione:** Quando questa opzione è selezionata, limita il numero di processi delle cartelle controllate che AEM elabora in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. Consulta Informazioni sulla limitazione.
+**Limitazione:** Quando questa opzione è selezionata, limita il numero di processi delle cartelle controllate che l&#39;AEM elabora in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. Consulta Informazioni sulla limitazione.
 
-**Nome utente:** (Obbligatorio) Nome utente utilizzato quando si richiama un servizio di destinazione dalla cartella controllata. Il valore predefinito è SuperAdmin.
+**Nome utente:** (obbligatorio) il nome utente utilizzato quando si richiama un servizio di destinazione dalla cartella controllata. Il valore predefinito è SuperAdmin.
 
-**Nome dominio:** (Obbligatorio) Il dominio dell’utente. Il valore predefinito è DefaultDom.
+**Nome dominio:** (obbligatorio) Il dominio dell&#39;utente. Il valore predefinito è DefaultDom.
 
-**Dimensione batch:** Il numero di file o cartelle da raccogliere per ogni scansione. Utilizzare per evitare un sovraccarico del sistema; la scansione di troppi file contemporaneamente può causare un arresto anomalo. Il valore predefinito è 2.
+**Dimensione batch:** numero di file o cartelle da raccogliere per analisi. Utilizzare per evitare un sovraccarico del sistema; la scansione di troppi file contemporaneamente può causare un arresto anomalo. Il valore predefinito è 2.
 
 Le impostazioni Intervallo di ripetizione e Dimensione batch determinano il numero di file che la cartella controllata può raccogliere in ogni scansione. La cartella controllata utilizza un pool di thread al quarzo per analizzare la cartella di input. Il pool di thread è condiviso con altri servizi. Se l&#39;intervallo di scansione è ridotto, i thread eseguiranno spesso la scansione della cartella di input. Se i file vengono rilasciati frequentemente nella cartella controllata, è necessario mantenere l&#39;intervallo di scansione ridotto. Se i file vengono eliminati raramente, utilizzare un intervallo di scansione più ampio in modo che gli altri servizi possano utilizzare i thread.
 
@@ -144,41 +144,41 @@ Se si elimina un grande volume di file, ingrandire la dimensione del batch. Ad e
 
 Quando i file vengono rilasciati nella cartella controllata, vengono elencati i file nell’input, il che può ridurre le prestazioni se la scansione viene eseguita ogni secondo. L&#39;aumento dell&#39;intervallo di scansione può migliorare le prestazioni. Se il volume dei file da eliminare è piccolo, regolare di conseguenza le dimensioni del batch e l&#39;intervallo di ripetizione. Ad esempio, se vengono rilasciati 10 file al secondo, prova a impostare l’intervallo di ripetizione su 1 secondo e la dimensione batch su 10.
 
-**Tempo di attesa:** Tempo, in millisecondi, di attesa prima della scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 3.600.000 millisecondi (un’ora) e il file è stato creato un minuto fa, questo file verrà acquisito dopo 59 o più minuti. Il valore predefinito è 0.
+**Tempo di attesa:** Tempo di attesa, in millisecondi, prima della scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 3.600.000 millisecondi (un’ora) e il file è stato creato un minuto fa, questo file verrà acquisito dopo 59 o più minuti. Il valore predefinito è 0.
 
 Questa impostazione è utile per garantire che un file o una cartella sia completamente copiato nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il download richiede dieci minuti, impostare il tempo di attesa su 10&amp;ast;60 &amp;ast;1000 millisecondi. Questo impedisce alla cartella controllata di esaminare il file se non ha dieci minuti.
 
-**Escludi motivo file:** Punto e virgola **;** elenco delimitato di pattern utilizzati da una cartella controllata per determinare quali file e cartelle analizzare e raccogliere. Qualsiasi file o cartella con questo modello non verrà analizzato per l&#39;elaborazione.
+**Escludi pattern file:** Un punto e virgola **;** ha delimitato un elenco di pattern utilizzati da una cartella controllata per determinare quali file e cartelle analizzare e raccogliere. Qualsiasi file o cartella con questo modello non verrà analizzato per l&#39;elaborazione.
 
 Questa impostazione è utile quando l&#39;input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome che verrà scelto dalla cartella controllata. Questo impedisce alla cartella controllata di selezionare una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input.
 
 È possibile utilizzare i pattern di file per escludere:
 
-* File con estensioni specifiche, ad esempio &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* File con nomi specifici, ad esempio dati.&amp;ast; escluderebbe i file e le cartelle denominati *data1*, *data2* e così via.
+* File con estensioni di nome file specifiche, ad esempio &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
+* File con nomi specifici, ad esempio dati.&amp;ast; escluderebbe i file e le cartelle denominati *dati1*, *dati2* e così via.
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
    * Dati[0-9][0-9][0-9].[dD][aA]&#39;porta&#39;
    * &amp;ast;.[dD][Aa]&#39;porta&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
-Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](configuring-watched-folder-endpoints.md#about-file-patterns).
+Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Includi pattern file:** (Obbligatorio) Punto e virgola **;** elenco delimitato di pattern utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se Includi modello file è input&amp;ast;, vengono selezionati tutti i file e le cartelle che corrispondono a input&amp;ast;. Ciò include file e cartelle denominati input1, input2 e così via.
+**Includi pattern file:** (obbligatorio) Un punto e virgola **;** ha delimitato un elenco di pattern utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se il modello di file di inclusione è input&amp;ast;, vengono selezionati tutti i file e le cartelle che corrispondono a input&amp;ast;. Ciò include file e cartelle denominati input1, input2 e così via.
 
 Il valore predefinito è &amp;ast; e indica tutti i file e le cartelle.
 
 È possibile utilizzare i modelli di file per includere:
 
-* File con estensioni specifiche, ad esempio &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* File con nomi specifici, ad esempio dati.&amp;ast; includerebbe file e cartelle denominati *data1*, *data2* e così via.
+* File con estensioni di nome file specifiche, ad esempio &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
+* File con nomi specifici, ad esempio dati.&amp;ast; includerebbe file e cartelle denominati *dati1*, *dati2* e così via.
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
    * Dati[0-9][0-9][0-9].[dD][aA]&#39;porta&#39;
    * &amp;ast;.[dD][Aa]&#39;porta&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
-Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](configuring-watched-folder-endpoints.md#about-file-patterns).
+Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
 **Cartella risultati:** Cartella in cui sono archiviati i risultati salvati. Se i risultati non vengono visualizzati in questa cartella, selezionare la cartella con errori. I file di sola lettura non vengono elaborati e verranno salvati nella cartella degli errori. Questo valore può essere un percorso assoluto o relativo con i seguenti pattern di file:
@@ -198,45 +198,45 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern
 * %R = numero casuale (tra 0 e 9)
 * %P = ID processo o processo
 
-Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica `C:/Test/WF0/failure/%Y/%M/%D/%H/`, la cartella dei risultati è `C:/Test/WF0/failure/2009/07/17/20`.
+Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica `C:/Test/WF0/failure/%Y/%M/%D/%H/`, la cartella dei risultati sarà `C:/Test/WF0/failure/2009/07/17/20`.
 
-Se il percorso non è assoluto ma relativo, la cartella verrà creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella Result all&#39;interno della cartella controllata. Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](configuring-watched-folder-endpoints.md#about-file-patterns).
+Se il percorso non è assoluto ma relativo, la cartella verrà creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella Result all&#39;interno della cartella controllata. Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 >[!NOTE]
 >
->Minore è la dimensione delle cartelle dei risultati, migliori saranno le prestazioni della cartella controllata. Ad esempio, se il carico stimato per la cartella controllata è di 1000 file all’ora, prova uno schema come `result/%Y%M%D%H` in modo che venga creata una nuova sottocartella ogni ora. Se il caricamento è più piccolo (ad esempio, 1000 file al giorno), puoi utilizzare un pattern come `result/%Y%M%D`.
+>Minore è la dimensione delle cartelle dei risultati, migliori saranno le prestazioni della cartella controllata. Ad esempio, se il carico stimato per la cartella controllata è di 1000 file all&#39;ora, provare uno schema come `result/%Y%M%D%H` in modo che venga creata una nuova sottocartella ogni ora. Se il caricamento è più piccolo (ad esempio, 1000 file al giorno), puoi utilizzare un pattern come `result/%Y%M%D`.
 
-**Mantieni cartella:** Il percorso in cui vengono archiviati i file dopo la scansione e il ritiro. Il percorso può essere assoluto, relativo o nullo. È possibile utilizzare i modelli di file, come descritto per Cartella risultati. Il valore predefinito è preserve/%Y/%M/%D/.
+**Mantieni cartella:** Il percorso in cui vengono archiviati i file dopo l&#39;analisi e il prelievo completati. Il percorso può essere assoluto, relativo o nullo. È possibile utilizzare i modelli di file, come descritto per Cartella risultati. Il valore predefinito è preserve/%Y/%M/%D/.
 
-**Cartella errori:** Cartella in cui vengono salvati i file con errori. Questo percorso è sempre relativo alla cartella controllata. È possibile utilizzare i modelli di file, come descritto per Cartella risultati.
+**Cartella errori:** Cartella in cui vengono salvati i file degli errori. Questo percorso è sempre relativo alla cartella controllata. È possibile utilizzare i modelli di file, come descritto per Cartella risultati.
 
 I file di sola lettura non vengono elaborati e verranno salvati nella cartella degli errori.
 
 Il valore predefinito è errore/%Y/%M/%D/.
 
-**Mantieni in caso di errore:** Mantenere i file di input in caso di errore durante l&#39;esecuzione dell&#39;operazione su un servizio. Il valore predefinito è true.
+**Mantieni in caso di errore:** Mantieni i file di input in caso di errore durante l&#39;esecuzione dell&#39;operazione su un servizio. Il valore predefinito è true.
 
-**Sovrascrivi nomi file duplicati:** Se è impostato su True, i file presenti nella cartella dei risultati e nella cartella di conservazione vengono sovrascritti. Se è impostato su False, vengono utilizzati file e cartelle con un suffisso di indice numerico per il nome. Il valore predefinito è False.
+**Sovrascrivi nomi file duplicati:** Se è impostato su True, i file nella cartella dei risultati e nella cartella di conservazione vengono sovrascritti. Se è impostato su False, vengono utilizzati file e cartelle con un suffisso di indice numerico per il nome. Il valore predefinito è False.
 
-**Durata rimozione:** (Obbligatorio) I file e le cartelle nella cartella dei risultati vengono eliminati quando sono precedenti a questo valore. Questo valore è misurato in giorni. Questa impostazione è utile per garantire che la cartella dei risultati non sia piena.
+**Durata eliminazione:** (obbligatorio) I file e le cartelle nella cartella dei risultati vengono eliminati quando sono più vecchi di questo valore. Questo valore è misurato in giorni. Questa impostazione è utile per garantire che la cartella dei risultati non sia piena.
 
 Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
 
-**Nome operazione:** (Obbligatorio) Elenco di operazioni che possono essere assegnate all’endpoint della cartella controllata.
+**Nome operazione:** (obbligatorio) Elenco di operazioni che possono essere assegnate all&#39;endpoint della cartella controllata.
 
-**Mappature parametri di input:** Utilizzato per configurare l’input necessario per elaborare il servizio e l’operazione. Le impostazioni disponibili dipendono dal servizio che utilizza l’endpoint della cartella controllata. Di seguito sono riportati i due tipi di input:
+**Mapping parametri di input:** utilizzato per configurare l&#39;input necessario per elaborare il servizio e l&#39;operazione. Le impostazioni disponibili dipendono dal servizio che utilizza l’endpoint della cartella controllata. Di seguito sono riportati i due tipi di input:
 
-**Valore letterale:** La cartella controllata utilizza il valore immesso nel campo così come viene visualizzata. Sono supportati tutti i tipi Java di base. Ad esempio, se un’API utilizza input come String, long, int e Boolean, la stringa viene convertita nel tipo corretto e il servizio viene richiamato.
+**Letterale:** La cartella controllata utilizza il valore immesso nel campo così come viene visualizzato. Sono supportati tutti i tipi Java di base. Ad esempio, se un’API utilizza input come String, long, int e Boolean, la stringa viene convertita nel tipo corretto e il servizio viene richiamato.
 
-**Variabile:** Il valore immesso è un pattern di file utilizzato dalla cartella controllata per scegliere l&#39;input. Se, ad esempio, è disponibile il servizio di crittografia password, in cui il documento di input deve essere un file PDF, l&#39;utente può utilizzare &amp;ast;.pdf come modello di file. La cartella controllata raccoglierà tutti i file della cartella controllata che corrispondono a questo modello e richiamerà il servizio per ogni file. Quando si utilizza una variabile, tutti i file di input vengono convertiti in documenti. Sono supportate solo le API che utilizzano Document come tipo di input.
+**Variabile:** Il valore immesso è un modello di file utilizzato dalla cartella controllata per scegliere l&#39;input. Se, ad esempio, è disponibile il servizio di crittografia password, in cui il documento di input deve essere un file PDF, l&#39;utente può utilizzare &amp;ast;.pdf come modello di file. La cartella controllata raccoglierà tutti i file della cartella controllata che corrispondono a questo modello e richiamerà il servizio per ogni file. Quando si utilizza una variabile, tutti i file di input vengono convertiti in documenti. Sono supportate solo le API che utilizzano Document come tipo di input.
 
-**Mappature parametri di output:** Utilizzato per configurare gli output del servizio e dell’operazione. Le impostazioni disponibili dipendono dal servizio che utilizza l’endpoint della cartella controllata.
+**Mapping parametri di output:** utilizzati per configurare gli output del servizio e dell&#39;operazione. Le impostazioni disponibili dipendono dal servizio che utilizza l’endpoint della cartella controllata.
 
 L&#39;output della cartella controllata può essere un singolo documento, un elenco di documenti o una mappa di documenti. Questi documenti di output vengono quindi salvati nella cartella dei risultati, utilizzando il pattern specificato in Mappatura parametri di output.
 
 >[!NOTE]
 >
->La specifica di nomi che determinano nomi di file di output univoci migliora le prestazioni. Ad esempio, si consideri il caso in cui il servizio restituisce un documento di output e la mappatura dei parametri di output lo mappa a `%F.%E` (nome ed estensione del file di input). In questo caso, se gli utenti eliminano ogni minuto file con lo stesso nome e la cartella dei risultati è configurata per `result/%Y/%M/%D`, e l’impostazione Overwrite Duplicate Filename (Sovrascrivi nome file duplicato) è disattivata, la cartella controllata tenterà di risolvere i nomi dei file duplicati. Il processo di risoluzione dei nomi di file duplicati può influire sulle prestazioni. In questa situazione, modifica la mappatura dei parametri di output in `%F_%h_%m_%s_%l` per aggiungere ore, minuti, secondi e millisecondi al nome o per assicurarsi che i file rilasciati abbiano nomi univoci può migliorare le prestazioni.
+>La specifica di nomi che determinano nomi di file di output univoci migliora le prestazioni. Consideriamo ad esempio il caso in cui il servizio restituisce un documento di output e la mappatura dei parametri di output lo associa a `%F.%E` (il nome file e l&#39;estensione del file di input). In questo caso, se gli utenti eliminano file con lo stesso nome ogni minuto e la cartella dei risultati è configurata su `result/%Y/%M/%D` e l&#39;impostazione Sovrascrivi nome file duplicato è disattivata, la cartella controllata tenterà di risolvere i nomi dei file duplicati. Il processo di risoluzione dei nomi di file duplicati può influire sulle prestazioni. In questa situazione, modificare la mappatura dei parametri di output in `%F_%h_%m_%s_%l` per aggiungere ore, minuti, secondi e millisecondi al nome o verificare che i file rilasciati abbiano nomi univoci può migliorare le prestazioni.
 
 ## Informazioni sui pattern dei file {#about-file-patterns}
 
@@ -267,10 +267,10 @@ Ad esempio, il percorso della cartella dei risultati potrebbe essere `C:\Adobe\A
 
 Le mappature dei parametri di output possono inoltre specificare pattern aggiuntivi, ad esempio:
 
-* %F = Nome File Di Origine
-* %E = Estensione Nome File Di Origine
+* %F = Nome File Source
+* %E = Estensione Nome File Source
 
-Se il pattern di mappatura dei parametri di output termina con &quot;File.separator&quot; (che è il separatore di percorso), viene creata una cartella e il contenuto viene copiato in tale cartella. Se il modello non termina con &quot;File.separator&quot;, il contenuto (file di risultati o cartella) viene creato con tale nome. Per ulteriori informazioni sulle mappature dei parametri di output, consulta [Suggerimenti per le cartelle controllate](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+Se il pattern di mappatura dei parametri di output termina con &quot;File.separator&quot; (che è il separatore di percorso), viene creata una cartella e il contenuto viene copiato in tale cartella. Se il modello non termina con &quot;File.separator&quot;, il contenuto (file di risultati o cartella) viene creato con tale nome. Per ulteriori informazioni sulle mappature dei parametri di output, vedere [Suggerimenti per le cartelle controllate](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## Informazioni sulla limitazione {#about-throttling}
 
@@ -287,8 +287,8 @@ La cartella controllata esegue la scansione della cartella di input a ogni inter
 La limitazione impedisce a Cartella controllata di richiamare nuovi processi quando i processi precedenti non sono completati. La cartella controllata rileverà i processi in corso ed elaborerà nuovi processi in base alle dimensioni del batch meno quelli in corso. Ad esempio, nella seconda chiamata, se il numero di processi completati è solo tre e un processo è ancora in corso, la cartella controllata richiama solo altri tre processi.
 
 * La cartella controllata si basa sul numero di file presenti nella cartella dell’area di visualizzazione per individuare quanti processi sono in corso. Se i file rimangono non elaborati nella cartella di staging, la cartella controllata non richiamerà altri processi. Ad esempio, se la dimensione del batch è quattro e tre processi sono in stallo, la cartella controllata richiamerà solo un processo nelle chiamate successive. Esistono più scenari che possono impedire l’elaborazione dei file nella cartella dell’area di visualizzazione. Quando i processi vengono arrestati, l’amministratore può terminare il processo nella pagina di amministrazione del flusso di lavoro dei moduli in modo che Cartella controllata sposti i file fuori dalla cartella dell’area di visualizzazione.
-* Se il server di Forms si blocca prima che la cartella controllata possa richiamare i processi, l’amministratore può spostare i file fuori dalla cartella di visualizzazione. Per informazioni, consulta [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* Se il server Forms è in esecuzione ma la cartella controllata non è in esecuzione quando il servizio Gestione processi richiama, il che si verifica quando i servizi non si avviano nella sequenza ordinata, l&#39;amministratore può spostare i file fuori dalla cartella di stage. Per informazioni, consulta [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Se il server di Forms si blocca prima che la cartella controllata possa richiamare i processi, l’amministratore può spostare i file fuori dalla cartella di visualizzazione. Per informazioni, vedere [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Se il server Forms è in esecuzione ma la cartella controllata non è in esecuzione quando il servizio Gestione processi richiama, il che si verifica quando i servizi non si avviano nella sequenza ordinata, l&#39;amministratore può spostare i file fuori dalla cartella di stage. Per informazioni, vedere [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Prestazioni e scalabilità {#performance-and-scalability}
@@ -301,7 +301,7 @@ La cartella controllata dipende dal servizio di pianificazione per la pianificaz
 
 ## Cartelle controllate in un cluster {#watched-folders-in-a-cluster}
 
-In un cluster, la cartella controllata dipende dall&#39;utilità di pianificazione Quartz e dal servizio Gestione processi per il bilanciamento del carico e il failover. Per ulteriori informazioni sul comportamento del cluster Quartz, vedere [Documentazione sul quarzo](https://www.quartz-scheduler.org/documentation).
+In un cluster, la cartella controllata dipende dall&#39;utilità di pianificazione Quartz e dal servizio Gestione processi per il bilanciamento del carico e il failover. Per ulteriori informazioni sul comportamento del cluster Quartz, vedere [Documentazione Quartz](https://www.quartz-scheduler.org/documentation).
 
 La cartella controllata esegue queste tre attività principali a ogni sondaggio:
 
@@ -317,7 +317,7 @@ Per le chiamate sincrone, il load balancer al quarzo decide quale nodo riceverà
 
 ![en_synchwatchedfoldercluster](assets/en_synchwatchedfoldercluster.png)
 
-Per le chiamate sincrone, quando un nodo non riesce, il modulo di pianificazione Quartz invia nuovi eventi di polling ad altri nodi. Le chiamate avviate sul nodo non riuscito andranno perse. Per ulteriori informazioni su come recuperare i file associati al processo non riuscito, vedere [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+Per le chiamate sincrone, quando un nodo non riesce, il modulo di pianificazione Quartz invia nuovi eventi di polling ad altri nodi. Le chiamate avviate sul nodo non riuscito andranno perse. Per ulteriori informazioni su come ripristinare i file associati al processo non riuscito, vedere [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ### Cartella controllata asincrona in un cluster {#asynchronous-watched-folder-in-a-cluster}
@@ -326,7 +326,7 @@ Per le chiamate asincrone, il load balancer al quarzo decide quale nodo ricever�
 
 ![en_asynchwatchedfoldercluster](assets/en_asynchwatchedfoldercluster.png)
 
-Per le chiamate asincrone, quando un nodo non riesce, il modulo di pianificazione Quartz invia nuovi eventi di polling ad altri nodi. Le richieste di chiamata create nel nodo non riuscito verranno inserite nella coda del servizio Gestione processi e verranno inviate ad altri nodi per l&#39;elaborazione. I file per i quali non vengono create richieste di chiamata rimarranno nella cartella di stage. Per ulteriori informazioni su come recuperare i file associati al processo non riuscito, vedere [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+Per le chiamate asincrone, quando un nodo non riesce, il modulo di pianificazione Quartz invia nuovi eventi di polling ad altri nodi. Le richieste di chiamata create nel nodo non riuscito verranno inserite nella coda del servizio Gestione processi e verranno inviate ad altri nodi per l&#39;elaborazione. I file per i quali non vengono create richieste di chiamata rimarranno nella cartella di stage. Per ulteriori informazioni su come ripristinare i file associati al processo non riuscito, vedere [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Punti di errore e ripristino {#failure-points-and-recovery}
@@ -338,9 +338,9 @@ Una volta spostati i file nella cartella di staging, vengono create richieste di
 * Se il server si blocca prima che la cartella controllata possa creare la richiesta di chiamata, i file nella cartella di stage rimangono nella cartella di stage e non vengono recuperati.
 * Se la cartella controllata ha creato correttamente la richiesta di chiamata per ciascuno dei file presenti nella cartella dell&#39;area di visualizzazione e il server si blocca, esistono due comportamenti in base al tipo di chiamata:
 
-**Sincrono:** Se la cartella controllata è configurata per richiamare il servizio in modo sincrono, tutti i file nella cartella di stage non vengono elaborati nella cartella di stage.
+**Sincrona:** se la cartella controllata è configurata per richiamare il servizio in modo sincrono, tutti i file nella cartella dell&#39;area di visualizzazione rimangono non elaborati nella cartella dell&#39;area di visualizzazione.
 
-**Asincrono:** In questo caso, Watched Folder si basa sul servizio Job Manager. Se il servizio Gestione processi richiama la cartella controllata, i file nella cartella di staging vengono spostati nella cartella di conservazione o errore in base ai risultati della chiamata. Se il servizio Gestione processi non richiama la cartella controllata, i file rimarranno non elaborati nella cartella di staging. Questa situazione si verifica quando la cartella controllata non è in esecuzione quando Gestione processi richiama.
+**Asincrono:** In questo caso, la cartella controllata si basa sul servizio Gestione processi. Se il servizio Gestione processi richiama la cartella controllata, i file nella cartella di staging vengono spostati nella cartella di conservazione o errore in base ai risultati della chiamata. Se il servizio Gestione processi non richiama la cartella controllata, i file rimarranno non elaborati nella cartella di staging. Questa situazione si verifica quando la cartella controllata non è in esecuzione quando Gestione processi richiama.
 
 ### Recupero dei file di origine non elaborati nella cartella dell&#39;area di visualizzazione {#recovering-unprocessed-source-files-in-the-stage-folder}
 
@@ -374,22 +374,22 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
 * Se in Windows è presente una cartella controllata che elabora i file immagine, specificare i valori per l&#39;opzione Includi motivo file o Escludi motivo file per impedire che il file Thumbs.db generato automaticamente da Windows venga sottoposto a polling dalla cartella controllata.
 * Se viene specificata un&#39;espressione cron, l&#39;intervallo di ripetizione viene ignorato. L’utilizzo delle espressioni cron si basa sul sistema di pianificazione dei processi open source Quartz, versione 1.4.0.
 * La dimensione batch è il numero di file o cartelle che verranno raccolti in ogni scansione della cartella controllata. Se la dimensione batch è impostata su due e dieci file o cartelle vengono rilasciati nella cartella di input della cartella controllata, solo due verranno raccolti in ogni scansione. Nella scansione successiva, che si verifica dopo il tempo specificato nell&#39;intervallo di ripetizione, verranno raccolti i due file successivi.
-* Per i pattern di file, gli amministratori possono specificare espressioni regolari con il supporto aggiunto di pattern con caratteri jolly per specificare i pattern di file. La cartella controllata modifica l’espressione regolare per supportare pattern con caratteri jolly come &amp;ast;.&amp;ast; o &amp;ast;.pdf. Questi pattern con caratteri jolly non sono supportati dalle espressioni regolari.
+* Per i pattern di file, gli amministratori possono specificare espressioni regolari con il supporto aggiunto di pattern con caratteri jolly per specificare i pattern di file. Cartella controllata modifica l&#39;espressione regolare per supportare pattern con caratteri jolly come &amp;ast;.&amp;ast; o &amp;ast;.pdf. Questi pattern con caratteri jolly non sono supportati dalle espressioni regolari.
 * Watched Folder analizza la cartella di input per verificare se il file o la cartella di origine è stato completamente copiato nella cartella di input prima di iniziare l&#39;elaborazione del file o della cartella. Per assicurarsi che il file o la cartella di origine sia completamente copiato nella cartella di input della cartella controllata prima che il file o la cartella venga prelevato, eseguire le operazioni seguenti:
 
    * Usa Tempo di attesa: il tempo in millisecondi che la cartella controllata attende dall’ora dell’ultima modifica. Utilizzare questa funzione se si dispone di file di grandi dimensioni da elaborare. Ad esempio, se il download di un file richiede 10 minuti, specificare il tempo di attesa come 10&amp;ast;60 &amp;ast;1000 millisecondi. Questo impedirà alla cartella controllata di raccogliere il file se non è vecchio di 10 minuti.
-   * Utilizzate il pattern di file di esclusione (exclude file pattern) e il pattern di file di inclusione (include file pattern). Ad esempio, se il pattern del file di esclusione è `ex*` e il pattern del file di inclusione è `in*`, Watched Folder prenderà i file che iniziano con &quot;in&quot; e non prenderà i file che iniziano con &quot;ex&quot;. Per copiare file o cartelle di grandi dimensioni, rinominare il file o la cartella in modo che il nome inizi con &quot;ex&quot;. Dopo aver copiato completamente il file o la cartella denominata &quot;ex&quot; nella cartella controllata, rinominala in &quot;in&amp;ast;&quot;.
+   * Utilizzate il pattern di file di esclusione (exclude file pattern) e il pattern di file di inclusione (include file pattern). Ad esempio, se il modello di file da escludere è `ex*` e il modello di file da includere è `in*`, la cartella controllata raccoglierà i file che iniziano con &quot;in&quot; e non raccoglierà i file che iniziano con &quot;ex&quot;. Per copiare file o cartelle di grandi dimensioni, rinominare il file o la cartella in modo che il nome inizi con &quot;ex&quot;. Dopo aver copiato completamente il file o la cartella denominata &quot;ex&quot; nella cartella controllata, rinominala in &quot;in&amp;ast;&quot;.
 
 * Utilizza la durata di eliminazione per mantenere pulita la cartella dei risultati. La cartella controllata pulisce tutti i file più vecchi della durata indicata nella durata di eliminazione. La durata è in giorni.
 * Quando si aggiunge un endpoint di cartella controllata, dopo aver selezionato il nome dell’operazione, viene popolato il mapping dei parametri di input. Per ogni input dell&#39;operazione, viene generato un campo di mappatura dei parametri di input. Di seguito sono riportati alcuni esempi di mappature dei parametri di input:
 
-   * Per `com.adobe.idp.Document` input: se l&#39;operazione di servizio ha un input di tipo `Document`, l’amministratore può specificare il tipo di mappatura come `Variable`. La cartella controllata raccoglierà l&#39;input dalla cartella di input della cartella controllata in base al modello di file specificato per il parametro di input. Se l&#39;amministratore specifica `*.pdf` come parametro, ogni file con estensione .pdf verrà raccolto, convertito in `com.adobe.idp.Document`e il servizio richiamato.
-   * Per `java.util.Map` input: se l&#39;operazione di servizio ha un input di tipo `Map`, l’amministratore può specificare il tipo di mappatura come `Variable` e inserisci un valore di mappatura con un pattern come `*.pdf`. Ad esempio, un servizio richiede una mappa di due `com.adobe.idp.Document` oggetti che rappresentano due file nella cartella di input, ad esempio 1.pdf e 2.pdf. Nella cartella controllata verrà creata una mappa con la chiave come nome del file e il valore come `com.adobe.idp.Document`.
-   * Per `java.util.List` input: se l&#39;operazione di servizio ha un input di tipo List, l&#39;amministratore può specificare il tipo di mapping come `Variable` e inserisci un valore di mappatura con un pattern come `*.pdf`. Quando i file PDF vengono rilasciati nella cartella di input, la cartella controllata crea un elenco di `com.adobe.idp.Document` oggetti che rappresentano questi file e richiamano il servizio di destinazione.
-   * Per `java.lang.String`: l’amministratore ha due opzioni. Innanzitutto, l’amministratore può specificare il tipo di mappatura come `Literal` e inserisci un valore di mappatura come stringa, ad esempio `hello.` La cartella controllata richiamerà il servizio con la stringa `hello`. In secondo luogo, l’amministratore può specificare il tipo di mappatura come `Variable` e inserisci un valore di mappatura con un pattern come `*.txt`. In quest’ultimo caso, i file con estensione .txt verranno letti come un documento forzato come una stringa per richiamare il servizio.
-   * Tipo primitivo Java: l’amministratore può specificare il tipo di mappatura come `Literal` e fornisci il valore. La cartella controllata richiamerà il servizio con il valore specificato.
+   * Per l&#39;input `com.adobe.idp.Document`: se l&#39;operazione di servizio ha un input di tipo `Document`, l&#39;amministratore può specificare il tipo di mapping come `Variable`. La cartella controllata raccoglierà l&#39;input dalla cartella di input della cartella controllata in base al modello di file specificato per il parametro di input. Se l&#39;amministratore specifica `*.pdf` come parametro, ogni file con estensione .pdf verrà prelevato, convertito in `com.adobe.idp.Document` e il servizio verrà richiamato.
+   * Per l&#39;input `java.util.Map`: se l&#39;operazione di servizio ha un input di tipo `Map`, l&#39;amministratore può specificare il tipo di mapping come `Variable` e immettere un valore di mapping con un pattern come `*.pdf`. Ad esempio, un servizio richiede una mappa di due oggetti `com.adobe.idp.Document` che rappresentano due file nella cartella di input, ad esempio 1.pdf e 2.pdf. Nella cartella controllata verrà creata una mappa con la chiave come nome del file e il valore come `com.adobe.idp.Document`.
+   * Per l&#39;input `java.util.List`: se l&#39;operazione di servizio ha un input di tipo List, l&#39;amministratore può specificare il tipo di mapping come `Variable` e immettere un valore di mapping con un pattern come `*.pdf`. Quando i file PDF vengono eliminati nella cartella di input, la cartella controllata creerà un elenco degli oggetti `com.adobe.idp.Document` che rappresentano questi file e richiamerà il servizio di destinazione.
+   * Per `java.lang.String`: l&#39;amministratore ha due opzioni. Innanzitutto, l&#39;amministratore può specificare il tipo di mapping come `Literal` e immettere un valore di mapping come stringa, ad esempio `hello.` Watched Folder richiamerà il servizio con la stringa `hello`. In secondo luogo, l&#39;amministratore può specificare il tipo di mappatura come `Variable` e immettere un valore di mappatura con un modello come `*.txt`. In quest’ultimo caso, i file con estensione .txt verranno letti come un documento forzato come una stringa per richiamare il servizio.
+   * Tipo primitivo Java: l&#39;amministratore può specificare il tipo di mappatura come `Literal` e fornire il valore. La cartella controllata richiamerà il servizio con il valore specificato.
 
-* La cartella controllata è concepita per funzionare con i documenti. Gli output supportati sono `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`e un elenco e una mappa di questi tipi. Qualsiasi altro tipo genererà un output di errore nella cartella degli errori.
+* La cartella controllata è concepita per funzionare con i documenti. Gli output supportati sono `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node` e un elenco e una mappa di questi tipi. Qualsiasi altro tipo genererà un output di errore nella cartella degli errori.
 * Se i risultati non sono presenti nella cartella dei risultati, verificare la cartella dei risultati errati per verificare se si è verificato un errore.
 * La cartella controllata funziona meglio se utilizzata in modalità asincrona. In questa modalità, la cartella controllata inserisce la richiesta di chiamata nella coda e la richiama. La coda viene quindi elaborata in modo asincrono. Quando l&#39;opzione Asynchronous non è impostata, la cartella controllata richiama il servizio di destinazione in modo sincrono e il motore di elaborazione attende che il servizio venga eseguito insieme alla richiesta e che i risultati vengano prodotti. Se l’elaborazione della richiesta da parte del servizio di destinazione richiede molto tempo, nella cartella controllata potrebbero verificarsi errori di timeout.
 * La creazione di cartelle controllate per le operazioni di importazione ed esportazione non consente l’astrazione dell’estensione del nome file. Quando si richiama il servizio di integrazione dei dati del modulo utilizzando le cartelle controllate, il tipo di estensione del nome file per il file di output potrebbe non corrispondere al formato di output previsto per il tipo di oggetto documento. Ad esempio, se il file di input di una cartella controllata che richiama l’operazione di esportazione è un modulo XFA contenente dati, l’output deve essere un file di dati XDP. Per ottenere un file di output con l&#39;estensione corretta, potete specificarlo nella mappatura dei parametri di output. In questo esempio è possibile utilizzare %F.xdp per la mappatura dei parametri di output.
@@ -416,18 +416,18 @@ Per tutti i servizi, è necessario regolare la dimensione batch e l&#39;interval
 ### Genera consigli per il servizio PDF {#generate-pdf-service-recommendations}
 
 * Il servizio Generate PDF può convertire un solo file alla volta per questi tipi di file: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD, Adobe Photoshop®, Adobe FrameMaker® e Adobe PageMaker ®. Si tratta di processi con tempi di esecuzione lunghi; pertanto, assicurarsi di mantenere le dimensioni del batch su un&#39;impostazione bassa. Aumentare anche l&#39;intervallo di ripetizione se il cluster contiene più nodi.
-* Per i tipi di file PostScript (PS), PostScript incapsulato (EPS) e immagine, il servizio Generate PDF può elaborare diversi file in parallelo. È necessario regolare con attenzione la dimensione del pool bean di sessione (che determina il numero di conversioni che verranno eseguite in parallelo) in base alla capacità del server e al numero di nodi nel cluster. Quindi aumentare la dimensione del batch a un numero uguale alla dimensione del pool dei bean di sessione per i tipi di file che si sta tentando di convertire. La frequenza di polling deve essere determinata dal numero di nodi nel cluster. Tuttavia, poiché il servizio Generate PDF elabora questi tipi di processi abbastanza rapidamente, è possibile configurare l&#39;intervallo di ripetizione su un valore basso, ad esempio 5 o 10.
+* Per PostScript (PS), Encapsulated PostScript (EPS) e i tipi di file immagine, il servizio Generate PDF può elaborare diversi file in parallelo. È necessario regolare con attenzione la dimensione del pool bean di sessione (che determina il numero di conversioni che verranno eseguite in parallelo) in base alla capacità del server e al numero di nodi nel cluster. Quindi aumentare la dimensione del batch a un numero uguale alla dimensione del pool dei bean di sessione per i tipi di file che si sta tentando di convertire. La frequenza di polling deve essere determinata dal numero di nodi nel cluster. Tuttavia, poiché il servizio Generate PDF elabora questi tipi di processi abbastanza rapidamente, è possibile configurare l&#39;intervallo di ripetizione su un valore basso, ad esempio 5 o 10.
 * Anche se il servizio Generate PDF può convertire un solo file OpenOffice alla volta, la conversione è abbastanza veloce. La logica di cui sopra per le conversioni di PS, EPS e immagini si applica anche alle conversioni OpenOffice.
 * Per abilitare la distribuzione uniforme del carico nel cluster, mantenere bassa la dimensione del batch e aumentare l&#39;intervallo di ripetizione.
 
 ### consigli per il servizio forms con codice a barre {#barcoded-forms-service-recommendations}
 
-* Per ottenere prestazioni ottimali durante l&#39;elaborazione di moduli con codice a barre (file di piccole dimensioni), immettere: `10` per Dimensione batch e `2` per intervallo di ripetizione.
-* Quando nella cartella di input vengono inseriti molti file, si verificano errori con i file nascosti denominati *thumbs.db* possono verificarsi. È pertanto consigliabile impostare il modello di file da includere per i file da includere sullo stesso valore specificato per la variabile di input (ad esempio, `*.tiff`). Questo impedisce a Cartella controllata di elaborare i file DB.
-* Un valore di Dimensione batch pari a `5` e intervallo di ripetizione di `2` è in genere sufficiente perché il servizio Forms con codice a barre in genere impiega circa 0,5 secondi per elaborare un codice a barre.
-* La cartella controllata non attende il completamento del processo da parte del motore di elaborazione prima di raccogliere nuovi file o cartelle. Continua a esaminare la cartella controllata e a richiamare il servizio di destinazione. Questo comportamento può sovraccaricare il motore, causando problemi di risorse e timeout. Assicurati di utilizzare l’intervallo di ripetizione e la dimensione del batch per limitare l’input della cartella controllata. Se sono presenti più cartelle controllate, puoi aumentare l’intervallo di ripetizione e ridurre la dimensione del batch, oppure abilitare la limitazione sull’endpoint. Per informazioni sulla limitazione, consulta [Informazioni sulla limitazione](configuring-watched-folder-endpoints.md#about-throttling).
+* Per ottenere prestazioni ottimali durante l&#39;elaborazione di moduli con codice a barre (file di piccole dimensioni), immettere `10` per Dimensione batch e `2` per Intervallo di ripetizione.
+* Quando nella cartella di input vengono inseriti molti file, potrebbero verificarsi errori con i file nascosti denominati *thumbs.db*. È pertanto consigliabile impostare il modello di file da includere per i file da includere sullo stesso valore specificato per la variabile di input (ad esempio, `*.tiff`). Questo impedisce a Cartella controllata di elaborare i file DB.
+* Un valore Dimensione batch di `5` e Intervallo di ripetizione di `2` è in genere sufficiente perché il servizio Forms con codice a barre impiega in genere circa 0,5 secondi per elaborare un codice a barre.
+* La cartella controllata non attende il completamento del processo da parte del motore di elaborazione prima di raccogliere nuovi file o cartelle. Continua a esaminare la cartella controllata e a richiamare il servizio di destinazione. Questo comportamento può sovraccaricare il motore, causando problemi di risorse e timeout. Assicurati di utilizzare l’intervallo di ripetizione e la dimensione del batch per limitare l’input della cartella controllata. Se sono presenti più cartelle controllate, puoi aumentare l’intervallo di ripetizione e ridurre la dimensione del batch, oppure abilitare la limitazione sull’endpoint. Per informazioni sulla limitazione, vedere [Informazioni sulla limitazione](configuring-watched-folder-endpoints.md#about-throttling).
 * La cartella controllata rappresenta l’utente specificato nel nome utente e nel nome di dominio. Watched Folder richiama il servizio come questo utente se richiamato direttamente o se il processo ha una durata breve. Per un processo di lunga durata, il processo viene richiamato con il contesto di sistema. Gli amministratori possono impostare i criteri del sistema operativo per la cartella controllata per determinare a quale utente concedere o negare l’accesso.
-* Utilizzare i modelli di file per organizzare i risultati, gli errori e mantenere le cartelle. (vedere [Informazioni sui pattern dei file](configuring-watched-folder-endpoints.md#about-file-patterns).)
+* Utilizzare i modelli di file per organizzare i risultati, gli errori e mantenere le cartelle. (Vedi [Informazioni sui modelli di file](configuring-watched-folder-endpoints.md#about-file-patterns).)
 
 * La cartella controllata si basa sull&#39;utilità di pianificazione Quartz per la scansione delle cartelle controllate. Il modulo di pianificazione Quartz dispone di un pool di thread per la scansione. Se l&#39;intervallo di ripetizione per la cartella controllata è molto basso (&lt; 5 secondi) e la dimensione del batch è elevata (> 2), può verificarsi una situazione di tipo &quot;race condition&quot;. Quando si verifica questa condizione, un file viene raccolto da due thread Quartz:
 

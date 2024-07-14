@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Markdown {#markdown}
 
-Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor di frammenti di contenuto utilizza *markdown* sintassi per scrivere facilmente contenuti headless:
+Quando si esegue l&#39;[authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l&#39;editor dei frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente contenuti headless:
 
 ![editor markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

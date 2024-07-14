@@ -19,7 +19,7 @@ ht-degree: 59%
 Se stai riscontrando un comportamento errato o un errore in MSM, prima di iniziare e risolvere in modo dettagliato i problemi assicurati:
 
 * Controlla le [Domande frequenti su MSM](#faq) poiché alcuni problemi o domande potrebbero già essere stati affrontati lì.
-* Controlla la [Articolo sulle best practice MSM](msm-best-practices.md) poiché vi sono diversi suggerimenti e chiarimenti su alcuni malintesi.
+* Controlla l&#39;[articolo sulle best practice di MSM](msm-best-practices.md) in quanto vengono offerti diversi suggerimenti insieme a chiarimenti di alcuni malintesi.
 
 ## Ricerca di informazioni avanzate sullo stato della blueprint e della Live Copy {#advanced-info}
 
@@ -44,7 +44,7 @@ I servlet precedenti restituivano informazioni calcolate in base ai nodi e ai mi
 
 * Tipo mixin `cq:LiveSync`
    * È impostato sui nodi `jcr:content` e definisce le pagine Live Copy principali.
-   * Tali pagine hanno un `cq:LiveSyncConfig` nodo figlio di tipo `cq:LiveCopy` che contengono informazioni di base e obbligatorie sulla Live Copy tramite le seguenti proprietà:
+   * Le pagine hanno un nodo figlio `cq:LiveSyncConfig` di tipo `cq:LiveCopy` che contiene informazioni di base e obbligatorie sulla Live Copy attraverso le seguenti proprietà:
       * `cq:master` punta alla pagina blueprint della Live Copy.
       * `cq:rolloutConfigs` indica le configurazioni di rollout attive applicate alla Live Copy.
       * `cq:isDeep` è true se le pagine figlie di questa pagina Live Copy principale sono incluse nella Live Copy.
@@ -84,12 +84,12 @@ In alternativa, puoi effettuare le seguenti operazioni:
 
 Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy viene aggiornata oppure, se non esiste ancora, viene creata una nuova pagina Live Copy. Ad esempio, quando viene eseguito il rollout per la prima volta o la pagina Live Copy è stata eliminata manualmente.
 
-In quest’ultimo caso, tuttavia, se una pagina senza un `cq:LiveRelationship` esiste con lo stesso nome; questa pagina viene rinominata prima che venga creata la pagina Live Copy.
+In quest&#39;ultimo caso, tuttavia, se esiste una pagina senza una proprietà `cq:LiveRelationship` con lo stesso nome, la pagina verrà rinominata prima che venga creata la pagina Live Copy.
 
 Per impostazione predefinita, il rollout prevede una pagina Live Copy collegata, alla quale vengono distribuiti gli aggiornamenti dei blueprint. Oppure, quando viene creata una pagina Live Copy, non prevede assolutamente alcuna pagina.
 
 Se viene trovata una pagina “indipendente“, MSM sceglie di rinominare questa pagina e di creare una pagina Live Copy separata collegata.
 
-Una pagina indipendente di questo tipo in una sottostruttura Live Copy è in genere il risultato di una **Stacca** oppure la pagina Live Copy precedente è stata eliminata manualmente da un autore e quindi ricreata con lo stesso nome.
+Una tale pagina indipendente in una sottostruttura Live Copy è in genere il risultato di un&#39;operazione **Scollega** oppure la pagina Live Copy precedente è stata eliminata manualmente da un autore e quindi ricreata con lo stesso nome.
 
-Per evitare questo, utilizza la Live Copy **Sospendi** funzione invece di **Stacca**. Maggiori dettagli sulla **Stacca** azione disponibile in [questo articolo.](msm-livecopy.md)
+Per evitare questo problema, utilizza la funzione Live Copy **Sospendi** invece di **Scollega**. Ulteriori dettagli sull&#39;azione **Stacca** sono disponibili in [questo articolo.](msm-livecopy.md)

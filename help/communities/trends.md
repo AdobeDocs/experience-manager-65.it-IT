@@ -21,37 +21,37 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Il `Community Activity List` il componente consente di aggiungere informazioni sull’andamento dei post e delle visualizzazioni per membri, post e visualizzazioni di contenuto.
+Il componente `Community Activity List` consente di aggiungere informazioni sulle tendenze relative a post e visualizzazioni per membri e post e visualizzazioni di contenuto.
 
 Il documento descrive:
 
-* Aggiunta di `Community Activity List` da componente a [sito community](/help/communities/overview.md#community-sites).
+* Aggiunta del componente `Community Activity List` a un [sito community](/help/communities/overview.md#community-sites).
 
-* Impostazioni di configurazione per `Community Activity List` componente.
+* Impostazioni di configurazione per il componente `Community Activity List`.
 
 ### Requisito {#requirement}
 
-Dati per `Community Activity List` è disponibile solo quando Adobe Analytics è concesso in licenza e configurato per il sito community.
+I dati per `Community Activity List` sono disponibili solo quando Adobe Analytics è concesso in licenza e configurato per il sito community.
 
-Consulta [Configurazione di Analytics per le funzioni di Communities](/help/communities/analytics.md).
+Consulta [Configurazione di Analytics per le funzionalità delle community](/help/communities/analytics.md).
 
 ### Aggiunta di un elenco di attività community a una pagina {#adding-a-community-activity-list-to-a-page}
 
-Per aggiungere una `Community Activity List` a una pagina in modalità di authoring, individua il componente `Communities / Community Activity List` e trascinarlo nella posizione desiderata su una pagina.
+Per aggiungere un componente `Community Activity List` a una pagina in modalità di creazione, individuare il componente `Communities / Community Activity List` e trascinarlo nella posizione desiderata in una pagina.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](/help/communities/basics.md).
 
 La prima volta che viene inserito in una pagina di un sito community, viene visualizzato questo componente:
 
-![attività della community](assets/community-activity.png)
+![attività-community](assets/community-activity.png)
 
 ### Configurazione dell’elenco attività community  {#configuring-community-activity-list}
 
-Seleziona la inserita `Community Activity List` , quindi selezionare il `Configure` in modo da poter aprire la finestra di dialogo modifica.
+Seleziona il componente `Community Activity List` inserito, quindi fai clic sull&#39;icona `Configure` per aprire la finestra di dialogo di modifica.
 
 ![configura](assets/configure-new.png)
 
-Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i file caricati:
+Nella scheda **Commenti**, specifica se e come vengono visualizzati i commenti per i file caricati:
 
 ![proprietà](assets/activity-list-properties.png)
 
@@ -66,12 +66,12 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
   Il valore predefinito è `Members`.
 
-* **Titolo da visualizzare**
+* **Titolo visualizzato**
 
   Titolo descrittivo da visualizzare sopra i dati, ad esempio `Trending Content`.
 Il valore predefinito non è un titolo.
 
-* **Numero di visualizzazioni**
+* **Conteggio visualizzazioni**
 
   Il numero di elementi da elencare.
 Il valore predefinito è 10.
@@ -87,7 +87,7 @@ Il valore predefinito è 10.
 
   L&#39;impostazione predefinita è Viste.
 
-* **Periodo temporale**
+* **Periodo di tempo**
 
   Seleziona una delle seguenti opzioni:
 
@@ -107,17 +107,17 @@ L&#39;impostazione predefinita corrisponde all&#39;intero sito community.
 
 * **Aggregazione conteggio membri**
 
-  Se è deselezionato (disattivato), vengono conteggiati solo i post di livello superiore. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), allora un `Activity Type` di `Posts` non mostra mai alcuna attività in quanto non è possibile pubblicare contenuti sulla pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi su tutte le pagine discendenti.
+  Se è deselezionato (disattivato), vengono conteggiati solo i post di livello superiore. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), un `Activity Type` di `Posts` non mostra mai alcuna attività, in quanto non è possibile pubblicare contenuti nella pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi su tutte le pagine discendenti.
 Il valore predefinito è selezionato.
 
 ### Pagina di esempio con quattro componenti {#example-page-with-components}
 
-**Visitatori principali** config: Type = Membri, Activity type = Viste
+Configurazione **Visitatori principali**: Tipo = Membri, Tipo attività = Viste
 
-**Collaboratori principali** config: Tipo = Membri, Tipo di attività = Post
+**Configurazione collaboratori principali**: Tipo = Membri, Tipo attività = Post
 
-**Contenuto principale** config: Type = Content, Activity type = Views,
+**Configurazione contenuto principale**: Tipo = Contenuto, Tipo attività = Visualizzazioni,
 
-**Contenuto di tendenza** config: Type = Contenuto, Activity type = Post
+**Configurazione contenuto di tendenza**: Tipo = Contenuto, Tipo attività = Post
 
 ![componenti](assets/activity-list-components.png)

@@ -19,18 +19,18 @@ ht-degree: 1%
 
 # Analisi delle prestazioni delle pagine{#analyzing-page-performance}
 
-Apri [Approfondimenti contenuto](/help/sites-authoring/content-insights.md) per analizzare le prestazioni della pagina che si sta creando. Configura il periodo di reporting per concentrare l’analisi.
+Apri la pagina [Content Insight](/help/sites-authoring/content-insights.md) per analizzare le prestazioni della pagina che stai creando. Configura il periodo di reporting per concentrare l’analisi.
 
 ## Apertura di Analytics e Recommendations per una pagina {#opening-analytics-and-recommendations-for-a-page}
 
 Per visualizzare Analytics e Recommendations per una pagina, utilizza la procedura seguente:
 
 1. Passare alla pagina che si desidera analizzare.
-1. Nella barra degli strumenti, fai clic su **Analytics e Recommendations**.
+1. Nella barra degli strumenti fare clic su **Analytics e Recommendations**.
 
    >[!NOTE]
    >
-   >Analytics e Recommendations per una pagina vengono visualizzati solo se l’AEM è stato configurato per [integrare con Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
+   >Analytics e Recommendations per una pagina vengono visualizzati solo se hai configurato l&#39;AEM per l&#39;[integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
 
    ![schermata_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
@@ -53,7 +53,7 @@ Per modificare il periodo di reporting di una pagina di approfondimento dei cont
 
 1. Se l’intervallo temporale non viene visualizzato nella parte superiore della pagina, fai clic sull’icona Attiva/Disattiva intervallo temporale.
 
-   ![Attiva/Disattiva intervallo temporale](do-not-localize/chlimage_1-22.png)
+   ![Attiva/Disattiva intervallo di tempo](do-not-localize/chlimage_1-22.png)
 
 1. Per modificare la data di inizio del periodo di reporting, trascinare il cerchio visualizzato sul lato sinistro dell&#39;area ombreggiata sulla data di inizio desiderata.
 
@@ -65,7 +65,7 @@ Per modificare il periodo di reporting di una pagina di approfondimento dei cont
 
 Modifica la quantità di tempo trascorsa da ogni punto dati in un rapporto. Ad esempio, quando è selezionata la granularità Settimana, ogni punto dati nel rapporto Visualizzazioni rappresenta il numero di visualizzazioni per una settimana.
 
-![screen_shot_2017-11-29at141001](assets/screen_shot_2017-11-29at141001.png)
+![schermata_shot_2017-11-29at141001](assets/screen_shot_2017-11-29at141001.png)
 
 La granularità influisce sui rapporti che tracciano i dati in base al tempo, ad esempio i rapporti Visualizzazioni e Media dei minuti coinvolti nella pagina. La granularità influisce anche sulla scala dell’arco temporale.
 
@@ -85,7 +85,7 @@ Lo stato del consiglio SEO indica quando l’attività viene creata ma non ancor
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Una volta creata, l’attività viene visualizzata nell’elenco Attività dell’utente. Per informazioni sulle attività, consulta [Utilizzo delle attività](/help/sites-authoring/task-content.md).
+Una volta creata, l’attività viene visualizzata nell’elenco Attività dell’utente. Per informazioni sulle attività, vedere [Utilizzo delle attività](/help/sites-authoring/task-content.md).
 
 Per creare un&#39;attività per un consiglio SEO, attenersi alla procedura descritta di seguito.
 
@@ -106,6 +106,6 @@ Per creare un&#39;attività per un consiglio SEO, attenersi alla procedura descr
    * Priorità attività: la priorità dell&#39;attività.
    * Data scadenza: la data entro la quale l&#39;attività deve essere completata.
 
-   **Nota:** L’attività creata include anche il percorso della pagina a cui si applica il consiglio SEO (Search Engine Optimization).
+   **Nota:** l&#39;attività creata include anche il percorso della pagina a cui si applica il consiglio SEO.
 
 1. Fai clic su Fine per chiudere il messaggio Attività creata.

@@ -22,32 +22,32 @@ Questo articolo illustra strategie e best practice da implementare per ridurre i
 
 ## Impostazioni cache {#cache-settings}
 
-Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando **Configurazioni Forms per dispositivi mobili** nella console Configurazione Web AEM all&#39;indirizzo:
+Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando il componente **Configurazioni Forms mobile** nella console di configurazione Web AEM all&#39;indirizzo:
 
 * (AEM Forms su OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms su JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 Le opzioni disponibili per il caching sono le seguenti:
 
-* **Nessuno**: impone di non memorizzare in cache alcun artefatto. In pratica, questo rallenterà le prestazioni e richiederà un’elevata disponibilità di memoria a causa dell’assenza di cache.
-* **Conservatore**: determina la cache solo degli artefatti intermedi generati prima del rendering del modulo, ad esempio un modello contenente frammenti e immagini in linea.
-* **Aggressivo**: impone di memorizzare in cache quasi tutto ciò che può essere memorizzato in cache, incluso il contenuto HTML sottoposto a rendering, oltre a tutti gli artefatti del livello di memorizzazione in cache conservativa. Offre le migliori prestazioni ma consuma anche più memoria per l’archiviazione degli artefatti memorizzati nella cache. Una strategia di caching aggressiva consente di ottenere prestazioni di tempo costanti nel rendering di un modulo quando il contenuto sottoposto a rendering viene memorizzato nella cache.
+* **Nessuno**: Impone di non memorizzare in cache alcun artefatto. In pratica, questo rallenterà le prestazioni e richiederà un’elevata disponibilità di memoria a causa dell’assenza di cache.
+* **Conservativo**: detta di memorizzare in cache solo gli artefatti intermedi generati prima del rendering del modulo, ad esempio un modello contenente frammenti e immagini in linea.
+* **Aggressivo**: impone di memorizzare in cache quasi tutto ciò che può essere memorizzato in cache, incluso il contenuto HTML sottoposto a rendering oltre a tutti gli artefatti del livello di memorizzazione in cache conservativa. Offre le migliori prestazioni ma consuma anche più memoria per l’archiviazione degli artefatti memorizzati nella cache. Una strategia di caching aggressiva consente di ottenere prestazioni di tempo costanti nel rendering di un modulo quando il contenuto sottoposto a rendering viene memorizzato nella cache.
 
 Le impostazioni predefinite della cache per AEM Forms potrebbero non essere sufficienti per ottenere prestazioni ottimali. Pertanto, si consiglia di utilizzare le seguenti impostazioni:
 
-* **Strategia cache**: aggressivo
+* **Strategia cache**: aggressiva
 * **Dimensione cache** (in termini di numero di moduli): come richiesto
-* **Dimensione massima oggetto**: secondo necessità
+* **Dimensione massima oggetto**: come richiesto
 
-![Configurazioni Forms per dispositivi mobili](assets/snap.png)
+![Configurazioni Forms mobile](assets/snap.png)
 
 >[!NOTE]
 >
->Se utilizzi Dispatcher AEM per memorizzare in cache i moduli adattivi, questo memorizza in cache anche i moduli contenenti dati precompilati. Se tali moduli vengono serviti dalla cache del Dispatcher AEM, ciò può portare a fornire agli utenti dati precompilati o non aggiornati. Pertanto, utilizza il Dispatcher dell’AEM per memorizzare in cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, una cache di Dispatcher non annulla automaticamente la validità dei frammenti memorizzati in cache. Pertanto, non utilizzarlo per memorizzare in cache i frammenti di modulo. Per tali moduli e frammenti, utilizza [Cache dei moduli adattivi](../../forms/using/configure-adaptive-forms-cache.md).
+>Se utilizzi AEM Dispatcher per memorizzare in cache i moduli adattivi, questo memorizza in cache anche i moduli contenenti dati precompilati. Se tali moduli vengono forniti dalla cache Dispatcher dell’AEM, ciò può portare a fornire agli utenti dati precompilati o non aggiornati. Pertanto, utilizza AEM Dispatcher per memorizzare nella cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, una cache di Dispatcher non annulla automaticamente la validità dei frammenti memorizzati in cache. Pertanto, non utilizzarlo per memorizzare in cache i frammenti di modulo. Per questi moduli e frammenti, utilizza [Cache moduli adattivi](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## Parametri JVM {#jvm-parameters}
 
-Per prestazioni ottimali, si consiglia di utilizzare la seguente JVM `init` argomenti per configurare `Java heap` e `PermGen`.
+Per prestazioni ottimali, si consiglia di utilizzare i seguenti argomenti JVM `init` per configurare `Java heap` e `PermGen`.
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -80,7 +80,7 @@ I passaggi seguenti illustrano le modifiche necessarie per abilitare la compress
 
 Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni sono ottimizzate tramite HTTP.
 
-1. Rimuovi commento dalle seguenti configurazioni di modulo in `APACHE_HOME/conf/httpd.conf` file.
+1. Rimuovere il commento dalle seguenti configurazioni del modulo nel file `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -93,14 +93,14 @@ Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni
    >Per Linux®, il valore predefinito `APACHE_HOME` è `/etc/httpd/`.
 
 1. Configura il proxy sulla porta 4502 di crx.
-Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di configurazione.
+Aggiungi la seguente configurazione nel file di configurazione `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Abilita Compressione. Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di configurazione.
+1. Abilita Compressione. Aggiungi la seguente configurazione nel file di configurazione `APACHE_HOME/conf/httpd.conf`.
 
    **Per moduli HTML5**
 
@@ -136,7 +136,7 @@ Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di con
    </Location>
    ```
 
-   Per accedere al server crx, utilizza `https://'server':80`, dove `server` è il nome del server in cui è in esecuzione il server Apache.
+   Per accedere al server crx, utilizzare `https://'server':80`, dove `server` è il nome del server in cui è in esecuzione il server Apache.
 
 ## Utilizzo di un antivirus su un server che esegue AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -156,15 +156,15 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (WebSphere®) \Programma Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(AEM Forms solo su JEE)** Directory Global Document Storage (GDS). La posizione predefinita è:
+* **(solo AEM Forms su JEE)** directory Global Document Storage (GDS). La posizione predefinita è:
 
-   * (JBoss®) [directory principale del server applicazioni]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (JBoss®) [radice server applicazioni]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere® [directory principale del server applicazioni]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+   * (WebSphere®) [radice del server applicazioni]/installApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(AEM Forms solo su JEE)** Registri di AEM Forms Server e directory temporanea. La posizione predefinita è:
+* **(solo AEM Forms su JEE)** registri di AEM Forms Server e directory temporanea. La posizione predefinita è:
 
-   * Registri del server - [Directory di installazione di AEM Forms]\Adobe\moduli AEM\[app-server]\server\all\logs
+   * Registri del server - [Directory di installazione di AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
    * Directory temporanea - [Directory di installazione di AEM Forms]\temp
 
 >[!NOTE]

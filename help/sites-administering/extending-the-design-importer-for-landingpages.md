@@ -19,29 +19,29 @@ ht-degree: 0%
 
 # Estensione e configurazione di Importazione progettazione per le pagine di destinazione{#extending-and-configuring-the-design-importer-for-landing-pages}
 
-Questa sezione descrive come configurare e, se necessario, estendere l’importazione progettazione per le pagine di destinazione. Utilizzo delle pagine di destinazione dopo l’importazione è trattato in [Landing Pages.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+Questa sezione descrive come configurare e, se necessario, estendere l’importazione progettazione per le pagine di destinazione. L&#39;utilizzo delle pagine di destinazione dopo l&#39;importazione è trattato in [Pagine di destinazione.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 
-**Come fare in modo che l’importazione progettazione estragga il componente personalizzato**
+**Richiedere all&#39;importazione progettazione di estrarre il componente personalizzato**
 
 Di seguito sono riportati i passaggi logici per fare in modo che Importazione progettazione riconosca il componente personalizzato
 
 1. Creare un TagHandler
 
-   * Un gestore di tag è un POJO che gestisce tag HTML di un tipo specifico. Il &quot;tipo&quot; di tag HTML che TagHandler può gestire è definito tramite la proprietà OSGi di TagHandlerFactory &quot;tagpattern.name&quot;. Questa proprietà OSGi è essenzialmente un regex che deve corrispondere al tag HTML di input che desideri gestire. Tutti i tag nidificati vengono inviati al gestore di tag per la gestione. Ad esempio, se ti registri per un div che contiene un &lt;p> , il tag &lt;p> Il tag verrà anche inviato al tuo TagHandler e sta a te come prenderti cura di esso.
+   * Un gestore di tag è un POJO che gestisce tag HTML di un tipo specifico. Il &quot;tipo&quot; di tag HTML che TagHandler può gestire è definito tramite la proprietà OSGi di TagHandlerFactory &quot;tagpattern.name&quot;. Questa proprietà OSGi è essenzialmente un regex che deve corrispondere al tag HTML di input che desideri gestire. Tutti i tag nidificati vengono inviati al gestore di tag per la gestione. Ad esempio, se ti registri a un div che contiene un tag &lt;p> nidificato, anche il tag &lt;p> verrà inviato al tuo TagHandler e spetta a te decidere come gestirlo.
    * L’interfaccia del gestore di tag è simile a quella del gestore di contenuti SAX. Riceve eventi SAX per ogni tag html. In qualità di provider di gestori di tag, devi implementare alcuni metodi del ciclo di vita che vengono automaticamente chiamati dal framework di importazione progettazione.
 
 1. Creare il TagHandlerFactory corrispondente.
 
    * La factory del gestore di tag è un componente OSGi (singleton) responsabile della generazione di istanze del gestore di tag.
    * il factory del gestore di tag deve esporre una proprietà OSGi denominata &quot;tagpattern.name&quot; il cui valore corrisponde al tag html di input.
-   * Se esistono più gestori di tag che corrispondono al tag HTML di input, viene scelto quello con una classificazione più elevata. La classificazione stessa viene esposta come proprietà OSGi **service.ranking**.
+   * Se esistono più gestori di tag che corrispondono al tag HTML di input, viene scelto quello con una classificazione più elevata. La classificazione stessa è esposta come proprietà OSGi **service.ranking**.
    * TagHandlerFactory è un componente OSGi. Tutti i riferimenti che desideri fornire al tuo TagHandler devono essere forniti tramite questa factory.
 
 1. Se si desidera ignorare l&#39;impostazione predefinita, assicurarsi che TagHandlerFactory disponga di una classificazione migliore.
 
 >[!CAUTION]
 >
->Importazione progettazione, utilizzato per importare pagine di destinazione, [è stato dichiarato obsoleto con AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>Importazione progettazione, utilizzata per importare le pagine di destinazione, [è stata dichiarata obsoleta con AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 ## Preparazione di HTML per l&#39;importazione {#preparing-the-html-for-import}
 
@@ -70,13 +70,13 @@ Il layout si basa sul layout delle best practice per le boilerplate di HTML5. Ul
 
 >[!NOTE]
 >
->Come minimo, il pacchetto di progettazione **deve** contiene un **index.html** a livello di radice. Se la pagina di destinazione da importare ha anche una versione per dispositivi mobili, il file ZIP deve contenere **mobile.index.html** insieme a **index.html** a livello principale.
+>Il pacchetto di progettazione **deve** contenere almeno un file **index.html** a livello radice. Nel caso in cui la pagina di destinazione da importare abbia anche una versione mobile, il file ZIP deve contenere un **mobile.index.html** insieme a **index.html** a livello radice.
 
 ### Preparazione di Landing Page HTML {#preparing-the-landing-page-html}
 
 Per importare il HTML, devi aggiungere un div canvas al HTML della pagina di destinazione.
 
-Il div canvas è un html **div** con `id="cqcanvas"` che deve essere inserito all’interno del HTML `<body>` e deve racchiudere il contenuto destinato alla conversione.
+Il div canvas è un tag html **div** con `id="cqcanvas"` che deve essere inserito nel tag HTML `<body>` e deve racchiudere il contenuto da convertire.
 
 Di seguito è riportato un frammento di esempio di HTML della pagina di destinazione dopo l’aggiunta dell’area di lavoro:
 
@@ -102,9 +102,9 @@ Quando importi una pagina di destinazione, puoi scegliere di importarla così co
 
 Prima di importare la pagina di destinazione, potrebbe essere utile convertire alcune parti della pagina in modo che risultino componenti AEM modificabili. Questo consente di modificare rapidamente parti della pagina di destinazione anche dopo l’importazione della progettazione.
 
-Per farlo, aggiungi il `data-cq-component` al componente appropriato nel file HTML importato.
+A tale scopo, aggiungere `data-cq-component` al componente appropriato nel file HTML importato.
 
-La sezione seguente descrive come modificare il file HTML in modo da convertire alcune parti delle pagine di destinazione in diversi componenti AEM modificabili. I componenti sono descritti in dettaglio all’indirizzo [Componenti delle pagine di destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
+La sezione seguente descrive come modificare il file HTML in modo da convertire alcune parti delle pagine di destinazione in diversi componenti AEM modificabili. I componenti sono descritti in dettaglio in [Componenti delle pagine di destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Prima di importare, tieni presente le seguenti limitazioni:
 
 ### Qualsiasi attributo come classe o ID applicato al tag &amp;lt;body> non viene mantenuto {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Ad esempio, se al tag body viene applicato un attributo come id o classe, `<body id="container">` dopo l’importazione, non viene conservato. Pertanto, la progettazione in fase di importazione non deve avere alcuna dipendenza dagli attributi applicati al `<body>` tag.
+Se ad esempio al tag body viene applicato un attributo come id o classe, `<body id="container">`, questo non viene mantenuto dopo l&#39;importazione. La progettazione in fase di importazione non deve quindi avere alcuna dipendenza dagli attributi applicati al tag `<body>`.
 
 ### Trascina e rilascia zip {#drag-and-drop-zip}
 
@@ -126,7 +126,7 @@ I browser che supportano il &quot;trascinamento&quot; dello zip di progettazione
 
 ### Modernizzatore non supportato {#modernizr-is-not-supported}
 
-`Modernizr.js` è uno strumento basato su JavaScript che rileva le funzionalità native dei browser e rileva se sono adatte o meno agli elementi html5. Le progettazioni che utilizzano Modernizzatore per migliorare il supporto nelle versioni precedenti di browser diversi possono causare problemi di importazione nella soluzione della pagina di destinazione. `Modernizr.js` Gli script non sono supportati con Importazione progettazione.
+`Modernizr.js` è uno strumento basato su JavaScript che rileva le funzionalità native dei browser e rileva se sono adatte o meno agli elementi html5. Le progettazioni che utilizzano Modernizzatore per migliorare il supporto nelle versioni precedenti di browser diversi possono causare problemi di importazione nella soluzione della pagina di destinazione. `Modernizr.js` script non supportati con Importazione progettazione.
 
 ### Le proprietà di pagina non vengono conservate al momento dell&#39;importazione del pacchetto di progettazione {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
@@ -138,7 +138,7 @@ Durante l’importazione, il markup viene bonificato per motivi di sicurezza e p
 
 ### Testo {#text}
 
-Markup HTML per inserire un componente testo ( `foundation/components/text`) nel pacchetto di progettazione HTML:
+Markup HTML per inserire un componente di testo ( `foundation/components/text`) nel HTML all&#39;interno del pacchetto di progettazione:
 
 ```xml
 <div data-cq-component="text"> <p>This is some editable text</p> </div>
@@ -146,16 +146,16 @@ Markup HTML per inserire un componente testo ( `foundation/components/text`) nel
 
 Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
 
-* Crea un componente testo AEM modificabile ( `sling:resourceType=foundation/components/text`) nella pagina di destinazione creata dopo l’importazione del pacchetto di progettazione.
-* Imposta il `text` del componente testo creato al HTML racchiuso all’interno del `div`.
+* Crea un componente testo AEM modificabile ( `sling:resourceType=foundation/components/text`) nella pagina di destinazione creata dopo l&#39;importazione del pacchetto di progettazione.
+* Imposta la proprietà `text` del componente testo creato sul HTML racchiuso in `div`.
 
-**Dichiarazione tag componente breve**:
+**Dichiarazione tag componente abbreviato**:
 
 ```xml
 <p data-cq-component="text">Text component shorthand</p>
 ```
 
-**Testo con un elenco**
+**Testo con elenco**
 
 Per aggiungere un testo con un elenco:
 
@@ -178,7 +178,7 @@ Per aggiungere un testo con un colore (rosa) modificabile nell’editor Rich Tex
 
 ### Titolo {#title}
 
-Markup HTML per inserire un componente titolo ( `wcm/landingpage/components/title`) nel pacchetto di progettazione HTML:
+Markup HTML per inserire un componente titolo ( `wcm/landingpage/components/title`) nel HTML all&#39;interno del pacchetto di progettazione:
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
@@ -186,13 +186,13 @@ Markup HTML per inserire un componente titolo ( `wcm/landingpage/components/titl
 
 Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
 
-* Crea un componente titolo AEM modificabile ( `sling:resourceType=wcm/landingpage/components/title`) nella pagina di destinazione creata dopo l’importazione del pacchetto di progettazione.
-* Imposta il `jcr:title` del componente titolo creato al testo all’interno del tag titolo racchiuso in div.
-* Imposta il `type` al tag titolo, in questo caso `h1`.
+* Crea un componente titolo AEM modificabile ( `sling:resourceType=wcm/landingpage/components/title`) nella pagina di destinazione creata dopo l&#39;importazione del pacchetto di progettazione.
+* Imposta la proprietà `jcr:title` del componente Titolo creato sul testo all&#39;interno del tag titolo racchiuso in div.
+* Imposta la proprietà `type` sul tag di intestazione, in questo caso `h1`.
 
 Il componente Titolo supporta sette tipi: `h1, h2, h3, h4, h5, h6` e `default`.
 
-**Dichiarazione tag componente breve**:
+**Dichiarazione tag componente abbreviato**:
 
 ```xml
 <h1 data-cq-component="title">Title component shorthand</h1>
@@ -210,14 +210,14 @@ Markup HTML per inserire un componente immagine (foundation/components/image) ne
 
 Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
 
-* Crea un componente immagine AEM modificabile ( `sling:resourceType=foundation/components/image`) nella pagina di destinazione creata dopo l’importazione del pacchetto di progettazione.
-* Imposta il `fileReference` proprietà del componente immagine creato nel percorso in cui viene importata l’immagine specificata nell’attributo src.
-* Imposta il `alt` al valore dell’attributo alt nel tag img.
-* Imposta il `title` proprietà al valore dell’attributo title nel tag img.
-* Imposta il `width` al valore dell’attributo width nel tag img.
-* Imposta il `height` proprietà al valore dell&#39;attributo height nel tag img.
+* Crea un componente immagine AEM modificabile ( `sling:resourceType=foundation/components/image`) nella pagina di destinazione creata dopo l&#39;importazione del pacchetto di progettazione.
+* Imposta la proprietà `fileReference` del componente immagine creato sul percorso in cui viene importata l&#39;immagine specificata nell&#39;attributo src.
+* Imposta la proprietà `alt` sul valore dell&#39;attributo alt nel tag img.
+* Imposta la proprietà `title` sul valore dell&#39;attributo title nel tag img.
+* Imposta la proprietà `width` sul valore dell&#39;attributo width nel tag img.
+* Imposta la proprietà `height` sul valore dell&#39;attributo height nel tag img.
 
-**Dichiarazione tag componente breve:**
+**Dichiarazione tag componente abbreviato:**
 
 ```xml
 <img data-cq-component="image" src="test.png" alt="Image component shorthand"/>
@@ -225,7 +225,7 @@ Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
 
 #### URL assoluto img src non supportato in Image Component Div {#absolute-url-img-src-not-supported-within-image-component-div}
 
-Se un `<img>` viene tentato un tag con un url src assoluto per la conversione del componente, un **UnsupportedTagContentException** è sollevato. Ad esempio, quanto segue non è supportato:
+Se si tenta di convertire un tag `<img>` con URL assoluto, viene generata un&#39;eccezione **UnsupportedTagContentException** appropriata. Ad esempio, quanto segue non è supportato:
 
 `<div data-cq-component="image">`
 
@@ -268,7 +268,7 @@ Tag HTML per includere il componente click-through nel file zip importato. Qui h
 
 Questo componente può essere utilizzato in qualsiasi applicazione autonoma o può essere importato da zip.
 
-**Dichiarazione tag componente breve**:
+**Dichiarazione tag componente abbreviato**:
 
 ```xml
 <a href="/somelink.html" data-cq-component="clickThroughLink">Click Through Link shorthand</a>
@@ -293,7 +293,7 @@ Tag HTML per includere il componente collegamento grafico nello zip importato. Q
 </div>
 ```
 
-**Dichiarazione tag componente breve**:
+**Dichiarazione tag componente abbreviato**:
 
 ```xml
 <a href="/somelink.html" data-cq-component="clickThroughGraphicalLink"><img src="linkimage.png" alt="Click Through Graphical Link shorthand"/></a>
@@ -301,7 +301,7 @@ Tag HTML per includere il componente collegamento grafico nello zip importato. Q
 
 >[!NOTE]
 >
->Per creare un collegamento grafico clickthrough, devi racchiudere un tag di ancoraggio e il tag immagine in un div con `data-cq-component="clickthroughgraphicallink"` attributo.
+>Per creare un collegamento grafico clickthrough, è necessario racchiudere un tag di ancoraggio e il tag immagine in un div con l&#39;attributo `data-cq-component="clickthroughgraphicallink"`.
 >
 >Ad esempio `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
@@ -313,7 +313,7 @@ Tag HTML per includere il componente collegamento grafico nello zip importato. Q
 >
 >`</div>`
 >
->con un associato `css .hasbackground { background-image: pathtoimage }`
+>con un `css .hasbackground { background-image: pathtoimage }` associato
 >
 
 ### Modulo lead {#lead-form}
@@ -372,7 +372,7 @@ Il componente AEM Parsys è un componente contenitore che può contenere altri c
 
 Il sistema paragrafo consente agli utenti di aggiungere componenti utilizzando la barra laterale.
 
-Markup HTML per inserire un componente Parsys ( `foundation/components/parsys`) nel pacchetto di progettazione HTML:
+Markup HTML per inserire un componente Parsys ( `foundation/components/parsys`) nel HTML all&#39;interno del pacchetto di progettazione:
 
 ```xml
 <div data-cq-component="parsys">
@@ -425,7 +425,7 @@ I seguenti metadati dichiarati nel capo del HTML importato sono estratti e conse
 
 L’attributo della lingua impostato nel tag HTML viene estratto e mantenuto dall’importazione di progetti come proprietà &quot;jcr:language&quot;
 
-* &lt;html lang=&quot;en&quot;>
+* &lt;html lang=&quot;it&quot;>
 
 ### Specifica della codifica charset nel codice HTML {#specifying-the-charset-encoding-in-the-html}
 
@@ -433,7 +433,7 @@ L&#39;utilità di importazione della progettazione legge la codifica specificata
 
 `<meta charset="UTF-8">`
 
-*OPPURE*
+*OR*
 
 `<meta http-equiv="content-type" content="text/html;charset=utf-8">`
 
@@ -443,7 +443,7 @@ Se nel HTML importato non è specificata alcuna codifica, la codifica predefinit
 
 Il modello Pagina di destinazione vuota può essere sovrapposto creando un layout in: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Scopri come creare un modello in AEM [qui](/help/sites-developing/templates.md).
+I passaggi per la creazione di un modello in AEM sono descritti [qui](/help/sites-developing/templates.md).
 
 ### Riferimento a un componente dalla pagina di destinazione {#referring-a-component-from-landing-page}
 
@@ -457,7 +457,7 @@ Il percorso nel componente data-cq-component deve essere il resourceType del com
 
 L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con elementi contrassegnati per la conversione dei componenti durante l’importazione.
 
-| E > F | un elemento F figlio di un elemento E | [Combinatore figlio](https://www.w3.org/TR/css3-selectors/#child-combinators) |
+| E > F | un elemento F figlio di un elemento E | [Associazione figlio](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
 | E + F | un elemento F immediatamente preceduto da un elemento E | [Combinatore di pari livello adiacente](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | un elemento F preceduto da un elemento E | [Combinatore di pari livello generale](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
@@ -467,10 +467,10 @@ L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con el
 | E:nth-of-type(n) | un elemento E, l’n-esimo elemento di pari livello del suo tipo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-of-type(n) | un elemento E, l’n-esimo pari livello del suo tipo, a partire dall’ultimo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-Questo perché elementi HTML aggiuntivi come &lt;div> vengono aggiunti al codice Html generato dopo l’importazione.
+Questo perché dopo l’importazione vengono aggiunti all’HTML generato elementi HTML aggiuntivi come il tag &lt;div>.
 
 * Anche gli script che si basano su una struttura simile a quella descritta sopra non sono consigliati per l’uso con elementi contrassegnati per la conversione in componenti AEM.
-* Utilizzo degli stili nei tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&amp;ast;&quot;> non è consigliato.
+* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&amp;ast;&quot;> non è consigliato.
 * Il layout del progetto deve seguire le best practice di HTML5 Boilerplate. Ulteriori informazioni su: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configurazione dei moduli OSGI {#configuring-osgi-modules}
@@ -494,7 +494,7 @@ La tabella seguente descrive brevemente le proprietà:
   <tr>
    <td>Importazione progettazione pagina di destinazione</td>
    <td>Extract Filter</td>
-   <td>L’elenco delle espressioni regolari da utilizzare per filtrare i file dall’estrazione. <br /> Le voci ZIP che corrispondono a uno dei pattern specificati sono escluse dall’estrazione</td>
+   <td>L’elenco delle espressioni regolari da utilizzare per filtrare i file dall’estrazione. <br /> le voci ZIP corrispondenti a uno dei pattern specificati sono escluse dall'estrazione</td>
   </tr>
   <tr>
    <td>Landing Page Builder</td>
@@ -514,26 +514,26 @@ La tabella seguente descrive brevemente le proprietà:
   <tr>
    <td>Preprocessore di ingresso pagina di destinazione</td>
    <td>Pattern di ricerca </td>
-   <td>Pattern da cercare, nei contenuti della voce archivio. Questa espressione regolare viene associata alla voce contenuto riga per riga. In caso di corrispondenza, il testo corrispondente viene sostituito con il pattern di sostituzione specificato.<br /> <br /> Consulta la nota seguente sulle limitazioni attuali del preprocessore di accesso alla pagina di destinazione.</td>
+   <td>Pattern da cercare, nei contenuti della voce archivio. Questa espressione regolare viene associata alla voce contenuto riga per riga. In caso di corrispondenza, il testo corrispondente viene sostituito con il pattern di sostituzione specificato.<br /> <br /> Consulta la nota seguente sulle limitazioni attuali del preprocessore di ingresso della pagina di destinazione.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Sostituisci pattern</td>
-   <td>Pattern che sostituisce le corrispondenze trovate. Puoi utilizzare riferimenti a gruppi regex come $1, $2. Inoltre, questo modello supporta parole chiave come {designPath} che vengono risolti con il valore effettivo durante l’importazione.</td>
+   <td>Pattern che sostituisce le corrispondenze trovate. Puoi utilizzare riferimenti a gruppi regex come $1, $2. Inoltre, questo modello supporta parole chiave come {designPath} che vengono risolte con il valore effettivo durante l'importazione.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->**Limitazione corrente del preprocessore di accesso alla pagina di destinazione:**
+>**Limitazione corrente del preprocessore di ingresso della pagina di destinazione:**
 >Se devi apportare delle modifiche al pattern di ricerca, quando apri l’editor delle proprietà felix, devi aggiungere manualmente i caratteri barra rovesciata per evitare i metacaratteri regex. Se non aggiungi manualmente i caratteri barra rovesciata, il regex non è considerato valido e non sostituirà quello precedente.
 >
 >Ad esempio, se la configurazione predefinita è
 >
 >>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->E devi sostituire `CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il modello di ricerca deve essere simile al seguente:
+>E devi sostituire `CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il tuo modello di ricerca dovrebbe essere simile al seguente:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
@@ -566,7 +566,7 @@ Dopo l’importazione della pagina di destinazione, i file (immagini, css, js e 
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Supponiamo che la pagina di destinazione venga creata in base alla campagna `We.Retail` e il nome della pagina di destinazione è **myBlankLandingPage** quindi la posizione in cui vengono memorizzati i file ZIP è la seguente:
+Supponiamo che la pagina di destinazione sia stata creata nella campagna `We.Retail` e che il nome della pagina di destinazione sia **myBlankLandingPage**, la posizione in cui sono archiviati i file ZIP è la seguente:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
@@ -591,7 +591,7 @@ con un CSS applicato alla classe `box` come segue:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Then `box img` viene utilizzato in importazione progettazione, la formattazione della pagina di destinazione risultante non sembra essere stata mantenuta. Per ovviare a questo problema, l’AEM aggiunge tag div nel CSS e riscrive il codice di conseguenza. In caso contrario, alcune regole CSS non saranno valide.
+`box img` viene quindi utilizzato nell&#39;utilità di importazione progettazione. La formattazione della pagina di destinazione risultante non sembra essere stata mantenuta. Per ovviare a questo problema, l’AEM aggiunge tag div nel CSS e riscrive il codice di conseguenza. In caso contrario, alcune regole CSS non saranno valide.
 
 ```xml
 .box img
@@ -601,4 +601,4 @@ Then `box img` viene utilizzato in importazione progettazione, la formattazione 
 
 >[!NOTE]
 >
->I designer devono codificare solo all’interno del **id=cqcanvas** il tag viene riconosciuto dall’importazione, altrimenti la progettazione non viene mantenuta.
+>I designer devono riconoscere solo il codice all&#39;interno del tag **id=cqcanvas**, altrimenti la progettazione non viene mantenuta.

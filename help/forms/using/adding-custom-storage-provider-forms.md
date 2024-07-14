@@ -21,18 +21,18 @@ ht-degree: 0%
 
 AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza consente di mantenere un modulo work-in-progress, che puoi completare e inviare successivamente da qualsiasi dispositivo.
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel `/content/forms/fp` nell&#39;istanza Publish. Inoltre, i componenti del portale AEM Forms forniscono servizi di dati che è possibile utilizzare per personalizzare l’implementazione della memorizzazione dei dati utente per bozze e invii. Ad esempio, puoi memorizzare i dati utente in un archivio dati.
+Per impostazione predefinita, AEM Forms archivia i dati utente associati alla bozza e all&#39;invio di un modulo nel nodo `/content/forms/fp` dell&#39;istanza di Publish. Inoltre, i componenti del portale AEM Forms forniscono servizi di dati che è possibile utilizzare per personalizzare l’implementazione della memorizzazione dei dati utente per bozze e invii. Ad esempio, puoi memorizzare i dati utente in un archivio dati.
 
 ## Prerequisiti  {#prerequisites}
 
-* Abilita [Componenti di Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* Creare un [Pagina portale Forms](/help/forms/using/creating-form-portal-page.md)
+* Abilita [componenti di Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Crea una [pagina portale Forms](/help/forms/using/creating-form-portal-page.md)
 * Abilita [moduli adattivi per Forms Portal](/help/forms/using/draft-submission-component.md)
-* Scopri [dettagli di implementazione dell’archiviazione personalizzata](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Scopri [i dettagli di implementazione dell&#39;archiviazione personalizzata](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Servizio dati bozza {#draft-data-service}
 
-Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi del `DraftDataService` di rete. Nel codice di esempio seguente vengono descritti i metodi e gli argomenti.
+Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi dell&#39;interfaccia `DraftDataService`. Nel codice di esempio seguente vengono descritti i metodi e gli argomenti.
 
 ```java
 /**
@@ -101,7 +101,7 @@ public interface DraftDataService {
 
 ## Servizio dati di invio {#submission-data-service}
 
-Per personalizzare l’archiviazione dei dati utente per gli invii, è necessario implementare tutti i metodi del `SubmitDataService` di rete. Nel codice di esempio seguente vengono descritti i metodi e gli argomenti.
+Per personalizzare l&#39;archiviazione dei dati utente per gli invii, è necessario implementare tutti i metodi dell&#39;interfaccia `SubmitDataService`. Nel codice di esempio seguente vengono descritti i metodi e gli argomenti.
 
 ```java
 /**

@@ -22,7 +22,7 @@ Verificare che i caratteri utilizzati in un modulo siano disponibili per l&#39;u
 
 Per ulteriori informazioni sulle impostazioni dei caratteri, vedere [Configurare le impostazioni generali dei moduli AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
 
-**Specificare il percorso della directory dei font del cliente**
+**Specificare il percorso della directory dei caratteri del cliente**
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Impostazioni sistemi core > Configurazioni.
 1. Nella casella Posizione della directory dei caratteri di sistema digitare il percorso della directory dei caratteri del cliente. È possibile aggiungere più directory, separate da un punto e virgola **;**

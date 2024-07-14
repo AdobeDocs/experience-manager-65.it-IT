@@ -64,7 +64,7 @@ Quando si parla di segmentazione, viene spesso utilizzata la seguente terminolog
 
 **Caratteristiche derivate**: alcune caratteristiche demografiche sono difficili da determinare senza la registrazione, ma possono essere derivate dalla combinazione di caratteristiche comportamentali e demografiche.
 
-Ad esempio, combinando l’URL di riferimento (come tratto comportamentale) con i dati demografici (acquisiti da strumenti come [Google Ad Planner](https://www.google.com/adplanner/)) consentono ai proprietari dei siti di ricavare le caratteristiche demografiche dei loro visitatori.
+Ad esempio, la combinazione dell&#39;URL di riferimento (come tratto comportamentale) con i dati demografici (acquisiti da strumenti come [Google Ad Planner](https://www.google.com/adplanner/)) consente ai proprietari dei siti di derivare i tratti demografici dei loro visitatori.
 
 **Sottosegmento**: un segmento può essere diviso in diversi sottosegmenti. Questo viene effettuato mediante la definizione di caratteristiche aggiuntive.
 
@@ -78,4 +78,4 @@ Ad esempio, combinando l’URL di riferimento (come tratto comportamentale) con 
 
 >[!NOTE]
 >
->Consulta [Segmentazione](/help/sites-administering/campaign-segmentation.md) per ulteriori informazioni sui segmenti in Adobe Experience Manager.
+>Per ulteriori informazioni sui segmenti in Adobe Experience Manager, vedi [Segmentazione](/help/sites-administering/campaign-segmentation.md).

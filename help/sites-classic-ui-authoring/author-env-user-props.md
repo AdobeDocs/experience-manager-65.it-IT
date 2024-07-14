@@ -21,10 +21,10 @@ ht-degree: 16%
 
 Adobe Experience Manager (AEM) consente di configurare l’account e alcuni aspetti dell’ambiente di authoring.
 
-Utilizzo di [impostazioni account](#account-settings) e [preferenze utente](#user-preferences) è possibile definire le opzioni e le preferenze riportate di seguito.
+Utilizzando le [impostazioni account](#account-settings) e le [preferenze utente](#user-preferences) è possibile definire le opzioni e le preferenze seguenti:
 
 * **Barra degli strumenti di modifica**
-Specificare se si desidera disporre della barra degli strumenti di modifica globale. Questa barra degli strumenti, visualizzata nella parte superiore della finestra del browser, offre **Copia**, **Taglia**, **Incolla**, **Elimina** pulsanti da utilizzare con i componenti paragrafo della pagina:
+Specificare se si desidera disporre della barra degli strumenti di modifica globale. Questa barra degli strumenti, visualizzata nella parte superiore della finestra del browser, fornisce i pulsanti **Copia**, **Taglia**, **Incolla**, **Elimina** da utilizzare con i componenti paragrafo della pagina:
 
    * Mostra se necessario (predefinito)
    * Mostra sempre
@@ -39,8 +39,10 @@ Lingua da utilizzare per l’interfaccia utente dell’ambiente di authoring. Se
 * **Gestione finestre**
 Seleziona una delle seguenti opzioni:
 
-   * Più pagine di Windows (predefinito) vengono aperte in una nuova finestra.
-   * Le pagine a finestra singola vengono aperte nella finestra corrente.
+   * Finestre multiple (impostazione predefinita)
+Le pagine vengono aperte in una nuova finestra.
+   * Finestra singola
+Le pagine vengono aperte nella finestra corrente.
 
 ## Impostazioni account {#account-settings}
 
@@ -55,9 +57,9 @@ L’icona utente ti permette di accedere alle seguenti opzioni:
 
 ### Preferenze utente {#user-preferences}
 
-Ogni utente può impostare autonomamente determinate proprietà. È disponibile dal sito **Preferenze** nell&#39;angolo superiore destro delle console.
+Ogni utente può impostare autonomamente determinate proprietà. È disponibile nella finestra di dialogo **Preferenze** nell&#39;angolo superiore destro delle console.
 
-![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
+![schermata_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 
 La finestra di dialogo offre le seguenti opzioni:
 

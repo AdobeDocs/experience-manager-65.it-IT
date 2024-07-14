@@ -27,11 +27,11 @@ Il Digital Asset Management (DAM) viene spesso utilizzato nei casi in cui le pre
 
 Le scarse prestazioni nella gestione delle risorse digitali possono influire sull’esperienza utente in tre modi: prestazioni interattive, elaborazione delle risorse e velocità di download. Per migliorare le prestazioni, è importante misurare correttamente le prestazioni osservate e stabilire metriche target.
 
-**1. Ricerca interattiva e navigazione** Gli utenti cercano le risorse o navigano nel Finder di DAM e si lamentano dei tempi di risposta lenti o del fatto che i risultati della ricerca non vengono visualizzati immediatamente. Si tratta di un problema di prestazioni interattivo.
+**1. Ricerca interattiva e navigazione** Gli utenti stanno cercando risorse o navigando nel Finder DAM e si lamentano dei tempi di risposta lenti o del fatto che i risultati della ricerca non vengono visualizzati immediatamente. Si tratta di un problema di prestazioni interattivo.
 
 Le prestazioni interattive sono misurate in termini di tempo di risposta della pagina. Questo è il tempo che trascorre tra la ricezione della richiesta HTTP e la chiusura della risposta HTTP, che può essere determinato dai file di registro delle richieste. Le prestazioni tipiche del target sono un tempo di risposta della pagina inferiore a due secondi.
 
-**2. Elaborazione risorse** Un problema di elaborazione delle risorse si verifica quando gli utenti caricano le risorse e occorrono alcuni minuti prima che le risorse vengano prontamente convertite e acquisite in DAM Adobe Experience Manager (AEM).
+**2. Elaborazione delle risorse** Un problema di elaborazione delle risorse si verifica quando gli utenti caricano le risorse e richiede alcuni minuti prima che le risorse vengano prontamente convertite e acquisite in DAM Adobe Experience Manager (AEM).
 
 Le prestazioni di elaborazione delle risorse vengono misurate in termini di tempo medio di completamento del processo del flusso di lavoro. Si tratta del tempo che trascorre tra il richiamo del processo del flusso di lavoro di aggiornamento delle risorse e il suo completamento, che può essere determinato dall’interfaccia utente dei rapporti del flusso di lavoro. Le prestazioni tipiche del target dipendono dalle dimensioni e dal tipo di risorse elaborate e dal numero di rappresentazioni. Di seguito sono riportati alcuni esempi di prestazioni del target:
 
@@ -39,7 +39,7 @@ Le prestazioni di elaborazione delle risorse vengono misurate in termini di temp
 * inferiore a un minuto per le immagini di dimensioni inferiori a 100 MB che utilizzano rappresentazioni standard
 * inferiore a cinque minuti per video clip HD di durata inferiore a un minuto
 
-**3. Velocità di download** Un problema di velocità effettiva si verifica quando il download da AEM DAM richiede molto tempo e le miniature non vengono visualizzate immediatamente durante la navigazione in DAM Admin o in DAM Finder.
+**3. Velocità di download** Un problema di velocità effettiva si verifica quando il download da AEM DAM richiede molto tempo e le miniature non vengono visualizzate immediatamente durante la navigazione in DAM Admin o DAM Finder.
 
 Le prestazioni di throughput sono misurate in termini di velocità di download in kilobit al secondo. Le prestazioni tipiche del target sono di 300 Kbps per 100 download simultanei.
 
@@ -57,11 +57,11 @@ L’heap è stato identificato come il fattore limitante più importante. Ogni v
 
 I processi DAM sono molto adatti per essere eseguiti in parallelo per grandi quantità. Il caricamento delle risorse in un batch e in processori multi-core accelera il tempo assoluto dedicato a ogni risorsa.
 
-**5. Stima dei requisiti hardware per l&#39;elaborazione delle risorse**
+**5. Stima dei requisiti hardware per l&#39;esecuzione dell&#39;elaborazione delle risorse**
 
 L’elaborazione intensiva di risorse digitali richiede risorse hardware ottimizzate, i fattori più rilevanti sono le dimensioni delle immagini e il picco di trasmissione delle immagini elaborate.
 
-Assegna almeno 16 GB di heap e configura l&#39;elemento [!UICONTROL Aggiorna risorsa DAM] flusso di lavoro per utilizzare [pacchetto Camera Raw](/help/assets/camera-raw.md) per l’acquisizione di immagini non elaborate.
+Camera Raw Alloca almeno 16 GB di heap e configura il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per utilizzare il [pacchetto](/help/assets/camera-raw.md) per l&#39;acquisizione di immagini non elaborate.
 
 ## Informazioni sul sistema {#understanding-the-system}
 
@@ -69,15 +69,15 @@ Una tipica configurazione DAM è costituita da utenti finali che accedono a DAM 
 
 La legenda seguente descrive le possibili aree di insidia delle prestazioni con alcune soluzioni, a seconda delle necessità.
 
-**Connessione di rete all&#39;utente finale** Una connessione di rete lenta può causare problemi di velocità effettiva e, in alcuni rari casi, anche problemi di latenza. A volte l’utente ha una connessione lenta dall’ISP, soprattutto nelle intranet. Segno di topologia di rete non corretta.
+**Connessione di rete all&#39;utente finale** Una connessione di rete lenta può causare problemi di velocità effettiva e in alcuni rari casi anche problemi di latenza. A volte l’utente ha una connessione lenta dall’ISP, soprattutto nelle intranet. Segno di topologia di rete non corretta.
 
-**File system temporaneo** Un file system locale lento può causare problemi di prestazioni interattive, soprattutto durante la ricerca, perché gli indici di ricerca sono memorizzati sul disco locale. Può inoltre causare problemi di elaborazione delle risorse se si utilizza il processo della riga di comando.
+**File system temporaneo** Un file system locale lento può causare problemi di prestazioni interattive, soprattutto durante la ricerca, perché gli indici di ricerca sono archiviati nel disco locale. Può inoltre causare problemi di elaborazione delle risorse se si utilizza il processo della riga di comando.
 
-**Ricerca DAM AEM** I problemi di prestazioni interattive, spesso riscontrati nelle ricerche, sono causati da un elevato utilizzo della CPU dovuto a molti utenti simultanei o ad altri processi che utilizzano la CPU nella stessa istanza. Passare da macchine virtuali a macchine dedicate e assicurarsi che non vengano eseguiti altri servizi sulla macchina può contribuire a migliorare le prestazioni. Se a causa dell’elaborazione delle risorse e di molti utenti simultanei si verifica un carico elevato della CPU, Day consiglia di aggiungere ulteriori nodi cluster.
+**AEM DAM Finder** I problemi di prestazioni interattive, spesso riscontrati nelle ricerche, sono causati da un elevato utilizzo della CPU dovuto a molti utenti simultanei o ad altri processi che utilizzano la stessa istanza. Passare da macchine virtuali a macchine dedicate e assicurarsi che non vengano eseguiti altri servizi sulla macchina può contribuire a migliorare le prestazioni. Se a causa dell’elaborazione delle risorse e di molti utenti simultanei si verifica un carico elevato della CPU, Day consiglia di aggiungere ulteriori nodi cluster.
 
-**Flusso di lavoro DAM AEM** I processi di flusso di lavoro a esecuzione prolungata durante l’inserimento delle risorse causano problemi di prestazioni nell’elaborazione delle risorse. A seconda del tipo di risorse da elaborare, questo può indicare un sovrautilizzo della CPU. Day consiglia di ridurre il numero di altri processi in esecuzione sul sistema e di aumentare il numero di CPU disponibili aggiungendo nodi cluster.
+**Flusso di lavoro DAM AEM** I processi di flusso di lavoro a esecuzione prolungata durante l&#39;inserimento delle risorse causano problemi di prestazioni nell&#39;elaborazione delle risorse. A seconda del tipo di risorse da elaborare, questo può indicare un sovrautilizzo della CPU. Day consiglia di ridurre il numero di altri processi in esecuzione sul sistema e di aumentare il numero di CPU disponibili aggiungendo nodi cluster.
 
-**Connettività NAS** La scarsa connettività di rete al NAS causa problemi di prestazioni interattive, perché l’accesso ai nuovi nodi durante l’elaborazione delle risorse è rallentato a causa della latenza della rete. Inoltre, una velocità effettiva di rete lenta influisce negativamente sulla velocità effettiva, ma anche sulle prestazioni di elaborazione delle risorse, perché il caricamento e il salvataggio delle rappresentazioni sono rallentati.
+**Connettività NAS** La scarsa connettività di rete al NAS causa problemi di prestazioni interattive, perché l&#39;accesso ai nuovi nodi durante l&#39;elaborazione delle risorse è rallentato a causa della latenza della rete. Inoltre, una velocità effettiva di rete lenta influisce negativamente sulla velocità effettiva, ma anche sulle prestazioni di elaborazione delle risorse, perché il caricamento e il salvataggio delle rappresentazioni sono rallentati.
 
 I motivi di latenza e throughput non validi in un NAS sono la topologia di rete o l&#39;utilizzo eccessivo del NAS da parte di altri servizi.
 
@@ -95,7 +95,7 @@ Per ogni progetto DAM, assicurati di stabilire un regime di test delle prestazio
 1. Test della velocità effettiva e della latenza con JMeter: l&#39;esecuzione su un computer client assicura che non vi siano problemi relativi alla topologia.
 1. Test di elaborazione delle risorse standardizzati: acquisisci alcune risorse di esempio e misura il tempo. Ciò dovrebbe includere l’integrazione del flusso di lavoro esterno.
 1. Monitorare l&#39;utilizzo della CPU, del disco e della memoria di ciascun nodo del cluster.
-1. Diagnostica delle prestazioni di lettura/scrittura di CRX per identificare i problemi correlati all&#39;elaborazione.
+1. Diagnostica delle prestazioni in lettura/scrittura di CRX per identificare i problemi correlati all&#39;elaborazione.
 1. Monitorare la latenza e la velocità effettiva di rete dal cluster DAM al NAS.
 1. Prestazioni di test, lettura e scrittura e latenza del disco direttamente sul NAS, se possibile.
 

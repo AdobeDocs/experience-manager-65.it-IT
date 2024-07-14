@@ -23,11 +23,11 @@ Il linguaggio SAML (Security Assertion Markup Language) è una delle opzioni che
 Per una spiegazione di SAML, vedere [Panoramica tecnica SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Impostazioni provider di servizi SAML.
-1. Nella casella ID entità fornitore di servizi digitare un ID univoco da utilizzare come identificatore per l&#39;implementazione del provider di servizi AEM forms. Puoi anche specificare questo ID univoco durante la configurazione dell’IDP (ad esempio, `um.lc.com`.) Puoi anche utilizzare l’URL utilizzato per accedere ai moduli AEM (ad esempio, `https://AEMformsserver`).
-1. Nella casella URL di base provider di servizi digitare l&#39;URL di base per il server Forms, ad esempio `https://AEMformsserver:8080`).
+1. Nella casella ID entità fornitore di servizi digitare un ID univoco da utilizzare come identificatore per l&#39;implementazione del provider di servizi AEM forms. È inoltre possibile specificare questo ID univoco durante la configurazione dell&#39;IDP (ad esempio, `um.lc.com`). È inoltre possibile utilizzare l&#39;URL utilizzato per accedere ai moduli AEM, ad esempio `https://AEMformsserver`.
+1. Nella casella URL di base provider di servizi digitare l&#39;URL di base per il server Forms, ad esempio `https://AEMformsserver:8080`.
 1. (Facoltativo) Per consentire ai moduli AEM di inviare richieste di autenticazione firmate all&#39;IDP, eseguire le operazioni seguenti:
 
-   * Utilizzare Gestione fonti attendibili per importare una credenziale in formato PKCS #12 con le credenziali di firma del documento selezionate come tipo di archivio fonti attendibili. (vedere [Gestione delle credenziali locali](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
+   * Utilizzare Gestione fonti attendibili per importare una credenziale in formato PKCS #12 con le credenziali di firma del documento selezionate come tipo di archivio fonti attendibili. (Vedi [Gestione delle credenziali locali](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * Nell&#39;elenco Alias chiave credenziale provider di servizi selezionare l&#39;alias assegnato alle credenziali nell&#39;archivio fonti attendibili.
    * Fare clic su Esporta per salvare il contenuto dell&#39;URL in un file e quindi importare il file nell&#39;IDP.
 

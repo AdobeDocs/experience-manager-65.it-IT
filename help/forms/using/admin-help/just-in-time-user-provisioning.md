@@ -28,7 +28,7 @@ L’autenticazione tradizionale funziona in questo modo:
 1. Il provider di autenticazione convalida le credenziali.
 1. Il provider di autenticazione verifica quindi se l&#39;utente esiste nel database User Management. Sono possibili i seguenti risultati:
 
-   **Esiste:** Se l’utente è corrente e sbloccato, Gestione utenti restituisce il completamento dell’autenticazione. Tuttavia, se l’utente non è attuale o è bloccato, Gestione utenti restituisce un errore di autenticazione.
+   **Esiste:** se l&#39;utente è corrente e sbloccato, Gestione utenti restituirà l&#39;autenticazione completata. Tuttavia, se l’utente non è attuale o è bloccato, Gestione utenti restituisce un errore di autenticazione.
 
    **Non esiste:** Gestione utenti restituisce un errore di autenticazione.
 
@@ -82,7 +82,7 @@ public Boolean assign(User user);
 
 ### Considerazioni durante la creazione di un dominio con abilitazione just-in-time {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* Durante la creazione di un `IdentityCreator` per un dominio ibrido, accertati che sia specificata una password fittizia per l’utente locale. Non lasciare vuoto il campo della password.
+* Durante la creazione di un `IdentityCreator` personalizzato per un dominio ibrido, verificare che sia specificata una password fittizia per l&#39;utente locale. Non lasciare vuoto il campo della password.
 * Consiglio: utilizzare `DomainSpecificAuthentication` per convalidare le credenziali utente rispetto a un dominio specifico.
 
 ### Creare un dominio con abilitazione just-in-time {#create-a-just-in-time-enabled-domain}
@@ -101,12 +101,12 @@ public Boolean assign(User user);
 
 Si supponga che un utente stia tentando di accedere ai moduli AEM e che un provider di autenticazione accetti le credenziali utente. Se l&#39;utente non esiste ancora nel database di User Management, il controllo dell&#39;identità dell&#39;utente non riesce. I moduli AEM ora eseguono le seguenti azioni:
 
-1. Creare un `UserProvisioningBO` con i dati di autenticazione e inserirli in una mappa delle credenziali.
-1. In base alle informazioni di dominio restituite da `UserProvisioningBO`, recupera e richiama il `IdentityCreator` e `AssignmentProvider` per il dominio.
-1. Richiama `IdentityCreator`. Se restituisce un risultato `AuthResponse`, estrarre `UserInfo` dalla mappa delle credenziali. Trasmettilo al `AssignmentProvider` per l’assegnazione di gruppi/ruoli e qualsiasi altra post-elaborazione dopo la creazione dell’utente.
+1. Creare un oggetto `UserProvisioningBO` con i dati di autenticazione e inserirlo in una mappa delle credenziali.
+1. In base alle informazioni sul dominio restituite da `UserProvisioningBO`, recupera e richiama `IdentityCreator` e `AssignmentProvider` registrati per il dominio.
+1. Richiama `IdentityCreator`. Se restituisce un `AuthResponse` corretto, estrarre `UserInfo` dalla mappa delle credenziali. Trasferiscilo a `AssignmentProvider` per l&#39;assegnazione di gruppo/ruolo e qualsiasi altra post-elaborazione dopo la creazione dell&#39;utente.
 1. Se l&#39;utente è stato creato correttamente, restituisce come operazione riuscita il tentativo di accesso dell&#39;utente.
 1. Per i domini ibridi, richiama le informazioni utente dai dati di autenticazione forniti al provider di autenticazione. Se queste informazioni vengono recuperate correttamente, crea l’utente all’istante.
 
 >[!NOTE]
 >
->La funzione di provisioning just-in-time viene fornita con un’implementazione predefinita di `IdentityCreator` che puoi utilizzare per creare gli utenti in modo dinamico. Gli utenti vengono creati con le informazioni associate alle directory nel dominio.
+>La funzionalità di provisioning just-in-time viene fornita con un&#39;implementazione predefinita di `IdentityCreator` che è possibile utilizzare per creare gli utenti in modo dinamico. Gli utenti vengono creati con le informazioni associate alle directory nel dominio.

@@ -38,7 +38,7 @@ Un cluster AEM Forms su JEE si basa sulle funzionalità di clustering del server
 
 ### Cache GemFire {#gemfire-cache}
 
-La cache GemFire è un meccanismo di cache distribuita implementato in ogni nodo del cluster. I nodi si trovano a vicenda e creano una singola cache logica coerente tra di loro. I nodi che si trovano si uniscono per mantenere una singola cache nozionale che viene mostrata come cloud nella Figura 1. A differenza di GDS e database, la cache è un&#39;entità puramente fittizia. Il contenuto effettivamente memorizzato nella cache viene memorizzato in e nel `LC_TEMP` in ciascuno dei nodi del cluster.
+La cache GemFire è un meccanismo di cache distribuita implementato in ogni nodo del cluster. I nodi si trovano a vicenda e creano una singola cache logica coerente tra di loro. I nodi che si trovano si uniscono per mantenere una singola cache nozionale che viene mostrata come cloud nella Figura 1. A differenza di GDS e database, la cache è un&#39;entità puramente fittizia. Il contenuto effettivamente memorizzato nella cache viene archiviato nella directory `LC_TEMP` di ogni nodo del cluster.
 
 ### Database {#database}
 
@@ -56,7 +56,7 @@ Oltre a queste risorse condivise principali, esistono altri elementi che hanno u
 
 Una delle cose più frustranti riguardo alla manutenzione o alla risoluzione dei problemi di un AEM Forms in un cluster JEE è che non esiste un unico luogo in cui cercare di verificare positivamente che il cluster sia integro. Per confermare che tutto è a posto nel cluster richiede alcune indagini e analisi, e ci sono diverse modalità di errore per il funzionamento del cluster, a seconda di ciò che è sbagliato con la configurazione del cluster. La figura seguente illustra un cluster configurato in modo errato in cui diverse risorse condivise non sono condivise correttamente.
 
-![Cluster configurato in modo errato](assets/bad-configuration-cluster.png)
+![Cluster non configurato correttamente](assets/bad-configuration-cluster.png)
 
 Comprendi il funzionamento del clustering e quali elementi è possibile cercare e verificare in un cluster, anche se non intendi eseguire AEM Forms su JEE in un cluster. Il motivo è che alcune parti di AEM Forms su JEE potrebbero dare indicazioni errate in merito al funzionamento in un cluster e assumere un comportamento cluster imprevisto.
 
@@ -74,7 +74,7 @@ Se si desidera creare un cluster di nodi, è necessario che questi si trovino su
 
 Un problema comune relativo all&#39;individuazione automatica è che i messaggi multicast possono essere filtrati dalla rete. Ciò può essere parte di un criterio di rete, essere dovuto a regole firewall software o perché non è possibile indirizzare la rete esistente tra i nodi. A causa della difficoltà generale di ottenere il funzionamento dell&#39;individuazione automatica UDP in reti complesse, è pratica comune per le distribuzioni di produzione utilizzare un metodo di individuazione alternativo: i localizzatori TCP. Una discussione generale sui localizzatori TCP si trova nei riferimenti.
 
-**Come posso sapere se utilizzo i localizzatori o UDP?**
+**Come posso sapere se utilizzo localizzatori o UDP?**
 
 Le seguenti proprietà JVM controllano il metodo utilizzato dalla cache GemFire per trovare altri nodi.
 
@@ -82,7 +82,7 @@ Impostazioni multicast:
 
 * `adobe.cache.multicast-port`: porta multicast utilizzata per comunicare con altri membri del sistema distribuito. Se è impostato su zero, il multicast è disabilitato sia per l&#39;individuazione dei membri che per la distribuzione.
 
-* `gemfire.mcast-address` (facoltativo): sostituisce l’indirizzo IP predefinito utilizzato da Gemfire.
+* `gemfire.mcast-address` (facoltativo): sostituisce l&#39;indirizzo IP predefinito utilizzato da Gemfire.
 
 Impostazioni di TCP Locator:
 
@@ -114,13 +114,13 @@ La risposta prevista dovrebbe essere simile alla seguente:
 
 `livecycl 331984 1 0 10:14:51 pts/0 0:03 java -cp ./gemfire.jar: -Dgemfire.license-type=production -Dlocators=localhost[22345] com.gemstone.gemfire.distributed.Locator 22345`
 
-**Come posso vedere quali nodi GemFire pensano siano nel cluster?**
+**Come è possibile visualizzare i nodi che GemFire ritiene siano nel cluster?**
 
 GemFire produce informazioni di registrazione che possono essere utilizzate per diagnosticare quali membri del cluster sono stati trovati e adottati dalla cache di GemFire. Può essere utilizzato per verificare che vengano trovati tutti i membri del cluster corretti e che non si verifichi alcuna individuazione aggiuntiva o errata dei nodi del cluster. Il file di registro per GemFire si trova nella directory temporanea configurata di AEM Forms su JEE:
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-La stringa numerica dopo `adobeZZ_` è univoco per il nodo del server, pertanto è necessario cercare il contenuto effettivo della directory temporanea. I due caratteri dopo `adobe` dipende dal tipo di server dell’applicazione: `wl`, `jb`, o `ws`.
+La stringa numerica dopo `adobeZZ_` è univoca per il nodo del server e pertanto è necessario eseguire una ricerca nel contenuto effettivo della directory temporanea. I due caratteri dopo `adobe` dipendono dal tipo di server applicazioni: `wl`, `jb` o `ws`.
 
 I registri di esempio seguenti mostrano cosa accade quando si trova un cluster a due nodi.
 
@@ -170,7 +170,7 @@ In questo caso, il programma di avvio automatico sta utilizzando GemFire per acc
 
 Anche se una porta duplicata spesso diventa evidente durante la Bootstrap, è possibile che questa situazione venga visualizzata in un secondo momento. Ciò può verificarsi quando un cluster viene riavviato dopo essere rimasto inattivo quando si è verificata la Bootstrap dell&#39;altro cluster. Oppure quando la configurazione di rete viene modificata in modo da rendere visibili gli uni agli altri i cluster precedentemente isolati a scopo multicast.
 
-Per diagnosticare queste situazioni, esaminare i registri GemFire e considerare attentamente se vengono trovati solo i nodi previsti. Per risolvere il problema, è necessario modificare il `adobe.cache.multicast-port` a un valore diverso su uno o entrambi i cluster.
+Per diagnosticare queste situazioni, esaminare i registri GemFire e considerare attentamente se vengono trovati solo i nodi previsti. Per risolvere il problema, è necessario modificare la proprietà `adobe.cache.multicast-port` in un valore diverso in uno o entrambi i cluster.
 
 ### 2) Condivisione GDS {#gds-sharing}
 
@@ -188,7 +188,7 @@ In UNIX®, il modo in cui i mount NFS vengono mappati alla struttura di director
 
 * LCES specifica il percorso di GDS: /u01/iapply/livecycle_gds
 
-Se il montaggio sul nodo 1 non riesce, la struttura della directory contiene ancora un percorso `/u01/iapply/livecycle_gds` al punto di montaggio vuoto e il nodo viene eseguito correttamente. Tuttavia, poiché il contenuto GDS non viene effettivamente condiviso con l&#39;altro nodo, il cluster non funziona correttamente. Questo può accadere, e succede, e il risultato è che il cluster fallisce in modi misteriosi.
+Se il montaggio sul nodo 1 non riesce, la struttura di directory contiene ancora un percorso `/u01/iapply/livecycle_gds` al punto di montaggio vuoto e il nodo sembra essere eseguito correttamente. Tuttavia, poiché il contenuto GDS non viene effettivamente condiviso con l&#39;altro nodo, il cluster non funziona correttamente. Questo può accadere, e succede, e il risultato è che il cluster fallisce in modi misteriosi.
 
 La best practice prevede di disporre le cose in modo che il punto di montaggio Linux® non venga utilizzato come radice del GDS, ma che alcune directory al suo interno vengano utilizzate come radice del GDS:
 
@@ -199,7 +199,7 @@ La best practice prevede di disporre le cose in modo che il punto di montaggio L
 
 Ora, se per qualche motivo il montaggio non riesce, il punto di montaggio non contiene una directory LC_GDS e il cluster non riesce in modo prevedibile perché non riesce a trovare alcun GDS.
 
-**Come posso verificare che tutti i nodi visualizzino lo stesso GDS e abbiano le autorizzazioni?**
+**Come posso verificare che tutti i nodi vedano lo stesso GDS e abbiano le autorizzazioni?**
 
 È consigliabile verificare l’accesso e la condivisione GDS accedendo a ciascuno dei nodi come utente interattivo. È possibile eseguire questa operazione tramite SSH o telnet nei nodi UNIX® oppure tramite desktop remoto nei sistemi Windows. Dovresti essere in grado di passare alla directory o al file system GDS configurato su ogni nodo e creare file di test da ogni nodo visibile in tutti gli altri nodi.
 
@@ -224,7 +224,7 @@ Per avere un AEM Forms sul cluster JEE corretto, il server applicazioni deve ess
 
 Riferimenti:
 
-* [Servizi aziendali a elevata disponibilità mediante cluster JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* [Servizi enterprise ad alta disponibilità mediante cluster JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
 * [Oracle di cluster che utilizzano il server WebLogic](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
@@ -263,11 +263,12 @@ In un&#39;impostazione viene utilizzato un punto tra &quot;cluster&quot; e &quot
 
 Per determinare come si è configurato Quartz, è necessario esaminare i messaggi generati dal servizio AEM Forms on JEE Scheduler durante l’avvio. Questi messaggi vengono generati con gravità INFO e potrebbe essere necessario regolare il livello di registro e riavviare per ottenere i messaggi. All’interno della sequenza di avvio di AEM Forms su JEE, l’inizializzazione al quarzo inizia con la seguente riga:
 
-INFO  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad È importante individuare questa prima riga nei registri. Il motivo è che alcuni server applicazioni utilizzano anche Quartz e le loro istanze Quartz non devono essere confuse con quelle utilizzate dal servizio AEM Forms on JEE Scheduler. Indica che il servizio Scheduler si sta avviando e le righe che seguono indicano se il servizio si sta avviando correttamente in modalità cluster. In questa sequenza compaiono diversi messaggi, ed è l’ultimo messaggio &quot;iniziato&quot; che rivela come è configurato Quartz:
+INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
+È importante individuare questa prima riga nei registri. Il motivo è che alcuni server applicazioni utilizzano anche Quartz e le loro istanze Quartz non devono essere confuse con quelle utilizzate dal servizio AEM Forms on JEE Scheduler. Indica che il servizio Scheduler si sta avviando e le righe che seguono indicano se il servizio si sta avviando correttamente in modalità cluster. In questa sequenza compaiono diversi messaggi, ed è l’ultimo messaggio &quot;iniziato&quot; che rivela come è configurato Quartz:
 
-Qui viene fornito il nome dell’istanza Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Il nome dell&#39;istanza Quartz dell&#39;utilità di pianificazione inizia sempre con la stringa `IDPSchedulerService_$_`. La stringa che viene aggiunta alla fine di questo messaggio indica se Quartz è in esecuzione in modalità cluster. L’identificatore univoco lungo generato dal nome host del nodo e una lunga stringa di cifre, qui `ap-hp8.ottperflab.adobe.com1312883903975`, indica che funziona in un cluster. Se funziona come un singolo nodo, l’identificatore è un numero di due cifre, &quot;20&quot;:
+Qui viene fornito il nome dell&#39;istanza Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Il nome dell&#39;istanza Quartz dell&#39;utilità di pianificazione inizia sempre con la stringa `IDPSchedulerService_$_`. La stringa che viene aggiunta alla fine di questo messaggio indica se Quartz è in esecuzione in modalità cluster. L&#39;identificatore univoco lungo generato dal nome host del nodo e una lunga stringa di cifre, in questo caso `ap-hp8.ottperflab.adobe.com1312883903975`, indica che il nodo opera in un cluster. Se funziona come un singolo nodo, l’identificatore è un numero di due cifre, &quot;20&quot;:
 
-INFO  `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` ha iniziato.
+Informazioni sull&#39;utilità di pianificazione `IDPSchedulerService_$_20` `[org.quartz.core.QuartzScheduler]` avviata.
 Questa verifica deve essere eseguita separatamente su tutti i nodi del cluster, in quanto l&#39;utilità di pianificazione di ciascun nodo determina in modo indipendente se utilizzare o meno la modalità cluster.
 
 ### Quali tipi di problemi si verificano se Quartz è in esecuzione in modalità errata? {#quartz-running-in-wrong-mode}
@@ -324,7 +325,7 @@ Controllare le seguenti impostazioni:
 1. Posizione della directory System Fonts
 1. Percorso del file di configurazione dei servizi dati
 
-Il cluster dispone di un&#39;unica impostazione di percorso per ciascuna di queste impostazioni di configurazione. Ad esempio, la posizione della directory Temp potrebbe essere `/home/project/QA2/LC_TEMP`. In un cluster, è necessario che ogni nodo abbia effettivamente questo particolare percorso accessibile. Se un nodo ha il percorso del file temporaneo previsto e un altro nodo no, il nodo che non lo ha funziona in modo errato.
+Il cluster dispone di un&#39;unica impostazione di percorso per ciascuna di queste impostazioni di configurazione. Ad esempio, il percorso della directory Temp potrebbe essere `/home/project/QA2/LC_TEMP`. In un cluster, è necessario che ogni nodo abbia effettivamente questo particolare percorso accessibile. Se un nodo ha il percorso del file temporaneo previsto e un altro nodo no, il nodo che non lo ha funziona in modo errato.
 
 Anche se questi file e percorsi possono essere condivisi tra i nodi o individuati separatamente o su file system remoti, è consigliabile che si tratti di copie locali nell&#39;archivio su disco del nodo locale.
 

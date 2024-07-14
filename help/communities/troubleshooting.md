@@ -22,17 +22,18 @@ Questa sezione contiene problemi comuni e problemi noti durante la risoluzione d
 
 ## Problemi noti {#known-issues}
 
-### Recupero del dispatcher non riuscito {#dispatcher-refetch-fails}
+### Recupero Dispatcher non riuscito {#dispatcher-refetch-fails}
 
 Quando si utilizza Dispatcher 4.1.5 con una versione più recente di Jetty, un recupero potrebbe causare l’errore &quot;Impossibile ricevere la risposta dal server remoto&quot; dopo l’attesa del timeout della richiesta.
 
-Questo problema è risolto con l’utilizzo di Dispatcher versione 4.1.6 o successive.
+Questo problema è risolto con l’utilizzo di Dispatcher versione 4.1.6 o successiva.
 
-### Impossibile accedere al post del forum dopo l’aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
+### Impossibile accedere a Forum Post dopo l’aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Se un forum è stato creato su CQ 5.4 e sono stati pubblicati degli argomenti, e poi il sito è stato aggiornato a AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore nella pagina:
 
-Carattere pattern non valido &#39;a&#39; Impossibile distribuire la richiesta a `/content/demoforums/forum-test.html` su questo server e i registri contengono quanto segue:
+Carattere pattern &quot;a&quot; non valido
+Impossibile distribuire la richiesta a `/content/demoforums/forum-test.html` su questo server e i registri contengono quanto segue:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -48,9 +49,9 @@ Pertanto, qualsiasi codice che utilizza l’API RelativeTimeFormat() deve cambia
 * Da: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-L’errore varia in Author e Publish. In Autore, non riesce in silenzio e semplicemente non visualizza gli argomenti del forum. Al momento della pubblicazione, genera l’errore sulla pagina.
+L’errore è diverso in Author e Publish. In Autore, non riesce in silenzio e semplicemente non visualizza gli argomenti del forum. Su Publish, genera l’errore sulla pagina.
 
-Consulta la [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API per ulteriori informazioni.
+Per ulteriori informazioni, consulta l&#39;API [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html).
 
 ## Preoccupazioni comuni {#common-concerns}
 
@@ -60,7 +61,7 @@ Durante l’avvio (non il primo, ma ogni volta dopo) nei registri può essere vi
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` è stato sostituito da `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Questo avviso può essere tranquillamente ignorato come `jknack.handlebars.Handlebars`, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene fornito con la propria utilità helper i18n. All’avvio, viene sostituito con uno specifico per AEM [helper i18n](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
+Questo avviso può essere ignorato poiché `jknack.handlebars.Handlebars`, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato della propria utilità helper i18n. All&#39;avvio, viene sostituito con un helper [i18n specifico per AEM](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
 
 ### Avviso nei registri: processOsgiEventQueue OakResourceListener {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

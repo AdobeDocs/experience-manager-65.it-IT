@@ -17,21 +17,21 @@ ht-degree: 0%
 
 # Modifica del contenuto di Page Zero in Designer {#changing-page-zero-content-in-designer}
 
-Il contenuto Pagina zero viene visualizzato per impostazione predefinita quando un visualizzatore non Adobe PDF, ad esempio il visualizzatore PDF predefinito in [!DNL Chrome] o [!DNL Firefox], non può leggere il contenuto del modulo PDF/XFA. Di seguito viene visualizzato il messaggio predefinito Pagina zero.
+Il contenuto Pagina zero viene visualizzato per impostazione predefinita quando un visualizzatore non Adobe PDF, ad esempio il visualizzatore PDF predefinito in [!DNL Chrome] o [!DNL Firefox], non è in grado di leggere il contenuto del modulo PDF/XFA. Di seguito viene visualizzato il messaggio predefinito Pagina zero.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] versione di Designer consente di modificare il messaggio visualizzato nella pagina zero. Per modificare il messaggio Pagina zero, effettuare le seguenti operazioni:
+La versione [!DNL AEM Forms] di Designer consente di modificare il messaggio visualizzato a pagina zero. Per modificare il messaggio Pagina zero, effettuare le seguenti operazioni:
 
-1. Assicurati di disporre di [!DNL AEM Forms] versione di Designer installata. Puoi controllare la versione dalla schermata Informazioni su di Designer.
+1. Verificare che sia installata la versione [!DNL AEM Forms] di Designer. Puoi controllare la versione dalla schermata Informazioni su di Designer.
 
 1. Aprire il modulo di cui si desidera modificare il contenuto Pagina zero.
 
-1. Clic **[!UICONTROL File]** > **[!UICONTROL Proprietà modulo]**.
+1. Fare clic su **[!UICONTROL File]** > **[!UICONTROL Proprietà modulo]**.
 
-1. In [!UICONTROL Proprietà modulo] , fai clic su ![più](assets/plus.png) (Icona Più) per aggiungere una proprietà personalizzata.
+1. Nella finestra di dialogo [!UICONTROL Proprietà modulo], fai clic su ![più](assets/plus.png) (icona Più) per aggiungere una proprietà personalizzata.
 
-1. Specifica **_pagezerocontent** come nome della proprietà.
+1. Specificare **_pagezerocontent** come nome della proprietà.
 1. Aggiungi come valore il nuovo messaggio Pagina zero, in formato Testo formattato. Ad esempio:
 
 

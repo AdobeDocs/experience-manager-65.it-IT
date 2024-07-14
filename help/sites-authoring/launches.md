@@ -35,7 +35,7 @@ I lanci possono anche essere:
 * creati per più rami principali. Nonostante sia possibile creare il lancio per l&#39;intero sito (e apportare le modifiche desiderate), questa operazione potrebbe risultare poco pratica perché l&#39;intero sito dovrà essere copiato. Quando sono coinvolte centinaia o persino migliaia di pagine, i requisiti e le prestazioni di sistema sono influenzati sia dall’azione di copia che, in un secondo momento, dai confronti richiesti per le attività di promozione.
 * Nidificato (un lancio all’interno di un lancio) per consentirti di creare un lancio da uno esistente, in modo che gli autori possano sfruttare le modifiche già apportate, anziché dover apportare le stesse modifiche più volte per ogni lancio.
 
-Questa sezione descrive come creare, modificare e promuovere (e se necessario [eliminare](/help/sites-authoring/launches-creating.md#deleting-a-launch)) pagine di lancio dall&#39;interno della console Sites o [la console Launches](#the-launches-console):
+Questa sezione descrive come creare, modificare e promuovere (e se necessario [eliminare](/help/sites-authoring/launches-creating.md#deleting-a-launch)) le pagine di lancio dall&#39;interno della console Sites o [dalla console Launches](#the-launches-console):
 
 * [Creazione dei lanci](/help/sites-authoring/launches-creating.md)
 * [Modifica dei lanci](/help/sites-authoring/launches-editing.md)
@@ -54,7 +54,7 @@ I lanci consentono di:
 
       * Le pagine sorgente possono essere ricavate da più rami (separati).
 
-  ![Panoramica delle azioni di lancio](assets/chlimage_1-111.png)
+  ![Panoramica delle azioni di avvio](assets/chlimage_1-111.png)
 
 * Modifica la configurazione del lancio:
 
@@ -74,7 +74,7 @@ I lanci consentono di:
       * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
 
       * Il flag **Pronto per la produzione** può essere impostato solo durante la modifica di un lancio.
-      * Se il **Produzione pronta** è impostato, il lancio verrà promosso automaticamente alle pagine di produzione nella **Launch**(**Live**) **data**. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
+      * Se è impostato il flag **Production Ready**, il lancio verrà promosso automaticamente alle pagine di produzione nel **Launch**(**Live**) **date** specificato. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
         Se la data non è stata impostata, il flag non ha alcun effetto.
 
 * Aggiorna parallelamente la pagina sorgente e la pagina di lancio:
@@ -126,4 +126,4 @@ La console Lanci fornisce una panoramica dei lanci e consente di eseguire azioni
 
 1. Fai clic sul lancio appropriato per visualizzare l’elenco delle azioni possibili:
 
-   ![Seleziona lancio per mostrare le azioni possibili](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Seleziona lancio per visualizzare le azioni possibili](assets/screen-shot_2019-03-05at121952-1.png)

@@ -33,14 +33,14 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 1. Effettua una delle seguenti operazioni:
 
-   1. [Consenso ad Adobe Target](/help/sites-administering/opt-in.md): la procedura guidata di consenso prende le informazioni sull’account Target e crea una configurazione cloud Adobe Target e un framework Target. La procedura guidata associa inoltre i siti al framework di Target. Se la procedura guidata non è in grado di connettersi alla destinazione, vedere [risoluzione dei problemi di connessione](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sezione. Potrai quindi [Modificare le configurazioni cloud predefinite](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): se necessario, modifica la configurazione cloud e il framework creati dalla procedura guidata di consenso. Ad esempio, modifica il framework per inviare dati di contesto aggiuntivi a Target. Se desideri utilizzare Adobe Analytics come origine per la generazione di rapporti per Adobe Target, devi modificare la configurazione cloud in modo che punti alla configurazione A4T.
-   1. [Integrare manualmente con Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
+   1. [Consenso ad Adobe Target](/help/sites-administering/opt-in.md): la procedura guidata consenso prende in considerazione le informazioni sull&#39;account Target e crea una configurazione cloud Adobe Target e un framework Target. La procedura guidata associa inoltre i siti al framework di Target. Se la procedura guidata non riesce a connettersi alla destinazione, vedere la sezione [risoluzione dei problemi di connessione](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems). È quindi possibile [Modificare le configurazioni cloud predefinite](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): se necessario, modificare la configurazione cloud e il framework creati dalla procedura guidata di consenso. Ad esempio, modifica il framework per inviare dati di contesto aggiuntivi a Target. Se desideri utilizzare Adobe Analytics come origine per la generazione di rapporti per Adobe Target, devi modificare la configurazione cloud in modo che punti alla configurazione A4T.
+   1. [Integrazione manuale con Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [Configurare le attività](/help/sites-authoring/activitylib.md): associa le attività alla configurazione cloud di Target.
 
 >[!NOTE]
 >
->Vedi anche [Integrazione dell’AEM con Adobe Target e Adobe Analytics tramite DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Vedi anche [Integrazione dell&#39;AEM con Adobe Target e Adobe Analytics utilizzando DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 >
 >Consulta [Prerequisiti per l&#39;integrazione con Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) per informazioni dettagliate.
 
-Una volta completata l’integrazione, puoi [contenuto mirato dell&#39;autore](/help/sites-authoring/content-targeting-touch.md) che invia i dati dei visitatori ad Adobe Target. I Componenti Pagina richiedono un codice specifico per abilitare il targeting dei contenuti. (vedere [Sviluppo per contenuti di destinazione](/help/sites-developing/target.md).)
+Una volta completata l’integrazione, puoi [contenuto mirato dell&#39;autore](/help/sites-authoring/content-targeting-touch.md) che invia i dati dei visitatori ad Adobe Target. I Componenti Pagina richiedono un codice specifico per abilitare il targeting dei contenuti. (Vedi [Sviluppo per contenuti di destinazione](/help/sites-developing/target.md).)
 
 >[!NOTE]
 >

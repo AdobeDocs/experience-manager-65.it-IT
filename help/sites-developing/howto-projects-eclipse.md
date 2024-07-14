@@ -22,7 +22,7 @@ Questa guida descrive come utilizzare Eclipse per sviluppare progetti basati su 
 
 >[!NOTE]
 >
->L&#39;Adobe ora fornisce [Strumenti di sviluppo AEM per Eclipse](/help/sites-developing/aem-eclipse.md) che consente di sviluppare soluzioni per l’AEM con Eclipse.
+>Adobe ora fornisce gli [Strumenti di sviluppo AEM per Eclipse](/help/sites-developing/aem-eclipse.md) che consentono di sviluppare soluzioni AEM con Eclipse.
 
 ## Panoramica {#overview}
 
@@ -41,29 +41,29 @@ Ognuno di essi viene spiegato più dettagliatamente nel resto di questa procedur
 
 ## Installare Eclipse {#install-eclipse}
 
-Scarica l’&quot;IDE Eclipse per sviluppatori Java EE&quot; da [Pagina Download di Eclipse](https://www.eclipse.org/downloads/).
+Scaricare l&#39;IDE Eclipse per sviluppatori Java EE dalla [pagina Download Eclipse](https://www.eclipse.org/downloads/).
 
-Installa Eclipse seguendo la [Istruzioni di installazione](https://wiki.eclipse.org/Eclipse/Installation).
+Installa Eclipse seguendo le [istruzioni di installazione](https://wiki.eclipse.org/Eclipse/Installation).
 
 ## Configurare il progetto AEM in base a Maven {#set-up-your-aem-project-based-on-maven}
 
-Quindi, imposta il progetto utilizzando Maven come descritto in [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Quindi, configura il tuo progetto utilizzando Maven come descritto in [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ## Preparare il supporto JSP per Eclipse {#prepare-jsp-support-for-eclipse}
 
 Eclipse può anche fornire supporto nell’utilizzo di JSP, ad esempio,
 
 * completamento automatico delle librerie di tag
-* Eclipse-awareness degli oggetti definiti da &lt;cq:defineobjects /> e &lt;sling:defineobjects />
+* Riconoscimento delle eclissi di oggetti definiti da &lt;cq:defineObjects /> e &lt;sling:defineObjects />
 
 Perché ciò funzioni:
 
-1. Segui le istruzioni su [Come utilizzare le JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md).
-1. Aggiungi quanto segue a &lt;build /> nel POM del modulo dei contenuti.
+1. Segui le istruzioni in [Come lavorare con JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
+1. Aggiungi quanto segue alla sezione &lt;build /> del POM del modulo di contenuto.
 
    Il plug-in di supporto Maven di Eclipse, m2e, non fornisce il supporto per maven-jspc-plugin, e questa configurazione dice a m2e di ignorare il plug-in e l’attività correlata di pulizia dei risultati della compilazione temporanea.
 
-   Questo non è un problema: come indicato in [Come utilizzare le JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), il maven-jspc-plugin in questa configurazione viene utilizzato solo per convalidare la compilazione dei JSP come parte del processo di build. Eclipse segnala già qualsiasi problema nei JSP e non si basa su questo plug-in Maven per poterlo fare.
+   Questo non è un problema: come indicato in [Come utilizzare i JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), il maven-jspc-plugin di questa configurazione viene utilizzato solo per convalidare la compilazione dei JSP come parte del processo di compilazione. Eclipse segnala già qualsiasi problema nei JSP e non si basa su questo plug-in Maven per poterlo fare.
 
    **myproject/content/pom.xml**
 
@@ -132,4 +132,4 @@ Perché ciò funzioni:
 
    >[!NOTE]
    >
-   >Se includi `/libs/foundation/global.jsp` o altre JSP in `/libs`, devi copiarlo nel progetto in modo che Eclipse possa risolvere l’inclusione. Allo stesso tempo, devi accertarti che non sia incluso nel pacchetto di contenuti da Maven. Come ottenere questo risultato è descritto in [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   >Se includi `/libs/foundation/global.jsp` o altre JSP in `/libs`, devi copiarle nel progetto in modo che Eclipse possa risolvere l&#39;inclusione. Allo stesso tempo, devi accertarti che non sia incluso nel pacchetto di contenuti da Maven. Come ottenere questo risultato è descritto in [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).

@@ -24,13 +24,13 @@ Questo approccio è fondamentalmente diverso dal modo in cui la piattaforma AEM 
 
 La piattaforma AEM utilizza un archivio nodi che replica il contenuto del sito dall’ambiente di authoring a quello di pubblicazione, mentre AEM Communities utilizza un singolo archivio comune per i contenuti generati dagli utenti che non vengono mai replicati.
 
-Per il negozio UGC comune, è necessario scegliere un [provider di risorse di archiviazione (SRP)](working-with-srp.md). Le scelte consigliate sono:
+Per l&#39;archivio UGC comune, è necessario scegliere un provider di risorse di archiviazione [SRP](working-with-srp.md). Le scelte consigliate sono:
 
 * [DSRP - Provider risorsa di archiviazione database relazionale](dsrp.md)
 * [MSRP - Provider risorsa di archiviazione MongoDB](msrp.md)
 * [ASRP - Provider risorsa di archiviazione Adobe](asrp.md)
 
-un&#39;altra opzione SRP, [JSRP - Provider risorsa di archiviazione JCR](jsrp.md), non supporta un archivio UGC comune per gli ambienti di authoring e pubblicazione per accedere a entrambi.
+Un&#39;altra opzione SRP, [JSRP - Provider risorsa di archiviazione JCR](jsrp.md), non supporta un archivio UGC comune per gli ambienti di authoring e pubblicazione per accedere a entrambi.
 
 La richiesta di un archivio comune determina le seguenti topologie consigliate.
 
@@ -38,12 +38,12 @@ La richiesta di un archivio comune determina le seguenti topologie consigliate.
 >
 >Per AEM Communities, [UGC non viene mai replicato](working-with-srp.md#ugc-never-replicated).
 >
->Quando la distribuzione non include un [archivio comune](working-with-srp.md), UGC sarà visibile solo nell’istanza di pubblicazione o authoring dell’AEM in cui è stato inserito.
+>Se la distribuzione non include un [archivio comune](working-with-srp.md), UGC sarà visibile solo nell&#39;istanza di pubblicazione o di authoring dell&#39;AEM in cui è stato immesso.
 >
 
 >[!NOTE]
 >
->Per maggiori informazioni sulla piattaforma AEM, vedi [Distribuzioni consigliate](../../help/sites-deploying/recommended-deploys.md) e [Introduzione alla piattaforma AEM](../../help/sites-deploying/data-store-config.md).
+>Per ulteriori informazioni sulla piattaforma AEM, vedere [Distribuzioni consigliate](../../help/sites-deploying/recommended-deploys.md) e [Introduzione alla piattaforma AEM](../../help/sites-deploying/data-store-config.md).
 
 ## Per la produzione {#for-production}
 
@@ -51,17 +51,17 @@ La creazione di un archivio comune per i contenuti generati dagli utenti (UGC, C
 
 Due esempi:
 
-1. Se il volume previsto di UGC è elevato ed è possibile un’istanza MongoDB locale, la scelta è [MSRP](msrp.md).
+1. Se il volume previsto di UGC è elevato ed è possibile un&#39;istanza MongoDB locale, la scelta sarà [MSRP](msrp.md).
 
-1. Per prestazioni ottimali per il contenuto della pagina, è possibile scegliere tra [farm di pubblicazione](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) e [ASRP](asrp.md) fornirebbe la scalabilità ottimale di UGC con operazioni relativamente semplici.
+1. Per prestazioni ottimali per il contenuto della pagina, la scelta di una [farm di pubblicazione](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) e [ASRP](asrp.md) fornirebbe una scalabilità ottimale di UGC con operazioni relativamente semplici.
 
 Per entrambi, la distribuzione può essere basata su qualsiasi microkernel OAK.
 
-Per scegliere il negozio comune appropriato, considerare attentamente l&#39;unico [caratteristiche](working-with-srp.md#characteristics-of-srp-options) di ciascuno.
+Per scegliere l&#39;archivio comune appropriato, considerare attentamente le [caratteristiche](working-with-srp.md#characteristics-of-srp-options) univoche di ciascuna.
 
-Per maggiori dettagli sui microkernals Oak, visita [Distribuzioni consigliate](../../help/sites-deploying/recommended-deploys.md).
+Per ulteriori dettagli sui microkernel di Oak, visita [Distribuzioni consigliate](../../help/sites-deploying/recommended-deploys.md).
 
-### Farm di pubblicazione TarMK {#tarmk-publish-farm}
+### Farm Publish TarMK {#tarmk-publish-farm}
 
 Quando la topologia è una farm di pubblicazione, gli argomenti rilevanti sono:
 
@@ -86,9 +86,9 @@ Quando la topologia è una farm di pubblicazione, gli argomenti rilevanti sono:
 
 ## Per lo sviluppo {#for-development}
 
-Per ambienti non di produzione, [JSRP](jsrp.md) fornisce semplicità nella configurazione di un ambiente di sviluppo con un’istanza Autore e un’istanza Publish.
+Per gli ambienti non di produzione, [JSRP](jsrp.md) fornisce semplicità nella configurazione di un ambiente di sviluppo con un&#39;istanza di authoring e un&#39;istanza di pubblicazione.
 
-Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzione, è anche possibile impostare un ambiente di sviluppo simile utilizzando lo storage Adobe on-demand o MongoDB. Per un esempio, vedi [Come impostare MongoDB per la demo](demo-mongo.md).
+Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzione, è anche possibile impostare un ambiente di sviluppo simile utilizzando l&#39;archiviazione Adobe on-demand o MongoDB. Per un esempio, vedere [Come configurare MongoDB per Demo](demo-mongo.md).
 
 ## Riferimenti {#references}
 
@@ -100,7 +100,7 @@ Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzio
 
   Descrive i ruoli degli utenti e dei gruppi di utenti negli ambienti di authoring e pubblicazione.
 
-* UGC [archivio comune](working-with-srp.md)
+* [archivio comune](working-with-srp.md) UGC
 
   Descrive l&#39;archiviazione del contenuto della community separata dal contenuto del sito.
 

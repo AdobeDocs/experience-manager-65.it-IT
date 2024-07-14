@@ -55,31 +55,31 @@ Espressione supportata per la clausola Date Picture:
   </tr>
   <tr>
    <td>GG</td>
-   <td>Giorno del mese a due cifre (01-31) senza riempimento.<br /> </td>
+   <td>Giorno del mese a due cifre (01-31) imbottite a zero.<br /> </td>
   </tr>
   <tr>
    <td>L</td>
-   <td>1 o 2 cifre (1-12) del mese dell’anno.<br /> </td>
+   <td>Mese dell'anno a 1 o 2 cifre (1-12).<br /> </td>
   </tr>
   <tr>
    <td>MM</td>
-   <td>Mese dell’anno a due cifre (01-12) imbottite a zero.<br /> </td>
+   <td>Mese dell'anno a due cifre (01-12) imbottite a zero.<br /> </td>
   </tr>
   <tr>
    <td>MMM</td>
-   <td>Nome del mese abbreviato della lingua corrente<br /> </td>
+   <td>Nome del mese abbreviato delle impostazioni locali correnti<br /> </td>
   </tr>
   <tr>
    <td>MMMM</td>
-   <td>Nome mese completo della lingua corrente<br /> </td>
+   <td>Nome mese completo delle impostazioni locali correnti<br /> </td>
   </tr>
   <tr>
    <td>EEE</td>
-   <td>Nome abbreviato del giorno feriale della lingua corrente<br /> </td>
+   <td>Abbreviazione del nome del giorno feriale delle impostazioni locali correnti<br /> </td>
   </tr>
   <tr>
    <td>EEEE</td>
-   <td>Nome completo del giorno feriale della lingua corrente<br /> </td>
+   <td>Nome completo del giorno della settimana delle impostazioni locali correnti<br /> </td>
   </tr>
   <tr>
    <td>AA</td>
@@ -94,15 +94,15 @@ Espressione supportata per la clausola Date Picture:
 
 >[!NOTE]
 >
-> In base alla progettazione, il campo Data in HTML5 Forms non supporta `MM-YYYY` pattern in formato di modifica. Tuttavia, il modello è supportato nel formato di visualizzazione.
+> In base alla progettazione, il campo Data in HTML5 Forms non supporta il pattern `MM-YYYY` in formato di modifica. Tuttavia, il modello è supportato nel formato di visualizzazione.
 
 ## Clausola immagine numerica {#numeric-picture-clause}
 
 I moduli HTML5 supportano i simboli di immagine numerica. Tuttavia, esiste una differenza nel supporto tra PDF forms e HTML Forms.
 
-In entrata **PDF forms**, un numero viene formattato indipendentemente dal numero di simboli nella clausola Picture
+In **PDF forms**, un numero viene formattato indipendentemente dal numero di simboli nella clausola Picture
 
-In entrata **HTML Forms**, un numero viene formattato solo se il numero contiene cifre inferiori al numero di simboli nella clausola Picture.
+In **HTML Forms** un numero viene formattato solo se il numero contiene cifre inferiori al numero di simboli nella clausola Picture.
 
 **Esempio**: considerare una clausola Picture: num{zzz,zzz,zz9}.
 
@@ -110,7 +110,7 @@ Il numero **10000** è formattato come **10.000** sia in HTML che in PDF forms.
 
 Il numero 1000000 è formattato come 1.000.000 in PDF forms. Tuttavia, in HTML Forms il numero rimane non formattato come 1000000.
 
-Espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
+Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
 
 * num.integer{}
 * num.decimal{}
@@ -127,22 +127,22 @@ Espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Formattazione di output</strong>: una cifra singola. Oppure per la cifra zero se i dati di input sono vuoti o uno spazio nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione output</strong>: una sola cifra. Oppure per la cifra zero se i dati di input sono vuoti o uno spazio nella posizione corrispondente.<br /> </td>
    <td>Cifra singola</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>Formattazione di output</strong>: una cifra singola. Oppure per uno spazio se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione output</strong>: una sola cifra. Oppure per uno spazio se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
    <td>Cifra singola o spazio</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>Formattazione di output</strong>: una cifra singola. Oppure nulla se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione output</strong>: una sola cifra. Oppure nulla se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
    <td>Cifra singola o nulla</td>
   </tr>
   <tr>
    <td>Err.</td>
-   <td><strong>Formattazione di output</strong>: la parte esponente di un numero a virgola mobile costituito dal simbolo esponenziale (E). Seguito da un segno più o meno facoltativo. Seguito dal valore esponente.<br /> </td>
+   <td><strong>Formattazione output</strong>: parte esponente di un numero a virgola mobile costituito dal simbolo esponenziale (E). Seguito da un segno più o meno facoltativo. Seguito dal valore dell'esponente.<br /> </td>
    <td>Come per la formattazione di output</td>
   </tr>
   <tr>
@@ -152,7 +152,7 @@ Espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
   </tr>
   <tr>
    <td>S o s<br /> </td>
-   <td>Formattazione output: un segno meno se il numero è negativo. Altro spazio.<br /> </td>
+   <td>Formattazione output: un segno meno se il numero è negativo. Spazio alternativo.<br /> </td>
    <td>Segno meno se il numero è negativo. Segno più se il numero è positivo</td>
   </tr>
   <tr>

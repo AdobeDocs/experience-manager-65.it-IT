@@ -73,7 +73,7 @@ Specifica i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Specifica il percorso del repository CRX in cui risiede il modulo. Se non si specifica il percorso del modulo, verrà restituita una risposta vuota.<br /> </td>
+   <td>Specifica il percorso del repository di CRX in cui risiede il modulo. Se non si specifica il percorso del modulo, verrà restituita una risposta vuota.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code><br /> (facoltativo)</td>
@@ -85,7 +85,7 @@ Specifica i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (facoltativo)</td>
-   <td>Specifica la proprietà per ordinare i risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all’ora dell’ultima modifica.</td>
+   <td>Specifica la proprietà per ordinare i risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all'ora dell'ultima modifica.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (facoltativo)</td>

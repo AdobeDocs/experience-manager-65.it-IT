@@ -25,8 +25,8 @@ Puoi modificare le impostazioni per i domini esistenti dalla pagina Gestione dom
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fai clic sul nome del dominio da modificare.
 1. Per modificare il nome di dominio, modificare il testo nella casella Nome.
-1. Per modificare le informazioni di autenticazione per un dominio enterprise o ibrido, fai clic sul nome di autenticazione appropriato nella parte inferiore della pagina. Nella pagina Modifica autenticazione modificare le impostazioni in base alle esigenze. (vedere [Impostazioni di autenticazione](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
-1. Per modificare le informazioni sulla directory per un dominio enterprise, fare clic sul nome di directory appropriato nella parte inferiore della pagina. Nella pagina Modifica directory modificare le impostazioni in base alle esigenze. (vedere [Aggiunta di directory o SPI personalizzati](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
+1. Per modificare le informazioni di autenticazione per un dominio enterprise o ibrido, fai clic sul nome di autenticazione appropriato nella parte inferiore della pagina. Nella pagina Modifica autenticazione modificare le impostazioni in base alle esigenze. (Vedi [Impostazioni di autenticazione](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
+1. Per modificare le informazioni sulla directory per un dominio enterprise, fare clic sul nome di directory appropriato nella parte inferiore della pagina. Nella pagina Modifica directory modificare le impostazioni in base alle esigenze. (Vedi [Aggiunta di directory o SPI personalizzati](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
 1. Al termine delle modifiche, fare clic su OK.
 
 ## Convertire un dominio enterprise in un dominio ibrido {#convert-an-enterprise-domain-to-a-hybrid-domain}
@@ -47,4 +47,4 @@ Puoi modificare le impostazioni per i domini esistenti dalla pagina Gestione dom
 1. Fai clic sul nome del dominio ibrido da convertire.
 1. Fare clic su Converti in dominio enterprise.
 1. Esaminare le informazioni visualizzate relative ai dati di utenti e gruppi e all&#39;autenticazione degli utenti, quindi fare clic su OK.
-1. Fai clic su Aggiungi directory e configura le informazioni richieste sulla directory. (vedere [Aggiunta di directory o SPI personalizzati](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
+1. Fai clic su Aggiungi directory e configura le informazioni richieste sulla directory. (Vedi [Aggiunta di directory o SPI personalizzati](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)

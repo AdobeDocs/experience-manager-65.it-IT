@@ -19,7 +19,7 @@ ht-degree: 20%
 
 # Componenti{#components}
 
-Adobe Experience Manager (AEM) viene fornito con una varietà di componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. Sono disponibili quando [modifica di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) e sono raggruppati per area funzionale principale (ovvero, gruppo di componenti) per facilitare il filtraggio.
+Adobe Experience Manager (AEM) viene fornito con una varietà di componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. Sono disponibili quando [si modifica una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) e sono raggruppati per area funzionale principale (ovvero, gruppo di componenti) per facilitare l&#39;applicazione di filtri.
 
 >[!CAUTION]
 >
@@ -33,12 +33,12 @@ Le pagine seguenti forniscono collegamenti rapidi ad alcune delle principali are
 
 * [Componenti per l’authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-  I componenti utilizzati per creare contenuti di pagina standard sono principalmente contenuti nei gruppi **Generale**, **Colonne** e **Forms**.
+  I componenti utilizzati per la creazione di contenuto di pagina standard sono contenuti principalmente nei gruppi **Generale**, **Colonne** e **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-  La funzionalità di eCommerce all’interno dell’AEM include anche una serie di componenti, contenuti nel **Commerce** gruppo. L’uso effettivo può dipendere dal motore di e-commerce utilizzato.
+  La funzionalità di eCommerce in AEM include anche una serie di componenti, contenuti nel gruppo **Commerce**. L’uso effettivo può dipendere dal motore di e-commerce utilizzato.
 
 ## Utilizzo della modalità Progettazione per configurare i componenti {#using-design-mode-to-configure-components}
 
-Oltre ai componenti a cui gli autori possono accedere tramite la barra laterale in un’installazione standard, sono disponibili vari altri componenti. È possibile utilizzare [Modalità progettazione](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) per attivare/disattivare questi parametri e modificarli per componenti specifici.
+Oltre ai componenti a cui gli autori possono accedere tramite la barra laterale in un’installazione standard, sono disponibili vari altri componenti. È possibile utilizzare la [modalità progettazione](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) per abilitare/disabilitare questi parametri e modificarli per componenti specifici.

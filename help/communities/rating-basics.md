@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Nozioni di base sulla valutazione {#rating-essentials}
 
-Il componente di valutazione, un [conteggio](tally.md) sottoclasse, consente ai membri della community con accesso effettuato di assegnare una valutazione a una funzione del sito web.
+Il componente di valutazione, una sottoclasse [tally](tally.md), consente ai membri della community con accesso esterno di valutare una funzionalità del sito Web.
 
-È consentito posizionare più istanze di un componente voting sulla stessa pagina; ogni istanza deve essere configurata con un `tally name` proprietà.
+È consentito inserire più istanze di un componente voting nella stessa pagina; ogni istanza deve essere configurata con una proprietà `tally name` univoca.
 
 La pubblicazione anonima di una valutazione non è supportata. I visitatori del sito devono registrarsi e accedere per partecipare a una valutazione una sola volta. Il visitatore con accesso (membro) può modificare la propria valutazione in qualsiasi momento.
 
@@ -29,12 +29,12 @@ La pubblicazione anonima di una valutazione non è supportata. I visitatori del 
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td> social/tally/components/hbs/rating</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
-   <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
+   <td>Sì - le proprietà sono modificabili in modalità <i>progettazione </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -50,7 +50,7 @@ La pubblicazione anonima di una valutazione non è supportata. I visitatori del 
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td><p>Consulta <a href="rating.md">Utilizzo della valutazione</a></p> </td>
+   <td><p>Vedi <a href="rating.md">Utilizzo della valutazione</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -59,24 +59,24 @@ La pubblicazione anonima di una valutazione non è supportata. I visitatori del 
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Punti finali conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoint conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
 ### Accesso alle valutazioni pubblicate (UGC) {#accessing-posted-ratings-ugc}
 
 Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Vedere [Moderazione del contenuto generato dall&#39;utente](moderate-ugc.md).
 
-A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell&#39;UGC nell&#39;archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio.
-* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi ed esempi dell&#39;utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida per la codifica.
-* [Refactoring SocialUtils](socialutils.md) - mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.
+* [Refactoring di SocialUtils](socialutils.md) - mapping dei metodi di utilità obsoleti ai metodi di utilità SRP correnti.

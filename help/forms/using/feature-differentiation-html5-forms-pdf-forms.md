@@ -35,8 +35,8 @@ La tabella seguente specifica il supporto delle funzioni fornito per i moduli e 
   </tr>
   <tr>
    <td>Campo firma<br /> </td>
-   <td><strong>Firme digitali</strong> non sono supportati, ma un nuovo <strong>Firma a mano</strong> viene aggiunto un campo per le firme di tipo carta. È possibile scrivere la propria firma sul modulo utilizzando <strong>Firma a mano</strong> campo. La firma viene salvata nel modulo come immagine. È possibile salvare le informazioni di geolocalizzazione in <strong>Firma a mano</strong> campo.</td>
-   <td>Campo di firma disponibile per <strong>Firme digitali</strong>.</td>
+   <td><strong>Le firme digitali</strong> non sono supportate, ma è stato aggiunto un nuovo campo <strong>Firma scarabocchio</strong> per le firme cartacee. È possibile scrivere la firma nel modulo utilizzando il campo <strong>Firma scarabocchio</strong>. La firma viene salvata nel modulo come immagine. È possibile salvare le informazioni di geolocalizzazione nel campo <strong>Firma scarabocchio</strong>.</td>
+   <td>Campo firma disponibile per <strong>firme digitali</strong>.</td>
   </tr>
   <tr>
    <td>Unione dati</td>
@@ -45,32 +45,32 @@ La tabella seguente specifica il supporto delle funzioni fornito per i moduli e 
   </tr>
   <tr>
    <td>Immagini</td>
-   <td>Lo schema URI dati viene utilizzato per visualizzare le immagini. Tutte le versioni moderne dei browser supportano questo schema, ma esistono differenze nella gamma di formati di immagine supportati da ogni browser.<br /> </td>
+   <td>Lo schema URI dati viene utilizzato per visualizzare le immagini. Tutte le versioni moderne dei browser supportano questo schema, ma esistono differenze nell'intervallo di formati di immagine supportati da ogni browser.<br /> </td>
    <td>Sono supportati i formati .gif, .png, .jpeg, .bmp e .tiff.</td>
   </tr>
   <tr>
    <td>Paginazione<br /> </td>
-   <td><p>Un modulo HTML5 è diviso in pannelli e caselle per conferirgli un aspetto simile a quello dei PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta. Tra le pagine sopra e sotto la pagina vuota non viene visualizzato uno spazio vuoto (spazio vuoto).</p> <p>Se l’unione dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Non vengono aggiunte nuove pagine al modulo per includere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> Quando tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre pagine.</p> </td>
+   <td><p>Un modulo HTML5 è diviso in pannelli e caselle per conferirgli un aspetto simile a quello dei PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta. Tra le pagine sopra e sotto la pagina vuota non viene visualizzato uno spazio vuoto (spazio vuoto).</p> <p>Se l’unione dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Non vengono aggiunte nuove pagine al modulo per includere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> quando tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre pagine.</p> </td>
    <td>L’impaginazione in PDF dipende dal contenuto dei dati uniti o dal contenuto dell’utente e il conteggio delle pagine viene aumentato/ridotto in base a esso.</td>
   </tr>
   <tr>
    <td>Intestazioni/Piè di pagina </td>
-   <td>Supportato. <br /> <br /> Poiché i moduli HTML5 per dispositivi mobili non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati una sola volta. È tuttavia possibile impostarli nel layout in modo che vengano visualizzati in più punti nell'anteprima dei moduli mobili.<br /> </td>
+   <td>Supportato. <br /> <br /> Poiché i moduli mobili HTML5 non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati una sola volta. È tuttavia possibile impostarle nel layout in modo che vengano visualizzate in più posizioni nell'anteprima dei moduli mobili.<br /> </td>
    <td>Supportato.</td>
   </tr>
   <tr>
    <td>Widget personalizzati</td>
-   <td>È possibile personalizzare i widget per migliorare l’esperienza utente sui dispositivi mobili.<br /> </td>
+   <td>È possibile personalizzare i widget per migliorare l'esperienza utente sui dispositivi mobili.<br /> </td>
    <td>Tutti i widget sono bloccati e nessun widget personalizzato può essere collegato.<br /> </td>
   </tr>
   <tr>
    <td>API script XFA</td>
-   <td>Supporta i costrutti di script XFA più comunemente utilizzati. Per un elenco dettagliato dei costrutti supportati consulta <a href="/help/forms/using/scripting-support.md">supporto script</a>.</td>
+   <td>Supporta i costrutti di script XFA più comunemente utilizzati. Per un elenco dettagliato dei costrutti supportati, vedere <a href="/help/forms/using/scripting-support.md">supporto script</a>.</td>
    <td>Supporta tutti i costrutti di script XFA.</td>
   </tr>
   <tr>
    <td>API di Acrobat Script </td>
-   <td>I moduli HTML5 supportano le API più comunemente utilizzate. Per ulteriori informazioni, consulta <a href="/help/forms/using/scripting-support.md">supporto script</a>.</td>
+   <td>I moduli HTML5 supportano le API più comunemente utilizzate. Per ulteriori dettagli, vedere <a href="/help/forms/using/scripting-support.md">supporto script</a>.</td>
    <td>Se il file PDF viene aperto all’interno di Acrobat o Reader, supporta anche tutte le API di script fornite da Acrobat.</td>
   </tr>
   <tr>

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Visualizzare le statistiche relative a Work Manager {#view-statistics-related-to-work-manager}
 
-Nella scheda Work Manager (Responsabile del lavoro) vengono visualizzate le statistiche relative agli elementi di Work Manager. Questi elementi di lavoro si trovano in stati diversi a seconda della posizione in cui si trovano nel processo. (vedere [Stato (solo per le categorie Predefinito, Flusso di lavoro o Eventi)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) È possibile filtrare le informazioni per visualizzare solo un sottoinsieme degli elementi utilizzando le varie opzioni disponibili (ad esempio, Stato o Categoria). È possibile ordinare i lavori o gli elementi di lavoro risultanti (in ordine crescente o decrescente) facendo clic su una delle intestazioni di colonna. È inoltre possibile gestire gli elementi di lavoro utilizzando gli strumenti operativi visualizzati sopra l&#39;elenco degli elementi di lavoro.
+Nella scheda Work Manager (Responsabile del lavoro) vengono visualizzate le statistiche relative agli elementi di Work Manager. Questi elementi di lavoro si trovano in stati diversi a seconda della posizione in cui si trovano nel processo. (Vedi [Stato (solo per le categorie Predefinito, Flusso di lavoro o Eventi)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) È possibile filtrare le informazioni per visualizzare solo un sottoinsieme degli elementi utilizzando le varie opzioni disponibili (ad esempio, Stato o Categoria). È possibile ordinare i lavori o gli elementi di lavoro risultanti (in ordine crescente o decrescente) facendo clic su una delle intestazioni di colonna. È inoltre possibile gestire gli elementi di lavoro utilizzando gli strumenti operativi visualizzati sopra l&#39;elenco degli elementi di lavoro.
 
 ## Filtrare gli elementi di lavoro {#filter-the-work-items}
 
@@ -27,53 +27,53 @@ Nella scheda Work Manager (Responsabile del lavoro) vengono visualizzate le stat
 
 ### Categoria {#category}
 
-**Predefinito:** Tutti gli elementi di lavoro a cui il client non ha assegnato una categoria al momento dell&#39;invio. Work Manager gestisce questi elementi, pertanto gli stati appartengono a Work Manager.
+**Predefinito:** tutti gli elementi di lavoro a cui il client non ha assegnato una categoria al momento dell&#39;invio. Work Manager gestisce questi elementi, pertanto gli stati appartengono a Work Manager.
 
-**Gestione processo:** Tutti i processi che appartengono a Gestione processi. Gestione processi gestisce i propri processi e dispone di propri stati. Consulta gli stati dei processi specifici descritti di seguito.
+**Gestione processi:** tutti i processi che appartengono a Gestione processi. Gestione processi gestisce i propri processi e dispone di propri stati. Consulta gli stati dei processi specifici descritti di seguito.
 
-**Flusso di lavoro:** Tutti gli elementi di lavoro che appartengono all’esecuzione del flusso di lavoro. Il flusso di lavoro non gestisce i propri elementi di lavoro ma si basa su Work Manager; pertanto, gli stati appartengono a Work Manager.
+**Flusso di lavoro:** tutti gli elementi di lavoro che appartengono all&#39;esecuzione del flusso di lavoro. Il flusso di lavoro non gestisce i propri elementi di lavoro ma si basa su Work Manager; pertanto, gli stati appartengono a Work Manager.
 
-**Eventi:** Tutti gli elementi di lavoro che appartengono a Gestione eventi. La gestione degli eventi non gestisce i propri elementi di lavoro ma si basa su Work Manager; pertanto, gli stati appartengono a Work Manager.
+**Eventi:** tutti gli elementi di lavoro che appartengono a Gestione eventi. La gestione degli eventi non gestisce i propri elementi di lavoro ma si basa su Work Manager; pertanto, gli stati appartengono a Work Manager.
 
 ### Stato (solo per le categorie Predefinito, Flusso di lavoro o Eventi) {#status-for-default-workflow-or-events-categories-only}
 
 **Mostra tutto:** Visualizza tutti gli elementi di lavoro correnti.
 
-**Pianificato:** Visualizza tutti gli elementi di lavoro pronti per l&#39;esecuzione da parte del server applicazioni, ma non ancora avviati.
+**Pianificato:** visualizza tutti gli elementi di lavoro pronti per l&#39;esecuzione da parte del server applicazioni, ma non ancora avviati.
 
-**In pausa:** Visualizza tutti gli elementi di lavoro programmati sospesi dall&#39;applicazione client. Questi elementi possono essere eseguiti o eliminati. Consultate Gestire gli elementi di lavoro o i job.
+**Sospeso:** visualizza tutti gli elementi di lavoro pianificati sospesi dall&#39;applicazione client. Questi elementi possono essere eseguiti o eliminati. Consultate Gestire gli elementi di lavoro o i job.
 
-**In corso:** Visualizza tutti gli elementi di lavoro selezionati da Work Manager dell&#39;Application Server e completati o non riusciti. Non è possibile utilizzare operazioni su questi elementi di lavoro.
+**In corso:** visualizza tutti gli elementi di lavoro prelevati da Gestione lavoro del server applicazioni e completati o non riusciti. Non è possibile utilizzare operazioni su questi elementi di lavoro.
 
-**Completato:** Visualizza tutti gli elementi di lavoro eseguiti correttamente. Gli elementi di lavoro persistenti rimangono in questo stato e gli elementi non persistenti vengono eliminati al completamento dei callback ai gestori di callback. È possibile eliminare questi elementi utilizzando l&#39;operazione Elimina elementi. Consultate Gestire gli elementi di lavoro o i job.
+**Completo:** visualizza tutti gli elementi di lavoro eseguiti correttamente. Gli elementi di lavoro persistenti rimangono in questo stato e gli elementi non persistenti vengono eliminati al completamento dei callback ai gestori di callback. È possibile eliminare questi elementi utilizzando l&#39;operazione Elimina elementi. Consultate Gestire gli elementi di lavoro o i job.
 
-**Non riuscito:** Visualizza tutti gli elementi di lavoro non completati correttamente a causa di una condizione di errore. Questi elementi di lavoro possono essere ritentati più volte utilizzando l&#39;operazione Riprova elementi. Consultate Gestire gli elementi di lavoro o i job. Un collegamento Errore nella colonna Stato consente di accedere ai dettagli sull&#39;errore.
+**Non riuscito:** visualizza tutti gli elementi di lavoro non completati correttamente a causa di una condizione di errore. Questi elementi di lavoro possono essere ritentati più volte utilizzando l&#39;operazione Riprova elementi. Consultate Gestire gli elementi di lavoro o i job. Un collegamento Errore nella colonna Stato consente di accedere ai dettagli sull&#39;errore.
 
-**Sconosciuto:** Visualizza tutti gli elementi di lavoro con stato sconosciuto.
+**Sconosciuto:** visualizza tutti gli elementi di lavoro il cui stato è sconosciuto.
 
 ### Stato (solo per la categoria Responsabile del processo) {#status-for-job-manager-category-only}
 
-**Completato:** Visualizza tutti i processi eseguiti correttamente. Gli elementi di lavoro persistenti rimangono in questo stato e gli elementi non persistenti vengono eliminati al completamento dei callback ai gestori di callback.
+**Completato:** visualizza tutti i processi eseguiti correttamente. Gli elementi di lavoro persistenti rimangono in questo stato e gli elementi non persistenti vengono eliminati al completamento dei callback ai gestori di callback.
 
-**Completo richiesto:** Visualizza i processi per i quali è stata effettuata una richiesta completa.
+**Completato richiesto:** visualizza i processi per i quali è stata effettuata una richiesta completa.
 
-**Richiesta non riuscita:** Visualizza i processi per i quali è stata effettuata una richiesta non riuscita.
+**Richiesta non riuscita:** visualizza i processi per i quali è stata effettuata una richiesta non riuscita.
 
-**Non riuscito:** Visualizza i processi non completati correttamente a causa di una condizione di errore. Un collegamento Errore nella colonna Stato consente di accedere ai dettagli sull&#39;errore.
+**Non riuscito:** visualizza i processi non completati correttamente a causa di una condizione di errore. Un collegamento Errore nella colonna Stato consente di accedere ai dettagli sull&#39;errore.
 
-**Termina richiesta:** Visualizza i processi per i quali è stata effettuata una richiesta di interruzione.
+**Termina richiesta:** visualizza i processi per i quali è stata effettuata una richiesta di terminazione.
 
-**Terminato:** Visualizza i processi terminati senza completamento.
+**Terminato:** visualizza i processi terminati senza completamento.
 
-**Sospensione richiesta:** Visualizza i processi per i quali è stata effettuata una richiesta di sospensione.
+**Sospensione richiesta:** visualizza i processi per i quali è stata effettuata una richiesta di sospensione.
 
-**Sospeso:** Visualizza i processi sospesi.
+**Sospesi:** visualizza i processi sospesi.
 
-**Ripresa richiesta:** Visualizza i processi per i quali è stata effettuata una richiesta di ripresa.
+**Ripresa richiesta:** visualizza i processi per i quali è stata effettuata una richiesta di ripresa.
 
-**In coda:** Visualizza i processi presenti nella coda.
+**In coda:** visualizza i processi presenti nella coda.
 
-**In esecuzione:** Visualizza i processi in esecuzione.
+**In esecuzione:** visualizza i processi in esecuzione.
 
 ### Nome server {#server-name}
 
@@ -113,7 +113,7 @@ Quando si fa clic su Ulteriori informazioni, nella finestra di dialogo Dettagli 
 
    **Riprendi elementi:** Riprende l&#39;elemento di lavoro o il processo selezionato dal relativo stato di pausa.
 
-   **Riprova elementi:** Tenta di rieseguire l&#39;elemento di lavoro o il processo selezionato dal relativo stato corrente.
+   **Riprova elementi:** tenta di rieseguire l&#39;elemento di lavoro o il processo selezionato dal relativo stato corrente.
 
    Per verificare se un&#39;operazione è stata eseguita correttamente, fare clic su Ulteriori informazioni sopra l&#39;elenco. Viene visualizzata una finestra di dialogo contenente gli elementi di lavoro o i processi selezionati e i relativi stati.
 

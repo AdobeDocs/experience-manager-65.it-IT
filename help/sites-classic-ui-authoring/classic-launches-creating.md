@@ -21,7 +21,7 @@ ht-degree: 55%
 
 Crea un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* Il titolo viene visualizzato nel **Sidekick**, da cui gli autori possono accedervi per lavorarci.
+* Il titolo viene visualizzato nel **Sidekick**, da cui gli autori possono accedere per lavorarci.
 * Per impostazione predefinita, le pagine secondarie della pagina sorgente sono incluse nel lancio. Se necessario, puoi utilizzare solo la pagina sorgente.
 * Per impostazione predefinita, [Live Copy](/help/sites-administering/msm.md) aggiorna automaticamente le pagine del lancio durante il cambio delle pagine sorgente. È possibile specificare di creare una copia statica per impedire modifiche automatiche.
 
@@ -32,13 +32,13 @@ Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire q
 La procedura seguente crea un lancio.
 
 1. Aprire la pagina Amministrazione sito Web ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
-1. Clic **Nuovo...** allora **Nuovo lancio...**.
-1. In **Crea lancio** , specifica i valori per le seguenti proprietà:
+1. Fai clic su **Nuovo...** e quindi su **Nuovo lancio...**.
+1. Nella finestra di dialogo **Crea lancio**, specifica i valori per le seguenti proprietà:
 
    * **Titolo lancio**: il nome del lancio. Il nome deve essere significativo per gli autori.
-   * **Pagina sorgente**: percorso della pagina per cui creare il lancio. Per impostazione predefinita, sono incluse tutte le pagine figlie.
-   * **Escludi sottopagine**: seleziona questa opzione per creare il lancio solo per la pagina sorgente e non per le pagine figlie. Per impostazione predefinita, questa opzione non è selezionata.
-   * **Mantieni in sincronia**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine sorgente. Ciò si ottiene rendendo il lancio un [live copy](/help/sites-administering/msm.md).
+   * **Pagina Source**: il percorso della pagina per cui creare il lancio. Per impostazione predefinita, sono incluse tutte le pagine figlie.
+   * **Escludi sottopagine**: selezionare questa opzione per creare il lancio solo per la pagina di origine e non per le pagine figlie. Per impostazione predefinita, questa opzione non è selezionata.
+   * **Mantieni in sincronia**: selezionare questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Ciò si ottiene rendendo il lancio una [Live Copy](/help/sites-administering/msm.md).
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-99](assets/chlimage_1-99a.png)
@@ -49,8 +49,8 @@ La procedura seguente crea un lancio.
 
 Puoi anche eliminare un lancio.
 
-1. In [console Launches](/help/sites-classic-ui-authoring/classic-launches.md), seleziona il lancio richiesto.
-1. Clic **Elimina** - è richiesta la conferma:
+1. Nella console [Launches](/help/sites-classic-ui-authoring/classic-launches.md), seleziona il lancio richiesto.
+1. Fai clic su **Elimina**. È necessaria la conferma:
 
    ![chlimage_1-100](assets/chlimage_1-100a.png)
 

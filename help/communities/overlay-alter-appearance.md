@@ -21,20 +21,20 @@ ht-degree: 0%
 
 ## Modificare lo script {#modify-the-script}
 
-Il `comment.hbs` Lo script è responsabile della creazione del HTML generale di ogni commento.
+Lo script `comment.hbs` è responsabile della creazione del HTML complessivo per ogni commento.
 
 Per non mostrare l&#39;avatar accanto a ogni commento pubblicato:
 
-1. Copia `comment.hbs`da `libs`a `apps`
+1. Copia `comment.hbs` da `libs` a `apps`
 
    1. Seleziona `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. Seleziona **[!UICONTROL Copia]**
    1. Seleziona `/apps/social/commons/components/hbs/comments/comment`
    1. Seleziona **[!UICONTROL Incolla]**
 
-1. Apri la sovrapposizione `comment.hbs`
+1. Apri `comment.hbs` sovrapposto
 
-   * Doppio clic sul nodo `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Fare doppio clic sul nodo `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. Trova le seguenti righe ed eliminale o aggiungendovi un commento:
 
@@ -43,7 +43,7 @@ Per non mostrare l&#39;avatar accanto a ogni commento pubblicato:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Eliminare le linee o circondarle con `<!--` e `-->` quindi li commenta. Inoltre, i caratteri &quot;xxx&quot; vengono aggiunti come indicatore visivo di dove sarebbe stato l’avatar.
+Eliminare le righe oppure racchiuderle tra `<!--` e `-->` in modo da poterle commentare. Inoltre, i caratteri &quot;xxx&quot; vengono aggiunti come indicatore visivo di dove sarebbe stato l’avatar.
 
 ```xml
    xxx
@@ -58,11 +58,11 @@ Invia il componente dei commenti sovrapposti all’istanza di pubblicazione util
 
 >[!NOTE]
 >
->Una forma più solida di replica consiste nel creare un pacchetto in Gestione pacchetti e [attivare](/help/sites-administering/package-manager.md#replicating-packages) ... Un pacchetto può essere esportato e archiviato.
+>Una forma più solida di replica consiste nel creare un pacchetto in Gestione pacchetti e [attivarlo](/help/sites-administering/package-manager.md#replicating-packages). Un pacchetto può essere esportato e archiviato.
 
-Dalla navigazione globale, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** e fai clic su **[!UICONTROL Attiva albero]**.
+Dalla navigazione globale, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** e fai clic su **[!UICONTROL Attiva struttura]**.
 
-Per il percorso iniziale, immetti `/apps/social/commons` e seleziona **[!UICONTROL Attiva]**.
+Per il percorso iniziale, immettere `/apps/social/commons` e selezionare **[!UICONTROL Attiva]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
@@ -70,6 +70,6 @@ Per il percorso iniziale, immetti `/apps/social/commons` e seleziona **[!UICONTR
 
 Se accedi all’istanza Publish come amministratore, ad esempio https://localhost:4503/crx/de come amministratore/amministratore, puoi verificare che i componenti sovrapposti siano presenti.
 
-Se ci si disconnette e si accede come `aaron.mcdonald@mailinator.com/password` e aggiorna la pagina, osserva che un avatar non viene visualizzato con il commento pubblicato. Viene invece visualizzato un semplice &quot;xxx&quot;.
+Se ci si disconnette, si effettua l&#39;accesso come `aaron.mcdonald@mailinator.com/password` e si aggiorna la pagina, si osserva che non viene visualizzato alcun avatar con il commento pubblicato. Viene invece visualizzato un semplice &quot;xxx&quot;.
 
 ![create-template-component](assets/create-template-component.png)

@@ -22,31 +22,31 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->È necessario configurare il provider di servizi prima di creare e pubblicare un messaggio e-mail. Consulta [Configurazione di ExactTarget](/help/sites-administering/exacttarget.md) e [Configurazione di Silverpop Engage](/help/sites-administering/silverpop.md) per ulteriori informazioni.
+>È necessario configurare il provider di servizi prima di creare e pubblicare un messaggio e-mail. Per ulteriori informazioni, vedere [Configurazione di ExactTarget](/help/sites-administering/exacttarget.md) e [Configurazione di Silverpop Engage](/help/sites-administering/silverpop.md).
 
 Per pubblicare l’e-mail al provider di servizi e-mail, è necessario effettuare le seguenti operazioni:
 
 1. Creare un messaggio e-mail.
 1. Applica la configurazione del servizio e-mail all’e-mail.
-1. Pubblica l’e-mail.
+1. Publish l’e-mail.
 
 >[!NOTE]
 >
->Se aggiorni i provider di posta elettronica, esegui un test di volo o invii una newsletter, queste operazioni non riusciranno se la newsletter non viene pubblicata prima nell’istanza Publish o se l’istanza Publish non è disponibile. Assicurati di pubblicare la newsletter e assicurati che l’istanza Publish sia attiva e in esecuzione.
+>Se aggiorni i provider di posta elettronica, esegui un test di volo o invii una newsletter, queste operazioni non riusciranno se la newsletter non viene pubblicata prima nell’istanza di Publish o se l’istanza di Publish non è disponibile. Assicurati di pubblicare la newsletter e assicurati che l’istanza di Publish sia funzionante.
 
 ## Creazione di un messaggio e-mail {#creating-an-email}
 
-È possibile creare un’e-mail o un notiziario da pubblicare su un servizio di posta elettronica in una campagna utilizzando **Newsletter Geometrixx** modello. È inoltre possibile utilizzare **E-mail Geometrixx Outdoors** modello. Esempio di e-mail/newsletter basato su **E-mail Geometrixx Outdoors** I modelli sono disponibili all&#39;indirizzo `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
+È possibile creare un&#39;e-mail o un notiziario da pubblicare in un servizio di posta elettronica in una campagna utilizzando il modello **Geometrixx**. È inoltre possibile utilizzare il modello **Geometrixx Outdoors E-mail**. Gli esempi di e-mail/newsletter basati sul modello **Geometrixx Outdoors E-mail** sono disponibili all&#39;indirizzo `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
 Per creare un messaggio e-mail pubblicato nel servizio e-mail configurato:
 
-1. Vai a **Siti Web** e poi **Campagne**. Seleziona una campagna.
-1. Clic **Nuovo** per aprire **Crea pagina** finestra.
-1. Inserisci il titolo, il nome e seleziona la **Newsletter Geometrixx** modello dall&#39;elenco dei modelli disponibili.
+1. Vai a **Siti Web** e quindi a **Campagne**. Seleziona una campagna.
+1. Fai clic su **Nuovo** per aprire la finestra **Crea pagina**.
+1. Immetti il titolo, il nome e seleziona il modello **Newsletter Geometrixx** dall&#39;elenco dei modelli disponibili.
 1. Fai clic su **Crea**.
 1. Apri l’e-mail creata.
 1. Passa alla modalità progettazione per selezionare i componenti da visualizzare nella barra laterale.
-1. Passa alla modalità di modifica e inizia ad aggiungere contenuti (testo, immagini, [strumenti e-mail](#adding-exacttarget-email-tools-to-your-email), [variabili di personalizzazione](#adding-text-and-personalization-tool-to-your-e-mail)e così via).
+1. Passa alla modalità di modifica e inizia ad aggiungere contenuto (testo, immagini, [strumenti e-mail](#adding-exacttarget-email-tools-to-your-email), [variabili di personalizzazione](#adding-text-and-personalization-tool-to-your-e-mail) e così via) al messaggio e-mail.
 
 ### Aggiunta di strumenti e-mail ExactTarget all’e-mail {#adding-exacttarget-email-tools-to-your-email}
 
@@ -54,14 +54,14 @@ Per creare un messaggio e-mail pubblicato nel servizio e-mail configurato:
 >
 >Questa sezione è specifica del servizio ExactTarget.
 
-Il **Strumenti e-mail** Il componente per ExactTarget può aggiungere ulteriori funzionalità e-mail all’e-mail/newsletter.
+Il componente **Strumenti e-mail** per ExactTarget può aggiungere ulteriori funzionalità e-mail all&#39;e-mail/newsletter.
 
 1. Apri un’e-mail da pubblicare su ExactTarget.
 1. Aggiungi il componente **ET - Strumenti e-mail** alla pagina utilizzando la barra laterale. Apri il componente in modalità Modifica.
 
    ![chlimage_1](assets/chlimage_1.gif)
 
-1. Seleziona un’opzione dalla sezione **Opzioni** menu:
+1. Selezionare un&#39;opzione dal menu **Opzioni**:
 
 <table>
  <tbody>
@@ -79,7 +79,7 @@ Il **Strumenti e-mail** Il componente per ExactTarget può aggiungere ulteriori 
   </tr>
   <tr>
    <td>Informativa sulla privacy</td>
-   <td>Questo componente inserisce il collegamento all’informativa sulla privacy nell’e-mail.<br /> </td>
+   <td>Questo componente inserisce il collegamento all'informativa sulla privacy nell'e-mail.<br /> </td>
   </tr>
   <tr>
    <td>Centro per annullamento sottoscrizioni</td>
@@ -98,31 +98,31 @@ Il **Strumenti e-mail** Il componente per ExactTarget può aggiungere ulteriori 
 
 >[!NOTE]
 >
->Il **Opzioni** Il menu a discesa viene popolato solo se la configurazione ExactTarget viene applicata all’e-mail. Consulta [Applicazione della configurazione del servizio e-mail alle impostazioni e-mail](#applying-e-mail-service-configuration-to-e-mail-settings) per ulteriori informazioni.
+>Il menu a discesa **Opzioni** è popolato solo se la configurazione ExactTarget è applicata all&#39;e-mail. Per ulteriori informazioni, vedere [Applicazione della configurazione del servizio di posta elettronica alle impostazioni di posta elettronica](#applying-e-mail-service-configuration-to-e-mail-settings).
 
-1. Pubblica l’e-mail in ExactTarget.
+1. Publish l’e-mail a ExactTarget.
 
    L’e-mail con gli strumenti e-mail è disponibile per l’utilizzo nell’account ExactTarget configurato.
 
 >[!NOTE]
 >
->* Gli URL all’interno degli strumenti e-mail vengono sostituiti (nell’e-mail ricevuta) dai rispettivi valori effettivi solo quando un’e-mail viene inviata utilizzando **Invio semplice** o **Invio guidato** ma non **Invia di prova**.
+>* Gli URL all&#39;interno degli strumenti e-mail vengono sostituiti (nell&#39;e-mail ricevuta) dai valori effettivi solo quando un&#39;e-mail viene inviata utilizzando **Invio semplice** o **Invio guidato** ma non **Invio di test**.
 >
->* Sono necessari due degli strumenti e-mail: **Indirizzo postale (obbligatorio)** e **Centro profili (obbligatorio)**. Quando l’e-mail viene pubblicata su ExactTarget, per impostazione predefinita questi due strumenti e-mail vengono aggiunti al fondo di ogni e-mail.
+>* Sono necessari due degli strumenti di posta elettronica: **Indirizzo postale fisico (obbligatorio)** e **Centro profili (obbligatorio)**. Quando l’e-mail viene pubblicata su ExactTarget, per impostazione predefinita questi due strumenti e-mail vengono aggiunti al fondo di ogni e-mail.
 >
 
-### Aggiunta di testo e strumenti di personalizzazione alla posta elettronica {#adding-text-and-personalization-tool-to-your-e-mail}
+### Aggiunta dello strumento Testo e Personalization alla posta elettronica {#adding-text-and-personalization-tool-to-your-e-mail}
 
-Puoi aggiungere campi personalizzati in un messaggio e-mail aggiungendo il **Testo e personalizzazione** alla pagina:
+Puoi aggiungere campi personalizzati in un&#39;e-mail aggiungendo il componente **Testo e Personalization** alla pagina:
 
 1. Aprire il messaggio di posta elettronica da pubblicare nel servizio di posta elettronica.
-1. Per abilitare il campo di personalizzazione dal servizio e-mail, aggiungi la configurazione del framework durante la configurazione del servizio e-mail. Consulta [configurazione di Silverpop Engage](/help/sites-administering/silverpop.md) e [configurazione di Exact Target](/help/sites-administering/exacttarget.md) per ulteriori informazioni.
-1. Aggiungi il componente **Testo e personalizzazione** dalla barra laterale. Questo componente fa parte del gruppo newsletter. Apri questo componente in modalità di modifica.
+1. Per abilitare il campo di personalizzazione dal servizio e-mail, aggiungi la configurazione del framework durante la configurazione del servizio e-mail. Per ulteriori informazioni, vedere [configurazione di Silverpop Engage](/help/sites-administering/silverpop.md) e [configurazione di Exact Target](/help/sites-administering/exacttarget.md).
+1. Aggiungi il componente **Testo e Personalization** dalla barra laterale. Questo componente fa parte del gruppo newsletter. Apri questo componente in modalità di modifica.
 
    ![chlimage_1-110](assets/chlimage_1-110a.png)
 
-1. Aggiungi il campo personalizzato richiesto al testo selezionando il campo dal menu a discesa e facendo clic su **Inserisci**.
-1. Clic **OK** per terminare.
+1. Aggiungere il campo personalizzato richiesto al testo selezionando il campo dal menu a discesa e facendo clic su **Inserisci**.
+1. Fai clic su **OK** per terminare.
 
 ## Applicazione della configurazione del servizio di posta elettronica alle impostazioni di posta elettronica {#applying-e-mail-service-configuration-to-e-mail-settings}
 
@@ -130,8 +130,8 @@ Per applicare la configurazione del servizio di posta elettronica a una newslett
 
 1. Creare una configurazione del servizio di posta elettronica.
 1. Apri l’e-mail/newsletter.
-1. Apri le impostazioni dell’e-mail/newsletter facendo clic su **Impostazioni** o facendo clic su **Proprietà pagina in** la spalla.
-1. Clic **Aggiungi servizio** in **Cloud Service** scheda. Viene visualizzato l’elenco dei servizi. Seleziona la configurazione richiesta: **ExactTarget** o **Silverpop** - dall’elenco a discesa.
+1. Apri le impostazioni dell&#39;e-mail/newsletter facendo clic su **Impostazioni** o su **Proprietà pagina nella barra laterale**.
+1. Fai clic su **Aggiungi servizio** nella scheda **Cloud Service**. Viene visualizzato l’elenco dei servizi. Seleziona la configurazione richiesta - **ExactTarget** o **Silverpop** - dall&#39;elenco a discesa.
 
    ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
 
@@ -143,15 +143,15 @@ Le e-mail/newsletter possono essere pubblicate nel servizio di posta elettronica
 
 1. Apri l’e-mail.
 1. Prima di pubblicare un’e-mail, assicurati di aver applicato la configurazione corretta all’e-mail.
-1. Fai clic su **Pubblica**. Verrà aperto il **Pubblica newsletter sul provider di servizi di posta elettronica** finestra.
-1. Compila il **Nome newsletter** campo. L&#39;e-mail/newsletter viene pubblicata al provider del servizio di posta elettronica con questo nome. Se non viene fornito un nome e-mail, l’e-mail viene pubblicata utilizzando il nome della pagina della newsletter in AEM.
+1. Fai clic su **Pubblica**. Verrà aperta la finestra **Notiziario Publish al provider del servizio di posta elettronica**.
+1. Compila il campo **Nome newsletter**. L&#39;e-mail/newsletter viene pubblicata al provider del servizio di posta elettronica con questo nome. Se non viene fornito un nome e-mail, l’e-mail viene pubblicata utilizzando il nome della pagina della newsletter in AEM.
 1. Fai clic su **Pubblica**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
    In caso di esito positivo, AEM conferma che puoi visualizzare l’e-mail in ExactTarget o Silverpop Engage.
 
-   Se è presente ExactTarget, l’e-mail pubblicata può essere visualizzata facendo clic su **Visualizza e-mail pubblicata**. Questo ti porta direttamente alla newsletter pubblicata in ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   Se è presente ExactTarget, l&#39;e-mail pubblicata può essere visualizzata facendo clic su **Visualizza e-mail pubblicata**. Consente di accedere direttamente alla newsletter pubblicata in ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >
@@ -162,13 +162,13 @@ Le e-mail/newsletter possono essere pubblicate nel servizio di posta elettronica
 
 ### Aggiornamento Di Un Messaggio Di Posta Elettronica Pubblicato {#updating-a-published-e-mail}
 
-Il **Aggiorna** nella finestra di dialogo Pubblica consente di aggiornare una newsletter già pubblicata a un provider di servizi di posta elettronica. Nel caso in cui la newsletter non sia ancora stata pubblicata e **Aggiorna** clic, un pulsante **La newsletter non è pubblicata** viene visualizzato un messaggio.
+Il pulsante **Aggiorna** nella finestra di dialogo di Publish consente di aggiornare una newsletter già pubblicata a un provider di servizi di posta elettronica. Se la newsletter non è ancora stata pubblicata e si fa clic sul pulsante **Aggiorna**, viene visualizzato un messaggio di tipo **Newsletter non pubblicata**.
 
 Per aggiornare un messaggio e-mail pubblicato:
 
 1. Apri l’e-mail/newsletter precedentemente pubblicata a un provider di servizi di posta elettronica che desideri ripubblicare dopo aver apportato modifiche all’e-mail/newsletter.
-1. Fai clic su **Pubblica**. Il **Pubblica newsletter su Email Service Provider** viene visualizzata la finestra. Fai clic su **Aggiorna**.
+1. Fai clic su **Pubblica**. Viene visualizzata la finestra **Notiziario Publish al provider del servizio e-mail**. Fai clic su **Aggiorna**.
 
-   Per verificare se l’e-mail/newsletter è stata aggiornata su ExactTarget, fai clic su **Visualizza e-mail pubblicata**. In questo modo puoi passare all’e-mail pubblicata in ExactTarget.
+   Per verificare se l&#39;e-mail/newsletter è stata aggiornata su ExactTarget, fai clic su **Visualizza e-mail pubblicata**. In questo modo puoi passare all’e-mail pubblicata in ExactTarget.
 
    Per verificare se l&#39;e-mail/newsletter è stata aggiornata su Silverpop Email Service, visita il sito Silverpop Engage.

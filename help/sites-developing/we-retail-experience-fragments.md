@@ -20,7 +20,7 @@ ht-degree: 18%
 
 Provare i frammenti di esperienza in We.Retail
 
-Un [Frammento esperienza](/help/sites-authoring/experience-fragments.md) è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all’interno delle pagine. Possono contenere qualsiasi componente.
+Un [frammento esperienza](/help/sites-authoring/experience-fragments.md) è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all&#39;interno delle pagine. Possono contenere qualsiasi componente.
 
 Consentono all’autore di riutilizzare parti di una pagina (un frammento di un’esperienza), senza dover copiare e incollare il contenuto.
 
@@ -30,18 +30,18 @@ Questo supporta il caso d’uso del sistema di gestione dei contenuti (CMS) head
 >
 >I **[frammenti di contenuto](/help/sites-developing/we-retail-content-fragments.md)** e i **frammenti di esperienza** sono funzioni diverse in AEM:
 >
->* **Frammenti di contenuto** sono contenuti editoriali, principalmente testo e immagini correlate. Sono contenuti puri, senza design e layout.
+>* **I frammenti di contenuto** sono contenuti editoriali, principalmente testo e immagini correlate. Sono contenuti puri, senza design e layout.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 
 ## Dove creare frammenti di esperienza in We.Retail {#where-to-create-experience-fragments-in-we-retail}
 
-Seleziona **Frammenti esperienza** dalla navigazione globale. Qui puoi configurare, [creare](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) e [modifica](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) frammenti di esperienza ed eventuali [varianti](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
+Seleziona **Frammenti esperienza** dalla navigazione globale. Qui configura, [crea](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) e [modifica](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) i tuoi frammenti esperienza ed eventuali [varianti](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation) correlate.
 
 ## Dove utilizzare i frammenti di esperienza in We.Retail {#where-to-use-experience-fragments-in-we-retail}
 
-Puoi utilizzare il tuo [Frammenti esperienza](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (come con qualsiasi altro componente) su [qualsiasi pagina](/help/sites-authoring/editing-content.md) in **Sites** nella navigazione globale.
+Puoi utilizzare i tuoi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (come con qualsiasi altro componente) in [qualsiasi pagina](/help/sites-authoring/editing-content.md) in **Sites** nella navigazione globale.
 
 ## Ulteriori informazioni {#further-information}
 

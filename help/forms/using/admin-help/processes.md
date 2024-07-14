@@ -22,13 +22,13 @@ La pagina Elenco processi mostra i processi avviati da un utente o che sono stat
 
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Flusso di lavoro Forms. Nell&#39;elenco dei processi sono visualizzate le informazioni riportate di seguito.
 
-   **Nome processo - Versione:** Il nome del processo, come definito in Workbench.
+   **Nome processo - Versione:** Il nome del processo definito in Workbench.
 
-   **Applicazione:** Applicazione a cui appartiene il processo, come definito in Workbench.
+   **Applicazione:** l&#39;applicazione a cui appartiene il processo, come definito in Workbench.
 
    **Stato:** Attivo significa che il processo è quello attivato per la versione del processo. Inattivo significa che il processo è una versione precedente che contiene ancora istanze di processo.
 
-   **Data di creazione:** La data e l’ora in cui il processo è stato distribuito.
+   **Data di creazione:** La data e l&#39;ora in cui il processo è stato distribuito.
 
 1. Fare clic sul nome di un processo per visualizzarne le istanze nella pagina Istanza processo.
 
@@ -38,15 +38,15 @@ Se si accede alla pagina Istanza processo dalla pagina Elenco processi, vengono 
 
 Per ogni istanza di processo, l&#39;elenco mostra le seguenti informazioni:
 
-**ID processo:** Identificatore assegnato dal flusso di lavoro dei moduli quando viene creata un&#39;istanza del processo, ovvero quando un utente o un passaggio automatico avvia un processo. È possibile utilizzare questo identificatore per tenere traccia dell&#39;istanza di processo durante il relativo ciclo di vita.
+**ID processo:** l&#39;identificatore assegnato dal flusso di lavoro dei moduli quando viene creata un&#39;istanza del processo, ovvero quando un utente o un passaggio automatico avvia un processo. È possibile utilizzare questo identificatore per tenere traccia dell&#39;istanza di processo durante il relativo ciclo di vita.
 
-**Nome processo - Versione:** Il nome del processo, come definito in Workbench.
+**Nome processo - Versione:** Il nome del processo definito in Workbench.
 
-**Stato:** Indica se l&#39;istanza del processo è in esecuzione normalmente, se cambia lo stato o se è stata arrestata. Consultate Informazioni sugli stati delle istanze di processo.
+**Stato:** indica se l&#39;istanza del processo è in esecuzione normalmente, se sta modificando lo stato o se è stata arrestata. Consultate Informazioni sugli stati delle istanze di processo.
 
-**Data di creazione:** Data e ora di creazione dell&#39;istanza di processo.
+**Data di creazione:** La data e l&#39;ora di creazione dell&#39;istanza del processo.
 
-**Data aggiornamento:** Data e ora dell&#39;ultima modifica dello stato dell&#39;istanza del processo.
+**Data aggiornamento:** la data e l&#39;ora dell&#39;ultima modifica dello stato dell&#39;istanza del processo.
 
 Nella pagina Istanza processo è possibile effettuare le operazioni riportate di seguito.
 
@@ -58,23 +58,23 @@ Nella pagina Istanza processo è possibile effettuare le operazioni riportate di
 
 Un&#39;istanza di processo, inclusi i sottoprocessi, può avere i seguenti stati:
 
-**COMPLETATO:** Tutti i rami e le operazioni nell&#39;istanza del processo sono stati completati. COMPLETE è lo stato finale di un&#39;istanza di processo.
+**COMPLETATO:** tutti i rami e le operazioni nell&#39;istanza del processo sono stati completati. COMPLETE è lo stato finale di un&#39;istanza di processo.
 
-**COMPLETAMENTO:** Lo stato dell&#39;istanza del processo sta per essere impostato su COMPLETE.
+**COMPLETAMENTO:** Lo stato dell&#39;istanza del processo sta per essere modificato in COMPLETATO.
 
-**AVVIATO:** L&#39;istanza di processo è stata creata ma non è ancora in esecuzione. INITIATED è il primo stato di un&#39;istanza di processo.
+**AVVIATO:** L&#39;istanza del processo è stata creata ma non è ancora in esecuzione. INITIATED è il primo stato di un&#39;istanza di processo.
 
-**IN ESECUZIONE:** L&#39;istanza del processo viene eseguita normalmente. È possibile che sia in corso un passaggio automatico oppure che l&#39;istanza del processo riceva l&#39;input dell&#39;utente o sia in attesa dell&#39;interazione dell&#39;utente.
+**IN ESECUZIONE:** L&#39;istanza del processo è in esecuzione normalmente. È possibile che sia in corso un passaggio automatico oppure che l&#39;istanza del processo riceva l&#39;input dell&#39;utente o sia in attesa dell&#39;interazione dell&#39;utente.
 
 **SOSPESO:** L&#39;istanza del processo è stata sospesa da un amministratore o da un passaggio del processo. Non si verificheranno ulteriori operazioni finché lo stato non viene modificato.
 
 **SOSPENSIONE:** Lo stato sta per diventare SOSPESO. Se un&#39;operazione è stata progettata per ignorare le richieste di sospensione e non è ancora stata completata, è necessario completarla prima che l&#39;istanza del processo venga sospesa.
 
-**TERMINATO:** L&#39;istanza del processo è stata terminata da un amministratore.
+**TERMINATA:** L&#39;istanza del processo è stata terminata da un amministratore.
 
-**TERMINAZIONE:** Lo stato sta per essere modificato in TERMINATED. Se un&#39;operazione è stata progettata per ignorare le richieste terminate e non è ancora stata completata, è necessario completarla prima che l&#39;istanza del processo venga terminata.
+**TERMINAZIONE:** Lo stato sta per cambiare in TERMINATED. Se un&#39;operazione è stata progettata per ignorare le richieste terminate e non è ancora stata completata, è necessario completarla prima che l&#39;istanza del processo venga terminata.
 
-**ANNULLAMENTO DELLA SOSPENSIONE:** Lo stato sta per essere modificato in IN ESECUZIONE dopo essere stato SOSPESO.
+**ANNULLAMENTO SOSPENSIONE:** Lo stato sta per essere modificato in ESECUZIONE dopo essere stato SOSPESO.
 
 >[!NOTE]
 >
@@ -116,27 +116,27 @@ Nell&#39;area Riepilogo vengono visualizzate informazioni di base sull&#39;istan
 
 Nella scheda Operazioni, ogni operazione per l&#39;istanza di processo viene visualizzata in ordine di completamento dal primo all&#39;ultimo con le seguenti informazioni:
 
-**Nome operazione:** Il nome dell’operazione, come definito in Workbench.
+**Nome operazione:** Il nome dell&#39;operazione, come definito in Workbench.
 
-**Stato:** Indica se l&#39;operazione viene eseguita normalmente o è stata interrotta. Consultate Informazioni sugli stati delle istanze di processo.
+**Stato:** Indica se l&#39;operazione è in esecuzione o è stata interrotta. Consultate Informazioni sugli stati delle istanze di processo.
 
-**Nome filiale:** Il nome del ramo, come definito in Workbench.
+**Nome ramo:** Il nome del ramo, come definito in Workbench.
 
-**Data di inizio:** Data e ora di inizio dell&#39;operazione.
+**Data inizio:** La data e l&#39;ora di inizio dell&#39;operazione.
 
-**Data completamento:** Data e ora in cui è stata completata l&#39;operazione.
+**Data completata:** Data e ora in cui è stata completata l&#39;operazione.
 
 Un sottoprocesso è un&#39;istanza di processo avviata da un altro processo ed eseguita indipendentemente da quest&#39;ultimo. I sottoprocessi vengono visualizzati solo se sono stati progettati come parte del processo in Workbench. Nella scheda Sottoprocessi, ogni sottoprocesso viene visualizzato con le seguenti informazioni:
 
 **ID processo:** Questo numero intero positivo assegnato dal flusso di lavoro per i moduli quando viene creata un&#39;istanza del processo, ovvero quando un utente o un passaggio automatico avvia il processo. È possibile utilizzare questo identificatore per tenere traccia dell&#39;istanza di processo durante il relativo ciclo di vita.
 
-**Nome processo - Versione:** Nome del processo, come definito in Designer.
+**Nome processo - Versione:** Il nome del processo definito in Designer.
 
-**Stato:** Indica se l&#39;istanza del processo viene eseguita normalmente, se cambia lo stato o se è interrotta. Consultate Informazioni sugli stati delle istanze di processo.
+**Stato:** indica se l&#39;istanza del processo è in esecuzione normalmente, se cambia lo stato o se è interrotta. Consultate Informazioni sugli stati delle istanze di processo.
 
-**Data di creazione:** Data e ora di creazione del sottoprocesso.
+**Data di creazione:** la data e l&#39;ora di creazione del sottoprocesso.
 
-**Data aggiornamento:** Data e ora dell&#39;ultima modifica dello stato del sottoprocesso.
+**Data aggiornamento:** la data e l&#39;ora dell&#39;ultima modifica dello stato del processo secondario.
 
 Nella pagina Dettagli istanza processo è possibile effettuare le operazioni riportate di seguito.
 
@@ -152,9 +152,9 @@ Un&#39;operazione (una fase di un processo) può avere i seguenti stati:
 
 **IN ESECUZIONE:** L&#39;operazione viene eseguita normalmente. Potrebbe ricevere l&#39;input dell&#39;utente o attendere l&#39;interazione dell&#39;utente, oppure potrebbe essere in corso un passaggio automatico.
 
-**ARRESTATO:** Problema durante l&#39;elaborazione dell&#39;operazione. Verificare l&#39;errore o l&#39;eccezione nella pagina Operazioni bloccate.
+**STALLED:** Si è verificato un problema durante l&#39;elaborazione dell&#39;operazione. Verificare l&#39;errore o l&#39;eccezione nella pagina Operazioni bloccate.
 
-**TERMINATO:** Operazione terminata da un amministratore.
+**TERMINATA:** L&#39;operazione è stata terminata da un amministratore.
 
 ### Termina operazioni o processi secondari {#terminate-operations-or-subprocesses}
 
@@ -191,10 +191,10 @@ Nella pagina Dettagli operazione viene visualizzato un riepilogo di un&#39;opera
 
    Per ogni attività, l&#39;elenco mostra le seguenti informazioni:
 
-   **Nome processo - Versione:** Il nome del processo, come definito in Workbench.
+   **Nome processo - Versione:** Il nome del processo definito in Workbench.
 
-   **Applicazione:** Applicazione a cui appartiene il processo, come definito in Workbench.
+   **Applicazione:** l&#39;applicazione a cui appartiene il processo, come definito in Workbench.
 
    **Stato:** Attivo significa che il processo è quello attivato per la versione del processo. Inattivo significa che il processo è una versione precedente che contiene ancora istanze di processo.
 
-   **Data di creazione:** La data e l’ora in cui il processo è stato distribuito.
+   **Data di creazione:** La data e l&#39;ora in cui il processo è stato distribuito.

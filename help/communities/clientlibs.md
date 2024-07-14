@@ -25,63 +25,63 @@ Questa sezione della documentazione descrive come aggiungere librerie client (cl
 
 Per informazioni di base, vedere:
 
-* [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md) che fornisce dettagli sull’utilizzo e strumenti di debug
-* [Clientlibs per SCF](/help/communities/client-customize.md#clientlibs) che fornisce informazioni utili per personalizzare i componenti SCF
+* [Utilizzo di librerie lato client](/help/sites-developing/clientlibs.md) che fornisce dettagli sull&#39;utilizzo e strumenti di debug
+* [Clientlibs per SCF](/help/communities/client-customize.md#clientlibs) che fornisce informazioni utili per la personalizzazione dei componenti SCF
 
 
 ## Perché sono richieste le clientlibs {#why-clientlibs-are-required}
 
-Le clientlibs sono necessarie per il corretto funzionamento (JavaScript) e lo stile (CSS) di un componente.
+Le clientlibs sono necessarie per il corretto funzionamento (JavaScript) e per lo stile (CSS) di un componente.
 
-Quando esiste un [funzione community](/help/communities/functions.md) per una funzione, tutti i componenti e le configurazioni necessari, comprese le clientlibs richieste, sono presenti nel sito community. Solo se gli autori devono disporre di componenti aggiuntivi, è necessario aggiungere altre clientlibs.
+Quando esiste una [funzione community](/help/communities/functions.md) per una caratteristica, tutti i componenti e le configurazioni necessari, incluse le clientlibs richieste, sono presenti nel sito della comunità. Solo se gli autori devono disporre di componenti aggiuntivi, è necessario aggiungere altre clientlibs.
 
-Quando mancano le clientlibs richieste, [aggiunta di un componente Communities a una pagina](/help/communities/author-communities.md) potrebbe causare errori JavaScript e un aspetto imprevisto.
+Quando mancano le clientlibs richieste, [l&#39;aggiunta di un componente Communities a una pagina](/help/communities/author-communities.md) potrebbe causare errori JavaScript e un aspetto imprevisto.
 
 ### Esempio: revisioni posizionate senza clientlibs {#example-placed-reviews-without-clientlibs}
 
-![places-review](assets/placed-reviews.png)
+![revisioni effettuate](assets/placed-reviews.png)
 
 ### Esempio: recensioni inserite con Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![review-clientlibs](assets/reviews-clientlibs.png)
+![recensioni-clientlibs](assets/reviews-clientlibs.png)
 
 ## Identificazione delle clientlibs richieste {#identifying-required-clientlibs}
 
 Le informazioni essenziali sulle funzioni per gli sviluppatori identificano le clientlibs richieste.
 
-Inoltre, da un’istanza dell’AEM, naviga nel [Guida ai componenti della community](/help/communities/components-guide.md) fornisce l’accesso a un elenco di categorie clientlib necessarie per un componente.
+Inoltre, da un&#39;istanza AEM, la navigazione alla [Guida ai componenti della community](/help/communities/components-guide.md) consente di accedere a un elenco di categorie clientlib richieste per un componente.
 
-Ad esempio, nella parte superiore della sezione [Pagina Revisioni](https://localhost:4502/content/community-components/en/reviews.html) le clientlibs elencate sono
+Ad esempio, nella parte superiore della pagina [Recensioni](https://localhost:4502/content/community-components/en/reviews.html) sono elencate le clientlibs richieste
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![clientlibs-review](assets/clientlibs-reviews.png)
+![clientlibs-Reviews](assets/clientlibs-reviews.png)
 
 ## Aggiunta di clientlibs richieste {#adding-required-clientlibs}
 
 Quando si desidera aggiungere un componente Communities a una pagina, se non è già presente, è necessario aggiungere le clientlibs richieste per il componente.
 
-Utilizzare [CRXDE|Lite](#using-crxde-lite) per modificare un elenco clientlibslist esistente per una pagina del sito community.
+Utilizza [CRXDE|Lite](#using-crxde-lite) per modificare un elenco clientlibslist esistente per una pagina del sito community.
 
-Per aggiungere una libreria client a un sito community tramite [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md):
+Per aggiungere una clientlib per un sito community utilizzando [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Sfoglia per [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
-* Individua il `clientlibslist` per la pagina alla quale desideri aggiungere il componente:
+* Passa a [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de).
+* Individua il nodo `clientlibslist` per la pagina in cui desideri aggiungere il componente:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
 * Con `clientlibslist` nodo selezionato:
 
-   * Individua la stringa[] proprietà `scg:requiredClientLibs`.
-   * Seleziona il relativo `Value` in modo da poter accedere alla finestra di dialogo Array di stringhe.
+   * Individuare la proprietà String[] `scg:requiredClientLibs`.
+   * Selezionare `Value` per accedere alla finestra di dialogo Array di stringhe.
 
       * Scorri verso il basso, se necessario.
       * Seleziona + per immettere una nuova libreria client.
 
          * Ripeti l’operazione per aggiungere altre librerie client.
 
-         * Seleziona **OK**.
+         * Selezionare **OK**.
 
    * Seleziona **Salva tutto**.
 
@@ -89,6 +89,6 @@ Per aggiungere una libreria client a un sito community tramite [CRXDE Liti](/hel
 >
 >Se il sito non è un sito di community, è necessario individuare l&#39;esistenza o la posizione delle librerie client utilizzate per il sito.
 
-Utilizzo di [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md) esempio, dove `site-name` è *coinvolgere*, questo è l’aspetto del clientliblist se si aggiunge il componente recensioni:
+Utilizzando l&#39;esempio [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md), dove `site-name` è *coinvolgi*, questo è l&#39;aspetto del clientliblist se si aggiunge il componente recensioni:
 
-![review-component](assets/review-component.png)
+![revisione-componente](assets/review-component.png)

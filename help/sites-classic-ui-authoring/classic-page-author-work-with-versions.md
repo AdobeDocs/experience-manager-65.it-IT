@@ -30,13 +30,14 @@ Il controllo delle versioni crea lo snapshot di una pagina in un determinato mom
 Per creare una versione di una pagina:
 
 1. Nel browser, apri la pagina per la quale desideri creare una versione.
-1. Nel Sidekick, seleziona **Controllo delle versioni** , quindi la scheda **Crea versione** scheda secondaria.
+1. Nel Sidekick, selezionare la scheda **Controllo delle versioni**, quindi la scheda secondaria **Crea versione**.
 
-   ![screen_shot_2012-02-14alle40259pm](assets/screen_shot_2012-02-14at40259pm.png)
+   ![schermata_shot_2012-02-14alle40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
-1. Immetti un **Commento** (facoltativo).
-1. Per impostare un&#39;etichetta sulla versione (facoltativa), fare clic sul pulsante **Altro >>** e impostare **Etichetta** per assegnare un nome alla versione. Se l’etichetta non è impostata, la versione è un numero incrementato automaticamente.
-1. Clic **Crea versione**. Sulla pagina viene visualizzato un messaggio in grigio, ad esempio: Versione 1.2 creata per: Camicie.
+1. Immetti un **commento** (facoltativo).
+1. Per impostare un&#39;etichetta per la versione (facoltativa), fare clic sul pulsante **Altro >>** e impostare **Etichetta** per denominare la versione. Se l’etichetta non è impostata, la versione è un numero incrementato automaticamente.
+1. Fare clic su **Crea versione**. Sulla pagina viene visualizzato un messaggio in grigio, ad esempio:
+Versione 1.2 creata per: Camicie.
 
 >[!NOTE]
 >
@@ -47,49 +48,49 @@ Per creare una versione di una pagina:
 Per ripristinare la pagina a una versione precedente:
 
 1. Aprire la pagina per la quale si desidera ripristinare una versione precedente.
-1. Nella barra laterale, seleziona la **Controllo delle versioni** , quindi la scheda **Ripristina versione** scheda secondaria.
+1. Nella barra laterale, selezionare la scheda **Controllo versioni**, quindi la scheda secondaria **Ripristina versione**.
 
-   ![screen_shot_2012-02-14alle42949pm](assets/screen_shot_2012-02-14at42949pm.png)
+   ![schermata_shot_2012-02-14alle42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Seleziona la versione da ripristinare e fai clic su **Ripristina**.
+1. Selezionare la versione da ripristinare e selezionare **Ripristina**.
 
 ## Ripristino di una versione di pagina dalla console {#restoring-a-page-version-from-the-console}
 
 Questo metodo può essere utilizzato per ripristinare una versione della pagina. Può essere utilizzato anche per ripristinare pagine precedentemente eliminate:
 
-1. In **Siti Web** , passa alla pagina da ripristinare e selezionala.
+1. Nella console **Siti Web**, passare alla pagina che si desidera ripristinare e selezionarla.
 1. Dal menu principale, seleziona **Strumenti**, quindi **Ripristina**:
 
-   ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
+   ![schermata_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Selezione **Ripristina versione...** elenca le versioni dei documenti nella cartella corrente. Anche se una pagina è stata eliminata, viene elencata l’ultima versione:
+1. Selezionando **Ripristina versione...** vengono elencate le versioni dei documenti nella cartella corrente. Anche se una pagina è stata eliminata, viene elencata l’ultima versione:
 
-   ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
+   ![schermata_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Seleziona la versione da ripristinare e fai clic su **Ripristina**. AEM ripristina le versioni (o strutture) selezionate.
+1. Selezionare la versione da ripristinare e fare clic su **Ripristina**. AEM ripristina le versioni (o strutture) selezionate.
 
 ### Ripristino di una struttura dalla console {#restoring-a-tree-from-the-console}
 
 Questo metodo può essere utilizzato per ripristinare una versione della pagina. Può essere utilizzato anche per ripristinare pagine precedentemente eliminate:
 
-1. In **Siti Web** , passa alla cartella da ripristinare e selezionala.
+1. Nella console **Siti Web** individuare la cartella da ripristinare e selezionarla.
 1. Dal menu principale, seleziona **Strumenti**, quindi **Ripristina**.
-1. Selezione **Ripristina struttura...** apre la finestra di dialogo che consente di selezionare la struttura da ripristinare:
+1. Se si seleziona **Ripristina struttura...**, verrà aperta la finestra di dialogo che consente di selezionare la struttura da ripristinare:
 
-   ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
+   ![schermata_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
-1. Clic **Ripristina**. AEM ripristina la struttura selezionata.
+1. Fare clic su **Ripristina**. AEM ripristina la struttura selezionata.
 
 ## Confronto con una versione precedente {#comparing-with-a-previous-version}
 
 Per confrontare la versione corrente della pagina con una versione precedente:
 
 1. Nel browser, apri la pagina da confrontare con una versione precedente.
-1. Nel Sidekick, seleziona **Controllo delle versioni** , quindi la scheda **Ripristina versione** n scheda secondaria.
+1. Nel Sidekick, selezionare la scheda **Controllo delle versioni**, quindi la scheda secondaria **Ripristina versione** n.
 
-   ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
+   ![schermata_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Seleziona la versione da confrontare e fai clic sul pulsante **Diff.** pulsante.
+1. Selezionare la versione da confrontare e fare clic sul pulsante **Diff**.
 1. Le differenze tra la versione corrente e la versione selezionata vengono visualizzate come segue:
 
    * Il testo eliminato è di colore rosso e barrato.
@@ -98,7 +99,7 @@ Per confrontare la versione corrente della pagina con una versione precedente:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Nel Sidekick, seleziona **Ripristina versione** e fai clic sulla scheda secondaria **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> per visualizzare la versione corrente.**
+1. Nel Sidekick, selezionare la scheda secondaria **Ripristina versione** e fare clic sul pulsante **&lt;&lt;Indietro** per visualizzare la versione corrente.
 
 ## Timewarp   {#timewarp}
 
@@ -123,7 +124,7 @@ Timewarp è disponibile dalla barra laterale.
 
 La versione del calendario viene utilizzata se si dispone di un giorno specifico da visualizzare:
 
-1. Apri **Controllo delle versioni** e quindi fare clic su **Timewarp** (vicino alla parte inferiore della barra laterale). Viene visualizzata la seguente finestra di dialogo:
+1. Apri la scheda **Controllo delle versioni** e fai clic su **Timewarp** (nella parte inferiore della barra laterale). Viene visualizzata la seguente finestra di dialogo:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -141,12 +142,12 @@ La versione del calendario viene utilizzata se si dispone di un giorno specifico
 
    >[!NOTE]
    >
-   >Non è possibile modificare la versione precedente della pagina. ma solo visualizzarla. Se desideri ripristinare la versione precedente, puoi farlo manualmente utilizzando [ripristinare](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >Non è possibile modificare la versione precedente della pagina. ma solo visualizzarla. Se desideri ripristinare la versione precedente, puoi farlo manualmente utilizzando [ripristina](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Dopo aver visualizzato la pagina, fai clic su:
 
    * **Esci da Timewarp** per uscire e tornare alla pagina di authoring corrente.
-   * [Mostra timeline](#using-the-timewarp-timeline) in modo da poter visualizzare la timeline.
+   * [Mostra sequenza temporale](#using-the-timewarp-timeline) per visualizzarla.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -158,11 +159,11 @@ Se si desidera visualizzare la sequenza temporale del documento:
 
 1. Per visualizzare la linea temporale, effettuate una delle seguenti operazioni:
 
-   1. Apri **Controllo delle versioni** e quindi fare clic su **Timewarp** (vicino alla parte inferiore della barra laterale).
+   1. Apri la scheda **Controllo delle versioni**, quindi fai clic su **Timewarp** (nella parte inferiore della barra laterale).
 
-   1. Utilizzate la finestra di dialogo della barra laterale visualizzata dopo [utilizzo del calendario Timewarp](#using-the-timewarp-calendar).
+   1. Utilizza la finestra di dialogo della barra laterale visualizzata dopo [l&#39;utilizzo del Calendario Timewarp](#using-the-timewarp-calendar).
 
-1. Clic **Mostra timeline** - viene visualizzata la sequenza temporale del documento, ad esempio:
+1. Fare clic su **Mostra sequenza temporale**. Verrà visualizzata la sequenza temporale del documento, ad esempio:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -177,7 +178,7 @@ Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata
 1. Fai clic su:
 
    1. **Vai** per visualizzare il contenuto della pagina pubblicata al momento selezionato.
-   1. Quando visualizzi tale contenuto, utilizza **Esci da Timewarp** per uscire e tornare alla pagina di authoring corrente.
+   1. Quando visualizzi il contenuto, utilizza **Esci da Timewarp** per uscire e tornare alla pagina di authoring corrente.
 
 ### Limitazioni di Timewarp {#timewarp-limitations}
 
@@ -187,9 +188,9 @@ Timewarp semplifica al massimo la riproduzione di una pagina in un determinato m
 * **Timewarp utilizza le versioni di pagina**: se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
 
-* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, puoi farlo manualmente utilizzando [ripristinare](#main-pars-title-1).
+* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, puoi farlo manualmente utilizzando [ripristina](#main-pars-title-1).
 
-* **Timewarp si basa solo sul contenuto della pagina** - Se sono stati modificati alcuni elementi, ad esempio codice, css e risorse di immagini, per il rendering del sito web, la visualizzazione è diversa da quella originale. Il motivo è che tali elementi non dispongono del controllo delle versioni nell&#39;archivio.
+* **Timewarp si basa solo sul contenuto della pagina**. Se sono stati modificati elementi quali codice, CSS e risorse immagine per il rendering del sito Web, la visualizzazione sarà diversa da quella originale. Il motivo è che tali elementi non dispongono del controllo delle versioni nell&#39;archivio.
 
 >[!CAUTION]
 >

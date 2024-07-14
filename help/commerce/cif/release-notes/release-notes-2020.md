@@ -48,7 +48,7 @@ ht-degree: 8%
 
 * È stato aggiunto un nuovo componente Carosello categoria per consentire agli utenti aziendali di trascinare e rilasciare questo componente sulle pagine di contenuto AEM per arricchire le pagine di contenuto con i dati di e-commerce.
 
-* Componenti core CIF estesi per idratare Adobe Client Data Layer inviando dati di e-commerce. Adobe Client Data Layer è un metodo standardizzato per raccogliere dati e comunicarli a Digital Analytics e ai server di reporting. Per ulteriori dettagli, consulta [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Componenti core CIF estesi per idratare Adobe Client Data Layer inviando dati di e-commerce. Adobe Client Data Layer è un metodo standardizzato per raccogliere dati e comunicarli a Digital Analytics e ai server di reporting. Per ulteriori dettagli, vedi [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pagine Dettagli prodotto ed Elenco prodotti estese per compilare automaticamente i metadati SEO (come titolo, metadescrizione, parole chiave meta) configurati dall’interfaccia utente di amministrazione di Adobe Commerce
 
@@ -172,7 +172,7 @@ Questa è la prima versione dei Componenti core CIF supportata su Adobe Experien
 
 * Alla pagina di ricerca e alla pagina dell’elenco dei prodotti è stato aggiunto il supporto per la ricerca con facet, per consentire agli acquirenti di filtrare i risultati di ricerca in base ai facet di prodotto.
 
-* È stato aggiunto un nuovo servizio OSGi per personalizzare gli URL PDP/PLP a scopo di SEO (Search Engine Optimization). Per ulteriori dettagli, vedi [documentazione](https://github.com/adobe/aem-core-cif-components).
+* È stato aggiunto un nuovo servizio OSGi per personalizzare gli URL PDP/PLP a scopo di SEO (Search Engine Optimization). Per ulteriori dettagli, consulta la [documentazione](https://github.com/adobe/aem-core-cif-components).
 
 * L’associazione del prodotto viene creata automaticamente al momento della creazione di una configurazione cloud.
 
@@ -192,7 +192,7 @@ Questa è la prima versione dei Componenti core CIF supportata su Adobe Experien
 
 ### Novità {#what-is-new-april}
 
-* Le impostazioni di configurazione del connettore CIF sono unificate e semplificate. Per ulteriori dettagli, controlla [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it) o [Configurazione del nuovo progetto CIF dell’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it)
+* Le impostazioni di configurazione del connettore CIF sono unificate e semplificate. Per ulteriori dettagli, controlla [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it) o [Nuova configurazione progetto CIF AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it)
 
 ### Novità {#what-is-improved-april}
 

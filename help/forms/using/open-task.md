@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Se l’app Adobe Experience Manager (AEM) Forms si sincronizza con un server AEM Forms, puoi lavorare con le attività che ti sono state assegnate. Le attività sono passaggi del flusso di lavoro definito in Workbench o nell’editor del flusso di lavoro AEM.
 
-Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consulta [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
+Gli altri moduli vengono salvati come bozza nella scheda Bozze. Vedere [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
 
 **Per aprire un&#39;attività**
 
@@ -32,11 +32,11 @@ Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consulta [Salvat
 
 1. Seleziona l’attività per aprirla.
 
-   Puoi selezionare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate nel processo Workbench.
+   È possibile selezionare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate nel processo Workbench.
 
 **Per aprire un&#39;applicazione**
 
-1. Seleziona la **applicazione** nel **Forms** scheda.
+1. Selezionare l&#39;**applicazione** nella scheda **Forms**.
 
    Quando si seleziona un&#39;applicazione, la descrizione dell&#39;applicazione viene visualizzata sotto il nome dell&#39;applicazione. Dopo la descrizione, vengono visualizzate l’azione utente o le azioni associate all’applicazione.
 
@@ -45,4 +45,4 @@ Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consulta [Salvat
 
 1. Seleziona l’attività per aprirla.
 
-   Puoi selezionare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.
+   È possibile selezionare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.

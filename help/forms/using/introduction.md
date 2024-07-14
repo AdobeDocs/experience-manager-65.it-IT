@@ -19,7 +19,7 @@ ht-degree: 0%
 
 HTML5 forms è una nuova funzionalità del software Adobe Experience Manager 6.0 (AEM 6.0) che può eseguire il rendering dei modelli di moduli XFA in formato HTML5. Questa funzionalità consente di eseguire il rendering dei moduli su dispositivi mobili e browser desktop su cui non è supportato il PDF basato su XFA. HTML5 Forms non solo supporta le funzionalità esistenti dei modelli di modulo XFA, ma aggiunge anche nuove funzionalità, come la firma scarabocchio, per i dispositivi mobili.
 
-I moduli HTML5 generano documenti basati su costrutti standard di HTML5. Puoi visualizzare i moduli di HTML5 in tutti i browser moderni che supportano HTML5. Non è necessario installare altri plug-in per browser. Per ulteriori informazioni sui browser supportati, consulta [Piattaforme client supportati](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
+I moduli HTML5 generano documenti basati su costrutti standard di HTML5. Puoi visualizzare i moduli di HTML5 in tutti i browser moderni che supportano HTML5. Non è necessario installare altri plug-in per browser. Per ulteriori informazioni sui browser supportati, vedere [Piattaforme client supportate](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
 ![Anteprima modulo HTML5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
@@ -41,8 +41,8 @@ Gli sviluppatori di moduli possono utilizzare un modello XFA per eseguire il ren
 
 ## Gestione moduli HTML5 {#manage-html-forms}
 
-L’AEM fornisce anche una vista unificata per elencare e gestire tutti i modelli di modulo utilizzando l’interfaccia utente di AEM Forms. Puoi attivare, disattivare, pubblicare e visualizzare in anteprima i moduli. Per ulteriori informazioni, consulta [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
+L’AEM fornisce anche una vista unificata per elencare e gestire tutti i modelli di modulo utilizzando l’interfaccia utente di AEM Forms. Puoi attivare, disattivare, pubblicare e visualizzare in anteprima i moduli. Per ulteriori informazioni, vedere [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
 
 ### Personalizzazione di Forms {#forms-customization}
 
-HTML5 forms esegue il rendering dei modelli di modulo utilizzando costrutti standard di HTML5. Questo rende semplice personalizzare ed estendere i moduli in formato HTML5 utilizzando tecnologie web, principalmente CSS e JavaScript. È possibile personalizzare facilmente l&#39;aspetto dei widget esistenti, creare widget personalizzati o utilizzare stili personalizzati nei moduli. Per ulteriori informazioni sulla creazione di widget personalizzati e sulla personalizzazione di widget esistenti, consultate [Collegare widget personalizzati con moduli HTML5](../../forms/using/custom-widgets.md).
+HTML5 forms esegue il rendering dei modelli di modulo utilizzando costrutti standard di HTML5. Questo rende semplice personalizzare ed estendere i moduli in formato HTML5 utilizzando tecnologie web, principalmente CSS e JavaScript. È possibile personalizzare facilmente l&#39;aspetto dei widget esistenti, creare widget personalizzati o utilizzare stili personalizzati nei moduli. Per ulteriori informazioni sulla creazione di widget personalizzati e sulla personalizzazione di widget esistenti, vedere [Collegare widget personalizzati con HTML5 forms](../../forms/using/custom-widgets.md).

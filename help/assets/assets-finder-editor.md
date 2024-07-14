@@ -29,13 +29,13 @@ Questo documento descrive quanto segue:
 
 ## Perché creare e configurare pagine dell’Editor risorse? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management viene utilizzato in più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con formazione professionale - ad esempio fotografi o tassonomisti - a gruppi di utenti più ampi e diversificati (ad esempio, utenti aziendali, autori WCM e giornalisti), la potente interfaccia utente di [!DNL Adobe Experience Manager Assets] può fornire troppe informazioni. Le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali che le riguardano.
+Digital Asset Management viene utilizzato in più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM e giornalisti, la potente interfaccia utente di [!DNL Adobe Experience Manager Assets] può fornire troppe informazioni. Le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali che le riguardano.
 
 Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una rete Intranet in cui i dipendenti possono caricare foto dalle visite alle fiere o da un centro stampa in un sito web pubblico. Le applicazioni incentrate sulle risorse possono essere estese anche a soluzioni complete, inclusi carrelli, pagamento e processi di verifica.
 
-La creazione di un’applicazione incentrata sulle risorse diventa un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze e la conoscenza dei metadati utilizzati. Applicazioni basate su risorse create con [!DNL Assets] sono estensibili: con un moderato sforzo di codifica, è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
+La creazione di un’applicazione incentrata sulle risorse diventa un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze e la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con [!DNL Assets] sono estensibili: è possibile creare componenti riutilizzabili con moderata sforzo di codifica per la ricerca, la visualizzazione e la modifica delle risorse.
 
-Applicazione incentrata sulle risorse in [!DNL Experience Manager] è costituita da una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente inoltre di modificare i metadati, purché l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
+Un&#39;applicazione incentrata sulle risorse in [!DNL Experience Manager] è costituita da una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente inoltre di modificare i metadati, purché l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -197,7 +197,7 @@ Puoi personalizzare l’Editor risorse per determinare come gli utenti possono v
 
 >[!NOTE]
 >
->Per aggiungere campi personalizzati all’Editor risorse DAM, aggiungi nuovo `cq:Widget` nodi a `/apps/dam/content/asseteditors.`
+>Se desideri aggiungere campi personalizzati all&#39;Editor risorse DAM, aggiungi nuovi nodi `cq:Widget` a `/apps/dam/content/asseteditors.`
 
 ### Creare una pagina Editor risorse {#creating-the-asset-editor-page}
 
@@ -205,16 +205,16 @@ Quando si crea la pagina Editor risorse, è buona norma creare la pagina diretta
 
 Per creare una pagina Editor risorse:
 
-1. In **[!UICONTROL Siti Web]** , passa alla posizione in cui desideri creare una pagina Editor risorse e fai clic su **Nuovo**.
-1. Seleziona **Editor risorse Geometrixx** e fai clic su **Crea**. La nuova pagina viene creata e la pagina è elencata in **Siti Web** scheda.
+1. Nella scheda **[!UICONTROL Siti Web]**, passa alla posizione in cui desideri creare una pagina Editor risorse e fai clic su **Nuovo**.
+1. Geometrixx Seleziona **Editor risorse** e fai clic su **Crea**. La nuova pagina viene creata e la pagina è elencata nella scheda **Siti Web**.
 
-![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
+![schermata_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
 La pagina di base creata utilizzando il modello Editor risorse di Geometrixx ha il seguente aspetto:
 
 ![assetshare5](assets/assetshare5.png)
 
-Per personalizzare la pagina Editor risorse, utilizza gli elementi della barra laterale. La pagina Editor risorse a cui si accede da **Centro stampa Geometrixx** è la versione personalizzata di una pagina basata su questo modello:
+Per personalizzare la pagina Editor risorse, utilizza gli elementi della barra laterale. Geometrixx La pagina Editor risorse a cui si accede dal **Press Center** è una versione personalizzata di una pagina basata su questo modello:
 
 ![assetshare6](assets/assetshare6.png)
 
@@ -226,13 +226,13 @@ Per impostare la pagina Editor risorse:
 
 1. Nella pagina Condivisione risorse, fai clic su **Modifica** accanto al Generatore di query.
 
-![screen_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
+![schermata_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
 
-1. Fai clic su **Generale** , se non è già selezionata.
+1. Fare clic sulla scheda **Generale** se non è già selezionata.
 
-1. In **Percorso dell’editor risorse** , immetti il percorso dell’Editor risorse in cui desideri aprire le risorse nella pagina Condivisione risorse e fai clic su **OK**.
+1. Nel campo **Percorso di Asset Editor**, immetti il percorso di Asset Editor in cui desideri aprire la pagina Condivisione risorse e fai clic su **OK**.
 
-![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
+![schermata_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
 #### Aggiungere componenti Editor risorse {#adding-asset-editor-components}
 
@@ -254,41 +254,41 @@ Per aggiungere componenti Editor risorse:
 
 | Componente | Descrizione |
 |---|---|
-| **[!UICONTROL Modulo metadati] e [!UICONTROL Campo di testo metadati]** | Consente di aggiungere metadati aggiuntivi a una risorsa ed eseguire un’azione, ad esempio l’invio, su tale risorsa. |
-| **[!UICONTROL Risorse secondarie]** | Consente di personalizzare le risorse secondarie. |
+| **[!UICONTROL Modulo metadati] e [!UICONTROL Campo testo metadati]** | Consente di aggiungere metadati aggiuntivi a una risorsa ed eseguire un’azione, ad esempio l’invio, su tale risorsa. |
+| **[!UICONTROL Assets secondario]** | Consente di personalizzare le risorse secondarie. |
 | **Tag** | Consente agli utenti di selezionare e aggiungere tag a una risorsa. |
 | **[!UICONTROL Miniatura]** | Mostra una miniatura della risorsa, il nome del file e consente di aggiungere un testo alternativo. È possibile aggiungere azioni Editor risorse anche qui. |
 | **[!UICONTROL Titolo]** | Visualizza il titolo della risorsa, che può essere personalizzato. |
 
-![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
+![schermata_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
 #### Modulo metadati e campo di testo - Configurazione del componente Visualizza metadati {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Il modulo metadati è un modulo che include un’azione di inizio e di fine. Nel mezzo, immetti **Testo** campi. Consulta [Forms](/help/sites-authoring/default-components-foundation.md#form-component) per ulteriori informazioni sull&#39;utilizzo dei moduli.
+Il modulo metadati è un modulo che include un’azione di inizio e di fine. Nel mezzo, immetti **campi di testo**. Per ulteriori informazioni sull&#39;utilizzo dei moduli, vedere [Forms](/help/sites-authoring/default-components-foundation.md#form-component).
 
-1. Creare un’azione iniziale facendo clic su **Modifica** nell&#39;area Inizio del modulo. Se necessario, è possibile immettere il titolo di una casella. Per impostazione predefinita, il titolo della casella è **Metadati**. Selezionare la casella di controllo Convalida client se si desidera generare il codice client JavaScript per la convalida.
+1. Creare un&#39;azione iniziale facendo clic su **Modifica** nell&#39;area Inizio del modulo. Se necessario, è possibile immettere il titolo di una casella. Per impostazione predefinita, il titolo della casella è **Metadati**. Selezionare la casella di controllo Convalida client se si desidera generare il codice client JavaScript per la convalida.
 
-![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
+![schermata_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Creare un’azione Fine facendo clic su **Modifica** nell&#39;area Fine del modulo. Ad esempio, potrebbe essere utile creare un’ **[!UICONTROL Invia]** per consentire agli utenti di inviare le modifiche ai metadati. Facoltativamente, puoi aggiungere una **Reimposta** che ripristina lo stato originale dei metadati.
+1. Creare un&#39;azione Fine facendo clic su **Modifica** nell&#39;area Fine del modulo. Ad esempio, potrebbe essere utile creare un&#39;opzione **[!UICONTROL Invia]** per consentire agli utenti di inviare le modifiche ai metadati. Facoltativamente, puoi aggiungere un&#39;opzione **Ripristina** che ripristina lo stato originale dei metadati.
 
-![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
+![schermata_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
-1. Tra le **Inizio modulo** e **Fine modulo**, trascinare i campi di testo dei metadati nel modulo. Gli utenti compilano i metadati in questi campi di testo, che possono inviare o completare un’altra azione su.
+1. Tra **Inizio modulo** e **Fine modulo**, trascina i campi di testo dei metadati nel modulo. Gli utenti compilano i metadati in questi campi di testo, che possono inviare o completare un’altra azione su.
 
-1. Fare doppio clic sul nome del campo, ad esempio **Titolo** per aprire il campo metadati e apportare modifiche. In **Generale** scheda di **Modifica componente** , puoi definire lo spazio dei nomi e l’etichetta e il tipo del campo, ad esempio: `dc:title`.
+1. Fai doppio clic sul nome del campo, ad esempio **Titolo** per aprire il campo metadati e apportare modifiche. Nella scheda **Generale** della finestra **Modifica componente**, è possibile definire lo spazio dei nomi e l&#39;etichetta e il tipo del campo, ad esempio `dc:title`.
 
-![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
+![schermata_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-Consulta [Personalizzazione ed estensione delle risorse](/help/assets/extending-assets.md) per informazioni sulla modifica degli spazi dei nomi disponibili nel modulo metadati,
+Per informazioni sulla modifica degli spazi dei nomi disponibili nel modulo metadati, vedere [Personalizzazione ed estensione di Assets](/help/assets/extending-assets.md).
 
-1. Fai clic su **Vincoli** scheda. Qui puoi selezionare se un campo è obbligatorio e, se necessario, aggiungere eventuali vincoli.
+1. Fare clic sulla scheda **Vincoli**. Qui puoi selezionare se un campo è obbligatorio e, se necessario, aggiungere eventuali vincoli.
 
-![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
+![schermata_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
-1. Fai clic su **Visualizzazione** scheda. Qui puoi immettere una nuova larghezza e un nuovo numero di righe per il campo metadati. Seleziona la **Campo di sola lettura** per consentire agli utenti di modificare i metadati.
+1. Fare clic sulla scheda **Visualizzazione**. Qui puoi immettere una nuova larghezza e un nuovo numero di righe per il campo metadati. Selezionare la casella di controllo **Campo di sola lettura** per consentire agli utenti di modificare i metadati.
 
-![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
+![schermata_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
 Di seguito è riportato un esempio di modulo Metadati con vari campi:
 
@@ -298,65 +298,65 @@ Nella pagina Editor risorse, gli utenti possono quindi immettere i valori nei ca
 
 #### Risorse secondarie {#sub-assets}
 
-Il componente Risorse secondarie è il punto in cui puoi visualizzare e selezionare le risorse secondarie. È possibile determinare i nomi da visualizzare sotto [risorsa principale](/help/assets/assets.md#what-are-digital-assets) e risorse secondarie.
+Il componente Sub Assets è il punto in cui puoi visualizzare e selezionare le risorse secondarie. Puoi determinare i nomi da visualizzare nella [risorsa principale](/help/assets/assets.md#what-are-digital-assets) e nelle risorse secondarie.
 
-Fai doppio clic sul componente Risorse secondarie per aprire la finestra di dialogo Risorse secondarie in cui puoi modificare i titoli della risorsa principale e di eventuali risorse secondarie. I valori predefiniti vengono visualizzati sotto il campo corrispondente.
+Fai doppio clic sul componente Assets secondario per aprire la finestra di dialogo delle risorse secondarie in cui puoi modificare i titoli della risorsa principale e di eventuali risorse secondarie. I valori predefiniti vengono visualizzati sotto il campo corrispondente.
 
-![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
+![schermata_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
 
-Di seguito è riportato un esempio di componente Risorse secondarie popolato:
+Di seguito è riportato un esempio di componente Sub Assets popolato:
 
-![screen_shot_2012-04-23at24442pm](assets/screen_shot_2012-04-23at24442pm.png)
+![schermata_shot_2012-04-23at24442pm](assets/screen_shot_2012-04-23at24442pm.png)
 
-Ad esempio, se selezioni una risorsa secondaria, osserva come il componente visualizza la pagina appropriata e il titolo della casella cambia da Risorse secondarie a Pari livello.
+Ad esempio, se selezioni una risorsa secondaria, osserva come il componente visualizza la pagina appropriata e il titolo della casella cambia da Sub Assets a Pari livello.
 
-![screen_shot_2012-04-23at24552pm](assets/screen_shot_2012-04-23at24552pm.png)
+![schermata_shot_2012-04-23at24552pm](assets/screen_shot_2012-04-23at24552pm.png)
 
 #### Tag {#tags}
 
 Il componente Tag è un componente in cui gli utenti possono assegnare tag esistenti a una risorsa, per facilitarne l’organizzazione e il recupero in un secondo momento. È possibile rendere questo componente di sola lettura, in modo che gli utenti non possano aggiungere tag, ma solo visualizzarli.
 
-![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
+![schermata_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Fai doppio clic sul componente Tag per aprire la finestra di dialogo Tag in cui puoi modificare il titolo da Tag, se necessario, e selezionare gli spazi dei nomi allocati. Per rendere modificabile questo campo, cancella **[!UICONTROL Nascondi modifica]** casella di controllo. Per impostazione predefinita, i tag sono modificabili.
+Fai doppio clic sul componente Tag per aprire la finestra di dialogo Tag in cui puoi modificare il titolo da Tag, se necessario, e selezionare gli spazi dei nomi allocati. Per rendere modificabile il campo, deselezionare la casella di controllo **[!UICONTROL Nascondi modifica]**. Per impostazione predefinita, i tag sono modificabili.
 
-![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
+![schermata_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
 Se gli utenti possono modificare i tag, possono fare clic sulla matita per aggiungere i tag selezionandoli dal menu a discesa Tag.
 
-![screen_shot_2012-04-23at25150pm](assets/screen_shot_2012-04-23at25150pm.png)
+![schermata_shot_2012-04-23at25150pm](assets/screen_shot_2012-04-23at25150pm.png)
 
 Di seguito è riportato un componente Tag popolato:
 
-![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
+![schermata_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
 #### Miniatura  {#thumbnail}
 
-Il componente Miniatura è il punto in cui la risorsa visualizza la miniatura selezionata (per molti dei formati la miniatura viene estratta automaticamente). Inoltre, il componente visualizza il nome del file e [azioni che è possibile modificare](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
+Il componente Miniatura è il punto in cui la risorsa visualizza la miniatura selezionata (per molti dei formati la miniatura viene estratta automaticamente). Inoltre, il componente visualizza il nome del file e [le azioni che puoi modificare](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
-![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
+![schermata_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Fai doppio clic sul componente miniatura per aprire la finestra di dialogo delle miniature in cui modificare il testo alternativo. Per impostazione predefinita, il testo alternativo della miniatura è **Fai clic per scaricare** risorsa.
+Fai doppio clic sul componente miniatura per aprire la finestra di dialogo delle miniature in cui modificare il testo alternativo. Per impostazione predefinita, il testo alternativo della miniatura è impostato su **Fai clic per scaricare** risorsa.
 
-![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
+![schermata_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
 Di seguito è riportato un esempio di un componente Thumbnail popolato:
 
-![screen_shot_2012-04-23at34815pm](assets/screen_shot_2012-04-23at34815pm.png)
+![schermata_shot_2012-04-23at34815pm](assets/screen_shot_2012-04-23at34815pm.png)
 
 #### Titolo {#title}
 
 Il componente Titolo visualizza il titolo della risorsa e una descrizione.
 
-Per impostazione predefinita, è in modalità di sola lettura, pertanto gli utenti non possono modificarla. Per renderlo modificabile, fai doppio clic sul componente e cancella il **Nascondi pulsante di modifica** casella di controllo. Inoltre, inserisci un titolo per più risorse.
+Per impostazione predefinita, è in modalità di sola lettura, pertanto gli utenti non possono modificarla. Per renderla modificabile, fare doppio clic sul componente e deselezionare la casella di controllo **Nascondi pulsante di modifica**. Inoltre, inserisci un titolo per più risorse.
 
-![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
+![schermata_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
-Se è possibile modificare il Titolo, è possibile aggiungere un titolo e una descrizione facendo clic sulla matita per aprire **Proprietà risorsa** finestra. Inoltre, puoi attivare e disattivare la risorsa selezionando la data e l’ora.
+Se è possibile modificare il titolo, è possibile aggiungere un titolo e una descrizione facendo clic sull&#39;icona a forma di matita per aprire la finestra **Proprietà risorsa**. Inoltre, puoi attivare e disattivare la risorsa selezionando la data e l’ora.
 
-Durante la modifica di [!UICONTROL Titolo], gli utenti possono modificare **Titolo**, **Descrizione**, e immetti **On** e **Tempi di disattivazione** per attivare e disattivare la risorsa.
+Durante la modifica del [!UICONTROL Titolo], gli utenti possono modificare **Titolo**, **Descrizione** e immettere **Orari di attivazione** e **Disattivazione** per attivare e disattivare la risorsa.
 
-![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
+![schermata_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
 Di seguito è riportato un esempio di un componente Titolo popolato:
 
@@ -368,9 +368,9 @@ Di seguito è riportato un esempio di un componente Titolo popolato:
 
 Per aggiungere azioni alla pagina Editor risorse:
 
-1. Nella pagina Editor risorse da personalizzare fai clic su **Editor risorse** nella barra laterale.
+1. Nella pagina Editor risorse che si desidera personalizzare fare clic su **Editor risorse** nella barra laterale.
 
-![screen_shot_2012-04-23at35515pm](assets/screen_shot_2012-04-23at35515pm.png)
+![schermata_shot_2012-04-23at35515pm](assets/screen_shot_2012-04-23at35515pm.png)
 
 Sono disponibili le seguenti azioni:
 
@@ -383,17 +383,17 @@ Sono disponibili le seguenti azioni:
 | [!UICONTROL Riferimenti] | Fai clic su questo pulsante per mostrare su quali pagine viene utilizzata la risorsa. |
 | [!UICONTROL Controllo delle versioni] | Consente di creare e ripristinare le versioni di una risorsa. |
 
-1. Trascina l’azione appropriata nella sezione **Azioni** nella pagina. Crea un’opzione utilizzata per eseguire l’azione trascinata sulla pagina.
+1. Trascina l&#39;azione appropriata nell&#39;area **Azioni** della pagina. Crea un’opzione utilizzata per eseguire l’azione trascinata sulla pagina.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
 ## Modificare più risorse con la pagina Editor risorse {#multi-editing-assets-with-the-asset-editor-page}
 
-Con [!DNL Experience Manager Assets], puoi modificare diverse risorse contemporaneamente. Dopo aver selezionato le risorse, puoi modificare simultaneamente tag e metadati.
+Con [!DNL Experience Manager Assets] è possibile modificare più risorse contemporaneamente. Dopo aver selezionato le risorse, puoi modificare simultaneamente tag e metadati.
 
 Per modificare più risorse con la pagina Editor risorse:
 
-1. Apri la Geometrixx **Centro stampa** pagina:
+1. Apri la pagina **Centro stampa** Geometrixx:
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Seleziona le risorse:
@@ -401,28 +401,28 @@ Per modificare più risorse con la pagina Editor risorse:
    * in Windows: `Ctrl + click` ogni risorsa.
    * su Mac: `Cmd + click` ogni risorsa.
 
-   Per selezionare un intervallo di risorse: fai clic sulla prima risorsa, quindi `Shift + click` l’ultima risorsa.
+   Per selezionare un intervallo di risorse: fai clic sulla prima risorsa, quindi `Shift + click` sull&#39;ultima.
 
-1. Clic **Modifica metadati** nel **Azioni** (parte sinistra della pagina).
-1. Il Geometrixx **Press Center Asset Editor** pagina viene aperta in una nuova scheda. I metadati delle risorse vengono visualizzati come segue:
+1. Fai clic su **Modifica metadati** nel campo **Azioni** (parte sinistra della pagina).
+1. La pagina di Geometrixx **Press Center Asset Editor** si apre in una nuova scheda. I metadati delle risorse vengono visualizzati come segue:
 
    * Viene visualizzato in corsivo un tag che non si applica a tutte le risorse, ma solo ad alcune.
    * Un tag applicato a tutte le risorse viene visualizzato con un font normale.
    * Metadati diversi dai tag: il valore del campo viene visualizzato solo se è lo stesso per tutte le risorse selezionate.
 
-1. Clic **Scarica** per scaricare un file ZIP contenente le rappresentazioni originali delle risorse.
-1. Fai clic su Modifica l’opzione dei tag accanto al **Tag** campo.
+1. Fai clic su **Scarica** per scaricare un file ZIP contenente le rappresentazioni originali delle risorse.
+1. Fai clic sull&#39;opzione Modifica tag accanto al campo **Tag**.
 
    * Un tag che non si applica a tutte le risorse, ma solo ad alcune di esse, ha uno sfondo grigio.
    * Un tag applicato a tutte le risorse ha uno sfondo bianco.
 
    Operazioni disponibili:
 
-   * Clic `x` per rimuovere il tag per tutte le risorse.
-   * Clic `+` per aggiungere il tag a tutte le risorse.
-   * Fai clic su **freccia** e seleziona un tag per aggiungere un nuovo tag a tutte le risorse.
+   * Fare clic su `x` per rimuovere il tag per tutte le risorse.
+   * Fai clic su `+` per aggiungere il tag a tutte le risorse.
+   * Fai clic sulla **freccia** e seleziona un tag per aggiungere un nuovo tag a tutte le risorse.
 
-   Clic **OK** per scrivere le modifiche nel modulo. La casella accanto al **Tag** viene selezionato automaticamente.
+   Fare clic su **OK** per scrivere le modifiche nel modulo. La casella accanto al campo **Tag** viene selezionata automaticamente.
 
 1. Modifica il campo Descrizione. Ad esempio, impostalo su:
 
@@ -432,6 +432,6 @@ Per modificare più risorse con la pagina Editor risorse:
 
    Nota: la casella accanto al campo viene selezionata automaticamente quando il campo viene modificato.
 
-1. Clic **Aggiorna metadati** per inviare il modulo e salvare le modifiche per tutte le risorse.
+1. Fare clic su **Aggiorna metadati** per inviare il modulo e salvare le modifiche per tutte le risorse.
 
    Nota: vengono modificati solo i metadati selezionati.

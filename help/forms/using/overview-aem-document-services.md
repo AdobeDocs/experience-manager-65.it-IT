@@ -45,8 +45,8 @@ Quando si utilizza il servizio di output per unire i dati XML con una struttura 
 
 Sono disponibili le seguenti quattro operazioni del servizio di output:
 
-* **generatePDFOuput**: unisce una progettazione di modulo con i dati per generare un documento PDF
-* **generatePrintedOutput**: unisce una struttura di modulo con i dati del modulo per generare un documento da inviare a una stampante laser o di rete per etichette
+* **generatePDFOuput**: unisce la progettazione di un modulo ai dati per generare un documento PDF
+* **generatePrintedOutput**: unisce la struttura di un modulo ai dati del modulo per generare un documento da inviare a una stampante laser o di rete di etichette
 
 * **generatePDFOutputBatch**: unisce più modelli con più record di dati in una singola chiamata per generare un batch di file PDF. È inoltre possibile generare un singolo PDF combinando tutti i PDF
 * **generatePrintedOutputBatch**: unisce più modelli con più record di dati in una singola chiamata per generare un batch di documenti di stampa (PS,PCL,ZPL,DPL,IPL,TPCL). È inoltre possibile generare un singolo documento di stampa.
@@ -133,7 +133,7 @@ Quando ai documenti PDF vengono aggiunti i diritti di utilizzo appropriati, i de
 
 Queste speciali funzionalità utente vengono attivate automaticamente quando un documento PDF con abilitazione per i diritti viene aperto in Adobe Reader. Quando l’utente ha terminato di lavorare con un documento abilitato ai diritti, tali funzioni vengono nuovamente disabilitate in Adobe Reader. Rimangono disattivati finché l’utente non riceve un altro documento di PDF abilitato per i diritti.
 
-Il servizio DocAssurance non è immediatamente disponibile. Per configurare il servizio DocAssurance, vedere [Installazione e configurazione della configurazione di Document Services](../../forms/using/install-configure-document-services.md).
+Il servizio DocAssurance non è immediatamente disponibile. Per configurare il servizio DocAssurance, vedere [Installazione e configurazione di Document Services](../../forms/using/install-configure-document-services.md).
 
 ## Invia a servizio stampante {#send-to-printer-service}
 

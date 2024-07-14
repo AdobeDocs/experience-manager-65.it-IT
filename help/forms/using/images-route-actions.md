@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Personalizzare le immagini utilizzate nelle azioni di indirizzamento {#customize-images-used-in-route-actions}
 
-Per personalizzare le immagini utilizzate nelle azioni di instradamento, eseguire i passaggi descritti in [Passaggi generici della personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) seguito dai passaggi descritti in questo articolo.
+Per personalizzare le immagini utilizzate nelle azioni di route, eseguire i passaggi descritti in [Passaggi generici di personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) seguiti dai passaggi descritti in questo articolo.
 
 ## Immagini per le azioni del ciclo di lavorazione {#images-for-route-actions}
 
@@ -25,11 +25,11 @@ Per personalizzare le immagini utilizzate nelle azioni di instradamento, eseguir
 
    `/apps/ws/css/newStyle.css`
 
-   Ad esempio: aggiungi un nuovo stile denominato `myStyle1`come mostrato di seguito e carica il file di immagine `myStyleIcon1.png` al `/apps/ws/image`s cartella utilizzando un client WebDAV.
+   Ad esempio: aggiungere un nuovo stile denominato `myStyle1` come illustrato di seguito e caricare il file di immagine `myStyleIcon1.png` nella cartella `/apps/ws/image` utilizzando un client WebDAV.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, consulta [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Per ulteriori informazioni, vedere [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    >[!NOTE]
    >
@@ -45,11 +45,11 @@ Per personalizzare le immagini utilizzate nelle azioni di instradamento, eseguir
 
 ## Popup azione attività Elenco attività {#task-list-task-action-popup}
 
-1. Creare una finestra a comparsa per l&#39;azione dell&#39;elenco attività, vedere [Creazione del codice dell’area di lavoro di AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Richiede di utilizzare il pacchetto di sviluppo.
+1. Creare un popup di azione per l&#39;elenco attività. Vedere [Creazione del codice dell&#39;area di lavoro di AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Richiede di utilizzare il pacchetto di sviluppo.
 
-1. Copia `/libs/ws/js/runtime/templates/task.html` a `/apps/ws/js/runtime/templates/task.html`.
+1. Copia `/libs/ws/js/runtime/templates/task.html` in `/apps/ws/js/runtime/templates/task.html`.
 
-1. Se il nome dello stile CSS è uguale al nome dell&#39;azione route proveniente dal server, modifica il seguente codice in `/apps/ws/js/runtime/templates/task.html`:
+1. Se il nome dello stile CSS è uguale al nome dell&#39;azione route proveniente dal server, modificare il codice seguente in `/apps/ws/js/runtime/templates/task.html`:
 
    ```jsp
    <%if(routeList == null){%>
@@ -79,7 +79,7 @@ Per personalizzare le immagini utilizzate nelle azioni di instradamento, eseguir
                <%}%>
    ```
 
-1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modifica il seguente codice in `/apps/ws/js/runtime/templates/task.html`. Aggiunge una pila del `if-else` condizioni servlet per mappare lo stile con il nome dell&#39;azione route.
+1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modificare il codice seguente in `/apps/ws/js/runtime/templates/task.html`. Aggiunge una pila delle condizioni del servlet `if-else` per mappare lo stile con il nome dell&#39;azione di route.
 
 ```jsp
 <%if(routeList == null){%>
@@ -117,9 +117,9 @@ To
 
 ## Popup azione attività Dettagli attività {#task-details-task-action-popup}
 
-1. Copia `/libs/ws/js/runtime/templates/taskdetails.html` a `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Copia `/libs/ws/js/runtime/templates/taskdetails.html` in `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Se il nome dello stile CSS è uguale al nome dell&#39;azione route proveniente dal server, modifica il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Se il nome dello stile CSS è uguale al nome dell&#39;azione route proveniente dal server, modificare il codice seguente in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -139,7 +139,7 @@ To
                        <%}%>
    ```
 
-1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modifica il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`. Aggiunge una pila di `if-else` condizioni servlet per mappare lo stile con il nome dell&#39;azione route.
+1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modificare il codice seguente in `/apps/ws/js/runtime/templates/taskdetails.html`. Aggiunge una pila di `if-else` condizioni servlet per mappare lo stile con il nome dell&#39;azione route.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -167,7 +167,7 @@ To
                <%}%>
    ```
 
-1. Apri `/apps/ws/js/registry.js` per la modifica e cercare il testo seguente:
+1. Apri `/apps/ws/js/registry.js` per la modifica e cerca il testo seguente:
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Sostituire il testo con quanto segue:

@@ -48,7 +48,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>parentOid<br type="_moz" /> </td>
    <td>V</td>
-   <td>Contiene l’ID della categoria principale<br type="_moz" /> </td>
+   <td>Contiene un ID della categoria padre<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>startPointsList<br type="_moz" /> </td>
@@ -58,7 +58,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>categoryList</td>
    <td>M</td>
-   <td>Contiene un elenco di categorie figlio dirette di una categoria<br type="_moz" /> </td>
+   <td>Contiene l'elenco delle categorie figlio dirette di una categoria<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -103,7 +103,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>completeTime<br /> </td>
    <td>V</td>
-   <td>Contiene la marca temporale al completamento dell’attività.<br /> </td>
+   <td>Contiene il timestamp del completamento dell'attività.<br /> </td>
   </tr>
   <tr>
    <td>consultGroupId<br /> </td>
@@ -116,9 +116,9 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
    <td>Contiene la marca temporale al momento della creazione dell'attività.<br /> </td>
   </tr>
   <tr>
-   <td>creationId<br /> </td>
+   <td>createId<br /> </td>
    <td>V</td>
-   <td>Contiene l’ID dell’utente che ha creato l’attività.<br /> </td>
+   <td>Contiene l'ID dell'utente che ha creato l'attività.<br /> </td>
   </tr>
   <tr>
    <td>currentAssignment<br /> </td>
@@ -133,12 +133,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>descrizione<br /> </td>
    <td>V</td>
-   <td>Contiene la descrizione dell’attività.<br /> </td>
+   <td>Contiene la descrizione dell'attività.<br /> </td>
   </tr>
   <tr>
    <td>displayName<br /> </td>
    <td>V</td>
-   <td>Contiene il nome visualizzato dell’attività.<br /> </td>
+   <td>Contiene il nome visualizzato dell'attività.<br /> </td>
   </tr>
   <tr>
    <td>forwardGroupId<br /> </td>
@@ -148,7 +148,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>istruzioni<br /> </td>
    <td>V</td>
-   <td>Contiene le istruzioni per un'attività.<br /> </td>
+   <td>Contiene istruzioni per un'attività.<br /> </td>
   </tr>
   <tr>
    <td>isLocked<br /> </td>
@@ -163,7 +163,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>isOpenFullScreen<br /> </td>
    <td>V</td>
-   <td>Se true, all'apertura dell'attività, il modulo assume la schermata completa per la prima volta.<br /> </td>
+   <td>Se è true, all'apertura dell'attività la schermata completa del modulo viene visualizzata per la prima volta.<br /> </td>
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td>
@@ -173,7 +173,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>isShowAttachments<br /> </td>
    <td>V</td>
-   <td>Gli allegati vengono visualizzati se è true.<br /> </td>
+   <td>Gli allegati vengono visualizzati se è vero.<br /> </td>
   </tr>
   <tr>
    <td>isStartTask<br /> </td>
@@ -188,12 +188,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>nextReminder<br /> </td>
    <td>V</td>
-   <td>Timestamp del promemoria successivo.<br /> </td>
+   <td>Timestamp del prossimo promemoria.<br /> </td>
   </tr>
   <tr>
    <td>priorità<br /> </td>
    <td>V</td>
-   <td>Contiene la priorità dell'attività.<br /> 1 = Priorità massima<br /> 2 = Priorità alta<br /> 3 = Priorità normale<br /> 4 = Priorità bassa<br /> 5 = Priorità minima<br /> </td>
+   <td>Contiene la priorità dell'attività.<br /> 1 = Priorità più alta<br /> 2 = Priorità alta<br /> 3 = Priorità normale<br /> 4 = Priorità bassa<br /> 5 = Priorità più bassa<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -208,12 +208,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>reminderCount<br /> </td>
    <td>V</td>
-   <td>Contiene il numero di promemoria per l’attività.<br /> </td>
+   <td>Contiene il numero di promemoria per l'attività.<br /> </td>
   </tr>
   <tr>
    <td>routeList<br /> </td>
    <td>V</td>
-   <td>Contiene un elenco di route associate all'attività. L'utente può completare l'operazione selezionando una qualsiasi delle route dall'elenco delle route.<br /> </td>
+   <td>Contiene un elenco di route associate all'attività. L'utente può completare l'attività selezionando una delle route dall'elenco route.<br /> </td>
   </tr>
   <tr>
    <td>selectedRoute<br /> </td>
@@ -223,7 +223,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>serializedImageTicket<br /> </td>
    <td>V</td>
-   <td>Contiene il ticket immagine corrispondente all’attività. Questo ticket di immagine viene utilizzato nel campo imageUrl dell’attività per ottenere un’immagine per l’attività dal server.<br /> <br /> </td>
+   <td>Contiene il ticket immagine corrispondente all’attività. Questo ticket immagine viene utilizzato nel campo imageUrl dell'attività per ottenere l'immagine per l'attività dal server.<br /> <br /> </td>
   </tr>
   <tr>
    <td>serviceName<br /> </td>
@@ -233,12 +233,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>serviceTitle<br /> </td>
    <td>V</td>
-   <td>Contiene il titolo del servizio per l’attività.<br /> </td>
+   <td>Contiene il titolo del servizio per l'attività.<br /> </td>
   </tr>
   <tr>
    <td>stato<br /> </td>
    <td>V</td>
-   <td>1 = Creato (l'attività viene creata dal punto iniziale).<br /> 2 = Creato e salvato (l'attività viene creata dal punto iniziale e salvata).<br /> 3 = Assegnato (l'attività viene assegnata all'utente dopo l'avvio del processo).<br /> 4 = Assegnato e salvato (l'attività viene assegnata e salvata)<br /> 100 = Completato (l'attività è completata).<br /> 101 = Scaduto (l'attività ha raggiunto la scadenza).<br /> 102 = Terminato<br /> </td>
+   <td>1 = Creato (l'attività viene creata dal punto iniziale).<br /> 2 = Creato e salvato (l'attività viene creata dal punto iniziale e salvata).<br /> 3 = Assegnato (l'attività viene assegnata all'utente dopo l'avvio del processo).<br /> 4 = Assegnato e salvato (l'attività viene assegnata e salvata)<br /> 100 = Completata (attività completata).<br /> 101 = Scaduto (l'attività ha raggiunto la scadenza).<br /> 102 = Terminato<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -248,17 +248,17 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>summaryUrl<br /> </td>
    <td>V</td>
-   <td>Contiene l’URL di riepilogo dell’attività.<br /> </td>
+   <td>Contiene l'URL di riepilogo attività.<br /> </td>
   </tr>
   <tr>
    <td>taskACL<br /> </td>
    <td>V</td>
-   <td>È un elenco di controllo di accesso per un’attività.<br /> </td>
+   <td>È un elenco di controllo di accesso per un'attività.<br /> </td>
   </tr>
   <tr>
    <td>taskId<br /> </td>
    <td>V</td>
-   <td>ID di un’attività.<br /> </td>
+   <td>ID di un'attività.<br /> </td>
   </tr>
   <tr>
    <td>updateTime<br /> </td>
@@ -268,12 +268,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>formUrl<br /> </td>
    <td>M</td>
-   <td>Contiene l’URL del modulo di un’attività.<br /> </td>
+   <td>Contiene l'URL del modulo per un'attività.<br /> </td>
   </tr>
   <tr>
    <td>taskFormType<br /> </td>
    <td>M</td>
-   <td>Contiene il tipo di modulo attività. Utilizzando questo campo, l’attività viene riprodotta sul client come pdf per, modulo SWF e così via.<br /> </td>
+   <td>Contiene il tipo di modulo attività. Utilizzando questo campo, l'attività viene rappresentata sul client come PDF per, modulo SWF e così via.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -283,7 +283,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>showACLActions<br /> </td>
    <td>M</td>
-   <td>Se true, azioni quali inoltra, consulta e condividi sono visibili in Workspace.<br /> </td>
+   <td>Se true, azioni quali inoltra, consulta e condividi sono visibili nell'area di lavoro.<br /> </td>
   </tr>
   <tr>
    <td>supportedOffline<br /> </td>
@@ -298,7 +298,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>readerSubmitOptions<br /> </td>
    <td>M</td>
-   <td>Questo oggetto contiene opzioni utilizzate per inviare moduli pdf tramite lettore nel caso in cui il modulo pdf non contenga alcun pulsante di invio.<br /> </td>
+   <td>Questo oggetto contiene opzioni utilizzate per inviare moduli PDF tramite lettore nel caso in cui il modulo PDF non contenga alcun pulsante di invio.<br /> </td>
   </tr>
   <tr>
    <td>isDefaultImage<br /> </td>
@@ -308,7 +308,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>historyTaskList<br /> </td>
    <td>M</td>
-   <td>Contiene un elenco di attività utilizzate nella scheda della cronologia dei dettagli delle attività.<br /> </td>
+   <td>Contiene un elenco di attività utilizzate nella scheda della cronologia dei dettagli dell'attività.<br /> </td>
   </tr>
   <tr>
    <td>isOwner<br /> </td>
@@ -323,12 +323,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>availableCommands.directCommands<br /> </td>
    <td>M</td>
-   <td>Contiene tutte le azioni del ciclo di lavorazione disponibili per un'attività.<br /> </td>
+   <td>Contiene tutte le azioni di route disponibili per un'attività.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.taskACLCommands<br /> </td>
    <td>M</td>
-   <td>Contiene comandi come inoltra, condividi e consulta se disponibili per un’attività.<br /> </td>
+   <td>Contiene comandi come inoltra, condividi e consulta se disponibili per un'attività.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.otherCommands<br /> </td>
@@ -338,12 +338,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>processInstanceInfo<br /> </td>
    <td>M</td>
-   <td>Contiene informazioni sull'istanza di processo dell'attività.<br /> </td>
+   <td>Contiene informazioni sull'istanza del processo dell'attività.<br /> </td>
   </tr>
   <tr>
    <td>processVariables<br /> </td>
    <td>T<br /> </td>
-   <td>Contiene un array di oggetti di variabili di processo, se presenti.<br /> </td>
+   <td>Contiene la matrice di oggetti delle variabili di processo, se presenti.<br /> </td>
   </tr>
   <tr>
    <td>pendingTasks<br /> </td>
@@ -353,12 +353,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>userActions<br /> </td>
    <td>M</td>
-   <td>È un array di oggetti. Ogni oggetto contiene dettagli sulla route e il relativo messaggio di conferma, se presente.<br /> </td>
+   <td>È un array di oggetti. Ogni oggetto contiene dettagli sulla route e il messaggio di conferma corrispondente, se presente.<br /> </td>
   </tr>
   <tr>
    <td>dataUrl<br /> </td>
    <td>M</td>
-   <td>Si tratta dell’URL per i dati del modulo di un’attività.<br /> </td>
+   <td>URL per i dati del modulo di un'attività.<br /> </td>
   </tr>
   <tr>
    <td>externalAppConfig<br /> </td>
@@ -373,7 +373,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>allegati<br /> </td>
    <td>M</td>
-   <td>Elenco degli allegati di un'attività.<br /> </td>
+   <td>Elenco degli allegati per un'attività.<br /> </td>
   </tr>
   <tr>
    <td>assegnazioni<br /> </td>
@@ -397,7 +397,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>isDefault <br type="_moz" /> </td>
    <td>V</td>
-   <td>True se la coda è la coda predefinita dell'utente connesso, in caso contrario false.<br type="_moz" /> </td>
+   <td>True se la coda è la coda predefinita dell'utente connesso, altrimenti false.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>nome<br type="_moz" /> </td>
@@ -412,17 +412,17 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>tipo</td>
    <td>V</td>
-   <td>Contiene il tipo di coda.<br /> 0 - Coda utenti.<br /> 1. Coda condivisa.<br /> 2. Coda di gruppo.<br type="_moz" /> </td>
+   <td>Contiene il tipo di coda.<br /> 0 - Coda utenti.<br /> 1 Coda condivisa.<br /> 2. Coda gruppo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
    <td>M</td>
-   <td>Contiene una query associata a un filtro. Questa query viene utilizzata per cercare le attività dall'elenco delle attività completo.<br type="_moz" /> </td>
+   <td>Contiene una query associata a un filtro. Questa query viene utilizzata per cercare le attività dall'elenco attività completo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>attività</td>
    <td>M</td>
-   <td>Contiene un elenco di tutte le attività che appartengono a un filtro.<br type="_moz" /> </td>
+   <td>Contiene l'elenco di tutte le attività che appartengono a un filtro.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -456,7 +456,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>outOfOfficeDesignate<br type="_moz" /> </td>
    <td>V</td>
-   <td>Contiene i dettagli dell’utente assegnato come principale designato dall’utente.<br type="_moz" /> </td>
+   <td>Contiene i dettagli dell'utente assegnato come primario designato dall'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
@@ -466,12 +466,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>processi<br type="_moz" /> </td>
    <td>M</td>
-   <td>Contiene un elenco di tutti i processi disponibili per l’utente.<br type="_moz" /> </td>
+   <td>Contiene un elenco di tutti i processi disponibili per l'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>initialOutOfOfficeSettings<br type="_moz" /> </td>
    <td>M</td>
-   <td>Contiene le impostazioni fuori sede iniziali dell’utente che vengono recuperate inizialmente.<br type="_moz" /> </td>
+   <td>Contiene le impostazioni fuori sede iniziali dell'utente recuperate inizialmente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>outOfOfficeSettings<br type="_moz" /> </td>
@@ -481,7 +481,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
    <td>M</td>
-   <td>Contiene un elenco di utenti in cui un utente connesso esegue la ricerca fino alla data specificata.<br type="_moz" /> </td>
+   <td>Contiene un elenco di utenti in cui un utente connesso esegue la ricerca fino alla data corrente.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -505,7 +505,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>iniziatore</td>
    <td>V</td>
-   <td>Nome dell'iniziatore di un'istanza di processo.<br type="_moz" /> </td>
+   <td>Nome dell'iniziatore di un'istanza del processo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>initiatorId</td>
@@ -515,17 +515,17 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>processCompleteTime<br type="_moz" /> </td>
    <td>V</td>
-   <td>Timestamp al termine del processo.<br type="_moz" /> </td>
+   <td>Timestamp al completamento del processo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processInstanceId<br type="_moz" /> </td>
    <td>V</td>
-   <td>ID dell’istanza del processo.<br type="_moz" /> </td>
+   <td>ID dell'istanza del processo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td>
    <td>V</td>
-   <td>0 = Avviato<br /> 1 = In esecuzione<br /> 2 = Completo<br /> 3 = Completamento<br /> 4 = Terminato<br /> 5 = Terminazione<br /> 6 = Sospeso<br /> 7 = Sospensione<br /> 8 = Annullamento sospensione<br type="_moz" /> </td>
+   <td>0 = Avviato<br /> 1 = In Esecuzione<br /> 2 = Completato<br /> 3 = Completato<br /> 4 = Terminato<br /> 5 = Terminato<br /> 6 = Sospeso<br /> 7 = In Sospensione<br /> 8 = In Sospensione<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td>
@@ -540,12 +540,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>processVariables<br type="_moz" /> </td>
    <td>V</td>
-   <td>Array di oggetti delle variabili di processo. Ogni oggetto variabile di processo contiene il nome, che è il nome della variabile di processo, il valore, che è il valore della variabile di processo e il tipo, che è il tipo di variabile di processo.<br type="_moz" /> </td>
+   <td>Array di oggetti delle variabili di processo. Ogni oggetto variabile di processo contiene il nome, che è il nome della variabile di processo, il valore, che è il valore della variabile di processo e il tipo, che è il tipo della variabile di processo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>elenco attività<br type="_moz" /> </td>
    <td>M</td>
-   <td>Attività generate da questa istanza di processo.<br type="_moz" /> </td>
+   <td>Attività generate da questa istanza del processo.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -606,7 +606,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>V</td>
-   <td>0 = Assegnazione iniziale<br /> 1 = Inoltra (l'attività è stata inoltrata al proprietario corrente dell'attività).<br /> 2 = Restituita (l'attività è stata restituita al proprietario corrente dell'attività dal proprietario precedente dell'attività).<br /> 3 = Richiesto (l'attività è stata richiesta dall'attuale proprietario dell'attività).<br /> 4 = Riassegnazione (l'attività è stata assegnata al proprietario corrente dell'attività dopo la riassegnazione)<br /> 5 = Amministratore assegnato (l'attività è stata assegnata dall'amministratore al proprietario corrente dell'attività).<br /> 6 = Consultato (l'attività è stata consultata dall'attuale proprietario).<br type="_moz" /> </td>
+   <td>0 = Assegnazione iniziale<br /> 1 = Inoltra (l'attività è stata inoltrata al proprietario corrente dell'attività).<br /> 2 = Restituita (l'attività è stata restituita al proprietario corrente dell'attività dal proprietario precedente).<br /> 3 = Richiesto (l'attività è stata richiesta dal proprietario corrente dell'attività).<br /> 4 = riassegnazione (l'attività è stata assegnata al proprietario corrente dell'attività dopo l'escalation)<br /> 5 = Amministratore assegnato (l'attività è stata assegnata dall'amministratore al proprietario corrente dell'attività).<br /> 6 = Consultato ( L'attività è stata consultata dall'attuale proprietario)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
@@ -616,7 +616,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>queueId<br type="_moz" /> </td>
    <td>V</td>
-   <td>ID della coda del proprietario corrente dell'attività.<br type="_moz" /> </td>
+   <td>ID coda del proprietario corrente dell'attività.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>queueOwner<br type="_moz" /> </td>
@@ -689,17 +689,17 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>creationDate<br type="_moz" /> </td>
    <td>V</td>
-   <td>Timestamp della creazione dell’allegato.<br type="_moz" /> </td>
+   <td>Timestamp al momento della creazione dell'allegato.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>creatorId<br type="_moz" /> </td>
    <td>V</td>
-   <td>ID dell’utente che ha aggiunto l’allegato.<br type="_moz" /> </td>
+   <td>ID dell'utente che ha aggiunto l'allegato.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>creatorName<br type="_moz" /> </td>
    <td>V</td>
-   <td>Nome dell’utente che ha aggiunto l’allegato.<br type="_moz" /> </td>
+   <td>Nome dell'utente che ha aggiunto l'allegato.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>descrizione<br type="_moz" /> </td>
@@ -707,19 +707,19 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
    <td>Descrizione dell'allegato.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>fileName<br type="_moz" /> </td>
+   <td>nomeFile<br type="_moz" /> </td>
    <td>V</td>
    <td>Nome dell'allegato.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>id<br type="_moz" /> </td>
    <td>V</td>
-   <td>ID dell’allegato.<br type="_moz" /> </td>
+   <td>ID dell'allegato.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>lastModifiedDate<br type="_moz" /> </td>
    <td>V</td>
-   <td>Timestamp dell’ultima modifica dell’allegato.<br type="_moz" /> </td>
+   <td>Timestamp dell'ultima modifica dell'allegato.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>noteExtended<br type="_moz" /> </td>
@@ -744,22 +744,22 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>tipo<br type="_moz" /> </td>
    <td>V</td>
-   <td>Il testo è un allegato per i file e il testo è una nota per le note.<br type="_moz" /> </td>
+   <td>Il tipo è allegato per i file e il tipo è nota per le note.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td>
    <td>M</td>
-   <td>Contiene la data di creazione dell’allegato in base alle impostazioni dell’interfaccia utente.<br type="_moz" /> </td>
+   <td>Contiene la data di creazione dell'allegato in base alle impostazioni dell'interfaccia utente dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>formattedDescription<br type="_moz" /> </td>
    <td>M</td>
-   <td>Descrizione dell'allegato formattato. Utilizzato per visualizzare caratteri speciali presenti nella descrizione dell’allegato nell’area di lavoro di AEM Forms.<br type="_moz" /> </td>
+   <td>Descrizione dell'allegato formattato. Utilizzato per visualizzare caratteri speciali presenti nella descrizione dell'allegato nell'area di lavoro AEM Forms.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>formattedFileName<br type="_moz" /> </td>
    <td>M</td>
-   <td>Nome allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nel nome dell’allegato nell’area di lavoro di AEM Forms. Questo è solo per le note.<br type="_moz" /> </td>
+   <td>Nome allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nel nome dell’allegato nell’area di lavoro di AEM Forms. Solo per le note.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -783,7 +783,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>commonName<br type="_moz" /> </td>
    <td>V</td>
-   <td>Nome comune dell’utente.<br type="_moz" /> </td>
+   <td>Nome comune dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>descrizione<br type="_moz" /> </td>
@@ -793,17 +793,17 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>directGroupMemberships<br type="_moz" /> </td>
    <td>V</td>
-   <td>Elenco dei gruppi di utenti.<br type="_moz" /> </td>
+   <td>Elenco del gruppo di utenti.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>displayName<br type="_moz" /> </td>
    <td>V</td>
-   <td>Nome visualizzato dell’utente.<br type="_moz" /> </td>
+   <td>Nome visualizzato dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>email<br type="_moz" /> </td>
+   <td>e-mail<br type="_moz" /> </td>
    <td>V</td>
-   <td>ID e-mail dell’utente.<br type="_moz" /> </td>
+   <td>ID e-mail dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
@@ -813,7 +813,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>lastName<br type="_moz" /> </td>
    <td>V</td>
-   <td>Cognome dell’utente.<br type="_moz" /> </td>
+   <td>Cognome dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>firstName<br type="_moz" /> </td>
@@ -823,12 +823,12 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>oid<br type="_moz" /> </td>
    <td>V</td>
-   <td>ID dell’utente.<br type="_moz" /> </td>
+   <td>ID dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>org<br type="_moz" /> </td>
    <td>V</td>
-   <td>Nome dell’organizzazione dell’utente.<br type="_moz" /> </td>
+   <td>Nome dell'organizzazione dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>postalAddress<br type="_moz" /> </td>
@@ -838,15 +838,15 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>telefono<br type="_moz" /> </td>
    <td>V</td>
-   <td>Numero di contatto dell’utente.<br type="_moz" /> </td>
+   <td>Numero di contatto dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>phoneNumber<br type="_moz" /> </td>
    <td>V</td>
-   <td>Numero di contatto dell’utente.<br type="_moz" /> </td>
+   <td>Numero di contatto dell'utente.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>userid<br type="_moz" /> </td>
+   <td>id utente<br type="_moz" /> </td>
    <td>V</td>
    <td>ID di accesso dell'utente.<br type="_moz" /> </td>
   </tr>

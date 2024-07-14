@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Configurazione delle code condivise{#configuring-shared-queues}
 
-Le code condivise consentono di configurare e gestire in modo efficace le code utente. Una coda di utenti è costituita semplicemente da tutte le operazioni assegnate a un utente. Vedere [Elenchi attività](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) per ulteriori informazioni. Puoi assegnare, annullare l’assegnazione e riassegnare le code degli utenti in base alle tue esigenze organizzative. È possibile gestire le code condivise in due modi:
+Le code condivise consentono di configurare e gestire in modo efficace le code utente. Una coda di utenti è costituita semplicemente da tutte le attività assegnate a un utente. Per ulteriori informazioni, vedere [Elenchi attività](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html). Puoi assegnare, annullare l’assegnazione e riassegnare le code degli utenti in base alle tue esigenze organizzative. È possibile gestire le code condivise in due modi:
 
-**Gestire L’Accesso A Un Utente**
+**Gestire L&#39;Accesso A Un Utente**
 
 Con questa opzione è possibile gestire l’accesso a una coda di utenti selezionata.
 
-**Gestire L’Accesso Di Un Utente**
+**Gestire L&#39;Accesso Da Parte Di Un Utente**
 
 Questa opzione consente di gestire le code condivise assegnate a un utente selezionato.
 
@@ -36,12 +36,12 @@ Una volta condivise, queste attività possono essere completate dall’utente, c
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione con moduli AEM.
+>Flex Workspace è obsoleto per il rilascio di moduli AEM.
 
 ### Configurazione dell’accesso a una coda di utenti selezionata {#configuring-access-to-a-selected-user-queue}
 
 1. Accedere alla console di amministrazione utilizzando un account Administrator.
-1. Seleziona **Servizi** > **Forms Workflow** > **Coda condivisa**.
+1. Selezionare **Servizi** > **Forms Workflow** > **Coda condivisa**.
 
 1. Nella scheda Gestisci accesso a un utente individuare e selezionare l&#39;utente di cui si desidera condividere la coda. In qualsiasi punto, nel riquadro in basso a destra viene visualizzato l’elenco degli utenti con accesso alla coda di utenti selezionata.
 1. Nel riquadro in basso a sinistra, individua e seleziona l’utente. Fai clic su Condividi.
@@ -50,7 +50,7 @@ Una volta condivise, queste attività possono essere completate dall’utente, c
 ### Revoca dell&#39;accesso a una coda di utenti selezionata {#revoking-access-to-a-selected-user-queue}
 
 1. Accedere alla console di amministrazione utilizzando un account Administrator.
-1. Seleziona **Servizi** > **Forms Workflow** > **Coda condivisa**.
+1. Selezionare **Servizi** > **Forms Workflow** > **Coda condivisa**.
 
 1. Nella scheda Gestione accesso a un utente individuare e selezionare l&#39;utente di cui si desidera gestire la coda.
 1. Nel riquadro in basso a destra viene visualizzato l’elenco degli utenti con accesso alla coda di utenti selezionata. Seleziona l’utente e fai clic su Revoca.
@@ -64,12 +64,12 @@ Una volta assegnate, queste attività possono essere completate dall’utente ut
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione con moduli AEM.
+>Flex Workspace è obsoleto per il rilascio di moduli AEM.
 
 ### Concessione dell’accesso a una coda di utenti selezionata {#granting-access-to-a-selected-user-queue}
 
 1. Accedere alla console di amministrazione utilizzando un account Administrator.
-1. Seleziona **Servizi** > **Forms Workflow** > **Coda condivisa**.
+1. Selezionare **Servizi** > **Forms Workflow** > **Coda condivisa**.
 
 1. Nella scheda Gestisci accesso a un utente, individua e seleziona l’utente di cui desideri condividere la coda. In qualsiasi punto, nel riquadro in basso a destra viene visualizzato l’elenco degli utenti con accesso alla coda di utenti selezionata.
 1. Nel riquadro in basso a sinistra, individuare e selezionare le code utente da condividere con l&#39;utente selezionato. Fai clic su Condividi.
@@ -78,7 +78,7 @@ Una volta assegnate, queste attività possono essere completate dall’utente ut
 ### Revoca dell&#39;accesso a una coda di utenti selezionata {#revoking_access_to_a_selected_user_queue-1}
 
 1. Accedere alla console di amministrazione utilizzando un account Administrator.
-1. Seleziona **Servizi** > **Forms Workflow** > **Coda condivisa**.
+1. Selezionare **Servizi** > **Forms Workflow** > **Coda condivisa**.
 
 1. Nella scheda Gestisci l&#39;accesso di un utente individuare e selezionare l&#39;utente di cui si desidera gestire la coda.
 1. Nel riquadro inferiore destro viene visualizzato l&#39;elenco delle code utente assegnate all&#39;utente selezionato. Seleziona la coda utente e fai clic su Revoca.

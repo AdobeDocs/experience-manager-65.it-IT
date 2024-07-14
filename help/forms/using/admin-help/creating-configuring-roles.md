@@ -22,9 +22,9 @@ Utilizzando le pagine Web Gestione utente, è possibile associare utenti e grupp
 
 Gestione utenti dispone di due tipi di ruoli:
 
-**Ruoli modificabili:** È possibile modificare ed eliminare questo tipo di ruolo e aggiungere ed eliminare autorizzazioni di ruolo da questi tipi di ruolo. Qualsiasi ruolo creato viene considerato mutabile. Puoi aggiungere o rimuovere utenti e gruppi assegnati a ruoli modificabili.
+**Ruoli modificabili:** È possibile modificare ed eliminare questo tipo di ruolo e aggiungere ed eliminare le autorizzazioni di ruolo da questi tipi di ruolo. Qualsiasi ruolo creato viene considerato mutabile. Puoi aggiungere o rimuovere utenti e gruppi assegnati a ruoli modificabili.
 
-**Ruoli immutabili:** I ruoli predefiniti inclusi in Gestione utente sono ruoli immutabili. Non è possibile modificare o eliminare questi ruoli. Tuttavia, puoi aggiungere o rimuovere utenti e gruppi assegnati a ruoli immutabili.
+**Ruoli immutabili:** I ruoli predefiniti inclusi in Gestione utenti non sono modificabili. Non è possibile modificare o eliminare questi ruoli. Tuttavia, puoi aggiungere o rimuovere utenti e gruppi assegnati a ruoli immutabili.
 
 I ruoli mutabili e immutabili possono essere creati anche tramite le API dei moduli AEM.
 
@@ -32,67 +32,67 @@ I ruoli mutabili e immutabili possono essere creati anche tramite le API dei mod
 
 I seguenti ruoli predefiniti sono inclusi nel database User Management.
 
-**console di amministrazione Utente:** Può accedere alla console di amministrazione.
+**console di amministrazione Utente:** può accedere alla console di amministrazione.
 
-**Amministratore applicazioni:** Può utilizzare tutte le funzioni di Workbench. È possibile utilizzare le pagine Applicazioni e servizi della console di amministrazione per configurare le proprietà, gli endpoint e la sicurezza del runtime del servizio.
+**Amministratore applicazioni:** può utilizzare tutte le funzionalità di Workbench. È possibile utilizzare le pagine Applicazioni e servizi della console di amministrazione per configurare le proprietà, gli endpoint e la sicurezza del runtime del servizio.
 
-**Amministratore di moduli AEM:** Può eseguire tutte le attività per tutti i servizi installati.
+**L&#39;amministratore dei moduli AEM:** può eseguire tutte le attività per tutti i servizi installati.
 
-**Amministratore sicurezza:** Controlla le impostazioni di User Management e gestisce gli utenti e i gruppi associati a qualsiasi dominio User Manager
+**Amministratore sicurezza:** controlla le impostazioni di gestione utente e gestisce gli utenti e i gruppi associati a qualsiasi dominio di User Manager
 
-**Utente servizi:** Può visualizzare e richiamare qualsiasi servizio
+**Utente servizi:** può visualizzare e richiamare qualsiasi servizio
 
-**Amministratore privilegiato:** Ha accesso a tutte le funzionalità amministrative del sistema, inclusi i servizi
+**Amministratore privilegiato:** ha accesso a tutte le funzionalità amministrative del sistema, inclusi i servizi
 
-**Amministratore fonti attendibili:** Consente di gestire le impostazioni di attendibilità PKI e le credenziali PKI gestite dalla pagina Gestione archivio fonti attendibili nella console di amministrazione
+**Amministratore attendibilità:** può gestire le impostazioni di attendibilità PKI e le credenziali PKI gestite dalla pagina Gestione archivio attendibilità nella console di amministrazione
 
 ### Ruoli predefiniti aggiuntivi {#additional-default-roles}
 
 A seconda dei componenti dei moduli AEM installati, è possibile includere i seguenti ruoli predefiniti
 
-**Utente applicazione caricamento documento:** È possibile caricare documenti utilizzando la funzione di comunicazione remota di Flex.
+**Utente applicazione di caricamento documento:** può caricare documenti con Flex Remoting.
 
-**Amministratore Forms:** Può visualizzare e modificare le impostazioni dalla pagina Forms in Admin Console
+**Amministratore Forms:** può visualizzare e modificare le impostazioni dalla pagina Forms in Administration Console
 
-**Amministratore dello spazio dei contenuti di AEM forms:** È possibile visualizzare e modificare le impostazioni dalla pagina Content Services (obsoleto) nella console di amministrazione
+**L&#39;amministratore dello spazio dei contenuti dei moduli AEM:** può visualizzare e modificare le impostazioni dalla pagina Content Services (obsoleto) nella console di amministrazione
 
-**L’AEM forma l’utente di Content Space:** Può accedere alle pagine web di Contentspace (obsoleto)
+**L&#39;AEM forma lo spazio dei contenuti Utente:** Può accedere alle pagine Web dello spazio dei contenuti (obsoleto)
 
-**Documentum Connector Administrator:** Possibilità di visualizzare e modificare le impostazioni dalla pagina Connettore per EMC Documentum nella console di amministrazione
+**Documentum Connector Administrator:** può visualizzare e modificare le impostazioni dalla pagina Connector per EMC Documentum nella console di amministrazione
 
-**Amministratore di FileNet Connector per AEM forms:** Può visualizzare e modificare le impostazioni dalla pagina Connettore per IBM FileNet nella console di amministrazione
+**L&#39;amministratore del connettore FileNet di AEM forms:** può visualizzare e modificare le impostazioni dalla pagina Connettore per IBM FileNet nella console di amministrazione
 
-**L’AEM forma l’amministratore del connettore IBM CM:** Può visualizzare e modificare le impostazioni dalla pagina Connettore per IBM Content Manager nella console di amministrazione
+**L&#39;AEM forma l&#39;amministratore del connettore IBM CM:** può visualizzare e modificare le impostazioni dalla pagina Connettore per IBM Content Manager nella console di amministrazione
 
-**Amministratore Rights Management:** Esegue tutte le attività necessarie per tutte le configurazioni server nelle pagine di Rights Management pertinenti
+**Amministratore di Rights Management:** esegue tutte le attività necessarie per tutte le configurazioni del server nelle pagine di Rights Management pertinenti
 
-**Utente finale Rights Management:** Può accedere alle pagine web degli utenti finali del Rights Management
+**Utente finale Rights Management:** può accedere alle pagine Web dell&#39;utente finale del Rights Management
 
-**Utente invito Rights Management:** Può invitare utenti
+**Invita utente Rights Management:** può invitare utenti
 
-**Gestione Rights Management utenti invitati e locali:** Può eseguire le attività necessarie per gestire tutti gli utenti invitati e locali sulle pagine di Rights Management pertinenti
+**Rights Management Gestisci utenti invitati e locali:** può eseguire le attività necessarie per gestire tutti gli utenti invitati e locali nelle pagine di Rights Management pertinenti
 
-**Amministratore set di criteri di Rights Management:** Esegue tutte le attività necessarie per tutti i set di criteri nelle pagine di Rights Management pertinenti
+**Amministratore set di criteri di Rights Management:** esegue tutte le attività necessarie per tutti i set di criteri nelle relative pagine di Rights Management
 
-**Amministratore privilegiato Rights Management:** Esegue tutte le attività necessarie dalla pagina Rights Management
+**Amministratore privilegiato Rights Management:** esegue tutte le attività necessarie dalla pagina Rights Management
 
-**Amministratore di Workspace per AEM Forms:** Può visualizzare e modificare le impostazioni dalla pagina Workspace in Administration Console
+**L&#39;amministratore di Workspace di AEM forms:** può visualizzare e modificare le impostazioni dalla pagina Workspace in Administration Console
 
-***nota **: Flex Workspace è obsoleto per il rilascio di moduli AEM.*
+***nota **: l&#39;area di lavoro Flex è obsoleta per la versione dei moduli AEM.*
 
-**Utente Workspace:** Può accedere all’applicazione per utenti finali di Workspace
+**Utente Workspace:** può accedere all&#39;applicazione dell&#39;utente finale Workspace
 
-**Amministratore di output:** Può visualizzare e modificare le impostazioni dalla pagina Output in Admin Console
+**Amministratore di output:** può visualizzare e modificare le impostazioni dalla pagina Output in Administration Console
 
-**Amministratore PDFG:** Può visualizzare e modificare le impostazioni dalla pagina PDF Generator nella console di amministrazione
+**Amministratore PDFG:** può visualizzare e modificare le impostazioni dalla pagina PDF Generator nella console di amministrazione
 
-**Utente PDF:** Può accedere a tutte le funzionalità non amministrative di PDF Generator
+**Utente PDFG:** può accedere a tutte le funzionalità non amministrative per PDF Generator
 
-**Applicazione Web per estensioni Acrobat Reader DC:** Può utilizzare l’applicazione web Acrobat Reader DC extensions
+**Applicazione Web per estensioni Acrobat Reader DC:** può utilizzare l&#39;applicazione Web per estensioni Acrobat Reader DC
 
 >[!NOTE]
 >
->Gli utenti con determinati tipi di privilegi di amministratore non possono accedere alle pagine Web degli utenti finali di Workspace per motivi di sicurezza. Poiché queste pagine possono esistere all&#39;esterno di un firewall, consentire attività a livello di amministrazione potrebbe rappresentare un rischio per la sicurezza. Solo gli utenti che dispongono dei privilegi di Amministratore di Workspace per i moduli AEM o di Utente di Workspace per i moduli AEM possono accedere alle pagine Web degli utenti finali di Workspace.
+>Gli utenti con determinati tipi di privilegi di amministratore non possono accedere alle pagine Web degli utenti finali di Workspace per motivi di sicurezza. Poiché queste pagine possono esistere all&#39;esterno di un firewall, consentire attività a livello di amministrazione potrebbe rappresentare un rischio per la sicurezza. Solo gli utenti che dispongono dei privilegi di amministratore di Workspace per i moduli AEM o di utente Workspace per i moduli AEM possono accedere alle pagine Web degli utenti finali di Workspace.
 
 >[!NOTE]
 >
@@ -180,135 +180,135 @@ Puoi modificare le autorizzazioni per qualsiasi ruolo creato. Non è possibile m
 
 **ADD_REMOVE_ENDPOINT_PERM:** Aggiungere, rimuovere e modificare endpoint per un servizio
 
-**Accesso Admin Console:** Visualizzare la console di amministrazione
+**Accesso Admin Console:** Visualizza la console di amministrazione
 
 **Modifica certificato:** Modificare le impostazioni di attendibilità di qualsiasi certificato nell&#39;archivio fonti attendibili
 
-**Lettura certificato:** Leggi qualsiasi certificato nell&#39;archivio fonti attendibili
+**Lettura certificato:** Lettura di qualsiasi certificato nell&#39;archivio fonti attendibili
 
 **Scrittura certificato:** Aggiungere un certificato all&#39;archivio fonti attendibili
 
 **Aggiunta componente:** Installare un nuovo componente nel sistema
 
-**Eliminazione componente:** Elimina qualsiasi componente nel sistema
+**Eliminazione componente:** Eliminare qualsiasi componente nel sistema
 
-**Lettura componente:** Leggi qualsiasi componente del sistema
+**Lettura componente:** Lettura di qualsiasi componente nel sistema
 
-**Amministratore area contenuti:** Autorizzazione per l&#39;amministratore di Contentspace (obsoleto)
+**Amministratore di Contentspace:** Autorizzazione per l&#39;amministratore di Contentspace (obsoleto)
 
-**Accesso alla console Contentspace:** Autorizzazione per l’accesso alla console Spazio dei contenuti (obsoleto)
+**Accesso alla console Contentspace:** Autorizzazione per l&#39;accesso alla console Contentspace (obsoleto)
 
-**Controllo impostazioni core:** Gestisci le impostazioni nella pagina Impostazioni sistema core di Administration Console
+**Controllo impostazioni di base:** Gestisci le impostazioni nella pagina Impostazioni sistema di base di Administration Console
 
-**CREATE_VERSION_PERM:** Creare una versione di un servizio
+**CREATE_VERSION_PERM:** Crea una versione di un servizio
 
 **Modifica credenziali:** Modificare le credenziali di firma nell&#39;archivio fonti attendibili
 
-**Lettura credenziali:** Leggere le credenziali di firma nell&#39;archivio fonti attendibili
+**Credenziali lette:** Leggere le credenziali di firma nell&#39;archivio fonti attendibili
 
-**Scrittura credenziali:** Aggiungi credenziali di firma all&#39;archivio fonti attendibili
+**Scrittura credenziali:** Aggiungere una credenziale di firma all&#39;archivio fonti attendibili
 
-**Modifica CRL:** Modificare un elenco di revoche di certificati (CRL) nell’archivio fonti attendibili
+**Modifica CRL:** Modificare qualsiasi CRL (elenco di revoche di certificati) nell&#39;archivio fonti attendibili
 
-**Lettura CRL:** Leggi qualsiasi CRL nell’archivio fonti attendibili
+**Lettura CRL:** Lettura di qualsiasi CRL nell&#39;archivio fonti attendibili
 
 **Scrittura CRL:** Aggiungere un CRL all&#39;archivio fonti attendibili
 
-**Delega:** Impostare un ACL su una risorsa
+**Delega:** Imposta un ACL su una risorsa
 
 **DELETE_VERSION_PERM:** Eliminare una versione di un servizio
 
-**Caricamento documento:** Caricare documenti nei moduli AEM
+**Caricamento documento:** Caricamento documenti in moduli AEM
 
-**Controllo dominio:** Creare, eliminare o modificare le impostazioni per qualsiasi dominio di User Management, inclusi i relativi provider di autenticazione e directory
+**Controllo dominio:** Creare, eliminare o modificare le impostazioni per qualsiasi dominio di gestione utenti, inclusi i provider di autenticazione e directory
 
-**Modifica tipo evento:** Modifica in tipi di evento
+**Modifica tipo evento:** Modifica tipi evento
 
-**Controllo rappresentazione identità:** Rappresenta l’identità in User Manager
+**Controllo rappresentazione identità:** Impersona in User Manager
 
 **INVOKE_PERM:** Richiama tutte le operazioni su un servizio
 
-**Controllo modello dati LCDS:** Lettura e distribuzione di modelli dati in Data Services
+**Controllo modello dati LCDS:** leggere e distribuire modelli dati in Data Services
 
-**Aggiornamento License Manager:** Aggiorna informazioni licenza
+**Aggiornamento gestione licenze:** Aggiornare le informazioni sulla licenza
 
 **MODIFY_CONFIG_PERM:** Modificare la configurazione di un servizio
 
 **TERMINE** Modificare la versione di un servizio
 
-**PDFGAdminPermission:** Amministratore PDFG
+**PDFGAdminPermission:** amministratore PDFG
 
-**PDFGUserPermission:** Utente PDFG
+**PDFGUserPermission:** utente PDFG
 
 **PERM_DCTM_ADMIN:** Amministratore Documentum Connector
 
-**PERM_FILENET_ADMIN** Amministratore di FileNet Connector
+**PERM_FILENET_ADMIN:** Amministratore di FileNet Connector
 
-**PERM_FORMS_ADMIN:** Amministratore Forms
+**PERM_FORMS_ADMIN:** amministratore Forms
 
 **PERM_IBMCM_ADMIN:** Amministratore del connettore IBM CM
 
 **PERM_OUTPUT_ADMIN:** Amministratore di output
 
-**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Utilizzare l’applicazione web Acrobat Reader DC extensions
+**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Utilizza l&#39;applicazione Web Acrobat Reader DC extensions
 
-**PERM_SP_ADMIN:** Gestione impostazioni connettore SharePoint
+**PERM_SP_ADMIN:** Gestisci impostazioni connettore SharePoint
 
-**PERM_WORKSPACE_ADMIN:** Gestisci impostazioni area di lavoro
+**PERM_WORKSPACE_ADMIN:** Gestisci impostazioni Workspace
 
-**PERM_WORKSPACE_USER:** Accedere all’applicazione per l’utente finale di Workspace
+**PERM_WORKSPACE_USER:** Accedi all&#39;applicazione dell&#39;utente finale di Workspace
 
-**Controllo principale:** Gestisci utenti e gruppi per qualsiasi dominio e gestisci le assegnazioni dei ruoli per tutti gli utenti e i gruppi in qualsiasi dominio
+**Controllo entità:** Consente di gestire utenti e gruppi per qualsiasi dominio e di gestire le assegnazioni dei ruoli per tutti gli utenti e i gruppi in qualsiasi dominio
 
-**Elabora registrazione lettura/eliminazione:** Elencare e recuperare le istanze di controllo del flusso di lavoro
+**Elabora registrazione Lettura/eliminazione:** Elenca e recupera le istanze di controllo del flusso di lavoro
 
-**PROCESS_OWNER_PERM:** Visualizzare i dati sulle tendenze ed eseguire azioni amministrative su un servizio creato da un processo
+**PROCESS_OWNER_PERM:** Visualizza i dati sulle tendenze ed esegue azioni amministrative su un servizio creato da un processo
 
-**Leggi:** Leggere il contenuto di una risorsa
+**Lettura:** lettura del contenuto di una risorsa
 
-**READ_PERM:** Lettura o visualizzazione di un servizio
+**READ_PERM:** Leggi o visualizza un servizio
 
-**Rinnova asserzione:** Rinnovare le asserzioni in Gestione utente
+**Rinnova asserzione:** Rinnova asserzioni in Gestione utenti
 
-**Delegato archivio:** Impostare un ACL su una risorsa
+**Delegato archivio:** Imposta un ACL su una risorsa
 
-**Lettura archivio:** Leggere il contenuto di una risorsa
+**Lettura archivio:** Lettura del contenuto di una risorsa
 
 **Archivio trasversale:** Includere una risorsa in una richiesta di risorse elenco o leggere i metadati di una risorsa
 
-**Scrittura archivio:** Scrittura di metadati e contenuti dell’archivio
+**Scrittura archivio:** Scrittura metadati e contenuto archivio
 
-**Proprietario criteri di modifica Rights Management:** Modifica proprietario criterio
+**Proprietario criteri di modifica di Rights Management:** Modifica proprietario criteri
 
-**Accesso console utenti finali Rights Management:** Accedi all’interfaccia utente utente del Rights Management
+**Accesso alla console dell&#39;utente finale del Rights Management:** Accesso all&#39;interfaccia utente dell&#39;utente finale del Rights Management
 
-**Configurazione gestione Rights Management:** Gestisci configurazione server
+**Rights Management Gestisci configurazione:** Gestisci configurazione server
 
-**Gestione Rights Management utenti invitati e locali:** Gestire gli utenti invitati e locali
+**Rights Management Gestisci utenti invitati e locali:** Gestisci utenti invitati e locali
 
-**Rights Management Gestisci set di criteri:** Gestire tutte le policy e i documenti all’interno di qualsiasi set di policy
+**Rights Management Gestisci set di criteri:** Gestisci tutti i criteri e i documenti in qualsiasi set di criteri
 
-**Aggiungi coordinatore set di criteri di Rights Management:** Aggiungere, rimuovere e modificare le autorizzazioni per i coordinatori di set di criteri
+**Coordinatore aggiunta set di criteri di Rights Management:** Aggiungere, rimuovere e modificare le autorizzazioni per i coordinatori set di criteri
 
-**Criteri di Rights Management Imposta Crea criterio:** Creare un criterio per un set di criteri
+**Criteri di Rights Management Imposta Crea criterio:** Crea un criterio per un set di criteri
 
-**Criterio di Rights Management Imposta criteri di eliminazione:** Rimuovere un criterio da un set di criteri
+**Criterio di Rights Management:** Rimuovere un criterio da un set di criteri
 
-**Criterio di Rights Management Imposta criteri di modifica:** Modificare un criterio in un set di criteri
+**Criterio di Rights Management Imposta modifica criterio:** Modificare un criterio in un set di criteri
 
-**Criteri di Rights Management Imposta Gestisci autore documento:** Quando si creano i set di criteri, si assegna agli utenti il ruolo di autore del documento. L’autore del documento è l’utente che lo protegge mediante una policy.
+**Criteri di Rights Management Gestisci autore documento:** Quando si creano i set di criteri, si assegna agli utenti il ruolo di autore del documento. L’autore del documento è l’utente che lo protegge mediante una policy.
 
-**Coordinatore rimozione set di criteri di Rights Management:** Rimuovere un coordinatore di set di criteri da un set di criteri
+**Coordinatore rimozione set di criteri di Rights Management:** Rimuovere un coordinatore set di criteri da un set di criteri
 
-**Documento set di criteri di Rights Management:** Revoca dell’accesso ai documenti di un set di criteri
+**Set di criteri di Rights Management: revoca documento:** Revoca dell&#39;accesso ai documenti in un set di criteri
 
-**Criterio di Rights Management Imposta criteri:** Cambiare criteri per un documento
+**Criteri di Rights Management:** Criteri di cambio per un documento
 
-**Documento annullamento revoca set di criteri di Rights Management:** Annullamento della revoca di un documento
+**Documento di annullamento revoca impostazione criteri di Rights Management:** Annullamento della revoca di un documento
 
-**Evento visualizzazione set di criteri di Rights Management:** Visualizzare eventi relativi a criteri e documenti per qualsiasi criterio o documento all&#39;interno di un set di criteri
+**Evento visualizzazione set di criteri di Rights Management:** Visualizza gli eventi dei criteri e dei documenti per qualsiasi criterio o documento incluso in un set di criteri
 
-**Eventi server di visualizzazione Rights Management:** Cerca e visualizza tutti gli eventi di audit
+**Rights Management Visualizza eventi server:** Cerca e visualizza tutti gli eventi di controllo
 
 **Controllo ruolo:** Creare, eliminare e modificare ruoli in Gestione utente
 
@@ -316,29 +316,29 @@ Puoi modificare le autorizzazioni per qualsiasi ruolo creato. Non è possibile m
 
 **Aggiunta servizio:** Distribuire un nuovo servizio nel Registro di sistema. Ciò include l’aggiunta di nuovi processi e varianti di processo
 
-**Disattivazione servizio:** Arresta qualsiasi servizio nel sistema
+**Disattivazione servizio:** Arrestare qualsiasi servizio nel sistema
 
-**Eliminazione servizio:** Elimina qualsiasi servizio nel sistema, inclusi processi e varianti di processo
+**Eliminazione servizio:** Eliminare qualsiasi servizio nel sistema, inclusi i processi e le varianti di processo
 
-**Richiamo servizio:** Richiama qualsiasi servizio disponibile nel Registro di sistema del servizio in fase di esecuzione
+**Richiamo servizio:** Richiama qualsiasi servizio nel Registro di sistema del servizio disponibile in fase di esecuzione
 
-**Modifica servizio:** Modifica le proprietà di configurazione di qualsiasi servizio nel sistema. Ciò include il blocco e lo sblocco di un servizio nell&#39;IDE e l&#39;aggiunta o la rimozione di endpoint da un servizio
+**Modifica servizio:** Modificare le proprietà di configurazione di qualsiasi servizio nel sistema. Ciò include il blocco e lo sblocco di un servizio nell&#39;IDE e l&#39;aggiunta o la rimozione di endpoint da un servizio
 
-**Lettura servizio:** Leggi tutti i servizi nel sistema. Questo include tutti i processi e le varianti di processo
+**Lettura servizio:** Leggere tutti i servizi nel sistema. Questo include tutti i processi e le varianti di processo
 
-**SERVICE_AGENT_PERM:** Visualizzare i dati e interagire con le istanze di processo per un servizio creato da un processo
+**SERVICE_AGENT_PERM:** Visualizza i dati e interagisce con le istanze di processo per un servizio creato da un processo
 
-**SERVICE_MANAGER_PERM:** Eseguire il bilanciamento del carico e altre azioni amministrative su un servizio creato da un processo
+**SERVICE_MANAGER_PERM:** Eseguire il bilanciamento del carico e altre azioni amministrative in un servizio creato da un processo
 
 **START_STOP_PERM:** Avviare o arrestare un servizio
 
-**SUPERVISOR_PERM:** Visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
+**SUPERVISOR_PERM:** Visualizza i dati dell&#39;istanza di processo per un servizio creato da un processo
 
-**Attraversa:** Includere una risorsa in una richiesta di risorse elenco o leggere i metadati di una risorsa
+**Attraversamento:** Includere una risorsa in una richiesta di risorse elenco o leggere i metadati di una risorsa
 
-**Scrivi:** Scrittura di metadati e contenuti dell’archivio
+**Scrittura:** Scrittura di metadati e contenuto del repository
 
-**Apertura di file in Workbench**
+**Apertura dei file in Workbench**
 
 Per visualizzare il contenuto della vista Risorse in Workbench e aprire i file per la visualizzazione, un utente deve disporre delle seguenti autorizzazioni:
 

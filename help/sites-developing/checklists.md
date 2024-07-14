@@ -35,4 +35,4 @@ Nell’elenco di controllo seguente sono evidenziati alcuni dei problemi princip
 
 >[!NOTE]
 >
->È inoltre possibile visualizzare [Gestione dei progetti - Elenco di controllo delle best practice](/help/managing/best-practices.md) per ulteriori checklist relative all’intero progetto.
+>È inoltre possibile visualizzare l&#39;[Elenco di controllo Gestione progetti - Best practice](/help/managing/best-practices.md) per ulteriori elenchi di controllo relativi all&#39;intero progetto.

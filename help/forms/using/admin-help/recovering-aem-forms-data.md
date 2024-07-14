@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Recupero dei dati dei moduli dell’AEM {#recovering-the-aem-forms-data}
 
-Questa sezione descrive i passaggi necessari per recuperare i dati dei moduli AEM. Vedi anche [Considerazioni speciali per il backup e il ripristino](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
+Questa sezione descrive i passaggi necessari per recuperare i dati dei moduli AEM. Vedere anche [Considerazioni speciali per il backup e il ripristino](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
 
 >[!NOTE]
 >
@@ -26,13 +26,13 @@ Questa sezione descrive i passaggi necessari per recuperare i dati dei moduli AE
 
 Le forme di AEM devono recuperare in modo affidabile dai seguenti fallimenti:
 
-**Errore disco:** Per ripristinare il contenuto del database è necessario disporre del supporto di backup più recente.
+**Errore disco:** Per ripristinare il contenuto del database è necessario il supporto di backup più recente.
 
-**Danneggiamento dei dati:** I file system non registrano le transazioni passate e possono sovrascrivere accidentalmente i dati di processo richiesti.
+**Danneggiamento dei dati:** I file system non registrano le transazioni passate e i sistemi potrebbero accidentalmente sovrascrivere i dati di processo richiesti.
 
-**Errore utente:** Il recupero è limitato ai dati resi disponibili dal database. Se i dati sono stati memorizzati e sono disponibili, il ripristino è semplificato.
+**Errore utente:** il recupero è limitato ai dati resi disponibili dal database. Se i dati sono stati memorizzati e sono disponibili, il ripristino è semplificato.
 
-**Interruzione di corrente, Arresto anomalo del sistema:** Le API del file system spesso non sono progettate o utilizzate in modo affidabile per evitare errori di sistema imprevisti. Se si verifica un&#39;interruzione dell&#39;alimentazione o un arresto anomalo del sistema, è più probabile che il contenuto del documento memorizzato nel database sia aggiornato rispetto al contenuto memorizzato in un file system.
+**Interruzione dell&#39;alimentazione, arresto anomalo del sistema:** Le API del file system spesso non sono progettate o utilizzate in modo affidabile per evitare errori di sistema imprevisti. Se si verifica un&#39;interruzione dell&#39;alimentazione o un arresto anomalo del sistema, è più probabile che il contenuto del documento memorizzato nel database sia aggiornato rispetto al contenuto memorizzato in un file system.
 
 Se si utilizza la modalità di backup continuo, è ancora attiva la modalità di backup dopo il ripristino. Se si utilizza la modalità di backup delle copie istantanee, non è attiva la modalità di backup dopo il ripristino.
 
@@ -54,29 +54,29 @@ Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del clu
 1. Se necessario, ricreare il sistema fisico da un&#39;immagine di sistema. Ad esempio, questo passaggio potrebbe non essere necessario se il motivo del ripristino è un server di database difettoso.
 1. Applica patch o aggiornamenti ai moduli AEM applicati dal momento in cui è stata creata l’immagine. Queste informazioni sono state registrate nella procedura di backup. I moduli AEM devono essere sottoposti a patch allo stesso livello di patch utilizzato al momento del backup del sistema.
 1. (Server applicazioni WebSphere®) Se si sta eseguendo il ripristino in una nuova istanza dell&#39;Application Server WebSphere®, eseguire il comando restoreConfig.bat/sh.
-1. Recuperare il database dei moduli AEM eseguendo prima un&#39;operazione di ripristino del database utilizzando i file di backup del database e quindi applicando i redo log delle transazioni al database ripristinato. (vedere [Database dei moduli AEM](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Per ulteriori informazioni, consulta uno dei seguenti articoli della knowledge base:
+1. Recuperare il database dei moduli AEM eseguendo prima un&#39;operazione di ripristino del database utilizzando i file di backup del database e quindi applicando i redo log delle transazioni al database ripristinato. (Vedi [Database dei moduli AEM](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Per ulteriori informazioni, consulta uno dei seguenti articoli della knowledge base:
 
    * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Oracle di backup e ripristino per i moduli AEM](/help/forms/using/admin-help/files-back-recover.md#oracle)
    * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [Backup e ripristino MySQL per moduli AEM](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
-1. Recuperare la directory GDS eliminando prima il contenuto della directory GDS sull&#39;installazione esistente dei moduli AEM e quindi copiando il contenuto della directory GDS dal GDS di cui è stato eseguito il backup. Se è stato modificato il percorso della directory GDS, vedere [Modifica della posizione GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
+1. Recuperare la directory GDS eliminando prima il contenuto della directory GDS sull&#39;installazione esistente dei moduli AEM e quindi copiando il contenuto della directory GDS dal GDS di cui è stato eseguito il backup. Se si è modificato il percorso della directory GDS, vedere [Modifica del percorso GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Rinominare la directory di backup GDS da ripristinare come illustrato negli esempi seguenti:
 
    >[!NOTE]
    >
    >Se la directory /restore esiste già, eseguirne il backup e quindi eliminarla prima di rinominare la directory /backup che contiene i dati più recenti.
 
-   * (JBoss®) Rinomina `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` a:
+   * (JBoss®) Rinominare `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` in:
 
      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
-   * (WebLogic) Rinomina `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` a:
+   * (WebLogic) Rinominare `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` in:
 
      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere®) Rinomina `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` a:
+   * (WebSphere®) Rinominare `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` in:
 
      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
@@ -91,18 +91,18 @@ Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del clu
    **Cluster:** Durante il processo di ripristino, ripristinare tutte le directory di cui è stato eseguito il backup. Per ripristinare la directory principale dell&#39;indice, effettuare le seguenti operazioni su ciascun nodo del cluster:
 
    * Elimina tutto il contenuto nella directory radice indice.
-   * Se è presente la directory /backup-lucene-indexes, copia il contenuto della *Directory principale archiviazione contenuti*/backup-lucene-indexes nella directory principale dell&#39;indice ed eliminare *Directory principale archiviazione contenuti* directory /backup-lucene-indexes.
-   * Se è presente la directory /lucene-indexes, copia il contenuto della *Directory principale archiviazione contenuti*/lucene-indicizza la directory nella directory radice indice.
+   * Se la directory /backup-lucene-indexes è presente, copiare il contenuto della directory radice dell&#39;archiviazione dei contenuti */backup-lucene-indexes nella directory radice dell&#39;indice ed eliminare la directory radice dell&#39;archiviazione dei contenuti*/backup-lucene-indexes.**
+   * Se la directory /lucene-indexes è presente, copiare il contenuto della directory radice di archiviazione del contenuto *Directory radice di archiviazione del contenuto*/indice del lucene nella directory radice dell&#39;indice.
 
 1. Ripristina/ripristina l’archivio CRX.
 
-   * **Standalone**
+   * **Autonomo**
 
-     *Ripristinare le istanze di authoring e pubblicazione*: in caso di guasto, è possibile ripristinare l&#39;ultimo stato di backup dell&#39;archivio eseguendo i passaggi descritti in [Backup e ripristino.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *Ripristina istanze di authoring e pubblicazione*: se si verifica un errore irreversibile, è possibile ripristinare l&#39;ultimo stato di backup del repository eseguendo i passaggi descritti in [Backup e ripristino.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
      Il ripristino completo del nodo Author verifica anche il ripristino dei dati di Forms Manager e AEM Forms Workspace.
 
-   * **Clustered**
+   * **Cluster**
 
      Per il ripristino in un ambiente cluster, vedere [Strategia di backup e ripristino in un ambiente cluster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
@@ -111,7 +111,7 @@ Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del clu
 
 ## Modifica della posizione GDS durante il ripristino {#changing-the-gds-location-during-recovery}
 
-Se il GDS viene ripristinato in una posizione diversa da quella originale, eseguire lo script LCSetGDS per impostare il GDS nella nuova posizione. Lo script è nel `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` cartella. Lo script accetta due parametri: `defaultGDS` e `newGDS`. Consulta la `ReadMe.txt` nella stessa cartella per istruzioni su come eseguire lo script.
+Se il GDS viene ripristinato in una posizione diversa da quella originale, eseguire lo script LCSetGDS per impostare il GDS nella nuova posizione. Script nella cartella `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Lo script accetta due parametri, `defaultGDS` e `newGDS`. Per istruzioni su come eseguire lo script, vedere il file `ReadMe.txt` nella stessa cartella.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Se il GDS viene ripristinato in una posizione diversa da quella originale, esegu
 
 >[!NOTE]
 >
->Questa circostanza è l&#39;unica in base alla quale utilizzare questo script per modificare la posizione di GDS. Per modificare la posizione di GDS mentre i moduli AEM sono in esecuzione, utilizzare la console di amministrazione. (vedere [Configurare le impostazioni generali dei moduli AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).)
+>Questa circostanza è l&#39;unica in base alla quale utilizzare questo script per modificare la posizione di GDS. Per modificare la posizione di GDS mentre i moduli AEM sono in esecuzione, utilizzare la console di amministrazione. (Vedi [Configurare le impostazioni generali dei moduli AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).)
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Se il GDS viene ripristinato in una posizione diversa da quella originale, esegu
 
 ## Ripristino di GDS in un ambiente cluster {#recovering-the-gds-to-a-clustered-environment}
 
-Per modificare la posizione GDS in un ambiente cluster, arrestare l&#39;intero cluster ed eseguire lo script LCSetGDS su un singolo nodo del cluster. (vedere [Modifica della posizione GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Avvia solo quel nodo. Quando il nodo è completamente avviato, gli altri nodi del cluster possono essere avviati in modo sicuro e punteranno correttamente al nuovo GDS.
+Per modificare la posizione GDS in un ambiente cluster, arrestare l&#39;intero cluster ed eseguire lo script LCSetGDS su un singolo nodo del cluster. (Vedi [Modifica del percorso GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Avvia solo quel nodo. Quando il nodo è completamente avviato, gli altri nodi del cluster possono essere avviati in modo sicuro e punteranno correttamente al nuovo GDS.
 
 >[!NOTE]
 >

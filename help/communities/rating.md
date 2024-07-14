@@ -18,30 +18,30 @@ ht-degree: 1%
 
 # Utilizzo delle valutazioni {#using-ratings}
 
-Il `Rating` Il componente viene utilizzato da solo o con altre funzioni di Communities. Questo componente consente ai membri della community con accesso esterno di esprimere le proprie opinioni attraverso la valutazione del contenuto.
+Il componente `Rating` viene utilizzato da solo o con altre funzionalità di Communities. Questo componente consente ai membri della community con accesso esterno di esprimere le proprie opinioni attraverso la valutazione del contenuto.
 
 ## Aggiunta di una valutazione a una pagina {#adding-a-rating-to-a-page}
 
-Per aggiungere una `Rating` a una pagina in modalità di authoring, individua il componente `Communities / Rating` e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla caratteristica da assegnare ai membri.
+Per aggiungere un componente `Rating` a una pagina in modalità di creazione, individuare il componente `Communities / Rating` e trascinarlo in una pagina, ad esempio una posizione relativa alla caratteristica che i membri devono valutare.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](basics.md).
 
-Quando [librerie lato client richieste](rating-basics.md#essentials-for-client-side) sono inclusi, è così che `Rating` viene visualizzato.
+Quando sono incluse le [librerie lato client richieste](rating-basics.md#essentials-for-client-side), il componente `Rating` viene visualizzato in questo modo.
 
 ![valutazione](assets/rating.png)
 
 ## Configurazione della valutazione {#configuring-rating}
 
-Seleziona la inserita `Rating` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
+Selezionare il componente `Rating` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo per modifica.
 
-![configure-new](assets/configure-new.png)
+![configura-nuovo](assets/configure-new.png)
 
-Sotto **[!UICONTROL Testi ed etichette]** , si specifica l&#39;identificatore interno per la valutazione.
+Nella scheda **[!UICONTROL Testi ed etichette]**, specifica l&#39;identificatore interno per la valutazione.
 
-![tallyname](assets/tallyname.png)
+![nometallico](assets/tallyname.png)
 
 **[!UICONTROL Nome conteggio]**
-(*Obbligatorio* a) Un nome semplice per il `Rating` che identifica in modo univoco questa istanza. Deve essere un nome di nodo valido per l’archivio.
+(*Obbligatorio*) Nome semplice per `Rating` che identifica in modo univoco questa istanza. Deve essere un nome di nodo valido per l’archivio.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
@@ -55,4 +55,4 @@ La pubblicazione anonima di una valutazione non è supportata. I visitatori del 
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base sulla valutazione](rating-basics.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Elementi di valutazione](rating-basics.md) per sviluppatori.

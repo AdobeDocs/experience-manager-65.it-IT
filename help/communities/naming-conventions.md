@@ -1,6 +1,6 @@
 ---
 title: Convenzioni di denominazione in Java&trade; nome pacchetto
-description: Scopri le convenzioni di denominazione e l’utilizzo dei trattini nel nome del pacchetto Java&trade.
+description: Scopri le convenzioni di denominazione e l’utilizzo dei trattini nel nome del pacchetto Java&trade;.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -24,8 +24,8 @@ Quando si crea una posizione per una classe Java™, il nome del pacchetto deve 
 
 Sebbene l’utilizzo dei trattini nei nomi degli elementi dell’archivio sia una pratica consigliata nello sviluppo AEM, i trattini non sono consentiti nei nomi dei pacchetti Java™.
 
-La piattaforma CRX sottostante deve essere in grado di distinguere un carattere di sottolineatura effettivo `_ `e un trattino `-`. Pertanto, in JCR, il trattino deve essere sostituito con il relativo valore Unicode (u002d) ed evitato con un trattino basso `_`.
+La piattaforma CRX sottostante deve essere in grado di distinguere tra un trattino basso effettivo `_ ` e un trattino `-`. Pertanto, in JCR, il trattino deve essere sostituito con il relativo valore Unicode (u002d) e con un carattere di escape `_`.
 
-Ad esempio, se il percorso dell’archivio è **/apps/my-example/component/info/Info.java**, il nome del pacchetto deve essere `java package apps.my_002dexample.component.info;`
+Ad esempio, se il percorso dell&#39;archivio è **/apps/my-example/component/info/Info.java**, il nome del pacchetto deve essere `java package apps.my_002dexample.component.info;`
 
-Si noti che un carattere di sottolineatura deve essere evitato in modo simile, tale che `_` diventa `_005f`.
+Si noti che anche un carattere di sottolineatura deve avere un carattere di escape, tale che `_` diventi `_005f`.

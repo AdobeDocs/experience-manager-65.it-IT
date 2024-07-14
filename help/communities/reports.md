@@ -29,7 +29,7 @@ In generale, le varie relazioni sono le seguenti:
 
   Fornisce un grafico delle visualizzazioni del contenuto da parte dei membri della community e dei visitatori del sito per qualsiasi sito della community.
 
-* [Rapporto Post](#posts-report)
+* [Rapporto post](#posts-report)
 
   Fornisce un grafico di vari tipi di post dei membri della community su qualsiasi sito della community.
 
@@ -39,7 +39,7 @@ I report tabulari possono essere esportati in formato .csv per l’elaborazione 
 
 ### Rapporti per i siti community {#reports-for-community-sites}
 
-* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** >  **[!UICONTROL Rapporti]**
+* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** > **[!UICONTROL Rapporti]**
 
 * Scegli tra:
 
@@ -47,7 +47,7 @@ I report tabulari possono essere esportati in formato .csv per l’elaborazione 
 
       * Genera un report per il sito community, l&#39;utente o il gruppo e l&#39;assegnazione selezionati.
 
-   * **[!UICONTROL Rapporto Post]**
+   * **[!UICONTROL Rapporto post]**
 
       * Genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
 
@@ -55,7 +55,7 @@ I report tabulari possono essere esportati in formato .csv per l’elaborazione 
 
       * genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
 
-![rapporti](assets/reports1.png)
+![report](assets/reports1.png)
 
 ## Rapporto visualizzazioni {#views-report}
 
@@ -73,7 +73,7 @@ Selezionare i criteri per il rapporto:
 
   Puoi scegliere Tutti i contenuti o selezionare una delle funzioni presenti sul sito.
 
-* **[!UICONTROL Intervallo temporale]**
+* **[!UICONTROL Intervallo di tempo]**
 
   Seleziona una delle seguenti opzioni:
 
@@ -82,7 +82,7 @@ Selezionare i criteri per il rapporto:
    * Ultimi 90 giorni
    * Ultimo anno
 
-Seleziona **[!UICONTROL Genera]** per creare il rapporto.
+Seleziona **[!UICONTROL Genera]** per creare il report.
 
 ![generate-views](assets/generate-views.png)
 
@@ -102,7 +102,7 @@ Selezionare i criteri per il rapporto:
 
   Puoi scegliere Tutti i contenuti o selezionare una delle funzioni presenti sul sito.
 
-* **[!UICONTROL Intervallo temporale]**
+* **[!UICONTROL Intervallo di tempo]**
 
   Seleziona una delle seguenti opzioni:
 
@@ -111,9 +111,9 @@ Selezionare i criteri per il rapporto:
    * Ultimi 90 giorni
    * Ultimo anno
 
-Seleziona **[!UICONTROL Genera]** per creare il rapporto.
+Seleziona **[!UICONTROL Genera]** per creare il report.
 
-![generate-report](assets/generate-posts-report.png)
+![genera-report](assets/generate-posts-report.png)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -123,6 +123,6 @@ Se non sono elencati siti della community, accertati che Adobe Analytics sia sta
 
 ### I rapporti non vengono visualizzati nell’istanza di creazione AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se i rapporti non vengono visualizzati nell’istanza Autore AEM, controlla le personalizzazioni, ad esempio la mappatura URL nell’istanza Pubblica. Se la mappatura URL viene eseguita solo sull’istanza di pubblicazione AEM del sito Communities, accertati che lo stesso sia stato configurato nell’istanza di authoring AEM in **Fabbrica componenti social per report tendenze sito** configurazione.
+Se i rapporti non vengono visualizzati nell’istanza Autore AEM, controlla le personalizzazioni, ad esempio la mappatura URL nell’istanza Publish. Se la mappatura URL viene eseguita solo sull&#39;istanza Publish AEM del sito Communities, verificare che lo stesso sia stato configurato nell&#39;istanza Autore AEM nella configurazione **Site Trend Report Social Component Factory**.
 
-![Mappatura URL su AEM Author](assets/sitetrend.png)
+![Mappatura URL in AEM Author](assets/sitetrend.png)

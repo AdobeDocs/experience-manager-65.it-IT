@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Di seguito viene fornita una panoramica sull’authoring con AEM:
 
-* [Primi passaggi per gli autori](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - un’introduzione per nuovi autori
+* [Primi passi per autori](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md): introduzione per i nuovi autori
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ I componenti Testo e Immagine possono essere modificati direttamente nella pagin
 * **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
 Una finestra mobile &quot;Inspector&quot; che appare sulla pagina modificabile. Da qui è possibile trascinare nuovi componenti sulla pagina e eseguire azioni specifiche per la pagina.
 
-* **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
+* **[Ricerca contenuti](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
 Sul lato sinistro di ogni pagina modificabile, Content Finder consente di accedere rapidamente a una serie di risorse, tra cui risorse digitali (come altre immagini, elementi di Flash e documenti), altre pagine e paragrafi. Questi elementi possono essere trascinati sulla pagina, ad esempio per posizionare le risorse o creare collegamenti ad altre pagine.
 
 * **Menu di scelta rapida**

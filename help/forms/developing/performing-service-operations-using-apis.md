@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Esecuzione di operazioni di servizio tramite API {#performing-service-operations-using-apis}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Prima di iniziare a sviluppare applicazioni client utilizzando le API di AEM Forms, l’Adobe consiglia di leggere Richiamo di AEM Forms, che descrive i diversi modi in cui richiamare i servizi. (vedere [Contenitore servizio](/help/forms/developing/service-container.md#service-container).)
+Prima di iniziare a sviluppare applicazioni client utilizzando le API di AEM Forms, l’Adobe consiglia di leggere Richiamo di AEM Forms, che descrive i diversi modi in cui richiamare i servizi. (Vedi [Contenitore di servizi](/help/forms/developing/service-container.md#service-container).)
 
 Dopo aver acquisito familiarità con i diversi metodi di chiamata, puoi imparare a interagire a livello di programmazione con ciascun servizio. È possibile sviluppare un&#39;applicazione client in Adobe Flex® Builder™, in un ambiente di sviluppo Java™ o in un ambiente come Microsoft® Visual Studio .NET che consente di utilizzare il WSDL esposto per l&#39;utilizzo in uno stack SOAP nativo.
 

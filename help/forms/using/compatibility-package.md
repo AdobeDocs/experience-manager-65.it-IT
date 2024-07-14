@@ -21,26 +21,26 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM Forms 6.5. Per continuare a utilizzare le lettere in AEM Forms 6.5, devi installare la più recente [Pacchetto di compatibilità per AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM Forms 6.5. Per continuare a utilizzare le lettere in AEM Forms 6.5, è necessario installare il [pacchetto di compatibilità AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) più recente.
 
-Il pacchetto di compatibilità AEMFD consente inoltre di: [utilizza le seguenti risorse di AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Il pacchetto di compatibilità per AEMFD consente inoltre di [utilizzare le seguenti risorse di AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Frammenti di documenti
 * Lettere
 * Dizionari dati
 * Moduli adattivi: modelli e pagine obsoleti
 
-Per ulteriori informazioni, consulta [Risorse rese compatibili con AEM Forms 6.5 installando il pacchetto Compatibilità](../../forms/using/compatibility-package.md#assetsmadecompatible).
+Per ulteriori informazioni, vedere [Assets reso compatibile con AEM Forms 6.5 installando il pacchetto di compatibilità](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## Aggiunta del supporto per risorse AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Dopo aver eseguito un aggiornamento, effettua le seguenti operazioni per installare il pacchetto di compatibilità AEMFD e rendere le risorse compatibili con la versione 6.5:
 
-Assicurati di avere [Pacchetto di compatibilità AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pre-installato.
+Verificare di disporre di [pacchetto di compatibilità AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) preinstallato.
 
-1. Installare la versione 6.5 più recente [Pacchetto di compatibilità](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. Installa il più recente 6.5 [pacchetto di compatibilità](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-   Per ulteriori informazioni sul caricamento e l’installazione del pacchetto, consulta [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
+   Per ulteriori informazioni sul caricamento e l&#39;installazione del pacchetto, vedere [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 
 1. Una volta stabilizzati i registri, riavviare il server.
 1. Utilizza l’utility di migrazione per rendere le risorse compatibili con la versione 6.5.
@@ -49,13 +49,13 @@ Assicurati di avere [Pacchetto di compatibilità AEM](https://helpx.adobe.com/ae
    >
    > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
-   Per ulteriori informazioni, consulta [utilità di migrazione](../../forms/using/migration-utility.md).
+   Per ulteriori informazioni, vedere [utilità di migrazione](../../forms/using/migration-utility.md).
 
-## Risorse rese compatibili con AEM Forms 6.5 installando il pacchetto Compatibilità {#assetsmadecompatible}
+## Assets reso compatibile con AEM Forms 6.5 installando il pacchetto di compatibilità {#assetsmadecompatible}
 
 Installando il pacchetto di compatibilità, puoi rendere compatibili con AEM Forms 6.5 le risorse e i modelli seguenti:
 
-* Risorse di gestione della corrispondenza dell’AEM 6.4 e versioni precedenti:
+* Gestione della corrispondenza Assets da AEM 6.4 e versioni precedenti:
 
    * [Lettere](../../forms/using/create-letter.md)
    * [Dizionari dati](/help/forms/using/data-dictionary.md)

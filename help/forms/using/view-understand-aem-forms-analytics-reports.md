@@ -24,9 +24,9 @@ Adobe Experience Manager Forms si integra con Adobe Analytics per acquisire e te
 
 La funzione di analisi di AEM Forms è disponibile come parte del pacchetto del componente aggiuntivo AEM Forms. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo, vedere [Installazione e configurazione di AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
-Oltre al pacchetto del componente aggiuntivo, è necessario un account Adobe Analytics. Per informazioni sulla soluzione, consulta [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+Oltre al pacchetto del componente aggiuntivo, è necessario un account Adobe Analytics. Per informazioni sulla soluzione, vedere [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-Dopo aver acquistato il pacchetto del componente aggiuntivo AEM Forms e un account Adobe Analytics, integra l’account Adobe Analytics con AEM Forms e abilita il tracciamento sui moduli o documenti come descritto in [Configurare analisi e rapporti](../../forms/using/configure-analytics-forms-documents.md).
+Dopo aver ottenuto il pacchetto del componente aggiuntivo AEM Forms e un account Adobe Analytics, integrare l&#39;account Adobe Analytics con AEM Forms e abilitare il tracciamento nei moduli o nei documenti come descritto in [Configurare analisi e report](../../forms/using/configure-analytics-forms-documents.md).
 
 ### Registrazione delle informazioni sull’interazione dell’utente {#how-user-interaction-information-is-recorded}
 
@@ -50,20 +50,20 @@ Quando un utente interagisce con il modulo, le interazioni vengono registrate e 
 
 Per visualizzare i rapporti di analisi, effettua le seguenti operazioni:
 
-1. Accedi al portale dell’AEM all’indirizzo `https://[hostname]:'port'`
-1. Clic **Forms > Forms e documenti**.
+1. Accedere al portale AEM all&#39;indirizzo `https://[hostname]:'port'`
+1. Fare clic su **Forms > Forms &amp; Documents**.
 1. Selezionare la maschera per la quale si desidera visualizzare i rapporti di analisi.
-1. Seleziona **Altro > Rapporti di Analytics**.
+1. Selezionare **Altro > Rapporti di Analytics**.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**R.** Report di Analytics, comando
+**A.** comando Report di Analytics
 
 AEM Forms visualizza i rapporti di analisi per il modulo e per ciascun pannello nel modulo, come illustrato di seguito.
 
 ![Rapporto di riepilogo di un modulo adattivo](assets/analyticsdashboard_callout.png)
 
-**R.** Conversioni **B.** Riepilogo a livello di modulo **C.** Riepilogo a livello di pannello **D.** Browser dei visitatori - filtro **E.** Sistema operativo dei visitatori - filtro **F.** Lingua dei visitatori - filtro
+**A.** Conversioni **B.** Riepilogo a livello di modulo **C.** Riepilogo a livello di pannello **D.** Browser di visitatori - filtro **E.** Sistema operativo dei visitatori - filtro **F.** Lingua dei visitatori - filtro
 
 Per impostazione predefinita, viene visualizzato il rapporto di analisi relativo agli ultimi sette giorni. Puoi visualizzare i rapporti relativi agli ultimi 15 giorni, all’ultimo mese e così via, oppure specificare un intervallo di date.
 
@@ -71,52 +71,52 @@ Per impostazione predefinita, viene visualizzato il rapporto di analisi relativo
 >
 >Le opzioni Ultimi 7 giorni e Ultimi 15 giorni non includono i dati per il giorno in cui si sta generando il rapporto di analisi. Per includere i dati del giorno corrente, è necessario specificare l&#39;intervallo di date, incluso il giorno corrente, quindi eseguire il rapporto.
 
-![date-range](assets/date-range.png)
+![intervallo di date](assets/date-range.png)
 
 ### Grafo delle conversioni per moduli adattivi e HTML5 {#conversions-graph-for-adaptive-and-html-forms}
 
 Il grafico delle conversioni a livello di modulo fornisce informazioni approfondite sulle prestazioni del modulo per i seguenti indicatori prestazioni chiave (KPI, Key Performance Indicators):
 
-* **Rappresentazioni**: numero di volte in cui un modulo viene aperto
-* **Visitor**: numero di visitatori del modulo
+* **Rappresentazioni**: il numero di volte in cui un modulo viene aperto
+* **Visitatori**: numero di visitatori del modulo
 * **Invii**: numero di volte in cui il modulo viene inviato
 
-![conversion-graph](assets/conversion-graph.png)
+![grafico di conversione](assets/conversion-graph.png)
 
 ### Rapporto di Analytics per moduli adattivi e HTML5 {#analytics-report-for-adaptive-and-html-forms}
 
 La sezione Riepilogo a livello di modulo fornisce informazioni approfondite sulle prestazioni del modulo per i seguenti indicatori prestazioni chiave (KPI, Key Performance Indicators):
 
-* **Tempo medio di riempimento**: tempo medio impiegato per la compilazione del modulo. Quando gli utenti trascorrono del tempo sul modulo ma non inviano, tale tempo non viene incluso in questo calcolo.
-* **Rappresentazioni**: numero di volte in cui il modulo è stato renderizzato o aperto
+* **Tempo medio di compilazione**: tempo medio impiegato per la compilazione del modulo. Quando gli utenti trascorrono del tempo sul modulo ma non inviano, tale tempo non viene incluso in questo calcolo.
+* **Rappresentazioni**: numero di volte in cui il modulo è stato sottoposto a rendering o aperto
 * **Bozze**: numero di volte in cui il modulo è stato salvato come bozza
 * **Invii**: numero di volte in cui il modulo è stato inviato
-* **Interrompi**: numero di volte in cui gli utenti hanno iniziato a compilare il modulo e poi lo hanno lasciato senza completare il modulo
-* **Visitatori univoci**: numero di volte in cui il modulo &quot;viene renderizzato da visitatori univoci. Per ulteriori informazioni sui visitatori univoci, consulta [Visitatori univoci, visite e comportamento dei clienti](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Interrompi**: numero di volte in cui gli utenti hanno iniziato a compilare il modulo e poi hanno lasciato il modulo senza completarlo
+* **Visitatori univoci**: il numero di volte in cui il modulo &quot;viene renderizzato da visitatori univoci. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
-![Report analitico di riepilogo a livello di modulo espanso](assets/analytics-report.png)
+![Report analisi riepilogo a livello di modulo espanso](assets/analytics-report.png)
 
 ### Rapporto del pannello {#bottom-summary-report}
 
 La sezione di riepilogo a livello di pannello fornisce le seguenti informazioni su ciascun pannello nel modulo:
 
-* **Tempo medio di riempimento**: tempo medio trascorso sul pannello, indipendentemente dal fatto che il modulo sia inviato o meno
-* **Errori riscontrati**: numero medio di errori riscontrati dagli utenti sui campi di un pannello. Gli errori rilevati vengono calcolati dividendo il totale degli errori in un campo per il numero di rappresentazioni del modulo.
-* **Accesso all&#39;Aiuto eseguito**: numero medio di accessi degli utenti alla guida contestuale per i campi nel pannello. L&#39;accesso alla Guida viene ottenuto dividendo il numero totale di volte in cui si accede alla Guida per il numero di copie trasformate di un modulo.
+* **Tempo medio di riempimento**: tempo medio trascorso sul pannello, sia che il modulo sia inviato o meno
+* **Errori rilevati**: numero medio di errori rilevati dagli utenti nei campi di un pannello. Gli errori rilevati vengono calcolati dividendo il totale degli errori in un campo per il numero di rappresentazioni del modulo.
+* **Guida accessibile**: numero medio di accessi degli utenti alla Guida contestuale per i campi nel pannello. L&#39;accesso alla Guida viene ottenuto dividendo il numero totale di volte in cui si accede alla Guida per il numero di copie trasformate di un modulo.
 
 #### Rapporto dettagliato del pannello {#detailed-panel-report}
 
 Per visualizzare i dettagli di ciascun pannello, fai clic sul nome del pannello in Rapporto pannello.
 
-![Rapporto dettagliato del pannello](assets/panel-report-detailed.png)
+![Rapporto dettagliato pannello](assets/panel-report-detailed.png)
 
 Il rapporto dettagliato mostra i valori per tutti i campi nel pannello.
 
 Il rapporto del pannello dispone di tre schede:
 
-* **Rapporto temporale**(Impostazione predefinita): visualizza il tempo, in numero di secondi, impiegato per riempire ciascuno dei campi del pannello
+* **Report tempo** (predefinito): visualizza il tempo, in numero di secondi, impiegato per riempire ciascuno dei campi nel pannello
 * **Segnalazione errori**: visualizza il numero di errori riscontrati dagli utenti durante la compilazione dei campi
-* **Report della Guida**: numero di volte in cui è stato effettuato l’accesso all’Aiuto per un campo specifico
+* **Report Guida**: numero di volte in cui è stato effettuato l&#39;accesso alla Guida per un campo specifico
 
 Se sono disponibili più pannelli, puoi spostarti tra i pannelli.
 
@@ -126,7 +126,7 @@ Le tabelle Distribuzione browser, Distribuzione sistema operativo e Distribuzion
 
 Per filtrare ulteriormente i dati di analisi, puoi fare clic su una voce in una qualsiasi delle tabelle. Ad esempio, se fai clic su Google Chrome nella tabella Distribuzione browser, il rapporto viene nuovamente sottoposto a rendering con i dati relativi al browser Google Chrome come segue:
 
-![Filtro applicato al rapporto di Analytics - Google Chrome ](assets/filter-1.png)
+![Filtro applicato al report di Analytics - Google Chrome ](assets/filter-1.png)
 
 Se visualizzi il rapporto del pannello dopo l’applicazione di un filtro, vengono visualizzati anche i dati del rapporto del pannello in base al filtro applicato.
 
@@ -142,4 +142,4 @@ Dopo aver applicato un filtro:
 
 Se per la maschera è abilitato e impostato il test A/B, nella pagina del report è disponibile un elenco a discesa che consente di visualizzare il report Test A/B. Nel rapporto Test A/B vengono visualizzate le prestazioni comparative di due versioni del modulo impostate.
 
-Per ulteriori informazioni sui test A/B, consulta [Creare e gestire test A/B per i moduli adattivi](../../forms/using/ab-testing-adaptive-forms.md).
+Per ulteriori informazioni sui test A/B, consulta [Creare e gestire test A/B per moduli adattivi](../../forms/using/ab-testing-adaptive-forms.md).

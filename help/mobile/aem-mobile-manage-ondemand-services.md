@@ -35,16 +35,16 @@ Con l’app Verifica preliminare Mobile On-Demand puoi visualizzare tutti i prog
 ## Anteprima con verifica preliminare {#previewing-with-preflight-1}
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Fai clic sui puntini di sospensione (...) dalla scheda **Gestisci articoli** (o Banner/Raccolte).
+1. Fai clic sui puntini di sospensione (...) dalla sezione **Gestisci articoli** (o banner/raccolte).
 1. Seleziona **Verifica preliminare** dalla barra delle azioni.
-1. Clic **Attiva verifica preliminare** dalla finestra di dialogo.
+1. Fare clic su **Attiva verifica preliminare** nella finestra di dialogo.
 1. L’app è ora pronta per l’anteprima nell’app Mobile On-Demand Preflight.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->L’app Verifica preliminare AEM viene utilizzata per visualizzare in anteprima i contenuti e sfogliare le pagine. Per informazioni approfondite sulla verifica preliminare dell’app, fai clic su [qui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>L’app Verifica preliminare AEM viene utilizzata per visualizzare in anteprima i contenuti e sfogliare le pagine. Per informazioni approfondite sulla verifica preliminare dell&#39;app, fai clic [qui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Come procedere {#getting-ahead}

@@ -41,19 +41,19 @@ Ricorda quando configuri i gruppi di dispositivi:
 
 I selettori di rendering adattivo possono essere configurati per gruppi di dispositivi esistenti o per [gruppi creati personalmente.](/help/sites-developing/mobile.md#device-groups)
 
-Per questo esempio, stai per configurare il gruppo di dispositivi esistente **Smartphone** per avere un selettore di rendering adattivo come parte del **Pagina esperienza** modello in We.Retail.
+In questo esempio, stai per configurare il gruppo di dispositivi esistente **Smart Phone** in modo che abbia un selettore di rendering adattivo come parte del modello **Pagina esperienza** in We.Retail.
 
-1. Modificare il gruppo di dispositivi che richiede un selettore adattivo in `http://localhost:4502/miscadmin#/etc/mobile/groups`
+1. Modifica il gruppo di dispositivi che richiede un selettore adattivo in `http://localhost:4502/miscadmin#/etc/mobile/groups`
 
-   Imposta l’opzione **Disabilita emulatore** e salva.
+   Imposta l&#39;opzione **Disabilita emulatore** e salva.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Il selettore è disponibile per **Blackberry®** e **IPHONE 4** ha fornito il gruppo di dispositivi **Smart Phone** viene aggiunto alle strutture di modello e pagina nei passaggi seguenti.
+1. Il selettore è disponibile per **BlackBerry®** e **iPhone 4** a condizione che il gruppo di dispositivi **Smart Phone** sia aggiunto alle strutture di modello e pagina nei passaggi seguenti.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. Con CRXDE Liti, consenti l’utilizzo del gruppo di dispositivi nel modello aggiungendolo alla proprietà della stringa con più valori `cq:deviceGroups` nella struttura del modello.
+1. Con CRXDE Lite, consenti l&#39;utilizzo del gruppo di dispositivi nel modello aggiungendolo alla proprietà di stringa con più valori `cq:deviceGroups` nella struttura del modello.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -63,19 +63,19 @@ Per questo esempio, stai per configurare il gruppo di dispositivi esistente **Sm
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Con CRXDE Liti, consenti l’utilizzo del gruppo di dispositivi sul tuo sito aggiungendolo alla proprietà della stringa con più valori. `cq:deviceGroups` sulla struttura del sito.
+1. Con CRXDE Lite, consenti l&#39;utilizzo del gruppo di dispositivi sul tuo sito aggiungendolo alla proprietà di stringa con più valori `cq:deviceGroups` nella struttura del sito.
 
    `/content/<your-site>/jcr:content`
 
-   Ad esempio, se desideri consentire **Smart Phone** gruppo di dispositivi:
+   Ad esempio, se desideri consentire il gruppo di dispositivi **Smart Phone**:
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-Ora quando si utilizza [emulatore](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) nell’editor pagina (ad esempio quando [modifica del layout](/help/sites-authoring/responsive-layout.md)) e scegli un dispositivo del gruppo di dispositivi configurato, la pagina viene sottoposta a rendering con un selettore come parte dell&#39;URL.
+Ora quando utilizzi l&#39;[emulatore](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) nell&#39;editor pagina (ad esempio quando [modifichi il layout](/help/sites-authoring/responsive-layout.md)) e scegli un dispositivo del gruppo di dispositivi configurato, la pagina viene riprodotta con un selettore come parte dell&#39;URL.
 
-In questo esempio, quando modifichi una pagina basata su **Pagina esperienza** e selezionando iPhone 4 nell’emulatore, viene eseguito il rendering della pagina, incluso il selettore come `arctic-surfing-in-lofoten.smart.html` invece di `arctic-surfing-in-lofoten.html`
+In questo esempio, quando si modifica una pagina basata sul modello **Pagina esperienza** e si sceglie iPhone 4 nell&#39;emulatore, viene eseguito il rendering della pagina includendo il selettore come `arctic-surfing-in-lofoten.smart.html` invece di `arctic-surfing-in-lofoten.html`
 
 La pagina può anche essere chiamata direttamente utilizzando questo selettore.
 

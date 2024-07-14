@@ -43,15 +43,15 @@ Se il database è in esecuzione in modalità di registrazione, come descritto ne
 Metti AEM Forms in modalità di backup sicuro (snapshot) o di backup continuo (copertura continua). Prima di impostare AEM Forms per l&#39;immissione di una delle modalità di backup, verificare quanto segue:
 
 * Verificare la versione del sistema e registrare le patch o gli aggiornamenti applicati dall&#39;ultimo backup completo dell&#39;immagine del sistema.
-* Se si utilizzano backup in modalità di scorrimento o snapshot, verificare che il database sia configurato con le impostazioni di registro corrette per consentire backup a caldo del database. (vedere [database AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
+* Se si utilizzano backup in modalità di scorrimento o snapshot, verificare che il database sia configurato con le impostazioni di registro corrette per consentire backup a caldo del database. (Vedi [Database AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
 
 Inoltre, osservare le seguenti linee guida per il processo di backup/ripristino.
 
-* Eseguire il backup della directory GDS utilizzando un sistema operativo disponibile o un&#39;utilità di backup di terze parti. (vedere [Posizione GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
-* (Facoltativo) Eseguire il backup della directory principale di archiviazione dei contenuti utilizzando un sistema operativo disponibile o un programma di backup e utility di terze parti. (vedere [Percorso directory principale di archiviazione dei contenuti (ambiente autonomo)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o [Percorso directory principale di archiviazione dei contenuti (ambiente in cluster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Eseguire il backup delle istanze di authoring e pubblicazione ( crx -repository backup).
+* Eseguire il backup della directory GDS utilizzando un sistema operativo disponibile o un&#39;utilità di backup di terze parti. (Vedi [Posizione GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
+* (Facoltativo) Eseguire il backup della directory principale di archiviazione dei contenuti utilizzando un sistema operativo disponibile o un programma di backup e utility di terze parti. (Vedi [Percorso directory principale archiviazione contenuti (ambiente autonomo)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o [Percorso directory principale archiviazione contenuti (ambiente cluster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
+* Backup   istanze di authoring e pubblicazione ( crx -repository backup).
 
-  Per eseguire il backup dell’ambiente della soluzione Gestione della corrispondenza, esegui i passaggi sulle istanze di authoring e pubblicazione come descritto in [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
+  Per eseguire il backup dell&#39;ambiente della soluzione Gestione corrispondenza, eseguire i passaggi sulle istanze di authoring e pubblicazione come descritto in [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
 
   Quando esegui il backup delle istanze di authoring e pubblicazione, considera quanto segue:
 
@@ -60,14 +60,14 @@ Inoltre, osservare le seguenti linee guida per il processo di backup/ripristino.
    * Gli sviluppatori di Workbench possono continuare a lavorare sui propri processi a livello locale. Durante la fase di backup non devono distribuire nuovi processi.
    * La decisione sulla durata di ciascuna sessione di backup (per la modalità di backup continuo) deve essere basata sul tempo totale impiegato per eseguire il backup di tutti i dati in AEM Forms (database, GDS, archivio AEM ed eventuali altri dati personalizzati aggiuntivi).
 
-Esegui il backup del database di AEM Forms, compresi eventuali registri delle transazioni. Consulta [database AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
+Esegui il backup del database di AEM Forms, compresi eventuali registri delle transazioni. Vedi [Database AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Per ulteriori informazioni, vedere l&#39;articolo della Knowledge Base appropriato per il database:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
 * [Oracle di backup e ripristino per AEM Forms](https://www.adobe.com/go/kb403624)
 * [Backup e ripristino MySQL per AEM Forms](https://www.adobe.com/go/kb403625)
 * [Backup e ripristino di Microsoft® SQL Server per AEM Forms](https://www.adobe.com/go/kb403623)
-* [Backup e ripristino DB2® per AEM Forms](https://www.adobe.com/go/kb403626)
+* [DB2® Backup e ripristino per AEM Forms](https://www.adobe.com/go/kb403626)
 
 Questi articoli forniscono indicazioni sulle funzioni di base del database per il backup e il recupero dei dati. Non sono intesi come guide tecniche complete delle funzioni di backup e ripristino del database di un fornitore specifico. Descrivono i comandi necessari per creare una strategia di backup del database affidabile per i dati dell’applicazione AEM Forms.
 
@@ -77,7 +77,7 @@ Questi articoli forniscono indicazioni sulle funzioni di base del database per i
 
 ### Immissione delle modalità di backup {#entering-the-backup-modes}
 
-È possibile utilizzare la console di amministrazione, il comando LCBackupMode o l&#39;API disponibile con l&#39;installazione di AEM Forms per attivare e disattivare le modalità di backup. Per il backup continuo (copertura continua), l’opzione della console di amministrazione non è disponibile; è necessario utilizzare l’opzione della riga di comando o l’API. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
+È possibile utilizzare la console di amministrazione, il comando LCBackupMode o l&#39;API disponibile con l&#39;installazione di AEM Forms per attivare e disattivare le modalità di backup. Per il backup continuo (copertura continua), l&#39;opzione della console di amministrazione non è disponibile. Utilizzare l&#39;opzione della riga di comando o l&#39;API. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
 
 >[!NOTE]
 >
@@ -91,31 +91,31 @@ Questi articoli forniscono indicazioni sulle funzioni di base del database per i
 
    Questo metodo mette AEM Forms in modalità di backup a tempo indefinito (senza timeout) ed entra in modalità snapshot anziché rollback.
 
-**Utilizzo dell&#39;opzione della riga di comando per attivare la modalità di backup sicuro**
+**Utilizzo dell&#39;opzione della riga di comando per attivare la modalità di backup sicura**
 
-È possibile utilizzare l&#39;interfaccia della riga di comando `LCBackupMode` script per mettere AEM Forms in modalità di backup sicuro.
+È possibile utilizzare gli script dell&#39;interfaccia della riga di comando `LCBackupMode` per impostare AEM Forms in modalità di backup sicuro.
 
 1. Impostare ADOBE_LIVECYCLE e avviare il server applicazioni.
-1. Vai a `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` cartella.
-1. A seconda del sistema operativo in uso, modificare `LCBackupMode.cmd` o `LCBackupMode.sh` script per fornire valori predefiniti appropriati per il sistema.
+1. Passare alla cartella `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. A seconda del sistema operativo in uso, modificare lo script `LCBackupMode.cmd` o `LCBackupMode.sh` per fornire valori predefiniti appropriati per il sistema.
 1. Al prompt dei comandi eseguire il comando seguente su un&#39;unica riga:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*nome host* `] [-port=`*portnumber* `] [-user=`*nome utente* `] [-password=`*password* `] [-label=`*labelname* `] [-timeout=`*secondi* `]`
-   * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*nome host* `] [-port=`*portnumber* `] [-user=`*nome utente* `] [-password=`*password* `] [-label=`*labelname* `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*nomehost* `] [-port=`*numeroporta* `] [-user=`*nomeutente* `] [-password=`*password* `] [-label=`*nomeetichetta* `] [-timeout=`*secondi* `]`
+   * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*nomehost* `] [-port=`*numeroporta* `] [-user=`*nomeutente* `] [-password=`*password* `] [-label=`*nomeetichetta* `]`
 
    Nei comandi precedenti, i segnaposto sono definiti come segue:
 
-   `Host` è il nome dell’host in cui è in esecuzione AEM Forms.
+   `Host` è il nome dell&#39;host in cui è in esecuzione AEM Forms.
 
    `port` è la porta WebServices del server applicazioni in cui è in esecuzione AEM Forms.
 
-   `user` è il nome utente dell’amministratore di AEM Forms.
+   `user` è il nome utente dell&#39;amministratore AEM Forms.
 
-   `password` è la password dell’amministratore di AEM Forms.
+   `password` è la password dell&#39;amministratore AEM Forms.
 
    `label` è l&#39;etichetta di testo, che può essere qualsiasi stringa, per questo backup.
 
-   `timeout` è il numero di secondi dopo i quali la modalità di backup viene lasciata automaticamente. Può essere 0-10.080. Se è 0, che è l&#39;impostazione predefinita, la modalità di backup non si interrompe mai.
+   `timeout` è il numero di secondi dopo i quali viene lasciata automaticamente la modalità di backup. Può essere 0-10.080. Se è 0, che è l&#39;impostazione predefinita, la modalità di backup non si interrompe mai.
 
    Per ulteriori informazioni sull&#39;interfaccia della riga di comando per la modalità di backup, vedere il file Leggimi nella directory BackupRestoreCommandline.
 
@@ -135,29 +135,29 @@ Per utilizzare la console di amministrazione per escludere AEM Forms dalla modal
 
 Puoi utilizzare l’interfaccia della riga di comando per escludere AEM Forms dalla modalità di backup sicuro (modalità snapshot) o per terminare la sessione in modalità di backup corrente (modalità continua). Non è possibile utilizzare la console di amministrazione per uscire dalla modalità di backup continuo. In modalità di backup continuo, i controlli Utilità di backup nella console di amministrazione sono disattivati. Utilizzare la chiamata API o il comando LCBackupMode.
 
-1. Vai a `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` cartella.
-1. A seconda del sistema operativo in uso, modificare `LCBackupMode.cmd` o `LCBackupMode.sh` script per fornire valori predefiniti appropriati per il sistema.
+1. Passare alla cartella `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. A seconda del sistema operativo in uso, modificare lo script `LCBackupMode.cmd` o `LCBackupMode.sh` per fornire valori predefiniti appropriati per il sistema.
 
    >[!NOTE]
    >
-   >Impostare la directory JAVA_HOME come descritto nel capitolo appropriato per il server applicazioni in [Preparazione all’installazione di AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Impostare la directory JAVA_HOME come descritto nel capitolo appropriato per il server applicazioni in [Preparazione all&#39;installazione di AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Esegui il comando seguente su una singola riga:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nome host* `] [-port=`*portnumber* `] [-user=`*nome utente* `] [-password=`*password* `]`
-   * (Linux®, UNIX®) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*nome host* `] [-port=`*portnumber* `] [-user=`*nome utente* `] [-password=`*password* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nomehost* `] [-port=`*numeroporta* `] [-user=`*nomeutente* `] [-password=`*password* `]`
+   * (Linux®, UNIX®) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*nomehost* `] [-port=`*numeroporta* `] [-user=`*nomeutente* `] [-password=`*password* `]`
 
      Nei comandi precedenti, i segnaposto sono definiti come segue:
 
-     `Host` è il nome dell’host in cui è in esecuzione AEM Forms.
+     `Host` è il nome dell&#39;host in cui è in esecuzione AEM Forms.
 
      `port` è la porta su cui AEM Forms è in esecuzione sul server applicazioni.
 
-     `user` è il nome utente dell’amministratore di AEM Forms.
+     `user` è il nome utente dell&#39;amministratore AEM Forms.
 
-     `password` è la password dell’amministratore di AEM Forms.
+     `password` è la password dell&#39;amministratore AEM Forms.
 
-     `leaveContinuousCoverage` Utilizzare questa opzione per disattivare completamente la modalità di backup continuo.
+     `leaveContinuousCoverage` Utilizzare questa opzione per disabilitare completamente la modalità di backup continua.
 
    >[!NOTE]
    >

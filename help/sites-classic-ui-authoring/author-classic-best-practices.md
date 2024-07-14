@@ -21,7 +21,7 @@ Nelle seguenti aree è disponibile la documentazione sulle best practice:
 
 * [Risorse](#assets)
 * [Sites](#sites)
-* [Forms](#forms)
+* [Moduli](#forms)
 
 Per le best practice sull’amministrazione, la distribuzione, la manutenzione o lo sviluppo, consulta una delle seguenti sezioni:
 
@@ -39,7 +39,7 @@ Le best practice relative ad Assets, incluse la funzionalità Dynamic Medie e l�
  <tbody>
   <tr>
    <td>Formati di file</td>
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Best practice per i formati dei file di Assets</a></td>
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Best practice per i formati di file Assets</a></td>
    <td>Descrive le best practice relative al supporto dei file in AEM Assets.</td>
   </tr>
   <tr>
@@ -53,7 +53,7 @@ Le best practice relative ad Assets, incluse la funzionalità Dynamic Medie e l�
    <td><p>Descrive come aumentare la nitidezza di un’immagine per ottenere risultati migliori e come ottimizzare la qualità delle immagini se utilizzi la funzionalità Dynamic Medie o ti stai integrando con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
-   <td>Risorse multilingue</td>
+   <td>Assets multilingue</td>
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Best practice per la traduzione</a></td>
    <td>Descrive le best practice per una traduzione efficiente delle risorse AEM.</td>
   </tr>
@@ -64,10 +64,10 @@ Le best practice relative ad Assets, incluse la funzionalità Dynamic Medie e l�
 
 Per la gestione e l’authoring dei contenuti del sito web, vengono descritte alcune best practice:
 
-Authoring: [Ambiente e strumenti di authoring](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornisce una panoramica su come creare le pagine.
+Authoring: [ambiente e strumenti di authoring](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornisce una panoramica sull&#39;authoring delle pagine.
 
-## Forms {#forms}
+## Moduli {#forms}
 
-Moduli adattivi: [Best practice per l’utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md) : descrive le best practice per la configurazione, l’authoring e la personalizzazione dei moduli adattivi.
+Moduli adattivi: [Best practice per l&#39;utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md) - Descrive le best practice per la configurazione, l&#39;authoring e la personalizzazione dei moduli adattivi.
 
-Moduli HTML5: [Best practice per la progettazione di moduli HTML5](/help/forms/using/best-practices-for-html5-forms.md) : descrive le best practice per lavorare sul layout e la progettazione dei moduli HTML5.
+Moduli di HTML5: [Procedure consigliate per la progettazione di moduli di HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Descrive le procedure consigliate per l&#39;utilizzo del layout e della progettazione di moduli di HTML5.

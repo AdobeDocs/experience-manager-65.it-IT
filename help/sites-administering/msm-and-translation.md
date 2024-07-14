@@ -28,7 +28,7 @@ Sono disponibili i seguenti strumenti di amministrazione per la gestione di siti
 
    * [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md)
 
-* Queste due funzioni possono essere combinate per gestire i siti Web che sono entrambi [Multinazionale e multilingue](#multinational-and-multilingual-sites).
+* Queste due funzionalità possono essere combinate per gestire i siti Web che sono entrambi [Multinazionali e Multilingue](#multinational-and-multilingual-sites).
 
 ## Siti multinazionali e multilingue {#multinational-and-multilingual-sites}
 
@@ -50,7 +50,7 @@ Il diagramma seguente illustra l’intersezione dei concetti principali (ma non 
 >
 >In questo scenario (e simili) MSM non gestisce le diverse versioni linguistiche in quanto tali.
 >
->* [MSM](/help/sites-administering/msm.md) gestisce la distribuzione dei contenuti tradotti da una blueprint (ad esempio, una pagina mastro globale) alle live copy (ad esempio, i siti locali), entro i limiti della lingua.
+>* [MSM](/help/sites-administering/msm.md) gestisce la distribuzione dei contenuti tradotti da un blueprint (ad esempio, un master globale) alle Live Copy (ad esempio, i siti locali), entro i limiti di una lingua.
 >* Le capacità di integrazione delle [traduzioni](/help/sites-administering/translation.md) di AEM, in collaborazione con servizi di gestione della localizzazione di terze parti, gestiscono le lingue e traducono i contenuti in diverse lingue.
 >
 >Per casi di utilizzo più avanzati, MSM può essere utilizzato anche tra le lingue master.

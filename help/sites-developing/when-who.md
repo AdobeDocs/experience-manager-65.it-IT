@@ -43,7 +43,7 @@ Possono essere coinvolti diversi ruoli nel test e in varie fasi di sviluppo del 
     <ul>
      <li><p>Al cliente viene fornita un’esperienza del progetto in fase di sviluppo.</p> </li>
      <li><p>Fornisce un feedback tempestivo dal cliente.</p> </li>
-     <li><p>Gli utenti esprimono spesso le loro esigenze in termini di esperienza precedente; il coinvolgimento dei clienti nei test il più presto possibile aumenta la loro esperienza del nuovo progetto in termini di <i>pratico</i> esperienza.</p> </li>
+     <li><p>Gli utenti esprimono spesso le loro esigenze in termini di esperienza precedente; il coinvolgimento dei clienti nel test il prima possibile aumenta la loro esperienza del nuovo progetto in termini di esperienza <i>pratica</i>.</p> </li>
     </ul> </td>
    <td><p>Anche in questo caso il coinvolgimento anticipato è positivo, anche se qualsiasi versione utilizzata dai clienti dovrebbe essere stabile, con funzionalità ragionevoli.</p> <p>Le prime impressioni sono sempre importanti.</p> </td>
   </tr>

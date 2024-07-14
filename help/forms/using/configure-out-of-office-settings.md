@@ -39,17 +39,17 @@ Puoi segregare la delega di elementi in base ai modelli di flusso di lavoro. Ad 
 
 Per abilitare l&#39;impostazione Fuori sede per l&#39;account e delegare gli elementi della casella in entrata a un altro utente, effettuare le operazioni riportate di seguito.
 
-1. Accedi all’istanza AEM. Seleziona la ![Casella in entrata](assets/bell.svg) e seleziona **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
-1. Seleziona la ![Selettore vista](assets/viewlist.svg) o ![Selettore vista](assets/calendar.svg) accanto al simbolo **[!UICONTROL Crea]** e seleziona **[!UICONTROL Impostazioni]**. Viene visualizzata la finestra di dialogo delle impostazioni.
-1. Apri **[!UICONTROL Fuori sede]** nella finestra di dialogo delle impostazioni.
-1. Seleziona la **[!UICONTROL Attiva/Disattiva]** per abilitare l&#39;impostazione Fuori sede.
-1. Specifica la **[!UICONTROL Ora di inizio]**  e **[!UICONTROL Ora di fine]** per l&#39;impostazione. Gli elementi vengono delegati solo durante il periodo specificato. Lascia **[!UICONTROL Ora di fine]** campo vuoto per delegare elementi per un periodo di tempo indefinito.
-1. Seleziona la **[!UICONTROL Inoltra i miei oggetti durante questo periodo]** casella di controllo. Se non selezioni l’opzione e non specifichi un assegnatario, gli elementi non vengono inoltrati ad alcun utente. Anche se sei assente e l’impostazione è abilitata, gli elementi rimangono nella casella in entrata.
-1. Seleziona **[!UICONTROL Aggiungi assegnatario]**. Specificare un utente in **[!UICONTROL Assegnatario]** in modo da poter delegare gli elementi. Specifica la **[!UICONTROL Modello flusso di lavoro]** in modo da poter delegare all&#39;utente specificato. È possibile selezionare più modelli di flusso di lavoro.
+1. Accedi all’istanza AEM. Selezionare l&#39;icona ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
+1. Seleziona l&#39;icona ![Visualizza selettore](assets/viewlist.svg) o ![Visualizza selettore](assets/calendar.svg) accanto al pulsante **[!UICONTROL Crea]** e seleziona **[!UICONTROL Impostazioni]**. Viene visualizzata la finestra di dialogo delle impostazioni.
+1. Apri la scheda **[!UICONTROL Fuori sede]** nella finestra di dialogo delle impostazioni.
+1. Selezionare il pulsante **[!UICONTROL Abilita/Disabilita]** per abilitare l&#39;impostazione Fuori sede.
+1. Specifica l&#39;**[!UICONTROL Ora inizio]** e l&#39;**[!UICONTROL Ora fine]** per l&#39;impostazione. Gli elementi vengono delegati solo durante il periodo specificato. Lascia vuoto il campo **[!UICONTROL Ora di fine]** per delegare gli elementi per un periodo di tempo indefinito.
+1. Selezionare la casella di controllo **[!UICONTROL Inoltra elementi personali durante questo periodo]**. Se non selezioni l’opzione e non specifichi un assegnatario, gli elementi non vengono inoltrati ad alcun utente. Anche se sei assente e l’impostazione è abilitata, gli elementi rimangono nella casella in entrata.
+1. Seleziona **[!UICONTROL Aggiungi assegnatario]**. Specifica un utente nel campo **[!UICONTROL Assegnatario]** in modo da poter delegare gli elementi. Specificare il **[!UICONTROL modello flusso di lavoro]** in modo da poter delegare all&#39;utente specificato. È possibile selezionare più modelli di flusso di lavoro.
 
-   Inoltre, per assegnare tutti gli elementi, indipendentemente dal modello di flusso di lavoro, a un particolare utente, seleziona **[!UICONTROL Tutti i flussi di lavoro]** dall’elenco a discesa Modello del flusso di lavoro. <br>
+   Inoltre, per assegnare tutti gli elementi, indipendentemente dal modello di flusso di lavoro, a un utente specifico, selezionare **[!UICONTROL Tutti i flussi di lavoro]** dall&#39;elenco a discesa Modello flusso di lavoro. <br>
 
-   Per assegnare elementi a un utente specifico per tutti i modelli di flusso di lavoro eccetto alcuni, seleziona **[!UICONTROL Tutti i flussi di lavoro]** dall’elenco a discesa Modello flusso di lavoro, seleziona **[!UICONTROL + Aggiungi eccezioni]**e specificare i modelli di flusso di lavoro da escludere.
+   Per assegnare gli elementi a un utente specifico per tutti i modelli di workflow ad eccezione di alcuni, selezionare **[!UICONTROL Tutti i flussi di lavoro]** dall&#39;elenco a discesa Modello di workflow, selezionare **[!UICONTROL + Aggiungi eccezioni]** e specificare i modelli di workflow da escludere.
    <br>
 
    Ripeti il passaggio per aggiungere altri assegnatari. <br>
@@ -65,7 +65,7 @@ Ora gli elementi assegnati durante il periodo Fuori sede vengono assegnati autom
 
 >[!NOTE]
 >
->(Solo per elementi del flusso di lavoro incentrati su Forms) Abilita **Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;** opzione del **Assegna attività** nel flusso di lavoro. Solo gli elementi per i quali è abilitata l’opzione precedentemente indicata vengono delegati ad altri utenti.
+>(Solo per elementi del flusso di lavoro incentrati su Forms) Abilita l&#39;opzione **Consenti all&#39;assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;** del passaggio **Assegna attività** nel flusso di lavoro. Solo gli elementi per i quali è abilitata l’opzione precedentemente indicata vengono delegati ad altri utenti.
 
 ## Limitazioni {#limitations}
 

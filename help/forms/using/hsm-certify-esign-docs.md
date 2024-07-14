@@ -23,12 +23,12 @@ I moduli HSM (Hardware Security Module) e i token sono dispositivi di elaborazio
 Adobe Experience Manager Forms può utilizzare le credenziali memorizzate su un HSM o etoken per eSign o applicare firme digitali lato server a un documento. Per utilizzare un dispositivo HSM o etoken con AEM Forms:
 
 1. [Abilitare il servizio DocAssurance](#configuredocassurance).
-1. [Creare un alias per il dispositivo HSM o etoken nella console web AEM](#configuredeviceinaemconsole).
-1. [Utilizza le API del servizio DocAssurance per firmare o certificare i documenti con le chiavi digitali memorizzate sul dispositivo](#programatically).
+1. [Creare un alias per il dispositivo HSM o etoken nella console Web AEM](#configuredeviceinaemconsole).
+1. [Utilizzare le API del servizio DocAssurance per firmare o certificare i documenti con le chiavi digitali archiviate nel dispositivo](#programatically).
 
 ## Prima di configurare i dispositivi HSM o etoken con AEM Forms {#configurehsmetoken}
 
-* Installare [Componente aggiuntivo AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pacchetto.
+* Installa il pacchetto del componente aggiuntivo [AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 * Installare e configurare il software client HSM o etoken sullo stesso computer del server AEM. Il software client è necessario per comunicare con i dispositivi HSM ed etoken.
 
 ## Abilitare il servizio DocAssurance {#configuredocassurance}
@@ -37,11 +37,11 @@ Per impostazione predefinita, il servizio DocAssurance non è abilitato. Per abi
 
 1. Arresta l’istanza di authoring dell’ambiente AEM Forms.
 
-1. Apri [AEM_root]File \crx-quickstart\conf\sling.properties da modificare.
+1. Apri il file [AEM_root]\crx-quickstart\conf\sling.properties da modificare.
 
    >[!NOTE]
    >
-   >Se ha usato il [AEM_root]\crx-quickstart\bin\start.bat per avviare l’istanza dell’AEM, quindi apri il file [AEM_root]\crx-quickstart\sling.properties per la modifica.
+   >Se hai utilizzato il file [AEM_root]\crx-quickstart\bin\start.bat per avviare l&#39;istanza dell&#39;AEM, apri il file [AEM_root]\crx-quickstart\sling.properties per la modifica.
 
 1. Aggiungi o sostituisci le seguenti proprietà al file sling.properties:
 
@@ -100,19 +100,19 @@ Perform the following steps to setup certificates:
 L’alias contiene tutti i parametri richiesti da un HSM o etoken. Eseguire le istruzioni elencate di seguito per creare un alias per ogni credenziale HSM o etoken utilizzata da eSign o Digital Signatures:
 
 1. Apri la console AEM. L’URL predefinito della console AEM è https://&lt;host>:&lt;port>/system/console/configMgr
-1. Apri **Servizio configurazione credenziali HSM** e specifica i valori per i campi seguenti:
+1. Apri il servizio di configurazione **Credenziali HSM** e specifica i valori per i campi seguenti:
 
-   * **Alias credenziali**: specifica una stringa utilizzata per identificare l’alias. Questo valore viene utilizzato come proprietà per alcune operazioni di firma digitale, ad esempio l&#39;operazione Firma campo.
-   * **Percorso DLL**: specifica il percorso della libreria client HSM o etoken sul server. Ad esempio, `C:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster è necessario assicurarsi che tutti i server del cluster utilizzino un percorso identico.
-   * **Pin HSM**: specifica la password necessaria per accedere alla chiave del dispositivo.
-   * **ID slot HSM**: specifica un identificatore di slot di tipo integer. L&#39;ID dello slot viene impostato client per client. Viene utilizzato per identificare lo slot su HSM che contiene la chiave privata per il segno/certificazione.
+   * **Alias credenziali**: specificare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni di firma digitale, ad esempio l&#39;operazione Firma campo.
+   * **Percorso DLL**: specificare il percorso della libreria client HSM o etoken sul server. Ad esempio, `C:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster è necessario assicurarsi che tutti i server del cluster utilizzino un percorso identico.
+   * **Pin HSM**: specificare la password necessaria per accedere alla chiave del dispositivo.
+   * **ID slot HSM**: specificare un identificatore di slot di tipo integer. L&#39;ID dello slot viene impostato client per client. Viene utilizzato per identificare lo slot su HSM che contiene la chiave privata per il segno/certificazione.
 
    >[!NOTE]
    >
    >Durante la configurazione di Etoken, specifica un valore numerico per il campo ID slot HSM. Per il corretto funzionamento delle operazioni di firma è necessario un valore numerico.
 
-   * **Certificato SHA1**: specifica il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verificare che nel valore SHA1 non siano presenti spazi.
-   * **Tipo di dispositivo HSM**: seleziona il produttore del dispositivo HSM (Luna o altro) o eToken.
+   * **Certificato SHA1**: specificare il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verificare che nel valore SHA1 non siano presenti spazi.
+   * **Tipo di dispositivo HSM**: selezionare il produttore del dispositivo HSM (Luna o altro) o eToken.
 
    Fai clic su **Salva**. Il modulo di sicurezza hardware è configurato per AEM Forms. Ora puoi utilizzare il modulo di sicurezza hardware con AEM Forms per firmare o certificare i documenti.
 
@@ -415,4 +415,4 @@ Se hai effettuato l’aggiornamento da AEM 6.0 Form o AEM 6.1 Forms e stavi util
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Per informazioni dettagliate sulle API e il codice di esempio del servizio DocAssurance, consulta [Utilizzo dei servizi documentali AEM a livello di programmazione](/help/forms/using/aem-document-services-programmatically.md).
+Per informazioni dettagliate sulle API e sul codice di esempio del servizio DocAssurance, vedere [Utilizzo di servizi documentali AEM a livello di programmazione](/help/forms/using/aem-document-services-programmatically.md).

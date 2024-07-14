@@ -27,15 +27,15 @@ In AEM Forms, l’operazione di download è supportata per i seguenti tipi di ri
 
 AEM Forms supporta il download di questi tipi di moduli singolarmente o in una cartella contenente uno o più moduli supportati.
 
-Oltre a queste risorse, puoi scaricare il `Resource` tipo di risorsa se presente in una cartella. Questa funzionalità consente di scaricare la risorsa a cui fa riferimento un modulo XFA insieme al modulo.
+Oltre a queste risorse, puoi scaricare il tipo di risorsa `Resource` se è presente in una cartella. Questa funzionalità consente di scaricare la risorsa a cui fa riferimento un modulo XFA insieme al modulo.
 
 ## Scarica uno o più moduli {#download-one-or-more-forms}
 
-1. Accedi all’interfaccia utente di AEM Forms all’indirizzo `https://<server>:<port>/aem/forms.html`.
+1. Accedere all&#39;interfaccia utente di AEM Forms all&#39;indirizzo `https://<server>:<port>/aem/forms.html`.
 
 1. Passa alla posizione della risorsa da scaricare.
 
-1. Seleziona la risorsa. Fai clic su **[!UICONTROL Scarica]** ![aem6forms_download](assets/aem6forms_download.png) nella barra degli strumenti.
+1. Seleziona la risorsa. Fai clic sull&#39;icona **[!UICONTROL Scarica]** ![aem6forms_download](assets/aem6forms_download.png) nella barra degli strumenti.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Oltre a queste risorse, puoi scaricare il `Resource` tipo di risorsa se presente
 
    Se stai scaricando una cartella, le risorse supportate all’interno della cartella vengono scaricate nella gerarchia esistente.
 
-   Il file ZIP viene salvato in `Downloads` sul sistema.
+   Il file ZIP viene salvato nella cartella `Downloads` del sistema.
 
 ## Considerazioni correlate per l’operazione di caricamento {#related-considerations-for-the-upload-operation}
 

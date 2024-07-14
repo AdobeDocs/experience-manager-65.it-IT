@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Configurare più editor {#configure-multiple-editors}
 
-Per abilitare più editor locali, la struttura di un `cq:InplaceEditingConfig` il tipo di nodo è stato migliorato con la definizione di `cq:ChildEditorConfig` tipo di nodo.
+Per abilitare più editor locali, la struttura di un tipo di nodo `cq:InplaceEditingConfig` è stata migliorata con la definizione di tipo di nodo `cq:ChildEditorConfig`.
 
 Ad esempio:
 
@@ -58,7 +58,7 @@ Ad esempio:
 
 Per configurare più editor, eseguire la procedura seguente:
 
-1. Sul nodo `cq:inplaceEditing` (di tipo `cq:InplaceEditingConfig`) definisci le seguenti proprietà:
+1. Nel nodo `cq:inplaceEditing` (di tipo `cq:InplaceEditingConfig`) definire le seguenti proprietà:
 
    * Nome:`editorType`
    * Tipo: `String`
@@ -69,26 +69,26 @@ Per configurare più editor, eseguire la procedura seguente:
    * Nome: `cq:ChildEditors`
    * Tipo: `nt:unstructured`
 
-1. Sotto `cq:childEditors` , crea un nodo per ciascun editor locale:
+1. Sotto il nodo `cq:childEditors`, crea un nodo per ogni editor locale:
 
-   * Nome: il nome di ciascun nodo è il nome della proprietà che rappresenta, come nel caso delle destinazioni di rilascio. Ad esempio: `image` e `text`.
+   * Nome: il nome di ciascun nodo è il nome della proprietà che rappresenta, come nel caso delle destinazioni di rilascio. Ad esempio, `image` e `text`.
    * Tipo: `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Esiste una correlazione tra le destinazioni di rilascio definite e gli editor secondari. Il nome del `cq:ChildEditorConfig` viene considerato come ID della destinazione di rilascio, da utilizzare come parametro per l’editor secondario selezionato. Se la sottoarea modificabile non ha una destinazione di rilascio, ad esempio, in un componente di testo, il nome dell’editor figlio viene comunque considerato un ID per identificare l’area modificabile corrispondente.
+   >Esiste una correlazione tra le destinazioni di rilascio definite e gli editor secondari. Il nome del nodo `cq:ChildEditorConfig` viene considerato come ID destinazione di rilascio, da utilizzare come parametro per l&#39;editor figlio selezionato. Se la sottoarea modificabile non ha una destinazione di rilascio, ad esempio, in un componente di testo, il nome dell’editor figlio viene comunque considerato un ID per identificare l’area modificabile corrispondente.
 
 1. Su ciascuno di questi nodi (`cq:ChildEditorConfig`) definisci le proprietà:
 
    * Nome: `type`.
-   * Valore: nome dell’editor locale registrato; ad esempio, `image` e `text`.
+   * Valore: il nome dell&#39;editor locale registrato, ad esempio `image` e `text`.
 
    * Nome: `title`.
-   * Valore: il titolo visualizzato nell’elenco di selezione dei componenti degli editor disponibili. Ad esempio: `Image` e `Text`.
+   * Valore: il titolo visualizzato nell’elenco di selezione dei componenti degli editor disponibili. Ad esempio, `Image` e `Text`.
 
 ### Configurazione aggiuntiva per gli editor Rich Text {#additional-configuration-for-rich-text-editors}
 
-La configurazione di più editor Rich Text è leggermente diversa, in quanto è possibile configurare separatamente ogni singola istanza di RTE. Per ulteriori informazioni, consulta [configurare l’editor Rich Text](/help/sites-administering/rich-text-editor.md). Per disporre di più editor Rich Text, creare una configurazione per ogni editor Rich Text locale. L’Adobe consiglia di creare il nuovo nodo di configurazione in `cq:InplaceEditingConfig` in quanto ogni singolo editor Rich Text può avere una configurazione diversa. Nel nuovo nodo creare ogni singola configurazione dell’editor Rich Text.
+La configurazione di più editor Rich Text è leggermente diversa, in quanto è possibile configurare separatamente ogni singola istanza di RTE. Per ulteriori dettagli, vedere [configurare l&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md). Per disporre di più editor Rich Text, creare una configurazione per ogni editor Rich Text locale. L&#39;Adobe consiglia di creare il nuovo nodo di configurazione in `cq:InplaceEditingConfig` in quanto ogni singolo editor Rich Text può avere una configurazione diversa. Nel nuovo nodo creare ogni singola configurazione dell’editor Rich Text.
 
 ```xml
     texttext
@@ -105,20 +105,20 @@ La configurazione di più editor Rich Text è leggermente diversa, in quanto è 
 
 >[!NOTE]
 >
->Tuttavia, per l’editor Rich Text, `configPath` questa proprietà è supportata quando nel componente è presente una sola istanza dell’editor di testo (sottoarea modificabile). Questo utilizzo di `configPath` viene fornito per supportare la compatibilità con le versioni precedenti delle finestre di dialogo dell’interfaccia utente del componente.
+>Tuttavia, per l&#39;editor Rich Text, la proprietà `configPath` è supportata quando nel componente è presente una sola istanza dell&#39;editor di testo (sottoarea modificabile). Questo utilizzo di `configPath` viene fornito per supportare la compatibilità con le versioni precedenti delle finestre di dialogo dell&#39;interfaccia utente del componente.
 
 >[!CAUTION]
 >
->Non denominare il nodo di configurazione dell’editor Rich Text come `config`. In caso contrario, le configurazioni dell’editor Rich Text sono disponibili solo per gli amministratori e non per gli utenti del gruppo `content-author`.
+>Non assegnare al nodo di configurazione dell&#39;Editor Rich Text il nome `config`. In caso contrario, le configurazioni dell&#39;editor Rich Text sono disponibili solo per gli amministratori e non per gli utenti del gruppo `content-author`.
 
 ## Esempi di codice {#code-samples}
 
-Puoi trovare il codice di questa pagina su [progetto aem-authoring-hybrideditors su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Puoi scaricare il progetto completo come [un archivio ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+Puoi trovare il codice di questa pagina nel [progetto aem-authoring-hybrideditors su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Puoi scaricare il progetto completo come [archivio ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
 
 ## Aggiungere un editor locale {#add-an-in-place-editor}
 
-Per informazioni generali sull’aggiunta di un editor locale, consulta il documento [personalizzare l’authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
+Per informazioni generali sull&#39;aggiunta di un editor locale, vedere il documento [personalizzare la creazione delle pagine](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
 >[!MORELIKETHIS]
 >
->* [Configurare l’editor Rich Text in Experience Manager](/help/sites-administering/rich-text-editor.md).
+>* [Configurare l&#39;editor Rich Text in Experience Manager](/help/sites-administering/rich-text-editor.md).

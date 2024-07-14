@@ -29,15 +29,15 @@ Per ogni elemento in stallo, l&#39;elenco mostra le seguenti informazioni:
 
 **Nome operazione o nome ramo:** Nome dell&#39;operazione o del ramo.
 
-**Stato:** Sempre BLOCCATO per gli elementi in stallo.
+**Stato:** sempre BLOCCATO per gli elementi in stallo.
 
 **Errore:** Breve descrizione del problema.
 
-**ID processo:** Numero intero positivo assegnato dal flusso di lavoro di Forms quando viene creata un&#39;istanza del processo, ovvero quando un utente o un passaggio automatico avvia un processo. È possibile utilizzare questo identificatore per tenere traccia dell&#39;istanza di processo durante il relativo ciclo di vita.
+**ID processo:** Il numero intero positivo assegnato dal flusso di lavoro dei moduli quando viene creata un&#39;istanza del processo, ovvero quando un utente o un passaggio automatico avvia un processo. È possibile utilizzare questo identificatore per tenere traccia dell&#39;istanza di processo durante il relativo ciclo di vita.
 
 **Nome processo - Versione:** Il nome del processo assegnato in Workbench.
 
-**Data di blocco:** La data e l&#39;ora in cui l&#39;operazione o il ramo si è arrestato.
+**Data di blocco:** La data e l&#39;ora in cui l&#39;operazione o il ramo si è interrotto.
 
 Nella pagina Operazioni bloccate o Rami bloccati è possibile eseguire le operazioni seguenti:
 
@@ -82,4 +82,4 @@ Quando si verifica questa situazione, lo stato del processo e dell&#39;attività
 
 Se l&#39;utente di escalation viene eliminato prima della generazione dell&#39;attività (prima dell&#39;esecuzione dell&#39;operazione Assegna attività), il processo si arresta oppure viene generato l&#39;evento di eccezione InvalidPrincipal.
 
-Per evitare questo problema, quando si elimina un utente, cercare le attività appartenenti a tale utente e gestirle di conseguenza. (vedere [Utilizzo delle attività](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Per evitare questo problema, quando si elimina un utente, cercare le attività appartenenti a tale utente e gestirle di conseguenza. (Vedi [Utilizzo delle attività](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

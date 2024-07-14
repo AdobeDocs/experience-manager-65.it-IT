@@ -27,30 +27,30 @@ ht-degree: 1%
 
 L’integrazione dei dati in AEM Forms fornisce un’interfaccia utente intuitiva per la creazione e l’utilizzo dei modelli di dati dei moduli. Un modello dati modulo si basa su origini dati per lo scambio di dati. È tuttavia possibile creare un modello dati modulo con o senza un&#39;origine dati. Esistono due approcci per creare un modello dati da a seconda che siano state configurate o meno le origini dati:
 
-* **Utilizzo di origini dati preconfigurate**: se hai configurato le origini dati come descritto in [Configurare le origini dati](../../forms/using/configure-data-sources.md), è possibile selezionarli durante la creazione di un modello di dati del modulo. Raccoglie tutti gli oggetti, le proprietà e i servizi del modello dati dalle origini dati selezionate disponibili per l’utilizzo nel modello dati del modulo.
+* **Utilizzo di origini dati preconfigurate**: se le origini dati sono state configurate come descritto in [Configurazione di origini dati](../../forms/using/configure-data-sources.md), è possibile selezionarle durante la creazione di un modello dati del modulo. Raccoglie tutti gli oggetti, le proprietà e i servizi del modello dati dalle origini dati selezionate disponibili per l’utilizzo nel modello dati del modulo.
 
-* **Senza origini dati**: se non hai configurato le origini dati per il modello dati del modulo, puoi comunque crearlo senza origini dati. Puoi utilizzare il modello dati del modulo per creare moduli adattivi e per la comunicazione interattiva e testarli utilizzando dati di esempio. Quando le origini dati sono disponibili, è possibile associare il modello dati del modulo a origini dati che si rifletteranno automaticamente nei moduli adattivi associati e nelle comunicazioni interattive.
+* **Senza origini dati**: se non sono state configurate origini dati per il modello dati del modulo, è comunque possibile crearlo senza origini dati. Puoi utilizzare il modello dati del modulo per creare moduli adattivi e per la comunicazione interattiva e testarli utilizzando dati di esempio. Quando le origini dati sono disponibili, è possibile associare il modello dati del modulo a origini dati che si rifletteranno automaticamente nei moduli adattivi associati e nelle comunicazioni interattive.
 
 >[!NOTE]
 >
->Devi essere membro di entrambi **fdm-author** e **forms-user** gruppi per creare e utilizzare il modello dati del modulo. Contatta il tuo amministratore AEM per diventare membro dei gruppi.
+>Per poter creare e utilizzare il modello di dati del modulo, è necessario essere membri sia del gruppo **fdm-author** che del gruppo **forms-user**. Contatta il tuo amministratore AEM per diventare membro dei gruppi.
 
 ## Crea modello dati modulo {#data-sources}
 
-Verifica di aver configurato le origini dati che intendi utilizzare nel modello dati del modulo come descritto in [Configurare le origini dati](../../forms/using/configure-data-sources.md). Per creare un modello dati modulo basato su origini dati configurate, eseguire le operazioni seguenti:
+Verificare di aver configurato le origini dati che si intende utilizzare nel modello dati del modulo come descritto in [Configurare le origini dati](../../forms/using/configure-data-sources.md). Per creare un modello dati modulo basato su origini dati configurate, eseguire le operazioni seguenti:
 
-1. Nell’istanza di authoring dell’AEM, passa a **[!UICONTROL Forms > Integrazioni dati]**.
-1. Seleziona **[!UICONTROL Crea > Modello dati modulo]**.
+1. Nell&#39;istanza di authoring dell&#39;AEM, passa a **[!UICONTROL Forms > Integrazioni dati]**.
+1. Selezionare **[!UICONTROL Crea > Modello dati modulo]**.
 1. Nella finestra di dialogo Crea modello dati modulo:
 
    * Specifica un nome per il modello dati del modulo.
-   * (**Facoltativo**) Specifica titolo, descrizione e tag per il modello di dati del modulo.
-   * (**Facoltativo e applicabile solo se le origini dati sono configurate** a) Selezionare l&#39;icona di spunta accanto al simbolo **[!UICONTROL Configurazione origine dati]** e seleziona il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che desideri utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, per impostazione predefinita vengono elencati tutti i database JDBC e le origini dati del profilo utente AEM. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
+   * (**Facoltativo**) Specificare titolo, descrizione e tag per il modello dati del modulo.
+   * (**Facoltativo e applicabile solo se le origini dati sono configurate**) Selezionare l&#39;icona di spunta accanto al campo **[!UICONTROL Configurazione Source dati]** e selezionare il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che si desidera utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, per impostazione predefinita vengono elencati tutti i database JDBC e le origini dati del profilo utente AEM. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
 
    Seleziona **[!UICONTROL Avanti]**.
 
-1. (**Applicabile solo se le origini dati sono configurate**) La **[!UICONTROL Seleziona origine dati]** nella schermata sono elencate le origini dati disponibili, se presenti. Selezionare le origini dati da utilizzare nel modello dati del modulo.
-1. Seleziona **[!UICONTROL Crea]** e nella finestra di dialogo di conferma, seleziona **[!UICONTROL Apri]** per aprire l&#39;editor modello dati modulo.
+1. (**Applicabile solo se le origini dati sono configurate**) Nella schermata **[!UICONTROL Seleziona origine dati]** sono elencate le origini dati disponibili, se presenti. Selezionare le origini dati da utilizzare nel modello dati del modulo.
+1. Seleziona **[!UICONTROL Crea]** e nella finestra di dialogo di conferma seleziona **[!UICONTROL Apri]** per aprire l&#39;editor del modello dati del modulo.
 
 Esaminiamo i diversi componenti dell’interfaccia utente dell’editor dei modelli di dati dei moduli.
 
@@ -58,33 +58,33 @@ Esaminiamo i diversi componenti dell’interfaccia utente dell’editor dei mode
 
 **A. Origini dati** Elenca le origini dati in un modello dati modulo. Espandere un&#39;origine dati per visualizzare i relativi servizi e oggetti modello dati.
 
-**B. Aggiornare le definizioni delle origini dati** Recupera eventuali modifiche nelle definizioni dell’origine dati dalle origini dati configurate e le aggiorna nella scheda Origini dati dell’editor modelli dati del modulo.
+**B. Aggiorna definizioni Data Source** Recupera eventuali modifiche nelle definizioni dell&#39;origine dati dalle origini dati configurate e le aggiorna nella scheda Origini dati dell&#39;editor modelli dati del modulo.
 
-**C. Modello** Area contenuto in cui vengono visualizzati gli oggetti modello dati aggiunti.
+**C. Area contenuto modello** in cui vengono visualizzati gli oggetti modello dati aggiunti.
 
-**D. Servizi** Area del contenuto in cui vengono visualizzati operazioni o servizi dell&#39;origine dati aggiunti.
+**G. Servizi** Area contenuto in cui vengono visualizzati operazioni o servizi dell&#39;origine dati aggiunti.
 
-**E. Barra degli strumenti** Strumenti per utilizzare il modello dati del modulo. La barra degli strumenti mostra più opzioni a seconda dell’oggetto selezionato nel modello dati del modulo.
+**E. Barra degli strumenti** Strumenti per l&#39;utilizzo del modello dati del modulo. La barra degli strumenti mostra più opzioni a seconda dell’oggetto selezionato nel modello dati del modulo.
 
-**F. Aggiungi selezionati** Aggiunge al modello dati del modulo gli oggetti e i servizi modello dati selezionati.
+**F. Aggiungi selezionati** Aggiunge gli oggetti e i servizi del modello dati selezionati al modello dati del modulo.
 
-Per ulteriori informazioni sull’editor del modello dati modulo e su come utilizzarlo per modificare e configurare il modello dati modulo, consulta [Utilizzare il modello dati del modulo](../../forms/using/work-with-form-data-model.md).
+Per ulteriori informazioni sull&#39;editor del modello dati modulo e su come utilizzarlo per modificare e configurare il modello dati modulo, vedere [Utilizzare il modello dati modulo](../../forms/using/work-with-form-data-model.md).
 
 ## Aggiornare le origini dati {#update}
 
 Per aggiungere o aggiornare origini dati a un modello dati modulo esistente, eseguire le operazioni seguenti.
 
-1. Vai a **[!UICONTROL Forms > Integrazioni dati]**, selezionare il modello dati del modulo in cui si desidera aggiungere o aggiornare le origini dati e quindi selezionare **[!UICONTROL Proprietà]**.
-1. Nelle proprietà del modello dati del modulo, vai al **[!UICONTROL Aggiorna origine]** scheda.
+1. Vai a **[!UICONTROL Forms > Integrazioni dati]**, seleziona il modello dati del modulo in cui desideri aggiungere o aggiornare le origini dati e seleziona **[!UICONTROL Proprietà]**.
+1. Nelle proprietà del modello dati del modulo, vai alla scheda **[!UICONTROL Aggiorna Source]**.
 
-   Nella scheda Aggiorna origine:
+   Nella scheda Aggiorna Source:
 
-   * Seleziona l’icona Sfoglia in **[!UICONTROL Configurazione in base al contesto]** e selezionare un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati che si desidera aggiungere. Se non selezioni un nodo, le configurazioni cloud che risiedono solo nel `global` vengono elencati quando si seleziona **[!UICONTROL Aggiungi origini]**.
+   * Selezionare l&#39;icona Sfoglia nel campo **[!UICONTROL Configurazione in base al contesto]** e selezionare un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati che si desidera aggiungere. Se non si seleziona un nodo, le configurazioni cloud che risiedono solo nel nodo `global` vengono elencate quando si seleziona **[!UICONTROL Aggiungi origini]**.
 
-   * Per aggiungere una nuova origine dati, selezionare **[!UICONTROL Aggiungi origini]** e seleziona le origini dati da aggiungere al modello dati del modulo. Tutte le origini dati configurate in `global` e viene visualizzato il nodo di configurazione selezionato, se presente.
+   * Per aggiungere una nuova origine dati, selezionare **[!UICONTROL Aggiungi origini]** e selezionare le origini dati da aggiungere al modello dati del modulo. Vengono visualizzate tutte le origini dati configurate in `global` e l&#39;eventuale nodo di configurazione selezionato.
 
-   * Per sostituire un&#39;origine dati esistente con un&#39;altra origine dati dello stesso tipo, selezionare **[!UICONTROL Modifica]** per l&#39;origine dati e selezionarla dall&#39;elenco delle origini dati disponibili.
-   * Per eliminare un&#39;origine dati esistente, selezionare **[!UICONTROL Elimina]** per l&#39;origine dati. L’icona Elimina è disabilitata se nel modello dati del modulo viene aggiunto un oggetto modello dati nell’origine dati.
+   * Per sostituire un&#39;origine dati esistente con un&#39;altra origine dati dello stesso tipo, selezionare l&#39;icona **[!UICONTROL Modifica]** per l&#39;origine dati e selezionarla dall&#39;elenco delle origini dati disponibili.
+   * Per eliminare un&#39;origine dati esistente, selezionare l&#39;icona **[!UICONTROL Elimina]** per l&#39;origine dati. L’icona Elimina è disabilitata se nel modello dati del modulo viene aggiunto un oggetto modello dati nell’origine dati.
 
    ![fdm-properties](assets/fdm-properties.png)
 
@@ -98,4 +98,4 @@ Per aggiungere o aggiornare origini dati a un modello dati modulo esistente, ese
 
 Ora disponi di un modello dati modulo con origini dati aggiunte. È quindi possibile modificare il modello dati del modulo per aggiungere e configurare oggetti e servizi del modello dati, aggiungere associazioni tra oggetti del modello dati, modificare proprietà, aggiungere oggetti e proprietà del modello dati personalizzato, generare dati di esempio e così via.
 
-Per ulteriori informazioni, consulta [Utilizzare il modello dati del modulo](../../forms/using/work-with-form-data-model.md).
+Per ulteriori informazioni, vedere [Utilizzare il modello dati del modulo](../../forms/using/work-with-form-data-model.md).

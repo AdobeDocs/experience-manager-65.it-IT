@@ -35,21 +35,21 @@ Il servizio di output consente di creare applicazioni che permettono di:
 
 ## Creazione di documenti modulo non interattivi {#creating-non-interactive-form-documents}
 
-![utilizzo di output_modified](assets/usingoutput_modified.png)
+![usingoutput_modified](assets/usingoutput_modified.png)
 
-In genere, si creano modelli utilizzando AEM Forms Designer. Il `generatePDFOutput` e `generatePrintedOutput` Le API del servizio di output consentono di convertire direttamente questi modelli in vari formati, tra cui PDF, PostScript, ZPL e PCL.
+In genere, si creano modelli utilizzando AEM Forms Designer. Le API `generatePDFOutput` e `generatePrintedOutput` del servizio di output consentono di convertire direttamente questi modelli in vari formati, tra cui PDF, PostScript, ZPL e PCL.
 
-Il `generatePDFOutput` l&#39;operazione genera PDF, mentre `generatePrintedOutput` L&#39;operazione genera i formati PostScript, ZPL e PCL. Il primo parametro di entrambe le operazioni accetta il nome del file modello (ad esempio, `ExpenseClaim.xdp`) o un oggetto Document contenente il modello. Quando si specifica il nome del file modello, specificare anche la directory principale del contenuto come percorso della cartella che contiene il modello. È possibile specificare la directory principale del contenuto utilizzando `PDFOutputOptions` o `PrintedOutputOptions` parametro. Consulta JavaScript per informazioni dettagliate su altre opzioni che puoi specificare utilizzando questi parametri.
+L&#39;operazione `generatePDFOutput` genera PDF, mentre l&#39;operazione `generatePrintedOutput` genera formati PostScript, ZPL e PCL. Il primo parametro di entrambe le operazioni accetta il nome del file modello (ad esempio, `ExpenseClaim.xdp`) o un oggetto Document contenente il modello. Quando si specifica il nome del file modello, specificare anche la directory principale del contenuto come percorso della cartella che contiene il modello. È possibile specificare la directory principale del contenuto utilizzando il parametro `PDFOutputOptions` o `PrintedOutputOptions`. Consulta JavaScript per informazioni dettagliate su altre opzioni che puoi specificare utilizzando questi parametri.
 
 Il secondo parametro accetta un documento XML che viene unito al modello durante la generazione del documento di output.
 
-Il `generatePDFOutput` L&#39;operazione può anche accettare un modulo PDF basato su XFA come input e restituire una versione non interattiva del modulo PDF come output.
+L&#39;operazione `generatePDFOutput` può anche accettare un modulo PDF basato su XFA come input e restituire una versione non interattiva del modulo PDF come output.
 
 ## Generazione di documenti modulo non interattivi {#generating-non-interactive-form-documents}
 
 Si consideri uno scenario in cui sono presenti uno o più modelli e più record di dati XML per ciascun modello.
 
-Utilizza il `generatePDFOutputBatch` e `generatePrintedOutputBatch` operazioni del servizio di output per generare un documento di stampa per ciascun record.
+Utilizzare le operazioni `generatePDFOutputBatch` e `generatePrintedOutputBatch` del servizio di output per generare un documento di stampa per ogni record.
 
 È inoltre possibile combinare i record in un unico documento. Entrambe le operazioni richiedono quattro parametri.
 
@@ -57,10 +57,10 @@ Il primo parametro è una mappa che contiene una stringa arbitraria come chiave 
 
 Il secondo parametro è un mapping diverso il cui valore è un oggetto Document contenente dati XML. La chiave è la stessa di quella specificata per il primo parametro.
 
-Il terzo parametro per `generatePDFOutputBatch` o `generatePrintedOutputBatch` è di tipo `PDFOutputOptions` o `PrintedOutputOptions` rispettivamente.
+Il terzo parametro per `generatePDFOutputBatch` o `generatePrintedOutputBatch` è rispettivamente di tipo `PDFOutputOptions` o `PrintedOutputOptions`.
 
-I tipi di parametri sono gli stessi dei tipi dei parametri per `generatePDFOutput` e `generatePrintedOutput` e hanno lo stesso effetto.
+I tipi di parametri sono gli stessi dei tipi dei parametri per le operazioni `generatePDFOutput` e `generatePrintedOutput` e hanno lo stesso effetto.
 
-Il quarto parametro è di tipo `BatchOptions`, che consente di specificare se è possibile generare un file separato per ogni record. Il valore predefinito di questo parametro è false.
+Il quarto parametro è di tipo `BatchOptions`, utilizzato per specificare se è possibile generare un file separato per ogni record. Il valore predefinito di questo parametro è false.
 
-Entrambi `generatePrintedOutputBatch` e `generatePDFOutputBatch` restituisce un valore di tipo `BatchResult`. Il valore contiene un elenco di documenti generati. Contiene inoltre un documento di metadati in formato XML che contiene informazioni relative a ciascun documento generato.
+Sia `generatePrintedOutputBatch` che `generatePDFOutputBatch` restituiscono un valore di tipo `BatchResult`. Il valore contiene un elenco di documenti generati. Contiene inoltre un documento di metadati in formato XML che contiene informazioni relative a ciascun documento generato.

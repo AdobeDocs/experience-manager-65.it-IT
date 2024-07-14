@@ -19,13 +19,13 @@ ht-degree: 3%
 
 # Migrazione all’interfaccia utente touch{#migration-to-the-touch-ui}
 
-A partire dalla versione 6.0, Adobe Experience Manager (AEM) ha introdotto una nuova interfaccia utente denominata *interfaccia touch* (noto anche semplicemente come *interfaccia touch*). È allineato al Adobe Experience Cloud e alle linee guida generali dell’interfaccia utente di Adobe. Questa è diventata l’interfaccia utente standard in AEM con l’interfaccia legacy orientata al desktop denominata *interfaccia classica*.
+A partire dalla versione 6.0, Adobe Experience Manager (AEM) ha introdotto una nuova interfaccia utente denominata *interfaccia touch* (nota anche semplicemente come *interfaccia touch*). È allineato al Adobe Experience Cloud e alle linee guida generali dell’interfaccia utente di Adobe. Questa è diventata l&#39;interfaccia utente standard in AEM con l&#39;interfaccia legacy orientata al desktop denominata *interfaccia classica*.
 
 Se utilizzi l’AEM con l’interfaccia classica, adotta un’azione per migrare l’istanza. Questa pagina ha lo scopo di fungere da trampolino di lancio fornendo collegamenti a singole risorse.
 
 >[!NOTE]
 >
->Tale progetto di migrazione può avere un impatto significativo sulla tua istanza. Consulta [Gestione dei progetti - Procedure consigliate](/help/managing/best-practices.md) per le linee guida consigliate.
+>Tale progetto di migrazione può avere un impatto significativo sulla tua istanza. Per le linee guida consigliate, consulta [Gestione dei progetti - Best practice](/help/managing/best-practices.md).
 
 ## Nozioni di base {#the-basics}
 
@@ -38,7 +38,7 @@ Durante la migrazione, tieni presente le seguenti differenze principali tra l’
    <td>Interfaccia touch</td>
   </tr>
   <tr>
-   <td>È descritto nell’archivio JCR come struttura di nodi. Ogni nodo che rappresenta un elemento dell’interfaccia utente è denominato <em>Widget ExtJS</em> ed eseguito sul lato client da <code>ExtJS</code>.</td>
+   <td>È descritto nell’archivio JCR come struttura di nodi. Ogni nodo che rappresenta un elemento dell'interfaccia utente viene chiamato widget <em>ExtJS</em> ed è sottoposto a rendering sul lato client da <code>ExtJS</code>.</td>
    <td>Descritto anche nell’archivio JCR come struttura di nodi. Tuttavia, in questo caso, ogni nodo fa riferimento a un tipo di risorsa Sling (componente Sling), che è responsabile del rendering. L’interfaccia utente viene quindi sottoposta a rendering lato server.</td>
   </tr>
   <tr>
@@ -49,7 +49,7 @@ Durante la migrazione, tieni presente le seguenti differenze principali tra l’
    <td><code>sling:resourceType</code>
     <ul>
      <li>utilizzato</li>
-     <li>ad esempio<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
+     <li>ad esempio <br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -65,11 +65,11 @@ Durante la migrazione, tieni presente le seguenti differenze principali tra l’
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Percorso JavaScript:</p>
+   <td><p>Posizione JavaScript:</p>
     <ul>
      <li>Le parti imperative sono direttamente incorporate utilizzando listener o gestite in clientlibs.</li>
     </ul> </td>
-   <td><p>Percorso JavaScript:</p>
+   <td><p>Posizione JavaScript:</p>
     <ul>
      <li>Le parti imperative non possono essere incorporate nella definizione del dialogo; separazione delle responsabilità.</li>
     </ul> </td>
@@ -93,13 +93,13 @@ Durante la migrazione, tieni presente le seguenti differenze principali tra l’
    <td>Rendering eseguito dal server:
     <ul>
      <li>Il client richiede le pagine insieme alla relativa interfaccia utente.</li>
-     <li>Il server invia (invia) l’interfaccia utente come documenti HTML, utilizzando i componenti dell’interfaccia utente Coral.<br /> </li>
+     <li>Il server invia (invia) l'interfaccia utente come documenti HTML utilizzando i componenti dell'interfaccia utente Coral.<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-In altre parole, la migrazione di una sezione dell’interfaccia utente dall’interfaccia classica all’interfaccia touch comporta la porta di un *Widget ExtJS* a un *Componente Sling*. Per semplificare questa operazione, l’interfaccia utente touch si basa sul framework dell’interfaccia utente Granite, che fornisce già alcuni componenti Sling per l’interfaccia utente (denominati componenti dell’interfaccia utente Granite).
+In altre parole, la migrazione di una sezione dell&#39;interfaccia utente dall&#39;interfaccia classica all&#39;interfaccia touch significa portare un widget *ExtJS* in un *componente Sling*. Per semplificare questa operazione, l’interfaccia utente touch si basa sul framework dell’interfaccia utente Granite, che fornisce già alcuni componenti Sling per l’interfaccia utente (denominati componenti dell’interfaccia utente Granite).
 
 Prima di iniziare, controlla lo stato e i consigli correlati:
 
@@ -115,21 +115,21 @@ Le nozioni di base sullo sviluppo dell’interfaccia utente touch forniscono una
 
 Le finestre di dialogo sono un fattore importante durante la migrazione dei componenti:
 
-* [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) (con l’interfaccia touch)
+* [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) (con interfaccia touch)
 * [Migrazione da un componente classico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) : per aiutarti a convertire le finestre di dialogo dei componenti dell’interfaccia classica in interfaccia touch
+* [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) - per aiutarti a convertire le finestre di dialogo dei componenti dell&#39;interfaccia classica in interfaccia touch
 
    * Nell’interfaccia touch è disponibile un livello di compatibilità per aprire una finestra di dialogo dell’interfaccia classica all’interno di un &quot;wrapper dell’interfaccia touch&quot;, ma questa opzione ha funzionalità limitate e non è consigliata a lungo termine.
 
-* [Personalizzazione dei campi delle finestre di dialogo nell’interfaccia utente touch](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalizzazione dei campi delle finestre di dialogo nell&#39;interfaccia utente touch](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creazione di un nuovo componente campo dell’interfaccia utente Granite](/help/sites-developing/granite-ui-component.md)
-* [Personalizzazione dell’authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md) (con l’interfaccia touch)
+* [Personalizzazione dell&#39;authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md) (con l&#39;interfaccia touch)
 
 ## Migrazione delle console {#migrating-consoles}
 
 Puoi anche personalizzare le console:
 
-* [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md) (per l’interfaccia touch)
+* [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md) (per l&#39;interfaccia touch)
 
 ## Considerazioni correlate {#related-considerations}
 
@@ -148,10 +148,10 @@ Sebbene non siano direttamente correlate a una migrazione all’interfaccia uten
 Per informazioni complete sullo sviluppo dell’AEM, consulta la raccolta di risorse sotto:
 
 * [Guida utente sullo sviluppo](/help/sites-developing/getting-started.md)
-* [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Sites - Tutorials e video](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [Documentazione dell&#39;interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Tutorials e video su Sites 6.5](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html) di AEM
 * [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

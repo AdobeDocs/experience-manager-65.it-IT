@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Puoi personalizzare l’aspetto e utilizzare metadati personalizzati in una notifica e-mail. AEM Forms fornisce un modello preconfigurato per le notifiche e-mail. Puoi personalizzare il modello preconfigurato o crearne uno nuovo.
 
-I modelli di notifica e-mail si basano su [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Queste e-mail si adattano a client e-mail e dimensioni di schermo diversi. Inoltre, lo stile dell’e-mail è definito all’interno del modello.
+I modelli di notifica e-mail si basano su [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Queste e-mail si adattano a client e-mail e dimensioni di schermo diversi. Inoltre, lo stile dell’e-mail è definito all’interno del modello.
 
 L’immagine seguente mostra una notifica e-mail personalizzata:
 
@@ -40,7 +40,7 @@ AEM Forms fornisce automaticamente un modello per le notifiche e-mail. Il modell
 
 1. Sostituisci il contenuto del file htmlEmailTemplate.txt con contenuto personalizzato.
 
-   Un modello di notifica e-mail è un [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Per modificare l’aspetto del modello, puoi sostituire il codice html esistente con il codice personalizzato.
+   Un modello di notifica e-mail è un [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Per modificare l’aspetto del modello, puoi sostituire il codice html esistente con il codice personalizzato.
 
 1. Salva il file. Ora il modello personalizzato è pronto per l’uso.
 
@@ -56,7 +56,7 @@ AEM Forms fornisce automaticamente un modello per le notifiche e-mail. Il modell
 
 1. Aggiungi al file un codice HTML personalizzato.
 
-   Un modello di notifica e-mail è un [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Puoi aggiungere al file un codice HTML personalizzato per creare un modello.
+   Un modello di notifica e-mail è un [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Puoi aggiungere al file un codice HTML personalizzato per creare un modello.
 
 1. Salva il file. Il modello è pronto per essere utilizzato nel passaggio Assegna attività.
 
@@ -72,4 +72,4 @@ Il passaggio Assegna attività è configurato per l’utilizzo del modello prede
 
 1. Fare clic su OK. Il modello viene modificato.
 
-Una notifica e-mail utilizza anche [metadati](../../forms/using/use-metadata-in-email-notifications.md). Ad esempio, data di scadenza, priorità, nome del flusso di lavoro e altro ancora. Puoi anche configurare il modello da utilizzare [metadati personalizzati](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
+Una notifica e-mail utilizza anche [metadati](../../forms/using/use-metadata-in-email-notifications.md). Ad esempio, data di scadenza, priorità, nome del flusso di lavoro e altro ancora. Puoi anche configurare il modello per l&#39;utilizzo di [metadati personalizzati](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

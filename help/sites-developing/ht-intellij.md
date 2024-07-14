@@ -41,9 +41,9 @@ Quindi, seguire le istruzioni di installazione riportate in quella pagina.
 
 ### Configurare il progetto AEM in base a Maven {#set-up-your-aem-project-based-on-maven}
 
-Quindi, imposta il progetto utilizzando Maven come descritto in [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Quindi, configura il tuo progetto utilizzando Maven come descritto in [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Per iniziare a lavorare con i progetti AEM in IntelliJ IDEA, la configurazione di base in [Guida introduttiva tra 5 minuti](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) è sufficiente.
+Per iniziare a utilizzare i progetti AEM in IntelliJ IDEA, è sufficiente la configurazione di base in [Guida introduttiva tra 5 minuti](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
 
 ### Preparare il supporto JSP per IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
@@ -52,14 +52,14 @@ IntelliJ IDEA può anche fornire supporto nell’utilizzo di JSP, ad esempio:
 * completamento automatico delle librerie di tag
 * conoscenza degli oggetti definiti da `<cq:defineObjects />` e `<sling:defineObjects />`
 
-Affinché ciò funzioni, segui le istruzioni su [Come utilizzare le JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Affinché ciò funzioni, segui le istruzioni su [Come lavorare con JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ### Importare il progetto Maven {#import-the-maven-project}
 
-1. Apri **Importa** dialogo in IntelliJ IDEA di
+1. Apri la finestra di dialogo **Importa** in IntelliJ IDEA tramite
 
-   * selezione **Importa progetto** nella schermata di benvenuto se non hai ancora aperto un progetto
-   * selezione **File > Importa progetto** dal menu principale
+   * se non hai ancora aperto un progetto, seleziona **Importa progetto** nella schermata di benvenuto
+   * selezionando **File > Importa progetto** dal menu principale
 
 1. Nella finestra di dialogo Importa, seleziona il file POM del progetto.
 
@@ -69,7 +69,7 @@ Affinché ciò funzioni, segui le istruzioni su [Come utilizzare le JSP](/help/s
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. Continuare le seguenti finestre di dialogo facendo clic su **Successivo** e **Fine**.
+1. Continuare le seguenti finestre di dialogo facendo clic su **Avanti** e **Fine**.
 1. È ora configurato per lo sviluppo AEM utilizzando IntelliJ IDEA
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
@@ -85,20 +85,20 @@ Per il debug di JSP con IntelliJ IDEA sono necessari i passaggi seguenti
 
 #### Configurare un facet web nel progetto {#set-up-a-web-facet-in-the-project}
 
-IntelliJ IDEA deve capire dove trovare le JSP per il debug. Perché IDEA non può interpretare `content-package-maven-plugin` deve essere configurato manualmente.
+IntelliJ IDEA deve capire dove trovare le JSP per il debug. Poiché IDEA non è in grado di interpretare le impostazioni di `content-package-maven-plugin`, è necessario configurarle manualmente.
 
 1. Vai a **File > Struttura progetto**
-1. Seleziona la **Contenuto** modulo
-1. Clic **+** sopra l’elenco dei moduli e seleziona **Web**
-1. Come directory delle risorse Web, selezionare `content/src/main/content/jcr_root subdirectory` come mostrato nella schermata seguente.
+1. Seleziona il modulo **Contenuto**
+1. Fai clic su **+** sopra l&#39;elenco dei moduli e seleziona **Web**
+1. Come directory delle risorse Web, seleziona `content/src/main/content/jcr_root subdirectory` del progetto come mostrato nella schermata seguente.
 
 ![chlimage_1-48](assets/chlimage_1-48a.png)
 
 #### Installare il plug-in di supporto JSR45 {#install-the-jsr-support-plugin}
 
-1. Vai a **Plug-in** nelle impostazioni IntelliJ IDEA
-1. Accedi a **Integrazione JSR45** Collega il plug-in e seleziona la casella di controllo accanto
-1. Clic **Applica**
+1. Vai al riquadro **Plug-in** nelle impostazioni IntelliJ IDEA
+1. Passa al plug-in **Integrazione JSR45** e seleziona la casella di controllo accanto
+1. Fai clic su **Applica**
 1. Riavvia IntelliJ IDEA quando richiesto a
 
 ![chlimage_1-49](assets/chlimage_1-49a.png)
@@ -106,11 +106,11 @@ IntelliJ IDEA deve capire dove trovare le JSP per il debug. Perché IDEA non pu�
 #### Configurare un profilo di debug {#configure-a-debug-profile}
 
 1. Vai a **Esegui > Modifica configurazioni**
-1. Premi il **+** e seleziona **Controllo remoto JSR45**
-1. Nella finestra di dialogo di configurazione, seleziona **Configura** accanto a **Server applicazioni** e configurare un server generico
+1. Premi **+** e seleziona **JSR45 Remote**
+1. Nella finestra di dialogo di configurazione, seleziona **Configura** accanto a **Server applicazioni** e configura un server generico
 1. Impostare la pagina iniziale su un URL appropriato per aprire un browser all&#39;avvio del debug
-1. Rimuovi tutto **Prima del lancio** se utilizzi la sincronizzazione automatica vlt o se non configuri le attività Maven appropriate
-1. Il giorno **Avvio/Connessione** , regolare la porta, se necessario
+1. Rimuovi tutte le **attività Prima del lancio** se utilizzi la sincronizzazione automatica vlt o configura le attività Maven appropriate se non la esegui
+1. Nel riquadro **Avvio/Connessione**, regolare la porta, se necessario
 1. Copiare gli argomenti della riga di comando proposti da IntelliJ IDEA
 
 ![chlimage_1-50](assets/chlimage_1-50a.png) ![chlimage_1-51](assets/chlimage_1-51a.png)
@@ -123,7 +123,7 @@ Avvia direttamente il file JAR dell’AEM e aggiungi queste opzioni, ad esempio,
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
-Puoi anche aggiungere queste opzioni allo script iniziale in `crx-quickstart/bin/start` come mostrato di seguito.
+È inoltre possibile aggiungere queste opzioni allo script iniziale in `crx-quickstart/bin/start` come illustrato di seguito.
 
 ```shell
 # ...
@@ -150,4 +150,4 @@ Ora è tutto pronto per il debug delle JSP nell’AEM.
 
 ### Debug dei bundle con IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
-È possibile eseguire il debug del codice nei bundle utilizzando una connessione di debug remoto standard generica. Puoi seguire la [Documentazione di Jetbrain sul debug remoto](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter).
+È possibile eseguire il debug del codice nei bundle utilizzando una connessione di debug remoto standard generica. Puoi seguire la [documentazione di Jetbrain sul debug remoto](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter).

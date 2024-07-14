@@ -26,17 +26,17 @@ La funzione Punteggio e badge di AEM Communities consente di identificare e prem
 
 I principali aspetti del punteggio e dei distintivi sono:
 
-* [Assegna badge](#assign-and-revoke-badges) identificare il ruolo di un membro nella comunità.
+* [Assegna badge](#assign-and-revoke-badges) per identificare il ruolo di un membro nella community.
 
-* [Assegnazione di base dei distintivi](#enable-scoring) ai membri di incoraggiare la loro partecipazione (quantità di contenuti creati).
+* [Concessione di base di distintivi](#enable-scoring) ai membri per incoraggiarne la partecipazione (quantità di contenuti creati).
 
-* [Assegnazione avanzata di distintivi](/help/communities/advanced.md) identificare i membri come esperti (qualità dei contenuti creati).
+* [Assegnazione avanzata di distintivi](/help/communities/advanced.md) per identificare i membri come esperti (qualità del contenuto creato).
 
-**Nota** che il rilascio dei distintivi sia [non abilitato per impostazione predefinita](/help/communities/implementing-scoring.md#main-pars-text-237875536).
+**Si noti** che l&#39;assegnazione dei distintivi è [non abilitata per impostazione predefinita](/help/communities/implementing-scoring.md#main-pars-text-237875536).
 
 >[!CAUTION]
 >
->La struttura di implementazione visibile in CRXDE Liti è soggetta a modifiche una volta che l’interfaccia utente diventa disponibile.
+>La struttura di implementazione visibile in CRXDE Lite è soggetta a modifiche una volta che l’interfaccia utente diventa disponibile.
 
 ## Badge {#badges}
 
@@ -52,13 +52,13 @@ I distintivi sono differenziati in UGC a seconda che siano stati assegnati o sia
 
 ### Interfaccia utente per la gestione dei badge {#badge-management-ui}
 
-Le comunità [Console badge](/help/communities/badges.md) consente di aggiungere distintivi personalizzati che possono essere visualizzati per un membro quando guadagnato (assegnato) o quando assume un ruolo specifico nella community (assegnato).
+La console [Badge](/help/communities/badges.md) per community consente di aggiungere distintivi personalizzati che possono essere visualizzati per un membro quando guadagnato (assegnato) o quando assume un ruolo specifico nella community (assegnato).
 
 ### Badge assegnati {#assigned-badges}
 
 I badge basati sul ruolo vengono assegnati da un amministratore ai membri della community in base al loro ruolo all’interno della community.
 
-I badge assegnati (e assegnati) sono memorizzati nel selezionato [SRP](/help/communities/srp.md) e non sono direttamente accessibili. Finché non sarà disponibile un’interfaccia utente grafica, l’unico modo per assegnare i badge basati sui ruoli consiste nell’utilizzare codice o cURL. Per le istruzioni cURL, consulta la sezione intitolata [Assegnare e revocare i badge](#assign-and-revoke-badges).
+I badge assegnati (e assegnati) sono archiviati nel [SRP](/help/communities/srp.md) selezionato e non sono direttamente accessibili. Finché non sarà disponibile un’interfaccia utente grafica, l’unico modo per assegnare i badge basati sui ruoli consiste nell’utilizzare codice o cURL. Per le istruzioni cURL, vedere la sezione [Assegnare e revocare i badge](#assign-and-revoke-badges).
 
 Nella versione sono inclusi tre badge basati sui ruoli:
 
@@ -71,7 +71,7 @@ Nella versione sono inclusi tre badge basati sui ruoli:
 * **membro privilegiato**
   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-  ![assigned-badges](assets/assigned-badges.png)
+  ![badge assegnati](assets/assigned-badges.png)
 
 ### Distintivi assegnati {#awarded-badges}
 
@@ -79,8 +79,8 @@ I badge basati su premi vengono assegnati dal servizio di punteggio ai membri de
 
 Affinché i distintivi vengano visualizzati come ricompensa per l’attività, è necessario che si verifichino due cose:
 
-* La classificazione deve essere [abilitato](#enableforcomponent) per il componente funzione.
-* Le regole di punteggio e contrassegno devono essere [applicato](#applytopage) alla pagina (o alla pagina precedente) in cui è posizionato il componente.
+* Il badge deve essere [abilitato](#enableforcomponent) per il componente funzionalità.
+* Le regole per assegnazione punteggi e assegnazione badge devono essere [applicate](#applytopage) alla pagina (o al predecessore) in cui è posizionato il componente.
 
 Nella versione sono inclusi tre badge basati su premi:
 
@@ -93,17 +93,17 @@ Nella versione sono inclusi tre badge basati su premi:
 * **bronzo**
   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-  ![badge assegnati](assets/awarded-badges.png)
+  ![distintivi assegnati](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >Le regole di punteggio possono essere configurate per assegnare punti negativi ai post contrassegnati come inappropriati e quindi influenzare il valore del punteggio. Tuttavia, una volta ottenuto un distintivo, non verrà rimosso automaticamente a causa della riduzione del punto di punteggio o di modifiche alla regola di punteggio.
 >
->I badge assegnati possono essere revocati allo stesso modo dei badge assegnati. Consulta la [Assegnare e revocare i badge](#assign-and-revoke-badges) sezione. I miglioramenti futuri includeranno un’interfaccia utente per la gestione dei badge dei membri.
+>I badge assegnati possono essere revocati allo stesso modo dei badge assegnati. Consulta la sezione [Assegnare e revocare i badge](#assign-and-revoke-badges). I miglioramenti futuri includeranno un’interfaccia utente per la gestione dei badge dei membri.
 
 ### Badge personalizzati {#custom-badges}
 
-I badge personalizzati possono essere installati utilizzando [Console badge](/help/communities/badges.md) e sono assegnati o specificati nelle regole di badge.
+I badge personalizzati possono essere installati utilizzando la [Console badge](/help/communities/badges.md) e assegnati o specificati nelle regole di badge.
 
 Se installati dalla console Badge, i badge personalizzati vengono replicati automaticamente nell’ambiente di pubblicazione.
 
@@ -111,38 +111,38 @@ Se installati dalla console Badge, i badge personalizzati vengono replicati auto
 
 Il punteggio non è abilitato per impostazione predefinita. I passaggi di base per impostare e abilitare il punteggio e l’assegnazione dei distintivi sono i seguenti:
 
-* Identificare le regole per i punti di guadagno ([regole di punteggio](#scoring-rules)).
-* Per i punti accumulati per regole di punteggio, assegna [badge](#badges) ([regole di assegnazione badge](#badging-rules)).
+* Identifica le regole per guadagnare punti ([regole punteggio](#scoring-rules)).
+* Per i punti accumulati per le regole di punteggio, assegna [distintivi](#badges) ([regole di badge](#badging-rules)).
 
-* [Applicare le regole di punteggio e badge a un sito community](#apply-rules-to-content).
-* [Abilita contrassegno per le funzioni community](#enable-badges-for-component).
+* [Applicare le regole di assegnazione dei punteggi e dei badge a un sito della community](#apply-rules-to-content).
+* [Abilita il badge per le funzionalità della community](#enable-badges-for-component).
 
-Consulta la [Test rapido](#quick-test) per abilitare il punteggio per un sito community utilizzando le regole predefinite di punteggio e contrassegno per forum e commenti.
+Consulta la sezione [Test rapido](#quick-test) per abilitare il punteggio per un sito community utilizzando le regole predefinite di punteggio e contrassegno per forum e commenti.
 
 ### Applicare regole al contenuto {#apply-rules-to-content}
 
-Per abilitare il punteggio e i badge, aggiungi le proprietà `scoringRules` e `badgingRules` a qualsiasi nodo nella struttura del contenuto del sito.
+Per abilitare il punteggio e i badge, aggiungere le proprietà `scoringRules` e `badgingRules` a qualsiasi nodo nella struttura del contenuto del sito.
 
 Se il sito è già pubblicato, dopo aver applicato tutte le regole e abilitato i componenti, ripubblica il sito.
 
 Le regole applicabili a un componente abilitato per i badge sono quelle per il nodo corrente o il suo predecessore.
 
-Se il nodo è di tipo `cq:Page` (consigliato), quindi utilizzando CRXDE|Lite, aggiungi le proprietà al relativo `jcr:content` nodo.
+Se il nodo è di tipo `cq:Page` (consigliato) e quindi si utilizza CRXDE|Lite, aggiungere le proprietà al nodo `jcr:content`.
 
 | **Proprietà** | **Tipo** | **Descrizione** |
 |---|---|---|
-| badgingRules | Stringa | un elenco di array di [regole di assegnazione badge](#badging-rules) |
+| badgingRules | Stringa | un elenco di array di [regole di badging](#badging-rules) |
 | scoringRules | Stringa | un elenco di array di [regole di punteggio](#scoring-rules) |
 
 >[!NOTE]
 >
->Se una regola di punteggio sembra non avere alcun effetto sull’assegnazione dei badge, assicurati che non sia stata bloccata dalla proprietà scoringRules della regola di punteggio. Vedi la sezione intitolata [Regole di assegnazione dei badge](#badging-rules).
+>Se una regola di punteggio sembra non avere alcun effetto sull’assegnazione dei badge, assicurati che non sia stata bloccata dalla proprietà scoringRules della regola di punteggio. Vedere la sezione con titolo [Regole di assegnazione dei badge](#badging-rules).
 
 ### Abilita badge per componente {#enable-badges-for-component}
 
-Le regole di assegnazione e punteggio sono attive solo per le istanze dei componenti per i quali è stato abilitato il badge modificando la configurazione del componente in [modalità di authoring](/help/communities/author-communities.md).
+Le regole di assegnazione e punteggio sono attive solo per le istanze dei componenti per i quali è stato abilitato il contrassegno modificando la configurazione del componente in [modalità di creazione](/help/communities/author-communities.md).
 
-Una proprietà booleana, `allowBadges`, attiva/disattiva la visualizzazione dei badge per un’istanza del componente. È configurabile in [finestra di dialogo per modifica componente](/help/communities/author-communities.md) per i componenti forum, controllo qualità e commento tramite una casella di controllo etichettata **Visualizza badge**.
+Una proprietà booleana, `allowBadges`, abilita/disabilita la visualizzazione dei badge per un&#39;istanza del componente. È configurabile nella [finestra di dialogo per modifica dei componenti](/help/communities/author-communities.md) per i componenti forum, QnA e commento tramite una casella di controllo etichettata **Distintivi di visualizzazione**.
 
 #### Esempio: allowBadges per l’istanza del componente Forum {#example-allowbadges-for-forum-component-instance}
 
@@ -169,7 +169,7 @@ Le regole di punteggio vengono ereditate ma non aggiunte. Ad esempio:
 
 In presenza di più regole di punteggio, i punteggi vengono mantenuti separatamente per ciascuna regola.
 
-Le regole di punteggio sono nodi di tipo `cq:Page` con le proprietà sul relativo `jcr:content` che specificano l’elenco delle sottoregole che lo definiscono.
+Le regole di punteggio sono nodi di tipo `cq:Page` con proprietà nel nodo `jcr:content` che specificano l&#39;elenco di regole secondarie che lo definiscono.
 
 I punteggi vengono memorizzati in SRP.
 
@@ -179,7 +179,7 @@ I punteggi vengono memorizzati in SRP.
 >
 >I nomi delle regole di punteggio devono essere univoci a livello globale; non devono terminare con lo stesso nome.
 >
->Un esempio di cosa *non* da fare:
+>Esempio di cosa *non* fare:
 >
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
@@ -198,12 +198,12 @@ Per impostazione predefinita, i punti vengono assegnati al membro che esegue un&
 
 Ogni regola secondaria può essere inclusa in una o più regole di punteggio.
 
-Il nome della regola secondaria segue in genere il pattern dell’utilizzo di *oggetto*, *oggetto*, e *verbo*. Ad esempio:
+Il nome della regola secondaria segue in genere il modello di utilizzo di un *oggetto*, *oggetto* e *verbo*. Ad esempio:
 
 * member-comment-create
 * membro-ricevente-voto
 
-I sottoruoli sono nodi di tipo `cq:Page` con le proprietà sul relativo `jcr:content`nodo che specifica [verbi e argomenti](#topics-and-verbs) .
+I substrati sono nodi di tipo `cq:Page` con proprietà nel nodo `jcr:content` che specificano i [verbi e argomenti](#topics-and-verbs).
 
 <table>
  <tbody>
@@ -223,7 +223,7 @@ I sottoruoli sono nodi di tipo `cq:Page` con le proprietà sul relativo `jcr:con
      <li>possono esistere più proprietà verbo, ma non duplicati</li>
      <li>il valore è il punteggio da applicare per questo evento</li>
      <li>il valore può essere positivo o negativo</li>
-     <li>un elenco di verbi supportati nella versione è nel <a href="#topics-and-verbs">Argomenti e verbi</a> sezione</li>
+     <li>un elenco di verbi supportati nella versione è disponibile nella sezione <a href="#topics-and-verbs">Argomenti e verbi</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -233,7 +233,7 @@ I sottoruoli sono nodi di tipo `cq:Page` con le proprietà sul relativo `jcr:con
     <ul>
      <li>facoltativo; limita la regola secondaria ai componenti community identificati dagli argomenti dell’evento</li>
      <li>se specificato : valore è una stringa con più valori di argomenti evento</li>
-     <li>un elenco di argomenti della versione è disponibile nella sezione <a href="#topics-and-verbs">Argomenti e verbi</a> sezione</li>
+     <li>un elenco di argomenti della versione è disponibile nella sezione <a href="#topics-and-verbs">Argomenti e verbi</a></li>
      <li>l'impostazione predefinita viene applicata a tutti gli argomenti associati ai verbi</li>
     </ul> </td>
   </tr>
@@ -270,24 +270,32 @@ I sottoruoli sono nodi di tipo `cq:Page` con le proprietà sul relativo `jcr:con
 
 ### Regole e sottoregole di punteggio incluse {#included-scoring-rules-and-sub-rules}
 
-Nella versione sono incluse due regole di punteggio per [Funzione forum](/help/communities/functions.md#forum-function) (uno per ogni componente Forum e Commenti della funzione Forum ):
+Nella versione sono incluse due regole di punteggio per la [funzione forum](/help/communities/functions.md#forum-function) (una per ogni componente Forum e Commenti della funzione forum):
 
 1. /libs/settings/community/scoring/rules/comments-scoring
 
-   * subRules[] = /libs/settings/community/scoring/rules/sub-rules/member-comment-create /libs/settings/community/scoring/rules/sub-rules/member-receive-voting /libs/settings/community/scoring/rules/sub-rules/member-given-voting /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
+   * subRules[] =
+/libs/settings/community/scoring/rules/sub-rules/member-comment-create
+/libs/settings/community/scoring/rules/sub-rules/member-receive-voting
+/libs/settings/community/scoring/rules/sub-rules/member-given-voting
+/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRules[] = /libs/settings/community/scoring/rules/sub-rules/member-forum-create /libs/settings/community/scoring/rules/sub-rules/member-receive-voting /libs/settings/community/scoring/rules/sub-rules/member-given-voting /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
+   * subRules[] =
+/libs/settings/community/scoring/rules/sub-rules/member-forum-create
+/libs/settings/community/scoring/rules/sub-rules/member-receive-voting
+/libs/settings/community/scoring/rules/sub-rules/member-given-voting
+/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 **Note:**
 
-* Entrambi `rules` e `sub-rules` I nodi sono di tipo cq:Page.
+* Entrambi i nodi `rules` e `sub-rules` sono di tipo cq:Page.
 
-* `subRules` è un attributo di tipo String[] su `jcr:content` nodo.
+* `subRules` è un attributo di tipo String[] nel nodo `jcr:content` della regola.
 
 * `sub-rules` può essere condiviso tra varie regole di punteggio.
-* `rules` deve trovarsi in una posizione dell’archivio con autorizzazione di lettura per tutti.
+* `rules` deve trovarsi in un percorso archivio con autorizzazione di lettura per tutti.
 
    * I nomi delle regole devono essere univoci indipendentemente dalla posizione.
 
@@ -302,9 +310,9 @@ Le regole di assegnazione dei badge collegano le regole di assegnazione dei punt
 * Regola punteggio
 * Punteggio necessario per ottenere un distintivo specifico
 
-Le regole di assegnazione dei badge sono nodi di tipo `cq:Page` con le proprietà sul relativo `jcr:content` che correlano le regole di punteggio a punteggi e badge.
+Le regole di assegnazione dei punteggi sono nodi di tipo `cq:Page` con proprietà nel nodo `jcr:content` che correlano le regole di assegnazione dei punteggi a punteggi e badge.
 
-Le regole per il contrassegno sono costituite da un `thresholds` si tratta di un elenco ordinato di punteggi mappati su badge. I punteggi devono essere ordinati in modo crescente. Ad esempio:
+Le regole per i badge sono costituite da una proprietà `thresholds` obbligatoria che è un elenco ordinato di punteggi mappati ai badge. I punteggi devono essere ordinati in modo crescente. Ad esempio:
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -318,9 +326,9 @@ Le regole per il contrassegno sono costituite da un `thresholds` si tratta di un
 
    * Un distintivo d&#39;oro viene assegnato quando sono stati accumulati 80 punti.
 
-Le regole di assegnazione dei punteggi sono associate alle regole di assegnazione dei punteggi, che determinano l’accumulo dei punti. Vedi la sezione intitolata [Applicare regole al contenuto](#apply-rules-to-content).
+Le regole di assegnazione dei punteggi sono associate alle regole di assegnazione dei punteggi, che determinano l’accumulo dei punti. Vedere la sezione con titolo [Applica regole al contenuto](#apply-rules-to-content).
 
-Il `scoringRules` su una regola di badge limita semplicemente le regole di punteggio che possono essere abbinate a quella particolare regola di badge.
+La proprietà `scoringRules` di una regola di badge limita semplicemente le regole di punteggio che possono essere associate a quella particolare regola di badge.
 
 >[!NOTE]
 >
@@ -338,7 +346,7 @@ Il `scoringRules` su una regola di badge limita semplicemente le regole di punte
   <tr>
    <td>soglie</td>
    <td>Stringa</td>
-   <td><em>(obbligatorio)</em> Una stringa con più valori del formato 'number|path'
+   <td><em>(obbligatorio)</em> Stringa con più valori nel formato 'number|path'
     <ul>
      <li>number = score</li>
      <li>| = carattere della linea verticale (U+007C)</li>
@@ -348,19 +356,19 @@ Il `scoringRules` su una regola di badge limita semplicemente le regole di punte
   <tr>
    <td>badgingType</td>
    <td>Stringa</td>
-   <td><em>(facoltativo)</em> Identifica il motore di punteggio come "di base" o "avanzato". Per informazioni sul motore di punteggio avanzato, consulta <a href="/help/communities/advanced.md">Punteggio avanzato e badge</a>. Il valore predefinito è "basic".</td>
+   <td><em>(facoltativo)</em> identifica il motore di punteggio come "di base" o "avanzato". Per informazioni sul motore di punteggio avanzato, vedere <a href="/help/communities/advanced.md">Punteggio avanzato e distintivi</a>. Il valore predefinito è "basic".</td>
   </tr>
   <tr>
    <td>scoringRules</td>
    <td>Stringa</td>
-   <td>(<em>facoltativo</em>a) Una stringa con più valori per limitare la regola di assegnazione dei punteggi agli eventi identificati dalle regole di assegnazione dei punteggi</td>
+   <td>(<em>facoltativo</em>) Stringa con più valori per limitare la regola di assegnazione dei badge agli eventi di punteggio identificati dalle regole di assegnazione dei punteggi</td>
   </tr>
  </tbody>
 </table>
 
 ### Regole di assegnazione dei badge incluse {#included-badging-rules}
 
-Nella versione sono incluse due regole di badge che corrispondono alle [Regole per il punteggio di forum e commenti](#includedscoringrules).
+Nella versione sono incluse due regole di assegnazione dei punteggi che corrispondono alle [regole di assegnazione dei punteggi per forum e commenti](#includedscoringrules).
 
 * `/libs/settings/community/badging/rules/comments-badging`
 
@@ -368,8 +376,8 @@ Nella versione sono incluse due regole di badge che corrispondono alle [Regole p
 
 **Note:**
 
-* `rules` I nodi sono di tipo cq:Page.
-* `rules` deve trovarsi in una posizione dell’archivio con autorizzazione di lettura per tutti.
+* `rules` nodi sono di tipo cq:Page.
+* `rules` deve trovarsi in un percorso archivio con autorizzazione di lettura per tutti.
 
    * I nomi delle regole devono essere univoci indipendentemente dalla posizione.
 
@@ -379,30 +387,34 @@ Eventuali modifiche o aggiunte apportate alle regole di badge o alle immagini ne
 
 ## Assegnare e revocare i badge {#assign-and-revoke-badges}
 
-I distintivi possono essere assegnati ai membri utilizzando [console dei membri](/help/communities/members.md#badges-tab) o a livello di programmazione utilizzando i comandi cURL.
+I badge possono essere assegnati ai membri utilizzando la [console membri](/help/communities/members.md#badges-tab) o a livello di programmazione utilizzando i comandi cURL.
 
 I seguenti comandi cURL mostrano ciò che è necessario per una richiesta HTTP per l’assegnazione e la revoca dei badge. Il formato di base è:
 
-cURL -i -X POST -H *intestazione* -u *accesso* -F *operazione* -F *badge* *member-profile-url*
+cURL -i -X POST -H *intestazione* -u *firma* -F *operazione* -F *distintivo* *membro-profilo-url*
 
-*intestazione* = intestazione personalizzata &quot;Accept:application/json&quot; da passare al server (obbligatoria)
+*intestazione* = &quot;Accept:application/json&quot;
+intestazione personalizzata da passare al server (obbligatoria)
 
-*accesso* = administrator-id:password, ad esempio, admin:admin
+*accesso* = administrator-id:password
+ad esempio, admin:admin
 
-*operazione* = &quot;:operation=social:assignBadge&quot; OPPURE &quot;:operation=social:deleteBadge&quot;
+*operation* = &quot;:operation=social:assignBadge&quot; OPPURE &quot;:operation=social:deleteBadge&quot;
 
-*badge* = &quot;badgeContentPath=&quot;*badge-image-file*&quot;
+*badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = la posizione del file di immagine del badge nell’archivio, ad esempio /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = percorso del file di immagine del badge nell&#39;archivio
+ad esempio, /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = endpoint per il profilo del membro al momento della pubblicazione, ad esempio, https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = endpoint per il profilo del membro al momento della pubblicazione
+ad esempio, https://&lt;server>:&lt;porta>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
->Il *member-profile-url*:
+>*member-profile-url*:
 >
->* Può fare riferimento a un’istanza Autore se [Servizio tunnel](/help/communities/users.md#tunnel-service) è abilitato.
->* Può essere un nome oscuro e casuale - vedi [Elenco di controllo della sicurezza](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) relativo all’ID autorizzabile.
+>* È possibile fare riferimento a un&#39;istanza di authoring se il servizio [Tunnel](/help/communities/users.md#tunnel-service) è abilitato.
+>* Può essere un nome casuale oscuro. Vedere [Elenco di controllo protezione](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) relativo all&#39;ID autorizzabile.
 
 ### Esempi: {#examples}
 
@@ -430,15 +442,15 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 Quando i membri interagiscono con le funzionalità delle community, vengono inviati eventi che possono attivare listener asincroni, come notifiche e punteggi.
 
-L’istanza SocialEvent di un componente registra gli eventi come `actions` che si verificano per un `topic`. SocialEvent include un metodo per restituire un `verb` associato all’azione. È presente un *n-1* relazione tra `actions` e `verbs`.
+L&#39;istanza SocialEvent di un componente registra gli eventi come `actions` che si verificano per un `topic`. SocialEvent include un metodo per restituire un `verb` associato all&#39;azione. Esiste una relazione *n-1* tra `actions` e `verbs`.
 
-Per i componenti community consegnati, le tabelle seguenti descrivono `verbs` definito per ogni `topic` disponibile per l’uso in [sottoregole di punteggio](#scoring-sub-rules).
+Per i componenti community consegnati, le tabelle seguenti descrivono i `verbs` definiti per ogni `topic` disponibile nelle [sottoregole di punteggio](#scoring-sub-rules).
 
 >[!NOTE]
 >
->Una nuova proprietà booleana, `allowBadges`, attiva/disattiva la visualizzazione dei badge per un’istanza del componente. È configurabile in aggiornato [finestre di dialogo per modifica del componente](/help/communities/author-communities.md) tramite una casella di controllo etichettata **Visualizza badge**.
+>Una nuova proprietà booleana, `allowBadges`, abilita/disabilita la visualizzazione dei badge per un&#39;istanza del componente. È configurabile nelle [finestre di dialogo di modifica dei componenti](/help/communities/author-communities.md) aggiornate tramite una casella di controllo con etichetta **Distintivi visualizzati**.
 
-**[Componente calendario](/help/communities/calendar.md)**
+**[Componente Calendario](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descrizione** |
@@ -458,7 +470,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | AGGIORNA | commento del membro modificato |
 | ELIMINA | commento del membro eliminato |
 
-**[Componente Libreria file](/help/communities/file-library.md)**
+**[Componente Libreria File](/help/communities/file-library.md)**
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrizione** |
@@ -488,7 +500,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | AGGIORNA | articolo del blog o commento di un membro è stato modificato |
 | ELIMINA | l&#39;articolo o il commento del blog del membro è stato eliminato |
 
-**[Componente D/R](/help/communities/working-with-qna.md)**
+**[Componente QnA](/help/communities/working-with-qna.md)**
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrizione** |
@@ -500,7 +512,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | DESELEZIONA | la risposta del membro è deselezionata |
 | ELIMINA | la domanda o la risposta QnA del membro viene eliminata |
 
-**[Componente Recensioni](/help/communities/reviews.md)**
+**[Componente recensioni](/help/communities/reviews.md)**
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrizione** |
@@ -517,7 +529,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally/rating
 | AGGIUNGI VALUTAZIONE | il contenuto dell&#39;utente è stato rivalutato |
 | RIMUOVI VALUTAZIONE | il contenuto dell&#39;utente non è stato valutato correttamente |
 
-**[Componente voto](/help/communities/voting.md)**
+**[Componente Votazione](/help/communities/voting.md)**
 SocialEvent `topic`= com/adobe/cq/social/tally/voting
 
 | **Verbo** | **Descrizione** |
@@ -539,9 +551,9 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ### Eventi dei componenti personalizzati {#custom-component-events}
 
-Per un componente personalizzato, viene creata un’istanza di SocialEvent per registrare gli eventi del componente come `actions` che si verificano per un `topic`.
+Per un componente personalizzato, viene creata un&#39;istanza di SocialEvent per registrare gli eventi del componente come `actions` che si verificano per `topic`.
 
-Per supportare il punteggio, SocialEvent deve ignorare il metodo `getVerb()` in modo che un `verb` viene restituito per ogni `action`. Il `verb` restituito per un&#39;azione può essere uno dei valori comunemente utilizzati (ad esempio `POST`) o uno specifico per il componente (ad esempio `ADD RATING`). È presente un *n-1* relazione tra `actions` e `verbs`.
+Per supportare il punteggio, SocialEvent deve eseguire l&#39;override del metodo `getVerb()` in modo che venga restituito un `verb` appropriato per ogni `action`. Il `verb` restituito per un&#39;azione può essere uno usato comunemente (ad esempio `POST`) o uno specializzato per il componente (ad esempio `ADD RATING`). Esiste una relazione *n-1* tra `actions` e `verbs`.
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -549,13 +561,13 @@ Per supportare il punteggio, SocialEvent deve ignorare il metodo `getVerb()` in 
 
 Se sono state applicate regole di punteggio e badge al contenuto del sito web, ma i badge non vengono assegnati per alcuna attività, assicurati che i badge siano stati abilitati per l’istanza di quel componente.
 
-Consulta [Abilita badge per componente](#enable-badges-for-component).
+Vedere [Abilitare i badge per il componente](#enable-badges-for-component).
 
 ### La regola punteggio non ha alcun effetto {#scoring-rule-has-no-effect}
 
 Se al contenuto del sito web sono state applicate regole di punteggio e badge e questi vengono assegnati per alcune azioni, ma non per altre, verifica che la regola di badge non abbia limitato le regole di punteggio a cui si applica.
 
-Consulta la `scoringRules` proprietà di [Regole di assegnazione dei badge](#badging-rules).
+Vedere la proprietà `scoringRules` di [Regole di assegnazione dei badge](#badging-rules).
 
 ### Tipo sensibile a maiuscole e minuscole {#case-sensitive-typo}
 
@@ -565,9 +577,9 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
 
 ## Test rapido {#quick-test}
 
-È possibile provare rapidamente a assegnare punteggi e contrassegni utilizzando [Tutorial introduttivo](/help/communities/getting-started.md) (coinvolgere) sito:
+È possibile provare rapidamente a assegnare punteggi e contrassegni utilizzando il sito [Esercitazione introduttiva](/help/communities/getting-started.md) (coinvolgimento):
 
-* Accedi a CRXDE Liti durante la creazione.
+* Accedi a CRXDE Lite durante la creazione.
 * Passa alla pagina base:
 
    * /content/sites/engagement/en/jcr:content
@@ -578,9 +590,9 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
    * **Tipo**: `String`
    * Seleziona **Più**
    * Seleziona **Aggiungi**
-   * Invio `/libs/settings/community/badging/rules/forums-badging`
+   * Immetti `/libs/settings/community/badging/rules/forums-badging`
    * Seleziona **+**
-   * Invio `/libs/settings/community/badging/rules/comments-badging`
+   * Immetti `/libs/settings/community/badging/rules/comments-badging`
    * Seleziona **OK**
 
 * Aggiungere la proprietà scoringRules:
@@ -589,9 +601,9 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
    * **Tipo**: `String`
    * Seleziona **Più**
    * Seleziona **Aggiungi**
-   * Invio `/libs/settings/community/scoring/rules/forums-scoring`
+   * Immetti `/libs/settings/community/scoring/rules/forums-scoring`
    * Seleziona **+**
-   * Invio `/libs/settings/community/scoring/rules/comments-scoring`
+   * Immetti `/libs/settings/community/scoring/rules/comments-scoring`
    * Seleziona **OK**
 
 * Seleziona **Salva tutto**.
@@ -600,7 +612,7 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
 
 Quindi, assicurati che i componenti forum e commenti consentano la visualizzazione dei badge:
 
-* Di nuovo utilizzando CRXDE Liti.
+* Di nuovo utilizzando CRXDE Lite.
 * Passa al componente forum
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -613,13 +625,13 @@ Quindi, assicurati che i componenti forum e commenti consentano la visualizzazio
 
 ![test-forum-component](assets/test-forum-component.png)
 
-Avanti, [ripubblicare](/help/communities/sites-console.md#publishing-the-site) il sito della community.
+Successivamente, [ripubblica](/help/communities/sites-console.md#publishing-the-site) il sito della community.
 
 Infine,
 
 * Individua il componente nell’istanza di pubblicazione.
 * Accedi come membro della community (ad esempio, weston.mccall@dodgit.com / password).
-* Pubblica un nuovo argomento forum.
+* Post un nuovo argomento forum.
 * Affinché il badge sia visibile, è necessario aggiornare la pagina.
 
    * Esci e accedi come membro diverso della community (ad esempio: aaron.mcdonald@mailinator.com/password).
@@ -632,8 +644,8 @@ Questo dovrebbe far sì che il membro della community riceva un distintivo in br
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base su punteggio e distintivi](/help/communities/configure-scoring.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Nozioni fondamentali su punteggio e distintivi](/help/communities/configure-scoring.md) per gli sviluppatori.
 
-Per informazioni sul motore di punteggio avanzato, consulta [Punteggio avanzato e badge](/help/communities/advanced.md).
+Per informazioni sul motore di punteggio avanzato, vedere [Punteggio avanzato e distintivi](/help/communities/advanced.md).
 
 La classifica configurabile [componente](/help/communities/enabling-leaderboard.md) e [funzione](/help/communities/functions.md#leaderboard-function) semplifica la visualizzazione dei membri e dei relativi punteggi in un sito community.

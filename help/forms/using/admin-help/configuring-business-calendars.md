@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configurazione dei calendari aziendali {#configuring-business-calendars}
 
-*Calendari aziendali* definisci i giorni lavorativi e non lavorativi (ad esempio, festività legali, fine settimana e giorni di chiusura della società) per la tua organizzazione. Quando si utilizzano i calendari aziendali, i moduli AEM saltano i giorni non lavorativi durante l’esecuzione di determinati calcoli di date. In Workbench è possibile specificare se utilizzare i calendari aziendali per gli eventi associati all&#39;utente, ad esempio promemoria di attività, scadenze e inoltri per livelli di priorità, oppure per le azioni non associate agli utenti, ad esempio Eventi timer e Servizio di attesa.
+*I calendari aziendali* definiscono i giorni lavorativi e non lavorativi (ad esempio le festività legali, i fine settimana e i giorni di chiusura della società) per l&#39;organizzazione. Quando si utilizzano i calendari aziendali, i moduli AEM saltano i giorni non lavorativi durante l’esecuzione di determinati calcoli di date. In Workbench è possibile specificare se utilizzare i calendari aziendali per gli eventi associati all&#39;utente, ad esempio promemoria di attività, scadenze e inoltri per livelli di priorità, oppure per le azioni non associate agli utenti, ad esempio Eventi timer e Servizio di attesa.
 
 Ad esempio, un promemoria dell’attività è configurato per essere visualizzato tre giorni lavorativi dopo l’assegnazione dell’attività a un utente. L&#39;attività viene assegnata giovedì. Tuttavia, i tre giorni successivi non sono giorni lavorativi perché il venerdì è una festa nazionale e i due giorni successivi sono giorni festivi. Il promemoria è quindi inviato il mercoledì della prossima settimana.
 
@@ -28,7 +28,7 @@ Ad esempio, un promemoria dell’attività è configurato per essere visualizzat
 
 ## Utilizzo del calendario aziendale predefinito {#using-the-default-business-calendar}
 
-I moduli AEM forniscono un calendario aziendale predefinito (denominato *Calendario incorporato*) che indica sabato e domenica come giorni non lavorativi. Se tutti gli utenti dell&#39;organizzazione hanno gli stessi giorni non lavorativi, è possibile aggiornare il calendario aziendale predefinito in base alle esigenze dell&#39;organizzazione. Quando si utilizza solo il calendario aziendale predefinito, non è necessario abilitare i calendari aziendali in Gestione utenti o fornire mapping. Quando non vengono definiti altri calendari aziendali, i moduli AEM utilizzano il calendario aziendale predefinito.
+I moduli AEM forniscono un calendario aziendale predefinito, denominato *Calendario predefinito*, che indica i sabati e le domeniche come giorni non lavorativi. Se tutti gli utenti dell&#39;organizzazione hanno gli stessi giorni non lavorativi, è possibile aggiornare il calendario aziendale predefinito in base alle esigenze dell&#39;organizzazione. Quando si utilizza solo il calendario aziendale predefinito, non è necessario abilitare i calendari aziendali in Gestione utenti o fornire mapping. Quando non vengono definiti altri calendari aziendali, i moduli AEM utilizzano il calendario aziendale predefinito.
 
 ## Impostazione di più calendari aziendali {#setting-up-multiple-business-calendars}
 
@@ -42,17 +42,17 @@ Se alcuni utenti dell&#39;organizzazione dispongono di giorni non lavorativi div
 
    Se un utente è membro di due gruppi diversi e tali gruppi sono mappati a due calendari aziendali diversi, i moduli AEM utilizzeranno il primo calendario individuato nei risultati di ricerca. In questo caso, è consigliabile utilizzare le chiavi del calendario aziendale per associare gli utenti ai calendari aziendali.
 
-   **Chiavi calendario aziendale:** È possibile assegnare un calendario aziendale a un utente in base a una chiave del calendario aziendale, che è un&#39;impostazione specificata in Gestione utente. È quindi possibile mappare la chiave del calendario aziendale a un calendario aziendale nel flusso di lavoro di Forms.
+   **Chiavi del calendario aziendale:** È possibile assegnare un calendario aziendale a un utente in base a una chiave del calendario aziendale, che è un&#39;impostazione specificata in Gestione utenti. È quindi possibile mappare la chiave del calendario aziendale a un calendario aziendale nel flusso di lavoro di Forms.
 
-   Il modo in cui si assegnano le chiavi del calendario aziendale agli utenti dipende dal fatto che si utilizzi un dominio enterprise, locale o ibrido. Per informazioni dettagliate sulla configurazione dei domini, consulta [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains).
+   Il modo in cui si assegnano le chiavi del calendario aziendale agli utenti dipende dal fatto che si utilizzi un dominio enterprise, locale o ibrido. Per informazioni dettagliate sulla configurazione dei domini, vedere [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-   Se si utilizza un dominio locale o ibrido, le informazioni relative agli utenti vengono memorizzate solo nel database Gestione utenti. Per impostare la chiave del calendario aziendale per questi utenti, immettere una stringa nel campo Chiave del calendario aziendale quando si aggiunge o si modifica un utente in Gestione utente. (vedere [Aggiunta e configurazione di utenti](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) È quindi possibile mappare le chiavi del calendario aziendale (le stringhe) ai calendari aziendali nel flusso di lavoro dei moduli. (vedere [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se si utilizza un dominio locale o ibrido, le informazioni relative agli utenti vengono memorizzate solo nel database Gestione utenti. Per impostare la chiave del calendario aziendale per questi utenti, immettere una stringa nel campo Chiave del calendario aziendale quando si aggiunge o si modifica un utente in Gestione utente. (Vedi [Aggiunta e configurazione di utenti](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) È quindi possibile mappare le chiavi del calendario aziendale (le stringhe) ai calendari aziendali nel flusso di lavoro dei moduli. (Vedi [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Se si utilizza un dominio enterprise, le informazioni sugli utenti risiedono in un sistema di storage di terze parti, ad esempio una directory LDAP, che User Management sincronizza con il database User Management. Questo consente di mappare una chiave del calendario aziendale a un campo nella directory LDAP. Ad esempio, se ogni record utente della directory contiene un campo &quot;paese&quot; e si desidera assegnare calendari aziendali in base al paese in cui si trova l&#39;utente, specificare il nome del campo &quot;paese&quot; nel campo Chiave calendario aziendale quando si specificano le impostazioni utente per la directory. (vedere [Configurazione delle directory](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) È quindi possibile mappare le chiavi del calendario aziendale (i valori definiti per il campo &quot;paese&quot; nella directory LDAP) ai calendari aziendali nel flusso di lavoro dei moduli. (vedere [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se si utilizza un dominio enterprise, le informazioni sugli utenti risiedono in un sistema di storage di terze parti, ad esempio una directory LDAP, che User Management sincronizza con il database User Management. Questo consente di mappare una chiave del calendario aziendale a un campo nella directory LDAP. Ad esempio, se ogni record utente della directory contiene un campo &quot;paese&quot; e si desidera assegnare calendari aziendali in base al paese in cui si trova l&#39;utente, specificare il nome del campo &quot;paese&quot; nel campo Chiave calendario aziendale quando si specificano le impostazioni utente per la directory. (Vedi [Configurazione delle directory](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) È quindi possibile mappare le chiavi del calendario aziendale (i valori definiti per il campo &quot;paese&quot; nella directory LDAP) ai calendari aziendali nel flusso di lavoro dei moduli. (Vedi [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-1. Nei flussi di lavoro dei moduli, definisci un calendario per ogni set di utenti che condividono gli stessi giorni non lavorativi. (vedere [Creare o aggiornare un calendario aziendale](configuring-business-calendars.md#create-or-update-a-business-calendar).)
-1. Nel flusso di lavoro dei moduli, mappa le chiavi del calendario aziendale o le appartenenze ai gruppi per ogni calendario. (vedere [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
-1. In Workbench, lo sviluppatore del processo sceglie se utilizzare i calendari aziendali per promemoria, scadenze e riassegnazione. (vedere [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+1. Nei flussi di lavoro dei moduli, definisci un calendario per ogni set di utenti che condividono gli stessi giorni non lavorativi. (Vedi [Crea o aggiorna un calendario aziendale](configuring-business-calendars.md#create-or-update-a-business-calendar).)
+1. Nel flusso di lavoro dei moduli, mappa le chiavi del calendario aziendale o le appartenenze ai gruppi per ogni calendario. (Vedi [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+1. In Workbench, lo sviluppatore del processo sceglie se utilizzare i calendari aziendali per promemoria, scadenze e riassegnazione. (Vedi [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
    Se lo sviluppatore del processo sceglie di utilizzare i calendari aziendali, i moduli AEM selezioneranno dinamicamente il calendario aziendale appropriato in base all&#39;impostazione Gestione utente e ai mapping del calendario aziendale definiti in Administration Console oppure, se non esistono mapping, utilizzeranno il calendario predefinito.
 
@@ -67,12 +67,12 @@ Se l&#39;organizzazione contiene diversi gruppi di utenti che hanno giorni non l
 >Se non si crea un calendario aziendale, verrà utilizzato il calendario predefinito.
 
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro di Forms > Calendari aziendali.
-1. Per aggiungere un nuovo calendario aziendale, fare clic su ![bus_cal_plus](assets/bus_cal_plus.png). Il testo *Nuovo calendario* nell&#39;elenco a discesa. Selezionare il testo e digitare un altro nome per il calendario.
+1. Per aggiungere un nuovo calendario aziendale, fare clic su ![bus_cal_plus](assets/bus_cal_plus.png). Il testo *Nuovo calendario* viene visualizzato nell&#39;elenco a discesa. Selezionare il testo e digitare un altro nome per il calendario.
 
    Per modificare un calendario aziendale esistente, selezionarlo dall&#39;elenco a discesa.
 
 1. In Giorni non lavorativi predefiniti selezionare qualsiasi giorno non lavorativo settimanale, ad esempio i fine settimana.
-1. [Facoltativo] Selezionare Usa l&#39;orario di ufficio e specificare l&#39;orario di inizio e di fine per i giorni lavorativi.
+1. [Facoltativo] Selezionare Usa orario di lavoro e specificare l&#39;orario di inizio e di fine per i giorni lavorativi.
 
    Se si seleziona questa opzione, un evento che si verifica prima dell&#39;intervallo di tempo specificato viene spostato all&#39;inizio dell&#39;intervallo di tempo e un evento che si verifica dopo l&#39;intervallo di tempo viene spostato all&#39;ora di inizio del giorno lavorativo successivo.
 
@@ -82,7 +82,7 @@ Se l&#39;organizzazione contiene diversi gruppi di utenti che hanno giorni non l
 
    Per rimuovere un giorno non lavorativo dall&#39;elenco, fare clic su ![bus_cal_trash](assets/bus_cal_trash.png) accanto al giorno.
 
-1. [Facoltativo] Se questo calendario deve essere quello predefinito, selezionare Calendario predefinito. Il calendario predefinito viene utilizzato quando non esiste alcun altro mapping di calendario per gli eventi associati all&#39;utente o non è specificato alcun calendario aziendale per l&#39;evento timer o il servizio di attesa. Impossibile eliminare il calendario predefinito.
+1. [Facoltativo] Se il calendario deve essere quello predefinito, selezionare Calendario predefinito. Il calendario predefinito viene utilizzato quando non esiste alcun altro mapping di calendario per gli eventi associati all&#39;utente o non è specificato alcun calendario aziendale per l&#39;evento timer o il servizio di attesa. Impossibile eliminare il calendario predefinito.
 1. Dopo aver definito i giorni non lavorativi, selezionare Calendario abilitato per attivarlo e quindi fare clic su Salva.
 
    Se si aggiorna un calendario esistente, la nuova versione viene applicata immediatamente e viene utilizzata per tutti i calcoli del calendario aziendale, inclusi i task già in esecuzione.
@@ -112,7 +112,7 @@ Per associare un calendario aziendale a un utente è possibile utilizzare due me
 
 1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Calendari aziendali, quindi fare clic sulla scheda Mappatura.
 1. Nell&#39;elenco System Will Use selezionare Groups Defined By The Directory Server (Gruppi definiti dal server delle directory).
-1. Nella scheda Mapping selezionare Visualizza gruppi di servizi directory. Viene visualizzato un elenco contenente i gruppi definiti in Gestione utente. (vedere [Impostazioni directory](/help/forms/using/admin-help/configuring-directories.md#directory-settings).)
+1. Nella scheda Mapping selezionare Visualizza gruppi di servizi directory. Viene visualizzato un elenco contenente i gruppi definiti in Gestione utente. (Vedi [Impostazioni directory](/help/forms/using/admin-help/configuring-directories.md#directory-settings).)
 
    >[!NOTE]
    >

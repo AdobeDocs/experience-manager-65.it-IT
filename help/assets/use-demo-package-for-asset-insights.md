@@ -1,5 +1,5 @@
 ---
-title: Usa pacchetto demo per Informazioni su risorse
+title: Utilizza il pacchetto demo per Approfondimenti Assets
 description: Utilizza il pacchetto demo per abilitare Adobe Assets Insights per acquisire dati da una pagina web e generarne di nuovi.
 contentOwner: AG
 role: User, Admin
@@ -13,14 +13,14 @@ ht-degree: 2%
 
 ---
 
-# Usa pacchetto demo per Informazioni su risorse {#using-demo-package-for-asset-insights}
+# Utilizza il pacchetto demo per Approfondimenti Assets {#using-demo-package-for-asset-insights}
 
 Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisire dati da una pagina web di esempio e generarne di nuovi.
 
-## [!DNL Use Experience Manager Assets] Informazioni con pagina web di esempio  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] approfondimenti con pagina web di esempio  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configurare Assets Insights seguendo le istruzioni riportate in [Configurazione di Assets Insights](configure-asset-insights.md).
-1. Scarica il pacchetto di esempio Assets da qui sotto e installa il pacchetto da Gestione pacchetti CRXDE.
+1. Configura Assets Insights seguendo le istruzioni riportate in [Configurazione di Assets Insights](configure-asset-insights.md).
+1. Scarica il pacchetto Assets di esempio da qui sotto e installalo da Gestione pacchetti CRXDE.
 
 [Ottieni file](assets/insightsdemo.zip)
 
@@ -36,4 +36,4 @@ Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisir
 
    >[!NOTE]
    >
-   >La pagina web esterna può essere in [!DNL Experience Manager] stesso.
+   >La pagina Web esterna può trovarsi in [!DNL Experience Manager].

@@ -22,13 +22,13 @@ ht-degree: 3%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Le app sono rappresentate come *cq:Pages* nell&#39;AEM.
+Le app sono rappresentate come *cq:Pages* in AEM.
 
-Condividono le stesse proprietà comuni presenti in qualsiasi *cq:Page* oltre ad altre mostrate di seguito che rappresentano le proprietà di supporto dell’integrazione.
+Condividono le stesse proprietà comuni presenti in qualsiasi *cq:Page*, oltre ad altre mostrate di seguito che rappresentano le proprietà di supporto dell&#39;integrazione.
 
 ## Proprietà app {#app-properties}
 
-La tabella seguente mostra **Proprietà e nodi dell’app**.
+La tabella seguente mostra **Proprietà app e nodi**.
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ La tabella seguente mostra **Proprietà e nodi dell’app**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>Stringa:Percorso</td>
-   <td><p>Percorso delle configurazioni di esportazione dell’app. La configurazione di esportazione è una cartella con 2 modelli di configurazione di esportazione secondari ContentSync;</p> <p><i>articolo-dps</i>: configurazione dell’esportazione ContentSync per esportare il contenuto dell’articolo</p> <p><i>dps-HTMLResources</i>: configurazione dell’esportazione ContentSync per esportare le risorse condivise dell’app o dell’articolo</p> </td>
+   <td><p>Percorso delle configurazioni di esportazione dell’app. La configurazione di esportazione è una cartella con 2 modelli di configurazione di esportazione secondari ContentSync;</p> <p><i>dps-article</i>: configurazione di esportazione ContentSync per esportare il contenuto dell'articolo</p> <p><i>dps-HTMLResources</i>: configurazione di esportazione di ContentSync per esportare le risorse condivise dell'app/articolo</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -85,7 +85,7 @@ La tabella seguente mostra **Proprietà e nodi dell’app**.
  </tbody>
 </table>
 
-È possibile utilizzare ***Proprietà contenuto*** per creare contenuti. Consulta le risorse seguenti per creare ed esportare articoli e risorse condivise:
+È possibile utilizzare ***Proprietà contenuto*** per creare contenuto. Consulta le risorse seguenti per creare ed esportare articoli e risorse condivise:
 
 * [Proprietà contenuto](/help/mobile/content-properties.md)
 * [Creazione della configurazione di esportazione dell&#39;articolo](/help/mobile/creating-article-export-configuration.md)

@@ -20,14 +20,14 @@ ht-degree: 0%
 
 ## Prerequisiti {#prerequisites}
 
-* [Creazione di bundle OSGi](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [Creazione di bundle OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [Sviluppo di componenti AEM](/help/sites-developing/components.md)
 * [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md)
 * [Authoring di un modulo adattivo](../../forms/using/introduction-forms-authoring.md)
 
 ## Procedura per compilare dinamicamente gli elenchi a discesa {#procedure-to-dynamically-populate-drop-down-lists}
 
-Considera uno scenario in cui desideri popolare il **Stato** in base a un valore selezionato nell&#39;elenco a discesa **Paese** elenco a discesa. Se si seleziona Australia in **Paese** elenco a discesa, la **Stato** Nell&#39;elenco a discesa vengono visualizzati gli stati in Australia. La procedura seguente descrive come eseguire questa attività.
+Considera uno scenario in cui desideri popolare l&#39;elenco a discesa **Stato** in base a un valore selezionato nell&#39;elenco a discesa **Paese**. Se si seleziona Australia nell&#39;elenco a discesa **Paese**, nell&#39;elenco a discesa **Stato** verranno visualizzati gli stati in Australia. La procedura seguente descrive come eseguire questa attività.
 
 1. Crea un progetto con i seguenti moduli:
 
@@ -145,7 +145,7 @@ Considera uno scenario in cui desideri popolare il **Stato** in base a un valore
    }
    ```
 
-1. Crea un nodo a discesa sotto una particolare gerarchia di cartelle nelle app (ad esempio, crea un nodo sotto /apps/myfolder/demo). Assicurati che `sling:resourceType` Il parametro per il nodo è lo stesso a cui punta il servlet (/apps/populatedropdown).
+1. Crea un nodo a discesa sotto una particolare gerarchia di cartelle nelle app (ad esempio, crea un nodo sotto /apps/myfolder/demo). Assicurati che il parametro `sling:resourceType` per il nodo sia lo stesso a cui punta il servlet (/apps/populatedropdown).
 
    ![Creare un nodo a discesa](assets/dropdown-node.png)
 
@@ -154,7 +154,7 @@ Considera uno scenario in cui desideri popolare il **Stato** in base a un valore
 
    Aggiungere i nomi dei paesi da visualizzare nell&#39;elenco Paese. Nell&#39;elenco Stato aggiungere uno script per compilarlo in base al nome del paese nell&#39;elenco Paese.
 
-   ![Aggiunta di nomi di paesi](assets/country-dropdown.png) ![Aggiunta di script per compilare i nomi degli stati](assets/state-dropdown.png) ![Elenchi a discesa Paese e Stato insieme](assets/2dropdowns.png)
+   ![Aggiunta di nomi di paese](assets/country-dropdown.png) ![Aggiunta di script per popolare i nomi di stato](assets/state-dropdown.png) ![Elenchi a discesa di paese e stato](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(

@@ -22,12 +22,12 @@ Durante l’amministrazione dei flussi di lavoro puoi avviarli utilizzando vari 
 
 * Manualmente:
 
-   * Da un [Modello flusso di lavoro](#workflow-models).
-   * Utilizzo di un pacchetto di flusso di lavoro per [elaborazione batch](#workflow-packages-for-batch-processing).
+   * Da un [modello flusso di lavoro](#workflow-models).
+   * Utilizzo di un pacchetto flusso di lavoro per [elaborazione batch](#workflow-packages-for-batch-processing).
 
 * Automaticamente:
 
-   * In risposta alle modifiche apportate ai nodi; [utilizzo di un modulo di avvio](#workflows-launchers).
+   * In risposta alle modifiche al nodo; [utilizzo di un modulo di avvio](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -41,13 +41,13 @@ Durante l’amministrazione dei flussi di lavoro puoi avviarli utilizzando vari 
 
 ## Modelli flusso di lavoro {#workflow-models}
 
-Puoi avviare un flusso di lavoro [basato su uno dei modelli](/help/sites-administering/workflows.md#workflow-models-and-instances) elencati nella console Modelli di flusso di lavoro. Le uniche informazioni obbligatorie sono il payload, anche se è possibile aggiungere un titolo e/o un commento.
+È possibile avviare un flusso di lavoro [basato su uno dei modelli](/help/sites-administering/workflows.md#workflow-models-and-instances) elencati nella console Modelli flusso di lavoro. Le uniche informazioni obbligatorie sono il payload, anche se è possibile aggiungere un titolo e/o un commento.
 
 ## Moduli di avvio dei flussi di lavoro {#workflows-launchers}
 
 Il modulo di avvio dei flussi di lavoro monitora le modifiche nell’archivio dei contenuti per avviare i flussi di lavoro in base alla posizione e al tipo di risorsa del nodo modificato.
 
-Utilizzo di **Modulo di avvio** è possibile:
+Utilizzando il **modulo di avvio** è possibile:
 
 * Consulta i flussi di lavoro già avviati per nodi specifici.
 * Seleziona un flusso di lavoro da avviare quando un determinato tipo di nodo/nodo è stato creato/modificato/rimosso.
@@ -56,7 +56,7 @@ Utilizzo di **Modulo di avvio** è possibile:
 È possibile creare un modulo di avvio per qualsiasi nodo. Tuttavia, le modifiche apportate ad alcuni nodi non avviano i flussi di lavoro. Le modifiche apportate ai nodi al di sotto dei percorsi seguenti non determinano l’avvio dei flussi di lavoro:
 
 * `/var/workflow/instances`
-* Qualsiasi nodo della casella in entrata del flusso di lavoro che si trova in un punto qualsiasi della `/home/users` filiale
+* Qualsiasi nodo della casella in entrata del flusso di lavoro che si trova in un punto qualsiasi del ramo `/home/users`
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -65,7 +65,7 @@ Utilizzo di **Modulo di avvio** è possibile:
 * `/var/mobile`
 * `/var/statistics`
 
-   * Eccezione: modifiche ai nodi sottostanti `/var/statistics/tracking` *fare* avvia i flussi di lavoro.
+   * Eccezione: le modifiche apportate ai nodi sottostanti `/var/statistics/tracking` *do* causano l&#39;avvio dei flussi di lavoro.
 
 Varie definizioni sono incluse nell&#39;installazione standard. Questi vengono utilizzati per attività di gestione delle risorse digitali e collaborazione social:
 
@@ -85,14 +85,14 @@ Un pacchetto di flusso di lavoro:
 
 ## Avvio di un flusso di lavoro dalla console Modelli {#starting-a-workflow-from-the-models-console}
 
-1. Accedi a **Modelli** console utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Modelli**.
+1. Passa alla console **Modelli** utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Modelli**.
 1. Seleziona il flusso di lavoro (in base alla vista della console); se necessario, puoi anche utilizzare la funzione di ricerca (in alto a sinistra):
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >Il **[Transitorio](/help/sites-developing/workflows.md#transient-workflows)** Questo indicatore mostra i flussi di lavoro per i quali la cronologia del flusso di lavoro non viene mantenuta.
+   >L&#39;indicatore **[Transitorio](/help/sites-developing/workflows.md#transient-workflows)** mostra i flussi di lavoro per i quali la cronologia del flusso di lavoro non è persistente.
 
 1. Seleziona **Avvia flusso di lavoro** dalla barra degli strumenti.
 1. Viene visualizzata la finestra di dialogo Esegui flusso di lavoro, che consente di specificare:
@@ -113,12 +113,12 @@ Un pacchetto di flusso di lavoro:
 
 ## Creazione di una configurazione del modulo di avvio {#creating-a-launcher-configuration}
 
-1. Accedi a **Moduli di avvio dei flussi di lavoro** console utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Moduli di avvio**.
+1. Passa alla console **Utilità di avvio flusso di lavoro** utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Utilità di avvio**.
 1. Seleziona **Crea**, quindi **Aggiungi modulo di avvio** per aprire la finestra di dialogo:
 
    ![wf-105](assets/wf-105.png)
 
-   * **Tipo di evento**
+   * **Tipo evento**
 
      Tipo di evento che avvia il flusso di lavoro:
 
@@ -126,7 +126,7 @@ Un pacchetto di flusso di lavoro:
       * Modificato
       * Rimosso
 
-   * **Nodetype**
+   * **Tipo di nodo**
 
      Tipo di nodo a cui si applica il modulo di avvio del flusso di lavoro.
 
@@ -136,7 +136,7 @@ Un pacchetto di flusso di lavoro:
 
    * **Modalità di esecuzione**
 
-     Tipo di server a cui si applica il modulo di avvio del flusso di lavoro. Seleziona **Autore**, **Pubblica**, o **Creazione e pubblicazione**.
+     Tipo di server a cui si applica il modulo di avvio del flusso di lavoro. Seleziona **Autore**, **Publish** o **Autore e Publish**.
 
    * **Condizioni**
 
@@ -144,11 +144,11 @@ Un pacchetto di flusso di lavoro:
 
      name==User
 
-   * **Funzioni**
+   * **Caratteristiche**
 
      Elenco di funzionalità da attivare. Seleziona le funzioni richieste utilizzando il selettore a discesa.
 
-   * **Funzioni disattivate**
+   * **Funzioni disabilitate**
 
    Elenco di funzionalità da disattivare. Seleziona le funzioni richieste utilizzando il selettore a discesa.
 
@@ -164,8 +164,8 @@ Un pacchetto di flusso di lavoro:
 
      Controlla se il modulo di avvio del flusso di lavoro è attivato:
 
-      * Seleziona **Abilita** per avviare i flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
-      * Seleziona **Disattiva** quando il flusso di lavoro non deve essere eseguito (nemmeno quando le proprietà di configurazione sono soddisfatte).
+      * Selezionare **Abilita** per avviare i flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
+      * Selezionare **Disattiva** quando il flusso di lavoro non deve essere eseguito (anche quando le proprietà di configurazione sono soddisfatte).
 
    * **Escludi elenco**
 
@@ -173,8 +173,8 @@ Un pacchetto di flusso di lavoro:
 
      Questa proprietà di avvio è un elenco di elementi separato da virgole: &quot;
 
-      * `property-name` ignora qualsiasi `jcr` evento che si è attivato sul nome della proprietà specificato. &quot;
-      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `property-name` ignora qualsiasi evento `jcr` attivato sul nome della proprietà specificato. &quot;
+      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Ad esempio:
 
@@ -184,10 +184,10 @@ Un pacchetto di flusso di lavoro:
 
      `event-user-data:changedByWorkflowProcess`
 
-1. Seleziona **Crea**, per creare il modulo di avvio e tornare alla console.
+1. Seleziona **Crea** per creare il modulo di avvio e tornare alla console.
 
    Quando si verifica l’evento appropriato, viene attivato il modulo di avvio e avviato il flusso di lavoro.
 
 ## Gestione di una configurazione del modulo di avvio {#managing-a-launcher-configuration}
 
-Dopo aver creato la configurazione di avvio, puoi utilizzare la stessa console per selezionare l’istanza, quindi **Visualizza proprietà** (e modificarli) oppure **Elimina**.
+Dopo aver creato la configurazione del modulo di avvio, puoi utilizzare la stessa console per selezionare l&#39;istanza, quindi **Visualizza proprietà** (e modificarle) o **Elimina**.

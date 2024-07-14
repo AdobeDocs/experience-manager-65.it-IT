@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Integrazione con Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-Il [Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/main.html), include potenti prodotti di analisi web e ottimizzazione dei siti web che forniscono dati e informazioni fruibili e in tempo reale per promuovere iniziative online di successo. Offre una piattaforma integrata e aperta per l&#39;ottimizzazione del business online. Il cloud è costituito da applicazioni integrate per raccogliere e sfruttare la potenza delle informazioni sul cliente al fine di ottimizzare le attività di acquisizione, conversione e conservazione dei clienti, nonché la creazione e la distribuzione dei contenuti.
+[Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/main.html) include potenti prodotti di analisi Web e ottimizzazione del sito Web che forniscono dati e informazioni fruibili e in tempo reale per promuovere iniziative online di successo. Offre una piattaforma integrata e aperta per l&#39;ottimizzazione del business online. Il cloud è costituito da applicazioni integrate per raccogliere e sfruttare la potenza delle informazioni sul cliente al fine di ottimizzare le attività di acquisizione, conversione e conservazione dei clienti, nonché la creazione e la distribuzione dei contenuti.
 
 Con Adobe Experience Manager (AEM), puoi integrarti facilmente con i seguenti prodotti di Adobe Experience Cloud:
 
@@ -29,11 +29,11 @@ Con Adobe Experience Manager (AEM), puoi integrarti facilmente con i seguenti pr
 <!-- Search&Promote is end of life as of September 1, 2022 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites. -->
 * Adobe Campaign consente di gestire il contenuto della consegna e-mail direttamente in Adobe Experience Manager.
 
-Inoltre, è possibile [integrare AEM con Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) e con [servizi di terze parti](/help/sites-administering/third-party-services.md).
+Inoltre, puoi [integrare AEM con Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) e con [servizi di terze parti](/help/sites-administering/third-party-services.md).
 
 ## Integrazione con Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) è la soluzione leader di settore che offre agli esperti di marketing digitale un’unica posizione per misurare, analizzare e ottimizzare i dati integrati da tutte le iniziative online su più canali di marketing. Fornisce agli esperti di marketing informazioni analitiche web in tempo reale e pronti per essere utilizzati, su strategie digitali e iniziative di marketing. Adobe Analytics consente ai professionisti del marketing di identificare rapidamente i percorsi più redditizi in un sito web, segmentare il traffico per individuare i visitatori di valore maggiore, determinare dove i visitatori lasciano il sito e identificare importanti metriche per il successo delle campagne di marketing online.
+[Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) è la soluzione leader di settore che offre agli esperti di marketing digitale un&#39;unica posizione per misurare, analizzare e ottimizzare i dati integrati di tutte le iniziative online su più canali di marketing. Fornisce agli esperti di marketing informazioni analitiche web in tempo reale e pronti per essere utilizzati, su strategie digitali e iniziative di marketing. Adobe Analytics consente ai professionisti del marketing di identificare rapidamente i percorsi più redditizi in un sito web, segmentare il traffico per individuare i visitatori di valore maggiore, determinare dove i visitatori lasciano il sito e identificare importanti metriche per il successo delle campagne di marketing online.
 
 Puoi utilizzare Adobe Analytics per analizzare i dati dei tuoi siti.
 
@@ -46,19 +46,19 @@ L’integrazione con Adobe Analytics consente di effettuare le seguenti operazio
 * Configurare contemporaneamente le sezioni complete del sito.
 * Tracciare eventi personalizzati.
 
-Per informazioni sull’integrazione dell’AEM con Analytics, consulta [Integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics.md).
+Per informazioni sull&#39;integrazione dell&#39;AEM con Analytics, vedere [Integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics.md).
 
-È inoltre possibile utilizzare [Procedura guidata Opt-in](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
+È inoltre possibile utilizzare la procedura guidata [Opt-in](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
 
 ## Integrazione con Adobe Target {#integrating-with-adobe-target}
 
-[Adobe Target](https://business.adobe.com/it/products/target/adobe-target.html) viene utilizzato dagli esperti di marketing per progettare ed eseguire test online, creare all’istante segmenti di pubblico (in base al comportamento) e automatizzare il targeting di contenuti ed esperienze online.
+[Adobe Target](https://business.adobe.com/it/products/target/adobe-target.html) viene utilizzato dagli esperti di marketing per progettare ed eseguire test online, creare all&#39;istante segmenti di pubblico (in base al comportamento) e automatizzare il targeting di contenuti ed esperienze online.
 
 I consumatori online oggi hanno esigenze in continua evoluzione e si aspettano contenuti pertinenti, anche personalizzati, dall’ampia varietà di siti e fonti di contenuto tra cui possono scegliere. Per coinvolgere un pubblico online, è fondamentale che gli esperti di marketing online identifichino rapidamente quali offerte e contenuti sono rilevanti e interessanti per il proprio pubblico. Sulla base di questa conoscenza, gli esperti di marketing devono essere in grado di trasformare continuamente i loro siti e di indirizzare i contenuti appropriati a tipi di pubblico diversi.
 
-[Integrazione con Adobe Target](/help/sites-administering/target.md) spiega come integrare il sito con Target.
+[L&#39;integrazione con Adobe Target](/help/sites-administering/target.md) spiega come integrare il sito con Target.
 
-È inoltre possibile utilizzare [Procedura guidata Opt-in](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
+È inoltre possibile utilizzare la procedura guidata [Opt-in](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
 
 ## Consenso ad Analytics e Target {#opting-in-to-analytics-and-target}
 
@@ -68,7 +68,7 @@ L’AEM fornisce una semplice procedura opt-in da integrare con Adobe Analytics 
 
 Accedi all’integrazione con Analytics e/o Target per abilitare l’utilizzo delle loro funzionalità di tracciamento e analisi delle pagine e delle funzionalità di personalizzazione. Quando scegli il consenso, fornisci le informazioni sul tuo account utente e specifica le pagine tracciate.
 
-Per ulteriori informazioni, consulta [Effettuare l’opt-in con Adobe Analytics e Adobe Target.](/help/sites-administering/opt-in.md)
+Per ulteriori informazioni, vedere [Scelta di Adobe Analytics e Adobe Target.](/help/sites-administering/opt-in.md)
 
 ## Integrazione con Adobe Dynamic Media Classic {#integrating-with-scene}
 
@@ -78,13 +78,13 @@ In Adobe Experience Manager, puoi pubblicare le risorse digitali direttamente da
 
 Inoltre, puoi visualizzare le risorse Adobe Experience Manager pubblicate in Dynamic Media Classic in vari visualizzatori, ad esempio Zoom e video di base.
 
-Per ulteriori informazioni sull&#39;integrazione di Adobe Experience Manager con Dynamic Media Classic, vedere [Integrazione con Dynamic Media Classic](/help/sites-administering/scene7.md) documentazione.
+Per ulteriori informazioni sull&#39;integrazione di Adobe Experience Manager con Dynamic Media Classic, vedere la documentazione relativa all&#39;integrazione di [con Dynamic Media Classic](/help/sites-administering/scene7.md).
 
 ## Integrazione con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 [Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) offre agli addetti al marketing strumenti intuitivi per gestire in modo rapido e semplice un numero illimitato di tag Adobe e di terze parti. È possibile ottenere maggiore controllo e flessibilità per ottimizzare virtualmente qualsiasi elemento online, riducendo al contempo la dipendenza dalle risorse IT.
 
-[Integrare Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) con AEM in modo da poter utilizzare le proprietà web di Dynamic Tag Management per monitorare i siti AEM.
+[Integra Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) con AEM in modo da poter utilizzare le proprietà Web di Dynamic Tag Management per tenere traccia dei siti AEM.
 
 ## Integrazione con Adobe Audience Manager {#integrating-with-adobe-audience-manager}
 
@@ -102,4 +102,4 @@ L’integrazione dell’Audience Manager è stata rimossa nell’AEM 6.3.
 
 [Adobe Campaign](https://business.adobe.com/products/campaign/adobe-campaign.html) consente di gestire il contenuto della consegna e-mail direttamente in Adobe Experience Manager.
 
-Per informazioni sull’integrazione dell’AEM con Adobe Campaign, consulta [Integrazione con Adobe Campaign](/help/sites-administering/campaignstandard.md).
+Per informazioni sull&#39;integrazione dell&#39;AEM con Adobe Campaign, vedere [Integrazione con Adobe Campaign](/help/sites-administering/campaignstandard.md).

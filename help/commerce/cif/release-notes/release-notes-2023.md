@@ -39,7 +39,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Componente aggiuntivo CIF | 2023.11.23.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2023.11.23.00.zip) |
+| Componente aggiuntivo CIF | 2023.11.23.00 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2023.11.23.00.zip) |
 | Sito di riferimento CIF Venia | 2023.11.08 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2023.11.08) |
 
 ### Correzioni di bug {#bug-fixes-november}
@@ -54,4 +54,4 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 ### Novità {#what-is-new-july}
 
-* Gli hook del filtro prodotto in `ProductList` componente
+* Gli hook del filtro prodotti nel componente `ProductList`

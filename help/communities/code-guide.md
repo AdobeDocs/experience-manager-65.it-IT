@@ -22,22 +22,22 @@ ht-degree: 1%
 
 L’utilizzo di AEM Communities si è evoluto da una forte dipendenza dalle pagine Java Server a una flessibilità nella scelta di linguaggi di script basati su modelli in cui la logica di business, lo stile e il contenuto delle pagine sono distinti gli uni dagli altri.
 
-Un’ulteriore flessibilità nell’utilizzo dei contenuti generati dagli utenti (UGC, User-Generated Content) è offerta dall’API SocialResourceProvider, che elimina la necessità di sapere quali [SRP](srp.md) è stata scelta l&#39;opzione per la distribuzione.
+L&#39;utilizzo di contenuti generati dagli utenti (UGC, User Generated Content) è più flessibile grazie all&#39;API SocialResourceProvider, che elimina la necessità di sapere quale opzione [SRP](srp.md) è stata scelta per la distribuzione.
 
 Di seguito sono riportate varie linee guida per la codifica e best practice per gli sviluppatori di AEM Communities:
 
 ### Codice {#code}
 
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) : come evitare di scrivere un’applicazione che funziona solo quando UGC è memorizzato in JCR (JSRP).
-* [Refactoring SocialUtils](socialutils.md) - metodi di utilità per SRP che sostituiscono SocialUtils.
-* [Convenzioni di denominazione](naming-conventions.md) : convenzioni di denominazione per le classi Java personalizzate.
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - come evitare di scrivere un&#39;applicazione che funziona solo quando UGC è archiviato in JCR (JSRP).
+* [Refactoring SocialUtils](socialutils.md) - Metodi di utilità per SRP che sostituiscono SocialUtils.
+* [Convenzioni di denominazione](naming-conventions.md) - convenzioni di denominazione per le classi Java personalizzate.
 
 ### Script {#scripts}
 
-* [Sideload dei componenti community](sideloading.md) : come aggiungere in modo dinamico un componente dopo il caricamento della pagina.
-* [Nozioni di base sull’editor Rich Text](rte.md) : come personalizzare l’interfaccia utente Rich Text fornita ai membri per la pubblicazione dei contenuti.
+* [Sideloading Communities Components](sideloading.md) - come aggiungere dinamicamente un componente dopo il caricamento della pagina.
+* [Nozioni di base sull&#39;editor Rich Text](rte.md) - personalizzare l&#39;interfaccia utente Rich Text fornita ai membri per la pubblicazione dei contenuti.
 
 ### IDE {#ide}
 
-* [Utilizzo di Maven per le community](maven.md) : come includere il file jar dell’API Communities.
-* [Refactoring SocialUtils](socialutils.md) - metodi di utilità per SRP che sostituiscono SocialUtils.
+* [Utilizzo di Maven per le community](maven.md): come includere il file jar dell&#39;API Communities.
+* [Refactoring SocialUtils](socialutils.md) - Metodi di utilità per SRP che sostituiscono SocialUtils.

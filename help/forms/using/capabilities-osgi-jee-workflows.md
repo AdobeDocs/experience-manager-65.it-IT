@@ -15,16 +15,16 @@ ht-degree: 20%
 
 # Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flussi di lavoro OSGi e AEM Forms JEE {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-## Casella in entrata AEM e Area di lavoro HTML {#aem-inbox-and-html-workspace}
+## Casella in entrata AEM e Workspace HTML {#aem-inbox-and-html-workspace}
 
-Puoi utilizzare la Casella in entrata AEM per eseguire e monitorare i flussi di lavoro AEM incentrati su Forms su OSGi. HTML Workspace consente invece di eseguire e monitorare i flussi di lavoro di AEM Forms JEE. La tabella seguente consente di comprendere diverse azioni importanti disponibili nella Casella in entrata AEM per i flussi di lavoro AEM incentrati su Forms su OSGi e in HTML Workspace per i flussi di lavoro AEM Forms JEE.
+Puoi utilizzare la Casella in entrata AEM per eseguire e monitorare i flussi di lavoro AEM incentrati su Forms su OSGi. HTML Workspace consente invece di eseguire e monitorare i flussi di lavoro di AEM Forms JEE. La tabella seguente consente di comprendere diverse azioni importanti disponibili nella Casella in entrata AEM per i flussi di lavoro AEM incentrati su Forms su OSGi e in HTML Workspace per i flussi di lavoro JEE per AEM Forms.
 
 <table>
  <tbody>
   <tr>
    <td>Azioni</td>
    <td>Casella in entrata AEM</td>
-   <td>Area di lavoro HTML</td>
+   <td>HTML Workspace</td>
   </tr>
   <tr>
    <td>Avvio di un processo, un'attività o un'applicazione modulo<br /> </td>
@@ -107,7 +107,7 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
  <tbody>
   <tr>
    <td>Funzionalità</td>
-   <td>Flussi di lavoro AEM basati su moduli su OSGi<br /> </td>
+   <td>Flussi di lavoro AEM incentrati sul modulo su OSGi<br /> </td>
    <td>Flussi di lavoro di AEM Forms JEE</td>
   </tr>
   <tr>
@@ -316,7 +316,7 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
    <td>Funzione supportata </td>
   </tr>
   <tr>
-   <td>Avvia un processo con i dati processo esistenti<br /> </td>
+   <td>Avvia un processo con dati processo esistenti<br /> </td>
    <td>Non supportato</td>
    <td>Funzione supportata </td>
   </tr>
@@ -337,7 +337,7 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
   </tr>
   <tr>
    <td>Integrazione con applicazioni di terze parti</td>
-   <td>Non supportato <sup>[6]</sup></td>
+   <td><sup>[6]</sup> non supportato</td>
    <td>Funzione supportata</td>
   </tr>
   <tr>
@@ -388,18 +388,18 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
  </tbody>
 </table>
 
-1. Per firmare un modulo adattivo compilato, puoi utilizzare i flussi di lavoro AEM basati su moduli su OSGi. I flussi di lavoro AEM incentrati sul modulo su OSGi supportano la firma out-of-the-form. Il [firma in-form](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) esperienza non supportata.
+1. Per firmare un modulo adattivo compilato, puoi utilizzare i flussi di lavoro AEM basati su moduli su OSGi. I flussi di lavoro AEM incentrati sul modulo su OSGi supportano la firma out-of-the-form. L&#39;esperienza di [firma in-form](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) non è supportata.
 
-1. Per eseguire e monitorare i flussi di lavoro AEM Forms JEE in AEM Forms OSGi e HTML Workspace è necessario accedere alla casella in entrata dell’AEM.
+1. Per eseguire e monitorare i flussi di lavoro basati su moduli su AEM Forms OSGi e HTML Workspace AEM Forms, è necessario accedere alla casella in entrata dell’AEM.
 1. I servizi documentali AEM Forms nativi sono disponibili per i flussi di lavoro AEM basati su moduli su OSGi e per i flussi di lavoro AEM Forms su JEE. Il flusso di lavoro AEM utilizza servizi documentali nativi per flussi di lavoro AEM incentrati su moduli nei flussi di lavoro OSGi e AEM Forms JEE (Process Management).
 1. I flussi di lavoro AEM Forms JEE possono eseguire il rendering solo di un modulo adattivo. Non supporta il rendering di un modulo adattivo come documento PDF.
-1. I flussi di lavoro JEE per i moduli AEM non dispongono di un passaggio separato per Adobe Sign. È necessario un modulo adattivo abilitato per Adobe Sign per i flussi di lavoro JEE per i moduli AEM. Per ulteriori dettagli, consulta [Documentazione di Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. È possibile utilizzare [Richiama servizio modello dati modulo](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) per richiamare un servizio web e pubblicare o recuperare dati da un’applicazione di terze parti.
-1. È possibile utilizzare [Invia e-mail](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) passaggio per inviare le e-mail.
+1. I flussi di lavoro JEE per i moduli AEM non dispongono di un passaggio separato per Adobe Sign. È necessario un modulo adattivo abilitato per Adobe Sign per i flussi di lavoro JEE per i moduli AEM. Per ulteriori dettagli, consulta la [documentazione di Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
+1. È possibile utilizzare il passaggio [Richiama servizio modello dati modulo](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) per richiamare un servizio Web e inviare o recuperare dati da un&#39;applicazione di terze parti.
+1. Puoi utilizzare il passaggio [Invia e-mail](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) per inviare e-mail.
 
 ## Differenze tra la casella in entrata dell’AEM e le funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono [Casella in entrata AEM](../../forms/using/manage-applications-inbox.md) e l&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata dell’AEM e dell’app AEM Forms sono diverse. La casella in entrata AEM funziona solo con [Flussi di lavoro incentrati su Forms](../../forms/using/aem-forms-workflow.md) mentre l’app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi.
+Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono l&#39;utilizzo di [Casella in entrata AEM](../../forms/using/manage-applications-inbox.md) e dell&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata dell’AEM e dell’app AEM Forms sono diverse. La casella in entrata AEM funziona solo con [flussi di lavoro incentrati su Forms](../../forms/using/aem-forms-workflow.md), mentre l&#39;app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi.
 
 Nella tabella seguente sono elencate le funzionalità della casella in entrata AEM e dell’app AEM Forms:
 

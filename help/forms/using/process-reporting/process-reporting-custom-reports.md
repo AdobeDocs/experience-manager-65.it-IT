@@ -24,16 +24,16 @@ Puoi utilizzare l’interfaccia REST di QueryBuilder o creare un servizio OSGi u
 
 Prima di aggiungere un rapporto personalizzato, attenersi alla procedura descritta di seguito.
 
-1. I dati utilizzati nei report personalizzati devono essere disponibili in Process Reporting. Per garantire la disponibilità dei dati, pianificare un job cron o utilizzare **[Sincronizza](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** nell’interfaccia utente di Process Reporting.
-1. La richiesta URL (che racchiude la query desiderata) deve restituire un oggetto risultato della query appropriato. Per creare una query, puoi utilizzare l’interfaccia REST di [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) per creare un servizio OSGi utilizzando API QueryBuilder. Puoi creare query dinamiche o statiche.
+1. I dati utilizzati nei report personalizzati devono essere disponibili in Process Reporting. Per garantire la disponibilità dei dati, pianificare un processo cron o utilizzare l&#39;opzione **[Sincronizza](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** nell&#39;interfaccia utente di Process Reporting.
+1. La richiesta URL (che racchiude la query desiderata) deve restituire un oggetto risultato della query appropriato. Per creare una query, è possibile utilizzare l&#39;interfaccia REST di [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) per creare un servizio OSGi utilizzando l&#39;API QueryBuilder. Puoi creare query dinamiche o statiche.
 
 1. Crea un’interfaccia utente personalizzata per visualizzare i risultati. Puoi creare un’interfaccia utente autonoma o integrare i risultati con l’interfaccia utente di Process Reporting esistente.
 
 ## Utilizzo dell&#39;interfaccia REST di QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare [Interfaccia REST di CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en), prima di eseguire i passaggi seguenti:
+L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l&#39;interfaccia REST [CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) prima di eseguire i passaggi seguenti:
 
-1. Passa all’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
+1. Sfoglia l&#39;URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Creare una query basata sulla struttura e sulle proprietà del nodo di archiviazione di Process Reporting.
 
    È possibile specificare parametri facoltativi per specificare offset, limite, hit e proprietà. Puoi codificare gli argomenti per i rapporti statici e recuperare i parametri dall’interfaccia utente per i rapporti dinamici.
@@ -48,7 +48,7 @@ L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share 
 
 ## Creazione di un servizio tramite API Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-I prerequisiti per la creazione di un servizio utilizzando l’API di Query Builder sono [creazione e distribuzione del bundle CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [utilizzo dell’API Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
+I prerequisiti per la creazione di un servizio utilizzando l&#39;API di Query Builder sono [la creazione e la distribuzione del bundle OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [l&#39;utilizzo dell&#39;API di Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Crea un servizio OSGi con le annotazioni appropriate. Per accedere a QueryBuilder utilizzare:
 
@@ -64,7 +64,7 @@ I prerequisiti per la creazione di un servizio utilizzando l’API di Query Buil
     predicateGroup.setAllRequired(true);
    ```
 
-1. Aggiungere predicati al gruppo di predicati appena creato. Alcuni utili costrutti predicato sono [JcrBoolPropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [JcrPropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [RangePropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [DateRangePredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), e [TypePredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
+1. Aggiungere predicati al gruppo di predicati appena creato. Alcuni costrutti di predicato utili sono [JcrBoolPropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [JcrPropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [RangePropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [DateRangePredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [TypePredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
 
    Per i rapporti statici, i predicati vengono codificati; per i rapporti dinamici, invece, i predicati vengono recuperati dalla richiesta.
 
@@ -135,13 +135,13 @@ I prerequisiti per la creazione di un servizio utilizzando l’API di Query Buil
                        out.write(row.toString().getBytes());
    ```
 
-1. Utilizza il `org.apache.felix maven-bundle-plugin` per creare un bundle OSGi per il servlet.
+1. Utilizza `org.apache.felix maven-bundle-plugin` per creare un bundle OSGi per il servlet.
 
 1. Distribuisci il bundle sul server CRX.
 
 ### Esempio di servizio {#service-example}
 
-Nell&#39;esempio di servizio riportato di seguito vengono conteggiate le istanze di un processo in **IN ESECUZIONE** e **COMPLETATO** stato alla fine di ogni mese, trimestre e anno.
+Il seguente esempio di servizio conta le istanze di un processo che si trova nello stato **RUNNING** e **COMPLETE** alla fine di ogni mese, trimestre e anno.
 
 ```java
 package custom.reporting.service;
@@ -339,7 +339,7 @@ public class PeriodicProcessVolume {
 }
 ```
 
-Il campione `pom.xml`il file da generare sopra il servizio è:
+Il file `pom.xml` di esempio da compilare sopra il servizio è:
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
@@ -423,13 +423,13 @@ Il campione `pom.xml`il file da generare sopra il servizio è:
 
 ## Creazione di un’interfaccia utente separata  {#creating-a-separate-ui-nbsp}
 
-I prerequisiti per creare un’interfaccia utente separata per la visualizzazione dei risultati sono [Nozioni di base su Sling in 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [Creazione di un nodo CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e fornendo adeguate [privilegi di accesso](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
+I prerequisiti per la creazione di un&#39;interfaccia utente separata per la visualizzazione dei risultati sono [Nodi base di Sling in 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [Creazione di un nodo di CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e fornitura di [privilegi di accesso](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) appropriati.
 
-1. Crea un nodo CRX in corrispondenza di `/apps` e concedere le autorizzazioni di accesso appropriate. (PERM_PROCESS_REPORTING_USER)
-1. Definisci il renderer in corrispondenza di `/content` nodo.
+1. Creare un nodo CRX nel nodo `/apps` e concedere le autorizzazioni di accesso appropriate. (PERM_PROCESS_REPORTING_USER)
+1. Definisci il renderer nel nodo `/content`.
 1. Aggiungi file JSP o HTML al nodo creato nel passaggio 1. Puoi anche aggiungere file CSS.
 
-   ![Un nodo di esempio con file JSP e CSS](assets/nodewith_jsp_css_new.png)
+   ![Nodo di esempio con file JSP e CSS](assets/nodewith_jsp_css_new.png)
 
    Un nodo di esempio con file JSP e CSS
 
@@ -631,13 +631,13 @@ response.setCharacterEncoding("utf-8");
 
 ## Integrazione dell’interfaccia utente dei rapporti nell’interfaccia utente dei rapporti sui processi esistente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-I prerequisiti per creare un’interfaccia utente separata per la visualizzazione dei risultati sono [Nozioni di base su Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creazione di un nodo CRX](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) e fornendo adeguate [privilegi di accesso](/help/sites-developing/developing-with-crxde-lite.md#access-control).
+I prerequisiti per la creazione di un&#39;interfaccia utente separata per la visualizzazione dei risultati sono [Nodi base Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creazione di un nodo CRX](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) e fornitura di [privilegi di accesso](/help/sites-developing/developing-with-crxde-lite.md#access-control) appropriati.
 
 1. Crea un’interfaccia utente separata.
-1. Creare un elemento figlio `nt:unstructured` nodo in corrispondenza di `/content/process-reporting-runtime/custom-reports` per ogni rapporto inseribile.
+1. Creare un nodo `nt:unstructured` secondario nel nodo `/content/process-reporting-runtime/custom-reports` per ogni report collegabile.
 
    * **id**- Specifica il numero di identificazione univoco del report.
-   * **nome**- Specifica il nome del report. Il nome viene visualizzato nell’interfaccia utente.
+   * **name**- Specifica il nome del report. Il nome viene visualizzato nell’interfaccia utente.
    * **link**- Specifica il collegamento relativo al renderer dell&#39;interfaccia utente separata. Il collegamento viene creato al passaggio 1.
    * **descrizione**- Specifica la descrizione di una riga del report. Puoi lasciare vuoto il campo della descrizione.
    * **icona**- Specifica l&#39;immagine da rappresentare graficamente il report. Puoi lasciare vuoto il campo dell’icona.
@@ -648,16 +648,16 @@ I prerequisiti per creare un’interfaccia utente separata per la visualizzazion
 
 1. L’interfaccia utente del report è integrata nell’interfaccia utente di Process Reporting. Dopo aver integrato l’interfaccia utente, questa viene aggiornata in modo simile alle immagini seguenti:
 
-   ![Interfaccia utente dei rapporti personalizzati appena aggiunti](assets/sampleui_screenshot_new.png)
+   ![Interfaccia utente dei nuovi report personalizzati aggiunti](assets/sampleui_screenshot_new.png)
 
    Interfaccia utente dei rapporti personalizzati appena aggiunti
 
-   ![Schermata dei risultati dei rapporti personalizzati](assets/jsp_display_new.png)
+   ![Schermata dei risultati dei report personalizzati](assets/jsp_display_new.png)
 
    Schermata dei risultati dei rapporti personalizzati
 
 ## Pacchetto di esempio {#sample-package}
 
-Importa `sample-report-pkg-1.zip` per integrare i rapporti personalizzati e l’interfaccia utente descritti nell’articolo nell’interfaccia utente per la gestione dei processi.
+Importare il pacchetto `sample-report-pkg-1.zip` per integrare i report personalizzati e l&#39;interfaccia utente descritti nell&#39;articolo nell&#39;interfaccia utente di Gestione processi.
 
 [Ottieni file](assets/sample-report-pkg-1.zip)

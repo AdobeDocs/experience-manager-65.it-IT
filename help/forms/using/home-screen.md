@@ -26,23 +26,23 @@ Per impostazione predefinita, nella schermata iniziale vengono visualizzati tutt
 
 Nella figura seguente sono riportate le chiamate ai componenti essenziali nella schermata Home predefinita.
 
-![Home schermata dell’app Forms](assets/home-screen-1.png)
+![Home schermata dell&#39;app Forms](assets/home-screen-1.png)
 
 <!--Click to enlarge
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **Pulsante Menu**: seleziona la **Menu** per passare ad Attività, Forms, Posta in uscita e Impostazioni. Se la tua app AEM Forms è connessa a un server AEM Forms JEE, puoi visualizzare l’opzione Attività. L&#39;opzione Attività consente inoltre di memorizzare in un processo le bozze create dalle attività. Per i server AEM Forms OSGi, l’opzione Attività è nascosta. In Posta in uscita vengono memorizzati i moduli e le bozze salvati prima della sincronizzazione con il server. Tutti i moduli e le bozze salvati nella cartella Posta in uscita vengono caricati sul server AEM Forms quando l’app viene [sincronizzato con il server](../../forms/using/sync-app.md). Per informazioni sulle impostazioni, consulta [Aggiorna impostazioni generali](../../forms/using/update-general-settings.md).
-1. **Attività o modulo**: seleziona l’attività o il modulo elencato con cui desideri lavorare.
-1. **Ellissi orizzontali**: indica che sono disponibili azioni per il modulo. Toccando i puntini di sospensione vengono visualizzate le azioni e la descrizione fornite dall’autore. Il **Elimina bozza** e **Completa** L&#39;opzione è visibile quando si selezionano i puntini di sospensione.
-1. **Icona Aggiorna**: seleziona l’icona di aggiornamento per sincronizzare l’app con il server AEM Forms.
+1. **Pulsante Menu**: selezionare il pulsante **Menu** per passare ad Attività, Forms, Posta in uscita e Impostazioni. Se la tua app AEM Forms è connessa a un server AEM Forms JEE, puoi visualizzare l’opzione Attività. L&#39;opzione Attività consente inoltre di memorizzare in un processo le bozze create dalle attività. Per i server AEM Forms OSGi, l’opzione Attività è nascosta. In Posta in uscita vengono memorizzati i moduli e le bozze salvati prima della sincronizzazione con il server. Tutti i moduli e le bozze salvati nella cartella Posta in uscita vengono caricati sul server AEM Forms quando l&#39;app è [sincronizzata con il server](../../forms/using/sync-app.md). Per informazioni sulle impostazioni, vedere [Aggiorna impostazioni generali](../../forms/using/update-general-settings.md).
+1. **Attività o Modulo**: selezionare l&#39;attività o il modulo elencato che si desidera utilizzare.
+1. **Puntini di sospensione orizzontali**: indica che sono disponibili azioni per il modulo. Toccando i puntini di sospensione vengono visualizzate le azioni e la descrizione fornite dall’autore. L&#39;opzione **Elimina bozza** e **Completa** è visibile quando si selezionano i puntini di sospensione.
+1. **Icona di aggiornamento**: seleziona l&#39;icona di aggiornamento per sincronizzare l&#39;app con AEM Forms Server.
 
 ### Personalizzazione della schermata iniziale {#customizing-the-home-screen}
 
 ![Impostazioni generali](assets/gen-settings.png)
 
-Puoi modificare la schermata iniziale predefinita dell’app da **[Impostazioni generali](../../forms/using/update-general-settings.md)** dell’app, oppure da **Preferenza** nell’area di lavoro di HTML.
+Puoi modificare la schermata iniziale predefinita dell&#39;app dalle **[Impostazioni generali](../../forms/using/update-general-settings.md)** dell&#39;app o dalla scheda **Preferenza** in HTML Workspace.
 
 La modifica apportata all’impostazione della schermata iniziale nell’app influisce sulla schermata iniziale dell’utente attualmente connesso o dell’utente sul dispositivo mobile corrente.
 
-Tuttavia, la modifica apportata in HTML Workspace ha effetto su tutti gli utenti dell’app AEM Forms che hanno effettuato l’accesso al server AEM Forms.
+Tuttavia, la modifica apportata in HTML Workspace ha effetto su tutti gli utenti dell’app AEM Forms che hanno effettuato l’accesso ad AEM Forms Server.

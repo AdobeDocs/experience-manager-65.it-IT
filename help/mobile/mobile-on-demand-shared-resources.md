@@ -26,7 +26,7 @@ Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni sulla progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
 >[!CAUTION]
 >
@@ -36,16 +36,16 @@ Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono
 
 In genere, contenuti come gli articoli devono avere lo stesso aspetto per tutti gli autori e anche per le app. È quindi essenziale rendere gli script, i CSS e i font disponibili a tutti. Questa operazione invia tali risorse condivise a Mobile On-Demand che possono quindi essere utilizzate in base alle esigenze.
 
-Una volta configurata e associata l’app a una configurazione cloud, puoi caricare le risorse condivise. Per i passaggi dettagliati sull’associazione dell’app a una configurazione cloud, fai clic su [qui](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+Una volta configurata e associata l’app a una configurazione cloud, puoi caricare le risorse condivise. Per i passaggi dettagliati sull&#39;associazione dell&#39;app a una configurazione cloud, fai clic [qui](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
->Le risorse condivise utilizzano ContentSync per raccogliere tutte le diverse risorse. Consulta [Dispositivi mobili con ContentSync](/help/mobile/mobile-ondemand-contentsync.md) per ulteriori dettagli.
+>Le risorse condivise utilizzano ContentSync per raccogliere tutte le diverse risorse. Per ulteriori dettagli, consulta [Mobile con ContentSync](/help/mobile/mobile-ondemand-contentsync.md).
 
 Per caricare le risorse condivise per un articolo, effettua le seguenti operazioni:
 
-1. Seleziona l’articolo da **Gestisci articoli** affiancare.
-1. Clic **Carica risorse condivise** per caricare le risorse HTML condivise.
+1. Seleziona l&#39;articolo dal riquadro **Gestisci articoli**.
+1. Fai clic su **Carica risorse condivise** per caricare le risorse HTML condivise.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

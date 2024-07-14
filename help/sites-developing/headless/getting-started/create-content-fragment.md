@@ -28,24 +28,24 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per rappresentare il contenuto creato. Questa sarà l’attività principale dei Frammenti di contenuto in AEM. Ai fini di questa guida introduttiva, ne creeremo uno.
 
-1. Accedi all’AEM e dal menu principale seleziona **Navigazione > Risorse**.
-1. Accedi a [cartella creata in precedenza.](create-assets-folder.md)
-1. Clic **Crea > Frammento di contenuto**.
-1. La creazione di un Frammento di contenuto viene presentata come una procedura guidata in due passaggi. Seleziona innanzitutto il modello da utilizzare per creare il frammento di contenuto e fai clic su **Successivo**.
+1. Accedi a AEM e dal menu principale seleziona **Navigazione > Assets**.
+1. Passa alla cartella [ creata in precedenza.](create-assets-folder.md)
+1. Fare clic su **Crea > Frammento di contenuto**.
+1. La creazione di un Frammento di contenuto viene presentata come una procedura guidata in due passaggi. Seleziona innanzitutto il modello da utilizzare per creare il frammento di contenuto e fai clic su **Avanti**.
    * I modelli disponibili dipendono dalla [**configurazione cloud** definita per la cartella risorse](create-assets-folder.md) in cui stai creando il frammento di contenuto.
    * Se ricevi il messaggio `We could not find any models`, controlla la configurazione della cartella delle risorse.
 
    ![Seleziona modello di Frammento di contenuto](assets/content-fragment-model-select.png)
-1. Fornisci un **Titolo**, **Descrizione**, e **Tag** in base alle esigenze e fai clic su **Crea**.
+1. Fornisci **Titolo**, **Descrizione** e **Tag** secondo necessità e fai clic su **Crea**.
 
    ![Creare Frammento di contenuto](assets/content-fragment-create.png)
-1. Clic **Apri** nella finestra di conferma.
+1. Fai clic su **Apri** nella finestra di conferma.
 
    ![Conferma di creazione del Frammento di contenuto](assets/content-fragment-confirmation.png)
 1. Fornisci i dettagli del Frammento di contenuto nell’Editor frammento di contenuto.
 
    ![Editor frammento di contenuto](assets/content-fragment-edit.png)
-1. Clic **Salva** o  **Salva e chiudi**.
+1. Fai clic su **Salva** o **Salva e chiudi**.
 
 I Frammenti di contenuto possono fare riferimento ad altri Frammenti di contenuto, consentendo se necessario una struttura di contenuto nidificata.
 

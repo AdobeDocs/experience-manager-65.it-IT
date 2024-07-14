@@ -28,4 +28,4 @@ I dati di analisi delle pagine vengono visualizzati nella console Sites. Quando 
 
 >[!NOTE]
 >
->La visualizzazione diretta dei dati di analisi del sito nella console è disponibile solo nell’interfaccia utente ottimizzata per il tocco. Consulta [Visualizzazione dei dati di analisi delle pagine](/help/sites-authoring/page-analytics-using.md) per informazioni dettagliate, consulta la documentazione sull’authoring standard.
+>La visualizzazione diretta dei dati di analisi del sito nella console è disponibile solo nell’interfaccia utente ottimizzata per il tocco. Per informazioni dettagliate, consulta [Visualizzazione dei dati di analisi delle pagine](/help/sites-authoring/page-analytics-using.md) nella documentazione standard per l&#39;authoring.

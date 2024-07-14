@@ -26,7 +26,7 @@ Una volta configurata per un determinato componente, la cache inizia a memorizza
 
 Quando si configura la memorizzazione in cache per i componenti, il nome della cache deve corrispondere al nome dei componenti **proxy** definiti nel progetto.
 
-Prima che il client invii una richiesta GraphQL, verifica se **esatto** La stessa richiesta GraphQL è già stata memorizzata in cache ed è possibile che restituisca la risposta memorizzata in cache. Per trovare una corrispondenza, la richiesta GraphQL DEVE corrispondere esattamente, ovvero la query, il nome dell’operazione (se presente), le variabili (se presenti) DEVONO essere tutte uguali alla richiesta memorizzata nella cache. Anche tutte le intestazioni HTTP personalizzate che potrebbero essere impostate DEVONO essere uguali. Ad esempio, Adobe Commerce `Store` l’intestazione DEVE corrispondere.
+Prima che il client invii una richiesta GraphQL, controlla se quella **esatta** stessa richiesta GraphQL è già stata memorizzata nella cache ed eventualmente restituisce la risposta memorizzata nella cache. Per trovare una corrispondenza, la richiesta GraphQL DEVE corrispondere esattamente, ovvero la query, il nome dell’operazione (se presente), le variabili (se presenti) DEVONO essere tutte uguali alla richiesta memorizzata nella cache. Anche tutte le intestazioni HTTP personalizzate che potrebbero essere impostate DEVONO essere uguali. L&#39;intestazione Adobe Commerce `Store`, ad esempio, DEVE corrispondere.
 
 ### Esempi
 
@@ -44,7 +44,7 @@ Un altro scenario esemplificativo in cui si consiglia di utilizzare la funzione 
 venia/components/structure/navigation:true:10:600
 ```
 
-Quando si considera [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) viene utilizzato. Si noti l’uso del nome proxy del componente `venia/components/structure/navigation` e **non** del nome del componente di navigazione CIF (`core/cif/components/structure/navigation/v1/navigation`).
+Quando si prende in considerazione [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia), viene utilizzato. Si noti l’uso del nome proxy del componente `venia/components/structure/navigation` e **non** del nome del componente di navigazione CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
 La memorizzazione nella cache per altri componenti deve essere definita in base al progetto, in genere in coordinamento con la memorizzazione nella cache configurata a livello di Dispatcher. Non è prevista l’invalidazione attiva di queste cache, pertanto la durata della memorizzazione nella cache deve essere impostata con attenzione. Non esiste un valore universale che corrisponda a tutti i possibili progetti e casi d’uso. Occorre definire una strategia di caching a livello di progetto che corrisponda meglio ai requisiti del progetto.
 
@@ -54,13 +54,13 @@ La memorizzazione nella cache di pagine o frammenti AEM in [AEM Dispatcher](http
 
 Oltre al contenuto CIF gestito dall’AEM puro, una pagina può in genere visualizzare dati di e-commerce recuperati dinamicamente da Adobe Commerce tramite GraphQL. Anche se la struttura della pagina stessa potrebbe non cambiare mai, il contenuto commerciale potrebbe cambiare, ad esempio, se alcuni dati di prodotto (come nome o prezzo) cambiano in Adobe Commerce.
 
-Per garantire che le pagine dell’CIF possano essere memorizzate nella cache per un periodo di tempo limitato nel dispatcher dell’AEM, si consiglia quindi di utilizzare [Annullamento della validità della cache basata sul tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (noto anche come caching basato su TTL) quando si memorizzano nella cache le pagine CIF in Dispatcher AEM. Questa funzione può essere configurata in AEM utilizzando il pacchetto [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) aggiuntivo.
+Per garantire che le pagine CIF possano essere memorizzate nella cache per un periodo di tempo limitato nel Dispatcher AEM, si consiglia quindi di utilizzare [l&#39;invalidazione della cache basata sul tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (nota anche come memorizzazione in cache basata su TTL) durante il caching delle pagine CIF nel Dispatcher AEM. Questa funzione può essere configurata in AEM utilizzando il pacchetto [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) aggiuntivo.
 
-Con il caching basato su TTL, uno sviluppatore definisce in genere una o più durate di memorizzazione nella cache per le pagine AEM selezionate. In questo modo le pagine CIF vengono memorizzate nella cache solo nel Dispatcher AEM fino alla durata configurata e il contenuto viene aggiornato di frequente.
+Con il caching basato su TTL, uno sviluppatore definisce in genere una o più durate di memorizzazione nella cache per le pagine AEM selezionate. In questo modo le pagine dell’CIF vengono memorizzate nella cache solo nel Dispatcher dell’AEM fino alla durata configurata e il contenuto viene aggiornato di frequente.
 
 >[!NOTE]
 >
->Anche se i dati lato server possono essere memorizzati nella cache da Dispatcher AEM, alcuni componenti CIF come `product`, `productlist`, e `searchresults` in genere, i componenti recuperano sempre i prezzi dei prodotti in una richiesta browser lato client quando la pagina viene caricata. In questo modo, al caricamento della pagina vengono sempre recuperati i contenuti dinamici fondamentali.
+>Anche se i dati lato server possono essere memorizzati nella cache dal Dispatcher AEM, alcuni componenti CIF come `product`, `productlist` e `searchresults` in genere recuperano sempre i prezzi dei prodotti in una richiesta browser lato client quando la pagina viene caricata. In questo modo, al caricamento della pagina vengono sempre recuperati i contenuti dinamici fondamentali.
 
 ## Risorse aggiuntive
 

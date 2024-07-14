@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Tabelle in moduli adattivi{#tables-in-adaptive-forms}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -47,13 +47,13 @@ Per creare una tabella, trascina il componente Tabella dal browser Componenti ne
 
 ### Informazioni sulle celle di intestazione e corpo {#about-header-and-body-cells}
 
-Le celle di intestazione sono campi di testo. Per modificare l&#39;etichetta di un&#39;intestazione, fare clic con il pulsante destro del mouse sulla cella dell&#39;intestazione e scegliere **Modifica**. Nella finestra di dialogo Modifica, aggiorna l’etichetta nella sezione **Valore** e fai clic su **OK**.
+Le celle di intestazione sono campi di testo. Per modificare l&#39;etichetta di un&#39;intestazione, fare clic con il pulsante destro del mouse sulla cella dell&#39;intestazione e scegliere **Modifica**. Nella finestra di dialogo Modifica, aggiorna l&#39;etichetta nel campo **Valore** e fai clic su **OK**.
 
 Per impostazione predefinita, le celle del corpo sono caselle di testo. È possibile sostituire una cella del corpo con qualsiasi altro componente di moduli adattivi disponibile nella barra laterale, ad esempio una casella numerica, un selettore data o un elenco a discesa.
 
 Ad esempio, la prima riga del corpo della tabella seguente include i componenti casella di testo, selezione data e elenco a discesa come celle.
 
-![row-cell-types](assets/row-cell-types.png)
+![tipi di celle di riga](assets/row-cell-types.png)
 
 È possibile unire due o più celle del corpo selezionando le celle da unire, facendo clic con il pulsante destro del mouse e selezionando **Unisci**. È inoltre possibile dividere una cella unita facendo clic con il pulsante destro del mouse e selezionando **Dividi celle**.
 
@@ -79,7 +79,7 @@ Il menu a discesa della riga fornisce inoltre l&#39;operazione Modifica per modi
 
 È possibile aggiungere una descrizione della tabella per spiegare come sono organizzate le informazioni che gli assistenti vocali possono interpretare e leggere. Per aggiungere la descrizione:
 
-1. Seleziona la tabella e seleziona. ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
+1. Selezionare la tabella e selezionare ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
 1. Specificare il riepilogo nella scheda Accessibilità.
 1. Fai clic su **Fine**.
 
@@ -97,13 +97,13 @@ Per applicare l&#39;ordinamento alle colonne della tabella, le celle delle colon
 
 Per abilitare l&#39;ordinamento:
 
-1. Seleziona la tabella e seleziona. ![configure_icon](assets/configure_icon.png) (Configura). È inoltre possibile selezionare la tabella utilizzando **Contenuto** nella barra laterale della comunicazione interattiva.
-1. Seleziona **Abilita ordinamento**.
+1. Selezionare la tabella e selezionare ![configure_icon](assets/configure_icon.png) (Configura). Puoi anche selezionare la tabella utilizzando il browser **Contenuto** nella barra laterale della comunicazione interattiva.
+1. Selezionare **Abilita ordinamento**.
 1. Seleziona ![done_icon](assets/done_icon.png) per salvare le proprietà della tabella. Le icone di ordinamento, frecce verso l’alto o il basso, nelle intestazioni di colonna indicano che l’ordinamento è stato abilitato.
 
    ![Abilita ordinamento](assets/enable_sorting_new.png)
 
-1. Passa a **Anteprima** per visualizzare l&#39;output. La tabella viene ordinata automaticamente in base alla prima colonna della tabella.
+1. Passa alla modalità **Anteprima** per visualizzare l&#39;output. La tabella viene ordinata automaticamente in base alla prima colonna della tabella.
 1. Fai clic sull’intestazione della colonna per ordinare i valori in base alla colonna.
 
    Un’intestazione di colonna con una freccia su indica che la tabella è ordinata in base a tale colonna. Inoltre, i valori nella colonna vengono visualizzati in ordine crescente.
@@ -112,40 +112,40 @@ Per abilitare l&#39;ordinamento:
 
    Analogamente, un&#39;intestazione di colonna con una freccia in giù indica che i valori nella colonna vengono visualizzati in ordine decrescente.
 
-   Puoi anche apportare modifiche alla tabella in **Anteprima** e fare di nuovo clic sull&#39;intestazione di colonna per ordinare i valori di colonna.
+   È inoltre possibile apportare modifiche alla tabella in modalità **Anteprima** e fare di nuovo clic sull&#39;intestazione della colonna per ordinare i valori della colonna.
 
 ## Impostare la larghezza delle colonne per una tabella {#set-column-width}
 
 Per impostare la larghezza delle colonne per una tabella, eseguire la procedura seguente:
 
-1. In **[!UICONTROL Contenuto]** , seleziona la scheda **[!UICONTROL Tabella]** e selezionare Configura (![Configura](assets/configure-icon.svg)icona ).
+1. Nella scheda **[!UICONTROL Contenuto]**, selezionare il componente **[!UICONTROL Tabella]** e l&#39;icona Configura (![Configura](assets/configure-icon.svg)).
 
-1. Inserisci l’elenco di valori separati da virgole nel **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nella **[!UICONTROL Larghezza colonna]** In questo campo la larghezza delle colonne viene impostata su 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12, in quanto la larghezza della prima colonna si riferisce a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la larghezza della seconda colonna come un terzo della larghezza della tabella e 6/12 imposta la larghezza della terza colonna come metà della larghezza della tabella.
+1. Inserisci l&#39;elenco di valori separati da virgole nel campo **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nel campo **[!UICONTROL Larghezza colonna]**, la larghezza delle colonne verrà impostata su 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12, in quanto la larghezza della prima colonna si riferisce a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la larghezza della seconda colonna come un terzo della larghezza della tabella e 6/12 imposta la larghezza della terza colonna come metà della larghezza della tabella.
 
 ## Configura stile tabella {#configure}
 
 È possibile definire lo stile di una tabella utilizzando la modalità Stile nella barra degli strumenti della pagina. Per passare alla modalità stile e modificare lo stile della tabella, effettuare le seguenti operazioni
 
-1. Nella barra degli strumenti della pagina, prima di Anteprima, seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Stile**.
+1. Nella barra degli strumenti della pagina, prima di Anteprima, seleziona ![elenco a discesa nell&#39;area di lavoro](assets/canvas-drop-down.png) > **Stile**.
 
-1. Nella barra laterale seleziona la tabella e fai clic sul pulsante Modifica ![edit-button](assets/edit-button.png).
+1. Nella barra laterale, seleziona la tabella e fai clic sul pulsante di modifica ![edit-button](assets/edit-button.png).
 Le proprietà di stile sono visibili nella barra laterale.
 
 ![Proprietà di stile di una tabella](assets/style-table.png)
 
 >[!NOTE]
 >
->Puoi modificare il tema del colore per le righe di intestazione e corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, consulta [Temi in AEM Forms](/help/forms/using/themes.md).
+>Puoi modificare il tema del colore per le righe di intestazione e corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, vedere [Temi in AEM Forms](/help/forms/using/themes.md).
 
 ## Aggiungere o eliminare una riga in modo dinamico {#add-or-delete-a-row-dynamically}
 
 Le tabelle forniscono supporto preconfigurato per l’aggiunta o l’eliminazione dinamica di righe in fase di esecuzione.
 
-1. Seleziona una riga di tabella e seleziona ![cmppr](assets/cmppr.png).
+1. Selezionare una riga di tabella e selezionare ![cmppr](assets/cmppr.png).
 1. Nella scheda Impostazioni ripetizione, specifica i conteggi minimo e massimo per limitare il numero di righe nella tabella.
 1. Fai clic su **Fine**.
 
-In fase di runtime, verrà visualizzato **+** e *-* per aggiungere o eliminare una riga.
+In fase di runtime verranno visualizzati i pulsanti **+** e *-* per aggiungere o eliminare una riga.
 
 ![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
 
@@ -159,21 +159,21 @@ Le tabelle nei moduli adattivi consentono di scrivere espressioni in JavaScript 
 
 Mentre le tabelle e le righe supportano solo le espressioni di visibilità per controllarne la visibilità in base al valore restituito da un&#39;espressione, le celle supportano le espressioni seguenti:
 
-* **Script di inizializzazione:** per eseguire un&#39;azione all&#39;inizializzazione di un campo.
-* **Script per conferma valore:** per modificare i componenti di un modulo dopo la modifica del valore di un campo.
+* **Script di inizializzazione:** per eseguire un&#39;azione sull&#39;inizializzazione di un campo.
+* **Script di conferma del valore:** per modificare i componenti di un modulo dopo la modifica del valore di un campo.
 
 >[!NOTE]
 >
 >Se lo script di modifica/uscita XFA viene applicato anche allo stesso campo, lo script di modifica/uscita XFA viene eseguito prima dello script di conferma del valore.
 
-* **Calcolare le espressioni**: per calcolare automaticamente il valore di un campo.
+* **Calcola espressioni**: per calcolare automaticamente il valore di un campo.
 * **Espressioni di convalida**: per convalidare un campo.
 * **Accedere alle espressioni**: per abilitare/disabilitare un campo.
 * **Espressione di visibilità**: per controllare la visibilità di un campo e di un pannello.
 
 L’espressione di visibilità per una tabella o una riga può essere definita nella scheda Proprietà pannello della finestra di dialogo Modifica componente corrispondente. Le espressioni per una cella possono essere definite nella scheda Script della finestra di dialogo Modifica componente.
 
-Per l’elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Per l&#39;elenco completo delle classi di moduli adattivi, degli eventi, degli oggetti e delle API pubbliche, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Layout dispositivi mobili {#mobile-layouts}
 
@@ -185,7 +185,7 @@ Puoi configurare un layout mobile per una tabella dalla scheda Stile della fines
 
 Nel layout Intestazioni a sinistra, l’intestazione della tabella viene trasposta a sinistra, con una sola cella visualizzata sopra un’intestazione. Ogni riga in questo layout viene visualizzata come una sezione distinta. Le immagini seguenti confrontano una tabella su un desktop con quella su un dispositivo mobile.
 
-![vista desktop](assets/desktopview_new.png)
+![visualizzazione desktop](assets/desktopview_new.png)
 
 Vista desktop di una tabella con intestazione sul layout sinistro
 
@@ -207,7 +207,7 @@ Le immagini seguenti confrontano l’aspetto di una tabella su un dispositivo co
 
 Colonne compresse di una tabella con solo due colonne visualizzate su un dispositivo mobile
 
-![collapsible_column](assets/collapsible_column.png)
+![colonna_comprimibile](assets/collapsible_column.png)
 
 Colonna espansa di una tabella su un dispositivo mobile
 
@@ -221,11 +221,11 @@ Prendiamo ad esempio la seguente tabella di riepilogo delle transazioni bancarie
 
 In questo esempio, la proprietà Nome elemento per:
 
-* la riga è **Riga 1**
-* la cella del corpo sotto la data transazione è **tableItem1**
+* la riga è **Row1**
+* la cella del corpo in Data transazione è **tableItem1**
 * la cella del corpo in Descrizione è **tableItem2**
-* la cella body in Tipo di transazione è **tipo**
-* la cella del corpo sotto Importo in USD è **tableItem3**
+* la cella del corpo sotto il tipo di transazione è **type**
+* la cella del corpo in Importo in USD è **tableItem3**
 
 Il file XML che contiene i dati nel formato seguente:
 
@@ -285,13 +285,13 @@ Il file XML che contiene i dati nel formato seguente:
 </afData>
 ```
 
-Nel codice XML di esempio, i dati di una riga sono definiti dal `<Row1>` tag: il nome dell’elemento per la riga della tabella. All&#39;interno del `<Row1>` , i dati di ciascuna cella sono definiti all’interno del tag per il nome del relativo elemento, ad esempio `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, e `<type>`.
+Nel codice XML di esempio, i dati di una riga sono definiti dai tag `<Row1>`, che rappresentano il nome dell&#39;elemento per la riga nella tabella. All&#39;interno del tag `<Row1>`, i dati di ogni cella sono definiti nel tag per il relativo nome elemento, ad esempio `<tableItem1>`, `<tableItem2>`, `<tableItem3>` e `<type>`.
 
-Per unire questi dati alla tabella in fase di esecuzione, è necessario puntare il modulo adattivo contenente la tabella alla posizione XML assoluta con wcmmode disabilitato. Ad esempio, se il modulo adattivo si trova *https://localhost:4502/myForms/bankTransaction.html* e il file XML dati viene salvato in *C:/myTransactions/bankSummary.xml*, è possibile visualizzare la tabella con i dati al seguente URL:
+Per unire questi dati alla tabella in fase di esecuzione, è necessario puntare il modulo adattivo contenente la tabella alla posizione XML assoluta con wcmmode disabilitato. Ad esempio, se il modulo adattivo si trova in *https://localhost:4502/myForms/bankTransaction.html* e il file XML dei dati viene salvato in *C:/myTransactions/bankSummary.xml*, è possibile visualizzare la tabella con i dati al seguente URL:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
-![data-merge-table](assets/data-merged-table.png)
+![tabella unita a dati](assets/data-merged-table.png)
 
 ## Utilizzare componenti XDP e tipi complessi XSD {#use-xdp-components-and-xsd-complex-types}
 

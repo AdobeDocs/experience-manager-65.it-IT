@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Introduzione {#introduction}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 I moduli adattivi supportano vari eventi, proprietà, script e convalide XFA definiti in un file XDP, tra cui:
 
@@ -153,27 +153,27 @@ La tabella seguente acquisisce il comportamento nei moduli adattivi dei vari scr
    <td><p>Mappato alla proprietà value in adaptive Form.</p> </td>
   </tr>
   <tr>
-   <td><p>elementi<em> (Casella di riepilogo, Casella di controllo)</em></p> </td>
+   <td><p>elementi<em> (casella di riepilogo, casella di controllo)</em></p> </td>
    <td><p>Mappata alla proprietà options nel modulo adattivo. È possibile sostituirlo utilizzando l'espressione Opzioni.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (Campo di testo)</em></p> </td>
+   <td><p>maxChar<em> (campo di testo)</em></p> </td>
    <td><p>Mappato alla proprietà Numero massimo di caratteri consentiti nel modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>multiriga<em> (Campo di testo)</em></p> </td>
+   <td><p>multiline<em> (campo di testo)</em></p> </td>
    <td><p>Mappato alla proprietà Allow multiple lines (Consenti più righe) nel modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (Campo Numerico, Campo Decimale)</em></p> </td>
+   <td><p>fracDigit<em> (campo numerico, campo decimale)</em></p> </td>
    <td><p>Mappato alla proprietà Frac digits nel modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (Campo Numerico, Campo Decimale)</em></p> </td>
+   <td><p>leadDigit<em> (campo numerico, campo decimale)</em></p> </td>
    <td><p>Mappato alla proprietà Cifre lead nel modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Casella di riepilogo)</em></p> </td>
+   <td><p>multiSelect<em> (casella di riepilogo)</em></p> </td>
    <td><p>Mappato su Consente la selezione di più proprietà in un modulo adattivo.</p> </td>
   </tr>
  </tbody>
@@ -203,7 +203,7 @@ La tabella seguente acquisisce il comportamento nei moduli adattivi dei vari scr
   </tr>
   <tr>
    <td><p>validationState </p> </td>
-   <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.<br /> </p> </td>
+   <td><p>Questo script viene eseguito in fase di esecuzione e non può essere sostituito in un modulo adattivo.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>uscire </p> </td>

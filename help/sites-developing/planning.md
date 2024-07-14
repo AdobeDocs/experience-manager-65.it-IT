@@ -28,25 +28,25 @@ Questo documento descrive cosa devi sapere per pianificare il test. Inoltre, è 
 
 Prima di iniziare con l&#39;analisi e la definizione effettive dei test, esaminare le informazioni riportate di seguito.
 
-**Architettura AEM** - Consulta Concetti di base per conoscere l’architettura e i principi di base dell’AEM.
+**Architettura AEM** - Consulta Concetti di base per conoscere l&#39;architettura e i principi di base dell&#39;AEM.
 
-**Documentazione** - Per ulteriori informazioni, consultate una delle sezioni della documentazione o gli articoli Come fare.
+**Documentazione** - Per ulteriori informazioni, consulta una delle sezioni della documentazione o gli articoli Come fare.
 
-**Principi di base delle prove** - L&#39;utente deve essere a conoscenza dei principi di base di Software Testing e Quality Assurance. È preferibile che tu abbia esperienza con i progetti di test.
+**Principi di base dei test** - È necessario conoscere i principi di base dei test software e della garanzia di qualità. È preferibile che tu abbia esperienza con i progetti di test.
 
 Ci sono molti siti web, libri e corsi che trattano di tali principi e quindi non saranno trattati in dettaglio in questo documento.
 
-**Ipotesi da evitare** - Il presupposto più importante è che il tuo sito web debba soddisfare milioni di richieste ogni giorno. In determinate circostanze può essere vero, ma non può essere presunto.
+**Presupposti da evitare** - Il presupposto più importante è che il sito Web debba soddisfare milioni di richieste ogni giorno. In determinate circostanze può essere vero, ma non può essere presunto.
 
 Anche se i numeri futuri non possono essere previsti con una precisione del 100%, l’osservazione del sito esistente e del traffico esperienza fornirà una buona indicazione. Puoi quindi effettuare delle stime in base al fattore previsto/previsto di aumento del traffico.
 
-**Impegno per la qualità** - È di fondamentale importanza che chiunque mantenga la neutralità dei test e ne riferisca semplicemente i risultati.
+**Impegno per la qualità** - È di fondamentale importanza che tutti gli utenti che eseguono i test rimangano neutrali e riportino semplicemente i risultati dei test eseguiti.
 
 È responsabilità del Project Manager decidere e avviare azioni in base ai risultati.
 
-**Partecipa** - Anche se è responsabilità del Project Manager assicurarsi che tutte le parti siano pienamente coinvolte in tutte le riunioni (stato, workshop e così via), è necessario anche cercare di essere coinvolti il prima possibile nel ciclo del progetto, inclusi i processi di raccolta delle informazioni e di analisi dei requisiti.
+**Partecipa** - Anche se è responsabilità del Project Manager assicurarsi che tutte le parti siano pienamente coinvolte in tutte le riunioni (stato, workshop e così via), è necessario cercare di partecipare il prima possibile al ciclo del progetto, inclusi i processi di raccolta delle informazioni e di analisi dei requisiti.
 
-**Coinvolgere il cliente** - Su un tema simile, cerca di coinvolgere il cliente (ove possibile) durante la definizione dei test case e del piano.
+**Coinvolgi il cliente**. Su un tema simile, prova a coinvolgere il cliente (ove possibile) durante la definizione dei test case e del piano.
 
 ## Tipi di test {#types-of-tests}
 
@@ -56,21 +56,21 @@ Esistono varie classificazioni standard dei test che sono appropriate per l&#39;
 >
 >Questi sono elencati nel loro ordine cronologico di applicazione.
 
-**Test unità** - Test (di solito) effettuati dal team di sviluppo per garantire che i singoli elementi si comportino correttamente, anche se isolati.
+**Test unità** - Test eseguiti (in genere) dal team di sviluppo per verificare il corretto funzionamento dei singoli elementi, anche se isolati.
 
-**Integration test** - Moduli di prova quando combinati. Questi test vengono eseguiti dopo l&#39;esecuzione dell&#39;unit test, ma prima dell&#39;esecuzione del test del sistema.
+**Integration test** - Moduli di test quando combinati. Questi test vengono eseguiti dopo l&#39;esecuzione dell&#39;unit test, ma prima dell&#39;esecuzione del test del sistema.
 
-**Prove del fumo** - Si tratta di test rapidi utilizzati per dimostrare che il software è in esecuzione e che sono disponibili funzionalità di alto livello. I dettagli non vengono testati.
+**Test antifumo** - Si tratta di test rapidi e sporchi utilizzati per dimostrare che il software è in esecuzione e che sono disponibili funzionalità di alto livello. I dettagli non vengono testati.
 
-**Test funzionali** - Questi vengono utilizzati per testare la funzionalità del software. Una serie di prove sarà concepita per coprire tutti i dettagli funzionali, con dati sia previsti che imprevisti e/o errati.
+**Test funzionali**: utilizzati per testare la funzionalità del software. Una serie di prove sarà concepita per coprire tutti i dettagli funzionali, con dati sia previsti che imprevisti e/o errati.
 
 I test Black-box sono test funzionali di un&#39;unità/componente/modulo completo, eseguiti senza conoscere il funzionamento interno dell&#39;elemento in questione.
 
-**Test di sistema** - Questi test dell&#39;intero sistema, una volta che è stato completamente integrato e installato su una piattaforma adeguata.
+**Test di sistema**: questi test consentono di eseguire il test dell&#39;intero sistema una volta che è stato completamente integrato e installato su una piattaforma appropriata.
 
 Testano la funzionalità su base black-box.
 
-**Test delle prestazioni** - I test di performance sono fondamentali per il test dell’AEM.
+**Test delle prestazioni** - I test delle prestazioni sono fondamentali per il test dell&#39;AEM.
 
 Vengono utilizzati per illustrare le prestazioni in condizioni diverse:
 
@@ -90,9 +90,9 @@ Vengono utilizzati per illustrare le prestazioni in condizioni diverse:
 
 I risultati vengono quindi utilizzati per ottimizzare l’applicazione.
 
-**Stress test** - Vengono eseguiti test di stress per confermare il comportamento di un componente o di un&#39;applicazione in condizioni estreme. In particolare, questi test vengono utilizzati per mostrare come il comportamento si deteriora, quando l’elemento avrà esito negativo e come.
+**Stress test**: gli stress test vengono eseguiti per confermare il comportamento di un componente o di un&#39;applicazione in condizioni estreme. In particolare, questi test vengono utilizzati per mostrare come il comportamento si deteriora, quando l’elemento avrà esito negativo e come.
 
-**Test di regressione** - I test di regressione vengono utilizzati per verificare che la funzionalità già dimostrata in una versione precedente del software funzioni ancora correttamente.
+**Test di regressione** - I test di regressione vengono utilizzati per confermare che le funzionalità già verificate in una versione precedente del software funzionano ancora correttamente.
 
 I test di regressione sono buoni candidati per l&#39;automazione (se possibile) per garantire che possano essere ripetuti in modo rapido e coerente.
 
@@ -100,25 +100,25 @@ I test di regressione sono buoni candidati per l&#39;automazione (se possibile) 
 
 L&#39;elenco dei test di accettazione può contenere una combinazione di test delle varie categorie sopra indicate e viene selezionato per verificare che il progetto soddisfi i requisiti del cliente
 
-Consulta [Accettazione e disconnessione](/help/sites-developing/acceptance-signoff.md) per ulteriori dettagli.
+Per ulteriori dettagli, vedere [Accettazione e disconnessione](/help/sites-developing/acceptance-signoff.md).
 
 ## Guida introduttiva {#getting-started}
 
 Prima di iniziare a utilizzare i test case e il piano di test dettagliati, è possibile:
 
-**Definire gli obiettivi** : definisci gli obiettivi di alto livello da utilizzare come punto di partenza per l’ottimizzazione man mano che i test procedono. Si desidera:
+**Definisci gli obiettivi**: definisci gli obiettivi di alto livello da usare come punto di partenza per l&#39;ottimizzazione man mano che il test procede. Si desidera:
 
 * Testare la funzionalità in base alle specifiche dettagliate dei requisiti.
-* Prestazioni di prova in base alla [Metriche di Target](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
+* Prestazioni di test in base alle [metriche di destinazione](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
 
 tra gli altri.
 
-**Raccogliere statistiche sul traffico dal sito Web esistente** - Queste informazioni possono essere estratte dai file di registro. Per ulteriori informazioni, consulta Monitoraggio delle prestazioni.
+**Raccogli statistiche sul traffico dal sito Web esistente**. Queste informazioni possono essere estratte dai file di registro. Per ulteriori dettagli, vedere Monitoraggio delle prestazioni.
 
 Queste cifre forniranno un’indicazione del traffico attuale (volume e diffusione) sul sito web esistente e possono essere utilizzate per formare un punto di base per il nuovo sito web.
 
-**Raccogliere statistiche sul traffico da siti Web esterni** - Se possibile, è possibile tentare di raccogliere statistiche sul traffico da altri siti Web per il confronto, ma queste cifre non vengono sempre pubblicate.
+**Raccogliere le statistiche sul traffico da siti Web esterni** - Se possibile, provare a raccogliere le statistiche sul traffico da altri siti Web per il confronto, ma queste cifre non vengono sempre pubblicate.
 
-**Conferma metriche di Target** - Le metriche vengono utilizzate per definire misurazioni quantitative per la qualità del sito web, in quanto rappresentano gli obiettivi di prestazioni da raggiungere.
+**Conferma metriche di destinazione**: le metriche vengono utilizzate per definire misurazioni quantitative per la qualità del sito Web, in quanto rappresentano gli obiettivi di prestazioni da raggiungere.
 
-Devono essere definite all’inizio del progetto, insieme al cliente. Consulta [Metriche di Target](/help/sites-developing/planning.md) per ulteriori informazioni.
+Devono essere definite all’inizio del progetto, insieme al cliente. Per ulteriori informazioni, vedere [Metriche di destinazione](/help/sites-developing/planning.md).

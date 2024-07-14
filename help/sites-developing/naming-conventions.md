@@ -18,14 +18,14 @@ ht-degree: 2%
 
 # Convenzioni di denominazione {#naming-conventions}
 
-I nodi nell’archivio sono soggetti alle convenzioni di denominazione del [Archivio dei contenuti Java](/help/sites-developing/the-basics.md#java-content-repository). Tuttavia, l’AEM impone ulteriori convenzioni per il nome dei nodi della pagina.
+I nodi dell&#39;archivio sono soggetti alle convenzioni di denominazione dell&#39;[archivio dei contenuti Java](/help/sites-developing/the-basics.md#java-content-repository). Tuttavia, l’AEM impone ulteriori convenzioni per il nome dei nodi della pagina.
 
 ## Convenzioni di denominazione delle pagine {#naming-conventions-for-pages}
 
 Queste convenzioni di denominazione vengono implementate a vari livelli:
 
-* JcrUtil: l&#39;implementazione AEM del [Utilità JCR](#jcr-utilities).
-* PageManager: [Gestione pagine](#page-manager) fornisce metodi per le operazioni a livello di pagina.
+* JcrUtil: implementazione AEM delle [utilità JCR](#jcr-utilities).
+* PageManager: [Page Manager](#page-manager) fornisce metodi per le operazioni a livello di pagina.
 * In base all’interfaccia utente in uso:
 
    * [Interfaccia utente touch standard](#standard-ui)
@@ -33,7 +33,7 @@ Queste convenzioni di denominazione vengono implementate a vari livelli:
 
 ### Utilità JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) è l’implementazione AEM delle utilità JCR. Di particolare interesse per la convalida dei nomi sono le mappature di caratteri che controlla e le convalide seguenti:
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) è l&#39;implementazione AEM delle utilità JCR. Di particolare interesse per la convalida dei nomi sono le mappature di caratteri che controlla e le convalide seguenti:
 
 * `isValidName`
 
@@ -47,7 +47,7 @@ Queste convenzioni di denominazione vengono implementate a vari livelli:
 
 ### Gestione pagine {#page-manager}
 
-[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fornisce metodi per le operazioni a livello di pagina basati su [JCRUtil](#jcr-utilities).
+[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fornisce metodi per le operazioni a livello di pagina, basati su [JCRUtil](#jcr-utilities).
 
 ### Interfaccia standard {#standard-ui}
 
@@ -67,7 +67,7 @@ L’interfaccia utente classica impone restrizioni più severe:
    * viene fornito il titolo della pagina da convertire nel nome del nodo
    * viene fornito un nome di nodo esplicito
 
-* Caratteri validi (solo questi caratteri sono effettivamente validi quando una pagina viene creata dall’interfaccia utente classica, anche se `PageManagerImpl` consentirebbe caratteri aggiuntivi):
+* Caratteri validi (solo questi caratteri sono effettivamente validi quando una pagina viene creata dall&#39;interfaccia utente classica, anche se `PageManagerImpl` consentirebbe caratteri aggiuntivi):
 
    * Da &#39;a&#39; a &#39;z&#39;
    * Da &#39;A&#39; a &#39;Z&#39;

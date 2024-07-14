@@ -38,30 +38,30 @@ Gli aspetti principali sono trattati di seguito, mentre le pagine che seguono fo
 >
 >Per informazioni su:
 >
->* Partecipare ai flussi di lavoro, vedi [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
->* Per l’amministrazione dei flussi di lavoro e delle istanze dei flussi di lavoro, consulta [Amministrazione dei flussi di lavoro](/help/sites-administering/workflows.md).
->* Per un articolo della community end-to-end, vedi [Modifica delle risorse digitali tramite flussi di lavoro Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=it)
->* Consulta la [Webinar Ask the AEM Experts sui flussi di lavoro](https://communities.adobeconnect.com/p5s33iburd54/).
->* Modifiche alle posizioni delle informazioni consulta [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) e [Best practice per i flussi di lavoro - Sedi](/help/sites-developing/workflows-best-practices.md#locations).
+>* Partecipazione ai flussi di lavoro, vedi [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
+>* Per l&#39;amministrazione dei flussi di lavoro e delle istanze dei flussi di lavoro, vedere [Amministrazione dei flussi di lavoro](/help/sites-administering/workflows.md).
+>* Per un articolo della community end-to-end, vedi [Modifica di Digital Assets tramite i flussi di lavoro di Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=it)
+>* Guarda il webinar [Ask the AEM Experts webinar on Workflows](https://communities.adobeconnect.com/p5s33iburd54/) (Domande agli esperti sui flussi di lavoro).
+>* Le modifiche alle posizioni delle informazioni sono riportate in [Ristrutturazione dell&#39;archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) e [Best practice per i flussi di lavoro - Posizioni](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
 ## Modello {#model}
 
-A `WorkflowModel` rappresenta una definizione (modello) di un flusso di lavoro. È fatto di `WorkflowNodes` e `WorkflowTransitions`. Le transizioni collegano i nodi e definiscono *flusso*. Il modello ha sempre un nodo iniziale e un nodo finale.
+Un `WorkflowModel` rappresenta una definizione (modello) di un flusso di lavoro. È composto da `WorkflowNodes` e `WorkflowTransitions`. Le transizioni connettono i nodi e definiscono il *flusso*. Il modello ha sempre un nodo iniziale e un nodo finale.
 
 ### Modello runtime {#runtime-model}
 
 I modelli di flusso di lavoro sono dotati di versione. Quando esegui un’istanza di flusso di lavoro, questa utilizza e mantiene il modello di runtime del flusso di lavoro, come disponibile al momento in cui il flusso di lavoro è stato avviato.
 
-Un modello di runtime è [generato quando **Sincronizza** viene attivato nell’editor modelli di flusso di lavoro](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
+Un modello runtime è [generato quando **Sync** viene attivato nell&#39;editor modelli flusso di lavoro](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
 
-Modifiche al modello di flusso di lavoro che si verificano, ai modelli di runtime generati o a entrambi, *dopo* l’istanza specifica avviata non viene applicata a tale istanza.
+Le modifiche al modello di flusso di lavoro che si verificano o ai modelli di runtime generati, o a entrambi, *dopo* l&#39;avvio dell&#39;istanza specifica non vengono applicate a tale istanza.
 
 >[!CAUTION]
 >
->I passaggi eseguiti sono definiti dal [modello runtime](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model), generato al momento del **Sincronizza** viene attivata nell’editor modelli di flusso di lavoro.
+>I passaggi eseguiti sono definiti dal [modello di runtime](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model), generato al momento dell&#39;attivazione dell&#39;azione **Sync** nell&#39;editor modelli di flusso di lavoro.
 >
->Se il modello di flusso di lavoro viene modificato dopo questo momento (senza **Sincronizza** ), l’istanza di runtime non riflette tali modifiche. Solo i modelli di runtime generati dopo l’aggiornamento riflettono le modifiche. Le eccezioni sono gli script ECMA sottostanti, che vengono mantenuti una sola volta in modo che tali modifiche vengano apportate.
+>Se il modello di flusso di lavoro viene modificato dopo questo momento (senza che **Sync** venga attivato), l&#39;istanza di runtime non riflette tali modifiche. Solo i modelli di runtime generati dopo l’aggiornamento riflettono le modifiche. Le eccezioni sono gli script ECMA sottostanti, che vengono mantenuti una sola volta in modo che tali modifiche vengano apportate.
 
 ### Passaggio {#step}
 
@@ -73,23 +73,23 @@ Ogni fase esegue un&#39;attività discreta. Esistono diversi tipi di passaggi de
 * OR Split/Join: utilizza la logica per decidere quale passaggio eseguire successivamente nel flusso di lavoro.
 * AND Split/Join: consente l&#39;esecuzione simultanea di più passaggi.
 
-Tutti i passaggi condividono le seguenti proprietà comuni: `Autoadvance` e `Timeout` avvisi (scrivibili).
+Tutti i passaggi condividono le seguenti proprietà comuni: `Autoadvance` e `Timeout` avvisi (scriptable).
 
 ### Transizione {#transition}
 
-A `WorkflowTransition` rappresenta una transizione tra due `WorkflowNodes` di un `WorkflowModel`.
+Un `WorkflowTransition` rappresenta una transizione tra due `WorkflowNodes` di un `WorkflowModel`.
 
 * Definisce il collegamento tra due passaggi consecutivi.
 * È possibile applicare delle regole.
 
 ### Elemento di lavoro {#workitem}
 
-A `WorkItem` è l&#39;unità passata attraverso un `Workflow` istanza di un `WorkflowModel`. Contiene il `WorkflowData` che l&#39;istanza agisca su e un riferimento al `WorkflowNode` che descrive il passaggio del flusso di lavoro sottostante.
+Un `WorkItem` è l&#39;unità passata tramite un&#39;istanza `Workflow` di un `WorkflowModel`. Contiene `WorkflowData` su cui agisce l&#39;istanza e un riferimento a `WorkflowNode` che descrive il passaggio del flusso di lavoro sottostante.
 
 * Viene utilizzato per identificare l’attività e viene inserito nella rispettiva casella in entrata.
-* Un’istanza di flusso di lavoro può avere uno o più `WorkItems` contemporaneamente (a seconda del modello di flusso di lavoro).
-* Il `WorkItem` fa riferimento all’istanza del flusso di lavoro.
-* Nell’archivio, il `WorkItem` viene memorizzato sotto l’istanza del flusso di lavoro.
+* Un&#39;istanza di flusso di lavoro può avere uno o più `WorkItems` contemporaneamente (a seconda del modello di flusso di lavoro).
+* `WorkItem` fa riferimento all&#39;istanza del flusso di lavoro.
+* Nell&#39;archivio, `WorkItem` è memorizzato sotto l&#39;istanza del flusso di lavoro.
 
 ### Payload {#payload}
 
@@ -112,9 +112,9 @@ Le istanze completate e terminate vengono archiviate.
 
 ### Casella in entrata {#inbox}
 
-Ogni account utente dispone di una propria casella in entrata del flusso di lavoro in cui è assegnato `WorkItems` sono accessibili.
+Ogni account utente dispone di una propria casella in entrata del flusso di lavoro in cui sono accessibili i `WorkItems` assegnati.
 
-Il `WorkItems` sono assegnati direttamente all’account utente o al gruppo a cui appartengono.
+I `WorkItems` sono assegnati direttamente all&#39;account utente o al gruppo a cui appartengono.
 
 ### Tipi di flusso di lavoro {#workflow-types}
 
@@ -147,53 +147,53 @@ Sono stati introdotti flussi di lavoro transitori per il caricamento di molte ri
 
 >[!NOTE]
 >
->Consulta [Creazione di un flusso di lavoro transitorio](/help/sites-developing/workflows-models.md#creating-a-transient-workflow) per ulteriori dettagli.
+>Per ulteriori dettagli, vedere [Creazione di un flusso di lavoro transitorio](/help/sites-developing/workflows-models.md#creating-a-transient-workflow).
 
 >[!CAUTION]
 >
 >Quando un modello di flusso di lavoro è contrassegnato come transitorio, esistono alcuni scenari in cui le informazioni di runtime devono essere ancora persistenti:
 >
 >* Il tipo di payload (ad esempio, video) richiede passaggi esterni per l’elaborazione; in questi casi, per la conferma dello stato è necessaria la cronologia di runtime.
->* Il flusso di lavoro immette un **Divisione AND**. In questi casi, per la conferma dello stato è necessaria la cronologia di runtime.
+>* Il flusso di lavoro immette una suddivisione **AND**. In questi casi, per la conferma dello stato è necessaria la cronologia di runtime.
 >* Quando il flusso di lavoro transitorio entra in un passaggio partecipante, in fase di esecuzione passa alla modalità non transitorio. Poiché l’attività viene passata a una persona, la cronologia deve essere persistente.
 >
 
 >[!CAUTION]
 >
->All’interno di un flusso di lavoro transitorio, non utilizzare una **Vai al passaggio**.
+>All&#39;interno di un flusso di lavoro transitorio, non utilizzare un **Passaggio precedente**.
 >
->Il motivo è che **Vai al passaggio** crea un processo sling per continuare il flusso di lavoro nel `goto` punto. Tale operazione vanifica lo scopo di rendere transitorio il flusso di lavoro e genera un errore nel file di registro.
+>Il motivo è che il **passaggio Vai** crea un processo Sling per continuare il flusso di lavoro al punto `goto`. Tale operazione vanifica lo scopo di rendere transitorio il flusso di lavoro e genera un errore nel file di registro.
 >
->Utilizzare **Suddivisione O** effettuare scelte all’interno di un flusso di lavoro transitorio.
+>Utilizza **OR Split** per effettuare scelte all&#39;interno di un flusso di lavoro transitorio.
 
 >[!NOTE]
 >
->Consulta [Best practice per Assets](/help/assets/performance-tuning-guidelines.md#transient-workflows) per ulteriori informazioni su come i flussi di lavoro transitori influiscono sulle prestazioni delle risorse.
+>Consulta [Best practice per Assets](/help/assets/performance-tuning-guidelines.md#transient-workflows) per ulteriori informazioni sull&#39;impatto dei flussi di lavoro transitori sulle prestazioni delle risorse.
 
 ### Supporto risorse multiple {#multi-resource-support}
 
-Attivazione **Supporto di più risorse** per il modello di flusso di lavoro, significa che viene avviata una singola istanza di flusso di lavoro anche quando si selezionano più risorse. Ciascuno è allegato come pacchetto.
+L&#39;attivazione di **Supporto risorse multiple** per il modello di flusso di lavoro comporta l&#39;avvio di una singola istanza di flusso di lavoro anche quando si selezionano più risorse. Ciascuno è allegato come pacchetto.
 
-Se **Supporto di più risorse** non è attivato per il modello di flusso di lavoro e sono selezionate più risorse, quindi viene avviata una singola istanza di flusso di lavoro per ogni risorsa.
+Se **Supporto risorse multiple** non è attivato per il modello di flusso di lavoro e sono selezionate più risorse, viene avviata una singola istanza di flusso di lavoro per ogni risorsa.
 
 >[!NOTE]
 >
->Consulta [Configurazione di un flusso di lavoro per il supporto di più risorse](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) per ulteriori dettagli.
+>Per ulteriori dettagli, vedere [Configurazione di un flusso di lavoro per Supporto risorse multiple](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
 
 ### Fasi flusso di lavoro {#workflow-stages}
 
-Le fasi del flusso di lavoro consentono di visualizzare l’avanzamento di un flusso di lavoro durante la gestione delle attività. Possono essere utilizzati per fornire una panoramica della distanza del flusso di lavoro attraverso l’elaborazione. Durante l’esecuzione del flusso di lavoro, l’utente può visualizzare lo stato di avanzamento descritto da **Fase** (anziché un singolo passaggio).
+Le fasi del flusso di lavoro consentono di visualizzare l’avanzamento di un flusso di lavoro durante la gestione delle attività. Possono essere utilizzati per fornire una panoramica della distanza del flusso di lavoro attraverso l’elaborazione. Durante l&#39;esecuzione del flusso di lavoro, l&#39;utente può visualizzare l&#39;avanzamento descritto da **Fase** (anziché da un singolo passaggio).
 
 Poiché i singoli nomi di fase possono essere specifici e tecnici, è possibile definirli per fornire una visione concettuale dell’avanzamento del flusso di lavoro.
 
 Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
 
-1. È possibile [configurare gli stadi del flusso di lavoro (che mostrano l&#39;avanzamento del flusso di lavoro), quindi assegnare la fase appropriata a ciascun passaggio del flusso di lavoro](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
+1. È possibile [configurare le fasi del flusso di lavoro (che mostrano l&#39;avanzamento del flusso di lavoro) e quindi assegnare la fase appropriata a ogni passaggio del flusso di lavoro](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
 
    * È possibile creare più nomi di fase.
    * A ogni passo viene quindi assegnato un nome di stadio (un nome di stadio può essere assegnato a uno o più passi).
 
-   | **Nome passaggio** | **Stadio (assegnato al passaggio)** |
+   | **Nome passaggio** | **Fase (assegnata al passaggio)** |
    |---|---|
    | Passaggio 1 | Creare |
    | Passaggio 2 | Creare |
@@ -202,14 +202,14 @@ Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
    | Passaggio 5 | Completato |
    | Passaggio 6 | Completato |
 
-1. Quando il flusso di lavoro viene eseguito, l’utente può visualizzare l’avanzamento in base ai nomi degli stadi (anziché ai nomi dei passaggi). L’avanzamento del flusso di lavoro viene visualizzato in [Scheda INFORMAZIONI SUL FLUSSO DI LAVORO della finestra dei dettagli dell’attività dell’elemento del flusso di lavoro](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) elencati in [Casella in entrata](/help/sites-authoring/inbox.md).
+1. Quando il flusso di lavoro viene eseguito, l’utente può visualizzare l’avanzamento in base ai nomi degli stadi (anziché ai nomi dei passaggi). L&#39;avanzamento del flusso di lavoro viene visualizzato nella scheda [INFORMAZIONI FLUSSO DI LAVORO della finestra dei dettagli attività dell&#39;elemento del flusso di lavoro](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) elencato nella [Posta in arrivo](/help/sites-authoring/inbox.md).
 
 ### Flussi di lavoro e Forms {#workflows-and-forms}
 
-In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con [componenti core modulo componenti](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibile in un&#39;istanza AEM standard o con [Soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
+In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con i [componenti core modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibili in un&#39;istanza AEM standard o con la [soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Durante la creazione di un modulo, l’invio del modulo può essere facilmente associato a un modello di flusso di lavoro. Ad esempio, per archiviare il contenuto in una posizione specifica del repository o per notificare a un utente l&#39;invio del modulo e il relativo contenuto.
 
 ### Flussi di lavoro e traduzione {#workflows-and-translation}
 
-I flussi di lavoro fanno anche parte del [Traduzione](/help/sites-administering/translation.md) processo.
+I flussi di lavoro fanno anche parte del processo [Traduzione](/help/sites-administering/translation.md).

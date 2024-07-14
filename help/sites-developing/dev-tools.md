@@ -20,13 +20,13 @@ ht-degree: 2%
 
 Per sviluppare applicazioni JCR, Apache Sling o Adobe Experience Manager (AEM), sono disponibili i seguenti set di strumenti:
 
-* un set costituito da [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. CRXDE Liti è incorporato in CRX/AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Liti puoi creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l’integrazione con SVN.
+* un set composto da [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. CRXDE Lite è incorporato in CRX/AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite puoi creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l’integrazione con SVN.
 
-  CRXDE Liti è consigliato quando non hai accesso diretto al server CRX/AEM, quando sviluppi un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java™ o quando non hai bisogno di un debugger dedicato, del completamento del codice e dell’evidenziazione della sintassi.
+  CRXDE Lite è consigliato quando non hai accesso diretto al server CRX/AEM, quando sviluppi un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java™ o quando non hai bisogno di un debugger dedicato, del completamento del codice e dell’evidenziazione della sintassi.
 
 * un insieme costituito dai seguenti elementi:
-   * Un ambiente di sviluppo integrato. Ad esempio: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md).
-   * Uno strumento di generazione. Ad esempio: [Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   * Un ambiente di sviluppo integrato. [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md).
+   * Uno strumento di generazione. Ad esempio, [Apache Maven](/help/sites-developing/ht-projects-maven.md).
    * FileVault che è stato sviluppato da Adobe per mappare un archivio su un file system, un sistema di controllo della versione. Ad esempio, Subversion.
    * Un sistema di tracciamento dei bug. Per esempio, Jira.
    * Un sistema centrale di gestione delle dipendenze. Ad esempio, Apache Archiva.

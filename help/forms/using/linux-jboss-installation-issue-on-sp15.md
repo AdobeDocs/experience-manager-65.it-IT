@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Problema   {#issue}
 
-AEM Forms JEE 6.5.15.0 Service Pack non è installato correttamente nell’ambiente JBoss® Linux®. In entrata `PatchInstallerProcessing[1-9*].log` archiviare la voce di registro, `[AEM_Forms_JEE_DIR]/patch/AEMForms-6.5.0-0057/xml/RUP_BOM.xml not found! Assuming this component is not in the installation. Skipping Processing`, è registrato. Questa voce indica che l’installazione del service pack di AEM Forms JEE 6.5.15.0 non è andata a buon fine.
+AEM Forms JEE 6.5.15.0 Service Pack non è installato correttamente nell’ambiente JBoss® Linux®. Nel file `PatchInstallerProcessing[1-9*].log` è registrata la voce di registro `[AEM_Forms_JEE_DIR]/patch/AEMForms-6.5.0-0057/xml/RUP_BOM.xml not found! Assuming this component is not in the installation. Skipping Processing`. Questa voce indica che l’installazione del service pack di AEM Forms JEE 6.5.15.0 non è andata a buon fine.
 
 ## Applicabile a {#applies-to}
 
@@ -25,14 +25,14 @@ Questa soluzione si applica a:
 
 >[!NOTE]
 >
-> Assicurati che AEM Forms JEE 6.5.15.0 Service Pack sia installato sul server applicazioni almeno una volta prima di eseguire i passaggi di [aggiunta del file RUP_BOM.xml alla directory XML](#solution-solution).
+> Verificare che il Service Pack di AEM Forms JEE 6.5.15.0 sia installato almeno una volta nel server applicazioni prima di eseguire la procedura di [aggiunta del file RUP_BOM.xml alla directory XML](#solution-solution).
 
 ## Soluzione {#solution}
 
-Per risolvere il problema di installazione di AEM Forms JEE 6.5.15.0 service pack, aggiungi `RUP_BOM.xml` nella directory XML:
+Per risolvere il problema di installazione di AEM Forms JEE 6.5.15.0 service pack, aggiungere il file `RUP_BOM.xml` alla directory XML:
 1. Passare alla cartella in cui è stata estratta la patch `AEMForms-6.5.0-0057_jboss_linux.tar.gz`.
-1. Accedi a `/CDROM_Installers/Linux/Disk1/InstData` e individuare il `Resource1.zip` file.
-1. Copia il `Resource1.zip` file in una posizione diversa all&#39;esterno della cartella estratta e decomprimi `Resource1.zip` file.
-1. Accedi a `/C_/builds/dev_releng/branches/rrt/aem6.5.0_rollup/tier1/install/patch/fileset_dir/xml` e copia `RUP_BOM.xml` file.
+1. Passare alla posizione `/CDROM_Installers/Linux/Disk1/InstData` e individuare il file `Resource1.zip`.
+1. Copiare il file `Resource1.zip` in una posizione diversa all&#39;esterno della cartella estratta e decomprimere il file `Resource1.zip`.
+1. Passare a `/C_/builds/dev_releng/branches/rrt/aem6.5.0_rollup/tier1/install/patch/fileset_dir/xml` e copiare il file `RUP_BOM.xml`.
 1. Incollare il file RUP_BOM.xml in `[aem_forms_jee_installation_dir]/patch/AEMForms-6.5.0-0057/xml`.
-1. Reinstalla [Service Pack di AEM Forms JEE 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+1. Reinstalla [AEM Forms JEE 6.5.15.0 service pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).

@@ -17,23 +17,23 @@ ht-degree: 0%
 
 # API per richiamare il servizio modello dati modulo da moduli adattivi {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Panoramica {#overview}
 
-AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l’esperienza di compilazione dei moduli richiamando i servizi configurati in un modello di dati del modulo dall’interno di un campo di modulo adattivo. Per richiamare un servizio del modello dati, puoi creare una regola nell’editor visivo o specificare un JavaScript utilizzando `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice di [editor di regole](/help/forms/using/rule-editor.md).
+AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l’esperienza di compilazione dei moduli richiamando i servizi configurati in un modello di dati del modulo dall’interno di un campo di modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39;API `guidelib.dataIntegrationUtils.executeOperation` nell&#39;editor di codice dell&#39;[editor di regole](/help/forms/using/rule-editor.md).
 
-Questo documento si concentra sulla scrittura di un JavaScript utilizzando `guidelib.dataIntegrationUtils.executeOperation` API per richiamare un servizio.
+Questo documento si concentra sulla scrittura di un JavaScript utilizzando l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare un servizio.
 
 ## Utilizzo dell’API {#using-the-api}
 
-Il `guidelib.dataIntegrationUtils.executeOperation` L’API richiama un servizio dall’interno di un campo di un modulo adattivo. La sintassi API è la seguente:
+L&#39;API `guidelib.dataIntegrationUtils.executeOperation` richiama un servizio dall&#39;interno di un campo modulo adattivo. La sintassi API è la seguente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-La struttura del `guidelib.dataIntegrationUtils.executeOperation` API specifica i dettagli sull’operazione del servizio. La sintassi della struttura è la seguente.
+La struttura dell&#39;API `guidelib.dataIntegrationUtils.executeOperation` specifica i dettagli sull&#39;operazione del servizio. La sintassi della struttura è la seguente.
 
 ```javascript
 var operationInfo = {
@@ -77,7 +77,7 @@ La struttura API specifica i dettagli seguenti sull’operazione del servizio.
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>Esegue il mapping di uno o più oggetti modulo ai valori di output dell'operazione di servizio per compilare i campi modulo<br /> </td>
+   <td>Esegue il mapping di uno o più oggetti modulo ai valori di output dell'operazione del servizio per compilare i campi modulo<br /> </td>
   </tr>
   <tr>
    <td><code>success</code></td>
@@ -92,9 +92,9 @@ La struttura API specifica i dettagli seguenti sull’operazione del servizio.
 
 ## Script di esempio per richiamare un servizio {#sample-script-to-invoke-a-service}
 
-Lo script di esempio seguente utilizza `guidelib.dataIntegrationUtils.executeOperation` API per richiamare `getAccountById` operazione di servizio configurata in `employeeAccount` modello dati modulo.
+Lo script di esempio seguente utilizza l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare l&#39;operazione del servizio `getAccountById` configurata nel modello dati del modulo `employeeAccount`.
 
-Il `getAccountById` l&#39;operazione assume il valore nel `employeeID` campo modulo come input per `empId` e restituisce il nome del dipendente, il numero di conto e il saldo del conto del dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore `name` viene popolato in `fullName` elemento modulo e valore per `accountNumber` argomento in `account` elemento modulo.
+L&#39;operazione `getAccountById` utilizza il valore nel campo modulo `employeeID` come input per l&#39;argomento `empId` e restituisce il nome del dipendente, il numero di conto e il saldo del conto per il dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore nell&#39;argomento `name` viene popolato nell&#39;elemento modulo `fullName` e il valore per l&#39;argomento `accountNumber` nell&#39;elemento modulo `account`.
 
 ```javascript
 var operationInfo = {
@@ -114,23 +114,23 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ## Utilizzo dell’API con la funzione di callback {#using-the-api-callback}
 
-È inoltre possibile richiamare il servizio del modello dati modulo utilizzando `guidelib.dataIntegrationUtils.executeOperation` API con una funzione di callback. La sintassi API è la seguente:
+È inoltre possibile richiamare il servizio del modello dati modulo utilizzando l&#39;API `guidelib.dataIntegrationUtils.executeOperation` con una funzione di callback. La sintassi API è la seguente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
-La funzione di richiamata può avere `success` e `failure` funzioni di callback.
+La funzione di richiamata può avere `success` e `failure` funzioni di richiamata.
 
 ### Script di esempio con funzioni di callback riuscite e non riuscite {#callback-function-success-failure}
 
-Lo script di esempio seguente utilizza `guidelib.dataIntegrationUtils.executeOperation` API per richiamare `GETOrder` operazione di servizio configurata in `employeeOrder` modello dati modulo.
+Lo script di esempio seguente utilizza l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare l&#39;operazione del servizio `GETOrder` configurata nel modello dati del modulo `employeeOrder`.
 
-Il `GETOrder` l&#39;operazione assume il valore nel `Order ID` campo modulo come input per `orderId` e restituisce il valore della quantità dell&#39;ordine in `success` callback.  Se il `success` funzione di callback non restituisce la quantità dell&#39;ordine, il `failure` funzione di callback visualizza `Error occured` messaggio.
+L&#39;operazione `GETOrder` accetta il valore nel campo modulo `Order ID` come input per l&#39;argomento `orderId` e restituisce il valore della quantità dell&#39;ordine nella funzione di callback `success`.  Se la funzione di callback `success` non restituisce la quantità dell&#39;ordine, la funzione di callback `failure` visualizza il messaggio `Error occured`.
 
 >[!NOTE]
 >
->Se si utilizza `success` funzione di callback, i valori di output non vengono inseriti nei campi modulo specificati.
+>Se si utilizza la funzione di callback `success`, i valori di output non vengono inseriti nei campi modulo specificati.
 
 ```javascript
 var operationInfo = {

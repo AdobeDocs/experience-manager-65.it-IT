@@ -20,7 +20,7 @@ ht-degree: 0%
 
 I moduli HTML5 utilizzano lo standard di accessibilità ARIA HTML5 per generare moduli HTML accessibili. Questi moduli supportano la navigazione a schede (ad eccezione di Mozilla FireFox) e sono certificati per essere compatibili con gli assistenti vocali comuni. Per generare un modulo HTML5 con buone funzioni di accessibilità, progettare il modello di modulo XFA in base ad alcune linee guida di progettazione di base. Le linee guida per la progettazione includono la configurazione dell&#39;ordine di tabulazione corretto e la fornitura del contenuto Testo parlato per ogni controllo modulo. AEM Forms Designer supporta l’impostazione di questi attributi di controllo modulo per generare un modulo Accessible PDF e HTML5.
 
-*Nota: la navigazione a schede non riguarda i campi protetti, ad esempio i campi di calcolo che visualizzano la somma dei valori. Affinché l’assistente vocale possa leggere il valore di un campo protetto, inserisci un campo di sola lettura vuoto sopra o accanto al campo protetto. Assegnare il valore del campo protetto al nuovo campo di sola lettura. L’assistente vocale o la navigazione a schede può scegliere questo campo di sola lettura e indicarlo come valore del campo protetto.*
+*Nota: la navigazione a schede non copre i campi protetti, ad esempio i campi di calcolo che visualizzano la somma dei valori. Affinché l’assistente vocale possa leggere il valore di un campo protetto, inserisci un campo di sola lettura vuoto sopra o accanto al campo protetto. Assegnare il valore del campo protetto al nuovo campo di sola lettura. L&#39;utilità di lettura dello schermo o la navigazione a schede può scegliere questo campo di sola lettura e indicarlo come valore del campo protetto.*
 
 AEM Forms Designer include diverse opzioni Speak Text che possono essere trasmesse agli assistenti vocali. Per ogni oggetto di un modulo, l’utente può specificare una delle diverse impostazioni per il testo dell’assistente vocale:
 
@@ -31,4 +31,4 @@ AEM Forms Designer include diverse opzioni Speak Text che possono essere trasmes
 
 ![accessibilità](assets/accessibility.png)
 
-Quando in un controllo Modulo sono disponibili più opzioni quali descrizione comando, Testo Reader schermo e Didascalia, il Reader Schermo utilizza solo una di queste proprietà. L&#39;ordine predefinito è Testo Reader schermo personalizzato, descrizione comando, Didascalia e Nome. È possibile modificare l&#39;ordine predefinito utilizzando il Reader Schermo **Precedenza** nella palette Accessibilità.
+Quando in un controllo Modulo sono disponibili più opzioni quali descrizione comando, Testo Reader schermo e Didascalia, il Reader Schermo utilizza solo una di queste proprietà. L&#39;ordine predefinito è Testo Reader schermo personalizzato, descrizione comando, Didascalia e Nome. È possibile modificare l&#39;ordine predefinito utilizzando l&#39;opzione Reader di schermate **Precedenza** nella tavolozza Accessibilità.

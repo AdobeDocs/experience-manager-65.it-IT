@@ -56,14 +56,14 @@ Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso 
 
 La prima volta che esegui l’accesso a una piccola esercitazione online, verranno evidenziate alcune delle funzioni principali dell’interfaccia utente.
 
-È quindi possibile utilizzare il pannello di navigazione per accedere alle aree chiave di AEM. Per i frammenti di contenuto utilizzerai **Console risorse**.
+È quindi possibile utilizzare il pannello di navigazione per accedere alle aree chiave di AEM. Per i frammenti di contenuto verrà utilizzata la **console Assets**.
 
 Per aprire il pannello di navigazione, seleziona l’icona Adobe in alto a sinistra, seguita dall’icona della bussola piccola:
 
 ![Pannello di navigazione](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->Sebbene i frammenti di contenuto siano una funzione dell’AEM **Sites**, si trovano in **Risorse** console. Questo è un dettaglio tecnico che non dovrebbe influenzare l’utente, ma potrebbe essere utile da sapere.
+>Sebbene i frammenti di contenuto siano una funzionalità di AEM **Sites**, sono presenti nella console **Assets**. Questo è un dettaglio tecnico che non dovrebbe influenzare l’utente, ma potrebbe essere utile da sapere.
 
 All’interno della console puoi selezionare le cartelle per passare al frammento di contenuto oppure le breadcrumb (nell’intestazione) per tornare alla struttura.
 
@@ -71,19 +71,19 @@ All’interno della console puoi selezionare le cartelle per passare al framment
 
 ### Azioni, selezione, visualizzazione {#actions-selecting-viewing}
 
-Il **Risorse** la console ha dedicato **Barre degli strumenti delle azioni**, e **Azioni rapide** che puoi utilizzare dopo aver selezionato una risorsa (ad esempio, una cartella o un frammento di contenuto).
+La console **Assets** ha dedicato **Barre degli strumenti azione** e **Azioni rapide** che puoi utilizzare dopo aver selezionato una risorsa (ad esempio, una cartella o un frammento di contenuto).
 
-Le Azioni rapide sono disponibili per una singola risorsa, vedi **Basilea** nell’esempio seguente:
+Le Azioni rapide sono disponibili per una singola risorsa, vedi **Basilea** nell&#39;esempio seguente:
 
 ![Azioni rapide](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
 La barra degli strumenti Azioni consente di accedere a tutte le azioni applicabili allo scenario corrente. Le azioni disponibili possono variare, ad esempio a seconda della posizione o se sono state selezionate più risorse:
 
-![Barra delle azioni](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+![Barra degli strumenti azioni](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
 Puoi selezionare il formato di visualizzazione delle risorse con il Selettore di visualizzazione:
 
-![Selettore vista](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+![Selettore visualizzazione](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
 
 Puoi visualizzare ulteriori informazioni sugli elementi utilizzando il Selettore della barra. Ciò consente anche di accedere ad azioni aggiuntive.
 
@@ -101,7 +101,7 @@ A meno che non siano disponibili pochissimi frammenti di contenuto, è consiglia
 
 #### Creazione di una cartella {#creating-folder}
 
-Per farlo, crea una serie di cartelle in **File** della console Assets. Seleziona l’opzione **Crea** (in alto a destra), seguita da **Cartella**:
+Per eseguire questa operazione, crea una serie di cartelle nella sezione **File** della console Assets. Seleziona l’opzione **Crea** (in alto a destra), seguita da **Cartella**:
 
 ![Opzione Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -129,7 +129,7 @@ Puoi quindi navigare tra queste cartelle per creare e modificare i frammenti di 
 
 In caso...
 
-Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le tue cartelle. Come alcuni dettagli di configurazione devono essere applicati alla cartella principale (in genere da uno sviluppatore o da un amministratore di sistema). Probabilmente non ti interessa, ma se necessario puoi controllare il **Configurazione** nel **Cloud Service** della cartella **Proprietà**:
+Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le tue cartelle. Come alcuni dettagli di configurazione devono essere applicati alla cartella principale (in genere da uno sviluppatore o da un amministratore di sistema). Probabilmente non ti interessa, ma se necessario puoi controllare la **Configurazione** nei **Cloud Service** della cartella **Proprietà**:
 
 ![Crea proprietà cartella - Configurazione](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -139,19 +139,19 @@ Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le tue 
 
 ### Creazione di un frammento di contenuto {#creating-fragment}
 
-La creazione di un frammento di contenuto è molto simile: puoi semplicemente utilizzare **Frammento di contenuto** invece:
+La creazione di un frammento di contenuto è molto simile. È sufficiente utilizzare l&#39;opzione **Frammento di contenuto**:
 
 ![Opzione Crea frammento di contenuto](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
 Questa volta viene aperta una procedura guidata. Il primo passaggio consiste nel selezionare il modello per frammenti di contenuto su cui basare il frammento:
 
-![Crea frammento di contenuto - seleziona modello](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+![Crea frammento di contenuto - Seleziona modello](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Dopo aver continuato con **Successivo** è possibile specificare i dettagli (**Base** e **Avanzate**) per il frammento:
+Dopo aver continuato con **Avanti** puoi fornire i dettagli (**Base** e **Avanzate**) del frammento:
 
 ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-Conferma con **Crea** e puoi quindi **Apri** frammento nell’editor.
+Conferma con **Crea** e potrai **Aprire** il frammento nell&#39;editor.
 
 ### Modifica di un frammento {#editing-fragment}
 
@@ -220,7 +220,7 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
 Una volta completato il frammento, puoi **Pubblicare** in modo che sia disponibile per le applicazioni headless.
 
-Le azioni di pubblicazione sono disponibili nell’editor (o dalla barra degli strumenti del **Risorse** console):
+Le azioni di pubblicazione sono disponibili nell&#39;editor o nella barra degli strumenti della console **Assets**:
 
 ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -265,7 +265,7 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
       * [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Guide introduttive
-   * [Guida rapida alla creazione di una cartella di risorse headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Guida rapida alla creazione di una cartella Assets headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
 

@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->[Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) sono consigliati per la creazione di tutti i nuovi frammenti di contenuto.
+>[I modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) sono consigliati per la creazione di tutti i nuovi frammenti di contenuto.
 >
 >I modelli per frammenti di contenuto vengono utilizzati per tutti gli esempi in WKND.
 
@@ -45,17 +45,17 @@ Posizione per la sovrapposizione di modelli predefiniti o per la fornitura di mo
 * `/conf/global/settings/dam/cfm/templates`
 Posizione dei modelli specifici del cliente a livello di istanza che devono essere modificati in fase di esecuzione.
 
-L’ordine di precedenza è (in ordine decrescente) `/conf`, `/apps`, `/libs`.
+L&#39;ordine di precedenza è (in ordine decrescente) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->Tu ***deve*** non modificare nulla in `/libs` percorso.
+>***must*** non modificare nulla nel percorso `/libs`.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+>Il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
->1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
+>1. Ricrea l&#39;elemento richiesto (ovvero, poiché esiste in `/libs`) in `/apps`
 >
 >1. Apporta le modifiche in `/apps`
 >
@@ -121,12 +121,12 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>obbligatorio<br /> </p> </td>
-     <td>Titolo del modello (visualizzato nel <strong>Crea frammento</strong> procedura guidata).</td>
+     <td>Titolo del modello visualizzato nella procedura guidata <strong>Crea frammento</strong>.</td>
     </tr>
     <tr>
      <td><code>jcr:description</code></td>
      <td><p><code>String</code></p> <p>facoltativo</p> </td>
-     <td>Testo che descrive lo scopo del modello (visualizzato nel <strong>Crea frammento</strong> procedura guidata).</td>
+     <td>Testo che descrive lo scopo del modello (visualizzato nella procedura guidata <strong>Crea frammento</strong>).</td>
     </tr>
     <tr>
      <td><code>initialAssociatedContent</code></td>
@@ -136,12 +136,12 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>obbligatorio</p> </td>
-     <td><p><code>true</code>, se al momento della creazione del frammento di contenuto è necessario creare le risorse secondarie che rappresentano gli elementi (ad eccezione dell’elemento principale) del frammento di contenuto; <em>false</em> se devono essere create "al volo".</p> <p><strong>Nota</strong>: attualmente questo parametro deve essere impostato su <code>true</code>.</p> </td>
+     <td><p><code>true</code>, se le risorse secondarie che rappresentano gli elementi (ad eccezione dell’elemento principale) del frammento di contenuto devono essere create al momento della creazione del frammento di contenuto; <em>false</em> se devono essere create "al volo".</p> <p><strong>Nota</strong>: al momento questo parametro deve essere impostato su <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
      <td><p><code>Long</code></p> <p>obbligatorio</p> </td>
-     <td><p>Versione della struttura del contenuto; attualmente supportata:</p> <p><strong>Nota</strong>: attualmente questo parametro deve essere impostato su <code>2</code>.<br /> </p> </td>
+     <td><p>Versione della struttura del contenuto; attualmente supportata:</p> <p><strong>Nota</strong>: al momento questo parametro deve essere impostato su <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
   </table>
@@ -158,7 +158,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obbligatorio</p> </td>
-     <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo figlio per <strong>Principale</strong> , ma può contenere [1..n] nodi secondari.</p> <p>Quando si utilizza il modello, il ramo secondario degli elementi viene copiato nel ramo secondario del modello del frammento.</p> <p>Il primo elemento (visualizzato in CRXDE Liti) viene automaticamente considerato come <i>principale</i> Il nome del nodo è irrilevante e il nodo stesso non ha un significato particolare, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi sono gestiti come risorse secondarie.</p> </td>
+     <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo figlio per l'elemento <strong>Main</strong>, ma può contenere [1..n] nodi secondari.</p> <p>Quando si utilizza il modello, il ramo secondario degli elementi viene copiato nel ramo secondario del modello del frammento.</p> <p>Il primo elemento (come visualizzato in CRXDE Lite) viene automaticamente considerato come l'elemento <i>main</i>; il nome del nodo è irrilevante e il nodo stesso non ha un significato particolare, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi vengono gestiti come risorse secondarie.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -185,12 +185,12 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
     <tr>
      <td><code>defaultContent</code></td>
      <td><p><code>String</code></p> <p>facoltativo</p> <p>impostazione predefinita: ""</p> </td>
-     <td>Contenuto iniziale dell’elemento; utilizzato solo se <code>precreateElements</code><i> = </i><code>true</code></td>
+     <td>Contenuto iniziale dell'elemento; utilizzato solo se <code>precreateElements</code><i> = </i><code>true</code></td>
     </tr>
     <tr>
      <td><code>initialContentType</code></td>
      <td><p><code>String</code></p> <p>facoltativo</p> <p>impostazione predefinita: <code>text/html</code></p> </td>
-     <td><p>Tipo di contenuto iniziale dell’elemento; utilizzato solo se <code>precreateElements</code><i> = </i><code>true</code>; attualmente supportato:</p>
+     <td><p>Tipo di contenuto iniziale dell'elemento; utilizzato solo se <code>precreateElements</code><i> = </i><code>true</code>; attualmente supportato:</p>
       <ul>
        <li><code>text/html</code></li>
        <li><code>text/plain</code></li>
@@ -234,18 +234,18 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obbligatorio se è presente un nodo di variante</p> </td>
-     <td><p>Definisce una variante iniziale.<br /> La variante viene aggiunta a tutti gli elementi del frammento di contenuto per impostazione predefinita.</p> <p>La variante avrà lo stesso contenuto iniziale del rispettivo elemento (vedi <code class="code">defaultContent/
+     <td><p>Definisce una variante iniziale.<br /> Per impostazione predefinita, la variante viene aggiunta a tutti gli elementi del frammento di contenuto.</p> <p>La variante avrà lo stesso contenuto iniziale del rispettivo elemento (vedere <code class="code">defaultContent/
        initialContentType</code>)</p> </td>
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>obbligatorio</p> </td>
-     <td>Titolo della variante (visualizzato nel file dell’editor di frammenti) <strong>Variante</strong> (barra a sinistra).</td>
+     <td>Titolo della variante (visualizzato nella scheda <strong>Variante</strong> dell'editor di frammenti (barra a sinistra).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
      <td><p><code>String</code></p> <p>facoltativo</p> <p>impostazione predefinita: ""</p> </td>
-     <td>Testo che fornisce una descrizione della variante <span>(visualizzato nel file dell’editor frammento di <strong>Variante</strong> (barra a sinistra).</code></td>
+     <td>Testo che fornisce una descrizione della variante <span> (visualizzata nella scheda <strong>Variante</strong> dell'editor frammenti (barra a sinistra)).</code></td>
     </tr>
    </tbody>
   </table>

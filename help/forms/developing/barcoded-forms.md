@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Utilizzo di moduli con codice a barre {#working-with-barcoded-forms}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 ## Informazioni sul servizio Forms con codice a barre {#about-the-barcoded-forms-service}
 
@@ -26,7 +26,7 @@ Il servizio di moduli con codice a barre automatizza l&#39;acquisizione dei dati
 
 Utilizzando il servizio Forms con codice a barre, è possibile aggiungere codici a barre unidimensionali e bidimensionali ai PDF forms interattivi. Puoi quindi pubblicare i moduli con codice a barre su un sito web o distribuirli tramite e-mail o CD. Quando un utente compila un modulo codificato a barre utilizzando Adobe Reader, Acrobat Professional o Acrobat Standard, il codice a barre viene aggiornato automaticamente per codificare i dati del modulo forniti dall’utente. L’utente può inviare il modulo elettronicamente o stamparlo su carta e inviarlo per posta, fax o mano. In seguito sarà possibile estrarre i dati forniti dall&#39;utente come parte di un flusso di lavoro automatizzato, indirizzando i dati tra i processi di approvazione e i sistemi aziendali.
 
-Per ulteriori informazioni sul servizio Forms con codice a barre, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio Forms con codice a barre, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Decodifica dei dati del modulo con codice a barre {#decoding-barcoded-form-data}
 
@@ -34,7 +34,7 @@ Puoi utilizzare l’API del servizio Forms con codice a barre per decodificare d
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms con codice a barre, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms con codice a barre, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -58,13 +58,13 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (richiesto se AEM Forms è implementato su JBoss)
 * jbossall-client.jar (obbligatorio se AEM Forms è distribuito su JBoss)
-* xercesImpl.jar (in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (in &lt;directory di installazione>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
-Se AEM Forms viene distribuito su un server applicazioni J2EE supportato che non è JBOSS, è necessario sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazioni J2EE in cui viene distribuito AEM Forms. Per informazioni sulla posizione di tutti i file JAR di AEM Forms, vedi [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Se AEM Forms viene distribuito su un server applicazioni J2EE supportato che non è JBOSS, è necessario sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazioni J2EE in cui viene distribuito AEM Forms. Per informazioni sulla posizione di tutti i file JAR di AEM Forms, vedi [Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Creare un oggetto API client Forms con codice a barre**
+**Crea un oggetto API client per moduli con codice a barre**
 
-Prima di poter eseguire a livello di programmazione un&#39;operazione del servizio Forms codificata a barre, è necessario creare un client del servizio Forms codificato a barre. Se utilizzi l’API Java, crea un’ `BarcodedFormsServiceClient` oggetto. Se utilizzi l’API del servizio web Forms con codice a barre, crea un’ `BarcodedFormsServiceService` oggetto.
+Prima di poter eseguire a livello di programmazione un&#39;operazione del servizio Forms codificata a barre, è necessario creare un client del servizio Forms codificato a barre. Se si utilizza l&#39;API Java, creare un oggetto `BarcodedFormsServiceClient`. Se si utilizza l&#39;API del servizio Web Forms con codice a barre, creare un oggetto `BarcodedFormsServiceService`.
 
 **Ottieni un modulo PDF contenente dati con codice a barre**
 
@@ -83,11 +83,11 @@ Dopo aver ottenuto un modulo PDF (o un&#39;immagine) contenente un codice a barr
 * Codice a barre EAN-13.
 * Codice a barre EAN-8.
 
-L’input del set di caratteri come esadecimale nell’API di decodifica implica che il contenuto del codice a barre sia codificato come stringa esadecimale. Ad esempio, se UTF-8 è specificato come codifica Character nel modulo e Hex è specificato nell&#39;operazione di decodifica, il contenuto del codice a barre viene codificato come stringa Hex nel tag &lt; `xb:content`> nell&#39;output decodificato. Puoi convertire questo valore esadecimale per ottenere il contenuto originale creando la logica dell’applicazione nell’applicazione client.
+L’input del set di caratteri come esadecimale nell’API di decodifica implica che il contenuto del codice a barre sia codificato come stringa esadecimale. Ad esempio, se si specifica UTF-8 come codifica Character nel modulo e Hex nell&#39;operazione di decodifica, il contenuto del codice a barre viene codificato come stringa Hex nell&#39;elemento &lt; `xb:content`> nell&#39;output decodificato. Puoi convertire questo valore esadecimale per ottenere il contenuto originale creando la logica dell’applicazione nell’applicazione client.
 
 **Convertire i dati in un&#39;origine dati XML**
 
-Dopo aver decodificato i dati del modulo, è possibile convertirli in dati XDP o XFDF. Si supponga, ad esempio, di voler importare i dati in un altro modulo. Per importare i dati in un modulo XFA, è necessario convertire i dati in dati XDP. Per informazioni, consulta [Importazione dati modulo](/help/forms/developing/importing-exporting-data.md#importing-form-data).
+Dopo aver decodificato i dati del modulo, è possibile convertirli in dati XDP o XFDF. Si supponga, ad esempio, di voler importare i dati in un altro modulo. Per importare i dati in un modulo XFA, è necessario convertire i dati in dati XDP. Per informazioni, vedere [Importazione dati modulo](/help/forms/developing/importing-exporting-data.md#importing-form-data).
 
 **Elabora i dati decodificati**
 
@@ -117,50 +117,50 @@ Decodificare i dati del modulo utilizzando l’API (Java) dei moduli codificati 
 
 1. Creare un oggetto API client Forms con codice a barre
 
-   Creare un `BarcodedFormsServiceClient` oggetto utilizzando il relativo costruttore e passando un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
+   Creare un oggetto `BarcodedFormsServiceClient` utilizzando il relativo costruttore e passando un oggetto `ServiceClientFactory` che contiene proprietà di connessione.
 
 1. Ottieni un modulo PDF contenente dati con codice a barre
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta il modulo PDF contenente dati con codice a barre tramite il relativo costruttore e che trasmette un valore stringa che specifica la posizione del documento PDF.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il modulo PDF contenente dati con codice a barre utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento PDF.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Decodificare i dati dal modulo PDF
 
-   Decodificare i dati del modulo richiamando `BarcodedFormsServiceClient` dell&#39;oggetto `decode` e fornendo i seguenti valori:
+   Decodificare i dati del modulo richiamando il metodo `decode` dell&#39;oggetto `BarcodedFormsServiceClient` e passando i valori seguenti:
 
-   * Il `com.adobe.idp.Document` oggetto che contiene il modulo PDF.
-   * A `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre PDF417.
-   * A `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre della matrice dati.
-   * A `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre del codice QR.
-   * A `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre codabar.
-   * A `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre 128.
-   * A `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre 39.
-   * A `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre EAN-13.
-   * A `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre EAN-8.
-   * A `com.adobe.livecycle.barcodedforms.CharSet` valore di enumerazione che specifica il valore di codifica del set di caratteri utilizzato nel codice a barre.
+   * L&#39;oggetto `com.adobe.idp.Document` che contiene il modulo PDF.
+   * Oggetto `java.lang.Boolean` che specifica se decodificare un codice a barre PDF417.
+   * Oggetto `java.lang.Boolean` che specifica se decodificare un codice a barre della matrice dati.
+   * Oggetto `java.lang.Boolean` che specifica se decodificare un codice a barre del codice QR.
+   * Oggetto `java.lang.Boolean` che specifica se decodificare un codice a barre codabar.
+   * Oggetto `java.lang.Boolean` che specifica se decodificare un codice a barre 128.
+   * Oggetto `java.lang.Boolean` che specifica se decodificare un codice a barre 39.
+   * Oggetto `java.lang.Boolean` che specifica se decodificare un codice a barre EAN-13.
+   * Oggetto `java.lang.Boolean` che specifica se decodificare un codice a barre EAN-8.
+   * Valore di enumerazione `com.adobe.livecycle.barcodedforms.CharSet` che specifica il valore di codifica del set di caratteri utilizzato nel codice a barre.
 
-   Il `decode` il metodo restituisce un `org.w3c.dom.Document` oggetto contenente dati modulo decodificati.
+   Il metodo `decode` restituisce un oggetto `org.w3c.dom.Document` contenente dati del modulo decodificati.
 
 1. Convertire i dati in un&#39;origine dati XML
 
-   Converti i dati decodificati in dati XDP o XFDF richiamando il `BarcodedFormsServiceClient` dell&#39;oggetto `extractToXML` e fornendo i seguenti valori:
+   Convertire i dati decodificati in dati XDP o XFDF richiamando il metodo `extractToXML` dell&#39;oggetto `BarcodedFormsServiceClient` e passando i valori seguenti:
 
-   * Il `org.w3c.dom.Document` oggetto contenente dati decodificati (assicurarsi di utilizzare `decode` valore restituito dal metodo).
-   * A `com.adobe.livecycle.barcodedforms.Delimiter` valore di enumerazione che specifica il delimitatore di riga. È consigliabile specificare `Delimiter.Carriage_Return`.
-   * A `com.adobe.livecycle.barcodedforms.Delimiter` valore di enumerazione che specifica il delimitatore di campo. Ad esempio, specifica `Delimiter.Tab`.
-   * A `com.adobe.livecycle.barcodedforms.XMLFormat` valore di enumerazione che specifica se convertire i dati del codice a barre in dati XML XDP o XFDF. Ad esempio, specifica `XMLFormat.XDP` per convertire i dati in dati XDP.
+   * Oggetto `org.w3c.dom.Document` contenente dati decodificati (assicurarsi di utilizzare il valore restituito dal metodo `decode`).
+   * Valore di enumerazione `com.adobe.livecycle.barcodedforms.Delimiter` che specifica il delimitatore di riga. È consigliabile specificare `Delimiter.Carriage_Return`.
+   * Valore di enumerazione `com.adobe.livecycle.barcodedforms.Delimiter` che specifica il delimitatore di campo. Specificare ad esempio `Delimiter.Tab`.
+   * Valore di enumerazione `com.adobe.livecycle.barcodedforms.XMLFormat` che specifica se convertire i dati del codice a barre in dati XML XDP o XFDF. Specificare ad esempio `XMLFormat.XDP` per convertire i dati in dati XDP.
 
    >[!NOTE]
    >
    >Non specificare gli stessi valori per i parametri delimitatore di riga e delimitatore di campo.
 
-   Il `extractToXML` il metodo restituisce un `java.util.List` oggetto in cui ogni elemento è un `org.w3c.dom.Document` oggetto. Nel modulo è presente un elemento separato per ogni codice a barre. In altre parole, se nel modulo sono presenti quattro codici a barre, sono presenti quattro elementi nel modulo restituito `java.util.List` oggetto.
+   Il metodo `extractToXML` restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `org.w3c.dom.Document`. Nel modulo è presente un elemento separato per ogni codice a barre. In altre parole, se nel modulo sono presenti quattro codici a barre, nell&#39;oggetto `java.util.List` restituito sono presenti quattro elementi.
 
 1. Elabora i dati decodificati
 
-   * Effettua iterazione attraverso `java.util.List` oggetto per ottenere ciascun `org.w3c.dom.Document` oggetto presente nell&#39;elenco.
-   * Per ogni elemento dell’elenco, converti `org.w3c.dom.Document` oggetto a un `com.adobe.idp.Document` oggetto. (La logica dell’applicazione che converte un `org.w3c.dom.Document` oggetto in un `com.adobe.idp.Document` L&#39;oggetto viene visualizzato nella decodifica dei dati del modulo codificati a barre utilizzando l&#39;esempio dell&#39;API Java).
-   * Salvare i dati XML come file XML richiamando `com.adobe.idp.Document` dell&#39;oggetto `copyToFile`e il passaggio di un oggetto File che rappresenta il file XML.
+   * Scorrere l&#39;oggetto `java.util.List` per ottenere ogni oggetto `org.w3c.dom.Document` presente nell&#39;elenco.
+   * Per ogni elemento dell&#39;elenco, convertire l&#39;oggetto `org.w3c.dom.Document` in un oggetto `com.adobe.idp.Document`. (La logica dell&#39;applicazione che converte un oggetto `org.w3c.dom.Document` in un oggetto `com.adobe.idp.Document` viene visualizzata nella decodifica dei dati del modulo codificati a barre tramite l&#39;esempio dell&#39;API Java).
+   * Salvare i dati XML come file XML richiamando `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` e passando un oggetto File che rappresenta il file XML.
 
 **Consulta anche**
 
@@ -176,59 +176,59 @@ Decodificare i dati del modulo utilizzando l’API (servizio web) dei moduli cod
 
 1. Includi file di progetto
 
-   * Creare un assembly client Microsoft .NET che utilizzi il WSDL del servizio Forms codificato a barre. Per informazioni, consulta [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+   * Creare un assembly client Microsoft .NET che utilizzi il WSDL del servizio Forms codificato a barre. Per informazioni, vedere [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
    * Fare riferimento all&#39;assembly client Microsoft .NET. Per informazioni, vedere &quot;Riferimento all&#39;assembly client .NET&quot; in [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
 
 1. Creare un oggetto API client Forms con codice a barre
 
-   Utilizzando l&#39;assembly client Microsoft .NET che utilizza il WSDL del servizio Forms a codici a barre, creare un `BarcodedFormsServiceService` richiamando il relativo costruttore predefinito.
+   Utilizzando l&#39;assembly client Microsoft .NET che utilizza il servizio WSDL dei moduli codificati a barre, creare un oggetto `BarcodedFormsServiceService` richiamando il relativo costruttore predefinito.
 
 1. Ottieni un modulo PDF contenente dati con codice a barre
 
-   * Creare un `BLOB` mediante il costruttore. Il `BLOB` L&#39;oggetto viene utilizzato per memorizzare un documento PDF contenente un codice a barre.
-   * Creare un `System.IO.FileStream` dell&#39;oggetto richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto della `System.IO.FileStream` oggetto. È possibile determinare le dimensioni della matrice di byte ottenendo `System.IO.FileStream` dell&#39;oggetto `Length` proprietà.
-   * Compilare la matrice di byte con i dati di flusso richiamando `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Popolare il `BLOB` oggetto assegnando il relativo `binaryData` con il contenuto della matrice di byte.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento PDF contenente un codice a barre.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Compilare l&#39;oggetto `BLOB` assegnando la relativa proprietà `binaryData` al contenuto della matrice di byte.
 
 1. Decodificare i dati dal modulo PDF
 
-   Decodificare i dati del modulo richiamando `BarcodedFormsServiceService` dell&#39;oggetto `decode` e fornendo i seguenti valori:
+   Decodificare i dati del modulo richiamando il metodo `decode` dell&#39;oggetto `BarcodedFormsServiceService` e passando i valori seguenti:
 
-   * Il `BLOB` oggetto che contiene il modulo PDF.
-   * A `Boolean` oggetto che specifica se decodificare un codice a barre PDF417.
-   * A `Boolean` oggetto che specifica se decodificare un codice a barre della matrice dati.
-   * A `Boolean` oggetto che specifica se decodificare un codice a barre del codice QR.
-   * A `Boolean` oggetto che specifica se decodificare un codice a barre codabar.
-   * A `Boolean` oggetto che specifica se decodificare un codice a barre 128.
-   * A `Bolean` oggetto che specifica se decodificare un codice a barre 39.
-   * A `Boolean` oggetto che specifica se decodificare un codice a barre EAN-13.
-   * A `Boolean` oggetto che specifica se decodificare un codice a barre EAN-8.
-   * A `CharSet` valore di enumerazione che specifica il valore di codifica del set di caratteri utilizzato nel codice a barre.
+   * L&#39;oggetto `BLOB` che contiene il modulo PDF.
+   * Oggetto `Boolean` che specifica se decodificare un codice a barre PDF417.
+   * Oggetto `Boolean` che specifica se decodificare un codice a barre della matrice dati.
+   * Oggetto `Boolean` che specifica se decodificare un codice a barre del codice QR.
+   * Oggetto `Boolean` che specifica se decodificare un codice a barre codabar.
+   * Oggetto `Boolean` che specifica se decodificare un codice a barre 128.
+   * Oggetto `Bolean` che specifica se decodificare un codice a barre 39.
+   * Oggetto `Boolean` che specifica se decodificare un codice a barre EAN-13.
+   * Oggetto `Boolean` che specifica se decodificare un codice a barre EAN-8.
+   * Valore di enumerazione `CharSet` che specifica il valore di codifica del set di caratteri utilizzato nel codice a barre.
 
-   Il `decode` il metodo restituisce un valore stringa contenente dati del modulo decodificati.
+   Il metodo `decode` restituisce un valore stringa contenente dati del modulo decodificati.
 
 1. Convertire i dati in un&#39;origine dati XML
 
-   Converti i dati decodificati in dati XDP o XFDF richiamando il `BarcodedFormsServiceService` dell&#39;oggetto `extractToXML` e fornendo i seguenti valori:
+   Convertire i dati decodificati in dati XDP o XFDF richiamando il metodo `extractToXML` dell&#39;oggetto `BarcodedFormsServiceService` e passando i valori seguenti:
 
-   * Un valore stringa che contiene dati decodificati (assicurati di utilizzare il `decode` valore restituito dal metodo).
-   * A `Delimiter` valore di enumerazione che specifica il delimitatore di riga. È consigliabile specificare `Delimiter.Carriage_Return`.
-   * A `Delimiter` valore di enumerazione che specifica il delimitatore di campo. Ad esempio, specifica `Delimiter.Tab`.
-   * A `XMLFormat` valore di enumerazione che specifica se convertire i dati del codice a barre in dati XML XDP o XFDF. Ad esempio, specifica `XMLFormat.XDP` per convertire i dati in dati XDP.
+   * Valore stringa che contiene dati decodificati (assicurarsi di utilizzare il valore restituito dal metodo `decode`).
+   * Valore di enumerazione `Delimiter` che specifica il delimitatore di riga. È consigliabile specificare `Delimiter.Carriage_Return`.
+   * Valore di enumerazione `Delimiter` che specifica il delimitatore di campo. Specificare ad esempio `Delimiter.Tab`.
+   * Valore di enumerazione `XMLFormat` che specifica se convertire i dati del codice a barre in dati XML XDP o XFDF. Specificare ad esempio `XMLFormat.XDP` per convertire i dati in dati XDP.
 
    >[!NOTE]
    >
    >Non specificare gli stessi valori per i parametri delimitatore di riga e delimitatore di campo.
 
-   Il `extractToXML` il metodo restituisce un `Object` in cui ogni elemento è un `BLOB` dell&#39;istanza. Nel modulo è presente un elemento separato per ogni codice a barre. In altre parole, se nel modulo sono presenti quattro codici a barre, sono presenti quattro elementi nel modulo restituito `Object` array.
+   Il metodo `extractToXML` restituisce un array `Object` in cui ogni elemento è un&#39;istanza `BLOB`. Nel modulo è presente un elemento separato per ogni codice a barre. In altre parole, se nel modulo sono presenti quattro codici a barre, nell&#39;array `Object` restituito sono presenti quattro elementi.
 
 1. Elabora i dati decodificati
 
-   * Creare un `System.IO.FileStream` richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF protetto.
-   * Creare una matrice di byte che memorizza il contenuto dei dati `BLOB` oggetto restituito da `encryptPDFUsingPassword` metodo. Popolare la matrice di byte ottenendo il valore della `BLOB` dell&#39;oggetto `binaryData` membro dati.
-   * Creare un `System.IO.BinaryWriter` oggetto richiamando il relativo costruttore e passando il `System.IO.FileStream` oggetto.
-   * Scrivere il contenuto della matrice di byte in un file PDF richiamando `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF protetto.
+   * Creare una matrice di byte che memorizza il contenuto dei dati dell&#39;oggetto `BLOB` restituito dal metodo `encryptPDFUsingPassword`. Popolare la matrice di byte ottenendo il valore del membro dati `binaryData` dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
+   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Consulta anche**
 

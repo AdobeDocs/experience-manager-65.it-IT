@@ -22,11 +22,11 @@ In Workspace, i processi che un utente può avviare vengono visualizzati in cate
 
 Quando si specificano i nomi delle categorie, crearli in modo che vengano visualizzati correttamente nel riquadro di spostamento di Workspace. Per impostazione predefinita, il riquadro di navigazione sinistro ha una larghezza fissa di 210 pixel, pari a circa 24 caratteri. Se il nome della categoria specificato è troppo lungo per essere contenuto nella larghezza fissa del riquadro di spostamento a sinistra, verrà troncato. Il nome completo viene visualizzato solo quando si posiziona il puntatore del mouse su di esso. Prova ad evitare i nomi di categoria che verranno troncati. Negli esempi seguenti vengono illustrati i nomi delle categorie che possono essere adattati e quelli troncati:
 
-**Nome della categoria:** Partecipazione e congedo
+**Nome categoria adatto a:** Partecipazione e congedo
 
-**Nome categoria troncato:** Frequenza e congedo (Stati Uniti)
+**Nome categoria troncato:** Partecipazione e congedo (Stati Uniti)
 
-In Workspace, i processi all’interno di una categoria vengono in genere visualizzati come schede nella pagina Avvia processo. In generale, è possibile visualizzare sullo schermo sei schede per una categoria prima che all&#39;utente venga richiesto di scorrere per visualizzare le schede rimanenti. Poiché lo scorrimento rende più difficile trovare un processo, è consigliabile limitare ogni categoria a sei processi o, a seconda della risoluzione, limitare il numero di processi che possono essere visualizzati sullo schermo senza richiedere alcuno scorrimento.
+In Workspace, i processi all’interno di una categoria vengono generalmente visualizzati come schede nella pagina Avvia processo. In generale, è possibile visualizzare sullo schermo sei schede per una categoria prima che all&#39;utente venga richiesto di scorrere per visualizzare le schede rimanenti. Poiché lo scorrimento rende più difficile trovare un processo, è consigliabile limitare ogni categoria a sei processi o, a seconda della risoluzione, limitare il numero di processi che possono essere visualizzati sullo schermo senza richiedere alcuno scorrimento.
 
 Se si utilizza MySQL come database di moduli AEM, la console di amministrazione non è in grado di distinguere due nomi di categoria che differiscono solo nell&#39;uso di caratteri estesi. Ad esempio, se crei una categoria denominata abcde e una categoria denominata âbcdè, queste vengono considerate uguali.
 
@@ -37,7 +37,7 @@ Se si utilizza MySQL come database di moduli AEM, la console di amministrazione 
 1. Nella casella Nome digitare un nome per la categoria e nella casella Descrizione digitare una descrizione della categoria.
 1. Fai clic su Aggiungi. La categoria viene visualizzata nella pagina Gestione categorie.
 
-   ***nota **: puoi aggiungere fino a cinque livelli gerarchici durante la creazione delle categorie.*
+   ***nota **: è possibile aggiungere solo fino a cinque livelli gerarchici durante la creazione delle categorie.*
 
 ## Modificare una categoria {#edit-a-category}
 

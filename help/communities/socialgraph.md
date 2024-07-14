@@ -20,26 +20,26 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Possibilità per un membro della community di seguire [attività](activities.md) e l’essere seguiti si stabilisce attraverso due componenti: `Follow` e `Following`.
+La possibilità per un membro della community di seguire [attività](activities.md) è stabilita tramite due componenti: `Follow` e `Following`.
 
-Il `Follow` il componente deve essere associato a un&#39;altra risorsa e questa associazione è già stata stabilita per i membri e le funzionalità della community.
+Il componente `Follow` deve essere associato a un&#39;altra risorsa e questa associazione è già stata stabilita per i membri e le funzionalità della community.
 
-Il `Following` Il componente elenca semplicemente i membri che seguono il membro corrente o che sono seguiti dal membro corrente. Questo grafico social network delle relazioni tra i membri è incluso nel profilo utente stabilito per un [sito community](overview.md#communitiessites).
+Il componente `Following` elenca semplicemente i membri che seguono il membro corrente o che sono seguiti dal membro corrente. Questo grafico social delle relazioni tra i membri è incluso nel profilo utente stabilito per un [sito community](overview.md#communitiessites).
 
 ## Aggiunta di quanto segue a una pagina {#adding-following-to-a-page}
 
-Se si desidera aggiungere un `Following` a una pagina in modalità di authoring, individua il componente `Communities / Following` e trascinarlo nella posizione in cui dovrebbe apparire il grafico social.
+Se si desidera aggiungere un componente `Following` a una pagina in modalità di creazione, individuare il componente `Communities / Following` e trascinarlo in una pagina in cui dovrebbe essere visualizzato il grafico social.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](basics.md).
 
-Quando [librerie lato client richieste](essentials-socialgraph.md#essentials-for-client-side) sono inclusi, è così che `Following` viene visualizzato il componente:
+Quando sono incluse le [librerie lato client richieste](essentials-socialgraph.md#essentials-for-client-side), il componente `Following` viene visualizzato in questo modo:
 
-![segue](assets/following.png)
+![seguenti](assets/following.png)
 
 ## Configurazione dei seguenti elementi {#configuring-following}
 
-Attualmente, è necessario impostare la proprietà per determinare se il componente visualizza `follows` relazione o `following` relazione.
+Attualmente, è necessario impostare la proprietà per determinare se il componente visualizza la relazione `follows` o la relazione `following`.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base sui grafici social](essentials-socialgraph.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Social Graph Essentials](essentials-socialgraph.md) per sviluppatori.

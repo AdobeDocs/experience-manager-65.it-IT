@@ -1,6 +1,6 @@
 ---
-title: Abilitazione di CRXDE Liti nell’AEM
-description: Scopri come abilitare CRXDE Liti in Adobe Experience Manager.
+title: Abilitazione di CRXDE Lite nell’AEM
+description: Scopri come abilitare CRXDE Lite in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -16,33 +16,33 @@ ht-degree: 0%
 
 ---
 
-# Abilitazione di CRXDE Liti nell’AEM{#enabling-crxde-lite-in-aem}
+# Abilitazione di CRXDE Lite nell’AEM{#enabling-crxde-lite-in-aem}
 
-Per garantire la massima sicurezza possibile delle installazioni AEM, gli elenchi di controllo per la sicurezza raccomandano [disattivazione di WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) negli ambienti di produzione.
+Per garantire la massima protezione possibile delle installazioni AEM, l&#39;elenco di controllo della sicurezza consiglia di [disabilitare WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) negli ambienti di produzione.
 
-Tuttavia, CRXDE Liti dipende dalla `org.apache.sling.jcr.davex` per funzionare correttamente, in modo che la disattivazione di WebDAV disabiliti efficacemente anche CRXDE Liti.
+Tuttavia, CRXDE Lite dipende dal funzionamento corretto del bundle `org.apache.sling.jcr.davex`, pertanto la disabilitazione di WebDAV disabiliterà effettivamente anche CRXDE Lite.
 
-In questo caso, cerca in `https://serveraddress:4502/crx/de/index.jsp` mostrerà un nodo principale vuoto e tutte le richieste HTTP alle risorse CRXDE Liti avranno esito negativo:
+In questo caso, l&#39;esplorazione di `https://serveraddress:4502/crx/de/index.jsp` determinerà la visualizzazione di un nodo principale vuoto e tutte le richieste HTTP alle risorse CRXDE Lite avranno esito negativo:
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-Anche se questo consiglio ha lo scopo di ridurre il più possibile le superfici di attacco, gli amministratori di sistema a volte potrebbero aver bisogno dell’accesso a CRXDE Liti per sfogliare il contenuto o eseguire il debug dei problemi sulle istanze di produzione.
+Anche se questo consiglio ha lo scopo di ridurre il più possibile le superfici di attacco, gli amministratori di sistema a volte potrebbero aver bisogno dell’accesso a CRXDE Lite per sfogliare il contenuto o eseguire il debug dei problemi sulle istanze di produzione.
 
-È possibile abilitare CRXDE Liti con [Impostazioni OSGi](#enabling-crxde-lite-osgi) o con un [comando cURL](#enabling-crxde-lite-curl).
+È possibile abilitare CRXDE Lite con [impostazioni OSGi](#enabling-crxde-lite-osgi) o con un comando [cURL](#enabling-crxde-lite-curl).
 
 >[!WARNING]
 >
->A causa di lievi differenze nel funzionamento di questi metodi, è necessario utilizzare ***o*** OSGI ***o*** cURL.
+>A causa di lievi differenze nel funzionamento di questi metodi, è necessario utilizzare ***o*** cURL OSGI ***o***.
 >
->I due metodi sono ***non*** intercambiabile.
+>I due metodi sono ***non*** intercambiabili.
 
-## Abilitazione di CRXDE Liti con OSGI {#enabling-crxde-lite-osgi}
+## Abilitazione di CRXDE Lite con OSGI {#enabling-crxde-lite-osgi}
 
-Se è disattivato, puoi attivare CRXDE Liti seguendo la procedura seguente:
+Se è disattivato, puoi attivare CRXDE Lite seguendo la procedura seguente:
 
-1. Vai alla console Componenti OSGi all’indirizzo `http://localhost:4502/system/console/components`
+1. Passa alla console dei componenti OSGi in `http://localhost:4502/system/console/components`
 1. Cerca il seguente componente:
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
@@ -53,14 +53,14 @@ Se è disattivato, puoi attivare CRXDE Liti seguendo la procedura seguente:
 
 1. Crea la seguente configurazione:
 
-   * **Percorso directory principale:** `/crx/server`
-   * Seleziona la casella sotto **Usa URI assoluti**.
+   * **Percorso principale:** `/crx/server`
+   * Selezionare la casella in **Usa URI assoluti**.
 
-1. Al termine dell&#39;utilizzo di CRXDE Liti, assicurarsi di disabilitare nuovamente WebDAV.
+1. Al termine dell&#39;utilizzo di CRXDE Lite, assicurarsi di disabilitare nuovamente WebDAV.
 
-## Abilitazione di CRXDE Liti con cURL {#enabling-crxde-lite-curl}
+## Abilitazione di CRXDE Lite con cURL {#enabling-crxde-lite-curl}
 
-Puoi anche abilitare CRXDE Liti tramite cURL, eseguendo questo comando:
+Puoi anche abilitare CRXDE Lite tramite cURL, eseguendo questo comando:
 
 ```shell
 curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet

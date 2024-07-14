@@ -1,5 +1,5 @@
 ---
-title: Pubblicare raccolte in Brand Portal
+title: Raccolte Publish in Brand Portal
 description: Scopri come pubblicare e annullare la pubblicazione delle raccolte in Brand Portal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -17,22 +17,22 @@ ht-degree: 30%
 
 ---
 
-# Pubblicare raccolte in Brand Portal {#publish-collections-to-brand-portal}
+# Raccolte Publish in Brand Portal {#publish-collections-to-brand-portal}
 
-In qualità di amministratore di Adobe Experience Manager (AEM) Assets, puoi pubblicare le raccolte nell’istanza di AEM Assets Brand Portal per la tua organizzazione. Tuttavia, devi prima integrare AEM Assets con Brand Portal. Per ulteriori dettagli, consulta [Configurare AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+In qualità di amministratore Assets di Adobe Experience Manager (AEM), puoi pubblicare le raccolte nell’istanza AEM Assets Brand Portal della tua organizzazione. Tuttavia, devi prima integrare AEM Assets con Brand Portal. Per ulteriori dettagli, consulta [Configurare AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 Se apporti successive modifiche alla raccolta originale in AEM Assets, tali modifiche non verranno applicate in Brand Portal fino a quando non pubblichi nuovamente la raccolta. Questa caratteristica assicura che le modifiche in corso d’opera non siano disponibili in Brand Portal. Solo le modifiche approvate pubblicate da un amministratore sono infatti disponibili in Brand Portal.
 
 >[!NOTE]
 >
->I frammenti di contenuto non possono essere pubblicati su Brand Portal. Pertanto, se selezioni frammenti di contenuto in AEM Author, **Pubblica su Brand Portal** azione non disponibile.
+>I frammenti di contenuto non possono essere pubblicati su Brand Portal. Pertanto, se selezioni frammenti di contenuto in AEM Author, l&#39;azione **Da Publish a Brand Portal** non è disponibile.
 >
 >Se le raccolte contenenti frammenti di contenuto vengono pubblicate da AEM Author in Brand Portal, tutti i contenuti della cartella, ad eccezione dei frammenti di contenuto, vengono replicati nell’interfaccia di Brand Portal.
 
-## Pubblicare una raccolta in Brand Portal {#publish-a-collection-to-brand-portal}
+## Publish di una raccolta in Brand Portal {#publish-a-collection-to-brand-portal}
 
 1. Nell’interfaccia utente di AEM Assets, fai clic sul logo AEM.
-1. Da **Navigazione** pagina, vai a **Risorse > Raccolte**.
+1. Dalla pagina **Navigazione**, vai a **Assets > Raccolte**.
 1. Dalla console Raccolte, seleziona la raccolta da pubblicare su Brand Portal.
 
    ![select_collection](assets/select_collection.png)

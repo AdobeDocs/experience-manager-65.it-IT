@@ -55,7 +55,7 @@ Questa sezione descrive l&#39;installazione e la configurazione del software EMC
 
    Durante i processi di installazione, viene richiesto di immettere il nome del server del computer Content Server come *Nome server NetWorker*. Quando si installa il modulo EMC NetWorker per il database, scegliere un&#39;installazione &quot;completa&quot;.
 
-1. Utilizzando il contenuto di esempio seguente, crea un file di configurazione denominato *nsrnmd_win.cfg* e salvarlo in una posizione accessibile sul Content Server. Il file verrà richiamato dai comandi di backup e ripristino.
+1. Utilizzando il contenuto di esempio seguente, creare un file di configurazione denominato *nsrnmd_win.cfg* e salvarlo in una posizione accessibile sul server di contenuti. Il file verrà richiamato dai comandi di backup e ripristino.
 
    Il testo seguente contiene caratteri di formattazione per le interruzioni di riga. Se si copia il testo in una posizione esterna al documento, copiare una parte alla volta e rimuovere i caratteri di formattazione quando si incolla il testo nella nuova posizione.
 
@@ -186,47 +186,47 @@ Questa sezione descrive l&#39;installazione e la configurazione del software EMC
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Mantieni il campo della password del file di configurazione `NMDDE_DM_PASSWD` vuoto. La password verrà impostata nel passaggio successivo.
+   Mantenere vuoto il campo password del file di configurazione `NMDDE_DM_PASSWD`. La password verrà impostata nel passaggio successivo.
 
 1. Impostare la password del file di configurazione come segue:
 
-   * Apri un prompt dei comandi e cambia in `[NetWorker_root]\Legato\nsr\bin`.
-   * Esegui il comando seguente: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
+   * Aprire un prompt dei comandi e passare a `[NetWorker_root]\Legato\nsr\bin`.
+   * Esegui il comando seguente: `-nsrnmdsv.exe -f`*&lt;percorso_file_cfg> -P &lt;password>*
 
 1. Creare i file batch eseguibili (con estensione bat) utilizzati per eseguire il backup del database. Consultare la documentazione di NetWorker. Impostare i dettagli nei file batch in base all&#39;installazione.
 
    * Backup completo del database (nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;Nome_Server_NetWorker>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;nome_database>*
 
    * Backup incrementale del database (nsrnmddbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;Nome_Server_NetWorker>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;nome_database>*
 
    * Backup del log del database (nsrnmddbl.bat):
 
-     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nome_database>*
 
      Dove:
 
-     `[NetWorker_database_module_root]` è la directory di installazione del modulo NetWorker Ad esempio, la directory di installazione predefinita per il modulo NetWorker per SQL Server è C:\Program Files\Legato\nsr\bin\nsrsqlsv.
+     `[NetWorker_database_module_root]` è la directory di installazione del modulo NetWorker. Ad esempio, la directory di installazione predefinita per il modulo NetWorker per SQL Server è C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
-     `NetWorker_Server_Name` è il server su cui è installato NetWorker.
+     `NetWorker_Server_Name` è il server in cui è installato NetWorker.
 
-     `username` E `password` sono il nome utente e la password dell&#39;utente amministratore del database.
+     `username` e `password` sono il nome utente e la password dell&#39;utente amministratore del database.
 
      `database_name` è il nome del database di cui eseguire il backup.
 
-**Creare un dispositivo di backup**
+**Crea un dispositivo di backup**
 
 1. Creare una directory sul server EMC Documentum e condividere la cartella concedendo diritti completi a tutti gli utenti.
 1. Avviare EMC NetWorker Administrator e fare clic su Gestione supporti > Dispositivi.
 1. Fare clic con il pulsante destro del mouse su Dispositivi e selezionare Crea.
 1. Immettete i seguenti valori e fate clic su OK:
 
-   **Nome:** Percorso completo della directory condivisa
+   **Nome:** il percorso completo della directory condivisa
 
-   **Tipo di file multimediale:** `File`
+   **Tipo di supporto:** `File`
 
 1. Fare clic con il pulsante destro del mouse sul nuovo dispositivo e selezionare Operazioni.
 1. Fare clic su Etichetta, immettere un nome, fare clic su OK e quindi su Monta.
@@ -235,13 +235,13 @@ Viene aggiunta una periferica alla quale verranno salvati i file di cui è stato
 
 ## Backup di EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-Dopo aver completato un backup completo dei dati dei moduli AEM, esegui le seguenti attività. (vedere [Backup dei dati dei moduli AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Dopo aver completato un backup completo dei dati dei moduli AEM, esegui le seguenti attività. (Vedi [Backup dei dati dei moduli AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
 >[!NOTE]
 >
->Gli script dei comandi richiedono il percorso completo del file nsrnmd_win.cfg creato in [Preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Gli script di comando richiedono il percorso completo del file nsrnmd_win.cfg creato in [Preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Apri un prompt dei comandi e cambia in `[NetWorker_root]\Legato\nsr\bin`.
+1. Aprire un prompt dei comandi e passare a `[NetWorker_root]\Legato\nsr\bin`.
 1. Esegui il comando seguente:
 
    ```shell
@@ -250,11 +250,11 @@ Dopo aver completato un backup completo dei dati dei moduli AEM, esegui le segue
 
 ## Ripristino di EMC Documentum Content Server {#restore-the-emc-documentum-content-server}
 
-Prima di ripristinare i dati dei moduli AEM, eseguire le operazioni seguenti. (vedere [Recupero dei dati dei moduli dell’AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
+Prima di ripristinare i dati dei moduli AEM, eseguire le operazioni seguenti. (Vedi [Recupero dei dati dei moduli AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
 >[!NOTE]
 >
->Gli script dei comandi richiedono il percorso completo del file nsrnmd_win.cfg creato in [Preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Gli script di comando richiedono il percorso completo del file nsrnmd_win.cfg creato in [Preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Arrestare il servizio Docbase che si sta ripristinando.
 1. Avviare l&#39;utilità utente NetWorker per il modulo di database (ad esempio, *Utente NetWorker per SQL Server*).

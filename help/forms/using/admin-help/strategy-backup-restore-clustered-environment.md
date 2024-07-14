@@ -44,45 +44,45 @@ In questo argomento vengono illustrate le seguenti strategie per eseguire il bac
 ### Backup offline con downtime {#offline-backup-with-downtime}
 
 1. Arrestare l&#39;intero cluster e i servizi correlati. (vedere [Avvio e arresto dei servizi](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Su qualsiasi nodo, eseguire il backup del database, di GDS e dei connettori. (vedere [File di backup e ripristino](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Su qualsiasi nodo, eseguire il backup del database, di GDS e dei connettori. (vedi [File per il backup e il ripristino](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Per eseguire il backup offline dell&#39;archivio AEM, effettuare le seguenti operazioni:
 
    1. Per ogni nodo cluster, eseguire il backup del file che contiene l&#39;ID del nodo cluster.
    1. Eseguire il backup di tutti i file di qualsiasi nodo cluster secondario, incluse le sottodirectory.
    1. Eseguire il backup dell&#39;ID di sistema/repository di ciascun nodo cluster separatamente.
 
-   Per i passaggi dettagliati, consulta [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Per i passaggi dettagliati, vedere [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 1. Eseguire il backup di qualsiasi altro dato, ad esempio i caratteri del cliente.
 1. Riavviare il cluster.
 
 ### Backup offline senza downtime {#offline-backup-with-no-downtime}
 
-1. Attiva la modalità di backup continuo. (vedere [Immissione delle modalità di backup](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. Attiva la modalità di backup continuo. (vedere [Accesso alle modalità di backup](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
    Lascia la modalità di backup continuo dopo un ripristino.
 
 1. Arrestare uno dei nodi secondari del cluster per quanto riguarda l&#39;AEM. (vedere [Avvio e arresto dei servizi](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Su qualsiasi nodo, eseguire il backup del database, di GDS e dei connettori. (vedere [File di backup e ripristino](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Su qualsiasi nodo, eseguire il backup del database, di GDS e dei connettori. (vedi [File per il backup e il ripristino](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Per eseguire il backup offline dell&#39;archivio AEM, effettuare le seguenti operazioni:
 
    1. Per ogni nodo cluster, eseguire il backup del file che contiene l&#39;ID del nodo cluster.
    1. Eseguire il backup di tutti i file di qualsiasi nodo cluster secondario, incluse le sottodirectory.
    1. Eseguire il backup repository/system.id di ogni nodo cluster separatamente.
 
-   Per i passaggi dettagliati, consulta [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Per i passaggi dettagliati, vedere [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 1. Eseguire il backup di qualsiasi altro dato, ad esempio i caratteri del cliente.
 1. Riavviare il cluster.
 
 ### Backup online senza tempi di inattività ma con ritardo nella risposta {#online-backup-with-no-downtime-but-delay-in-response}
 
-1. Attiva la modalità di backup continuo. (vedere [Immissione delle modalità di backup](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. Attiva la modalità di backup continuo. (vedere [Accesso alle modalità di backup](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
    Lascia la modalità di backup continuo dopo un ripristino.
 
 1. Arrestare uno dei nodi secondari del cluster per quanto riguarda l&#39;AEM. (vedere [Avvio e arresto dei servizi](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Su qualsiasi nodo, eseguire il backup del database, di GDS e dei connettori. (vedere [File di backup e ripristino](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Su qualsiasi nodo, eseguire il backup del database, di GDS e dei connettori. (vedi [File per il backup e il ripristino](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Per eseguire il backup online dell&#39;archivio AEM, effettuare le seguenti operazioni:
 
    1. Per ogni nodo del cluster, eseguire il backup del file che contiene il file cluster_node.id.
@@ -120,7 +120,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
 
 1. Ricreare il sistema fisico da un&#39;immagine di sistema.
 1. Applica patch o aggiornamenti ai moduli AEM applicati dal momento in cui è stata creata l’immagine. Queste informazioni sono state registrate durante la procedura di backup. I moduli AEM devono essere recuperati allo stesso livello di patch utilizzato al momento del backup del sistema.
-1. (*Facoltativo*) Se tutti gli altri nodi funzionano correttamente, è possibile che anche l’archivio AEM sia danneggiato. In questo caso, nel file error.log dell’archivio AEM verrà visualizzato un messaggio di desincronizzazione dell’archivio.
+1. (*Facoltativo*) Se tutti gli altri nodi funzionano correttamente, è possibile che anche l&#39;archivio AEM sia danneggiato. In questo caso, nel file error.log dell’archivio AEM verrà visualizzato un messaggio di desincronizzazione dell’archivio.
 
    Per ripristinare l’archivio, effettua le seguenti operazioni.
 
@@ -133,7 +133,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Elimina il file clusterNode/revision.log sul nodo.
    1. Elimina il file .lock sul nodo, se esistente.
    1. Elimina l’eventuale repository/system.id sul nodo.
-   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties sul nodo, se presenti.
+   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties sul nodo, se esistenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]
@@ -163,7 +163,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Eliminare il file clusterNode/revision.log in tutti i nodi del cluster.
    1. Eliminare il blocco in tutti i nodi del cluster, se esistente.
    1. Eliminare tutti i nodi del cluster repository/system.id, se esiste.
-   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties su tutti i nodi del cluster, se esistenti.
+   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties su tutti i nodi del cluster, se presenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]
@@ -176,15 +176,15 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
 
 ## Backup e ripristino del nodo di pubblicazione della soluzione per la gestione della corrispondenza {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Il nodo dell&#39;editore non ha alcuna relazione primario-secondario in un ambiente cluster. È possibile eseguire il backup di qualsiasi nodo di Publisher eseguendo le operazioni seguenti [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+Il nodo dell&#39;editore non ha alcuna relazione primario-secondario in un ambiente cluster. È possibile eseguire il backup di qualsiasi nodo di Publisher seguendo [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Ripristino di un singolo nodo di pubblicazione {#recover-a-single-publisher-node}
 
 1. Chiudi il nodo da recuperare e non esegui alcuna attività di pubblicazione fino a quando il nodo non è nuovamente attivo.
-1. Ripristina il nodo Publish tramite [Ripristino del backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Ripristinare il nodo Publish utilizzando [Ripristino del backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Ripristinare un cluster {#recover-a-cluster}
 
 1. Arrestare il cluster.
-1. Ripristina il nodo Publish tramite [Ripristino del backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Ripristinare il nodo Publish utilizzando [Ripristino del backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. Avvia il nodo principale seguito dal nodo secondario del cluster di authoring.

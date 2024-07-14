@@ -20,28 +20,28 @@ ht-degree: 0%
 
 Gli endpoint di Task Manager consentono agli utenti di Workspace di richiamare il servizio.
 
-**Impostazioni endpoint di Task Manager**
+**Impostazioni endpoint di Gestione attività**
 
 Utilizzare le impostazioni seguenti per configurare un endpoint di Task Manager.
 
-**Nome:** (Obbligatorio) Identifica l’endpoint. Il nome viene visualizzato nella vista a schede in Workspace. Non includere un carattere &lt; perché il nome visualizzato in Workspace verrà troncato. Se immetti un URL come nome dell’endpoint, accertati che sia conforme alle regole di sintassi specificate in RFC1738.
+**Nome:** (obbligatorio) identifica l&#39;endpoint. Il nome viene visualizzato nella vista a schede in Workspace. Non includere un carattere &lt; perché il nome visualizzato in Workspace verrà troncato. Se immetti un URL come nome dell’endpoint, accertati che sia conforme alle regole di sintassi specificate in RFC1738.
 
-**Descrizione:** Descrizione dell&#39;endpoint. Non includere un carattere &lt; perché la descrizione visualizzata in Workspace verrà troncata.
+**Descrizione:** una descrizione dell&#39;endpoint. Non includere un carattere &lt; perché la descrizione visualizzata in Workspace verrà troncata.
 
-**Istruzioni attività:** Istruzioni per l’utente che avvia questo flusso di lavoro.
+**Istruzioni attività:** Istruzioni per l&#39;utente che avvia il flusso di lavoro.
 
-**Proprietario processo:** Il nome della persona responsabile del processo.
+**Proprietario processo:** il nome della persona responsabile del processo.
 
-**L’Utente Può Inoltrare L’Attività:** Consente all&#39;utente di inoltrare l&#39;attività iniziale.
+**L&#39;utente può inoltrare l&#39;attività:** Consente di inoltrare l&#39;attività iniziale.
 
 **Mostra finestra allegato:** Consente all&#39;utente di visualizzare la finestra dell&#39;allegato.
 
-**Consenti aggiunta allegato:** Consente all&#39;utente di aggiungere allegati e note.
+**Consenti aggiunta allegati:** Consente all&#39;utente di aggiungere allegati e note.
 
 **Attività inizialmente bloccata:** Blocca l&#39;attività iniziale.
 
-**Aggiungi ACL per code condivise:** L&#39;operazione iniziale viene creata con ACL per gli utenti della coda condivisa.
+**Aggiungi ACL per le code condivise:** L&#39;attività iniziale viene creata con ACL per gli utenti della coda condivisa.
 
-**Categorizzazione:** (Obbligatorio) Categoria in cui l’utente visualizzerà il modulo in Workspace. Selezionare una categoria dall&#39;elenco oppure selezionare Nuova categoria per aggiungere una categoria.
+**Categorizzazione:** (obbligatoria) la categoria in cui l&#39;utente visualizzerà il modulo in Workspace. Selezionare una categoria dall&#39;elenco oppure selezionare Nuova categoria per aggiungere una categoria.
 
-**Nome operazione:** (Obbligatorio) Elenco di operazioni che possono essere assegnate all’endpoint.
+**Nome operazione:** (obbligatorio) Elenco di operazioni che possono essere assegnate all&#39;endpoint.

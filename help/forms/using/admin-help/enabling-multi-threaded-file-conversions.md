@@ -43,7 +43,7 @@ Quando si aggiungono utenti per OpenOffice, Microsoft® Word o Microsoft® Power
 In un sistema operativo Windows, gli account utente dell&#39;amministratore utilizzati per la conversione PDF (utenti PDFG) devono sostituire i privilegi dei token a livello di processo. È possibile aggiungere questo diritto utilizzando Editor Criteri di gruppo:
 
 1. Nel menu Start di Windows fare clic su Esegui e quindi immettere gpedit.msc.
-1. Fare clic su Criteri computer locale > Configurazione computer > Impostazioni di Windows > Impostazioni protezione > Criteri locali > Assegnazione diritti utente. Modifica il *Sostituire un token a livello di processo* criterio per includere il gruppo Administrators.
+1. Fare clic su Criteri computer locale > Configurazione computer > Impostazioni di Windows > Impostazioni protezione > Criteri locali > Assegnazione diritti utente. Modifica il criterio *Sostituisci un token a livello di processo* per includere il gruppo Administrators.
 1. Aggiungere l&#39;utente alla voce Sostituisci token a livello di processo.
 
 ### Configurazione aggiuntiva necessaria per OpenOffice, Microsoft® Word e Microsoft® PowerPoint su Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -56,7 +56,7 @@ Se si esegue OpenOffice, Microsoft® Word o Microsoft® PowerPoint su Windows Se
 
 ### Configurazione aggiuntiva richiesta per OpenOffice su Linux® o Solaris™ {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. Aggiungere account utente. (vedere [Aggiungere un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
+1. Aggiungere account utente. (Vedi [Aggiungere un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
 1. Successivamente, è necessario modificare il file /etc/sudoers. L&#39;autorizzazione predefinita per questo file è 440. Cambia l&#39;autorizzazione per questo file in scrivibile.
 1. Aggiungere voci per altri utenti (diversi dall&#39;amministratore che esegue Forms Server) nel file /etc/sudoers. Ad esempio, se si eseguono moduli AEM come un utente denominato lcadm e un server denominato myhost e si desidera rappresentare user1 e user2, aggiungere le seguenti voci a /etc/sudoers:
 
@@ -69,7 +69,7 @@ Se si esegue OpenOffice, Microsoft® Word o Microsoft® PowerPoint su Windows Se
 
    >[!NOTE]
    >
-   >Assicurati di aver assegnato i ruoli utente del sistema e utente PDFG a &quot;utente1&quot; e &quot;utente2&quot;. Per assegnare un ruolo PDFG a un utente, vedi [Aggiungere un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Assicurati di aver assegnato i ruoli utente del sistema e utente PDFG a &quot;utente1&quot; e &quot;utente2&quot;. Per assegnare un ruolo PDFG a un utente, vedere [Aggiungere un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. Inoltre, nel file /etc/sudoers, individua e commenta questa riga aggiungendo un cancelletto (#) all’inizio della riga:
 
@@ -80,7 +80,7 @@ Se si esegue OpenOffice, Microsoft® Word o Microsoft® PowerPoint su Windows Se
    Questo consente di aggiungere utenti Linux®.
 
 1. Modifica l’autorizzazione per il file etc/sudoers riportandola a 440.
-1. Consenti a tutti gli utenti aggiunti tramite [Aggiungere un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account) per effettuare connessioni al server Forms. Ad esempio, per consentire a un utente locale denominato user1 l&#39;autorizzazione di effettuare la connessione al server Forms, utilizzare il comando seguente
+1. Consenti a tutti gli utenti aggiunti tramite [Aggiungi un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account) di effettuare connessioni al server Forms. Ad esempio, per consentire a un utente locale denominato user1 l&#39;autorizzazione di effettuare la connessione al server Forms, utilizzare il comando seguente
 
    `xhost +local:user1@`
 

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Questa funzione è costituita da due componenti che lavorano insieme: revisioni e riepilogo delle revisioni.
 
-Recensioni è un componente composito basato su una [sistema di commenti](essentials-comments.md) che contiene uno o più [valutazione](rating-basics.md) Componenti (tally).
+Recensioni è un componente composito basato su un [sistema di commenti](essentials-comments.md) che contiene uno o più componenti [valutazione](rating-basics.md) (conteggio).
 
 La pubblicazione anonima di una revisione non è supportata. Per aggiungere una recensione, i visitatori del sito devono registrarsi e accedere. Il visitatore (membro) che ha effettuato l’accesso può aggiornare la propria revisione in qualsiasi momento.
 
@@ -31,12 +31,12 @@ La pubblicazione anonima di una revisione non è supportata. Per aggiungere una 
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/recensioni/componenti/hbs/recensioni</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
-   <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
+   <td>Sì - le proprietà sono modificabili in modalità <i>progettazione </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
@@ -52,43 +52,43 @@ La pubblicazione anonima di una revisione non è supportata. Per aggiungere una 
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Consulta <a href="reviews.md">Utilizzo delle revisioni</a></td>
+   <td>Vedi <a href="reviews.md">Utilizzo delle recensioni</a></td>
   </tr>
  </tbody>
 </table>
 
 ### Riepilogo recensioni {#review-summary}
 
-| **resourceType** | social/recensioni/componenti/hbs/riepilogo |
+| **tiporisorsa** | social/recensioni/componenti/hbs/riepilogo |
 |---|---|
-| [**incluso**](scf.md#add-or-include-a-communities-component) | Sì - le proprietà sono modificabili nel modo *design * |
+| [**includibile**](scf.md#add-or-include-a-communities-component) | Sì - le proprietà sono modificabili nel modo *design * |
 | [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
 | **modelli** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
-| **proprietà** | Consulta [Utilizzo delle revisioni](reviews.md) |
+| **proprietà** | Vedi [Utilizzo delle recensioni](reviews.md) |
 
 * [Personalizzazioni lato client](client-customize.md)
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API di revisione](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [Rivedi API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Endpoint di revisione](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Endpoint revisione](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
 ### Accesso alle recensioni postate (UGC) {#accessing-posted-reviews-ugc}
 
 Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Vedere [Moderazione del contenuto generato dall&#39;utente](moderate-ugc.md).
 
-A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell&#39;UGC nell&#39;archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
-* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi ed esempi dell&#39;utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.
+* [Refactoring di SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti ai metodi di utilità SRP correnti.

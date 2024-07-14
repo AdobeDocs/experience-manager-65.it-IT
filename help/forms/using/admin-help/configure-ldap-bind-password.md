@@ -22,7 +22,7 @@ Per evitare rischi di sicurezza, il campo bind password (password di associazion
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
 1. Per esportare l&#39;impostazione di configurazione corrente in un file, fare clic su Esporta e salvare il file di configurazione in un&#39;altra posizione.
-1. Nel file, individua `Domains` > *[Nome dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` nodo. Ecco un esempio:
+1. Nel file, individua il nodo `Domains` > *[Nome di dominio]* > `DirectoryConfigs` > `LDAPGroupConfig`. Ecco un esempio:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -35,9 +35,9 @@ Per evitare rischi di sicurezza, il campo bind password (password di associazion
         </map>
    ```
 
-   Digita un valore per `bindpassword` e salvare le modifiche.
+   Digitare un valore per `bindpassword` e salvare le modifiche.
 
-1. Nel file, individua `Domains` > *[Nome dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` nodo. Ecco un esempio:
+1. Nel file, individuare il nodo `Domains` > *[Nome dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Ecco un esempio:
 
    ```xml
     <node name="LDAPUserConfig">
@@ -50,7 +50,7 @@ Per evitare rischi di sicurezza, il campo bind password (password di associazion
         </map>
    ```
 
-   Digita un valore per `bindpassword` e salvare le modifiche.
+   Digitare un valore per `bindpassword` e salvare le modifiche.
 
 1. Per importare il file aggiornato, in Gestione utenti, fare clic su Configurazione > Importa ed esporta file di configurazione.
 1. Fare clic su Sfoglia per trovare il file, su Importa e quindi su OK.

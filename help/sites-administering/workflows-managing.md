@@ -24,7 +24,7 @@ Configura gli ACL in base agli account utente per consentire (o disabilitare) l�
 
 È possibile intraprendere azioni sui flussi di lavoro se:
 
-* si sta utilizzando `admin` account
+* si sta utilizzando l&#39;account `admin`
 * l&#39;account è stato assegnato al gruppo predefinito `workflow-users`:
 
    * questo gruppo dispone di tutti i privilegi necessari agli utenti per eseguire azioni del flusso di lavoro.
@@ -48,20 +48,20 @@ I modelli di flusso di lavoro ereditano un elenco di controllo di accesso (ACL, 
 
 >[!NOTE]
 >
->Per informazioni sull’utilizzo di CRXDE Liti per configurare gli ACL, consulta [Gestione diritti di accesso](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Per informazioni sull&#39;utilizzo di CRXDE Lite per configurare gli ACL, vedere [Gestione dei diritti di accesso](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ### Applica un ACL per il modello di flusso di lavoro specifico a /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Se il modello di flusso di lavoro è memorizzato in `/var/workflow/models`Quindi puoi assegnare alla cartella un ACL specifico, relativo solo a quel flusso di lavoro:
+Se il modello di flusso di lavoro è memorizzato in `/var/workflow/models`, è possibile assegnare un ACL specifico, relativo solo a tale flusso di lavoro, nella cartella:
 
-1. Apri CRXDE Liti nel browser Web (ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Apri CRXDE Lite nel browser Web (ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Nella struttura ad albero dei nodi, seleziona il nodo per la cartella dei modelli di flusso di lavoro:
 
    `/var/workflow/models`
 
-1. Fai clic su **Controllo dell’accesso** scheda.
-1. In **Criteri di controllo dell&#39;accesso locale** (**Elenco di controllo di accesso**), fare clic sull&#39;icona più per **Aggiungi voce**.
-1. In **Aggiungi nuova voce** , aggiungere una voce di controllo di accesso con le seguenti proprietà:
+1. Fare clic sulla scheda **Controllo di accesso**.
+1. Nella tabella **Criteri di controllo di accesso locali** (**Elenco di controllo di accesso**) fare clic sull&#39;icona più (+) per **Aggiungere voce**.
+1. Nella finestra di dialogo **Aggiungi nuova voce**, aggiungi un ACE con le seguenti proprietà:
 
    * **Entità**: `content-authors`
    * **Tipo**: `Deny`
@@ -70,17 +70,17 @@ Se il modello di flusso di lavoro è memorizzato in `/var/workflow/models`Quindi
 
    ![wf-108](assets/wf-108.png)
 
-   Il **Elenco di controllo di accesso** la tabella ora include la restrizione per `content-authors` il `prototype-wfm-01` modello di workflow.
+   La tabella **Elenco di controllo di accesso** ora include la restrizione per `content-authors` nel modello di flusso di lavoro `prototype-wfm-01`.
 
    ![wf-109](assets/wf-109.png)
 
-1. Clic **Salva tutto**.
+1. Fare clic su **Salva tutto**.
 
-   Il `prototype-wfm-01` il flusso di lavoro non è più disponibile per i membri del `content-authors` gruppo.
+   Il flusso di lavoro `prototype-wfm-01` non è più disponibile per i membri del gruppo `content-authors`.
 
 ### Crea una sottocartella in /var/workflow/models e applica a essa l’ACL {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Il tuo [il team di sviluppo può creare i flussi di lavoro in una sottocartella](/help/sites-developing/workflows-models.md#creating-a-new-workflow) di
+Il tuo team di sviluppo [ può creare i flussi di lavoro in una sottocartella](/help/sites-developing/workflows-models.md#creating-a-new-workflow) di
 
 `/var/workflow/models`
 
@@ -90,15 +90,15 @@ Paragonabile ai flussi di lavoro DAM memorizzati in
 
 È quindi possibile aggiungere un ACL alla cartella stessa.
 
-1. Apri CRXDE Liti nel browser Web (ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Apri CRXDE Lite nel browser Web (ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Nella struttura ad albero del nodo, seleziona il nodo per la singola cartella nella cartella dei modelli di flusso di lavoro; ad esempio:
 
    `/var/workflow/models/prototypes`
 
-1. Fai clic su **Controllo dell’accesso** scheda.
-1. In **Criterio di controllo dell’accesso applicabile** fare clic sull&#39;icona più per **Aggiungi** una voce.
-1. In **Criteri di controllo dell&#39;accesso locale** (**Elenco di controllo di accesso**), fare clic sull&#39;icona più per **Aggiungi voce**.
-1. In **Aggiungi nuova voce** , aggiungere una voce di controllo di accesso con le seguenti proprietà:
+1. Fare clic sulla scheda **Controllo di accesso**.
+1. Nella tabella **Criteri di controllo di accesso applicabili**, fare clic sull&#39;icona più (+) per **aggiungere** una voce.
+1. Nella tabella **Criteri di controllo di accesso locali** (**Elenco di controllo di accesso**) fare clic sull&#39;icona più (+) per **Aggiungere voce**.
+1. Nella finestra di dialogo **Aggiungi nuova voce**, aggiungi un ACE con le seguenti proprietà:
 
    * **Entità**: `content-authors`
    * **Tipo**: `Deny`
@@ -106,14 +106,14 @@ Paragonabile ai flussi di lavoro DAM memorizzati in
 
    >[!NOTE]
    >
-   >Come con [Applica un ACL per il modello di flusso di lavoro specifico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) potete includere un rep:glob per limitare l&#39;accesso a un flusso di lavoro specifico.
+   >Come con [Applica un ACL per il modello di flusso di lavoro specifico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) puoi includere un rep:glob per limitare l&#39;accesso a un flusso di lavoro specifico.
 
    ![wf-110](assets/wf-110.png)
 
-   Il **Elenco di controllo di accesso** la tabella ora include la restrizione per `content-authors` il `prototypes` cartella.
+   La tabella **Elenco di controllo di accesso** include ora la restrizione per `content-authors` nella cartella `prototypes`.
 
    ![wf-111](assets/wf-111.png)
 
-1. Clic **Salva tutto**.
+1. Fare clic su **Salva tutto**.
 
-   I modelli in `prototypes` non sono più disponibili per i membri del gruppo `content-authors` gruppo.
+   I modelli nella cartella `prototypes` non sono più disponibili per i membri del gruppo `content-authors`.

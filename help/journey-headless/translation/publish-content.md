@@ -69,7 +69,7 @@ In questo percorso sono presenti sottocartelle per ogni lingua di traduzione e p
 1. Vai su **Navigazione** > **Risorse** > **File** e apri la cartella del progetto.
 1. Qui puoi vedere la cartella principale della lingua e tutte le altre cartelle della lingua. Seleziona la lingua o le lingue localizzate da pubblicare.
    ![Seleziona cartella della lingua](assets/select-language-folder.png)
-1. Clic **Gestisci pubblicazione**.
+1. Fai clic su **Gestisci pubblicazione**.
 1. Nella finestra **Gestisci pubblicazione**, assicurati che **Pubblica** sia selezionato automaticamente in **Azione** e che **Adesso** sia selezionato in **Pianificazione**. Fai clic su **Avanti**.
    ![Opzioni di Gestisci pubblicazione](assets/manage-publication-options.png)
 1. Nella prossima finestra **Gestisci pubblicazione**, conferma che i percorsi corretti siano selezionati. Fai clic su **Pubblica**.
@@ -97,13 +97,13 @@ Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di cre
 
 1. Passa a **Navigazione** > **Risorse** > **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
 1. Seleziona la directory principale della lingua del progetto. In questo caso, `/content/dam/wknd/en` è selezionato.
-1. Fai clic sul selettore della barra e mostra **Riferimenti** pannello.
-1. Clic **Copie per lingua**.
+1. Fai clic sul selettore della barra e mostra il pannello **Riferimenti**.
+1. Fai clic su **Copie per lingua**.
 1. Seleziona la casella di spunta delle **Copie in lingua**.
 1. Espandi la sezione **Aggiorna copie per lingua** nella parte inferiore del pannello dei riferimenti.
 1. Nel menu a discesa **Progetto**, seleziona **Aggiungi a un progetto di traduzione esistente**.
 1. Nel menu a discesa **Progetto di traduzione esistente**, seleziona il progetto creato per la traduzione iniziale.
-1. Clic **Inizio**.
+1. Fare clic su **Inizio**.
 
 ![Aggiungi elementi al progetto di traduzione esistente](assets/add-to-existing-project.png)
 
@@ -131,16 +131,16 @@ Per aggiornare una traduzione, puoi aggiungere al progetto esistente un nuovo pr
 
 1. Passa a **Navigazione** > **Progetti**.
 1. Fai clic sul progetto da aggiornare.
-1. Fai clic su **Aggiungi** nella parte superiore della finestra.
-1. In **Aggiungi sezione** finestra, fai clic su **Lavoro di traduzione** e poi **Invia**.
+1. Fai clic sul pulsante **Aggiungi** nella parte superiore della finestra.
+1. Nella finestra **Aggiungi riquadro**, fai clic su **Processo di traduzione** e quindi su **Invia**.
 
    ![Aggiungi riquadro](assets/add-translation-job-tile.png)
 
-1. Sulla scheda del nuovo processo di traduzione, fai clic sul pulsante con freccia in alto nella scheda e seleziona **Aggiorna Target** per definire la lingua di destinazione del nuovo processo.
+1. Sulla scheda del nuovo processo di traduzione, fai clic sul pulsante con freccia in alto nella scheda e seleziona **Aggiorna destinazione** per definire la lingua di destinazione del nuovo processo.
 
    ![Aggiorna destinazione](assets/update-target.png)
 
-1. In **Seleziona lingua di destinazione** , utilizza il menu a discesa per selezionare la lingua e fai clic su **Fine**.
+1. Nella finestra di dialogo **Seleziona lingua di destinazione**, utilizza l&#39;elenco a discesa per selezionare la lingua e fai clic su **Fine**.
 
    ![Seleziona lingua di destinazione](assets/select-target-language.png)
 

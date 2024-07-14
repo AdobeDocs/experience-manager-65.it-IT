@@ -26,22 +26,22 @@ Il controllo delle versioni crea lo snapshot di una pagina in un determinato mom
 
 Puoi creare una versione della risorsa da:
 
-* il [Barra Timeline](#creating-a-new-version-timeline)
-* il [Crea](#creating-a-new-version-create-with-a-selected-resource) opzione (quando è selezionata una risorsa)
+* la [barra Timeline](#creating-a-new-version-timeline)
+* opzione [Crea](#creating-a-new-version-create-with-a-selected-resource) (quando è selezionata una risorsa)
 
 ### Creazione di una nuova versione - Timeline {#creating-a-new-version-timeline}
 
 1. Passa alla pagina per la quale desideri creare una versione.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Apri **Timeline** colonna.
+1. Apri la colonna **Timeline**.
 1. Fai clic sulla freccia accanto al campo del commento per visualizzare le opzioni:
 
    ![Timeline - Salva come versione](assets/screen-shot_2019-03-05at112335.png)
 
 1. Seleziona **Salva come versione**.
-1. Immetti un **Etichetta** e **Commento** se necessario.
+1. Immetti un **Etichetta** e un **Commento**, se necessario.
 
-   ![Crea versione - Aggiungi etichetta e commento](assets/chlimage_1-42.png)
+   ![Crea versione - aggiungi etichetta e commento](assets/chlimage_1-42.png)
 
 1. Conferma la nuova versione selezionando **Crea**.
 
@@ -51,10 +51,10 @@ Puoi creare una versione della risorsa da:
 
 1. Passa alla pagina per la quale desideri creare una versione.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Seleziona la **Crea** nella barra degli strumenti per aprire la finestra di dialogo.
+1. Seleziona l&#39;opzione **Crea** dalla barra degli strumenti per aprire la finestra di dialogo.
 1. Nella finestra di dialogo, puoi immettere un **Etichetta** e un **Commento**, se necessario:
 
-   ![Inserisci un’etichetta e un commento](assets/screen_shot_2012-02-15at105050am.png)
+   ![Immettere un&#39;etichetta e un commento](assets/screen_shot_2012-02-15at105050am.png)
 
 1. Conferma la nuova versione selezionando **Crea**.
 
@@ -167,7 +167,7 @@ Puoi visualizzare l’anteprima di una versione specifica:
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
 1. Vengono elencate le versioni della pagina. Seleziona la versione da visualizzare in anteprima:
 
-   ![Seleziona la versione da visualizzare in anteprima](assets/screen-shot_2019-03-05at112505-1.png)
+   ![Selezionare la versione da visualizzare in anteprima](assets/screen-shot_2019-03-05at112505-1.png)
 
 1. Seleziona **Anteprima**. La pagina viene visualizzata in una nuova scheda.
 
@@ -186,9 +186,9 @@ Per mettere a confronto una versione precedente con la pagina corrente:
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
 1. Vengono elencate le versioni della pagina. Seleziona la versione da confrontare:
 
-   ![Versioni pagina elencate - seleziona versione](assets/screen-shot_2019-03-05at112505-2.png)
+   ![Versioni di pagina elencate - selezionare la versione](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Seleziona **Confronta con corrente**. Il [differenze di pagina](/help/sites-authoring/page-diff.md) viene visualizzato per visualizzare le differenze.
+1. Seleziona **Confronta con corrente**. Si apre la [pagina diff](/help/sites-authoring/page-diff.md) per visualizzare le differenze.
 
 ## Timewarp   {#timewarp}
 
@@ -196,12 +196,12 @@ Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di 
 
 >[!TIP]
 >
->[Timewarp può essere utilizzato anche con Launches per visualizzare anteprime](/help/sites-authoring/launches.md) con AEM 6.5.10.0 o versione successiva.
+>[Timewarp può essere utilizzato anche con Launches per visualizzare in anteprima il futuro](/help/sites-authoring/launches.md) quando si esegue AEM 6.5.10.0 o versione successiva.
 
 La creazione dei contenuti è un processo continuo e collaborativo. Lo scopo di Timewarp è quello di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, per aiutarli a comprendere come è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione:
 
 * il sistema cerca la versione della pagina che era attiva al momento selezionato.
-   * Questa versione della pagina è stata creata/attivata *prima di* il momento selezionato in Timewarp.
+   * Questa versione della pagina è stata creata/attivata *prima* del momento selezionato in Timewarp.
 * Quando si passa a una pagina che è stata eliminata, questa viene riprodotta purché nell’archivio siano ancora disponibili le versioni precedenti della pagina.
 * Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring (per evitare un errore 404 di pagina non trovata, che impedirebbe la navigazione).
 
@@ -213,7 +213,7 @@ Timewarp è una [modalità](/help/sites-authoring/author-environment-tools.md#pa
 
    ![Seleziona Timewarp nella selezione della modalità](assets/wwpv-01.png)
 
-1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e fai clic su **Imposta data**. Se non si seleziona un&#39;ora, viene utilizzata come impostazione predefinita l&#39;ora corrente.
+1. Nella finestra di dialogo, imposta una data e un&#39;ora di destinazione e fai clic su **Imposta data**. Se non si seleziona un&#39;ora, viene utilizzata come impostazione predefinita l&#39;ora corrente.
 
    ![Imposta data](assets/wwpv-02.png)
 
@@ -229,9 +229,9 @@ Timewarp semplifica al massimo la riproduzione di una pagina in un determinato m
 * **Timewarp utilizza le versioni di pagina**: se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
 
-* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando [ripristinare](#reverting-to-a-page-version).
+* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando [ripristina](#reverting-to-a-page-version).
 
-* **Timewarp si basa solo sul contenuto della pagina** - Se sono stati modificati alcuni elementi per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate versioni nell’archivio. Tali elementi includono, tra gli altri, codice, css, risorse/immagini.
+* **Timewarp si basa solo sul contenuto della pagina**. Se gli elementi per il rendering del sito Web sono stati modificati, la visualizzazione è diversa da quella originale, in quanto tali elementi non vengono sottoposti a controllo delle versioni nell&#39;archivio. Tali elementi includono, tra gli altri, codice, css, risorse/immagini.
 
 >[!CAUTION]
 >

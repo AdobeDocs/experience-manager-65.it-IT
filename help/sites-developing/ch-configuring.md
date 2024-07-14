@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Configurazione di ContextHub {#configuring-contexthub}
 
-ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali. Per ulteriori dettagli su ContextHub, vedi [documentazione per sviluppatori](/help/sites-developing/contexthub.md). ContextHub sostituisce [ClientContext](/help/sites-administering/client-context.md) nell’interfaccia utente touch.
+ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali. Per ulteriori dettagli su ContextHub, consulta la [documentazione per gli sviluppatori](/help/sites-developing/contexthub.md). ContextHub sostituisce [ClientContext](/help/sites-administering/client-context.md) nell&#39;interfaccia utente touch.
 
-Configurare [ContextHub](/help/sites-developing/contexthub.md) per controllare se viene visualizzata in modalità Anteprima, per creare store ContextHub e aggiungere moduli di interfaccia utente tramite l’interfaccia touch.
+Configura la barra degli strumenti [ContextHub](/help/sites-developing/contexthub.md) per controllare se viene visualizzata in modalità Anteprima, per creare archivi ContextHub e aggiungere moduli di interfaccia utente tramite l&#39;interfaccia utente ottimizzata per il tocco.
 
 ## Disabilitazione di ContextHub {#disabling-contexthub}
 
@@ -39,11 +39,11 @@ There are two options to disable ContextHub:
 or
 -->
 
-* Utilizzare CRXDE Liti per impostare la proprietà `disabled` a **true** in `/libs/settings/cloudsettings/legacy/contexthub`
+* Utilizzare CRXDE Lite per impostare la proprietà `disabled` su **true** in `/libs/settings/cloudsettings/legacy/contexthub`
 
 >[!NOTE]
 >
->[A causa della ristrutturazione dei depositi in AEM 6.4,](/help/sites-deploying/repository-restructuring.md) la posizione delle configurazioni ContextHub è stata modificata da `/etc/cloudsettings` a:
+>[A causa della ristrutturazione dell&#39;archivio in AEM 6.4,](/help/sites-deploying/repository-restructuring.md) la posizione delle configurazioni ContextHub è cambiata da `/etc/cloudsettings` a:
 >
 >* `/libs/settings/cloudsettings`
 >* `/conf/global/settings/cloudsettings`
@@ -51,12 +51,12 @@ or
 
 ## Visualizzazione e nascondere l’interfaccia utente di ContextHub {#showing-and-hiding-the-contexthub-ui}
 
-Configura il servizio OSGi Adobe Granite ContextHub per mostrare o nascondere [Interfaccia utente ContextHub](/help/sites-authoring/ch-previewing.md) sulle pagine. Il PID di questo servizio è `com.adobe.granite.contexthub.impl.ContextHubImpl.`
+Configura il servizio OSGi Adobe Granite ContextHub per mostrare o nascondere la [interfaccia utente ContextHub](/help/sites-authoring/ch-previewing.md) nelle tue pagine. Il PID di questo servizio è `com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
-Per configurare il servizio è possibile utilizzare [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o utilizza un [Nodo JCR nell’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
+Per configurare il servizio è possibile utilizzare la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un nodo [JCR nell&#39;archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
-* **Console Web:** Per visualizzare l’interfaccia utente, seleziona la proprietà Mostra interfaccia utente. Per nascondere l’interfaccia utente, cancella la proprietà Nascondi interfaccia utente.
-* **Nodo JCR:** Per visualizzare l’interfaccia utente, imposta il valore booleano `com.adobe.granite.contexthub.show_ui` proprietà a `true`. Per nascondere l’interfaccia utente, imposta la proprietà su `false`.
+* **Console Web:** Per visualizzare l&#39;interfaccia utente, selezionare la proprietà Mostra interfaccia utente. Per nascondere l’interfaccia utente, cancella la proprietà Nascondi interfaccia utente.
+* **Nodo JCR:** Per visualizzare l&#39;interfaccia utente, impostare la proprietà booleana `com.adobe.granite.contexthub.show_ui` su `true`. Per nascondere l&#39;interfaccia utente, impostare la proprietà su `false`.
 
 Quando viene visualizzata l’interfaccia utente di ContextHub, viene visualizzata solo sulle pagine delle istanze di authoring AEM. L’interfaccia utente non viene visualizzata nelle pagine delle istanze di pubblicazione.
 
@@ -71,7 +71,7 @@ Le modalità dell’interfaccia utente vengono visualizzate sotto forma di una s
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
-Le icone sono riferimenti dalla [Libreria icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
+Le icone sono riferimenti dalla [libreria di icone dell&#39;interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
 
 ### Aggiunta di una modalità interfaccia utente {#adding-a-ui-mode}
 
@@ -87,7 +87,7 @@ Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub co
 1. Immetti i valori per le seguenti proprietà:
 
    * Titolo modalità interfaccia utente: titolo che identifica la modalità interfaccia utente
-   * Icona modalità: selettore per [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) ad esempio, `coral-Icon--user`
+   * Icona modalità: selettore dell&#39;[icona dell&#39;interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) da utilizzare, ad esempio `coral-Icon--user`
    * Abilitato: seleziona per visualizzare la modalità interfaccia utente nella barra degli strumenti di ContextHub
 
 1. Fai clic su Salva.
@@ -96,7 +96,7 @@ Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub co
 
 Aggiungi un modulo dell’interfaccia utente ContextHub a una modalità interfaccia utente in modo che venga visualizzato nella barra degli strumenti di ContextHub per l’anteprima del contenuto della pagina. Quando aggiungi un modulo di interfaccia utente, stai creando un’istanza di un tipo di modulo registrato con ContextHub. Per aggiungere un modulo di interfaccia utente, è necessario conoscere il nome del tipo di modulo associato.
 
-L’AEM fornisce un tipo di modulo dell’interfaccia utente di base e diversi tipi di modulo dell’interfaccia utente di esempio su cui puoi basare un modulo dell’interfaccia utente. La tabella seguente fornisce una breve descrizione di ciascuno di essi. Per informazioni sullo sviluppo di un modulo di interfaccia utente personalizzato, vedi [Creazione di moduli interfaccia utente ContextHub](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
+L’AEM fornisce un tipo di modulo dell’interfaccia utente di base e diversi tipi di modulo dell’interfaccia utente di esempio su cui puoi basare un modulo dell’interfaccia utente. La tabella seguente fornisce una breve descrizione di ciascuno di essi. Per informazioni sullo sviluppo di un modulo interfaccia utente personalizzato, vedi [Creazione di moduli interfaccia utente ContextHub](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
 Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi fornire valori per le proprietà specifiche del modulo. Fornisci la configurazione dei dettagli in formato JSON. La colonna Tipo modulo nella tabella fornisce collegamenti a informazioni sul codice JSON necessario per ogni tipo di modulo dell’interfaccia utente.
 
@@ -130,13 +130,13 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
 
 ## Creazione di un archivio ContextHub {#creating-a-contexthub-store}
 
-Crea un archivio Context Hub per rendere persistenti i dati utente e accedere ai dati in base alle esigenze. Gli store ContextHub si basano sui candidati di store registrati. Quando si crea lo store, è necessario il valore dello storeType con cui è stato registrato il candidato dello store. (vedere [Creazione di candidati per store personalizzati](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).)
+Crea un archivio Context Hub per rendere persistenti i dati utente e accedere ai dati in base alle esigenze. Gli store ContextHub si basano sui candidati di store registrati. Quando si crea lo store, è necessario il valore dello storeType con cui è stato registrato il candidato dello store. (Vedi [Creazione di candidati per store personalizzati](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).)
 
 ### Configurazione archivio dettagliata {#detailed-store-configuration}
 
-Quando si configura un archivio, la proprietà Configurazione dettagli consente di fornire valori per le proprietà specifiche del negozio. Il valore è basato sul valore `config` parametro dell&#39;archivio `init` funzione. Pertanto, l’eventuale necessità di fornire questo valore e il formato del valore dipendono dall’archivio.
+Quando si configura un archivio, la proprietà Configurazione dettagli consente di fornire valori per le proprietà specifiche del negozio. Il valore è basato sul parametro `config` della funzione `init` dell&#39;archivio. Pertanto, l’eventuale necessità di fornire questo valore e il formato del valore dipendono dall’archivio.
 
-Il valore della proprietà Configurazione dettagli è un `config` oggetto in formato JSON.
+Il valore della proprietà Configurazione dettagli è un oggetto `config` in formato JSON.
 
 ### Candidati dell’archivio esempi {#sample-store-candidates}
 
@@ -164,9 +164,9 @@ L’AEM fornisce i seguenti esempi di store candidati su cui puoi basare un nego
 1. Immetti i valori per le proprietà di configurazione di base, quindi fai clic su Avanti:
 
    * **Titolo configurazione:** Titolo che identifica l&#39;archivio
-   * **Tipo di archivio:** Il valore della proprietà storeType del candidato dello store su cui basare lo store
+   * **Tipo archivio:** il valore della proprietà storeType del candidato archivio su cui basare l&#39;archivio
    * **Obbligatorio:** Seleziona
-   * **Attivato:** Seleziona per abilitare lo store
+   * **Abilitato:** Selezionare per abilitare l&#39;archivio
 
 1. (Facoltativo) Per ignorare la configurazione predefinita dell’archivio, immetti un oggetto JSON nella casella Configurazione dettaglio (JSON).
 1. Fai clic su Salva.
@@ -188,14 +188,14 @@ Un archivio contexthub.generic-jsonp è configurato in modo da memorizzare i dat
 
 Il candidato per l’archivio di campioni contexthub.generic-jsonp consente di recuperare dati da un servizio JSONP o da un servizio web che restituisce dati JSON. Per questo candidato all&#39;archivio, utilizza la configurazione dell&#39;archivio per fornire dettagli sul servizio JSONP da utilizzare.
 
-Il [init](/help/sites-developing/contexthub-api.md#init-name-config) funzione del `ContextHub.Store.JSONPStore` La classe JavaScript definisce un `config` oggetto che inizializza il candidato dell&#39;archivio. Il `config` l&#39;oggetto contiene un `service` oggetto che include dettagli sul servizio JSONP. Per configurare il punto vendita, fornisci `service` oggetto in formato JSON come valore per la proprietà Configurazione dettagli.
+La funzione [init](/help/sites-developing/contexthub-api.md#init-name-config) della classe JavaScript `ContextHub.Store.JSONPStore` definisce un oggetto `config` che inizializza il candidato dell&#39;archivio. L&#39;oggetto `config` contiene un oggetto `service` che include dettagli sul servizio JSONP. Per configurare l&#39;archivio, specificare l&#39;oggetto `service` in formato JSON come valore per la proprietà Configurazione dettagli.
 
-Per salvare i dati dal servizio MD5 del sito jsontest.com, attenersi alla procedura descritta in [Creazione di un archivio ContextHub](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) utilizzando le seguenti proprietà:
+Per salvare i dati dal servizio MD5 del sito jsontest.com, utilizzare la procedura in [Creazione di un archivio ContextHub](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) utilizzando le proprietà seguenti:
 
 * **Titolo configurazione:** md5
 * **Tipo di archivio:** contexthub.generic-jsonp
 * **Obbligatorio:** Seleziona
-* **Attivato:** Seleziona
+* **Abilitato:** Seleziona
 * **Configurazione dettagli (JSON):**
 
   ```xml
@@ -220,7 +220,7 @@ Aggiungi un modulo di interfaccia utente alla barra degli strumenti di ContextHu
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-Utilizza la procedura in [Aggiunta di un modulo interfaccia utente](#adding-a-ui-module) per aggiungere il modulo interfaccia utente a una modalità interfaccia utente esistente, ad esempio la modalità interfaccia utente personale di esempio. Per il modulo UI, utilizza i seguenti valori delle proprietà:
+Segui la procedura descritta in [Aggiunta di un modulo interfaccia utente](#adding-a-ui-module) per aggiungere il modulo a una modalità interfaccia utente esistente, ad esempio la modalità interfaccia utente personale di esempio. Per il modulo UI, utilizza i seguenti valori delle proprietà:
 
 * **Titolo modulo interfaccia utente:** MD5
 * **Tipo modulo:** contexthub.base
@@ -242,23 +242,23 @@ Utilizza la procedura in [Aggiunta di un modulo interfaccia utente](#adding-a-ui
 
 ### Tramite la configurazione {#via-the-configuration}
 
-Modifica la configurazione di ContextHub e seleziona l’opzione **Debug**
+Modifica la configurazione di ContextHub e seleziona l&#39;opzione **Debug**
 
-1. Nella barra fai clic su **Strumenti > Sites > ContextHub**
-1. Fai clic sul pulsante predefinito **Contenitore configurazione**
-1. Seleziona la **Configurazione ContextHub** e fai clic su **Modifica elemento selezionato**
-1. Clic **Debug** e fai clic su **Salva**
+1. Nella barra fai clic su **Strumenti > Siti > ContextHub**
+1. Fai clic sul **contenitore configurazione** predefinito
+1. Seleziona la **configurazione ContextHub** e fai clic su **Modifica elemento selezionato**
+1. Fai clic su **Debug** e fai clic su **Salva**
 
 ### Via CRXDE {#via-crxde}
 
-Utilizzare CRXDE Liti per impostare la proprietà `debug` a **true** in:
+Utilizzare CRXDE Lite per impostare la proprietà `debug` su **true** in:
 
 * `/conf/global/settings/cloudsettings` o
 * `/conf/<tenant>/settings/cloudsettings`
 
 >[!NOTE]
 >
->Per le configurazioni ContextHub ancora presenti nei percorsi legacy, la posizione in cui impostare `debug property` è `/libs/settings/cloudsettings/legacy/contexthub`.
+>Per le configurazioni ContextHub ancora presenti nei percorsi legacy, la posizione per impostare `debug property` è `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Modalità silenziosa {#silent-mode}
 
@@ -266,16 +266,16 @@ La modalità silenziosa sopprime tutte le informazioni di debug. A differenza de
 
 Questa funzione è utile per l’istanza Publish, in cui non desideri ricevere informazioni di debug. Poiché si tratta di un’impostazione globale, viene abilitata tramite OSGi.
 
-1. Apri **Configurazione console Web Adobe Experience Manager** a `http://<host>:<port>/system/console/configMgr`
+1. Apri la **configurazione console Web Adobe Experience Manager** in `http://<host>:<port>/system/console/configMgr`
 1. Cerca **Adobe Granite ContextHub**
 1. Fai clic sulla configurazione **Adobe Granite ContextHub** per modificarne le proprietà
-1. Seleziona l’opzione **Modalità silenziosa** e fai clic su **Salva**
+1. Seleziona l&#39;opzione **Modalità silenziosa** e fai clic su **Salva**
 
 ## Ripristino delle configurazioni ContextHub dopo l&#39;aggiornamento {#recovering-contexthub-configurations-after-upgrading}
 
-Quando un [aggiornamento a AEM](/help/sites-deploying/upgrade.md) viene eseguito, le configurazioni ContextHub vengono sottoposte a backup e memorizzate in un percorso sicuro. Durante l’aggiornamento, vengono installate le configurazioni ContextHub predefinite, che sostituiscono quelle esistenti. Il backup è necessario per conservare le modifiche o le aggiunte apportate.
+Quando viene eseguito un [aggiornamento a AEM](/help/sites-deploying/upgrade.md), le configurazioni ContextHub vengono sottoposte a backup e archiviate in un percorso sicuro. Durante l’aggiornamento, vengono installate le configurazioni ContextHub predefinite, che sostituiscono quelle esistenti. Il backup è necessario per conservare le modifiche o le aggiunte apportate.
 
-Le configurazioni ContextHub sono memorizzate in una cartella denominata `contexthub` sotto i seguenti nodi:
+Le configurazioni ContextHub sono archiviate in una cartella denominata `contexthub` nei seguenti nodi:
 
 * `/conf/global/settings/cloudsettings`
 * `/conf/<tenant>/settings/cloudsettings`
@@ -285,9 +285,9 @@ Dopo un aggiornamento, il backup viene archiviato in una cartella denominata `co
 `/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` o
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
-Il `yyyymmdd` parte del nome del nodo è la data in cui è stato eseguito l’aggiornamento.
+La parte `yyyymmdd` del nome del nodo è la data in cui è stato eseguito l&#39;aggiornamento.
 
-Per recuperare le configurazioni ContextHub, utilizza CRXDE Liti per copiare i nodi che rappresentano i tuoi store, le modalità dell’interfaccia utente e i moduli dell’interfaccia utente da sotto al `default-pre-upgrade_yyyymmdd_xxxxxx` nodo al di sotto:
+Per recuperare le configurazioni ContextHub, utilizza CRXDE Lite per copiare i nodi che rappresentano gli store, le modalità dell’interfaccia utente e i moduli dell’interfaccia utente da sotto il nodo `default-pre-upgrade_yyyymmdd_xxxxxx` in sotto:
 
 * `/conf/global/settings/cloudsettings` o
 * `/conf/<tenant>/settings/cloudsettings`

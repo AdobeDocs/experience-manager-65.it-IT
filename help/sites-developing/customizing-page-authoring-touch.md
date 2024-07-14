@@ -22,18 +22,18 @@ ht-degree: 1%
 >
 >Questo documento descrive come personalizzare l’authoring delle pagine nella moderna interfaccia touch e non si applica all’interfaccia classica.
 
-Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la funzionalità di authoring delle pagine (e [console](/help/sites-developing/customizing-consoles-touch.md)) della tua istanza di authoring.
+Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la funzionalità di authoring delle pagine (e le [console](/help/sites-developing/customizing-consoles-touch.md)) dell&#39;istanza di authoring.
 
 * Clientlibs
 
-  Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare una libreria client personalizzata in `/apps.` La nuova libreria client deve:
+  Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare la tua libreria client in `/apps.`. La nuova libreria client deve:
 
    * dipende dalla libreria client di authoring `cq.authoring.editor.sites.page`
-   * fa parte del programma `cq.authoring.editor.sites.page.hook` categoria
+   * fai parte della categoria `cq.authoring.editor.sites.page.hook` appropriata
 
 * Sovrapposizioni
 
-  Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre le funzionalità standard (in `/libs`) con funzionalità personalizzate (in `/apps`). Quando si crea una sovrapposizione, non è necessaria una copia 1:1 dell&#39;originale, in quanto [sling resource merger](/help/sites-developing/sling-resource-merger.md) consente l’ereditarietà.
+  Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con la funzionalità personalizzata (in `/apps`). Durante la creazione di una sovrapposizione, non è necessaria una copia 1:1 dell&#39;originale, in quanto la [sling resource merger](/help/sites-developing/sling-resource-merger.md) consente l&#39;ereditarietà.
 
 >[!NOTE]
 >
@@ -48,30 +48,30 @@ Questi possono essere utilizzati in molti modi per estendere la funzionalità di
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
 >* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Struttura dell’interfaccia utente touch dell’AEM](/help/sites-developing/touch-ui-structure.md) per informazioni dettagliate sulle aree strutturali utilizzate per l’authoring delle pagine.
+>* [Struttura dell&#39;interfaccia utente touch dell&#39;AEM](/help/sites-developing/touch-ui-structure.md) per i dettagli delle aree strutturali utilizzate per l&#39;authoring delle pagine.
 >
 
 
 >[!CAUTION]
 >
->***Do not*** modificare qualsiasi elemento in `/libs` percorso.
+>***Non*** modificare nulla nel percorso `/libs`.
 >
->Il motivo è che il contenuto di `/libs` viene sovrascritto, la prossima volta che aggiorni l’istanza (e potrebbe anche essere sovrascritto quando applichi un hotfix o un feature pack).
+>Il motivo è che il contenuto di `/libs` viene sovrascritto la prossima volta che aggiorni l&#39;istanza (e potrebbe essere sovrascritto quando applichi un hotfix o un feature pack).
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
->1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
+>1. Ricrea l&#39;elemento richiesto (ovvero, poiché esiste in `/libs`) in `/apps`
 >1. Apporta le modifiche in `/apps`
 
 ## Aggiungi nuovo livello (modalità) {#add-new-layer-mode}
 
-Quando modifichi una pagina, sono disponibili vari [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) disponibile. Queste modalità sono implementate utilizzando [livelli](/help/sites-developing/touch-ui-structure.md#layer). Consentono di accedere a diversi tipi di funzionalità per lo stesso contenuto della pagina. I livelli standard sono: modifica, anteprima, annota, sviluppatore e targeting.
+Quando modifichi una pagina, sono disponibili varie [modalità](/help/sites-authoring/author-environment-tools.md#page-modes). Queste modalità sono implementate utilizzando [livelli](/help/sites-developing/touch-ui-structure.md#layer). Consentono di accedere a diversi tipi di funzionalità per lo stesso contenuto della pagina. I livelli standard sono: modifica, anteprima, annota, sviluppatore e targeting.
 
 ### Esempio di livello: stato Live Copy {#layer-example-live-copy-status}
 
-Un&#39;istanza AEM standard fornisce il livello MSM. Consente di accedere ai dati relativi a [gestione multisito](/help/sites-administering/msm.md) e lo evidenzia nel livello.
+Un&#39;istanza AEM standard fornisce il livello MSM. Consente di accedere ai dati relativi alla [gestione multisito](/help/sites-administering/msm.md) e di evidenziarli nel livello.
 
-Per vederlo in azione, puoi modificare qualsiasi [Copia lingua We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (o qualsiasi altra pagina live copy) e seleziona la **Stato Live Copy** modalità.
+Per vederla in azione, puoi modificare qualsiasi [copia per lingua We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (o qualsiasi altra pagina Live Copy) e selezionare la modalità **Stato Live Copy**.
 
 Puoi trovare la definizione del livello MSM (per riferimento) in:
 
@@ -86,7 +86,7 @@ CODICE SU GITHUB
 Puoi trovare il codice di questa pagina su GitHub
 
 * [Apri progetto aem-authoring-new-layer-mode su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
-* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
+* Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
 
 ## Aggiungi nuova categoria selezione al browser risorse {#add-new-selection-category-to-asset-browser}
 
@@ -94,31 +94,31 @@ Il browser Risorse mostra risorse di vari tipi/categorie (ad esempio, immagini e
 
 ### Esempio di codice {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` è un pacchetto di esempio che mostra come aggiungere un gruppo a asset finder. Questo esempio si connette a [Flickr](https://www.flickr.com)Il flusso pubblico di e li mostra nel pannello laterale.
+`aem-authoring-extension-assetfinder-flickr` è un pacchetto di esempio che mostra come aggiungere un gruppo a Asset Finder. Questo esempio si connette al flusso pubblico di [Flickr](https://www.flickr.com) e lo mostra nel pannello laterale.
 
 CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
 * [Apri il progetto aem-authoring-extension-assetfinder-flickr su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
-* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
+* Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
 
 ## Filtrare le risorse {#filtering-resources}
 
 Durante l’authoring delle pagine, l’utente deve spesso selezionare tra le risorse (ad esempio pagine, componenti e risorse). Può assumere la forma di un elenco, ad esempio, dal quale l’autore deve scegliere un elemento.
 
-Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Ad esempio, se [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) Il componente viene utilizzato per consentire all’utente di selezionare il percorso di una particolare risorsa. I percorsi presentati possono essere filtrati nel modo seguente:
+Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Ad esempio, se il componente [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) viene utilizzato per consentire all&#39;utente di selezionare il percorso di una particolare risorsa, i percorsi presentati possono essere filtrati nel modo seguente:
 
-* Implementare il predicato personalizzato implementando [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) di rete.
-* Specifica un nome per il predicato e fai riferimento a tale nome quando utilizzi il `pathbrowser`.
+* Implementare il predicato personalizzato implementando l&#39;interfaccia [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Specificare un nome per il predicato e fare riferimento a tale nome quando si utilizza `pathbrowser`.
 
 Per ulteriori dettagli sulla creazione di un predicato personalizzato, vedi [questo articolo](/help/sites-developing/implementing-custom-predicate-evaluator.md).
 
 >[!NOTE]
 >
->Implementazione di un predicato personalizzato tramite l’implementazione di `com.day.cq.commons.predicate.AbstractNodePredicate` L&#39;interfaccia di funziona anche nell&#39;interfaccia classica.
+>L&#39;implementazione di un predicato personalizzato tramite l&#39;implementazione dell&#39;interfaccia `com.day.cq.commons.predicate.AbstractNodePredicate` funziona anche nell&#39;interfaccia classica.
 >
->Consulta [questo articolo della knowledge base](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) Ad esempio, puoi implementare un predicato personalizzato nell’interfaccia classica.
+>Consulta [questo articolo della knowledge base](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) per un esempio di implementazione di un predicato personalizzato nell&#39;interfaccia classica.
 
 ## Aggiungere una nuova azione alla barra degli strumenti di un componente {#add-new-action-to-a-component-toolbar}
 
@@ -126,14 +126,14 @@ Ogni componente dispone (in genere) di una barra degli strumenti che consente di
 
 ### Esempio di codice {#code-sample-2}
 
-`aem-authoring-extension-toolbar-screenshot` è un pacchetto di esempio che mostra come creare un’azione personalizzata della barra degli strumenti per eseguire il rendering dei componenti.
+`aem-authoring-extension-toolbar-screenshot` è un pacchetto di esempio che mostra come creare un&#39;azione della barra degli strumenti personalizzata per eseguire il rendering dei componenti.
 
 CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
 * [Apri il progetto aem-authoring-extension-toolbar-screenshot su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
-* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
+* Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
 
 ## Aggiungi nuovo editor locale {#add-new-in-place-editor}
 
@@ -156,9 +156,9 @@ In un’installazione standard di AEM:
 
          * proprietà: `editorType`
 
-           Definisce il tipo di editor in linea utilizzato quando viene attivata la modifica diretta per quel componente; ad esempio, `text`, `textimage`, `image`, `title`.
+           Definisce il tipo di editor in linea utilizzato quando viene attivata la modifica diretta per quel componente, ad esempio `text`, `textimage`, `image`, `title`.
 
-1. Ulteriori dettagli di configurazione dell’editor possono essere configurati utilizzando una `config` nodo contenente configurazioni e un `plugin` per contenere i dettagli necessari della configurazione del plug-in.
+1. Ulteriori dettagli di configurazione dell&#39;editor possono essere configurati utilizzando un nodo `config` contenente configurazioni e un nodo `plugin` per contenere i dettagli di configurazione del plug-in necessari.
 
    Di seguito è riportato un esempio di definizione delle proporzioni per il plug-in di ritaglio immagine del componente immagine. A causa del potenziale delle dimensioni limitate dello schermo, le proporzioni del ritaglio sono state spostate nell’editor a schermo intero e possono essere visualizzate solo lì.
 
@@ -184,7 +184,7 @@ In un’installazione standard di AEM:
 
    >[!CAUTION]
    >
-   >I rapporti di ritaglio AEM, fissati `ratio` proprietà, sono definiti come **altezza/larghezza**. Ciò differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per ragioni di compatibilità con le versioni precedenti. Gli utenti che creano i file non noteranno alcuna differenza, purché sia stata definita la `name` chiaramente, poiché questo è ciò che viene visualizzato nell’interfaccia utente.
+   >I rapporti di ritaglio AEM, impostati dalla proprietà `ratio`, sono definiti come **altezza/larghezza**. Ciò differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per ragioni di compatibilità con le versioni precedenti. Gli utenti che creano i file non noteranno alcuna differenza, a condizione che tu definisca chiaramente la proprietà `name`, in quanto questo è ciò che viene visualizzato nell&#39;interfaccia utente.
 
 #### Creazione di un nuovo editor locale {#creating-a-new-in-place-editor}
 
@@ -214,12 +214,12 @@ CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri il progetto aem-authoring-extension-inplace-editor su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
-* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
+* [Apri il progetto aem-authoring-extension-inplace-editor in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+* Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
 
 #### Configurazione di più editor locali {#configuring-multiple-in-place-editors}
 
-È possibile configurare un componente in modo che abbia più editor locali. Quando sono configurati più editor locali, puoi selezionare il contenuto appropriato e aprire l’editor appropriato. Consulta la [Configurazione di più editor locali](/help/sites-developing/multiple-inplace-editors.md) per ulteriori informazioni.
+È possibile configurare un componente in modo che abbia più editor locali. Quando sono configurati più editor locali, puoi selezionare il contenuto appropriato e aprire l’editor appropriato. Per ulteriori informazioni, consulta la documentazione [Configurazione di più editor locali](/help/sites-developing/multiple-inplace-editors.md).
 
 ## Aggiungi un&#39;azione Nuova pagina {#add-a-new-page-action}
 
@@ -227,26 +227,26 @@ Per aggiungere una nuova azione di pagina alla barra degli strumenti della pagin
 
 ### Esempio di codice {#code-sample-3}
 
-`aem-authoring-extension-header-backtosites` è un pacchetto di esempio che mostra come creare un’azione personalizzata della barra dell’intestazione per tornare alla console Sites.
+`aem-authoring-extension-header-backtosites` è un pacchetto di esempio che mostra come creare un&#39;azione personalizzata della barra di intestazione per tornare alla console Sites.
 
 CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
 * [Apri il progetto aem-authoring-extension-header-backtosites su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
-* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
+* Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
 ## Personalizzazione del flusso di lavoro Richiesta attivazione {#customizing-the-request-for-activation-workflow}
 
-Il flusso di lavoro preconfigurato, **Richiesta di attivazione**:
+Flusso di lavoro predefinito, **Richiesta di attivazione**:
 
-* Appare automaticamente nel menu appropriato quando un autore di contenuti **non ha** i diritti di replica appropriati, ma **ha** iscrizione a DAM-Users e Authors.
+* Verrà visualizzato automaticamente nel menu appropriato quando un autore di contenuti **non dispone** dei diritti di replica appropriati, ma **non dispone di** appartenenze a DAM-Users e Author.
 
 * In caso contrario, non viene visualizzato nulla, poiché i diritti di replica sono stati rimossi.
 
-Per avere un comportamento personalizzato su tale attivazione, puoi sovrapporre il **Richiesta di attivazione** workflow:
+Per personalizzare il comportamento di questa attivazione, puoi sovrapporre il flusso di lavoro **Richiesta di attivazione**:
 
-1. In entrata `/apps` sovrapporre **Sites** procedura guidata:
+1. In `/apps` sovrapporre la procedura guidata **Sites**:
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -256,5 +256,5 @@ Per avere un comportamento personalizzato su tale attivazione, puoi sovrapporre 
    >
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
-1. Aggiornare il [modello di flusso di lavoro](/help/sites-developing/workflows-models.md) e configurazioni/script correlati, in base alle esigenze.
-1. Rimuovi il diritto al [`replicate` azione](/help/sites-administering/security.md#actions) da tutti gli utenti appropriati per tutte le pagine rilevanti; affinché questo flusso di lavoro venga attivato come azione predefinita quando uno qualsiasi degli utenti tenta di pubblicare (o replicare) una pagina.
+1. Aggiornare il [modello di flusso di lavoro](/help/sites-developing/workflows-models.md) e le configurazioni/script correlati in base alle esigenze.
+1. Rimuovere il diritto all&#39;azione [`replicate`](/help/sites-administering/security.md#actions) da tutti gli utenti appropriati per tutte le pagine rilevanti; per attivare questo flusso di lavoro come azione predefinita quando uno degli utenti tenta di pubblicare (o replicare) una pagina.

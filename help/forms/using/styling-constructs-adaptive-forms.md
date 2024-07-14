@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Costrutti di stile per i moduli adattivi{#styling-constructs-for-adaptive-forms}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Prerequisiti {#prerequisites}
 
@@ -25,7 +25,7 @@ Conoscenza del CSS e del framework LESS.
 
 ## Cosa può essere personalizzato {#what-can-be-customized}
 
-Nell’articolo sono elencate le classi css di moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per assegnare stili a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizza questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non sei in grado di assegnare stili ai componenti utilizzando [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+Nell’articolo sono elencate le classi css di moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per assegnare stili a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizzare questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non è possibile assegnare uno stile ai componenti utilizzando [editor tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizzazione degli stili nei moduli adattivi {#customizing-styles-in-adaptive-forms}
 
@@ -140,7 +140,7 @@ I campi includono etichette, widget, descrizioni della Guida (descrizione lunga 
 
 ## Stile etichetta {#label-styling}
 
-L’elemento HTML **etichetta** utilizzato per il campo include le classi **left** o **top** a seconda che l’etichetta sia in alto o a sinistra.
+L&#39;elemento HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o a sinistra.
 
 <table>
  <tbody>
@@ -180,11 +180,11 @@ L’elemento HTML **etichetta** utilizzato per il campo include le classi **left
  </tbody>
 </table>
 
-Le regole CSS per l’etichetta vengono applicate utilizzando **guideFieldLabel** etichetta. Se sei un autore, sovrascrivi questa regola per rendere visibili le modifiche personalizzate.
+Le regole CSS per l&#39;etichetta vengono applicate utilizzando l&#39;etichetta **guideFieldLabel**. Se sei un autore, sovrascrivi questa regola per rendere visibili le modifiche personalizzate.
 
 ## Stile widget {#widgets-styling}
 
-A seconda del tipo, i widget includono anche classi. Di solito, i widget includono `guideFieldWidget` classe. I widget forniti con HTML normalmente utilizzano l’input e la selezione standard dell’elemento HTML. Lo stile viene eseguito di conseguenza. Non è possibile assegnare uno stile a un widget personalizzato modificando le variabili.
+A seconda del tipo, i widget includono anche classi. Di solito, i widget includono la classe `guideFieldWidget`. I widget forniti con HTML normalmente utilizzano l’input e la selezione standard dell’elemento HTML. Lo stile viene eseguito di conseguenza. Non è possibile assegnare uno stile a un widget personalizzato modificando le variabili.
 
 <table>
  <tbody>
@@ -331,7 +331,7 @@ Un autore può specificare il contenuto della Guida nei campi utilizzando i comp
 
 ## Termini e condizioni {#terms-and-conditions}
 
-I Termini e Condizioni (TnC `` ``) consente di specificare termini e condizioni. È possibile personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
+Il widget Termini e condizioni (TnC `` ``) consente di specificare termini e condizioni. È possibile personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
 
 <table>
  <tbody>
@@ -354,7 +354,7 @@ I Termini e Condizioni (TnC `` ``) consente di specificare termini e condizioni.
 
 I pulsanti sono anche widget. Tuttavia, il loro stile è leggermente diverso dai widget. Nei moduli adattivi, costituisce un pulsante uno dei seguenti elementi:
 
-* input[type = text]
+* input[tipo = testo]
 * pulsante
 * element con classe .button
 
@@ -641,7 +641,7 @@ Di seguito è riportato il codice HTML per l&#39;elemento tab navigator (simile 
 
 `</div>`
 
-È possibile modificare lo stile del navigatore utilizzando le regole CSS che selezionano gli elementi utilizzando **discendente** selettori. Ad esempio, per aggiungere uno stile di decorazione del testo al tag di ancoraggio:
+È possibile modificare lo stile del navigatore utilizzando le regole CSS che selezionano gli elementi utilizzando i selettori **discendenti**. Ad esempio, per aggiungere uno stile di decorazione del testo al tag di ancoraggio:
 
 Navigatore schede in alto:
 
@@ -721,7 +721,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita per i navigatori delle 
 
 >[!NOTE]
 >
->Per modificare l’icona di un particolare navigatore, fornisci una classe CSS nel pannello in authoring, esempio di modulo &lt;class_name>. Aggiungi un **&lt;class_name>_nav** per l&#39;icona del navigatore.
+>Per modificare l’icona di un particolare navigatore, fornisci una classe CSS nel pannello in authoring, ad esempio &lt;CLASS_NAME>. Aggiungere **&lt;NOME_CLASSE>_nav** per l&#39;icona del navigatore.
 
 <table>
  <tbody>
@@ -942,7 +942,7 @@ Un pannello include una barra degli strumenti facoltativa e il relativo contenut
  </tbody>
 </table>
 
-Il nodo del pannello è diviso in navigatori e contenuti. Lì `` `` non è un componente di stile separato per il contenuto. Le variabili descritte vengono applicate al navigatore e al contenuto.
+Il nodo del pannello è diviso in navigatori e contenuti. `` `` non è presente alcun componente di stile separato per il contenuto. Le variabili descritte vengono applicate al navigatore e al contenuto.
 
 Il pannello più in alto (RootPanel) non ha questa classe.
 
@@ -1076,7 +1076,7 @@ Queste variabili nella tabella seguente influenzano il layout della barra degli 
 
 ## Variabile specifica per il tema {#theme-specific-variable}
 
-Il **Iscrizione semplice** theme in /etc/clientlibs/fd/af/guidetheme/simpleEnrollment e la categoria `guide.theme.simpleEnrollment` introduce anche alcune variabili. Se desideri creare un’iscrizione semplice per l’ottimizzazione del tema, puoi utilizzare le seguenti &quot;variabili aggiuntive:
+Anche il tema **Iscrizione semplice** in /etc/clientlibs/fd/af/guidetheme/simpleEnrollment e la categoria `guide.theme.simpleEnrollment` introducono alcune variabili. Se desideri creare un’iscrizione semplice per l’ottimizzazione del tema, puoi utilizzare le seguenti &quot;variabili aggiuntive:
 
 <table>
  <tbody>

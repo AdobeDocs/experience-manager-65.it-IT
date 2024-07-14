@@ -44,19 +44,19 @@ I risultati della ricerca di un&#39;attività vengono visualizzati nella pagina 
 
 Le attività vengono visualizzate con le seguenti informazioni:
 
-**ID attività:** Numero intero positivo assegnato dal flusso di lavoro dei moduli quando viene creata un&#39;istanza dell&#39;attività (avviata da un utente). È possibile utilizzare questo identificatore per tenere traccia dell&#39;attività durante il relativo ciclo di vita. Fare clic su un ID attività per visualizzare i dettagli sulla cronologia dell&#39;attività o per riassegnare l&#39;attività a un altro utente.
+**ID attività:** Il numero intero positivo assegnato dal flusso di lavoro dei moduli quando viene creata un&#39;istanza dell&#39;attività (avviata da un utente). È possibile utilizzare questo identificatore per tenere traccia dell&#39;attività durante il relativo ciclo di vita. Fare clic su un ID attività per visualizzare i dettagli sulla cronologia dell&#39;attività o per riassegnare l&#39;attività a un altro utente.
 
-**Stato:** Assegnato significa che l&#39;attività è attualmente assegnata all&#39;utente. Non assegnato significa che l’attività è stata precedentemente assegnata all’utente. Lo stato può anche essere Completato.
+**Stato:** assegnato indica che l&#39;attività è attualmente assegnata all&#39;utente. Non assegnato significa che l’attività è stata precedentemente assegnata all’utente. Lo stato può anche essere Completato.
 
-**Attività:** Visualizza il modulo e il nome di un&#39;operazione iniziale o dell&#39;operazione di processo che ha generato l&#39;operazione.
+**Attività:** mostra il modulo e il nome per un&#39;operazione iniziale o l&#39;operazione di processo che ha generato l&#39;attività.
 
 **ID processo:** Questo numero intero positivo assegnato dal flusso di lavoro dei moduli quando viene creata un&#39;istanza del processo, ovvero quando un utente o un passaggio automatico avvia un processo. È possibile utilizzare questo identificatore per tenere traccia dell&#39;istanza di processo durante il relativo ciclo di vita.
 
-**Nome processo - Versione:** Il nome del processo, come definito in Workbench.
+**Nome processo - Versione:** Il nome del processo definito in Workbench.
 
-**Applicazione:** Il nome dell’applicazione a cui appartiene il processo, come definito in Workbench.
+**Applicazione:** il nome dell&#39;applicazione a cui appartiene il processo, come definito in Workbench.
 
-**Data di creazione:** Data e ora di creazione dell&#39;attività.
+**Data di creazione:** La data e l&#39;ora di creazione dell&#39;attività.
 
 ## Visualizzazione della cronologia delle attività e riassegnazione delle attività {#viewing-task-history-and-reassigning-tasks}
 
@@ -64,29 +64,29 @@ Nella pagina Cronologia attività viene visualizzato un elenco degli utenti e de
 
 Per ogni assegnazione di attività, l&#39;elenco mostra le informazioni seguenti:
 
-**Nome:** Nome dell&#39;utente.
+**Nome:** il nome dell&#39;utente.
 
-**Stato:** Assegnato significa che l’attività è attualmente assegnata all’utente. Non assegnato significa che l’attività è stata precedentemente assegnata all’utente.
+**Stato:** assegnato indica che l&#39;attività è attualmente assegnata all&#39;utente. Non assegnato significa che l’attività è stata precedentemente assegnata all’utente.
 
-**ID Worklist:** Identificatore numerico della coda utente a cui appartiene l&#39;operazione. Un processo può essere condiviso tra più utenti.
+**ID Worklist:** l&#39;identificatore numerico della coda utente a cui appartiene l&#39;attività. Un processo può essere condiviso tra più utenti.
 
-**Tipo:** Indica la modalità di assegnazione dell&#39;attività:
+**Tipo:** Indica come è stata assegnata l&#39;attività:
 
-**Iniziale:** L’utente è stato originariamente assegnato all’attività.
+**Iniziale:** all&#39;utente è stata originariamente assegnata l&#39;attività.
 
 **Inoltra:** Il proprietario dell&#39;attività originale ha assegnato l&#39;attività a un altro utente.
 
-**Rifiuta:** Un&#39;attività inoltrata è stata rifiutata oppure un&#39;attività è stata restituita a un elenco di lavoro senza essere stata completata.
+**Rifiuto:** un&#39;attività inoltrata è stata rifiutata oppure un&#39;attività è stata restituita a un elenco lavori senza essere stata completata.
 
-**Attestazione:** L&#39;utente ha richiesto l&#39;attività in un elenco lavori condiviso.
+**Attestazione:** l&#39;utente ha richiesto l&#39;attività in un elenco lavori condiviso.
 
-**Escalation:** È trascorso un tempo predeterminato (come impostato nell’azione utente in Workbench) senza interazione da parte dell’utente e l’attività è stata assegnata a un altro utente.
+**Riassegnazione:** È trascorso un tempo predeterminato (come impostato nell&#39;azione utente in Workbench) senza interazione da parte dell&#39;utente e l&#39;attività è stata assegnata a un altro utente.
 
-**Consulta:** Il proprietario dell&#39;attività ha inoltrato l&#39;attività a un altro utente per consultazione, che può aprire il modulo, salvare i dati, modificare gli allegati e le note, ma non può completare il passaggio. L&#39;utente deve restituire l&#39;attività al proprietario dell&#39;attività che ha consultato l&#39;utente.
+**Consultare:** Il proprietario dell&#39;attività ha inoltrato l&#39;attività a un altro utente per consultazione, che può aprire il modulo, salvare i dati, modificare gli allegati e le note, ma non può completare il passaggio. L&#39;utente deve restituire l&#39;attività al proprietario dell&#39;attività che ha consultato l&#39;utente.
 
-**Riassegnazione amministratore:** L&#39;attività è stata riassegnata da un amministratore.
+**Riassegnazione amministratore:** l&#39;attività è stata riassegnata da un amministratore.
 
-**Data assegnazione:** Data e ora in cui l&#39;attività è stata assegnata all&#39;utente.
+**Data assegnazione:** La data e l&#39;ora in cui l&#39;attività è stata assegnata all&#39;utente.
 
 ### Assegnazione di un nuovo utente a un&#39;attività {#assigning-a-new-user-to-a-task}
 

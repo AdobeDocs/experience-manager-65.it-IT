@@ -22,7 +22,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->Nelle tabelle seguenti, per le combinazioni di tasti nella **Scelta rapida** , i tasti Ctrl e Comando funzionano su macOS.
+>Nelle tabelle seguenti, per le combinazioni di tasti nella colonna **Collegamento**, i tasti Ctrl e Comando funzionano entrambi in macOS.
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forza menu di scelta rapida predefinito (browser).<br /> <strong>Nota:</strong> I menu di scelta rapida dell’AEM sono disponibili solo nell’interfaccia classica.</td>
+   <td>Forza menu di scelta rapida predefinito (browser).<br /> <strong>Nota:</strong> i menu di scelta rapida AEM si trovano solo nell'interfaccia classica.</td>
   </tr>
   <tr>
    <td> </td>
@@ -142,7 +142,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
    <td>Chiudete il livello dei suggerimenti.</td>
   </tr>
   <tr>
-   <td>Content Finder<br /> </td>
+   <td>Finder contenuti<br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
    <td><p>Trascina le risorse, rilasciale sulla destinazione.</p> <p>L’azione di rilascio genera un nuovo paragrafo; anziché sostituire la risorsa nella destinazione.</p> </td>
   </tr>
@@ -164,7 +164,7 @@ Sono disponibili scelte rapide da tastiera aggiuntive per gli sviluppatori deskt
   </tr>
   <tr>
    <td>Modalità di modifica</td>
-   <td>Imposta il seguente suffisso nell’URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizza:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Impostare il seguente suffisso nell'URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizzare:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Per visualizzare le statistiche di tempo per il caricamento della pagina.</td>
   </tr>
  </tbody>

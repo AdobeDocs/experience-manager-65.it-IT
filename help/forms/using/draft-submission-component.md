@@ -24,16 +24,16 @@ Il componente Bozze e invii elenca tutti i moduli in stato di bozza e quelli gi�
 
 Il componente Bozze e invii dispone di due schede: Bozze e Invii.
 
-Per consentire la visualizzazione dell’invio di un modulo adattivo nella scheda invii, imposta **Azione di invio** a **[Azione di invio Forms Portal](../../forms/using/configuring-submit-actions.md). In alternativa:** abilita l’opzione Invio di Forms Portal. Ogni volta che un utente invia il modulo, questo viene aggiunto alla scheda Invii.
+Per abilitare l&#39;invio di un modulo adattivo nella scheda Invii, impostare **Azione invio** su **[Azione invio portale Forms](../../forms/using/configuring-submit-actions.md). In alternativa,** abilita l&#39;opzione di invio di Forms Portal. Ogni volta che un utente invia il modulo, questo viene aggiunto alla scheda Invii.
 
-La funzionalità delle bozze è attivata come funzionalità integrata. Quando un utente fa clic su **Salva** in un modulo adattivo, il modulo viene aggiunto alla scheda bozze.
+La funzionalità delle bozze è attivata come funzionalità integrata. Quando un utente fa clic su **Salva** in un modulo adattivo, il modulo viene aggiunto alla scheda delle bozze.
 
 Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti operazioni:
 
-1. Trascina la selezione **Bozze e invii** nella categoria Servizi basati su documenti, nel browser Componenti di sulla pagina.
-1. Seleziona il componente, quindi fai clic su ![icona_impostazioni](assets/settings_icon.png) per aprire la finestra di dialogo Modifica del componente.
+1. Trascina il componente **Bozze e invii** nella categoria Servizi basati su documenti nel browser componenti sulla pagina.
+1. Seleziona il componente, quindi fai clic su ![settings_icon](assets/settings_icon.png) per aprire la finestra di dialogo Modifica del componente.
 
-   ![Componente Bozze e invio](assets/drafts-submissions-edit.png)
+   ![Componente bozze e invio](assets/drafts-submissions-edit.png)
 
 1. Nella finestra di dialogo Modifica, specifica i dettagli seguenti e seleziona **Fine** per salvare le impostazioni.
 
@@ -47,22 +47,22 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
   <tr>
    <td>Generale</td>
    <td>Risultato totale</td>
-   <td>Specifica il numero massimo di risultati da visualizzare. Se il conteggio dei risultati aumenta il limite dei risultati totali, viene <strong>Altro </strong>nella parte inferiore del componente. Clic <strong>Altro </strong>mostra tutti i moduli. </td>
+   <td>Specifica il numero massimo di risultati da visualizzare. Se il conteggio dei risultati aumenta il limite di risultati totali, nella parte inferiore del componente viene visualizzato un collegamento <strong>Altro </strong>. Facendo clic su <strong>Altri </strong> vengono visualizzati tutti i moduli. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Tipo di stile</td>
-   <td>Specifica lo stile del componente. È possibile specificare <strong>Nessuno stile</strong>, <strong>Stile predefinito</strong>, o <strong>Stile personalizzato</strong> per l’elenco dei moduli. Per l’opzione Stile personalizzato, puoi specificare il percorso del file CSS personalizzato nel file <strong>Percorso stile personalizzato </strong>campo<strong>.</strong></td>
+   <td>Specifica lo stile del componente. È possibile specificare <strong>Nessuno stile</strong>, <strong>Stile predefinito</strong> o <strong>Stile personalizzato</strong> per l'elenco dei moduli. Per l'opzione di stile personalizzato, puoi specificare il percorso del file CSS personalizzato nel <strong>campo Percorso di stile personalizzato </strong>campo<strong>.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Percorso stile personalizzato</td>
-   <td>Se si sceglie <strong>Stile personalizzato</strong> opzione in <strong>Tipo di stile</strong> , utilizza il <strong>Percorso stile personalizzato</strong> per specificare il percorso del file CSS personalizzato. </td>
+   <td>Se scegli l'opzione <strong>Stile personalizzato</strong> nel campo <strong>Tipo di stile</strong>, utilizza il campo <strong>Percorso di stile personalizzato</strong> per specificare il percorso del file CSS personalizzato. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Opzioni di visualizzazione</td>
-   <td><p>Specifica le schede da visualizzare. È possibile scegliere di visualizzare i moduli bozza, i moduli inviati o entrambi. </p> <p><strong>Nota</strong>:<em> Per <strong>Opzioni di visualizzazione</strong>, se selezioni un’opzione diversa da <strong>Entrambi</strong>, il <strong>Scheda predefinita</strong> opzione di campo non utilizzata.</em></p> </td>
+   <td><p>Specifica le schede da visualizzare. È possibile scegliere di visualizzare i moduli bozza, i moduli inviati o entrambi. </p> <p><strong>Nota</strong>:<em> Per <strong>Opzioni di visualizzazione</strong>, se selezioni un'opzione diversa da <strong>Entrambi</strong>, l'opzione di campo <strong>Linguetta predefinita</strong> non viene utilizzata.</em></p> </td>
   </tr>
   <tr>
    <td> </td>
@@ -72,7 +72,7 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
   <tr>
    <td>Bozza configurazione scheda Forms</td>
    <td>Titolo personalizzato</td>
-   <td>Specifica il titolo del <strong>Bozza di Forms</strong> scheda. Il valore predefinito è <strong>Draft Forms.</strong></td>
+   <td>Specifica il titolo della scheda <strong>Bozza di Forms</strong>. Il valore predefinito è <strong>Bozza di Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -82,12 +82,12 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
   <tr>
    <td>Configurazione scheda Forms inviata</td>
    <td>Titolo personalizzato </td>
-   <td>Specifica il titolo del <strong>Forms inviato </strong>scheda. Il valore predefinito è <strong>Inviato Forms.</strong></td>
+   <td>Specifica il titolo della scheda </strong> di Forms <strong>Inviato. Il valore predefinito è <strong>Forms inviato.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Modello di layout</td>
-   <td>Specifica il layout da utilizzare per il Forms inviato<strong> </strong>elenco. </td>
+   <td>Specifica il layout da utilizzare per l'elenco </strong> di Forms<strong> inviato. </td>
   </tr>
  </tbody>
 </table>
@@ -98,9 +98,9 @@ Quando si utilizza l’azione di invio Forms Portal o si abilita l’opzione Mem
 
 Il portale Forms consente di archiviare i dati nell&#39;archivio AEM locale, nell&#39;archivio AEM remoto o in un database. AEM Forms consente di personalizzare l’implementazione della memorizzazione dei dati utente per le bozze e gli invii. È possibile sovrascrivere i metodi predefiniti per specificare in che modo i dati relativi a bozze e invii vengono memorizzati in un archivio scelto. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
 
-Forms portal fornisce servizi pronti all’uso (API) per memorizzare i dati sull’archivio crx delle istanze di pubblicazione AEM Forms locali e remote. Puoi sostituire le implementazioni predefinite, descritte in [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md) con implementazioni personalizzate per sostituire le funzionalità predefinite. Per informazioni dettagliate sui metodi necessari in un’implementazione personalizzata per memorizzare il contenuto in una posizione protetta, consulta [Personalizzazione dei servizi dati per bozze e invii](/help/forms/using/custom-draft-submission-data-services.md) e [Archiviazione personalizzata per il componente Bozze e invii.](/help/forms/using/adding-custom-storage-provider-forms.md)
+Forms portal fornisce servizi pronti all’uso (API) per memorizzare i dati sull’archivio crx delle istanze di pubblicazione AEM Forms locali e remote. È possibile sostituire le implementazioni predefinite, descritte nell&#39;articolo [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md), con implementazioni personalizzate per sostituire le funzionalità predefinite. Per informazioni dettagliate sui metodi necessari in un&#39;implementazione personalizzata per archiviare il contenuto in una posizione protetta, vedere [Personalizzazione dei servizi dati per bozze e invii](/help/forms/using/custom-draft-submission-data-services.md) e [Archiviazione personalizzata per le bozze e i componenti per invii.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-La documentazione di AEM Forms fornisce [Esempio per integrare il componente Bozze e invii con il database](integrate-draft-submission-database.md). Puoi utilizzare l’implementazione di esempio per sviluppare un’implementazione personalizzata.
+La documentazione di AEM Forms fornisce un [esempio per integrare il componente Bozze e invii con il database](integrate-draft-submission-database.md). Puoi utilizzare l’implementazione di esempio per sviluppare un’implementazione personalizzata.
 
 ## Articoli correlati
 

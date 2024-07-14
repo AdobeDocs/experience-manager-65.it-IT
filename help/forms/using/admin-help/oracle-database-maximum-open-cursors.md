@@ -18,4 +18,4 @@ ht-degree: 0%
 
 # Oracle di soglia dei cursori aperti massimi nel database {#oracle-database-maximum-open-cursors-threshold}
 
-Per configurare un valore massimo per i cursori aperti in Oracle, potrebbe essere necessario regolare tale valore su un numero appropriato per l&#39;applicazione. È evidente che sotto un carico moderato, i cursori medi aperti erano 2700. Si consiglia di iniziare con un limite massimo di 3000. Per ulteriori informazioni, consulta [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Per configurare un valore massimo per i cursori aperti in Oracle, potrebbe essere necessario regolare tale valore su un numero appropriato per l&#39;applicazione. È evidente che sotto un carico moderato, i cursori medi aperti erano 2700. Si consiglia di iniziare con un limite massimo di 3000. Per ulteriori informazioni, visitare il sito Web [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).

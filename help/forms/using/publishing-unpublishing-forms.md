@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Pubblicazione e annullamento della pubblicazione di moduli e documenti{#publishing-and-unpublishing-forms-and-documents}
 
-AEM Forms consente di creare, pubblicare e annullare facilmente la pubblicazione di moduli. Per ulteriori informazioni su AEM Forms, consulta [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
+AEM Forms consente di creare, pubblicare e annullare facilmente la pubblicazione di moduli. Per ulteriori informazioni su AEM Forms, vedere [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
 
-Il server AEM Forms fornisce due istanze: Author e Publish. L’istanza di authoring è per la creazione e la gestione di risorse e risorse del modulo. L’istanza di Publish serve a mantenere le risorse e le risorse correlate disponibili per gli utenti finali. Puoi importare XDP e PDF forms in modalità Creazione. Per ulteriori informazioni, consulta [Recupero documenti XDP e PDF in AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
+Il server AEM Forms fornisce due istanze: Author e Publish. L’istanza di authoring è per la creazione e la gestione di risorse e risorse del modulo. L’istanza di Publish serve a mantenere le risorse e le risorse correlate disponibili per gli utenti finali. Puoi importare XDP e PDF forms in modalità Creazione. Per ulteriori informazioni, vedere [Recupero di documenti XDP e PDF in AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
 ## Risorse supportate   {#supported-assets-nbsp}
 
@@ -59,8 +59,8 @@ Il Forms adattivo può utilizzare alcune configurazioni, impostazioni e personal
 
 Una risorsa può avere i seguenti stati:
 
-* **Non più pubblicato:** Una risorsa che non è mai stata pubblicata (lo stato non pubblicato è applicabile solo alle risorse Forms). Le risorse di Gestione della corrispondenza non dispongono di uno stato Non pubblicato.)
-* **Pubblicato**: risorsa pubblicata e disponibile nell’istanza Publish
+* **Non pubblicato:** risorsa mai pubblicata (lo stato non pubblicato è applicabile solo alle risorse Forms). Le risorse di Gestione della corrispondenza non dispongono di uno stato Non pubblicato.)
+* **Pubblicato**: risorsa pubblicata e disponibile nell&#39;istanza di Publish
 * **Modificato**: risorsa modificata dopo la pubblicazione
 
 ## Publish una risorsa {#publish-an-asset}
@@ -68,25 +68,25 @@ Una risorsa può avere i seguenti stati:
 1. Accedi al server AEM Forms.
 1. Per selezionare e pubblicare una risorsa, effettua una delle seguenti operazioni.
 
-   1. Sposta il puntatore su una risorsa e seleziona **[!UICONTROL Pubblica]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. Sposta il puntatore su una risorsa e seleziona **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
    1. Effettua una delle seguenti operazioni, quindi seleziona Publish:
 
-      * Nella vista a schede, seleziona **[!UICONTROL Inserisci selezione]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)e seleziona la risorsa. La risorsa è selezionata.
+      * Se ti trovi nella vista a schede, seleziona **[!UICONTROL Inserisci selezione]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e seleziona la risorsa. La risorsa è selezionata.
       * Nella vista a elenco, seleziona la casella di controllo di una risorsa. La risorsa è selezionata.
       * Seleziona una risorsa per visualizzarne i dettagli.
-      * Visualizzare le proprietà di una risorsa toccando Visualizza proprietà ![viewproperties](assets/viewproperties.png).
+      * Per visualizzare le proprietà di una risorsa, tocca Visualizza proprietà ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >Non selezionare più risorse. La pubblicazione di più risorse contemporaneamente non è supportata.
 
-1. All’avvio del processo Publish, viene visualizzata una finestra di dialogo di conferma in cui sono elencate tutte le risorse e le risorse correlate. Nella finestra di dialogo che contiene le risorse correlate, seleziona **[!UICONTROL Pubblica]**. La risorsa viene pubblicata e viene visualizzata la finestra di dialogo Publish Assets Success.
+1. All’avvio del processo Publish, viene visualizzata una finestra di dialogo di conferma in cui sono elencate tutte le risorse e le risorse correlate. Nella finestra di dialogo che contiene le risorse correlate, seleziona **[!UICONTROL Publish]**. La risorsa viene pubblicata e viene visualizzata la finestra di dialogo Publish Assets Success.
 
    >[!NOTE]
    >
    >Per i moduli adattivi viene visualizzato anche il nome della pagina Modulo adattivo, insieme alle relative risorse.
 
-   ![Una finestra di dialogo di conferma con tutte le risorse e le risorse correlate](assets/p4.png)
+   ![Finestra di dialogo di conferma con tutte le risorse e le risorse correlate](assets/p4.png)
 
    Una finestra di dialogo di conferma con tutte le risorse e le risorse correlate.
 
@@ -96,9 +96,9 @@ Una risorsa può avere i seguenti stati:
 
    Dopo la pubblicazione di una risorsa, le proprietà dei metadati della risorsa vengono copiate nell’istanza di Publish e lo stato della risorsa viene modificato in Pubblicato. Anche lo stato delle risorse dipendenti pubblicate viene modificato in Pubblicato.
 
-   Dopo aver pubblicato una risorsa, puoi utilizzare il portale Forms per visualizzare tutte le risorse su una pagina web. Per ulteriori informazioni, consulta [Introduzione alla pubblicazione di moduli su un portale](../../forms/using/introduction-publishing-forms.md).
+   Dopo aver pubblicato una risorsa, puoi utilizzare il portale Forms per visualizzare tutte le risorse su una pagina web. Per ulteriori informazioni, vedere [Introduzione alla pubblicazione di moduli su un portale](../../forms/using/introduction-publishing-forms.md).
 
-## Publish: tutte le risorse di gestione della corrispondenza {#publish-all-the-correspondence-management-assets}
+## Publish tutto l’Assets per la gestione della corrispondenza {#publish-all-the-correspondence-management-assets}
 
 AEM Forms consente di pubblicare tutte le risorse di Gestione della corrispondenza su un server in un’unica operazione. Le risorse pubblicate includono tutte le risorse di Gestione della corrispondenza e le relative dipendenze.
 
@@ -106,48 +106,48 @@ Per pubblicare tutte le risorse di Gestione della corrispondenza su un server, c
 
 1. Accedi al server AEM Forms.
 1. Seleziona **Adobe Experience Manager** nella barra di navigazione globale.
-1. Seleziona ![strumenti](assets/tools.png)e quindi selezionare **Forms**.
-1. Seleziona **Risorse di gestione della corrispondenza Publish**.
+1. Selezionare ![strumenti](assets/tools.png), quindi **Forms**.
+1. Selezionare **Publish Correspondence Management Assets**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   Viene visualizzata la pagina Publish All Correspondence Management Assets (Tutte le risorse di gestione della corrispondenza di Publish) con le informazioni relative all&#39;ultimo tentativo di elaborazione di Correspondence Management Assets.
+   Viene visualizzata la pagina Publish All Correspondence Management Assets, in cui sono riportate le informazioni relative all&#39;ultimo tentativo di eseguire il processo Publish Correspondence Management Assets.
 
-   ![publish-last-run-details](assets/publish-last-run-details.png)
+   ![dettagli-ultima-pubblicazione](assets/publish-last-run-details.png)
 
-1. Seleziona **Pubblica** e nel messaggio di conferma seleziona **OK**.
+1. Selezionare **Publish** e nel messaggio di conferma selezionare **OK**.
 
    Al termine di un processo batch, è possibile visualizzare i dettagli dell&#39;ultima esecuzione. Ciò include informazioni quali l’accesso dell’amministratore e se l’esecuzione del batch è riuscita o meno.
 
    >[!NOTE]
    >
-   >Una volta avviato, il processo Publish non può essere annullato. Inoltre, quando è in corso l’operazione Publish, non creare, eliminare, modificare o pubblicare risorse né avviare l’operazione Esporta tutte le risorse di gestione della corrispondenza.
+   >Una volta avviato, il processo Publish non può essere annullato. Inoltre, quando è in corso l’operazione Publish, non creare, eliminare, modificare o pubblicare risorse né avviare l’operazione Esporta tutta la corrispondenza di Assets.
 
 ## Automatizzare la pubblicazione e l&#39;annullamento della pubblicazione per Forms e documenti {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-AEM Forms consente di pianificare la pubblicazione e l’annullamento della pubblicazione delle risorse per Forms e documenti. Puoi specificare la pianificazione nell’Editor metadati. Per ulteriori informazioni sulla gestione dei metadati del modulo, consulta [Gestione dei metadati del modulo.](../../forms/using/manage-form-metadata.md)
+AEM Forms consente di pianificare la pubblicazione e l’annullamento della pubblicazione delle risorse per Forms e documenti. Puoi specificare la pianificazione nell’Editor metadati. Per ulteriori informazioni sulla gestione dei metadati del modulo, vedere [Gestione dei metadati del modulo.](../../forms/using/manage-form-metadata.md)
 
 Per pianificare la data e l’ora di pubblicazione e di annullamento della pubblicazione delle risorse di Forms e Documents, segui la procedura riportata di seguito:
 
-1. Seleziona una risorsa e fai clic **[!UICONTROL Visualizza proprietà]**. Viene visualizzata la pagina Proprietà metadati.
-1. Nella pagina Proprietà metadati, seleziona **[!UICONTROL Avanzate]** e quindi selezionare **[!UICONTROL Modifica]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. In **[!UICONTROL Ora di attivazione Publish]** e **[!UICONTROL Ora di disattivazione Publish]** , selezionare la data e l&#39;ora.\
+1. Selezionare una risorsa e selezionare **[!UICONTROL Visualizza proprietà]**. Viene visualizzata la pagina Proprietà metadati.
+1. Nella pagina Proprietà metadati, selezionare **[!UICONTROL Avanzate]**, quindi selezionare **[!UICONTROL Modifica]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Selezionare la data e l&#39;ora nei campi **[!UICONTROL Ora di attivazione Publish]** e **[!UICONTROL Ora di disattivazione Publish]**.\
    Seleziona **[!UICONTROL Fine]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Annullare la pubblicazione di una risorsa {#unpublish-an-asset}
 
-1. Seleziona una risorsa pubblicata e fai clic su **[!UICONTROL Annulla pubblicazione]** ![annulla pubblicazione](assets/unpublish.png).
+1. Seleziona una risorsa pubblicata e seleziona **[!UICONTROL Annulla pubblicazione]** ![Annulla pubblicazione](assets/unpublish.png).
 1. Per selezionare e annullare la pubblicazione di una risorsa, utilizza una delle seguenti opzioni.
 
-   1. Sposta il puntatore su una risorsa e seleziona **[!UICONTROL Annulla pubblicazione]** ![annulla pubblicazione](assets/unpublish.png).
+   1. Sposta il puntatore su una risorsa e seleziona **[!UICONTROL Annulla pubblicazione]** ![Annulla pubblicazione](assets/unpublish.png).
    1. Effettua una delle seguenti operazioni, quindi seleziona Annulla pubblicazione:
 
-      * Nella vista a schede, seleziona **[!UICONTROL Inserisci selezione]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)e seleziona la risorsa. La risorsa è selezionata.
+      * Se ti trovi nella vista a schede, seleziona **[!UICONTROL Inserisci selezione]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e seleziona la risorsa. La risorsa è selezionata.
 
-      * Nella vista a elenco, passa il puntatore del mouse su una risorsa e seleziona ![selectassetcheckmark](assets/selectassetcheckmark.png) . La risorsa è selezionata.
+      * Se ti trovi nella vista a elenco, passa il cursore su una risorsa e seleziona ![selectassetcheckmark](assets/selectassetcheckmark.png) . La risorsa è selezionata.
 
       * Seleziona una risorsa per visualizzarne i dettagli.
-      * Visualizzare le proprietà di una risorsa toccando Visualizza proprietà ![viewproperties](assets/viewproperties.png).
+      * Per visualizzare le proprietà di una risorsa, tocca Visualizza proprietà ![viewproperties](assets/viewproperties.png).
 
 1. All’avvio del processo di annullamento della pubblicazione, viene visualizzata una finestra di dialogo di conferma. Seleziona **[!UICONTROL Annulla pubblicazione]**.
 
@@ -163,7 +163,7 @@ Ogni volta che si pubblica una risorsa o una lettera dopo averla modificata, vie
 >
 >Non ripristinare lo stato dell&#39;ultima lettera pubblicata se una risorsa dipendente utilizzata in tale lettera viene eliminata dal sistema.
 
-1. Seleziona una risorsa e fai clic **[!UICONTROL Ripristina la versione precedentemente pubblicata]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Seleziona una risorsa e seleziona **[!UICONTROL Ripristina versione precedentemente pubblicata]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
 1. Prima di ripristinare la risorsa, viene visualizzata una finestra di dialogo di conferma. Seleziona **[!UICONTROL Ripristina]**.
 
    Viene eseguito il rollback della risorsa o della lettera alla versione precedentemente pubblicata.
@@ -174,17 +174,17 @@ Ogni volta che si pubblica una risorsa o una lettera dopo averla modificata, vie
 >
 >Quando si elimina una risorsa, questa viene rimossa dall’istanza di pubblicazione. Quando si elimina una risorsa, viene rimossa anche la cronologia delle versioni, ad eccezione della versione di base.
 
-1. Seleziona una risorsa e fai clic **[!UICONTROL Elimina]** ![eliminare](assets/delete.png).
+1. Seleziona una risorsa e seleziona **[!UICONTROL Elimina]** ![Elimina](assets/delete.png).
 
    >[!NOTE]
    >
-   >L’opzione Elimina è disponibile anche quando si toccano i dettagli di una risorsa oppure si visualizzano le proprietà di una risorsa toccando Visualizza proprietà ![viewproperties](assets/viewproperties.png).
+   >L&#39;opzione Elimina è disponibile anche quando si toccano i dettagli di una risorsa o si visualizzano le proprietà di una risorsa toccando Visualizza proprietà ![visualizzazioneproprietà](assets/viewproperties.png).
 
 1. Prima di eliminare la risorsa, viene visualizzata una finestra di dialogo di conferma. Seleziona **[!UICONTROL Elimina]**.
 
    >[!NOTE]
    >
-   >Solo la risorsa selezionata viene eliminata e le risorse dipendenti e non vengono eliminate. Per verificare i riferimenti di una risorsa, seleziona ![riferimenti](assets/references.png) quindi seleziona una risorsa.
+   >Solo la risorsa selezionata viene eliminata e le risorse dipendenti e non vengono eliminate. Per verificare i riferimenti di una risorsa, seleziona ![riferimenti](assets/references.png), quindi seleziona una risorsa.
    >
    >
    >Se la risorsa che stai tentando di eliminare è una risorsa figlia di un’altra risorsa, non viene eliminata. Per eliminare una risorsa di questo tipo, rimuovi i relativi riferimenti da altre risorse, quindi riprova.
@@ -198,6 +198,6 @@ Per abilitare l&#39;autenticazione per i moduli:
 1. Nel browser, apri configMgr nell’istanza Publish.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Nella console Web Adobe Experience Manager, fai clic su **Servizio di autenticazione Apache Sling** per configurarlo.
-1. Nella finestra di dialogo Apache Sling Authentication Service che viene visualizzata, utilizza **+** per aggiungere percorsi.\
+1. Nella configurazione della console Web di Adobe Experience Manager, fai clic su **Servizio di autenticazione Apache Sling** per configurarlo.
+1. Nella finestra di dialogo del servizio di autenticazione Apache Sling che viene visualizzata, utilizza il pulsante **+** per aggiungere percorsi.\
    Quando si aggiunge un percorso, il servizio di autenticazione viene abilitato per i moduli in tale percorso.

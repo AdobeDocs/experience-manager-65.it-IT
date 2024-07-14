@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Temi di riferimento{#reference-themes}
 
-[Temi](../../forms/using/themes.md) consente di applicare uno stile ai moduli senza una profonda conoscenza dei CSS. Oltre al tema predefinito, puoi ottenere i seguenti temi installando il [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+[Temi](../../forms/using/themes.md) consente di applicare uno stile ai moduli senza una conoscenza approfondita del CSS. Oltre al tema predefinito, è possibile ottenere i temi seguenti installando il [pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * Beryl
 * Eseg
@@ -34,7 +34,7 @@ Ogni tema contiene uno stile univoco ed elegante che puoi utilizzare per creare 
 
 I temi inclusi in questo pacchetto sono reattivi e lo stile in questi temi è definito per i display mobili e desktop. La maggior parte dei browser moderni su diversi dispositivi può eseguire il rendering di moduli applicati con uno di questi temi senza alcun problema.
 
-Per ulteriori informazioni sull’installazione del pacchetto, consulta [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
+Per ulteriori informazioni sull&#39;installazione del pacchetto, vedere [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
@@ -90,7 +90,7 @@ Il tema Tranquilla fornisce sfumature chiare e scure della combinazione di color
 
 Il tema Ultramarine utilizza tonalità blu profonde per evidenziare componenti quali schede, pannelli, caselle di testo e pulsanti.
 
-![Tema Ultramarino](assets/ultramarine.png)
+![Tema Ultramarine](assets/ultramarine.png)
 
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
@@ -108,7 +108,7 @@ Il tema Urbano enfatizza un aspetto minimalista e funzionale per la tua forma. Q
 
 Come suggerisce il nome, il tema degli standard di progettazione Web USA utilizza caratteri tipografici e stili descritti nel sito Bozza standard di progettazione Web USA. Lo standard web viene utilizzato dalle organizzazioni federali per creare esperienze web coerenti tra i siti web del governo federale.
 
-![Tema degli standard di progettazione Web negli Stati Uniti](assets/us-web-standards.png)
+![Stati Uniti Tema standard progettazione Web](assets/us-web-standards.png)
 
 <!--[Click to enlarge
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 In Gestione corrispondenza, un modello di lettera contiene campi modulo tipici, funzioni di layout come intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto.
 
-Gestione della corrispondenza fornisce modelli di lettera nella [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Puoi personalizzare i modelli in Designer in base alle tue esigenze di branding e business. Il pacchetto include i seguenti modelli:
+Gestione corrispondenza fornisce modelli di lettere nel pacchetto del componente aggiuntivo [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Puoi personalizzare i modelli in Designer in base alle tue esigenze di branding e business. Il pacchetto include i seguenti modelli:
 
 * Classico
 * Classic Semplice
@@ -72,7 +72,7 @@ Anteprima PDF di una lettera creata utilizzando il modello Balanced Left
 
 Il modello Balanced Right presenta il logo aziendale a sinistra e consente di inserire l&#39;indirizzo del destinatario nella lettera. Il modello Bilanciato a destra include anche un piè di pagina che viene ridisposto quando la lettera contiene più pagine.
 
-![bilanciato a destra](assets/balancedright.png)
+![balancedright](assets/balancedright.png)
 
 Anteprima PDF di una lettera creata utilizzando il modello Bilanciato a destra
 

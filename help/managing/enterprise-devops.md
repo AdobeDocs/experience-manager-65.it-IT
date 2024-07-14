@@ -52,7 +52,7 @@ Gli sviluppatori sono responsabili dello sviluppo e della personalizzazione del 
 * realizzare la progettazione;
 * sviluppare i servizi e gli script necessari per implementare le funzionalità richieste.
 
-La configurazione del [sviluppo](/help/sites-developing/best-practices.md) L’ambiente può dipendere da vari fattori, anche se è composto da:
+La configurazione dell&#39;ambiente [sviluppo](/help/sites-developing/best-practices.md) può dipendere da vari fattori, anche se è composta da:
 
 * Un sistema di sviluppo integrato con controllo della versione per fornire una base di codice integrata. Viene utilizzato per unire e consolidare il codice dei singoli ambienti di sviluppo utilizzati da ogni sviluppatore.
 * Un ambiente personale per ogni sviluppatore, di solito residente sulla sua macchina locale. A intervalli appropriati il codice viene sincronizzato con il sistema di controllo delle versioni
@@ -61,7 +61,7 @@ A seconda delle dimensioni del sistema, nell’ambiente di sviluppo possono esse
 
 ### Controllo qualità {#quality-assurance}
 
-Questo ambiente viene utilizzato dal team di controllo qualità per [test](/help/sites-developing/test-plan.md) il nuovo sistema, sia in termini di progettazione che di funzionalità. Deve disporre di ambienti di authoring e di pubblicazione con contenuti appropriati e fornire tutti i servizi necessari per abilitare una suite completa di test.
+Questo ambiente viene utilizzato dal team di controllo qualità per [testare](/help/sites-developing/test-plan.md) in modo completo il nuovo sistema, sia a livello di progettazione che di funzionalità. Deve disporre di ambienti di authoring e di pubblicazione con contenuti appropriati e fornire tutti i servizi necessari per abilitare una suite completa di test.
 
 ### Staging {#staging}
 
@@ -139,6 +139,6 @@ I contenuti di produzione devono essere spostati dall’ambiente di produzione a
 Il contenuto può essere trasferito:
 
 * tra i diversi ambienti esportando e importando pacchetti;
-* Tra istanze diverse tramite replica diretta ([Replica AEM](/help/sites-deploying/replication.md)), il contenuto (utilizzando una connessione HTTP o HTTPS).
+* Tra istanze diverse tramite la replica diretta ([Replica AEM](/help/sites-deploying/replication.md)) del contenuto (tramite una connessione HTTP o HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

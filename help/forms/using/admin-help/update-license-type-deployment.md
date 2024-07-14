@@ -39,11 +39,11 @@ Nella pagina Modifica licenza vengono visualizzate le informazioni sulla licenza
 1. Leggere il contratto di licenza con l&#39;utente finale del modulo AEM, selezionare Accetto se si accettano i termini del contratto e quindi fare clic su Avanti.
 1. Nella pagina Modifica licenza selezionare un tipo di licenza:
 
-   * **EVAL:** Licenza di valutazione di 60 giorni
-   * **SVILUPPO:** Licenza di sviluppo permanente
-   * **NFR:** Licenza di valutazione di 2 anni
+   * **EVAL:** licenza di valutazione di 60 giorni
+   * **DEV:** Licenza di sviluppo permanente
+   * **NFR:** licenza di valutazione biennale
    * **IDEV:** abbonamento di 1 anno al programma Adobe Developer
-   * **Produzione:** Licenza perpetua
+   * **Produzione:** licenza perpetua
 
 1. Seleziona Sì, La Modifica Della Licenza È Valida Per Tutti I Moduli Distribuiti.
 1. Fare clic su Conferma modifica licenza. Viene visualizzato un messaggio che informa che la licenza è stata aggiornata correttamente.

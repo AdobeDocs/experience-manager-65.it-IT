@@ -28,11 +28,11 @@ Dynamic Medie offre diverse opzioni:
 
    * Incorporare il video o l’immagine sul sito web.
    * Collega gli URL all’applicazione web. Utilizza i collegamenti quando desideri distribuire un lettore video come finestra popup o modale.
-   * Se il sito è dinamico, puoi [fornire immagini ottimizzate](/help/assets/responsive-site.md).
+   * Se il tuo sito è reattivo, puoi [distribuire immagini ottimizzate](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->L&#39;imaging avanzato funziona con i predefiniti immagine esistenti e utilizza l&#39;intelligenza all&#39;ultimo millisecondo di consegna per ridurre ulteriormente le dimensioni del file immagine in base alla velocità di connessione del browser o della rete. Consulta [Imaging avanzato](/help/assets/imaging-faq.md) per ulteriori informazioni.
+>L&#39;imaging avanzato funziona con i predefiniti immagine esistenti e utilizza l&#39;intelligenza all&#39;ultimo millisecondo di consegna per ridurre ulteriormente le dimensioni del file immagine in base alla velocità di connessione del browser o della rete. Per ulteriori informazioni, vedere [Smart Imaging](/help/assets/imaging-faq.md).
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
@@ -50,4 +50,4 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 
 Experience Manager ora supporta la distribuzione di tutti i contenuti Dynamic Medie (immagini e video) tramite HTTP/2. In altre parole, è disponibile un URL pubblicato o un codice di incorporamento per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui browser e server comunicano, consentendo tempi di risposta e di caricamento migliori per tutte le risorse Dynamic Medie.
 
-Per ulteriori informazioni, consulta [Domande frequenti sulla distribuzione HTTP/2 dei contenuti](/help/sites-administering/scene7-http2faq.md).
+Per ulteriori informazioni, consulta [Domande frequenti sulla distribuzione HTTP/2 del contenuto](/help/sites-administering/scene7-http2faq.md).

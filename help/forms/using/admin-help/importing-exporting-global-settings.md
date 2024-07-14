@@ -1,6 +1,6 @@
 ---
 title: Importazione ed esportazione di impostazioni globali
-description: Puoi importare ed esportare le definizioni dei modelli di ricerca e le impostazioni globali per Workspace.
+description: È possibile importare ed esportare le definizioni dei modelli di ricerca e le impostazioni globali per Workspace.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Importazione ed esportazione di impostazioni globali {#importing-and-exporting-global-settings}
 
-Puoi importare ed esportare le definizioni dei modelli di ricerca e le impostazioni globali per Workspace.
+È possibile importare ed esportare le definizioni dei modelli di ricerca e le impostazioni globali per Workspace.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Puoi importare ed esportare le definizioni dei modelli di ricerca e le impostazi
 
 Ad esempio, puoi passare da un ambiente di sviluppo a un ambiente di produzione esportando le definizioni dei modelli di ricerca e le impostazioni globali da un ambiente e importandole nell’altro.
 
-Dopo aver esportato il file delle impostazioni globali, è possibile modificare le impostazioni in un editor XML o di testo. Le uniche impostazioni che è possibile modificare sono le impostazioni JChannelConnectionProperties, formViewOnly e specialRoutes. Per ulteriori informazioni, consulta [Impostazioni globali di Workspace](importing-exporting-global-settings.md#workspace-global-settings).
+Dopo aver esportato il file delle impostazioni globali, è possibile modificare le impostazioni in un editor XML o di testo. Le uniche impostazioni che è possibile modificare sono le impostazioni JChannelConnectionProperties, formViewOnly e specialRoutes. Per ulteriori informazioni, vedere [Impostazioni globali di Workspace](importing-exporting-global-settings.md#workspace-global-settings).
 
 
 >[!NOTE]
@@ -35,8 +35,8 @@ Dopo aver esportato il file delle impostazioni globali, è possibile modificare 
 
 ## Importare una definizione di modello di ricerca {#import-a-search-template-definition}
 
-1. Nella console di amministrazione, fai clic su Servizi > Area di lavoro > Amministrazione globale.
-1. Nella casella Importa definizione modello di ricerca fare clic su Scegli file e selezionare il modello di ricerca. Puoi importare solo le definizioni dei modelli di ricerca esportate originariamente da un’istanza di Workspace.
+1. Nella console di amministrazione, fai clic su Servizi > Workspace > Amministrazione globale.
+1. Nella casella Importa definizione modello di ricerca fare clic su Scegli file e selezionare il modello di ricerca. È possibile importare solo le definizioni dei modelli di ricerca esportate originariamente da un&#39;istanza di Workspace.
 1. Fai clic su Importa.
 
 ## Esportare una definizione di modello di ricerca {#export-a-search-template-definition}
@@ -72,27 +72,27 @@ Il file delle impostazioni globali di Workspace include le impostazioni seguenti
 
 ### impostazioni specialRoutes {#specialroutes-settings}
 
-Il *specialRoutes* Le impostazioni specificano le proprietà dei percorsi speciali, approva e Nega, in Workspace. In determinate situazioni, i pulsanti per questi percorsi vengono visualizzati nelle schede delle attività in Workspace e l’utente può selezionarli senza aprire il modulo. È possibile modificare le impostazioni specialRoutes nel file delle impostazioni globali per aggiungere nomi personalizzati per l&#39;approvazione e la negazione o per creare percorsi aggiuntivi.
+Le impostazioni di *specialRoutes* specificano le proprietà delle route speciali, approvate e negate, in Workspace. In alcune situazioni, i pulsanti per questi percorsi vengono visualizzati sulle schede attività in Workspace e l’utente può selezionarli senza aprire il modulo. È possibile modificare le impostazioni specialRoutes nel file delle impostazioni globali per aggiungere nomi personalizzati per l&#39;approvazione e la negazione o per creare percorsi aggiuntivi.
 
-**client_specialRoutes_route_approve_style:** Il nome dello stile presente nel tema dell&#39;area di lavoro, che identifica le icone del pulsante di approvazione. Lo stile deve includere valori per un&#39;icona attivata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
+**client_specialRoutes_route_approve_style:** Nome dello stile presente nel tema di Workspace che identifica le icone del pulsante di approvazione. Lo stile deve includere valori per un&#39;icona attivata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
 ` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Il file CSS Workspace è incorporato nel file workspace-theme.swf, che si trova nel file adobe-workspace-client.ear > adobe-workspace-client.war. Per modificare l&#39;aspetto di Workspace, è necessario ricompilare il file workspace-theme.swf.
 
 **client_specialRoutes_route_deny_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretata come &quot;nega&quot;. Le stringhe fanno distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è nega. Se l’utente di Workbench utilizza la parola Rifiuta in un processo, la parola non viene riconosciuta. Affinché il pulsante di instradamento sia personalizzato e sia applicato lo stile, è necessario aggiungere la parola Nega a questa impostazione.
 
-**client_specialRoutes_route_deny_style:** Il nome dello stile presente nel file del tema dell&#39;area di lavoro, che identifica le icone del pulsante Nega. Lo stile deve includere valori per un&#39;icona attivata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_route_approve_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretato come &quot;approva&quot;. Le stringhe fanno distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è approva. Se l’utente di Workbench utilizza la parola Approve (Approva) in un processo, la parola non viene riconosciuta. Affinché il pulsante di instradamento sia personalizzato e sia applicato lo stile, è necessario aggiungere la parola Approve a questa impostazione.
+**client_specialRoutes_route_deny_style:** Nome dello stile presente nel file del tema di Workspace che identifica le icone del pulsante di negazione. Lo stile deve includere valori per un&#39;icona attivata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_route_approve_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretata come &quot;approva&quot;. Le stringhe fanno distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è approva. Se l’utente di Workbench utilizza la parola Approve (Approva) in un processo, la parola non viene riconosciuta. Affinché il pulsante di instradamento sia personalizzato e sia applicato lo stile, è necessario aggiungere la parola Approve a questa impostazione.
 
-**client_specialRoutes_names:** Chiavi utilizzate per individuare il valore della stringa personalizzata dai file di risorse. Ogni voce di questa impostazione deve includere i valori per i nomi e lo stile.
+**client_specialRoutes_names:** le chiavi utilizzate per individuare il valore della stringa personalizzato dai file di risorse. Ogni voce di questa impostazione deve includere i valori per i nomi e lo stile.
 
 ### Impostazioni gruppo {#jgroup-settings}
 
 Queste impostazioni vengono visualizzate solo se è stato eseguito l&#39;aggiornamento da Adobe LiveCycle ES 2.5 o versioni precedenti.
 
-**server_remoteevents_ClientTimeoutMilliseconds:** Tempo massimo di attesa dei messaggi dell&#39;evento da parte del gruppo di lavoro. Questa impostazione non deve essere modificata.
+**server_remoteevents_ClientTimeoutMilliseconds:** Tempo massimo di attesa dei messaggi dell&#39;evento da parte del gruppo JG. Questa impostazione non deve essere modificata.
 
-**server_remoteevents_ServerTimeoutMilliseconds:** Timeout per la ricezione di messaggi del gruppo di lavoro sul server. Questa opzione imposta il ritardo per l&#39;invio dei messaggi dal server al client.
+**server_remoteevents_ServerTimeoutMilliseconds:** Timeout per la ricezione di messaggi JGroup sul server. Questa opzione imposta il ritardo per l&#39;invio dei messaggi dal server al client.
 
-**server_remoteevents_JChannelConnectionProperties:** Le proprietà di connessione del gruppo JG utilizzate per comunicare tra il server (sul quale il servizio RemoteEvent elabora un evento del servizio) e tutte le istanze di Workspace.
+**server_remoteevents_JChannelConnectionProperties:** proprietà di connessione per il gruppo JGroup utilizzate per comunicare tra il server (sul quale il servizio RemoteEvent elabora un evento di servizio) e tutte le istanze di Workspace.
 
 Potrebbe essere necessario modificare i valori UDP per l&#39;indirizzo IP multicast (mcast_addr), la porta IP multicast (mcast_port) e il TTL per i pacchetti multicast (ip_ttl). Per impostazione predefinita, i valori dell&#39;indirizzo IP multicast e della porta vengono generati in modo casuale e, in genere, non è necessario modificare i valori. Tuttavia, se la società dispone di criteri di rete relativi a intervalli multicast specifici per indirizzi IP multicast, potrebbe essere necessario modificare i valori.
 
@@ -102,7 +102,7 @@ Potrebbe essere necessario modificare i valori UDP per l&#39;indirizzo IP multic
 
 Le proprietà rimanenti in questa impostazione non devono essere modificate.
 
-**server_remoteevents_JGroupName:** Nome del gruppo JG utilizzato per la comunicazione remota degli eventi. Questo valore viene generato in modo casuale per evitare conflitti nei cluster. Questo valore non deve essere modificato.
+**server_remoteevents_JGroupName:** Nome del JGroup utilizzato per la comunicazione remota degli eventi. Questo valore viene generato in modo casuale per evitare conflitti nei cluster. Questo valore non deve essere modificato.
 
 <!--
 
@@ -112,25 +112,25 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 ### impostazioni formView {#formview-settings}
 
-**client_formView_openFormInFullScreen:** Per visualizzare tutti i moduli in Workspace in modalità a schermo intero, imposta questa opzione su true. Per impostazione predefinita, questa opzione è impostata su false e i moduli non vengono visualizzati in modalità a schermo intero. Il servizio User contiene un&#39;opzione che consente di aprire il documento associato a un&#39;attività in modalità a schermo intero. Questo consente di controllare la visualizzazione in base al singolo processo.
+**client_formView_openFormInFullScreen:** Per visualizzare tutti i moduli in Workspace in modalità a schermo intero, impostare questa opzione su true. Per impostazione predefinita, questa opzione è impostata su false e i moduli non vengono visualizzati in modalità a schermo intero. Il servizio User contiene un&#39;opzione che consente di aprire il documento associato a un&#39;attività in modalità a schermo intero. Questo consente di controllare la visualizzazione in base al singolo processo.
 
 **client_route_formViewOnly:** Se è impostato su True, le route non vengono visualizzate nella vista a schede o nella vista a elenco in Workspace. Il valore predefinito è False, il che significa che le route vengono visualizzate nella vista a schede e nella vista a elenco.
 
 ### Altre impostazioni {#other-settings}
 
-**client_mimeTypes_openOutsideBrowser:** Il tipo di documenti MIME che viene aperto al di fuori dell’istanza del browser Workspace. Se i processi dell’organizzazione richiedono un tipo MIME aggiuntivo, specificalo qui. I valori predefiniti sono:
+**client_mimeTypes_openOutsideBrowser:** il tipo di documenti MIME che viene aperto al di fuori dell&#39;istanza del browser Workspace. Se i processi dell’organizzazione richiedono un tipo MIME aggiuntivo, specificalo qui. I valori predefiniti sono:
 
 * `application/msword`
 * `application/msexcel`
 * `application/ms-powerpoint`
 
-**client_customUI_caching:** Memorizza nella cache un&#39;interfaccia utente per attività personalizzata.
+**client_customUI_caching:** memorizza in cache un&#39;interfaccia utente attività personalizzata.
 
 **server_debugLevel:** Non modificare questa impostazione.
 
-**client_pollingInterval:** Imposta l’intervallo di polling (in secondi) utilizzato nell’area di lavoro Flex (obsoleto per i moduli AEM su JEE) per rilevare le attività nuove o modificate. Il valore predefinito è 3 secondi. Questa operazione non funziona per AEM Forms Workspace.
+**client_pollingInterval:** Imposta l&#39;intervallo di polling (in secondi) utilizzato in (obsoleto per i moduli AEM su JEE) Flex Workspace per rilevare le attività nuove e modificate. Il valore predefinito è 3 secondi. Questa operazione non funziona per AEM Forms Workspace.
 
-**client_systemContext_name:** Specifica un nome personalizzato (ad esempio Cittadino) da visualizzare nel campo Aggiunto da (nella scheda Allegati) per gli allegati di un’attività in AEM Forms Workspace.
+**client_systemContext_name:** Specificare un nome personalizzato, ad esempio Cittadino, da visualizzare nel campo Aggiunto da della scheda Allegati per gli allegati di un&#39;attività in AEM Forms Workspace.
 
 Per definire il nome personalizzato:
 
@@ -138,6 +138,6 @@ Per definire il nome personalizzato:
 
 >[!NOTE]
 >
->Per l’applicazione Demo, il nome visualizzato predefinito è **Cittadino**. Per un&#39;applicazione personalizzata creata, il nome visualizzato predefinito è **Account contesto di sistema**.
+>Per l&#39;applicazione Demo, il nome visualizzato predefinito è **Cittadino**. Per un&#39;applicazione personalizzata creata, il nome visualizzato predefinito è **Account contesto di sistema**.
 >
->**client_idleTimeout:** Quando un utente rimane inattivo per un periodo di tempo specifico, la sessione di AEM Forms Workspace scade. Per abilitare questa funzione, aggiungi una voce alle Impostazioni globali &lt;client_idletimeout>*IDLE_TIMEOUT_IN_SECONDI*&lt;/client_idletimeout>. È possibile specificare il valore 0 per disattivare il timeout di inattività. La quantità di tempo è specificata in secondi.
+>**client_idleTimeout:** Quando un utente rimane inattivo per un periodo di tempo specifico, la sessione di AEM Forms Workspace scade. Per abilitare la funzione, aggiungi una voce alle impostazioni globali &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. È possibile specificare il valore 0 per disattivare il timeout di inattività. La quantità di tempo è specificata in secondi.

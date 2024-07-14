@@ -39,7 +39,7 @@ I membri del gruppo di authoring delle app sono responsabili dell’authoring de
 
 1. Crea un gruppo di utenti denominato, &quot;app-authors&quot;:
 
-   Passa all’Admin Console utente: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Passa all&#39;Admin Console utente: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Dalla console del gruppo di utenti, seleziona il pulsante &quot;+&quot; per creare un gruppo.
 
@@ -51,13 +51,13 @@ I membri del gruppo di authoring delle app sono responsabili dell’authoring de
 
    Aggiungere autori delle app al gruppo Autori
 
-1. Dopo aver creato il gruppo utenti autori app, puoi aggiungere singoli membri del gruppo a questo nuovo gruppo tramite [Admin Console utente](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Dopo aver creato il gruppo utenti autori app, puoi aggiungere singoli membri del gruppo a questo nuovo gruppo tramite l&#39;[Admin Console utente](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    Modifica gruppi di utenti
 
-1. Accedi a [Console Autorizzazioni](http://localhost:4502/useradmin) e aggiungere le autorizzazioni per amministrare cloudservices
+1. Passa alla [console Autorizzazioni](http://localhost:4502/useradmin) e aggiungi le autorizzazioni per amministrare i servizi cloud
 
    * (Leggi) su /etc/cloudservices
 
@@ -67,7 +67,7 @@ I membri del gruppo di authoring delle app sono responsabili dell’authoring de
 
 ### AEM Mobile Application Administrators Group (gruppo app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
-I membri del gruppo app-admins possono creare contenuti dell’applicazione con le stesse autorizzazioni fornite agli autori delle app **E** sono inoltre responsabili di:
+I membri del gruppo app-admins possono creare contenuti dell&#39;applicazione con le stesse autorizzazioni incluse con gli autori dell&#39;app **AND**, inoltre, sono responsabili di:
 
 * Configurazione di PhoneGap Build e Adobe Mobile Services Cloud Services nell’AEM
 * Staging, pubblicazione e cancellazione dell&#39;applicazione Content Sync OTA updates
@@ -88,7 +88,7 @@ I membri del gruppo app-admins possono creare contenuti dell’applicazione con 
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Accedi a [Console Autorizzazioni](http://localhost:4502/useradmin) e aggiungere le autorizzazioni per amministrare cloudservices
+1. Passa alla [console Autorizzazioni](http://localhost:4502/useradmin) e aggiungi le autorizzazioni per amministrare i servizi cloud
 
    * (Lettura, modifica, creazione, eliminazione, replica) in /etc/cloudservices/mobileservices
    * (Lettura, modifica, creazione, eliminazione, replica) in /etc/cloudservices/phonegap-build
@@ -114,14 +114,14 @@ I membri del gruppo app-admins possono creare contenuti dell’applicazione con 
 
 I riquadri del dashboard possono esporre azioni diverse in base alle autorizzazioni di cui dispone l’utente. Di seguito sono descritte le azioni disponibili per ogni sezione.
 
-Oltre a queste autorizzazioni, un’azione può anche essere visualizzata/nascosta in base alla configurazione dell’app corrente. Ad esempio, se all’app non è stata assegnata alcuna configurazione cloud PhoneGap, l’azione &quot;Remote Build&quot; non verrà esposta in alcun modo. Questi sono elencati di seguito in &quot;**Condizione di configurazione**&#39; sezioni.
+Oltre a queste autorizzazioni, un’azione può anche essere visualizzata/nascosta in base alla configurazione dell’app corrente. Ad esempio, se all’app non è stata assegnata alcuna configurazione cloud PhoneGap, l’azione &quot;Remote Build&quot; non verrà esposta in alcun modo. Questi sono elencati di seguito nelle sezioni &#39;**Condizione di configurazione**&#39;.
 
 ### Gestisci sezione app {#manage-app-tile}
 
 Al momento il riquadro non presenta azioni che richiedono autorizzazioni, tuttavia la pagina dei dettagli dell’applicazione presenta le azioni seguenti:
 
-* *Modifica* per app-author e app-admin (Trigger interfaccia utente - jcr:write - su /content/phonegap/{suffix})
-* *Scarica* per app-author e app-admin (attivazione interfaccia utente: su /content/phonegap/{suffix})
+* *Modifica* per app-author e app-admin (trigger interfaccia utente - jcr:write - su /content/phonegap/{suffix})
+* *Scarica* per app-author e app-admin (trigger interfaccia utente - su /content/phonegap/{suffix})
 
 L’immagine seguente mostra le opzioni Scarica e Modifica per un’app:
 

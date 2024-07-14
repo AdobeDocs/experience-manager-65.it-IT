@@ -29,7 +29,7 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >
 >I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
 >
->* **Frammenti di contenuto** sono contenuti editoriali, principalmente testo e immagini correlate. Sono contenuti puri, senza design e layout.
+>* **I frammenti di contenuto** sono contenuti editoriali, principalmente testo e immagini correlate. Sono contenuti puri, senza design e layout.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
@@ -74,13 +74,13 @@ I frammenti di contenuto consentono:
 
    * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Poi trascina il frammento desiderato sull’istanza del componente.
 
-   * Seleziona il componente del frammento di contenuto, quindi **Configura** dalla barra degli strumenti. Nella finestra di dialogo, puoi aprire la finestra di dialogo di selezione per cercare e selezionare la **Frammento di contenuto**.
+   * Seleziona il componente del frammento di contenuto, quindi **Configura** dalla barra degli strumenti. Nella finestra di dialogo, puoi aprire la finestra di dialogo di selezione per sfogliare e selezionare il **Frammento di contenuto** richiesto.
 
    >[!NOTE]
    >
    >In alternativa, puoi trascinare un frammento di contenuto specifico direttamente nella pagina. In questo modo viene creato automaticamente il componente associato (Frammento di contenuto).
 
-1. Inizialmente il contenuto da **Principale** Elemento e **Principale** (variante). Puoi [selezionare altri elementi e/o varianti](#selecting-the-element-or-variation), secondo necessità.
+1. Inizialmente viene visualizzato il contenuto dell&#39;elemento **Main** e **Master** (variante). Puoi [selezionare altri elementi e/o varianti](#selecting-the-element-or-variation), secondo necessità.
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -97,7 +97,7 @@ I frammenti di contenuto consentono:
 
 ### Selezione dell’elemento o della variante {#selecting-the-element-or-variation}
 
-Apri il file del frammento **Configurazione** in modo da poter configurare il frammento per la pagina corrente. La finestra di dialogo può dipendere dal componente utilizzato.
+Apri la finestra di dialogo **Configurazione** del frammento per configurare il frammento per la pagina corrente. La finestra di dialogo può dipendere dal componente utilizzato.
 
 Nella finestra di dialogo di configurazione appropriata potete selezionare i parametri disponibili, tra cui:
 
@@ -122,10 +122,10 @@ Nella finestra di dialogo di configurazione appropriata potete selezionare i par
 
 * **Variazione**
 
-   * Il valore predefinito **Principale** è sempre disponibile.
+   * Il **Master** predefinito è sempre disponibile.
    * Se per il frammento sono state create delle varianti, è disponibile una selezione.
 
-* **Paragrafi**: specifica l’intervallo di paragrafi da includere:
+* **Paragrafi**: specificare l&#39;intervallo di paragrafi da includere:
 
    * **Tutti**
    * **Intervallo**: ad esempio, `1`, `3-5`, `9-*`
@@ -136,7 +136,7 @@ Nella finestra di dialogo di configurazione appropriata potete selezionare i par
 
 ### Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
 
-Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, Questo consente di: [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
+Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, Ciò ti consente di [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -146,7 +146,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un segnaposto **Trascina qui i componenti** tra ciascun paragrafo HTML (e nella parte superiore/inferiore) del frammento.
 
-Questo ti consente di aggiungere contenuto aggiuntivo [nel mezzo (ovvero nel contenuto intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) il contenuto del frammento (in qualsiasi punto disponibile), senza dover modificare il frammento principale.
+In questo modo è possibile aggiungere contenuto aggiuntivo [nel contenuto intermedio (ovvero nel contenuto intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) nel contenuto del frammento (in qualsiasi punto disponibile), senza dover modificare il frammento principale.
 
 Per il contenuto intermedio è possibile:
 
@@ -180,7 +180,7 @@ Per il contenuto intermedio è possibile:
 
 ### Uso di contenuti associati  {#using-associated-content}
 
-Se è stato [contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md) con [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse sono disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](#adding-in-between-content).
+Se hai [contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse sono disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](#adding-in-between-content).
 
 >[!NOTE]
 >
@@ -188,9 +188,9 @@ Se è stato [contenuto associato](/help/assets/content-fragments/content-fragmen
 
 >[!NOTE]
 >
->Se sulla stessa pagina sono presenti più frammenti di contenuto, il **Contenuto associato** Questa scheda mostra le risorse appropriate per tutti i frammenti.
+>Se in una pagina sono presenti più frammenti di contenuto, nella scheda **Contenuto associato** sono visualizzate le risorse appropriate per tutti i frammenti.
 
-Dopo aver aggiunto alla pagina un frammento con contenuto associato, viene visualizzata una nuova scheda (**Contenuto associato**) viene aperto nel pannello laterale.
+Dopo aver aggiunto alla pagina un frammento con contenuto associato, nel pannello laterale viene aperta una nuova scheda (**Contenuto associato**).
 
 Da qui puoi trascinare le risorse nella posizione richiesta (su un componente esistente o nella posizione in cui viene creato il componente appropriato):
 
@@ -213,5 +213,5 @@ Altre modifiche, ad esempio sposta, copia ed elimina devono essere effettuate ne
 
 I frammenti devono essere pubblicati in modo da poter essere utilizzati sulle pagine web pubblicate:
 
-* Un frammento può essere pubblicato dopo [creazione del frammento nella console Assets](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
-* Se un *frammento non pubblicato* viene utilizzato in una pagina in corso di pubblicazione, anche il frammento può essere pubblicato ora.
+* Un frammento può essere pubblicato dopo [la creazione del frammento nella console Assets](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
+* Se in una pagina in corso di pubblicazione viene utilizzato un frammento *non pubblicato*, è anche possibile pubblicare ora il frammento.

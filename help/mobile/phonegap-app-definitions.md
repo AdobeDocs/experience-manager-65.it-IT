@@ -30,13 +30,13 @@ Le definizioni delle app sono un modo per identificare quali spazi e altre confi
 
 ## Creazione di una nuova definizione di app {#creating-a-new-app-definition}
 
-1. Scegli **Dispositivi mobili** dalla console di navigazione AEM.
+1. Scegliere **Mobile** dalla console di navigazione AEM.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Scegli **App** da **Dispositivi mobili** e fai clic su **Crea.**
+1. Scegli **App** da **Mobile** e fai clic su **Crea.**
 
-   Scegli **App** a e immetti i dettagli per creare la nuova app.
+   Scegli **App** per e immetti i dettagli per creare la nuova app.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 

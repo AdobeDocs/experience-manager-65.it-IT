@@ -22,7 +22,7 @@ ht-degree: 76%
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette da allegare a una pagina, una risorsa o altro contenuto, per consentire la ricerca di contenuti specifici o correlati.
 
-* Consulta [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
+* Per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati, vedere [Amministrazione dei tag](/help/sites-administering/tags.md).
 * Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, consulta [Assegnazione tag per sviluppatori](/help/sites-developing/tags.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
@@ -44,7 +44,7 @@ Quando progetti la struttura dei contenuti di un sito e lo schema di metadati pe
 
 Nell’ambiente di authoring gli autori possono applicare i tag accedendo alle proprietà della pagina e immettendo uno o più tag nel campo **Tag/Parole chiave**.
 
-Da applicare [tag predefiniti](/help/sites-administering/tags.md), nella **Proprietà pagina** finestra utilizza **Tag** e **Seleziona tag** finestra. Il **Tag standard** è lo spazio dei nomi predefinito, ovvero non `namespace-string:` anteposto alla tassonomia.
+Per applicare [tag predefiniti](/help/sites-administering/tags.md), nella finestra **Proprietà pagina** utilizza il campo **Tag** e la finestra **Seleziona tag**. La scheda **Tag standard** è lo spazio dei nomi predefinito, ovvero non esiste alcun `namespace-string:` come prefisso per la tassonomia.
 
 ![Finestra Seleziona tag; utilizza il pulsante X per deselezionare i tag attualmente selezionati](assets/chlimage_1-41.png)
 

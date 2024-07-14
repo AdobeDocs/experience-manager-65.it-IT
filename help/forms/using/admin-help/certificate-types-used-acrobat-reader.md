@@ -33,13 +33,13 @@ SONO 0002054 con codice a barre 2D Full Production V6.1 P8
 
 La stringa contiene i seguenti elementi:
 
-**Tipo di certificato:** Descrive i moduli dei moduli AEM attivati dal certificato e il livello di attivazione, ad esempio il codice a barre 2D completo. Per un elenco dei tipi di certificato disponibili, vedi la colonna Tipo nella tabella della sezione Profili certificato.
+**Tipo di certificato:** Vengono descritti i moduli dei moduli AEM attivati dal certificato e il livello di attivazione, ad esempio il codice a barre 2D completo. Per un elenco dei tipi di certificato disponibili, vedi la colonna Tipo nella tabella della sezione Profili certificato.
 
-**Tipo di distribuzione:** Indica l’uso previsto del certificato, ad esempio Produzione. Il valore può essere Valutazione o Produzione. Per un elenco dei tipi di distribuzione associati a ciascun tipo di certificato, consulta la colonna Tipo di distribuzione nella tabella della sezione Profili di certificato.
+**Tipo di distribuzione:** indica l&#39;uso previsto del certificato, ad esempio Produzione. Il valore può essere Valutazione o Produzione. Per un elenco dei tipi di distribuzione associati a ciascun tipo di certificato, consulta la colonna Tipo di distribuzione nella tabella della sezione Profili di certificato.
 
-**Versione diritti di utilizzo:** Descrive la versione dell&#39;algoritmo dei diritti di utilizzo per cui è possibile utilizzare il certificato, ad esempio V6.1. Questa versione non indica la versione delle estensioni Acrobat o Acrobat Reader DC.
+**Versione diritti di utilizzo:** Viene descritta la versione dell&#39;algoritmo dei diritti di utilizzo per cui è possibile utilizzare il certificato, ad esempio V6.1. Questa versione non indica la versione delle estensioni Acrobat o Acrobat Reader DC.
 
-**Codice profilo:** Il codice profilo è una descrizione sintetica delle proprietà complete del certificato, ad esempio P8. Per un elenco dei codici di profilo associati a ciascun tipo di file, consulta la colonna Codice profilo nella tabella della sezione Profili certificato.
+**Codice profilo:** Il codice profilo è una descrizione abbreviata delle proprietà complete del certificato, ad esempio P8. Per un elenco dei codici di profilo associati a ciascun tipo di file, consulta la colonna Codice profilo nella tabella della sezione Profili certificato.
 
 **Numero di serie:** A ciascun certificato rilasciato da Adobe viene assegnato un numero di serie, ad esempio 0002054. Il Supporto Adobe Enterprise o un rappresentante dell&#39;account Adobe Enterprise può utilizzare questo numero di serie per tracciare il certificato in base a un ordine di prodotto specifico o a una relazione OEM.
 
@@ -152,13 +152,13 @@ I certificati di integrazione dei partner vengono rilasciati ai partner aziendal
 
 I certificati Adobe per uso interno vengono utilizzati in Adobe per supportare lo sviluppo, l’integrazione, la prototipazione e la dimostrazione di software. I certificati hanno una validità di due anni a decorrere dalla data del rilascio.
 
-I certificati di produzione vengono rilasciati ai clienti che hanno acquistato estensioni Acrobat Reader DC. Tali certificati sono validi per il periodo massimo consentito dall&#39;autorità di certificazione (CA), indicato come *Max* nella tabella Profili certificato.
+I certificati di produzione vengono rilasciati ai clienti che hanno acquistato estensioni Acrobat Reader DC. Questi certificati sono validi per il periodo massimo consentito dall&#39;Autorità di certificazione (CA), indicato come *Max* nella tabella Profili certificato.
 
 ## Diritti di utilizzo delle estensioni Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
 
 Quando esamini il certificato delle estensioni di Acrobat Reader DC nel Visualizzatore certificati, puoi selezionare l’elemento dei diritti di utilizzo dalla scheda Dettagli (se configurata) per visualizzare un elenco dettagliato dei diritti di utilizzo di Adobe Reader che il certificato può abilitare. I diritti di utilizzo abilitati per un particolare documento possono essere un sottoinsieme di quelli abilitati dal certificato.
 
-Se è necessario inserire commenti online in un ambiente non collaborativo, contatta il supporto Adobe per ulteriori informazioni. La proprietà Mode corrisponde al tipo di distribuzione ed è *produzione* o *valutazione*.
+Se è necessario inserire commenti online in un ambiente non collaborativo, contatta il supporto Adobe per ulteriori informazioni. La proprietà Mode corrisponde al tipo di distribuzione ed è *production* o *evaluation*.
 
 I diritti di utilizzo delle estensioni Acrobat Reader DC consentiti sono costituiti da uno o più elementi specifici. Questi elementi vengono utilizzati in diverse combinazioni per ottenere varietà di funzionalità del prodotto concesse in licenza.
 

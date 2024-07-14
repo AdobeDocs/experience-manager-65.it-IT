@@ -20,17 +20,17 @@ ht-degree: 0%
 
 Quando la funzionalità di controllo è abilitata, la protezione dei documenti consente di monitorare determinati tipi di eventi. Gli eventi visibili dipendono dal ruolo:
 
-**Utenti:** Possono visualizzare gli eventi controllati per i loro documenti protetti tramite policy e per tutti i documenti protetti che ricevono e utilizzano.
+**Utenti:** possono visualizzare eventi controllati per i documenti protetti tramite policy e per tutti i documenti protetti ricevuti e utilizzati.
 
-**Coordinatori set di criteri:** È possibile visualizzare gli eventi controllati, inclusi gli eventi relativi a documenti e criteri, per i documenti protetti da criteri dai relativi set di criteri.
+**Coordinatori set di criteri:** possono visualizzare eventi controllati, inclusi eventi di documenti e criteri, per i documenti protetti da criteri dai relativi set di criteri.
 
-**Amministratori:** Può visualizzare gli eventi controllati relativi a tutti i documenti e gli utenti protetti tramite policy. Gli amministratori possono inoltre tenere traccia di altri tipi di eventi, tra cui eventi utente, documento, criteri e di sistema.
+**Amministratori:** possono visualizzare eventi controllati correlati a tutti i documenti e gli utenti protetti tramite policy. Gli amministratori possono inoltre tenere traccia di altri tipi di eventi, tra cui eventi utente, documento, criteri e di sistema.
 
 >[!NOTE]
 >
 >Anche gli eventi eseguiti su una copia di un documento protetto tramite policy vengono tracciati come eventi nel documento protetto originale.
 
-(vedere [Opzioni di controllo degli eventi](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).)
+(Vedi [Opzioni di controllo degli eventi](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).)
 
 Se un utente non autorizzato tenta di visualizzare un documento o di accedere utilizzando un nome utente o una password non corretti, viene registrato un evento di errore.
 
@@ -46,9 +46,9 @@ Affinché il controllo degli eventi abbia luogo, è necessario soddisfare i segu
 
 * Il sistema o l&#39;amministratore devono abilitare la funzionalità di controllo per il server.
 
-  (vedere [Configurazione del controllo degli eventi e delle impostazioni della privacy](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
+  (Vedi [Configurazione del controllo degli eventi e delle impostazioni di privacy](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
 
-* Il controllo deve essere abilitato per il criterio utilizzato per proteggere il documento. (vedere [Creazione e modifica di criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
+* Il controllo deve essere abilitato per il criterio utilizzato per proteggere il documento. (Vedi [Creazione e modifica dei criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Cercare un evento {#search-for-an-event}
 
@@ -56,30 +56,32 @@ Puoi cercare nell’elenco degli eventi e visualizzare descrizioni più dettagli
 
 È possibile cercare gli eventi nella pagina Eventi utilizzando una combinazione di criteri di ricerca degli eventi e le date in cui si sono verificati. Gli eventi che puoi cercare dipendono dal tuo ruolo:
 
-**Utenti:** Possono visualizzare gli eventi controllati per i loro documenti protetti tramite policy e per tutti i documenti protetti che ricevono e utilizzano. Sono disponibili le seguenti opzioni di ricerca:
+**Utenti:** possono visualizzare eventi controllati per i documenti protetti tramite policy e per tutti i documenti protetti ricevuti e utilizzati. Sono disponibili le seguenti opzioni di ricerca:
 
-**Eventi correlati a me:** Gli utenti possono trovare eventi per qualsiasi documento protetto tramite policy creato o ricevuto. Ad esempio, se un utente apre, visualizza o stampa un documento protetto da un’altra persona, vedrà solo questi eventi per quel documento.
+**Eventi correlati
+per me:** Gli utenti possono trovare eventi per qualsiasi documento protetto tramite policy che hanno creato o ricevuto. Ad esempio, se un utente apre, visualizza o stampa un documento protetto da un’altra persona, vedrà solo questi eventi per quel documento.
 
 **Eventi correlati ai miei documenti:** Gli utenti possono trovare tutti gli eventi correlati ai propri documenti protetti tramite policy. Gli utenti visualizzano gli eventi generati da ogni persona che ha gestito i propri documenti.
 
-**Coordinatori set di criteri:** È possibile visualizzare gli eventi controllati, inclusi gli eventi relativi a documenti e criteri, per i documenti protetti da criteri dai relativi set di criteri. Sono disponibili le seguenti opzioni:
+**Coordinatori set di criteri:** possono visualizzare eventi controllati, inclusi eventi di documenti e criteri, per i documenti protetti da criteri dai relativi set di criteri. Sono disponibili le seguenti opzioni:
 
-**Documenta gli eventi in cui sono un coordinatore di set di criteri:** I coordinatori di set di criteri che dispongono dell&#39;autorizzazione Visualizza evento possono trovare eventi correlati a documenti protetti dai propri set di criteri.
+**Eventi documento in cui
+Sono un coordinatore di set di criteri:** I coordinatori di set di criteri che dispongono dell&#39;autorizzazione Visualizza evento possono trovare eventi correlati a documenti protetti dai propri set di criteri.
 
-**Eventi dei criteri in cui sono un coordinatore di set di criteri:** I coordinatori di set di criteri che dispongono dell&#39;autorizzazione Visualizza eventi possono trovare eventi correlati ai criteri dai propri set di criteri.
+**Eventi dei criteri per i quali sono un coordinatore di set di criteri:** I coordinatori di set di criteri che dispongono dell&#39;autorizzazione di visualizzazione eventi possono trovare eventi correlati ai criteri dai propri set di criteri.
 
-**Amministratori:** Può visualizzare gli eventi controllati relativi a tutti i documenti e gli utenti protetti tramite policy. Gli amministratori possono anche tenere traccia di altri tipi. Inoltre, gli amministratori possono suddividere ulteriormente le ricerche degli eventi in base al tipo di utente:
+**Amministratori:** possono visualizzare eventi controllati correlati a tutti i documenti e gli utenti protetti tramite policy. Gli amministratori possono anche tenere traccia di altri tipi. Inoltre, gli amministratori possono suddividere ulteriormente le ricerche degli eventi in base al tipo di utente:
 
 **Utenti noti:** Gli utenti si trovano nelle directory di origine o sono registrati come utenti esterni.
 
-**Utenti anonimi:** Utenti sconosciuti che accedono a un documento protetto tramite una policy che consente l’accesso anonimo.
+**Utenti anonimi:** Utenti sconosciuti che accedono a un documento protetto con un criterio che consente l&#39;accesso anonimo.
 
-**Utenti di sistema:** Eventi avviati dal server, ad esempio la sincronizzazione delle directory.
+**Utenti di sistema:** eventi avviati dal server, ad esempio la sincronizzazione della directory.
 
 1. Nella pagina Document Security, fai clic su Eventi.
 1. Nell&#39;elenco Trova selezionare i criteri di ricerca che si desidera utilizzare. A seconda della selezione effettuata nell&#39;elenco Trova, viene visualizzato un secondo elenco che fornisce criteri di ricerca aggiuntivi. Se applicabile, nella casella di testo digitare i criteri di ricerca.
 
-   Per ulteriori dettagli sui tipi di evento specifici, vedi [Opzioni di controllo degli eventi](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
+   Per ulteriori dettagli sui tipi di evento specifici, vedere [Opzioni di controllo eventi](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 
 1. Nell&#39;elenco Utente selezionare il tipo di utente che ha eseguito l&#39;evento:
 

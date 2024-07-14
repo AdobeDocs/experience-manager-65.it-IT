@@ -22,13 +22,13 @@ Quando i componenti AEM Communities sono configurati con l’assegnazione tag ab
 
 L’infrastruttura di base per i tag applicati nell’ambiente di pubblicazione è la stessa dei tag applicati al contenuto nell’ambiente di authoring, ad esempio pagine e risorse:
 
-* Consulta [Amministrazione dei tag](../../help/sites-administering/tags.md) e [Assegnazione di tag ai contenuti generati dagli utenti](tag-ugc.md) (UGC) per informazioni sulla creazione e la gestione dei tag.
+* Per informazioni sulla creazione e la gestione dei tag, vedere [Amministrazione dei tag](../../help/sites-administering/tags.md) e [Assegnazione dei tag ai contenuti generati dagli utenti](tag-ugc.md) (UGC).
 
-* Consulta [Assegnazione di tag per sviluppatori](../../help/sites-developing/tags.md) per informazioni su [framework di assegnazione tag](../../help/sites-developing/framework.md) e l’inclusione e l’estensione dei tag [applicazioni personalizzate](../../help/sites-developing/building.md).
+* Consulta [Assegnazione tag per sviluppatori](../../help/sites-developing/tags.md) per informazioni sul [framework di assegnazione tag](../../help/sites-developing/framework.md) e sull&#39;inclusione e l&#39;estensione dei tag in [applicazioni personalizzate](../../help/sites-developing/building.md).
 
-* Consulta [Utilizzo di Tag cloud per social network](tagcloud.md) per informazioni per gli autori su come aggiungere un `social tag cloud` a una pagina per evidenziare i tag applicati a UGC nell’ambiente di pubblicazione.
+* Consulta [Utilizzo di Social Tag Cloud](tagcloud.md) per informazioni per gli autori su come aggiungere un componente `social tag cloud` a una pagina per evidenziare i tag applicati a UGC nell&#39;ambiente di pubblicazione.
 
-L’assegnazione tag di UGC può essere abilitata durante la configurazione di un [sito community](sites-console.md#tagging) oppure una delle seguenti caratteristiche:
+L&#39;assegnazione tag di contenuti generati dagli utenti può essere abilitata durante la configurazione di un [sito community](sites-console.md#tagging) o di una delle seguenti funzionalità:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -43,11 +43,11 @@ L’assegnazione tag di UGC può essere abilitata durante la configurazione di u
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ L’assegnazione tag di UGC può essere abilitata durante la configurazione di u
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Consulta <a href="tagcloud.md">Utilizzo di Tag cloud per social network</a></td>
+   <td>Vedi <a href="tagcloud.md">Utilizzo di Social Tag Cloud</a></td>
   </tr>
  </tbody>
 </table>
@@ -73,14 +73,14 @@ L’assegnazione tag di UGC può essere abilitata durante la configurazione di u
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API tag cloud per social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API cloud per tag social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Gestione tag per social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Gestione tag social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
 ## Ricerca tag {#tag-searching}
 
-A partire da [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la ricerca dei tag viene eseguita utilizzando [titoli tag](../../help/sites-developing/framework.md#tag-characteristics).
+A partire dal [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la ricerca dei tag viene eseguita utilizzando [titoli tag](../../help/sites-developing/framework.md#tag-characteristics).
 
-Prima di FP1, la ricerca veniva eseguita utilizzando [id tag](../../help/sites-developing/framework.md#tagid).
+Prima di FP1, la ricerca è stata eseguita utilizzando [ID tag](../../help/sites-developing/framework.md#tagid).

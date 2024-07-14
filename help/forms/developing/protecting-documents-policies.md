@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Protezione di documenti con criteri {#protecting-documents-with-policies}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 **Informazioni sul servizio Document Security**
 
@@ -39,24 +39,24 @@ Per maggiore chiarezza, nelle due sezioni seguenti viene illustrato come utilizz
 
 Puoi eseguire queste attività utilizzando il servizio Document Security:
 
-* Creare criteri. Per informazioni, consulta [Creazione di criteri](protecting-documents-policies.md#creating-policies).
-* Modificare i criteri. Per informazioni, consulta [Modifica dei criteri](protecting-documents-policies.md#modifying-policies).
-* Elimina criteri. Per informazioni, consulta [Eliminazione dei criteri](protecting-documents-policies.md#deleting-policies).
-* Applicare policy ai documenti PDF. Per informazioni, consulta [Applicazione delle policy ai documenti di PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents).
-* Rimuovere i criteri dai documenti di PDF. Per informazioni, consulta [Rimozione di criteri dai documenti di PDF](protecting-documents-policies.md#removing-policies-from-pdf-documents).
-* Documenti protetti tramite policy di Inspect. Per informazioni, consulta [Verifica dei documenti di PDF protetti tramite policy](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
-* Revoca dell&#39;accesso ai documenti di PDF. Per informazioni, consulta [Revoca dell&#39;accesso ai documenti](protecting-documents-policies.md#revoking-access-to-documents).
-* Ripristinare l&#39;accesso ai documenti revocati. Per informazioni, consulta [Ripristino dell’accesso ai documenti revocati](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
-* Creare filigrane. Per informazioni, consulta [Creazione di filigrane](protecting-documents-policies.md#creating-watermarks).
-* Cerca gli eventi. Per informazioni, consulta [Ricerca di eventi](protecting-documents-policies.md#searching-for-events).
+* Creare criteri. Per informazioni, vedere [Creazione di criteri](protecting-documents-policies.md#creating-policies).
+* Modificare i criteri. Per informazioni, vedere [Modifica dei criteri](protecting-documents-policies.md#modifying-policies).
+* Elimina criteri. Per informazioni, vedere [Eliminazione dei criteri](protecting-documents-policies.md#deleting-policies).
+* Applicare policy ai documenti PDF. Per informazioni, vedere [Applicazione dei criteri ai documenti di PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents).
+* Rimuovere i criteri dai documenti di PDF. Per informazioni, vedere [Rimozione dei criteri dai documenti di PDF](protecting-documents-policies.md#removing-policies-from-pdf-documents).
+* Documenti protetti tramite policy di Inspect. Per informazioni, vedere [Verifica dei documenti di PDF protetti dai criteri](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
+* Revoca dell&#39;accesso ai documenti di PDF. Per informazioni, vedere [Revoca dell&#39;accesso ai documenti](protecting-documents-policies.md#revoking-access-to-documents).
+* Ripristinare l&#39;accesso ai documenti revocati. Per informazioni, vedere [Ripristino dell&#39;accesso ai documenti revocati](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
+* Creare filigrane. Per informazioni, vedere [Creazione delle filigrane](protecting-documents-policies.md#creating-watermarks).
+* Cerca gli eventi. Per informazioni, vedere [Ricerca di eventi](protecting-documents-policies.md#searching-for-events).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Creazione di criteri {#creating-policies}
 
-Puoi creare policy a livello di programmazione utilizzando l’API Java di Document Security o l’API di servizio web. A *policy* è una raccolta di informazioni che includono impostazioni di protezione dei documenti, utenti autorizzati e diritti di utilizzo. È possibile creare e salvare un numero qualsiasi di criteri, utilizzando le impostazioni di protezione appropriate per situazioni e utenti diversi.
+Puoi creare policy a livello di programmazione utilizzando l’API Java di Document Security o l’API di servizio web. Un *criterio* è una raccolta di informazioni che include impostazioni di protezione dei documenti, utenti autorizzati e diritti di utilizzo. È possibile creare e salvare un numero qualsiasi di criteri, utilizzando le impostazioni di protezione appropriate per situazioni e utenti diversi.
 
 I criteri consentono di eseguire le seguenti attività:
 
@@ -133,7 +133,7 @@ Quando si crea una policy utilizzando l’API del servizio Web, fare riferimento
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -164,13 +164,13 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-utilities.jar
 * jbossall-client.jar (utilizza un file JAR diverso se AEM Forms non è distribuito su JBoss)
 
-Per informazioni sulla posizione di questi file JAR, vedi [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Per informazioni sul percorso di questi file JAR, vedi [Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Creare un oggetto API client di Document Security**
 
 Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, crea un oggetto client del servizio Document Security.
 
-**Impostare gli attributi del criterio**
+**Imposta gli attributi del criterio**
 
 Per creare un criterio, impostare gli attributi del criterio. Un attributo obbligatorio è il nome del criterio. I nomi dei criteri devono essere univoci per ogni set di criteri. Un set di criteri è semplicemente una raccolta di criteri. Se i criteri appartengono a set di criteri separati, è possibile che siano presenti due criteri con lo stesso nome. Tuttavia, due criteri all&#39;interno di un singolo set di criteri non possono avere lo stesso nome.
 
@@ -187,17 +187,17 @@ Un periodo di validità può essere impostato su una delle seguenti opzioni:
 
 Quando si impostano gli attributi che appartengono a un criterio, è inoltre possibile impostare le impostazioni di crittografia. Queste impostazioni di crittografia hanno effetto quando la policy viene applicata a un documento. È possibile specificare i seguenti valori di crittografia:
 
-* **AES256**: rappresenta l’algoritmo di crittografia AES con una chiave a 256 bit.
-* **AES128**: rappresenta l’algoritmo di crittografia AES con una chiave a 128 bit.
-* **Nessuna crittografia:** Non rappresenta alcuna crittografia.
+* **AES256**: rappresenta l&#39;algoritmo di crittografia AES con una chiave a 256 bit.
+* **AES128**: rappresenta l&#39;algoritmo di crittografia AES con una chiave a 128 bit.
+* **NoEncryption:** non rappresenta alcuna crittografia.
 
-Quando si specifica `NoEncryption` , non è possibile impostare `PlaintextMetadata` opzione per `false`. Se tenti di farlo, viene generata un’eccezione.
+Quando si specifica l&#39;opzione `NoEncryption`, non è possibile impostare l&#39;opzione `PlaintextMetadata` su `false`. Se tenti di farlo, viene generata un’eccezione.
 
 >[!NOTE]
 >
->Per informazioni sugli altri attributi che è possibile impostare, vedere `Policy` descrizione dell’interfaccia in [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Per informazioni sugli altri attributi che è possibile impostare, vedere la descrizione dell&#39;interfaccia `Policy` in [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**Creare una voce criterio**
+**Crea una voce di criterio**
 
 Una voce criterio consente di associare entità, ovvero gruppi e utenti, e autorizzazioni a un criterio. Un criterio deve avere almeno una voce di criterio. Si supponga, ad esempio, di eseguire i task riportati di seguito.
 
@@ -207,7 +207,7 @@ Una voce criterio consente di associare entità, ovvero gruppi e utenti, e autor
 
 Di conseguenza, i destinatari possono solo visualizzare il documento online e non possono copiarlo. Il documento rimane protetto finché non viene rimossa la protezione.
 
-**Registra la policy**
+**Registra il criterio**
 
 È necessario registrare un nuovo criterio prima di poterlo utilizzare. Dopo aver registrato una policy, è possibile utilizzarla per proteggere i documenti.
 
@@ -221,40 +221,40 @@ Crea una policy utilizzando Document Security API (Java):
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `DocumentSecurityClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `DocumentSecurityClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Impostare gli attributi del criterio.
 
-   * Creare un `Policy` oggetto richiamando il `InfomodelObjectFactory` statico dell&#39;oggetto `createPolicy` metodo. Questo metodo restituisce un `Policy` oggetto.
-   * Impostare l&#39;attributo name del criterio richiamando `Policy` dell&#39;oggetto `setName` e passando un valore stringa che specifica il nome del criterio.
-   * Impostare la descrizione del criterio richiamando `Policy` dell&#39;oggetto `setDescription` e passando un valore stringa che specifica la descrizione del criterio.
-   * Specificare il set di criteri a cui appartiene il nuovo criterio richiamando `Policy` dell&#39;oggetto `setPolicySetName` e passando un valore stringa che specifica il nome del set di criteri. (È possibile specificare `null` per questo valore di parametro che determina l’aggiunta del criterio a *I Miei Criteri* set di criteri.)
-   * Creare il periodo di validità del criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createValidityPeriod` metodo. Questo metodo restituisce un `ValidityPeriod` oggetto.
-   * Impostare il numero di giorni per i quali un documento protetto tramite policy è accessibile richiamando `ValidityPeriod` dell&#39;oggetto `setRelativeExpirationDays` e viene passato un valore intero che specifica il numero di giorni.
-   * Impostare il periodo di validità del criterio richiamando `Policy` dell&#39;oggetto `setValidityPeriod` e passando il `ValidityPeriod` oggetto.
+   * Creare un oggetto `Policy` richiamando il metodo `createPolicy` statico dell&#39;oggetto `InfomodelObjectFactory`. Questo metodo restituisce un oggetto `Policy`.
+   * Impostare l&#39;attributo name del criterio richiamando il metodo `setName` dell&#39;oggetto `Policy` e passando un valore stringa che specifica il nome del criterio.
+   * Impostare la descrizione del criterio richiamando il metodo `setDescription` dell&#39;oggetto `Policy` e passando un valore stringa che specifica la descrizione del criterio.
+   * Specificare il set di criteri a cui appartiene il nuovo criterio richiamando il metodo `setPolicySetName` dell&#39;oggetto `Policy` e passando un valore stringa che specifica il nome del set di criteri. È possibile specificare `null` per il valore di questo parametro che determina l&#39;aggiunta del criterio al set di criteri *Criteri personali*.
+   * Creare il periodo di validità del criterio richiamando il metodo `createValidityPeriod` statico dell&#39;oggetto `InfomodelObjectFactory`. Questo metodo restituisce un oggetto `ValidityPeriod`.
+   * Impostare il numero di giorni per i quali un documento protetto tramite policy è accessibile richiamando il metodo `setRelativeExpirationDays` dell&#39;oggetto `ValidityPeriod` e passando un valore intero che specifica il numero di giorni.
+   * Impostare il periodo di validità del criterio richiamando il metodo `setValidityPeriod` dell&#39;oggetto `Policy` e passando l&#39;oggetto `ValidityPeriod`.
 
 1. Crea una voce criterio.
 
-   * Creare una voce di criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createPolicyEntry` metodo. Questo metodo restituisce un `PolicyEntry` oggetto.
-   * Specificare le autorizzazioni del criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createPermission` metodo. Trasmettere un membro dati statico che appartiene al `Permission` interfaccia che rappresenta l’autorizzazione. Questo metodo restituisce un `Permission` oggetto. Ad esempio, per aggiungere l’autorizzazione che consente agli utenti di copiare i dati da un documento PDF protetto tramite policy, passa `Permission.COPY`. (Ripeti questo passaggio per ogni autorizzazione da aggiungere).
-   * Aggiungere l’autorizzazione alla voce del criterio richiamando `PolicyEntry` dell&#39;oggetto `addPermission` e passando il `Permission` oggetto. (Ripeti questo passaggio per ogni `Permission` oggetto creato).
-   * Creare l’entità criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createSpecialPrincipal` metodo. Trasmettere un membro dati che appartiene al `InfomodelObjectFactory` oggetto che rappresenta l&#39;entità principale. Questo metodo restituisce un `Principal` oggetto. Ad esempio, per aggiungere l&#39;editore del documento come entità principale, passare `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * Aggiungere l&#39;entità alla voce del criterio richiamando `PolicyEntry` dell&#39;oggetto `setPrincipal`e passando il `Principal` oggetto.
-   * Aggiungere la voce del criterio richiamando `Policy` dell&#39;oggetto `addPolicyEntry` e passando il `PolicyEntry` oggetto.
+   * Creare una voce dei criteri richiamando il metodo `createPolicyEntry` statico dell&#39;oggetto `InfomodelObjectFactory`. Questo metodo restituisce un oggetto `PolicyEntry`.
+   * Specificare le autorizzazioni del criterio richiamando il metodo `createPermission` statico dell&#39;oggetto `InfomodelObjectFactory`. Passa un membro dati statico che appartiene all&#39;interfaccia `Permission` che rappresenta l&#39;autorizzazione. Questo metodo restituisce un oggetto `Permission`. Per aggiungere ad esempio l&#39;autorizzazione che consente agli utenti di copiare dati da un documento PDF protetto tramite policy, passare `Permission.COPY`. (Ripeti questo passaggio per ogni autorizzazione da aggiungere).
+   * Aggiungere l&#39;autorizzazione alla voce dei criteri richiamando il metodo `addPermission` dell&#39;oggetto `PolicyEntry` e passando l&#39;oggetto `Permission`. Ripetere questo passaggio per ogni oggetto `Permission` creato.
+   * Creare l&#39;entità criterio richiamando il metodo `createSpecialPrincipal` statico dell&#39;oggetto `InfomodelObjectFactory`. Passare un membro dati appartenente all&#39;oggetto `InfomodelObjectFactory` che rappresenta l&#39;entità. Questo metodo restituisce un oggetto `Principal`. Ad esempio, per aggiungere l&#39;editore del documento come entità principale, passare `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
+   * Aggiungere l&#39;entità alla voce dei criteri richiamando il metodo `setPrincipal` dell&#39;oggetto `PolicyEntry` e passando l&#39;oggetto `Principal`.
+   * Aggiungere la voce del criterio richiamando il metodo `addPolicyEntry` dell&#39;oggetto `Policy` e passando l&#39;oggetto `PolicyEntry`.
 
 1. Registra il criterio.
 
-   * Creare un `PolicyManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getPolicyManager` metodo.
-   * Registra il criterio richiamando `PolicyManager` dell&#39;oggetto `registerPolicy` e fornendo i seguenti valori:
+   * Creare un oggetto `PolicyManager` richiamando il metodo `getPolicyManager` dell&#39;oggetto `DocumentSecurityClient`.
+   * Registrare il criterio richiamando il metodo `registerPolicy` dell&#39;oggetto `PolicyManager` e passando i valori seguenti:
 
-      * Il `Policy` oggetto che rappresenta il criterio da registrare.
+      * Oggetto `Policy` che rappresenta il criterio da registrare.
 
    * Valore stringa che rappresenta il set di criteri a cui appartiene il criterio.
 
-   Se si utilizza un account amministratore di AEM forms nelle impostazioni di connessione per creare `DocumentSecurityClient` , quindi specificare il nome del set di criteri quando si richiama `registerPolicy` metodo. Se si supera un `null` per il set di criteri, il criterio viene creato negli amministratori *I Miei Criteri* set di criteri.
+   Se si utilizza un account amministratore di AEM forms nelle impostazioni di connessione per creare l&#39;oggetto `DocumentSecurityClient`, specificare il nome del set di criteri quando si richiama il metodo `registerPolicy`. Se si passa un valore `null` per il set di criteri, il criterio verrà creato nel set di criteri *Criteri personali* degli amministratori.
 
-   Se utilizzi un utente di Document Security nelle impostazioni di connessione, puoi richiamare l’utente sovraccaricato `registerPolicy` metodo che accetta solo il criterio. In altre parole, non è necessario specificare il nome del set di criteri. Tuttavia, il criterio viene aggiunto al set di criteri denominato *I Miei Criteri*. Se non si desidera aggiungere il nuovo criterio a questo set di criteri, specificare un nome per il set di criteri quando si richiama `registerPolicy` metodo.
+   Se utilizzi un utente di Document Security nelle impostazioni di connessione, puoi richiamare il metodo `registerPolicy` sovraccarico che accetta solo i criteri. In altre parole, non è necessario specificare il nome del set di criteri. Tuttavia, il criterio viene aggiunto al set di criteri denominato *Criteri personali*. Se non si desidera aggiungere il nuovo criterio a questo set di criteri, specificare un nome per il set di criteri quando si richiama il metodo `registerPolicy`.
 
    >[!NOTE]
    >
@@ -274,30 +274,30 @@ Crea una policy utilizzando Document Security API (servizio web):
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `DocumentSecurityServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `DocumentSecurityServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `RightsManagementServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Impostare gli attributi del criterio.
 
-   * Creare un `PolicySpec` mediante il costruttore.
-   * Impostare il nome del criterio assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `name` membro dati.
-   * Impostare la descrizione del criterio assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `description` membro dati.
-   * Specificare il set di criteri a cui appartiene il criterio assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `policySetName` membro dati. Specificare un nome di set di criteri esistente. (È possibile specificare `null` per questo valore di parametro che determina l’aggiunta del criterio a *I Miei Criteri*.)
-   * Impostare il periodo di lease non in linea del criterio assegnando un valore intero al `PolicySpec` dell&#39;oggetto `offlineLeasePeriod` membro dati.
-   * Imposta il `PolicySpec` dell&#39;oggetto `policyXml` membro dati con un valore stringa che rappresenta i dati XML PDRL. Per eseguire questa operazione, creare una .NET `StreamReader` mediante il costruttore. Passa la posizione di un file XML PDRL che rappresenta il criterio a `StreamReader` costruttore. Quindi, richiama `StreamReader` dell&#39;oggetto `ReadLine` e assegna il valore restituito a una variabile stringa. Effettua iterazione attraverso `StreamReader` oggetto fino al `ReadLine` il metodo restituisce null. Assegna la variabile stringa a `PolicySpec` dell&#39;oggetto `policyXml` membro dati.
+   * Creare un oggetto `PolicySpec` utilizzando il relativo costruttore.
+   * Impostare il nome del criterio assegnando un valore stringa al membro dati `name` dell&#39;oggetto `PolicySpec`.
+   * Impostare la descrizione del criterio assegnando un valore stringa al membro dati `description` dell&#39;oggetto `PolicySpec`.
+   * Specificare il set di criteri a cui appartiene il criterio assegnando un valore stringa al membro dati `policySetName` dell&#39;oggetto `PolicySpec`. Specificare un nome di set di criteri esistente. È possibile specificare `null` per il valore di questo parametro che determina l&#39;aggiunta del criterio a *Criteri personali*.
+   * Impostare il periodo di lease offline del criterio assegnando un valore intero al membro dati `offlineLeasePeriod` dell&#39;oggetto `PolicySpec`.
+   * Impostare il membro dati `policyXml` dell&#39;oggetto `PolicySpec` con un valore stringa che rappresenta i dati XML PDRL. Per eseguire questa attività, creare un oggetto .NET `StreamReader` utilizzando il relativo costruttore. Passare la posizione di un file XML PDRL che rappresenta il criterio al costruttore `StreamReader`. Quindi, richiamare il metodo `ReadLine` dell&#39;oggetto `StreamReader` e assegnare il valore restituito a una variabile stringa. Scorrere l&#39;oggetto `StreamReader` fino a quando il metodo `ReadLine` non restituisce null. Assegnare la variabile stringa al membro dati `policyXml` dell&#39;oggetto `PolicySpec`.
 
 1. Crea una voce criterio.
 
@@ -305,14 +305,14 @@ Crea una policy utilizzando Document Security API (servizio web):
 
 1. Registra il criterio.
 
-   Registra il criterio richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `registerPolicy` e fornendo i seguenti valori:
+   Registrare il criterio richiamando il metodo `registerPolicy` dell&#39;oggetto `DocumentSecurityServiceClient` e passando i valori seguenti:
 
-   * Il `PolicySpec` oggetto che rappresenta il criterio da registrare.
-   * Valore stringa che rappresenta il set di criteri a cui appartiene il criterio. È possibile specificare un `null` valore che determina l’aggiunta del criterio al *MyPolicy* set di criteri.
+   * Oggetto `PolicySpec` che rappresenta il criterio da registrare.
+   * Valore stringa che rappresenta il set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;aggiunta del criterio al set di criteri *MyPolicy*.
 
-   Se si utilizza un account amministratore di AEM forms nelle impostazioni di connessione per creare `DocumentSecurityClient` oggetto, specificare il nome del set di criteri quando si richiama `registerPolicy` metodo.
+   Se si utilizza un account amministratore di AEM forms nelle impostazioni di connessione per creare l&#39;oggetto `DocumentSecurityClient`, specificare il nome del set di criteri quando si richiama il metodo `registerPolicy`.
 
-   Se utilizzi un utente di Document Security nelle impostazioni di connessione, puoi richiamare l’utente sovraccaricato `registerPolicy` metodo che accetta solo il criterio. In altre parole, non è necessario specificare il nome del set di criteri. Tuttavia, il criterio viene aggiunto al set di criteri denominato *I Miei Criteri*. Se non si desidera aggiungere il nuovo criterio a questo set di criteri, specificare un nome per il set di criteri quando si richiama `registerPolicy` metodo.
+   Se utilizzi un utente di Document SecurityDocument Security nelle impostazioni di connessione, puoi richiamare il metodo `registerPolicy` sovraccarico che accetta solo il criterio. In altre parole, non è necessario specificare il nome del set di criteri. Tuttavia, il criterio viene aggiunto al set di criteri denominato *Criteri personali*. Se non si desidera aggiungere il nuovo criterio a questo set di criteri, specificare un nome per il set di criteri quando si richiama il metodo `registerPolicy`.
 
    >[!NOTE]
    >
@@ -329,11 +329,11 @@ Puoi modificare una policy esistente utilizzando l’API Java di Document Securi
 
 È possibile modificare un criterio quando cambiano i requisiti aziendali e il criterio non riflette più questi requisiti. Invece di creare un criterio, puoi semplicemente aggiornare un criterio esistente.
 
-Per modificare gli attributi dei criteri utilizzando un servizio web (ad esempio, utilizzando le classi proxy Java create con JAX-WS), è necessario assicurarsi che i criteri siano registrati nel servizio Document Security. È quindi possibile fare riferimento al criterio esistente utilizzando `PolicySpec.getPolicyXml` e modificare gli attributi dei criteri utilizzando i metodi applicabili. Ad esempio, puoi modificare il periodo di lease offline richiamando il `PolicySpec.setOfflineLeasePeriod` metodo.
+Per modificare gli attributi dei criteri utilizzando un servizio web (ad esempio, utilizzando le classi proxy Java create con JAX-WS), è necessario assicurarsi che i criteri siano registrati nel servizio Document Security. È quindi possibile fare riferimento al criterio esistente utilizzando il metodo `PolicySpec.getPolicyXml` e modificare gli attributi del criterio utilizzando i metodi applicabili. Ad esempio, è possibile modificare il periodo di lease offline richiamando il metodo `PolicySpec.setOfflineLeasePeriod`.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -351,23 +351,23 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Document Security**
 
-Prima di poter eseguire un’operazione Document Security Service a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se utilizzi l’API Java, crea un’ `RightsManagementClient` oggetto. Se utilizzi l’API del servizio web Document Security, crea un’ `RightsManagementServiceService` oggetto.
+Prima di poter eseguire un’operazione Document Security Service a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se si utilizza l&#39;API Java, creare un oggetto `RightsManagementClient`. Se utilizzi l’API del servizio web Document Security, crea un oggetto `RightsManagementServiceService`.
 
-**Recuperare un criterio esistente**
+**Recupera un criterio esistente**
 
-Recuperare un criterio esistente per modificarlo. Per recuperare un criterio, specificare il nome del criterio e il set di criteri a cui appartiene il criterio. Se si specifica un `null` per il nome del set di criteri, il criterio viene recuperato dal *I Miei Criteri* set di criteri.
+Recuperare un criterio esistente per modificarlo. Per recuperare un criterio, specificare il nome del criterio e il set di criteri a cui appartiene il criterio. Se si specifica un valore `null` per il nome del set di criteri, il criterio verrà recuperato dal set di criteri *Criteri personali*.
 
-**Impostare gli attributi del criterio**
+**Imposta gli attributi del criterio**
 
 Per modificare un criterio, è necessario modificare il valore degli attributi del criterio. L’unico attributo del criterio che non può essere modificato è l’attributo name. Ad esempio, per modificare il periodo di lease offline del criterio, è possibile modificare il valore dell&#39;attributo del periodo di lease offline del criterio.
 
-Quando si modifica il periodo di lease offline di un criterio utilizzando un servizio web, il `offlineLeasePeriod` campo sul `PolicySpec` viene ignorata. Per aggiornare il periodo di lease offline, modifica `OfflineLeasePeriod` nel documento PDRL XML. Quindi, fare riferimento al documento XML PDRL aggiornato utilizzando `PolicySpec` dell&#39;interfaccia `policyXML` membro dati.
+Quando si modifica il periodo di lease offline di un criterio utilizzando un servizio Web, il campo `offlineLeasePeriod` nell&#39;interfaccia `PolicySpec` viene ignorato. Per aggiornare il periodo di lease offline, modificare l&#39;elemento `OfflineLeasePeriod` nel documento XML PDRL. Fare quindi riferimento al documento XML PDRL aggiornato utilizzando il membro dati `policyXML` dell&#39;interfaccia `PolicySpec`.
 
 >[!NOTE]
 >
->Per informazioni sugli altri attributi che è possibile impostare, vedere `Policy` descrizione dell’interfaccia in [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Per informazioni sugli altri attributi che è possibile impostare, vedere la descrizione dell&#39;interfaccia `Policy` in [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**Aggiornare il criterio**
+**Aggiorna il criterio**
 
 Prima di poter applicare le modifiche apportate a una policy, è necessario aggiornarla con il servizio Document Security. Le modifiche alle policy che proteggono i documenti vengono aggiornate alla successiva sincronizzazione del documento protetto con il servizio Document Security.
 
@@ -381,24 +381,24 @@ Modifica una policy esistente utilizzando Document Security API (Java):
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `RightsManagementClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `RightsManagementClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recupera un criterio esistente.
 
-   * Creare un `PolicyManager` oggetto richiamando il `RightsManagementClient` dell&#39;oggetto `getPolicyManager` metodo.
-   * Creare un `Policy` oggetto che rappresenta il criterio da aggiornare richiamando `PolicyManager` dell&#39;oggetto `getPolicy` e fornendo i seguenti valori&quot;
+   * Creare un oggetto `PolicyManager` richiamando il metodo `getPolicyManager` dell&#39;oggetto `RightsManagementClient`.
+   * Creare un oggetto `Policy` che rappresenta il criterio da aggiornare richiamando il metodo `getPolicy` dell&#39;oggetto `PolicyManager` e passando i valori seguenti&quot;
 
-      * Valore stringa che rappresenta il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che comporta la `MyPolicies` set di criteri in uso.
+      * Valore stringa che rappresenta il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
       * Valore stringa che rappresenta il nome del criterio.
 
 1. Impostare gli attributi del criterio.
 
-   Modifica gli attributi della policy per soddisfare i requisiti aziendali. Ad esempio, per modificare il periodo di lease offline del criterio, richiama `Policy` dell&#39;oggetto `setOfflineLeasePeriod` metodo.
+   Modifica gli attributi della policy per soddisfare i requisiti aziendali. Ad esempio, per modificare il periodo di lease offline del criterio, richiamare il metodo `setOfflineLeasePeriod` dell&#39;oggetto `Policy`.
 
 1. Aggiorna il criterio.
 
-   Aggiorna il criterio richiamando `PolicyManager` dell&#39;oggetto `updatePolicy` metodo. Passa il `Policy` oggetto che rappresenta il criterio da aggiornare.
+   Aggiornare il criterio richiamando il metodo `updatePolicy` dell&#39;oggetto `PolicyManager`. Passa l&#39;oggetto `Policy` che rappresenta il criterio da aggiornare.
 
 **Esempi di codice**
 
@@ -414,27 +414,27 @@ Modifica una policy esistente utilizzando Document Security API (servizio web):
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `RightsManagementServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `RightsManagementServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `RightsManagementServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupera un criterio esistente.
 
-   Creare un `PolicySpec` oggetto che rappresenta il criterio da modificare richiamando `RightsManagementServiceClient` dell&#39;oggetto `getPolicy` e fornendo i seguenti valori:
+   Creare un oggetto `PolicySpec` che rappresenta il criterio da modificare richiamando il metodo `getPolicy` dell&#39;oggetto `RightsManagementServiceClient` e passando i valori seguenti:
 
-   * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che comporta la `MyPolicies` set di criteri in uso.
+   * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
    * Valore stringa che specifica il nome del criterio.
 
 1. Impostare gli attributi del criterio.
@@ -443,7 +443,7 @@ Modifica una policy esistente utilizzando Document Security API (servizio web):
 
 1. Aggiorna il criterio.
 
-   Aggiorna il criterio richiamando `RightsManagementServiceClient` dell&#39;oggetto `updatePolicyFromSDK` e passando il `PolicySpec` oggetto che rappresenta il criterio da aggiornare.
+   Aggiornare il criterio richiamando il metodo `updatePolicyFromSDK` dell&#39;oggetto `RightsManagementServiceClient` e passando l&#39;oggetto `PolicySpec` che rappresenta il criterio da aggiornare.
 
 **Esempi di codice**
 
@@ -458,7 +458,7 @@ Puoi eliminare una policy esistente utilizzando l’API Java di Document Securit
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-2}
 
@@ -474,7 +474,7 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Document Security**
 
-Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se utilizzi l’API Java, crea un’ `RightsManagementClient` oggetto. Se utilizzi l’API del servizio web Document Security, crea un’ `RightsManagementServiceService` oggetto.
+Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se si utilizza l&#39;API Java, creare un oggetto `RightsManagementClient`. Se utilizzi l’API del servizio web Document Security, crea un oggetto `RightsManagementServiceService`.
 
 **Elimina il criterio**
 
@@ -490,15 +490,15 @@ Elimina una policy utilizzando Document Security API (Java):
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `RightsManagementClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `RightsManagementClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Elimina il criterio.
 
-   * Creare un `PolicyManager` oggetto richiamando il `RightsManagementClient` dell&#39;oggetto `getPolicyManager` metodo.
-   * Elimina il criterio richiamando `PolicyManager` dell&#39;oggetto `deletePolicy` e fornendo i seguenti valori:
+   * Creare un oggetto `PolicyManager` richiamando il metodo `getPolicyManager` dell&#39;oggetto `RightsManagementClient`.
+   * Eliminare il criterio richiamando il metodo `deletePolicy` dell&#39;oggetto `PolicyManager` e passando i valori seguenti:
 
-      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che comporta la `MyPolicies` set di criteri in uso.
+      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
       * Valore stringa che specifica il nome del criterio da eliminare.
 
 **Esempi di codice**
@@ -517,27 +517,27 @@ Elimina una policy utilizzando l’API di Document Security (servizio web):
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `RightsManagementServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `RightsManagementServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `RightsManagementServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Elimina il criterio.
 
-   Eliminare un criterio richiamando `RightsManagementServiceClient` dell&#39;oggetto `deletePolicy` e fornendo i seguenti valori:
+   Eliminare un criterio richiamando il metodo `deletePolicy` dell&#39;oggetto `RightsManagementServiceClient` e passando i valori seguenti:
 
-   * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che comporta la `MyPolicies` set di criteri in uso.
+   * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
    * Valore stringa che specifica il nome del criterio da eliminare.
 
 **Esempi di codice**
@@ -557,7 +557,7 @@ Quando il documento è aperto, è inoltre possibile limitare l&#39;accesso alle 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-3}
 
@@ -575,13 +575,13 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Document Security**
 
-Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, crea un oggetto client del servizio Document Security. Se utilizzi l’API Java, crea un’ `DocumentSecurityClient` oggetto. Se utilizzi l’API del servizio web Document Security, crea un’ `DocumentSecurityServiceService` oggetto.
+Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, crea un oggetto client del servizio Document Security. Se si utilizza l&#39;API Java, creare un oggetto `DocumentSecurityClient`. Se utilizzi l’API del servizio web Document Security, crea un oggetto `DocumentSecurityServiceService`.
 
 **Recuperare un documento PDF**
 
 È possibile recuperare un documento PDF per applicare una policy. Dopo aver applicato una policy al documento PDF, gli utenti vengono limitati quando utilizzano il documento. Se, ad esempio, la policy non consente l&#39;apertura del documento in modalità non in linea, gli utenti devono essere in linea per aprire il documento.
 
-**Applicare una policy esistente al documento PDF**
+**Applica un criterio esistente al documento PDF**
 
 Per applicare una policy a un documento PDF, fai riferimento a una policy esistente e specifica a quale set di policy appartiene la policy. L&#39;utente che sta impostando le proprietà di connessione deve avere accesso al criterio specificato. In caso contrario, si verificherà un&#39;eccezione.
 
@@ -607,34 +607,34 @@ Applica una policy a un documento PDF utilizzando Document Security API (Java):
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `RightsManagementClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `RightsManagementClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare un documento PDF.
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento PDF utilizzando il relativo costruttore. Passa un valore stringa che specifica la posizione del documento PDF.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento PDF utilizzando il relativo costruttore. Passa un valore stringa che specifica la posizione del documento PDF.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Applica una policy esistente al documento PDF.
 
-   * Creare un `DocumentManager` oggetto richiamando il `RightsManagementClient` dell&#39;oggetto `getDocumentManager` metodo.
-   * Applicare una policy al documento PDF richiamando `DocumentManager` dell&#39;oggetto `protectDocument` e fornendo i seguenti valori:
+   * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `RightsManagementClient`.
+   * Applicare una policy al documento PDF richiamando il metodo `protectDocument` dell&#39;oggetto `DocumentManager` e passando i valori seguenti:
 
-      * Il `com.adobe.idp.Document` oggetto che contiene il documento PDF a cui viene applicato il criterio.
+      * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF a cui viene applicato il criterio.
       * Valore stringa che specifica il nome del documento.
-      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un `null` valore che risulta in `MyPolicies` set di criteri in uso.
+      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
       * Valore stringa che specifica il nome del criterio.
       * Valore string che rappresenta il nome del dominio del gestore utenti dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro successivo deve essere null).
-      * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere `null` (se questo parametro è null, il valore del parametro precedente deve essere `null`).
-      * A `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta la lingua utilizzata per selezionare il modello di MS Office. Questo valore di parametro è facoltativo e non viene utilizzato per i documenti PDF. Per proteggere un documento PDF, specifica `null`.
+      * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore del parametro è facoltativo e può essere `null` (se il parametro è null, il valore del parametro precedente deve essere `null`).
+      * `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta le impostazioni locali utilizzate per la selezione del modello di MS Office. Questo valore di parametro è facoltativo e non viene utilizzato per i documenti PDF. Per proteggere un documento PDF, specificare `null`.
 
-     Il `protectDocument` il metodo restituisce un `RMSecureDocumentResult` oggetto contenente il documento PDF protetto tramite policy.
+     Il metodo `protectDocument` restituisce un oggetto `RMSecureDocumentResult` contenente il documento PDF protetto tramite policy.
 
 1. Salvare il documento PDF.
 
-   * Richiama `RMSecureDocumentResult` dell&#39;oggetto `getProtectedDoc` metodo per ottenere il documento PDF protetto tramite policy. Questo metodo restituisce un `com.adobe.idp.Document` oggetto.
-   * Creare un `java.io.File` e accertati che l’estensione del file sia PDF.
-   * Richiama `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` metodo per copiare il contenuto del `Document` al file (assicurati di utilizzare il `Document` oggetto restituito da `getProtectedDoc` metodo).
+   * Richiama il metodo `getProtectedDoc` dell&#39;oggetto `RMSecureDocumentResult` per ottenere il documento PDF protetto tramite policy. Questo metodo restituisce un oggetto `com.adobe.idp.Document`.
+   * Creare un oggetto `java.io.File` e assicurarsi che l&#39;estensione del file sia PDF.
+   * Richiamare il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` per copiare il contenuto dell&#39;oggetto `Document` nel file (assicurarsi di utilizzare l&#39;oggetto `Document` restituito dal metodo `getProtectedDoc`).
 
 **Esempi di codice**
 
@@ -659,53 +659,53 @@ Applicare una policy a un documento PDF utilizzando Document Security API (servi
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `RightsManagementServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `RightsManagementServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `RightsManagementServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Trasmettere un valore stringa che specifica il WSDL al servizio Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento PDF.
 
-   * Creare un `BLOB` mediante il costruttore. Il `BLOB` L&#39;oggetto viene utilizzato per memorizzare un documento PDF a cui viene applicato un criterio.
-   * Creare un `System.IO.FileStream` dell&#39;oggetto richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto della `System.IO.FileStream` oggetto. Determinare la dimensione dell&#39;array di byte ottenendo `System.IO.FileStream` dell&#39;oggetto `Length` proprietà.
-   * Compilare la matrice di byte con i dati di flusso richiamando `System.IO.FileStream` dell&#39;oggetto `Read` metodo. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Popolare il `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto della matrice di byte.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento PDF a cui viene applicato un criterio.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. Determinare la dimensione della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
 1. Applica una policy esistente al documento PDF.
 
-   Applicare una policy al documento PDF richiamando `RightsManagementServiceClient` dell&#39;oggetto `protectDocument` e fornendo i seguenti valori:
+   Applicare una policy al documento PDF richiamando il metodo `protectDocument` dell&#39;oggetto `RightsManagementServiceClient` e passando i valori seguenti:
 
-   * Il `BLOB` oggetto che contiene il documento PDF a cui viene applicato il criterio.
+   * L&#39;oggetto `BLOB` che contiene il documento PDF a cui viene applicato il criterio.
    * Valore stringa che specifica il nome del documento.
-   * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un `null` valore che risulta in `MyPolicies` set di criteri in uso.
+   * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
    * Valore stringa che specifica il nome del criterio.
    * Valore string che rappresenta il nome del dominio del gestore utenti dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro successivo deve essere `null`).
-   * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro precedente deve essere `null`).
-   * A `RMLocale` valore che specifica il valore locale (ad esempio, `RMLocale.en`).
+   * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore del parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro precedente deve essere `null`).
+   * Valore `RMLocale` che specifica il valore delle impostazioni locali, ad esempio `RMLocale.en`.
    * Parametro di output stringa utilizzato per memorizzare il valore dell&#39;identificatore dei criteri.
    * Parametro di output stringa utilizzato per memorizzare il valore dell&#39;identificatore protetto tramite policy.
-   * Un parametro di output stringa utilizzato per memorizzare il tipo mime (ad esempio, `application/pdf`).
+   * Parametro di output stringa utilizzato per memorizzare il tipo MIME (ad esempio, `application/pdf`).
 
-   Il `protectDocument` il metodo restituisce un `BLOB` oggetto contenente il documento PDF protetto tramite policy.
+   Il metodo `protectDocument` restituisce un oggetto `BLOB` contenente il documento PDF protetto tramite policy.
 
 1. Salvare il documento PDF.
 
-   * Creare un `System.IO.FileStream` richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF protetto tramite policy.
-   * Creare una matrice di byte che memorizza il contenuto dei dati `BLOB` oggetto restituito da `protectDocument` metodo. Popolare la matrice di byte ottenendo il valore della `BLOB` dell&#39;oggetto `MTOM` membro dati.
-   * Creare un `System.IO.BinaryWriter` oggetto richiamando il relativo costruttore e passando il `System.IO.FileStream` oggetto.
-   * Scrivere il contenuto della matrice di byte in un file PDF richiamando `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF protetto tramite policy.
+   * Creare una matrice di byte che memorizza il contenuto dei dati dell&#39;oggetto `BLOB` restituito dal metodo `protectDocument`. Popolare la matrice di byte ottenendo il valore del membro dati `MTOM` dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
+   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Esempi di codice**
 
@@ -720,7 +720,7 @@ Per esempi di codice con il servizio Document Security, consulta la sezione Quic
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-4}
 
@@ -746,9 +746,9 @@ Per rimuovere una policy, è possibile recuperare un documento PDF protetto tram
 
 **Rimuovi il criterio dal documento PDF**
 
-È possibile rimuovere una policy da un documento PDF protetto tramite policy a condizione che nelle impostazioni di connessione sia specificato un amministratore. In caso contrario, il criterio utilizzato per proteggere un documento deve contenere `SWITCH_POLICY` autorizzazione a rimuovere una policy da un documento PDF. Inoltre, anche l’utente specificato nelle impostazioni di connessione di AEM Forms deve disporre di tale autorizzazione. In caso contrario, viene generata un&#39;eccezione.
+È possibile rimuovere una policy da un documento PDF protetto tramite policy a condizione che nelle impostazioni di connessione sia specificato un amministratore. In caso contrario, il criterio utilizzato per proteggere un documento deve contenere l&#39;autorizzazione `SWITCH_POLICY` per rimuovere un criterio da un documento PDF. Inoltre, anche l’utente specificato nelle impostazioni di connessione di AEM Forms deve disporre di tale autorizzazione. In caso contrario, viene generata un&#39;eccezione.
 
-**Salva il documento PDF non protetto**
+**Salvare il documento di PDF non protetto**
 
 Dopo che il servizio Document Security ha rimosso una policy da un documento PDF, puoi salvare il documento PDF non protetto come file PDF.
 
@@ -770,23 +770,23 @@ Rimuovi una policy da un documento PDF protetto tramite policy utilizzando Docum
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `DocumentSecurityClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `DocumentSecurityClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare un documento PDF protetto tramite policy.
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento PDF protetto tramite policy utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento PDF.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento PDF protetto tramite policy utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento PDF.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Rimuovi il criterio dal documento PDF.
 
-   * Creare un `DocumentManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getDocumentManager` metodo.
-   * Rimuovere una policy dal documento PDF richiamando `DocumentManager` dell&#39;oggetto `removeSecurity` e passando il `com.adobe.idp.Document` oggetto contenente il documento PDF protetto tramite policy. Questo metodo restituisce un `com.adobe.idp.Document` oggetto contenente un documento PDF non protetto.
+   * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `DocumentSecurityClient`.
+   * Rimuovere un criterio dal documento PDF richiamando il metodo `removeSecurity` dell&#39;oggetto `DocumentManager` e passando l&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF protetto tramite criteri. Questo metodo restituisce un oggetto `com.adobe.idp.Document` contenente un documento PDF non protetto.
 
 1. Salvare il documento PDF non protetto.
 
-   * Creare un `java.io.File` e accertati che l’estensione del file sia PDF.
-   * Richiama `Document` dell&#39;oggetto `copyToFile` metodo per copiare il contenuto del `Document` al file (assicurati di utilizzare il `Document` oggetto restituito da `removeSecurity` metodo).
+   * Creare un oggetto `java.io.File` e assicurarsi che l&#39;estensione del file sia PDF.
+   * Richiamare il metodo `copyToFile` dell&#39;oggetto `Document` per copiare il contenuto dell&#39;oggetto `Document` nel file (assicurarsi di utilizzare l&#39;oggetto `Document` restituito dal metodo `removeSecurity`).
 
 **Esempi di codice**
 
@@ -804,39 +804,39 @@ Rimuovi una policy da un documento PDF protetto tramite policy utilizzando Docum
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `DocumentSecurityServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `DocumentSecurityServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `DocumentSecurityServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento PDF protetto tramite policy.
 
-   * Creare un `BLOB` mediante il costruttore. Il `BLOB` L&#39;oggetto viene utilizzato per memorizzare il documento PDF protetto tramite policy da cui viene rimossa la policy.
-   * Creare un `System.IO.FileStream` dell&#39;oggetto richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto della `System.IO.FileStream` oggetto. È possibile determinare le dimensioni della matrice di byte ottenendo `System.IO.FileStream` dell&#39;oggetto `Length` proprietà.
-   * Compilare la matrice di byte con i dati di flusso richiamando `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Popolare il `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto della matrice di byte.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per archiviare il documento PDF protetto tramite policy da cui viene rimosso il criterio.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
 1. Rimuovi il criterio dal documento PDF.
 
-   Rimuovere la policy dal documento PDF richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `removePolicySecurity` e passando il `BLOB` oggetto contenente il documento PDF protetto tramite policy. Questo metodo restituisce un `BLOB` oggetto contenente un documento PDF non protetto.
+   Rimuovere il criterio dal documento PDF richiamando il metodo `removePolicySecurity` dell&#39;oggetto `DocumentSecurityServiceClient` e passando l&#39;oggetto `BLOB` che contiene il documento PDF protetto tramite criteri. Questo metodo restituisce un oggetto `BLOB` contenente un documento PDF non protetto.
 
 1. Salvare il documento PDF non protetto.
 
-   * Creare un `System.IO.FileStream` richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF non protetto.
-   * Creare una matrice di byte che memorizza il contenuto dei dati `BLOB` oggetto restituito da `removePolicySecurity` metodo. Popolare la matrice di byte ottenendo il valore della `BLOB` dell&#39;oggetto `MTOM` campo.
-   * Creare un `System.IO.BinaryWriter` oggetto richiamando il relativo costruttore e passando il `System.IO.FileStream` oggetto.
+   * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF non protetto.
+   * Creare una matrice di byte che memorizza il contenuto dei dati dell&#39;oggetto `BLOB` restituito dal metodo `removePolicySecurity`. Compilare la matrice di byte ottenendo il valore del campo `MTOM` dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
 
 **Esempi di codice**
 
@@ -859,7 +859,7 @@ La possibilità di revocare l&#39;accesso a un documento offre una protezione ag
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-5}
 
@@ -912,24 +912,24 @@ Revoca dell’accesso a un documento PDF protetto tramite policy utilizzando Doc
 
 1. Creare un oggetto API client di Document Security
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `DocumentSecurityClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `DocumentSecurityClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare un documento PDF protetto tramite policy
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento PDF protetto tramite policy utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento PDF.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento PDF protetto tramite policy utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento PDF.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Revoca del documento protetto tramite policy
 
-   * Creare un `DocumentManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getDocumentManager` metodo.
-   * Recuperare il valore dell&#39;identificatore di licenza del documento protetto tramite policy richiamando `DocumentManager` dell&#39;oggetto `getLicenseId` metodo. Passa il `com.adobe.idp.Document` oggetto che rappresenta il documento protetto tramite policy. Questo metodo restituisce un valore stringa che rappresenta il valore dell&#39;identificatore di licenza.
-   * Creare un `LicenseManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getLicenseManager` metodo.
-   * Revoca del documento protetto tramite policy richiamando `LicenseManager` dell&#39;oggetto `revokeLicense` e fornendo i seguenti valori:
+   * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `DocumentSecurityClient`.
+   * Recuperare il valore dell&#39;identificatore di licenza del documento protetto tramite policy richiamando il metodo `getLicenseId` dell&#39;oggetto `DocumentManager`. Passa l&#39;oggetto `com.adobe.idp.Document` che rappresenta il documento protetto tramite policy. Questo metodo restituisce un valore stringa che rappresenta il valore dell&#39;identificatore di licenza.
+   * Creare un oggetto `LicenseManager` richiamando il metodo `getLicenseManager` dell&#39;oggetto `DocumentSecurityClient`.
+   * Revocare il documento protetto tramite policy richiamando il metodo `revokeLicense` dell&#39;oggetto `LicenseManager` e passando i valori seguenti:
 
-      * Valore stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite policy (specificare il valore restituito del `DocumentManager` dell&#39;oggetto `getLicenseId` metodo).
-      * Un membro dati statico del `License` interfaccia che specifica il motivo della revoca del documento. Ad esempio, puoi specificare `License.DOCUMENT_REVISED`.
-      * A `java.net.URL` valore che specifica la posizione in cui si trova un documento revisionato. Se non desideri reindirizzare un utente a un altro URL, puoi passare `null`.
+      * Valore stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite policy (specificare il valore restituito del metodo `getLicenseId` dell&#39;oggetto `DocumentManager`).
+      * Membro dati statico dell&#39;interfaccia `License` che specifica il motivo della revoca del documento. Ad esempio, è possibile specificare `License.DOCUMENT_REVISED`.
+      * Valore `java.net.URL` che specifica il percorso in cui si trova un documento revisionato. Se non desideri reindirizzare un utente a un altro URL, puoi passare `null`.
 
 **Esempi di codice**
 
@@ -947,38 +947,38 @@ Revoca dell’accesso a un documento PDF protetto tramite policy utilizzando Doc
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Creare un oggetto API client di Document Security
 
-   * Creare un `DocumentSecurityServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `DocumentSecurityServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `DocumentSecurityServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento PDF protetto tramite policy
 
-   * Creare un `BLOB` mediante il costruttore. Il `BLOB` L&#39;oggetto viene utilizzato per memorizzare un documento PDF protetto tramite policy revocato.
-   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF protetto tramite policy da revocare e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto della `System.IO.FileStream` oggetto. È possibile determinare le dimensioni della matrice di byte ottenendo `System.IO.FileStream` dell&#39;oggetto `Length` proprietà.
-   * Compilare la matrice di byte con i dati di flusso richiamando `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Popolare il `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto della matrice di byte.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per archiviare un documento PDF protetto tramite policy revocato.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF protetto tramite policy da revocare e la modalità di apertura del file.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
 1. Revoca del documento protetto tramite policy
 
-   * Recuperare il valore dell&#39;identificatore di licenza del documento protetto tramite policy richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `getLicenseID` e passando il `BLOB` oggetto che rappresenta il documento protetto tramite policy. Questo metodo restituisce un valore stringa che rappresenta l&#39;identificatore della licenza.
-   * Revoca del documento protetto tramite policy richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `revokeLicense` e fornendo i seguenti valori:
+   * Recuperare il valore dell&#39;identificatore di licenza del documento protetto tramite policy richiamando il metodo `getLicenseID` dell&#39;oggetto `DocumentSecurityServiceClient` e passando l&#39;oggetto `BLOB` che rappresenta il documento protetto tramite policy. Questo metodo restituisce un valore stringa che rappresenta l&#39;identificatore della licenza.
+   * Revocare il documento protetto tramite policy richiamando il metodo `revokeLicense` dell&#39;oggetto `DocumentSecurityServiceClient` e passando i valori seguenti:
 
-      * Valore stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite policy (specificare il valore restituito del `DocumentSecurityServiceService` dell&#39;oggetto `getLicenseId` metodo).
-      * Un membro dati statico del `Reason` enum che specifica il motivo della revoca del documento. Ad esempio, puoi specificare `Reason.DOCUMENT_REVISED`.
-      * A `string` valore che specifica la posizione URL in cui si trova un documento revisionato. Se non desideri reindirizzare un utente a un altro URL, puoi passare `null`.
+      * Valore stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite policy (specificare il valore restituito del metodo `getLicenseId` dell&#39;oggetto `DocumentSecurityServiceService`).
+      * Membro dati statico dell&#39;enumerazione `Reason` che specifica il motivo della revoca del documento. Ad esempio, è possibile specificare `Reason.DOCUMENT_REVISED`.
+      * Valore `string` che specifica la posizione URL in cui si trova un documento revisionato. Se non desideri reindirizzare un utente a un altro URL, puoi passare `null`.
 
 **Esempi di codice**
 
@@ -1001,7 +1001,7 @@ Per esempi di codice con il servizio Document Security, consulta la sezione Quic
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-6}
 
@@ -1018,7 +1018,7 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Document Security**
 
-Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se utilizzi l’API Java, crea un’ `DocumentSecurityClient` oggetto. Se utilizzi l’API del servizio web Document Security, crea un’ `DocumentSecurityServiceService` oggetto.
+Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se si utilizza l&#39;API Java, creare un oggetto `DocumentSecurityClient`. Se utilizzi l’API del servizio web Document Security, crea un oggetto `DocumentSecurityServiceService`.
 
 **Recuperare l&#39;identificatore di licenza del documento di PDF revocato**
 
@@ -1048,20 +1048,20 @@ Ripristinare l’accesso a un documento revocato utilizzando Document Security A
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `DocumentSecurityClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `DocumentSecurityClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare l&#39;identificatore di licenza del documento PDF revocato.
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento PDF revocato tramite il costruttore e passando un valore stringa che specifica la posizione del documento PDF.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
-   * Creare un `DocumentManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getDocumentManager` metodo.
-   * Recuperare il valore dell&#39;identificatore di licenza del documento revocato richiamando `DocumentManager` dell&#39;oggetto `getLicenseId` e passando il `com.adobe.idp.Document` oggetto che rappresenta il documento revocato. Questo metodo restituisce un valore stringa che rappresenta l&#39;identificatore della licenza.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento PDF revocato utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento PDF.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
+   * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `DocumentSecurityClient`.
+   * Recuperare il valore dell&#39;identificatore di licenza del documento revocato richiamando il metodo `getLicenseId` dell&#39;oggetto `DocumentManager` e passando l&#39;oggetto `com.adobe.idp.Document` che rappresenta il documento revocato. Questo metodo restituisce un valore stringa che rappresenta l&#39;identificatore della licenza.
 
 1. Ripristinare l&#39;accesso al documento PDF revocato.
 
-   * Creare un `LicenseManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getLicenseManager` metodo.
-   * Ripristinare l&#39;accesso al documento PDF revocato richiamando `LicenseManager` dell&#39;oggetto `unrevokeLicense` e passando il valore dell&#39;identificatore di licenza del documento revocato.
+   * Creare un oggetto `LicenseManager` richiamando il metodo `getLicenseManager` dell&#39;oggetto `DocumentSecurityClient`.
+   * Ripristinare l&#39;accesso al documento PDF revocato richiamando il metodo `unrevokeLicense` dell&#39;oggetto `LicenseManager` e passando il valore dell&#39;identificatore di licenza del documento revocato.
 
 **Esempi di codice**
 
@@ -1079,34 +1079,34 @@ Ripristinare l’accesso a un documento revocato utilizzando Document Security A
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `DocumentSecurityServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `DocumentSecurityServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `DocumentSecurityServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare l&#39;identificatore di licenza del documento PDF revocato.
 
-   * Creare un `BLOB` mediante il costruttore. Il `BLOB` L&#39;oggetto viene utilizzato per memorizzare un documento PDF revocato a cui viene ripristinato l&#39;accesso.
-   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF revocato e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto della `System.IO.FileStream` oggetto. È possibile determinare le dimensioni della matrice di byte ottenendo `System.IO.FileStream` dell&#39;oggetto `Length` proprietà.
-   * Compilare la matrice di byte con i dati di flusso richiamando `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Popolare il `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto della matrice di byte.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per archiviare un documento PDF revocato a cui viene ripristinato l&#39;accesso.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF revocato e la modalità di apertura del file.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
 1. Ripristinare l&#39;accesso al documento PDF revocato.
 
-   * Recuperare il valore dell&#39;identificatore di licenza del documento revocato richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `getLicenseID` e passando il `BLOB` oggetto che rappresenta il documento revocato. Questo metodo restituisce un valore stringa che rappresenta l&#39;identificatore della licenza.
-   * Ripristinare l&#39;accesso al documento PDF revocato richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `unrevokeLicense` e passando un valore stringa che specifica il valore dell&#39;identificatore di licenza del documento PDF revocato (passare il valore restituito del `DocumentSecurityServiceClient` dell&#39;oggetto `getLicenseId` metodo).
+   * Recuperare il valore dell&#39;identificatore di licenza del documento revocato richiamando il metodo `getLicenseID` dell&#39;oggetto `DocumentSecurityServiceClient` e passando l&#39;oggetto `BLOB` che rappresenta il documento revocato. Questo metodo restituisce un valore stringa che rappresenta l&#39;identificatore della licenza.
+   * Ripristinare l&#39;accesso al documento PDF revocato richiamando il metodo `unrevokeLicense` dell&#39;oggetto `DocumentSecurityServiceClient` e passando un valore stringa che specifica il valore dell&#39;identificatore di licenza del documento PDF revocato (passare il valore restituito del metodo `getLicenseId` dell&#39;oggetto `DocumentSecurityServiceClient`).
 
 **Esempi di codice**
 
@@ -1129,7 +1129,7 @@ Non è possibile eseguire questa attività se la versione del LiveCycle in uso �
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-7}
 
@@ -1146,9 +1146,9 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Document Security**
 
-Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, crea un oggetto client del servizio Document Security. Se utilizzi l’API Java, crea un’ `RightsManagementClient` oggetto. Se utilizzi l’API del servizio web Document Security, crea un’ `RightsManagementServiceService` oggetto.
+Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, crea un oggetto client del servizio Document Security. Se si utilizza l&#39;API Java, creare un oggetto `RightsManagementClient`. Se utilizzi l’API del servizio web Document Security, crea un oggetto `RightsManagementServiceService`.
 
-**Recuperare un documento protetto tramite policy da esaminare**
+**Recuperare un documento protetto tramite policy da ispezionare**
 
 Per esaminare un documento protetto tramite policy, recuperalo. Se si tenta di ispezionare un documento non protetto con una policy o revocato, viene generata un&#39;eccezione.
 
@@ -1156,13 +1156,13 @@ Per esaminare un documento protetto tramite policy, recuperalo. Se si tenta di i
 
 Dopo aver recuperato un documento protetto tramite policy, è possibile esaminarlo.
 
-**Ottenere informazioni sul documento protetto tramite policy**
+**Ottieni informazioni sul documento protetto tramite policy**
 
 Dopo aver esaminato un documento PDF protetto tramite policy, puoi ottenere informazioni al riguardo. È ad esempio possibile determinare il criterio utilizzato per proteggere il documento.
 
-Se proteggi un documento con una policy che appartiene a I miei criteri e poi richiami `RMInspectResult.getPolicysetName` o `RMInspectResult.getPolicysetId`, viene restituito null.
+Se si protegge un documento con un criterio che appartiene a Criteri utente e si chiama `RMInspectResult.getPolicysetName` o `RMInspectResult.getPolicysetId`, verrà restituito null.
 
-Se il documento è protetto utilizzando un criterio contenuto in un set di criteri (diverso da Criteri personali), `RMInspectResult.getPolicysetName` e `RMInspectResult.getPolicysetId` restituisce stringhe valide.
+Se il documento è protetto utilizzando un criterio contenuto in un set di criteri (diverso da Criteri personali), `RMInspectResult.getPolicysetName` e `RMInspectResult.getPolicysetId` restituiscono stringhe valide.
 
 **Consulta anche**
 
@@ -1176,26 +1176,26 @@ Inspect è un documento PDF protetto tramite policy utilizzando Document Securit
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-rightsmanagement-client.jar, nel percorso di classe del progetto Java. Per informazioni sulla posizione di questi file, vedere [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Includi i file JAR dei client, ad esempio adobe-rightsmanagement-client.jar, nel percorso di classe del progetto Java. Per informazioni sul percorso di questi file, vedere [Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione. (vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Creare un `RightsManagementClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione. (Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Creare un oggetto `RightsManagementClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare un documento protetto tramite policy da esaminare.
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento PDF protetto tramite policy utilizzando il relativo costruttore. Passa un valore stringa che specifica la posizione del documento PDF.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento PDF protetto tramite policy utilizzando il relativo costruttore. Passa un valore stringa che specifica la posizione del documento PDF.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Inspect il documento.
 
-   * Creare un `DocumentManager` oggetto richiamando il `RightsManagementClient` dell&#39;oggetto `getDocumentManager` metodo.
-   * Inspect il documento protetto tramite policy richiamando `LicenseManager` dell&#39;oggetto `inspectDocument` metodo. Passa il `com.adobe.idp.Document` oggetto contenente il documento PDF protetto tramite policy. Questo metodo restituisce un `RMInspectResult` oggetto contenente informazioni sul documento protetto tramite policy.
+   * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `RightsManagementClient`.
+   * Inspect ha protetto il documento tramite policy richiamando il metodo `inspectDocument` dell&#39;oggetto `LicenseManager`. Passa l&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF protetto tramite policy. Questo metodo restituisce un oggetto `RMInspectResult` contenente informazioni sul documento protetto tramite policy.
 
 1. Ottenere informazioni sul documento protetto tramite policy.
 
-   Per ottenere informazioni sul documento protetto tramite policy, richiama il metodo appropriato a cui appartiene `RMInspectResult` oggetto. Ad esempio, per recuperare il nome del criterio, richiama `RMInspectResult` dell&#39;oggetto `getPolicyName` metodo.
+   Per ottenere informazioni sul documento protetto tramite policy, richiamare il metodo appropriato che appartiene all&#39;oggetto `RMInspectResult`. Ad esempio, per recuperare il nome del criterio, richiamare il metodo `getPolicyName` dell&#39;oggetto `RMInspectResult`.
 
 **Esempi di codice**
 
@@ -1213,37 +1213,37 @@ Inspect è un documento PDF protetto tramite policy utilizzando l’API Document
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `RightsManagementServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `RightsManagementServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `RightsManagementServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento protetto tramite policy da esaminare.
 
-   * Creare un `BLOB` mediante il costruttore. Il `BLOB` L&#39;oggetto viene utilizzato per memorizzare un documento PDF da verificare.
-   * Creare un `System.IO.FileStream` richiamando il relativo costruttore. Passa un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file in.
-   * Creare una matrice di byte che memorizza il contenuto della `System.IO.FileStream` oggetto. È possibile determinare le dimensioni della matrice di byte ottenendo `System.IO.FileStream` dell&#39;oggetto `Length` proprietà.
-   * Compilare la matrice di byte con i dati di flusso richiamando `System.IO.FileStream` dell&#39;oggetto `Read` metodo. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso per la lettura.
-   * Popolare il `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto della matrice di byte.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento PDF da verificare.
+   * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore. Passa un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file in.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso per la lettura.
+   * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
 1. Inspect il documento.
 
-   Inspect il documento protetto tramite policy richiamando `RightsManagementServiceClient` dell&#39;oggetto `inspectDocument` metodo. Passa il `BLOB` oggetto contenente il documento PDF protetto tramite policy. Questo metodo restituisce un `RMInspectResult` oggetto contenente informazioni sul documento protetto tramite policy.
+   Inspect ha protetto il documento tramite policy richiamando il metodo `inspectDocument` dell&#39;oggetto `RightsManagementServiceClient`. Passa l&#39;oggetto `BLOB` che contiene il documento PDF protetto tramite policy. Questo metodo restituisce un oggetto `RMInspectResult` contenente informazioni sul documento protetto tramite policy.
 
 1. Ottenere informazioni sul documento protetto tramite policy.
 
-   Per ottenere informazioni sul documento protetto tramite policy, ottieni il valore del campo appropriato che appartiene al `RMInspectResult` oggetto. Ad esempio, per recuperare il nome del criterio, ottieni il valore del `RMInspectResult` dell&#39;oggetto `policyName` campo.
+   Per ottenere informazioni sul documento protetto tramite policy, ottenere il valore del campo appropriato che appartiene all&#39;oggetto `RMInspectResult`. Ad esempio, per recuperare il nome del criterio, ottenere il valore del campo `policyName` dell&#39;oggetto `RMInspectResult`.
 
 **Esempi di codice**
 
@@ -1268,7 +1268,7 @@ Le filigrane contribuiscono a garantire la sicurezza di un documento identifican
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-8}
 
@@ -1285,9 +1285,9 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Document Security**
 
-Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se utilizzi l’API Java, crea un’ `RightsManagementClient` oggetto. Se utilizzi l’API del servizio web Document Security, crea un’ `RightsManagementServiceService` oggetto.
+Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se si utilizza l&#39;API Java, creare un oggetto `RightsManagementClient`. Se utilizzi l’API del servizio web Document Security, crea un oggetto `RightsManagementServiceService`.
 
-**Impostare gli attributi delle filigrane**
+**Imposta gli attributi delle filigrane**
 
 Per creare una filigrana, è necessario impostare gli attributi della filigrana. L’attributo name deve sempre essere definito. Oltre all&#39;attributo name, è necessario impostare almeno uno dei seguenti attributi:
 
@@ -1339,7 +1339,7 @@ Nella tabella seguente sono elencate le coppie chiave-valore necessarie per la c
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
-   <td><p>Se questo valore è specificato, allora <code>WaterBackCmd:IS_SIZE_ENABLED</code> deve essere presente e il valore deve essere true. Se questo attributo non è specificato, il comportamento predefinito è Adatta alla pagina.</p></td>
+   <td><p>Se questo valore è specificato, <code>WaterBackCmd:IS_SIZE_ENABLED</code> deve essere presente e il valore deve essere true. Se questo attributo non è specificato, il comportamento predefinito è Adatta alla pagina.</p></td>
    <td><p>Un valore maggiore di 0,0 e minore o uguale a 1,0.</p></td>
   </tr>
   <tr>
@@ -1364,7 +1364,7 @@ Nella tabella seguente sono elencate le coppie chiave-valore necessarie per la c
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SRCTEXT</code></p></td>
-   <td><p>Specifica il testo personalizzato per una filigrana. Se questo valore è presente, allora <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> deve essere presente e impostato su true.</p></td>
+   <td><p>Specifica il testo personalizzato per una filigrana. Se questo valore è presente, anche <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> deve essere presente e impostato su true.</p></td>
    <td><p>Vero o Falso</p></td>
   </tr>
  </tbody>
@@ -1379,7 +1379,7 @@ Per tutte le filigrane deve essere definito uno dei seguenti attributi:
 
 Tutti gli altri attributi sono facoltativi.
 
-**Registrare la filigrana**
+**Registra filigrana**
 
 Prima di poter essere utilizzata, una nuova filigrana deve essere registrata presso il servizio Document Security. Dopo aver registrato una filigrana, puoi utilizzarla all’interno dei criteri.
 
@@ -1397,25 +1397,25 @@ Crea una filigrana utilizzando Document Security API (Java):
 
 1. Includi file di progetto.
 
-   Includi file JAR client, ad esempio `adobe-rightsmanagement-client.jar`, nel percorso della classe del progetto Java.
+   Includi i file JAR client, ad esempio `adobe-rightsmanagement-client.jar`, nel percorso di classe del progetto Java.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `RightsManagementClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `RightsManagementClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Imposta attributi filigrana
 
-   * Creare un `Watermark` oggetto richiamando il `InfomodelObjectFactory` statico dell&#39;oggetto `createWatermark` metodo. Questo metodo restituisce un `Watermark` oggetto.
-   * Impostare l&#39;attributo del nome della filigrana richiamando `Watermark` dell&#39;oggetto `setName` e passando un valore stringa che specifica il nome del criterio.
-   * Impostare l&#39;attributo di sfondo della filigrana richiamando `Watermark` dell&#39;oggetto `setBackground` metodo e passaggio `true`. Impostando questo attributo, la filigrana viene visualizzata sullo sfondo del documento.
-   * Impostare l&#39;attributo di testo personalizzato della filigrana richiamando `Watermark` dell&#39;oggetto `setCustomText` e passando un valore stringa che rappresenta il testo della filigrana.
-   * Impostare l&#39;attributo di opacità della filigrana richiamando `Watermark` dell&#39;oggetto `setOpacity` e viene passato un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che è completamente trasparente.
+   * Creare un oggetto `Watermark` richiamando il metodo `createWatermark` statico dell&#39;oggetto `InfomodelObjectFactory`. Questo metodo restituisce un oggetto `Watermark`.
+   * Impostare l&#39;attributo name della filigrana richiamando il metodo `setName` dell&#39;oggetto `Watermark` e passando un valore stringa che specifica il nome del criterio.
+   * Impostare l&#39;attributo background della filigrana richiamando il metodo `setBackground` dell&#39;oggetto `Watermark` e passando `true`. Impostando questo attributo, la filigrana viene visualizzata sullo sfondo del documento.
+   * Impostare l&#39;attributo di testo personalizzato della filigrana richiamando il metodo `setCustomText` dell&#39;oggetto `Watermark` e passando un valore stringa che rappresenta il testo della filigrana.
+   * Impostare l&#39;attributo di opacità della filigrana richiamando il metodo `setOpacity` dell&#39;oggetto `Watermark` e passando un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che è completamente trasparente.
 
 1. Registrare la filigrana.
 
-   * Creare un `WatermarkManager` oggetto richiamando il `RightsManagementClient` dell&#39;oggetto `getWatermarkManager` metodo. Questo metodo restituisce un `WatermarkManager` oggetto.
-   * Registrare la filigrana richiamando `WatermarkManager` dell&#39;oggetto `registerWatermark` e passando il `Watermark` oggetto che rappresenta la filigrana da registrare. Questo metodo restituisce un valore stringa che rappresenta il valore di identificazione della filigrana.
+   * Creare un oggetto `WatermarkManager` richiamando il metodo `getWatermarkManager` dell&#39;oggetto `RightsManagementClient`. Questo metodo restituisce un oggetto `WatermarkManager`.
+   * Registrare la filigrana richiamando il metodo `registerWatermark` dell&#39;oggetto `WatermarkManager` e passando l&#39;oggetto `Watermark` che rappresenta la filigrana da registrare. Questo metodo restituisce un valore stringa che rappresenta il valore di identificazione della filigrana.
 
 **Esempi di codice**
 
@@ -1433,36 +1433,36 @@ Crea una filigrana utilizzando Document Security API (servizio web):
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `RightsManagementServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `RightsManagementServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `RightsManagementServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Impostare gli attributi della filigrana.
 
-   * Creare un `WatermarkSpec` oggetto richiamando il `WatermarkSpec` costruttore.
-   * Impostare il nome della filigrana assegnando un valore stringa al `WatermarkSpec` dell&#39;oggetto `name` membro dati.
-   * Impostare la filigrana `id` mediante l&#39;assegnazione di un valore stringa al `WatermarkSpec` dell&#39;oggetto `id` membro dati.
-   * Per ogni proprietà filigrana da impostare, crea un `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto.
-   * Imposta il valore chiave assegnando un valore alla `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `key` membro dati (ad esempio, `WaterBackCmd:OPACITY)`.
-   * Imposta il valore assegnando un valore a `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `value` membro dati (ad esempio, `.25`).
-   * Creare un `MyArrayOf_xsd_anyType` oggetto. Per ogni `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto, richiamare `MyArrayOf_xsd_anyType` dell&#39;oggetto `Add` metodo. Passa il `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto.
-   * Assegna la `MyArrayOf_xsd_anyType` oggetto al `WatermarkSpec` dell&#39;oggetto `values` membro dati.
+   * Creare un oggetto `WatermarkSpec` richiamando il costruttore `WatermarkSpec`.
+   * Impostare il nome della filigrana assegnando un valore stringa al membro dati `name` dell&#39;oggetto `WatermarkSpec`.
+   * Impostare l&#39;attributo `id` della filigrana assegnando un valore stringa al membro dati `id` dell&#39;oggetto `WatermarkSpec`.
+   * Per ogni proprietà filigrana da impostare, creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` separato.
+   * Impostare il valore chiave assegnando un valore al membro dati `key` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` (ad esempio, `WaterBackCmd:OPACITY)`.
+   * Impostare il valore assegnando un valore al membro dati `value` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`, ad esempio `.25`.
+   * Creare un oggetto `MyArrayOf_xsd_anyType`. Per ogni oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`, richiamare il metodo `Add` dell&#39;oggetto `MyArrayOf_xsd_anyType`. Passa l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Assegnare l&#39;oggetto `MyArrayOf_xsd_anyType` al membro dati `values` dell&#39;oggetto `WatermarkSpec`.
 
 1. Registrare la filigrana.
 
-   Registrare la filigrana richiamando `RightsManagementServiceClient` dell&#39;oggetto `registerWatermark` e passando il `WatermarkSpec` oggetto che rappresenta la filigrana da registrare.
+   Registrare la filigrana richiamando il metodo `registerWatermark` dell&#39;oggetto `RightsManagementServiceClient` e passando l&#39;oggetto `WatermarkSpec` che rappresenta la filigrana da registrare.
 
 **Esempi di codice**
 
@@ -1489,7 +1489,7 @@ Quando si modifica una filigrana, la modifica ha effetto sui documenti futuri a 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-9}
 
@@ -1507,15 +1507,15 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Document Security**
 
-Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se utilizzi l’API Java, crea un’ `DocumentSecurityClient` oggetto. Se utilizzi l’API del servizio web Document Security, crea un’ `DocumentSecurityServiceService` oggetto.
+Prima di poter eseguire un’operazione del servizio Document Security a livello di programmazione, è necessario creare un oggetto client del servizio Document Security. Se si utilizza l&#39;API Java, creare un oggetto `DocumentSecurityClient`. Se utilizzi l’API del servizio web Document Security, crea un oggetto `DocumentSecurityServiceService`.
 
 **Recupera la filigrana da modificare**
 
 Per modificare una filigrana, è necessario recuperarne una esistente. È possibile recuperare una filigrana specificandone il nome o specificandone il valore di identificatore.
 
-**Impostare gli attributi delle filigrane**
+**Imposta gli attributi delle filigrane**
 
-Per modificare una filigrana esistente, modificare il valore di uno o più attributi della filigrana. Quando si aggiorna una filigrana a livello di programmazione utilizzando un servizio Web, è necessario impostare tutti gli attributi impostati in origine, anche se il valore non cambia. Ad esempio, si supponga di impostare i seguenti attributi di filigrana: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, e `WaterBackCmd:SRCTEXT`. Anche se l’unico attributo che desideri modificare è `WaterBackCmd:OPACITY`, è necessario impostare correttamente gli altri valori.
+Per modificare una filigrana esistente, modificare il valore di uno o più attributi della filigrana. Quando si aggiorna una filigrana a livello di programmazione utilizzando un servizio Web, è necessario impostare tutti gli attributi impostati in origine, anche se il valore non cambia. Si supponga, ad esempio, che siano impostati i seguenti attributi di filigrana: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY` e `WaterBackCmd:SRCTEXT`. Sebbene l&#39;unico attributo che si desidera modificare sia `WaterBackCmd:OPACITY`, è necessario impostare gli altri valori in modo corretto.
 
 >[!NOTE]
 >
@@ -1523,7 +1523,7 @@ Per modificare una filigrana esistente, modificare il valore di uno o più attri
 
 >[!NOTE]
 >
->Per informazioni sui nomi degli attributi della filigrana, vedere [Creazione di filigrane](protecting-documents-policies.md#creating-watermarks).
+>Per informazioni sui nomi degli attributi della filigrana, vedere [Creazione delle filigrane](protecting-documents-policies.md#creating-watermarks).
 
 **Aggiorna filigrana**
 
@@ -1547,16 +1547,16 @@ Modifica una filigrana utilizzando Document Security API (Java):
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `DocumentSecurityClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `DocumentSecurityClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperate la filigrana da modificare.
 
-   Creare un `WatermarkManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getWatermarkManager` e passa un valore stringa che specifica il nome della filigrana. Questo metodo restituisce un `Watermark` oggetto che rappresenta la filigrana da modificare.
+   Creare un oggetto `WatermarkManager` richiamando il metodo `getWatermarkManager` dell&#39;oggetto `DocumentSecurityClient` e passare un valore stringa che specifichi il nome della filigrana. Questo metodo restituisce un oggetto `Watermark` che rappresenta la filigrana da modificare.
 
 1. Impostare gli attributi della filigrana.
 
-   Impostare l&#39;attributo di opacità della filigrana richiamando `Watermark` dell&#39;oggetto `setOpacity` e viene passato un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che è completamente trasparente.
+   Impostare l&#39;attributo di opacità della filigrana richiamando il metodo `setOpacity` dell&#39;oggetto `Watermark` e passando un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che è completamente trasparente.
 
    >[!NOTE]
    >
@@ -1564,7 +1564,7 @@ Modifica una filigrana utilizzando Document Security API (Java):
 
 1. Aggiorna la filigrana.
 
-   * Aggiornare la filigrana richiamando `WatermarkManager` dell&#39;oggetto `updateWatermark` e trasmettere il `Watermark` oggetto il cui attributo è stato modificato.
+   * Aggiornare la filigrana richiamando il metodo `updateWatermark` dell&#39;oggetto `WatermarkManager` e passare l&#39;oggetto `Watermark` il cui attributo è stato modificato.
 
 **Esempi di codice**
 
@@ -1580,37 +1580,37 @@ Modifica una filigrana utilizzando Document Security API (servizio web):
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `DocumentSecurityServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `RightsManagementServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `DocumentSecurityServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperate la filigrana da modificare.
 
-   Recuperare la filigrana da modificare richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `getWatermarkByName` metodo. Passa un valore stringa che specifica il nome della filigrana. Questo metodo restituisce un `WatermarkSpec` oggetto che rappresenta la filigrana da modificare.
+   Recuperare la filigrana da modificare richiamando il metodo `getWatermarkByName` dell&#39;oggetto `DocumentSecurityServiceClient`. Passa un valore stringa che specifica il nome della filigrana. Questo metodo restituisce un oggetto `WatermarkSpec` che rappresenta la filigrana da modificare.
 
 1. Impostare gli attributi della filigrana.
 
-   * Per ogni proprietà filigrana da aggiornare, crea un `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto.
-   * Imposta il valore chiave assegnando un valore alla `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `key` membro dati (ad esempio, `WaterBackCmd:OPACITY)`.
-   * Imposta il valore assegnando un valore a `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `value` membro dati (ad esempio, `.50`).
-   * Creare un `MyArrayOf_xsd_anyType` oggetto. Per ogni `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto, richiamare `MyArrayOf_xsd_anyType` dell&#39;oggetto `Add` metodo. Passa il `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto.
-   * Assegna la `MyArrayOf_xsd_anyType` oggetto al `WatermarkSpec` dell&#39;oggetto `values` membro dati.
+   * Per ogni proprietà filigrana da aggiornare, creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` separato.
+   * Impostare il valore chiave assegnando un valore al membro dati `key` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` (ad esempio, `WaterBackCmd:OPACITY)`.
+   * Impostare il valore assegnando un valore al membro dati `value` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`, ad esempio `.50`.
+   * Creare un oggetto `MyArrayOf_xsd_anyType`. Per ogni oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`, richiamare il metodo `Add` dell&#39;oggetto `MyArrayOf_xsd_anyType`. Passa l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Assegnare l&#39;oggetto `MyArrayOf_xsd_anyType` al membro dati `values` dell&#39;oggetto `WatermarkSpec`.
 
 1. Aggiorna la filigrana.
 
-   Aggiornare la filigrana richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `updateWatermark` e passando il `WatermarkSpec` oggetto che rappresenta la filigrana da modificare.
+   Aggiornare la filigrana richiamando il metodo `updateWatermark` dell&#39;oggetto `DocumentSecurityServiceClient` e passando l&#39;oggetto `WatermarkSpec` che rappresenta la filigrana da modificare.
 
 **Esempi di codice**
 
@@ -1633,7 +1633,7 @@ Puoi cercare eventi specifici utilizzando l’API Java di Rights Management o l�
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di Rights Management, vedere [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di Rights Management, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-10}
 
@@ -1648,15 +1648,15 @@ Per cercare un evento di Rights Management, effettuare le seguenti operazioni:
 
 Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicazione client utilizzando Java, includi i file JAR necessari. Se utilizzi i servizi web, accertati di includere i file proxy.
 
-**Creazione di un oggetto API client di Rights Management**
+**Crea un oggetto API client di Rights Management**
 
-Prima di poter eseguire un&#39;operazione del servizio di Rights Management a livello di programmazione, è necessario creare un oggetto client del servizio di Rights Management. Se utilizzi l’API Java, crea un’ `DocumentSecurityClient` oggetto. Se utilizzi l’API del servizio Web Rights Management, crea un’ `DocumentSecurityServiceService` oggetto.
+Prima di poter eseguire un&#39;operazione del servizio di Rights Management a livello di programmazione, è necessario creare un oggetto client del servizio di Rights Management. Se si utilizza l&#39;API Java, creare un oggetto `DocumentSecurityClient`. Se si utilizza l&#39;API del servizio Web di Rights Management, creare un oggetto `DocumentSecurityServiceService`.
 
 **Specificare gli eventi da cercare**
 
 Specifica l’evento da cercare. Ad esempio, è possibile cercare l’evento di creazione del criterio, che si verifica quando viene creato un nuovo criterio.
 
-**Cerca l’evento**
+**Cerca evento**
 
 Dopo aver specificato l’evento da cercare, puoi utilizzare l’API Java di Rights Management o l’API del servizio web di Rights Management per cercare l’evento.
 
@@ -1676,21 +1676,21 @@ Cerca gli eventi utilizzando l’API di Rights Management (Java):
 
 1. Creazione di un oggetto API client di Rights Management
 
-   Creare un `DocumentSecurityClient` oggetto utilizzando il relativo costruttore e passando un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
+   Creare un oggetto `DocumentSecurityClient` utilizzando il relativo costruttore e passando un oggetto `ServiceClientFactory` che contiene proprietà di connessione.
 
 1. Specificare gli eventi da cercare
 
-   * Creare un `EventManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getEventManager` metodo. Questo metodo restituisce un `EventManager` oggetto.
-   * Creare un `EventSearchFilter` richiamando il relativo costruttore.
-   * Specifica l’evento per il quale eseguire la ricerca richiamando `EventSearchFilter` dell&#39;oggetto `setEventCode` e il passaggio di un membro dati statico che appartiene al `EventManager` classe che rappresenta l’evento per il quale eseguire la ricerca. Ad esempio, per cercare l’evento di creazione del criterio, passa `EventManager.POLICY_CREATE_EVENT`.
+   * Creare un oggetto `EventManager` richiamando il metodo `getEventManager` dell&#39;oggetto `DocumentSecurityClient`. Questo metodo restituisce un oggetto `EventManager`.
+   * Creare un oggetto `EventSearchFilter` richiamando il relativo costruttore.
+   * Specificare l&#39;evento per il quale eseguire la ricerca richiamando il metodo `setEventCode` dell&#39;oggetto `EventSearchFilter` e passando un membro dati statico appartenente alla classe `EventManager` che rappresenta l&#39;evento per il quale eseguire la ricerca. Ad esempio, per cercare l&#39;evento di creazione dei criteri, passare `EventManager.POLICY_CREATE_EVENT`.
 
    >[!NOTE]
    >
-   >È possibile definire criteri di ricerca aggiuntivi richiamando `EventSearchFilter` metodi a oggetti. Ad esempio, richiama il `setUserName` per specificare un utente associato all&#39;evento.
+   >È possibile definire ulteriori criteri di ricerca richiamando `EventSearchFilter` metodi di oggetto. Ad esempio, richiamare il metodo `setUserName` per specificare un utente associato all&#39;evento.
 
 1. Cerca l’evento
 
-   Cercare l&#39;evento richiamando `EventManager` dell&#39;oggetto `searchForEvents` e passando il `EventSearchFilter` oggetto che definisce i criteri di ricerca dell&#39;evento. Questo metodo restituisce un array di `Event` oggetti.
+   Cercare l&#39;evento richiamando il metodo `searchForEvents` dell&#39;oggetto `EventManager` e passando l&#39;oggetto `EventSearchFilter` che definisce i criteri di ricerca dell&#39;evento. Questo metodo restituisce una matrice di `Event` oggetti.
 
 **Esempi di codice**
 
@@ -1708,30 +1708,30 @@ Cerca gli eventi utilizzando l’API di Rights Management (servizio web):
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Creazione di un oggetto API client di Rights Management
 
-   * Creare un `DocumentSecurityServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `DocumentSecurityServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `DocumentSecurityServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Specificare gli eventi da cercare
 
-   * Creare un `EventSpec` mediante il costruttore.
-   * Specificare l&#39;inizio del periodo di tempo durante il quale si è verificato l&#39;evento impostando `EventSpec` dell&#39;oggetto `firstTime.date` membro dati con `DataTime` istanza che rappresenta l’inizio dell’intervallo di date in cui si è verificato l’evento.
-   * Assegna il valore `true` al `EventSpec` dell&#39;oggetto `firstTime.dateSpecified` membro dati.
-   * Specificare la fine del periodo di tempo durante il quale si è verificato l&#39;evento impostando `EventSpec` dell&#39;oggetto `lastTime.date` membro dati con `DataTime` istanza che rappresenta la fine dell’intervallo di date in cui si è verificato l’evento.
-   * Assegna il valore `true` al `EventSpec` dell&#39;oggetto `lastTime.dateSpecified` membro dati.
-   * Imposta l’evento da cercare assegnando un valore stringa alla `EventSpec` dell&#39;oggetto `eventCode` membro dati. Nella tabella seguente sono elencati i valori numerici che è possibile assegnare a questa proprietà:
+   * Creare un oggetto `EventSpec` utilizzando il relativo costruttore.
+   * Specificare l&#39;inizio del periodo di tempo durante il quale si è verificato l&#39;evento impostando il membro dati `firstTime.date` dell&#39;oggetto `EventSpec` con istanza `DataTime` che rappresenta l&#39;inizio dell&#39;intervallo di date in cui si è verificato l&#39;evento.
+   * Assegnare il valore `true` al membro dati `firstTime.dateSpecified` dell&#39;oggetto `EventSpec`.
+   * Specificare la fine del periodo di tempo durante il quale si è verificato l&#39;evento impostando il membro dati `lastTime.date` dell&#39;oggetto `EventSpec` con istanza `DataTime` che rappresenta la fine dell&#39;intervallo di date in cui si è verificato l&#39;evento.
+   * Assegnare il valore `true` al membro dati `lastTime.dateSpecified` dell&#39;oggetto `EventSpec`.
+   * Impostare l&#39;evento da cercare assegnando un valore stringa al membro dati `eventCode` dell&#39;oggetto `EventSpec`. Nella tabella seguente sono elencati i valori numerici che è possibile assegnare a questa proprietà:
 
    <table>
     <thead>
@@ -1934,7 +1934,7 @@ Cerca gli eventi utilizzando l’API di Rights Management (servizio web):
 
 1. Cerca l’evento
 
-   Cercare l&#39;evento richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `searchForEvents` e passando il `EventSpec` oggetto che rappresenta l’evento per il quale eseguire la ricerca e il numero massimo di risultati. Questo metodo restituisce un `MyArrayOf_xsd_anyType` raccolta in cui ogni elemento è un `AuditSpec` dell&#39;istanza. Utilizzo di un `AuditSpec` dell&#39;evento, ad esempio l&#39;ora in cui si è verificato. Il `AuditSpec` l’istanza contiene un `timestamp` membro dati che specifica queste informazioni.
+   Cercare l&#39;evento richiamando il metodo `searchForEvents` dell&#39;oggetto `DocumentSecurityServiceClient` e passando l&#39;oggetto `EventSpec` che rappresenta l&#39;evento per il quale eseguire la ricerca e il numero massimo di risultati. Questo metodo restituisce un insieme `MyArrayOf_xsd_anyType` in cui ogni elemento è un&#39;istanza `AuditSpec`. Utilizzando un&#39;istanza di `AuditSpec`, è possibile ottenere informazioni sull&#39;evento, ad esempio l&#39;ora in cui si è verificato. L&#39;istanza `AuditSpec` contiene un membro dati `timestamp` che specifica queste informazioni.
 
 **Esempi di codice**
 
@@ -1957,7 +1957,7 @@ Oltre ai documenti PDF, il servizio Rights Management supporta formati di docume
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-11}
 
@@ -1981,11 +1981,11 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 Recuperare un documento di Word per applicare una policy. Dopo aver applicato una policy al documento di Word, gli utenti saranno soggetti a restrizioni quando utilizzano il documento. Se, ad esempio, la policy non consente l&#39;apertura del documento in modalità non in linea, gli utenti devono essere in linea per aprire il documento.
 
-**Applicare una policy esistente al documento di Word**
+**Applicare un criterio esistente al documento di Word**
 
 Per applicare un criterio a un documento di Word, è necessario fare riferimento a un criterio esistente e specificare il set di criteri a cui appartiene il criterio. L&#39;utente che sta impostando le proprietà di connessione deve avere accesso al criterio specificato. In caso contrario, si verificherà un&#39;eccezione.
 
-**Salvare il documento di Word**
+**Salva documento di Word**
 
 Dopo che il servizio Document Security ha applicato una policy a un documento di Word, è possibile salvarlo come file DOC.
 
@@ -2007,34 +2007,34 @@ Applicare una policy a un documento di Word utilizzando l’API Document Securit
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `DocumentSecurityClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `DocumentSecurityClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare un documento di Word.
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento di Word utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento di Word.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento di Word utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento di Word.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Applicare una policy esistente al documento di Word.
 
-   * Creare un `DocumentManager` oggetto richiamando il `DocumentSecurityClient` dell&#39;oggetto `getDocumentManager` metodo.
-   * Applicare una policy al documento di Word richiamando `DocumentManager` dell&#39;oggetto `protectDocument` e fornendo i seguenti valori:
+   * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `DocumentSecurityClient`.
+   * Applicare una policy al documento di Word richiamando il metodo `protectDocument` dell&#39;oggetto `DocumentManager` e passando i valori seguenti:
 
-      * Il `com.adobe.idp.Document` oggetto che contiene il documento di Word a cui viene applicato il criterio.
+      * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento di Word a cui viene applicato il criterio.
       * Valore stringa che specifica il nome del documento.
-      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un `null` valore che risulta in `MyPolicies` set di criteri in uso.
+      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
       * Valore stringa che specifica il nome del criterio.
       * Valore string che rappresenta il nome del dominio del gestore utenti dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro successivo deve essere null).
-      * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere `null` (se questo parametro è `null`, il valore del parametro precedente deve essere `null`).
-      * A `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta la lingua utilizzata per selezionare il modello di MS Office. Il valore di questo parametro è facoltativo ed è possibile specificare `null`.
+      * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore del parametro è facoltativo e può essere `null` (se il parametro è `null`, il valore del parametro precedente deve essere `null`).
+      * `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta le impostazioni locali utilizzate per la selezione del modello di MS Office. Il valore di questo parametro è facoltativo ed è possibile specificare `null`.
 
-     Il `protectDocument` il metodo restituisce un `RMSecureDocumentResult` oggetto che contiene il documento Word protetto tramite policy.
+     Il metodo `protectDocument` restituisce un oggetto `RMSecureDocumentResult` che contiene il documento Word protetto tramite policy.
 
 1. Salvare il documento di Word.
 
-   * Richiama `RMSecureDocumentResult` dell&#39;oggetto `getProtectedDoc` per ottenere il documento Word protetto tramite policy. Questo metodo restituisce un `com.adobe.idp.Document` oggetto.
-   * Creare un `java.io.File` e assicurarsi che l&#39;estensione del file sia DOC.
-   * Richiama `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` metodo per copiare il contenuto del `Document` al file (assicurati di utilizzare il `Document` oggetto restituito da `getProtectedDoc` metodo).
+   * Richiama il metodo `getProtectedDoc` dell&#39;oggetto `RMSecureDocumentResult` per ottenere il documento Word protetto tramite policy. Questo metodo restituisce un oggetto `com.adobe.idp.Document`.
+   * Creare un oggetto `java.io.File` e assicurarsi che l&#39;estensione del file sia DOC.
+   * Richiamare il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` per copiare il contenuto dell&#39;oggetto `Document` nel file (assicurarsi di utilizzare l&#39;oggetto `Document` restituito dal metodo `getProtectedDoc`).
 
 **Esempi di codice**
 
@@ -2052,53 +2052,53 @@ Applicare una policy a un documento di Word utilizzando Document Security API (s
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un oggetto API client di Document Security.
 
-   * Creare un `DocumentSecurityServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `DocumentSecurityServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `DocumentSecurityServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento di Word.
 
-   * Creare un `BLOB` mediante il costruttore. Il `BLOB` L&#39;oggetto viene utilizzato per memorizzare un documento di Word a cui viene applicato un criterio.
-   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento di Word e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto della `System.IO.FileStream` oggetto. Determinare la dimensione dell&#39;array di byte ottenendo `System.IO.FileStream` dell&#39;oggetto `Length` proprietà.
-   * Compilare la matrice di byte con i dati di flusso richiamando `System.IO.FileStream` dell&#39;oggetto `Read` metodo. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Popolare il `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto della matrice di byte.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento di Word a cui è applicato un criterio.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di Word e la modalità di apertura del file.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. Determinare la dimensione della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
 1. Applicare una policy esistente al documento di Word.
 
-   Applicare una policy al documento di Word richiamando `DocumentSecurityServiceClient` dell&#39;oggetto `protectDocument` e fornendo i seguenti valori:
+   Applicare una policy al documento di Word richiamando il metodo `protectDocument` dell&#39;oggetto `DocumentSecurityServiceClient` e passando i valori seguenti:
 
-   * Il `BLOB` oggetto che contiene il documento di Word a cui viene applicato il criterio.
+   * L&#39;oggetto `BLOB` che contiene il documento di Word a cui viene applicato il criterio.
    * Valore stringa che specifica il nome del documento.
-   * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un `null` valore che risulta in `MyPolicies` set di criteri in uso.
+   * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
    * Valore stringa che specifica il nome del criterio.
    * Valore string che rappresenta il nome del dominio del gestore utenti dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro successivo deve essere `null`).
-   * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro precedente deve essere `null`).
-   * A `RMLocale` valore che specifica il valore locale (ad esempio, `RMLocale.en`).
+   * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore del parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro precedente deve essere `null`).
+   * Valore `RMLocale` che specifica il valore delle impostazioni locali, ad esempio `RMLocale.en`.
    * Parametro di output stringa utilizzato per memorizzare il valore dell&#39;identificatore dei criteri.
    * Parametro di output stringa utilizzato per memorizzare il valore dell&#39;identificatore protetto tramite policy.
-   * Un parametro di output stringa utilizzato per memorizzare il tipo mime (ad esempio, `application/doc`).
+   * Parametro di output stringa utilizzato per memorizzare il tipo MIME (ad esempio, `application/doc`).
 
-   Il `protectDocument` il metodo restituisce un `BLOB` oggetto che contiene il documento Word protetto tramite policy.
+   Il metodo `protectDocument` restituisce un oggetto `BLOB` che contiene il documento Word protetto tramite policy.
 
 1. Salvare il documento di Word.
 
-   * Creare un `System.IO.FileStream` richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento Word protetto tramite policy.
-   * Creare una matrice di byte che memorizza il contenuto dei dati `BLOB` oggetto restituito da `protectDocument` metodo. Popolare la matrice di byte ottenendo il valore della `BLOB` dell&#39;oggetto `MTOM` membro dati.
-   * Creare un `System.IO.BinaryWriter` oggetto richiamando il relativo costruttore e passando il `System.IO.FileStream` oggetto.
-   * Scrivere il contenuto della matrice di byte in un file di Word richiamando `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento Word protetto tramite policy.
+   * Creare una matrice di byte che memorizza il contenuto dei dati dell&#39;oggetto `BLOB` restituito dal metodo `protectDocument`. Popolare la matrice di byte ottenendo il valore del membro dati `MTOM` dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
+   * Scrivere il contenuto della matrice di byte in un file di Word richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Esempi di codice**
 
@@ -2112,7 +2112,7 @@ Per esempi di codice con il servizio Document Security, consulta la Guida introd
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Document Security, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Document Security, consulta [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-12}
 
@@ -2136,9 +2136,9 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 Recuperare un documento Word protetto tramite policy per rimuovere una policy. Se si tenta di rimuovere una policy da un documento di Word non protetto da una policy, verrà generata un&#39;eccezione.
 
-**Rimuovere la policy dal documento di Word**
+**Rimuovi il criterio dal documento di Word**
 
-È possibile rimuovere una policy da un documento Word protetto tramite policy a condizione che nelle impostazioni di connessione sia specificato un amministratore. In caso contrario, il criterio utilizzato per proteggere un documento deve contenere `SWITCH_POLICY` autorizzazione per rimuovere una policy da un documento di Word. Inoltre, anche l’utente specificato nelle impostazioni di connessione di AEM Forms deve disporre di tale autorizzazione. In caso contrario, viene generata un&#39;eccezione.
+È possibile rimuovere una policy da un documento Word protetto tramite policy a condizione che nelle impostazioni di connessione sia specificato un amministratore. In caso contrario, il criterio utilizzato per proteggere un documento deve contenere l&#39;autorizzazione `SWITCH_POLICY` per rimuovere un criterio da un documento di Word. Inoltre, anche l’utente specificato nelle impostazioni di connessione di AEM Forms deve disporre di tale autorizzazione. In caso contrario, viene generata un&#39;eccezione.
 
 **Salvare il documento Word non protetto**
 
@@ -2162,23 +2162,23 @@ Rimuovi una policy da un documento Word protetto tramite policy utilizzando Docu
 
 1. Creare un oggetto API client di Document Security
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `RightsManagementClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `RightsManagementClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare un documento Word protetto tramite policy
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento Word protetto tramite policy utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento Word.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento Word protetto tramite policy utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento Word.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Rimuovere la policy dal documento di Word
 
-   * Creare un `DocumentManager` oggetto richiamando il `RightsManagementClient` dell&#39;oggetto `getDocumentManager` metodo.
-   * Rimuovere una policy dal documento di Word richiamando `DocumentManager` dell&#39;oggetto `removeSecurity` e passando il `com.adobe.idp.Document` oggetto che contiene il documento Word protetto tramite policy. Questo metodo restituisce un `com.adobe.idp.Document` oggetto contenente un documento di Word non protetto.
+   * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `RightsManagementClient`.
+   * Rimuovere una policy dal documento di Word richiamando il metodo `removeSecurity` dell&#39;oggetto `DocumentManager` e passando l&#39;oggetto `com.adobe.idp.Document` che contiene il documento di Word protetto tramite policy. Questo metodo restituisce un oggetto `com.adobe.idp.Document` che contiene un documento di Word non protetto.
 
 1. Salvare il documento Word non protetto
 
-   * Creare un `java.io.File` e assicurarsi che l&#39;estensione del file sia DOC.
-   * Richiama `Document` dell&#39;oggetto `copyToFile` metodo per copiare il contenuto del `Document` al file (assicurati di utilizzare il `Document` oggetto restituito da `removeSecurity` metodo).
+   * Creare un oggetto `java.io.File` e assicurarsi che l&#39;estensione del file sia DOC.
+   * Richiamare il metodo `copyToFile` dell&#39;oggetto `Document` per copiare il contenuto dell&#39;oggetto `Document` nel file (assicurarsi di utilizzare l&#39;oggetto `Document` restituito dal metodo `removeSecurity`).
 
 **Esempi di codice**
 
@@ -2196,39 +2196,39 @@ Rimuovi una policy da un documento Word protetto tramite policy utilizzando Docu
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Creare un oggetto API client di Document Security
 
-   * Creare un `RightsManagementServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `RightsManagementServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `RightsManagementServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento Word protetto tramite policy
 
-   * Creare un `BLOB` mediante il costruttore. Il `BLOB` viene utilizzato per memorizzare il documento Word protetto tramite policy da cui viene rimossa la policy.
-   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento di Word e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto della `System.IO.FileStream` oggetto. È possibile determinare le dimensioni della matrice di byte ottenendo `System.IO.FileStream` dell&#39;oggetto `Length` proprietà.
-   * Compilare la matrice di byte con i dati di flusso richiamando `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Popolare il `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto della matrice di byte.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare il documento Word protetto tramite policy da cui viene rimossa la policy.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di Word e la modalità di apertura del file.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
 1. Rimuovere la policy dal documento di Word
 
-   Rimuovere la policy dal documento di Word richiamando `RightsManagementServiceClient` dell&#39;oggetto `removePolicySecurity` e passando il `BLOB` oggetto che contiene il documento Word protetto tramite policy. Questo metodo restituisce un `BLOB` oggetto contenente un documento di Word non protetto.
+   Rimuovere la policy dal documento di Word richiamando il metodo `removePolicySecurity` dell&#39;oggetto `RightsManagementServiceClient` e passando l&#39;oggetto `BLOB` che contiene il documento di Word protetto tramite policy. Questo metodo restituisce un oggetto `BLOB` che contiene un documento di Word non protetto.
 
 1. Salvare il documento Word non protetto
 
-   * Creare un `System.IO.FileStream` richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento di Word non protetto.
-   * Creare una matrice di byte che memorizza il contenuto dei dati `BLOB` oggetto restituito da `removePolicySecurity` metodo. Popolare la matrice di byte ottenendo il valore della `BLOB` dell&#39;oggetto `MTOM` campo.
-   * Creare un `System.IO.BinaryWriter` oggetto richiamando il relativo costruttore e passando il `System.IO.FileStream` oggetto.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di Word non protetto.
+   * Creare una matrice di byte che memorizza il contenuto dei dati dell&#39;oggetto `BLOB` restituito dal metodo `removePolicySecurity`. Compilare la matrice di byte ottenendo il valore del campo `MTOM` dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
 
 **Esempi di codice**
 

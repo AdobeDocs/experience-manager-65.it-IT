@@ -27,7 +27,7 @@ Per qualsiasi problema relativo alla piattaforma, contatta il fornitore della pi
 
 Requisiti minimi per l&#39;installazione di Adobe Experience Manager:
 
-* Piattaforma Java™, JDK Standard Edition o altro supporto installato [Java™ Virtual Machine](#java-virtual-machines)
+* Installato Java™ Platform, Standard Edition JDK o altri [Java™ Virtual Machine](#java-virtual-machines) supportati
 * File Experience Manager Quickstart (file JAR autonomo o WAR di implementazione di un’applicazione web)
 
 ### Requisiti di dimensionamento minimo {#minimum-sizing-requirements}
@@ -39,11 +39,11 @@ Requisiti minimi per l&#39;esecuzione di Adobe Experience Manager:
 
 >[!NOTE]
 >
->* I casi di utilizzo di risorse digitali richiedono una maggiore quantità di memoria di base. Consulta [Distribuzione e manutenzione](/help/sites-deploying/deploy.md#default-local-install) per i dettagli.
->* [Pacchetto del componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) richiede 15 GB di spazio temporaneo.
+>* I casi di utilizzo di risorse digitali richiedono una maggiore quantità di memoria di base. Per ulteriori informazioni, vedere [Distribuzione e manutenzione](/help/sites-deploying/deploy.md#default-local-install).
+>* [Il pacchetto del componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) richiede 15 GB di spazio temporaneo.
 >
 
-Per ulteriori informazioni, vedere [Linee guida per il dimensionamento dell&#39;hardware](/help/managing/hardware-sizing-guidelines.md).
+Per ulteriori informazioni, vedere le [linee guida per il dimensionamento hardware](/help/managing/hardware-sizing-guidelines.md).
 
 ### Livelli di supporto {#support-levels}
 
@@ -90,18 +90,18 @@ Adobe Experience Manager funziona con le seguenti versioni di Java™ Virtual Ma
 
 | **Piattaforma** | **Livello di supporto** | **Collegamento** |
 |---|---|---|
-| Oracle Java™ SE 17 JDK | Z: non supportato `[1]` |
+| Oracle Java™ SE 17 JDK | Z: Non supportato `[1]` |
 | Oracle Java™ SE 11 JDK - 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
-| Oracle Java™ SE 10 JDK | Z: non supportato `[1]` |
-| Oracle Java™ SE 9 JDK | Z: non supportato `[1]` |
+| Oracle Java™ SE 10 JDK | Z: Non supportato `[1]` |
+| Oracle Java™ SE 9 JDK | Z: Non supportato `[1]` |
 | Oracle Java™ SE 8 JDK - 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | VM IBM® J9 - build 2.9, JRE 1.8.0 | R: Supportato `[2]` |
 | VM IBM® J9 - build 2.8, JRE 1.8.0 | R: Supportato `[2]` |
 | Azul Zulu OpenJDK 11 - 64 bit | R: Supportato `[3]` | |
 | Azul Zulu OpenJDK 8 a 64 bit | R: Supportato `[3]` | |
 
-1. Oracle è passato a un modello di &quot;supporto a lungo termine&quot; (LTS) per i prodotti Oracle Java™ SE. Java™ 9, Java™ 10 e Java™ 12 non sono versioni LTS per Oracle (vedi [Roadmap del supporto di Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire l’AEM in un ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java™. Il supporto e la distribuzione di Oracle Java™ SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, sono supportati da Adobe direttamente per tutti i clienti AEM che utilizzano la tecnologia Oracle Java™ SE. Consulta la [Criteri di supporto Java™ per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: Oracle Java™ 11 è supportato almeno fino a settembre 2026. È in preparazione il supporto per l’Oracle Java™ 17.**
+1. Oracle è passato a un modello di &quot;supporto a lungo termine&quot; (LTS) per i prodotti Oracle Java™ SE. Java™ 9, Java™ 10 e Java™ 12 sono versioni non LTS di Oracle (vedi [roadmap del supporto Java™ SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire l’AEM in un ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java™. Il supporto e la distribuzione di Oracle Java™ SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, sono supportati da Adobe direttamente per tutti i clienti AEM che utilizzano la tecnologia Oracle Java™ SE. Vedere i criteri di supporto [Java™ per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+   **Importante: Oracle Java™ 11 è supportato almeno fino a settembre 2026. È in preparazione il supporto per Oracle Java™ 17.**
 
 1. IBM® JRE è supportato solo insieme all&#39;Application Server WebSphere®.
 
@@ -116,7 +116,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 |---|---|---|
 | **File system con file TAR** `[1]` | Archivio | R: Supportato |
 | **File system con archivio dati** `[1]` | Binari | R: Supportato |
-| Memorizzare i file binari in file TAR nel file system `[1]` | Binari | Z: non supportato per la produzione |
+| Archivia file binari in file TAR nel file system `[1]` | Binari | Z: non supportato per la produzione |
 | Amazon S3 | Binari | R: Supportato |
 | Archiviazione BLOB di Microsoft® Azure | Binari | R: Supportato |
 | MongoDB Enterprise 6.0 | Archivio | R: Supportato `[3, 4]` |
@@ -129,7 +129,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 | IBM® DB2® 10.5 | Archivio e database Forms | R: Supporto limitato `[5]` |
 | Database Oracle 12c (12.1.x) | Archivio e database Forms | R: Supporto limitato |
 | Microsoft® SQL Server 2016 | Database Forms | R: Supportato |
-| **Apache Lucene (integrato con Quickstart)** | Servizio di ricerca | R: Supportato |
+| **Apache Lucene (predefinito Quickstart)** | Servizio di ricerca | R: Supportato |
 | Apache Solr | Servizio di ricerca | R: Supportato |
 
 1. &#39;File system&#39; include l&#39;archiviazione dei blocchi compatibile con POSIX. Include la tecnologia di storage in rete. Tieni presente che le prestazioni del file system potrebbero variare e influenzare le prestazioni complessive. Caricare il test AEM con il file system remoto/di rete.
@@ -144,13 +144,13 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 
 >[!NOTE]
 >
->Consulta [Distribuzione delle community](/help/communities/deploy-communities.md) per ulteriori informazioni sulla funzionalità AEM Communities.
+>Per ulteriori informazioni sulla funzionalità AEM Communities, vedi [Distribuzione delle community](/help/communities/deploy-communities.md).
 
 >[!NOTE]
 >
->MongoDB è un programma software di terze parti e non è incluso nel pacchetto di licenze AEM. Per ulteriori informazioni, vedere [Criteri di licenza MongoDB](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
+>MongoDB è un programma software di terze parti e non è incluso nel pacchetto di licenze AEM. Per ulteriori informazioni, vedere la pagina [Criteri di gestione licenze MongoDB](https://www.mongodb.com/licensing/server-side-public-license/faq).
 >
->Per ottenere il massimo dall’implementazione AEM con MongoDB, l’Adobe consiglia di concedere in licenza la versione Enterprise di MongoDB per usufruire di un supporto professionale. Consulta [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) per ulteriori informazioni.
+>Per ottenere il massimo dall’implementazione AEM con MongoDB, l’Adobe consiglia di concedere in licenza la versione Enterprise di MongoDB per usufruire di un supporto professionale. Per ulteriori informazioni, vedere [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk).
 >
 >La licenza include un set di repliche standard, composto da una istanza principale e due istanze secondarie che possono essere utilizzate per le distribuzioni di authoring o pubblicazione.
 >
@@ -166,7 +166,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 >
 >Per eseguire AEM 6.5 con un database relazionale supportato, è necessario un contratto di supporto separato con un fornitore di database. L’Assistenza clienti Adobe assiste i problemi qualificati relativi all’utilizzo di database relazionali con AEM 6.5.
 >
->**La maggior parte dei database relazionali sono attualmente supportati al livello R su AEM 6.5, che viene fornito con criteri di supporto e un programma di supporto come indicato nella descrizione del livello R precedente.**
+>**La maggior parte dei database relazionali è attualmente supportata nel livello R di AEM 6.5, che include criteri di supporto e un programma di supporto come indicato nella descrizione del livello R precedente.**
 
 ### Servlet Engine/Application Server {#servlet-engines-application-servers}
 
@@ -237,15 +237,15 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 
 Adobe Experience Manager è supportato in esecuzione in una macchina virtuale in ambienti di cloud computing. Questi ambienti includono as Microsoft® Azure e Amazon Web Services (AWS), in esecuzione in conformità ai requisiti tecnici elencati in questa pagina e in base ai termini di supporto standard di Adobe.
 
-Per un ambiente nativo per il cloud, consulta l’offerta più recente della linea di prodotti AEM: Adobe Experience Manager as a Cloud Service. Consulta [Documentazione di Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) per i dettagli.
+Per un ambiente nativo per il cloud, consulta l’offerta più recente della linea di prodotti AEM: Adobe Experience Manager as a Cloud Service. Per informazioni dettagliate, consulta la [documentazione di Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it).
 
-Adobe offre anche Adobe Managed Services per distribuire l’AEM su Azure o AWS. Adobe Managed Services fornisce agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare l’AEM in questi ambienti di cloud computing. Consulta [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+Adobe offre anche Adobe Managed Services per distribuire l’AEM su Azure o AWS. Adobe Managed Services fornisce agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare l’AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
 In tutti gli altri casi di distribuzione di AEM in Azure, AWS o in qualsiasi altro ambiente di cloud computing, il supporto di Adobe è contenuto nell’ambiente di elaborazione virtuale. L’ambiente virtuale deve essere eseguito in conformità alle specifiche tecniche elencate in questa pagina. Qualsiasi problema relativo all’AEM in esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico per l’ambiente di cloud computing. Questo a meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio archiviazione BLOB di Azure o AWS S3.
 
 Per raccomandazioni su come distribuire l’AEM in Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collaborando con partner Adobi che supportano l’implementazione dell’AEM nell’ambiente cloud di tua scelta. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura in modo da soddisfare specifici requisiti di prestazioni, carico, scalabilità e sicurezza.
 
-### Piattaforme di Dispatcher (server web) {#dispatcher-platforms-web-servers}
+### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
 Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
@@ -276,7 +276,7 @@ L’interfaccia utente AEM è ottimizzata per schermi più grandi (in genere not
 >
 >**Supporto per browser con cicli di rilascio rapidi:**
 >
->Mozilla Firefox, Google Chrome e Microsoft® Edge vengono rilasciati aggiornamenti ogni pochi mesi. Adobe si impegna a fornire aggiornamenti affinché Adobe Experience Manager mantenga il livello di supporto indicato di seguito con le prossime versioni di questi browser.
+>Mozilla Firefox, Google Chrome e Microsoft® Edge vengono rilasciati aggiornamenti ogni mese. Adobe si impegna a fornire aggiornamenti affinché Adobe Experience Manager mantenga il livello di supporto indicato di seguito con le prossime versioni di questi browser.
 
 <table>
  <tbody>
@@ -374,15 +374,15 @@ Quando è necessario specificare un indirizzo IP, è possibile selezionare (a se
 
 ### Requisiti del componente aggiuntivo Dynamic Medie per AEM {#requirements-for-aem-dynamic-media-add-on}
 
-Il Dynamic Medie AEM è disattivato per impostazione predefinita. Consulta qui per [abilita Dynamic Medie](/help/assets/config-dynamic.md#enabling-dynamic-media).
+Il Dynamic Medie AEM è disattivato per impostazione predefinita. Consulta qui per [abilitare Dynamic Medie](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 Con Dynamic Medie abilitato, si applicano i seguenti requisiti tecnici aggiuntivi.
 
 >[!NOTE]
 >
->Questi requisiti di sistema **solo** applicabile se si utilizza Dynamic Medie - Modalità ibrida; Dynamic Medie - Modalità ibrida dispone di un server immagini incorporato, certificato solo su alcuni sistemi operativi.
+>Questi requisiti di sistema **only** si applicano se si utilizza Dynamic Medie - modalità ibrida; Dynamic Medie - modalità ibrida dispone di un server immagini incorporato, certificato solo su alcuni sistemi operativi.
 >
->Per i clienti Dynamic Medie che eseguono Dynamic Medie in modalità Scene7 (ovvero **dynamicmedia_scene7** modalità di funzionamento), non vi sono requisiti di sistema aggiuntivi, ma solo gli stessi requisiti di sistema dell&#39;AEM. L’architettura della modalità Dynamic Medie - Scene7 utilizza il servizio per immagini basato su cloud e non il servizio incorporato nell’AEM.
+>Per i clienti Dynamic Medie che eseguono la modalità di esecuzione Dynamic Medie - Scene7 (ovvero la modalità di esecuzione **dynamicmedia_scene7**), non esistono requisiti di sistema aggiuntivi, ma solo gli stessi requisiti di sistema dell&#39;AEM. L’architettura della modalità Dynamic Medie - Scene7 utilizza il servizio per immagini basato su cloud e non il servizio incorporato nell’AEM.
 
 #### Hardware {#hardware}
 
@@ -402,11 +402,11 @@ Se utilizzi Dynamic Medie su Linux®, è necessario soddisfare i seguenti prereq
 
 >[!NOTE]
 >
->Se la lingua è impostata in modo che LC_CTYPE non sia uguale a `en_US.UTF-8`, impedisce il funzionamento di Dynamic Medie. Per visualizzare il valore, digitare &quot;locale&quot; al prompt dei comandi. Se non è impostata correttamente, impostare la variabile di ambiente LC_CTYPE sulla stringa vuota digitando &quot;export LC_CTYPE=&quot; prima di eseguire AEM.
+>Se le impostazioni locali sono impostate in modo che LC_CTYPE non sia uguale a `en_US.UTF-8`, Dynamic Medie non potrà funzionare. Per visualizzare il valore, digitare &quot;locale&quot; al prompt dei comandi. Se non è impostata correttamente, impostare la variabile di ambiente LC_CTYPE sulla stringa vuota digitando &quot;export LC_CTYPE=&quot; prima di eseguire AEM.
 
 >[!NOTE]
 >
->**Disattivazione di SELinux:** Image Server non funziona con SELinux attivato. Questa opzione è attivata per impostazione predefinita. Per risolvere questo problema, modifica il **/etc/selinux/config** e modificare il valore SELinux da:
+>**La disattivazione di SELinux:** Image Server non funziona se SELinux è attivato. Questa opzione è attivata per impostazione predefinita. Per risolvere il problema, modificare il file **/etc/selinux/config** e modificare il valore SELinux da:
 >
 >`SELINUX=enforcing` **a** `SELINUX=disabled`
 
@@ -496,11 +496,11 @@ Per Windows x86:
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG HTML, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTM, RTF e TXT</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.2 (obsoleto)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG HTML, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTM, RTF e TXT</td>
   </tr>  
  </tbody>
 </table>
@@ -511,19 +511,19 @@ Per Windows x86:
 >
 >Inoltre,
 >
->* PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078 per eseguire la conversione.
+>* PDF Generator richiede una versione a 32 bit del brano classico [Acrobat 2020 versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078 per eseguire la conversione.
 >* Le conversioni PDF Generator per OpenOffice sono supportate solo in Windows e Linux®.
 >* PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e altri software necessari per la conversione nel sistema operativo Windows.
 >* PDF Generator supporta le versioni a 32 bit e a 64 bit di OpenOffice sul sistema operativo Linux®.
 >* PDF Generator non supporta Microsoft® Office 365.
 >* Le funzionalità PDF OCR, Optimize PDF e Export PDF sono supportate solo in Windows.
->* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. Accedi in modo programmatico alla versione in bundle solo con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta Descrizione del prodotto AEM Forms in base alla tua implementazione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. Accedi in modo programmatico alla versione in bundle solo con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* Il servizio PDF Generator non supporta Microsoft® Windows 10.
->* PDF Generator non riesce a convertire i file in Microsoft® Visio 2019. È possibile continuare a utilizzare Microsoft® Visio 2016 per la conversione `.VSD` e `.VSDX` file.
->* PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019. È possibile continuare a utilizzare Microsoft® Project 2016 per la conversione `.VSD` e `.VSDX` file.
+>* PDF Generator non riesce a convertire i file in Microsoft® Visio 2019. È possibile continuare a utilizzare Microsoft® Visio 2016 per convertire `.VSD` e `.VSDX` file.
+>* PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019. È possibile continuare a utilizzare Microsoft® Project 2016 per convertire `.VSD` e `.VSDX` file.
 >
 
-### Requisiti di AEM Forms Designer {#requirements-for-aem-forms-designer}
+### Requisiti per AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
 * Processore da 1 GHz o superiore con supporto per PAE, NX e SSE2.
@@ -536,7 +536,7 @@ Per Windows x86:
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 * Privilegi amministrativi per installare Designer
 * Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 32 bit per AEM Forms Designer a 32 bit
-* Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 64 bit per AEM Forms Designer a 64 bit (per stack OSGI e JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 64 bit per AEM Forms Designer a 64 bit (per gli stack OSGI e JEE)
 
 [Installare e configurare AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
@@ -546,7 +546,7 @@ XMP write-back è supportato e abilitato per le piattaforme e i formati di file 
 
 * **Sistemi operativi:**
 
-   * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit). Per informazioni sulla procedura di installazione delle librerie client a 32 bit, vedere [Come abilitare l&#39;estrazione e il write-back dell&#39;XMP su Red Hat® Linux a 64 bit®](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit). Per i passaggi per installare le librerie client a 32 bit, vedere [Come abilitare l&#39;estrazione e la riscrittura dell&#39;XMP su Red Hat® Linux®](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) a 64 bit.
 
    * Windows Server
    * macOS X (64 bit)
@@ -555,4 +555,4 @@ XMP write-back è supportato e abilitato per le piattaforme e i formati di file 
 
 ### Requisiti per AEM Assets per elaborare metadati risorse pesanti su Linux® {#assetsonlinux}
 
-Il processo XMPFilesProcessor richiede il funzionamento della libreria GLIBC_2.14. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L’utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Il processo XMPFilesProcessor richiede il funzionamento della libreria GLIBC_2.14. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L&#39;utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Modifica della combinazione di colori dell&#39;interfaccia {#changing-the-color-scheme-of-the-interface}
 
-Puoi modificare la combinazione di colori delle parti dell’interfaccia utente dell’area di lavoro di AEM Forms in base alle tue esigenze. Di seguito sono riportati alcuni esempi di personalizzazioni rappresentative delle combinazioni di colori. Oltre ai passaggi descritti in questo articolo, consulta [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+Puoi modificare la combinazione di colori delle parti dell’interfaccia utente dell’area di lavoro di AEM Forms in base alle tue esigenze. Di seguito sono riportati alcuni esempi di personalizzazioni rappresentative delle combinazioni di colori. Oltre ai passaggi descritti in questo articolo, consulta [Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Barra di navigazione superiore {#top-navigation-bar}
 
@@ -31,7 +31,7 @@ Per aggiornare la barra di navigazione nella parte superiore dell’area di lavo
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, consulta [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Per ulteriori informazioni, vedere [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
 1. Fai riferimento alla nuova immagine di sfondo in /apps/ws/css/newStyle.css aggiungendo il seguente stile.
 
@@ -54,7 +54,7 @@ Per aggiornare la barra di navigazione nella parte superiore dell’area di lavo
 
 ## Componente categoria {#category-component}
 
-Il componente Categoria visualizza le varie categorie delle attività nel pannello a sinistra. Per modificarne il colore, definisci il colore di sfondo in `.category` del file CSS.
+Il componente Categoria visualizza le varie categorie delle attività nel pannello a sinistra. Per modificarne il colore, definisci il colore di sfondo nell&#39;elemento `.category` del file CSS.
 
 ## Componente attività {#task-component}
 

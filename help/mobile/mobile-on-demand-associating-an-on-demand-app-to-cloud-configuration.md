@@ -32,11 +32,11 @@ Da qui, diventa possibile pubblicare, visualizzare in anteprima e gestire i cont
 >
 >Prima di iniziare a configurare la configurazione cloud per l’app On-Demand, è necessario avere familiarità con il provisioning e la configurazione di AEM Mobile AEM Mobile On-demand Services Client.
 >
->Per ulteriori informazioni, consulta [Configurazione di AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) nella sezione Amministrazione.
+>Per informazioni dettagliate, vedere [Configurazione di AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) nella sezione Amministrazione.
 
-Per configurare i Cloud Service Mobile On-Demand, fai clic sull’ingranaggio in alto a destra della schermata **Gestisci connessione** affiancare dal dashboard dell’app.
+Per configurare i Cloud Service Mobile On-Demand, fai clic sull&#39;ingranaggio in alto a destra del riquadro **Gestione connessione** dal dashboard dell&#39;app.
 
-Dovresti avere familiarità con il dashboard dell’app e i riquadri disponibili. Consulta [Dashboard dell’applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) per ulteriori dettagli.
+Dovresti avere familiarità con il dashboard dell’app e i riquadri disponibili. Per ulteriori dettagli, vedi [Dashboard applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 ### Configurazione del collegamento alla configurazione cloud {#setting-up-link-to-cloud-configuration}
 
@@ -44,26 +44,26 @@ Dovresti avere familiarità con il dashboard dell’app e i riquadri disponibili
 >
 >Assicurati di disporre di una configurazione cloud e client on-demand esistente.
 >
->Per ulteriori informazioni, consulta [Configurazione di AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) nella sezione Amministrazione.
+>Per informazioni dettagliate, vedere [Configurazione di AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) nella sezione Amministrazione.
 
 I passaggi seguenti descrivono la configurazione del collegamento alla configurazione cloud:
 
-1. Da **Dispositivi mobili**, scegli **App** e poi la tua app Mobile On-Demand dal catalogo.
-1. Fai clic sull’icona a forma di ingranaggio nella **Gestisci connessione** affiancare.
+1. Da **Mobile**, scegli **App** e quindi la tua app Mobile On-Demand dal catalogo.
+1. Fai clic sull&#39;icona a forma di ingranaggio nel riquadro **Gestisci connessione**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Inserisci la configurazione esistente o creane una immettendo il **Titolo configurazione**, **ID dispositivo**, e **Token dispositivo**.
+1. Immettere la configurazione esistente o crearne una immettendo **Titolo configurazione**, **ID dispositivo** e **Token dispositivo**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Una volta **ID dispositivo** e **Token dispositivo** sono verificati, scegli il tuo progetto on-demand dall’elenco.
+1. Dopo aver verificato l&#39;**ID dispositivo** e il **Token dispositivo**, scegli il progetto on demand dall&#39;elenco.
 
    Fai clic su **Invia**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   Il **Gestisci connessione** mostra la configurazione cloud.
+   Il riquadro **Gestione connessione** mostra la configurazione cloud.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

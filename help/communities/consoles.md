@@ -21,50 +21,50 @@ ht-degree: 0%
 Le console di AEM Communities, disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere ad attività amministrative quali:
 
 * [Creazione di un sito community](sites-console.md)
-* Aggiunta [gruppi](groups.md) nidificato all’interno del sito
-* Gestione [modelli per sito community](sites.md)
-* Gestione [membri community](members.md)
-* [Moderazione](moderate-ugc.md) contenuti generati dall&#39;utente (UGC, user-generated content)
-* Crea [badge personalizzati](badges.md)
-* Configurazione di [archiviazione predefinita per UGC](srp-config.md)
+* Aggiunta di [gruppi](groups.md) nidificati nel sito
+* Gestione di [modelli di sito community](sites.md)
+* Gestione di [membri della community](members.md)
+* [Moderazione](moderate-ugc.md) del contenuto generato dall&#39;utente (UGC)
+* Crea [distintivi personalizzati](badges.md)
+* Configurazione dell&#39;archiviazione predefinita [ per UGC](srp-config.md)
 
-Quando [Archiviazione UGC](working-with-srp.md) è configurato per essere un archivio comune condiviso dagli ambienti Author e Publish, il [console di moderazione](moderation.md), disponibile negli ambienti di authoring e pubblicazione, opera su un’istanza solitaria di UGC.
+Quando l&#39;archiviazione [UGC](working-with-srp.md) è configurata come archivio comune condiviso dagli ambienti Author e Publish, la [console di moderazione](moderation.md), disponibile negli ambienti Author e Publish, funziona su un&#39;istanza solitaria di UGC.
 
-Nell&#39;ambiente di authoring, dopo aver effettuato l&#39;accesso con privilegi di amministratore, il `Communities` Le console sono disponibili nelle console strumenti e navigazione.
+Nell&#39;ambiente di authoring, dopo aver effettuato l&#39;accesso con privilegi di amministratore, le console `Communities` sono disponibili dalle console di navigazione e strumenti.
 
 >[!NOTE]
 >
->Nell’ambiente di pubblicazione, un’ [sito community](sites-console.md) visualizza un `Administration` voce di menu quando il membro connesso dispone dei privilegi appropriati.
+>Nell&#39;ambiente Publish, un [sito community](sites-console.md) visualizza una voce di menu `Administration` quando il membro connesso dispone dei privilegi appropriati.
 
 ## Pannello di navigazione globale {#global-navigation-panel}
 
-Seleziona la `Adobe Experience Manager` nell’angolo in alto a sinistra, per aprire il pannello di navigazione globale e accedere a due icone:
+Seleziona l&#39;icona `Adobe Experience Manager` nell&#39;angolo superiore sinistro per aprire il pannello di navigazione globale e accedere a due icone:
 
 * [Console di navigazione](#navigation-console)
 * [Console Strumenti](tools.md)
 
 ## Console di navigazione {#navigation-console}
 
-Per accedere alle varie console Communities, dalla navigazione globale seleziona **navigazione, community**.
+Per accedere alle varie console Communities, dalla navigazione globale seleziona **navigazione, Communities**.
 
 ![community](assets/communities.png)
 
 * [Sites](sites-console.md)
 
-  La console Sites è accessibile nell’ambiente di authoring per la creazione e la gestione di siti community e relativi [gruppi](groups.md).
+  La console Sites è accessibile nell&#39;ambiente di authoring per la creazione e la gestione di siti community e dei relativi [gruppi](groups.md).
 
 * [Moderazione](moderation.md)
 
-  La console di moderazione è per la moderazione in blocco di contenuti generati dagli utenti (UGC, User-Generated Content) e nell’ambiente di authoring. Una console di moderazione in blocco simile è accessibile nell&#39;ambiente di pubblicazione ai membri della community a cui è assegnato il ruolo di [moderatore community](users.md#publishenvironmentusersandgroups) per uno o più siti community.
+  La console di moderazione è per la moderazione in blocco di contenuti generati dagli utenti (UGC, User-Generated Content) e nell’ambiente di authoring. Una console di moderazione in blocco simile è accessibile nell&#39;ambiente Publish ai membri della comunità a cui è stato assegnato il ruolo di [moderatore della comunità](users.md#publishenvironmentusersandgroups) per uno o più siti della comunità.
 
 * [Membri, Gruppi](members.md)
 
-  Le console Membri e Gruppi consentono di gestire i membri della community e i gruppi di membri esistenti nell&#39;ambiente di pubblicazione dall&#39;ambiente di authoring.
+  Le console Membri e Gruppi consentono di gestire i membri della community e i gruppi di membri esistenti nell&#39;ambiente Publish dall&#39;ambiente di authoring.
 
 * [Rapporti](reports.md)
 
-  La console Rapporti è il luogo in cui i rapporti su assegnazioni, visualizzazioni di pagina e contenuti pubblicati (UGC) possono essere generati quando un sito community ha [Adobe Analytics abilitato](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
+  Nella console Rapporti è possibile generare rapporti su assegnazioni, visualizzazioni di pagina e contenuti pubblicati (UGC) quando in un sito della community è abilitato [Adobe Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
 
 ## Console Strumenti {#tools-console}
 
-Per accedere [Strumenti per community](tools.md) (in precedenza console di amministrazione), dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Community]**
+Per accedere a [Strumenti per community](tools.md) (in precedenza console di amministrazione) dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Community]**

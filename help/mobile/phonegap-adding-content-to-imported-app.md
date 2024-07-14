@@ -25,7 +25,7 @@ ht-degree: 1%
 
 Quindi hai importato la tua app Hybrid PhoneGap o Cordova nell&#39;AEM, e ora? È probabile che tu voglia aggiungere contenuto creabile all’app. Per eseguire questa attività, è necessario avere una conoscenza generale della struttura di un’app AEM. Un’app nell’AEM è comunemente divisa in due parti. La &quot;shell&quot; e il &quot;contenuto&quot;. La &quot;shell&quot; comprende le parti statiche dell’app, ad esempio i file di configurazione PhoneGap, il framework dell’app e i controlli di navigazione. Il contenuto dell&#39;archivio importato viene memorizzato come parte della shell. Nel contesto di questo documento, la shell è tutto il contenuto creato non dall’AEM dell’app Hybrid PhoneGap creata dallo sviluppatore dell’app.
 
-Il contenuto si riferisce ai componenti, ai modelli e alle pagine create da AEM e create dallo sviluppatore AEM. Il contenuto è classificato come contenuto per sviluppatori o come contenuto creato. Componenti, progettazioni e modelli di pagina sono considerati contenuti per lo sviluppo in quanto sono generati da uno sviluppatore. I contenuti dell’autore sono pagine che sono state create utilizzando i componenti e i modelli. Queste pagine vengono in genere eseguite da un designer o un addetto al marketing.
+Il contenuto si riferisce ai componenti, ai modelli e alle pagine create da AEM e create dallo sviluppatore AEM. Il contenuto è classificato come contenuto per sviluppatori o come contenuto creato. Componenti, progettazioni e modelli di pagina sono considerati contenuti per lo sviluppo in quanto sono generati da uno sviluppatore. I contenuti dell’autore sono pagine che sono state create utilizzando i componenti e i modelli. Queste pagine vengono in genere eseguite da un Designer o da un addetto al marketing.
 
 L’aggiunta di pagine AEM create all’app ibrida richiede il coordinamento tra lo sviluppatore dell’app e lo sviluppatore dell’AEM. In qualsiasi punto dell’app in cui desideri aggiungere contenuti creati, lo sviluppatore dell’app deve organizzare queste pagine in una struttura che possa essere sovrapposta in Experience Manager. Lo sviluppatore di app deve essere in grado di fornire allo sviluppatore di Experienci Manager i percorsi in cui viene aggiunto il contenuto creato dall’Experience Manager. Quindi, fornisci una pagina segnaposto nell’app ibrida che viene sostituita dopo che lo sviluppatore Experience Manager ha creato il contenuto della pagina.
 
@@ -41,7 +41,7 @@ In questo esempio verrà creata la pagina di benvenuto dell’applicazione. Visu
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
-Quando &quot;Scarica origine&quot; dal dashboard dell’app, questi script ContentSync vengono eseguiti per assemblare un archivio dell’app ibrida.
+Quando &quot;Scarica Source&quot; dal dashboard dell’app, questi script ContentSync vengono eseguiti per assemblare un archivio dell’app ibrida.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 

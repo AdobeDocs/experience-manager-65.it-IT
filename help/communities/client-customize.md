@@ -18,53 +18,53 @@ ht-degree: 0%
 
 # Personalizzazione lato client  {#client-side-customization}
 
-| **[⇐ funzioni di base](essentials.md)** | **[⇒ di personalizzazione lato server](server-customize.md)** |
+| **[⇐ caratteristiche di base](essentials.md)** | **[Personalizzazione lato server ⇒](server-customize.md)** |
 |---|---|
-|   | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
+|   | **[Helper Handlebars SCF ⇒](handlebars-helpers.md)** |
 
 Per personalizzare l’aspetto e/o il comportamento di un componente AEM Communities sul lato client, esistono diversi approcci.
 
 Due approcci principali sono la sovrapposizione o l’estensione di un componente.
 
-[Sovrapposizione](#overlays) un componente modifica il componente di default e influisce su ogni riferimento al componente.
+[Sovrapposizione](#overlays) di un componente cambia il componente predefinito e influisce su ogni riferimento al componente.
 
-[Estensione](#extensions) un componente, denominato in modo univoco, limita l’ambito delle modifiche. Il termine &#39;extend&#39; viene usato in modo intercambiabile con &#39;override&#39;.
+[L&#39;estensione](#extensions) di un componente, con un nome univoco, limita l&#39;ambito delle modifiche. Il termine &#39;extend&#39; viene usato in modo intercambiabile con &#39;override&#39;.
 
 ## Sovrapposizioni {#overlays}
 
 La sovrapposizione di un componente è un metodo che consente di apportare modifiche a un componente di default e di influire su tutte le varianti che lo utilizzano.
 
-La sovrapposizione viene eseguita modificando una copia del componente predefinito in /**app** anziché modificare il componente originale in /**libs** directory. Il componente è costruito con un percorso relativo identico, ad eccezione di &#39;libs&#39; che viene sostituito con &#39;apps&#39;.
+La sovrapposizione viene eseguita modificando una copia del componente predefinito nella directory /**apps**, anziché modificando il componente originale nella directory /**libs**. Il componente è costruito con un percorso relativo identico, ad eccezione di &#39;libs&#39; che viene sostituito con &#39;apps&#39;.
 
 La directory /apps è la prima posizione in cui viene eseguita la ricerca per risolvere le richieste e, se non viene trovata, viene utilizzata la versione predefinita nella directory/libs.
 
 Il componente predefinito nella directory /libs non deve mai essere modificato in quanto le patch e gli aggiornamenti futuri sono liberi di modificare la directory /libs in qualsiasi modo necessario mantenendo le interfacce pubbliche.
 
-Questo è diverso da [estensione](#extensions) un componente predefinito in cui si desidera apportare modifiche per un uso specifico, creando un percorso univoco del componente e facendo riferimento al componente predefinito originale nella directory /libs come tipo di risorsa super.
+Questo è diverso da [extension](#extensions) un componente predefinito in cui si desidera apportare modifiche per un uso specifico, creando un percorso univoco al componente e facendo riferimento al componente predefinito originale nella directory /libs come tipo di risorsa super.
 
-Per un rapido esempio di sovrapposizione del componente Commenti, prova [Esercitazione sul componente Commenti sovrapposizione](overlay-comments.md).
+Per un rapido esempio di sovrapposizione del componente Commenti, prova l&#39;esercitazione [Componente Commenti sovrapposti](overlay-comments.md).
 
 ## Estensioni {#extensions}
 
 L’estensione (esclusione) di un componente è un metodo per apportare modifiche per un uso specifico senza influire su tutte le istanze che utilizzano l’impostazione predefinita. Il componente esteso ha un nome univoco nella cartella /apps e fa riferimento al componente predefinito nella cartella /libs, pertanto la progettazione e il comportamento predefiniti di un componente non vengono modificati.
 
-Questo è diverso da [sovrapposizione](#overlays) il componente predefinito in cui la natura di Sling risolve i riferimenti relativi alla cartella apps/ prima di eseguire ricerche nella cartella libs/, pertanto la progettazione o il comportamento di un componente viene modificato a livello globale.
+Questo è diverso da [sovrapposizione](#overlays) del componente predefinito in cui la natura di Sling risolve i riferimenti relativi alla cartella apps/ prima di effettuare la ricerca nella cartella libs/, pertanto la progettazione o il comportamento di un componente viene modificato a livello globale.
 
-Per un rapido esempio di estensione del componente Commenti, prova [Tutorial sul componente Estendi commenti](extend-comments.md).
+Per un rapido esempio di estensione del componente Commenti, prova l&#39;esercitazione [Estendi componente Commenti](extend-comments.md).
 
-## Associazione JavaScript {#javascript-binding}
+## Binding JavaScript {#javascript-binding}
 
-Lo script HBS per il componente deve essere associato agli oggetti, ai modelli e alle viste JavaScript che implementano questa funzione.
+Lo script HBS per il componente deve essere associato agli oggetti, ai modelli e alle viste di JavaScript che implementano questa funzione.
 
-Il valore della proprietà `data-scf-component` può essere l&#39;impostazione predefinita, ad esempio **`social/tally/components/hbs/rating`** o un componente esteso (personalizzato) per funzionalità personalizzate, ad esempio **weretail/components/hbs/rating**.
+Il valore dell&#39;attributo `data-scf-component` può essere il valore predefinito, ad esempio **`social/tally/components/hbs/rating`**, o un componente esteso (personalizzato) per funzionalità personalizzate, ad esempio **weretail/components/hbs/rating**.
 
-Per associare un componente, l’intero script del componente deve essere racchiuso in un &lt;div> con i seguenti attributi:
+Per associare un componente, l’intero script del componente deve essere racchiuso in un elemento &lt;div> con i seguenti attributi:
 
 * `data-component-id`=&quot;`{{id}}`&quot;
 
   viene risolto nella proprietà id dal contesto
 
-* `data-scf-component`=&quot;*&lt;resourcetype>*
+* `data-scf-component`=&quot;*&lt;tipoRisorsa>*
 
 Ad esempio, da `/apps/weretail/components/hbs/rating/rating.hbs`:
 
@@ -95,7 +95,7 @@ Per applicare lo skin a un componente:
 1. Identificare gli elementi che si desidera modificare (ad esempio l&#39;area del compositore, i pulsanti della barra degli strumenti, il carattere del messaggio e così via).
 1. Identifica la classe CSS o le regole che influenzano questi elementi.
 1. Creare un file del foglio di stile (css).
-1. Includere il foglio di stile in una cartella della libreria client ([clientlibs](#clientlibs-for-scf)) per il sito e assicurati che sia incluso dai modelli e dalle pagine con [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Includi il foglio di stile in una cartella della libreria client ([clientlibs](#clientlibs-for-scf)) per il tuo sito e assicurati che sia incluso nei modelli e nelle pagine con [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
 
 1. Ridefinire le classi e le regole CSS identificate (#2) nel foglio di stile e aggiungere stili.
 
@@ -105,14 +105,14 @@ Gli stili personalizzati sovrascriveranno gli stili di framework predefiniti e i
 >
 >Qualsiasi nome di classe CSS con prefisso `scf-js` ha un utilizzo specifico nel codice JavaScript. Queste classi influiscono sullo stato di un componente (ad esempio, da nascosto a visibile) e non devono essere ignorate né rimosse.
 >
->Mentre il `scf-js` le classi non influiscono sugli stili, i nomi delle classi possono essere utilizzati nei fogli di stile con l&#39;avvertenza che, poiché controllano gli stati degli elementi, possono verificarsi effetti collaterali.
+>Anche se le classi `scf-js` non influiscono sugli stili, i nomi delle classi possono essere utilizzati nei fogli di stile con l&#39;avvertenza che, poiché controllano gli stati degli elementi, potrebbero verificarsi effetti collaterali.
 
 ## Estensione di JavaScript {#extending-javascript}
 
-Per estendere un’implementazione JavaScript dei componenti, devi:
+Per estendere un’implementazione di JavaScript per componenti, è necessario:
 
 1. Crea un componente per la tua app con un jcr:resourceSuperType impostato sul valore del jcr:resourceType del componente esteso, ad esempio social/forum/components/hbs/forum.
-1. Esamina il JavaScript del componente SCF predefinito per determinare quali metodi devono essere registrati utilizzando SCF.registerComponent().
+1. Esaminate il JavaScript del componente SCF predefinito per determinare quali metodi devono essere registrati utilizzando SCF.registerComponent().
 1. Copia il JavaScript del componente esteso o inizia da zero.
 1. Estendere il metodo.
 1. Utilizzare SCF.registerComponent() per registrare tutti i metodi con le impostazioni predefinite o con gli oggetti e le visualizzazioni personalizzate.
@@ -146,18 +146,18 @@ Per estendere un’implementazione JavaScript dei componenti, devi:
 
 I tag script sono parte integrante del framework lato client. Sono l’associazione che consente di associare il markup generato sul lato server ai modelli e alle viste sul lato client.
 
-I tag di script negli script SCF non devono essere rimossi quando si sovrappongono o si sovrascrivono i componenti. I tag script SCF creati automaticamente per l’inserimento di JSON nel HTML sono identificati con l’attributo `data-scf-json=true`.
+I tag di script negli script SCF non devono essere rimossi quando si sovrappongono o si sovrascrivono i componenti. I tag script SCF creati automaticamente per l&#39;inserimento di JSON nel HTML sono identificati con l&#39;attributo `data-scf-json=true`.
 
 ## Clientlibs per SCF {#clientlibs-for-scf}
 
-L&#39;uso di [librerie lato client](../../help/sites-developing/clientlibs.md) (clientlibs), fornisce un mezzo per organizzare e ottimizzare JavaScript e CSS utilizzati per il rendering del contenuto sul client.
+L&#39;utilizzo di [librerie lato client](../../help/sites-developing/clientlibs.md) (clientlibs) consente di organizzare e ottimizzare il JavaScript e i CSS utilizzati per il rendering del contenuto sul client.
 
 Le clientlibs per SCF seguono un pattern di denominazione molto specifico per due varianti, che varia solo in base alla presenza di &quot;author&quot; nel nome della categoria:
 
 | Variante Clientlib | Pattern per proprietà Categories |
 |--- |--- |
-| clientlib completa | cq.social.hbs.&lt;component name> |
-| author clientlib | cq.social.author.hbs.&lt;component name> |
+| clientlib completa | cq.social.hbs.&lt;nome componente> |
+| author clientlib | cq.social.author.hbs.&lt;nome componente> |
 
 ### Clientlibs complete {#complete-clientlibs}
 
@@ -172,13 +172,13 @@ Ad esempio:
 * Nodo cartella client: `/etc/clientlibs/social/hbs/forum`
 * Proprietà Categories: `cq.social.hbs.forum`
 
-Il [Guida ai componenti della community](components-guide.md) elenca le clientlibs complete necessarie per ciascun componente SCF.
+Nella [guida ai componenti community](components-guide.md) sono elencate le clientlibs complete necessarie per ogni componente SCF.
 
 [Clientlibs per i componenti Communities](clientlibs.md) descrive come aggiungere clientlibs a una pagina.
 
 ### Creatore Clientlibs {#author-clientlibs}
 
-Le clientlibs della versione di authoring sono ridotte al minimo JavaScript necessario per implementare il componente.
+Le clientlibs della versione di authoring vengono ridotte al minimo JavaScript necessario per implementare il componente.
 
 Queste clientlibs non devono mai essere incluse direttamente, ma sono disponibili per l’incorporamento in altre clientlibs, create a mano per un sito.
 
@@ -193,16 +193,16 @@ Ad esempio:
 
 Nota: anche se author clientlibs non incorpora mai altre librerie, elenca effettivamente le loro dipendenze. Quando sono incorporate in altre librerie, le dipendenze non vengono inserite automaticamente e devono essere incorporate.
 
-Le clientlibs dell’autore richieste possono essere identificate inserendo &quot;author&quot; nelle clientlibs elencate per ogni componente SCF in [Guida ai componenti della community](components-guide.md).
+Le clientlibs di authoring richieste possono essere identificate inserendo &quot;author&quot; nelle clientlibs elencate per ciascun componente SCF nella [guida dei componenti community](components-guide.md).
 
 ### Considerazioni sull’utilizzo {#usage-considerations}
 
 Ogni sito è diverso nel modo in cui gestisce le librerie client. Vari fattori includono:
 
-* Velocità complessiva: forse il desiderio è che il sito sia reattivo, ma è accettabile che la prima pagina sia un po&#39; lenta da caricare. Se molte pagine utilizzano lo stesso JavaScript, i vari JavaScript possono essere incorporati in una libreria client e a cui si fa riferimento dalla prima pagina da caricare. Il JavaScript in questo singolo download rimane memorizzato nella cache, riducendo al minimo la quantità di dati da scaricare per le pagine successive.
+* Velocità complessiva: forse il desiderio è che il sito sia reattivo, ma è accettabile che la prima pagina sia un po&#39; lenta da caricare. Se molte pagine utilizzano lo stesso JavaScript, è possibile incorporare i vari JavaScript in una libreria client e farvi riferimento dalla prima pagina da caricare. Il JavaScript in questo singolo download rimane memorizzato nella cache, riducendo al minimo la quantità di dati da scaricare per le pagine successive.
 * Breve tempo alla prima pagina: forse il desiderio è che la prima pagina venga caricata rapidamente. In questo caso, il JavaScript si trova in più file di piccole dimensioni a cui fare riferimento solo quando necessario.
 * Equilibrio tra il primo caricamento della pagina e i download successivi.
 
-| **[⇐ funzioni di base](essentials.md)** | **[⇒ di personalizzazione lato server](server-customize.md)** |
+| **[⇐ caratteristiche di base](essentials.md)** | **[Personalizzazione lato server ⇒](server-customize.md)** |
 |---|---|
-|   | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
+|   | **[Helper Handlebars SCF ⇒](handlebars-helpers.md)** |

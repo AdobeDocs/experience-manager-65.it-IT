@@ -29,14 +29,14 @@ Devi avere installato quanto segue:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Consulta [Integrazione dell’AEM con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) per ulteriori informazioni.
+Per ulteriori informazioni, vedere [Integrazione dell&#39;AEM con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
 ## Creazione di mapping di moduli personalizzati {#creating-custom-form-mappings-2}
 
 Per creare mappature di moduli personalizzate, è necessario seguire questi passaggi di alto livello, descritti in dettaglio nelle sezioni seguenti:
 
 1. Crea una tabella personalizzata.
-1. Estendi il **seed** tabella.
+1. Estendere la tabella **seed**.
 1. Creare una mappatura personalizzata.
 1. Crea una consegna in base alla mappatura personalizzata.
 1. Crea il modulo in AEM, che utilizzerà la consegna creata.
@@ -55,15 +55,15 @@ Inizia creando una tabella personalizzata in Adobe Campaign. In questo esempio, 
 </element>
 ```
 
-Dopo aver creato la tabella degli eventi, eseguire la **Procedura guidata di aggiornamento della struttura del database** per creare la tabella.
+Dopo aver creato la tabella eventi, eseguire la **Procedura guidata Aggiorna struttura database** per creare la tabella.
 
 ### Estensione della tabella dei valori iniziali {#extending-the-seed-table}
 
-In Adobe Campaign, seleziona **Aggiungi** per creare un&#39;estensione del **Indirizzi seed (nms)** tabella.
+In Adobe Campaign, selezionare **Aggiungi** per creare un&#39;estensione della tabella **Indirizzi seed (nms)**.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Ora puoi utilizzare i campi della sezione **evento** tabella per estendere **seed** tabella:
+Utilizzare ora i campi della tabella **event** per estendere la tabella **seed**:
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -74,23 +74,23 @@ Ora puoi utilizzare i campi della sezione **evento** tabella per estendere **see
  </element>
 ```
 
-In seguito, esegui **Procedura guidata Aggiorna database** per applicare le modifiche.
+In seguito, eseguire **Aggiornamento guidato database** per applicare le modifiche.
 
 ### Creazione di una mappatura di destinazione personalizzata {#creating-custom-target-mapping}
 
-In entrata **Amministrazione/Gestione delle campagne** t, vai a **Mappature target** e aggiungi una nuova T **Mappatura target.**
+In **Amministrazione/Gestione campagne** t, vai a **Mappature target** e aggiungi un nuovo T **Mappatura target.**
 
 >[!NOTE]
 >
->Utilizza un nome significativo per **Nome interno**.
+>Assicurarsi di utilizzare un nome significativo per **Nome interno**.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### Creazione di un modello di consegna personalizzato {#creating-a-custom-delivery-template}
 
-In questo passaggio, stai aggiungendo un modello di consegna che utilizza il **Mappatura target**.
+In questo passaggio, stai aggiungendo un modello di consegna che utilizza la mappatura **Target** creata.
 
-In entrata **Risorse/Modelli**, passa al modello di consegna e duplica la consegna AEM esistente. Quando fai clic su **A**, seleziona l’evento di creazione **Mappatura target**.
+In **Risorse/Modelli**, passa al Modello di consegna e duplica la consegna AEM esistente. Quando fai clic su **A**, seleziona l&#39;evento di creazione **Mappatura target**.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -98,7 +98,7 @@ In entrata **Risorse/Modelli**, passa al modello di consegna e duplica la conseg
 
 In AEM, assicurati di aver configurato un Cloud Service in **Proprietà pagina**.
 
-Quindi, nella **Adobe Campaign** , seleziona la consegna creata in [Creazione di un modello di consegna personalizzato](#creating-a-custom-delivery-template).
+Quindi, nella scheda **Adobe Campaign**, seleziona la consegna creata in [Creazione di un modello di consegna personalizzato](#creating-a-custom-delivery-template).
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -106,7 +106,7 @@ Durante la configurazione dei campi, accertati di specificare nomi di elementi u
 
 Dopo aver configurato i campi, devi modificare manualmente la mappatura.
 
-In CRXDE-lite, vai al **jcr:content** (della pagina) e modificare il **acMapping** valore al nome interno del **Mappatura target**.
+In CRXDE-lite, vai al nodo **jcr:content** (della pagina) e modifica il valore **acMapping** nel nome interno della mappatura **Target**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -122,8 +122,8 @@ Ora puoi inviare il modulo e verificare sul lato Adobe Campaign se i valori veng
 
 ## Risoluzione dei problemi {#troubleshooting}
 
-**&quot;Tipo non valido per il valore &#39;02/02/2015&#39; dall&#39;elemento &#39;@eventdate&#39; (documento di tipo &#39;Event ([adb:evento])&#39;)&quot;**
+**&quot;Tipo non valido per il valore &#39;02/02/2015&#39; dall&#39;elemento &#39;@eventdate&#39; (documento di tipo &#39;Event ([adb:event])&#39;)&quot;**
 
-Quando si invia il modulo, questo errore viene registrato in **error.log** nell&#39;AEM.
+Durante l&#39;invio del modulo, questo errore viene registrato nel **error.log** in AEM.
 
-Il formato del campo data non è valido. La soluzione consiste nel fornire **aaaa-mm-gg** come valore.
+Il formato del campo data non è valido. La soluzione alternativa consiste nel fornire **aaaa-mm-gg** come valore.

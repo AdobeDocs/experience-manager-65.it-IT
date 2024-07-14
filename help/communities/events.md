@@ -22,13 +22,13 @@ ht-degree: 5%
 
 Quando i membri interagiscono con le funzioni di Communities, vengono inviati eventi OSGi che possono attivare listener asincroni, come notifiche o gamification (punteggio e badge).
 
-Di un componente [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) l’istanza registra gli eventi come `actions` che si verificano per un `topic`. SocialEvent include un metodo per restituire un `verb` associato all’azione. È presente un *n-1* relazione tra `actions` e `verbs`.
+L&#39;istanza [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) di un componente registra gli eventi come `actions` che si verificano per un `topic`. SocialEvent include un metodo per restituire un `verb` associato all&#39;azione. Esiste una relazione *n-1* tra `actions` e `verbs`.
 
-Per i componenti Community consegnati in questa versione, le tabelle seguenti descrivono `verbs` definito per ogni `topic` disponibile per l’uso.
+Per i componenti Community consegnati nella versione, le tabelle seguenti descrivono i `verbs` definiti per ogni `topic` disponibile.
 
 ## Argomenti e verbi {#topics-and-verbs}
 
-[Componente calendario](calendar-basics-for-developers.md)
+[Componente Calendario](calendar-basics-for-developers.md)
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descrizione** |
@@ -48,7 +48,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | AGGIORNA | Commento del membro modificato |
 | ELIMINA | Commento del membro eliminato |
 
-[Componente Libreria file](essentials-file-library.md)
+[Componente Libreria File](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrizione** |
@@ -78,7 +78,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | AGGIORNA | L&#39;articolo o il commento del blog del membro è stato modificato |
 | ELIMINA | L&#39;articolo o il commento del blog del membro è stato eliminato |
 
-[Componente D/R](qna-essentials.md)
+[Componente QnA](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrizione** |
@@ -90,7 +90,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | DESELEZIONA | La risposta del membro è deselezionata |
 | ELIMINA | La domanda o la risposta QnA del membro viene eliminata |
 
-[Componente Recensioni](reviews-basics.md)
+[Componente recensioni](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrizione** |
@@ -107,7 +107,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 | AGGIUNGI VALUTAZIONE | Il contenuto dell&#39;utente è stato rivalutato |
 | RIMUOVI VALUTAZIONE | Il contenuto dell&#39;utente non è stato valutato correttamente |
 
-[Componente voto](essentials-voting.md)
+[Componente Votazione](essentials-voting.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrizione** |
@@ -129,9 +129,9 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ## Eventi per componenti personalizzati {#events-for-custom-components}
 
-Per un componente personalizzato, la [Classe astratta SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) deve essere esteso d per registrare gli eventi del componente come `actions`che si verificano per un `topic`.
+Per un componente personalizzato, la [classe astratta SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) deve essere estesa d per registrare gli eventi del componente come `actions` che si verificano per un `topic`.
 
-L’evento personalizzato sostituirebbe il metodo `getVerb()` in modo che un `verb`viene restituito per ogni `action`. Il `verb` restituito per un&#39;azione può essere uno dei valori comunemente utilizzati (ad esempio `POST`) o uno specifico per il componente (ad esempio `ADD RATING`). È presente un *n-1* relazione tra `actions`e `verbs`.
+L&#39;evento personalizzato eseguirà l&#39;override del metodo `getVerb()` in modo che venga restituito un `verb` appropriato per ogni `action`. Il `verb` restituito per un&#39;azione può essere uno usato comunemente (ad esempio `POST`) o uno specializzato per il componente (ad esempio `ADD RATING`). Esiste una relazione *n-1* tra `actions` e `verbs`.
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ Il seguente pseudo-codice di esempio rimuoverà gli eventi DELETE per il compone
 
 ### Pseudo-codice per EventListener {#pseudo-code-for-eventlistener}
 
-Richiede [feature pack più recente](deploy-communities.md#latestfeaturepack).
+Richiede [pacchetto di funzionalità più recente](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;

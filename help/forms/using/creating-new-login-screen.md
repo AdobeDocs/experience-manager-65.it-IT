@@ -22,10 +22,10 @@ Puoi modificare la schermata di accesso di tutti i moduli AEM Forms che utilizza
 
 ## Prerequisito {#prerequisite}
 
-1. Accedi a `/lc/crx/de` con autorizzazioni di amministratore.
+1. Accedere a `/lc/crx/de` con le autorizzazioni di amministratore.
 1. Effettua le seguenti azioni:
 
-   1. Replica la struttura gerarchica: di `/libs/livecycle/core/content` a `/apps/livecycle/core/content`.
+   1. Replica la struttura gerarchica: di `/libs/livecycle/core/content` alle `/apps/livecycle/core/content`.
 
       Gestisci le stesse proprietà (nodo/cartella) e il controllo degli accessi.
 
@@ -35,43 +35,43 @@ Puoi modificare la schermata di accesso di tutti i moduli AEM Forms che utilizza
 
       a: `/apps/livecycle/core`.
 
-   1. Elimina il contenuto di `/apps/livecycle/core` cartella.
+   1. Eliminare il contenuto della cartella `/apps/livecycle/core`.
 
 1. Eseguire le azioni riportate di seguito.
 
-   1. Replica la struttura gerarchica: di `/libs/livecycle/core/components/login` a `/apps/livecycle/core/components/login`. Gestisci le stesse proprietà (nodo/cartella) e il controllo degli accessi.
+   1. Replica la struttura gerarchica: di `/libs/livecycle/core/components/login` alle `/apps/livecycle/core/components/login`. Gestisci le stesse proprietà (nodo/cartella) e il controllo degli accessi.
 
    1. Copia la cartella dei componenti: da `/libs/livecycle/core` a `/apps/livecycle/core`.
 
-   1. Elimina il contenuto della cartella: `/apps/livecycle/core/components/login`.
+   1. Eliminare il contenuto della cartella: `/apps/livecycle/core/components/login`.
 
 ### Aggiunta di una nuova lingua {#adding-a-new-locale}
 
-1. Copia il `i18n` cartella:
+1. Copia la cartella `i18n`:
 
    * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
-1. Elimina tutte le cartelle all&#39;interno di `i18n` tranne uno, di&#39; `en`.
+1. Eliminare tutte le cartelle in `i18n` tranne una, ad esempio `en`.
 
-1. Nella cartella `en`, esegui le seguenti azioni:
+1. Nella cartella `en` eseguire le azioni seguenti:
 
    1. Rinominare la cartella con il nome delle impostazioni internazionali che si desidera supportare. Esempio: `ar`.
 
-   1. Modificare la proprietà `jcr:language` valore per `ar`(per `ar` cartella ).
+   1. Modificare il valore della proprietà `jcr:language` in `ar`(per la cartella `ar`).
 
    >[!NOTE]
    >
-   >Se locale è una combinazione di codice lingua-paese, ad esempio, `ar-DZ`, quindi modifica il nome della cartella e il valore della proprietà in `ar-DZ`.
+   >Se la lingua è una combinazione di codice lingua-paese, ad esempio `ar-DZ`, modificare il nome della cartella e il valore della proprietà in `ar-DZ`.
 
 1. Copia `login.jsp`:
 
    * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
-1. Modifica il seguente frammento di codice per `/apps/livecycle/core/components/login/login.jsp`:
+1. Modificare il seguente frammento di codice per `/apps/livecycle/core/components/login/login.jsp`:
 
-***La lingua è il codice della lingua***
+***La lingua è codice lingua***
 
 ```jsp
 String browserLocale = "en";
@@ -197,23 +197,23 @@ String browserLocale = "en";
 
 ### Aggiunta di nuovo testo o modifica di testo esistente {#adding-new-text-or-modifying-existing-text}
 
-1. Copia `i18n` cartella:
+1. Copia cartella `i18n`:
 
    * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
-1. Ora modifica il valore della proprietà `sling:message` del nodo (nella cartella del codice locale desiderata) per il quale si desidera modificare il testo. La traduzione viene eseguita tramite la chiave indicata nel valore di `sling:key` del nodo.
+1. Modificare il valore della proprietà `sling:message` del nodo (nella cartella del codice locale desiderata) per il quale si desidera modificare il testo. La traduzione viene eseguita tramite la chiave indicata nel valore della proprietà `sling:key` del nodo.
 
 1. Per aggiungere una nuova coppia chiave-valore, effettua le seguenti operazioni. Controlla un esempio nella schermata seguente.
 
-   1. Creare un nodo di tipo `sling:MessageEntry`o copiare un nodo esistente e rinominarlo in tutte le cartelle delle impostazioni internazionali.
-   1. Copia `login.jsp` :
+   1. Creare un nodo di tipo `sling:MessageEntry` o copiare un nodo esistente e rinominarlo in tutte le cartelle delle impostazioni internazionali.
+   1. Copia `login.jsp`:
 
       * da `/libs/livecycle/core/components/login`
 
       * a `/apps/livecycle/core/components/login`
 
-   1. Modifica `/apps/livecycle/core/components/login/login.jsp` per incorporare il testo appena aggiunto.
+   1. Modificare `/apps/livecycle/core/components/login/login.jsp` per incorporare il testo appena aggiunto.
 
    ![Aggiungi nuova coppia chiave-valore](assets/capture_new.png)
 
@@ -240,12 +240,12 @@ String browserLocale = "en";
 
 ### Aggiunta di un nuovo stile o modifica di uno stile esistente {#adding-new-style-or-modifying-existing-style}
 
-1. Copia `login` nodo:
+1. Copia nodo `login`:
 
    * da `/libs/livecycle/core/content`
    * a `/apps/livecycle/core/content`
 
-1. Elimina file `login.js` e `jquery-1.8.0.min.js`, dal nodo `/apps/livecycle/core/content/login.`
+1. Elimina i file `login.js` e `jquery-1.8.0.min.js` dal nodo `/apps/livecycle/core/content/login.`
 1. Modifica gli stili nel file CSS.
 1. Per aggiungere nuovi stili:
 
@@ -256,7 +256,7 @@ String browserLocale = "en";
 
       * a `/apps/livecycle/core/components/login`
 
-   1. Modifica `/apps/livecycle/core/components/login/login.jsp` per incorporare i nuovi stili aggiunti.
+   1. Modificare `/apps/livecycle/core/components/login/login.jsp` per incorporare gli stili appena aggiunti.
 
 
 Ad esempio:
@@ -270,7 +270,7 @@ css.newLoginContentArea {
    }
 ```
 
-* Modifica quanto segue in `/apps/livecycle/core/components/login.jsp`.
+* Modificare quanto segue in `/apps/livecycle/core/components/login.jsp`.
 
 
   ```jsp
@@ -285,7 +285,7 @@ css.newLoginContentArea {
 
 >[!NOTE]
 >
->Se le immagini esistenti `/apps/livecycle/core/content/login` (copiato da `/libs/livecycle/core/content/login`) vengono rimossi, quindi rimuovi i riferimenti corrispondenti in CSS.
+>Se le immagini esistenti in `/apps/livecycle/core/content/login` (copiate da `/libs/livecycle/core/content/login`) vengono rimosse, rimuovere i riferimenti corrispondenti in CSS.
 
 ### Aggiungere nuove immagini {#add-new-images}
 
@@ -293,12 +293,12 @@ css.newLoginContentArea {
 1. Aggiungere nuove immagini in `/apps/livecycle/core/content/login`. Per aggiungere un&#39;immagine:
 
    1. Installare il client WebDAV.
-   1. Accedi a `/apps/livecycle/core/content/login` mediante il client WebDAV. Per ulteriori informazioni, consulta [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Passare alla cartella `/apps/livecycle/core/content/login` utilizzando il client WebDAV. Per ulteriori informazioni, vedere [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    1. Aggiungere nuove immagini.
 
-1. Aggiungere nuovi stili in `/apps/livecycle/core/content/login/login.css,` corrispondente alle nuove immagini aggiunte in `/apps/livecycle/core/content/login`.
-1. Utilizzare i nuovi stili in `login.jsp` a `/apps/livecycle/core/components`.
+1. Aggiungi nuovi stili in `/apps/livecycle/core/content/login/login.css,` corrispondenti alle nuove immagini aggiunte in `/apps/livecycle/core/content/login`.
+1. Usa i nuovi stili in `login.jsp` alle `/apps/livecycle/core/components`.
 
 Ad Esempio:
 

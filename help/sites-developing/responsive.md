@@ -21,12 +21,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (come _React_). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+>L&#39;Adobe consiglia di utilizzare l&#39;Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio _React_). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 >
 
 >[!NOTE]
 >
->Vari esempi si basano sul contenuto del Geometrixx, che non viene più fornito con AEM (Adobe Experience Manager), essendo stato sostituito da We.Retail. Consulta il documento [Implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) per informazioni su come scaricare e installare Geometrixx.
+>Vari esempi si basano sul contenuto del Geometrixx, che non viene più fornito con AEM (Adobe Experience Manager), essendo stato sostituito da We.Retail. Per informazioni su come scaricare e installare Geometrixx, consulta il documento [Implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx).
 
 Progetta le pagine web in modo che si adattino al riquadro di visualizzazione client in cui vengono visualizzate. Con il design reattivo, le stesse pagine possono essere visualizzate in modo efficace su più dispositivi in entrambi gli orientamenti. L&#39;immagine seguente illustra alcuni modi in cui una pagina può rispondere alle modifiche apportate alle dimensioni del riquadro di visualizzazione:
 
@@ -52,7 +52,7 @@ Per informazioni sull’implementazione del comportamento di progettazione reatt
 * [Griglie fluide](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Immagini adattive](/help/sites-developing/responsive.md#using-adaptive-images)
 
-Durante la progettazione, utilizzare **[!UICONTROL Sidekick]** per visualizzare in anteprima le pagine per diverse dimensioni dello schermo.
+Durante la progettazione, utilizza **[!UICONTROL Sidekick]** per visualizzare in anteprima le pagine in diverse dimensioni dello schermo.
 
 ## Prima di sviluppare {#before-you-develop}
 
@@ -66,7 +66,7 @@ Prima di sviluppare l’applicazione AEM che supporta le pagine web, è necessar
 
 La tipica struttura di applicazioni AEM supporta tutte le implementazioni di progettazione reattiva:
 
-* I componenti della pagina si trovano sotto /apps/*nome_applicazione*/components
+* I componenti di pagina si trovano sotto /apps/*nome_applicazione*/components
 * I modelli si trovano sotto /apps/*nome_applicazione*/templates
 * Le progettazioni si trovano sotto /etc/designs
 
@@ -74,7 +74,7 @@ La tipica struttura di applicazioni AEM supporta tutte le implementazioni di pro
 
 Le query multimediali consentono l’utilizzo selettivo degli stili CSS per il rendering delle pagine. Gli strumenti e le funzioni di sviluppo AEM consentono di implementare in modo efficace ed efficiente le query multimediali nelle applicazioni.
 
-Il gruppo W3C fornisce [Query multimediali](https://www.w3.org/TR/mediaqueries-3/) consiglio che descrive questa funzione CSS3 e la sintassi.
+Il gruppo W3C fornisce il consiglio [Media Queries](https://www.w3.org/TR/mediaqueries-3/) che descrive questa funzione CSS3 e la sintassi.
 
 ### Creazione del file CSS {#creating-the-css-file}
 
@@ -85,7 +85,7 @@ Nel file CSS, definisci le query multimediali in base alle proprietà dei dispos
 * Definisci gli stili comuni a tutti i dispositivi in un file CSS separato.
 * Nel file css.txt di ClientLibraryFolder, ordinare i file CSS di elenco come richiesto nel file CSS assemblato.
 
-Il `We.Retail` L’esempio di file multimediali utilizza questa strategia per definire gli stili nella progettazione del sito. Il file CSS utilizzato da `We.Retail` è in `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
+L&#39;esempio di file multimediali `We.Retail` utilizza questa strategia per definire gli stili nella progettazione del sito. Il file CSS utilizzato da `We.Retail` si trova in `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
 
 Nella tabella seguente sono elencati i file presenti nella cartella secondaria css.
 
@@ -134,7 +134,7 @@ Nella tabella seguente sono elencati i file presenti nella cartella secondaria c
  </tbody>
 </table>
 
-Il file css.txt in `/etc/designs/weretail/clientlibs` cartella elenca i file CSS inclusi nella cartella della libreria client. L’ordine dei file implementa la precedenza degli stili. Gli stili sono più specifici al diminuire delle dimensioni del dispositivo.
+Il file css.txt nella cartella `/etc/designs/weretail/clientlibs` elenca i file CSS inclusi nella cartella della libreria client. L’ordine dei file implementa la precedenza degli stili. Gli stili sono più specifici al diminuire delle dimensioni del dispositivo.
 
 `#base=css`
 
@@ -151,7 +151,7 @@ responsive-1200px.css
  responsive-480px.css
 ```
 
-**Suggerimento**: i nomi di file descrittivi ti consentono di identificare facilmente la dimensione del riquadro di visualizzazione di destinazione.
+**Suggerimento**: i nomi di file descrittivi ti consentono di identificare facilmente la dimensione di visualizzazione di destinazione.
 
 ### Utilizzo delle query multimediali con le pagine AEM {#using-media-queries-with-aem-pages}
 
@@ -163,7 +163,7 @@ Includi la cartella della libreria client nello script JSP del componente pagina
 
 >[!NOTE]
 >
->Il `apps.weretail.all` la cartella della libreria client incorpora la libreria clientlibs.
+>La cartella della libreria client `apps.weretail.all` incorpora la libreria clientlibs.
 
 Lo script JSP genera il seguente codice HTML che fa riferimento ai fogli di stile:
 
@@ -174,34 +174,34 @@ Lo script JSP genera il seguente codice HTML che fa riferimento ai fogli di stil
 
 ## Anteprima per dispositivi specifici {#previewing-for-specific-devices}
 
-Visualizza le anteprime delle pagine in diverse dimensioni di riquadro di visualizzazione per verificare il comportamento del design reattivo. In entrata **[!UICONTROL Anteprima]** modalità, **[!UICONTROL Sidekick]** include un **[!UICONTROL Dispositivi]** menu a discesa utilizzato per selezionare un dispositivo. Quando selezioni un dispositivo, la pagina cambia in base alle dimensioni del riquadro di visualizzazione.
+Visualizza le anteprime delle pagine in diverse dimensioni di riquadro di visualizzazione per verificare il comportamento del design reattivo. In modalità **[!UICONTROL Anteprima]**, **[!UICONTROL Sidekick]** include un menu a discesa **[!UICONTROL Dispositivi]** da utilizzare per selezionare un dispositivo. Quando selezioni un dispositivo, la pagina cambia in base alle dimensioni del riquadro di visualizzazione.
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
-Per attivare l&#39;anteprima del dispositivo in **[!UICONTROL Sidekick]**, è necessario configurare la pagina e **[!UICONTROL MobileEmulatorProvider]** servizio. Un’altra configurazione di pagina controlla l’elenco dei dispositivi visualizzati nella **[!UICONTROL Dispositivi]** elenco.
+Per abilitare l&#39;anteprima del dispositivo in **[!UICONTROL Sidekick]**, è necessario configurare la pagina e il servizio **[!UICONTROL MobileEmulatorProvider]**. Un&#39;altra configurazione di pagina controlla l&#39;elenco dei dispositivi visualizzati nell&#39;elenco **[!UICONTROL Dispositivi]**.
 
 ### Aggiunta dell&#39;elenco dei dispositivi {#adding-the-devices-list}
 
-Il **[!UICONTROL Dispositivi]** viene visualizzato in **[!UICONTROL Sidekick]** quando la pagina include lo script JSP che esegue il rendering del **[!UICONTROL Dispositivi]** elenco. Per aggiungere **[!UICONTROL Dispositivi]** elenca a **[!UICONTROL Sidekick]**, includi `/libs/wcm/mobile/components/simulator/simulator.jsp` script in `head` della pagina.
+L&#39;elenco **[!UICONTROL Dispositivi]** viene visualizzato in **[!UICONTROL Sidekick]** quando la pagina include lo script JSP che esegue il rendering dell&#39;elenco **[!UICONTROL Dispositivi]**. Per aggiungere l&#39;elenco **[!UICONTROL Dispositivi]** a **[!UICONTROL Sidekick]**, includere lo script `/libs/wcm/mobile/components/simulator/simulator.jsp` nella sezione `head` della pagina.
 
-Includi il seguente codice nella JSP che definisce `head` sezione:
+Includi il codice seguente nella JSP che definisce la sezione `head`:
 
 `<cq:include script="/libs/wcm/mobile/components/simulator/simulator.jsp"/>`
 
-Per visualizzare un esempio, apri `/apps/weretail/components/page/head.jsp` file in CRXDE Liti.
+Per visualizzare un esempio, aprire il file `/apps/weretail/components/page/head.jsp` in CRXDE Lite.
 
 ### Registrazione dei componenti Pagina per la simulazione {#registering-page-components-for-simulation}
 
-Per abilitare il simulatore di dispositivi per supportare le pagine, registra i componenti di pagina con il servizio di fabbrica MobileEmulatorProvider e definisci `mobile.resourceTypes` proprietà.
+Per abilitare il simulatore di dispositivi per il supporto delle pagine, registrare i componenti di pagina con il servizio di fabbrica MobileEmulatorProvider e definire la proprietà `mobile.resourceTypes`.
 
-Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per informazioni dettagliate.
+Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
-Ad esempio, per creare un ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` nodo nell&#39;applicazione:
+Ad esempio, per creare un nodo ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` nell&#39;applicazione:
 
 * Cartella padre: `/apps/application_name/config`
 * Nome: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-  Il - `*alias*` suffix è necessario perché il servizio MobileEmulatorProvider è un servizio di fabbrica. Utilizzare qualsiasi alias univoco per questa factory.
+  Il suffisso - `*alias*` è necessario perché il servizio MobileEmulatorProvider è un servizio di fabbrica. Utilizzare qualsiasi alias univoco per questa factory.
 
 * `jcr:primaryType`: `sling:OsgiConfig`
 
@@ -220,17 +220,17 @@ Aggiungi la seguente proprietà nodo:
 
 ### Specifica dei gruppi di dispositivi {#specifying-the-device-groups}
 
-Per specificare i gruppi di dispositivi visualizzati nell&#39;elenco Dispositivi, aggiungere una `cq:deviceGroups` proprietà per il `jcr:content` della pagina principale del sito. Il valore della proprietà è un array di percorsi ai nodi del gruppo di dispositivi.
+Per specificare i gruppi di dispositivi visualizzati nell&#39;elenco Dispositivi, aggiungere una proprietà `cq:deviceGroups` al nodo `jcr:content` della pagina principale del sito. Il valore della proprietà è un array di percorsi ai nodi del gruppo di dispositivi.
 
-I nodi del gruppo di dispositivi si trovano in `/etc/mobile/groups` cartella.
+Nodi del gruppo di dispositivi nella cartella `/etc/mobile/groups`.
 
-La pagina principale del sito Geometrixx Media, ad esempio, è `/content/geometrixx-media`. Il `/content/geometrixx-media/jcr:content` Il nodo include la seguente proprietà:
+La pagina principale del sito Geometrixx Media, ad esempio, è `/content/geometrixx-media`. Il nodo `/content/geometrixx-media/jcr:content` include la seguente proprietà:
 
 * Nome: `cq:deviceGroups`
 * Tipo: `String[]`
 * Valore: `/etc/mobile/groups/responsive`
 
-Utilizza la console Strumenti per: [creare e modificare gruppi di dispositivi](/help/sites-developing/groupfilters.md).
+Utilizzare la console Strumenti per [creare e modificare gruppi di dispositivi](/help/sites-developing/groupfilters.md).
 
 >[!NOTE]
 >
@@ -253,19 +253,19 @@ La strategia seguente carica una singola risorsa scelta utilizzando le query mul
 
 ### Valutazione delle query multimediali tramite JavaScript {#evaluating-media-queries-using-javascript}
 
-Implementazioni di [Interfaccia MediaQueryList](https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface) che il W3C definisce ti consente di valutare le query multimediali utilizzando JavaScript. Puoi applicare la logica ai risultati delle query multimediali ed eseguire script mirati per la finestra corrente:
+Le implementazioni dell&#39;[interfaccia MediaQueryList](https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface) definita dal W3C consentono di valutare le query multimediali tramite JavaScript. Puoi applicare la logica ai risultati delle query multimediali ed eseguire script mirati per la finestra corrente:
 
-* I browser che implementano l’interfaccia MediaQueryList supportano i `window.matchMedia()` funzione. Questa funzione verifica le query multimediali rispetto a una determinata stringa. La funzione restituisce un `MediaQueryList` oggetto che consente di accedere ai risultati della query.
+* I browser che implementano l&#39;interfaccia MediaQueryList supportano la funzione `window.matchMedia()`. Questa funzione verifica le query multimediali rispetto a una determinata stringa. La funzione restituisce un oggetto `MediaQueryList` che consente di accedere ai risultati della query.
 
-* Per i browser che non implementano l’interfaccia, puoi utilizzare un’ `matchMedia()` poly fill, ad esempio [matchMedia.js](https://github.com/paulirish/matchMedia.js), una libreria JavaScript disponibile gratuitamente.
+* Per i browser che non implementano l&#39;interfaccia, è possibile utilizzare un poly fill `matchMedia()`, ad esempio [matchMedia.js](https://github.com/paulirish/matchMedia.js), una libreria JavaScript disponibile gratuitamente.
 
 #### Selezione di risorse specifiche per i contenuti multimediali {#selecting-media-specific-resources}
 
-W3C [elemento immagine](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element) utilizza le query multimediali per determinare l’origine da utilizzare per gli elementi immagine. L’elemento immagine utilizza gli attributi dell’elemento per associare le query multimediali ai percorsi delle immagini.
+L&#39;[elemento immagine](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element) W3C utilizza query multimediali per determinare l&#39;origine da utilizzare per gli elementi immagine. L’elemento immagine utilizza gli attributi dell’elemento per associare le query multimediali ai percorsi delle immagini.
 
-Il disponibile gratuitamente [libreria picturefill.js](https://github.com/scottjehl/picturefill) offre funzionalità simili a quelle proposte `picture` e utilizza una strategia simile. Chiamate alla libreria picturefill.js `window.matchMedia` per valutare le query multimediali definite per un set di `div` elementi. Ogni `div` specifica anche un&#39;origine immagine. L’origine viene utilizzata quando la query multimediale di `div` restituiti elementi `true`.
+La libreria [picturefill.js](https://github.com/scottjehl/picturefill) disponibile gratuitamente offre funzionalità simili all&#39;elemento `picture` proposto e utilizza una strategia simile. La libreria picturefill.js chiama `window.matchMedia` per valutare le query multimediali definite per un set di `div` elementi. Ogni elemento `div` specifica anche un&#39;origine immagine. L&#39;origine viene utilizzata quando la query multimediale dell&#39;elemento `div` restituisce `true`.
 
-Il `picturefill.js` la libreria richiede un codice HTML simile al seguente:
+La libreria `picturefill.js` richiede un codice HTML simile al seguente:
 
 ```xml
 <div data-picture>
@@ -276,7 +276,7 @@ Il `picturefill.js` la libreria richiede un codice HTML simile al seguente:
 </div>
 ```
 
-Quando viene eseguito il rendering della pagina, picturefull.js inserisce un `img` come ultimo elemento figlio del `<div data-picture>` elemento:
+Quando viene eseguito il rendering della pagina, picturefull.js inserisce un elemento `img` come ultimo elemento figlio dell&#39;elemento `<div data-picture>`:
 
 ```xml
 <div data-picture>
@@ -288,7 +288,7 @@ Quando viene eseguito il rendering della pagina, picturefull.js inserisce un `im
 </div>
 ```
 
-In una pagina AEM, il valore della proprietà `data-src` attribute è il percorso di una risorsa nell’archivio.
+In una pagina AEM, il valore dell&#39;attributo `data-src` è il percorso di una risorsa nell&#39;archivio.
 
 ### Implementazione di immagini adattive nell’AEM {#implementing-adaptive-images-in-aem}
 
@@ -298,12 +298,12 @@ Per implementare immagini adattive nell’applicazione AEM, devi aggiungere le l
 
 Ottieni le seguenti librerie JavaScript e includile in una cartella di librerie client:
 
-* [matchMedia.js](https://github.com/paulirish/matchMedia.js) (per i browser che non implementano l’interfaccia MediaQueryList)
+* [matchMedia.js](https://github.com/paulirish/matchMedia.js) (per i browser che non implementano l&#39;interfaccia MediaQueryList)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
-* jquery.js (disponibile tramite il `/etc/clientlibs/granite/jquery` cartella della libreria client (categoria = jquery)
+* jquery.js (disponibile tramite la cartella della libreria client `/etc/clientlibs/granite/jquery` (categoria = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (un evento jquery che si verifica una volta dopo il ridimensionamento della finestra)
 
-**Suggerimento** È possibile concatenare automaticamente più cartelle di librerie client [incorporamento](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
+**Suggerimento:** è possibile concatenare automaticamente più cartelle della libreria client [incorporando](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
 
 **HTML**
 
@@ -351,9 +351,9 @@ Quando il browser carica la pagina, richiede l’immagine utilizzando il valore 
 * Selettore: `img`
 * Suffisso: `1358372073597.jpg`
 
-Il `image_0` il nodo ha un `jcr:resourceType` valore di `foundation/components/image`, che ha un `sling:resourceSuperType` valore di `foundation/components/parbase`. Il componente parbase include lo script img.GET.java che corrisponde al selettore e l’estensione del nome file dell’URL della richiesta. CQ utilizza questo script (servlet) per riprodurre l’immagine.
+Il nodo `image_0` ha un valore `jcr:resourceType` di `foundation/components/image`, che ha un valore `sling:resourceSuperType` di `foundation/components/parbase`. Il componente parbase include lo script img.GET.java che corrisponde al selettore e l’estensione del nome file dell’URL della richiesta. CQ utilizza questo script (servlet) per riprodurre l’immagine.
 
-Per visualizzare il codice sorgente dello script, utilizza CRXDE Liti per aprire `/libs/foundation/components/parbase/img.GET.java`
+Per visualizzare il codice sorgente dello script, utilizzare CRXDE Lite per aprire `/libs/foundation/components/parbase/img.GET.java`
 file.
 
 ## Ridimensionamento delle immagini per le dimensioni correnti del riquadro di visualizzazione {#scaling-images-for-the-current-viewport-size}
@@ -363,7 +363,7 @@ Ridimensiona le immagini in fase di runtime in base alle caratteristiche del riq
 Il componente deve eseguire le seguenti attività:
 
 * Memorizza il percorso e le dimensioni desiderate della risorsa immagine come valori di proprietà.
-* Genera `div` elementi che contengono selettori multimediali e chiamate al servizio per il rendering dell’immagine.
+* Genera `div` elementi che contengono selettori multimediali e chiamate di servizio per il rendering dell&#39;immagine.
 
 >[!NOTE]
 >
@@ -388,7 +388,7 @@ Il componente Immagine adattiva genera chiamate al servlet del componente Immagi
 
 * JSP: aggiunge elementi div che associano le query multimediali alle chiamate a Adaptive Image Component Servlet.
 * Librerie client: la cartella clientlibs è una `cq:ClientLibraryFolder` che assembla la libreria JavaScript matchMedia polyfill e una libreria JavaScript Picturefill modificata.
-* Finestra di dialogo Modifica: `cq:editConfig` node sostituisce il componente immagine di base CQ in modo che la destinazione di rilascio crei un componente immagine adattivo anziché un componente immagine di base.
+* Finestra di dialogo Modifica: il nodo `cq:editConfig` sostituisce il componente immagine di CQ Foundation in modo che la destinazione di rilascio crei un componente immagine adattivo anziché un componente immagine di base.
 
 #### Aggiunta di elementi DIV {#adding-the-div-elements}
 
@@ -410,13 +410,13 @@ Lo script adaptive-image.jsp include il seguente codice che genera elementi div 
 </div>
 ```
 
-Il `path` contiene il percorso della risorsa corrente (il nodo del componente immagine adattiva). Il codice genera una serie di `div` elementi con la seguente struttura:
+La variabile `path` contiene il percorso della risorsa corrente (il nodo del componente immagine adattiva). Il codice genera una serie di elementi `div` con la seguente struttura:
 
 `<div data-scr = "*path-to-parent-node*.adaptive-image.adapt.*width*.*quality*.jpg" data-media="*media query*"></div>`
 
-Il valore della proprietà `data-scr` attribute è un URL che Sling risolve in Adaptive Image Component Servlet per il rendering dell’immagine. L’attributo data-media contiene la query multimediale valutata in base alle proprietà client.
+Il valore dell&#39;attributo `data-scr` è un URL che Sling risolve in Adaptive Image Component Servlet per il rendering dell&#39;immagine. L’attributo data-media contiene la query multimediale valutata in base alle proprietà client.
 
-Il seguente codice HTML è un esempio di `div` elementi generati da JSP:
+Il codice HTML seguente è un esempio degli elementi `div` generati da JSP:
 
 ```xml
 <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.320.low.jpg'></div>
@@ -447,7 +447,7 @@ Pertanto, Sling risolve gli URL della richiesta HTTP nel seguente formato in que
 
 `*path-to-node*.img.*extension*`
 
-Ad esempio, Sling inoltra le richieste HTTP con l’URL `http://localhost:4502/content/geometrixx/adaptiveImage.img.jpg` Adaptive Image Component Servlet.
+Ad esempio, Sling inoltra le richieste HTTP con l’URL `http://localhost:4502/content/geometrixx/adaptiveImage.img.jpg` a Adaptive Image Component Servlet.
 
 Due selettori aggiuntivi specificano la larghezza dell’immagine richiesta e la qualità JPEG. L’esempio seguente richiede un’immagine di larghezza pari a 480 pixel e di qualità media:
 
@@ -475,9 +475,9 @@ I valori numerici sono rispettivamente 0,4, 0,82 e 1,0.
 
 **Modifica delle larghezze supportate predefinite**
 
-Utilizzare la console Web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) o un nodo sling:OsgiConfig per configurare le larghezze supportate di Adobe CQ Adaptive Image Component Servlet.
+Utilizza la console web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) o un nodo sling:OsgiConfig per configurare le larghezze supportate di Adobe CQ Adaptive Image Component Servlet.
 
-Per informazioni su come configurare i servizi AEM, vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
+Per informazioni su come configurare i servizi AEM, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 <table>
  <tbody>
@@ -509,7 +509,7 @@ Per informazioni su come configurare i servizi AEM, vedi [Configurazione di OSGi
 
 #### Dettagli di implementazione {#implementation-details}
 
-Il `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` la classe estende [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) classe. Il codice sorgente di AdaptiveImageComponentServlet si trova in `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` cartella.
+La classe `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` estende la classe [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Il codice sorgente di AdaptiveImageComponentServlet si trova nella cartella `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`.
 
 La classe utilizza le annotazioni Felix SCR per configurare il tipo di risorsa e l’estensione di file a cui è associato il servlet e il nome del primo selettore.
 
@@ -542,13 +542,13 @@ Il servlet utilizza l’annotazione Property SCR (SCR proprietà) per impostare 
             description = "List of widths this component is permitted to generate.")
 ```
 
-Il `AbstractImageServlet` la classe fornisce `doGet` metodo che elabora la richiesta HTTP. Questo metodo determina la risorsa associata alla richiesta, recupera le proprietà della risorsa dal repository e le restituisce in un [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) oggetto.
+La classe `AbstractImageServlet` fornisce il metodo `doGet` che elabora la richiesta HTTP. Questo metodo determina la risorsa associata alla richiesta, recupera le proprietà della risorsa dal repository e le restituisce in un oggetto [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
 
 >[!NOTE]
 >
->Il [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) la classe fornisce `getFileReference method`, che recupera il valore della proprietà `fileReference` proprietà.
+>La classe [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fornisce `getFileReference method`, che recupera il valore della proprietà `fileReference` della risorsa.
 
-Il `AdaptiveImageComponentServlet` la classe sostituisce la `createLayer` metodo. Il metodo ottiene il percorso della risorsa immagine e la larghezza immagine richiesta da `ImageContext` oggetto. Chiama quindi i metodi del `info.geometrixx.commons.impl.AdaptiveImageHelper` che esegue il ridimensionamento effettivo dell&#39;immagine.
+La classe `AdaptiveImageComponentServlet` sostituisce il metodo `createLayer`. Il metodo ottiene il percorso della risorsa immagine e la larghezza immagine richiesta dall&#39;oggetto `ImageContext`. Quindi chiama i metodi della classe `info.geometrixx.commons.impl.AdaptiveImageHelper`, che esegue il ridimensionamento effettivo dell&#39;immagine.
 
 La classe AdaptiveImageComponentServlet esegue inoltre l&#39;override del metodo writeLayer. Questo metodo applica la qualità JPEG all&#39;immagine.
 
@@ -558,11 +558,11 @@ Il Servlet Image Reference Modification di esempio genera attributi di dimension
 
 #### Chiamata del servlet {#calling-the-servlet}
 
-Il servlet è associato a `cq:page` e supporta l’estensione del file .jpg. Il selettore del servlet è `image`. Pertanto, Sling risolve gli URL della richiesta HTTP nel seguente formato in questo servlet:
+Il servlet è associato alle risorse `cq:page` e supporta l&#39;estensione di file .jpg. Il selettore del servlet è `image`. Pertanto, Sling risolve gli URL della richiesta HTTP nel seguente formato in questo servlet:
 
 `path-to-page-node.image.jpg`
 
-Ad esempio, Sling inoltra le richieste HTTP con l’URL `http://localhost:4502/content/geometrixx/en.image.jpg` Image Reference Modification Servlet.
+Ad esempio, Sling inoltra le richieste HTTP con l’URL `http://localhost:4502/content/geometrixx/en.image.jpg` a Image Reference Modification Servlet.
 
 Tre selettori aggiuntivi specificano la larghezza, l’altezza e (facoltativamente) la qualità dell’immagine richiesta. L’esempio seguente richiede un’immagine di larghezza 770 pixel, altezza 360 pixel e qualità media.
 
@@ -595,26 +595,26 @@ Sono supportati i seguenti valori per la qualità delle immagini:
 * media
 * alta
 
-Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per informazioni dettagliate.
+Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 #### Specifica della risorsa immagine {#specifying-the-image-resource}
 
 Il percorso dell’immagine, le dimensioni e i valori di qualità devono essere memorizzati come proprietà di un nodo nell’archivio:
 
-* Il nome del nodo è `image`.
-* Il nodo principale è `jcr:content` nodo di una `cq:page` risorsa.
+* Nome nodo: `image`.
+* Il nodo padre è il nodo `jcr:content` di una risorsa `cq:page`.
 
-* Il percorso dell&#39;immagine viene memorizzato come valore di una proprietà denominata `fileReference`.
+* Il percorso dell&#39;immagine viene archiviato come valore di una proprietà denominata `fileReference`.
 
-Quando crei una pagina, utilizza **Sidekick** per specificare l&#39;immagine e aggiungere `image` alle proprietà della pagina:
+Durante la creazione di una pagina, utilizza **Sidekick** per specificare l&#39;immagine e aggiungere il nodo `image` alle proprietà della pagina:
 
-1. In entrata **Sidekick**, fare clic su **Pagina** e quindi fare clic su **Proprietà pagina**.
-1. Fai clic su **Immagine** e specificare l&#39;immagine.
+1. In **Sidekick** fare clic sulla scheda **Pagina** e quindi su **Proprietà pagina**.
+1. Fare clic sulla scheda **Immagine** e specificare l&#39;immagine.
 1. Fai clic su **OK**.
 
 #### Dettagli di implementazione {#implementation-details-1}
 
-La classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet estende [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) classe. Se è installato il pacchetto cq-geometrixx-commons-pkg, il codice sorgente ImageReferenceModificationServlet si trova nel `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` cartella.
+La classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet estende la classe [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Se è installato il pacchetto cq-geometrixx-commons-pkg, il codice sorgente ImageReferenceModificationServlet si trova nella cartella `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`.
 
 La classe utilizza le annotazioni Felix SCR per configurare il tipo di risorsa e l’estensione di file a cui è associato il servlet e il nome del primo selettore.
 
@@ -654,19 +654,19 @@ Il servlet utilizza l’annotazione Property SCR (SCR proprietà) per impostare 
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-Il `AbstractImageServlet` la classe fornisce `doGet` metodo che elabora la richiesta HTTP. Questo metodo determina la risorsa associata alla chiamata, recupera le proprietà della risorsa dall’archivio e le salva in un [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) oggetto.
+La classe `AbstractImageServlet` fornisce il metodo `doGet` che elabora la richiesta HTTP. Questo metodo determina la risorsa associata alla chiamata, recupera le proprietà della risorsa dal repository e le salva in un oggetto [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
 
-Il `ImageReferenceModificationServlet` la classe sostituisce la `createLayer` e implementa la logica che determina la risorsa immagine da riprodurre. Il metodo recupera un nodo figlio del di `jcr:content` nodo denominato `image`. Un [Immagine](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) l&#39;oggetto viene creato da questo `image` e il `getFileReference` il metodo restituisce il percorso del file di immagine da `fileReference` del nodo dell&#39;immagine.
+La classe `ImageReferenceModificationServlet` sostituisce il metodo `createLayer` e implementa la logica che determina la risorsa immagine da riprodurre. Il metodo recupera un nodo figlio del nodo `jcr:content` della pagina denominato `image`. Un oggetto [Image](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) è stato creato da questo nodo `image` e il metodo `getFileReference` restituisce il percorso del file di immagine dalla proprietà `fileReference` del nodo di immagine.
 
 >[!NOTE]
->Il [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) La classe fornisce il metodo getFileReference.
+>La classe [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fornisce getFileReferencemethod.
 >
 
 ## Sviluppo di una griglia di fluidi {#developing-a-fluid-grid}
 
-L&#39;AEM consente di implementare in modo efficiente ed efficace le griglie fluide. Questa pagina spiega come integrare la rete fluida o un’implementazione di rete esistente (ad esempio [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) nell’applicazione per AEM.
+L&#39;AEM consente di implementare in modo efficiente ed efficace le griglie fluide. In questa pagina viene illustrato come integrare la griglia dei fluidi o un&#39;implementazione della griglia esistente (ad esempio [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) nell&#39;applicazione AEM.
 
-Se non si ha familiarità con le griglie dei fluidi, vedere [Introduzione alle griglie fluide](/help/sites-developing/responsive.md#developing-a-fluid-grid) nella parte inferiore della pagina. Questa introduzione fornisce una panoramica delle griglie di fluidi e indicazioni per la loro progettazione.
+Se non conosci le griglie fluide, consulta la sezione [Introduzione alle griglie fluide](/help/sites-developing/responsive.md#developing-a-fluid-grid) in fondo alla pagina. Questa introduzione fornisce una panoramica delle griglie di fluidi e indicazioni per la loro progettazione.
 
 ### Definizione della griglia tramite un componente Pagina {#defining-the-grid-using-a-page-component}
 
@@ -675,11 +675,11 @@ Utilizza i componenti di pagina per generare gli elementi HTML che definiscono i
 * Componente pagina: aggiunge elementi div che rappresentano righe di blocchi di contenuto. Gli elementi div che rappresentano i blocchi di contenuto includono un componente parsys in cui gli autori aggiungono contenuto.
 * Cartella libreria client: fornisce il file CSS che include le query multimediali e gli stili per gli elementi div.
 
-Ad esempio, l&#39;applicazione geometrixx-media di esempio contiene il componente media-home. Questo componente page inserisce due script, che generano due script `div` elementi di classe `row-fluid`:
+Ad esempio, l&#39;applicazione geometrixx-media di esempio contiene il componente media-home. Questo componente page inserisce due script, che generano due elementi `div` della classe `row-fluid`:
 
-* La prima riga contiene un `div` elemento di classe `span12` (il contenuto si estende su 12 colonne). Il `div` contiene il componente parsys.
+* La prima riga contiene un elemento `div` della classe `span12` (il contenuto occupa 12 colonne). L&#39;elemento `div` contiene il componente parsys.
 
-* La seconda riga contiene due `div` elementi, uno di classe `span8` e l&#39;altra della classe `span4`. Ogni `div` include il componente parsys.
+* La seconda riga contiene due elementi `div`, uno della classe `span8` e l&#39;altro della classe `span4`. Ogni elemento `div` include il componente parsys.
 
 ```xml
 <div class="page-content">
@@ -701,22 +701,22 @@ Ad esempio, l&#39;applicazione geometrixx-media di esempio contiene il component
 
 >[!NOTE]
 >
->Quando un componente include più `cq:include` elementi che fanno riferimento al componente parsys, ciascuno `path` l&#39;attributo deve avere un valore diverso.
+>Quando un componente include più elementi `cq:include` che fanno riferimento al componente parsys, ogni attributo `path` deve avere un valore diverso.
 >
 
 #### Ridimensionamento della griglia dei componenti Pagina {#scaling-the-page-component-grid}
 
-Progettazione associata al componente della pagina geometrixx-media (`/etc/designs/geometrixx-media`) contiene `clientlibs` ClientLibraryFolder. Questa ClientLibraryFolder definisce gli stili CSS per `row-fluid` classi, `span*` le classi e `span*` classi figlio di `row-fluid` classi. Le query multimediali consentono di ridefinire gli stili per diverse dimensioni dei riquadri di visualizzazione.
+La struttura associata al componente di pagina geometrixx-media (`/etc/designs/geometrixx-media`) contiene l&#39;elemento ClientLibraryFolder `clientlibs`. Questa ClientLibraryFolder definisce gli stili CSS per `row-fluid` classi, `span*` classi e `span*` classi figlio di `row-fluid` classi. Le query multimediali consentono di ridefinire gli stili per diverse dimensioni dei riquadri di visualizzazione.
 
-L’esempio di CSS seguente è un sottoinsieme di tali stili. Questo sottoinsieme si concentra su `span12`, `span8`, e `span4` classi e query multimediali per due dimensioni del riquadro di visualizzazione. Osserva le seguenti caratteristiche del CSS:
+L’esempio di CSS seguente è un sottoinsieme di tali stili. Questo sottoinsieme si concentra su `span12`, `span8` e `span4` classi e su query multimediali per due dimensioni del riquadro di visualizzazione. Osserva le seguenti caratteristiche del CSS:
 
-* Il `.span` gli stili definiscono la larghezza degli elementi utilizzando numeri assoluti.
-* Il `.row-fluid .span*` gli stili definiscono le larghezze degli elementi come percentuali dell&#39;elemento padre. Le percentuali vengono calcolate in base alle larghezze assolute.
+* Gli stili `.span` definiscono la larghezza degli elementi utilizzando numeri assoluti.
+* Gli stili `.row-fluid .span*` definiscono le larghezze degli elementi come percentuali dell&#39;elemento padre. Le percentuali vengono calcolate in base alle larghezze assolute.
 * Le query multimediali per riquadri di visualizzazione più grandi assegnano larghezze assolute maggiori.
 
 >[!NOTE]
 >
->L’esempio dei Geometrixx Media integra [Bootstrap](https://getbootstrap.com/2.0.2/) Framework JavaScript nell’implementazione della sua griglia fluida. Il framework Bootstrap fornisce il file bootstrap.css.
+>L&#39;esempio di Geometrixx Media integra il framework JavaScript [Bootstrap](https://getbootstrap.com/2.0.2/) nell&#39;implementazione della relativa griglia fluida. Il framework Bootstrap fornisce il file bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -750,9 +750,9 @@ L’esempio di CSS seguente è un sottoinsieme di tali stili. Questo sottoinsiem
 
 Le pagine dell’applicazione Geometrixx Media di esempio distribuiscono le righe di blocchi di contenuto in orizzontale in riquadri di visualizzazione larghi. Nei riquadri di visualizzazione più piccoli, gli stessi blocchi sono distribuiti verticalmente. Il seguente esempio di CSS mostra gli stili che implementano questo comportamento per il codice HTML generato dal componente media-home page:
 
-* Il CSS predefinito per la pagina di benvenuto multimediale assegna il `float:left` stile per `span*` classi all&#39;interno di `row-fluid` classi.
+* Il CSS predefinito per la pagina di benvenuto multimediale assegna lo stile `float:left` per `span*` classi che si trovano all&#39;interno di `row-fluid` classi.
 
-* Le query multimediali per riquadri di visualizzazione più piccoli assegnano il `float:none` per le stesse classi.
+* Le query multimediali per i riquadri di visualizzazione più piccoli assegnano lo stile `float:none` per le stesse classi.
 
 ```xml
 /* default styles (no media queries) */
@@ -773,19 +773,19 @@ Le pagine dell’applicazione Geometrixx Media di esempio distribuiscono le righ
 
 Modularizza i componenti in modo da poter utilizzare il codice in modo efficiente. È probabile che il sito utilizzi diversi tipi di pagine, ad esempio una pagina di benvenuto, una pagina di articolo o una pagina di prodotto. Ogni tipo di pagina contiene diversi tipi di contenuto e probabilmente utilizza layout diversi. Tuttavia, quando alcuni elementi di ciascun layout sono comuni a più pagine, puoi riutilizzare il codice che implementa tale parte del layout.
 
-**Utilizzare le sovrapposizioni dei componenti di pagina**
+**Usa sovrapposizioni componenti pagina**
 
-Crea un componente pagina principale che fornisce script per generare le varie parti di una pagina, ad esempio `head` e `body` sezioni, e `header`, `content`, e `footer` sezioni all’interno del corpo.
+Creare un componente pagina principale che fornisce script per la generazione di varie parti di una pagina, ad esempio `head` e `body` sezioni e `header`, `content` e `footer` sezioni all&#39;interno del corpo della pagina.
 
-Crea altri componenti di pagina che utilizzano il componente pagina principale come `cq:resourceSuperType`. Questi componenti includono script che sostituiscono gli script della pagina principale in base alle esigenze.
+Creare altri componenti di pagina che utilizzano il componente pagina principale come `cq:resourceSuperType`. Questi componenti includono script che sostituiscono gli script della pagina principale in base alle esigenze.
 
-Ad esempio, l’applicazione goemetrixx-media include il componente pagina (il `sling:resourceSuperType` è il componente pagina di base). Diversi componenti secondari (come articolo, categoria e media-home) utilizzano questo componente pagina come `sling:resourceSuperType`. Ogni componente secondario include un file content.jsp che esegue l’override del file content.jsp del componente page.
+Ad esempio, l&#39;applicazione goemetrixx-media include il componente page (`sling:resourceSuperType` è il componente page di base). Diversi componenti secondari (ad esempio articolo, categoria e media-home) utilizzano questo componente pagina come `sling:resourceSuperType`. Ogni componente secondario include un file content.jsp che esegue l’override del file content.jsp del componente page.
 
-**Riutilizzare gli script**
+**Riutilizza script**
 
-Crea più script JSP che generano combinazioni di righe e colonne comuni a più componenti di pagina. Ad esempio, il `content.jsp` script dell’articolo e i componenti della media-home fanno entrambi riferimento al `8x4col.jsp` script.
+Crea più script JSP che generano combinazioni di righe e colonne comuni a più componenti di pagina. Ad esempio, lo script `content.jsp` dell&#39;articolo e i componenti della home multimediale fanno entrambi riferimento allo script `8x4col.jsp`.
 
-**Organizzare gli stili CSS in base alle dimensioni del riquadro di visualizzazione di destinazione**
+**Organizza gli stili CSS in base alle dimensioni del riquadro di visualizzazione di destinazione**
 
 Includi stili CSS e query multimediali per diverse dimensioni dei riquadri di visualizzazione in file separati. Utilizza le cartelle della libreria client per concatenarle.
 
@@ -795,7 +795,7 @@ Quando i componenti generano un singolo blocco di contenuto, in genere la grigli
 
 In qualità di autore, il blocco di contenuto può essere renderizzato in varie dimensioni e posizioni relative. Il testo del contenuto non deve utilizzare indicazioni relative per fare riferimento ad altri blocchi di contenuto.
 
-Se necessario, il componente deve fornire tutte le librerie CSS o JavaScript necessarie per il codice HTML generato. Utilizza una cartella della libreria client all’interno del componente in modo da generare i file CSS e JS. Per esporre i file: [creare una dipendenza o incorporare la libreria](/help/sites-developing/clientlibs.md#creating-client-library-folders) in un&#39;altra cartella della libreria client sotto la cartella /etc.
+Se necessario, il componente deve fornire tutte le librerie CSS o JavaScript necessarie per il codice HTML generato. Utilizza una cartella della libreria client all’interno del componente in modo da generare i file CSS e JS. Per esporre i file, [creare una dipendenza o incorporare la libreria](/help/sites-developing/clientlibs.md#creating-client-library-folders) in un&#39;altra cartella della libreria client sotto la cartella /etc.
 
 **Griglie secondarie**
 
@@ -804,7 +804,7 @@ Se il componente contiene più blocchi di contenuto, aggiungi i blocchi di conte
 * Utilizza gli stessi nomi di classe del componente pagina contenitore, in modo da poter esprimere gli elementi div come righe e blocchi di contenuto.
 * Per ignorare il comportamento implementato dal CSS del progetto di pagina, utilizza un secondo nome di classe per l’elemento div riga e fornisci il CSS associato in una cartella della libreria client.
 
-Ad esempio, il `/apps/geometrixx-media/components/2-col-article-summary` Il componente genera due colonne di contenuto. Il HTML generato ha la seguente struttura:
+Ad esempio, il componente `/apps/geometrixx-media/components/2-col-article-summary` genera due colonne di contenuto. Il HTML generato ha la seguente struttura:
 
 ```xml
 <div class="row-fluid mutli-col-article-summary">
@@ -819,12 +819,12 @@ Ad esempio, il `/apps/geometrixx-media/components/2-col-article-summary` Il comp
 </div>
 ```
 
-Il `.row-fluid .span6` selettori del CSS della pagina si applica al `div` elementi della stessa classe e struttura in questo HTML. Tuttavia, il componente include anche la cartella /apps/geometrixx-media/components/2-col-article-summary/clientlibs della libreria client:
+I selettori `.row-fluid .span6` del CSS della pagina si applicano agli elementi `div` della stessa classe e struttura in questo HTML. Tuttavia, il componente include anche la cartella /apps/geometrixx-media/components/2-col-article-summary/clientlibs della libreria client:
 
 * Il CSS utilizza le stesse query multimediali del componente Pagina per stabilire modifiche nel layout con le stesse larghezze di pagina discrete.
-* I selettori utilizzano `multi-col-article-summary` classe della riga `div` per ignorare il comportamento della pagina `row-fluid` classe.
+* I selettori utilizzano la classe `multi-col-article-summary` dell&#39;elemento riga `div` per ignorare il comportamento della classe `row-fluid` della pagina.
 
-Ad esempio, i seguenti stili sono inclusi nel `/apps/geometrixx-media/components/2-col-article-summary/clientlibs/css/responsive-480px.css` file:
+Ad esempio, nel file `/apps/geometrixx-media/components/2-col-article-summary/clientlibs/css/responsive-480px.css` sono inclusi i seguenti stili:
 
 ```xml
 @media (max-width: 480px) {
@@ -856,7 +856,7 @@ Le griglie fluide consentono ai layout di pagina di adattarsi alle dimensioni de
 
 Utilizzando la tecnologia HTML5 è possibile implementare la griglia e modificarla per adattare i layout di pagina a diverse dimensioni dei riquadri di visualizzazione:
 
-* HTML `div` Gli elementi contengono blocchi di contenuto che si estendono su alcune colonne.
+* Gli elementi HTML `div` contengono blocchi di contenuto che si estendono su alcune colonne.
 * Uno o più di questi elementi div costituiscono una riga quando condividono un elemento div padre comune.
 
 ### Utilizzo di larghezze discrete {#using-discrete-widths}
@@ -867,13 +867,13 @@ Per ogni intervallo di larghezze dei riquadri di visualizzazione di destinazione
 
 Le griglie consentono di ridimensionare i blocchi di contenuto in base alle diverse dimensioni dei riquadri di visualizzazione. I blocchi di contenuto si estendono su un numero specifico di colonne. Quando la larghezza delle colonne aumenta o diminuisce per adattarsi a dimensioni di riquadro di visualizzazione diverse, la larghezza dei blocchi di contenuto aumenta o diminuisce di conseguenza. Il ridimensionamento può supportare sia riquadri di grandi dimensioni che riquadri di medie dimensioni sufficientemente ampi da consentire il posizionamento affiancato dei blocchi di contenuto.
 
-![Immagine di due griglie, una più piccola dell&#39;altra.](do-not-localize/chlimage_1-1a.png)
+![Immagine di due griglie, una delle quali con dimensioni inferiori rispetto all&#39;altra.](do-not-localize/chlimage_1-1a.png)
 
 #### Riposizionamento del contenuto nella griglia {#repositioning-content-in-the-grid}
 
 La dimensione dei blocchi di contenuto può essere limitata da una larghezza minima, oltre la quale il ridimensionamento non è più efficace. Per i riquadri di visualizzazione più piccoli, la griglia può essere utilizzata per distribuire blocchi di contenuto in verticale anziché in orizzontale.
 
-![Immagine di due griglie, una riposizionata più piccola dell&#39;altra.](do-not-localize/chlimage_1-2a.png)
+![Immagine di due griglie, una delle quali è riposizionata più piccola dell&#39;altra.](do-not-localize/chlimage_1-2a.png)
 
 ### Progettazione della griglia {#designing-the-grid}
 
@@ -894,15 +894,15 @@ Utilizza le righe per controllare il posizionamento verticale dei blocchi di con
 
 Crea classi e stili CSS per controllare il layout dei blocchi di contenuto in una pagina. Le progettazioni di pagine si basano spesso sulle dimensioni relative e sulla posizione dei blocchi di contenuto all’interno del riquadro di visualizzazione. Il riquadro di visualizzazione determina le dimensioni effettive dei blocchi di contenuto. I file CSS devono tenere conto delle dimensioni relativa e assoluta. Puoi implementare una griglia dei fluidi utilizzando tre tipi di classi CSS:
 
-* Una classe per un `div` che è un contenitore per tutte le righe. Questa classe imposta la larghezza assoluta della griglia.
-* Una classe per `div` elementi che rappresentano una riga. Questa classe controlla il posizionamento orizzontale o verticale dei blocchi di contenuto in essa contenuti.
+* Classe per un elemento `div` che è un contenitore per tutte le righe. Questa classe imposta la larghezza assoluta della griglia.
+* Classe per `div` elementi che rappresentano una riga. Questa classe controlla il posizionamento orizzontale o verticale dei blocchi di contenuto in essa contenuti.
 * Classi per `div` elementi che rappresentano blocchi di contenuto di larghezze diverse. Le larghezze sono espresse come percentuale dell&#39;elemento padre, ovvero la riga.
 
 Le larghezze dei riquadri di visualizzazione di destinazione (e le relative query multimediali associate) delimitano le larghezze discrete utilizzate per il layout di una pagina.
 
 #### Larghezze dei blocchi di contenuto {#widths-of-content-blocks}
 
-In genere, il `width` gli stili delle classi di blocchi di contenuto si basano sulle seguenti caratteristiche della pagina e della griglia:
+In genere, gli stili `width` delle classi dei blocchi di contenuto si basano sulle seguenti caratteristiche della pagina e della griglia:
 
 * Larghezza assoluta della pagina utilizzata per ogni dimensione del riquadro di visualizzazione di destinazione. Valori noti.
 * Larghezza assoluta delle colonne della griglia per ogni larghezza di pagina. Questi valori vengono determinati dall&#39;utente.
@@ -930,35 +930,35 @@ Il CSS include una serie di query multimediali che utilizzano la seguente strutt
 
 Utilizza il seguente algoritmo come punto di partenza per sviluppare le classi di elementi e gli stili CSS per le pagine.
 
-1. Definisci un nome di classe per l’elemento div che contiene tutte le righe, ad esempio: `content.`
-1. Definisci una classe CSS per gli elementi div che rappresentano righe, ad esempio `row-fluid`.
-1. Definisci i nomi delle classi per gli elementi dei blocchi di contenuto. È necessaria una classe per tutte le larghezze possibili, in termini di intervalli di colonne. Ad esempio, utilizza `span3` classe per `div` elementi che si estendono su tre colonne, utilizza `span4` classi per intervalli di quattro colonne. Definisci tutte le classi presenti nella griglia.
+1. Definire un nome di classe per l&#39;elemento div che contiene tutte le righe, ad esempio `content.`
+1. Definire una classe CSS per gli elementi div che rappresentano righe, ad esempio `row-fluid`.
+1. Definisci i nomi delle classi per gli elementi dei blocchi di contenuto. È necessaria una classe per tutte le larghezze possibili, in termini di intervalli di colonne. Ad esempio, utilizzare la classe `span3` per gli elementi `div` che si estendono su tre colonne, utilizzare le classi `span4` per estensioni di quattro colonne. Definisci tutte le classi presenti nella griglia.
 
 1. Per ogni dimensione del riquadro di visualizzazione di destinazione, aggiungi la query multimediale corrispondente al file CSS. Aggiungi i seguenti elementi in ciascuna query multimediale:
 
-   * Un selettore per `content` classe, ad esempio `.content{}`.
-   * Selettori per ciascuna classe di estensione, ad esempio: `.span3{ }`.
-   * Un selettore per `row-fluid` classe, ad esempio `.row-fluid{ }`
-   * I selettori per le classi di estensione che si trovano all’interno di classi riga-fluido, ad esempio `.row-fluid span3 { }`.
+   * Un selettore per la classe `content`, ad esempio `.content{}`.
+   * Selettori per ogni classe di estensione, ad esempio `.span3{ }`.
+   * Un selettore per la classe `row-fluid`, ad esempio `.row-fluid{ }`
+   * I selettori per le classi di estensione che si trovano all&#39;interno di classi di righe, ad esempio `.row-fluid span3 { }`.
 
 1. Aggiungi stili di larghezza per ciascun selettore:
 
-   1. Imposta la larghezza di `content` alle dimensioni assolute della pagina, ad esempio, `width:480px`.
+   1. Impostare la larghezza di `content` selettori sulla dimensione assoluta della pagina, ad esempio `width:480px`.
    1. Imposta la larghezza di tutti i selettori di fluidi di riga su 100%.
-   1. Imposta la larghezza di tutti i selettori di estensione sulla larghezza assoluta del blocco di contenuto. Una griglia banale utilizza colonne distribuite in modo uniforme della stessa larghezza: `(absolute width of page)/(number of columns)`.
-   1. Imposta la larghezza del `.row-fluid .span` selettori come percentuale della larghezza totale. Calcola questa larghezza utilizzando `(absolute span width)/(absolute page width)*100` formula.
+   1. Imposta la larghezza di tutti i selettori di estensione sulla larghezza assoluta del blocco di contenuto. Una griglia semplice utilizza colonne distribuite in modo uniforme della stessa larghezza: `(absolute width of page)/(number of columns)`.
+   1. Impostare la larghezza dei selettori `.row-fluid .span` come percentuale della larghezza totale. Calcolare la larghezza utilizzando la formula `(absolute span width)/(absolute page width)*100`.
 
 #### Posizionamento dei blocchi di contenuto nelle righe {#positioning-content-blocks-in-rows}
 
-Utilizza lo stile float del `.row-fluid` in modo da poter controllare se i blocchi di contenuto in una riga sono disposti orizzontalmente o verticalmente.
+Utilizzare lo stile float della classe `.row-fluid` per controllare se i blocchi di contenuto in una riga sono disposti orizzontalmente o verticalmente.
 
-* Il `float:left` o `float:right` style causa la distribuzione orizzontale degli elementi figlio (blocchi di contenuto).
+* Lo stile `float:left` o `float:right` causa la distribuzione orizzontale degli elementi figlio (blocchi di contenuto).
 
-* Il `float:none` lo stile causa la distribuzione verticale degli elementi figlio.
+* Lo stile `float:none` causa la distribuzione verticale degli elementi figlio.
 
-Aggiungi lo stile al `.row-fluid` all&#39;interno di ogni query multimediale. Imposta il valore in base al layout di pagina utilizzato per la query multimediale. Ad esempio, il diagramma seguente illustra una riga che distribuisce il contenuto orizzontalmente per i riquadri di visualizzazione larghi e verticalmente per quelli stretti.
+Aggiungi lo stile al selettore `.row-fluid` all&#39;interno di ogni query multimediale. Imposta il valore in base al layout di pagina utilizzato per la query multimediale. Ad esempio, il diagramma seguente illustra una riga che distribuisce il contenuto orizzontalmente per i riquadri di visualizzazione larghi e verticalmente per quelli stretti.
 
-![Due immagini di blocchi di contenuto in una riga, la seconda che mostra la riga riposizionata.](do-not-localize/chlimage_1-3a.png)
+![Due immagini di blocchi di contenuto in una riga. La seconda immagine mostra la riga riposizionata.](do-not-localize/chlimage_1-3a.png)
 
 I seguenti CSS possono implementare questo comportamento:
 

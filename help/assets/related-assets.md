@@ -15,9 +15,9 @@ ht-degree: 3%
 
 # Risorse correlate {#related-assets}
 
-[!DNL Adobe Experience Manager Assets] consente di correlare manualmente le risorse in base alle esigenze dell’organizzazione utilizzando la funzione risorse correlate. Ad esempio, puoi correlare un file di licenza con una risorsa o un’immagine o un video su un argomento simile. Puoi correlare risorse che condividono alcuni attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni di origine/derivate tra le risorse. Se ad esempio si dispone di un file PDF generato da un file INDD, è possibile correlare il file PDF al relativo file INDD di origine.
+[!DNL Adobe Experience Manager Assets] consente di correlare manualmente le risorse in base alle esigenze dell&#39;organizzazione utilizzando la funzionalità risorse correlate. Ad esempio, puoi correlare un file di licenza con una risorsa o un’immagine o un video su un argomento simile. Puoi correlare risorse che condividono alcuni attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni di origine/derivate tra le risorse. Se ad esempio si dispone di un file PDF generato da un file INDD, è possibile correlare il file PDF al relativo file INDD di origine.
 
-Grazie a questa funzione, è possibile condividere un file PDF o JPG a bassa risoluzione con fornitori o agenzie e rendere disponibile il file INDD ad alta risoluzione solo su richiesta.
+Grazie a questa funzione, è possibile condividere un file PDF a bassa risoluzione o un file JPG con fornitori o agenzie e rendere disponibile il file INDD ad alta risoluzione solo su richiesta.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Grazie a questa funzione, è possibile condividere un file PDF o JPG a bassa ris
 
 ## Riferire le risorse {#relating-assets}
 
-1. Dalla sezione [!DNL Experience Manager] , aprire **[!UICONTROL Proprietà]** per una risorsa da correlare.
+1. Dall&#39;interfaccia [!DNL Experience Manager], apri la pagina **[!UICONTROL Proprietà]** per una risorsa da correlare.
 
    ![apri la pagina Proprietà di una risorsa per correlarla](assets/asset-properties-relate-assets.png)
 
@@ -39,29 +39,29 @@ Grazie a questa funzione, è possibile condividere un file PDF o JPG a bassa ris
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Per correlare un’altra risorsa alla risorsa selezionata, fai clic su **[!UICONTROL Correlare]** ![correlare le attività](assets/do-not-localize/link-relate.png) dalla barra degli strumenti.
+1. Per correlare un&#39;altra risorsa alla risorsa selezionata, fare clic su **[!UICONTROL Correlare]** ![correlare le risorse](assets/do-not-localize/link-relate.png) nella barra degli strumenti.
 1. Effettua una delle operazioni seguenti:
 
-   * Per correlare il file di origine della risorsa, seleziona **[!UICONTROL Sorgente]** dall&#39;elenco.
+   * Per correlare il file di origine della risorsa, selezionare **[!UICONTROL Source]** dall&#39;elenco.
    * Per correlare un file derivato, selezionare **[!UICONTROL Derivato]** dall&#39;elenco.
-   * Per creare una relazione bidirezionale tra le risorse, seleziona **[!UICONTROL Altro]** dall&#39;elenco.
+   * Per creare una relazione bidirezionale tra le risorse, seleziona **[!UICONTROL Altri]** dall&#39;elenco.
 
-1. Dalla sezione **[!UICONTROL Seleziona risorsa]** , passa alla posizione della risorsa da correlare e selezionala.
+1. Dalla schermata **[!UICONTROL Seleziona risorsa]**, individua il percorso della risorsa da correlare e selezionala.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Clic **[!UICONTROL Conferma]**.
-1. Clic **[!UICONTROL OK]** per chiudere la finestra di dialogo A seconda della scelta effettuata nella relazione al passaggio 3, la risorsa correlata viene elencata in una categoria appropriata nella sezione **[!UICONTROL Correlato]** sezione. Ad esempio, se la risorsa correlata è il file di origine della risorsa corrente, viene elencata in **[!UICONTROL Sorgente]**.
+1. Fai clic su **[!UICONTROL Conferma]**.
+1. Fare clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. A seconda della relazione scelta al passaggio 3, la risorsa correlata viene elencata in una categoria appropriata nella sezione **[!UICONTROL Correlati]**. Se ad esempio la risorsa correlata è il file di origine della risorsa corrente, verrà elencata in **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Per scollegare una risorsa, fai clic su **[!UICONTROL Scollega]** ![scollega attività](assets/do-not-localize/link-unrelate-icon.png) dalla barra degli strumenti.
+1. Per rimuovere la correlazione di una risorsa, fare clic su **[!UICONTROL Annulla correlazione]** ![annulla correlazione tra risorse](assets/do-not-localize/link-unrelate-icon.png) nella barra degli strumenti.
 
-1. Seleziona le risorse da rimuovere dalla relazione **[!UICONTROL Rimuovi relazioni]** e fai clic su **[!UICONTROL Scollega]**.
+1. Selezionare le risorse da rimuovere dalla finestra di dialogo **[!UICONTROL Rimuovi relazioni]** e fare clic su **[!UICONTROL Annulla correlazione]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Clic **[!UICONTROL OK]** per chiudere la finestra di dialogo Le risorse per le quali hai rimosso le relazioni vengono eliminate dall’elenco delle risorse correlate in **[!UICONTROL Correlato]** sezione.
+1. Fare clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. Le risorse per le quali hai rimosso le relazioni vengono eliminate dall&#39;elenco delle risorse correlate nella sezione **[!UICONTROL Correlate]**.
 
 ## Tradurre le risorse correlate {#translating-related-assets}
 
@@ -69,15 +69,15 @@ La creazione di relazioni origine/derivate tra risorse utilizzando la funzione r
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manager Assets] recupera la risorsa di riferimento e la include per la traduzione.
+Se il file di origine è correlato a un&#39;altra risorsa, [!DNL Experience Manager Assets] recupera la risorsa di riferimento e la include per la traduzione.
 
-![La pagina Proprietà risorsa mostra il file sorgente della risorsa correlata da includere per la traduzione](assets/asset-properties-source-asset.png)
+![la pagina Proprietà risorsa mostra il file di origine della risorsa correlata da includere per la traduzione](assets/asset-properties-source-asset.png)
 
-*Figura: Risorsa di origine delle risorse correlate da includere per la traduzione.*
+*Figura: risorsa Source delle risorse correlate da includere per la traduzione.*
 
-1. Traduci le risorse nella cartella di origine in una lingua di destinazione seguendo i passaggi descritti in [Creare un progetto di traduzione](translation-projects.md#create-a-new-translation-project). Ad esempio, in questo caso, traduci le risorse in francese.
+1. Tradurre le risorse nella cartella di origine in una lingua di destinazione seguendo i passaggi descritti in [Creare un progetto di traduzione](translation-projects.md#create-a-new-translation-project). Ad esempio, in questo caso, traduci le risorse in francese.
 
-1. Dalla sezione [!UICONTROL Progetti] , apri la cartella di traduzione.
+1. Dalla pagina [!UICONTROL Progetti], apri la cartella di traduzione.
 
 1. Fai clic sul riquadro del progetto per aprire la pagina dei dettagli.
 
@@ -87,10 +87,10 @@ Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manage
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Seleziona la risorsa e fai clic su **[!UICONTROL Mostra in Assets]** dalla barra degli strumenti per visualizzare lo stato di traduzione della risorsa.
+1. Seleziona la risorsa, quindi fai clic su **[!UICONTROL Mostra in Assets]** nella barra degli strumenti per visualizzare lo stato di traduzione della risorsa.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
 1. Per verificare se le risorse correlate all’origine sono state tradotte, fai clic sulla risorsa di origine.
 
-1. Seleziona la risorsa correlata all’origine, quindi fai clic su **[!UICONTROL Mostra in Assets]**. Viene visualizzata la risorsa correlata tradotta.
+1. Selezionare la risorsa correlata all&#39;origine, quindi fare clic su **[!UICONTROL Mostra in Assets]**. Viene visualizzata la risorsa correlata tradotta.

@@ -20,16 +20,16 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-CRX2Oak è uno strumento progettato per eseguire la migrazione dei dati tra archivi diversi.
+CRX2Oak è uno strumento progettato per migrare i dati tra archivi diversi.
 
-Può essere utilizzato per migrare i dati dalle versioni precedenti di CQ basate su Apache Jackrabbit 2 a Oak e può anche essere utilizzato per copiare i dati tra archivi Oak.
+Può essere utilizzato per migrare i dati dalle versioni precedenti di CQ basate su Apache Jackrabbit 2 ad Oak e può anche essere utilizzato per copiare i dati tra archivi Oak.
 
 Puoi scaricare la versione più recente di crx2oak dall’archivio di Adobi pubblico da questa posizione:
 [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 >[!NOTE]
 >
->Per ulteriori informazioni su Apache Oak e sui concetti chiave della persistenza di Adobe Experience Manager (AEM), consulta [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md).
+>Per ulteriori informazioni su Apache Oak e sui concetti chiave della persistenza di Adobe Experience Manager (AEM), vedi [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md).
 
 ## Casi di utilizzo della migrazione {#migration-use-cases}
 
@@ -39,7 +39,7 @@ Lo strumento può essere utilizzato per:
 * Copia dei dati tra più archivi Oak
 * Conversione di dati tra diverse implementazioni Oak MicroKernel.
 
-Il supporto per la migrazione degli archivi tramite archivi BLOB esterni (comunemente noti come archivi dati) è fornito in diverse combinazioni. Un possibile percorso di migrazione proviene da un archivio CRX2 che utilizza un archivio esterno `FileDataStore` in un archivio Oak utilizzando un `S3DataStore`.
+Il supporto per la migrazione degli archivi tramite archivi BLOB esterni (comunemente noti come archivi dati) è fornito in diverse combinazioni. Un possibile percorso di migrazione è da un archivio CRX2 che utilizza un `FileDataStore` esterno a un archivio Oak che utilizza un `S3DataStore`.
 
 Il diagramma seguente illustra tutte le possibili combinazioni di migrazione supportate da CRX2Oak:
 
@@ -47,7 +47,7 @@ Il diagramma seguente illustra tutte le possibili combinazioni di migrazione sup
 
 ## Funzioni {#features}
 
-CRX2Oak viene chiamato durante gli aggiornamenti AEM in modo tale che l’utente possa specificare un profilo di migrazione predefinito che automatizza la riconfigurazione delle modalità di persistenza. Questa modalità è denominata modalità di avvio rapido.
+CRX2Oak viene richiamato durante gli aggiornamenti AEM in modo che l’utente possa specificare un profilo di migrazione predefinito che automatizza la riconfigurazione delle modalità di persistenza. Questa modalità è denominata modalità di avvio rapido.
 
 Può anche essere eseguito separatamente nel caso richieda una maggiore personalizzazione. Tuttavia, in questa modalità le modifiche vengono apportate solo all’archivio e ogni ulteriore riconfigurazione dell’AEM deve essere eseguita manualmente. Questa modalità è denominata standalone.
 
@@ -59,7 +59,7 @@ Da AEM 6.3, CRX2Oak è in grado di gestire profili di migrazione definiti dall�
 
 Per passare da CRX2Oak alla modalità quickstart, definire il percorso della cartella crx-quickstart nella directory di installazione dell&#39;AEM tramite questa variabile di ambiente del sistema operativo:
 
-**Per i sistemi basati su UNIX e macOS:**
+**Per sistemi basati su UNIX e macOS:**
 
 ```shell
 export SLING_HOME="/path/to/crx-quickstart"
@@ -77,7 +77,7 @@ La migrazione può essere interrotta in qualsiasi momento, con la possibilità d
 
 #### Logica di aggiornamento personalizzabile {#customizable-upgrade-logic}
 
-La logica Java™ personalizzata può essere implementata utilizzando `CommitHooks`. Personalizzato `RepositoryInitializer` Le classi possono essere implementate per inizializzare l&#39;archivio con valori personalizzati.
+La logica Java™ personalizzata può essere implementata utilizzando `CommitHooks`. È possibile implementare `RepositoryInitializer` classi personalizzate per inizializzare l&#39;archivio con valori personalizzati.
 
 #### Supporto per operazioni con mapping della memoria {#support-for-memory-mapped-operations}
 
@@ -85,17 +85,17 @@ Per impostazione predefinita, CRX2Oak supporta anche operazioni mappate sulla me
 
 >[!CAUTION]
 >
->Si noti tuttavia che le operazioni mappate alla memoria non sono supportate per le piattaforme Windows. Pertanto, si consiglia di aggiungere **—disable-mmap** durante l&#39;esecuzione della migrazione su Windows.
+>Si noti tuttavia che le operazioni mappate alla memoria non sono supportate per le piattaforme Windows. Pertanto, si consiglia di aggiungere il parametro **—disable-mmap** durante l&#39;esecuzione della migrazione su Windows.
 
 #### Migrazione selettiva dei contenuti {#selective-migration-of-content}
 
-Per impostazione predefinita, lo strumento migra l’intero archivio sotto il `"/"` percorso. Tuttavia, hai il controllo completo sul contenuto da migrare.
+Per impostazione predefinita, lo strumento esegue la migrazione dell&#39;intero archivio nel percorso `"/"`. Tuttavia, hai il controllo completo sul contenuto da migrare.
 
-Se una parte del contenuto non è richiesta nella nuova istanza, puoi utilizzare `--exclude-path` per escludere il contenuto e ottimizzare la procedura di aggiornamento.
+Se una parte del contenuto non è necessaria nella nuova istanza, è possibile utilizzare il parametro `--exclude-path` per escludere il contenuto e ottimizzare la procedura di aggiornamento.
 
 #### Unione percorsi {#path-merging}
 
-Se i dati devono essere copiati tra due archivi e disponi di un percorso di contenuto diverso in entrambe le istanze, puoi definirlo in `--merge-path` parametro. In questo caso, CRX2Oak copia solo i nuovi nodi nell’archivio di destinazione e mantiene i vecchi nodi in posizione.
+Se i dati devono essere copiati tra due archivi e si dispone di un percorso di contenuto diverso in entrambe le istanze, è possibile definirlo nel parametro `--merge-path`. In questo caso, CRX2Oak copia solo i nuovi nodi nell&#39;archivio di destinazione e mantiene i vecchi nodi in posizione.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -105,76 +105,76 @@ Per impostazione predefinita, l’AEM crea una versione di ogni nodo o pagina ch
 
 Tuttavia, queste versioni non vengono mai eliminate anche se la pagina originale viene eliminata. Quando si gestiscono archivi che sono in funzione da molto tempo, la migrazione può rielaborare i dati ridondanti causati da versioni orfane.
 
-Una caratteristica utile per questi tipi di situazioni è l&#39;aggiunta della `--copy-versions` parametro. Può essere utilizzato per saltare i nodi di versione durante la migrazione o la copia di un archivio.
+Una caratteristica utile per questi tipi di situazioni è l&#39;aggiunta del parametro `--copy-versions`. Può essere utilizzato per saltare i nodi di versione durante la migrazione o la copia di un archivio.
 
-Puoi anche scegliere se copiare le versioni orfane aggiungendo `--copy-orphaned-versions=true`.
+È inoltre possibile scegliere se copiare le versioni orfane aggiungendo `--copy-orphaned-versions=true`.
 
-Entrambi i parametri supportano anche una `YYYY-MM-DD` formato data, per copiare le versioni non oltre una data specifica.
+Entrambi i parametri supportano anche un formato data `YYYY-MM-DD`, nel caso in cui si desideri copiare le versioni non oltre una data specifica.
 
 ![chlimage_1-153](assets/chlimage_1-153.png)
 
-#### Apri versione sorgente {#open-source-version}
+#### Apri versione Source {#open-source-version}
 
 È disponibile una versione open-source di CRX2Oak sotto forma di oak-upgrade. Supporta tutte le funzioni ad eccezione di:
 
-* Supporto CRX2
+* Supporto di CRX2
 * Supporto del profilo di migrazione
 * Supporto per la riconfigurazione automatica dell’AEM
 
-Consulta la [Documentazione di Apache](https://jackrabbit.apache.org/oak/docs/migration.html) per ulteriori informazioni.
+Per ulteriori informazioni, consulta la [documentazione di Apache](https://jackrabbit.apache.org/oak/docs/migration.html).
 
 ## Parametri {#parameters}
 
 ### Opzioni archivio nodi {#node-store-options}
 
-* `--cache`: dimensione della cache in MB (il valore predefinito è `256`)
+* `--cache`: dimensione cache in MB (valore predefinito: `256`)
 
-* `--mmap`: abilita l’accesso ai file mappati in memoria per l’archivio segmenti
-* `--src-password:` Password per il database RDB di origine
+* `--mmap`: abilita l&#39;accesso ai file mappati in memoria per l&#39;archivio segmenti
+* Password `--src-password:` per il database RDB di origine
 
-* `--src-user:` Utente per RDB di origine
+* Utente `--src-user:` per il database radice di origine
 
 * `--user`: utente per RDB di destinazione
 
-* `--password`: password per l’RDB di destinazione.
+* `--password`: password per RDB di destinazione.
 
 ### Opzioni di migrazione {#migration-options}
 
-* `--early-shutdown`: chiude l’archivio JCR2 di origine dopo la copia dei nodi e prima dell’applicazione degli hook di commit
-* `--fail-on-error`: forza un errore della migrazione se i nodi non possono essere letti dall’archivio di origine.
-* `--ldap`: esegue la migrazione degli utenti LDAP da un’istanza CQ 5.x a una basata su Oak. Affinché ciò funzioni, il provider di identità nella configurazione Oak deve essere denominato ldap. Per ulteriori informazioni, vedere [Documentazione LDAP](/help/sites-administering/ldap-config.md).
+* `--early-shutdown`: chiude l&#39;archivio JCR2 di origine dopo la copia dei nodi e prima dell&#39;applicazione degli hook di commit
+* `--fail-on-error`: forza un errore della migrazione se i nodi non possono essere letti dall&#39;archivio di origine.
+* `--ldap`: esegue la migrazione degli utenti LDAP da un&#39;istanza CQ 5.x a una basata su Oak. Affinché ciò funzioni, il provider di identità nella configurazione di Oak deve essere denominato ldap. Per ulteriori informazioni, vedere la [documentazione LDAP](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Utilizzalo con il `--ldap` parametro per gli archivi CQ 5.x che utilizzavano più server LDAP per l’autenticazione. Puoi utilizzarlo per puntare a CQ 5.x `ldap_login.conf` o `jaas.conf` file di configurazione. Il formato è `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Utilizzalo con il parametro `--ldap` per gli archivi CQ 5.x che hanno utilizzato più server LDAP per l&#39;autenticazione. È possibile utilizzarlo per puntare ai file di configurazione CQ 5.x `ldap_login.conf` o `jaas.conf`. Il formato è `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Opzioni archivio versioni {#version-store-options}
 
-* `--copy-orphaned-versions`: non copia le versioni orfane. I parametri supportati sono: `true`, `false`, e `yyyy-mm-dd`. Impostazione predefinita `true`.
+* `--copy-orphaned-versions`: la copia delle versioni orfane viene ignorata. I parametri supportati sono: `true`, `false` e `yyyy-mm-dd`. Impostazione predefinita: `true`.
 
-* `--copy-versions:` Copia l’archiviazione della versione. Parametri: `true`, `false`, `yyyy-mm-dd`. Impostazione predefinita `true`.
+* `--copy-versions:` Copia l&#39;archivio delle versioni. Parametri: `true`, `false`, `yyyy-mm-dd`. Impostazione predefinita: `true`.
 
 #### Opzioni percorso {#path-options}
 
-* `--include-paths:` Elenco di percorsi separato da virgole da includere durante la copia
-* `--merge-paths`: elenco di percorsi separato da virgole da unire durante la copia
-* `--exclude-paths:` Elenco separato da virgole dei percorsi da escludere durante la copia.
+* `--include-paths:` elenco di percorsi separati da virgole da includere durante la copia
+* `--merge-paths`: elenco di percorsi separati da virgole da unire durante la copia
+* `--exclude-paths:` elenco di percorsi separati da virgole da escludere durante la copia.
 
-### Opzioni archivio BLOB di origine {#source-blob-store-options}
+### Opzioni archivio BLOB di Source {#source-blob-store-options}
 
-* `--src-datastore:` Directory dell’archivio dati da utilizzare come origine `FileDataStore`
+* `--src-datastore:` Directory dell&#39;archivio dati da utilizzare come origine `FileDataStore`
 
-* `--src-fileblobstore`: directory dell’archivio dati da utilizzare come origine `FileBlobStore`
+* `--src-fileblobstore`: la directory dell&#39;archivio dati da utilizzare come origine `FileBlobStore`
 
-* `--src-s3datastore`: directory dell’archivio dati da utilizzare per l’origine `S3DataStore`
+* `--src-s3datastore`: la directory dell&#39;archivio dati da utilizzare per l&#39;origine `S3DataStore`
 
-* `--src-s3config`: file di configurazione per l’origine `S3DataStore`.
+* `--src-s3config`: file di configurazione per l&#39;origine `S3DataStore`.
 
 ### Opzioni BlobStore di destinazione {#destination-blobstore-options}
 
-* `--datastore:` Directory dell’archivio dati da utilizzare come destinazione `FileDataStore`
+* `--datastore:` Directory dell&#39;archivio dati da utilizzare come destinazione `FileDataStore`
 
-* `--fileblobstore:` Directory dell’archivio dati da utilizzare come destinazione `FileBlobStore`
+* `--fileblobstore:` Directory dell&#39;archivio dati da utilizzare come destinazione `FileBlobStore`
 
-* `--s3datastore`: directory dell’archivio dati da utilizzare per la destinazione `S3DataStore`
+* `--s3datastore`: directory dell&#39;archivio dati da utilizzare per la destinazione `S3DataStore`
 
 * `--s3config`: file di configurazione per la destinazione `S3DataStore`.
 
@@ -194,20 +194,20 @@ Consulta la [Documentazione di Apache](https://jackrabbit.apache.org/oak/docs/mi
   </tr>
   <tr>
    <td>Modalità Quickstart</td>
-   <td>È possibile aggiungere <strong>—log-level TRACE</strong> o <strong>- DEBUG a livello di log </strong>opzioni della riga di comando quando si esegue CRX2Oak. In questa modalità, i registri vengono reindirizzati automaticamente al <strong>file upgrade.log</strong>.</td>
+   <td>È possibile aggiungere le opzioni <strong>—log-level TRACE</strong> o <strong>—log-level DEBUG </strong>alla riga di comando durante l'esecuzione di CRX2Oak. In questa modalità, i registri vengono reindirizzati automaticamente al file <strong>upgrade.log</strong>.</td>
   </tr>
   <tr>
    <td>Modalità autonoma</td>
-   <td><p>Aggiungi il <strong>- traccia</strong> opzioni della riga di comando CRX2Oak per visualizzare gli eventi TRACE sull'output standard (è necessario reindirizzare i registri utilizzando il carattere di reindirizzamento: '&gt;' o il comando 'tee' per un'ispezione successiva).</p> </td>
+   <td><p>Aggiungere le opzioni <strong>—trace</strong> alla riga di comando di CRX2Oak per visualizzare gli eventi TRACE nell'output standard. È necessario reindirizzare i registri utilizzando il carattere di reindirizzamento: '&gt;' o il comando 'tee' per un'ispezione successiva.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Altre considerazioni {#other-considerations}
 
-Durante la migrazione a un set di repliche MongoDB, assicurarsi di impostare `WriteConcern` parametro a `2` su tutte le connessioni alle banche dati Mongo.
+Durante la migrazione a un set di repliche MongoDB, assicurarsi di impostare il parametro `WriteConcern` su `2` su tutte le connessioni ai database Mongo.
 
-Per farlo, aggiungi il `w=2` alla fine della stringa di connessione, come segue:
+Per eseguire questa operazione, aggiungere il parametro `w=2` alla fine della stringa di connessione, come segue:
 
 ```xml
 java -Xmx4092m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:27017/aem-author?replicaset=replica1&w=2
@@ -215,4 +215,4 @@ java -Xmx4092m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:2
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta la documentazione sulle stringhe di connessione MongoDB su [Scrivi dubbi](https://docs.mongodb.org/manual/reference/connection-string/#write-concern-options).
+>Per ulteriori informazioni, consulta la documentazione sulla stringa di connessione MongoDB in [Write Concerns](https://docs.mongodb.org/manual/reference/connection-string/#write-concern-options).

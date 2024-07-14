@@ -22,6 +22,6 @@ Forms consente di controllare se le entità esterne negli input XML vengono riso
 
 **Impedisci l&#39;elaborazione di file di dati XML contenenti riferimenti a entità esterne**
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi > Forms]**.
+1. Nella console di amministrazione, fare clic su **[!UICONTROL Servizi > Forms]**.
 1. Deselezionate la casella di controllo Risolvi entità esterne (Resolve External Entities).
 1. Fai clic su **[!UICONTROL Salva]**.

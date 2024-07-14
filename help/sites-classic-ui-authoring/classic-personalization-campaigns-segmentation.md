@@ -80,4 +80,4 @@ Ad esempio, la combinazione dell’URL di riferimento (come tratto comportamenta
 
 >[!NOTE]
 >
->Consulta [Segmentazione](/help/sites-administering/campaign-segmentation.md) per ulteriori informazioni sui segmenti in Adobe Experience Manager.
+>Per ulteriori informazioni sui segmenti in Adobe Experience Manager, vedi [Segmentazione](/help/sites-administering/campaign-segmentation.md).

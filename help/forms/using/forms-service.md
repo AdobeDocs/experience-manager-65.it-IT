@@ -31,19 +31,19 @@ Utilizza il servizio Forms per effettuare le seguenti operazioni:
 
 ## Creazione di PDF forms  {#creating-pdf-forms-nbsp}
 
-Utilizza il servizio Form per creare PDF forms per l’acquisizione dei dati. In genere, si inizia con un modello Designer di AEM Forms. Utilizza il `renderPDFForm` (collegamento a Javadoc) operazione del servizio Forms per convertire questo modello in un modulo PDF.
+Utilizza il servizio Form per creare PDF forms per l’acquisizione dei dati. In genere, si inizia con un modello Designer di AEM Forms. Utilizza l&#39;operazione `renderPDFForm` (collegamento a Javadoc) del servizio Forms per convertire questo modello in un modulo PDF.
 
-Il primo parametro del `renderPDFForm` operation è il nome del file modello (ad esempio, `ExpenseClaim.xdp`). È possibile memorizzare il file modello in un file system locale, in un repository CRX oppure in un percorso HTTP o FTP. È possibile specificare la posizione del file modello impostando la directory principale del contenuto in `PDFFormRenderOptions` parametro di `renderPDFForm` operazione. Consulta Javadoc per i dettagli di altre opzioni che puoi specificare per il `PDFFormRenderOptions` parametro.
+Il primo parametro dell&#39;operazione `renderPDFForm` è il nome del file modello, ad esempio `ExpenseClaim.xdp`. È possibile memorizzare il file modello in un file system locale, in un repository CRX oppure in un percorso HTTP o FTP. È possibile specificare il percorso del file modello impostando la directory principale del contenuto nel parametro `PDFFormRenderOptions` dell&#39;operazione `renderPDFForm`. Per informazioni dettagliate sulle altre opzioni che è possibile specificare per il parametro `PDFFormRenderOptions`, vedere JavaScript.
 
-Il `renderPDFForm` L&#39;operazione può anche accettare dati XML. I dati XML vengono uniti al modello durante la creazione di un modulo PDF in modo che il modulo PDF generato contenga i dati specificati. Il secondo parametro per `renderPDFForm` può accettare un oggetto Document (Javadoc) contenente dati XML.
+L&#39;operazione `renderPDFForm` può accettare anche dati XML. I dati XML vengono uniti al modello durante la creazione di un modulo PDF in modo che il modulo PDF generato contenga i dati specificati. Il secondo parametro per l&#39;operazione `renderPDFForm` può accettare un oggetto Document (Javadoc) contenente dati XML.
 
 ## Estrazione di dati dai PDF forms  {#extracting-data-from-pdf-forms-nbsp}
 
-Utilizza il `exportData` (Javadoc) del servizio Forms per estrarre dati XML da un modulo PDF. Questa operazione accetta un documento come primo parametro. È possibile esportare i dati come documento XDP o come file XML. Se si esportano i dati come file XML, i dati esportati rimuovono l&#39;inviluppo XDP e restituiscono un file XML normale. Potete specificare questa disposizione utilizzando il secondo parametro.
+Utilizzare l&#39;operazione `exportData` (Javadoc) del servizio Forms per estrarre dati XML da un modulo PDF. Questa operazione accetta un documento come primo parametro. È possibile esportare i dati come documento XDP o come file XML. Se si esportano i dati come file XML, i dati esportati rimuovono l&#39;inviluppo XDP e restituiscono un file XML normale. Potete specificare questa disposizione utilizzando il secondo parametro.
 
 ## Importazione di dati nei PDF forms {#importing-data-into-pdf-forms}
 
-Il servizio Forms consente inoltre di unire un modulo di PDF creato utilizzando AEM Forms Designer o `renderPDFForm` operazione con dati XML. Il `importData` (Javadoc) Il funzionamento del servizio Forms accetta il modulo PDF e i dati XML e restituisce un modulo PDF con dati XML.
+Il servizio Forms consente inoltre di unire un modulo PDF creato con AEM Forms Designer o l&#39;operazione `renderPDFForm` con dati XML. L&#39;operazione `importData` (Javadoc) del servizio Forms accetta il modulo PDF e i dati XML e restituisce un modulo PDF con XML dati.
 
 ## Rendering di moduli basati su frammenti {#rendering-forms-based-on-fragments}
 
@@ -53,6 +53,6 @@ L’utilizzo di frammenti semplifica e accelera la creazione e la gestione di un
 
 Di seguito sono riportati i vantaggi dell’utilizzo dei frammenti:
 
-* **Riutilizzo dei contenuti**: è possibile riutilizzare il contenuto in più progettazioni di moduli. Per riutilizzare rapidamente parti dello stesso contenuto in più moduli, crea un frammento. La copia o la ricreazione del contenuto richiede più tempo. L’utilizzo dei frammenti assicura inoltre che le parti utilizzate di frequente di una progettazione di moduli abbiano contenuto e aspetto coerenti in tutti i moduli di riferimento.
+* **Riutilizzo del contenuto**: è possibile riutilizzare il contenuto in più progettazioni di moduli. Per riutilizzare rapidamente parti dello stesso contenuto in più moduli, crea un frammento. La copia o la ricreazione del contenuto richiede più tempo. L’utilizzo dei frammenti assicura inoltre che le parti utilizzate di frequente di una progettazione di moduli abbiano contenuto e aspetto coerenti in tutti i moduli di riferimento.
 * **Aggiornamenti globali**: è possibile apportare modifiche globali a più moduli una sola volta in un file. Puoi modificare il contenuto, gli oggetti script, le associazioni di dati, il layout o gli stili in un frammento. Tutti i moduli XDP che fanno riferimento al frammento riflettono le modifiche.
-* **Creazione di moduli condivisi**: puoi condividere la creazione di moduli tra diverse risorse. Gli sviluppatori di moduli con esperienza nello scripting o altre funzioni avanzate di AEM Forms Designer possono sviluppare e condividere frammenti che utilizzano script e proprietà dinamiche. I progettisti di moduli possono utilizzare i frammenti per progettare i moduli. Inoltre, possono utilizzare i frammenti per garantire che tutte le parti di un modulo abbiano un aspetto e una funzionalità coerenti tra più moduli.
+* **Creazione di moduli condivisi**: è possibile condividere la creazione di moduli tra diverse risorse. Gli sviluppatori di moduli con esperienza nello scripting o altre funzioni avanzate di AEM Forms Designer possono sviluppare e condividere frammenti che utilizzano script e proprietà dinamiche. I progettisti di moduli possono utilizzare i frammenti per progettare i moduli. Inoltre, possono utilizzare i frammenti per garantire che tutte le parti di un modulo abbiano un aspetto e una funzionalità coerenti tra più moduli.

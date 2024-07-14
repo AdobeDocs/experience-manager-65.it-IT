@@ -1,6 +1,6 @@
 ---
 title: Configurazione e amministrazione della funzionalità metadati.
-description: Configurazione e amministrazione di [!DNL Experience Manager Assets] funzionalità relative all'aggiunta e alla gestione dei metadati.
+description: Configurazione e amministrazione della funzionalità  [!DNL Experience Manager Assets]  relativa all'aggiunta e alla gestione dei metadati.
 contentOwner: AG
 role: User, Admin
 feature: Metadata
@@ -27,18 +27,18 @@ ht-degree: 3%
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] conserva i metadati per ogni risorsa. Consente di categorizzare e organizzare più facilmente le risorse e aiuta le persone alla ricerca di una risorsa specifica. Grazie alla possibilità di conservare e gestire i metadati con le risorse, è possibile organizzare ed elaborare automaticamente le risorse in base ai relativi metadati. [!DNL Adobe Experience Manager Assets] consente agli amministratori di configurare e personalizzare la funzionalità dei metadati per modificare l’offerta Adobe predefinita.
+[!DNL Adobe Experience Manager Assets] mantiene i metadati per ogni risorsa. Consente di categorizzare e organizzare più facilmente le risorse e aiuta le persone alla ricerca di una risorsa specifica. Grazie alla possibilità di conservare e gestire i metadati con le risorse, è possibile organizzare ed elaborare automaticamente le risorse in base ai relativi metadati. [!DNL Adobe Experience Manager Assets] consente agli amministratori di configurare e personalizzare la funzionalità dei metadati per modificare l&#39;offerta Adobe predefinita.
 
 ## Modifica schema metadati {#metadata-schema}
 
-Per ulteriori informazioni, consulta [modifica moduli schema metadati](metadata-schemas.md#edit-metadata-schema-forms).
+Per ulteriori dettagli, vedere [modificare i moduli schema metadati](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Registrare uno spazio dei nomi personalizzato in [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
+## Registra uno spazio dei nomi personalizzato in [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
-Puoi aggiungere spazi dei nomi personalizzati in [!DNL Experience Manager]. Così come sono presenti spazi dei nomi predefiniti, ad esempio `cq`, `jcr`, e `sling`, è possibile disporre di uno spazio dei nomi per i metadati del repository e l&#39;elaborazione XML.
+È possibile aggiungere spazi dei nomi personalizzati in [!DNL Experience Manager]. Poiché sono presenti spazi dei nomi predefiniti come `cq`, `jcr` e `sling`, è possibile disporre di uno spazio dei nomi per i metadati dell&#39;archivio e l&#39;elaborazione XML.
 
 1. Accedere alla pagina di amministrazione del tipo di nodo `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
-1. Per accedere alla pagina di amministrazione dello spazio dei nomi, fai clic su **[!UICONTROL Namespace]** nella parte superiore della pagina.
+1. Per accedere alla pagina di amministrazione dello spazio dei nomi, fai clic su **[!UICONTROL Spazi dei nomi]** nella parte superiore della pagina.
 1. Per aggiungere uno spazio dei nomi, fai clic su **[!UICONTROL Nuovo]** nella parte inferiore della pagina.
 1. Specificare uno spazio dei nomi personalizzato nella convenzione dello spazio dei nomi XML. Specifica l’ID sotto forma di URI e di un prefisso associato per l’ID. Fai clic su **[!UICONTROL Salva]**.
 
@@ -48,7 +48,7 @@ Per evitare una situazione di tipo Denial of Service (DOS), [!DNL Enterprise Man
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Per modificare il limite, accedere a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]** e modificare il valore di **[!UICONTROL Parametri POST massimi]** in **[!UICONTROL Gestione dei parametri delle richieste Apache Sling]** Configurazione OSGi.
+Per modificare il limite, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]** e modifica il valore di **[!UICONTROL Parametri POST massimi]** nella **[!UICONTROL Gestione parametri richiesta Apache Sling]** configurazione OSGi.
 
 ## Profili metadati {#metadata-profiles}
 
@@ -56,65 +56,65 @@ Un profilo di metadati consente di applicare metadati predefiniti alle risorse a
 
 ### Aggiungere un profilo di metadati {#adding-a-metadata-profile}
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]** e fai clic su **[!UICONTROL Crea]**.
-1. Immetti un titolo per il profilo, ad esempio: `Sample Metadata`e fai clic su **[!UICONTROL Crea]**. Il [!UICONTROL Modifica modulo] per il profilo di metadati.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]** e fai clic su **[!UICONTROL Crea]**.
+1. Immettere un titolo per il profilo, ad esempio `Sample Metadata`, e fare clic su **[!UICONTROL Crea]**. Viene visualizzato [!UICONTROL Modifica modulo] per il profilo metadati.
 
-   ![Modificare un modulo di metadati](assets/metadata-edit-form.png)
+   ![Modifica modulo metadati](assets/metadata-edit-form.png)
 
-1. Fai clic su un componente e configurane le proprietà nella sezione **[!UICONTROL Impostazioni]** scheda. Ad esempio, fai clic su **[!UICONTROL Descrizione]** e modificarne le proprietà.
+1. Fai clic su un componente e configurane le proprietà nella scheda **[!UICONTROL Impostazioni]**. Ad esempio, fai clic sul componente **[!UICONTROL Descrizione]** e modificane le proprietà.
 
    ![Impostazione di un componente nel profilo metadati](assets/metadata-profile-component-setting.png)
 
-   Modifica le seguenti proprietà per **[!UICONTROL Descrizione]** componente:
+   Modifica le seguenti proprietà per il componente **[!UICONTROL Descrizione]**:
 
    * **[!UICONTROL Etichetta campo]**: nome visualizzato della proprietà dei metadati. È solo per riferimento utente.
 
-   * **[!UICONTROL Mappa su proprietà]**: il valore di questa proprietà fornisce il percorso o il nome relativo del nodo della risorsa in cui viene salvato nell’archivio. Il valore deve sempre iniziare con `./` perché indica che il percorso si trova sotto il nodo della risorsa.
+   * **[!UICONTROL Mappa su proprietà]**: il valore di questa proprietà fornisce il percorso relativo o il nome del nodo della risorsa in cui viene salvato nell&#39;archivio. Il valore deve sempre iniziare con `./` perché indica che il percorso si trova sotto il nodo della risorsa.
 
    ![Mappa su impostazione proprietà nel profilo metadati](assets/metadata-profile-setting-map-property.png)
 
-   Il valore specificato per **[!UICONTROL Mappa su proprietà]** viene memorizzato come proprietà sotto il nodo di metadati della risorsa. Ad esempio, se specifichi `./jcr:content/metadata/dc:desc` come nome di **[!UICONTROL Mappa su proprietà]**, [!DNL Assets] memorizza il valore `dc:desc` nel nodo dei metadati della risorsa. L’Adobe consiglia di mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona l’ultimo campo aggiunto mappato alla proprietà.
+   Il valore specificato per **[!UICONTROL Mappa su proprietà]** è memorizzato come proprietà sotto il nodo di metadati della risorsa. Ad esempio, se si specifica `./jcr:content/metadata/dc:desc` come nome di **[!UICONTROL Mappa sulla proprietà]**, [!DNL Assets] memorizza il valore `dc:desc` nel nodo di metadati della risorsa. L’Adobe consiglia di mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona l’ultimo campo aggiunto mappato alla proprietà.
 
-   * **[!UICONTROL Valore predefinito]**: utilizza questa proprietà per aggiungere un valore predefinito per il componente metadati. Ad esempio, se specifichi &quot;Descrizione&quot; questo valore viene assegnato alla proprietà `dc:desc` nel nodo dei metadati della risorsa.
+   * **[!UICONTROL Valore predefinito]**: utilizzare questa proprietà per aggiungere un valore predefinito per il componente metadati. Ad esempio, se specifichi &quot;Descrizione&quot; questo valore viene assegnato alla proprietà `dc:desc` nel nodo di metadati della risorsa.
 
-   ![Imposta descrizione predefinita nel profilo metadati](assets/metadata-profile-setting-default-value.png)
+   ![Imposta la descrizione predefinita nel profilo metadati](assets/metadata-profile-setting-default-value.png)
 
    >[!NOTE]
    >
-   >Aggiunta di un valore predefinito a una nuova proprietà di metadati (che non esiste in `/jcr:content/metadata` ) non visualizza la proprietà e il relativo valore sul [!UICONTROL Proprietà] pagina per impostazione predefinita. Per visualizzare la nuova proprietà sulle risorse [!UICONTROL Proprietà] , modificare il modulo schema corrispondente.
+   >L&#39;aggiunta di un valore predefinito a una nuova proprietà di metadati (che non esiste nel nodo `/jcr:content/metadata`) non visualizza la proprietà e il relativo valore nella pagina [!UICONTROL Proprietà] della risorsa per impostazione predefinita. Per visualizzare la nuova proprietà nella pagina [!UICONTROL Proprietà] delle risorse, modifica il modulo schema corrispondente.
 
-1. (Facoltativo) In **[!UICONTROL Genera modulo]** , aggiungere altri componenti a [!UICONTROL Modifica modulo]e configurarne le proprietà in **[!UICONTROL Impostazioni]** scheda. Le seguenti proprietà sono disponibili nel **[!UICONTROL Genera modulo]** scheda:
+1. (Facoltativo) Nella scheda **[!UICONTROL Genera modulo]**, aggiungi altri componenti a [!UICONTROL Modifica modulo] e configurane le proprietà nella scheda **[!UICONTROL Impostazioni]**. Le seguenti proprietà sono disponibili nella scheda **[!UICONTROL Genera modulo]**:
 
 | Componente | Proprietà |
 | ----------------------------- | ----------------------------------------------------------------------- |
-| [!UICONTROL Intestazione sezione] | Etichetta campo, <br> Descrizione |
-| [!UICONTROL Testo su riga singola] | Etichetta campo, <br> Mappa su proprietà, <br> Valore predefinito |
-| [!UICONTROL Testo con più valori] | Etichetta campo, <br> Mappa su proprietà, <br> Valore predefinito |
-| [!UICONTROL Numero] | Etichetta campo, <br> Mappa su proprietà, <br> Valore predefinito |
-| [!UICONTROL Data] | Etichetta campo, <br> Mappa su proprietà, <br> Valore predefinito |
-| [!UICONTROL Tag standard] | Etichetta campo, <br> Mappa su proprietà, <br> Valore predefinito, <br> Descrizione |
+| [!UICONTROL Intestazione sezione] | Etichetta Campo, Descrizione <br> |
+| [!UICONTROL Testo su riga singola] | Etichetta campo, <br> Mappa sulla proprietà, <br> Valore predefinito |
+| [!UICONTROL Testo con più valori] | Etichetta campo, <br> Mappa sulla proprietà, <br> Valore predefinito |
+| [!UICONTROL Numero] | Etichetta campo, <br> Mappa sulla proprietà, <br> Valore predefinito |
+| [!UICONTROL Data] | Etichetta campo, <br> Mappa sulla proprietà, <br> Valore predefinito |
+| [!UICONTROL Tag standard] | Etichetta campo, <br> Mappa sulla proprietà, <br> Valore predefinito, <br> Descrizione |
 
-1. Clic **[!UICONTROL Fine]**. Il profilo metadati viene aggiunto all’elenco dei profili nel **[!UICONTROL Profili metadati]** pagina.<br>
+1. Fai clic su **[!UICONTROL Fine]**. Il profilo metadati è stato aggiunto all&#39;elenco dei profili nella pagina **[!UICONTROL Profili metadati]**.<br>
 
    ![Profilo metadati aggiunto nella pagina Profili metadati](assets/MetadataProfiles-page.png)
 
 ### Copiare un profilo di metadati {#copying-a-metadata-profile}
 
-1. Dalla sezione **[!UICONTROL Profili metadati]** , seleziona un profilo di metadati per crearne una copia.
+1. Dalla pagina **[!UICONTROL Profili metadati]**, seleziona un profilo metadati per crearne una copia.
 
-   ![Copiare un profilo di metadati](assets/metadata-profile-edit-copy-option.png)
+   ![Copia un profilo metadati](assets/metadata-profile-edit-copy-option.png)
 
-1. Clic **[!UICONTROL Copia]** dalla barra degli strumenti.
-1. In **[!UICONTROL Copia profilo metadati]** immetti un titolo per la nuova copia del profilo metadati.
-1. Clic **[!UICONTROL Copia]**. La copia del profilo metadati viene visualizzata nell’elenco apposito della pagina **[!UICONTROL Profili metadati]**.
+1. Fai clic su **[!UICONTROL Copia]** nella barra degli strumenti.
+1. Nella finestra di dialogo **[!UICONTROL Copia profilo metadati]** immettere un titolo per la nuova copia del profilo metadati.
+1. Fai clic su **[!UICONTROL Copia]**. La copia del profilo metadati viene visualizzata nell’elenco apposito della pagina **[!UICONTROL Profili metadati]**.
 
-   ![Una copia del profilo di metadati aggiunto nella pagina Profili metadati](assets/copy-metadata-profile.png)
+   ![Una copia del profilo metadati aggiunto nella pagina Profili metadati](assets/copy-metadata-profile.png)
 
 ### Eliminare un profilo di metadati {#deleting-a-metadata-profile}
 
-1. Dalla sezione **[!UICONTROL Profili metadati]** , selezionare un profilo da eliminare.
+1. Dalla pagina **[!UICONTROL Profili metadati]**, selezionare un profilo da eliminare.
 
-1. Clic **[!UICONTROL Elimina profili metadati]** nella barra degli strumenti.
+1. Fare clic su **[!UICONTROL Elimina profili metadati]** nella barra degli strumenti.
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Elimina]** per confermare l&#39;operazione di eliminazione. Il profilo metadati viene eliminato dall’elenco.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
@@ -145,9 +145,9 @@ To apply a metadata profile globally, follow these steps:
 
 Utilizza l’editor di Forms per lo schema metadati delle cartelle per creare e modificare gli schemi di metadati per le cartelle.
 
-1. In entrata [!DNL Experience Manager] , vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati cartelle]**.
-1. Il giorno [!UICONTROL Forms schema metadati cartelle] pagina, fai clic su **[!UICONTROL Crea]**.
-1. Specificare un nome per il modulo e fare clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato in [!UICONTROL Schema Forms] pagina.
+1. Nell&#39;interfaccia [!DNL Experience Manager], vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati cartelle]**.
+1. Nella pagina [!UICONTROL Schema metadati cartelle Forms] fare clic su **[!UICONTROL Crea]**.
+1. Specificare un nome per il modulo e fare clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina [!UICONTROL Schema Forms].
 
 ### Modifica moduli schema metadati cartelle {#edit-folder-metadata-schema-forms}
 
@@ -158,30 +158,30 @@ Puoi modificare un modulo schema metadati appena aggiunto o esistente, che inclu
 
 Puoi mappare/configurare questi elementi modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi del modulo al modulo schema metadati.
 
-1. Nella pagina Schema Forms selezionare il modulo creato, quindi selezionare **[!UICONTROL Modifica]** dalla barra degli strumenti.
-1. Nella pagina Editor schema metadati cartelle, fai clic su `+` per aggiungere una scheda al modulo. Per rinominare la scheda, fate clic sul nome di default e specificate il nuovo nome in **[!UICONTROL Impostazioni]**.
+1. Nella pagina Forms schema selezionare il modulo creato, quindi selezionare l&#39;opzione **[!UICONTROL Modifica]** dalla barra degli strumenti.
+1. Nella pagina Editor schema metadati cartelle fare clic su `+` per aggiungere una scheda al modulo. Per rinominare la scheda, fare clic sul nome predefinito e specificare il nuovo nome in **[!UICONTROL Impostazioni]**.
 
-   ![custom_tab](assets/custom_tab.png)
+   ![scheda_personalizzata](assets/custom_tab.png)
 
-   Per aggiungere altre schede, fai clic su `+`. Per eliminare, fai clic su `X` su una scheda.
+   Per aggiungere altre schede, fare clic su `+`. Per eliminare, fare clic su `X` in una scheda.
 
-1. Nella scheda attiva, aggiungi uno o più componenti della **[!UICONTROL Genera modulo]** scheda.
+1. Nella scheda attiva, aggiungi uno o più componenti dalla scheda **[!UICONTROL Genera modulo]**.
 
-   ![add_components](assets/adding_components.png)
+   ![aggiunta_componenti](assets/adding_components.png)
 
    Se si creano più schede, fare clic su una scheda specifica per aggiungere componenti.
 
-1. Per configurare un componente, selezionalo e modificane le proprietà in **[!UICONTROL Impostazioni]** scheda.
+1. Per configurare un componente, selezionarlo e modificarne le proprietà nella scheda **[!UICONTROL Impostazioni]**.
 
-   Se necessario, elimina un componente dal **[!UICONTROL Impostazioni]** scheda.
+   Se necessario, eliminare un componente dalla scheda **[!UICONTROL Impostazioni]**.
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Per salvare le modifiche, seleziona **[!UICONTROL Salva]** dalla barra degli strumenti.
+1. Per salvare le modifiche, seleziona **[!UICONTROL Salva]** nella barra degli strumenti.
 
 #### Componenti per la creazione di moduli {#components-to-build-forms}
 
-Il **[!UICONTROL Genera modulo]** scheda elenca gli elementi del modulo utilizzati nel modulo schema metadati cartelle. Il **[!UICONTROL Impostazioni]** nella scheda vengono visualizzati gli attributi di ogni elemento selezionato nel **[!UICONTROL Genera modulo]** scheda. Di seguito è riportato un elenco degli elementi modulo disponibili nel **[!UICONTROL Genera modulo]** scheda:
+Nella scheda **[!UICONTROL Genera modulo]** sono elencati gli elementi del modulo utilizzati nel modulo schema metadati cartelle. Nella scheda **[!UICONTROL Impostazioni]** vengono visualizzati gli attributi di ogni elemento selezionato nella scheda **[!UICONTROL Genera modulo]**. Elenco degli elementi modulo disponibili nella scheda **[!UICONTROL Genera modulo]**:
 
 | Nome componente | Descrizione |
 |---|---|
@@ -190,33 +190,33 @@ Il **[!UICONTROL Genera modulo]** scheda elenca gli elementi del modulo utilizza
 | [!UICONTROL Testo con più valori] | Aggiungi una proprietà di testo con più valori. Viene memorizzato come array di stringhe. |
 | [!UICONTROL Numero] | Aggiungi un componente numero. |
 | [!UICONTROL Data] | Aggiungi un componente data. |
-| [!UICONTROL A discesa] | Aggiungi un elenco a discesa. |
+| [!UICONTROL Elenco a discesa] | Aggiungi un elenco a discesa. |
 | [!UICONTROL Tag standard] | Aggiungi un tag. |
 | [!UICONTROL Campo nascosto] | Aggiungi un campo nascosto. Viene inviato come parametro POST al salvataggio della risorsa. |
 
 #### Modifica di elementi modulo {#editing-form-items}
 
-Per modificare le proprietà degli elementi del modulo, fai clic sul componente e modifica tutte o un sottoinsieme delle seguenti proprietà in **[!UICONTROL Impostazioni]** scheda.
+Per modificare le proprietà degli elementi del modulo, fare clic sul componente e modificare tutte o un sottoinsieme delle seguenti proprietà nella scheda **[!UICONTROL Impostazioni]**.
 
 **[!UICONTROL Etichetta campo]**: nome della proprietà dei metadati visualizzata nella pagina delle proprietà della cartella.
 
-**[!UICONTROL Mappa su proprietà]**: questa proprietà specifica il percorso relativo del nodo della cartella nell’archivio CRX in cui viene salvato. Inizia con &quot;**./**&quot;, che indica che il percorso si trova sotto il nodo della cartella.
+**[!UICONTROL Mappa su proprietà]**: questa proprietà specifica il percorso relativo del nodo della cartella nell&#39;archivio di CRX in cui viene salvato. Inizia con &quot;**./**&quot;, che indica che il percorso si trova nel nodo della cartella.
 
 Di seguito sono riportati i valori validi per questa proprietà:
 
-* `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della cartella `dc:title`.
+* `./jcr:content/metadata/dc:title`: memorizza il valore nel nodo di metadati della cartella come proprietà `dc:title`.
 
-* `./jcr:created`: visualizza la proprietà JCR nel nodo della cartella. Se configuri queste proprietà in CRXDE, l’Adobe consiglia di contrassegnarle come Disattiva modifica, in quanto sono protette. In caso contrario, l’errore &quot; `Asset(s) failed to modify`&quot; si verifica quando si salvano le proprietà della risorsa.
+* `./jcr:created`: visualizza la proprietà JCR nel nodo della cartella. Se configuri queste proprietà in CRXDE, l’Adobe consiglia di contrassegnarle come Disattiva modifica, in quanto sono protette. In caso contrario, l&#39;errore &#39; `Asset(s) failed to modify`&#39; si verifica quando si salvano le proprietà della risorsa.
 
 Per garantire che il componente sia visualizzato correttamente nel modulo schema metadati, non includere uno spazio nel percorso della proprietà.
 
 **[!UICONTROL Percorso JSON]**: utilizzalo per specificare il percorso del file JSON in cui specificare le coppie chiave-valore per le opzioni.
 
-**[!UICONTROL Segnaposto]**: utilizza questa proprietà per specificare il testo segnaposto rilevante relativo alla proprietà dei metadati.
+**[!UICONTROL Segnaposto]**: utilizzare questa proprietà per specificare il testo segnaposto relativo alla proprietà dei metadati.
 
-**[!UICONTROL Scelte]**: utilizzare questa proprietà per specificare le scelte in un elenco.
+**[!UICONTROL Opzioni]**: utilizzare questa proprietà per specificare le scelte in un elenco.
 
-**[!UICONTROL Descrizione]**: utilizza questa proprietà per aggiungere una breve descrizione del componente metadati.
+**[!UICONTROL Descrizione]**: utilizzare questa proprietà per aggiungere una breve descrizione del componente metadati.
 
 **[!UICONTROL Classe]**: classe oggetto a cui è associata la proprietà.
 
@@ -224,47 +224,47 @@ Per garantire che il componente sia visualizzato correttamente nel modulo schema
 
 Puoi eliminare i moduli schema metadati cartelle dalla pagina Forms dello schema metadati cartelle. Per eliminare un modulo, selezionalo e fai clic sull’opzione Elimina nella barra degli strumenti.
 
-![delete_form](assets/delete_form.png)
+![elimina_modulo](assets/delete_form.png)
 
 ### Assegnare uno schema di metadati per le cartelle {#assign-a-folder-metadata-schema}
 
 È possibile assegnare uno schema di metadati di cartella a una cartella dalla pagina Forms dello schema metadati cartelle o durante la creazione di una cartella.
 
-Se configuri uno schema di metadati per una cartella, il percorso del modulo schema viene memorizzato in `folderMetadataSchema` proprietà del nodo della cartella in `./jcr:content`.
+Se si configura uno schema metadati per una cartella, il percorso del modulo schema viene memorizzato nella proprietà `folderMetadataSchema` del nodo della cartella in `./jcr:content`.
 
 #### Assegnare a uno schema dalla pagina Schema metadati cartelle {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. In entrata [!DNL Experience Manager] , vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati cartelle]**.
+1. Nell&#39;interfaccia [!DNL Experience Manager], vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati cartelle]**.
 1. Dalla pagina Forms schema metadati cartelle, seleziona il modulo schema da applicare a una cartella.
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Applica a cartelle]**.
 
-1. Seleziona la cartella in cui applicare lo schema, quindi fai clic su **[!UICONTROL Applica]**. Se nella cartella è già applicato uno schema metadati, un messaggio di avviso informa che stai per sovrascrivere lo schema metadati esistente. Clic **[!UICONTROL Sovrascrivere]**.
+1. Selezionare la cartella in cui applicare lo schema, quindi fare clic su **[!UICONTROL Applica]**. Se nella cartella è già applicato uno schema metadati, un messaggio di avviso informa che stai per sovrascrivere lo schema metadati esistente. Fai clic su **[!UICONTROL Sovrascrivi]**.
 1. Apri le proprietà dei metadati per la cartella a cui hai applicato lo schema metadati.
 
-   ![folder_properties](assets/folder_properties.png)
+   ![proprietà_cartella](assets/folder_properties.png)
 
-   Per visualizzare i campi di metadati della cartella, fai clic su **[!UICONTROL Metadati cartella]** scheda.
+   Per visualizzare i campi dei metadati della cartella, fare clic sulla scheda **[!UICONTROL Metadati cartella]**.
 
-   ![folder_metadata_properties](assets/folder_metadata_properties.png)
+   ![proprietà_metadati_cartelle](assets/folder_metadata_properties.png)
 
 #### Assegnare uno schema durante la creazione di una cartella {#assign-a-schema-when-creating-a-folder}
 
-Puoi assegnare uno schema di metadati della cartella durante la creazione di una cartella. Se nel sistema è presente almeno uno schema di metadati di cartella, viene visualizzato un elenco aggiuntivo nel **[!UICONTROL Crea cartella]** . Puoi selezionare lo schema desiderato. Per impostazione predefinita, non è selezionato alcuno schema.
+Puoi assegnare uno schema di metadati della cartella durante la creazione di una cartella. Se nel sistema è presente almeno uno schema di metadati di cartella, nella finestra di dialogo **[!UICONTROL Crea cartella]** verrà visualizzato un elenco aggiuntivo. Puoi selezionare lo schema desiderato. Per impostazione predefinita, non è selezionato alcuno schema.
 
-1. Dalla sezione [!DNL Experience Manager Assets] interfaccia utente, fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Nell&#39;interfaccia utente di [!DNL Experience Manager Assets], fare clic su **[!UICONTROL Crea]** nella barra degli strumenti.
 1. Specifica un titolo e un nome per la cartella.
-1. Dall’elenco Schema metadati cartelle, seleziona lo schema desiderato. Quindi, fai clic su **[!UICONTROL Crea]**.
+1. Dall’elenco Schema metadati cartelle, seleziona lo schema desiderato. Quindi fare clic su **[!UICONTROL Crea]**.
 
-   ![select_schema](assets/select_schema.png)
+   ![seleziona_schema](assets/select_schema.png)
 
 1. Apri le proprietà dei metadati per la cartella a cui hai applicato lo schema metadati.
-1. Per visualizzare i campi di metadati della cartella, fai clic su **[!UICONTROL Metadati cartella]** scheda.
+1. Per visualizzare i campi dei metadati della cartella, fare clic sulla scheda **[!UICONTROL Metadati cartella]**.
 
 ### Utilizzare lo schema di metadati della cartella {#use-the-folder-metadata-schema}
 
-Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. A **[!UICONTROL Metadati cartella]** nella cartella [!UICONTROL Proprietà] pagina. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
+Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle [!UICONTROL proprietà] della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
-Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell’archivio CRX.
+Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell&#39;archivio CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 
@@ -272,13 +272,13 @@ Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]*
 
 * Per importare metadati su spazi dei nomi personalizzati, registra innanzitutto gli spazi dei nomi.
 * Il selettore proprietà visualizza le proprietà utilizzate negli editor di schema e nei moduli di ricerca. Il selettore proprietà non seleziona le proprietà dei metadati da una risorsa.
-* Potresti avere profili di metadati preesistenti da prima dell&#39;aggiornamento a [!DNL Experience Manager] 6.5. Dopo l’aggiornamento, se applichi tale profilo nella cartella [!UICONTROL Proprietà] in [!UICONTROL Profili metadati] , i campi del modulo metadati non vengono visualizzati. Tuttavia, se applichi un profilo di metadati appena creato, i campi del modulo vengono visualizzati ma non sono disponibili come previsto. Non si verifica alcuna perdita di funzionalità, ma se desideri visualizzare i campi modulo (non disponibili) modifica e salva i profili di metadati esistenti.
+* Potresti avere profili di metadati preesistenti da prima dell&#39;aggiornamento a [!DNL Experience Manager] 6.5. Dopo l&#39;aggiornamento, se si applica un profilo di questo tipo nella cartella [!UICONTROL Proprietà] della scheda [!UICONTROL Profili metadati], i campi del modulo metadati non vengono visualizzati. Tuttavia, se applichi un profilo di metadati appena creato, i campi del modulo vengono visualizzati ma non sono disponibili come previsto. Non si verifica alcuna perdita di funzionalità, ma se desideri visualizzare i campi modulo (non disponibili) modifica e salva i profili di metadati esistenti.
 
 >[!MORELIKETHIS]
 >
 >* [Concetti e informazioni sui metadati](metadata-concepts.md).
->* [Modificare le proprietà dei metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk).
+>* [Modifica proprietà metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk).
 >* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
->* [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
+>* [Procedure consigliate per organizzare le risorse digitali in modo da utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
 >* [Write-back XMP](/help/assets/xmp-writeback.md).

@@ -26,13 +26,13 @@ Un autore può incontrare le seguenti limitazioni funzionali quando utilizza l�
 
 ### Collegamenti non attivi {#links-not-active}
 
-Quando [modifica di una pagina](/help/sites-authoring/editing-content.md), i collegamenti non sono attivi.
+Quando [si modifica una pagina](/help/sites-authoring/editing-content.md), i collegamenti non sono attivi.
 
-* [Passa a **Anteprima** modalità](/help/sites-authoring/editing-content.md#preview-mode) per navigare utilizzando i collegamenti presenti nel contenuto.
+* [Passa alla modalità **Anteprima**](/help/sites-authoring/editing-content.md#preview-mode) per spostarti utilizzando i collegamenti presenti nel contenuto.
 
 ### Strutturare le pagine {#structure-pages}
 
-Impossibile denominare le pagine `structure`. Pagine denominate `structure` non sono modificabili nell’editor pagina.
+Impossibile denominare le pagine `structure`. Le pagine denominate `structure` non sono modificabili nell&#39;editor di pagine.
 
 ## Limitazioni CSS {#css-limitations}
 
@@ -46,13 +46,13 @@ Gli elementi con posizionamento assoluto possono causare problemi nella posizion
 
 ### unità vh {#vh-units}
 
-`vh` non sono supportate perché l’altezza dell’iframe deve essere regolata automaticamente da Adobe Experience Manager (AEM).
+`vh` unità non sono supportate perché l&#39;altezza dell&#39;iframe deve essere regolata automaticamente da Adobe Experience Manager (AEM).
 
 ### Immagini di sfondo fisse {#fixed-background-images}
 
 È possibile che le immagini di sfondo fisse non vengano visualizzate come fisse durante lo scorrimento perché sono incorporate in un iframe.
 
-* Selezione **Visualizza pagina come pubblicata** nelle azioni della barra dell’intestazione, la pagina viene visualizzata correttamente.
+* Selezionando **Visualizza pagina come pubblicata** nelle azioni della barra dell&#39;intestazione, la pagina viene visualizzata correttamente.
 
 ### Altezza 100% {#height}
 

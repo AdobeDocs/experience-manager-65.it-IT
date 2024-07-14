@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configurazione delle impostazioni di AEM DS{#configuring-aem-ds-settings}
 
-Questo articolo descrive come configurare **Servizio impostazioni DS AEM**. Questa impostazione può essere utilizzata in più scenari, ad esempio:
+In questo articolo viene descritto come configurare il servizio **Impostazioni DS AEM**. Questa impostazione può essere utilizzata in più scenari, ad esempio:
 
 * Nella gestione della corrispondenza
 
@@ -27,28 +27,28 @@ Questo articolo descrive come configurare **Servizio impostazioni DS AEM**. Ques
 
 * Nei moduli adattivi, nei casi in cui un modulo adattivo viene inviato dall’istanza di pubblicazione
 
-Di seguito sono riportati i passaggi per configurare **[!UICONTROL Impostazioni di AEM DS]**:
+Di seguito sono riportati i passaggi per configurare le **[!UICONTROL impostazioni di Servizi di dominio AEM]**:
 
 1. Apri Configuration Manager nell’istanza di pubblicazione utilizzando l’URL:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![Configurazione console web AEM](assets/web_configuration_console_new.png)
+   ![Configurazione console Web AEM](assets/web_configuration_console_new.png)
 
-1. In **[!UICONTROL Configurazione console Web Adobe Experience Manager]** , individuare e fare clic sul pulsante **[!UICONTROL Impostazioni di AEM DS]** opzione.
+1. Nella finestra **[!UICONTROL Configurazione console Web Adobe Experience Manager]**, individuare e fare clic sull&#39;opzione **[!UICONTROL Impostazioni DS AEM]**.
 
    ![Impostazioni DS](assets/ds_settings_new.png)
 
-1. Il **[!UICONTROL Servizio impostazioni DS AEM]** visualizza le impostazioni di configurazione comuni per i componenti di AEM DS.
+1. Nella finestra **[!UICONTROL Servizio impostazioni DS AEM]** sono visualizzate le impostazioni di configurazione comuni per i componenti DS AEM.
 
    ![Servizio impostazioni DS](assets/ds_settings_service_new.png)
 
 1. Aggiungi le seguenti informazioni nei rispettivi campi:
 
-   **[!UICONTROL Elaborazione URL server]**: il server di elaborazione è il server in cui deve essere attivato il flusso di lavoro Forms o AEM. Può essere lo stesso dell’URL dell’istanza di authoring AEM o dell’altro URL del server (ovvero https://localhost:port/).
+   **[!UICONTROL URL server di elaborazione]**: il server di elaborazione è il server in cui deve essere attivato il flusso di lavoro di Forms o AEM. Può essere lo stesso dell’URL dell’istanza di authoring AEM o dell’altro URL del server (ovvero https://localhost:port/).
 
-   **[!UICONTROL Nome utente server di elaborazione]**: nome utente del flusso di lavoro [in base all’URL del server utilizzato]
+   **[!UICONTROL Elaborazione nome utente server]**: nome utente dell&#39;utente del flusso di lavoro [in base all&#39;URL del server utilizzato]
 
-   **[!UICONTROL Password server di elaborazione]**: password dell&#39;utente del flusso di lavoro
+   **[!UICONTROL Elaborazione password server]**: password utente flusso di lavoro
 
    >[!NOTE]
    >

@@ -16,19 +16,19 @@ ht-degree: 0%
 
 # Abilita il rilevamento delle risorse duplicate {#enable-detection-of-duplicate-assets}
 
-Se tenti di caricare una risorsa esistente in [!DNL Adobe Experience Manager Assets], la funzione di rilevamento dei duplicati lo identifica come duplicato. Il rilevamento duplicati è disabilitato per impostazione predefinita. Per attivare la funzione, effettuare le seguenti operazioni:
+Se si tenta di caricare una risorsa esistente in [!DNL Adobe Experience Manager Assets], la funzionalità di rilevamento duplicati la identifica come duplicata. Il rilevamento duplicati è disabilitato per impostazione predefinita. Per attivare la funzione, effettuare le seguenti operazioni:
 
-1. Apri [!DNL Experience Manager] pagina di configurazione della console web accedendo a `https://[aem_server]:[port]/system/console/configMgr`.
-1. Modificare la configurazione del servlet **[!UICONTROL Crea risorsa Day CQ DAM]**.
-1. Seleziona la **[!UICONTROL rilevare duplicati]** e fai clic su **[!UICONTROL Salva]**.
+1. Aprire la pagina di configurazione della console Web [!DNL Experience Manager] accedendo a `https://[aem_server]:[port]/system/console/configMgr`.
+1. Modifica la configurazione per il servlet **[!UICONTROL Day CQ DAM Create Asset]**.
+1. Seleziona l&#39;opzione **[!UICONTROL rileva duplicati]** e fai clic su **[!UICONTROL Salva]**.
 
-   ![Seleziona l’opzione di rilevamento duplicati nel servlet](assets/chlimage_1-377.png)
+   ![Selezionare l&#39;opzione di rilevamento duplicati nel servlet](assets/chlimage_1-377.png)
 
-   *Figura: Selezionare l’opzione di rilevamento duplicati nel servlet.*
+   *Figura: selezionare l&#39;opzione di rilevamento duplicati nel servlet.*
 
-La funzione di rilevamento duplicati è ora abilitata in [!DNL Assets]. Quando un utente cerca di caricare una risorsa esistente in [!DNL Experience Manager], il sistema verifica la presenza di un conflitto e lo indica. Le risorse vengono identificate utilizzando l’hash SHA-1 memorizzato in `jcr:content/metadata/dam:sha1`: le risorse duplicate vengono rilevate indipendentemente dai nomi dei file.
+La funzionalità di rilevamento duplicati è ora abilitata in [!DNL Assets]. Quando un utente cerca di caricare una risorsa esistente in [!DNL Experience Manager], il sistema verifica la presenza di un conflitto e lo indica. Le risorse vengono identificate utilizzando l&#39;hash SHA-1 archiviato in `jcr:content/metadata/dam:sha1`, il che significa che le risorse duplicate vengono rilevate indipendentemente dai nomi dei file.
 
 >[!MORELIKETHIS]
 >
->* [Risorse duplicate nell’archivio esistente (un tutorial da un membro della community)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [Rilevare risorse duplicate in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
+>* [Risorse duplicate nell&#39;archivio esistente (un&#39;esercitazione eseguita da un membro della community)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [Rileva risorse duplicate in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)

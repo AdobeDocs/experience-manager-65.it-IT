@@ -16,13 +16,13 @@ ht-degree: 0%
 
 # Utilizzare i metadati in una notifica e-mail {#use-metadata-in-an-email-notification}
 
-È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente definito o a ciascun membro del gruppo definito. Un tipico [notifica e-mail](../../forms/using/use-custom-email-template-assign-task-step.md) contiene il collegamento dell&#39;attività assegnata e le informazioni relative all&#39;attività.
+È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente definito o a ciascun membro del gruppo definito. Una [notifica e-mail](../../forms/using/use-custom-email-template-assign-task-step.md) tipica contiene il collegamento dell&#39;attività assegnata e le informazioni relative all&#39;attività.
 
 Puoi utilizzare i metadati in un modello e-mail per compilare dinamicamente le informazioni in una notifica e-mail. Ad esempio, il valore del titolo, della descrizione, della data di scadenza, della priorità, del flusso di lavoro e dell’ultima data nella seguente notifica e-mail viene selezionato dinamicamente in fase di esecuzione (quando viene generata una notifica e-mail).
 
 ![Modello e-mail predefinito](assets/default_email_template_metadata_new.png)
 
-I metadati vengono memorizzati in coppie chiave-valore. Puoi specificare la chiave nel modello e-mail e sostituirla con un valore in fase di esecuzione (quando viene generata una notifica e-mail). Ad esempio, nell’esempio di codice seguente, &quot;$ {workitem_title} &quot; è una chiave. Viene sostituito con il valore &quot;Loan-Request&quot; in fase di runtime.
+I metadati vengono memorizzati in coppie chiave-valore. Puoi specificare la chiave nel modello e-mail e sostituirla con un valore in fase di esecuzione (quando viene generata una notifica e-mail). Ad esempio, nell&#39;esempio di codice seguente, &quot;$ {workitem_title}&quot; è una chiave. Viene sostituito con il valore &quot;Loan-Request&quot; in fase di runtime.
 
 ```html
 subject=Task Assigned - ${workitem_title}
@@ -156,7 +156,7 @@ Puoi anche utilizzare metadati personalizzati in una notifica e-mail. I metadati
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) è un linguaggio di script. Viene utilizzato per applicazioni server e scripting lato client. Per aggiungere metadati personalizzati per un modello di e-mail, effettuare le seguenti operazioni per utilizzare ECMAScript:
 
-1. Accedere a CRX DE con un account amministrativo. L’URL è https://&#39;[server]:[porta]&#39;/crx/de/index.jsp
+1. Accedere a CRX DE con un account amministrativo. L&#39;URL è https://&#39;[server]:[porta]&#39;/crx/de/index.jsp
 
 1. Passa a /apps/fd/dashboard/scripts/metadataScripts. Crea un file con estensione .ecma. Ad esempio, usermetadata.ecma
 
@@ -184,8 +184,8 @@ Puoi anche utilizzare metadati personalizzati in una notifica e-mail. I metadati
 
    Se non si specifica il titolo, nel campo Metadati personalizzati viene visualizzato il percorso completo del file ECMAScript. Per specificare un titolo significativo per lo script, effettua le seguenti operazioni:
 
-   1. Espandere il nodo dello script, fare clic con il pulsante destro del mouse **[!UICONTROL jcr:content]** e fai clic su **[!UICONTROL Mixin]**.
-   1. Digitate mix:title nella finestra di dialogo Modifica mixin e fate clic su **+**.
+   1. Espandere il nodo di script, fare clic con il pulsante destro del mouse sul nodo **[!UICONTROL jcr:content]** e scegliere **[!UICONTROL Mixin]**.
+   1. Digitare mix:title nella finestra di dialogo Modifica mixin e fare clic su **+**.
    1. Aggiungi una proprietà con i seguenti valori.
 
       | Nome | jcr:title |
@@ -197,7 +197,7 @@ Puoi anche utilizzare metadati personalizzati in una notifica e-mail. I metadati
 
 È possibile utilizzare l&#39;interfaccia Java WorkitemUserMetadataService per aggiungere metadati personalizzati per i modelli e-mail. Puoi creare un bundle OSGi che utilizza l’interfaccia Java WorkitemUserMetadataService e distribuirlo al server AEM Forms. Rende i metadati disponibili per la selezione nel passaggio Assegna attività.
 
-Per creare un bundle OSGi con interfaccia Java, aggiungi [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar e [vasetto di granito](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) file come dipendenze esterne al progetto del bundle OSGi. Puoi utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente descrive come utilizzare Eclipse per creare un bundle OSGi:
+Per creare un bundle OSGi con interfaccia Java, aggiungi [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) e [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) file come dipendenze esterne al progetto del bundle OSGi. Puoi utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente descrive come utilizzare Eclipse per creare un bundle OSGi:
 
 1. Aprire Eclipse IDE. Passa a File > Nuovo progetto.
 

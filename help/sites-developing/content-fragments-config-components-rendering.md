@@ -18,13 +18,13 @@ ht-degree: 6%
 
 # Componenti di configurazione dei frammenti di contenuto per il rendering{#content-fragments-configuring-components-for-rendering}
 
-Ce ne sono diversi [servizi avanzati](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relative al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono farsi conoscere nel framework dei frammenti di contenuto.
+Esistono diversi [servizi avanzati](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relativi al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono farsi conoscere nel framework dei frammenti di contenuto.
 
-Questa operazione viene eseguita configurando [Servizio OSGi - Configurazione del componente Frammento di contenuto](#osgi-service-content-fragment-component-configuration).
+Questa operazione viene eseguita configurando [Servizio OSGi - Configurazione componente Frammento di contenuto](#osgi-service-content-fragment-component-configuration).
 
 >[!CAUTION]
 >
->Se non è necessario [servizi avanzati](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) come descritto di seguito, puoi ignorare questa configurazione.
+>Se non hai bisogno dei [servizi avanzati](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) descritti di seguito, puoi ignorare questa configurazione.
 
 >[!CAUTION]
 >
@@ -42,8 +42,8 @@ I servizi che richiedono la registrazione di un componente sono:
 
 * Determinare correttamente le dipendenze durante la pubblicazione (ovvero, assicurarsi che frammenti e modelli possano essere pubblicati automaticamente con una pagina se sono stati modificati dopo l’ultima pubblicazione).
 * Supporto per frammenti di contenuto nella ricerca full-text.
-* La gestione/gestione di *contenuto intermedio.*
-* La gestione/gestione di *risorse multimediali diverse.*
+* Gestione/gestione di *contenuto intermedio.*
+* Gestione di *risorse multimediali miste.*
 * Svuotamento del Dispatcher per i frammenti di riferimento (se viene ripubblicata una pagina contenente un frammento).
 * Utilizzo del rendering basato su paragrafi.
 
@@ -57,7 +57,7 @@ La configurazione deve essere associata al servizio OSGi **Configurazione del co
 
 >[!NOTE]
 >
->Consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli.
+>Per ulteriori dettagli, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Ad esempio:
 
@@ -80,7 +80,7 @@ La configurazione OSGi è:
   <tr>
    <td><strong>Proprietà di riferimento</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Nome della proprietà che contiene il riferimento al frammento; ad esempio, <code>fragmentPath</code> o <code>fileReference</code></td>
+   <td>Nome della proprietà che contiene il riferimento al frammento, ad esempio <code>fragmentPath</code> o <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Proprietà elemento/i</strong></td>
@@ -105,7 +105,7 @@ Per alcune funzionalità (ad esempio, per eseguire il rendering solo di un inter
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Una proprietà stringa che definisce l’intervallo di paragrafi da restituire se in <em>modalità di rendering di un singolo elemento</em>.</p> <p>Formato:</p>
+   <td><p>Proprietà stringa che definisce l'intervallo di paragrafi da restituire se in <em>modalità rendering elemento singolo</em>.</p> <p>Formato:</p>
     <ul>
      <li><code>1</code> o <code>1-3</code> o <code>1-3;6;7-8</code> o <code>*-3;5-*</code></li>
      <li>valutato solo se <code>paragraphScope</code> è impostato su <code>range</code></li>
@@ -113,7 +113,7 @@ Per alcune funzionalità (ad esempio, per eseguire il rendering solo di un inter
   </tr>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Una proprietà stringa che definisce come devono essere generati i paragrafi se in <em>modalità di rendering di un singolo elemento</em>.</p> <p>Valori:</p>
+   <td><p>Proprietà stringa che definisce il modo in cui devono essere generati i paragrafi se in <em>modalità rendering elemento singolo</em>.</p> <p>Valori:</p>
     <ul>
      <li><code>all</code> : per eseguire il rendering di tutti i paragrafi</li>
      <li><code>range</code> : per riprodurre l’intervallo di paragrafi fornito da <code>paragraphRange</code></li>
@@ -121,7 +121,7 @@ Per alcune funzionalità (ad esempio, per eseguire il rendering solo di un inter
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>Una proprietà booleana che definisce se le intestazioni (ad esempio, <code>h1</code>, <code>h2</code>, <code>h3</code>) vengono conteggiati come paragrafi (<code>true</code>) o meno (<code>false</code>)</td>
+   <td>Proprietà booleana che definisce se le intestazioni (ad esempio, <code>h1</code>, <code>h2</code>, <code>h3</code>) vengono conteggiate come paragrafi (<code>true</code>) o meno (<code>false</code>)</td>
   </tr>
  </tbody>
 </table>

@@ -20,22 +20,22 @@ ht-degree: 0%
 
 Per definire le configurazioni da testare, prendi in considerazione quanto segue:
 
-**Sviluppo** - Per unit test e alcuni test di integrazione.
+**Sviluppo** - Per unit test e alcuni Integration test.
 
 **Test** - Per la maggior parte dei test.
 
-**Live** - per prove di resistenza e prestazioni finali. Anche per i test di accettazione con il cliente.
+**Live** - Per le prestazioni finali e gli stress test. Anche per i test di accettazione con il cliente.
 
 Decidi quali istanze sono necessarie e dove (in genere almeno una per ogni livello di test):
 
-**Autore** : questa istanza consente agli autori di inserire e pubblicare contenuti.
+**Autore** - Questa istanza consente agli autori di inserire e pubblicare contenuti.
 
-**Pubblica** - Questa istanza presenta il sito web nel modulo pubblicato per l’accesso da parte dei visitatori.
+**Publish** - Questa istanza presenta il sito Web nel relativo modulo pubblicato per l&#39;accesso da parte dei visitatori.
 
 Testato con Dispatcher.
 
 Infine, è necessario considerare l&#39;hardware effettivo: tutti i test delle prestazioni devono essere eseguiti su un sistema il più vicino possibile all&#39;ambiente live finale. Per questo motivo, si consiglia inoltre di suddividere il lancio del progetto in:
 
-**Lancio morbido** - Disponibilità ridotta, che consente di dedicare tempo ai test delle prestazioni, alla messa a punto e all&#39;ottimizzazione in condizioni realistiche nell&#39;ambiente di produzione.
+**Lancio morbido** - Disponibilità ridotta, che consente di eseguire test delle prestazioni, ottimizzare e ottimizzare in condizioni realistiche l&#39;ambiente di produzione.
 
 **Lancio rigido** - Disponibilità completa.

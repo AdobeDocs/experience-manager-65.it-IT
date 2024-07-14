@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Configurazione della pagina di reindirizzamento{#configuring-redirect-page}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -26,9 +26,9 @@ ht-degree: 4%
 
 Gli autori dei moduli possono configurare una pagina per ogni modulo, alla quale gli utenti vengono reindirizzati dopo l&#39;invio di un modulo.
 
-1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/field-level.png) > **Contenitore modulo adattivo** e quindi fare clic su ![cmppr](assets/cmppr.png).
+1. In modalità di modifica, seleziona un componente, quindi fai clic su ![livello campo](assets/field-level.png) > **Contenitore modulo adattivo**, quindi fai clic su ![cmppr](assets/cmppr.png).
 
-1. Nella barra laterale, fai clic su **Invio**.
+1. Nella barra laterale fare clic su **Invio**.
 
 1. Immetti l’URL della pagina di reindirizzamento in Pagina di ringraziamento nella sezione Invio.
 1. Facoltativamente, in Azione di invio, per l’azione Invia a endpoint REST, puoi configurare il parametro da passare alla pagina di reindirizzamento.
@@ -37,12 +37,12 @@ Gli autori dei moduli possono configurare una pagina per ogni modulo, alla quale
 
 Configurazione pagina di reindirizzamento
 
-Gli autori dei moduli possono utilizzare i seguenti parametri passati alla pagina di ringraziamento. Per tutte le azioni di invio disponibili, `status` e `owner` i parametri vengono passati. Oltre a questi due parametri, vengono passati alcuni parametri aggiuntivi per le seguenti azioni di invio:
+Gli autori dei moduli possono utilizzare i seguenti parametri passati alla pagina di ringraziamento. Per tutte le azioni di invio disponibili, vengono passati `status` e `owner` parametri. Oltre a questi due parametri, vengono passati alcuni parametri aggiuntivi per le seguenti azioni di invio:
 
-* **Azione contenuto store** (obsoleto) : `contentPath`: viene passato il percorso del nodo nell’archivio in cui sono memorizzati i dati inviati.
+* **Azione contenuto archivio** (obsoleto): `contentPath`, il percorso del nodo nell&#39;archivio in cui sono archiviati i dati inviati, è passato.
 
-* **Azione Store PDF** (obsoleto) : `contentPath`: dei dati inviati e del percorso del nodo in cui è memorizzato il file PDF nell’archivio.
+* **Azione PDF archivio** (obsoleta): `contentPath` dei dati e del percorso inviati al nodo che memorizza il file PDF nell&#39;archivio è stato passato.
 
-* **Invia a flusso di lavoro Forms**: vengono passati i parametri di output restituiti dal flusso di lavoro dei moduli.
+* **Invia a flusso di lavoro Forms**: i parametri di output restituiti dal flusso di lavoro dei moduli sono stati passati.
 
-* **Invia all’endpoint REST**: vengono passati i parametri aggiunti per la mappatura in-field ai parametri. `status` e `owner` I parametri non vengono passati in questa azione di invio. Per ulteriori informazioni, consulta [Configurazione dell’azione di invio Invia all’endpoint REST](../../forms/using/configuring-submit-actions.md).
+* **Invia all&#39;endpoint REST**: i parametri aggiunti per la mappatura interna al campo al parametro vengono passati. Parametri `status` e `owner` non passati in questa azione di invio. Per ulteriori informazioni, vedere [Configurazione dell&#39;azione di invio Invia all&#39;endpoint REST](../../forms/using/configuring-submit-actions.md).

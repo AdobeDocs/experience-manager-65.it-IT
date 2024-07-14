@@ -26,7 +26,7 @@ We.Gov è un&#39;organizzazione gestita dallo stato che consente ai genitori ado
 * Dipartimento della Marina
 * Agenzia per la protezione dell&#39;ambiente
 
-Per maggiori informazioni sulla legge sulla libertà d&#39;informazione, vedi [https://www.foia.gov/](https://www.foia.gov).
+Per ulteriori informazioni sul Freedom Of Information Act, vedere [https://www.foia.gov/](https://www.foia.gov).
 
 Lo scenario coinvolge i seguenti utenti tipo:
 
@@ -42,18 +42,18 @@ Ai sensi del Freedom of Information Act, Sarah richiede una copia dei registri d
 
 ### Vedi tu stesso {#see-it-yourself}
 
-Nel browser, aprire `https://<hostname>:<PublishPort>/wegov`. Nel sito We.Gov, selezionare Applicazioni > Tutte le applicazioni. Nella pagina Tutte le applicazioni, selezionare Applica in Applicazione per richiesta FOIA.
+Nel browser aprire `https://<hostname>:<PublishPort>/wegov`. Nel sito We.Gov, selezionare Applicazioni > Tutte le applicazioni. Nella pagina Tutte le applicazioni, selezionare Applica in Applicazione per richiesta FOIA.
 
 ## Sarah inizia la sua richiesta di informazioni sotto FOIA {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah fa clic su **Applica** e nella pagina del modulo di richiesta del Freedom of Information Act, Sarah inserisce informazioni tra cui:
+Sarah fa clic su **Applica** e nella pagina del modulo di richiesta Freedom of Information Act immette le seguenti informazioni:
 
 * **Agenzia:** Sarah specifica l&#39;agenzia a cui è stata indirizzata la richiesta come Department of Justice - Office of Information Policy.
 
-* **Pagamento fino a**: Sarah si dichiara disposta a pagare fino a 100 dollari per le spese di stampa e di spedizione.
-* **Descrivi la richiesta in dettaglio**: Sarah specifica &quot;Richiesta di copia dei registri dei casi relativi all’amministrazione per figli e famiglie per gli anni fiscali dal 2013 al 2016&quot;.
+* **Pagherà fino a**: Sarah specifica di essere disposta a pagare fino a 100 USD per le spese di stampa e di spedizione.
+* **Descrivere la richiesta in dettaglio**: Sarah specifica &quot;Richiesta di copia dei registri dei casi relativi all&#39;amministrazione per figli e famiglie per gli anni fiscali dal 2013 al 2016&quot;.
 
-![Richiesta di copia dei registri dei casi relativi all’amministrazione per bambini e famiglie per gli anni fiscali dal 2013 al 2016](assets/sarahfiosform.png)
+![Richiesta della copia dei registri dei casi relativi all&#39;amministrazione per figli e famiglie per gli anni fiscali dal 2013 al 2016](assets/sarahfiosform.png)
 
 Richiesta di copia dei registri dei casi relativi all’amministrazione per bambini e famiglie per gli anni fiscali dal 2013 al 2016
 
@@ -73,7 +73,7 @@ Quando Sarah compila e invia l&#39;applicazione FOIA, un record dell&#39;applica
 
 ### Vedi tu stesso {#see-it-yourself-1}
 
-Puoi accedere alla casella in entrata AEM all’indirizzo https://&lt;***nome host***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata dell’AEM, utilizzando jjacobs/password come nome utente/password per John Jacobs, e controlla l’applicazione FOIA. Per informazioni sull’utilizzo della Casella in entrata AEM per le attività di flusso di lavoro incentrate sui moduli, consulta [Gestione delle applicazioni e delle attività di Forms nella casella in entrata AEM](/help/forms/using/manage-applications-inbox.md).
+Puoi accedere alla casella in entrata AEM all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata dell’AEM, utilizzando jjacobs/password come nome utente/password per John Jacobs, e controlla l’applicazione FOIA. Per informazioni sull&#39;utilizzo della Posta in arrivo AEM per le attività del flusso di lavoro incentrate sui moduli, vedere [Gestione delle applicazioni e delle attività Forms nella Posta in arrivo AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -81,7 +81,7 @@ John Jacobs può visualizzare, approvare o rifiutare l’applicazione dal dashbo
 
 ![johnjacobstaskdetail-1](assets/johnjacobstaskdetail-1.png)
 
-### <strong>Sarah riceve un’e-mail di conferma</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah riceve un&#39;e-mail di conferma</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 Dopo che John Jacobs ha approvato l&#39;applicazione, Sarah riceve un&#39;e-mail di conferma dal sito We.Gov. Sarah viene informata delle tariffe e del tempo necessario per elaborare la sua domanda. L’e-mail include anche i dettagli dell’e-mail e del telefono che Sarah può contattare per ottenere aggiornamenti sulla sua applicazione.
 
@@ -99,7 +99,7 @@ Quando John Jacobs approva la richiesta FOIA, viene creato un PDF o un documento
 
 ### Vedi tu stesso {#see-for-yourself}
 
-Puoi accedere alla casella in entrata AEM all’indirizzo https://&lt;***nome host***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata dell’AEM utilizzando grios/password come nome utente/password per Gloria Rios e controlla la richiesta FOIS.
+Puoi accedere alla casella in entrata AEM all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata dell’AEM utilizzando grios/password come nome utente/password per Gloria Rios e controlla la richiesta FOIS.
 
 Gloria apre la richiesta ed esamina i dettagli della richiesta FOIA. Dopo aver esaminato i dettagli della richiesta e verificato la fattibilità di fornire i documenti richiesti, Gloria approva la richiesta.
 

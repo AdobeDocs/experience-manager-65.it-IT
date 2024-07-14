@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
-Questo tutorial è un passaggio del [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md) serie. L’Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
+Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md). L’Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
 ## Informazioni sull’esercitazione {#about-the-tutorial}
 
 È possibile utilizzare le regole per aggiungere interattività, logica di business e convalide intelligenti a un modulo adattivo. I moduli adattivi hanno un editor di regole integrato. L’editor di regole fornisce una funzionalità di trascinamento della selezione, simile alle visite guidate. Il metodo di trascinamento della selezione è il metodo più rapido e semplice per creare regole. L’editor di regole fornisce anche una finestra di codice per gli utenti interessati a testare le loro abilità di codifica o a portare le regole a un livello successivo.
 
-Per ulteriori informazioni sull’editor delle regole, consulta [Editor regole di Forms adattivo](/help/forms/using/rule-editor.md).
+Per ulteriori informazioni sull&#39;editor di regole, consulta [Editor di regole di Forms adattivo](/help/forms/using/rule-editor.md).
 
 Entro la fine dell’esercitazione imparerai a creare regole per:
 
@@ -36,7 +36,7 @@ Le immagini GIF interattive alla fine di ogni sezione dell&#39;esercitazione con
 
 ## Passaggio 1: recuperare un record cliente dal database {#retrieve-customer-record}
 
-È stato creato un modello dati modulo seguendo la [crea modello dati modulo](/help/forms/using/create-form-data-model.md) articolo. Ora è possibile utilizzare l&#39;editor di regole per richiamare i servizi Forms Data Model per recuperare e aggiungere informazioni al database.
+Hai creato un modello dati modulo seguendo l&#39;articolo [Crea modello dati modulo](/help/forms/using/create-form-data-model.md). Ora è possibile utilizzare l&#39;editor di regole per richiamare i servizi Forms Data Model per recuperare e aggiungere informazioni al database.
 
 A ogni cliente viene assegnato un numero ID cliente univoco, che consente di identificare i dati rilevanti del cliente in un database. La procedura seguente utilizza l’ID cliente per recuperare informazioni dal database:
 
@@ -44,59 +44,59 @@ A ogni cliente viene assegnato un numero ID cliente univoco, che consente di ide
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Seleziona la **[!UICONTROL ID cliente]** e selezionare il **[!UICONTROL Modifica regole]** icona. Viene visualizzata la finestra Editor regole.
-1. Seleziona la **[!UICONTROL + Crea]** per aggiungere una regola. Viene aperto l&#39;Editor visivo.
+1. Seleziona il campo **[!UICONTROL ID cliente]** e l&#39;icona **[!UICONTROL Modifica regole]**. Viene visualizzata la finestra Editor regole.
+1. Seleziona l&#39;icona **[!UICONTROL + Crea]** per aggiungere una regola. Viene aperto l&#39;Editor visivo.
 
-   Nell&#39;editor visivo, il **[!UICONTROL QUANDO]** è selezionata per impostazione predefinita. Inoltre, l&#39;oggetto modulo (in questo caso, **[!UICONTROL ID cliente]**) da dove hai avviato l&#39;editor di regole è specificato in **[!UICONTROL QUANDO]** dichiarazione.
+   Nell&#39;editor visivo, l&#39;istruzione **[!UICONTROL WHEN]** è selezionata per impostazione predefinita. Inoltre, l&#39;oggetto modulo (in questo caso, **[!UICONTROL ID cliente]**) da cui hai avviato l&#39;editor di regole è specificato nell&#39;istruzione **[!UICONTROL WHEN]**.
 
-1. Seleziona la **[!UICONTROL Seleziona stato]** a discesa e selezionare **[!UICONTROL è stato modificato]**.
+1. Seleziona l&#39;elenco a discesa **[!UICONTROL Seleziona stato]** e seleziona **[!UICONTROL è cambiato]**.
 
    ![quando customeridischanged](assets/whencustomeridischanged.png)
 
-1. In **[!UICONTROL THEN]** istruzione, seleziona **[!UICONTROL Richiama servizio]** dal **[!UICONTROL Seleziona azione]** a discesa.
-1. Seleziona la **[!UICONTROL Recupera indirizzo di spedizione]** servizio da **[!UICONTROL Seleziona]** a discesa.
-1. Trascina la selezione **[!UICONTROL ID cliente]** dalla scheda Oggetti modulo al campo **[!UICONTROL Rilascia l&#39;oggetto o seleziona qui]** campo in **[!UICONTROL INPUT]** casella.
+1. Nell&#39;istruzione **[!UICONTROL THEN]**, selezionare **[!UICONTROL Richiama servizio]** dal menu a discesa **[!UICONTROL Seleziona azione]**.
+1. Selezionare il servizio **[!UICONTROL Recupera indirizzo di spedizione]** dal menu a discesa **[!UICONTROL Seleziona]**.
+1. Trascina il campo **[!UICONTROL ID cliente]** dalla scheda Oggetti modulo all&#39;oggetto **[!UICONTROL Rilascia o seleziona qui]** nella casella **[!UICONTROL INPUT]**.
 
    ![dropobjectstoinputfield-recuperedata](assets/dropobjectstoinputfield-retrievedata.png)
 
-1. Trascina la selezione **[!UICONTROL ID cliente, nome, indirizzo di spedizione, stato e CAP]** dalla scheda Oggetti modulo al campo **[!UICONTROL Rilascia l&#39;oggetto o seleziona qui]** campo in **[!UICONTROL OUTPUT]** casella.
+1. Trascinare il campo **[!UICONTROL ID cliente, nome, indirizzo di spedizione, stato e CAP]** dalla scheda Oggetti modulo al campo **[!UICONTROL Rilascia oggetto o seleziona qui]** nella casella **[!UICONTROL OUTPUT]**.
 
    ![dropobjectstooutputfield-recuperedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell’editor delle regole, seleziona **[!UICONTROL Chiudi]**.
+   Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
 
-1. Visualizza l’anteprima del modulo adattivo. Immetti un ID in **[!UICONTROL ID cliente]** campo. Il modulo ora può recuperare i dettagli del cliente dal database.
+1. Visualizza l’anteprima del modulo adattivo. Immetti un ID nel campo **[!UICONTROL ID cliente]**. Il modulo ora può recuperare i dettagli del cliente dal database.
 
-   ![retrieve-information](assets/retrieve-information.gif)
+   ![informazioni-recupero](assets/retrieve-information.gif)
 
 ## Passaggio 2: aggiungere l&#39;indirizzo del cliente aggiornato al database {#updated-customer-address}
 
 Dopo aver recuperato i dettagli del cliente dal database, puoi aggiornare l’indirizzo di spedizione, lo stato e il codice postale. La procedura seguente richiama un servizio del modello dati modulo per aggiornare le informazioni sul cliente nel database:
 
-1. Seleziona la **[!UICONTROL Invia]** e selezionare il **[!UICONTROL Modifica regole]** icona. Viene visualizzata la finestra Editor regole.
-1. Seleziona la **[!UICONTROL Submit - Click]** e seleziona la **[!UICONTROL Modifica]** icona. Vengono visualizzate le opzioni per modificare la regola di invio.
+1. Seleziona il campo **[!UICONTROL Invia]** e l&#39;icona **[!UICONTROL Modifica regole]**. Viene visualizzata la finestra Editor regole.
+1. Seleziona la regola **[!UICONTROL Invia - Fai clic su]** e seleziona l&#39;icona **[!UICONTROL Modifica]**. Vengono visualizzate le opzioni per modificare la regola di invio.
 
    ![submit-rule](assets/submit-rule.png)
 
-   Nell’opzione WHEN, il comando **[!UICONTROL Invia]** e **[!UICONTROL ha fatto clic su]** opzioni già selezionate.
+   Nell&#39;opzione WHEN sono già selezionate le opzioni **[!UICONTROL Invia]** e **[!UICONTROL selezionate]**.
 
-   ![invio su cui si fa clic](assets/submit-is-clicked.png)
+   ![invia-è-cliccato](assets/submit-is-clicked.png)
 
-1. In **[!UICONTROL THEN]** , seleziona l&#39;opzione **[!UICONTROL + Aggiungi istruzione]** opzione. Seleziona **[!UICONTROL Richiama servizio]** dal **[!UICONTROL Seleziona azione]** a discesa.
-1. Seleziona la **[!UICONTROL Aggiorna indirizzo di spedizione]** servizio da **[!UICONTROL Seleziona]** a discesa.
+1. Nell&#39;opzione **[!UICONTROL THEN]**, selezionare l&#39;opzione **[!UICONTROL + Aggiungi istruzione]**. Selezionare **[!UICONTROL Richiama servizio]** dal menu a discesa **[!UICONTROL Seleziona azione]**.
+1. Selezionare il servizio **[!UICONTROL Aggiorna indirizzo di spedizione]** dal menu a discesa **[!UICONTROL Seleziona]**.
 
-   ![update-shipping-address](assets/update-shipping-address.png)
+   ![indirizzo-spedizione-aggiornamento](assets/update-shipping-address.png)
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. Trascina la selezione **[!UICONTROL Indirizzo di spedizione, stato e CAP]** campo da [!UICONTROL Oggetti modulo] al corrispondente nome di tabella .property (ad esempio, customerdetails .shippingAddress) del **[!UICONTROL Rilascia l&#39;oggetto o seleziona qui]** campo in **[!UICONTROL INPUT]** casella. Tutti i campi con prefisso tablename (ad esempio, customerdetails in this use case) fungono da dati di input per il servizio di aggiornamento. Tutto il contenuto fornito in questi campi viene aggiornato nell’origine dati.
+1. Trascinare e rilasciare il campo **[!UICONTROL Indirizzo di spedizione, Stato e CAP]** dalla scheda [!UICONTROL Oggetti modulo] alla proprietà .nome tabella corrispondente (ad esempio, customerdetails.shippingAddress) dell&#39;oggetto **[!UICONTROL Rilasciare o selezionare qui]** nella casella **[!UICONTROL INPUT]**. Tutti i campi con prefisso tablename (ad esempio, customerdetails in this use case) fungono da dati di input per il servizio di aggiornamento. Tutto il contenuto fornito in questi campi viene aggiornato nell’origine dati.
 
    >[!NOTE]
    >
-   >Non trascinare **[!UICONTROL Nome]** e **[!UICONTROL ID cliente]** campi corrispondenti a tablename.property (ad esempio, customerdetails.name). Consente di evitare di aggiornare il nome e l’ID del cliente per errore.
+   >Non trascinare i campi **[!UICONTROL Nome]** e **[!UICONTROL ID cliente]** nella proprietà tablename.property corrispondente, ad esempio customerdetails.name. Consente di evitare di aggiornare il nome e l’ID del cliente per errore.
 
-1. Trascina la selezione **[!UICONTROL ID cliente]** campo da [!UICONTROL Oggetti modulo] scheda al campo id nella sezione **[!UICONTROL INPUT]** casella. I campi senza un nome di tabella preceduto (ad esempio, customerdetails in questo caso d’uso) fungono da parametro di ricerca per il servizio di aggiornamento. Il **[!UICONTROL id]** in questo caso d’uso identifica in modo univoco un record nel  **customerdetails**  tabella.
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell’editor delle regole, seleziona **[!UICONTROL Chiudi]**.
+1. Trascina il campo **[!UICONTROL ID cliente]** dalla scheda [!UICONTROL Oggetti modulo] al campo ID nella casella **[!UICONTROL INPUT]**. I campi senza un nome di tabella preceduto (ad esempio, customerdetails in questo caso d’uso) fungono da parametro di ricerca per il servizio di aggiornamento. Il campo **[!UICONTROL id]** in questo caso d&#39;uso identifica in modo univoco un record nella tabella **customerdetails**.
+1. Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
 1. Visualizza l’anteprima del modulo adattivo. Recupera i dettagli di un cliente, aggiorna l’indirizzo di spedizione e invia il modulo. Quando recuperi nuovamente i dettagli dello stesso cliente, viene visualizzato l’indirizzo di spedizione aggiornato.
 
 ## Passaggio 3: (sezione Bonus) Utilizza l’editor di codice per eseguire convalide e visualizzare messaggi di errore {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -105,20 +105,20 @@ Eseguire la convalida del modulo per verificare che i dati immessi nel modulo si
 
 I moduli adattivi forniscono diversi componenti con convalide incorporate, ad esempio e-mail e campi numerici che puoi utilizzare per casi d’uso comuni. Utilizza l’editor di regole per i casi d’uso avanzati, ad esempio, per visualizzare un messaggio di errore quando il database restituisce record zero (0) (nessun record).
 
-Nella procedura seguente viene illustrato come creare una regola per visualizzare un messaggio di errore se l&#39;ID cliente immesso nel modulo non esiste nel database. La regola porta anche lo stato attivo su e ripristina il **[!UICONTROL ID cliente]** campo. La regola utilizza [API dataIntegrationUtils del servizio modello dati modulo](/help/forms/using/invoke-form-data-model-services.md) per verificare se l’ID cliente esiste nel database.
+Nella procedura seguente viene illustrato come creare una regola per visualizzare un messaggio di errore se l&#39;ID cliente immesso nel modulo non esiste nel database. La regola porta inoltre lo stato attivo al campo **[!UICONTROL ID cliente]** e lo reimposta. La regola utilizza [l&#39;API dataIntegrationUtils del servizio modello dati modulo](/help/forms/using/invoke-form-data-model-services.md) per verificare se l&#39;ID cliente esiste nel database.
 
-1. Seleziona la **[!UICONTROL ID cliente]** e selezionare il `Edit Rules` icona. Il [!UICONTROL Editor regole] viene visualizzata la finestra.
-1. Seleziona la **[!UICONTROL + Crea]** per aggiungere una regola. Viene aperto l&#39;Editor visivo.
+1. Selezionare il campo **[!UICONTROL ID cliente]** e l&#39;icona `Edit Rules`. Viene visualizzata la finestra [!UICONTROL Editor regole].
+1. Seleziona l&#39;icona **[!UICONTROL + Crea]** per aggiungere una regola. Viene aperto l&#39;Editor visivo.
 
-   Nell&#39;editor visivo, il **[!UICONTROL QUANDO]** è selezionata per impostazione predefinita. Inoltre, l&#39;oggetto modulo (in questo caso, **[!UICONTROL ID cliente]**) da dove hai avviato l&#39;editor di regole è specificato in **[!UICONTROL QUANDO]** dichiarazione.
+   Nell&#39;editor visivo, l&#39;istruzione **[!UICONTROL WHEN]** è selezionata per impostazione predefinita. Inoltre, l&#39;oggetto modulo (in questo caso, **[!UICONTROL ID cliente]**) da cui hai avviato l&#39;editor di regole è specificato nell&#39;istruzione **[!UICONTROL WHEN]**.
 
-1. Seleziona la **[!UICONTROL Seleziona stato]** a discesa e selezionare **[!UICONTROL è stato modificato]**.
+1. Seleziona l&#39;elenco a discesa **[!UICONTROL Seleziona stato]** e seleziona **[!UICONTROL è cambiato]**.
 
    ![quando customeridischanged](assets/whencustomeridischanged.png)
 
-   In **[!UICONTROL THEN]** istruzione, seleziona **[!UICONTROL Richiama servizio]** dal **[!UICONTROL Seleziona azione]** a discesa.
+   Nell&#39;istruzione **[!UICONTROL THEN]**, selezionare **[!UICONTROL Richiama servizio]** dal menu a discesa **[!UICONTROL Seleziona azione]**.
 
-1. Passa da **[!UICONTROL Editor visivo]** a **[!UICONTROL Editor di codice]**. Il comando dell&#39;interruttore si trova sul lato destro della finestra. Viene visualizzato l&#39;Editor di codice, con un codice simile al seguente:
+1. Passare da **[!UICONTROL Editor visivo]** a **[!UICONTROL Editor di codice]**. Il comando dell&#39;interruttore si trova sul lato destro della finestra. Viene visualizzato l&#39;Editor di codice, con un codice simile al seguente:
 
    ![editor di codice](assets/code-editor.png)
 
@@ -130,7 +130,7 @@ Nella procedura seguente viene illustrato come creare una regola per visualizzar
    };
    ```
 
-1. Sostituisci il `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` sezione con il seguente codice:
+1. Sostituisci la sezione `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` con il seguente codice:
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {

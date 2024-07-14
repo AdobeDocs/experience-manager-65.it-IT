@@ -245,7 +245,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Prima di iniziare con le query sul contenuto è necessario:
 
 * Abilitare l’endpoint 
-   * Usa Strumenti > Risorse > GraphQL
+   * Usa Strumenti > Assets > GraphQL.
    * [Abilitazione dell’endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * Accedere a GraphiQL (se necessario)
@@ -272,7 +272,7 @@ Vengono utilizzati i modelli di frammenti:
 
 ### Dove testare le query {#where-to-test-your-queries}
 
-Le query possono essere immesse in [Interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), ad esempio, in:
+Le query possono essere immesse nell&#39;interfaccia [GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), ad esempio in:
 
 * `http://localhost:4502/aem/graphiql.html`
 

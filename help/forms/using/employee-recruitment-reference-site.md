@@ -29,14 +29,14 @@ We.Finance è un&#39;organizzazione che consente ai candidati di richiedere un i
 
 >[!NOTE]
 >
->I casi di utilizzo della selezione dei dipendenti sono disponibili sia nei siti di riferimento We.Finance che in quelli di We.Gov. Gli esempi, le immagini e le descrizioni utilizzati nelle procedure dettagliate utilizzano il sito di riferimento We.Finance. Tuttavia, puoi eseguire questi casi d’uso e rivedere gli artefatti anche utilizzando We.Gov. Per eseguire questa operazione, sostituisci **we-finance** con **we-gov** negli URL menzionati.
+>I casi di utilizzo della selezione dei dipendenti sono disponibili sia nei siti di riferimento We.Finance che in quelli di We.Gov. Gli esempi, le immagini e le descrizioni utilizzati nelle procedure dettagliate utilizzano il sito di riferimento We.Finance. Tuttavia, puoi eseguire questi casi d’uso e rivedere gli artefatti anche utilizzando We.Gov. Per farlo, sostituisci **we-finance** con **we-gov** negli URL menzionati.
 
 ### Modelli di flusso di lavoro {#workflow-models-involved}
 
 Il caso di utilizzo della selezione dei dipendenti prevede due flussi di lavoro:
 
 * Prima del colloquio: finanziamo il flusso di lavoro di selezione dei dipendenti
-* Dopo il colloquio - Flusso di lavoro di post-colloquio per la selezione di dipendenti
+* Dopo il colloquio: finanziamo il flusso di lavoro di selezione dei dipendenti Post
 
 Questi flussi di lavoro sono creati in AEM e si trovano all’indirizzo:
 
@@ -48,9 +48,9 @@ Di seguito è riportato il modello del flusso di lavoro di selezione dei dipende
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
-#### Flusso di lavoro di post-colloquio per la selezione di dipendenti {#we-finance-employee-recruiting-post-interview-workflow}
+#### Flusso di lavoro Interviste Post per selezione dipendenti {#we-finance-employee-recruiting-post-interview-workflow}
 
-Di seguito è riportato il modello del flusso di lavoro di selezione post colloquio per i dipendenti di We Finance illustrato in questo documento.
+Di seguito è riportato il modello del flusso di lavoro di selezione dei dipendenti di We Finance Post Interview, illustrato in questo documento.
 
 ![we-finance-employee-recruiting-post-intervista-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
@@ -77,15 +77,15 @@ Pagina carriera We.Finance
 
 Sarah fa clic su Applica per la registrazione di un lavoro. Verrà aperto il modulo di richiesta di lavoro. Essa compila tutti i dati contenuti nella domanda e la presenta.
 
-![job-application-form](assets/job-application-form.png)
+![modulo-applicazione-processo](assets/job-application-form.png)
 
 ### Come funziona {#how-it-works}
 
-La home page di We.Finance e la pagina relativa alla carriera sono pagine AEM Sites. La pagina Carriera incorpora un modulo adattivo, che utilizza un pannello ripetibile per recuperare le aperture di lavoro utilizzando un servizio ed elencarle sulla pagina. Puoi rivedere il modulo adattivo all’indirizzo `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+La home page di We.Finance e la pagina relativa alla carriera sono pagine AEM Sites. La pagina Carriera incorpora un modulo adattivo, che utilizza un pannello ripetibile per recuperare le aperture di lavoro utilizzando un servizio ed elencarle sulla pagina. È possibile rivedere il modulo adattivo in `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
 
 ### Vedi tu stesso {#see-it-yourself}
 
-Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` e fai clic su **[!UICONTROL Carriera]**. Clic **[!UICONTROL Ricerca]** in modo da compilare l&#39;elenco dei job e quindi fare clic su **[!UICONTROL Applica]** per un lavoro. Compila i dettagli nel modulo e invia la domanda.
+Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` e fai clic su **[!UICONTROL Carriera]**. Fare clic su **[!UICONTROL Cerca]** in modo da compilare l&#39;elenco dei processi, quindi fare clic su **[!UICONTROL Applica]** per un processo. Compila i dettagli nel modulo e invia la domanda.
 
 Assicurarsi di specificare un ID e-mail valido nell&#39;applicazione, in quanto tutte le comunicazioni effettuate tramite questa procedura dettagliata vengono inviate all&#39;ID e-mail specificato.
 
@@ -97,7 +97,7 @@ L&#39;organizzazione riceve la candidatura di lavoro inviata da Sarah. A John Ja
 
 Casella in entrata AEM di John
 
-![candidate-shortlist](assets/candidate-shortlist.png)
+![elenco candidati](assets/candidate-shortlist.png)
 
 John Jacobs ha selezionato il profilo di Sarah Rose per la selezione del responsabile dell&#39;assunzione
 
@@ -107,7 +107,7 @@ L’azione di invio nel modulo della candidatura attiva un flusso di lavoro che 
 
 ### Vedi tu stesso {#see-it-yourself-1}
 
-Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`e accedi utilizzando jjacobs/password come nome utente/password per John Jacobs. Aprire il task Revisione profilo candidato e selezionare il candidato.
+Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e accedi utilizzando jjacobs/password come nome utente/password per John Jacobs. Aprire il task Revisione profilo candidato e selezionare il candidato.
 
 ## Gloria esamina la domanda e approva il candidato per un colloquio {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
@@ -209,7 +209,7 @@ John Jacobs vede la richiesta di controllo dei precedenti personali nella sua ca
 
 Casella in entrata AEM di John Jacobs
 
-![johnjacobsbackground checkgoahead](assets/johnjacobsbackgroundcheckgoahead.png)
+![johnjacobsbackgroundcheckgoahead](assets/johnjacobsbackgroundcheckgoahead.png)
 
 Dopo aver eseguito il controllo dello sfondo, John Jacobs fa clic su Vai avanti
 

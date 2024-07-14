@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Avviso sulla fine del ciclo di vita dei visualizzatori di Flash{#flash-viewers-end-of-life-notice}
 
-*A partire dal 31 gennaio 2017, Adobe Dynamic Media Classic (precedentemente Scene7) ha ufficialmente terminato il supporto per la piattaforma di visualizzazione del Flash.*
+*A partire dal 31 gennaio 2017, Adobe Dynamic Media Classic (precedentemente Scene7) ha ufficialmente terminato il supporto per la piattaforma visualizzatore di Flash.*
 
 <!-- *For more information about this important change, see the following FAQ website:*
 

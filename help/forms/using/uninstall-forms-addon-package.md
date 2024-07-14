@@ -1,6 +1,6 @@
 ---
-title: Questo articolo include l’istruzione di disinstallare il pacchetto del componente aggiuntivo Forms utilizzando Gestione pacchetti CRX.
-description: Scopri come disinstallare il pacchetto del componente aggiuntivo Forms utilizzando Gestione pacchetti CRX.
+title: Questo articolo include le istruzioni per disinstallare il pacchetto del componente aggiuntivo Forms tramite Gestione pacchetti CRX.
+description: Scopri i passaggi per disinstallare il pacchetto del componente aggiuntivo Forms utilizzando Gestione pacchetti CRX.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
@@ -26,33 +26,33 @@ Assicurati di eseguire il backup per evitare perdite di dati.
 
 Per disinstallare il pacchetto del componente aggiuntivo AEM Forms, effettua le seguenti operazioni:
 
-1. **Disinstalla il pacchetto del componente aggiuntivo AEM Forms:**
-   1. Accedi a `http://[host]:[port]/crx/de/index.jsp`.
+1. **Disinstallare il pacchetto del componente aggiuntivo AEM Forms:**
+   1. Passare a `http://[host]:[port]/crx/de/index.jsp`.
    1. Individuare e disinstallare `AEM Forms add-on package`.
 
    ![Disinstalla pacchetto](/help/forms/using/assets/uninstall-aem-forms-package.png)
 
 1. **Elimina la cartella nativa da CRXDE:**
-   1. Accedi a `http://[host]:[port]/crx/de/index.jsp`.
-   1. Vai a `/libs/fd/native/install` ed eliminare `native` in CRXDE.
+   1. Passare a `http://[host]:[port]/crx/de/index.jsp`.
+   1. Vai a `/libs/fd/native/install` ed elimina la cartella `native` in CRXDE.
 
       ![Elimina nodo nativo da CRX/de](/help/forms/using/assets/native-install-folder-crxde.png)
    1. Salva le modifiche.
 
-1. **Arresta l’SDK di AEM Forms:**
+1. **Arrestare l&#39;SDK di AEM Forms:**
    1. Arresta l’istanza dell’SDK AEM Forms utilizzando il comando &quot;Ctrl + C&quot;.
 
 1. **Verifica la presenza di elementi di base e installa le cartelle nella cartella crx-quickstart**
-   1. Accedi a `..author\crx-quickstart` nell’istanza SDK di AEM Forms.
-   1. Cerca cartelle denominate `bedrock` e `install`.
-Se vengono trovati, assicurati che vengano eliminati dal `crx-quickstart` nell’istanza SDK di AEM Forms.
+   1. Passa alla cartella `..author\crx-quickstart` nell&#39;istanza SDK di AEM Forms.
+   1. Cercare le cartelle con nome `bedrock` e `install`.
+Se vengono trovati, assicurati che vengano eliminati dalla cartella `crx-quickstart` nell&#39;istanza SDK di AEM Forms.
 
    >[!NOTE]
    >
-   > Il `bedrock` La cartella viene creata nuovamente automaticamente al riavvio dell’istanza SDK di AEM Forms.
+   > La cartella `bedrock` viene creata nuovamente automaticamente al riavvio dell&#39;istanza dell&#39;SDK AEM Forms.
 
-1. **Riavvia l’istanza dell’AEM:**
-   1. Una volta completati tutti i passaggi precedenti, [riavviare l&#39;istanza dell&#39;SDK AEM Forms](/help/forms/using/restart-aem-sdk.md).
+1. **Riavviare l&#39;istanza AEM:**
+   1. Una volta completati tutti i passaggi precedenti, [riavvia l&#39;istanza SDK di AEM Forms](/help/forms/using/restart-aem-sdk.md).
 
 
 

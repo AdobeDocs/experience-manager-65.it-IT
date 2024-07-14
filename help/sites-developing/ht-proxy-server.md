@@ -43,19 +43,19 @@ Avvia il server dalla riga di comando:
 
 `<host>`
 
-Questo è l’indirizzo host dell’istanza CRX a cui desideri connetterti. Se l&#39;istanza si trova nel computer locale, `localhost`.
+Questo è l&#39;indirizzo host dell&#39;istanza di CRX a cui desideri connetterti. Se l&#39;istanza si trova nel computer locale, è `localhost`.
 
 `<remoteport>`
 
-Porta host dell&#39;istanza CRX di destinazione. Ad esempio, l’impostazione predefinita di una nuova installazione AEM è **`4502`** e l’impostazione predefinita per una nuova istanza di authoring AEM è `4502`.
+Porta host dell&#39;istanza CRX di destinazione. Ad esempio, il valore predefinito di una nuova installazione AEM è **`4502`** e il valore predefinito per una nuova istanza di creazione AEM è `4502`.
 
 `<localport>`
 
-Questa è la porta del computer locale che desideri connettere per accedere all’istanza CRX tramite il proxy.
+Questa è la porta del computer locale che desideri connettere per accedere all’istanza di CRX tramite il proxy.
 
 **Opzioni**
 
-`-q` (modalità silenziosa)
+`-q` (modalità non interattiva)
 
 Non scrive l&#39;output nella finestra della console. Utilizzare questa opzione se non si desidera rallentare la connessione o se si registra l&#39;output in un file (vedere l&#39;opzione -logfile ).
 
@@ -63,17 +63,17 @@ Non scrive l&#39;output nella finestra della console. Utilizzare questa opzione 
 
 Se stai cercando combinazioni di byte specifiche nel traffico, abilita la modalità binaria. L’output conterrà quindi l’output esadecimale e di caratteri.
 
-`-t` (voci di registro timestamp)
+`-t` (voci del registro timestamp)
 
 Aggiunge una marca temporale a ciascun output del registro. La marca temporale è in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzalo per individuare gli eventi che si sono verificati in un momento specifico se utilizzi il server proxy per un periodo di tempo più lungo.
 
-`-logfile <filename>`(scrittura su file di log)
+`-logfile <filename>`(scrittura nel file di log)
 
 Scrive la conversazione client-server in un file di log. Questo parametro funziona anche in modalità silenziosa.
 
 **`-i <numIndentions>`**(aggiungi rientro)
 
-Per una migliore leggibilità, a ogni connessione attiva viene applicato un rientro. Il valore predefinito è 16 livelli. Questa funzione è stata introdotta con `proxy.jar version 1.16`.
+Per una migliore leggibilità, a ogni connessione attiva viene applicato un rientro. Il valore predefinito è 16 livelli. Questa funzionalità è stata introdotta con `proxy.jar version 1.16`.
 
 ### Formato registro {#log-format}
 
@@ -88,7 +88,7 @@ Ad esempio, una richiesta per una pagina Web può avere il seguente aspetto:
 * C significa che questa voce proviene dal client (si tratta di una richiesta per una pagina Web)
 * 0 è il numero di connessione (il contatore di connessione inizia da 0)
 * #00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
-* `[GET <?>]` è il contenuto della richiesta, nell’esempio una delle intestazioni HTTP (url).
+* `[GET <?>]` è il contenuto della richiesta, nell&#39;esempio una delle intestazioni HTTP (url).
 
 Quando una connessione viene chiusa, vengono registrate le seguenti informazioni:
 
@@ -97,7 +97,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Mostra il numero di byte passati tra client ( `C`) e il server ( `S`) alla sesta connessione e alla velocità media.
+Mostra il numero di byte passati tra il client ( `C`) e il server ( `S`) alla sesta connessione e alla velocità media.
 
 **Esempio di output del registro**
 
@@ -127,11 +127,11 @@ Il contenuto di `test.html` è:
 </html>
 ```
 
-Supponendo che l’istanza dell’AEM sia in esecuzione su `localhost:4502`, il proxy viene avviato in questo modo:
+Se l&#39;istanza AEM è in esecuzione su `localhost:4502`, il proxy viene avviato come segue:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-È ora possibile accedere all’istanza CQ/CRX tramite il proxy in `localhost:4444` e tutte le comunicazioni effettuate tramite questa porta sono registrate a `test.log`.
+È ora possibile accedere all&#39;istanza di CQ/CRX tramite il proxy in `localhost:4444` e tutte le comunicazioni tramite questa porta sono registrate in `test.log`.
 
 Se ora guardi l’output del proxy, puoi vedere l’interazione tra il browser e l’istanza dell’AEM.
 
@@ -146,7 +146,7 @@ Ora apri un browser e accedi alla pagina di prova:
 
 `http://localhost:4444/content/test.html`
 
-E vedete che il browser crea un `GET` richiesta per la pagina:
+Il browser effettua una richiesta `GET` per la pagina:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -163,7 +163,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-L’istanza AEM risponde con il contenuto del file `test.html`:
+L&#39;istanza AEM risponde con il contenuto del file `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -189,7 +189,7 @@ S-0-#000319 -> [</html>]
 
 I seguenti scenari illustrano alcuni degli scopi per i quali è possibile utilizzare il server proxy:
 
-**Verifica la presenza di cookie e relativi valori**
+**Verifica cookie e relativi valori**
 
 L’esempio di voce di registro seguente mostra tutti i cookie e i relativi valori inviati dal client alla sesta connessione aperta dall’avvio del proxy:
 
@@ -218,7 +218,7 @@ Per verificare se keep-alive funziona:
 
 **Ricerca di richieste perse**
 
-Se perdi le richieste in un’impostazione server complessa, ad esempio con un firewall e un Dispatcher, puoi utilizzare il server proxy per scoprire dove è stata persa la richiesta. Se è presente un firewall:
+Se si perdono le richieste in un&#39;impostazione server complessa, ad esempio con un firewall e un Dispatcher, è possibile utilizzare il server proxy per individuare il punto in cui la richiesta è stata persa. Se è presente un firewall:
 
 * Avviare un proxy prima di un firewall
 * Avvia un altro proxy dopo un firewall

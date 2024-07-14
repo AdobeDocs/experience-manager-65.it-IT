@@ -31,17 +31,17 @@ Le impostazioni **Utente** consentono di accedere a:
 
 * Impersona
 
-   * Con il [Impersona](/help/sites-administering/security.md#impersonating-another-user) un utente può lavorare per conto di un altro utente.
+   * Con la funzionalità [Impersona come](/help/sites-administering/security.md#impersonating-another-user) un utente può lavorare per conto di un altro utente.
 
 * Profilo
 
-   * Offre un collegamento semplice al [impostazioni utente](/help/sites-administering/security.md))
+   * Offre un collegamento semplice alle [impostazioni utente](/help/sites-administering/security.md))
 
 * [Preferenze](/help/sites-authoring/user-properties.md#my-preferences)
 
    * Consente di specificare varie preferenze di impostazione specifiche dell’utente.
 
-![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
+![schermata_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
 ### Preferenze {#my-preferences}
 
@@ -108,12 +108,12 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Usa esperienza di authoring classica**
 
-  Questa opzione abilita [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)authoring delle pagine basato su. Per impostazione predefinita viene utilizzata l’interfaccia utente standard.
+  Questa opzione abilita l&#39;authoring delle pagine basato su [interfaccia utente classica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md). Per impostazione predefinita viene utilizzata l’interfaccia utente standard.
 
 * **Abilita pagina iniziale di Assets**
 
-  Questa opzione è disponibile solo se l’amministratore di sistema ha attivato l’esperienza Pagina iniziale risorse per l’intera organizzazione.
+  Questa opzione è disponibile solo se l’amministratore di sistema ha abilitato l’esperienza Pagina iniziale di Assets per l’intera organizzazione.
 
 * **Configurazione Stock**
 
-  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l&#39;amministratore di sistema ha abilitato l&#39;[integrazione di Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

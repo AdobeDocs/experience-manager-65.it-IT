@@ -23,11 +23,13 @@ ht-degree: 0%
 >
 >Questo documento descrive come personalizzare le console nella moderna interfaccia touch e non si applica all’interfaccia classica.
 
-AEM offre diversi meccanismi per personalizzare le console (e il [funzionalità di authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)) della tua istanza di authoring.
+AEM fornisce vari meccanismi per consentirti di personalizzare le console (e la [funzionalità di authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)) della tua istanza di authoring.
 
-* Clientlibs Clientlibs consente di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare una libreria client personalizzata in `/apps.` Ad esempio, può contenere il codice necessario per il componente personalizzato.
+* Clientlibs
+Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare una libreria client personalizzata in `/apps.`. Ad esempio, può contenere il codice necessario per il componente personalizzato.
 
-* Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con funzionalità personalizzate (in `/apps`). Quando crei una sovrapposizione, non è necessaria una copia 1:1 dell’originale, in quanto la fusione di risorse sling consente l’ereditarietà.
+* Sovrapposizioni
+Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con la funzionalità personalizzata (in `/apps`). Quando crei una sovrapposizione, non è necessaria una copia 1:1 dell’originale, in quanto la fusione di risorse sling consente l’ereditarietà.
 
 Questi possono essere utilizzati in molti modi per estendere le console AEM. Di seguito è riportata una piccola selezione (ad alto livello).
 
@@ -43,18 +45,18 @@ Questi possono essere utilizzati in molti modi per estendere le console AEM. Di 
 
 >[!CAUTION]
 >
->Tu ***deve*** non modificare nulla in `/libs` percorso.
+>***must*** non modificare nulla nel percorso `/libs`.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+>Il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
->1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
+>1. Ricrea l&#39;elemento richiesto (ovvero, poiché esiste in `/libs`) in `/apps`
 >
 >1. Apporta le modifiche in `/apps`
 >
 
-Ad esempio, la seguente posizione all’interno del `/libs` La struttura può essere sovrapposta:
+Ad esempio, è possibile sovrapporre la seguente posizione all&#39;interno della struttura `/libs`:
 
 * console (tutte le console basate sulle pagine dell’interfaccia utente Granite); ad esempio:
 
@@ -62,7 +64,7 @@ Ad esempio, la seguente posizione all’interno del `/libs` La struttura può es
 
 >[!NOTE]
 >
->Consulta l’articolo della Knowledge Base, [Risoluzione dei problemi relativi all’interfaccia touch dell’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), per ulteriori suggerimenti e strumenti.
+>Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch dell&#39;AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
 
 ## Personalizzazione della vista predefinita per una console {#customizing-the-default-view-for-a-console}
 
@@ -92,7 +94,7 @@ Puoi personalizzare la vista predefinita (colonna, scheda, elenco) per una conso
 
 ### Aggiungi nuova azione alla barra degli strumenti {#add-new-action-to-the-toolbar}
 
-1. Puoi creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un **Promuovi al Twitter** azione in:
+1. Puoi creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un&#39;azione **Promuovi al Twitter** in:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -124,13 +126,13 @@ Puoi personalizzare la vista predefinita (colonna, scheda, elenco) per una conso
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Utilizzando le proprietà su questo nodo è possibile definire `groups` è autorizzato a eseguire l’azione specifica; ad esempio, `administrators`
+   Utilizzando le proprietà in questo nodo è possibile definire il `groups` consentito per eseguire l&#39;azione specifica, ad esempio `administrators`
 
 ### Personalizzazione delle colonne nella vista a elenco {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Questa funzione è ottimizzata per le colonne di campi di testo; per altri tipi di dati è possibile sovrapporsi `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Questa funzionalità è ottimizzata per colonne di campi di testo; per altri tipi di dati è possibile sovrapporre `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
 Per personalizzare le colonne nella vista a elenco:
 
@@ -144,12 +146,12 @@ Per personalizzare le colonne nella vista a elenco:
 
    * Aggiungi le nuove colonne o rimuovi quelle esistenti.
 
-   Consulta [Utilizzo delle sovrapposizioni (e di Sling Resource Merger)](/help/sites-developing/overlays.md) per ulteriori informazioni.
+   Per ulteriori informazioni, consulta [Utilizzo di sovrapposizioni (e Sling Resource Merger)](/help/sites-developing/overlays.md).
 
 1. Facoltativamente:
 
-   * Se desideri inserire dati aggiuntivi, devi scrivere una [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-     `pageInfoProviderType` proprietà.
+   * Se si desidera inserire dati aggiuntivi, è necessario scrivere un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
+     Proprietà `pageInfoProviderType`.
 
    Ad esempio, consulta la classe/bundle allegato (da GitHub) di seguito.
 

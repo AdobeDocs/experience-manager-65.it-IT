@@ -23,7 +23,7 @@ In AEM Forms è possibile utilizzare il servizio SendToPrinter per inviare un do
 
 * **Stampante con accesso diretto** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
-* **Stampante accessibile indirettamente** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
+* **Stampante con accesso indiretto** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
   Quando si invia un documento a una stampante, specificare uno dei seguenti protocolli di stampa:
 
@@ -64,8 +64,8 @@ La tabella seguente elenca:
 
 L&#39;autenticazione è supportata solo per la stampa CIF. Per eseguire l&#39;autenticazione, specificare il nome utente/password/dominio in PrinterSpec. È possibile crittografare una password utilizzando il servizio di supporto Cipro di AEM Granite eseguendo i seguenti passaggi:
 
-1. Vai a https://&lt;server>:&lt;port>/system/console.
+1. Visitare il sito Web all&#39;indirizzo https://&lt;server>:&lt;porta>/system/console.
 
 1. Vai a **[!UICONTROL Principale]** > **[!UICONTROL Supporto crittografia]**.
 
-1. Inserisci del testo normale e fai clic su **[!UICONTROL Protect]**.
+1. Immettere testo normale e fare clic su **[!UICONTROL Protect]**.

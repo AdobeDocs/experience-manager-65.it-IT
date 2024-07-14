@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Fai riferimento a frammenti di moduli adattivi{#reference-adaptive-form-fragments}
 
-[Frammento di modulo adattivo](../../forms/using/adaptive-form-fragments.md) è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare durante la creazione di un modulo. Consente di creare un modulo in modo semplice e rapido. Puoi trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor moduli.
+[Il frammento di modulo adattivo](../../forms/using/adaptive-form-fragments.md) è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare durante la creazione di un modulo. Consente di creare un modulo in modo semplice e rapido. Puoi trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor moduli.
 
-Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Include i seguenti frammenti:
+Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Include i seguenti frammenti:
 
 * Indirizzo
 * Informazioni di contatto
@@ -32,7 +32,7 @@ Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [
 * Termini e condizioni
 * Termini e condizioni con scarabocchio
 
-Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per installare un pacchetto, consulta [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
+Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per installare un pacchetto, vedere [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 
 ![Tutti i frammenti elencati](assets/ootb-frags.png)
 
@@ -105,7 +105,7 @@ Include campi per acquisire flussi di cassa e spese mensili. I Forms che richied
 
 Include campi per specificare titolo, nome, secondo nome e cognome.
 
-![Frammento di nome](assets/name.png)
+![Frammento nome](assets/name.png)
 
 <!--[Click to enlarge
 

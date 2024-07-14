@@ -25,21 +25,21 @@ Questo ha il seguente impatto:
 * Ripartisce il carico delle richieste dall&#39;infrastruttura del server.
 * Aumenta le prestazioni di caricamento della pagina, poiché il browser memorizza nella cache gli oggetti nel browser.
 
-Le scadenze sono specificate dallo standard HTTP relativo alla &quot;scadenza&quot; dei file (ad esempio, vedi il capitolo 14.21 del [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Questo standard utilizza l’intestazione per consentire ai client di memorizzare in cache gli oggetti fino a quando non vengono considerati obsoleti; tali oggetti vengono memorizzati in cache per il periodo di tempo specificato senza che venga eseguito alcun controllo dello stato sul server di origine.
+Le scadenze sono specificate dallo standard HTTP relativo alla &quot;scadenza&quot; dei file (ad esempio, vedere il capitolo 14.21 di [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Questo standard utilizza l’intestazione per consentire ai client di memorizzare in cache gli oggetti fino a quando non vengono considerati obsoleti; tali oggetti vengono memorizzati in cache per il periodo di tempo specificato senza che venga eseguito alcun controllo dello stato sul server di origine.
 
 >[!NOTE]
 >
 >Questa configurazione è separata (e non funzionerà) da Dispatcher.
 >
->Lo scopo del Dispatcher è quello di memorizzare in cache i dati prima di Adobe Experience Manager (AEM).
+>Lo scopo del Dispatcher è quello di memorizzare i dati nella cache di fronte a Adobe Experience Manager (AEM).
 
 Tutti i file non dinamici che non cambiano nel tempo possono e devono essere memorizzati in cache. A seconda dell’ambiente, la configurazione del server HTTPD Apache potrebbe essere simile a una delle seguenti:
 
 >[!CAUTION]
 >
->Prestare attenzione quando si definisce il periodo di tempo durante il quale un oggetto viene considerato aggiornato. Dato che *nessun controllo fino alla scadenza del periodo di tempo specificato*, il client può finire per presentare contenuti obsoleti dalla cache.
+>Prestare attenzione quando si definisce il periodo di tempo durante il quale un oggetto viene considerato aggiornato. Poiché *non è presente alcun controllo fino alla scadenza del periodo di tempo specificato*, il client può finire per presentare contenuto precedente dalla cache.
 
-1. **Per un’istanza Autore:**
+1. **Per un&#39;istanza Autore:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -51,11 +51,11 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
    </Location>
    ```
 
-   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare file CSS, JavaScript, PNG e GIF per un massimo di un mese, fino alla scadenza. Ciò significa che non devono essere richieste dall’AEM o dal server web, ma possono rimanere nella cache del browser.
+   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare i file CSS, JavaScript, PNG e GIF per un massimo di un mese, fino alla scadenza. Ciò significa che non devono essere richieste dall’AEM o dal server web, ma possono rimanere nella cache del browser.
 
    Le altre sezioni del sito non devono essere memorizzate nella cache in un’istanza Autore, in quanto sono soggette a modifiche in qualsiasi momento.
 
-1. **Per un’istanza Publish:**
+1. **Per un&#39;istanza di Publish:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -73,7 +73,7 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
    </Location>
    ```
 
-   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare file CSS, JavaScript, PNG e GIF per un massimo di un giorno nelle cache client. Anche se questo esempio illustra le impostazioni globali per tutto ciò che segue `/content` e `/etc/designs`, dovresti renderlo più granulare.
+   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare i file CSS, JavaScript, PNG e GIF per un massimo di un giorno nelle cache client. Sebbene questo esempio illustri le impostazioni globali per tutti gli elementi seguenti `/content` e `/etc/designs`, è necessario renderlo più granulare.
 
    A seconda della frequenza con cui il sito viene aggiornato, puoi anche considerare la memorizzazione in cache delle pagine di HTML. Un periodo di tempo ragionevole è di un’ora:
 
@@ -83,4 +83,4 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
    </Location>
    ```
 
-Dopo aver configurato gli oggetti statici, eseguire la scansione `request.log`, durante la selezione delle pagine che contengono tali oggetti, per confermare che non vengono effettuate richieste (non necessarie) per gli oggetti statici.
+Dopo aver configurato gli oggetti statici, eseguire la scansione di `request.log` selezionando le pagine che contengono tali oggetti, per confermare che non vengono effettuate richieste (non necessarie) per gli oggetti statici.

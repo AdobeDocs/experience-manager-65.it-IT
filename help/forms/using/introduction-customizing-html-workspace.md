@@ -35,9 +35,9 @@ AEM Forms Workspace supporta un’ampia gamma di personalizzazioni per aggiornar
 
 ### Modifiche all’interfaccia utente {#user-interface-changes}
 
-Puoi modificare l’aspetto, il layout e altre semantiche di presentazione dell’area di lavoro AEM Forms. Modifica l’area di lavoro personalizzando i file CSS, HTML e JavaScript™. Tutti i file predefiniti vengono forniti nell&#39;installazione predefinita.
+Puoi modificare l’aspetto, il layout e altre semantiche di presentazione dell’area di lavoro AEM Forms. Cambia l’area di lavoro personalizzando i file CSS, HTML e JavaScript™. Tutti i file predefiniti vengono forniti nell&#39;installazione predefinita.
 
-I passaggi più comunemente applicabili sono descritti in [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Per esempi specifici di tali personalizzazioni, inclusi i passaggi dettagliati, consulta gli articoli correlati alla fine di questo articolo.
+I passaggi applicabili più comunemente sono descritti in [Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Per esempi specifici di tali personalizzazioni, inclusi i passaggi dettagliati, consulta gli articoli correlati alla fine di questo articolo.
 
 #### Informazioni sul foglio di stile {#understanding-the-style-sheet}
 
@@ -126,22 +126,22 @@ I passaggi principali per la personalizzazione CSS sono:
 
 * Crea un file CSS.
 * Aggiungi elementi di stile a questo CSS. Per ulteriori informazioni, consulta Informazioni sugli stili CSS.
-* Aggiornare i relativi riferimenti in `html.jsp`.
+* Aggiorna i relativi riferimenti in `html.jsp`.
 
-Per i passaggi esatti per eseguire queste personalizzazioni, consulta [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Il file CSS fornito con l’area di lavoro di AEM Forms si trova in /libs/ws/css/. Per le personalizzazioni relative ai CSS, utilizza [Spedisci pacchetto](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Per esempi specifici di personalizzazioni relative a CSS, consulta gli argomenti della Guida correlati alla fine di questo articolo.
+Per i passaggi esatti per eseguire queste personalizzazioni, consulta [Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Il file CSS fornito con l’area di lavoro di AEM Forms si trova in /libs/ws/css/. Per le personalizzazioni relative a CSS, utilizza [Pacchetto spedizione](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Per esempi specifici di personalizzazioni relative a CSS, consulta gli argomenti della Guida correlati alla fine di questo articolo.
 
 #### Immagine {#image}
 
-Puoi personalizzare l’area di lavoro di AEM Forms per aggiungere avatar di utenti o il logo della tua organizzazione. Per queste personalizzazioni, utilizza [Spedisci pacchetto](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Puoi personalizzare l’area di lavoro di AEM Forms per aggiungere avatar di utenti o il logo della tua organizzazione. Per queste personalizzazioni, utilizzare [Pacchetto di spedizione](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 I passaggi principali per la personalizzazione delle immagini sono i seguenti:
 
 * Installare e configurare WebDAV.
 * Aggiungere nuove immagini.
 * Aggiungi nuovi stili corrispondenti alle immagini aggiunte.
-* Collegamento al nuovo file CSS in `html.jsp` file.
+* Collegamento al nuovo file CSS nel file `html.jsp`.
 
-Per iniziare a personalizzare le immagini nell’area di lavoro di AEM Forms, segui la [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Per esempi specifici di personalizzazioni relative alle immagini, consulta gli argomenti della Guida correlati alla fine di questo articolo.
+Per iniziare a personalizzare le immagini nell&#39;area di lavoro di AEM Forms, segui i [Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Per esempi specifici di personalizzazioni relative alle immagini, consulta gli argomenti della Guida correlati alla fine di questo articolo.
 
 #### Modello HTML {#html-template}
 
@@ -153,11 +153,11 @@ I passaggi di primo livello per le personalizzazioni del modello di HTML sono:
 * Aggiungere nuovi modelli nella cartella definita dall&#39;utente.
 * Apporta aggiornamenti rilevanti ai file copiati come, il percorso del nuovo modello.
 
-Per esempi specifici di tali personalizzazioni, consulta gli argomenti dell’Aiuto forniti alla fine di questo articolo. Scegli tra [Spedisci pacchetto](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) o [Pacchetto di sviluppo](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), a seconda del modello da personalizzare.
+Per esempi specifici di tali personalizzazioni, consulta gli argomenti dell’Aiuto forniti alla fine di questo articolo. Scegli tra il [pacchetto spedizione](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) o il [pacchetto sviluppo](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), a seconda del modello da personalizzare.
 
 ### Modifiche semantiche {#semantic-changes}
 
-Per modificare la funzionalità dell’area di lavoro di AEM Forms, modifica il codice sorgente JavaScript. Le modifiche apportate alle funzionalità di base sono etichettate come modifiche semantiche. Puoi modificare modelli, viste e modelli forniti come parte del codice sorgente dell’area di lavoro di AEM Forms.
+Per modificare la funzionalità dell’area di lavoro di AEM Forms, modifica il codice sorgente di JavaScript. Le modifiche apportate alle funzionalità di base sono etichettate come modifiche semantiche. Puoi modificare modelli, viste e modelli forniti come parte del codice sorgente dell’area di lavoro di AEM Forms.
 
 I passaggi di primo livello per apportare modifiche semantiche per modificare le funzionalità dell’area di lavoro di AEM Forms sono i seguenti:
 
@@ -166,23 +166,23 @@ I passaggi di primo livello per apportare modifiche semantiche per modificare le
 * Effettua aggiornamenti rilevanti come l’aggiornamento dei percorsi dei modelli e delle viste appena aggiunti nei file JavaScript predefiniti.
 * Minimizza il pacchetto per ottimizzare le prestazioni.
 
-Per ulteriori informazioni sui componenti che fanno parte del codice sorgente, vedi [Descrizione dei componenti riutilizzabili](/help/forms/using/description-reusable-components.md). Per queste personalizzazioni, utilizza il pacchetto di sviluppo.
+Per ulteriori informazioni sui componenti che fanno parte del codice sorgente, vedere [Descrizione dei componenti riutilizzabili](/help/forms/using/description-reusable-components.md). Per queste personalizzazioni, utilizza il pacchetto di sviluppo.
 
 ### Componenti riutilizzabili {#reusable-components}
 
 Poiché AEM Forms Workspace è un software basato su componenti, può essere facilmente personalizzato e riutilizzato. Puoi integrare facilmente i componenti di Workspace con le applicazioni web.
 
-Per ulteriori informazioni concettuali, vedere [Descrizione dei componenti riutilizzabili](/help/forms/using/description-reusable-components.md) e per istruzioni sull’utilizzo dei componenti, consulta [Integrazione dei componenti dell’area di lavoro di AEM Forms nelle applicazioni web](/help/forms/using/description-reusable-components.md).
+Per ulteriori informazioni concettuali, vedere [Descrizione dei componenti riutilizzabili](/help/forms/using/description-reusable-components.md) e per istruzioni sull&#39;utilizzo dei componenti, vedere [Integrazione dei componenti dell&#39;area di lavoro di AEM Forms nelle applicazioni Web](/help/forms/using/description-reusable-components.md).
 
 ## Creazione del codice dell’area di lavoro di AEM Forms {#building-html-workspace-code}
 
 ### Pacchetto SDK {#sdk-package}
 
-Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pacchetto è disponibile all’indirizzo `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pacchetto è disponibile in `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 È destinato principalmente alle personalizzazioni, in quanto fornisce la capacità di generare:
 
-* Pacchetti CRX per profili di spedizione, debug e sviluppo (menzionati di seguito in [Pacchetti CRX](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
+* Pacchetti CRX per profili di spedizione, debug e sviluppo (indicati di seguito in [pacchetti CRX](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
 * Versione ridotta del codice personalizzato (per modifiche semantiche).
 
 #### Contenuto WS {#ws-content}
@@ -233,7 +233,7 @@ Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pac
 
 ### Pacchetto CRX {#crx-package}
 
-Il pacchetto CRX può essere distribuito nell’archivio CRX™. È disponibile all’indirizzo `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
+Il pacchetto CRX può essere distribuito nell’archivio CRX™. È disponibile in `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
 
 Questo pacchetto può essere creato utilizzando i tre profili descritti di seguito.
 
@@ -247,7 +247,7 @@ Questo pacchetto può essere creato utilizzando i tre profili descritti di segui
 
 #### Comando {#command}
 
-* mvn clean -P Ship install nella cartella client-pkg del pacchetto di origine spedito al client.
+* mvn clean -P Ship install nella cartella client-pkg del pacchetto Source spedito al client.
 * L&#39;esecuzione del comando del profilo di spedizione funziona solo su una JVM a 64 bit.
 
 #### Contenuto WS {#ws-content-1}

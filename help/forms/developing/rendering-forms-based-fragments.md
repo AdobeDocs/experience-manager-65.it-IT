@@ -19,25 +19,25 @@ ht-degree: 0%
 
 # Rendering di Forms basato su frammenti {#rendering-forms-based-on-fragments}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 ## Rendering di Forms basato su frammenti {#rendering-forms-based-on-fragments-inner}
 
-Il servizio Forms può eseguire il rendering di moduli basati su frammenti creati con Designer. A *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più progettazioni di moduli. Ad esempio, un frammento può includere un blocco di indirizzi o un testo legale.
+Il servizio Forms può eseguire il rendering di moduli basati su frammenti creati con Designer. Un *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più progettazioni di moduli. Ad esempio, un frammento può includere un blocco di indirizzi o un testo legale.
 
 L’utilizzo di frammenti semplifica e velocizza la creazione e la manutenzione di un gran numero di moduli. Durante la creazione di un modulo, viene inserito un riferimento al frammento richiesto e il frammento viene visualizzato nel modulo. Il riferimento al frammento contiene un sottomodulo che punta al file XDP fisico. Per informazioni sulla creazione di strutture di moduli basate su frammenti, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Un frammento può includere diverse sottomaschere racchiuse in un set di sottomaschere di scelta. I set di sottomaschere di scelta controllano la visualizzazione delle sottomaschere in base al flusso di dati provenienti da una connessione dati. È possibile utilizzare le istruzioni condizionali per determinare quale sottomaschera all&#39;interno della serie viene visualizzata nella maschera consegnata. Ad esempio, ogni sottomaschera di un set può includere informazioni relative a una particolare posizione geografica e la sottomaschera visualizzata può essere determinata in base alla posizione dell&#39;utente.
 
-A *frammento di script* contiene funzioni o valori JavaScript riutilizzabili memorizzati separatamente da qualsiasi oggetto particolare, ad esempio un parser di date o una chiamata a un servizio web. Questi frammenti includono un singolo oggetto script che viene visualizzato come elemento figlio di variabili nella tavolozza Gerarchia. I frammenti non possono essere creati da script che sono proprietà di altri oggetti, ad esempio script di eventi come validate, calculate o initialize.
+Un frammento *script* contiene funzioni o valori JavaScript riutilizzabili che vengono memorizzati separatamente da un particolare oggetto, ad esempio un parser di date o una chiamata a un servizio Web. Questi frammenti includono un singolo oggetto script che viene visualizzato come elemento figlio di variabili nella tavolozza Gerarchia. I frammenti non possono essere creati da script che sono proprietà di altri oggetti, ad esempio script di eventi come validate, calculate o initialize.
 
 Di seguito sono riportati i vantaggi dell’utilizzo dei frammenti:
 
-* **Riutilizzo dei contenuti**: è possibile utilizzare i frammenti per riutilizzare il contenuto in più progettazioni di moduli. Quando è necessario utilizzare parte dello stesso contenuto in più moduli, l’utilizzo di un frammento è più rapido e semplice rispetto alla copia o alla ricreazione del contenuto. L’utilizzo dei frammenti assicura inoltre che le parti utilizzate di frequente di una progettazione di moduli abbiano contenuto e aspetto coerenti in tutti i moduli di riferimento.
+* **Riutilizzo del contenuto**: è possibile utilizzare i frammenti per riutilizzare il contenuto in più progettazioni di moduli. Quando è necessario utilizzare parte dello stesso contenuto in più moduli, l’utilizzo di un frammento è più rapido e semplice rispetto alla copia o alla ricreazione del contenuto. L’utilizzo dei frammenti assicura inoltre che le parti utilizzate di frequente di una progettazione di moduli abbiano contenuto e aspetto coerenti in tutti i moduli di riferimento.
 * **Aggiornamenti globali**: è possibile utilizzare i frammenti per apportare modifiche globali a più moduli una sola volta, in un unico file. È possibile modificare il contenuto, gli oggetti script, le associazioni di dati, il layout o gli stili di un frammento. Le modifiche verranno applicate a tutti i moduli XDP che fanno riferimento al frammento.
 * Ad esempio, un elemento comune in molti moduli potrebbe essere un blocco di indirizzi che include un oggetto elenco a discesa per il paese. Se è necessario aggiornare i valori dell&#39;oggetto elenco a discesa, è necessario aprire più maschere per apportare le modifiche. Se includi il blocco di indirizzi in un frammento, per apportare le modifiche dovrai aprire un solo file di frammento.
 * Per aggiornare un frammento in un modulo PDF, è necessario salvare nuovamente il modulo in Designer.
-* **Creazione di moduli condivisi**: puoi utilizzare i frammenti per condividere la creazione di moduli tra diverse risorse. Gli sviluppatori di moduli con esperienza nello scripting o altre funzioni avanzate di Designer possono sviluppare e condividere frammenti che sfruttano le proprietà di script e dinamiche. I progettisti di moduli possono utilizzare tali frammenti per disporre le progettazioni dei moduli e per garantire che tutte le parti di un modulo abbiano un aspetto e una funzionalità coerenti in più moduli progettati da più persone.
+* **Creazione di moduli condivisi**: è possibile utilizzare i frammenti per condividere la creazione di moduli tra diverse risorse. Gli sviluppatori di moduli con esperienza nello scripting o altre funzioni avanzate di Designer possono sviluppare e condividere frammenti che sfruttano le proprietà di script e dinamiche. I progettisti di moduli possono utilizzare tali frammenti per disporre le progettazioni dei moduli e per garantire che tutte le parti di un modulo abbiano un aspetto e una funzionalità coerenti in più moduli progettati da più persone.
 
 ### Assemblaggio di una struttura di modulo assemblata mediante frammenti {#assembling-a-form-design-assembled-using-fragments}
 
@@ -47,7 +47,7 @@ Quando si utilizza il servizio Assembler, si passa una progettazione di modulo c
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -71,17 +71,17 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 Prima di poter eseguire a livello di programmazione un&#39;operazione API client del servizio Forms, è necessario creare un client del servizio Forms.
 
-**Specificare i valori URI**
+**Specificare valori URI**
 
 Per eseguire correttamente il rendering di un modulo basato su frammenti, è necessario assicurarsi che il servizio Forms sia in grado di individuare sia il modulo che i frammenti (i file XDP) a cui fa riferimento il progetto del modulo. Si supponga ad esempio che il modulo sia denominato PO.xdp e che utilizzi due frammenti denominati FooterUS.xdp e FooterCanada.xdp. In questa situazione, il servizio Forms deve essere in grado di individuare tutti e tre i file XDP.
 
-È possibile organizzare un modulo e i relativi frammenti posizionando il modulo in una posizione e i frammenti in un&#39;altra, oppure è possibile posizionare tutti i file XDP nella stessa posizione. Ai fini di questa sezione, supponiamo che tutti i file XDP siano presenti nell’archivio AEM Forms. Per informazioni sul posizionamento dei file XDP nell’archivio AEM Forms, consulta [Scrittura delle risorse](/help/forms/developing/aem-forms-repository.md#writing-resources).
+È possibile organizzare un modulo e i relativi frammenti posizionando il modulo in una posizione e i frammenti in un&#39;altra, oppure è possibile posizionare tutti i file XDP nella stessa posizione. Ai fini di questa sezione, supponiamo che tutti i file XDP siano presenti nell’archivio AEM Forms. Per informazioni sul posizionamento dei file XDP nell&#39;archivio di AEM Forms, vedere [Scrittura delle risorse](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Quando si esegue il rendering di un modulo basato su frammenti, è necessario fare riferimento solo al modulo stesso e non ai frammenti. Ad esempio, è necessario fare riferimento a PO.xdp e non a FooterUS.xdp o FooterCanada.xdp. Assicurati di posizionare i frammenti in una posizione in cui il servizio Forms possa individuarli.
 
 **Rendering del modulo**
 
-Un modulo basato su frammenti può essere renderizzato nello stesso modo dei moduli non frammentati. In altre parole, è possibile eseguire il rendering del modulo come PDF, HTML o Guide del modulo (obsoleto). Nell&#39;esempio di questa sezione viene eseguito il rendering di un modulo basato su frammenti come modulo PDF interattivo. (vedere [Rendering dei PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Un modulo basato su frammenti può essere renderizzato nello stesso modo dei moduli non frammentati. In altre parole, è possibile eseguire il rendering del modulo come PDF, HTML o Guide del modulo (obsoleto). Nell&#39;esempio di questa sezione viene eseguito il rendering di un modulo basato su frammenti come modulo PDF interattivo. (Vedi [Rendering dei PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 **Scrivere il flusso di dati del modulo nel browser Web client**
 
@@ -113,37 +113,37 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l’API Forms
 
 1. Creare un oggetto API client di Forms
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `FormsServiceClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Specificare i valori URI
 
-   * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
-   * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passa un valore stringa che rappresenta la directory principale del web dell’applicazione.
-   * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo e i frammenti siano nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository://`.
-   * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
+   * Creare un oggetto `URLSpec` che memorizza i valori URI utilizzando il relativo costruttore.
+   * Richiama il metodo `setApplicationWebRoot` dell&#39;oggetto `URLSpec` e passa un valore stringa che rappresenta la radice web dell&#39;applicazione.
+   * Richiama il metodo `setContentRootURI` dell&#39;oggetto `URLSpec` e passa un valore stringa che specifica il valore URI della radice del contenuto. Assicurati che la progettazione del modulo e i frammenti siano nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all&#39;archivio, specificare `repository://`.
+   * Richiama il metodo `setTargetURL` dell&#39;oggetto `URLSpec` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
 
 1. Rendering del modulo
 
-   Richiama `FormsServiceClient` dell&#39;oggetto `renderPDFForm` e trasmettere i seguenti valori:
+   Richiama il metodo `renderPDFForm` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura di modulo che fa parte di un&#39;applicazione Forms, assicurarsi di specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `com.adobe.idp.Document` oggetto contenente dati da unire con il modulo. Se non desideri unire i dati, passa un campo vuoto `com.adobe.idp.Document` oggetto.
-   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime.
-   * A `URLSpec` oggetto contenente valori URI richiesti dal servizio Forms per eseguire il rendering di un modulo basato su frammenti.
-   * A `java.util.HashMap` oggetto che memorizza gli allegati. Questo è un parametro facoltativo e puoi specificare `null` se non si desidera allegare file al modulo.
+   * Oggetto `com.adobe.idp.Document` contenente dati da unire al modulo. Se non si desidera unire i dati, passare un oggetto `com.adobe.idp.Document` vuoto.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime.
+   * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms per il rendering di un modulo basato su frammenti.
+   * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
 
-   Il `renderPDFForm` il metodo restituisce un `FormsResult` oggetto contenente un flusso di dati modulo che deve essere scritto nel browser web client.
+   Il metodo `renderPDFForm` restituisce un oggetto `FormsResult` che contiene un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
-   * Ottieni il tipo di contenuto del `com.adobe.idp.Document` oggetto richiamando il relativo `getContentType` metodo.
-   * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `com.adobe.idp.Document` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.
-   * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` dell&#39;oggetto `getInputStream` metodo.
-   * Creare una matrice di byte compilarla con il flusso di dati del modulo richiamando `InputStream` dell&#39;oggetto `read`e passando la matrice di byte come argomento.
-   * Richiama `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.
+   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document` richiamando il relativo metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamando il relativo metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il metodo `getOutputStream` dell&#39;oggetto `javax.servlet.http.HttpServletResponse`.
+   * Creare un oggetto `java.io.InputStream` richiamando il metodo `getInputStream` dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare una matrice di byte popolarla con il flusso di dati del modulo richiamando il metodo `read` dell&#39;oggetto `InputStream` e passando la matrice di byte come argomento.
+   * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.ServletOutputStream` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
 **Consulta anche**
 
@@ -166,40 +166,40 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l’API di Fo
 
 1. Creare un oggetto API client di Forms
 
-   Creare un `FormsService` e impostare i valori di autenticazione.
+   Creare un oggetto `FormsService` e impostare i valori di autenticazione.
 
 1. Specificare i valori URI
 
-   * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
-   * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passa un valore stringa che rappresenta la directory principale del web dell’applicazione.
-   * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo sia nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository://`.
-   * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
+   * Creare un oggetto `URLSpec` che memorizza i valori URI utilizzando il relativo costruttore.
+   * Richiama il metodo `setApplicationWebRoot` dell&#39;oggetto `URLSpec` e passa un valore stringa che rappresenta la radice web dell&#39;applicazione.
+   * Richiama il metodo `setContentRootURI` dell&#39;oggetto `URLSpec` e passa un valore stringa che specifica il valore URI della radice del contenuto. Assicurati che la progettazione del modulo sia nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all&#39;archivio, specificare `repository://`.
+   * Richiama il metodo `setTargetURL` dell&#39;oggetto `URLSpec` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
 
 1. Rendering del modulo
 
-   Richiama `FormsService` dell&#39;oggetto `renderPDFForm` e trasmettere i seguenti valori:
+   Richiama il metodo `renderPDFForm` dell&#39;oggetto `FormsService` e passa i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura di modulo che fa parte di un&#39;applicazione Forms, assicurarsi di specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `BLOB` oggetto contenente dati da unire con il modulo. Se non si desidera unire i dati, passare `null`.
-   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime. Impossibile impostare l&#39;opzione PDF con tag se il documento di input è un documento PDF. Se il file di input è un file XDP, è possibile impostare l&#39;opzione PDF con tag.
-   * A `URLSpec` oggetto contenente i valori URI richiesti dal servizio Forms.
-   * A `java.util.HashMap` oggetto che memorizza gli allegati. Questo è un parametro facoltativo e puoi specificare `null` se non si desidera allegare file al modulo.
-   * Un campo vuoto `com.adobe.idp.services.holders.BLOBHolder` oggetto popolato dal metodo. Questo parametro viene utilizzato per memorizzare il modulo di cui è stato eseguito il rendering.
-   * Un campo vuoto `javax.xml.rpc.holders.LongHolder` oggetto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
-   * Un campo vuoto `javax.xml.rpc.holders.StringHolder` oggetto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
-   * Un campo vuoto `com.adobe.idp.services.holders.FormsResultHolder` oggetto che conterrà i risultati dell&#39;operazione.
+   * Oggetto `BLOB` contenente dati da unire al modulo. Se non si desidera unire i dati, passare `null`.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime. Impossibile impostare l&#39;opzione PDF con tag se il documento di input è un documento PDF. Se il file di input è un file XDP, è possibile impostare l&#39;opzione PDF con tag.
+   * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
+   * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Questo parametro viene utilizzato per memorizzare il modulo di cui è stato eseguito il rendering.
+   * Oggetto `javax.xml.rpc.holders.LongHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
+   * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
+   * Oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.
 
-   Il `renderPDFForm` il metodo compila `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore di argomento con un flusso di dati del modulo che deve essere scritto nel browser web client.
+   Il metodo `renderPDFForm` popola l&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder` passato come ultimo valore di argomento con un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `FormResult` dell&#39;oggetto ottenendo il valore del `com.adobe.idp.services.holders.FormsResultHolder` dell&#39;oggetto `value` membro dati.
-   * Creare un `BLOB` oggetto che contiene i dati del modulo richiamando `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-   * Ottieni il tipo di contenuto del `BLOB` oggetto richiamando il relativo `getContentType` metodo.
-   * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `BLOB` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.
-   * Creare una matrice di byte e popolarla richiamando il `BLOB` dell&#39;oggetto `getBinaryData` metodo. Questa attività assegna il contenuto del `FormsResult` alla matrice di byte.
-   * Richiama `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.
+   * Creare un oggetto `FormResult` ottenendo il valore del membro dati `value` dell&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Creare un oggetto `BLOB` contenente dati del modulo richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `BLOB` richiamando il relativo metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamando il relativo metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il metodo `getOutputStream` dell&#39;oggetto `javax.servlet.http.HttpServletResponse`.
+   * Creare una matrice di byte e popolarla richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` alla matrice di byte.
+   * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.http.HttpServletResponse` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
 **Consulta anche**
 

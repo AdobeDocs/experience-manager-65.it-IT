@@ -1,6 +1,6 @@
 ---
 title: Considerazioni e requisiti di rete
-description: Considerazioni sulla rete durante la progettazione di un [!DNL Adobe Experience Manager Assets] distribuzione.
+description: Vengono illustrate le considerazioni sulla rete durante la progettazione di una distribuzione  [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
@@ -21,10 +21,10 @@ Assicurarsi di includere quanto segue nel diagramma di rete:
 
 * Connettività dal dispositivo client (ad esempio computer, dispositivi mobili e tablet) alla rete.
 * Topologia della rete aziendale.
-* Collegamento a Internet dalla rete aziendale e [!DNL Experience Manager] ambiente.
-* Topologia del [!DNL Experience Manager] ambiente.
-* Definisci i consumatori simultanei del [!DNL Experience Manager] interfaccia di rete.
-* Flussi di lavoro definiti del [!DNL Experience Manager] distribuzione.
+* Collegamento a Internet dalla rete aziendale e dall&#39;ambiente [!DNL Experience Manager].
+* Topologia dell&#39;ambiente [!DNL Experience Manager].
+* Definire i consumer simultanei dell&#39;interfaccia di rete [!DNL Experience Manager].
+* Flussi di lavoro definiti della distribuzione [!DNL Experience Manager].
 
 ## Connettività dal dispositivo client alla rete aziendale {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -32,7 +32,7 @@ Iniziare creando un diagramma della connettività tra i singoli dispositivi clie
 
 ![chlimage_1-353](assets/chlimage_1-353.png)
 
-I dispositivi client si connettono alla rete aziendale in vari modi, ad esempio WiFi condiviso, Ethernet a uno switch condiviso e VPN. L&#39;identificazione e la comprensione dei punti critici della rete è importante per [!DNL Assets] pianificazione e modifica della rete.
+I dispositivi client si connettono alla rete aziendale in vari modi, ad esempio WiFi condiviso, Ethernet a uno switch condiviso e VPN. Identificare e comprendere i punti di scelta in questa rete è importante per la pianificazione di [!DNL Assets] e per modificare la rete.
 
 Nella parte superiore sinistra del diagramma, tre dispositivi sono rappresentati come se condividessero un punto di accesso WiFi a 48 Mbps. Se tutti i dispositivi vengono caricati contemporaneamente, la larghezza di banda della rete WiFi viene condivisa tra i dispositivi. Rispetto al sistema nel suo complesso, un utente può incontrare un punto di soffocamento diverso per i tre clienti su questo canale diviso.
 
@@ -48,15 +48,15 @@ Il computer visualizzato a destra ha un limite a monte rispetto alla rete aziend
 
 Il diagramma mostra una velocità di uplink più elevata all&#39;interno della rete aziendale rispetto a quella generalmente utilizzata. Queste pipe sono risorse condivise. Se si prevede che lo switch condiviso gestisca 50 client, è possibile che si tratti di un punto di blocco. Nel diagramma iniziale solo due computer condividono la connessione specifica.
 
-## Collegamento a Internet dalla rete aziendale e [!DNL Experience Manager] ambiente {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Collegamento a Internet dalla rete aziendale e dall&#39;ambiente [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 È importante considerare fattori sconosciuti su Internet e sulla connessione VPC perché la larghezza di banda su Internet può essere compromessa a causa di picchi di carico o interruzioni su larga scala del provider. In generale, la connettività Internet è affidabile. Tuttavia, a volte può introdurre punti di soffocamento.
 
-Nell&#39;uplink da una rete aziendale a Internet, ci possono essere altri servizi che utilizzano la larghezza di banda. È importante comprendere la quantità di larghezza di banda che può essere dedicata o assegnata come priorità alle risorse. Ad esempio, se un collegamento a 1 Gbps presenta già un utilizzo dell’80%, puoi allocare solo un massimo del 20% della larghezza di banda per [!DNL Experience Manager Assets].
+Nell&#39;uplink da una rete aziendale a Internet, ci possono essere altri servizi che utilizzano la larghezza di banda. È importante comprendere la quantità di larghezza di banda che può essere dedicata o assegnata a Assets. Ad esempio, se un collegamento a 1 Gb/s è già utilizzato all&#39;80%, è possibile allocare solo un massimo del 20% della larghezza di banda per [!DNL Experience Manager Assets].
 
-Anche i firewall e i proxy aziendali possono modellare la larghezza di banda in molti modi diversi. Questo tipo di dispositivo può assegnare la priorità alla larghezza di banda utilizzando la qualità del servizio, le limitazioni della larghezza di banda per utente o le limitazioni del bitrate per host. Questi sono punti di scelta importanti da esaminare in quanto possono avere un impatto significativo [!DNL Assets] esperienza utente.
+Anche i firewall e i proxy aziendali possono modellare la larghezza di banda in molti modi diversi. Questo tipo di dispositivo può assegnare la priorità alla larghezza di banda utilizzando la qualità del servizio, le limitazioni della larghezza di banda per utente o le limitazioni del bitrate per host. Questi sono punti di scelta importanti da esaminare in quanto possono avere un impatto significativo sull&#39;esperienza utente di [!DNL Assets].
 
 In questo esempio, l’azienda dispone di un uplink a 10 Gb/s. Dovrebbe essere abbastanza grande per diversi clienti. Inoltre, il firewall impone un limite di frequenza host di 10 Mbps. Questa limitazione può potenzialmente limitare il traffico a un singolo host a 10 Mbps, anche se l&#39;uplink a Internet è a 10 Gbps.
 
@@ -64,21 +64,21 @@ Questo è il più piccolo punto di soffocamento orientato al cliente. Tuttavia, 
 
 Dai diagrammi di esempio si può concludere che sei dispositivi condividono un canale concettuale di 10 Mbps. A seconda delle dimensioni delle risorse utilizzate, questo valore potrebbe non essere adeguato a soddisfare le aspettative degli utenti.
 
-## Topologia del [!DNL Experience Manager] ambiente {#topology-of-the-aem-environment}
+## Topologia dell&#39;ambiente [!DNL Experience Manager] {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-Progettazione della topologia di [!DNL Experience Manager] L&#39;ambiente richiede una conoscenza approfondita della configurazione del sistema e del modo in cui la rete viene connessa all&#39;interno dell&#39;ambiente utente.
+La progettazione della topologia dell&#39;ambiente [!DNL Experience Manager] richiede una conoscenza dettagliata della configurazione del sistema e del modo in cui la rete è connessa all&#39;interno dell&#39;ambiente utente.
 
 Lo scenario di esempio include una farm di pubblicazione con cinque server, un archivio binario S3 e Dynamic Medie configurato.
 
-Il dispatcher condivide la sua connessione a 100 Mbps con due entità, il mondo esterno e [!DNL Experience Manager] distribuzione. Per operazioni di caricamento e download simultanee, è necessario dividere questo numero per due. Lo storage esterno collegato utilizza una connessione separata.
+Dispatcher condivide la connessione a 100 Mbps con due entità, il mondo esterno e la distribuzione [!DNL Experience Manager]. Per operazioni di caricamento e download simultanee, è necessario dividere questo numero per due. Lo storage esterno collegato utilizza una connessione separata.
 
-Il [!DNL Experience Manager] La distribuzione condivide la connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, è equivalente alla condivisione di un singolo canale con servizi diversi.
+La distribuzione di [!DNL Experience Manager] condivide la connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, è equivalente alla condivisione di un singolo canale con servizi diversi.
 
-Esame della rete dal dispositivo client al [!DNL Experience Manager] , il punto di interruzione più piccolo sembra essere la limitazione del firewall aziendale a 10 Mbit. È possibile utilizzare questi valori nel calcolatore del dimensionamento nel [Guida al dimensionamento di Assets](assets-sizing-guide.md) per determinare l’esperienza utente.
+Esaminando la rete dal dispositivo client alla distribuzione [!DNL Experience Manager], il punto di interruzione più piccolo sembra essere la limitazione del firewall aziendale a 10 Mbit. È possibile utilizzare questi valori nel calcolatore di dimensionamento nella [Guida al dimensionamento di Assets](assets-sizing-guide.md) per determinare l&#39;esperienza utente.
 
-## Flussi di lavoro definiti del [!DNL Experience Manager] distribuzione {#defined-workflows-of-the-aem-deployment}
+## Flussi di lavoro definiti della distribuzione [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
 
 Quando si considerano le prestazioni di rete, può essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, S3 o altri sistemi di storage collegati alla rete utilizzati e richieste di I/O utilizzano la larghezza di banda della rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
 

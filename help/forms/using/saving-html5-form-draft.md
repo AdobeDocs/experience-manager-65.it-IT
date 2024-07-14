@@ -22,9 +22,9 @@ ht-degree: 5%
 
 ## Profilo personalizzato per consentire la funzione Salva come bozza {#custom-profile-to-allow-save-as-draft-feature}
 
-Con AEM Forms puoi offrire **Salva come bozza** profilo. È possibile eseguire il rendering di un modulo con il profilo Salva come bozza per abilitare la funzionalità di bozza per un modulo HTML5. È possibile specificare il profilo di rendering HTML per un modulo in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+AEM Forms fornisce automaticamente un profilo **Salva come bozza**. È possibile eseguire il rendering di un modulo con il profilo Salva come bozza per abilitare la funzionalità di bozza per un modulo HTML5. È possibile specificare il profilo di rendering HTML per un modulo in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
-Per abilitare la funzionalità Salva come bozza per il file esistente [profilo personalizzato](/help/forms/using/custom-profile.md), aggiungi le seguenti proprietà al nodo del profilo personalizzato:
+Per abilitare la funzionalità Salva come bozza per il [profilo personalizzato](/help/forms/using/custom-profile.md) esistente, aggiungi le seguenti proprietà al nodo del profilo personalizzato:
 
 <table>
  <tbody>
@@ -51,7 +51,7 @@ Per abilitare la funzionalità Salva come bozza per il file esistente [profilo p
 
 ## Archiviazione ed elenco bozze {#drafts-storage-and-listing}
 
-Dopo aver abilitato la funzionalità Salva come bozza per un modulo, quando il modulo viene salvato viene elencato in [Componente Bozze e invio](/help/forms/using/draft-submission-component.md). Potete recuperare e iniziare a riempire il modulo salvato con i componenti Bozza e Invio.
+Dopo aver abilitato la funzionalità Salva come bozza per un modulo, il modulo salvato viene elencato nel [componente Bozze e invio](/help/forms/using/draft-submission-component.md). Potete recuperare e iniziare a riempire il modulo salvato con i componenti Bozza e Invio.
 
 Per abilitare l’elenco dei moduli per il componente Bozza e Invio, aggiungi la seguente proprietà al nodo del profilo:
 
@@ -67,9 +67,9 @@ Per abilitare l’elenco dei moduli per il componente Bozza e Invio, aggiungi la
    <td>fp.enablePortalSubmit</td>
    <td>Stringa</td>
    <td>vero</td>
-   <td>Per abilitare le bozze e i moduli da elencare in<br /> Componente Bozze e invii di Forms Portal dopo l’invio</td>
+   <td>Per abilitare le bozze e i moduli per l'inserimento nell'elenco del componente Bozze e invii di Forms Portal dopo l'invio<br /></td>
   </tr>
  </tbody>
 </table>
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo /content/forms/fp dell’istanza di Publish. È possibile aggiungere il provider di archiviazione personalizzato. Per ulteriori informazioni, vedere [Archiviazione personalizzata per il componente Bozze e invii](/help/forms/using/adding-custom-storage-provider-forms.md).
+Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo /content/forms/fp dell’istanza di Publish. È possibile aggiungere il provider di archiviazione personalizzato. Per informazioni dettagliate, vedere [Archiviazione personalizzata per il componente Bozze e invii](/help/forms/using/adding-custom-storage-provider-forms.md).

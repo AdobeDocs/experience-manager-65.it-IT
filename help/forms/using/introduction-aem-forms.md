@@ -23,7 +23,7 @@ ht-degree: 15%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | Questo articolo |
 
-Per informazioni sulle funzioni e sui miglioramenti più recenti di AEM Forms, consulta [Novità di AEM Forms](../../forms/using/whats-new.md).
+Per informazioni sulle ultime funzionalità e sui miglioramenti di AEM Forms, vedi [Novità di AEM Forms](../../forms/using/whats-new.md).
 
 ## Informazioni su AEM Forms {#about-aem-forms}
 
@@ -33,13 +33,13 @@ AEM Forms combina le funzionalità di authoring, gestione e pubblicazione dei mo
 
 Nelle grandi aziende, i moduli sono spesso creati una volta sola, per poi essere riutilizzati copiandoli in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderli individuabili può essere una sfida considerevole. AEM fornisce un portale Forms personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobili.
 
-AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di gestire i moduli adattivi, ma anche i moduli XFA, i PDF forms e le risorse correlate. Per ulteriori informazioni, consulta [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
+AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di gestire i moduli adattivi, ma anche i moduli XFA, i PDF forms e le risorse correlate. Per ulteriori informazioni, vedere [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
 
 >[!NOTE]
 >
 >La funzione Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it), è progettata esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms, in quanto la funzionalità Adaptive Forms richiede una licenza appropriata.
 
-![Funzionalità dei moduli AEM](do-not-localize/4th-draft-updated.gif)
+![Funzionalità di moduli AEM](do-not-localize/4th-draft-updated.gif)
 
 ### Funzionalità principali {#key-capabilities}
 
@@ -89,16 +89,16 @@ Tutti i tipi di modulo supportano le seguenti funzionalità:
 
 Una volta inviati i dati del modulo, Adobe Experience Manager li collega ai sistemi esistenti, alle regole aziendali e alle persone necessarie.
 
-AEM Forms fornisce Forms Workspace, un’app mobile che estende i processi aziendali digitali ai dispositivi mobili. Utilizzando Forms Workspace, puoi raccogliere e registrare dati anche offline. Forms Workspace utilizza le funzionalità del dispositivo mobile e consente di acquisire foto, video e raccogliere dati quali marche temporali e altre informazioni. Alla successiva connessione a una rete, è possibile sincronizzare i dati raccolti.
+AEM Forms fornisce Forms Workspace, un’app mobile che estende i processi aziendali digitali ai dispositivi mobili. Utilizzando Forms Workspace, puoi raccogliere e registrare dati anche offline. Forms Workspace utilizza le funzionalità del tuo dispositivo mobile e ti consente di acquisire foto, video e raccogliere dati come marche temporali e altre informazioni. Alla successiva connessione a una rete, è possibile sincronizzare i dati raccolti.
 
 L&#39;acquisizione dei dati offline e la loro sincronizzazione alla successiva connessione è particolarmente utile per le persone sul campo. Migliora la produttività e riduce gli errori.
 
-**Vantaggi dell’utilizzo di Forms Workspace per la raccolta dati offline**
+**Vantaggi dell&#39;utilizzo di Forms Workspace per la raccolta dati offline**
 
 * Applicazione HTML Workspace facile da usare per l&#39;assegnazione delle attività e il tracciamento
 * Ambiente di progettazione del flusso di lavoro con trascinamento della selezione
 * Connettori ECM (Enterprise Content Management)
-* Supporto di standard aperti, inclusi XML e SOAP per la connessione dei dati dei moduli con i sistemi aziendali
+* Supporto di standard aperti, inclusi XML e SOAP per collegare i dati dei moduli ai sistemi aziendali
 * I report HTML predefiniti monitorano i backlog, le code di lavoro e gli indicatori di prestazioni chiave (KPI, Key Performance Indicators)
 * Dashboard personalizzabili per informazioni in tempo reale sulle operazioni aziendali
 * API per la connessione con strumenti di reporting di terze parti
@@ -113,7 +113,7 @@ Utilizzando AEM Forms, gli utenti aziendali possono creare esperienze utente per
 
 Documenti personalizzati come ricevute, kit di benvenuto e rendiconti possono essere facilmente consegnati su più canali. Le organizzazioni possono indirizzare il traffico verso portali web personalizzati, con conseguente registrazione o acquisto di servizi aggiuntivi.
 
-**Funzioni principali**
+**Funzioni chiave**
 
 * Ambiente di authoring della corrispondenza con supporto per modelli, blocchi di contenuto, regole aziendali e altro ancora
 * Conversione e assemblaggio di documenti

@@ -49,7 +49,7 @@ Poiché i modelli per frammenti di contenuto, che definiscono la struttura dei f
 
 >[!TIP]
 >
->In genere l’architetto dei contenuti fornisce allo specialista della traduzione **Nome proprietà** s di tutti i campi necessari per la traduzione. Questi nomi sono necessari per configurare le regole di traduzione. Se ti occupi della traduzione, puoi [trovare questi **Nomi proprietà** in autonomia](getting-started.md#content-models), come descritto in precedenza in questo percorso.
+>In genere l&#39;architetto dei contenuti fornisce allo specialista della traduzione **Nome proprietà** di tutti i campi necessari per la traduzione. Questi nomi sono necessari per configurare le regole di traduzione. Se ti occupi della traduzione, puoi [trovare questi **Nomi proprietà** in autonomia](getting-started.md#content-models), come descritto in precedenza in questo percorso.
 
 ## Creazione di regole di traduzione {#creating-rules}
 
@@ -60,22 +60,22 @@ Le regole di traduzione sono progettate per gestire tali scenari. Tuttavia, in q
 Una console **Configurazione della traduzione** è disponibile per la configurazione delle regole di traduzione. Per accedervi:
 
 1. Passa a **Strumenti** > **Generale**.
-1. Clic **Configurazione traduzione**.
+1. Fai clic su **Configurazione traduzione**.
 
 Nell’interfaccia utente di **Configurazione della traduzione** sono disponibili diverse opzioni per le regole di traduzione. Qui vengono evidenziati i passaggi più necessari e tipici necessari per una configurazione di base della localizzazione headless.
 
-1. Clic **Aggiungi contesto**, che consente di aggiungere un percorso. Questo è il percorso del contenuto interessato dalla regola.
+1. Fai clic su **Aggiungi contesto**, per aggiungere un percorso. Questo è il percorso del contenuto interessato dalla regola.
    ![Aggiungi contesto](assets/add-translation-context.png)
-1. Utilizza il browser percorsi per selezionare il percorso desiderato e fai clic su **Conferma** per salvare. Ricorda che i frammenti di contenuto, che contengono contenuto headless, si trovano in genere in `/content/dam/<your-project>`.
+1. Utilizza il browser percorsi per selezionare il percorso richiesto e fai clic sul pulsante **Conferma** per salvare. Ricorda che i frammenti di contenuto, che contengono contenuto headless, si trovano in genere in `/content/dam/<your-project>`.
    ![Seleziona il percorso](assets/select-context.png)
 1. AEM salva la configurazione.
-1. Seleziona il contesto creato, quindi fai clic su **Modifica**. Viene aperto l’**Editor regole di traduzione** per configurare le proprietà.
+1. Selezionare il contesto creato, quindi fare clic su **Modifica**. Viene aperto l’**Editor regole di traduzione** per configurare le proprietà.
    ![Editor regole di traduzione](assets/translation-rules-editor.png)
-1. Per impostazione predefinita, tutte le configurazioni vengono ereditate dal percorso padre, in questo caso `/content/dam`. Deseleziona l’opzione **Eredita da`/content/dam`** per aggiungere campi aggiuntivi alla configurazione.
+1. Per impostazione predefinita, tutte le configurazioni vengono ereditate dal percorso padre, in questo caso `/content/dam`. Deseleziona l&#39;opzione **Eredita da`/content/dam`** per aggiungere campi aggiuntivi alla configurazione.
 1. Una volta deselezionato, sotto la sezione **Generale** aggiungi i nomi delle proprietà dei modelli per frammento di contenuto [precedentemente identificati come campi per la traduzione.](getting-started.md#content-models)
    1. Immetti il nome della proprietà nel campo **Nuova proprietà**.
    1. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.
-   1. Clic **Aggiungi**.
+   1. Fare clic su **Aggiungi**.
    1. Ripeti questi passaggi per tutti i campi da tradurre.
    1. Fai clic su **Salva**.
       ![Aggiungi proprietà](assets/add-property.png)
@@ -95,10 +95,10 @@ Ora cha hai completato questa parte del percorso di traduzione headless, dovrest
 * Comprendere come funzionano le regole di traduzione.
 * Essere in grado di definire le tue regole di traduzione.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Traduci contenuto](translate-content.md) dove scoprirai come l’integrazione e le regole lavorano insieme per tradurre contenuti headless.
+Approfondisci l&#39;argomento e continua il percorso di traduzione headless AEM consultando il documento successivo [Tradurre il contenuto](translate-content.md) dove verrà illustrato come l&#39;integrazione e le regole interagiscono per tradurre contenuti headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless esaminando il documento [Traduci contenuto](translate-content.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non è necessario che continuino sul percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless consultando il documento [Traduci contenuto](translate-content.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Identificazione del contenuto da tradurre](/help/sites-administering/tc-rules.md) - Scopri come le regole di traduzione identificano i contenuti da tradurre.

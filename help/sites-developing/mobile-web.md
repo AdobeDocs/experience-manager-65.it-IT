@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM fornisce diversi strumenti che consentono di sviluppare siti per dispositivi mobili e di integrare i contenuti nelle applicazioni mobili.
 
-Questa pagina deve essere letta insieme alla [Pagina mobile per autori](/help/sites-authoring/mobile.md).
+Questa pagina deve essere letta insieme alla [pagina Mobile per autori](/help/sites-authoring/mobile.md).
 
 ## Sviluppo di siti web per dispositivi mobili {#developing-web-sites-for-mobile}
 
@@ -38,4 +38,4 @@ Sviluppa modelli di pagina e componenti ottimizzati per la visualizzazione trami
 
 ## Sviluppo di app mobili {#developing-mobile-apps}
 
-Sviluppa applicazioni mobili che utilizzano le pagine AEM come interfaccia dell’applicazione. AEM si integra con PhoneGap in modo da poter creare facilmente app utilizzando le pagine AEM. Sincronizzazione contenuti consente di creare archivi con versioni delle pagine da includere nel bundle con le app. Per ulteriori informazioni sulla sincronizzazione dei contenuti, fai clic su [qui](/help/mobile/phonegap-contentsync.md).
+Sviluppa applicazioni mobili che utilizzano le pagine AEM come interfaccia dell’applicazione. AEM si integra con PhoneGap in modo da poter creare facilmente app utilizzando le pagine AEM. Sincronizzazione contenuti consente di creare archivi con versioni delle pagine da includere nel bundle con le app. Per ulteriori informazioni sulla sincronizzazione dei contenuti, fare clic [qui](/help/mobile/phonegap-contentsync.md).

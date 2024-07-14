@@ -23,16 +23,16 @@ ht-degree: 4%
 >* Questa pagina offre una panoramica delle operazioni di base nell’ambiente di authoring Adobe Experience Manager (AEM). Usa la console **Sites** come base.
 >
 >* Alcune funzionalità non sono disponibili in tutte le console, mentre altre sono disponibili in alcune console. Informazioni specifiche sulle singole console e sulle relative funzionalità sono descritte più dettagliatamente in altre pagine.
->* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [utilizzo delle console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [modifica di pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [si utilizzano le console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [si modificano le pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## Schermata di benvenuto {#the-welcome-screen}
 
-L’interfaccia classica offre una selezione di console utilizzando meccanismi noti per la navigazione e l’avvio di azioni quali clic, doppio clic e [menu di scelta rapida](#context-menus).
+L&#39;interfaccia utente classica offre una selezione di console utilizzando meccanismi noti per la navigazione e l&#39;avvio di azioni, tra cui clic, doppio clic e [menu di scelta rapida](#context-menus).
 
 Dopo l&#39;accesso, viene visualizzata la schermata iniziale. Fornisce un elenco di collegamenti a console e servizi:
 
-![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
+![schermata_shot_2012-01-30alle61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
 ## Console {#consoles}
 
@@ -49,41 +49,41 @@ Le console principali sono:
    <td>Offre una panoramica e un accesso diretto (tramite collegamenti) alle funzionalità principali dell’AEM.</td>
   </tr>
   <tr>
-   <td><strong>Risorse digitali</strong><br /> </td>
-   <td>Queste console consentono di importare e <a href="/help/sites-classic-ui-authoring/classicui-assets.md">gestire le risorse digitali</a> ad esempio immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM. </td>
+   <td><strong>Assets digitale</strong><br /> </td>
+   <td>Queste console ti consentono di importare e <a href="/help/sites-classic-ui-authoring/classicui-assets.md">gestire risorse digitali</a> quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM. </td>
   </tr>
   <tr>
    <td><strong>Lanci</strong></td>
-   <td>Questo consente di gestire <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanci</a>; questi consentono di sviluppare il contenuto per una versione futura di una o più pagine web attivate.<br /> <i>Nota: nell’interfaccia touch, molte delle stesse funzionalità sono disponibili nella console Sites, insieme alla barra Riferimenti.</i> <i>Se necessario, questa console è disponibile dalla console Strumenti; seleziona Operazioni, quindi Avvii.</i></td>
+   <td>Questo consente di gestire i <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanci</a>; questi consentono di sviluppare il contenuto per una versione futura di una o più pagine Web attivate.<br /> <i>Nota: nell'interfaccia touch sono disponibili molte delle stesse funzionalità nella console Sites, insieme alla barra Riferimenti.</i> <i>Se necessario, questa console è disponibile dalla console Strumenti; selezionare Operazioni, quindi Avvii.</i></td>
   </tr>
   <tr>
    <td><strong>Casella in entrata </strong></td>
-   <td>Spesso sono coinvolte più persone nelle sottoattività di un flusso di lavoro e ogni persona deve completare il proprio passaggio prima di consegnare il lavoro alla persona successiva. La Casella in entrata consente di visualizzare le notifiche relative a tali attività. Consulta <a href="/help/sites-administering/workflows.md">Utilizzo dei flussi di lavoro</a>. <br /> </td>
+   <td>Spesso sono coinvolte più persone nelle sottoattività di un flusso di lavoro e ogni persona deve completare il proprio passaggio prima di consegnare il lavoro alla persona successiva. La Casella in entrata consente di visualizzare le notifiche relative a tali attività. Vedi <a href="/help/sites-administering/workflows.md">Utilizzo dei flussi di lavoro</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Assegnazione dei tag</strong></td>
-   <td>Le console di assegnazione tag consentono di gestire i tag. I tag sono nomi brevi o frasi che puoi utilizzare per classificare e annotare parti di contenuto in modo da semplificarne la ricerca e l’organizzazione. Per ulteriori informazioni, consulta <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Utilizzo e gestione dei tag</a>.</td>
+   <td>Le console di assegnazione tag consentono di gestire i tag. I tag sono nomi brevi o frasi che puoi utilizzare per classificare e annotare parti di contenuto in modo da semplificarne la ricerca e l’organizzazione. Per ulteriori informazioni, vedere <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Utilizzo e gestione dei tag</a>.</td>
   </tr>
   <tr>
    <td><strong>Strumenti</strong></td>
-   <td>Il <a href="/help/sites-administering/tools-consoles.md">Console Strumenti</a> fornisce l’accesso a diversi strumenti e console specializzati per la gestione dei siti web, delle risorse digitali e di altri aspetti dell’archivio dei contenuti.</td>
+   <td>Le <a href="/help/sites-administering/tools-consoles.md">console Strumenti</a> consentono di accedere a console e strumenti specifici per la gestione dei siti Web, delle risorse digitali e di altri aspetti dell'archivio dei contenuti.</td>
   </tr>
   <tr>
    <td><strong>Utenti</strong></td>
-   <td>Queste console consentono di gestire i diritti di accesso di utenti e gruppi. Per informazioni dettagliate, consulta <a href="/help/sites-administering/security.md">Amministrazione utenti e sicurezza</a>.<br /> </td>
+   <td>Queste console consentono di gestire i diritti di accesso di utenti e gruppi. Per informazioni dettagliate, vedere <a href="/help/sites-administering/security.md">Amministrazione utenti e sicurezza</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Siti Web</strong></td>
-   <td>Le console Siti/Siti Web consentono di: <a href="/help/sites-classic-ui-authoring/classic-page-author.md">creare, visualizzare e gestire siti Web</a> in esecuzione sull’istanza AEM. Tramite queste console puoi creare, copiare, spostare ed eliminare pagine web, avviare flussi di lavoro e attivare (pubblicare) pagine. Puoi anche aprire una pagina per la modifica.<br /> </td>
+   <td>Le console Sites/Websites ti consentono di <a href="/help/sites-classic-ui-authoring/classic-page-author.md">creare, visualizzare e gestire siti Web</a> in esecuzione nell'istanza AEM. Tramite queste console puoi creare, copiare, spostare ed eliminare pagine web, avviare flussi di lavoro e attivare (pubblicare) pagine. È inoltre possibile aprire una pagina per la modifica.<br /> </td>
   </tr>
   <tr>
    <td><strong>Flussi di lavoro</strong></td>
-   <td>Un flusso di lavoro è una serie definita di passaggi che descrivono il processo di completamento di alcune attività. Spesso sono coinvolte più persone in un'attività e ogni persona deve completare il proprio passaggio prima di consegnare il lavoro alla persona successiva. La console Flusso di lavoro consente di creare modelli di flusso di lavoro e gestire le istanze di flusso di lavoro in esecuzione. Consulta <a href="/help/sites-administering/workflows.md">Utilizzo dei flussi di lavoro</a>.<br /> </td>
+   <td>Un flusso di lavoro è una serie definita di passaggi che descrivono il processo di completamento di alcune attività. Spesso sono coinvolte più persone in un'attività e ogni persona deve completare il proprio passaggio prima di consegnare il lavoro alla persona successiva. La console Flusso di lavoro consente di creare modelli di flusso di lavoro e gestire le istanze di flusso di lavoro in esecuzione. Vedi <a href="/help/sites-administering/workflows.md">Utilizzo dei flussi di lavoro</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-Il **Siti Web** console fornisce due riquadri per la navigazione e la gestione delle pagine:
+La console **Siti Web** offre due riquadri per la navigazione e la gestione delle pagine:
 
 * Riquadro sinistro
 
@@ -95,38 +95,38 @@ Il **Siti Web** console fornisce due riquadri per la navigazione e la gestione d
 
   Mostra le pagine (nella posizione selezionata nel riquadro a sinistra) e può essere utilizzato per intervenire.
 
-Da qui puoi [gestire le pagine](/help/sites-authoring/managing-pages.md) utilizzando la barra degli strumenti, un menu di scelta rapida o aprendo una pagina per ulteriori azioni.
+Da qui è possibile [gestire le pagine](/help/sites-authoring/managing-pages.md) utilizzando la barra degli strumenti, un menu di scelta rapida o aprendo una pagina per ulteriori azioni.
 
 >[!NOTE]
 >
->Le operazioni di base sono le stesse su tutte le console. Questa sezione si concentra sul **Siti Web** in quanto è la console principale utilizzata durante l’authoring.
+>Le operazioni di base sono le stesse su tutte le console. Questa sezione si concentra sulla console **Siti Web** in quanto è la console principale utilizzata durante l&#39;authoring.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ## Accedere all’Aiuto   {#accessing-help}
 
-Su varie console (ad esempio, Siti Web), viene visualizzata una **Aiuto** è disponibile. Clic **Aiuto** apre Condivisione pacchetti o il sito della documentazione.
+Su varie console (ad esempio, Siti Web) è disponibile un pulsante **Guida**. Facendo clic su **Guida** verrà aperto Condivisione pacchetti o il sito della documentazione.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-Durante la modifica di una pagina, il [nella barra laterale è inoltre disponibile un pulsante per accedere all&#39;Aiuto](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+Durante la modifica di una pagina, la barra laterale [presenta anche un pulsante per accedere alla Guida](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## Navigazione con la console Siti web {#navigating-with-the-websites-console}
 
-Il **Siti Web** in console le pagine di contenuto vengono elencate in una struttura ad albero (riquadro a sinistra). Per semplificare la navigazione, è possibile espandere (+) o comprimere (-) le sezioni della struttura ad albero come richiesto:
+Nella console **Siti Web** le pagine di contenuto sono elencate in una struttura ad albero (riquadro a sinistra). Per semplificare la navigazione, è possibile espandere (+) o comprimere (-) le sezioni della struttura ad albero come richiesto:
 
 * Facendo clic sul nome della pagina nel riquadro a sinistra, si effettua quanto segue:
 
    * Elenca le pagine figlie nel riquadro di destra
    * Espande la struttura nel riquadro sinistro.
 
-     Per motivi di prestazioni, questa azione dipende dal numero di nodi secondari. Con un&#39;installazione standard, questo metodo di espansione funziona quando `30` o meno nodi figlio.
+     Per motivi di prestazioni, questa azione dipende dal numero di nodi secondari. Con un&#39;installazione standard, questo metodo di espansione funziona quando sono presenti al massimo `30` nodi secondari.
 
 * Facendo doppio clic sul nome della pagina (riquadro sinistro), la struttura si espande, anche se l&#39;apertura della pagina non è così evidente.
 
 >[!NOTE]
 >
->Questo valore predefinito ( `30`) può essere modificata per console nelle configurazioni specifiche dell&#39;applicazione del widget siteadmin:
+>Questo valore predefinito ( `30`) può essere modificato per console nelle configurazioni specifiche dell&#39;applicazione del widget siteadmin:
 >
 >Sul nodo siteadmin:
 >
@@ -141,13 +141,13 @@ Il **Siti Web** in console le pagine di contenuto vengono elencate in una strutt
 >in:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Consulta [SiteAdmin nell’API del widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) per ulteriori dettagli.
+>Per ulteriori dettagli, consulta [SiteAdmin nell&#39;API del widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 
 ## Informazioni pagina nella console Siti web {#page-information-on-the-websites-console}
 
-Riquadro destro della sezione **Siti Web** console fornisce una vista a elenco con informazioni sulle pagine:
+Il riquadro destro della console **Siti Web** fornisce una visualizzazione elenco con informazioni sulle pagine:
 
-![page-info](assets/page-info.png)
+![informazioni-pagina](assets/page-info.png)
 
 Sono disponibili gli elementi seguenti. Per impostazione predefinita viene visualizzato un sottoinsieme di questi campi:
 
@@ -178,7 +178,7 @@ Sono disponibili gli elementi seguenti. Per impostazione predefinita viene visua
    <td>Indica se la pagina è stata modificata e fornisce la data e l’ora della modifica. Per salvare eventuali modifiche, devi attivare la pagina.</td>
   </tr>
   <tr>
-   <td>Pubblicazione Scene7</td>
+   <td>Scene7 Publish</td>
    <td>Indica se la pagina è stata pubblicata in Scene7.<br /> </td>
   </tr>
   <tr>
@@ -210,9 +210,9 @@ Sono disponibili gli elementi seguenti. Per impostazione predefinita viene visua
 
 >[!NOTE]
 >
->Per selezionare le colonne visibili, posiziona il cursore del mouse sul titolo di una colonna. Viene visualizzato un menu a discesa e da qui è possibile utilizzare **Colonne** opzione.
+>Per selezionare le colonne visibili, posiziona il cursore del mouse sul titolo di una colonna. Viene visualizzato un menu a discesa e da qui puoi utilizzare l&#39;opzione **Colonne**.
 
-I colori accanto alle pagine nel **Pubblicato** e **Modificato** le colonne indicano lo stato di pubblicazione:
+I colori accanto alle pagine nelle colonne **Pubblicato** e **Modificato** indicano lo stato della pubblicazione:
 
 | **Colonna** | **Colore** | **Descrizione** |
 |---|---|---|

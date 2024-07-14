@@ -18,14 +18,14 @@ Puoi ricevere notifiche da varie aree dell’AEM, inclusi flussi di lavoro e pro
 
 * Attività:
 
-   * possono essere create anche in vari punti nell’interfaccia utente dell’AEM, ad esempio in **Progetti**,
-   * possono essere il prodotto di un workflow **Crea attività** o **Crea attività progetto** passaggio.
+   * possono essere create anche in vari punti nell&#39;interfaccia utente dell&#39;AEM, ad esempio in **Progetti**,
+   * possono essere il prodotto di un passaggio del flusso di lavoro **Crea attività** o **Crea attività progetto**.
 
 * Flussi di lavoro:
 
    * elementi di lavoro che rappresentano azioni da eseguire sul contenuto della pagina;
 
-      * sono il prodotto di workflow **Partecipante** passaggi
+      * sono il prodotto dei passaggi **Partecipante** del flusso di lavoro
 
    * elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito.
 
@@ -33,7 +33,7 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 
 >[!NOTE]
 >
->L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Consulta [Attività amministrative predefinite](#out-of-the-box-administrative-tasks) per i dettagli.
+>L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Per informazioni dettagliate, consulta [Attività amministrative predefinite](#out-of-the-box-administrative-tasks).
 
 >[!NOTE]
 >
@@ -70,10 +70,10 @@ Per aprire la casella in entrata delle notifiche AEM:
 
 1. Fai clic sull’indicatore nella barra degli strumenti.
 
-1. Seleziona **Visualizza tutto**. Il **Casella in entrata AEM** viene aperto. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
+1. Seleziona **Visualizza tutto**. Verrà aperta la cartella Posta in arrivo **AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
-   Per entrambe le viste potete anche definire [Impostazioni vista](#inbox-view-settings); le opzioni disponibili dipendono dalla vista corrente.
+   Per entrambe le visualizzazioni è inoltre possibile definire [Impostazioni visualizzazione](#inbox-view-settings); le opzioni disponibili dipendono dalla visualizzazione corrente.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -95,9 +95,9 @@ Questa vista mostra gli elementi in base alla loro posizione nel calendario e al
 
 Operazioni disponibili:
 
-* selezionare una visualizzazione specifica; **Timeline**, **Colonna**, **Elenco**
+* seleziona una visualizzazione specifica; **Timeline**, **Colonna**, **Elenco**
 
-* specifica le attività da visualizzare in base a **Pianificazione**; **Tutti**, **Pianificato**, **In corso**, **In scadenza**, **Scaduto**
+* specifica le attività da visualizzare in base a **Pianificazione**; **Tutte**, **Pianificate**, **In corso**, **In scadenza**, **Scadute**
 
 * espandere la visualizzazione per ottenere informazioni più dettagliate su un elemento
 * seleziona un intervallo di date per attivare la visualizzazione:
@@ -137,25 +137,25 @@ L’opzione Admin Control consente agli amministratori di:
 
 * Controlla la visualizzazione dei collegamenti di navigazione disponibili nell’intestazione
 
-L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrators` o `workflow-administrators` gruppo.
+L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrators` o `workflow-administrators`.
 
 * **Personalizzazione colonna**: personalizza una casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
-   * **Aggiungi colonna**: seleziona una colonna da aggiungere nella casella in entrata AEM.
-   * **Modifica colonna**: passa il mouse sul titolo della colonna e seleziona ![modifica](assets/edit.svg) per immettere il nome visualizzato di una colonna.
-   * **Elimina colonna**: seleziona la ![eliminare](assets/delete_updated.svg) per eliminare la colonna dalla casella in entrata AEM.
-   * **Sposta colonna**: trascina ![sposta](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella casella in entrata AEM.
+   * **Aggiungi colonna**: selezionare una colonna da aggiungere nella casella in entrata AEM.
+   * **Modifica colonna**: passa il mouse sul titolo della colonna e seleziona l&#39;icona ![modifica](assets/edit.svg) per immettere il nome visualizzato della colonna.
+   * **Elimina colonna**: selezionare l&#39;icona ![elimina](assets/delete_updated.svg) per eliminare la colonna dalla casella in entrata AEM.
+   * **Sposta colonna**: trascina l&#39;icona ![Sposta](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella casella in entrata AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
-* **Personalizzazione del branding**
+* **Personalizzazione del marchio**
 
-   * **Personalizza testo intestazione:** Specifica il testo da visualizzare nell’intestazione per sostituire il testo predefinito **Adobe Experience Manager** testo.
+   * **Personalizza testo intestazione:** Specificare il testo da visualizzare nell&#39;intestazione per sostituire il testo predefinito **Adobe Experience Manager**.
 
-   * **Personalizza logo:** Specifica l’immagine da visualizzare nell’intestazione come logo. Carica un’immagine in Digital Asset Management (DAM) e fai riferimento a tale immagine nel campo.
+   * **Personalizza logo:** Specificare l&#39;immagine da visualizzare nell&#39;intestazione come logo. Carica un’immagine in Digital Asset Management (DAM) e fai riferimento a tale immagine nel campo.
 
 * **Navigazione utente**
-   * **Nascondi opzioni di navigazione:** Seleziona questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili toccando il logo o il testo di Adobe Experience Manager.
-* **Salva:** Fare clic su questa opzione per salvare le impostazioni.
+   * **Nascondi opzioni di spostamento:** Selezionare questa opzione per nascondere le opzioni di spostamento disponibili nell&#39;intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili toccando il logo o il testo di Adobe Experience Manager.
+* **Salva:** Scegliere questa opzione per salvare le impostazioni.
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
 
@@ -170,7 +170,7 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
 
    Le azioni dipendono dall’elemento selezionato e includono:
 
-   * **Completa** ad esempio un&#39;attività o un elemento del flusso di lavoro.
+   * **Completa** azione; ad esempio, un&#39;attività o un elemento del flusso di lavoro.
    * **Riassegna**/**Delega** un elemento.
    * **Apri** un elemento; a seconda del tipo di elemento, questa azione può:
 
@@ -194,7 +194,7 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
    * verrà avviata una Action Wizard.
    * verrà aperta una pagina della documentazione.
 
-   Ad esempio: **Riassegna** apre una finestra di dialogo:
+   Ad esempio, **Riassegna** apre una finestra di dialogo:
 
    ![wf-85](assets/wf-85.png)
 
@@ -209,14 +209,14 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
 Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Crea**, quindi **Attività**.
-1. Compila i campi necessari nella sezione **Base** e **Avanzate** schede; solo il **Titolo** è obbligatorio, tutti gli altri sono facoltativi:
+1. Compila i campi necessari nelle schede **Base** e **Avanzate**. È obbligatorio solo il **Titolo**, tutti gli altri sono facoltativi:
 
    * **Base**:
 
       * **Titolo**
       * **Progetto**
       * **Assegnatario**
-      * **Contenuto**; simile al payload, è un riferimento dall’attività a una posizione nell’archivio
+      * **Contenuto**; simile al payload, è un riferimento dall&#39;attività a una posizione nell&#39;archivio
       * **Descrizione**
       * **Priorità attività**
       * **Data inizio**
@@ -226,7 +226,7 @@ Dalla casella in entrata è possibile creare le attività:
 
    * **Avanzate**
 
-      * **Nome**: viene utilizzato per formare l’URL; se questo campo viene lasciato vuoto, verrà basato sul valore **Titolo**.
+      * **Nome**: utilizzato per formare l&#39;URL; se vuoto, verrà basato sul **Titolo**.
 
    ![wf-87](assets/wf-87.png)
 

@@ -18,25 +18,25 @@ ht-degree: 1%
 
 # Utilizzo della votazione {#using-voting}
 
-Il `Voting` Il componente è uno strumento utile che consente ai membri della community di assegnare una valutazione a un particolare contenuto, ad esempio una risposta all’interno di un componente Controllo qualità. Con il `Voting` componente, i membri selezionano frecce verso l&#39;alto o verso il basso per indicare la propria opinione.
+Il componente `Voting` è uno strumento utile che consente ai membri della community di valutare un particolare contenuto, ad esempio una risposta all&#39;interno di un componente di controllo qualità. Con il componente `Voting`, i membri selezionano frecce verso l&#39;alto o verso il basso per indicare la propria opinione.
 
 ## Aggiunta di voti a una pagina {#adding-voting-to-a-page}
 
-Per aggiungere una `Voting` a una pagina in modalità Autore, utilizza il browser Componenti. Individua `Communities / Voting` e trascinarlo in una pagina, ad esempio una posizione relativa alla funzione su cui gli utenti possono votare.
+Per aggiungere un componente `Voting` a una pagina in modalità Creazione, utilizzare il browser Componenti. Individuare `Communities / Voting` e trascinarlo in una pagina, ad esempio una posizione relativa alla funzione su cui gli utenti possono votare.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](basics.md).
 
-Quando [librerie lato client richieste](essentials-voting.md#essentials-for-client-side) sono inclusi, è così che `Voting` viene visualizzato.
+Quando sono incluse le [librerie lato client richieste](essentials-voting.md#essentials-for-client-side), il componente `Voting` viene visualizzato in questo modo.
 
 ![componente voto](assets/voting-component.png)
 
 ## Configurazione della votazione {#configuring-voting}
 
-Seleziona la inserita `Voting` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
+Selezionare il componente `Voting` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo per modifica.
 
 ![configura](assets/configure-new.png)
 
-Sotto **[!UICONTROL Testi ed etichette]** , specificare le proprietà utilizzate per registrare i voti.
+Nella scheda **[!UICONTROL Testi ed etichette]**, specifica le proprietà utilizzate per registrare i voti.
 
 ![voting-label](assets/voting-label.png)
 
@@ -50,7 +50,7 @@ Sotto **[!UICONTROL Testi ed etichette]** , specificare le proprietà utilizzate
 
 * **[!UICONTROL Nome conteggio]**
 
-  (*Obbligatorio*) Nome di proprietà interno e identificabile per questa istanza di un componente voting.
+  (*Obbligatorio*) Il nome della proprietà interna identificabile per questa istanza di un componente voting.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
@@ -64,4 +64,4 @@ Voto anonimo non supportato. I visitatori del sito devono registrarsi (diventare
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Elementi di base per la votazione](essentials-voting.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Voting Essentials](essentials-voting.md) per sviluppatori.

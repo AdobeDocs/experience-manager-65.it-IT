@@ -61,15 +61,15 @@ Un modo per farlo è:
 
 * Dal menu principale
 
-   * Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**.
-   * Seleziona **[!UICONTROL Attiva albero]**.
-   * Imposta `Start Path` a `/apps/custom`.
+   * Selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**.
+   * Selezionare **[!UICONTROL Attiva albero]**.
+   * Imposta `Start Path` su `/apps/custom`.
    * Deseleziona **[!UICONTROL Solo Modificato]**.
-   * Seleziona **[!UICONTROL Attiva]** pulsante.
+   * Selezionare il pulsante **[!UICONTROL Attiva]**.
 
 ### Visualizza commento modificato nella pagina di esempio pubblicata {#view-modified-comment-on-published-sample-page}
 
-[Continuare l&#39;esperienza](/help/communities/extend-sample-page.md#publish-sample-page) nell’istanza di pubblicazione, ancora con accesso come stesso utente, ora è possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
+[Continuando l&#39;esperienza](/help/communities/extend-sample-page.md#publish-sample-page) sull&#39;istanza di pubblicazione, ancora connessa con lo stesso utente, ora è possibile aggiornare la pagina nell&#39;ambiente di pubblicazione per visualizzare la modifica per rimuovere l&#39;avatar:
 
 ![view-modified-content](assets/view-modified-content.png)
 

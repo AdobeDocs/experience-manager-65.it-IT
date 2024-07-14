@@ -20,8 +20,8 @@ ht-degree: 0%
 
 Il servizio informazioni di sistema fornisce API REST per recuperare informazioni. Per utilizzare il servizio informazioni di sistema, abilitare l&#39;endpoint REST dalla console di amministrazione. Per abilitare l’endpoint REST, effettua le seguenti operazioni:
 
-1. Accedere alla console di amministrazione. L’URL predefinito della console di amministrazione è `https://[hostname]:'port'/adminui.`
+1. Accedere alla console di amministrazione. URL predefinito della console di amministrazione: `https://[hostname]:'port'/adminui.`
 1. Passare a Servizi > Applicazioni e servizi > Gestione servizi.
-1. Nella pagina Gestione dei servizi, fare clic su **SystemInfo** servizio.
-1. Nell&#39;elenco della scheda Punti finali, selezionare REST e fare clic su **Aggiungi**.
-1. Nella schermata Aggiungi endpoint REST, fai clic su **Aggiungi**.
+1. Nella pagina Gestione servizi fare clic sul servizio **SystemInfo**.
+1. Nell&#39;elenco della scheda Endpoints, selezionare REST e fare clic su **Aggiungi**.
+1. Nella schermata Aggiungi endpoint REST, fare clic su **Aggiungi**.

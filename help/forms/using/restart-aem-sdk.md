@@ -18,10 +18,10 @@ Se riavvii l’SDK dell’AEM interrompendo i processi Java™, potrebbero verif
 
 `javax.jcr.RepositoryException: Applying repoinit operation failed despite retry; set loglevel to DEBUG to see all exceptions. Last exception message was: Failed to set ACL (javax.jcr.ValueFormatException: Invalid type: 0) AclLine ALLOW {principals=[forms-xfa-writers], privileges=[jcr:modifyProperties]} restrictions=[rep:glob=[*/jcr:content/*], rep:itemNames=[xfaForm], fd:condition=[xfaForm, 1]]`
 
-![Restart-aem-sdk-error](/help/forms/using/assets/restart-sdk-error.png)
+![Riavvia-aem-sdk-error](/help/forms/using/assets/restart-sdk-error.png)
 
 ## Soluzione
 
-Per riavviare l&#39;SDK dell&#39;AEM, passare alla finestra di comando attiva e premere `Ctrl + C` per riavviare l&#39;SDK.
+Per riavviare l&#39;SDK per AEM, passare alla finestra di comando attiva e premere il comando `Ctrl + C` per riavviare l&#39;SDK.
 
 Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java™, può causare incongruenze nell’ambiente di sviluppo dell’AEM.

@@ -1,6 +1,6 @@
 ---
 title: Protect un documento per conto di un altro utente
-description: Scopri in che modo AEM Forms Document Security Java&trade; SDK offre API per un account utente per proteggere un documento per conto di un altro utente.
+description: Scopri in che modo AEM Forms Document Security Java&trade; SDK offre le API per un account utente per proteggere un documento per conto di un altro utente.
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 L’SDK Java™ per AEM Forms Document Security fornisce API che consentono a un account utente di proteggere un documento per conto di un altro utente senza dover ottenere le autorizzazioni per modificarlo. È possibile utilizzare le API in un processo di flusso di lavoro o a livello di programmazione come servizio documenti. Le nuove API sono:
 
-* **protectDocumentUse** API ProtectDocument che consente di applicare una policy a un documento per conto di
+* **protectDocumentUse** l&#39;API ProtectDocument che consente di applicare un criterio a un documento per conto di
 
   un altro account utente. Le autorizzazioni dell’account utente utilizzato per applicare la policy rimangono limitate alla protezione del documento. Non è possibile aprire e visualizzare il documento. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
-* **createLicenseUse** API CreateLicense per creare una licenza per un criterio per conto di un altro account utente. PublishLicenseDTO createLicense(String policyId, String documentName, booleano logSecureDocEvent)
-* **protectDocumentWithCoverPageUse** l’API ProtectDocumentWithCoverPage, che consente di applicare una policy e aggiungere una pagina di copertina a un documento per conto di un altro utente. Le autorizzazioni dell’account utente utilizzato per applicare la policy rimangono limitate alla protezione del documento. Non è possibile aprire e visualizzare il documento. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, booleano bExactMatchForNames)
+* **createLicenseUse** l&#39;API CreateLicense che consente di creare una licenza per un criterio per conto di un altro account utente. PublishLicenseDTO createLicense(String policyId, String documentName, booleano logSecureDocEvent)
+* **protectDocumentWithCoverPageUse** l&#39;API ProtectDocumentWithCoverPage per consentire l&#39;applicazione di una policy e l&#39;aggiunta di una pagina di copertina a un documento per conto di un altro utente. Le autorizzazioni dell’account utente utilizzato per applicare la policy rimangono limitate alla protezione del documento. Non è possibile aprire e visualizzare il documento. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, booleano bExactMatchForNames)
 
 ## Utilizzo delle API per proteggere un documento per conto di un altro utente {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 

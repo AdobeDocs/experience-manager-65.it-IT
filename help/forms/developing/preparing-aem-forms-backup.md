@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Preparazione di AEM Forms per il backup {#preparing-aem-forms-for-backup}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 ## Informazioni sul servizio Backup e ripristino {#about-the-backup-and-restore-service}
 
-Il servizio di backup e ripristino consente di inserire AEM Forms in *modalità di backup*, che consente di eseguire backup a caldo. Il servizio Backup e ripristino non esegue effettivamente il backup di AEM Forms o il ripristino del sistema. In questo modo, il server si trova in uno stato che consente di eseguire backup coerenti e affidabili e al tempo stesso di continuare l&#39;esecuzione del server. L&#39;utente è responsabile delle azioni di backup di GDS (Global Document Storage) e del database connesso al server Forms. Il GDS è una directory utilizzata per memorizzare i file utilizzati in un processo di lunga durata.
+Il servizio Backup e ripristino consente di attivare la *modalità di backup* di AEM Forms, che consente di eseguire backup a caldo. Il servizio Backup e ripristino non esegue effettivamente il backup di AEM Forms o il ripristino del sistema. In questo modo, il server si trova in uno stato che consente di eseguire backup coerenti e affidabili e al tempo stesso di continuare l&#39;esecuzione del server. L&#39;utente è responsabile delle azioni di backup di GDS (Global Document Storage) e del database connesso al server Forms. Il GDS è una directory utilizzata per memorizzare i file utilizzati in un processo di lunga durata.
 
 La modalità di backup è uno stato immesso dal server in modo che i file nel GDS non vengano eliminati durante una procedura di backup. Al contrario, le sottodirectory vengono create nella directory GDS per mantenere un record di file da eliminare al termine della modalità di backup del salvataggio. Un file ha lo scopo di sopravvivere ai riavvii del sistema e può durare giorni o anche anni. Questi file rappresentano una parte critica dello stato generale di Forms Server e possono includere file PDF, criteri o modelli di modulo. Se uno di questi file viene perso o danneggiato, i processi sul server Forms potrebbero diventare instabili e i dati potrebbero andare perduti.
 
@@ -43,11 +43,11 @@ La modalità di backup è uno stato immesso dal server in modo che i file nel GD
 
 >[!NOTE]
 >
->Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
+>Per ulteriori informazioni su cosa prendere in considerazione durante l&#39;esecuzione dei backup per AEM Forms, vedere [guida per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Accesso alla modalità di backup sul server Forms {#entering-backup-mode-on-the-forms-server}
 
@@ -57,11 +57,11 @@ La modalità di backup è uno stato immesso dal server in modo che i file nel GD
 * Tempo necessario per il completamento della procedura di backup.
 * Un flag per indicare se deve essere in modalità di backup continuo, utile solo se si eseguono backup continui.
 
-Prima di scrivere applicazioni per l&#39;immissione in modalità di backup, è consigliabile comprendere le procedure di backup utilizzate dopo aver impostato Forms Server in modalità di backup. Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
+Prima di scrivere applicazioni per l&#39;immissione in modalità di backup, è consigliabile comprendere le procedure di backup utilizzate dopo aver impostato Forms Server in modalità di backup. Per ulteriori informazioni su cosa prendere in considerazione durante l&#39;esecuzione dei backup per AEM Forms, vedere [guida per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -78,21 +78,21 @@ Per creare un&#39;applicazione che entra in modalità di backup, effettuare le s
 
 Includi i file necessari nel progetto di sviluppo. Questi file sono importanti da includere nel progetto per compilare correttamente il codice e utilizzare l’API del servizio Backup e ripristino.
 
-Per informazioni sulla posizione di questi file, vedere [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Per informazioni sul percorso di questi file, vedere [Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Creare un oggetto API client BackupService**
 
 Per uscire dalla modalità di backup a livello di programmazione, è necessario creare un oggetto client BackupService per utilizzare l&#39;API del servizio Backup e ripristino.
 
-**Decidere su un&#39;etichetta univoca, determinare il tempo necessario per eseguire il backup e decidere se attivare la modalità di backup continuo**
+**Scegliere un&#39;etichetta univoca, determinare il tempo necessario per eseguire il backup e decidere se attivare la modalità di backup continuo**
 
-Prima di attivare la modalità di backup, è necessario scegliere un&#39;etichetta univoca, determinare il tempo da allocare per eseguire il backup e decidere se si desidera che Forms Server rimanga in modalità di backup. Queste considerazioni sono importanti per l&#39;integrazione con le procedure di backup stabilite dall&#39;organizzazione. (vedere [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Prima di attivare la modalità di backup, è necessario scegliere un&#39;etichetta univoca, determinare il tempo da allocare per eseguire il backup e decidere se si desidera che Forms Server rimanga in modalità di backup. Queste considerazioni sono importanti per l&#39;integrazione con le procedure di backup stabilite dall&#39;organizzazione. (Vedi [guida per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Accedi alla modalità di backup**
 
 Attiva la modalità di backup con i parametri coerenti con le procedure di backup dell’organizzazione.
 
-**Recuperare informazioni sulla sessione in modalità di backup sul server**
+**Recupera informazioni sulla sessione in modalità di backup nel server**
 
 Dopo aver attivato la modalità di backup, è possibile recuperare informazioni sulla sessione. Queste informazioni possono essere utilizzate per l&#39;integrazione con le procedure di backup
 
@@ -116,10 +116,10 @@ Attiva la modalità di backup utilizzando l’API del servizio Backup e ripristi
 
 1. Creare un oggetto API client BackupService
 
-   Utilizzi un `ServiceClientFactory` e l&#39;oggetto API del client BackupService.
+   Si utilizza un oggetto `ServiceClientFactory` e l&#39;oggetto API del client BackupService insieme.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione. (vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Creare un `BackupService` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione. (Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Creare un oggetto `BackupService` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Decidere su un&#39;etichetta univoca, determinare il tempo necessario per eseguire il backup e decidere se attivare la modalità di backup continuo
 
@@ -127,17 +127,17 @@ Attiva la modalità di backup utilizzando l’API del servizio Backup e ripristi
 
 1. Accedi alla modalità di backup
 
-   Entra in modalità di backup richiamando `enterBackupMode` metodo con i seguenti parametri:
+   Immettere la modalità di backup richiamando il metodo `enterBackupMode` con i seguenti parametri:
 
-   * A `String` valore che specifica un&#39;etichetta univoca leggibile che identifica la sessione in modalità di backup. Si consiglia di non utilizzare spazi o caratteri che non possono essere codificati in formato XML.
-   * Un `int` valore che specifica il numero di minuti necessari per rimanere in modalità di backup. È possibile specificare un valore da `1` a `10080` (il numero di minuti in una settimana). Questo valore viene ignorato quando si utilizza la modalità di backup continuo.
-   * A `Boolean` valore che specifica se attivare la modalità di backup continuo. Un valore di `True` specifica di essere in modalità di backup continuo. In modalità di backup continuo, il valore specificato per il numero di minuti da mantenere in modalità di backup viene ignorato.
+   * Valore `String` che specifica un&#39;etichetta univoca leggibile che identifica la sessione in modalità di backup. Si consiglia di non utilizzare spazi o caratteri che non possono essere codificati in formato XML.
+   * Valore `int` che specifica il numero di minuti per cui mantenere la modalità di backup. È possibile specificare un valore compreso tra `1` e `10080` (il numero di minuti in una settimana). Questo valore viene ignorato quando si utilizza la modalità di backup continuo.
+   * Valore `Boolean` che specifica se essere in modalità di backup continuo. Un valore di `True` specifica di essere in modalità di backup continuo. In modalità di backup continuo, il valore specificato per il numero di minuti da mantenere in modalità di backup viene ignorato.
 
-     La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente. Un valore di `False` significa che non viene utilizzata la modalità di backup continuo e, dopo aver lasciato la modalità di backup, riprende lo svuotamento dei file dal GDS.
+     La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente. Il valore `False` indica che non viene utilizzata la modalità di backup continuo e che, dopo aver lasciato la modalità di backup, viene ripresa la rimozione dei file dal GDS.
 
 1. Recuperare informazioni sulla sessione in modalità di backup sul server
 
-   Recuperare le informazioni utilizzando `BackupModeEntryResult` oggetto restituito dopo aver richiamato `enterBackupMode` metodo. Le informazioni che è possibile recuperare dopo aver attivato la modalità di backup possono essere utili per l&#39;integrazione con le procedure di backup. Ad esempio, l&#39;etichetta, l&#39;ID di backup e l&#39;ora di inizio possono essere utili come input per i nomi di file per la procedura di backup.
+   Recuperare le informazioni utilizzando l&#39;oggetto `BackupModeEntryResult` restituito dopo aver richiamato il metodo `enterBackupMode`. Le informazioni che è possibile recuperare dopo aver attivato la modalità di backup possono essere utili per l&#39;integrazione con le procedure di backup. Ad esempio, l&#39;etichetta, l&#39;ID di backup e l&#39;ora di inizio possono essere utili come input per i nomi di file per la procedura di backup.
 
 1. Eseguire il backup di GDS e database
 
@@ -154,7 +154,7 @@ Attiva la modalità di backup utilizzando il servizio Web fornito dall&#39;API d
 
 1. Creare un oggetto API client BackupService
 
-   Utilizzando l&#39;assembly client Microsoft .NET, creare un `BackupServiceService` richiamando il costruttore predefinito e specificando le credenziali utilizzando il `Credentials` metodo.
+   Utilizzando l&#39;assembly client Microsoft .NET, creare un oggetto `BackupServiceService` richiamando il relativo costruttore predefinito e specificare le credenziali utilizzando il metodo `Credentials`.
 
 1. Decidere su un&#39;etichetta univoca, determinare il tempo necessario per eseguire il backup e decidere se attivare la modalità di backup continuo
 
@@ -164,11 +164,11 @@ Attiva la modalità di backup utilizzando il servizio Web fornito dall&#39;API d
 
    Per attivare la modalità di backup, richiamare il metodo enterBackupMode e passare i valori seguenti:
 
-   * A `String` valore che specifica un&#39;etichetta univoca leggibile che identifica la sessione in modalità di backup. Si consiglia di non utilizzare spazi o caratteri che non possono essere codificati in formato XML.
-   * A `Uint32` valore che specifica il numero di minuti necessari per rimanere in modalità di backup. È possibile specificare un valore da `1` a `10080` (numero di minuti in una settimana). Questo valore viene ignorato quando si utilizza la modalità di backup continuo.
-   * A `Boolean` valore che specifica se attivare la modalità di backup continuo. Un valore di `True` specifica di essere in modalità di backup continuo. In modalità di backup continuo, il valore specificato per il numero di minuti da mantenere in modalità di backup viene ignorato. La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente.
+   * Valore `String` che specifica un&#39;etichetta univoca leggibile che identifica la sessione in modalità di backup. Si consiglia di non utilizzare spazi o caratteri che non possono essere codificati in formato XML.
+   * Valore `Uint32` che specifica il numero di minuti per cui mantenere la modalità di backup. È possibile specificare un valore compreso tra `1` e `10080` (numero di minuti in una settimana). Questo valore viene ignorato quando si utilizza la modalità di backup continuo.
+   * Valore `Boolean` che specifica se essere in modalità di backup continuo. Un valore di `True` specifica di essere in modalità di backup continuo. In modalità di backup continuo, il valore specificato per il numero di minuti da mantenere in modalità di backup viene ignorato. La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente.
 
-     Un valore di `False` significa che non viene utilizzata la modalità di backup continuo e, dopo aver lasciato la modalità di backup, riprende lo svuotamento dei file dal GDS.
+     Il valore `False` indica che non viene utilizzata la modalità di backup continuo e che, dopo aver lasciato la modalità di backup, viene ripresa la rimozione dei file dal GDS.
 
 1. Recuperare informazioni sulla sessione in modalità di backup sul server
 
@@ -182,11 +182,11 @@ Attiva la modalità di backup utilizzando il servizio Web fornito dall&#39;API d
 
 Uscire dalla modalità di backup in modo che Forms Server riprenda la rimozione dei file da GDS (Global Document Storage) sul server Forms.
 
-Prima di scrivere le applicazioni per passare alla modalità di congedo, è consigliabile comprendere le procedure di backup utilizzate con AEM Forms. Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
+Prima di scrivere le applicazioni per passare alla modalità di congedo, è consigliabile comprendere le procedure di backup utilizzate con AEM Forms. Per ulteriori informazioni su cosa prendere in considerazione durante l&#39;esecuzione dei backup per AEM Forms, vedere [guida per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -201,7 +201,7 @@ Per uscire dalla modalità di backup, effettuare le seguenti operazioni:
 
 Includi tutti i file necessari nel progetto di sviluppo. Questi file sono importanti per la corretta compilazione del codice e per l&#39;utilizzo dell&#39;API del servizio Backup e ripristino.
 
-Per informazioni sulla posizione di questi file, vedere [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Per informazioni sul percorso di questi file, vedere [Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Creare un oggetto API client BackupService**
 
@@ -211,7 +211,7 @@ Per uscire dalla modalità di backup a livello di programmazione, è necessario 
 
 Lasciare la modalità di backup per riprendere la normale eliminazione dei file da Global Document Storage (GDS). Prima di uscire dalla modalità di backup, è necessario verificare che le procedure di backup siano state completate.
 
-**Recupera informazioni sulla sessione in modalità di backup terminata**
+**Recupera informazioni sulla sessione della modalità di backup terminata**
 
 Dopo aver lasciato la modalità di backup, è possibile recuperare informazioni sulla sessione. Queste informazioni possono essere utilizzate per l&#39;integrazione con le procedure di backup.
 
@@ -231,18 +231,18 @@ Uscire dalla modalità di backup utilizzando l’API del servizio Backup e ripri
 
 1. Creare un oggetto API client BackupService
 
-   Utilizzi un `ServiceClientFactory` e l&#39;oggetto API del client BackupService.
+   Si utilizza un oggetto `ServiceClientFactory` e l&#39;oggetto API del client BackupService insieme.
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione. (vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Creare un `BackupService` mediante il costruttore e passando il `ServiceClientFactory` oggetto come parametro.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione. (Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Creare un oggetto `BackupService` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory` come parametro.
 
 1. Accedi alla modalità di backup
 
-   Lascia la modalità di backup richiamando `leaveBackupMode` metodo.
+   Uscire dalla modalità di backup richiamando il metodo `leaveBackupMode`.
 
 1. Recuperare informazioni sulla sessione in modalità di backup sul server
 
-   Recuperare informazioni sull&#39;operazione utilizzando `BackupModeResult` oggetto restituito. Le informazioni che è possibile recuperare dopo aver attivato la modalità di backup possono essere utili per l&#39;integrazione con le procedure di backup. Ad esempio, l&#39;etichetta, l&#39;ID di backup e l&#39;ora di inizio possono essere utili come input per i nomi di file per la procedura di backup.
+   Recuperare le informazioni sull&#39;operazione utilizzando l&#39;oggetto `BackupModeResult` restituito. Le informazioni che è possibile recuperare dopo aver attivato la modalità di backup possono essere utili per l&#39;integrazione con le procedure di backup. Ad esempio, l&#39;etichetta, l&#39;ID di backup e l&#39;ora di inizio possono essere utili come input per i nomi di file per la procedura di backup.
 
 ### Lascia la modalità di backup utilizzando l’API del servizio web {#leave-backup-mode-using-the-web-service-api}
 
@@ -257,11 +257,11 @@ Uscire dalla modalità di backup utilizzando l’API del servizio Backup e ripri
 
 1. Creare un oggetto API client BackupService
 
-   Utilizzando l&#39;assembly client Microsoft .NET, creare un `BackupServiceService` richiamando il relativo costruttore predefinito.
+   Utilizzando l&#39;assembly client Microsoft .NET, creare un oggetto `BackupServiceService` richiamando il relativo costruttore predefinito.
 
 1. Accedi alla modalità di backup
 
-   Lascia la modalità di backup richiamando `leaveBackupMode` operazione del servizio web.
+   Uscire dalla modalità di backup richiamando l&#39;operazione del servizio Web `leaveBackupMode`.
 
 1. Recuperare informazioni sulla sessione in modalità di backup sul server
 

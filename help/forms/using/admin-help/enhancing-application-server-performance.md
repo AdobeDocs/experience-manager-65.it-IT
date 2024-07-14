@@ -24,7 +24,7 @@ Questo contenuto descrive le impostazioni facoltative che è possibile configura
 
 I moduli AEM utilizzano l’archivio dei moduli AEM come origine di dati. Il repository dei moduli AEM memorizza le risorse delle applicazioni e, in fase di esecuzione, i servizi possono recuperare le risorse dal repository come parte del completamento di un processo aziendale automatizzato.
 
-L’accesso all’origine dati può essere significativo, a seconda del numero di moduli AEM in esecuzione e del numero di utenti simultanei che accedono all’applicazione. L’accesso all’origine dati può essere ottimizzato utilizzando il connection pooling. *Pool di connessioni* è una tecnica utilizzata per evitare il sovraccarico di creare nuove connessioni al database ogni volta che un oggetto applicativo o server richiede l&#39;accesso al database. Il connection pooling viene in genere utilizzato nelle applicazioni aziendali e basate su Web e viene in genere gestito da un server applicazioni, ma non solo.
+L’accesso all’origine dati può essere significativo, a seconda del numero di moduli AEM in esecuzione e del numero di utenti simultanei che accedono all’applicazione. L’accesso all’origine dati può essere ottimizzato utilizzando il connection pooling. *Il connection pooling* è una tecnica utilizzata per evitare il sovraccarico di creare nuove connessioni al database ogni volta che un oggetto server o applicativo richiede l&#39;accesso al database. Il connection pooling viene in genere utilizzato nelle applicazioni aziendali e basate su Web e viene in genere gestito da un server applicazioni, ma non solo.
 
 È importante configurare correttamente i parametri del pool di connessioni in modo da non esaurire mai le connessioni, il che può causare un deterioramento delle prestazioni dell&#39;applicazione.
 
@@ -140,7 +140,7 @@ L’aumento richiesto della dimensione heap massima JVM viene calcolato utilizza
 
 La dimensione heap massima JVM deve essere aumentata di 50 MB per un totale di 562 MB.
 
-**Considerare la frammentazione dell’heap**
+**Considerazione della frammentazione heap**
 
 Se si impostano su valori elevati le dimensioni dei documenti in linea, si rischia di generare un errore OutOfMemoryError nei sistemi soggetti a frammentazione heap. Per memorizzare un documento in linea, la memoria heap JVM deve disporre di spazio contiguo sufficiente. Alcuni sistemi operativi, JVM e algoritmi di Garbage Collection sono soggetti a frammentazione heap. La frammentazione riduce la quantità di spazio heap contiguo e può causare un errore OutOfMemoryError anche in presenza di spazio libero totale sufficiente.
 
@@ -154,16 +154,16 @@ Questa sezione descrive le impostazioni specifiche di un ambiente Application Se
 
 ### Aumento della memoria massima allocata a JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
-Se si sta eseguendo Configuration Manager o si sta tentando di generare Enterprise JavaBeans (EJB), distribuire il codice utilizzando l&#39;utilità della riga di comando *ejbdeploy* Se si verifica un errore OutOfMemory, aumentare la quantità di memoria allocata alla JVM.
+Se si esegue Configuration Manager o si tenta di generare codice di distribuzione Enterprise JavaBeans (EJB) utilizzando l&#39;utilità della riga di comando *ejbdeploy* e si verifica un errore OutOfMemory, aumentare la quantità di memoria allocata alla JVM.
 
-1. Modificare lo script ejbdeploy in *[directory principale del server applicazioni]* directory /deploytool/itp/:
+1. Modificare lo script ejbdeploy nella directory *[appserver root]*/deploytool/itp/:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux e UNIX) `ejbdeploy.sh`
 
-1. Trova il `-Xmx256M` e modificarlo con un valore più alto, ad esempio `-Xmx1024M`.
+1. Trovare il parametro `-Xmx256M` e modificarlo in un valore superiore, ad esempio `-Xmx1024M`.
 1. Salva il file.
-1. Esegui il `ejbdeploy` tramite Configuration Manager.
+1. Eseguire il comando `ejbdeploy` o ridistribuirlo utilizzando Configuration Manager.
 
 ## Miglioramento delle prestazioni di Windows Server 2003 con LDAP {#improving-windows-server-2003-performance-with-ldap}
 
@@ -173,20 +173,20 @@ L’utilizzo del connection pooling sulla connessione di ricerca può ridurre il
 
 ### Configurare Windows Server per il connection pooling {#configure-your-windows-server-for-connection-pooling}
 
-1. Fare clic su Start > Esegui per avviare l&#39;editor del Registro di sistema e nella casella Apri digitare `regedit` e scegliere OK.
-1. Passa alla chiave del Registro di sistema `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+1. Fare clic su Start > Esegui per avviare l&#39;editor del Registro di sistema e nella casella Apri digitare `regedit` e fare clic su OK.
+1. Vai alla chiave del Registro di sistema `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. Nel riquadro di destra dell&#39;editor del Registro di sistema trovare il nome del valore TcpTimedWaitDelay. Se il nome non viene visualizzato, selezionate Modifica > Nuovo > Valore DWORD dalla barra dei menu per aggiungere il nome.
 1. Nella casella Nome digitare `TcpTimedWaitDelay`
 
    >[!NOTE]
    >
-   >Se non viene visualizzato un cursore lampeggiante e `New Value #` nella casella, fate clic con il pulsante destro del mouse all&#39;interno del pannello di destra, selezionate Rinomina (Rename) e, nella casella Nome (Name), digitate `TcpTimedWaitDelay`*.*
+   >Se nella casella non è presente un cursore lampeggiante e `New Value #`, fare clic con il pulsante destro del mouse all&#39;interno del pannello di destra, selezionare Rinomina e nella casella Nome digitare `TcpTimedWaitDelay`*.*
 
 1. Ripetere il passaggio 4 per i nomi di valore MaxUserPort, MaxHashTableSize e MaxFreeTcbs.
-1. Fare doppio clic all&#39;interno del riquadro destro per impostare il valore TcpTimedWaitDelay. In Base (Base), selezionate Decimale (Decimal) e, nella casella Valore (Value), digitate `30`.
-1. Fare doppio clic all&#39;interno del riquadro destro per impostare il valore MaxUserPort. In Base (Base), selezionate Decimale (Decimal) e, nella casella Valore (Value), digitate `65534`.
-1. Fare doppio clic all&#39;interno del riquadro destro per impostare il valore MaxHashTableSize. In Base (Base), selezionate Decimale (Decimal) e, nella casella Valore (Value), digitate `65536`.
-1. Fare doppio clic all&#39;interno del riquadro destro per impostare il valore MaxFreeTcbs. In Base (Base), selezionate Decimale (Decimal) e, nella casella Valore (Value), digitate `16000`.
+1. Fare doppio clic all&#39;interno del riquadro destro per impostare il valore TcpTimedWaitDelay. In Base selezionare Decimale e nella casella Valore digitare `30`.
+1. Fare doppio clic all&#39;interno del riquadro destro per impostare il valore MaxUserPort. In Base selezionare Decimale e nella casella Valore digitare `65534`.
+1. Fare doppio clic all&#39;interno del riquadro destro per impostare il valore MaxHashTableSize. In Base selezionare Decimale e nella casella Valore digitare `65536`.
+1. Fare doppio clic all&#39;interno del riquadro destro per impostare il valore MaxFreeTcbs. In Base selezionare Decimale e nella casella Valore digitare `16000`.
 
 >[!NOTE]
 >

@@ -24,14 +24,14 @@ Dopo aver creato una comunicazione interattiva, l’agente può aprirla nell’i
 
 Durante la preparazione della comunicazione interattiva tramite l’interfaccia utente dell’agente, l’agente gestisce i seguenti aspetti della comunicazione interattiva nell’interfaccia utente dell’agente prima di inviarla a un processo successivo:
 
-* **Dati**: nella scheda Dati dell’interfaccia utente dell’agente vengono visualizzate tutte le variabili modificabili dall’agente e le proprietà del modello dati del modulo sbloccato nella comunicazione interattiva. Queste variabili o proprietà vengono create durante la modifica o la creazione di frammenti di documento inclusi nella comunicazione interattiva. La scheda Dati include anche tutti i campi generati nel modello del canale di stampa/XDP. La scheda Dati viene visualizzata solo quando nella comunicazione interattiva sono presenti variabili, proprietà del modello dati del modulo o campi modificabili dall’agente.
-* **Contenuto**: nella scheda Contenuto, l’agente gestisce il contenuto, ad esempio i frammenti di documento e le variabili di contenuto, nella comunicazione interattiva. L’agente può apportare le modifiche nel frammento di documento come consentito durante la creazione della comunicazione interattiva nelle proprietà di tali frammenti di documento. L’agente può anche riordinare, aggiungere/rimuovere un frammento di documento e aggiungere interruzioni di pagina, se consentite.
-* **Allegati**: la scheda Allegati viene visualizzata nell’interfaccia utente dell’agente solo se la comunicazione interattiva dispone di allegati o se l’agente dispone dell’accesso alla libreria. L&#39;agente può o non può essere autorizzato a modificare gli allegati.
+* **Dati**: la scheda Dati dell&#39;interfaccia utente agente visualizza tutte le variabili modificabili dall&#39;agente e le proprietà del modello dati del modulo sbloccate nella comunicazione interattiva. Queste variabili o proprietà vengono create durante la modifica o la creazione di frammenti di documento inclusi nella comunicazione interattiva. La scheda Dati include anche tutti i campi generati nel modello del canale di stampa/XDP. La scheda Dati viene visualizzata solo quando nella comunicazione interattiva sono presenti variabili, proprietà del modello dati del modulo o campi modificabili dall’agente.
+* **Contenuto**: nella scheda Contenuto, l&#39;agente gestisce il contenuto, ad esempio frammenti di documento e variabili di contenuto, nella comunicazione interattiva. L’agente può apportare le modifiche nel frammento di documento come consentito durante la creazione della comunicazione interattiva nelle proprietà di tali frammenti di documento. L’agente può anche riordinare, aggiungere/rimuovere un frammento di documento e aggiungere interruzioni di pagina, se consentite.
+* **Allegati**: la scheda Allegati viene visualizzata nell&#39;interfaccia utente dell&#39;agente solo se la comunicazione interattiva contiene allegati o se l&#39;agente dispone dell&#39;accesso alla libreria. L&#39;agente può o non può essere autorizzato a modificare gli allegati.
 
 ## Preparare la comunicazione interattiva tramite l’interfaccia utente dell’agente {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Seleziona la comunicazione interattiva appropriata e seleziona **[!UICONTROL Apri interfaccia utente agente]**.
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Selezionare la comunicazione interattiva appropriata e selezionare **[!UICONTROL Apri interfaccia utente agente]**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Durante la preparazione della comunicazione interattiva tramite l’interfaccia 
 
 ### Inserisci dati {#enter-data}
 
-1. Nella scheda Dati, immettere i dati per le variabili, le proprietà del modello di dati del modulo e i campi del modello di stampa (XDP), come richiesto. Compila tutti i campi obbligatori contrassegnati da un asterisco (&amp;ast;) per abilitare **Invia** pulsante.
+1. Nella scheda Dati, immettere i dati per le variabili, le proprietà del modello di dati del modulo e i campi del modello di stampa (XDP), come richiesto. Compila tutti i campi obbligatori contrassegnati da un asterisco (&amp;ast;) per abilitare il pulsante **Invia**.
 
    Seleziona un valore per un campo dati nell’anteprima della comunicazione interattiva per evidenziare il campo dati corrispondente nella scheda Dati o viceversa.
 
@@ -65,9 +65,9 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati nel contenuto ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra nell’anteprima, puoi disabilitare o abilitare la funzionalità per passare al frammento di documento quando il testo, il paragrafo o il campo dati rilevante viene toccato/selezionato nell’anteprima.
+   Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati nel contenuto ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra nell’anteprima, puoi disabilitare o abilitare la funzionalità per passare al frammento di documento quando il campo di testo, paragrafo o dati pertinente viene toccato/selezionato nell’anteprima.
 
-   I frammenti che possono essere modificati dall’agente durante la creazione della comunicazione interattiva hanno la proprietà Modifica contenuto selezionato ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Seleziona l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportarvi modifiche. Utilizza le seguenti opzioni per la formattazione e la gestione del testo:
+   I frammenti che possono essere modificati dall&#39;agente durante la creazione della comunicazione interattiva presentano l&#39;icona Modifica contenuto selezionato ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Seleziona l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportarvi modifiche. Utilizza le seguenti opzioni per la formattazione e la gestione del testo:
 
    * [Opzioni di formattazione](#formattingtext)
 
@@ -77,13 +77,13 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
    * [Caratteri speciali](#specialcharacters)
    * [Scelte rapide da tastiera](/help/forms/using/keyboard-shortcuts.md)
 
-   Per ulteriori informazioni sulle azioni disponibili per i vari frammenti di documento nell&#39;interfaccia utente dell&#39;agente, vedere [Azioni e informazioni disponibili nell’interfaccia utente dell’agente](#actionsagentui).
+   Per ulteriori informazioni sulle azioni disponibili per vari frammenti di documento nell&#39;interfaccia utente dell&#39;agente, vedere [Azioni e informazioni disponibili nell&#39;interfaccia utente dell&#39;agente](#actionsagentui).
 
 1. Per aggiungere un&#39;interruzione di pagina all&#39;output di stampa della comunicazione interattiva, posizionare il cursore nel punto in cui si desidera inserire un&#39;interruzione di pagina e selezionare Interruzione di pagina prima o Interruzione di pagina dopo ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
    Nella comunicazione interattiva viene inserito un segnaposto esplicito per l’interruzione di pagina. Per visualizzare in che modo un’interruzione di pagina esplicita influisce sulla comunicazione interattiva, consulta l’anteprima di stampa.
 
-   ![expitpagebreak](assets/explicitpagebreak.png)
+   ![esplicitpagebreak](assets/explicitpagebreak.png)
 
    Procedi alla gestione degli allegati della comunicazione interattiva.
 
@@ -93,9 +93,9 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 
    Per scegliere di non inviare un allegato insieme alla comunicazione interattiva, tocca l’icona di visualizzazione e puoi selezionare la croce nell’allegato per eliminarlo (se all’agente è consentito eliminare o nascondere l’allegato) dalla comunicazione interattiva. Per gli allegati specificati come obbligatori durante la creazione della comunicazione interattiva, le icone Visualizza ed Elimina sono disattivate.
 
-   ![attachmentsagentui](assets/attachmentsagentui.png)
+   ![allegmentsagentui](assets/attachmentsagentui.png)
 
-1. Seleziona l&#39;accesso alla libreria ( ![accesso alla libreria](assets/libraryaccess.png)) per accedere alla Libreria dei contenuti e inserire risorse DAM come allegati.
+1. Seleziona l&#39;icona Accesso libreria ( ![accesso libreria](assets/libraryaccess.png)) per accedere alla libreria dei contenuti e inserire risorse DAM come allegati.
 
    >[!NOTE]
    >
@@ -104,21 +104,21 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 1. Se l&#39;ordine degli allegati non è stato bloccato durante la creazione della comunicazione interattiva, è possibile riordinarli selezionando un allegato e toccando le frecce giù e su.
 1. Utilizza Anteprima web e Anteprima di stampa per verificare se i due output corrispondono alle tue esigenze.
 
-   Se le anteprime risultano soddisfacenti, selezionare **[!UICONTROL Invia]** per inviare/inviare la comunicazione interattiva a un processo post. Oppure, per apportare modifiche, esci dall’anteprima per tornare all’esecuzione delle modifiche.
+   Se le anteprime sono soddisfacenti, selezionare **[!UICONTROL Invia]** per inviare/inviare la comunicazione interattiva a un processo di post. Oppure, per apportare modifiche, esci dall’anteprima per tornare all’esecuzione delle modifiche.
 
 ## Formattazione del testo {#formattingtext}
 
 Durante la modifica di un frammento di testo nell’interfaccia utente dell’agente, la barra degli strumenti cambia a seconda del tipo di modifiche che si sceglie di apportare: Carattere, Paragrafo o Elenco:
 
-![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Barra degli strumenti Carattere](do-not-localize/fonttoolbar.png)
+![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Barra dei caratteri](do-not-localize/fonttoolbar.png)
 
 Barra degli strumenti Carattere
 
-![Barra degli strumenti Paragrafo](do-not-localize/paragraphtoolbar.png)
+![Barra degli strumenti paragrafo](do-not-localize/paragraphtoolbar.png)
 
 Barra degli strumenti Paragrafo
 
-![Barra degli strumenti Elenco](do-not-localize/listtoolbar.png)
+![Barra degli strumenti elenco](do-not-localize/listtoolbar.png)
 
 Barra degli strumenti Elenco
 
@@ -134,12 +134,12 @@ Per evidenziare/enfatizzare parti di testo in un frammento modificabile, selezio
 
 ### Inserisci caratteri speciali nel testo {#specialcharacters}
 
-L’interfaccia utente dell’agente supporta 210 caratteri speciali. L’amministratore può [aggiungi supporto per caratteri speciali aggiuntivi/personalizzati tramite personalizzazione](/help/forms/using/custom-special-characters.md).
+L’interfaccia utente dell’agente supporta 210 caratteri speciali. L&#39;amministratore può [aggiungere il supporto di caratteri speciali aggiuntivi/personalizzati tramite personalizzazione](/help/forms/using/custom-special-characters.md).
 
 #### Consegna dell’allegato {#attachmentdelivery}
 
 * Quando viene eseguito il rendering della comunicazione interattiva utilizzando le API lato server come PDF interattivo o non interattivo, il PDF sottoposto a rendering contiene allegati come allegati PDF.
-* Quando un processo di post associato a una comunicazione interattiva viene caricato come parte dell’interfaccia utente di invio tramite agente, gli allegati vengono passati come elenco&lt;com.adobe.idp.document> parametro inAttachmentDocs.
+* Quando un processo successivo associato a una comunicazione interattiva viene caricato come parte dell’interfaccia utente di invio tramite agente, gli allegati vengono passati come parametro List&lt;com.adobe.idp.Document> inAttachmentDocs.
 * I flussi di lavoro del meccanismo di consegna, ad esempio e-mail e stampa, consegnano anche allegati insieme alla versione PDF della comunicazione interattiva.
 
 ## Azioni e informazioni disponibili nell’interfaccia utente dell’agente {#actionsagentui}
@@ -148,22 +148,22 @@ L’interfaccia utente dell’agente supporta 210 caratteri speciali. L’ammini
 
 ![ ](do-not-localize/contentoptionsdocfragments.png)
 
-* **Frecce Su/Giù**: frecce per spostare i frammenti di documento verso l’alto o il basso nella comunicazione interattiva.
+* **Frecce su/giù**: Frecce per spostare i frammenti di documento verso l&#39;alto o verso il basso nella comunicazione interattiva.
 * **Elimina**: se consentito, elimina il frammento di documento dalla comunicazione interattiva.
-* **Interruzione di pagina prima** (applicabile ai frammenti secondari dell’area di destinazione): inserisce l’interruzione di pagina prima del frammento del documento.
-* **Rientra**: aumenta o diminuisce il rientro di un frammento di documento.
-* **Interruzione di pagina dopo** (applicabile ai frammenti secondari dell’area di destinazione): inserisce l’interruzione di pagina dopo il frammento del documento.
+* **Interruzione di pagina prima di** (applicabile ai frammenti figlio dell&#39;area di destinazione): inserisce l&#39;interruzione di pagina prima del frammento del documento.
+* **Rientro**: aumenta o diminuisce il rientro di un frammento di documento.
+* **Interruzione di pagina dopo** (applicabile ai frammenti figlio dell&#39;area di destinazione): inserisce l&#39;interruzione di pagina dopo il frammento del documento.
 
 ![docfragoptions](assets/docfragoptions.png)
 
-* Modifica (solo frammenti di testo): apri l’editor Rich Text per modificare il frammento di documento di testo. Per ulteriori informazioni, consulta [Formattazione del testo](#formattingtext).
+* Modifica (solo frammenti di testo): apri l’editor Rich Text per modificare il frammento di documento di testo. Per ulteriori informazioni, vedere [Formattazione del testo](#formattingtext).
 
 * Selezione (icona a forma di occhio): include\esclude il frammento di documento dalla comunicazione interattiva.
 * Valori non compilati (informazioni): indica il numero di variabili non compilate nel frammento di documento.
 
 ### Elencare frammenti di documenti {#list-document-fragments}
 
-![listoptions](assets/listoptions.png)
+![opzioni elenco](assets/listoptions.png)
 
 * Inserisci riga vuota: inserisce una nuova riga vuota.
 * Selezione (icona a forma di occhio): include\esclude il frammento di documento dalla comunicazione interattiva.
@@ -180,25 +180,25 @@ L’Adobe consiglia di eseguire queste istruzioni in sequenza per salvare corret
 
 Per impostazione predefinita, la funzione Salva come bozza non è attivata. Per abilitare la funzione, effettua le seguenti operazioni:
 
-1. Implementare [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI (Service Provider Interface).
+1. Implementare l&#39;interfaccia del provider di servizi (SPI) [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
    La SPI consente di salvare nel database la versione bozza della comunicazione interattiva con un ID bozza come identificatore univoco. Queste istruzioni presuppongono una conoscenza preventiva di come creare un bundle OSGi utilizzando un progetto Maven.
 
-   Per un esempio di implementazione SPI, vedi [Esempio di implementazione SPI ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
-1. Apri `http://<hostname>:<port>/ system/console/bundles` e seleziona **[!UICONTROL Installa/Aggiorna]** per caricare il bundle OSGi. Verifica che lo stato del pacchetto caricato sia visualizzato come **Attivo**. Riavvia il server se lo stato del pacchetto non viene visualizzato come **Attivo**.
+   Per un esempio di implementazione SPI, vedere [Esempio di implementazione SPI ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
+1. Apri `http://<hostname>:<port>/ system/console/bundles` e seleziona **[!UICONTROL Installa/Aggiorna]** per caricare il bundle OSGi. Verificare che lo stato del pacchetto caricato sia **Attivo**. Riavviare il server se lo stato del pacchetto non è **Attivo**.
 1. Passa a `https://'[server]:[port]'/system/console/configMgr`.
-1. Seleziona **[!UICONTROL Crea configurazione corrispondenza]**.
-1. Seleziona **[!UICONTROL Abilita salvataggio tramite CCRDocumentInstanceService]** e seleziona **[!UICONTROL Salva]**.
+1. Selezionare **[!UICONTROL Crea configurazione corrispondenza]**.
+1. Seleziona **[!UICONTROL Abilita salvataggio con CCRDocumentInstanceService]** e seleziona **[!UICONTROL Salva]**.
 
 ### Salvare una comunicazione interattiva come bozza {#save-as-draft-agent-ui}
 
 Per salvare una comunicazione interattiva come bozza, effettua le seguenti operazioni:
 
-1. Seleziona una comunicazione interattiva in Forms Manager e seleziona **[!UICONTROL Apri interfaccia utente agente]**.
+1. Selezionare una comunicazione interattiva in Forms Manager e selezionare **[!UICONTROL Apri interfaccia utente agente]**.
 
-1. Apporta le modifiche appropriate nell’interfaccia utente dell’agente e seleziona **[!UICONTROL Salva come bozza]**.
+1. Apportare le modifiche appropriate nell&#39;interfaccia utente agente e selezionare **[!UICONTROL Salva come bozza]**.
 
-1. Specificate il nome della bozza in **[!UICONTROL Nome]** e seleziona **[!UICONTROL Fine]**.
+1. Specifica il nome della bozza nel campo **[!UICONTROL Name]** e seleziona **[!UICONTROL Done]**.
 
 Dopo aver salvato la comunicazione interattiva come bozza, seleziona **[!UICONTROL Salva modifiche]** per salvare eventuali ulteriori modifiche alla bozza.
 
@@ -208,11 +208,11 @@ Dopo aver salvato una comunicazione interattiva come bozza, puoi recuperarla per
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
-[draft tid] si riferisce all’identificatore univoco della bozza di versione che viene generato dopo il salvataggio di una comunicazione interattiva come bozza.
+[draftId] fa riferimento all&#39;identificatore univoco della bozza di versione che viene generato dopo il salvataggio di una comunicazione interattiva come bozza.
 
 ### Esempio di implementazione SPI ccrDocumentInstance {#sample-ccrDocumentInstance-spi}
 
-Implementare `ccrDocumentInstance` SPI per salvare una comunicazione interattiva come bozza. Di seguito è riportato un esempio di implementazione di `ccrDocumentInstance` SPI.
+Implementare l&#39;SPI `ccrDocumentInstance` per salvare una comunicazione interattiva come bozza. Di seguito è riportato un esempio di implementazione dell&#39;SPI `ccrDocumentInstance`.
 
 ```javascript
 package Implementation;
@@ -312,9 +312,9 @@ public class CCRDraftService implements CCRDocumentInstanceService {
 }
 ```
 
-Il `save`, `update`, `get`, e `getAll` Le operazioni richiamano il servizio del database per salvare una comunicazione interattiva come bozza, aggiornare una comunicazione interattiva, recuperare i dati dal database e recuperare i dati per tutte le comunicazioni interattive disponibili nel database. In questo esempio si utilizza `mySQLDataBaseServiceCRUD` come nome del servizio di database.
+Le operazioni `save`, `update`, `get` e `getAll` chiamano il servizio del database per salvare una comunicazione interattiva come bozza, aggiornare una comunicazione interattiva, recuperare i dati dal database e recuperare i dati per tutte le comunicazioni interattive disponibili nel database. In questo esempio viene utilizzato `mySQLDataBaseServiceCRUD` come nome del servizio di database.
 
-Nella tabella seguente viene illustrato l&#39;esempio `ccrDocumentInstance` Implementazione SPI. Questo dimostra che `save`, `update`, `get`, e `getAll` le operazioni chiamano il servizio di database nell&#39;implementazione di esempio.
+Nella tabella seguente viene illustrata l&#39;implementazione SPI `ccrDocumentInstance` di esempio. Viene illustrato come le operazioni `save`, `update`, `get` e `getAll` chiamano il servizio di database nell&#39;implementazione di esempio.
 
 <table> 
  <tbody>
@@ -341,7 +341,7 @@ Nella tabella seguente viene illustrato l&#39;esempio `ccrDocumentInstance` Impl
   </tbody>
 </table>
 
-Di seguito è riportato un esempio di `pom.xml` file che fa parte dell&#39;implementazione:
+Di seguito è riportato un esempio del file `pom.xml` che fa parte dell&#39;implementazione:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -438,4 +438,4 @@ Di seguito è riportato un esempio di `pom.xml` file che fa parte dell&#39;imple
 
 >[!NOTE]
 >
->Assicurati di aggiornare `aemfd-client-sdk` dipendenza a 6.0.160 nel `pom.xml` file.
+>Assicurarsi di aggiornare la dipendenza `aemfd-client-sdk` alla versione 6.0.160 nel file `pom.xml`.

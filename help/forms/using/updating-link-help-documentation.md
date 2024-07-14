@@ -18,16 +18,16 @@ ht-degree: 2%
 
 # Aggiornamento del collegamento alla documentazione {#updating-the-link-to-the-documentation}
 
-Puoi accedere al contenuto predefinito della guida per l’area di lavoro di AEM Forms selezionando **Aiuto > Aiuto di Workspace**. Fa riferimento alla documentazione online sul sito web di Adobe. Tuttavia, puoi aggiornarla per puntare a qualsiasi altro URL.
+È possibile accedere al contenuto predefinito della Guida per l&#39;area di lavoro di AEM Forms selezionando **Guida > Guida di Workspace**. Fa riferimento alla documentazione online sul sito web di Adobe. Tuttavia, puoi aggiornarla per puntare a qualsiasi altro URL.
 
 Considera i seguenti casi d’uso in cui potresti voler modificare l’URL predefinito della guida:
 
 * Per fornire assistenza localizzata in una lingua a scelta.
 * Per fornire contenuti di supporto personalizzati per l&#39;area di lavoro personalizzata.
 
-Per aggiornare l’URL della documentazione online, segui la [Passaggi generici della personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) e quindi i seguenti passaggi.
+Per aggiornare l&#39;URL della documentazione online, seguire i [passaggi generici della personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) e i passaggi seguenti.
 
-1. Copia il `userinfo.html` file da `/libs/ws/js/runtime/templates` a `/apps/ws/js/runtime/templates`.
+1. Copia il file `userinfo.html` da `/libs/ws/js/runtime/templates` a `/apps/ws/js/runtime/templates`.
 1. Modifica:
 
    ```html

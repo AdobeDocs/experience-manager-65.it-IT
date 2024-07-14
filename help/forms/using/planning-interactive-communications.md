@@ -20,7 +20,7 @@ Pianificare l&#39;anatomia per la comunicazione interattiva
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Questo tutorial è un passaggio del [Creare la prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md) serie. Si consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
+Questo tutorial è un passaggio della serie [Crea la tua prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md). Si consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
 Il primo passo nella pianificazione di una comunicazione interattiva è finalizzare il contenuto della comunicazione interattiva. Esperti in materia provenienti da dipartimenti legali, finanziari, di supporto o di marketing possono aiutarti a finalizzare i contenuti. Dopo aver finalizzato il contenuto, devi analizzarlo per identificare i vari tipi di risorse necessari per creare la comunicazione interattiva.
 
@@ -28,19 +28,19 @@ Il primo passo nella pianificazione di una comunicazione interattiva è finalizz
 
 Una comunicazione interattiva include i seguenti elementi:
 
-* **Testo statico** include principalmente le parti della comunicazione interattiva che sono di natura generica e sono incluse nella comunicazione a tutti i clienti. Ad esempio, intestazione, piè di pagina, formula introduttiva o disclaimer.
-* **Dati originati da un sistema back-end (modello dati modulo)** è specifico per il cliente ed è unito in modo dinamico alla comunicazione interattiva. Ad esempio, il numero o l’indirizzo del criterio può essere originato utilizzando il modello dati del modulo.
-* **Layout o modelli** per la versione a stampa e web della comunicazione interattiva.
-* **Ordine** in cui i vari paragrafi di testo compaiono nella comunicazione interattiva.
-* **Dati immessi da un dipendente in prima linea (interfaccia utente agente)** che personalizza la comunicazione prima di inviarla. Ad esempio, la data di scadenza del pagamento.
+* **Il testo statico** include principalmente le parti della comunicazione interattiva che sono di natura generica e sono incluse nella comunicazione a tutti i clienti. Ad esempio, intestazione, piè di pagina, formula introduttiva o disclaimer.
+* **I dati originati da un sistema back-end (modello dati modulo)** sono specifici del cliente e vengono uniti in modo dinamico alla comunicazione interattiva. Ad esempio, il numero o l’indirizzo del criterio può essere originato utilizzando il modello dati del modulo.
+* **Layout o modelli** per la versione per la stampa e per il Web della comunicazione interattiva.
+* **Ordine** in cui vengono visualizzati i vari paragrafi di testo nella comunicazione interattiva.
+* **Dati immessi da un dipendente in prima linea (interfaccia utente agente)** che sta personalizzando la comunicazione prima di inviarla. Ad esempio, la data di scadenza del pagamento.
 
-* **Dati condizionali** che viene popolato in base a condizioni predefinite. Ad esempio, la data in cui viene generata la comunicazione interattiva.
-* **Immagini memorizzate in un archivio**, ad esempio loghi e immagini della firma. Immagini come i logo aziendali appaiono nella maggior parte o in tutta la comunicazione interattiva.
-* **Grafici e tabelle** necessario per semplificare la rappresentazione di dati complessi in una comunicazione interattiva
+* **Dati condizionali** che vengono popolati in base a condizioni predefinite. Ad esempio, la data in cui viene generata la comunicazione interattiva.
+* **Immagini archiviate in un repository**, ad esempio loghi e immagini di firma. Immagini come i logo aziendali appaiono nella maggior parte o in tutta la comunicazione interattiva.
+* **Grafici e tabelle** necessari per semplificare la rappresentazione di dati complessi in una comunicazione interattiva
 
 ## Anatomia della comunicazione interattiva {#anatomy-of-the-interactive-communication}
 
-Dopo aver finalizzato i contenuti e gli elementi utilizzati per creare la comunicazione interattiva, puoi creare un’anatomia della comunicazione interattiva. L&#39;anatomia deve avere i dettagli elencati nella [Considerazioni sulla pianificazione](/help/forms/using/planning-interactive-communications.md#planning-considerations) sezione. In base al nostro caso d’uso, il seguente è un esempio di anatomia della fattura mensile che un operatore di telecomunicazioni invia ai suoi clienti.
+Dopo aver finalizzato i contenuti e gli elementi utilizzati per creare la comunicazione interattiva, puoi creare un’anatomia della comunicazione interattiva. L&#39;anatomia deve avere i dettagli elencati nella sezione [Considerazioni sulla pianificazione](/help/forms/using/planning-interactive-communications.md#planning-considerations). In base al nostro caso d’uso, il seguente è un esempio di anatomia della fattura mensile che un operatore di telecomunicazioni invia ai suoi clienti.
 
 L&#39;anatomia include dati con le seguenti modalità di input:
 
@@ -50,7 +50,7 @@ L&#39;anatomia include dati con le seguenti modalità di input:
 * Dati condizionali
 * Immagini
 
-In ogni sezione, il testo in grassetto rappresenta un testo statico. Il database include tabelle relative a clienti, fatture e chiamate. Un modello di dati modulo può ricevere dati da una qualsiasi di queste tabelle. Per ulteriori informazioni, consulta [Crea modello dati modulo](/help/forms/using/create-form-data-model0.md).
+In ogni sezione, il testo in grassetto rappresenta un testo statico. Il database include tabelle relative a clienti, fatture e chiamate. Un modello di dati modulo può ricevere dati da una qualsiasi di queste tabelle. Per ulteriori informazioni, vedere [Creare un modello dati modulo](/help/forms/using/create-form-data-model0.md).
 
 La tabella seguente illustra l’origine dei dati per ciascun campo nell’anatomia della comunicazione interattiva:
 
@@ -66,7 +66,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
   <tr>
    <td>Dettagli fattura</td>
    <td><p>N. fattura</p> <p>Data di fatturazione</p> <p>Periodo di fatturazione</p> <p>Il piano</p> </td>
-   <td><p>Valore per <strong>Il piano </strong>campo</p> <p>Tabella - Cliente</p> </td>
+   <td><p>Valore per il campo <strong>Piano </strong></p> <p>Tabella - Cliente</p> </td>
    <td><p>Valori per i campi seguenti:</p>
     <ul>
      <li>N. fattura</li>
@@ -97,7 +97,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
   <tr>
    <td>Riepilogo fatture</td>
    <td><p>Saldo precedente</p> <p>Pagamenti</p> <p>Adeguamenti</p> <p>Addebiti periodo di fatturazione corrente</p> <p>Importo dovuto</p> <p>Data di scadenza</p> </td>
-   <td><p>Valore per <strong>Addebiti periodo di fatturazione corrente </strong> campo</p> <p>Tabella - fatture</p> </td>
+   <td><p>Valore per il campo <strong>Addebiti periodo di fatturazione corrente </strong></p> <p>Tabella - fatture</p> </td>
    <td><p>Valori per i campi seguenti:</p>
     <ul>
      <li>Saldo precedente</li>

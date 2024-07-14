@@ -1,6 +1,6 @@
 ---
 title: Facoltativo - Come creare applicazioni a pagina singola (SPA) con Adobe Experience Manager
-description: In questa continuazione opzionale del Percorso per sviluppatori headless Adobe Experience Manager (AEM), scopri come l’AEM può combinare la distribuzione headless con le funzioni tradizionali del CMS full-stack e come creare un SPA modificabile utilizzando il framework dell’SPA Editor dell’AEM.
+description: In questa continuazione opzionale del Percorso per sviluppatori headless Adobe Experience Manager (AEM), scopri come l’AEM può combinare la distribuzione headless con le funzioni tradizionali del CMS full-stack e come creare SPA modificabili utilizzando il framework dell’SPA Editor dell’AEM.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
@@ -14,7 +14,7 @@ ht-degree: 76%
 
 # Come creare applicazioni a pagina singola (SPA) con AEM {#create-spa}
 
-In questa continuazione facoltativa del [Percorso di sviluppatori AEM headless,](overview.md) scopri come Adobe Experience Manager (AEM) può combinare la distribuzione headless con le tradizionali funzioni CMS full stack e come creare SPA modificabili utilizzando il framework AEM SPA Editor e integrare SPA esterno, abilitando le funzionalità di modifica in base alle esigenze.
+In questa continuazione opzionale del Percorso di sviluppatori [AEM headless,](overview.md) scopri come Adobe Experience Manager (AEM) può combinare la distribuzione headless con le funzioni tradizionali del CMS full stack e come creare SPA modificabili utilizzando il framework dell’SPA Editor dell’AEM e integrare SPA esterno, abilitando le funzionalità di modifica in base alle esigenze.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -29,7 +29,7 @@ A questo punto, avresti dovuto completare l’intero [Percorso per sviluppatori 
 
 Quindi o siete andati in diretta con il vostro primo progetto AEM Headless, o avete le conoscenze per farlo. Congratulazioni. 
 
-Allora perché stai leggendo questa ulteriore continuazione facoltativa del percorso? Probabilmente, se ne ricorda nel [Guida introduttiva](getting-started.md#integration-levels), c&#39;è stata una breve discussione su come l&#39;AEM non solo supporta la distribuzione headless e i modelli tradizionali full-stack, ma può anche supportare modelli ibridi che combinano i vantaggi di entrambi. Anche se non può farlo il modello tradizionale headless, questi modelli ibridi possono offrire una grandissima flessibilità per determinati progetti.
+Allora perché stai leggendo questa ulteriore continuazione facoltativa del percorso? Probabilmente, ricordi che nella [Guida introduttiva](getting-started.md#integration-levels), c&#39;è stata una breve discussione su come l&#39;AEM non solo supporta la distribuzione headless e i modelli tradizionali full stack, ma può anche supportare modelli ibridi che combinano i vantaggi di entrambi. Anche se non può farlo il modello tradizionale headless, questi modelli ibridi possono offrire una grandissima flessibilità per determinati progetti.
 
 Questo articolo si basa sulla tua conoscenza di AEM Headless per comprendere meglio come creare applicazioni a pagina singola (SPA) che siano modificabili in AEM. In questo modo, puoi creare contenuti e distribuirli direttamente a un SPA, ma l’SPA rimane modificabile nell’AEM.
 
@@ -50,7 +50,7 @@ Ci sono diversi i requisiti da soddisfare prima di iniziare a lavorare con le SP
 
 * Esperienza di sviluppo nella creazione di SPA con i framework React o Angular
 * Competenze di base in AEM per la creazione di frammenti di contenuto e l’utilizzo dell’editor
-* Assicurati di rivedere il documento [Headful e Headless nell&#39;AEM](/help/sites-developing/headful-headless.md) comprendere i vari livelli possibili di integrazione dell’SPA.
+* Assicurarsi di rivedere il documento [Headful e Headless in AEM](/help/sites-developing/headful-headless.md) per comprendere i vari livelli di integrazione SPA possibili.
 
 ### Strumenti {#tools}
 

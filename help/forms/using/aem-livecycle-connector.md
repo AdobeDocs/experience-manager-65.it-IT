@@ -21,7 +21,7 @@ Il connettore di LiveCycle Adobe Experience Manager (AEM) consente di invocare f
 
 ## Connessione del server AEM all&#39;LiveCycle Adobe {#connecting-aem-server-to-adobe-livecycle}
 
-Il connettore di LiveCycle AEM fa parte del [Pacchetto del componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Dopo aver installato il pacchetto del componente aggiuntivo AEM Forms, effettuare le seguenti operazioni per aggiungere i dettagli del server di LiveCycle alla console Web AEM.
+Il connettore di LiveCycle AEM fa parte del pacchetto del componente aggiuntivo [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Dopo aver installato il pacchetto del componente aggiuntivo AEM Forms, effettuare le seguenti operazioni per aggiungere i dettagli del server di LiveCycle alla console Web AEM.
 
 1. Nel gestore di configurazione della console web AEM, individua il componente di configurazione Adobe LiveCycle Client SDK.
 1. Fai clic sul componente per modificare l’URL, il nome utente e la password del server di configurazione.
@@ -52,7 +52,7 @@ Le applicazioni client possono avviare in modo programmatico i servizi di LiveCy
 
 Il connettore di LiveCycle AEM semplifica il flusso esponendo queste istanze client come servizi OSGi a cui è possibile accedere utilizzando gli strumenti OSGi standard. Il connettore di LiveCycle offre le seguenti caratteristiche:
 
-* Istanze client come servizio OSGi: i client inseriti come bundle OSGI sono elencati in [Elenco servizi Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) sezione. Ogni file jar del client registra l’istanza client come servizio OSGi con il registro del servizio OSGi.
+* Istanze client come servizio OSGi: i client inclusi nel pacchetto come bundle OSGI sono elencati nella sezione [Elenco dei servizi Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Ogni file jar del client registra l’istanza client come servizio OSGi con il registro del servizio OSGi.
 * Propagazione credenziali utente: i dettagli di connessione necessari per connettersi al server di LiveCycle vengono gestiti da una posizione centrale.
 * ServiceClientFactory: per avviare i processi, l&#39;applicazione client può accedere all&#39;istanza ServiceClientFactory.
 
@@ -80,7 +80,7 @@ Per avviare un servizio esposto dall’AEM, effettua le seguenti operazioni:
    </dependency>
    ```
 
-   Per avviare un servizio, aggiungi una dipendenza Maven corrispondente al servizio. Per l&#39;elenco delle dipendenze, vedere [Elenco servizi Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Ad esempio, per il servizio Genera PDF, aggiungi la seguente dipendenza:
+   Per avviare un servizio, aggiungi una dipendenza Maven corrispondente al servizio. Per l&#39;elenco delle dipendenze, vedere [Elenco dei servizi Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Ad esempio, per il servizio Genera PDF, aggiungi la seguente dipendenza:
 
    ```xml
    <dependency>

@@ -40,7 +40,7 @@ Gestione della corrispondenza espone le API per recuperare le istanze di lettere
 
 ### Utilizzo di getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L’API seguente trova le istanze di lettere in base all’oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è null, restituisce tutte le istanze di lettere. Questa API restituisce un elenco di [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) che possono essere utilizzati per estrarre informazioni aggiuntive dell&#39;istanza della lettera.
+L’API seguente trova le istanze di lettere in base all’oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è null, restituisce tutte le istanze di lettere. Questa API restituisce un elenco di oggetti [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) che possono essere utilizzati per estrarre informazioni aggiuntive dell&#39;istanza della lettera.
 
 **Sintassi**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -52,14 +52,14 @@ L’API seguente trova le istanze di lettere in base all’oggetto query (sia In
   </tr>
   <tr>
    <td>query</td>
-   <td>Il parametro query viene utilizzato per trovare/filtrare l’istanza di Letter. In questo caso, la query supporta solo attributi/proprietà di livello superiore dell’oggetto. Query è costituita da istruzioni e "attributeName" utilizzato nell'oggetto Statement deve essere il nome della proprietà nell'oggetto istanza Letter.<br /> </td>
+   <td>Il parametro query viene utilizzato per trovare/filtrare l’istanza di Letter. In questo caso, la query supporta solo attributi/proprietà di livello superiore dell’oggetto. La query è costituita da istruzioni e l'attributo "attributeName" utilizzato nell'oggetto Statement deve essere il nome della proprietà nell'oggetto istanza Letter.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 #### Esempio 1: recupera tutte le istanze di lettere di tipo INVIATO {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-Il codice seguente restituisce l&#39;elenco delle istanze di lettere inviate. Per ottenere solo le bozze, modifica il `LetterInstanceType.COMPLETE.name()` a `LetterInstanceType.DRAFT.name().`
+Il codice seguente restituisce l&#39;elenco delle istanze di lettere inviate. Per ottenere solo le bozze, modifica `LetterInstanceType.COMPLETE.name()` in `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference

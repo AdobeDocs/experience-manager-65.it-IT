@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A partire dal 31 gennaio 2014, la piattaforma di visualizzazione DHTML è ufficialmente terminata.
 
-Consulta la [Guida di riferimento per i visualizzatori di Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) per i visualizzatori supportati più recenti.
+Per conoscere gli ultimi visualizzatori supportati, consulta la [Guida di riferimento per i visualizzatori di Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 <!-- OBSOLETE CONTENT **What is the change?**
 

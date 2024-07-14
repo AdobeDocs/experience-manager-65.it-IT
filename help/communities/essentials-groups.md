@@ -20,7 +20,7 @@ ht-degree: 1%
 
 La funzione Gruppi community consente la creazione dinamica di una sottocommunity all’interno di un sito community da parte di utenti autorizzati dagli ambienti di pubblicazione e authoring.
 
-A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepack), è possibile nidificare i gruppi all’interno di altri gruppi.
+A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepack), i gruppi possono essere nidificati in altri gruppi.
 
 ## Nozioni di base per lato client {#essentials-for-client-side}
 
@@ -29,7 +29,7 @@ A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepac
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/group/components/hbs/communitygroupmemberlist</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepac
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Consulta <a href="creating-groups.md">Gruppo community</a></td>
+   <td>Visualizza <a href="creating-groups.md">Gruppo community</a></td>
   </tr>
  </tbody>
 </table>
@@ -56,7 +56,7 @@ A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepac
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/group/components/hbs/community groups</td>
   </tr>
   <tr>
@@ -86,15 +86,15 @@ A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepac
 
 ### Funzione Gruppi {#groups-function}
 
-Una struttura del sito della community che include [Funzione Gruppi](functions.md#groups-function) supporta la creazione di nuovi `community groups` dagli ambienti di pubblicazione e di authoring. Il gruppo community creato include `community groups member list` componente che elenca i membri del gruppo.
+Una struttura del sito della community che include una funzione [Groups](functions.md#groups-function) supporta la creazione di nuovi `community groups` dagli ambienti di pubblicazione e di authoring. Il gruppo community creato include un componente `community groups member list` che elenca i membri del gruppo.
 
-Uno o più [modelli per gruppi community](tools-groups.md), che forniscono la struttura delle pagine del gruppo community, può essere configurato per la funzione Gruppi. Ciò si verifica quando la funzione viene aggiunta a un [modello per sito community](sites.md) o nidificati all&#39;interno di un modello di gruppo community.
+Per la funzione Gruppi è possibile configurare uno o più [modelli per gruppi community](tools-groups.md), che forniscono la struttura delle pagine dei gruppi community. Ciò si verifica quando la funzione viene aggiunta a un [modello di sito community](sites.md) o nidificata all&#39;interno di un modello di gruppo community.
 
-L’inclusione di più modelli di gruppo community comporta una scelta. Vale a dire, la scelta del design presentato all&#39;utente autorizzato nel momento in cui viene creato un gruppo community per il sito community. Consulta la sezione su [gruppi community](creating-groups.md) per autori.
+L’inclusione di più modelli di gruppo community comporta una scelta. Vale a dire, la scelta del design presentato all&#39;utente autorizzato nel momento in cui viene creato un gruppo community per il sito community. Consulta la sezione su [gruppi community](creating-groups.md) per gli autori.
 
 ### Gruppi nidificati {#nested-groups}
 
-A partire da Communities [FP1](deploy-communities.md#latestfeaturepack), è possibile includere una funzione Gruppi all’interno di un modello di gruppo, consentendo in tal modo i gruppi nidificati (sottocomunità).
+A partire da Communities [FP1](deploy-communities.md#latestfeaturepack), è possibile che una funzione Groups sia inclusa in un modello di gruppo, consentendo in tal modo i gruppi nidificati (sottocomunità).
 
 Quando un sito community o un modello di gruppo include la funzione Gruppi, è possibile:
 

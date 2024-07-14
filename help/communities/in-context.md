@@ -24,7 +24,7 @@ Quando si utilizza una [console di moderazione](moderation.md), le informazioni 
 
 ## Azioni di moderazione {#moderation-actions}
 
-Visita la panoramica sulla moderazione per una descrizione [azioni di moderazione](moderate-ugc.md#moderation-actions).
+Visita la panoramica moderazione per una descrizione di [azioni di moderazione](moderate-ugc.md#moderation-actions).
 
 ## Interfaccia utente di moderazione {#moderation-ui}
 
@@ -38,11 +38,11 @@ L&#39;interfaccia utente presentata al moderatore nell&#39;istanza di pubblicazi
 
 ## Esempio {#example}
 
-Utilizzo di [Coinvolgi Geometrixx](http://localhost:4503/content/sites/engage/en.html) sito creato quando [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare un thread in un forum in cui sperimentare varie attività di moderazione nell&#39;ambiente di pubblicazione. Vedi sotto.
+Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato durante la [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare un thread in un forum su cui eseguire varie attività di moderazione nell&#39;ambiente Publish. Vedi sotto.
 
-Aaron McDonald (`aaron.mcdonald@mailinator.com`) è stato identificato come membro affidabile della community aggiungendolo al gruppo community-engagement-moderators durante la creazione del sito.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) è stato identificato come membro attendibile della community aggiungendolo al gruppo community-engagement-moderators durante la creazione del sito.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) può essere aggiunto come membro del gruppo community-engagement-members utilizzando il [Console Membri](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) può essere aggiunto come membro del gruppo community-engagement-members utilizzando la console [Members](members.md).
 
 Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestione di utenti e gruppi di utenti](users.md).
 
@@ -51,7 +51,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 * Accedi come Rebekah Larsen (rebekah.larsen@trashymail.com)
 
    * Seleziona forum
-   * Seleziona nuovo post
+   * Seleziona nuovo Post
    * Inserisci l’oggetto
 
      Quando cambiare il nettare in Alimentazione Uccelli Humming
@@ -60,14 +60,14 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
      Non ho avuto molto successo quando appendo un mangiatore di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
 
-   * Seleziona post
+   * Seleziona Post
    * Seleziona disconnessione
 
 * Accedi come Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Seleziona forum
    * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
-   * Inserisci il commento per Pubblica risposta
+   * Inserisci il commento per la risposta Post
 
      Cambio il mio una volta alla settimana e lo prendo da maggio a ottobre.
 
@@ -78,7 +78,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
    * Seleziona forum
    * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
-   * Inserisci il commento per Pubblica risposta
+   * Inserisci il commento per la risposta Post
 
      Vendo nettare e alimentatori - visita https://my.viral.url/
 
@@ -95,9 +95,9 @@ Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubb
 
 ### Nuovo membro (#4) {#new-member}
 
-All’autore, accedi come amministratore e aggiungi Boyd Larsen (boyd.larsen@dodgit.com) come nuovo membro del gruppo community-engagement-members utilizzando il [Console Membri](members.md), quindi disconnettiti.
+All&#39;autore, accedi come amministratore e aggiungi Boyd Larsen (boyd.larsen@dodgit.com) come nuovo membro del gruppo community-engagement-members utilizzando la [console Members](members.md), quindi Esci.
 
-Al momento della pubblicazione, accedi come Boyd Larsen e accedi al thread selezionando `Forum`, e quindi `Read more` per la postazione colibrì.
+Al momento della pubblicazione, accedi come Boyd Larsen e accedi al thread selezionando `Forum`, quindi `Read more` per il post su colibrì.
 
 Avviso:
 
@@ -109,7 +109,7 @@ Chiedi a Boyd di selezionare Flag per segnalare il contenuto pubblicato da Andre
 
 Disconnetti
 
-![membro del forum della community](assets/community-forum-member.png)
+![membro forum della community](assets/community-forum-member.png)
 
 ### Amministratore (#3) {#administrator}
 
@@ -122,7 +122,7 @@ Avviso:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Seleziona la voce di menu Amministrazione per accedere al [console di moderazione](moderation.md) dall’ambiente di pubblicazione.
+Selezionare la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente Publish.
 
 Tieni presente che, per un amministratore, tutto il contenuto moderabile è visibile, non solo il contenuto del sito della community Geometrixx Engage.
 
@@ -130,11 +130,11 @@ Il filtro di ricerca è un pannello laterale che consente di aprire o chiudere a
 
 Disconnetti.
 
-![moderation-console-publish](assets/moderation-console-publish.png)
+![moderazione-console-publish](assets/moderation-console-publish.png)
 
 ### Moderatore community (#2) {#community-moderator}
 
-Accedi come Aaron McDonald (`aaron.mcdonal@mailinator.com`), un moderatore della community, e accedere al thread selezionando Forum (Forum) e quindi Ulteriori informazioni sul post hummingbird.
+Accedi come Aaron McDonald (`aaron.mcdonal@mailinator.com`), moderatore della community, quindi accedi al thread selezionando Forum e Leggi altro per il post su Hummingbird.
 
 Avviso:
 
@@ -145,7 +145,7 @@ Avviso:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Seleziona la voce di menu Amministrazione per accedere al [console di moderazione](moderation.md) dall’ambiente di pubblicazione.
+Selezionare la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente Publish.
 
 Tieni presente che, per un moderatore della community, è visibile solo il contenuto moderabile del sito community di Geometrixx Engage.
 
@@ -153,11 +153,11 @@ Il moderatore della community dispone delle stesse opzioni dell’amministratore
 
 Disconnetti.
 
-![moderator-access](assets/moderator-access.png)
+![accesso moderatore](assets/moderator-access.png)
 
 ### Autore di contenuti (#1) {#content-author}
 
-Accedi come Rebekah Larsen (`rebekah.larsen@mailinator.com`), un membro della community che ha avviato il thread e vi ha accesso selezionando Forum e quindi Leggi tutto per il post su hummingbird.
+Accedere come Rebekah Larsen (`rebekah.larsen@mailinator.com`), un membro della comunità che ha avviato il thread e accedere al thread selezionando Forum e quindi Ulteriori informazioni per il post Hummingbird.
 
 Avviso:
 

@@ -39,12 +39,12 @@ I processi aziendali stabiliti dalla tua organizzazione possono essere rappresen
 >
 >* Applicazione e partecipazione ai flussi di lavoro: [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
 >* Creazione di modelli di flusso di lavoro ed estensione delle funzionalità del flusso di lavoro: [Sviluppo ed estensione dei flussi di lavoro](/help/sites-developing/workflows.md).
->* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano risorse server significative: [Elaborazione flusso di lavoro simultaneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+>* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano risorse server significative: [Elaborazione simultanea dei flussi di lavoro](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
 
 ## Modelli e istanze del flusso di lavoro {#workflow-models-and-instances}
 
-[Modelli di flusso di lavoro](/help/sites-developing/workflows.md#model) nell&#39;AEM sono rappresentati e attuati i processi commerciali:
+[I modelli di flusso di lavoro](/help/sites-developing/workflows.md#model) in AEM sono la rappresentazione e l&#39;implementazione dei processi aziendali:
 
 * In genere agiscono su pagine o risorse per ottenere un risultato specifico.
 * Queste pagine e/o risorse sono denominate payload del flusso di lavoro.
@@ -55,7 +55,7 @@ All’avvio (esecuzione) di un modello di flusso di lavoro, viene creata un’is
 
 >[!CAUTION]
 >
->I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell’istanza*. Consulta [Sviluppo dei flussi di lavoro](/help/sites-developing/workflows.md#model) per ulteriori dettagli.
+>I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell&#39;istanza*. Per ulteriori dettagli, vedi [Sviluppo di flussi di lavoro](/help/sites-developing/workflows.md#model).
 
 Le istanze del flusso di lavoro avanzano nel seguente ciclo di vita:
 
@@ -89,16 +89,16 @@ Un utente o un servizio esegue i passaggi del flusso di lavoro, a seconda del ti
 
 Un flusso di lavoro può avere uno dei seguenti stati:
 
-* **IN ESECUZIONE**: l’istanza del flusso di lavoro è in esecuzione.
-* **COMPLETATO**: istanza del flusso di lavoro terminata correttamente.
+* **IN ESECUZIONE**: l&#39;istanza del flusso di lavoro è in esecuzione.
+* **COMPLETED**: l&#39;istanza del flusso di lavoro è stata terminata.
 
 * **SOSPESO**: contrassegna il flusso di lavoro come sospeso. Tuttavia, consulta la nota di attenzione seguente su un problema noto con questo stato.
-* **INTERROTTO**: istanza del flusso di lavoro terminata.
-* **NON AGGIORNATO**: l’avanzamento dell’istanza del flusso di lavoro richiede l’esecuzione di un processo in background, tuttavia il processo non può essere trovato nel sistema. Questa situazione può verificarsi quando si verifica un errore durante l’esecuzione del flusso di lavoro.
+* **ABORTED**: l&#39;istanza del flusso di lavoro è stata terminata.
+* **STALE**: l&#39;avanzamento dell&#39;istanza del flusso di lavoro richiede l&#39;esecuzione di un processo in background, ma non è possibile trovare il processo nel sistema. Questa situazione può verificarsi quando si verifica un errore durante l’esecuzione del flusso di lavoro.
 
 >[!NOTE]
 >
->Quando l&#39;esecuzione di un passo del processo genera errori, il passo viene visualizzato nella casella in entrata dell&#39;amministratore e lo stato del flusso di lavoro è **IN ESECUZIONE**.
+>Quando l&#39;esecuzione di un passaggio del processo genera errori, il passaggio viene visualizzato nella cartella Posta in arrivo dell&#39;amministratore e lo stato del flusso di lavoro è **IN ESECUZIONE**.
 
 A seconda dello stato, è possibile eseguire azioni sulle istanze del flusso di lavoro in esecuzione quando è necessario intervenire nella normale progressione di un’istanza del flusso di lavoro:
 
@@ -108,5 +108,5 @@ A seconda dello stato, è possibile eseguire azioni sulle istanze del flusso di 
 >
 >Si è verificato un problema noto quando si contrassegna lo stato di un flusso di lavoro come &quot;Sospendi&quot;. In questo stato, è possibile intervenire sugli elementi del flusso di lavoro sospesi in una casella in entrata.
 
-* **Riprendi**: riavvia un flusso di lavoro sospeso nello stesso punto dell’esecuzione in cui è stato sospeso, utilizzando la stessa configurazione.
-* **Termina**: termina l’esecuzione del flusso di lavoro e modifica lo stato in **INTERROTTO**. Impossibile riavviare un&#39;istanza di flusso di lavoro interrotta.
+* **Riprendi**: riavvia un flusso di lavoro sospeso nello stesso punto dell&#39;esecuzione in cui è stato sospeso, utilizzando la stessa configurazione.
+* **Termina**: termina l&#39;esecuzione del flusso di lavoro e modifica lo stato in **INTERROTTO**. Impossibile riavviare un&#39;istanza di flusso di lavoro interrotta.

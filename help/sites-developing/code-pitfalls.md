@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Evitare le associazioni Sling nel codice Java {#avoid-sling-bindings-in-java-code}
 
-Le associazioni Sling rappresentano un modo inappropriato per accedere a un servizio nel 90% dei casi. Al loro posto, utilizza *@Reference* o *@Inject* annotazioni.
+Le associazioni Sling rappresentano un modo inappropriato per accedere a un servizio nel 90% dei casi. È invece necessario utilizzare *@Reference* o *@Inject* annotazioni.
 
 ## Evitare Thread.interrupt nel codice Java {#avoid-thread-interrupt-in-java-code}
 
-*Thread.interrupt* è pericoloso perché può chiudere i file, inclusi i file Lucene e i file di cache persistenti, quando vengono chiamati al momento sbagliato.
+*Thread.interrupt* è pericoloso perché può chiudere i file, inclusi i file Lucene e i file di cache persistenti, se chiamati al momento sbagliato.
 
 ## Evitare di combinare la sincronizzazione Java con ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 

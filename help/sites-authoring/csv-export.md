@@ -29,7 +29,7 @@ ht-degree: 74%
 >
 >Vengono utilizzate la funzione di download e la destinazione predefinita del browser in uso.
 
-Il **Crea esportazione CSV** procedura guidata:
+La procedura guidata **Crea esportazione CSV** consente di selezionare:
 
 * Proprietà da esportare
    * Metadati
@@ -54,13 +54,13 @@ Il file `export.csv` risultante può essere aperto in Excel o in un’altra appl
 
 ![etc-01](assets/etc-01.png)
 
-La creazione **Rapporto CSV** è disponibile quando si sfoglia il **Sites** console (nella vista a elenco): è un’opzione della **Crea** menu a discesa:
+L&#39;opzione crea **rapporto CSV** è disponibile nella visualizzazione a elenco della console **Sites**: è un&#39;opzione del menu a discesa **Crea**:
 
 ![etc-02](assets/etc-02.png)
 
 Per creare un’esportazione CSV:
 
-1. Apri **Sites** , passa alla posizione desiderata, se necessario.
+1. Apri la console **Sites** e passa alla posizione desiderata, se necessario.
 1. Dalla barra degli strumenti, seleziona **Crea**, quindi **Rapporto CSV** per aprire la procedura guidata:
 
    ![etc-03](assets/etc-03.png)

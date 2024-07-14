@@ -22,6 +22,6 @@ Questo elenco contiene i collegamenti ai siti Web del produttore per tutti i ser
 
 **JBoss:** https://www.jboss.com/products/platforms/application
 
-**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
+**WebLogic Oracle:** www.oracle.com/us/products/middleware/application-server/index.html
 
 **IBM WebSphere:** www-01.ibm.com/software/websphere/

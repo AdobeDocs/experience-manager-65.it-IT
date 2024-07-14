@@ -26,13 +26,13 @@ Per ulteriori informazioni, consulta:
 
 >[!NOTE]
 >
->Poiché il framework eCommerce può essere utilizzato con qualsiasi soluzione di eCommerce, consulta [Sviluppo (generico)](/help/commerce/cif-classic/developing/generic.md) per ulteriori informazioni sulle possibilità di sviluppo.
+>Poiché il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce, consulta [Sviluppo (generico)](/help/commerce/cif-classic/developing/generic.md) per ulteriori informazioni sulle possibilità di sviluppo.
 
 >[!NOTE]
 >
->Per utilizzare il framework di integrazione con provider eCommerce esterni, devi innanzitutto installare i pacchetti richiesti. Per ulteriori informazioni, consulta [Distribuzione di eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Per utilizzare il framework di integrazione con provider eCommerce esterni, devi innanzitutto installare i pacchetti richiesti. Per ulteriori informazioni, vedere [Distribuzione di eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Per informazioni sui concetti e sull’amministrazione delle implementazioni di eCommerce, consulta [Amministrazione di eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
+>Per informazioni sui concetti e sull&#39;amministrazione delle implementazioni di eCommerce, vedere [Amministrazione di eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
 
 ## Documentazione API {#api-documentation}
 
@@ -40,4 +40,4 @@ L’API di eCommerce viene fornita dai pacchetti:
 
 `com.adobe.cq.commerce.*`
 
-Consulta la [Documentazione API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) per ulteriori informazioni.
+Per ulteriori informazioni, consulta la [documentazione API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html).

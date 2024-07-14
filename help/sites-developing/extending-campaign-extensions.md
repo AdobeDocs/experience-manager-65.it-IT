@@ -27,25 +27,25 @@ Devi avere installato quanto segue:
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-Consulta [Integrazione dell’AEM con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) per ulteriori informazioni.
+Per ulteriori informazioni, vedere [Integrazione dell&#39;AEM con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md).
 
 ## Esempio 1: da AEM ad Adobe Campaign {#example-aem-to-adobe-campaign}
 
-L’integrazione standard tra AEM e Campaign si basa su JSON e JSSP (JavaScript Server Page). Questi file JSSP si trovano nella console Campaign e iniziano tutti con **aec** (Adobe Experience Cloud)
+L’integrazione standard tra AEM e Campaign si basa su JSON e JSSP (JavaScript Server Page). Questi file JSSP si trovano nella console Campaign e iniziano tutti con **aec** (Adobe Experience Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[Per questo esempio, vedi Geometrixx](/help/sites-developing/we-retail.md), disponibile in Condivisione pacchetti.
+>[Per questo esempio, vedere Geometrixx](/help/sites-developing/we-retail.md), disponibile in Condivisione pacchetti.
 
 In questo esempio, è stato creato un nuovo file JSSP personalizzato e lo chiama dal lato AEM per recuperare il risultato. Può essere utilizzato, ad esempio, per recuperare dati da Adobe Campaign o per salvarli in Adobe Campaign.
 
-1. In Adobe Campaign, per creare un file JSSP, fai clic su **Nuovo** icona.
+1. In Adobe Campaign, per creare un file JSSP, fai clic sull&#39;icona **Nuovo**.
 
-   ![L’icona Nuovo è indicata da una pagina con una stella nell’angolo in alto a sinistra.](do-not-localize/chlimage_1-4a.png)
+   ![L&#39;icona Nuovo come indicato da una pagina con una stella accanto all&#39;angolo superiore sinistro.](do-not-localize/chlimage_1-4a.png)
 
-1. Immetti il nome di questo file JSSP. In questo esempio, **cus:custom.jssp** viene utilizzato (nel senso che si trova nella **cus** namespace).
+1. Immetti il nome di questo file JSSP. In questo esempio, viene utilizzato **cus:custom.jssp** (ovvero è incluso nello spazio dei nomi **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -64,7 +64,7 @@ In questo esempio, è stato creato un nuovo file JSSP personalizzato e lo chiama
    * È attiva la connessione tra AEM e Campaign
    * Il servizio cloud di Campaign è configurato su **/content/geometrixx-outdoors**
 
-   L’oggetto più importante di questo esempio è **GenericCampaignConnector**, che consente di chiamare (ottenere e pubblicare) i file jssp sul lato Adobe Campaign.
+   L&#39;oggetto più importante in questo esempio è **GenericCampaignConnector**, che consente di chiamare (ottenere e pubblicare) i file jssp sul lato Adobe Campaign.
 
    Ecco un piccolo frammento di codice:
 
@@ -169,7 +169,7 @@ AEM offre API pronte all’uso per recuperare gli oggetti disponibili in qualsia
 
 >[!NOTE]
 >
->[Per questo esempio, vedi Geometrixx](/help/sites-developing/we-retail.md), disponibile in Condivisione pacchetti.
+>[Per questo esempio, vedere Geometrixx](/help/sites-developing/we-retail.md), disponibile in Condivisione pacchetti.
 
 Per ogni nodo dell’Explorer è presente un’API ad esso collegata. Ad esempio, per il nodo:
 
@@ -179,13 +179,13 @@ L’API è:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Fine dell’URL **.1.json** può essere sostituito da **.2.json**, **.3.json**, in base al numero di sottolivelli che sei interessato a ottenere. Per ottenere tutte le parole chiave, **infinito** può essere utilizzato:
+La fine dell&#39;URL **.1.json** può essere sostituita da **.2.json**, **.3.json**, in base al numero di sottolivelli che si è interessati a ottenere. Per ottenerli tutti è possibile utilizzare la parola chiave **infinity**:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 Per utilizzare l’API, l’AEM utilizza per impostazione predefinita l’autenticazione di base.
 
-Una libreria JS denominata **amcIntegration.js** è disponibile in 6.1.1 (build 8624 e successive) che implementa tale logica tra diverse altre.
+Una libreria JS denominata **amcIntegration.js** è disponibile nella versione 6.1.1 (build 8624 e successive) che implementa tale logica tra diverse altre.
 
 ### Chiamata API AEM {#aem-api-call}
 

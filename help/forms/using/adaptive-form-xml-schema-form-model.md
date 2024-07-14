@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # Creazione di moduli adattivi tramite lo schema XML {#creating-adaptive-forms-using-xml-schema}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Prerequisiti {#prerequisites}
 
@@ -169,7 +169,7 @@ Di seguito è riportato un esempio di schema XML.
 >* Uso dell&#39;iniziale maiuscola nel nome dell&#39;elemento
 >* Inserimento di uno spazio vuoto nei limiti della Camel Case.
 >
->Ad esempio, se aggiungi il `userFirstName` schema, la didascalia generata nel modulo adattivo è `User First Name`.
+>Ad esempio, se si aggiunge l&#39;elemento schema `userFirstName`, la didascalia generata nel modulo adattivo è `User First Name`.
 
 ## Limitare valori accettabili per un componente modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -287,29 +287,29 @@ Per limitare i valori accettabili per un componente modulo adattivo, è possibil
 
 ## Domande frequenti {#frequently-asked-questions}
 
-**Come è possibile sapere quale elemento della struttura è associato a quale elemento XML?**
+**Come fare per sapere quale elemento della struttura è associato a quale elemento XML?**
 
 Quando si fa doppio clic su un elemento in Content Finder, in una finestra popup viene visualizzato il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà mappa l&#39;elemento della struttura all&#39;elemento o all&#39;attributo nello schema.
 
-![Campo bindref di un elemento schema XML](assets/dblclick.png)
+![Campo bindref di un elemento dello schema XML](assets/dblclick.png)
 
-Il <code>bindRef</code> mostra l’associazione tra un elemento della struttura e un elemento o un attributo in uno schema.
+<code>bindRef</code> mostra l’associazione tra un elemento della struttura e un elemento o un attributo in uno schema.
 
 >[!NOTE]
 >
->Gli attributi hanno un `@` simbolo nel loro `bindRef`per distinguerli dagli elementi. Esempio: `/config/projectDetails/@duration`.
+>Il valore `bindRef` degli attributi contiene un simbolo `@` per distinguerli dagli elementi. Esempio: `/config/projectDetails/@duration`.
 
 **Perché non è possibile trascinare singoli elementi di una sottomaschera (struttura generata da qualsiasi tipo complesso) per sottomaschere ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 
 In una sottomaschera ripetibile è necessario utilizzare la sottomaschera Completa. Se desideri solo campi selettivi, utilizza l’intera struttura ed elimina quelli indesiderati.
 
-**In Content Finder ho una struttura lunga e complessa. Come posso trovare un elemento specifico?**
+**Ho una struttura lunga e complessa in Content Finder. Come trovare un elemento specifico?**
 
 Sono disponibili due opzioni:
 
 * Scorri nella struttura ad albero
 * Utilizzare la casella di ricerca per trovare un elemento
 
-**Che cos&#39;è un bindRef?**
+**Cos&#39;è un bindRef?**
 
-A `bindRef` è la connessione tra un componente modulo adattivo e un elemento o un attributo dello schema. Determina la `XPath` dove il valore acquisito da questo componente o campo è disponibile nel codice XML di output. A `bindRef`viene utilizzato anche quando si precompila un valore di campo da XML precompilato (precompilato).
+Un elemento `bindRef` è la connessione tra un componente modulo adattivo e un elemento o un attributo dello schema. Determina `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. `bindRef` viene utilizzato anche quando si precompila un valore di campo da XML precompilato (precompilato).

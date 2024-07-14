@@ -54,8 +54,8 @@ Il comando keytool si trova in genere nella directory Java jre/bin e deve includ
    <td><p>Posizione e nome del file keystore.</p><p>La posizione può includere il percorso assoluto del file. Oppure, può essere relativa alla directory corrente del prompt dei comandi in cui viene immesso il comando keytool.</p></td>
    <td>
     <ul>
-     <li><p>Key store identità personalizzato: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[nome server]</i><code>/ads-ssl.jks</code></p></li>
-     <li><p>KeyStore attendibilità personalizzato: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[nome server]</i><code>/ads-ca.jks</code></p></li>
+     <li><p>KeyStore identità personalizzato: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[nome server]</i><code>/ads-ssl.jks</code></p></li>
+     <li><p>KeyStore di attendibilità personalizzato: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[nome server]</i><code>/ads-ca.jks</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -80,7 +80,7 @@ Il comando keytool si trova in genere nella directory Java jre/bin e deve includ
   <tr>
    <td><p>-esclusione</p></td>
    <td><p>Password che protegge la chiave privata della coppia di chiavi.</p></td>
-   <td><p>Utilizza la stessa password utilizzata per il <code>-storepass</code> opzione. La password della chiave deve contenere almeno sei caratteri.</p></td>
+   <td><p>Utilizzare la stessa password utilizzata per l'opzione <code>-storepass</code>. La password della chiave deve contenere almeno sei caratteri.</p></td>
   </tr>
   <tr>
    <td><p>-dname</p></td>
@@ -109,7 +109,7 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
 
    >[!NOTE]
    >
-   >Sostituisci `[JAVA_HOME]`*con la directory in cui è installato JDK e sostituisci il testo in corsivo con i valori corrispondenti all’ambiente.*
+   >Sostituisci `[JAVA_HOME]`*con la directory in cui è installato JDK e sostituisci il testo in corsivo con i valori corrispondenti all&#39;ambiente.*
 
    Ad esempio:
 
@@ -117,7 +117,7 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   Il file keystore di identità personalizzato denominato &quot;ads-credentials.jks&quot; viene creato nel file [appserverdomain]/adobe/[nome server] directory.
+   Il file del keystore di identità personalizzato denominato &quot;ads-credentials.jks&quot; è stato creato nella directory [appserverdomain]/adobe/[server name].
 
 1. Estrai il certificato dal keystore ads-credentials immettendo il comando seguente:
 
@@ -129,7 +129,7 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
 
    >[!NOTE]
    >
-   >Sostituisci `[JAVA_HOME]` con la directory in cui è installato JDK e sostituire `store`*_* `password`* con la password per il keystore Custom Identity.*
+   >Sostituisci `[JAVA_HOME]` con la directory in cui è installato JDK e sostituisci `store`*_* `password`* con la password per il keystore di identità personalizzata.*
 
    Ad esempio:
 
@@ -137,7 +137,7 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   Il file di certificato denominato &quot;ads-ca.cer&quot; viene creato in [appserverdomain]/adobe/[*nome server*] directory.
+   Il file di certificato denominato &quot;ads-ca.cer&quot; viene creato nella directory [appserverdomain]/adobe/[*server name*].
 
 1. Copiare il file ads-ca.cer in tutti i computer host che richiedono una comunicazione sicura con il server applicazioni.
 1. Inserire il certificato in un nuovo file keystore (il keystore di trust personalizzato) immettendo il comando seguente:
@@ -146,7 +146,7 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
 
    >[!NOTE]
    >
-   >Sostituisci `[JAVA_HOME]` con la directory in cui è installato JDK e sostituire `store`*_* `password` e `key`*_* `password` *con le tue password.*
+   >Sostituisci `[JAVA_HOME]` con la directory in cui è installato JDK e sostituisci `store`*_* `password` e `key`*_* `password` *con le tue password.*
 
    Ad esempio:
 
@@ -154,50 +154,50 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-Il file keystore Trust personalizzato denominato &quot;ads-ca.jks&quot; viene creato nel [appserverdomain]directory /adobe/&#39;server&#39;.
+Il file del keystore di trust personalizzato denominato &quot;ads-ca.jks&quot; viene creato nella directory [appserverdomain]/adobe/&#39;server&#39;.
 
 Configurare WebLogic in modo che utilizzi il keystore Identità personalizzata e il keystore Trust personalizzato creati. Disattivare inoltre la funzione di verifica del nome host WebLogic perché il nome distinto utilizzato per creare i file del keystore non include il nome del computer che ospita WebLogic Server.
 
 ## Configurare WebLogic per l&#39;utilizzo di SSL {#configure-weblogic-to-use-ssl}
 
-1. Avviare la console di amministrazione del server WebLogic digitando `https://`*[nome host ]*`:7001/console` nella riga URL di un browser web.
-1. In Ambiente, in Configurazioni dominio, seleziona **Server > &#39;server&#39; > Configurazione > Generale**.
-1. In Generale, in Configurazione, assicurati che **Porta di ascolto abilitata** e **Porta di ascolto SSL abilitata** sono selezionati. Se non è abilitata, effettuare le seguenti operazioni:
+1. Avviare la console di amministrazione del server WebLogic digitando `https://`*[nome host ]*`:7001/console` nella riga URL di un browser Web.
+1. In Ambiente selezionare **Server > &#39;server&#39; > Configurazione > Generale** in Configurazioni dominio.
+1. In Generale, in Configurazione, accertati che siano selezionate **Porta di ascolto abilitata** e **Porta di ascolto SSL abilitata**. Se non è abilitata, effettuare le seguenti operazioni:
 
-   1. Sotto Cambia centro, fare clic su **Blocca e modifica** per modificare selezioni e valori.
-   1. Controlla la **Porta di ascolto abilitata** e **Porta di ascolto SSL abilitata** caselle di controllo.
+   1. Nel Centro modifiche fare clic su **Blocca e modifica** per modificare selezioni e valori.
+   1. Selezionare le caselle di controllo **Porta di ascolto abilitata** e **Porta di ascolto SSL abilitata**.
 
 1. Se il server è un server gestito, impostare la porta di ascolto su un valore di porta inutilizzato (ad esempio 8001) e la porta di ascolto SSL su un valore di porta inutilizzato (ad esempio 8002). In un server autonomo, la porta SSL predefinita è 7002.
-1. Clic **Configurazione della versione**.
-1. In Ambiente, in Configurazioni dominio, fai clic su **Server > [*Server gestito*] > Configurazione > Generale**.
-1. In Generale, in Configurazione, seleziona **Negozi chiavi**.
-1. Sotto Cambia centro, fare clic su **Blocca e modifica** per modificare selezioni e valori.
-1. Clic **Cambia** per ottenere l&#39;elenco keystore come elenco a discesa e selezionare **Identità Personalizzata E Attendibilità Personalizzata**.
+1. Fare clic su **Configurazione rilascio**.
+1. In Ambiente, in Configurazioni dominio, fare clic su **Server > [*Server gestito*] > Configurazione > Generale**.
+1. In Generale, in Configurazione, selezionare **Archivi chiavi**.
+1. Nel Centro modifiche fare clic su **Blocca e modifica** per modificare selezioni e valori.
+1. Fare clic su **Cambia** per ottenere l&#39;elenco a discesa del keystore e selezionare **Identità personalizzata e trust personalizzato**.
 1. In Identità (Identity), specificate i seguenti valori:
 
-   **Key store identità personalizzato**: *[appserverdomain]*/adobe/*[nome server]*/ads-credentials.jks, dove *[appserverdomain] *è il percorso effettivo e *[nome server]* è il nome del server applicazioni.
+   **Archivio chiavi di identità personalizzato**: *[appserverdomain]*/adobe/*[nome server]*/ads-credentials.jks, dove *[appserverdomain] *è il percorso effettivo e *[nome server]* è il nome del server applicazioni.
 
    **Tipo di registro chiavi identità personalizzato**: JKS
 
-   **Passphrase KeyStore identità personalizzata**: *mypassword* (password del keystore di identità personalizzato)
+   **Passphrase KeyStore identità personalizzata**: *password* (password keystore identità personalizzata)
 
 1. In Considera attendibile specificare i valori seguenti:
 
-   **Nome file KeyStore attendibilità personalizzato**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, dove `*[appserverdomain]*` è il percorso effettivo
+   **Nome file KeyStore per attendibilità personalizzata**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, dove `*[appserverdomain]*` è il percorso effettivo
 
-   **Tipo di keystore di attendibilità personalizzato**: JKS
+   **Tipo KeyStore Trust Personalizzato**: JKS
 
-   **Passphrase KeyStore attendibile personalizzata**: *mypassword* (password chiave di trust personalizzata)
+   **Passphrase archivio chiavi di protezione personalizzato**: *password* (password chiave di protezione personalizzata)
 
-1. In Generale, in Configurazione, seleziona **SSL**.
+1. In Generale, in Configurazione, selezionare **SSL**.
 1. Per impostazione predefinita, l&#39;opzione Registro chiavi è selezionata per le posizioni di identità e attendibilità. In caso contrario, modificarlo in keystore.
 1. In Identità (Identity), specificate i seguenti valori:
 
    **Alias chiave privata**: ads-credentials
 
-   **Passphrase**: *mypassword*
+   **Passphrase**: *password*
 
-1. Clic **Configurazione della versione**.
+1. Fare clic su **Configurazione rilascio**.
 
 ## Disattiva la funzione di verifica del nome host {#disable-the-hostname-verification-feature}
 

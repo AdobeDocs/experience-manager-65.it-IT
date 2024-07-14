@@ -22,7 +22,7 @@ AEM Forms document security consente di creare, archiviare e applicare impostazi
 
 ## Dati utente e archivi dati {#user-data-and-data-stores}
 
-Document Security memorizza in un database criteri e dati relativi a documenti protetti, inclusi i dati utente, ad esempio My Sql, Oracle, MS® SQL Server e IBM® DB2®. Inoltre, i dati per gli utenti autorizzati in una policy vengono archiviati nella gestione degli utenti. Per informazioni sui dati memorizzati nella gestione utente, consulta [Gestione utente di Forms: gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
+Document Security memorizza in un database criteri e dati relativi a documenti protetti, inclusi i dati utente, ad esempio My Sql, Oracle, MS® SQL Server e IBM® DB2®. Inoltre, i dati per gli utenti autorizzati in una policy vengono archiviati nella gestione degli utenti. Per informazioni sui dati archiviati nella gestione utenti, vedere [Gestione utenti Forms: gestione dati utente](/help/forms/using/user-management-handling-user-data.md).
 
 Nella tabella seguente viene illustrato il modo in cui Document Security organizza i dati nelle tabelle di database.
 
@@ -62,7 +62,7 @@ Nella tabella seguente viene illustrato il modo in cui Document Security organiz
   </tr>
   <tr>
    <td><code>EdcPolicyXmlEntity</code></td>
-   <td>Memorizza i file XML per i criteri attivi. XML criterio<sup> </sup>contiene riferimenti agli ID entità degli utenti associati al criterio. Il codice XML dei criteri viene memorizzato come oggetto BLOB.</td>
+   <td>Memorizza i file XML per i criteri attivi. Un criterio XML<sup> </sup>contiene riferimenti agli ID entità degli utenti associati al criterio. Il codice XML dei criteri viene memorizzato come oggetto BLOB.</td>
   </tr>
   <tr>
    <td><code>EdcPolicyArchiveEntity</code></td>
@@ -83,9 +83,9 @@ Nella tabella seguente viene illustrato il modo in cui Document Security organiz
 
 È possibile accedere ed esportare i dati di Document Security per gli utenti dei database e, se necessario, eliminarli definitivamente.
 
-Per esportare o eliminare dati utente da un database, è necessario connettersi al database utilizzando un client di database e individuare l&#39;ID entità in base ad alcune informazioni personali dell&#39;utente. Ad esempio, per recuperare l’ID principale di un utente che utilizza un ID di accesso, esegui quanto segue `select` sul database.
+Per esportare o eliminare dati utente da un database, è necessario connettersi al database utilizzando un client di database e individuare l&#39;ID entità in base ad alcune informazioni personali dell&#39;utente. Ad esempio, per recuperare l&#39;ID entità di un utente che utilizza un ID di accesso, eseguire il comando `select` seguente nel database.
 
-In `select` , sostituisci il `<user_login_id>` con l&#39;ID di accesso dell&#39;utente di cui desideri recuperare l&#39;ID principale da `EdcPrincipalUserEntity` tabella di database.
+Nel comando `select`, sostituire `<user_login_id>` con l&#39;ID di accesso dell&#39;utente di cui si desidera recuperare l&#39;ID principale dalla tabella del database `EdcPrincipalUserEntity`.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -95,7 +95,7 @@ Una volta individuato l’ID principale, puoi esportare o eliminare i dati utent
 
 ### Esporta dati utente {#export-user-data}
 
-Eseguire i seguenti comandi di database per esportare i dati utente per un ID entità dalle tabelle di database. In `select` comando, sostituisci `<principal_id>` con l’ID principale dell’utente di cui desideri esportare i dati.
+Eseguire i seguenti comandi di database per esportare i dati utente per un ID entità dalle tabelle di database. Nel comando `select`, sostituire `<principal_id>` con l&#39;ID principale dell&#39;utente di cui si desidera esportare i dati.
 
 >[!NOTE]
 >
@@ -125,16 +125,16 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Per esportare dati da `EdcAuditEntity` tabella, utilizza [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API che richiede [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per esportare i dati di audit in base a `principalId`, `policyId`, o `licenseId`.
+>Per esportare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per esportare i dati di controllo in base a `principalId`, `policyId` o `licenseId`.
 
-Per ottenere dati completi su un utente nel sistema, è necessario accedere ed esportare i dati dal database di gestione utenti. Per ulteriori informazioni, consulta [Gestione degli utenti di Forms: gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
+Per ottenere dati completi su un utente nel sistema, è necessario accedere ed esportare i dati dal database di gestione utenti. Per ulteriori informazioni, vedere [Gestione utenti di Forms: gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
 
 ### Elimina dati utente {#delete-user-data}
 
 Per eliminare i dati di Document Security relativi a un ID entità dalle tabelle di database, procedere come segue.
 
 1. Arresta il server AEM Forms.
-1. Eseguire i seguenti comandi di database per eliminare i dati per l&#39;ID entità dalle tabelle di database per la protezione dei documenti. In `Delete` comando, sostituisci `<principal_id>` con l’ID principale dell’utente di cui desideri eliminare i dati.
+1. Eseguire i seguenti comandi di database per eliminare i dati per l&#39;ID entità dalle tabelle di database per la protezione dei documenti. Nel comando `Delete`, sostituire `<principal_id>` con l&#39;ID principale dell&#39;utente di cui si desidera eliminare i dati.
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -150,17 +150,17 @@ Per eliminare i dati di Document Security relativi a un ID entità dalle tabelle
 
    >[!NOTE]
    >
-   >Per eliminare dati da `EdcAuditEntity` tabella, utilizza [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API che richiede [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per eliminare i dati di audit in base a `principalId`, `policyId`, o `licenseId`.
+   >Per eliminare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per eliminare i dati di controllo basati su `principalId`, `policyId` o `licenseId`.
 
-1. I file XML dei criteri attivi e archiviati vengono archiviati nel `EdcPolicyXmlEntity` e `EdcPolicyArchiveEntity` tabelle di database, rispettivamente. Per eliminare i dati di un utente da queste tabelle, eseguire le operazioni seguenti:
+1. I file XML dei criteri attivi e archiviati sono archiviati rispettivamente nelle tabelle di database `EdcPolicyXmlEntity` e `EdcPolicyArchiveEntity`. Per eliminare i dati di un utente da queste tabelle, eseguire le operazioni seguenti:
 
-   1. Apri il BLOB XML di ogni riga nel `EdcPolicyXMLEntity` o `EdcPolicyArchiveEntity` ed estrarre il file XML. Il file XML è simile a quello mostrato di seguito.
+   1. Aprire il BLOB XML di ogni riga nella tabella `EdcPolicyXMLEntity` o `EdcPolicyArchiveEntity` ed estrarre il file XML. Il file XML è simile a quello mostrato di seguito.
    1. Modifica il file XML in modo da poter rimuovere il BLOB per l’ID entità.
    1. Ripetere i passaggi 1 e 2 per l&#39;altro file.
 
    >[!NOTE]
    >
-   >Rimuovi il BLOB completo all’interno di `Principal` tag per un ID entità o per il codice XML dei criteri potrebbe essere danneggiato o inutilizzabile.
+   >Rimuovere il BLOB completo all&#39;interno del tag `Principal` per un ID entità o il codice XML dei criteri potrebbe essere danneggiato o inutilizzabile.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -189,25 +189,25 @@ Per eliminare i dati di Document Security relativi a un ID entità dalle tabelle
    <ns2:Permission PermissionName="ns3:com.adobe.aps.pdf.printLow" Access="ALLOW"/>
    ```
 
-   Oltre a eliminare i dati direttamente dal `EdcPolicyXmlEntity` Nella tabella sono disponibili altri due modi per ottenere questo risultato:
+   Oltre a eliminare i dati direttamente dalla tabella `EdcPolicyXmlEntity`, è possibile eseguire questa operazione in altri due modi:
 
    **Utilizzo della console di amministrazione**
 
-   1. In qualità di amministratore, accedi alla console di amministrazione di Forms JEE all’indirizzo https://[*server*]:[*porta*]/adminui
-   1. Accedi a **[!UICONTROL Servizi > Document Security > Set di criteri]**.
+   1. In qualità di amministratore, accedi alla console di amministrazione di Forms JEE all&#39;indirizzo https://[*server*]:[*porta*]/adminui.
+   1. Passa a **[!UICONTROL Servizi > Document Security > Set di criteri]**.
    1. Aprire un set di criteri ed eliminare l&#39;utente dal criterio.
 
-   **Utilizzo della pagina web di Document Security**
+   **Utilizzo della pagina Web di Document Security**
 
    Gli utenti di Document Security che dispongono delle autorizzazioni per creare policy personali possono eliminare i dati degli utenti dai propri criteri. Per eseguire questa operazione:
 
-   1. Gli utenti che dispongono di criteri personali accedono alla propria pagina web di document security all’indirizzo https://[*server*]:[*porta*]/edc
-   1. Accedi a **[!UICONTROL Servizi > Document Security > Le mie policy]**.
+   1. Gli utenti con criteri personali accedono alla pagina Web di Document Security all’indirizzo https://[*server*]:[*porta*]/sec.
+   1. Passa a **[!UICONTROL Servizi > Document Security > I miei criteri]**.
    1. Apri una policy ed elimina l’utente dalla policy.
 
    >[!NOTE]
    >
-   >Gli amministratori possono cercare, accedere ed eliminare i dati utente dalle policy personali di altri utenti in **[!UICONTROL Servizi > Document Security > Le mie policy]** mediante la console di amministrazione.
+   >Gli amministratori possono cercare, accedere ed eliminare i dati utente dai criteri personali di altri utenti in **[!UICONTROL Servizi > Document Security > I miei criteri]** utilizzando la console di amministrazione.
 
-1. Elimina i dati per l&#39;ID entità dal database di gestione utenti. Per i passaggi dettagliati, consulta [Gestione utenti Forms | Gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
+1. Elimina i dati per l&#39;ID entità dal database di gestione utenti. Per i passaggi dettagliati, consulta [Gestione utente di Forms | Gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
 1. Avvia il server AEM Forms.

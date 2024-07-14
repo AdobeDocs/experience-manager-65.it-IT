@@ -26,7 +26,7 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}
 
-Le seguenti scelte rapide sono disponibili per le console Sites, Commerce, Screens, Assets, Users, Groups, Projects e Experience Fragments.
+Le seguenti scelte rapide sono disponibili per le console Sites, Commerce, Screens, Assets, Utenti, Gruppi, Progetti e Frammenti di esperienza.
 
 | Dove si trova | Scelta rapida | Descrizione |
 |---|---|---|
@@ -51,7 +51,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Commerce, Scree
 
 Le combinazioni di tasti sono elencate con i [tasti modificatori](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) per Windows.
 
-Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano [editor pagina](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) per l’authoring delle pagine.
+Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop quando utilizzano l&#39;[editor di pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) per creare pagine.
 
 ## Tasti modificatori specifici del sistema operativo {#os-specific-modifier-keys}
 

@@ -22,21 +22,21 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 >[!NOTE]
 >
->Quando si verificano problemi, vale anche la pena controllare l&#39;elenco di [Problemi noti](/help/release-notes/release-notes.md) per la tua istanza (release e service pack).
+>In caso di problemi, vale anche la pena controllare l&#39;elenco di [problemi noti](/help/release-notes/release-notes.md) per la tua istanza (pacchetti di versioni e service pack).
 
 >[!NOTE]
 >
->Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, consulta l’amministratore di sistema per la risoluzione dei problemi AEM.
+>Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi relativi all&#39;AEM (per gli amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, consulta l’amministratore di sistema per la risoluzione dei problemi AEM.
 
 ## La vecchia versione della pagina è ancora nel sito pubblicato {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Hai apportato modifiche a una pagina e l’hai replicata nel sito pubblicato, ma il *vecchio* La versione della pagina viene ancora visualizzata sul sito pubblicato.
+   * Hai apportato modifiche a una pagina e l&#39;hai replicata nel sito pubblicato, ma nel sito pubblicato viene ancora visualizzata la versione *vecchia* della pagina.
 
 * **Motivo**:
 
-   * Questo può avere diverse cause, nella maggior parte dei casi la cache (nel browser locale o in Dispatcher), anche se a volte può essere un problema con la coda di replica.
+   * Questo può avere diverse cause, il più delle volte la cache (sia nel browser locale che in Dispatcher), anche se a volte può essere un problema con la coda di replica.
 
 * **Soluzioni**:
 

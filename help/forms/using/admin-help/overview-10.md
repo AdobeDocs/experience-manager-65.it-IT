@@ -20,10 +20,10 @@ ht-degree: 0%
 
 Workspace consente agli utenti di avviare, partecipare e tenere traccia dei processi aziendali.
 
-Nelle pagine di Workspace della console di amministrazione, puoi eseguire le seguenti attività:
+Nelle pagine Workspace della console di amministrazione, puoi eseguire le seguenti attività:
 
 * Impostare il messaggio da visualizzare nella pagina di benvenuto dell&#39;interfaccia utente di Workspace
-* Configurare i modelli di ricerca da utilizzare in Workspace per cercare processi e attività
+* Configurare i modelli di ricerca da utilizzare in Workspace per la ricerca di processi e attività
 * Importare ed esportare modelli di ricerca e impostazioni globali
 
 >[!NOTE]

@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Estendi componente commenti  {#extend-comments-component}
 
-L&#39;intenzione di [estensione](client-customize.md#extensions) un componente di default consiste nel modificare l&#39;aspetto o il comportamento di un componente per usi specifici.
+L&#39;intenzione di [estendere](client-customize.md#extensions) un componente predefinito è di alterare l&#39;aspetto o il comportamento di un componente per usi specifici.
 
 Il percorso del componente è univoco e fa riferimento al componente predefinito come tipo di risorsa super. Il rischio è minore in quanto l’ambito è limitato rispetto all’ambito globale di una sovrapposizione di componenti.
 
 >[!NOTE]
 >
->Estensione di un [sovrapposto](client-customize.md#overlays) componente non supportato.
+>L&#39;estensione di un componente [sovrapposto](client-customize.md#overlays) non è supportata.
 
 ## Esempio {#example}
 
@@ -32,7 +32,7 @@ Supponiamo che l’intestazione del componente Commento debba essere visualizzat
 
 Per implementare questa soluzione, crea un componente che estende (sostituisce) quello esistente e modifica lo script Handlebars. L&#39;area del sito che utilizza i nuovi commenti può utilizzare quello esteso, mentre i siti che utilizzano l&#39;aspetto predefinito rimangono invariati.
 
-Il componente Commento è in realtà uno dei due componenti che compongono il sistema di commenti. Pertanto, esistono due componenti da estendere: *commenti* e *commento*. Lo script da modificare si trova in *commento* del componente `header.hbs` file, mentre l&#39;elemento padre *commenti* componente (il sistema di commenti) è ciò che un autore aggiunge effettivamente alla pagina.
+Il componente Commento è in realtà uno dei due componenti che compongono il sistema di commenti. Pertanto, sono disponibili due componenti da estendere: *commenti* e *commento*. Lo script da modificare si trova nel file `header.hbs` del componente *comment*, mentre il componente *comments* principale (il sistema di commenti) è ciò che un autore aggiunge effettivamente alla pagina.
 
 Per estendere i commenti, è necessario:
 

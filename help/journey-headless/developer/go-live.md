@@ -14,7 +14,7 @@ ht-degree: 53%
 
 # Come pubblicare con la tua applicazione headless {#go-live}
 
-In questa parte del [Percorso di sviluppatori AEM headless](overview.md), scopri come distribuire un’applicazione headless live.
+In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), scopri come distribuire un&#39;applicazione headless live.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -39,7 +39,7 @@ Questo documento ti aiuta a comprendere la pipeline di pubblicazione headless AE
 L’SDK di AEM viene utilizzato per generare e distribuire il codice personalizzato. È lo strumento principale che devi sviluppare e testare la tua applicazione headless prima di andare &quot;live&quot;. Contiene i seguenti artefatti:
 
 * Il file jar Quickstart: un file jar eseguibile che può essere utilizzato per impostare sia un’istanza di authoring che di pubblicazione
-* Strumenti di Dispatcher: il modulo Dispatcher e le sue dipendenze per sistemi basati su Windows e UNIX
+* Strumenti Dispatcher: il modulo Dispatcher e le sue dipendenze per i sistemi basati su Windows e UNIX
 * Jar API Java™ - La dipendenza Java™ Jar/Maven che espone tutte le API Java™ consentite che possono essere utilizzate per lo sviluppo rispetto ad AEM
 * Jar Javadoc: i javadoc per il jar API Java™
 
@@ -53,13 +53,13 @@ Oltre all’SDK per AEM, hai bisogno di strumenti aggiuntivi che facilitino lo s
 * La libreria Node.js
 * L’IDE che preferisci
 
-Poiché AEM è un&#39;applicazione Java™, è necessario installare Java™ e Java™ SDK per supportare lo sviluppo di AEM as a Cloud Service.
+Poiché AEM è un’applicazione Java™, è necessario installare Java™ e Java™ SDK per supportare lo sviluppo di AEM as a Cloud Service.
 
 Git è ciò che utilizzerai per gestire il controllo del codice sorgente e per tenere traccia delle modifiche a Cloud Manager e, quindi, distribuirle su un’istanza di produzione.
 
 AEM utilizza Apache Maven per creare progetti generati dall’archetipo del progetto Maven di AEM. Tutti gli IDE principali forniscono supporto per l’integrazione per Maven.
 
-Node.js è un ambiente runtime JavaScript utilizzato per lavorare con le risorse front-end di un progetto AEM `ui.frontend` sottoprogetto. Node.js è distribuito con npm, che è de facto il gestore di pacchetti Node.js, utilizzato per gestire le dipendenze JavaScript.
+Node.js è un ambiente di runtime JavaScript utilizzato per lavorare con le risorse front-end del sottoprogetto `ui.frontend` di un progetto AEM. Node.js è distribuito con npm, che è de facto il gestore di pacchetti Node.js, utilizzato per gestire le dipendenze di JavaScript.
 
 ## Panoramica dei componenti di un sistema AEM {#components-of-an-aem-system-at-a-glance}
 
@@ -69,7 +69,7 @@ Un ambiente AEM completo è costituito da authoring, pubblicazione e Dispatcher.
 
 * Il **servizio di authoring** è il luogo in cui gli utenti interni creano, gestiscono e visualizzano in anteprima i contenuti.
 
-* **Il servizio di pubblicazione** è considerato l’ambiente &quot;Live&quot; ed è tipicamente ciò con cui gli utenti finali interagiscono. I contenuti, dopo essere stati modificati e approvati nel servizio di authoring, vengono distribuiti (replicati) nel servizio di pubblicazione. Il modello di implementazione più comune per le applicazioni headless AEM consiste nella connessione della versione di produzione dell’applicazione a un servizio di pubblicazione AEM.
+* **Il servizio Publish** è considerato l&#39;ambiente &quot;Live&quot; ed è normalmente ciò con cui gli utenti finali interagiscono. I contenuti, dopo essere stati modificati e approvati nel servizio di authoring, vengono distribuiti (replicati) al servizio Publish. Il modello di implementazione più comune per le applicazioni headless AEM consiste nella connessione della versione di produzione dell’applicazione a un servizio di pubblicazione AEM.
 
 * **Il Dispatcher** è un server web statico potenziato con il modulo Dispatcher di AEM. Memorizza nella cache le pagine web prodotte dall’istanza di pubblicazione per migliorare le prestazioni.
 
@@ -97,7 +97,7 @@ L&#39;ambiente di sviluppo locale è costituito da tre aree principali:
 
 Dopo aver configurato l’ambiente di sviluppo locale, puoi simulare il contenuto da distribuire all’app React distribuendo localmente un server Nodo statico.
 
-Per informazioni più approfondite sulla configurazione di un ambiente di sviluppo locale e su tutte le dipendenze necessarie per l’anteprima del contenuto, consulta [Documentazione sull’implementazione in produzione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
+Per informazioni più approfondite sulla configurazione di un ambiente di sviluppo locale e su tutte le dipendenze necessarie per l&#39;anteprima del contenuto, consulta [Documentazione sulla distribuzione di produzione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Prepara la tua applicazione AEM headless per il lancio {#prepare-your-aem-headless-application-for-golive}
 
@@ -133,24 +133,24 @@ Ora è il momento di preparare l’applicazione headless AEM per il lancio, segu
 * Assicurati che i client HTTP utilizzino HTTP/2.
 * Assicurati che i client HTTP accettino la richiesta di intestazioni per gzip.
 * Riduci al minimo il numero di domini utilizzati per ospitare JSON e gli artefatti di riferimento.
-* Utilizzare `Last-modified-since` per aggiornare le risorse.
+* Utilizza `Last-modified-since` per aggiornare le risorse.
 * Utilizza l’output `_reference` nel file JSON per iniziare a scaricare risorse senza dover analizzare file JSON completi.
 
 <!-- End of CDN Review -->
 
 ## Distribuzione alla produzione {#deploy-to-production}
 
-La distribuzione in produzione può dipendere dall’esistenza o meno di un *tradizionale* Istanza AEM che distribuisce tramite Maven o che si trova in Adobe Managed Services (AMS) e quindi utilizza Cloud Manager.
+La distribuzione in Produzione può dipendere dal fatto che tu disponga di un&#39;istanza *tradizionale* dell&#39;AEM che distribuisce utilizzando Maven oppure di Adobe Managed Services (AMS) e quindi di Cloud Manager.
 
 ## Implementare in produzione utilizzando Maven {#deploy-to-production-maven}
 
-Per un *tradizionale* (non AMS) utilizzando Maven, vedi la sezione [Esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) panoramica.
+Per una distribuzione *tradizionale* (non AMS) tramite Maven, consulta l&#39;[esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) per una panoramica.
 
-## Implementare in produzione con Cloud Manager {#deploy-to-production-cloud-manager}
+## Implementare in produzione utilizzando Cloud Manager {#deploy-to-production-cloud-manager}
 
-Se sei un cliente AMS che utilizza Cloud Manager, dopo aver verificato che tutto sia stato testato e funzioni correttamente, puoi inviare gli aggiornamenti del codice a una [archivio Git centralizzato in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
+Se sei un cliente AMS che utilizza Cloud Manager, dopo aver verificato che tutto sia stato testato e funzioni correttamente, puoi inviare gli aggiornamenti del codice a un [archivio Git centralizzato in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
-Dopo aver caricato gli aggiornamenti in Cloud Manager, implementali in AEM utilizzando [Pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
+Dopo aver caricato gli aggiornamenti in Cloud Manager, distribuiscili all&#39;AEM utilizzando [la pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -211,9 +211,9 @@ Hai già avviato il tuo primo progetto headless AEM oppure ora disponi di tutte 
 
 ### Esplora le applicazioni a pagina singola {#explore-spa}
 
-Non c&#39;è bisogno di fermare i negozi headless in AEM, però. In [Guida introduttiva del percorso](getting-started.md#integration-levels), ha discusso come l&#39;AEM non solo supporti la distribuzione headless e i modelli tradizionali full stack, ma supporti anche modelli ibridi che combinano i vantaggi di entrambi.
+Non c&#39;è bisogno di fermare i negozi headless in AEM, però. Nella sezione [Guida introduttiva del percorso](getting-started.md#integration-levels), è stato discusso il modo in cui l&#39;AEM non solo supporta la distribuzione headless e i modelli full stack tradizionali, ma supporta anche i modelli ibridi che combinano i vantaggi di entrambi.
 
-Se questo tipo di flessibilità è necessario per il progetto, continua con la parte opzionale aggiuntiva del percorso, [Come creare applicazioni a pagina singola (SPA) con AEM.](create-spa.md)
+Se questo tipo di flessibilità è necessario per il progetto, passare alla parte facoltativa aggiuntiva del percorso [Come creare applicazioni a pagina singola (SPA) con AEM.](create-spa.md)
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -227,7 +227,7 @@ Se questo tipo di flessibilità è necessario per il progetto, continua con la p
 
    * [Controllo di una cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Configurazione di [Rewriter CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*cerca rewriter CDN*)
+   * Configurazione del [rewriter CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*cerca rewriter CDN*)
 
 * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

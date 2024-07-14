@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Elementi di base per la votazione {#voting-essentials}
 
-La componente di voto, una [conteggio](tally.md) sottoclasse, è uno strumento utile che consente ai membri di assegnare una valutazione a un particolare contenuto semplicemente selezionando frecce verso l’alto o verso il basso per indicare la propria opinione.
+Il componente di voto, una sottoclasse [tally](tally.md), è uno strumento utile che consente ai membri di valutare un particolare contenuto semplicemente selezionando frecce verso l&#39;alto o verso il basso per indicare la propria opinione.
 
-È consentito posizionare più istanze di un componente voting sulla stessa pagina; ogni istanza deve essere configurata con un `tally name` proprietà.
+È consentito inserire più istanze di un componente voting nella stessa pagina; ogni istanza deve essere configurata con una proprietà `tally name` univoca.
 
 La pubblicazione anonima di un voto non è supportata. I visitatori del sito devono registrarsi e accedere per partecipare alle votazioni una sola volta. Il visitatore (membro) che ha effettuato l’accesso può modificare il proprio voto in qualsiasi momento.
 
@@ -29,12 +29,12 @@ La pubblicazione anonima di un voto non è supportata. I visitatori del sito dev
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/tally/components/hbs/voting</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
-   <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
+   <td>Sì - le proprietà sono modificabili in modalità <i>progettazione </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -50,7 +50,7 @@ La pubblicazione anonima di un voto non è supportata. I visitatori del sito dev
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td><p>Consulta <a href="voting.md">Utilizzo della votazione</a></p> </td>
+   <td><p>Vedi <a href="voting.md">Utilizzo di Voting</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -59,24 +59,24 @@ La pubblicazione anonima di un voto non è supportata. I visitatori del sito dev
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Punti finali conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoint conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
 ### Accesso a votazione registrata (UGC) {#accessing-posted-voting-ugc}
 
 Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Vedere [Moderazione del contenuto generato dall&#39;utente](moderate-ugc.md).
 
-A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell&#39;UGC nell&#39;archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio.
-* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi ed esempi dell&#39;utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida per la codifica.
-* [Refactoring SocialUtils](socialutils.md) - mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.
+* [Refactoring di SocialUtils](socialutils.md) - mapping dei metodi di utilità obsoleti ai metodi di utilità SRP correnti.

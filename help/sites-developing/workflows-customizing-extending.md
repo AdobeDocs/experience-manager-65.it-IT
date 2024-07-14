@@ -25,7 +25,7 @@ La creazione di un passaggio di flusso di lavoro personalizzato prevede le segue
 * Sviluppa il componente passaggio flusso di lavoro.
 * Implementa la funzionalità step come servizio OSGi o script ECMA.
 
-È inoltre possibile [interagire con i flussi di lavoro dai programmi e dagli script](/help/sites-developing/workflows-program-interaction.md).
+Puoi anche [interagire con i flussi di lavoro dai programmi e dagli script](/help/sites-developing/workflows-program-interaction.md).
 
 ## Componenti del passaggio del flusso di lavoro: nozioni di base {#workflow-step-components-the-basics}
 
@@ -36,26 +36,26 @@ Un componente passaggio flusso di lavoro definisce l’aspetto e il comportament
 * Finestra di dialogo per modifica per configurare le proprietà del componente.
 * Servizio o script eseguito in fase di esecuzione.
 
-Come con [tutti i componenti](/help/sites-developing/components.md), i componenti del passaggio del flusso di lavoro ereditano dal componente specificato per `sling:resourceSuperType` proprietà. Il diagramma seguente mostra la gerarchia di `cq:component` nodi che costituiscono la base di tutti i componenti del passaggio del flusso di lavoro. Il diagramma include anche **Passaggio processo**, **Passaggio partecipante**, e **Passaggio partecipante dinamico** componenti, in quanto rappresentano i punti di partenza più comuni (e di base) per lo sviluppo di componenti per passaggi personalizzati.
+Come per [tutti i componenti](/help/sites-developing/components.md), i componenti del passaggio del flusso di lavoro ereditano dal componente specificato per la proprietà `sling:resourceSuperType`. Il diagramma seguente mostra la gerarchia di nodi `cq:component` che costituiscono la base di tutti i componenti del passaggio del flusso di lavoro. Il diagramma include anche i componenti **Passaggio processo**, **Passaggio partecipante** e **Passaggio partecipante dinamico**, in quanto rappresentano i punti di partenza più comuni (e di base) per lo sviluppo di componenti passo personalizzati.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 
 >[!CAUTION]
 >
->Tu ***deve*** non modificare nulla in `/libs` percorso.
+>***must*** non modificare nulla nel percorso `/libs`.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+>Il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
->1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs` in `/apps`
+>1. Ricrea l&#39;elemento richiesto (ovvero, poiché esiste in `/libs` in `/apps`
 >2. Apporta le modifiche in `/apps`
 
-Il `/libs/cq/workflow/components/model/step` il componente è l’antenato comune più vicino del **Passaggio processo**, **Passaggio partecipante**, e **Passaggio partecipante dinamico**, che ereditano tutti i seguenti elementi:
+Il componente `/libs/cq/workflow/components/model/step` è il predecessore comune più vicino di **Passaggio processo**, **Passaggio partecipante** e **Passaggio partecipante dinamico**, che ereditano tutti i seguenti elementi:
 
 * `step.jsp`
 
-  Il `step.jsp` script esegue il rendering del titolo del componente del passaggio quando viene aggiunto a un modello.
+  Lo script `step.jsp` esegue il rendering del titolo del componente del passaggio quando viene aggiunto a un modello.
 
   ![wf-22-1](assets/wf-22-1.png)
 
@@ -76,10 +76,10 @@ Il `/libs/cq/workflow/components/model/step` il componente è l’antenato comun
 
 Negli script ECMA sono disponibili i seguenti oggetti (a seconda del tipo di passo):
 
-* [WorkItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
-* [WorkflowSession](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
-* [WorkflowData](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
-* `args`: array con gli argomenti del processo.
+* [ElementoLavoro](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) elementoLavoro
+* [SessioneFlussoLavoro](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) sessioneFlussoDiLavoro
+* [DatiFlussoDiLavoro](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) WorkflowData
+* `args`: matrice con argomenti di processo.
 
 * `sling`: per accedere ad altri servizi osgi.
 * `jcrSession`
@@ -88,17 +88,17 @@ Negli script ECMA sono disponibili i seguenti oggetti (a seconda del tipo di pas
 
 Puoi utilizzare i metadati del flusso di lavoro per mantenere le informazioni necessarie per tutta la durata del flusso di lavoro. Un requisito comune dei passaggi del flusso di lavoro consiste nel mantenere i dati per un utilizzo futuro nel flusso di lavoro o nel recuperare i dati persistenti.
 
-Esistono tre tipi di oggetti MetaDataMap: per `Workflow`, `WorkflowData` e `WorkItem` oggetti. Tutte hanno lo stesso scopo: archiviare i metadati.
+Esistono tre tipi di oggetti MetaDataMap: per `Workflow`, `WorkflowData` e `WorkItem`. Tutte hanno lo stesso scopo: archiviare i metadati.
 
 Un elemento di lavoro dispone di una MetaDataMap specifica che può essere utilizzata solo mentre l&#39;elemento di lavoro (ad esempio, il passaggio ) è in esecuzione.
 
-Entrambi `Workflow` e `WorkflowData` i metadata sono condivisi sull&#39;intero flusso di lavoro. Per questi casi si consiglia di utilizzare solo il `WorkflowData` mappa metadati.
+I metadati `Workflow` e `WorkflowData` sono condivisi nell&#39;intero flusso di lavoro. Per questi casi si consiglia di utilizzare solo la mappa metadati `WorkflowData`.
 
 ## Creazione di componenti personalizzati per passaggi del flusso di lavoro {#creating-custom-workflow-step-components}
 
-I componenti dei passaggi del flusso di lavoro possono essere [creato nello stesso modo di qualsiasi altro componente](/help/sites-developing/components.md).
+I componenti del passaggio del flusso di lavoro possono essere [creati come qualsiasi altro componente](/help/sites-developing/components.md).
 
-Per ereditare da uno dei componenti del passaggio base (esistenti), aggiungi la seguente proprietà al `cq:Component` nodo:
+Per ereditare da uno dei componenti del passaggio base (esistenti), aggiungere la seguente proprietà al nodo `cq:Component`:
 
 * Nome: `sling:resourceSuperType`
 * Tipo: `String`
@@ -110,7 +110,7 @@ Per ereditare da uno dei componenti del passaggio base (esistenti), aggiungi la 
 
 ### Specifica del titolo e della descrizione predefiniti per le istanze di passo {#specifying-the-default-title-and-description-for-step-instances}
 
-Per specificare i valori predefiniti per il **Titolo** e **Descrizione** campi sul **Comune** scheda.
+Utilizza la procedura seguente per specificare i valori predefiniti per i campi **Titolo** e **Descrizione** nella scheda **Comune**.
 
 >[!NOTE]
 >
@@ -120,11 +120,11 @@ Per specificare i valori predefiniti per il **Titolo** e **Descrizione** campi s
 >* `./jcr:title`
 >* `./jcr:description` posizioni
 >
->  Questo requisito è soddisfatto quando la finestra di dialogo per modifica utilizza la scheda Comune che `/libs/cq/flow/components/step/step` il componente implementa.
+>  Questo requisito è soddisfatto quando la finestra di dialogo per modifica utilizza la scheda Comune implementata dal componente `/libs/cq/flow/components/step/step`.
 >
->* Il componente del passo o un predecessore del componente non sostituisce il `step.jsp` scrivi che `/libs/cq/flow/components/step/step` il componente implementa.
+>* Il componente del passaggio o un predecessore del componente non sostituisce lo script `step.jsp` implementato dal componente `/libs/cq/flow/components/step/step`.
 
-1. Sotto `cq:Component` , aggiungere il seguente nodo:
+1. Sotto il nodo `cq:Component`, aggiungere il seguente nodo:
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
@@ -133,25 +133,25 @@ Per specificare i valori predefiniti per il **Titolo** e **Descrizione** campi s
    >
    >Per ulteriori informazioni sul nodo cq:editConfig, vedere [Configurazione del comportamento di modifica di un componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
-1. Sotto `cq:EditConfig` , aggiungere il seguente nodo:
+1. Sotto il nodo `cq:EditConfig`, aggiungere il seguente nodo:
 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
 
-1. Aggiungi `String` proprietà dei seguenti nomi per `cq:formParameters` nodo:
+1. Aggiungi `String` proprietà dei seguenti nomi al nodo `cq:formParameters`:
 
-   * `jcr:title`: il valore riempie il **Titolo** campo del **Comune** scheda.
-   * `jcr:description`: il valore riempie il **Descrizione** campo del **Comune** scheda.
+   * `jcr:title`: il valore riempie il campo **Title** della scheda **Common**.
+   * `jcr:description`: il valore riempie il campo **Description** della scheda **Common**.
 
 ### Salvataggio dei valori delle proprietà nei metadati del flusso di lavoro {#saving-property-values-in-workflow-metadata}
 
 >[!NOTE]
 >
->Consulta [Persistenza e accesso ai dati](#persisting-and-accessing-data). In particolare, per informazioni sull’accesso al valore della proprietà in fase di esecuzione, vedi [Accesso ai valori delle proprietà della finestra di dialogo in fase di esecuzione](#accessing-dialog-property-values-at-runtime).
+>Vedere [Persistenza e accesso ai dati](#persisting-and-accessing-data). In particolare, per informazioni sull&#39;accesso al valore della proprietà in fase di esecuzione, vedere [Accesso ai valori delle proprietà della finestra di dialogo in fase di esecuzione](#accessing-dialog-property-values-at-runtime).
 
-La proprietà name di `cq:Widget` items specifica il nodo JCR che memorizza il valore del widget. Quando i widget nella finestra di dialogo dei componenti del passaggio del flusso di lavoro memorizzano i valori sotto `./metaData` viene aggiunto al flusso di lavoro. `MetaDataMap`.
+La proprietà name di `cq:Widget` elementi specifica il nodo JCR che memorizza il valore del widget. Quando i widget nella finestra di dialogo dei componenti del passaggio del flusso di lavoro memorizzano i valori sotto il nodo `./metaData`, il valore viene aggiunto al flusso di lavoro `MetaDataMap`.
 
-Ad esempio, un campo di testo in una finestra di dialogo è un `cq:Widget` nodo con le seguenti proprietà:
+Ad esempio, un campo di testo in una finestra di dialogo è un nodo `cq:Widget` con le seguenti proprietà:
 
 | Nome | Tipo | Valore |
 |---|---|---|
@@ -159,11 +159,11 @@ Ad esempio, un campo di testo in una finestra di dialogo è un `cq:Widget` nodo 
 | `name` | `String` | `./metaData/subject` |
 | `fieldLabel` | `String` | `Email Subject` |
 
-Il valore specificato in questo campo di testo viene aggiunto al file dell’istanza del flusso di lavoro ` [MetaDataMap](#metadatamaps)` ed è associato all&#39;oggetto `subject` chiave.
+Il valore specificato in questo campo di testo viene aggiunto all&#39;oggetto ` [MetaDataMap](#metadatamaps)` dell&#39;istanza del flusso di lavoro ed è associato alla chiave `subject`.
 
 >[!NOTE]
 >
->Quando la chiave è `PROCESS_ARGS`, il valore è prontamente disponibile nelle implementazioni di script ECMA tramite `args` variabile. In questo caso, il valore della proprietà name è `./metaData/PROCESS_ARGS.`
+>Quando la chiave è `PROCESS_ARGS`, il valore è prontamente disponibile nelle implementazioni di script ECMA tramite la variabile `args`. In questo caso, il valore della proprietà name è `./metaData/PROCESS_ARGS.`
 
 ### Ignorare l’implementazione del passaggio {#overriding-the-step-implementation}
 
@@ -187,7 +187,7 @@ Per rendere attivo il componente per l’utilizzo in uno scenario di flusso di l
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
 
-1. Aggiungi un `String` proprietà per il `cq:formParameters` nodo. Il super-tipo del componente determina il nome della proprietà:
+1. Aggiungere una proprietà `String` al nodo `cq:formParameters`. Il super-tipo del componente determina il nome della proprietà:
 
    * Passaggio processo: `PROCESS`
    * Passaggio partecipante: `PARTICIPANT`
@@ -196,21 +196,21 @@ Per rendere attivo il componente per l’utilizzo in uno scenario di flusso di l
 1. Specifica il valore della proprietà:
 
    * `PROCESS`: percorso dello script ECMA o del PID del servizio che implementa il comportamento del passaggio.
-   * `PARTICIPANT`: ID dell’utente a cui viene assegnato l’elemento di lavoro.
-   * `DYNAMIC_PARTICIPANT`: percorso dello script ECMA o del PID del servizio che seleziona l’utente per assegnare l’elemento di lavoro.
+   * `PARTICIPANT`: ID dell&#39;utente a cui è assegnato l&#39;elemento di lavoro.
+   * `DYNAMIC_PARTICIPANT`: percorso dello script ECMA o del PID del servizio che seleziona l&#39;utente per assegnare l&#39;elemento di lavoro.
 
 1. Per impedire agli sviluppatori di modelli di modificare i valori delle proprietà, ignorare la finestra di dialogo del super tipo di componente.
 
 ### Aggiunta di Forms e finestre di dialogo ai passaggi dei partecipanti {#adding-forms-and-dialogs-to-participant-steps}
 
-Personalizza il componente Passaggio partecipante per fornire le funzioni presenti nella [Passaggio partecipante modulo](/help/sites-developing/workflows-step-ref.md#form-participant-step) e [Passaggio partecipante finestra di dialogo](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) componenti:
+Personalizza il componente Passaggio partecipante per fornire le funzionalità presenti nei componenti [Passaggio partecipante modulo](/help/sites-developing/workflows-step-ref.md#form-participant-step) e [Passaggio partecipante finestra di dialogo](/help/sites-developing/workflows-step-ref.md#dialog-participant-step):
 
 * Presentare un modulo all&#39;utente quando apre l&#39;elemento di lavoro generato.
 * Presenta una finestra di dialogo personalizzata all’utente quando completa l’elemento di lavoro generato.
 
-Attenersi alla seguente procedura per il nuovo componente (vedere [Creazione di componenti personalizzati per passaggi del flusso di lavoro](#creating-custom-workflow-step-components)):
+Eseguire la procedura seguente sul nuovo componente (vedere [Creazione di componenti per passaggi del flusso di lavoro personalizzati](#creating-custom-workflow-step-components)):
 
-1. Sotto `cq:Component` , aggiungere il seguente nodo:
+1. Sotto il nodo `cq:Component`, aggiungere il seguente nodo:
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
@@ -222,13 +222,13 @@ Attenersi alla seguente procedura per il nuovo componente (vedere [Creazione di 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
 
-1. Per presentare un modulo quando l’utente apre l’elemento di lavoro, aggiungi la seguente proprietà al `cq:formParameters` nodo:
+1. Per presentare un modulo quando l&#39;utente apre l&#39;elemento di lavoro, aggiungere la seguente proprietà al nodo `cq:formParameters`:
 
    * Nome: `FORM_PATH`
    * Tipo: `String`
    * Valore: il percorso che viene risolto nel modulo
 
-1. Per visualizzare una finestra di dialogo personalizzata quando l’utente completa l’elemento di lavoro, aggiungi la seguente proprietà alla `cq:formParameters` nodo
+1. Per visualizzare una finestra di dialogo personalizzata quando l&#39;utente completa l&#39;elemento di lavoro, aggiungere la seguente proprietà al nodo `cq:formParameters`
 
    * Nome: `DIALOG_PATH`
    * Tipo: `String`
@@ -236,15 +236,15 @@ Attenersi alla seguente procedura per il nuovo componente (vedere [Creazione di 
 
 ### Configurazione del comportamento runtime del passaggio del flusso di lavoro {#configuring-the-workflow-step-runtime-behavior}
 
-Sotto `cq:Component` , aggiungere un `cq:EditConfig` nodo. Sotto che aggiungono un `nt:unstructured` nodo (deve essere denominato `cq:formParameters`) e aggiungere al nodo le seguenti proprietà:
+Aggiungere un nodo `cq:EditConfig` sotto il nodo `cq:Component`. Sotto di esso viene aggiunto un nodo `nt:unstructured` (deve essere denominato `cq:formParameters`) e a tale nodo vengono aggiunte le seguenti proprietà:
 
 * Nome: `PROCESS_AUTO_ADVANCE`
 
    * Tipo: `Boolean`
    * Valore:
 
-      * se impostato su `true` il flusso di lavoro eseguirà il passaggio e continuerà. impostazione predefinita e consigliata
-      * quando `false`, il flusso di lavoro verrà eseguito e arrestato; ciò richiede una gestione aggiuntiva, quindi `true` è consigliato
+      * se è impostato su `true`, il flusso di lavoro eseguirà quel passaggio e continuerà. Questa impostazione è predefinita e consigliata
+      * quando `false`, il flusso di lavoro verrà eseguito e interrotto; è necessaria una gestione aggiuntiva, quindi `true` è consigliato
 
 * Nome: `DO_NOTIFY`
 
@@ -257,11 +257,11 @@ Sotto `cq:Component` , aggiungere un `cq:EditConfig` nodo. Sotto che aggiungono 
 
 Puoi utilizzare i metadati del flusso di lavoro per mantenere le informazioni necessarie per tutta la durata del flusso di lavoro, e tra i passaggi. Un requisito comune dei passaggi del flusso di lavoro consiste nel mantenere i dati per utilizzi futuri o nel recuperare i dati persistenti dai passaggi precedenti.
 
-I metadati del flusso di lavoro sono memorizzati in una [`MetaDataMap`](#metadatamaps) oggetto. L’API Java fornisce [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) metodo per restituire un [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) oggetto che fornisce l&#39;appropriato `MetaDataMap` oggetto. Questo `WorkflowData` `MetaDataMap` L’oggetto è disponibile per il servizio OSGi o per lo script ECMA di un componente della fase.
+I metadati del flusso di lavoro sono archiviati in un oggetto [`MetaDataMap`](#metadatamaps). L&#39;API Java fornisce il metodo [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) per restituire un oggetto [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) che fornisce l&#39;oggetto `MetaDataMap` appropriato. Questo oggetto `WorkflowData` `MetaDataMap` è disponibile per il servizio OSGi o per lo script ECMA di un componente del passaggio.
 
 #### Java {#java}
 
-Il metodo execute della `WorkflowProcess` l&#39;implementazione viene superata il `WorkItem` oggetto. Utilizzare questo oggetto per ottenere `WorkflowData` oggetto per l&#39;istanza di flusso di lavoro corrente. L&#39;esempio seguente aggiunge un elemento al flusso di lavoro `MetaDataMap` e quindi registra ogni elemento. L’elemento (&quot;mykey&quot;, &quot;My Step Value&quot;) è disponibile per i passaggi successivi nel flusso di lavoro.
+Il metodo execute dell&#39;implementazione `WorkflowProcess` ha passato l&#39;oggetto `WorkItem`. Utilizzare questo oggetto per ottenere l&#39;oggetto `WorkflowData` per l&#39;istanza di flusso di lavoro corrente. Nell&#39;esempio seguente viene aggiunto un elemento all&#39;oggetto `MetaDataMap` del flusso di lavoro e quindi ogni elemento viene registrato. L’elemento (&quot;mykey&quot;, &quot;My Step Value&quot;) è disponibile per i passaggi successivi nel flusso di lavoro.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -281,11 +281,11 @@ public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) th
 
 #### Script ECMA {#ecma-script}
 
-Il `graniteWorkItem` variabile è la rappresentazione dello script ECMA dell&#39;attuale `WorkItem` Oggetto Java. Pertanto, puoi utilizzare il `graniteWorkItem` per ottenere i metadati del flusso di lavoro. Per implementare un **Passaggio processo** per aggiungere un elemento al flusso di lavoro `MetaDataMap` e quindi registrare ogni elemento. Questi elementi sono quindi disponibili per i passaggi successivi nel flusso di lavoro.
+La variabile `graniteWorkItem` è la rappresentazione dello script ECMA dell&#39;oggetto Java `WorkItem` corrente. È quindi possibile utilizzare la variabile `graniteWorkItem` per ottenere i metadati del flusso di lavoro. Il seguente script ECMA può essere utilizzato per implementare un **passaggio del processo** per aggiungere un elemento all&#39;oggetto `MetaDataMap` del flusso di lavoro e quindi registrare ogni elemento. Questi elementi sono quindi disponibili per i passaggi successivi nel flusso di lavoro.
 
 >[!NOTE]
 >
->Il `metaData` variabile immediatamente disponibile per lo script step sono i metadati del step. I metadati della fase sono diversi da quelli del flusso di lavoro.
+>La variabile `metaData` immediatamente disponibile per lo script del passaggio è costituita dai metadati del passaggio. I metadati della fase sono diversi da quelli del flusso di lavoro.
 
 ```
 var currentDateInMillis = new Date().getTime();
@@ -303,29 +303,29 @@ while (iterator.hasNext()){
 
 ### Accesso ai valori delle proprietà della finestra di dialogo in fase di esecuzione {#accessing-dialog-property-values-at-runtime}
 
-Il `MetaDataMap` L’oggetto delle istanze del flusso di lavoro è utile per memorizzare e recuperare i dati per tutta la durata del flusso di lavoro. Per le implementazioni dei componenti dei passaggi del flusso di lavoro, `MetaDataMap` è particolarmente utile per recuperare i valori delle proprietà dei componenti in fase di esecuzione.
+L&#39;oggetto `MetaDataMap` delle istanze del flusso di lavoro è utile per memorizzare e recuperare i dati per l&#39;intera durata del flusso di lavoro. Per le implementazioni dei componenti del passaggio del flusso di lavoro, `MetaDataMap` è particolarmente utile per recuperare i valori delle proprietà dei componenti in fase di esecuzione.
 
 >[!NOTE]
 >
->Per informazioni sulla configurazione della finestra di dialogo del componente per memorizzare le proprietà come metadati del flusso di lavoro, vedi [Salvataggio dei valori delle proprietà nei metadati del flusso di lavoro](#saving-property-values-in-workflow-metadata).
+>Per informazioni sulla configurazione della finestra di dialogo del componente per memorizzare le proprietà come metadati del flusso di lavoro, vedere [Salvataggio dei valori delle proprietà nei metadati del flusso di lavoro](#saving-property-values-in-workflow-metadata).
 
 Il flusso di lavoro `MetaDataMap` è disponibile per le implementazioni di processi di script Java ed ECMA:
 
-* Nelle implementazioni Java dell’interfaccia WorkflowProcess, il `args` il parametro è il `MetaDataMap` oggetto per il flusso di lavoro.
+* Nelle implementazioni Java dell&#39;interfaccia WorkflowProcess, il parametro `args` è l&#39;oggetto `MetaDataMap` per il flusso di lavoro.
 
-* Nelle implementazioni degli script ECMA, il valore è disponibile utilizzando `args` e `metadata` variabili.
+* Nelle implementazioni di script ECMA, il valore è disponibile utilizzando le variabili `args` e `metadata`.
 
 ### Esempio: recupero degli argomenti del componente Passaggio processo {#example-retrieving-the-arguments-of-the-process-step-component}
 
-La finestra di dialogo per modifica del **Passaggio processo** il componente include **Argomenti** proprietà. Il valore della proprietà **Argomenti** viene memorizzata nei metadati del flusso di lavoro ed è associata alla proprietà `PROCESS_ARGS` chiave.
+La finestra di dialogo per modifica del componente **Passaggio processo** include la proprietà **Argomenti**. Il valore della proprietà **Arguments** è memorizzato nei metadati del flusso di lavoro ed è associato alla chiave `PROCESS_ARGS`.
 
-Nel diagramma seguente, il valore di **Argomenti** la proprietà è `argument1, argument2`:
+Nel diagramma seguente il valore della proprietà **Arguments** è `argument1, argument2`:
 
 ![wf-24](assets/wf-24.png)
 
 #### Java {#java-1}
 
-Il seguente codice Java è `execute` metodo per un `WorkflowProcess` implementazione. Il metodo registra il valore in `args` `MetaDataMap` associato al `PROCESS_ARGS` chiave.
+Il seguente codice Java è il metodo `execute` per un&#39;implementazione `WorkflowProcess`. Il metodo registra il valore in `args` `MetaDataMap` associato alla chiave `PROCESS_ARGS`.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -343,7 +343,7 @@ Quando viene eseguito un passaggio del processo che utilizza questa implementazi
 
 #### Script ECMA {#ecma-script-1}
 
-Il seguente script ECMA viene utilizzato come processo per **Passaggio processo**. Registra il numero di argomenti e i valori degli argomenti:
+Il seguente script ECMA viene utilizzato come processo per il **passaggio del processo**. Registra il numero di argomenti e i valori degli argomenti:
 
 ```
 var iterator = graniteWorkItem.getWorkflowData().getMetaDataMap().keySet().iterator();
@@ -364,9 +364,9 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 ### Script e argomenti processo {#scripts-and-process-arguments}
 
-All’interno di uno script per **Passaggio processo** componente, gli argomenti sono disponibili tramite `args` oggetto.
+In uno script per un componente **Passaggio processo**, gli argomenti sono disponibili tramite l&#39;oggetto `args`.
 
-Quando si crea un componente del passaggio personalizzato, l’oggetto `metaData` è disponibile in uno script. Questo oggetto è limitato a un singolo argomento stringa.
+Durante la creazione di un componente del passaggio personalizzato, l&#39;oggetto `metaData` è disponibile in uno script. Questo oggetto è limitato a un singolo argomento stringa.
 
 ## Sviluppo di implementazioni di fasi del processo {#developing-process-step-implementations}
 
@@ -374,7 +374,7 @@ Quando si avviano le fasi del processo durante il processo di un flusso di lavor
 
 >[!NOTE]
 >
->Per informazioni sull&#39;associazione del componente Fase processo al servizio o allo script, vedere [Passaggio processo](/help/sites-developing/workflows-step-ref.md#process-step) o [Ignorare l’implementazione del passaggio](#overriding-the-step-implementation).
+>Per informazioni sull&#39;associazione del componente Passaggio processo al servizio o allo script, vedere [Passaggio processo](/help/sites-developing/workflows-step-ref.md#process-step) o [Ignorare l&#39;implementazione del passaggio](#overriding-the-step-implementation).
 
 ### Implementazione di un passaggio del processo con una classe Java {#implementing-a-process-step-with-a-java-class}
 
@@ -384,16 +384,16 @@ Per definire un passaggio del processo come componente del servizio OSGI (bundle
 
    >[!NOTE]
    >
-   >Il componente OSGI deve implementare `WorkflowProcess` interfaccia con i relativi `execute()` metodo. Vedi il codice di esempio seguente.
+   >Il componente OSGI deve implementare l&#39;interfaccia `WorkflowProcess` con il relativo metodo `execute()`. Vedi il codice di esempio seguente.
 
    >[!NOTE]
    >
-   >È necessario aggiungere il nome del pacchetto al `<*Private-Package*>` sezione del `maven-bundle-plugin` configurazione.
+   >È necessario aggiungere il nome del pacchetto alla sezione `<*Private-Package*>` della configurazione `maven-bundle-plugin`.
 
-1. Aggiungi la proprietà SCR `process.label`  e imposta il valore come desiderato. Questo sarà il nome con cui verrà elencato il passaggio del processo quando si utilizza il generico **Passaggio processo** componente. Vedi l’esempio seguente.
-1. In **Modelli** , aggiungi il passaggio del processo al flusso di lavoro utilizzando l&#39;editor **Passaggio processo** componente.
-1. Nella finestra di dialogo per modifica (del **Passaggio processo**), vai al **Processo** e seleziona l’implementazione del processo.
-1. Se si utilizzano argomenti nel codice, impostare **Argomenti processo**. Ad esempio: false.
+1. Aggiungere la proprietà SCR `process.label` e impostare il valore come richiesto. Questo sarà il nome con cui verrà elencato il passaggio del processo quando si utilizza il componente generico **Passaggio processo**. Vedi l’esempio seguente.
+1. Nell&#39;editor **Models**, aggiungi il passaggio del processo al flusso di lavoro utilizzando il componente generico **Passaggio del processo**.
+1. Nella finestra di dialogo per modifica (del **Passaggio processo**), vai alla scheda **Processo** e seleziona l&#39;implementazione del processo.
+1. Se nel codice si utilizzano argomenti, impostare **Argomenti processo**. Ad esempio: false.
 1. Salva le modifiche sia per il passaggio che per il modello di flusso di lavoro (angolo in alto a sinistra dell’editor modelli).
 
 I metodi Java, rispettivamente le classi che implementano il metodo Java eseguibile, vengono registrati come servizi OSGI, consentendo di aggiungere metodi in qualsiasi momento durante il runtime.
@@ -478,7 +478,7 @@ Nella tabella seguente sono elencate le variabili immediatamente disponibili per
 | `com.adobe.granite.workflow.metadata.MetaDataMap` | `metaData` | I metadati dell’istanza del passaggio corrente. |
 | `org.apache.sling.scripting.core.impl.InternalScriptHelper` | `sling` | Fornisce l’accesso all’ambiente runtime di Sling. |
 
-Lo script di esempio seguente illustra come accedere al nodo JCR che rappresenta il payload del flusso di lavoro. Il `graniteWorkflowSession` viene adattata a una variabile di sessione JCR, utilizzata per ottenere il nodo dal percorso del payload.
+Lo script di esempio seguente illustra come accedere al nodo JCR che rappresenta il payload del flusso di lavoro. La variabile `graniteWorkflowSession` è adattata a una variabile di sessione JCR, utilizzata per ottenere il nodo dal percorso del payload.
 
 ```
 var workflowData = graniteWorkItem.getWorkflowData();
@@ -493,7 +493,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 }
 ```
 
-Lo script seguente controlla se il payload è un’immagine ( `.png` file), crea un&#39;immagine in bianco e nero e la salva come nodo di pari livello.
+Lo script seguente controlla se il payload è un&#39;immagine (file `.png`), ne crea un&#39;immagine in bianco e nero e la salva come nodo di pari livello.
 
 ```
 var workflowData = graniteWorkItem.getWorkflowData();
@@ -527,21 +527,21 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 Per utilizzare lo script:
 
-1. Crea lo script (ad esempio, con CRXDE Liti) e salvalo nell’archivio seguente `//apps/workflow/scripts/`
-1. Per specificare un titolo che identifichi lo script in **Passaggio processo** finestra di dialogo per modifica, aggiungi le seguenti proprietà alla `jcr:content` nodo dello script:
+1. Creare lo script (ad esempio, con CRXDE Lite) e salvarlo nell&#39;archivio sottostante `//apps/workflow/scripts/`
+1. Per specificare un titolo che identifichi lo script nella finestra di dialogo di modifica **Passaggio processo**, aggiungere le seguenti proprietà al nodo `jcr:content` dello script:
 
    | Nome | Tipo | Valore |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | Nome da visualizzare nella finestra di dialogo per modifica. |
 
-1. Modifica il **Passaggio processo** e specificare lo script da utilizzare.
+1. Modifica l&#39;istanza **Passaggio processo** e specifica lo script da utilizzare.
 
 ## Sviluppo di selezioni partecipanti {#developing-participant-choosers}
 
-Puoi sviluppare i selettori partecipanti per **Passaggio partecipante dinamico** componenti.
+Puoi sviluppare selettori partecipanti per **componenti Passaggio partecipante dinamico**.
 
-Quando un **Passaggio partecipante dinamico** il componente viene avviato durante un flusso di lavoro, il passaggio deve determinare il partecipante a cui può essere assegnato l’elemento di lavoro generato. A questo scopo, effettua una delle seguenti operazioni:
+Quando un componente **Passaggio partecipante dinamico** viene avviato durante un flusso di lavoro, il passaggio deve determinare il partecipante a cui è possibile assegnare l&#39;elemento di lavoro generato. A questo scopo, effettua una delle seguenti operazioni:
 
 * invia una richiesta a un servizio OSGi
 * esegue uno script ECMA per selezionare il partecipante
@@ -550,17 +550,17 @@ Quando un **Passaggio partecipante dinamico** il componente viene avviato durant
 
 >[!NOTE]
 >
->Per informazioni sull&#39;associazione **Passaggio partecipante dinamico** con il servizio o lo script, vedi [Passaggio partecipante dinamico](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) o [Ignorare l’implementazione del passaggio](#persisting-and-accessing-data).
+>Per informazioni sull&#39;associazione del componente **Dynamic Participant Step** al servizio o allo script, vedere [Dynamic Participant Step](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) o [Override the Step Implementation](#persisting-and-accessing-data).
 
 ### Sviluppo di un selettore partecipanti utilizzando una classe Java {#developing-a-participant-chooser-using-a-java-class}
 
 Per definire un passaggio partecipante come componente del servizio OSGI (classe Java):
 
-1. Il componente OSGI deve implementare `ParticipantStepChooser` interfaccia con i relativi `getParticipant()` metodo. Vedi il codice di esempio seguente.
+1. Il componente OSGI deve implementare l&#39;interfaccia `ParticipantStepChooser` con il relativo metodo `getParticipant()`. Vedi il codice di esempio seguente.
 
    Crea il bundle e distribuiscilo nel contenitore OSGI.
 
-1. Aggiungi la proprietà SCR `chooser.label` e imposta il valore come richiesto. Questo sarà il nome con cui è elencato il selettore partecipanti, utilizzando **Passaggio partecipante dinamico** componente. Vedi l’esempio:
+1. Aggiungere la proprietà SCR `chooser.label` e impostare il valore come richiesto. Questo sarà il nome con cui è elencato il selettore partecipanti, utilizzando il componente **Passaggio partecipante dinamico**. Vedi l’esempio:
 
    ```java
    package com.adobe.example.workflow.impl.process;
@@ -609,14 +609,14 @@ Per definire un passaggio partecipante come componente del servizio OSGI (classe
    }
    ```
 
-1. In **Modelli** , aggiungi il passaggio partecipante dinamico al flusso di lavoro utilizzando il **Passaggio partecipante dinamico** componente.
-1. Nella finestra di dialogo per modifica, seleziona **Selettore partecipanti** e seleziona l’implementazione del selettore.
-1. Se si utilizzano argomenti nel set di codice, **Argomenti processo**. Per questo esempio: `/content/we-retail/de`.
+1. Nell&#39;editor **Models**, aggiungi il passaggio partecipante dinamico al flusso di lavoro utilizzando il componente generico **Passaggio partecipante dinamico**.
+1. Nella finestra di dialogo per modifica seleziona la scheda **Selettore partecipanti** e seleziona l&#39;implementazione del selettore.
+1. Se si utilizzano argomenti nel set di codice, **Argomenti processo**. Esempio: `/content/we-retail/de`.
 1. Salva le modifiche per il passaggio e il modello di flusso di lavoro.
 
 ### Sviluppo di un selettore partecipanti utilizzando uno script ECMA {#developing-a-participant-chooser-using-an-ecma-script}
 
-È possibile creare uno script ECMA che seleziona l&#39;utente a cui è assegnato l&#39;elemento di lavoro che **Passaggio partecipante** genera. Lo script deve includere una funzione denominata `getParticipant` che non richiede argomenti e restituisce un `String` che contiene l’ID di un utente o gruppo.
+È possibile creare uno script ECMA che seleziona l&#39;utente a cui è assegnato l&#39;elemento di lavoro generato dal **Passaggio partecipante**. Lo script deve includere una funzione denominata `getParticipant` che non richiede argomenti e restituisce un `String` che contiene l&#39;ID di un utente o di un gruppo.
 
 Gli script si trovano nell’archivio JCR e vengono eseguiti da lì.
 
@@ -644,19 +644,19 @@ function getParticipant() {
 }
 ```
 
-1. Crea lo script (ad esempio, con CRXDE Liti) e salvalo nell’archivio seguente `//apps/workflow/scripts`
-1. Per specificare un titolo che identifichi lo script in **Passaggio processo** finestra di dialogo per modifica, aggiungi le seguenti proprietà alla `jcr:content` nodo dello script:
+1. Creare lo script (ad esempio, con CRXDE Lite) e salvarlo nell&#39;archivio sottostante `//apps/workflow/scripts`
+1. Per specificare un titolo che identifichi lo script nella finestra di dialogo di modifica **Passaggio processo**, aggiungere le seguenti proprietà al nodo `jcr:content` dello script:
 
    | Nome | Tipo | Valore |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | Nome da visualizzare nella finestra di dialogo per modifica. |
 
-1. Modifica il [Passaggio partecipante dinamico](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) e specificare lo script da utilizzare.
+1. Modifica l&#39;istanza [Passaggio partecipante dinamico](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) e specifica lo script da utilizzare.
 
 ## Gestione dei pacchetti del flusso di lavoro {#handling-workflow-packages}
 
-[Pacchetti flusso di lavoro](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) può essere passato a un flusso di lavoro per l’elaborazione. I pacchetti del flusso di lavoro contengono riferimenti a risorse come pagine e risorse.
+[I pacchetti del flusso di lavoro](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) possono essere passati a un flusso di lavoro per l&#39;elaborazione. I pacchetti del flusso di lavoro contengono riferimenti a risorse come pagine e risorse.
 
 >[!NOTE]
 >
@@ -666,10 +666,10 @@ function getParticipant() {
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
-Puoi sviluppare i passaggi del flusso di lavoro per ottenere le risorse del pacchetto ed elaborarle. I seguenti membri della `com.day.cq.workflow.collection` forniscono accesso ai pacchetti del flusso di lavoro:
+Puoi sviluppare i passaggi del flusso di lavoro per ottenere le risorse del pacchetto ed elaborarle. I seguenti membri del pacchetto `com.day.cq.workflow.collection` forniscono accesso ai pacchetti del flusso di lavoro:
 
-* `ResourceCollection`: classe del pacchetto del flusso di lavoro.
-* `ResourceCollectionUtil`: utilizzato per recuperare gli oggetti ResourceCollection.
+* `ResourceCollection`: classe pacchetto flusso di lavoro.
+* `ResourceCollectionUtil`: utilizzare per recuperare gli oggetti ResourceCollection.
 * `ResourceCollectionManager`: crea e recupera le raccolte. Un’implementazione viene distribuita come servizio OSGi.
 
 Nell&#39;esempio di classe Java riportato di seguito viene illustrato come ottenere le risorse del pacchetto:
@@ -812,19 +812,19 @@ Un modo semplice per iniziare a creare un passaggio personalizzato consiste nel 
 
    >[!CAUTION]
    >
-   >Perché nell’interfaccia utente standard, sulla scheda non vengono visualizzati solo il titolo e non i dettagli, `details.jsp` non è necessario, come per l’editor di interfaccia classica.
+   >Poiché nell&#39;interfaccia utente standard non vengono visualizzati solo il titolo e non i dettagli, `details.jsp` non è necessario come per l&#39;editor di interfaccia classica.
 
 1. Applica le seguenti proprietà al nodo:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
-   **Proprietà:**
+   **Proprietà di interesse:**
 
    * `sling:resourceSuperType`
 
      Deve ereditare da un passaggio esistente.
 
-     In questo esempio ereditiamo dal passaggio base in `cq/workflow/components/model/step`, ma puoi utilizzare altri super tipi come `participant`, `process`e così via.
+     In questo esempio ereditiamo dal passaggio base in `cq/workflow/components/model/step`, ma puoi utilizzare altri super tipi come `participant`, `process` e così via.
 
    * `jcr:title`
 
@@ -832,7 +832,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato consiste nel 
 
    * `cq:icon`
 
-     Utilizzato per specificare un [Icona rosso corallo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) per il passaggio.
+     Utilizzato per specificare un&#39;icona [Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) per il passaggio.
 
    * `componentGroup`
 
@@ -847,29 +847,29 @@ Un modo semplice per iniziare a creare un passaggio personalizzato consiste nel 
 
    ![wf-35](assets/wf-35.png)
 
-1. Ora puoi aprire un modello di flusso di lavoro per la modifica. Nel browser dei passaggi puoi filtrare per visualizzare **Passaggio personalizzato**:
+1. Ora puoi aprire un modello di flusso di lavoro per la modifica. Nel browser dei passaggi puoi filtrare per visualizzare **Il mio passaggio personalizzato**:
 
    ![wf-36](assets/wf-36.png)
 
-   Trascinamento **Passaggio personalizzato** sul modello viene visualizzata la scheda:
+   Trascinando **Il mio passaggio personalizzato** sul modello viene visualizzata la scheda:
 
    ![wf-37](assets/wf-37.png)
 
-   In caso negativo `cq:icon` è stato definito per il passaggio, quindi viene riprodotta un’icona predefinita utilizzando le prime due lettere del titolo. Ad esempio:
+   Se per il passaggio non è stato definito alcun `cq:icon`, viene eseguito il rendering di un&#39;icona predefinita utilizzando le prime due lettere del titolo. Ad esempio:
 
    ![wf-38](assets/wf-38.png)
 
 #### Definizione della finestra di dialogo di configurazione del passaggio {#defining-the-step-configure-dialog}
 
-Dopo [Creazione del passaggio di base](#creating-the-basic-step), definisci il passaggio **Configura** finestra di dialogo come segue:
+Dopo la [creazione del passaggio di base](#creating-the-basic-step), definire la finestra di dialogo **Configura** come segue:
 
-1. Configurare le proprietà sul nodo `cq:editConfig` come segue:
+1. Configurare le proprietà nel nodo `cq:editConfig` come segue:
 
-   **Proprietà:**
+   **Proprietà di interesse:**
 
    * `cq:inherit`
 
-     Se impostato su `true`, il componente del passaggio erediterà le proprietà dal passaggio specificato in `sling:resourceSuperType`.
+     Se è impostato su `true`, il componente del passaggio erediterà le proprietà dal passaggio specificato in `sling:resourceSuperType`.
 
    * `cq:disableTargeting`
 
@@ -877,23 +877,23 @@ Dopo [Creazione del passaggio di base](#creating-the-basic-step), definisci il p
 
    ![wf-39](assets/wf-39.png)
 
-1. Configurare le proprietà sul nodo `cq:formsParameter` come segue:
+1. Configurare le proprietà nel nodo `cq:formsParameter` come segue:
 
-   **Proprietà:**
+   **Proprietà di interesse:**
 
    * `jcr:title`
 
-     Imposta il titolo predefinito sulla scheda del passo nella mappa del modello e nel **Titolo** campo del **Personalizzato - Proprietà passaggio** finestra di dialogo per configurazione.
+     Imposta il titolo predefinito sulla scheda passaggio nella mappa modello e nel campo **Titolo** della finestra di dialogo di configurazione **Personalizzato - Proprietà passaggio**.
 
    * Puoi anche definire proprietà personalizzate.
 
    ![wf-40](assets/wf-40.png)
 
-1. Configurare le proprietà sul nodo `cq:listeners`.
+1. Configurare le proprietà nel nodo `cq:listeners`.
 
-   Il `cq:listener` Il nodo e le relative proprietà consentono di impostare gestori eventi che reagiscono agli eventi nell’editor modelli dell’interfaccia utente touch, ad esempio il trascinamento di un passaggio in una pagina del modello o la modifica delle proprietà di un passaggio.
+   Il nodo `cq:listener` e le relative proprietà consentono di impostare gestori eventi che reagiscono agli eventi nell&#39;editor modelli dell&#39;interfaccia utente touch, ad esempio il trascinamento di un passaggio in una pagina del modello o la modifica delle proprietà di un passaggio.
 
-   **Proprietà:**
+   **Proprietà di interesse:**
 
    * `afterMove: REFRESH_PAGE`
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
@@ -902,19 +902,19 @@ Dopo [Creazione del passaggio di base](#creating-the-basic-step), definisci il p
 
    Questa configurazione è essenziale per il corretto funzionamento dell’editor. Nella maggior parte dei casi questa configurazione non deve essere modificata.
 
-   Tuttavia, l&#39;impostazione `cq:inherit` su true (il `cq:editConfig` (vedi sopra) consente di ereditare questa configurazione, senza doverla includere esplicitamente nella definizione del passaggio. Se non è presente alcuna ereditarietà, è necessario aggiungere questo nodo con le proprietà e i valori seguenti.
+   Tuttavia, l&#39;impostazione di `cq:inherit` su true (nel nodo `cq:editConfig`, vedi sopra) consente di ereditare questa configurazione, senza dover includerla esplicitamente nella definizione del passaggio. Se non è presente alcuna ereditarietà, è necessario aggiungere questo nodo con le proprietà e i valori seguenti.
 
-   In questo esempio, è stata attivata l’ereditarietà per rimuovere il `cq:listeners` e il passaggio continuerà a funzionare correttamente.
+   In questo esempio, l&#39;ereditarietà è stata attivata in modo da rimuovere il nodo `cq:listeners` e il passaggio funzionerà ancora correttamente.
 
    ![wf-41](assets/wf-41.png)
 
-1. Ora puoi aggiungere un’istanza del passaggio a un modello di flusso di lavoro. Quando **Configura** il passaggio visualizzato nella finestra di dialogo:
+1. Ora puoi aggiungere un’istanza del passaggio a un modello di flusso di lavoro. Quando **Configura** il passaggio verrà visualizzato nella finestra di dialogo:
 
    ![wf-42](assets/wf-42.png) ![wf-43](assets/wf-43.png)
 
 #### Markup di esempio utilizzato in questo esempio {#sample-markup-used-in-this-example}
 
-Il markup per un passaggio personalizzato deve essere rappresentato nel `.content.xml` del nodo principale del componente. Il campione `.content.xml` utilizzato per questo esempio:
+Il markup per un passaggio personalizzato deve essere rappresentato nel `.content.xml` del nodo principale del componente. Esempio `.content.xml` utilizzato per questo esempio:
 
 `/apps/cq/workflow/components/model/myCustomStep/.content.xml`
 
@@ -929,7 +929,7 @@ Il markup per un passaggio personalizzato deve essere rappresentato nel `.conten
     componentGroup="Workflow"/>
 ```
 
-Il `_cq_editConfig.xml` esempio utilizzato in questo esempio:
+Esempio `_cq_editConfig.xml` utilizzato in questo esempio:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -950,7 +950,7 @@ Il `_cq_editConfig.xml` esempio utilizzato in questo esempio:
 </jcr:root>
 ```
 
-Il `_cq_dialog/.content.xml` esempio utilizzato in questo esempio:
+Esempio `_cq_dialog/.content.xml` utilizzato in questo esempio:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1031,9 +1031,9 @@ Il `_cq_dialog/.content.xml` esempio utilizzato in questo esempio:
 >
 >Le finestre di dialogo dell’editor di modelli dell’interfaccia classica continueranno a funzionare con l’editor di interfaccia touch standard.
 >
->Anche se l&#39;AEM ha [strumenti di modernizzazione](/help/sites-developing/modernization-tools.md) se desideri aggiornare le finestre di dialogo classiche dei passaggi dell’interfaccia utente alle finestre di dialogo standard dell’interfaccia utente. Dopo la conversione ci sono ancora alcuni miglioramenti manuali che potrebbero essere apportati alla finestra di dialogo per alcuni casi.
+>Sebbene l&#39;AEM disponga di [strumenti di modernizzazione](/help/sites-developing/modernization-tools.md) se desideri aggiornare le finestre di dialogo del passaggio dell&#39;interfaccia classica alle finestre di dialogo standard dell&#39;interfaccia utente. Dopo la conversione ci sono ancora alcuni miglioramenti manuali che potrebbero essere apportati alla finestra di dialogo per alcuni casi.
 >
->* Nei casi in cui una finestra di dialogo aggiornata è vuota, puoi visualizzare le finestre di dialogo in `/libs` che hanno funzionalità simili a esempi di come fornire una soluzione. Ad esempio:
+>* Nei casi in cui una finestra di dialogo aggiornata è vuota, è possibile esaminare le finestre di dialogo in `/libs` che hanno funzionalità simili a esempi di come fornire una soluzione. Ad esempio:
 >
 >* `/libs/cq/workflow/components/model`
 >* `/libs/cq/workflow/components/workflow`
@@ -1041,4 +1041,4 @@ Il `_cq_dialog/.content.xml` esempio utilizzato in questo esempio:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Non modificare nulla in `/libs`, è sufficiente utilizzarli come esempi. Se desideri utilizzare uno dei passaggi esistenti, copiali in `/apps` e modificarli qui.
+>  Non modificare nulla in `/libs`. Utilizzarli semplicemente come esempi. Se si desidera utilizzare uno dei passaggi esistenti, copiarli in `/apps` e modificarli.

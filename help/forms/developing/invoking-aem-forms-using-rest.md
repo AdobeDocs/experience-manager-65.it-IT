@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # Richiamare AEM Forms tramite richieste REST {#invoking-aem-forms-using-rest-requests}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 I processi creati in Workbench possono essere configurati in modo da poterli richiamare tramite richieste REST (Managational State Transfer). Le richieste REST vengono inviate dalle pagine di HTML. In altre parole, è possibile richiamare un processo Forms direttamente da una pagina web utilizzando una richiesta REST. Ad esempio, puoi aprire una nuova istanza di una pagina web. È quindi possibile richiamare un processo Forms e caricare un documento PDF di cui è stato eseguito il rendering con i dati inviati in una richiesta HTTP POST.
 
-Esistono due tipi di client HTML. Il primo client HTML è un client AJAX scritto in JavaScript. Il secondo client è un modulo HTML che contiene un pulsante di invio. Un&#39;applicazione client basata su HTML non è l&#39;unico client REST possibile. Qualsiasi applicazione client che supporta le richieste HTTP può richiamare un servizio utilizzando una chiamata REST. È ad esempio possibile richiamare un servizio utilizzando una chiamata REST da un modulo PDF. (vedere [Richiamare il processo MyApplication/EncryptDocument da Acrobat](#rest-invocation-examples).)
+Esistono due tipi di client HTML. Il primo client HTML è un client AJAX scritto in JavaScript. Il secondo client è un modulo HTML che contiene un pulsante di invio. Un&#39;applicazione client basata su HTML non è l&#39;unico client REST possibile. Qualsiasi applicazione client che supporta le richieste HTTP può richiamare un servizio utilizzando una chiamata REST. È ad esempio possibile richiamare un servizio utilizzando una chiamata REST da un modulo PDF. (Vedi [Richiamo del processo MyApplication/EncryptDocument da Acrobat](#rest-invocation-examples).)
 
-Quando si utilizzano richieste REST, si consiglia di non richiamare direttamente i servizi Forms. Richiama invece i processi creati in Workbench. Quando crei un processo destinato alla chiamata REST, utilizza un punto iniziale programmatico. In questa situazione, l’endpoint REST viene aggiunto automaticamente. Per informazioni sulla creazione di processi in Workbench, vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Quando si utilizzano richieste REST, si consiglia di non richiamare direttamente i servizi Forms. Richiama invece i processi creati in Workbench. Quando crei un processo destinato alla chiamata REST, utilizza un punto iniziale programmatico. In questa situazione, l’endpoint REST viene aggiunto automaticamente. Per informazioni sulla creazione di processi in Workbench, vedere [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Quando si richiama un servizio utilizzando REST, viene richiesto di immettere un nome utente e una password per il modulo AEM. Tuttavia, se non si desidera specificare un nome utente e una password, è possibile disattivare la protezione del servizio.
 
-Per richiamare un servizio Forms (un processo diventa servizio quando viene attivato) utilizzando REST, configura un endpoint REST. (Consulta &quot;Gestione degli endpoint&quot; in [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Per richiamare un servizio Forms (un processo diventa servizio quando viene attivato) utilizzando REST, configura un endpoint REST. (Vedi &quot;Gestione degli endpoint&quot; nella [guida per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 Dopo aver configurato un endpoint REST, è possibile richiamare un servizio Forms utilizzando un metodo HTTP GET o POST.
 
@@ -36,39 +36,39 @@ Dopo aver configurato un endpoint REST, è possibile richiamare un servizio Form
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
-L&#39;opzione obbligatoria `ServiceName` value è il nome del servizio Forms da richiamare. L&#39;opzione `OperationName` value è il nome dell’operazione del servizio. Se questo valore non viene specificato, il nome predefinito è `invoke`, nome dell&#39;operazione che avvia il processo. L&#39;opzione `ServiceVersion` value è la versione codificata nel formato X.Y. Se questo valore non viene specificato, viene utilizzata la versione più recente. Il `enctype` valore può essere `application/x-www-form-urlencoded`.
+Il valore obbligatorio `ServiceName` è il nome del servizio Forms da richiamare. Il valore facoltativo `OperationName` è il nome dell&#39;operazione del servizio. Se questo valore non viene specificato, il nome predefinito sarà `invoke`, ovvero il nome dell&#39;operazione che avvia il processo. Il valore facoltativo `ServiceVersion` è la versione codificata nel formato X.Y. Se questo valore non viene specificato, viene utilizzata la versione più recente. Il valore `enctype` può anche essere `application/x-www-form-urlencoded`.
 
 ## Tipi di dati supportati {#supported-data-types}
 
 I seguenti tipi di dati sono supportati quando si richiamano i servizi AEM Forms utilizzando le richieste REST:
 
 * Tipi di dati primitivi Java, ad esempio Stringhe e interi
-* `com.adobe.idp.Document` tipo di dati
+* Tipo di dati `com.adobe.idp.Document`
 * Tipi di dati XML come `org.w3c.Document` e `org.w3c.Element`
-* Oggetti di raccolta come `java.util.List` e `java.util.Map`
+* Oggetti raccolta come `java.util.List` e `java.util.Map`
 
   Questi tipi di dati vengono comunemente accettati come valori di input per i processi creati in Workbench.
 
-  Se viene richiamato un servizio Forms con il metodo HTTP POST, gli argomenti vengono passati nel corpo della richiesta HTTP. Se la firma del servizio AEM Forms contiene un parametro di input di tipo stringa, il corpo della richiesta può contenere il valore di testo del parametro di input. Se la firma del servizio definisce più parametri di stringa, la richiesta può seguire i `application/x-www-form-urlencoded` notazione con i nomi del parametro utilizzati come nomi dei campi del modulo.
+  Se viene richiamato un servizio Forms con il metodo HTTP POST, gli argomenti vengono passati nel corpo della richiesta HTTP. Se la firma del servizio AEM Forms contiene un parametro di input di tipo stringa, il corpo della richiesta può contenere il valore di testo del parametro di input. Se la firma del servizio definisce più parametri stringa, la richiesta può seguire la notazione HTTP `application/x-www-form-urlencoded` con i nomi dei parametri utilizzati come nomi dei campi del modulo.
 
   Se un servizio Forms restituisce un parametro di stringa, il risultato è una rappresentazione testuale del parametro di output. Se un servizio restituisce più parametri stringa, il risultato è un documento XML che codifica i parametri di output nel formato seguente:
   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
   >[!NOTE]
   >
-  >Il `output-paramater1` value rappresenta il nome del parametro di output.
+  >Il valore `output-paramater1` rappresenta il nome del parametro di output.
 
-  Se un servizio Forms richiede un `com.adobe.idp.Document` , il servizio può essere richiamato solo utilizzando il metodo HTTP POST. Se il servizio ne richiede uno `com.adobe.idp.Document` , il corpo della richiesta HTTP diventa il contenuto dell&#39;oggetto Document di input.
+  Se un servizio Forms richiede un parametro `com.adobe.idp.Document`, il servizio può essere richiamato solo utilizzando il metodo HTTP POST. Se il servizio richiede un parametro `com.adobe.idp.Document`, il corpo della richiesta HTTP diventa il contenuto dell&#39;oggetto documento di input.
 
-  Se un servizio AEM Forms richiede più parametri di input, il corpo della richiesta HTTP deve essere un messaggio MIME multiparte come definito dalla RFC 1867. (RFC 1867 è uno standard utilizzato dai browser web per caricare file sui siti web.) Ogni parametro di input deve essere inviato come parte separata del messaggio multipart e codificato nel `multipart/form-data` formato. Il nome di ogni parte deve corrispondere al nome del parametro.
+  Se un servizio AEM Forms richiede più parametri di input, il corpo della richiesta HTTP deve essere un messaggio MIME multiparte come definito dalla RFC 1867. (RFC 1867 è uno standard utilizzato dai browser web per caricare file sui siti web.) Ogni parametro di input deve essere inviato come parte separata del messaggio multipart e codificato nel formato `multipart/form-data`. Il nome di ogni parte deve corrispondere al nome del parametro.
 
   Gli elenchi e le mappe vengono utilizzati anche come valori di input per i processi di AEM Forms creati in Workbench. Di conseguenza, puoi utilizzare questi tipi di dati quando utilizzi una richiesta REST. Gli array Java non sono supportati perché non vengono utilizzati come valore di input in un processo AEM Forms.
 
-  Se un parametro di input è un elenco, un client REST può inviarlo specificando il parametro più volte (una volta per ogni elemento dell’elenco). Ad esempio, se A è un elenco di documenti, l&#39;input deve essere un messaggio in più parti costituito da più parti denominate A. In questo caso, ogni parte denominata A diventa un elemento nell&#39;elenco di input. Se B è un elenco di stringhe, l’input può essere un `application/x-www-form-urlencoded` messaggio costituito da più campi denominati B. In questo caso, ogni campo modulo denominato B diventa un elemento nell&#39;elenco di input.
+  Se un parametro di input è un elenco, un client REST può inviarlo specificando il parametro più volte (una volta per ogni elemento dell’elenco). Ad esempio, se A è un elenco di documenti, l&#39;input deve essere un messaggio in più parti costituito da più parti denominate A. In questo caso, ogni parte denominata A diventa un elemento nell&#39;elenco di input. Se B è un elenco di stringhe, l&#39;input può essere un messaggio `application/x-www-form-urlencoded` costituito da più campi denominati B. In questo caso, ogni campo modulo denominato B diventa un elemento nell&#39;elenco di input.
 
   Se un parametro di input è una mappa e si tratta del parametro di input solo dei servizi, ogni parte/campo del messaggio di input diventa un record chiave/valore nella mappa. Il nome di ogni parte/campo diventa la chiave del record. Il contenuto di ogni parte/campo diventa il valore del record.
 
-  Se una mappa di input non è il solo parametro di input dei servizi, ogni record chiave/valore che appartiene alla mappa può essere inviato utilizzando un parametro denominato come concatenazione del nome del parametro e della chiave del record. Ad esempio, una mappa di input denominata `attributes` può essere inviato con un elenco delle seguenti coppie chiave/valori:
+  Se una mappa di input non è il solo parametro di input dei servizi, ogni record chiave/valore che appartiene alla mappa può essere inviato utilizzando un parametro denominato come concatenazione del nome del parametro e della chiave del record. Ad esempio, è possibile inviare una mappa di input denominata `attributes` con un elenco delle coppie chiave/valori seguenti:
 
   `attributesColor=red`
 
@@ -76,22 +76,22 @@ I seguenti tipi di dati sono supportati quando si richiamano i servizi AEM Forms
 
   `attributesWidth=5`
 
-  Questo si traduce in una mappa di tre record: `Color=red`, `Shape=box`, e `Width=5`.
+  Ciò si traduce in una mappa di tre record: `Color=red`, `Shape=box` e `Width=5`.
 
   I parametri di output dei tipi di elenco e mappa diventano parte del messaggio XML risultante. L&#39;elenco di output è rappresentato in XML come una serie di elementi XML con un elemento per ogni elemento dell&#39;elenco. A ogni elemento viene assegnato lo stesso nome del parametro dell’elenco di output. Il valore di ogni elemento XML è uno dei due elementi seguenti:
 
 * Rappresentazione testuale dell&#39;elemento nell&#39;elenco (se l&#39;elenco è costituito da tipi di stringa)
-* Un URL che punta al contenuto del documento (se l’elenco è costituito da `com.adobe.idp.Document` oggetti)
+* URL che punta al contenuto del documento (se l&#39;elenco è costituito da `com.adobe.idp.Document` oggetti)
 
-  L&#39;esempio seguente è un messaggio XML restituito da un servizio che dispone di un singolo parametro di output denominato *list*, che è un elenco di interi.
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un parametro di mappa di output è rappresentato nel messaggio XML risultante come una serie di elementi XML con un elemento per ogni record della mappa. A ogni elemento viene assegnato lo stesso nome della chiave del record mappa. Il valore di ciascun elemento è una rappresentazione testuale del valore del record mappa (se la mappa è costituita da record con un valore stringa) o un URL che punta al contenuto del documento (se la mappa è costituita da record con `com.adobe.idp.Document` valore). Di seguito è riportato un esempio di messaggio XML restituito da un servizio con un singolo parametro di output denominato `map`. Questo valore di parametro è una mappa costituita da record a cui vengono associate le lettere `com.adobe.idp.Document` oggetti.
+  L&#39;esempio seguente è un messaggio XML restituito da un servizio con un singolo parametro di output denominato *list*, ovvero un elenco di numeri interi.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un parametro di mapping di output è rappresentato nel messaggio XML risultante come una serie di elementi XML con un elemento per ogni record del mapping. A ogni elemento viene assegnato lo stesso nome della chiave del record mappa. Il valore di ciascun elemento è una rappresentazione testuale del valore del record mappa (se la mappa è costituita da record con un valore stringa) o un URL che punta al contenuto del documento (se la mappa è costituita da record con il valore `com.adobe.idp.Document`). Di seguito è riportato un esempio di messaggio XML restituito da un servizio che dispone di un singolo parametro di output denominato `map`. Questo valore di parametro è una mappa costituita da record che associano lettere a oggetti `com.adobe.idp.Document`.
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Chiamate asincrone {#asynchronous-invocations}
 
-Alcuni servizi di AEM Forms, come i processi a lunga durata incentrati sull’uomo, richiedono molto tempo per essere completati. Questi servizi possono essere richiamati in modo asincrono senza blocchi. (vedere [Richiamare processi a lunga durata incentrati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+Alcuni servizi di AEM Forms, come i processi a lunga durata incentrati sull’uomo, richiedono molto tempo per essere completati. Questi servizi possono essere richiamati in modo asincrono senza blocchi. (Vedi [Richiamare Processi A Lunga Durata Incentrati Sull&#39;Uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
-Un servizio AEM Forms può essere richiamato in modo asincrono sostituendo `services` con `async_invoke` nell’URL di chiamata, come illustrato nell’esempio seguente.
+È possibile richiamare un servizio AEM Forms in modo asincrono sostituendo `services` con `async_invoke` nell&#39;URL di chiamata, come illustrato nell&#39;esempio seguente.
 
 ```java
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
@@ -99,7 +99,7 @@ Un servizio AEM Forms può essere richiamato in modo asincrono sostituendo `serv
 
 Questo URL restituisce il valore dell’identificatore (in formato &quot;text/plain&quot;) del processo responsabile di questa chiamata.
 
-Lo stato della chiamata asincrona può essere recuperato utilizzando un URL di chiamata con `services` sostituito con `async_status`. L’URL deve contenere `job_id` parametro che specifica il valore dell&#39;identificatore del processo associato a questa chiamata. Ad esempio:
+È possibile recuperare lo stato della chiamata asincrona utilizzando un URL di chiamata con `services` sostituito da `async_status`. L&#39;URL deve contenere un parametro `job_id` che specifica il valore dell&#39;identificatore del processo associato a questa chiamata. Ad esempio:
 
 ```java
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
@@ -109,7 +109,7 @@ Questo URL restituisce un valore intero (in formato &quot;text/plain&quot;) che 
 
 Se il processo è completato, l’URL restituisce lo stesso risultato di se il servizio è stato richiamato in modo sincrono.
 
-Una volta completato il processo e recuperato il risultato, il processo può essere eliminato utilizzando un URL di chiamata con `services` viene sostituito con `async_dispose`. L’URL deve contenere anche `job_id` parametro che specifica il valore dell’identificatore del processo. Ad esempio:
+Una volta completato il processo e recuperato il risultato, il processo può essere eliminato utilizzando un URL di chiamata con `services` sostituito con `async_dispose`. L&#39;URL deve inoltre contenere un parametro `job_id` che specifica il valore dell&#39;identificatore del processo. Ad esempio:
 
 ```java
  http://localhost:8080/rest/async_dispose/SomeService.SomeOperation?job_id=2345353443366564
@@ -119,9 +119,9 @@ Se il processo viene eliminato correttamente, questo URL restituisce un messaggi
 
 ## Segnalazione di errori {#error-reporting}
 
-Se non è possibile completare una richiesta di chiamata sincrona o asincrona a causa di un&#39;eccezione generata sul server, l&#39;eccezione viene segnalata come parte del messaggio di risposta HTTP. Se l’URL di chiamata (o il `async_result` URL in caso di chiamata asincrona) non dispone di un suffisso .xml, il provider REST restituisce il codice HTTP `500 Internal Server Error` seguito da un messaggio di eccezione.
+Se non è possibile completare una richiesta di chiamata sincrona o asincrona a causa di un&#39;eccezione generata sul server, l&#39;eccezione viene segnalata come parte del messaggio di risposta HTTP. Se l&#39;URL di chiamata (o l&#39;URL `async_result` in caso di chiamata asincrona) non ha un suffisso .xml, il provider REST restituisce il codice HTTP `500 Internal Server Error` seguito da un messaggio di eccezione.
 
-Se l’URL di chiamata (o il `async_result` URL in caso di chiamata asincrona) non dispone di un suffisso .xml, il provider REST restituisce il codice HTTP `200 OK`seguito da un documento XML che descrive l&#39;eccezione nel formato seguente.
+Se l&#39;URL di chiamata (o l&#39;URL `async_result` se è presente una chiamata asincrona) ha un suffisso .xml, il provider REST restituisce il codice HTTP `200 OK` seguito da un documento XML che descrive l&#39;eccezione nel formato seguente.
 
 ```xml
  <exception>
@@ -141,7 +141,7 @@ Se l’URL di chiamata (o il `async_result` URL in caso di chiamata asincrona) n
  </exception>
 ```
 
-Il `DSCError` è facoltativo e presente solo se l&#39;eccezione è un&#39;istanza di `com.adobe.idp.dsc.DSCException`.
+L&#39;elemento `DSCError` è facoltativo e presente solo se l&#39;eccezione è un&#39;istanza di `com.adobe.idp.dsc.DSCException`.
 
 ## Sicurezza e autenticazione {#security-and-authentication}
 
@@ -155,11 +155,11 @@ Per fornire chiamate REST con un trasporto sicuro, un amministratore dei moduli 
 
 Sebbene sia consigliabile richiamare i processi creati utilizzando Workbench anziché direttamente i servizi, alcuni servizi di AEM Forms supportano la chiamata REST. Il motivo per cui si consiglia di richiamare direttamente un processo anziché un servizio è che è più efficiente richiamare un processo. Considera lo scenario seguente. Si supponga di voler creare un criterio da un client REST. In altre parole, si desidera che il client REST definisca valori quali il nome del criterio e il periodo di lease offline.
 
-Per creare una policy, è necessario definire tipi di dati complessi, ad esempio `PolicyEntry` oggetto. A `PolicyEntry` object definisce attributi quali le autorizzazioni associate al criterio. (vedere [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
+Per creare un criterio, è necessario definire tipi di dati complessi, ad esempio un oggetto `PolicyEntry`. Un oggetto `PolicyEntry` definisce attributi quali le autorizzazioni associate al criterio. (Vedi [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
-Invece di inviare una richiesta REST per creare un criterio (che includerebbe la definizione di tipi di dati complessi come `PolicyEntry` ), crea un processo che crea una policy utilizzando Workbench. Definisci il processo per accettare variabili di input primitive, ad esempio un valore stringa che definisce il nome del processo o un numero intero che definisce il periodo di lease offline.
+Invece di inviare una richiesta REST per creare un criterio (che includerebbe la definizione di tipi di dati complessi come un oggetto `PolicyEntry`), creare un processo che crei un criterio utilizzando Workbench. Definisci il processo per accettare variabili di input primitive, ad esempio un valore stringa che definisce il nome del processo o un numero intero che definisce il periodo di lease offline.
 
-In questo modo, non è necessario creare una richiesta di chiamata REST che includa i tipi di dati complessi richiesti dall&#39;operazione. Il processo definisce i tipi di dati complessi e tutte le operazioni eseguite dal client REST vengono richiamate e passate ai tipi di dati primitivi. Per informazioni sulla chiamata di un processo tramite REST, vedere [Richiamare il processo MyApplication/EncryptDocument tramite REST](#rest-invocation-examples).
+In questo modo, non è necessario creare una richiesta di chiamata REST che includa i tipi di dati complessi richiesti dall&#39;operazione. Il processo definisce i tipi di dati complessi e tutte le operazioni eseguite dal client REST vengono richiamate e passate ai tipi di dati primitivi. Per informazioni sulla chiamata di un processo tramite REST, vedere [Richiamo del processo MyApplication/EncryptDocument tramite REST](#rest-invocation-examples).
 
 L’elenco seguente specifica i servizi AEM Forms che supportano la chiamata diretta REST.
 
@@ -185,7 +185,7 @@ Vengono forniti i seguenti esempi di chiamata REST:
 
 **Trasmissione di valori booleani a un processo**
 
-Il seguente esempio di HTML passa due `Boolean` valori in un processo AEM Forms denominato `RestTest2`. Il nome del metodo di chiamata è `invoke` e la versione è 1.0. Si noti che viene utilizzato il metodo Post di HTML.
+Nell&#39;esempio di HTML seguente vengono passati due valori `Boolean` a un processo AEM Forms denominato `RestTest2`. Il nome del metodo di chiamata è `invoke` e la versione è 1.0. Si noti che viene utilizzato il metodo HTML Post.
 
 ```html
  <html>
@@ -203,9 +203,9 @@ Il seguente esempio di HTML passa due `Boolean` valori in un processo AEM Forms 
  </html>
 ```
 
-**Trasmissione dei valori di data a un processo**
+**Trasmissione di valori di data a un processo**
 
-Nell&#39;esempio di HTML seguente viene passato un valore di data a un processo AEM Forms denominato `SOAPEchoService`. Il nome del metodo di chiamata è `echoCalendar`. Il HTML `Post` viene utilizzato il metodo.
+Nell&#39;esempio di HTML seguente viene passato un valore di data a un processo AEM Forms denominato `SOAPEchoService`. Il nome del metodo di chiamata è `echoCalendar`. Si noti che viene utilizzato il metodo HTML `Post`.
 
 ```html
  <html>
@@ -224,7 +224,7 @@ Nell&#39;esempio di HTML seguente viene passato un valore di data a un processo 
 
 **Trasmissione di documenti a un processo**
 
-Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denominato `MyApplication/EncryptDocument` richiede un documento PDF. Per informazioni su questo processo, consulta [Richiamare AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denominato `MyApplication/EncryptDocument` che richiede un documento PDF. Per informazioni su questo processo, vedere [Richiamo di AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
 ```html
  <html>
@@ -244,7 +244,7 @@ Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denomin
 
 **Trasmissione di valori di documento e testo a un processo**
 
-Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denominato `RestTest3` che richiede un documento e due valori di testo. Si noti che viene utilizzato il metodo Post di HTML.
+Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denominato `RestTest3` che richiede un documento e due valori di testo. Si noti che viene utilizzato il metodo HTML Post.
 
 ```html
  <html>
@@ -264,9 +264,9 @@ Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denomin
  </html>
 ```
 
-**Trasmissione dei valori di enumerazione a un processo**
+**Trasferimento dei valori di enumerazione a un processo**
 
-Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denominato `SOAPEchoService` che richiede un valore di enumerazione. Si noti che viene utilizzato il metodo Post di HTML.
+Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denominato `SOAPEchoService` che richiede un valore di enumerazione. Si noti che viene utilizzato il metodo HTML Post.
 
 ```html
  <html>
@@ -283,20 +283,20 @@ Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denomin
  </html>
 ```
 
-**Richiamare il processo MyApplication/EncryptDocument tramite REST**
+**Richiamo del processo MyApplication/EncryptDocument tramite REST**
 
 È possibile richiamare un processo AEM Forms di breve durata denominato *MyApplication/EncryptDocument* utilizzando REST.
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire insieme all&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzo di workbench. (vedere [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Quando viene richiamato, il processo esegue le azioni seguenti:
 
-1. Ottiene il documento PDF non protetto passato al processo. Questa azione si basa sulla `SetValue` operazione. Il parametro di input per questo processo è un `document` variabile di processo denominata `inDoc`.
-1. Crittografa il documento PDF con una password. Questa azione si basa sulla `PasswordEncryptPDF` operazione. Il documento PDF crittografato con password viene restituito in una variabile di processo denominata `outDoc`.
+1. Ottiene il documento PDF non protetto passato al processo. Questa azione è basata sull&#39;operazione `SetValue`. Il parametro di input per questo processo è una variabile di processo `document` denominata `inDoc`.
+1. Crittografa il documento PDF con una password. Questa azione è basata sull&#39;operazione `PasswordEncryptPDF`. Il documento PDF crittografato con password è stato restituito in una variabile di processo denominata `outDoc`.
 
-   Quando questo processo viene richiamato utilizzando una richiesta REST, il documento PDF crittografato viene visualizzato nel browser web. Prima di visualizzare il documento PDF, specificare la password (a meno che la protezione non sia disattivata). Il seguente codice HTML rappresenta una richiesta di chiamata REST a `MyApplication/EncryptDocument` processo.
+   Quando questo processo viene richiamato utilizzando una richiesta REST, il documento PDF crittografato viene visualizzato nel browser web. Prima di visualizzare il documento PDF, specificare la password (a meno che la protezione non sia disattivata). Il codice HTML seguente rappresenta una richiesta di chiamata REST al processo `MyApplication/EncryptDocument`.
 
    ```html
     <html>
@@ -313,14 +313,14 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
     </body>
    ```
 
-**Richiamare il processo MyApplication/EncryptDocument da Acrobat** {#invoke-process-acrobat}
+**Richiamo del processo MyApplication/EncryptDocument da Acrobat** {#invoke-process-acrobat}
 
-È possibile richiamare un processo Forms da Acrobat utilizzando una richiesta REST. Ad esempio, puoi richiamare il *MyApplication/EncryptDocument* processo. Per richiamare un processo Forms da Acrobat, posiziona un pulsante di invio su un file XDP all’interno di Designer. (vedere [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).)
+È possibile richiamare un processo Forms da Acrobat utilizzando una richiesta REST. È ad esempio possibile richiamare il processo *MyApplication/EncryptDocument*. Per richiamare un processo Forms da Acrobat, posiziona un pulsante di invio su un file XDP all’interno di Designer. (Vedi [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
-Specifica l’URL da utilizzare per richiamare il processo nel file del pulsante *Invia a URL* come illustrato nella figura seguente.
+Specifica l&#39;URL per richiamare il processo nel campo *Invia all&#39;URL* del pulsante, come illustrato nella figura seguente.
 
 L’URL completo per richiamare il processo è https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
 
-Se il processo richiede un documento PDF come valore di input, assicurarsi di inviare il modulo come PDF, come illustrato nella figura precedente. Inoltre, per richiamare correttamente un processo, il processo deve restituire un documento PDF. In caso contrario, Acrobat non può gestire il valore restituito e si verifica un errore. Non è necessario specificare il nome della variabile di processo di input. Ad esempio, il *MyApplication/EncryptDocument* il processo ha una variabile di input denominata `inDoc`. Non è necessario specificare inDoc, purché il modulo venga inviato come PDF.
+Se il processo richiede un documento PDF come valore di input, assicurarsi di inviare il modulo come PDF, come illustrato nella figura precedente. Inoltre, per richiamare correttamente un processo, il processo deve restituire un documento PDF. In caso contrario, Acrobat non può gestire il valore restituito e si verifica un errore. Non è necessario specificare il nome della variabile di processo di input. Ad esempio, il processo *MyApplication/EncryptDocument* ha una variabile di input denominata `inDoc`. Non è necessario specificare inDoc, purché il modulo venga inviato come PDF.
 
-È inoltre possibile inviare i dati del modulo come XML a un processo di Forms. Per inviare i dati XML, assicurarsi che `Submit As` a discesa specifica XML. Poiché il valore restituito dalla procedura deve essere un documento PDF, il documento PDF viene visualizzato in Acrobat.
+È inoltre possibile inviare i dati del modulo come XML a un processo di Forms. Per inviare i dati XML, verificare che l&#39;elenco a discesa `Submit As` specifichi XML. Poiché il valore restituito dalla procedura deve essere un documento PDF, il documento PDF viene visualizzato in Acrobat.

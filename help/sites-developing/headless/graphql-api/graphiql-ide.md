@@ -14,7 +14,7 @@ ht-degree: 86%
 
 # Utilizzo dell’IDE GraphiQL {#graphiql-ide}
 
-Un’implementazione dello standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) L’IDE è disponibile con l’API GraphQL di Adobe Experience Manager (AEM).
+È disponibile un&#39;implementazione dell&#39;IDE [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) standard da utilizzare con l&#39;API GraphQL di Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Un’implementazione dello standard [GraphiQL](https://graphql.org/learn/serving
 >[!NOTE]
 >Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
-Il **GraphiQL** Questo strumento consente di testare ed eseguire il debug delle query GraphQL consentendo di:
+Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query GraphQL consentendoti di:
 
 * selezionare l’**Endpoint** appropriato per la configurazione Sites da utilizzare per le query;
 * inserire direttamente nuove query;
@@ -85,14 +85,14 @@ Puoi eseguire immediatamente una nuova query oppure caricare ed eseguire una que
 
 In entrambi i casi, la query visualizzata nel pannello dell’editor è quella che verrà eseguita quando:
 
-* fai clic sul pulsante **Esegui query** icona
+* fare clic sull&#39;icona **Esegui query**
 * utilizzi la scelta rapida di tastiera `Control-Enter`
 
 ## Variabili di query {#query-variables}
 
 <!-- more details needed here? -->
 
-L’IDE GraphiQL consente inoltre di gestire i [Variabili di query](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+L&#39;IDE GraphiQL consente inoltre di gestire le [variabili di query](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
 
 Esempio:
 
@@ -135,7 +135,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Pubblicazione di query persistenti {#publishing-persisted-queries}
 
-Dopo aver selezionato il [query persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) dall’elenco (pannello a sinistra) puoi utilizzare **Pubblica** e **Annulla pubblicazione** azioni. Queste consentono di attivarle nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per renderle facilmente accessibili dalle applicazioni in fase di test.
+Dopo aver selezionato la [query persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) dall&#39;elenco (pannello a sinistra) puoi utilizzare le azioni **Publish** e **Annulla pubblicazione**. Queste consentono di attivarle nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per renderle facilmente accessibili dalle applicazioni in fase di test.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Dopo aver selezionato il [query persistente](/help/sites-developing/headless/gra
 
 ## Copiare l’URL per accedere direttamente alla query {#copy-url}
 
-Il **Copia URL** consente di simulare una query copiando l’URL utilizzato per accedere direttamente alla query persistente e visualizzare i risultati. Questa può quindi essere utilizzata per i test; ad esempio, accedendo in un browser:
+L&#39;opzione **Copia URL** consente di simulare una query copiando l&#39;URL utilizzato per accedere direttamente alla query persistente e visualizzare i risultati. Questa può quindi essere utilizzata per i test; ad esempio, accedendo in un browser:
 
 <!--
   >[!NOTE]

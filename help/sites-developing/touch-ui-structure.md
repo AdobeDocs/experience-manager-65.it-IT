@@ -89,7 +89,7 @@ La cornice di contenuto si trova nella sezione destra della finestra, sotto la b
 
 Il frame dell&#39;editor consente di realizzare le funzioni di editing.
 
-Il frame dell&#39;editor è un contenitore (astratto) per tutti *elementi di authoring delle pagine*. Si trova sopra la cornice del contenuto e include:
+Il frame dell&#39;editor è un contenitore (astratto) per tutti i *elementi di creazione pagine*. Si trova sopra la cornice del contenuto e include:
 
 * barra degli strumenti superiore
 * pannello laterale
@@ -106,9 +106,9 @@ Il pannello laterale è nascosto per impostazione predefinita. Se questa opzione
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-### Pannello laterale - Risorse {#side-panel-assets}
+### Pannello laterale - Assets {#side-panel-assets}
 
-Nella scheda Risorse puoi selezionare dall’intervallo di risorse. Puoi anche filtrare in base a un termine specifico o selezionare un gruppo.
+Nella scheda Assets puoi selezionare una delle risorse disponibili. Puoi anche filtrare in base a un termine specifico o selezionare un gruppo.
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -126,7 +126,7 @@ Nella scheda Componenti puoi selezionare uno dei componenti disponibili. Puoi an
 
 ### Sovrapposizioni {#overlays}
 
-Questi si sovrappongono alla cornice del contenuto e vengono utilizzati dal [livelli](#layer) realizzare i meccanismi necessari per interagire (in modo trasparente) con i componenti e i relativi contenuti.
+Questi si sovrappongono al frame del contenuto e vengono utilizzati dai [livelli](#layer) per realizzare i meccanismi con cui puoi interagire (in modo trasparente) con i componenti e i relativi contenuti.
 
 Le sovrapposizioni sono live nel frame dell’editor (con tutti gli altri elementi di authoring della pagina), anche se in realtà sovrappongono i componenti appropriati nel frame del contenuto.
 
@@ -165,6 +165,6 @@ A seconda dello spazio disponibile, le barre degli strumenti del componente sono
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori dettagli sui concetti relativi all’interfaccia touch, consulta [Concetti dell’interfaccia touch dell’AEM](/help/sites-developing/touch-ui-concepts.md).
+Per ulteriori dettagli sui concetti relativi all&#39;interfaccia utente touch, leggere [Concetti dell&#39;interfaccia utente touch AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Per ulteriori informazioni tecniche, consulta [Set di documentazione JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l’editor di pagine touch.
+Per ulteriori informazioni tecniche, consulta [Set di documentazione JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l&#39;editor di pagine touch.

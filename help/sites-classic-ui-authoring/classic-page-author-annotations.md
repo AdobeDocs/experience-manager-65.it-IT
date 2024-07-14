@@ -43,7 +43,7 @@ Un’annotazione posiziona un marcatore colorato o una nota adesiva sulla pagina
 
 A seconda della struttura del paragrafo, l’annotazione è disponibile come opzione nel menu di scelta rapida (in genere il pulsante destro del mouse quando si posiziona sul paragrafo richiesto) o come pulsante sulla barra di modifica del paragrafo.
 
-In entrambi i casi, seleziona **Annota**. Al paragrafo viene applicata un’annotazione colorata con nota adesiva. La modalità Modifica è attiva immediatamente e consente di aggiungere testo direttamente:
+In entrambi i casi, selezionare **Annota**. Al paragrafo viene applicata un’annotazione colorata con nota adesiva. La modalità Modifica è attiva immediatamente e consente di aggiungere testo direttamente:
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
@@ -97,7 +97,7 @@ Gli schizzi sono una caratteristica delle annotazioni che consente di creare sem
 * Dopo aver chiuso la modalità di sketch, potete fare clic su una linea di sketch per selezionarla.
 * Spostate uno sketch selezionandolo, quindi trascinandolo nella posizione desiderata.
 * Uno schizzo sovrappone il contenuto. Ciò significa che all&#39;interno dei quattro angoli dello sketch non è possibile fare clic sul paragrafo sottostante. Ad esempio, se devi modificare o accedere a un collegamento. Se si verifica un problema (ad esempio, se uno schizzo copre una vasta area della pagina), minimizza l’annotazione appropriata, in quanto questa operazione ridurrà anche tutti gli schizzi correlati, consentendo l’accesso all’area sottostante.
-* Per eliminare un singolo schizzo, selezionatelo, quindi premete il tasto **Elimina** chiave (**fn**-**backspace** su un Mac).
+* Per eliminare un singolo schizzo: seleziona lo schizzo richiesto, quindi premi il tasto **Elimina** (**fn**-**backspace** in un Mac).
 
 * Se si sposta o si copia un paragrafo, verranno spostate o copiate anche tutte le annotazioni correlate e i relativi schizzi, mantenendo la stessa posizione rispetto al paragrafo.
 * Se eliminate un’annotazione, verranno eliminati anche tutti gli schizzi associati ad essa.

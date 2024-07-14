@@ -23,22 +23,22 @@ ht-degree: 3%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Il **Sezione metriche di Mobile** sul centro di comando fornisce analisi in tempo reale per la tua app mobile.
+Il riquadro delle metriche di **Mobile** nel centro comandi fornisce analisi in tempo reale per la tua app mobile.
 
-Il [Adobe di analisi per dispositivi mobili](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) L’SDK è reso disponibile tramite un plug-in PhoneGap. Le metriche vengono raccolte e memorizzate nella cache del dispositivo fino a quando il dispositivo non è connesso, momento in cui i dati vengono inviati all’Adobe Mobile Services Cloud per scopi di reporting e analisi.
+L&#39;SDK [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) è disponibile tramite un plug-in PhoneGap. Le metriche vengono raccolte e memorizzate nella cache del dispositivo fino a quando il dispositivo non è connesso, momento in cui i dati vengono inviati all’Adobe Mobile Services Cloud per scopi di reporting e analisi.
 
 L’SDK di Adobe Mobile Analytics fornisce quanto segue:
 
-1. **Raccolta di dati per i canali mobili** : raccogli dati completi per i tuoi siti web e app mobili su tutti i principali sistemi operativi.
-1. **Analisi del coinvolgimento mobile** - Comprendi il coinvolgimento degli utenti nell’app mobile, nel sito web o nel video, compresa la frequenza con cui i consumatori avviano il canale, se effettuano acquisti da esso e altro ancora.
-1. **Dashboard e rapporti dell’app mobile** : ottieni rapporti sull’utilizzo che includono le metriche del ciclo di vita per le app e le metriche dell’app store. Consulta le tendenze per utenti, avvii, durata media della sessione, durata di conservazione e arresti anomali.
-1. **Analisi di una campagna mobile** - Quantificare l’efficacia delle campagne specifiche per dispositivi mobili come SMS, annunci di ricerca per dispositivi mobili, annunci di visualizzazione su dispositivi mobili e codici QR.
-1. **Analisi della geolocalizzazione** : scopri dove gli utenti dell’app avviano e interagiscono con le tue esperienze mobili tramite la posizione GPS o i punti di interesse.
-1. **Analisi dei percorsi** : scopri come gli utenti si spostano nell’app per determinare quali schermate ed elementi dell’interfaccia utente coinvolgono gli utenti e quali causano l’abbandono.
+1. **Raccolta dati per i canali mobili** - Raccolta di dati completi per i siti Web e le app mobili in tutti i principali sistemi operativi.
+1. **Analisi del coinvolgimento mobile** - Comprendi il coinvolgimento degli utenti nell&#39;app mobile, nel sito Web o nel video, compresa la frequenza con cui i consumatori avviano il canale, se effettuano acquisti da esso e altro ancora.
+1. **Dashboard e rapporti per app mobili** - Ottieni rapporti sull&#39;utilizzo che includono metriche del ciclo di vita per le tue app e metriche per app store. Vedi le tendenze per utenti, avvii, durata media della sessione, durata di conservazione e arresti anomali.
+1. **Analisi campagna mobile** - Quantifica l&#39;efficacia di campagne specifiche per dispositivi mobili come SMS, annunci di ricerca mobile, annunci di visualizzazione mobile e codici QR.
+1. **Analisi della geolocalizzazione** - Trova il punto in cui gli utenti dell&#39;app avviano e interagiscono con le tue esperienze mobili in base alla posizione GPS o ai punti di interesse.
+1. **Analisi dei percorsi**: scopri come gli utenti si spostano nell&#39;app per determinare quali schermate ed elementi dell&#39;interfaccia utente coinvolgono gli utenti e quali causano l&#39;abbandono.
 
 >[!CAUTION]
 >
->Il **Analizzare le metriche** Il riquadro viene visualizzato nel dashboard, solo se hai configurato Cloud Services.
+>Il riquadro **Analizza metriche** viene visualizzato nel dashboard solo se sono stati configurati servizi cloud.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -48,23 +48,23 @@ Sezione metriche del centro di comando AEM
 
 Per sfruttare i vantaggi di Adobe Mobile Services Analytics è necessario configurare AEM Mobile Analytics Cloud Service con le informazioni del tuo account Adobe Analytics.
 
-1. Fai clic sull’icona in alto a destra per aggiungere o modificare i Cloud Service dalla sezione **Gestisci Cloud Service** affiancare dal dashboard dell’app.
+1. Fai clic sull&#39;icona in alto a destra per aggiungere o modificare i Cloud Service dal riquadro **Gestione Cloud Service** dal dashboard dell&#39;app.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. Il **Aggiungi o modifica Cloud Service** schermo. Seleziona **Adobe Mobile Services** e fai clic su **Successivo**.
+1. Viene visualizzata la schermata **Aggiungi o modifica Cloud Service**. Seleziona **Adobe Mobile Services** e fai clic su **Avanti**.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-1. Scegli una configurazione esistente da **Mobile Services** o scegli **Crea configurazione** per crearne uno.
+1. Scegli una configurazione esistente da **Mobile Services** oppure scegli **Crea configurazione** per crearne una.
 
-   Per la nuova configurazione, immetti **Proprietà di Mobile Services** e fai clic su **Verifica.**
+   Per la nuova configurazione, immetti **Proprietà Mobile Services** e fai clic su **Verifica.**
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
-   Se le credenziali vengono verificate, il **Verifica** il pulsante diventa **Verificato**. Puoi scegliere un’app per servizio mobile da **Selezionate un servizio app mobile**.
+   Se le credenziali vengono verificate, il pulsante **Verifica** diventa **Verificato**. Puoi scegliere un&#39;app per servizio mobile da **Seleziona un servizio per app mobile**.
 
-   Clic **Invia** per configurare la configurazione.
+   Fai clic su **Invia** per configurare la configurazione.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
@@ -74,6 +74,6 @@ Per sfruttare i vantaggi di Adobe Mobile Services Analytics è necessario config
 
    >[!NOTE]
    >
-   >Dopo aver configurato la configurazione cloud, puoi visualizzare **Analizzare le metriche** Affianca nel dashboard dell’app.
+   >Dopo aver configurato la configurazione cloud, puoi visualizzare il riquadro **Analizza metriche** nel dashboard dell&#39;app.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)

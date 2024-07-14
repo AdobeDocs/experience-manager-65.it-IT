@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Puoi modificare il font visualizzato nell’area di lavoro di AEM Forms. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i caratteri nell&#39;interfaccia utente in modo selettivo.
 
-Segui le [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e a seconda delle tue esigenze, segui i passaggi per personalizzare CSS, HTML o entrambi.
+Segui i [passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e, a seconda delle tue esigenze, segui i passaggi per personalizzare CSS, HTML o entrambi.
 
 1. Modificate o aggiungete la famiglia font in uno stile esistente.
 1. Modificare o aggiungere la famiglia di caratteri in linea per l&#39;elemento HTML.
@@ -29,7 +29,7 @@ Segui le [Passaggi generici per la personalizzazione dell’area di lavoro AEM F
 
 Ad esempio, per modificare il tipo di carattere del testo di ancoraggio della barra di navigazione superiore in Courier New, effettuare le seguenti operazioni:
 
-1. Accedi a CRXDE Liti accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Accedere a CRXDE Lite accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Effettua una delle operazioni seguenti:
 
    1. Per modificare la famiglia di caratteri in uno stile esistente, aggiungi quanto segue nel file newStyle.css in /apps/ws/css.
@@ -40,7 +40,7 @@ Ad esempio, per modificare il tipo di carattere del testo di ancoraggio della ba
       }
       ```
 
-   1. Per aggiungere la famiglia di caratteri in linea per l&#39;elemento HTML, copiare `/libs/ws/js/runtime/templates/appnavigation.html` file in `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Per aggiungere la famiglia di caratteri in linea per l&#39;elemento HTML, copiare il file `/libs/ws/js/runtime/templates/appnavigation.html` in `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Aggiornare il file /apps/ws/js/runtime/templates/appnavigation.html come segue:
 
@@ -51,7 +51,7 @@ Ad esempio, per modificare il tipo di carattere del testo di ancoraggio della ba
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Apri il file /apps/ws/js/registry.js per la modifica e la sostituzione `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` con `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Aprire il file /apps/ws/js/registry.js per la modifica e sostituire `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` con `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
    1. Per aggiungere uno stile che definisca la famiglia font, aggiungi quanto segue nel file newStyle.css in /apps/ws/css.
 
@@ -76,10 +76,10 @@ Ad esempio, per modificare il tipo di carattere del testo di ancoraggio della ba
 
 1. Riavvia l’area di lavoro e cancella la cache del browser per rendere visibili le modifiche.
 
-![change_font_before](assets/change_font_before.png)
+![cambia_font_prima](assets/change_font_before.png)
 
 Barra di navigazione superiore prima della personalizzazione dei caratteri
 
-![change_font_after](assets/change_font_after.png)
+![cambia_font_dopo](assets/change_font_after.png)
 
 Barra di navigazione superiore dopo la personalizzazione del font della prima scheda

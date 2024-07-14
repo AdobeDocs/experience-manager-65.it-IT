@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Il servizio Forms può eseguire il rendering di moduli a cui sono applicati diritti di utilizzo. I diritti di utilizzo riguardano funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I Forms a cui sono applicati diritti di utilizzo sono denominati moduli abilitati per i diritti. L’utente che apre un modulo abilitato ai diritti in Adobe Reader può eseguire operazioni che sono abilitate per tale modulo.
 
-Per applicare i diritti di utilizzo a un modulo, il servizio Acrobat Reader DC extensions deve far parte dell’installazione dei moduli AEM. Inoltre, è necessario disporre di una credenziale valida che consenta di applicare i diritti di utilizzo ai documenti PDF. In altre parole, è necessario configurare correttamente il servizio Estensioni di Acrobat Reader DC prima di poter eseguire il rendering di un modulo abilitato per i diritti. (vedere [Informazioni sul servizio estensioni Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Per applicare i diritti di utilizzo a un modulo, il servizio Acrobat Reader DC extensions deve far parte dell’installazione dei moduli AEM. Inoltre, è necessario disporre di una credenziale valida che consenta di applicare i diritti di utilizzo ai documenti PDF. In altre parole, è necessario configurare correttamente il servizio Estensioni di Acrobat Reader DC prima di poter eseguire il rendering di un modulo abilitato per i diritti. (Vedi [Informazioni sul servizio estensioni di Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
 
 >[!NOTE]
 >
@@ -29,11 +29,11 @@ Per applicare i diritti di utilizzo a un modulo, il servizio Acrobat Reader DC e
 
 >[!NOTE]
 >
->Non è possibile precompilare un modulo con dati XML quando si specificano i seguenti diritti di utilizzo: `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles`, o `enableDigitalSignatures`. (vedere [Precompilazione di Forms con layout fluibili](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+>Impossibile precompilare un modulo con dati XML quando si specificano i seguenti diritti di utilizzo: `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles` o `enableDigitalSignatures`. (Vedi [Precompilazione di Forms con layout percorribili](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
@@ -95,40 +95,40 @@ Eseguire il rendering di un modulo abilitato ai diritti tramite l’API Forms (J
 
 1. Creare un oggetto API client di Forms
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `FormsServiceClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Impostare le opzioni di runtime dei diritti di utilizzo
 
-   * Creare un `ReaderExtensionSpec` mediante il costruttore.
-   * Specificare l&#39;alias delle credenziali richiamando `ReaderExtensionSpec` dell&#39;oggetto `setReCredentialAlias` e specificare un valore stringa che rappresenti il valore alias.
-   * Impostare ogni diritto di utilizzo richiamando il metodo corrispondente che appartiene al `ReaderExtensionSpec` oggetto. È tuttavia possibile impostare un diritto di utilizzo solo se le credenziali a cui si fa riferimento lo consentono. In altre parole, non è possibile impostare un diritto di utilizzo se le credenziali non consentono di impostarlo. Ad esempio. per impostare il diritto di utilizzo che consente a un utente di compilare i campi del modulo e salvare il modulo, richiamare `ReaderExtensionSpec` dell&#39;oggetto `setReFillIn` metodo e passaggio `true`.
+   * Creare un oggetto `ReaderExtensionSpec` utilizzando il relativo costruttore.
+   * Specificare l&#39;alias delle credenziali richiamando il metodo `setReCredentialAlias` dell&#39;oggetto `ReaderExtensionSpec` e specificare un valore stringa che rappresenti il valore alias.
+   * Impostare ogni diritto di utilizzo richiamando il metodo corrispondente che appartiene all&#39;oggetto `ReaderExtensionSpec`. È tuttavia possibile impostare un diritto di utilizzo solo se le credenziali a cui si fa riferimento lo consentono. In altre parole, non è possibile impostare un diritto di utilizzo se le credenziali non consentono di impostarlo. Ad esempio. per impostare il diritto di utilizzo che consente a un utente di compilare i campi del modulo e salvare il modulo, richiamare il metodo `setReFillIn` dell&#39;oggetto `ReaderExtensionSpec` e passare `true`.
 
    >[!NOTE]
    >
-   >Non è necessario invocare `ReaderExtensionSpec` dell&#39;oggetto `setReCredentialPassword` metodo. Questo metodo non viene utilizzato dal servizio Forms.
+   >Impossibile richiamare il metodo `setReCredentialPassword` dell&#39;oggetto `ReaderExtensionSpec`. Questo metodo non viene utilizzato dal servizio Forms.
 
 1. Eseguire il rendering di un modulo abilitato per i diritti
 
-   Richiama `FormsServiceClient` dell&#39;oggetto `renderPDFFormWithUsageRights` e trasmettere i seguenti valori:
+   Richiama il metodo `renderPDFFormWithUsageRights` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura di modulo che fa parte di un&#39;applicazione Forms, assicurarsi di specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `com.adobe.idp.Document` oggetto contenente dati da unire con il modulo. Se non desideri unire i dati, passa un campo vuoto `com.adobe.idp.Document` oggetto.
-   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime.
-   * A `ReaderExtensionSpec` oggetto che memorizza le opzioni di runtime dei diritti di utilizzo.
-   * A `URLSpec` oggetto contenente valori URI richiesti dal servizio Forms.
+   * Oggetto `com.adobe.idp.Document` contenente dati da unire al modulo. Se non si desidera unire i dati, passare un oggetto `com.adobe.idp.Document` vuoto.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime.
+   * Oggetto `ReaderExtensionSpec` che memorizza le opzioni di runtime dei diritti di utilizzo.
+   * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
 
-   Il `renderPDFFormWithUsageRights` il metodo restituisce un `FormsResult` oggetto contenente un flusso di dati modulo che deve essere scritto nel browser web client.
+   Il metodo `renderPDFFormWithUsageRights` restituisce un oggetto `FormsResult` che contiene un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-   * Ottieni il tipo di contenuto del `com.adobe.idp.Document` oggetto richiamando il relativo `getContentType` metodo.
-   * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `com.adobe.idp.Document` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.
-   * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` dell&#39;oggetto `getInputStream` metodo.
-   * Creare una matrice di byte compilarla con il flusso di dati del modulo richiamando `InputStream` dell&#39;oggetto `read` e passando la matrice di byte come argomento.
-   * Richiama `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.
+   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document` richiamando il relativo metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamando il relativo metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il metodo `getOutputStream` dell&#39;oggetto `javax.servlet.http.HttpServletResponse`.
+   * Creare un oggetto `java.io.InputStream` richiamando il metodo `getInputStream` dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare una matrice di byte popolarla con il flusso di dati del modulo richiamando il metodo `read` dell&#39;oggetto `InputStream` e passando la matrice di byte come argomento.
+   * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.ServletOutputStream` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
 **Consulta anche**
 
@@ -149,34 +149,34 @@ Eseguire il rendering di un modulo abilitato ai diritti tramite l’API di Forms
 
 1. Creare un oggetto API client di Forms
 
-   Creare un `FormsService` e impostare i valori di autenticazione.
+   Creare un oggetto `FormsService` e impostare i valori di autenticazione.
 
 1. Impostare le opzioni di runtime dei diritti di utilizzo
 
-   * Creare un `ReaderExtensionSpec` mediante il costruttore.
-   * Specificare l&#39;alias delle credenziali richiamando `ReaderExtensionSpec` dell&#39;oggetto `setReCredentialAlias` e specificare un valore stringa che rappresenti il valore alias.
-   * Impostare ogni diritto di utilizzo richiamando il metodo corrispondente che appartiene al `ReaderExtensionSpec` oggetto. È tuttavia possibile impostare un diritto di utilizzo solo se le credenziali a cui si fa riferimento lo consentono. In altre parole, non è possibile impostare un diritto di utilizzo se le credenziali non consentono di impostarlo. Per impostare il diritto di utilizzo che consente a un utente di compilare i campi del modulo e salvare il modulo, richiamare `ReaderExtensionSpec` dell&#39;oggetto `setReFillIn` metodo e passaggio `true`.
+   * Creare un oggetto `ReaderExtensionSpec` utilizzando il relativo costruttore.
+   * Specificare l&#39;alias delle credenziali richiamando il metodo `setReCredentialAlias` dell&#39;oggetto `ReaderExtensionSpec` e specificare un valore stringa che rappresenti il valore alias.
+   * Impostare ogni diritto di utilizzo richiamando il metodo corrispondente che appartiene all&#39;oggetto `ReaderExtensionSpec`. È tuttavia possibile impostare un diritto di utilizzo solo se le credenziali a cui si fa riferimento lo consentono. In altre parole, non è possibile impostare un diritto di utilizzo se le credenziali non consentono di impostarlo. Per impostare il diritto di utilizzo che consente a un utente di compilare i campi del modulo e salvare il modulo, richiamare il metodo `setReFillIn` dell&#39;oggetto `ReaderExtensionSpec` e passare `true`.
 
 1. Eseguire il rendering di un modulo abilitato per i diritti
 
-   Richiama `FormsService` dell&#39;oggetto `renderPDFFormWithUsageRights` e trasmettere i seguenti valori:
+   Richiama il metodo `renderPDFFormWithUsageRights` dell&#39;oggetto `FormsService` e passa i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura di modulo che fa parte di un&#39;applicazione Forms, assicurarsi di specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `BLOB` oggetto contenente dati da unire con il modulo. Se non si desidera unire i dati con il modulo, è necessario trasmettere un `BLOB` oggetto basato su un&#39;origine dati XML vuota. Non è possibile trasmettere un `BLOB` oggetto null; in caso contrario, viene generata un&#39;eccezione.
-   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime.
-   * A `ReaderExtensionSpec` oggetto che memorizza le opzioni di runtime dei diritti di utilizzo.
-   * A `URLSpec` oggetto contenente valori URI richiesti dal servizio Forms.
+   * Oggetto `BLOB` contenente dati da unire al modulo. Se non si desidera unire i dati con il modulo, è necessario passare un oggetto `BLOB` basato su un&#39;origine dati XML vuota. Impossibile passare un oggetto `BLOB` null. In caso contrario, viene generata un&#39;eccezione.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime.
+   * Oggetto `ReaderExtensionSpec` che memorizza le opzioni di runtime dei diritti di utilizzo.
+   * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
 
-   Il `renderPDFFormWithUsageRights` il metodo restituisce un `FormsResult` oggetto contenente un flusso di dati modulo che deve essere scritto nel browser web client.
+   Il metodo `renderPDFFormWithUsageRights` restituisce un oggetto `FormsResult` che contiene un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `BLOB` oggetto che contiene i dati del modulo richiamando `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-   * Ottieni il tipo di contenuto del `BLOB` oggetto richiamando il relativo `getContentType` metodo.
-   * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `BLOB` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.
-   * Creare una matrice di byte e popolarla richiamando il `BLOB` dell&#39;oggetto `getBinaryData` metodo. Questa attività assegna il contenuto del `FormsResult` alla matrice di byte.
-   * Richiama `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.
+   * Creare un oggetto `BLOB` contenente dati del modulo richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `BLOB` richiamando il relativo metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamando il relativo metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il metodo `getOutputStream` dell&#39;oggetto `javax.servlet.http.HttpServletResponse`.
+   * Creare una matrice di byte e popolarla richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` alla matrice di byte.
+   * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.http.HttpServletResponse` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
 **Consulta anche**
 

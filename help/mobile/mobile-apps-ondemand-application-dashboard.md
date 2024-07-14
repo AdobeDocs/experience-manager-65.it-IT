@@ -38,7 +38,7 @@ Infine, gli amministratori pubblicano in modo strategico il contenuto aggiornato
 
 ## Sezione Gestione app {#the-manage-app-tile}
 
-Il **Gestisci app** Nel riquadro vengono visualizzate le informazioni disponibili sull&#39;applicazione:
+Il riquadro **Gestione app** visualizza le informazioni disponibili sull&#39;applicazione:
 
 * Titolo
 * Descrizione
@@ -50,7 +50,7 @@ Il **Gestisci app** Nel riquadro vengono visualizzate le informazioni disponibil
 
 ## Sezione Gestisci connessione {#the-manage-connection-tile}
 
-Il **Gestisci connessione** in questa sezione vengono visualizzate le informazioni sulla connessione ad AEM Mobile On-demand Services:
+Nel riquadro **Gestisci connessione** vengono visualizzate le informazioni sulla connessione AEM Mobile On-demand Services:
 
 * Nome configurazione cloud
 * Nome e ID progetto
@@ -60,7 +60,7 @@ Il **Gestisci connessione** in questa sezione vengono visualizzate le informazio
 >
 >Fai clic sull’ingranaggio in alto a destra per impostare una configurazione di Mobile On-Demand Cloud.
 >
->Consulta [Configurazione di Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) per i dettagli.
+>Per ulteriori informazioni, vedere [Configurazione di Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md).
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -76,16 +76,16 @@ Ogni tessera può essere espansa per fornire una vista elenco più dettagliata f
 
 ### Sezione Gestisci banner {#the-manage-banners-tile}
 
-Il **Gestisci banner** sezione consente di gestire il contenuto di un banner. Per un banner vengono visualizzate le seguenti informazioni:
+Il riquadro **Gestione banner** consente di gestire il contenuto di un banner. Per un banner vengono visualizzate le seguenti informazioni:
 
 * immagine
 * **TITOLO**: nome del banner
-* **MODIFICATO**: ultima modifica nell’AEM
-* **CARICATO**: ultimo caricamento dall’AEM
-* **PUBBLICATO**: ultima richiesta pubblicata del AEM
-* **SORGENTE**: origine (AEM locale o remota da Mobile On Demand)
+* **MODIFICATO**: modificato per ultimo in AEM
+* **CARICATO**: ultimo caricamento da AEM
+* **PUBBLICATO**: ultima richiesta pubblicata da AEM
+* **SOURCE**: origine (AEM locale o remota da Mobile On-Demand)
 
-L&#39;immagine seguente mostra **Gestisci banner** riquadro nel dashboard applicazioni di AEM Mobile:
+L&#39;immagine seguente mostra il riquadro **Gestione banner** nel dashboard applicazioni AEM Mobile:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -95,16 +95,16 @@ L&#39;immagine seguente mostra **Gestisci banner** riquadro nel dashboard applic
 
 ### Sezione Gestisci articoli {#the-manage-articles-tile}
 
-Il **Gestisci articoli** sezione consente di gestire il contenuto di un articolo. Per un articolo vengono visualizzate le seguenti informazioni:
+Il riquadro **Gestisci articoli** consente di gestire il contenuto di un articolo. Per un articolo vengono visualizzate le seguenti informazioni:
 
 * immagine
-* **TITOLO**: nome dell’articolo
-* **MODIFICATO**: ultima modifica nell’AEM
-* **CARICATO**: ultimo caricamento dall’AEM
-* **PUBBLICATO**: ultima richiesta pubblicata del AEM
-* **SORGENTE**: sorgente (AEM locale o remota da Mobile On-Demand)
+* **TITOLO**: nome dell&#39;articolo
+* **MODIFICATO**: modificato per ultimo in AEM
+* **CARICATO**: ultimo caricamento da AEM
+* **PUBBLICATO**: ultima richiesta pubblicata da AEM
+* **SOURCE**: origine (AEM locale o remota da Mobile On-Demand)
 
-L&#39;immagine seguente mostra **Gestisci articoli** riquadro nel dashboard applicazioni di AEM Mobile:
+L&#39;immagine seguente mostra il riquadro **Gestisci articoli** nel dashboard applicazioni AEM Mobile:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -114,16 +114,16 @@ L&#39;immagine seguente mostra **Gestisci articoli** riquadro nel dashboard appl
 
 ### Sezione Gestisci raccolte {#the-manage-collections-tile}
 
-Il **Gestisci raccolte** sezione consente di gestire il contenuto di una raccolta. Per una raccolta vengono visualizzate le seguenti informazioni:
+Il riquadro **Gestisci raccolte** consente di gestire il contenuto di una raccolta. Per una raccolta vengono visualizzate le seguenti informazioni:
 
 * immagine
-* **TITOLO**: nome della raccolta
-* **MODIFICATO**: ultima modifica nell’AEM
-* **CARICATO**: ultimo caricamento dall’AEM
-* **PUBBLICATO**: ultima richiesta pubblicata del AEM
-* **SORGENTE**: sorgente (AEM locale o remota da Mobile On-Demand)
+* **TITLE**: nome della raccolta
+* **MODIFICATO**: modificato per ultimo in AEM
+* **CARICATO**: ultimo caricamento da AEM
+* **PUBBLICATO**: ultima richiesta pubblicata da AEM
+* **SOURCE**: origine (AEM locale o remota da Mobile On-Demand)
 
-L&#39;immagine seguente mostra **Gestisci raccolte** riquadro nel dashboard applicazioni di AEM Mobile:
+L&#39;immagine seguente mostra il riquadro **Gestisci raccolte** nel dashboard applicazioni di AEM Mobile:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 

@@ -17,18 +17,18 @@ ht-degree: 0%
 
 Lightbox è un tipo speciale di raccolta che fornisce un facile accesso alle risorse. Puoi accedere rapidamente a Lightbox per aggiungere o eliminare risorse. Funge da galleria di immagini personale.
 
-Se sei un [!DNL Adobe Experience Manager Assets] utente, Lightbox viene creato automaticamente al primo accesso all&#39;applicazione. È esclusivo per il tuo accesso. Gli altri utenti non possono accedere alla Lightbox.
+Se sei un utente di [!DNL Adobe Experience Manager Assets], Lightbox viene creato automaticamente al primo accesso all&#39;applicazione. È esclusivo per il tuo accesso. Gli altri utenti non possono accedere alla Lightbox.
 
 ## Aggiungere risorse a lightbox {#adding-assets-to-lightbox}
 
-1. Dalla sezione [!DNL Assets] nell&#39;interfaccia utente, selezionare le risorse da aggiungere a Lightbox.
-1. Trascina le risorse in **[!UICONTROL Rilascia in Lightbox]** zona. Rilascia quando la zona di rilascio diventa attiva e la relativa etichetta cambia in **[!UICONTROL Rilascia per aggiungere]**.
+1. Dall&#39;interfaccia utente [!DNL Assets], selezionare le risorse da aggiungere a Lightbox.
+1. Trascina le risorse nella zona **[!UICONTROL Rilascia in Lightbox]**. Rilascia quando la zona di rilascio diventa attiva e la relativa etichetta diventa **[!UICONTROL Rilascia in Aggiungi]**.
 
-   ![add_to_lightbox](assets/add_to_lightbox.png)
+   ![aggiungi_a_lightbox](assets/add_to_lightbox.png)
 
-1. Nella finestra di dialogo, fai clic su **[!UICONTROL Aggiungi]**, quindi chiuderlo per completare il processo. Le risorse selezionate vengono aggiunte a Lightbox.
+1. Nella finestra di dialogo, fai clic su **[!UICONTROL Aggiungi]**, quindi chiudilo per completare il processo. Le risorse selezionate vengono aggiunte a Lightbox.
 1. Per visualizzare Lightbox, passa alla console Raccolte.
-1. Clic **[!UICONTROL Lightbox]** per visualizzare le risorse al suo interno.
+1. Fai clic su **[!UICONTROL Lightbox]** per visualizzare le risorse al suo interno.
 
    >[!NOTE]
    >
@@ -38,5 +38,5 @@ Se sei un [!DNL Adobe Experience Manager Assets] utente, Lightbox viene creato a
 
 1. Passa alla console Raccolte e fai clic su Lightbox per visualizzarne le risorse.
 1. Seleziona le risorse da rimuovere.
-1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Rimuovi]**.
-1. Nella finestra di dialogo, fai clic su **[!UICONTROL Rimuovi]** per confermare l’azione elimina. Le risorse vengono eliminate da Lightbox.
+1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Rimuovi]**.
+1. Nella finestra di dialogo, fai clic su **[!UICONTROL Rimuovi]** per confermare l&#39;azione di eliminazione. Le risorse vengono eliminate da Lightbox.

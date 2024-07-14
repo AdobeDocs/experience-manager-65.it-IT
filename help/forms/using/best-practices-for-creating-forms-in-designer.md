@@ -68,7 +68,7 @@ Punti di controllo correlati
 
 ## Configura le proprietà del modulo per generare le informazioni di accessibilità {#configure-form-properties}
 
-Per essere accessibile, un modulo deve essere [percepibile](https://www.w3.org/TR/WCAG20/#perceivable) mediante tecnologia assistiva. La maggior parte degli assistenti vocali, ad esempio, non considera il layout visivo del modulo, ma la struttura sottostante.
+Affinché un modulo sia accessibile, deve essere [percepibile](https://www.w3.org/TR/WCAG20/#perceivable) dalla tecnologia per l&#39;accessibilità. La maggior parte degli assistenti vocali, ad esempio, non considera il layout visivo del modulo, ma la struttura sottostante.
 
 Per implementare questa struttura sottostante utilizzando LiveCycle Designer, è necessario creare un modulo PDF con informazioni di accessibilità (a volte denominate tag) incluse, in modo che l’assistente vocale o un’altra tecnologia possa leggere il testo e i componenti del modulo. In un modulo con informazioni sull&#39;accessibilità, ogni elemento contiene informazioni sulla propria struttura, oltre a informazioni su come è correlato o dipendente da altri elementi. Solo nei file PDF con le informazioni di accessibilità incluse è possibile identificare e descrivere con precisione il contenuto di un documento.
 
@@ -122,9 +122,9 @@ Se scegli di utilizzare le immagini, fornisci descrizioni testuali per tutti gli
 
 Le descrizioni di testo vengono fornite utilizzando le proprietà Descrizione comando o Testo Reader schermo personalizzato nella tavolozza Accessibilità oppure tramite campi di testo, didascalie e nomi di oggetto, come specificato nell&#39;opzione Nome della scheda Associazione. La Figura 2 mostra ad esempio un esempio di immagine contenente il testo &quot;Ottieni Adobe Reader&quot;. Poiché un assistente vocale non è in grado di leggere il testo che fa parte di un’immagine, è necessario includere un testo alternativo nel campo Testo Reader schermo personalizzato della tavolozza Accessibilità per questo oggetto. Nella maggior parte dei casi, il testo alternativo deve essere uguale al testo visibile nell’immagine (vedi Figura 2).
 
-![Impostazione di testo alternativo per un&#39;immagine mediante la tavolozza Accessibilità](/help/forms/using/assets/image-2.png)
+![Specifica di testo alternativo per un&#39;immagine mediante la tavolozza Accesso facilitato](/help/forms/using/assets/image-2.png)
 
-Figura 2: **Impostazione di testo alternativo per un&#39;immagine mediante la tavolozza Accessibilità**
+Figura 2: **Specifica di testo alternativo per un&#39;immagine tramite la tavolozza Accessibilità**
 
 Quando specificate il testo alternativo, tenete presente quanto segue:
 * Se l&#39;oggetto immagine o l&#39;immagine digitalizzata include informazioni importanti per il modulo, creare testo per l&#39;immagine nel riquadro Accessibilità che descrive l&#39;oggetto e il relativo scopo. Il testo del logo di una società, ad esempio, può essere costituito dalle parole &quot;logo della società&quot; e dal nome della società.
@@ -133,7 +133,7 @@ Quando specificate il testo alternativo, tenete presente quanto segue:
 * Non creare descrizioni testuali per le immagini statiche utilizzate solo a scopo di decorazione.
 * Non utilizzare dati digitalizzati come informazioni di background. Ciò può verificarsi quando una finestra di progettazione analizza un modulo di stampa e utilizza Adobe LiveCycle Designer per aggiungere nuovi campi al modulo. Gli assistenti vocali non sono in grado di rilevare i dati digitalizzati in questo stato.
 
-Quando si includono contenuti grafici puramente decorativi nei moduli, è importante assicurarsi che gli assistenti vocali non annuncino la presenza dell’immagine. Per la maggior parte degli assistenti vocali, questo può essere ottenuto impostando la proprietà Testo Reader su Nessuno nella tavolozza Accessibilità. In caso contrario, alcuni assistenti vocali potrebbero annunciare la presenza di un&#39;immagine, senza indicare ciò che l&#39;immagine rappresenta. Per le immagini dinamiche, come gli oggetti campo immagine, assicurati che le alternative di testo vengano aggiornate correttamente quando l’immagine viene modificata. Non creare descrizioni testuali per gli oggetti campo immagine utilizzati solo a scopo di decorazione. È possibile utilizzare il linguaggio di script FormCalc per assegnare descrizioni di testo a un oggetto campo immagine in modo dinamico. FormCalc è il linguaggio di script standard di Adobe LiveCycle Designer. Si consideri ad esempio un modulo con un campo immagine denominato ImageField1 e testo associato nel nodo imagetext dei dati di runtime. Puoi utilizzare gli script per trasmettere questo testo in un evento appropriato, ad esempio `form:ready`)come segue:
+Quando si includono contenuti grafici puramente decorativi nei moduli, è importante assicurarsi che gli assistenti vocali non annuncino la presenza dell’immagine. Per la maggior parte degli assistenti vocali, questo può essere ottenuto impostando la proprietà Testo Reader su Nessuno nella tavolozza Accessibilità. In caso contrario, alcuni assistenti vocali potrebbero annunciare la presenza di un&#39;immagine, senza indicare ciò che l&#39;immagine rappresenta. Per le immagini dinamiche, come gli oggetti campo immagine, assicurati che le alternative di testo vengano aggiornate correttamente quando l’immagine viene modificata. Non creare descrizioni testuali per gli oggetti campo immagine utilizzati solo a scopo di decorazione. È possibile utilizzare il linguaggio di script FormCalc per assegnare descrizioni di testo a un oggetto campo immagine in modo dinamico. FormCalc è il linguaggio di script standard di Adobe LiveCycle Designer. Si consideri ad esempio un modulo con un campo immagine denominato ImageField1 e testo associato nel nodo imagetext dei dati di runtime. È possibile utilizzare gli script per passare questo testo in un evento appropriato, ad esempio `form:ready`, nel modo seguente:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -158,7 +158,7 @@ Per utilizzare la tavolozza Accessibilità, effettuare le seguenti operazioni:
 1. Visualizzare la tavolozza Accessibilità scegliendo Finestra > Accessibilità o premendo Maiusc+F6.
 1. Selezionare un oggetto nel modulo. La palette mostra le proprietà di accessibilità dell’oggetto.
 
-![Tavolozza Accessibilità](/help/forms/using/assets/image-3.png)
+![Tavolozza Accesso facilitato](/help/forms/using/assets/image-3.png)
 
 Figura 3: **Tavolozza Accessibilità**
 
@@ -170,11 +170,11 @@ Quando il modulo viene salvato come PDF, Designer di LiveCycle cerca nel modulo 
 
 Sono disponibili le seguenti opzioni:
 
-* **Testo personalizzato**, che è possibile impostare nel campo Testo Reader schermo personalizzato della tavolozza Accessibilità. Questa opzione consente di specificare il testo che si desidera utilizzare con la tecnologia per l’accessibilità, ad esempio le utilità per la lettura dello schermo. L’impostazione Didascalia è la soluzione ottimale per la maggior parte delle situazioni: la creazione di Testo per Reader con schermo personalizzato deve essere considerata un’opzione solo quando non è possibile utilizzare la Didascalia o una descrizione comando.
-* **Descrizione comando**, impostata nel campo Descrizione comando della tavolozza Accessibilità. Per la maggior parte degli oggetti, le descrizioni comandi vengono visualizzate in fase di esecuzione quando l&#39;utente passa il puntatore sull&#39;oggetto. Le descrizioni comandi vengono visualizzate per alcuni oggetti di sola lettura, ad esempio l&#39;oggetto codice a barre di un modulo cartaceo, solo quando è in uso un assistente vocale.
-* **Didascalia**, che causerà l’utilizzo da parte di Designer di LiveCycle dell’etichetta (visiva) associata al campo modulo come testo per utilità di lettura dello schermo.
-* **Nome**, impostata nel campo Nome della scheda Associazione. Questo nome non può contenere spazi.
-* **Nessuno**, che impedirà all&#39;oggetto di avere un nome. Questa opzione non è mai consigliata per i controlli modulo.
+* **Testo personalizzato**, impostato nel campo Testo Reader schermo personalizzato della tavolozza Accessibilità. Questa opzione consente di specificare il testo che si desidera utilizzare con la tecnologia per l’accessibilità, ad esempio le utilità per la lettura dello schermo. L’impostazione Didascalia è la soluzione ottimale per la maggior parte delle situazioni: la creazione di Testo per Reader con schermo personalizzato deve essere considerata un’opzione solo quando non è possibile utilizzare la Didascalia o una descrizione comando.
+* **Descrizione**, impostata nel campo Descrizione comando della tavolozza Accessibilità. Per la maggior parte degli oggetti, le descrizioni comandi vengono visualizzate in fase di esecuzione quando l&#39;utente passa il puntatore sull&#39;oggetto. Le descrizioni comandi vengono visualizzate per alcuni oggetti di sola lettura, ad esempio l&#39;oggetto codice a barre di un modulo cartaceo, solo quando è in uso un assistente vocale.
+* **Didascalia**, che farà in modo che Designer di LiveCycle utilizzi l&#39;etichetta (visiva) associata al campo modulo come testo per la lettura dello schermo.
+* **Nome**, impostato nel campo Nome della scheda Associazione. Questo nome non può contenere spazi.
+* **Nessuno**. L&#39;oggetto non avrà un nome. Questa opzione non è mai consigliata per i controlli modulo.
 
 Quando si utilizza la tavolozza Accessibilità per l&#39;etichettatura del controllo modulo, tenere presente quanto segue:
 
@@ -189,15 +189,16 @@ Quando si utilizza la tavolozza Accessibilità per l&#39;etichettatura del contr
 
 La Figura 4 mostra un esempio di campo di testo con una didascalia visiva che potrebbe non essere chiara per alcuni utenti di utilità per la lettura dello schermo. In questo esempio, l&#39;opzione Testo Reader schermo personalizzato è impostata su &quot;Numero di pagine&quot; e l&#39;opzione Precedenza Reader schermo è impostata su Testo personalizzato. Di conseguenza, il testo della didascalia effettiva (visiva) (&quot;# pagine&quot;) non verrà utilizzato dall’assistente vocale. In alternativa, è possibile specificare una descrizione comandi.
 
-![Specifica del testo del Reader dello schermo personalizzato quando l&#39;etichetta visibile è inadeguata](/help/forms/using/assets/image-4.png)
+![Specifica del testo di Reader per lo schermo personalizzato quando l&#39;etichetta visibile non è adeguata](/help/forms/using/assets/image-4.png)
 
-Figura 4: **Specifica del testo del Reader dello schermo personalizzato quando l&#39;etichetta visibile è inadeguata**
+Figura 4: **Specifica del testo di Reader dello schermo personalizzato quando l&#39;etichetta visibile è inadeguata**
 
 ### Pulsanti di scelta Etichettatura
 
 Quando un utente con problemi di vista preme un tasto di scelta, l’assistente vocale deve leggere due cose:
 * Indicazione della funzione del gruppo di pulsanti di scelta
-* Etichetta significativa per ogni pulsante di opzione Per rendere accessibili i pulsanti di scelta utilizzando le didascalie dei pulsanti:
+* Etichetta significativa per ogni pulsante di opzione
+Per rendere accessibili i pulsanti di scelta utilizzando le didascalie dei pulsanti:
    1. Nella tavolozza Gerarchia, selezionare il gruppo di esclusione.
    1. Fare clic sulla tavolozza Accesso facilitato e nella casella Testo Reader schermo personalizzato digitare il testo da leggere per il gruppo. Ad esempio, per un gruppo di esclusione che indica le opzioni di pagamento per varie carte di credito, digita Selezionare un metodo di pagamento.
    1. Se le didascalie di ciascun pulsante di opzione forniscono testo significativo se pronunciato da un assistente vocale, nella palette Oggetto selezionare la scheda Associazione e deselezionare Specifica valore elemento.
@@ -226,9 +227,9 @@ Quando si crea un oggetto, LiveCycle Designer posiziona automaticamente la didas
 
 L&#39;esempio riportato nella Figura 5 mostra una casella di testo con una didascalia sopra di essa. L&#39;opzione Posizione nella tavolozza Layout è impostata su Superiore. La posizione predefinita della didascalia si trova a sinistra della casella di testo.
 
-![Modifica del posizionamento dei sottotitoli mediante la palette Layout](/help/forms/using/assets/image-5.png)
+![Modifica del posizionamento dei sottotitoli mediante la tavolozza Layout](/help/forms/using/assets/image-5.png)
 
-Figura 5: **Modifica del posizionamento dei sottotitoli mediante la palette Layout**
+Figura 5: **Modifica del posizionamento dei sottotitoli mediante la tavolozza Layout**
 
 Nella tabella seguente viene fornita una panoramica delle regole di posizionamento delle etichette per i controlli di uso comune.
 
@@ -328,7 +329,7 @@ Tutti gli oggetti verranno visualizzati con un numero nell&#39;angolo superiore 
 
 ![Visualizzazione dell&#39;ordine di lettura predefinito per un modulo d&#39;ordine tipico](/help/forms/using/assets/image-7.png)
 
-Figura 7: **Visualizzazione dell&#39;ordine di lettura predefinito per un modulo d&#39;ordine tipico**
+Figura 7: **Visualizzazione dell&#39;ordine di lettura predefinito per un modulo ordine tipico**
 
 Ogni numero di ordine di tabulazione viene visualizzato in una forma colorata. Le forme hanno il seguente significato:
 * I cerchi grigi (#1 e #4) vengono utilizzati per gli oggetti nell&#39;area del contenuto.
@@ -339,9 +340,9 @@ Ogni numero di ordine di tabulazione viene visualizzato in una forma colorata. L
 
 In un modulo complesso, può essere difficile vedere come la tabulazione scorre da un oggetto all’altro. È possibile utilizzare gli strumenti visivi per visualizzare il flusso di tabulazione nel modulo. Con gli strumenti visivi attivati, quando si posiziona il puntatore sull&#39;oggetto, le frecce blu mostrano il flusso di tabulazione per i due oggetti precedenti e seguenti nell&#39;ordine di tabulazione (vedere Figura 8).
 
-![Gli strumenti visivi evidenziano l’ordine di tabulazione](/help/forms/using/assets/image-8.png)
+![Gli strumenti visivi evidenziano l&#39;ordine di tabulazione](/help/forms/using/assets/image-8.png)
 
-Figura 8: **Gli strumenti visivi evidenziano l’ordine di tabulazione**
+Figura 8: **Gli strumenti visivi evidenziano l&#39;ordine di tabulazione**
 
 Per attivare gli strumenti visivi, utilizzare i metodi seguenti:
 * Scegliete Strumenti > Opzioni > Ordine schede e, nel pannello Ordine schede, selezionate Visualizza altri strumenti visivi per ordine schede.
@@ -364,9 +365,9 @@ Figura 9: **L&#39;ordine di tabulazione predefinito è da sinistra a destra**
 
 Potete modificare le coordinate di un oggetto in modo più preciso utilizzando la tavolozza Layout (mostrata nella Figura 10). Questa tavolozza consente di specificare le coordinate X e Y, nonché la larghezza e l’altezza dell’oggetto.
 
-![Utilizzo delle coordinate per posizionare con precisione un oggetto nella tavolozza Layout](/help/forms/using/assets/image-10.png)
+![Utilizzo delle coordinate per posizionare con precisione un oggetto con la tavolozza Layout](/help/forms/using/assets/image-10.png)
 
-Figura 10: **Utilizzo delle coordinate per posizionare con precisione un oggetto nella tavolozza Layout**
+Figura 10: **Utilizzo di coordinate per posizionare con precisione un oggetto con la tavolozza Layout**
 
 >[!NOTE]
 > Quando la didascalia e il controllo non vengono uniti, la posizione della didascalia di un controllo modulo è indipendente dall&#39;ordine in cui gli assistenti vocali leggono l&#39;oggetto e i relativi elementi. Per ulteriori informazioni sui sottotitoli, vedere la sezione 2.5 Fornire etichette appropriate per i controlli modulo in questa guida.
@@ -469,7 +470,7 @@ La Figura 13 mostra ad esempio un campo modulo con una didascalia rossa (specifi
 
 ![Utilizzo del solo colore per trasmettere le informazioni](/help/forms/using/assets/image-13.png)
 
-Figura 13: **Utilizzo del solo colore per trasmettere le informazioni**
+Figura 13: **Utilizzo del solo colore per trasmettere informazioni**
 
 Per risolvere questo problema, indicare anche lo stato richiesto del modulo nel testo alternativo del controllo modulo (come descritto nella sezione 2.5 Fornire etichette appropriate per i controlli modulo). Ad esempio, puoi impostare il testo dell’assistente vocale su &quot;Codice postale (obbligatorio)&quot;. Per gli utenti che hanno difficoltà a visualizzare il colore in determinate combinazioni, si consiglia di impostare il tipo di campo di testo su Inserito dall&#39;utente - Obbligatorio nella palette Oggetto, oltre al testo alternativo che indica che il campo è obbligatorio. In alternativa, è possibile utilizzare indicazioni diverse dal colore, ad esempio testo visivo, stili di testo e stili di bordo. Tuttavia, gli utenti di utilità di lettura dello schermo dovranno comunque trasmettere le informazioni richieste utilizzando la palette Accessibilità.
 
@@ -482,9 +483,9 @@ Inoltre, quando fornisci descrizioni o istruzioni all’utente del modulo, tieni
 
 Molti utenti con problemi di vista si affidano a un contrasto elevato tra testo e sfondo per leggere i moduli. Quando il contrasto tra i colori di sfondo e di primo piano non è sufficiente, un modulo può diventare difficile, se non impossibile, da leggere per alcuni utenti. La figura 14 mostra un esempio di modulo con contrasto insufficiente.
 
-![Maschera con contrasto di colore insufficiente](/help/forms/using/assets/image-14.png)
+![Modulo con contrasto colore insufficiente](/help/forms/using/assets/image-14.png)
 
-Figura 14: **Maschera con contrasto di colore insufficiente**
+Figura 14: **Modulo con contrasto cromatico insufficiente**
 
 Si consiglia vivamente di utilizzare il carattere e i colori di sfondo predefiniti: il nero su sfondo bianco. Se è necessario modificare questi colori predefiniti, assicurarsi di scegliere una combinazione appropriata di colori ad alto contrasto; utilizzare un colore di primo piano scuro su uno sfondo chiaro o viceversa. Per essere certi, usate uno strumento (come WAT-C Color Contrast Analyzer) per verificare che il contrasto sia sufficiente.
 
@@ -504,7 +505,7 @@ Recommendations per l&#39;utilizzo dei colori:
    * (i) La codifica a colori non deve essere utilizzata come unico mezzo per trasmettere informazioni, indicare un’azione, sollecitare una risposta o distinguere un elemento visivo.
 * WCAG 1.0
    * 2.1 Accertatevi che tutte le informazioni trasmesse con il colore siano disponibili anche senza colore, ad esempio dal contesto o dal markup.
-   * 2.2 Assicurati che le combinazioni di colori di primo piano e di sfondo forniscano un contrasto sufficiente quando vengono visualizzate da persone con deficit di colore o su uno schermo in bianco e nero. [Priorità 2 per le immagini, priorità 3 per il testo] (P2).
+   * 2.2 Assicurati che le combinazioni di colori di primo piano e di sfondo forniscano un contrasto sufficiente quando vengono visualizzate da persone con deficit di colore o su uno schermo in bianco e nero. [Priorità 2 per le immagini, Priorità 3 per il testo] (P2).
 * WCAG 2.0
    * 1.4.1 Uso del colore: il colore non è utilizzato come unico mezzo visivo per trasmettere informazioni, indicare un&#39;azione, richiedere una risposta o distinguere un elemento visivo. (Livello A)
    * 1.4.3 Contrasto (minimo): la presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 4,5:1, con le seguenti eccezioni: (livello AA)
@@ -516,11 +517,16 @@ Recommendations per l&#39;utilizzo dei colori:
 Le tabelle sono un modo efficace per organizzare e presentare il contenuto in moduli accessibili. Se utilizzate in modo appropriato, le righe e le colonne di una tabella forniscono una struttura prevedibile e coerente per il contenuto del modulo. Ad esempio, quando un utente di utilità di lettura dello schermo passa a una cella della riga del corpo, l’utilità di lettura dello schermo specifica la posizione della cella e quindi legge il contenuto della cella. L&#39;assistente vocale specifica la posizione della cella utilizzando una combinazione di intestazioni di riga e di colonna o numeri di riga e di colonna. Poiché gli assistenti vocali forniscono informazioni che orientano l’utente alla posizione del contenuto nella tabella, il suo layout influisce direttamente sull’accessibilità della tabella.
 
 Durante la creazione delle tabelle è possibile specificare i seguenti ruoli per gli elementi di tabella. Questi ruoli consentono agli assistenti vocali di navigare nella struttura della tabella utilizzando scelte rapide speciali e trasmettono all’utente la relazione tra le celle della tabella e le celle di intestazione corrispondenti.
-* Tabella Assegna il ruolo di una tabella alla sottomaschera selezionata. Quando l’utente passa a questa sottomaschera, la maggior parte degli assistenti vocali la identifica come tabella e indica il numero di righe e colonne.
-* Riga di intestazione Assegna il ruolo di una riga di intestazione alla sottomaschera o alla riga di tabella selezionata. Quando si parla del contenuto di una cella della riga del corpo, la maggior parte degli assistenti vocali identifica innanzitutto il contenuto della cella corrispondente nella riga dell’intestazione.
-* Riga corpo Assegna il ruolo di una riga corpo alla sottomaschera o alla riga tabella selezionata. Se una cella contiene una sottomaschera, gli assistenti vocali in genere parlano il contenuto della cella corrispondente nella riga di intestazione, seguito dai campi nella sottomaschera.
-* Riga piè di pagina Assegna il ruolo di una riga piè di pagina alla sottomaschera o alla riga di tabella selezionata.
-* (Nessuno) Specifica una riga che trasmette informazioni sulla tabella o sul relativo contenuto. La riga non è considerata parte della tabella; tuttavia, l’assistente vocale ne legge il contenuto.
+* Tabella
+Assegna il ruolo di una tabella alla sottomaschera selezionata. Quando l’utente passa a questa sottomaschera, la maggior parte degli assistenti vocali la identifica come tabella e indica il numero di righe e colonne.
+* Riga intestazione
+Assegna il ruolo di una riga di intestazione alla sottomaschera o alla riga di tabella selezionata. Quando si parla del contenuto di una cella della riga del corpo, la maggior parte degli assistenti vocali identifica innanzitutto il contenuto della cella corrispondente nella riga dell’intestazione.
+* Riga corpo
+Assegna il ruolo di una riga corpo alla sottomaschera o alla riga tabella selezionata. Se una cella contiene una sottomaschera, gli assistenti vocali in genere parlano il contenuto della cella corrispondente nella riga di intestazione, seguito dai campi nella sottomaschera.
+* Riga piè di pagina
+Assegna il ruolo di una riga di piè di pagina alla sottomaschera o alla riga di tabella selezionata.
+* (Nessuno)
+Specifica una riga che trasmette informazioni sulla tabella o sul relativo contenuto. La riga non è considerata parte della tabella; tuttavia, l’assistente vocale ne legge il contenuto.
 
 Se utilizzate correttamente, le tabelle sono un modo efficace per organizzare e presentare le informazioni tabulari. Evita tabelle troppo complesse, ad esempio quelle con tabelle e sezioni nidificate.
 
@@ -550,7 +556,8 @@ Quando si utilizzano oggetti sottomaschera invece di oggetti tabella per creare 
 Le funzioni supportate dall&#39;utilità di lettura dello schermo determinano le informazioni lette per una tabella complessa. Si consideri ad esempio una tabella che include una riga di intestazione e una sezione con una riga di intestazione. Quando l’utente passa a una cella della riga del corpo nella sezione della tabella, gli assistenti vocali in genere leggono il seguente contenuto, nell’ordine in cui:
 * Contenuto della cella appropriata nella riga di intestazione per la tabella
 * Contenuto della cella appropriata nella riga di intestazione della sezione
-* Contenuto della cella selezionata Alcuni assistenti vocali, tuttavia, potrebbero non leggere il contenuto da entrambe le righe di intestazione.
+* Contenuto della cella selezionata
+Alcuni assistenti vocali, tuttavia, potrebbero non leggere il contenuto da entrambe le righe di intestazione.
 
 Creare nomi o titoli visibili significativi per le tabelle. È possibile creare un nome di tabella come testo statico in Adobe LiveCycle Designer e posizionarlo davanti alla tabella. È possibile raggruppare una tabella e il relativo nome in una sottomaschera. Le sottomaschere sono particolarmente utili quando si desidera combinare oggetti associati in un layout.
 
@@ -588,8 +595,8 @@ I campi avanzati possono essere un modo efficace per semplificare la compilazion
 
 È possibile utilizzare la tavolozza Accesso facilitato per assegnare ruoli agli oggetti in base allo scopo per cui l&#39;oggetto viene utilizzato. Questi ruoli possono essere applicati per creare titoli a livelli diversi.
 
-![Specifica di un ruolo di intestazione nella tavolozza Accessibilità](/help/forms/using/assets/image-15.png)
-Figura 15: **Specifica di un ruolo di intestazione nella tavolozza Accessibilità**
+![Specifica di un ruolo di intestazione nella tavolozza Accesso facilitato](/help/forms/using/assets/image-15.png)
+Figura 15: **Specificare un ruolo di intestazione nella tavolozza Accessibilità**
 
 Per creare un’intestazione nel modulo, effettua le seguenti operazioni:
 
@@ -605,9 +612,9 @@ La maggior parte degli assistenti vocali consente agli utenti di navigare rapida
    * Livello intestazione 3: Dati personali
    * Livello intestazione 3: Indirizzo
 
-![Struttura di un modulo tramite titoli](/help/forms/using/assets/image-16.png)
+![Strutturazione di un modulo tramite intestazioni](/help/forms/using/assets/image-16.png)
 
-Figura 16: **Struttura di un modulo tramite titoli**
+Figura 16: **Strutturazione di un modulo tramite intestazioni**
 
 Queste intestazioni sono solo elementi di testo statico a cui sono state assegnate una dimensione di carattere specifica e un ruolo di intestazione con il livello appropriato.
 
@@ -657,7 +664,7 @@ Durante la progettazione di script per l&#39;accessibilità, tenere presenti le 
 * Assicurarsi che le finestre popup vengano visualizzate solo come risultato delle azioni avviate dall&#39;utente. Analogamente, è opportuno evitare che lo stato attivo corrente del modulo (la visualizzazione corrente dell’utente) cambi o che il contenuto venga rivisualizzato, a meno che non sia stato avviato dall’utente. Ad esempio, se l’utente compila dei campi nella metà inferiore del modulo, non consentire lo stato attivo nell’angolo superiore sinistro del modulo, a meno che l’utente non scelga di passare a questa posizione.
 * Gli utenti con disabilità possono richiedere più tempo per fornire input nei campi. Non specificare risposte basate sul tempo per i campi di input.
 * Tieni presente che gli script lato client possono interferire con gli assistenti vocali e le tastiere se lo script cambia lo stato attivo dell’applicazione client. Ad esempio, gli eventi change e mouseEnter, se utilizzati con elenchi a discesa o caselle di riepilogo, possono causare azioni impreviste. Verifica che gli script lato client non introducano problemi per gli utenti di utilità di lettura dello schermo e per gli utenti solo tastiera.
-* Gli utenti delle tecnologie per l’accessibilità a volte avranno bisogno di più tempo per completare le attività. In tutti i casi in cui una routine temporizzata sta per scadere, visualizza un messaggio accessibile per consentire l’estensione. Le caselle di avviso create tramite JavaScript sono utilizzabili dalla tecnologia per l’accessibilità. È inoltre possibile distribuire una nuova finestra con un messaggio che avvisa l’utente di un timeout imminente.
+* Gli utenti delle tecnologie per l’accessibilità a volte avranno bisogno di più tempo per completare le attività. In tutti i casi in cui una routine temporizzata sta per scadere, visualizza un messaggio accessibile per consentire l’estensione. Le caselle di avviso create tramite JavaScript sono utilizzabili con la tecnologia per l&#39;accessibilità. È inoltre possibile distribuire una nuova finestra con un messaggio che avvisa l’utente di un timeout imminente.
 
 **Punti di controllo correlati**:
 * Sezione 508 §1194.22
@@ -668,7 +675,7 @@ Durante la progettazione di script per l&#39;accessibilità, tenere presenti le 
    * 6.2 Assicurati che gli equivalenti per il contenuto dinamico vengano aggiornati quando il contenuto dinamico cambia.
    * 6.3 Assicurarsi che le pagine siano utilizzabili quando script, applet o altri oggetti programmatici sono disattivati o non supportati. Se ciò non fosse possibile, fornisci informazioni equivalenti su una pagina alternativa accessibile.
    * 6.5 Assicurarsi che il contenuto dinamico sia accessibile o fornire una presentazione o una pagina alternativa (P2).
-   * 8.1 Rendere gli elementi programmatici come script e applet direttamente accessibili o compatibili con le tecnologie per l’accessibilità [Priorità 1 se la funzionalità è importante e non viene presentata altrove], altrimenti (P2).
+   * 8.1 Rendere gli elementi programmatici come script e applet direttamente accessibili o compatibili con le tecnologie per l&#39;accessibilità [Priorità 1 se la funzionalità è importante e non viene presentata altrove], altrimenti (P2).
    * 9.3 Per gli script, specificare gestori di eventi logici anziché gestori di eventi dipendenti dal dispositivo (P2).
    * 10.1 Fino a quando gli agenti utente non consentono agli utenti di disattivare le finestre generate, non far apparire finestre pop-up o altre finestre e non modificare la finestra corrente senza informare l&#39;utente.
 * WCAG 2.0
@@ -679,7 +686,7 @@ Durante la progettazione di script per l&#39;accessibilità, tenere presenti le 
 ## Assicurati che tutti i contenuti audio e video siano accessibili{#ensure-audio-video-accessible}
 
 Se i moduli includono contenuto audio o video, inclusi clip audio e video, è necessario assicurarsi che tale contenuto sia accessibile. In particolare, assicurarsi che i video clip incorporati nei moduli contengano didascalie (a volte denominate sottotitoli) per utenti non udenti e ipoudenti e descrizioni video per utenti non vedenti. Per i file audio non sincronizzati con il contenuto video, è sufficiente una trascrizione semplice.
-Per i supporti basati su Flash, consultare [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) per informazioni sulla creazione di sottotitoli.
+Per i file multimediali basati su Flash, consultare [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) per informazioni su come specificare i sottotitoli.
 
 **Punti di controllo correlati**:
 * Sezione 508 §1194.22

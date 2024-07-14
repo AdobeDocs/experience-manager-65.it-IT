@@ -78,7 +78,7 @@ L&#39;Adobe fornisce due versioni della Commerce integration framework:
    <td>
     <ul>
      <li>Nessun limite di volume</li>
-     <li>Memorizzazione in cache in Dispatcher o CDN</li>
+     <li>Memorizzazione in cache su Dispatcher o CDN</li>
     </ul> </td>
   </tr>
   <tr>
@@ -123,15 +123,15 @@ L’implementazione consente l’accesso in tempo reale alle informazioni sui pr
 
 >[!NOTE]
 >
->Per utilizzare il framework di integrazione con provider eCommerce esterni, devi innanzitutto installare i pacchetti richiesti. Per ulteriori informazioni, consulta [Distribuzione di eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Per utilizzare il framework di integrazione con provider eCommerce esterni, devi innanzitutto installare i pacchetti richiesti. Per ulteriori informazioni, vedere [Distribuzione di eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Per informazioni sull’estensione delle funzionalità di eCommerce, consulta [Sviluppo dell’eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
+>Per informazioni sull&#39;estensione delle funzionalità di eCommerce, vedere [Sviluppo di eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Caratteristiche principali {#main-features}
 
 L’eCommerce dell’AEM fornisce:
 
-* Un certo numero di **componenti AEM preconfigurati** per illustrare cosa si può ottenere da un progetto:
+* Alcuni **componenti AEM preconfigurati** per illustrare ciò che è possibile ottenere per il progetto:
 
    * Display del prodotto
    * Carrello
@@ -155,22 +155,22 @@ L’eCommerce dell’AEM fornisce:
 
   ![esempio di ricerca](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Utilizza la capacità dell’AEM di **presentare i contenuti su più canali**, che si tratti dell&#39;intera finestra del browser o del dispositivo mobile. In questo modo i contenuti vengono consegnati nel formato richiesto dai visitatori.
+* Utilizza la funzionalità AEM per **presentare i contenuti su più canali**, che si tratti della finestra del browser completa o del dispositivo mobile. In questo modo i contenuti vengono consegnati nel formato richiesto dai visitatori.
 
-  ![esempio di visualizzazione mobile](/help/sites-administering/assets/chlimage_1-132.png)
+  ![esempio visualizzazione mobile](/help/sites-administering/assets/chlimage_1-132.png)
 
-* La capacità di **sviluppare un’implementazione personalizzata dell’integrazione in base al [Quadro per l’eCommerce dell’AEM](#the-framework)**.
+* Possibilità di **sviluppare un&#39;implementazione di integrazione personalizzata basata sul [framework eCommerce dell&#39;AEM](#the-framework)**.
 
   Le due implementazioni attualmente disponibili sono entrambe basate sulla stessa API generale (il framework). L’implementazione di una nuova integrazione comporta solo l’implementazione delle funzioni necessarie per l’integrazione. I componenti front-end possono essere utilizzati da qualsiasi nuova implementazione in quanto utilizzano le interfacce (in modo che siano indipendenti dall’implementazione).
 
-* La possibilità di sviluppare **commercio basato sull’esperienza e basato sui dati e sull’attività dell’acquirente**. Questo consente di realizzare molti scenari:
+* Possibilità di sviluppare **attività e commercio basate sull&#39;esperienza in base ai dati e all&#39;attività dell&#39;acquirente**. Questo consente di realizzare molti scenari:
 
    * Un esempio potrebbe essere la riduzione delle spese di spedizione quando l&#39;ordine totale supera un importo specifico.
    * Un altro potrebbe consentirti di fornire offerte stagionali che utilizzano dati di profilo (ad esempio, posizione). Questi possono quindi essere evidenziati, anche in questo caso a seconda di altri fattori, se necessario.
 
   Nell’esempio seguente viene mostrato un teaser poiché il contenuto del carrello è inferiore a $ 75:
 
-  ![carrello con contesto cliente](/help/sites-administering/assets/chlimage_1-133.png)
+  ![carrello con contesto client](/help/sites-administering/assets/chlimage_1-133.png)
 
   Questo può essere modificato quando il contenuto del carrello supera i $ 75:
 
@@ -184,7 +184,7 @@ L’eCommerce dell’AEM fornisce:
 
 ## Il framework {#the-framework}
 
-Il [Concetti](/help/commerce/cif-classic/administering/concepts.md) la sezione descrive il quadro in modo più dettagliato, ma la sezione seguente fornisce una visione ad alto livello e ad alta velocità del quadro:
+La sezione [Concetti](/help/commerce/cif-classic/administering/concepts.md) tratta il framework in modo più dettagliato, ma le informazioni seguenti forniscono una visualizzazione ad alto livello e ad alta velocità del framework:
 
 ### Cosa? {#what}
 

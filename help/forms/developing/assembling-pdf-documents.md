@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Assemblaggio di documenti PDF {#assembling-pdf-documents}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 **Informazioni sul servizio Assembler**
 
@@ -29,4 +29,4 @@ A partire dal LiveCycle ES 8.0 e versioni successive, il supporto per i pacchett
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, vedere [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).

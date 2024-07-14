@@ -25,7 +25,7 @@ Questa sezione include informazioni dettagliate sui registri disponibili per aiu
 >
 >Per ulteriori informazioni sui registri, consulta:
 >
->* [Manutenzione del registro di controllo dell’AEM](/help/sites-administering/operations-audit-log.md)
+>* [Manutenzione del registro di controllo in AEM](/help/sites-administering/operations-audit-log.md)
 >* [Utilizzo dei record di controllo e dei file di registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX registra i registri dettagliati. Dopo aver decompresso e avviato Quickstart, i registri sono disponibili nelle seguenti posizioni:
@@ -38,7 +38,7 @@ CRX registra i registri dettagliati. Dopo aver decompresso e avviato Quickstart,
 
 Il livello di registro predefinito è INFO, ovvero i messaggi DEBUG non vengono registrati.
 
-Per attivare il livello di registro DEBUG, utilizzare l&#39;Explorer CRX per impostare
+Per attivare il livello di registro DEBUG, utilizzare Esplora risorse di CRX per impostare
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level

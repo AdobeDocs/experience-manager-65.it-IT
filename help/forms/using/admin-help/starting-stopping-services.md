@@ -31,7 +31,7 @@ I moduli di moduli AEM (ad esempio, Forms, Rights Management, Output) funzionano
 >
 > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
-1. Nella console di amministrazione, fai clic su **Servizi** > **Applicazioni e servizi** > **Gestione dei servizi**.
+1. Nella console di amministrazione, fare clic su **Servizi** > **Applicazioni e servizi** > **Gestione servizi**.
 1. Nella pagina Gestione servizio selezionare la casella di controllo accanto al servizio da arrestare o avviare e fare clic su Arresta o Avvia.
 
 ## Avviare o arrestare i servizi per il server applicazioni e il database {#start-or-stop-services-for-the-application-server-and-database}
@@ -41,7 +41,7 @@ Un&#39;implementazione completa dei moduli AEM include un server applicazioni e 
 * *`[application server]`* per i moduli AEM
 * *`[database]`* per i moduli AEM
 
-In Windows, questi servizi sono accessibili tramite **Strumenti di amministrazione** > **Pannello Servizi**. Ad esempio, se hai installato i moduli AEM su JBoss utilizzando il metodo chiavi in mano, sul sistema sono disponibili i seguenti servizi:
+In Windows, questi servizi sono accessibili tramite **Strumenti di amministrazione** > **Pannello servizi**. Ad esempio, se hai installato i moduli AEM su JBoss utilizzando il metodo chiavi in mano, sul sistema sono disponibili i seguenti servizi:
 
 * JBoss per Adobe Experience Manager forms
 * MySQL per Adobe Experience Manager forms

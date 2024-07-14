@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # Creazione di un nuovo componente campo dell’interfaccia utente Granite{#creating-a-new-granite-ui-field-component}
 
-L’interfaccia utente Granite offre una serie di componenti progettati per essere utilizzati nei moduli, denominati *campi* nel vocabolario dell’interfaccia utente Granite. I componenti del modulo Granite standard sono disponibili in:
+L&#39;interfaccia utente Granite fornisce una serie di componenti progettati per essere utilizzati nei moduli; questi sono denominati *campi* nel vocabolario dell&#39;interfaccia utente Granite. I componenti del modulo Granite standard sono disponibili in:
 
 `/libs/granite/ui/components/foundation/form/*`
 
 >[!NOTE]
 >
->Questi campi modulo dell’interfaccia utente Granite sono di particolare interesse in quanto vengono utilizzati per [finestre di dialogo dei componenti](/help/sites-developing/developing-components.md).
+>Questi campi modulo dell&#39;interfaccia utente Granite sono di particolare interesse in quanto vengono utilizzati per [finestre di dialogo dei componenti](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
->Per informazioni complete sui campi, vedi [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Per informazioni dettagliate sui campi, consulta la [documentazione dell&#39;interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Utilizza il framework Granite UI Foundation per sviluppare e/o estendere i componenti Granite. Ciò si basa su due elementi:
 
@@ -45,18 +45,18 @@ Utilizza il framework Granite UI Foundation per sviluppare e/o estendere i compo
 
    * una raccolta di clientlibs che fornisce un vocabolario (ovvero un’estensione del linguaggio HTML) per ottenere modelli di interazione generici tramite un’interfaccia utente guidata da Hypermedia.
 
-Il componente generico dell’interfaccia utente Granite `field` è composto da due file di interesse:
+Il componente generico dell&#39;interfaccia utente Granite `field` è composto da due file di interesse:
 
-* `init.jsp`: gestisce l’elaborazione generica; l’etichettatura, la descrizione e fornisce il valore del modulo necessario per il rendering del campo.
-* `render.jsp`: questo è il punto in cui viene eseguito il rendering effettivo del campo e deve essere sostituito per il campo personalizzato; è incluso da `init.jsp`.
+* `init.jsp`: gestisce l&#39;elaborazione generica, l&#39;etichettatura, la descrizione e fornisce il valore del modulo necessario per il rendering del campo.
+* `render.jsp`: viene eseguito il rendering effettivo del campo, che deve essere sostituito per il campo personalizzato; è incluso da `init.jsp`.
 
-Consulta [Documentazione dell’interfaccia utente Granite - Campo](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) per i dettagli.
+Per informazioni dettagliate, consulta la [documentazione dell&#39;interfaccia utente Granite - Campo](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
 
 Per esempi, consulta:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * fornite da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 
@@ -64,13 +64,13 @@ Per esempi, consulta:
 >
 >Poiché questo meccanismo utilizza JSP, i18n e XSS non sono forniti come preconfigurati. Questo significa che devi internazionalizzare ed evitare le tue Stringhe. La directory seguente contiene i campi generici di un’istanza standard, che puoi utilizzare come riferimento:
 >
->`/libs/granite/ui/components/foundation/form` directory
+>Directory `/libs/granite/ui/components/foundation/form`
 
 ## Creazione dello script lato server per il componente {#creating-the-server-side-script-for-the-component}
 
-Il campo personalizzato deve sostituire solo il `render.jsp` script, in cui viene fornito il markup per il componente. Puoi considerare JSP (ovvero lo script di rendering) come un wrapper per il markup.
+Il campo personalizzato deve sostituire solo lo script `render.jsp`, in cui è possibile fornire il markup per il componente. Puoi considerare JSP (ovvero lo script di rendering) come un wrapper per il markup.
 
-1. Creare un componente che utilizza `sling:resourceSuperType` proprietà da cui ereditare:
+1. Creare un componente che utilizza la proprietà `sling:resourceSuperType` per ereditare da:
 
    `/libs/granite/ui/components/foundation/form/field`
 
@@ -80,7 +80,7 @@ Il campo personalizzato deve sostituire solo il `render.jsp` script, in cui vien
 
    In questo script, genera il markup hypermedia (ovvero, il markup arricchito, contenente l’affordance hypermedia) in modo che il client sappia come interagire con l’elemento generato. Questo dovrebbe seguire lo stile di codifica lato server dell’interfaccia utente Granite.
 
-   Durante la personalizzazione, l’unico contratto che *deve* adempiere significa leggere il valore del modulo (inizializzato in `init.jsp`) dalla richiesta utilizzando:
+   Durante la personalizzazione, l&#39;unico contratto che *devi* soddisfare è quello di leggere il valore del modulo (inizializzato in `init.jsp`) dalla richiesta utilizzando:
 
    ```
    // Delivers the value of the field (read from the content)
@@ -88,7 +88,7 @@ Il campo personalizzato deve sostituire solo il `render.jsp` script, in cui vien
    vm.get("value, String.class");
    ```
 
-   Per ulteriori dettagli, consulta l’implementazione dei campi predefiniti dell’interfaccia utente Granite; ad esempio, `/libs/granite/ui/components/foundation/form/textfield`.
+   Per ulteriori dettagli, vedi l’implementazione dei campi predefiniti dell’interfaccia utente Granite; ad esempio, `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
@@ -98,10 +98,10 @@ Il campo personalizzato deve sostituire solo il `render.jsp` script, in cui vien
 
 Per aggiungere al componente un comportamento specifico lato client:
 
-1. Creare una libreria client di categoria `cq.authoring.dialog`.
-1. Creare una libreria client di categoria `cq.authoring.dialog` e definisci `JS`/ `CSS` dentro.
+1. Creare una libreria client della categoria `cq.authoring.dialog`.
+1. Creare una clientlib di categoria `cq.authoring.dialog` e definire `JS`/ `CSS` al suo interno.
 
-   Definisci le `JS`/ `CSS` dentro clientlib.
+   Definisci `JS`/ `CSS` all&#39;interno della libreria client.
 
    >[!NOTE]
    >

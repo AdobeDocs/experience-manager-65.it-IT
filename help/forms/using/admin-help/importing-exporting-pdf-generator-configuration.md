@@ -22,7 +22,7 @@ Il file di configurazione contiene le informazioni sulla conversione di PDF Gene
 
 >[!NOTE]
 >
->Non è possibile modificare l&#39;impostazione di timeout per PDF Generator importando un file nativo2pdfconfig.xml personalizzato. L’impostazione di timeout in tale file è solo a scopo informativo e mostra l’impostazione corrente in PDF Generator. Per modificare l’impostazione del timeout, consulta &quot;Impostazione dei parametri delle prestazioni di PDF Generator&quot; in [Installazione e distribuzione di moduli AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>Non è possibile modificare l&#39;impostazione di timeout per PDF Generator importando un file nativo2pdfconfig.xml personalizzato. L’impostazione di timeout in tale file è solo a scopo informativo e mostra l’impostazione corrente in PDF Generator. Per modificare l&#39;impostazione del timeout, vedere &quot;Impostazione dei parametri delle prestazioni di PDF Generator&quot; in [Installazione e distribuzione di moduli AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Esporta il file di configurazione corrente {#export-your-current-configuration-file}
 
@@ -52,7 +52,7 @@ Per default, PDF Generator converte solo il livello di default dei file AutoCAD 
 
 1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > File di configurazione > Esporta configurazione.
 1. Seleziona Scarica configurazione completa e fai clic su Scarica.
-1. In un editor di testo, apri il file scaricato e, nella sezione `AutoCAD` tag all&#39;interno di `PDFMaker` , aggiungi il testo `convertAllPages="true"`.
+1. In un editor di testo, aprire il file scaricato e aggiungere il testo `convertAllPages="true"` sotto il tag `AutoCAD` all&#39;interno del tag `PDFMaker`.
 1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > File di configurazione > Importa configurazione.
 1. Selezionate Importa file di configurazione esistente (Import An Existing Configuration File), specificate il file aggiornato e fate clic su Importa (Import).
 

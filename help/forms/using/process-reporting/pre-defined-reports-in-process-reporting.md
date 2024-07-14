@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Rapporti predefiniti nella generazione di rapporti {#pre-defined-reports-in-process-reporting-1}
 
-AEM Forms Process Reporting viene fornito con *pronto all’uso* rapporti:
+AEM Forms Process Reporting viene fornito con i seguenti *report predefiniti*:
 
-* **[Processi a esecuzione prolungata](#long-running-processes)**: report di tutti i processi di AEM Forms il cui completamento ha richiesto più di un tempo specificato
-* **[Grafico durata processo](#process-duration-report)**: rapporto di un processo AEM Forms specificato per durata
-* **[Volume flusso di lavoro](#workflow-volume-report)**: report delle istanze in esecuzione e completate del processo specificato per data
+* **[Processi a esecuzione prolungata](#long-running-processes)**: un report di tutti i processi AEM Forms il cui completamento ha richiesto più di un tempo specificato
+* **[Grafico durata processo](#process-duration-report)**: un report di un processo AEM Forms specificato per durata
+* **[Volume flusso di lavoro](#workflow-volume-report)**: un report delle istanze in esecuzione e completate del processo specificato per data
 
 ## Processi a esecuzione prolungata {#long-running-processes}
 
@@ -32,32 +32,32 @@ Nel rapporto Processi a esecuzione prolungata vengono visualizzati i processi di
 
 ### Per eseguire un report di processi a esecuzione prolungata {#to-execute-a-long-running-process-report}
 
-1. Per visualizzare l&#39;elenco dei report predefiniti in Report processo, nella **Reporting sui processi** struttura, fare clic sul pulsante **Rapporti** nodo.
-1. Fai clic su **Processi a esecuzione prolungata** nodo di report.
+1. Per visualizzare l&#39;elenco dei report predefiniti in Process Reporting, nella visualizzazione struttura **Process Reporting** fare clic sul nodo **Reports**.
+1. Fare clic sul nodo del report **Processi a esecuzione prolungata**.
 
-   ![long_running_node](assets/long_running_node.png)
+   ![nodo_in_esecuzione](assets/long_running_node.png)
 
-   Quando selezioni un rapporto, il **Parametri del rapporto** viene visualizzato a destra della visualizzazione struttura.
+   Quando selezioni un report, il pannello **Parametri del report** viene visualizzato a destra della visualizzazione struttura.
 
    ![pannello parametri report processi a esecuzione prolungata](assets/report_parameters_panel.png)
 
    Parametri:
 
-   * **Durata** (*obbligatorio*): specifica una durata e un’unità di tempo. Visualizza tutti i processi AEM Forms eseguiti per una durata superiore a quella specificata.
+   * **Durata** (*obbligatoria*): specifica una durata e un&#39;unità di tempo. Visualizza tutti i processi AEM Forms eseguiti per una durata superiore a quella specificata.
    * **Iniziato dopo** (*facoltativo*): seleziona una data. Filtrare il report per visualizzare le istanze di processo avviate dopo la data specificata.
-   * **Iniziato prima di** (*facoltativo*): seleziona una data. Filtrare il report per visualizzare le istanze di processo avviate prima della data specificata.
+   * **Iniziato prima del** (*facoltativo*): seleziona una data. Filtrare il report per visualizzare le istanze di processo avviate prima della data specificata.
 
-1. Clic **Vai** per eseguire il report.
+1. Fare clic su **Vai** per eseguire il report.
 
-   Il rapporto viene visualizzato nel **Report** pannello a destra del **Reporting sui processi** finestra.
+   Il report viene visualizzato nel pannello **Report** a destra della finestra **Report dei processi**.
 
-   ![long_running_PROCESSES](assets/long_running_processes.png)
+   ![processi_in_esecuzione](assets/long_running_processes.png)
 
-   Utilizza le opzioni nell’angolo superiore destro della sezione **Report** per eseguire le seguenti operazioni sul rapporto.
+   Utilizzare le opzioni nell&#39;angolo superiore destro del pannello **Report** per eseguire le operazioni seguenti nel report.
 
-   * **Aggiorna**: aggiorna il rapporto con i dati più recenti presenti nell’archiviazione
-   * **Cambia colore legenda**: seleziona e modifica il colore della legenda del rapporto
-   * **Esporta in CSV**: esporta e scarica i dati dal rapporto in un file separato da virgole
+   * **Aggiorna**: aggiorna il report con i dati più recenti presenti nell&#39;archivio
+   * **Cambia colore legenda**: selezionare e modificare il colore della legenda del report
+   * **Esporta in CSV**: esporta e scarica i dati dal report in un file separato da virgole
 
 ## Rapporto Durata processo  {#process-duration-report}
 
@@ -65,12 +65,12 @@ Nel rapporto Durata processo viene visualizzato il numero di istanze di un proce
 
 ### Per eseguire un report Durata processo {#to-execute-a-process-duration-report}
 
-1. Per visualizzare i rapporti predefiniti in Report processo, nella **Reporting sui processi** struttura, fare clic sul pulsante **Rapporti** nodo.
-1. Fai clic su **Durata processi** nodo di report.
+1. Per visualizzare i report predefiniti in Process Reporting, nella visualizzazione struttura **Process Reporting** fare clic sul nodo **Reports**.
+1. Fare clic sul nodo del report **Durata processi**.
 
    ![process_duration_node](assets/process_duration_node.png)
 
-   Quando selezioni un rapporto, il **Parametri del rapporto** viene visualizzato a destra della visualizzazione struttura.
+   Quando selezioni un report, il pannello **Parametri del report** viene visualizzato a destra della visualizzazione struttura.
 
    ![pannello parametri report processi a esecuzione prolungata](assets/process_duration_params.png)
 
@@ -78,17 +78,17 @@ Nel rapporto Durata processo viene visualizzato il numero di istanze di un proce
 
    * **Seleziona processo** (*obbligatorio*): seleziona un processo AEM Forms.
 
-1. Clic **Vai** per eseguire il report.
+1. Fare clic su **Vai** per eseguire il report.
 
-   Il rapporto viene visualizzato nel **Report** pannello a destra della finestra Report processo.
+   Il report viene visualizzato nel pannello **Report** a destra della finestra Report processi.
 
-   ![process_duration_report](assets/process_duration_report.png)
+   ![report_durata_processo](assets/process_duration_report.png)
 
-   Utilizza le opzioni nell’angolo superiore destro della sezione **Report** per eseguire le seguenti operazioni sul rapporto.
+   Utilizzare le opzioni nell&#39;angolo superiore destro del pannello **Report** per eseguire le operazioni seguenti nel report.
 
-   * **Aggiorna**: aggiorna il rapporto con i dati più recenti presenti nell’archiviazione
-   * **Cambia colore legenda**: seleziona e modifica il colore della legenda del rapporto
-   * **Esporta in CSV**: esporta e scarica i dati dal rapporto in un file separato da virgole
+   * **Aggiorna**: aggiorna il report con i dati più recenti presenti nell&#39;archivio
+   * **Cambia colore legenda**: selezionare e modificare il colore della legenda del report
+   * **Esporta in CSV**: esporta e scarica i dati dal report in un file separato da virgole
 
 ## Rapporto volume flusso di lavoro {#workflow-volume-report}
 
@@ -96,12 +96,12 @@ Nel rapporto Volume flusso di lavoro viene visualizzato il numero di istanze di 
 
 ### Per eseguire un report Volume flusso di lavoro {#to-execute-a-workflow-volume-report}
 
-1. Per visualizzare i rapporti predefiniti in Report processo, nella **Reporting sui processi** struttura, fare clic sul pulsante **Rapporti** nodo.
-1. Fai clic su **Volume flusso di lavoro** nodo di report.
+1. Per visualizzare i report predefiniti in Process Reporting, nella visualizzazione struttura **Process Reporting** fare clic sul nodo **Reports**.
+1. Fare clic sul nodo del report **Volume flusso di lavoro**.
 
-   ![workflow_volume_node](assets/workflow_volume_node.png)
+   ![nodo_volume_flusso di lavoro](assets/workflow_volume_node.png)
 
-   Quando selezioni un rapporto, il **Parametri del rapporto** viene visualizzato a destra della visualizzazione struttura.
+   Quando selezioni un report, il pannello **Parametri del report** viene visualizzato a destra della visualizzazione struttura.
 
    ![pannello parametri report processi a esecuzione prolungata](assets/workflow_volume_params.png)
 
@@ -111,16 +111,16 @@ Nel rapporto Volume flusso di lavoro viene visualizzato il numero di istanze di 
 
    * **Iniziato dopo** (*facoltativo*): seleziona una data. Filtra il report per visualizzare le istanze di processo avviate dopo la data specificata.
 
-   * **Iniziato prima di** (*facoltativo*): seleziona una data. Filtra il report per visualizzare le istanze di processo avviate prima della data specificata.
+   * **Iniziato prima del** (*facoltativo*): seleziona una data. Filtra il report per visualizzare le istanze di processo avviate prima della data specificata.
 
-1. Clic **Vai** per eseguire il report.
+1. Fare clic su **Vai** per eseguire il report.
 
-   Il rapporto viene visualizzato nel **Report** pannello a destra del **Reporting sui processi** finestra.
+   Il report viene visualizzato nel pannello **Report** a destra della finestra **Report dei processi**.
 
    ![workflow_volume_report](assets/workflow_volume_report.png)
 
-   Utilizza le opzioni nell’angolo superiore destro della sezione **Report** per eseguire le seguenti operazioni sul rapporto.
+   Utilizzare le opzioni nell&#39;angolo superiore destro del pannello **Report** per eseguire le operazioni seguenti nel report.
 
-   * **Aggiorna**: aggiorna il rapporto con i dati più recenti presenti nell’archiviazione
-   * **Cambia colore legenda**: seleziona e modifica il colore della legenda del rapporto
-   * **Esporta in CSV**: esporta e scarica i dati dal rapporto in un file separato da virgole
+   * **Aggiorna**: aggiorna il report con i dati più recenti presenti nell&#39;archivio
+   * **Cambia colore legenda**: selezionare e modificare il colore della legenda del report
+   * **Esporta in CSV**: esporta e scarica i dati dal report in un file separato da virgole

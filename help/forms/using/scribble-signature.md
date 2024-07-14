@@ -26,7 +26,7 @@ I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un 
 1. Aprire un modulo in Forms Designer.
 1. Trascina e rilascia il campo A mano libera nella pagina.
 
-   ![designer_scribble](assets/designer_scribble.png)
+   ![scarabocchio_designer](assets/designer_scribble.png)
 
    >[!NOTE]
    >
@@ -34,16 +34,16 @@ I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un 
 
 1. Configura il campo Disegno di firma.
 
-   Per impostazione predefinita, il campo Scribble firma contrassegna le informazioni di geolocalizzazione come obbligatorie durante il processo di firma su iPad (ed è facoltativo per altri dispositivi). Questo comportamento predefinito può essere ignorato modificando il valore della proprietà `geoLocMandatoryOnIpad` proprietà. Questa proprietà viene esposta come extra nel campo a mano libera della firma. I passaggi per modificarlo sono i seguenti:
+   Per impostazione predefinita, il campo Scribble firma contrassegna le informazioni di geolocalizzazione come obbligatorie durante il processo di firma su iPad (ed è facoltativo per altri dispositivi). Questo comportamento predefinito può essere ignorato modificando il valore della proprietà `geoLocMandatoryOnIpad`. Questa proprietà viene esposta come extra nel campo a mano libera della firma. I passaggi per modificarlo sono i seguenti:
 
    1. Nel modulo selezionare il campo Disegno firma.
-   1. Seleziona la **Origine XML** scheda.
+   1. Selezionare la scheda **XML Source**.
 
       >[!NOTE]
       >
-      >Per aprire la scheda Origine XML, fare clic su **Visualizza** > **Origine XML**.
+      >Per aprire la scheda Source XML, fare clic su **Visualizza** > **Source XML**.
 
-   1. Individua il `<ui>` tag in `<field>` assegna tag e modifica al codice sorgente in modo che abbia l’aspetto seguente:
+   1. Individuare il tag `<ui>` nel tag `<field>` e modificare il codice sorgente in modo che sia simile al seguente:
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -51,7 +51,7 @@ I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un 
       </extras>
       ```
 
-   1. Seleziona la **Visualizzazione Progettazione** scheda. Nella casella di conferma fare clic su **Sì**.
+   1. Selezionare la scheda **Visualizzazione Struttura**. Nella casella di conferma fare clic su **Sì**.
    1. Salvare il modulo.
 
 1. Eseguire il rendering del modulo su un browser dispositivo/desktop supportato.
@@ -64,7 +64,7 @@ Dopo aver aggiunto al modulo e aver eseguito il rendering di un campo a mano lib
 
 ![geolocalizzazione](assets/geolocation.png)
 
-**R.** Pennello **B.** Gomma **C.** Geolocalizzazione **D.** Informazioni di geolocalizzazione
+**A.** Pennello **B.** Gomma **C.** Geolocalizzazione **D.** Informazioni di geolocalizzazione
 
 ### Geo-tagging {#geo-tagging}
 
@@ -74,20 +74,20 @@ Facendo clic sull’icona di geolocalizzazione durante la creazione dello scarab
 >
 In iPad, per impostazione predefinita, è obbligatorio incorporare le informazioni di geolocalizzazione.
 
-In iPad, l’icona di geolocalizzazione non viene visualizzata per impostazione predefinita e le informazioni di geolocalizzazione vengono incorporate automaticamente quando fai clic su **OK**.
+In iPad l&#39;icona di geolocalizzazione non viene visualizzata per impostazione predefinita e le informazioni di geolocalizzazione vengono incorporate automaticamente quando si fa clic su **OK**.
 
-Per gli iPad, questa impostazione può essere modificata modificando il valore di `geoLocManadatoryOnIpad` parametro a `0`, nei parametri iniziali del campo.
+Per gli iPad, questa impostazione può essere modificata modificando il valore del parametro `geoLocManadatoryOnIpad` in `0` nei parametri iniziali del campo.
 
-* Quando le informazioni di geolocalizzazione sono obbligatorie, l’utente dispone di un’area di prelievo ridotta. Il testo di geolocalizzazione viene aggiunto quando l’utente fa clic **OK** sull&#39;area rimanente.
+* Quando le informazioni di geolocalizzazione sono obbligatorie, l’utente dispone di un’area di prelievo ridotta. Il testo di geolocalizzazione viene aggiunto quando l&#39;utente fa clic sull&#39;icona **OK** nell&#39;area rimanente.
 * In altri casi, all’utilizzatore viene presentata un’area completamente estraibile. Se l’utente sceglie di incorporare le informazioni di geolocalizzazione, quest’area viene ridimensionata per contenere il testo di geolocalizzazione.
 
 ### Cancellazione di una firma {#clearing-a-signature}
 
-Quando si utilizza questa funzione, un utente può fare clic sul pulsante **Gomma** per cancellare il campo e ricominciare da capo. Se sono state aggiunte informazioni di geolocalizzazione, anche queste vengono cancellate.
+Durante l&#39;utilizzo di questa funzione, un utente può fare clic sull&#39;icona **Gomma** per cancellare il campo e ricominciare. Se sono state aggiunte informazioni di geolocalizzazione, anche queste vengono cancellate.
 
 ### Salvataggio di una firma {#saving-a-signature}
 
-Facendo clic su **OK** salva lo scarabocchio come immagine nel campo. L&#39;immagine e i valori possono essere inviati al server per ulteriore elaborazione. Dopo aver fatto clic su un utente **OK**, il campo scarabocchio è bloccato. Impossibile modificare nuovamente la firma utilizzando il widget a mano libera.
+Facendo clic sull&#39;icona **OK**, lo scarabocchio viene salvato come immagine nel campo. L&#39;immagine e i valori possono essere inviati al server per ulteriore elaborazione. Dopo che un utente ha fatto clic su **OK**, il campo scarabocchio è bloccato. Impossibile modificare nuovamente la firma utilizzando il widget a mano libera.
 
 Toccando o facendo clic sul campo Scarabocchio si apre la finestra di dialogo in modalità di sola lettura.
 
@@ -95,11 +95,11 @@ Toccando o facendo clic sul campo Scarabocchio si apre la finestra di dialogo in
 
 ### Selezione delle dimensioni della penna {#selecting-pen-size}
 
-Fai clic su **Pennelli** per visualizzare un elenco delle dimensioni di penna disponibili. Fare clic su una penna per utilizzare la penna corrispondente.
+Fai clic sull&#39;icona **Pennelli** per visualizzare un elenco delle dimensioni di penna disponibili. Fare clic su una penna per utilizzare la penna corrispondente.
 
 ### Elimina firme dal modulo {#delete-signatures-from-the-form}
 
 Per eliminare le firme dal modulo:
 
-* (Dispositivi mobili) Premi a lungo il campo della firma e, nella finestra di dialogo di conferma, seleziona **Sì**.
-* (Desktop) Passa il puntatore del mouse sul campo firma, fai clic sul pulsante **Annulla** e nella finestra di dialogo di conferma, fai clic su **Sì**.
+* (Dispositivi mobili) Premere a lungo il campo firma e nella finestra di dialogo di conferma selezionare **Sì**.
+* (Desktop) Passa il puntatore del mouse sul campo firma, fai clic sull&#39;icona **Annulla** e nella finestra di dialogo di conferma fai clic su **Sì**.

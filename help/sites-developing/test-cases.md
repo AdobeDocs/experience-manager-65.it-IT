@@ -21,7 +21,7 @@ ht-degree: 0%
 
 I test case devono essere basati su:
 
-**Casi d’uso**
+**Casi d&#39;uso**
 
 * Definiscono le funzionalità richieste in termini di interazione tra gli attori (ruoli che avviano determinate azioni) e il sistema.
 * I casi d’uso devono essere definiti dal cliente.
@@ -54,14 +54,16 @@ Durante il test dell’AEM, sono di particolare interesse alcuni dettagli specif
 
 **Ambienti Author e Publish**
 
-Anche se trattati in [Ambienti](/help/sites-developing/the-basics.md#environments)Vale la pena sottolineare un fattore decisivo dell’AEM per quanto riguarda i test.
+Anche se trattato in [Ambienti](/help/sites-developing/the-basics.md#environments), vale la pena evidenziare un fattore decisivo dell&#39;AEM per quanto riguarda i test.
 
 Considerare l’AEM come due applicazioni:
 
-* il *Autore* ambiente Questa istanza consente agli autori di inserire e pubblicare contenuti.
+* ambiente *Author*
+Questa istanza consente agli autori di inserire e pubblicare contenuti.
 Questo ha un piccolo(i) set prevedibile di utenti, per i quali sono fondamentali funzionalità e prestazioni specifiche.
 
-* il *Pubblica* ambiente Questa istanza presenta il sito web come forma pubblicata, accessibile ai visitatori.
+* ambiente *Publish*
+Questa istanza presenta il sito web nel relativo modulo pubblicato per l’accesso da parte dei visitatori.
 Questo di solito ha un set più ampio di utenti, dove il volume di traffico non è sempre prevedibile al 100%. Le prestazioni sono ancora cruciali, quando si risponde alle richieste. Considera anche la memorizzazione nella cache e il bilanciamento del carico.
 
 Anche se lo stesso software come tale, essi:
@@ -82,7 +84,7 @@ Verificare il comportamento corretto anche nella cache.
 
 **Dispatcher**
 
-La maggior parte dei progetti installa Dispatcher per il caching e il bilanciamento del carico.
+La maggior parte dei progetti installa il Dispatcher per il caching e il bilanciamento del carico.
 
 Il test è difficile (la memorizzazione in cache si verifica a vari livelli e in varie posizioni) e deve essere eseguito in modalità black box. Gli aspetti chiave da testare per sono:
 

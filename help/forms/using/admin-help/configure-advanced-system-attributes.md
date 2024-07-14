@@ -18,33 +18,33 @@ ht-degree: 1%
 
 # Configurare attributi di sistema avanzati {#configure-advanced-system-attributes}
 
-Utilizzare la pagina Configura attributi di sistema avanzati per modificare alcune impostazioni nel file di configurazione senza dover esportare, modificare e importare il file. (vedere [Importazione ed esportazione del file di configurazione](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Utilizzare la pagina Configura attributi di sistema avanzati per modificare alcune impostazioni nel file di configurazione senza dover esportare, modificare e importare il file. (Vedere [Importazione ed esportazione del file di configurazione](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati]**.
+1. Nella console di amministrazione, fare clic su **[!UICONTROL Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati]**.
 1. (Facoltativo) Modificate uno dei seguenti attributi di sessione:
 
-   **Limite di timeout sessione (minuti):** Il tempo, in minuti, prima che un utente venga disconnesso automaticamente dal sistema. Per impostazione predefinita, l’AEM forma componenti come Workbench che si interrompe dopo due ore, indipendentemente dall’attività o dall’inattività, e l’utente deve effettuare di nuovo l’accesso. I valori validi sono `1` a `1440`. Il valore predefinito è `120` (2 ore) Questa impostazione aggiorna `SAML/Producer/assertionValidityInMinutes` chiave di ingresso nel file di configurazione.
+   **Limite timeout sessione (minuti):** il tempo, in minuti, trascorso il quale un utente viene automaticamente disconnesso dal sistema. Per impostazione predefinita, l’AEM forma componenti come Workbench che si interrompe dopo due ore, indipendentemente dall’attività o dall’inattività, e l’utente deve effettuare di nuovo l’accesso. I valori validi sono compresi tra `1` e `1440`. Il valore predefinito è `120` (2 ore). Questa impostazione aggiorna la chiave di ingresso `SAML/Producer/assertionValidityInMinutes` nel file di configurazione.
 
    >[!NOTE]
    >
    >Non impostare il limite di timeout sessione al di sotto di 10 minuti perché il sistema potrebbe non comportarsi correttamente. Il valore consigliato è 10-120 (minuti).
 
-   **Soglia asserzione (secondi):** Un buffer time per compensare i ritardi dovuti alle differenze di tempo del sistema tra AEM costituisce il server applicazioni in un cluster. I moduli AEM retrodatano il tempo di accesso di un utente in base al tempo (in secondi) specificato in questa proprietà. I valori validi sono `0` a `3600`. Il valore predefinito è `60`. Questa impostazione aggiorna `SAML/Producer/assertionThresholdInSeconds` chiave di ingresso nel file di configurazione.
+   **Soglia asserzione (secondi):** un tempo di buffer per compensare i ritardi dovuti alle differenze di tempo del sistema tra i server applicazioni AEM forms in un cluster. I moduli AEM retrodatano il tempo di accesso di un utente in base al tempo (in secondi) specificato in questa proprietà. I valori validi sono compresi tra `0` e `3600`. Il valore predefinito è `60`. Questa impostazione aggiorna la chiave di ingresso `SAML/Producer/assertionThresholdInSeconds` nel file di configurazione.
 
-   **Numero massimo di rinnovi consentiti di un&#39;asserzione:** Il numero massimo di volte in cui la sessione di un utente può essere rinnovata in modo trasparente senza richiedere un accesso. I valori validi sono `0` a `9999`. Un valore di `0` significa che le asserzioni non vengono rinnovate. Il valore predefinito è 10. Questa impostazione aggiorna `SAML/Producer/maxAssertionRenewalCount` chiave di ingresso nel file di configurazione.
+   **Rinnovi consentiti massimi di un&#39;asserzione:** il numero massimo di volte in cui è possibile rinnovare in modo trasparente una sessione utente senza richiedere l&#39;accesso. I valori validi sono compresi tra `0` e `9999`. Il valore `0` indica che le asserzioni non vengono rinnovate. Il valore predefinito è 10. Questa impostazione aggiorna la chiave di ingresso `SAML/Producer/maxAssertionRenewalCount` nel file di configurazione.
 
 1. (Facoltativo) Modificare uno dei seguenti attributi di sincronizzazione delle directory:
 
-   **Registrazione statistiche di sincronizzazione:** Specifica se Gestione utenti registra le statistiche dettagliate durante il processo di sincronizzazione. (vedere [Attiva o disattiva la registrazione dettagliata durante la sincronizzazione](/help/forms/using/admin-help/synchronizing-directories.md#enable-or-disable-detailed-logging-during-synchronization).)
+   **Registrazione statistiche di sincronizzazione:** Specifica se Gestione utenti registra statistiche dettagliate durante il processo di sincronizzazione. (Vedi [Attiva o disattiva la registrazione dettagliata durante la sincronizzazione](/help/forms/using/admin-help/synchronizing-directories.md#enable-or-disable-detailed-logging-during-synchronization).)
 
-   **Espressione Cron Synch Finisher:** Intervallo di tentativi di sincronizzazione non riusciti da parte di Gestione utenti. (vedere [Configurare l&#39;opzione di esecuzione di un nuovo tentativo di sincronizzazione della directory](/help/forms/using/admin-help/synchronizing-directories.md#configure-the-directory-synchronization-retry-option).)
+   **Espressione Cron Finisher Sincronizzazione:** Intervallo di tentativi di sincronizzazione non riusciti da parte di Gestione utenti. (Vedere [Configurare l&#39;opzione di esecuzione di un nuovo tentativo di sincronizzazione della directory](/help/forms/using/admin-help/synchronizing-directories.md#configure-the-directory-synchronization-retry-option).)
 
-   **Timeout Blocco Processo Cluster In Minuti:** Utilizzato in ambienti cluster. Se la sincronizzazione su un nodo ha esito negativo e il blocco del cluster non viene rilasciato, questo valore specifica il numero di minuti di attesa di un altro nodo prima dell&#39;acquisizione forzata del blocco. Il valore predefinito è `15` minuti. I valori validi sono `1` a `1440` minuti.
+   **Timeout blocco processo cluster in minuti:** utilizzato in ambienti cluster. Se la sincronizzazione su un nodo ha esito negativo e il blocco del cluster non viene rilasciato, questo valore specifica il numero di minuti di attesa di un altro nodo prima dell&#39;acquisizione forzata del blocco. Il valore predefinito è `15` minuti. I valori validi sono compresi tra `1` e `1440` minuti.
 
-1. (Facoltativo) Modifica i seguenti attributi e fai clic su **[!UICONTROL OK]**:
+1. (Facoltativo) Modificare i seguenti attributi e quindi fare clic su **[!UICONTROL OK]**:
 
-   **Controllo degli eventi di User Manager:** Selezionare questa opzione per abilitare il controllo degli eventi di sincronizzazione delle directory e degli eventi di autenticazione quali esito positivo, errore e blocco. Per impostazione predefinita, questa opzione è selezionata solo se è stato installato un componente che richiede il controllo, ad esempio Rights Management. Questa impostazione aggiorna `APSAuditService` chiave di ingresso nel file di configurazione.
+   **Controllo eventi di User Manager:** Selezionare questa opzione per abilitare il controllo degli eventi di sincronizzazione delle directory e degli eventi di autenticazione, quali esito positivo, errore e blocco. Per impostazione predefinita, questa opzione è selezionata solo se è stato installato un componente che richiede il controllo, ad esempio Rights Management. Questa impostazione aggiorna la chiave di ingresso `APSAuditService` nel file di configurazione.
 
-   **Creazione automatica gruppo dinamico:** Consente la creazione automatica di gruppi dinamici basati sui domini e-mail. (vedere [Creare un gruppo dinamico](/help/forms/using/admin-help/creating-configuring-groups.md#create-a-dynamic-group).)
+   **Creazione automatica gruppo dinamico:** consente la creazione automatica di gruppi dinamici basati sui domini e-mail. (Vedi [Creare un gruppo dinamico](/help/forms/using/admin-help/creating-configuring-groups.md#create-a-dynamic-group).)
 
 È inoltre possibile ripristinare le impostazioni originali di Gestione utenti facendo clic su Ricarica.

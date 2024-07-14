@@ -32,4 +32,4 @@ Le informazioni fornite si applicano alle installazioni chiavi in mano, automati
 >
 >Quando si creano certificati e credenziali di protezione SSL, utilizzare gli stessi privilegi dell&#39;account utente utilizzati per eseguire il server applicazioni. Se il server applicazioni viene eseguito utilizzando altri privilegi utente, è possibile che il modulo non venga eseguito correttamente per le rappresentazioni di PDForm quando ContentRootURI punta a https.
 
-Se si dispone di un server LDAP abilitato per SSL, configurare User Management per utilizzarlo. (vedere [Configurare la gestione degli utenti per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Se si dispone di un server LDAP abilitato per SSL, configurare User Management per utilizzarlo. (Vedere [Configurare la gestione degli utenti per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)

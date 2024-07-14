@@ -16,13 +16,13 @@ ht-degree: 0%
 
 Di seguito sono riportati due tipi di panoramica sull’authoring con AEM:
 
-* [Primi passaggi per gli autori](/help/sites-authoring/first-steps.md) - un’introduzione per nuovi autori
+* [Primi passi per autori](/help/sites-authoring/first-steps.md): introduzione per i nuovi autori
 
-* [Guida rapida all’authoring delle pagine](/help/sites-authoring/qg-page-authoring.md) - una guida rapida (di alto livello) alle azioni principali
+* [Guida rapida all&#39;authoring delle pagine](/help/sites-authoring/qg-page-authoring.md): guida rapida (di alto livello) alle azioni principali
 
 >[!NOTE]
 >
->Questa sezione descrive le attività necessarie per creare una pagina di contenuto. Esistono molte funzioni aggiuntive strettamente correlate all’authoring delle pagine, descritte in altre sezioni della [Guida all’authoring](/help/sites-authoring/first-steps.md).
+>Questa sezione descrive le attività necessarie per creare una pagina di contenuto. Esistono molte funzioni aggiuntive strettamente correlate all&#39;authoring delle pagine, descritte in altre sezioni della [Guida all&#39;authoring](/help/sites-authoring/first-steps.md).
 
 ## Panoramica rapida delle funzioni utilizzate per l’authoring delle pagine {#quick-overview-of-features-used-for-authoring-pages}
 

@@ -37,7 +37,7 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 
 ## Oak {#oak}
 
-[Oak](/help/sites-deploying/platform.md) è un archivio di contenuti gerarchici scalabile ed efficiente, alla base dell’AEM.
+[Oak](/help/sites-deploying/platform.md) è un archivio di contenuti gerarchici scalabile e performante alla base dell&#39;AEM.
 
 <table>
  <tbody>
@@ -47,7 +47,7 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
    <td>Un white paper che illustra l'agilità tecnica, le prestazioni elevate e le funzionalità di disaster recovery</td>
   </tr>
   <tr>
-   <td>Distribuzioni Oak consigliate</td>
+   <td>Distribuzioni consigliate di Oak</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Distribuzioni consigliate</a></td>
    <td>Descrive gli scenari di distribuzione</td>
   </tr>
@@ -63,7 +63,7 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
   </tr>
   <tr>
    <td>Cerca in Oak</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Best practice per query e indicizzazione</a><br /> </td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Procedure consigliate per query e indicizzazione</a><br /> </td>
    <td>Vengono descritte le procedure consigliate per l'indicizzazione del contenuto.</td>
   </tr>
  </tbody>
@@ -73,9 +73,9 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 
 AEM Communities semplifica la creazione e la gestione delle community on-premise. Le best practice per AEM Communities sono descritte qui:
 
-[Archivio contenuti community](/help/communities/working-with-srp.md) - Descrive la nuova funzione di archiviazione condivisa per i contenuti generati dagli utenti (UGC, User-Generated Content) e le considerazioni per la scelta del sottostante [topologia](/help/communities/topologies.md).
+[Archivio di contenuti community](/help/communities/working-with-srp.md) - Descrive la nuova funzionalità di archiviazione condivisa per i contenuti generati dagli utenti (UGC, User-Generated Content) e le considerazioni per la scelta della [topologia](/help/communities/topologies.md) sottostante.
 
-[Distribuzioni consigliate per community](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Descrive le distribuzioni consigliate per le community. |
+[Distribuzioni consigliate per le community](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Descrive le distribuzioni consigliate per le community. |
 
 ## Interfaccia {#ui}
 
@@ -94,7 +94,7 @@ Le best practice sulle prestazioni sono elencate qui:
   <tr>
    <td>Best practice per la garanzia della qualità</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Best practice per la garanzia della qualità</a></td>
-   <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test delle prestazioni su <em>pubblicare</em> ambiente. Questo è di interesse soprattutto per gli ingegneri QA, i project manager e gli amministratori di sistema.</td>
+   <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test delle prestazioni nell'ambiente <em>publish</em>. Questo è di interesse soprattutto per gli ingegneri QA, i project manager e gli amministratori di sistema.</td>
   </tr>
   <tr>
    <td>Utilizzo di Dispatcher con una rete CDN</td>
@@ -109,7 +109,7 @@ Le best practice sulle prestazioni sono elencate qui:
   <tr>
    <td>Test delle prestazioni</td>
    <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best practice per i test delle prestazioni</a></td>
-   <td>Descrive le best practice per l’esecuzione di test delle prestazioni in una distribuzione AEM.<br /> </td>
+   <td>Descrive le best practice per l'esecuzione di test delle prestazioni in una distribuzione AEM.<br /> </td>
   </tr>
  </tbody>
 </table>

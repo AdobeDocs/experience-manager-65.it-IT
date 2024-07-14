@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Creazione di documenti PDF con i dati XML inviati {#creating-pdf-documents-with-submittedxml-data}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 ## Creazione di documenti PDF con i dati XML inviati {#creating-pdf-documents-with-submitted-xml-data}
 
@@ -58,11 +58,11 @@ Per creare un documento di PDF non interattivo con i dati XML inviati e memorizz
 
 Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicazione client utilizzando Java, includi i file JAR necessari. Se utilizzi i servizi web, accertati di includere i file proxy.
 
-**Creazione di oggetti Forms, Output e Document Management**
+**Creare oggetti Forms, Output e Document Management**
 
 Prima di poter eseguire un&#39;operazione API del servizio Forms a livello di programmazione, creare un oggetto API del client Forms. Analogamente, poiché questo flusso di lavoro richiama i servizi Output e Document Management, creare sia un oggetto API client di output che un oggetto API client di Document Management.
 
-**Recuperare i dati del modulo tramite il servizio Forms**
+**Recupera dati modulo tramite il servizio Forms**
 
 Recupera i dati del modulo inviati al servizio Forms. È possibile elaborare i dati inviati per soddisfare i requisiti aziendali. È ad esempio possibile memorizzare i dati dei moduli in un database aziendale. Tuttavia, per creare un documento di PDF non interattivo, i dati del modulo vengono passati al servizio di output.
 
@@ -70,7 +70,7 @@ Recupera i dati del modulo inviati al servizio Forms. È possibile elaborare i d
 
 Utilizzare il servizio di output per creare un documento PDF non interattivo basato sulla struttura di un modulo e sui dati del modulo XML. Nel flusso di lavoro, i dati del modulo vengono recuperati dal servizio Forms.
 
-**Memorizzare il modulo PDF in Content Services (obsoleto) utilizzando il servizio Document Management**
+**Archivia il modulo PDF in Content Services (obsoleto) utilizzando il servizio Document Management**
 
 Utilizza l’API del servizio Document Management per memorizzare un documento PDF in Content Services (obsoleto).
 
@@ -92,58 +92,58 @@ Crea un documento PDF con i dati XML inviati utilizzando Forms, Output e Documen
 
 1. Creazione di oggetti Forms, Output e Document Management
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `FormsServiceClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
-   * Creare un `OutputClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
-   * Creare un `DocumentManagementServiceClientImpl` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
+   * Creare un oggetto `OutputClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
+   * Creare un oggetto `DocumentManagementServiceClientImpl` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare i dati del modulo tramite il servizio Forms
 
-   * Richiama `FormsServiceClient` dell&#39;oggetto `processFormSubmission` e trasmettere i seguenti valori:
+   * Richiama il metodo `processFormSubmission` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-      * Il `com.adobe.idp.Document` oggetto che contiene i dati del modulo.
-      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specificare il tipo di contenuto da gestire specificando uno o più valori per `CONTENT_TYPE` variabile di ambiente. Ad esempio, per gestire i dati XML, specificare il seguente valore stringa per questo parametro: `CONTENT_TYPE=text/xml`.
-      * Un valore stringa che specifica il `HTTP_USER_AGENT` valore dell’intestazione, come `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * A `RenderOptionsSpec` oggetto che memorizza le opzioni di runtime.
+      * Oggetto `com.adobe.idp.Document` contenente i dati del modulo.
+      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specificare il tipo di contenuto da gestire specificando uno o più valori per la variabile di ambiente `CONTENT_TYPE`. Ad esempio, per gestire i dati XML, specificare il valore stringa seguente per questo parametro: `CONTENT_TYPE=text/xml`.
+      * Valore stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di runtime.
 
-     Il `processFormSubmission` il metodo restituisce un `FormsResult` oggetto contenente i risultati dell’invio del modulo.
+     Il metodo `processFormSubmission` restituisce un oggetto `FormsResult` contenente i risultati dell&#39;invio del modulo.
 
-   * Determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati del modulo richiamando `FormsResult` dell&#39;oggetto `getAction` metodo. Se questo metodo restituisce il valore `0`, i dati sono pronti per l’elaborazione.
-   * Recuperare i dati del modulo creando un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo. Questo oggetto contiene dati del modulo che possono essere inviati al servizio di output.
-   * Creare un `java.io.InputStream` oggetto richiamando il `java.io.DataInputStream` costruttore e passaggio `com.adobe.idp.Document` oggetto.
-   * Creare un `org.w3c.dom.DocumentBuilderFactory` oggetto chiamando l&#39;oggetto statico `org.w3c.dom.DocumentBuilderFactory` dell&#39;oggetto `newInstance` metodo.
-   * Creare un `org.w3c.dom.DocumentBuilder` oggetto richiamando il `org.w3c.dom.DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` metodo.
-   * Creare un `org.w3c.dom.Document` oggetto richiamando il `org.w3c.dom.DocumentBuilder` dell&#39;oggetto `parse` e passando il `java.io.InputStream` oggetto.
-   * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, questo metodo personalizzato viene chiamato `getNodeText`. Viene visualizzato il corpo di questo metodo.
+   * Determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati del modulo richiamando il metodo `getAction` dell&#39;oggetto `FormsResult`. Se questo metodo restituisce il valore `0`, i dati sono pronti per essere elaborati.
+   * Recuperare i dati del modulo creando un oggetto `com.adobe.idp.Document` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`. Questo oggetto contiene dati del modulo che possono essere inviati al servizio di output.
+   * Creare un oggetto `java.io.InputStream` richiamando il costruttore `java.io.DataInputStream` e passando l&#39;oggetto `com.adobe.idp.Document`.
+   * Creare un oggetto `org.w3c.dom.DocumentBuilderFactory` chiamando il metodo `newInstance` dell&#39;oggetto `org.w3c.dom.DocumentBuilderFactory` statico.
+   * Creare un oggetto `org.w3c.dom.DocumentBuilder` richiamando il metodo `newDocumentBuilder` dell&#39;oggetto `org.w3c.dom.DocumentBuilderFactory`.
+   * Creare un oggetto `org.w3c.dom.Document` richiamando il metodo `parse` dell&#39;oggetto `org.w3c.dom.DocumentBuilder` e passando l&#39;oggetto `java.io.InputStream`.
+   * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: l&#39;oggetto `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, il metodo personalizzato è denominato `getNodeText`. Viene visualizzato il corpo di questo metodo.
 
 1. Crea un documento PDF non interattivo utilizzando il servizio di output.
 
-   Creare un documento PDF richiamando `OutputClient` dell&#39;oggetto `generatePDFOutput` e fornendo i seguenti valori:
+   Creare un documento PDF richiamando il metodo `generatePDFOutput` dell&#39;oggetto `OutputClient` e passando i valori seguenti:
 
-   * A `TransformationFormat` valore enum. Per generare un documento PDF, specifica `TransformationFormat.PDF`.
+   * Un valore enum `TransformationFormat`. Per generare un documento PDF, specificare `TransformationFormat.PDF`.
    * Valore stringa che specifica il nome della struttura del modulo. Assicurati che la progettazione del modulo sia compatibile con i dati del modulo recuperati dal servizio Forms.
    * Valore stringa che specifica la directory principale del contenuto in cui si trova la struttura del modulo.
-   * A `PDFOutputOptionsSpec` oggetto contenente le opzioni di runtime di PDF.
-   * A `RenderOptionsSpec` oggetto contenente le opzioni di rendering in fase di esecuzione.
-   * Il `com.adobe.idp.Document` oggetto contenente l&#39;origine dati XML contenente i dati da unire con la struttura del modulo. Assicurati che questo oggetto sia stato restituito da `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-   * Il `generatePDFOutput` il metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
-   * Recupera il documento PDF non interattivo richiamando il `OutputResult` dell&#39;oggetto `getGeneratedDoc` metodo. Questo metodo restituisce un `com.adobe.idp.Document` che rappresenta il documento PDF non interattivo.
+   * Oggetto `PDFOutputOptionsSpec` contenente le opzioni di runtime di PDF.
+   * Oggetto `RenderOptionsSpec` contenente le opzioni di rendering in fase di esecuzione.
+   * Oggetto `com.adobe.idp.Document` contenente l&#39;origine dati XML contenente i dati da unire con la struttura del modulo. Verificare che l&#39;oggetto sia stato restituito dal metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+   * Il metodo `generatePDFOutput` restituisce un oggetto `OutputResult` contenente i risultati dell&#39;operazione.
+   * Recuperare il documento PDF non interattivo richiamando il metodo `getGeneratedDoc` dell&#39;oggetto `OutputResult`. Questo metodo restituisce un&#39;istanza `com.adobe.idp.Document` che rappresenta il documento PDF non interattivo.
 
 1. Memorizzare il modulo PDF in Content Services (obsoleto) utilizzando il servizio Document Management
 
-   Aggiungi il contenuto richiamando `DocumentManagementServiceClientImpl` dell&#39;oggetto `storeContent` e fornendo i seguenti valori:
+   Aggiungere il contenuto richiamando il metodo `storeContent` dell&#39;oggetto `DocumentManagementServiceClientImpl` e passando i valori seguenti:
 
-   * Valore stringa che specifica l&#39;archivio in cui viene aggiunto il contenuto. L’archivio predefinito è `SpacesStore`. Questo valore è un parametro obbligatorio.
-   * Valore stringa che specifica il percorso completo dello spazio in cui viene aggiunto il contenuto (ad esempio, `/Company Home/Test Directory`). Questo valore è un parametro obbligatorio.
-   * Il nome del nodo che rappresenta il nuovo contenuto (ad esempio, `MortgageForm.pdf`). Questo valore è un parametro obbligatorio.
+   * Valore stringa che specifica l&#39;archivio in cui viene aggiunto il contenuto. L&#39;archivio predefinito è `SpacesStore`. Questo valore è un parametro obbligatorio.
+   * Valore stringa che specifica il percorso completo dello spazio in cui viene aggiunto il contenuto, ad esempio `/Company Home/Test Directory`. Questo valore è un parametro obbligatorio.
+   * Nome del nodo che rappresenta il nuovo contenuto, ad esempio `MortgageForm.pdf`. Questo valore è un parametro obbligatorio.
    * Valore stringa che specifica il tipo di nodo. Per aggiungere nuovo contenuto, ad esempio un file PDF, specificare `{https://www.alfresco.org/model/content/1.0}content`. Questo valore è un parametro obbligatorio.
-   * A `com.adobe.idp.Document` oggetto che rappresenta il contenuto. Questo valore è un parametro obbligatorio.
-   * Valore stringa che specifica il valore di codifica, ad esempio `UTF-8`). Questo valore è un parametro obbligatorio.
-   * Un `UpdateVersionType` valore di enumerazione che specifica come gestire le informazioni sulla versione (ad esempio, `UpdateVersionType.INCREMENT_MAJOR_VERSION` per incrementare la versione del contenuto. ) Questo valore è un parametro obbligatorio.
-   * A `java.util.List` che specifica gli aspetti relativi al contenuto. Questo valore è un parametro facoltativo e puoi specificare `null`.
-   * A `java.util.Map` oggetto che memorizza gli attributi del contenuto.
+   * Oggetto `com.adobe.idp.Document` che rappresenta il contenuto. Questo valore è un parametro obbligatorio.
+   * Valore stringa che specifica il valore di codifica, ad esempio `UTF-8`. Questo valore è un parametro obbligatorio.
+   * Valore di enumerazione `UpdateVersionType` che specifica come gestire le informazioni sulla versione (ad esempio, `UpdateVersionType.INCREMENT_MAJOR_VERSION` per incrementare la versione del contenuto. ) Questo valore è un parametro obbligatorio.
+   * Istanza `java.util.List` che specifica gli aspetti correlati al contenuto. Questo valore è un parametro facoltativo ed è possibile specificare `null`.
+   * Oggetto `java.util.Map` che memorizza gli attributi del contenuto.
 
-   Il `storeContent` il metodo restituisce un `CRCResult` oggetto che descrive il contenuto. Utilizzo di un `CRCResult` , ad esempio, puoi ottenere il valore dell’identificatore univoco del contenuto. Per eseguire questa attività, richiama `CRCResult` dell&#39;oggetto `getNodeUuid` metodo.
+   Il metodo `storeContent` restituisce un oggetto `CRCResult` che descrive il contenuto. Utilizzando un oggetto `CRCResult`, è possibile, ad esempio, ottenere il valore dell&#39;identificatore univoco del contenuto. Per eseguire questa attività, richiamare il metodo `getNodeUuid` dell&#39;oggetto `CRCResult`.
 
 **Consulta anche**
 

@@ -36,18 +36,18 @@ La creazione di un’app AEM Mobile On-demand Services è diversa dalla creazion
 
 * I modelli che utilizzano la funzionalità del plug-in devono essere scritti in modo tale da poter essere creati nel browser senza che sia presente il bridge di plug-in.
 
-   * Ad esempio, assicurati di attendere che *pronto all&#39;uso* prima di tentare di accedere all’API di un plug-in.
+   * Ad esempio, assicurati di attendere la funzione *deviceready* prima di tentare di accedere all&#39;API di un plug-in.
 
 ## Linee guida per gli sviluppatori AEM {#guidelines-for-aem-developers}
 
 Le seguenti linee guida aiutano gli sviluppatori AEM competenti per i siti che desiderano creare modelli e componenti per app mobili:
 
-**Strutturare modelli di siti AEM per incoraggiare il riutilizzo e l’estensibilità**
+**Strutturare i modelli di siti AEM per incoraggiare il riutilizzo e l&#39;estensibilità**
 
 * Preferisci più file script di componenti rispetto a un singolo file monolitico
 
-   * Vengono forniti diversi punti di estensione vuoti, ad esempio *customheaderlibs.html* e *customfooterlibs.html*, che consentono allo sviluppatore di modificare il modello della pagina duplicando il minor numero possibile di codice di base
-   * I modelli possono quindi essere estesi e personalizzati tramite Sling’s *sling:resourceSuperType* meccanismo
+   * Sono forniti diversi punti di estensione vuoti, ad esempio *customheaderlibs.html* e *customfooterlibs.html*, che consentono allo sviluppatore di modificare il modello della pagina duplicando il minor numero possibile di codici di base
+   * I modelli possono quindi essere estesi e personalizzati tramite il meccanismo *sling:resourceSuperType* di Sling
 
 * Preferisci Sightly/HTL a JSP come linguaggio di modelli
 
@@ -61,27 +61,27 @@ Le seguenti linee guida aiutano gli sviluppatori AEM competenti per i siti che d
 
 >[!NOTE]
 >
->Ulteriori informazioni sugli script esterni che bloccano il rendering [qui](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Ulteriori informazioni sugli script esterni che bloccano il rendering [sono disponibili qui](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Preferisci librerie JS e CSS lato client specifiche per l’app rispetto a quelle specifiche per il web**
+**Preferisci le librerie JS e CSS lato client specifiche per l&#39;app rispetto a quelle specifiche per il Web**
 
 * Per evitare il sovraccarico in librerie come jQuery Mobile per gestire un&#39;ampia gamma di dispositivi e browser
 * Quando un modello viene eseguito nella visualizzazione web di un’app, puoi controllare le piattaforme e le versioni che l’app supporterà e sapere che sarà presente il supporto JavaScript. Ad esempio, preferisci Ionic (solo CSS) rispetto a jQuery Mobile e Onsen UI rispetto a Bootstrap.
 
 >[!NOTE]
 >
->Per ulteriori informazioni su jQuery mobile, fai clic su [qui](https://jquerymobile.com/browser-support/1.4/).
+>Per ulteriori informazioni su jQuery mobile, fai clic [qui](https://jquerymobile.com/browser-support/1.4/).
 
-**Preferisci le micro librerie a quelle full stack**
+**Preferisci le microlibrerie a quelle full stack**
 
 * Il tempo necessario per inserire i contenuti nel vetro del dispositivo viene rallentato da ogni libreria da cui dipendono gli articoli. Questo rallentamento si aggrava quando si utilizza una nuova visualizzazione web per eseguire il rendering di ogni articolo, pertanto ogni libreria deve essere inizializzata di nuovo da zero
 * Se i tuoi articoli non sono generati come SPA (app a pagina singola), probabilmente non devi includere una libreria full stack come Angular
-* Preferisci librerie singole più piccole che consentono di aggiungere l’interattività richiesta dalla pagina, ad esempio [Clic rapido](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
+* Preferisci librerie singole più piccole che consentono di aggiungere l&#39;interattività richiesta dalla pagina, ad esempio [Fastclick](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
 
-**Riduci al minimo le dimensioni del payload dell’articolo**
+**Riduci al minimo le dimensioni del payload dell&#39;articolo**
 
 * Utilizzare le risorse più piccole possibili in grado di coprire efficacemente il riquadro di visualizzazione più ampio supportato, a una risoluzione ragionevole
-* Utilizza uno strumento come *ImageOptim* sulle immagini per rimuovere eventuali metadati in eccesso
+* Utilizza uno strumento come *ImageOptim* nelle immagini per rimuovere eventuali metadati in eccesso
 
 ## Come procedere {#getting-ahead}
 

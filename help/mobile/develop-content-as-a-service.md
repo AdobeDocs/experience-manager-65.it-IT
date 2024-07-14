@@ -27,12 +27,12 @@ Ciò include l’utilizzo di risorse, contenuto del sito, contenuto CaaS (over-t
 
 >[!NOTE]
 >
->**Contenuti trasmessi via etere** può provenire da uno qualsiasi dei precedenti tramite gestori ContentSync. Può essere utilizzato per raggruppare il pacchetto e la consegna tramite zip e mantenere gli aggiornamenti per tali pacchetti.
+>**Il contenuto over-the-air** può provenire da uno qualsiasi di questi tramite gestori ContentSync. Può essere utilizzato per raggruppare il pacchetto e la consegna tramite zip e mantenere gli aggiornamenti per tali pacchetti.
 
 I servizi di contenuti forniscono tre tipi principali di materiale:
 
-1. **Risorse**
-1. **Contenuto Packaged HTML (HTML/CSS/JS)**
+1. **Assets**
+1. **Contenuto HTML compresso (HTML/CSS/JS)**
 1. **Contenuto indipendente dal canale**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
@@ -41,7 +41,7 @@ I servizi di contenuti forniscono tre tipi principali di materiale:
 
 Le raccolte di risorse sono costrutti AEM che contengono riferimenti ad altre raccolte.
 
-Una raccolta di risorse può essere esposta tramite Content Services. Quando si richiama una raccolta di risorse in una richiesta, viene restituito un oggetto che è un elenco delle risorse, inclusi i relativi URL. Le risorse sono accessibili tramite un URL. L’URL viene fornito in un oggetto. Ad esempio:
+Una raccolta di risorse può essere esposta tramite Content Services. Quando si richiama una raccolta di risorse in una richiesta, viene restituito un oggetto che è un elenco delle risorse, inclusi i relativi URL. Assets è accessibile tramite un URL. L’URL viene fornito in un oggetto. Ad esempio:
 
 * Un’entità pagina restituisce il JSON (oggetto pagina) che include un riferimento a un’immagine. Il riferimento immagine è un URL utilizzato per ottenere il binario della risorsa per l’immagine.
 * Una richiesta per un elenco di risorse in una cartella restituisce il JSON con i dettagli di tutte le entità in tale cartella. Tale elenco è un oggetto. Il JSON dispone di riferimenti URL utilizzati per ottenere il binario della risorsa per ogni risorsa in quella cartella.
@@ -52,7 +52,7 @@ Un valore chiave di Content Services è la capacità di restituire le risorse ot
 
 L’ottimizzazione delle risorse è una funzione lato server, basata sulle informazioni fornite nella richiesta API. Quando possibile, le rappresentazioni delle risorse devono essere memorizzate nella cache, in modo che richieste simili non richiedano la rigenerazione della rappresentazione delle risorse.
 
-### Flusso di lavoro risorse {#assets-workflow}
+### Flusso di lavoro di Assets {#assets-workflow}
 
 Il flusso di lavoro delle risorse è il seguente:
 
@@ -63,19 +63,19 @@ Il flusso di lavoro delle risorse è il seguente:
    1. Scegli una risorsa o una raccolta di risorse
    1. Personalizzare il rendering JSON
 
-Il diagramma seguente mostra **Flusso di lavoro di riferimento risorse**:
+Il diagramma seguente mostra il **flusso di lavoro di riferimento Assets**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Gestione delle risorse {#managing-assets}
+### Gestione di Assets {#managing-assets}
 
 Content Services fornisce l&#39;accesso alle risorse gestite dall&#39;AEM a cui non è possibile fare riferimento tramite altri contenuti AEM.
 
-#### Risorse gestite esistenti {#existing-managed-assets}
+#### Assets gestito esistente {#existing-managed-assets}
 
 Un utente di AEM Sites e Assets utilizza AEM Assets per gestire tutto il proprio materiale digitale per tutti i canali. Stanno sviluppando un’app mobile nativa e devono utilizzare diverse risorse gestite da AEM Assets. Ad esempio, loghi, immagini di sfondo e icone dei pulsanti.
 
-Attualmente queste sono distribuite nell’archivio delle risorse. I file a cui l’app deve fare riferimento sono i seguenti:
+Attualmente queste sono distribuite nell’archivio di Assets. I file a cui l’app deve fare riferimento sono i seguenti:
 
 * /content/dam/geometrixx-outdoors/brand/logo_light.png
 * /content/dam/geometrixx-outdoors/brand/logo_dark.png
@@ -115,8 +115,8 @@ AEM Content Services fornisce contenuti HTML all’app mobile tramite l’API. I
 
 Sono considerate le seguenti opzioni:
 
-* **File ZIP:** Per avere la migliore possibilità di visualizzare correttamente sul dispositivo, i materiali di riferimento della pagina (css, JavaScript, risorse e così via) sono inclusi in un singolo file compresso con la risposta. I riferimenti nella pagina HTML possono essere regolati in modo da utilizzare un percorso relativo per questi file.
-* **Streaming:** Recupero di un manifesto dei file richiesti da AEM. Quindi utilizza tale manifesto per richiedere tutti i file (HTML, CSS, JS e così via) con le richieste successive.
+* **File ZIP:** Per avere la possibilità di visualizzare correttamente sul dispositivo, il materiale di riferimento della pagina (css, JavaScript, risorse e così via) è incluso in un singolo file compresso con la risposta. I riferimenti nella pagina HTML possono essere regolati in modo da utilizzare un percorso relativo per questi file.
+* **Streaming:** ottenimento del manifesto dei file richiesti da AEM. Quindi utilizza tale manifesto per richiedere tutti i file (HTML, CSS, JS e così via) con le richieste successive.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 

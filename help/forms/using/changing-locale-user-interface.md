@@ -27,42 +27,42 @@ Per localizzare l’interfaccia utente dell’area di lavoro di AEM Forms nella 
 * Localizzare categorie, code e processi compressi.
 * Selettore data localizzazione
 
-Prima di eseguire i passaggi precedenti, assicurati di seguire i passaggi elencati in [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
+Prima di eseguire i passaggi precedenti, assicurati di seguire i passaggi elencati in [Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
->Per modificare la lingua della schermata di accesso dell’area di lavoro AEM Forms, consulta [Creazione di una schermata di accesso](../../forms/using/creating-new-login-screen.md).
+>Per modificare la lingua della schermata di accesso dell&#39;area di lavoro di AEM Forms, vedere [Creazione di una schermata di accesso](../../forms/using/creating-new-login-screen.md).
 
 ## Localizzazione del testo {#localizing-text}
 
-Effettua le seguenti operazioni per aggiungere il supporto per una lingua *Nuovo* e il codice delle impostazioni internazionali del browser *nw*.
+Eseguire la procedura seguente per aggiungere il supporto per una lingua *New* e il codice delle impostazioni locali del browser *nw*.
 
-1. Accedi a CRXDE Liti.
-L’URL predefinito di CRXDE Liti è `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Passa alla posizione `apps/ws/locales` e crea una cartella `nw.`
-1. Copiare il file `translation.json`dalla posizione `/apps/ws/locales/en-US` alla posizione `/apps/ws/locales/nw` .
-1. Accedi a `/apps/ws/locales/nw` e apri `translation.json` per la modifica. Apporta al file translation.json le modifiche specifiche per le impostazioni internazionali.
+1. Accedi a CRXDE Lite.
+URL predefinito di CRXDE Lite: `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Passare alla posizione `apps/ws/locales` e creare una cartella `nw.`
+1. Copiare il file `translation.json` dal percorso `/apps/ws/locales/en-US` al percorso `/apps/ws/locales/nw`.
+1. Passare a `/apps/ws/locales/nw` e aprire `translation.json` per la modifica. Apporta al file translation.json le modifiche specifiche per le impostazioni internazionali.
 
    Gli esempi seguenti contengono il file translation.json per le lingue inglese e francese dell’area di lavoro di AEM Forms.
 
-   ![translation_json_in_it](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
+   ![translation_json_in_en](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
 ## Localizzazione di categorie, code e processi compressi {#localizing-collapsed-categories-queues-and-processes}
 
-AEM Forms Workspace utilizza le immagini per visualizzare intestazioni di categorie, code e processi. Per localizzare queste intestazioni è necessario un pacchetto di sviluppo. Per informazioni dettagliate sulla creazione di un pacchetto di sviluppo, consulta [Creazione del codice dell’area di lavoro di AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+AEM Forms Workspace utilizza le immagini per visualizzare intestazioni di categorie, code e processi. Per localizzare queste intestazioni è necessario un pacchetto di sviluppo. Per informazioni dettagliate sulla creazione di un pacchetto di sviluppo, vedere [Creazione del codice dell&#39;area di lavoro di AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-Nei passaggi seguenti, si presume che i nuovi file di immagine localizzati siano *Categories_nw.png*, *Queue_nw.png*, e *Processes_nw.png*. La larghezza consigliata delle immagini deve essere impostata su 19 pixel.
+Nei passaggi seguenti si presume che i nuovi file immagine localizzati siano *Categories_nw.png*, *Queue_nw.png* e *Processes_nw.png*. La larghezza consigliata delle immagini deve essere impostata su 19 pixel.
 
 >[!NOTE]
 >
 >Per trovare il codice di lingua del browser. Apri `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
-![collapsing_panels_image](assets/collapsing_panels_image.png)
+![immagine_pannelli_compressi](assets/collapsing_panels_image.png)
 
 Per localizzare le immagini, effettuare le seguenti operazioni:
 
-1. Utilizzando un client WebDAV, inserire i file immagine nel */apps/ws/images* cartella.
-1. Accedi a */apps/ws/css*. Apri *newStyle.css* per modificare e aggiungere le seguenti voci:
+1. Utilizzando un client WebDAV, inserire i file immagine nella cartella */apps/ws/images*.
+1. Passa a */apps/ws/css*. Apri *newStyle.css* per la modifica e aggiungi le seguenti voci:
 
    ```css
    #categoryListBar .content.nw {
@@ -78,8 +78,8 @@ Per localizzare le immagini, effettuare le seguenti operazioni:
    }
    ```
 
-1. Eseguire tutte le modifiche semantiche elencate in [Personalizzazione di Workspace](../../forms/using/introduction-customizing-html-workspace.md) articolo.
-1. Accedi a *js/runtime/utility* e aprire la *usersession.js* file per la modifica.
+1. Esegui tutte le modifiche semantiche elencate nell&#39;articolo [Personalizzazione Workspace](../../forms/using/introduction-customizing-html-workspace.md).
+1. Passa alla cartella *js/runtime/utility* e apri il file *usersession.js* per la modifica.
 1. Individua il codice elencato nel blocco di codice originale e aggiungi la condizione *lang!== &#39;nw&#39;* all&#39;istruzione if:
 
    ```javascript
@@ -108,18 +108,18 @@ Per localizzare le immagini, effettuare le seguenti operazioni:
 
 ## Localizzazione selezione data {#localizing-date-picker}
 
-È necessario un pacchetto di sviluppo per individuare *datepicker* API. Per informazioni dettagliate sulla creazione di un pacchetto di sviluppo, consulta [Creazione del codice dell’area di lavoro di AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+È necessario un pacchetto di sviluppo per localizzare l&#39;API *datepicker*. Per informazioni dettagliate sulla creazione di un pacchetto di sviluppo, vedere [Creazione del codice dell&#39;area di lavoro di AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-1. Scarica ed estrai il file [Pacchetto interfaccia utente jQuery](https://jqueryui.com/download/all/), passa a *&lt;extracted jquery=&quot;&quot; ui=&quot;&quot; package=&quot;&quot;>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
+1. Scarica ed estrai il pacchetto dell&#39;interfaccia utente [jQuery](https://jqueryui.com/download/all/), passa a *&lt;pacchetto dell&#39;interfaccia utente jquery estratto>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copia il file jquery.ui.datepicker-nw.js per il codice locale nw in apps/ws/js/libs/jqueryui e apporta al file le modifiche specifiche per la lingua.
-1. Accedi a `apps/ws/js` e apri `jquery.ui.datepicker-nw.js` file per la modifica.
-1. Nel file main.js, crea un alias per `jquery.ui.datepicker-nw.js.` Il codice per creare un alias per `jquery.ui.datepicker-nw.js` file:
+1. Passare a `apps/ws/js` e aprire il file `jquery.ui.datepicker-nw.js` per la modifica.
+1. Nel file main.js, creare un alias per `jquery.ui.datepicker-nw.js.` Il codice per creare un alias per il file `jquery.ui.datepicker-nw.js` è:
 
    ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. Usa alias `jqueryuidatepickernw` per includere `jquery.ui.datepicker-nw.js` in tutti i file che utilizzano datepicker. Il datepicker viene utilizzato nei seguenti file:
+1. Utilizzare l&#39;alias `jqueryuidatepickernw` per includere il file `jquery.ui.datepicker-nw.js` in tutti i file che utilizzano datepicker. Il datepicker viene utilizzato nei seguenti file:
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`

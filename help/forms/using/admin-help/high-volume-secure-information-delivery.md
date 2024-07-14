@@ -28,4 +28,4 @@ Se viene generata una fattura mensile per una società di telecomunicazioni, è 
 
 La creazione di un criterio astratto è supportata solo tramite l’SDK Java per la sicurezza dei documenti. È tuttavia possibile amministrare i criteri creati dai criteri astratti dalle pagine Web di Document Security. I criteri creati con questo metodo hanno lo stesso comportamento di quelli creati dalle pagine Web di Document Security.
 
-Consulta [Programmazione con i moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63) per ulteriori informazioni.
+Per ulteriori informazioni, vedere [Programmazione con moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63).

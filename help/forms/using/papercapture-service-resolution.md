@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## Problema  
 
-Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.21.0, il `PaperCapture` Il servizio non riesce a eseguire operazioni OCR (Optical Character Recognition) sui PDF. Il servizio non genera output sotto forma di PDF o file di registro.
+Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.21.0, il servizio `PaperCapture` non è in grado di eseguire operazioni OCR (riconoscimento ottico dei caratteri) sui PDF. Il servizio non genera output sotto forma di PDF o file di registro.
 
 ## Applicabile a
 
@@ -27,7 +27,7 @@ Questa soluzione si applica a:
 
 ## Soluzione
 
-1. Scarica il file [hotfix](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0) dal portale di distribuzione software.
+1. Scarica [hotfix](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0) dal portale di distribuzione software.
 1. Estrarre e copiare il contenuto della cartella scaricata.
 1. Passare ai percorsi seguenti per i server applicazioni corrispondenti:
    * **jboss**:
@@ -39,7 +39,7 @@ Questa soluzione si applica a:
    * **Configurazione OSGi**:\
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
 1. Arrestare il server applicazioni AEM.
-1. Sostituisci il contenuto esistente del `PaperCaptureSvc` cartella con il contenuto copiato.
+1. Sostituire il contenuto esistente della cartella `PaperCaptureSvc` con il contenuto copiato.
 1. Riavviare il server applicazioni AEM.
 
    >[!NOTE]

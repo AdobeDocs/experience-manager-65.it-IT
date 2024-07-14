@@ -17,14 +17,14 @@ ht-degree: 0%
 
 # Personalizzazione delle schede per un’attività {#customizing-tabs-for-a-task}
 
-È possibile personalizzare i nomi delle schede per `Start Process` componente in `Start Process` Visualizzazione Uber e `Task Details` componente in `ToDo` Vista Uber.
+È possibile personalizzare i nomi delle schede per il componente `Start Process` nella visualizzazione Uber `Start Process` e il componente `Task Details` nella visualizzazione Uber `ToDo`.
 
-1. Segui le [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Modifica il valore di `tabname`nel `translation.json` file.
+1. Segui i [passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Modificare il valore di `tabname` nel file `translation.json`.
 
-   Ad esempio, modifica `/apps/ws/locales/en-US/translation.json` per l’inglese, procedere come segue.
+   Modificare ad esempio `/apps/ws/locales/en-US/translation.json` per l&#39;inglese nel modo seguente.
 
-   * Per le attività avviate nel processo di avvio, utilizzare lo snippet seguente del `"startprocess" : {}` blocco.
+   * Per le attività avviate nel processo di avvio, utilizzare lo snippet seguente del blocco `"startprocess" : {}`.
 
    ```json
    "tabname" : {
@@ -35,7 +35,7 @@ ht-degree: 0%
            }
    ```
 
-   * Per le attività in Da fare, utilizza lo snippet seguente della `"todo" : {}` blocco.
+   * Per le attività in Da fare, utilizzare lo snippet seguente del blocco `"todo" : {}`.
 
    ```json
    "tabname" : {

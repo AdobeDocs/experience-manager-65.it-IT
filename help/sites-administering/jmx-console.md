@@ -21,9 +21,9 @@ ht-degree: 0%
 
 La console JMX consente di monitorare e gestire i servizi sul server CRX. Le sezioni che seguono riepilogano gli attributi e le operazioni esposte tramite il framework JMX.
 
-Per informazioni sull&#39;utilizzo dei controlli della console, vedere [Utilizzo della console JMX](#using-the-jmx-console). Per informazioni di base su JMX, vedi [Tecnologia Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) sul sito web dell’Oracle.
+Per informazioni sull&#39;utilizzo dei controlli della console, vedere [Utilizzo della console JMX](#using-the-jmx-console). Per informazioni di base su JMX, consulta la pagina relativa alla tecnologia [Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) nel sito Web di Oracle.
 
-Per informazioni sulla creazione di MBean per gestire i servizi tramite la console JMX, consulta [Integrazione dei servizi con la console JMX](/help/sites-developing/jmx-integration.md).
+Per informazioni sulla creazione di MBean per la gestione dei servizi tramite la console JMX, vedere [Integrazione dei servizi con la console JMX](/help/sites-developing/jmx-integration.md).
 
 ## Manutenzione del flusso di lavoro {#workflow-maintenance}
 
@@ -34,16 +34,16 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 >[!NOTE]
 >
->Consulta la [console flusso di lavoro](/help/sites-administering/workflows-administering.md) per ulteriori strumenti di amministrazione del flusso di lavoro e descrizioni dei possibili stati delle istanze del flusso di lavoro.
+>Per ulteriori strumenti di amministrazione del flusso di lavoro e descrizioni dei possibili stati delle istanze del flusso di lavoro, consulta la [console flusso di lavoro](/help/sites-administering/workflows-administering.md).
 
 ### Operazioni {#operations}
 
-**listRunningWorkflowsPerModel** Elenca il numero di istanze del flusso di lavoro in esecuzione per ciascun modello di flusso di lavoro.
+**listRunningWorkflowsPerModel** Elenca il numero di istanze del flusso di lavoro in esecuzione per ogni modello di flusso di lavoro.
 
 * Argomenti: nessuno
 * Valore restituito: dati tabulari contenenti le colonne Count e ModelId.
 
-**listCompletedWorkflowsPerModel** Elenca il numero di istanze di flusso di lavoro completate per ciascun modello di flusso di lavoro.
+**listCompletedWorkflowsPerModel** Elenca il numero di istanze di flusso di lavoro completate per ogni modello di flusso di lavoro.
 
 * Argomenti: nessuno
 * Valore restituito: dati tabulari contenenti le colonne Count e ModelId.
@@ -58,8 +58,8 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
    * Lavori attivi
    * Tempo medio di elaborazione
    * Tempo medio di attesa
-   * Lavori annullati
-   * Lavori con errori
+   * Processi annullati
+   * Processi con errori
    * Processi completati
    * Processi elaborati
    * Processi in coda
@@ -72,12 +72,12 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
    * Nome argomento
    * Tempo medio di elaborazione
    * Tempo medio di attesa
-   * Lavori annullati
-   * Lavori con errori
+   * Processi annullati
+   * Processi con errori
    * Processi completati
    * Processi elaborati
 
-**returnFailedWorkflowCount** Mostra il numero di istanze del flusso di lavoro non riuscite. È possibile specificare un modello di flusso di lavoro per eseguire query o recuperare informazioni per tutti i modelli di flusso di lavoro.
+**returnFailedWorkflowCount** mostra il numero di istanze del flusso di lavoro non riuscite. È possibile specificare un modello di flusso di lavoro per eseguire query o recuperare informazioni per tutti i modelli di flusso di lavoro.
 
 * Argomenti:
 
@@ -87,7 +87,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Valore restituito: numero di istanze del flusso di lavoro non riuscite.
 
-**returnFailedWorkflowCountPerModel** Mostra il numero di istanze del flusso di lavoro non riuscite per ciascun modello di flusso di lavoro.
+**returnFailedWorkflowCountPerModel** Mostra il numero di istanze del flusso di lavoro non riuscite per ogni modello di flusso di lavoro.
 
 * Argomenti: nessuno.
 * Valore restituito: dati tabulari contenenti le colonne Count e Model ID.
@@ -96,8 +96,8 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Argomenti:
 
-   * Riavvia l’istanza: (facoltativo) specifica un valore di `true` per riavviare le istanze dopo che sono state terminate. Il valore predefinito di `false` non riavvia le istanze del flusso di lavoro terminate.
-   * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+   * Riavvia l&#39;istanza: (facoltativo) specifica un valore di `true` per riavviare le istanze dopo che sono state terminate. Il valore predefinito di `false` non causa il riavvio delle istanze del flusso di lavoro terminate.
+   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze non riuscite di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
@@ -111,11 +111,11 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
    * StartComment
    * WorkflowTitle
 
-**retryFailedWorkItems** Tentativi non riusciti di eseguire i passaggi dell&#39;elemento di lavoro. È possibile riprovare tutti gli elementi di lavoro non riusciti o solo gli elementi di lavoro non riusciti per un modello di flusso di lavoro specifico. È possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguire effettivamente l&#39;operazione.
+**retryFailedWorkItems** Tenta di eseguire i passaggi dell&#39;elemento di lavoro non riusciti. È possibile riprovare tutti gli elementi di lavoro non riusciti o solo gli elementi di lavoro non riusciti per un modello di flusso di lavoro specifico. È possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguire effettivamente l&#39;operazione.
 
 * Argomenti:
 
-   * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificare alcun modello per applicare l&#39;operazione agli elementi di lavoro non riusciti di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
@@ -129,7 +129,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
    * StartComment
    * WorkflowTitle
 
-**PurgeActive** Rimuove le istanze di flusso di lavoro attive di una pagina specifica. Potete eliminare le varianti attive per tutti i modelli o solo le varianti per un modello specifico. Se lo si desidera, è possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguirla effettivamente.
+**PurgeActive** rimuove le istanze di flusso di lavoro attive di una pagina specifica. Potete eliminare le varianti attive per tutti i modelli o solo le varianti per un modello specifico. Se lo si desidera, è possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguirla effettivamente.
 
 * Argomenti:
 
@@ -137,7 +137,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Numero di giorni dall’avvio del flusso di lavoro: età in giorni delle istanze del flusso di lavoro da eliminare.
-   * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
 * Valore restituito: dati tabulari relativi alle istanze del flusso di lavoro attive eliminate, incluse le colonne seguenti:
 
@@ -158,18 +158,18 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Valore restituito: numero di istanze di flusso di lavoro non aggiornate.
 
-**restartStaleWorkflows** Riavvia le istanze di flusso di lavoro obsolete. È possibile riavviare tutte le istanze non aggiornate o solo le istanze non aggiornate per un modello specifico. È inoltre possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguire l&#39;operazione.
+**restartStaleWorkflows** Riavvia le istanze del flusso di lavoro non aggiornate. È possibile riavviare tutte le istanze non aggiornate o solo le istanze non aggiornate per un modello specifico. È inoltre possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguire l&#39;operazione.
 
 * Argomenti:
 
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze non aggiornate di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
 * Valore restituito: elenco di istanze del flusso di lavoro riavviate.
 
-**fetchModelList** Elenca tutti i modelli di workflow.
+**fetchModelList** Elenca tutti i modelli di flusso di lavoro.
 
 * Argomenti: nessuno
 * Valore restituito: dati tabulari che identificano i modelli di flusso di lavoro, incluse le colonne ModelId e ModelName.
@@ -194,7 +194,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Valore restituito: numero di istanze del flusso di lavoro completate.
 
-**purgeCompleted** Rimuove i record dei flussi di lavoro completati di una data specifica dall’archivio. Utilizza questa operazione periodicamente per ridurre al minimo le dimensioni dell’archivio quando utilizzi in modo massiccio i flussi di lavoro. Potete eliminare le varianti completate per tutti i modelli o solo le varianti per un modello specifico. Se lo si desidera, è possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguirla effettivamente.
+**purgeCompleted** Rimuove i record dei flussi di lavoro completati di una data specifica dall&#39;archivio. Utilizza questa operazione periodicamente per ridurre al minimo le dimensioni dell’archivio quando utilizzi in modo massiccio i flussi di lavoro. Potete eliminare le varianti completate per tutti i modelli o solo le varianti per un modello specifico. Se lo si desidera, è possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguirla effettivamente.
 
 * Argomenti:
 
@@ -202,7 +202,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Numero di giorni dal completamento del flusso di lavoro: il numero di giorni in cui le istanze del flusso di lavoro sono state completate.
-   * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
 * Valore restituito: dati tabulari relativi alle istanze del flusso di lavoro completate che vengono eliminate, incluse le colonne seguenti:
 
@@ -222,23 +222,23 @@ Informazioni sull’archivio CRX
 
 ### Attributi {#attributes}
 
-**Nome** Nome dell’implementazione dell’archivio JCR. Sola lettura.
+**Nome** il nome dell&#39;implementazione dell&#39;archivio JCR. Sola lettura.
 
-**Versione** Versione di implementazione dell’archivio. Sola lettura.
+**Versione** Versione di implementazione del repository. Sola lettura.
 
-**DirHome** La directory in cui si trova l’archivio. La posizione predefinita è &lt;quickstart_jar_location>/crx-quickstart/repository. Sola lettura.
+**HomeDir** La directory in cui si trova l&#39;archivio. La posizione predefinita è &lt;QuickStart_Jar_Location>/crx-quickstart/repository. Sola lettura.
 
 **NomeCliente** Il nome del cliente a cui viene rilasciata la licenza software. Sola lettura.
 
-**LicenseKey** Chiave di licenza univoca per questa installazione dell’archivio. Sola lettura.
+**LicenseKey** Chiave di licenza univoca per questa installazione dell&#39;archivio. Sola lettura.
 
-**AvailableDiskSpace** Spazio su disco disponibile per questa istanza del repository, in Mbyte. Sola lettura.
+**SpazioDiscoDisponibile** Spazio su disco disponibile per questa istanza del repository, in Mbyte. Sola lettura.
 
-**MaximumNumberOfOpenFiles** Il numero di file che è possibile aprire contemporaneamente. Sola lettura.
+**MaximumNumberOfOpenFiles** Numero di file che è possibile aprire contemporaneamente. Sola lettura.
 
 **SessionTracker** Il valore della variabile di sistema crx.debug.essions. true indica una sessione di debug. false indica una sessione normale. Lettura/scrittura.
 
-**Descrittori** Un insieme di coppie chiave-valore che rappresentano le proprietà dell’archivio. Tutte le proprietà sono di sola lettura.
+**Descrittori** Un insieme di coppie chiave-valore che rappresentano le proprietà dell&#39;archivio. Tutte le proprietà sono di sola lettura.
 
 <table>
  <tbody>
@@ -488,21 +488,21 @@ Informazioni sull’archivio CRX
  </tbody>
 </table>
 
-**WorkspaceNames** Nomi delle aree di lavoro nel repository. Sola lettura.
+**WorkspaceNames** I nomi delle aree di lavoro nell&#39;archivio. Sola lettura.
 
-**DataStoreGarbageCollectionDelay** Quantità di tempo, in millisecondi, in cui la raccolta di oggetti inattivi sospende la scansione ogni decimo nodo. Lettura/scrittura.
+**DataStoreGarbageCollectionDelay** Tempo in millisecondi di sospensione dell&#39;insieme di oggetti inattivi dopo la scansione di ogni decimo nodo. Lettura/scrittura.
 
-**RitardoBackup** Tempo, in millisecondi, di sospensione del processo di backup tra ogni passaggio del backup. Lettura/scrittura.
+**BackupDelay** Il tempo in millisecondi di sospensione del processo di backup tra ogni passaggio del backup. Lettura/scrittura.
 
-**Backup in corso** Il valore true indica che è in esecuzione un processo di backup. Sola lettura.
+**BackupInProgress** Il valore true indica che è in esecuzione un processo di backup. Sola lettura.
 
-**AvanzamentoBackup** Per il backup corrente, la percentuale di tutti i file di cui è stato eseguito il backup. Sola lettura.
+**BackupProgress** Per il backup corrente, la percentuale di tutti i file di cui è stato eseguito il backup. Sola lettura.
 
 **CurrentBackupTarget** Per il backup corrente, il file ZIP in cui vengono archiviati i file di backup. Quando non è in corso un backup, non viene visualizzato alcun valore. Sola lettura.
 
 **BackupWasSuccessful** Il valore true indica che non si sono verificati errori durante il backup corrente o che non è in corso alcun backup. false indica che si è verificato un errore durante il backup corrente. Sola lettura.
 
-**BackupResult** Stato del backup corrente. Sono possibili i seguenti valori:
+**BackupResult** Lo stato del backup corrente. Sono possibili i seguenti valori:
 
 * Backup in corso: è in corso un backup.
 * Backup annullato: backup annullato.
@@ -512,23 +512,23 @@ Informazioni sull’archivio CRX
 
 Sola lettura.
 
-**TarOptimizationRunningSince** Ora di inizio del processo di ottimizzazione del file TAR corrente. Sola lettura.
+**TarOptimizationRunningSince** l&#39;ora di inizio del processo di ottimizzazione del file TAR corrente. Sola lettura.
 
-**TarOptimizationDelay** Il tempo, in millisecondi, di sospensione del processo di ottimizzazione TAR tra ogni fase del processo. Lettura/scrittura.
+**TarOptimizationDelay** Il tempo in millisecondi in cui il processo di ottimizzazione TAR interrompe ogni passaggio del processo. Lettura/scrittura.
 
-**ProprietàCluster** Un insieme di coppie chiave-valore che rappresentano proprietà e valori del cluster. Ogni riga della tabella rappresenta una proprietà cluster. Sola lettura.
+**ClusterProperties** Un insieme di coppie chiave-valore che rappresentano proprietà e valori del cluster. Ogni riga della tabella rappresenta una proprietà cluster. Sola lettura.
 
-**ClusterNodes** Membri del cluster di repository.
+**ClusterNodes** Membri del cluster del repository.
 
-**ClusterId** Identificatore di questo cluster di repository. Sola lettura.
+**ClusterId** L&#39;identificatore di questo cluster di repository. Sola lettura.
 
-**ClusterMasterId** Identificatore del nodo principale di questo cluster di repository. Sola lettura.
+**ClusterMasterId** Identificatore del nodo master di questo cluster di repository. Sola lettura.
 
-**ClusterNodeId** Identificatore di questo nodo del cluster di repository. Sola lettura.
+**ClusterNodeId** L&#39;identificatore di questo nodo del cluster di repository. Sola lettura.
 
 ### Operazioni {#operations-1}
 
-**createWorkspace** Crea un&#39;area di lavoro in questo repository.
+**createWorkspace** Crea un&#39;area di lavoro in questo archivio.
 
 * Argomenti:
 
@@ -536,7 +536,7 @@ Sola lettura.
 
 * Valore restituito: nessuno
 
-**runDataStoreGarbageCollection** Esegue la Garbage Collection sui nodi dell&#39;archivio.
+**runDataStoreGarbageCollection** esegue la raccolta oggetti inattivi sui nodi dell&#39;archivio.
 
 * Argomenti:
 
@@ -549,17 +549,17 @@ Sola lettura.
 * Argomenti: nessuno
 * Valore restituito: rappresentazione stringa dello stato corrente
 
-**startBackup** Esegue il backup dei dati del repository in un file ZIP.
+**startBackup** esegue il backup dei dati del repository in un file ZIP.
 
 * Argomenti:
 
-   * `target`: (Facoltativo) A `String` valore che rappresenta il nome del file ZIP o della directory in cui archiviare i dati del repository. Per utilizzare un file ZIP, Includi l’estensione del nome del file ZIP. Per utilizzare una directory, non includere alcuna estensione di file.
+   * `target`: (facoltativo) un valore `String` che rappresenta il nome del file ZIP o della directory in cui archiviare i dati del repository. Per utilizzare un file ZIP, Includi l’estensione del nome del file ZIP. Per utilizzare una directory, non includere alcuna estensione di file.
 
      Per eseguire un backup incrementale, specificare la directory utilizzata in precedenza per il backup.
 
      È possibile specificare un percorso assoluto o relativo. I percorsi relativi sono relativi alla directory principale della directory crx-quickstart.
 
-     Se non specificate alcun valore, il valore predefinito è `backup-currentdate.zip` viene utilizzato, dove `currentdate` è nel formato `yyyyMMdd-HHmm`.
+     Se non si specifica alcun valore, viene utilizzato il valore predefinito `backup-currentdate.zip`, dove `currentdate` è nel formato `yyyyMMdd-HHmm`.
 
 * Valore restituito: nessuno
 
@@ -588,15 +588,15 @@ Sola lettura.
 * Argomenti: nessuno
 * Valore restituito: nessuno
 
-**tarIndexMerge** Unisce i file di indice principali di tutti i set TAR. I file di indice principali sono file con versioni principali diverse. Ad esempio, i seguenti file vengono uniti nel file index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. I file che sono stati uniti vengono eliminati (nell&#39;esempio precedente, index_1_1.tar, index_2_0.tar e index_3_0.tar vengono eliminati).
+**tarIndexMerge** unisce i file di indice principali di tutti i set TAR. I file di indice principali sono file con versioni principali diverse. Ad esempio, i seguenti file vengono uniti nel file index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. I file che sono stati uniti vengono eliminati (nell&#39;esempio precedente, index_1_1.tar, index_2_0.tar e index_3_0.tar vengono eliminati).
 
 * Argomenti:
 
-   * `background`: valore booleano che indica se eseguire l’operazione in background in modo che la console web sia utilizzabile durante l’esecuzione. Il valore true esegue l&#39;operazione in background.
+   * `background`: valore booleano che indica se eseguire l&#39;operazione in background in modo che la console Web sia utilizzabile durante l&#39;esecuzione. Il valore true esegue l&#39;operazione in background.
 
 * Valore restituito: nessuno
 
-**transformClusterMaster** Imposta questo nodo del repository come nodo principale del cluster. Se non è già master, questo comando arresta il listener dell&#39;istanza master corrente e avvia un listener master sul nodo corrente. Questo nodo viene quindi impostato come nodo principale e riavviato, causando la connessione a questa istanza di tutti gli altri nodi del cluster, ovvero quelli controllati dal nodo principale.
+**transformClusterMaster** Imposta questo nodo dell&#39;archivio come nodo principale del cluster. Se non è già master, questo comando arresta il listener dell&#39;istanza master corrente e avvia un listener master sul nodo corrente. Questo nodo viene quindi impostato come nodo principale e riavviato, causando la connessione a questa istanza di tutti gli altri nodi del cluster, ovvero quelli controllati dal nodo principale.
 
 * Argomenti: nessuno
 * Valore restituito: nessuno
@@ -605,23 +605,23 @@ Sola lettura.
 
 * Argomenti:
 
-   * `master`: valore stringa che rappresenta l’indirizzo IP o il nome del computer che esegue il nodo dell’archivio master.
+   * `master`: valore stringa che rappresenta l&#39;indirizzo IP o il nome del computer che esegue il nodo del repository master.
    * `username`: nome da utilizzare per l&#39;autenticazione con il cluster.
-   * `password`: password da utilizzare per l’autenticazione.
+   * `password`: password da utilizzare per l&#39;autenticazione.
 
 * Valore restituito: nessuno
 
-**traversalCheck** Attraversa e, facoltativamente, corregge le incoerenze in una sottostruttura che inizia in un nodo specifico. Questo è trattato in modo dettagliato nella documentazione su Persistence Manager.
+**traversalCheck** Individua e, facoltativamente, corregge le incoerenze in una sottostruttura che inizia in un nodo specifico. Questo è trattato in modo dettagliato nella documentazione su Persistence Manager.
 
-**consistencyCheck** Controlla e, facoltativamente, corregge la coerenza nell’archivio dati. Questo è trattato in modo dettagliato nella documentazione sull’archivio dati.
+**consistencyCheck** Verifica e, facoltativamente, corregge la coerenza nell&#39;archivio dati. Questo è trattato in modo dettagliato nella documentazione sull’archivio dati.
 
 ## Statistiche archivio (TimeSeries) {#repository-statistics-timeseries}
 
-Il valore del campo TimeSeries per ogni tipo di statistica che `org.apache.jackrabbit.api.stats.RepositoryStatistics` definisce.
+Il valore del campo TimeSeries per ogni tipo di statistica definito da `org.apache.jackrabbit.api.stats.RepositoryStatistics`.
 
 * Dominio: `com.adobe.granite`
 * Tipo: `TimeSeries`
-* Name (Nome): uno dei seguenti valori del `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Classe enum:
+* Nome: uno dei seguenti valori della classe Enum `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -664,13 +664,13 @@ Informazioni statistiche sulle query dell’archivio.
 
 ### Attributi {#attributes-2}
 
-**SlowQueries** Informazioni sulle query dell’archivio che hanno richiesto più tempo per essere completate. Sola lettura.
+**SlowQueries** Informazioni sulle query dell&#39;archivio il cui completamento ha richiesto più tempo. Sola lettura.
 
 **SlowQueriesQueueSize** Numero massimo di query da includere nell&#39;elenco SlowQueries. Lettura/scrittura.
 
-**PopularQuery** Informazioni sulle query dell’archivio più frequenti. Sola lettura.
+**PopularQueries** Informazioni sulle query dell&#39;archivio più frequenti. Sola lettura.
 
-**PopularQueriesQueueSize** Numero massimo di query nell&#39;elenco PopularQueries. Lettura/scrittura.
+**PopularQueriesQueueSize** Il numero massimo di query nell&#39;elenco PopularQueries. Lettura/scrittura.
 
 ### Operazioni {#operations-2}
 
@@ -695,23 +695,23 @@ Monitora i servizi per ogni agente di replica. Quando crei un agente di replica,
 
 ### Attributi {#attributes-3}
 
-**ID** Valore String che rappresenta l&#39;identificatore della configurazione dell&#39;agente di replica. Più agenti possono utilizzare la stessa configurazione. Sola lettura.
+**Id** Valore String che rappresenta l&#39;identificatore della configurazione dell&#39;agente di replica. Più agenti possono utilizzare la stessa configurazione. Sola lettura.
 
-**Valido** Valore booleano che indica se l’agente è configurato correttamente:
+**Valido** Valore booleano che indica se l&#39;agente è configurato correttamente:
 
 * `true`: configurazione valida.
-* `false` : la configurazione contiene errori.
+* `false`: la configurazione contiene errori.
 
 Sola lettura.
 
-**Abilitato** Valore booleano che indica se l’agente è abilitato:
+**Enabled** Valore booleano che indica se l&#39;agente è abilitato:
 
 * `true`: abilitato.
-* `false`: disattivato.
+* `false`: disabilitato.
 
 **QueueBlocked** Valore booleano che indica se la coda esiste ed è bloccata:
 
-* `true`: bloccato. Un nuovo tentativo automatico è in sospeso.
+* `true`: Bloccato. Un nuovo tentativo automatico è in sospeso.
 * `false`: non bloccato o inesistente.
 
 Sola lettura.
@@ -719,28 +719,28 @@ Sola lettura.
 **QueuePaused** Valore booleano che indica se la coda dei processi è in pausa:
 
 * `true`: in pausa (sospeso)
-* `false`: non in pausa o inesistente.
+* `false`: non sospeso o inesistente.
 
 Lettura/scrittura.
 
 **QueueNumEntries** Valore int che rappresenta il numero di processi nella coda dell&#39;agente. Sola lettura.
 
-**OraStatoCoda** Un valore di data che indica l&#39;ora sul server in cui sono stati ottenuti i valori di stato visualizzati. Il valore corrisponde all’ora in cui è stata caricata la pagina. Sola lettura.
+**QueueStatusTime** Valore di tipo Date che indica l&#39;ora nel server in cui sono stati ottenuti i valori di stato visualizzati. Il valore corrisponde all’ora in cui è stata caricata la pagina. Sola lettura.
 
-**QueueNextRetryTime** Per le code bloccate, un valore Date che indica quando si verifica il nuovo tentativo automatico successivo. Quando non viene visualizzato alcun orario, la coda non viene bloccata. Sola lettura.
+**QueueNextRetryTime** Per le code bloccate, valore Date che indica quando si verifica il nuovo tentativo automatico successivo. Quando non viene visualizzato alcun orario, la coda non viene bloccata. Sola lettura.
 
-**QueueProcessingSince** Valore di tipo Date che indica quando è iniziata l&#39;elaborazione per il processo corrente. Quando non viene visualizzato alcun orario, la coda è bloccata o inattiva. Sola lettura.
+**QueueProcessingSince** Valore di data che indica quando è iniziata l&#39;elaborazione per il processo corrente. Quando non viene visualizzato alcun orario, la coda è bloccata o inattiva. Sola lettura.
 
-**QueueLastProcessTime** Valore data che indica quando è stato completato il processo precedente. Sola lettura.
+**QueueLastProcessTime** Valore di data che indica quando è stato completato il processo precedente. Sola lettura.
 
 ### Operazioni {#operations-3}
 
-**queueForceRetry** Per le code bloccate, invia alla coda il comando Riprova.
+**queueForceRetry** Per le code bloccate, invia il comando retry alla coda.
 
 * Argomenti: nessuno
 * Valore restituito: nessuno
 
-**queueClear** Rimuove tutti i processi dalla coda.
+**queueClear** rimuove tutti i processi dalla coda.
 
 * Argomenti: nessuno
 * Valore restituito: nessuno
@@ -755,13 +755,13 @@ Fornisce statistiche sulle richieste HTTP in modo da poter monitorare le prestaz
 
 ### Attributi {#attributes-4}
 
-**RequestsCount** Il numero di richieste che si sono verificate dall’ultima reimpostazione delle statistiche.
+**RichiesteCount** Il numero di richieste che si sono verificate dall&#39;ultima reimpostazione delle statistiche.
 
-**MinRequestDurationMsec** Il tempo più breve (in millisecondi) necessario per elaborare una richiesta dall’ultima reimpostazione delle statistiche.
+**MinRequestDurationMsec** Il tempo più breve (in millisecondi) necessario per elaborare una richiesta dall&#39;ultima reimpostazione delle statistiche.
 
-**MaxRequestDurationMsec** Il tempo più lungo (in millisecondi) necessario per elaborare una richiesta dall&#39;ultima reimpostazione delle statistiche.
+**MaxRequestDuratioMsec** Il tempo massimo (in millisecondi) necessario per elaborare una richiesta dall&#39;ultima reimpostazione delle statistiche.
 
-**StandardDeviationDurationMsec** Deviazione standard della quantità di tempo necessaria per elaborare le richieste. La deviazione standard viene calcolata utilizzando tutte le richieste dall’ultima reimpostazione delle statistiche.
+**StandardDeviationDurationMsec** Deviazione standard del tempo necessario per elaborare le richieste. La deviazione standard viene calcolata utilizzando tutte le richieste dall’ultima reimpostazione delle statistiche.
 
 **MediaRequestDurationMsec** Il tempo medio necessario per elaborare una richiesta. La media viene calcolata utilizzando tutte le richieste dall’ultima reimpostazione delle statistiche
 
@@ -772,18 +772,18 @@ Fornisce statistiche sulle richieste HTTP in modo da poter monitorare le prestaz
 * Argomenti: nessuno
 * Valore restituito: nessuno
 
-**id** Rappresentazione stringa dell&#39;ID pacchetto.
+**id** rappresentazione stringa dell&#39;ID pacchetto.
 
-**installato** Valore booleano che indica se il pacchetto è installato:
+**install** Valore booleano che indica se il pacchetto è installato:
 
 * `true`: installato.
 * `false`: non installato.
 
-**installBy** ID dell’ultimo utente che ha installato il pacchetto.
+**installationBy** ID dell&#39;ultimo utente che ha installato il pacchetto.
 
-**installedDate** Data dell&#39;ultima installazione del pacchetto.
+**installationDate** la data dell&#39;ultima installazione del pacchetto.
 
-**dimensione** Valore lungo che contiene le dimensioni del pacchetto in byte.
+**size** Valore lungo che contiene le dimensioni del pacchetto in byte.
 
 
 ## Avvio rapido {#quickstart-launcher}
@@ -801,7 +801,7 @@ Visualizza un messaggio nella finestra QuickStart.
 
 Argomenti:
 
-* p1: A `String` valore che rappresenta il messaggio da visualizzare.
+* p1: Valore `String` che rappresenta il messaggio da visualizzare.
 * Valore restituito: nessuno
 
 **startupFinished**
@@ -854,7 +854,7 @@ Diverse risorse server di terze parti installano MBean che espongono attributi e
      <li>Runtime</li>
      <li>Threading</li>
     </ul> </td>
-   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a> pacchetto</td>
+   <td>Pacchetto <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a></td>
   </tr>
   <tr>
    <td>java.util.logging</td>
@@ -870,7 +870,7 @@ Diverse risorse server di terze parti installano MBean che espongono attributi e
      <li>packageState</li>
      <li>serviceState</li>
     </ul> </td>
-   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a> pacchetto</td>
+   <td>Pacchetto <a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a></td>
   </tr>
  </tbody>
 </table>
@@ -893,11 +893,11 @@ La pagina principale della console JMX include una tabella di servizi. Ogni riga
 
 ## Utilizzo di applicazioni JMX esterne per il monitoraggio {#using-external-jmx-applications-for-monitoring}
 
-CRX consente alle applicazioni esterne di interagire con Managed Beans (MBean) tramite [Estensioni di gestione Java (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Utilizzo di console generiche come [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) o applicazioni di monitoraggio specifiche per il dominio, consente di ottenere e impostare configurazioni e proprietà CRX e il monitoraggio delle prestazioni e dell’utilizzo delle risorse.
+CRX consente alle applicazioni esterne di interagire con Managed Beans (MBeans) tramite [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). L&#39;utilizzo di console generiche come [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) o di applicazioni di monitoraggio specifiche del dominio consente di ottenere e impostare le configurazioni e le proprietà di CRX, nonché il monitoraggio delle prestazioni e dell&#39;utilizzo delle risorse.
 
 ### Utilizzo di JConsole per la connessione a CRX {#using-jconsole-to-connect-to-crx}
 
-Per connettersi a CRX utilizzando JConsole, effettuare le seguenti operazioni:
+Per connettersi a CRX tramite JConsole, eseguire la procedura seguente:
 
 1. Apri una finestra del terminale.
 1. Immetti il comando seguente:
@@ -910,23 +910,23 @@ Verrà avviata la console JConsole e verrà visualizzata la finestra JConsole.
 
 In JConsole verrà visualizzato un elenco di processi di Java Virtual Machine locali. L’elenco conterrà due processi di avvio rapido. Selezionare il processo quickstart &quot;CHILD&quot; dall&#39;elenco dei processi locali (in genere quello con il PID più alto).
 
-![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
+![schermata_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
 
 ### Connessione a un processo CRX remoto {#connecting-to-a-remote-crx-process}
 
-Per connettersi a un processo CRX remoto, la JVM che ospita il processo CRX remoto deve essere abilitata per accettare connessioni JMX remote.
+Per connettersi a un processo CRX remoto, la JVM che ospita il processo CRX remoto deve essere abilitata per accettare le connessioni JMX remote.
 
 Per abilitare le connessioni JMX remote, è necessario impostare la seguente proprietà di sistema all&#39;avvio della JVM:
 
 `com.sun.management.jmxremote.port=portNum`
 
-Nella proprietà precedente, `portNum` è il numero di porta attraverso il quale si desidera abilitare le connessioni RMI JMX. Assicurarsi di specificare un numero di porta non utilizzato. Oltre a pubblicare un connettore RMI per l&#39;accesso locale, l&#39;impostazione di questa proprietà consente di pubblicare un connettore RMI aggiuntivo in un registro privato di sola lettura sulla porta specificata utilizzando un nome noto, &quot;jmxrmi&quot;.
+Nella proprietà precedente, `portNum` è il numero di porta attraverso il quale si desidera abilitare le connessioni JMX RMI. Assicurarsi di specificare un numero di porta non utilizzato. Oltre a pubblicare un connettore RMI per l&#39;accesso locale, l&#39;impostazione di questa proprietà consente di pubblicare un connettore RMI aggiuntivo in un registro privato di sola lettura sulla porta specificata utilizzando un nome noto, &quot;jmxrmi&quot;.
 
 Per impostazione predefinita, quando si abilita l&#39;agente JMX per il monitoraggio remoto, viene utilizzata l&#39;autenticazione tramite password basata su un file di password che deve essere specificato utilizzando la seguente proprietà di sistema all&#39;avvio della VM Java:
 
 `com.sun.management.jmxremote.password.file=pwFilePath`
 
-Consulta la [documentazione JMX rilevante](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) per istruzioni dettagliate sulla configurazione di un file di password.
+Per istruzioni dettagliate sulla configurazione di un file di password, consulta la [documentazione JMX pertinente](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html).
 
 Esempio:
 
@@ -941,10 +941,10 @@ $ java
 
 Dopo la connessione al processo quickstart, JConsole fornisce una serie di strumenti generali di monitoraggio per la JVM in cui CRX è in esecuzione.
 
-![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
+![schermata_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
 Per accedere alle opzioni di monitoraggio e configurazione interne di CRX, vai alla scheda MBean e, dalla struttura gerarchica del contenuto a sinistra, seleziona la sezione Attributi o operazioni a cui sei interessato. Ad esempio, la sezione com.adobe.granite/Repository/Operations.
 
 All’interno di tale sezione, seleziona l’attributo o l’operazione desiderata nel riquadro a sinistra.
 
-![screen_shot_2012-03-26at115728am](assets/screen_shot_2012-03-26at115728am.png)
+![schermata_shot_2012-03-26at115728am](assets/screen_shot_2012-03-26at115728am.png)

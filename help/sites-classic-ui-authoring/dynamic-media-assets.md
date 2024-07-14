@@ -18,12 +18,12 @@ ht-degree: 2%
 
 # Utilizzo di Dynamic Media{#working-with-dynamic-media}
 
-[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate on-demand, scalabili automaticamente per il consumo su siti web, mobili e social network. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social network. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
-Dynamic Medie offre esperienze di visualizzazione interattiva, tra cui zoom, 360 gradi in rotazione e video. Dynamic Medie incorpora in modo esclusivo i flussi di lavoro della soluzione Adobe Experience Manager per la gestione delle risorse digitali (Assets) al fine di semplificare e semplificare il processo di gestione delle campagne digitali.
+Dynamic Medie offre esperienze di visualizzazione interattiva, tra cui zoom, 360 gradi in rotazione e video. Dynamic Medie incorpora in modo esclusivo i flussi di lavoro della soluzione Adobe Experience Manager di gestione delle risorse digitali (Assets) per semplificare e semplificare il processo di gestione delle campagne digitali.
 
-L’utilizzo di Dynamic Medie non è disponibile nell’interfaccia classica. Consulta [Utilizzare Dynamic Medie,](/help/assets/dynamic-media.md) che copre l’interfaccia utente touch.
+L’utilizzo di Dynamic Medie non è disponibile nell’interfaccia classica. Consulta [Utilizzare Dynamic Medie,](/help/assets/dynamic-media.md) che tratta l&#39;interfaccia utente touch.
 
 >[!NOTE]
 >
->Se utilizzi Dynamic Medie, non puoi utilizzare contemporaneamente i caricamenti automatici disponibili se [integrare Dynamic Media Classic in Adobe Experience Manager](/help/sites-administering/scene7.md). Consulta [Abilita Dynamic Medie](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Medie è disabilitato per impostazione predefinita.
+>Se si utilizza Dynamic Medie, non è possibile utilizzare contemporaneamente i caricamenti automatici disponibili se [integra Dynamic Media Classic in Adobe Experience Manager](/help/sites-administering/scene7.md). Vedere [Abilitare Dynamic Medie](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Medie è disabilitato per impostazione predefinita.

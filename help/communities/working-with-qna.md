@@ -34,21 +34,21 @@ La funzione del forum di QnA (domande e risposte) offre ai membri della communit
 La documentazione descrive:
 
 * Aggiunta della funzione di forum di controllo qualità a un sito AEM.
-* Impostazioni di configurazione per `QnA`componente.
+* Impostazioni di configurazione per il componente `QnA`.
 
 ## Aggiunta di un forum domande e risposte a una pagina {#adding-a-q-a-forum-to-a-page}
 
-Per aggiungere una `QnA` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare `Communities / QnA` e trascinarlo in una pagina in cui dovrebbe apparire il forum QnA.
+Per aggiungere un componente `QnA` a una pagina in modalità di creazione, utilizzare il browser componenti per individuare `Communities / QnA` e trascinarlo in una pagina in cui dovrebbe apparire il forum QnA.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](/help/communities/basics.md).
 
-Quando [librerie lato client richieste](/help/communities/qna-essentials.md#essentials-for-client-side) sono inclusi, è così che `QnA` viene visualizzato il componente:
+Quando sono incluse le [librerie lato client richieste](/help/communities/qna-essentials.md#essentials-for-client-side), il componente `QnA` viene visualizzato in questo modo:
 
 ![qna-component](assets/qna-component.png)
 
 ### Configurazione di QnA {#configuring-qna}
 
-Seleziona la inserita `QnA` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
+Selezionare il componente `QnA` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo per modifica.
 
 ![configura](assets/configure-new.png)
 
@@ -56,7 +56,7 @@ Seleziona la inserita `QnA` in modo da poter accedere e selezionare `Configure` 
 
 #### Scheda Impostazioni {#settings-tab}
 
-Sotto **Impostazioni** , specificare le impostazioni per gli argomenti (domande) e le risposte (risposte):
+Nella scheda **Impostazioni**, specifica le impostazioni per gli argomenti (domande) e le risposte (risposte):
 
 * **Consenti miniatura allegato**
 
@@ -92,7 +92,7 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti (domande)
 
 * **Consenti assegnazione tag**
 
-  Se questa opzione è selezionata, consentire ai membri di aggiungere etichette tag ai propri post (vedere **Campo tag** ). Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di aggiungere etichette tag ai propri post (vedere la scheda **Campo tag**). Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
@@ -100,7 +100,7 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti (domande)
 
 * **Consenti Segui**
 
-  Se questa opzione è selezionata, includere la seguente funzionalità per i post dei forum, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, includere la funzionalità seguente per i post dei forum, che consente ai membri di ricevere [notifica](/help/communities/notifications.md) dei nuovi post. Il valore predefinito è deselezionato.
 
 * **Consenti blocco**
 
@@ -108,15 +108,15 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti (domande)
 
 * **Consenti iscrizioni e-mail**
 
-  Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede di controllare Consenti seguito e [e-mail configurato](/help/communities/email.md). Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede Consenti controllo dei seguenti elementi e [configurazione della posta elettronica](/help/communities/email.md). Il valore predefinito è deselezionato.
 
 * **Dimensione massima file**
 
-  Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+  Rilevante solo se è selezionato `Allow File Uploads`. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
 * **Tipi di file consentiti**
 
-  Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è nessuno, pertanto **tutto** tipi di file consentiti.
+  Rilevante solo se è selezionato `Allow File Uploads`. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito non è specificato in modo che siano consentiti **tutti** i tipi di file.
 
 * **Dimensione massima file immagine allegato**
 
@@ -138,20 +138,20 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti (domande)
 
   Se questa opzione è selezionata, solo i membri con privilegi possono creare contenuto.
 
-* **Blocca i contenuti generati dagli utenti in modalità Modifica autore**
+* **Blocca contenuto generato dall&#39;utente in modalità Modifica autore**
 
   Se questa opzione è abilitata, blocca i contenuti generati dagli utenti durante la modifica in modalità Creazione.
 
-* **Sposta in alto la risposta selezionata**
+* **Sposta La Risposta Selezionata In Alto**
 
   Se questa opzione è selezionata, la prima risposta visualizzata è una risposta selezionata. Il valore predefinito è deselezionato.
-* **Visualizza badge**
+* **Distintivi visualizzati**
 
-  Se questa opzione è selezionata, vengono visualizzati i risultati ottenuti e assegnati [badge](/help/communities/implementing-scoring.md) con il post di blog di un membro. Il valore predefinito è deselezionato.
+  Se selezionato, visualizza i [distintivi](/help/communities/implementing-scoring.md) ottenuti e assegnati con il post di blog di un membro. Il valore predefinito è deselezionato.
 
 * **Consenti contenuto in primo piano**
 
-  Se questa opzione è selezionata, l’idea è identificabile come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, l&#39;idea è identificabile come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è deselezionato.
 
 * **Abilita menzione**
 
@@ -167,7 +167,7 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti (domande)
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Sotto **Moderazione utenti** , specifica come vengono gestiti gli argomenti (domande) e le risposte (contenuti generati dall&#39;utente). Per ulteriori informazioni, consulta [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
+Nella scheda **Moderazione utente**, specifica come vengono gestiti gli argomenti (domande) e le risposte (contenuti generati dall&#39;utente) pubblicati. Per ulteriori informazioni, vedere [Moderazione del contenuto generato dall&#39;utente](/help/communities/moderate-ugc.md).
 
 * **Rifiuta risposte**
 
@@ -196,17 +196,17 @@ Se questa opzione è selezionata, consenti ai moderatori lato pubblicazione di s
 
   Immetti il numero di volte in cui i membri devono segnalare una domanda o una risposta prima che il moderatore riceva una notifica. Il valore predefinito è 1 (una tantum).
 
-* **Limite segnalazione**
+* **Limite di segnalazione**
 
   Immettere il numero di volte che una domanda o risposta deve essere contrassegnata prima che venga nascosta alla visualizzazione pubblica. Se è impostato su -1, la domanda o risposta contrassegnata non viene mai nascosta alla visualizzazione pubblica. Altrimenti, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Sotto **Campo tag** , i tag che possono essere applicati, se consentiti nella scheda **Impostazioni** , sono limitati in base agli spazi dei nomi scelti.
+Nella scheda **Campo tag**, i tag che possono essere applicati, se consentiti nella scheda **Impostazioni**, sono limitati in base agli spazi dei nomi scelti.
 
-* **Namespace consentiti**
+* **Spazi dei nomi consentiti**
 
-  Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
+  Rilevante se `Allow Tagging` è selezionato nella scheda **Impostazioni**. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite suggerimenti**
 
@@ -214,29 +214,29 @@ Sotto **Campo tag** , i tag che possono essere applicati, se consentiti nella sc
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
-Sotto **Impostazioni di ordinamento** , specificare l&#39;ordinamento dei commenti inviati quando vengono visualizzati.
+Nella scheda **Impostazioni ordinamento**, specifica l&#39;ordinamento dei commenti inviati quando vengono visualizzati.
 
 * **Ordina per**
 
-  Seleziona tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Il valore predefinito è `Newest, Oldest, Last Updated`.
+  Controllare tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Il valore predefinito è `Newest, Oldest, Last Updated`.
 
 * **Imposta come predefinito**
 
   Tirare verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come impostazione predefinita. Il valore predefinito è `Newest`.
 
-* **Seleziona le opzioni di tempo per l&#39;ordinamento Analytics**
+* **Selezionare le opzioni di tempo per l&#39;ordinamento di Analytics**
 
-  Elenca a discesa per selezionare una delle opzioni `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Il valore predefinito è `All`.
+  Elenca a discesa per selezionare uno di `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Il valore predefinito è `All`.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
 ### Identificazione delle risposte {#identifying-answers}
 
-È possibile contrassegnare una risposta come corretta o utile utilizzando `Select Answer` pulsante. Dopo aver contrassegnato una domanda come Risposta, non sarà possibile selezionare un&#39;altra risposta fino a quando la prima non sarà stata deselezionata utilizzando `Unmark Chosen Answer` pulsante.
+È possibile contrassegnare una risposta come corretta o utile utilizzando il pulsante `Select Answer`. Dopo aver contrassegnato una domanda come Risposta, è possibile selezionare un&#39;altra risposta solo dopo aver deselezionato la prima con il pulsante `Unmark Chosen Answer`.
 
-Una volta selezionata come risposta valida, è possibile deselezionarla utilizzando `Unmark Chosen Answer` pulsante.
+Una volta selezionata come risposta valida, è possibile deselezionarla utilizzando il pulsante `Unmark Chosen Answer`.
 
-Una volta selezionata una risposta come risposta valida, un&#39;indicazione che la domanda è stata `Answered` viene visualizzato accanto all’argomento della domanda nella pagina principale di Controllo qualità.
+Dopo aver selezionato una risposta come risposta valida, accanto all&#39;argomento della domanda nella pagina principale del Controllo di qualità viene visualizzata un&#39;indicazione che la domanda è stata `Answered`.
 
 #### Moderatori e amministratori {#moderators-and-administrators}
 
@@ -248,7 +248,7 @@ Possono anche identificare le risposte.
 
 Quando i visitatori del sito hanno effettuato l’accesso, a seconda della configurazione, possono:
 
-* Pubblica una nuova domanda.
+* Post una nuova domanda.
 * Modificare o eliminare le domande create.
 * Contrassegna domande o risposte di altri membri.
 * Identifica le risposte alle domande che hanno creato.
@@ -259,8 +259,8 @@ I visitatori del sito che non hanno effettuato l&#39;accesso possono solo legger
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base su QnA](/help/communities/qna-essentials.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [QnA Essentials](/help/communities/qna-essentials.md) per sviluppatori.
 
-Per la moderazione degli argomenti e dei commenti pubblicati, vedi [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
+Per la moderazione degli argomenti e dei commenti pubblicati, vedere [Moderazione del contenuto generato dall&#39;utente](/help/communities/moderate-ugc.md).
 
-Per assegnare tag agli argomenti e ai commenti pubblicati, consulta [Assegnazione di tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).
+Per assegnare tag agli argomenti e ai commenti pubblicati, vedere [Assegnazione di tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).

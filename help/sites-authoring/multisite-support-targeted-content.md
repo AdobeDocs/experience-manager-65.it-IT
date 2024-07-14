@@ -33,7 +33,7 @@ Questo documento descrive quanto segue:
 
 Per impostare la modalità di condivisione dei contenuti personalizzati da parte dei siti, è necessario effettuare le seguenti operazioni:
 
-1. [Creare un’area](#creating-new-areas) o [creare un’area come live copy](#creating-new-areas). Un’area include tutte le attività disponibili per un’*area* della pagina, ovvero la posizione sulla pagina di destinazione del componente. La creazione di un’area crea un’area vuota, mentre la creazione di un’area come Live Copy consente di ereditare il contenuto tra le strutture del sito.
+1. [Crea un&#39;area](#creating-new-areas) o [crea un&#39;area come Live Copy](#creating-new-areas). Un’area include tutte le attività disponibili per un’*area* della pagina, ovvero la posizione sulla pagina di destinazione del componente. La creazione di un’area crea un’area vuota, mentre la creazione di un’area come Live Copy consente di ereditare il contenuto tra le strutture del sito.
 
 1. [Collega il sito o la pagina](#linking-sites-to-an-area) a un’area.
 
@@ -59,7 +59,7 @@ Un sito o una Live Copy si collega a un’area contenente le attività che devon
 
 ## Casi di utilizzo {#use-cases}
 
-Puoi impostare il supporto multisito per contenuti mirati in diversi modi, a seconda del caso d’uso. Questa sezione descrive come ciò potrebbe funzionare teoricamente con un marchio. Inoltre, in [Esempio: targeting del contenuto in base alla geografia](#example-targeting-content-based-on-geography), puoi vedere un’applicazione reale di targeting del contenuto su più siti.
+Puoi impostare il supporto multisito per contenuti mirati in diversi modi, a seconda del caso d’uso. Questa sezione descrive come ciò potrebbe funzionare teoricamente con un marchio. Inoltre, in [Esempio: targeting del contenuto in base alla geografia](#example-targeting-content-based-on-geography), puoi vedere un&#39;applicazione reale di targeting del contenuto in più siti.
 
 Il contenuto di destinazione viene racchiuso in cosiddette aree, che definiscono l’ambito dei siti o delle pagine. Queste aree sono definite a livello di marchio. Un marchio può contenere più aree. Le aree possono essere distinte tra i marchi. Anche se un marchio può contenere solo l’area primaria e quindi è condiviso tra tutti i marchi, un altro marchio può contenere più marchi (ad esempio, per regione). I marchi, pertanto, non devono rispecchiare l’insieme delle aree che li separano.
 
@@ -156,12 +156,12 @@ Le aree possono estendersi su attività e offerte. Dopo aver creato un’area in
 
 >[!NOTE]
 >
->L’area predefinita denominata Area mastro viene ridotta per impostazione predefinita quando si fa clic sul nome di un marchio **fino a** si crea un&#39;altra area. Quindi, quando selezioni un marchio nella console **Attività** o **Offerte**, viene visualizzata la console **Area**.
+>L&#39;area predefinita denominata Area master viene ridotta per impostazione predefinita quando si fa clic sul nome di un marchio **fino a quando** non viene creata un&#39;altra area. Quindi, quando selezioni un marchio nella console **Attività** o **Offerte**, viene visualizzata la console **Area**.
 
 Per creare un&#39;area:
 
 1. Passa a **Personalizzazione** > **Attività** o **Offerte** per poi, infine, arrivare al tuo marchio.
-1. Clic **Crea area**.
+1. Fare clic su **Crea area**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
@@ -180,7 +180,7 @@ Crea un’area come Live Copy per ereditare il contenuto di destinazione tra le 
 Per creare un’area come Live Copy:
 
 1. Passa a **Personalizzazione** > **Attività** o **Offerte** e infine, al tuo marchio.
-1. Clic **Crea area come Live Copy**.
+1. Fai clic su **Crea area come Live Copy**.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
@@ -221,13 +221,13 @@ Quando esegui un collegamento, sono disponibili solo le attività, le esperienze
 Per collegare un sito a un’area:
 
 1. Passa al sito (o alla pagina) che desideri collegare a un’area.
-1. Seleziona il sito o la pagina e fai clic su **Visualizza proprietà**.
-1. Fai clic su **Personalizzazione** scheda.
+1. Selezionare il sito o la pagina e fare clic su **Visualizza proprietà**.
+1. Fare clic sulla scheda **Personalization**.
 1. Dal menu **Marchio**, seleziona il marchio a cui desideri collegare l’area. Dopo aver selezionato il marchio, le aree disponibili sono presenti nel menu **Riferimento area**.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Seleziona l’area dal menu **Riferimento area** menu a discesa e fai clic su **Salva**.
+1. Seleziona l&#39;area dal menu a discesa **Riferimento area** e fai clic su **Salva**.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
@@ -251,8 +251,8 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 
 Per sospendere o scollegare l’ereditarietà dei contenuti mirati in un’attività:
 
-1. Passa alla pagina in cui desideri scollegare o sospendere l’ereditarietà e fai clic su **Targeting** nel menu a discesa mode.
-1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Clic **Inizia impostazione destinazione**.
+1. Passare alla pagina in cui si desidera scollegare o sospendere l&#39;ereditarietà e fare clic su **Targeting** nel menu a discesa della modalità.
+1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Fare clic su **Inizia impostazione destinazione**.
 1. Per sospendere un’attività, effettua una delle seguenti operazioni:
 
    1. Seleziona un elemento dell’attività, ad esempio il pubblico. AEM visualizza automaticamente una casella di conferma Sospendi Live Copy. (Puoi sospendere la Live Copy toccando o facendo clic su qualsiasi elemento durante tutto il processo di targeting).
@@ -260,7 +260,7 @@ Per sospendere o scollegare l’ereditarietà dei contenuti mirati in un’attiv
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Clic **Sospendi** per sospendere l’attività. Le attività sospese sono contrassegnate in rosso.
+1. Fai clic su **Sospendi** per sospendere l&#39;attività. Le attività sospese sono contrassegnate in rosso.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -268,10 +268,10 @@ Per sospendere o scollegare l’ereditarietà dei contenuti mirati in un’attiv
 
 Per interrompere l’ereditarietà di contenuti mirati in un’attività:
 
-1. Passa alla pagina in cui desideri scollegare la Live Copy dalla pagina mastro e fai clic su **Targeting** nel menu a discesa mode.
-1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Clic **Inizia impostazione destinazione**.
+1. Passa alla pagina in cui desideri scollegare la Live Copy dalla pagina mastro e fai clic su **Targeting** nel menu a discesa della modalità.
+1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Fare clic su **Inizia impostazione destinazione**.
 1. Dal menu a discesa nella barra degli strumenti, seleziona **Stacca Live Copy**. AEM conferma che vuoi scollegare la Live Copy.
-1. Clic **Stacca** per scollegare la live copy dall’attività. Una volta scollegata, il menu a discesa relativo all’ereditarietà non viene più visualizzato. L’attività è ora un’attività locale.
+1. Fai clic su **Scollega** per scollegare la Live Copy dall&#39;attività. Una volta scollegata, il menu a discesa relativo all’ereditarietà non viene più visualizzato. L’attività è ora un’attività locale.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -281,13 +281,13 @@ Se hai sospeso l’ereditarietà di contenuti di destinazione in un’attività,
 
 Per ripristinare l’ereditarietà di contenuti di destinazione in un’attività:
 
-1. Passa alla pagina in cui desideri ripristinare l’ereditarietà e fai clic su **Targeting** nel menu a discesa mode.
-1. Clic **Inizia impostazione destinazione**.
+1. Passa alla pagina in cui desideri ripristinare l&#39;ereditarietà e fai clic su **Targeting** nel menu a discesa della modalità.
+1. Fare clic su **Inizia impostazione destinazione**.
 1. Dal menu a discesa nella barra degli strumenti, seleziona **Riprendi Live Copy**.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
-1. Clic **Riprendi** per confermare che desideri riprendere l’ereditarietà della live copy. Se riprendi l’ereditarietà, eventuali modifiche apportate all’attività corrente andranno perse.
+1. Fai clic su **Riprendi** per confermare che desideri riprendere l&#39;ereditarietà della Live Copy. Se riprendi l’ereditarietà, eventuali modifiche apportate all’attività corrente andranno perse.
 
 ## Eliminazione di aree {#deleting-areas}
 
@@ -297,4 +297,4 @@ Eliminare un’area:
 
 1. Vai su **Personalizzazione** > **Attività** or **Offerte** e quindi al tuo marchio.
 1. Fare clic sull&#39;icona accanto all&#39;area che si desidera eliminare.
-1. Clic **Elimina** e confermare che si desidera eliminare l&#39;area.
+1. Fare clic su **Elimina** e confermare l&#39;eliminazione dell&#39;area.

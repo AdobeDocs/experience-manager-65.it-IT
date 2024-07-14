@@ -25,7 +25,7 @@ Evita di richiamare i processi mentre il server è in modalità di manutenzione.
 * Se il processo è di lunga durata, viene aggiunto al database dei processi, ma non viene avviato. Quando si esce dalla modalità di manutenzione, i moduli AEM elaborano i processi di lunga durata presenti nella coda, anche se il server è stato riavviato in modalità di manutenzione.
 * Se il processo è di breve durata, viene elaborato immediatamente.
 
-**Mettere i moduli AEM in modalità di manutenzione**
+**Metti i moduli AEM in modalità manutenzione**
 
 1. In un browser web, immetti:
 
@@ -37,7 +37,7 @@ Evita di richiamare i processi mentre il server è in modalità di manutenzione.
    >
    >Se si arresta il server mentre è in modalità di manutenzione, al riavvio il server è ancora in modalità di manutenzione. Disattivare la modalità di manutenzione al termine delle attività di manutenzione.
 
-**Verifica se i moduli AEM sono in esecuzione in modalità di manutenzione**
+**Verificare se i moduli AEM sono in esecuzione in modalità di manutenzione**
 
 1. In un browser web, immetti:
 

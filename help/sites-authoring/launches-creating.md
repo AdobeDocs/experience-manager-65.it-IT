@@ -61,7 +61,7 @@ Puoi creare un lancio dalla console Sites o Lanci:
 
    Ripeti in base alle esigenze.  
 
-   ![Seleziona sorgente e aggiungi pagine](assets/chlimage_1-225.png)
+   ![Seleziona l&#39;origine e aggiungi le pagine](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -86,7 +86,7 @@ Puoi creare un lancio dalla console Sites o Lanci:
    * **Titolo lancio**: il nome del lancio. Il nome deve essere significativo per gli autori.
    * **con contenuto esistente**: il contenuto originale viene utilizzato per creare il lancio.
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
-   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Con questa opzione il lancio diventa un [live copy](/help/sites-administering/msm.md).
+   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Con questa opzione il lancio diventa [Live Copy](/help/sites-administering/msm.md).
 
      Per impostazione predefinita, questa opzione è selezionata.
 
@@ -98,18 +98,18 @@ Puoi creare un lancio dalla console Sites o Lanci:
 
    Se torni alla console (con **Fine**) puoi visualizzare (e accedere) al lancio da:
 
-   * il [**Lanci** console](/help/sites-authoring/launches.md#the-launches-console)
-   * il [**Riferimenti** nel **Sites** console](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * la console [**Lanci**](/help/sites-authoring/launches.md#the-launches-console)
+   * i [**riferimenti** nella console **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Creare un lancio con un nuovo modello {#create-launch-with-new-template}
 
-Quando [creazione di un lancio](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) puoi scegliere se utilizzare un nuovo modello con l’opzione: **utilizzo di un nuovo modello per sostituire la pagina**
+Quando [crei un lancio](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) puoi scegliere se utilizzare un nuovo modello con l&#39;opzione **utilizzando un nuovo modello per sostituire la pagina**
 
 >[!CAUTION]
 >
 >Questa opzione è disponibile solo quando crei un lancio dalla console **Sites**. Non è disponibile quando crei un lancio dalla console **Lanci**.
 
-![Utilizza un nuovo modello per sostituire la pagina](assets/chlimage_1-228.png)
+![Utilizzare un nuovo modello per sostituire la pagina](assets/chlimage_1-228.png)
 
 Quando selezioni questa opzione:
 
@@ -141,7 +141,7 @@ La creazione di un lancio nidificato dalla console **Lanci** è molto simile all
 
    ![Seleziona lancio](assets/chlimage_1-230.png)
 
-1. Procedi con **Successivo** e completare **Proprietà** come con qualsiasi altro lancio.
+1. Procedi con **Successivo** e completa le **Proprietà** come con qualsiasi altro lancio.
 
    ![Specificare le proprietà](assets/chlimage_1-231.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Configurazioni servizi cloud
+title: Configurazioni Cloud Service
 description: Puoi estendere le istanze esistenti per creare configurazioni personalizzate
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ---
 
-# Configurazioni servizi cloud{#cloud-service-configurations}
+# Configurazioni Cloud Service{#cloud-service-configurations}
 
 Le configurazioni sono progettate per fornire la logica e la struttura per l’archiviazione delle configurazioni del servizio.
 
@@ -31,7 +31,7 @@ I principi utilizzati per lo sviluppo delle configurazioni si basano sui seguent
 * Riferito dai nodi di Analytics per percorso.
 * Facilmente estensibile.
 * Offre la flessibilità necessaria per gestire configurazioni più complesse, ad esempio [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Supporto per le dipendenze (ad esempio, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) i plug-in richiedono un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Supporto per le dipendenze (ad esempio, [i plug-in di Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) richiedono una configurazione di [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Struttura {#structure}
 
@@ -52,7 +52,7 @@ Per fornire una configurazione per i nuovi servizi, eseguire le operazioni segue
    * un modello di configurazione
    * un componente di configurazione
 
-Il modello e il componente devono ereditare il `sling:resourceSuperType` dal modello base:
+Il modello e il componente devono ereditare `sling:resourceSuperType` dal modello base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -70,7 +70,7 @@ Il modello estende il modello base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-E definisci un `resourceType` che punta al componente personalizzato.
+E definisci un `resourceType` che punti al componente personalizzato.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -109,7 +109,7 @@ Dopo aver configurato il modello e il componente, puoi aggiungere la configurazi
 
 ### Modello di contenuto {#content-model}
 
-Il modello di contenuto viene memorizzato come `cq:Page` in:
+Il modello di contenuto è archiviato come `cq:Page` in:
 
 `/etc/cloudservices/<service-name>(/*)`
 
@@ -120,10 +120,10 @@ Il modello di contenuto viene memorizzato come `cq:Page` in:
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-Le configurazioni vengono memorizzate nel sottonodo `jcr:content`.
+Le configurazioni sono archiviate nel sottonodo `jcr:content`.
 
-* Le proprietà fisse, definite in una finestra di dialogo, devono essere memorizzate nel `jcr:node` direttamente.
-* Elementi dinamici (utilizzando `parsys` o `iparsys`) utilizza un sottonodo per memorizzare i dati del componente.
+* Le proprietà fisse, definite in una finestra di dialogo, devono essere memorizzate direttamente in `jcr:node`.
+* Gli elementi dinamici (che utilizzano `parsys` o `iparsys`) utilizzano un sottonodo per memorizzare i dati del componente.
 
 ```xml
 /etc/cloudservices/service/config/jcr:content as nt:unstructured
@@ -136,11 +136,11 @@ propertyname
 
 ### API {#api}
 
-Per la documentazione di riferimento sull’API, consulta [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Per la documentazione di riferimento sull&#39;API, consulta [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### Integrazione AEM {#aem-integration}
 
-I servizi disponibili sono elencati nella **Cloud Service** scheda di **Proprietà pagina** (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
+I servizi disponibili sono elencati nella scheda **Cloud Service** della finestra di dialogo **Proprietà pagina** (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
 
 La scheda fornisce anche:
 
@@ -151,19 +151,19 @@ La scheda fornisce anche:
 
 Quando si memorizzano le credenziali utente per il servizio, tutte le password devono essere crittografate.
 
-Per ottenere questo risultato, aggiungi un campo modulo nascosto. Questo campo deve contenere l’annotazione `@Encrypted` nel nome della proprietà; ovvero, per `password` il nome sarà scritto come:
+Per ottenere questo risultato, aggiungi un campo modulo nascosto. Questo campo deve contenere l&#39;annotazione `@Encrypted` nel nome della proprietà; ovvero, per il campo `password` il nome verrà scritto come:
 
 `password@Encrypted`
 
-La proprietà verrà quindi crittografata automaticamente (utilizzando `CryptoSupport` servizio) da parte di `EncryptionPostProcessor`.
+La proprietà verrà quindi crittografata automaticamente (utilizzando il servizio `CryptoSupport`) da `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->È simile allo standard ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` annotazioni.
+>È simile alle annotazioni standard ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)`.
 
 >[!NOTE]
 >
->Per impostazione predefinita, il `EcryptionPostProcessor` crittografa solo `POST` richieste effettuate a `/etc/cloudservices`.
+>Per impostazione predefinita, `EcryptionPostProcessor` crittografa solo `POST` richieste effettuate a `/etc/cloudservices`.
 
 #### Proprietà aggiuntive per i nodi jcr:content della pagina del servizio {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -175,7 +175,7 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando `CryptoSu
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Viene utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del <code>body</code> ).<br /> Nel caso di Adobe Analytics e Adobe Target, utilizziamo questo per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
+   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Questo viene utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui è incluso <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del tag <code>body</code>).<br /> Nel caso di Adobe Analytics e Adobe Target, utilizziamo questa funzione per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
   </tr>
   <tr>
    <td>descrizione</td>

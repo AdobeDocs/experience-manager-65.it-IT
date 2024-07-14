@@ -22,17 +22,17 @@ L’Editor Rich Text è un componente essenziale per l’inserimento di contenut
 
 ## Modifica diretta {#in-place-editing}
 
-Quando si seleziona un componente basato su testo con un solo clic, vengono visualizzati i [barra degli strumenti del componente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
+Se si seleziona un componente basato su testo con un solo clic, verrà visualizzata la barra degli strumenti del componente [](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
 
-![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
+![schermata_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
 Toccando/facendo nuovamente clic o selezionando inizialmente il componente con un doppio clic lento, si apre la modifica diretta, che dispone di una propria barra degli strumenti. Qui puoi modificare il contenuto e apportare semplici modifiche di formattazione.
 
-![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
+![schermata_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
 Questa barra degli strumenti contiene le opzioni seguenti:
 
-* **Formato**: consente di impostare i formati grassetto, corsivo e sottolineato.
+* **Formato**: consente di impostare i formati Grassetto, Corsivo e Sottolineato.
 * **Elenchi**: consente di creare elenchi puntati o numerati o di impostare i rientri.
 * **Collegamento ipertestuale**
 * **Scollega**
@@ -42,11 +42,11 @@ Questa barra degli strumenti contiene le opzioni seguenti:
 
 ## Modifica a tutto schermo {#full-screen-editing}
 
-Per i componenti basati su testo, tocca la modalità a tutto schermo nella barra degli strumenti ![Modalità di modifica a schermo intero](do-not-localize/screen_shot_2018-03-21at163236.png) apre l’editor Rich Text e nasconde il resto del contenuto della pagina.
+Per i componenti basati su testo, tocca la modalità a tutto schermo nella barra degli strumenti ![Modalità di modifica a tutto schermo](do-not-localize/screen_shot_2018-03-21at163236.png) per aprire l&#39;editor Rich Text e nascondere il resto del contenuto della pagina.
 
-In modalità a schermo intero vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità è nelle opzioni [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md).
+In modalità a schermo intero vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità dipende dalle opzioni [dalla configurazione](/help/sites-administering/rich-text-editor.md).
 
-![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
+![schermata_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
 Altre opzioni dell’Editor Rich Text comprendono:
 
@@ -57,7 +57,7 @@ Altre opzioni dell’Editor Rich Text comprendono:
 
 Per chiudere la modalità a schermo intero, fai clic sull’icona Riduci a icona.
 
-![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png)
+![schermata_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png)
 
 >[!NOTE]
 >

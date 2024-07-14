@@ -35,11 +35,11 @@ Esistono tre metodi per aggiungere metadati e tag:
 
   ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* Il **Varianti** dell’editor dei frammenti di contenuto ti consente di aggiungere **Tag** dal progetto:
+* La scheda **Varianti** dell&#39;editor frammenti di contenuto consente di aggiungere **tag** predefiniti dal progetto:
 
   ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* Il **Metadati** nell’editor dei frammenti di contenuto ti consente di aggiungere sia vari campi di metadati che campi predefiniti **Tag** dal progetto:
+* La scheda **Metadati** dell&#39;editor frammenti di contenuto consente di aggiungere dal progetto vari campi di metadati e **Tag** predefiniti:
 
   ![Editor frammento di contenuto: metadati](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 

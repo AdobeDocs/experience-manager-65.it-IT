@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Avvio rapido API servizio archivio {#repository-service-api-quick-starts}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 Per il servizio AEM Forms Repository sono disponibili i seguenti Quick Start.
 
@@ -46,9 +46,9 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 **Applicazioni/FormsApplication**
 
-La maggior parte dei servizi di archivio AEM Forms inizia ad interagire rapidamente con un’applicazione denominata `Applications/FormsApplication,` come illustrato nella figura seguente.
+La maggior parte degli avvii rapidi del servizio repository di AEM Forms interagisce con un&#39;applicazione denominata `Applications/FormsApplication,` come illustrato nella figura seguente.
 
-La cartella FormsFolder è una posizione nell’archivio di AEM Forms. È possibile, ad esempio, aggiungere questa cartella a livello di programmazione a `Applications/FormsApplication`. (vedere [Quick Start (modalità SOAP): creazione di una cartella utilizzando l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+La cartella FormsFolder è una posizione nell’archivio di AEM Forms. È possibile, ad esempio, aggiungere questa cartella a livello di programmazione a `Applications/FormsApplication`. (Vedere [Guida rapida (modalità SOAP): Creazione di una cartella tramite l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
 Il percorso di una risorsa nell’archivio AEM Forms è:
 
@@ -56,15 +56,15 @@ Il percorso di una risorsa nell’archivio AEM Forms è:
 
 >[!NOTE]
 >
->Puoi sfogliare l’archivio di AEM Forms utilizzando un browser web. Per sfogliare l’archivio, immetti il seguente URL in un browser web `https://[server name]:[server port]/repository`. Puoi verificare i risultati della procedura di avvio rapido utilizzando un browser web. Ad esempio, se aggiungi contenuto all’archivio di AEM Forms, puoi visualizzarlo in un browser web.
+>Puoi sfogliare l’archivio di AEM Forms utilizzando un browser web. Per sfogliare il repository, immettere l&#39;URL seguente in un browser Web `https://[server name]:[server port]/repository`. Puoi verificare i risultati della procedura di avvio rapido utilizzando un browser web. Ad esempio, se aggiungi contenuto all’archivio di AEM Forms, puoi visualizzarlo in un browser web.
 
 >[!NOTE]
 >
->Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un’applicazione tramite Workbench, consulta [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65).
+>Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un&#39;applicazione tramite Workbench, vedere [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Quick Start (modalità SOAP): creazione di una cartella utilizzando l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene creata una cartella denominata *FormsFolder* nella seguente posizione `/Applications/FormsApplication/1.0/`. (vedere [Creazione di cartelle](/help/forms/developing/aem-forms-repository.md#creating-folders).)
+Nell&#39;esempio di codice Java seguente viene creata una cartella denominata *FormsFolder* nel percorso seguente `/Applications/FormsApplication/1.0/`. (Vedi [Creazione di cartelle](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
 ```java
  /*
@@ -170,7 +170,7 @@ Nell&#39;esempio di codice Java seguente viene creata una cartella denominata *F
 
 ## Quick Start (modalità SOAP): scrittura di una risorsa utilizzando l’API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene scritta una risorsa denominata *loan.xdp* nell’archivio. La risorsa viene aggiunta al `/Applications/FormsApplication/1.0/FormsFolder` posizione. (vedere [Scrittura delle risorse](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+Nell&#39;esempio di codice Java seguente viene scritta una risorsa denominata *loan.xdp* nell&#39;archivio. La risorsa viene aggiunta al percorso `/Applications/FormsApplication/1.0/FormsFolder`. (Vedi [Scrittura delle risorse](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 ```java
  /*
@@ -298,7 +298,7 @@ Nell&#39;esempio di codice Java seguente viene scritta una risorsa denominata *l
 
 ## Quick Start (modalità SOAP): elenco delle risorse utilizzando l’API Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito sono elencate le risorse in `Applications/FormsApplication/1.0/FormsFolder`. (vedere [Elenco delle risorse](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+Nell&#39;esempio di codice Java seguente sono elencate le risorse presenti in `Applications/FormsApplication/1.0/FormsFolder`. (Vedi [Elenco delle risorse](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```java
  /*
@@ -397,7 +397,7 @@ Nell&#39;esempio di codice Java riportato di seguito sono elencate le risorse in
 
 ## Guida rapida (modalità SOAP): lettura di una risorsa tramite l’API Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene letta una risorsa denominata *Loan.xdp* dall’archivio. Il file XDP è in `/Applications/FormsApplication/1.0/FormsFolder/`. (vedere [Lettura delle risorse](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+Nell&#39;esempio di codice Java seguente viene letta una risorsa denominata *Loan.xdp* dal repository. Il file XDP è in `/Applications/FormsApplication/1.0/FormsFolder/`. (Vedi [Lettura delle risorse](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 ```java
  /*
@@ -498,7 +498,7 @@ Nell&#39;esempio di codice Java seguente viene letta una risorsa denominata *Loa
 
 ## Quick Start (modalità SOAP): aggiornamento di una risorsa tramite l’API Java {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
-I seguenti aggiornamenti di codice Java di esempio `/Applications/FormsApplication/1.0/FormsFolder` modificandone la descrizione. (vedere [Aggiornamento delle risorse](/help/forms/developing/aem-forms-repository.md#updating-resources).)
+Nell&#39;esempio di codice Java seguente `/Applications/FormsApplication/1.0/FormsFolder` viene aggiornato modificandone la descrizione. (Vedi [Aggiornamento delle risorse](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
 ```java
  /*
@@ -610,7 +610,7 @@ I seguenti aggiornamenti di codice Java di esempio `/Applications/FormsApplicati
 
 ## Quick Start (modalità SOAP): ricerca di risorse tramite API Java {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
 
-Il seguente esempio di codice Java cerca Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder`. (vedere [Ricerca di risorse](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
+Nell&#39;esempio di codice Java seguente viene eseguita la ricerca di Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder`. (Vedi [Ricerca delle risorse](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
 ```java
  /*
@@ -734,7 +734,7 @@ Il seguente esempio di codice Java cerca Loan.xdp in `Applications/FormsApplicat
 
 ## Guida rapida (modalità SOAP): creazione di relazioni tra le risorse tramite l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione tra due risorse nell&#39;archivio AEM Forms. (vedere [Creazione di relazioni tra risorse](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
+Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione tra due risorse nell&#39;archivio AEM Forms. (Vedi [Creazione di relazioni tra risorse](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 
 ```java
  /*
@@ -875,7 +875,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione 
 
 ## Quick Start (modalità SOAP): blocco di una risorsa tramite l’API Java {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
-Il seguente esempio di codice Java blocca /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (vedere [Blocco delle risorse](/help/forms/developing/aem-forms-repository.md#locking-resources).)
+Il seguente esempio di codice Java blocca /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (Vedi [Blocco delle risorse](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 
 ```java
  /*
@@ -1101,7 +1101,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene eseguita la l
 
 ## Guida rapida (modalità SOAP): eliminazione di una risorsa tramite l’API Java {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java seguente viene eliminato Loan.xdp da `Applications/FormsApplication/1.0/FormsFolder`. Se il file XDP non si trova in questa cartella, viene generata un&#39;eccezione. (vedere [Eliminazione delle risorse](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
+Esempio Nell&#39;esempio di codice Java seguente Loan.xdp viene eliminato da `Applications/FormsApplication/1.0/FormsFolder`. Se il file XDP non si trova in questa cartella, viene generata un&#39;eccezione. (Vedi [Eliminazione delle risorse](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
 ```java
  /*

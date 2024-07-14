@@ -19,9 +19,9 @@ Questo articolo descrive la creazione di funzioni personalizzate con il componen
 
 * Funzione di memorizzazione in cache per funzioni personalizzate
 * Supporto globale di oggetti di ambito e oggetti di campo per le funzioni personalizzate
-* Supporto per funzioni JavaScript moderne come le funzioni let e arrow (supporto ES10)
+* Supporto per le funzioni JavaScript moderne come le funzioni let e arrow (supporto ES10)
 
-Assicurati di impostare [versione più recente del modulo](https://github.com/adobe/aem-core-forms-components/tree/release/650) nell’ambiente dei Componenti core AEM Forms per utilizzare le funzioni più recenti di Funzioni personalizzate. </span>
+Assicurati di impostare la [versione più recente del modulo](https://github.com/adobe/aem-core-forms-components/tree/release/650) nell&#39;ambiente dei Componenti core AEM Forms per utilizzare le funzioni più recenti in Funzioni personalizzate. </span>
 
 
 | Versione | Collegamento articolo |
@@ -39,20 +39,20 @@ I vantaggi dell’utilizzo di funzioni personalizzate nei componenti core di For
 
 
 * **Gestione dei dati**: le funzioni personalizzate gestiscono ed elaborano i dati immessi nei campi dei moduli.
-* **Trattamento dei dati**: le funzioni personalizzate consentono di elaborare i dati immessi nei campi dei moduli.
-* **Convalida dei dati**: le funzioni personalizzate ti consentono di eseguire controlli personalizzati sugli input dei moduli e fornire messaggi di errore specifici.
+* **Elaborazione dei dati**: le funzioni personalizzate consentono di elaborare i dati immessi nei campi dei moduli.
+* **Convalida dei dati**: le funzioni personalizzate consentono di eseguire controlli personalizzati sugli input dei moduli e di fornire messaggi di errore specifici.
 * **Comportamento dinamico**: le funzioni personalizzate consentono di controllare il comportamento dinamico dei moduli in base a condizioni specifiche. Ad esempio, è possibile visualizzare/nascondere campi, modificare i valori dei campi o modificare dinamicamente la logica del modulo.
-* **Integrazione**: puoi utilizzare funzioni personalizzate da integrare con API o servizi esterni. Consente di recuperare dati da origini esterne, inviare dati agli endpoint Rest esterni o eseguire azioni personalizzate basate su eventi esterni.
+* **Integrazione**: è possibile utilizzare funzioni personalizzate da integrare con API o servizi esterni. Consente di recuperare dati da origini esterne, inviare dati agli endpoint Rest esterni o eseguire azioni personalizzate basate su eventi esterni.
 
-Le funzioni personalizzate sono essenzialmente librerie client aggiunte nel file JavaScript. Una volta creata, la funzione personalizzata diventa disponibile nell’editor di regole per la selezione da parte dell’utente in un modulo adattivo. Le funzioni personalizzate sono identificate dalle annotazioni JavaScript nell’editor di regole.
+Le funzioni personalizzate sono essenzialmente librerie client aggiunte al file JavaScript. Una volta creata, la funzione personalizzata diventa disponibile nell’editor di regole per la selezione da parte dell’utente in un modulo adattivo. Le funzioni personalizzate sono identificate dalle annotazioni di JavaScript nell’editor di regole.
 
-### Annotazioni JavaScript supportate per la funzione personalizzata {#js-annotations}
+### Annotazioni di JavaScript supportate per la funzione personalizzata {#js-annotations}
 
-**Le annotazioni JavaScript forniscono metadati per il codice JavaScript**. Include commenti che iniziano con simboli specifici, ad esempio: `/**` e `@`. Le annotazioni forniscono informazioni importanti su funzioni, variabili e altri elementi nel codice. Il modulo adattivo supporta le seguenti annotazioni JavaScript per le funzioni personalizzate:
+**Le annotazioni di JavaScript forniscono metadati per il codice JavaScript**. Include commenti che iniziano con simboli specifici, ad esempio `/**` e `@`. Le annotazioni forniscono informazioni importanti su funzioni, variabili e altri elementi nel codice. Il modulo adattivo supporta le seguenti annotazioni di JavaScript per le funzioni personalizzate:
 
 #### Nome
 
-Il **Nome** viene utilizzato per identificare la funzione personalizzata nell’editor di regole di un modulo adattivo. Per denominare una funzione personalizzata vengono utilizzate le sintassi seguenti:
+**Name** viene utilizzato per identificare la funzione personalizzata nell&#39;editor di regole di un modulo adattivo. Per denominare una funzione personalizzata vengono utilizzate le sintassi seguenti:
 
 * `@name [functionName] <Function Name>`
 * `@function [functionName] <Function Name>`
@@ -65,7 +65,7 @@ Il **Nome** viene utilizzato per identificare la funzione personalizzata nell’
 
 #### Parametro
 
-Il **Parametro** è un elenco di argomenti utilizzati dalle funzioni personalizzate. Una funzione può supportare più parametri. Le seguenti sintassi vengono utilizzate per definire un parametro in una funzione personalizzata:
+Il **parametro** è un elenco di argomenti utilizzati dalle funzioni personalizzate. Una funzione può supportare più parametri. Le seguenti sintassi vengono utilizzate per definire un parametro in una funzione personalizzata:
 
 * `@param {type} name <Parameter Description>`
 * `@argument` `{type} name <Parameter Description>`
@@ -77,15 +77,15 @@ Il **Parametro** è un elenco di argomenti utilizzati dalle funzioni personalizz
    * number: rappresenta un singolo valore numerico.
    * booleano: rappresenta un singolo valore booleano (true o false).
    * stringa[]: rappresenta una matrice di valori stringa.
-   * numero[]: rappresenta una matrice di valori numerici.
+   * number[]: rappresenta una matrice di valori numerici.
    * booleano[]: rappresenta una matrice di valori booleani.
    * data: rappresenta un singolo valore di data.
    * data[]: rappresenta una matrice di valori di data.
    * array: rappresenta una matrice generica contenente valori di vari tipi.
    * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
-   * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli nelle funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni JavaScript e non è visibile all’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fai clic qui](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+   * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli nelle funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni di JavaScript e non è visibile all’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fare clic qui](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
 
-Il tipo di parametro è **senza distinzione tra maiuscole e minuscole** Gli spazi e non sono consentiti nel nome del parametro.
+Il tipo di parametro è **senza distinzione tra maiuscole e minuscole** e non sono consentiti spazi nel nome del parametro.
 
 `<Parameter Description>` contiene dettagli sullo scopo del parametro. Può avere più parole.
 
@@ -158,7 +158,7 @@ Il tipo restituito specifica il tipo di valore restituito dalla funzione persona
 * number: rappresenta un singolo valore numerico.
 * booleano: rappresenta un singolo valore booleano (true o false).
 * stringa[]: rappresenta una matrice di valori stringa.
-* numero[]: rappresenta una matrice di valori numerici.
+* number[]: rappresenta una matrice di valori numerici.
 * booleano[]: rappresenta una matrice di valori booleani.
 * data: rappresenta un singolo valore di data.
 * data[]: rappresenta una matrice di valori di data.
@@ -169,7 +169,7 @@ Il tipo restituito non fa distinzione tra maiuscole e minuscole.
 
 #### Privata
 
-La funzione personalizzata, dichiarata come privata, non viene visualizzata nell’elenco delle funzioni personalizzate nell’editor delle regole di un modulo adattivo. Per impostazione predefinita, le funzioni personalizzate sono pubbliche. Sintassi per dichiarare la funzione personalizzata come privata `@private`.
+La funzione personalizzata, dichiarata come privata, non viene visualizzata nell’elenco delle funzioni personalizzate nell’editor delle regole di un modulo adattivo. Per impostazione predefinita, le funzioni personalizzate sono pubbliche. La sintassi per dichiarare la funzione personalizzata come privata è `@private`.
 
 <!--
 #### Member
@@ -338,15 +338,15 @@ Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, 
 
 Prima di iniziare ad aggiungere una funzione personalizzata al Forms adattivo, accertati di aver installato sul computer il seguente software:
 
-* **Editor testo normale (IDE)**: mentre qualsiasi editor di testo normale può funzionare, un ambiente di sviluppo integrato (IDE) come Microsoft Visual Studio Code offre funzionalità avanzate per semplificare le modifiche.
+* **Editor di testo normale (IDE)**: mentre qualsiasi editor di testo normale può funzionare, un ambiente di sviluppo integrato (IDE) come Microsoft Visual Studio Code offre funzionalità avanzate per semplificare la modifica.
 
-* **Git:** Questo sistema di controllo della versione è necessario per gestire le modifiche al codice. Se non lo hai installato, scaricalo da https://git-scm.com.
+* **Git:** Questo sistema di controllo della versione è necessario per la gestione delle modifiche al codice. Se non lo hai installato, scaricalo da https://git-scm.com.
 
 
 ## Creare una funzione personalizzata {#create-custom-function}
 
 I passaggi per creare funzioni personalizzate sono i seguenti:
-1. [Creare una libreria lato client utilizzando l’archetipo di progetto AEM e aggiungere una funzione personalizzata](#create-client-library-archetype)
+1. [Crea una libreria lato client utilizzando l&#39;archetipo di progetto AEM e aggiungi una funzione personalizzata](#create-client-library-archetype)
 OPPURE
    [Creare funzioni personalizzate tramite CRXDE](#create-add-custom-function)
 1. [Aggiungere una libreria client a un modulo adattivo](#add-client-library)
@@ -355,8 +355,8 @@ OPPURE
 
 ### Creare una libreria client utilizzando l’archetipo di progetto AEM{#create-client-library-archetype}
 
-Puoi aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzo dell’archetipo del progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
-Se hai già un progetto <!--and have already the project structure as shown in the image below,--> puoi aggiungere direttamente [funzioni personalizzate](#create-add-custom-function) al progetto locale.
+È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando l&#39;archetipo di progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Se hai un progetto esistente <!--and have already the project structure as shown in the image below,--> puoi aggiungere direttamente [funzioni personalizzate](#create-add-custom-function) al progetto locale.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
 
@@ -364,25 +364,25 @@ Dopo aver creato un progetto di Archetipo o aver utilizzato un progetto esistent
 
 **Aggiungi una cartella della libreria client**
 
-Per aggiungere una nuova cartella della libreria client al tuo [Directory del progetto AEM], segui i passaggi seguenti:
+Per aggiungere una nuova cartella della libreria client alla [directory del progetto AEM], eseguire la procedura seguente:
 
-1. Apri [Directory del progetto AEM] in un editor.
+1. Apri la [directory del progetto AEM] in un editor.
 
-   ![struttura di cartelle di funzioni personalizzate](assets/custom-library-folder-structure.png)
+   ![struttura cartella funzioni personalizzata](assets/custom-library-folder-structure.png)
 
-1. Individua `ui.apps`.
-1. Aggiungi nuova cartella. Ad esempio, aggiungi una cartella denominata `experience-league`.
-1. Accedi a `/experience-league/` cartella e aggiungi una `ClientLibraryFolder`. Ad esempio, crea una cartella della libreria client denominata `customclientlibs`.
+1. Individuare `ui.apps`.
+1. Aggiungi nuova cartella. Aggiungere ad esempio una cartella denominata `experience-league`.
+1. Passare alla cartella `/experience-league/` e aggiungere `ClientLibraryFolder`. Creare ad esempio una cartella della libreria client denominata `customclientlibs`.
 
    Posizione: `[AEM project directory]/ui.apps/src/main/content/jcr_root/apps/`
 
-**Aggiungere file e cartelle alla cartella Libreria client**
+**Aggiungi file e cartelle alla cartella Libreria client**
 
 Aggiungi quanto segue alla cartella della libreria client aggiunta:
 
 * `.content.xml` file
 * `js.txt` file
-* `js` cartella
+* Cartella `js`
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
 
@@ -397,7 +397,7 @@ Aggiungi quanto segue alla cartella della libreria client aggiunta:
 
    >[!NOTE]
    >
-   > Puoi scegliere un nome qualsiasi per `client library folder` e `categories` proprietà.
+   > È possibile scegliere qualsiasi nome per la proprietà `client library folder` e `categories`.
 
 1. In `js.txt` aggiungi le seguenti righe di codice:
 
@@ -406,7 +406,7 @@ Aggiungi quanto segue alla cartella della libreria client aggiunta:
        function.js
    ```
 
-1. In `js` , aggiungi il file javascript come `function.js` che include le funzioni personalizzate:
+1. Nella cartella `js`, aggiungi il file javascript come `function.js` che include le funzioni personalizzate:
 
    ```javascript
    /**
@@ -433,20 +433,20 @@ Aggiungi quanto segue alla cartella della libreria client aggiunta:
 
 1. Salva i file.
 
-![struttura di cartelle di funzioni personalizzate](assets/custom-function-added-files.png)
+![struttura cartella funzioni personalizzata](assets/custom-function-added-files.png)
 
-**Includi la nuova cartella in filter.xml**:
+**Includi la nuova cartella nel file filter.xml**:
 
-1. Accedi a `/ui.apps/src/main/content/META-INF/vault/filter.xml` file nel tuo [Directory del progetto AEMaaCS].
+1. Passa al file `/ui.apps/src/main/content/META-INF/vault/filter.xml` nella directory del progetto [AEMaaCS].
 
 1. Apri il file e aggiungi la seguente riga alla fine:
 
    `<filter root="/apps/experience-league" />`
 1. Salva il file.
 
-   ![xml filtro funzione personalizzato](assets/custom-function-filterxml.png)
+   ![filtro funzione personalizzato xml](assets/custom-function-filterxml.png)
 
-1. Crea nell’ambiente AEM la cartella della libreria client appena creata seguendo i passaggi descritti in [Sezione Come creare](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
+1. Crea la cartella della libreria client appena creata nell&#39;ambiente AEM seguendo i passaggi indicati nella [sezione Come generare](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
 
 ## Creare e distribuire funzioni personalizzate tramite CRXDE{#create-add-custom-function}
 
@@ -456,27 +456,27 @@ Se utilizzi il componente aggiuntivo AEM Forms e Forms più recente, puoi creare
 
 
 1. Accedi a `http://server:port/crx/de/index.jsp#`.
-1. Creare una cartella in `/apps` cartella. Ad esempio, crea una cartella denominata come `experience-league`.
+1. Creare una cartella nella cartella `/apps`. Creare ad esempio una cartella denominata `experience-league`.
 1. Salva le modifiche.
-1. Passa alla cartella creata e crea un nodo di tipo `cq:ClientLibraryFolder` as `clientlibs`.
-1. Passa alla nuova `clientlibs` cartella e aggiungi `allowProxy` e `categories` proprietà:
+1. Passare alla cartella creata e creare un nodo di tipo `cq:ClientLibraryFolder` come `clientlibs`.
+1. Passare alla cartella `clientlibs` appena creata e aggiungere le proprietà `allowProxy` e `categories`:
 
-   ![Proprietà del nodo della libreria personalizzata](/help/forms/using/assets/customlibrary-catproperties.png)
+   ![Proprietà nodo libreria personalizzato](/help/forms/using/assets/customlibrary-catproperties.png)
 
    >[!NOTE]
    >
-   > Puoi fornire qualsiasi nome al posto di `customfunctionsdemo`.
+   > È possibile specificare qualsiasi nome al posto di `customfunctionsdemo`.
 
 1. Salva le modifiche.
 
-1. Crea una cartella denominata `js` sotto `clientlibs` cartella.
-1. Creare un file JavaScript denominato `functions.js` sotto `js` cartella.
-1. Crea un file denominato `js.txt` sotto `clientlibs` cartella.
+1. Creare una cartella denominata `js` nella cartella `clientlibs`.
+1. Creare un file JavaScript denominato `functions.js` nella cartella `js`.
+1. Creare un file denominato `js.txt` nella cartella `clientlibs`.
 1. Salva le modifiche.
 La struttura di cartelle creata è simile alla seguente:
 
-   ![Struttura delle cartelle della libreria client creata](/help/forms/using/assets/clientlibrary_folderstructure.png)
-1. Fai doppio clic su `functions.js` per aprire l’editor. Il file contiene il codice per la funzione personalizzata.
+   ![Struttura cartella della libreria client creata](/help/forms/using/assets/clientlibrary_folderstructure.png)
+1. Fare doppio clic sul file `functions.js` per aprire l&#39;editor. Il file contiene il codice per la funzione personalizzata.
 Aggiungiamo il seguente codice al file JavaScript per calcolare l’età in base alla data di nascita (AAAA-MM-GG).
 
    ```javascript
@@ -502,16 +502,16 @@ Aggiungiamo il seguente codice al file JavaScript per calcolare l’età in base
    ```
 
 1. Salva `function.js`.
-1. Accedi a `js.txt` e aggiungi il seguente codice:
+1. Passare a `js.txt` e aggiungere il codice seguente:
 
    ```javascript
        #base=js
        functions.js
    ```
 
-1. Salva il `js.txt` file.
+1. Salva il file `js.txt`.
 
-Puoi consultare quanto segue [funzione personalizzata](/help/forms/using/assets/customfunction.zip) cartella. Scarica e installa questa cartella nella tua istanza AEM.
+È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/using/assets/customfunction.zip). Scarica e installa questa cartella nella tua istanza AEM.
 
 Ora è possibile utilizzare la funzione personalizzata nel modulo adattivo aggiungendo la libreria client.
 
@@ -520,9 +520,9 @@ Ora è possibile utilizzare la funzione personalizzata nel modulo adattivo aggiu
 Dopo aver implementato la libreria client nell’ambiente AEM Forms, utilizzane le funzionalità nel modulo adattivo. Per aggiungere la libreria client al modulo adattivo
 
 1. Apri il modulo in modalità di modifica. Per aprire un modulo in modalità di modifica, selezionare un modulo e selezionare **[!UICONTROL Modifica]**.
-1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
 1. Fai clic sull’icona delle proprietà del Contenitore guida. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
-1. Apri **[!UICONTROL Base]** e seleziona il nome del **[!UICONTROL categoria libreria client]** dall’elenco a discesa (in questo caso, seleziona `customfunctionscategory`).
+1. Apri la scheda **[!UICONTROL Base]** e seleziona il nome della **[!UICONTROL categoria di librerie client]** dall&#39;elenco a discesa (in questo caso, seleziona `customfunctionscategory`).
 
    ![Aggiunta della libreria client della funzione personalizzata](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
@@ -532,12 +532,12 @@ Ora puoi creare una regola per utilizzare funzioni personalizzate nell’editor 
 
 ![Aggiunta della libreria client della funzione personalizzata](/help/forms/using//assets/calculateage-customfunction.png)
 
-Ora vediamo come configurare e utilizzare una funzione personalizzata utilizzando [Servizio Invoke dell’editor di regole in AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
+Ora vediamo come configurare e utilizzare una funzione personalizzata utilizzando il servizio Invoke dell&#39;editor di regole [in AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
 
 ## Utilizzo di una funzione personalizzata in un modulo adattivo {#use-custom-functions}
 
-In un modulo adattivo, puoi utilizzare [Funzioni personalizzate all’interno dell’editor di regole](/help/forms/using/rule-editor-core-components.md).
-Aggiungiamo il seguente codice al file JavaScript (`Function.js` file) per calcolare l&#39;età in base alla data di nascita (AAAA-MM-GG). Creare una funzione personalizzata come `calculateAge()` prende la data di nascita come dato di partenza e restituisce l’età:
+In un modulo adattivo, puoi utilizzare [funzioni personalizzate all&#39;interno dell&#39;editor di regole](/help/forms/using/rule-editor-core-components.md).
+Aggiungiamo il codice seguente al file JavaScript (`Function.js` file) per calcolare l&#39;età in base alla data di nascita (AAAA-MM-GG). Creare una funzione personalizzata come `calculateAge()` che utilizza come input la data di nascita e restituisce l&#39;età:
 
 ```javascript
     /**
@@ -562,23 +562,23 @@ Aggiungiamo il seguente codice al file JavaScript (`Function.js` file) per calco
     }
 ```
 
-Nell’esempio precedente, quando l’utente immette la data di nascita nel formato (AAAA-MM-GG), la funzione personalizzata `calculateAge` viene richiamato e restituisce l’età.
+Nell&#39;esempio precedente, quando l&#39;utente immette la data di nascita nel formato (AAAA-MM-GG), la funzione personalizzata `calculateAge` viene richiamata e restituisce l&#39;età.
 
-![Funzione personalizzata Calcola età nell’editor di regole](/help/forms/using/assets/custom-function-calculate-age.png)
+![Funzione personalizzata Calcola età nell&#39;editor di regole](/help/forms/using/assets/custom-function-calculate-age.png)
 
 Visualizziamo in anteprima il modulo per osservare come le funzioni personalizzate vengono implementate tramite l’editor di regole:
 
-![Funzione personalizzata Calcola età nell’anteprima del modulo dell’Editor regole](/help/forms/using/assets/custom-function-age-calculate-form.png)
+![Funzione personalizzata Calcola età nell&#39;editor di regole Anteprima modulo](/help/forms/using/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
-> Puoi consultare quanto segue [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip) cartella. Scarica e installa questa cartella nell’istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Supporto delle funzioni asincrone nelle funzioni personalizzate {#support-of-async-functions}
 
 Le funzioni personalizzate asincrone non vengono visualizzate nell’elenco dell’editor di regole. Tuttavia, è possibile richiamare funzioni asincrone all’interno di funzioni personalizzate create utilizzando espressioni di funzioni sincrone.
 
-![Sincronizza e asincronizza funzione personalizzata](/help/forms/using/assets/workflow-for-sync-async-custom-fumction.png)
+![Sincronizza e sincronizza funzione personalizzata](/help/forms/using/assets/workflow-for-sync-async-custom-fumction.png)
 
 >[!NOTE]
 >
@@ -609,13 +609,13 @@ Osserva il codice seguente per scoprire come richiamare funzioni asincrone utili
 }
 ```
 
-Nell&#39;esempio precedente, la funzione asyncFunction è un `asynchronous function`. Esegue un&#39;operazione asincrona eseguendo una `GET` richiesta a `https://petstore.swagger.io/v2/store/inventory`. Attende la risposta utilizzando `await`, analizza il corpo della risposta come JSON utilizzando `response.json()`, quindi restituisce i dati. Il `callAsyncFunction` è una funzione personalizzata sincrona che richiama `asyncFunction` e visualizza i dati di risposta nella console. Anche se il `callAsyncFunction` è sincrona, chiama la funzione asyncFunction asincrona e gestisce il relativo risultato con `then` e `catch` istruzioni.
+Nell&#39;esempio precedente, la funzione asyncFunction è un `asynchronous function`. Esegue un&#39;operazione asincrona effettuando una richiesta `GET` a `https://petstore.swagger.io/v2/store/inventory`. Attende la risposta utilizzando `await`, analizza il corpo della risposta come JSON utilizzando `response.json()`, quindi restituisce i dati. La funzione `callAsyncFunction` è una funzione personalizzata sincrona che richiama la funzione `asyncFunction` e visualizza i dati di risposta nella console. Sebbene la funzione `callAsyncFunction` sia sincrona, chiama la funzione asyncFunction asincrona e gestisce il risultato con `then` e `catch` istruzioni.
 
 Per vedere come funziona, aggiungiamo un pulsante e creiamo una regola per il pulsante che richiama la funzione asincrona al clic di un pulsante.
 
 ![creazione regola per funzione asincrona](/help/forms/using/assets/rule-for-async-funct.png)
 
-Fai riferimento all’illustrazione della finestra della console seguente per dimostrare che quando l’utente fa clic su `Fetch` , la funzione personalizzata `callAsyncFunction` viene richiamato, che a sua volta chiama una funzione asincrona `asyncFunction`. Inspect mostra la finestra della console per visualizzare la risposta al clic del pulsante:
+Fare riferimento all&#39;illustrazione della finestra della console seguente per dimostrare che quando l&#39;utente fa clic sul pulsante `Fetch`, viene richiamata la funzione personalizzata `callAsyncFunction`, che a sua volta chiama una funzione asincrona `asyncFunction`. Inspect mostra la finestra della console per visualizzare la risposta al clic del pulsante:
 
 ![Finestra della console](/help/forms/using/assets/async-custom-funct-console.png)
 
@@ -631,7 +631,7 @@ Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modul
 
 >[!NOTE]
 >
-> Il `param {scope} globals` deve essere l’ultimo parametro e non viene visualizzato nell’editor di regole di un modulo adattivo.
+> `param {scope} globals` deve essere l&#39;ultimo parametro e non viene visualizzato nell&#39;editor di regole di un modulo adattivo.
 
 <!-- Let us look at the following code snippet:
 
@@ -655,13 +655,13 @@ Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modul
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-Scopri in che modo le funzioni personalizzate utilizzano gli oggetti campo e globali con l’aiuto di un `Contact Us` utilizzando diversi casi d’uso.
+Scopri in che modo le funzioni personalizzate utilizzano gli oggetti field e global con l&#39;aiuto di un modulo `Contact Us` che utilizza casi d&#39;uso diversi.
 
 ![Modulo per contattarci](/help/forms/using/assets/contact-us-form.png)
 
-#### **Caso d’uso**: mostra un pannello utilizzando `SetProperty` regola
+#### **Caso d&#39;uso**: mostra un pannello utilizzando la regola `SetProperty`
 
-Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) , per impostare il campo modulo come `Required`.
+Aggiungere il codice seguente nella funzione personalizzata come descritto nella sezione [create-custom-function](#create-custom-function) per impostare il campo modulo come `Required`.
 
 ```javascript
     
@@ -684,26 +684,26 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
 
 >[!NOTE]
 >
-> * Puoi configurare le proprietà del campo utilizzando le proprietà disponibili in `[form-path]/jcr:content/guideContainer.model.json`.
-> * Modifiche apportate al modulo utilizzando `setProperty` Il metodo dell&#39;oggetto Globals è asincrono e non viene riflesso durante l&#39;esecuzione della funzione personalizzata.
+> * È possibile configurare le proprietà del campo utilizzando le proprietà disponibili in `[form-path]/jcr:content/guideContainer.model.json`.
+> * Le modifiche apportate al modulo utilizzando il metodo `setProperty` dell&#39;oggetto Globals sono di natura asincrona e non vengono applicate durante l&#39;esecuzione della funzione personalizzata.
 
-In questo esempio, la convalida del `personaldetails` facendo clic sul pulsante. Se non vengono rilevati errori nel pannello, viene visualizzato un altro pannello, `feedback` visibile al clic del pulsante.
+In questo esempio, la convalida del pannello `personaldetails` viene eseguita facendo clic sul pulsante. Se non vengono rilevati errori nel pannello, un altro pannello, il pannello `feedback`, diventa visibile al clic del pulsante.
 
-Creiamo una regola per `Next` , che convalida il `personaldetails` e rende `feedback`  visibile quando l’utente fa clic su `Next` pulsante.
+Creiamo una regola per il pulsante `Next`, che convalida il pannello `personaldetails` e rende visibile il pannello `feedback` quando l&#39;utente fa clic sul pulsante `Next`.
 
 ![Imposta proprietà](/help/forms/using/assets/custom-function-set-property.png)
 
-Fare riferimento all&#39;illustrazione seguente per dimostrare dove `personaldetails` viene convalidato facendo clic sul pulsante `Next` pulsante. Nel caso in cui tutti i campi all’interno di `personaldetails` sono convalidati, `feedback` diventa visibile.
+Fare riferimento all&#39;illustrazione seguente per dimostrare dove viene convalidato il pannello `personaldetails` facendo clic sul pulsante `Next`. Se tutti i campi all&#39;interno di `personaldetails` sono convalidati, il pannello `feedback` diventa visibile.
 
-![Anteprima modulo proprietà](/help/forms/using/assets/set-property-form-preview.png)
+![Imposta anteprima modulo proprietà](/help/forms/using/assets/set-property-form-preview.png)
 
-Se sono presenti errori nei campi di `personaldetails` a livello di campo facendo clic sul pulsante `Next` e `feedback` il pannello rimane invisibile.
+Se nei campi del pannello `personaldetails` sono presenti errori, questi vengono visualizzati a livello di campo facendo clic sul pulsante `Next` e il pannello `feedback` rimane invisibile.
 
-![Anteprima modulo proprietà](/help/forms/using/assets/set-property-panel.png)
+![Imposta anteprima modulo proprietà](/help/forms/using/assets/set-property-panel.png)
 
-#### **Caso d’uso**: convalida il campo.
+#### **Caso d&#39;uso**: convalidare il campo.
 
-Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per convalidare il campo.
+Aggiungi il seguente codice nella funzione personalizzata come descritto nella sezione [create-custom-function](#create-custom-function) per convalidare il campo.
 
 ```javascript
     /**
@@ -722,27 +722,27 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
 
 >[!NOTE]
 >
-> Se non viene passato alcun argomento nel `validate()` funzione, convalida il modulo.
+> Se nella funzione `validate()` non viene passato alcun argomento, il modulo viene convalidato.
 
-In questo esempio, un pattern di convalida personalizzato viene applicato al `contact` campo. Gli utenti devono inserire un numero di telefono che inizia con `10` seguito da `8` cifre. Se l’utente immette un numero di telefono che non inizia con `10` o contiene più o meno di `8` cifre, viene visualizzato un messaggio di errore di convalida al clic del pulsante:
+In questo esempio, al campo `contact` viene applicato un pattern di convalida personalizzato. Gli utenti devono immettere un numero di telefono che inizia con `10` seguito da `8` cifre. Se l&#39;utente immette un numero di telefono che non inizia con `10` o che contiene più o meno di `8` cifre, viene visualizzato un messaggio di errore di convalida al clic del pulsante:
 
-![Pattern di convalida dell’indirizzo e-mail](/help/forms/using/assets/custom-function-validation-pattern.png)
+![Modello di convalida indirizzo e-mail](/help/forms/using/assets/custom-function-validation-pattern.png)
 
-Il passaggio successivo consiste nel creare una regola per `Next` pulsante che convalida `contact` sul pulsante, fai clic su.
+Il passaggio successivo consiste nel creare una regola per il pulsante `Next` che convalida il campo `contact` al clic del pulsante.
 
-![Pattern di convalida](/help/forms/using/assets/custom-function-validate.png)
+![Modello di convalida](/help/forms/using/assets/custom-function-validate.png)
 
-Fai riferimento all’illustrazione seguente per dimostrare che se l’utente immette un numero di telefono che non inizia con `10`, a livello di campo viene visualizzato un messaggio di errore:
+Fare riferimento all&#39;illustrazione seguente per dimostrare che se l&#39;utente immette un numero di telefono che non inizia con `10`, viene visualizzato un messaggio di errore a livello di campo:
 
-![Pattern di convalida dell’indirizzo e-mail](/help/forms/using/assets/custom-function-validate-error-message.png)
+![Modello di convalida indirizzo e-mail](/help/forms/using/assets/custom-function-validate-error-message.png)
 
-Se l’utente immette un numero di telefono valido e tutti i campi nel campo `personaldetails` vengono convalidati, il `feedback` Il pannello viene visualizzato sullo schermo:
+Se l&#39;utente immette un numero di telefono valido e tutti i campi nel pannello `personaldetails` sono convalidati, il pannello `feedback` viene visualizzato sullo schermo:
 
-![Pattern di convalida dell’indirizzo e-mail](/help/forms/using/assets/validate-form-preview-form.png)
+![Modello di convalida indirizzo e-mail](/help/forms/using/assets/validate-form-preview-form.png)
 
-#### **Caso d’uso**: reimpostare un pannello
+#### **Caso d&#39;uso**: reimpostare un pannello
 
-Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per ripristinare il pannello.
+Aggiungi il seguente codice nella funzione personalizzata, come descritto nella sezione [create-custom-function](#create-custom-function), per ripristinare il pannello.
 
 ```javascript
     /**
@@ -762,26 +762,26 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
 
 >[!NOTE]
 >
-> Se non viene passato alcun argomento nel `reset()` funzione, convalida il modulo.
+> Se nella funzione `reset()` non viene passato alcun argomento, il modulo viene convalidato.
 
-In questo esempio, la proprietà `personaldetails` il pannello viene ripristinato facendo clic su `Clear` pulsante. Il passaggio successivo consiste nel creare una regola per `Clear` che ripristina il pannello facendo clic sul pulsante.
+In questo esempio, il pannello `personaldetails` viene ripristinato facendo clic sul pulsante `Clear`. Il passaggio successivo consiste nel creare una regola per il pulsante `Clear` che ripristini il pannello al clic del pulsante.
 
-![Pulsante Cancella](/help/forms/using/assets/custom-function-reset-field.png)
+![Cancella pulsante](/help/forms/using/assets/custom-function-reset-field.png)
 
-Vedere l&#39;illustrazione seguente per mostrare che se l&#39;utente fa clic su `clear` pulsante, il pulsante `personaldetails` ripristini pannello:
+Vedere l&#39;illustrazione seguente per mostrare che se l&#39;utente fa clic sul pulsante `clear`, il pannello `personaldetails` viene ripristinato:
 
 ![Reimposta modulo](assets/custom-function-reset-form.png)
 
-#### **Caso d’uso**: per visualizzare un messaggio personalizzato a livello di campo e contrassegnare il campo come non valido
+#### **Caso d&#39;uso**: per visualizzare un messaggio personalizzato a livello di campo e contrassegnare il campo come non valido
 
-È possibile utilizzare `markFieldAsInvalid()` per definire un campo come non valido e impostare un messaggio di errore personalizzato a livello di campo. Il `fieldIdentifier` il valore può essere `fieldId`, o `field qualifiedName`, o `field dataRef`. Il valore dell’oggetto denominato `option` può essere `{useId: true}`, `{useQualifiedName: true}`, o `{useDataRef: true}`.
+È possibile utilizzare la funzione `markFieldAsInvalid()` per definire un campo come non valido e impostare un messaggio di errore personalizzato a livello di campo. Il valore `fieldIdentifier` può essere `fieldId`, `field qualifiedName` o `field dataRef`. Il valore dell&#39;oggetto denominato `option` può essere `{useId: true}`, `{useQualifiedName: true}` o `{useDataRef: true}`.
 Le sintassi utilizzate per contrassegnare il campo come non valido e impostare un messaggio personalizzato sono:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per abilitare il messaggio personalizzato a livello di campo.
+Aggiungi il seguente codice nella funzione personalizzata, come descritto nella sezione [create-custom-function](#create-custom-function), per abilitare il messaggio personalizzato a livello di campo.
 
 ```javascript
     /**
@@ -801,28 +801,28 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
 
 In questo esempio, se l&#39;utente immette meno di 15 caratteri nella casella di testo dei commenti, viene visualizzato un messaggio personalizzato a livello di campo.
 
-Il passaggio successivo consiste nel creare una regola per `comments` campo:
+Il passaggio successivo consiste nel creare una regola per il campo `comments`:
 
-![Contrassegna campo come non valido](/help/forms/using/assets/custom-function-invalid-field.png)
+![Contrassegna il campo come non valido](/help/forms/using/assets/custom-function-invalid-field.png)
 
-Vedere la dimostrazione riportata di seguito per mostrare che l&#39;immissione di feedback negativo nel `comments` Il campo attiva la visualizzazione di un messaggio personalizzato a livello di campo:
+Vedere la dimostrazione seguente per visualizzare che l&#39;immissione di un feedback negativo nel campo `comments` attiva la visualizzazione di un messaggio personalizzato a livello di campo:
 
-![Contrassegna campo come modulo di anteprima non valido](/help/forms/using/assets/custom-function-invalidfield-form.png)
+![Contrassegna il campo come modulo di anteprima non valido](/help/forms/using/assets/custom-function-invalidfield-form.png)
 
 Se l’utente immette più di 15 caratteri nella casella di testo Commenti, il campo viene convalidato e il modulo viene inviato:
 
-![Contrassegna campo come modulo di anteprima valido](/help/forms/using/assets/custom-function-validfield-form.png)
+![Contrassegna il campo come modulo di anteprima valido](/help/forms/using/assets/custom-function-validfield-form.png)
 
 
-#### **Caso d’uso**: invia i dati modificati al server
+#### **Caso d&#39;uso**: invio dei dati modificati al server
 
 La seguente riga di codice:
 `globals.functions.submitForm(globals.functions.exportData(), false);` viene utilizzato per inviare i dati del modulo dopo la manipolazione.
 * Il primo argomento è costituito dai dati da inviare.
-* Il secondo argomento indica se il modulo deve essere convalidato prima dell&#39;invio. È `optional` e impostato come `true` per impostazione predefinita.
-* Il terzo argomento è il seguente: `contentType` dell’invio, che è anche facoltativo con il valore predefinito come `multipart/form-data`. Gli altri valori possono essere `application/json` e `application/x-www-form-urlencoded`.
+* Il secondo argomento indica se il modulo deve essere convalidato prima dell&#39;invio. È `optional` ed è impostato come `true` per impostazione predefinita.
+* Il terzo argomento è `contentType` dell&#39;inoltro, che è anche facoltativo con il valore predefinito `multipart/form-data`. Gli altri valori possono essere `application/json` e `application/x-www-form-urlencoded`.
 
-Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per inviare i dati manipolati sul server:
+Aggiungi il seguente codice nella funzione personalizzata, come descritto nella sezione [create-custom-function](#create-custom-function), per inviare i dati manipolati sul server:
 
 ```javascript
     /**
@@ -843,19 +843,19 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
     }
 ```
 
-In questo esempio, se l’utente lascia il `comments` casella di testo vuota, il `NA` viene inviato al server al momento dell’invio del modulo.
+In questo esempio, se l&#39;utente lascia vuota la casella di testo `comments`, `NA` viene inviato al server al momento dell&#39;invio del modulo.
 
-Ora crea una regola per `Submit` pulsante che invia i dati:
+Creare una regola per il pulsante `Submit` che invia i dati:
 
-![Inviare dati](/help/forms/using/assets/custom-function-submit-data.png)
+![Invia dati](/help/forms/using/assets/custom-function-submit-data.png)
 
-Fai riferimento all’illustrazione della `console window` di seguito per dimostrare che se l’utente abbandona `comments` casella di testo vuota, quindi il valore come `NA` viene inviato nel server:
+Fare riferimento all&#39;illustrazione di `console window` seguente per dimostrare che se l&#39;utente lascia vuota la casella di testo `comments`, il valore `NA` viene inviato nel server:
 
 ![Invia dati nella finestra della console](/help/forms/using/assets/custom-function-submit-data-form.png)
 
 È inoltre possibile esaminare la finestra della console per visualizzare i dati inviati al server:
 
-![Dati di Inspect nella finestra della console](/help/forms/using/assets/custom-function-submit-data-console-data.png)
+![Dati Inspect nella finestra della console](/help/forms/using/assets/custom-function-submit-data-console-data.png)
 
 <!--
 
@@ -972,7 +972,7 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 
 ## Supporto della memorizzazione in cache per la funzione personalizzata
 
-Forms adattivo implementa il caching per le funzioni personalizzate per migliorare il tempo di risposta durante il recupero dell’elenco delle funzioni personalizzate nell’editor di regole. Un messaggio come `Fetched following custom functions list from cache` viene visualizzato nel `error.log` file.
+Forms adattivo implementa il caching per le funzioni personalizzate per migliorare il tempo di risposta durante il recupero dell’elenco delle funzioni personalizzate nell’editor di regole. Nel file `error.log` viene visualizzato il messaggio `Fetched following custom functions list from cache`.
 
 ![funzione personalizzata con supporto cache](/help/forms/using/assets/custom-function-cache-error.png)
 
@@ -980,24 +980,24 @@ Se le funzioni personalizzate vengono modificate, la memorizzazione in cache vie
 
 ## Risoluzione dei problemi {#troubleshooting}
 
-* L’utente deve assicurarsi che il [il componente core e la versione della specifica sono impostati sulla versione più recente](https://github.com/adobe/aem-core-forms-components/tree/release/650). Tuttavia, per i progetti e i moduli AEM esistenti, vi sono ulteriori passi da seguire:
+* L&#39;utente deve verificare che il componente core [e la versione della specifica siano impostati sulla versione più recente](https://github.com/adobe/aem-core-forms-components/tree/release/650). Tuttavia, per i progetti e i moduli AEM esistenti, vi sono ulteriori passi da seguire:
 
-   * Per il progetto AEM, l’utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e implementa il progetto.
+   * Per il progetto AEM, l&#39;utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e distribuire il progetto.
 
-   * Per i moduli esistenti, se i gestori di invio personalizzati non funzionano correttamente, l’utente deve aprire e salvare il `submitForm` regola sul **Invia** tramite l&#39;editor di regole. Questa azione sostituisce la regola esistente da `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` nel modulo.
+   * Per i moduli esistenti, se i gestori di invio personalizzati non funzionano correttamente, l&#39;utente deve aprire e salvare la regola `submitForm` sul pulsante **Invia** utilizzando l&#39;editor di regole. Questa azione sostituisce la regola esistente di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` nel modulo.
 
 
-* Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor di regole di un modulo adattivo. Per verificare l&#39;elenco delle funzioni personalizzate, è possibile passare alla `error.log` file per l’errore. In caso di errore, l’elenco delle funzioni personalizzate appare vuoto:
+* Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor delle regole di un modulo adattivo. Per verificare l&#39;elenco delle funzioni personalizzate, è possibile individuare l&#39;errore nel file `error.log`. In caso di errore, l’elenco delle funzioni personalizzate appare vuoto:
 
-  ![file registro errori](/help/forms/using/assets/custom-function-list-error-file.png)
+  ![file di log degli errori](/help/forms/using/assets/custom-function-list-error-file.png)
 
-  In caso di errore, la funzione personalizzata viene recuperata e visualizzata in `error.log` file. Un messaggio come `Fetched following custom functions list` viene visualizzato nel `error.log` file:
+  In caso di errore, la funzione personalizzata viene recuperata e visualizzata nel file `error.log`. Nel file `error.log` viene visualizzato il messaggio `Fetched following custom functions list`:
 
-  ![file di log degli errori con la funzione personalizzata corretta](/help/forms/using/assets/custom-function-list-fetched-in-error.png)
+  ![file di registro errori con funzione personalizzata appropriata](/help/forms/using/assets/custom-function-list-fetched-in-error.png)
 
 ## Considerazioni
 
-* Il `parameter type` e `return type` non supportano `None`.
+* `parameter type` e `return type` non supportano `None`.
 
 * Le funzioni non supportate nell&#39;elenco delle funzioni personalizzate sono:
    * Funzioni del generatore

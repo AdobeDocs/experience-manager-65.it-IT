@@ -22,15 +22,15 @@ Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dis
 
 ## Utilizzare il codice DPR lato client
 
-**App con rendering lato server**
+**App sottoposte a rendering lato server**
 
-1. Carica processo di lavoro del servizio in corso (`srvinit.js`) includendo il seguente script nella sezione di intestazione della pagina HTML:
+1. Carica il processo di lavoro del servizio iniziando (`srvinit.js`) includendo lo script seguente nella sezione dell&#39;intestazione della pagina HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   L’Adobe consiglia di caricare questo script _prima di_ qualsiasi altro script in modo che service worker inizi immediatamente l&#39;inizializzazione.
+   L&#39;Adobe consiglia di caricare lo script _prima_ di qualsiasi altro script in modo che il service worker inizi immediatamente l&#39;inizializzazione.
 
 1. Includi il seguente codice tag immagine DPR nella parte superiore della sezione body della pagina HTML:
 
@@ -43,9 +43,9 @@ Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dis
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   È necessario includere il codice tag immagine DPR _prima di_ tutte le immagini statiche nella pagina HTML.
+   È necessario includere il codice tag immagine DPR _prima_ di tutte le immagini statiche nella pagina HTML.
 
-**App con rendering lato client**
+**App sottoposte a rendering lato client**
 
 1. Includi i seguenti script DPR nella sezione di intestazione della pagina HTML:
 
@@ -56,8 +56,8 @@ Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dis
 
    È possibile combinare entrambi gli script DPR in uno per evitare più richieste di rete.
 
-   L’Adobe consiglia di caricare questi script _prima di_ qualsiasi altro script nella pagina HTML.
-L’Adobe consiglia inoltre di eseguire la Bootstrap dell’app con il tag HTML diff anziché con un elemento body. Il motivo è perché `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
+   L&#39;Adobe consiglia di caricare questi script _prima_ di qualsiasi altro script nella pagina HTML.
+L’Adobe consiglia inoltre di eseguire la Bootstrap dell’app con il tag HTML diff anziché con un elemento body. Il motivo è che `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
 
 ## Download di file JavaScript {#client-side-dpr-script}
 

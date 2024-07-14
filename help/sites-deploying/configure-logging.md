@@ -24,15 +24,15 @@ L’AEM ti offre la possibilità di configurare:
 * richiedere la registrazione dei dati; una configurazione di registrazione specializzata per le informazioni sulla richiesta
 * impostazioni specifiche per i singoli servizi; ad esempio, un singolo file di registro e un formato per i messaggi di registro
 
-Questi sono tutti [Configurazioni OSGi](/help/sites-deploying/configuring-osgi.md).
+Sono tutte [configurazioni OSGi](/help/sites-deploying/configuring-osgi.md).
 
 >[!NOTE]
 >
->La registrazione in AEM si basa sui principi Sling. Consulta [Sling Logging](https://sling.apache.org/site/logging.html) per ulteriori informazioni.
+>La registrazione in AEM si basa sui principi Sling. Per ulteriori informazioni, vedere [Registrazione Sling](https://sling.apache.org/site/logging.html).
 
 ## Registrazione globale {#global-logging}
 
-[Configurazione registrazione Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) viene utilizzato per configurare il logger radice. Questo definisce le impostazioni globali per l’accesso all’AEM:
+[Configurazione registrazione Sling Apache](/help/sites-deploying/osgi-configuration-settings.md) utilizzata per configurare il logger radice. Questo definisce le impostazioni globali per l’accesso all’AEM:
 
 * livello di registrazione
 * posizione del file di registro centrale
@@ -42,7 +42,7 @@ Questi sono tutti [Configurazioni OSGi](/help/sites-deploying/configuring-osgi.m
 
 >[!NOTE]
 >
->Questo [Articolo della Knowledge Base](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) spiega come ruotare i file request.log e access.log.
+>Questo [articolo della Knowledge Base](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) spiega come ruotare i file request.log e access.log.
 
 ## Logger e writer per singoli servizi {#loggers-and-writers-for-individual-services}
 
@@ -59,9 +59,9 @@ In questo modo è possibile canalizzare i messaggi di registro per un singolo se
 
 AEM utilizza quanto segue per scrivere i messaggi di registro nel file:
 
-1. Un **Servizio OSGi** (logger) scrive un messaggio di registro.
-1. A **Logger di registrazione** prende questo messaggio e lo formatta in base alle tue specifiche.
-1. A **Registratore** scrive tutti questi messaggi nel file fisico definito.
+1. Un servizio **OSGi** (logger) scrive un messaggio di registro.
+1. Un **Logger** accetta questo messaggio e lo formatta in base alle tue specifiche.
+1. Un **Logging Writer** scrive tutti questi messaggi nel file fisico definito.
 
 Questi elementi sono collegati dai seguenti parametri per gli elementi appropriati:
 
@@ -69,13 +69,13 @@ Questi elementi sono collegati dai seguenti parametri per gli elementi appropria
 
   Definisci i servizi che generano i messaggi.
 
-* **File di registro (Logger)**
+* **File di registro (Logger di registrazione)**
 
   Definisci il file fisico per l’archiviazione dei messaggi di registro.
 
   Viene utilizzato per collegare un Logger con un Logger. Il valore deve essere identico allo stesso parametro nella configurazione di Logging Writer per la connessione da effettuare.
 
-* **File di registro (Logging Writer)**
+* **File di log (Logging Writer)**
 
   Definisci il file fisico in cui verranno scritti i messaggi del registro.
 
@@ -85,7 +85,7 @@ Questi elementi sono collegati dai seguenti parametri per gli elementi appropria
 
 Alcuni Logger e Writer sono inclusi in un&#39;installazione AEM standard.
 
-Il primo è un caso speciale in quanto controlla sia `request.log` e `access.log` file:
+Il primo è un caso speciale in quanto controlla sia i file `request.log` che `access.log`:
 
 * Logger:
 
@@ -93,7 +93,7 @@ Il primo è un caso speciale in quanto controlla sia `request.log` e `access.log
 
      (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * Scrivi messaggi sul contenuto della richiesta a `request.log`.
+   * Scrivere messaggi sul contenuto della richiesta a `request.log`.
 
 * Collegamenti a:
 
@@ -101,7 +101,7 @@ Il primo è un caso speciale in quanto controlla sia `request.log` e `access.log
 
      (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * Scrive i messaggi in uno dei due modi `request.log` o `access.log`.
+   * Scrive i messaggi in `request.log` o `access.log`.
 
 Questi possono essere personalizzati se necessario, anche se la configurazione standard è adatta per la maggior parte delle installazioni.
 
@@ -113,7 +113,7 @@ Le altre coppie seguono la configurazione standard:
 
      (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * Scritture `Information` messaggi a `logs/error.log`.
+   * Scrive `Information` messaggi in `logs/error.log`.
 
 * Collegamenti a Writer:
 
@@ -123,9 +123,10 @@ Le altre coppie seguono la configurazione standard:
 
 * Logger:
 
-   * Configurazione del logger di registrazione Apache Sling (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+   * Configurazione logger registrazione Sling Apache
+(org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * Scritture `Warning` messaggi a `../logs/error.log` per il servizio `org.apache.pdfbox`.
+   * Scrive `Warning` messaggi in `../logs/error.log` per il servizio `org.apache.pdfbox`.
 
 * Non è collegato a un processo di scrittura specifico, pertanto creerà e utilizzerà un processo di scrittura implicito con configurazione predefinita (rotazione giornaliera del registro).
 
@@ -133,17 +134,17 @@ Le altre coppie seguono la configurazione standard:
 
 Puoi definire una tua coppia Logger/Writer:
 
-1. Creare un&#39;istanza della configurazione di fabbrica [Configurazione logger registrazione Sling Apache](/help/sites-deploying/osgi-configuration-settings.md).
+1. Creare un&#39;istanza della configurazione di fabbrica [configurazione del logger di registrazione Sling Apache](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Specificare il file di registro.
    1. Specifica il logger.
    1. Configura gli altri parametri come richiesto.
 
-1. Creare un&#39;istanza della configurazione di fabbrica [Configurazione di Apache Sling Logging Writer](/help/sites-deploying/osgi-configuration-settings.md).
+1. Creare un&#39;istanza della configurazione di fabbrica [configurazione del writer di registrazione Sling di Apache](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Specifica il file di registro, che deve corrispondere a quello specificato per il logger.
    1. Configura gli altri parametri come richiesto.
 
 >[!NOTE]
 >
->In alcune circostanze potrebbe essere utile creare un’ [file di registro personalizzato](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+>In determinate circostanze è possibile creare un [file di registro personalizzato](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).

@@ -25,7 +25,7 @@ L’area di lavoro di AEM Forms è compatibile con un numero maggiore di disposi
 
 ![html-ws](assets/html-ws.png)
 
-**Funzionalità principali**:
+**Funzionalità chiave**:
 
 * Coinvolgi i partecipanti ai processi ovunque con PDF forms dinamici, interfacce mobili e applicazioni web.
 * Integrazione semplificata dei componenti di Workspace con le applicazioni web. Poiché AEM Forms Workspace è un software basato su componenti, può essere facilmente personalizzato e riutilizzato.

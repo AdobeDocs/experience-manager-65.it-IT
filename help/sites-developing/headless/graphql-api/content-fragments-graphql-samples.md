@@ -225,7 +225,7 @@ Una volta eseguita, il sistema la espande automaticamente per includere tutti i 
 
 ### Query di esempio: nomi di tutte le città {#sample-names-all-cities}
 
-Questa query di esempio è una query semplice che restituisce `name`di tutte le voci nella `city`schema.
+Questa query di esempio è una query semplice che restituisce `name` di tutte le voci dello schema `city`.
 
 **Query di esempio**
 
@@ -316,7 +316,7 @@ Questa query di esempio è una query che restituisce i dettagli di una singola v
 
 ### Query di esempio: tutte le città con una variante denominata {#sample-cities-named-variation}
 
-Se crei una variante denominata &quot;Berlino centro&quot; (`berlin_centre`), per `city` Berlino, puoi utilizzare una query per restituire i dettagli della variante.
+Se crei una variante denominata &quot;Berlino centro&quot; (`berlin_centre`), per la Berlino `city` puoi utilizzare una query per restituire i dettagli della variante.
 
 **Query di esempio**
 
@@ -362,7 +362,7 @@ Se crei una variante denominata &quot;Berlino centro&quot; (`berlin_centre`), pe
 Se:
 
 * crei vari tag, denominati `Tourism` : `Business`, `City Break` e `Holiday`
-* e assegnano questi tag alla variante principale di vari `City` istanze
+* e assegna questi tag alla variante principale delle varie istanze di `City`
 
 allora puoi utilizzare una query per restituire i dettagli di `name` e `tags` di tutte le voci classificate come Soggiorni in città nello schema `city`.
 
@@ -539,7 +539,7 @@ query {
 
 ### Query di esempio: tutte le persone con nome “Jobs” o “Smith” {#sample-all-persons-jobs-smith}
 
-Questa query di esempio filtra tutti `persons` per qualsiasi che ha il nome `Jobs`o `Smith`.
+Questa query di esempio filtra tutti `persons` per quelli con nome `Jobs` o `Smith`.
 
 **Query di esempio**
 
@@ -593,7 +593,7 @@ query {
 
 ### Query di esempio: tutte le persone che non hanno nome “Jobs” {#sample-all-persons-not-jobs}
 
-Questa query di esempio filtra tutti `persons` per qualsiasi che ha il nome `Jobs`o `Smith`.
+Questa query di esempio filtra tutti `persons` per quelli con nome `Jobs` o `Smith`.
 
 **Query di esempio**
 
@@ -1516,7 +1516,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno di tale percorso, i dati relativi alla variante: `variation1`
+   * all&#39;interno di tale percorso, i dati relativi alla variante: `variation1`
 
 **Query di esempio**
 

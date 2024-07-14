@@ -21,11 +21,11 @@ ht-degree: 7%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
-[!DNL Adobe Experience Manager Assets] consente di automatizzare i flussi di lavoro di traduzione sulle risorse (inclusi file binari, metadati e tag) per generare risorse in altre lingue da utilizzare nei progetti multilingue.
+[!DNL Adobe Experience Manager Assets] consente di automatizzare i flussi di lavoro di traduzione delle risorse (inclusi file binari, metadati e tag) per generare risorse in altre lingue da utilizzare nei progetti multilingue.
 
-Per automatizzare i flussi di lavoro di traduzione, puoi integrare i fornitori di servizi di traduzione con [!DNL Experience Manager] e creare progetti per tradurre le risorse in più lingue. [!DNL Experience Manager] supporta flussi di lavoro di traduzione umana e automatica.
+Per automatizzare i flussi di lavoro di traduzione, è necessario integrare i fornitori di servizi di traduzione con [!DNL Experience Manager] e creare progetti per la traduzione delle risorse in più lingue. [!DNL Experience Manager] supporta flussi di lavoro di traduzione umana e automatica.
 
-Traduzione umana: le risorse tradotte vengono restituite e importate in [!DNL Experience Manager]. Quando il provider di traduzione è integrato con [!DNL Experience Manager], le risorse vengono inviate automaticamente tra [!DNL Experience Manager] e il fornitore di traduzione.
+Traduzione umana: le risorse tradotte vengono restituite e importate in [!DNL Experience Manager]. Quando il provider di traduzione è integrato con [!DNL Experience Manager], le risorse vengono inviate automaticamente tra [!DNL Experience Manager] e il provider di traduzione.
 
 Traduzione automatica: il servizio di traduzione automatica traduce immediatamente i metadati e i tag per le risorse.
 
@@ -37,6 +37,6 @@ La traduzione delle risorse include quanto segue:
 1. [Applicare i servizi cloud di traduzione alle cartelle](transition-cloud-services.md)
 1. [Creare progetti di traduzione](translation-projects.md)
 
-Se il fornitore di servizi di traduzione non fornisce un connettore da integrare con [!DNL Experience Manager], utilizza un [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+Se il provider di servizi di traduzione non fornisce un connettore da integrare con [!DNL Experience Manager], utilizzare un [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Vedi anche: [Creare progetti di traduzione per frammenti di contenuto](creating-translation-projects-for-content-fragments.md).
+Vedi anche [Creare progetti di traduzione per frammenti di contenuto](creating-translation-projects-for-content-fragments.md).

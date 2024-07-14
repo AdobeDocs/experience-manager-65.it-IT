@@ -49,6 +49,6 @@ Reimposta la cache delle lettere sull’istanza di pubblicazione seguendo la pro
 
 1. Vai a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e accedi come Amministratore.
 1. Seleziona **Configurazioni gestione corrispondenza**.
-1. In entrata **Configurazioni gestione corrispondenza**, disattiva **Abilita cache lettere** e quindi fare clic su **Salva.**
-1. Verifica **Abilita cache lettere** e quindi fare clic su **Salva**.
+1. In **Configurazioni Gestione corrispondenza**, disabilitare **Abilita cache lettere** e quindi fare clic su **Salva.**
+1. Selezionare **Abilita cache lettere**, quindi fare clic su **Salva**.
 1. Riprovare a visualizzare la lettera.

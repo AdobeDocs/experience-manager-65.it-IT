@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Crea e distribuisci MBean per gestire i servizi utilizzando la console JMX. Esporre gli attributi e le operazioni del servizio per consentire l&#39;esecuzione delle attività di amministrazione.
 
-Per informazioni sull’utilizzo della console JMX, consulta [Monitoraggio delle risorse del server tramite la console JMX](/help/sites-administering/jmx-console.md).
+Per informazioni sull&#39;utilizzo della console JMX, vedere [Risorse di Monitoring Server mediante la console JMX](/help/sites-administering/jmx-console.md).
 
 ## Framework JMX in Felix e CQ5 {#the-jmx-framework-in-felix-and-cq}
 
@@ -38,24 +38,24 @@ Oltre a definire l’interfaccia di gestione, l’interfaccia definisce anche l�
 
 ### Utilizzo delle annotazioni per fornire informazioni MBean {#using-annotations-to-provide-mbean-information}
 
-Il [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) fornisce diverse annotazioni e classi per fornire facilmente metadati MBean alla console JMX. Utilizzare queste annotazioni e classi invece di aggiungere informazioni direttamente all&#39;oggetto MBeanInfo di MBean.
+Il pacchetto [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) fornisce diverse annotazioni e classi per fornire facilmente metadati MBean alla console JMX. Utilizzare queste annotazioni e classi invece di aggiungere informazioni direttamente all&#39;oggetto MBeanInfo di MBean.
 
 **Annotazioni**
 
-Aggiungi annotazioni all’interfaccia di gestione per specificare i metadati MBean. Le informazioni vengono visualizzate nella console JMX per ogni classe di implementazione distribuita. Sono disponibili le seguenti annotazioni (per informazioni complete, vedi [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
+Aggiungi annotazioni all’interfaccia di gestione per specificare i metadati MBean. Le informazioni vengono visualizzate nella console JMX per ogni classe di implementazione distribuita. Sono disponibili le seguenti annotazioni (per informazioni complete, consulta [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Descrizione:** Fornisce una descrizione della classe o del metodo MBean. Se utilizzata nella dichiarazione di classe, la descrizione viene visualizzata nella pagina Console JMX per MBean. Se utilizzata in un metodo, la descrizione viene visualizzata come testo al passaggio del mouse per l&#39;attributo o l&#39;operazione corrispondente.
-* **Impatto:** L’impatto di un metodo. I valori validi dei parametri sono i campi definiti da [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
+* **Impatto:** Impatto di un metodo. I valori validi dei parametri sono i campi definiti da [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
 
-* **Nome:** Specifica il nome da visualizzare per un parametro di operazione. Utilizzare questa annotazione per ignorare il nome effettivo del parametro di metodo utilizzato nell&#39;interfaccia.
-* **OpenTypeInfo:** Specifica la classe da utilizzare per rappresentare dati compositi o dati tabulari nella console JMX. Per l&#39;utilizzo con MBean aperti
-* **TabularTypeInfo:** Utilizzato per annotare la classe utilizzata per rappresentare i dati tabulari.
+* **Nome:** Specifica il nome da visualizzare per un parametro dell&#39;operazione. Utilizzare questa annotazione per ignorare il nome effettivo del parametro di metodo utilizzato nell&#39;interfaccia.
+* **OpenTypeInfo:** specifica la classe da utilizzare per rappresentare dati compositi o dati tabulari nella console JMX. Per l&#39;utilizzo con MBean aperti
+* **TabularTypeInfo:** utilizzato per annotare la classe utilizzata per rappresentare i dati tabulari.
 
 **Classi**
 
 Vengono fornite classi per la creazione di elementi MBean dinamici che utilizzano le annotazioni aggiunte alle relative interfacce:
 
-* **AnnotatedStandardMBean:** Sottoclasse della classe javax.management.StandardMBean che fornisce automaticamente alla console JMX i metadati dell’annotazione.
+* **AnnotatedStandardMBean:** sottoclasse della classe javax.management.StandardMBean che fornisce automaticamente alla console JMX i metadati dell&#39;annotazione.
 * **OpenAnnotatedStandardMBean:** Sottoclasse della classe AnnotatedStandardMBean per la creazione di elementi Mbean aperti che utilizzano l&#39;annotazione OpenTypeInfo.
 
 ### Sviluppo di MBean {#developing-mbeans}
@@ -65,7 +65,7 @@ In genere, l’MBean riflette il servizio OSGi che desideri gestire. Sulla piatt
 * Interfaccia di gestione: definisce gli attributi utilizzando i metodi getter, setter e is. Definisce le operazioni utilizzando qualsiasi altro metodo pubblico. Utilizza le annotazioni per fornire metadati per l&#39;oggetto BeanInfo.
 * Classe MBean: implementa l&#39;interfaccia di gestione. Estende la classe AnnotatedStandardMBean in modo che elabori le annotazioni sull&#39;interfaccia.
 
-L’esempio di MBean seguente fornisce informazioni sull’archivio CRX. L’interfaccia utilizza l’annotazione Description per fornire informazioni alla console JMX.
+L&#39;esempio seguente di MBean fornisce informazioni sull&#39;archivio CRX. L’interfaccia utilizza l’annotazione Description per fornire informazioni alla console JMX.
 
 #### Interfaccia di gestione {#management-interface}
 
@@ -135,15 +135,15 @@ Quando si registra MBean come servizio OSGi, questi vengono registrati automatic
 
 Oltre ai metadati relativi a OSGi, devi fornire anche i metadati richiesti dal modulo Aries JMX Whiteboard per registrare MBean con il server MBean:
 
-* **Nome dell&#39;interfaccia DynamicMBean:** Dichiarare che il servizio MBean implementa `javax.management.DynamicMBea`n. Questa dichiarazione notifica al modulo JMX Whiteboard di Aries che il servizio è un servizio MBean.
+* **Nome dell&#39;interfaccia DynamicMBean:** Dichiarare che il servizio MBean implementa l&#39;interfaccia `javax.management.DynamicMBea`n. Questa dichiarazione notifica al modulo JMX Whiteboard di Aries che il servizio è un servizio MBean.
 
-* **Il dominio MBean e le proprietà chiave:** Su Felix, fornisci queste informazioni come proprietà del servizio OSGi di MBean. Si tratta delle stesse informazioni normalmente fornite al server MBean in un `javax.management.ObjectName` oggetto.
+* **Il dominio MBean e le proprietà chiave:** In Felix, fornisci queste informazioni come proprietà del servizio OSGi di MBean. Si tratta delle stesse informazioni normalmente fornite al server MBean in un oggetto `javax.management.ObjectName`.
 
 Quando il tuo MBean riflette un singolo servizio, è necessaria una sola istanza del servizio MBean. In questo caso, se utilizzi il plug-in Felix SCR Maven, puoi utilizzare le annotazioni Apache Felix Service Component Runtime (SCR) nella classe di implementazione MBean per specificare i metadati relativi a JMX. Per creare un&#39;istanza di più istanze di MBean, puoi creare un&#39;altra classe che esegue la registrazione del servizio OSGi di MBean. In questo caso, i metadati relativi a JMX vengono generati in fase di esecuzione.
 
 **MBean singolo**
 
-Gli MBean per i quali è possibile definire tutti gli attributi e le operazioni in fase di progettazione possono essere distribuiti utilizzando le annotazioni SCR nella classe di implementazione MBean. Nell&#39;esempio seguente, il `value` attributo del `Service` l’annotazione dichiara che il servizio implementa `DynamicMBean` di rete. Il `name` attributo del `Property` annotation specifica il dominio JMX e le proprietà chiave.
+Gli MBean per i quali è possibile definire tutti gli attributi e le operazioni in fase di progettazione possono essere distribuiti utilizzando le annotazioni SCR nella classe di implementazione MBean. Nell&#39;esempio seguente, l&#39;attributo `value` dell&#39;annotazione `Service` dichiara che il servizio implementa l&#39;interfaccia `DynamicMBean`. L&#39;attributo `name` dell&#39;annotazione `Property` specifica le proprietà del dominio JMX e della chiave.
 
 #### Classe di implementazione MBean con annotazioni SCR {#mbean-implementation-class-with-scr-annotations}
 
@@ -183,7 +183,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 }
 ```
 
-**Più istanze di servizio MBean**
+**Più istanze del servizio MBean**
 
 Per gestire più istanze di un servizio gestito, è necessario creare più istanze del servizio MBean corrispondente. È inoltre necessario creare o rimuovere le istanze del servizio MBean all&#39;avvio o all&#39;arresto delle istanze gestite. È possibile creare una classe di gestore MBean per creare istanze dei servizi MBean in fase di esecuzione e gestire il ciclo di vita del servizio.
 
@@ -214,7 +214,7 @@ L’MBean in questo esempio fornisce informazioni sui modelli di flussi di lavor
 * WorkflowMBeanManager: interfaccia della classe MBean manager.
 * WorkflowMBeanManagerImpl: classe di implementazione di MBean manager.
 
-**Nota:** Per semplicità, il codice di questo esempio non esegue la registrazione o non reagisce alle eccezioni generate.
+**Nota:** per semplicità, il codice di questo esempio non esegue la registrazione o non reagisce alle eccezioni generate.
 
 WorkflowMBeanManagerImpl include un metodo di attivazione componente. Quando il componente viene attivato, il metodo esegue le operazioni seguenti:
 
@@ -229,7 +229,7 @@ I metadati MBean vengono visualizzati nella console JMX con il dominio com.adobe
 
 ### Esempio di MBean {#the-example-mbean}
 
-Questo esempio richiede un’interfaccia e un’implementazione MBean che rifletta sul `com.day.cq.workflow.model.WorkflowModel` di rete. L’MBean è molto semplice in modo che l’esempio possa concentrarsi sugli aspetti di configurazione e implementazione del progetto. MBean espone un singolo attributo, il nome del modello.
+Questo esempio richiede un&#39;interfaccia e un&#39;implementazione MBean che riflettano l&#39;interfaccia `com.day.cq.workflow.model.WorkflowModel`. L’MBean è molto semplice in modo che l’esempio possa concentrarsi sugli aspetti di configurazione e implementazione del progetto. MBean espone un singolo attributo, il nome del modello.
 
 #### Interfaccia WorkflowMBean {#workflowmbean-interface}
 
@@ -425,13 +425,13 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 
 Per comodità, è possibile copiare e incollare il seguente codice XML nel file pom.xml del progetto per creare il bundle di componenti. Il POM fa riferimento a diversi plug-in e dipendenze richiesti.
 
-**Plugin:**
+**Plug-in:**
 
 * Plug-in del compilatore Apache Maven: compila le classi Java dal codice sorgente.
 * Plug-in Apache Felix Maven Bundle: crea il bundle e il manifesto
 * Plug-in Apache Felix Maven SCR: crea il file del descrittore del componente e configura l’intestazione del manifesto del servizio-componente.
 
-**Nota:** Al momento della scrittura, il plug-in maven scr non è compatibile con il plug-in m2e per Eclipse. (vedere [Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Per utilizzare l’IDE Eclipse, installa Maven e utilizza l’interfaccia della riga di comando per eseguire le build.
+**Nota:** al momento della scrittura, il plug-in maven scr non è compatibile con il plug-in m2e per Eclipse. (Vedi [Bug Felix 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Per utilizzare l’IDE Eclipse, installa Maven e utilizza l’interfaccia della riga di comando per eseguire le build.
 
 #### Esempio di file POM {#example-pom-file}
 

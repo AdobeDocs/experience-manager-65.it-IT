@@ -18,7 +18,7 @@ ht-degree: 6%
 
 # Supporto di script per moduli HTML5 {#scripting-support-for-html-forms}
 
-Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5:
+Di seguito sono elencati i metodi e le proprietà di JavaScript, FormCalc supportati nei moduli HTML5:
 
 ## $event {#event}
 
@@ -32,10 +32,10 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   <tr>
    <td><code>prevText</code></td>
    <td>Specifica il contenuto del campo prima che venga modificato in risposta alle azioni di un utente. Questo valore può essere richiamato, in modo simile a una feature di annullamento.</td>
-   <td><p>Non funziona per menu a discesa e caselle di riepilogo. <code>PrevText </code>non funziona correttamente nei seguenti casi:</p>
+   <td><p>Non funziona per menu a discesa e caselle di riepilogo. <code>PrevText </code> non funziona correttamente nei seguenti casi:</p>
     <ul>
      <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $ o , o &amp; o @ e altro) nei campi Numerici di iPad e </li>
-     <li>Per il campo Data (quando la data viene immessa nel calendario).<br /> </li>
+     <li>Per il campo Data (quando la data viene immessa attraverso il calendario).<br /> </li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
   </tr>
   <tr>
@@ -46,11 +46,11 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   <tr>
    <td><code>newtext</code></td>
    <td>Specifica il contenuto del campo dopo la modifica in risposta alle azioni dell'utente.</td>
-   <td><p>Il <code>newText</code> La proprietà non funziona correttamente nei seguenti casi:</p>
+   <td><p>La proprietà <code>newText</code> non funziona correttamente per i casi seguenti:</p>
     <ul>
      <li>Selezione-sostituzione di testi</li>
      <li>Per eliminare, copiare e incollare i testi.</li>
-     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $ o , o &amp; o @ e altro) nei campi numerici<br /> </li>
+     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $ o , &amp; o @ e altro) nei campi numerici<br /> </li>
      <li>Quando si utilizza la combinazione maiusc+alfanumerico. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
     </ul>
@@ -65,7 +65,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
     <ul>
      <li>Selezione-sostituzione di testi</li>
      <li>Per eliminare, copiare e incollare i testi.</li>
-     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $ o , o &amp; o @ e altro) nei campi numerici<br /> </li>
+     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $ o , &amp; o @ e altro) nei campi numerici<br /> </li>
      <li>Quando si utilizza la combinazione maiusc+alfanumerico. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
@@ -202,17 +202,17 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   <tr>
    <td><code>formattedValue</code></td>
    <td>Specifica il valore formattato per il campo.</td>
-   <td>Impostazione <code>formattedValue</code> tramite script non supportato.</td>
+   <td>Impostazione di <code>formattedValue</code> tramite script non supportata.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Specifica il valore di modifica per questo campo.</td>
-   <td>Impostazione <code>editValue </code>tramite script non supportato.</td>
+   <td>Impostazione di <code>editValue </code> tramite script non supportata.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Specifica la stringa del messaggio di convalida del formato per questo campo.</td>
-   <td>Impostazione <code>formatMessage </code>tramite script non supportato.</td>
+   <td>Impostazione di <code>formatMessage </code> tramite script non supportata.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -714,7 +714,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   </tr>
   <tr>
    <td>interfaccia utente</td>
-   <td>L’oggetto ui racchiude la descrizione dell’interfaccia utente di un oggetto modulo.<br /> </td>
+   <td>L'oggetto UI racchiude la descrizione dell'interfaccia utente di un oggetto modulo.<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -734,7 +734,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   </tr>
   <tr>
    <td>valore</td>
-   <td>L’oggetto value racchiude una singola unità di contenuto di dati.<br /> </td>
+   <td>L'oggetto value racchiude una singola unità di contenuto di dati.<br /> </td>
    <td> </td>
   </tr>
  </tbody>
@@ -773,7 +773,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   <tr>
    <td>bordo</td>
    <td>L'oggetto border descrive il bordo che circonda l'oggetto checkButton. </td>
-   <td>Le modifiche si riflettono nel modello e sono disponibili per la creazione di script ma non vengono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.<br /> </td>
+   <td>Le modifiche si riflettono nel modello e sono disponibili per la creazione di script ma non vengono sincronizzate con gli elementi HTML. Le modifiche non vengono quindi riportate nell'interfaccia utente.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -1043,7 +1043,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   </tr>
   <tr>
    <td>h</td>
-   <td>Determina l'altezza di un determinato oggetto di progettazione del modulo.<br /> </td>
+   <td>Determina l'altezza di un oggetto di progettazione modulo specificato.<br /> </td>
    <td>
     <ul>
      <li>La proprietà Height (h) non è supportata per l'area pagina e l'area contenuto. </li>
@@ -1083,7 +1083,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>
     <ul>
      <li>Il metodo layout.pageCount() restituisce valori diversi per i moduli PDF e HTML.</li>
-     <li>Quando si diminuisce il conteggio delle pagine nascondendo un oggetto, il metodo abspagecount restituisce un valore errato.<br /> </li>
+     <li>Quando si riduce il numero di pagine nascondendo un oggetto, il metodo abspagecount restituisce un valore errato.<br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -1156,12 +1156,12 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
   <tr>
    <td>per</td>
    <td><br type="_moz" /> </td>
-   <td>per i = 100 fino a 1 <br /> do s = s + i end for</td>
+   <td>per i = 100 fino a 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>per ogni</td>
    <td><br type="_moz" /> </td>
-   <td>per ogni i in (1, 2, 3) <br /> do s = s + i end for</td>
+   <td>per ogni i in (1, 2, 3) <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>dichiarazione di funzione</td>
@@ -1271,7 +1271,7 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
   <tr>
    <td>app.execDialog()</td>
    <td>Visualizza una finestra di dialogo modale. Le finestre di dialogo modali devono essere chiuse dall'utente prima che l'applicazione host possa essere riutilizzata direttamente.</td>
-   <td>Non viene eseguita alcuna azione.<br /> </td>
+   <td>Nessuna azione eseguita.<br /> </td>
   </tr>
   <tr>
    <td>app.launchURL()</td>
@@ -1280,12 +1280,12 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
   </tr>
   <tr>
    <td>app.setInterval()</td>
-   <td>Specifica uno script JavaScript e un periodo di tempo. Lo script viene eseguito ogni volta che viene trascorso il periodo. Il valore restituito da questo metodo deve essere contenuto in una variabile JavaScript. In caso contrario, l'oggetto intervallo è soggetto a Garbage Collection, che causerebbe l'arresto dell'orologio. Per terminare l'esecuzione periodica, passare l'oggetto intervallo restituito a clearInterval.</td>
+   <td>Specifica uno script di JavaScript e un periodo di tempo. Lo script viene eseguito ogni volta che viene trascorso il periodo. Il valore restituito da questo metodo deve essere contenuto in una variabile JavaScript. In caso contrario, l'oggetto intervallo è soggetto a Garbage Collection, che causerebbe l'arresto dell'orologio. Per terminare l'esecuzione periodica, passare l'oggetto intervallo restituito a clearInterval.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Specifica uno script JavaScript e un periodo di tempo. Lo script viene eseguito una sola volta, dopo la scadenza del periodo. Il valore restituito di questo metodo deve essere contenuto in una variabile JavaScript. In caso contrario, l’oggetto timeout è soggetto a Garbage Collection, che causerebbe l’arresto dell’orologio. Per annullare l'evento timeout, passare l'oggetto timeout restituito a clearTimeOut.</td>
+   <td>Specifica uno script di JavaScript e un periodo di tempo. Lo script viene eseguito una sola volta, dopo la scadenza del periodo.Il valore restituito di questo metodo deve essere contenuto in una variabile JavaScript. In caso contrario, l’oggetto timeout è soggetto a Garbage Collection, che causerebbe l’arresto dell’orologio. Per annullare l'evento timeout, passare l'oggetto timeout restituito a clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1296,7 +1296,7 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
   <tr>
    <td>app.clearTimeOut()</td>
    <td>Annulla un intervallo di timeout registrato in precedenza. Tale intervallo viene inizialmente impostato da setTimeOut.</td>
-   <td>Nei moduli di HTML5, l’API non funziona correttamente.<br /> </td>
+   <td>Nei moduli HTML5, l'API non funziona correttamente.<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1305,7 +1305,7 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
   </tr>
   <tr>
    <td>app.activeDocs</td>
-   <td>Matrice contenente l'oggetto Doc per ogni documento attivo. Se non è attivo alcun documento, activeDocs non restituisce alcun risultato, ovvero ha lo stesso comportamento di d = new Array(0) in JavaScript di base.</td>
+   <td>Matrice contenente l'oggetto Doc per ogni documento attivo. Se nessun documento è attivo, activeDocs non restituisce alcun risultato, ovvero ha lo stesso comportamento di d = new Array(0) in JavaScript di base.</td>
    <td>Restituisce una matrice vuota per i moduli HTMl5.</td>
   </tr>
   <tr>
@@ -1351,4 +1351,4 @@ Sono supportati i seguenti eventi XFA lato client:
 
 >[!NOTE]
 >
->I moduli HTML5 vengono sottoposti a rendering sul lato client (browser). Usa lato client **convalida** e **calcola** script anziché script lato server.
+>I moduli HTML5 vengono sottoposti a rendering sul lato client (browser). Utilizza gli script lato client **validate** e **calculate** invece degli script lato server.

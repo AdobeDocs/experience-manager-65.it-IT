@@ -20,9 +20,9 @@ ht-degree: 20%
 
 Utilizza la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o visualizzare una risorsa incorporata in una pagina web. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita nella finestra di dialogo **[!UICONTROL Incorpora codice]**.
 
-Gli URL vengono incorporati solo se *non* utilizzo di Adobe Experience Manager come WCM. Se si utilizza Experience Manager come WCM, [aggiungi le risorse direttamente sulla pagina](adding-dynamic-media-assets-to-pages.md).
+Gli URL vengono incorporati solo se *non* utilizza Adobe Experience Manager come WCM. Se utilizzi Experience Manager come WCM, [aggiungi le risorse direttamente nella pagina](adding-dynamic-media-assets-to-pages.md).
 
-Consulta [Collegare gli URL all’applicazione web](linking-urls-to-yourwebapplication.md).
+Consulta [Collegare gli URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
 Consulta [Distribuire immagini ottimizzate per un sito reattivo](responsive-site.md).
 
@@ -30,28 +30,28 @@ Consulta [Distribuire immagini ottimizzate per un sito reattivo](responsive-site
 >
 >Il codice da incorporare è disponibile per la copia solo dopo la pubblicazione della risorsa selezionata. Inoltre, devi pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 >
->Consulta [Pubblicare le risorse](publishing-dynamicmedia-assets.md).
+>Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 >
->Consulta [Pubblica predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
+>Consulta [Predefiniti visualizzatore Publish](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Consulta [Pubblica predefiniti immagine](managing-image-presets.md#publishing-image-presets).
+>Consulta [Predefiniti immagine Publish](managing-image-presets.md#publishing-image-presets).
 
-**Per incorporare il visualizzatore Dynamic Medie Video, Immagine o Dimensionale in una pagina Web:**
+**Per incorporare il video Dynamic Medie, il visualizzatore di immagini o il visualizzatore dimensionale in una pagina Web:**
 
-1. Accedi a *pubblicato* risorsa video o immagine di cui desideri copiare il codice da incorporare.
+1. Passa alla risorsa video o immagine *pubblicata* di cui desideri copiare il codice da incorporare.
 
    Il codice è disponibile per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 
-   Consulta [Pubblicare le risorse](publishing-dynamicmedia-assets.md).
+   Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 
-   Consulta [Pubblica predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
+   Consulta [Predefiniti visualizzatore Publish](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Consulta [Pubblica predefiniti immagine](managing-image-presets.md#publishing-image-presets).
+   Consulta [Predefiniti immagine Publish](managing-image-presets.md#publishing-image-presets).
 
 1. Nella barra a sinistra, seleziona il menu a discesa e seleziona **[!UICONTROL Visualizzatori]**.
 1. Nella barra a sinistra, seleziona un nome per il predefinito visualizzatore. Il predefinito visualizzatore viene applicato alla risorsa.
 1. Seleziona **[!UICONTROL Incorpora]**.
-1. In **[!UICONTROL Codice di incorporamento]** , copiare l&#39;intero codice negli Appunti e quindi selezionare **[!UICONTROL Chiudi]**.
+1. Nella finestra di dialogo **[!UICONTROL Incorpora codice]**, copiare l&#39;intero codice negli Appunti, quindi selezionare **[!UICONTROL Chiudi]**.
 1. Incolla il codice da incorporare nelle pagine web.
 
 ## Utilizzo di HTTP/2 per distribuire le risorse Dynamic Medie {#using-http-to-deliver-your-dynamic-media-assets}

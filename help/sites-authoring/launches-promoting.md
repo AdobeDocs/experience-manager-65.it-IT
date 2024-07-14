@@ -53,7 +53,7 @@ Puoi promuovere i lanci dalla console **Sites** o dalla console **Lanci**:
 
 1. Apri:
 
-   * il **Sites** console:
+   * la console **Sites**:
 
       1. Apri la [barra dei riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-authoring/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Vengono visualizzati tutti i riferimenti.
 
@@ -61,7 +61,7 @@ Puoi promuovere i lanci dalla console **Sites** o dalla console **Lanci**:
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
       1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
 
-   * il **Lanci** console:
+   * la console **Lanci**:
 
       1. Seleziona il lancio (fai clic sulla miniatura).
       1. Seleziona **Promuovi**.
@@ -90,7 +90,7 @@ Puoi promuovere i lanci dalla console **Sites** o dalla console **Lanci**:
 1. Seleziona **Avanti** per procedere.
 1. Puoi rivedere le pagine da promuovere, a seconda dell’intervallo di pagine scelto:
 
-   ![Pagine di revisione da promuovere](assets/chlimage_1-102.png)
+   ![Rivedi le pagine da promuovere](assets/chlimage_1-102.png)
 
 1. Seleziona **Promuovi**.
 
@@ -108,16 +108,16 @@ Quando modifichi una pagina di lancio, l’azione **Promuovi lancio** risulta di
 
 Dopo aver creato un lancio nidificato, puoi promuoverlo nuovamente in qualsiasi origine, inclusa l’origine principale (produzione).
 
-![Panoramica della promozione di un lancio nidificato](assets/chlimage_1-104.png)
+![Panoramica sulla promozione di un lancio nidificato](assets/chlimage_1-104.png)
 
-1. Come con [Creazione di un lancio nidificato](#creatinganestedlaunchlaunchwithinalaunch), accedi e seleziona il lancio richiesto nel **Lanci** console o **Riferimenti** barra.
+1. Come con [Creazione di un lancio nidificato](#creatinganestedlaunchlaunchwithinalaunch), accedi e seleziona il lancio richiesto nella console **Lanci** o nella barra **Riferimenti**.
 1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
 
 1. Immetti i dettagli necessari:
 
    * **Destinazione**
 
-      * **Destinazione della promozione**
+      * **Destinazione promozione**
 Puoi promuovere su qualsiasi sorgente.
 
       * **Elimina lancio dopo la promozione**
@@ -131,20 +131,20 @@ Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono sta
       * **Promuovi la pagina corrente**
       * **Promuovi la pagina corrente e le sottopagine**
 
-   ![Impostazioni per la promozione di un lancio](assets/chlimage_1-105.png)
+   ![Impostazioni per promuovere un lancio](assets/chlimage_1-105.png)
 
 1. Seleziona **Avanti**.
 1. Rivedi i dettagli della promozione prima di selezionare **Promuovi**:
 
-   ![Rivedi dettagli e Promuovi](assets/chlimage_1-106.png)
+   ![Rivedi dettagli e promuovi](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
    >Le pagine elencate dipendono dall’**Ambito** definito ed eventualmente dalle pagine che sono state modificate.
 
-1. Le modifiche verranno promosse e riflesse in **Lanci** console:
+1. Le modifiche verranno promosse e riflesse nella console **Lanci**:
 
-   ![Console Launches](assets/chlimage_1-107.png)
+   ![Console lanci](assets/chlimage_1-107.png)
 
 ## Elaborazione di pagine promosse tramite Flusso di lavoro AEM {#processing-promoted-pages-using-aem-workflow}
 
@@ -154,7 +154,7 @@ Utilizza i modelli di flusso di lavoro per eseguire l’elaborazione in blocco d
 1. Quando gli autori promuovono le pagine di lanci, queste vengono memorizzate nel pacchetto flusso di lavoro.
 1. Avvia un modello di flusso di lavoro utilizzando il pacchetto come payload.
 
-Per avviare automaticamente un flusso di lavoro quando le pagine vengono promosse, [configurare un modulo di avvio del flusso di lavoro](/help/sites-administering/workflows-starting.md#workflows-launchers) per il nodo del pacchetto.
+Per avviare automaticamente un flusso di lavoro quando le pagine vengono promosse, [configura un modulo di avvio del flusso di lavoro](/help/sites-administering/workflows-starting.md#workflows-launchers) per il nodo del pacchetto.
 
 Ad esempio, puoi generare automaticamente le richieste di attivazione pagina non appena un autore promuove una pagina di lancio. Configura un modulo di avvio del flusso di lavoro per avviare il flusso di lavoro Richiesta attivazione quando viene modificato il nodo del pacchetto.
 

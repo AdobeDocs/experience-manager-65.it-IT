@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -37,7 +37,7 @@ Prima di configurare il caricamento lento dei frammenti nel modulo adattivo, è 
 * **Identificare e creare frammenti**
 Puoi configurare solo frammenti di modulo adattivi per il caricamento lento. Un frammento è un segmento autonomo che si trova al di fuori di un modulo adattivo e può essere riutilizzato in tutti i moduli. Quindi, il primo passo verso l&#39;implementazione del caricamento lento è identificare le sezioni logiche in una forma e convertirle in frammenti. È possibile creare un frammento da zero o salvare come frammento un pannello modulo esistente.
 
-  Per ulteriori informazioni sulla creazione di frammenti, consulta [Frammenti di moduli adattivi](../../forms/using/adaptive-form-fragments.md).
+  Per ulteriori informazioni sulla creazione di frammenti, vedere [Frammenti di moduli adattivi](../../forms/using/adaptive-form-fragments.md).
 
 * **Identificare e contrassegnare i valori globali**
 Le transazioni basate su Forms richiedono elementi dinamici per acquisire dati rilevanti dagli utenti ed elaborarli per semplificare l&#39;esperienza di compilazione dei moduli. Ad esempio, il modulo include il campo A nel frammento X il cui valore determina la validità del campo B in un altro frammento. In questo caso, se il frammento X è contrassegnato per il caricamento lazy, il valore del campo A deve essere disponibile per convalidare il campo B anche quando il frammento X non è caricato. A questo scopo, puoi contrassegnare il campo A come globale, in modo che il relativo valore sia disponibile per la convalida del campo B quando il frammento X non viene caricato.
@@ -45,7 +45,7 @@ Le transazioni basate su Forms richiedono elementi dinamici per acquisire dati r
   Per informazioni su come rendere globale un valore di campo, vedere [Configurazione del caricamento lento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **Scrivere regole per controllare la visibilità dei campi**
-Forms include alcuni campi e sezioni che non sono applicabili a tutti gli utenti e in tutte le condizioni. Gli autori e gli sviluppatori di Forms utilizzano le regole di visibilità o di visualizzazione per controllarne la visibilità in base agli input degli utenti. Ad esempio, il campo Indirizzo ufficio non viene visualizzato agli utenti che scelgono Disoccupato nel campo Stato impiego di un modulo. Per ulteriori informazioni sulla scrittura delle regole, consulta [Utilizzo dell’editor di regole](../../forms/using/rule-editor.md).
+Forms include alcuni campi e sezioni che non sono applicabili a tutti gli utenti e in tutte le condizioni. Gli autori e gli sviluppatori di Forms utilizzano le regole di visibilità o di visualizzazione per controllarne la visibilità in base agli input degli utenti. Ad esempio, il campo Indirizzo ufficio non viene visualizzato agli utenti che scelgono Disoccupato nel campo Stato impiego di un modulo. Per ulteriori informazioni sulla scrittura delle regole, vedere [Utilizzo dell&#39;editor di regole](../../forms/using/rule-editor.md).
 
   Puoi utilizzare le regole di visibilità nei frammenti caricati in modo differito in modo che i campi condizionali vengano visualizzati solo quando sono obbligatori. Inoltre, contrassegna il campo condizionale globale in modo che faccia riferimento a esso nell’espressione di visibilità del frammento caricato in modo differito.
 
@@ -54,10 +54,10 @@ Forms include alcuni campi e sezioni che non sono applicabili a tutti gli utenti
 Per abilitare il caricamento lento in un frammento di modulo adattivo, effettua le seguenti operazioni:
 
 1. Apri il modulo adattivo in modalità di authoring contenente il frammento che desideri abilitare per il caricamento lento.
-1. Seleziona il frammento del modulo adattivo e fai clic su ![cmppr](assets/cmppr.png).
+1. Seleziona il frammento di modulo adattivo e seleziona ![cmppr](assets/cmppr.png).
 1. Nella barra laterale, abilita **[!UICONTROL Carica frammento in modo differito]** e seleziona **Fine**.
 
-   ![Abilita il caricamento lento per il frammento di modulo adattivo](assets/lazy-loading-fragment.png)
+   ![Attiva il caricamento lento per il frammento di modulo adattivo](assets/lazy-loading-fragment.png)
 
    Il frammento è ora abilitato per il caricamento lento.
 
@@ -76,7 +76,7 @@ Puoi contrassegnare i valori degli oggetti nel frammento caricato in modo differ
 Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando si lavora con il caricamento lento sono i seguenti:
 
 * Utilizza i moduli adattivi basati su schema XSD anziché i moduli adattivi basati su XFA per configurare il caricamento lento su moduli di grandi dimensioni. L’aumento delle prestazioni dovuto all’implementazione con caricamento lento nei moduli adattivi basati su XFA è relativamente inferiore rispetto all’aumento nei moduli adattivi basati su XSD.
-* Non configurare il caricamento lento per i frammenti in un modulo adattivo che utilizzano **[!UICONTROL Reattivo: tutto su una pagina senza navigazione]** layout del pannello principale. Con la configurazione del layout Reattivo, tutti i frammenti vengono caricati contemporaneamente in un modulo adattivo. ma può anche causare un peggioramento delle prestazioni.
+* Non configurare il caricamento lento nei frammenti in un modulo adattivo che utilizzano **[!UICONTROL Responsive -Everything in una pagina senza navigazione]** layout per il pannello principale. Con la configurazione del layout Reattivo, tutti i frammenti vengono caricati contemporaneamente in un modulo adattivo. ma può anche causare un peggioramento delle prestazioni.
 * Si consiglia di non configurare il caricamento lento sul primo frammento in un modulo adattivo.
 * Si consiglia di non configurare il caricamento lento sui frammenti nel primo pannello riprodotto al caricamento del modulo adattivo.
 * Il caricamento lento è supportato fino a due livelli nella gerarchia dei frammenti.

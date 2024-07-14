@@ -30,7 +30,7 @@ HTTP/2 migliora il modo in cui browser e server comunicano, consentendo un trasf
 
 Il seguente sito web descrive HTTP/2 e i relativi vantaggi in modo breve e semplice:
 
-[Informazioni necessarie su HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
+[Informazioni su HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## Quali sono i vantaggi principali del passaggio a HTTP/2 per la distribuzione dei contenuti? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -61,7 +61,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 La richiesta di passare a HTTP/2 viene avviata automaticamente, ma non eseguita automaticamente.
 
-1. Per passare a HTTP/2, avvia una richiesta dell’Assistenza clienti Adobe. Consulta [Apri un ticket di supporto](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
+1. Per passare a HTTP/2, avvia una richiesta dell’Assistenza clienti Adobe. Vedere [Aprire un ticket di supporto](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
 
    1. Fornisci le seguenti informazioni nella richiesta di supporto:
 
@@ -97,4 +97,4 @@ Il contenuto non memorizzato in cache accede direttamente ai server di origine d
 
 Poiché il browser non dichiara questo fatto, è necessario scaricare un’estensione.
 
-Per Firefox e Chrome, esiste un’estensione denominata &quot;HTTP/2 and SPDY Indicator&quot;. I browser supportano solo http/2 in modo sicuro, pertanto è necessario chiamare un URL con https per verificare. Se http/2 è supportato, è indicato dall’estensione sotto forma di un simbolo di Flash blu e di un’intestazione `X-Firefox-Spdy` : `h2`.
+Per Firefox e Chrome, esiste un’estensione denominata &quot;HTTP/2 and SPDY Indicator&quot;. I browser supportano solo http/2 in modo sicuro, pertanto è necessario chiamare un URL con https per verificare. Se http/2 è supportato, viene indicato dall&#39;estensione sotto forma di un simbolo di Flash blu e di un&#39;intestazione `X-Firefox-Spdy` : `h2`.

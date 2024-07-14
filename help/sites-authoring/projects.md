@@ -27,9 +27,9 @@ In qualità di utente, puoi:
 
 Progetta una funzione AEM standard e non richiede alcuna configurazione aggiuntiva.
 
-Tuttavia, affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano i progetti, ad esempio durante la creazione di progetti, la creazione di attività/flussi di lavoro o la visualizzazione e la gestione del team, è necessario che tali utenti abbiano accesso in lettura a `/home/users` e `/home/groups`.
+Tuttavia, affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano i progetti, ad esempio durante la creazione di progetti, la creazione di attività/flussi di lavoro o la visualizzazione e la gestione del team, tali utenti devono avere accesso in lettura a `/home/users` e `/home/groups`.
 
-Il modo più semplice per eseguire questa operazione è quello di **projects-users** accesso in lettura gruppo a `/home/users` e `/home/groups`.
+Il modo più semplice per eseguire questa operazione è concedere al gruppo **utenti-progetti** l&#39;accesso in lettura a `/home/users` e `/home/groups`.
 
 ## Console Progetti {#projects-console}
 
@@ -51,9 +51,9 @@ Solo contenuto è la modalità predefinita all’apertura della console. Mostrer
 
 #### Timeline {#timeline}
 
-La vista timeline consente di selezionare un singolo progetto e di visualizzarne le attività. Utilizza il selettore della barra o il tasto di scelta rapida `alt+1` per passare a questa visualizzazione.
+La vista timeline consente di selezionare un singolo progetto e di visualizzarne le attività. Utilizzare il selettore della barra o il tasto di scelta rapida `alt+1` per passare a questa visualizzazione.
 
-![Modalità Timeline](assets/project-timeline.png)
+![Modalità sequenza temporale](assets/project-timeline.png)
 
 ### Attiva/Disattiva visualizzazione {#views}
 
@@ -75,11 +75,11 @@ Visualizzare i dettagli di un progetto facendo clic su di esso per analizzarne i
 
 ### Creazione di nuovi progetti {#creating}
 
-Clic **Crea** per aggiungere un nuovo progetto.
+Fai clic su **Crea** per aggiungere un nuovo progetto.
 
 ## Riquadri progetto {#project-tiles}
 
-I progetti sono costituiti da diversi tipi di informazioni che si desidera gestire insieme. Queste informazioni sono rappresentate da diversi **Riquadri**.
+I progetti sono costituiti da diversi tipi di informazioni che si desidera gestire insieme. Queste informazioni sono rappresentate da **Tiles** diversi.
 
 Al progetto possono essere associate le seguenti tessere.
 
@@ -117,7 +117,7 @@ Per aggiungere una raccolta, fai clic su **Aggiungi raccolta** e seleziona la ra
 
 ### Esperienze {#experiences}
 
-Il **Esperienze** sezione consente di aggiungere al progetto un’app mobile, un sito web o una pubblicazione.
+Il riquadro **Esperienze** consente di aggiungere al progetto un&#39;app mobile, un sito Web o una pubblicazione.
 
 ![Riquadro Esperienze](assets/project-tile-experiences.png)
 
@@ -128,21 +128,21 @@ Le icone indicano quale tipo di esperienza è rappresentata.
 
 ### Collegamenti {#links}
 
-Il **Collegamenti** sezione consente di associare collegamenti esterni al progetto.
+Il riquadro **Collegamenti** consente di associare collegamenti esterni al progetto.
 
-![Riquadro Collegamenti](assets/project-tile-links.png)
+![Riquadro collegamenti](assets/project-tile-links.png)
 
 Puoi denominare il collegamento con un nome facile da riconoscere e modificare la miniatura.
 
 ### Informazioni sul progetto {#project-info}
 
-Il **Informazioni progetto** sezione fornisce informazioni generali sul progetto, tra cui una descrizione, lo stato del progetto (inattivo o attivo), una data di scadenza e i membri. Inoltre, è possibile aggiungere una miniatura del progetto, che viene visualizzata nella pagina principale Progetti.
+Il riquadro **Informazioni progetto** fornisce informazioni generali sul progetto, tra cui una descrizione, lo stato del progetto (inattivo o attivo), una data di scadenza e i membri. Inoltre, è possibile aggiungere una miniatura del progetto, che viene visualizzata nella pagina principale Progetti.
 
 ![Riquadro informazioni progetto](assets/project-tile-info.png)
 
 ### Processo di traduzione {#translation-job}
 
-Il **Lavoro di traduzione** sezione è il punto in cui si avvia una traduzione e anche il punto in cui viene visualizzato lo stato delle traduzioni.
+Nel riquadro **Processo di traduzione** è possibile avviare una traduzione e visualizzare lo stato delle traduzioni.
 
 ![Riquadro del processo di traduzione](assets/project-tile-translation.png)
 
@@ -158,49 +158,49 @@ Puoi aggiungere ed eliminare membri dal team. Inoltre, puoi modificare il [ruolo
 
 ### Pagine di destinazione {#landing-pages}
 
-Il **Pagine di destinazione** riquadro consente di richiedere una nuova pagina di destinazione.
+Il riquadro **Pagine di destinazione** consente di richiedere una nuova pagina di destinazione.
 
-![Riquadro della pagina di destinazione](assets/project-tile-landing.png)
+![Riquadro pagina di destinazione](assets/project-tile-landing.png)
 
 Questo flusso di lavoro è descritto nel documento[Creare un flusso di lavoro per la pagina di destinazione.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### E-mail {#emails}
 
-Il **E-mail** Questo riquadro consente di gestire le richieste di e-mail. Avvia il **Richiesta e-mail** flusso di lavoro.
+Il riquadro **E-mail** consente di gestire le richieste di posta elettronica. Avvia il flusso di lavoro **Richiesta e-mail**.
 
 ![Riquadro e-mail](assets/project-tile-email.png)
 
-Ulteriori informazioni sono descritte nella [Richiedi flusso di lavoro e-mail.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
+Ulteriori informazioni sono descritte nel flusso di lavoro [Richiedi e-mail.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Flussi di lavoro {#workflows}
 
-Puoi avviare i flussi di lavoro per il progetto. Se sono in esecuzione flussi di lavoro, il loro stato viene visualizzato nel **Flussi di lavoro** affiancare.
+Puoi avviare i flussi di lavoro per il progetto. Se sono in esecuzione flussi di lavoro, il relativo stato viene visualizzato nella sezione **Flussi di lavoro**.
 
 ![Riquadro Flussi di lavoro](assets/project-tile-workflows.png)
 
 A seconda del progetto creato, sono disponibili diversi flussi di lavoro.
 
-Questi sono descritti in [Utilizzo dei flussi di lavoro per i progetti.](/help/sites-authoring/projects-with-workflows.md)
+Sono descritti in [Utilizzo dei flussi di lavoro dei progetti.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanci {#launches}
 
-Il **Lanci** mostra tutti i lanci richiesti con un [Richiedi flusso di lavoro di Launch.](/help/sites-authoring/projects-with-workflows.md)
+Il riquadro **Lanci** mostra tutti i lanci richiesti con un flusso di lavoro [Richiedi lancio.](/help/sites-authoring/projects-with-workflows.md)
 
-![Riquadro Lanci](assets/project-tile-launches.png)
+![Riquadro lanci](assets/project-tile-launches.png)
 
 ### Attività {#tasks}
 
 Le attività consentono di monitorare lo stato di tutte le attività correlate al progetto, inclusi i flussi di lavoro. Le attività sono trattate in dettaglio in [Lavorare con le attività](/help/sites-authoring/task-content.md).
 
-![Riquadro Attività](assets/project-tile-tasks.png)
+![Riquadro attività](assets/project-tile-tasks.png)
 
 ## Modelli di progetto {#project-templates}
 
 I modelli fungono da base per avviare il progetto. L’AEM fornisce questi modelli di progetto standard.
 
-* **Progetto multimediale** - Questo è un progetto di riferimento per le attività relative ai media. Include diversi ruoli di progetto relativi ai file multimediali e flussi di lavoro relativi ai contenuti multimediali.
-* **[Progetto servizio fotografico per prodotto](/help/sites-authoring/managing-product-information.md)** - Questo è un esempio di riferimento per la gestione della fotografia di prodotti relativa a eCommerce.
-* **[Progetto di traduzione](/help/sites-administering/translation.md)** - Questo è un esempio di riferimento per la gestione delle attività di traduzione. Include ruoli di base e flussi di lavoro per la gestione della traduzione.
+* **Progetto multimediale** - Questo è un progetto di riferimento per attività relative ai file multimediali. Include diversi ruoli di progetto relativi ai file multimediali e flussi di lavoro relativi ai contenuti multimediali.
+* **[Progetto servizio fotografico per prodotto](/help/sites-authoring/managing-product-information.md)** - Questo è un esempio di riferimento per la gestione della fotografia di prodotto relativa a eCommerce.
+* **[Progetto di traduzione](/help/sites-administering/translation.md)** - Questo è un esempio di riferimento per la gestione delle attività relative alla traduzione. Include ruoli di base e flussi di lavoro per la gestione della traduzione.
 * **Progetto semplice** - Questo è un esempio di riferimento per tutti i progetti che non rientrano in altre categorie. Include tre ruoli di base e quattro flussi di lavoro generali per l’AEM.
 
 In base al modello selezionato, all’interno del progetto sono disponibili diverse opzioni, ad esempio i ruoli utente e i flussi di lavoro forniti.
@@ -217,8 +217,8 @@ Tutti i progetti supportano i seguenti ruoli predefiniti per consentire l’ammi
 | Ruolo | Descrizione | Autorizzazioni | Iscrizione al gruppo |
 |---|---|---|---|
 | Osservatore | Un utente con questo ruolo può visualizzare i dettagli del progetto, compreso lo stato. | Autorizzazioni di sola lettura per un progetto | `workflow-users` gruppo |
-| Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate<br>Privilegi per caricare un elenco di foto, servizi fotografici, rivedere e approvare le risorse<br>Autorizzazioni di scrittura su `/etc/commerce`<br>Autorizzazioni di modifica per un progetto specifico | `workflow-users` gruppo |
-| Proprietario | Un utente con questo ruolo può creare un progetto, avviare il lavoro in un progetto e spostare le risorse approvate nella cartella di produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto. | Autorizzazioni di scrittura su `/etc/commerce` | `dam-users` per poter creare un progetto<br>`projects-administrators` per creare un progetto e spostare le risorse |
+| Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate<br>Privilegi per caricare un elenco di foto, servizi fotografici e rivedere e approvare le risorse<br>Autorizzazione di scrittura per `/etc/commerce`<br>Autorizzazione di modifica per un progetto specifico | `workflow-users` gruppo |
+| Proprietario | Un utente con questo ruolo può creare un progetto, avviare il lavoro in un progetto e spostare le risorse approvate nella cartella di produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto. | Autorizzazioni di scrittura su `/etc/commerce` | `dam-users` gruppo per creare un gruppo di progetti<br>`projects-administrators` per creare un progetto e spostare risorse |
 
 Per i progetti creativi, vengono forniti anche ruoli aggiuntivi come fotografi. Puoi utilizzare questi ruoli per derivare ruoli personalizzati per un progetto specifico.
 
@@ -226,9 +226,9 @@ Per i progetti creativi, vengono forniti anche ruoli aggiuntivi come fotografi. 
 
 Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate.
 
-Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi **Proprietari mioprogetto**, **Editor Mioprogetto**, **Osservatori mioprogetto**.
+Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**.
 
-Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [durante l’eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
+Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [ durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
 
 ## Risorse aggiuntive {#additional-resources}
 

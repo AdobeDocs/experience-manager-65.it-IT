@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Per un elenco delle modifiche al contenuto e alla configurazione che non rientrano nell’ambito del pacchetto di compatibilità, consulta [Ristrutturazione dell’archivio dell’AEM](/help/sites-deploying/repository-restructuring.md).
+>Per un elenco delle modifiche al contenuto e alla configurazione che non rientrano nell&#39;ambito del pacchetto di compatibilità, vedere [Ristrutturazione dell&#39;archivio in AEM](/help/sites-deploying/repository-restructuring.md).
 
 In Adobe Experience Manager (AEM) 6.5, tutte le funzioni sono state sviluppate tenendo presente la compatibilità con le versioni precedenti.
 
@@ -37,9 +37,9 @@ Il pacchetto di compatibilità consente di eseguire AEM in modalità di compatib
 >
 >Il pacchetto di compatibilità è solo una soluzione temporanea per posticipare lo sviluppo necessario per la compatibilità con AEM 6.5. L’Adobe consiglia di utilizzarla come ultima opzione se non è possibile risolvere i problemi di compatibilità tramite lo sviluppo immediatamente dopo l’aggiornamento. Inoltre, l’Adobe consiglia di passare alla modalità nativa e disinstallare il pacchetto di compatibilità una volta che si decide di procedere con lo sviluppo personalizzato basato su 6.5 e di avvalersi della funzionalità 6.5 completa.
 
-![sase](assets/sase.png)
+![fase](assets/sase.png)
 
-Il pacchetto di compatibilità prevede due modalità: **Indirizzamento abilitato** e **Indirizzamento disabilitato**.
+Il pacchetto di compatibilità dispone di due modalità: **Routing abilitato** e **Routing disabilitato**.
 
 Questo consente a AEM 6.5 di funzionare in tre modalità:
 
@@ -49,7 +49,7 @@ La modalità nativa è per i clienti che desiderano utilizzare tutte le nuove fu
 
 Ciò significa che è necessario regolare l’applicazione immediatamente dopo l’aggiornamento.
 
-**Modalità di compatibilità: pacchetto di compatibilità installato con il routing abilitato**
+**Modalità di compatibilità: pacchetto di compatibilità installato con routing abilitato**
 
 La modalità di compatibilità è rivolta ai clienti che dispongono di personalizzazioni di interfacce non compatibili con le versioni precedenti. Questo consente di eseguire AEM in modalità di compatibilità e di posticipare lo sviluppo personalizzato richiesto per le nuove funzionalità AEM non compatibili con alcuni codici personalizzati.
 
@@ -57,11 +57,11 @@ La modalità di compatibilità è rivolta ai clienti che dispongono di personali
 
 La modalità legacy è destinata ai clienti che dispongono di interfacce personalizzate basate su codice legacy o obsoleto proveniente da AEM che è stato spostato all’esterno del pacchetto di compatibilità.
 
-![sapte](assets/sapte.png)
+![spazio](assets/sapte.png)
 
 ## Configurazione {#how-to-set-up}
 
-Il **AEM 6.4 Compatibility Pack per 6.5** può essere installato come pacchetto utilizzando Gestione pacchetti. È possibile scaricare [AEM 6.4 Compatibility Pack per 6.5 da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) sito.
+Il pacchetto di compatibilità per la versione 6.5 **di** AEM 6.4 può essere installato come pacchetto utilizzando Gestione pacchetti. È possibile scaricare [AEM 6.4 Compatibility Pack per 6.5 dal sito Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64).
 
 Una volta installato il pacchetto di compatibilità, il routing può essere abilitato o disabilitato utilizzando uno switch nella configurazione OSGI, come illustrato di seguito:
 

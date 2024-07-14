@@ -26,21 +26,21 @@ ht-degree: 0%
 >
 >Si sconsiglia di estendere o modificare i componenti effettivi utilizzati nell’Editor frammento, in quanto sono ancora soggetti a modifiche.
 
-Consulta la [API di gestione dei frammenti di contenuto - Lato client](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
+Consulta [API di gestione dei frammenti di contenuto - Lato client](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
 ## Componenti per l’authoring delle pagine {#components-for-page-authoring}
 
 >[!CAUTION]
 >
->Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è ora consigliato. Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) per ulteriori dettagli.
+>Il [componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è ora consigliato. Per ulteriori dettagli, vedere [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 >
->Questa sezione descrive il componente originale distribuito per essere utilizzato con i frammenti di contenuto (**Frammento di contenuto** nel **Generale** gruppo).
+>Questa sezione descrive il componente originale distribuito per l&#39;utilizzo con frammenti di contenuto (**Frammento di contenuto** nel gruppo **Generale**).
 
 >[!NOTE]
 >
->Vedi anche [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/sites-developing/content-fragments-config-components-rendering.md) per ulteriori informazioni.
+>Per ulteriori informazioni, vedere anche [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/sites-developing/content-fragments-config-components-rendering.md).
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) sono [create e gestite come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, e le relative varianti, durante l’authoring delle pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche utilizzare una risorsa per frammenti di contenuto esistente tramite [trascinarlo dal browser risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, ad esempio l’immagine del componente di base). Il componente per frammenti di contenuto predefinito ne visualizza solo uno [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto di riferimento. Utilizzando la finestra di dialogo del componente è possibile definire [elemento, variante e intervallo di paragrafi di frammenti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che desideri visualizzare sulla pagina.
+I frammenti di contenuto di Adobe Experience Manager (AEM) sono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. [È quindi possibile utilizzare questi frammenti e le relative varianti durante la creazione delle pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche utilizzare una risorsa frammento di contenuto esistente trascinandola dal browser risorse alla pagina ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, come l&#39;immagine del componente di base). [ Il componente predefinito per frammenti di contenuto visualizza solo un [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto di riferimento. La finestra di dialogo del componente consente di definire l&#39;elemento [, la variante e l&#39;intervallo di paragrafi del frammento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che si desidera visualizzare nella pagina.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ I frammenti di contenuto di Adobe Experience Manager (AEM) sono [create e gestit
 
 ### Definizione {#definition}
 
-Il **Frammento di contenuto** il componente viene utilizzato per contenere un riferimento a una risorsa di un frammento di contenuto (risorse di testo effettivamente migliorate). Il tipo di risorsa per il frammento di contenuto è:
+Il componente **Frammento di contenuto** viene utilizzato per contenere un riferimento a una risorsa frammento di contenuto (risorse di testo effettivamente migliorate). Il tipo di risorsa per il frammento di contenuto è:
 
 `dam/cfm/components/contentfragment/contentfragment`
 
@@ -68,7 +68,7 @@ Questa libreria aggiunge all’editor funzioni specifiche dei frammenti di conte
 
 ### Contenuto intermedio {#in-between-content}
 
-Il **Frammento di contenuto** t consente di rilasciare componenti aggiuntivi tra i diversi paragrafi del [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). In pratica, l’elemento visualizzato è composto da paragrafi diversi (ogni paragrafo è contrassegnato da un ritorno a capo). Tra ciascuno di questi paragrafi, è possibile inserire contenuto utilizzando altri componenti.
+Il componente **Frammento di contenuto** t consente di rilasciare componenti aggiuntivi tra i diversi paragrafi dell&#39;[elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) visualizzato. In pratica, l’elemento visualizzato è composto da paragrafi diversi (ogni paragrafo è contrassegnato da un ritorno a capo). Tra ciascuno di questi paragrafi, è possibile inserire contenuto utilizzando altri componenti.
 
 Da un punto di vista tecnico, ogni paragrafo dell&#39;elemento visualizzato si trova in un proprio parsys, e ogni componente che aggiungi tra i paragrafi viene (sotto il cofano) inserito nel parsys.
 
@@ -102,17 +102,17 @@ Fondamentalmente, se la struttura paragrafo di questa istanza cambia (modificand
 Per utilizzare il componente predefinito frammento di contenuto come blueprint per l’estensione, è necessario rispettare il seguente contratto:
 
 * Riutilizza lo script di rendering HTL e il relativo POJO associato per vedere come viene implementata la funzione di contenuto intermedio.
-* Riutilizza il nodo del frammento di contenuto: `cq:editConfig`
+* Riutilizzare il nodo del frammento di contenuto: `cq:editConfig`
 
-   * Il `afterinsert`/ `afteredit`/ `afterdelete` I listener vengono utilizzati per attivare gli eventi JS. Questi eventi vengono gestiti nel `cq.authoring.editor.plugin.cfm` libreria client per visualizzare il contenuto associato nel pannello laterale.
-   * Il `cq:dropTargets` sono configurate per supportare il trascinamento delle risorse dei frammenti di contenuto.
-   * `cq:inplaceEditing` è configurato per supportare l’authoring di un frammento di contenuto nell’editor pagina. L’editor locale del frammento è definito nel `cq.authoring.editor.plugin.cfm` e consente di aprire la libreria corrente tramite un collegamento rapido [elemento/variante](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) nel [editor frammenti](/help/assets/content-fragments/content-fragments-variations.md).
+   * I listener `afterinsert`/ `afteredit`/ `afterdelete` vengono utilizzati per attivare gli eventi JS. Questi eventi vengono gestiti nella libreria client `cq.authoring.editor.plugin.cfm` per visualizzare il contenuto associato nel pannello laterale.
+   * `cq:dropTargets` sono configurati per supportare il trascinamento delle risorse dei frammenti di contenuto.
+   * `cq:inplaceEditing` è configurato per supportare l&#39;authoring di un frammento di contenuto nell&#39;editor pagina. L&#39;editor locale del frammento è definito nella libreria client `cq.authoring.editor.plugin.cfm` e consente l&#39;apertura di un collegamento rapido per l&#39;[elemento/variante](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) corrente nell&#39;[editor frammento](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Riscrittura delle risorse prima del rendering {#asset-rewriting-before-rendering}
 
 La gestione dei frammenti di contenuto utilizza un processo di rendering interno per generare l’output HTML finale per una pagina. Viene utilizzato internamente dal componente Frammento di contenuto, ma anche dal processo in background che aggiorna i frammenti di riferimento nelle pagine di riferimento.
 
-Internamente, per tale rendering viene utilizzato il rewriter di Sling. La rispettiva configurazione si trova in `/libs/dam/config/rewriter/cfm` e possono essere regolati, se necessario. Consulta la [Rewriter Apache Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) per ulteriori informazioni.
+Internamente, per tale rendering viene utilizzato il rewriter di Sling. La rispettiva configurazione si trova in `/libs/dam/config/rewriter/cfm` e può essere regolata, se necessario. Per ulteriori informazioni, vedi [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html).
 
 >[!CAUTION]
 >
@@ -120,15 +120,15 @@ Internamente, per tale rendering viene utilizzato il rewriter di Sling. La rispe
 >
 >* `/libs/dam/config/rewriter/cfm`
 >
->Quindi il `serializerType` **deve** è aggiornato a:
+>Quindi `serializerType` **must** deve essere aggiornato a:
 >
 >* `serializerType="html5-serializer"`
 
 La configurazione preconfigurata utilizza i seguenti trasformatori:
 
-* `transformer-cfm-payloadfilter` - per recuperare `body` parte ( `<body>...</body>`) solo del HTML del frammento
+* `transformer-cfm-payloadfilter` - solo per il recupero della parte `body` ( `<body>...</body>`) del HTML del frammento
 
-* `transformer-cfm-parfilter` : filtra i paragrafi indesiderati se è specificato un intervallo di paragrafi (come può essere fatto con il componente Frammento di contenuto)
-* `transformer-cfm-assetprocessor` : viene utilizzato internamente per recuperare un elenco delle risorse incorporate nel frammento
+* `transformer-cfm-parfilter` - esclude i paragrafi indesiderati se è specificato un intervallo di paragrafi (come può essere fatto con il componente Frammento di contenuto)
+* `transformer-cfm-assetprocessor` - viene utilizzato internamente per recuperare un elenco delle risorse incorporate nel frammento
 
-Il processo di rendering viene esposto tramite [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) e possono essere utilizzati (ad esempio) da componenti personalizzati, se necessario.
+Il processo di rendering è esposto tramite [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) e può essere utilizzato (ad esempio) da componenti personalizzati, se necessario.

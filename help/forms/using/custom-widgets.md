@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Creare aspetti personalizzati nei moduli di HTML5{#create-custom-appearances-in-html-forms}
 
-Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetti. Il motore XFA utilizza vari widget, vedi [Framework di aspetto per moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md) per informazioni dettagliate.
+Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetti. Il motore XFA utilizza vari widget. Per informazioni dettagliate, consulta [Framework di aspetto per moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md).
 
 ![Esempio di widget predefinito e personalizzato](assets/custom-widgets.jpg)
 
@@ -29,11 +29,11 @@ Esempio di widget predefinito e personalizzato
 
 ### Creare un profilo  {#create-a-profile-nbsp}
 
-Puoi creare un profilo o sceglierne uno esistente per aggiungere un widget personalizzato. Per ulteriori informazioni sulla creazione di profili, consulta [Creazione di un profilo personalizzato](/help/forms/using/custom-profile.md).
+Puoi creare un profilo o sceglierne uno esistente per aggiungere un widget personalizzato. Per ulteriori informazioni sulla creazione di profili, vedere [Creazione di profili personalizzati](/help/forms/using/custom-profile.md).
 
 ### Creare un widget {#create-a-widget}
 
-I moduli HTML5 forniscono un’implementazione del framework dei widget che può essere estesa per creare nuovi widget. L’implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/sovrascrivendo le seguenti funzioni.
+I moduli HTML5 forniscono un’implementazione del framework dei widget che può essere estesa per creare nuovi widget. L&#39;implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/sovrascrivendo le seguenti funzioni.
 
 <table>
  <tbody>
@@ -43,11 +43,11 @@ I moduli HTML5 forniscono un’implementazione del framework dei widget che può
   </tr>
   <tr>
    <td>rendering</td>
-   <td>La funzione render restituisce l’oggetto jQuery per l’elemento HTML predefinito del widget. L’elemento HTML predefinito deve essere di tipo attivabile. Ad esempio: &lt;a&gt;, &lt;input&gt;, e &lt;li&gt;. L'elemento restituito viene utilizzato come $userControl. Se $userControl specifica il vincolo riportato sopra, le funzioni della classe AbstractWidget funzioneranno come previsto. In caso contrario, alcune delle API comuni (attivazione, clic) richiederanno modifiche. </td>
+   <td>La funzione render restituisce l’oggetto jQuery per l’elemento HTML predefinito del widget. L’elemento HTML predefinito deve essere di tipo attivabile. Ad esempio, &lt;a&gt;, &lt;input&gt; e &lt;li&gt;. L'elemento restituito viene utilizzato come $userControl. Se $userControl specifica il vincolo riportato sopra, le funzioni della classe AbstractWidget funzioneranno come previsto. In caso contrario, alcune delle API comuni (attivazione, clic) richiederanno modifiche. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e XFA_EXIT_EVENT è un evento XFA corrispondente. </td>
+   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e XFA_EXIT_EVENT è un evento XFA corrispondente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -68,7 +68,7 @@ I moduli HTML5 forniscono un’implementazione del framework dei widget che può
  </tbody>
 </table>
 
-Per creare un widget personalizzato, nel profilo creato in precedenza, includi i riferimenti del file JavaScript che contiene funzioni sovrascritte e funzioni appena aggiunte. Ad esempio, il *sliderNumericFieldWidget* è un widget per campi numerici. Per utilizzare il widget nel profilo nella sezione di intestazione, includi la seguente riga:
+Per creare un widget personalizzato, nel profilo creato in precedenza, includi i riferimenti del file JavaScript che contiene funzioni sostituite e funzioni appena aggiunte. Ad esempio, *sliderNumericFieldWidget* è un widget per campi numerici. Per utilizzare il widget nel profilo nella sezione di intestazione, includi la seguente riga:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);

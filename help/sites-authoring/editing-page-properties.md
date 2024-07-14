@@ -24,7 +24,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Titolo**
 
-  Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** e la scheda **Sites** viste a schede/elenco.
+  Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, l&#39;elenco di schede **Siti Web** e le visualizzazioni **Siti** per schede/elenchi.
 
   Questo campo è obbligatorio.
 
@@ -87,7 +87,7 @@ Le proprietà sono distribuite su più schede.
 
   Immetti un URL personalizzato per questa pagina, che può consentire di avere un URL più breve e/o più espressivo.
 
-  Ad esempio, se l’URL personalizzato è impostato su `welcome`alla pagina identificata dal percorso `/v1.0/startpage`per il sito web `http://example.com,` allora `http://example.com/welcome`sarebbe l’URL personalizzato di `http://example.com/content/v1.0/startpage`
+  Ad esempio, se l&#39;URL personalizzato è impostato su `welcome` per la pagina identificata dal percorso `/v1.0/startpage` per il sito Web `http://example.com,`, `http://example.com/welcome`sarà l&#39;URL personalizzato di `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
   >
@@ -98,9 +98,9 @@ Le proprietà sono distribuite su più schede.
   >* non devono essere impostati su una pagina esistente.
   >
 
-  Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Consulta [Abilitazione dell’accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
+  Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
 
-* **Reindirizza Vanity URL**
+* **Reindirizza URL personalizzato**
 
   Indica se desideri che la pagina utilizzi il Vanity URL.
 
@@ -114,13 +114,13 @@ Le proprietà sono distribuite su più schede.
 
   Deve essere selezionato se la pagina è la directory principale di una copia per lingua.
 
-* **Reindirizza**
+* **Reindirizzamento**
 
   Indica la pagina a cui deve essere automaticamente reindirizzata la pagina.
 
 * **Design**
 
-  Indicare [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
+  Indica la [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
 
 * **Alias**
 
@@ -129,7 +129,7 @@ Le proprietà sono distribuite su più schede.
    * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
    * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
    * Le pagine accessibili da alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-authoring/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
-   * Per maggiori dettagli, vedi [Nomi di pagina localizzati in Best practice per la gestione di SEO e URL](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Per ulteriori dettagli, consulta [Nomi di pagina localizzati in Best practice per la gestione di SEO e URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Ereditato da &lt;*percorso*>**
 
@@ -141,7 +141,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Modelli consentiti**
 
-  [Definire l’elenco dei modelli disponibili](/help/sites-authoring/templates.md#allowingatemplate) all’interno di questa sub-filiale.
+  [Definisci l&#39;elenco dei modelli disponibili](/help/sites-authoring/templates.md#allowingatemplate) in questo ramo secondario.
 
 * **Abilita** (Autenticazione richiesta)
 
@@ -153,16 +153,16 @@ Le proprietà sono distribuite su più schede.
 
   >[!CAUTION]
   >
-  >Il **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** consente di modificare le configurazioni CUG in base alla presenza del `granite:AuthenticationRequired` mixin. Se le autorizzazioni di pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` , viene visualizzato un messaggio di avvertenza in **Autenticazione richiesta** e l’opzione non è modificabile, né il [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) modificabile.
+  >La scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** consente di modificare le configurazioni CUG in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni di pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza della proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avviso in **Requisiti di autenticazione** e l&#39;opzione non è modificabile, né le [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) sono modificabili.
   >
   >
-  >In questo caso, le autorizzazioni per il gruppo utenti chiusi devono essere modificate nel [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+  >In tal caso, le autorizzazioni CUG devono essere modificate nell&#39;[interfaccia utente classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 * **Pagina di accesso**
 
   Pagina da utilizzare per l’accesso.
 
-* **Esporta configurazione**
+* **Configurazione esportazione**
 
   Specifica una configurazione di esportazione.
 
@@ -190,7 +190,7 @@ Mostra l&#39;immagine di anteprima della pagina. Operazioni disponibili:
 
 * **Condivisione social media**
 
-  Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per [Condivisione del componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
+  Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per il componente di base [Condivisione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
    * **Abilita condivisione utenti per Facebook**
    * **Abilita condivisione utenti per Pinterest**
@@ -201,13 +201,13 @@ Definire la variante del frammento esperienza utilizzata per generare i metadati
 
 * **Servizi cloud**
 
-  Definisci le proprietà per [servizi cloud](/help/sites-developing/extending-cloud-config.md).
+  Definisci le proprietà per [Cloud Services](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalizzazione {#personalization}
 
 * **Configurazioni ContextHub**
 
-  Seleziona la [Configurazione ContextHub](/help/sites-developing/ch-configuring.md) e [Percorso segmenti](/help/sites-administering/segmentation.md).
+  Seleziona la [configurazione ContextHub](/help/sites-developing/ch-configuring.md) e il [percorso segmenti](/help/sites-administering/segmentation.md).
 
 * **Configurazione targeting**
 
@@ -229,30 +229,30 @@ Definire la variante del frammento esperienza utilizzata per generare i metadati
 
   >[!CAUTION]
   >
-  >Il **Autorizzazioni** consente di modificare le configurazioni del gruppo utenti chiusi (CUG) in base alla presenza del `granite:AuthenticationRequired` mixin. Se le autorizzazioni di pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` viene visualizzato un messaggio di avvertenza e le autorizzazioni del gruppo utenti chiusi non sono modificabili, né il requisito di autenticazione [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced) scheda modificabile.
+  >La scheda **Autorizzazioni** consente di modificare le configurazioni CUG in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni di pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza della proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avviso e le autorizzazioni CUG non sono modificabili, né il requisito di autenticazione nella scheda [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced) è modificabile.
   >
   >
-  >In questo caso, le autorizzazioni per il gruppo utenti chiusi devono essere modificate nel [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+  >In tal caso, le autorizzazioni CUG devono essere modificate nell&#39;[interfaccia utente classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
   >[!NOTE]
   >
-  >La scheda Autorizzazioni non consente la creazione di gruppi CUG vuoti, che può essere utile come modo semplice per negare l’accesso a ogni utente. A questo scopo, è necessario utilizzare CRX Explorer. Consulta il documento [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md) per ulteriori informazioni.
+  >La scheda Autorizzazioni non consente la creazione di gruppi CUG vuoti, che può essere utile come modo semplice per negare l’accesso a ogni utente. A questo scopo, è necessario utilizzare CRX Explorer. Per ulteriori informazioni, vedere il documento [Amministrazione diritti di accesso, utenti e gruppi](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-  Definire le proprietà per una pagina Blueprint in [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche vengono propagate alla Live Copy.
+  Definisci le proprietà per una pagina blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche vengono propagate alla Live Copy.
 
 ### Live Copy  {#live-copy}
 
 * **Livecopy**
 
-  Definire le proprietà per una pagina Live Copy in [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche vengono propagate dalla blueprint.
+  Definisci le proprietà per una pagina Live Copy nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche vengono propagate dalla blueprint.
 
 ### Struttura sito  {#site-structure}
 
-* Fornisce collegamenti alle pagine che forniscono funzionalità a livello di sito, ad esempio **Pagina registrazione**, **Pagina offline**, tra gli altri.
+* Fornisci i collegamenti alle pagine che forniscono funzionalità a livello di sito, ad esempio **Pagina registrazione**, **Pagina offline**.
 
 ## Modifica delle proprietà di una pagina {#editing-page-properties-1}
 
@@ -296,7 +296,7 @@ Quando modifichi una pagina, puoi utilizzare **Informazioni pagina** per definir
 
 1. Seleziona l’icona **Informazioni pagina** per aprire il menu di selezione.
 
-   ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
+   ![schermata_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
 1. Seleziona **Apri proprietà** e viene visualizzata una finestra di dialogo che consente di modificare le proprietà, ordinate in base alla scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
 
@@ -307,13 +307,13 @@ Quando modifichi una pagina, puoi utilizzare **Informazioni pagina** per definir
 
 ### Dalla console Sites - Pagine multiple {#from-the-sites-console-multiple-pages}
 
-Dalla sezione **Sites** , è possibile selezionare più pagine e quindi utilizzare **Visualizza proprietà** per visualizzare e/o modificare le proprietà della pagina. Questa operazione viene definita bulk edit delle proprietà della pagina.
+Dalla console **Sites**, puoi selezionare più pagine e quindi utilizzare **Visualizza proprietà** per visualizzare e/o modificare le proprietà della pagina. Questa operazione viene definita bulk edit delle proprietà della pagina.
 
 >[!NOTE]
 >
->La modifica in blocco delle proprietà è disponibile anche per Assets. È simile, ma differisce in alcuni punti. Consulta [Modifica delle proprietà di più risorse](/help/assets/metadata.md) per i dettagli.
+>La modifica in blocco delle proprietà è disponibile anche per Assets. È simile, ma differisce in alcuni punti. Per ulteriori informazioni, vedere [Modifica delle proprietà di più Assets](/help/assets/metadata.md).
 >
->È inoltre disponibile [Editor in blocco](/help/sites-administering/bulk-editor.md). Questo editor consente di cercare contenuti da più pagine utilizzando GQL (Google Query Language), e quindi di modificarli direttamente utilizzando l’editor in blocco prima di salvare le modifiche apportate alle pagine originarie.
+>È presente anche l&#39;[Bulk Editor](/help/sites-administering/bulk-editor.md). Questo editor consente di cercare contenuti da più pagine utilizzando GQL (Google Query Language), e quindi di modificarli direttamente utilizzando l’editor in blocco prima di salvare le modifiche apportate alle pagine originarie.
 
 Puoi selezionare più pagine per la modifica in serie utilizzando diversi metodi, tra i quali:
 
@@ -355,7 +355,7 @@ Dopo aver inserito Modifica in serie, potete effettuare le seguenti operazioni:
    * Proprietà condivise con un valore comune
 
       * Nella modalità Visualizza vengono mostrate solo le proprietà con un valore comune.
-      * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo quando *tutto* sono comuni. Se solo alcune sono comuni, vengono visualizzate solo durante la modifica.
+      * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo se *tutti* sono comuni. Se solo alcune sono comuni, vengono visualizzate solo durante la modifica.
 
   Se non esiste nessuna proprietà con un valore comune, viene visualizzato un messaggio.
 
@@ -368,8 +368,8 @@ Dopo aver inserito Modifica in serie, potete effettuare le seguenti operazioni:
       * I nuovi valori vengono applicati a tutte le pagine selezionate quando selezioni **Fine**.
       * Quando il campo ha più valori (ad esempio Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
 
-   * I campi in comune ma con valori diversi nelle varie pagine sono contrassegnati da un valore speciale, ad esempio il testo `<Mixed Entries>`.
+   * I campi in comune, ma con valori diversi nelle varie pagine, sono indicati con un valore speciale, ad esempio il testo `<Mixed Entries>`.
 
 >[!NOTE]
 >
->Il componente Pagina può essere configurato in modo da specificare i campi disponibili per la modifica in serie. Consulta [Configurazione della pagina per la modifica in serie delle proprietà di pagina](/help/sites-developing/bulk-editing.md).
+>Il componente Pagina può essere configurato in modo da specificare i campi disponibili per la modifica in serie. Consulta [Configurazione della pagina per la modifica in blocco delle proprietà di pagina](/help/sites-developing/bulk-editing.md).

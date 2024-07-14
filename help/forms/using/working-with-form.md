@@ -23,17 +23,17 @@ I moduli vengono scaricati nell’app e sono disponibili offline. Si supponga ad
 
 Per sincronizzare il modulo nell’app AEM Forms:
 
-1. Nell’istanza di authoring, seleziona un modulo e fai clic su **Visualizza proprietà**.
-1. Nella pagina delle proprietà, fai clic su **Avanzato.**
-1. In Avanzate, abilita opzione: **Sincronizza con l’app AEM Forms**, e seleziona **Salva**.
+1. Nell&#39;istanza Autore, selezionare un modulo e fare clic su **Visualizza proprietà**.
+1. Nella pagina delle proprietà, fare clic su **Avanzate.**
+1. In Avanzate abilitare l&#39;opzione **Sincronizza con l&#39;app AEM Forms** e selezionare **Salva**.
 
-Per sincronizzare più moduli, nell’istanza di authoring seleziona più moduli in Forms Manager e seleziona **Sincronizza con l’app AEM Forms**. Quando il modulo viene pubblicato, l’app AEM Forms può connettersi al server di pubblicazione e recuperare i moduli.
+Per sincronizzare più moduli, nell&#39;istanza di authoring selezionare più moduli in Gestione moduli e selezionare **Sincronizza con l&#39;app AEM Forms**. Quando il modulo viene pubblicato, l’app AEM Forms può connettersi al server di pubblicazione e recuperare i moduli.
 
-Se la sincronizzazione dell’app Android AFA (AEM Form Application) non riesce, effettua le seguenti operazioni per risolvere il problema di sincronizzazione:
+Se la sincronizzazione dell’app Android AFA (AEM Form Application) non riesce, per risolvere il problema di sincronizzazione effettua le seguenti operazioni:
 
 1. Vai a **https://[server]:[porta]/system/console/configMgr**.
-1. Cerca **[!UICONTROL Adobe Gestore autenticazione token Granite]** e fai clic su **[!UICONTROL Modifica]**.
-1. Seleziona la **[!UICONTROL Nessuno]** dal menu a discesa per il **[!UICONTROL Attributo SameSite per il cookie token di accesso]** attributo.
+1. Cerca il **[!UICONTROL gestore Adobe di autenticazione token Granite]** e fai clic su **[!UICONTROL Modifica]**.
+1. Selezionare l&#39;opzione **[!UICONTROL Nessuno]** dal menu a discesa per l&#39;attributo **[!UICONTROL SameSite per l&#39;attributo cookie del token di accesso]**.
 1. Fai clic su **[!UICONTROL Salva]**.
 
 ![Sincronizza immagine con app AFA Android](/help/forms/using/assets/afaandroid.png)
@@ -50,5 +50,5 @@ Se la sincronizzazione dell’app Android AFA (AEM Form Application) non riesce,
 
 **Per aprire e aggiornare un modulo**
 
-1. Per aprire una maschera, selezionare **[!UICONTROL Modulo]** nella schermata iniziale.
+1. Per aprire un modulo, selezionare il **[!UICONTROL Modulo]** nella schermata iniziale.
 1. È possibile aggiornare i campi del modulo, aggiungere allegati, salvare come bozza e inviarlo.

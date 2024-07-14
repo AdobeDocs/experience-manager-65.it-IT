@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Se è stato specificato un file XCI personalizzato per Forms, l&#39;opzione incorpora font nel file XCI sostituisce queste impostazioni. (vedere [Configurazione delle posizioni per Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).)
+>Se è stato specificato un file XCI personalizzato per Forms, l&#39;opzione incorpora font nel file XCI sostituisce queste impostazioni. (Vedi [Configurazione delle posizioni per Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).)
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi > Forms]**.
-1. Sotto **[!UICONTROL Impostazioni incorporamento font]**, nella **[!UICONTROL Incorpora sempre font]** digitare i nomi dei tipi di carattere da incorporare con le maschere, separati da virgole. I tipi di carattere specificati vengono incorporati nel modulo generato solo se vengono utilizzati nel modulo. Questa impostazione viene ignorata se l&#39;opzione incorpora font è stata attivata nel file XCI passato al servizio perché in tal caso, tutti i font utilizzati nel PDF sono sempre incorporati.
-1. In **[!UICONTROL Non incorporare mai i font]** digitare i nomi dei tipi di carattere da non incorporare nei form, separati da virgole. I font specificati non sono incorporati nel PDF, anche se sono utilizzati nel PDF generato. Questa impostazione viene ignorata se l&#39;opzione incorpora font è stata disattivata nel file XCI passato al servizio perché in tal caso nessuno dei font utilizzati nel PDF è incorporato.
+1. Nella console di amministrazione, fare clic su **[!UICONTROL Servizi > Forms]**.
+1. In **[!UICONTROL Impostazioni incorporamento caratteri]**, nella casella **[!UICONTROL Incorpora sempre caratteri]** digitare i nomi dei caratteri da incorporare con i moduli, separati da virgole. I tipi di carattere specificati vengono incorporati nel modulo generato solo se vengono utilizzati nel modulo. Questa impostazione viene ignorata se l&#39;opzione incorpora font è stata attivata nel file XCI passato al servizio perché in tal caso, tutti i font utilizzati nel PDF sono sempre incorporati.
+1. Nella casella **[!UICONTROL Non incorporare mai i tipi di carattere]** digitare i nomi dei tipi di carattere da non incorporare con i moduli, separati da virgole. I font specificati non sono incorporati nel PDF, anche se sono utilizzati nel PDF generato. Questa impostazione viene ignorata se l&#39;opzione incorpora font è stata disattivata nel file XCI passato al servizio perché in tal caso nessuno dei font utilizzati nel PDF è incorporato.
 1. Fai clic su **[!UICONTROL Salva]**.

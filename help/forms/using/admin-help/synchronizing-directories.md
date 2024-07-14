@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Sincronizzazione delle directory {#synchronizing-directories}
 
-Per sincronizzare i domini, puoi scegliere di eseguire una sincronizzazione manuale o pianificata. A *sincronizzazione manuale* sincronizza tutti i domini selezionati. A *sincronizzazione pianificata* sincronizza tutti i domini.
+Per sincronizzare i domini, puoi scegliere di eseguire una sincronizzazione manuale o pianificata. Una *sincronizzazione manuale* sincronizza tutti i domini selezionati. Una *sincronizzazione pianificata* sincronizza tutti i domini.
 
 La sincronizzazione della directory viene utilizzata per richiamare i dettagli dai server delle directory specificati nelle impostazioni della directory nel database di gestione utenti. In seguito, è possibile eseguire una sincronizzazione manuale anche se si verificano modifiche o aggiornamenti sui server delle directory. Ad esempio, puoi eseguire una sincronizzazione manuale se utenti e gruppi vengono aggiunti o se vengono apportate modifiche all’account di un utente.
 
@@ -36,7 +36,7 @@ La sincronizzazione della directory viene utilizzata per richiamare i dettagli d
 
 >[!NOTE]
 >
->Adobe ® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Consulta [Adobe di documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe ® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Consulta [Adobe documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Abilita sincronizzazione directory delta {#enable-delta-directory-synchronization}
 
@@ -54,7 +54,7 @@ Quando è abilitata la sincronizzazione della directory delta, User Management e
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 1. In Sincronizzazione delta selezionare la casella di controllo e fare clic su Salva.
-1. Modificare le impostazioni della directory per ciascuno dei domini enterprise che utilizzeranno la funzione di sincronizzazione della directory delta. Nelle pagine Impostazioni utente e Impostazioni gruppo, individua l’impostazione Modifica marca temporale e immetti `modify TimeStamp` come valore. Per informazioni dettagliate sulla modifica dei domini aziendali, consulta [Modifica e conversione di domini esistenti](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. Modificare le impostazioni della directory per ciascuno dei domini enterprise che utilizzeranno la funzione di sincronizzazione della directory delta. Nelle pagine Impostazioni utente e Impostazioni gruppo individuare l&#39;impostazione Modifica timestamp e immettere `modify TimeStamp` come valore. Per informazioni dettagliate sulla modifica dei domini aziendali, vedere [Modifica e conversione di domini esistenti](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Attiva o disattiva la registrazione dettagliata durante la sincronizzazione {#enable-or-disable-detailed-logging-during-synchronization}
 

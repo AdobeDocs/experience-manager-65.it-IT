@@ -21,11 +21,11 @@ ht-degree: 0%
 
 Quando l’istanza AEM è installata come preconfigurata, nella barra laterale è immediatamente disponibile una selezione di componenti.
 
-Oltre a questi, sono disponibili vari altri componenti. È possibile utilizzare la modalità Progettazione per [Attiva/disattiva tali componenti](#enabledisablecomponentsusingdesignmode). Se questa opzione è abilitata e si trova sulla pagina, è possibile utilizzare la modalità Progettazione per [configurare gli aspetti della progettazione del componente](#configuringcomponentsusingdesignmode) modificando i parametri degli attributi.
+Oltre a questi, sono disponibili vari altri componenti. È possibile utilizzare la modalità Progettazione per [abilitare/disabilitare tali componenti](#enabledisablecomponentsusingdesignmode). Se attivato e si trova nella pagina, è possibile utilizzare la modalità Progettazione per [configurare gli aspetti della progettazione del componente](#configuringcomponentsusingdesignmode) modificando i parametri dell&#39;attributo.
 
 >[!NOTE]
 >
->Presta attenzione quando modifichi questi componenti. Le impostazioni di progettazione sono spesso parte integrante della progettazione dell’intero sito web, pertanto devono essere modificate solo da utenti con i privilegi (e l’esperienza) appropriati, spesso amministratori o sviluppatori. Consulta [Sviluppo di componenti](/help/sites-developing/components.md) per ulteriori informazioni.
+>Presta attenzione quando modifichi questi componenti. Le impostazioni di progettazione sono spesso parte integrante della progettazione dell’intero sito web, pertanto devono essere modificate solo da utenti con i privilegi (e l’esperienza) appropriati, spesso amministratori o sviluppatori. Per ulteriori informazioni, vedere [Sviluppo di componenti](/help/sites-developing/components.md).
 
 Ciò comporta effettivamente l’aggiunta o la rimozione dei componenti consentiti nel sistema paragrafo per la pagina. Il sistema paragrafo ( `parsys`) è un componente composto che contiene tutti gli altri componenti paragrafo. Il sistema paragrafo consente agli autori di aggiungere a una pagina componenti di tipi diversi, in quanto contiene tutti gli altri componenti paragrafo. Ogni tipo di paragrafo è rappresentato come componente.
 
@@ -38,7 +38,7 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 
 >[!NOTE]
 >
->Consulta [Sviluppo di componenti](/help/sites-developing/components.md#paragraphsystem) e [Linee guida per l’utilizzo di modelli e componenti](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) per ulteriori informazioni su `parsys`.
+>Per ulteriori informazioni su `parsys`, vedere [Sviluppo di componenti](/help/sites-developing/components.md#paragraphsystem) e [Linee guida per l&#39;utilizzo di modelli e componenti](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components).
 
 ## Abilita/Disabilita componenti {#enable-disable-components}
 
@@ -48,15 +48,15 @@ In modalità Progettazione, la barra laterale viene ridotta a icona e puoi confi
 
    ![Modalità progettazione](do-not-localize/chlimage_1.png)
 
-1. Clic **Modifica** sul sistema Paragrafo (**Disegno della parte**).
+1. Fai clic su **Modifica** nel sistema Paragrafo (**Progettazione del par**).
 
-   ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
+   ![schermata_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
 1. Viene aperta una finestra di dialogo in cui sono elencati i gruppi di componenti visualizzati nel Sidekick e i singoli componenti in essi contenuti.
 
    Seleziona questa opzione per aggiungere o rimuovere i componenti da rendere disponibili nella barra laterale.
 
-   ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
+   ![schermata_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
 1. Il Sidekick si riduce a icona in modalità Progettazione. Facendo clic sulla freccia è possibile ingrandire il Sidekick e tornare alla modalità di modifica:
 
@@ -64,7 +64,7 @@ In modalità Progettazione, la barra laterale viene ridotta a icona e puoi confi
 
 ## Configurazione della progettazione di un componente {#configuring-the-design-of-a-component}
 
-In modalità Progettazione è inoltre possibile configurare gli attributi per i singoli componenti. Ogni componente ha i propri parametri, l’esempio seguente mostra **Immagine** componente:
+In modalità Progettazione è inoltre possibile configurare gli attributi per i singoli componenti. Ogni componente ha i propri parametri. Nell&#39;esempio seguente viene illustrato il componente **Immagine**:
 
 1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona del Sidekick:
 
@@ -76,7 +76,7 @@ In modalità Progettazione è inoltre possibile configurare gli attributi per i 
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-1. Clic **OK** per salvare le modifiche.
+1. Fai clic su **OK** per salvare le modifiche.
 
 1. Il Sidekick si riduce a icona in modalità Progettazione. Facendo clic sulla freccia è possibile ingrandire il Sidekick e tornare alla modalità di modifica:
 

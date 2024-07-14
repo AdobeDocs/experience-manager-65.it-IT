@@ -1,5 +1,5 @@
 ---
-title: Minimizzazione dei file JavaScript
+title: Minificazione dei file JavaScript
 description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell’area di lavoro di AEM Forms per ottimizzare i file JS per il web.
 contentOwner: robhagat
 content-type: reference
@@ -16,19 +16,19 @@ ht-degree: 1%
 
 ---
 
-# Minimizzazione dei file JavaScript {#minification-of-the-javascript-files}
+# Minificazione dei file JavaScript {#minification-of-the-javascript-files}
 
 La minimizzazione rimuove dal codice sorgente i caratteri ridondanti, come spazi vuoti, nuove righe e commenti. Questo migliora le prestazioni riducendo le dimensioni del codice. Anche se la minimizzazione non influisce sulla funzionalità, riduce la leggibilità del codice.
 
 Per generare un codice minimizzato per le modifiche semantiche, segui la procedura riportata di seguito.
 
-1. Copia `client-html/src/main/webapp/js` da src-package su filesystem.
+1. Copia `client-html/src/main/webapp/js` da src-package nel file system.
 
    >[!NOTE]
    >
-   >Consulta [Introduzione alla personalizzazione dell’area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) per ulteriori dettagli sui pacchetti.
+   >Per ulteriori dettagli sui pacchetti, vedere [Introduzione alla personalizzazione dell&#39;area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md).
 
-1. Aggiorna percorsi in `main.js` si trova in client-html/src/main/webapp/js, per modelli/viste aggiunti/aggiornati.
+1. Aggiorna i percorsi in `main.js` che si trovano in client-html/src/main/webapp/js, per modelli/visualizzazioni aggiunti/aggiornati.
 
    Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
 
@@ -42,7 +42,7 @@ Per generare un codice minimizzato per le modifiche semantiche, segui la procedu
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Aggiorna `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` nel caso in cui venga modificato/aggiunto un alias in `main.js`.
+1. Aggiornare `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` in caso di modifica/aggiunta dell&#39;alias in `main.js`.
 
    Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
 

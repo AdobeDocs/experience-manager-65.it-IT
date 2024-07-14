@@ -18,7 +18,7 @@ In questa parte del [Percorso per sviluppatori headless AEM,](overview.md) compr
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso AEM headless, [Guida introduttiva di AEM Headless](getting-started.md) hai imparato la teoria di base di cosa sia un CMS headless e ora dovresti:
+Nel documento precedente del percorso AEM headless, [Guida introduttiva a AEM headless](getting-started.md) hai imparato la teoria di base di un CMS headless e ora dovresti:
 
 * Comprendere le nozioni di base delle funzioni headless di AEM.
 * Conoscere i prerequisiti per l’utilizzo delle funzionalità headless di AEM.
@@ -38,7 +38,7 @@ Questo documento illustra i passaggi necessari per implementare il primo progett
 
 ## Requisiti {#requirements}
 
-Prima di continuare con questo documento, assicurati di aver rivisto il documento precedente nel Percorso per sviluppatori headless AEM, [Guida introduttiva di AEM Headless](getting-started.md) assicurati di:
+Prima di continuare con questo documento, assicurati di aver rivisto il documento precedente nel Percorso per sviluppatori AEM Headless, [Guida introduttiva a AEM Headless](getting-started.md) assicurandoti di:
 
 * Soddisfare i requisiti elencati.
 * Aver preso in considerazione la definizione del tuo progetto, compresi ambito, ruoli e prestazioni.
@@ -79,7 +79,7 @@ Gli autori e le autrici creano contenuti in base ai modelli di contenuto definit
 
 Prima di iniziare a utilizzare le funzionalità headless in AEM, assicurati che tutte le funzioni richieste siano abilitate. Questa sezione descrive i requisiti necessari. I passi effettivi per eseguire questi passaggi sono descritti più avanti nel [Percorso per sviluppatori headless di AEM.](#overview.md)
 
-Facoltativamente, puoi anche visualizzare [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
+Facoltativamente, puoi anche visualizzare le [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
 
 ### Configurazione {#configuration}
 
@@ -146,11 +146,11 @@ Indipendentemente dal tuo stile di apprendimento, Adobe vuole che tu abbia succe
 Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless consultando il documento [Come modellare i contenuti come Modelli di contenuto AEM](model-your-content.md) le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono indispensabili per continuare il percorso headless.
 
 * [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md): questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, dell’utilizzo di AEM dei contenuti headless e di come tradurli.
-* [Sviluppo headless per AEM Sites](/help/sites-developing/headless/introduction.md) - Una rapida introduzione per orientare lo sviluppatore headless AEM con le funzioni necessarie
+* [Sviluppo headless per AEM Sites](/help/sites-developing/headless/introduction.md) - Breve introduzione per orientare lo sviluppatore headless AEM con le funzioni necessarie
 * [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
 * [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [Guida AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che mettono in evidenza le API GraphQL di AEM.
-* [Guida introduttiva di Headless](/help/sites-developing/headless/introduction.md#getting-started) - una rapida introduzione alle funzioni headless dell’AEM per gli utenti già a conoscenza dell’AEM.
+* [Guida introduttiva headless](/help/sites-developing/headless/introduction.md#getting-started): breve introduzione alle funzionalità headless dell&#39;AEM per gli utenti che conoscono già l&#39;AEM.
 * [Creare modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md): documentazione tecnica sui modelli per frammenti di contenuto
 * [Creare frammenti di contenuto](/help/assets/content-fragments/content-fragments.md): documentazione tecnica sui frammenti di contenuto
 * [Query del contenuto con GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentazione tecnica sull’API GraphQL

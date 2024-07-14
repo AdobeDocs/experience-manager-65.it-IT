@@ -24,12 +24,12 @@ Viene creato un lancio per consentire di apportare modifiche pronte per la pubbl
 
 >[!NOTE]
 >
->La teoria alla base dei lanci è descritta in dettaglio in [Lanci](/help/sites-authoring/launches.md) nella documentazione sull’authoring standard.
+>La teoria alla base dei lanci è descritta in dettaglio in [Lanci](/help/sites-authoring/launches.md) nella documentazione di authoring standard.
 >
->Le informazioni specifiche sull’utilizzo dei lanci nell’interfaccia utente classica sono disponibili nella documentazione seguente insieme a [Creazione di lanci](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Modifica dei lanci](/help/sites-classic-ui-authoring/classic-launches-editing.md), e [Promozione dei lanci](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Le informazioni specifiche sull&#39;utilizzo dei lanci nell&#39;interfaccia utente classica sono disponibili nella documentazione seguente insieme a [Creazione dei lanci](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Modifica dei lanci](/help/sites-classic-ui-authoring/classic-launches-editing.md) e [Promozione dei lanci](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Nell’interfaccia classica non sono possibili più rami di origine per un lancio.
 
-È possibile accedere direttamente alla console Launches con [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+È possibile accedere direttamente alla console Lanci con [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)

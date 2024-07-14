@@ -22,7 +22,7 @@ L’implementazione headless sta diventando sempre più importante per la distri
 
 L’implementazione headless ignora la gestione di pagine e componenti come avviene nelle soluzioni full-stack e si concentra sulla creazione dei frammenti di contenuto riutilizzabili e indipendenti dal canale, che possono essere distribuiti in modalità cross-channel. Si tratta di un modello di sviluppo dinamico e moderno per implementare esperienze digitali.
 
-Se non conosci ancora l’AEM e/o la tecnologia headless, i Percorsi headless AEM sono un ottimo punto di partenza per comprendere la teoria e la tecnologia attraverso una narrazione per risolvere vari problemi di business in modo headless.
+Se non conosci ancora l’AEM e/o la tecnologia headless, i Percorsi headless dell’AEM sono un ottimo punto di partenza per comprendere la teoria e la tecnologia attraverso una narrazione per risolvere vari problemi di business in modo headless.
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 

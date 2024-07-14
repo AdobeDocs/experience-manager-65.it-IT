@@ -20,15 +20,15 @@ ht-degree: 0%
 
 Gestione utenti consente di abilitare il Single Sign-On (SSO) tra i moduli AEM e le applicazioni protette da Netegrity SiteMinder utilizzando il linguaggio SAML (Security Assertion Markup Language). Quando l’SSO viene implementato, le pagine di accesso degli utenti dei moduli AEM non sono obbligatorie e non vengono visualizzate se l’utente è già autenticato tramite il portale aziendale.
 
-Per informazioni sul miglioramento delle prestazioni di sincronizzazione di database e directory per DB2, vedere [Database IBM DB2: esecuzione di comandi per manutenzione regolare](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Per informazioni sul miglioramento delle prestazioni di sincronizzazione di database e directory per DB2, vedere [Database IBM DB2: esecuzione di comandi per la manutenzione regolare](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
 ## Configurazione della gestione degli utenti per un server LDAP abilitato per SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-Se si dispone di un server LDAP abilitato per SSL, configurare User Management per utilizzarlo. (vedere [Configurare la gestione degli utenti per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Se si dispone di un server LDAP abilitato per SSL, configurare User Management per utilizzarlo. (Vedere [Configurare la gestione degli utenti per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
 
 ## Impostazione dei privilegi utente per l’utilizzo con Document Security {#setting-user-privileges-for-use-with-document-security}
 
-Creare un utente amministratore con i privilegi appropriati per la creazione di utenti e gruppi. Se l’ambiente dei moduli AEM include Document Security, concedi il privilegio di gestire gli utenti invitati e locali a un utente che fungerà da amministratore per questi utenti. Assegna inoltre il ruolo Utente alla console di amministrazione per fornire all’utente l’accesso alla console di amministrazione. (vedere [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+Creare un utente amministratore con i privilegi appropriati per la creazione di utenti e gruppi. Se l’ambiente dei moduli AEM include Document Security, concedi il privilegio di gestire gli utenti invitati e locali a un utente che fungerà da amministratore per questi utenti. Assegna inoltre il ruolo Utente alla console di amministrazione per fornire all’utente l’accesso alla console di amministrazione. (Vedi [Creazione e configurazione dei ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 Per visualizzare gli utenti e i gruppi nei domini selezionati durante le ricerche degli utenti dei criteri, un amministratore privilegiato o un amministratore di set di criteri deve selezionare e aggiungere i domini (creati in Gestione utente) all&#39;elenco visibile di utenti e gruppi per ogni set di criteri creato.
 
@@ -50,7 +50,7 @@ Dopo aver installato e configurato l’ambiente dei moduli AEM con Document Secu
 
 ## Limitazioni per gli utenti amministratori {#administrator-user-restrictions}
 
-Gli utenti con determinati tipi di privilegi di amministratore non possono accedere alle pagine Web degli utenti finali di Workspace per motivi di sicurezza. Poiché queste pagine Web possono esistere all&#39;esterno di un firewall, consentire attività a livello di amministrazione potrebbe rappresentare un rischio per la sicurezza. Solo gli utenti che dispongono dei privilegi di amministratore di Workspace o utente di Workspace possono accedere alle pagine Web degli utenti finali.
+Gli utenti con determinati tipi di privilegi di amministratore non possono accedere alle pagine Web degli utenti finali di Workspace per motivi di sicurezza. Poiché queste pagine Web possono esistere all&#39;esterno di un firewall, consentire attività a livello di amministrazione potrebbe rappresentare un rischio per la sicurezza. Solo gli utenti che dispongono dei privilegi di amministratore di Workspace o di utente di Workspace possono accedere alle pagine Web degli utenti finali.
 
 >[!NOTE]
 >

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Traduzione di contenuti generati dall&#39;utente {#translating-user-generated-content}
 
-La funzione di traduzione per le community Adobe Experience Manager (AEM) estende il concetto di [traduzione del contenuto di una pagina](../../help/sites-administering/translation.md) ai contenuti generati dagli utenti (UGC, User-Generated Content) pubblicati sui siti della community tramite [componenti SCF (social component framework)](scf.md).
+La funzionalità di traduzione per le community Adobe Experience Manager (AEM) estende il concetto di [traduzione del contenuto della pagina](../../help/sites-administering/translation.md) ai contenuti generati dagli utenti (UGC) pubblicati nei siti della community tramite [componenti SCF (Social Component Framework)](scf.md).
 
 La traduzione di UGC consente ai visitatori e ai membri del sito di sperimentare una community globale rimuovendo le barriere linguistiche.
 
@@ -32,27 +32,27 @@ Ad esempio, supponiamo che:
 
 ## Panoramica {#overview}
 
-Questa sezione descrive in modo specifico come funziona il servizio di traduzione con UGC. Si parte anche dal presupposto che tu abbia familiarità con il modo in cui collegare l’AEM ad un [fornitore di servizi di traduzione](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) e integrare tale servizio in un sito web configurando un [framework di integrazione della traduzione](../../help/sites-administering/tc-tic.md).
+Questa sezione descrive in modo specifico come funziona il servizio di traduzione con UGC. Si presuppone inoltre che tu abbia familiarità con le modalità di connessione di AEM a un [fornitore di servizi di traduzione](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) e di integrazione di tale servizio in un sito Web configurando un [framework di integrazione della traduzione](../../help/sites-administering/tc-tic.md).
 
 Quando un fornitore di servizi di traduzione è associato al sito, ogni copia per lingua del sito mantiene i propri thread di UGC pubblicati tramite componenti SCF come i commenti.
 
-Quando viene configurata un’integrazione di traduzione oltre al fornitore di servizi di traduzione, è possibile che ogni copia per lingua del sito condivida un singolo thread di UGC, fornendo una comunicazione globale tra le copie per lingua. Invece di un thread di discussione segregato per lingua, il [archivio condiviso globale](#global-translation-of-ugc) consente di rendere visibile l&#39;intero thread indipendentemente dalla lingua dalla quale viene visualizzato. Inoltre, è possibile configurare più configurazioni di integrazione della traduzione specificando diversi store condivisi globali per un raggruppamento logico di partecipanti globali, ad esempio per aree geografiche.
+Quando viene configurata un’integrazione di traduzione oltre al fornitore di servizi di traduzione, è possibile che ogni copia per lingua del sito condivida un singolo thread di UGC, fornendo una comunicazione globale tra le copie per lingua. Invece di un thread di discussione separato per lingua, l&#39;[archivio condiviso globale](#global-translation-of-ugc) configurato consente di rendere visibile l&#39;intero thread indipendentemente dalla copia per lingua dalla quale viene visualizzato. Inoltre, è possibile configurare più configurazioni di integrazione della traduzione specificando diversi store condivisi globali per un raggruppamento logico di partecipanti globali, ad esempio per aree geografiche.
 
 ## Il servizio di traduzione predefinito {#the-default-translation-service}
 
-AEM Communities include una [licenza di prova](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) per un [servizio di traduzione predefinito](../../help/sites-administering/tc-msconf.md) per diverse lingue.
+AEM Communities include una [licenza di prova](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) per un [servizio di traduzione predefinito](../../help/sites-administering/tc-msconf.md) abilitato per diverse lingue.
 
-Quando [creazione di un sito community](sites-console.md), il servizio di traduzione predefinito è attivato quando `Allow Machine Translation` è selezionato da [TRADUZIONE](sites-console.md#translation) pannello secondario.
+Quando [si crea un sito community](sites-console.md), il servizio di traduzione predefinito viene attivato quando `Allow Machine Translation` viene selezionato dal pannello secondario [TRADUZIONE](sites-console.md#translation).
 
 >[!CAUTION]
 >
 >Il servizio di traduzione predefinito è solo a scopo dimostrativo.
 >
->Per un sistema di produzione, è necessario un servizio di traduzione concesso in licenza. Se non disponi della licenza, il servizio di traduzione predefinito deve essere [disattivato](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
+>Per un sistema di produzione, è necessario un servizio di traduzione concesso in licenza. Se non si dispone della licenza, il servizio di traduzione predefinito deve essere [disattivato](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
 ## Traduzione globale di UGC {#global-translation-of-ugc}
 
-Quando un sito web ha più [copie per lingua](../../help/sites-administering/tc-prep.md), il servizio di traduzione predefinito non riconosce che il contenuto generato dall&#39;utente immesso in un sito possa essere correlato al contenuto immesso in un altro sito. Ciò si verifica quando l’UGC viene generato dallo stesso componente (la copia per lingua della pagina contenente il componente).
+Quando un sito Web contiene più [copie per lingua](../../help/sites-administering/tc-prep.md), il servizio di traduzione predefinito non riconosce che il contenuto generato dall&#39;utente immesso in un sito possa essere correlato al contenuto generato dall&#39;utente immesso in un altro sito. Ciò si verifica quando l’UGC viene generato dallo stesso componente (la copia per lingua della pagina contenente il componente).
 
 È simile a gruppi di persone che discutono di un argomento. Non sono a conoscenza dei commenti che vengono fatti in gruppi diversi dal proprio, rispetto a tutti in un gruppo di grandi dimensioni che partecipano a una conversazione.
 
@@ -64,7 +64,7 @@ Ad esempio, se un forum è stato creato sul sito base, sono state create copie p
 >
 >Qualsiasi UGC che esisteva prima della traduzione globale non è più visibile.
 >
->Mentre l&#39;UGC è ancora nel [archivio comune](working-with-srp.md), si trova nella posizione UGC specifica per la lingua, mentre i nuovi contenuti, aggiunti dopo la configurazione della traduzione globale, vengono recuperati dalla posizione dell’archivio condiviso globale.
+>Mentre l&#39;UGC si trova ancora nell&#39;[archivio comune](working-with-srp.md), si trova nel percorso UGC specifico della lingua, mentre il nuovo contenuto, aggiunto dopo la configurazione della traduzione globale, viene recuperato dal percorso dell&#39;archivio condiviso globale.
 >
 >Non esiste uno strumento di migrazione per spostare o unire contenuti specifici per lingua nell’archivio condiviso globale.
 
@@ -73,26 +73,26 @@ Ad esempio, se un forum è stato creato sul sito base, sono state create copie p
 Per creare un’integrazione di traduzione, che integra un connettore del servizio di traduzione con il sito web nell’istanza di authoring:
 
 * Accedi come amministratore
-* Dalla sezione [menu principale](http://localhost:4502/)
+* Dal [menu principale](http://localhost:4502/)
 * Seleziona **[!UICONTROL Strumenti]**
 * Seleziona **[!UICONTROL Operazioni]**
 * Seleziona **[!UICONTROL Cloud]**
 * Seleziona **[!UICONTROL Cloud Service]**
 * Scorri verso il basso fino a **[!UICONTROL Integrazione traduzione]**
 
-  ![traduzione-integrazione](assets/translation-integration.png)
+  ![integrazione-traduzione](assets/translation-integration.png)
 
 * Seleziona **[!UICONTROL Mostra configurazioni]**
 
   ![show-configuration](assets/translation-integration1.png)
 
-* Seleziona `[+]` icona accanto a **[!UICONTROL Configurazioni disponibili]** in modo da poter creare una configurazione.
+* Seleziona l&#39;icona `[+]` accanto a **[!UICONTROL Configurazioni disponibili]** per creare una configurazione.
 
 #### Finestra di dialogo Crea configurazione {#create-configuration-dialog}
 
 ![create-configuration](assets/translation-integration2.png)
 
-* **[!UICONTROL Configurazione principale]**
+* **[!UICONTROL Configurazione padre]**
 
   (Obbligatorio) In genere lascia come impostazione predefinita. Il valore predefinito è `/etc/cloudservices/translation`.
 
@@ -110,11 +110,11 @@ Per creare un’integrazione di traduzione, che integra un connettore del serviz
 
 ![finestra di dialogo per configurazione](assets/translation-integration3.png)
 
-Per istruzioni dettagliate, consulta [Creazione di una configurazione dell’integrazione di traduzione](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration).
+Per istruzioni dettagliate, vedere [Creazione di una configurazione dell&#39;integrazione della traduzione](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration).
 
-* **[!UICONTROL Sites]** tab: può lasciare come valori predefiniti.
+* Scheda **[!UICONTROL Siti]**: può lasciare come valori predefiniti.
 
-* **[!UICONTROL Community]** scheda:
+* Scheda **[!UICONTROL Communities]**:
    * **[!UICONTROL Provider traduzione]**
 Seleziona il fornitore di traduzione dall’elenco a discesa. Il valore predefinito è `microsoft`, il servizio di prova.
 
@@ -122,14 +122,14 @@ Seleziona il fornitore di traduzione dall’elenco a discesa. Il valore predefin
 Seleziona una categoria che descrive il contenuto da tradurre. Il valore predefinito è `General.`
 
    * **[!UICONTROL Scegli una lingua...]**
-(Facoltativo) Selezionando una lingua per l&#39;archiviazione dei contenuti generati dagli utenti (UGC), i post di tutte le copie per lingua vengono visualizzati in un&#39;unica conversazione globale. Per convenzione, scegli la lingua per il [lingua di base](sites-console.md#translation) per il sito web. Scelta `No Common Store` disabilita la traduzione globale. Per impostazione predefinita, la traduzione globale è disabilitata.
+(Facoltativo) Selezionando una lingua per l&#39;archiviazione dei contenuti generati dagli utenti (UGC), i post di tutte le copie per lingua vengono visualizzati in un&#39;unica conversazione globale. Per convenzione, scegliere le impostazioni locali per la [lingua base](sites-console.md#translation) del sito Web. La scelta di `No Common Store` disabilita la traduzione globale. Per impostazione predefinita, la traduzione globale è disabilitata.
 
-* **[!UICONTROL Risorse]** tab: può lasciare come valori predefiniti.
+* Scheda **[!UICONTROL Assets]**: può lasciare come valori predefiniti.
 * Seleziona **[!UICONTROL OK]**
 
 #### Attivazione {#activation}
 
-Il nuovo servizio cloud di integrazione della traduzione deve essere attivato nell’ambiente di pubblicazione. Se associata a un sito web, se non ancora attivata, il flusso di lavoro di attivazione richiede di pubblicare questa configurazione del servizio cloud quando viene pubblicata la pagina a cui è associata.
+Il nuovo servizio cloud di integrazione della traduzione deve essere attivato nell’ambiente Publish. Se associata a un sito web, se non ancora attivata, il flusso di lavoro di attivazione richiede di pubblicare questa configurazione del servizio cloud quando viene pubblicata la pagina a cui è associata.
 
 ## Gestione delle impostazioni di traduzione {#managing-translation-settings}
 
@@ -153,7 +153,7 @@ Ad esempio, puoi scegliere di visualizzare sempre i contenuti della community ne
 
 Quando le pagine vengono tradotte automaticamente nella lingua preferita dell’utente, l’interfaccia utente per la visualizzazione del testo originale e il miglioramento della traduzione rimane disponibile.
 
-![user-profile](assets/translation-integration4.png)
+![profilo-utente](assets/translation-integration4.png)
 
 ### Impostazione sito community {#community-site-setting}
 

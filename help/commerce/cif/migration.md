@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -18,11 +18,11 @@ Questa guida aiuta a identificare le aree da aggiornare per la migrazione del co
 
 ## Componente aggiuntivo CIF
 
-Il componente aggiuntivo CIF è disponibile per AEM 6.5 tramite il [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). È compatibile e offre le stesse caratteristiche del componente aggiuntivo CIF, ad Experience Manager as a Cloud Service.
+Il componente aggiuntivo CIF è disponibile per AEM 6.5 tramite il [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). È compatibile e offre le stesse caratteristiche del componente aggiuntivo CIF, ad Experience Manager il componente as a Cloud Service.
 
-Consulta [Guida introduttiva a AEM Content and Commerce](getting-started.md).
+Consulta [Guida introduttiva ai contenuti AEM e Commerce](getting-started.md).
 
-Per supportare i progetti che utilizzano l’CIF, Adobe fornisce [Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components).
+Per supportare i progetti che utilizzano CIF, Adobe fornisce [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components).
 
 ## Catalogo prodotti
 

@@ -31,7 +31,7 @@ Immettere i criteri di base per eseguire una ricerca generale. Se si immettono p
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro di Forms > Ricerca processi.
 1. Nella sezione Ricerca generale della pagina Ricerca processo specificare i criteri riportati di seguito.
 
-   * **ID processo:** Numero intero positivo che identifica ogni istanza di processo univoca.
+   * **ID processo:** Il numero intero positivo che identifica ogni istanza di processo univoca.
    * **Stato processo:** Selezionare uno stato dall&#39;elenco.
    * **Applicazione:** Selezionare un&#39;applicazione dall&#39;elenco. Vengono visualizzate solo le applicazioni distribuite.
    * **Nome processo - Versione:** Selezionare un nome di processo dal menu. Vengono visualizzati solo i processi distribuiti.

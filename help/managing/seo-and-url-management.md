@@ -19,7 +19,7 @@ ht-degree: 65%
 
 L’ottimizzazione SEO (Search Engine Optimization) è diventata una preoccupazione chiave per molti esperti marketing. Di conseguenza, le preoccupazioni in materia di SEO devono essere affrontate in molti progetti AEM.
 
-Questo documento descrive alcuni [Best practice per l’ottimizzazione SEO](#seo-best-practices) raccomandazioni sull&#39;attuazione dell&#39;AEM. Vengono quindi approfonditi alcuni dei [passaggi di implementazione più complessi](#aem-configurations) illustrati nella prima sezione.
+In questo documento vengono innanzitutto descritte alcune [best practice per l&#39;ottimizzazione SEO](#seo-best-practices) e raccomandazioni per l&#39;implementazione AEM. Vengono quindi approfonditi alcuni dei [passaggi di implementazione più complessi](#aem-configurations) illustrati nella prima sezione.
 
 ## Best practice per l’ottimizzazione SEO {#seo-best-practices}
 
@@ -83,9 +83,9 @@ Ecco alcuni suggerimenti di carattere generale su come creare URL per l’ottimi
 
 * Assicurati che ogni pagina sia gestita da un solo protocollo.
 
-   * A volte i siti vengono gestiti tramite `http` fino a quando l’utente non raggiunge una pagina contenente, ad esempio, un modulo di pagamento o di accesso, che viene gestito tramite `https`. Quando il collegamento viene effettuato da questa pagina, se l’utente può tornare a `http` e accedervi tramite `https`, il motore di ricerca ne tiene traccia come se fossero due pagine separate.
+   * A volte i siti vengono gestiti tramite `http` fino a quando l’utente non raggiunge una pagina contenente, ad esempio, un modulo di pagamento o di accesso, che viene gestito tramite `https`. Quando il collegamento viene effettuato da questa pagina, se l&#39;utente può tornare a `http` pagine e accedervi tramite `https`, il motore di ricerca ne tiene traccia come se fossero due pagine separate.
 
-   * Google attualmente preferisce le pagine `https` a quelle `http`. Contribuiscono a rendere la vita di tutti più facile gestire l&#39;intero sito tramite `https`.
+   * Google attualmente preferisce le pagine `https` a quelle `http`. Contribuiscono a semplificare la gestione dell&#39;intero sito tramite `https`.
 
 ### Configurazione del server {#server-configuration}
 
@@ -124,7 +124,7 @@ Gli esempi seguenti illustrano come registrare i servlet conformi a questi model
 
 #### Servlet Bin (un livello inferiore) {#bin-servlets-one-level-down}
 
-I servlet **Bin** sono conformi al modello a cui molti sviluppatori sono abituati dalla programmazione J2EE. Il servlet viene registrato in un percorso specifico che, nell’AEM, è solitamente sotto `/bin`ed estrarre i parametri di richiesta necessari dalla stringa query.
+I servlet **Bin** sono conformi al modello a cui molti sviluppatori sono abituati dalla programmazione J2EE. Il servlet viene registrato in un percorso specifico che, in AEM, si trova in genere in `/bin` ed è possibile estrarre i parametri di richiesta necessari dalla stringa di query.
 
 L’annotazione SCR per questo tipo di servlet sarà simile al seguente:
 
@@ -159,7 +159,7 @@ L’annotazione SCR per questo tipo di servlet sarà simile al seguente:
 @SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
-In questo caso, la risorsa gestita dall’URL, un’istanza di `myPageType` resource: è accessibile automaticamente nel servlet. Per accedervi, chiama quanto segue:
+In questo caso, la risorsa gestita dall&#39;URL, un&#39;istanza della risorsa `myPageType`, è accessibile automaticamente nel servlet. Per accedervi, chiama quanto segue:
 
 ```
 Resource myPage = req.getResource();
@@ -198,7 +198,7 @@ Può essere necessario visualizzare i nomi delle pagine localizzate agli utenti 
 
 Il problema correlato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue, per garantire la sincronizzazione del contenuto.
 
-Il `sling:alias` La proprietà ti permette di avere torta Adobe e mangiarlo troppo. Puoi aggiungere `sling:alias` come proprietà di qualsiasi risorsa per consentire l’utilizzo di un nome di alias della risorsa. Nell’esempio precedente, si otterrebbe quanto segue:
+La proprietà `sling:alias` consente di utilizzare torta di Adobe e mangiarla. È possibile aggiungere `sling:alias` come proprietà a qualsiasi risorsa per consentire l&#39;utilizzo di un nome di alias per la risorsa. Nell’esempio precedente, si otterrebbe quanto segue:
 
 * Una pagina nel JCR in:
   `…/es/home`
@@ -235,7 +235,7 @@ In un’installazione standard di AEM:
 
 Per creare una mappatura, crea un nodo `sling:Mapping` in questa posizione in `/http` o `/https`. In base alle proprietà `sling:match` e `sling:internalRedirect` impostate su questo nodo, AEM reindirizzerà tutto il traffico dell’URL corrispondente al valore specificato nella proprietà `internalRedirect`.
 
-Sebbene questo approccio sia documentato nella documentazione ufficiale dell’AEM e di Sling, il supporto delle espressioni regolari fornito da questa implementazione ha un ambito limitato rispetto alle opzioni disponibili utilizzando `SlingResourceResolver` direttamente. Inoltre, una tale implementazione delle mappature può causare problemi con l’annullamento della validità della cache del Dispatcher.
+Sebbene questo approccio sia documentato nella documentazione ufficiale di AEM e Sling, il supporto delle espressioni regolari fornito da questa implementazione ha un ambito limitato rispetto alle opzioni disponibili utilizzando direttamente `SlingResourceResolver`. Inoltre, una tale implementazione delle mappature può causare problemi con l’annullamento della validità della cache del Dispatcher.
 
 Ecco un esempio di scenario in cui si verifica questo problema:
 
@@ -258,7 +258,7 @@ Tuttavia, esiste anche un modo più semplice per gestire questo problema:
    * **Apache Sling Resource Resolver Factory**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-   L’Adobe consiglia di creare le mappature necessarie per ridurre gli URL come espressioni regolari, quindi di definire queste configurazioni in un nodo OsgiConfignode, `config.publish` incluso nella build.
+   L&#39;Adobe consiglia di creare le mappature necessarie per ridurre gli URL come espressioni regolari, quindi di definire queste configurazioni in un nodo OsgiConfignode, `config.publish`, incluso nella build.
 
    Invece di definire le mappature in `/etc/map`, puoi assegnarle direttamente alla proprietà **URL Mappings** (Mappature URL) ( `resource.resolver.mapping`):
 
@@ -277,7 +277,7 @@ Tuttavia, esiste anche un modo più semplice per gestire questo problema:
 
 1. **Mappatura dell’output degli URL nelle pagine**
 
-   Dopo aver definito le mappature in Apache Sling Resource Resolver, utilizza queste mappature nei componenti per garantire che gli URL generati nelle pagine siano brevi e ordinati. È possibile eseguire questa operazione utilizzando la funzione di mappatura del `ResourceResolver`.
+   Dopo aver definito le mappature in Apache Sling Resource Resolver, utilizza queste mappature nei componenti per garantire che gli URL generati nelle pagine siano brevi e ordinati. È possibile eseguire questa operazione utilizzando la funzione mappa di `ResourceResolver`.
 
    Se, ad esempio, stai implementando un componente di navigazione personalizzato che elenca gli elementi secondari della pagina corrente, puoi utilizzare il metodo di mappatura nel modo seguente:
 
@@ -292,7 +292,7 @@ Tuttavia, esiste anche un modo più semplice per gestire questo problema:
 
 Finora, hai implementato le mappature insieme alla logica nei tuoi componenti per utilizzarle durante l’output degli URL sulle pagine.
 
-Non resta che definire come gestire questi URL abbreviati quando arrivano al Dispatcher ed è qui che entra in gioco `mod_rewrite`. Il principale vantaggio associato all’uso di `mod_rewrite` è che gli URL vengono mappati sulla relativa forma estesa *prima* di essere inviati al modulo del Dispatcher. Questo flusso significa che Dispatcher richiede l’URL lungo al server di pubblicazione e lo memorizza nella cache come al solito. Di conseguenza, qualsiasi richiesta di eliminazione del Dispatcher proveniente dal server di pubblicazione potrà annullare la validità di questo contenuto.
+Non resta che definire come gestire questi URL abbreviati quando arrivano al Dispatcher ed è qui che entra in gioco `mod_rewrite`. Il principale vantaggio associato all’uso di `mod_rewrite` è che gli URL vengono mappati sulla relativa forma estesa *prima* di essere inviati al modulo del Dispatcher. Questo flusso significa che Dispatcher richiede l’URL lungo al server di pubblicazione e lo memorizza nella cache come al solito. Pertanto, qualsiasi richiesta di svuotamento del Dispatcher proveniente dal server di pubblicazione può annullare la validità di questo contenuto.
 
 Per implementare queste regole, puoi aggiungere elementi `RewriteRule` nell’host virtuale della configurazione di Apache HTTP Server. Se vuoi espandere gli URL abbreviati dell’esempio precedente, puoi implementare una regola simile alla seguente:
 
@@ -355,7 +355,7 @@ Disallow: /
 
 In alternativa, in un ambiente live, puoi scegliere di non consentire l’indicizzazione di determinati percorsi.
 
-Avvertenza per il posizionamento di `robots.txt` Nella directory principale del sito è possibile che le richieste di svuotamento del Dispatcher cancellino questo file. Inoltre, le mappature URL probabilmente posizionano la directory principale del sito in un punto diverso da `DOCROOT` come definito nella configurazione di Apache HTTP Server. Per questo motivo, questo file viene in genere inserito nell’istanza di authoring nella directory principale del sito e replicato nell’istanza di pubblicazione.
+Bisogna però prestare attenzione quando si inserisce il file `robots.txt` nella directory principale del sito. Le richieste di svuotamento del Dispatcher potrebbero cancellare questo file. Inoltre, è probabile che le mappature URL posizionino la directory principale del sito in un punto diverso da `DOCROOT` come definito nella configurazione di Apache HTTP Server. Per questo motivo, questo file viene in genere inserito nell’istanza di authoring nella directory principale del sito e replicato nell’istanza di pubblicazione.
 
 ### Creazione di una mappa del sito XML in AEM {#building-an-xml-sitemap-on-aem}
 
@@ -367,7 +367,7 @@ AEM utilizza il [modulo Sling Sitemap di Apache](https://github.com/apache/sling
 >
 >Disponibile come funzionalità del prodotto dalla versione 6.5.11.0 di Adobe Experience Manager.
 > 
->Per le versioni precedenti, puoi registrare autonomamente un servlet Sling, per ascoltare un `sitemap.xml` chiamare. Utilizza la risorsa fornita tramite l’API del servlet per cercare la pagina corrente e i suoi discendenti per generare un `sitemap.xml` file.
+>Per le versioni precedenti, puoi registrare autonomamente un servlet Sling per ascoltare una chiamata `sitemap.xml`. Utilizza la risorsa fornita tramite l&#39;API servlet per cercare la pagina corrente e i suoi discendenti e generare un file `sitemap.xml`.
 
 Il modulo Sling Sitemap di Apache distingue tra una mappa del sito di livello superiore e una mappa del sito nidificata, entrambe generate per tutte le risorse per le quali la proprietà `sling:sitemapRoot` è impostata su `true`. In generale, le mappe del sito vengono sottoposte a rendering utilizzando i selettori nel percorso della mappa del sito di primo livello della struttura, che è la risorsa senza altri predecessori nella directory principale della mappa del sito. La directory principale della mappa del sito di primo livello espone anche l’indice della mappa del sito, che solitamente viene configurata da proprietario del sito nel portale di configurazione del motore di ricerca oppure aggiunta al file `robots.txt` del sito.
 
@@ -381,15 +381,15 @@ Ad esempio, considera un sito in cui la directory principale della mappa del sit
 >
 >I selettori `sitemap` e `sitemap-index` possono interferire con le implementazioni personalizzate. Se non desideri utilizzare la funzione del prodotto, configura il tuo servlet che serve questi selettori con un `service.ranking` superiore a 0.
 
-Nella configurazione predefinita, la finestra di dialogo Proprietà pagina consente di contrassegnare una pagina come radice di una sitemap e quindi, come descritto in precedenza, di generare una sitemap di se stessa e dei suoi discendenti. Questo comportamento è implementato dalle implementazioni dell’interfaccia `SitemapGenerator` e può essere esteso aggiungendo implementazioni alternative. Tuttavia, poiché la frequenza con cui rigenerare sitemap XML dipende dai flussi di lavoro e dai carichi di lavoro per l’authoring dei contenuti, il prodotto non viene fornito `SitemapScheduler` configurazione. In quanto tale, rende la funzione effettivamente opt-in.
+Nella configurazione predefinita, la finestra di dialogo Proprietà pagina consente di contrassegnare una pagina come radice di una sitemap e quindi, come descritto in precedenza, di generare una sitemap di se stessa e dei suoi discendenti. Questo comportamento è implementato dalle implementazioni dell’interfaccia `SitemapGenerator` e può essere esteso aggiungendo implementazioni alternative. Tuttavia, poiché la frequenza con cui rigenerare sitemap XML dipende dai flussi di lavoro e dai carichi di lavoro per l&#39;authoring dei contenuti, il prodotto non presenta configurazioni `SitemapScheduler`. In quanto tale, rende la funzione effettivamente opt-in.
 
 Per abilitare il processo in background che genera sitemap XML, `SitemapScheduler` deve essere configurato. Per farlo, crea una configurazione OSGI per il PID `org.apache.sling.sitemap.impl.SitemapScheduler`. Espressione di pianificazione `0 0 0 * * ?` può essere utilizzato come punto di partenza per rigenerare tutte le sitemap XML una volta al giorno a mezzanotte.
 
 ![Sitemap Apache Sling - Pianificazione](assets/sling-sitemap-scheduler.png)
 
-Il processo di generazione della sitemap può essere eseguito sia sulle istanze del livello di authoring che su quelle del livello di pubblicazione. In genere, si consiglia di eseguire la generazione sulle istanze del livello di pubblicazione, in quanto gli URL canonici corretti possono essere generati solo lì (a causa delle regole di mappatura risorse Sling comunemente presenti solo sulle istanze del livello di pubblicazione). Tuttavia, è possibile collegare un’implementazione personalizzata del meccanismo di esternalizzazione utilizzato per generare gli URL canonici implementando [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) di rete. Se un’implementazione personalizzata è in grado di generare gli URL canonici di una sitemap sulle istanze del livello di authoring, il `SitemapScheduler` può essere configurato per la modalità di esecuzione dell’autore. Inoltre, il carico di lavoro di generazione della mappa del sito XML può essere distribuito tra le istanze del cluster del servizio di authoring. In questo scenario, è necessario prestare attenzione alla gestione di contenuti non ancora pubblicati, modificati o visibili solo a un gruppo ristretto di utenti.
+Il processo di generazione della sitemap può essere eseguito sia sulle istanze del livello di authoring che su quelle del livello di pubblicazione. In genere, si consiglia di eseguire la generazione sulle istanze del livello di pubblicazione, in quanto gli URL canonici corretti possono essere generati solo lì (a causa delle regole di mappatura risorse Sling comunemente presenti solo sulle istanze del livello di pubblicazione). Tuttavia, è possibile collegare un&#39;implementazione personalizzata del meccanismo di esternalizzazione utilizzato per generare gli URL canonici implementando l&#39;interfaccia [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html). Se un&#39;implementazione personalizzata è in grado di generare gli URL canonici di una sitemap sulle istanze del livello di authoring, `SitemapScheduler` può essere configurato per la modalità di esecuzione dell&#39;autore. Inoltre, il carico di lavoro di generazione della mappa del sito XML può essere distribuito tra le istanze del cluster del servizio di authoring. In questo scenario, è necessario prestare attenzione alla gestione di contenuti non ancora pubblicati, modificati o visibili solo a un gruppo ristretto di utenti.
 
-AEM Sites contiene un’implementazione predefinita di un `SitemapGenerator` che attraversa una struttura ad albero di pagine per generare una sitemap. È preconfigurato per generare solo gli URL canonici di un sito e qualsiasi alternativa linguistica, se disponibile. Può anche essere configurato in modo da includere l’ultima data modificata di una pagina, se necessario. Per farlo, abilita _Aggiungi ultima modifica_ opzione del _Adobe di AEM SEO - Generatore di sitemap nella struttura ad albero della pagina_ Configurazione e seleziona un _Ultima origine modificata_. Quando vengono generate le mappe del sito sul livello di pubblicazione, si consiglia di utilizzare la data `cq:lastModified`.
+AEM Sites contiene un’implementazione predefinita di un `SitemapGenerator` che attraversa una struttura ad albero di pagine per generare una sitemap. È preconfigurato per generare solo gli URL canonici di un sito e qualsiasi alternativa linguistica, se disponibile. Può anche essere configurato in modo da includere l’ultima data modificata di una pagina, se necessario. Per farlo, abilita l&#39;opzione _Aggiungi ultima modifica_ della configurazione _Adobe AEM SEO - Page Tree Sitemap Generator_ e seleziona un _Last Modified Source_. Quando vengono generate le mappe del sito sul livello di pubblicazione, si consiglia di utilizzare la data `cq:lastModified`.
 
 ![Adobe AEM SEO - Configurazione del generatore di sitemap nella struttura ad albero della pagina](assets/sling-sitemap-pagetreegenerator.png)
 
@@ -398,7 +398,7 @@ Per limitare il contenuto di una sitemap, è possibile implementare le seguenti 
 * [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) può essere implementato per nascondere le pagine da sitemap XML generate dal generatore di sitemap specifico di AEM Sites
 * [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) o [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) può essere implementato per filtrare prodotti o categorie da sitemap XML generati dai generatori di sitemap specifici [Framework di integrazione Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it)
 
-Se le implementazioni predefinite non funzionano su un particolare caso d’uso, o se i punti di estensione non sono abbastanza flessibili, implementa un `SitemapGenerator` per assumere il controllo completo del contenuto di una sitemap generata. Nell&#39;esempio seguente viene utilizzata la logica di implementazione predefinita per AEM Sites. Utilizza il [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) come punto iniziale per scorrere la struttura ad albero delle pagine:
+Se le implementazioni predefinite non funzionano su un particolare caso d&#39;uso, o se i punti di estensione non sono abbastanza flessibili, implementa un `SitemapGenerator` personalizzato per assumere il controllo completo del contenuto di una sitemap generata. Nell&#39;esempio seguente viene utilizzata la logica di implementazione predefinita per AEM Sites. Utilizza il [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) come punto iniziale per scorrere la struttura ad albero delle pagine:
 
 ```
 import java.util.Optional;
@@ -471,7 +471,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Inoltre, la funzionalità implementata per le sitemap XML può essere utilizzata per casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua nell’intestazione di una pagina. Consulta [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) per ulteriori informazioni.
+Inoltre, la funzionalità implementata per le sitemap XML può essere utilizzata per casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua nell’intestazione di una pagina. Per ulteriori informazioni, vedere l&#39;interfaccia [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html).
 
 ### Creazione di reindirizzamenti 301 per gli URL legacy {#creating-redirects-for-legacy-urls}
 

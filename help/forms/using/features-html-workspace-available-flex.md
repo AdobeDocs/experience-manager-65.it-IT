@@ -1,6 +1,6 @@
 ---
 title: Funzioni dell’area di lavoro di AEM Forms non disponibili in Flex
-description: AEM Forms Workspace innova oltre Flex Workspace. Scopri le differenze nelle funzionalità di.
+description: AEM Forms Workspace innova oltre il Workspace basato su Flex. Scopri le differenze nelle funzionalità di.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -24,19 +24,19 @@ Di seguito è riportata una breve panoramica di queste funzionalità. Per maggio
 
 ## Supporto per un riquadro di riepilogo per le attività {#support-for-a-summary-pane-for-tasks}
 
-Quando si apre un&#39;attività, prima dell&#39;apertura del modulo, un riquadro consente di visualizzare informazioni sull&#39;attività tramite un URL esterno. Tramite il Riquadro di riepilogo delle attività è possibile visualizzare informazioni aggiuntive e rilevanti per un’attività, in modo da aggiungere più valore all’utente finale dell’area di lavoro di AEM Forms. Consulta [Visualizza pagina di riepilogo](/help/forms/using/displaying-information-task-summary-pane.md) per i dettagli sull’implementazione.
+Quando si apre un&#39;attività, prima dell&#39;apertura del modulo, un riquadro consente di visualizzare informazioni sull&#39;attività tramite un URL esterno. Tramite il Riquadro di riepilogo delle attività è possibile visualizzare informazioni aggiuntive e rilevanti per un’attività, in modo da aggiungere più valore all’utente finale dell’area di lavoro di AEM Forms. Per informazioni dettagliate sull&#39;implementazione, vedere [Visualizza pagina di riepilogo](/help/forms/using/displaying-information-task-summary-pane.md).
 
 ## Supporto per la visualizzazione Manager {#support-for-manager-view}
 
-Questa funzionalità consente ai manager di accedere ai propri report o di agire in base ad essi. I manager possono anche espandere, nella gerarchia dell’organizzazione, le attività dei loro rapporti indiretti. Consulta [Gestione delle attività in una gerarchia organizzativa tramite la visualizzazione Manager](/help/forms/using/tasks-organizational-hierarchy-using-manager.md) per ulteriori dettagli.
+Questa funzionalità consente ai manager di accedere ai propri report o di agire in base ad essi. I manager possono anche espandere, nella gerarchia dell’organizzazione, le attività dei loro rapporti indiretti. Per ulteriori dettagli, vedere [Gestione delle attività in una gerarchia organizzativa mediante la visualizzazione Manager](/help/forms/using/tasks-organizational-hierarchy-using-manager.md).
 
 ## Supporto per gli avatar utente {#support-for-user-avatars}
 
-Ora è possibile visualizzare immagini o avatar dell’utente connesso nell’angolo superiore destro dell’area di lavoro di AEM Forms. Nella vista Manager è inoltre possibile visualizzare avatar degli utenti per mostrare le immagini dei manager e i relativi report. Consulta [Visualizzazione dell&#39;avatar utente](/help/forms/using/displaying-user-avatar.md) per ulteriori dettagli.
+Ora è possibile visualizzare immagini o avatar dell’utente connesso nell’angolo superiore destro dell’area di lavoro di AEM Forms. Nella vista Manager è inoltre possibile visualizzare avatar degli utenti per mostrare le immagini dei manager e i relativi report. Per ulteriori dettagli, vedi [Visualizzazione dell&#39;avatar utente](/help/forms/using/displaying-user-avatar.md).
 
 ## Supporto per l’integrazione di applicazioni di terze parti {#support-for-integrating-third-party-applications}
 
-La funzionalità di integrazione con applicazioni di terze parti può essere utilizzata per portare i flussi di lavoro interamente nell’area di lavoro di AEM Forms. È ad esempio possibile eseguire il rendering dei modelli di lettere di Gestione corrispondenza come attività all&#39;interno della finestra stessa dell&#39;area di lavoro di AEM Forms. In questo modo, puoi completare l’attività senza uscire dall’area di lavoro di AEM Forms. Consulta [Integrazione della gestione della corrispondenza nell’area di lavoro di AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md) per istruzioni dettagliate.
+La funzionalità di integrazione con applicazioni di terze parti può essere utilizzata per portare i flussi di lavoro interamente nell’area di lavoro di AEM Forms. È ad esempio possibile eseguire il rendering dei modelli di lettere di Gestione corrispondenza come attività all&#39;interno della finestra stessa dell&#39;area di lavoro di AEM Forms. In questo modo, puoi completare l’attività senza uscire dall’area di lavoro di AEM Forms. Per istruzioni dettagliate, consulta [Integrazione della gestione della corrispondenza nell&#39;area di lavoro di AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).
 
 ## Supporto per il rendering di attività personalizzato in base al dispositivo dell&#39;utente finale {#support-for-custom-task-rendering-based-on-end-user-s-device}
 

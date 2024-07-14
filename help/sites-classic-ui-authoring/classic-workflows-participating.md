@@ -48,7 +48,7 @@ Per elaborare un elemento di lavoro è possibile eseguire le azioni seguenti:
 
 Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto**) vengono visualizzati diversi avvisi e/o notifiche:
 
-* Il **Stato** della console Siti Web indica quando una pagina si trova in un flusso di lavoro:
+* La colonna **Stato** della console Siti Web indica quando una pagina si trova in un flusso di lavoro:
 
   ![workflowstatus-1](assets/workflowstatus-1.png)
 
@@ -60,25 +60,25 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
 Dopo aver eseguito l’azione indicata, puoi completare l’elemento di lavoro, consentendo in tal modo la continuazione del flusso di lavoro. Per completare l&#39;elemento di lavoro, attenersi alla procedura descritta di seguito.
 
-1. Seleziona il passaggio del flusso di lavoro e fai clic su **Completa** nella barra di navigazione superiore.
-1. Nella finestra di dialogo risultante, seleziona **Passaggio successivo** ovvero il passaggio da eseguire successivamente. Un elenco a discesa mostra tutte le destinazioni appropriate. A **Commento** può essere inserito.
+1. Seleziona il passaggio del flusso di lavoro e fai clic sul pulsante **Completa** nella barra di navigazione superiore.
+1. Nella finestra di dialogo risultante, seleziona il **Passaggio successivo**, ovvero il passaggio da eseguire successivamente. Un elenco a discesa mostra tutte le destinazioni appropriate. È inoltre possibile immettere **Commento**.
 
    ![workflowcomplete](assets/workflowcomplete.png)
 
    Il numero di passaggi elencati dipende dalla progettazione del modello di flusso di lavoro.
 
-1. Clic **OK** per confermare l’azione.
+1. Fai clic su **OK** per confermare l&#39;azione.
 
 ### Delega di un passaggio partecipante {#delegating-a-participant-step}
 
 Per delegare un elemento di lavoro, attenersi alla procedura descritta di seguito.
 
-1. Fai clic su **Delega** nella barra di navigazione superiore.
-1. Nella finestra di dialogo, utilizza l’elenco a discesa per selezionare **Utente** per delegare l&#39;elemento di lavoro a. Puoi anche aggiungere una **Commento**.
+1. Fai clic sul pulsante **Delega** nella barra di navigazione superiore.
+1. Nella finestra di dialogo, utilizza l&#39;elenco a discesa per selezionare l&#39;**utente** a cui delegare l&#39;elemento di lavoro. Puoi anche aggiungere un **Commento**.
 
    ![workflowdelegate](assets/workflowdelegate.png)
 
-1. Clic **OK** per confermare l’azione.
+1. Fai clic su **OK** per confermare l&#39;azione.
 
 ### Esecuzione di un passo indietro su un Passaggio Partecipante {#performing-step-back-on-a-participant-step}
 
@@ -87,6 +87,6 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 1. Fai clic sul pulsante Indietro nella barra di navigazione superiore.
 1. Nella finestra di dialogo risultante, seleziona il passaggio precedente, ovvero il passaggio da eseguire successivamente, anche se si tratta di un passaggio precedente nel flusso di lavoro. Un elenco a discesa mostra tutte le destinazioni appropriate.
 
-   ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
+   ![schermata_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Fai clic su OK per confermare l’azione.

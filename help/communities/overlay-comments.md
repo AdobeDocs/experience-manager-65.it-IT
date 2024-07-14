@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Componenti Sovrapponi community {#overlay-communities-components}
 
-L&#39;intenzione di [sovrapposizione](/help/communities/client-customize.md#overlays) un componente di default consiste nel modificare l&#39;aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere nella cartella /apps prima di effettuare la ricerca nella cartella /libs. Pertanto, il percorso del componente è identico al percorso del componente predefinito, tranne per il fatto che si trova nella cartella /apps e non nella cartella /libs.
+L&#39;intenzione di [sovrapporsi](/help/communities/client-customize.md#overlays) a un componente predefinito è di alterare l&#39;aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere nella cartella /apps prima di effettuare la ricerca nella cartella /libs. Pertanto, il percorso del componente è identico al percorso del componente predefinito, tranne per il fatto che si trova nella cartella /apps e non nella cartella /libs.
 
 ## Esempio {#example}
 
-**Componente per commenti di sovrapposizione**
+**Componente commenti sovrapposizione**
 
 Supponiamo di voler modificare la funzione di commento in modo che corrisponda alla progettazione del sito web, modificando l’intestazione del commento in modo che non visualizzi più l’avatar per alcun commento. Le soluzioni per nascondere l’avatar utilizzano CSS o, come descritto qui, sovrappongono header.jsp nella cartella apps in modo che il HTML contenente l’avatar non venga mai inviato al client.
 
@@ -35,9 +35,9 @@ Per sovrapporre i commenti, è necessario:
 
 **Sovrapponi e-mail notifiche**
 
-Se desideri personalizzare il messaggio delle notifiche e-mail, puoi farlo tramite [sovrapposizione](/help/communities/client-customize.md#overlays) i modelli in `/libs/settings/community/templates/email/html`.
+Se desideri personalizzare il messaggio delle notifiche e-mail, puoi farlo [sovrapponendo](/help/communities/client-customize.md#overlays) i modelli in `/libs/settings/community/templates/email/html`.
 
-Ad esempio, supponiamo che tu voglia modificare le menzioni notifiche e-mail (per un componente specifico di Communities in cui viene creato UGC). In questi casi, aggiungi un **se** condizione per verbo **menzione** nei modelli dei componenti per i quali hai abilitato la funzione **@mentions** supporto.
+Ad esempio, supponiamo che tu voglia modificare le menzioni notifiche e-mail (per un componente specifico di Communities in cui viene creato UGC). In questi casi, aggiungere una condizione **if** per il verbo **mentisci** nei modelli dei componenti per i quali è stato abilitato il supporto di **@mentions**.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -45,4 +45,4 @@ Ad esempio, supponiamo che tu voglia modificare le menzioni notifiche e-mail (pe
 {{/equals}}\
 ```
 
-Per modificare il modello di notifiche e-mail da @mention nei commenti di blog, inserisci il modello predefinito in: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+Per modificare il modello di notifiche e-mail per @mention nei commenti del blog, inserisci il modello predefinito in: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`

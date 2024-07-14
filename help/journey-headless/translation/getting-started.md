@@ -81,7 +81,7 @@ L’architetto dei contenuti all’inizio del progetto si occupa della definizio
 
 Poiché i modelli di contenuto definiscono la struttura del contenuto, è necessario sapere quali campi dei modelli devono essere tradotti. In genere si lavora con l’architetto dei contenuti per deciderlo. Per sfogliare i campi dei modelli di contenuto, effettua le seguenti operazioni.
 
-1. Accedi a **Strumenti** > **Risorse** > **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti** > **Assets** > **Modelli per frammenti di contenuto**.
 1. I modelli per frammenti di contenuto sono generalmente memorizzati in una struttura di cartelle. Fai clic sulla cartella del progetto.
 1. I modelli sono elencati. Fai clic sul modello per visualizzare i dettagli.
    ![Modelli per frammenti di contenuto](assets/content-fragment-models.png)
@@ -92,11 +92,11 @@ Poiché i modelli di contenuto definiscono la struttura del contenuto, è necess
 1. Fate clic su uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
    ![Dettaglio dell’editor modello dei frammenti di contenuto](assets/content-fragment-model-editor-detail.png)
 
-Prendi nota del campo **Nome proprietà** per tutti i campi da tradurre. Queste informazioni saranno necessarie più avanti nel percorso. Questi **Nome proprietà** s sono tenuti a informare l’AEM su quali campi del contenuto devono essere tradotti.
+Prendi nota del campo **Nome proprietà** per tutti i campi che devono essere tradotti. Queste informazioni saranno necessarie più avanti nel percorso. Questi **Nome proprietà** sono necessari per informare l&#39;AEM su quali campi del contenuto devono essere tradotti.
 
 >[!TIP]
 >
->In genere l’architetto dei contenuti fornisce allo specialista della traduzione **Nome proprietà** s di tutti i campi necessari per la traduzione. Questi nomi di campo sono necessari per una fase successiva del percorso. Le fasi precedenti sono fornite per la comprensione dello specialista della traduzione.
+>In genere l&#39;architetto dei contenuti fornisce allo specialista della traduzione **Nome proprietà** di tutti i campi necessari per la traduzione. Questi nomi di campo sono necessari per una fase successiva del percorso. Le fasi precedenti sono fornite per la comprensione dello specialista della traduzione.
 
 ### Frammenti di contenuto {#content-fragments}
 
@@ -183,7 +183,7 @@ Ora cha hai completato questa parte del percorso di traduzione headless, dovrest
 * Avere compreso come AEM archivia il contenuto headless.
 * conoscere gli strumenti di traduzione di AEM.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Configurare l’integrazione della traduzione](configure-connector.md) dove imparerai a collegare l’AEM a un servizio di traduzione.|
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM consultando il documento [Configura l&#39;integrazione della traduzione](configure-connector.md) dove verrà illustrato come connettere AEM a un servizio di traduzione.|
 
 ## Risorse aggiuntive {#additional-resources}
 

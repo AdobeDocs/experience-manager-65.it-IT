@@ -21,12 +21,12 @@ I flussi di lavoro AEM incentrati su Forms consentono di automatizzare i process
 Un flusso di lavoro incentrato sui moduli può essere attivato o avviato tramite uno dei seguenti metodi:
 
 * Invio di una domanda dalla casella in entrata AEM
-* Presentazione di una domanda da parte dell’AEM [!DNL Forms] App
+* Invio di un&#39;applicazione dall&#39;app [!DNL Forms] dell&#39;AEM
 * Invio di un modulo adattivo
 * Utilizzo di una cartella controllata
 * Invio di una comunicazione interattiva o di una lettera
 
-Per ulteriori informazioni sui flussi di lavoro e le funzionalità dell’AEM incentrati su Forms, consulta [Flusso di lavoro incentrato su Forms su OSGi](/help/forms/using/aem-forms-workflow.md).
+Per ulteriori informazioni sui flussi di lavoro e le funzionalità dell&#39;AEM incentrati su Forms, vedere [Flusso di lavoro incentrato su Forms in OSGi](/help/forms/using/aem-forms-workflow.md).
 
 ## Dati utente e archivi dati {#user-data-and-data-stores}
 
@@ -46,24 +46,24 @@ I percorsi predefiniti dell’archivio in cui risiedono il payload, le bozze e l
    <td><b>AEM 6.3 [!DNL Forms]</b></td>
   </tr>
   <tr>
-   <td><strong>Flusso di lavoro <br /> istanza</strong></td>
-   <td>/var/workflow/instances/[id_server]/&lt;date&gt;/[istanza-flusso di lavoro]/</td>
+   <td><strong>Istanza <br /> del flusso di lavoro</strong></td>
+   <td>/var/workflow/instances/[server_id]/&lt;data&gt;/[workflow-instance]/</td>
    <td>/etc/workflow/instances/[server_id]/[data]/[workflow-instance]/</td>
   </tr>
   <tr>
    <td><strong>Payload</strong></td>
-   <td>/var/fd/dashboard/payload/[id_server]/[data]/<br /> [payload-id]/</td>
-   <td>/etc/fd/dashboard/payload/[id_server]/[data]/<br /> [payload-id]/</td>
+   <td>/var/fd/dashboard/payload/[id_server]/[data]/<br /> [id-payload]/</td>
+   <td>/etc/fd/dashboard/payload/[id_server]/[data]/<br /> [id-payload]/</td>
   </tr>
   <tr>
    <td><strong>Bozze</strong></td>
-   <td>/var/fd/dashboard/instances/[id_server]/<br /> [data]/[workflow-instance]/bozza/[workitem]/</td>
-   <td>/etc/fd/dashboard/instances/[id_server]/<br /> [data]/[workflow-instance]/bozza/[workitem]/</td>
+   <td>/var/fd/dashboard/instances/[id_server]/<br /> [data]/[istanza-flusso di lavoro]/draft/[elemento_lavoro]/</td>
+   <td>/etc/fd/dashboard/instances/[id_server]/<br /> [data]/[istanza-flusso di lavoro]/draft/[elemento_lavoro]/</td>
   </tr>
   <tr>
    <td><strong>Cronologia</strong></td>
-   <td>/var/fd/dashboard/instances/[id_server]/<br /> [data]/[workflow_instance]/history/</td>
-   <td>/etc/fd/dashboard/instances/[id_server]/<br /> [data]/[workflow_instance]/history/</td>
+   <td>/var/fd/dashboard/instances/[id_server]/<br /> [data]/[istanza_flusso di lavoro]/history/</td>
+   <td>/etc/fd/dashboard/instances/[id_server]/<br /> [data]/[istanza_flusso di lavoro]/history/</td>
   </tr>
  </tbody>
 </table>
@@ -74,16 +74,16 @@ Puoi accedere ed eliminare i dati utente da un’istanza del flusso di lavoro ne
 
 Tuttavia, non è possibile identificare o i risultati possono essere ambigui quando si identificano i flussi di lavoro associati a un iniziatore nei seguenti scenari:
 
-* **Flusso di lavoro attivato tramite una cartella controllata**: un’istanza di flusso di lavoro non può essere identificata utilizzando il relativo iniziatore se il flusso di lavoro viene attivato da una cartella controllata. In questo caso, le informazioni utente vengono codificate nei dati memorizzati.
-* **Flusso di lavoro avviato dall&#39;istanza AEM di pubblicazione**: tutte le istanze del flusso di lavoro vengono create utilizzando un utente del servizio quando moduli adattivi, comunicazioni interattive o lettere vengono inviati dall’istanza di pubblicazione dell’AEM. In questi casi, il nome utente dell’utente connesso non viene acquisito nei dati dell’istanza del flusso di lavoro.
+* **Flusso di lavoro attivato tramite una cartella controllata**: impossibile identificare un&#39;istanza del flusso di lavoro utilizzando il relativo iniziatore se il flusso di lavoro è attivato da una cartella controllata. In questo caso, le informazioni utente vengono codificate nei dati memorizzati.
+* **Flusso di lavoro avviato dall&#39;istanza AEM di pubblicazione**: tutte le istanze del flusso di lavoro vengono create utilizzando un utente del servizio quando moduli adattivi, comunicazioni interattive o lettere vengono inviati dall&#39;istanza di pubblicazione AEM. In questi casi, il nome utente dell’utente connesso non viene acquisito nei dati dell’istanza del flusso di lavoro.
 
 ### Accedere ai dati utente {#access}
 
 Per identificare e accedere ai dati utente memorizzati per un’istanza del flusso di lavoro, effettua le seguenti operazioni:
 
-1. Nell’istanza di authoring dell’AEM, vai a `https://'[server]:[port]'/crx/de` e passa a **[!UICONTROL Strumenti > Query]**.
+1. Nell&#39;istanza dell&#39;autore AEM, vai a `https://'[server]:[port]'/crx/de` e passa a **[!UICONTROL Strumenti > Query]**.
 
-   Seleziona **[!UICONTROL SQL2]** dal **[!UICONTROL Tipo]** a discesa.
+   Selezionare **[!UICONTROL SQL2]** dal menu a discesa **[!UICONTROL Tipo]**.
 
 1. A seconda delle informazioni disponibili, esegui una delle seguenti query:
 
@@ -97,7 +97,7 @@ Per identificare e accedere ai dati utente memorizzati per un’istanza del flus
 
    La query restituisce la posizione di tutte le istanze del flusso di lavoro per l&#39;iniziatore del flusso di lavoro specificato o l&#39;assegnatario del flusso di lavoro corrente.
 
-   Ad esempio, la query seguente restituisce il percorso di due istanze del flusso di lavoro dal `/var/workflow/instances` nodo il cui iniziatore flusso di lavoro è `srose`.
+   Ad esempio, la query seguente restituisce il percorso di due istanze del flusso di lavoro dal nodo `/var/workflow/instances` il cui iniziatore del flusso di lavoro è `srose`.
 
    ![workflow-instance](assets/workflow-instance.png)
 
@@ -105,9 +105,9 @@ Per identificare e accedere ai dati utente memorizzati per un’istanza del flus
 
    ![stato](assets/status.png)
 
-1. Nel nodo dell’istanza del flusso di lavoro, passa a `data/payload/`. Il `path` memorizza il percorso del payload per l’istanza del flusso di lavoro. Puoi passare al percorso per accedere ai dati memorizzati nel payload.
+1. Nel nodo dell&#39;istanza del flusso di lavoro, passare a `data/payload/`. La proprietà `path` memorizza il percorso del payload per l&#39;istanza del flusso di lavoro. Puoi passare al percorso per accedere ai dati memorizzati nel payload.
 
-   ![payload-path](assets/payload-path.png)
+   ![percorso-payload](assets/payload-path.png)
 
 1. Passare alle posizioni per le bozze e la cronologia per l&#39;istanza del flusso di lavoro.
 
@@ -121,38 +121,38 @@ Per identificare e accedere ai dati utente memorizzati per un’istanza del flus
 
    >[!NOTE]
    >
-   >AEM [!DNL Forms] l’app memorizza anche i dati in modalità offline. È possibile che i dati di un’istanza del flusso di lavoro vengano memorizzati localmente su singoli dispositivi e vengano inviati a [!DNL Forms] quando l&#39;app si sincronizza con il server.
+   >L&#39;app AEM [!DNL Forms] memorizza anche i dati in modalità offline. È possibile che i dati di un&#39;istanza del flusso di lavoro siano memorizzati localmente su singoli dispositivi e vengano inviati al server [!DNL Forms] quando l&#39;app si sincronizza con il server.
 
 ### Elimina dati utente {#delete-user-data}
 
 Per eliminare i dati utente dalle istanze del flusso di lavoro, è necessario essere un amministratore AEM ed effettuare le seguenti operazioni:
 
-1. Segui le istruzioni in [Accedere ai dati utente](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) e prendono atto di quanto segue:
+1. Segui le istruzioni in [Accedi ai dati utente](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) e prendi nota di quanto segue:
 
    * Percorsi delle istanze del flusso di lavoro associate all’utente
    * Stato delle istanze del flusso di lavoro
    * Percorsi verso i payload per le istanze del flusso di lavoro
    * Percorsi delle bozze e cronologia delle istanze del flusso di lavoro
 
-1. Esegui questo passaggio per le istanze del flusso di lavoro in **IN ESECUZIONE**, **SOSPESO**, o **NON AGGIORNATO** stato:
+1. Esegui questo passaggio per le istanze del flusso di lavoro con stato **RUNNING**, **SUSPENDED** o **STALE**:
 
    1. Vai a `https://'[server]:[port]'/aem/start.html` e accedi con le credenziali di amministratore.
-   1. Accedi a **[!UICONTROL Strumenti > Flusso di lavoro > Istanze]**.
-   1. Seleziona le istanze di flusso di lavoro pertinenti per l’utente e seleziona **[!UICONTROL Termina]** per terminare le istanze in esecuzione.
+   1. Passa a **[!UICONTROL Strumenti > Flusso di lavoro> Istanze]**.
+   1. Selezionare le istanze di flusso di lavoro rilevanti per l&#39;utente e selezionare **[!UICONTROL Termina]** per terminare le istanze in esecuzione.
 
-      Per ulteriori informazioni sull’utilizzo delle istanze del flusso di lavoro, consulta [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md).
+      Per ulteriori informazioni sull&#39;utilizzo delle istanze del flusso di lavoro, vedere [Amministrazione delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md).
 
-1. Vai a [!DNL CRXDE Lite] , passa al percorso del payload per un’istanza di flusso di lavoro ed elimina il `payload` nodo.
-1. Passare al percorso delle bozze per un&#39;istanza del flusso di lavoro ed eliminare `draft` nodo.
-1. Passare al percorso della cronologia per un&#39;istanza del flusso di lavoro ed eliminare `history` nodo.
-1. Passa al percorso dell’istanza del flusso di lavoro per un’istanza del flusso di lavoro ed elimina il `[workflow-instance-ID]` per il flusso di lavoro.
+1. Vai alla console [!DNL CRXDE Lite], passa al percorso del payload per un&#39;istanza del flusso di lavoro ed elimina il nodo `payload`.
+1. Passare al percorso delle bozze per un&#39;istanza del flusso di lavoro ed eliminare il nodo `draft`.
+1. Passare al percorso della cronologia per un&#39;istanza del flusso di lavoro ed eliminare il nodo `history`.
+1. Passare al percorso dell&#39;istanza del flusso di lavoro per un&#39;istanza del flusso di lavoro ed eliminare il nodo `[workflow-instance-ID]` per il flusso di lavoro.
 
    >[!NOTE]
    >
    >Se si elimina il nodo dell’istanza del flusso di lavoro, verrà rimossa l’istanza del flusso di lavoro per tutti i partecipanti al flusso di lavoro.
 
 1. Ripeti i passaggi da 2 a 6 per tutte le istanze del flusso di lavoro identificate per un utente.
-1. Identificare ed eliminare i dati offline relativi alle bozze e ai documenti inviati dall’AEM [!DNL Forms] per evitare l’invio al server, utilizza la posta in uscita dei partecipanti al flusso di lavoro.
+1. Identificare ed eliminare i dati relativi alle bozze e agli invii non in linea dalla cartella Posta in uscita dell&#39;app [!DNL Forms] dell&#39;AEM dei partecipanti al flusso di lavoro per evitare l&#39;invio al server.
 
 Puoi inoltre utilizzare le API per accedere e rimuovere nodi e proprietà. Per ulteriori informazioni, consulta i seguenti documenti.
 

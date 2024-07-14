@@ -51,7 +51,7 @@ Ad esempio, se si confrontano le versioni, la versione corrente viene visualizza
 
 L’origine di entrambe le pagine viene visualizzata in modo chiaro nella barra dell’intestazione nella parte superiore della finestra del browser.
 
-![Origine mostrata nell’intestazione](assets/chlimage_1-109.png)
+![Source mostrato nell&#39;intestazione](assets/chlimage_1-109.png)
 
 La differenza rileva le modifiche apportate a livello di componente e HTML. Gli elementi che sono stati modificati sono evidenziati con colori diversi.
 
@@ -77,7 +77,7 @@ Per concentrarti su un contenuto particolare, puoi fare clic sull’icona a sche
 
 Il lato selezionato occupa l’intera finestra, ma nella parte superiore rimane visualizzata la barra che consente di alternare tra le due pagine.
 
-![La barra in alto consente di passare da una pagina all’altra](assets/chlimage_1-110.png)
+![Barra nella parte superiore consente di passare da una pagina all&#39;altra](assets/chlimage_1-110.png)
 
 Per chiudere la visualizzazione a schermo intero, fai clic sull’icona per uscire dalla modalità a tutto schermo.
 
@@ -101,4 +101,4 @@ In alcune situazioni, il confronto delle differenze della pagina potrebbe non es
 
 >[!NOTE]
 >
->Per ulteriori dettagli sul funzionamento del meccanismo di differenze tra pagine e sulle limitazioni che possono influenzare tale meccanismo, vedi [documentazione per sviluppatori](/help/sites-developing/pagediff.md) di questa funzione.
+>Per ulteriori dettagli sul funzionamento del meccanismo di differenze tra pagine e sulle limitazioni che possono influenzare tale meccanismo, consulta la [documentazione per gli sviluppatori](/help/sites-developing/pagediff.md) di questa funzione.

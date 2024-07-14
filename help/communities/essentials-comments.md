@@ -27,12 +27,12 @@ Il componente commenti stabilisce un sistema di commenti tale che ogni singolo p
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td> social/commons/components/hbs/commenti</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
-   <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td>
+   <td>Sì - le proprietà sono modificabili in modalità <i>progettazione </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -48,7 +48,7 @@ Il componente commenti stabilisce un sistema di commenti tale che ogni singolo p
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td> Consulta <a href="comments.md">Utilizzo dei commenti</a></td>
+   <td> Vedi <a href="comments.md">Utilizzo dei commenti</a></td>
   </tr>
  </tbody>
 </table>
@@ -78,7 +78,7 @@ Ciò si applica a qualsiasi componente che estende un sistema di commenti.
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API Commenti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [API commenti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
 * [Endpoint commenti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
@@ -89,13 +89,13 @@ Ciò si applica a qualsiasi componente che estende un sistema di commenti.
 Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
 Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell&#39;UGC nell&#39;archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
-* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi ed esempi dell&#39;utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.
+* [Refactoring di SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti ai metodi di utilità SRP correnti.

@@ -79,7 +79,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
    ![Sistema di stili per l’autore](assets/style-system-author.png)
 
-1. Fai clic su **Stili** sulla barra degli strumenti del **Elenco** per aprire il menu degli stili e modificare l&#39;aspetto del componente.
+1. Fare clic sul pulsante **Stili** sulla barra degli strumenti del componente **Elenco** per aprire il menu degli stili e modificare l&#39;aspetto del componente.
 
    ![Selezione degli stili](assets/style-system-author2.png)
 
@@ -89,7 +89,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 ### Autore di modelli  {#as-a-template-author}
 
-1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello della pagina tramite **Informazioni pagina > Modifica modello**.
+1. Durante la modifica della pagina mastro in lingua inglese di WKND all&#39;indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modificare il modello della pagina tramite **Informazioni pagina > Modifica modello**.
 
    ![Modifica modello](assets/style-system-edit-template.png)
 
@@ -110,7 +110,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Le classi CSS (e l’eventuale JavaScript necessario) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [Librerie client](/help/sites-developing/clientlibs.md) al lavoro.
+>Le classi CSS (ed eventuali JavaScript necessarie) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [Librerie client](/help/sites-developing/clientlibs.md) per funzionare.
 
 ## Configurazione {#setup}
 
@@ -159,4 +159,4 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 
 Questa capacità di definire i nomi degli stili è utile per i componenti molto generici, come Contenitore di layout, o il componente Frammento di contenuto, per attribuire loro un significato aggiuntivo.
 
-Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>`e così via.
+Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>` e così via.

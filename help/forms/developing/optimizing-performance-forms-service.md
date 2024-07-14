@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Ottimizzazione delle prestazioni del servizio Forms {#optimizing-the-performance-of-theforms-service}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 ## Ottimizzazione delle prestazioni del servizio Forms {#optimizing-the-performance-of-the-forms-service}
 
-Durante il rendering di un modulo è possibile impostare opzioni di runtime che ottimizzano le prestazioni del servizio Forms. Un&#39;altra attività che è possibile eseguire per migliorare le prestazioni del servizio Forms consiste nell&#39;archiviare i file XDP nell&#39;archivio. Tuttavia, questa sezione non descrive come eseguire questa attività. (vedere [Richiamare un servizio utilizzando una libreria client Java](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library).)
+Durante il rendering di un modulo è possibile impostare opzioni di runtime che ottimizzano le prestazioni del servizio Forms. Un&#39;altra attività che è possibile eseguire per migliorare le prestazioni del servizio Forms consiste nell&#39;archiviare i file XDP nell&#39;archivio. Tuttavia, questa sezione non descrive come eseguire questa attività. (Vedi [Chiamata di un servizio tramite una libreria client Java](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library).)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -45,19 +45,19 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Forms**
 
-Prima di poter eseguire a livello di programmazione un&#39;operazione API client del servizio Forms, è necessario creare un client del servizio Forms. Se utilizzi l’API Java, crea un’ `FormsServiceClient` oggetto. Se utilizzi l’API del servizio web Forms, crea un’ `FormsService` oggetto.
+Prima di poter eseguire a livello di programmazione un&#39;operazione API client del servizio Forms, è necessario creare un client del servizio Forms. Se si utilizza l&#39;API Java, creare un oggetto `FormsServiceClient`. Se si utilizza l&#39;API del servizio Web Forms, creare un oggetto `FormsService`.
 
-**Impostazione delle opzioni di runtime delle prestazioni**
+**Impostare le opzioni di runtime delle prestazioni**
 
 Per migliorare le prestazioni del servizio Forms, è possibile impostare le seguenti opzioni di runtime delle prestazioni:
 
-* **Memorizzazione nella cache dei moduli**: è possibile memorizzare in cache un modulo di cui è stato eseguito il rendering come PDF nella cache del server. Ogni modulo viene memorizzato nella cache dopo essere stato generato per la prima volta. In un rendering successivo, se il modulo memorizzato in cache è più recente della marca temporale del progetto del modulo, il modulo viene recuperato dalla cache. La memorizzazione nella cache dei moduli migliora le prestazioni del servizio Forms in quanto non è necessario recuperare la struttura del modulo da un archivio.
+* **Memorizzazione in cache dei moduli**: è possibile memorizzare in cache un modulo di cui è stato eseguito il rendering come PDF nella cache del server. Ogni modulo viene memorizzato nella cache dopo essere stato generato per la prima volta. In un rendering successivo, se il modulo memorizzato in cache è più recente della marca temporale del progetto del modulo, il modulo viene recuperato dalla cache. La memorizzazione nella cache dei moduli migliora le prestazioni del servizio Forms in quanto non è necessario recuperare la struttura del modulo da un archivio.
 * Il rendering delle guide dei moduli (obsoleto) potrebbe richiedere più tempo rispetto ad altri tipi di trasformazione. È consigliabile memorizzare nella cache le guide dei moduli (obsoleto) per migliorare le prestazioni.
-* **Opzione autonoma**: se non è necessario che il servizio Forms esegua calcoli lato server, è possibile impostare l’opzione Standalone su `true`, che comporta il rendering dei moduli senza informazioni sullo stato. Le informazioni sullo stato sono necessarie se si desidera eseguire il rendering di un modulo interattivo a un utente finale che immette le informazioni nel modulo e lo invia nuovamente al servizio Forms. Il servizio Forms esegue quindi un&#39;operazione di calcolo e restituisce il modulo all&#39;utente con i risultati visualizzati nel modulo. Se un modulo senza informazioni sullo stato viene inviato nuovamente al servizio Forms, saranno disponibili solo i dati XML e non verranno eseguiti calcoli lato server.
-* **Linearized PDF**: file PDF linearizzato organizzato per consentire un accesso incrementale efficiente in un ambiente di rete. Il file PDF è un PDF valido sotto tutti gli aspetti ed è compatibile con tutti i visualizzatori esistenti e con altre applicazioni PDF. In altre parole, un PDF linearizzato può essere visualizzato mentre è ancora in fase di download.
+* **Opzione autonoma**: se non è necessario che il servizio Forms esegua i calcoli lato server, è possibile impostare l&#39;opzione Autonoma su `true`, in modo che venga eseguito il rendering dei moduli senza informazioni sullo stato. Le informazioni sullo stato sono necessarie se si desidera eseguire il rendering di un modulo interattivo a un utente finale che immette le informazioni nel modulo e lo invia nuovamente al servizio Forms. Il servizio Forms esegue quindi un&#39;operazione di calcolo e restituisce il modulo all&#39;utente con i risultati visualizzati nel modulo. Se un modulo senza informazioni sullo stato viene inviato nuovamente al servizio Forms, saranno disponibili solo i dati XML e non verranno eseguiti calcoli lato server.
+* **PDF linearizzato**: un file PDF linearizzato è organizzato per consentire un accesso incrementale efficiente in un ambiente di rete. Il file PDF è un PDF valido sotto tutti gli aspetti ed è compatibile con tutti i visualizzatori esistenti e con altre applicazioni PDF. In altre parole, un PDF linearizzato può essere visualizzato mentre è ancora in fase di download.
 * Questa opzione non migliora le prestazioni quando viene eseguito il rendering di un modulo PDF sul client.
-* **Opzione GuideRSL**: abilita la generazione della Guida ai moduli (obsoleta) utilizzando le librerie condivise in fase di esecuzione. Ciò significa che la prima richiesta scaricherà un file SWF più piccolo, oltre a librerie condivise più grandi memorizzate nella cache del browser. Per ulteriori informazioni, consulta RSL nella documentazione di Flex.
-* Puoi anche migliorare le prestazioni del servizio Forms eseguendo il rendering di un modulo sul client. (vedere [Rendering di Forms nel client](/help/forms/developing/rendering-forms-client.md).)
+* **Opzione GuideRSL**: abilita la generazione della Guida ai moduli (obsoleta) utilizzando le librerie condivise di runtime. Ciò significa che la prima richiesta scaricherà un file SWF più piccolo, oltre a librerie condivise più grandi memorizzate nella cache del browser. Per ulteriori informazioni, consulta RSL nella documentazione di Flex.
+* Puoi anche migliorare le prestazioni del servizio Forms eseguendo il rendering di un modulo sul client. (Vedi [Rendering di Forms nel client](/help/forms/developing/rendering-forms-client.md).)
 
 **Rendering del modulo**
 
@@ -91,34 +91,34 @@ Esegui il rendering di un modulo con prestazioni ottimizzate utilizzando l’API
 
 1. Creare un oggetto API client di Forms
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `FormsServiceClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Impostazione delle opzioni di runtime delle prestazioni
 
-   * Creare un `PDFFormRenderSpec` mediante il costruttore.
-   * Imposta l’opzione cache del modulo richiamando `PDFFormRenderSpec` dell&#39;oggetto `setCacheEnabled` metodo e passaggio `true`.
-   * Impostare l&#39;opzione linearizzato richiamando `PDFFormRenderSpec` dell&#39;oggetto `setLinearizedPDF` metodo e passaggio `true.`
+   * Creare un oggetto `PDFFormRenderSpec` utilizzando il relativo costruttore.
+   * Impostare l&#39;opzione cache modulo richiamando il metodo `setCacheEnabled` dell&#39;oggetto `PDFFormRenderSpec` e passando `true`.
+   * Impostare l&#39;opzione linearizzata richiamando il metodo `setLinearizedPDF` dell&#39;oggetto `PDFFormRenderSpec` e passando `true.`
 
 1. Rendering del modulo
 
-   Richiama `FormsServiceClient` dell&#39;oggetto `renderPDFForm` e trasmettere i seguenti valori:
+   Richiama il metodo `renderPDFForm` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file.
-   * A `com.adobe.idp.Document` oggetto contenente dati da unire con il modulo. Se non desideri unire i dati, passa un campo vuoto `com.adobe.idp.Document` oggetto.
-   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime per migliorare le prestazioni.
-   * A `URLSpec` oggetto contenente valori URI richiesti dal servizio Forms.
-   * A `java.util.HashMap` oggetto che memorizza gli allegati. Questo è un parametro facoltativo e puoi specificare `null` se non si desidera allegare file al modulo.
+   * Oggetto `com.adobe.idp.Document` contenente dati da unire al modulo. Se non si desidera unire i dati, passare un oggetto `com.adobe.idp.Document` vuoto.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime per migliorare le prestazioni.
+   * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
+   * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
 
-   Il `renderPDFForm` il metodo restituisce un `FormsResult` oggetto contenente un flusso di dati modulo che deve essere scritto nel browser web client.
+   Il metodo `renderPDFForm` restituisce un oggetto `FormsResult` che contiene un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati modulo al browser web client.
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
-   * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` dell&#39;oggetto `getInputStream` metodo.
-   * Creare una matrice di byte e popolarla con il flusso di dati del modulo richiamando `InputStream` dell&#39;oggetto `read`e passando la matrice di byte come argomento.
-   * Richiama `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per inviare un flusso di dati modulo al browser Web client.
+   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+   * Creare un oggetto `java.io.InputStream` richiamando il metodo `getInputStream` dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare una matrice di byte e popolarla con il flusso di dati del modulo richiamando il metodo `read` dell&#39;oggetto `InputStream` e passando la matrice di byte come argomento.
+   * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.ServletOutputStream` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
 **Consulta anche**
 
@@ -139,38 +139,38 @@ Esegui il rendering di un modulo con prestazioni ottimizzate utilizzando l’API
 
 1. Creare un oggetto API client di Forms
 
-   Creare un `FormsService` e impostare i valori di autenticazione.
+   Creare un oggetto `FormsService` e impostare i valori di autenticazione.
 
 1. Impostazione delle opzioni di runtime delle prestazioni
 
-   * Creare un `PDFFormRenderSpec` mediante il costruttore.
-   * Imposta l’opzione cache del modulo richiamando `PDFFormRenderSpec` dell&#39;oggetto `setCacheEnabled` e passando true.
-   * Impostare l&#39;opzione autonoma richiamando `PDFFormRenderSpec` dell&#39;oggetto `setStandAlone` e passando true.
-   * Impostare l&#39;opzione linearizzato richiamando `PDFFormRenderSpec` dell&#39;oggetto `setLinearizedPDF` e passando true.
+   * Creare un oggetto `PDFFormRenderSpec` utilizzando il relativo costruttore.
+   * Impostare l&#39;opzione cache modulo richiamando il metodo `setCacheEnabled` dell&#39;oggetto `PDFFormRenderSpec` e passando true.
+   * Impostare l&#39;opzione autonoma richiamando il metodo `setStandAlone` dell&#39;oggetto `PDFFormRenderSpec` e passando true.
+   * Impostare l&#39;opzione linearizzata richiamando il metodo `setLinearizedPDF` dell&#39;oggetto `PDFFormRenderSpec` e passando true.
 
 1. Rendering del modulo
 
-   Richiama `FormsService` dell&#39;oggetto `renderPDFForm` e trasmettere i seguenti valori:
+   Richiama il metodo `renderPDFForm` dell&#39;oggetto `FormsService` e passa i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file.
-   * A `BLOB` oggetto contenente dati da unire con il modulo. Se non si desidera unire i dati, passare `null`.
-   * A `PDFFormRenderSpecc` oggetto che memorizza le opzioni di runtime.
-   * A `URLSpec` oggetto contenente valori URI richiesti dal servizio Forms.
-   * A `java.util.HashMap` oggetto che memorizza gli allegati. Questo è un parametro facoltativo e puoi specificare `null` se non si desidera allegare file al modulo.
-   * Un campo vuoto `com.adobe.idp.services.holders.BLOBHolder` oggetto popolato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato eseguito il rendering.
-   * Un campo vuoto `javax.xml.rpc.holders.LongHolder` oggetto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
-   * Un campo vuoto `javax.xml.rpc.holders.StringHolder` oggetto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
-   * Un campo vuoto `com.adobe.idp.services.holders.FormsResultHolder` oggetto che conterrà i risultati dell&#39;operazione.
+   * Oggetto `BLOB` contenente dati da unire al modulo. Se non si desidera unire i dati, passare `null`.
+   * Un oggetto `PDFFormRenderSpecc` che memorizza le opzioni di runtime.
+   * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
+   * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato eseguito il rendering.
+   * Oggetto `javax.xml.rpc.holders.LongHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
+   * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
+   * Oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.
 
-   Il `renderPDFForm` il metodo compila `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore di argomento con un flusso di dati del modulo che deve essere scritto nel browser web client.
+   Il metodo `renderPDFForm` popola l&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder` passato come ultimo valore di argomento con un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `FormResult` dell&#39;oggetto ottenendo il valore del `com.adobe.idp.services.holders.FormsResultHolder` dell&#39;oggetto `value` membro dati.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati modulo al browser web client.
-   * Creare un `BLOB` oggetto che contiene i dati del modulo richiamando `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-   * Creare una matrice di byte e popolarla richiamando il `BLOB` dell&#39;oggetto `getBinaryData` metodo. Questa attività assegna il contenuto del `FormsResult` alla matrice di byte.
-   * Richiama `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.
+   * Creare un oggetto `FormResult` ottenendo il valore del membro dati `value` dell&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per inviare un flusso di dati modulo al browser Web client.
+   * Creare un oggetto `BLOB` contenente dati del modulo richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+   * Creare una matrice di byte e popolarla richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` alla matrice di byte.
+   * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.http.HttpServletResponse` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
 **Consulta anche**
 

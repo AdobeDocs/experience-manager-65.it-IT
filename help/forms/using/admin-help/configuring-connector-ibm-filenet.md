@@ -41,8 +41,8 @@ IBM FileNet P8 Content Engine fornisce servizi software per la gestione dei cont
 
 1. Nell&#39;elenco Schema protezione credenziali selezionare uno dei seguenti livelli di protezione:
 
-   * **Cancella:** Invia credenziali in rete in modalità non protetta
-   * **Simmetrico:** Invia credenziali crittografate in rete
+   * **Cancella:** invia credenziali in rete in modalità non protetta
+   * **Simmetrico:** invia credenziali crittografate in rete
 
 1. Nella casella Percorso file di crittografia immettere il percorso del file di crittografia:
 
@@ -79,11 +79,11 @@ Se si immette un nome utente o una password errati durante la configurazione del
 
 Sono disponibili le seguenti opzioni:
 
-**Nome provider archivio corrente:** Nome del provider di servizi di repository corrente
+**Nome provider repository corrente:** Nome del provider di servizi repository corrente
 
-**Provider archivio IBM FileNet:** Rende il provider del repository FileNet il provider del repository. Questa opzione è obsoleta.
+**Provider repository IBM FileNet:** Imposta il provider del repository FileNet come provider del repository. Questa opzione è obsoleta.
 
-**provider di repository:** Rende il provider del repository nativo il provider del repository
+**provider del repository:** Imposta il provider del repository nativo come provider del repository
 
 >[!NOTE]
 >

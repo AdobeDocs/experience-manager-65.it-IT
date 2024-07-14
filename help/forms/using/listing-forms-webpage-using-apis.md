@@ -19,7 +19,7 @@ ht-degree: 1%
 
 AEM Forms fornisce un’API di ricerca basata su REST che gli sviluppatori web possono utilizzare per eseguire query e recuperare un set di moduli che soddisfano i criteri di ricerca. Puoi utilizzare le API per cercare i moduli in base a vari filtri. L’oggetto di risposta contiene attributi del modulo, proprietà e punti finali del rendering dei moduli.
 
-Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server all’indirizzo `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
+Per eseguire ricerche nei moduli tramite l&#39;API REST, invia una richiesta GET al server all&#39;indirizzo `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
 
 ## Parametri di query {#query-parameters}
 
@@ -31,13 +31,13 @@ Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server a
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Specifica la funzione da chiamare. Per cercare i moduli, imposta il valore di <code>func </code>attribuire a <code>searchForms</code>.</p> <p>Ad esempio: <code class="code">
+   <td><p>Specifica la funzione da chiamare. Per cercare i moduli, impostare il valore dell'attributo <code>func </code> su <code>searchForms</code>.</p> <p>Ad esempio: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Questo parametro è obbligatorio.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Specifica il percorso dell'applicazione per la ricerca dei moduli. Per impostazione predefinita, l’attributo appPath cerca tutte le applicazioni disponibili a livello di nodo principale.<br /> </p> <p>È possibile specificare più percorsi di applicazione in una singola query di ricerca. Separare più percorsi con il carattere barra verticale (|). </p> </td>
+   <td><p>Specifica il percorso dell'applicazione per la ricerca dei moduli. Per impostazione predefinita, l'attributo appPath cerca tutte le applicazioni disponibili a livello di nodo principale.<br /> </p> <p>È possibile specificare più percorsi di applicazione in una singola query di ricerca. Separare più percorsi con il carattere barra verticale (|). </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
@@ -53,7 +53,7 @@ Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server a
     <ul>
      <li><strong>NO_RELATION</strong>: non recuperare le risorse correlate.</li>
      <li><strong>IMMEDIATO</strong>: recupera le risorse direttamente correlate ai risultati della ricerca.</li>
-     <li><strong>TUTTI</strong>: recupera le risorse direttamente e indirettamente correlate.</li>
+     <li><strong>ALL</strong>: recupera le risorse direttamente e indirettamente correlate.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -76,9 +76,9 @@ Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server a
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>Nell’esempio precedente, </p>
     <ul>
-     <li><strong>nome</strong>: specifica il nome della proprietà da cercare.</li>
-     <li><strong>valore</strong>: specifica il valore della proprietà da cercare.</li>
-     <li><strong>operatore</strong>: specifica l’operatore da applicare durante la ricerca. Sono supportati i seguenti operatori:
+     <li><strong>name</strong>: specifica il nome della proprietà da cercare.</li>
+     <li><strong>value</strong>: specifica il valore della proprietà da cercare.</li>
+     <li><strong>operator</strong>: specifica l'operatore da applicare durante la ricerca. Sono supportati i seguenti operatori:
       <ul>
        <li>EQ - Uguale a </li>
        <li>NEQ - Non uguale a</li>
@@ -104,17 +104,17 @@ Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server a
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>nome</strong>: specifica il nome della proprietà da utilizzare per ordinare i risultati della ricerca.</li>
+     <li><strong>name</strong>: specifica il nome della proprietà da utilizzare per ordinare i risultati della ricerca.</li>
      <li><strong>criteri</strong>: specifica l'ordine dei risultati. L'attributo order accetta i seguenti valori:
       <ul>
-       <li>ASC: utilizza ASC per disporre i risultati in ordine crescente.<br /> </li>
+       <li>ASC: utilizzare ASC per disporre i risultati in ordine crescente.<br /> </li>
        <li>DES: utilizza DES per disporre i risultati in ordine decrescente.</li>
       </ul> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Specifica se recuperare il contenuto binario. Il <code>includeXdp</code> l'attributo è applicabile per le attività di tipo <code>FORM</code>, <code>PDFFORM</code>, e <code>PRINTFORM</code>.</td>
+   <td>Specifica se recuperare il contenuto binario. L'attributo <code>includeXdp</code> è applicabile per le risorse di tipo <code>FORM</code>, <code>PDFFORM</code> e <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>

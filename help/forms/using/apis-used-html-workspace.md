@@ -1,6 +1,6 @@
 ---
 title: API utilizzate nell’area di lavoro di AEM Forms
-description: Java&trade pubblico; API JavaScript e metodi di LiveCycle AEM Forms Workspace, esposti per la personalizzazione e l’automazione.
+description: Java&amp pubblico;trade; API JavaScript e metodi di LiveCycle AEM Forms Workspace, esposti per la personalizzazione e l'automazione.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -265,7 +265,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>getProcessInstance<br /> </td>
    <td>ProcessManagementProcessService<br /> </td>
    <td>getProcessInstance<br /> </td>
-   <td>Recupera i dettagli di un’istanza del processo.<br /> </td>
+   <td>Recupera i dettagli di un'istanza del processo.<br /> </td>
   </tr>
   <tr>
    <td>getProcessInstances</td>
@@ -361,7 +361,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>getProperties</td>
    <td>WorkspacePropertyService</td>
    <td>getPropertiesAsMap</td>
-   <td>Restituisce tutte le proprietà di Workspace di un utente.</td>
+   <td>Restituisce tutte le proprietà Workspace di un utente.</td>
   </tr>
   <tr>
    <td>setProperty</td>

@@ -31,7 +31,7 @@ Un modo per chiamare l’applicazione Create Correspondence da un portale person
 * URL dei dati XML recuperati dall&#39;origine dati desiderata (utilizzando il parametro cmDataUrl).
 
 Ad esempio, il portale personalizzato prepara l’URL come\
-`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, che potrebbe essere l’href di un collegamento sul portale.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, che potrebbe essere il href da un collegamento sul portale.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Ad esempio, il portale personalizzato prepara l’URL come\
 
 ## Chiamata basata su dati in linea {#inline-data-based-invocation}
 
-Un altro modo (e più sicuro) per chiamare l’applicazione Create Correspondence potrebbe essere semplicemente di premere l’URL su https://&#39;[server]:[porta]&#39;/[contextPath]/aem/forms/createcorrespondence.html, durante l’invio di parametri e dati per richiamare l’applicazione Create Correspondence come richiesta POST (nascondendoli all’utente finale). Ciò significa anche che ora puoi trasmettere in linea i dati XML per l’applicazione Create Correspondence (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell’approccio precedente.
+Un altro modo (e più sicuro) per chiamare l&#39;applicazione Create Correspondence potrebbe essere quello di premere semplicemente l&#39;URL su https://&#39;[server]:[porta]&#39;/[contextPath]/aem/forms/createcorrespondence.html, mentre si inviano parametri e dati per chiamare l&#39;applicazione Create Correspondence come richiesta POST (nascondendoli all&#39;utente finale). Ciò significa anche che ora puoi trasmettere in linea i dati XML per l’applicazione Create Correspondence (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell’approccio precedente.
 
 ### Parametri per specificare la lettera {#parameters-for-specifying-letter}
 
@@ -66,7 +66,7 @@ L&#39;ordine dei parametri nella tabella specifica la preferenza dei parametri u
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>Dati XML da un file di origine utilizzando protocolli di base come cq, ftp, http o file.<br /> </td> 
+   <td>Dati XML da un file di origine utilizzando protocolli di base quali cq, ftp, http o file.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 

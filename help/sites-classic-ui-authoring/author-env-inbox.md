@@ -24,15 +24,15 @@ Puoi ricevere notifiche da varie aree dell’AEM, ad esempio notifiche su elemen
 Queste notifiche vengono ricevute in due caselle in entrata, separate dal tipo di notifica:
 
 * Nella sezione seguente viene descritta una casella in entrata in cui è possibile visualizzare le notifiche ricevute come risultato degli abbonamenti.
-* Una casella in entrata specializzata per gli elementi del flusso di lavoro è descritta in [Partecipazione ai flussi di lavoro](/help/sites-classic-ui-authoring/classic-workflows-participating.md) documento.
+* Nel documento [Partecipazione ai flussi di lavoro](/help/sites-classic-ui-authoring/classic-workflows-participating.md) è descritta una casella in entrata specializzata per gli elementi del flusso di lavoro.
 
 ## Visualizzazione delle notifiche {#viewing-your-notifications}
 
 Per visualizzare le notifiche:
 
-1. Apri la casella in entrata delle notifiche: in **Siti Web** , fai clic sul pulsante utente nell’angolo in alto a destra e seleziona **Casella in entrata notifica**.
+1. Apri la casella in entrata delle notifiche: nella console **Siti Web**, fai clic sul pulsante utente in alto a destra e seleziona **Casella in entrata delle notifiche**.
 
-   ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
+   ![schermata_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
    >[!NOTE]
    >
@@ -52,9 +52,9 @@ Per visualizzare le notifiche:
 
 Per iscriverti alle notifiche:
 
-1. Apri la casella in entrata delle notifiche: in **Siti Web** , fai clic sul pulsante utente nell’angolo in alto a destra e seleziona **Casella in entrata notifica**.
+1. Apri la casella in entrata delle notifiche: nella console **Siti Web**, fai clic sul pulsante utente in alto a destra e seleziona **Casella in entrata delle notifiche**.
 
-   ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
+   ![schermata_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
    >[!NOTE]
    >
@@ -63,18 +63,18 @@ Per iscriverti alle notifiche:
    >
    >`https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Clic **Configura...** nell’angolo in alto a sinistra per aprire la finestra di dialogo di configurazione.
+1. Fare clic su **Configura...** nell&#39;angolo superiore sinistro per aprire la finestra di dialogo di configurazione.
 
-   ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
+   ![schermata_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
 1. Seleziona il canale di notifica:
 
-   * **Casella in entrata**: le notifiche vengono visualizzate nella casella in entrata AEM.
-   * **E-mail**: le notifiche vengono inviate tramite e-mail all’indirizzo e-mail definito nel profilo utente.
+   * **Posta in arrivo**: le notifiche vengono visualizzate nella Posta in arrivo AEM.
+   * **E-mail**: le notifiche vengono inviate tramite e-mail all&#39;indirizzo e-mail definito nel profilo utente.
 
    >[!NOTE]
    >
-   >È necessario configurare alcune impostazioni per ricevere una notifica tramite e-mail. È inoltre possibile personalizzare il modello e-mail o aggiungere un modello e-mail per una nuova lingua. Consulta [Configurazione delle notifiche e-mail](/help/sites-administering/notification.md#configuringemailnotification) per configurare le notifiche e-mail in AEM.
+   >È necessario configurare alcune impostazioni per ricevere una notifica tramite e-mail. È inoltre possibile personalizzare il modello e-mail o aggiungere un modello e-mail per una nuova lingua. Consulta [Configurazione della notifica e-mail](/help/sites-administering/notification.md#configuringemailnotification) per configurare le notifiche e-mail in AEM.
 
 1. Seleziona le azioni di pagina per le quali inviare la notifica:
 
@@ -90,23 +90,23 @@ Quando una pagina viene eliminata o spostata, viene replicata automaticamente un
 
 1. Definisci i percorsi delle pagine per le quali riceverai una notifica:
 
-   * Clic **Aggiungi** per aggiungere una nuova riga alla tabella.
-   * Fai clic su **Percorso** e immettere il percorso, ad esempio: `/content/docs`.
+   * Fai clic su **Aggiungi** per aggiungere una nuova riga alla tabella.
+   * Fare clic sulla cella della tabella **Percorso** e immettere il percorso, ad esempio `/content/docs`.
 
-   * Da notificare per tutte le pagine appartenenti alla sottostruttura, imposta **Esatto?** a **No**.
-Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso, imposta **Esatto?** a **Sì**.
+   * Per ricevere una notifica per tutte le pagine appartenenti alla sottostruttura, impostare **Esatto?Da** a **No**.
+Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso, impostare **Exact?Da** a **Sì**.
 
-   * Per consentire la regola, imposta **Regola** a **Consenti**. Se impostato su **Rifiuta**, la regola viene negata ma non rimossa e può essere consentita in un secondo momento.
+   * Per consentire la regola, impostare **Rule** su **Allow**. Se impostato su **Nega**, la regola viene negata ma non rimossa e può essere consentita in un secondo momento.
 
    Per rimuovere una definizione, selezionare la riga facendo clic su una cella di tabella e fare clic su **Elimina**.
 
-1. Clic **OK** per salvare la configurazione.
+1. Fare clic su **OK** per salvare la configurazione.
 
 ## Elaborazione delle notifiche {#processing-your-notifications}
 
-Se si è scelto di ricevere notifiche nella cartella Posta in arrivo AEM, la cartella Posta in arrivo viene riempita con le notifiche. È possibile [visualizzare le notifiche](#viewing-your-notifications), quindi seleziona le notifiche richieste per:
+Se si è scelto di ricevere notifiche nella cartella Posta in arrivo AEM, la cartella Posta in arrivo viene riempita con le notifiche. Puoi [visualizzare le notifiche](#viewing-your-notifications), quindi selezionare le notifiche necessarie per:
 
-* Accettarlo facendo clic su **Approva**: il valore in **Letto** è impostata su **true**.
+* Accettarlo facendo clic su **Approve**: il valore nella colonna **Read** è impostato su **true**.
 
 * Eliminarla facendo clic su **Elimina**.
 

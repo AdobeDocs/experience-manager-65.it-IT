@@ -34,13 +34,13 @@ Ciò significa che:
 >Il framework eCommerce può essere utilizzato con:
 >
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
->* [COMMERCE CLOUD SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+>* [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
 >
 
 >[!CAUTION]
 >
->Il [Framework di integrazione eCommerce](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) è un componente aggiuntivo AEM.
+>[eCommerce Integration Framework](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) è un componente aggiuntivo AEM.
 >
 >Il vostro rappresentante commerciale è in grado di fornire tutti i dettagli, secondo il motore appropriato.
 
@@ -78,7 +78,7 @@ Per ottimizzare il funzionamento, sia l’AEM che il motore di eCommerce si conc
 
       * Informazioni sul prodotto dal database.
       * Gestione varianti prodotto.
-      * Gestione ordini.
+      * Order Management.
       * ERP (Enterprise Resource Planning).
       * Cerca nelle informazioni sul prodotto.
 
@@ -126,9 +126,9 @@ L’eCommerce dell’AEM è implementato con un motore di eCommerce:
 >
 >L’eCommerce AEM implementato all’interno dell’AEM utilizzando lo sviluppo generico basato sul JCR è:
 >
->* Un esempio di e-commerce indipendente e nativo per l’AEM che illustra l’utilizzo dell’API. Questa può essere utilizzata per controllare i dati di prodotto, i carrelli e il pagamento con le campagne di marketing e visualizzazione dati esistenti. In questo caso, il database dei prodotti viene memorizzato nel repository nativo dell’AEM (implementazione Adobe di [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* Un esempio di e-commerce indipendente e nativo per l’AEM che illustra l’utilizzo dell’API. Questa può essere utilizzata per controllare i dati di prodotto, i carrelli e il pagamento con le campagne di marketing e visualizzazione dati esistenti. In questo caso, il database dei prodotti viene archiviato nell&#39;archivio nativo dell&#39;AEM (implementazione Adobe di [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
 >
->  L&#39;installazione standard AEM contiene le nozioni di base [implementazione eCommerce generica](/help/commerce/cif-classic/administering/generic.md).
+>  L&#39;installazione AEM standard contiene le nozioni di base dell&#39;[implementazione eCommerce generica](/help/commerce/cif-classic/administering/generic.md).
 
 ### Provider Commerce {#commerce-providers}
 
@@ -150,14 +150,14 @@ Anche se in genere un progetto deve sviluppare un proprio provider di e-commerce
 >
 >Gli importatori di Geometrixx utilizzano file CSV; esiste una descrizione dello schema accettato (con le proprietà personalizzate consentite) nei commenti sopra la loro implementazione.
 
-Il [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (tramite [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) un elenco delle implementazioni di [Importazione prodotti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [ImportazioneBlueprintCatalogo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfacce. Questi sono elencati nella **Importatore/Provider Commerce** campo a discesa della procedura guidata di importazione (utilizzando `commerceProvider` come nome).
+[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (tramite [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) un elenco di implementazioni delle interfacce [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html). Questi sono elencati nel campo a discesa **Importer/Commerce Provider** della procedura guidata di importazione (utilizzando la proprietà `commerceProvider` come nome).
 
 Quando uno specifico provider di importazione/commercio è disponibile dal menu a discesa, tutti i dati supplementari necessari devono essere definiti (a seconda del tipo di importatore) in:
 
 * `/apps/commerce/gui/content/catalogs/importblueprintswizard/importers`
 * `/apps/commerce/gui/content/products/importproductswizard/importers`
 
-La cartella nella cartella appropriata `importers` la cartella deve corrispondere al nome dell’importazione, ad esempio:
+La cartella nella cartella `importers` appropriata deve corrispondere al nome dell&#39;importazione, ad esempio:
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
@@ -198,17 +198,17 @@ Anche se la posizione effettiva può dipendere dall’implementazione; ad esempi
 
 #### Categorie strutturali e di marketing {#structural-versus-marketing-categories}
 
-Se le due categorie seguenti possono essere differenziate, questo ti consente di specificare chiaramente gli URL con una struttura significativa (strutture di `cq:Page` e quindi molto vicino alla classica gestione dei contenuti AEM):
+Se le due categorie seguenti possono essere differenziate, questo consente di specificare URL chiari con una struttura significativa (alberi di `cq:Page` nodi) e quindi molto vicini alla classica gestione dei contenuti AEM:
 
 * *Categorie strutturali
 
-  Struttura ad albero delle categorie che definisce *cos’è un prodotto*; ad esempio:
+  La struttura di categorie che definisce *cos&#39;è un prodotto*; ad esempio:
 
   `/products/mens/shoes/sneakers`
 
 * *Marketing* categorie
 
-  Tutte le altre categorie che *il prodotto può appartenere a*; ad esempio:
+  Tutte le altre categorie a cui può appartenere un *prodotto*, ad esempio:
 
   `/special-offers/christmas/shoes`)
 
@@ -221,9 +221,9 @@ I dati di prodotto possono essere:
 * mantenuti direttamente nell’AEM (generico).
 * mantenuti nel motore di eCommerce e resi disponibili nell’AEM.
 
-  A seconda del tipo di dati [sincronizzato](#catalog-maintenance-data-synchronization) se necessario, o a cui si accede direttamente; ad esempio, dati altamente volatili e critici come i prezzi dei prodotti vengono recuperati dal motore di e-commerce in ogni richiesta di pagina per garantire che siano sempre aggiornati.
+  A seconda del tipo di dati, è [sincronizzato](#catalog-maintenance-data-synchronization) in base alle esigenze o vi si accede direttamente; ad esempio, dati critici e altamente volatili come i prezzi dei prodotti vengono recuperati dal motore di e-commerce in ogni richiesta di pagina per garantire che siano sempre aggiornati.
 
-In entrambi i casi, quando i dati del prodotto sono stati inseriti/importati nell’AEM, è possibile visualizzarli dal **Prodotti** console. Qui le viste a schede e a elenco di un prodotto mostrano informazioni quali:
+In entrambi i casi, quando i dati del prodotto sono stati immessi/importati in AEM, possono essere visualizzati dalla console **Products**. Qui le viste a schede e a elenco di un prodotto mostrano informazioni quali:
 
 * l&#39;immagine
 * il codice SKU
@@ -257,7 +257,7 @@ I singoli attributi mantenuti per ciascun prodotto possono dipendere dal motore 
 
   Tag utilizzati per raggruppare i prodotti correlati.
 
-* **Categoria risorsa predefinita**
+* **Categoria risorse predefinita**
 
   Categoria predefinita per le risorse.
 
@@ -279,11 +279,11 @@ I singoli attributi mantenuti per ciascun prodotto possono dipendere dal motore 
 
   Riepilogo delle funzioni del prodotto.
 
-* **Funzioni**
+* **Caratteristiche**
 
   Dettagli più completi sulle funzioni del prodotto.
 
-### Risorse di prodotto {#product-assets}
+### Assets del prodotto {#product-assets}
 
 È possibile selezionare le risorse per i singoli prodotti. Di solito includono immagini e video.
 
@@ -295,7 +295,7 @@ Un catalogo raggruppa i dati dei prodotti per semplificare la gestione e la rapp
 
 #### Cataloghi in più lingue {#catalogs-in-multiple-languages}
 
-L’AEM supporta i contenuti dei prodotti in più lingue. Quando si richiedono i dati, Integration Framework recupera la lingua dalla struttura corrente (ad esempio, `en_US` per le pagine in `/content/geometrixx-outdoors/en_US`).
+L’AEM supporta i contenuti dei prodotti in più lingue. Quando si richiedono i dati, Integration Framework recupera il linguaggio dalla struttura corrente (ad esempio, `en_US` per le pagine in `/content/geometrixx-outdoors/en_US`).
 
 Per un archivio multilingue, puoi importare il catalogo per ogni struttura lingua singolarmente (oppure copiarlo con [MSM](/help/sites-administering/msm.md)).
 
@@ -318,8 +318,8 @@ A seconda dell’implementazione, puoi importare in AEM i dati di prodotto neces
 
 Ulteriori modifiche ai dati di prodotto sono inevitabili:
 
-* per l&#39;implementazione generica, questi possono essere gestiti con [editor prodotti](/help/commerce/cif-classic/administering/generic.md#editing-product-information)
-* quando si utilizza un’ [Motore di eCommerce le modifiche devono essere sincronizzate](#data-synchronization-with-an-ecommerce-engine-ongoing)
+* per l&#39;implementazione generica, questi possono essere gestiti con l&#39;[editor di prodotto](/help/commerce/cif-classic/administering/generic.md#editing-product-information)
+* quando si utilizza un motore di [eCommerce, le modifiche devono essere sincronizzate](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
 #### Sincronizzazione dei dati con un motore di eCommerce (in corso) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
@@ -329,7 +329,7 @@ Quando si utilizza un motore di eCommerce, i dati dei prodotti vengono conservat
 
 Questo può dipendere dal tipo di dati:
 
-* A [la sincronizzazione periodica viene utilizzata insieme a un feed di dati di modifiche](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
+* Viene utilizzata una [sincronizzazione periodica insieme a un feed di dati di modifiche](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
 
   Inoltre, puoi selezionare aggiornamenti specifici per un aggiornamento rapido.
 
@@ -366,13 +366,13 @@ Questo scenario comporta la configurazione di due istanze di authoring:
 
    Importa ed esegue la post-elaborazione delle risorse di prodotto da PIM, quindi le replica nell’istanza di authoring principale per l’utilizzo.
 
-![Diagramma dell’architettura](/help/sites-administering/assets/chlimage_1-8.png)
+![Diagramma architettura](/help/sites-administering/assets/chlimage_1-8.png)
 
 #### Importa solo dati prodotto {#only-import-product-data}
 
 Nei casi in cui i prodotti non contengano risorse (immagini) da importare, puoi importare i dati dei prodotti senza subire l’effetto della post-elaborazione delle risorse.
 
-![Diagramma dell’architettura](/help/sites-administering/assets/chlimage_1-9.png)
+![Diagramma architettura](/help/sites-administering/assets/chlimage_1-9.png)
 
 #### Test delle prestazioni {#performance-testing}
 
@@ -440,7 +440,7 @@ Per tutte le implementazioni, è possibile tenere presenti i seguenti punti:
 * Pianifica modelli e servizi di accesso ai contenuti con factoring all’interno dello stack tecnico. Si tratta di una best practice generale, ma è ancora più fondamentale in questo caso, in quanto è possibile, nelle fasi di ottimizzazione, aggiungere cache dell’applicazione per i dati che vengono letti spesso (e di cui non si desidera riempire la cache del bundle).
 
   Ad esempio, la gestione degli attributi è spesso un buon candidato per il caching in quanto riguarda i dati aggiornati tramite l’importazione di prodotti.
-* Valuta l’utilizzo di [pagine proxy](#proxy-pages).
+* Valuta l&#39;utilizzo di [pagine proxy](#proxy-pages).
 
 ### Pagine sezione catalogo {#catalog-section-pages}
 
@@ -450,13 +450,13 @@ Le sezioni del catalogo forniscono, ad esempio:
 * collegamenti ai singoli prodotti di tale categoria
 * collegamenti alle altre categorie
 
-![ecommerce_category in esecuzione](/help/sites-administering/assets/ecommerce_categoryrunning.png)
+![ecommerce_categoryrunning](/help/sites-administering/assets/ecommerce_categoryrunning.png)
 
 ### Pagine prodotto {#product-pages}
 
 Le pagine dei prodotti forniscono informazioni complete sui singoli prodotti. Vengono riflessi anche gli aggiornamenti dinamici di; ad esempio, le modifiche di prezzo registrate sul motore di eCommerce.
 
-Le pagine di prodotto sono pagine AEM che utilizzano **Prodotto** componente; ad esempio, all’interno del **Prodotto Commerce** modello:
+Le pagine dei prodotti sono pagine AEM che utilizzano il componente **Product**; ad esempio, all&#39;interno del modello **Commerce Product**:
 
 ![ecommerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 
@@ -477,9 +477,9 @@ Si tratta di pagine AEM che forniscono principalmente informazioni statiche; ad 
 
 ### Componente prodotto {#product-component}
 
-Il **Prodotto** può essere aggiunto a qualsiasi pagina con una pagina padre che distribuisce i metadati richiesti, ovvero i percorsi di `cartPage` e `cartObject`). Nel sito della dimostrazione, Geometrixx Outdoors, questo viene fornito da `UserInfo.jsp`.
+Il componente **Product** può essere aggiunto a qualsiasi pagina con una pagina padre che distribuisce i metadati richiesti (ovvero i percorsi di `cartPage` e `cartObject`). Nel sito dimostrativo, Geometrixx Outdoors, viene fornito da `UserInfo.jsp`.
 
-Il **Prodotto** Il componente può anche essere personalizzato in base alle vostre esigenze individuali.
+Il componente **Prodotto** può anche essere personalizzato in base alle tue esigenze individuali.
 
 ### Pagine proxy {#proxy-pages}
 
@@ -487,7 +487,7 @@ Le pagine proxy vengono utilizzate per semplificare la struttura dell’archivio
 
 La creazione di un catalogo utilizza dieci nodi per prodotto, in quanto fornisce singoli componenti per ciascun prodotto che è possibile aggiornare e personalizzare in AEM. Questo numero elevato di nodi può diventare un problema se il catalogo contiene centinaia o anche migliaia di prodotti. Per evitare problemi, puoi creare il catalogo utilizzando le pagine proxy.
 
-Le pagine proxy utilizzano una struttura a due nodi ( `cq:Page` e `jcr:content`) che non contiene nessuno del contenuto effettivo del prodotto. Il contenuto viene generato, al momento della richiesta, facendo riferimento ai dati del prodotto e alla pagina del modello.
+Le pagine proxy utilizzano una struttura a due nodi ( `cq:Page` e `jcr:content`) che non contiene alcun contenuto effettivo del prodotto. Il contenuto viene generato, al momento della richiesta, facendo riferimento ai dati del prodotto e alla pagina del modello.
 
 Tuttavia, c&#39;è un compromesso. Non sarà possibile personalizzare le informazioni di prodotto all’interno di AEM, viene utilizzato un modello standard (definito per il sito).
 
@@ -514,7 +514,7 @@ I voucher sono un metodo collaudato per offrire sconti al fine di attirare gli a
 Per l&#39;AEM:
 
 * Un voucher è un componente basato su pagina che viene creato/modificato con la console Siti Web.
-* Il **Voucher** Il componente fornisce:
+* Il componente **Voucher** fornisce:
 
    * Un renderer per l&#39;amministrazione dei voucher; questo mostra tutti i voucher attualmente nel carrello.
    * Le finestre di dialogo per modifica (modulo) per l’amministrazione (aggiunta/rimozione) dei voucher.
@@ -524,7 +524,7 @@ Per l&#39;AEM:
 
 >[!NOTE]
 >
->L’AEM utilizza il termine **Voucher**, questo è sinonimo del termine **Coupon**.
+>L&#39;AEM utilizza il termine **Voucher**, sinonimo del termine **Coupon**.
 
 ### Promozioni {#promotions}
 
@@ -534,7 +534,7 @@ Le promozioni, insieme ai voucher, ti permettono di realizzare scenari come:
 * I clienti a lungo termine ricevono sconti su tutti gli ordini.
 * Prezzo di vendita offerto in un periodo di tempo ben definito.
 * Un cliente riceve un voucher quando il suo ordine precedente supera un importo specifico.
-* Un cliente che acquista *product-X* viene offerto uno sconto il *product-Y* (prodotti in coppia).
+* A un cliente che acquista *product-X* viene offerto uno sconto su *product-Y* (prodotti in coppia).
 
 Le promozioni non vengono gestite dai responsabili dell&#39;informazione sui prodotti, ma dai responsabili del marketing:
 
@@ -552,9 +552,9 @@ Le promozioni non vengono gestite dai responsabili dell&#39;informazione sui pro
    * renderer e finestre di dialogo per l&#39;amministrazione della promozione
    * sottocomponenti per il rendering e la modifica dei parametri di configurazione specifici dei gestori di promozioni
 
-Nell&#39;AEM le promozioni sono integrate anche nel [Campaign Management](/help/sites-authoring/personalization.md):
+In AEM le promozioni sono integrate anche in [Campaign Management](/help/sites-authoring/personalization.md):
 
-* a [campagna](/help/sites-authoring/personalization.md) specifica i tempi di attivazione/disattivazione
+* una [campagna](/help/sites-authoring/personalization.md) specifica i tempi di attivazione/disattivazione
 * [esperienze](/help/sites-authoring/personalization.md) *entro* la campagna viene utilizzata per raggruppare le risorse (pagine teaser, promozioni e così via) in base al segmento di pubblico a cui corrispondono
 
 Una promozione può essere effettuata in un’esperienza o direttamente nella campagna:
@@ -565,7 +565,7 @@ Una promozione può essere effettuata in un’esperienza o direttamente nella ca
 
   `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
-  si trova in un’esperienza e viene quindi attivato automaticamente ogni volta che il segmento ( `ordervalueover100`) si risolve.
+  si trova in un&#39;esperienza e quindi viene attivato automaticamente ogni volta che il segmento ( `ordervalueover100`) viene risolto.
 
 * Se una promozione non viene visualizzata all’interno di un’esperienza (solo nella campagna), non può essere applicata automaticamente a un pubblico. Tuttavia, può comunque essere attivato se il cliente inserisce un voucher nel carrello e tale voucher fa riferimento alla promozione.
 
@@ -577,7 +577,7 @@ Una promozione può essere effettuata in un’esperienza o direttamente nella ca
 
 >[!NOTE]
 >
->[promozioni ibride](https://www.hybris.com/modules/promotion) e [voucher ibridi](https://www.hybris.com/en/modules/voucher) coprire tutto ciò che influenza il carrello e che è correlato ai prezzi. Contenuti di marketing specifici per la promozione (come banner e così via). non fa parte della promozione hybris.
+>Le [promozioni ibride](https://www.hybris.com/modules/promotion) e i [voucher ibridi](https://www.hybris.com/en/modules/voucher) coprono tutto ciò che influisce sul carrello ed è relativo ai prezzi. Contenuti di marketing specifici per la promozione (come banner e così via). non fa parte della promozione hybris.
 
 ## Personalizzazione {#personalization}
 
@@ -634,7 +634,7 @@ Viene fornito il Single Sign-on (SSO), in modo che gli autori siano noti sia nel
 
 I dati delle transazioni provenienti dal motore di eCommerce vengono combinati con le informazioni personali relative all’acquirente. L’AEM utilizza alcuni di questi dati come dati di profilo. L’azione di un modulo nell’AEM scrive le informazioni nuovamente sul motore di eCommerce.
 
-È disponibile una pagina che consente di gestire facilmente le informazioni sull’account. Puoi accedervi facendo clic su **Il mio account** nella parte superiore di una pagina di Geometrixx o passando a `/content/geometrixx-outdoors/en/user/account.html`.
+È disponibile una pagina che consente di gestire facilmente le informazioni sull’account. Per accedervi, fai clic su **Account personale** nella parte superiore di una pagina di Geometrixx oppure passa a `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-13](/help/sites-administering/assets/chlimage_1-13.png)
 
@@ -650,11 +650,11 @@ Questo componente Rubrica consente di:
 
 È possibile scegliere l&#39;indirizzo predefinito desiderato.
 
-Il componente Rubrica è raggiungibile dal **Il mio account** pagina facendo clic su **Rubrica** o navigando su `/content/geometrixx-outdoors/en/user/account/address-book.html`.
+Il componente Rubrica è raggiungibile dalla pagina **Account personale** facendo clic su **Rubrica** o passando a `/content/geometrixx-outdoors/en/user/account/address-book.html`.
 
 ![chlimage_1-14](/help/sites-administering/assets/chlimage_1-14.png)
 
-Puoi fare clic su **Aggiungi nuovo indirizzo...** per aggiungere un indirizzo nella rubrica. Verrà aperto un modulo che sarà possibile compilare e quindi fare clic su **Aggiungi indirizzo**.
+È possibile fare clic su **Aggiungi nuovo indirizzo...** per aggiungere un indirizzo nella rubrica. Verrà aperto un modulo che sarà possibile compilare e quindi fare clic su **Aggiungi indirizzo**.
 
 >[!NOTE]
 >
@@ -664,10 +664,10 @@ La Rubrica viene utilizzata quando si esegue il &quot;pagamento&quot; del carrel
 
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
-Gli indirizzi vengono mantenuti di seguito `user_home/profile/addresses`.
+Gli indirizzi sono persistenti sotto `user_home/profile/addresses`.
 Ad esempio, per Alison Parker, si troverebbe in /home/users/geometrixx/aparker@geometrixx.info/profile/addresses
 
-Puoi scegliere l’indirizzo predefinito; queste informazioni vengono mantenute nel profilo dell’acquirente invece che con l’indirizzo. Proprietà profilo `address.default` viene impostato con il percorso dell’indirizzo selezionato per il valore.
+Puoi scegliere l’indirizzo predefinito; queste informazioni vengono mantenute nel profilo dell’acquirente invece che con l’indirizzo. La proprietà di profilo `address.default` è impostata con il percorso dell&#39;indirizzo selezionato per il valore.
 
 ### Prezzi specifici del cliente {#customer-specific-pricing}
 
@@ -720,11 +720,11 @@ Il carrello viene salvato in base al motore utilizzato:
 In entrambi i casi, gli elementi rimangono nel carrello (e possono essere ripristinati) durante l’accesso o la disconnessione (ma solo sullo stesso computer/browser). Ad esempio:
 
 * sfoglia come `anonymous` e aggiungi prodotti al carrello
-* accedi come `Allison Parker` - Il carrello di Allison è vuoto
+* accedi come `Allison Parker` - il carrello di Allison è vuoto
 * aggiungi prodotti al carrello di Allison
-* disconnetti: il carrello mostra i prodotti per `anonymous`
+* esci - il carrello mostra i prodotti per `anonymous`
 
-* accedi di nuovo come `Allison Parker` - I prodotti Allison sono restaurati
+* accedi di nuovo come `Allison Parker` - I prodotti di Allison sono ripristinati
 
 >[!NOTE]
 >
@@ -732,7 +732,7 @@ In entrambi i casi, gli elementi rimangono nel carrello (e possono essere ripris
 
 >[!NOTE]
 >
->Si sconsiglia di testare il ripristino del contenuto del carrello con `admin` , in quanto potrebbe entrare in conflitto con `admin` account del motore di eCommerce (ad esempio, hybris).
+>Non è consigliabile eseguire il test per il ripristino del contenuto del carrello con l&#39;account `admin`, in quanto ciò potrebbe entrare in conflitto con l&#39;account `admin` del motore di eCommerce (ad esempio, hybris).
 
 >[!NOTE]
 >
@@ -790,7 +790,7 @@ Vengono memorizzate diverse informazioni, tra cui:
 
   Il metodo di pagamento.
 
-* **Stato del pagamento**
+* **Stato pagamento**
 
   Stato del pagamento.
 
@@ -852,7 +852,7 @@ I dettagli del pagamento, comprese le informazioni sulla carta di credito, sono 
 
 ### Conferma dell’ordine {#confirmation-of-order}
 
-L&#39;ordine viene confermato sullo schermo e può essere tracciato con [tracciamento degli ordini](#order-tracking).
+L&#39;ordine è confermato sullo schermo e può essere tracciato con il [tracciamento dell&#39;ordine](#order-tracking).
 
 ## Ricerca {#search-features}
 
@@ -863,6 +863,6 @@ Poiché l’AEM utilizza pagine standard per i prodotti, puoi utilizzare il comp
 Se hai bisogno di un’implementazione più completa, puoi effettuare le seguenti operazioni:
 
 * Estendi il componente di ricerca predefinito con la funzionalità necessaria.
-* Implementare il metodo di ricerca nel `CommerceService` e quindi utilizza il componente di ricerca eCommerce nella pagina di ricerca.
+* Implementare il metodo di ricerca in `CommerceService` e quindi utilizzare il componente di ricerca eCommerce nella pagina di ricerca.
 
 Quando utilizzi un motore di eCommerce, l’API di ricerca di eCommerce può essere completamente implementata nella soluzione del motore di eCommerce, in modo da poter utilizzare il componente di ricerca di eCommerce fornito come strumento pronto all’uso. La ricerca sfaccettata consente di cercare JCR e/o il motore:

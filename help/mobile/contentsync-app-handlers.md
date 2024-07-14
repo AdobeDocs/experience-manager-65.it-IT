@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Consulta le seguenti linee guida per lo sviluppo di gestori di sincronizzazione dei contenuti:
 
-* I gestori devono implementare *com.day.cq.contentsync.handler.ContentUpdateHandler* (direttamente o estendendo una classe che lo fa)
+* I gestori devono implementare *com.day.cq.contentsync.handler.ContentUpdateHandler* (direttamente o estendendo una classe che esegue)
 * I gestori possono estendere *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
 * Il gestore deve segnalare true solo se ha aggiornato la cache di ContentSync. Segnalare falsamente true consentirà al AEM di creare un aggiornamento.
 * Il gestore deve aggiornare la cache solo se il contenuto è stato effettivamente modificato. Non scrivere nella cache se non è necessario un bianco ed evita di creare un aggiornamento non necessario.
@@ -35,38 +35,38 @@ Di seguito sono elencati i gestori di app predefiniti:
 
 **mobileapppages** Esegue il rendering delle pagine dell&#39;app.
 
-* ***type - String*** - mobileapppages
-* ***path - String*** : percorso di una pagina
-* ***extension - String*** - Estensione da utilizzare nella richiesta. Per le pagine questo è quasi sempre *html*, ma altri sono ancora possibili.
+* ***tipo - Stringa*** - mobileapppages
+* ***percorso - Stringa*** - percorso di una pagina
+* ***estensione - Stringa*** - Estensione da utilizzare nella richiesta. Per le pagine si tratta quasi sempre di *html*, ma altri sono ancora possibili.
 
-* ***selettore - Stringa*** - Selettori opzionali separati da un punto. Esempi comuni sono *tocco* per il rendering delle versioni mobili di una pagina.
+* ***selettore - Stringa*** - Selettori facoltativi separati da un punto. Esempi comuni sono *touch* per il rendering delle versioni mobili di una pagina.
 
-* ***deep - Boolean*** - Proprietà booleana opzionale che determina se includere o meno le pagine figlie. Il valore predefinito è *vero.*
+* ***deep - Boolean*** - Proprietà booleana opzionale che determina se includere anche le pagine figlie. Il valore predefinito è *true.*
 
-* ***includeImages - Boolean*** - Proprietà booleana opzionale che determina se le immagini devono essere incluse. Il valore predefinito è *true*.
+* ***includeImages - Booleano*** - Proprietà booleana opzionale che determina se le immagini devono essere incluse. Il valore predefinito è *true*.
 
    * Per impostazione predefinita, solo i componenti immagine con un tipo di risorsa fondazione/componenti/immagine vengono considerati per l’inclusione.
 
-* ***includeVideos - Booleano*** - Proprietà booleana opzionale che determina se i video devono essere inclusi. Il valore predefinito è *true*.
+* ***includeVideos - Booleano*** - La proprietà booleana opzionale determina se i video devono essere inclusi. Il valore predefinito è *true*.
 
-* ***includeModifiedPagesOnly - Boolean*** : se false o omesso, esegui il rendering di tutte le pagine e controlla gli aggiornamenti nel rendering. Se true, base differisce in base alle modifiche apportate a una pagina lastModified.
+* ***includeModifiedPagesOnly - Booleano*** - Se false o omesse, esegui il rendering di tutte le pagine e controlla gli aggiornamenti nel rendering. Se true, base differisce in base alle modifiche apportate a una pagina lastModified.
 * ***+ riscrittura (nodo)***
-  ***- relativeParentPath - Stringa*** : il percorso per scrivere tutti gli altri percorsi relativi a.
+  ***- relativeParentPath - String*** - percorso per la scrittura di tutti gli altri percorsi relativi a.
 
 >[!NOTE]
 >
->Il tipo di risorsa dei componenti immagine e video interessati da questo gestore viene impostato configurando le proprietà del *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*Servizio OSGi MobilePagesUpdateHandler*.
+>Il tipo di risorsa dei componenti immagine e video interessati da questo gestore viene impostato configurando le proprietà di *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*Servizio OSGi MobilePagesUpdateHandler*.
 
 **mobilepageassets** Raccoglie le risorse della pagina dell&#39;app.
 
-**mobilecontentlisting** Elenca il contenuto dello zip ContentSync. Viene utilizzato dal js lato client sul dispositivo per eseguire la copia iniziale del file necessaria per le app AEM.
+**mobilecontentlisting** Elenca il contenuto del file zip ContentSync. Viene utilizzato dal js lato client sul dispositivo per eseguire la copia iniziale del file necessaria per le app AEM.
 
 Questo gestore deve essere aggiunto a qualsiasi configurazione di ContentSync per app AEM.
 
-* ***type - String - mobilecontentlisting***
-* ***percorso*** - Stringa - mantieni vuoto, deve essere presente per essere visto come un gestore valido, ma si deduce che il percorso sia la cache ContentSync corrente. Questo valore viene ignorato.
-* ***targetRootDirectory* -**Stringa: il prefisso da aggiungere ai percorsi come directory principale di destinazione per l’aggiornamento del contenuto per questo gestore.
-* ***order - Long* -**Ordina ContentSync per eseguire questo gestore. Questo numero deve essere impostato su un valore superiore a tutti gli altri gestori, ad esempio 100. Deve essere eseguito dopo i gestori di contenuti tradizionali.
+* ***tipo - Stringa - mobilecontentlisting***
+* ***percorso*** - Stringa - mantieni vuoto, deve essere presente per essere visualizzato come un gestore valido, ma si deduce che il percorso sia la cache ContentSync corrente. Questo valore viene ignorato.
+* ***targetRootDirectory* -**Stringa - Prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore.
+* ***order - Long* -**Order for ContentSync per eseguire questo gestore. Questo numero deve essere impostato su un valore superiore a tutti gli altri gestori, ad esempio 100. Deve essere eseguito dopo i gestori di contenuti tradizionali.
 
 ```xml
 {
@@ -86,14 +86,14 @@ Questo gestore deve essere aggiunto a qualsiasi configurazione di ContentSync pe
 }
 ```
 
-**mobilecontentpackageslisting** Elenca il pacchetto di contenuti AEM in una determinata app e l’URL del server a cui inviare le richieste di aggiornamento. Viene utilizzato da JS lato client sul dispositivo per richiedere aggiornamenti del contenuto
+**mobilecontentpackageslisting** Elenca il pacchetto di contenuti AEM in una determinata app e l&#39;URL del server a cui inviare le richieste di aggiornamento. Viene utilizzato da JS lato client sul dispositivo per richiedere aggiornamenti del contenuto
 
 Il gestore deve essere utilizzato nella configurazione ContentSync della shell dell’app AEM (nodo con pge-type=app-instance)
 
-* ***type - String - mobilecontentpackageslisting***
-* ***percorso **-**Stringa*** : percorso di una shell dell’app (nodo con pge-type=app-instance).
-* ***targetRootDirectory - Stringa*** : prefisso da aggiungere ai percorsi come directory principale di destinazione per l’aggiornamento del contenuto per questo gestore.
-* ***order - Long* -**Ordinare a ContentSync di eseguire questo gestore. Questo numero deve essere impostato su un valore superiore a tutti gli altri gestori, ad esempio 100. Deve essere eseguito dopo i gestori di contenuti tradizionali.
+* ***tipo - Stringa - mobilecontentpackageslisting***
+* ***percorso **-**Stringa*** - Percorso di una shell app (nodo con pge-type=app-instance).
+* ***targetRootDirectory - Stringa*** - Prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore.
+* ***order - Long* -**Order for ContentSync per eseguire questo gestore. Questo numero deve essere impostato su un valore superiore a tutti gli altri gestori, ad esempio 100. Deve essere eseguito dopo i gestori di contenuti tradizionali.
 
 >[!NOTE]
 >
@@ -121,28 +121,28 @@ Il gestore deve essere utilizzato nella configurazione ContentSync della shell d
 }
 ```
 
-**widgetconfig** Include un file config.xml aggiornato che unisce tutte le modifiche apportate tramite il centro comandi con un file config.xml fornito. Se questo gestore non è incluso, i dettagli dell’app modificati tramite l’interfaccia di amministrazione non verranno inclusi nella cache.
+**widgetconfig** Include un file config.xml aggiornato che unisce eventuali modifiche apportate tramite il centro comandi con un file config.xml fornito. Se questo gestore non è incluso, i dettagli dell’app modificati tramite l’interfaccia di amministrazione non verranno inclusi nella cache.
 
-Questo gestore deve essere utilizzato in una configurazione ContentSync della shell dell’app AEM (nodo con pge-type=[app-instance]).
+Questo gestore deve essere utilizzato in una configurazione ContentSync della shell dell&#39;app AEM (nodo con pge-type=[app-instance]).
 
-* ***type - String* - **widgetconfig
-* ***percorso **-**Stringa*** : percorso di qualsiasi nodo figlio della shell dell’app (nodo con pge-type=[app-instance]).
-* ***targetRootDirectory - Stringa*** : prefisso da aggiungere ai percorsi come directory principale di destinazione per l’aggiornamento del contenuto per questo gestore.
-* ***targetIconDirectory - Stringa*** : la directory in cui inserire le icone per l’app
+* ***tipo - Stringa* - **widgetconfig
+* ***percorso **-**Stringa*** - Percorso di qualsiasi nodo figlio della shell dell&#39;app (nodo con pge-type=[app-instance]).
+* ***targetRootDirectory - Stringa*** - Prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore.
+* ***targetIconDirectory - Stringa*** - Directory in cui inserire le icone per l&#39;app
 
-**mobileADBMobileConfigJSON** Includi il file ADBMobileConfig.JSON se è stato configurato il servizio cloud AMS.
+**mobileADBMobileConfigJSON** Includi il file ADBMobileConfig.JSON se il servizio cloud AMS è stato configurato.
 
 Viene utilizzato in fase di compilazione per configurare il plug-in AMS per il supporto analitico.
 
 Il gestore deve essere utilizzato nella configurazione ContentSync della shell dell’app AEM (nodo con pge-type=app-instance)
 
-* ***type - String*** - mobileADBMobileConfigJSON
-* ***path - String*** : percorso di una shell dell’app (nodo con pge-type=app-instance o RT che estende /libs/mobileapps/core/components/instance)
-* ***targetRootDirectory - Stringa*** : prefisso da aggiungere ai percorsi come directory principale di destinazione per l’aggiornamento del contenuto per questo gestore
+* ***tipo - Stringa*** - mobileADBMobileConfigJSON
+* ***percorso - Stringa*** - Percorso di una shell dell&#39;app (nodo con pge-type=app-instance o RT che estende /libs/mobileapps/core/components/instance)
+* ***targetRootDirectory - Stringa*** - Prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore
 
-**notificationsconfig** Estrae le configurazioni di notifica necessarie sul dispositivo. Le proprietà vengono estratte dalla rispettiva configurazione del servizio cloud del servizio push associata all’app.
+**notificationsconfig** Estrae le configurazioni delle notifiche necessarie sul dispositivo. Le proprietà vengono estratte dalla rispettiva configurazione del servizio cloud del servizio push associata all’app.
 
-Le proprietà non AEM nel nodo jcr:content del servizio cloud vengono estratte e aggiunte al **pge-notifications-config.json** File JSON da includere nella directory principale www del contenuto dell’app.
+Le proprietà non AEM nel nodo jcr:content del servizio cloud vengono estratte e aggiunte al file JSON **pge-notifications-config.json** per l&#39;inclusione nella directory principale www del contenuto dell&#39;app.
 
 Le proprietà dell’AEM sono quelle con spazio dei nomi tra &quot;cq&quot;, &quot;sling&quot; o &quot;jcr&quot;. Altre proprietà possono essere escluse utilizzando la proprietà &quot;excludeProperties&quot; nel nodo di configurazione content-sync.
 
@@ -152,38 +152,38 @@ Le proprietà dell’AEM sono quelle con spazio dei nomi tra &quot;cq&quot;, &qu
 **contentsyncconfigcontent** Raccoglie contenuto da una configurazione ContentSync esistente.
 
 * ***type - String*** - contentsyncconfigcontent
-* ***path - String*** - Percorso di uno dei seguenti elementi:
+* ***percorso - Stringa*** - Percorso di uno dei seguenti elementi:
 
    * un&#39;altra configurazione ContentSync
    * in un pacchetto di contenuti (utilizzerà la proprietà phonegap-exportTemplate per trovare la relativa configurazione ContentSync)
    * a una risorsa mobile (i contenuti dell’app si trovano sotto tale risorsa e, se tali pacchetti di contenuto hanno una proprietà page-includeInBuild che è true, phonegap-exportTemplate viene utilizzato per trovare la relativa configurazione ContentSync)
 
-* ***autoCreateFirstUpdateBeforeImport - Booleano*** - se true, crea una **aggiorna** nella configurazione di destinazione prima dell’importazione se una volta non esiste già
+* ***autoCreateFirstUpdateBeforeImport - Booleano*** - se true, creare un **aggiornamento** iniziale nella configurazione di destinazione prima dell&#39;importazione se non esiste già una volta
 
-* ***autoFillBeforeImport - Booleano*** - se true, aggiorna/compila la configurazione di destinazione prima dell’importazione
-* ***configSuffix - Stringa*** : stringa da aggiungere al percorso indicato nella proprietà &quot;phonegap-exportTemplate&quot; di app-content. Questa può essere utilizzata per distinguere diversi modelli di esportazione. Ad esempio, questa proprietà può essere impostata su **&quot;-dev&quot;** per indicare che *&quot;/../../../appconfig-dev&quot;* devono essere utilizzati (anziché *&quot;/../../../appconfig&quot;*).
+* ***autoFillBeforeImport - Booleano*** - se true, aggiorna/compila la configurazione di destinazione prima dell&#39;importazione
+* ***configSuffix - Stringa*** - Stringa da aggiungere al percorso indicato nella proprietà &quot;phonegap-exportTemplate&quot; di app-content. Questa può essere utilizzata per distinguere diversi modelli di esportazione. Ad esempio, questa proprietà può essere impostata su **&quot;-dev&quot;** per indicare che deve essere utilizzato *&quot;/../../../appconfig-dev&quot;* (anziché *&quot;/../../../appconfig&quot;*).
 
-**app-assets** Include tutte le risorse associate a un&#39;istanza di app. Questo gestore includerà tutte le risorse trovate nel percorso specificato, insieme a tutte le risorse a cui fa riferimento la proprietà appAssetPath di un&#39;istanza di app.
+**app-assets** include tutte le risorse associate a un&#39;istanza dell&#39;app. Questo gestore includerà tutte le risorse trovate nel percorso specificato, insieme a tutte le risorse a cui fa riferimento la proprietà appAssetPath di un&#39;istanza di app.
 
-* ***type - String*** - app-assets
+* ***tipo - Stringa*** - risorse-app
 
-* ***percorso **-**Stringa*** : percorso di un&#39;istanza dell&#39;app in cui sono memorizzate le risorse dell&#39;app
+* ***percorso **-**Stringa*** - percorso in un&#39;istanza dell&#39;app in cui sono archiviate le risorse dell&#39;app
 
-**mobileapffffers** È stato introdotto un nuovo gestore di sincronizzazione dei contenuti per il caso di utilizzo Personalizzazione per eseguire il rendering di contenuti di destinazione. Il gestore &quot;mobileapffers&quot; è in grado di eseguire il rendering delle offerte target associate create dall’autore di contenuto. Il gestore mobileapffers estende il gestore di aggiornamento delle pagine astratte, pertanto molte delle proprietà sono simili. I dettagli del gestore mobileappoffers hanno le seguenti proprietà.
+**mobileappoffers** È stato introdotto un nuovo gestore di sincronizzazione dei contenuti per il caso d&#39;uso Personalization per il rendering del contenuto di destinazione. Il gestore &quot;mobileapffers&quot; è in grado di eseguire il rendering delle offerte target associate create dall’autore di contenuto. Il gestore mobileapffers estende il gestore di aggiornamento delle pagine astratte, pertanto molte delle proprietà sono simili. I dettagli del gestore mobileappoffers hanno le seguenti proprietà.
 
 Il gestore mobileappofferers estende il gestore mobileappspages e aggiunge le seguenti proprietà:
 
-* ***locationRoot - Stringa*** - specificare la posizione dell&#39;app mobile
-* ***includePageTypes - Stringa*** : impostazioni predefinite per il supporto di cq/personalization/components/teaserpage e cq/personalization/components/offerproxy
+* ***locationRoot - String*** - specifica il percorso dell&#39;app mobile
+* ***includePageTypes - Stringa*** - supporta per impostazione predefinita cq/personalization/components/teaserpage e cq/personalization/components/offerproxy
 * ***selettore - Stringa*** - deve essere impostato su tandt
-* ***path - String***- il percorso verso il marchio della campagna
+* ***percorso - Stringa***- Percorso del marchio della campagna
 
 **mobileappconfig** Il gestore di sincronizzazione del contenuto mobileappconfig consente di inserire dati JSON in MobileAppsConfig.json. Per registrare una classe provider, gli sviluppatori aggiungeranno la classe MobileAppsInfoProvider all&#39;elenco dei provider. Il gestore scorre l’elenco di MobileAppsInfoProviders e consente al provider di inserire dati nel file json risultante. L&#39;elenco delle proprietà supportate dal gestore è:
 
-* ***percorso **-**Stringa*** : percorso di un nodo di istanza app con pge-type=app-instance o un RT che estende /libs/mobileapps/core/components/instance
-* ***provider - Stringa*** `[]` - l&#39;elenco di MobileAppsInfoProvider completi
-* ***targetRootDirectory - Stringa*** : la directory in cui scrivere il file MobileAppsConfig.json.
-* **fileName - Stringa** : nome opzionale del file in cui scrivere il JSON; l’impostazione predefinita è MobileAppsConfig.json
+* ***percorso **-**Stringa*** - Percorso di un nodo di istanza dell&#39;app con pge-type=app-instance o un RT che estende /libs/mobileapps/core/components/instance
+* ***provider - Stringa*** `[]` - Elenco di MobileAppsInfoProvider completi
+* ***targetRootDirectory - String*** - la directory in cui scrivere il file MobileAppsConfig.json.
+* **nomeFile - Stringa** - nome facoltativo del file in cui scrivere il JSON; impostazione predefinita: MobileAppsConfig.json
 
 È possibile configurare più gestori mobileappconfig ciascuno con un set univoco di provider che scrivono in file JSON diversi.
 
@@ -199,9 +199,9 @@ Il gestore mobileappofferers estende il gestore mobileappspages e aggiunge le se
 
 * Eseguire la configurazione
 * Esportare la configurazione o la revisione sul dispositivo
-* Se il rendering non riesce, verifica se è mancante *stili/risorse/libs* o verifica la presenza di percorsi non validi per *stili/risorse/libs*
+* Se il rendering non riesce, verifica la presenza di *stili/risorse/libs* mancanti o verifica la presenza di percorsi non validi per *stili/risorse/libs*
 
-**Registrazione** Abilitare la registrazione di debug di ContentSync tramite le configurazioni del logger OSGI sul pacchetto `com.day.cq.contentsync` Questo consente di tenere traccia di quali gestori hanno eseguito e se hanno aggiornato la cache e segnalato l’aggiornamento della cache.
+**Registrazione** Abilita la registrazione del debug ContentSync tramite le configurazioni del logger OSGI nel pacchetto `com.day.cq.contentsync`. Ciò ti consentirà di tenere traccia dei gestori eseguiti e di verificare se hanno aggiornato la cache e segnalato di averla aggiornata.
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -212,4 +212,4 @@ Per informazioni sui ruoli e sulle responsabilità di un amministratore e di uno
 
 >[!NOTE]
 >
->Per iniziare a sviluppare app AEM Mobile, fai clic su [qui](/help/mobile/getting-started-aem-mobile.md).
+>Per iniziare a sviluppare app AEM Mobile, fai clic [qui](/help/mobile/getting-started-aem-mobile.md).

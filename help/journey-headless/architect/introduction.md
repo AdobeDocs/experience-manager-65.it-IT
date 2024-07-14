@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # Modellazione dei contenuti per headless con AEM - Introduzione {#architect-headless-introduction}
 
-In questa parte del [Percorso Architect di contenuti AEM headless](overview.md), puoi imparare i concetti e la terminologia (di base) necessari per comprendere la modellazione dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
+In questa sezione del Percorso [Architetto di contenuti headless AEM](overview.md), puoi imparare i concetti e la terminologia (di base) necessari per comprendere la modellazione dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
 
 Questo documento ti aiuta a comprendere cos’è la distribuzione headless dei contenuti, come è supportata da AEM e come vengono modellati i contenuti per questo tipo di distribuzione. Dopo la lettura dovresti:
 

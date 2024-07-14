@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-Le funzioni di AEM Communities spesso richiedono la registrazione e l’accesso dei visitatori del sito prima di poter partecipare a una community nell’ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell’ambiente di pubblicazione e viene comunemente definita *membri* per distinguerli *utenti* registrati nell’ambiente di authoring.
+Le funzioni di AEM Communities spesso richiedono la registrazione e l’accesso dei visitatori del sito prima di poter partecipare a una community nell’ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell&#39;ambiente di pubblicazione e viene comunemente indicata come *membri* per distinguerli dagli *utenti* registrati nell&#39;ambiente di authoring.
 
-### Membri (utenti) alla pubblicazione {#members-users-on-publish}
+### Membri (utenti) su Publish {#members-users-on-publish}
 
-Utilizzo delle console Membri e Gruppi di Communities, membri e gruppi di membri registrati in *pubblicare* l’ambiente può essere creato e gestito dal *autore* ambiente. Ciò è possibile solo quando [servizio tunnel](deploy-communities.md#tunnel-service-on-author) è abilitato.
+Utilizzando le console Membri e Gruppi di Communities, è possibile creare e gestire membri e gruppi di membri registrati nell&#39;ambiente *publish* dall&#39;ambiente *author*. Ciò è possibile solo quando il servizio [tunnel](deploy-communities.md#tunnel-service-on-author) è abilitato.
 
 ### Utenti su Autore {#users-on-author}
 
-Per la gestione di utenti e gruppi registrati in *autore* è necessario utilizzare la console di sicurezza della piattaforma:
+Per la gestione di utenti e gruppi registrati nell&#39;ambiente *author*, è necessario utilizzare la console di sicurezza della piattaforma:
 
 * Dalla navigazione globale, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
 * Dalla navigazione globale, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Gruppi]**.
@@ -46,28 +46,28 @@ Nell’ambiente di authoring, per raggiungere la console Membri per la gestione 
 
 >[!CAUTION]
 >
->Non sarà possibile utilizzare la console Membri se [servizio tunnel](deploy-communities.md#tunnel-service-on-author) non è abilitato.
+>Se il servizio [tunnel](deploy-communities.md#tunnel-service-on-author) non è abilitato, non sarà possibile utilizzare la console Membri.
 
-![La console membro](assets/member-console1.png)
+![Console membri](assets/member-console1.png)
 
 ### Ricerca {#search-features}
 
-Seleziona l’icona del pannello laterale a sinistra del `Members` per aprire o disattivare il pannello laterale di ricerca.
+Selezionare l&#39;icona del pannello laterale sul lato sinistro dell&#39;intestazione `Members` per aprire alternativamente il pannello laterale di ricerca.
 
-![Icona del pannello laterale di ricerca.](assets/leftpanel-icon.png)
+![Icona pannello laterale di ricerca.](assets/leftpanel-icon.png)
 
 
 ![Opzioni filtro per la console membri](assets/member-console2.png)
 
-Selezionare l&#39;icona di ricerca sul lato sinistro del `Members` per far chiudere il pannello laterale di ricerca.
+Selezionare l&#39;icona di ricerca sul lato sinistro dell&#39;intestazione `Members` per chiudere il pannello laterale di ricerca.
 
 ### Statistiche membri {#member-statistics}
 
-Colonne visualizzate `Views`, `Posts`, `Follows` e `Likes` vengono aggiornati quando l’utente è membro di uno o più siti della community con Adobe Analytics [abilitato](sites-console.md#analytics).
+Le colonne che visualizzano `Views`, `Posts`, `Follows` e `Likes` vengono aggiornate quando l&#39;utente è membro di uno o più siti della community con Adobe Analytics [abilitato](sites-console.md#analytics).
 
 ### Esporta CSV {#export-csv}
 
-Selezione del `Export CSV` Il collegamento consente di scaricare tutti i membri come elenco di valori separati da virgola, adatti per l&#39;importazione in un foglio di calcolo.
+La selezione del collegamento `Export CSV` comporta il download di tutti i membri come elenco di valori separati da virgola, adatti per l&#39;importazione in un foglio di calcolo.
 
 Le intestazioni di colonna sono
 
@@ -75,7 +75,7 @@ Le intestazioni di colonna sono
 
 ## Crea nuovo membro {#create-new-member}
 
-Seleziona `Create Member` per creare un utente nell’ambiente di pubblicazione.
+Selezionare `Create Member` per creare un utente nell&#39;ambiente di pubblicazione.
 
 ![Finestra Crea nuovo membro](assets/create-member1.png)
 
@@ -87,28 +87,29 @@ La maggior parte dei campi sono campi facoltativi che il membro può compilare i
 
 (*Obbligatorio*) L&#39;ID autorizzabile è l&#39;ID di accesso del membro.
 Per impostazione predefinita, l’ID viene impostato sul valore dell’indirizzo e-mail richiesto.
-*Una volta creato, l’ID non può essere modificato*.
+*Una volta creato, l&#39;ID non può essere modificato*.
 
 * **[!UICONTROL Indirizzo e-mail]**
 
 (*Obbligatorio*) Indirizzo e-mail del membro.
-L&#39;utente può cambiare il proprio indirizzo e-mail quando aggiorna il profilo.I Se l&#39;ID è quello predefinito, l&#39;ID *non* cambia quando l’indirizzo e-mail viene modificato.
+L&#39;utente può cambiare il proprio indirizzo email durante l&#39;aggiornamento del profilo.I
+Se l&#39;ID viene impostato automaticamente sull&#39;indirizzo e-mail, l&#39;ID *non* verrà modificato quando l&#39;indirizzo e-mail verrà modificato.
 
 * **[!UICONTROL Password]**
 
   (*Obbligatorio*) La password di accesso.
 
-* **[!UICONTROL Ripeti password]**
+* **[!UICONTROL Password Retype]**
 
-  (*Obbligatorio*) Immettere nuovamente la password per la verifica.
+  (*Obbligatorio*) Reimmettere la password per la verifica.
 
-* **[!UICONTROL Aggiungi membro ai siti]**
+* **[!UICONTROL Aggiungi membro a Sites]**
 
-  (*Facoltativo*) Selezionare un membro dai siti community esistenti per aggiungerlo al gruppo membri del sito community.
+  (*Facoltativo*) Selezionare uno dei siti community esistenti per aggiungere il membro al gruppo di membri del sito community.
 
 * **[!UICONTROL Aggiungi membro a gruppi]**
 
-  (*Facoltativo*) Selezionare un gruppo di membri esistente per aggiungere il membro a tale gruppo.
+  (*Facoltativo*) Selezionare uno dei gruppi di membri esistenti per aggiungere il membro a tale gruppo.
 
 * Seleziona **[!UICONTROL Salva]**
 
@@ -117,9 +118,11 @@ L&#39;utente può cambiare il proprio indirizzo e-mail quando aggiorna il profil
 In Impostazioni account un amministratore della community può effettuare le seguenti operazioni:
 
 * **[!UICONTROL Stato]**
-   * Vietato Un membro non è in grado di accedere, impedendogli di visualizzare pagine o partecipare ad attività che richiedono l&#39;accesso. Possono ancora visitare in forma anonima un sito della community aperto.
+   * Vietato
+Un membro non è in grado di accedere, impedendo loro di visualizzare le pagine o di partecipare ad attività che richiedono l&#39;accesso. Possono ancora visitare in forma anonima un sito della community aperto.
 
-   * Non vietato Un membro ha pieno accesso al sito della community.
+   * Non vietato
+Un membro ha accesso completo al sito community.
 
   Il valore predefinito è `Not Banned`.
 
@@ -127,7 +130,7 @@ In Impostazioni account un amministratore della community può effettuare le seg
 
   Se questa opzione è selezionata, la capacità del membro di pubblicare contenuti è limitata.
 Il valore predefinito dipende dalla configurazione dei limiti dei contributi.
-Consulta [Limiti contributi membri](limits.md).
+Vedere [Limiti contributi membri](limits.md).
 
 * **[!UICONTROL Cambia password]**
 
@@ -135,7 +138,7 @@ Consulta [Limiti contributi membri](limits.md).
 
 ### GENERALE - Foto {#general-photo}
 
-Per fornire un avatar al membro, inizia selezionando **[!UICONTROL Carica immagine]** e scegli un&#39;immagine di tipo .jpg, .png, .tif o .gif. Le dimensioni preferite per un&#39;immagine sono 240 x 240 pixel a 72 dpi.
+Per fornire un avatar al membro, selezionare **[!UICONTROL Carica immagine]** e scegliere un&#39;immagine di tipo jpg, png, tif o gif. Le dimensioni preferite per un&#39;immagine sono 240 x 240 pixel a 72 dpi.
 
 ### GENERALE - Aggiungi membro ai siti {#general-add-member-to-sites}
 
@@ -147,32 +150,32 @@ Il membro può essere aggiunto a uno o più gruppi di membri. Iniziare immettend
 
 ### Scheda DISTINTIVI {#badges-tab}
 
-Il `BADGES` Il pannello consente di assegnare manualmente i badge e revocarli. I distintivi possono essere per i ruoli assegnati e distintivi generalmente ottenuti.
+Il pannello `BADGES` consente di assegnare manualmente i badge e revocarli. I distintivi possono essere per i ruoli assegnati e distintivi generalmente ottenuti.
 
 Vedi anche [Punteggio e distintivi](implementing-scoring.md).
 
 ![Finestra Modifica impostazioni appartenenza](assets/create-member2.png)
 
 * **[!UICONTROL Aggiungi badge]**
-   * Inizia a digitare per selezionare [badge disponibili](badges.md). Una volta selezionato un badge, scegli ogni sito, o tutti i siti, in cui il badge deve essere visualizzato insieme all’avatar del membro.
+   * Inizia a digitare per selezionare tra [distintivi disponibili](badges.md). Una volta selezionato un badge, scegli ogni sito, o tutti i siti, in cui il badge deve essere visualizzato insieme all’avatar del membro.
    * È possibile scegliere più badge e siti.
-* **[!UICONTROL Rimuovere i badge]**
+* **[!UICONTROL Rimuovi distintivi]**
    * Seleziona l’icona cestino accanto a un badge per rimuoverlo.
 
 ## Console Gruppi {#groups-console}
 
-La console Gruppi, disponibile nell’ambiente di authoring, consente di creare e gestire i gruppi di membri registrati nell’ambiente di pubblicazione. È particolarmente utile per [Gruppi membri privilegiati](users.md#privilegedmembersgroups).
+La console Gruppi, disponibile nell’ambiente di authoring, consente di creare e gestire i gruppi di membri registrati nell’ambiente di pubblicazione. È particolarmente utile per [Gruppi membri con privilegi](users.md#privilegedmembersgroups).
 
 Per accedere alla console Gruppi:
 * Dalla navigazione globale, seleziona **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** > **[!UICONTROL Gruppi]**.
 
 >[!CAUTION]
 >
->Non sarà possibile utilizzare la console Gruppi se [servizio tunnel](deploy-communities.md#tunnel-service-on-author) non è abilitato.
+>Se il servizio [tunnel](deploy-communities.md#tunnel-service-on-author) non è abilitato, non sarà possibile utilizzare la console Gruppi.
 
 ### Crea nuovo gruppo {#create-new-group}
 
-Seleziona `Add Group` per creare un gruppo nell’ambiente di pubblicazione.
+Selezionare `Add Group` per creare un gruppo nell&#39;ambiente di pubblicazione.
 
 ![Finestra Crea nuovo gruppo](assets/group-console1.png)
 
@@ -182,7 +185,7 @@ I campi obbligatori per la creazione di un gruppo di membri lato pubblicazione s
 
   (*Obbligatorio*) ID univoco del gruppo.
 
-  *Una volta creato, l’ID non può essere modificato.*
+  *Una volta creato, l&#39;ID non può essere modificato.*
 
 * **[!UICONTROL Nome]**
 
@@ -194,7 +197,7 @@ I campi obbligatori per la creazione di un gruppo di membri lato pubblicazione s
 
   (*Facoltativo*) Descrizione dello scopo e delle autorizzazioni del gruppo.
 
-* **[!UICONTROL Aggiungi membri al gruppo]**
+* **[!UICONTROL Aggiungi Membri Al Gruppo]**
 
   (*Facoltativo*) Selezionare i membri lato pubblicazione da includere come membri iniziali del gruppo.
 
@@ -202,8 +205,8 @@ I campi obbligatori per la creazione di un gruppo di membri lato pubblicazione s
 
 ## Amministratori autorizzati {#authorized-administrators}
 
-Quando si lavora con i membri nella console dei membri delle community, è necessario accedere come utente con le autorizzazioni appropriate e per l’agente di replica utilizzato da [servizio tunnel](deploy-communities.md#tunnel-service-on-author) per essere configurato correttamente.
+Quando si lavora con i membri nella console dei membri delle community, è necessario accedere come utente con le autorizzazioni appropriate e configurare correttamente l&#39;agente di replica utilizzato dal servizio [tunnel](deploy-communities.md#tunnel-service-on-author).
 
-Se non è stato eseguito l&#39;accesso come `admin`, quindi l&#39;utente connesso deve essere un membro di `administrators` gruppo di utenti.
+Se non è stato eseguito l&#39;accesso come `admin`, l&#39;utente connesso deve essere un membro del gruppo di utenti `administrators`.
 
-Vedi anche [Agenti di replica per l’autore](deploy-communities.md#replication-agents-on-author).
+Vedi anche [Agenti di replica sull&#39;autore](deploy-communities.md#replication-agents-on-author).

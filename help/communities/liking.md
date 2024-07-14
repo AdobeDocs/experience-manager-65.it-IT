@@ -18,31 +18,31 @@ ht-degree: 1%
 
 # Utilizzo di Mi piace {#using-liking}
 
-Il `Liking` Il componente è uno strumento utile che consente agli utenti di esprimere un’opinione su un particolare contenuto, ad esempio un commento all’interno di un forum. Con il `Liking` componente, i membri selezionano l’icona del cuore per indicare un’opinione positiva.
+Il componente `Liking` è uno strumento utile che consente agli utenti di esprimere un&#39;opinione su un particolare contenuto, ad esempio un commento all&#39;interno di un forum. Con il componente `Liking`, i membri selezionano l&#39;icona del cuore per indicare un&#39;opinione positiva.
 
 ## Aggiunta di un collegamento a una pagina {#adding-liking-to-a-page}
 
-Per aggiungere una `Liking` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare
+Per aggiungere un componente `Liking` a una pagina in modalità di creazione, utilizza il browser componenti per individuare
 
 * `Communities / Liking`
 
 Trascinalo in posizione su una pagina, ad esempio una posizione relativa alla funzione desiderata dagli utenti.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](basics.md).
 
-Quando [librerie lato client richieste](essentials-liking.md#essentials-for-client-side) sono inclusi, è così che `Liking` viene visualizzato.
+Quando sono incluse le [librerie lato client richieste](essentials-liking.md#essentials-for-client-side), il componente `Liking` viene visualizzato in questo modo.
 
-![componente-gradimento](assets/liking-component.png)
+![componente-Mi piace](assets/liking-component.png)
 
 ## Configurazione di Mi piace {#configuring-liking}
 
-Seleziona la inserita `Liking` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
+Selezionare il componente `Liking` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo per modifica.
 
-![configure-new](assets/configure-new.png)
+![configura-nuovo](assets/configure-new.png)
 
-Sotto **[!UICONTROL Testi ed etichette]** , specifica le proprietà utilizzate per registrare mi piace.
+Nella scheda **[!UICONTROL Testi ed etichette]**, specifica le proprietà utilizzate per registrare Mi piace.
 
-![tipo di configurazione](assets/configure-liking.png)
+![simulazione](assets/configure-liking.png)
 
 * **[!UICONTROL Etichetta risposta positiva]**
 
@@ -54,7 +54,7 @@ Sotto **[!UICONTROL Testi ed etichette]** , specifica le proprietà utilizzate p
 
 * **[!UICONTROL Nome conteggio]**
 
-  (*Obbligatorio*) Nome di proprietà interno e identificabile per questa istanza di un componente voting.
+  (*Obbligatorio*) Il nome della proprietà interna identificabile per questa istanza di un componente voting.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
@@ -68,4 +68,4 @@ Il collegamento anonimo non è supportato. I visitatori del sito devono registra
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base su Mi piace](essentials-liking.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Preferenze di Essentials](essentials-liking.md) per sviluppatori.

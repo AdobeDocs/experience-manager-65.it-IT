@@ -125,7 +125,7 @@ Per impostazione predefinita, le risorse disponibili sui nodi di pubblicazione s
 
 * /content/&amp;ast;
 * /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /libs/fd/&amp;ast
 
 ## Gestione sicura dei dati dei moduli  {#securely-handle-forms-data}
 
@@ -139,32 +139,32 @@ Negli scenari sopra indicati, i dati vengono salvati solo per gli utenti autenti
 
 ### Protezione dei dati salvati dall&#39;azione di invio del portale dei moduli {#secure-data-saved-by-forms-portal-submit-action}
 
-Per impostazione predefinita, l’azione di invio Forms Portal dei moduli adattivi salva i dati nell’archivio locale del nodo di pubblicazione. I dati vengono salvati in /content/forms/fp. **Si sconsiglia di memorizzare i dati nell’istanza di pubblicazione.**
+Per impostazione predefinita, l’azione di invio Forms Portal dei moduli adattivi salva i dati nell’archivio locale del nodo di pubblicazione. I dati vengono salvati in /content/forms/fp. **Non è consigliabile archiviare i dati nell&#39;istanza di pubblicazione.**
 
 È possibile configurare il servizio di archiviazione per l&#39;invio al cluster di elaborazione senza salvare nulla localmente sul nodo di pubblicazione. Il cluster di elaborazione risiede in una zona protetta dietro il firewall privato e i dati rimangono sicuri.
 
-Utilizzare le credenziali del server di elaborazione per il servizio delle impostazioni di Servizi di dominio AEM per inviare i dati dal nodo di pubblicazione al server di elaborazione. Utilizzare le credenziali di un utente non amministrativo con accesso in lettura/scrittura all&#39;archivio del server di elaborazione. Per ulteriori informazioni, consulta [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md).
+Utilizzare le credenziali del server di elaborazione per il servizio delle impostazioni di Servizi di dominio AEM per inviare i dati dal nodo di pubblicazione al server di elaborazione. Utilizzare le credenziali di un utente non amministrativo con accesso in lettura/scrittura all&#39;archivio del server di elaborazione. Per ulteriori informazioni, vedere [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Protezione dei dati gestita dal modello dati modulo (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
 Utilizza account utente con i privilegi minimi richiesti per configurare le origini dati per il modello dati modulo (FDM). L’utilizzo di un account amministrativo può fornire l’accesso aperto a entità di metadati e schemi a utenti non autorizzati.\
 L’integrazione dei dati fornisce anche metodi per autorizzare le richieste di servizio FDM. Puoi inserire meccanismi di autorizzazione pre e post-esecuzione per convalidare una richiesta. Le richieste di servizio vengono generate durante la precompilazione di un modulo, l’invio di un modulo e la chiamata di servizi tramite una regola.
 
-**Autorizzazione pre-elaborazione:** Puoi utilizzare l’autorizzazione pre-elaborazione per convalidare l’autenticità di una richiesta prima di eseguirla. Puoi utilizzare input, servizi e dettagli della richiesta per consentire o interrompere l’esecuzione della richiesta. È possibile restituire un&#39;eccezione di integrazione dei dati OPERATION_ACCESS_DENIED se l&#39;esecuzione viene interrotta. Puoi anche modificare la richiesta del client prima di inviarla per l’esecuzione. Ad esempio, modificando l’input e aggiungendo ulteriori informazioni.
+**Autorizzazione pre-elaborazione:** È possibile utilizzare l&#39;autorizzazione pre-elaborazione per convalidare l&#39;autenticità di una richiesta prima di eseguirla. Puoi utilizzare input, servizi e dettagli della richiesta per consentire o interrompere l’esecuzione della richiesta. È possibile restituire un&#39;eccezione di integrazione dei dati OPERATION_ACCESS_DENIED se l&#39;esecuzione viene interrotta. Puoi anche modificare la richiesta del client prima di inviarla per l’esecuzione. Ad esempio, modificando l’input e aggiungendo ulteriori informazioni.
 
-**Autorizzazione post-elaborazione:** È possibile utilizzare l&#39;autorizzazione post-elaborazione per convalidare e controllare i risultati prima di restituirli al richiedente. Puoi anche filtrare, eliminare e inserire dati aggiuntivi nei risultati.
+**Autorizzazione del processo Post:** È possibile utilizzare l&#39;autorizzazione post-elaborazione per convalidare e controllare i risultati prima di restituirli al richiedente. Puoi anche filtrare, eliminare e inserire dati aggiuntivi nei risultati.
 
 ### Limita l’accesso degli utenti {#limit-user-access}
 
 Per le istanze di authoring, pubblicazione ed elaborazione è necessario un set diverso di utenti tipo. Non eseguire alcuna istanza con credenziali di amministratore.
 
-**In un’istanza di pubblicazione:**
+**In un&#39;istanza di pubblicazione:**
 
 * Solo gli utenti del gruppo utenti moduli possono visualizzare in anteprima, creare bozze e inviare moduli.
 * Solo gli utenti del gruppo cm-user-agent possono visualizzare in anteprima le lettere di gestione della corrispondenza.
 * Disattiva tutti gli accessi anonimi non essenziali.
 
-**In un’istanza Autore:**
+**In un&#39;istanza Autore:**
 
 * Esistono diversi gruppi predefiniti con privilegi specifici per ogni utente tipo. Assegna utenti al gruppo.
 
@@ -181,7 +181,7 @@ Per le istanze di authoring, pubblicazione ed elaborazione è necessario un set 
    * Un utente del gruppo cm-user-agent può creare, visualizzare in anteprima e pubblicare lettere di gestione della corrispondenza.
    * Un utente del gruppo di editor dei flussi di lavoro può creare un&#39;applicazione casella in entrata e un modello di flusso di lavoro.
 
-**Durante l’elaborazione dell’autore:**
+**Durante l&#39;elaborazione dell&#39;autore:**
 
 * Per i casi di utilizzo di salvataggio e invio remoti, crea un utente con autorizzazioni di lettura, creazione e modifica per il percorso di contenuto/modulo/fp dell’archivio crx.
 * Aggiungere un utente al gruppo di utenti del flusso di lavoro per consentire a un utente di utilizzare le applicazioni della casella in entrata AEM.
@@ -196,4 +196,4 @@ Un cluster di elaborazione viene eseguito in modalità di creazione ma non viene
 
 ### Utilizzare le best practice per l’AEM per proteggere un ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Questo documento fornisce istruzioni specifiche per l’ambiente AEM Forms. Al momento dell’implementazione, assicurati che l’installazione AEM sottostante sia sicura. Per istruzioni dettagliate, consulta [Elenco di controllo della sicurezza AEM](/help/sites-administering/security-checklist.md) documentazione.
+Questo documento fornisce istruzioni specifiche per l’ambiente AEM Forms. Al momento dell’implementazione, assicurati che l’installazione AEM sottostante sia sicura. Per istruzioni dettagliate, consulta la documentazione dell&#39;[Elenco di controllo della sicurezza AEM](/help/sites-administering/security-checklist.md).

@@ -24,19 +24,19 @@ ht-degree: 2%
 
 Le app AEM Mobile si basano su una blueprint che definisce la struttura e le proprietà di una pagina. Puoi configurare le seguenti proprietà dell’applicazione:
 
-* **Titolo:** Titolo dell’applicazione.
-* **Percorso di destinazione:** Posizione nell&#39;archivio in cui è memorizzata l&#39;applicazione. Lascia l’impostazione predefinita per creare un percorso basato sul nome dell’app.
+* **Titolo:** Titolo dell&#39;applicazione.
+* **Percorso di destinazione:** Il percorso nell&#39;archivio in cui è archiviata l&#39;applicazione. Lascia l’impostazione predefinita per creare un percorso basato sul nome dell’app.
 
 * **Nome:** Il valore predefinito è il valore della proprietà Title con spazi rimossi. Il nome viene utilizzato all’interno di AEM per fare riferimento all’applicazione, ad esempio, per il nodo dell’archivio che rappresenta l’applicazione.
-* **Descrizione:** Descrizione dell&#39;applicazione.
-* **URL server:** L’URL che fornisce aggiornamenti di contenuto OTA (Over-the-Air) all’applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (derivata dal servizio esternalizzatore). Nota: questa deve essere un’istanza del server di pubblicazione anziché un’istanza Autore, che richiede l’autenticazione.
+* **Descrizione:** una descrizione dell&#39;applicazione.
+* **URL server:** URL che fornisce aggiornamenti di contenuto OTA (Over-the-Air) per l&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (derivata dal servizio esternalizzatore). Nota: questa deve essere un’istanza del server di pubblicazione anziché un’istanza Autore, che richiede l’autenticazione.
 
 Puoi anche fornire un file di immagine da utilizzare come miniatura dell’applicazione, selezionare la configurazione di PhoneGap Build da utilizzare e selezionare la configurazione di analisi dell’app mobile da utilizzare. Ad Experience Manager, questa immagine viene utilizzata solo come miniatura per rappresentare l’app mobile nella console delle app mobili.
 
 Sono disponibili schede aggiuntive (e facoltative) per build Cloud Service e per l’integrazione del plug-in SDK di Adobe Mobile Services nell’app.
 
 * Genera: fai clic su Gestisci configurazioni e configura il servizio di build build.phonegap.com qui. Quindi, dall’elenco a discesa, potrai selezionare il servizio cloud PhoneGap Build appena creato.
-* Analytics: fai clic su Gestisci configurazioni e configura il tuo [SDK di Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) servizio cloud. Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
+* Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) di Adobe Mobile Services. Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
 
 ## Utilizzo dei modelli di app {#using-app-templates}
 
@@ -52,15 +52,15 @@ Il pacchetto di esempi più recente delle app AEM include una versione aggiornat
 Passaggi per creare un’app basata su un modello di app:
 
 1. Passa al catalogo delle app AEM Mobile: &lt;*server-url*>aem/apps.html/content/mobileapps
-1. Seleziona **Crea** e quindi scegliere **App** come mostrato di seguito
+1. Seleziona **Crea**, quindi scegli **App** come mostrato di seguito
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-Seleziona un modello di app reso disponibile da uno sviluppatore AEM. Consulta [Struttura di un’app AEM Mobile](/help/mobile/phonegap-structure-an-app.md) per assistenza agli sviluppatori.
+Seleziona un modello di app reso disponibile da uno sviluppatore AEM. Consulta [Struttura di un&#39;app AEM Mobile](/help/mobile/phonegap-structure-an-app.md) per assistenza agli sviluppatori.
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
-Compila i dettagli della nuova app secondo necessità, inclusa la modifica facoltativa dell’immagine di anteprima. Questi valori possono essere modificati in un secondo momento da **Gestisci app** affiancare.
+Compila i dettagli della nuova app secondo necessità, inclusa la modifica facoltativa dell’immagine di anteprima. Questi valori possono essere modificati in un secondo momento dal riquadro **Gestione app**.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 

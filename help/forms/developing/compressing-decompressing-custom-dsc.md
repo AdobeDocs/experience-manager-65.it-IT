@@ -18,9 +18,9 @@ ht-degree: 0%
 
 Esperienza con AEM Forms nella gestione dei processi JEE, nella programmazione Java™ di base e nella creazione di componenti personalizzati.
 
-**Altri prodotti aggiuntivi richiesti**
+**Altri prodotti richiesti**
 
-Editor Java™ come [Eclipse](https://www.eclipse.org/) o [IDE Netbeans](https://netbeans.apache.org/)
+Editor Java™ come [Eclipse](https://www.eclipse.org/) o [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Livello utente {#user-level}
 

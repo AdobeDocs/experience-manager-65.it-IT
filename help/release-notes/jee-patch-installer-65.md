@@ -19,11 +19,11 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->[Contatta il supporto](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support) per ulteriori informazioni o per ottenere la patch.
+>[Contattare il supporto tecnico](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support) per ulteriori informazioni o per ottenere la patch.
 
 ## Informazioni sul programma di installazione delle patch {#about-the-patch-installer}
 
-Il programma di installazione delle patch per Forms JEE per AEM 6.5 include tutti i problemi risolti relativi a tutti i componenti di Forms JEE per AEM 6.5 disponibili fino al rilascio di questa patch. Scopri le ultime novità  [Note sulla versione del Service Pack](release-notes.md) per un elenco completo dei problemi risolti.
+Il programma di installazione delle patch per Forms JEE per AEM 6.5 include tutti i problemi risolti relativi a tutti i componenti di Forms JEE per AEM 6.5 disponibili fino al rilascio di questa patch. Per un elenco completo dei problemi risolti, consulta le ultime [note sulla versione del Service Pack](release-notes.md).
 
 ## Prerequisiti per l’installazione della patch {#prerequisites-to-installing-the-patch}
 
@@ -31,7 +31,7 @@ Il programma di installazione delle patch per Forms JEE per AEM 6.5 include tutt
 
 ## Installazione e configurazione della patch {#installing-and-configuring-the-patch}
 
-1. Effettua una copia di backup di &lt;*AEM_forms_root* cartella >/deploy. Sarà necessaria se decidi di disinstallare la correzione rapida.
+1. Esegui un backup della cartella &lt;*AEM_forms_root*>/deploy. Sarà necessaria se decidi di disinstallare la correzione rapida.
 1. Arresta il server applicazioni.
 1. Estrai sul disco rigido il file archivio del programma di installazione della patch.
 1. Nella directory denominata in base al sistema operativo in uso:
@@ -50,33 +50,33 @@ Passare alla directory appropriata e dal prompt dei comandi digitare `./aem65_cf
    Viene avviata una procedura di installazione guidata.
 
 1. Nel pannello introduttivo, fai clic su **[!UICONTROL Avanti]**.
-1. Il giorno **Scegli cartella di installazione** , verificare che il percorso predefinito visualizzato sia corretto per l&#39;installazione esistente oppure fare clic su **[!UICONTROL Sfoglia]** per selezionare la cartella alternativa in cui è installato AEM forms, quindi fare clic su **[!UICONTROL Successivo]**.
+1. Nella schermata **Scegli cartella di installazione**, verifica che il percorso predefinito visualizzato sia corretto per l&#39;installazione esistente oppure fai clic su **[!UICONTROL Sfoglia]** per selezionare la cartella alternativa in cui sono installati i moduli AEM, quindi fai clic su **[!UICONTROL Avanti]**.
 1. Leggi le informazioni di riepilogo della patch di correzione rapida e fai clic su **[!UICONTROL Avanti]**.
 1. Leggi le informazioni di riepilogo di pre-installazione e fai clic su **[!UICONTROL Installa]**.
 1. Al termine dell’installazione, fai clic su **[!UICONTROL Avanti]** per applicare gli aggiornamenti della correzione rapida ai file installati.
 
-1. **[Solo per Windows]:** Effettua le seguenti operazioni:
-   * Deseleziona la **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Esegui **Gestione configurazione** utilizzando **ConfigurationManager.bat** file in `[aem-forms root]\configurationManager\bin`.
+1. **[Solo per Windows]:** Effettuare le seguenti operazioni:
+   * Deselezionare l&#39;opzione **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Eseguire **Configuration Manager** utilizzando il file **ConfigurationManager.bat** in `[aem-forms root]\configurationManager\bin`.
 
-   * Oppure deseleziona il **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Prima dell’esecuzione **Gestione configurazione** utilizzo **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passa a *`<AEMForms_Install_Dir>\configurationManager\bin`* e sostituire il **ConfigurationManager.lax** e **ConfigurationManager_IPV6.lax** con il più recente [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) file, Cerca e sostituisci **axis-1.4.1.1.jar** con **axis-1.4.1.2.jar** in questi due file.
+   * In alternativa, deselezionare l&#39;opzione **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Prima di eseguire **Configuration Manager** utilizzando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passare alla directory *`<AEMForms_Install_Dir>\configurationManager\bin`* e sostituire **ConfigurationManager.lax** e **ConfigurationManager_IPV6.lax** con i file [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) più recenti, cercare e sostituire **axis-1.4.1.1.jar** **axis-1.4.1.2.jar** in questi due file.
 
    >[!NOTE]
    >
-   >Utilizzo di **ConfigurationManager.bat** file consente di evitare di aggiornare manualmente il nome dei file con estensione lax.
+   >L&#39;utilizzo del file **ConfigurationManager.bat** consente di evitare l&#39;aggiornamento manuale del nome dei file con estensione lax.
    >
 
 1. **[Solo per Unix]:**
 
-   * Il **Avvia Configuration Manager** per impostazione predefinita. Clic **[!UICONTROL Fine]** per eseguire Configuration Manager immediatamente o per eseguire **Gestione configurazione** in seguito, deseleziona la **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Puoi iniziare **Gestione configurazione** in un secondo momento utilizzando lo script appropriato nel `[AEM_forms_root]/configurationManager/bin` directory.
+   * La casella di controllo **Avvia Configuration Manager** è selezionata per impostazione predefinita. Fai clic su **[!UICONTROL Fine]** per eseguire Configuration Manager immediatamente o su **Configuration Manager** in un secondo momento, deseleziona l&#39;opzione **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. È possibile avviare **Configuration Manager** in un secondo momento utilizzando lo script appropriato nella directory `[AEM_forms_root]/configurationManager/bin`.
 
-1. In base al server applicazioni in uso, scegliere uno dei seguenti documenti e seguire le istruzioni riportate nella *Configurazione e distribuzione dei moduli AEM* sezione.
+1. A seconda del server applicazioni in uso, scegliere uno dei seguenti documenti e seguire le istruzioni riportate nella sezione *Configurazione e distribuzione dei moduli AEM*.
 
    * [Installazione e distribuzione di moduli AEM per JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
    * [Installazione e distribuzione di moduli AEM per WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Solo JBoss®) Dopo aver installato la patch e configurato il server, eliminare tmp e le directory di lavoro del server applicazioni JBoss®.
 
-## Configurazioni post-distribuzione {#post-deployment-configurations}
+## Configurazioni di distribuzione Post {#post-deployment-configurations}
 
 ### Configurazioni SAML {#saml-configurations}
 

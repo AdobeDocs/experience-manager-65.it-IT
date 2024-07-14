@@ -26,13 +26,13 @@ Durante la creazione di una comunicazione interattiva, è possibile aggiungere g
 
 Per aggiungere e configurare un grafico in una comunicazione interattiva, effettua le seguenti operazioni:
 
-1. Seleziona **Componenti** dalla barra laterale della comunicazione interattiva.
-1. Trascina la **Grafico** a uno dei seguenti componenti:
+1. Selezionare **Componenti** dalla barra laterale della comunicazione interattiva.
+1. Trascina e rilascia il componente **Grafico** in uno dei seguenti componenti:
 
    * Canale di stampa: area di destinazione o campo Immagine
    * Canale web: pannello o area di destinazione
 
-1. Seleziona il componente grafico nell’editor di comunicazione interattiva e seleziona **[!UICONTROL Configura (]** ![configure_icon](assets/configure_icon.png)) dalla barra degli strumenti Componente.
+1. Seleziona il componente grafico nell&#39;editor comunicazioni interattive e seleziona **[!UICONTROL Configura (]** ![icona_configurazione](assets/configure_icon.png)) dalla barra degli strumenti del componente.
 
    Le proprietà del grafico vengono visualizzate nel riquadro sinistro.
 
@@ -40,18 +40,18 @@ Per aggiungere e configurare un grafico in una comunicazione interattiva, effett
 
    Proprietà di base di un grafico a linee nel canale di stampa
 
-   ![Proprietà di base di un grafico a linee nel canale web](assets/chart_properties_web_new.png)
+   ![Proprietà di base di un grafico a linee nel canale Web](assets/chart_properties_web_new.png)
 
    Proprietà di base di un grafico a linee nel canale web
 
-1. Configurare [proprietà grafico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) in base al tipo di canale.
-1. (Solo canale di stampa) In **[!UICONTROL Impostazioni agente]**, specifica se l&#39;agente deve obbligatoriamente utilizzare questo grafico. Se i **[!UICONTROL È Obbligatorio Per L’Agente Utilizzare Questo Grafico]** non è selezionata, l&#39;agente può selezionare l&#39;icona dell&#39;occhio per il grafico nel **[!UICONTROL Contenuto]** nell’interfaccia utente dell’agente per mostrare o nascondere il grafico.
+1. Configura le [proprietà del grafico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) in base al tipo di canale.
+1. (Solo canale di stampa) In **[!UICONTROL Impostazioni agente]**, specificare se è obbligatorio per l&#39;agente utilizzare questo grafico. Se l&#39;opzione **[!UICONTROL t è obbligatoria per l&#39;agente per l&#39;utilizzo di questo grafico]** non è selezionata, l&#39;agente può selezionare l&#39;icona dell&#39;occhio per il grafico nella scheda **[!UICONTROL Content]** dell&#39;interfaccia utente agente per mostrare o nascondere il grafico.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Seleziona ![done_icon](assets/done_icon.png) per salvare le proprietà del grafico.
+1. Seleziona ![icona_fine](assets/done_icon.png) per salvare le proprietà del grafico.
 
-   Seleziona **[!UICONTROL Anteprima]** per visualizzare l&#39;aspetto e i dati associati al grafico. Seleziona **[!UICONTROL Modifica]** per riconfigurare le proprietà del grafico.
+   Selezionare **[!UICONTROL Anteprima]** per visualizzare l&#39;aspetto e i dati associati al grafico. Selezionare **[!UICONTROL Modifica]** per riconfigurare le proprietà del grafico.
 
 ## Configurare le proprietà del grafico {#configure-chart-properties}
 
@@ -151,29 +151,29 @@ Configura le seguenti proprietà durante la creazione di grafici per i canali di
   </tr>
   <tr>
    <td>Suggerimento</td>
-   <td><p>Formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati nel grafico nel canale web. Il valore predefinito è ${x}(${y}). A seconda del tipo di grafico, quando si posiziona il mouse su un punto, una barra o una sezione del grafico, le variabili ${x}e ${y} vengono sostituiti in modo dinamico con i valori corrispondenti sull'asse X e sull'asse Y e visualizzati nella descrizione comando.</p> <p>Per disattivare la descrizione comando, lasciare <span class="uicontrol">Descrizione</code> campo vuoto. Questa opzione non è applicabile ai grafici a linee e a superficie. Ad esempio, consulta <a href="#chartoutputprintweb">Esempio 1: output del grafico in stampa e sul Web</a>.</p> </td>
+   <td><p>Formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati nel grafico nel canale web. Il valore predefinito è ${x}(${y}). A seconda del tipo di grafico, quando si posiziona il mouse su un punto, una barra o una sezione del grafico, le variabili ${x}e ${y} vengono sostituite in modo dinamico con i valori corrispondenti sull'asse X e sull'asse Y e visualizzate nella descrizione comando.</p> <p>Per disattivare la descrizione comando, lasciare la descrizione <span class="uicontrol"></code> campo vuoto. Questa opzione non è applicabile ai grafici a linee e a superficie. Ad esempio, vedere <a href="#chartoutputprintweb">Esempio 1: output grafico in stampa e Web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
    <td>Configurazioni specifiche per il grafico</td>
    <td><p>Oltre alle configurazioni comuni, sono disponibili le seguenti configurazioni specifiche per i grafici:</p>
     <ul>
-     <li><strong>Mostra legenda: </strong>Se selezionata, mostra una legenda per il grafico a torta o ad anello.</li>
+     <li><strong>Mostra legenda: </strong>Se abilitata, mostra una legenda per il grafico a torta o ad anello.</li>
      <li><strong>Posizione legenda: </strong>Specifica la posizione della legenda rispetto al grafico. Le opzioni disponibili sono Right, Left, Top e Bottom. Utilizza la legenda a destra nel canale di stampa.</li>
-     <li><strong>Raggio interno</strong>: disponibile per i grafici ad anello per specificare il raggio (in pixel) del cerchio interno del grafico.</li>
+     <li><strong>Raggio interno</strong>: disponibile per i grafici ad anello per specificare il raggio (in pixel) del cerchio interno nel grafico.</li>
      <li><strong>Colore linea</strong>: disponibile per i grafici a linee, a linee, a punti e ad area per specificare il colore della linea nel grafico.</li>
      <li><strong>Colore punto</strong>: disponibile per i grafici Punto e Linea e Punto per specificare il colore dei punti nel grafico.<br /> </li>
-     <li><strong>Colore area</strong>: disponibile per i grafici a superficie per specificare il colore dell'area sotto la linea del grafico.</li>
-     <li><strong>Punto di riferimento &gt; Tipo di associazione: </strong>Disponibile per grafici a quadrante per<strong> </strong>specificare il tipo di associazione per il punto di riferimento. Utilizzare la proprietà dell'oggetto modello dati o testo statico per definire il valore per il punto di riferimento.</li>
+     <li><strong>Colore area</strong>: disponibile per i grafici ad area per specificare il colore dell'area sotto la linea del grafico.</li>
+     <li><strong>Punto di riferimento &gt; Tipo di associazione: </strong>Disponibile per i grafici a quadrante per<strong> </strong>specificare il tipo di associazione per il punto di riferimento. Utilizzare la proprietà dell'oggetto modello dati o testo statico per definire il valore per il punto di riferimento.</li>
      <li><strong>Punto di riferimento &gt; Asse X: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di associazione per specificare il valore dell'asse X per il punto di riferimento.</li>
      <li><strong>Punto di riferimento &gt; Asse Y: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di associazione per specificare il valore dell'asse Y per il punto di riferimento.</li>
      <li><strong>Punto di riferimento &gt; Oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci la proprietà dell’oggetto modello dati del modulo per identificare la serie per il punto di riferimento. </li>
      <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà object del modello dati del modulo per la serie e il valore definito in questo campo per identificare la serie per il punto di riferimento.</li>
      <li><strong>Punto di riferimento &gt; Oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci una proprietà dell’oggetto modello dati del modulo di pari livello rispetto alle proprietà tracciate sull’asse X e sull’asse Y. Inoltre, per le serie multiple, definire una proprietà oggetto modello dati che sia un'entità figlio della proprietà oggetto modello dati definita per la serie.</li>
-     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà dell'oggetto modello dati del modulo per il punto di riferimento e il valore definito in questo campo per identificare il punto di riferimento per il grafico.<br /> <strong>Etichette quadrante &gt; In alto a sinistra:</strong> Disponibile per i grafici a quadrante per specificare il nome del quadrante superiore sinistro.</li>
-     <li><strong>Etichette quadrante &gt; In alto a destra:</strong> Disponibile per i grafici a quadrante per specificare il nome del quadrante superiore destro.</li>
-     <li><strong>Etichette quadrante &gt; In basso a destra: </strong>Disponibile per i grafici a quadrante per specificare il nome del quadrante inferiore destro.</li>
-     <li><strong>Etichette quadrante &gt; In basso a sinistra: </strong>Disponibile per i grafici a quadrante per specificare il nome del quadrante inferiore sinistro.</li>
+     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per punto di riferimento: </strong>Disponibile per grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà dell'oggetto modello dati del modulo per il punto di riferimento e il valore definito in questo campo per identificare il punto di riferimento per il grafico.<br /> <strong>Etichette quadrante &gt; In alto a sinistra:</strong> Disponibile per i grafici quadrante per specificare il nome del quadrante in alto a sinistra.</li>
+     <li><strong>Etichette quadrante &gt; In alto a destra:</strong> Disponibile per i grafici quadrante per specificare il nome del quadrante in alto a destra.</li>
+     <li><strong>Etichette quadrante &gt; In basso a destra: </strong>Disponibile per i grafici quadrante per specificare il nome del quadrante in basso a destra.</li>
+     <li><strong>Etichette quadrante &gt; In basso a sinistra: </strong>Disponibile per i grafici quadrante per specificare il nome del quadrante in basso a sinistra.</li>
     </ul> </td>
    <td>Stampa e Web</td>
   </tr>
@@ -186,11 +186,11 @@ Configura le seguenti proprietà durante la creazione di grafici per i canali di
 
 ![Funzioni nei grafici](assets/functions_charts_new.png)
 
-Il componente Grafico include alcune funzioni incorporate, ma puoi scrivere [funzioni personalizzate](#customfunctionsweb) e renderle disponibili per l’utilizzo nella configurazione del grafico nel canale web.
+Sebbene il componente Grafico includa alcune funzioni incorporate, è possibile scrivere [funzioni personalizzate](#customfunctionsweb) e renderle disponibili per l&#39;utilizzo nella configurazione del grafico nel canale Web.
 
 Per impostazione predefinita, con il componente Grafico sono disponibili le seguenti funzioni:
 
-**Media (media)** Restituisce la media dei valori sull&#39;asse X o Y per un determinato valore sull&#39;altro asse.
+**Media (Media)** Restituisce la media dei valori sull&#39;asse X o Y per un determinato valore sull&#39;altro asse.
 
 **Somma** Restituisce la somma di tutti i valori sull&#39;asse X o Y per un determinato valore sull&#39;altro asse.
 
@@ -206,7 +206,7 @@ Per impostazione predefinita, con il componente Grafico sono disponibili le segu
 
 **Modalità** Restituisce il valore con la maggior parte delle occorrenze sull&#39;asse X o Y per un determinato valore sull&#39;altro asse.
 
-Per ulteriori informazioni, consulta [Esempio 2: applicazione delle funzioni Somma e Frequenza in un grafico a linee](#applicationsumfrequency).
+Per ulteriori informazioni, vedere [Esempio 2: applicazione delle funzioni Somma e Frequenza in un grafico a linee](#applicationsumfrequency).
 
 ### Funzioni personalizzate nel canale web {#customfunctionsweb}
 
@@ -226,18 +226,18 @@ Multiply(valueArray, category) {
 
 Dopo aver scritto una funzione personalizzata, eseguire le operazioni seguenti per renderla disponibile per l&#39;utilizzo nella configurazione del grafico:
 
-1. Aggiungi la funzione personalizzata nella libreria client associata alla comunicazione interattiva pertinente. Per ulteriori informazioni, consulta [Configurazione dell’azione Invia](/help/forms/using/configuring-submit-actions.md) e [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md).
+1. Aggiungi la funzione personalizzata nella libreria client associata alla comunicazione interattiva pertinente. Per ulteriori informazioni, vedere [Configurazione dell&#39;azione di invio](/help/forms/using/configuring-submit-actions.md) e [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md).
 
-1. Per visualizzare la funzione personalizzata nel menu a discesa Funzione, in CRXDe Lite, crea un’ `nt:unstructured` nella cartella apps con le seguenti proprietà:
+1. Per visualizzare la funzione personalizzata nel menu a discesa Funzione, in CRXDe Lite, crea un nodo `nt:unstructured` nella cartella delle app con le seguenti proprietà:
 
-   * Aggiungi proprietà `guideComponentType` con valore come `fd/af/reducer`. (obbligatorio)
+   * Aggiungere la proprietà `guideComponentType` con valore come `fd/af/reducer`. (obbligatorio)
 
-   * Aggiungi proprietà `value` a un nome completo della funzione JavaScript™ personalizzata. (obbligatorio) e impostarne il valore sul nome della funzione personalizzata, ad esempio Moltiplica.
-   * Aggiungi proprietà `jcr:description` con il valore che si desidera visualizzare come nome della funzione personalizzata visualizzata nel menu a discesa Funzione. Ad esempio: **Moltiplica**.
+   * Aggiungere la proprietà `value` a un nome completo della funzione JavaScript™ personalizzata. (obbligatorio) e impostarne il valore sul nome della funzione personalizzata, ad esempio Moltiplica.
+   * Aggiungere la proprietà `jcr:description` con il valore che si desidera visualizzare come nome della funzione personalizzata visualizzata nel menu a discesa Funzione. Ad esempio, **Moltiplica**.
 
-   * Aggiungi proprietà `qtip` con un valore che sarà una breve descrizione della funzione personalizzata. Viene visualizzato come descrizione comando quando si passa il puntatore sul nome della funzione nel **Funzione** elenco a discesa.
+   * Aggiungere la proprietà `qtip` con un valore che sarà una breve descrizione della funzione personalizzata. Viene visualizzato come descrizione comando quando si passa il puntatore sul nome della funzione nell&#39;elenco a discesa **Funzione**.
 
-1. Clic **Salva tutto** per salvare la configurazione.
+1. Fai clic su **Salva tutto** per salvare la configurazione.
 
 La funzione è ora disponibile per l’utilizzo nel grafico.
 
@@ -252,9 +252,9 @@ Comprendiamo in dettaglio le informazioni minime richieste nelle proprietà di b
 A questo scopo, specifica le seguenti proprietà:
 
 * **[!UICONTROL Nome]** - Specificare il nome del grafico.
-* **[!UICONTROL Tipo di grafico]** - Seleziona **Colonna** dall’elenco a discesa.
-* **[!UICONTROL Titolo]** - Specificare il tipo di spesa per l&#39;asse X e l&#39;importo della transazione per l&#39;asse Y.
-* **[!UICONTROL Oggetti modello dati]** : seleziona le proprietà dell’oggetto modello dati per creare associazioni di dati per l’asse X (tipo di spesa) e l’asse Y (importo transazione).
+* **[!UICONTROL Tipo di grafico]** - Selezionare **Colonna** dall&#39;elenco a discesa.
+* **[!UICONTROL Titolo]** - Specifica il tipo di spesa per l&#39;asse X e l&#39;importo della transazione per l&#39;asse Y.
+* **[!UICONTROL Oggetti modello dati]** - Selezionare le proprietà dell&#39;oggetto modello dati per creare associazioni dati per l&#39;asse X (Tipo di spesa) e l&#39;asse Y (Importo transazione).
 
 ![Istogramma nel canale di stampa di una comunicazione interattiva](assets/sample_chart_print_column_new.png)
 
@@ -265,10 +265,10 @@ Istogramma nel canale di stampa di una comunicazione interattiva
 A questo scopo, specifica le seguenti proprietà:
 
 * **[!UICONTROL Nome]** - Specificare il nome del grafico.
-* **[!UICONTROL Tipo di grafico]** - Seleziona **[!UICONTROL Anello]** dall’elenco a discesa.
-* **[!UICONTROL Oggetti modello dati]** : seleziona le proprietà dell’oggetto modello dati per creare associazioni di dati per l’asse X (tipo di spesa) e l’asse Y (importo transazione).
-* **[!UICONTROL Raggio interno]** - Specificate il valore Raggio interno (Inner Radius) come 150 per specificare il raggio (in pixel) del cerchio interno del grafico.
-* **[!UICONTROL Descrizione]** - Utilizza il ${x}(${y}) per visualizzare la descrizione comando. La descrizione comando viene visualizzata come: Tipo di spesa (Importo transazione). Esempio: debito per Bitcoin(10000).
+* **[!UICONTROL Tipo di grafico]** - Selezionare **[!UICONTROL Anello]** dall&#39;elenco a discesa.
+* **[!UICONTROL Oggetti modello dati]** - Selezionare le proprietà dell&#39;oggetto modello dati per creare associazioni dati per l&#39;asse X (Tipo di spesa) e l&#39;asse Y (Importo transazione).
+* **[!UICONTROL Raggio interno]** - Specificare il valore di Raggio interno come 150 per specificare il raggio (in pixel) del cerchio interno nel grafico.
+* **[!UICONTROL Descrizione]** - Utilizzare il formato predefinito ${x}(${y}) per visualizzare la descrizione. La descrizione comando viene visualizzata come: Tipo di spesa (Importo transazione). Esempio: debito per Bitcoin(10000).
 
 ![Grafico ad anello nel canale web di una comunicazione interattiva](assets/sample_chart_web_new.png)
 
@@ -278,7 +278,7 @@ Grafico ad anello nel canale web di una comunicazione interattiva
 
 Applicando le funzioni in un grafico, è possibile tracciare i dati che non vengono forniti direttamente dal modello dati del modulo. In questo esempio, utilizziamo un esempio di estratto conto della carta di credito per capire come le funzioni Somma e Frequenza possono essere applicate al grafico.
 
-![Grafico a linee senza funzione con due transazioni &quot;Debito per AirBnB&quot;](assets/line_chart_web_new.png)
+![Grafico a linee senza funzione con due transazioni &quot;Debit for AirBnB&quot;](assets/line_chart_web_new.png)
 
 Grafico a linee senza funzione con due transazioni &quot;Debito per AirBnB&quot;
 
@@ -288,7 +288,7 @@ Puoi applicare la funzione sum per sommare i valori di più istanze della stessa
 
 La funzione Somma può rendere il grafico più utile quando si desidera fascicolare e visualizzare la somma per molte istanze della stessa proprietà di dati.
 
-![Somma del grafico a linee](assets/line_chart_web_sum_new.png)
+![Somma grafico a linee](assets/line_chart_web_sum_new.png)
 
 ### Funzione di frequenza {#frequency-function}
 
@@ -303,15 +303,15 @@ Il grafico rappresenta l’importo delle transazioni eseguite in un determinato 
 A questo scopo, specifica le seguenti proprietà:
 
 * **Nome:** Specificare il nome del grafico.
-* **Tipo di grafico:** Seleziona **Quadrante** dall’elenco a discesa.
+* **Tipo di grafico:** Selezionare **Quadrante** dall&#39;elenco a discesa.
 
-* Seleziona la **Serie multiple** casella di controllo.
-* **Oggetto modello dati**: specifica la proprietà oggetto modello dati per la serie. La proprietà dell’oggetto modello dati per il nome della banca è un elemento padre delle proprietà dell’oggetto modello dati tracciate sull’asse X e sull’asse Y.
+* Selezionare la casella di controllo **Serie multiple**.
+* **Oggetto modello dati**: specificare la proprietà oggetto modello dati per la serie. La proprietà dell’oggetto modello dati per il nome della banca è un elemento padre delle proprietà dell’oggetto modello dati tracciate sull’asse X e sull’asse Y.
 * **Oggetti modello dati:** Selezionare le proprietà dell&#39;oggetto modello dati per creare associazioni dati per l&#39;asse X (Data transazione) e l&#39;asse Y (Importo transazione).
-* In **Punto di riferimento** sezione, seleziona **Statico** come Tipo di binding.
+* Nella sezione **Punto di riferimento**, selezionare **Static** come tipo di associazione.
 
 * Specificate i valori per i punti di riferimento dell&#39;asse X e dell&#39;asse Y.
 * Specificate le etichette dei quadranti Superiore sinistro, Superiore destro, Inferiore destro e Inferiore sinistro.
-* Seleziona la **Mostra legende** per visualizzare i codici colore per i nomi delle banche.
+* Selezionare la casella di controllo **Mostra legende** per visualizzare i codici colore per i nomi delle banche.
 
-![Grafici a quadrante](assets/charts_quadrant_example_new.png)
+![Grafici quadranti](assets/charts_quadrant_example_new.png)

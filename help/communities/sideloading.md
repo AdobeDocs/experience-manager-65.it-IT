@@ -32,7 +32,7 @@ I passaggi per aggiungere dinamicamente i componenti SCF sono i seguenti:
 
 1. [Aggiungere il componente al DOM](#dynamically-add-component-to-dom)
 
-1. [Sideload del componente](#sideload-by-invoking-scf) utilizzando uno dei due metodi seguenti:
+1. [Eseguire il sideload del componente](#sideload-by-invoking-scf) utilizzando uno dei due metodi seguenti:
 
 * [Inclusione dinamica](#dynamic-inclusion)
    * Aumenta il limite di tutti i componenti aggiunti in modo dinamico
@@ -41,7 +41,7 @@ I passaggi per aggiungere dinamicamente i componenti SCF sono i seguenti:
 
 >[!NOTE]
 >
->Sideload di [risorse non esistenti](scf.md#add-or-include-a-communities-component) non è supportato.
+>Il sideload di [risorse non esistenti](scf.md#add-or-include-a-communities-component) non è supportato.
 
 ## Aggiungi componente in modo dinamico a DOM {#dynamically-add-component-to-dom}
 
@@ -88,4 +88,4 @@ Invece di avviare tutti i componenti SCF presenti nel DOM, è possibile specific
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-Dove `someId` è il valore del `data-component-id` attributo.
+Dove `someId` è il valore dell&#39;attributo `data-component-id`.

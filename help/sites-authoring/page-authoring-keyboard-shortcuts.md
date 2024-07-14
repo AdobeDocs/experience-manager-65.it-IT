@@ -28,7 +28,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 | Dove si trova | Scelta rapida | Descrizione |
 |---|---|---|
-| Qualsiasi modalità delle finestre di modifica | `Ctrl-Shift-m` | Passa da **Anteprima** e la selezionata [modalità](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (ad esempio, **Modifica**, **Layout** e così via) |
+| Qualsiasi modalità delle finestre di modifica | `Ctrl-Shift-m` | Consente di passare da **Anteprima** alla [modalità](/help/sites-authoring/author-environment-tools.md#page-modes)</a> attualmente selezionata, ad esempio **Modifica**, **Layout** e così via |
 | Modalità **Modifica** | `Ctrl-z` | [Annulla l’ultima modifica](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Ripristina l’ultima modifica](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleziona più paragrafi |
@@ -42,7 +42,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->&amp;ast Una volta che l&#39;utente inizia a interagire con la pagina in modalità Anteprima, `Ctrl-Shift-m` collegamento non più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
+>&amp;ast; Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, il collegamento `Ctrl-Shift-m` non è più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano le [console](/help/sites-authoring/keyboard-shortcuts.md).
 

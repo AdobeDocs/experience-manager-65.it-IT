@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Che cos’è il giorno difficile 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; è un’applicazione che consente di sottoporre a test di stress i limiti dell’istanza di AEM. Può essere eseguita con la suite di test predefinita o configurata in base alle tue esigenze di test. Puoi guardare [questa registrazione](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) per la presentazione della domanda.
+&quot;Tough Day 2&quot; è un’applicazione che consente di sottoporre a test di stress i limiti dell’istanza di AEM. Può essere eseguita con la suite di test predefinita o configurata in base alle tue esigenze di test. Puoi guardare [questa registrazione](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) per una presentazione dell&#39;applicazione.
 
 >[!CAUTION]
 >
@@ -26,13 +26,13 @@ ht-degree: 1%
 
 ## Come eseguire duro giorno 2 {#how-to-run-tough-day}
 
-Scarica la versione più recente di Duro giorno 2 dalla [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Dopo aver scaricato l’applicazione, puoi eseguirla automaticamente fornendo la `host` parametro. Nell’esempio seguente, l’istanza dell’AEM viene eseguita localmente in modo che il `localhost` valore utilizzato:
+Scarica la versione più recente del secondo giorno rigido dall&#39;[archivio Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Dopo aver scaricato l&#39;applicazione, è possibile eseguirla automaticamente fornendo il parametro `host`. Nell&#39;esempio seguente, l&#39;istanza AEM viene eseguita localmente in modo da utilizzare il valore `localhost`:
 
 ```xml
 java -jar toughday2.jar --host=localhost
 ```
 
-La suite predefinita che viene eseguita dopo l’aggiunta dei parametri è denominata `toughday`. Contiene i seguenti casi d’uso:
+La suite predefinita eseguita dopo l&#39;aggiunta dei parametri è denominata `toughday`. Contiene i seguenti casi d’uso:
 
 * Crea pagine e Live Copy per esse (inclusi i rollout)
 * Ottieni homepage
@@ -42,7 +42,7 @@ La suite predefinita che viene eseguita dopo l’aggiunta dei parametri è denom
 
 La suite contiene il 15% di azioni di scrittura e l’85% di azioni di lettura.
 
-Per eseguire i test delle suite, il Giorno difficile 2 installerà il pacchetto di contenuti predefinito. Questo può essere evitato impostando `installsamplecontent`parametro a `false`, ma ricorda che devi anche modificare i percorsi predefiniti per i test che intendi eseguire. Se il file jar viene eseguito senza parametri, nel secondo giorno viene visualizzato il messaggio [informazioni della guida](/help/sites-developing/tough-day.md#getting-help).
+Per eseguire i test delle suite, il Giorno difficile 2 installerà il pacchetto di contenuti predefinito. È possibile evitare questo inconveniente impostando il parametro `installsamplecontent` su `false`. È tuttavia necessario modificare anche i percorsi predefiniti per i test che si desidera eseguire. Se il file jar viene eseguito senza parametri, nel secondo giorno vengono visualizzate le [informazioni della Guida](/help/sites-developing/tough-day.md#getting-help).
 
 Di regola, puoi utilizzare l’applicazione seguendo questo pattern:
 
@@ -93,22 +93,22 @@ Nella tabella seguente sono disponibili i parametri della Guida pertinenti.
    <td> </td>
   </tr>
   <tr>
-   <td> —help —runmode/publishmode type= Guida in linea — runmode/publishmode type=&lt;mode&gt;</td>
+   <td> —help —runmode/publishmode type=&lt;Modalità&gt;</td>
    <td>Elenca le informazioni sulla modalità di esecuzione o di pubblicazione specificata.</td>
    <td><p>Java™ -jar toughday2.jar —help —runmode type=constantload</p> <p>Java™ -jar toughday2.jar —help —publishmode type=interval</p> </td>
   </tr>
   <tr>
-   <td>—help —suite=&lt;suitename&gt;</td>
+   <td>—help —suite=&lt;NomeSuite&gt;</td>
    <td>Elenca tutti i test di una determinata suite e le rispettive proprietà configurabili.</td>
    <td><br /> Java™ -jar toughday2.jar —help —suite=get_tests</td>
   </tr>
   <tr>
-   <td> —help —tag=&lt;tag&gt;</td>
+   <td> —help —tag=&lt;Tag&gt;</td>
    <td><br /> Elenca tutti gli elementi con il tag specificato.</td>
    <td>Java™ -jar toughday2.jar —help —tag=publish</td>
   </tr>
   <tr>
-   <td>—aiuto &lt;testclass publisherclass=""&gt;</td>
+   <td>—help &lt;TestClass/PublisherClass&gt;</td>
    <td><br /> Elenca tutte le proprietà configurabili per il test o l’editore specificato.</td>
    <td><p>Java™ -jar toughday2.jar —help UploadPDFTest</p> <p>Java™ -jar toughday2.jar —Aiuta CSVPublisher</p> </td>
   </tr>
@@ -125,7 +125,7 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 
 Puoi trovare i parametri rilevanti nell’elenco seguente:
 
-| **Parametro** | **Descrizione** | **Valore predefinito** | **Valori possibili** |
+| **Parametro** | **Descrizione** | **Valore predefinito** | **Valori Possibili** |
 |---|---|---|---|
 | `--installsamplecontent=<Val>` | Installa o salta il pacchetto di contenuti predefinito per il secondo giorno. | vero | true o false |
 | `--protocol=<Val>` | Protocollo utilizzato per l&#39;host. | http | http o https |
@@ -133,7 +133,7 @@ Puoi trovare i parametri rilevanti nell’elenco seguente:
 | `--port=<Val>` | La porta dell’host. | 4502 |  |
 | `--user=<Val>` | Il nome utente dell’istanza. | admin |  |
 | `--password=<Val>` | Password per l’utente specificato. | admin |  |
-| `--duration=<Val>` | La durata dei test. Può essere espresso in **s** secondi, **m** minuti, **h** ore, e **d** giorni. | 1d |  |
+| `--duration=<Val>` | La durata dei test. Può essere espresso in **s** secondi, **m** minuti, **h** ore e **d** giorni. | 1d |  |
 | `--timeout=<Val>` | Per quanto tempo un test verrà eseguito prima di essere interrotto e contrassegnato come non riuscito. Espresso in secondi. | 180 |  |
 | `--suite=<Val>` | Il valore può essere uno o un elenco (separato da virgole) di suite di test predefinite. | giornata difficile |  |
 | `--configfile=<Val>` | Il file di configurazione yaml di destinazione. |  |  |
@@ -143,13 +143,13 @@ Puoi trovare i parametri rilevanti nell’elenco seguente:
 
 ## Personalizzazione {#customizing}
 
-La personalizzazione può essere ottenuta in due modi: tramite parametri della riga di comando o file di configurazione yaml. **I file di configurazione vengono utilizzati per suite personalizzate di grandi dimensioni e ignorano i parametri predefiniti del giorno 2. I parametri della riga di comando sostituiscono sia i file di configurazione che i parametri di default.**
+La personalizzazione può essere ottenuta in due modi: tramite parametri della riga di comando o file di configurazione yaml. **I file di configurazione vengono utilizzati per le suite personalizzate di grandi dimensioni e sostituiscono i parametri predefiniti del giorno 2. I parametri della riga di comando sostituiscono sia i file di configurazione che i parametri predefiniti.**
 
 L’unico modo per salvare una configurazione di test è copiarla in formato yaml.
 
 ### Aggiunta di un nuovo test {#adding-a-new-test}
 
-Se non si desidera utilizzare il valore predefinito `toughday` suite di test puoi aggiungere un test a tua scelta utilizzando la `add` parametro. Gli esempi seguenti mostrano come aggiungere `CreateAssetTreeTest` eseguire il test utilizzando i parametri della riga di comando o un file di configurazione yaml.
+Se non desideri utilizzare la suite `toughday` predefinita, puoi aggiungere un test scegliendo il parametro `add`. Gli esempi seguenti mostrano come aggiungere il test `CreateAssetTreeTest` utilizzando i parametri della riga di comando o un file di configurazione yaml.
 
 Utilizzando i parametri della riga di comando:
 
@@ -192,7 +192,7 @@ tests:
 
 ### Modifica delle proprietà del test {#changing-the-test-properties}
 
-Se devi modificare una o più proprietà del test, puoi aggiungerle alla riga di comando o al file di configurazione yaml. Per visualizzare tutte le proprietà di test disponibili, aggiungi `--help <TestClass/PublisherClass>` alla riga di comando, ad esempio:
+Se devi modificare una o più proprietà del test, puoi aggiungerle alla riga di comando o al file di configurazione yaml. Per visualizzare tutte le proprietà di test disponibili, aggiungere il parametro `--help <TestClass/PublisherClass>` alla riga di comando, ad esempio:
 
 ```xml
 java -jar toughday2.jar --help CreatePageTreeTest
@@ -200,7 +200,7 @@ java -jar toughday2.jar --help CreatePageTreeTest
 
 I file di configurazione yaml sovrascriveranno i parametri di default di Giorno 2 e i parametri della riga di comando sovrascriveranno sia i file di configurazione che i valori di default.
 
-Gli esempi seguenti mostrano come modificare `template` proprietà per `CreatePageTreeTest` eseguire il test utilizzando i parametri della riga di comando o un file di configurazione yaml.
+Negli esempi seguenti viene illustrato come modificare la proprietà `template` per il test `CreatePageTreeTest` utilizzando i parametri della riga di comando o un file di configurazione yaml.
 
 Utilizzando i parametri della riga di comando:
 
@@ -223,7 +223,7 @@ tests:
 
 Gli esempi seguenti mostrano come aggiungere un test a una suite predefinita e come riconfigurare ed escludere un test esistente da una suite predefinita.
 
-È possibile aggiungere un nuovo test a una suite predefinita utilizzando `add` e specificando la suite predefinita di destinazione.
+È possibile aggiungere un nuovo test a una suite predefinita utilizzando il parametro `add` e specificando la suite predefinita di destinazione.
 
 Utilizzando i parametri della riga di comando:
 
@@ -241,9 +241,9 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-I test esistenti in una determinata suite possono essere riconfigurati utilizzando `config`* *parametro. Specifica anche il nome della suite e il nome effettivo del test (non il nome della classe di test). Puoi trovare il nome del test in `name` della classe Test. Per ulteriori dettagli su come trovare le proprietà del test, leggi [Modifica delle proprietà del test](/help/sites-developing/tough-day.md#changing-the-test-properties) sezione.
+I test esistenti in una determinata suite possono essere riconfigurati utilizzando il parametro `config`* *. Specifica anche il nome della suite e il nome effettivo del test (non il nome della classe di test). È possibile trovare il nome del test nella proprietà `name` della classe del test. Per ulteriori dettagli su come trovare le proprietà dei test, leggere la sezione [Modifica delle proprietà dei test](/help/sites-developing/tough-day.md#changing-the-test-properties).
 
-Nell’esempio seguente il titolo predefinito della risorsa per `CreatePageTreeTest` (denominato `UploadAsset`) viene modificato in &quot;Nuova risorsa&quot;.
+Nell&#39;esempio seguente il titolo predefinito della risorsa per `CreatePageTreeTest` (denominato `UploadAsset`) viene modificato in &quot;NewAsset&quot;.
 
 Utilizzando i parametri della riga di comando:
 
@@ -263,7 +263,7 @@ tests:
       title : NewAsset
 ```
 
-Inoltre, puoi anche rimuovere i test da suite o editori predefiniti dalla configurazione predefinita con l’utilizzo di `exclude` parametro. Specifica anche il nome della suite e il nome effettivo del test (non il Test C `lass` name). Puoi trovare il nome del test in `name` della classe di test. Nell’esempio seguente, il `CreatePageTreeTest` (denominato `UploadAsset`) è stato rimosso dalla suite di test di giornata.
+È inoltre possibile rimuovere i test da suite o editori predefiniti dalla configurazione predefinita utilizzando il parametro `exclude`. Specificare inoltre il nome della suite e il nome effettivo del test (non il nome del test C `lass`). È possibile trovare il nome del test nella proprietà `name` della classe del test. Nell&#39;esempio seguente, il test `CreatePageTreeTest` (denominato `UploadAsset`) viene rimosso dalla suite di giorni duri.
 
 Utilizzando i parametri della riga di comando:
 
@@ -285,11 +285,11 @@ tests:
 
 Il giorno 2 può essere eseguito in una delle seguenti modalità: **normale** e **carico costante**.
 
-Il **normale** la modalità di esecuzione prevede due parametri:
+La modalità di esecuzione **normale** ha due parametri:
 
-* `concurrency` - concurrency rappresenta il numero di thread creati dal giorno difficile 2 per l’esecuzione del test. Su questi thread, i test verranno eseguiti fino a quando la durata non è terminata o non sono presenti altri test da eseguire.
+* `concurrency` - la concorrenza rappresenta il numero di thread che verranno creati dal giorno 2 per l&#39;esecuzione del test. Su questi thread, i test verranno eseguiti fino a quando la durata non è terminata o non sono presenti altri test da eseguire.
 
-* `waittime` - il tempo di attesa tra due esecuzioni di test consecutive sullo stesso thread. Il valore deve essere espresso in millisecondi.
+* `waittime`: tempo di attesa tra due esecuzioni di test consecutive sullo stesso thread. Il valore deve essere espresso in millisecondi.
 
 L’esempio seguente mostra come aggiungere i parametri utilizzando la riga di comando:
 
@@ -306,13 +306,13 @@ runmode:
   concurrency : 200
 ```
 
-Il **carico costante** la modalità di esecuzione differisce dalla modalità di esecuzione normale in quanto genera un numero costante di esecuzioni di test avviate, anziché un numero costante di thread. È possibile impostare il carico utilizzando il parametro della modalità di esecuzione con lo stesso nome.
+La modalità di esecuzione **caricamento costante** differisce dalla modalità di esecuzione normale in quanto genera un numero costante di esecuzioni di test avviate, anziché un numero costante di thread. È possibile impostare il carico utilizzando il parametro della modalità di esecuzione con lo stesso nome.
 
 ### Selezione test {#test-selection}
 
-Il processo di selezione dei test è lo stesso per entrambe le modalità di esecuzione e funziona come segue: tutti i test hanno un `weight` che determina la probabilità di esecuzione in un thread. Ad esempio, se disponi di due test, uno con un peso di 5 e l’altro con un peso di 10, è due volte più probabile che venga eseguito il secondo.
+Il processo di selezione dei test è lo stesso per entrambe le modalità di esecuzione ed è il seguente: tutti i test hanno una proprietà `weight`, che determina la probabilità di esecuzione in un thread. Ad esempio, se disponi di due test, uno con un peso di 5 e l’altro con un peso di 10, è due volte più probabile che venga eseguito il secondo.
 
-Inoltre, i test possono avere `count` , che limita il numero di esecuzioni a un determinato numero. Una volta passato questo numero, non si verificheranno ulteriori esecuzioni del test. Tutte le istanze di test già in esecuzione finiranno l’esecuzione come configurato. Nell&#39;esempio seguente viene illustrato come aggiungere questi parametri nella riga di comando o utilizzando un file di configurazione yaml.
+Inoltre, i test possono avere una proprietà `count`, che limita il numero di esecuzioni a un determinato numero. Una volta passato questo numero, non si verificheranno ulteriori esecuzioni del test. Tutte le istanze di test già in esecuzione finiranno l’esecuzione come configurato. Nell&#39;esempio seguente viene illustrato come aggiungere questi parametri nella riga di comando o utilizzando un file di configurazione yaml.
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20
@@ -333,7 +333,7 @@ oppure
 
 >[!NOTE]
 >
->A causa di esecuzioni parallele, il numero effettivo di esecuzioni dei test non corrisponderà esattamente alla quantità configurata nel `count` parametro. È prevista una deviazione proporzionale al numero di thread in esecuzione (controllati dal `concurrency parameter`).
+>A causa di esecuzioni parallele, il numero effettivo di esecuzioni dei test non corrisponderà esattamente alla quantità configurata nel parametro `count`. È prevista una deviazione proporzionale al numero di thread in esecuzione (controllati da `concurrency parameter`).
 
 ### Prova {#dry-run}
 
@@ -349,7 +349,7 @@ Il secondo giorno genera sia metriche di test che registri. Per ulteriori inform
 
 ### Metriche di test {#test-metrics}
 
-Duro Giorno 2 attualmente riporta nove metriche di test che è possibile valutare. Metriche con **&#42;** il simbolo viene segnalato solo dopo le esecuzioni riuscite:
+Duro Giorno 2 attualmente riporta nove metriche di test che è possibile valutare. Le metriche con il simbolo **&#42;** vengono segnalate solo dopo esecuzioni riuscite:
 
 | **Nome** | **Descrizione** |
 |---|---|
@@ -361,24 +361,24 @@ Duro Giorno 2 attualmente riporta nove metriche di test che è possibile valutar
 | Mediana&#42; | Durata mediana calcolata di tutte le esecuzioni di test. |
 | Media&#42; | Durata media calcolata di tutte le esecuzioni di test. |
 | DevStandard&#42; | La deviazione standard. |
-| 90P&#42; | 90 percentile. |
-| 99P&#42; | 99 percentile. |
+| 90p&#42; | 90 percentile. |
+| 99p&#42; | 99 percentile. |
 | 99,9p&#42; | 99,9 percentile. |
 | Throughput reale&#42; | Numero di esecuzioni diviso per il tempo di esecuzione trascorso. |
 
-Queste metriche vengono scritte con l’aiuto di editori che possono essere aggiunti con `add` (in modo simile all’aggiunta di test). Attualmente sono disponibili due opzioni:
+Queste metriche vengono scritte con l&#39;aiuto di editori che possono essere aggiunti con il parametro `add` (in modo simile all&#39;aggiunta di test). Attualmente sono disponibili due opzioni:
 
-* **CSVPublisher** : l’output è un file CSV.
-* **ConsolePublisher** : l’output viene visualizzato nella console.
+* **CSVPublisher** - l&#39;output è un file CSV.
+* **ConsolePublisher** - l&#39;output viene visualizzato nella console.
 
 Per impostazione predefinita, entrambi gli editori sono abilitati.
 
 Inoltre, esistono due modalità in cui vengono riportate le metriche:
 
-* Il **semplice** modalità di pubblicazione: riporta i risultati dall’inizio dell’esecuzione fino al punto di pubblicazione.
-* Il **intervalli** modalità di pubblicazione: riporta i risultati in un determinato intervallo di tempo. È possibile impostare l&#39;intervallo di tempo con **intervallo** parametro modalità pubblicazione.
+* Modalità di pubblicazione **simple**: riporta i risultati dall&#39;inizio dell&#39;esecuzione fino al punto di pubblicazione.
+* Modalità di pubblicazione **intervalli**: riporta i risultati in un determinato intervallo di tempo. È possibile impostare l&#39;intervallo di tempo con il parametro della modalità di pubblicazione **interval**.
 
-L’esempio seguente mostra come configurare il `intervals` nella riga di comando o utilizzando un file di configurazione yaml.
+Nell&#39;esempio seguente viene illustrato come configurare il parametro `intervals` nella riga di comando o utilizzando un file di configurazione yaml.
 
 Utilizzando i parametri della riga di comando:
 
@@ -400,10 +400,10 @@ publishmode:
 
 Il giorno 2 crea una cartella dei registri nella stessa directory in cui è stato eseguito il giorno 2. Questa cartella contiene due tipi di registri:
 
-* **toughday.log**: contiene messaggi relativi allo stato dell’applicazione, alle informazioni di debug e ai messaggi globali.
-* **duraturo_&lt;testname>.log**: messaggi relativi al test specificato.
+* **toughday.log**: contiene messaggi relativi allo stato dell&#39;applicazione, alle informazioni di debug e ai messaggi globali.
+* **toughday_&lt;testname>.log**: messaggi relativi al test specificato.
 
-I registri non vengono sovrascritti, le esecuzioni successive aggiungono i messaggi ai registri esistenti. I registri hanno diversi livelli. Per ulteriori informazioni, consulta [parametro loglevel.](#global-parameters).
+I registri non vengono sovrascritti, le esecuzioni successive aggiungono i messaggi ai registri esistenti. I registri hanno diversi livelli. Per ulteriori informazioni, vedere il parametro [loglevel.](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}

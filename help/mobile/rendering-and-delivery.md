@@ -21,7 +21,7 @@ ht-degree: 6%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Il contenuto Adobe Experience Manager (AEM) può essere facilmente renderizzato tramite [Servlet Sling predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
+È possibile eseguire facilmente il rendering del contenuto Adobe Experience Manager (AEM) tramite [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
 
 In genere, questi rendering predefiniti percorrono l’archivio e restituiscono il contenuto così com’è.
 
@@ -35,21 +35,21 @@ Il diagramma seguente mostra il rendering di Content Services.
 
 ## Richiesta JSON {#requesting-json}
 
-Utilizzare **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** per richiedere JSON.]
+Utilizza **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** per richiedere JSON.
 
 <table>
  <tbody>
   <tr>
    <td>RISORSA</td>
-   <td>una risorsa di entità in /content/entities<br /> o <br /> una risorsa di contenuto in /content</td>
+   <td>una risorsa entità in /content/entities<br /> o <br /> una risorsa contenuto in /content</td>
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>FACOLTATIVO</strong><br /> </p> <p>configurazione di esportazione trovata in /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omesso, viene applicata la configurazione di esportazione predefinita </p> </td>
+   <td><p><strong>FACOLTATIVO</strong><br /> </p> <p>configurazione di esportazione trovata in /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omessa, viene applicata la configurazione di esportazione predefinita </p> </td>
   </tr>
   <tr>
    <td>PROFONDITÀ-INT</td>
-   <td><strong>FACOLTATIVO</strong><br /> <br /> ricorsione della profondità per il rendering dei figli come utilizzata nel rendering Sling</td>
+   <td><strong>FACOLTATIVO</strong><br /> <br /> ricorsione di profondità per il rendering degli elementi figlio utilizzata nel rendering Sling</td>
   </tr>
  </tbody>
 </table>
@@ -58,7 +58,7 @@ Utilizzare **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quo
 
 È possibile creare configurazioni di esportazione per personalizzare il rendering JSON.
 
-Puoi creare un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
+È possibile creare un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
 
 | Nome nodo | Nome della configurazione (per il selettore di rendering) |
 |---|---|
@@ -108,7 +108,7 @@ La tabella seguente mostra le proprietà delle configurazioni di esportazione:
    <td>String[]</td>
    <td>includi tutto</td>
    <td>Nomi di proprietà</td>
-   <td><p>se excludePropertyPrefixes è impostato<br /> sono incluse le proprietà specificate nonostante la corrispondenza del prefisso venga esclusa,</p> <p>else (escludi proprietà ignorate) include solo queste proprietà</p> </td>
+   <td><p>se excludePropertyPrefixes è impostato<br />, verranno incluse le proprietà specificate nonostante la corrispondenza con il prefisso che viene escluso,</p> <p>else (escludi proprietà ignorate) include solo queste proprietà</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -128,7 +128,7 @@ La tabella seguente mostra le proprietà delle configurazioni di esportazione:
    <td>renameProperties</td>
    <td>Stringa[]<br /> <br /> </td>
    <td>non rinominare nulla</td>
-   <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
+   <td>&lt;nome_proprietà_effettiva&gt;,&lt;nome_proprietà_sostitutiva&gt;</td>
    <td>rinominare le proprietà utilizzando le sostituzioni</td>
   </tr>
  </tbody>
@@ -158,7 +158,7 @@ La tabella seguente mostra le proprietà:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Per i seguenti tipi di risorse sling, non restituire l’esportazione JSON CaaS predefinita.<br /> Restituire un’esportazione json del cliente eseguendo il rendering della risorsa come;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Per i seguenti tipi di risorse sling, non restituire l’esportazione JSON CaaS predefinita.<br /> Restituisci un'esportazione JSON cliente eseguendo il rendering della risorsa come;<br /> &lt;RISORSA&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -174,7 +174,7 @@ Content Services include due configurazioni di esportazione:
 
 La configurazione di esportazione predefinita di Content Services viene applicata se è specificata una configurazione nell&#39;URI richiesto.
 
-&lt;resource>.caas[.&lt;depth-int>].json
+&lt;RISORSA>.caas[.&lt;INT-PROFONDITÀ>].json
 
 <table>
  <tbody>
@@ -192,7 +192,7 @@ La configurazione di esportazione predefinita di Content Services viene applicat
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:testo,testo<br /> jcr:title,title<br /> jcr:descrizione,descrizione<br /> jcr:lastModified,lastModified<br /> cq:tags,tag<br /> cq:lastModified,lastModified</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
@@ -221,7 +221,7 @@ La configurazione di esportazione predefinita di Content Services viene applicat
 
 Questa configurazione estende l’impostazione predefinita per includere il raggruppamento di elementi secondari sotto un nodo secondario.
 
-&lt;site_page>.caas.page[.&lt;depth-int>].json
+&lt;SITE_PAGE>.caas.page[.&lt;INT-PROFONDITÀ>].json
 
 ### Risorse aggiuntive {#additional-resources}
 

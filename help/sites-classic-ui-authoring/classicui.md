@@ -22,7 +22,7 @@ ht-degree: 0%
 
 L’interfaccia classica è l’interfaccia utente orientata al desktop disponibile a partire da CQ5 (predecessore dell’AEM). La seguente documentazione sull’authoring si concentra su questa interfaccia utente.
 
-L’interfaccia touch è la nuova interfaccia utente standard per l’AEM, progettata per essere utilizzata sia sui dispositivi touch che su quelli desktop. Consulta la [documentazione di authoring standard](/help/sites-authoring/author.md) per ulteriori informazioni.
+L’interfaccia touch è la nuova interfaccia utente standard per l’AEM, progettata per essere utilizzata sia sui dispositivi touch che su quelli desktop. Per ulteriori informazioni, consulta la [documentazione standard per l&#39;authoring](/help/sites-authoring/author.md).
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ L’interfaccia touch è la nuova interfaccia utente standard per l’AEM, proge
 
 ## Concetto di authoring (e pubblicazione) {#concept-of-authoring-and-publishing}
 
-Indipendentemente dalla scelta dell’interfaccia utente, esistono alcuni concetti e idee comuni all’authoring, ben descritti [nella documentazione di authoring standard](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).
+Indipendentemente dalla scelta dell&#39;interfaccia utente, esistono alcuni concetti e idee comuni all&#39;authoring, descritti [qui nella documentazione standard sull&#39;authoring](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).

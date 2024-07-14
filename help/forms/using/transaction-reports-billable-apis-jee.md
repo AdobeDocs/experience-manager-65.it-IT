@@ -30,7 +30,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 
 -->
 
-Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l’elenco di [API fatturabili per AEM Forms su OSGi](/help/forms/using/transaction-reports-billable-apis.md).
+Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l&#39;elenco di [API fatturabili per AEM Forms su OSGi](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## API di Document Services fatturabili {#billable-document-services-apis}
 
@@ -64,12 +64,12 @@ Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l’elenco d
    <td>Conversione<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF2</a></td>
+   <td><a>EXPORTPDF2</a></td>
    <td><p>Esporta PDF in tipi di file supportati.</p> </td>
    <td>Conversione<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF3</a></td>
+   <td><a>EXPORTPDF3</a></td>
    <td>Esporta PDF in tipi di file supportati.</td>
    <td>Conversione<br /> </td>
   </tr>
@@ -312,8 +312,8 @@ L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quan
 
 >[!NOTE]
 >
->* L’API di richiamo del servizio assembler può chiamare internamente un’API fatturabile di un altro servizio a seconda dell’input. Quindi, il `invoke API` può essere contabilizzata come nessuna, singola o più transazioni. Il numero di transazioni conteggiate dipende dall’input e dalle API interne richiamate.
->* Un singolo documento PDF prodotto utilizzando il servizio Assembler come `invoke` e `invokeDDX`, può essere contabilizzata come nessuna, singola o più transazioni. Il numero di transazioni conteggiate dipende dalla <!--DDX--> codice.
+>* L’API di richiamo del servizio assembler può chiamare internamente un’API fatturabile di un altro servizio a seconda dell’input. Pertanto, `invoke API` può essere contabilizzato come nessuna, singola o più transazioni. Il numero di transazioni conteggiate dipende dall’input e dalle API interne richiamate.
+>* Un singolo documento PDF prodotto utilizzando il servizio assembler come `invoke` e `invokeDDX` può essere contabilizzato come nessuna, singola o più transazioni. Il numero di transazioni conteggiate dipende dal codice <!--DDX--> fornito.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}

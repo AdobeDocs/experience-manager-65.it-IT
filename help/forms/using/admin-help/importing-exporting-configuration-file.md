@@ -26,12 +26,12 @@ Per evitare rischi di protezione, il valore della password di associazione per i
 >
 >L’importazione del file di configurazione riconfigura i moduli AEM in base alle informazioni contenute nel file. Solo un amministratore di sistema o un consulente di servizi professionali che ha familiarità con il prodotto moduli AEM e con XML deve considerare la modifica del file di configurazione. Potrebbe essere necessario modificare il file di configurazione, ad esempio, per riconfigurare un&#39;impostazione danneggiata.
 
-**Esportare le informazioni di configurazione**
+**Esporta le informazioni di configurazione**
 
 1. In Administration Console, fare clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
 1. Fai clic su Esporta. Se si utilizza Microsoft Internet Explorer, viene richiesto di specificare il percorso in cui salvare il file. Se utilizzi Firefox, il file viene salvato sul desktop.
 
-**Importare le informazioni di configurazione**
+**Importa le informazioni di configurazione**
 
 1. In Administration Console, fare clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
 1. Fare clic su Sfoglia per trovare il file di configurazione, su Importa e quindi su OK.

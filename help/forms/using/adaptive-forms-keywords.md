@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Parole chiave per moduli adattivi {#adaptive-forms-keywords}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 Le parole chiave per i moduli adattivi sono identificatori predefiniti e riservati che hanno un significato speciale per i moduli adattivi. Non è possibile utilizzare queste parole chiave come identificatori nei moduli adattivi. Nella tabella seguente sono elencate tutte le parole chiave che sono identificatori riservati per i moduli adattivi.
 
@@ -241,4 +241,4 @@ Le parole chiave per i moduli adattivi sono identificatori predefiniti e riserva
  </tbody>
 </table>
 
-Oltre alle parole chiave elencate in precedenza, evita di utilizzare nomi simili a [API JavaScript per moduli adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Oltre alle parole chiave elencate in precedenza, evita di utilizzare nomi simili alle [API JavaScript per moduli adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).

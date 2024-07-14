@@ -36,7 +36,7 @@ Quando applichi il flusso di lavoro, specifichi le informazioni seguenti:
 
 I flussi di lavoro possono essere avviati dalla console Siti Web o, quando si modifica una pagina, dal Sidekick.
 
-Il **Stato** colonna nella **Siti Web** La console indica se un flusso di lavoro è stato applicato a una pagina:
+La colonna **Stato** nella console **Siti Web** indica se un flusso di lavoro è stato applicato a una pagina:
 
 ![workflowstatus](assets/workflowstatus.png)
 
@@ -52,8 +52,8 @@ Il **Stato** colonna nella **Siti Web** La console indica se un flusso di lavoro
 1. Apri la console Siti Web.
 1. Apri la pagina richiesta.
 1. Seleziona la scheda Flusso di lavoro dal Sidekick.
-1. Espandi **Flusso di lavoro** , che consente di selezionare **Flusso di lavoro** e facoltativamente inserire **Titolo flusso di lavoro** e **Commento**.
+1. Espandi la finestra di dialogo **Flusso di lavoro**, che consente di selezionare il **Flusso di lavoro** e di immettere facoltativamente **Titolo flusso di lavoro** e **Commento**.
 
-   ![workflowavvio barra laterale](assets/workflowstartsidekick.png)
+   ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
-1. Clic **Avvia flusso di lavoro** per avviare una nuova istanza di flusso di lavoro con le proprietà configurate e la pagina corrente come payload. Ora il flusso di lavoro è in esecuzione.
+1. Fai clic su **Avvia flusso di lavoro** per avviare una nuova istanza di flusso di lavoro con le proprietà configurate e la pagina corrente come payload. Ora il flusso di lavoro è in esecuzione.

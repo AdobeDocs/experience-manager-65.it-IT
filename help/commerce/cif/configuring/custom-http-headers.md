@@ -25,7 +25,7 @@ Per ottenere un maggiore controllo sul backend, gli autori possono configurare i
 
 ## Configurazione {#configuration}
 
-Per configurare le intestazioni HTTP personalizzate, devi prima definirle. Le intestazioni HTTP personalizzate devono prima essere definite aggiungendole al `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` configurazione del servizio tramite una configurazione OSGi.
+Per configurare le intestazioni HTTP personalizzate, devi prima definirle. Le intestazioni HTTP personalizzate devono prima essere definite aggiungendole alla configurazione del servizio `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` tramite una configurazione OSGi.
 
 Puoi configurare i valori delle intestazioni HTTP nella pagina Configurazione Cloud Service per il progetto:
 
@@ -37,7 +37,7 @@ I componenti che utilizzano la configurazione del servizio cloud precedente invi
 
 ## Restrizioni {#restrictions}
 
-Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non sono disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. È possibile trovare un elenco di nomi di intestazione con restrizioni [qui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
+Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non sono disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. Un elenco di nomi di intestazione con restrizioni è disponibile [qui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
 
 * &quot;Store&quot;: utilizzato dall’CIF per identificare il negozio Adobe Commerce
 * &quot;Preview-Version&quot;: utilizzato dall&#39;CIF per recuperare i prodotti in staging

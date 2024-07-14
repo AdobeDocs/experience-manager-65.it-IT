@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La funzione di individuazione Sling di Apache fornisce un’API Java che consente di creare processi JobManager e servizi JobConsumer che li utilizzano.
 
-Per informazioni sulla creazione di topologie di offload e sulla configurazione del consumo di argomenti, vedere [Offload dei processi](/help/sites-deploying/offloading.md).
+Per informazioni sulla creazione di topologie di offload e sulla configurazione del consumo degli argomenti, vedere [Offload dei processi](/help/sites-deploying/offloading.md).
 
 ## Gestione dei payload dei processi {#handling-job-payloads}
 
@@ -29,7 +29,7 @@ Il framework di offload definisce due proprietà di processo utilizzate per iden
 * `offloading.job.input.payload`: elenco di percorsi di contenuto separato da virgole. Il contenuto viene replicato nell’istanza che esegue il processo.
 * `offloading.job.output.payload`: elenco di percorsi di contenuto separato da virgole. Al termine dell’esecuzione del processo, il payload del processo viene replicato in questi percorsi nell’istanza che ha creato il processo.
 
-Utilizza il `OffloadingJobProperties` enum per fare riferimento ai nomi delle proprietà:
+Utilizzare l&#39;enumerazione `OffloadingJobProperties` per fare riferimento ai nomi delle proprietà:
 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
@@ -42,7 +42,7 @@ Creare un client che chiama il metodo JobManager.addJob per creare un processo e
 
 * Argomento: Argomento del processo.
 * Nome: (facoltativo)
-* Mappa proprietà: A `Map<String, Object>` oggetto che contiene un numero qualsiasi di proprietà, ad esempio i percorsi del payload di input e di output. Questo oggetto Map è disponibile per l&#39;oggetto JobConsumer che esegue il processo.
+* Mappa proprietà: oggetto `Map<String, Object>` contenente un numero qualsiasi di proprietà, ad esempio i percorsi del payload di input e di output. Questo oggetto Map è disponibile per l&#39;oggetto JobConsumer che esegue il processo.
 
 Il servizio di esempio seguente crea un processo per un argomento e un percorso di payload di input specifici.
 
@@ -92,7 +92,7 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-Il registro contiene il seguente messaggio quando viene chiamato JobGeneratorImpl.createJob per `com/adobe/example/offloading` argomento e `/content/geometrixx/de/services` payload:
+Il registro contiene il seguente messaggio quando JobGeneratorImpl.createJob viene chiamato per l&#39;argomento `com/adobe/example/offloading` e il payload `/content/geometrixx/de/services`:
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
@@ -100,9 +100,9 @@ Il registro contiene il seguente messaggio quando viene chiamato JobGeneratorImp
 
 ## Sviluppare un consumatore di lavoro {#developing-a-job-consumer}
 
-Per utilizzare i lavori, sviluppa un servizio OSGi che implementa `org.apache.sling.event.jobs.consumer.JobConsumer` di rete. Identificare con l&#39;argomento da utilizzare utilizzando `JobConsumer.PROPERTY_TOPICS` proprietà.
+Per utilizzare i processi, sviluppare un servizio OSGi che implementi l&#39;interfaccia `org.apache.sling.event.jobs.consumer.JobConsumer`. Identificare con l&#39;argomento da utilizzare utilizzando la proprietà `JobConsumer.PROPERTY_TOPICS`.
 
-L’esempio seguente di implementazione di JobConsumer si registra con `com/adobe/example/offloading` argomento. Il consumatore imposta semplicemente la proprietà Consumed del nodo di contenuto del payload su true.
+Nell&#39;esempio seguente l&#39;implementazione di JobConsumer viene registrata con l&#39;argomento `com/adobe/example/offloading`. Il consumatore imposta semplicemente la proprietà Consumed del nodo di contenuto del payload su true.
 
 ```java
 package com.adobe.example.offloading;
@@ -175,7 +175,7 @@ La classe MyJobConsumer genera i seguenti messaggi di registro per un payload di
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-La proprietà Consumed può essere osservata utilizzando CRXDE Liti:
+La proprietà Consumed può essere osservata utilizzando CRXDE Lite:
 
 ![chlimage_1-25](assets/chlimage_1-25a.png)
 

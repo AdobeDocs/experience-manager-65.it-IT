@@ -44,7 +44,7 @@ Un emulatore:
 * Il suo aspetto è regolato tramite CSS.
 * Supporta i plug-in (ad esempio, il plug-in di rotazione per dispositivi mobili).
 * È attivo solo sull’autore.
-* Il suo componente base è in `/libs/wcm/emulator/components/base`.
+* Il componente base è `/libs/wcm/emulator/components/base`.
 
 ### Come l’emulatore trasforma il contenuto {#how-the-emulator-transforms-the-content}
 
@@ -88,9 +88,9 @@ viene trasformato nel seguente codice html dopo l’avvio dell’emulatore:
 
 Sono stati aggiunti due tag div:
 
-* div con id `cq-emulator` tenendo l’emulatore nel suo insieme e
+* il div con id `cq-emulator` che contiene l&#39;emulatore nel suo insieme e
 
-* div con id `cq-emulator-content` rappresenta il riquadro di visualizzazione/lo schermo/l’area di contenuto del dispositivo in cui si trova il contenuto della pagina.
+* il div con id `cq-emulator-content` che rappresenta il riquadro di visualizzazione, lo schermo o l&#39;area di contenuto del dispositivo in cui risiede il contenuto della pagina.
 
 Ai nuovi elementi div dell’emulatore vengono assegnate anche nuove classi CSS, che rappresentano il nome dell’emulatore corrente.
 
@@ -111,15 +111,15 @@ Gli emulatori mobili esistenti:
 
   http://localhost:4502/bin/wcm/mobile/emulators.json
 
-Quando il componente Pagina si basa sul componente Pagina mobile ( `/libs/wcm/mobile/components/page`), la funzionalità dell’emulatore viene integrata automaticamente nella pagina tramite il seguente meccanismo:
+Quando il componente Pagina si basa sul componente Pagina mobile ( `/libs/wcm/mobile/components/page`), la funzionalità dell&#39;emulatore viene integrata automaticamente nella pagina tramite il seguente meccanismo:
 
-* Il componente Pagina mobile `head.jsp` include il componente iniziale dell’emulatore associato al gruppo di dispositivi (solo in modalità di authoring) e il CSS di rendering del gruppo di dispositivi tramite:
+* Il componente per pagina mobile `head.jsp` include il componente iniziale dell&#39;emulatore associato al gruppo di dispositivi (solo in modalità di creazione) e il CSS di rendering del gruppo di dispositivi tramite:
 
   `deviceGroup.drawHead(pageContext);`
 
-* Il metodo `DeviceGroup.drawHead(pageContext)` include il componente init dell’emulatore, che chiama `init.html.jsp` del componente emulatore. Se il componente dell’emulatore non ha un proprio `init.html.jsp` e si basa sull&#39;emulatore di base mobile ( `wcm/mobile/components/emulators/base)`, lo script di inizializzazione dell’emulatore di base per dispositivi mobili è denominato ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* Il metodo `DeviceGroup.drawHead(pageContext)` include il componente init dell&#39;emulatore, ovvero chiama `init.html.jsp` del componente emulatore. Se il componente emulatore non dispone di un proprio `init.html.jsp` e si basa sull&#39;emulatore di base mobile ( `wcm/mobile/components/emulators/base)`), viene chiamato lo script init dell&#39;emulatore di base mobile ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* Lo script di inizializzazione dell’emulatore di base mobile definisce tramite JavaScript:
+* Lo script di inizializzazione dell’emulatore di base per dispositivi mobili definisce tramite JavaScript:
 
    * Configurazione di tutti gli emulatori definiti per la pagina (emulatorConfigs)
    * Il gestore dell’emulatore che integra le funzionalità dell’emulatore nella pagina tramite:
@@ -134,19 +134,19 @@ Quando il componente Pagina si basa sul componente Pagina mobile ( `/libs/wcm/mo
 
 Per creare un emulatore mobile personalizzato:
 
-1. Sotto `/apps/myapp/components/emulators` creare il componente `myemulator` (tipo di nodo: `cq:Component`).
+1. Creare il componente `myemulator` sotto `/apps/myapp/components/emulators` (tipo di nodo: `cq:Component`).
 
-1. Imposta il `sling:resourceSuperType` proprietà a `/libs/wcm/mobile/components/emulators/base`
+1. Imposta la proprietà `sling:resourceSuperType` su `/libs/wcm/mobile/components/emulators/base`
 
-1. Definire una libreria client CSS con categoria `cq.wcm.mobile.emulator` per l&#39;aspetto dell&#39;emulatore: nome = `css`, tipo di nodo = `cq:ClientLibrary`
+1. Definisci una libreria client CSS con categoria `cq.wcm.mobile.emulator` per l&#39;aspetto dell&#39;emulatore: nome = `css`, tipo di nodo = `cq:ClientLibrary`
 
-   Ad esempio, puoi fare riferimento al nodo `/libs/wcm/mobile/components/emulators/iPhone/css`
+   Ad esempio, è possibile fare riferimento al nodo `/libs/wcm/mobile/components/emulators/iPhone/css`
 
 1. Se necessario, definisci una libreria client JS, ad esempio, per definire un plug-in specifico: name = js, node type = cq:ClientLibrary
 
-   Ad esempio, puoi fare riferimento al nodo `/libs/wcm/mobile/components/emulators/base/js`
+   Ad esempio, è possibile fare riferimento al nodo `/libs/wcm/mobile/components/emulators/base/js`
 
-1. Se l’emulatore supporta funzionalità specifiche definite dai plug-in (come lo scorrimento touch), crea un nodo di configurazione sotto l’emulatore: name = `cq:emulatorConfig`, tipo di nodo = `nt:unstructured` e aggiungi la proprietà che definisce il plug-in:
+1. Se l’emulatore supporta funzionalità specifiche definite dai plug-in (come lo scorrimento dei tocchi), crea un nodo di configurazione sotto l’emulatore: nome = `cq:emulatorConfig`, tipo di nodo = `nt:unstructured` e aggiungi la proprietà che definisce il plug-in:
 
    * Nome = `canRotate`, Tipo = `Boolean`, Valore = `true`: per includere la funzionalità di rotazione.
 

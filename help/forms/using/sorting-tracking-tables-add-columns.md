@@ -114,7 +114,7 @@ Gli attributi rimanenti nel modello di task disponibili per la visualizzazione n
  </tbody>
 </table>
 
-Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche al codice sorgente. Consulta [Introduzione alla personalizzazione dell’area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) su come apportare modifiche semantiche utilizzando l’SDK di Workspace e creare un pacchetto minimizzato dall’origine modificata.
+Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche al codice sorgente. Consulta [Introduzione alla personalizzazione dell&#39;area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) per informazioni su come apportare modifiche semantiche utilizzando l&#39;SDK dell&#39;area di lavoro e creare un pacchetto minimizzato dall&#39;origine modificata.
 
 ## Modifica delle colonne della tabella e del relativo ordine {#changing-table-columns-and-their-order}
 
@@ -166,7 +166,7 @@ Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#
    }
    ```
 
-   Nel gestore, richiama `onTaskTableHeaderClick` funzione di `js/runtime/util/history.js`.
+   Nel gestore, richiamare la funzione `onTaskTableHeaderClick` di `js/runtime/util/history.js`.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -174,7 +174,7 @@ Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#
    }
    ```
 
-1. Esporre `TaskTableHeaderClick` metodo in `js/runtime/util/history.js`.
+1. Esporre il metodo `TaskTableHeaderClick` in `js/runtime/util/history.js`.
 
    Il metodo trova l&#39;attributo task dall&#39;evento click, ordina l&#39;elenco di task su tale attributo ed esegue il rendering della tabella di task con l&#39;elenco di task ordinato.
 

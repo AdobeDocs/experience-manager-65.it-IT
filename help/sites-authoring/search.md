@@ -35,7 +35,7 @@ La barra di ricerca consente di effettuare le seguenti operazioni:
 
 * Cerca una parola chiave, un percorso o un tag specifico.
 * Filtra in base a criteri specifici per le risorse, ad esempio date di modifica, stato della pagina, dimensione del file e così via.
-* Definire e utilizzare un [ricerca salvata](#saved-searches) - in base ai criteri di cui sopra.
+* Definisci e utilizza una [ricerca salvata](#saved-searches) - in base ai criteri di cui sopra.
 
 >[!NOTE]
 >
@@ -51,12 +51,12 @@ Per cercare e filtrare le risorse:
 
    Per impostazione predefinita, i risultati della ricerca sono limitati alla posizione corrente (ovvero, alla console e al tipo di risorsa correlato):
 
-   ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
+   ![schermata_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Se necessario, puoi rimuovere il filtro di posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire ricerche su tutte le console/i tipi di risorse.
+1. Se necessario, è possibile rimuovere il filtro località (selezionare **X** sul filtro che si desidera rimuovere) per eseguire ricerche in tutte le console/i tipi di risorse.
 1. I risultati visualizzati vengono raggruppati in base alla console e al tipo di risorsa corrispondente.
 
-   Puoi selezionare una risorsa specifica (per ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio: **Visualizza tutti i siti**:
+   È possibile selezionare una risorsa specifica (per ulteriori azioni) oppure eseguire il drill-down selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
 
    ![schermata_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 
@@ -71,7 +71,7 @@ Per cercare e filtrare le risorse:
    * Ricerche salvate
    * Directory di ricerca
    * Tag
-   * Criteri di ricerca, ad esempio Date modificate, Stato pubblicazione, Stato LiveCopy.
+   * Criteri di ricerca, ad esempio Date modificate, Stato Publish, Stato LiveCopy.
 
    >[!NOTE]
    >
@@ -80,7 +80,7 @@ Per cercare e filtrare le risorse:
    >
    >
    >    * A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Risorse e Community sono chiaramente specifici.
-   >    * La tua istanza come [Cerca in Forms](/help/sites-administering/search-forms.md) possono essere personalizzate (in base alla sede all’interno dell’AEM).
+   >    * È possibile personalizzare l&#39;istanza come [Forms di ricerca](/help/sites-administering/search-forms.md) (in base alla posizione all&#39;interno dell&#39;AEM).
    >
    >
 
@@ -104,7 +104,7 @@ Oltre a eseguire ricerche in base a un’ampia gamma di facet, puoi anche salvar
 
 1. Definisci i criteri di ricerca e seleziona **Salva**.
 
-   ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
+   ![schermata_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
 
 1. Assegna un nome e seleziona **Salva** per confermare:
 

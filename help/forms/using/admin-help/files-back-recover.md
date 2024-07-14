@@ -32,7 +32,7 @@ Il GDS è una directory utilizzata per memorizzare i file di lunga durata utiliz
 
 I documenti di input per la chiamata asincrona del processo sono memorizzati anche nel GDS e devono essere disponibili per elaborare le richieste. È quindi importante considerare l&#39;affidabilità del file system che ospita il GDS e utilizzare un array ridondante di dischi indipendenti (RAID) o altra tecnologia appropriata per soddisfare i requisiti di qualità e livello di servizio.
 
-La posizione del GDS viene determinata durante il processo di installazione dei moduli AEM o successivamente utilizzando la console di amministrazione. Oltre a mantenere una posizione di elevata disponibilità per GDS, è possibile abilitare anche l&#39;archiviazione del database per i documenti. Consulta [Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
+La posizione del GDS viene determinata durante il processo di installazione dei moduli AEM o successivamente utilizzando la console di amministrazione. Oltre a mantenere una posizione di elevata disponibilità per GDS, è possibile abilitare anche l&#39;archiviazione del database per i documenti. Vedere [Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
 ### Posizione GDS {#gds-location}
 
@@ -49,7 +49,7 @@ Se la posizione GDS è stata modificata in una posizione non predefinita, è pos
 
 In un ambiente cluster, GDS in genere punta a una directory condivisa in rete e accessibile in lettura/scrittura per ogni nodo cluster.
 
-La posizione del GDS può essere modificata durante un ripristino se la posizione originale non è più disponibile. (vedere [Modifica della posizione GDS durante il ripristino](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
+La posizione del GDS può essere modificata durante un ripristino se la posizione originale non è più disponibile. (Vedi [Modifica del percorso GDS durante il ripristino](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
 
 ### Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti {#backup-options-when-database-is-used-for-document-storage}
 
@@ -73,7 +73,7 @@ gestione moduli semplifica il processo di aggiornamento, gestione e ritiro dei m
 
 ### AEM Forms Workspace {#html-workspace}
 
-AEM Forms Workspace corrisponde alle funzionalità di (Obsoleto per i moduli AEM su JEE) Flex Workspace e aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
+AEM Forms Workspace corrisponde alle funzionalità di (obsoleto per i moduli AEM su JEE) Flex Workspace e aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Per eseguire il backup del database in tempo reale, è necessario utilizzare la 
 
 >[!NOTE]
 >
->Adobe ® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Consulta [Adobe di documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe ® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Consulta [Adobe documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -110,13 +110,13 @@ DB2 dispone di funzionalità incorporate per eseguire il backup di un database i
 
 ### Oracle {#oracle}
 
-Utilizza i backup delle copie istantanee o configura il database Oracle per l’esecuzione in modalità registro archivio. (vedere [Oracle di backup: introduzione](https://www.databasedesign-resource.com/oracle-backup.md).) Per ulteriori informazioni sul backup e il ripristino del database Oracle, visitare i seguenti siti:
+Utilizza i backup delle copie istantanee o configura il database Oracle per l’esecuzione in modalità registro archivio. (Vedi [Backup Oracle: Introduzione](https://www.databasedesign-resource.com/oracle-backup.md).) Per ulteriori informazioni sul backup e il ripristino del database Oracle, visitare i seguenti siti:
 
-[Oracle di backup e ripristino:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Vengono illustrati i concetti di backup e ripristino e le tecniche più comuni per l&#39;utilizzo di Recovery Manager (RMAN) per il backup, il ripristino e il reporting in modo più dettagliato. Vengono inoltre fornite ulteriori informazioni su come pianificare una strategia di backup e ripristino.
+[Oracle di backup e ripristino:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Vengono illustrati i concetti di backup e ripristino e le tecniche più comuni per l&#39;utilizzo di Recovery Manager (RMAN) per il backup, il ripristino e il reporting in modo più dettagliato e vengono fornite ulteriori informazioni su come pianificare una strategia di backup e ripristino.
 
-[Oracle di Guida dell&#39;utente per il backup e il ripristino del database:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Fornisce informazioni approfondite sull&#39;architettura RMAN, sui concetti e i meccanismi di backup e ripristino, sulle tecniche di ripristino avanzate, quali il ripristino point-in-time e le funzioni di flashback del database, nonché sul tuning delle prestazioni di backup e ripristino. Vengono inoltre trattati i processi di backup e ripristino gestiti dall&#39;utente, utilizzando le funzionalità del sistema operativo host anziché RMAN. Questo volume è essenziale per il backup e il ripristino di implementazioni di database più sofisticate e per scenari di ripristino avanzati.
+[Oracle Database Backup and Recovery User&#39;s Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Fornisce informazioni approfondite sull&#39;architettura RMAN, sui concetti e i meccanismi di backup e ripristino, sulle tecniche di ripristino avanzate, quali il ripristino point-in-time e le funzionalità di flashback del database, nonché sul tuning delle prestazioni di backup e ripristino. Vengono inoltre trattati i processi di backup e ripristino gestiti dall&#39;utente, utilizzando le funzionalità del sistema operativo host anziché RMAN. Questo volume è essenziale per il backup e il ripristino di implementazioni di database più sofisticate e per scenari di ripristino avanzati.
 
-[Oracle di riferimento per il backup e il recupero del database:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Fornisce informazioni complete sulla sintassi e la semantica di tutti i comandi RMAN e descrive le visualizzazioni di database disponibili per la creazione di report sulle attività di backup e ripristino.
+[Oracle di riferimento per il backup e il recupero del database:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Fornisce informazioni complete sulla sintassi e la semantica di tutti i comandi RMAN e descrive le visualizzazioni del database disponibili per il reporting sulle attività di backup e recupero.
 
 ### SQL Server {#sql-server}
 
@@ -127,17 +127,17 @@ SQL Server fornisce inoltre due strumenti di backup e ripristino:
 * Interfaccia grafica di SQL Server Management Studio
 * T-SQL (riga di comando)
 
-Per ulteriori informazioni, consulta [Backup e ripristino](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Per ulteriori informazioni, vedere [Backup e ripristino](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
-Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il database MySQL in modo che venga eseguito in modalità di log binaria. (vedere [Registrazione binaria MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) È inoltre disponibile uno strumento di backup a caldo per MySQL dal software InnoBase. (vedere [Backup a caldo Innobase](https://www.innodb.com/hot-backup/features.md).)
+Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il database MySQL in modo che venga eseguito in modalità di log binaria. (Vedi [Registrazione binaria MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) È inoltre disponibile uno strumento di backup a caldo per MySQL dal software InnoBase. (Vedi [Backup a caldo Innobase](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >
->La modalità di registrazione binaria predefinita per MySQL è &quot;Statement&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). Se si utilizza la registrazione binaria in questa modalità predefinita, Content Services (obsoleto) non riesce. Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;Mista&quot;. Per abilitare la registrazione &quot;Mista&quot;, aggiungi il seguente argomento al file my.ini: `binlog_format=mixed log-bin=logname`
+>La modalità di registrazione binaria predefinita per MySQL è &quot;Statement&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). Se si utilizza la registrazione binaria in questa modalità predefinita, Content Services (obsoleto) non riesce. Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;Mista&quot;. Per abilitare la registrazione &quot;mista&quot;, aggiungere il seguente argomento al file my.ini: `binlog_format=mixed log-bin=logname`
 
-È possibile utilizzare l&#39;utilità mysqldump per ottenere il backup completo del database. I backup completi sono necessari, ma non sempre sono comodi. Producono file di backup di grandi dimensioni e richiedono tempo per la generazione. Per eseguire un backup incrementale, accertati di avviare il server con - `log-bin` come descritto nella sezione precedente. Ogni volta che il server MySQL viene riavviato, smette di scrivere nel registro binario corrente, ne crea uno nuovo e, da quel momento in poi, quello nuovo diventa quello corrente. È possibile forzare un passaggio manualmente con `FLUSH LOGS SQL` comando. Dopo il primo backup completo, i successivi backup incrementali vengono eseguiti utilizzando l&#39;utilità mysqladmin con `flush-logs` , che crea il file di registro successivo.
+È possibile utilizzare l&#39;utilità mysqldump per ottenere il backup completo del database. I backup completi sono necessari, ma non sempre sono comodi. Producono file di backup di grandi dimensioni e richiedono tempo per la generazione. Per eseguire un backup incrementale, assicurarsi di avviare il server con l&#39;opzione - `log-bin` come descritto nella sezione precedente. Ogni volta che il server MySQL viene riavviato, smette di scrivere nel registro binario corrente, ne crea uno nuovo e, da quel momento in poi, quello nuovo diventa quello corrente. È possibile forzare un&#39;opzione manualmente con il comando `FLUSH LOGS SQL`. Dopo il primo backup completo, i successivi backup incrementali vengono eseguiti utilizzando l&#39;utilità mysqladmin con il comando `flush-logs`, che crea il file di log successivo.
 
 Consulta [Riepilogo strategia di backup](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
@@ -154,7 +154,7 @@ La directory principale di archiviazione dei contenuti contiene l&#39;archivio C
 
 La directory principale di archiviazione dei contenuti viene creata quando è installato Content Services (obsoleto). La posizione della directory principale di archiviazione dei contenuti viene determinata durante il processo di installazione dei moduli AEM.
 
-La posizione predefinita per la directory principale di archiviazione dei contenuti è `[aem-forms root]/lccs_data`.
+Il percorso predefinito per la directory radice dell&#39;archiviazione dei contenuti è `[aem-forms root]/lccs_data`.
 
 Eseguire il backup delle seguenti directory nella directory principale di archiviazione dei contenuti:
 
@@ -172,11 +172,11 @@ Se la directory /backup-lucene-indexes non è presente, eseguire il backup della
 
 Quando si installa Content Services (obsoleto) in un ambiente cluster, la directory principale di archiviazione dei contenuti viene divisa in due directory separate:
 
-**Directory principale archiviazione contenuto:** In genere, una directory di rete condivisa accessibile in lettura/scrittura per tutti i nodi del cluster
+**Directory radice archiviazione contenuto:** In genere, una directory di rete condivisa accessibile in lettura/scrittura per tutti i nodi del cluster
 
-**Directory principale indice:** Directory creata in ogni nodo del cluster, con lo stesso percorso e lo stesso nome di directory
+**Directory principale indice:** Directory creata in ogni nodo del cluster, con sempre lo stesso percorso e lo stesso nome di directory
 
-La posizione predefinita per la directory principale di archiviazione dei contenuti è `[GDS root]/lccs_data`, dove `[GDS root]` è la posizione descritta in [Posizione GDS](files-back-recover.md#gds-location). Eseguire il backup delle seguenti directory nella directory principale di archiviazione dei contenuti:
+Il percorso predefinito per la directory radice dell&#39;archiviazione dei contenuti è `[GDS root]/lccs_data`, dove `[GDS root]` è il percorso descritto in [percorso GDS](files-back-recover.md#gds-location). Eseguire il backup delle seguenti directory nella directory principale di archiviazione dei contenuti:
 
 /audit.contentstore
 
@@ -196,6 +196,6 @@ Se nell&#39;ambiente dei moduli AEM sono stati installati altri tipi di caratter
 
 >[!NOTE]
 >
->Per impostazione predefinita, i font di Adobe installati con i moduli AEM si trovano nel `[aem-forms root]/fonts` directory.
+>Per impostazione predefinita, i tipi di carattere Adobe installati con i moduli AEM si trovano nella directory `[aem-forms root]/fonts`.
 
 Se si sta reinizializzando il sistema operativo sul computer host e si desidera utilizzare i caratteri del sistema operativo precedente, è necessario eseguire anche il backup del contenuto della directory dei caratteri del sistema. Per istruzioni specifiche, consultare la documentazione del sistema operativo in uso.

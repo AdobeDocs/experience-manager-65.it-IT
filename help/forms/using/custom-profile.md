@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Creazione di un profilo personalizzato per i moduli HTML5 {#creating-a-custom-profile-for-html-forms}
 
-Un profilo è un nodo di risorsa in [Apache Sling](https://sling.apache.org/). Rappresenta la versione personalizzata del servizio di rendering di HTML5 forms. È possibile utilizzare il servizio di rendering dei moduli HTML5 per personalizzare l&#39;aspetto, il comportamento e le interazioni dei moduli HTML5. In è presente un nodo di profilo `/content` nell’archivio JCR. Puoi posizionare il nodo direttamente sotto il `/content` cartella o una sottocartella di `/content` cartella.
+Un profilo è un nodo di risorsa in [Apache Sling](https://sling.apache.org/). Rappresenta la versione personalizzata del servizio di rendering di HTML5 forms. È possibile utilizzare il servizio di rendering dei moduli HTML5 per personalizzare l&#39;aspetto, il comportamento e le interazioni dei moduli HTML5. Nella cartella `/content` dell&#39;archivio JCR esiste un nodo di profilo. È possibile inserire il nodo direttamente nella cartella `/content` o in una sottocartella della cartella `/content`.
 
-Il nodo del profilo presenta **sling:resourceSuperType** e il valore predefinito è **xfaforms/profile**. Lo script di rendering per il nodo si trova in /libs/xfaforms/profile.
+Il nodo del profilo ha la proprietà **sling:resourceSuperType** e il valore predefinito è **xfaforms/profile**. Lo script di rendering per il nodo si trova in /libs/xfaforms/profile.
 
-Gli script Sling sono script JSP. Questi script JSP fungono da contenitori per la creazione del HTML per il modulo richiesto e gli artefatti JS/CSS richiesti. Questi script Sling sono anche denominati **Script di rendering del profilo**. Il modulo di rendering dei profili chiama il servizio Forms OSGi per eseguire il rendering del modulo richiesto.
+Gli script Sling sono script JSP. Questi script JSP fungono da contenitori per la creazione del HTML per il modulo richiesto e gli artefatti JS/CSS richiesti. Questi script Sling sono anche denominati **script di rendering del profilo**. Il modulo di rendering dei profili chiama il servizio Forms OSGi per eseguire il rendering del modulo richiesto.
 
 Lo script di profilo si trova in html.jsp e html.POST.jsp per le richieste GET e POST. Puoi copiare e modificare uno o più file per ignorare e aggiungere le personalizzazioni. Non apportare modifiche sul posto; tali modifiche vengono sovrascritte dall’aggiornamento della patch.
 
@@ -58,28 +58,28 @@ Per creare un profilo personalizzato, effettua le seguenti operazioni:
 
 ### Crea nodo profilo {#create-profile-node}
 
-1. Passa all’interfaccia CRX DE all’URL: `https://'[server]:[port]'/crx/de` e accedi all’interfaccia di con le credenziali di amministratore.
+1. Passare all&#39;interfaccia CRX DE all&#39;URL `https://'[server]:[port]'/crx/de` e accedere all&#39;interfaccia con le credenziali di amministratore.
 
-1. Nel riquadro a sinistra, passa alla posizione */content/xfaforms/profiles*.
+1. Nel riquadro sinistro passare alla posizione */content/xfaforms/profiles*.
 
-1. Copia il nodo predefinito e incolla il nodo in una cartella diversa (*/content/profiles*) con nome *hardware*.
+1. Copia il nodo predefinito e incolla il nodo in una cartella diversa (*/content/profiles*) con nome *hrform*.
 
-1. Seleziona il nuovo nodo, *hardware* e aggiungi una proprietà stringa: *sling:resourceType* con valore: *hrform/demo*.
+1. Seleziona il nuovo nodo, *hrform*, quindi aggiungi una proprietà stringa: *sling:resourceType* con valore: *hrform/demo*.
 
 1. Fare clic su Salva tutto nel menu della barra degli strumenti per salvare le modifiche.
 
 ### Creare lo script del renderer del profilo {#create-the-profile-renderer-script}
 
-Dopo aver creato un profilo personalizzato, aggiungi le informazioni di rendering a questo profilo. Quando riceve una richiesta per il nuovo profilo, CRX verifica l’esistenza della cartella /apps per la pagina JSP di cui eseguire il rendering. Crea la pagina JSP nella cartella /apps.
+Dopo aver creato un profilo personalizzato, aggiungi le informazioni di rendering a questo profilo. Quando si riceve una richiesta per il nuovo profilo, CRX verifica l’esistenza della cartella /apps per la pagina JSP di cui eseguire il rendering. Crea la pagina JSP nella cartella /apps.
 
-1. Nel riquadro a sinistra, passare alla `/apps` cartella.
-1. Fare clic con il pulsante destro del mouse `/apps` e scegliere di creare una cartella denominata **hardware**.
-1. Insider **hardware** cartella creare una cartella denominata **demo**.
-1. Fai clic su **Salva tutto** pulsante.
-1. Accedi a `/libs/xfaforms/profile/html.jsp` e copia il nodo **html.jsp**.
-1. Incolla **html.jsp** nodo in `/apps/hrform/demo` cartella creata sopra con lo stesso nome **html.jsp** e fai clic su **Salva**.
+1. Nel riquadro sinistro passare alla cartella `/apps`.
+1. Fare clic con il pulsante destro del mouse sulla cartella `/apps` e scegliere di creare una cartella denominata **hrform**.
+1. Nella cartella **hrform** creare una cartella denominata **demo**.
+1. Fare clic sul pulsante **Salva tutto**.
+1. Passare a `/libs/xfaforms/profile/html.jsp` e copiare il nodo **html.jsp**.
+1. Incolla il nodo **html.jsp** nella cartella `/apps/hrform/demo` creata in precedenza con lo stesso nome **html.jsp** e fai clic su **Salva**.
 1. Se hai altri componenti dello script di profilo, segui i passaggi 1-6 per copiare i componenti nella cartella /apps/hrform/demo.
 
-1. Per verificare che il profilo sia stato creato, apri l’URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
+1. Per verificare che il profilo sia stato creato, aprire l&#39;URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-Per verificare i moduli: [Importare i moduli](/help/forms/using/get-xdp-pdf-documents-aem.md) dal file system locale ad AEM Forms e [visualizzare l’anteprima del modulo](/help/forms/using/previewing-forms.md) nell’istanza di authoring del server AEM.
+Per verificare i moduli, [Importa i moduli](/help/forms/using/get-xdp-pdf-documents-aem.md) dal file system locale in AEM Forms e [visualizza l&#39;anteprima del modulo](/help/forms/using/previewing-forms.md) nell&#39;istanza di authoring del server AEM.

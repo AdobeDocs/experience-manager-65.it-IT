@@ -24,13 +24,13 @@ Il rapporto delle transazioni in AEM Forms consente di monitorare tutte le trans
 
 Di seguito sono riportate istruzioni complete su come abilitare le transazioni, l’elenco delle API fatturabili e le implementazioni di registratori personalizzati in base allo stack tecnologico di AEM Forms:
 
-**Generazione rapporti sulle transazioni per AEM Forms su JEE**
+**Generazione rapporti sulle transazioni per AEM Forms in JEE**
 
 * [Abilitazione e visualizzazione del rapporto sulle transazioni per AEM Forms su JEE](/help/forms/using/transaction-report-overview-jee.md)
 * [Elenco delle API fatturabili per AEM Forms su JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
 * [Registrare una transazione per le API dei componenti personalizzati](/help/forms/using/record-transaction-custom-component-jee.md)
 
-**Reporting delle transazioni per AEM Forms su OSGi**
+**Generazione rapporti sulle transazioni per AEM Forms su OSGi**
 
 * [Rapporti sulle transazioni per AEM Forms su OSGi](/help/forms/using/transaction-reports-overview.md)
 * [Visualizzazione e comprensione dei rapporti sulle transazioni per AEM Forms su OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)

@@ -24,11 +24,11 @@ La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico
 * Aggiungere tipi di pubblico: tipi di pubblico Adobe Target o segmenti ContextHub.
 * Gestisci tipi di pubblico.
 
-Un pubblico, chiamato *segmento* in ContextHub e ClientContext, è una classe di visitatori definita da criteri specifici che determinano chi visualizzerà un’attività sottoposta a targeting. Quando esegui il targeting di un’attività, puoi selezionare i tipi di pubblico direttamente nel processo di targeting oppure crearne di più nella console Pubblico.
+Un pubblico, denominato *segmento* in ContextHub e ClientContext, è una classe di visitatori definita da criteri specifici che determinano chi visualizzerà un&#39;attività con targeting. Quando esegui il targeting di un’attività, puoi selezionare i tipi di pubblico direttamente nel processo di targeting oppure crearne di più nella console Pubblico.
 
 Nella console Pubblico, i tipi di pubblico sono organizzati per marchio.
 
-Il pubblico è disponibile in modalità Targeting per [authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md), in cui è anche possibile creare tipi di pubblico (ma è necessario creare i tipi di pubblico di Adobe Target nella console Pubblico ). I tipi di pubblico creati in modalità Targeting vengono visualizzati nella console Pubblico.
+I tipi di pubblico sono disponibili in modalità Targeting per [la creazione di contenuti con targeting](/help/sites-authoring/content-targeting-touch.md), dove è anche possibile creare dei tipi di pubblico (ma è necessario creare i tipi di pubblico di Adobe Target nella console Tipi di pubblico). I tipi di pubblico creati in modalità Targeting vengono visualizzati nella console Pubblico.
 
 I tipi di pubblico vengono visualizzati con un’etichetta che descrive il tipo di pubblico definito:
 
@@ -42,8 +42,8 @@ Puoi creare un segmento ContextHub nella console Pubblico o durante il processo 
 
 Per creare un segmento ContextHub nella console Pubblico:
 
-1. Nella console Navigazione, fai clic su **Personalizzazione**. Clic **Tipi di pubblico**.
-1. Clic **Crea segmento ContextHub**.
+1. Nella console di navigazione, fare clic su **Personalization**. Fai clic su **Tipi di pubblico**.
+1. Fai clic su **Crea segmento ContextHub**.
 
    ![schermata_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
@@ -53,7 +53,7 @@ Per creare un segmento ContextHub nella console Pubblico:
    >
    >Per ordinare l’elenco modificato in base all’ordine decrescente, tocca o fai clic su **Modificato**, così da visualizzare i tipi di pubblico appena creati.
 
-Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, vedi [Configurazione della segmentazione con ContextHub](/help/sites-administering/segmentation.md) documentazione.
+Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, consulta la documentazione [Configurazione della segmentazione con ContextHub](/help/sites-administering/segmentation.md).
 
 ## Creazione di un pubblico di Adobe Target tramite la console Pubblico {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -65,11 +65,11 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 >[!NOTE]
 >
->Se non vedi **Crea pubblico Target **in **Crea** non disponi delle autorizzazioni necessarie per creare un pubblico. È necessario disporre di autorizzazioni di scrittura in **/etc/segmentation** per creare un pubblico. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
+>Se nel menu **Crea** non trovi **Crea pubblico di destinazione **non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare tipi di pubblico è necessario disporre delle autorizzazioni di scrittura in **/etc/segmentation**. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
 
 Per creare un pubblico di Adobe Target:
 
-1. Nella console Navigazione, fai clic su **Personalizzazione**. Clic **Tipi di pubblico**.
+1. Nella console di navigazione, fare clic su **Personalization**. Fai clic su **Tipi di pubblico**.
 
    ![schermata_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
@@ -77,7 +77,7 @@ Per creare un pubblico di Adobe Target:
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. In **Configurazione Adobe Target** , selezionare la configurazione di destinazione e fare clic su **OK**.
+1. Nella finestra di dialogo **Configurazione Adobe Target**, seleziona la configurazione di destinazione e fai clic su **OK**.
 1. Nell&#39;area Regola n. 1 fare clic sul tipo di attributo e immettere le informazioni relative agli attributi nei campi disponibili. Al termine, seleziona il segno di spunta a destra dell’attributo per salvarlo. Per informazioni su tutti gli attributi, consulta [Attributi e relative opzioni](#attributes-and-their-options).
 1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore boolean AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Fai clic su **Avanti**.
@@ -106,6 +106,6 @@ Puoi creare regole di targeting per ciascuno dei seguenti attributi:
 
 Puoi modificare qualsiasi pubblico ContextHub o ClientContext dalla console Pubblico. Puoi modificare anche i tipi di pubblico di Adobe Target, ma solo quelli creati in AEM:
 
-1. Nella console Navigazione, fai clic su **Personalizzazione**. Clic **Tipi di pubblico**.
-1. Fai clic sull’icona accanto al segmento ContextHub o ClientContext da modificare, quindi fai clic su **Modifica**.
-1. Apporta le modifiche nell&#39;editor segmento. Consulta [ClientContext](/help/sites-administering/campaign-segmentation.md) o [ContextHub](/help/sites-developing/ch-configuring.md) documentazione.
+1. Nella console di navigazione, fare clic su **Personalization**. Fai clic su **Tipi di pubblico**.
+1. Fai clic sull&#39;icona accanto al segmento ContextHub o ClientContext che desideri modificare e fai clic su **Modifica**.
+1. Apporta le modifiche nell&#39;editor segmento. Consulta la documentazione di [ClientContext](/help/sites-administering/campaign-segmentation.md) o [ContextHub](/help/sites-developing/ch-configuring.md).

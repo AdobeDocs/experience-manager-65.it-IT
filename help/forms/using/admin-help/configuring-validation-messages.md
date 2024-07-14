@@ -31,9 +31,9 @@ Per i moduli di cui viene eseguito il rendering come HTML, gli errori di convali
 
    **Nessun frame:** Per visualizzare i messaggi di convalida nella stessa finestra. Questo valore è quello predefinito.
 
-   **Tramite API (con dati):** Per restituire i messaggi di convalida tramite l’API (con i dati). I messaggi di convalida non vengono visualizzati sullo schermo.
+   **Tramite API (con dati):** Per restituire i messaggi di convalida tramite API (con dati). I messaggi di convalida non vengono visualizzati sullo schermo.
 
-   **Tramite API (con modulo):** Per restituire i messaggi di convalida tramite l’API (con il modulo ). I messaggi di convalida non vengono visualizzati sullo schermo.
+   **Tramite API (con modulo):** Per restituire i messaggi di convalida tramite l&#39;API (con il modulo). I messaggi di convalida non vengono visualizzati sullo schermo.
 
    **Nessuno:** Per non visualizzare i messaggi di convalida.
 
@@ -45,13 +45,13 @@ Quando Reporting è impostato su Frame o su No Frame, è possibile specificare l
 
 1. In Output di convalida, nell&#39;elenco Posizione, selezionare una delle opzioni seguenti:
 
-   **Sinistra:** Per visualizzare i messaggi di convalida sul lato sinistro del browser Web.
+   **Sinistra:** per visualizzare i messaggi di convalida sul lato sinistro del browser Web.
 
    **Destra:** Per visualizzare i messaggi di convalida sul lato destro del browser Web.
 
-   **In alto**: per visualizzare i messaggi di convalida nella parte superiore del browser web. Questo valore è quello predefinito.
+   **Top**: per visualizzare i messaggi di convalida nella parte superiore del browser Web. Questo valore è quello predefinito.
 
-   **In basso**: per visualizzare i messaggi di convalida nella parte inferiore del browser web.
+   **Inferiore**: per visualizzare i messaggi di convalida nella parte inferiore del browser Web.
 
 1. Fai clic su Salva.
 

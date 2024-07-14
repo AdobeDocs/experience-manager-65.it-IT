@@ -24,4 +24,4 @@ Con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che ri
 
 >[!NOTE]
 >
->Anche se è presente uno scaffolding [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) , la manutenzione e la creazione di scaffold e la creazione di nuove pagine da scaffold vengono eseguite nell’interfaccia classica. Consulta [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) per ulteriori informazioni, consulta la documentazione sull’authoring dell’interfaccia classica.
+>Sebbene sia disponibile uno scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes), la manutenzione e la creazione di scaffolding e la creazione di nuove pagine dagli scaffolding vengono eseguite nell&#39;interfaccia classica. Per informazioni dettagliate, consulta [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) nella documentazione per l&#39;authoring dell&#39;interfaccia utente classica.

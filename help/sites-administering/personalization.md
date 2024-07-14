@@ -18,11 +18,11 @@ ht-degree: 2%
 
 # Personalizzazione {#personalization}
 
-## Cos’è la personalizzazione? {#what-is-personalization}
+## Cos’è Personalization? {#what-is-personalization}
 
 Il volume dei contenuti attualmente disponibili è in continua crescita, sia su Internet che su siti Web di Extranet o Intranet.
 
-La personalizzazione consiste nel fornire all’utente un ambiente personalizzato che mostri contenuti dinamici selezionati in base alle sue esigenze specifiche, sulla base di profili predefiniti, selezione degli utenti o comportamento interattivo degli utenti.
+Personalization è incentrato sulla fornitura all’utente di un ambiente su misura che mostri contenuti dinamici selezionati in base alle sue esigenze specifiche, sulla base di profili predefiniti, selezione degli utenti o comportamento interattivo degli utenti.
 
 Nella personalizzazione sono coinvolti tre elementi principali:
 
@@ -43,7 +43,7 @@ In altre parole, il contenuto deve, in qualche modo, dipendere dall’utente. Se
 
 * Definisci come avviene effettivamente la personalizzazione, quali contenuti può visualizzare l’utente e quando.
 
-La personalizzazione può essere:
+Personalization può essere:
 
 #### Esplicito {#explicit}
 
@@ -55,9 +55,9 @@ La personalizzazione può essere:
 * Filtro semplice: le selezioni vengono effettuate sulla base di profili predefiniti a livello di utente e/o di gruppo.
 * Filtro collaborativo/per consigli: il comportamento dell’utente viene registrato in base a regole predefinite. Queste regole si basano sul comportamento osservato con individui che condividono la stessa opinione. Le informazioni raccolte vengono utilizzate per adattare le informazioni visualizzate all’utente, in particolare sotto forma di raccomandazioni.
 
-## Come e quando può essere utilizzata la personalizzazione? {#how-and-when-can-personalization-be-used}
+## Come e quando è possibile utilizzare Personalization? {#how-and-when-can-personalization-be-used}
 
-La personalizzazione può essere utilizzata in molti casi, ad esempio:
+Personalization può essere utilizzato in molti casi, ad esempio:
 
 ### Pagine Intranet {#intranet-pages}
 
@@ -79,12 +79,12 @@ La personalizzazione può essere utilizzata in molti casi, ad esempio:
 
 * Molti dei principali siti web dei motori di ricerca hanno strumenti analitici molto potenti che registrano il comportamento degli utenti, i termini di ricerca che usano e i siti web che visitano. Questo viene quindi utilizzato per personalizzare il contenuto fornito, in particolare per quanto riguarda la visualizzazione degli annunci pubblicitari.
 
-### Punti di forza della personalizzazione e punti da considerare {#strengths-of-personalization-and-points-to-consider}
+### Punti di forza di Personalization e punti da considerare {#strengths-of-personalization-and-points-to-consider}
 
 Di seguito sono riportati i motivi per cui la personalizzazione dovrebbe essere utilizzata:
 
 * Un utente può sperimentare un sito web comodo e mirato.
-* La personalizzazione può essere utilizzata per propagare automaticamente l’accesso all’ultima versione del contenuto.
+* Personalization può essere utilizzato per propagare automaticamente l’accesso alla versione più recente del contenuto.
 * Le funzioni di collaborazione social sono disponibili per gli utenti per comunicare tra loro, in quanto possono essere identificati dai loro profili.
 * A un utente può essere fornito il contenuto necessario per svolgere un’attività particolare. Nell&#39;intranet di un&#39;azienda, questo può rappresentare uno strumento prezioso per la diffusione delle informazioni.
 * Gli utenti possono ricevere i contenuti desiderati o necessari, riducendo in tal modo il tempo necessario per eseguire le operazioni di ricerca.
@@ -99,7 +99,7 @@ Quando utilizzi la personalizzazione, considera quanto segue:
 
 #### Autorizzazione {#authorization}
 
-* La personalizzazione richiede un meccanismo di accesso in quanto il sito web deve essere in grado di identificare l’utente.
+* Personalization richiede un meccanismo di accesso in quanto il sito web deve essere in grado di identificare l’utente.
 
 #### Memorizzazione in cache {#caching}
 
@@ -108,32 +108,32 @@ Quando utilizzi la personalizzazione, considera quanto segue:
 
 >[!TIP]
 >
->L’effetto della personalizzazione sulle prestazioni e gli argomenti correlati al caching sono trattati più avanti nel documento [Ottimizzazione delle prestazioni.](/help/sites-deploying/configuring-performance.md)
+>L&#39;effetto di Personalization sulle prestazioni e gli argomenti correlati relativi alla memorizzazione nella cache sono trattati più avanti nel documento [Ottimizzazione delle prestazioni.](/help/sites-deploying/configuring-performance.md)
 
 #### Precisione delle regole {#accuracy}
 
-* La personalizzazione realizzata tenendo traccia del comportamento dell’utente, o impostando regole in base al profilo dell’utente, deve essere precisa e logica.
+* Personalization, realizzato tenendo traccia del comportamento dell’utente o impostando regole basate sul profilo dell’utente, deve essere accurato e logico.
 * Non c’è niente di più frustrante per l’utente di avere contenuti forzati o negati a causa della logica inesatta di una regola.
 * Pertanto, le regole devono essere ben ponderate, con i requisiti dell’utente in primo piano. Questo può richiedere molto lavoro, e non deve essere sottostimato; definire le regole di business spesso supera lo sforzo tecnico durante l’implementazione della personalizzazione.
 
 #### Applicazione consigliata {#when-to-use}
 
-* Come molte funzioni sul web, la personalizzazione deve essere utilizzata con cautela. L&#39;utilizzo di questa funzionalità apporterà vantaggi concreti all&#39;utente? dovrebbe sempre essere la prima considerazione - o se l&#39;obiettivo desiderato può essere raggiunto con meno sforzo con un altro metodo. La personalizzazione può correre il rischio di essere una funzione che gli utenti configurano una volta (per vedere come funziona) e una sola volta, in quanto non offre loro vantaggi reali.
-* La personalizzazione ha senso solo quando il contenuto è dinamico, in qualche modo dipendente dall’utente. Se tutti gli utenti visualizzano lo stesso contenuto, la personalizzazione è ridondante.
+* Come molte funzioni sul web, la personalizzazione deve essere utilizzata con cautela. L&#39;utilizzo di questa funzionalità apporterà vantaggi concreti all&#39;utente? dovrebbe sempre essere la prima considerazione - o se l&#39;obiettivo desiderato può essere raggiunto con meno sforzo con un altro metodo. Personalization può essere una funzione configurata dagli utenti una volta (per vedere come funziona) e una sola volta, in quanto non offre loro vantaggi reali.
+* Personalization ha senso solo quando il contenuto è dinamico, in qualche modo dipendente dall’utente. Se tutti gli utenti visualizzano lo stesso contenuto, la personalizzazione è ridondante.
 
 #### Riservatezza {#confidentiality}
 
 * Molti utenti sono preoccupati per la protezione dei dati e la sicurezza. In particolare per quanto riguarda i dati recuperati durante il tracciamento del loro comportamento durante la navigazione sul web.
 
-## Personalizzazione e accesso {#personalization-and-access}
+## Personalization e Access {#personalization-and-access}
 
-La personalizzazione deve essere considerata separatamente dal controllo degli accessi, ma si relazionano tra loro.
+Personalization deve essere considerato separatamente dal controllo degli accessi, ma si relazionano tra loro.
 
-La personalizzazione di per sé non crea alcuna forma di controllo degli accessi. Si tratta semplicemente di un metodo per gestire ciò che l’utente vede; non limita l’accesso ad altri contenuti e come per qualsiasi contenuto, devono avere già assegnati i corretti controlli di accesso.
+Personalization non crea alcuna forma di controllo degli accessi. Si tratta semplicemente di un metodo per gestire ciò che l’utente vede; non limita l’accesso ad altri contenuti e come per qualsiasi contenuto, devono avere già assegnati i corretti controlli di accesso.
 
 Tuttavia, il controllo degli accessi può essere utilizzato per creare una forma di personalizzazione. Se consenti o neghi a un utente l’accesso ai contenuti, questo inevitabilmente influisce sulla scelta dei contenuti che ha a disposizione, personalizzando così la sua esperienza web.
 
-## Componenti disponibili per la personalizzazione {#components-available-for-personalization}
+## Componenti disponibili per Personalization {#components-available-for-personalization}
 
 Vari componenti sono forniti con AEM per la personalizzazione. Alcuni consentono agli utenti di accedere e modificare i loro profili, altri (come I miei gadget) consentono agli utenti di configurare una pagina specifica:
 
@@ -168,11 +168,11 @@ Vari componenti sono forniti con AEM per la personalizzazione. Alcuni consentono
 | Tag cloud | Una nuvola di tag per mostrare una selezione di tag presentata graficamente all’interno del sito web |
 | Teaser | Contenuto (in genere un’immagine) visualizzato in una pagina principale per &quot;prendere in giro&quot; gli utenti per accedere al contenuto sottostante. |
 
-## Personalizzazione e contenuti della community {#personalization-and-community-content}
+## Personalization e contenuti della community {#personalization-and-community-content}
 
-Le funzioni della community come blog, forum e calendari determinano la creazione di contenuti comunitari, comunemente denominati contenuti generati dagli utenti (UGC, User Generated Content). Quando UGC viene inserito in un ambiente di pubblicazione costituito da più istanze AEM (un [farm di pubblicazione](/help/communities/topologies.md)), un problema importante è stato come sincronizzare UGC tra tutte le istanze.
+Le funzioni della community come blog, forum e calendari determinano la creazione di contenuti comunitari, comunemente denominati contenuti generati dagli utenti (UGC, User Generated Content). Quando UGC viene immesso in un ambiente di pubblicazione costituito da più istanze AEM (una [farm di pubblicazione](/help/communities/topologies.md)), un problema importante è stato come sincronizzare UGC in tutte le istanze.
 
-Con [AEM Communities 6.1](/help/communities/overview.md) , questo problema viene risolto utilizzando un [archivio comune per UGC](/help/communities/working-with-srp.md). Per quanto riguarda, la personalizzazione, Community include [Accesso social network](/help/communities/social-login.md) : possibilità per i visitatori del sito di accedere con Facebook e Twitter.
+Con l&#39;estensione [AEM Communities 6.1](/help/communities/overview.md), questo problema viene risolto utilizzando un [archivio comune per UGC](/help/communities/working-with-srp.md). Per quanto riguarda, la personalizzazione, Communities include [Accesso social](/help/communities/social-login.md): la possibilità per i visitatori del sito di accedere con Facebook e Twitter.
 
 Senza l’estensione Communities, puoi esplorare diversi metodi per risolvere il problema della coerenza UGC:
 

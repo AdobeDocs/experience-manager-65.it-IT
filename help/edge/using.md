@@ -60,4 +60,4 @@ Per ulteriori dettagli, consulta le pagine seguenti:
 * Per informazioni dettagliate su come iniziare a utilizzare Edge Delivery, consulta la sezione [Creare](https://www.hlx.live/docs/#build) della documentazione di Edge Delivery.
 * Per informazioni su come creare e pubblicare contenuti utilizzando Edge Delivery, consulta la sezione [Pubblicare](https://www.hlx.live/docs/authoring).
 * Per informazioni su come utilizzare l’estensione Sidekick, consulta la pagina [Utilizzo di Sidekick](https://www.hlx.live/docs/sidekick).
-* Per la creazione di AEM, vedi [Pagina Concetti di authoring](/help/sites-authoring/author.md))
+* Per l&#39;authoring AEM, vedere la [pagina sui concetti di authoring](/help/sites-authoring/author.md))

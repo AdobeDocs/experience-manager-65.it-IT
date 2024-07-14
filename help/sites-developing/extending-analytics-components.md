@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Inclusione del modulo Adobe Analytics in un componente Pagina {#including-the-adobe-analytics-module-in-a-page-component}
 
-Componenti del modello di pagina (ad esempio, `head.jsp, body.jsp`) richiede che JSP includa per caricare ContextHub e l’integrazione Adobe Analytics (che fa parte di Cloud Service). Tutto include il caricamento di file JavaScript.
+I componenti del modello di pagina (ad esempio, `head.jsp, body.jsp`) devono essere inclusi in JSP per caricare ContextHub e l&#39;integrazione Adobe Analytics (che fa parte di Cloud Service). Tutto include il caricamento di file JavaScript.
 
-La voce ContextHub deve essere inclusa immediatamente sotto il `<head>` , mentre i Cloud Service devono essere inclusi nel `<head>` e prima del `</body>` sezione; ad esempio:
+La voce ContextHub deve essere inclusa immediatamente sotto il tag `<head>`, mentre i Cloud Service devono essere inclusi nella sezione `<head>` e prima della sezione `</body>`; ad esempio:
 
 ```xml
 <head>
@@ -37,11 +37,11 @@ La voce ContextHub deve essere inclusa immediatamente sotto il `<head>` , mentre
 </body>
 ```
 
-Il `contexthub` script inserito dopo il `<head>` aggiunge le funzioni ContextHub alla pagina.
+Lo script `contexthub` inserito dopo l&#39;elemento `<head>` aggiunge le funzionalità ContextHub alla pagina.
 
-Il `cloudservices` script aggiunti in `<head>` e `<body>` le sezioni si applicano alle configurazioni dei servizi cloud aggiunte alla pagina. (Se la pagina utilizza più di una configurazione di Cloud Service, devi includere ContextHub jsp e Cloud Service jsp una sola volta.)
+Gli script `cloudservices` aggiunti nelle sezioni `<head>` e `<body>` si applicano alle configurazioni dei servizi cloud aggiunti alla pagina. (Se la pagina utilizza più di una configurazione di Cloud Service, devi includere ContextHub jsp e Cloud Service jsp una sola volta.)
 
-Quando si aggiunge un framework Adobe Analytics alla pagina, il `cloudservices` Gli script generano JavaScript relativi ad Adobe Analytics e riferimenti a librerie lato client, in modo simile all’esempio seguente:
+Quando un framework Adobe Analytics viene aggiunto alla pagina, gli script `cloudservices` generano JavaScript correlati ad Adobe Analytics e riferimenti a librerie lato client, in modo simile all&#39;esempio seguente:
 
 ```xml
 <div class="sitecatalyst cloudservice">
@@ -113,35 +113,35 @@ Questo codice è incluso in tutti i siti di esempio per l’AEM, ad esempio i Ge
 
 ### L&#39;evento sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
-Il `cloudservices` lo script attiva `sitecatalystAfterCollect` evento:
+Lo script `cloudservices` attiva l&#39;evento `sitecatalystAfterCollect`:
 
 ```
 $CQ(document).trigger("sitecatalystAfterCollect");
 ```
 
-Questo evento viene attivato per indicare che il tracciamento della pagina è stato completato. Se in questa pagina vengono eseguite operazioni di tracciamento aggiuntive, è necessario ascoltare questo evento anziché l&#39;evento di caricamento del documento o l&#39;evento di preparazione del documento. Utilizzo di `sitecatalystAfterCollect` evita conflitti o altri comportamenti imprevedibili.
+Questo evento viene attivato per indicare che il tracciamento della pagina è stato completato. Se in questa pagina vengono eseguite operazioni di tracciamento aggiuntive, è necessario ascoltare questo evento anziché l&#39;evento di caricamento del documento o l&#39;evento di preparazione del documento. L&#39;utilizzo dell&#39;evento `sitecatalystAfterCollect` evita conflitti o altri comportamenti imprevedibili.
 
 >[!NOTE]
 >
->Il `/libs/cq/analytics/clientlibs/sitecatalyst/sitecatalyst.js` la libreria include il codice di Adobe Analytics `s_code.js` file.
+>La libreria `/libs/cq/analytics/clientlibs/sitecatalyst/sitecatalyst.js` include il codice del file Adobe Analytics `s_code.js`.
 
 ## Implementazione del tracciamento di Adobe Analytics per i componenti personalizzati {#implementing-adobe-analytics-tracking-for-custom-components}
 
 Abilita i componenti AEM a interagire con il framework Adobe Analytics. Quindi, configura il framework in modo che Adobe Analytics tenga traccia dei dati del componente.
 
-I componenti che interagiscono con il framework di Adobe Analytics vengono visualizzati nel Sidekick quando si modifica un framework. Dopo aver trascinato il componente nel framework, vengono visualizzate le relative proprietà e puoi mapparle con le proprietà di Adobe Analytics. (vedere [Impostazione di un framework per il tracciamento di base](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
+I componenti che interagiscono con il framework di Adobe Analytics vengono visualizzati nel Sidekick quando si modifica un framework. Dopo aver trascinato il componente nel framework, vengono visualizzate le relative proprietà e puoi mapparle con le proprietà di Adobe Analytics. (Vedi [Impostazione di un framework per il tracciamento di base](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
 
-I componenti possono interagire con il framework di Adobe Analytics quando il componente ha un nodo figlio denominato `analytics`. Il `analytics` Il nodo ha le seguenti proprietà:
+I componenti possono interagire con il framework di Adobe Analytics quando il componente ha un nodo figlio denominato `analytics`. Il nodo `analytics` ha le seguenti proprietà:
 
 * `cq:trackevents`: identifica gli eventi CQ esposti dal componente. Consulta Eventi personalizzati.
 * `cq:trackvars`: assegna un nome alle variabili CQ mappate con le proprietà Adobe Analytics.
 * `cq:componentName`: nome del componente visualizzato nel Sidekick.
 * `cq:componentGroup`: il Sidekick che include il componente.
 
-Il codice nel JSP del componente aggiunge il JavaScript alla pagina che attiva il tracciamento e definisce i dati tracciati. Il nome dell’evento e i nomi dei dati utilizzati in JavaScript devono corrispondere ai valori corrispondenti del `analytics` proprietà del nodo.
+Il codice nel componente JSP aggiunge il JavaScript alla pagina che attiva il tracciamento e definisce i dati tracciati. Il nome dell&#39;evento e i nomi dei dati utilizzati in JavaScript devono corrispondere ai valori corrispondenti delle proprietà del nodo `analytics`.
 
-* Utilizza l’attributo di tracciamento dei dati per tenere traccia dei dati dell’evento al caricamento di una pagina. (vedere [Tracciamento degli eventi personalizzati al caricamento della pagina](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
-* Utilizza la funzione CQ_Analytics.record per tenere traccia dei dati evento quando gli utenti interagiscono con le funzioni della pagina. (vedere [Tracciamento Degli Eventi Personalizzati Dopo Il Caricamento Della Pagina](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
+* Utilizza l’attributo di tracciamento dei dati per tenere traccia dei dati dell’evento al caricamento di una pagina. (Vedi [Tracciamento degli eventi personalizzati al caricamento della pagina](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
+* Utilizza la funzione CQ_Analytics.record per tenere traccia dei dati evento quando gli utenti interagiscono con le funzioni della pagina. (Vedi [Tracciamento Degli Eventi Personalizzati Dopo Il Caricamento Della Pagina](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
 
 Quando utilizzi questi metodi di tracciamento dei dati, il modulo di integrazione di Adobe Analytics esegue automaticamente le chiamate ad Adobe Analytics per registrare gli eventi e i dati.
 
@@ -156,9 +156,9 @@ Per le procedure seguenti è necessario aver già eseguito le attività seguenti
 
 #### Copiare il componente topnav {#copy-the-topnav-component}
 
-Copia il componente topnav nell’applicazione CQ. La procedura richiede che l’applicazione sia configurata in CRXDE Liti.
+Copia il componente topnav nell’applicazione CQ. La procedura richiede che l’applicazione sia configurata in CRXDE Lite.
 
-1. Fare clic con il pulsante destro del mouse `/libs/foundation/components/topnav` e fai clic su Copia.
+1. Fare clic con il pulsante destro del mouse sul nodo `/libs/foundation/components/topnav` e scegliere Copia.
 1. Fare clic con il pulsante destro del mouse sulla cartella Componenti sotto la cartella dell&#39;applicazione e scegliere Incolla.
 1. Fai clic su Salva tutto.
 
@@ -196,7 +196,7 @@ Configura il componente topnav e modifica il file JSP per definire gli eventi e 
    * Valore: Generale
 
 1. Fai clic su Salva tutto.
-1. Apri `topnav.jsp` file.
+1. Aprire il file `topnav.jsp`.
 1. Nell&#39;elemento, aggiungi il seguente attributo:
 
    ```xml
@@ -224,7 +224,7 @@ Configura il componente topnav e modifica il file JSP per definire gli eventi e 
 
 1. Fai clic su Salva tutto.
 
-Il contenuto della `topnav.jsp` Il file dovrebbe essere visualizzato come segue:
+Il contenuto del file `topnav.jsp` deve essere visualizzato come segue:
 
 ```xml
 <%@page session="false"%><%--
@@ -288,7 +288,7 @@ Il contenuto della `topnav.jsp` Il file dovrebbe essere visualizzato come segue:
 
 >[!NOTE]
 >
->Spesso è auspicabile tenere traccia dei dati da ContextHub. Per informazioni sull&#39;utilizzo di JavaScript per ottenere queste informazioni, consulta [Accesso ai valori in ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+>Spesso è auspicabile tenere traccia dei dati da ContextHub. Per informazioni sull&#39;utilizzo di JavaScript per ottenere queste informazioni, vedere [Accesso ai valori in ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 
 #### Aggiunta del componente Tracciamento al Sidekick {#adding-the-tracking-component-to-sidekick}
 
@@ -297,7 +297,7 @@ Aggiungi al Sidekick i componenti abilitati per il tracciamento con Adobe Analyt
 1. Apri il framework di Adobe Analytics dalla configurazione di Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. In Sidekick, fare clic sul pulsante Progettazione.
 
-   ![Pulsante Progettazione con un quadrato ad angolo retto.](assets/chlimage_1a.png)
+   ![Pulsante Progettazione con quadrato ad angolo retto.](assets/chlimage_1a.png)
 
 1. Nell’area Configurazione tracciamento collegamenti, fai clic su Configura ereditarietà.
 
@@ -308,7 +308,7 @@ Aggiungi al Sidekick i componenti abilitati per il tracciamento con Adobe Analyt
 
 #### Aggiunta del componente topnav al framework {#adding-the-topnav-component-to-your-framework}
 
-Trascina il componente topnav nel framework Adobe Analytics e mappa le variabili componente e gli eventi sulle variabili Adobe Analytics e sugli eventi. (vedere [Impostazione di un framework per il tracciamento di base](/help/sites-administering/adobeanalytics-connect.md).)
+Trascina il componente topnav nel framework Adobe Analytics e mappa le variabili componente e gli eventi sulle variabili Adobe Analytics e sugli eventi. (Vedi [Impostazione di un framework per il tracciamento di base](/help/sites-administering/adobeanalytics-connect.md).)
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
@@ -319,7 +319,7 @@ Il componente topnav è ora integrato con il framework Adobe Analytics. Quando a
 I componenti possono generare dati per la variabile s.products inviata ad Adobe Analytics. Progetta i componenti per contribuire alla variabile s.products:
 
 * Registra un valore denominato `product` di una struttura specifica.
-* Esporre i membri dati di `product` affinché possano essere mappate con le variabili Adobe Analytics nel framework Adobe Analytics.
+* Esporre i membri dati del valore `product` in modo che possano essere mappati con le variabili Adobe Analytics nel framework Adobe Analytics.
 
 La variabile s.products di Adobe Analytics utilizza la sintassi seguente:
 
@@ -327,7 +327,7 @@ La variabile s.products di Adobe Analytics utilizza la sintassi seguente:
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
 ```
 
-Il modulo di integrazione di Adobe Analytics crea `s.products` variabile utilizzando `product` valori generati dai componenti dell’AEM. Il `product` Il valore in JavaScript generato dai componenti AEM è un array di valori con la seguente struttura:
+Il modulo di integrazione di Adobe Analytics costruisce la variabile `s.products` utilizzando i valori `product` generati dai componenti AEM. Il valore `product` nel JavaScript generato dai componenti AEM è un array di valori con la seguente struttura:
 
 ```
 "product": [{
@@ -346,13 +346,13 @@ Il modulo di integrazione di Adobe Analytics crea `s.products` variabile utilizz
 }]
 ```
 
-Quando un elemento di dati viene omesso dal `product` viene inviato come stringa vuota in s.products.
+Quando un elemento dati viene omesso dal valore `product`, viene inviato come stringa vuota in s.products.
 
 >[!NOTE]
 >
->Quando nessun evento è associato a un valore di prodotto, Adobe Analytics utilizza `prodView` per impostazione predefinita.
+>Quando nessun evento è associato a un valore di prodotto, Adobe Analytics utilizza l&#39;evento `prodView` per impostazione predefinita.
 
-Il `analytics` del componente deve esporre i nomi delle variabili utilizzando il `cq:trackvars` proprietà:
+Il nodo `analytics` del componente deve esporre i nomi delle variabili utilizzando la proprietà `cq:trackvars`:
 
 * product.category
 * product.sku
@@ -363,7 +363,7 @@ Il `analytics` del componente deve esporre i nomi delle variabili utilizzando il
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Il modulo eCommerce fornisce diversi componenti che generano dati di variabili s.products. Ad esempio, il `submitorder` componente ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genera JavaScript simile al seguente esempio:
+Il modulo eCommerce fornisce diversi componenti che generano dati di variabili s.products. Il componente `submitorder` ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)), ad esempio, genera JavaScript simile al seguente esempio:
 
 ```
 <script type="text/javascript">
@@ -439,6 +439,6 @@ Il modulo eCommerce fornisce diversi componenti che generano dati di variabili s
 
 #### Limitare la dimensione delle chiamate di tracciamento {#limiting-the-size-of-tracking-calls}
 
-In genere, i browser web limitano la dimensione delle richieste di GET. Poiché i valori di prodotto CQ e SKU sono percorsi di archivio, gli array di prodotti che includono più valori possono superare il limite di dimensioni della richiesta. Pertanto, i componenti devono limitare il numero di elementi nel `product` array di ciascun `CQ_Analytics.record function`. Crea più funzioni se il numero di elementi da monitorare può superare il limite.
+In genere, i browser web limitano la dimensione delle richieste di GET. Poiché i valori di prodotto CQ e SKU sono percorsi di archivio, gli array di prodotti che includono più valori possono superare il limite di dimensioni della richiesta. Pertanto, i componenti devono limitare il numero di elementi nell&#39;array `product` di ogni `CQ_Analytics.record function`. Crea più funzioni se il numero di elementi da monitorare può superare il limite.
 
-Ad esempio, l’eCommerce `submitorder` il componente limita il numero di `product` elementi in una chiamata a quattro. Quando il carrello contiene più di quattro prodotti, genera più `CQ_Analytics.record` funzioni.
+Ad esempio, il componente eCommerce `submitorder` limita a quattro il numero di `product` elementi in una chiamata. Quando il carrello contiene più di quattro prodotti, genera più funzioni `CQ_Analytics.record`.

@@ -26,7 +26,7 @@ Poiché è possibile selezionare un XDP durante la progettazione del processo, �
 
 Per abilitare i moduli adattivi da utilizzare nella progettazione dei processi, effettua le seguenti operazioni:
 
-* In Assegna attività e punto iniziale, puoi passare a una risorsa di modulo adattivo nell’archivio CRX quando assegni una risorsa di modulo a un’attività.
+* In Assegna attività e punto iniziale è possibile passare a una risorsa di modulo adattivo nell’archivio CRX quando si assegna una risorsa di modulo a un’attività.
 * Nel foglio delle proprietà Assegna attività/Punto iniziale del workbench è possibile nascondere la barra degli strumenti globale/di primo livello di un modulo adattivo.
 * Puoi utilizzare nuovi profili di azione per le azioni Rendering e Invio nei moduli adattivi.
 
@@ -40,22 +40,22 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
 
 1. Per allegare i file, utilizza gli allegati delle attività, come in Mobile Forms. Qualsiasi pulsante di tipo File allegato di un modulo adattivo è nascosto.
 
-1. Per salvare un modulo adattivo, fai clic su **Salva**, come nel caso di Mobile Forms. Qualsiasi pulsante Salva tipo di modulo adattivo è nascosto.
+1. Per salvare un modulo adattivo, fai clic su **Salva**, come in Mobile Forms. Qualsiasi pulsante Salva tipo di modulo adattivo è nascosto.
 
-1. Per inviare un modulo adattivo, utilizza **Invia** o instradare le azioni disponibili, come nel caso di Mobile Forms. Qualsiasi pulsante Invia tipo di modulo adattivo è nascosto.
+1. Per inviare un modulo adattivo, utilizza il pulsante **Invia** o instrada le azioni disponibili, come in Mobile Forms. Qualsiasi pulsante Invia tipo di modulo adattivo è nascosto.
 
-1. **Visibilità della barra degli strumenti Globale del modulo adattivo**: se Elabora Designer nasconde la barra degli strumenti globale/di primo livello, la barra degli strumenti e i pulsanti non vengono visualizzati nei moduli adattivi.
+1. **Visibilità barra degli strumenti globale modulo adattivo**: se in Process Designer la barra degli strumenti globale/di primo livello viene nascosta, la barra degli strumenti e i pulsanti non vengono visualizzati nei moduli adattivi.
 
-1. **Controlli di navigazione di Workspace per Adaptive Forms**: i pulsanti Avanti/Indietro sono disponibili insieme ai pulsanti Salva, Invia e Inoltra azione per un modulo adattivo in HTML Workspace. Fai clic sui pulsanti Successivo/Precedente per passare ai pannelli dei moduli adattivi in HTML Workspace. I pulsanti Successivo/Precedente offrono una navigazione approfondita, simile ai controlli di navigazione nella visualizzazione Mobile dei moduli adattivi.
+1. **Controlli di navigazione di Workspace per Forms adattivo**: i pulsanti Avanti/Indietro sono disponibili insieme ai pulsanti Salva, Invia e Instrada azione per un modulo adattivo in HTML Workspace. Fai clic sui pulsanti Successivo/Precedente per passare ai pannelli dei moduli adattivi in HTML Workspace. I pulsanti Successivo/Precedente offrono una navigazione approfondita, simile ai controlli di navigazione nella visualizzazione Mobile dei moduli adattivi.
 
-1. **Componente servizi eSign e riepilogo del modulo adattivo**: il componente Riepilogo non è operativo in HTML Workspace. In altre parole, un modulo adattivo con un componente Riepilogo non è visibile nell’area di lavoro. Invece di eseguire l’invio automatico nel componente E-sign, l’utente dell’area di lavoro fa clic sull’azione Invia o su un’azione del percorso in HTML Workspace. Dopo la firma, un documento è visibile come documento con firma semplice. Clic **Invia** o un&#39;azione di instradamento che consente di chiudere/completare l&#39;attività o il punto iniziale.\
+1. **Servizi eSign e componente Riepilogo del modulo adattivo**: il componente Riepilogo non è operativo in HTML Workspace. In altre parole, un modulo adattivo con un componente Riepilogo non è visibile nell’area di lavoro. Invece di eseguire l’invio automatico nel componente E-sign, l’utente dell’area di lavoro fa clic sull’azione Invia o su un’azione di instradamento in HTML Workspace. Dopo la firma, un documento è visibile come documento con firma semplice. Fai clic su **Invia** o su un&#39;azione di instradamento per chiudere/completare l&#39;attività o il punto iniziale.\
    Il documento firmato viene raccolto dal server eSign Services e il file XML dati viene inoltrato al passaggio successivo del processo.
 
 ## Passaggi per utilizzare i moduli adattivi nella progettazione dei processi {#steps-to-use-adaptive-forms-in-process-design}
 
 1. Apri Adobe Experience Manager Forms Workbench.
 
-1. Vai a **File > Nuovo > Applicazione** oppure utilizzare l&#39;applicazione esistente per creare un&#39;applicazione.
+1. Vai a **File > Nuovo > Applicazione** oppure utilizza l&#39;applicazione esistente per creare un&#39;applicazione.
 
    ![Crea nuova applicazione](assets/create_new_appl.png)
 
@@ -68,13 +68,13 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
    Crea processo
 
 1. Creare un punto iniziale o assegnare un&#39;attività e fare doppio clic su di essa.
-1. Sotto **[!UICONTROL Presentazione e dati]** sezione, seleziona **[!UICONTROL utilizzare una risorsa CRX]** e fai clic sui puntini di sospensione davanti alla risorsa.
+1. Nella sezione **[!UICONTROL Presentazione e dati]**, seleziona **[!UICONTROL utilizza una risorsa CRX]** e fai clic sui puntini di sospensione prima della risorsa.
 
    ![Utilizzare una risorsa CRX](assets/use_crx_asset.png)
 
    Utilizzare una risorsa CRX
 
-1. Seleziona il modulo adattivo creato tramite l’interfaccia utente di Gestione risorse e fai clic su **[!UICONTROL OK]**.
+1. Seleziona il modulo adattivo creato tramite l&#39;interfaccia utente Gestisci Assets e fai clic su **[!UICONTROL OK]**.
 
    ![Seleziona un modulo adattivo](assets/selecting_form.png)
 
@@ -85,4 +85,4 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
    >Per informazioni dettagliate sulla creazione di un modulo adattivo, consulta [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >Per informazioni dettagliate sulla creazione di un processo, consulta [Creazione e gestione dei processi](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Per informazioni dettagliate sulla creazione di un processo, vedere [Creazione e gestione dei processi](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

@@ -30,11 +30,11 @@ ht-degree: 1%
 
 Il valore predefinito è una stringa vuota.
 
-**File di configurazione XCI:** Posizione relativa o assoluta del file di configurazione XCI utilizzato dal servizio di output per il rendering. Per un valore relativo, si presume che il file XCI risieda nel file EAR distribuibile dei moduli AEM.
+**File di configurazione XCI:** posizione relativa o assoluta del file di configurazione XCI utilizzato dal servizio di output per il rendering. Per un valore relativo, si presume che il file XCI risieda nel file EAR distribuibile dei moduli AEM.
 
 Il valore predefinito è `com/adobe/formServer/PA/pa_output.xci`.
 
-**Percorso cache:** Specifica la posizione della cache del disco di output. Quando si modifica questa impostazione, tutte le informazioni della cache esistenti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle opzioni seguenti:
+**Posizione cache:** Specifica la posizione della cache del disco di output. Quando si modifica questa impostazione, tutte le informazioni della cache esistenti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle opzioni seguenti:
 
 **Posizione predefinita:** Questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione dipendente dal server applicazioni in uso:
 

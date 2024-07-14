@@ -28,7 +28,7 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td><p>social/messaggistica/componenti/hbs/composemessage</p> </td>
   </tr>
   <tr>
@@ -45,7 +45,7 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Consulta <a href="/help/communities/configure-messaging.md" target="_blank">Configurare la messaggistica</a></td>
+   <td>Vedi <a href="/help/communities/configure-messaging.md" target="_blank">Configurazione messaggi</a></td>
   </tr>
   <tr>
    <td><strong>configurazione amministratore</strong></td>
@@ -61,7 +61,7 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td><p>social/messaggistica/componenti/hbs/messagebox</p> </td>
   </tr>
   <tr>
@@ -78,7 +78,7 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Consulta <a href="/help/communities/configure-messaging.md" target="_blank">Configurare la messaggistica</a></td>
+   <td>Vedi <a href="/help/communities/configure-messaging.md" target="_blank">Configurazione messaggi</a></td>
   </tr>
   <tr>
    <td><strong>configurazione amministratore</strong></td>
@@ -99,10 +99,10 @@ Vedi anche [Personalizzazioni lato client](/help/communities/client-customize.md
 
 >[!CAUTION]
 >
->Il parametro String deve *non* contengono una barra finale &quot;/&quot; per i seguenti metodi MessageBuilder:
+>Il parametro String deve *not* contenere una barra finale &quot;/&quot; per i seguenti metodi MessageBuilder:
 >
->* `setInboxPath`()
->* `setSentItemsPath`()
+>* `setInboxPath`
+>* `setSentItemsPath`
 >
 >Ad esempio:
 >
@@ -113,34 +113,34 @@ Vedi anche [Personalizzazioni lato client](/help/communities/client-customize.md
 
 ### Sito community {#community-site}
 
-Una struttura del sito della community, creata mediante la procedura guidata, include la funzione di messaggistica se selezionata. Consulta `User Management` impostazioni di [Console Siti community](/help/communities/sites-console.md#user-management).
+Una struttura del sito della community, creata mediante la procedura guidata, include la funzione di messaggistica se selezionata. Vedere le impostazioni `User Management` di [Console Siti community](/help/communities/sites-console.md#user-management).
 
 ### Codice di esempio: messaggio ricevuto notifica {#sample-code-message-received-notification}
 
-La funzione di messaggistica social genera eventi per le operazioni, ad esempio `send`, `marking read`, `marking delete`. Questi eventi possono essere rilevati e possono essere intraprese azioni sui dati contenuti nell’evento.
+La funzionalità di messaggistica social genera eventi per le operazioni, ad esempio `send`, `marking read`, `marking delete`. Questi eventi possono essere rilevati e possono essere intraprese azioni sui dati contenuti nell’evento.
 
-L&#39;esempio seguente è di un gestore eventi che ascolta `message sent` e invia un messaggio e-mail a tutti i destinatari utilizzando `Day CQ Mail Service`.
+L&#39;esempio seguente è di un gestore eventi che ascolta l&#39;evento `message sent` e invia un&#39;e-mail a tutti i destinatari del messaggio utilizzando `Day CQ Mail Service`.
 
 Per provare lo script di esempio lato server, è necessario un ambiente di sviluppo e la possibilità di creare un bundle OSGi:
 
-1. Accedi come amministratore a ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Creare un `bundle node`in `/apps/engage/install` con nomi arbitrari, ad esempio:
+1. Accedere come amministratore a ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
+1. Crea un `bundle node` in `/apps/engage/install` con nomi arbitrari, ad esempio:
 
    * Nome simbolico: `com.engage.media.social.messaging.MessagingNotification`
    * Nome: Avvio Notifica del messaggio del tutorial
    * Descrizione: servizio di esempio per l’invio di una notifica e-mail agli utenti quando ricevono un messaggio
-   * Pacchetto `com.engage.media.social.messaging.notification`
+   * Pacchetto: `com.engage.media.social.messaging.notification`
 
-1. Accedi a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`e quindi:
+1. Passare a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`, quindi:
 
-   1. Elimina `Activator.java` classe creata automaticamente.
-   1. Crea classe `MessageEventHandler.java`.
-   1. Copia e incolla il codice seguente in `MessageEventHandler.java`.
+   1. Elimina la classe `Activator.java` creata automaticamente.
+   1. Creare la classe `MessageEventHandler.java`.
+   1. Copiare e incollare il codice seguente in `MessageEventHandler.java`.
 
-1. Clic **Salva tutto**.
-1. Accedi a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`e aggiungere tutte le istruzioni di importazione come scritto nella `MessageEventHandler.java` codice.
+1. Fare clic su **Salva tutto**.
+1. Passare a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` e aggiungere tutte le istruzioni di importazione come scritto nel codice `MessageEventHandler.java`.
 1. Crea il bundle.
-1. Assicurare `Day CQ Mail Service`Il servizio OSGi è configurato.
+1. Verifica che il servizio OSGi `Day CQ Mail Service` sia configurato.
 1. Accedi come utente demo e invia un’e-mail a un altro utente.
 1. Il destinatario riceve un’e-mail relativa a un nuovo messaggio.
 

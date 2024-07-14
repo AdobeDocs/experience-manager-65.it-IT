@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Creazione di una directory principale della lingua tramite l’interfaccia classica{#creating-a-language-root-using-the-classic-ui}
 
-La procedura seguente utilizza l’interfaccia utente classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, consulta [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
+La procedura seguente utilizza l’interfaccia utente classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, vedere [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. Nella struttura Siti Web della console Siti Web selezionare la pagina principale del sito. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Aggiungi una nuova pagina figlio che rappresenta la versione lingua del sito:
@@ -28,7 +28,7 @@ La procedura seguente utilizza l’interfaccia utente classica per creare una di
 
    1. Seleziona il Modello e fai clic su Crea.
 
-   ![newsletter](assets/newpagefr.png)
+   ![newpagefr](assets/newpagefr.png)
 
 1. Nella struttura Siti Web della console Siti Web selezionare la pagina principale del sito.
 1. Nel menu Strumenti, seleziona Copia in lingua.
@@ -49,8 +49,8 @@ La procedura seguente utilizza l’interfaccia utente classica per creare una di
    |---|---|
    | auto | Utilizza il comportamento delle pagine padre |
    | ignora | Non crea una copia di questa pagina e dei relativi elementi figlio |
-   | `<language>+` (ad esempio, Francese+) | Copia la pagina e tutti i relativi elementi figlio da tale lingua |
-   | `<language>` (ad esempio, francese) | Copia solo la pagina da tale lingua |
+   | `<language>+` (ad esempio, francese+) | Copia la pagina e tutti i relativi elementi figlio da tale lingua |
+   | `<language>` (ad esempio francese) | Copia solo la pagina da tale lingua |
 
 1. Fare clic su OK per chiudere la finestra di dialogo.
 1. Nella finestra di dialogo successiva, fai clic su Sì per confermare la copia.

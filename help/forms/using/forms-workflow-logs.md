@@ -20,7 +20,7 @@ ht-degree: 5%
 
 I passaggi di Forms Workflow forniscono registri dettagliati per eseguire il debug dei problemi correlati al flusso di lavoro in modo semplice. Abilita la registrazione di debug per i flussi di lavoro di AEM Forms per visualizzare i registri.
 
-Per impostazione predefinita, tutte le informazioni di registrazione sono disponibili nel **error.log** file in corrispondenza di */crx-repository/logs/* directory.
+Per impostazione predefinita, tutte le informazioni di registrazione sono disponibili nel file **error.log** nella directory */crx-repository/logs/*.
 
 I registri di debug per i flussi di lavoro dei moduli includono:
 
@@ -83,13 +83,13 @@ Effettua le seguenti operazioni per abilitare la registrazione di debug per i fl
 
    https://&#39;[server]:[porta]&#39;/system/console/configMgr
 
-1. Seleziona **[!UICONTROL Sling]** > **[!UICONTROL Supporto registro]**.
+1. Selezionare **[!UICONTROL Sling]** > **[!UICONTROL Supporto log]**.
 1. Seleziona **[!UICONTROL Aggiungi nuovo logger.]**
 1. Seleziona **[!UICONTROL Debug]** come **[!UICONTROL Livello registro]**.
 1. Specificare il percorso del file di registro. Il percorso predefinito del file di registro è: *logs\error.log*
-1. Specifica il nome del pacchetto come **com.adobe.granite.workflow.core** nel **[!UICONTROL Logger]** colonna.
+1. Specificare il nome del pacchetto come **com.adobe.granite.workflow.core** nella colonna **[!UICONTROL Logger]**.
 
-   L’esecuzione di questi passaggi abilita l’archiviazione dei registri di debug per **com.adobe.granite.workflow.core** pacchetto. Seleziona **[!UICONTROL +]** e aggiungi i seguenti nomi di pacchetto all’elenco:
+   L&#39;esecuzione di questi passaggi abilita l&#39;archiviazione dei registri di debug per il pacchetto **com.adobe.granite.workflow.core**. Selezionare **[!UICONTROL +]** e aggiungere i seguenti nomi di pacchetto all&#39;elenco:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

@@ -27,7 +27,7 @@ Durante la creazione di un processo, l’utente di Workbench può specificare se
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro moduli > Fuori sede.
 1. Nella casella nella parte superiore della pagina Fuori sede è possibile effettuare una delle operazioni seguenti:
 
-   **Cerca per nome**
+   **Ricerca per nome**
 
    Selezionare l&#39;opzione Cerca per nome. Digitare tutto o parte del nome utente e fare clic su Trova. Se si lascia vuoto il campo, Forms workflow restituisce un elenco di tutti gli utenti.
 
@@ -39,14 +39,14 @@ Durante la creazione di un processo, l’utente di Workbench può specificare se
 
 ## Modificare lo stato fuori sede di un utente {#change-a-user-s-out-of-office-status}
 
-1. Trovare l&#39;utente come descritto in [Visualizzare le informazioni Fuori sede di un utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. Trovare l&#39;utente come descritto in [Visualizzare le informazioni Fuori sede dell&#39;utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Fare clic sul nome dell&#39;utente che si desidera modificare.
-1. Dalla sezione *Nome utente* è attualmente nell&#39;elenco, selezionare In Office o Out of the Office.
+1. Dall&#39;elenco *Nome utente* è attualmente visualizzato, selezionare In ufficio o Fuori ufficio.
 1. Fai clic su Salva.
 
 ## Aggiungere un intervallo di date Fuori sede per un utente {#add-an-out-of-office-date-range-for-a-user}
 
-1. Trovare l&#39;utente come descritto in [Visualizzare le informazioni Fuori sede di un utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. Trovare l&#39;utente come descritto in [Visualizzare le informazioni Fuori sede dell&#39;utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Fare clic sul nome dell&#39;utente che si desidera modificare.
 1. Fai clic su Aggiungi intervallo di date.
 1. Immettere un&#39;ora di inizio e un&#39;ora di fine. Puoi fare clic sull’icona Calendario per selezionare una data. Se non si specifica un&#39;ora di fine, l&#39;utente verrà impostato come fuori sede a tempo indefinito.
@@ -61,7 +61,7 @@ Quando un utente è fuori sede, puoi assegnare uno o più utenti per eseguire nu
 * Assegna un utente predefinito che riceverà la maggior parte delle attività dell&#39;utente, ma specifica che le attività di alcuni processi vengono riassegnate ad altri utenti o rimangono assegnate all&#39;utente fuori sede.
 * Non assegnare un utente predefinito, ma assegnare determinate attività da determinati processi a utenti specifici.
 
-   1. Trovare l&#39;utente come descritto in [Visualizzare le informazioni Fuori sede di un utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+   1. Trovare l&#39;utente come descritto in [Visualizzare le informazioni Fuori sede dell&#39;utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
    1. Fare clic sul nome dell&#39;utente che si desidera modificare.
    1. Nell&#39;elenco Utente predefinito per attività fuori sede selezionare un utente dall&#39;elenco. Se non si desidera designare un utente predefinito per la ricezione di elementi riassegnati, selezionare Non assegnare.
 

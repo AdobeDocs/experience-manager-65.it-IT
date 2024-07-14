@@ -24,7 +24,7 @@ Di seguito sono riportate le idee e i commenti espressi da David Nuescheler.
 
 David è stato co-fondatore e CTO di Day Software AG, uno dei principali fornitori di software per la gestione dei contenuti e l&#39;infrastruttura dei contenuti globali, che è stato acquisito da Adobe nel 2010. David è ora membro e vicepresidente della divisione Enterprise Technology di Adobe e guida lo sviluppo di JSR-170, l&#39;API Java™ Content Repository (JCR), lo standard tecnologico per la gestione dei contenuti.
 
-Ulteriori aggiornamenti sono disponibili su [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
+Ulteriori aggiornamenti possono essere visualizzati anche in [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
 
 ## Introduzione di David {#introduction-from-david}
 
@@ -56,7 +56,7 @@ Ulteriori vincoli sui dati, come i vincoli obbligatori o di tipo e valore, devon
 
 #### Esempio {#example-1}
 
-L’esempio precedente di utilizzo di una `lastModified` La proprietà Date su, ad esempio, nodo &quot;post di blog&quot;, in realtà non significa che sia necessario un tipo di nodo speciale. Userei sicuramente `nt:unstructured` almeno inizialmente per i nodi del post di blog. Dato che nella mia applicazione di blog, tutto quello che farò è visualizzare la data ultima modificata comunque (possibilmente &quot;ordina per&quot;) Mi importa a malapena se è una data affatto. Poiché implicitamente mi fido della mia applicazione di scrittura di blog per mettere un &quot;data&quot; lì comunque, non c&#39;è davvero bisogno di dichiarare la presenza di un `lastModified` data sotto forma di un tipo di nodo.
+L&#39;esempio precedente di utilizzo di una proprietà Date `lastModified` su, ad esempio, nodo &quot;post di blog&quot;, non significa che sia necessario un tipo di nodo speciale. Userei sicuramente `nt:unstructured` per i nodi del post di blog almeno all&#39;inizio. Dato che nella mia applicazione di blog, tutto quello che farò è visualizzare la data ultima modificata comunque (possibilmente &quot;ordina per&quot;) Mi importa a malapena se è una data affatto. Poiché la mia applicazione per la scrittura di blog è implicitamente attendibile per inserire comunque una &quot;data&quot;, non è necessario dichiarare la presenza di una data `lastModified` sotto forma di un tipo di nodo.
 
 ### Regola #2: guida la gerarchia dei contenuti; evitare che ciò accada. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -74,7 +74,7 @@ Personalmente, preferisco le convenzioni gerarchiche al sistema di digitazione d
 >
 >La struttura di un archivio di contenuti può influire anche sulle prestazioni. Per prestazioni ottimali, il numero di nodi secondari collegati ai singoli nodi in un archivio di contenuti non deve superare le 1.000 unità.
 >
->Consulta [Quanti dati può gestire CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
+>Vedi [Quanti dati può gestire CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Esempio {#example-2}
 
@@ -100,7 +100,7 @@ Utilizzando il modello di contenuto di cui sopra posso consentire facilmente all
 
 #### Spiegazione {#explanation-3}
 
-Se non usa `clone()`, `merge()` o `update()` metodi nell&#39;applicazione un&#39;unica area di lavoro è probabilmente la soluzione ideale.
+Se nell&#39;applicazione non si utilizzano i metodi `clone()`, `merge()` o `update()`, è probabile che un&#39;unica area di lavoro sia la soluzione ideale.
 
 &quot;Nodi corrispondenti&quot; è un concetto definito nelle specifiche JCR. In sostanza, si riduce ai nodi che rappresentano lo stesso contenuto, in diverse cosiddette aree di lavoro.
 
@@ -173,13 +173,13 @@ Penso che ci siano casi d&#39;uso in cui un sistema non può funzionare se un ri
 
 #### Spiegazione {#explanation-6}
 
-Se un modello di contenuto espone qualcosa che odora anche in remoto come un file o una cartella, tento di utilizzare (o estendere da) `nt:file`, `nt:folder`, e `nt:resource`.
+Se un modello di contenuto espone qualcosa che odora anche in remoto come un file o una cartella, si tenta di utilizzare (o estendere da) `nt:file`, `nt:folder` e `nt:resource`.
 
 Nella mia esperienza, molte applicazioni generiche consentono l’interazione con nt:folder e nt:files in modo implicito e sanno come gestire e visualizzare tali eventi se arricchiti da metadati aggiuntivi. Ad esempio, un’interazione diretta con implementazioni di file server come CIF o WebDAV che si trovano sopra JCR diventa implicita.
 
-Penso che come buona regola generale si potrebbe usare il seguente: Se si deve memorizzare il nome del file e il tipo mime allora `nt:file`/ `nt:resource` è una buona combinazione. Se si possono avere più &quot;file&quot;, la cartella nt:folder è un buon punto in cui memorizzarli.
+Come buona regola empirica si potrebbe usare quanto segue: Se si deve memorizzare il nome del file e il tipo mime allora `nt:file`/ `nt:resource` è una buona corrispondenza. Se si possono avere più &quot;file&quot;, la cartella nt:folder è un buon punto in cui memorizzarli.
 
-Se devi aggiungere metadati per la risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendi `nt:resource` non il `nt:file`. Estendo raramente nt:file ed estendo frequentemente `nt:resource`.
+Se devi aggiungere metadati per la risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendi `nt:resource` e non `nt:file`. Estendo raramente nt:file e spesso `nt:resource`.
 
 #### Esempio {#example-6}
 
@@ -207,13 +207,13 @@ Nei database relazionali, gli ID sono un mezzo necessario per esprimere le relaz
 
 Se il modello di contenuto è pieno di proprietà che terminano con &quot;Id&quot;, probabilmente la gerarchia non viene utilizzata correttamente.
 
-È vero che alcuni nodi necessitano di un’identificazione stabile durante il loro ciclo di vita; meno di quanto tu possa pensare. Ma `mix:referenceable` dispone di un meccanismo di questo tipo integrato nell’archivio, pertanto non è necessario trovare un mezzo aggiuntivo per identificare un nodo in modo stabile.
+È vero che alcuni nodi necessitano di un’identificazione stabile durante il loro ciclo di vita; meno di quanto tu possa pensare. Tuttavia, `mix:referenceable` dispone di un meccanismo di questo tipo integrato nell&#39;archivio, pertanto non è necessario trovare un metodo aggiuntivo per identificare un nodo in modo stabile.
 
 Tieni presente che gli elementi possono essere identificati in base al percorso. Inoltre, poiché i &quot;symlink&quot; hanno più senso per la maggior parte degli utenti rispetto ai collegamenti rigidi in un file system UNIX®, un percorso è utile per la maggior parte delle applicazioni per fare riferimento a un nodo di destinazione.
 
-Ma, soprattutto, **mix**:referenceable significa che può essere applicato a un nodo nel momento in cui è effettivamente necessario farvi riferimento.
+Fatto ancora più importante, è **mix**:referenziabile, il che significa che può essere applicato a un nodo nel momento in cui è effettivamente necessario farvi riferimento.
 
-Quindi, solo perché desideri poter fare riferimento potenziale a un nodo di tipo &quot;Documento&quot; non significa che il tipo di nodo &quot;Documento&quot; debba estendersi da `mix:referenceable` in modo statico. Questo perché può essere aggiunto dinamicamente a qualsiasi istanza del &quot;Documento&quot;.
+Pertanto, solo perché si desidera poter fare riferimento a un nodo di tipo &quot;Document&quot; non significa che il tipo di nodo &quot;Document&quot; debba estendersi da `mix:referenceable` in modo statico. Questo perché può essere aggiunto dinamicamente a qualsiasi istanza del &quot;Documento&quot;.
 
 #### Esempio {#example-7}
 

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 ## Problema   {#issue}
 
-Quando un utente tenta di distribuire il `adobe-livecycle-weblogic.ear`, il `Null Pointer` è stata riscontrata un&#39;eccezione.
+Quando un utente tenta di distribuire `adobe-livecycle-weblogic.ear`, si verifica l&#39;eccezione `Null Pointer`.
 
 ## Applicabile a {#applies-to}
 
@@ -25,12 +25,12 @@ Questa soluzione si applica a:
 
 Per risolvere il problema, effettua le seguenti operazioni:
 
-1. Vai a `<domain_home>\bin` directory del server WebLogic JEE installato.
+1. Passare alla directory `<domain_home>\bin` del server WebLogic JEE installato.
 
-1. Modifica il `setDomainEnv.cmd` o `setDomainEnv.sh` file, come `applicable`.
+1. Modificare il file `setDomainEnv.cmd` o `setDomainEnv.sh` come `applicable`.
 
-1. Cerca l&#39;ultima occorrenza di `JAVA_OPTS` e aggiungi `-DANTLR_USE_DIRECT_CLASS_LOADING=true` ad esso. Ad esempio, la stringa aggiornata viene visualizzata come:
+1. Cerca l&#39;ultima occorrenza di `JAVA_OPTS` e aggiungi `-DANTLR_USE_DIRECT_CLASS_LOADING=true`. Ad esempio, la stringa aggiornata viene visualizzata come:
 
-       set `JAVA_OPTIONS=%JAVA_OPTIONS% -DANTLR_USE_DIRECT_CLASS_LOADING=true`
+       imposta `JAVA_OPTIONS=%JAVA_OPTIONS% -DANTLR_USE_DIRECT_CLASS_LOADING=true`
    
 1. Salva le modifiche.

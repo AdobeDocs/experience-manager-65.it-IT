@@ -40,9 +40,9 @@ Le funzioni di AEM Communities che possono essere configurate per consentire l�
 
 Consulta [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console) per creare e gestire gli spazi dei nomi e le tassonomie dei tag.
 
-Consulta [Nozioni di base sui tag](tag.md) per informazioni sugli sviluppatori.
+Consulta [Tag Essentials](tag.md) per informazioni per sviluppatori.
 
-Consulta [Utilizzo di Tag cloud per social network](tagcloud.md) per aggiungere un componente Cloud di tag per social network a una pagina per facilitare la ricerca di contenuti UGC pubblicati utilizzando i tag applicati.
+Consulta [Utilizzo di Social Tag Cloud](tagcloud.md) per aggiungere un componente Social Tag Cloud a una pagina per facilitare la ricerca di contenuti generati dagli utenti che utilizzano i tag applicati.
 
 ### Autorizzazioni tag {#tag-permissions}
 
@@ -50,8 +50,8 @@ Le autorizzazioni predefinite sono impostate per non consentire agli spazi dei n
 
 Poiché i tag vengono applicati a UGC nell’ambiente di pubblicazione, è necessario abilitare l’autorizzazione di lettura per i membri della community affinché possano selezionare i tag da applicare.
 
-Consulta [Impostazione delle autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions).
+Vedere [Impostazione delle autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions).
 
 Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura a `/etc/tag/discussions` per il gruppo `Community Engage Members`.
 
-![autorizzazioni tag](assets/tag-permissions.png)
+![autorizzazioni-tag](assets/tag-permissions.png)

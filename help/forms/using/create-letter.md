@@ -33,7 +33,7 @@ L’immagine seguente mostra un flusso di lavoro tipico per la creazione di un m
 
 In questo flusso di lavoro:
 
-1. I progettisti di moduli creano layout e layout di frammenti utilizzando Adobe Forms Designer e li caricano in un archivio CRX. I layout contengono campi modulo tipici, funzionalità di layout come intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto. Successivamente, gli specialisti delle applicazioni mappano il contenuto necessario per queste aree di destinazione. Ulteriori informazioni su [progettazione del layout](/help/forms/using/layout-design-details.md).
+1. I progettisti di moduli creano layout e layout di frammenti utilizzando Adobe Forms Designer e li caricano in un archivio CRX. I layout contengono campi modulo tipici, funzionalità di layout come intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto. Successivamente, gli specialisti delle applicazioni mappano il contenuto necessario per queste aree di destinazione. Ulteriori informazioni sulla [progettazione del layout](/help/forms/using/layout-design-details.md).
 1. Esperti in materia provenienti da dipartimenti legali, finanziari o di marketing creano e caricano contenuti quali clausole di testo, clausole di esclusione di responsabilità, termini e condizioni e immagini quali logo, riutilizzati in vari modelli di corrispondenza.
 1. Gli specialisti delle applicazioni creano modelli di corrispondenza. Specialista dell&#39;applicazione
 
@@ -45,7 +45,7 @@ In questo flusso di lavoro:
 
 #### Utilizzo dei modelli di lettera forniti con Gestione corrispondenza {#using-letter-templates-provided-with-correspondence-management}
 
-Invece di creare un modello di layout da zero, puoi scegliere di modificare e riutilizzare i modelli forniti da Gestione corrispondenza. È possibile utilizzare Designer per modificare rapidamente i campi di branding e di dati e contenuti dei modelli in base alle esigenze della propria organizzazione. Per ulteriori informazioni sui modelli di Gestione della corrispondenza, consulta [Modelli di lettere di riferimento](/help/forms/using/reference-cm-layout-templates.md).
+Invece di creare un modello di layout da zero, puoi scegliere di modificare e riutilizzare i modelli forniti da Gestione corrispondenza. È possibile utilizzare Designer per modificare rapidamente i campi di branding e di dati e contenuti dei modelli in base alle esigenze della propria organizzazione. Per ulteriori informazioni sui modelli di Gestione della corrispondenza, vedere [Modelli di lettere di riferimento](/help/forms/using/reference-cm-layout-templates.md).
 
 ### Creazione di frammenti di documenti {#document-fragment-creation}
 
@@ -67,7 +67,7 @@ Le condizioni consentono di definire quale contenuto viene incluso al momento de
 
 #### Frammento layout {#layout-fragment}
 
-Un frammento di layout è un layout che può essere utilizzato all’interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene anche sottomoduli vuoti che denotano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi sono [caricato in Forms e Documenti](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Un frammento di layout è un layout che può essere utilizzato all’interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene anche sottomoduli vuoti che denotano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi [caricati in Forms e nei documenti](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Creazione di lettere {#letter-creation}
 
@@ -105,7 +105,7 @@ L’immagine seguente fornisce una panoramica di un’architettura di esempio de
 
 Il presente documento di notifica di annullamento è un esempio di corrispondenza tipica:
 
-![Una lettera di annullamento di esempio](assets/5_deconstructingaletter.png)
+![Lettera di annullamento di esempio](assets/5_deconstructingaletter.png)
 
 <table> 
  <tbody> 
@@ -117,27 +117,27 @@ Il presente documento di notifica di annullamento è un esempio di corrispondenz
   <tr> 
    <td>Dati da sistemi aziendali back-end</td> 
    <td>Dati provenienti da sistemi aziendali back-end. I dati vengono uniti dinamicamente con il modello di corrispondenza.</td> 
-   <td>Il<br /> File di dati creato in base a un dizionario dati</td> 
+   <td>Il file di dati <br /> creato in base a un dizionario dati</td> 
   </tr> 
   <tr> 
-   <td>Dati<br /> Inserito dal dipendente in prima linea</td> 
+   <td>Dati<br /> immessi dal dipendente in prima linea</td> 
    <td>Dati che possono essere forniti da un dipendente in prima linea che personalizza la lettera prima di inviarla.<br /> </td> 
    <td><p>Elementi DD non protetti<br /> Paragrafi di testo modificabili<br /> Variabili/segnaposto<br /> </p> </td> 
   </tr> 
   <tr> 
-   <td>Pre-approvato<br /> Paragrafi di testo</td> 
+   <td>Paragrafi di testo preapprovati<br /></td> 
    <td>Contenuto di testo preapprovato. Il contenuto del testo viene in genere creato da esperti in questioni legali, finanziarie o di settore che conoscono il contesto commerciale della lettera. Contenuto come intestazione, piè di pagina, disclaimer e formula introduttiva è comune alla maggior parte delle lettere. Tuttavia, il contenuto come "motivo della rescissione" sarebbe specifico per la lettera in questione.</td> 
    <td><p>Testo\Elenchi\<br /> Condizioni\Layout</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td>Dati<br /> In base alla logica personalizzata?</td> 
+   <td>Dati<br /> basati su logica personalizzata?</td> 
    <td>Per alcune lettere, ad esempio una lettera per richiedere ulteriori informazioni relative a una richiesta di risarcimento, gli utenti come l'Adattatore richieste di rimborso possono aggiungere contenuto di testo personalizzato.</td> 
-   <td>Documento<br /> Frammento di tipo Condizione </td> 
+   <td>Documento<br /> frammento di tipo Condizione </td> 
   </tr> 
   <tr> 
-   <td>Archiviato<br /> Immagini dall’archivio centrale</td> 
+   <td>Immagini archiviate <br /> dall'archivio centrale</td> 
    <td>Immagini quali loghi e immagini di firma. Immagini come i logo aziendali appaiono nella maggior parte o in tutta la corrispondenza. Le immagini della firma sono specifiche della lettera e della persona per conto della quale la lettera viene inviata.</td> 
-   <td><p>Immagini memorizzate in risorse AEM (DAM)<br /> </p> <p> </p> </td> 
+   <td><p>Immagini archiviate in risorse AEM (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -164,19 +164,19 @@ Analizzare ogni lettera per scoprire i vari pezzi che compongono la lettera. Lo 
 
 ## Vantaggi dell’esecuzione dell’analisi {#benefits-of-performing-the-analysis}
 
-**Riutilizzo dei contenuti** Disponi di un elenco consolidato dei nuovi contenuti necessari per generare la corrispondenza. Gran parte del contenuto, come intestazioni, piè di pagina, disclaimer e introduzioni, è comune a molte lettere e può essere riutilizzato in diverse lettere. Tutti i contenuti comuni possono essere creati e approvati dagli esperti una sola volta e poi riutilizzati in molti invii di corrispondenza.
+**Riutilizzo dei contenuti** Hai un elenco consolidato dei nuovi contenuti necessari per generare la corrispondenza. Gran parte del contenuto, come intestazioni, piè di pagina, disclaimer e introduzioni, è comune a molte lettere e può essere riutilizzato in diverse lettere. Tutti i contenuti comuni possono essere creati e approvati dagli esperti una sola volta e poi riutilizzati in molti invii di corrispondenza.
 
 **Creazione del dizionario dati** Ci saranno valori di dati come &quot;ID cliente&quot; e &quot;Nome cliente&quot; che sono comuni a molte lettere. Puoi preparare un elenco consolidato di tutti questi valori di dati. In genere viene consultato un membro del team middleware aziendale durante la pianificazione della struttura. Questo costituisce la base per la creazione del dizionario dati.
 
-**Acquisizione dei dati dai sistemi aziendali back-end** Conoscerai inoltre tutti i valori di dati necessari e da dove vengono ottenuti i dati del sistema aziendale. Puoi quindi progettare l’implementazione per estrarre i dati dal sistema aziendale e inviarli alla soluzione Letters.
+**Determinazione dell&#39;origine dei dati dai sistemi aziendali back-end** Si conosceranno inoltre tutti i valori dei dati necessari e da dove si ottengono i dati del sistema aziendale. Puoi quindi progettare l’implementazione per estrarre i dati dal sistema aziendale e inviarli alla soluzione Letters.
 
-**Stima della complessità delle lettere** È importante determinare quanto sarà complesso creare una particolare corrispondenza. Questa analisi consente di determinare la quantità di tempo e di competenze necessarie per creare i modelli di lettera. Ciò contribuirà a sua volta a stimare le risorse e i costi di implementazione della soluzione Letters.
+**Stima della complessità delle lettere** È importante determinare la complessità della creazione di una particolare corrispondenza. Questa analisi consente di determinare la quantità di tempo e di competenze necessarie per creare i modelli di lettera. Ciò contribuirà a sua volta a stimare le risorse e i costi di implementazione della soluzione Letters.
 
 ## Complessità della corrispondenza {#correspondence-complexity}
 
 La complessità della corrispondenza può essere determinata analizzando i seguenti parametri:
 
-**Complessità del layout** Quanto è complesso il layout? Lettere come Notifica di annullamento hanno layout semplici. Le lettere, come la conferma di copertura delle richieste di rimborso, hanno invece un layout complesso con diverse tabelle e più di 60 campi modulo. La creazione di layout complessi richiede più tempo e competenze avanzate per la progettazione del layout.
+**Complessità del layout** La complessità del layout Lettere come Notifica di annullamento hanno layout semplici. Le lettere, come la conferma di copertura delle richieste di rimborso, hanno invece un layout complesso con diverse tabelle e più di 60 campi modulo. La creazione di layout complessi richiede più tempo e competenze avanzate per la progettazione del layout.
 
 **Numero di paragrafi e condizioni di testo** Un contratto di prestito può avere una lunghezza di 10 pagine e contenere più di 40 clausole di testo. Molte di queste clausole dipenderebbero da &quot;parametri di prestito&quot;. Sulla base dei termini e delle condizioni esatte, le clausole sarebbero incluse o escluse dal contratto. La creazione di tali lettere richiede una pianificazione approfondita e un&#39;attenta definizione delle condizioni complesse.
 
@@ -193,24 +193,24 @@ In questa tabella vengono fornite alcune linee guida che è possibile utilizzare
   </tr> 
   <tr> 
    <td><p>Bassa complessità</p> </td> 
-   <td><p>Basso. Il layout contiene pochi campi modulo (&lt;15).</p> <p>In genere, una pagina<span class="acrolinxCursorMarker"></span>.</p> </td> 
+   <td><p>Basso. Il layout contiene pochi campi modulo (&lt;15).</p> <p>In genere una pagina<span class="acrolinxCursorMarker"></span>.</p> </td> 
    <td><p>8</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>Competenze di designer medio.</p> </td> 
+   <td><p>Competenze Medium Designer.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Complessità media</p> </td> 
-   <td><p>Layout con complessità media. Include strutture quali le tabelle. In genere, la lunghezza supera le una pagina.</p> </td> 
+   <td><p>Complessità di Medium</p> </td> 
+   <td><p>Layout complessità Medium. Include strutture quali le tabelle. In genere, la lunghezza supera le una pagina.</p> </td> 
    <td><p>16</p> </td> 
    <td><p>2</p> </td> 
-   <td><p>Competenze di designer medio.</p> <p> </p> <p>Capacità di creare espressioni complesse utilizzando interfacce utente.</p> </td> 
+   <td><p>Competenze Medium Designer.</p> <p> </p> <p>Capacità di creare espressioni complesse utilizzando interfacce utente.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Elevata complessità</p> </td> 
    <td><p>Layout complesso. Può essere superiore a tre pagine. Contiene tabelle e più di 60 campi modulo.</p> </td> 
    <td><p>40</p> </td> 
    <td><p>8</p> </td> 
-   <td><p>Competenze di designer esperti.</p> <p> </p> <p>Capacità di creare espressioni complesse utilizzando interfacce utente.</p> </td> 
+   <td><p>Competenze Designer avanzate.</p> <p> </p> <p>Capacità di creare espressioni complesse utilizzando interfacce utente.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -226,43 +226,43 @@ In questa tabella vengono fornite alcune linee guida che è possibile utilizzare
 
 Per creare una corrispondenza è necessario disporre quanto segue:
 
-* [Pacchetto di compatibilità](compatibility-package.md). Installare il pacchetto di compatibilità per visualizzare **Lettere** opzione sul **Forms** pagina.
+* [Pacchetto di compatibilità](compatibility-package.md). Installa il pacchetto di compatibilità per visualizzare l&#39;opzione **Lettere** nella pagina **Forms**.
 * La lettera XDP ([layout](/help/forms/using/document-fragments.md)).
-* Altri XDP ([frammenti di layout](document-fragments.md#document-fragments)) che formano parti della lettera. Gli XDP\Layout vengono creati in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_it).
-* Le pertinenti [dizionario dati](/help/forms/using/data-dictionary.md) (Facoltativo)
-* Il [moduli dati](/help/forms/using/document-fragments.md) desideri utilizzare nella corrispondenza.
-* [Dati di prova](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) è il file XML contenente i dati di test. I dati di test sono necessari se si utilizza un dizionario dati.
+* Altri XDP ([frammenti di layout](document-fragments.md#document-fragments)) che costituiscono parti della lettera. Gli XDP\Layout vengono creati in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_it).
+* Il dizionario dati [pertinente](/help/forms/using/data-dictionary.md) (facoltativo).
+* I [moduli dati](/help/forms/using/document-fragments.md) che desideri utilizzare nella corrispondenza.
+* [Dati di prova](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) è il file XML contenente i dati di prova. I dati di test sono necessari se si utilizza un dizionario dati.
 
 ## Creare un modello di lettera {#create-a-letter-template}
 
 ### Seleziona un layout e immetti le proprietà della lettera {#select-a-layout-and-enter-the-letter-properties}
 
-1. Seleziona **Forms** > **Lettere**.
+1. Selezionare **Forms** > **Lettere**.
 
-1. Seleziona **Crea > Lettera**. Gestione della corrispondenza visualizza i layout disponibili (XDP). Questi layout provengono da Designer. I layout includono anche i modelli di lettera forniti da Gestione corrispondenza. Per ulteriori informazioni sui modelli di Gestione della corrispondenza, consulta [Modelli di lettere di riferimento](/help/forms/using/reference-cm-layout-templates.md). Per aggiungere layout personalizzati, creare file XDP (layout) in Designer e quindi [caricali su AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Selezionare **Crea > Lettera**. Gestione della corrispondenza visualizza i layout disponibili (XDP). Questi layout provengono da Designer. I layout includono anche i modelli di lettera forniti da Gestione corrispondenza. Per ulteriori informazioni sui modelli di Gestione della corrispondenza, vedere [Modelli di lettere di riferimento](/help/forms/using/reference-cm-layout-templates.md). Per aggiungere layout personalizzati, crea file XDP (layout) in Designer e quindi [caricali in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![create-letter](assets/create-letter.png)
 
-1. Seleziona un layout toccandolo e selezionandolo **Successivo**.
+1. Seleziona un layout toccandolo e seleziona **Avanti**.
 
    ![Seleziona il layout per creare una lettera](assets/selectlayout.png)
 
 1. Immetti le proprietà per la corrispondenza e seleziona **Salva:**
 
    * **Titolo (facoltativo):** Immettere il titolo della lettera. Il titolo non deve necessariamente essere univoco e può contenere caratteri speciali e non inglesi.
-   * **Nome:** Nome univoco della lettera. Non possono esistere due lettere con lo stesso nome in nessuno stato. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini in lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti da trattini nel campo Nome. Anche se il valore nel campo Titolo viene copiato automaticamente nel Nome, è possibile modificarlo.
-   * **Descrizione (facoltativa):** Descrivi la lettera come riferimento.
+   * **Nome:** Il nome univoco della lettera. Non possono esistere due lettere con lo stesso nome in nessuno stato. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini in lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti da trattini nel campo Nome. Anche se il valore nel campo Titolo viene copiato automaticamente nel Nome, è possibile modificarlo.
+   * **Descrizione (facoltativo):** Descrivere la lettera per il riferimento.
    * **Dizionario dati (facoltativo)**: il dizionario dati può essere associato alla corrispondenza. Le risorse inserite successivamente in questa corrispondenza devono avere lo stesso dizionario dati scelto per la corrispondenza in questo campo o nessun dizionario dati.
-   * **Tag (facoltativo):** Seleziona i tag da applicare alla corrispondenza. Puoi anche immettere un nome di tag nuovo/personalizzato e premere Invio per crearlo.
-   * **Post-elaborazione (facoltativo):** Selezionare il processo di registrazione da applicare al modello di lettera. Esistono processi di post predefiniti e quelli creati con l’AEM, ad esempio e-mail e stampa.
+   * **Tag (facoltativo):** Selezionare i tag da applicare alla corrispondenza. Puoi anche immettere un nome di tag nuovo/personalizzato e premere Invio per crearlo.
+   * **Processo Post (facoltativo):** Selezionare il processo di post da applicare al modello di lettera. Esistono processi di post predefiniti e quelli creati con l’AEM, ad esempio e-mail e stampa.
 
-   ![Proprietà di corrispondenza](assets/createcorrespondenceproperties.png)
+   ![Proprietà corrispondenza](assets/createcorrespondenceproperties.png)
 
-1. Il sistema visualizza un messaggio: &quot;Lettera creata correttamente&quot;. (nel messaggio di avviso) Seleziona **Apri** per configurare i moduli di dati e i frammenti di layout al loro interno. Oppure seleziona **Fine** per tornare alla pagina precedente.
+1. Il sistema visualizza un messaggio: &quot;Lettera creata correttamente&quot;. (nel messaggio di avviso) Seleziona **Apri** per configurare i moduli di dati e i frammenti di layout in esso contenuti. Oppure seleziona **Fine** per tornare alla pagina precedente.
 
    ![Messaggio di avviso: lettera creata correttamente](assets/createcorrespondencecreated.png)
 
-   **Successivo**: quando selezioni **Apri**, Gestione corrispondenza visualizza una rappresentazione del layout con tutti i componenti nel layout (XDP) elencati. Procedere con l&#39;inserimento del [Moduli di dati e frammenti di layout e relativa configurazione](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Successivo**: quando si seleziona **Apri**, Gestione corrispondenza visualizza una rappresentazione del layout con tutti i componenti nel layout (XDP) elencati. Inserire i [moduli dati e frammenti di layout e configurarli](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Inserire moduli di dati e frammenti di layout in una lettera e configurarli {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
@@ -272,7 +272,7 @@ Quando, dopo aver creato una corrispondenza, selezioni Apri, Gestione corrispond
 >
 >Puoi anche scegliere di selezionare l’icona Modifica per una lettera nella pagina Lettere per inserire in una lettera moduli di dati e frammenti di layout e configurarli.
 
-1. Seleziona **Inserisci** per ciascuna sottomaschera e selezionare Moduli dati o un frammento di layout da inserire in ciascuna sottomaschera.
+1. Selezionare **Inserisci** per ciascuna sottomaschera e selezionare Moduli dati o un frammento di layout da inserire in ciascuna sottomaschera.
 
    ![Inserire moduli di dati e frammenti di layout](assets/insertdmandlf.png)
 
@@ -283,51 +283,51 @@ Quando, dopo aver creato una corrispondenza, selezioni Apri, Gestione corrispond
 1. Se si inserisce un frammento di layout, il nome del frammento viene visualizzato nel sottomodulo. In base al frammento selezionato, nella sottomaschera vengono visualizzate le sottomaschere nidificate.
 1. Dopo aver inserito i Moduli dati selezionati nel layout, puoi selezionare la modalità di configurazione e impostare quanto segue dopo aver toccato l’icona Modifica per ciascuno dei moduli:
 
-   1. **Modificabile**: quando questa opzione è selezionata, il contenuto può essere modificato nell’interfaccia utente Crea corrispondenza. Contrassegna il contenuto come modificabile solo se richiede la modifica da parte dell&#39;utente aziendale, ad esempio un perito per la liquidazione dei sinistri.
-   1. **Obbligatorio**: quando questa opzione è selezionata, il contenuto è obbligatorio nell’interfaccia utente Crea corrispondenza.
-   1. **Selezionato**: quando questa opzione è selezionata, il contenuto viene selezionato per impostazione predefinita nell’interfaccia utente Crea corrispondenza.
-   1. **Rientro**: aumenta o diminuisce il rientro del modulo/contenuto nella lettera. Il rientro è specificato in termini di livelli, a partire da 0. Ogni livello fa un rientro di 36 punti. Per ulteriori informazioni sulla personalizzazione dei moduli, consulta **[!UICONTROL Configurazioni gestione corrispondenza]** in [Flusso di lavoro di Forms](submit-letter-topostprocess.md#formsworkflow).
-   1. **Interruzione di pagina prima**: se imposti Interruzione di pagina prima su on, il contenuto di QUESTO modulo viene sempre visualizzato in una nuova pagina.
-   1. **Interruzione di pagina dopo**: se imposti l’opzione Interruzione di pagina dopo su per un modulo specifico, il contenuto del modulo SUCCESSIVO viene sempre visualizzato in una nuova pagina.
+   1. **Modificabile**: quando questa opzione è selezionata, il contenuto può essere modificato nell&#39;interfaccia utente Crea corrispondenza. Contrassegna il contenuto come modificabile solo se richiede la modifica da parte dell&#39;utente aziendale, ad esempio un perito per la liquidazione dei sinistri.
+   1. **Obbligatorio**: quando questa opzione è selezionata, il contenuto è obbligatorio nell&#39;interfaccia utente Crea corrispondenza.
+   1. **Selezionato**: quando questa opzione è selezionata, il contenuto viene selezionato per impostazione predefinita nell&#39;interfaccia utente Crea corrispondenza.
+   1. **Rientro**: aumenta o diminuisce il rientro del modulo/contenuto nella lettera. Il rientro è specificato in termini di livelli, a partire da 0. Ogni livello fa un rientro di 36 punti. Per ulteriori informazioni sulla personalizzazione dei moduli, consulta **[!UICONTROL Configurazioni di Gestione della corrispondenza]** in [Flusso di lavoro di Forms](submit-letter-topostprocess.md#formsworkflow).
+   1. **Interruzione di pagina prima di**: se l&#39;opzione Interruzione di pagina prima è impostata su on, il contenuto di QUESTO modulo viene sempre visualizzato in una nuova pagina.
+   1. **Interruzione di pagina dopo**: se si imposta l&#39;opzione Interruzione di pagina dopo su su per un modulo specifico, il contenuto del modulo NEXT verrà sempre visualizzato in una nuova pagina.
 
-   ![Moduli di dati e frammenti di layout inseriti](assets/insertdmandlf2.png)
+   ![Moduli dati e frammenti layout inseriti](assets/insertdmandlf2.png)
 
 1. Per modificare un modulo, seleziona l’icona Modifica accanto a esso. Dopo aver modificato i moduli, seleziona **Salva**.
 
    In questa pagina è inoltre possibile eseguire le operazioni seguenti per le sottomaschere:
 
-   1. **Consenti testo libero**: se è abilitata l’opzione Consenti testo libero, l’utente può aggiungere testo in linea nella lettera nella vista CCR. Nella vista CCR è abilitata un’azione &quot;T&quot; per le aree di destinazione in cui è abilitato Consenti testo libero e quando l’utente lo seleziona chiede il nome e la descrizione del testo, quindi tocca ok apre il testo in modalità di modifica, dove l’utente può aggiungere del testo. Funziona come gli altri moduli di testo
-   1. **Blocca ordine**: blocca l’ordine delle sottomaschere nella lettera. L’autore non può riordinare le sottomaschere o i componenti durante la creazione della lettera.
+   1. **Consenti testo libero**: se l&#39;opzione Consenti testo libero è abilitata, l&#39;utente può aggiungere testo in linea nella lettera nella visualizzazione CCR. Nella vista CCR è abilitata un’azione &quot;T&quot; per le aree di destinazione in cui è abilitato Consenti testo libero e quando l’utente lo seleziona chiede il nome e la descrizione del testo, quindi tocca ok apre il testo in modalità di modifica, dove l’utente può aggiungere del testo. Funziona come gli altri moduli di testo
+   1. **Blocca ordine**: blocca l&#39;ordine delle sottomaschere nella lettera. L’autore non può riordinare le sottomaschere o i componenti durante la creazione della lettera.
 
    In questa pagina è inoltre possibile eseguire le operazioni seguenti per ciascuna delle risorse nelle sottomaschere:
 
-   1. **Modificare l’ordine delle risorse**: trascina e rilascia una risorsa contenente l’icona Riordina per una risorsa ( ![trascinamento](assets/dragndrop.png)).
-   1. **Eliminare risorse**: seleziona l’icona Elimina accanto a una risorsa per eliminarla.
-   1. **Visualizzare in anteprima le risorse**: seleziona l’icona mostra anteprima ( ![showpreview](assets/showpreview.png)) accanto a una risorsa.
+   1. **Modifica l&#39;ordine delle risorse**: trascina una risorsa con l&#39;icona Riordina per una risorsa ( ![trascinala](assets/dragndrop.png)).
+   1. **Elimina risorse**: seleziona l&#39;icona Elimina accanto a una risorsa per eliminarla.
+   1. **Anteprima risorse**: seleziona l&#39;icona Mostra anteprima ( ![showpreview](assets/showpreview.png)) accanto a una risorsa.
 
 1. Seleziona **Avanti**.
 1. La pagina Dati descrive in dettaglio come vengono utilizzati i campi dati e le variabili nel modello. I dati possono essere collegati a origini dati quali un dizionario dati o un input utente. Ogni campo definisce le proprietà da cui il dizionario dati mappa i dati o quale didascalia viene visualizzata per i campi di input dell’utente.
 
    Collegamento:
 
-   * Il **campo** Gli elementi possono essere collegati a un elemento letterale, a un elemento del dizionario dati, a una risorsa o a un valore specificato dall’utente. È inoltre possibile ignorare un elemento campo associandolo all’opzione Ignora.
-   * Il **variabile** Gli elementi possono essere collegati a un elemento letterale, un elemento del dizionario dati, un campo, una variabile, una risorsa o un valore specificato dall’utente.
+   * Gli elementi **field** possono essere collegati a un elemento letterale, a un elemento del dizionario dati, a una risorsa o a un valore specificato dall&#39;utente. È inoltre possibile ignorare un elemento campo associandolo all’opzione Ignora.
+   * Gli elementi **variable** possono essere collegati a un elemento letterale del dizionario dati, a un campo, a una variabile, a una risorsa o a un valore specificato dall&#39;utente.
 
    Di seguito sono riportati alcuni campi principali del collegamento:
 
-   * **Multiriga**: puoi specificare se l’immissione dei dati per un campo o una variabile è su più righe. Se si seleziona questa opzione, la casella di input per il campo o la variabile viene visualizzata come casella di input su più righe nella Visualizzazione modifica dati. Il campo o la variabile viene inoltre visualizzato come multiriga nelle visualizzazioni Dati e Contenuto nell’interfaccia utente Crea corrispondenza. Il campo di immissione su più righe è simile al campo per l&#39;immissione di un commento in un TextModule. L’opzione su più righe è disponibile solo per campi e variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
-   * **Facoltativo**: puoi specificare se il valore per il campo o la variabile è facoltativo o meno. L’opzione campo opzionale è disponibile per campi e variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
+   * **Multiriga**: è possibile specificare se l&#39;immissione dei dati per un campo o una variabile è su più righe. Se si seleziona questa opzione, la casella di input per il campo o la variabile viene visualizzata come casella di input su più righe nella Visualizzazione modifica dati. Il campo o la variabile viene inoltre visualizzato come multiriga nelle visualizzazioni Dati e Contenuto nell’interfaccia utente Crea corrispondenza. Il campo di immissione su più righe è simile al campo per l&#39;immissione di un commento in un TextModule. L’opzione su più righe è disponibile solo per campi e variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
+   * **Facoltativo**: è possibile specificare se il valore per il campo o la variabile è facoltativo o meno. L’opzione campo opzionale è disponibile per campi e variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
 
-   * **Convalida campo/variabile**: per fornire una convalida avanzata del valore di un campo o di una variabile, puoi assegnare una convalida al campo o alla variabile. Questa opzione è disponibile solo per campi e variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
-   * **Didascalia** e **Descrizione**: la didascalia è l’etichetta del campo che viene visualizzato prima del campo nell’interfaccia utente di CCR. Questa opzione è disponibile per campi e variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
+   * **Convalida campo/variabile**: per fornire una convalida avanzata del valore di un campo o di una variabile, è possibile assegnare una convalida al campo o alla variabile. Questa opzione è disponibile solo per campi e variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
+   * **Didascalia** e **Descrizione**: la didascalia è l&#39;etichetta del campo che compare prima del campo nell&#39;interfaccia utente CCR. Questa opzione è disponibile per campi e variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
 
    Di seguito sono riportati i tipi di convalida utilizzabili per i campi:
 
-   * **Convalida stringa**: utilizza Convalida stringhe per specificare una lunghezza minima e massima della stringa immessa nel campo o nella variabile. Quando si crea un Convalida stringa, assicurarsi di specificare parametri di convalida validi. Immettere una lunghezza valida per i valori minimo e massimo. Per la convalida delle stringhe, puoi specificare la lunghezza minima e massima del valore che può essere immesso. Se il valore immesso non corrisponde ai valori minimo e massimo specificati, il campo pertinente nell’interfaccia utente CCR è contrassegnato in rosso.
+   * **Convalida stringa**: utilizzare Convalida stringa per specificare una lunghezza minima e massima della stringa immessa nel campo o nella variabile. Quando si crea un Convalida stringa, assicurarsi di specificare parametri di convalida validi. Immettere una lunghezza valida per i valori minimo e massimo. Per la convalida delle stringhe, puoi specificare la lunghezza minima e massima del valore che può essere immesso. Se il valore immesso non corrisponde ai valori minimo e massimo specificati, il campo pertinente nell’interfaccia utente CCR è contrassegnato in rosso.
 
-   * **Convalida numero**: utilizza la funzione di convalida del numero per specificare il valore numerico minimo e massimo immesso in un campo o in una variabile. Quando si crea una convalida numerica, assicurarsi di specificare parametri di convalida validi. Immettere valori numerici sia per il valore minimo che per quello massimo.
+   * **Convalida numero**: utilizzare Convalida numero per specificare il valore numerico minimo e massimo immesso in un campo o in una variabile. Quando si crea una convalida numerica, assicurarsi di specificare parametri di convalida validi. Immettere valori numerici sia per il valore minimo che per quello massimo.
 
-   * **Convalida espressioni regolari**: utilizza Convalida espressioni regolari per definire un’espressione regolare utilizzata per convalidare il valore di un campo o di una variabile. Inoltre, è possibile personalizzare il messaggio di errore. Quando si crea un Convalida espressioni regolari, assicurarsi di specificare un&#39;espressione regolare valida.
+   * **Convalida espressioni regolari**: utilizzare Convalida espressioni regolari per definire un&#39;espressione regolare utilizzata per convalidare il valore di un campo o di una variabile. Inoltre, è possibile personalizzare il messaggio di errore. Quando si crea un Convalida espressioni regolari, assicurarsi di specificare un&#39;espressione regolare valida.
 
    >[!NOTE]
    >
@@ -335,21 +335,21 @@ Quando, dopo aver creato una corrispondenza, selezioni Apri, Gestione corrispond
 
    ![collegamenti](assets/linkages.png)
 
-1. Dopo aver specificato il collegamento, seleziona **Successivo**. Gestione corrispondenza visualizza la schermata Allegati.
+1. Dopo aver specificato il collegamento, seleziona **Avanti**. Gestione corrispondenza visualizza la schermata Allegati.
 
 ### Impostare gli allegati {#set-up-the-attachments}
 
 1. Seleziona **Aggiungi risorsa**.
-1. Nella schermata Seleziona risorsa, seleziona le risorse da allegare alla lettera e fai clic su **Fine**. Devi prima caricare le risorse in Assets. È consigliabile allegare solo documenti di PDF e Microsoft Office, ma è anche possibile allegare immagini. Per ulteriori informazioni sul caricamento di risorse in DAM, consulta [Caricamento risorse](/help/assets/manage-assets.md).
-1. Per bloccare l&#39;ordine dei cespiti nell&#39;elenco in modo che Adeguamento risarcimenti non possa modificarlo, selezionare **Blocca ordine**. Se non si seleziona questa opzione, l&#39;Aggiustatore richieste di rimborso può modificare l&#39;ordine delle voci di elenco.
-1. Per modificare l’ordine delle risorse, trascina e rilascia una risorsa contenente l’icona Riordina per una risorsa ( ![trascinamento](assets/dragndrop.png)).
-1. Seleziona **Modifica** davanti a un allegato e specificare un allegato come Obbligatorio se non si desidera che l&#39;autore possa eliminarlo. Specificate un allegato come Selezionato se desiderate che sia preselezionato nell&#39;interfaccia CCR.
-1. Seleziona **Accesso libreria** per consentire l’accesso alla libreria. Se l&#39;accesso alla libreria è abilitato, l&#39;Aggiustatore attestazioni può accedere alla libreria dei contenuti durante la creazione di una lettera e l&#39;inserimento di allegati.
-1. Seleziona **Configurazione allegati** e specificare il numero massimo di allegati.
+1. Nella schermata Seleziona risorsa, seleziona le risorse da allegare alla lettera e fai clic su **Fine**. Devi prima caricare le risorse in Assets. È consigliabile allegare solo documenti di PDF e Microsoft Office, ma è anche possibile allegare immagini. Per ulteriori informazioni sul caricamento di risorse in DAM, vedi [Caricamento di Assets](/help/assets/manage-assets.md).
+1. Per bloccare l&#39;ordine delle risorse nell&#39;elenco in modo che l&#39;Aggiustatore richieste di risarcimento non possa modificarlo, selezionare **Blocca ordine**. Se non si seleziona questa opzione, l&#39;Aggiustatore richieste di rimborso può modificare l&#39;ordine delle voci di elenco.
+1. Per modificare l&#39;ordine delle risorse, trascina e rilascia una risorsa contenente l&#39;icona Riordina per una risorsa ( ![trascinamento](assets/dragndrop.png)).
+1. Seleziona **Modifica** davanti a un allegato e specifica un allegato come Obbligatorio se non vuoi che l&#39;autore possa eliminarlo. Specificate un allegato come Selezionato se desiderate che sia preselezionato nell&#39;interfaccia CCR.
+1. Seleziona **Accesso libreria** per concedere l&#39;accesso alla libreria. Se l&#39;accesso alla libreria è abilitato, l&#39;Aggiustatore attestazioni può accedere alla libreria dei contenuti durante la creazione di una lettera e l&#39;inserimento di allegati.
+1. Selezionare **Configurazione allegati** e specificare il numero massimo di allegati.
 
 1. Seleziona **Salva**. La corrispondenza viene creata ed elencata nella pagina Lettere.
 
-Dopo aver creato un modello di lettera in Gestione corrispondenza, l’utente finale, l’agente o l’addetto alle richieste di rimborso può aprire la lettera nell’interfaccia utente di CCR e creare una corrispondenza immettendo i dati, configurando il contenuto e gestendo gli allegati. Per ulteriori informazioni, consulta [Crea corrispondenza](/help/forms/using/create-correspondence.md).
+Dopo aver creato un modello di lettera in Gestione corrispondenza, l’utente finale, l’agente o l’addetto alle richieste di rimborso può aprire la lettera nell’interfaccia utente di CCR e creare una corrispondenza immettendo i dati, configurando il contenuto e gestendo gli allegati. Per ulteriori informazioni, vedere [Crea corrispondenza](/help/forms/using/create-correspondence.md).
 
 ## Tipi di collegamento disponibili per ciascuno dei campi {#types-of-linkage-available-for-each-of-the-fields}
 
@@ -358,8 +358,8 @@ Nella tabella seguente vengono descritti i tipi di collegamento disponibili per 
 I seguenti valori nella tabella
 
 * **Sì**: il tipo di campo nella colonna più a sinistra supporta tale tipo di mappatura
-* **No**: il tipo di campo nella colonna più a sinistra non supporta tale tipo di mappatura
-* **N/D**: tipo di campo non applicabile nella colonna più a sinistra
+* **No**: il tipo di campo nella colonna più a sinistra non supporta tale tipo di mapping
+* **N/D**: il tipo di campo nella colonna più a sinistra non è applicabile
 
 <table> 
  <tbody> 
@@ -434,7 +434,7 @@ I seguenti valori nella tabella
    <td>N/D</td> 
   </tr> 
   <tr> 
-   <td><strong>semplice</strong> <strong>text</strong></td> 
+   <td><strong>normale</strong> <strong>testo</strong></td> 
    <td>Sì</td> 
    <td>solo testo</td> 
    <td>Sì</td> 

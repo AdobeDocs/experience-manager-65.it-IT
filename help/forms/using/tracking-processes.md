@@ -37,14 +37,14 @@ Nella pagina Tracciamento è possibile cercare i processi attivi o completati a 
 
 ### Cercare un&#39;attività utilizzando un modello di ricerca {#search-for-a-task-using-a-search-template}
 
-1. Nella pagina Tracciamento, nell’elenco a sinistra, seleziona **Cerca Modelli** e selezionare un modello di ricerca.
-1. Se il modello supporta i parametri di ricerca, per limitare i parametri di ricerca, compilare i campi del modello e fare clic su **Ricerca**. Visualizza un elenco di tutte le attività a cui hai partecipato, che corrispondono ai criteri di ricerca.
+1. Nella pagina Tracciamento, nell&#39;elenco a sinistra, selezionare **Cerca modelli** e selezionare un modello di ricerca.
+1. Se il modello supporta i parametri di ricerca, compilare i campi del modello e fare clic su **Cerca** per limitare i parametri di ricerca. Visualizza un elenco di tutte le attività a cui hai partecipato, che corrispondono ai criteri di ricerca.
 
 ## Visualizza dettagli processo {#view-process-details}
 
 Nella pagina Tracciamento è possibile selezionare un processo e visualizzarne i dettagli. Puoi cercare i processi in base a vari parametri per visualizzare i dettagli dell’attività. È inoltre possibile visualizzare la scheda Stato per i processi in cui più utenti ricevono attività in parallelo, dove sono attivati gli strumenti per la revisione dei documenti.
 
-**Stato:** Lo stato delle attività in un processo viene visualizzato nella colonna &quot;Azione selezionata&quot; quando si fa clic su un&#39;attività. Tuttavia, lo stato del processo non è disponibile.
+**Stato:** lo stato delle attività in un processo viene visualizzato nella colonna &#39;Azione selezionata&#39; quando si fa clic su un&#39;attività. Tuttavia, lo stato del processo non è disponibile.
 
 1. Selezionare l&#39;istanza di processo dall&#39;elenco dei risultati della ricerca per visualizzare i dettagli delle attività che fanno parte dell&#39;istanza di processo.
 1. Per visualizzare ulteriori informazioni su un&#39;attività, eseguire una o più delle azioni seguenti:

@@ -14,7 +14,7 @@ ht-degree: 87%
 
 # Authoring per headless con AEM - Introduzione {#author-headless-introduction}
 
-In questa parte del [Percorso di authoring di contenuti AEM headless](overview.md), puoi imparare i concetti e la terminologia (di base) necessari per comprendere l’authoring dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
+In questa sezione del Percorso [Autore di contenuti headless AEM](overview.md), puoi imparare i concetti e la terminologia (di base) necessari per comprendere l&#39;authoring dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
 
 ## Obiettivo {#objective}
 

@@ -22,7 +22,7 @@ AEM Forms workspace organizza i processi in base alle categorie impostate dall&#
 
 Quando si avvia un processo, potrebbe essere necessario compilare un modulo per avviare un processo aziendale controllato da AEM Forms workflow. Se un modulo utilizza il processo di preparazione dei dati, alcune informazioni possono essere precompilate in un modulo vuoto, quando viene avviato un nuovo processo.
 
-Ad esempio, si desidera acquistare un nuovo monitor e quindi avviare un processo denominato *Ordine di acquisto*. Quando si avvia il processo, viene visualizzata una maschera in cui vengono richiesti i dettagli dell&#39;articolo da ordinare. Il nome, il numero del dipendente e il nome del responsabile possono già essere precompilati nel modulo. Quando si invia la richiesta, viene avviato un processo aziendale. In base alla definizione del processo, il server instrada automaticamente la richiesta al manager. L’attività inizia a comparire nell’elenco delle cose da fare del tuo manager. Quando il manager approva la richiesta, il flusso di lavoro Forms la indirizza al reparto acquisti e ti invia una notifica e-mail.
+Ad esempio, si desidera acquistare un nuovo monitor del computer e quindi avviare un processo denominato *Ordine di acquisto*. Quando si avvia il processo, viene visualizzata una maschera in cui vengono richiesti i dettagli dell&#39;articolo da ordinare. Il nome, il numero del dipendente e il nome del responsabile possono già essere precompilati nel modulo. Quando si invia la richiesta, viene avviato un processo aziendale. In base alla definizione del processo, il server instrada automaticamente la richiesta al manager. L’attività inizia a comparire nell’elenco delle cose da fare del tuo manager. Quando il manager approva la richiesta, il flusso di lavoro Forms la indirizza al reparto acquisti e ti invia una notifica e-mail.
 
 ## Selezione dei processi da avviare {#selecting-processes-to-start}
 
@@ -46,9 +46,9 @@ Quando si seleziona un processo, vengono visualizzate le schede Modulo e Dettagl
 
 1. Selezionare un processo facendo clic su un&#39;attività. Il modulo associato al processo viene aperto nella scheda Modulo.
 
-   Ogni modulo di un processo ha un URL univoco. Puoi utilizzare l’URL univoco per avviare direttamente HTML Workspace con il processo e il modulo specifici. Il formato dell’URL è https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;applicationname>%2F&lt;processname>. Il &lt;applicationname>%2F&lt;processname> La stringa è sempre codificata in URL. Un URL di esempio è http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. La stringa ApplicationName%2FProcessName nell&#39;esempio è codificata in URL.
+   Ogni modulo di un processo ha un URL univoco. Puoi utilizzare l’URL univoco per avviare direttamente HTML Workspace con il processo e il modulo specifici. Il formato dell&#39;URL è https://&lt;server>:&lt;porta>/lc/libs/ws/index.html#/startprocess/&lt;NomeApplicazione>%2F&lt;NomeProcesso>. La stringa &lt;ApplicationName>%2F&lt;ProcessName> è sempre codificata in URL. Un URL di esempio è http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. La stringa ApplicationName%2FProcessName nell&#39;esempio è codificata in URL.
 
-1. Compilare il modulo seguendo le istruzioni fornite. Se necessario, fai clic su **Ingrandisci** per aumentare l&#39;area visibile del modulo.
+1. Compilare il modulo seguendo le istruzioni fornite. Se necessario, fare clic su **Ingrandisci** per aumentare l&#39;area visibile del modulo.
 1. Se è disponibile la scheda Allegati, aggiungere gli allegati in base alle esigenze.
 1. Se la scheda Note è disponibile, fornisci le note richieste.
 1. Effettua una delle seguenti operazioni:
@@ -58,7 +58,7 @@ Quando si seleziona un processo, vengono visualizzate le schede Modulo e Dettagl
 
    Gestione processi avvia il processo e indirizza il modulo agli elenchi Da fare delle persone appropriate che devono completare l&#39;attività successiva nel processo.
 
-   Se è necessario chiudere un modulo prima di inviarlo e senza perdere i dati immessi, salvare una bozza e completarla in un secondo momento se il processo lo consente. Se il modulo e il processo lo consentono, è inoltre possibile fare clic su **Offline** e successivamente inviarlo da Adobe® Reader® o Adobe® Acrobat® Professional o Acrobat Standard.
+   Se è necessario chiudere un modulo prima di inviarlo e senza perdere i dati immessi, salvare una bozza e completarla in un secondo momento se il processo lo consente. Se il modulo e la procedura lo consentono, puoi anche fare clic su **Offline** e inviarlo successivamente da Adobe® Reader® o Adobe® Acrobat® Professional o Acrobat Standard.
 
    >[!NOTE]
    >
@@ -78,10 +78,10 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 * Lettura/eliminazione
 * Nessun accesso
 
-1. Apri un’attività e fai clic su **Note** , se il processo lo consente.
-1. Digita un titolo per la nota nella **Titolo** e digitare il testo della nota nella casella **Nota** casella.
-1. Seleziona la **Autorizzazioni** livello della nota per gli altri utenti che partecipano al processo.
-1. Clic **OK**. Al modulo viene allegato un file di testo contenente la nota. È possibile aggiornare una nota facendo clic su di essa e modificando direttamente il testo. È possibile eliminare una nota facendo clic sul pulsante **Elimina** pulsante ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
+1. Apri un&#39;attività e fai clic sulla scheda **Note**, se il processo lo consente.
+1. Digitare un titolo per la nota nella casella **Titolo** e digitare il testo della nota nella casella **Nota**.
+1. Seleziona il livello **Autorizzazioni** per la nota per gli altri utenti che partecipano al processo.
+1. Fare clic su **OK**. Al modulo viene allegato un file di testo contenente la nota. È possibile aggiornare una nota facendo clic su di essa e modificando direttamente il testo. Puoi eliminare una nota facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
 
 ### Aggiungi un allegato {#add-an-attachment}
 
@@ -93,10 +93,10 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 * Lettura/eliminazione
 * Nessun accesso
 
-1. Fai clic su **Allegati** e seleziona **Allegato**.
-1. Clic **Sfoglia** per selezionare il file da allegare.
-1. Seleziona la **Autorizzazioni** livello dell&#39;allegato per altri utenti che partecipano al processo. Se si seleziona **Letto**, altri utenti possono salvare il file localmente. Se selezioni una delle autorizzazioni di modifica, anche altri utenti possono caricare un nuovo file per sostituire l’allegato.
-1. Clic **OK**. Il file viene allegato al modulo. È possibile eliminare un file facendo clic sul pulsante **Elimina** pulsante ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
+1. Fare clic sulla scheda **Allegati** e selezionare **Allegato**.
+1. Fare clic su **Sfoglia** per selezionare il file da allegare.
+1. Selezionare il livello **Autorizzazioni** per l&#39;allegato per gli altri utenti che partecipano al processo. Se selezioni **Leggi**, gli altri utenti potranno salvare il file localmente. Se selezioni una delle autorizzazioni di modifica, anche altri utenti possono caricare un nuovo file per sostituire l’allegato.
+1. Fare clic su **OK**. Il file viene allegato al modulo. Puoi eliminare un file facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
 
 ## Salvataggio delle bozze dei moduli {#saving-draft-copies-of-forms}
 
@@ -104,7 +104,7 @@ Se è necessario compilare e inviare un modulo in un secondo momento, è possibi
 
 Dopo aver riaperto e inviato un modulo di bozza, la bozza viene rimossa dalla categoria Bozze.
 
-Inoltre, puoi configurare l’area di lavoro in modo da salvare automaticamente le informazioni immesse da un utente come bozza. Per ulteriori informazioni, consulta [Gestione delle preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md).
+Inoltre, puoi configurare l’area di lavoro in modo da salvare automaticamente le informazioni immesse da un utente come bozza. Per ulteriori informazioni, vedere [Gestione delle preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ Inoltre, puoi configurare l’area di lavoro in modo da salvare automaticamente 
 
 ### Salvare una bozza {#save-a-draft-copy}
 
-1. Clic **Salva** nell’angolo in basso a sinistra di qualsiasi scheda. Il modulo viene aggiunto alla categoria Bozze della pagina Da fare. Tutte le modifiche apportate al modulo vengono salvate.
+1. Fai clic su **Salva** nell&#39;angolo inferiore sinistro di qualsiasi scheda. Il modulo viene aggiunto alla categoria Bozze della pagina Da fare. Tutte le modifiche apportate al modulo vengono salvate.
 
 ### Riaprire una bozza di copia {#reopen-a-draft-copy}
 
-1. Nella pagina Da fare selezionare **Bozze** in coda e fare clic sulla bozza del modulo.
+1. Nella pagina Da fare selezionare la coda **Bozze** e fare clic sulla bozza del modulo.
 
    Se il modulo contiene una serie di pannelli, potrebbe essere necessario passare al pannello in cui è stata terminata l&#39;ultima sessione.
 
@@ -126,6 +126,6 @@ Inoltre, puoi configurare l’area di lavoro in modo da salvare automaticamente 
 
 >[!NOTE]
 >
->Se in genere si avviano i processi quando si utilizza l&#39;area di lavoro di AEM Forms, è possibile impostare la preferenza Posizione iniziale per visualizzare automaticamente la categoria Preferiti all&#39;avvio dell&#39;area di lavoro di AEM Forms. Per ulteriori dettagli, consulta Gestione delle preferenze in [Guida introduttiva all’area di lavoro di AEM Forms](/help/forms/using/getting-started-livecycle-html-workspace.md).
+>Se in genere si avviano i processi quando si utilizza l&#39;area di lavoro di AEM Forms, è possibile impostare la preferenza Posizione iniziale per visualizzare automaticamente la categoria Preferiti all&#39;avvio dell&#39;area di lavoro di AEM Forms. Per ulteriori dettagli, vedere Gestione delle preferenze in [Guida introduttiva all&#39;area di lavoro di AEM Forms](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Per contrassegnare un processo come preferito, selezionare l&#39;attività nella relativa categoria e fare clic sulla stella vuota. La stella diventa dorata. Per annullare il contrassegno di un processo come preferito, fare di nuovo clic sulla stella d&#39;oro.

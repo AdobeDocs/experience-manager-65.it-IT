@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Creazione di moduli adattivi tramite lo schema JSON {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -32,7 +32,7 @@ Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo
 
 ## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. Lo schema JSON utilizzato deve essere conforme a [specifiche v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. Lo schema JSON utilizzato deve essere conforme alle specifiche [v4](https://json-schema.org/draft-04/schema).
 
 Le funzioni chiave dell’utilizzo di uno schema JSON sono:
 
@@ -90,7 +90,7 @@ La mappatura degli elementi JSON con i componenti dei moduli adattivi è la segu
    <td><br /> <br /> Campo di testo<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>proprietà number<br /> </td>
+   <td>proprietà numero<br /> </td>
    <td>Campo numerico con sottotipo impostato su float<br /> </td>
   </tr>
   <tr>
@@ -99,7 +99,7 @@ La mappatura degli elementi JSON con i componenti dei moduli adattivi è la segu
   </tr>
   <tr>
    <td>proprietà booleana<br /> </td>
-   <td>Switch<br /> </td>
+   <td>Cambia <br /> </td>
   </tr>
   <tr>
    <td>proprietà oggetto<br /> </td>
@@ -116,17 +116,17 @@ La mappatura degli elementi JSON con i componenti dei moduli adattivi è la segu
 
 Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per mappare ogni campo generato. In particolare:
 
-* Il `title` funge da etichetta per i componenti del modulo adattivo.
-* Il `description` viene impostata come descrizione lunga per un componente modulo adattivo.
-* Il `default` funge da valore iniziale di un campo modulo adattivo.
-* Il `maxLength` la proprietà è impostata come `maxlength` attributo del componente campo di testo.
-* Il `minimum`, `maximum`, `exclusiveMinimum`, e `exclusiveMaximum` Le proprietà vengono utilizzate per il componente Casella numerica.
-* Per supportare l&#39;intervallo per `DatePicker component` proprietà aggiuntive dello schema JSON `minDate` e `maxDate` vengono fornite.
-* Il `minItems` e `maxItems` Le proprietà vengono utilizzate per limitare il numero di elementi/campi che possono essere aggiunti o rimossi da un componente del pannello.
-* Il `readOnly` imposta la proprietà `readonly` di un componente modulo adattivo.
-* Il `required` La proprietà contrassegna il campo modulo adattivo come obbligatorio, mentre in panel (dove tipo è oggetto), i dati JSON finali inviati hanno campi con valore vuoto corrispondente a tale oggetto.
-* Il `pattern` viene impostata come pattern di convalida (espressione regolare) in un modulo adattivo.
-* L’estensione del file di schema JSON deve essere mantenuta .schema.json. Ad esempio: &lt;filename>.schema.json.
+* La proprietà `title` funge da etichetta per i componenti del modulo adattivo.
+* La proprietà `description` viene impostata come descrizione lunga per un componente modulo adattivo.
+* La proprietà `default` funge da valore iniziale di un campo modulo adattivo.
+* La proprietà `maxLength` è impostata come attributo `maxlength` del componente del campo di testo.
+* Le proprietà `minimum`, `maximum`, `exclusiveMinimum` e `exclusiveMaximum` sono utilizzate per il componente casella numerica.
+* Per supportare l&#39;intervallo per `DatePicker component` sono fornite proprietà aggiuntive dello schema JSON `minDate` e `maxDate`.
+* Le proprietà `minItems` e `maxItems` vengono utilizzate per limitare il numero di elementi/campi che possono essere aggiunti o rimossi da un componente del pannello.
+* La proprietà `readOnly` imposta l&#39;attributo `readonly` di un componente modulo adattivo.
+* La proprietà `required` contrassegna il campo del modulo adattivo come obbligatorio, mentre in panel (dove tipo è oggetto), i dati JSON inviati finali contengono campi con valore vuoto corrispondente a tale oggetto.
+* La proprietà `pattern` è impostata come modello di convalida (espressione regolare) in formato adattivo.
+* L’estensione del file di schema JSON deve essere mantenuta .schema.json. Ad esempio, &lt;nomefile>.schema.json.
 
 ## Schema JSON di esempio {#sample-json-schema}
 
@@ -343,7 +343,7 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia
 
 ## Preconfigurazione dei campi nella definizione dello schema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-È possibile utilizzare **aem:afProperties** per preconfigurare il campo Schema JSON da mappare a un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
+È possibile utilizzare la proprietà **aem:afProperties** per preconfigurare il campo Schema JSON da mappare a un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
 
 ```json
 {
@@ -365,7 +365,7 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia
 
 ## Configurare script o espressioni per gli oggetti modulo  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. È possibile preconfigurare gli oggetti modulo in [valutare un’espressione](adaptive-form-expressions.md) in un evento modulo.
+JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. È possibile preconfigurare gli oggetti modulo per [valutare un&#39;espressione](adaptive-form-expressions.md) in un evento modulo.
 
 Utilizza la proprietà aem:afproperties per preconfigurare espressioni o script di moduli adattivi per i componenti dei moduli adattivi. Ad esempio, quando si attiva l&#39;evento di inizializzazione, il codice seguente imposta il valore del campo telefono e stampa un valore nel registro:
 
@@ -385,17 +385,17 @@ Utilizza la proprietà aem:afproperties per preconfigurare espressioni o script 
 }
 ```
 
-Devi essere membro del [forms-power-user group](forms-groups-privileges-tasks.md) per configurare script o espressioni per l&#39;oggetto modulo. La tabella seguente elenca tutti gli eventi script supportati per un componente modulo adattivo.
+Devi essere membro del gruppo [forms-power-user](forms-groups-privileges-tasks.md) per configurare script o espressioni per l&#39;oggetto modulo. La tabella seguente elenca tutti gli eventi script supportati per un componente modulo adattivo.
 
 <table>
  <tbody>
   <tr>
    <th><strong></strong>Componente \ Evento</th>
-   <th>inizializzare <br /> </th>
+   <th>inizializza <br /> </th>
    <td>Calcola</td>
    <td>Visibilità</td>
    <td>Convalida</td>
-   <td>Attivato</td>
+   <td>Abilitato</td>
    <td>Conferma valore</td>
    <td>Clic </td>
    <td>Opzioni</td>
@@ -735,13 +735,13 @@ Per limitare i valori accettabili per un componente modulo adattivo, puoi aggiun
 
 Per abilitare tutti i Forms adattivi basati su schema JSON a generare dati conformi allo schema al momento dell’invio del modulo, effettua le seguenti operazioni:
 
-1. Vai alla console web di Experience Manager all’indirizzo `https://server:host/system/console/configMgr`.
-1. Individua **[!UICONTROL Configurazione del canale web per la comunicazione di moduli adattivi e interattivi]**.
+1. Passa alla console Web Experience Manager all&#39;indirizzo `https://server:host/system/console/configMgr`.
+1. Individua **[!UICONTROL Configurazione canale web per modulo adattivo e comunicazione interattiva]**.
 1. Seleziona per aprire la configurazione in modalità di modifica.
-1. Seleziona la **[!UICONTROL Genera dati conformi allo schema]** casella di controllo.
+1. Selezionare la casella di controllo **[!UICONTROL Genera dati conformi allo schema]**.
 1. Salva le impostazioni.
 
-![configurazione di un modulo adattivo e di un canale web di comunicazione interattiva](/help/forms/using/assets/af-ic-web-channel-configuration.png)
+![configurazione canale web per modulo adattivo e comunicazione interattiva](/help/forms/using/assets/af-ic-web-channel-configuration.png)
 
 ## Costrutti non supportati  {#non-supported-constructs}
 
@@ -758,13 +758,13 @@ I moduli adattivi non supportano i seguenti costrutti dello schema JSON:
 
 In una sottomaschera ripetibile, è necessario utilizzare la sottomaschera completa. Se desideri solo campi selettivi, utilizza l’intera struttura ed elimina quelli indesiderati.
 
-**In Content Finder ho una struttura lunga e complessa. Come posso trovare un elemento specifico?**
+**Ho una struttura lunga e complessa in Content Finder. Come trovare un elemento specifico?**
 
 Sono disponibili due opzioni:
 
 * Scorri nella struttura ad albero
 * Utilizzare la casella di ricerca per trovare un elemento
 
-**Quale deve essere l’estensione del file di schema JSON?**
+**Quale dovrebbe essere l&#39;estensione del file di schema JSON?**
 
-L’estensione del file dello schema JSON deve essere .schema.json. Ad esempio: &lt;filename>.schema.json.
+L’estensione del file dello schema JSON deve essere .schema.json. Ad esempio, &lt;nomefile>.schema.json.

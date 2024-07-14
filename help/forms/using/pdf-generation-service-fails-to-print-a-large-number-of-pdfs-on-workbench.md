@@ -23,7 +23,7 @@ Quando un cliente genera un numero elevato di PDF tramite servizi implementati t
 <!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
 Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
 
-Questo perché il numero massimo di pagine in una richiesta di stampa è limitato a circa 1000 pagine su Windows. Quando si genera un output di stampa, il modello e i dati devono essere caricati in memoria e il layout risultante deve essere incorporato nella memoria. Ciò significa che esistono limiti alla dimensione dell’output finale. Il processo che genera l&#39;output di stampa è un&#39;attività a 32 bit, il che significa che è limitato a 2 GB di RAM su Windows <!--and 4 GB on UNIX-->.
+Questo perché il numero massimo di pagine in una richiesta di stampa è limitato a circa 1000 pagine su Windows. Quando si genera un output di stampa, il modello e i dati devono essere caricati in memoria e il layout risultante deve essere incorporato nella memoria. Ciò significa che esistono limiti alla dimensione dell’output finale. Il processo che genera l&#39;output di stampa è un&#39;attività a 32 bit, ovvero è limitato a 2 GB di RAM in Windows <!--and 4 GB on UNIX-->.
 
 ## Applicabile a {#applies-to}
 
@@ -37,9 +37,9 @@ Il fattore più importante che influisce sull’utilizzo della memoria è la qua
 
 **Alta**
 
-1. **Sottomaschere di scelta** - Un set di sottomaschere di scelta è una variante dell&#39;oggetto set di sottomaschere che consente di personalizzare la visualizzazione di sottomaschere specifiche dall&#39;interno del set utilizzando le istruzioni condizionali.
-1. **Usa testo statico al posto dei sottotitoli** : quasi tutti i campi forniscono una didascalia all’interno di, l’utente dovrebbe utilizzarla invece di utilizzare come didascalia un testo statico aggiuntivo.
-1. Utilizzare **Formato RTF (Rich Text Format)** ove possibile.
+1. **Sottomaschere di scelta** - Un set di sottomaschere di scelta è una variante dell&#39;oggetto del set di sottomaschere che consente di personalizzare la visualizzazione di sottomaschere specifiche dall&#39;interno del set utilizzando le istruzioni condizionali.
+1. **Usa testo statico al posto dei sottotitoli**. Quasi tutti i campi forniscono una didascalia all&#39;interno di. L&#39;utente deve utilizzarla al posto di un testo statico aggiuntivo come didascalia.
+1. Utilizza **RTF** laddove possibile.
 
 **Media**
 
@@ -56,7 +56,7 @@ Poiché la memoria massima del processo è limitata e la memoria utilizzata dal 
 
 Se il modulo ha molti nodi di piccole dimensioni con dati di piccole dimensioni, il processo consuma più memoria (e quindi esaurisce la memoria più rapidamente) rispetto a un modulo che ha un numero inferiore di nodi (anche) con dati di grandi dimensioni.
 
-Leggi le [Appendice sotto](#appendix) per ulteriori informazioni, dove i risultati dei test si basano su Stampa modulo (PDF non taggato). L&#39;utilizzo di PDF con tag aumenta i requisiti di memoria del processo. Dipende anche dal numero di campi nel modulo: il requisito di memoria del processo è leggermente superiore a 1,5 volte rispetto a quello di PDF non taggato.
+Per ulteriori informazioni, leggere l&#39;[Appendice seguente](#appendix), dove i risultati del test si basano sul modulo Stampa (PDF non taggato). L&#39;utilizzo di PDF con tag aumenta i requisiti di memoria del processo. Dipende anche dal numero di campi nel modulo: il requisito di memoria del processo è leggermente superiore a 1,5 volte rispetto a quello di PDF non taggato.
 
 ### Forms interattivo {#interactive-forms}
 
@@ -74,10 +74,10 @@ Di seguito sono mostrate diverse varianti di tabelle che mostrano il numero di p
 
 1. Tabella con una singola colonna in cui vengono generate 5000 pagine di PDF, con dimensioni del file di dati di 24 MB e record a 30 KB.
 
-   ![table_single_column](/help/forms/using/assets/table_single_column.png)
+   ![tabella_colonna_singola](/help/forms/using/assets/table_single_column.png)
 
 1. Una tabella con molte colonne di piccole dimensioni in cui vengono generate 800 pagine di PDF, le dimensioni del file di dati sono di 4,6 MB e 20 KB.
-   ![table_many_small_columns](/help/forms/using/assets/table_many_small_columns.png)
+   ![tabella_molti_colonne_piccole](/help/forms/using/assets/table_many_small_columns.png)
 
 1. Tabella con molte colonne di piccole dimensioni, ma file di dati di dimensioni maggiori a causa dell&#39;utilizzo di nomi xmlTag di dimensioni maggiori.
 In questo caso, tutto è uguale a quello precedente, ma i nomi dei tag xml sono stati resi di grandi dimensioni (in modo che le dimensioni del file di dati aumentino senza alcun aumento dei dati effettivi), il risultato finale (limite superiore) è quasi lo stesso. Anche se la dimensione del file di dati è aumentata da 4,6 MB a 44,6 MB. In questo caso vengono generate 800 pagine di PDF, con una dimensione del file di dati di 44,6 MB e record di 20 KB.

@@ -32,7 +32,7 @@ Per massimizzare il ROI, le organizzazioni devono monitorare il modo in cui i cl
 
 ## La soluzione {#the-solution}
 
-AEM Forms si integra con [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) soluzioni - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) : consente di monitorare e analizzare le prestazioni dei moduli e di sperimentare e identificare l’esperienza che porta a un migliore tasso di conversione.
+AEM Forms si integra con [soluzioni Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - che possono aiutarti a monitorare e analizzare le prestazioni dei moduli e ti consentono di sperimentare e identificare l&#39;esperienza che porta a un migliore tasso di conversione.
 
 ## Il flusso di lavoro {#the-workflow}
 
@@ -58,7 +58,7 @@ Passiamo ora ai dettagli su come misurare le prestazioni e migliorare i tassi di
 
 #### Passaggio 1: configurare Analytics e Target in AEM Forms  {#step-configure-analytics-and-target-in-aem-forms-br}
 
-**Configurare Analytics**
+**Configura analisi**
 
 Per ottenere informazioni approfondite sulle interazioni dei clienti con i moduli, devi prima configurare Analytics in AEM Forms. Effettua le seguenti operazioni:
 
@@ -68,9 +68,9 @@ Per ottenere informazioni approfondite sulle interazioni dei clienti con i modul
 1. Configurare il servizio di configurazione di AEM Forms Analytics nell’AEM
 1. Abilitare l’analisi sul modulo in AEM
 
-Per i passaggi dettagliati, consulta [Configurazione di analisi e rapporti per moduli adattivi](../../forms/using/configure-analytics-forms-documents.md).
+Per i passaggi dettagliati, vedi [Configurazione di analisi e report per moduli adattivi](../../forms/using/configure-analytics-forms-documents.md).
 
-**Configurare Target**
+**Configura Target**
 
 Per creare ed eseguire test A/B per i moduli adattivi, configura Target in AEM Forms come descritto in [Configurare e integrare Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
@@ -80,37 +80,37 @@ Man mano che i tuoi clienti accedono e interagiscono con i moduli su cui hai abi
 
 Puoi visualizzare un rapporto dall’AEM per i moduli abilitati per l’analisi e analizzare i dati. Per visualizzare il rapporto:
 
-1. Nel server AEM, passa a **Forms > Forms e documenti**.
+1. Nel server AEM, passa a **Forms > Forms &amp; Documents**.
 1. Selezionare la maschera per la quale si desidera creare il rapporto di analisi.
 1. Fai clic sull’icona Rapporti di Analytics. Il report viene visualizzato.
 
 Esaminiamo i punti dati che Analytics raccoglie e segnala per i moduli.
 
-**rapporto di Forms analytics**
+**report Forms Analytics**
 
 Il rapporto di Analytics per i moduli adattivi acquisisce i seguenti indicatori prestazioni chiave (KPI, Key Performance Indicators) a livello di modulo:
 
-* **Tempo medio di riempimento**: tempo medio impiegato per la compilazione del modulo
+* **Tempo medio di compilazione**: tempo medio impiegato per la compilazione del modulo
 * **Impression**: numero di volte in cui il modulo è apparso nei risultati di ricerca
 
-* **Rappresentazioni**: numero di volte in cui il modulo è stato renderizzato o aperto
+* **Rappresentazioni**: numero di volte in cui il modulo è stato sottoposto a rendering o aperto
 * **Bozze**: numero di volte in cui il modulo è stato salvato come bozza
 
 * **Invii**: numero di volte in cui il modulo è stato inviato
 * **Interrompi**: numero di volte in cui gli utenti sono rimasti senza completare il modulo
-* **Visite/Invii**: rapporto delle visite per invio
+* **Visite/Invii**: rapporto tra visite e invio
 
 Inoltre, puoi ottenere i seguenti dettagli su ciascun pannello nel modulo:
 
-* **Ora**: tempo medio (secondi) trascorso sul pannello e sui relativi campi
+* **Tempo**: tempo medio trascorso (secondi) sul pannello e sui relativi campi
 
 * **Errore**: numero di errori riscontrati nel pannello e nei relativi campi per 1000 rappresentazioni di moduli
 
-* **Aiuto**: numero di volte in cui gli utenti hanno effettuato l’accesso alla guida contestuale per il pannello e i relativi campi per 1000 rappresentazioni di moduli
+* **Guida**: numero di volte in cui gli utenti hanno effettuato l&#39;accesso alla Guida contestuale per il pannello e i relativi campi per 1000 rappresentazioni di moduli
 
 ![Un report di analisi di esempio per un modulo adattivo](assets/summary-report.png)
 
-Per ulteriori dettagli sui rapporti di Forms Analytics, vedi [Visualizzazione e comprensione dei rapporti di AEM Forms Analytics](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+Per ulteriori dettagli sui report di analisi dei moduli, vedere [Visualizzazione e comprensione dei report di analisi di AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md).
 
 >[!NOTE]
 >
@@ -130,13 +130,13 @@ Dopo aver analizzato questi punti di dati e aver raggiunto un’ipotesi, apporta
 
 In questo passaggio verranno convalidate le modifiche apportate nel modulo e verrà verificato se influiscono sul tasso di conversione.
 
-**Eseguire un test A/B**
+**Esegui un test A/B**
 
 L’integrazione di AEM Forms con Target consente la creazione di test A/B per i moduli adattivi. Nei test A/B, puoi presentare in modo casuale ai clienti diverse esperienze di un modulo in tempo reale, per sapere quale esperienza funziona meglio o causa più conversioni. Una volta che disponi di dati significativi che indicano che un’esperienza offre una conversione migliore rispetto all’altra, puoi dichiararla vincitrice e, in futuro, diventa l’esperienza predefinita visibile a tutti i clienti.
 
-Per ulteriori informazioni sulla creazione di un test A/B per un modulo adattivo, consulta [Test A/B dei moduli adattivi](../../forms/using/ab-testing-adaptive-forms.md).
+Per ulteriori informazioni sulla creazione di un test A/B per un modulo adattivo, vedi [Test A/B di moduli adattivi](../../forms/using/ab-testing-adaptive-forms.md).
 
-![Un report riepilogativo di esempio di test A/B per un modulo adattivo](assets/ab-test-report-4.png)
+![Un report di riepilogo di esempio del test A/B per un modulo adattivo](assets/ab-test-report-4.png)
 
 ## Best practice {#best-practices}
 

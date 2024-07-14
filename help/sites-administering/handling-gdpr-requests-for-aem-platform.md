@@ -27,7 +27,7 @@ A livello di AEM Foundation, i dati personali memorizzati sono il profilo utente
 
 ### Passaggi manuali {#manual-steps}
 
-1. Apri la console User Administration (Amministrazione utenti) navigando su **[!UICONTROL Impostazioni - Protezione - Utenti]** o navigando direttamente in `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Apri la console di amministrazione degli utenti navigando su **[!UICONTROL Impostazioni - Protezione - Utenti]** o navigando direttamente in `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -91,24 +91,24 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Eliminare informazioni sul profilo utente {#delete-user-profile-information}
 
-1. Accedi a CRXDE Liti, quindi cerca il `[!UICONTROL userId]`:
+1. Accedi a CRXDE Lite, quindi cerca `[!UICONTROL userId]`:
 
-   ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
+   ![immagine2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Apri il nodo utente che si trova in `[!UICONTROL /home/users]` per impostazione predefinita:
+1. Per impostazione predefinita, apri il nodo utente che si trova in `[!UICONTROL /home/users]`:
 
-   ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
+   ![immagine2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
 1. Elimina i nodi del profilo e tutti i relativi nodi secondari. Esistono due formati per i nodi del profilo, a seconda della versione dell’AEM:
 
    1. Il profilo privato predefinito in `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, per i nuovi profili creati con AEM 6.5.
 
-   ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
+   ![immagine2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### API HTTP {#http-api-1}
 
-Le procedure seguenti utilizzano `curl` strumento da riga di comando per illustrare come disabilitare l&#39;utente con **[!UICONTROL caverna]** `userId` ed eliminare i profili di `cavery` disponibili nel percorso predefinito.
+Le procedure seguenti utilizzano lo strumento da riga di comando `curl` per illustrare come disabilitare l&#39;utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili di `cavery` disponibili nel percorso predefinito.
 
 * *Individuazione della home utente*
 
@@ -117,7 +117,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Disabilitazione dell’utente*
+* *Disabilitazione dell&#39;utente*
 
 Utilizzo del percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
 

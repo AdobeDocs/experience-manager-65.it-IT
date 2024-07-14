@@ -40,7 +40,7 @@ AEM Mobile fornisce il blueprint dell’app PhoneGap per la creazione di applica
 
 La pagina principale delle app mobili create in AEM viene visualizzata nella console App.
 
-La pagina root viene memorizzata sotto la proprietà Percorso di destinazione dell’applicazione specificata al momento della creazione dell’applicazione (il percorso predefinito è /content/phonegap/apps). Il nome della pagina è la proprietà Name dell&#39;applicazione. Ad esempio, l’URL predefinito della pagina principale del sito denominata `myphonegapapp` è `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+La pagina root viene memorizzata sotto la proprietà Percorso di destinazione dell’applicazione specificata al momento della creazione dell’applicazione (il percorso predefinito è /content/phonegap/apps). Il nome della pagina è la proprietà Name dell&#39;applicazione. Ad esempio, l&#39;URL predefinito della pagina principale del sito denominato `myphonegapapp` è `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -67,19 +67,19 @@ All&#39;apertura dell&#39;applicazione viene visualizzata la home page o la pagi
 
 Le applicazioni mobili si basano su una blueprint che definisce la struttura e le proprietà di una pagina. Puoi configurare le seguenti proprietà dell’applicazione:
 
-* **Titolo:** Titolo dell’applicazione.
-* **Percorso di destinazione:** Posizione nell&#39;archivio in cui è memorizzata l&#39;applicazione. Lascia l’impostazione predefinita per creare un percorso basato sul nome dell’app.
+* **Titolo:** Titolo dell&#39;applicazione.
+* **Percorso di destinazione:** Il percorso nell&#39;archivio in cui è archiviata l&#39;applicazione. Lascia l’impostazione predefinita per creare un percorso basato sul nome dell’app.
 
 * **Nome:** Il valore predefinito è il valore della proprietà Title con spazi rimossi. Il nome viene utilizzato in CQ per fare riferimento all’applicazione, ad esempio, per il nodo dell’archivio che rappresenta l’applicazione.
-* **Descrizione:** Descrizione dell&#39;applicazione.
-* **URL server:** L’URL che fornisce aggiornamenti di contenuto OTA (Over-the-Air) all’applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (derivata dal servizio esternalizzatore). Nota: questa deve essere un’istanza del server di pubblicazione anziché un’istanza Autore, che richiede l’autenticazione.
+* **Descrizione:** una descrizione dell&#39;applicazione.
+* **URL server:** URL che fornisce aggiornamenti di contenuto OTA (Over-the-Air) per l&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (derivata dal servizio esternalizzatore). Nota: questa deve essere un’istanza del server di pubblicazione anziché un’istanza Autore, che richiede l’autenticazione.
 
 Puoi anche fornire un file di immagine da utilizzare come miniatura dell’applicazione, selezionare la configurazione di PhoneGap Build da utilizzare e selezionare la configurazione di analisi dell’app mobile da utilizzare. Ad Experience Manager, questa immagine viene utilizzata solo come miniatura per rappresentare l’app mobile nella console delle app mobili.
 
 Sono disponibili schede aggiuntive (e facoltative) per build Cloud Service e per l’integrazione del plug-in SDK di Adobe Mobile Services nell’app.
 
 * Genera: fai clic su Gestisci configurazioni e configura il servizio di build build.phonegap.com qui. Quindi, dall’elenco a discesa, potrai selezionare il servizio cloud PhoneGap Build appena creato.
-* Analytics: fai clic su Gestisci configurazioni e configura il tuo [SDK di Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) servizio cloud. Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
+* Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) di Adobe Mobile Services. Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ La procedura seguente utilizza l’interfaccia utente touch per creare un’app 
 1. Nella barra, fai clic su App.
 1. Fai clic sull’icona Crea.
 
-   ![L’icona Crea indicata da un segno più all’interno di un quadrato.](do-not-localize/chlimage_1-7.png)
+   ![L&#39;icona Crea è indicata da un segno più all&#39;interno di un quadrato.](do-not-localize/chlimage_1-7.png)
 
 1. (Facoltativo) Nella scheda Avanzate, fornisci una descrizione dell’applicazione e, se necessario, modifica l’URL del server.
 1. (Facoltativo) Se si utilizza la PhoneGap Build per compilare l&#39;applicazione, nella scheda Genera selezionare la configurazione da utilizzare.
@@ -113,30 +113,30 @@ Dopo aver creato un’app mobile, puoi modificarne le proprietà.
 1. Nella barra, fai clic su App.
 1. Seleziona l’applicazione da configurare e fai clic sull’icona Visualizza proprietà pagina.
 
-   ![L’icona Visualizza proprietà pagina indicata dalla lettera I in un cerchio.](do-not-localize/chlimage_1-8.png)
+   ![L&#39;icona Visualizza proprietà pagina è indicata dalla lettera I all&#39;interno di un cerchio.](do-not-localize/chlimage_1-8.png)
 
 1. Per modificare i valori delle proprietà, fai clic sull’icona Modifica.
 
-   ![L’icona Modifica indicata da una matita.](do-not-localize/chlimage_1-9.png)
+   ![Icona Modifica indicata da una matita.](do-not-localize/chlimage_1-9.png)
 
 1. Configurare le proprietà Base e Avanzate, quindi fare clic sull&#39;icona Fine.
 
-   ![L&#39;icona Fine è indicata da un segno di spunta.](do-not-localize/chlimage_1-10.png)
+   ![Icona Fine indicata da un segno di spunta.](do-not-localize/chlimage_1-10.png)
 
 #### Configurare una variante di lingua dell’applicazione {#configure-a-language-variation-of-the-application}
 
 1. Nella barra, fai clic su App.
 1. Fai clic su per approfondire l’app mobile da modificare nell’Admin Console delle app. Selezionare la versione della lingua dell&#39;applicazione da configurare e fare clic sull&#39;icona Visualizza proprietà applicazione.
 
-   ![L&#39;icona Visualizza proprietà applicazione indicata dalla lettera I all&#39;interno di un cerchio.](do-not-localize/chlimage_1-11.png)
+   ![Icona Visualizza proprietà applicazione indicata dalla lettera I all&#39;interno di un cerchio.](do-not-localize/chlimage_1-11.png)
 
 1. Per modificare i valori delle proprietà, fai clic sull’icona Modifica.
 
-   ![L’icona Modifica indicata da una matita.](do-not-localize/chlimage_1-12.png)
+   ![Icona Modifica indicata da una matita.](do-not-localize/chlimage_1-12.png)
 
 1. Configura le proprietà nelle schede Base, Avanzate, Genera e Analytics, quindi fai clic sull’icona Fine.
 
-   ![L&#39;icona Fine è indicata da un segno di spunta.](do-not-localize/chlimage_1-13.png)
+   ![Icona Fine indicata da un segno di spunta.](do-not-localize/chlimage_1-13.png)
 
 ### Authoring del contenuto di un’applicazione mobile {#authoring-the-content-of-a-mobile-application}
 
@@ -166,7 +166,7 @@ Eseguire la procedura seguente sull&#39;istanza in cui si desidera aggiornare la
 1. Nella barra, fai clic su App, quindi fai clic sull’applicazione.
 1. Selezionare la pagina iniziale, quindi fare clic sull&#39;icona Aggiorna cache.
 
-   ![Icona Aggiorna cache indicata da un barile con un simbolo di riciclo.](do-not-localize/chlimage_1-14.png)
+   ![L&#39;icona Aggiorna cache è indicata da un barile con un simbolo di riciclo sopra di esso.](do-not-localize/chlimage_1-14.png)
 
 ### Utilizzo dei modelli di app {#using-app-templates}
 
@@ -290,7 +290,7 @@ Tieni presente che le immagini vengono visualizzate nel carosello per le pagine 
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-**Scheda Proprietà carosello**
+**Scheda proprietà carosello**
 
 Configura il comportamento del carosello:
 
@@ -333,7 +333,7 @@ Compila l’elenco utilizzando i risultati di una ricerca per parola chiave. La 
 
 **Ricerca avanzata**
 
-Popolare l’elenco utilizzando una [Query Builder](/help/sites-developing/querybuilder-api.md) query.
+Compilare l&#39;elenco utilizzando una query [Querybuilder](/help/sites-developing/querybuilder-api.md).
 
 ### Immagine {#image}
 

@@ -33,33 +33,33 @@ Configura i due servizi seguenti per riconoscere il nome dell&#39;attributo che 
 * Il modulo di accesso.
 * Il servizio di autenticazione SSO.
 
-Specificare lo stesso nome di attributo per entrambi i servizi. L&#39;attributo è incluso nel `SimpleCredentials` fornito a `Repository.login`. Il valore dell’attributo è irrilevante e ignorato, la sua mera presenza è importante e verificata.
+Specificare lo stesso nome di attributo per entrambi i servizi. L&#39;attributo è incluso in `SimpleCredentials` fornito a `Repository.login`. Il valore dell’attributo è irrilevante e ignorato, la sua mera presenza è importante e verificata.
 
 ## Configurazione dell’SSO {#configuring-sso}
 
-Per configurare SSO per un&#39;istanza AEM, è necessario configurare [Gestore autenticazione SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Per configurare SSO per un&#39;istanza AEM, configurare il [Gestore autenticazione SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
+1. Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
 
    Ad esempio, per il set NTLM:
 
-   * **Percorso:** secondo necessità; ad esempio, `/`
+   * **Percorso:** come richiesto; ad esempio, `/`
    * **Nomi intestazione**: `LOGON_USER`
    * **Formato ID**: `^<DOMAIN>\\(.+)$`
 
-     Dove `<*DOMAIN*>` viene sostituito dal nome del tuo dominio.
+     Dove `<*DOMAIN*>` è sostituito dal nome del tuo dominio.
 
    Per CoSign:
 
-   * **Percorso:** secondo necessità; ad esempio, `/`
-   * **Nomi intestazione**: utente_remoto
-   * **Formato ID:** AsIs
+   * **Percorso:** come richiesto; ad esempio, `/`
+   * **Nomi intestazioni**: remote_user
+   * **Formato ID:** Così Com&#39;È
 
    Per SiteMinder:
 
-   * **Percorso:** secondo necessità; ad esempio, `/`
+   * **Percorso:** come richiesto; ad esempio, `/`
    * **Nomi intestazione:** SM_USER
-   * **Formato ID**: così com’è
+   * **Formato ID**: così com&#39;è
 
 1. Verificare che Single Sign-On funzioni come richiesto, inclusa l&#39;autorizzazione.
 
@@ -76,39 +76,39 @@ Per configurare SSO per un&#39;istanza AEM, è necessario configurare [Gestore a
 
 >[!NOTE]
 >
->Il Single Sign-On viene spesso utilizzato con [LDAP](/help/sites-administering/ldap-config.md).
+>Single Sign-On viene spesso utilizzato con [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Se utilizzi anche il [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) con Microsoft® Internet Information Server (IIS), è necessaria una configurazione aggiuntiva in:
+>Se si utilizza anche [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) con Microsoft® Internet Information Server (IIS), è necessario configurare ulteriormente in:
 >
 >* `disp_iis.ini`
 >* IIS
 >
->In entrata `disp_iis.ini` imposta:
->(vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) per maggiori informazioni)
+>In `disp_iis.ini` set:
+>(per informazioni dettagliate, vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server))
 >
->* `servervariables=1` inoltra le variabili del server IIS come intestazioni di richiesta all’istanza remota
+>* `servervariables=1` (inoltra le variabili del server IIS come intestazioni di richiesta all&#39;istanza remota)
 >* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Authorization&quot; diversa da &quot;Basic&quot; con il suo equivalente &quot;Basic&quot;)
 >
 >In IIS:
 >
->* disable **Accesso anonimo**
+>* disabilita **Accesso anonimo**
 >
->* abilita **Autenticazione integrata di Windows**
+>* abilita **autenticazione integrata di Windows**
 >
 
-Puoi vedere quale gestore di autenticazione viene applicato a qualsiasi sezione della struttura del contenuto utilizzando **Autenticatore** della console Felix; ad esempio:
+Puoi vedere quale gestore di autenticazione viene applicato a qualsiasi sezione della struttura del contenuto utilizzando l&#39;opzione **Autenticatore** della console Felix; ad esempio:
 
 `http://localhost:4502/system/console/slingauth`
 
-Viene eseguita prima una query sul gestore che corrisponde meglio al percorso. Ad esempio, se configuri il gestore A per il percorso `/` e handler-B per il percorso `/content`, quindi una richiesta a `/content/mypage.html` eseguirà prima la query del gestore B.
+Viene eseguita prima una query sul gestore che corrisponde meglio al percorso. Ad esempio, se si configura il gestore A per il percorso `/` e il gestore B per il percorso `/content`, una richiesta a `/content/mypage.html` eseguirà prima la query del gestore B.
 
-![screen_shot_2012-02-15alle21006pm](assets/screen_shot_2012-02-15at21006pm.png)
+![schermata_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Esempio {#example}
 
-Per una richiesta di cookie (utilizzando l’URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
+Per una richiesta di cookie (utilizzando l&#39;URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -124,7 +124,7 @@ Utilizzando la seguente configurazione:
 
 * **Nomi cookie**: `TestCookie`
 
-* **Nomi parametri**: `TestParameter`
+* **Nomi Parametri**: `TestParameter`
 
 * **Formato ID**: `AsIs`
 
@@ -149,7 +149,7 @@ Transfer-Encoding: chunked
 Questo funziona anche se richiedi:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Oppure puoi utilizzare il seguente comando curl per inviare il `TestHeader` intestazione a `admin:`
+Oppure puoi usare il seguente comando curl per inviare l&#39;intestazione `TestHeader` a `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
@@ -158,18 +158,18 @@ Oppure puoi utilizzare il seguente comando curl per inviare il `TestHeader` inte
 
 ## Rimozione dei collegamenti di disconnessione AEM {#removing-aem-sign-out-links}
 
-Quando si utilizza l’SSO, l’accesso e la disconnessione vengono gestiti esternamente, pertanto i collegamenti di disconnessione di proprietà dell’AEM non sono più applicabili e devono essere rimossi.
+Quando si utilizza l’SSO, l’accesso e la disconnessione vengono gestiti esternamente, pertanto i collegamenti di disconnessione propri dell’AEM non sono più applicabili e devono essere rimossi.
 
 Il collegamento di disconnessione nella schermata di benvenuto può essere rimosso seguendo la procedura riportata di seguito.
 
-1. Sovrapposizione `/libs/cq/core/components/welcome/welcome.jsp` a `/apps/cq/core/components/welcome/welcome.jsp`
+1. Sovrapponi `/libs/cq/core/components/welcome/welcome.jsp` a `/apps/cq/core/components/welcome/welcome.jsp`
 1. rimuovi la parte seguente da jsp.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Per rimuovere il collegamento di disconnessione disponibile nel menu personale dell&#39;utente nell&#39;angolo in alto a destra, eseguire la procedura seguente:
 
-1. Sovrapposizione `/libs/cq/ui/widgets/source/widgets/UserInfo.js` a `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Sovrapponi `/libs/cq/ui/widgets/source/widgets/UserInfo.js` a `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Rimuovere la parte seguente dal file:
 

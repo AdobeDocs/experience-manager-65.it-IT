@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Creazione della Guida contestuale per i campi modulo{#authoring-in-context-help-for-form-fields}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Introduzione {#introduction}
 
@@ -46,7 +46,7 @@ Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazio
 
 >[!NOTE]
 >
->Seleziona **Mostra sempre una breve descrizione** per visualizzare in modo permanente il testo della guida sotto il campo.
+>Selezionare **Mostra sempre descrizione breve** per visualizzare in modo permanente il testo della Guida sotto il campo.
 
 ![Guida contestuale breve permanente sotto il campo](assets/short1.png)
 
@@ -56,16 +56,16 @@ Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazio
 
 ![Aggiunta di rich media come guida contestuale per i campi modulo](assets/long-descriptions.png)
 
-Quando si aggiunge una descrizione lunga viene visualizzata una **?** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
+Se si aggiunge una descrizione lunga, verrà visualizzato **?Icona** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
 
-![Esempio di aiuto contestuale per rich media](assets/photoshop.png)
+![Esempio di aiuto nel contesto di rich media](assets/photoshop.png)
 
 ### Guida a livello di pannello {#panel-level-help}
 
 Oltre alla guida contestuale per i campi modulo, è possibile specificare la guida a livello di pannello nella scheda Contenuto guida della finestra di dialogo di modifica del pannello.
 
-![Aggiunta di informazioni della Guida contestuale a un pannello modulo](assets/panel-level-help.png)
+![Aggiunta della guida contestuale a un pannello del modulo](assets/panel-level-help.png)
 
-L’aggiunta della guida per il pannello mostra una **?** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
+L&#39;aggiunta della Guida per il pannello visualizza **?Icona** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
 
-![Esempio di guida contestuale a livello di pannello modulo](assets/photoshop-1.png)
+![Esempio di guida contestuale a livello di pannello del modulo](assets/photoshop-1.png)

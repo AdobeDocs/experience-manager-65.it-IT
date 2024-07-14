@@ -17,26 +17,26 @@ ht-degree: 0%
 
 # Creazione di un’app AEM Forms sicura per iOS {#building-a-secure-aem-forms-app-for-ios}
 
-Devi archiviare il progetto Xcode per l’app AEM Forms per creare il file di installazione (un file .ipa) e l’elenco delle proprietà (un file .plist). Il file dell’elenco delle proprietà contiene informazioni di configurazione dell’app ospitata all’interno, ad esempio il nome e il percorso di hosting dell’app. Per ulteriori informazioni sul file dell&#39;elenco delle proprietà, vedere [Informazioni sui file di elenco delle proprietà delle informazioni](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
+Devi archiviare il progetto Xcode per l’app AEM Forms per creare il file di installazione (un file .ipa) e l’elenco delle proprietà (un file .plist). Il file dell’elenco delle proprietà contiene informazioni di configurazione dell’app ospitata all’interno, ad esempio il nome e il percorso di hosting dell’app. Per ulteriori informazioni sul file dell&#39;elenco proprietà, vedere [Informazioni sui file dell&#39;elenco proprietà](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
 1. Accedi al seguente sito Web:
 
    [https://developer.apple.com/account/ios/identifier/bundle](https://developer.apple.com/account/ios/identifier/bundle)
 
-1. Crea un App ID. Per i passaggi dettagliati della creazione di un App ID, vedi [Creazione e configurazione degli ID app](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html).
-1. Per configurare l’identificatore del bundle per l’applicazione iOS per la tua app, fai clic su **[!UICONTROL Configurare l’ID app]**.
-1. Nella parte inferiore della pagina Web, seleziona **[!UICONTROL Attiva per protezione dei dati]**. Specificare le opzioni di protezione dei dati.
+1. Crea un App ID. Per i passaggi dettagliati per la creazione di un ID app, vedi [Creazione e configurazione degli ID app](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html).
+1. Per configurare l&#39;identificatore del bundle per l&#39;applicazione iOS per l&#39;app, fare clic su **[!UICONTROL Configura ID app]**.
+1. Nella parte inferiore della pagina Web, selezionare **[!UICONTROL Abilita per la protezione dei dati]**. Specificare le opzioni di protezione dei dati.
 
    Fai clic su **[!UICONTROL Fine]**.
 
 1. Passa a Provisioning>Distribuzione e crea un nuovo profilo utilizzando l’ID app configurato nel passaggio 3.
 1. Scarica e aggiungi il profilo di provisioning a Xcode e iPad.
 1. Accedi al tuo computer Mac con Xcode e iOS SDK installato e configurato.
-1. Apri `AEM Forms.xcodeproj` progetto in Xcode.
-1. Clic **[!UICONTROL AEM Forms]**, in **[!UICONTROL TARGET]**, seleziona **[!UICONTROL AEM Forms]**. Seleziona la **[!UICONTROL Impostazioni build]** , individua la scheda **[!UICONTROL Diritto alla firma del codice]** e nel menu a discesa Diritti, seleziona la **[!UICONTROL LC Enterprise]** opzione.
-1. Individuare e aprire `LC Enterprise.entitlements` Xcode per la modifica. Sotto **Diritti Xcode**, aggiungi la stessa coppia chiave-valore presente nel profilo di provisioning.
-1. In **[!UICONTROL Impostazioni build]** , fare clic su **[!UICONTROL Tutti]** e quindi fare clic su **[!UICONTROL Combinato]**.
-1. Dalla sezione **[!UICONTROL Impostazioni]** list, expand **[!UICONTROL Firma codice]**.
-1. Per **[!UICONTROL Identità firma codice]**, selezionare la firma appropriata. Assicurati che la stessa firma sia selezionata per **[!UICONTROL Debug]**, **[!UICONTROL Versione]**, e **[!UICONTROL Qualsiasi SDK di iOS]**.
-1. Sotto **[!UICONTROL PROGETTO]**, seleziona **[!UICONTROL AEM Forms]** e accertarsi che sia selezionata la firma appropriata per **[!UICONTROL Identità firma codice]**, **[!UICONTROL Debug]**, **[!UICONTROL Versione]** e **[!UICONTROL Qualsiasi SDK di iOS]**.
-1. Crea e distribuisci l’app AEM Forms. Per istruzioni dettagliate su come creare e distribuire l’app AEM Forms, consulta [Creare il programma di installazione per l’app AEM Forms](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app).
+1. Apri il progetto `AEM Forms.xcodeproj` in Xcode.
+1. Fai clic su **[!UICONTROL AEM Forms]**, in **[!UICONTROL TARGET]**, seleziona **[!UICONTROL AEM Forms]**. Seleziona la scheda **[!UICONTROL Impostazioni build]**, individua la sezione **[!UICONTROL Diritto alla firma del codice]** e, nel menu a discesa Diritti, seleziona l&#39;opzione **[!UICONTROL LC Enterprise]**.
+1. Individua e apri il file `LC Enterprise.entitlements` nel codice Xcode per la modifica. In **Diritti Xcode**, aggiungi la stessa coppia chiave-valore presente nel profilo di provisioning.
+1. Nella scheda **[!UICONTROL Impostazioni build]**, fai clic su **[!UICONTROL Tutti]**, quindi su **[!UICONTROL Combinati]**.
+1. Nell&#39;elenco **[!UICONTROL Impostazioni]** espandere **[!UICONTROL Firma codice]**.
+1. Per **[!UICONTROL Identità firma codice]**, selezionare la firma appropriata. Assicurati che la stessa firma sia selezionata per **[!UICONTROL Debug]**, **[!UICONTROL Versione]** e **[!UICONTROL Qualsiasi SDK iOS]**.
+1. In **[!UICONTROL PROGETTO]**, seleziona **[!UICONTROL AEM Forms]** e assicurati che sia selezionata la firma appropriata per **[!UICONTROL Identità firma codice]**, **[!UICONTROL Debug]**, **[!UICONTROL Versione]** e **[!UICONTROL Qualsiasi SDK iOS]**.
+1. Crea e distribuisci l’app AEM Forms. Per istruzioni dettagliate su come generare e distribuire l&#39;app AEM Forms, vedi [Creare il programma di installazione per l&#39;app AEM Forms](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app).

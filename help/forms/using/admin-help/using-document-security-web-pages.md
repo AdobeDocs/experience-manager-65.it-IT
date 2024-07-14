@@ -22,7 +22,7 @@ Utenti e amministratori utilizzano le pagine web relative alla sicurezza dei doc
 
 >[!NOTE]
 >
->Puoi accedere a document security anche tramite Acrobat e altre applicazioni client utilizzando il tuo account di accesso utente. (vedere [Impostazione dell’accesso alla sicurezza dei documenti dalle applicazioni client](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>Puoi accedere a document security anche tramite Acrobat e altre applicazioni client utilizzando il tuo account di accesso utente. (Vedi [Impostazione dell&#39;accesso alla sicurezza dei documenti dalle applicazioni client](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
 Per aprire le pagine web, devi disporre di un browser, dell’URL e delle informazioni di accesso per Document Security. L’URL per gli utenti è diverso da quello per gli amministratori.
 
@@ -34,9 +34,9 @@ Per accedere come amministratore, devi disporre del ruolo di amministratore asse
 
 Per accedere alle pagine web utilizzando un browser, devi disporre dell’URL di document security e di un account. L’URL per gli utenti è diverso da quello per gli amministratori. Gli amministratori possono anche accedere alle pagine utente per creare i criteri.
 
-Se hai accesso a più installazioni di document security, devi disporre dell’URL dell’istanza di document security a cui desideri accedere. Se non disponi di queste informazioni, rivolgiti al tuo amministratore. L’URL predefinito per le pagine utente è `https://[host]:[port]/edc`. In alcuni casi il numero di porta potrebbe non essere necessario. Per ulteriori informazioni, rivolgersi all&#39;amministratore.
+Se hai accesso a più installazioni di document security, devi disporre dell’URL dell’istanza di document security a cui desideri accedere. Se non disponi di queste informazioni, rivolgiti al tuo amministratore. L&#39;URL predefinito per le pagine utente è `https://[host]:[port]/edc`. In alcuni casi il numero di porta potrebbe non essere necessario. Per ulteriori informazioni, rivolgersi all&#39;amministratore.
 
-L’URL predefinito per gli amministratori è `https://[host]:[port]/adminui`.
+L&#39;URL predefinito per gli amministratori è `https://[host]:[port]/adminui`.
 
 Per gli amministratori, durante l&#39;installazione viene creato un account di amministratore privilegiato predefinito. È possibile utilizzare questo account per eseguire l’accesso alla prima installazione di Document Security.
 
@@ -48,7 +48,7 @@ Per gli amministratori, durante l&#39;installazione viene creato un account di a
 
    URL di Document Security: `https://[host]:[port]/edc`
 
-   o URL di Administration Console: `https://[host]:[port]/adminui`
+   o URL console di amministrazione: `https://[host]:[port]/adminui`
 
 1. Nella finestra di accesso, digitare il nome utente e la password e fare clic su OK.
 1. In Administration Console, fai clic su Servizi > Document Security.
@@ -65,7 +65,7 @@ Quando accedi alla console di amministrazione e apri la pagina principale di doc
 
 Utilizzare questi collegamenti per accedere alle varie pagine, in cui è possibile creare e gestire policy e documenti protetti tramite policy.
 
-**Visualizzare una pagina**
+**Visualizza una pagina**
 
 1. Fai clic sul nome della pagina, ad esempio Criteri.
 
@@ -73,7 +73,7 @@ Utilizzare questi collegamenti per accedere alle varie pagine, in cui è possibi
 
 1. Fai clic sul collegamento di navigazione nella parte superiore della pagina per la pagina a cui desideri tornare.
 
-**Aggiornare l’elenco dei dati su una pagina**
+**Aggiorna l&#39;elenco dei dati in una pagina**
 
 1. Nella pagina principale fare clic sul collegamento alla pagina che si desidera aggiornare.
 
@@ -83,7 +83,7 @@ Utilizzare questi collegamenti per accedere alle varie pagine, in cui è possibi
 
 ## Impostazione dell’accesso alla sicurezza dei documenti dalle applicazioni client {#setting-up-access-to-document-security-from-client-applications}
 
-Le applicazioni client devono essere configurate in modo da connettersi alla protezione dei documenti per proteggere i documenti, aprire i documenti protetti tramite policy e connettersi alle pagine web di Document Security. Consulta *Guida di Acrobat* o il *Guida di RightsManagementExtension* per informazioni sulla configurazione della connessione all&#39;interno dell&#39;applicazione client.
+Le applicazioni client devono essere configurate in modo da connettersi alla protezione dei documenti per proteggere i documenti, aprire i documenti protetti tramite policy e connettersi alle pagine web di Document Security. Per informazioni sulla configurazione della connessione nell&#39;applicazione client, vedere *Guida di Acrobat* o la *Guida di RightsManagementExtension* appropriata.
 
 Document Security è accessibile tramite Secure Sockets Layer (SSL). Installa il certificato del sito web nel tuo archivio certificati in modo da poter accedere alla sicurezza dei documenti tramite le applicazioni client.
 
@@ -93,7 +93,7 @@ Queste istruzioni sono specifiche per Internet Explorer, ma è possibile install
 
 **Installare il certificato del server utilizzando Internet Explorer**
 
-1. Apri il browser web e digita l’URL di base per la sicurezza dei documenti nella casella Indirizzo. Ad esempio, digitare `https://[host]:[port]`. Verrà visualizzata una finestra di dialogo Avviso di protezione.
+1. Apri il browser web e digita l’URL di base per la sicurezza dei documenti nella casella Indirizzo. Digitare ad esempio `https://[host]:[port]`. Verrà visualizzata una finestra di dialogo Avviso di protezione.
 1. Fare clic su Visualizza certificato, quindi su Installa certificato e selezionare le impostazioni predefinite per l&#39;installazione. Il certificato deve essere installato nelle Autorità di certificazione principali attendibili.
 1. Chiudi la sessione del browser.
 1. Aprire un&#39;altra finestra del browser e digitare lo stesso URL nella casella Indirizzo. La finestra di dialogo Avviso di protezione non dovrebbe essere visualizzata. Il test conferma che il certificato è installato correttamente.

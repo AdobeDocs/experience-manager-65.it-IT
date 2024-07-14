@@ -30,11 +30,11 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. Il **Seleziona origine** passaggio della procedura guidata consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie.
+1. Il passaggio **Seleziona Source** della procedura guidata consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. Il **Successivo** consente di accedere al **Configura** passaggio della procedura guidata. Qui puoi aggiungere/rimuovere le lingue e selezionare il metodo di traduzione.
+1. Il pulsante **Avanti** ti porta al passaggio **Configura** della procedura guidata. Qui puoi aggiungere/rimuovere le lingue e selezionare il metodo di traduzione.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -42,7 +42,7 @@ Per accedere a questa procedura guidata:
    >
    >Per impostazione predefinita, è disponibile una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Consulta [Configurazione del framework di integrazione della traduzione](/help/sites-administering/tc-tic.md).
 
-1. Il **Successivo** consente di accedere al **Traduci** passaggio della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
+1. Il pulsante **Avanti** consente di accedere al passaggio **Traduci** della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
 
    >[!NOTE]
    >
@@ -50,6 +50,6 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. Il **Crea** termina la procedura guidata.
+1. Il pulsante **Crea** termina la procedura guidata.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)

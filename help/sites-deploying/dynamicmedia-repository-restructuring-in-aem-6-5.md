@@ -17,9 +17,9 @@ ht-degree: 3%
 
 # Ristrutturazione dell’archivio Dynamic Medie in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , i clienti che eseguono l’aggiornamento all’Experience Manager 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che interessano Dynamic Medie. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nella pagina [Ristrutturazione dell&#39;archivio padre in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l&#39;aggiornamento all&#39;Experience Manager 6.5 devono utilizzare questa pagina per valutare l&#39;impegno di lavoro associato alle modifiche dell&#39;archivio che influiscono su Dynamic Medie. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
-**Prima dell’aggiornamento futuro**
+**Prima dell&#39;aggiornamento futuro**
 
 * [Configurazioni di codifica video adattiva personalizzate](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
 * [Configurazione cloud Dynamic Medie (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
@@ -66,7 +66,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe 
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Il cliente può eseguire uno script di migrazione nella posizione seguente:<br /> </p>
+   <td><p>Il cliente può eseguire uno script di migrazione in questa posizione:<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>Riavvia il bundle OSGi di Dynamic Medie.</li>
@@ -116,7 +116,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe 
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>1. Annullare la pubblicazione di tutti i video da YouTube<br /> 2. Creare la configurazione di YouTube utilizzando la nuova interfaccia utente touch (da <code>/conf</code>) inclusa la copia di tutti i canali dalla vecchia posizione<br /> 3. Pubblica tutti i video su YouTube.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annulli la pubblicazione prima di creare una configurazione YouTube dell’interfaccia utente touch, vengono elencati più URL di YouTube in Proprietà, perché i canali ricreati vengono pubblicati nuovamente, se ne hai la possibilità. Questa funzionalità indica che hai URL inutili elencati in Proprietà.</p> </td>
+   <td><p>1. Annulla la pubblicazione di tutti i video da YouTube<br /> 2. Creare la configurazione di YouTube utilizzando la nuova interfaccia utente touch (da <code>/conf</code>), inclusa la copia di tutti i canali dalla vecchia posizione<br /> 3. Torna ad YouTube per tutti i video di Publish.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annulli la pubblicazione prima di creare una configurazione YouTube dell’interfaccia utente touch, vengono elencati più URL di YouTube in Proprietà, perché i canali ricreati vengono pubblicati nuovamente, se ne hai la possibilità. Questa funzionalità indica che hai URL inutili elencati in Proprietà.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>

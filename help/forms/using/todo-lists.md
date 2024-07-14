@@ -39,11 +39,11 @@ L’area di lavoro di AEM Forms include i tre tipi di elenchi attività seguenti
 
 Quando apri e lavori su un’attività, gli strumenti disponibili dipendono dall’attività. Attività diverse richiedono di eseguire azioni diverse e, per questo motivo, alcuni strumenti potrebbero non essere disponibili. Di seguito sono descritte le attività tipiche che potresti ricevere.
 
-* **Fornisci informazioni**: viene visualizzata un’attività che richiede il completamento e l’invio di un modulo.
+* **Fornisci informazioni**: ricevi un&#39;attività che ti richiede di completare e inviare un modulo.
 
-* **Informazioni sulla revisione**: ricevi un’attività che richiede di rivedere le informazioni e di approvare il contenuto.
+* **Rivedi le informazioni**: ricevi un&#39;attività che richiede di rivedere le informazioni e di approvare il contenuto.
 
-* **Revisione multiutente**: quando altri utenti ricevono l’attività, questa viene ricevuta insieme all’attività. Tu e gli altri utenti dovete fornire informazioni o rivedere il contenuto, o entrambi. Con questo tipo di attività possono essere disponibili i seguenti strumenti:
+* **Revisione multiutente**: l&#39;attività viene ricevuta contemporaneamente da altri utenti. Tu e gli altri utenti dovete fornire informazioni o rivedere il contenuto, o entrambi. Con questo tipo di attività possono essere disponibili i seguenti strumenti:
 
    * Visualizzazione delle istruzioni per l&#39;attività
    * Visualizzazione dello stato di completamento di tutti gli utenti assegnati all&#39;attività
@@ -85,7 +85,7 @@ Quando si apre un&#39;attività dall&#39;elenco delle cose da fare, se l&#39;ele
    >
    >È inoltre possibile bloccare o sbloccare un&#39;attività in qualsiasi scheda quando l&#39;attività è aperta.
 
-   ![lock_task](assets/lock_task.png)
+   ![blocca_attività](assets/lock_task.png)
 
    Menu Tutte le opzioni di un&#39;attività
 
@@ -98,24 +98,24 @@ Quando si apre e si richiede un&#39;attività da un gruppo o da un elenco condiv
 1. Nel riquadro a sinistra della pagina Da fare selezionare un gruppo o un elenco di cose da fare condiviso. Tutte le attività vengono visualizzate nel riquadro centrale.
 1. Effettua una delle seguenti operazioni:
 
-   * Per richiedere un&#39;attività, senza aprirla, da un gruppo o da un elenco attività condiviso, fare clic su  **Richiesta di rimborso** posizionando il puntatore del mouse sull&#39;attività. In alternativa, quando l&#39;attività è aperta, il pulsante Attestazione è disponibile nella barra delle azioni sotto il riquadro attività. Quando viene presentata una richiesta di rimborso, un&#39;attività viene spostata dal gruppo o dall&#39;elenco attività condivise all&#39;elenco.
-   * Per richiedere e aprire un&#39;attività da un gruppo o da un elenco attività condiviso, fare clic su **Richieste di rimborso e aperte**.
+   * Per richiedere un&#39;attività, senza aprirla, da un gruppo o da un elenco attività condiviso, fare clic su **Attestazione** posizionando il puntatore del mouse sull&#39;attività. In alternativa, quando l&#39;attività è aperta, il pulsante Attestazione è disponibile nella barra delle azioni sotto il riquadro attività. Quando viene presentata una richiesta di rimborso, un&#39;attività viene spostata dal gruppo o dall&#39;elenco attività condivise all&#39;elenco.
+   * Per richiedere e aprire un&#39;attività da un gruppo o da un elenco attività condiviso, fare clic su **Richiamo e aprire**.
 
 ## Utilizzo delle attività {#working-with-tasks}
 
 Dopo aver aperto un&#39;attività, le schede visualizzate nel riquadro principale e gli strumenti disponibili dipendono dall&#39;attività. Di seguito sono descritte le schede che è possibile visualizzare:
 
-* **Riepilogo attività**: all&#39;apertura di un&#39;attività, il riquadro Riepilogo attività consente di visualizzare informazioni sull&#39;attività, se presente, utilizzando un URL specificato nel processo al passaggio Assegna attività. Tramite il Riquadro di riepilogo delle attività è possibile visualizzare informazioni aggiuntive e rilevanti per un’attività, in modo da aggiungere più valore all’utente finale dell’area di lavoro di AEM Forms. Questa scheda non è disponibile se l&#39;URL di riepilogo attività non esiste.
+* **Riepilogo attività**: all&#39;apertura di un&#39;attività, il riquadro Riepilogo attività consente di visualizzare informazioni sull&#39;attività, se esistente, utilizzando un URL specificato nel processo al passaggio Assegna attività. Tramite il Riquadro di riepilogo delle attività è possibile visualizzare informazioni aggiuntive e rilevanti per un’attività, in modo da aggiungere più valore all’utente finale dell’area di lavoro di AEM Forms. Questa scheda non è disponibile se l&#39;URL di riepilogo attività non esiste.
 
 * **Dettagli**: fornisce alcune informazioni sull&#39;attività corrente e sul processo a cui appartiene.
 
-* **Modulo**: visualizza il modulo associato all’attività. Il modulo può essere di diversi tipi, tra cui PDF, HTML, Guide e SWF. Il modulo può avere l&#39;aspetto di un normale modulo stampabile o basato su Web oppure può essere una guida attraverso una serie di pannelli in stile procedura guidata per raccogliere informazioni.
+* **Modulo**: visualizza il modulo associato all&#39;attività. Il modulo può essere di diversi tipi, tra cui PDF, HTML, Guide e SWF. Il modulo può avere l&#39;aspetto di un normale modulo stampabile o basato su Web oppure può essere una guida attraverso una serie di pannelli in stile procedura guidata per raccogliere informazioni.
 
-* **Cronologia**: elenca le attività che fanno parte dell&#39;istanza del processo e il modulo associato, le assegnazioni delle attività e gli allegati per ogni attività.
+* **Cronologia**: elenca le attività che fanno parte dell&#39;istanza del processo e il modulo, le assegnazioni e gli allegati associati per ogni attività.
 
-* **Allegati**: visualizza gli allegati esistenti associati all’attività e, se necessario, aggiunge allegati.
+* **Allegati**: visualizza gli allegati esistenti associati all&#39;attività e, se necessario, aggiunge allegati.
 
-* **Note**: visualizza le note esistenti associate all’attività e, se necessario, aggiunge note.
+* **Note**: visualizza le note esistenti associate all&#39;attività e aggiungi le note, se necessario.
 
 Quando lavori su un’attività, di seguito sono descritti gli strumenti che potresti visualizzare e le azioni che puoi intraprendere.
 
@@ -131,7 +131,7 @@ Quando lavori su un’attività, di seguito sono descritti gli strumenti che pot
 
 1. In una scheda qualsiasi, fare clic su uno dei pulsanti seguenti:
 
-   * **Inoltra**
+   * **Avanti**
    * **Condividi**
    * **Consulta**
 
@@ -143,13 +143,13 @@ Quando lavori su un’attività, di seguito sono descritti gli strumenti che pot
 
 ### Restituire un’attività {#return-a-task}
 
-1. In qualsiasi scheda, fai clic su **Ritorno**. L&#39;attività viene riportata nell&#39;elenco attività dell&#39;utente che l&#39;ha precedentemente inoltrata oppure condivisa o consultata con l&#39;utente.
+1. In qualsiasi scheda, fai clic su **Invio**. L&#39;attività viene riportata nell&#39;elenco attività dell&#39;utente che l&#39;ha precedentemente inoltrata oppure condivisa o consultata con l&#39;utente.
 
 ### Disconnetti un&#39;attività {#take-a-task-offline}
 
 Può essere consentito lavorare su un&#39;attività offline e successivamente inviare il relativo modulo da Adobe® Reader® o Adobe® Acrobat® Professional o Adobe® Acrobat® Standard. Quando il modulo viene inviato, il client e-mail viene avviato con l’indirizzo e-mail del server appropriato. A questo punto potrai inviare il modulo completato via e-mail al server.
 
-1. In qualsiasi scheda, fai clic su **Offline**.
+1. In qualsiasi scheda, fai clic su **Non in linea**.
 1. Specifica un nome file in cui salvare il modulo e fai clic su **Salva**. Il modulo associato all&#39;attività viene salvato localmente e l&#39;attività rimane nell&#39;elenco attività fino all&#39;invio del modulo.
 
 ### Utilizzare gli allegati {#work-with-attachments}
@@ -158,8 +158,8 @@ Può essere consentito lavorare su un&#39;attività offline e successivamente in
 
 **Aggiungi un allegato**
 
-1. In **Allegati** , fare clic su **Sfoglia** per selezionare il file da allegare.
-1. Seleziona la **Autorizzazioni** livello dell&#39;allegato per altri utenti che partecipano al processo. Se si seleziona **Letto**, altri utenti possono salvare il file localmente. Se selezioni una delle autorizzazioni di modifica, anche altri utenti possono caricare un nuovo file per sostituire l’allegato.
+1. Nella scheda **Allegati**, fare clic su **Sfoglia** per selezionare il file da allegare.
+1. Selezionare il livello **Autorizzazioni** per l&#39;allegato per gli altri utenti che partecipano al processo. Se selezioni **Leggi**, gli altri utenti potranno salvare il file localmente. Se selezioni una delle autorizzazioni di modifica, anche altri utenti possono caricare un nuovo file per sostituire l’allegato.
 
    >[!NOTE]
    >
@@ -167,21 +167,21 @@ Può essere consentito lavorare su un&#39;attività offline e successivamente in
 
 1. Fai clic su **Carica**. Il file viene allegato al modulo.
 
-**Visualizzare un allegato**
+**Visualizza un allegato**
 
-1. Il giorno **Allegati** fare clic sul nome file dell&#39;allegato da visualizzare.
+1. Nella scheda **Allegati** fare clic sul nome file dell&#39;allegato da visualizzare.
 
 **Salvare un allegato localmente**
 
 1. Fare clic su un allegato per aprirlo. Salvare localmente l&#39;allegato aperto.
 
-**Aggiornare un allegato**
+**Aggiorna un allegato**
 
-1. Clic **Modifica** per l&#39;allegato. Selezionare il file con cui sostituire l&#39;allegato esistente facendo clic su **Sfoglia**.
+1. Fare clic su **Modifica** per l&#39;allegato. Selezionare il file con cui sostituire l&#39;allegato esistente facendo clic su **Sfoglia**.
 
 **Eliminare un allegato**
 
-1. Clic **Elimina** per un allegato.
+1. Fare clic su **Elimina** per un allegato.
 
 ### Salvare i dati senza completare l&#39;attività {#save-your-work-without-completing-the-task}
 
@@ -189,22 +189,22 @@ Può essere consentito lavorare su un&#39;attività offline e successivamente in
 
    Viene visualizzata la finestra di dialogo Salva come bozza. Il nome predefinito della bozza corrisponde al nome dell&#39;attività del modello di attività.
 
-   ![saveasdraft tdialog](assets/saveasdraftdialog.png)
+   ![saveasdraft](assets/saveasdraftdialog.png)
 
    >[!NOTE]
    >
    >È possibile configurare Workspace in modo da salvare automaticamente periodicamente le informazioni immesse come bozza da un utente. Se il salvataggio automatico è abilitato e un utente sta lavorando a una bozza, la bozza viene salvata periodicamente. In caso di salvataggio automatico, viene utilizzato automaticamente il nome predefinito dell&#39;attività.
    >
    >
-   >Per ulteriori informazioni, consultate Salvare periodicamente una bozza in [Gestione delle preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md).
+   >Per ulteriori informazioni, consulta Salvare periodicamente bozze in [Gestione delle preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Nella finestra di dialogo Salva come bozza, specifica un nome univoco per l’attività e seleziona **OK**.
+1. Nella finestra di dialogo Salva come bozza, specifica un nome univoco per l&#39;attività e seleziona **OK**.
 
    ![saveasdraft_dialog_name](assets/saveasdraftdialog_name.png)
 
    La bozza viene salvata con il nome specificato. L&#39;attività rimane nell&#39;elenco Da fare ed eventuali modifiche apportate nel modulo vengono salvate nella cartella Bozze. Inoltre, nell’elenco Da fare, puoi cercare la bozza utilizzando il nome della bozza per riprendere a lavorarci.
 
-   ![searchfortask](assets/searchfortask.png)
+   ![ricercatoattività](assets/searchfortask.png)
 
 ## Completamento delle attività {#completing-tasks}
 
@@ -218,7 +218,7 @@ La modalità di completamento di un&#39;attività dipende dall&#39;attività ste
 
 >[!NOTE]
 >
->Questa opzione è disponibile se `isMustOpenToComplete` non è selezionato in `Assign Task` durante la progettazione di un processo.
+>Questa opzione è disponibile se il campo `isMustOpenToComplete` non è selezionato nel passaggio `Assign Task` in Workbench durante la progettazione di un processo.
 
 * Per e-mail, se ricevi notifiche e-mail
 
@@ -233,15 +233,15 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività, potrebbe esse
 1. Effettua una delle seguenti operazioni:
 
    * Selezionare l&#39;attività e fare clic sul pulsante appropriato per il passaggio successivo richiesto nel processo nella parte inferiore dell&#39;elenco.
-   * Se il modulo non dispone di pulsanti e il pulsante Completa nell’area di lavoro di AEM Forms è disponibile, fai clic su **Completa**.
+   * Se il modulo non contiene pulsanti e il pulsante Completa nell&#39;area di lavoro di AEM Forms è disponibile, fare clic su **Completa**.
    * Se il modulo include pulsanti e il pulsante Completa nell’area di lavoro di AEM Forms non è disponibile, fai clic sul pulsante appropriato nel modulo per il passaggio successivo richiesto nel processo.
 
    Se il modulo non dispone di pulsanti e il pulsante Completa nell’area di lavoro di AEM Forms non è disponibile, viene visualizzato un messaggio che indica che il modulo non può essere inviato.
 
 1. Se viene visualizzata una finestra di dialogo di conferma, eseguire una delle operazioni seguenti:
 
-   * Clic **OK** se l&#39;attività è stata completata e si è pronti per l&#39;accesso.
-   * Clic **Annulla** se si desidera tornare all&#39;attività e non si è pronti per accedervi.
+   * Fare clic su **OK** se l&#39;attività è stata completata e si è pronti per l&#39;approvazione.
+   * Fare clic su **Annulla** se si desidera tornare all&#39;attività e non si è pronti per disconnetterla.
 
 >[!NOTE]
 >
@@ -256,7 +256,7 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività, potrebbe esse
 >Questa opzione è disponibile se il campo isMustOpenToComplete non è selezionato nel passaggio Assegna attività di Workbench durante la progettazione di un processo.
 
 1. Nella pagina Da fare, nel riquadro a sinistra, selezionare il singolo elenco Da fare. Tutte le attività vengono visualizzate nel riquadro centrale.
-1. Seleziona **Abilita modalità collettiva**. Le caselle di controllo vengono visualizzate davanti alle attività dell&#39;elenco.
+1. Selezionare **Abilita modalità collettiva**. Le caselle di controllo vengono visualizzate davanti alle attività dell&#39;elenco.
 
    >[!NOTE]
    >
@@ -280,7 +280,7 @@ I messaggi e-mail possono contenere un collegamento che apre l’attività nell�
 
 >[!NOTE]
 >
->* Per configurare l’area di lavoro in modo che utilizzi i modelli e-mail appropriati, consulta la sezione [Guida per l’amministratore di AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>* Per configurare l&#39;area di lavoro per l&#39;utilizzo dei modelli di posta elettronica appropriati, vedere la [Guida per l&#39;amministratore di AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 >
 >* Se le bozze vengono inoltrate dopo l’invio dell’attività nell’area di lavoro di AEM Forms, vengono inviate notifiche e-mail. Se le bozze vengono inoltrate dal punto d’inizio dell’area di lavoro di AEM Forms, non vengono inviate notifiche e-mail.
 
@@ -296,9 +296,9 @@ Quando si completa un’attività tramite e-mail, questa viene rimossa dall’el
 
 ### Ricezione di messaggi di notifica e-mail {#receive-email-notification-messages}
 
-1. Clic **Preferenze**.
-1. In **Notifica eventi attività tramite e-mail** elenco, seleziona **Sì**.
-1. Per includere il modulo e i dati con il messaggio e-mail, nel **Allega Forms tramite e-mail** elenco, seleziona **Sì**.
+1. Fai clic su **Preferenze**.
+1. Nell&#39;elenco **Notifica eventi attività tramite posta elettronica** selezionare **Sì**.
+1. Per includere il modulo e i dati con il messaggio di posta elettronica, nell&#39;elenco **Allega Forms a posta elettronica** selezionare **Sì**.
 
 ## Partecipazione ad attività tramite dispositivi mobili {#participating-in-tasks-through-mobile-devices}
 
@@ -306,9 +306,9 @@ Puoi usare l’app AEM Forms Workspace per partecipare alle attività dal tuo di
 
 ## Informazioni su scadenze e promemoria {#about-deadlines-and-reminders}
 
-A *scadenza* determina la data e l&#39;ora entro cui è necessario completare un&#39;attività. Quando una scadenza viene superata, il server indirizza l&#39;attività alla fase successiva del processo (che può essere l&#39;elenco attività di un altro utente), quindi sull&#39;attività viene visualizzata l&#39;icona della scadenza. L’icona della scadenza viene visualizzata indipendentemente dalle regole associate al processo.
+Una *scadenza* determina la data e l&#39;ora entro cui devi completare un&#39;attività. Quando una scadenza viene superata, il server indirizza l&#39;attività alla fase successiva del processo (che può essere l&#39;elenco attività di un altro utente), quindi sull&#39;attività viene visualizzata l&#39;icona della scadenza. L’icona della scadenza viene visualizzata indipendentemente dalle regole associate al processo.
 
-A *promemoria* notifica un&#39;attività che richiede l&#39;attenzione dell&#39;utente. I promemoria si verificano a un orario predeterminato e quindi a intervalli regolari fino al completamento dell&#39;attività associata. Quando si riceve un promemoria, sull&#39;attività viene visualizzata l&#39;icona del promemoria.
+Un *promemoria* ti notifica un&#39;attività che richiede la tua attenzione. I promemoria si verificano a un orario predeterminato e quindi a intervalli regolari fino al completamento dell&#39;attività associata. Quando si riceve un promemoria, sull&#39;attività viene visualizzata l&#39;icona del promemoria.
 
 Il processo aziendale determina il comportamento e la tempistica delle scadenze e dei promemoria. Non tutti i processi hanno scadenze e promemoria. L’amministratore specifica se le notifiche e-mail vengono inviate per scadenze e promemoria. Puoi impostare le tue preferenze sulla ricezione o meno di notifiche e-mail.
 
@@ -340,16 +340,16 @@ Per consentire a un utente di visualizzare un&#39;operazione in una coda condivi
 >
 >Se si prevede di non essere in ufficio, è inoltre possibile specificare le impostazioni fuori sede per inoltrare le attività ad altri utenti mentre si è assenti anziché condividere l&#39;intero elenco attività.
 
-**Condividere la coda**
+**Condividi la coda**
 
-1. In **Code** scheda in **Preferenze** , fare clic sull&#39;icona &#39;+&#39; per &#39;Utenti che condividono la coda&#39;.
+1. Nella scheda **Code** della scheda **Preferenze**, fare clic sull&#39;icona &#39;+&#39; per &#39;Utenti che condividono la coda&#39;.
 1. Cerca e seleziona il nome dell’utente.
-1. Clic **Condividi** per condividere la coda con l&#39;utente selezionato.
-1. Seleziona il nome dell’utente e fai clic su **Condividi**.
+1. Fai clic sul pulsante **Condividi** per condividere la coda con l&#39;utente selezionato.
+1. Selezionare il nome dell&#39;utente e fare clic su **Condividi**.
 
    >[!NOTE]
    >
-   >Per rimuovere un utente dalla condivisione dell’elenco attività, fai clic su **X** alla fine della riga in cui è elencato l’utente.
+   >È possibile rimuovere un utente dalla condivisione dell&#39;elenco attività facendo clic sull&#39;icona **X** alla fine della riga in cui è elencato l&#39;utente.
 
 ### Accesso ad altre code {#accessing-other-queues}
 
@@ -361,13 +361,13 @@ Se si dispone dell&#39;accesso all&#39;elenco attività di un altro utente, non 
 
 **Accedere a un&#39;altra coda**
 
-1. In **Preferenze** , apri la scheda **Code** scheda.
+1. Nella scheda **Preferenze** aprire la scheda **Code**.
 1. Fare clic su &#39;+&#39; per selezionare &#39;Code utente a cui si ha accesso&#39;. Cercare il nome dell&#39;utente nella finestra di dialogo a comparsa.
-1. Seleziona il nome dell’utente e fai clic su **Richiesta**.
+1. Selezionare il nome dell&#39;utente e fare clic su **Richiesta**.
 
    >[!NOTE]
    >
-   >È possibile rimuovere l&#39;accesso a un altro elenco attività selezionando il nome utente dall&#39;elenco Utenti code a cui si ha accesso e facendo clic su **X** alla fine della riga che riporta il nome dell’utente. Non è possibile rimuovere l&#39;accesso a un altro elenco attività quando la richiesta di accesso all&#39;elenco attività è ancora in sospeso.
+   >È possibile rimuovere l&#39;accesso a un altro elenco attività selezionando il nome utente dall&#39;elenco Code utenti a cui si ha accesso e facendo clic su **X** alla fine della riga in cui è indicato il nome dell&#39;utente. Non è possibile rimuovere l&#39;accesso a un altro elenco attività quando la richiesta di accesso all&#39;elenco attività è ancora in sospeso.
 
 ## Impostazione delle preferenze fuori sede {#setting-out-of-office-preferences}
 
@@ -383,21 +383,21 @@ Se si prevede di uscire dall&#39;ufficio, è possibile specificare l&#39;andamen
 
 ### Imposta le preferenze fuori sede {#set-out-of-office-preferences}
 
-1. Clic **Preferenze** e fai clic su **Fuori sede**.
+1. Fare clic su **Preferenze** e su **Fuori sede**.
 1. Per specificare quando si è fuori sede, effettuare una delle seguenti operazioni:
 
-   * Per specificare che si è fuori sede per un periodo di tempo indeterminato, nel **Sono attualmente** elenco, seleziona **Fuori sede** ma non aggiungere un intervallo di date.
-   * Per specificare una data e un&#39;ora di inizio fuori sede e fare clic su &#39;+&#39; per **Pianificazione Fuori sede**. Utilizzare l&#39;elenco calendario e ora per specificare la data e l&#39;ora di inizio. Se non si specifica una data e un&#39;ora di fine, si viene considerati fuori dall&#39;ufficio a tempo indefinito dalla data e dall&#39;ora di inizio fino a quando non si modificano le preferenze.
+   * Per specificare che si è fuori sede per un periodo di tempo indefinito, nell&#39;elenco **Sono attualmente** selezionare **Fuori sede** ma non aggiungere un intervallo di date.
+   * Per specificare una data e un&#39;ora di inizio fuori sede e fare clic su &#39;+&#39; per la **pianificazione fuori sede**. Utilizzare l&#39;elenco calendario e ora per specificare la data e l&#39;ora di inizio. Se non si specifica una data e un&#39;ora di fine, si viene considerati fuori dall&#39;ufficio a tempo indefinito dalla data e dall&#39;ora di inizio fino a quando non si modificano le preferenze.
 
-1. Per specificare la modalità di gestione delle attività per impostazione predefinita, selezionare una di queste opzioni dal **Fuori sede: utente predefinito per le attività Fuori sede** elenco:
+1. Per specificare la modalità di gestione delle attività per impostazione predefinita, selezionare una delle opzioni seguenti dall&#39;elenco **Attività fuori sede: Utente predefinito per attività fuori sede**:
 
-   * Seleziona **Non assegnare** per mantenere le attività nell&#39;elenco delle cose da fare fino al ritorno.
+   * Seleziona **Non assegnare** per mantenere le attività nell&#39;elenco attività fino a quando non torni.
    * Seleziona **Trova utente** per cercare un utente a cui assegnare le attività. Quando selezioni un utente, puoi anche visualizzare la pianificazione fuori sede.
 
-1. Per impostare le eccezioni sul valore predefinito, fare clic su + per **Elabora eccezioni**, selezionare il processo per il quale creare un&#39;eccezione e quindi selezionare un altro utente oppure selezionare **Non assegnare** dal **è assegnato a** elenco.
+1. Per impostare le eccezioni sul valore predefinito, fare clic su + per **Elabora eccezioni**, selezionare il processo per il quale creare un&#39;eccezione, quindi selezionare un altro utente oppure selezionare **Non assegnare** dall&#39;elenco **è assegnato a**.
 
    >[!NOTE]
    >
    >Il progettista del processo può specificare che le attività di alcuni processi siano sempre private e non inoltrate ad altri utenti. Questa impostazione ha la precedenza su tutte le impostazioni effettuate.
 
-1. Al termine, fare clic su **Salva**. Se le impostazioni indicano che al momento non sei in ufficio, le modifiche diventano effettive immediatamente. In caso contrario, hanno effetto alla data e all’ora di inizio specificate. Se si effettua l&#39;accesso mentre si è fuori sede, non si viene considerati in ufficio fino a quando non si modificano le impostazioni.
+1. Dopo aver impostato le preferenze, fare clic su **Salva**. Se le impostazioni indicano che al momento non sei in ufficio, le modifiche diventano effettive immediatamente. In caso contrario, hanno effetto alla data e all’ora di inizio specificate. Se si effettua l&#39;accesso mentre si è fuori sede, non si viene considerati in ufficio fino a quando non si modificano le impostazioni.

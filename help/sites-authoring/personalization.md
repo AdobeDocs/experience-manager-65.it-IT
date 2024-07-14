@@ -28,9 +28,9 @@ Le attività definiscono e organizzano le attività di marketing. Le attività c
 
 Ad esempio, il catalogo dei prodotti We.Retail include teaser che focalizzano l&#39;attenzione sui prodotti stagionali. L’attività Sport estivi definisce i segmenti di marketing target dei teaser durante i mesi estivi.
 
-Le attività identificano anche [motore di targeting](/help/sites-authoring/personalization.md#targeting-engine) che le tue pagine utilizzano.
+Le attività identificano anche il [motore di targeting](/help/sites-authoring/personalization.md#targeting-engine) utilizzato dalle pagine.
 
-Utilizza il [Console Attività](/help/sites-authoring/activitylib.md) per creare e gestire le attività dei tuoi marchi. Puoi anche creare delle attività mentre [realizzi contenuti mirati](/help/sites-authoring/content-targeting-touch.md).
+Utilizza la [console Attività](/help/sites-authoring/activitylib.md) per creare e gestire le attività dei tuoi marchi. Puoi anche creare delle attività mentre [realizzi contenuti mirati](/help/sites-authoring/content-targeting-touch.md).
 
 ## Esperienze {#experiences}
 
@@ -40,7 +40,7 @@ I tipi di pubblico si basano su segmenti di marketing creati in AEM o Adobe Targ
 
 Ad esempio, un&#39;attività definisce le esperienze per due segmenti di pubblico distinti: le donne over 30 anni e le donne under 30 anni. La pagina Donne del sito web We.Retail mostra prodotti diversi per ogni esperienza.
 
-Puoi definire le esperienze per un’attività. È possibile utilizzare [Console Attività](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) o [Modalità di targeting](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) per aggiungere esperienze a un’attività.
+Puoi definire le esperienze per un’attività. Puoi utilizzare la [console Attività](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) o la [modalità di targeting](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) per aggiungere esperienze a un&#39;attività.
 
 ## Offerte {#offers}
 
@@ -48,7 +48,7 @@ Un’offerta è un contenuto che viene visualizzato in una posizione su una pagi
 
 Ad esempio, la pagina Donne del sito web di esempio We.Retail può utilizzare le offerte come immagini teaser che appaiono nella parte superiore della pagina. Un’offerta diversa viene utilizzata come teaser per l’esperienza Femmina over 30 e per l’esperienza Femmina under 30.
 
-Utilizza il [Console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Creare offerte monouso o aggiungere offerte da una libreria di offerte quando [authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
+Utilizza la [console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Crea offerte monouso o aggiungi offerte da una libreria di offerte quando [crei contenuti con targeting](/help/sites-authoring/content-targeting-touch.md).
 
 ## Motore di targeting {#targeting-engine}
 

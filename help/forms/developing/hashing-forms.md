@@ -28,7 +28,7 @@ L’idea è quella di oscurare la password generando un hash univoco e archiviar
 
 Una funzione hash accetta come input una stringa lunga (o messaggio) di qualsiasi lunghezza e produce come output una stringa a lunghezza fissa, a volte denominata message digest o impronta digitale.
 
-AEM Forms su JEE Designer consente di implementare le diverse funzioni hash negli oggetti script come JavaScript e di eseguirle all’interno di un documento Dynamic PDF. I PDF di esempio inclusi nei file di esempio per questo articolo utilizzano implementazioni open source delle seguenti funzioni hash:
+AEM Forms su JEE Designer consente di implementare le diverse funzioni hash negli oggetti script come JavaScript ed eseguirle all’interno di un documento Dynamic PDF. I PDF di esempio inclusi nei file di esempio per questo articolo utilizzano implementazioni open source delle seguenti funzioni hash:
 
 * MD4 e MD5 - progettati da Ronald Rivest
 
@@ -38,7 +38,7 @@ Il principale vantaggio dell’utilizzo degli hash è che non è necessario conf
 
 >[!NOTE]
 >
->Esistono alcuni noti problemi di sicurezza (cosiddetti conflitti hash) con MD4 o MD5. A causa di queste collisioni di hash e di altri hack SHA-1 (inclusi i tavoli arcobaleno), ho deciso di concentrarmi sulla funzione di hash SHA-256 nel secondo campione. Per ulteriori informazioni, vedere [Collisione](https://en.wikipedia.org/wiki/Hash_collision) e [Tavola arcobaleno](https://en.wikipedia.org/wiki/Rainbow_table) pagine da Wikipedia.
+>Esistono alcuni noti problemi di sicurezza (cosiddetti conflitti hash) con MD4 o MD5. A causa di queste collisioni di hash e di altri hack SHA-1 (inclusi i tavoli arcobaleno), ho deciso di concentrarmi sulla funzione di hash SHA-256 nel secondo campione. Per ulteriori informazioni, vedere le pagine [Collision](https://en.wikipedia.org/wiki/Hash_collision) e [Rainbow Table](https://en.wikipedia.org/wiki/Rainbow_table) di Wikipedia.
 
 ## Analisi degli oggetti script {#examining-script-objects}
 
@@ -61,7 +61,7 @@ Per visualizzare l&#39;implementazione JavaScript delle funzioni hash all&#39;in
 * soHASHING_SHA256.b64_sha256()
 * soHASHING_SHA256.str_sha256()
 
-Come puoi vedere da questo elenco, sono disponibili diverse funzioni per i diversi tipi di output dell’hash. Puoi scegliere tra `hex_` per le cifre esadecimali, `b64_` per output con codifica Base64, o `str_` per la codifica di stringhe semplice.
+Come puoi vedere da questo elenco, sono disponibili diverse funzioni per i diversi tipi di output dell’hash. È possibile scegliere tra `hex_` per le cifre esadecimali, `b64_` per l&#39;output con codifica Base64 o `str_` per la codifica di stringhe semplice.
 
 A seconda della funzione di hash scelta, la lunghezza dell’hash varia:
 
@@ -79,10 +79,10 @@ I file di esempio per questo articolo includono due PDF forms. Il primo esempio 
 Per provare il primo esempio, procedere come segue:
 
 1. Dopo aver scaricato e decompresso i file di esempio, apri hashing_forms_sample1.pdf con AEM Forms su JEE Designer. In alternativa, puoi utilizzare Adobe Reader o Adobe Acrobat Professional per aprire e visualizzare l’esempio, ma non il codice sorgente.
-1. Nel campo di testo etichettato [!UICONTROL testo non crittografato] digita una password o qualsiasi altro messaggio a cui desideri applicare l’hash.
+1. Nel campo di testo con etichetta [!UICONTROL testo non crittografato], digita una password o qualsiasi altro messaggio con hash.
 1. Fare clic su uno dei quattro pulsanti per generare l&#39;hash MD4, MD5, SHA-1 o SHA-256. A seconda del pulsante premuto, viene chiamata una delle quattro funzioni hash che produce l&#39;output esadecimale e viene applicato l&#39;hash alla stringa o al messaggio.
 
-Il risultato dell’operazione hash viene visualizzato nel campo etichettato [!UICONTROL hash]. La lunghezza dell’hash varia a seconda della funzione di hash scelta.
+Il risultato dell&#39;operazione hash viene visualizzato nel campo con etichetta [!UICONTROL hash]. La lunghezza dell’hash varia a seconda della funzione di hash scelta.
 
 Tutti gli esempi utilizzano cifre esadecimali come tipo di output. È possibile utilizzare l&#39;editor di script per modificare gli esempi e modificare il tipo di output in Base64 o in String semplice.
 
@@ -93,10 +93,10 @@ Il secondo esempio mostra come gli hash vengono confrontati in background, senza
 Per provare il secondo esempio, procedere come segue:
 
 1. Apri `hashing_forms_sample2.pdf` con AEM Forms su JEE Designer. In alternativa, puoi utilizzare Adobe Reader o Adobe Acrobat Professional per aprire e visualizzare l’esempio, ma non il codice sorgente.
-1. Scegli uno dei due campi di password etichettati [!UICONTROL MAN password] o [!UICONTROL Password WOMAN] e digita le password:
+1. Scegli uno dei due campi della password etichettati [!UICONTROL Password MAN] o [!UICONTROL Password WOMAN] e digita le password:
    1. La password per l&#39;uomo è `bob`
    1. La password per la donna è `alice`
-1. Quando si sposta lo stato attivo dai campi della password o si preme il tasto Invio, l&#39;hash della password immessa viene generato automaticamente e viene confrontato con l&#39;hash memorizzato della password corretta in background. Le password con hash corrette vengono memorizzate nei campi di testo invisibili etichettati `passwd_man_hashed` e `passwd_woman_hashed`. Se si digita la password corretta per l&#39;uomo, i campi di testo etichettati `Man 1` e `Man 2` sono rese accessibili per consentirvi di digitare testo. Lo stesso comportamento vale per i campi della donna.
+1. Quando si sposta lo stato attivo dai campi della password o si preme il tasto Invio, l&#39;hash della password immessa viene generato automaticamente e viene confrontato con l&#39;hash memorizzato della password corretta in background. Le password con hash corrette vengono memorizzate nei campi di testo invisibili con etichetta `passwd_man_hashed` e `passwd_woman_hashed`. Se si digita la password corretta per l&#39;uomo, i campi di testo con etichetta `Man 1` e `Man 2` sono resi accessibili in modo da poter digitare testo al loro interno. Lo stesso comportamento vale per i campi della donna.
 1. In alternativa, è possibile fare clic sul pulsante con l&#39;etichetta &quot;elimina password&quot;, che disabilita i campi di testo e ne modifica il bordo.
 
 Il codice per confrontare i due valori con hash e abilitare i campi di testo è semplice:
@@ -114,13 +114,13 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 Dove ti servirebbe qualcosa del genere? Considera un modulo di PDF con campi che devono essere compilati solo da persone autorizzate. Proteggendo questi campi con una password, che non può essere visualizzata in testo non crittografato in nessuna parte del documento, come in Sample_2.pdf, è possibile garantire che tali campi siano accessibili solo agli utenti che conoscono la password.
 
-Ti incoraggio a continuare a esplorare i due file PDF di esempio.  È possibile generare nuovi valori hash con Sample_1.pdf e utilizzare i valori generati per modificare la password o la funzione hash utilizzata in Sample_2.pdf.  Le risorse elencate nella sezione Attribution forniscono anche informazioni aggiuntive sull’hashing e sulle implementazioni JavaScript specifiche utilizzate in questo articolo.
+Ti incoraggio a continuare a esplorare i due file PDF di esempio.  È possibile generare nuovi valori hash con Sample_1.pdf e utilizzare i valori generati per modificare la password o la funzione hash utilizzata in Sample_2.pdf.  Le risorse elencate nella sezione Attributi forniscono anche informazioni aggiuntive sull’hashing e sulle implementazioni JavaScript specifiche utilizzate in questo articolo.
 
 ## Attribution {#attributions}
 
 * [Ronald Rivest](https://en.wikipedia.org/wiki/Ron_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Collisione hash](https://en.wikipedia.org/wiki/Hash_collision)
-* [Tavolo arcobaleno](https://en.wikipedia.org/wiki/Rainbow_table)
+* [Tabella arcobaleno](https://en.wikipedia.org/wiki/Rainbow_table)
 * [Home page del progetto JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
-* [Home page del progetto jsSHA2](https://anmar.eu.org/projects/jssha2/)
+* Home page del progetto [jsSHA2](https://anmar.eu.org/projects/jssha2/)

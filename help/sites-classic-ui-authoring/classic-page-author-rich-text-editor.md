@@ -49,15 +49,15 @@ Potrai modificare direttamente il testo sulla pagina, anziché all’interno di 
 >
 >Se Content Finder non è aperto, la barra degli strumenti non viene visualizzata.
 
-Attualmente, la modalità di modifica locale è abilitata per gli elementi di pagina generati da **Testo** e **Titolo** componenti.
+Attualmente, la modalità di modifica locale è abilitata per gli elementi di pagina generati dai componenti **Testo** e **Titolo**.
 
 >[!NOTE]
 >
->Il [!UICONTROL Titolo] Il componente è progettato per contenere un testo breve senza interruzioni di riga. Quando si modifica un titolo in modalità di modifica locale, l’immissione di un’interruzione di riga apre una nuova pagina **Testo** sotto il titolo.
+>Il componente [!UICONTROL Titolo] è progettato per contenere un testo breve senza interruzioni di riga. Quando si modifica un titolo in modalità di modifica locale, l&#39;immissione di un&#39;interruzione di riga determina l&#39;apertura di un nuovo componente **Testo** sotto il titolo.
 
 ## Funzioni dell’editor Rich Text {#features-of-the-rich-text-editor}
 
-L’Editor Rich Text offre una serie di funzioni, tra cui [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md) del singolo componente. Le funzioni sono disponibili sia per l’interfaccia utente touch che per quella classica.
+L&#39;Editor Rich Text fornisce una serie di funzioni, [dipendono dalla configurazione](/help/sites-administering/rich-text-editor.md) del singolo componente. Le funzioni sono disponibili sia per l’interfaccia utente touch che per quella classica.
 
 ### Formati di caratteri di base {#basic-character-formats}
 
@@ -77,9 +77,9 @@ Tutte funzionano come un interruttore, quindi la riselezione rimuoverà il forma
 
 ### Stili e formati predefiniti {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagrafo](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesParagraph](assets/cq55_rte_stylesparagraph.png)
 
-L&#39;installazione può includere stili e formati predefiniti. Questi sono disponibili con **[!UICONTROL Stile]** e **[!UICONTROL Formato]** e possono essere applicati al testo selezionato.
+L&#39;installazione può includere stili e formati predefiniti. Questi sono disponibili con gli elenchi a discesa **[!UICONTROL Stile]** e **[!UICONTROL Formato]** e possono essere applicati al testo selezionato.
 
 Uno stile può essere applicato a una stringa specifica (uno stile è correlato a CSS):
 
@@ -89,7 +89,7 @@ Mentre un formato viene applicato all’intero paragrafo di testo (un formato è
 
 ![cq55_rte_Paragraph_use](assets/cq55_rte_paragraph_use.png)
 
-Un formato specifico può essere solo modificato (il valore predefinito è **[!UICONTROL Paragrafo]**).
+È possibile modificare solo un formato specifico (il valore predefinito è **[!UICONTROL Paragrafo]**).
 
 È possibile rimuovere uno stile; posizionare il cursore all&#39;interno del testo a cui è stato applicato lo stile e fare clic sull&#39;icona di rimozione:
 
@@ -99,13 +99,14 @@ Un formato specifico può essere solo modificato (il valore predefinito è **[!U
 
 ### Taglia, Copia, Incolla {#cut-copy-paste}
 
-![Barra degli strumenti Taglia, Copia e Incolla](do-not-localize/cq55_rte_cutcopypaste.png)
+![Taglia, Copia, Incolla barra degli strumenti](do-not-localize/cq55_rte_cutcopypaste.png)
 
-Le funzioni standard di **[!UICONTROL Taglia]** e **[!UICONTROL Copia]** sono disponibili. Diversi gusti di **[!UICONTROL Incolla]** sono fornite per soddisfare diversi formati.
+Sono disponibili le funzioni standard di **[!UICONTROL Taglia]** e **[!UICONTROL Copia]**. Sono disponibili diverse versioni di **[!UICONTROL Incolla]** per gestire formati diversi.
 
 * Taglia (Ctrl-X)
 * Copia (Ctrl-C)
-* Incolla Questo è il meccanismo di incollamento predefinito (Ctrl-V) per il componente; se installato come preconfigurato, è configurato per essere [!UICONTROL Incolla da Word].
+* Incolla
+Questo è il meccanismo predefinito per incollare (Ctrl-V) per il componente; una volta installato, è configurato per essere [!UICONTROL Incolla da Word].
 
 * Incolla come testo: elimina tutti gli stili e la formattazione per incollare solo il testo normale.
 
@@ -139,7 +140,7 @@ Il testo può essere allineato a sinistra, al centro o a destra.
 
 Il rientro di un paragrafo può essere aumentato o diminuito. Il paragrafo selezionato verrà rientrato; il nuovo testo inserito manterrà il livello di rientro corrente.
 
-![cq55_rte_dent_use](assets/cq55_rte_indent_use.png)
+![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
 
 ### Elenchi {#lists}
 
@@ -169,15 +170,15 @@ Operazioni disponibili:
 
 * Digitare direttamente un URI
 * Utilizza la mappa del sito per selezionare una pagina all’interno del sito web
-* Inserisci l’URI, quindi aggiungi l’ancoraggio di destinazione; ad esempio, `www.TargetUri.org#AnchorName`
-* Inserisci solo un ancoraggio (per fare riferimento alla &quot;pagina corrente&quot;); ad esempio, `#anchor`
+* Immettere l&#39;URI, quindi aggiungere l&#39;ancoraggio di destinazione, ad esempio `www.TargetUri.org#AnchorName`
+* Immettere solo un ancoraggio (per fare riferimento alla &quot;pagina corrente&quot;); ad esempio, `#anchor`
 * Cerca una pagina nel Finder dei contenuti, quindi trascina l’icona della pagina nella finestra di dialogo Collegamento ipertestuale
 
 >[!NOTE]
 >
->All&#39;URI può essere aggiunto uno qualsiasi dei protocolli configurati per l&#39;installazione. In un&#39;installazione standard, questi sono `https://`, `ftp://`, e `mailto:`. I protocolli non configurati per l&#39;installazione verranno rifiutati e contrassegnati come non validi.
+>All&#39;URI può essere aggiunto uno qualsiasi dei protocolli configurati per l&#39;installazione. In un&#39;installazione standard sono `https://`, `ftp://` e `mailto:`. I protocolli non configurati per l&#39;installazione verranno rifiutati e contrassegnati come non validi.
 
-Per interrompere il collegamento, posizionare il cursore in un punto qualsiasi all&#39;interno del testo del collegamento e fare clic su [!UICONTROL Scollega] icona:
+Per interrompere il collegamento, posizionare il cursore in un punto qualsiasi del testo del collegamento e fare clic sull&#39;icona [!UICONTROL Scollega]:
 
 ![Icona Scollega](do-not-localize/chlimage_1-10.png)
 
@@ -185,9 +186,9 @@ Per interrompere il collegamento, posizionare il cursore in un punto qualsiasi a
 
 ![Barra degli strumenti Ancoraggi](do-not-localize/cq55_rte_anchor.png)
 
-È possibile creare un ancoraggio in qualsiasi punto del testo posizionando il cursore o selezionando del testo. Quindi fai clic su **Ancoraggio** per aprire la finestra di dialogo.
+È possibile creare un ancoraggio in qualsiasi punto del testo posizionando il cursore o selezionando del testo. Fai clic sull&#39;icona **Ancoraggio** per aprire la finestra di dialogo.
 
-Inserisci il nome dell’ancoraggio, quindi fai clic su **OK** per salvare.
+Immettere il nome dell&#39;ancoraggio, quindi fare clic su **OK** per salvare.
 
 ![cq55_rte_anchor_use](assets/cq55_rte_anchor_use.png)
 
@@ -199,15 +200,15 @@ L’ancoraggio viene visualizzato quando il componente viene modificato e ora pu
 
 ![Barra degli strumenti Trova e sostituisci](do-not-localize/cq55_rte_findreplace.png)
 
-L&#39;AEM fornisce sia **Trova** e un **Sostituisci** (Trova e sostituisci).
+AEM fornisce sia una funzione **Trova** che una funzione **Sostituisci** (trova e sostituisci).
 
-Entrambi hanno un **Trova successivo** per cercare nel componente aperto il testo specificato. Puoi anche specificare se deve esistere una corrispondenza tra maiuscole e minuscole.
+Entrambi dispongono di un pulsante **Trova successivo** per cercare nel componente aperto il testo specificato. Puoi anche specificare se deve esistere una corrispondenza tra maiuscole e minuscole.
 
 La ricerca inizierà sempre dalla posizione corrente del cursore all’interno del testo. Quando viene raggiunta la fine del componente, viene visualizzato un messaggio per informare che l’operazione di ricerca successiva inizierà dall’inizio.
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-Il **Sostituisci** consente di: **Trova**, quindi **Sostituisci** una singola istanza con il testo specificato, oppure **Sostituisci tutto** istanze nel componente corrente.
+L&#39;opzione **Sostituisci** consente di **Trovare**, quindi **Sostituire** una singola istanza con il testo specificato o di **Sostituire tutte** le istanze nel componente corrente.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
@@ -219,11 +220,11 @@ Le immagini possono essere trascinate da Content Finder per aggiungerle al testo
 
 >[!NOTE]
 >
->L&#39;AEM offre anche componenti specializzati per una configurazione dell&#39;immagine più dettagliata. Ad esempio, il **Immagine** e **Immagine testo** I componenti sono disponibili.
+>L&#39;AEM offre anche componenti specializzati per una configurazione dell&#39;immagine più dettagliata. Ad esempio, sono disponibili i componenti **Immagine** e **Immagine testo**.
 
 ### Controllo ortografia {#spelling-checker}
 
-![Controllo ortografia](do-not-localize/cq55_rte_spellchecker.png)
+![Controllo ortografico](do-not-localize/cq55_rte_spellchecker.png)
 
 Il correttore ortografico controllerà tutto il testo nel componente corrente.
 
@@ -233,31 +234,31 @@ Eventuali errori ortografici verranno evidenziati:
 
 >[!NOTE]
 >
->Il correttore ortografico funziona nella lingua del sito Web utilizzando la proprietà language della sottostruttura o estraendo la lingua dall&#39;URL. Ad esempio, il `en` la filiale sarà verificata per la lingua inglese e per `de` filiale per il tedesco.
+>Il correttore ortografico funziona nella lingua del sito Web utilizzando la proprietà language della sottostruttura o estraendo la lingua dall&#39;URL. Ad esempio, il ramo `en` verrà controllato per la lingua inglese e il ramo `de` per la lingua tedesca.
 
 ### Tabelle {#tables}
 
 Le tabelle sono disponibili sia:
 
-* Come **Tabella** componente
+* Come componente **Tabella**
 
   ![Componente tabella](assets/chlimage_1-105.png)
 
-* Dall&#39;interno del **Testo** componente
+* Dal componente **Testo**
 
-  ![Barra degli strumenti Testo](do-not-localize/chlimage_1-11.png)
+  ![Barra degli strumenti di testo](do-not-localize/chlimage_1-11.png)
 
   >[!NOTE]
   >
-  >Sebbene nell’editor Rich Text siano disponibili tabelle, si consiglia di utilizzare **Tabella** durante la creazione di tabelle.
+  >Sebbene le tabelle siano disponibili nell&#39;editor Rich Text, si consiglia di utilizzare il componente **Tabella** durante la creazione di tabelle.
 
-In entrambi i **Testo** e **Tabella** la funzionalità per la tabella dei componenti è disponibile tramite il menu di scelta rapida (in genere con il pulsante destro del mouse), facendo clic all’interno della tabella, ad esempio:
+Sia nella tabella dei componenti **Text** che nella **Table** la funzionalità tabella è disponibile tramite il menu di scelta rapida, in genere il pulsante destro del mouse, su cui è stato fatto clic all&#39;interno della tabella, ad esempio:
 
-![cq55_rte_table](assets/cq55_rte_tablemenu.png)
+![cq55_rte_tablemenu](assets/cq55_rte_tablemenu.png)
 
 >[!NOTE]
 >
->In **Tabella** è disponibile anche un componente, una barra degli strumenti specializzata, che include diverse funzioni standard dell’editor Rich Text e un sottoinsieme delle funzioni specifiche della tabella.
+>Nel componente **Tabella** è disponibile anche una barra degli strumenti specializzata, che include diverse funzioni standard dell&#39;editor Rich Text e un sottoinsieme delle funzioni specifiche della tabella.
 
 Le funzioni specifiche della tabella sono:
 
@@ -279,13 +280,13 @@ Le funzioni specifiche della tabella sono:
 
 ![cq55_rte_tableproperties_dialog](assets/cq55_rte_tableproperties_dialog.png)
 
-* **Larghezza**: larghezza totale della tabella.
+* **Larghezza**: la larghezza totale della tabella.
 
 * **Altezza**: altezza totale della tabella.
 
 * **Bordo**: dimensione del bordo della tabella.
 
-* **Margine celle**: definisce lo spazio vuoto tra il contenuto della cella e i relativi bordi.
+* **Spaziatura interna celle**: definisce lo spazio vuoto tra il contenuto della cella e i relativi bordi.
 
 * **Spaziatura celle**: definisce la distanza tra le celle.
 
@@ -308,9 +309,9 @@ Le funzioni specifiche della tabella sono:
 * **Larghezza**
 * **Altezza**
 * **Allineamento orizzontale** - A sinistra, al centro o a destra
-* **Allineamento verticale** - Superiore, centrale, inferiore o linea di base
-* **Tipo di cella**- Dati o intestazione
-* **Applica a:** Cella singola, riga intera, colonna intera
+* **Allineamento verticale** - Superiore, Medio, Inferiore o Linea di base
+* **Tipo di cella**- Dati o Intestazione
+* **Applica a:** cella singola, riga intera, colonna intera
 
 #### Aggiungi o elimina righe {#add-or-delete-rows}
 
@@ -367,7 +368,7 @@ La creazione di una tabella nidificata crea una tabella indipendente all&#39;int
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
-Utilizza l’opzione per rimuovere la tabella dall’interno di **[!UICONTROL Testo]** componente.
+Utilizza l&#39;opzione per rimuovere la tabella dal componente **[!UICONTROL Testo]**.
 
 ### Caratteri speciali {#special-characters}
 
@@ -379,9 +380,9 @@ Utilizza l’opzione per rimuovere la tabella dall’interno di **[!UICONTROL Te
 
 Utilizza il passaggio del mouse per visualizzare una versione ingrandita del carattere, quindi fai clic su per includerlo nella posizione corrente nel testo.
 
-### Modalità di modifica origine {#source-editing-mode}
+### Modalità di modifica Source {#source-editing-mode}
 
-![Barra degli strumenti della modalità di modifica origine](do-not-localize/cq55_rte_sourceedit.png)
+![barra degli strumenti modalità di modifica di Source](do-not-localize/cq55_rte_sourceedit.png)
 
 La modalità di modifica della sorgente consente di visualizzare e modificare le HTML sottostanti del componente.
 

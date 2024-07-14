@@ -28,7 +28,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->I moduli di avvio rapido nella programmazione con AEM si basano sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>I moduli di avvio rapido nella programmazione con AEM si basano sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 ## Quick Start (modalità SOAP): importazione delle credenziali tramite l’API Java™ {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito viene importata una credenziale basata su un file denominato *cred.p12*. Il valore alias utilizzato per importare le credenziali è `Secure`. (vedere [Importazione delle credenziali tramite l&#39;API di Gestione trust](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene importata una credenziale basata su un file denominato *cred.p12*. Il valore alias utilizzato per importare le credenziali è `Secure`. (Vedere [Importazione delle credenziali tramite l&#39;API di Gestione trust](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -137,7 +137,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene importata una cred
 
 ## Quick Start (modalità SOAP): eliminazione delle credenziali tramite l’API Java™ {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito vengono eliminate le credenziali basate su un valore alias *protetto*. (vedere [Eliminazione delle credenziali tramite l’API di Gestione trust](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene eliminata una credenziale basata su un valore di alias *secure*. (Vedi [Eliminazione delle credenziali tramite l&#39;API di Gestione trust](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*

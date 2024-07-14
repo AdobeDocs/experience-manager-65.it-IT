@@ -8,7 +8,7 @@ role: Admin,Architect,Data Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -30,16 +30,16 @@ Nel contesto della gestione dei contenuti headless in AEM, considera una configu
 
 Un amministratore deve creare una configurazione solo una volta oppure, molto raramente, se è necessaria una nuova area di lavoro per organizzare i modelli di contenuto. Ai fini di questa guida introduttiva, è sufficiente creare una sola configurazione.
 
-1. Accedi all’AEM e dal menu principale seleziona **Strumenti > Generale > Browser configurazioni**.
-1. Fornisci un **Titolo** per la configurazione.
-   * Un nome verrà generato automaticamente in base al titolo e regolato in base a [Convenzioni di denominazione AEM.](/help/sites-developing/naming-conventions.md). Sarà il nome del nodo nell’archivio.
+1. Accedere a AEM e dal menu principale selezionare **Strumenti > Generale > Browser configurazioni**.
+1. Specifica un **Titolo** per la configurazione.
+   * Un nome verrà generato automaticamente in base al titolo e regolato in base alle [convenzioni di denominazione AEM.](/help/sites-developing/naming-conventions.md). Sarà il nome del nodo nell’archivio.
 1. Seleziona le seguenti opzioni:
    * **Modelli per frammenti di contenuto**
    * **Query GraphQL persistenti**
 
    ![Crea configurazione](assets/create-configuration.png)
 
-1. Clic **Crea**
+1. Fai clic su **Crea**.
 
 Se necessario, puoi creare più configurazioni. È inoltre possibile nidificare le configurazioni.
 

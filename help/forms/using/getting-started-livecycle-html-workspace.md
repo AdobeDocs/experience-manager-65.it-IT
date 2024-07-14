@@ -62,20 +62,20 @@ Quando si accede all’area di lavoro di AEM Forms utilizzando una tastiera, la 
 
 Puoi impostare le varie preferenze dell’area di lavoro di AEM Forms nelle seguenti categorie:
 
-**Fuori sede:** Impostare le preferenze per controllare il modo in cui le attività vengono assegnate ad altre persone mentre si è fuori sede. Consulta [Impostazione delle preferenze fuori sede](todo-lists.md#setting-out-of-office-preferences).
+**Fuori sede:** Impostare le preferenze per controllare il modo in cui le attività vengono assegnate ad altri utenti mentre si è fuori sede. Consulta [Impostazione delle preferenze fuori sede](todo-lists.md#setting-out-of-office-preferences).
 
-**Code:** Impostare le preferenze per la condivisione dell&#39;elenco attività con altri utenti o per la richiesta di accesso all&#39;elenco di un altro utente. Consulta [Operazioni con le operazioni da code condivise e di gruppo](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
+**Code:** Impostare le preferenze per la condivisione dell&#39;elenco attività con altri utenti o per la richiesta di accesso all&#39;elenco di un altro utente. Vedi [Operazioni con le attività da code condivise e di gruppi](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**Impostazioni interfaccia utente:** Imposta le preferenze per la modalità di interazione con l’area di lavoro di AEM Forms. Consulta [Impostare le preferenze dell’interfaccia utente](#set-user-interface-preferences).
+**Impostazioni interfaccia utente:** Imposta le preferenze per l&#39;interazione con l&#39;area di lavoro di AEM Forms. Consulta [Impostare le preferenze dell&#39;interfaccia utente](#set-user-interface-preferences).
 
 ### Impostare le preferenze dell’interfaccia utente {#set-user-interface-preferences}
 
 Impostare le preferenze dell&#39;interfaccia utente nella scheda Preferenze > Impostazioni interfaccia utente. Sono disponibili le seguenti preferenze.
 
-* **Posizione iniziale:** Specifica la pagina visualizzata all’accesso all’area di lavoro di AEM Forms. Le quattro opzioni disponibili sono Avvia processo, Da fare, Tracciamento e Preferiti.
-* **Richiesta disconnessione:** Specifica se viene richiesto di confermare la disconnessione dopo aver fatto clic su Disconnetti.
-* **Formato data:** Specifica il formato di visualizzazione della data utilizzato nell’area di lavoro AEM Forms.
-* **Formato ora**: specifica il formato di visualizzazione dell’ora utilizzato nell’area di lavoro di AEM Forms.
-* **Notifica eventi attività tramite e-mail:** Specifica se si ricevono notifiche e-mail per eventi di attività, incluse assegnazioni di attività, promemoria e scadenze per le attività nell&#39;elenco attività e negli elenchi attività di gruppo a cui si appartiene.
-* **Allega Forms tramite e-mail:** Specifica se una copia del modulo viene allegata ai messaggi di notifica e-mail. Gli allegati sono supportati solo per i moduli PDF e XDP.
+* **Posizione iniziale:** Specifica la pagina visualizzata all&#39;accesso all&#39;area di lavoro di AEM Forms. Le quattro opzioni disponibili sono Avvia processo, Da fare, Tracciamento e Preferiti.
+* **Prompt disconnessione:** Specifica se viene richiesto di confermare la disconnessione dopo aver fatto clic su Disconnetti.
+* **Formato data:** Specifica il formato di visualizzazione della data utilizzato nell&#39;area di lavoro AEM Forms.
+* **Formato ora**: specifica il formato di visualizzazione ora utilizzato nell&#39;area di lavoro di AEM Forms.
+* **Notifica eventi attività tramite e-mail:** Specifica se si ricevono notifiche e-mail per gli eventi attività, incluse le assegnazioni attività, i promemoria e le scadenze per le attività nell&#39;elenco attività e negli elenchi attività di gruppo a cui si appartiene.
+* **Allega Forms all&#39;e-mail:** Specifica se una copia del modulo è allegata ai messaggi di notifica e-mail. Gli allegati sono supportati solo per i moduli PDF e XDP.
 * **Salva bozza periodicamente:** Specifica se le bozze dei moduli vengono salvate automaticamente periodicamente o meno. Per salvare le bozze periodicamente, abilita questa opzione e imposta la durata del salvataggio automatico da 1 a 30 minuti. Quando è abilitato il salvataggio automatico e un utente sta lavorando a una bozza, la bozza viene salvata periodicamente dopo il numero di minuti specificato. La bozza viene salvata automaticamente solo se è stata apportata una modifica rispetto all&#39;ultimo salvataggio o salvataggio automatico. Quando la bozza viene salvata, sullo schermo viene visualizzato un messaggio di avviso.

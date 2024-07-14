@@ -27,7 +27,7 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 
 For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
 
-La registrazione delle transazioni è disabilitata per impostazione predefinita. È possibile [abilita registrazione transazioni](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) dalla console web dell’AEM. Puoi visualizzare i rapporti sulle transazioni nelle istanze di authoring, elaborazione o pubblicazione. Visualizzare i report delle transazioni sulle istanze di authoring o elaborazione per una somma aggregata di tutte le transazioni. Visualizzare i rapporti sulle transazioni nelle istanze di pubblicazione per un conteggio di tutte le transazioni che si verificano solo nell’istanza di pubblicazione da cui viene eseguito il rapporto.
+La registrazione delle transazioni è disabilitata per impostazione predefinita. È possibile [abilitare la registrazione delle transazioni](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) dalla console Web AEM. Puoi visualizzare i rapporti sulle transazioni nelle istanze di authoring, elaborazione o pubblicazione. Visualizzare i report delle transazioni sulle istanze di authoring o elaborazione per una somma aggregata di tutte le transazioni. Visualizzare i rapporti sulle transazioni nelle istanze di pubblicazione per un conteggio di tutte le transazioni che si verificano solo nell’istanza di pubblicazione da cui viene eseguito il rapporto.
 
 Non creare contenuti (creare moduli adattivi, comunicazioni interattive, temi e altre attività di authoring) ed elaborare documenti (utilizzare flussi di lavoro, servizi documentali e altre attività di elaborazione) sulla stessa istanza AEM. Mantieni disabilitata la registrazione delle transazioni per i server AEM Forms utilizzati per l’authoring dei contenuti. Mantieni abilitata la registrazione delle transazioni per i server AEM Forms utilizzati per elaborare i documenti.
 
@@ -39,7 +39,7 @@ Azioni quali l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente 
 
 ## Topologia supportata {#supported-topology}
 
-I rapporti sulle transazioni sono disponibili solo in AEM Forms in ambiente OSGi. Supporta le topologie author-publish, author-processing-publish e only processing. Ad esempio, le topologie, vedi [Architettura e topologie di implementazione per AEM Forms](../../forms/using/transaction-reports-overview.md).
+I rapporti sulle transazioni sono disponibili solo in AEM Forms in ambiente OSGi. Supporta le topologie author-publish, author-processing-publish e only processing. Ad esempio, topologie, vedere [Architettura e topologie di distribuzione per AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 Il conteggio delle transazioni viene replicato in modo inverso dalle istanze di pubblicazione alle istanze di authoring o elaborazione. Di seguito è riportata una topologia indicativa autore-pubblicazione:
 
@@ -52,7 +52,7 @@ Il conteggio delle transazioni viene replicato in modo inverso dalle istanze di 
 ### Linee guida per l’utilizzo dei report sulle transazioni {#guidelines-for-using-transaction-reports}
 
 * Disattiva i rapporti sulle transazioni per tutte le istanze di authoring, poiché i rapporti sulle istanze di authoring includono le transazioni registrate durante le attività di authoring.
-* Abilita **Mostra transazioni solo da pubblicazione** sull’istanza Autore per visualizzare le transazioni cumulative da tutte le istanze Publish. Puoi anche visualizzare i rapporti sulle transazioni su ogni istanza di pubblicazione per le transazioni effettive solo su quella particolare istanza di pubblicazione.
+* Abilita l&#39;opzione **Mostra transazioni da sola pubblicazione** nell&#39;istanza di authoring per visualizzare le transazioni cumulative da tutte le istanze di pubblicazione. Puoi anche visualizzare i rapporti sulle transazioni su ogni istanza di pubblicazione per le transazioni effettive solo su quella particolare istanza di pubblicazione.
 * Non utilizzare le istanze di authoring per eseguire flussi di lavoro ed elaborare documenti.
 * Prima di utilizzare la generazione rapporti sulle transazioni, se disponi di una topologia con server di pubblicazione, assicurati che la replica inversa sia abilitata per tutte le istanze di pubblicazione.
 * I dati delle transazioni vengono replicati in modo inverso da un’istanza Publish all’unica istanza di authoring o elaborazione corrispondente. L’istanza di authoring o elaborazione non può replicare ulteriormente i dati in un’altra istanza. Ad esempio, se disponi di una topologia di authoring-elaborazione-pubblicazione, i dati delle transazioni aggregati vengono replicati solo nell’istanza di elaborazione.

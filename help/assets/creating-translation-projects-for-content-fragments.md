@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # Creazione di progetti di traduzione per frammenti di contenuto {#creating-translation-projects-for-content-fragments}
 
-Oltre alle risorse, Adobe Experience Manager (AEM) Assets supporta i flussi di lavoro di copia lingua per [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) (comprese le varianti). Non è necessaria alcuna ottimizzazione aggiuntiva per eseguire flussi di lavoro di copia per lingua sui frammenti di contenuto. In ogni flusso di lavoro, l’intero frammento di contenuto viene inviato per la traduzione.
+Oltre alle risorse, Adobe Experience Manager (AEM) Assets supporta i flussi di lavoro di copia per lingua per [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) (incluse le varianti). Non è necessaria alcuna ottimizzazione aggiuntiva per eseguire flussi di lavoro di copia per lingua sui frammenti di contenuto. In ogni flusso di lavoro, l’intero frammento di contenuto viene inviato per la traduzione.
 
 I tipi di flussi di lavoro che è possibile eseguire sui frammenti di contenuto sono esattamente simili ai tipi di flusso di lavoro eseguiti per le risorse. Inoltre, le opzioni disponibili all’interno di ciascun tipo di flusso di lavoro corrispondono a quelle disponibili nei corrispondenti tipi di flussi di lavoro per le risorse.
 
@@ -36,18 +36,18 @@ Quando il frammento di contenuto sorgente viene aggiornato o modificato, il fram
 
 Il flusso di lavoro Crea e traduci include le seguenti opzioni. Le fasi procedurali associate a ciascuna opzione sono simili a quelle associate all’opzione corrispondente per le risorse.
 
-* Crea solo struttura: per i passaggi della procedura, vedi [Crea struttura solo per le risorse](translation-projects.md#create-structure-only).
-* Creare un progetto di traduzione: per i passaggi della procedura, consulta [Creare un progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project).
+* Crea solo struttura: per i passaggi della procedura, vedere [Crea struttura solo per risorse](translation-projects.md#create-structure-only).
+* Crea un progetto di traduzione: per i passaggi della procedura, consulta [Creare un progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project).
 * Aggiungi al progetto di traduzione esistente: per i passaggi della procedura, consulta [Aggiungi al progetto di traduzione esistente per le risorse](translation-projects.md#add-to-existing-translation-project).
 
 ## Flusso di lavoro Aggiorna copie per lingua {#update-language-copies-workflow}
 
 Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni. Le fasi procedurali associate a ciascuna opzione sono simili a quelle associate all’opzione corrispondente per le risorse.
 
-* Creare un progetto di traduzione: per i passaggi della procedura, consulta [Creare un progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project) (aggiorna flusso di lavoro).
-* Aggiungi al progetto di traduzione esistente: per i passaggi della procedura, consulta [Aggiungi al progetto di traduzione esistente per le risorse](translation-projects.md#add-to-existing-translation-project) (aggiorna flusso di lavoro).
+* Crea un progetto di traduzione: per i passaggi della procedura, consulta [Creare un progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project) (flusso di lavoro di aggiornamento).
+* Aggiungi al progetto di traduzione esistente: per i passaggi della procedura, consulta [Aggiungi al progetto di traduzione esistente per le risorse](translation-projects.md#add-to-existing-translation-project) (flusso di lavoro di aggiornamento).
 
-Puoi anche creare copie temporanee per i frammenti in una lingua diversa, nello stesso modo in cui crei copie temporanee per le risorse. Per ulteriori informazioni, consulta [Creazione di copie in lingua temporanea delle risorse](translation-projects.md#creating-temporary-language-copies).
+Puoi anche creare copie temporanee per i frammenti in una lingua diversa, nello stesso modo in cui crei copie temporanee per le risorse. Per informazioni dettagliate, consulta [Creazione di copie temporanee della lingua per le risorse](translation-projects.md#creating-temporary-language-copies).
 
 ## Traduzione di frammenti multimediali diversi {#translating-mixed-media-fragments}
 
@@ -57,20 +57,20 @@ Se il frammento di contenuto include una raccolta, le risorse all’interno dell
 
 Per tradurre frammenti di contenuto che includono file multimediali diversi, modifica innanzitutto il framework di traduzione predefinito per abilitare la traduzione delle risorse e delle raccolte in linea associate ai frammenti di contenuto.
 
-1. Fai clic sul logo dell’AEM e passa a **[!UICONTROL Strumenti > Implementazione > Cloud Service]**.
+1. Fare clic sul logo AEM e passare a **[!UICONTROL Strumenti > Distribuzione > Cloud Service]**.
 1. Individua **[!UICONTROL Integrazione traduzione]** in **[!UICONTROL Adobe Marketing Cloud]** e fai clic su **[!UICONTROL Mostra configurazioni]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. Nell’elenco delle configurazioni disponibili, fai clic su **[!UICONTROL Configurazione predefinita (configurazione dell’integrazione della traduzione)]** per aprire **[!UICONTROL Configurazione predefinita]** pagina.
+1. Dall&#39;elenco delle configurazioni disponibili, fare clic su **[!UICONTROL Configurazione predefinita (configurazione integrazione di traduzione)]** per aprire la pagina **[!UICONTROL Configurazione predefinita]**.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
-1. Clic **[!UICONTROL Modifica]** dalla barra degli strumenti per visualizzare **[!UICONTROL Configurazione traduzione]** .
+1. Fai clic su **[!UICONTROL Modifica]** nella barra degli strumenti per visualizzare la finestra di dialogo **[!UICONTROL Configurazione traduzione]**.
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Accedi a **[!UICONTROL Risorse]** e scegliere **[!UICONTROL Risorse multimediali in linea e raccolte associate]** dal **[!UICONTROL Traduci risorse frammento di contenuto]** elenco. Clic **[!UICONTROL OK]** per salvare le modifiche.
+1. Passa alla scheda **[!UICONTROL Assets]** e scegli **[!UICONTROL Inline Media Assets e le raccolte associate]** dall&#39;elenco **[!UICONTROL Traduci frammento di contenuto Assets]**. Fare clic su **[!UICONTROL OK]** per salvare le modifiche.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -78,7 +78,7 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Fai clic su **[!UICONTROL Inserisci risorsa]** icona.
+1. Fai clic sull&#39;icona **[!UICONTROL Inserisci risorsa]**.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -86,11 +86,11 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![inserisci risorsa nel frammento di contenuto](assets/column-view.png)
 
-1. Fai clic su **[!UICONTROL Associa contenuto]** icona.
+1. Fare clic sull&#39;icona **[!UICONTROL Associa contenuto]**.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Clic **[!UICONTROL Associa contenuto]**.
+1. Fare clic su **[!UICONTROL Associa contenuto]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
@@ -98,32 +98,32 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Seleziona il frammento di contenuto e fai clic su **[!UICONTROL GlobalNav]** icona.
-1. Seleziona **[!UICONTROL Riferimenti]** dal menu per visualizzare **[!UICONTROL Riferimenti]** riquadro.
+1. Seleziona il frammento di contenuto e fai clic sull&#39;icona **[!UICONTROL GlobalNav]**.
+1. Seleziona **[!UICONTROL Riferimenti]** dal menu per visualizzare il riquadro **[!UICONTROL Riferimenti]**.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Clic **[!UICONTROL Copie per lingua]** in **[!UICONTROL Copie]** per visualizzare le copie per lingua.
+1. Fai clic su **[!UICONTROL Copie per lingua]** in **[!UICONTROL Copie]** per visualizzare le copie per lingua.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Clic **[!UICONTROL Crea e traduci]** dalla parte inferiore del pannello per visualizzare **[!UICONTROL Crea e traduci]** .
+1. Fai clic su **[!UICONTROL Crea e traduci]** dalla parte inferiore del pannello per visualizzare la finestra di dialogo **[!UICONTROL Crea e traduci]**.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
-1. Seleziona la lingua di destinazione dalla **[!UICONTROL Lingue di destinazione]** elenco.
+1. Selezionare la lingua di destinazione dall&#39;elenco **[!UICONTROL Lingue di destinazione]**.
 
    ![chlimage_1-457](assets/chlimage_1-457.png)
 
-1. Seleziona il tipo di progetto di traduzione da **[!UICONTROL Progetto]** elenco.
+1. Selezionare il tipo di progetto di traduzione dall&#39;elenco **[!UICONTROL Progetto]**.
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Specifica il titolo del progetto in **[!UICONTROL Titolo progetto]** e quindi fare clic su **Crea**.
+1. Specificare il titolo del progetto nella casella **[!UICONTROL Titolo progetto]**, quindi fare clic su **Crea**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
-1. Accedi a **[!UICONTROL Progetti]** e apri la cartella del progetto di traduzione creato.
+1. Passa alla console **[!UICONTROL Progetti]** e apri la cartella del progetto di traduzione creato.
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
@@ -132,7 +132,7 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
 1. Dal riquadro Lavoro di traduzione, verifica il numero di risorse da tradurre.
-1. Dalla sezione **[!UICONTROL Lavoro di traduzione]** riquadro, avvia il processo di traduzione.
+1. Avvia il processo di traduzione dal riquadro **[!UICONTROL Processo di traduzione]**.
 
    ![chlimage_1-462](assets/chlimage_1-462.png)
 

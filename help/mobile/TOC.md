@@ -26,17 +26,17 @@ ht-degree: 11%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - Preparazione al RGPD](aem-mobile-gdpr-compliance.md)
    + [Sviluppa app mobili](develop-mobile-apps.md)
-+ App Authoring On-Demand Services {#authoring}
++ Creazione dell&#39;app dei servizi on demand {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gestione del contenuto](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [Pubblica contenuto di annullamento pubblicazione](mobile-on-demand-publishing-unpublishing.md)
+   + [Annullamento pubblicazione contenuto Publish](mobile-on-demand-publishing-unpublishing.md)
    + [Dashboard dell’applicazione AEM Mobile](mobile-apps-ondemand-application-dashboard.md)
    + [Azioni di creazione e configurazione delle applicazioni](mobile-apps-ondemand-application-create-configure-action.md)
    + [Gestione degli articoli](mobile-on-demand-managing-articles.md)
    + [Caricamento delle risorse condivise](mobile-on-demand-shared-resources.md)
    + [Configurazione cloud](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gestione dei banner](mobile-on-demand-managing-banners.md)
-+ Sviluppo dell’app On-Demand Services {#developing}
++ Sviluppo dell&#39;app dei servizi on demand {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [Modelli di app e componenti](app-templates-and-components1.md)
    + [Proprietà e nodi di contenuto](content-properties.md)
@@ -50,7 +50,7 @@ ht-degree: 11%
    + [Rendering e consegna](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [Consegna dei contenuti](develop-content-as-a-service.md)
-+ Amministrazione dell’app dei servizi on-demand {#administering}
++ Amministrazione dell&#39;app dei servizi on demand {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
    + [Configurazione AEM Mobile](aem-mobile-setup.md)
    + [Configurare utenti e gruppi di utenti](aem-mobile-configure-users.md)
@@ -59,7 +59,7 @@ ht-degree: 11%
    + [Panoramica dei modelli](model-management.md)
    + [Spazi ed entità](spaces-and-entities.md)
    + [Gestione delle raccolte](mobile-on-demand-managing-collections.md)
-+ Authoring di Adobe PhoneGap Enterprise {#author-phonegap}
++ Creazione di Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [Modifica dei metadati dell’app](phonegap-editmetadata.md)
    + [Definizioni delle app](phonegap-app-definitions.md)

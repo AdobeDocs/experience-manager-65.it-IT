@@ -21,24 +21,24 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-Il `Leaderboard` Questo componente consente di comprendere in che modo i membri interagiscono all’interno della community, classificandoli in base ai punti ottenuti (punteggio di base) o alle loro competenze (punteggio avanzato).
+Il componente `Leaderboard` consente di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della community classificando i membri in base ai punti ottenuti (punteggio di base) o alle loro competenze (punteggio avanzato).
 
-Prima di includere il componente classifica in una pagina, è necessario configurare [Punteggio community e badge](/help/communities/implementing-scoring.md).
+Prima di includere il componente classifica in una pagina, è necessario configurare [Punteggio community e distintivi](/help/communities/implementing-scoring.md).
 
 Questa sezione della documentazione descrive:
 
-* Aggiunta di `Leaderboard` da componente a [sito community](/help/communities/overview.md#community-sites).
-* Impostazioni di configurazione per `Leaderboard` componente.
+* Aggiunta del componente `Leaderboard` a un [sito community](/help/communities/overview.md#community-sites).
+* Impostazioni di configurazione per il componente `Leaderboard`.
 
 ### Aggiunta di una classifica a una pagina {#adding-a-leaderboard-to-a-page}
 
-Per aggiungere una `Leaderboard` a una pagina in modalità di authoring, individua il componente
+Per aggiungere un componente `Leaderboard` a una pagina in modalità di creazione, individua il componente
 
 * `Communities / Leaderboard`
 
 Trascinarlo nella posizione desiderata su una pagina.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](/help/communities/basics.md).
 
 La prima volta che viene inserito in una pagina di un sito community, viene visualizzato questo componente:
 
@@ -46,15 +46,15 @@ La prima volta che viene inserito in una pagina di un sito community, viene visu
 
 ### Configurazione della classifica {#configuring-leaderboard}
 
-Seleziona la inserita `Leaderboard` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
+Selezionare il componente `Leaderboard` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo per modifica.
 
-![configure-new](assets/configure-new.png)
+![configura-nuovo](assets/configure-new.png)
 
-![configure-lead board](assets/configure-leaderboard.png)
+![configurazione-classifica](assets/configure-leaderboard.png)
 
 #### Scheda Impostazioni {#settings-tab}
 
-Sotto **[!UICONTROL Impostazioni]** , specificare le informazioni relative al membro visualizzate:
+Nella scheda **[!UICONTROL Impostazioni]**, specifica le informazioni relative al membro visualizzate:
 
 * **Nome visualizzato**
 
@@ -78,7 +78,7 @@ L&#39;impostazione predefinita è deselezionata.
 
 #### Scheda Regole {#rules-tab}
 
-Sotto **Regole** , il sito community e le relative regole di punteggio e badge
+Nella scheda **Regole**, il sito della community e le relative regole di punteggio e contrassegno
 
 * **Posizione regola**
 
@@ -88,7 +88,7 @@ Sotto **Regole** , il sito community e le relative regole di punteggio e badge
 
   (Obbligatorio) Regola specifica che genera i punteggi da visualizzare.
 
-* **Regola assegnazione badge**
+* **Regola di assegnazione badge**
 
   (Obbligatorio) Regola specifica che genera il badge da visualizzare.
 
@@ -118,7 +118,7 @@ Configurazione componente classifica:
    * Regola assegnazione badge = `/libs/settings/community/badging/rules//reference-badging`
    * Limite di visualizzazione = `10`
 
-![Participanti-classifica](assets/participants-leaderboard.png)
+![partecipanti-classifica](assets/participants-leaderboard.png)
 
 ### Esempio: classifica degli esperti {#example-experts-leaderboard}
 
@@ -145,6 +145,6 @@ Configurazione componente classifica:
 
 ### Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base sulla classifica](/help/communities/leaderboard.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Informazioni fondamentali sulla classifica](/help/communities/leaderboard.md) per sviluppatori.
 
-Le istruzioni per la creazione delle regole sono fornite nella [Punteggio community e badge](/help/communities/implementing-scoring.md) per gli amministratori.
+Le istruzioni per la creazione delle regole sono fornite nella pagina [Punteggio community e badge](/help/communities/implementing-scoring.md) per gli amministratori.

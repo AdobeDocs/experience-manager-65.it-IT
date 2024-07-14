@@ -23,7 +23,7 @@ ht-degree: 0%
 
 La gestione dei modelli comporta la creazione e la gestione di modelli per l’associazione a eventuali oggetti dati. Ogni modello include tutte le proprietà e le definizioni dei campi necessarie per facilitare la creazione e il rendering degli oggetti.
 
-Gestione dei modelli comporta la creazione di **modelli**, **entità**, e **spazi**. Il diagramma seguente illustra la relazione tra il contenuto dell’AEM e i modelli.
+Gestione modelli prevede la creazione di **modelli**, **entità** e **spazi**. Il diagramma seguente illustra la relazione tra il contenuto dell’AEM e i modelli.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -50,7 +50,7 @@ I modelli vengono utilizzati per determinare la modalità di creazione delle ent
 >Esiste un modello all’esterno di un’app, poiché può essere utilizzato da più app.
 >
 
-Per creare e gestire modelli nel dashboard e nell’archivio, consulta **[Modelli](/help/mobile/administer-mobile-apps.md)**.
+Per creare e gestire modelli nel dashboard e nel repository, vedere **[Modelli](/help/mobile/administer-mobile-apps.md)**.
 
 ### Entità nel modello di contenuto {#entities-in-content-model}
 
@@ -58,9 +58,9 @@ Un&#39;entità è un&#39;istanza di un modello di contenuto. Un’entità viene 
 
 Se è presente un contenuto AEM, un’entità viene generata utilizzando un modello e l’origine del contenuto AEM. Ad esempio, un’entità pagina è un oggetto indipendente dal canale e dal layout generato da una pagina AEM e dal modello della pagina.
 
-Le modifiche al contenuto di riferimento di un’entità determinano una modifica dell’entità. Ad esempio, se un *cq:page* viene aggiornato, vengono aggiornate anche tutte le entità basate su tale pagina.
+Le modifiche al contenuto di riferimento di un’entità determinano una modifica dell’entità. Se ad esempio si aggiorna una *cq:page*, verranno aggiornate anche tutte le entità basate su tale pagina.
 
-Per creare entità personalizzate dai modelli, consulta **[Utilizzo delle entità](/help/mobile/spaces-and-entities.md)**.
+Per creare entità personalizzate dai modelli, vedi **[Utilizzo delle entità](/help/mobile/spaces-and-entities.md)**.
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Sul lato AEM, uno spazio è un modo conveniente per gestire le entità correlate
 
 *Ad esempio*,
 
-Un utente dispone di tre classificazioni generali di entità. Una è solo per uso interno, un’altra è approvata per l’uso pubblico e ancora una terza è per le entità comuni utilizzate da molte app. Per semplificarne la gestione, l’utente crea tre spazi: *interno*, *pubblico* (con contenuti sia in inglese che in francese), e *comune* per la gestione delle entità appropriate, come indicato di seguito:
+Un utente dispone di tre classificazioni generali di entità. Una è solo per uso interno, un’altra è approvata per l’uso pubblico e ancora una terza è per le entità comuni utilizzate da molte app. Per semplificare la gestione, l&#39;utente crea tre spazi: *internal*, *public* (con contenuti sia in inglese che in francese) e *common* per gestire le entità appropriate come indicato di seguito:
 
 * /content/entities/internal
 * /content/entities/public/it
@@ -84,7 +84,7 @@ Un utente dispone di tre classificazioni generali di entità. Una è solo per us
 
 Allo spazio viene fornito un endpoint di servizio in modo che la libreria client nativa possa richiedere un elenco dei contenuti di uno spazio. Questa &quot;voce&quot; viene restituita come oggetto JSON.
 
-Consulta **[Spazi ed entità](/help/mobile/spaces-and-entities.md)** per creare e pubblicare spazi.
+Consulta **[Spazi ed entità](/help/mobile/spaces-and-entities.md)** per la creazione e la pubblicazione di spazi.
 
 >[!NOTE]
 >
@@ -94,4 +94,4 @@ Consulta **[Spazi ed entità](/help/mobile/spaces-and-entities.md)** per creare 
 
 Le cartelle consentono agli utenti di organizzare le entità in base alle esigenze e facilitano un controllo ACL più preciso. Gli spazi possono includere cartelle per organizzare ulteriormente il contenuto e le risorse dello spazio. Un utente può creare la propria gerarchia sotto uno spazio.
 
-Per creare e gestire cartelle all’interno di uno spazio, consulta **[Utilizzo delle cartelle in uno spazio](/help/mobile/spaces-and-entities.md)**.
+Per creare e gestire cartelle all&#39;interno di uno spazio, vedere **[Utilizzo delle cartelle in uno spazio](/help/mobile/spaces-and-entities.md)**.

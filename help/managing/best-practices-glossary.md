@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Glossario{#glossary}
 
-Questo glossario elenca (in ordine alfabetico) i dettagli di tutti i documenti del documento finale [Elenco di controllo progetto](/help/managing/best-practices-checklist.md).
+Questo glossario elenca (in ordine alfabetico) i dettagli di tutti i documenti del deliverable dell&#39;[elenco di controllo progetto](/help/managing/best-practices-checklist.md).
 
 ## Accettazione da parte delle parti interessate {#acceptance-from-business-stakeholders}
 
@@ -46,7 +46,7 @@ Assicurati che i livelli richiesti di accesso al sistema siano stati concessi a 
 
 ### Elenco di controllo della sicurezza di Adobe {#adobe-security-checklist}
 
-Il [Elenco di controllo della sicurezza di Adobe](/help/sites-administering/security-checklist.md) è l’elenco di controllo ufficiale fornito per garantire la sicurezza di Adobe Experience Manager (AEM) al momento dell’installazione. Contiene le misure di sicurezza e i passaggi di verifica necessari per garantire l’integrità dell’istanza.
+L&#39;[elenco di controllo di sicurezza di Adobe](/help/sites-administering/security-checklist.md) è l&#39;elenco di controllo ufficiale fornito per garantire la protezione di Adobe Experience Manager (AEM) durante l&#39;installazione. Contiene le misure di sicurezza e i passaggi di verifica necessari per garantire l’integrità dell’istanza.
 
 ### Configurazione del progetto del portale di assistenza Adobe {#adobe-support-portal-project-set-up}
 
@@ -56,19 +56,19 @@ Il portale di supporto Adobe consente ai partner e ai clienti dell’implementaz
 
 ### Formazione per gli amministratori AEM {#aem-administrator-training}
 
-Formazione per il personale amministrativo della soluzione. Consulta la [Servizi di formazione per Adobi](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) per ulteriori informazioni.
+Formazione per il personale amministrativo della soluzione. Per ulteriori informazioni, vedere [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager).
 
 ### Formazione per autori AEM {#aem-author-training}
 
-Formazione per il personale addetto alla produzione (authoring) dei contenuti per la soluzione. Consulta la [Servizi di formazione per Adobi](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) per ulteriori informazioni.
+Formazione per il personale addetto alla produzione (authoring) dei contenuti per la soluzione. Per ulteriori informazioni, vedere [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager).
 
 ### Esame certificazione AEM {#aem-certification-exam}
 
-Assicurati che siano registrati gli utenti tipo appropriati per [esami di certificazione](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Assicurati che gli utenti tipo appropriati siano registrati per sostenere i [esami di certificazione](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinenti.
 
 ### Certificato AEM {#aem-certified}
 
-Assicurati che la persona appropriata abbia trasmesso le [esami di certificazione](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Assicurati che la persona appropriata abbia superato i [esami di certificazione](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinenti.
 
 ### Formazione tecnica AEM {#aem-technical-training}
 
@@ -92,7 +92,7 @@ La roadmap del cliente è composta da milestone di alto livello e obiettivi azie
 
 ### Definizione architettura applicazione {#application-architecture-definition}
 
-Il [architettura dell&#39;applicazione](/help/managing/best-practices.md#development-preparation) dovrebbero definire chiaramente il comportamento delle applicazioni proposte.
+L&#39;architettura dell&#39;[applicazione](/help/managing/best-practices.md#development-preparation) deve definire chiaramente il comportamento delle applicazioni proposte.
 
 Si concentra su:
 
@@ -109,7 +109,8 @@ Assicurati che il tuo team sia composto da personale con la formazione appropria
 
 * almeno uno sviluppatore principale certificato AEM
 * almeno un architetto certificato AEM
-* almeno il 75% degli sviluppatori è certificato AEM; questo consente agli sviluppatori certificati di guidare gli sviluppatori junior e garantisce la condivisione delle conoscenze e la trasparenza
+* almeno il 75% degli sviluppatori è certificato AEM;
+questo consente agli sviluppatori certificati di fornire consigli agli sviluppatori junior e garantisce la condivisione delle conoscenze e la trasparenza
 
 ### Diagramma architettura {#architecture-diagram}
 
@@ -206,7 +207,8 @@ I KPI aziendali definiscono valori misurabili che dimostrano l’efficacia con c
 
 Un documento sui requisiti aziendali (Business Requirements Document, BRD) descrive la soluzione aziendale per un progetto, fornendo una chiara definizione delle esigenze e delle aspettative aziendali del cliente. La direttiva BRD distingue anche tra soluzione aziendale e soluzione tecnica.
 
-Nell&#39;esaminare la soluzione aziendale, il BRD dovrebbe rispondere alla domanda: &quot;Cosa vuole fare l&#39;azienda?&quot;
+Nell&#39;esaminare la soluzione aziendale, la BRD dovrebbe rispondere alla seguente domanda:
+&quot;Cosa vuole fare l&#39;azienda?&quot;
 
 ### Approvazione dell&#39;azienda per eventuali adeguamenti necessari alla soluzione o all&#39;architettura identificati e allineati alle aspettative di ROI e KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -502,7 +504,7 @@ Risultati di uno studio di fattibilità sia per AEM che per la progettazione di 
 
 ### Contratto finalizzato {#finalized-contract}
 
-Prima di procedere con il progetto è necessario stipulare e firmare un contratto. Questo è basato sul [Bozza contratto](#contract-draft).
+Prima di procedere con il progetto è necessario stipulare e firmare un contratto. Si basa sulla [bozza di contratto](#contract-draft).
 
 ### Funzionalità della soluzione accettata dalle parti interessate {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -871,7 +873,7 @@ Questa funzione viene spesso utilizzata nei test di accettazione utente (UAT, Us
 
 Il Proof of Concept (POC) viene misurato in base ai requisiti per garantire che entrambi siano allineati.
 
-### Elenco di controllo post-distribuzione {#post-deployment-checklist}
+### Elenco di controllo per la distribuzione di Post {#post-deployment-checklist}
 
 Elenco di controllo per definire la serie di controlli e attività da eseguire dopo ogni distribuzione.
 
@@ -901,7 +903,7 @@ Definisci il piano di comunicazione per le parti interessate e il team del proge
 
 ### Sforzi del progetto - Stime finali {#project-efforts-final-estimates}
 
-Il [stime iniziali](#project-efforts-initial-estimates) sono stati ad alto livello e realizzati conformemente ai requisiti di alto livello per l&#39;attuazione.
+Le [stime iniziali](#project-efforts-initial-estimates) erano di alto livello ed erano effettuate in base ai requisiti di alto livello per l&#39;implementazione.
 
 Questi vengono ora rivisti, perfezionati e ampliati per fornire le stime finali. Le stime devono essere fornite da ciascun responsabile del progetto, compresi la gestione del progetto, la consulenza, l’architettura, il test e lo sviluppo.
 
@@ -966,7 +968,7 @@ Viene utilizzato con il Runbook per eseguire passaggi e controlli di pre e post 
 
 >[!NOTE]
 >
->Ad esempio, consulta [Note sulla versione di AEM](/help/release-notes/release-notes.md).
+>Ad esempio, consulta le [Note sulla versione dell&#39;AEM](/help/release-notes/release-notes.md).
 
 ### Versione in esecuzione nell’ambiente di produzione {#release-running-on-production-environment}
 
@@ -1285,7 +1287,7 @@ Il concetto di test è il profilo di alto livello dei test per il progetto, tra 
 
 ### Piani di prova {#testing-plans}
 
-Questi piani delineano in modo più dettagliato l&#39;esecuzione dei test per ciascuna fase di sviluppo e si basano sulla [Strategia di test](#testing-strategy).
+Questi piani descrivono in modo più dettagliato l&#39;esecuzione dei test per ogni fase di sviluppo e si basano sulla [Strategia di test](#testing-strategy).
 
 ### Ambito test {#testing-scope}
 

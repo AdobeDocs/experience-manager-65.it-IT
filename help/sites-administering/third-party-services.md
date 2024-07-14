@@ -32,13 +32,13 @@ Con l’AEM, puoi integrarlo con i seguenti prodotti non Adobi preconfigurati:
 * YouTube - Condivisione video
 <!-- * Silverpop Engage - marketing automation, email, mobile, and social NO LONGER EXISTS; ITS REPLACEMENT IS UNKNOWN -->
 
-Inoltre, è possibile integrare l’AEM con il [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+Inoltre, puoi integrare AEM con [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Integrazione con Salesforce {#integrating-with-salesforce}
 
 Salesforce.com è l&#39;azienda per l&#39;elaborazione cloud di livello Enterprise leader nel passaggio a Social Enterprise.
 
-Per informazioni sull’integrazione del sito AEM e di Salesforce, consulta [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
+Per informazioni sull&#39;integrazione del sito AEM e di Salesforce, vedere [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
 
 <!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
@@ -55,14 +55,14 @@ For information about integrating your AEM site and ExactTarget, see [Integratin
 
 Le soluzioni di e-mail marketing ExactTarget consentono alle organizzazioni di tutte le dimensioni di progettare e distribuire campagne e-mail altamente mirate, mission-critical e completamente integrate.
 
-Per informazioni sull’integrazione del sito AEM e di ExactTarget, consulta [Configurazione di ExactTarget](/help/sites-administering/exacttarget.md).
+Per informazioni sull&#39;integrazione del sito AEM e ExactTarget, vedere [Configurazione di ExactTarget](/help/sites-administering/exacttarget.md).
 
 ## Integrazione con Facebook e Twitter {#integrating-with-facebook-and-twitter}
 
 Facebook e Twitter sono servizi popolari di social networking. L’integrazione dell’AEM con Facebook e Twitter consente alle organizzazioni di fornire un’opzione di accesso Facebook o di Twitter per le proprietà digitali possedute, e quindi di personalizzare l’esperienza utente in base alle informazioni del profilo. Gli addetti al marketing possono anche combinare le informazioni del profilo con i dati provenienti da fonti aggiuntive, ad esempio un sistema di gestione delle relazioni con i clienti o un profilo del sito web, per creare una visualizzazione unificata del cliente.
 
-Consulta [Accesso social network](/help/communities/social-login.md) per ulteriori informazioni.
+Per ulteriori informazioni, consulta [Accesso social](/help/communities/social-login.md).
 
 ## Integrazione con altri provider {#integrating-with-other-providers}
 
-AEM consente di connettersi ad altri provider esterni con un [Snippet generico di analisi.](/help/sites-administering/external-providers.md)
+AEM consente di connettersi ad altri provider esterni con uno snippet di analisi [generico.](/help/sites-administering/external-providers.md)

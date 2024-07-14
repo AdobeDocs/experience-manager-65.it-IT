@@ -18,7 +18,7 @@ ht-degree: 9%
 
 # Descrizione dei componenti riutilizzabili {#description-of-reusable-components}
 
-L’area di lavoro di AEM Forms è composta da [riutilizzabile](/help/forms/using/integrating-html-ws-components-web.md) componenti organizzati in uno specifico [struttura di cartelle](/help/forms/using/folder-structure.md) in CRX™. Ogni componente dispone di un file di modello, di visualizzazione e di modello nella posizione specificata nella struttura della cartella, di dipendenze JavaScript™ da altri file di componenti, di eventi in ascolto dal componente e di oggetti JavaScript che attivano questi eventi nell’area di lavoro di AEM Forms. L’elenco completo dei componenti riutilizzabili con i nomi dei file e le dipendenze dei componenti è disponibile qui.
+L&#39;area di lavoro di AEM Forms è composta da [componenti riutilizzabili](/help/forms/using/integrating-html-ws-components-web.md) organizzati in una [struttura di cartelle](/help/forms/using/folder-structure.md) specifica in CRX™. Ogni componente dispone di un file modello, di una vista e di un file modello nella posizione specificata nella struttura di cartelle, di dipendenze JavaScript™ da altri file di componenti, di eventi in ascolto dal componente e di oggetti JavaScript che attivano questi eventi nell’area di lavoro di AEM Forms. L’elenco completo dei componenti riutilizzabili con i nomi dei file e le dipendenze dei componenti è disponibile qui.
 
 ## ElencoAttività {#tasklist}
 
@@ -110,7 +110,7 @@ L’area di lavoro di AEM Forms è composta da [riutilizzabile](/help/forms/usin
 
 >[!NOTE]
 >
->Workspace richiama la funzione fetchTasks del modello TaskList per creare modelli di attività per questo componente.
+>Workspace chiama la funzione fetchTasks del modello TaskList per creare modelli di attività per questo componente.
 
 ## FilterList {#filterlist}
 
@@ -923,7 +923,7 @@ L’area di lavoro di AEM Forms è composta da [riutilizzabile](/help/forms/usin
    <td>
     <ul>
      <li>userImageUrlFetched - modello userinfo</li>
-     <li>sessionRenewed - userinfo model <br /> </li>
+     <li>sessionRenewed - modello userinfo <br /> </li>
      <li>sessionExpired: modello userinfo </li>
     </ul> </td>
   </tr>

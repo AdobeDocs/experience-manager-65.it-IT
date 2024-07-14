@@ -16,10 +16,10 @@ ht-degree: 2%
 
 ## Problema   {#issue}
 
-Dopo aver installato [Service Pack di AEM 6.5.15.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), l’errore si verifica come:
+Dopo aver installato il [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), l&#39;errore si verifica come segue:
 * ERRORE [FelixDispatchQueue] org.apache.sling.scripting.console FrameworkEvent ERROR (org.osgi.framework.BundleException: impossibile risolvere org.apache.sling.scripting.console
 
-Dopo aver installato il service pack AEM 6.5.15.0, CRX/bundle e la pagina iniziale mostrano gli errori di servizio non disponibili.
+Dopo aver installato il service pack AEM 6.5.15.0, il CRX/bundle e la pagina iniziale mostrano gli errori di servizio non disponibile.
 
 ## Applicabile a {#applies-to}
 
@@ -32,23 +32,23 @@ Questa soluzione si applica a:
 >
 >I passaggi per la risoluzione dei problemi sono applicabili a tutti i server applicazioni ad eccezione di JBoss EAP 7.4.
 
-Dopo l’installazione [Service Pack di AEM 6.5.15.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), se CRX/bundle e la pagina iniziale mostrano errori di servizio non disponibile, effettua le seguenti operazioni:
+Dopo aver installato [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), se CRX/bundle e la pagina iniziale mostrano errori di servizio non disponibili, effettuare le seguenti operazioni:
 
 1. Arrestare il server applicazioni.
 1. Accedi a `[aem-forms root]\crx-repository\launchpad\felix\bundle52`.
-1. Individua il `bundle.info` file.
-1. Apri `bundle.info` nell’editor di testo ant e cerca il nome del bundle come `org.apache.felix.http.bridge`.
+1. Individuare il file `bundle.info`.
+1. Apri il file `bundle.info` nell&#39;editor di testo ant e cerca il nome del bundle come `org.apache.felix.http.bridge`.
 
    >[!NOTE]
    >
-   >Se il valore `bundle.info` in `bundle52` non contiene `org.apache.felix.http.bridge` il numero del bundle tra parentesi quadre accanto al simbolo `org.apache.felix.http.bridge`. Quindi vai a [directory principale di aem-forms]\crx-repository\launchpad\felix\bundle[x] ed eseguire i passaggi successivi in questa posizione.
+   >Se `bundle.info` in `bundle52` non contiene il bundle `org.apache.felix.http.bridge`, controlla il numero del bundle tra parentesi quadre accanto a `org.apache.felix.http.bridge`. Passa quindi alla [directory principale di aem-forms]\crx-repository\launchpad\felix\bundle[x] ed esegui i passaggi successivi in questa posizione.
 
-1. Passa a URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
-1. Cerca `bundle.jar` e rinominare `bundle.jar` a `bundle.jar.bak`.
-1. Copia il `Bundle for AEM 6.5 Forms on JEE Service Pack 15` in questa posizione da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
+1. Passare all&#39;URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
+1. Cercare `bundle.jar` e rinominare `bundle.jar` in `bundle.jar.bak`.
+1. Copia `Bundle for AEM 6.5 Forms on JEE Service Pack 15` in questa posizione dalla [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Avvia il server applicazioni, attendi che i registri si stabilizzino e verifichi lo stato del bundle.
-1. Una volta che tutti i bundle sono in stato attivo, installa [Frammento per AEM 6.5 Forms su JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) dal `system/console/bundles` e attendere che il server applicazioni si stabilizzi.
+1. Una volta che tutti i bundle sono nello stato attivo, installa il [Frammento per AEM 6.5 Forms su JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) da `system/console/bundles` e attendi la stabilizzazione del server applicazioni.
 1. Arrestare il server applicazioni.
-1. Accedi a `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` ed elimina `bundle.jar`.
-1. Rinomina il `bundle.jar.bak` al `bundle.jar`.
+1. Passare a `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` ed eliminare `bundle.jar`.
+1. Rinomina `bundle.jar.bak` in `bundle.jar`.
 1. Avviare il server applicazioni.

@@ -1,6 +1,6 @@
 ---
 title: Funzioni dell’area di lavoro Flex non disponibili nell’area di lavoro AEM Forms
-description: AEM Forms Workspace innova oltre Flex Workspace. Scopri le differenze nelle funzioni e nelle funzionalità.
+description: AEM Forms Workspace innova oltre il Workspace basato su Flex. Scopri le differenze nelle funzioni e nelle funzionalità.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

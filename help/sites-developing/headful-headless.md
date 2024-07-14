@@ -46,7 +46,7 @@ La sezione successiva esplora più dettagliatamente questi livelli di integrazio
 
 >[!NOTE]
 >
->Naturalmente si potrebbe anche implementare nuovamente la SPA del negozio web come una SPA di AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM.](/help/sites-developing/spa-walkthrough.md) Se hai già un AEM e desideri creare un negozio online o un altro SPA, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
+>Naturalmente si potrebbe anche implementare nuovamente la SPA del negozio web come una SPA di AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM.](/help/sites-developing/spa-walkthrough.md) Se si dispone già di AEM e si desidera creare un Web shop o un altro SPA, questo è il metodo consigliato, ma non è incluso nell&#39;ambito del documento.
 
 ## Livelli di integrazione SPA {#integration-levels}
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Creazione di moduli adattivi accessibili{#creating-accessible-adaptive-forms}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Introduzione {#introduction}
 
@@ -33,7 +33,7 @@ Durante la creazione di un modulo adattivo, l’autore deve considerare i seguen
 
 ## Prerequisito
 
-È necessario uno strumento di accessibilità, ad esempio **Ispettore nome e descrizione (ANDI) accessibile** e un **Tema del modulo adattivo sviluppato per risolvere i problemi relativi all’accessibilità** per creare un modulo adattivo accessibile.
+Per creare un modulo adattivo accessibile, è necessario disporre di uno strumento di accessibilità, ad esempio **Controllo nome e descrizione accessibile**, e di un **tema modulo adattivo sviluppato per risolvere i problemi relativi all&#39;accessibilità**.
 
 ### Scarica e installa lo strumento di test di accessibilità
 
@@ -44,15 +44,15 @@ Lo strumento ANDI (Accessible Name and Description Inspector) consente di identi
 * Rileva problemi di accessibilità della tastiera e di contrasto dei colori
 * Identifica chiaramente i contenuti degli assistenti vocali in conformità agli standard
 
-ANDI funziona con tutti i principali browser Internet. Consulta [Documentazione di ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) per istruzioni dettagliate su come configurare e utilizzare lo strumento.
+ANDI funziona con tutti i principali browser Internet. Consulta la documentazione di [ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) per istruzioni dettagliate su come configurare e utilizzare lo strumento.
 
 ### Scarica e installa il tema Ultramarine-Accessible
 
 Il tema Ultramarine-Accessible è un tema di riferimento. Illustra come correggere il contrasto dei colori e altri problemi correlati all’accessibilità in un modulo adattivo. L’Adobe consiglia di creare un tema personalizzato per l’ambiente di produzione in base agli stili approvati dall’organizzazione. Per caricare il tema nell’istanza AEM, effettua le seguenti operazioni:
 
 1. Scarica il pacchetto del tema.
-1. Accedi a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigazione]** ![Navigazione](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** sull’istanza AEM.
-1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**. Seleziona e carica il file x Ultramarine-Accessible-Theme.zip. Carica il tema nell’istanza AEM.
+1. Passa a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigazione]** ![Navigazione](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** nell&#39;istanza AEM.
+1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**. Seleziona e carica il file x Ultramarine-Accessible-Theme.zip. Carica il tema nell’istanza AEM.
 
 ## Rendere accessibile un modulo adattivo
 
@@ -63,8 +63,8 @@ Per rendere accessibile un modulo adattivo, è necessario concentrarsi su quattr
 Applica al modulo adattivo esistente il tema Accessibile in modalità ultramarina. Per applicare il tema:
 
 1. Apri il modulo adattivo per la modifica.
-1. Seleziona un componente e fai clic sull’icona principale. Nel menu di scelta rapida, selezionare **[!UICONTROL Contenitore modulo adattivo]** quindi seleziona l’icona Configura.
-1. Seleziona il tema Ultramarine-Accessible nel browser delle proprietà e seleziona **[!UICONTROL Salva]** icona.
+1. Seleziona un componente e fai clic sull’icona principale. Nel menu di scelta rapida, seleziona **[!UICONTROL Contenitore modulo adattivo]**, quindi l&#39;icona Configura.
+1. Seleziona il tema Ultramarine-Accessible nel browser delle proprietà e fai clic sull&#39;icona **[!UICONTROL Salva]**.
 1. Aggiorna la finestra del browser. Il tema viene applicato al modulo adattivo.
 
 Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencate di seguito. Le correzioni si aggiungono alle correzioni di accessibilità trattate nel tema accessibile:
@@ -77,7 +77,7 @@ Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencat
 
    La maggior parte degli strumenti di accessibilità informa gli utenti sulla gerarchia dei contenuti per aiutarli a comprendere la struttura della pagina web. Per fornire una struttura gerarchica a questi testi, imposta diversi livelli di intestazione per il nome dell’organizzazione e il testo del nome del modulo nel modulo adattivo. Inoltre, utilizza un componente Testo prima di ogni pannello e sezione con un livello di intestazione appropriato per creare una gerarchia.
 
-   ![Come applicare uno stile di intestazione](assets/apply-style.gif)
+   ![Applicare uno stile di intestazione](assets/apply-style.gif)
 
 1. Modifica il colore di sfondo del piè di pagina per utilizzare un contrasto appropriato in conformità agli standard di accessibilità per migliorare la visibilità e la leggibilità del testo. È possibile utilizzare ANDI per individuare problemi di contrasto dei colori nel modulo. Inoltre, non utilizzare caratteri molto piccoli. I caratteri piccoli sono difficili da leggere.
 
@@ -105,22 +105,22 @@ L’etichetta percepita dagli assistenti vocali non deve necessariamente essere 
 
 Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 
-1. Seleziona un componente e seleziona ![cmppr](assets/cmppr.png).
-1. Clic **[!UICONTROL Accessibilità]** nella barra laterale per scegliere l’opzione di accessibilità desiderata.
+1. Selezionare un componente e selezionare ![cmppr](assets/cmppr.png).
+1. Fare clic su **[!UICONTROL Accessibilità]** nella barra laterale per scegliere l&#39;opzione di accessibilità desiderata.
 
 ### Opzioni di accessibilità nei componenti del modulo {#accessibility-options-in-form-components}
 
 ![Opzioni di accessibilità nei componenti del modulo](assets/accessibility-options.png)
 
-**Testo personalizzato** Gli autori dei moduli forniscono il contenuto nel campo di testo personalizzato dell’opzione di accessibilità. La tecnologia per l’accessibilità, come gli assistenti vocali, utilizza questo testo personalizzato. L’utilizzo dell’impostazione Titolo è l’opzione migliore nella maggior parte degli scenari. Valuta la possibilità di creare un testo di Reader con schermo personalizzato solo quando non è possibile utilizzare il titolo o una breve descrizione.
+**Testo personalizzato** Gli autori dei moduli forniscono il contenuto nel campo di testo personalizzato dell&#39;opzione di accesso facilitato. La tecnologia per l’accessibilità, come gli assistenti vocali, utilizza questo testo personalizzato. L’utilizzo dell’impostazione Titolo è l’opzione migliore nella maggior parte degli scenari. Valuta la possibilità di creare un testo di Reader con schermo personalizzato solo quando non è possibile utilizzare il titolo o una breve descrizione.
 
-**Breve descrizione** Per la maggior parte dei componenti, la breve descrizione viene visualizzata in fase di runtime quando l’utente passa il puntatore sul componente. È possibile impostare questa opzione nel campo breve descrizione in opzione contenuto della Guida.
+**Breve descrizione** Per la maggior parte dei componenti, la breve descrizione viene visualizzata in fase di esecuzione quando l&#39;utente passa il puntatore sul componente. È possibile impostare questa opzione nel campo breve descrizione in opzione contenuto della Guida.
 
-**Titolo** Utilizza questa opzione per consentire ad AEM Forms di utilizzare l’etichetta visiva associata al campo del modulo come testo per la lettura dello schermo.
+**Titolo** Utilizza questa opzione per consentire ad AEM Forms di utilizzare l&#39;etichetta visiva associata al campo modulo come testo per la lettura dello schermo.
 
 **Nome** È possibile specificare un valore nel campo Nome della scheda Associazione. Il nome non può contenere spazi.
 
-**Nessuno** Selezionando Nessuno, l’oggetto modulo non avrà un nome nel modulo pubblicato. Nessuna è un&#39;impostazione consigliata per i controlli modulo.
+**Nessuno** Se si seleziona Nessuno, l&#39;oggetto modulo non avrà un nome nel modulo pubblicato. Nessuna è un&#39;impostazione consigliata per i controlli modulo.
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Le immagini possono aiutare alcuni utenti a comprendere meglio la situazione. Tu
 
 Verificare che il testo descriva l&#39;oggetto e il relativo scopo nel modulo. Un assistente vocale legge questo testo alternativo quando incontra un’immagine. Per un&#39;immagine deve essere sempre specificato un testo alternativo.
 
-Seleziona un componente immagine e seleziona ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, specifica il testo alternativo per un’immagine.
+Selezionare un componente immagine e selezionare ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, specifica il testo alternativo per un’immagine.
 
 ![Testo alternativo per un&#39;immagine](assets/image-properties.png)
 
@@ -145,7 +145,7 @@ Gli utenti con problemi di vista si affidano a un contrasto elevato tra testo e 
 
 Si consiglia di utilizzare i colori predefiniti per il carattere e lo sfondo, ovvero il contenuto in nero su sfondo bianco. Se modificate i colori predefiniti, scegliete un colore di primo piano scuro su uno sfondo chiaro o viceversa.
 
-Consulta [Creazione di temi personalizzati per i moduli adattivi](/help/forms/using/creating-custom-adaptive-form-themes.md), per ulteriori informazioni sulla modifica del contrasto e del tema dei colori per i moduli adattivi.
+Consulta [Creazione di temi personalizzati per i moduli adattivi](/help/forms/using/creating-custom-adaptive-form-themes.md), per ulteriori informazioni sulla modifica del contrasto dei colori e del tema per i moduli adattivi.
 
 ### 5. Assicurarsi che i controlli del modulo siano accessibili da tastiera {#ensure-that-form-controls-are-keyboard-accessible}
 
@@ -162,7 +162,7 @@ In AEM Forms sono disponibili le seguenti scelte rapide da tastiera.
 | Reimpostare i dati compilati in un modulo | ALT+R |
 | Inviare un modulo | ALT+S |
 
-Sono inoltre disponibili vari tasti di scelta rapida per **[!UICONTROL Selettore data]** in Adaptive Forms. Per attivare i tasti di scelta rapida, selezionare **[!UICONTROL Selettore data]** componente e seleziona ![Configura](assets/configure-icon.svg) per aprire le proprietà. In **[!UICONTROL Pattern]** , selezionare un motivo di visualizzazione utilizzando la **[!UICONTROL Tipo]** e **[!UICONTROL Pattern]** elenchi a discesa. Salva le proprietà per abilitare l&#39;utilizzo dei tasti di scelta rapida per **[!UICONTROL Selettore data]** componente.
+Sono inoltre disponibili vari tasti di scelta rapida per il componente **[!UICONTROL Selezione data]** in Adaptive Forms. Per abilitare i tasti di scelta rapida, selezionare il componente **[!UICONTROL Selezione data]** e selezionare ![Configura](assets/configure-icon.svg) per aprire le proprietà. Nella sezione **[!UICONTROL Pattern]**, seleziona un pattern di visualizzazione utilizzando gli elenchi a discesa **[!UICONTROL Tipo]** e **[!UICONTROL Pattern]**. Salva le proprietà per abilitare l&#39;utilizzo dei tasti di scelta rapida per il componente **[!UICONTROL Selezione data]**.
 
 Per il componente Selezione data in Adaptive Forms sono disponibili i seguenti tasti di scelta rapida da tastiera:
 
@@ -177,13 +177,13 @@ Per il componente Selezione data in Adaptive Forms sono disponibili i seguenti t
 | Sposta il cursore all’indietro nel calendario disponibile nel componente Selettore data | Freccia sinistra |
 | Sposta il cursore in avanti nel calendario disponibile nel componente Selezione data | Freccia destra |
 | Eseguire l&#39;azione per la didascalia disponibile tra le frecce di navigazione destra e sinistra nel calendario | Maiusc + Freccia Su |
-| Esegui l&#39;azione per l&#39;icona freccia di navigazione a destra ![freccia destra](assets/right-navigation-icon.svg) disponibile nel calendario | Maiusc + Freccia sinistra |
-| Esegui l&#39;azione per l&#39;icona freccia di navigazione a sinistra ![freccia sinistra](assets/left-navigation-icon.svg) disponibile nel calendario | Maiusc + Freccia destra |
+| Esegui l&#39;azione per l&#39;icona freccia di navigazione destra ![freccia destra](assets/right-navigation-icon.svg) disponibile nel calendario | Maiusc + Freccia sinistra |
+| Esegui l&#39;azione per l&#39;icona freccia di navigazione a sinistra ![freccia a sinistra](assets/left-navigation-icon.svg) disponibile nel calendario | Maiusc + Freccia destra |
 
 ## Utilizzare lo strumento di accessibilità per individuare i problemi di accessibilità rimanenti
 
 La funzione ANDI (Accessible Name and Description Inspector) consente di identificare e risolvere i problemi relativi alla conformità per l’accessibilità in un modulo adattivo. Per utilizzare lo strumento ANDI per individuare i problemi di accessibilità in un modulo adattivo:
 
 1. Apri il modulo adattivo in modalità anteprima.
-1. Fai clic sull’icona dello strumento ANDI con segnalibro. Lo strumento ANDI analizza il modulo adattivo e visualizza i problemi di accessibilità. Per informazioni dettagliate su come utilizzare lo strumento, consulta [Documentazione di ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
+1. Fai clic sull’icona dello strumento ANDI con segnalibro. Lo strumento ANDI analizza il modulo adattivo e visualizza i problemi di accessibilità. Per informazioni dettagliate su come utilizzare lo strumento, consulta la documentazione di [ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
 1. Rivedi e risolvi i problemi segnalati da ANDI.

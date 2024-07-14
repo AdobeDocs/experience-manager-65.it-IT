@@ -25,11 +25,11 @@ Questa pagina fornisce le informazioni fondamentali per l&#39;utilizzo della fun
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/filelibrary/components/hbs/filelibrary</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Questa pagina fornisce le informazioni fondamentali per l&#39;utilizzo della fun
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consulta <a href="file-library.md">Funzione Libreria file</a></td>
+   <td>Vedi la <a href="file-library.md">funzione Libreria file</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,20 +63,20 @@ Questa pagina fornisce le informazioni fondamentali per l&#39;utilizzo della fun
 
 ### Funzione Libreria file {#file-library-function}
 
-Una struttura del sito della community che include [Funzione Libreria file](functions.md#file-library-function), include un `file library` componente.
+Una struttura del sito della community che include la funzione [Libreria file](functions.md#file-library-function), include un componente `file library` configurato.
 
 ### Accesso ai commenti pubblicati per le librerie di file (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
 Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Vedere [Moderazione del contenuto generato dall&#39;utente](moderate-ugc.md).
 
-A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell&#39;UGC nell&#39;archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio.
-* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi ed esempi dell&#39;utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida per la codifica.
-* [Refactoring SocialUtils](socialutils.md) - mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.
+* [Refactoring di SocialUtils](socialutils.md) - mapping dei metodi di utilità obsoleti ai metodi di utilità SRP correnti.

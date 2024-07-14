@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Importare e gestire le applicazioni{#import-and-manage-applications}
 
-Nelle forme AEM, un *applicazione* è un contenitore per l’archiviazione delle risorse necessarie per l’implementazione di una soluzione AEM forms. Esempi di risorse sono le progettazioni di moduli, i frammenti di moduli, le immagini, i processi, i file DDX, le guide dei moduli, le pagine di HTML e i file di SWF. Durante la fase di sviluppo di un progetto, gli utenti di Workbench possono distribuire le applicazioni direttamente dalla vista Applicazioni di Workbench. Una volta distribuite, queste applicazioni vengono visualizzate nella console di amministrazione, nella scheda Applicazioni della pagina Gestione applicazioni.
+Nei moduli AEM, un&#39;applicazione *application* è un contenitore per l&#39;archiviazione delle risorse necessarie per l&#39;implementazione di una soluzione di moduli AEM. Esempi di risorse sono le progettazioni di moduli, i frammenti di moduli, le immagini, i processi, i file DDX, le guide dei moduli, le pagine di HTML e i file di SWF. Durante la fase di sviluppo di un progetto, gli utenti di Workbench possono distribuire le applicazioni direttamente dalla vista Applicazioni di Workbench. Una volta distribuite, queste applicazioni vengono visualizzate nella console di amministrazione, nella scheda Applicazioni della pagina Gestione applicazioni.
 
-Quando un’applicazione è completa e pronta per essere implementata su un server di produzione, l’utente di Workbench inserisce l’applicazione in un pacchetto *File di applicazione di moduli AEM* (.lca). L&#39;amministratore utilizza quindi la console di amministrazione per importare e distribuire il file dell&#39;applicazione utilizzando la scheda Applicazioni della pagina Gestione applicazioni.
+Quando un&#39;applicazione è completa e pronta per essere distribuita su un server di produzione, l&#39;utente Workbench inserisce l&#39;applicazione in un *file dell&#39;applicazione moduli AEM* (.lca). L&#39;amministratore utilizza quindi la console di amministrazione per importare e distribuire il file dell&#39;applicazione utilizzando la scheda Applicazioni della pagina Gestione applicazioni.
 
 È inoltre possibile utilizzare la scheda Archivi nella pagina Gestione applicazioni per importare LCA creati con Workbench 8.x.
 
@@ -40,10 +40,10 @@ Utilizzare la scheda Applicazioni per importare e gestire le applicazioni create
 1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione applicazioni.
 1. Fai clic su Importa.
 1. Fare clic su Sfoglia, selezionare il file .lca da importare e fare clic su Anteprima. Nella pagina Anteprima applicazione vengono visualizzate informazioni sull&#39;applicazione.
-1. (Facoltativo) Per visualizzare un elenco delle risorse contenute nell’applicazione, fai clic su Visualizza risorse.
-1. (Facoltativo) Per distribuire le risorse in fase di esecuzione, seleziona Distribuisci risorse in fase di esecuzione al termine dell’importazione. Se non selezioni questa opzione, puoi distribuire le risorse in un secondo momento.
+1. (Facoltativo) Per visualizzare un elenco delle risorse contenute nell’applicazione, fai clic su Visualizza Assets.
+1. (Facoltativo) Per distribuire le risorse in fase di esecuzione, seleziona Distribuisci Assets in fase di esecuzione al termine dell’importazione. Se non selezioni questa opzione, puoi distribuire le risorse in un secondo momento.
 1. Fai clic su Importa. L&#39;applicazione viene visualizzata nella scheda Applicazioni.
-1. Accedi all’archivio CRX con le credenziali di amministratore.
+1. Accedi al repository di CRX con le credenziali di amministratore.
 1. Passa a content/dam/lcapplications
 
    >[!NOTE]
@@ -54,7 +54,7 @@ Utilizzare la scheda Applicazioni per importare e gestire le applicazioni create
 
    Nella scheda Proprietà a destra vengono visualizzate le proprietà del nodo CRX selezionato.
 
-   Il **syncState** indica lo stato di sincronizzazione dei dati tra il server AEM Forms e l’archivio CRX. Non appena il processo di importazione inizia, questo stato viene impostato su 0 (zero). Questo stato indica che i dati non sono attualmente sincronizzati. Quando i dati vengono sincronizzati, lo stato è impostato su 1.
+   La proprietà **syncState** indica lo stato di sincronizzazione dei dati tra il server AEM Forms e l&#39;archivio CRX. Non appena il processo di importazione inizia, questo stato viene impostato su 0 (zero). Questo stato indica che i dati non sono attualmente sincronizzati. Quando i dati vengono sincronizzati, lo stato è impostato su 1.
 
 ## Distribuire un&#39;applicazione {#deploy-an-application}
 
@@ -109,7 +109,7 @@ Se l&#39;amministratore dell&#39;applicazione ha esportato la configurazione di 
 
 La distribuzione con script elimina la necessità di riconfigurare manualmente le impostazioni nell’ambiente di produzione prima di avviare le applicazioni distribuite.
 
-1. Dal prompt dei comandi passare a *[directory principale di aem-forms]*/sdk/misc/Foundation/ArchiveManagement
+1. Dal prompt dei comandi passare a *[radice aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
 1. Per istruzioni più dettagliate, consultate il file Leggimi.txt.
 1. Modificare manualmente i file scriptedDeploy.bat e sample-files/sample.xml come descritto nel file readme.txt.
 1. Eseguire il file scriptedDeploy.bat. Questa azione distribuisce il file di archivio dei moduli AEM con le impostazioni di esclusione.

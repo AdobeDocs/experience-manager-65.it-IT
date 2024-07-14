@@ -20,7 +20,7 @@ ht-degree: 39%
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette da allegare a una pagina, una risorsa o altro contenuto, per consentire la ricerca di contenuti specifici o correlati.
 
-* Consulta [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
+* Per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati, vedere [Amministrazione dei tag](/help/sites-administering/tags.md).
 * Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, consulta [Assegnazione tag per sviluppatori](/help/sites-developing/tags.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
@@ -42,7 +42,7 @@ Quando progetti la struttura dei contenuti di un sito e lo schema di metadati pe
 
 Nell’ambiente di authoring gli autori possono applicare i tag accedendo alle proprietà della pagina e immettendo uno o più tag nel campo **Tag/Parole chiave**.
 
-Da applicare [tag predefiniti](/help/sites-administering/tags.md), nella **Proprietà pagina** finestra utilizza `Tags/Keywords` a discesa del campo per selezionare dall’elenco di tag consentiti per la pagina. Tthe **Tag standard** è lo spazio dei nomi predefinito, ovvero non `namespace-string:` anteposto alla tassonomia.
+Per applicare [tag predefiniti](/help/sites-administering/tags.md), nella finestra **Proprietà pagina** utilizza il menu a discesa del campo `Tags/Keywords` per selezionare uno dei tag consentiti per la pagina. La scheda **Tag standard** è lo spazio dei nomi predefinito, il che significa che non esiste alcun `namespace-string:` come prefisso per la tassonomia.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -68,7 +68,7 @@ Come per le pagine, è possibile eseguire le operazioni seguenti su tag e spazi 
 
 Le nuvole di tag mostrano un insieme di tag, sia per la pagina corrente, l’intero sito web o per quelli a cui si accede più comunemente. Le nuvole di tag sono un mezzo per evidenziare i problemi che sono (sono stati) di interesse per l’utente. Le dimensioni del testo utilizzato per visualizzare il tag variano in relazione al suo utilizzo.
 
-Il [Tag cloud](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) Componente (gruppo di componenti Generale) utilizzato per aggiungere un tag cloud a una pagina.
+Il componente [Tag Cloud](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (gruppo di componenti Generale) viene utilizzato per aggiungere un tag cloud a una pagina.
 
 ## Ricerca nei tag {#searching-on-tags}
 
@@ -76,6 +76,6 @@ Puoi cercare i tag sia nell’ambiente di authoring che in quello di pubblicazio
 
 ### Utilizzo del componente Ricerca {#using-search-component}
 
-Aggiunta di un [Componente di ricerca](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) In una pagina offre una funzionalità di ricerca che include tag e può essere utilizzata sia nell’ambiente di authoring che in quello di pubblicazione.
+L&#39;aggiunta di un [componente Ricerca](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) a una pagina fornisce una funzionalità di ricerca che include i tag e può essere utilizzata sia nell&#39;ambiente di authoring che in quello di pubblicazione.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)

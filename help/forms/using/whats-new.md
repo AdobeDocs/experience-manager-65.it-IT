@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## Cosa è incluso in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
 
-L&#39;Experience Manager 6.5.19.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti, correzioni di bug e miglioramenti a livello di prestazioni, stabilità e sicurezza, rilasciati dopo la disponibilità iniziale della versione 6.5 di aprile 2019. [Installa il service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) sull&#39;Experience Manager 6.5.
+L&#39;Experience Manager 6.5.19.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti, correzioni di bug e miglioramenti a livello di prestazioni, stabilità e sicurezza, rilasciati dopo la disponibilità iniziale della versione 6.5 di aprile 2019. [Installa il service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) nell&#39;Experience Manager 6.5.
 
 ### Nuove funzioni
 
@@ -33,25 +33,25 @@ L&#39;Experience Manager 6.5.19.0 include nuove funzionalità, miglioramenti chi
 
 Per migliorare la scalabilità dei moduli, vengono aggiunte schede verticali, Termini e Condizioni e Casella di controllo.
 
-* **[Componente casella di controllo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: il Forms adattivo basato sui Componenti core ora può includere un componente casella di controllo. Consente agli utenti di effettuare scelte binarie, selezionando o deselezionando una particolare opzione. In genere viene visualizzata come una piccola casella su cui è possibile fare clic o toccare per alternare due stati: selezionato e deselezionato. La casella di controllo è un elemento modulo comune utilizzato per presentare una scelta sì/no o vero/falso.
+* **[Componente casella di controllo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Forms adattivo basato su componenti core ora può includere un componente casella di controllo. Consente agli utenti di effettuare scelte binarie, selezionando o deselezionando una particolare opzione. In genere viene visualizzata come una piccola casella su cui è possibile fare clic o toccare per alternare due stati: selezionato e deselezionato. La casella di controllo è un elemento modulo comune utilizzato per presentare una scelta sì/no o vero/falso.
 
-* **[Componente termini e condizioni](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adattivo basato su componenti core ora può includere un componente Termini e condizioni. Consente agli autori dei moduli di introdurre una sezione specifica all’interno del modulo in cui vengono presentati agli utenti i termini, le condizioni o gli accordi legali associati all’utilizzo di un servizio, un prodotto o una piattaforma. Questo componente è progettato per informare gli utenti sulle regole, le normative e gli obblighi che si impegnano a rispettare inviando il modulo.
+* **[Componente termini e condizioni](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adattivo basato su componenti core può ora includere un componente termini e condizioni. Consente agli autori dei moduli di introdurre una sezione specifica all’interno del modulo in cui vengono presentati agli utenti i termini, le condizioni o gli accordi legali associati all’utilizzo di un servizio, un prodotto o una piattaforma. Questo componente è progettato per informare gli utenti sulle regole, le normative e gli obblighi che si impegnano a rispettare inviando il modulo.
 
   ![Schede verticali, termini e condizioni e componenti casella di controllo](/help/forms/using/assets/forms-components.png)
 
-* **[Componente Schede verticali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adattivo basato su Componenti core ora può organizzare il contenuto del modulo in un elenco verticale di schede, fornendo un layout strutturato e navigabile. L’utilizzo di schede verticali in un modulo può migliorare l’esperienza utente complessiva semplificando la navigazione e migliorando l’organizzazione del contenuto del modulo, soprattutto nelle situazioni in cui un modulo contiene più sezioni o informazioni complesse.
+* **[Componente schede verticali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adattivo basato su componenti core ora può organizzare il contenuto del modulo in un elenco verticale di schede, fornendo un layout strutturato e navigabile. L’utilizzo di schede verticali in un modulo può migliorare l’esperienza utente complessiva semplificando la navigazione e migliorando l’organizzazione del contenuto del modulo, soprattutto nelle situazioni in cui un modulo contiene più sezioni o informazioni complesse.
 
 #### Versione a 64 bit di AEM Forms Designer
 
-Il [Versione a 64 bit di AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) offre prestazioni, scalabilità e gestione della memoria migliorate per migliorare l’esperienza di creazione dei moduli. Grazie all&#39;architettura a 64 bit, è possibile gestire con facilità progetti ancora più grandi e complessi, garantendo flussi di lavoro di progettazione ottimizzati ed efficienza. Migliora le funzionalità di progettazione dei moduli e abbraccia il futuro di AEM Forms Designer con questa versione all’avanguardia.
+La versione a [64 bit di AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) offre prestazioni, scalabilità e gestione della memoria migliorate per migliorare l&#39;esperienza di creazione dei moduli. Grazie all&#39;architettura a 64 bit, è possibile gestire con facilità progetti ancora più grandi e complessi, garantendo flussi di lavoro di progettazione ottimizzati ed efficienza. Migliora le funzionalità di progettazione dei moduli e abbraccia il futuro di AEM Forms Designer con questa versione all’avanguardia.
 
 #### Collegare un Forms adattivo all’elenco di Microsoft® SharePoint
 
-AEM Forms fornisce un’integrazione standard per [inviare i dati dei moduli direttamente a SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), che consente di utilizzare le funzionalità degli elenchi di SharePoint. È possibile configurare Microsoft® SharePoint List come origine dati per un modello dati modulo e utilizzare l’azione Invia utilizzando il modello dati modulo per inviare un modulo adattivo a SharePoint List.
+AEM Forms fornisce un&#39;integrazione preconfigurata per [inviare i dati dei moduli direttamente a SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), consentendo di utilizzare le funzionalità degli elenchi di SharePoint. È possibile configurare Microsoft® SharePoint List come origine dati per un modello dati modulo e utilizzare l’azione Invia utilizzando il modello dati modulo per inviare un modulo adattivo a SharePoint List.
 
 #### Supporto per la configurazione delle proprietà del documento record per i frammenti di moduli adattivi
 
-Ora puoi facilmente [personalizzare i frammenti di moduli adattivi e i relativi campi nell’editor di moduli adattivi](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+È ora possibile [personalizzare facilmente i frammenti del modulo adattivo e i relativi campi nell&#39;editor del modulo adattivo](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 #### Include la versione a 64 bit di XMLFM
 
@@ -61,12 +61,12 @@ L&#39;iterazione a 64 bit di XMLFM offre prestazioni, scalabilità e gestione de
 
 ## Correzioni di bug
 
-La versione include anche correzioni per oltre 20 problemi segnalati dai clienti. Per un elenco dettagliato delle correzioni incluse nel service pack, consulta [note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it#forms-6519)
+La versione include anche correzioni per oltre 20 problemi segnalati dai clienti. Per un elenco dettagliato delle correzioni incluse nel service pack, consulta le [note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it#forms-6519)
 
 
 ## Installazione del service pack
 
-Il service pack include nuove funzioni e correzioni di bug sia per AEM Forms su JEE che per AEM Forms su OSGi. Le istruzioni di installazione presentano modifiche rispetto ai service pack precedenti. Per le istruzioni di installazione, vedere [Istruzioni di installazione di AEM Forms service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+Il service pack include nuove funzioni e correzioni di bug sia per AEM Forms su JEE che per AEM Forms su OSGi. Le istruzioni di installazione presentano modifiche rispetto ai service pack precedenti. Per le istruzioni di installazione, vedere [istruzioni di installazione del service pack di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
 
 
 

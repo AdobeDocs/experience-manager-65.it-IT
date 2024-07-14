@@ -30,18 +30,18 @@ Il framework utilizza i token per garantire che la richiesta del cliente sia leg
 
 ### Dipendenze {#dependencies}
 
-Qualsiasi componente che si basa su `granite.jquery` La dipendenza può beneficiare automaticamente del framework di protezione CSRF. In caso contrario, per qualsiasi componente, è necessario dichiarare una dipendenza a `granite.csrf.standalone` prima di poter utilizzare il framework.
+Qualsiasi componente che si basa sulla dipendenza `granite.jquery` può beneficiare automaticamente del framework di protezione CSRF. In caso contrario, per qualsiasi componente è necessario dichiarare una dipendenza a `granite.csrf.standalone` prima di poter utilizzare il framework.
 
 ### Replica della chiave di crittografia {#replicating-crypto-keys}
 
-Per utilizzare i token, devi replicare il file binario HMAC in tutte le istanze della distribuzione. Consulta [Replica della chiave HMAC](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) per ulteriori dettagli.
+Per utilizzare i token, devi replicare il file binario HMAC in tutte le istanze della distribuzione. Per ulteriori dettagli, vedere [Replica della chiave HMAC](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key).
 
 >[!NOTE]
 >
->Assicurati anche di fare il necessario [Modifiche alla configurazione del Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) per utilizzare il framework di protezione CSRF.
+>Assicurati anche di apportare le [modifiche alla configurazione di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) necessarie per utilizzare CSRF Protection Framework.
 
 >[!NOTE]
 >
->Se utilizzi la cache del manifesto con l’applicazione web, assicurati di aggiungere &quot;**&amp;ast;**&quot; al manifesto per assicurarti che il token non metta offline la chiamata di generazione del token CSRF. Per ulteriori informazioni, consulta [link](https://www.w3.org/TR/offline-webapps/).
+>Se utilizzi la cache del manifesto con l&#39;applicazione Web, assicurati di aggiungere &quot;**&amp;ast;**&quot; al manifesto per assicurarti che il token non metta offline la chiamata di generazione del token CSRF. Per ulteriori informazioni, consulta questo [collegamento](https://www.w3.org/TR/offline-webapps/).
 >
-Per ulteriori informazioni sugli attacchi CSRF e sui modi per mitigarli, consulta la [Pagina OWASP per false richieste intersito](https://owasp.org/www-community/attacks/csrf).
+Per ulteriori informazioni sugli attacchi CSRF e sui modi per mitigarli, vedere la [pagina OWASP Cross-Site Request Forgery](https://owasp.org/www-community/attacks/csrf).

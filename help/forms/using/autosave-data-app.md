@@ -35,11 +35,11 @@ Puoi specificare gli intervalli dopo i quali l’app salva i dati immessi.
 
 Per utilizzare la funzione di salvataggio automatico nell’app AEM Forms, effettua le seguenti operazioni:
 
-1. Accedi all’app e passa a **Impostazioni > Generale**.
-1. Nella schermata Generale, utilizza **Frequenza salvataggio automatico** per selezionare gli intervalli in corrispondenza dei quali l’app deve salvare i dati immessi.
+1. Accedi all&#39;app e passa a **Impostazioni > Generale**.
+1. Nella schermata Generale, utilizza l&#39;opzione **Salvataggio automatico frequenza** per selezionare gli intervalli in cui desideri che l&#39;app salvi i dati immessi.
    [![Impostazione della frequenza di salvataggio automatico](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Quando riavvii l’app e accedi con lo stesso utente, ti viene richiesto di ripristinare l’attività tramite la finestra di dialogo Recupera attività non salvata. Clic **OK** nella finestra di dialogo Recupera attività non salvata per riprendere a lavorare con l’attività salvata. Puoi fare clic su **Annulla** per eliminare i dati salvati corrispondenti all’ultimo salvataggio automatico attivato e iniziare a lavorare con una nuova attività.
+1. Quando riavvii l’app e accedi con lo stesso utente, ti viene richiesto di ripristinare l’attività tramite la finestra di dialogo Recupera attività non salvata. Fare clic su **OK** nella finestra di dialogo Recupera attività non salvata per riprendere a utilizzare l&#39;attività salvata. Puoi fare clic su **Annulla** per eliminare i dati salvati corrispondenti all&#39;ultimo salvataggio automatico attivato e iniziare a lavorare con una nuova attività.
 
-   Quando fai clic su **OK**, l’attività viene ripristinata con i dati corrispondenti all’ultimo salvataggio automatico attivato prima dell’arresto anomalo dell’app. Include i dati del modulo e tutti gli allegati associati all&#39;attività.
-   [![Recupero di un’attività&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**R.** Modulo work-in-progress **B.** App chiusa con forza **C.** App riavviata con la finestra di dialogo Recupera attività non salvata **D.** Modulo ripristinato con i dati originali
+   Quando fai clic su **OK**, l&#39;attività viene ripristinata con i dati corrispondenti all&#39;ultimo salvataggio automatico attivato prima dell&#39;arresto anomalo dell&#39;app. Include i dati del modulo e tutti gli allegati associati all&#39;attività.
+   [![Recupero di un&#39;attività&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Modulo in corso di lavorazione **B.** App chiusa forzatamente **C.** App riavviata con la finestra di dialogo Recupera attività non salvata **D.** Modulo ripristinato con i dati originali

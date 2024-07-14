@@ -34,7 +34,7 @@ I set di moduli sono supportati anche nell’app AEM Forms, per consentire alla 
 
 È possibile associare diversi XDP o modelli di modulo, creati con Designer, a un set di moduli. I set di moduli possono quindi essere utilizzati per eseguire selettivamente il rendering degli XDP in base ai valori immessi dagli utenti nei moduli iniziali e nei relativi profili.
 
-Utilizzare [Interfaccia utente di AEM Forms](../../forms/using/introduction-managing-forms.md) per gestire tutti i moduli, i set di moduli e le risorse correlate.
+Utilizza l&#39;[interfaccia utente di AEM Forms](../../forms/using/introduction-managing-forms.md) per gestire tutti i tuoi moduli, set di moduli e risorse correlate.
 
 ### Creare un set di moduli {#create-a-form-set}
 
@@ -66,13 +66,13 @@ Per creare un set di moduli, effettuare le seguenti operazioni:
    * Ordine dei moduli: trascinare i moduli per riordinarli. L’ordine dei moduli definisce l’ordine in cui i moduli vengono mostrati all’utente finale nell’app AEM Forms e nella rappresentazione autonoma.
    * Identificatore modulo: specifica un’identità univoca per i moduli da utilizzare nelle espressioni di idoneità.
    * Directory principale dati: per ogni modulo nel set di moduli, l’autore può configurare l’XPATH in cui i dati di quel particolare modulo sono posizionati nell’XML inviato. Per impostazione predefinita, il valore è /. Se tutti i moduli nel set di moduli sono associati a uno schema e condividono lo stesso schema XML, è possibile modificare questo valore. È consigliabile che in ogni campo del modulo sia specificata un&#39;associazione dati corretta nell&#39;XDP. Se due campi in due moduli diversi condividono la stessa associazione dati, il campo nel secondo modulo mostra i valori precompilati del primo modulo. Non associare due sottomaschere con lo stesso contenuto interno allo stesso nodo XML. Per ulteriori informazioni sulla struttura XML del set di moduli, vedere [Precompila XML per set di moduli](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
-   * Espressione di idoneità: specifica un&#39;espressione JavaScript che valuta un valore booleano e indica se un modulo nel set di moduli è idoneo per la compilazione. Se false, all’utente non viene richiesto o non viene mostrato nemmeno il modulo da compilare. In genere, l’espressione si basa sui valori dei campi acquisiti prima del modulo. Le espressioni contengono anche chiamate al set di moduli API fs.valueOf per estrarre i valori compilati dall’utente in un campo di un modulo del set di moduli:
+   * Espressione di idoneità: specifica un&#39;espressione di JavaScript che valuta un valore booleano e indica se un modulo nel set di moduli è idoneo alla compilazione. Se false, all’utente non viene richiesto o non viene mostrato nemmeno il modulo da compilare. In genere, l’espressione si basa sui valori dei campi acquisiti prima del modulo. Le espressioni contengono anche chiamate al set di moduli API fs.valueOf per estrarre i valori compilati dall’utente in un campo di un modulo del set di moduli:
 
-   *fs.valueOf(&lt;form identifier=&quot;&quot;>, &lt;fieldsom expression=&quot;&quot;>) > &lt;value>*
+   *fs.valueOf(&lt;Identificatore modulo>, &lt;espressione fieldSom>) > &lt;valore>*
 
-   Ad esempio, se nel set di moduli sono presenti due moduli: spese aziendali e spese di viaggio, è possibile aggiungere uno snippet JavaScript nel campo Espressione idoneità per entrambi i moduli per verificare l&#39;input dell&#39;utente per il tipo di spesa in un modulo. Se l&#39;utente sceglie Spese commerciali, il modulo Spese commerciali viene visualizzato all&#39;utente finale. Oppure, se l’utente sceglie le spese di viaggio, viene eseguito il rendering di un modulo diverso per l’utente finale. Per ulteriori informazioni, consulta Espressione di idoneità.
+   Se ad esempio nel set di moduli sono presenti due moduli: spese aziendali e spese di viaggio, è possibile aggiungere uno snippet JavaScript nel campo Espressione idoneità per entrambi i moduli per verificare l&#39;input dell&#39;utente per il tipo di spesa in un modulo. Se l&#39;utente sceglie Spese commerciali, il modulo Spese commerciali viene visualizzato all&#39;utente finale. Oppure, se l’utente sceglie le spese di viaggio, viene eseguito il rendering di un modulo diverso per l’utente finale. Per ulteriori informazioni, consulta Espressione di idoneità.
 
-   Inoltre, l’autore può anche scegliere di rimuovere un modulo dal set di moduli utilizzando l’icona Elimina presente nell’angolo destro di ogni riga oppure di aggiungere un altro set di moduli utilizzando l’icona &quot;**+** nella barra degli strumenti. Questo &#39;**+**&#39; reindirizza l&#39;utente al passaggio precedente della procedura guidata, utilizzato per &#39;Selezionare i moduli&#39;. Le selezioni esistenti vengono mantenute ed eventuali selezioni aggiuntive effettuate devono essere aggiunte al set di moduli utilizzando l’icona Aggiungi a set di moduli nella pagina.
+   L&#39;autore può inoltre scegliere di rimuovere un modulo dal set di moduli utilizzando l&#39;icona Elimina presente nell&#39;angolo destro di ogni riga oppure di aggiungere un altro set di moduli utilizzando l&#39;icona &#39;**+**&#39; nella barra degli strumenti. Questa icona &#39;**+**&#39; reindirizza l&#39;utente al passaggio precedente della procedura guidata utilizzato per &#39;Selezionare moduli&#39;. Le selezioni esistenti vengono mantenute ed eventuali selezioni aggiuntive effettuate devono essere aggiunte al set di moduli utilizzando l’icona Aggiungi a set di moduli nella pagina.
 
    ![Set di moduli: Configura moduli](assets/createformset2.png)
 
@@ -117,13 +117,13 @@ Dopo aver creato un set di moduli utilizzando l’interfaccia utente di AEM Form
 
 ### Utilizzo del set di moduli nell&#39;attività o nel punto iniziale {#using-form-set-in-task-or-start-point}
 
-1. Durante la progettazione di un processo, nella sezione Presentazione e dati di Assegna attività/punto iniziale, selezionare **utilizzare una risorsa CRX**. Viene visualizzato il browser Risorse CRX.
+1. Durante la progettazione di un processo, nella sezione Presentazione e dati di Assegna attività/punto iniziale, seleziona **utilizza una risorsa CRX**. Viene visualizzato il browser Risorse di CRX.
 
    ![Progettare un processo: utilizzare una risorsa CRX](assets/formsetinprocessmgmt1.png)
 
 1. Seleziona il set di moduli per filtrare il set di moduli nell’archivio AEM (CRX).
 
-   ![Progettazione di un processo: finestra di dialogo Seleziona risorsa modulo](assets/formsetinprocessmgmt2.png)
+   ![Progettare un processo: finestra di dialogo Seleziona risorsa modulo](assets/formsetinprocessmgmt2.png)
 
 1. Seleziona un set di moduli e fai clic su OK.
 
@@ -131,13 +131,13 @@ Dopo aver creato un set di moduli utilizzando l’interfaccia utente di AEM Form
 
 Le espressioni di idoneità in un set di moduli vengono utilizzate per definire e controllare dinamicamente i moduli visualizzati a un utente. Ad esempio, per visualizzare un modulo specifico solo se l’utente appartiene a un determinato gruppo di età. Specificare e modificare un&#39;espressione di idoneità utilizzando Gestione moduli.
 
-Un’espressione di idoneità può essere un’istruzione JavaScript valida che restituisce un valore booleano. L’ultima istruzione nello snippet di codice JavaScript viene trattata come un valore booleano che determina l’idoneità del modulo in base all’elaborazione nel resto (righe precedenti) dello snippet di codice JavaScript. Se il valore dell’espressione è true, il modulo può essere visualizzato all’utente. Tali moduli sono noti come moduli idonei.
+Un’espressione di idoneità può essere un’istruzione JavaScript valida che restituisce un valore booleano. L’ultima istruzione nello snippet di codice JavaScript viene considerata come un valore booleano che determina l’idoneità del modulo in base all’elaborazione del resto (righe precedenti) dello snippet di codice JavaScript. Se il valore dell’espressione è true, il modulo può essere visualizzato all’utente. Tali moduli sono noti come moduli idonei.
 
 >[!NOTE]
 >
 >L’espressione di idoneità per il primo modulo nel set di moduli non viene eseguita. La prima maschera viene sempre visualizzata indipendentemente dalla relativa espressione di idoneità.
 
-Oltre alle funzioni JavaScript standard, il set di moduli espone anche l’API fs.valueOf che fornisce accesso al valore di un campo di un modulo in un set di moduli. Utilizza questa API per accedere al valore di un campo modulo in un set di moduli. La sintassi API è fs.valueOf (formUid, fieldSOM), dove:
+Oltre alle funzioni standard di JavaScript, il set di moduli espone anche l’API fs.valueOf che fornisce accesso al valore di un campo di un modulo in un set di moduli. Utilizza questa API per accedere al valore di un campo modulo in un set di moduli. La sintassi API è fs.valueOf (formUid, fieldSOM), dove:
 
 * formUid (stringa): ID univoco di un modulo nel set di moduli. È possibile specificarlo durante la creazione del set di moduli nell’interfaccia utente di Forms Manager. Per impostazione predefinita, corrisponde al nome del modulo.
 * fieldSOM (stringa): espressione SOM del campo nel modulo specificato da formUid. Espressione SOM o Espressione modello a oggetti di script utilizzata per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare modello a oggetti documento (DOM). Mentre il campo è selezionato, è possibile visualizzarlo in Designer modulo nella scheda Script.
@@ -169,17 +169,20 @@ Ad esempio, sono disponibili tre maschere (form1, form2 e form3) nel set di masc
 
 form1
 
-campo form1 field
+campo
+form1field
 
 form2
 
-campo form2field
+campo
+form2field
 
 form3
 
-campo form3field
+campo
+form3field
 
-Ogni modulo ha un campo denominato comune, denominato &quot;field&quot; e un campo con nome univoco denominato &quot;formfield&quot;.
+Ogni modulo ha un campo denominato comune, denominato &quot;field&quot; e un campo con nome univoco denominato &quot;form&lt;i>field&quot;.
 
 È possibile precompilare questo set di moduli utilizzando un XML con la seguente struttura:
 
@@ -342,7 +345,7 @@ In XML precompilato, questo tag è facoltativo, ma se manca, l’intero XML vien
 
 NOME DEL TAG DELL’ELEMENTO PRINCIPALE
 
-Se nel file XML precompilato è presente un elemento principale, il nome di tale elemento viene utilizzato anche nel file XML di invio. Nei casi in cui non è disponibile alcun XML precompilato, il nome dell&#39;elemento radice è il nome del sottomodulo radice del primo modulo del set di moduli con la proprietà dataRoot impostata su &quot;/&quot;. Se tale modulo non esiste, il nome rootElement è **fs_dummy_root**, che è una parola chiave riservata.
+Se nel file XML precompilato è presente un elemento principale, il nome di tale elemento viene utilizzato anche nel file XML di invio. Nei casi in cui non è disponibile alcun XML precompilato, il nome dell&#39;elemento radice è il nome del sottomodulo radice del primo modulo del set di moduli con la proprietà dataRoot impostata su &quot;/&quot;. Se tale modulo non è presente, il nome dell&#39;elemento radice è **fs_dummy_root**, che è una parola chiave riservata.
 
 ## Set di moduli nell’app AEM Forms {#formset-in-workspace-app}
 
@@ -374,7 +377,7 @@ I seguenti modelli di dati non sono completamente supportati nel set di moduli:
   </tr>
   <tr>
    <td>Pattern per stenografia </td>
-   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{}, o</p> <p>num.currency{}</p> </td>
+   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{}, oppure</p> <p>num.currency{}</p> </td>
   </tr>
  </tbody>
 </table>

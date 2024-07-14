@@ -18,11 +18,11 @@ ht-degree: 2%
 
 # Nozioni di base sui grafici social  {#social-graph-essentials}
 
-Possibilità per un membro della community di seguire [attività](essentials-activities.md) e l’essere seguiti si stabilisce attraverso due componenti:
+La possibilità per un membro della community di seguire [attività](essentials-activities.md) è stabilita tramite due componenti:
 
-Il `following` il componente deve essere associato a un&#39;altra risorsa e questa associazione è già stata stabilita per i membri e le funzionalità delle community esistenti in un [sito community](overview.md#communitiessites).
+Il componente `following` deve essere associato a un&#39;altra risorsa. L&#39;associazione è già stata stabilita per i membri e le caratteristiche delle community esistenti in un [sito community](overview.md#communitiessites).
 
-Il `following` componente elenca i membri che seguono il membro corrente o che sono seguiti dal membro corrente. Questo grafico social delle relazioni tra i membri è incluso nel profilo utente stabilito per un sito community.
+Il componente `following` elenca i membri che seguono il membro corrente o sono seguiti dal membro corrente. Questo grafico social delle relazioni tra i membri è incluso nel profilo utente stabilito per un sito community.
 
 ## Nozioni di base per lato client {#essentials-for-client-side}
 
@@ -31,11 +31,11 @@ Il `following` componente elenca i membri che seguono il membro corrente o che s
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/socialgraph/components/hbs/reports</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -52,29 +52,29 @@ Il `following` componente elenca i membri che seguono il membro corrente o che s
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consulta <a href="socialgraph.md">Utilizzo di Social Graph</a></td>
+   <td>Vedi <a href="socialgraph.md">Utilizzo del grafico social</a></td>
   </tr>
   <tr>
-   <td><strong> facoltativo<br /> proprietà</strong></td>
+   <td><strong> proprietà <br /> facoltativa</strong></td>
    <td>
     <ul>
      <li>Nome: <strong><code>outgoing</code></strong></li>
      <li>Tipo: booleano</li>
      <li>Valore:<br />
       <ul>
-       <li><i>Vero </i>- Il <code>following</code> il componente elenca i membri che il membro connesso <code>follows</code></li>
-       <li><i>Falso </i>- Il <code>following</code> componente elenca i membri che <code>follow </code>il membro connesso</li>
+       <li><i>Vero </i>- Il componente <code>following</code> elenca i membri che hanno effettuato l'accesso <code>follows</code></li>
+       <li><i>Falso </i>- Il componente <code>following</code> elenca i membri che hanno <code>follow </code>il membro connesso</li>
       </ul> </li>
-    </ul> <p>Impostazione predefinita <i>true</i> se manca la proprietà. Non è possibile impostare questa proprietà utilizzando la finestra di dialogo per modifica in modalità Creazione. La proprietà deve essere aggiunta a un’istanza di <code>following</code> nodo utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Impostazione predefinita: <i>true</i> se la proprietà è mancante. Non è possibile impostare questa proprietà utilizzando la finestra di dialogo per modifica in modalità Creazione. La proprietà deve essere aggiunta a un'istanza del nodo <code>following</code> utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Segui {#follow}
 
-| **resourceType** | `social/socialgraph/components/hbs/following` |
+| **tiporisorsa** | `social/socialgraph/components/hbs/following` |
 |---|---|
-| [**incluso**](scf.md#add-or-include-a-communities-component) | No |
+| [**includibile**](scf.md#add-or-include-a-communities-component) | No |
 | **modelli** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
@@ -82,8 +82,8 @@ Il `following` componente elenca i membri che seguono il membro corrente o che s
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API del grafico social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [API grafico social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Endpoint grafico social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Endpoint grafico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Personalizzazioni lato server](server-customize.md)

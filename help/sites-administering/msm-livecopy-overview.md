@@ -18,7 +18,7 @@ ht-degree: 30%
 
 # Console Panoramica sulla Live Copy{#live-copy-overview-console}
 
-Il **Panoramica Live Copy** consente di:
+La **Panoramica Live Copy** consente di:
 
 * Visualizzare/gestire l’ereditarietà in un sito:
 
@@ -40,7 +40,7 @@ Puoi aprire la Panoramica Live Copy da:
 La **Panoramica Live Copy** può essere aperto dal pannello laterale **Riferimenti** nella console **Sites**:
 
 1. Nella console **Sites**, [passa alla pagina blueprint e selezionala](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Apri **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e seleziona **Live Copy**.
+1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e seleziona **Live Copy**.
 
    ![Pannello Riferimenti - Live Copy](assets/chlimage_1-359.png)
 
@@ -48,7 +48,7 @@ La **Panoramica Live Copy** può essere aperto dal pannello laterale **Riferimen
    >
    >Puoi anche aprire prima i Riferimenti e quindi selezionare la blueprint.
 
-1. Seleziona **Panoramica Live Copy** per mostrare e utilizzare la panoramica di tutte le live copy relative alla blueprint selezionata.
+1. Seleziona **Panoramica Live Copy** per mostrare e utilizzare la panoramica di tutte le Live Copy relative alla blueprint selezionata.
 1. Utilizza **Chiudi** per uscire e tornare alla console **Sites**.
 
 ### Apertura della panoramica di Live Copy: proprietà di una pagina blueprint {#opening-live-copy-overview-properties-of-a-blueprint-page}
@@ -60,20 +60,20 @@ La **Panoramica Live Copy** può essere aperta quando si visualizzano le proprie
 
    ![Scheda Blueprint - Panoramica Live Copy](assets/chlimage_1-360.png)
 
-1. Seleziona **Panoramica Live Copy** per mostrare e utilizzare la panoramica di tutte le live copy relative alla blueprint corrente.
+1. Seleziona **Panoramica Live Copy** per mostrare e utilizzare la panoramica di tutte le Live Copy relative alla blueprint corrente.
 
    >[!NOTE]
    >
-   >Per ulteriori dettagli vedi anche l’articolo della Knowledge Base [Messaggio di stato LiveCopy - Sincronizzazione verde/aggiornato](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Per ulteriori dettagli, vedere anche l&#39;articolo della Knowledge Base [Messaggio di stato LiveCopy - Aggiornato/Verde/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 1. Utilizza **Chiudi** per uscire e tornare alla console **Sites**.
 
 ## Utilizzo della Panoramica Live Copy {#using-the-live-copy-overview}
 
-Il **Panoramica Live Copy** può essere utilizzato anche per eseguire azioni sulla live copy:
+La **Panoramica Live Copy** può essere utilizzata anche per eseguire azioni sulla Live Copy:
 
 1. Apri **Panoramica Live Copy**.
-1. Seleziona la pagina blueprint o Live Copy richiesta: la barra degli strumenti verrà aggiornata per mostrare le azioni disponibili. Il [azioni](/help/sites-administering/msm.md#terms-used) disponibile a seconda che sia stato selezionato un [blueprint](#actions-for-a-blueprint-page) o [live copy](#actions-for-a-live-copy-page) pagina:
+1. Seleziona la pagina blueprint o Live Copy richiesta: la barra degli strumenti verrà aggiornata per mostrare le azioni disponibili. Le [azioni](/help/sites-administering/msm.md#terms-used) disponibili dipendono dalla selezione di una [pagina blueprint](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page):
 
 ### Azioni per una pagina blueprint {#actions-for-a-blueprint-page}
 
@@ -125,7 +125,7 @@ Quando selezioni una pagina Live Copy, sono disponibili le seguenti azioni:
 
 ## Stato di relazione {#relationship-status}
 
-Il **Stato di relazione** la console dispone di due schede che forniscono una serie di funzionalità:
+La console **Stato relazione** dispone di due schede che forniscono una serie di funzionalità:
 
 * [Informazioni sullo stato della relazione](#relationship-status-information)
 * [Informazioni Live Copy](#live-copy-information)

@@ -23,28 +23,28 @@ La gestione di un progetto per l’implementazione di Adobe Experience Manager (
 
 Per aiutarti, le best practice consistono in:
 
-* Un [elenco di controllo interattivo](/help/managing/best-practices-checklist.md) che ti consente di monitorare i tuoi progressi con queste best practice.
+* Un [elenco di controllo interattivo](/help/managing/best-practices-checklist.md) che consente di monitorare e monitorare l&#39;avanzamento con queste best practice.
 
    * Definisce gli input e i risultati finali in base a fase, milestone e persona.
    * Fornisce panoramiche automatizzate (qualità, integrità e completezza) per indicare lo stato di avanzamento e l’integrità del progetto.
 
-* Documentazione basata su [elenco di controllo](/help/managing/best-practices-checklist.md) che specifica:
+* Documentazione basata sulla [lista di controllo](/help/managing/best-practices-checklist.md) che descrive:
 
-   * [Heartbeat del progetto](#projectheartbeat) analisi.
-   * [Stato per Ruolo](#status-by-role) panoramica.
+   * Analisi [Project Heartbeat](#projectheartbeat).
+   * Panoramica di [Stato per ruolo](#status-by-role).
    * [Fasi e attività cardine](#phases-and-milestones).
-   * [Persona chiave](#persona) e il loro coinvolgimento in ogni fase (pertinente).
-   * A [Glossario](/help/managing/best-practices-glossary.md) del [Documenti e risultati finali richiesti](#required-documents-and-deliverables).
+   * [Persona chiave](#persona) e il loro coinvolgimento in ogni fase (rilevante).
+   * [Glossario](/help/managing/best-practices-glossary.md) dei [Documenti e risultati finali richiesti](#required-documents-and-deliverables).
 
-* [Ulteriori informazioni](/help/managing/best-practices-further-reference.md) materiale per fornire maggiori dettagli su aree specifiche.
+* [Ulteriore riferimento](/help/managing/best-practices-further-reference.md) al materiale per fornire ulteriori dettagli su aree specifiche.
 
 ## Dashboard heartbeat del progetto {#project-heartbeat-dashboard}
 
-Il **Heartbeat del progetto** Il foglio di lavoro fornisce una panoramica grafica delle metriche critiche per il progetto:
+Il foglio di lavoro **Heartbeat progetto** fornisce una panoramica grafica delle metriche critiche per il progetto:
 
 * **Qualità fase**
 
-   * Indica la qualità del [Documenti e risultati finali richiesti](#required-documents-and-deliverables) nel progetto.
+   * Indica la qualità dei [documenti e risultati finali richiesti](#required-documents-and-deliverables) nel progetto.
 
 * **Integrità fase**
 
@@ -56,13 +56,13 @@ Il **Heartbeat del progetto** Il foglio di lavoro fornisce una panoramica grafic
 
 ## Stato per Ruolo {#status-by-role}
 
-Il **Stato per Ruolo** il foglio di lavoro mostra la suddivisione dettagliata di [**Salute**, **Qualità e **Completezza**](#projectheartbeat) da **[Fase](#phases-and-milestones)** e **[Persona](#persona)**.
+Il foglio di lavoro **Stato per ruolo** mostra un raggruppamento dettagliato di [**Integrità**, **Qualità e **Completezza**](#projectheartbeat) per **[Fase](#phases-and-milestones)** e **[Persona](#persona)**.
 
 ## Fasi e attività cardine {#phases-and-milestones}
 
 Il piano del progetto è suddiviso in fasi distinte (di alto livello).
 
-Ogni fase contiene le proprie tappe fondamentali. Per ogni [persona](#persona) (o ruolo), vengono elencati i target intermedi pertinenti, insieme ai documenti necessari per produrre i risultati finali definiti.
+Ogni fase contiene le proprie tappe fondamentali. Per ogni [persona](#persona) (o ruolo), vengono elencati i milestone pertinenti e i documenti necessari per produrre i risultati finali definiti.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ La pianificazione del progetto consolida la preparazione. Dovresti iniziare a co
 
   Dovrebbero essere forniti/generati dettagli completi per garantire che abbiano una piena comprensione di tutti gli aspetti pertinenti, tra cui la tabella di marcia, l&#39;ambito di applicazione, gli obiettivi, i requisiti e i KPI.
 
-* **Valutazione del rischio**
+* **Valutazione dei rischi**
 
   Per evitare spiacevoli sorprese, utilizzare la valutazione del rischio per identificare e quantificare i rischi potenziali, insieme al loro impatto e alla loro probabilità.
 
@@ -180,19 +180,19 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
   L’architettura del sistema definisce la visualizzazione concettuale del sistema, che include (tra le altre informazioni):
 
-   * [Struttura del sistema](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) per tutti gli ambienti richiesti
+   * [Struttura di sistema](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) per tutti gli ambienti richiesti
    * Sottosistemi
    * Sistemi di terze parti
    * Interfacce, hardware, software e interazione umana
-   * Server per ogni ambiente; vedere [Requisiti tecnici](/help/sites-deploying/technical-requirements.md) e [Linee guida per il dimensionamento dell&#39;hardware](/help/managing/hardware-sizing-guidelines.md)
+   * Server per ogni ambiente; vedere le [Specifiche tecniche](/help/sites-deploying/technical-requirements.md) e le [Linee guida per il dimensionamento hardware](/help/managing/hardware-sizing-guidelines.md)
 
    * Processi per ogni ambiente; ad esempio, requisiti di installazione e manutenzione
    * Attività di manutenzione (Datastore GC, ottimizzazione TarPM e così via)
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) caching
+   * [Memorizzazione in cache di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
    * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * Prestazioni lato client (minimizzazione JS, concat, sprite css, numero totale di richieste http e altre)
 
-* **Architettura dell&#39;applicazione**
+* **Architettura applicazione**
 
   L&#39;architettura dell&#39;applicazione definisce e descrive il comportamento delle applicazioni proposte.
 
@@ -208,18 +208,18 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
    * Raggruppamenti dei modelli/componenti e delle loro relazioni
    * Dettagli di alto livello delle personalizzazioni richieste (le sovrapposizioni specifiche verranno riportate in seguito)
    * Progettazione dei flussi di lavoro richiesti dalla soluzione (ad esempio creazione, approvazione, pubblicazione, trasformazioni, importazioni ed esportazioni di contenuti)
-   * Particolare attenzione per eventuali moduli complessi, come MSM, Commerce, integrazione di terze parti
+   * Particolare attenzione per qualsiasi modulo complesso, come MSM, Commerce, integrazione di terze parti
 
-* **Integrazione del sistema**
+* **Integrazione di sistema**
 
   L’integrazione del sistema richiede di pianificare (quindi implementare):
 
-   * Come tutti i sottosistemi e [integrazioni di soluzioni](/help/sites-administering/integration.md) sono riuniti per funzionare come un unico sistema coerente
+   * Come tutti i sottosistemi e le [integrazioni di soluzioni](/help/sites-administering/integration.md) sono riuniti per funzionare come un unico sistema coerente
    * Come vengono integrati i sistemi di terze parti, insieme a eventuali considerazioni speciali, come offline/online, lato client/lato browser o gestione del fallover quando un sistema di terze parti è inattivo
 
 * **Concetto del test**
 
-  Prima di iniziare lo sviluppo, è necessario elaborare un concetto completo e approfondito di tutti [test](/help/sites-developing/planning.md) requisiti del progetto.
+  Prima di iniziare lo sviluppo, devi elaborare un concetto approfondito e completo di tutti i requisiti di [testing](/help/sites-developing/planning.md) per il tuo progetto.
 
   Ciò dovrebbe includere (tra l&#39;altro):
 
@@ -235,11 +235,11 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
   L’esperienza utente deve essere analizzata e sviluppata sia per gli autori che per gli utenti finali del sito web.
 
-* **Configurazione del supporto**
+* **Configurazione supporto**
 
   Prima dello sviluppo, è necessario impostare tutti i processi di supporto necessari per distribuire, rilasciare, testare e segnalare i problemi.
 
-  Consulta anche [Portale di supporto Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support).
+  Consulta anche [Adobe Support Portal](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support).
 
 ### Pianificazione e operazioni {#operations-planning-and-operations}
 
@@ -253,13 +253,13 @@ Allo stesso modo, le operazioni devono essere pianificate in modo appropriato pe
 
   Ad esempio:
 
-   * Un elenco di ruoli (ovvero gruppi) con `read`/ `write` definizioni di accesso per ogni
+   * Un elenco di ruoli (ovvero gruppi) con definizioni di accesso `read`/ `write` per ciascuno
 
-   * Definizione dell’utilizzo dei privilegi che influiscono sull’ambiente di pubblicazione; ad esempio, `replicate`
+   * Definizione dell&#39;utilizzo dei privilegi che influiscono sull&#39;ambiente di pubblicazione; ad esempio, `replicate`
    * Per gli utenti con privilegi minimi, i flussi di lavoro devono essere definiti
-   * Utenti in `editor` il gruppo non deve avere `admin` diritti né far parte del `administrators` gruppo
+   * Gli utenti del gruppo `editor` non devono avere diritti `admin` né far parte del gruppo `administrators`
 
-  Per ulteriori informazioni, consulta [Amministrazione utenti e sicurezza](/help/sites-administering/security.md).
+  Per ulteriori informazioni, vedere [Amministrazione utenti e sicurezza](/help/sites-administering/security.md).
 
 * **Monitoraggio e manutenzione**
 
@@ -268,7 +268,7 @@ Allo stesso modo, le operazioni devono essere pianificate in modo appropriato pe
    * Cosa deve essere monitorato
    * Mansioni di manutenzione periodica e in casi speciali
 
-  Vedi anche [Monitoraggio e manutenzione](/help/sites-deploying/monitoring-and-maintaining.md) per ulteriori informazioni.
+  Per ulteriori informazioni, vedere anche [Monitoraggio e manutenzione](/help/sites-deploying/monitoring-and-maintaining.md).
 
 * **Migrazione**
 
@@ -304,7 +304,7 @@ Lo sviluppo è una fase cruciale che richiede qualcosa di più di una semplice c
    * [Integrazione/dipendenze della soluzione](/help/sites-administering/integration.md)
    * Cadenza di distribuzione
 
-* **Sistema di test**
+* **Sistema di prova**
 
   Pianifica e documenta l’ambiente di test, tra cui:
 
@@ -322,16 +322,16 @@ Lo sviluppo è una fase cruciale che richiede qualcosa di più di una semplice c
    * Cadenza di distribuzione
    * Integrazione/dipendenze software di terze parti
    * Impostazione della sicurezza
-   * Prestazioni della linea di base verificate eseguendo il comando [Test giornalieri complessi](/help/sites-developing/tough-day.md) sull’impostazione di produzione
-   * Requisiti per le prove di prestazione; cfr. [Best practice per la garanzia della qualità](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * Prestazioni della linea di base verificate eseguendo i [test del giorno difficile](/help/sites-developing/tough-day.md) nella configurazione di produzione
+   * Requisiti per i test delle prestazioni; consulta [Best practice per il controllo qualità](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integrazione**
 
-  Pianifica, documenta e verifica tutti gli aspetti del sistema e [integrazione della soluzione](/help/sites-administering/integration.md), tra cui:
+  Pianifica, documenta e verifica tutti gli aspetti del sistema e dell&#39;[integrazione della soluzione](/help/sites-administering/integration.md), tra cui:
 
    * Una strategia di test automatizzati
    * Processi automatizzati per [spostare le applicazioni dallo sviluppo al test, quindi alla produzione](/help/managing/enterprise-devops.md#code-movement)
-   * Processi automatizzati per [spostare i contenuti da produzione a test e sviluppo](/help/managing/enterprise-devops.md#content-movement)
+   * Processi automatizzati per [spostare il contenuto dalla produzione a test e sviluppo](/help/managing/enterprise-devops.md#content-movement)
 
 * **Migrazione**
 
@@ -354,7 +354,7 @@ Lo sviluppo è una fase cruciale che richiede qualcosa di più di una semplice c
 
 ### Prestazioni e test {#performance-and-testing}
 
-Una volta disponibile, la nuova applicazione deve essere sottoposta a test rigorosi, sia per la funzionalità che per [prestazioni](/help/sites-deploying/configuring-performance.md).
+Una volta disponibile, la nuova applicazione deve essere sottoposta a test rigorosi, sia per la funzionalità che per le [prestazioni](/help/sites-deploying/configuring-performance.md).
 
 >[!NOTE]
 >
@@ -366,14 +366,14 @@ Una volta disponibile, la nuova applicazione deve essere sottoposta a test rigor
 
 * **Test di accettazione per l&#39;utente finale**
 
-  [Test di accettazione utente](/help/sites-developing/acceptance-signoff.md) (UAT) è fondamentale per garantire che:
+  [Il test di accettazione utente](/help/sites-developing/acceptance-signoff.md) (UAT) è fondamentale per garantire che:
 
    * La soluzione soddisfa le esigenze di utenti e clienti
    * Il cliente/gli utenti accettano la soluzione (funzione, progettazione e prestazioni)
 
   Dovrebbe essere presente una checklist formalizzata per il passaggio del cliente; idealmente automatizzata ed eseguita di notte su un’istantanea. I risultati devono essere inviati al project manager e al team di sviluppo
 
-* **Test di prestazioni e carico**
+* **Test di prestazioni e di carico**
 
   I test di prestazioni e carico vengono utilizzati per garantire che la soluzione soddisfi i livelli di prestazioni richiesti, a carichi medi e di picco.
 
@@ -398,11 +398,11 @@ Il rollout della nuova applicazione richiede un’attenta pianificazione per gar
 
   La preparazione e la pianificazione contribuiranno a garantire un rollout senza problemi.
 
-* **Formazione**
+* **Corso di formazione**
 
   Assicurare che tutto il personale coinvolto sia stato formato.
 
-  Consulta [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) nel catalogo dei corsi.
+  Vedi [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) nel catalogo dei corsi.
 
 * **Amministratori formati**
 
@@ -428,7 +428,7 @@ Il rollout della nuova applicazione richiede un’attenta pianificazione per gar
 
   Per garantire la sicurezza della soluzione, eseguire test di penetrazione specifici e una gamma più ampia di test di sicurezza.
 
-  Consulta la [Elenco di controllo della sicurezza](/help/sites-administering/security-checklist.md) per ulteriori dettagli.
+  Per ulteriori dettagli, vedere l&#39;[elenco di controllo protezione](/help/sites-administering/security-checklist.md).
 
 ### Vai in diretta {#go-live}
 
@@ -464,7 +464,7 @@ Desideri che il tuo lancio sia il più semplice possibile. Anche in questo caso,
 
 Gli elenchi di controllo sono progettati per utente tipo. Si tratta dei ruoli con un coinvolgimento significativo nel ciclo di vita del progetto.
 
-Ci sono anche alcuni [altro utente tipo](#other-persona) che sono coinvolti in attività specifiche.
+Ci sono anche alcuni [altri utenti tipo](#other-persona) coinvolti in attività specifiche.
 
 ### Sponsor Progetto {#project-sponsor}
 
@@ -577,27 +577,27 @@ Il responsabile della sicurezza:
 
 ## Documenti e risultati finali richiesti {#required-documents-and-deliverables}
 
-Gli elenchi di controllo coprono **Documenti richiesti** e **Deliverables** per ogni fase cardine.
+Gli elenchi di controllo coprono i **documenti richiesti** e i **risultati finali** per ogni attività cardine.
 
 * Non esiste alcuna relazione 1:1 tra questi documenti; ad esempio, un gruppo di documenti richiesti può produrre un singolo risultato finale.
 * Un risultato finale da un utente tipo può essere un documento richiesto per un altro utente tipo durante la stessa fase cardine.
 
 ### Documenti richiesti {#required-documents}
 
-Il **Documenti richiesti** sono richieste dalla persona appropriata durante la produzione dei loro deliverable.
+I **documenti richiesti** sono necessari all&#39;utente appropriato durante la produzione dei risultati finali.
 
-Per ogni **Documento richiesto**, la persona deve indicare:
+Per ogni **Documento richiesto**, l&#39;utente tipo deve indicare:
 
-* **S/N**: se è stato ricevuto.
-* **1-3**: un’indicazione della qualità del documento ricevuto.
+* **Y/N**: se è stato ricevuto.
+* **1-3**: indicazione della qualità del documento ricevuto.
 
 ### Deliverables {#deliverables}
 
 Per ogni fase cardine, la persona appropriata è responsabile della consegna di documenti specifici e quindi dell’adempimento delle proprie responsabilità per una fase cardine specifica.
 
-Per ogni **Deliverable**, la persona deve indicare:
+Per ogni **Deliverable**, l&#39;utente tipo deve indicare:
 
-* **S/N**: se è stato completato.
+* **Y/N**: se è stato completato.
 
 I risultati finali vengono spesso utilizzati come **Documenti richiesti** per l&#39;attività cardine corrente o successiva.
 
@@ -617,7 +617,8 @@ Per le best practice sull’implementazione, l’amministrazione, lo sviluppo o 
 
 ## Aree principali della documentazione {#key-documentation-areas}
 
-* Documentazione dell’AEM Inoltre, rivestono particolare interesse le seguenti sezioni della documentazione dell’AEM (l’elenco non è tuttavia esaustivo):
+* Documentazione AEM
+Sono di particolare interesse (tuttavia l’elenco non è esaustivo) anche le seguenti sezioni della documentazione AEM:
 
    * [Sicurezza](/help/sites-developing/security.md)
    * [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md)
@@ -627,8 +628,8 @@ Per le best practice sull’implementazione, l’amministrazione, lo sviluppo o 
 
       * [Sviluppo: nozioni di base](/help/sites-developing/the-basics.md)
       * [Concetti MSM](/help/sites-administering/msm.md)
-      * [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
+      * [Linguaggio del modello HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
 
 * Documentazione correlata
 
-   * ADOBE EXPERIENCE CLOUD - [Pianificazione per Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Pianificazione per Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

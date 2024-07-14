@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configurazione della pagina per la modifica in blocco delle proprietà di pagina {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[Modifica in serie delle proprietà di pagina](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
+[La modifica in blocco delle proprietà della pagina](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
 
 A causa della possibilità di valori diversi, le proprietà della pagina non sono abilitate per la modifica in serie come impostazione predefinita. Devono essere esplicitamente consentiti (abilitati). Quando definisci le proprietà della pagina da rendere disponibili per la modifica in blocco, devi tenere in considerazione alcune implicazioni, ad esempio:
 
@@ -38,7 +38,7 @@ A causa della possibilità di valori diversi, le proprietà della pagina non son
 
 >[!NOTE]
 >
->La modifica in blocco è disponibile anche per Assets. È molto simile, ma differisce in alcuni punti. Consulta [Modifica delle proprietà di più risorse](/help/assets/metadata.md) per informazioni complete. Puoi personalizzare i campi nell’editor di metadati in blocco per le risorse utilizzando [Editor schema](/help/assets/metadata-schemas.md).
+>La modifica in blocco è disponibile anche per Assets. È molto simile, ma differisce in alcuni punti. Per informazioni complete, vedere [Modifica delle proprietà di più Assets](/help/assets/metadata.md). Puoi personalizzare i campi nell&#39;editor di metadati in blocco per Assets utilizzando l&#39;[editor schema](/help/assets/metadata-schemas.md).
 
 ## Abilitazione di un campo {#enabling-a-field}
 
@@ -54,17 +54,17 @@ A causa della possibilità di valori diversi, le proprietà della pagina non son
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
 
-I campi sono abilitati nel componente Pagina (*non* sul modello):
+I campi sono abilitati nel componente pagina (*not* nel modello):
 
-1. Utilizzando CRXDE Liti (o un metodo equivalente) apri il componente Pagina.
+1. Utilizzando CRXDE Lite (o un metodo equivalente) apri il componente Pagina.
 
    Esempio: `/apps/core/wcm/components/page/v1/page`
 
    >[!NOTE]
    >
-   >Questo esempio presuppone che i Componenti core siano stati installati nell&#39;istanza, il che avviene se l&#39;istanza è in esecuzione con il contenuto di esempio We.Retail. Consulta la [Documentazione dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per ulteriori informazioni.
+   >Questo esempio presuppone che i Componenti core siano stati installati nell&#39;istanza, il che avviene se l&#39;istanza è in esecuzione con il contenuto di esempio We.Retail. Per ulteriori informazioni, consulta la [documentazione dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
-1. Passa al campo richiesto all’interno di `cq:dialog` definizione.
+1. Passare al campo richiesto all&#39;interno della definizione `cq:dialog`.
 1. Definisci la seguente proprietà sul nodo del campo:
 
    * **Nome**: `allowBulkEdit`
@@ -81,13 +81,13 @@ I campi sono abilitati nel componente Pagina (*non* sul modello):
 
    >[!CAUTION]
    >
-   >Tu ***deve*** non modificare nulla in `/libs` percorso.
+   >***must*** non modificare nulla nel percorso `/libs`.
    >
-   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+   >Il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
    >
    >Il metodo consigliato per la configurazione e altre modifiche è:
    >
-   >    1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
+   >    1. Ricrea l&#39;elemento richiesto (ovvero, poiché esiste in `/libs`) in `/apps`
    >    1. Apporta le modifiche in `/apps`
 
 1. Seleziona **Salva tutto** per mantenere gli aggiornamenti.

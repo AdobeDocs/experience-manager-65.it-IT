@@ -33,25 +33,25 @@ Per applicare un layout personalizzato a un campo, eseguire le operazioni seguen
 
 ### Personalizzare il layout di un singolo campo {#customize-layout-of-a-single-field}
 
-1. Apri il modulo in **Stile** modalità. Per aprire il modulo in modalità stile, nella barra degli strumenti della pagina seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Stile**.
-1. Nella barra laterale, sotto **Oggetti modulo**, seleziona il campo e fai clic sul pulsante Modifica ![edit-button](assets/edit-button.png).
+1. Apri il modulo in modalità **Stile**. Per aprire il modulo in modalità stile, nella barra degli strumenti della pagina seleziona ![elenco a discesa nell&#39;area di lavoro](assets/canvas-drop-down.png) > **Stile**.
+1. Nella barra laterale, in **Oggetti modulo**, seleziona il campo e il pulsante di modifica ![edit-button](assets/edit-button.png).
 1. Seleziona lo stato del campo da personalizzare e specifica lo stile per tale stato.
 
    ![Specifica dello stile in linea di un campo](assets/edit-error-state.png)
 
 ### Personalizzare il layout di tutti i campi di un modulo {#customize-layout-of-all-the-fields-of-a-form}
 
-Con AEM Forms, ora puoi creare un tema e applicarlo al modulo. L’editor tema consente di specificare lo stile dei componenti modulo in un’unica posizione. Quando create un tema, specificate lo stile a livello di componente. Per ulteriori informazioni sui temi, consulta [Temi in AEM Forms](../../forms/using/themes.md).
+Con AEM Forms, ora puoi creare un tema e applicarlo al modulo. L’editor tema consente di specificare lo stile dei componenti modulo in un’unica posizione. Quando create un tema, specificate lo stile a livello di componente. Per ulteriori informazioni sui temi, vedere [Temi in AEM Forms](../../forms/using/themes.md).
 
 Creare un tema utilizzando Editor tema per personalizzare il layout di tutti i campi del modulo. Dopo aver creato un tema, effettuare le seguenti operazioni per applicarlo a un modulo:
 
 1. Apri il modulo in modalità di modifica.
-1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/field-level.png) > **Contenitore modulo adattivo** e quindi selezionare ![cmppr](assets/cmppr.png).
+1. In modalità di modifica, seleziona un componente, quindi seleziona ![livello campo](assets/field-level.png) > **Contenitore modulo adattivo**, quindi seleziona ![cmppr](assets/cmppr.png).
 1. Nella barra laterale, in Tema modulo adattivo, seleziona il tema creato utilizzando l’Editor tema.
 
 ## Creare un layout di campo personalizzato {#create-a-custom-field-layout}
 
-1. Apri CRXDE Liti. L’URL predefinito è https://&#39;[server]:[porta]&#39;/crx/de.
+1. Apri CRXDE Lite. L&#39;URL predefinito è https://&#39;[server]:[porta]&#39;/crx/de.
 1. Copiare un layout di campo dal nodo /libs/fd/af/layouts/field (ad esempio, defaultFieldLayout) al nodo /apps (ad esempio, /apps/af-field-layout).
 1. Rinomina il nodo copiato e il file defaultFieldLayout.jsp. Ad esempio, errorOnRight.jsp.
 
@@ -81,7 +81,7 @@ Creare un tema utilizzando Editor tema per personalizzare il layout di tutti i c
    ```
 
 1. Per migliorare l’aspetto e il comportamento, includi la libreria client creata nel file di layout (errorOnRight.jsp).
-1. Apri la finestra di dialogo di modifica del campo e seleziona la **Stile** scheda. In **Configura layout campo** , selezionare il layout appena creato e fare clic su **OK**.
+1. Apri la finestra di dialogo di modifica del campo e seleziona la scheda **Stile**. Nella casella a discesa **Configura layout campo**, selezionare il layout appena creato e fare clic su **OK**.
 
 Il pacchetto ErrorOnRight.zip contiene codice per visualizzare messaggi di errore sul lato destro dei campi.
 

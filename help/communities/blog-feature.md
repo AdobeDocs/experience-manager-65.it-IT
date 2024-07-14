@@ -1,6 +1,6 @@
 ---
 title: Funzione blog
-description: Scopri in che modo la funzione blog supporta la fornitura di informazioni sulla community in un formato di diario. Le voci vengono effettuate nell’ambiente di pubblicazione da utenti autorizzati.
+description: Scopri in che modo la funzione blog supporta la fornitura di informazioni sulla community in un formato di diario. Le voci vengono effettuate nell’ambiente Publish da utenti autorizzati.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -21,20 +21,20 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-La funzione blog per AEM Communities si è trasformata da attività di authoring a una vera e propria attività community che ha luogo nell’ambiente di pubblicazione.
+La funzione blog per AEM Communities si è trasformata da attività di authoring a una vera e propria attività community che ha luogo nell’ambiente Publish.
 
-La funzione blog supporta la fornitura di informazioni sulla community in formato di diario. I post di blog vengono inseriti nell’ambiente di pubblicazione da membri autorizzati (utenti registrati e connessi).
+La funzione blog supporta la fornitura di informazioni sulla community in formato di diario. I post di blog vengono inseriti in Publish da membri autorizzati (utenti registrati e connessi).
 
 La funzione blog fornisce:
 
-* Creazione lato pubblicazione di articoli e commenti sui blog
+* Creazione lato Publish di articoli e commenti sui blog
 * Modifica Rich Text
 * Immagini in linea (con supporto per il trascinamento della selezione)
-* Contenuto di social network incorporato ([Supporto per incorporamento](/help/communities/blog-developer-basics.md#allowing-rich-media))
+* Contenuto per social network incorporato ([oSupporto per l&#39;incorporamento](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * Modalità bozza
 * Pubblicazione pianificata
-* Componi per conto (a [membro privilegiato](/help/communities/users.md#privileged-members-group) può creare contenuti per conto di un altro membro della community)
-* [Moderazione in contesto e in blocco](/help/communities/moderate-ugc.md) di articoli di blog e commenti
+* Componi per conto (un [membro con privilegi](/help/communities/users.md#privileged-members-group) può creare contenuto per conto di un altro membro della community)
+* [Moderazione in blocco e in contesto](/help/communities/moderate-ugc.md) di articoli e commenti di blog
 
 Questa sezione della documentazione descrive:
 
@@ -43,7 +43,7 @@ Questa sezione della documentazione descrive:
 
 >[!NOTE]
 >
->I componenti `Journal` e `Journal Sidebar` hanno titolo `Blog` e `Blog Sidebar`.
+>I componenti `Journal` e `Journal Sidebar` sono denominati `Blog` e `Blog Sidebar`.
 >
 >La funzione blog disponibile in AEM 6.0 e nelle versioni precedenti è stata rimossa. Era basato su un modello e consentiva solo agli autori di creare contenuti nell’ambiente di authoring.
 
@@ -56,15 +56,15 @@ Se desiderate aggiungere un blog a una pagina in modalità di creazione, utilizz
 
 Trascinali nella posizione in cui dovrebbe apparire il blog.
 
-Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
+Per informazioni necessarie, visitare [Nozioni di base sui componenti delle community](/help/communities/basics.md).
 
-Quando [librerie lato client richieste](/help/communities/blog-developer-basics.md#essentials-for-client-side) sono inclusi, `Blog` Il componente viene visualizzato come segue:
+Quando sono incluse le [librerie lato client richieste](/help/communities/blog-developer-basics.md#essentials-for-client-side), il componente `Blog` viene visualizzato come segue:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Configurazione del blog {#configuring-blog}
 
-Seleziona la inserita `Blog` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo modifica.
+Selezionare il componente `Blog` inserito in modo da poter accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![configura](assets/configure-new.png)
 
@@ -72,7 +72,7 @@ Seleziona la inserita `Blog` in modo da poter accedere e selezionare `Configure`
 
 #### Scheda Impostazioni {#settings-tab}
 
-Sotto **Impostazioni** , specificare le funzioni di base del blog:
+Nella scheda **Impostazioni**, specifica le caratteristiche di base del blog:
 
 * **Consenti miniatura allegato**
 
@@ -98,7 +98,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
   Aggiungere i membri con privilegi autorizzati a creare il contenuto.
 
-* **Blocca i contenuti generati dall&#39;utente in modalità Modifica autore**
+* **Blocca contenuto generato dall&#39;utente in modalità Modifica autore**
 
   Se questa opzione è abilitata, blocca i contenuti generati dagli utenti durante la modifica in modalità Creazione.
 
@@ -134,7 +134,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Consenti assegnazione tag**
 
-  Se questa opzione è selezionata, consentire ai membri di aggiungere etichette tag ai propri post (vedere **Campo tag** ). L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consentire ai membri di aggiungere etichette tag ai propri post (vedere la scheda **Campo tag**). L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti caricamenti file**
 
@@ -142,11 +142,11 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Dimensione massima file**
 
-  Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+  Rilevante solo se è selezionato `Allow File Uploads`. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
 * **Tipi di file consentiti**
 
-  Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
+  Rilevante solo se è selezionato `Allow File Uploads`. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Dimensione massima file immagine allegato**
 
@@ -166,21 +166,21 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Consenti Segui**
 
-  Se questa opzione è selezionata, includi la seguente funzione per gli articoli di blog, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, includere la seguente funzionalità per gli articoli di blog, che consente ai membri di ricevere [notifica](/help/communities/notifications.md) dei nuovi post. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti iscrizioni e-mail**
 
-  Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede `Allow Following` da controllare e [e-mail configurato](/help/communities/email.md). L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede `Allow Following` per essere controllato e [configurato](/help/communities/email.md). L&#39;impostazione predefinita è deselezionata.
 
-* **Visualizza badge**
+* **Distintivi visualizzati**
 
-  Se questa opzione è selezionata, vengono visualizzati i risultati ottenuti e assegnati [badge](/help/communities/implementing-scoring.md) con il post di blog di un membro. L&#39;impostazione predefinita è deselezionata.
+  Se selezionato, visualizza i [distintivi](/help/communities/implementing-scoring.md) ottenuti e assegnati con il post di blog di un membro. L&#39;impostazione predefinita è deselezionata.
 
 * **Non ricevere risposte nella pagina dell&#39;elenco**
 
 * **Consenti contenuto in primo piano**
 
-  Se questa opzione è selezionata, l’idea viene identificata come [contenuto in primo piano](/help/communities/featured.md). L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, l&#39;idea viene identificata come [contenuto in primo piano](/help/communities/featured.md). L&#39;impostazione predefinita è deselezionata.
 
 * **Abilita menzione**
 
@@ -196,7 +196,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Sotto **Moderazione utenti** , specificare le impostazioni di moderazione:
+Nella scheda **Moderazione utente**, specifica le impostazioni di moderazione:
 
 * **Rifiuta post**
 
@@ -222,17 +222,17 @@ Sotto **Moderazione utenti** , specificare le impostazioni di moderazione:
 
   Immettere il numero di volte in cui un argomento o un commento deve essere segnalato dai membri prima che il moderatore riceva una notifica. Il valore predefinito è 1 (una tantum).
 
-* **Limite segnalazione**
+* **Limite di segnalazione**
 
   Immettere il numero di volte in cui un argomento o un commento deve essere contrassegnato prima di essere nascosto dalla visualizzazione pubblica. Se è impostato su -1, l&#39;argomento o il commento contrassegnato non viene mai nascosto. Altrimenti, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Sotto **Campo tag** , specificare quali tag possono essere applicati se **Consenti assegnazione tag** è controllato il **Impostazioni** scheda :
+Nella scheda **Campo tag**, specifica quali tag possono essere applicati se nella scheda **Impostazioni** è selezionata l&#39;opzione **Consenti assegnazione tag**:
 
-* **Namespace consentiti**
+* **Spazi dei nomi consentiti**
 
-  Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati ai tag all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
+  Rilevante se `Allow Tagging` è selezionato nella scheda **Impostazioni**. I tag che possono essere applicati sono limitati ai tag all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite suggerimenti**
 
@@ -240,9 +240,9 @@ Sotto **Campo tag** , specificare quali tag possono essere applicati se **Consen
 
 ### Configurazione della barra laterale blog {#configuring-blog-sidebar}
 
-Quando si fa doppio clic su `Blog Sidebar` componente, viene visualizzata una finestra di dialogo per modifica.
+Quando si fa doppio clic sul componente `Blog Sidebar`, viene visualizzata una finestra di dialogo per modifica.
 
-Sotto **Impostazioni barra laterale diario** , specificare il formato della data per gli archivi e il tipo di voci da visualizzare nella barra laterale:
+Nella scheda **Impostazioni barra laterale diario**, specificare il formato della data per gli archivi e il tipo di voci da visualizzare nella barra laterale:
 
 ![blog-component-sidebar](assets/blog-component-sidebar.png)
 
@@ -268,7 +268,7 @@ Sotto **Impostazioni barra laterale diario** , specificare il formato della data
 
 * **Percorso componente blog**
 
-  *(Facoltativo)* Posizione della risorsa blog da cui devono essere elencati gli articoli di blog. Se non specificato, viene utilizzato il componente resourceType `social/journal/components/hbs/journal` che viene visualizzato sulla stessa pagina.
+  *(Facoltativo)* Posizione della risorsa blog da cui elencare gli articoli di blog. Se non specificato, viene utilizzato il componente di resourceType `social/journal/components/hbs/journal` visualizzato nella stessa pagina.
 
    * Ad esempio `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -290,47 +290,47 @@ Altre funzionalità dipendono dal fatto che il visitatore del sito sia un modera
 
 Quando si crea un articolo di blog, è possibile scegliere di effettuare le seguenti operazioni:
 
-1. Pubblica immediatamente
-1. Pubblicare una bozza
-1. Pubblica a una data e un’ora pianificate
+1. Publish immediatamente
+1. Publish una bozza
+1. Publish a una data e un’ora pianificate
 
 Gli articoli del blog vengono visualizzati nella scheda appropriata (Pubblicato, Bozze o Pianificato) per i membri in grado di creare al momento della pubblicazione.
 
 #### Moderatori e amministratori {#moderators-and-administrators}
 
-Quando l&#39;utente connesso dispone dei privilegi di moderatore o amministratore, è in grado di eseguire [attività di moderazione](/help/communities/moderate-ugc.md) (come consentito dalla configurazione del componente) in tutti gli articoli e i commenti di blog pubblicati in un blog.
+Quando l&#39;utente connesso dispone dei privilegi di moderatore o amministratore, può eseguire [attività di moderazione](/help/communities/moderate-ugc.md) (come consentito dalla configurazione del componente) su tutti gli articoli e i commenti del blog pubblicati in un blog.
 
-![moderator-homepage](assets/moderator-homepage.png)
+![moderatore-homepage](assets/moderator-homepage.png)
 
 #### Membri {#members}
 
-Quando l&#39;utente connesso è un membro della community o [membro privilegiato](/help/communities/users.md#privileged-members-group) (a seconda della configurazione), è possibile selezionare `New Article` per creare e pubblicare un nuovo articolo di blog.
+Quando l&#39;utente connesso è un membro della community o [membro privilegiato](/help/communities/users.md#privileged-members-group) (a seconda della configurazione), può selezionare `New Article` per creare e pubblicare un nuovo articolo di blog.
 
 In particolare, essi possono:
 
 * Creare un articolo di blog
-* Pubblica un nuovo articolo di blog per conto di un altro membro
-* Pubblica un commento su un articolo di blog
+* Post un nuovo articolo di blog per conto di un altro membro
+* Post: commento a un articolo di blog
 * Modifica il proprio articolo o commento sul blog
 * Eliminare il proprio articolo o commento del blog
 * Contrassegna gli articoli o i commenti di altri blog
 
 ![member-homepage](assets/member-homepage.png)
 
-![create-blog](assets/create-blog.png)
+![crea-blog](assets/create-blog.png)
 
 #### Anonimo {#anonymous}
 
 I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere gli articoli e i commenti del blog pubblicati, tradurli se supportati, ma non possono aggiungere un articolo o un commento del blog né contrassegnare articoli o commenti di altri utenti.
 
-![anonymous-user-view](assets/anonymous-user-view.png)
+![vista utente anonimo](assets/anonymous-user-view.png)
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sul sito [Nozioni di base sul blog](/help/communities/blog-developer-basics.md) pagina per sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Blog Essentials](/help/communities/blog-developer-basics.md) per sviluppatori.
 
-Per la moderazione dei post e dei commenti di blog, consultate [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
+Per la moderazione dei post e dei commenti del blog, vedere [Moderazione del contenuto generato dall&#39;utente](/help/communities/moderate-ugc.md).
 
-Per assegnare tag ai post e ai commenti di blog, consultate [Assegnazione di tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).
+Per assegnare tag ai post e ai commenti del blog, vedere [Assegnazione di tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).
 
-Per la traduzione di post e commenti di blog, vedi [Traduzione di contenuti generati dall&#39;utente](/help/communities/translate-ugc.md).
+Per la traduzione dei post e dei commenti del blog, vedere [Traduzione di contenuto generato dall&#39;utente](/help/communities/translate-ugc.md).

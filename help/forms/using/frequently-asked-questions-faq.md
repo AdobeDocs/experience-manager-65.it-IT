@@ -17,4 +17,4 @@ ht-degree: 0%
 
 1. Perché i codici a barre e il campo firma non vengono visualizzati nel modulo HTML 5?
 
-   Risposta: i campi dei codici a barre e delle firme non sono rilevanti in scenari HTML o mobili. Questi campi vengono visualizzati come area non interattiva. Tuttavia, AEM Forms Designer fornisce un nuovo campo a mano che può essere utilizzato al posto del campo firma. È inoltre possibile aggiungere una [widget personalizzato](../../forms/using/custom-widgets.md) per i codici a barre e integrarlo.
+   Risposta: i campi dei codici a barre e delle firme non sono rilevanti in scenari HTML o mobili. Questi campi vengono visualizzati come area non interattiva. Tuttavia, AEM Forms Designer fornisce un nuovo campo a mano libera della firma che può essere utilizzato al posto del campo della firma. È inoltre possibile aggiungere un [widget personalizzato](../../forms/using/custom-widgets.md) per i codici a barre e integrarlo.

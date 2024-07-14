@@ -29,22 +29,22 @@ Questo miglioramento consente di controllare le azioni CRUD (Create, Read, Updat
 * Utente aggiunto a un gruppo
 * Modifiche delle autorizzazioni di un utente o gruppo esistente
 
-Per impostazione predefinita, le voci vengono scritte nel `error.log` file. Per semplificare il monitoraggio, si consiglia di reindirizzarli a un file di registro separato. Ulteriori informazioni su come eseguire questa operazione nel paragrafo seguente.
+Per impostazione predefinita, le voci vengono scritte nel file `error.log`. Per semplificare il monitoraggio, si consiglia di reindirizzarli a un file di registro separato. Ulteriori informazioni su come eseguire questa operazione nel paragrafo seguente.
 
 ## Reindirizzamento dell&#39;output a un file di log separato {#redirecting-the-output-to-a-separate-log-file}
 
-Per reindirizzare l&#39;output di registrazione a un file di registro separato, creare un **Logger di registrazione Sling di Apache** configurazione. Utilizziamo `useraudit.log` come nome del file separato nell’esempio seguente.
+Per reindirizzare l&#39;output di registrazione a un file di registro separato, creare una configurazione di **Apache Sling Logging Logger**. Utilizzare `useraudit.log` come nome del file separato nell&#39;esempio seguente.
 
-1. Passa alla console Web navigando in *https://serveraddress:serverport/system/console/configMgr*
-1. Cerca **Configurazione logger registrazione Sling Apache**. Premere quindi &quot;+&quot; sul lato destro della voce per creare una configurazione di fabbrica.
+1. Vai alla console Web navigando su *https://serveraddress:serverport/system/console/configMgr*
+1. Cerca **Configurazione del logger di registrazione Sling Apache**. Premere quindi &quot;+&quot; sul lato destro della voce per creare una configurazione di fabbrica.
 1. Crea la seguente configurazione:
 
-   * **Livello registro:** Informazioni
+   * **Livello registro:** informazioni
    * **File di registro:** logs/useraudit.log
-   * **Pattern messaggio:** livello predefinito
+   * **Modello messaggio:** impostazione predefinita livello
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Per immettere entrambi i logger nel **Logger** , è necessario immettere il nome del primo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
+   Per immettere entrambi i logger nel campo **Logger**, immettere il nome del primo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
 
 ## Output di esempio {#example-output}
 

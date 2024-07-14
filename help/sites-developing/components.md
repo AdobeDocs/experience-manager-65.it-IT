@@ -45,11 +45,11 @@ Ogni componente AEM:
 
 * È un tipo di risorsa.
 * È un insieme di script che realizzano completamente una funzione specifica.
-* Può funzionare in *isolamento*, ovvero all&#39;interno dell&#39;AEM o di un portale.
+* Può funzionare in *isolamento*, ovvero all&#39;interno di AEM o di un portale.
 
 ## Componenti standard all’interno dell’AEM {#out-of-the-box-components-within-aem}
 
-L&#39;AEM viene fornito con una varietà di [componenti pronti all’uso](/help/sites-authoring/default-components.md) che offrono funzionalità complete, tra cui:
+AEM viene fornito con una serie di [componenti predefiniti](/help/sites-authoring/default-components.md) che forniscono funzionalità complete, tra cui:
 
 * Sistema paragrafi ( `parsys`)
 * Pagina ( `responsivegrid` - solo interfaccia touch)
@@ -57,7 +57,7 @@ L&#39;AEM viene fornito con una varietà di [componenti pronti all’uso](/help/
 * Immagine, con testo associato
 * Barra degli strumenti
 
-I componenti forniti e il loro utilizzo all’interno del [siti Web We.Retail di esempio](/help/sites-developing/we-retail.md) fornite illustrano come implementare e utilizzare i componenti. I componenti sono forniti con tutto il codice sorgente e possono essere utilizzati così come sono o come punti di partenza per i componenti modificati o estesi.
+I componenti forniti e il loro utilizzo nei [siti Web We.Retail di esempio](/help/sites-developing/we-retail.md) forniti illustrano come implementare e utilizzare i componenti. I componenti sono forniti con tutto il codice sorgente e possono essere utilizzati così come sono o come punti di partenza per i componenti modificati o estesi.
 
 ### Componenti core e componenti di base {#core-components-and-foundation-components}
 
@@ -66,19 +66,19 @@ Sono disponibili due set di componenti AEM forniti dall’Adobe:
 * [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Componenti di base](/help/sites-authoring/default-components-foundation.md)
 
-**Componenti core** sono state introdotte con AEM 6.3 e offrono funzionalità flessibili e avanzate per l’authoring. Il [Sito di riferimento We.Retail](/help/sites-developing/we-retail.md) illustra come utilizzare i Componenti core e le best practice per lo sviluppo dei componenti.
+**Componenti core** sono stati introdotti con AEM 6.3 e offrono funzionalità flessibili e avanzate per l&#39;authoring. Il [sito di riferimento We.Retail](/help/sites-developing/we-retail.md) illustra come utilizzare i Componenti core e rappresenta le best practice correnti per lo sviluppo dei componenti.
 
-**Componenti di base** sono disponibili con AEM per molte versioni e sono preconfigurati in un’installazione standard per AEM. Anche se ancora supportate, la maggior parte sono state dichiarate obsolete, non sono più migliorate e si basano su tecnologie legacy.
+**Componenti Foundation** sono disponibili con AEM per molte versioni e sono disponibili come preconfigurati in un&#39;installazione AEM standard. Anche se ancora supportate, la maggior parte sono state dichiarate obsolete, non sono più migliorate e si basano su tecnologie legacy.
 
 >[!NOTE]
 >
->[Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) rappresenta le best practice correnti per la progettazione e lo sviluppo dei componenti e funge da implementazioni di riferimento.
+>[Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) rappresentano le best practice correnti per la progettazione e lo sviluppo di componenti e fungono da implementazioni di riferimento.
 >
->[Strumenti di modernizzazione AEM](modernization-tools.md) può agevolare la migrazione ai Componenti core.
+>[Gli strumenti di modernizzazione dell&#39;AEM](modernization-tools.md) possono agevolare la migrazione ai Componenti core.
 
 ### Visualizzazione dei componenti disponibili {#viewing-available-components}
 
-Per una panoramica di tutti i componenti disponibili nell’istanza AEM, utilizza [Console Componenti](/help/sites-authoring/default-components-console.md).
+Per una panoramica di tutti i componenti disponibili nell&#39;istanza AEM, utilizzare la [console Componenti](/help/sites-authoring/default-components-console.md).
 
 In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tutti i componenti disponibili nell’archivio.
 

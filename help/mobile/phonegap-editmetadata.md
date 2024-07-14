@@ -22,7 +22,7 @@ ht-degree: 5%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Il **Gestisci app** Il riquadro e la pagina &quot;Gestione app&quot; consentono di visualizzare e modificare i metadati dell’applicazione. I metadati dell’app sono dettagli necessari per rilasciare un’applicazione nello store di un fornitore. Possono includere metadati comuni, metadati iOS e schermate. Consulta la [Gestisci sezione app](/help/mobile/phonegap-app-details-tile.md) per ulteriori dettagli sui metadati comuni e di iOS.
+Il riquadro **Gestione app** e la pagina &quot;Gestione app&quot; consentono di visualizzare e modificare i metadati dell&#39;applicazione. I metadati dell’app sono dettagli necessari per rilasciare un’applicazione nello store di un fornitore. Possono includere metadati comuni, metadati iOS e schermate. Per ulteriori dettagli sui metadati comuni e iOS, consulta [Gestione riquadro app](/help/mobile/phonegap-app-details-tile.md).
 
 ## Modifica dei dati dell’app {#editing-the-app-data}
 
@@ -32,7 +32,7 @@ Per modificare i metadati dell’app:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Per visualizzare o modificare i dettagli facendo clic su &#39;...&#39; nell&#39;angolo inferiore destro della **Gestisci app** affiancare.
+1. Per visualizzare o modificare i dettagli facendo clic su &#39;...&#39; nell&#39;angolo inferiore destro del riquadro **Gestione app**.
 
 1. Immetti o visualizza i dettagli in una delle cinque schede disponibili, come illustrato nella figura riportata di seguito.
 
@@ -42,7 +42,7 @@ Per modificare i metadati dell’app:
 
 Puoi modificare i metadati comuni e di IOS:
 
-* Seleziona la **Avanzate** dalla pagina di descrizione dell’app.
+* Seleziona la scheda **Avanzate** dalla pagina di descrizione dell&#39;app.
 * Modifica o visualizza i metadati comuni e di IOS. Per ulteriori informazioni, consulta le figure riportate di seguito.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
@@ -57,12 +57,12 @@ Puoi includere le schermate dell’app nel rollup dei metadati. Alcuni fornitori
 
 Per aggiungere una risorsa come schermata:
 
-1. In modalità di modifica del **Gestisci app** , fare clic su aggiungi (icona più).
-1. Seleziona la risorsa e fai clic su **Seleziona** per aggiungere la risorsa.
+1. In modalità di modifica della pagina **Gestione app**, fare clic su Aggiungi (icona +).
+1. Seleziona la risorsa e fai clic su **Seleziona** per aggiungerla.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Seleziona la risorsa e fai clic su **Seleziona** per aggiungere la risorsa.
+1. Seleziona la risorsa e fai clic su **Seleziona** per aggiungerla.
 
 >[!NOTE]
 >

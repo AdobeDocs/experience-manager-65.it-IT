@@ -20,16 +20,16 @@ ht-degree: 0%
 
 Poiché l’interfaccia touch sostituisce l’interfaccia classica, l’utente o l’amministratore dell’istanza AEM deve prendere una decisione attiva per continuare a utilizzare l’interfaccia classica. Poiché l’interfaccia classica non viene più mantenuta, non è possibile per l’utente che esegue l’authoring passare semplicemente dall’interfaccia classica all’equivalente nell’interfaccia touch.
 
-Per semplificare l’authoring degli utenti, l’interfaccia touch consente di passare all’interfaccia classica quando necessario. Consulta la [Selezione dell’interfaccia utente](/help/sites-authoring/select-ui.md) per informazioni dettagliate, consulta la documentazione standard sull’authoring.
+Per semplificare l’authoring degli utenti, l’interfaccia touch consente di passare all’interfaccia classica quando necessario. Per informazioni dettagliate, consulta la sezione [Selezione dell&#39;interfaccia utente](/help/sites-authoring/select-ui.md) nella documentazione standard per l&#39;authoring.
 
 >[!NOTE]
 >
 >Le istanze aggiornate da una versione precedente manterranno l’interfaccia utente classica per l’authoring delle pagine.
 >
->Dopo l’aggiornamento, l’authoring delle pagine non passerà automaticamente all’interfaccia touch, ma puoi configurarlo utilizzando la[Configurazione OSGi](/help/sites-deploying/configuring-osgi.md) del **Servizio modalità interfaccia utente di authoring WCM** ( `AuthoringUIMode` servizio). Consulta [Sostituzioni dell’interfaccia utente per l’editor](#uioverridesfortheeditor).
+>Dopo l&#39;aggiornamento, l&#39;authoring delle pagine non passerà automaticamente all&#39;interfaccia touch, ma puoi configurarlo utilizzando la [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) del **servizio modalità interfaccia utente di authoring WCM** (servizio `AuthoringUIMode`). Consulta [Sostituzioni interfaccia utente per l&#39;editor](#uioverridesfortheeditor).
 
 ## Configurazione dell’interfaccia utente predefinita per l’istanza {#configuring-the-default-ui-for-your-instance}
 
-Un amministratore di sistema può configurare l’interfaccia utente visualizzata all’avvio e all’accesso utilizzando [Mappatura radice](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
+Un amministratore di sistema può configurare l&#39;interfaccia utente visualizzata all&#39;avvio e all&#39;accesso utilizzando [Root Mapping](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
 
 Questo può essere ignorato dai valori predefiniti dell&#39;utente o dalle impostazioni di sessione.

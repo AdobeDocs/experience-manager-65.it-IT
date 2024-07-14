@@ -18,7 +18,7 @@ ht-degree: 6%
 
 # Utilizzo del servizio Assembler{#using-assembler-service}
 
-Il servizio Assembler consente di combinare, ridisporre e integrare documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+Il servizio Assembler consente di combinare, ridisporre e integrare documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio Assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 È possibile utilizzare il servizio di assemblaggio per le operazioni seguenti:
 
@@ -87,7 +87,7 @@ Quando si assembla un documento, è possibile utilizzare la numerazione Bates pe
 
 Nell’illustrazione seguente viene illustrato un documento PDF che contiene un identificatore univoco nell’intestazione del documento.
 
-![Un documento PDF che contiene un identificatore univoco nell’intestazione del documento](do-not-localize/as_batesnumber.png)
+![Documento PDF contenente un identificatore univoco nell&#39;intestazione del documento](do-not-localize/as_batesnumber.png)
 
 Un documento PDF che contiene un identificatore univoco nell’intestazione del documento
 
@@ -149,11 +149,11 @@ In genere, i documenti XDP possono contenere immagini a cui si fa riferimento tr
   </tr> 
   <tr> 
    <td>relativo</td> 
-   <td>Incorpora tutte le immagini a cui si fa riferimento tramite riferimenti relativi nell’XDP di origine<br /> documento.</td> 
+   <td>Incorpora tutte le immagini a cui si fa riferimento tramite riferimenti relativi nel documento XDP<br /> di origine.</td> 
   </tr> 
   <tr> 
    <td>assoluto</td> 
-   <td>Incorpora tutte le immagini a cui si fa riferimento tramite riferimenti assoluti nell’XDP di origine<br /> documento.</td> 
+   <td>Incorpora tutte le immagini a cui si fa riferimento tramite riferimenti assoluti nel documento XDP<br /> di origine.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -223,7 +223,7 @@ fragment="myFragment"/>
 
 Il supporto per l’inserimento dinamico di frammenti di modulo supporta il controllo di un’unica origine. Puoi mantenere un’unica origine dei componenti di uso comune. Ad esempio, puoi creare un frammento per il banner dell’azienda. Se il banner cambia, devi solo modificare il frammento. Gli altri moduli che includono il frammento rimangono invariati.
 
-I progettisti di moduli utilizzano Progettazione LiveCycli per creare frammenti di modulo. Questi frammenti sono sottomaschere con nomi univoci all’interno di un modulo XFA. I progettisti di moduli utilizzano inoltre Designer per creare moduli XFA con punti di inserimento con un nome univoco. Il programmatore scrive documenti DDX che specificano la modalità di inserimento dei frammenti nel modulo XFA.
+I progettisti di moduli utilizzano Designer di LiveCycle per creare frammenti di modulo. Questi frammenti sono sottomaschere con nomi univoci all’interno di un modulo XFA. I progettisti di moduli utilizzano inoltre Designer per creare moduli XFA con punti di inserimento con un nome univoco. Il programmatore scrive documenti DDX che specificano la modalità di inserimento dei frammenti nel modulo XFA.
 
 Nella figura seguente vengono illustrati due moduli XML (modelli XFA). La maschera a sinistra contiene un punto di inserimento denominato myInsertionPoint. Il modulo a destra contiene un frammento denominato myFragment.
 
@@ -326,11 +326,11 @@ L&#39;esempio seguente è un documento DDX che utilizza segnalibri per disassemb
 
 È possibile utilizzare i documenti DDX che fanno sì che il servizio Assembler chiami i seguenti servizi ciclo LiveC. Il servizio Assembler può chiamare solo i servizi installati con LiveCycle.
 
-**Servizio Reader Extensions**: consente agli utenti di Adobe Reader di firmare digitalmente il documento PDF risultante.
+**Servizio estensioni di Reader**: consente agli utenti di Adobe Reader di firmare digitalmente il documento PDF risultante.
 
-**servizio Forms**: unisce un file XDP e un file di dati XML per produrre un documento PDF contenente il modulo interattivo compilato.
+**Servizio Forms**: unisce un file XDP e un file di dati XML per produrre un documento PDF contenente il modulo interattivo compilato.
 
-**Servizio di output**: converte un modulo XML dinamico in un documento PDF che contiene un modulo non interattivo (appiattisce il modulo). Il servizio Assembler appiattisce i moduli XML statici e i moduli Acrobat senza chiamare il servizio di output.
+**Servizio di output**: converte un modulo XML dinamico in un documento PDF contenente un modulo non interattivo (appiattisce il modulo). Il servizio Assembler appiattisce i moduli XML statici e i moduli Acrobat senza chiamare il servizio di output.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

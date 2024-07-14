@@ -1,6 +1,6 @@
 ---
-title: Servizio Application Manager - Guida introduttiva JavaAPI (SOAP)
-description: Servizio Application Manager - Guida introduttiva JavaAPI (SOAP)
+title: Guida introduttiva JavaAPI Service di Application Manager (SOAP)
+description: Guida introduttiva JavaAPI Service di Application Manager (SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -32,7 +32,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva dell’API Java (SOAP) nella programmazione con moduli AEM si basa su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva dell’API Java (SOAP) nella programmazione con moduli AEM si basa su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (modalità SOAP): distribuzione di applicazioni tramite API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
@@ -138,7 +138,7 @@ Esempio Nell&#39;esempio di codice Java seguente viene importata un&#39;applicaz
 
 ## Quick Start (modalità SOAP): rimozione di un’applicazione tramite API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene rimossa un&#39;applicazione denominata *Crittografia documento*.
+Nell&#39;esempio di codice Java seguente viene rimossa un&#39;applicazione denominata *EncryptDocument*.
 
 ```java
  /*

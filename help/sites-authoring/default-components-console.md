@@ -36,16 +36,16 @@ Per visualizzare i dettagli di un componente specifico, fai clic sulla risorsa r
 
 * **Proprietà**
 
-  ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
+  ![schermata_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
 
   Nella scheda Proprietà puoi:
 
    * Visualizzare le proprietà generali del componente.
-   * Visualizza come [è stata definita un&#39;icona o un&#39;abbreviazione](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
+   * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
 
       * Facendo clic sull’origine dell’icona si aprirà quel componente.
 
-   * Visualizza **Tipo di risorsa** e **Super Type risorsa** (se definito) per il componente.
+   * Visualizzare il **Tipo risorsa** e il **Super Tipo risorsa** (se definito) per il componente.
 
       * Facendo clic sul Super Type della risorsa si aprirà quel componente.
 
@@ -67,6 +67,6 @@ Per visualizzare i dettagli di un componente specifico, fai clic sulla risorsa r
 
 * **Documentazione**
 
-  Se lo sviluppatore ha fornito [documentazione del componente](/help/sites-developing/developing-components.md#documenting-your-component), apparirà sulla **Documentazione** scheda. Se la documentazione non è disponibile, il **Documentazione** non verrà visualizzata.
+  Se lo sviluppatore ha fornito [documentazione per il componente](/help/sites-developing/developing-components.md#documenting-your-component), questa verrà visualizzata nella scheda **Documentazione**. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata.
 
   ![Documentazione](assets/chlimage_1-171.png)

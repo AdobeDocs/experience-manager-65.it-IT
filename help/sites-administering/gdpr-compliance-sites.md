@@ -26,41 +26,41 @@ Il Regolamento generale sulla protezione dei dati dell&#39;Unione Europea sui di
 
 AEM Sites è pronta ad aiutare i clienti a rispettare gli obblighi di conformità ai requisiti RGPD. Questa pagina guida i clienti attraverso le procedure per gestire le richieste RGPD in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con codice.
 
-Per ulteriori informazioni, consulta [Pagina RGPD nel Centro per la privacy di Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Consulta [Preparazione all’AEM per il RGPD](/help/managing/data-protection-and-privacy.md) per ulteriori dettagli.
+>Consulta [Preparazione all&#39;AEM per il RGPD](/help/managing/data-protection-and-privacy.md) per ulteriori dettagli.
 
 ## Author Server {#author-server}
 
-Gli account utente e i contenuti UGC sul server di authoring sono trattati in [Documentazione di Platform RGPD](/help/managing/data-protection-and-privacy.md).
+Gli account utente e i contenuti UGC sul server di authoring sono trattati nella [documentazione RGPD di Platform](/help/managing/data-protection-and-privacy.md).
 
-## Server di pubblicazione {#publish-server}
+## Server Publish {#publish-server}
 
-Gli account utente utilizzati per autenticare i visitatori sul sito e i contenuti UGC sul server di pubblicazione sono trattati in [Documentazione di Platform RGPD](/help/managing/data-protection-and-privacy.md).
+Gli account utente utilizzati per autenticare i visitatori sul sito e i contenuti UGC sul server di pubblicazione sono trattati nella [documentazione RGPD di Platform](/help/managing/data-protection-and-privacy.md).
 
 Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terzi o ad Adobe Campaign per un’ulteriore elaborazione.
 
 ## Consenso/rinuncia {#opt-in-opt-out}
 
-L&#39;AEM ha un [servizio di rinuncia ai cookie](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire il consenso/diniego per gli utenti.
+AEM dispone di un servizio di rinuncia ai cookie [](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire il consenso/diniego per gli utenti.
 
 ## Approfondimenti migliorati da Analytics {#enhanced-insights-by-analytics}
 
 AEM Sites include un’integrazione opzionale con Enhanced Insights by Analytics che utilizza funzionalità interne al servizio Adobe Analytics On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Analytics, consulta [ADOBE ANALYTICS e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Personalizzazione avanzata per Target {#enhanced-personalization-by-target}
+## Personalization ottimizzato per Target {#enhanced-personalization-by-target}
 
-AEM Sites include un’integrazione opzionale con la Personalizzazione avanzata di Target che utilizza funzionalità interne al servizio Adobe Target On-demand.
+AEM Sites include un’integrazione opzionale con Enhanced Personalization by Target che utilizza funzionalità interne al servizio Adobe Target On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
 
 ## ContextHub {#contexthub}
 
-L’AEM fornisce un livello di dati opzionale con [ContextHub](/help/sites-developing/contexthub.md). In questo modo i dati specifici del visitatore vengono mantenuti nel browser e utilizzati per la personalizzazione basata su regole.
+AEM fornisce un livello dati facoltativo con [ContextHub](/help/sites-developing/contexthub.md). In questo modo i dati specifici del visitatore vengono mantenuti nel browser e utilizzati per la personalizzazione basata su regole.
 
 Per impostazione predefinita, i dati visitatore non sono memorizzati in AEM. AEM invia regole al livello dati per prendere decisioni sulla personalizzazione nel browser.
 

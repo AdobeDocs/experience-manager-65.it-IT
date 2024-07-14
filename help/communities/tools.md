@@ -25,14 +25,14 @@ Per accedere alla console degli strumenti di Communities, accedi all’istanza d
 
   ![community](assets/communities-home.png)
 
-* [Modelli del sito](sites.md) - Console per la creazione e la gestione di modelli di sito.
+* [Modelli di sito](sites.md) - Console per la creazione e la gestione dei modelli di sito.
 
-* [Modelli per gruppi](tools-groups.md) - Console per la creazione e la gestione di modelli di gruppo.
+* [Modelli per gruppi](tools-groups.md) - Console per la creazione e la gestione di modelli per gruppi.
 
-* [Funzioni community](functions.md) - Console per la creazione e la gestione di funzioni a livello di community.
+* [Funzioni community](functions.md) - Console per la creazione e la gestione di funzioni community.
 
-* [Configurazione archiviazione](srp-config.md) - Console per la configurazione e la selezione del [SRP predefinito](working-with-srp.md).
+* [Configurazione archiviazione](srp-config.md) - Console per la configurazione e la selezione di [SRP predefinito](working-with-srp.md).
 
-* [Guida dei componenti](components-guide.md) : apre un sito interattivo che consente di sperimentare il funzionamento dei componenti SCF e come configurarli o personalizzarli.
+* [Guida dei componenti](components-guide.md) - Apre un sito interattivo che consente di sperimentare il funzionamento dei componenti SCF e come configurarli o personalizzarli.
 
-* [Distintivi](badges.md) : console da cui è possibile aggiungere badge personalizzati da utilizzare in [regole di punteggio e badge](implementing-scoring.md)
+* [Badge](badges.md) - Console da cui è possibile aggiungere badge personalizzati da utilizzare nelle [regole di punteggio e badge](implementing-scoring.md)

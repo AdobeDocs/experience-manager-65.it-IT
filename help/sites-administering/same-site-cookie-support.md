@@ -19,7 +19,7 @@ A partire dalla versione 80, Chrome, e successivamente Safari, hanno introdotto 
 
 Il valore predefinito di questa impostazione (`SameSite=Lax`) potrebbe impedire il funzionamento dell’autenticazione tra istanze o servizi AEM. Questo perché i domini o le strutture URL di questi servizi potrebbero non rientrare nei vincoli di questo criterio dei cookie.
 
-Per ovviare a questo problema, è necessario impostare `SameSite` attributo cookie a `None` per il token di accesso.
+Per ovviare a questo problema, è necessario impostare l&#39;attributo cookie `SameSite` su `None` per il token di accesso.
 
 >[!CAUTION]
 >

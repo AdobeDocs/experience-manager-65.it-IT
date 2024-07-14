@@ -27,11 +27,11 @@ Un account alias società Dynamic Medie garantisce che tutti gli URL predefiniti
 
 Quando configuri un account alias società Dynamic Medie, tieni presente quanto segue:
 
-* Eventuali URL di Dynamic Medie esistenti o codice di incorporamento del visualizzatore sul tuo *live* le proprietà digitali devono essere aggiornate manualmente per riflettere il nuovo nome alias. Tuttavia, gli URL o i visualizzatori che incorporano il codice con il nome originale dell&#39;azienda Dynamic Medie continuano a funzionare per le risorse nuove o esistenti.
+* Eventuali URL di Dynamic Medie esistenti o codice di incorporamento del visualizzatore nelle proprietà digitali di *live* devono essere aggiornati manualmente per riflettere il nuovo nome alias. Tuttavia, gli URL o i visualizzatori che incorporano il codice con il nome originale dell&#39;azienda Dynamic Medie continuano a funzionare per le risorse nuove o esistenti.
 * La funzionalità dell’account alias della società Dynamic Medie è limitata alla modalità e alla consegna di Experience Manager Assets Authoring. Il nome alias della società non funziona con Experience Manager Sites. I componenti WCM (Web Content Management) non sono aggiornati per questa modifica. Tali componenti continuano a funzionare con il nome aziendale originale di Dynamic Medie per recuperare le risorse Dynamic Medie.
-* È possibile impostare un solo account alias società in **[!UICONTROL Modifica configurazione Dynamic Medie]** pagina. Tuttavia, puoi creare tutti gli account alias aziendali tramite un caso di supporto e riflettere manualmente il nome alias necessario negli URL di Dynamic Medie o nel codice di incorporamento del visualizzatore.
-* La soluzione preconfigurata [Annullamento validità cache](/help/assets/invalidate-cdn-cache-dynamic-media.md) La funzionalità di Dynamic Medie annulla la validità degli URL con gli account Alias sia della società che della società configurati nella pagina Configurazione di Dynamic Medie in Cloud Service.
-* Quando si configura un account alias società in **[!UICONTROL Modifica configurazione Dynamic Medie]** affinché l’annullamento della validità della cache abbia esito positivo, è necessario invalidare gli URL per *entrambi* il **[!UICONTROL Azienda]** account e **[!UICONTROL Alias società]** account, simultaneamente.
+* È possibile impostare un solo account alias società nella pagina **[!UICONTROL Modifica configurazione Dynamic Medie]**. Tuttavia, puoi creare tutti gli account alias aziendali tramite un caso di supporto e riflettere manualmente il nome alias necessario negli URL di Dynamic Medie o nel codice di incorporamento del visualizzatore.
+* La funzionalità predefinita [Annullamento della validità della cache](/help/assets/invalidate-cdn-cache-dynamic-media.md) di Dynamic Medie annulla la validità degli URL con gli account alias società e società configurati nella pagina Configurazione di Dynamic Medie in Cloud Service.
+* Quando si configura un account alias società nella pagina **[!UICONTROL Modifica configurazione Dynamic Medie]**, affinché l&#39;annullamento della validità della cache venga eseguito correttamente, è necessario annullare la validità degli URL per *entrambi* l&#39;account **[!UICONTROL Società]** e l&#39;account **[!UICONTROL Alias società]**, contemporaneamente.
 
 Vedi anche [Creare una configurazione Dynamic Medie in Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)
 
@@ -39,19 +39,19 @@ Vedi anche [Creare una configurazione Dynamic Medie in Cloud Service](/help/asse
 
 Per iniziare a configurare un account alias della società Dynamic Medie, devi prima inviare un caso di supporto. Questo passaggio è obbligatorio.
 
-1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html?lang=it).
+1. [Utilizzare l&#39;Admin Console per creare un caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
-   * Nome alias società Dynamic Medie che si desidera utilizzare. Il nome deve contenere *solo* lettere (è consentito usare maiuscole e minuscole), numeri, trattini e trattini bassi.
+   * Nome alias società Dynamic Medie che si desidera utilizzare. Il nome deve contenere *solo* lettere (sono consentite maiuscole e minuscole miste), numeri, trattini e trattini bassi.
    * La tua regione.
-   * Se esistono [set di regole](/help/assets/using-rulesets-to-transform-urls.md) vengono utilizzati in precedenza per ottenere la trasmissione dei contenuti Dynamic Medie tramite un nome account aziendale Dynamic Medie alternativo.
+   * Indica se in precedenza sono stati utilizzati [set di regole](/help/assets/using-rulesets-to-transform-urls.md) per ottenere la distribuzione del contenuto Dynamic Medie tramite un nome di account aziendale Dynamic Medie alternativo.
 
-1. Dopo la creazione dell’account alias Dynamic Medie da parte del supporto, nell’istanza Autore as a Cloud Service di Experience Manager, seleziona il logo Experience Manager as a Cloud Service per accedere alla console di navigazione globale.
-1. A sinistra della console, seleziona l’icona Strumenti, quindi vai a **[!UICONTROL Cloud Service > Configurazione Dynamic Medie]**.
-1. Nella pagina Browser configurazioni Dynamic Medie, nel riquadro a sinistra, selezionare **[!UICONTROL globale]** (non selezionare l&#39;icona della cartella a sinistra di **[!UICONTROL globale]**). Quindi seleziona **[!UICONTROL Modifica]**.
+1. Dopo la creazione dell’account alias Dynamic Medie da parte del supporto, nell’istanza Experience Manager as a Cloud Service Experience Manager Author, seleziona il logo dell’as a Cloud Service per accedere alla console di navigazione globale.
+1. Sulla sinistra della console, seleziona l&#39;icona Strumenti, quindi vai a **[!UICONTROL Cloud Service > Configurazione Dynamic Medie]**.
+1. Nel riquadro sinistro della pagina Browser configurazioni Dynamic Medie selezionare **[!UICONTROL global]** (non selezionare l&#39;icona della cartella a sinistra di **[!UICONTROL global]**). Quindi seleziona **[!UICONTROL Modifica]**.
 
    ![Campo di testo Alias società Dynamic Medie](/help/assets/assets-dm/dm-company-alias.png)
 
-1. Il giorno **[!UICONTROL Modifica configurazione Dynamic Medie]** pagina, nella **[!UICONTROL Alias società]** testo, digitare il nome dell&#39;account alias di Dynamic Medie specificato in precedenza nel caso di supporto.
+1. Nella pagina **[!UICONTROL Modifica configurazione Dynamic Medie]**, nel campo di testo **[!UICONTROL Alias società]**, digitare il nome dell&#39;account alias Dynamic Medie specificato in precedenza nel caso di supporto.
 1. In alto a destra, seleziona **[!UICONTROL Salva]**.
 L’account alias società Dynamic Medie ora è salvato e abilitato; tutti gli URL e il codice di incorporamento del visualizzatore per le risorse nuove e esistenti ora riflettono il nuovo nome alias società.

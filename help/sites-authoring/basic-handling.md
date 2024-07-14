@@ -24,14 +24,14 @@ ht-degree: 41%
 >* Questa pagina offre una panoramica delle operazioni di base nell’ambiente di authoring di Adobe Experience Manager (AEM). Usa la console **Sites** come base.
 >
 >* Alcune funzionalità non sono disponibili in tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. Informazioni specifiche sulle singole console e sulle relative funzionalità sono descritte più dettagliatamente in altre pagine.
->* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e [modifica di pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [si utilizzano le console](/help/sites-authoring/keyboard-shortcuts.md) e [si modificano le pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Guida introduttiva {#getting-started}
 
 ### Interfaccia touch {#a-touch-enabled-ui}
 
-L’interfaccia utente AEM è stata abilitata per il tocco. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali la selezione, il tocco e lo scorrimento. Questo è in contrasto con il funzionamento di un&#39;interfaccia desktop tradizionale con azioni del mouse come clic, doppio clic, clic con il pulsante destro del mouse e passaggio del mouse.
+L’interfaccia utente dell’AEM è stata abilitata per il tocco. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali la selezione, il tocco e lo scorrimento. Questo è in contrasto con il funzionamento di un&#39;interfaccia desktop tradizionale con azioni del mouse come clic, doppio clic, clic con il pulsante destro del mouse e passaggio del mouse.
 
 Poiché l’interfaccia utente dell’AEM è dotata di funzionalità touch, puoi utilizzare i gesti touch sui dispositivi touch (ad esempio, dispositivi mobili o tablet) e le azioni del mouse su un dispositivo desktop tradizionale.
 
@@ -43,7 +43,7 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 >[!NOTE]
 >
->Per comprendere l’utilizzo di base dell’AEM, il presente documento si basa sulla **Sites** console.
+>Per comprendere l&#39;utilizzo di base dell&#39;AEM, questo documento si basa sulla console **Sites**.
 >
 >Per iniziare, fai clic su **Sites**.
 
@@ -51,11 +51,11 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Fai clic qui per una buona panoramica delle operazioni di base dell’AEM.
 
-![Navigazione prodotti](assets/bh-02.png)
+![Navigazione prodotto](assets/bh-02.png)
 
-Clic **Successivo** per passare alla pagina successiva della panoramica. Clic **Chiudi** oppure fate clic all&#39;esterno della finestra di dialogo panoramica (overview) per chiudere.
+Fai clic su **Avanti** per passare alla pagina successiva della panoramica. Fai clic su **Chiudi** o fai clic all&#39;esterno della finestra di dialogo della panoramica per chiudere.
 
-La panoramica viene riavviata al successivo accesso a una console, a meno che non vengano visualizzate tutte le diapositive o non venga selezionata l’opzione **Non mostrare più**.
+La panoramica verrà riavviata al successivo accesso a una console, a meno che non si visualizzino tutte le diapositive, oppure si selezioni l&#39;opzione **Non mostrare più questa schermata**.
 
 ## Navigazione globale {#global-navigation}
 
@@ -67,7 +67,7 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 >[!NOTE]
 >
->Al primo accesso viene visualizzato il file **Navigazione** pannello
+>Al primo accesso viene visualizzato il pannello **Navigazione**
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
@@ -93,8 +93,8 @@ Nel pannello di navigazione sono disponibili le console seguenti:
    <td><strong>Scopo</strong></td>
   </tr>
   <tr>
-   <td>Risorse<br /> </td>
-   <td>Queste console consentono di importare e <a href="/help/assets/assets.md">gestire le risorse digitali</a> ad esempio immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM. </td>
+   <td>Assets<br /> </td>
+   <td>Queste console ti consentono di importare e <a href="/help/assets/assets.md">gestire risorse digitali</a> quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -102,38 +102,38 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Questo consente di gestire prodotti, cataloghi di prodotti e ordini relativi al <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a> siti.</td>
+   <td>Questo consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>.</td>
   </tr>
   <tr>
    <td>Frammenti di esperienza</td>
-   <td>Un <a href="/help/sites-authoring/experience-fragments.md">Frammento esperienza</a> è un’esperienza autonoma che può essere riutilizzata su tutti i canali, con varianti e senza dover copiare e incollare ripetutamente le esperienze o parti di esse.</td>
+   <td>Un <a href="/help/sites-authoring/experience-fragments.md">frammento di esperienza</a> è un'esperienza autonoma che può essere riutilizzata su tutti i canali, con varianti e senza dover copiare e incollare ripetutamente le esperienze o parti di esse.</td>
   </tr>
   <tr>
    <td>Moduli</td>
-   <td>Questa console consente di creare, gestire ed elaborare le <a href="/help/forms/using/introduction-aem-forms.md">moduli e documenti</a>.</td>
+   <td>Questa console consente di creare, gestire ed elaborare <a href="/help/forms/using/introduction-aem-forms.md">moduli e documenti</a>.</td>
   </tr>
   <tr>
    <td>Personalizzazione</td>
-   <td>Questa console fornisce <a href="/help/sites-authoring/personalization.md">framework di strumenti per la creazione di contenuti mirati e la presentazione di esperienze personalizzate</a>.</td>
+   <td>Questa console fornisce un <a href="/help/sites-authoring/personalization.md">framework di strumenti per la creazione e modifica di contenuti con targeting e la presentazione di esperienze personalizzate</a>.</td>
   </tr>
   <tr>
    <td>Progetti</td>
-   <td>Il <a href="/help/sites-authoring/touch-ui-managing-projects.md">La console Progetti consente di accedere direttamente ai progetti</a>. I progetti sono dashboard virtuali. Possono essere utilizzati per creare un team, quindi consentire a tale team di accedere a risorse, flussi di lavoro e attività, consentendo alle persone di lavorare su un obiettivo comune. <br /> </td>
+   <td>La console <a href="/help/sites-authoring/touch-ui-managing-projects.md">Progetti consente di accedere direttamente ai progetti</a>. I progetti sono dashboard virtuali. Possono essere utilizzati per creare un team, quindi consentire a tale team di accedere a risorse, flussi di lavoro e attività, consentendo alle persone di lavorare su un obiettivo comune. <br /> </td>
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Schermi</a> consente di gestire tutti gli schermi, di qualsiasi dimensione, che verranno visualizzati dai clienti ovunque si trovino.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
   </tr>
   <tr>
    <td>Sites</td>
-   <td>Le console Sites consentono di: <a href="/help/sites-authoring/page-authoring.md">creare, visualizzare e gestire siti Web</a> in esecuzione sull’istanza AEM. Tramite queste console puoi creare, modificare, copiare, spostare ed eliminare pagine web, avviare flussi di lavoro e pubblicare pagine.<br /> </td>
+   <td>Le console Sites ti consentono di <a href="/help/sites-authoring/page-authoring.md">creare, visualizzare e gestire siti Web</a> in esecuzione nell'istanza AEM. Tramite queste console è possibile creare, modificare, copiare, spostare ed eliminare pagine del sito Web, avviare flussi di lavoro e pubblicare pagine.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### Pannello Strumenti {#tools-panel}
 
-Nel pannello Strumenti, ogni opzione del pannello laterale contiene una serie di sottomenu. Il [Console Strumenti](/help/sites-administering/tools-consoles.md) qui puoi accedere a console e strumenti specifici per la gestione dei siti web, delle risorse digitali e di altri aspetti dell’archivio dei contenuti.
+Nel pannello Strumenti, ogni opzione del pannello laterale contiene una serie di sottomenu. Le [console Strumenti](/help/sites-administering/tools-consoles.md) disponibili qui consentono di accedere a console e strumenti specifici per la gestione dei siti Web, delle risorse digitali e di altri aspetti dell&#39;archivio dei contenuti.
 
 ![Pannello Strumenti](assets/bh-04.png)
 
@@ -145,9 +145,9 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
 * [Navigazione globale](#navigatingconsolesandtools)
 
-  Seleziona la **Adobe Experience Manager** collegamento da cui spostarsi tra le diverse console.
+  Seleziona il collegamento **Adobe Experience Manager** da cui spostarti tra le diverse console.
 
-  ![il collegamento Adobe Experience Manager](assets/screen_shot_2018-03-23at103615.png)
+  ![collegamento Adobe Experience Manager](assets/screen_shot_2018-03-23at103615.png)
 
 * [Ricerca](/help/sites-authoring/search.md)
 
@@ -171,7 +171,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   >[!NOTE]
   >
-  >L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Consulta [Casella in entrata - Attività amministrative predefinite](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) per i dettagli.
+  >L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Per informazioni dettagliate, consulta [Posta in arrivo - Attività amministrative predefinite](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks).
 
 * [Proprietà utente](/help/sites-authoring/user-properties.md)
 
@@ -179,7 +179,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
 * [Selettore della barra](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![L’elenco dei selettori della barra è visualizzato sul lato sinistro della schermata Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![Elenco dei selettori della barra visualizzato sul lato sinistro della schermata di Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   Le opzioni visualizzate dipendono dalla console corrente. Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita), la timeline, i riferimenti o il pannello laterale del filtro.
 
@@ -199,7 +199,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   ![Periodo di tempo di Analytics](assets/screen_shot_2018-03-23at104126.png)
 
-  È disponibile solo nella vista a elenco. Per ulteriori informazioni, vedere [vista a elenco](#list-view).
+  È disponibile solo nella vista a elenco. Per ulteriori informazioni, vedere la [visualizzazione elenco](#list-view).
 
 * Pulsante **Crea**
 
@@ -219,9 +219,9 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
 * Navigazione tramite tastiera
 
-  Potete navigare in un sito web utilizzando solo la tastiera. Questa utilizza la funzionalità standard del browser del **SCHEDA** chiave (o **OPZ+TAB**) per spostarti tra gli elementi della pagina che sono *focalizzabile*.
+  Potete navigare in un sito web utilizzando solo la tastiera. In questo modo si utilizza la funzionalità standard del browser per il tasto **TAB** (o **OPT+TAB**) per spostarsi tra gli elementi della pagina che sono *attivabili*.
 
-  In **Sites** nella console, è stata aggiunta l’opzione per  **Passa al contenuto principale**. Questo diventa visibile quando *scheda* tramite le opzioni di intestazione, e velocizza la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
+  Nella console **Sites** è stata aggiunta l&#39;opzione per **passare al contenuto principale**. Questo diventa visibile quando si *tab* attraverso le opzioni di intestazione e si accelera la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
 
   ![Passa al contenuto principale](assets/bh-30.png)
 
@@ -231,7 +231,7 @@ Sono disponibili diverse risorse di Aiuto:
 
 * **Barra degli strumenti della console**
 
-  A seconda della posizione, il **Aiuto** apre le risorse appropriate:
+  A seconda della posizione, l&#39;icona **Guida** apre le risorse appropriate:
 
   ![Barra degli strumenti della console](assets/bh-10.png)
 
@@ -247,11 +247,11 @@ Sono disponibili diverse risorse di Aiuto:
 
   Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](/help/sites-authoring/basic-handling.md#product-navigation) la prima volta che accedi a una console.
 
-  Dalla sezione **Informazioni pagina** , è possibile selezionare [**Aiuto**](/help/sites-authoring/author-environment-tools.md#accessing-help) per visualizzarlo di nuovo in qualsiasi momento.
+  Dal menu **Informazioni pagina**, è possibile selezionare [**Guida**](/help/sites-authoring/author-environment-tools.md#accessing-help) per visualizzare di nuovo questo elemento in qualsiasi momento.
 
 * **Console Strumenti**
 
-  Dalla sezione **Strumenti** , è inoltre possibile accedere al **Risorse**:
+  Dalla console **Strumenti**, puoi anche accedere alle **Risorse** esterne:
 
    * **Documentazione**
 Consulta la documentazione su Web Experience Management.
@@ -274,13 +274,13 @@ Ogni volta che viene selezionata una risorsa (ad esempio una pagina o una risors
 
 * La console corrente
 * Il contesto attuale
-* Se ti trovi in [modalità di selezione](#navigatingandselectionmode) o no
+* Se sei in [modalità di selezione](#navigatingandselectionmode) o meno
 
 Le azioni disponibili nella barra degli strumenti cambiano per riflettere le azioni che puoi eseguire sugli elementi specifici selezionati.
 
 La modalità di [selezione di una risorsa](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) dipende dalla vista.
 
-A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso, vengono visualizzate altre opzioni. Tocca o fai clic sui puntini di sospensione (i tre punti o **...**) apre un selettore a discesa contenente tutte le azioni rimanenti. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
+A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso, vengono visualizzate altre opzioni. Toccando o facendo clic sui puntini di sospensione (i tre punti o **...**) si apre un selettore a discesa contenente tutte le azioni che non rientrano nella barra. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
 
 ![Barra degli strumenti Azioni](assets/bh-12.png)
 
@@ -290,7 +290,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 
 ## Azioni rapide  {#quick-actions}
 
-In entrata [Vista a schede](#cardviewquickactions), alcune azioni sono disponibili come icone di azione rapida e nella barra degli strumenti. Le icone delle azioni rapide sono disponibili per un singolo elemento alla volta ed evitano di dover preselezionare le opzioni.
+In [Vista a schede](#cardviewquickactions), alcune azioni sono disponibili come icone di azione rapida e sulla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un singolo elemento alla volta ed evitano di dover preselezionare le opzioni.
 
 Le azioni rapide sono visibili quando passi il mouse su una scheda delle risorse (dispositivo desktop). Le azioni rapide disponibili possono dipendere dalla console e dal contesto. Ad esempio, di seguito sono riportate le azioni rapide per una pagina nella console **Sites**:
 
@@ -326,39 +326,39 @@ La selezione di una risorsa specifica dipende dalla combinazione della vista e d
    <td>Vista a colonne<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Fai clic sulla miniatura</li>
-     <li>Dispositivi mobili:<br /> Seleziona la miniatura</li>
+     <li>Desktop:<br /> Fare clic sulla miniatura</li>
+     <li>Dispositivi mobili:<br /> Selezionare la miniatura</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Fai clic sulla miniatura</li>
-     <li>Dispositivi mobili:<br /> Seleziona la miniatura</li>
+     <li>Desktop:<br /> Fare clic sulla miniatura</li>
+     <li>Dispositivi mobili:<br /> Selezionare la miniatura</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Vista a schede<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Passa il puntatore del mouse, quindi utilizza l’azione rapida con segno di spunta</li>
+     <li>Desktop:<br /> Passaggio del mouse, quindi utilizzare l'azione rapida segno di spunta</li>
      <li>Dispositivi mobili:<br /> Seleziona e tieni premuto sulla scheda</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Fai clic sulla scheda</li>
+     <li>Desktop:<br /> Fare clic sulla scheda</li>
      <li>Dispositivi mobili:<br /> Seleziona la scheda</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Vista a elenco </td>
+   <td>Vista a elenco</td>
    <td>
     <ul>
-     <li>Desktop:<br /> Fai clic sulla miniatura</li>
-     <li>Dispositivi mobili:<br /> Seleziona la miniatura</li>
+     <li>Desktop:<br /> Fare clic sulla miniatura</li>
+     <li>Dispositivi mobili:<br /> Selezionare la miniatura</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Fai clic sulla miniatura</li>
-     <li>Dispositivi mobili:<br /> Seleziona la miniatura</li>
+     <li>Desktop:<br /> Fare clic sulla miniatura</li>
+     <li>Dispositivi mobili:<br /> Selezionare la miniatura</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -368,9 +368,9 @@ La selezione di una risorsa specifica dipende dalla combinazione della vista e d
 
 Per selezionare tutti gli elementi in qualsiasi vista, fai clic sull’opzione **Seleziona tutto** nell’angolo in alto a destra della console.
 
-* In entrata **Vista a schede**, vengono selezionate tutte le schede.
-* In entrata **Vista a elenco**, vengono selezionati tutti gli elementi dell’elenco.
-* In entrata **Vista a colonne**, vengono selezionati tutti gli elementi nella colonna più a sinistra.
+* In **Vista a schede**, tutte le schede sono selezionate.
+* In **Vista a elenco**, tutti gli elementi dell&#39;elenco sono selezionati.
+* Nella **Vista a colonne**, sono selezionati tutti gli elementi nella colonna più a sinistra.
 
 ![Seleziona tutto](assets/screen-shot_2019-03-05at094659.png)
 
@@ -380,7 +380,7 @@ In tutti i casi in cui selezioni elementi, il numero degli elementi selezionati 
 
 Per deselezionare tutti gli elementi e uscire dalla modalità di selezione:
 
-* tocca o fai clic sul pulsante **X** accanto al conteggio,
+* tocca o fai clic su **X** accanto al conteggio,
 
 * o utilizzando **escape**.
 
@@ -394,9 +394,9 @@ In tutte le viste, tutti gli elementi possono essere deselezionati con il tasto 
 
    ![Seleziona - Vista a schede](assets/bh-15.png)
 
-1. Quando hai selezionato una risorsa, l’intestazione superiore è coperta dalla sezione [barra delle azioni](#actionstoolbar) consente di accedere alle azioni attualmente applicabili alla risorsa selezionata.
+1. Quando hai selezionato una risorsa, l&#39;intestazione superiore è coperta dalla [barra delle azioni](#actionstoolbar) che consente di accedere alle azioni applicabili alla risorsa selezionata.
 
-   Per uscire dalla modalità di selezione, selezionare **X** in alto a destra, oppure utilizza **escape**.
+   Per uscire dalla modalità di selezione, seleziona **X** in alto a destra oppure utilizza **escape**.
 
 ### Vista a colonne {#column-view}
 
@@ -457,11 +457,11 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 ![Vista a elenco](assets/bh-19.png)
 
 * Nella vista a elenco sono elencate le informazioni di ogni risorsa al livello corrente.
-* Per spostarti verso il basso nella struttura, tocca o fai clic sul nome della risorsa e sul backup utilizzando [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
+* Per spostarti verso il basso nella struttura, tocca o fai clic sul nome della risorsa e sul backup utilizzando le [breadcrumb nell&#39;intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
 * Per selezionare tutti gli elementi nell’elenco, utilizza la casella di selezione in alto a sinistra nell’elenco.
 
-  ![Vista a elenco - Seleziona tutto](assets/bh-20.png)
+  ![Visualizzazione elenco - Seleziona tutto](assets/bh-20.png)
 
    * Quando tutti gli elementi dell’elenco sono selezionati, viene selezionata la casella di controllo.
 
@@ -472,7 +472,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
       * Per selezionare tutto, fare clic sulla casella di controllo.
       * Per deselezionare tutti gli elementi, fare di nuovo clic sulla casella di controllo.
 
-* Selezionare le colonne da visualizzare utilizzando **Impostazioni vista** sotto il pulsante Viste. È possibile visualizzare le colonne seguenti:
+* Selezionare le colonne da visualizzare utilizzando l&#39;opzione **Visualizza impostazioni** sotto il pulsante Viste. È possibile visualizzare le colonne seguenti:
 
    * **Nome**: nome della pagina, utile in un ambiente di authoring multilingue poiché fa parte dell’URL della pagina e non viene modificato indipendentemente dalla lingua
    * **Modificato**: data dell’ultima modifica e dell’utente che l’ha eseguita
@@ -484,7 +484,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
    * **Visitatori univoci**
    * **Tempo sulla pagina**
 
-  ![Impostazioni vista - Configura colonne](assets/bh-21.png)
+  ![Visualizza impostazioni - Configura colonne](assets/bh-21.png)
 
   Per impostazione predefinita, la colonna **Nome** è visualizzata e costituisce una porzione dell’URL della pagina. A volte l’autore deve accedere a pagine in una lingua diversa. Visualizzare il nome della pagina (che di solito è immutabile) può essere di grande aiuto se l’autore non conosce la lingua della pagina.
 
@@ -500,7 +500,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
   ![Ordine di modifica - Trascina](assets/bh-23.png)
 
-* Puoi visualizzare i dati di Analytics visualizzando le colonne appropriate utilizzando **Impostazioni vista** .
+* Puoi visualizzare i dati di Analytics visualizzando le colonne appropriate utilizzando la finestra di dialogo **Impostazioni visualizzazione**.
 
   Puoi filtrare i dati di Analytics per gli ultimi 30, 90 o 365 giorni utilizzando le opzioni di filtro sul lato destro dell’intestazione.
 
@@ -532,7 +532,7 @@ Utilizzando il pannello laterale della struttura del contenuto con una vista a e
 >
 >Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
 >
->Consulta la sezione [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) per ulteriori informazioni.
+>Per ulteriori informazioni, fare riferimento alle [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
 
 ### Timeline {#timeline}
 
@@ -540,7 +540,7 @@ Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezion
 
 La colonna della timeline consente di:
 
-* [Visualizzare vari eventi](#timelineviewevents) relativo a un elemento selezionato.
+* [Visualizza vari eventi](#timelineviewevents) relativi a un elemento selezionato.
 
    * I tipi di evento possono essere selezionati dall’elenco a discesa:
 
@@ -551,24 +551,24 @@ La colonna della timeline consente di:
       * [Versioni](/help/sites-authoring/working-with-page-versions.md)
       * [Flussi di lavoro](/help/sites-authoring/workflows-applying.md)
 
-         * eccetto per [flussi di lavoro transitori](/help/sites-developing/workflows.md#transient-workflows) perché non vengono salvate informazioni sulla cronologia per questi elementi
+         * ad eccezione di [flussi di lavoro transitori](/help/sites-developing/workflows.md#transient-workflows) perché per questi non vengono salvate informazioni sulla cronologia
 
       * e Mostra tutto
 
-* [Aggiungi/visualizza commenti](#timelineaddingandviewingcomments) informazioni sull&#39;elemento selezionato. La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Se digiti un commento e premi Invio, il commento verrà registrato. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
+* [Aggiungi/visualizza commenti](#timelineaddingandviewingcomments) sull&#39;elemento selezionato. La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Se digiti un commento e premi Invio, il commento verrà registrato. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
 
 * Alcune console offrono funzionalità aggiuntive. Ad esempio, nella console Sites puoi effettuare le seguenti operazioni:
 
-   * [Salvare una versione](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
-   * [Avviare un flusso di lavoro](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+   * [Salva una versione](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
+   * [Avvia un flusso di lavoro](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-Queste opzioni sono accessibili tramite la freccia accanto al **Commento** campo.
+Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**.
 
 ![Timeline](assets/bh-27.png)
 
 ### Riferimenti {#references}
 
-**Riferimenti** mostra eventuali connessioni alla risorsa selezionata. Ad esempio, nella console **Sites**, i [riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) per le pagine mostrano:
+**I riferimenti** mostrano connessioni alla risorsa selezionata. Ad esempio, nella console **Sites**, i [riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) per le pagine mostrano:
 
 * [Lanci](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copy](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
@@ -582,6 +582,6 @@ Queste opzioni sono accessibili tramite la freccia accanto al **Commento** campo
 
 ### Filtro {#filter}
 
-Questo apre un pannello simile a [ricerca](/help/sites-authoring/search.md), con i filtri di posizione appropriati impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
+Verrà aperto un pannello simile a [ricerca](/help/sites-authoring/search.md), con i filtri di posizione appropriati impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
 
 ![Filtro](assets/bh-29.png)

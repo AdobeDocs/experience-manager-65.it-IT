@@ -32,7 +32,7 @@ In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’
 
 Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto**) vengono visualizzati diversi avvisi e/o notifiche:
 
-* Il tuo [notifica](/help/sites-authoring/inbox.md) (barra degli strumenti) verrà incrementato:
+* L&#39;indicatore [notifica](/help/sites-authoring/inbox.md) (barra degli strumenti) verrà incrementato:
 
   ![Indicatore di notifica](do-not-localize/wf-57.png)
 
@@ -76,7 +76,7 @@ Per questa azione è possibile indicare:
 * [Casella in entrata](#completing-a-participant-step-inbox)
 * [Editor pagina](#completing-a-participant-step-page-editor)
 * [Timeline](#completing-a-participant-step-timeline)
-* quando [apertura di un elemento del flusso di lavoro per visualizzare i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
+* quando [apri un elemento del flusso di lavoro per visualizzare i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Completamento di un passaggio partecipante: casella in entrata {#completing-a-participant-step-inbox}
 
@@ -85,7 +85,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Completa** dalla barra degli strumenti.
-1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
+1. Viene visualizzata la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal selettore a discesa e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante: editor pagina {#completing-a-participant-step-page-editor}
@@ -94,7 +94,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Completa** dalla barra di stato in alto.
-1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
+1. Viene visualizzata la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal selettore a discesa e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Cancel** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante - Timeline {#completing-a-participant-step-timeline}
@@ -107,7 +107,7 @@ Puoi anche utilizzare la timeline per completare un passaggio e avanzare:
 
 1. Fai clic sul banner dell’avviso per visualizzare le azioni disponibili. Seleziona **Avanti**:
 
-   ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
+   ![schermata_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
 1. A seconda del flusso di lavoro, è possibile selezionare la fase successiva:
 
@@ -135,7 +135,7 @@ Per questa azione è possibile indicare:
 * [Casella in entrata](#delegating-a-participant-step-inbox)
 * [Editor pagina](#delegating-a-participant-step-page-editor)
 * [Timeline](#delegating-a-participant-step-timeline)
-* quando [apertura di un elemento del flusso di lavoro per visualizzare i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
+* quando [apri un elemento del flusso di lavoro per visualizzare i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Delega di un passaggio partecipante: casella in entrata {#delegating-a-participant-step-inbox}
 
@@ -144,7 +144,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Delega** dalla barra degli strumenti.
-1. Viene visualizzata la finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
+1. Viene visualizzata la finestra di dialogo. Specifica l&#39;**Utente** dal selettore a discesa (può anche essere un gruppo) e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: editor pagina {#delegating-a-participant-step-page-editor}
@@ -153,7 +153,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Delega** dalla barra di stato in alto.
-1. Viene visualizzata la finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
+1. Viene visualizzata la finestra di dialogo. Specifica l&#39;**Utente** dal selettore a discesa (può anche essere un gruppo) e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: Timeline {#delegating-a-participant-step-timeline}
@@ -163,7 +163,7 @@ Puoi anche utilizzare la timeline per delegare e/o assegnare un passaggio:
 1. Seleziona la pagina richiesta e apri la **Timeline** (oppure, apri la **Timeline** e seleziona la pagina).
 1. Fai clic sul banner dell’avviso per visualizzare le azioni disponibili. Seleziona **Cambia assegnatario**:
 
-   ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
+   ![schermata_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
 1. Specifica un nuovo assegnatario:
 
@@ -185,7 +185,7 @@ Per questa azione è possibile indicare:
 * [Casella in entrata](#performing-step-back-on-a-participant-step-inbox)
 * [Editor pagina](#performing-step-back-on-a-participant-step-page-editor)
 * [Timeline](#performing-step-back-on-a-participant-step-timeline)
-* quando [apertura di un elemento del flusso di lavoro per visualizzare i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
+* quando [apri un elemento del flusso di lavoro per visualizzare i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Esecuzione di un passo indietro su un Passaggio Partecipante - Casella in entrata {#performing-step-back-on-a-participant-step-inbox}
 
@@ -195,7 +195,7 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Passo indietro** per aprire la finestra di dialogo.
 
-1. Specifica la **Passaggio precedente** e aggiungi **Commento** se necessario.
+1. Specifica il **Passaggio precedente** e aggiungi **Commento**, se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Esecuzione di un passo indietro su un Passaggio Partecipante - Editor pagina {#performing-step-back-on-a-participant-step-page-editor}
@@ -204,7 +204,7 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Passo indietro** dalla barra di stato in alto.
-1. Specifica la **Passaggio precedente** e aggiungi **Commento** se necessario.
+1. Specifica il **Passaggio precedente** e aggiungi **Commento**, se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Esecuzione di un passo indietro su un Passo Partecipante - Timeline {#performing-step-back-on-a-participant-step-timeline}
@@ -236,7 +236,7 @@ I dettagli del flusso di lavoro sono visualizzati in schede e le azioni appropri
 
   ![wf-73](assets/wf-73.png)
 
-  Se [Fasi flusso di lavoro](/help/sites-developing/workflows.md#workflow-stages) sono stati configurati per il modello, è possibile visualizzare lo stato di avanzamento in base a questi:
+  Se per il modello sono stati configurati [gli stadi del flusso di lavoro](/help/sites-developing/workflows.md#workflow-stages), è possibile visualizzare l&#39;avanzamento in base a questi:
 
   ![wf-107](assets/wf-107.png)
 
@@ -257,7 +257,7 @@ Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Apri** per aprire le schede informative.
 
-1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
+1. Se necessario, seleziona l&#39;azione appropriata, fornisci tutti i dettagli e conferma con **OK** (o **Annulla**).
 1. Usa il comando **Salva** o **Annulla** per uscire.
 
 #### Apertura dei dettagli del flusso di lavoro - Editor pagina {#opening-workflow-details-page-editor}
@@ -267,7 +267,7 @@ Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Visualizza dettagli** dalla barra di stato per aprire le schede informative.
 
-1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
+1. Se necessario, seleziona l&#39;azione appropriata, fornisci tutti i dettagli e conferma con **OK** (o **Annulla**).
 1. Usa il comando **Salva** o **Annulla** per uscire.
 
 ### Visualizzazione del Payload flusso di lavoro (più risorse) {#viewing-the-workflow-payload-multiple-resources}

@@ -40,9 +40,9 @@ Per selezionare un&#39;opzione di archiviazione diversa da JCR predefinita:
 * Seleziona un’opzione
 * Configurare in modo appropriato
 
-   * Vedi i dettagli per [selezione di MSRP](msrp.md#select-msrp)
-   * Vedi i dettagli per [selezione DSRP](dsrp.md#select-dsrp)
-   * Vedi i dettagli per [selezione di ASRP](asrp.md#select-asrp)
+   * Visualizza dettagli per [selezione di MSRP](msrp.md#select-msrp)
+   * Vedi dettagli per [selezione DSRP](dsrp.md#select-dsrp)
+   * Vedi i dettagli per [selezionare ASRP](asrp.md#select-asrp)
 
 * Seleziona **[!UICONTROL Invia]**.
 
@@ -50,10 +50,10 @@ Per selezionare un&#39;opzione di archiviazione diversa da JCR predefinita:
 
 Se non viene effettuata alcuna selezione, l’impostazione predefinita è l’archivio AEM, JCR.
 
-JCR è *non* un archivio comune condiviso dagli ambienti Author e Publish. Il contenuto della community è visibile solo dall’ambiente di authoring o pubblicazione in cui è stato creato.
+JCR è *non* un archivio comune condiviso dagli ambienti Author e Publish. Il contenuto della community è visibile solo dall’ambiente di authoring o Publish in cui è stato creato.
 
 Visita [Archivio JCR](jsrp.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
->Assenza del nodo `srpc` in `/etc/socialconfig` indica il valore predefinito [Store JCR](jsrp.md).
+>L&#39;assenza del nodo `srpc` in `/etc/socialconfig` indica l&#39;archivio predefinito [JCR](jsrp.md).

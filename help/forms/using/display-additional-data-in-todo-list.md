@@ -26,16 +26,16 @@ Questo articolo descrive i passaggi per aggiungere informazioni da visualizzare 
 
 ## Cosa è possibile aggiungere {#what-can-be-added}
 
-È possibile aggiungere le informazioni disponibili in `task.json` inviato dal server. Le informazioni possono essere aggiunte come testo normale oppure è possibile utilizzare gli stili per formattarle.
+È possibile aggiungere le informazioni disponibili in `task.json` inviate dal server. Le informazioni possono essere aggiunte come testo normale oppure è possibile utilizzare gli stili per formattarle.
 
-Per ulteriori informazioni sulla descrizione dell’oggetto JSON, vedi [questo](/help/forms/using/html-workspace-json-object-description.md) articolo.
+Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, vedi l&#39;articolo [this](/help/forms/using/html-workspace-json-object-description.md).
 
 ## Visualizzazione delle informazioni su un&#39;attività {#displaying-information-on-a-task}
 
-1. Segui le [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
-1. Per visualizzare informazioni aggiuntive su un’attività, è necessario aggiungere le coppie chiave-valore corrispondenti nel blocco attività di `translation.json`.
+1. Segui i [passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
+1. Per visualizzare informazioni aggiuntive per un&#39;attività, è necessario aggiungere le coppie chiave-valore corrispondenti nel blocco attività di `translation.json`.
 
-   Ad esempio, modifica `/apps/ws/locales/en-US/translation.json` per l&#39;inglese:
+   Ad esempio, cambia `/apps/ws/locales/en-US/translation.json` per l&#39;inglese:
 
    ```json
    "task" : {
@@ -122,7 +122,7 @@ Per ulteriori informazioni sulla descrizione dell’oggetto JSON, vedi [questo](
 
 ## Definizione di CSS per la nuova proprietà {#defining-css-for-the-new-property}
 
-1. È possibile applicare uno stile alle informazioni (proprietà) aggiunte a un&#39;attività. A questo scopo, devi aggiungere le informazioni di stile per la nuova proprietà aggiunta a `/apps/ws/css/newStyle.css`.
+1. È possibile applicare uno stile alle informazioni (proprietà) aggiunte a un&#39;attività. A tale scopo, è necessario aggiungere le informazioni sullo stile per la nuova proprietà aggiunta a `/apps/ws/css/newStyle.css`.
 
    Ad esempio, aggiungi:
 
@@ -143,9 +143,9 @@ Infine, è necessario includere una voce nel pacchetto di sviluppo per ogni prop
    * da: `/libs/ws/js/runtime/templates/`
    * a: `/apps/ws/js/runtime/templates/`
 
-1. Aggiungi le nuove informazioni a `/apps/ws/js/runtime/templates/task.html`.
+1. Aggiungere le nuove informazioni a `/apps/ws/js/runtime/templates/task.html`.
 
-   Ad esempio, aggiungi sotto `div class="taskProperties"`:
+   Ad esempio, aggiungi in `div class="taskProperties"`:
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

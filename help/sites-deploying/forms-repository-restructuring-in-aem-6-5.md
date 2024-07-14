@@ -17,13 +17,13 @@ ht-degree: 7%
 
 # Ristrutturazione dell’archivio Forms nell’AEM 6.5{#forms-repository-restructuring-in-aem}
 
-Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Forms. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Forms. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
-**Con aggiornamento 6.5**
+**Con Aggiornamento 6.5**
 
 * [Varie](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
-**Prima di aggiornamenti futuri**
+**Prima dell&#39;aggiornamento futuro**
 
 * [Configurazione Cloud Service Echosign](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
 * [Configurazioni Cloud Service Recaptcha](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
@@ -34,96 +34,96 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
 
 ### Varie {#misc}
 
-| **Posizione precedente** | `/etc/clientlibs/fd/fp` |
+| **Percorso precedente** | `/etc/clientlibs/fd/fp` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/fp/components` |
-| **Orientamenti per la ristrutturazione** | Eventuali riferimenti espliciti nel codice personalizzato alla posizione legacy devono essere aggiornati alla nuova posizione. |
+| **Linee guida per la ristrutturazione** | Eventuali riferimenti espliciti nel codice personalizzato alla posizione legacy devono essere aggiornati alla nuova posizione. |
 | **Note** | Queste librerie client non devono essere modificate o estese. |
 
-| **Posizione precedente** | `/etc/clientlibs/fd/rte` |
+| **Percorso precedente** | `/etc/clientlibs/fd/rte` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/rte` |
-| **Orientamenti per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
+| **Linee guida per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
 | **Note** | N/D |
 
-| **Posizione precedente** | `/etc/clientlibs/fd/af` |
+| **Percorso precedente** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/af/authoring/clientlibs` |
-| **Orientamenti per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
+| **Linee guida per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
 | **Note** | N/D |
 
-| **Posizione precedente** | `/etc/clientlibs/fd/xfaforms` |
+| **Percorso precedente** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/xfaforms/clientlibs/` |
-| **Orientamenti per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
+| **Linee guida per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
 | **Note** | N/D |
 
-| **Posizione precedente** | `/etc/clientlibs/fd/af` |
+| **Percorso precedente** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/af/runtime/clientlibs` |
-| **Orientamenti per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
+| **Linee guida per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
 | **Note** | N/D |
 
-| **Posizione precedente** | `/etc/clientlibs/fd/af` |
+| **Percorso precedente** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/af/runtime/clientlibs` |
-| **Orientamenti per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
+| **Linee guida per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
 | **Note** | N/D |
 
-| **Posizione precedente** | `/etc/clientlibs/fd/expeditor` |
+| **Percorso precedente** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/expeditor/clientlibs` |
-| **Orientamenti per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
+| **Linee guida per la ristrutturazione** | Per le risorse nelle librerie client a cui è possibile fare riferimento tramite percorsi assoluti, è necessario utilizzare percorsi più recenti nelle risorse nuove. |
 | **Note** | N/D |
 
-| **Posizione precedente** | `/etc/clientlibs/fd/fmaddon` |
+| **Percorso precedente** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/fmaddon` |
-| **Orientamenti per la ristrutturazione** | La modifica di queste clientlibs non è mai stata consigliata né supportata. Se sono state apportate modifiche a queste clientlibs, è necessario eseguirne il rollback per utilizzare il codice fornito dall’AEM. |
+| **Linee guida per la ristrutturazione** | La modifica di queste clientlibs non è mai stata consigliata né supportata. Se sono state apportate modifiche a queste clientlibs, è necessario eseguirne il rollback per utilizzare il codice fornito dall’AEM. |
 | **Note** | N/D |
 
-| **Posizione precedente** | `/etc/aep` |
+| **Percorso precedente** | `/etc/aep` |
 |---|---|
 | **Nuova posizione** | `/var/fd/content/annotations` |
-| **Orientamenti per la ristrutturazione** | La modifica di queste clientlibs non è mai stata consigliata né supportata. Se sono state apportate modifiche a queste clientlibs, è necessario eseguirne il rollback per utilizzare il codice fornito dall’AEM. |
+| **Linee guida per la ristrutturazione** | La modifica di queste clientlibs non è mai stata consigliata né supportata. Se sono state apportate modifiche a queste clientlibs, è necessario eseguirne il rollback per utilizzare il codice fornito dall’AEM. |
 | **Note** | N/D |
 
 ## Prima di aggiornamenti futuri {#prior-to-upgrade}
 
 ### Configurazione Cloud Service Echosign {#echosign-cloud-service-configuration}
 
-| **Posizione precedente** | `/etc/cloudservices/echosign` |
+| **Percorso precedente** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nuova posizione** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Orientamenti per la ristrutturazione** | Il [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di Forms Migration. |
+| **Linee guida per la ristrutturazione** | L&#39;utilità [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) verrà attivata dall&#39;interfaccia utente di Forms Migration. |
 | **Note** | N/D |
 
 ### Configurazioni Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
 
-| **Posizione precedente** | `/etc/cloudservices/recaptcha` |
+| **Percorso precedente** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nuova posizione** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Orientamenti per la ristrutturazione** | Il [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di Forms Migration. |
+| **Linee guida per la ristrutturazione** | L&#39;utilità [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) verrà attivata dall&#39;interfaccia utente di Forms Migration. |
 | **Note** | N/D |
 
 ### Configurazioni del Cloud Service Typekit {#typekit-cloud-service-configurations}
 
-| **Posizione precedente** | `/etc/cloudservices/typekit` |
+| **Percorso precedente** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nuova posizione** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Orientamenti per la ristrutturazione** | Il [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di Forms Migration. |
+| **Linee guida per la ristrutturazione** | L&#39;utilità [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) verrà attivata dall&#39;interfaccia utente di Forms Migration. |
 | **Note** | N/D |
 
 ### Varie {#misc-1}
 
-| **Posizione precedente** | `/etc/cloudservices/fdm` |
+| **Percorso precedente** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nuova posizione** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Orientamenti per la ristrutturazione** | Il [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di Forms Migration. |
+| **Linee guida per la ristrutturazione** | L&#39;utilità [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) verrà attivata dall&#39;interfaccia utente di Forms Migration. |
 | **Note** | N/D |
 
-| **Posizione precedente** | `/etc/designs/fd/fp` |
+| **Percorso precedente** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/fp` |
-| **Orientamenti per la ristrutturazione** | Aggiorna eventuali riferimenti ai modelli /etc in modo che puntino al relativo `/libs` controparti. |
+| **Linee guida per la ristrutturazione** | Aggiorna eventuali riferimenti ai modelli /etc in modo che puntino alle corrispondenti `/libs`. |
 | **Note** | N/D |

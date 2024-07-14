@@ -29,7 +29,7 @@ Il file si applica a tutti i progetti di traduzione.
 
 >[!NOTE]
 >
->Dopo un aggiornamento alla versione 6.4, si consiglia di spostare il file da /etc. Consulta [Ristrutturazione dell’archivio comune in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) per ulteriori dettagli.
+>Dopo un aggiornamento alla versione 6.4, si consiglia di spostare il file da /etc. Per ulteriori dettagli, vedere [Ristrutturazione dell&#39;archivio comune in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
 
 Le regole includono le seguenti informazioni:
 
@@ -72,7 +72,7 @@ Ognuno di questi elementi `node` presentano le seguenti caratteristiche:
    * L’attributo `resourceType` contiene il percorso che viene risolto nel componente che implementa il tipo di risorsa.
    * Gli elementi secondari `property` identificano la proprietà nodo da tradurre. Usa questo nodo nello stesso modo degli elementi secondari `property` per le regole dei nodi.
 
-La regola di esempio seguente causa il contenuto di tutte le proprietà `text` da tradurre per tutte le pagine al di sotto del nodo `/content`. La regola è efficace per qualsiasi componente che memorizza il contenuto in una `text` come il componente Testo di base e il componente Immagine di base.
+La regola di esempio seguente causa il contenuto di tutte le proprietà `text` da tradurre per tutte le pagine al di sotto del nodo `/content`. La regola è valida per qualsiasi componente che memorizza il contenuto in una proprietà `text`, ad esempio il componente Testo di base e il componente Immagine di base.
 
 ```xml
 <node path="/content">
@@ -80,7 +80,7 @@ La regola di esempio seguente causa il contenuto di tutte le proprietà `text` d
 </node>
 ```
 
-L’esempio seguente traduce il contenuto di tutti `text` e traduce anche altre proprietà del componente Immagine di base. Se altri componenti hanno proprietà con lo stesso nome, la regola non si applica a essi.
+L&#39;esempio seguente traduce il contenuto di tutte le proprietà `text` e traduce anche altre proprietà del componente immagine di base. Se altri componenti hanno proprietà con lo stesso nome, la regola non si applica a essi.
 
 ```xml
 <node path="/content">
@@ -103,8 +103,8 @@ Utilizza la sintassi della regola seguente per includere le risorse incorporate 
 
 Ogni elemento `assetNode` presenta le seguenti caratteristiche:
 
-* Uno `resourceType` è uguale al percorso che viene risolto nel componente.
-* Uno `assetReferenceAttribute` attributo che è uguale al nome della proprietà che memorizza il binario della risorsa (per le risorse incorporate) o il percorso della risorsa di riferimento.
+* Un attributo `resourceType` che è uguale al percorso che viene risolto nel componente.
+* Un attributo `assetReferenceAttribute` che è uguale al nome della proprietà che memorizza il binario della risorsa (per le risorse incorporate) o il percorso della risorsa di riferimento.
 
 L’esempio seguente estrae le immagini dal componente Immagine di base:
 
@@ -114,7 +114,7 @@ L’esempio seguente estrae le immagini dal componente Immagine di base:
 
 ## Regole di sovrascrittura {#overriding-rules}
 
-Il file translation_rules.xml è costituito da un `nodelist` elemento con diversi elementi figlio `node` elementi. AEM legge l’elenco dei nodi dall’alto verso il basso. Quando più regole sono indirizzate allo stesso nodo, viene utilizzata la regola inferiore nel file. Ad esempio, le seguenti regole causano la traduzione di tutto il contenuto in proprietà `text` ad eccezione del ramo `/content/mysite/en` di pagine:
+Il file translation_rules.xml è costituito da un elemento `nodelist` con diversi elementi secondari `node`. AEM legge l’elenco dei nodi dall’alto verso il basso. Quando più regole sono indirizzate allo stesso nodo, viene utilizzata la regola inferiore nel file. Ad esempio, le seguenti regole causano la traduzione di tutto il contenuto in proprietà `text` ad eccezione del ramo `/content/mysite/en` di pagine:
 
 ```xml
 <nodelist>
@@ -158,7 +158,7 @@ Per accedervi:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-Da qui puoi **Aggiungi contesto**. Questo consente di aggiungere un percorso.
+Da qui puoi **Aggiungere contesto**. Questo consente di aggiungere un percorso.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -166,17 +166,17 @@ Poi devi selezionare il contesto e fare clic su **Modifica**. Viene aperto l’E
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
-È possibile modificare 4 attributi tramite l’interfaccia utente: `isDeep`, `inherit`, `translate` e `updateDestinationLanguage`.
+È possibile modificare 4 attributi tramite l&#39;interfaccia utente: `isDeep`, `inherit`, `translate` e `updateDestinationLanguage`.
 
 **isDeep** Questo attributo è applicabile ai filtri dei nodi ed è true per impostazione predefinita. Controlla se il nodo (o i suoi predecessori) contiene tale proprietà con il valore della proprietà specificato nel filtro. Se false, controlla solo il nodo corrente.
 
-Ad esempio, i nodi secondari vengono aggiunti a un processo di traduzione anche quando il nodo principale ha una proprietà `draftOnly` imposta su true per contrassegnare il contenuto della bozza. Qui `isDeep` entra in gioco e controlla se i nodi principali hanno proprietà `draftOnly` come true ed esclude tali nodi secondari.
+Ad esempio, i nodi secondari vengono aggiunti a un processo di traduzione anche quando la proprietà `draftOnly` del nodo principale è impostata su true per contrassegnare il contenuto in formato bozza. Qui `isDeep` entra in gioco e controlla se i nodi principali hanno proprietà `draftOnly` come true ed esclude tali nodi secondari.
 
-Nell’editor, puoi selezionare/deselezionare **È profondo** nel **Filtri** scheda.
+Nell&#39;editor, è possibile selezionare/deselezionare **Deep** nella scheda **Filters**.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
-Ecco un esempio dell’xml risultante quando **È profondo** è deselezionato nell’interfaccia utente:
+Di seguito è riportato un esempio dell&#39;xml risultante quando **Deep** è deselezionato nell&#39;interfaccia utente:
 
 ```xml
  <filter>
@@ -184,19 +184,19 @@ Ecco un esempio dell’xml risultante quando **È profondo** è deselezionato ne
 </filter>
 ```
 
-**eredita** Questo è applicabile alle proprietà. Per impostazione predefinita, ogni proprietà viene ereditata, ma se desideri che alcune non vengano ereditate dall’elemento secondario, puoi contrassegnarle come false in modo che venga applicata solo a quel nodo specifico.
+**inherit** applicabile alle proprietà. Per impostazione predefinita, ogni proprietà viene ereditata, ma se desideri che alcune non vengano ereditate dall’elemento secondario, puoi contrassegnarle come false in modo che venga applicata solo a quel nodo specifico.
 
 Nell’interfaccia utente, puoi selezionare/deselezionare **Eredita** nella scheda **Proprietà**.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**traduci** L’attributo translate viene utilizzato semplicemente per specificare se tradurre o meno una proprietà.
+**traduci** L&#39;attributo translate viene utilizzato semplicemente per specificare se tradurre o meno una proprietà.
 
 Nell’interfaccia utente, puoi selezionare/deselezionare **Traduci** nella scheda **Proprietà**.
 
-**updateDestinationLanguage** Questo attributo viene utilizzato per le proprietà che non hanno testo ma codici di lingua, ad esempio jcr:language. L&#39;utente non traduce il testo, ma la lingua locale dal sorgente alla destinazione. Tali proprietà non vengono inviate per la traduzione.
+**updateDestinationLanguage** Questo attributo viene utilizzato per le proprietà che non contengono testo ma codici di lingua, ad esempio jcr:language. L&#39;utente non traduce il testo, ma la lingua locale dal sorgente alla destinazione. Tali proprietà non vengono inviate per la traduzione.
 
-Nell’interfaccia utente, puoi selezionare/deselezionare **Traduci** nel **Proprietà** , ma per le proprietà specifiche che hanno come valore i codici lingua.
+Nell&#39;interfaccia utente, puoi selezionare/deselezionare **Traduci** nella scheda **Proprietà**, ma per le proprietà specifiche che hanno come valore i codici lingua.
 
 Per chiarire la differenza tra `updateDestinationLanguage` e `translate`, ecco un semplice esempio di contesto con due sole regole:
 

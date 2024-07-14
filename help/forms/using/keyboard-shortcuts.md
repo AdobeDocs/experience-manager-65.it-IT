@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Scelte rapide da tastiera per AEM Forms {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzate con l’Editor di moduli adattivi, l’Editor temi, il Browser contenuti e la Gestione della corrispondenza per i sistemi operativi Windows e Macintosh.
 
 ## Editor di moduli adattivi {#adaptiveformeditor}
 
-| **Azione** | **Collegamento a Windows** | **Collegamento a macOS** |
+| **Azione** | **Collegamento in Windows** | **Collegamento in macOS** |
 |---|---|---|
 | Apri il browser Proprietà per il componente modulo adattivo selezionato | ALT+INVIO | ALT+INVIO |
 | Chiude il browser Proprietà per il componente modulo adattivo selezionato | Ctrl+Alt+W | Comando+Alt+W |
@@ -31,20 +31,20 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 | Modifica regola per il componente modulo adattivo selezionato | CTRL+ALT+INVIO | Comando+Alt+Invio |
 | Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&amp;ast; |
 | Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
-| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
+| Ripristina ultima modifica | CTRL+Y | CTRL+A&amp;P;ast; |
 | Selezione di più componenti | Maiusc+clic | Maiusc+clic |
-| Copia componente selezionato | Ctrl-C | Ctrl&amp;ast; |
+| Copia componente selezionato | Ctrl-C | CTRL&amp;C;ast; |
 | Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&amp;ast; |
 | Incolla componenti | Ctrl+V | Ctrl+V |
-| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&amp;O; |
+| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&amp;AMMA;ast; |
 | Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&amp;ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | Ctrl+B&amp;ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | CTRL+B&amp;ast; |
 | Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&amp;ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&amp;ST; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&amp;ast; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
+>I tasti di scelta rapida contrassegnati con un &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che con i tasti Comando in macOS.
 
 >[!NOTE]
 >
@@ -56,21 +56,21 @@ Selezione multipla su un dispositivo desktop:
 
 ## Editor temi  {#themeeditor}
 
-| **Azione** | **Collegamento a Windows** | **Collegamento a macOS** |
+| **Azione** | **Collegamento in Windows** | **Collegamento in macOS** |
 |---|---|---|
 | Apri il browser Proprietà per il componente selezionato in un tema | ALT+INVIO | ALT+INVIO |
 | Chiude il browser Proprietà per il componente selezionato in un tema | Ctrl+Alt+W | Comando+Alt+W |
 | Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
-| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
+| Ripristina ultima modifica | CTRL+Y | CTRL+A&amp;P;ast; |
 | Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&amp;ast; |
 
 >[!NOTE]
 >
-I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
+I tasti di scelta rapida contrassegnati con un &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che con i tasti Comando in macOS.
 
 ## Browser contenuti  {#contentbrowser}
 
-| **Azione** | **Collegamento a Windows** | **Collegamento a macOS** |
+| **Azione** | **Collegamento in Windows** | **Collegamento in macOS** |
 |---|---|---|
 | Espandere tutte le relazioni nella struttura Oggetti modulo del browser Contenuto quando attivo | Ctrl+A per selezionare tutte le fisarmoniche seguite da Freccia destra per espandere | Comando+A per selezionare tutte le fisarmoniche seguite da Freccia destra per espandere |
 | Comprimi tutte le relazioni nella struttura Oggetti modulo del browser Contenuto quando è attivo | Ctrl+A per selezionare tutte le fisarmoniche seguite da Freccia sinistra per comprimere | Comando+A per selezionare tutte le fisarmoniche seguite da Freccia sinistra per comprimere |
@@ -79,15 +79,15 @@ I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia c
 | Selezionare l&#39;elemento successivo nella struttura Oggetti di Forms | Freccia giù | Freccia giù |
 | Selezionare l&#39;elemento precedente nella struttura Oggetti di Forms | Freccia Su | Freccia Su |
 
-[1] Sostituisce Ctrl + Freccia destra per Windows e Comando + Freccia destra per macOS.\
-[2] Sostituisce Ctrl + Freccia sinistra per Windows e Comando + Freccia sinistra per macOS.
+[1] sostituisce Ctrl + freccia destra per Windows e Comando + freccia destra per macOS.\
+[2] sostituisce Ctrl + Freccia sinistra per Windows e Comando + Freccia sinistra per macOS.
 
 ## Gestione della corrispondenza {#correspondence-management}
 
 In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessibilità utilizzabili nell&#39;editor di testo Gestione corrispondenza. È possibile utilizzare le seguenti scelte rapide:
 
-* Creazione o modifica di un [Testo](texts-interactive-communications.md) risorsa
-* Modifica di un modulo di testo dopo aver toccato l’icona Modifica corrispondente ( ![edittextmodule](assets/edittextmodule.png)) quando [creazione di una corrispondenza](/help/forms/using/create-correspondence.md).
+* Creazione o modifica di una risorsa [Testo](texts-interactive-communications.md)
+* Modifica di un modulo di testo dopo aver toccato l&#39;icona Modifica pertinente ( ![edittextmodule](assets/edittextmodule.png)) durante la [creazione di una corrispondenza](/help/forms/using/create-correspondence.md).
 
 ### Selezione del testo e spostamento del cursore {#text-selection-and-moving-the-cursor-around}
 
@@ -96,7 +96,7 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><strong>Operazione</strong></th> 
    <th><strong>Collegamento a Windows</strong></th> 
-   <th><strong>Collegamento a macOS</strong><br /> </th> 
+   <th><strong>Collegamento in macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Seleziona la parola corrente</p> </td> 
@@ -246,7 +246,7 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><strong>Operazione</strong></th> 
    <th><strong>Collegamento a Windows </strong></th> 
-   <th><strong>Collegamento a macOS</strong><br /> </th> 
+   <th><strong>Collegamento in macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Annulla </p> </td> 

@@ -36,9 +36,9 @@ La nuova visualizzazione consente di esaminare più facilmente l’intero insiem
 
 CRXDE per gestire privilegi e restrizioni avanzati. È stato consolidato nella stessa visualizzazione. Il valore predefinito della visualizzazione è Gruppo &quot;tutti&quot;.
 
-![Vista del gruppo &quot;tutti&quot;](assets/unu-1.png)
+![Visualizzazione del gruppo &quot;tutti&quot;](assets/unu-1.png)
 
-È disponibile un filtro che consente all’utente di selezionare il tipo di entità da esaminare **Utenti**, **Gruppi**, o **Tutti** e cerca un’entità principale **.**
+È disponibile un filtro che consente all&#39;utente di selezionare il tipo di entità da esaminare **Utenti**, **Gruppi** o **Tutti** e cercare un&#39;entità&#x200B;**.**
 
 ![Cerca tipi di entità](assets/image2019-3-20_23-52-51.png)
 
@@ -46,7 +46,7 @@ CRXDE per gestire privilegi e restrizioni avanzati. È stato consolidato nella s
 
 Il frame a sinistra consente agli utenti di scorrere verso il basso per trovare un’entità principale o cercare un gruppo o un utente in base al filtro selezionato, come illustrato di seguito:
 
-![Visualizzare le autorizzazioni per un’entità](assets/doi-1.png)
+![Visualizza autorizzazioni per entità](assets/doi-1.png)
 
 Facendo clic sul nome, a destra vengono visualizzate le autorizzazioni assegnate. Nel riquadro delle autorizzazioni viene visualizzato l&#39;elenco delle voci di controllo di accesso in percorsi specifici con le limitazioni configurate.
 
@@ -56,17 +56,17 @@ Facendo clic sul nome, a destra vengono visualizzate le autorizzazioni assegnate
 
 È possibile aggiungere nuove autorizzazioni aggiungendo una voce di controllo di accesso. È sufficiente fare clic sul pulsante Aggiungi ACE.
 
-![Aggiungere un nuovo ACL per un&#39;entità](assets/patru.png)
+![Aggiungi nuovo ACL per entità](assets/patru.png)
 
 Viene visualizzata la finestra mostrata di seguito. Il passaggio successivo consiste nel scegliere un percorso in cui configurare l’autorizzazione.
 
-![Configurare il percorso delle autorizzazioni](assets/cinci-1.png)
+![Configura percorso autorizzazioni](assets/cinci-1.png)
 
-In questo caso, viene selezionato un percorso in cui è possibile configurare un’autorizzazione per **dam-users**:
+In questo caso, viene selezionato un percorso in cui è possibile configurare un&#39;autorizzazione per **dam-users**:
 
 ![Configurazione di esempio per dam-users](assets/sase-1.png)
 
-Dopo aver selezionato il percorso, il flusso di lavoro torna a questa schermata, in cui l’utente può quindi selezionare uno o più privilegi dagli spazi dei nomi disponibili (come `jcr`, `rep` o `crx`) come mostrato di seguito.
+Dopo aver selezionato il percorso, il flusso di lavoro torna a questa schermata, in cui l&#39;utente può selezionare uno o più privilegi dagli spazi dei nomi disponibili (ad esempio `jcr`, `rep` o `crx`) come mostrato di seguito.
 
 I privilegi possono essere aggiunti effettuando una ricerca utilizzando il campo di testo e selezionando dall’elenco.
 
@@ -88,19 +88,19 @@ Oltre all’elenco dei privilegi e al tipo di autorizzazione su un determinato p
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul significato di ciascuna restrizione, consulta [la documentazione di Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Per ulteriori informazioni sul significato di ciascuna restrizione, vedere [la documentazione di Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-Le restrizioni possono essere aggiunte come mostrato di seguito scegliendo il tipo di restrizione, immettendo il valore e premendo il tasto **+** icona.
+Le restrizioni possono essere aggiunte come mostrato di seguito scegliendo il tipo di restrizione, immettendo il valore e premendo l&#39;icona **+**.
 
 ![Aggiungere il tipo di restrizione](assets/sapte-1.png) ![Aggiungere il tipo di restrizione](assets/opt-1.png)
 
-La nuova voce ACE viene visualizzata nell&#39;elenco di controllo di accesso come illustrato di seguito. Tieni presente che `jcr:write` è un privilegio aggregato che include `jcr:removeNode` che è stato aggiunto in precedenza, ma non è mostrato di seguito come suo coperto in `jcr:write`.
+La nuova voce ACE viene visualizzata nell&#39;elenco di controllo di accesso come illustrato di seguito. Si noti che `jcr:write` è un privilegio aggregato che include `jcr:removeNode` aggiunto in precedenza, ma non mostrato di seguito come relativo coperto in `jcr:write`.
 
 ### Modifica delle ACE {#editing-aces}
 
 Le voci di controllo di accesso possono essere modificate selezionando un&#39;entità principale e scegliendo l&#39;ACE che si desidera modificare.
 
-Ad esempio, qui puoi modificare la voce seguente per **dam-users** facendo clic sull’icona della matita a destra:
+Ad esempio, qui puoi modificare la voce seguente per **dam-users** facendo clic sull&#39;icona della matita a destra:
 
 ![Aggiungi restrizione](assets/image2019-3-21_0-35-39.png)
 
@@ -108,11 +108,11 @@ Viene visualizzata la schermata di modifica con ACE configurati preselezionati. 
 
 ![Modifica voce](assets/noua-1.png)
 
-Qui le `addChildNodes` privilegio aggiunto per **dam-users** nel percorso specificato.
+Qui viene aggiunto il privilegio `addChildNodes` per **dam-users** sul percorso specificato.
 
 ![Aggiungi privilegio](assets/image2019-3-21_0-45-35.png)
 
-Le modifiche possono essere salvate facendo clic su **Salva** in alto a destra e le modifiche si riflettono nelle nuove autorizzazioni per **dam-users** come mostrato di seguito:
+Le modifiche possono essere salvate facendo clic sul pulsante **Salva** in alto a destra e le modifiche si riflettono nelle nuove autorizzazioni per **dam-users**, come illustrato di seguito:
 
 ![Salva modifiche](assets/zece-1.png)
 
@@ -147,7 +147,7 @@ Ciò ha causato confusione su ciò che è esattamente configurato. Nella tabella
    <td><p><code>jcr:addChildNodes</code></p> <p><code>jcr:nodeTypeManagement</code></p> </td>
   </tr>
   <tr>
-   <td>Eliminare</td>
+   <td>Elimina</td>
    <td><p><code>jcr:removeNode</code></p> <p><code>jcr:removeChildNodes</code></p> </td>
   </tr>
   <tr>

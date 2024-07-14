@@ -36,9 +36,9 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
 1. Fare clic su Verifica connettività HSM. Se i moduli AEM sono in grado di connettersi al dispositivo HSM, viene visualizzato un messaggio che informa che il dispositivo HSM è disponibile. Fai clic su Avanti.
 1. Utilizzare il Nome token, l&#39;ID slot o l&#39;Indice elenco slot per identificare la posizione in cui sono memorizzate le credenziali nell&#39;HSM.
 
-   * **Nome token:** Corrisponde al nome della partizione HSM da utilizzare, ad esempio HSMPART1.
+   * **Nome token:** corrisponde al nome della partizione HSM da utilizzare (ad esempio, HSMPART1).
    * **ID slot:** L&#39;ID slot è un identificatore di slot di tipo long.
-   * **Indice elenco slot:** Se selezionate Indice elenco slot (Slot List Index), impostate le informazioni sullo slot su un numero intero corrispondente allo slot. Si tratta di un indice basato su 0, il che significa che se il client viene registrato prima con la partizione HSMPART1, verrà fatto riferimento a HSMPART1 utilizzando il valore 0 di SlotListIndex.
+   * **Indice elenco slot:** Se si seleziona Indice elenco slot, impostare le informazioni sullo slot su un numero intero corrispondente allo slot. Si tratta di un indice basato su 0, il che significa che se il client viene registrato prima con la partizione HSMPART1, verrà fatto riferimento a HSMPART1 utilizzando il valore 0 di SlotListIndex.
 
 1. Nella casella Token Pin, digita la password necessaria per accedere alla chiave HSM e fai clic su Avanti.
 1. Nella casella Credenziali selezionare una credenziale. Fai clic su Salva.
@@ -52,17 +52,17 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
 1. Nell&#39;elenco Periferiche HSM selezionare il produttore della periferica HSM in cui sono memorizzate le credenziali.
 1. Nell&#39;elenco Tipo slot (Slot Type), selezionate ID slot (Slot Id), Indice slot (Slot Index) o Nome token (Token Name) e specificate un valore nella casella Informazioni slot (Slot Info). I moduli AEM utilizzano queste impostazioni per determinare dove vengono memorizzate le credenziali nell&#39;HSM.
 
-   * **Nome token:** Corrisponde al nome di una partizione (ad esempio, HSMPART1).
+   * **Nome token:** corrisponde a un nome di partizione (ad esempio, HSMPART1).
    * **ID slot:** L&#39;ID slot è un numero intero che corrisponde allo slot, che a sua volta corrisponde a una partizione. Ad esempio, il client (Forms Server) è stato registrato prima con la partizione HSMPART1. Questo mappa lo slot 1 alla partizione HSMPART1 per questo client. Poiché HSMPART1 è la prima partizione registrata, l&#39;ID dello slot è 1 e le informazioni sullo slot vengono impostate su 1.
 
      L&#39;ID dello slot viene impostato client per client. Se si registra un secondo computer in una partizione diversa (ad esempio, HSMPART2 sullo stesso dispositivo HSM), lo slot 1 verrà associato alla partizione HSMPART2 per tale client.
 
-   * **Indice slot:** Se selezionate Indice slot (Slot Index), impostate le informazioni sullo slot su un numero intero corrispondente allo slot. Si tratta di un indice basato su 0, il che significa che se il client viene registrato prima con la partizione HSMPART1, lo slot 1 viene mappato a HSMPART1 per questo client. Poiché HSMPART1 è la prima partizione registrata, l&#39;indice di slot è 0.
+   * **Indice slot:** Se si seleziona Indice slot, impostare le informazioni sullo slot su un numero intero corrispondente allo slot. Si tratta di un indice basato su 0, il che significa che se il client viene registrato prima con la partizione HSMPART1, lo slot 1 viene mappato a HSMPART1 per questo client. Poiché HSMPART1 è la prima partizione registrata, l&#39;indice di slot è 0.
 
 1. Seleziona una di queste opzioni e fornisci il percorso:
 
-   * **Certificato**: (non obbligatorio se si utilizza SHA1) Fare clic su Sfoglia e individuare il percorso della chiave pubblica per le credenziali in uso.
-   * **Certificato SHA1:** (Non richiesto se si utilizza un certificato fisico) Digitare il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verificare che nel valore SHA1 non siano presenti spazi.
+   * **Certificato**: (non richiesto se si utilizza SHA1) Fare clic su Sfoglia e individuare il percorso della chiave pubblica per le credenziali in uso.
+   * **Certificato SHA1:** (non richiesto se si utilizza un certificato fisico) Digitare il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verificare che nel valore SHA1 non siano presenti spazi.
 
 1. Nella casella Password digitare la password necessaria per accedere alla chiave HSM per le informazioni sullo slot specificate e quindi fare clic su Salva.
 
@@ -98,9 +98,9 @@ Reimpostare le connessioni aperte a un dispositivo HSM dopo eventuali interruzio
 
 ## Configurare il supporto HSM remoto {#configure-remote-hsm-support}
 
-I moduli AEM utilizzano un meccanismo IPC/RPC basato su servizi Web. Questo meccanismo consente ai moduli AEM di utilizzare un HSM installato in un computer remoto. Per utilizzare questa funzionalità, installare il servizio Web nel computer remoto in cui è installato HSM. Consulta [Configurazione del supporto HSM per AEM Forms ES con Sun JDK su piattaforma Windows a 64 bit](https://kb2.adobe.com/cps/808/cpsid_80835.html)per ulteriori informazioni.
+I moduli AEM utilizzano un meccanismo IPC/RPC basato su servizi Web. Questo meccanismo consente ai moduli AEM di utilizzare un HSM installato in un computer remoto. Per utilizzare questa funzionalità, installare il servizio Web nel computer remoto in cui è installato HSM. Per ulteriori informazioni, vedere [Configurazione del supporto HSM per AEM Forms ES con Sun JDK su piattaforma Windows a 64 bit](https://kb2.adobe.com/cps/808/cpsid_80835.html).
 
 Questo meccanismo non supporta la creazione online di profili HSM o i controlli dello stato. Tuttavia, esistono due modi per creare profili HSM ed eseguire controlli dello stato:
 
-* Creare un AEM per creare le credenziali del client trasmettendole il certificato del firmatario. Segui i passaggi descritti in [Configurazione del supporto HSM per AEM Forms ES con Sun JDK su piattaforma Windows a 64 bit](https://kb2.adobe.com/cps/808/cpsid_80835.html). Il percorso del servizio Web viene passato come proprietà Credential. È inoltre supportata la creazione di profili HSM offline utilizzando il gestore di certificati o l’esadecimale SHA-1 del certificato. Tuttavia, se hai effettuato l’aggiornamento ai moduli AEM da una versione precedente di moduli AEM, apporta modifiche al client perché le credenziali contenevano informazioni sul certificato e sul servizio Web.
-* Il percorso del servizio Web è specificato nella console di amministrazione del servizio di firma. (vedere [Impostazioni del servizio di firma](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) In questo caso, il client conteneva solo l’alias del profilo HSM nell’archivio fonti attendibili. Puoi utilizzare questa opzione senza apportare alcuna modifica al client, anche se hai effettuato l’aggiornamento ai moduli AEM da una versione precedente dei moduli AEM. Questa opzione non supporta i profili HSM che utilizzano il certificato SHA-1.
+* Creare un AEM per creare le credenziali del client trasmettendole il certificato del firmatario. Segui i passaggi descritti in [Configurazione del supporto HSM per AEM Forms ES utilizzando Sun JDK sulla piattaforma Windows a 64 bit](https://kb2.adobe.com/cps/808/cpsid_80835.html). Il percorso del servizio Web viene passato come proprietà Credential. È inoltre supportata la creazione di profili HSM offline utilizzando il gestore di certificati o l’esadecimale SHA-1 del certificato. Tuttavia, se hai effettuato l’aggiornamento ai moduli AEM da una versione precedente di moduli AEM, apporta modifiche al client perché le credenziali contenevano informazioni sul certificato e sul servizio Web.
+* Il percorso del servizio Web è specificato nella console di amministrazione del servizio di firma. (Vedi [Impostazioni del servizio di firma](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) In questo caso, il client conteneva solo l’alias del profilo HSM nell’archivio fonti attendibili. Puoi utilizzare questa opzione senza apportare alcuna modifica al client, anche se hai effettuato l’aggiornamento ai moduli AEM da una versione precedente dei moduli AEM. Questa opzione non supporta i profili HSM che utilizzano il certificato SHA-1.

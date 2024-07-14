@@ -28,5 +28,5 @@ Gli argomenti seguenti descrivono come gestire le risorse Dynamic Medie:
 
 * [Best practice per ottimizzare la qualità delle immagini](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anteprima delle risorse Dynamic Medie](/help/assets/previewing-assets.md)
-* [Pubblicazione di risorse Dynamic Medie](/help/assets/publishing-dynamicmedia-assets.md)
+* [Pubblicazione di Dynamic Medie Assets](/help/assets/publishing-dynamicmedia-assets.md)
 * [Utilizzo dei selettori](/help/assets/working-with-selectors.md)

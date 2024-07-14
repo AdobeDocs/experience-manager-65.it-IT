@@ -18,21 +18,21 @@ ht-degree: 0%
 
 # Configurazione dell’annullamento per la modifica delle pagine{#configuring-undo-for-page-editing}
 
-Il [Servizio OSGi](/help/sites-deploying/configuring-osgi.md)  **Configurazione annullamento WCM Day CQ** ( `com.day.cq.wcm.undo.UndoConfigService`) espone diverse proprietà che controllano il comportamento dei comandi Annulla e Ripristina per la modifica delle pagine.
+Il servizio [OSGi](/help/sites-deploying/configuring-osgi.md) **Day CQ WCM Undo Configuration** ( `com.day.cq.wcm.undo.UndoConfigService`) espone diverse proprietà che controllano il comportamento dei comandi Annulla e Ripristina per la modifica delle pagine.
 
 ## Configurazione predefinita {#default-configuration}
 
-In un&#39;installazione standard le impostazioni predefinite sono definite come proprietà nel `sling:OsgiConfig`nodo:
+In un&#39;installazione standard le impostazioni predefinite sono definite come proprietà nel nodo `sling:OsgiConfig`:
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
-Questo nodo contiene `cq.wcm.undo.whitelist` e `cq.wcm.undo.blacklist` proprietà, per le altre proprietà vengono utilizzate le impostazioni predefinite.
+Questo nodo contiene `cq.wcm.undo.whitelist` e `cq.wcm.undo.blacklist` proprietà. Per le altre proprietà vengono utilizzate le impostazioni predefinite.
 
 >[!CAUTION]
 >
->Tu ***deve*** non modificare nulla in `/libs` percorso.
+>***must*** non modificare nulla nel percorso `/libs`.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+>Il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 
 ## Configurazione di Annulla e Ripristina {#configuring-undo-and-redo}
 
@@ -40,7 +40,7 @@ Puoi configurare queste proprietà del servizio OSGi per la tua istanza.
 
 >[!NOTE]
 >
->Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
+>Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
 
 Di seguito è riportato un elenco delle proprietà visualizzate nella console Web, seguite dal nome del parametro OSGi corrispondente, insieme a una descrizione e al valore predefinito (se appropriato):
 
@@ -54,15 +54,15 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 * **Percorso**
 ( `cq.wcm.undo.path`)
 
-   * **Descrizione**: percorso dell’archivio per i dati di annullamento binari persistenti. Quando gli autori modificano dati binari come immagini, la versione originale dei dati viene mantenuta qui. Quando le modifiche ai dati binari vengono annullate, questi dati di annullamento binari vengono ripristinati nella pagina.
+   * **Descrizione**: il percorso dell&#39;archivio per i dati di annullamento binari persistenti. Quando gli autori modificano dati binari come immagini, la versione originale dei dati viene mantenuta qui. Quando le modifiche ai dati binari vengono annullate, questi dati di annullamento binari vengono ripristinati nella pagina.
    * **Predefinito**: `/var/undo`
    * **Tipo**: `String`
 
   >[!NOTE]
   >
-  >Per impostazione predefinita, solo gli amministratori possono accedere a `/var/undo` nodo. Gli autori possono eseguire operazioni Annulla e Ripristina sul contenuto binario solo dopo aver ottenuto le autorizzazioni necessarie per accedere ai dati di annullamento binari.
+  >Per impostazione predefinita, solo gli amministratori possono accedere al nodo `/var/undo`. Gli autori possono eseguire operazioni Annulla e Ripristina sul contenuto binario solo dopo aver ottenuto le autorizzazioni necessarie per accedere ai dati di annullamento binari.
 
-* **Min validità**
+* **min. validità**
 ( `cq.wcm.undo.validity`)
 
    * **Descrizione**: quantità minima di tempo per la memorizzazione dei dati di annullamento binari, in ore. Dopo questo periodo di tempo, i dati binari sono disponibili per l&#39;eliminazione, per risparmiare spazio su disco.
@@ -72,7 +72,7 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 * **Passaggi**
 ( `cq.wcm.undo.steps`)
 
-   * **Descrizione**: numero massimo di azioni di pagina memorizzate nella cronologia delle operazioni Annulla.
+   * **Descrizione**: numero massimo di azioni di pagina archiviate nella cronologia di annullamento.
    * **Predefinito**: `20`
    * **Tipo**: `Integer`
 
@@ -81,8 +81,8 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 
    * **Descrizione**: classe che persiste nella cronologia delle operazioni Annulla. Sono fornite due classi di persistenza:
 
-      * `CQ.undo.persistence.WindowNamePersistence`: Persiste la cronologia utilizzando la proprietà window.name.
-      * `CQ.undo.persistence.CookiePersistance`: Persiste la cronologia utilizzando i cookie.
+      * `CQ.undo.persistence.WindowNamePersistence`: mantiene la cronologia utilizzando la proprietà window.name.
+      * `CQ.undo.persistence.CookiePersistance`: persiste la cronologia utilizzando i cookie.
 
    * **Predefinito**: `CQ.undo.persistence.WindowNamePersistence`
    * **Tipo**: `String`
@@ -90,7 +90,7 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 * **Modalità persistenza**
 ( `cq.wcm.undo.persistence.mode`)
 
-   * **Descrizione**: determina quando la cronologia delle operazioni di annullamento viene resa persistente. Selezionare questa opzione per rendere persistente la cronologia delle operazioni Annulla dopo ogni modifica della pagina. Deseleziona questa opzione per renderla persistente solo quando si verifica un ricaricamento della pagina (ad esempio, l’utente passa a una pagina diversa).
+   * **Descrizione**: determina quando la cronologia delle operazioni di annullamento viene mantenuta. Selezionare questa opzione per rendere persistente la cronologia delle operazioni Annulla dopo ogni modifica della pagina. Deseleziona questa opzione per renderla persistente solo quando si verifica un ricaricamento della pagina (ad esempio, l’utente passa a una pagina diversa).
 
      La cronologia degli undo persistenti utilizza le risorse del browser Web. Se il browser degli utenti reagisce lentamente alle modifiche apportate alla pagina, prova a mantenere la cronologia delle operazioni Annulla durante i ricaricamenti della pagina.
 
@@ -111,7 +111,7 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 * **Componenti validi**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Descrizione**: elenco di componenti che devono essere interessati dai comandi Annulla e Ripristina. Aggiungete i percorsi dei componenti a questo elenco quando funzionano correttamente con Annulla/Ripristina. Aggiungi un asterisco (&amp;ast;) per specificare un gruppo di componenti:
+   * **Descrizione**: elenco di componenti che devono essere interessati dai comandi Annulla e Ripristina. Aggiungete i percorsi dei componenti a questo elenco quando funzionano correttamente con Annulla/Ripristina. Aggiungete un asterisco (&amp;ast;) per specificare un gruppo di componenti:
 
       * Il valore seguente specifica il componente testo di base:
 
@@ -129,21 +129,21 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 * **Componenti non validi**
 ( `cq.wcm.undo.blacklist`)
 
-   * **Descrizione**: elenco di componenti e/o operazioni sui componenti che non devono essere influenzati dal comando Annulla. Aggiungi componenti e operazioni sui componenti che non si comportano correttamente con il comando Annulla:
+   * **Descrizione**: elenco di componenti e/o operazioni di componenti che non si desidera siano interessati dal comando Annulla. Aggiungi componenti e operazioni sui componenti che non si comportano correttamente con il comando Annulla:
 
-      * Aggiungi un percorso di componente quando non desideri che nessuna delle operazioni del componente sia inserita nella cronologia delle operazioni Annulla, ad esempio: `collab/forum/components/post`
-      * Aggiungete al percorso i due punti (:) e un&#39;operazione quando desiderate che tale operazione specifica venga omessa dalla cronologia di annullamento (altre operazioni funzionano correttamente), ad esempio: `collab/forum/components/post:insertParagraph.`
+      * Aggiungere un percorso di componente quando non si desidera eseguire nessuna delle operazioni del componente nella cronologia di annullamento, ad esempio `collab/forum/components/post`
+      * Aggiungere i due punti (:) e un&#39;operazione al percorso quando si desidera che tale operazione specifica venga omessa dalla cronologia di annullamento (altre operazioni funzionano correttamente), ad esempio `collab/forum/components/post:insertParagraph.`
 
   >[!NOTE]
   >
-  >Quando un&#39;operazione si trova in questo elenco, viene comunque aggiunta alla cronologia di annullamento. Gli utenti non possono annullare operazioni precedenti a **Componente non valido** nella cronologia delle operazioni Annulla.
+  >Quando un&#39;operazione si trova in questo elenco, viene comunque aggiunta alla cronologia di annullamento. Gli utenti non possono annullare operazioni precedenti a un&#39;operazione di tipo **Componente non valido** nella cronologia delle operazioni di annullamento.
 
    * Di seguito sono riportati i nomi tipici delle operazioni:
 
-      * `insertParagraph`: il componente viene aggiunto alla pagina.
-      * `removeParagraph`: il componente viene eliminato.
-      * `moveParagraph`: il paragrafo viene spostato in una posizione diversa.
+      * `insertParagraph`: componente aggiunto alla pagina.
+      * `removeParagraph`: componente eliminato.
+      * `moveParagraph`: il paragrafo è stato spostato in una posizione diversa.
       * `updateParagraph`: le proprietà del paragrafo vengono modificate.
 
-   * **Predefinito**: la proprietà viene compilata con diverse operazioni dei componenti.
+   * **Predefinito**: la proprietà è compilata con diverse operazioni del componente.
    * **Tipo**: `String[]`

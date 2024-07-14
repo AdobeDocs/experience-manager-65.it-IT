@@ -28,11 +28,11 @@ A differenza di quando si aggiunge un post alla parte superiore di un forum, que
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong>tiporisorsa</strong></td>
    <td>social/commons/components/hbs/featurecontent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includibile</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -49,7 +49,7 @@ A differenza di quando si aggiunge un post alla parte superiore di un forum, que
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consulta <a href="featured.md">Contenuto in primo piano</a></td>
+   <td>Visualizza <a href="featured.md">Contenuto in primo piano</a></td>
   </tr>
  </tbody>
 </table>
@@ -58,4 +58,4 @@ A differenza di quando si aggiunge un post alla parte superiore di un forum, que
 
 ### Funzione Libreria file {#file-library-function}
 
-Una struttura del sito della community che include [Funzione Contenuto in primo piano](functions.md#featured-content-function), include un `featured content` componente.
+Una struttura del sito della community che include la funzione [Contenuto in primo piano](functions.md#featured-content-function), include un componente `featured content` configurato.

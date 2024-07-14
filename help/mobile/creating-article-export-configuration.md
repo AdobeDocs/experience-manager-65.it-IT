@@ -30,15 +30,15 @@ ht-degree: 1%
 
 Gli utenti di AEM Mobile utilizzano Sincronizzazione contenuti per esportare contenuti live in contenuti statici da utilizzare nelle app mobili. Questa esportazione si verifica quando i contenuti vengono caricati in Mobile On-Demand Services da AEM Mobile.
 
-La proprietà ***dps-exportTemplate*** indicato nella tabella precedente, definisce il percorso delle configurazioni di esportazione dell’app. Impostare questa proprietà per creare e modificare le risorse condivise.
+La proprietà ***dps-exportTemplate*** indicata nella tabella precedente definisce il percorso delle configurazioni di esportazione dell&#39;app. Impostare questa proprietà per creare e modificare le risorse condivise.
 
 Le risorse seguenti descrivono l’esportazione di contenuto da Adobe Experience Manager (AEM) per il caricamento in AEM Mobile.
 
 Gli articoli hanno contenuti da esportare e caricare. Parte di questo contenuto può essere condiviso tra gli articoli.
 
-Utilizzare [Sincronizzazione contenuti](/help/mobile/mobile-ondemand-contentsync.md) per raccogliere i contenuti e creare un ***Risorse condivise*** pacchetto.
+Utilizza [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) per raccogliere i contenuti e creare un pacchetto ***Risorse condivise***.
 
-Configurazione di ContentSync trovata in **&lt;dps-exporttemplate>/dps-article>** deve essere configurato per esportare tutto il contenuto di un articolo necessario per il rendering statico della proprietà sul dispositivo.
+La configurazione di ContentSync trovata in **&lt;dps-exportTemplate>/dps-article>** deve essere configurata per esportare tutto il contenuto di un articolo necessario per il rendering statico della proprietà sul dispositivo.
 
 >[!CAUTION]
 >
@@ -51,8 +51,8 @@ Configurazione di ContentSync trovata in **&lt;dps-exporttemplate>/dps-article>*
 
 Per visualizzare un esempio di risorsa condivisa, consulta i passaggi seguenti:
 
-1. Apri CRXDE Liti sul server AEM.
-1. Passa a questo percorso [/etc/contentsync/templates/dps-we-unlimited-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article), per visualizzare le risorse condivise di esempio.
+1. Apri CRXDE Lite sul server AEM.
+1. Individua questo percorso [/etc/contentsync/templates/dps-we-unlimited-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article), per visualizzare le risorse condivise di esempio.
 
    Puoi visualizzare tutte le proprietà necessarie per creare le risorse condivise, come illustrato nella figura seguente:
 

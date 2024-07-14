@@ -27,15 +27,15 @@ La segmentazione è un concetto chiave per la creazione di una campagna. Consult
 
 A seconda delle informazioni già raccolte sui visitatori del sito e degli obiettivi che desideri raggiungere, devi definire i segmenti e le strategie necessarie per i contenuti di destinazione.
 
-Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Questo contenuto viene mantenuto in [Personalizzazione](/help/sites-authoring/personalization.md) sezione del sito web. Le [Attività](/help/sites-authoring/activitylib.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
+Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Questo contenuto viene mantenuto nella sezione [Personalization](/help/sites-authoring/personalization.md) del sito Web. Le [Attività](/help/sites-authoring/activitylib.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
 
 L’AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Consente inoltre di verificare i risultati delle definizioni dei segmenti.
 
 ## Accesso ai segmenti {#accessing-segments}
 
-Il [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) La console viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. Questa documentazione tratta la gestione dei segmenti per ContextHub. Per [Segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e sui segmenti di Adobe Target, consulta la relativa documentazione.
+La console [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. Questa documentazione tratta la gestione dei segmenti per ContextHub. Per [segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e segmenti Adobe Target, consulta la relativa documentazione.
 
-Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**. Verranno visualizzate le configurazioni disponibili:
+Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale, seleziona **Navigazione > Personalization > Tipi di pubblico**. Verranno visualizzate le configurazioni disponibili:
 
 ![Tipi di pubblico - Configurazioni](assets/segmentation-access-confs.png)
 
@@ -45,13 +45,13 @@ Seleziona la configurazione per visualizzare i segmenti, ad esempio Sito WKND:
 
 ## Editor segmento {#segment-editor}
 
-Il **Editor segmento** consente di modificare facilmente un segmento. Per modificare un segmento, selezionalo in [elenco dei segmenti](/help/sites-administering/segmentation.md#accessing-segments) e fai clic su **Modifica** pulsante.
+L&#39;**Editor segmenti** consente di modificare facilmente un segmento. Per modificare un segmento, selezionare un segmento nell&#39;[elenco di segmenti](/help/sites-administering/segmentation.md#accessing-segments) e fare clic sul pulsante **Modifica**.
 
 ![segmenteditor](assets/segmenteditor.png)
 
 Tramite il browser Componenti puoi aggiungere i contenitori **AND** e **OR** per definire la logica del segmento. In seguito puoi aggiungere altri componenti per confrontare proprietà e valori o script di riferimento e altri segmenti per definire i criteri di selezione (consulta [Creazione di un nuovo segmento](#creating-a-new-segment)) per definire lo scenario esatto per la selezione del segmento.
 
-Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Se sono presenti più segmenti applicabili, il **Incrementa** viene utilizzato anche il fattore. Consulta [Creazione di un nuovo segmento](#creating-a-new-segment) per ulteriori informazioni su [fattore di incremento.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Se sono presenti più segmenti applicabili, viene utilizzato anche il fattore **Incrementa**. Per informazioni dettagliate sul [fattore di incremento, consulta [Creazione di un nuovo segmento](#creating-a-new-segment).](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -64,7 +64,7 @@ Sono disponibili i seguenti contenitori predefiniti che consentono di raggruppar
 <table>
  <tbody>
   <tr>
-   <td>Contenitore E<br /> </td>
+   <td>Contenitore AND<br /> </td>
    <td>Operatore AND booleano<br /> </td>
   </tr>
   <tr>
@@ -86,7 +86,7 @@ Per valutare le proprietà dei segmenti sono disponibili i seguenti confronti di
   </tr>
   <tr>
    <td>Property-Property (Proprietà-Proprietà)</td>
-   <td>Confronta una proprietà di un archivio con un’altra proprietà<br /> </td>
+   <td>Confronta una proprietà di un archivio con un'altra proprietà<br /> </td>
   </tr>
   <tr>
    <td>Riferimento Property-Segment (Proprietà-Segmento)</td>
@@ -140,7 +140,7 @@ Per definire il nuovo segmento:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In **Nuovo segmento ContextHub**, immetti un titolo per il segmento e un valore di incremento, se necessario, quindi fai clic su **Crea**.
+1. In **Nuovo segmento ContextHub**, inserisci un titolo per il segmento e se necessario un valore di incremento, quindi fai clic su **Crea**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -152,11 +152,11 @@ Per definire il nuovo segmento:
 1. Trascina un confronto o un riferimento nell’editor segmento per visualizzarlo nel contenitore AND predefinito.
 1. Fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificare i parametri specifici. In questo esempio, effettuiamo i test per le persone a San Jose.
 
-   ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
+   ![schermata_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
    Imposta sempre un **Tipo di dati** se possibile, per garantire che i confronti siano valutati correttamente. Per ulteriori informazioni, consulta [Confronti](/help/sites-administering/segmentation.md#comparisons).
 
-1. Clic **OK** per salvare la definizione:
+1. Fai clic su **OK** per salvare la definizione:
 1. Aggiungi altri componenti in base alle esigenze. Puoi formulare espressioni boolean utilizzando i componenti contenitore per i confronti AND e OR (vedi di seguito [Utilizzo dei contenitori AND e OR](/help/sites-administering/segmentation.md#using-and-and-or-containers)). Con l’editor segmento è possibile eliminare i componenti non più necessari o trascinarli in nuove posizioni all’interno dell’istruzione.
 
 ### Utilizzo dei contenitori AND e OR {#using-and-and-or-containers}
@@ -176,7 +176,7 @@ Femmina e di età compresa tra 30 e 59 anni
 
 Per iniziare, inserisci un componente contenitore OR all’interno del contenitore AND predefinito. All’interno del contenitore OR, aggiungi due contenitori AND e all’interno di entrambi puoi aggiungere la proprietà o i componenti di riferimento.
 
-![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145ama.png)
+![schermata_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145ama.png)
 
 ### Utilizzo di riferimenti a script {#using-script-references}
 
@@ -236,7 +236,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Crea una nuova cartella,  {#create-folder}
 
-1. Dopo [accesso ai segmenti](#accessing-segments), fare clic su **Crea** e seleziona **Cartella**.
+1. Dopo [l&#39;accesso ai segmenti](#accessing-segments), fare clic sul pulsante **Crea** e selezionare **Cartella**.
 
    ![Aggiungi cartella](assets/contexthub-create-segment.png)
 
@@ -259,11 +259,11 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Modificare le cartelle esistenti {#modify-folders}
 
-1. Dopo [accesso ai segmenti](#accessing-segments), fare clic sulla cartella che si desidera modificare per selezionarla.
+1. Dopo [aver effettuato l&#39;accesso ai segmenti](#accessing-segments), fare clic sulla cartella che si desidera modificare per selezionarla.
 
    ![Selezione cartella](assets/contexthub-select-folder.png)
 
-1. Clic **Rinomina** nella barra degli strumenti per rinominare la cartella.
+1. Fare clic su **Rinomina** nella barra degli strumenti per rinominare la cartella.
 
 1. Fornisci un nuovo **Titolo cartella** e fai clic su **Salva**.
 
@@ -275,25 +275,25 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Eliminare una cartella
 
-1. Dopo [accesso ai segmenti](#accessing-segments), fare clic sulla cartella che si desidera modificare per selezionarla.
+1. Dopo [aver effettuato l&#39;accesso ai segmenti](#accessing-segments), fare clic sulla cartella che si desidera modificare per selezionarla.
 
    ![Selezione cartella](assets/contexthub-select-folder.png)
 
-1. Clic **Elimina** nella barra degli strumenti per eliminare la cartella.
+1. Fare clic su **Elimina** nella barra degli strumenti per eliminare la cartella.
 
 1. Una finestra di dialogo riporta un elenco di cartelle selezionate per l’eliminazione.
 
    ![Conferma eliminazione](assets/contexthub-confirm-segment-delete.png)
 
-   * Clic **Elimina** per confermare.
-   * Clic **Annulla** per interrompere.
+   * Fai clic su **Elimina** per confermare.
+   * Fai clic su **Annulla** per interrompere.
 
 1. Se una delle cartelle selezionate contiene sottocartelle o segmenti, devi confermarne l’eliminazione.
 
    ![Conferma l’eliminazione degli elementi figlio](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Clic **Forza eliminazione** per confermare.
-   * Clic **Annulla** per interrompere.
+   * Fai clic su **Forza eliminazione** per confermare.
+   * Fai clic su **Annulla** per interrompere.
 
 >[!NOTE]
 >
@@ -310,11 +310,11 @@ Una volta definito il segmento, è possibile testare i risultati potenziali con 
 
 Ad esempio, la definizione del segmento semplice per identificare gli utenti nel nostro gruppo di età principale è una definizione del segmento semplice basata sull’età e sul sesso dell’utente. Il caricamento di un utente tipo specifico che corrisponde a tali criteri mostra se il segmento è stato risolto correttamente:
 
-![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
+![schermata_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 
 Oppure, se non è risolto:
 
-![screen_shot_2012-02-02at110019am](assets/screen_shot_2012-02-02at110019am.png)
+![schermata_shot_2012-02-02at110019am](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ Oppure, se non è risolto:
 
 Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con contenuti mirati e **Attività** ed **Esperienze** correlate.
 
-Se hai impostato un’attività e un’esperienza utilizzando l’esempio del segmento del gruppo di età principale riportato sopra, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta la [documentazione sull’authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
+Se hai impostato un’attività e un’esperienza utilizzando l’esempio del segmento del gruppo di età principale riportato sopra, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un&#39;attività, consulta la relativa [documentazione sull&#39;authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
 
 1. In modalità di modifica di una pagina in cui hai impostato il contenuto di destinazione, è possibile vedere che il contenuto è indirizzato tramite l’icona a forma di freccia su di esso.
 

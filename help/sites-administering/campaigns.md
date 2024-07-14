@@ -22,9 +22,9 @@ La gestione delle campagne offre agli esperti di marketing digitale l’opportun
 
 Se amministri campagne (comprese le pagine di destinazione), potrebbe essere necessario effettuare le seguenti operazioni:
 
-* **Definire i segmenti** - È necessario definire segmenti e strategie per i contenuti di destinazione.
-* **Preparare HTML per le pagine di destinazione** - Le pagine di destinazione consentono agli autori di importare la progettazione e i contenuti direttamente in una pagina AEM in modo rapido e semplice. Devi preparare il HTML in modo che le risorse possano essere importate correttamente. Le pagine di destinazione sono utili per creare pagine di destinazione di marketing attive solo per un periodo di tempo limitato e che devono essere create rapidamente.
-* **Integrare con SiteCatalyst** - È possibile integrare le pagine di destinazione con SiteCatalyst.
+* **Definisci i segmenti** - È necessario definire segmenti e strategie per il contenuto di destinazione.
+* **Prepara HTML per le pagine di destinazione** - Le pagine di destinazione consentono agli autori di importare la progettazione e il contenuto direttamente in una pagina AEM in modo rapido e semplice. Devi preparare il HTML in modo che le risorse possano essere importate correttamente. Le pagine di destinazione sono utili per creare pagine di destinazione di marketing attive solo per un periodo di tempo limitato e che devono essere create rapidamente.
+* **Integrare con il SiteCatalyst** - È possibile integrare le pagine di destinazione con il SiteCatalyst.
 
 Consulta le pagine seguenti:
 

@@ -290,7 +290,7 @@ Per le istanze di authoring, i valori predefiniti sono:
 Questi:
 
 * non può essere sovrascritto con una configurazione OSGi
-* può essere sovrascritto da una richiesta che definisce le impostazioni di intestazione HTTP utilizzando cURL; deve includere le impostazioni appropriate per `cache-control` e/o `surrogate-control`; per esempi, consulta [Gestione della cache a livello di query persistenti](#cache-persisted-query-level)
+* può essere sovrascritto da una richiesta che definisce le impostazioni di intestazione HTTP utilizzando cURL; deve includere le impostazioni appropriate per `cache-control` e/o `surrogate-control`; per esempi, vedere [Gestione della cache a livello di query persistente](#cache-persisted-query-level)
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -353,7 +353,7 @@ curl -u admin:admin -X POST \
 
 ### Gestione della cache con una configurazione OSGi {#cache-osgi-configration}
 
-Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/sites-deploying/configuring-osgi.md) per **Configurazione servizio query persistenti**. In caso contrario, questa configurazione OSGi utilizza [valori predefiniti per le istanze di pubblicazione](#publish-instances).
+Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/sites-deploying/configuring-osgi.md) per la **configurazione del servizio query persistente**. In caso contrario, questa configurazione OSGi utilizza i [valori predefiniti per le istanze di pubblicazione](#publish-instances).
 
 >[!NOTE]
 >
@@ -400,12 +400,12 @@ Le query persistenti devono sempre essere create su un servizio AEM Author e qui
 Per creare un pacchetto:
 
 1. Passa a **Strumenti** > **Implementazione** > **Pacchetti**.
-1. Per creare un pacchetto, tocca **Crea pacchetto**. Viene visualizzata una finestra di dialogo per definire il package.
+1. Creare un pacchetto toccando **Crea pacchetto**. Viene visualizzata una finestra di dialogo per definire il package.
 1. Nella finestra di dialogo Definizione pacchetto, nella sezione **Generale** inserisci un **Nome**, ad esempio “wknd-persistent-queries”.
 1. Immetti un numero di versione, ad esempio a “1.0”.
-1. Nella sezione **Filtri**, aggiungi un nuovo **Filtro**. Utilizza Trova percorso per selezionare la cartella `persistentQueries` sotto la configurazione. Ad esempio, per `wknd` configurazione il percorso completo sarà `/conf/wknd/settings/graphql/persistentQueries`.
+1. Nella sezione **Filtri**, aggiungi un nuovo **Filtro**. Utilizza Trova percorso per selezionare la cartella `persistentQueries` sotto la configurazione. Ad esempio, per la configurazione `wknd` il percorso completo sarà `/conf/wknd/settings/graphql/persistentQueries`.
 1. Seleziona **Salva** per salvare la definizione del nuovo pacchetto e chiudere la finestra di dialogo.
-1. Seleziona la **Genera** nella definizione del pacchetto appena creata.
+1. Selezionare il pulsante **Genera** nella definizione del pacchetto appena creata.
 
 Dopo aver generato il pacchetto puoi:
 

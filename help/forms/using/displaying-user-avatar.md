@@ -24,7 +24,7 @@ L’avatar dell’utente connesso viene visualizzato nell’angolo superiore des
 >
 >Le proporzioni supportate per le immagini utente sono 1:1.
 
-1. Creare un DSC utilizzando i dettagli indicati nel passaggio successivo. Per ulteriori informazioni, consulta l’argomento &quot;Sviluppo di componenti per AEM Forms&quot; in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guida.
+1. Creare un DSC utilizzando i dettagli indicati nel passaggio successivo. Per ulteriori informazioni, vedere l&#39;argomento &#39;Sviluppo di componenti per AEM Forms&#39; nella guida [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. In DSC, definisci un nuovo SPI che espone i metodi getCurrentUserImageUrl e getUserImageUrl per ottenere un URL di immagine per un utente di AEM Forms. Di seguito è riportato un frammento di codice Java™ di esempio:
 
    ```java
@@ -82,5 +82,5 @@ L’avatar dell’utente connesso viene visualizzato nell’angolo superiore des
    </component>
    ```
 
-1. Distribuire DSC tramite Workbench. Riavvia `ProcessManagementClientSessionService` servizio.
+1. Distribuire DSC tramite Workbench. Riavviare il servizio `ProcessManagementClientSessionService`.
 1. Potrebbe essere necessario aggiornare il browser o disconnettersi/accedere di nuovo con l&#39;utente.

@@ -29,7 +29,7 @@ La replica (replica non inversa) non riesce per qualche motivo.
 
 Esistono diversi motivi per cui la replica non riesce. Questo articolo spiega l’approccio che si potrebbe adottare quando si analizzano questi problemi.
 
-**Le repliche vengono attivate quando si fa clic sul pulsante Attiva? Se NON lo è, procedere come segue:**
+**Le repliche vengono attivate quando si fa clic sul pulsante Attiva? Se NON lo è, eseguire le operazioni seguenti:**
 
 1. Vai a /crx/explorer e accedi come amministratore.
 1. Apri &quot;Esplora contenuti&quot;
@@ -41,8 +41,8 @@ Seleziona questa opzione andando su /etc/replication/agents.author.html, quindi 
 
 **Se una o più code di agenti sono bloccate:**
 
-1. La coda viene visualizzata **bloccato** stato? In caso affermativo, l’istanza Publish non è in esecuzione o non risponde? Controlla l’istanza Publish per vedere cosa c’è di sbagliato. In altre parole, controlla i registri e verifica se è presente un errore OutOfMemory o un altro problema. Se è semplicemente lento, prendi le immagini thread e analizzale.
-1. Lo stato della coda è visibile **La coda è attiva - n. in sospeso**? In pratica, il processo di replica potrebbe essere bloccato in un socket letto in attesa della risposta dell’istanza Publish o di Dispatcher. Ciò potrebbe significare che l’istanza Publish o Dispatcher è sotto un carico elevato o è bloccata in un blocco. In questo caso, prendi le immagini thread da authoring e pubblica.
+1. La coda mostra lo stato **bloccato**? In caso affermativo, l’istanza Publish non è in esecuzione o non risponde? Controlla l’istanza Publish per vedere cosa c’è di sbagliato. In altre parole, controlla i registri e verifica se è presente un errore OutOfMemory o un altro problema. Se è semplicemente lento, prendi le immagini thread e analizzale.
+1. Lo stato della coda indica che **la coda è attiva - n. in sospeso**? In pratica, il processo di replica potrebbe essere bloccato in un socket letto in attesa della risposta dell’istanza Publish o di Dispatcher. Ciò potrebbe significare che l’istanza Publish o Dispatcher è sotto un carico elevato o è bloccata in un blocco. In questo caso, prendi le immagini thread da authoring e pubblica.
 
    * Apri le immagini thread dall’autore in un analizzatore di immagini thread, verifica se il processo di eventi sling dell’agente di replica è bloccato in un socketRead.
    * Apri le immagini thread da Publish in un analizzatore di immagini thread e analizza cosa potrebbe causare la mancata risposta dell’istanza Publish. Dovresti trovare un thread con il nome POST /bin/receive che corrisponde al thread che riceve la replica dall’autore.
@@ -55,7 +55,7 @@ Seleziona questa opzione andando su /etc/replication/agents.author.html, quindi 
    1. Fare clic su Strumenti nel menu principale.
    1. Fare clic sul pulsante della lente di ingrandimento.
    1. Selezionare &quot;XPath&quot; come Tipo.
-   1. Nella casella &quot;Query&quot; immettere questa query /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) ordina per @slingevent:creato
+   1. Nella casella &quot;Query&quot; immettere l&#39;ordine di query /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) per @slingevent:created
    1. Fare clic su &quot;Search&quot; (Cerca).
    1. Nei risultati, gli elementi principali sono gli ultimi sette processi con eventi. Fai clic su ciascuna replica e trova le repliche bloccate corrispondenti a quelle visualizzate nella parte superiore della coda.
 
@@ -74,7 +74,7 @@ Seleziona questa opzione andando su /etc/replication/agents.author.html, quindi 
 A volte è utile impostare tutte le registrazioni di replica da aggiungere in un file di registro separato a livello di DEBUG. Per effettuare questo collegamento:
 
 1. Vai a https://host:port/system/console/configMgr e accedi come amministratore.
-1. Trova la factory del logger di registrazione Apache Sling e crea un’istanza facendo clic sul pulsante **+** sulla destra della configurazione di fabbrica. Verrà creato un nuovo logger di registrazione.
+1. Trovare la factory del logger di registrazione Apache Sling e creare un&#39;istanza facendo clic sul pulsante **+** a destra della configurazione di fabbrica. Verrà creato un nuovo logger di registrazione.
 1. Imposta la configurazione come segue:
 
    * Livello registro: DEBUG
@@ -98,16 +98,16 @@ In generale, le autorizzazioni di pagina non devono essere replicate dall’auto
 
 ## Coda di replica bloccata durante la replica delle informazioni sullo spazio dei nomi da Author a Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-A volte la coda di replica viene bloccata quando si tenta di replicare le informazioni sullo spazio dei nomi dall’istanza di authoring all’istanza di pubblicazione. Ciò si verifica perché l’utente di replica non dispone di `jcr:namespaceManagement` privilegio. Per evitare questo problema, assicurati che:
+A volte la coda di replica viene bloccata quando si tenta di replicare le informazioni sullo spazio dei nomi dall’istanza di authoring all’istanza di pubblicazione. Ciò si verifica perché l&#39;utente di replica non dispone del privilegio `jcr:namespaceManagement`. Per evitare questo problema, assicurati che:
 
-* L&#39;utente di replica (come configurato in [Trasporto](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>User) esiste anche nell’istanza Publish.
+* L&#39;utente di replica (configurato nella scheda [Trasporto](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)>Utente) esiste anche nell&#39;istanza di Publish.
 * L’utente dispone dei privilegi di lettura e scrittura nel percorso in cui viene installato il contenuto.
-* L’utente ha `jcr:namespaceManagement` privilegio a livello di repository. È possibile concedere il privilegio nel modo seguente:
+* L&#39;utente dispone del privilegio `jcr:namespaceManagement` a livello di repository. È possibile concedere il privilegio nel modo seguente:
 
-1. Accedi a CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) come amministratore.
-1. Fai clic su **Controllo dell’accesso** scheda.
+1. Accedere a CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) come amministratore.
+1. Fare clic sulla scheda **Controllo di accesso**.
 1. Seleziona **Archivio**.
-1. Clic **Aggiungi voce** (icona più ).
+1. Fai clic su **Aggiungi voce** (icona più).
 1. Immettere il nome dell&#39;utente.
-1. Seleziona `jcr:namespaceManagement` dall&#39;elenco dei privilegi.
+1. Selezionare `jcr:namespaceManagement` dall&#39;elenco dei privilegi.
 1. Fai clic su **OK**.

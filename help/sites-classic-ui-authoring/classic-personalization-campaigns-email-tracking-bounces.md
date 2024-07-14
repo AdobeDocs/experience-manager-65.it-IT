@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >L’Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/non recapitate inviate dal servizio SMTP dell’AEM.
 >
->Si consiglia di: [utilizzare Adobe Campaign e la sua integrazione con l’AEM](/help/sites-administering/campaign.md).
+>Si consiglia di [utilizzare Adobe Campaign e la relativa integrazione AEM](/help/sites-administering/campaign.md).
 
 Quando invii una newsletter a molti utenti, solitamente sono presenti alcuni indirizzi e-mail non validi nell’elenco. L&#39;invio di newsletter a tali indirizzi viene reindirizzato. L’AEM può gestire tali mancati recapiti e interrompere l’invio di newsletter a tali indirizzi dopo il superamento del contatore dei mancati recapiti configurato. Per impostazione predefinita, la frequenza di mancato recapito è impostata su 3 ma è configurabile.
 
@@ -34,9 +34,9 @@ L’importazione dei feed consente di importare ripetutamente contenuti da origi
 
 Per configurare l’importazione feed per il tracciamento delle e-mail non recapitate, effettua le seguenti operazioni:
 
-1. In entrata **Strumenti**, selezionare Importazione feed.
+1. In **Strumenti**, selezionare Importazione feed.
 
-1. Clic **Aggiungi** per creare una configurazione.
+1. Fai clic su **Aggiungi** per creare una configurazione.
 
    ![chlimage_1](assets/chlimage_1a.png)
 
@@ -50,7 +50,7 @@ Per configurare l’importazione feed per il tracciamento delle e-mail non recap
 
    Inoltre, a seconda del protocollo, è possibile configurare alcune impostazioni.
 
-   **Proprietà di configurazione POP3:**
+   **Proprietà configurazione POP3:**
 
    `pop3.leave.on.server`: definisce se lasciare o meno i messaggi sul server. Impostare su true per lasciare i messaggi sul server, altrimenti su false. Impostazione predefinita: true.
 
@@ -64,11 +64,11 @@ Per configurare l’importazione feed per il tracciamento delle e-mail non recap
 
    Consente di impostare i flag per la ricerca.
 
-   `imap.flag.SEEN`: imposta false per i messaggi nuovi/non visualizzati, true per i messaggi già letti
+   `imap.flag.SEEN`:Impostare false per i messaggi nuovi o non visualizzati, true per i messaggi già letti
 
-   Consulta [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) per l&#39;elenco completo dei flag.
+   Per l&#39;elenco completo dei flag, vedere [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html).
 
-   **Esempi di IMAP:**
+   **Esempi IMAP:**
 
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Utilizzo di IMAP su SSL per la connessione a GMail sulla porta 993 con user/secret. Ricezione di nuovi messaggi solo per impostazione predefinita. |
    |---|---|
@@ -83,7 +83,7 @@ Dopo aver configurato l’importazione feed, configura l’indirizzo Da e il con
 
 Per configurare il servizio newsletter:
 
-1. Nella console OSGi, vai a `<host>:<port>/system/console/configMgr`, passa a **Newsletter MCM**.
+1. Nella console OSGi, alle `<host>:<port>/system/console/configMgr`, passa alla **newsletter MCM**.
 
 1. Al termine, configura il servizio e salva le modifiche.
 

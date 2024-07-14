@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Integrazione delle pagine di destinazione con Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM ha integrato la soluzione per pagine di destinazione con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) utilizzando i seguenti componenti di invito all’azione (CTA):
+AEM ha integrato la soluzione per pagine di destinazione con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) utilizzando i seguenti componenti di invito all&#39;azione (CTA):
 
 1. Componente Click-through
 1. Componente collegamento grafico
@@ -27,11 +27,11 @@ Questi componenti espongono alcuni attributi che possono essere mappati tramite 
 
 ## Prerequisiti {#prerequisites}
 
-L’Adobe consiglia di esaminare [integrazione AEM-Adobe Analytics esistente](/help/sites-administering/adobeanalytics.md) per capire come funziona questa integrazione.
+L&#39;Adobe consiglia di esaminare l&#39;[integrazione AEM-Adobe Analytics esistente](/help/sites-administering/adobeanalytics.md) per capire come funziona questa integrazione.
 
 ## Componenti disponibili per la mappatura {#components-available-for-mapping}
 
-Nell&#39;AEM, la **Invito all&#39;azione** componenti - **ClickThroughLink** e **Collegamento grafico** : visualizzato qui nella barra laterale, può essere mappato sulle variabili di Adobe Analytics.
+In AEM, i componenti **Invito all&#39;azione** - **ClickThroughLink** e **GraphicalLink** - visualizzati qui nella barra laterale, possono essere mappati alle variabili di Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -76,7 +76,7 @@ Per mappare i componenti della pagina di destinazione su Adobe Analytics:
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clickthroughImageAsset</i> <br /> </td>
+   <td><i>eventdata.clicktroughImageAsset</i> <br /> </td>
    <td>Percorso della risorsa immagine nell’archivio </td>
   </tr>
   <tr>
@@ -88,7 +88,7 @@ Per mappare i componenti della pagina di destinazione su Adobe Analytics:
 </table>
 
 1. Mappa questi attributi esposti con qualsiasi variabile di Adobe Analytics da Content Finder. Il framework è ora pronto per l’uso.
-1. Ora puoi creare una pagina di destinazione o aprirne una esistente con i componenti CTA esistenti e fare clic su **Cloud Service** scheda in **Proprietà pagina** dalla barra laterale (nell’interfaccia touch), seleziona **Apri proprietà** e fai clic su **Cloud Service**) e configura il framework da utilizzare con la pagina di destinazione. Selezionare il framework dall&#39;elenco a discesa.
+1. Ora puoi creare una pagina di destinazione o aprire una pagina di destinazione esistente con i componenti CTA esistenti e fare clic sulla scheda **Cloud Service** in **Proprietà pagina** dalla barra laterale (nell&#39;interfaccia utente ottimizzata per il tocco, seleziona **Apri proprietà** e fai clic su **Cloud Service**) e configurare il framework da utilizzare con la pagina di destinazione. Selezionare il framework dall&#39;elenco a discesa.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

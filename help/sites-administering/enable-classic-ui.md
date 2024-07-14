@@ -25,4 +25,4 @@ Con la funzionalità touch che raggiunge la parità con e supera di fatto quella
 
 >[!NOTE]
 >
->Per informazioni dettagliate sullo stato della parità delle funzioni con l’interfaccia classica, vedi [Parità delle funzioni dell’interfaccia touch](/help/release-notes/touch-ui-features-status.md) documento.
+>Per informazioni dettagliate sullo stato della parità delle caratteristiche con l&#39;interfaccia classica, consulta il documento [Parità delle caratteristiche dell&#39;interfaccia touch](/help/release-notes/touch-ui-features-status.md).

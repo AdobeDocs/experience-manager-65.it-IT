@@ -64,7 +64,7 @@ Puoi avviare un flusso di lavoro dalla barra degli strumenti della console **Sit
 
 1. Dall’opzione **Crea** nella barra degli strumenti è ora possibile selezionare **Flusso di lavoro**.
 
-   ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
+   ![schermata_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
 1. La procedura guidata **Crea flusso di lavoro** ti aiuterà a [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -106,7 +106,7 @@ Puoi specificare i dettagli:
 
    >[!NOTE]
    >
-   >Il **Mantieni pacchetto flusso di lavoro** è disponibile quando il flusso di lavoro è stato configurato per [Supporto di più risorse](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) e sono state selezionate più risorse.
+   >L&#39;opzione **Mantieni pacchetto flusso di lavoro** è disponibile quando il flusso di lavoro è stato configurato per [Supporto risorse multiple](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) e sono state selezionate più risorse.
 
    Una volta completato, premere su **Successivo** per continuare.
 
@@ -114,7 +114,7 @@ Puoi specificare i dettagli:
 
 1. Al passaggio **Ambito** puoi selezionare:
 
-   * **Aggiungi contenuto** per aprire [browser percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) e seleziona le risorse aggiuntive; una volta nel browser, fai clic su **Seleziona** per aggiungere contenuti all’istanza di flusso di lavoro.
+   * **Aggiungi contenuto** per aprire il [browser percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) e selezionare risorse aggiuntive; nel browser, fai clic su **Seleziona** per aggiungere il contenuto all&#39;istanza del flusso di lavoro.
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 

@@ -32,21 +32,21 @@ Di seguito sono riportati altri fattori che determinano la qualità dei video:
 
   Per impostazione predefinita, la &quot;Larghezza&quot; nel profilo di codifica video adattiva è impostata su &quot;Automatico&quot;. Anche in questo caso, durante la riproduzione, viene utilizzata la qualità migliore in base alle dimensioni del lettore.
 
-Consulta [Tecniche consigliate per la codifica video](/help/assets/video.md#best-practices-for-encoding-videos).
+Consulta [Best practice per la codifica video](/help/assets/video.md#best-practices-for-encoding-videos).
 
-Vedi anche [Best practice per organizzare le risorse digitali per l’utilizzo dei profili di elaborazione](/help/assets/organize-assets.md).
+Consulta anche [Best practice per organizzare l&#39;Assets digitale per l&#39;utilizzo dei profili di elaborazione](/help/assets/organize-assets.md).
 
 >[!NOTE]
 >
->Per generare i metadati di un video e le miniature delle immagini video associate, il video stesso deve seguire il processo di codifica in Dynamic Medie. In Adobe Experience Manager, il **[!UICONTROL Codifica video Dynamic Medie]** se hai attivato Dynamic Medie e hai impostato video cloud services, workflow codifica video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se hai abilitato Dynamic Medie e hai impostato Cloud Services per i video, il **[!UICONTROL Codifica video Dynamic Medie]** il flusso di lavoro viene applicato automaticamente al caricamento di un video. Se non utilizzi Dynamic Medie, il **[!UICONTROL Aggiorna risorsa DAM]** il flusso di lavoro ha effetto.)
+>Per generare i metadati di un video e le miniature delle immagini video associate, il video stesso deve seguire il processo di codifica in Dynamic Medie. In Adobe Experience Manager, se hai attivato Dynamic Medie e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video Dynamic Medie]** effettua la codifica dei video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta [Monitorare la codifica video e lo stato di pubblicazione di YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se hai attivato Dynamic Medie e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video Dynamic Medie]** viene applicato automaticamente al caricamento di un video. Se non utilizzi Dynamic Medie, viene applicato il flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 >
 >I metadati sono utili quando cerchi risorse. Le miniature sono immagini video statiche generate durante la codifica. Sono richieste dall’Experience Manager e vengono utilizzate nell’interfaccia utente per identificare visivamente i video nelle viste Schede, Risultati ricerca e Elenco risorse. Puoi visualizzare le miniature generate quando selezioni l’icona Rappresentazioni (tavolozza di disegno) di un video codificato.
 
-Al termine della creazione del profilo video, lo applichi a una o più cartelle. Consulta [Applicare un profilo video alle cartelle](#applying-a-video-profile-to-folders).
+Al termine della creazione del profilo video, lo applichi a una o più cartelle. Vedi [Applicare un profilo video alle cartelle](#applying-a-video-profile-to-folders).
 
-Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurare l’elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
+Per definire parametri di elaborazione avanzati per altri tipi di risorse, vedere [Configurare l&#39;elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
 
-Vedi anche [Profili per l’elaborazione di metadati, immagini e video](processing-profiles.md).
+Vedi anche [Profili per l&#39;elaborazione di metadati, immagini e video](processing-profiles.md).
 
 ## Predefiniti codifica video adattiva {#adaptive-video-encoding-presets}
 
@@ -117,15 +117,15 @@ Adobe Sensei è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il
 >
 >Affinché il ritaglio avanzato video funzioni, è necessario includere nel profilo video uno o più predefiniti di codifica video.
 
-Per utilizzare il ritaglio avanzato per i video, crea un profilo di codifica video adattivo o progressivo. Come parte del profilo, utilizza **[!UICONTROL Smart Crop Ratio]** per selezionare rapporti di formato predefiniti. Ad esempio, dopo aver definito i predefiniti di codifica video, potete aggiungere una definizione &quot;Mobile Landscape&quot; con proporzioni di 16×9 e una definizione &quot;Mobile Portrait&quot; con proporzioni di 9×16. Altri rapporti di ritaglio o di aspetto tra cui è possibile scegliere sono 1×1, 4×3 e 4×5.
+Per utilizzare il ritaglio avanzato per i video, crea un profilo di codifica video adattivo o progressivo. Come parte del tuo profilo, utilizza lo strumento **[!UICONTROL Smart Crop Ratio]** per selezionare proporzioni predefinite. Ad esempio, dopo aver definito i predefiniti di codifica video, potete aggiungere una definizione &quot;Mobile Landscape&quot; con proporzioni di 16×9 e una definizione &quot;Mobile Portrait&quot; con proporzioni di 9×16. Altri rapporti di ritaglio o di aspetto tra cui è possibile scegliere sono 1×1, 4×3 e 4×5.
 
-![Modificare un profilo di codifica video con ritaglio avanzato](assets/edit-smart-crop-video2.png)
+![Modifica un profilo di codifica video con ritaglio avanzato](assets/edit-smart-crop-video2.png)
 
-Puoi attivare o disattivare il ritaglio avanzato video nel profilo video, utilizzando il cursore posto all’estrema destra di **[!UICONTROL Smart Crop Ratio]** nell’interfaccia utente di.
+Puoi attivare o disattivare il ritaglio avanzato video nel profilo video, utilizzando il cursore posto all&#39;estrema destra di **[!UICONTROL Smart Crop Ratio]** nell&#39;interfaccia utente.
 
 Dopo aver creato e salvato il profilo video, puoi applicarlo alle cartelle desiderate.
 
-Consulta [Applicare profili video a cartelle specifiche](#applying-video-profiles-to-specific-folders) o [Applicare un profilo video a livello globale](#applying-a-video-profile-globally).
+Vedi [Applicare profili video a cartelle specifiche](#applying-video-profiles-to-specific-folders) o [Applicare un profilo video a livello globale](#applying-a-video-profile-globally).
 
 Vedi anche [Ritaglio avanzato per immagini](image-profiles.md).
 
@@ -133,7 +133,7 @@ Vedi anche [Ritaglio avanzato per immagini](image-profiles.md).
 
 Dynamic Medie è già dotato di un profilo di codifica video adattivo predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264 ottimizzate per una migliore esperienza di visualizzazione. Puoi usare questo profilo quando carichi i video.
 
-Tuttavia, se questo profilo predefinito non soddisfa le tue esigenze, puoi scegliere di creare un tuo profilo di codifica video adattivo. Quando si utilizza l&#39;impostazione **[!UICONTROL Codifica per streaming adattivo]** - come best practice - tutti i predefiniti di codifica aggiunti al profilo vengono convalidati per garantire che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come set con bitrate multiplo per lo streaming.
+Tuttavia, se questo profilo predefinito non soddisfa le tue esigenze, puoi scegliere di creare un tuo profilo di codifica video adattivo. Quando utilizzi l&#39;impostazione **[!UICONTROL Codifica per streaming adattivo]** - come best practice - tutti i predefiniti di codifica aggiunti al profilo vengono convalidati per garantire che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come set con bitrate multiplo per lo streaming.
 
 Quando crei il profilo di codifica video, tieni presente che la maggior parte delle opzioni di codifica sono precompilate con le impostazioni predefinite consigliate. Tuttavia, se si seleziona un valore diverso da quello predefinito consigliato, la qualità video durante la riproduzione potrebbe risultare scadente e si potrebbero verificare altri problemi di prestazioni.
 
@@ -148,55 +148,55 @@ Pertanto, per tutti i predefiniti di codifica video MP4 H.264 nel profilo, i seg
 * Profilo H264
 * Frequenza di campionamento audio
 
-Se i valori non sono uguali, puoi continuare a creare il profilo così com’è. Tuttavia, lo streaming con bitrate adattivo non è possibile. Al contrario, gli utenti possono utilizzare lo streaming a bitrate singolo. È consigliabile modificare le impostazioni di codifica per utilizzare gli stessi valori nei singoli predefiniti di codifica nel profilo. L’editor di profili video/predefiniti impone la parità delle impostazioni di codifica di video adattivi se **[!UICONTROL Codifica per streaming adattivo]** è attivato.)
+Se i valori non sono uguali, puoi continuare a creare il profilo così com’è. Tuttavia, lo streaming con bitrate adattivo non è possibile. Al contrario, gli utenti possono utilizzare lo streaming a bitrate singolo. È consigliabile modificare le impostazioni di codifica per utilizzare gli stessi valori nei singoli predefiniti di codifica nel profilo. (L&#39;editor di profili video/predefiniti applica la parità delle impostazioni di codifica video adattivi se è abilitata la **[!UICONTROL codifica per lo streaming adattivo]**.)
 
 Vedi anche [Creare un profilo di codifica video per lo streaming progressivo](#creating-a-video-encoding-profile-for-progressive-streaming).
 
-Vedi anche [Best practice per la codifica video](/help/assets/video.md#best-practices-for-encoding-videos).
+Consulta anche [Best practice per la codifica video](/help/assets/video.md#best-practices-for-encoding-videos).
 
-Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurare l’elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
+Per definire parametri di elaborazione avanzati per altri tipi di risorse, vedere [Configurare l&#39;elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **Per creare un profilo video per lo streaming con bitrate adattivo**,
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili video]**.
 1. Seleziona **[!UICONTROL Crea]** per aggiungere un profilo video.
 
 1. Immettere un nome e una descrizione per il profilo.
-1. Nella pagina Crea/Modifica predefiniti di codifica video, seleziona **[!UICONTROL Aggiungi predefinito di codifica video]**.
-1. Il giorno **[!UICONTROL Base]** , impostare le opzioni video e audio.
+1. Nella pagina Crea/Modifica predefiniti codifica video, seleziona **[!UICONTROL Aggiungi predefinito codifica video]**.
+1. Nella scheda **[!UICONTROL Base]**, impostare le opzioni video e audio.
 Seleziona l’icona delle informazioni accanto a ciascuna opzione per ottenere descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
-1. Nell’intestazione Dimensione video, assicurati che: **[!UICONTROL Mantieni proporzioni]** è selezionato.
-1. Imposta la risoluzione delle dimensioni del fotogramma video in pixel. Utilizza il **[!UICONTROL Automatico]** valore per ridimensionare automaticamente in modo che corrisponda alle proporzioni sorgente (rapporto larghezza per altezza). Ad esempio, Auto x 480 o 640 x Auto.
+1. Sotto l&#39;intestazione Dimensione video, verificare che sia selezionato **[!UICONTROL Mantieni proporzioni]**.
+1. Imposta la risoluzione delle dimensioni del fotogramma video in pixel. Utilizza il valore **[!UICONTROL Auto]** per ridimensionare automaticamente le proporzioni dell&#39;origine (rapporto larghezza/altezza). Ad esempio, Auto x 480 o 640 x Auto.
 
 1. Effettua una delle operazioni seguenti:
 
-   * In **[!UICONTROL Larghezza]** campo, immetti **[!UICONTROL auto]**. In **[!UICONTROL Altezza]** immettere un valore in pixel.
+   * Nel campo **[!UICONTROL Larghezza]** immettere **[!UICONTROL auto]**. Nel campo **[!UICONTROL Altezza]** immettere un valore in pixel.
 
-   * Per visualizzare le dimensioni del video, seleziona l’icona Informazioni (i) a destra di **[!UICONTROL Altezza]** per aprire la pagina Calcolatore dimensioni. Utilizzare **[!UICONTROL Calcolatore dimensioni]** per impostare le dimensioni video desiderate (rappresentate dalla casella blu). Seleziona **[!UICONTROL X]** nell’angolo in alto a destra al termine dell’operazione.
+   * Per visualizzare le dimensioni del video, seleziona l&#39;icona Informazioni (i) a destra di **[!UICONTROL Altezza]** per aprire la pagina Calcolatore dimensioni. Utilizza **[!UICONTROL Calcolatore dimensioni]** per impostare le dimensioni video desiderate (rappresentate dalla casella blu). Al termine, seleziona **[!UICONTROL X]** nell&#39;angolo superiore destro.
 
-1. (Facoltativo) Seleziona la **[!UICONTROL Avanzate]** e assicurarsi che il **[!UICONTROL Usa valori predefiniti]** è selezionata (scelta consigliata). In alternativa, è possibile modificare le impostazioni audio e video avanzate.
-1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]** per salvare il predefinito.
+1. (Facoltativo) Seleziona la scheda **[!UICONTROL Avanzate]** e accertati che la casella di controllo **[!UICONTROL Usa valori predefiniti]** sia selezionata (scelta consigliata). In alternativa, è possibile modificare le impostazioni audio e video avanzate.
+1. Nell&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]** per salvare il predefinito.
 1. Effettua una delle operazioni seguenti:
    * Ripeti i passaggi 4-10 per creare ulteriori predefiniti di codifica. Lo streaming video adattivo richiede più di un predefinito video.
    * Procedi al passaggio successivo.
 
 1. (Facoltativo) Per aggiungere il ritaglio avanzato video ai video a cui è applicato questo profilo, effettua le seguenti operazioni:
-   * Nella pagina Modifica profilo video, a destra dell’intestazione Smart Crop Ratio (Proporzioni ritaglio avanzate), seleziona **[!UICONTROL Aggiungi nuovo]**.
+   * Nella pagina Modifica profilo video, a destra dell&#39;intestazione Smart Crop Ratio, seleziona **[!UICONTROL Aggiungi nuovo]**.
    * Nel campo Nome, digita un nome per le proporzioni di ritaglio che ti consenta di identificarlo facilmente.
-   * Dalla sezione **[!UICONTROL Proporzioni di ritaglio]** selezionare la proporzione che si desidera utilizzare.
+   * Dall&#39;elenco a discesa **[!UICONTROL Proporzioni ritaglio]**, selezionare le proporzioni che si desidera utilizzare.
 
 1. Effettua una delle operazioni seguenti:
 
    * Continua ad aggiungere nuovi rapporti di ritaglio in base alle esigenze.
    * Procedi al passaggio successivo.
 
-1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]** per salvare il profilo.
+1. Nell&#39;angolo superiore destro della pagina, seleziona nuovamente **[!UICONTROL Salva]** per salvare il profilo.
 
-Ora puoi applicare il profilo alle cartelle che contengono video. Consulta [Applicare un profilo video alle cartelle](#applying-a-video-profile-to-folders) o [Applicare un profilo video a livello globale](#applying-a-video-profile-globally).
+Ora puoi applicare il profilo alle cartelle che contengono video. Vedi [Applicare un profilo video alle cartelle](#applying-a-video-profile-to-folders) o [Applicare un profilo video globalmente](#applying-a-video-profile-globally).
 
 ## Creare un profilo video per lo streaming progressivo {#creating-a-video-encoding-profile-for-progressive-streaming}
 
-Se scegli di non utilizzare l’opzione **[!UICONTROL Codifica per streaming adattivo]**, tutti i predefiniti di codifica aggiunti al profilo vengono trattati come singole rappresentazioni video per lo streaming a bitrate singolo o per la distribuzione di video progressivi. Inoltre, non esiste una convalida per garantire che tutte le rappresentazioni video abbiano le stesse proporzioni.
+Se scegli di non utilizzare l&#39;opzione **[!UICONTROL Codifica per streaming adattivo]**, tutti i predefiniti di codifica aggiunti al profilo vengono trattati come rappresentazioni video individuali per streaming a bitrate singolo o per distribuzione progressiva di video. Inoltre, non esiste una convalida per garantire che tutte le rappresentazioni video abbiano le stesse proporzioni.
 
 A seconda della modalità in esecuzione, i codec del formato video supportati sono i seguenti:
 
@@ -205,31 +205,31 @@ A seconda della modalità in esecuzione, i codec del formato video supportati so
 
 Vedi anche [Creare un profilo di codifica video per lo streaming con bitrate adattivo](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
-Vedi anche [Best practice per la codifica video](/help/assets/video.md#best-practices-for-encoding-videos).
+Consulta anche [Best practice per la codifica video](/help/assets/video.md#best-practices-for-encoding-videos).
 
-Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurare l’elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
+Per definire parametri di elaborazione avanzati per altri tipi di risorse, vedere [Configurare l&#39;elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **Per creare un profilo video per lo streaming progressivo:**
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili video]**.
 1. Seleziona **[!UICONTROL Crea]** per aggiungere un profilo video.
 1. Immettere un nome e una descrizione per il profilo.
-1. Nella pagina Crea/Modifica predefiniti di codifica video, seleziona **[!UICONTROL Aggiungi predefinito di codifica video]**.
-1. Il giorno **[!UICONTROL Base]** , impostare le opzioni video e audio.
+1. Nella pagina Crea/Modifica predefiniti codifica video, seleziona **[!UICONTROL Aggiungi predefinito codifica video]**.
+1. Nella scheda **[!UICONTROL Base]**, impostare le opzioni video e audio.
 Seleziona l’icona delle informazioni accanto a ciascuna opzione per ottenere descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
-1. (Facoltativo) Sotto l’intestazione Dimensione video, deseleziona **[!UICONTROL Mantieni proporzioni]**.
+1. (Facoltativo) Sotto l&#39;intestazione Dimensione video, deselezionare **[!UICONTROL Mantieni proporzioni]**.
 1. Effettua le seguenti operazioni:
-   * In **[!UICONTROL Larghezza]** campo, immetti **[!UICONTROL auto]**.
-   * In **[!UICONTROL Altezza]** immettere un valore in pixel.
-Per visualizzare le dimensioni del video, seleziona l’icona Informazioni altezza per aprire la **[!UICONTROL Calcolatore dimensioni]** pagina. Utilizza il **[!UICONTROL Calcolatore dimensioni]** per impostare ulteriormente la dimensione del video (casella blu) in base alle tue esigenze. Al termine, nell&#39;angolo superiore destro della finestra di dialogo, selezionare **[!UICONTROL X]**.
+   * Nel campo **[!UICONTROL Larghezza]** immettere **[!UICONTROL auto]**.
+   * Nel campo **[!UICONTROL Altezza]** immettere un valore in pixel.
+Per visualizzare le dimensioni del video, seleziona l&#39;icona delle informazioni dell&#39;altezza per aprire la pagina **[!UICONTROL Calcolatore dimensioni]**. Utilizzare la pagina **[!UICONTROL Calcolatore dimensioni]** per impostare ulteriormente la dimensione del video (casella blu) in base alle proprie esigenze. Al termine, nell&#39;angolo superiore destro della finestra di dialogo, selezionare **[!UICONTROL X]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Seleziona la **[!UICONTROL Avanzate]** e accertarsi che il **[!UICONTROL Usa valori predefiniti]** è selezionata (scelta consigliata).
+   * Selezionare la scheda **[!UICONTROL Avanzate]** e assicurarsi che la casella di controllo **[!UICONTROL Usa valori predefiniti]** sia selezionata (scelta consigliata).
 
-   * Cancella **[!UICONTROL Usa valori predefiniti]** e specificare le impostazioni video e audio desiderate.
+   * Deselezionare la casella di controllo **[!UICONTROL Usa valori predefiniti]** e specificare le impostazioni video e audio desiderate.
 Seleziona l’icona delle informazioni accanto a ciascuna opzione per ottenere descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
 
-1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]** per salvare il predefinito.
+1. Nell&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]** per salvare il predefinito.
 1. Effettua una delle operazioni seguenti:
 
    * Ripetere i passaggi da 4 a 9 per creare ulteriori predefiniti di codifica.
@@ -237,18 +237,18 @@ Seleziona l’icona delle informazioni accanto a ciascuna opzione per ottenere d
 
 1. (Facoltativo) Per aggiungere il ritaglio avanzato video ai video a cui è applicato questo profilo, effettua le seguenti operazioni:
 
-   * Nella pagina Modifica profilo video, a destra dell’intestazione Smart Crop Ratio (Proporzioni ritaglio avanzate), seleziona **[!UICONTROL Aggiungi nuovo]**.
+   * Nella pagina Modifica profilo video, a destra dell&#39;intestazione Smart Crop Ratio, seleziona **[!UICONTROL Aggiungi nuovo]**.
    * Nel campo Nome, digita un nome per le proporzioni di ritaglio che ti consenta di identificarlo facilmente.
-   * Dalla sezione **[!UICONTROL Proporzioni di ritaglio]** selezionare la proporzione che si desidera utilizzare.
+   * Dall&#39;elenco a discesa **[!UICONTROL Proporzioni ritaglio]**, selezionare le proporzioni che si desidera utilizzare.
 
 1. Effettua una delle operazioni seguenti:
 
    * Continua ad aggiungere nuovi rapporti di ritaglio in base alle esigenze.
    * Procedi al passaggio successivo.
 
-1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]** per salvare il profilo.
+1. Nell&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]** per salvare il profilo.
 
-Ora puoi applicare il profilo alle cartelle che contengono video. Consulta [Applicazione di un profilo video alle cartelle](#applying-a-video-profile-to-folders) o [Applicazione di un profilo video a livello globale](#applying-a-video-profile-globally).
+Ora puoi applicare il profilo alle cartelle che contengono video. Vedi [Applicazione di un profilo video alle cartelle](#applying-a-video-profile-to-folders) o [Applicazione di un profilo video a livello globale](#applying-a-video-profile-globally).
 
 ## Utilizzare parametri di codifica video personalizzati {#using-custom-added-video-encoding-parameters}
 
@@ -256,8 +256,8 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
 
 **Per utilizzare parametri di codifica video personalizzati:**
 
-1. Seleziona il logo di Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
-1. Dalla pagina CRXDE Liti, nel pannello Esplora a sinistra, passa a:
+1. Seleziona il logo dell&#39;Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
+1. Dalla pagina CRXDE Lite, nel pannello Esplora a sinistra, passa a:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
@@ -281,68 +281,68 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Numero di fotogrammi di destinazione tra fotogrammi chiave. Calcolate questo valore in modo che possa generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo dei fotogrammi chiave deve essere compreso tra 60 e 300.<br /> <br /> Intervalli di fotogrammi chiave inferiori migliorano il comportamento di ricerca e passaggio tra flussi per le codifiche video adattivi e possono anche migliorare la qualità dei video che hanno molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito determina una qualità video complessiva inferiore a un determinato bitrate.</td>
+   <td>Numero di fotogrammi di destinazione tra fotogrammi chiave. Calcolate questo valore in modo che possa generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo dei fotogrammi chiave deve essere compreso tra 60 e 300.<br /> <br /> Gli intervalli di fotogrammi chiave inferiori migliorano il comportamento di ricerca e passaggio di flusso per le codifiche video adattivi e possono anche migliorare la qualità dei video con molti movimenti. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito determina una qualità video complessiva inferiore a un determinato bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per DASH o HLS è 60-90. Per usare DASH per i video, devi prima abilitarlo sul tuo account. Consulta <a href="/help/assets/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> </td>
+   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per DASH o HLS è 60-90. Per usare DASH per i video, devi prima abilitarlo sul tuo account. Vedi <a href="/help/assets/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
-   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando<strong> Usa bitrate costante</strong> viene deselezionato nella scheda Avanzate quando crei o modifichi un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito.</p> </td>
   </tr>
   <tr>
    <td><code>maxBitrate</code></td>
-   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando<strong> Usa bitrate costante</strong> viene deselezionato nella scheda Avanzate quando crei o modifichi un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito. Tuttavia, il valore consigliato è fino a due volte il bitrate di codifica.</p> </td>
   </tr>
   <tr>
    <td><code>audioBitrateCustom</code></td>
-   <td>Imposta valore su <code>true</code> per forzare un bitrate costante per lo streaming audio, se supportato dal codec audio.</td>
+   <td>Impostare il valore su <code>true</code> per forzare un bitrate costante per il flusso audio, se supportato dal codec audio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Il valore predefinito è <code>false</code>.</p> <p>Il valore consigliato per DASH o HLS è <code>false</code>. Per usare DASH per i video, devi prima abilitarlo sul tuo account. Consulta <a href="/help/assets/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Il valore predefinito è <code>false</code>.</p> <p>Il valore consigliato per DASH o HLS è <code>false</code>. Per usare DASH per i video, devi prima abilitarlo sul tuo account. Vedi <a href="/help/assets/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Aggiungi]**.
+1. Seleziona **[!UICONTROL Aggiungi]** nell&#39;angolo inferiore destro della pagina.
 1. Effettua una delle operazioni seguenti:
 
    * Ripeti i passaggi 3 e 4 per aggiungere un altro parametro al profilo di codifica video.
-   * Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Salva tutto]**.
+   * Selezionare **[!UICONTROL Salva tutto]** nell&#39;angolo superiore sinistro della pagina.
 
-1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona la **[!UICONTROL Torna alla pagina principale]** per tornare all&#39;Experience Manager.
+1. Nell&#39;angolo superiore sinistro della pagina CRXDE Lite, seleziona l&#39;icona **[!UICONTROL Torna alla Home]** per tornare all&#39;Experience Manager.
 
 ### Modificare un profilo video {#editing-a-video-encoding-profile}
 
 Puoi modificare qualsiasi profilo video creato per aggiungere, modificare o eliminare predefiniti video all’interno di tale profilo.
 
-Per impostazione predefinita, non è possibile modificare il predefinito **[!UICONTROL Codifica video adattiva]** profilo fornito con Dynamic Medie. È invece possibile copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
+Per impostazione predefinita, non è possibile modificare il profilo predefinito di **[!UICONTROL Codifica video adattiva]** fornito con Dynamic Medie. È invece possibile copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
 
-Vedi anche [Best practice per la codifica video](/help/assets/video.md#best-practices-for-encoding-videos).
+Consulta anche [Best practice per la codifica video](/help/assets/video.md#best-practices-for-encoding-videos).
 
-Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurare l’elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
+Per definire parametri di elaborazione avanzati per altri tipi di risorse, vedere [Configurare l&#39;elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **Per modificare un profilo video:**
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili video]**.
 1. Nella pagina Profili video, seleziona un nome di profilo video.
-1. Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
+1. Sulla barra degli strumenti, selezionare **[!UICONTROL Modifica]**.
 1. Nella pagina Profilo di codifica video, modifica il nome e la descrizione, come desiderato.
-1. Come best practice, assicurati che **[!UICONTROL Codifica per streaming bitrate adattivo]** è selezionata.
+1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming bitrate adattivo]** sia selezionata.
 Per una descrizione dello streaming con bitrate adattivo, seleziona l’icona delle informazioni. (Se stai modificando un profilo video progressivo, non selezionare questa casella di controllo).
 1. Nell’intestazione Predefiniti di codifica video, aggiungi, modifica o elimina i predefiniti di codifica video che compongono il profilo.
 
-   Seleziona l’icona delle informazioni accanto a ciascuna opzione nella **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** schede per descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
+   Seleziona l&#39;icona delle informazioni accanto a ciascuna opzione nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** per ottenere descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
 
-1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]**.
+1. Nell&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]**.
 
 ### Copiare un profilo video {#copying-a-video-encoding-profile}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili video]**.
 1. Nella pagina Profili video, seleziona un nome di profilo video.
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Copia]**.
 1. Nella pagina Profilo di codifica video, inserisci un nuovo nome per il profilo.
@@ -353,14 +353,14 @@ Per una descrizione dello streaming con bitrate adattivo, seleziona l’icona de
 
    Seleziona l’icona delle informazioni accanto a ciascuna opzione nelle schede Base e Avanzate per le impostazioni e le descrizioni consigliate.
 
-1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]**.
+1. Nell&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]**.
 
 ### Eliminare un profilo video {#deleting-a-video-encoding-profile}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili video]**.
 1. Nella pagina Profili video, seleziona uno o più nomi di profili video.
-1. Sulla barra degli strumenti, seleziona **[!UICONTROL Elimina]**.
-1. Seleziona **[!UICONTROL OK]**.
+1. Sulla barra degli strumenti, selezionare **[!UICONTROL Elimina]**.
+1. Selezionare **[!UICONTROL OK]**.
 
 ## Applicare un profilo video alle cartelle {#applying-a-video-profile-to-folders}
 
@@ -374,7 +374,7 @@ Le cartelle a cui è assegnato un profilo sono indicate nell’interfaccia utent
 
 Puoi applicare profili video a cartelle specifiche o a livello globale a tutte le risorse.
 
-Puoi rielaborare le risorse in una cartella che dispone già di un profilo video modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo averne modificato il profilo di elaborazione](processing-profiles.md#reprocessing-assets).
+Puoi rielaborare le risorse in una cartella che dispone già di un profilo video modificato in seguito. Vedi [Rielabora risorse in una cartella dopo averne modificato il profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
 ### Applicare un profilo video a cartelle specifiche {#applying-video-profiles-to-specific-folders}
 
@@ -386,19 +386,19 @@ Vedi anche [Rielaborazione delle risorse in una cartella dopo averne modificato 
 
 #### Applicare un profilo video alle cartelle tramite l’interfaccia utente Profili {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili video]**.
 1. Seleziona il profilo video da applicare a una o più cartelle.
-1. Seleziona **[!UICONTROL Applica profilo alle cartelle]** e seleziona la cartella o le cartelle da utilizzare per ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Applica]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella in **[!UICONTROL Vista a schede]**.
-È possibile [monitorare l’avanzamento di un processo di elaborazione di un profilo video](#monitoring-the-progress-of-an-encoding-job).
+1. Seleziona **[!UICONTROL Applica profilo a cartelle]** e seleziona una o più cartelle da usare per ricevere le risorse appena caricate, quindi seleziona **[!UICONTROL Applica]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo direttamente sotto il nome della cartella in **[!UICONTROL Vista a schede]**.
+È possibile [monitorare l&#39;avanzamento di un processo di elaborazione del profilo video](#monitoring-the-progress-of-an-encoding-job).
 
 #### Applicare un profilo video alle cartelle da Proprietà {#applying-video-profiles-to-folders-from-properties}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Risorse]** e quindi alla cartella a cui desideri applicare un profilo video.
-1. Sulla cartella, seleziona il segno di spunta per selezionarla, quindi seleziona **[!UICONTROL Proprietà]**.
-1. Seleziona la **[!UICONTROL Profili video]** e selezionare il profilo dal menu a discesa, quindi selezionare **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Selezionare il logo di Experience Manager, passare a **[!UICONTROL Assets]** e quindi alla cartella a cui si desidera applicare un profilo video.
+1. Nella cartella selezionare il segno di spunta per selezionarla, quindi selezionare **[!UICONTROL Proprietà]**.
+1. Seleziona la scheda **[!UICONTROL Profili video]**, fai clic sul profilo dal menu a discesa e infine seleziona **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-È possibile [monitorare l’avanzamento di un processo di elaborazione di un profilo video](#monitoring-the-progress-of-an-encoding-job).
+È possibile [monitorare l&#39;avanzamento di un processo di elaborazione del profilo video](#monitoring-the-progress-of-an-encoding-job).
 
 ### Applicazione di un profilo video a livello globale {#applying-a-video-profile-globally}
 
@@ -408,16 +408,16 @@ Vedi anche [Rielaborazione delle risorse in una cartella dopo averne modificato 
 
 **Per applicare un profilo video a livello globale:**
 
-* Passa a CRXDE Liti al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e seleziona **[!UICONTROL Salva tutto]**.
+* Passare a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e seleziona **[!UICONTROL Salva tutto]**.
 
   ![chlimage_1-519](assets/chlimage_1-519.png)
-* È possibile [monitorare l’avanzamento di un processo di elaborazione di un profilo video](#monitoring-the-progress-of-an-encoding-job).
+* È possibile [monitorare l&#39;avanzamento di un processo di elaborazione del profilo video](#monitoring-the-progress-of-an-encoding-job).
 
 ## Monitorare l’avanzamento di un processo di elaborazione di profili video {#monitoring-the-progress-of-an-encoding-job}
 
 Viene visualizzato un indicatore di elaborazione (o barra di avanzamento) che consente di monitorare visivamente l’avanzamento di un processo di elaborazione di un profilo video.
 
-È inoltre possibile visualizzare `error.log` per monitorare l&#39;avanzamento di un processo di codifica, per verificare se la codifica è terminata o per visualizzare eventuali errori del processo. Il `error.log` si trova in `logs` cartella in cui è installata l’istanza di Experience Manager.
+È inoltre possibile visualizzare il file `error.log` per monitorare l&#39;avanzamento di un processo di codifica, per verificare se la codifica è terminata o per visualizzare eventuali errori del processo. `error.log` si trova nella cartella `logs` in cui è installata l&#39;istanza di Experience Manager.
 
 ## Rimuovere un profilo video dalle cartelle {#removing-a-video-profile-from-folders}
 
@@ -427,14 +427,14 @@ Puoi rimuovere un profilo video da una cartella direttamente dal menu **[!UICONT
 
 ### Rimuovere un profilo video dalle cartelle tramite l’interfaccia utente Profili {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili video]**.
 1. Seleziona il profilo video da rimuovere da una o più cartelle.
-1. Seleziona **[!UICONTROL Rimuovi profilo da cartelle]** e seleziona la cartella o le cartelle da cui vuoi rimuovere il profilo e fai clic su **[!UICONTROL Rimuovi]**.
+1. Selezionare **[!UICONTROL Rimuovi profilo da cartelle]** e selezionare la cartella o le cartelle da cui si desidera rimuovere il profilo, quindi selezionare **[!UICONTROL Rimuovi]**.
 
    Puoi confermare che il profilo video non è più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
 ### Rimuovere un profilo video dalle cartelle tramite Proprietà {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Risorse]** e quindi alla cartella da cui desideri rimuovere un profilo video.
+1. Selezionare il logo di Experience Manager, passare a **[!UICONTROL Assets]** e quindi alla cartella da cui si desidera rimuovere un profilo video.
 1. Nella cartella selezionare il segno di spunta, quindi selezionare **[!UICONTROL Proprietà]**.
-1. Seleziona la **[!UICONTROL Profili video]** e seleziona **[!UICONTROL Nessuno]** dal menu a discesa e seleziona **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Selezionare la scheda **[!UICONTROL Profili video]**, selezionare **[!UICONTROL Nessuno]** dal menu a discesa e selezionare **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.

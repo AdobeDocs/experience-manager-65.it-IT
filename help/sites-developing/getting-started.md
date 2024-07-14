@@ -46,4 +46,4 @@ Segui il tutorial prima di immergerti nei concetti di cui sopra.
 
 ## Passaggi successivi {#next-steps}
 
-Dopo aver completato le [esercitazione](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), prendere in considerazione la revisione del documento [Concetti di base dell’AEM](/help/sites-developing/the-basics.md) migliorare la comprensione di alcune delle tecnologie di base e dei paradigmi di sviluppo dell’AEM.
+Dopo aver completato l&#39;[esercitazione](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), prova a rivedere il documento [Concetti di base dell&#39;AEM](/help/sites-developing/the-basics.md) per comprendere meglio alcune delle tecnologie e dei paradigmi di sviluppo sottostanti dell&#39;AEM.

@@ -45,17 +45,17 @@ Le pagine seguenti sono utili per configurare l’integrazione:
 * [Configurazione del tracciamento video per Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Classificazioni Adobe](/help/sites-administering/adobeanalytics-classifications.md)
 
-È inoltre possibile utilizzare [Procedura guidata Opt-in](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
+È inoltre possibile utilizzare la procedura guidata [Opt-in](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
 
 >[!NOTE]
 >
->Consulta anche l’articolo tutorial: [Integrazione dell’AEM con Adobe Target e Adobe Analytics tramite DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Vedi anche l&#39;articolo tutorial: [Integrazione dell&#39;AEM con Adobe Target e Adobe Analytics utilizzando DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Ulteriori informazioni {#further-information}
 
 Consulta:
 
-* [Estensione dell’integrazione di Adobe Analytics](/help/sites-developing/extending-analytics.md) per informazioni sullo sviluppo di componenti che raccolgono dati utente e sulla personalizzazione del framework di Adobe Analytics.
+* [Estensione dell&#39;integrazione Adobe Analytics](/help/sites-developing/extending-analytics.md) per informazioni sullo sviluppo di componenti che raccolgono dati utente e sulla personalizzazione del framework Adobe Analytics.
 * L’articolo della knowledge base, [Integrazione di Adobe Analytics - risoluzione dei problemi](https://helpx.adobe.com/it/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni sulla risoluzione dei problemi relativi all’integrazione di Adobe Analytics.
 
 >[!NOTE]

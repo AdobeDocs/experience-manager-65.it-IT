@@ -29,14 +29,14 @@ Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono
 Se pensi a una rivista online, il contenuto principale include articoli, annunci e copertine. In AEM è possibile creare tre tipi principali di contenuti Mobile On-Demand:
 
 * **Articoli**: testo basato su grafica per trasmettere informazioni
-* **Banner:** link promozionali grafici
-* **Raccolte:** rappresenta un *bucket* con contenuti quali articoli o banner adatti al tema della copertina
+* **Banner:** in genere collegamenti promozionali grafici
+* **Raccolte:** rappresentano un *bucket* ben definito e pieno di contenuto, ad esempio articoli o banner, adatto al tema della copertina
 
 * **Risorse condivise:** consente il riutilizzo o la condivisione di parti comuni tra gli articoli
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni sulla progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
 ## Creazione e gestione dei contenuti {#creating-and-managing-content}
 
@@ -46,11 +46,11 @@ Gli argomenti seguenti descrivono la creazione e la gestione di contenuti, ovver
 * [Gestione dei banner](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gestione delle raccolte](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Caricamento delle risorse condivise](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Pubblica contenuto di annullamento pubblicazione](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Annullamento pubblicazione contenuto Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
->In genere, è necessario eseguire la verifica preliminare prima di pubblicare il contenuto. Consulta [Anteprima con verifica preliminare](/help/mobile/aem-mobile-manage-ondemand-services.md) per ulteriori dettagli.
+>In genere, è necessario eseguire la verifica preliminare prima di pubblicare il contenuto. Per ulteriori dettagli, vedere [Anteprima con verifica preliminare](/help/mobile/aem-mobile-manage-ondemand-services.md).
 
 ### Risorse aggiuntive {#additional-resources}
 

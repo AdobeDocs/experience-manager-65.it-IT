@@ -28,7 +28,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 2021.11.18.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
+| Componente aggiuntivo CIF | 2021.11.18.00 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
 | Componenti core CIF | 2.4.2. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
 | Sito di riferimento CIF Venia | 2021.12.2001 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
 
@@ -46,7 +46,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 2021.10.20.02 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
+| Componente aggiuntivo CIF | 2021.10.20.02 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
 | Componenti core CIF | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
 | Sito di riferimento CIF Venia | 2021.11.2001 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
 
@@ -66,7 +66,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 27.9.2021 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| Componente aggiuntivo CIF | 27.9.2021 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
 | Componenti core CIF | 2.2.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
 | Sito di riferimento CIF Venia | 23.9.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
 
@@ -74,7 +74,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 * La nuova scheda &quot;Contenuto e-commerce associato&quot; nell’editor di Sites aumenta l’efficienza dell’autore grazie all’accesso rapido ai contenuti dei prodotti AEM pertinenti per il contesto corrente
 
-  ![Contenuto e-commerce associato](/help/assets/CIF/associated-commerce-content.png)
+  ![Contenuto commerce associato](/help/assets/CIF/associated-commerce-content.png)
 
 * È stata migliorata l’interfaccia utente per la selezione dei prodotti, per una migliore esperienza utente, una maggiore efficienza e il supporto per cataloghi di prodotti complessi
 
@@ -94,7 +94,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 2021.09.02 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
+| Componente aggiuntivo CIF | 2021.09.02 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
 | Componenti core CIF | 2.1.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
 | Sito di riferimento CIF Venia | 27.8.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
@@ -102,7 +102,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 * Nuova interfaccia utente per il selettore delle categorie per migliorare l’esperienza utente, l’efficienza e il supporto per cataloghi di prodotti complessi
 
-  ![Nuovo selettore categorie](/help/assets/CIF/category-picker.png)
+  ![Selezione nuova categoria](/help/assets/CIF/category-picker.png)
 
 * Migliore supporto A11Y per i componenti core CIF
 
@@ -120,7 +120,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 21.7.2021 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| Componente aggiuntivo CIF | 21.7.2021 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
 | Componenti core CIF | 2,0,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
 | Sito di riferimento CIF Venia | 22.7.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
@@ -131,13 +131,13 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
    * Indicatore visivo per i dati di prodotto in staging in modalità di authoring per una migliore visibilità delle modifiche imminenti
    * Nuovo componente sitemap per contenuti e pagine commerce
 
-* Supporto per [Consigli di prodotto per Adobe Commerce Sensei, con tecnologia Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in vetrina AEM utilizzando consigli predefiniti o al volo
+* Supporto per [Adobe Commerce Sensei Product Recommendations, basato su Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront utilizzando consigli predefiniti o creati al volo
 
 ## Data di rilascio: giugno 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 2021.06.18 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| Componente aggiuntivo CIF | 2021.06.18 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
 | Componenti core CIF | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
 | Sito di riferimento CIF Venia | 2021.06.12. | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
 
@@ -154,7 +154,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 26.5.2021 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| Componente aggiuntivo CIF | 26.5.2021 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
 | Componenti core CIF | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
 | Sito di riferimento CIF Venia | 24.5.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
@@ -172,7 +172,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 22.04.2021 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| Componente aggiuntivo CIF | 22.04.2021 | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Componenti core CIF | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sito di riferimento CIF Venia | 22.04.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -220,7 +220,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 * Gestione dell’esperienza del prodotto: arricchisci le pagine dei cataloghi di prodotti singolarmente con Frammenti esperienza.
 
-* Proprietà estese della console prodotti per visualizzare le risorse collegate e i frammenti di esperienza, con azioni per passare rapidamente al contenuto associato.
+* Proprietà estese della console prodotti per mostrare Assets collegato e frammenti di esperienza, con azioni per passare rapidamente al contenuto associato.
 
 ### Novità  {#what-is-improved-february}
 
@@ -238,7 +238,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 ### Novità {#what-is-new-january}
 
-* Gestione dell’esperienza del prodotto: nuova scheda della proprietà &quot;Commerce&quot; per risorse e frammenti di esperienza. Questa scheda consente di collegare risorse e frammenti di esperienza a prodotti e categorie. La scheda mostra anche i dati in tempo reale per gli oggetti commerce collegati e un collegamento per mostrare i dettagli nella console del prodotto.
+* Gestione dell’esperienza del prodotto: nuova scheda della proprietà &quot;Commerce&quot; per Assets e Frammenti esperienza. Questa scheda consente di collegare Assets e Frammenti di esperienza a prodotti e categorie. La scheda mostra anche i dati in tempo reale per gli oggetti commerce collegati e un collegamento per mostrare i dettagli nella console del prodotto.
 
 ### Novità  {#what-is-improved-january}
 

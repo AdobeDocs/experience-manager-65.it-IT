@@ -58,15 +58,15 @@ Sono anche disponibili attività amministrative per la gestione dei contenuti:
 
 >[!NOTE]
 >
->L&#39;AEM è anche [somministrato](/help/sites-administering/home.md) (per la maggior parte delle attività) dall’ambiente di authoring.
+>L&#39;AEM è anche [amministrato](/help/sites-administering/home.md) (per la maggior parte delle attività) dall&#39;ambiente di authoring.
 
 #### Ambiente di pubblicazione {#publish-environment}
 
-Quando è pronto, il contenuto del sito AEM viene pubblicato in **ambiente di pubblicazione**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
+Quando è pronto, il contenuto del sito AEM viene pubblicato nell&#39;**ambiente di pubblicazione**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
 
 Di solito, l&#39;ambiente di pubblicazione si trova all&#39;interno della zona demilitarizzata; in altre parole, disponibile a Internet, ma non più sotto la piena protezione della rete interna.
 
-Quando il sito AEM è [sito community](/help/communities/overview.md), o include [Componenti community](/help/communities/author-communities.md), i visitatori del sito connessi (membri) possono interagire con le funzioni di Communities. Ad esempio, possono pubblicare in un forum, pubblicare un commento o seguire altri membri. Ai membri può essere concessa l&#39;autorizzazione ad eseguire attività normalmente limitate all&#39;ambiente di authoring, come creare nuove pagine (gruppi della community), articoli di blog e moderare i post di altri membri.
+Se il sito AEM è un [sito community](/help/communities/overview.md) o include [componenti community](/help/communities/author-communities.md), i visitatori del sito connessi (membri) possono interagire con le funzionalità delle community. Ad esempio, possono pubblicare in un forum, pubblicare un commento o seguire altri membri. Ai membri può essere concessa l&#39;autorizzazione ad eseguire attività normalmente limitate all&#39;ambiente di authoring, come creare nuove pagine (gruppi della community), articoli di blog e moderare i post di altri membri.
 
 >[!NOTE]
 >
@@ -84,4 +84,4 @@ Quando il sito AEM è [sito community](/help/communities/overview.md), o include
 
 #### Dispatcher {#dispatcher}
 
-Per ottimizzare le prestazioni per i visitatori del sito Web, il **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)** implementa il bilanciamento del carico e il caching.
+Per ottimizzare le prestazioni per i visitatori del sito Web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)** implementa il bilanciamento del carico e la memorizzazione nella cache.

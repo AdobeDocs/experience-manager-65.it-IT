@@ -34,8 +34,8 @@ Il foglio di calcolo fornisce i seguenti fogli di lavoro:
 
 * **Istruzioni**
    * Fornisce istruzioni sull&#39;utilizzo del foglio di calcolo e spiegazioni sui meccanismi utilizzati.
-* **[Heartbeat del progetto](/help/managing/best-practices.md#project-heartbeat-dashboard)**
-* **[Stato per Ruolo](/help/managing/best-practices.md#status-by-role)**
+* **[Heartbeat Progetto](/help/managing/best-practices.md#project-heartbeat-dashboard)**
+* **[Stato per ruolo](/help/managing/best-practices.md#status-by-role)**
 * Una serie di elenchi di controllo, in base a [Persona](/help/managing/best-practices.md#persona), [Fase e Milestone](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossario**
    * Il glossario elenca i dettagli di tutti i documenti di risultato finale dall&#39;elenco di controllo del progetto.
@@ -46,11 +46,11 @@ Il foglio di calcolo fornisce i seguenti fogli di lavoro:
 
 Per consegnare correttamente un progetto di alta qualità, devi completare tutti gli elementi nelle liste di controllo, preferibilmente nell’ordine seguente:
 
-1. Le liste di controllo sono definite in base alla **[Persona](/help/managing/best-practices.md#persona)** (ruolo) coinvolto. Ogni persona deve utilizzare l’elenco di controllo appropriato al proprio ruolo nel progetto.
-1. Gli elenchi di controllo coprono **[Documenti richiesti](/help/managing/best-practices.md#required-documents)** e **[Deliverables](/help/managing/best-practices.md#deliverables)** per ogni milestone, l’utente tipo pertinente deve impostare i campi di stato e qualità appropriati.
+1. Gli elenchi di controllo sono definiti in base alla **[persona](/help/managing/best-practices.md#persona)** (ruolo) coinvolta. Ogni persona deve utilizzare l’elenco di controllo appropriato al proprio ruolo nel progetto.
+1. Gli elenchi di controllo coprono i **[documenti richiesti](/help/managing/best-practices.md#required-documents)** e i **[risultati finali](/help/managing/best-practices.md#deliverables)** per ogni attività cardine. L&#39;utente pertinente deve impostare i campi relativi allo stato e alla qualità appropriati.
 
    >[!NOTE]
    >
    >Non esiste una relazione 1:1 diretta tra i singoli documenti richiesti e i risultati finali.
 
-1. In base agli stati del **[Documenti richiesti](/help/managing/best-practices.md#required-documents)** e **[Deliverables](/help/managing/best-practices.md#deliverables)**, i fogli di lavoro **[Heartbeat del progetto](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Stato per Ruolo](/help/managing/best-practices.md#status-by-role)** vengono aggiornati automaticamente per fornire un’indicazione aggiornata dell’avanzamento e dello stato del progetto.
+1. In base agli stati di **[Documenti richiesti](/help/managing/best-practices.md#required-documents)** e **[Deliverables](/help/managing/best-practices.md#deliverables)**, i fogli di lavoro **[Heartbeat progetto](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Stato per ruolo](/help/managing/best-practices.md#status-by-role)** vengono aggiornati automaticamente per fornire un&#39;indicazione aggiornata dell&#39;avanzamento e dello stato del progetto.

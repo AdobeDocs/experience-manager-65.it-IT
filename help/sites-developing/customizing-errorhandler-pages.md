@@ -22,28 +22,28 @@ Adobe Experience Manager (AEM) viene fornito con un gestore degli errori standar
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-Gli script forniti dal sistema esistono (in `/libs/sling/servlet/errorhandler`) per rispondere ai codici di errore, per impostazione predefinita con un&#39;istanza CQ standard sono disponibili i seguenti elementi:
+Gli script forniti dal sistema esistono (in `/libs/sling/servlet/errorhandler`) per rispondere ai codici di errore. Per impostazione predefinita, con un&#39;istanza CQ standard sono disponibili i seguenti script:
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->L’AEM si basa su Apache Sling. Di conseguenza, consulta [Gestione degli errori](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) per informazioni dettagliate sulla gestione degli errori Sling.
+>L’AEM si basa su Apache Sling. Per informazioni dettagliate sulla gestione degli errori Sling, consulta [Gestione errori](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html).
 
 >[!NOTE]
 >
->In un’istanza Autore, il [Filtro di debug CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) è attivato per impostazione predefinita. Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
+>In un&#39;istanza Autore, il filtro di debug [CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) è abilitato per impostazione predefinita. Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
 >
->In un’istanza di pubblicazione, il filtro di debug CQ WCM è *sempre* disabilitato (anche se configurato come abilitato).
+>In un&#39;istanza di pubblicazione, il filtro di debug WCM CQ è disabilitato *sempre* (anche se configurato come abilitato).
 
 ## Personalizzare le pagine visualizzate dal gestore degli errori {#how-to-customize-pages-shown-by-the-error-handler}
 
-Puoi sviluppare script personalizzati per personalizzare le pagine visualizzate dal gestore degli errori quando viene rilevato un errore. Le pagine personalizzate vengono create in `/apps` e sovrapponi le pagine predefinite (che si trovano in `/libs`).
+Puoi sviluppare script personalizzati per personalizzare le pagine visualizzate dal gestore degli errori quando viene rilevato un errore. Le pagine personalizzate vengono create in `/apps` e si sovrappongono alle pagine predefinite (che si trovano in `/libs`).
 
 >[!NOTE]
 >
->Consulta [Utilizzo delle sovrapposizioni](/help/sites-developing/overlays.md) per ulteriori dettagli.
+>Per ulteriori dettagli, vedi [Utilizzo delle sovrapposizioni](/help/sites-developing/overlays.md).
 
 1. Nell’archivio, copia gli script predefiniti:
 
@@ -52,7 +52,7 @@ Puoi sviluppare script personalizzati per personalizzare le pagine visualizzate 
 
    Poiché il percorso di destinazione non esiste per impostazione predefinita, è necessario crearlo quando si esegue questa operazione per la prima volta.
 
-1. Accedi a `/apps/sling/servlet/errorhandler` ed effettuare una delle seguenti operazioni:
+1. Passare a `/apps/sling/servlet/errorhandler` ed effettuare una delle seguenti operazioni:
 
    * modificare lo script esistente appropriato in modo da poter fornire le informazioni richieste.
    * crea e modifica un nuovo script per il codice richiesto.
@@ -69,7 +69,7 @@ Puoi sviluppare script personalizzati per personalizzare le pagine visualizzate 
 
 Gli errori HTTP 500 sono causati da eccezioni sul lato server.
 
-* **[Errore interno del server 500](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+* **[Errore interno del server ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 Il server ha rilevato una condizione imprevista che ha impedito il completamento della richiesta.
 
 Quando l’elaborazione delle richieste genera un’eccezione, il framework Sling Apache (su cui si basa l’AEM):
@@ -82,16 +82,16 @@ Quando l’elaborazione delle richieste genera un’eccezione, il framework Slin
 
   nel corpo della risposta.
 
-Da [personalizzazione delle pagine visualizzate dal gestore degli errori](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` è possibile creare lo script. Tuttavia, viene utilizzato solo se `HttpServletResponse.sendError(500)` viene eseguito in modo esplicito, ovvero da un servizio di raccolta eccezioni.
+È possibile creare uno script `500.jsp` personalizzando le pagine visualizzate dal gestore degli errori](#how-to-customize-pages-shown-by-the-error-handler). [ Tuttavia, viene utilizzato solo se `HttpServletResponse.sendError(500)` viene eseguito in modo esplicito, ovvero da un servizio di raccolta eccezioni.
 
-In caso contrario, il codice di risposta è impostato su 500, ma il `500.jsp` script non eseguito.
+In caso contrario, il codice di risposta è impostato su 500, ma lo script `500.jsp` non viene eseguito.
 
 Per gestire gli errori 500, il nome file dello script del gestore degli errori deve essere uguale a quello della classe di eccezione (o superclasse). Per gestire tutte queste eccezioni, è possibile creare uno script `/apps/sling/servlet/errorhandler/Throwable.js`p o `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!CAUTION]
 >
->In un’istanza Autore, il [Filtro di debug CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) è attivato per impostazione predefinita. Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
+>In un&#39;istanza Autore, il filtro di debug [CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) è abilitato per impostazione predefinita. Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
 >
->Per un gestore degli errori personalizzato, sono necessarie risposte con codice 500, quindi [Il filtro di debug CQ WCM deve essere disabilitato](/help/sites-deploying/osgi-configuration-settings.md). In questo modo viene restituito il codice di risposta 500, che a sua volta attiva il gestore di errori Sling corretto.
+>Per un gestore degli errori personalizzato, sono necessarie risposte con codice 500, pertanto il filtro di debug WCM [CQ deve essere disabilitato](/help/sites-deploying/osgi-configuration-settings.md). In questo modo viene restituito il codice di risposta 500, che a sua volta attiva il gestore di errori Sling corretto.
 >
->In un’istanza di pubblicazione, il filtro di debug CQ WCM è *sempre* disabilitato (anche se configurato come abilitato).
+>In un&#39;istanza di pubblicazione, il filtro di debug WCM CQ è disabilitato *sempre* (anche se configurato come abilitato).

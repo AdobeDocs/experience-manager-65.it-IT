@@ -30,17 +30,17 @@ Per ulteriori informazioni sulla creazione di un sito community, visitare il sit
 
 >[!NOTE]
 >
->Se non conosci l’ambiente di authoring, consulta la documentazione su [operazioni di base](/help/sites-authoring/basic-handling.md) e un [guida rapida all’authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
+>Se non hai familiarità con l&#39;ambiente di authoring, consulta la documentazione sulle [operazioni di base](/help/sites-authoring/basic-handling.md) e una [guida rapida alle pagine di authoring](/help/sites-authoring/qg-page-authoring.md).
 
 ## Componenti community disponibili {#available-communities-components}
 
 Nella tabella seguente sono elencati i componenti Community visibili agli autori se abilitati nella barra laterale (barra laterale).
 
-Consulta anche la sezione [Guida ai componenti della community](/help/communities/components-guide.md).
+Consulta anche la [guida interattiva dei componenti della community](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Letto [Nozioni di base sui componenti community](/help/communities/basics.md) in quanto contiene le informazioni necessarie per l’authoring con i componenti Community.
+>Leggi [Nozioni di base sui componenti Communities](/help/communities/basics.md) in quanto contiene le informazioni necessarie per l&#39;authoring con i componenti Communities.
 
 | **Titolo componente** | **Funzionalità** |
 |---|---|
@@ -70,7 +70,7 @@ Consulta anche la sezione [Guida ai componenti della community](/help/communitie
 | Riepilogo recensioni (visualizzazione) | [Recensioni](/help/communities/reviews.md) |
 | Ricerca | [Ricerca](/help/communities/search.md) |
 | Risultato di ricerca  | [Ricerca](/help/communities/search.md) |
-| Tag cloud per social network | [Tag cloud social](/help/communities/tagcloud.md) |
+| Tag cloud per social network | [Tag cloud per social network](/help/communities/tagcloud.md) |
 | Votazione | [Votazione](/help/communities/voting.md) |
 
 >[!NOTE]
@@ -79,8 +79,8 @@ Consulta anche la sezione [Guida ai componenti della community](/help/communitie
 
 ## Documentazione delle community correlate {#related-communities-documentation}
 
-* Visita [Distribuzione delle community](/help/communities/deploy-communities.md) dove puoi scoprire le distribuzioni consigliate.
+* Visita [Distribuzione di Communities](/help/communities/deploy-communities.md) per scoprire le distribuzioni consigliate.
 
-* Visita [Amministrazione di siti community](/help/communities/administer-landing.md) informazioni sulla creazione di un sito community, sulla configurazione di modelli di sito community, sulla moderazione del contenuto della community, sulla gestione dei membri e sulla configurazione dei messaggi.
+* Visita [Amministrazione di siti community](/help/communities/administer-landing.md) per scoprire come creare un sito community, configurare modelli di sito community, moderare il contenuto della community, gestire i membri e configurare i messaggi.
 
-* Visita [Comunità in via di sviluppo](/help/communities/communities.md) dove puoi scoprire il framework dei componenti social (SCF) e personalizzare i componenti e le funzioni di Communities.
+* Visita [Sviluppo di community](/help/communities/communities.md) per scoprire il framework dei componenti social network (SCF) e personalizzare i componenti e le funzionalità di Communities.

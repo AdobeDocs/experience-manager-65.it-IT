@@ -36,16 +36,16 @@ Questo documento descrive i vari elementi che compongono le campagne. Informazio
 La gestione delle campagne è composta da vari elementi:
 
 * **Marchi**
-In Adobe Experience Manager (AEM), i brand sono l’unità di livello principale e formano una raccolta di **Campagne**.
+In Adobe Experience Manager (AEM), i brand sono l&#39;unità di livello principale e costituiscono una raccolta di **Campagne**.
 
 * **Campagne**
-Una campagna è una raccolta di singoli **Esperienze**.
+Una campagna è una raccolta di singole **esperienze**.
 
 * **Esperienze**
-Il contenuto mirato forma le varie esperienze, presentate al visitatore all’indirizzo **Punti di contatto**. Sono disponibili diversi tipi di esperienza:
+Il contenuto mirato forma le varie esperienze, presentate al visitatore ai **punti di contatto**. Sono disponibili diversi tipi di esperienza:
 
    * **Teaser**
-     [Pagine/paragrafi teaser](#teasers) sono utilizzati per dirigere specifici visitatori **Segmenti** a contenuti incentrati sui loro interessi.
+     [Le pagine/paragrafi teaser](#teasers) vengono utilizzati per indirizzare specifici visitatori **Segmenti** a contenuti incentrati sui loro interessi.
 
      Le pagine teaser possono:
 
@@ -56,7 +56,7 @@ Il contenuto mirato forma le varie esperienze, presentate al visitatore all’in
 
    * **Newsletter**
 
-     [Comunicazioni e-mail](#emailmarketing) sono utilizzati per coinvolgere gli utenti e incoraggiarli a visitare il sito web. Questi di solito assumono la forma di una newsletter, inviata al **Lead** (raggruppati in **Elenchi**). **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità. Si consiglia di: [utilizzare Adobe Campaign e l’integrazione per l’AEM](/help/sites-administering/campaign.md).
+     [Le comunicazioni tramite posta elettronica](#emailmarketing) vengono utilizzate per coinvolgere gli utenti e incoraggiarli a visitare il sito Web. In genere assumono la forma di una newsletter, inviata ai tuoi **Lead** (raggruppati in **Elenchi**). **Nota:** l&#39;Adobe non prevede di migliorare ulteriormente questa funzionalità. Si consiglia di [utilizzare Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -70,15 +70,15 @@ Il contenuto mirato forma le varie esperienze, presentate al visitatore all’in
 
 * **Lead**
 
-  Le informazioni raccolte sui visitatori e su come contattarli costituiscono la base per i lead. **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
+  Le informazioni raccolte sui visitatori e su come contattarli costituiscono la base per i lead. **Nota:** l&#39;Adobe non prevede di migliorare ulteriormente questa funzionalità.
 
-  Si consiglia di: [utilizzare Adobe Campaign e l’integrazione per l’AEM](/help/sites-administering/campaign.md).
+  Si consiglia di [utilizzare Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 * **Elenchi**
 
-  I lead sono raggruppati in elenchi in modo da poter intraprendere azioni collettive su di essi. Nota: **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
+  I lead sono raggruppati in elenchi in modo da poter intraprendere azioni collettive su di essi. Nota: **Nota:** l&#39;Adobe non prevede di migliorare ulteriormente questa funzionalità.
 
-  Si consiglia di: [utilizza Adobe Campaign e l’integrazione per l’AEM.](/help/sites-administering/campaign.md)
+  Si consiglia di [utilizzare Adobe Campaign e l&#39;integrazione con AEM.](/help/sites-administering/campaign.md)
 
 * **Segmenti**
 
@@ -88,6 +88,6 @@ Il contenuto mirato forma le varie esperienze, presentate al visitatore all’in
 
   Marketing Campaign Manager (MCM) è una console che consente di accedere a tutte le funzionalità necessarie per creare e controllare campagne, marchi, esperienze, punti di contatto, lead, elenchi, segmenti e rapporti.
 
-  È accessibile da varie posizioni (etichettate come **Campagne**) o con, ad esempio, l’URL:
+  È possibile accedervi da varie posizioni (etichettate come **Campagne**) o con, ad esempio, l&#39;URL:
 
   `http://localhost:4502/libs/mcm/content/admin.html`

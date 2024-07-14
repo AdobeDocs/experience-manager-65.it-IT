@@ -21,15 +21,15 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Il modo principale per ottenere una sessione amministrativa o un risolutore risorse in AEM era utilizzare `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` metodi forniti da Sling.
+Il modo principale per ottenere una sessione amministrativa o un risolutore risorse in AEM è stato l&#39;utilizzo dei metodi `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` forniti da Sling.
 
-Tuttavia, nessuno di questi metodi è stato progettato intorno al [principio del privilegio minimo](https://en.wikipedia.org/wiki/Principle_of_least_privilege). In questo modo è troppo semplice per uno sviluppatore non pianificare in anticipo una struttura appropriata e i corrispondenti livelli di controllo di accesso (ACL, Access Control Levels) per il contenuto. Se in un servizio di questo tipo è presente una vulnerabilità, spesso si verificano escalation di privilegi `admin` anche se il codice stesso non necessita di privilegi amministrativi per funzionare.
+Tuttavia, nessuno di questi metodi è stato progettato in base al principio [di privilegio minimo](https://en.wikipedia.org/wiki/Principle_of_least_privilege). In questo modo è troppo semplice per uno sviluppatore non pianificare in anticipo una struttura appropriata e i corrispondenti livelli di controllo di accesso (ACL, Access Control Levels) per il contenuto. Se una vulnerabilità è presente in un servizio di questo tipo, spesso si verificano escalation di privilegi per l&#39;utente `admin`, anche se il codice stesso non avrebbe bisogno di privilegi amministrativi per funzionare.
 
 ## Come eliminare gradualmente le sessioni di amministrazione {#how-to-phase-out-admin-sessions}
 
 ### Priorità 0: la funzione è attiva/necessaria/obsoleta? {#priority-is-the-feature-active-needed-derelict}
 
-In alcuni casi, la sessione di amministrazione non viene utilizzata oppure la funzione viene completamente disabilitata. In tal caso, assicurati di rimuovere completamente la funzione o di adattarla a [Codice NOP](https://en.wikipedia.org/wiki/NOP).
+In alcuni casi, la sessione di amministrazione non viene utilizzata oppure la funzione viene completamente disabilitata. In tal caso, assicurati di rimuovere completamente la funzionalità o di adattarla con [codice NOP](https://en.wikipedia.org/wiki/NOP).
 
 ### Priorità 1: Utilizzare La Sessione Di Richiesta {#priority-use-the-request-session}
 
@@ -39,11 +39,11 @@ Quando possibile, effettua il refactoring della funzione in modo che la sessione
 
 Molti problemi possono essere risolti ristrutturando il contenuto. Durante la ristrutturazione, considera queste semplici regole:
 
-* **Cambia il controllo dell&#39;accesso**
+* **Modifica controllo dell&#39;accesso**
 
    * Assicurati che gli utenti o i gruppi che necessitano effettivamente di accesso abbiano effettivamente accesso;
 
-* **Ottimizzare la struttura del contenuto**
+* **Perfeziona struttura contenuto**
 
    * Spostalo in altre posizioni, ad esempio, in cui il controllo di accesso corrisponde alle sessioni di richiesta disponibili;
    * Modificare la granularità del contenuto;
@@ -54,7 +54,7 @@ Molti problemi possono essere risolti ristrutturando il contenuto. Durante la ri
 
 Inoltre, assicurati che tutte le nuove funzioni sviluppate siano conformi ai seguenti principi:
 
-* **I requisiti di sicurezza sono alla base della struttura dei contenuti**
+* **I requisiti di sicurezza devono guidare la struttura del contenuto**
 
    * La gestione del controllo degli accessi dovrebbe essere naturale
    * Il controllo degli accessi deve essere applicato dall&#39;archivio, non dall&#39;applicazione
@@ -63,22 +63,22 @@ Inoltre, assicurati che tutte le nuove funzioni sviluppate siano conformi ai seg
 
    * Limita il set di proprietà che è possibile impostare
 
-* **Rispetta le impostazioni di privacy**
+* **Rispetta impostazioni privacy**
 
-   * Se sono presenti profili privati, ad esempio, potrebbe essere utile non esporre l’immagine del profilo, l’e-mail o il nome completo trovati nel profilo privato `/profile` nodo.
+   * Se sono presenti profili privati, un esempio potrebbe essere quello di non esporre l’immagine del profilo, l’e-mail o il nome completo trovati sul nodo `/profile` privato.
 
 ## Controllo accesso rigoroso {#strict-access-control}
 
 Sia che si applichi il controllo degli accessi durante la ristrutturazione dei contenuti o quando lo si fa per un nuovo utente del servizio, è necessario applicare gli ACL più severi possibili. Usare tutte le possibilità di controllo degli accessi:
 
-* Ad esempio, invece di applicare `jcr:read` il `/apps`, applicarlo solo a `/apps/*/components/*/analytics`
+* Ad esempio, invece di applicare `jcr:read` su `/apps`, applicarlo solo a `/apps/*/components/*/analytics`
 
-* Utilizzare [restrizioni](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)
+* Usa [restrizioni](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)
 
 * Applica ACL per i tipi di nodo
-* Limita autorizzazioni
+* Limita le autorizzazioni
 
-   * ad esempio, quando devi solo scrivere le proprietà, non dare il `jcr:write` autorizzazione; utilizzare `jcr:modifyProperties` invece
+   * ad esempio, se devi solo scrivere le proprietà, non dare l&#39;autorizzazione `jcr:write`; usa invece `jcr:modifyProperties`
 
 ## Utenti e mappature dei servizi {#service-users-and-mappings}
 
@@ -91,10 +91,10 @@ I metodi restituiscono un risolutore sessione/risorsa con i privilegi solo di un
 
 * Consentono di mappare i servizi agli utenti
 * Consentono di definire gli utenti dei servizi secondari
-* Il punto di configurazione centrale è: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
-* `service-id` = `service-name` [&quot;:&quot; nome-servizio-secondario]
+* Punto di configurazione centrale: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
+* `service-id` = `service-name` [&quot;:&quot; nome-servizio]
 
-* `service-id` è mappato a un risolutore risorse e/o a un ID utente dell’archivio JCR per l’autenticazione
+* `service-id` è mappato a un resolver di risorse e/o all&#39;ID utente dell&#39;archivio JCR per l&#39;autenticazione
 * `service-name` è il nome simbolico del bundle che fornisce il servizio
 
 ## Altro Recommendations {#other-recommendations}
@@ -110,25 +110,25 @@ Per sostituire la sessione di amministrazione con un utente del servizio, è nec
 1. Identifica le autorizzazioni necessarie per il servizio, tenendo presente il principio delle autorizzazioni minime.
 1. Controlla se è già disponibile un utente con esattamente la configurazione delle autorizzazioni necessaria. Crea un utente del servizio di sistema se nessun utente esistente soddisfa le tue esigenze. RTC è necessario per creare un utente di servizio. A volte, ha senso creare più utenti di servizi secondari (ad esempio, uno per la scrittura e uno per la lettura) per suddividere ulteriormente l’accesso.
 1. Configurare e testare le ACE per l&#39;utente.
-1. Aggiungi un `service-user` mappatura per il servizio e per `user/sub-users`
+1. Aggiungi un mapping `service-user` per il servizio e per `user/sub-users`
 
-1. Rendi la funzione sling dell’utente del servizio disponibile per il bundle: aggiorna alla versione più recente di `org.apache.sling.api`.
+1. Rendi disponibile la funzionalità sling per l&#39;utente del servizio nel tuo bundle: aggiorna alla versione più recente di `org.apache.sling.api`.
 
-1. Sostituisci il `admin-session` nel codice con `loginService` o `getServiceResourceResolver` API.
+1. Sostituisci `admin-session` nel codice con le API `loginService` o `getServiceResourceResolver`.
 
 ## Creazione di un utente del servizio {#creating-a-new-service-user}
 
 Dopo aver verificato che nessun utente nell’elenco degli utenti del servizio AEM è applicabile al tuo caso d’uso e che i corrispondenti problemi RTC sono stati approvati, aggiungi il nuovo utente al contenuto predefinito.
 
-L’approccio consigliato consiste nel creare un utente del servizio che possa utilizzare Esplora archivio all’indirizzo *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
+L&#39;approccio consigliato consiste nel creare un utente del servizio per utilizzare Esplora repository in *https://&lt;server>:&lt;porta>/crx/explorer/index.jsp*
 
-L’obiettivo è ottenere un `jcr:uuid` che è obbligatoria per creare l’utente tramite un’installazione del pacchetto di contenuti.
+L&#39;obiettivo è ottenere una proprietà `jcr:uuid` valida, obbligatoria per la creazione dell&#39;utente tramite un&#39;installazione del pacchetto di contenuti.
 
 Per creare utenti del servizio, segui questi passaggi:
 
-1. Passare a Esplora archivio all&#39;indirizzo *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
-1. Accesso come amministratore premendo il tasto **Accedi** nell’angolo in alto a sinistra dello schermo.
-1. Quindi, crea e assegna un nome all’utente del sistema. Per creare l&#39;utente come utente di sistema, impostare il percorso intermedio come `system` e aggiungi sottocartelle facoltative in base alle tue esigenze:
+1. Passaggio a Esplora repository in *https://&lt;server>:&lt;porta>/crx/explorer/index.jsp*
+1. Accesso come amministratore premendo il collegamento **Accedi** nell&#39;angolo superiore sinistro della schermata.
+1. Quindi, crea e assegna un nome all’utente del sistema. Per creare l&#39;utente come utente di sistema, impostare il percorso intermedio come `system` e aggiungere sottocartelle facoltative in base alle proprie esigenze:
 
    ![chlimage_1-102](assets/chlimage_1-102a.png)
 
@@ -140,7 +140,7 @@ Per creare utenti del servizio, segui questi passaggi:
    >
    >Nessun tipo mixin associato agli utenti del servizio. Ciò significa che non esistono criteri di controllo di accesso per gli utenti del sistema.
 
-Quando aggiungi il file .content.xml corrispondente al contenuto del bundle, assicurati di aver impostato `rep:authorizableId` e che il tipo principale sia `rep:SystemUser`. Dovrebbe essere simile al seguente:
+Quando aggiungi il file .content.xml corrispondente al contenuto del bundle, assicurati di aver impostato `rep:authorizableId` e che il tipo primario sia `rep:SystemUser`. Dovrebbe essere simile al seguente:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -153,13 +153,13 @@ Quando aggiungi il file .content.xml corrispondente al contenuto del bundle, ass
 
 ## Aggiunta di una modifica alla configurazione ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti, creare una configurazione di fabbrica per [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) servizio. Per mantenere modulare questa configurazione, è possibile fornire utilizzando [Meccanismo di correzione Sling](https://issues.apache.org/jira/browse/SLING-3578). Il modo consigliato per installare tali configurazioni con il bundle è utilizzare [Caricamento iniziale del contenuto Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti, creare una configurazione di fabbrica per il servizio [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html). Per mantenere modulare questa configurazione, è possibile fornirla utilizzando il meccanismo di modifica [Sling](https://issues.apache.org/jira/browse/SLING-3578). Per installare queste configurazioni con il bundle, si consiglia di utilizzare [Sling Initial Content Loading](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Crea una sottocartella SLING-INF/content sotto la cartella src/main/resources del bundle
-1. In questa cartella, crea un file denominato org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml con il contenuto della configurazione di fabbrica (incluse tutte le mappature utente dei servizi secondari). Esempio:
+1. In questa cartella, crea un file denominato org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;nome univoco per la configurazione di fabbrica>.xml con il contenuto della configurazione di fabbrica (comprese tutte le mappature utente dei servizi secondari). Esempio:
 
-1. Creare un `SLING-INF/content` cartella sotto il `src/main/resources` cartella del bundle;
-1. In questa cartella, crea un file `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` con il contenuto della configurazione di fabbrica, incluse tutte le mappature utente dei servizi secondari.
+1. Crea una cartella `SLING-INF/content` sotto la cartella `src/main/resources` del bundle;
+1. In questa cartella creare un file `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` con il contenuto della configurazione di fabbrica, incluse tutte le mappature utente del servizio secondario.
 
    A scopo illustrativo, prendere il file denominato `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`:
 
@@ -180,7 +180,7 @@ Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti,
    </node>
    ```
 
-1. Fai riferimento al contenuto iniziale di Sling nella configurazione di `maven-bundle-plugin` nel `pom.xml` del pacchetto. Esempio:
+1. Fai riferimento al contenuto iniziale di Sling nella configurazione di `maven-bundle-plugin` in `pom.xml` del bundle. Esempio:
 
    ```xml
    <Sling-Initial-Content>
@@ -190,24 +190,24 @@ Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti,
 
 1. Installa il bundle e assicurati che la configurazione di fabbrica sia installata. Per farlo, segui questi passaggi:
 
-   * Vai alla console web all’indirizzo *https://serverhost:serveraddress/system/console/configMgr*
-   * Cerca **Modifica del servizio User Mapper di Apache Sling**
+   * Accesso alla console Web all&#39;indirizzo *https://serverhost:serveraddress/system/console/configMgr*
+   * Cerca **Modifica del servizio User Mapper di Apache Sling Service**
    * Fai clic sul collegamento per verificare se è presente la configurazione corretta.
 
 ## Gestione delle sessioni condivise nei servizi {#dealing-with-shared-sessions-in-services}
 
-Chiamate a `loginAdministrative()` vengono spesso visualizzate insieme alle sessioni condivise. Queste sessioni vengono acquisite al momento dell’attivazione del servizio e vengono disconnesse solo dopo che il servizio è stato arrestato. Anche se si tratta di una pratica comune, ciò comporta due problemi:
+Le chiamate a `loginAdministrative()` vengono spesso visualizzate insieme alle sessioni condivise. Queste sessioni vengono acquisite al momento dell’attivazione del servizio e vengono disconnesse solo dopo che il servizio è stato arrestato. Anche se si tratta di una pratica comune, ciò comporta due problemi:
 
-* **Sicurezza:** Tali sessioni di amministrazione vengono utilizzate per memorizzare nella cache e restituire risorse o altri oggetti associati alla sessione condivisa. Più avanti nello stack di chiamate questi oggetti potevano essere adattati a sessioni o risolutori di risorse con privilegi elevati. Spesso non è chiaro per il chiamante che si tratta di una sessione di amministrazione con cui stanno operando.
+* **Sicurezza:** tali sessioni di amministrazione vengono utilizzate per memorizzare nella cache e restituire risorse o altri oggetti associati alla sessione condivisa. Più avanti nello stack di chiamate questi oggetti potevano essere adattati a sessioni o risolutori di risorse con privilegi elevati. Spesso non è chiaro per il chiamante che si tratta di una sessione di amministrazione con cui stanno operando.
 * **Prestazioni:** In Oak, le sessioni condivise possono causare problemi di prestazioni e non è consigliabile utilizzarle.
 
-La soluzione più ovvia per il rischio di sicurezza è semplicemente sostituire il `loginAdministrative()` chiama con un `loginService()` uno a un utente con privilegi limitati. Tuttavia, questo non ha alcun impatto sul potenziale deterioramento delle prestazioni. Una possibilità per mitigare questo consiste nel racchiudere tutte le informazioni richieste in un oggetto che non ha alcuna associazione con la sessione. Quindi, crea (o elimina) la sessione su richiesta.
+La soluzione più ovvia per il rischio di sicurezza consiste semplicemente nel sostituire la chiamata `loginAdministrative()` con una chiamata `loginService()` a un utente con privilegi limitati. Tuttavia, questo non ha alcun impatto sul potenziale deterioramento delle prestazioni. Una possibilità per mitigare questo consiste nel racchiudere tutte le informazioni richieste in un oggetto che non ha alcuna associazione con la sessione. Quindi, crea (o elimina) la sessione su richiesta.
 
 L’approccio consigliato consiste nel refactoring dell’API del servizio per dare al chiamante il controllo sulla creazione/distruzione della sessione.
 
 ## Sessioni amministrative in JSP {#administrative-sessions-in-jsps}
 
-Le JSP non possono utilizzare `loginService()`, perché non è associato alcun servizio. Tuttavia, le sessioni amministrative nelle JSP sono di solito un segno di violazione del paradigma MVC.
+JSP non può usare `loginService()`, perché non esiste un servizio associato. Tuttavia, le sessioni amministrative nelle JSP sono di solito un segno di violazione del paradigma MVC.
 
 Questo problema può essere risolto in due modi:
 
@@ -220,23 +220,23 @@ Il primo metodo è quello preferito.
 
 Durante l’elaborazione di eventi o processi e talvolta di flussi di lavoro, la sessione corrispondente che ha attivato l’evento viene persa. Questo porta i gestori di eventi e gli elaboratori di processi a utilizzare spesso sessioni amministrative per svolgere il proprio lavoro. Esistono diversi approcci possibili per risolvere questo problema, ciascuno con i suoi vantaggi e svantaggi:
 
-1. Passa il `user-id` nel payload dell’evento e utilizza la rappresentazione.
+1. Passa `user-id` nel payload dell&#39;evento e utilizza la rappresentazione.
 
-   **Vantaggi:** Facile da usare.
+   **Vantaggi:** di facile utilizzo.
 
-   **Svantaggi:** Utilizzi ancora `loginAdministrative()`. Autentica nuovamente una richiesta già autenticata.
+   **Svantaggi:** Utilizza ancora `loginAdministrative()`. Autentica nuovamente una richiesta già autenticata.
 
 1. Crea o riutilizza un utente del servizio che ha accesso ai dati.
 
-   **Vantaggi:** Coerente con il progetto corrente. Richiede modifiche minime.
+   **Vantaggi:** coerente con la progettazione corrente. Richiede modifiche minime.
 
-   **Svantaggi:** Necessita di utenti di servizi potenti per essere flessibili, il che può facilmente portare a escalation di privilegi. Evita il modello di protezione.
+   **Svantaggi:** richiede la flessibilità degli utenti potenti del servizio, che può facilmente comportare l&#39;escalation dei privilegi. Evita il modello di protezione.
 
-1. Passa una serializzazione del `Subject` nel payload dell’evento e crea un `ResourceResolver` in base a tale argomento. Un esempio potrebbe essere l’utilizzo di JAAS `doAsPrivileged` nel `ResourceResolverFactory`.
+1. Passa una serializzazione di `Subject` nel payload dell&#39;evento e crea un `ResourceResolver` in base a tale oggetto. Un esempio potrebbe essere l&#39;utilizzo di JAAS `doAsPrivileged` in `ResourceResolverFactory`.
 
-   **Vantaggi:** Pulizia dell&#39;implementazione dal punto di vista della sicurezza. Evita la riautenticazione e funziona con i privilegi originali. Il codice pertinente per la sicurezza è trasparente per il consumatore dell’evento.
+   **Vantaggi:** ripulisci l&#39;implementazione dal punto di vista della sicurezza. Evita la riautenticazione e funziona con i privilegi originali. Il codice pertinente per la sicurezza è trasparente per il consumatore dell’evento.
 
-   **Svantaggi:** Necessita del refactoring. Anche il fatto che il codice pertinente in materia di sicurezza sia trasparente per il consumatore dell’evento potrebbe causare problemi.
+   **Svantaggi:** è necessario eseguire il refactoring. Anche il fatto che il codice pertinente in materia di sicurezza sia trasparente per il consumatore dell’evento potrebbe causare problemi.
 
 Il terzo approccio è la tecnica di elaborazione preferita.
 
@@ -244,7 +244,7 @@ Il terzo approccio è la tecnica di elaborazione preferita.
 
 All’interno delle implementazioni dei processi di flusso di lavoro, viene persa la sessione utente corrispondente che ha attivato il flusso di lavoro. Questo porta a processi di flusso di lavoro che spesso utilizzano sessioni amministrative per eseguire il proprio lavoro.
 
-Per risolvere questi problemi, si consiglia di utilizzare gli stessi approcci indicati in [Elaborazione di eventi, preprocessori di replica e processi](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) essere utilizzati.
+Per risolvere questi problemi, si consiglia di utilizzare gli stessi approcci indicati in [Elaborazione di eventi, preprocessori di replica e processi](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs).
 
 ## Processori Sling POST e pagine eliminate {#sling-post-processors-and-deleted-pages}
 

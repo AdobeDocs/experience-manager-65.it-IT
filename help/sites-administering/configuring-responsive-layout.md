@@ -19,11 +19,11 @@ ht-degree: 2%
 
 # Configurazione del contenitore di layout e della modalità layout{#configuring-layout-container-and-layout-mode}
 
-[Layout reattivo](/help/sites-authoring/responsive-layout.md) è un meccanismo per realizzare [design responsive](https://en.wikipedia.org/wiki/Responsive_web_design). Questo consente all’utente di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
+[Layout reattivo](/help/sites-authoring/responsive-layout.md) è un meccanismo per la realizzazione di [design responsive](https://en.wikipedia.org/wiki/Responsive_web_design). Questo consente all’utente di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
 
 >[!NOTE]
 >
->Questo può essere confrontato con il [Web mobile](/help/sites-developing/mobile-web.md) meccanismi, che utilizzano la progettazione web adattiva (principalmente per l’interfaccia utente classica).
+>Questo può essere confrontato con i meccanismi [Web mobile](/help/sites-developing/mobile-web.md), che utilizzano la progettazione web adattiva (principalmente per l&#39;interfaccia classica).
 
 AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
@@ -31,7 +31,7 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
   Questo componente fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia reattiva. Può essere utilizzato come parsys predefinito per la pagina e/o reso disponibile agli autori nel browser componenti.
 
-   * Il valore predefinito **Contenitore di layout** componente definito in:
+   * Il componente predefinito **Contenitore di layout** è definito in:
 
      /libs/wcm/foundation/components/responsivegrid
 
@@ -44,14 +44,14 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
         Puoi avere il contenitore di layout come standard per la pagina, consentendo allo stesso tempo all’utente di aggiungere ulteriori contenitori di layout all’interno di questo; ad esempio, per ottenere il controllo delle colonne.
 
 * **[Modalità Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Una volta che il contenitore di layout è posizionato sulla pagina, è possibile utilizzare **Layout** per posizionare il contenuto all’interno della griglia reattiva.
+Una volta che il contenitore di layout è posizionato nella pagina, è possibile utilizzare la modalità **Layout** per posizionare il contenuto all&#39;interno della griglia reattiva.
 
 * [**Emulatore**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Questo consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare come viene eseguito il rendering del contenuto utilizzando l’emulatore.
 
 >[!CAUTION]
 >
->Anche se il **Contenitore di layout** Il componente è disponibile nell’interfaccia classica; la sua piena funzionalità è disponibile solo nell’interfaccia touch.
+>Sebbene il componente **Contenitore di layout** sia disponibile nell&#39;interfaccia utente classica, la sua funzionalità completa è disponibile solo nell&#39;interfaccia touch.
 
 Con questi meccanismi basati su una griglia dinamica è possibile:
 
@@ -62,15 +62,15 @@ Con questi meccanismi basati su una griglia dinamica è possibile:
 
 >[!NOTE]
 >
->In un’installazione standard, il layout reattivo è stato configurato per [Sito di riferimento We.Retail](/help/sites-developing/we-retail.md). [Attivare il componente Contenitore di layout](#enable-the-layout-container-component-for-page) per altre pagine.
+>In un&#39;installazione predefinita, il layout dinamico è stato configurato per il [sito di riferimento We.Retail](/help/sites-developing/we-retail.md). [Attiva il componente Contenitore di layout](#enable-the-layout-container-component-for-page) per altre pagine.
 
 ## Configurazione dell’emulatore reattivo {#configuring-the-responsive-emulator}
 
-Questa attività ti consente di visualizzare **Emulatore** sul tuo sito.
+Questa attività ti consente di visualizzare l&#39;**emulatore** reattivo sul tuo sito.
 
 ### Registrare i componenti pagina per l’emulazione {#register-your-page-components-for-emulation}
 
-Per abilitare l’emulatore a supportare le pagine, è necessario registrare i componenti della pagina. Consulta [Registrazione dei componenti della pagina per la simulazione](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
+Per abilitare l’emulatore a supportare le pagine, è necessario registrare i componenti della pagina. Consulta [Registrazione dei componenti pagina per la simulazione](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
 
 ### Specificare i gruppi di dispositivi {#specify-the-device-groups}
 
@@ -78,11 +78,11 @@ Per specificare i gruppi di dispositivi visualizzati nell&#39;elenco Dispositivi
 
 ### Collega il sito ai gruppi di dispositivi specificati {#link-your-site-to-the-specified-device-groups}
 
-Per includere l’emulatore, collega il sito ai gruppi di dispositivi. Consulta [Aggiunta dell&#39;elenco dei dispositivi](/help/sites-developing/responsive.md#adding-the-devices-list) (sia per l’interfaccia utente classica che per quella ottimizzata per il tocco).
+Per includere l’emulatore, collega il sito ai gruppi di dispositivi. Consulta [Aggiunta dell&#39;elenco dei dispositivi](/help/sites-developing/responsive.md#adding-the-devices-list) (sia per l&#39;interfaccia utente classica che per quella ottimizzata per il tocco).
 
 ## Attiva modalità layout per il sito {#activate-layout-mode-for-your-site}
 
-Queste procedure vengono utilizzate per **Layout** sul sito.
+Queste procedure vengono utilizzate per attivare la modalità **Layout** nel sito.
 
 ### Configurare i punti di interruzione {#configure-the-breakpoints}
 
@@ -101,9 +101,9 @@ Queste procedure vengono utilizzate per **Layout** sul sito.
 
 * Sono visibili come marcatori nella parte superiore dell’editor pagina quando utilizzi l’emulatore.
 * Sono ereditati dalla gerarchia dei nodi principali e possono essere sostituiti a piacimento.
-* Esiste un punto di interruzione predefinito (predefinito) che copre tutto ciò che si trova oltre l’ultimo *configurato* punto di interruzione.
+* Esiste un punto di interruzione predefinito che copre tutto ciò che si trova oltre l&#39;ultimo punto di interruzione *configurato*.
 
-Possono essere definiti utilizzando CRXDE Liti o XML.
+Possono essere definiti utilizzando CRXDE Lite o XML.
 
 >[!NOTE]
 >
@@ -118,14 +118,14 @@ Possono essere definiti utilizzando CRXDE Liti o XML.
 >
 >  Quando l’ereditarietà è in funzione, puoi limitarla alla pagina principale del contenuto.
 
-#### Configurazione dei punti di interruzione tramite CRXDE Liti {#configuring-breakpoints-using-crxde-lite}
+#### Configurazione dei punti di interruzione tramite CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Utilizzando CRXDE Liti (o equivalente), accedi a:
+1. Utilizzando CRXDE Lite (o equivalente), accedi a:
 
    * Definizione del modello.
-   * Il `jcr:content` della pagina.
+   * Il nodo `jcr:content` della pagina.
 
-1. Sotto `jcr:content` crea il nodo:
+1. In `jcr:content` creare il nodo:
 
    * Nome: `cq:responsive`
    * Tipo: `nt:unstructured`
@@ -144,7 +144,7 @@ Possono essere definiti utilizzando CRXDE Liti o XML.
 
 #### Configurazione dei punti di interruzione tramite XML {#configuring-breakpoints-using-xml}
 
-I punti di interruzione si trovano all&#39;interno del `<jcr:content>` sezione del `.context.html` nella cartella del modello (o del contenuto) appropriata.
+I punti di interruzione si trovano all&#39;interno della sezione `<jcr:content>` di `.context.html` nella cartella del modello (o del contenuto) appropriata.
 
 Esempio di definizione:
 
@@ -163,13 +163,13 @@ Esempio di definizione:
 >
 >Questa opzione è necessaria solo se il componente Pagina non è basato sul componente Pagina di base.
 
-Copia quanto segue `cq:infoProviders` struttura del nodo nel componente della pagina padre:
+Copia la seguente struttura di nodi `cq:infoProviders` nel componente della pagina padre:
 
 `/libs/foundation/components/page/cq:infoProviders/responsive`
 
 ## Abilita il ridimensionamento dei componenti per la pagina {#enable-component-resizing-for-the-page}
 
-Queste procedure sono necessarie per poter ridimensionare i componenti in **Layout** modalità.
+Queste procedure sono necessarie per ridimensionare i componenti in modalità **Layout**.
 
 ### Imposta contenitore layout come parsys principale {#set-layout-container-as-main-parsys}
 
@@ -202,7 +202,7 @@ I due esempi seguenti illustrano la definizione:
 
 AEM utilizza LESS per generare parti del CSS necessario, che devono essere incluse nei progetti.
 
-Dovrai anche creare una [libreria client](https://experienceleague.adobe.com/docs/) per fornire chiamate di configurazione e funzione aggiuntive. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
+Sarà inoltre necessario creare una [libreria client](https://experienceleague.adobe.com/docs/) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -258,7 +258,7 @@ Qualsiasi ridimensionamento di un componente all’interno della griglia attiva 
 
 * `afterchildedit`
 
-Per ridimensionare e aggiornare correttamente il contenuto di un’immagine adattiva inclusa in una griglia reattiva, è necessario aggiungere una `afterEdit` imposta su `REFRESH_PAGE` listener in `EditConfig` file di ogni componente contenuto.
+Per ridimensionare e aggiornare correttamente il contenuto di un&#39;immagine adattiva inclusa in una griglia reattiva, è necessario aggiungere un set `afterEdit` al listener `REFRESH_PAGE` nel file `EditConfig` di ogni componente contenuto.
 
 Ad esempio:
 
@@ -272,7 +272,7 @@ Il meccanismo di immagine adattiva è reso disponibile tramite uno script che co
 
 ## Abilitare il componente Contenitore di layout per la pagina {#enable-the-layout-container-component-for-page}
 
-Queste attività consentono agli autori di trascinare le istanze del **Contenitore di layout** sulla pagina.
+Queste attività consentono agli autori di trascinare nella pagina le istanze del componente **Contenitore di layout**.
 
 ### Abilitare il componente Contenitore di layout per la modifica delle pagine {#enable-the-layout-container-component-for-page-editing}
 
@@ -280,11 +280,11 @@ Per consentire agli autori di aggiungere ulteriori griglie reattive alle pagine 
 
 * **Ambiente di authoring**
 
-  Utilizzare [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) per attivare **Contenitore livello** per una pagina.
+  Utilizza la [modalità progettazione](/help/sites-authoring/default-components-designmode.md) per attivare il componente **Contenitore livello** per una pagina.
 
 * **Definizione componente**
 
-  Utilizzare `allowedComponent` o un inclusione statica durante la definizione del componente.
+  Usa `allowedComponent` o un&#39;inclusione statica durante la definizione del componente.
 
 ### Configurare la griglia del contenitore di layout {#configure-the-grid-of-the-layout-container}
 
@@ -294,7 +294,7 @@ Puoi configurare il numero di colonne disponibili per ogni istanza specifica del
 
    Puoi configurare il numero di colonne disponibili per ogni istanza specifica del contenitore di layout.
 
-   A tale scopo, utilizza [Modalità progettazione](/help/sites-authoring/default-components-designmode.md), quindi apri la finestra di dialogo per progettazione del contenitore richiesto. Qui puoi specificare quante colonne saranno disponibili per il posizionamento e il dimensionamento. Il valore predefinito è 12.
+   A tale scopo, utilizzare [Modalità progettazione](/help/sites-authoring/default-components-designmode.md), quindi aprire la finestra di dialogo per la progettazione del contenitore richiesto. Qui puoi specificare quante colonne saranno disponibili per il posizionamento e il dimensionamento. Il valore predefinito è 12.
 
 1. **XML**
 

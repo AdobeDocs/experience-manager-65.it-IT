@@ -31,7 +31,7 @@ Il Geometrixx di esempio Sito demo include diversi rami di lingua e utilizza la 
              |- zh
 ```
 
-Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/geometrixx/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare un [directory principale lingua configurata correttamente](/help/sites-administering/tc-prep.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito sorgente.
+Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/geometrixx/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare una [directory principale lingua configurata correttamente](/help/sites-administering/tc-prep.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito di origine.
 
 La copia per lingua per la quale originariamente si è creato il contenuto del sito è la lingua master. Il lingua master è quella di partenza che viene tradotta in altre lingue.
 
@@ -49,13 +49,13 @@ Crea una directory principale della lingua come pagina principale di una copia p
 
 Per creare la directory principale della lingua è necessario creare una pagina e utilizzare un codice della lingua ISO come valore per la proprietà Name. Il codice della lingua deve essere in uno dei seguenti formati:
 
-* `<language-code>`Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio: `en`.
+* `<language-code>`Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio `en`.
 
-* `<language-code>_<country-code>` o `<language-code>-<country-code>`Il codice del paese supportato è un codice a due lettere minuscole o maiuscole, come definito ad esempio dallo standard ISO 3166, `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` o `<language-code>-<country-code>`Il codice paese supportato è un codice a due lettere minuscole o maiuscole come definito dallo standard ISO 3166, ad esempio `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale.  La pagina principale della copia in lingua francese del Geometrixx, ad esempio, ha `fr` come proprietà Name. La proprietà Name viene utilizzata come nome del nodo della pagina nell’archivio e quindi determina il percorso della pagina. (http://localhost:4502/content/geometrixx/fr.html)
 
-La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco per creare una copia in lingua di un sito web. Per istruzioni sull’utilizzo dell’interfaccia classica, consulta [Creazione di una directory principale della lingua tramite l’interfaccia classica](/help/sites-administering/tc-lroot-classic.md).
+La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco per creare una copia in lingua di un sito web. Per istruzioni sull&#39;utilizzo dell&#39;interfaccia classica, vedere [Creazione di una directory principale della lingua tramite l&#39;interfaccia classica](/help/sites-administering/tc-lroot-classic.md).
 
 1. Passa a Sites.
 1. Fare clic sul sito per il quale si desidera creare una copia per lingua.
@@ -67,11 +67,11 @@ La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco p
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Selezionare il modello della pagina e quindi fare clic su Avanti.
-1. Nel campo Nome digitare il codice del paese nel formato `<language-code>` o `<language-code>_<country-code>`ad esempio: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
+1. Nel campo Nome digitare il codice del paese nel formato `<language-code>` o `<language-code>_<country-code>`, ad esempio `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Fai clic su Crea. Nella finestra di dialogo di conferma, fai clic su **Fine** per tornare alla console Sites, oppure **Apri** per aprire la copia per lingua.
+1. Fai clic su Crea. Nella finestra di dialogo di conferma, fai clic su **Fine** per tornare alla console Sites oppure su **Apri** per aprire la copia per lingua.
 
 ## Visualizzazione dello stato delle directory principali della lingua {#seeing-the-status-of-language-roots}
 
@@ -85,4 +85,4 @@ La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco p
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. Nel pannello Riferimenti, fate clic su **Copie per lingua**. Il pannello Copie per lingua mostra le copie per lingua del sito web.
+1. Nel pannello dei riferimenti, fai clic su **Copie per lingua**. Il pannello Copie per lingua mostra le copie per lingua del sito web.

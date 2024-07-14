@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Se non conosci il provider di risorse di archiviazione (SRP) e la sua relazione con i contenuti generati dagli utenti (UGC), visita [Archiviazione contenuti community](working-with-srp.md) e [Panoramica del provider di risorse di archiviazione](srp.md).
+Se non conosci il provider di risorse di archiviazione (SRP) e la sua relazione con i contenuti generati dagli utenti (UGC), visita [Community Content Storage](working-with-srp.md) e [Storage Resource Provider Overview](srp.md).
 
 Questa sezione della documentazione fornisce alcune informazioni essenziali su SRP e UGC.
 
@@ -42,7 +42,7 @@ Durante l’aggiornamento da AEM 6.0 o versioni precedenti, sarà necessario ese
 >
 >Storicamente, le utility per l’accesso a UGC si trovavano nel pacchetto SocialUtils, che non esiste più.
 >
->Per le utilità sostitutive, vedere [Refactoring SocialUtils](socialutils.md).
+>Per le utilità sostitutive, vedi [Refactoring di SocialUtils](socialutils.md).
 
 ## Metodo di utilità per accedere a UGC {#utility-method-to-access-ugc}
 
@@ -63,13 +63,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-Per altre sostituzioni di SocialUtils, consulta [Refactoring SocialUtils](socialutils.md).
+Per altre sostituzioni di SocialUtils, vedi [Refactoring di SocialUtils](socialutils.md).
 
 Per le linee guida sulla codifica, visita [Accesso a UGC con SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->Il percorso resourceToUGCStoragePath() restituisce è *non* adatto per [Controllo ACL](srp.md#for-access-control-acls).
+>Il percorso restituito da resourceToUGCStoragePath() è *not* adatto per il [controllo ACL](srp.md#for-access-control-acls).
 
 ## Metodo di utilità per accedere alle ACL {#utility-method-to-access-acls}
 
@@ -96,38 +96,38 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->Il percorso restituito da resourceToACLPath() è *non* adatto per [accesso a UGC](#utility-method-to-access-acls) stesso.
+>Il percorso restituito da resourceToACLPath() è *not* idoneo per l&#39;accesso a [UGC](#utility-method-to-access-acls) stesso.
 
 ## Posizioni di archiviazione relative a UGC {#ugc-related-storage-locations}
 
-Le seguenti descrizioni della posizione di archiviazione possono essere utili per lo sviluppo con JSRP o eventualmente MSRP. Attualmente non esiste un’interfaccia utente per accedere a contenuti generati dagli utenti (UGC) archiviati in ASRP, in quanto è presente per JSRP ([CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (strumenti MongoDB).
+Le seguenti descrizioni della posizione di archiviazione possono essere utili per lo sviluppo con JSRP o eventualmente MSRP. Attualmente non è disponibile alcuna interfaccia utente per accedere a contenuti generati dagli utenti archiviati in ASRP, in quanto sono disponibili strumenti JSRP ([CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (MongoDB).
 
-**Posizione del componente**
+**Percorso componente**
 
 Quando un membro immette contenuti generati dagli utenti (UGC) nell’ambiente di pubblicazione, interagisce con un componente come parte di un sito AEM.
 
-Un esempio di tale componente è il [componente commenti](http://localhost:4502/content/community-components/en/comments.html) che esiste in [Guida ai componenti della community](components-guide.md) sito. Il percorso del nodo del commento nell’archivio locale è:
+Un esempio di tale componente è il componente [comments](http://localhost:4502/content/community-components/en/comments.html) presente nel sito [Guida ai componenti della community](components-guide.md). Il percorso del nodo del commento nell’archivio locale è:
 
 * Percorso componente = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-**Posizione nodo ombra**
+**Posizione nodo shadow**
 
-La creazione di UGC crea anche un [nodo ombra](srp.md#about-shadow-nodes-in-jcr) a cui vengono applicati gli ACL necessari. Il percorso del nodo shadow corrispondente nell’archivio locale è il risultato dell’anteprima del percorso principale del nodo shadow al percorso del componente:
+La creazione di UGC crea anche un [nodo shadow](srp.md#about-shadow-nodes-in-jcr) a cui vengono applicati gli ACL necessari. Il percorso del nodo shadow corrispondente nell’archivio locale è il risultato dell’anteprima del percorso principale del nodo shadow al percorso del componente:
 
 * Percorso directory principale = `/content/usergenerated`
 * Commento nodo shadow = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Posizione UGC**
 
-Il file UGC viene creato in nessuna di queste posizioni e deve essere accessibile solo utilizzando un [metodo di utilità](#utility-method-to-access-ugc) che richiama l’API SRP.
+UGC viene creato in nessuna di queste posizioni e dovrebbe essere accessibile solo utilizzando un [metodo di utilità](#utility-method-to-access-ugc) che richiama l&#39;API SRP.
 
 * Percorso directory principale = `/content/usergenerated/asi/srp-choice`
 * Nodo UGC per JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Presta attenzione*, per JSRP, il nodo UGC *solo* essere presente nell’istanza AEM (sia autore che pubblicazione) in cui è stata inserita. Se viene immesso in un&#39;istanza pubblicata, la moderazione non sarà possibile dalla console di moderazione nell&#39;istanza di authoring.
+*Tieni presente*, per JSRP il nodo UGC *only* sarà presente nell&#39;istanza AEM (di authoring o pubblicazione) in cui è stato immesso. Se viene immesso in un&#39;istanza pubblicata, la moderazione non sarà possibile dalla console di moderazione nell&#39;istanza di authoring.
 
 ## Informazioni correlate {#related-information}
 
-* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.
+* [Refactoring di SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti ai metodi di utilità SRP correnti.

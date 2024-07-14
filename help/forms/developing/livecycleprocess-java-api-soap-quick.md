@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva dell’API Java LiveCycleProcess (SOAP)
+title: Guida introduttiva all’API Java LiveCycleProcess (SOAP)
 description: Utilizzare la Guida introduttiva dell'API Java LiveCycleProcess (SOAP) per cercare le istanze di processo, sospenderne le istanze, avviare le istanze di processo sospese, terminare le istanze di processo, eliminare i dati di processo e recuperare lo stato di un processo.
 contentOwner: admin
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Guida introduttiva all’API Java LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-Per i processi è disponibile la Guida introduttiva all’API Java (SOAP). A *istanza di processo* è un’occorrenza di un processo specifico avviato da un metodo di chiamata come l’API di chiamata o dall’interno di Workspace.
+Per i processi è disponibile la Guida introduttiva all’API Java (SOAP). Un&#39;istanza *process* è un&#39;occorrenza di un processo specifico avviato da un metodo di chiamata, ad esempio l&#39;API di chiamata o da Workspace.
 
 [Quick Start (modalità SOAP): ricerca di istanze di processo tramite API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -36,11 +36,11 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->Gli avvii rapidi nella programmazione con AEM Forms si basano su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. (vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Gli avvii rapidi nella programmazione con AEM Forms si basano su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Quick Start (modalità SOAP): ricerca di istanze di processo tramite API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene eseguita la ricerca delle istanze di processo basate su *Mutuo ipotecario - Precostruito* processo.
+Esempio Nell&#39;esempio di codice Java riportato di seguito viene eseguita la ricerca di istanze di processo basate sul processo *MortgageLoan - Prebuildato*.
 
 ```java
  /*

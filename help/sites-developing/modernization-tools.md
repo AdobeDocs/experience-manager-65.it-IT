@@ -16,12 +16,12 @@ ht-degree: 46%
 
 # Strumenti AEM Modernization Tools {#modernization-tools}
 
-[Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/) consente di convertire facilmente:
+[Gli strumenti di modernizzazione dell&#39;AEM](https://opensource.adobe.com/aem-modernize-tools/) consentono di convertire facilmente:
 
-* [Modelli statici](page-templates-static.md) a [modelli modificabili](page-templates-editable.md)
-* [Configurazioni di progettazione](page-templates-static.md) a [criteri](page-templates-editable.md)
-* [Componenti di base](/help/sites-authoring/default-components-foundation.md) a [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [Interfaccia classica](website.md) a [Interfaccia touch](touch-ui-concepts.md)
+* [Modelli statici](page-templates-static.md) in [modelli modificabili](page-templates-editable.md)
+* [Configurazioni progettazione](page-templates-static.md) in [Criteri](page-templates-editable.md)
+* [Componenti Foundation](/help/sites-authoring/default-components-foundation.md) in [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Interfaccia classica](website.md) in [Interfaccia touch](touch-ui-concepts.md)
 
 Per ulteriori informazioni sull’utilizzo di questi strumenti, [vedi la relativa documentazione](https://opensource.adobe.com/aem-modernize-tools/).
 

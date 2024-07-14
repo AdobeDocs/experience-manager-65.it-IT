@@ -25,8 +25,8 @@ Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzi
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceTypes</strong></td>
-   <td>social/forum/components/hbs/forum<br /> social/forum/componenti/hbs/argomento<br /> social/forum/componenti/hbs/post</td>
+   <td> <strong>tiporisorsa</strong></td>
+   <td>social/forum/components/hbs/forum<br /> social/forum/components/hbs/topic<br /> social/forum/components/hbs/post</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
@@ -46,7 +46,7 @@ Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzi
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consulta <a href="forum.md">Funzione forum</a></td>
+   <td>Vedi la <a href="forum.md">funzione forum</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,20 +63,20 @@ Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzi
 
 ### Funzione Forum {#forum-function}
 
-Una struttura del sito della community che include [Funzione forum](functions.md#forum-function), include un `forum` e le impostazioni relative a moderazione, assegnazione di tag e traduzione.
+Una struttura del sito della community che include la funzione [Forum](functions.md#forum-function), include un componente `forum` configurato e le impostazioni relative a moderazione, assegnazione di tag e traduzione.
 
 ### Accesso ai post del forum (UGC) {#accessing-forum-posts-ugc}
 
 Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
 Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire da Adobe Experience Manager 6.1 Communities, l’utilizzo di un’ [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da Adobe Experience Manager 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell&#39;UGC nell&#39;archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
-* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi ed esempi dell&#39;utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.
+* [Refactoring di SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti ai metodi di utilità SRP correnti.

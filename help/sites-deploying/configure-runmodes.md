@@ -26,9 +26,9 @@ Operazioni disponibili:
 
   Un set di base di parametri di configurazione viene applicato a tutte le modalità di esecuzione e puoi quindi regolare altri set in base allo scopo dell’ambiente specifico. Questi vengono applicati in base alle esigenze.
 
-* [Definisci i bundle aggiuntivi da installare per una particolare modalità](#defining-additional-bundles-to-be-installed-for-a-run-mode).
+* [Definire i bundle aggiuntivi da installare per una modalità particolare](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
-Tutte le impostazioni e le definizioni vengono memorizzate in un unico repository e attivate impostando **Modalità di esecuzione**.
+Tutte le impostazioni e le definizioni vengono archiviate in un unico repository e attivate impostando la **Modalità di esecuzione**.
 
 ## Modalità di esecuzione dell’installazione {#installation-run-modes}
 
@@ -43,15 +43,15 @@ Sono disponibili modalità di esecuzione dell’installazione pronte all’uso:
 
 Si tratta di due coppie di modalità di esecuzione che si escludono a vicenda; ad esempio, è possibile:
 
-* definisci `author` o `publish`, non entrambi contemporaneamente
+* definisci `author` o `publish`, non entrambi allo stesso tempo
 
-* combinare `author` con `samplecontent` o `nosamplecontent` (ma non entrambi)
+* combina `author` con `samplecontent` o `nosamplecontent` (ma non entrambi)
 
 >[!CAUTION]
 >
->Quando si utilizza una delle modalità di esecuzione di cui sopra (author, publish, samplecontent, nosamplecontent), il valore utilizzato al momento dell’installazione definisce la modalità di esecuzione per *intera durata* di tale impianto.
+>Quando si utilizza una delle modalità di esecuzione precedenti (author, publish, samplecontent, nosamplecontent), il valore utilizzato al momento dell&#39;installazione definisce la modalità di esecuzione per l&#39;*intera durata* dell&#39;installazione.
 >
->Per queste modalità di esecuzione è possibile: *non può* modificarli dopo l&#39;installazione.
+>Per queste modalità di esecuzione *non è possibile* modificarle dopo l&#39;installazione.
 
 ## Modalità di esecuzione personalizzate {#customized-run-modes}
 
@@ -73,9 +73,9 @@ Ad ogni avvio è possibile selezionare anche modalità di esecuzione personalizz
 
 Queste modalità ti consentono di controllare l’utilizzo di contenuti di esempio. Il contenuto di esempio viene definito prima che venga generato l’avvio rapido e può includere pacchetti, configurazioni e così via:
 
-* Il `samplecontent` modalità di esecuzione installa questo contenuto (modalità predefinita).
+* La modalità di esecuzione `samplecontent` installa questo contenuto (la modalità predefinita).
 
-* Il `nosamplecontent` La modalità non installa il contenuto di esempio.
+* La modalità `nosamplecontent` non installa il contenuto di esempio.
 
 La modalità di esecuzione nosamplecontent è progettata per le installazioni di produzione.
 
@@ -101,11 +101,11 @@ La modalità di esecuzione è indicata da un suffisso nel nome della cartella. Q
 
   Utilizzato per la modalità di esecuzione applicabile; ad esempio, config
 
-Consulta [Configurazione OSGi nell’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) per ulteriori dettagli sulla definizione dei singoli nodi di configurazione all&#39;interno di queste cartelle e sulla creazione di configurazioni per combinazioni di più modalità di esecuzione.
+Per ulteriori informazioni sulla definizione dei singoli nodi di configurazione all&#39;interno di queste cartelle e sulla creazione di configurazioni per combinazioni di più modalità di esecuzione, vedere [Configurazione OSGi nel repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 >[!NOTE]
 >
->Per [Modalità di esecuzione dell’installazione](#installation-run-modes) (ad esempio, autore) la modalità di esecuzione non può essere modificata dopo l’installazione. Tuttavia, le modifiche alle singole proprietà di configurazione avranno effetto al riavvio.
+>Per le [modalità di esecuzione dell&#39;installazione](#installation-run-modes) (ad esempio, creazione) non è possibile modificare la modalità di esecuzione dopo l&#39;installazione. Tuttavia, le modifiche alle singole proprietà di configurazione avranno effetto al riavvio.
 
 ## Definizione di bundle aggiuntivi da installare per una modalità di esecuzione {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -114,7 +114,7 @@ Consulta [Configurazione OSGi nell’archivio](/help/sites-deploying/configuring
 * `install.author`
 * `install.publish`
 
-Queste cartelle sono di tipo `nt:folder` e devono contenere il pacchetto appropriato.
+Queste cartelle sono di tipo `nt:folder` e devono contenere il bundle appropriato.
 
 ## Avvio di CQ con una modalità di esecuzione specifica {#starting-cq-with-a-specific-run-mode}
 
@@ -129,7 +129,7 @@ Quando si utilizza un server applicazioni è inoltre possibile [definire la moda
 
 ### Utilizzo del file sling.properties {#using-the-sling-properties-file}
 
-Il `sling.properties` Il file può essere utilizzato per definire la modalità di esecuzione richiesta:
+Il file `sling.properties` può essere utilizzato per definire la modalità di esecuzione richiesta:
 
 1. Modifica il file di configurazione:
 
@@ -141,7 +141,7 @@ Il `sling.properties` Il file può essere utilizzato per definire la modalità d
 
 ### Utilizzo dell&#39;opzione -r {#using-the-r-option}
 
-È possibile attivare una modalità di esecuzione personalizzata utilizzando `-r` quando si avvia quickstart. Ad esempio, utilizza il seguente comando per avviare un’istanza AEM con la modalità di esecuzione impostata su dev. &quot;
+È possibile attivare una modalità di esecuzione personalizzata utilizzando l&#39;opzione `-r` all&#39;avvio dell&#39;avvio rapido. Ad esempio, utilizza il seguente comando per avviare un’istanza AEM con la modalità di esecuzione impostata su dev. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -166,7 +166,7 @@ Il file jar deve utilizzare la convenzione di denominazione:
 
 `cq5-<run-mode>-p<port-number>`
 
-Ad esempio, imposta `publish` modalità di esecuzione denominando il file jar:
+Ad esempio, impostare la modalità di esecuzione `publish` denominando il file jar:
 
 `cq5-publish-p4503`
 
@@ -180,6 +180,6 @@ nel file:
 
 `WEB-INF/web.xml`
 
-Questo è nel AEM `war` e devono essere aggiornati prima della distribuzione.
+Si trova nel file `war` dell&#39;AEM e deve essere aggiornato prima della distribuzione.
 
-Consulta [Installazione di AEM con un server applicazioni](/help/sites-deploying/application-server-install.md) per ulteriori dettagli.
+Per ulteriori dettagli, vedere [Installazione di AEM con un server applicazioni](/help/sites-deploying/application-server-install.md).

@@ -37,7 +37,7 @@ La pagina Approfondimenti contenuto include rapporti che utilizzano dati di Adob
 * Target: rapporti sull’attività della campagna per la quale la pagina include offerte.
 * BrightEdge: segnala le funzioni della pagina che migliorano la visibilità della pagina ai motori di ricerca e consiglia le funzioni che devono essere implementate.
 
-Consulta [Apertura di Analytics e Recommendations per una pagina](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
+Vedi [Apertura di Analytics e Recommendations per una pagina](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
 ## Periodo di segnalazione
 
@@ -45,15 +45,15 @@ I rapporti mostrano i dati per un periodo di tempo controllato. Quando si modifi
 
 >[!NOTE]
 >
->La timeline per il dashboard Content Insight è in `GMT`.
+>La timeline per il dashboard Approfondimenti contenuto si trova in `GMT`.
 
 Puoi anche specificare la granularità dei dati segnalati, ad esempio visualizzare dati giornalieri, settimanali, mensili o annuali.
 
-Consulta [Modifica del periodo di reporting](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
+Vedi [Modifica del periodo di reporting](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 
 >[!NOTE]
 >
->I rapporti Content Insights richiedono che l’amministratore abbia integrato AEM con SiteCatalyst, Target e BrightEdge. Consulta [Integrazione con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrazione con Adobe Target](/help/sites-administering/target.md), e [Integrazione con BrightEdge](/help/sites-administering/brightedge.md).
+>I rapporti Content Insights richiedono che l’amministratore abbia integrato AEM con SiteCatalyst, Target e BrightEdge. Consulta [Integrazione con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrazione con Adobe Target](/help/sites-administering/target.md) e [Integrazione con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Il rapporto Visualizzazioni {#the-views-report}
 
@@ -90,7 +90,7 @@ Il rapporto Rimbalzi include un grafico che mostra il numero di mancati recapiti
 
 ## Rapporto sull’attività della campagna {#the-campaign-activity-report}
 
-Per ogni campagna per la quale è attiva la pagina, viene visualizzato un rapporto denominato *Nome campagna* Attività. Il rapporto mostra le impression e le conversioni di pagina per ciascun segmento per il quale viene fornita un’offerta.
+Per ogni campagna per la quale è attiva la pagina, viene visualizzato un report denominato *Attività nome campagna*. Il rapporto mostra le impression e le conversioni di pagina per ciascun segmento per il quale viene fornita un’offerta.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
@@ -98,6 +98,6 @@ Per ogni campagna per la quale è attiva la pagina, viene visualizzato un rappor
 
 Il rapporto SEO Recommendations contiene i risultati dell’analisi BrightEdge per la pagina. Il rapporto è un elenco di controllo delle funzioni di pagina che indica quali funzioni la pagina include o meno per massimizzare la reperibilità utilizzando i motori di ricerca.
 
-Il rapporto consente di creare attività in modo da migliorare la reperibilità delle pagine. Recommendations indica che sono state create attività per l’implementazione del consiglio. Consulta [Assegnazione di attività per SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+Il rapporto consente di creare attività in modo da migliorare la reperibilità delle pagine. Recommendations indica che sono state create attività per l’implementazione del consiglio. Vedere [Assegnazione di attività per SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

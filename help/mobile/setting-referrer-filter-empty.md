@@ -26,6 +26,6 @@ Per consentire al visualizzatore di applicazioni per dispositivi mobili Adobe Ex
 
 Se non si intende utilizzare il Visualizzatore applicazioni per esaminare le applicazioni all&#39;interno degli stati di sviluppo e di gestione temporanea, non è necessario modificare l&#39;impostazione predefinita del filtro referente.
 
-Nell’istanza di authoring in esecuzione dell’AEM, accedi a: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) e cerca &quot;Apache Sling Referrer Filter&quot;. Fai clic su per modificare il filtro del referente e seleziona la casella di controllo &quot;Consenti vuoto&quot; (vedi immagine seguente). Quindi premi il pulsante Salva e chiudi la pagina del browser.
+Nell&#39;istanza di authoring in esecuzione di AEM, passa a: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) e cerca &quot;Filtro referrer Apache Sling&quot;. Fai clic su per modificare il filtro del referente e seleziona la casella di controllo &quot;Consenti vuoto&quot; (vedi immagine seguente). Quindi premi il pulsante Salva e chiudi la pagina del browser.
 
 ![Impostazioni filtro referrer](assets/chlimage_1-106.png)

@@ -25,32 +25,32 @@ AEM Forms consente di modificare il titolo di una cartella. Il titolo non corris
 
 Puoi creare una cartella in AEM Forms in uno dei seguenti modi:
 
-* Carica un file ZIP contenente le risorse nella struttura di cartelle desiderata (vedi, [Recupero documenti XDP e PDF in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
+* Caricare un file ZIP contenente risorse nella struttura di cartelle desiderata (vedere [Recupero di documenti XDP e PDF in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
 * Crea una cartella vuota
 
-1. Accedi all’interfaccia utente di AEM Forms all’indirizzo `https://<server>:<port>/aem/forms.html`.
+1. Accedere all&#39;interfaccia utente di AEM Forms all&#39;indirizzo `https://<server>:<port>/aem/forms.html`.
 1. Passare alla posizione in cui si desidera creare una cartella.
-1. Fai clic su ![aem6forms_add](assets/aem6forms_add.png) nella barra degli strumenti, quindi seleziona **[!UICONTROL Crea cartella]**.
+1. Fai clic sull&#39;icona ![aem6forms_add](assets/aem6forms_add.png) nella barra degli strumenti, quindi seleziona **[!UICONTROL Crea cartella]**.
 
 1. Immetti i seguenti dettagli:
 
    * **Titolo:** Nome visualizzato per la cartella
-   * **Nome:** *(Obbligatorio)* Nome del nodo in cui si desidera archiviare la cartella nell&#39;archivio
+   * **Nome:** *(obbligatorio)* Nome del nodo in cui si desidera archiviare la cartella nel repository
 
    >[!NOTE]
    >
    >Per impostazione predefinita, il valore del campo nome viene compilato automaticamente dal titolo. Il nome può contenere solo caratteri alfanumerici o trattini (-) e trattini bassi (_) caratteri speciali. Tutti gli altri caratteri speciali immessi nel titolo vengono automaticamente sostituiti da un trattino e viene richiesto di confermare il nuovo nome. Puoi scegliere di continuare con il nome suggerito o modificarlo ulteriormente.
 
-1. Clic **[!UICONTROL Invia].**
+1. Fai clic su **[!UICONTROL Invia].**
 
    Nell’elenco delle risorse, nella posizione corrente viene visualizzata una nuova cartella con il titolo definito.
 
-   Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sopra l’errore ![aem6forms_error_alert](assets/aem6forms_error_alert.png) accanto al campo del nome.
+   Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sull&#39;icona di errore ![aem6forms_error_alert](assets/aem6forms_error_alert.png) visualizzata accanto al campo del nome.
 
 ### Modifica il titolo della cartella {#edit-the-folder-title-br}
 
 1. Seleziona la cartella di cui desideri modificare il titolo.
-1. Fai clic sul pulsante Modifica ![aem6forms_edit](assets/aem6forms_edit.png) nella barra degli strumenti.
+1. Fai clic sull&#39;icona Modifica ![aem6forms_edit](assets/aem6forms_edit.png) nella barra degli strumenti.
 1. Inserisci il nuovo titolo. Nel campo di testo viene inserito automaticamente il valore corrente del titolo della cartella. È possibile modificarlo in un nuovo valore.
-1. Clic **[!UICONTROL Invia].**
+1. Fai clic su **[!UICONTROL Invia].**

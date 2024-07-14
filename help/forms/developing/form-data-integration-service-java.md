@@ -28,11 +28,11 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva alla programmazione con i moduli AEM si basa sul server Forms distribuito sul server applicazioni JBoss e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva alla programmazione con i moduli AEM si basa sul server Forms distribuito sul server applicazioni JBoss e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (modalità SOAP): importazione di dati dai moduli tramite API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito i dati vengono importati in un modulo PDF. I dati si trovano in un file XML denominato *Loan_data.xml* e il modulo PDF viene salvato come file PDF denominato *ResultLoanForm.pdf*. (vedere [Importazione dati modulo](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+Esempio Nell&#39;esempio di codice Java riportato di seguito i dati vengono importati in un modulo PDF. I dati si trovano in un file XML denominato *Loan_data.xml* e il modulo PDF viene salvato come file PDF denominato *ResultLoanForm.pdf*. (Vedi [Importazione dei dati del modulo](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```java
  /*
@@ -134,7 +134,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito i dati vengono impo
 
 ## Quick Start (modalità SOAP): esportazione di dati modulo tramite API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito i dati vengono esportati da un modulo PDF. I dati del modulo vengono salvati come file XML denominato *Loan_data.xml*. (vedere [Esportazione dati modulo](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+Esempio Nell&#39;esempio di codice Java riportato di seguito i dati vengono esportati da un modulo PDF. I dati del modulo vengono salvati come file XML denominato *Loan_data.xml*. (Vedi [Esportazione dei dati del modulo](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*

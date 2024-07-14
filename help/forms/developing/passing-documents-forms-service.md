@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Trasmissione di documenti al servizio Forms {#passing-documents-to-the-formsservice}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Il servizio AEM Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere i browser web, per raccogliere informazioni dagli utenti. Un modulo di PDF interattivo si basa su una struttura di modulo che in genere viene salvata come file XDP e creata in Designer. A partire da AEM Forms, puoi trasmettere un `com.adobe.idp.Document` oggetto che contiene la struttura del modulo per il servizio Forms. Il servizio Forms esegue quindi il rendering della progettazione del modulo in `com.adobe.idp.Document` oggetto.
+Il servizio AEM Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere i browser web, per raccogliere informazioni dagli utenti. Un modulo di PDF interattivo si basa su una struttura di modulo che in genere viene salvata come file XDP e creata in Designer. In AEM Forms, è possibile passare un oggetto `com.adobe.idp.Document` che contiene la struttura del modulo al servizio Forms. Il servizio Forms esegue quindi il rendering della struttura del modulo nell&#39;oggetto `com.adobe.idp.Document`.
 
-Il vantaggio di superare un `com.adobe.idp.Document` al servizio Forms è che altre operazioni del servizio restituiscono un `com.adobe.idp.Document` dell&#39;istanza. In altre parole, puoi ottenere un `com.adobe.idp.Document` da un&#39;altra operazione di servizio ed eseguirne il rendering. Ad esempio, si supponga che un file XDP sia memorizzato in un nodo Content Services (obsoleto) denominato `/Company Home/Form Designs`, come illustrato nella figura seguente.
+Un vantaggio del passaggio di un oggetto `com.adobe.idp.Document` al servizio Forms è che altre operazioni del servizio restituiscono un&#39;istanza `com.adobe.idp.Document`. In altre parole, è possibile ottenere un&#39;istanza `com.adobe.idp.Document` da un&#39;altra operazione di servizio ed eseguirne il rendering. Si supponga, ad esempio, che un file XDP sia memorizzato in un nodo Content Services (obsoleto) denominato `/Company Home/Form Designs`, come illustrato nella figura seguente.
 
-Puoi recuperare in modo programmatico Loan.xdp da Content Services (obsoleto) (obsoleto) e passare il file XDP al servizio Forms all’interno di un `com.adobe.idp.Document` oggetto.
+È possibile recuperare in modo programmatico Loan.xdp da Content Services (obsoleto) (obsoleto) e passare il file XDP al servizio Forms in un oggetto `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
@@ -45,23 +45,23 @@ Per passare un documento ottenuto da Content Services (obsoleto) (obsoleto) al s
 
 Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicazione client utilizzando Java, includi i file JAR necessari. Se si utilizzano servizi Web, includere i file proxy.
 
-**Creare un oggetto Forms e un oggetto API client di Document Management**
+**Creare un oggetto API client di gestione documenti e Forms**
 
 Prima di poter eseguire un&#39;operazione API del servizio Forms a livello di programmazione, creare un oggetto API del client Forms. Inoltre, poiché questo flusso di lavoro recupera un file XDP da Content Services (obsoleto), crea un oggetto API di gestione dei documenti.
 
-**Recuperare la progettazione del modulo da Content Services (obsoleto)**
+**Recupera la progettazione del modulo da Content Services (obsoleto)**
 
-Recupera il file XDP da Content Services (obsoleto) utilizzando l’API Java o del servizio web. Il file XDP viene restituito all’interno di un `com.adobe.idp.Document` istanza (o un `BLOB` se si utilizzano i servizi web). È quindi possibile trasmettere `com.adobe.idp.Document` al servizio Forms.
+Recupera il file XDP da Content Services (obsoleto) utilizzando l’API Java o del servizio web. Il file XDP viene restituito all&#39;interno di un&#39;istanza `com.adobe.idp.Document` (o di un&#39;istanza `BLOB` se si utilizzano i servizi Web). È quindi possibile passare l&#39;istanza `com.adobe.idp.Document` al servizio Forms.
 
-**Rendering di un modulo PDF interattivo**
+**Eseguire il rendering di un modulo PDF interattivo**
 
-Per riprodurre un modulo interattivo, trasmettere `com.adobe.idp.Document` istanza restituita da Content Services (obsoleta) al servizio Forms.
+Per eseguire il rendering di un modulo interattivo, passare l&#39;istanza `com.adobe.idp.Document` restituita da Content Services (obsoleta) al servizio Forms.
 
 >[!NOTE]
 >
->È possibile passare un `com.adobe.idp.Document` che contiene la struttura del modulo per il servizio Forms. Due nuovi metodi: `renderPDFForm2` e `renderHTMLForm2` accetta un `com.adobe.idp.Document` oggetto che contiene una struttura di modulo.
+>È possibile passare un `com.adobe.idp.Document` che contiene la struttura del modulo al servizio Forms. Due nuovi metodi denominati `renderPDFForm2` e `renderHTMLForm2` accettano un oggetto `com.adobe.idp.Document` che contiene una struttura di modulo.
 
-**Eseguire un&#39;azione con il flusso di dati del modulo**
+**Esegui un&#39;azione con il flusso di dati del modulo**
 
 A seconda del tipo di applicazione client, è possibile scrivere il modulo in un browser Web client o salvarlo come file PDF. In genere, un&#39;applicazione basata sul Web scrive il modulo nel browser Web. Tuttavia, un&#39;applicazione desktop in genere salva il modulo come file PDF.
 
@@ -83,41 +83,41 @@ Passa un documento ottenuto da Content Services (obsoleto) utilizzando il serviz
 
 1. Creare un oggetto Forms e un oggetto API client di Document Management
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione. (vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Creare un `FormsServiceClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
-   * Creare un `DocumentManagementServiceClientImpl` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione. (Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
+   * Creare un oggetto `DocumentManagementServiceClientImpl` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare la progettazione del modulo da Content Services (obsoleto)
 
-   Richiama `DocumentManagementServiceClientImpl` dell&#39;oggetto `retrieveContent` e trasmettere i seguenti valori:
+   Richiama il metodo `retrieveContent` dell&#39;oggetto `DocumentManagementServiceClientImpl` e passa i seguenti valori:
 
-   * Valore stringa che specifica l&#39;archivio in cui viene aggiunto il contenuto. L’archivio predefinito è `SpacesStore`. Questo valore è un parametro obbligatorio.
-   * Valore stringa che specifica il percorso completo del contenuto da recuperare (ad esempio, `/Company Home/Form Designs/Loan.xdp`). Questo valore è un parametro obbligatorio.
+   * Valore stringa che specifica l&#39;archivio in cui viene aggiunto il contenuto. L&#39;archivio predefinito è `SpacesStore`. Questo valore è un parametro obbligatorio.
+   * Valore stringa che specifica il percorso completo del contenuto da recuperare, ad esempio `/Company Home/Form Designs/Loan.xdp`. Questo valore è un parametro obbligatorio.
    * Valore stringa che specifica la versione. Questo valore è un parametro facoltativo e puoi trasmettere una stringa vuota. In questa situazione, viene recuperata la versione più recente.
 
-   Il `retrieveContent` il metodo restituisce un `CRCResult` oggetto che contiene il file XDP. Ottenere un `com.adobe.idp.Document` richiamando il `CRCResult` dell&#39;oggetto `getDocument` metodo.
+   Il metodo `retrieveContent` restituisce un oggetto `CRCResult` che contiene il file XDP. Ottenere un&#39;istanza `com.adobe.idp.Document` richiamando il metodo `getDocument` dell&#39;oggetto `CRCResult`.
 
 1. Rendering di un modulo PDF interattivo
 
-   Richiama `FormsServiceClient` dell&#39;oggetto `renderPDFForm2` e trasmettere i seguenti valori:
+   Richiama il metodo `renderPDFForm2` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-   * A `com.adobe.idp.Document` oggetto che contiene la struttura del modulo recuperata da Content Services (obsoleto).
-   * A `com.adobe.idp.Document` oggetto contenente dati da unire con il modulo. Se non desideri unire i dati, passa un campo vuoto `com.adobe.idp.Document` oggetto.
-   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera specificare le opzioni di runtime.
-   * A `URLSpec` oggetto che contiene valori URI. Questo valore è un parametro facoltativo ed è possibile specificare `null`.
-   * A `java.util.HashMap` oggetto che memorizza gli allegati. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Oggetto `com.adobe.idp.Document` contenente la struttura del modulo recuperato da Content Services (obsoleto).
+   * Oggetto `com.adobe.idp.Document` contenente dati da unire al modulo. Se non si desidera unire i dati, passare un oggetto `com.adobe.idp.Document` vuoto.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera specificare le opzioni di runtime.
+   * Oggetto `URLSpec` contenente valori URI. Questo valore è un parametro facoltativo ed è possibile specificare `null`.
+   * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
 
-   Il `renderPDFForm` il metodo restituisce un `FormsResult` oggetto contenente un flusso di dati modulo che deve essere scritto nel browser web client.
+   Il metodo `renderPDFForm` restituisce un oggetto `FormsResult` che contiene un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
 1. Eseguire un&#39;azione con il flusso di dati del modulo
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
-   * Ottieni il tipo di contenuto del `com.adobe.idp.Document` oggetto richiamando il relativo `getContentType` metodo.
-   * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `com.adobe.idp.Document` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.
-   * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` dell&#39;oggetto `getInputStream` metodo.
-   * Creare una matrice di byte e popolarla con il flusso di dati del modulo richiamando `InputStream` dell&#39;oggetto `read` metodo. Passa la matrice di byte come argomento.
-   * Richiama `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.
+   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document` richiamando il relativo metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamando il relativo metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il metodo `getOutputStream` dell&#39;oggetto `javax.servlet.http.HttpServletResponse`.
+   * Creare un oggetto `java.io.InputStream` richiamando il metodo `getInputStream` dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare una matrice di byte e popolarla con il flusso di dati del modulo richiamando il metodo `read` dell&#39;oggetto `InputStream`. Passa la matrice di byte come argomento.
+   * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.ServletOutputStream` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
 **Consulta anche**
 
@@ -133,68 +133,68 @@ Passa un documento ottenuto da Content Services (obsoleto) utilizzando il serviz
 
 1. Includi file di progetto
 
-   Creare un progetto Microsoft .NET che utilizza MTOM. Poiché questa applicazione client richiama due servizi AEM Forms, creare due riferimenti al servizio. Utilizza la seguente definizione WSDL per il riferimento al servizio associato al servizio Forms: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
+   Creare un progetto Microsoft .NET che utilizza MTOM. Poiché questa applicazione client richiama due servizi AEM Forms, creare due riferimenti al servizio. Utilizzare la seguente definizione WSDL per il riferimento al servizio associato al servizio Forms: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
    Utilizzare la seguente definizione WSDL per il riferimento al servizio associato al servizio Document Management: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Perché il `BLOB` il tipo di dati è comune a entrambi i riferimenti di servizio, qualifica completa `BLOB` tipo di dati quando lo si utilizza. Nel servizio Web corrispondente, tutte le `BLOB` le istanze sono completamente qualificate.
+   Poiché il tipo di dati `BLOB` è comune a entrambi i riferimenti al servizio, il tipo di dati `BLOB` viene completamente qualificato quando viene utilizzato. Nel servizio Web corrispondente, avvio rapido, tutte le `BLOB` istanze sono completamente qualificate.
 
    >[!NOTE]
    >
-   >Sostituisci `localhost`con l’indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
 1. Creare un oggetto Forms e un oggetto API client di Document Management
 
-   * Creare un `FormsServiceClient` utilizzando il costruttore predefinito.
-   * Creare un `FormsServiceClient.Endpoint.Address` oggetto utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il file WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/FormsService?WSDL`). Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
-   * Creare un `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto ottenendo il valore del `FormsServiceClient.Endpoint.Binding` campo. Invia il valore restituito a `BasicHttpBinding`.
-   * Imposta il `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore predefinito.
+   * Creare un oggetto `FormsServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/FormsService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `FormsServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna al campo il nome utente dei moduli AEM `FormsServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegna il valore password corrispondente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Assegnare il nome utente dei moduli AEM al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il valore della password corrispondente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
+      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
    >
-   >Ripeti questi passaggi per `DocumentManagementServiceClient`client del servizio.
+   >Ripetere questi passaggi per il client del servizio `DocumentManagementServiceClient`.
 
 1. Recuperare la progettazione del modulo da Content Services (obsoleto)
 
-   Recupera il contenuto richiamando `DocumentManagementServiceClient` dell&#39;oggetto `retrieveContent` e fornendo i seguenti valori:
+   Recuperare il contenuto richiamando il metodo `retrieveContent` dell&#39;oggetto `DocumentManagementServiceClient` e passando i valori seguenti:
 
-   * Valore stringa che specifica l&#39;archivio in cui viene aggiunto il contenuto. L’archivio predefinito è `SpacesStore`. Questo valore è un parametro obbligatorio.
-   * Valore stringa che specifica il percorso completo del contenuto da recuperare (ad esempio, `/Company Home/Form Designs/Loan.xdp`). Questo valore è un parametro obbligatorio.
+   * Valore stringa che specifica l&#39;archivio in cui viene aggiunto il contenuto. L&#39;archivio predefinito è `SpacesStore`. Questo valore è un parametro obbligatorio.
+   * Valore stringa che specifica il percorso completo del contenuto da recuperare, ad esempio `/Company Home/Form Designs/Loan.xdp`. Questo valore è un parametro obbligatorio.
    * Valore stringa che specifica la versione. Questo valore è un parametro facoltativo e puoi trasmettere una stringa vuota. In questa situazione, viene recuperata la versione più recente.
    * Parametro di output stringa che memorizza il valore del collegamento Sfoglia.
-   * A `BLOB` parametro di output che memorizza il contenuto. Puoi utilizzare questo parametro di output per recuperare il contenuto.
-   * A `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` parametro di output che memorizza gli attributi del contenuto.
-   * A `CRCResult` parametro di output. Invece di utilizzare questo oggetto, puoi utilizzare `BLOB` parametro di output per ottenere il contenuto.
+   * Un parametro di output `BLOB` che memorizza il contenuto. Puoi utilizzare questo parametro di output per recuperare il contenuto.
+   * Un parametro di output `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` che memorizza gli attributi del contenuto.
+   * Un parametro di output `CRCResult`. Anziché utilizzare questo oggetto, è possibile utilizzare il parametro di output `BLOB` per ottenere il contenuto.
 
 1. Rendering di un modulo PDF interattivo
 
-   Richiama `FormsServiceClient` dell&#39;oggetto `renderPDFForm2` e trasmettere i seguenti valori:
+   Richiama il metodo `renderPDFForm2` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-   * A `BLOB` oggetto che contiene la struttura del modulo recuperata da Content Services (obsoleto).
-   * A `BLOB` oggetto contenente dati da unire con il modulo. Se non desideri unire i dati, passa un campo vuoto `BLOB` oggetto.
-   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera specificare le opzioni di runtime.
-   * A `URLSpec` oggetto che contiene valori URI. Questo valore è un parametro facoltativo ed è possibile specificare `null`.
-   * A `Map` oggetto che memorizza gli allegati. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Oggetto `BLOB` contenente la struttura del modulo recuperato da Content Services (obsoleto).
+   * Oggetto `BLOB` contenente dati da unire al modulo. Se non si desidera unire i dati, passare un oggetto `BLOB` vuoto.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera specificare le opzioni di runtime.
+   * Oggetto `URLSpec` contenente valori URI. Questo valore è un parametro facoltativo ed è possibile specificare `null`.
+   * Oggetto `Map` che memorizza gli allegati. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
    * Un parametro di output lungo utilizzato per memorizzare il conteggio delle pagine.
    * Parametro di output stringa utilizzato per memorizzare il valore delle impostazioni locali.
-   * A `FormsResult` parametro di output utilizzato per memorizzare il modulo di interactrive PDF `.`
+   * Un parametro di output `FormsResult` utilizzato per memorizzare il modulo di interactrive PDF `.`
 
-   Il `renderPDFForm2` il metodo restituisce un `FormsResult` oggetto che contiene il modulo PDF interattivo.
+   Il metodo `renderPDFForm2` restituisce un oggetto `FormsResult` che contiene il modulo PDF interattivo.
 
 1. Eseguire un&#39;azione con il flusso di dati del modulo
 
-   * Creare un `BLOB` oggetto che contiene i dati del modulo ottenendo il valore di `FormsResult` dell&#39;oggetto `outputContent` campo.
-   * Creare un `System.IO.FileStream` richiamando il relativo costruttore. Passa un valore stringa che rappresenta la posizione del file del documento interattivo di PDF e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto della `BLOB` oggetto recuperato da `FormsResult` oggetto. Popolare la matrice di byte ottenendo il valore della `BLOB` dell&#39;oggetto `MTOM` membro dati.
-   * Creare un `System.IO.BinaryWriter` oggetto richiamando il relativo costruttore e passando il `System.IO.FileStream` oggetto.
-   * Scrivere il contenuto della matrice di byte in un file PDF richiamando `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Creare un oggetto `BLOB` contenente dati del modulo ottenendo il valore del campo `outputContent` dell&#39;oggetto `FormsResult`.
+   * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore. Passa un valore stringa che rappresenta la posizione del file del documento interattivo di PDF e la modalità di apertura del file.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` recuperato dall&#39;oggetto `FormsResult`. Popolare la matrice di byte ottenendo il valore del membro dati `MTOM` dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
+   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Consulta anche**
 

@@ -20,15 +20,15 @@ ht-degree: 4%
 
 # Introduzione alla piattaforma AEM{#introduction-to-the-aem-platform}
 
-La piattaforma dell&#39;AEM nell&#39;AEM 6 è basata su Apache Jackrabbit Oak.
+La piattaforma AEM nell’AEM 6 si basa su Apache Jackrabbit Oak.
 
 Apache Jackrabbit Oak si impegna a implementare un archivio di contenuti gerarchici scalabile e performante da utilizzare come base per siti web moderni e altre applicazioni di contenuti impegnative.
 
-È il successore di Jackrabbit 2 ed è utilizzato da AEM 6 come backend predefinito per il suo archivio di contenuti, CRX.
+È il successore di Jackrabbit 2 ed è utilizzato da AEM 6 come back-end predefinito per il suo archivio di contenuti, CRX.
 
 ## Principi e obiettivi di progettazione {#design-principles-and-goals}
 
-Oak implementa il [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) specifiche I suoi principali obiettivi sono:
+Oak implementa le specifiche [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0). I suoi principali obiettivi sono:
 
 * Supporto migliore per archivi di grandi dimensioni
 * Più nodi cluster distribuiti per un&#39;elevata disponibilità
@@ -49,26 +49,26 @@ Lo scopo del livello di storage è:
 
 ### Oak Core {#oak-core}
 
-Il core Oak aggiunge diversi livelli al livello di storage:
+Oak Core aggiunge diversi livelli al livello di storage:
 
 * Controlli del livello di accesso
 * Ricerca e indicizzazione
 * Osservazione
 
-### Oak JCR {#oak-jcr}
+### OAK JCR {#oak-jcr}
 
-L’obiettivo principale del JCR Oak è trasformare la semantica JCR in operazioni sugli alberi. È inoltre responsabile di:
+L’obiettivo principale di Oak JCR è trasformare la semantica JCR in operazioni ad albero. È inoltre responsabile di:
 
 * Implementazione dell’API JCR
 * Contenente hook di commit che implementano vincoli JCR
 
-Inoltre, le implementazioni non Java sono ora possibili e fanno parte del concetto Oak JCR.
+Inoltre, le implementazioni non Java sono ora possibili e fanno parte del concetto JCR di Oak.
 
 ## Panoramica sull’archiviazione {#storage-overview}
 
 Il livello di archiviazione Oak fornisce un livello di astrazione per l’archiviazione effettiva del contenuto.
 
-Attualmente, nell’AEM6 sono disponibili due implementazioni di storage: **Archiviazione Tar** e **Archiviazione MongoDB**.
+Attualmente, in AEM6 sono disponibili due implementazioni di archiviazione: **Archiviazione Tar** e **Archiviazione MongoDB**.
 
 ### Archiviazione Tar {#tar-storage}
 
@@ -122,11 +122,11 @@ Una tipica configurazione cluster AEM con archiviazione MongoDB:
 
 ## Quali sono le differenze rispetto a Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Poiché Oak è compatibile con le versioni precedenti dello standard JCR 1.0, non vi sono quasi modifiche a livello di utente. Tuttavia, ci sono alcune differenze notevoli di cui devi tenere conto durante la configurazione di un’installazione AEM basata su Oak:
+Poiché Oak è compatibile con le versioni precedenti dello standard JCR 1.0, non vi sono quasi modifiche a livello di utente. Tuttavia, quando si imposta un’installazione AEM basata su Oak è necessario tenere conto di alcune differenze rilevanti:
 
 * Oak non crea gli indici automaticamente. Di conseguenza, se necessario, è necessario creare indici personalizzati.
-* A differenza di Jackrabbit 2, in cui le sessioni riflettono sempre lo stato più recente dell’archivio, con Oak una sessione riflette una visualizzazione stabile dell’archivio dal momento in cui è stata acquisita. Il motivo è dovuto al modello MVCC su cui è basato Oak.
-* Oak non supporta elementi di pari livello con lo stesso nome (SNS).
+* A differenza di Jackrabbit 2, in cui le sessioni riflettono sempre lo stato più recente dell’archivio, con Oak una sessione riflette una visualizzazione stabile dell’archivio dal momento in cui è stata acquisita. Il motivo è dovuto al modello MVCC su cui si basa Oak.
+* Gli elementi di pari livello con lo stesso nome (SNS) non sono supportati in Oak.
 
 ## Altra documentazione correlata alla piattaforma {#other-platform-related-documentation}
 

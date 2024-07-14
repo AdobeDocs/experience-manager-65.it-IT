@@ -41,11 +41,11 @@ We.Retail è stato creato con una struttura del sito globalizzata che offre un m
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 
-1. Con il master lingua inglese selezionato, apri il **Riferimenti** nella console sites e seleziona **Copie per lingua**.
+1. Con il master in lingua inglese selezionato, apri la barra **Riferimenti** nella console Sites e seleziona **Copie per lingua**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Seleziona la casella di controllo accanto a **Copie per lingua** per selezionare tutte le copie per lingua. In **Aggiorna copie per lingua** nella barra, seleziona l’opzione per **Crea un nuovo progetto di traduzione**. Assegna un nome al progetto e fai clic su **Aggiorna**.
+1. Seleziona tutte le copie per lingua selezionando la casella di controllo accanto all&#39;etichetta **Copie per lingua**. Nella sezione **Aggiorna copie per lingua** della barra, seleziona l&#39;opzione per **Creare un nuovo progetto di traduzione**. Specifica un nome per il progetto e fai clic su **Aggiorna**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -53,22 +53,22 @@ We.Retail è stato creato con una struttura del sito globalizzata che offre un m
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Fai clic su Tedesco per visualizzare i dettagli del progetto di traduzione. Lo stato è in **Bozza**. Per avviare la traduzione con il servizio di traduzione di Microsoft®, fai clic sulla freccia accanto al **Lavoro di traduzione** intestazione e selezione **Inizio**.
+1. Fai clic su Tedesco per visualizzare i dettagli del progetto di traduzione. Stato in **Bozza**. Per avviare la traduzione con il servizio di traduzione di Microsoft®, fai clic sulla freccia accanto all&#39;intestazione **Processo di traduzione** e seleziona **Inizio**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Il progetto di traduzione inizia. Fai clic sull’ellissi nella parte inferiore della scheda etichettata Lavoro di traduzione per visualizzare i dettagli. Pagine con lo stato **Pronto per la revisione** sono già stati tradotti dal servizio di traduzione.
+1. Il progetto di traduzione inizia. Fai clic sull’ellissi nella parte inferiore della scheda etichettata Lavoro di traduzione per visualizzare i dettagli. Le pagine con lo stato **Pronto per la revisione** sono già state tradotte dal servizio di traduzione.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. Seleziona una delle pagine dell’elenco e quindi **Anteprima in Sites** nella barra degli strumenti apre la pagina tradotta nell’editor pagina.
+1. Selezionando una delle pagine dell&#39;elenco e quindi **Anteprima in Sites** nella barra degli strumenti, la pagina tradotta verrà aperta nell&#39;editor di pagine.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
 >[!NOTE]
 >
->Questa procedura ha dimostrato l&#39;integrazione integrata con la traduzione automatica Microsoft®. Utilizzo di [Framework di integrazione della traduzione AEM](/help/sites-administering/translation.md), puoi integrarti con molti servizi di traduzione standard per orchestrare la traduzione dell’AEM.
+>Questa procedura ha dimostrato l&#39;integrazione integrata con la traduzione automatica Microsoft®. Utilizzando il [framework di integrazione della traduzione AEM](/help/sites-administering/translation.md), puoi integrarti con molti servizi di traduzione standard per orchestrare la traduzione dell&#39;AEM.
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni, consulta il documento di authoring [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md) per dettagli tecnici completi.
+Per ulteriori informazioni, vedere il documento di authoring [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md) per i dettagli tecnici completi.

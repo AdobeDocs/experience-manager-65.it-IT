@@ -20,11 +20,11 @@ ht-degree: 2%
 
 L’assegnazione tag consente di categorizzare e organizzare i contenuti. I tag possono essere classificati in base a uno spazio dei nomi e a una tassonomia.
 
-* Consulta [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
-* Consulta [Utilizzo dei tag](/help/sites-authoring/tags.md) per informazioni sull’assegnazione tag al contenuto.
+* Per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati, vedere [Amministrazione dei tag](/help/sites-administering/tags.md).
+* Per informazioni sull&#39;assegnazione dei tag, vedere [Utilizzo dei tag](/help/sites-authoring/tags.md).
 
 Le seguenti informazioni sono disponibili per gli sviluppatori:
 
-* [Framework di assegnazione tag AEM](/help/sites-developing/framework.md) - Descrizione dei nodi e delle proprietà utilizzati per l&#39;assegnazione di tag
+* [Framework di assegnazione tag AEM](/help/sites-developing/framework.md): descrizione dei nodi e delle proprietà utilizzati per l&#39;assegnazione tag
 
-* [Creazione di tag in un’applicazione AEM](/help/sites-developing/building.md) - Descrizione delle API che funzionano con il framework di assegnazione tag dal lato client e dal codice lato server
+* [Creazione di tag in un&#39;applicazione AEM](/help/sites-developing/building.md): descrizione delle API che funzionano con il framework di tag dal codice lato client e lato server

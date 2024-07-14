@@ -1,6 +1,6 @@
 ---
 title: Internazionalizzazione delle stringhe dell’interfaccia utente
-description: Java&trade; e API JavaScript consentono di internazionalizzare le stringhe
+description: Java&trade; e le API di JavaScript consentono di internazionalizzare le stringhe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -22,14 +22,14 @@ Le API Java™ e JavaScript consentono di internazionalizzare le stringhe nei se
 
 * File Java™ di origine.
 * Script JSP.
-* JavaScript nelle librerie lato client o nella sorgente pagina.
+* JavaScript nelle librerie lato client o nel codice sorgente della pagina.
 * Valori delle proprietà del nodo JCR utilizzati nelle finestre di dialogo e nelle proprietà di configurazione dei componenti.
 
-Per una panoramica del processo di internazionalizzazione e localizzazione, consulta [Internazionalizzazione dei componenti](/help/sites-developing/i18n.md).
+Per una panoramica del processo di internazionalizzazione e localizzazione, vedere [Internazionalizzazione dei componenti](/help/sites-developing/i18n.md).
 
 ## Internazionalizzazione delle stringhe nel codice Java™ e JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-Il `com.day.cq.i18n` Il pacchetto Java™ consente di visualizzare stringhe localizzate nell’interfaccia utente. Il `I18n` la classe fornisce `get` metodo che recupera le stringhe localizzate dal dizionario Adobe Experience Manager (AEM). L’unico parametro richiesto di `get` Il metodo è il valore letterale stringa in lingua inglese. L’inglese è la lingua predefinita per l’interfaccia utente. Nell&#39;esempio seguente la parola viene localizzata `Search`:
+Il pacchetto Java™ `com.day.cq.i18n` consente di visualizzare stringhe localizzate nell&#39;interfaccia utente. La classe `I18n` fornisce il metodo `get` che recupera le stringhe localizzate dal dizionario Adobe Experience Manager (AEM). L&#39;unico parametro obbligatorio del metodo `get` è il valore letterale stringa in lingua inglese. L’inglese è la lingua predefinita per l’interfaccia utente. Nell&#39;esempio seguente viene localizzata la parola `Search`:
 
 `i18n.get("Search");`
 
@@ -51,7 +51,7 @@ La proprietà language dell’account utente è il metodo preferito perché è p
 
 La classe I18n fornisce due costruttori. Il modo in cui si determina la lingua preferita dell&#39;utente determina il costruttore da utilizzare.
 
-Per presentare la stringa nel linguaggio specificato nell&#39;account utente, utilizzare il costruttore seguente (dopo l&#39;importazione `com.day.cq.i18n.I18n)`:
+Per presentare la stringa nel linguaggio specificato nell&#39;account utente, utilizzare il costruttore seguente (dopo l&#39;importazione di `com.day.cq.i18n.I18n)`:
 
 ```java
 I18n i18n = new I18n(slingRequest);
@@ -69,11 +69,11 @@ I18n i18n = new I18n(resourceBundle);
 
 #### Internazionalizzazione di una stringa {#internationalizing-a-string}
 
-Utilizza il `get` metodo del `I18n` oggetto per internazionalizzare una stringa. L’unico parametro richiesto di `get` Il metodo è la stringa da internazionalizzare. La stringa corrisponde a una stringa in un dizionario Translator. Il metodo get cerca la stringa nel dizionario e restituisce la traduzione per la lingua corrente.
+Utilizzare il metodo `get` dell&#39;oggetto `I18n` per internazionalizzare una stringa. L&#39;unico parametro obbligatorio del metodo `get` è la stringa da internazionalizzare. La stringa corrisponde a una stringa in un dizionario Translator. Il metodo get cerca la stringa nel dizionario e restituisce la traduzione per la lingua corrente.
 
-Il primo argomento della `get` il metodo deve rispettare le seguenti regole:
+Il primo argomento del metodo `get` deve essere conforme alle regole seguenti:
 
-* Il valore deve essere un valore letterale stringa. Una variabile di tipo `String` non è accettabile.
+* Il valore deve essere un valore letterale stringa. Variabile di tipo `String` non accettabile.
 * Il valore letterale stringa deve essere espresso su una singola riga.
 * La stringa fa distinzione tra maiuscole e minuscole.
 
@@ -83,9 +83,9 @@ i18n.get("Enter a search keyword");
 
 #### Utilizzo dei suggerimenti di traduzione {#using-translation-hints}
 
-Specifica la [suggerimento traduzione](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) della stringa internazionalizzata per distinguere tra stringhe duplicate nel dizionario. Utilizza il secondo parametro facoltativo del `get` per fornire il suggerimento di traduzione. L&#39;hint di traduzione deve corrispondere esattamente alla proprietà Comment dell&#39;elemento nel dizionario.
+Specifica il [hint di traduzione](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) della stringa internazionalizzata per distinguere le stringhe duplicate nel dizionario. Utilizzare il secondo parametro facoltativo del metodo `get` per fornire il suggerimento di traduzione. L&#39;hint di traduzione deve corrispondere esattamente alla proprietà Comment dell&#39;elemento nel dizionario.
 
-Ad esempio, il dizionario contiene la stringa `Request` due volte: una come verbo e una come sostantivo. Il codice seguente include il suggerimento di traduzione come argomento nel `get` metodo:
+Ad esempio, il dizionario contiene la stringa `Request` due volte: una come verbo e una come sostantivo. Il codice seguente include l&#39;hint di traduzione come argomento nel metodo `get`:
 
 ```java
 i18n.get("Request","A noun, as in a request for a web page");
@@ -95,17 +95,17 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 Includi le variabili nella stringa localizzata per creare un significato contestuale in una frase. Ad esempio, dopo aver effettuato l&#39;accesso a un&#39;applicazione Web, nella home page viene visualizzato il messaggio &quot;Welcome back Administrator. Nella tua casella in entrata sono presenti due messaggi.&quot; Il contesto della pagina determina il nome utente e il numero di messaggi.
 
-[Nel dizionario](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), le variabili sono rappresentate in stringhe come indici tra parentesi. Specifica i valori delle variabili come argomenti della `get` metodo. Gli argomenti vengono inseriti dopo il suggerimento di traduzione e gli indici corrispondono all&#39;ordine degli argomenti:
+[Nel dizionario](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), le variabili sono rappresentate in stringhe come indici tra parentesi. Specificare i valori delle variabili come argomenti del metodo `get`. Gli argomenti vengono inseriti dopo il suggerimento di traduzione e gli indici corrispondono all&#39;ordine degli argomenti:
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
 ```
 
-La stringa internazionalizzata e l’hint di traduzione devono corrispondere esattamente alla stringa e al commento nel dizionario. È possibile omettere l’hint di localizzazione fornendo un `null` value come secondo argomento.
+La stringa internazionalizzata e l’hint di traduzione devono corrispondere esattamente alla stringa e al commento nel dizionario. È possibile omettere l&#39;hint di localizzazione specificando un valore `null` come secondo argomento.
 
 #### Utilizzo del metodo Get statico {#using-the-static-get-method}
 
-Il `I18N` classe definisce un valore statico `get` metodo utile quando è necessario localizzare alcune stringhe. Oltre ai parametri di un oggetto `get` metodo, il metodo statico richiede `SlingHttpRequest` oggetto o `ResourceBundle` che utilizzi, in base a come stai determinando la lingua preferita dell’utente:
+La classe `I18N` definisce un metodo `get` statico utile quando è necessario localizzare alcune stringhe. Oltre ai parametri del metodo `get` di un oggetto, il metodo statico richiede l&#39;oggetto `SlingHttpRequest` o `ResourceBundle` in uso, in base alla modalità di determinazione della lingua preferita dell&#39;utente:
 
 * Utilizza la preferenza della lingua dell’utente: specifica SlingHttpRequest come primo parametro.
 
@@ -116,17 +116,17 @@ Il `I18N` classe definisce un valore statico `get` metodo utile quando è necess
 
 ### Internazionalizzazione delle stringhe nel codice JavaScript {#internationalizing-strings-in-javascript-code}
 
-L’API JavaScript consente di localizzare le stringhe sul client. Come con [Java™ e JSP](#internationalizing-strings-in-java-and-jsp-code) JavaScript API consente di identificare le stringhe da localizzare, fornire suggerimenti di localizzazione e includere variabili nelle stringhe localizzate.
+L’API JavaScript consente di localizzare le stringhe sul client. Come per il codice [Java™ e JSP](#internationalizing-strings-in-java-and-jsp-code), l&#39;API JavaScript consente di identificare le stringhe da localizzare, fornire suggerimenti di localizzazione e includere le variabili nelle stringhe localizzate.
 
-Il `granite.utils` [cartella della libreria client](/help/sites-developing/clientlibs.md) fornisce l’API JavaScript. Per utilizzare l’API, includi nella pagina questa cartella della libreria client. Le funzioni di localizzazione utilizzano `Granite.I18n` spazio dei nomi.
+La `granite.utils` [cartella della libreria client](/help/sites-developing/clientlibs.md) fornisce l&#39;API JavaScript. Per utilizzare l’API, includi nella pagina questa cartella della libreria client. Le funzioni di localizzazione utilizzano lo spazio dei nomi `Granite.I18n`.
 
-Prima di presentare le stringhe localizzate, impostare la lingua utilizzando `Granite.I18n.setLocale` funzione. La funzione richiede come argomento il codice della lingua della lingua:
+Prima di presentare le stringhe localizzate, impostare le impostazioni locali utilizzando la funzione `Granite.I18n.setLocale`. La funzione richiede come argomento il codice della lingua della lingua:
 
 ```
 Granite.I18n.setLocale("fr");
 ```
 
-Per presentare una stringa localizzata, utilizza `Granite.I18n.get` funzione:
+Per presentare una stringa localizzata, utilizzare la funzione `Granite.I18n.get`:
 
 ```
 Granite.I18n.get("string to localize");
@@ -145,7 +145,7 @@ I parametri della funzione sono diversi dal metodo Java™ I18n.get:
 * Il secondo parametro è una matrice di valori da inserire nel valore letterale stringa.
 * Il terzo parametro è l&#39;hint di localizzazione.
 
-Nell&#39;esempio seguente viene utilizzato JavaScript per localizzare &quot;Welcome back Administrator&quot;. Nella tua casella in entrata sono presenti due messaggi.&quot; frase:
+Nell&#39;esempio seguente viene utilizzato JavaScript per localizzare il componente &quot;Welcome back Administrator&quot;. Nella tua casella in entrata sono presenti due messaggi.&quot; frase:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -154,9 +154,9 @@ Granite.I18n.get("Welcome back {0}. You have {1} new messages in your inbox.", [
 
 ### Internazionalizzazione delle stringhe dai nodi JCR {#internationalizing-strings-from-jcr-nodes}
 
-Le stringhe dell’interfaccia utente si basano spesso sulle proprietà del nodo JCR. Ad esempio, il `jcr:title` di una pagina viene in genere utilizzata come contenuto della proprietà `h1` nel codice della pagina. Il `I18n` la classe fornisce `getVar` metodo per localizzare queste stringhe.
+Le stringhe dell’interfaccia utente si basano spesso sulle proprietà del nodo JCR. Ad esempio, la proprietà `jcr:title` di una pagina viene in genere utilizzata come contenuto dell&#39;elemento `h1` nel codice della pagina. La classe `I18n` fornisce il metodo `getVar` per localizzare queste stringhe.
 
-L’esempio di script JSP seguente recupera `jcr:title` dal repository e visualizza la stringa localizzata sulla pagina:
+Lo script JSP di esempio seguente recupera la proprietà `jcr:title` dall&#39;archivio e visualizza la stringa localizzata sulla pagina:
 
 ```java
 <% title = properties.get("jcr:title", String.class);%>
@@ -165,11 +165,11 @@ L’esempio di script JSP seguente recupera `jcr:title` dal repository e visuali
 
 #### Specifica dei suggerimenti di traduzione per i nodi JCR {#specifying-translation-hints-for-jcr-nodes}
 
-Simile a [hint di traduzione nell’API Java™](#using-translation-hints), è possibile fornire suggerimenti di traduzione per distinguere le stringhe duplicate nel dizionario. Fornisci l’hint di traduzione come proprietà del nodo che contiene la proprietà internazionalizzata. Il nome della proprietà hint è composto dal nome della proprietà internazionalizzata con `_commentI18n` suffisso:
+Analogamente agli [hint di traduzione nell&#39;API Java™](#using-translation-hints), è possibile fornire hint di traduzione per distinguere le stringhe duplicate nel dizionario. Fornisci l’hint di traduzione come proprietà del nodo che contiene la proprietà internazionalizzata. Il nome della proprietà hint è composto dal nome della proprietà internazionalizzata con il suffisso `_commentI18n`:
 
 `${prop}_commentI18n`
 
-Ad esempio, un `cq:page` node include la proprietà jcr:title che viene localizzata. L’hint viene fornito come valore della proprietà denominata jcr:title_commentI18n.
+Ad esempio, un nodo `cq:page` include la proprietà jcr:title che viene localizzata. L’hint viene fornito come valore della proprietà denominata jcr:title_commentI18n.
 
 ### Verifica della copertura dell&#39;internazionalizzazione {#testing-internationalization-coverage}
 

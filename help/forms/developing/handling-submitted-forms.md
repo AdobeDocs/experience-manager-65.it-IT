@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Gestione dei Forms inviati {#handling-submitted-forms}
 
-**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 Le applicazioni basate sul Web che consentono a un utente di compilare moduli interattivi richiedono l&#39;invio dei dati al server. Tramite il servizio Forms è possibile recuperare i dati immessi dall&#39;utente in un modulo interattivo. Dopo aver recuperato i dati, è possibile elaborarli per soddisfare i requisiti aziendali. È ad esempio possibile memorizzare i dati in un database, inviarli a un&#39;altra applicazione, inviarli a un altro servizio, unire i dati in una struttura di modulo, visualizzarli in un browser Web e così via.
 
-I dati del modulo vengono inviati al servizio Forms come dati XML o PDF, opzione impostata in Designer. Un modulo inviato come XML consente di estrarre i singoli valori dei dati dei campi. In altre parole, è possibile estrarre il valore di ogni campo modulo immesso dall&#39;utente nel modulo. Un modulo inviato come dati PDF è costituito da dati binari e non da dati XML. È possibile salvare il modulo come file PDF o inviarlo a un altro servizio. Se si desidera estrarre dati da un modulo inviato come XML e quindi utilizzare i dati del modulo per creare un documento PDF, richiamare un&#39;altra operazione AEM Forms. (vedere [Creazione di documenti PDF con i dati XML inviati](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+I dati del modulo vengono inviati al servizio Forms come dati XML o PDF, opzione impostata in Designer. Un modulo inviato come XML consente di estrarre i singoli valori dei dati dei campi. In altre parole, è possibile estrarre il valore di ogni campo modulo immesso dall&#39;utente nel modulo. Un modulo inviato come dati PDF è costituito da dati binari e non da dati XML. È possibile salvare il modulo come file PDF o inviarlo a un altro servizio. Se si desidera estrarre dati da un modulo inviato come XML e quindi utilizzare i dati del modulo per creare un documento PDF, richiamare un&#39;altra operazione AEM Forms. (Vedi [Creazione di documenti PDF con dati XML inviati](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
-Il diagramma seguente mostra i dati inviati a un servlet Java denominato `HandleData` da un modulo interattivo visualizzato in un browser web.
+Il diagramma seguente mostra i dati inviati a un servlet Java denominato `HandleData` da un modulo interattivo visualizzato in un browser Web.
 
 ![hs_hs_handlesubmit](assets/hs_hs_handlesubmit.png)
 
@@ -45,11 +45,11 @@ Nella tabella seguente vengono illustrati i passaggi del diagramma.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>I dati vengono inviati al <code>HandleData</code> Java Servlet come dati XML.</p></td>
+   <td><p>I dati vengono inviati al servlet Java <code>HandleData</code> come dati XML.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>Il <code>HandleData</code> Java Servlet contiene la logica dell’applicazione per recuperare i dati.</p></td>
+   <td><p>Il servlet Java <code>HandleData</code> contiene la logica dell'applicazione per recuperare i dati.</p></td>
   </tr>
  </tbody>
 </table>
@@ -62,9 +62,10 @@ Quando i dati del modulo vengono inviati come XML, è possibile recuperare i dat
 
 Nella figura seguente vengono illustrati i dati XML corrispondenti recuperati mediante l&#39;API client del servizio Forms.
 
-![hs_hs_loandata](assets/hs_hs_loandata.png)
+![hs_loandata](assets/hs_hs_loandata.png)
 
-I campi nel modulo del prestito. Questi valori possono essere recuperati utilizzando le classi XML Java.
+I campi nel modulo del prestito. Questi valori possono essere recuperati
+utilizzo delle classi XML Java.
 
 >[!NOTE]
 >
@@ -107,11 +108,11 @@ Nella tabella seguente vengono descritti i passaggi del diagramma.
 
 ## Gestione dei dati URL UTF-16 inviati {#handling-submitted-url-utf-16-data}
 
-Se i dati del modulo vengono inviati come dati URL UTF-16, il computer client richiede Adobe Reader o Acrobat 8.1 o versione successiva. Inoltre, se la progettazione del modulo contiene un pulsante di invio con dati codificati in URL (HTTP Post) e l’opzione di codifica dei dati è UTF-16, la progettazione del modulo deve essere modificata in un editor di testo come Blocco note. È possibile impostare l&#39;opzione di codifica su `UTF-16LE` o `UTF-16BE` per il pulsante Invia. Designer non fornisce questa funzionalità.
+Se i dati del modulo vengono inviati come dati URL UTF-16, il computer client richiede Adobe Reader o Acrobat 8.1 o versione successiva. Inoltre, se la progettazione del modulo contiene un pulsante di invio con dati codificati in URL (HTTP Post) e l’opzione di codifica dei dati è UTF-16, la progettazione del modulo deve essere modificata in un editor di testo come Blocco note. È possibile impostare l&#39;opzione di codifica su `UTF-16LE` o `UTF-16BE` per il pulsante di invio. Designer non fornisce questa funzionalità.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
@@ -129,19 +130,19 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Forms**
 
-Prima di poter eseguire a livello di programmazione un&#39;operazione API client del servizio Forms, è necessario creare un client del servizio Forms. Se utilizzi l’API Java, crea un’ `FormsServiceClient` oggetto. Se utilizzi l’API del servizio web Forms, crea un’ `FormsService` oggetto.
+Prima di poter eseguire a livello di programmazione un&#39;operazione API client del servizio Forms, è necessario creare un client del servizio Forms. Se si utilizza l&#39;API Java, creare un oggetto `FormsServiceClient`. Se si utilizza l&#39;API del servizio Web Forms, creare un oggetto `FormsService`.
 
 **Recupera dati modulo**
 
-Per recuperare i dati del modulo inviati, è necessario richiamare `FormsServiceClient` dell&#39;oggetto `processFormSubmission` metodo. Quando si richiama questo metodo, è necessario specificare il tipo di contenuto del modulo inviato. Quando i dati vengono inviati da un browser Web client al servizio Forms, possono essere inviati come dati XML o PDF. Per recuperare i dati immessi nei campi modulo, è possibile inviare i dati come dati XML.
+Per recuperare i dati del modulo inviati, è necessario richiamare il metodo `processFormSubmission` dell&#39;oggetto `FormsServiceClient`. Quando si richiama questo metodo, è necessario specificare il tipo di contenuto del modulo inviato. Quando i dati vengono inviati da un browser Web client al servizio Forms, possono essere inviati come dati XML o PDF. Per recuperare i dati immessi nei campi modulo, è possibile inviare i dati come dati XML.
 
 È inoltre possibile recuperare i campi modulo da un modulo inviato come dati PDF impostando le seguenti opzioni di runtime:
 
-* Passa il seguente valore a `processFormSubmission` come parametro del tipo di contenuto: `CONTENT_TYPE=application/pdf`.
-* Imposta il `RenderOptionsSpec` dell&#39;oggetto `PDFToXDP` valore per `true`
-* Imposta il `RenderOptionsSpec` dell&#39;oggetto `ExportDataFormat` valore per `XMLData`
+* Passare il seguente valore al metodo `processFormSubmission` come parametro del tipo di contenuto: `CONTENT_TYPE=application/pdf`.
+* Imposta il valore `PDFToXDP` dell&#39;oggetto `RenderOptionsSpec` su `true`
+* Imposta il valore `ExportDataFormat` dell&#39;oggetto `RenderOptionsSpec` su `XMLData`
 
-È possibile specificare il tipo di contenuto del modulo inviato quando si richiama `processFormSubmission` metodo. L&#39;elenco seguente specifica i valori dei tipi di contenuto applicabili:
+Specificare il tipo di contenuto del modulo inviato quando si richiama il metodo `processFormSubmission`. L&#39;elenco seguente specifica i valori dei tipi di contenuto applicabili:
 
 * **text/xml**: rappresenta il tipo di contenuto da utilizzare quando un modulo di PDF invia i dati del modulo come XML.
 * **application/x-www-form-urlencoded**: rappresenta il tipo di contenuto da utilizzare quando un modulo HTML invia dati come XML.
@@ -155,17 +156,17 @@ Recuperi i dati del modulo pubblicati nel servizio Forms e ne determini lo stato
 
 Il servizio Forms restituisce i seguenti valori per indicare se ha completato l’elaborazione dei dati:
 
-* **0 (Invia):** I dati inviati sono pronti per l’elaborazione.
-* **1 (Calcola):** Il servizio Forms ha eseguito un’operazione di calcolo sui dati e i risultati devono essere restituiti all’utente.
-* **2 (Convalida):** I dati del modulo convalidati dal servizio Forms e i risultati devono essere restituiti all’utente.
-* **3 (successivo):** La pagina corrente è cambiata con risultati che devono essere scritti nell&#39;applicazione client.
-* **4 (precedente**): la pagina corrente è cambiata con risultati che devono essere scritti nell&#39;applicazione client.
+* **0 (invio):** I dati inviati sono pronti per l&#39;elaborazione.
+* **1 (calcolo):** Il servizio Forms ha eseguito un&#39;operazione di calcolo sui dati e i risultati devono essere restituiti all&#39;utente.
+* **2 (Convalida):** I dati del modulo convalidati dal servizio Forms e i risultati devono essere restituiti all&#39;utente.
+* **3 (successivo):** La pagina corrente è stata modificata con risultati che devono essere scritti nell&#39;applicazione client.
+* **4 (Precedente**): la pagina corrente è cambiata con risultati che devono essere scritti nell&#39;applicazione client.
 
 >[!NOTE]
 >
->È necessario restituire all’utente i calcoli e le convalide. (vedere [Calcolo dati modulo](/help/forms/developing/calculating-form-data.md#calculating-form-data).
+>È necessario restituire all’utente i calcoli e le convalide. (Vedi [Calcolo dei dati del modulo](/help/forms/developing/calculating-form-data.md#calculating-form-data).
 
-**Determinare se l&#39;invio del modulo contiene allegati**
+**Determinare se l&#39;invio del modulo contiene file allegati**
 
 Forms inviato al servizio Forms può contenere allegati. Ad esempio, utilizzando il riquadro degli allegati integrato di Acrobat, un utente può selezionare i file allegati da inviare insieme al modulo. L’utente può inoltre selezionare i file allegati utilizzando una barra degli strumenti di HTML sottoposta a rendering con un file di HTML.
 
@@ -177,7 +178,7 @@ Dopo aver determinato se un modulo contiene file allegati, è possibile elaborar
 
 **Elabora i dati inviati**
 
-A seconda del tipo di contenuto dei dati inviati, è possibile estrarre singoli valori dei campi modulo dai dati XML inviati oppure salvare i dati PDF inviati come file PDF (o inviarli a un altro servizio). Per estrarre singoli campi modulo, convertire i dati XML inviati in un&#39;origine dati XML e quindi recuperare i valori dell&#39;origine dati XML utilizzando `org.w3c.dom` classi.
+A seconda del tipo di contenuto dei dati inviati, è possibile estrarre singoli valori dei campi modulo dai dati XML inviati oppure salvare i dati PDF inviati come file PDF (o inviarli a un altro servizio). Per estrarre singoli campi modulo, convertire i dati XML inviati in un&#39;origine dati XML e quindi recuperare i valori dell&#39;origine dati XML utilizzando le classi `org.w3c.dom`.
 
 **Consulta anche**
 
@@ -201,33 +202,33 @@ Gestisci un modulo inviato utilizzando l’API Forms (Java):
 
 1. Creare un oggetto API client di Forms
 
-   * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
-   * Creare un `FormsServiceClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recupera dati modulo
 
-   * Per recuperare i dati del modulo inviati a un servlet Java, crea un `com.adobe.idp.Document` mediante il costruttore e richiamando l&#39;oggetto `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getInputStream` metodo dall&#39;interno del costruttore.
-   * Creare un `RenderOptionsSpec` mediante il costruttore. Impostare il valore locale richiamando `RenderOptionsSpec` dell&#39;oggetto `setLocale` e passando un valore stringa che specifica il valore locale.
+   * Per recuperare i dati del modulo inviati a un servlet Java, creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e richiamando il metodo `getInputStream` dell&#39;oggetto `javax.servlet.http.HttpServletResponse` dal costruttore.
+   * Creare un oggetto `RenderOptionsSpec` utilizzando il relativo costruttore. Impostare il valore delle impostazioni locali richiamando il metodo `setLocale` dell&#39;oggetto `RenderOptionsSpec` e passando un valore stringa che specifica il valore delle impostazioni locali.
 
    >[!NOTE]
    >
-   >È possibile indicare al servizio Forms di creare dati XDP o XML dal contenuto PDF inviato richiamando il `RenderOptionsSpec` dell&#39;oggetto `setPDF2XDP` metodo e passaggio `true` e anche chiamando `setXMLData` e superamento `true`. È quindi possibile richiamare `FormsResult` dell&#39;oggetto `getOutputXML` per recuperare i dati XML corrispondenti ai dati XDP/XML. (Il `FormsResult` l&#39;oggetto viene restituito da `processFormSubmission` che viene spiegato nel passaggio successivo.)
+   >È possibile indicare al servizio Forms di creare dati XDP o XML dal contenuto PDF inviato richiamando il metodo `setPDF2XDP` dell&#39;oggetto `RenderOptionsSpec` e passando `true`, chiamando anche `setXMLData` e passando `true`. È quindi possibile richiamare il metodo `getOutputXML` dell&#39;oggetto `FormsResult` per recuperare i dati XML corrispondenti ai dati XDP/XML. (L&#39;oggetto `FormsResult` viene restituito dal metodo `processFormSubmission`, illustrato nel passaggio successivo).
 
-   * Richiama `FormsServiceClient` dell&#39;oggetto `processFormSubmission` e trasmettere i seguenti valori:
+   * Richiama il metodo `processFormSubmission` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-      * Il `com.adobe.idp.Document` oggetto che contiene i dati del modulo.
-      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specifica il tipo di contenuto da gestire. Per gestire i dati XML, specificare il valore stringa seguente per questo parametro: `CONTENT_TYPE=text/xml`. Per gestire i dati di PDF, specifica il seguente valore stringa per questo parametro: `CONTENT_TYPE=application/pdf`.
-      * Un valore stringa che specifica il `HTTP_USER_AGENT` valore dell’intestazione, ad esempio. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Il valore di questo parametro è facoltativo.
-      * A `RenderOptionsSpec` oggetto che memorizza le opzioni di runtime.
+      * Oggetto `com.adobe.idp.Document` contenente i dati del modulo.
+      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specifica il tipo di contenuto da gestire. Per gestire i dati XML, specificare il valore stringa seguente per il parametro: `CONTENT_TYPE=text/xml`. Per gestire i dati di PDF, specificare il seguente valore stringa per questo parametro: `CONTENT_TYPE=application/pdf`.
+      * Valore stringa che specifica il valore di intestazione `HTTP_USER_AGENT`, ad esempio. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Il valore di questo parametro è facoltativo.
+      * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di runtime.
 
-     Il `processFormSubmission` il metodo restituisce un `FormsResult` oggetto contenente i risultati dell’invio del modulo.
+     Il metodo `processFormSubmission` restituisce un oggetto `FormsResult` contenente i risultati dell&#39;invio del modulo.
 
-   * Determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati del modulo richiamando `FormsResult` dell&#39;oggetto `getAction` metodo. Se questo metodo restituisce il valore `0`, i dati sono pronti per l’elaborazione.
+   * Determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati del modulo richiamando il metodo `getAction` dell&#39;oggetto `FormsResult`. Se questo metodo restituisce il valore `0`, i dati sono pronti per essere elaborati.
 
 1. Determinare se l&#39;invio del modulo contiene allegati
 
-   * Richiama `FormsResult` dell&#39;oggetto `getAttachments` metodo. Questo metodo restituisce un `java.util.List` oggetto contenente i file inviati con il modulo.
-   * Effettua iterazione attraverso `java.util.List` per determinare se sono presenti allegati. Se sono presenti file allegati, ogni elemento è un `com.adobe.idp.Document` dell&#39;istanza. È possibile salvare i file allegati richiamando `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e il passaggio di un `java.io.File` oggetto.
+   * Richiama il metodo `getAttachments` dell&#39;oggetto `FormsResult`. Questo metodo restituisce un oggetto `java.util.List` contenente i file inviati con il modulo.
+   * Scorrere l&#39;oggetto `java.util.List` per determinare se sono presenti allegati. Se sono presenti file allegati, ogni elemento è un&#39;istanza `com.adobe.idp.Document`. È possibile salvare i file allegati richiamando il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` e passando un oggetto `java.io.File`.
 
    >[!NOTE]
    >
@@ -235,20 +236,20 @@ Gestisci un modulo inviato utilizzando l’API Forms (Java):
 
 1. Elabora i dati inviati
 
-   * Se il tipo di contenuto dei dati è `application/vnd.adobe.xdp+xml` o `text/xml`, crea una logica di applicazione per recuperare i valori dei dati XML.
+   * Se il tipo di contenuto dei dati è `application/vnd.adobe.xdp+xml` o `text/xml`, creare una logica dell&#39;applicazione per recuperare i valori dei dati XML.
 
-      * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-      * Creare un `java.io.InputStream` oggetto richiamando il `java.io.DataInputStream` costruttore e passaggio `com.adobe.idp.Document` oggetto.
-      * Creare un `org.w3c.dom.DocumentBuilderFactory` oggetto chiamando l&#39;oggetto statico `org.w3c.dom.DocumentBuilderFactory` dell&#39;oggetto `newInstance` metodo.
-      * Creare un `org.w3c.dom.DocumentBuilder` oggetto richiamando il `org.w3c.dom.DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` metodo.
-      * Creare un `org.w3c.dom.Document` oggetto richiamando il `org.w3c.dom.DocumentBuilder` dell&#39;oggetto `parse` e passando il `java.io.InputStream` oggetto.
-      * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, questo metodo personalizzato viene chiamato `getNodeText`. Viene visualizzato il corpo di questo metodo.
+      * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+      * Creare un oggetto `java.io.InputStream` richiamando il costruttore `java.io.DataInputStream` e passando l&#39;oggetto `com.adobe.idp.Document`.
+      * Creare un oggetto `org.w3c.dom.DocumentBuilderFactory` chiamando il metodo `newInstance` dell&#39;oggetto `org.w3c.dom.DocumentBuilderFactory` statico.
+      * Creare un oggetto `org.w3c.dom.DocumentBuilder` richiamando il metodo `newDocumentBuilder` dell&#39;oggetto `org.w3c.dom.DocumentBuilderFactory`.
+      * Creare un oggetto `org.w3c.dom.Document` richiamando il metodo `parse` dell&#39;oggetto `org.w3c.dom.DocumentBuilder` e passando l&#39;oggetto `java.io.InputStream`.
+      * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: l&#39;oggetto `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, il metodo personalizzato è denominato `getNodeText`. Viene visualizzato il corpo di questo metodo.
 
-   * Se il tipo di contenuto dei dati è `application/pdf`, crea una logica di applicazione per salvare i dati PDF inviati come file PDF.
+   * Se il tipo di contenuto dei dati è `application/pdf`, creare la logica dell&#39;applicazione per salvare i dati PDF inviati come file PDF.
 
-      * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-      * Creare un `java.io.File` mediante il costruttore pubblico. Assicurati di specificare PDF come estensione del nome file.
-      * Popola il file PDF richiamando `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passando il `java.io.File` oggetto.
+      * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+      * Creare un oggetto `java.io.File` utilizzando il relativo costruttore pubblico. Assicurati di specificare PDF come estensione del nome file.
+      * Compilare il file PDF richiamando il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` e passando l&#39;oggetto `java.io.File`.
 
 **Consulta anche**
 
@@ -273,58 +274,58 @@ Gestisci un modulo inviato utilizzando l’API Forms (servizio web):
 
 1. Creare un oggetto API client di Forms
 
-   Creare un `FormsService` e impostare i valori di autenticazione.
+   Creare un oggetto `FormsService` e impostare i valori di autenticazione.
 
 1. Recupera dati modulo
 
-   * Per recuperare i dati del modulo inviati a un servlet Java, crea un `BLOB` mediante il costruttore.
-   * Creare un `java.io.InputStream` oggetto richiamando il `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getInputStream` metodo.
-   * Creare un `java.io.ByteArrayOutputStream` dell&#39;oggetto utilizzando il relativo costruttore e passando la lunghezza del `java.io.InputStream` oggetto.
-   * Copia il contenuto del `java.io.InputStream` oggetto in `java.io.ByteArrayOutputStream` oggetto.
-   * Creare una matrice di byte richiamando `java.io.ByteArrayOutputStream` dell&#39;oggetto `toByteArray` metodo.
-   * Popolare il `BLOB` oggetto richiamando il relativo `setBinaryData` e passando la matrice di byte come argomento.
-   * Creare un `RenderOptionsSpec` mediante il costruttore. Impostare il valore locale richiamando `RenderOptionsSpec` dell&#39;oggetto `setLocale` e passando un valore stringa che specifica il valore locale.
-   * Richiama `FormsService` dell&#39;oggetto `processFormSubmission` e trasmettere i seguenti valori:
+   * Per recuperare i dati del modulo inviati a un servlet Java, creare un oggetto `BLOB` utilizzando il relativo costruttore.
+   * Creare un oggetto `java.io.InputStream` richiamando il metodo `getInputStream` dell&#39;oggetto `javax.servlet.http.HttpServletResponse`.
+   * Creare un oggetto `java.io.ByteArrayOutputStream` utilizzando il relativo costruttore e passando la lunghezza dell&#39;oggetto `java.io.InputStream`.
+   * Copiare il contenuto dell&#39;oggetto `java.io.InputStream` nell&#39;oggetto `java.io.ByteArrayOutputStream`.
+   * Creare una matrice di byte richiamando il metodo `toByteArray` dell&#39;oggetto `java.io.ByteArrayOutputStream`.
+   * Compilare l&#39;oggetto `BLOB` richiamando il relativo metodo `setBinaryData` e passando la matrice di byte come argomento.
+   * Creare un oggetto `RenderOptionsSpec` utilizzando il relativo costruttore. Impostare il valore delle impostazioni locali richiamando il metodo `setLocale` dell&#39;oggetto `RenderOptionsSpec` e passando un valore stringa che specifica il valore delle impostazioni locali.
+   * Richiama il metodo `processFormSubmission` dell&#39;oggetto `FormsService` e passa i seguenti valori:
 
-      * Il `BLOB` oggetto che contiene i dati del modulo.
-      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specifica il tipo di contenuto da gestire. Per gestire i dati XML, specificare il valore stringa seguente per questo parametro: `CONTENT_TYPE=text/xml`. Per gestire i dati di PDF, specifica il seguente valore stringa per questo parametro: `CONTENT_TYPE=application/pdf`.
-      * Un valore stringa che specifica il `HTTP_USER_AGENT` valore intestazione; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * A `RenderOptionsSpec` oggetto che memorizza le opzioni di runtime.
-      * Un campo vuoto `BLOBHolder` oggetto popolato dal metodo.
-      * Un campo vuoto `javax.xml.rpc.holders.StringHolder` oggetto popolato dal metodo.
-      * Un campo vuoto `BLOBHolder` oggetto popolato dal metodo.
-      * Un campo vuoto `BLOBHolder` oggetto popolato dal metodo.
-      * Un campo vuoto `javax.xml.rpc.holders.ShortHolder` oggetto popolato dal metodo.
-      * Un campo vuoto `MyArrayOf_xsd_anyTypeHolder` oggetto popolato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati dei file inviati insieme al modulo.
-      * Un campo vuoto `FormsResultHolder` oggetto popolato dal metodo con il modulo inviato.
+      * Oggetto `BLOB` contenente i dati del modulo.
+      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specifica il tipo di contenuto da gestire. Per gestire i dati XML, specificare il valore stringa seguente per il parametro: `CONTENT_TYPE=text/xml`. Per gestire i dati di PDF, specificare il seguente valore stringa per questo parametro: `CONTENT_TYPE=application/pdf`.
+      * Valore stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di runtime.
+      * Oggetto `BLOBHolder` vuoto popolato dal metodo.
+      * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo.
+      * Oggetto `BLOBHolder` vuoto popolato dal metodo.
+      * Oggetto `BLOBHolder` vuoto popolato dal metodo.
+      * Oggetto `javax.xml.rpc.holders.ShortHolder` vuoto popolato dal metodo.
+      * Oggetto `MyArrayOf_xsd_anyTypeHolder` vuoto popolato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati dei file inviati insieme al modulo.
+      * Oggetto `FormsResultHolder` vuoto popolato dal metodo con il modulo inviato.
 
-     Il `processFormSubmission` il metodo compila `FormsResultHolder` con i risultati dell&#39;invio del modulo.
+     Il metodo `processFormSubmission` compila il parametro `FormsResultHolder` con i risultati dell&#39;invio del modulo.
 
-   * Determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati del modulo richiamando `FormsResult` dell&#39;oggetto `getAction` metodo. Se questo metodo restituisce il valore `0`, i dati del modulo sono pronti per l’elaborazione. Puoi ottenere un `FormsResult` dell&#39;oggetto ottenendo il valore del `FormsResultHolder` dell&#39;oggetto `value` membro dati.
+   * Determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati del modulo richiamando il metodo `getAction` dell&#39;oggetto `FormsResult`. Se questo metodo restituisce il valore `0`, i dati del modulo sono pronti per l&#39;elaborazione. È possibile ottenere un oggetto `FormsResult` ottenendo il valore del membro dati `value` dell&#39;oggetto `FormsResultHolder`.
 
 1. Determinare se l&#39;invio del modulo contiene allegati
 
-   Ottieni il valore di `MyArrayOf_xsd_anyTypeHolder` dell&#39;oggetto `value` membro dati (il `MyArrayOf_xsd_anyTypeHolder` l&#39;oggetto è stato passato al `processFormSubmission` metodo). Questo membro dati restituisce un array di `Objects`. Ogni elemento all’interno del `Object` array è un `Object`che corrisponde ai file inviati insieme al modulo. È possibile ottenere ogni elemento all’interno dell’array ed eseguirne il cast in un `BLOB` oggetto.
+   Ottiene il valore del membro dati `value` dell&#39;oggetto `MyArrayOf_xsd_anyTypeHolder` (l&#39;oggetto `MyArrayOf_xsd_anyTypeHolder` è stato passato al metodo `processFormSubmission`). Questo membro dati restituisce un array di `Objects`. Ogni elemento all&#39;interno dell&#39;array `Object` è un `Object` che corrisponde ai file inviati insieme al modulo. È possibile ottenere ogni elemento all&#39;interno dell&#39;array e eseguirne il cast in un oggetto `BLOB`.
 
 1. Elabora i dati inviati
 
-   * Se il tipo di contenuto dei dati è `application/vnd.adobe.xdp+xml` o `text/xml`, crea una logica di applicazione per recuperare i valori dei dati XML.
+   * Se il tipo di contenuto dei dati è `application/vnd.adobe.xdp+xml` o `text/xml`, creare una logica dell&#39;applicazione per recuperare i valori dei dati XML.
 
-      * Creare un `BLOB` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-      * Creare una matrice di byte richiamando `BLOB` dell&#39;oggetto `getBinaryData` metodo.
-      * Creare un `java.io.InputStream` oggetto richiamando il `java.io.ByteArrayInputStream` costruttore e il passaggio della matrice di byte.
-      * Creare un `org.w3c.dom.DocumentBuilderFactory` oggetto chiamando l&#39;oggetto statico `org.w3c.dom.DocumentBuilderFactory` dell&#39;oggetto `newInstance` metodo.
-      * Creare un `org.w3c.dom.DocumentBuilder` oggetto richiamando il `org.w3c.dom.DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` metodo.
-      * Creare un `org.w3c.dom.Document` oggetto richiamando il `org.w3c.dom.DocumentBuilder` dell&#39;oggetto `parse` e passando il `java.io.InputStream` oggetto.
-      * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, questo metodo personalizzato viene chiamato `getNodeText`. Viene visualizzato il corpo di questo metodo.
+      * Creare un oggetto `BLOB` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+      * Creare una matrice di byte richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`.
+      * Creare un oggetto `java.io.InputStream` richiamando il costruttore `java.io.ByteArrayInputStream` e passando la matrice di byte.
+      * Creare un oggetto `org.w3c.dom.DocumentBuilderFactory` chiamando il metodo `newInstance` dell&#39;oggetto `org.w3c.dom.DocumentBuilderFactory` statico.
+      * Creare un oggetto `org.w3c.dom.DocumentBuilder` richiamando il metodo `newDocumentBuilder` dell&#39;oggetto `org.w3c.dom.DocumentBuilderFactory`.
+      * Creare un oggetto `org.w3c.dom.Document` richiamando il metodo `parse` dell&#39;oggetto `org.w3c.dom.DocumentBuilder` e passando l&#39;oggetto `java.io.InputStream`.
+      * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: l&#39;oggetto `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, il metodo personalizzato è denominato `getNodeText`. Viene visualizzato il corpo di questo metodo.
 
-   * Se il tipo di contenuto dei dati è `application/pdf`, crea una logica di applicazione per salvare i dati PDF inviati come file PDF.
+   * Se il tipo di contenuto dei dati è `application/pdf`, creare la logica dell&#39;applicazione per salvare i dati PDF inviati come file PDF.
 
-      * Creare un `BLOB` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
-      * Creare una matrice di byte richiamando `BLOB` dell&#39;oggetto `getBinaryData` metodo.
-      * Creare un `java.io.File` mediante il costruttore pubblico. Assicurati di specificare PDF come estensione del nome file.
-      * Creare un `java.io.FileOutputStream` mediante il costruttore e passando il `java.io.File` oggetto.
-      * Popola il file PDF richiamando `java.io.FileOutputStream` dell&#39;oggetto `write` e passando la matrice di byte.
+      * Creare un oggetto `BLOB` richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`.
+      * Creare una matrice di byte richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`.
+      * Creare un oggetto `java.io.File` utilizzando il relativo costruttore pubblico. Assicurati di specificare PDF come estensione del nome file.
+      * Creare un oggetto `java.io.FileOutputStream` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.File`.
+      * Compilare il file PDF richiamando il metodo `write` dell&#39;oggetto `java.io.FileOutputStream` e passando la matrice di byte.
 
 **Consulta anche**
 

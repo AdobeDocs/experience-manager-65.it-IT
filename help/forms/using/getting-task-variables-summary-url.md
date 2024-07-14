@@ -21,7 +21,7 @@ Nella pagina di riepilogo vengono visualizzate le informazioni relative all&#39;
 
 In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta di congedo. Il modulo di domanda viene quindi inviato al responsabile del dipendente per l&#39;approvazione.
 
-1. Crea un modulo di rendering HTML di esempio (html.esp) per resourseType **Dipendenti/PtoApplication**.
+1. Creare un modulo di rendering HTML di esempio (html.esp) per resourseType **Dipendenti/PtoApplication**.
 
    Il renderer presuppone che le seguenti proprietà siano impostate sul nodo:
 
@@ -57,30 +57,30 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
    </html>
    ```
 
-1. Modifica l’orchestrazione per estrare le quattro proprietà dai dati del modulo inviati. In seguito, crea un nodo in CRX di tipo **Dipendenti/PtoApplication**, con le proprietà popolate.
+1. Modifica l’orchestrazione per estrare le quattro proprietà dai dati del modulo inviati. In seguito, creare un nodo in CRX di tipo **Dipendenti/PtoApplication**, con le proprietà popolate.
 
-   1. Creare un processo **crea riepilogo PTO** e utilizzalo come processo secondario prima del **Assegna attività** nell&#39;orchestrazione.
-   1. Definisci **employeeName**, **employeeID**, **ptoReason**, **totalDays**, e **nodeName** come variabili di input nel nuovo processo. Queste variabili verranno trasmesse come dati del modulo inviati.
+   1. Crea un processo **crea riepilogo PTO** e utilizzalo come processo secondario prima dell&#39;operazione **Assegna attività** nell&#39;orchestrazione.
+   1. Definisci **employeeName**, **employeeID**, **ptoReason**, **totalDays** e **nodeName** come variabili di input nel nuovo processo. Queste variabili verranno trasmesse come dati del modulo inviati.
 
-      Definisci anche una variabile di output **ptoNodePath** utilizzato durante l’impostazione dell’URL di riepilogo.
+      Definisci anche una variabile di output **ptoNodePath** utilizzata durante l&#39;impostazione dell&#39;URL di riepilogo.
 
-   1. In **crea riepilogo PTO** processo, utilizza **imposta valore** per impostare i dettagli di input in una **nodeProperty**(**nodeProps**) mappa.
+   1. Nel processo **crea riepilogo PTO**, utilizzare il componente **imposta valore** per impostare i dettagli di input in una mappa **nodeProperty**(**nodeProps**).
 
       Le chiavi in questa mappa devono essere identiche a quelle definite nel renderer HTML nel passaggio precedente.
 
-      Inoltre, aggiungi **sling:resourceType** chiave con valore **Dipendenti/PtoApplication** nella mappa.
+      Aggiungere inoltre una chiave **sling:resourceType** con il valore **Employees/PtoApplication** nella mappa.
 
-   1. Utilizzare il processo secondario **storeContent** dal **ConnettoreArchivioContenuti** servizio in **crea riepilogo PTO** processo. Questo processo secondario crea un nodo CRX.
+   1. Utilizzare il processo secondario **storeContent** dal servizio **ContentRepositoryConnector** nel processo **create PTO summary**. Questo processo secondario crea un nodo CRX.
 
       Sono necessarie tre variabili di input:
 
-      * **Percorso cartella**: percorso in cui viene creato il nuovo nodo CRX. Imposta il percorso come **/content**.
-      * **Nome nodo**: assegna la variabile di input nodeName a questo campo. Questa è una stringa con nome di nodo univoco.
-      * **Tipo di nodo**: definisci il tipo come **nt:unstructured**. L&#39;output di questo processo è nodePath. Il percorso nodePath è il percorso CRX del nodo appena creato. Il ndoePath è l’output finale del **crea PTO** processo di riepilogo.
+      * **Percorso cartella**: il percorso in cui viene creato il nuovo nodo di CRX. Imposta il percorso come **/content**.
+      * **Nome nodo**: assegnare la variabile di input nodeName a questo campo. Questa è una stringa con nome di nodo univoco.
+      * **Tipo di nodo**: definire il tipo come **nt:unstructured**. L&#39;output di questo processo è nodePath. Il percorso nodePath è il percorso CRX del nodo appena creato. Il ndoePath è l&#39;output finale del processo di riepilogo **create PTO**.
 
-   1. Trasmettere i dati modulo inviati (**employeeName**, **employeeID**, **ptoReason**, e **totalDays**) come input per il nuovo processo **crea riepilogo PTO**. Considera l’output come **ptoSummaryNodePath**.
+   1. Passa i dati del modulo inviati (**employeeName**, **employeeID**, **ptoReason** e **totalDays**) come input per il nuovo processo **crea riepilogo PTO**. Considera l&#39;output come **ptoSummaryNodePath**.
 
-1. Definisci l’URL di riepilogo come espressione XPath contenente i dettagli del server e **ptoSummaryNodePath**.
+1. Definisci l&#39;URL di riepilogo come espressione XPath contenente i dettagli del server insieme a **ptoSummaryNodePath**.
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 

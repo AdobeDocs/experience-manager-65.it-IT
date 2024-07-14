@@ -28,7 +28,7 @@ Le proprietà sono distribuite in diverse schede:
 
 * **Titolo**
 
-  Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** e la scheda **Sites** viste a schede/elenco.
+  Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, l&#39;elenco di schede **Siti Web** e le visualizzazioni **Siti** per schede/elenchi.
 
   Questo campo è obbligatorio.
 
@@ -80,7 +80,7 @@ Le proprietà sono distribuite in diverse schede:
 
   Consente di immettere un URL personalizzato per questa pagina. Questo ti consente di avere un URL più breve e più espressivo.
 
-  Ad esempio, se l’URL personalizzato è impostato su w `elcome`alla pagina identificata dal percorso / `v1.0/startpage`per il sito web h `ttp://example.com,` allora h `ttp://example.com/welcome`sarebbe l’URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
+  Ad esempio, se l&#39;URL personalizzato è impostato su w `elcome` per la pagina identificata dal percorso / `v1.0/startpage` per il sito Web h `ttp://example.com,` allora h `ttp://example.com/welcome` sarà l&#39;URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
   >
@@ -89,7 +89,7 @@ Le proprietà sono distribuite in diverse schede:
   >* deve essere univoco, quindi accertati che il valore non sia già utilizzato da un’altra pagina.
   >* non supportano i pattern regex.
 
-* **Reindirizza Vanity URL**
+* **Reindirizza URL personalizzato**
 
   Indica se desideri che la pagina utilizzi il Vanity URL.
 
@@ -99,13 +99,13 @@ Le proprietà sono distribuite in diverse schede:
 
   Lingua della pagina.
 
-* **Reindirizza**
+* **Reindirizzamento**
 
   Indica la pagina a cui deve essere automaticamente reindirizzata la pagina.
 
 * **Design**
 
-  Indicare [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
+  Indica la [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
 
 * **Alias**
 
@@ -113,13 +113,13 @@ Le proprietà sono distribuite in diverse schede:
 
 * **Abilita gruppo utenti chiuso**
 
-  Abilita (o disabilita) l&#39;uso di [gruppi utenti chiusi](/help/sites-administering/cug.md) (CUG).
+  Abilita o disabilita l&#39;utilizzo di [gruppi utenti chiusi](/help/sites-administering/cug.md) (CUG).
 
 * **Pagina di accesso**
 
   Pagina da utilizzare per l’accesso.
 
-* **Gruppi consentiti**
+* **Gruppi ammessi**
 
   Gruppi idonei per l’accesso al CUG.
 
@@ -127,7 +127,7 @@ Le proprietà sono distribuite in diverse schede:
 
   Nome area di autenticazione per il gruppo utenti chiusi.
 
-* **Esporta configurazione**
+* **Configurazione esportazione**
 
   Specifica una configurazione di esportazione.
 
@@ -149,7 +149,7 @@ Le proprietà sono distribuite in diverse schede:
 
 * **Servizi cloud**
 
-  Definisci le proprietà per [servizi cloud](/help/sites-developing/extending-cloud-config.md).
+  Definisci le proprietà per [Cloud Services](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalizzazione {#personalization}
 
@@ -161,23 +161,23 @@ Le proprietà sono distribuite in diverse schede:
 
 * **Autorizzazioni** (interfaccia touch)
 
-  Visualizza [autorizzazioni valide e nuove autorizzazioni](/help/sites-administering/user-group-ac-admin.md).
+  Visualizza le [autorizzazioni valide e aggiungi nuove autorizzazioni](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-  Definire le proprietà per una pagina Blueprint in [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
+  Definisci le proprietà per una pagina blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
 ### Live Copy  {#live-copy}
 
 * **Livecopy**
 
-  Definire le proprietà per una pagina Live Copy in [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
+  Definisci le proprietà per una pagina Live Copy nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
 ### Struttura sito  {#site-structure}
 
-* Fornisce collegamenti alle pagine che forniscono funzionalità a livello di sito, ad esempio **Pagina registrazione**, **Pagina offline**, tra gli altri.
+* Fornisci i collegamenti alle pagine che forniscono funzionalità a livello di sito, ad esempio **Pagina registrazione**, **Pagina offline**.
 
 ## Modifica delle proprietà di una pagina {#editing-page-properties-2}
 
@@ -187,7 +187,7 @@ Le Proprietà pagina definiscono le varie proprietà della pagina, ad esempio i 
 
 1. Apri la pagina da modificare.
 
-1. Nella barra laterale aprire **Pagina** , quindi seleziona **Proprietà pagina...**
+1. Nella barra laterale apri la scheda **Pagina**, quindi seleziona **Proprietà pagina...**
 
    Viene visualizzata una finestra di dialogo con più schede.
 

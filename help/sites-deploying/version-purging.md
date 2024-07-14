@@ -25,16 +25,17 @@ In un’installazione standard, Adobe Experience Manager (AEM) crea una versione
 >
 >Se non viene apportata alcuna modifica al contenuto, viene visualizzato il messaggio che indica che la pagina è stata attivata, ma non viene creata alcuna nuova versione.
 
-Puoi creare versioni aggiuntive su richiesta utilizzando **Controllo delle versioni** della barra laterale. Queste versioni vengono memorizzate nell’archivio e possono essere ripristinate, se necessario.
+Puoi creare versioni aggiuntive su richiesta utilizzando la scheda **Controllo versioni** della barra laterale. Queste versioni vengono memorizzate nell’archivio e possono essere ripristinate, se necessario.
 
 Queste versioni non vengono mai eliminate, pertanto le dimensioni dell’archivio aumentano nel tempo e devono quindi essere gestite.
 
 L’AEM viene fornito con vari meccanismi per aiutarti a gestire l’archivio:
 
-* il [Gestione versioni](#version-manager)
+* [Gestione versioni](#version-manager)
 Questa può essere configurata per eliminare le versioni precedenti quando vengono create nuove versioni.
 
-* il [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) strumento Utilizzato come parte del monitoraggio e della manutenzione dell’archivio.
+* strumento [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
+Viene utilizzato come parte del monitoraggio e della manutenzione dell’archivio.
 Consente di intervenire per rimuovere le versioni precedenti di un nodo o di una gerarchia di nodi, in base ai seguenti parametri:
 
    * Il numero massimo di versioni da mantenere nell’archivio.
@@ -43,7 +44,7 @@ Se questo numero viene superato, viene rimossa la versione meno recente.
    * L’età massima di qualsiasi versione mantenuta nell’archivio.
 Quando la validità di una versione supera questo valore, viene eliminata dall’archivio.
 
-* il [Attività di manutenzione Pulizia delle versioni](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). È possibile pianificare l&#39;attività di manutenzione Pulizia delle versioni per eliminare automaticamente le versioni precedenti. In questo modo si riduce la necessità di utilizzare manualmente gli strumenti di Pulizia delle versioni.
+* l&#39;attività di manutenzione [Pulizia versione](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). È possibile pianificare l&#39;attività di manutenzione Pulizia delle versioni per eliminare automaticamente le versioni precedenti. In questo modo si riduce la necessità di utilizzare manualmente gli strumenti di Pulizia delle versioni.
 
 >[!CAUTION]
 >
@@ -53,27 +54,34 @@ Quando la validità di una versione supera questo valore, viene eliminata dall�
 
 Oltre alla rimozione esplicita mediante lo strumento di rimozione, Gestione versioni può essere configurato per eliminare le versioni precedenti quando vengono create nuove versioni.
 
-Per configurare Gestione versioni: [creare una configurazione](/help/sites-deploying/configuring-osgi.md) per:
+Per configurare Gestione versioni, [crea una configurazione](/help/sites-deploying/configuring-osgi.md) per:
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
 Sono disponibili le seguenti opzioni:
 
-* `versionmanager.createVersionOnActivation` (Booleano, impostazione predefinita: true) Specifica se creare una versione quando le pagine sono attivate.
+* `versionmanager.createVersionOnActivation` (booleano, predefinito: true)
+Specifica se creare una versione quando le pagine sono attivate.
 Viene creata una versione a meno che l’agente di replica non sia configurato per sopprimere la creazione delle versioni, che viene rispettata da Gestione versioni.
-Una versione viene creata solo se l&#39;attivazione avviene su un percorso contenuto in `versionmanager.ivPaths` (vedi sotto).
+Una versione viene creata solo se l&#39;attivazione avviene in un percorso contenuto in `versionmanager.ivPaths` (vedere di seguito).
 
-* `versionmanager.ivPaths`(Stringa[], impostazione predefinita: `{"/"}`) Specifica i percorsi in cui le versioni vengono create in modo implicito al momento dell&#39;attivazione se `versionmanager.createVersionOnActivation` è impostato su true.
+* `versionmanager.ivPaths`(Stringa[], impostazione predefinita: `{"/"}`)
+Specifica i percorsi in cui le versioni vengono create in modo implicito al momento dell&#39;attivazione se `versionmanager.createVersionOnActivation` è impostato su true.
 
-* `versionmanager.purgingEnabled` (Booleano, impostazione predefinita: false) Definisce se abilitare la rimozione quando vengono create nuove versioni.
+* `versionmanager.purgingEnabled` (booleano, predefinito: false)
+Definisce se abilitare la rimozione quando vengono create nuove versioni.
 
-* `versionmanager.purgePaths` (Stringa[], impostazione predefinita: {&quot;/content&quot;}) Specifica in quali percorsi eliminare le versioni quando vengono create nuove versioni.
+* `versionmanager.purgePaths` (Stringa[], impostazione predefinita: {&quot;/content&quot;})
+Specifica i percorsi in cui eliminare le versioni quando vengono create nuove versioni.
 
-* `versionmanager.maxAgeDays` (int, impostazione predefinita: 30) Al momento dell’eliminazione della versione, vengono rimosse tutte le versioni precedenti al valore configurato. Se il valore è minore di 1, la rimozione non viene eseguita in base alla data della versione.
+* `versionmanager.maxAgeDays` (int, valore predefinito: 30)
+Al momento dell’eliminazione della versione, vengono rimosse tutte le versioni precedenti al valore configurato. Se il valore è minore di 1, la rimozione non viene eseguita in base alla data della versione.
 
-* `versionmanager.maxNumberVersions` (int, impostazione predefinita 5) Al momento dell’eliminazione della versione, vengono rimosse tutte le versioni precedenti all’n-esima versione più recente. Se il valore è minore di 1, la rimozione non viene eseguita in base al numero di versioni.
+* `versionmanager.maxNumberVersions` (int, predefinito 5)
+Al momento dell’eliminazione della versione, vengono rimosse tutte le versioni precedenti all’n-esima versione più recente. Se il valore è minore di 1, la rimozione non viene eseguita in base al numero di versioni.
 
-* `versionmanager.minNumberVersions` (int, valore predefinito 0) Il numero minimo di versioni conservate indipendentemente dall’età. Se il valore è impostato su un valore minore di 1, non viene mantenuto alcun numero minimo di versioni.
+* `versionmanager.minNumberVersions` (int, valore predefinito 0)
+Il numero minimo di versioni mantenute indipendentemente dall’età. Se il valore è impostato su un valore minore di 1, non viene mantenuto alcun numero minimo di versioni.
 
 >[!NOTE]
 >
@@ -81,7 +89,7 @@ Una versione viene creata solo se l&#39;attivazione avviene su un percorso conte
 
 ### Combinazione delle opzioni di conservazione {#combining-retention-options}
 
-Le opzioni che definiscono il modo in cui le versioni devono essere conservate ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), possono essere combinati in base alle tue esigenze.
+Le opzioni che definiscono come conservare le versioni ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) possono essere combinate in base alle tue esigenze.
 
 Ad esempio, quando definisci il numero massimo di versioni da mantenere E la versione più vecchia da mantenere:
 
@@ -118,4 +126,4 @@ Ad esempio, quando definisci il numero massimo E minimo di versioni da mantenere
 
 ## Strumento Rimuovi versioni {#purge-versions-tool}
 
-Il [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) Questo strumento serve per eliminare le versioni di un nodo o di una gerarchia di nodi nell’archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
+Lo strumento [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) è progettato per eliminare le versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.

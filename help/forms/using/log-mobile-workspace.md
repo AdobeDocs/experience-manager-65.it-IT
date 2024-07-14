@@ -32,7 +32,7 @@ Quando avvii l’app Adobe Experience Manager (AEM) Forms, devi prima fornire le
    >    * Per visualizzare l&#39;elenco degli URL del server, fare clic sulla freccia dell&#39;elenco nell&#39;angolo destro della casella di testo URL server.
    >    * Seleziona l’URL di un server AEM Forms a cui accedere tramite l’app.
 
-Quando accedi all’app, vieni indirizzato al [**Home** screen](../../forms/using/home-screen.md).
+Quando accedi all&#39;app, vieni indirizzato alla schermata [**Home**](../../forms/using/home-screen.md).
 
 >[!NOTE]
 >

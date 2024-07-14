@@ -154,7 +154,7 @@ Come per la creazione di un progetto, quando si aggiungono pagine, se necessario
 
 1. Fai clic su Start.
 
-## Aggiunta di pagine/risorse a un processo di traduzione {#adding-pages-assets-to-a-translation-job}
+## Aggiunta di pagine/Assets a un processo di traduzione {#adding-pages-assets-to-a-translation-job}
 
 Puoi aggiungere pagine, risorse, tag o dizionari i18n al processo di traduzione del progetto di traduzione. Per aggiungere pagine o risorse:
 
@@ -162,7 +162,7 @@ Puoi aggiungere pagine, risorse, tag o dizionari i18n al processo di traduzione 
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Fai clic su Aggiungi e Pagine/Risorse.
+1. Fai clic su Aggiungi e pagine/Assets.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
@@ -222,9 +222,9 @@ I tag vengono ora aggiunti nel processo di traduzione.
 
 ## Visualizzazione dei dettagli del progetto di traduzione {#seeing-translation-project-details}
 
-Il riquadro Riepilogo di traduzione contiene le proprietà configurate per un progetto di traduzione. Oltre al generico [informazioni sul progetto](/help/sites-authoring/projects.md#project-info), la scheda Traduzione contiene proprietà specifiche per la traduzione:
+Il riquadro Riepilogo di traduzione contiene le proprietà configurate per un progetto di traduzione. Oltre alle generiche [informazioni sul progetto](/help/sites-authoring/projects.md#project-info), la scheda Traduzione contiene proprietà specifiche per la traduzione:
 
-* Lingua di origine: lingua delle pagine che vengono tradotte.
+* Lingua Source: lingua delle pagine che vengono tradotte.
 * Lingua di destinazione: lingua in cui le pagine vengono tradotte.
 * Metodo di traduzione: il flusso di lavoro di traduzione. È supportata la traduzione umana o automatica.
 * Fornitore di traduzione: il fornitore di servizi di traduzione che esegue la traduzione.
@@ -265,7 +265,7 @@ Per visualizzare lo stato di ciascun file nel processo, fai clic sui puntini di 
 Specifica la data prima della quale il fornitore di traduzione deve restituire i file tradotti. È possibile impostare la data di scadenza per il progetto o per un job specifico:
 
 * **Progetto:** I processi di traduzione nel progetto ereditano la data di scadenza.
-* **Processo:** La data di scadenza impostata per il job sostituisce la data di scadenza impostata per il progetto.
+* **Processo:** la data di scadenza impostata per il processo sostituisce la data di scadenza impostata per il progetto.
 
 L’impostazione della data di termine funziona correttamente solo quando il fornitore di traduzione utilizzato supporta questa funzione.
 
@@ -301,7 +301,7 @@ Per ottenere ulteriori informazioni sui risultati della valutazione, contatta il
 >
 >L&#39;ambito è facoltativo. Puoi avviare un processo di traduzione senza valutazione.
 
-Quando esegui la valutazione di un processo di traduzione, lo stato del processo è `Scope Requested`. Quando il fornitore di traduzione restituisce l’ambito, lo stato viene modificato in `Scope Completed`. Al termine della valutazione è possibile utilizzare il comando Mostra valutazione per esaminare i risultati della valutazione.
+Quando si esegue l&#39;ambito di un processo di traduzione, lo stato del processo è `Scope Requested`. Quando il fornitore di traduzione restituisce l&#39;ambito, lo stato viene modificato in `Scope Completed`. Al termine della valutazione è possibile utilizzare il comando Mostra valutazione per esaminare i risultati della valutazione.
 
 La valutazione funziona correttamente solo quando il fornitore di traduzione utilizzato la supporta.
 
@@ -329,7 +329,7 @@ Dopo aver avviato il processo di traduzione, il riquadro Lavoro di traduzione mo
 
 ## Annullamento di un processo di traduzione {#canceling-a-translation-job}
 
-Annulla un processo di traduzione per interromperlo e impedire al fornitore di traduzione di eseguire ulteriori traduzioni. È possibile annullare un processo quando il processo ha `Committed For Translation` o `Translation In Progress` stato.
+Annulla un processo di traduzione per interromperlo e impedire al fornitore di traduzione di eseguire ulteriori traduzioni. È possibile annullare un processo quando il processo ha lo stato `Committed For Translation` o `Translation In Progress`.
 
 1. Nella console Progetti, apri il progetto di traduzione.
 1. Nel riquadro Lavoro di traduzione, fai clic sul menu dei comandi, quindi su Annulla.
@@ -370,8 +370,8 @@ Quando il contenuto viene tradotto per una copia per lingua esistente, rivedi le
 
 Per confrontare le copie per lingua con la lingua master:
 
-1. In **Sites** , passare alla copia per lingua che si desidera confrontare.
-1. Apri **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** pannello.
+1. Nella console **Sites**, passa alla copia per lingua che desideri confrontare.
+1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)**.
 1. Sotto l’intestazione **Copie** seleziona **Copie per lingua.**
 1. Seleziona la specifica copia per lingua e fai clic su **Confronta con ** principaleo **Confronta con precedente **se applicabile.
 
@@ -415,22 +415,22 @@ Compila la copia per lingua in modo che contenga il contenuto del master lingua 
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}
 
-Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), traducendo di nuovo la pagina dopo lo spostamento viene creata una copia per lingua in base al nuovo nome/percorso della pagina. La copia per lingua precedente basata sul nome/posizione precedente è ancora presente. Per evitare questo problema, è possibile utilizzare la funzionalità di aggiornamento della copia per lingua dopo lo spostamento:
+Se una pagina di origine già tradotta deve essere [rinominata o spostata](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduzione della pagina verrà ripetuta dopo lo spostamento e verrà creata una copia per lingua basata sul nuovo nome/percorso della pagina. La copia per lingua precedente basata sul nome/posizione precedente è ancora presente. Per evitare questo problema, è possibile utilizzare la funzionalità di aggiornamento della copia per lingua dopo lo spostamento:
 
 1. Sposta una pagina contenente una copia per lingua.
 1. Seleziona la directory principale della copia lingua.
-1. Apri **Riferimenti** pannello.
+1. Apri il pannello **Riferimenti**.
 1. Seleziona **Copie per lingua**.
 1. Seleziona le lingue di destinazione da aggiornare.
-1. Seleziona **Aggiorna copie per lingua**.
+1. Selezionare **Aggiorna copie per lingua**.
 
-   ![update-language-copy](assets/translation-move-to.png)
+   ![aggiorna-copie-lingua](assets/translation-move-to.png)
 
-1. Clic **Aggiorna**. A [Launch](/help/sites-authoring/launches-promoting.md) verrà creato.
+1. Fai clic su **Aggiorna**. Verrà creato un [lancio](/help/sites-authoring/launches-promoting.md).
 1. Passa alla directory principale della lingua desiderata e selezionala.
-1. Utilizzo di **Riferimenti** pannello, seleziona **Lanci**.
+1. Utilizzando il pannello **Riferimenti**, seleziona **Avvii**.
 
-   ![promote-launch-translation](assets/promote-launch-translation.png)
+   ![promuovi-lancio-traduzione](assets/promote-launch-translation.png)
 
 1. Fai clic sul lancio creato e fai clic su **Promuovi lancio**.
 
@@ -446,10 +446,10 @@ Puoi creare manualmente un progetto di traduzione se preferisci utilizzare la co
 
 Quando crei manualmente un progetto di traduzione, devi fornire valori per le seguenti proprietà relative alla traduzione, oltre alle [proprietà di base](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 
-* **Nome:** Nome del progetto.
-* **Lingua di origine:** Lingua del contenuto sorgente.
-* **Lingua di destinazione:** Lingua in cui il contenuto viene tradotto.
-* **Metodo di traduzione:** Seleziona Traduzione umana per indicare che la traduzione deve essere eseguita manualmente.
+* **Nome:** Nome progetto.
+* **Lingua Source:** lingua del contenuto di origine.
+* **Lingua di destinazione:** lingua in cui il contenuto viene tradotto.
+* **Metodo di traduzione:** Selezionare Traduzione umana per indicare che la traduzione deve essere eseguita manualmente.
 
 1. Sulla barra degli strumenti della console Progetti, fai clic su Crea.
 1. Seleziona il modello Progetto di traduzione e fai clic su Avanti.

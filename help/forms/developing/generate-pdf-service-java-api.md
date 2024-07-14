@@ -1,5 +1,5 @@
 ---
-title: QuickStart (SOAP) per generare API Java di PDF Service
+title: QuickStart(SOAP) per generare l’API Java di PDF Service
 description: Utilizzare il servizio Generate PDF per convertire un documento di Microsoft Word in un documento di PDF, convertire il contenuto di HTML in un documento di PDF e convertire un documento di PDF in un file RTF utilizzando l'API Java.
 contentOwner: admin
 content-type: reference
@@ -30,11 +30,11 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva alla programmazione con AEM Forms si basa sul server Forms distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva alla programmazione con AEM Forms si basa sul server Forms distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Guida rapida (modalità SOAP): conversione di un documento Microsoft Word in un documento PDF tramite l’API Java {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito viene convertito un file di Word denominato *Loan.doc* a un documento PDF denominato *Loan.pdf*. (vedere [Conversione di documenti Word in documenti PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene convertito un file di Word denominato *Loan.doc* in un documento di PDF denominato *Loan.pdf*. (Vedi [Conversione di documenti Word in documenti PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -148,7 +148,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene convertito un file
 
 ## Guida rapida (modalità SOAP): conversione di contenuti HTML in documenti PDF tramite l’API Java {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito il contenuto di HTML che si trova in https://www.adobe.com viene convertito in un documento di PDF denominato *AdobeHTML.pdf*. (vedere [Conversione di documenti HTML in documenti PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
+Esempio Nell&#39;esempio di codice Java riportato di seguito il contenuto di HTML che si trova in https://www.adobe.com viene convertito in un documento di PDF denominato *AdobeHTML.pdf*. (Vedi [Conversione di documenti HTML in documenti PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -254,7 +254,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito il contenuto di HTM
 
 ## Guida rapida (modalità SOAP): conversione di un documento PDF in un file RTF tramite API Java (modalità SOAP) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
-Esempio Nell&#39;esempio di codice riportato di seguito viene convertito un documento PDF denominato *Loan.pdf* a un documento RTF denominato *Loan.rtf*. (vedere [Conversione di documenti PDF in formati non immagine](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene convertito un documento PDF denominato *Loan.pdf* in un documento RTF denominato *Loan.rtf*. (Vedi [Conversione di documenti PDF in formati non immagine](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
 
 ```java
  /*

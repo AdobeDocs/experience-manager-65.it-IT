@@ -24,9 +24,9 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
 >
 >Selezione multipla su un dispositivo desktop:
 >
->* Windows: **Ctrl**+**click** sui componenti richiesti.
+>* Windows: **Ctrl**+**fai clic** sui componenti richiesti.
 >
->* Mac: **Cmd**+**click** sui componenti richiesti.
+>* Mac: **Cmd**+**fai clic** sui componenti richiesti.
 >
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}
@@ -41,9 +41,9 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
   <tr>
    <td>Console</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (nella pagina richiesta)</td>
-   <td>Apri la pagina in una nuova finestra.<br /> <strong>Nota:</strong> questa opzione è operativa se <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Proprietà utente</a> sono impostati su Finestra singola; se Più finestre, questo è il comportamento predefinito.</td>
+   <td>Apri la pagina in una nuova finestra.<br /> <strong>Nota:</strong> questa impostazione è operativa se le <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Proprietà utente</a> sono impostate su Finestra singola; in caso di più finestre, questo è il comportamento predefinito.</td>
   </tr>
  </tbody>
 </table>
 
-Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano [editor pagina](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) per l’authoring delle pagine.
+Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop quando utilizzano l&#39;[editor di pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) per creare pagine.

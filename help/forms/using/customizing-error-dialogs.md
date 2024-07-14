@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # Personalizzazione delle finestre di dialogo per gli errori {#customizing-error-dialogs}
 
-L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Eseguire la [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) seguito dai passaggi seguenti per personalizzare le finestre di dialogo degli errori.
+L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Esegui i [passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) seguiti dai passaggi seguenti per personalizzare le finestre di dialogo degli errori.
 
 ## Personalizzazione del testo {#customizing-text}
 
-1. In `/apps/ws/locales/en-US/translation.json` file, modificare i valori di `wserror` ai valori personalizzati. Ad esempio:
+1. Nel file `/apps/ws/locales/en-US/translation.json`, modificare i valori di `wserror` in valori personalizzati. Ad esempio:
 
    ```json
    "wserror" : {
@@ -51,7 +51,7 @@ L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialog
 
 ## Personalizzazione dei CSS {#customizing-css}
 
-1. È possibile aggiornare la finestra di dialogo, l&#39;intestazione, l&#39;area di contenuto, la barra a piè di pagina, i pulsanti della barra a piè di pagina e altri elementi collaterali aggiungendo lo snippet seguente nel `/apps/ws/css/newStyle.css` file:
+1. È possibile aggiornare la finestra di dialogo, l&#39;intestazione, l&#39;area di contenuto, la barra a piè di pagina, i pulsanti della barra a piè di pagina e altri elementi collaterali aggiungendo il seguente frammento nel file `/apps/ws/css/newStyle.css`:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -186,7 +186,7 @@ L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialog
    }
    ```
 
-1. Per l&#39;estensione del pulsante della barra a piè di pagina, separare `.error-dialog` e `.foot-bar` si estende dall&#39;elenco composito. Per apportare questa modifica, aggiungi quanto segue nel file newStyle.css:
+1. Per l&#39;estensione del pulsante della barra a piè di pagina, separare le estensioni del pulsante `.error-dialog` e `.foot-bar` dall&#39;elenco composito. Per apportare questa modifica, aggiungi quanto segue nel file newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -223,11 +223,11 @@ L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialog
 
 >[!NOTE]
 >
->Se stai facendo riferimento a immagini aggiuntive, aggiungile nella gerarchia desiderata in `/apps/ws/images`.
+>Se si fa riferimento ad altre immagini, aggiungerle nella gerarchia desiderata in `/apps/ws/images`.
 
 ## Esempi {#examples}
 
-* **Per personalizzare la finestra di dialogo dell’errore, modifica:**
+* **Per personalizzare la finestra di dialogo dell&#39;errore, modificare:**
 
 ```css
 .error-dialog{
@@ -261,7 +261,7 @@ A
 }
 ```
 
-* **Per personalizzare l’intestazione della finestra di dialogo degli errori, modifica:**
+* **Per personalizzare l&#39;intestazione della finestra di errore, modificare:**
 
 ```css
 .error-dialog .head-bar{

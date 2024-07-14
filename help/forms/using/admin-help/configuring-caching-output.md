@@ -24,13 +24,13 @@ La pagina Output nella console di amministrazione contiene le impostazioni che c
 
 Il servizio di output memorizza nella cache i seguenti elementi:
 
-* **progettazioni moduli:** Il servizio di output memorizza nella cache le progettazioni dei moduli che recupera dal repository o da origini HTTP. Questo caching migliora le prestazioni perché per le successive richieste di rendering, il servizio di output recupera la progettazione del modulo dalla cache anziché dall’archivio.
-* **frammenti e immagini:** Il servizio di output può memorizzare in cache frammenti e immagini utilizzati nelle progettazioni di moduli. Quando il servizio di output memorizza nella cache questi oggetti, migliora le prestazioni perché i frammenti e le immagini vengono letti dal repository solo alla prima richiesta.
+* **progettazioni moduli:** Il servizio di output memorizza nella cache le progettazioni dei moduli recuperate dall&#39;archivio o dalle origini HTTP. Questo caching migliora le prestazioni perché per le successive richieste di rendering, il servizio di output recupera la progettazione del modulo dalla cache anziché dall’archivio.
+* **frammenti e immagini:** Il servizio di output può memorizzare nella cache frammenti e immagini utilizzati nelle progettazioni di moduli. Quando il servizio di output memorizza nella cache questi oggetti, migliora le prestazioni perché i frammenti e le immagini vengono letti dal repository solo alla prima richiesta.
 
 L’output memorizza la cache in due posizioni:
 
-* **in memoria:** Gli elementi vengono archiviati in memoria per accedervi rapidamente. La cache in memoria ha dimensioni limitate e viene eliminata al riavvio del server.
-* **su disco:** Gli elementi vengono archiviati nel file system del server. La cache del disco ha una capacità maggiore della cache in memoria e viene mantenuta al riavvio del server. La posizione della cache del disco dipende dal server dell&#39;applicazione. Per informazioni sulla modifica della posizione della cache del disco, vedere [Specificare i percorsi dei file per l&#39;output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
+* **in memoria:** elementi sono archiviati in memoria per l&#39;accesso rapido. La cache in memoria ha dimensioni limitate e viene eliminata al riavvio del server.
+* **su disco:** elementi archiviati nel file system del server. La cache del disco ha una capacità maggiore della cache in memoria e viene mantenuta al riavvio del server. La posizione della cache del disco dipende dal server dell&#39;applicazione. Per informazioni sulla modifica del percorso della cache del disco, vedere [Specificare i percorsi dei file per l&#39;output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
 
 ## Specifica della modalità cache {#specifying-the-cache-mode}
 
@@ -39,7 +39,7 @@ L&#39;output supporta due modalità di caching:
 * incondizionato
 * utilizzo del punto di controllo della cache
 
-Se passi da una modalità di cache all’altra, riavvia il servizio di output per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere [Avviare o arrestare i servizi associati ai moduli AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per istruzioni.
+Se passi da una modalità di cache all’altra, riavvia il servizio di output per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere [Avviare o arrestare i servizi associati ai moduli AEM forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per le istruzioni.
 
 Il tempo del punto di controllo della cache viene reimpostato automaticamente quando si passa da una modalità all&#39;altra.
 
@@ -49,7 +49,7 @@ In questa modalità, quando il servizio di output riceve una richiesta, convalid
 
 Questa modalità di cache garantisce l’utilizzo delle risorse più recenti. Tuttavia, le prestazioni sono influenzate dal fatto che il servizio di output convalida gli elementi memorizzati in cache rispetto all’archivio con ogni richiesta. Questa modalità cache è adatta per gli ambienti di sviluppo e staging in cui le risorse vengono aggiornate frequentemente e le prestazioni non rappresentano un problema primario.
 
-**Specificare la memorizzazione in cache non condizionale**
+**Specificare il caching incondizionato**
 
 1. Nella console di amministrazione, fai clic su Servizi > output.
 1. In Impostazioni controllo cache di output, selezionare Incondizionatamente e fare clic su Salva.
@@ -65,7 +65,7 @@ Utilizza questa modalità cache in ambienti di produzione ad alte prestazioni in
 1. In Administration Console, fare clic su Servizi > output.
 1. In Impostazioni controllo cache di output, selezionare Solo se l&#39;ultima convalida è stata eseguita prima dell&#39;ora del punto di controllo della cache e fare clic su Salva.
 
-**Reimposta il punto di controllo della cache**
+**Reimpostare il punto di controllo della cache**
 
 1. Nella console di amministrazione, fai clic su Servizi > output.
 1. In Impostazioni controllo cache di output fare clic su Punto di controllo cache.
@@ -89,9 +89,9 @@ Per accedere a queste impostazioni, nella console di amministrazione, fai clic s
 
 ### Specifica delle impostazioni globali della cache {#specifying-global-cache-settings}
 
-Le impostazioni in **Impostazioni cache globale** di tutti i tipi di cache. Se si modifica una di queste impostazioni, riavviare il servizio di output per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere [Avviare o arrestare i servizi associati ai moduli AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per istruzioni.
+Le impostazioni nell&#39;area **Global Cache Settings** hanno effetto su tutti i tipi di cache. Se si modifica una di queste impostazioni, riavviare il servizio di output per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere [Avviare o arrestare i servizi associati ai moduli AEM forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per le istruzioni.
 
-**Dimensione massima documento cache (KB):** Dimensione massima, in kilobyte, della struttura di un modulo o di un&#39;altra risorsa che può essere memorizzata in qualsiasi cache in memoria. Si tratta di un’impostazione globale applicabile a tutte le cache in memoria. Se la risorsa è maggiore di questo valore, non viene memorizzata nella cache. Il valore predefinito è 1024 kilobyte. Questa impostazione non influisce sulla cache del disco.
+**Dimensione massima documento cache (KB):** La dimensione massima, in kilobyte, di una struttura di modulo o di un&#39;altra risorsa che può essere archiviata in qualsiasi cache in memoria. Si tratta di un’impostazione globale applicabile a tutte le cache in memoria. Se la risorsa è maggiore di questo valore, non viene memorizzata nella cache. Il valore predefinito è 1024 kilobyte. Questa impostazione non influisce sulla cache del disco.
 
 **Cache di rendering moduli abilitata:** Per impostazione predefinita, questa opzione è selezionata, il che significa che i moduli sottoposti a rendering vengono memorizzati nella cache per il recupero successivo. Questa impostazione ha scarso effetto sulle prestazioni del servizio di output perché non memorizza in cache i documenti non interattivi. Questa opzione ha effetto quando si utilizza il servizio di output per i documenti non interattivi sottoposti a rendering sul client.
 
@@ -99,29 +99,29 @@ Le impostazioni in **Impostazioni cache globale** di tutti i tipi di cache. Se s
 
 Quando il servizio di output riceve una richiesta di rendering, recupera la progettazione del modulo dal repository o da un&#39;origine HTTP e la memorizza nella cache. Questo caching migliora le prestazioni perché per le successive richieste di rendering, il servizio di output recupera la progettazione del modulo dalla cache anziché dall’archivio.
 
-Il servizio di output memorizza sempre nella cache le progettazioni dei moduli su disco. Se le progettazioni dei moduli sono memorizzate sul server, tali file vengono considerati cache del disco. Il servizio di output memorizza nella cache anche le progettazioni dei moduli, in base all’impostazione nella **Nella cache dei modelli di memoria** area. Se modifichi una di queste impostazioni, riavvia il servizio di output per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere [Avviare o arrestare i servizi associati ai moduli AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per istruzioni.
+Il servizio di output memorizza sempre nella cache le progettazioni dei moduli su disco. Se le progettazioni dei moduli sono memorizzate sul server, tali file vengono considerati cache del disco. Il servizio di output memorizza nella cache anche le progettazioni dei moduli in memoria, in base all&#39;impostazione nell&#39;area **In Memory Template Cache**. Se modifichi una di queste impostazioni, riavvia il servizio di output per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere [Avviare o arrestare i servizi associati ai moduli AEM forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per le istruzioni.
 
-**Template Configuration Cache Size:** Numero massimo di oggetti di configurazione del modello da mantenere in memoria. Il valore predefinito è 100. È consigliabile impostare questo valore su un valore maggiore o uguale al valore di Dimensione cache modello. Questa impostazione non influisce sulla cache del disco.
+**Dimensioni cache configurazione modello:** Il numero massimo di oggetti configurazione modello da mantenere in memoria. Il valore predefinito è 100. È consigliabile impostare questo valore su un valore maggiore o uguale al valore di Dimensione cache modello. Questa impostazione non influisce sulla cache del disco.
 
-**Template Cache Size:** Numero massimo di oggetti contenuto modello da mantenere in memoria. Il valore predefinito è 100. Questa impostazione non influisce sulla cache del disco.
+**Dimensione cache modello:** il numero massimo di oggetti contenuto modello da mantenere in memoria. Il valore predefinito è 100. Questa impostazione non influisce sulla cache del disco.
 
-**Attivato:** Per impostazione predefinita, questa casella di controllo è selezionata, il che significa che i modelli di modulo sono memorizzati nella cache. Se questa opzione non è selezionata, i modelli di modulo vengono memorizzati nella cache solo su disco.
+**Abilitato:** Per impostazione predefinita, questa casella di controllo è selezionata, il che significa che i modelli di modulo sono memorizzati nella cache. Se questa opzione non è selezionata, i modelli di modulo vengono memorizzati nella cache solo su disco.
 
 ### Memorizzazione in cache di frammenti e immagini {#caching-fragments-and-images}
 
 Il servizio di output memorizza nella cache frammenti e immagini utilizzati nelle progettazioni di moduli su disco. Ciò migliora le prestazioni perché i frammenti e le immagini vengono letti dall’archivio solo alla prima richiesta. Quindi, nelle richieste successive, il servizio di output legge i frammenti e le immagini dalla cache del disco. I frammenti e le immagini vengono memorizzati nella cache solo su disco e non in memoria.
 
-È possibile utilizzare le seguenti impostazioni per controllare la memorizzazione nella cache su disco di frammenti e immagini. Queste impostazioni sono **Impostazioni cache risorse modello** area:
+È possibile utilizzare le seguenti impostazioni per controllare la memorizzazione nella cache su disco di frammenti e immagini. Queste impostazioni si trovano nell&#39;area **Impostazioni cache risorse modello**:
 
 **Memorizzazione in cache delle risorse** Selezionare una delle opzioni seguenti dall&#39;elenco:
 
-**Attivato per frammenti e immagini:** Il servizio di output memorizza nella cache frammenti e immagini. Questa è l&#39;opzione predefinita.
+**Abilitato per frammenti e immagini:** Il servizio di output memorizza nella cache frammenti e immagini. Questa è l&#39;opzione predefinita.
 
-**Abilitato per frammenti:** Il servizio di output memorizza nella cache i frammenti, ma non le immagini.
+**Abilitato per i frammenti:** Il servizio di output memorizza nella cache i frammenti, ma non le immagini.
 
-**Disattivato:** Il servizio di output non memorizza in cache frammenti o immagini.
+**Disabilitato:** Il servizio di output non memorizza nella cache frammenti o immagini.
 
-**Intervallo pulizia (secondi):** Specifica la frequenza con cui il servizio di output rimuove i vecchi file di cache non validi. Il servizio di output non rimuove i file di cache validi. Se si modifica l&#39;intervallo di pulizia, riavviare il servizio di output per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere Avviare o arrestare i servizi associati ai moduli AEM Forms per le istruzioni.
+**Intervallo di pulizia (secondi):** Specifica la frequenza con cui il servizio di output rimuove i vecchi file della cache non validi. Il servizio di output non rimuove i file di cache validi. Se si modifica l&#39;intervallo di pulizia, riavviare il servizio di output per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere Avviare o arrestare i servizi associati ai moduli AEM Forms per le istruzioni.
 
 ## Considerazioni sul clustering per le cache {#clustering-considerations-for-caches}
 

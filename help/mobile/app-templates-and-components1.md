@@ -31,11 +31,11 @@ Ogni Modello presenta una selezione di componenti disponibili per l’uso.
 
 >[!NOTE]
 >
->Per informazioni su come sviluppare l’applicazione Adobe Experience Manager (AEM) utilizzando CRXDE Liti, consulta [Sviluppo con CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md).
+>Per informazioni su come sviluppare l&#39;applicazione Adobe Experience Manager (AEM) utilizzando CRXDE Lite, vedere [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Un modello è la base di una pagina.
 
-Per creare una pagina, è necessario copiare il modello (albero dei nodi) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) alla posizione corrispondente nella struttura del sito: questo è ciò che accade se una pagina viene creata utilizzando **Siti Web** scheda.
+Per creare una pagina, è necessario copiare il modello (albero dei nodi **/apps/&lt;myapp>/templates/&lt;mytemplate>**) nella posizione corrispondente nell&#39;albero del sito: questo è ciò che accade se si crea una pagina utilizzando la scheda **Siti Web**.
 
 Questa azione di copia fornisce anche alla pagina il suo contenuto iniziale (in genere solo Contenuto di primo livello) e la proprietà sling:resourceType, il percorso del componente pagina utilizzato per il rendering della pagina (tutto ciò che si trova nel nodo figlio jcr:content).
 
@@ -46,14 +46,14 @@ Vi sono due aspetti da considerare:
 * la struttura del modello stesso
 * la struttura del contenuto prodotto quando viene utilizzato un modello
 
-Un modello viene creato sotto un nodo di tipo **cq:Template**.
+Un modello viene creato in un nodo di tipo **cq:Template**.
 
 È possibile impostare varie proprietà, in particolare:
 
 * **jcr:title** - titolo del modello; viene visualizzato nella finestra di dialogo durante la creazione di una pagina.
-* **jcr:descrizione** : descrizione del modello; viene visualizzata nella finestra di dialogo durante la creazione di una pagina.
+* **jcr:description** - descrizione del modello; viene visualizzato nella finestra di dialogo durante la creazione di una pagina.
 
-Questo nodo contiene *a jcr:content (cq:PageContent)* che viene utilizzato come base per il nodo di contenuto delle pagine risultanti. Questo fa riferimento, utilizzando *sling:resourceType*, il componente da utilizzare per il rendering del contenuto effettivo di una nuova pagina.
+Questo nodo contiene *un nodo jcr:content (cq:PageContent)* che viene utilizzato come base per il nodo di contenuto delle pagine risultanti. Questo fa riferimento, utilizzando *sling:resourceType*, al componente da utilizzare per il rendering del contenuto effettivo di una nuova pagina.
 
 >[!NOTE]
 >

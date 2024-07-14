@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Nozioni di base sulla gestione di certificati e credenziali {#basics-of-managing-certificates-and-credentials}
 
-A *credenziali* contiene le informazioni sulla chiave privata necessarie per la firma o l&#39;identificazione dei documenti. A *certificato* sono informazioni sulla chiave pubblica configurate per l&#39;attendibilità. I moduli AEM utilizzano certificati e credenziali per diversi scopi:
+Una *credenziale* contiene le informazioni sulla chiave privata necessarie per firmare o identificare i documenti. Un *certificato* è un&#39;informazione di chiave pubblica configurata per l&#39;attendibilità. I moduli AEM utilizzano certificati e credenziali per diversi scopi:
 
-* Le estensioni Acrobat Reader DC utilizzano una credenziale per abilitare i diritti di utilizzo di Adobe Reader nei documenti PDF. (vedere [Configurazione delle credenziali per l’utilizzo con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* Puoi configurare il Rights Management in modo che visualizzi le credenziali da utilizzare in Acrobat solo da emittenti attendibili. (vedere [Configura impostazioni di visualizzazione Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) Il certificato deve contenere il nome comune (CN).
-* Il servizio di firma accede a certificati e credenziali. Per maggiori informazioni sul servizio di firma, vedere [Riferimento servizi](https://www.adobe.com/go/learn_aemforms_services_65).
+* Le estensioni Acrobat Reader DC utilizzano una credenziale per abilitare i diritti di utilizzo di Adobe Reader nei documenti PDF. (Vedi [Configurazione delle credenziali per l&#39;utilizzo con le estensioni di Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* Puoi configurare il Rights Management in modo che visualizzi le credenziali da utilizzare in Acrobat solo da emittenti attendibili. (Vedi [Configurare le impostazioni di visualizzazione del Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) Il certificato deve contenere il nome comune (CN).
+* Il servizio di firma accede a certificati e credenziali. Per informazioni dettagliate sul servizio di firma, vedere [Riferimento ai servizi](https://www.adobe.com/go/learn_aemforms_services_65).
 
-**Generazione di una chiave di coppia**
+**Generazione di una coppia di chiavi**
 
 I moduli AEM utilizzano il relativo archivio fonti attendibili per archiviare e gestire certificati, credenziali ed elenchi di revoche di certificati (CRL). È inoltre possibile utilizzare un dispositivo HSM (Hardware Security Module) indipendente per memorizzare le chiavi private.
 

@@ -25,7 +25,7 @@ ht-degree: 59%
 >
 >Per informazioni dettagliate relative a AEM e WCAG 2.1, consulta le pagine seguenti:
 >
->* [AEM e linee guida per l’accessibilità dei contenuti web](/help/managing/web-accessibility.md)
+>* [AEM e le linee guida per l&#39;accessibilità dei contenuti web](/help/managing/web-accessibility.md)
 >* [Guida rapida alle linee guida WCAG 2.1](/help/managing/qg-wcag.md)
 >* [Creazione di contenuto accessibile (conformità WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
 
@@ -35,14 +35,14 @@ Le linee guida WCAG 2.0 sono costituite da un insieme di criteri di successo e l
 >
 >Consulta anche:
 >
->* [Guida rapida alle linee guida WCAG 2.0](/help/managing/qg-wcag.md)
->* [Configurazione dell’editor Rich Text per la produzione di contenuto accessibile](/help/sites-administering/rte-accessible-content.md)
+>* [Guida rapida a WCAG 2.0](/help/managing/qg-wcag.md)
+>* [Configurazione dell&#39;editor Rich Text per la produzione di contenuto accessibile](/help/sites-administering/rte-accessible-content.md)
 >
 
 Queste linee guida sono classificate in base a tre livelli di conformità: livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
 
 * **Livello A**: il sito ha raggiunto un livello minimo di accessibilità di base. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A.
-* **Livello AA:** Il livello di accessibilità ideale da porsi come obiettivo, in cui il sito raggiunge un livello massimo di accessibilità che lo rende fruibile dal maggior numero di persone nella maggioranza delle situazioni utilizzando la maggior parte delle tecnologie. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A e livello AA.
+* **Livello AA:** il livello di accessibilità ideale da porsi come obiettivo, in cui il sito raggiunge un livello di accessibilità avanzato, affinché sia accessibile al maggior numero di persone nella gran parte delle situazioni e con l&#39;utilizzo di più tecnologie possibili. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A e livello AA.
 * **Livello AAA:** il sito ha raggiunto un livello molto alto di accessibilità. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A, AA e AAA.
 
 Quando si crea un sito, è necessario determinare il livello complessivo che si desidera ottenere.
@@ -83,33 +83,33 @@ Un ulteriore vantaggio utile riguarda le alternative testuali, le quali consento
 
 #### Come soddisfare il criterio - Contenuto non testuale (1.1.1) {#how-to-meet-non-text-content}
 
-Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un’alternativa testuale equivalente. Questo metodo viene eseguito in **Testo alternativo** campo:
+Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un’alternativa testuale equivalente. Questo metodo viene eseguito nel campo **Testo alternativo**:
 
 >[!NOTE]
 >
->Alcuni componenti pronti per l’uso, come **Carosello** e **Presentazione**, non consentono di aggiungere descrizioni di testo alternativo alle immagini. Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare `alt` attributo. In questo modo gli autori potranno aggiungerlo al contenuto (vedi [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+>Alcuni componenti pronti per l’uso, come **Carosello** e **Presentazione**, non consentono di aggiungere descrizioni di testo alternativo alle immagini. Quando implementi le versioni di questi componenti per l&#39;istanza AEM, il team di sviluppo dovrà configurarli per supportare l&#39;attributo `alt`. In questo modo gli autori potranno aggiungerlo al contenuto (vedi [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-Il **Testo alternativo** è disponibile nel **Avanzate** scheda proprietà immagine del **Immagine** finestra di dialogo del componente:
+Il campo **Testo alternativo** è disponibile nella scheda **Avanzate** delle proprietà dell&#39;immagine della finestra di dialogo del componente **Immagine**:
 
-![Finestra di dialogo per modifica del componente Immagine nell’interfaccia classica; mostra il campo Testo alternativo.](assets/chlimage_1-17a.png)
+![Finestra di dialogo per modifica del componente Immagine nell&#39;interfaccia classica; mostra il campo Testo alternativo.](assets/chlimage_1-17a.png)
 
-AEM aggiunge un **Testo alternativo** alle immagini per impostazione predefinita. Nell’interfaccia classica sono disponibili due scenari diversi per la creazione dell’attributo predefinito, anche se il valore predefinito potrebbe non essere sufficiente come alternativa e dovrebbe probabilmente essere modificato in **Avanzate** scheda proprietà immagine:
+Per impostazione predefinita, AEM aggiunge **Testo alternativo** alle immagini. Nell&#39;interfaccia classica sono disponibili due scenari diversi per la creazione dell&#39;attributo predefinito, anche se il valore predefinito potrebbe non essere sufficiente come alternativa e probabilmente dovrà essere modificato nella scheda **Avanzate** delle proprietà dell&#39;immagine:
 
 * File:
 
-  Un&#39;immagine viene caricata dal disco rigido dell&#39;utente. Se aggiungi un componente immagine a una pagina e quindi scegli un’immagine dal disco rigido o da un’altra origine, il valore predefinito per **Testo alternativo** è `file`. Questo valore deve essere modificato nella **Avanzate** scheda proprietà immagine. Anche in questo caso, questo valore non viene visualizzato nel **Testo alternativo** ma quando il valore viene modificato, il nuovo valore viene visualizzato nel campo.
+  Un&#39;immagine viene caricata dal disco rigido dell&#39;utente. Se aggiungi un componente immagine a una pagina e scegli un&#39;immagine dal disco rigido o da un&#39;altra origine, il valore predefinito per **Testo alternativo** è `file`. Questo valore deve essere modificato nella scheda delle proprietà dell&#39;immagine **Avanzate**. Anche in questo caso, questo valore non viene visualizzato nel campo **Testo alternativo**, ma quando viene modificato, il nuovo valore viene visualizzato nel campo.
 
 * Risorsa:
 
-  Un’immagine viene aggiunta dall’archivio delle risorse digitali. Se trascini un’immagine dall’archivio delle risorse digitali a una pagina web, il **Titolo** e **Testo alternativo** I valori per quell’immagine vengono ricavati dai metadati per quell’immagine.
+  Un’immagine viene aggiunta dall’archivio delle risorse digitali. Se trascini un&#39;immagine dal repository di risorse digitali a una pagina Web, i valori **Title** e **Alt Text** per tale immagine vengono ricavati dai metadati per tale immagine.
 
 >[!NOTE]
 >
->In entrambi gli scenari precedenti, il valore predefinito **Testo alternativo** non è visibile in **Proprietà immagine avanzate** scheda. Per modificare il valore predefinito, è sufficiente immettere un nuovo valore in **Testo alternativo** campo.
+>In entrambi gli scenari precedenti, il valore predefinito **Testo alternativo** non è visibile nella scheda **Proprietà immagine avanzate**. Per modificare il valore predefinito, immettere un nuovo valore nel campo **Testo alternativo**.
 
 >[!NOTE]
 >
->Se l&#39;immagine è puramente decorativa (vedere [Creazione di buone alternative testuali](#creating-good-text-alternatives)), è possibile immettere uno spazio nel **Testo alternativo** utilizzando la barra spaziatrice. In questo modo si crea un `alt` che richiede a un assistente vocale di ignorare l’immagine.
+>Se l&#39;immagine è puramente decorativa (vedere [Creazione di buone alternative di testo](#creating-good-text-alternatives)), è possibile immettere uno spazio nel campo **Testo alternativo** utilizzando la barra spaziatrice. In questo modo viene creato un attributo `alt` vuoto che richiede a un assistente vocale di ignorare l&#39;immagine.
 
 #### Creazione di buone alternative testuali  {#creating-good-text-alternatives}
 
@@ -126,13 +126,13 @@ Esistono varie forme di contenuti non testuali, di conseguenza il valore del tes
 * Se il contenuto non testuale è contenuto in un elemento pulsante e non è presente testo che fa parte dello stesso pulsante, il testo alternativo dell’immagine deve indicare la funzionalità del pulsante e non descrivere l’immagine.
 * È accettabile che a un’immagine venga assegnato testo alternativo vuoto (null), ma solo se l’immagine non ha testo alternativo. Si tratta ad esempio di un elemento grafico puramente decorativo. Oppure, se il testo equivalente è già presente nel testo della pagina.
 
-Il [Bozza W3C: tecniche HTML5 per fornire alternative testuali utili](https://html.spec.whatwg.org/multipage/images.html#alt) dispone di ulteriori dettagli ed esempi sulla fornitura di testo alternativo appropriato per immagini di tipi diversi.
+[Bozza W3C: tecniche HTML5 per fornire alternative testuali utili](https://html.spec.whatwg.org/multipage/images.html#alt) contiene ulteriori dettagli ed esempi di disposizioni testuali alternative appropriate per immagini di tipi diversi.
 
 Tipi specifici di contenuto non testuale che richiedono alternative testuali potrebbero includere:
 
 * Foto illustrative:
 
-  Queste sono immagini di persone, oggetti o luoghi. Pensa al ruolo della foto nella pagina; un equivalente testuale appropriato sarà probabilmente *Foto di [oggetto]*, ma può dipendere dal testo circostante.
+  Queste sono immagini di persone, oggetti o luoghi. Pensa al ruolo della foto nella pagina; un equivalente testuale appropriato sarà probabilmente *Foto di [oggetto]*, ma potrebbe dipendere dal testo circostante.
 
 * Icone:
 
@@ -140,11 +140,11 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 
 * Grafici:
 
-  In genere rappresentano dati numerici. Pertanto, un&#39;opzione per fornire un testo alternativo potrebbe essere quella di includere un breve riepilogo delle principali tendenze mostrate nel grafico o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando **Descrizione** campo in **Avanzate** scheda proprietà immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
+  In genere rappresentano dati numerici. Pertanto, un&#39;opzione per fornire un testo alternativo potrebbe essere quella di includere un breve riepilogo delle principali tendenze mostrate nel grafico o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando il campo **Description** nella scheda **Advanced** delle proprietà dell&#39;immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
 
-  ![Esempio di un grafico. Di seguito è riportato l’approccio migliore per fornire un’alternativa.](assets/chlimage_1-2a.jpeg)
+  ![Esempio di grafico. Di seguito è riportato l&#39;approccio migliore per fornire un&#39;alternativa.](assets/chlimage_1-2a.jpeg)
 
-  Per fornire un’alternativa per questo grafico di esempio, aggiungi un `alt` invia testo all’immagine stessa e quindi segui l’immagine con un’alternativa di testo completo.
+  Per fornire un&#39;alternativa per questo grafico di esempio, aggiungere un testo `alt` conciso all&#39;immagine stessa, quindi seguire l&#39;immagine con un&#39;alternativa di testo completo.
 
   ```xml
   <p><img src="figure1.gif" alt="Figure 1" ></p>
@@ -154,9 +154,9 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 
   >[!NOTE]
   >
-  >Lo snippet di cui sopra viene utilizzato solo per illustrare l’ordine. Utilizza il **Immagine** anziché il `img src` riferimento utilizzato sopra.
+  >Lo snippet di cui sopra viene utilizzato solo per illustrare l’ordine. Utilizza il componente **Immagine** anziché il riferimento a `img src` utilizzato in precedenza.
 
-  Nell’AEM, è possibile utilizzare una combinazione di **Testo alternativo** e **Descrizione** campi nella finestra di dialogo di configurazione dell’immagine, come in [Come soddisfare il criterio - Contenuto non testuale (1.1.1)](#how-to-meet-non-text-content).
+  In AEM è possibile utilizzare una combinazione dei campi **Testo alternativo** e **Descrizione** nella finestra di dialogo di configurazione dell&#39;immagine, come in [Come soddisfare il criterio - Contenuto non testuale (1.1.1)](#how-to-meet-non-text-content).
 
 * Mappe, diagrammi, diagrammi di flusso:
 
@@ -164,7 +164,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 
 * CAPTCHA:
 
-  Un CAPTCHA è un *Test di Turing completamente automatizzato per distinguere computer e persone*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano, per poter superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche.
+  Un CAPTCHA è un *test di Turing pubblico completamente automatizzato per distinguere computer e persone*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano, per poter superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche.
 
   Il W3C fornisce diversi suggerimenti, ad esempio i seguenti. Ognuno di questi approcci presenta pro e contro.
 
@@ -193,7 +193,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 
 [Linea guida 1.2 - Media temporizzati: fornire alternative per gli elementi multimediali temporizzati.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
-Queste informazioni riguardano i contenuti web *basato sul tempo*. In questa sezione sono inclusi i contenuti che l&#39;utente può riprodurre (come video, audio e contenuti animati) e che possono essere preregistrati o in streaming.
+Queste informazioni sono relative al contenuto Web *basato sul tempo*. In questa sezione sono inclusi i contenuti che l&#39;utente può riprodurre (come video, audio e contenuti animati) e che possono essere preregistrati o in streaming.
 
 ### Solo audio e solo video (preregistrato) (1.2.1)  {#audio-only-and-video-only-pre-recorded}
 
@@ -267,7 +267,7 @@ I sottotitoli possono essere:
 
 Se possibile, utilizza i sottotitoli codificati. Consente agli utenti di scegliere se visualizzare o meno i sottotitoli.
 
-Per i sottotitoli codificati, crea e fornisci un file di sottotitoli sincronizzato in un formato appropriato, ad esempio [SMIL](https://www.w3.org/AudioVideo/), insieme al file video.
+Per i sottotitoli codificati, crea e fornisci un file di sottotitoli sincronizzati in un formato appropriato, ad esempio [SMIL](https://www.w3.org/AudioVideo/), insieme al file video.
 
 Consulta i tutorial in [Ulteriori informazioni - Sottotitoli (preregistrati) (1.2.2)](#more-information-captions-pre-recorded). Assicurati di includere una nota per informare gli utenti che per il video sono disponibili i sottotitoli.
 
@@ -299,7 +299,7 @@ Per soddisfare questo criterio di successo è possibile adottare due approcci. E
    * Durante le pause nella finestra di dialogo esistente, fornisci informazioni sulle modifiche della scena che non vengono presentate come parte della traccia audio esistente;
    * Fornisci una nuova traccia audio, aggiuntiva e facoltativa, contenente l’audio originale, ma anche informazioni audio ulteriori sui cambiamenti nella scena.
 
-      * Gli utenti possono passare dalla traccia audio esistente (che *non* contiene una descrizione audio) e la nuova traccia audio (che *fa* contiene una descrizione audio).
+      * Gli utenti possono passare dalla traccia audio esistente (che *non* contiene una descrizione audio) alla nuova traccia audio (che *contiene* una descrizione audio) e viceversa.
       * Questo metodo impedisce l’interruzione delle attività agli utenti che non necessitano della descrizione aggiuntiva.
 
    * Creare una seconda versione dei contenuti video per consentire descrizioni audio estese. In questo modo si riducono le difficoltà associate alla fornitura di descrizioni audio dettagliate negli spazi tra le finestre di dialogo esistenti, mettendo temporaneamente in pausa l’audio e il video nei punti appropriati. Di conseguenza, è possibile fornire una descrizione audio molto più lunga prima che l’azione ricominci. Come nell’esempio precedente, questa funzione è fornita come traccia audio aggiuntiva opzionale, per evitare interruzioni agli utenti che non necessitano della descrizione aggiuntiva.
@@ -326,7 +326,7 @@ Questo criterio di successo è identico a [Sottotitoli (preregistrati)](#caption
 
 #### Come soddisfare il criterio - Sottotitoli (in tempo reale) (1.2.4) {#how-to-meet-captions-live}
 
-Seguire le indicazioni fornite per [Sottotitoli (preregistrati)](#captions-pre-recorded) sopra. Tuttavia, data la natura live dei media, i sottotitoli dovranno essere creati il più rapidamente possibile e in risposta a ciò che sta accadendo. Pertanto, è consigliabile utilizzare strumenti per la creazione di sottotitoli in tempo reale o di sintesi vocale.
+Segui le indicazioni fornite per [Sottotitoli (preregistrati)](#captions-pre-recorded) qui sopra. Tuttavia, data la natura live dei media, i sottotitoli dovranno essere creati il più rapidamente possibile e in risposta a ciò che sta accadendo. Pertanto, è consigliabile utilizzare strumenti per la creazione di sottotitoli in tempo reale o di sintesi vocale.
 
 Istruzioni dettagliate al riguardo vanno oltre l&#39;ambito di questo documento, ma informazioni utili sono reperibili tramite le risorse seguenti:
 
@@ -359,11 +359,11 @@ Segui le indicazioni fornite per [Descrizione audio o elemento multimediale alte
 
 ### Adattabile (1.3)  {#adaptable}
 
-[Linea guida 1.3 - Adattabile: creare contenuti che possano essere rappresentati in modalità differenti (ad esempio con un layout più semplice), senza perdere informazioni o struttura.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Linea guida 1.3 - Adattabile: creare contenuti che possano essere rappresentati in modi diversi (ad esempio con un layout più semplice), senza perdere informazioni o struttura.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 Questa linea guida copre i requisiti necessari per supportare le persone che:
 
-* potrebbero non essere in grado di accedere alle informazioni presentate da un autore in un *standard* layout di pagina web a colori, bidimensionale e a più colonne
+* potrebbe non essere in grado di accedere alle informazioni come presentate da un autore in un layout *standard* di pagina Web bidimensionale, a più colonne e colorato
 
 * potrebbero utilizzare una visualizzazione solo audio o una alternativa, ad esempio testo di grandi dimensioni e a contrasto elevato.
 
@@ -381,17 +381,17 @@ Questo criterio di successo esiste per garantire che tali informazioni struttura
 
 #### Come soddisfare il criterio - Informazioni e correlazioni (1.3.1)  {#how-to-meet-info-and-relationships}
 
-L’AEM semplifica la creazione di pagine web utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell’editor Rich Text (un componente testo) e utilizza **Formato** per specificare l&#39;elemento strutturale appropriato, ad esempio paragrafo e intestazione.
+L’AEM semplifica la creazione di pagine web utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell&#39;editor Rich Text (un componente testo) e utilizza il menu **Formato** per specificare l&#39;elemento strutturale appropriato (ad esempio paragrafo e intestazione).
 
-Nell&#39;immagine seguente viene illustrato il testo a cui è stato applicato lo stile di testo paragrafo. Nella visualizzazione del codice sorgente viene indicato che il testo presenta l&#39;apertura e la chiusura corrette &lt;p> e &lt;/p> tag.
+Nell&#39;immagine seguente viene illustrato il testo a cui è stato applicato lo stile di testo paragrafo. Nella vista del codice sorgente in uso vengono visualizzati i tag di apertura e chiusura &lt;p> e &lt;/p> corretti.
 
-![Un esempio dell’elemento Paragraph visualizzato in modalità di modifica sorgente (interfaccia classica).](assets/chlimage_1-18a.png)
+![Esempio dell&#39;elemento Paragraph visualizzato nella modalità di modifica dell&#39;origine (interfaccia classica).](assets/chlimage_1-18a.png)
 
 Assicurati che alle pagine web sia associata la struttura appropriata:
 
 * **Utilizzando i titoli:**  
 
-  Se le funzioni di accessibilità dell’editor Rich Text sono abilitate (consulta [AEM e accessibilità](/help/sites-administering/rte-accessible-content.md)), l’AEM offre tre livelli di intestazione di pagina. Puoi utilizzarli per identificare sezioni e sottosezioni di contenuto. Titolo 1 rappresenta il livello di intestazione più alto, Titolo 3 quello più basso. L’amministratore di sistema può configurare il sistema per consentire l’utilizzo di più livelli di intestazione.
+  Se le funzioni di accessibilità dell&#39;editor Rich Text sono abilitate (vedere [AEM e accessibilità](/help/sites-administering/rte-accessible-content.md)), l&#39;AEM offre tre livelli di intestazione di pagina. Puoi utilizzarli per identificare sezioni e sottosezioni di contenuto. Titolo 1 rappresenta il livello di intestazione più alto, Titolo 3 quello più basso. L’amministratore di sistema può configurare il sistema per consentire l’utilizzo di più livelli di intestazione.
 
   Nell&#39;immagine seguente viene illustrato un esempio dei diversi tipi di intestazione.
 
@@ -399,10 +399,10 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
 * **Testo evidenziato**:
 
-  Utilizza l’elemento o per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
+  Utilizza l’elemento &lt;strong> o &lt;em> per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
 
    * Evidenzia il testo che desideri mettere in evidenza.
-   * Fai clic sul pulsante **B** icona (per &lt;strong>) o **I** icona (per &lt;em>) visualizzato all&#39;interno del **Proprietà** (assicurati che sia selezionato HTML).
+   * Fai clic sull&#39;icona **B** (per &lt;strong>) o sull&#39;icona **I** (per &lt;em>) visualizzata nel pannello **Proprietà** (accertati che HTML sia selezionato).
 
   >[!NOTE]
   >
@@ -411,15 +411,15 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
   >* &lt;b> per &lt;strong>
   * &lt;i> per &lt;em>
   >
-  L’efficacia è la stessa, ma e sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il team di sviluppo può configurare l’editor Rich Text in modo che utilizzi e  (anziché e ) durante lo sviluppo dell’istanza di progetto.
+  L’efficacia è la stessa, ma &lt;strong> e &lt;em> sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il team di sviluppo può configurare l’editor Rich Text in modo che utilizzi &lt;strong> e &lt;em> (anziché &lt;b> e &lt;i>) durante lo sviluppo dell’istanza di progetto.
 
 * **Utilizzare gli elenchi**: è possibile utilizzare l’HTML per specificare tre diversi tipi di elenchi:
 
-   * Il `<ul>` l&#39;elemento viene utilizzato per *non ordinato* elenchi (puntati). Le singole voci dell&#39;elenco sono identificate mediante `<li>` elemento.
+   * L&#39;elemento `<ul>` viene utilizzato per *elenchi non ordinati* (puntati). Le singole voci dell&#39;elenco sono identificate dall&#39;elemento `<li>`.
 
-     nell’editor Rich Text, utilizza **Elenco puntato** icona.
+     nell&#39;editor Rich Text, utilizzare l&#39;icona **Elenco puntato**.
 
-   * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell&#39;elenco sono identificate mediante `<li>` elemento.
+   * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell&#39;elenco sono identificate dall&#39;elemento `<li>`.
 
      Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
 
@@ -427,9 +427,9 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  Il `<dl>` non è supportato dall&#39;editor Rich Text.
+  Elemento `<dl>` non supportato dall&#39;editor Rich Text.
 
-* **Utilizzare le tabelle**:
+* **Usa tabelle**:
 
   Le tabelle di dati devono essere identificate utilizzando gli elementi di tabella HTML:
 
@@ -440,7 +440,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  Le tabelle devono essere realizzate con **Tabella** componente. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
+  Le tabelle devono essere realizzate con il componente **Tabella**. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
 
   Inoltre, le tabelle accessibili utilizzano gli elementi e gli attributi seguenti:
 
@@ -452,20 +452,20 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
   >
   Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-  Quando si aggiunge una **Tabella**, puoi configurare **Proprietà tabella** mediante la finestra di dialogo.
+  Quando si aggiunge una **Tabella**, è possibile configurare **Proprietà tabella** utilizzando la finestra di dialogo.
 
-   * un appropriato **Didascalia**.
+   * **Didascalia** appropriata.
    * È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Margine celle**, **Spaziatura celle**. dato che queste proprietà possono essere impostate in un foglio di stile globale.
 
-  ![Finestra di dialogo Proprietà tabella.](assets/chlimage_1-20a.png)
+  ![Finestra di dialogo delle proprietà della tabella.](assets/chlimage_1-20a.png)
 
-  È quindi possibile utilizzare **Proprietà cella** per scegliere se si tratta di una cella di dati o di intestazione e, se si tratta di una cella di intestazione, se si tratta di una riga o di una colonna o di entrambe:
+  È quindi possibile utilizzare le **proprietà cella** per scegliere se la cella è una cella di dati o di intestazione e, se si tratta di una cella di intestazione, se si riferisce a una riga o a una colonna o a entrambe:
 
-  ![Finestra di dialogo delle proprietà della chiamata; impostazione di una riga (in genere la prima) come riga di intestazione.](assets/chlimage_1-21a.png)
+  ![Finestra di dialogo delle proprietà di chiamata; impostazione di una riga (in genere la prima) come riga di intestazione.](assets/chlimage_1-21a.png)
 
 * **Tabelle dati complesse:**
 
-  Talvolta, in presenza di tabelle complesse con due o più livelli di intestazioni, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate utilizzando **intestazione** e **id** attributi. Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
+  Talvolta, in presenza di tabelle complesse con due o più livelli di intestazioni, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate utilizzando gli attributi **header** e **id**. Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
 
   >[!NOTE]
   >
@@ -473,7 +473,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  Le tabelle devono essere realizzate con **Tabella** componente. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
+  Le tabelle devono essere realizzate con il componente **Tabella**. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
 
   ```xml
   <table>
@@ -533,12 +533,12 @@ Per requisiti relativi alle alternative di colore, consulta [Utilizzo del colore
 
 Assicurati che anche tutte le informazioni che si basano sulle caratteristiche visive del contenuto della pagina siano presentate in un formato alternativo.
 
-* Non fare affidamento alla posizione visiva per dare informazioni. Ad esempio, se desideri indirizzare gli utenti a un menu sul lato destro della pagina per accedere a ulteriori informazioni, non fare riferimento a *il menu a destra*; invece, assegna un nome al menu (ad esempio, tramite un’intestazione) e fai riferimento a tale nome nel testo.
+* Non fare affidamento alla posizione visiva per dare informazioni. Ad esempio, se desideri indirizzare gli utenti a un menu sul lato destro della pagina per accedere a ulteriori informazioni, non fare riferimento a *il menu sul lato destro*; invece, denomina il menu (ad esempio, tramite un&#39;intestazione) e fai riferimento a tale nome nel testo.
 * Non fare affidamento sullo stile del testo (ad esempio, testo in grassetto o in corsivo) come unico modo per trasmettere le informazioni.
 
 >[!NOTE]
 >
-L’uso di termini descrittivi è accettabile se si ritiene che abbiano un significato in un contesto non visivo. Ad esempio, utilizzando *sopra* e *sotto* sono generalmente accettabili, in quanto implicano rispettivamente contenuti prima e dopo un particolare contenuto. Avrebbe comunque senso quando il contenuto viene parlato ad alta voce.
+L’uso di termini descrittivi è accettabile se si ritiene che abbiano un significato in un contesto non visivo. Ad esempio, l&#39;utilizzo di *sopra* e *sotto* sarebbe generalmente accettabile, in quanto implicano rispettivamente contenuti prima e dopo un particolare elemento di contenuto. Avrebbe comunque senso quando il contenuto viene parlato ad alta voce.
 
 #### Ulteriori informazioni - Caratteristiche sensoriali (1.3.3) {#more-information-sensory-characteristics}
 
@@ -661,7 +661,7 @@ Le immagini di testo vengono spesso utilizzate quando si preferisce un particola
 
 #### Come soddisfare il criterio - Immagini di testo (1.4.5) {#how-to-meet-images-of-text}
 
-Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle con testo equivalente in HTML, in modo che sia possibile personalizzare il testo. Per un esempio, vedi [C30: Utilizzo di CSS per sostituire il testo con immagini di testo e fornitura di controlli dell’interfaccia utente per cambiare](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
+Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle con testo equivalente in HTML, in modo che sia possibile personalizzare il testo. Per un esempio, vedere [C30: utilizzo di CSS per sostituire il testo con immagini di testo e fornitura di controlli dell&#39;interfaccia utente per passare a un altro elemento](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
 #### Ulteriori informazioni - Immagini di testo (1.4.5) {#more-information-images-of-text}
 
@@ -681,14 +681,16 @@ Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle c
    * Spostamento, lampeggiamento, scorrimento: per qualsiasi informazione in movimento, lampeggiante o scorrevole che
       * a) si avvia automaticamente;
       * b) dura più di cinque secondi; e
-      * (c) è presentato in parallelo con altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, fermarlo o nasconderlo a meno che il movimento, il lampeggiamento o lo scorrimento non facciano parte di un’attività in cui sia essenziale;
+      * c) è presentato parallelamente ad altri contenuti;
+esiste un meccanismo che consente all’utente di metterlo in pausa, fermarlo o nasconderlo, a meno che il movimento, il lampeggiamento o lo scorrimento non facciano parte di un’attività in cui sia essenziale;
    * Auto-update (Aggiornamento automatico): per qualsiasi informazione che viene aggiornata automaticamente
       * a) si avvii automaticamente; e
-      * (b) è presentato in parallelo ad altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, interromperlo o nasconderlo o di controllare la frequenza dell’aggiornamento a meno che l’aggiornamento automatico non faccia parte di un’attività in cui è essenziale.
+      * b) è presentato parallelamente ad altri contenuti;
+esiste un meccanismo che consente all’utente di metterlo in pausa, interromperlo o nasconderlo oppure di controllare la frequenza dell’aggiornamento, a meno che l’aggiornamento automatico non faccia parte di un’attività in cui è essenziale.
 
 Elementi da sottolineare:
 
-1. Per i requisiti relativi a contenuti che sfarfallano o lampeggiano, consulta [Non progettare contenuti con modalità che possano causare attacchi epilettici (2.3)](#seizures).
+1. Per i requisiti relativi a contenuti che sfarfallano o lampeggiano, vedere [Non progettare contenuti con modalità che possano causare attacchi epilettici (2.3)](#seizures).
 1. Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (utilizzato per soddisfare altri criteri di successo o meno) deve soddisfare questo criterio. Consulta [Requisito di conformità 5: non interferenza](https://www.w3.org/TR/WCAG20/#cc5).
 1. I contenuti aggiornati periodicamente dal software o trasmessi in streaming all’agente utente non sono tenuti a conservare o presentare le informazioni generate o ricevute tra l’inizio della pausa e la ripresa della presentazione, in quanto ciò potrebbe non essere tecnicamente possibile e in molte situazioni potrebbe risultare fuorviante.
 1. Un&#39;animazione che si verifica come parte di una fase di precaricamento o situazione simile può essere considerata essenziale se non si possono verificare interazioni durante quella fase per tutti gli utenti e, se non viene indicato l&#39;avanzamento, potrebbe confondere l’utente o indurre a pensare che il contenuto sia bloccato o interrotto.
@@ -756,7 +758,7 @@ Questo criterio di successo consente a tutti gli utenti, indipendentemente da ev
 
 Quando crei una nuova pagina HTML in AEM, puoi specificare il titolo della pagina. Assicurati che il titolo descriva adeguatamente il contenuto della pagina, in modo che i visitatori possano identificare rapidamente se il contenuto è pertinente alle loro esigenze.
 
-È inoltre possibile modificare il titolo della pagina durante la modifica, accessibile da **Sidekick** - **Pagina** scheda - **Proprietà pagina...**
+È inoltre possibile modificare il titolo della pagina durante la modifica, accessibile da **Sidekick** - **Scheda Pagina** - **Proprietà pagina...**
 
 #### Ulteriori informazioni - Titolazione della pagina (2.4.2) {#more-information-page-titled}
 
@@ -787,7 +789,7 @@ Soprattutto, fai in modo che lo scopo di un collegamento sia chiaramente descrit
    * Testo: I nostri corsi serali per l’autunno 2010 - Dettagli.
    * Motivo: modificando leggermente il testo e la posizione dell’elemento di collegamento è possibile migliorare il testo di collegamento:
 
-I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se si chiama un collegamento a una pagina specifica **Pubblicazione** su una pagina, utilizza il testo anche su altre pagine per garantire la coerenza.
+I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se un collegamento a una pagina specifica è denominato **Pubblicazioni** in una pagina, utilizza il testo nelle altre pagine per garantire la coerenza.
 
 Tuttavia, al momento della stesura di questo articolo, l&#39;uso dei titoli solleva alcuni problemi:
 
@@ -822,7 +824,7 @@ Mentre è opportuno fornire un testo di collegamento che identifichi lo scopo de
 
 In alcuni casi, laddove in una pagina siano presenti diversi collegamenti (ciascuno dei quali fornisce la direzione di un collegamento con dettagli complessi ma necessari), può essere opportuno prevedere una versione alternativa della pagina web che mostri lo stesso contenuto, ma in cui il testo dei collegamenti non sia così dettagliato.
 
-In alternativa, puoi utilizzare script in modo da fornire una quantità minima di testo all’interno del collegamento stesso. Tuttavia, quando si attiva un controllo appropriato posizionato nella parte superiore della pagina, il testo del collegamento è *espanso* in dettaglio. Un approccio simile consiste nell’utilizzare i CSS per *nascondi* il collegamento completo da parte di utenti normovedenti, ma lo invia comunque a tutti gli utenti di utilità di lettura dello schermo. Questo obiettivo non rientra nel campo di applicazione del presente documento, ma ulteriori informazioni su come raggiungerlo sono reperibili nel [Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4)](#more-information-link-purpose-in-context) sezione.
+In alternativa, puoi utilizzare script in modo da fornire una quantità minima di testo all’interno del collegamento stesso. Tuttavia, quando si attiva un controllo appropriato posizionato nella parte superiore della pagina, il testo del collegamento viene *espanso* per fornire ulteriori dettagli. Un approccio simile consiste nell&#39;utilizzare CSS per *nascondere* il collegamento completo agli utenti normovedenti, ma mostrarlo agli utenti di utilità di lettura dello schermo. Questo non rientra nell&#39;ambito di questo documento, ma ulteriori informazioni su come ottenere questo risultato sono disponibili nella sezione [Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4)](#more-information-link-purpose-in-context).
 
 #### Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -866,7 +868,7 @@ In AEM, la lingua predefinita della pagina è impostata durante la creazione, ma
 
 * [Comprendere il criterio di successo 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
 * [Come soddisfare il criterio di successo 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
-* I codici sono basati sulla norma ISO 639-1. Un elenco più completo dei codici per ciascuna lingua è disponibile sul sito [Sito W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
+* I codici sono basati sulla norma ISO 639-1. Un elenco più completo dei codici per ogni lingua è disponibile nel sito [W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Parti in lingua (3.1.2)    {#language-of-parts}
 
@@ -929,13 +931,13 @@ Per aggiungere l’elemento span con una lingua appropriata, è possibile modifi
 
 Fornire istruzioni per aiutare le persone a completare i moduli è una parte fondamentale della buona prassi nell’usabilità dell’interfaccia. È utile per le persone con disabilità visive o cognitive che altrimenti potrebbero avere difficoltà a comprendere il layout di un modulo e il tipo di dati da fornire in un particolare campo del modulo.
 
-In AEM viene aggiunta un&#39;etichetta predefinita quando si aggiunge un componente del modulo, ad esempio **Campo di testo**, alla pagina. Questo titolo predefinito dipende dal tipo di componente. Puoi aggiungere un titolo personalizzato nella sezione **Titolo e testo** della finestra di dialogo per la modifica del campo. È importante assicurarsi che le etichette aiutino gli utenti a comprendere i dati associati a ciascun componente del modulo.
+In AEM viene aggiunta un&#39;etichetta predefinita quando si aggiunge alla pagina un componente modulo, ad esempio un **Campo di testo**. Questo titolo predefinito dipende dal tipo di componente. Puoi aggiungere un titolo personalizzato nella sezione **Titolo e testo** della finestra di dialogo per la modifica del campo. È importante assicurarsi che le etichette aiutino gli utenti a comprendere i dati associati a ciascun componente del modulo.
 
-![Scheda Titolo e testo (finestra di dialogo di modifica); è stato aggiunto il titolo &quot;Descrizione&quot;.](assets/chlimage_1-22a.png)
+![Scheda Titolo e testo (finestra di dialogo di modifica); il titolo &#39;Descrizione&#39; è stato aggiunto.](assets/chlimage_1-22a.png)
 
 Il campo **Titolo** deve essere utilizzato per gli elementi di campo in quanto fornisce un’etichetta che è disponibile per la tecnologia per l’accessibilità. Scrivere semplicemente un’etichetta di testo accanto al campo non è sufficiente.
 
-Per alcuni componenti modulo è inoltre possibile nascondere visivamente le etichette utilizzando **Nascondi titolo** casella di controllo. Le etichette nascoste in questo modo sono ancora disponibili per la tecnologia di assistenza, ma non vengono visualizzate sullo schermo. Anche se questo può essere un buon approccio in alcune situazioni, è meglio includere un’etichetta visiva laddove possibile. Alcuni utenti guardano una piccola sezione dello schermo (un campo alla volta) e hanno bisogno delle etichette per identificare correttamente il campo.
+Per alcuni componenti modulo è inoltre possibile nascondere visivamente le etichette utilizzando la casella di controllo **Nascondi titolo**. Le etichette nascoste in questo modo sono ancora disponibili per la tecnologia di assistenza, ma non vengono visualizzate sullo schermo. Anche se questo può essere un buon approccio in alcune situazioni, è meglio includere un’etichetta visiva laddove possibile. Alcuni utenti guardano una piccola sezione dello schermo (un campo alla volta) e hanno bisogno delle etichette per identificare correttamente il campo.
 
 #### Pulsanti immagine {#image-buttons}
 
@@ -945,11 +947,11 @@ Se utilizzi i pulsanti immagine (ad esempio, il componente **Pulsante immagine**
 
 #### Gruppi di campi modulo {#groups-of-form-fields}
 
-Se esiste un gruppo di controlli correlati, ad esempio **Gruppo pulsanti di scelta**, un titolo può essere necessario per il gruppo e per i singoli controlli. Quando si aggiunge un set di pulsanti di scelta in AEM, il campo **Titolo** fornisce il titolo del gruppo, mentre i singoli titoli vengono specificati durante la creazione dei pulsanti di scelta (**Elementi**).
+Se è presente un gruppo di controlli correlati, ad esempio **Gruppo pulsanti di scelta**, potrebbe essere necessario assegnargli un titolo e controlli specifici. Quando si aggiunge un set di pulsanti di scelta in AEM, il campo **Titolo** fornisce il titolo del gruppo, mentre i singoli titoli vengono specificati durante la creazione dei pulsanti di scelta (**Elementi**).
 
 ![Aggiunta di elementi al gruppo radio. Il titolo del gruppo è &quot;Contattami per&quot;, definito nel campo Titolo.](assets/chlimage_1-24a.png)
 
-Tuttavia, non esiste alcuna associazione programmatica tra il titolo del gruppo e i pulsanti di scelta. Gli editor di modelli devono racchiudere il titolo tra i `fieldset` e `legend` tag per creare questa associazione. Questa operazione può essere eseguita solo modificando il codice sorgente della pagina. In alternativa, un amministratore di sistema può aggiungere il supporto di questi elementi affinché vengano visualizzati nella finestra di dialogo **Proprietà campo** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Tuttavia, non esiste alcuna associazione programmatica tra il titolo del gruppo e i pulsanti di scelta. Per creare questa associazione, gli editor modelli devono racchiudere il titolo tra i tag `fieldset` e `legend` necessari. Questa operazione può essere eseguita solo modificando il codice sorgente della pagina. In alternativa, un amministratore di sistema può aggiungere il supporto di questi elementi affinché vengano visualizzati nella finestra di dialogo **Proprietà campo** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Considerazioni aggiuntive relative ai moduli {#additional-considerations-for-forms}
 
@@ -957,7 +959,7 @@ Se i dati devono essere immessi in un formato specifico, specificalo chiaramente
 
 Se l’input di un campo modulo è obbligatorio, specificalo integrando la parola “obbligatorio” nell’etichetta. AEM aggiunge un asterisco quando un campo è obbligatorio, ma sarebbe ideale includere la parola `required` nell’etichetta stessa (nel campo **Titolo** della finestra di dialogo di modifica).
 
-![Aggiunta di informazioni aggiuntive (parola richiesta) per gli utenti di utilità di lettura dello schermo nel campo &quot;Titolo&quot;.](assets/chlimage_1-25a.png)
+![Aggiunta di informazioni aggiuntive (parola obbligatoria) per gli utenti di utilità di lettura dello schermo nel campo &#39;Titolo&#39;.](assets/chlimage_1-25a.png)
 
 Il posizionamento delle etichette è importante anche in quanto aiuta a individuare campi appropriati. Questo è di particolare importanza quando l’utente si trova di fronte a un modulo complesso. Segui la convenzione qui di seguito:
 
@@ -969,7 +971,7 @@ Il posizionamento delle etichette è importante anche in quanto aiuta a individu
 
   Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
 
-In moduli semplici con funzionalità limitata, etichettare in modo appropriato `Submit` può fungere da etichetta per il campo adiacente (ad esempio, `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
+Nei moduli semplici con funzionalità limitata, l&#39;etichettatura appropriata di un pulsante `Submit` può fungere da etichetta per il campo adiacente, ad esempio `Search`. Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
 
 #### Ulteriori informazioni - Etichette o istruzioni (3.3.2) {#more-information-labels-or-instructions}
 

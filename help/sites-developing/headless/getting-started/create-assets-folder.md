@@ -1,5 +1,5 @@
 ---
-title: Guida rapida alla creazione di una cartella di risorse headless
+title: Guida rapida alla creazione di una cartella Assets headless
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
@@ -12,7 +12,7 @@ ht-degree: 78%
 
 ---
 
-# Guida rapida alla creazione di una cartella di risorse headless {#creating-an-assets-folder}
+# Guida rapida alla creazione di una cartella Assets headless {#creating-an-assets-folder}
 
 Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless. I frammenti di contenuto vengono poi memorizzati nelle cartelle di risorse.
 
@@ -22,14 +22,14 @@ Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura d
 
 Tuttavia, è necessario innanzitutto creare una cartella di risorse in cui memorizzarli.
 
-Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenuti tradizionali](/help/assets/manage-assets.md) come immagini e video e frammenti di contenuto.
+Le cartelle di Assets vengono utilizzate per [organizzare risorse di contenuti tradizionali](/help/assets/manage-assets.md) come immagini e video e frammenti di contenuto.
 
 ## Creare una cartella di risorse {#how-to-create-an-assets-folder}
 
 Di solito, un amministratore deve creare cartelle solo occasionalmente, per organizzare i contenuti al momento della creazione. Ai fini di questa guida introduttiva, è sufficiente creare una sola cartella.
 
-1. Accedi all’AEM e dal menu principale seleziona **Navigazione > Risorse > File**.
-1. Clic **Crea > Cartella**.
+1. Accedi a AEM e dal menu principale seleziona **Navigazione > Assets > File**.
+1. Fare clic su **Crea > Cartella**.
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventerà il nome del nodo nell’archivio.
@@ -37,12 +37,12 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
       * Se necessario è possibile modificarlo.
 
    ![Crea cartella](assets/assets-folder-create.png)
-1. Seleziona la cartella creata, quindi fai clic su **Proprietà** dalla barra degli strumenti (oppure utilizza `p` [scelte rapide da tastiera.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Seleziona la cartella creata, quindi seleziona **Proprietà** dalla barra degli strumenti (oppure utilizza la `p` [scelta rapida da tastiera.](/help/sites-authoring/keyboard-shortcuts.md))
 1. In **Proprietà**, seleziona la scheda **Servizi cloud**.
 1. In **Configurazione cloud** seleziona la [configurazione creata in precedenza.](create-configuration.md)
    ![Configurare la cartella delle risorse](assets/assets-folder-configure.png)
 1. Fai clic su **Salva e chiudi**.
-1. Clic **OK** nella finestra di conferma.
+1. Fare clic su **OK** nella finestra di conferma.
 
    ![Finestra di conferma](assets/assets-folder-confirmation.png)
 

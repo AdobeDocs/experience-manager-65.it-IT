@@ -31,12 +31,12 @@ ht-degree: 1%
   <tr>
    <td><p>Proprietà: cq:cugEnabled</p> <p>Dichiarazione tipo di nodo: N/D, proprietà residua</p> </td>
    <td><p>Autorizzazione</p> <p>Nodo: rep:cugPolicy del tipo di nodo rep:CugPolicy</p> <p>Dichiarazione tipo di nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticazione</p> <p>Tipo mixin: granite:AuthenticationRequired</p> </td>
-   <td><p>Per limitare l’accesso in lettura, al nodo di destinazione viene applicato un criterio CUG dedicato.</p> <p>NOTA: i criteri possono essere applicati solo ai percorsi supportati configurati.</p> <p>I nodi con nome rep:cugPolicy e tipo rep:CugPolicy sono protetti e non possono essere scritti utilizzando chiamate API JCR regolari; utilizza invece la gestione del controllo di accesso JCR.</p> <p>Consulta <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">questa pagina</a> per ulteriori informazioni.</p> <p>Per applicare il requisito di autenticazione a un nodo, è sufficiente aggiungere il tipo mixin granite:AuthenticationRequired.</p> <p>NOTA: rispettato solo sotto i percorsi supportati configurati.</p> </td>
+   <td><p>Per limitare l’accesso in lettura, al nodo di destinazione viene applicato un criterio CUG dedicato.</p> <p>NOTA: i criteri possono essere applicati solo ai percorsi supportati configurati.</p> <p>I nodi con nome rep:cugPolicy e tipo rep:CugPolicy sono protetti e non possono essere scritti utilizzando chiamate API JCR regolari; utilizza invece la gestione del controllo di accesso JCR.</p> <p>Per ulteriori informazioni, consulta <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">questa pagina</a>.</p> <p>Per applicare il requisito di autenticazione a un nodo, è sufficiente aggiungere il tipo mixin granite:AuthenticationRequired.</p> <p>NOTA: rispettato solo sotto i percorsi supportati configurati.</p> </td>
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugPrincipals</p> <p>Dichiarazione tipo di nodo: NA, proprietà residua</p> </td>
    <td><p>Proprietà: rep:principalNames</p> <p>Dichiarazione tipo di nodo: rep:CugPolicy</p> </td>
-   <td><p>La proprietà contenente i nomi delle entità autorizzate a leggere il contenuto sotto il CUG con restrizioni è protetta e non può essere scritta utilizzando normali chiamate API JCR; al suo posto, utilizza la gestione del controllo di accesso JCR.</p> <p>Consulta <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">questa pagina</a> per ulteriori dettagli sull’implementazione.</p> </td>
+   <td><p>La proprietà contenente i nomi delle entità autorizzate a leggere il contenuto sotto il CUG con restrizioni è protetta e non può essere scritta utilizzando normali chiamate API JCR; al suo posto, utilizza la gestione del controllo di accesso JCR.</p> <p>Consulta <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">questa pagina</a> per ulteriori dettagli sull'implementazione.</p> </td>
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugLoginPage</p> <p>Dichiarazione tipo di nodo: NA, proprietà residua</p> </td>
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ## Confronto dei servizi OSGi {#comparison-of-osgi-services}
 
-**Versioni precedenti dell’AEM**
+**Versioni AEM precedenti**
 
 Etichetta: Supporto per gruppi utenti chiusi (CUG) Adobe Granite
 
@@ -61,13 +61,13 @@ Nome: com.day.cq.auth.impl.CugSupportImpl
 
 **AEM 6.5**
 
-* Etichetta: Configurazione CUG Apache Jackrabbit Oak
+* Etichetta: Configurazione CUG di Apache Jackrabbit Oak
 
   Nome: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
   ConfigurationPolicy = OBBLIGATORIO
 
-* Etichetta: Apache Jackrabbit Oak CUG Exclude List
+* Etichetta: elenco di esclusione CUG di Apache Jackrabbit Oak
 
   Nome: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
 
@@ -87,7 +87,7 @@ Servizio per configurare l&#39;elenco di esclusione di entità che non dovrebber
 
   >[!NOTE]
   > 
-  >Se il `CugExcludeImpl` non è configurato, il `CugConfiguration` torna al valore predefinito.
+  >Se `CugExcludeImpl` non è configurato, `CugConfiguration` torna al valore predefinito.
 
   È possibile collegare un’implementazione personalizzata di CugExclude in caso di esigenze particolari.
 

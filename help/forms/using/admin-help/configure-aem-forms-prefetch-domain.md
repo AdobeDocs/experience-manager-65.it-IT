@@ -20,8 +20,8 @@ ht-degree: 0%
 
 Gli utenti possono riscontrare un tempo di risposta più lento se appartengono a più gruppi (ad esempio, 500 o più) o se i gruppi sono nidificati in profondità (ad esempio, 30 livelli). Se si verifica questo problema, è possibile configurare i moduli AEM per preacquisire le informazioni da determinati domini.
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Gestione Utente > Configurazione > Importa Ed Esporta File Di Configurazione]**.
-1. Per esportare l&#39;impostazione di configurazione corrente in un file, fare clic su **[!UICONTROL Esporta]** e salvare il file di configurazione in un&#39;altra posizione.
+1. Nella console di amministrazione, fare clic su **[!UICONTROL Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione]**.
+1. Per esportare l&#39;impostazione di configurazione corrente in un file, fare clic su **[!UICONTROL Esporta]** e salvare il file di configurazione in un altro percorso.
 1. Aggiungi il seguente nodo (in grassetto):
 
    ```xml
@@ -39,7 +39,7 @@ Gli utenti possono riscontrare un tempo di risposta più lento se appartengono a
     <node name="APSAuditService">
    ```
 
-   In questo esempio, più domini sono configurati per la preacquisizione. I nomi di dominio sono separati da &quot;/&quot;. Questo è mostrato nell’esempio precedente con *Nome_dominio1*, *Nome_dominio2*, e *Nome_dominio3*.
+   In questo esempio, più domini sono configurati per la preacquisizione. I nomi di dominio sono separati da &quot;/&quot;. Ciò è illustrato nell&#39;esempio precedente con *Nome_dominio1*, *Nome_dominio2* e *Nome_dominio3*.
 
-1. Per importare il file aggiornato, in Gestione utente fai clic su **[!UICONTROL Configurazione > Importa Ed Esporta File Di Configurazione]**.
-1. Clic **[!UICONTROL Sfoglia]** per trovare il file, fare clic su Importa e quindi su **[!UICONTROL OK]**.
+1. Per importare il file aggiornato, in Gestione utenti fare clic su **[!UICONTROL Configurazione > Importa ed esporta file di configurazione]**.
+1. Fare clic su **[!UICONTROL Sfoglia]** per trovare il file, fare clic su Importa e quindi su **[!UICONTROL OK]**.

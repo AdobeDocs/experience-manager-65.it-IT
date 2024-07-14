@@ -165,7 +165,7 @@ Per creare un frammento esperienza:
 
    ![xf-01](assets/xf-01.png)
 
-1. Passa alla cartella desiderata e seleziona **Crea**.
+1. Passare alla cartella desiderata e selezionare **Crea**.
 
    ![xf-02](assets/xf-02.png)
 
@@ -177,7 +177,7 @@ Per creare un frammento esperienza:
 
 1. Inserisci le **proprietà** per il **frammento esperienza**.
 
-   È obbligatorio un **Titolo**. Se il **Nome** viene lasciato vuoto, verrà derivato dal valore **Titolo**.
+   È obbligatorio un **Titolo**. Se il **Nome** viene lasciato vuoto, verrà derivato dal **Titolo**.
 
    ![xf-04](assets/xf-04.png)
 
@@ -205,11 +205,11 @@ L’editor dei frammenti esperienza offre funzionalità simili al normale editor
 
 La procedura di esempio seguente illustra come creare un teaser per un prodotto:
 
-1. Trascina una **Teaser** dal [Browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Trascina e rilascia un **Teaser** dal [Browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-05](assets/xf-05.png)
 
-1. Seleziona **[Configura](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** dalla barra degli strumenti del componente.
+1. Seleziona **[Configura](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** nella barra degli strumenti del componente.
 1. Aggiungi la **Risorsa** e definisci le **Proprietà** secondo le esigenze.
 1. Conferma le definizioni con **Fine** (icona di spunta).
 1. Aggiungi altri componenti in base alle esigenze.
@@ -226,11 +226,11 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 1. **Crea** consente di creare:
 
    * **Variazione**
-   * **Variante come [live copy](/help/sites-administering/msm.md#live-copies)**.
+   * **Variante come [Live Copy](/help/sites-administering/msm.md#live-copies)**.
 
      >[!NOTE]
      >
-     >La creazione di una variante iniziale come Live Copy erediterà il titolo utilizzando la sorgente Live Copy come variante principale.
+     >La creazione di una variante iniziale come Live Copy erediterà il titolo utilizzando la Live Copy Source come variante principale.
 
 1. Definisci le proprietà richieste:
 
@@ -256,7 +256,7 @@ Ora puoi utilizzare il frammento di esperienza durante l’authoring delle pagin
    >
    >La pagina deve essere basata su un modello modificabile.
 
-   Ad esempio: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Esempio: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Crea un’istanza del componente Frammento esperienza trascinando il componente dal browser Componenti al sistema di paragrafi della pagina:
 
@@ -264,8 +264,8 @@ Ora puoi utilizzare il frammento di esperienza durante l’authoring delle pagin
 
 1. Aggiungi il frammento esperienza effettivo all’istanza del componente, eseguendo una delle seguenti operazioni:
 
-   * Trascina il frammento richiesto dal browser Risorse e rilascialo sul componente
-   * Seleziona **Configura** dalla barra degli strumenti del componente e specifica il frammento da utilizzare, conferma con **Fine** (segno di spunta)
+   * Trascina il frammento richiesto dal browser Assets e rilascialo sul componente
+   * Seleziona **Configura** dalla barra degli strumenti del componente e specifica il frammento da utilizzare, quindi conferma con **Fine** (segno di spunta)
 
    ![xf-09](assets/xf-09.png)
 
@@ -293,7 +293,7 @@ Per creare un blocco predefinito:
 
    ![xf-11](assets/xf-11.png)
 
-1. Il **Blocco predefinito** viene visualizzato nella scheda e può essere selezionato nel sistema paragrafo:
+1. Il **blocco predefinito** è visualizzato nella scheda e può essere selezionato nel sistema paragrafo:
 
    ![xf-12](assets/xf-12.png)
 
@@ -303,7 +303,7 @@ Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per cias
 
 * Vai a master: apri la variante della pagina root in una nuova scheda
 * Rinomina
-* Eliminare
+* Elimina
 
 ![xf-13](assets/xf-13.png)
 
@@ -343,7 +343,7 @@ I dettagli del frammento vengono visualizzati in diverse posizioni:
       * **Numero totale di varianti** - solo informativo
 
       * **Numero di varianti web** - solo informativo
-      * **Numero di varianti non web** - inf **Solo informazioni**
+      * **Numero di varianti non Web** - inf **solo informazioni**
 
       * **Numero di pagine che utilizzano questo frammento** - solo informazioni
 
@@ -374,4 +374,4 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 
 Per impostazione predefinita, i frammenti di esperienza vengono forniti nel formato HTML. che può essere utilizzato sia da AEM che da canali di terze parti.
 
-Per l’esportazione in Adobe Target, è possibile utilizzare anche JSON. Consulta [Integrazione di Target con frammenti esperienza](/help/sites-administering/experience-fragments-target.md) per informazioni complete.
+Per l’esportazione in Adobe Target, è possibile utilizzare anche JSON. Per informazioni complete, consulta [Integrazione di Target con frammenti di esperienza](/help/sites-administering/experience-fragments-target.md).

@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## Impostazioni posizioni {#locations-settings}
 
-**URL di base:** L’URL di base in cui si trovano le risorse del modulo come immagini e script. Questo valore è necessario per le trasformazioni HTML che includono riferimenti HREF a dipendenze esterne, come immagini o script. Uno di questi script è xfasubset.js, necessario affinché i moduli HTML possano eseguire le funzioni di intelligence XFA. Questo valore deve essere l’equivalente HTTP dell’URI della directory principale dei contenuti.
+**URL di base:** l&#39;URL di base in cui si trovano le risorse del modulo come immagini e script. Questo valore è necessario per le trasformazioni HTML che includono riferimenti HREF a dipendenze esterne, come immagini o script. Uno di questi script è xfasubset.js, necessario affinché i moduli HTML possano eseguire le funzioni di intelligence XFA. Questo valore deve essere l’equivalente HTTP dell’URI della directory principale dei contenuti.
 
 >[!NOTE]
 >
@@ -42,17 +42,17 @@ L’esempio seguente punta allo stesso contenuto (utilizzando l’URI della dire
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI radice Web FS:** URL dell’applicazione web Forms. È possibile lasciare vuota questa casella se l&#39;applicazione Web Forms e l&#39;applicazione client vengono distribuite sullo stesso server applicazioni; viene utilizzato l&#39;URL radice Web API di Forms.
+**URI radice Web FS:** URL dell&#39;applicazione Web Forms. È possibile lasciare vuota questa casella se l&#39;applicazione Web Forms e l&#39;applicazione client vengono distribuite sullo stesso server applicazioni; viene utilizzato l&#39;URL radice Web API di Forms.
 
 Se l&#39;applicazione Web Forms e l&#39;applicazione client non sono distribuite nello stesso server applicazioni, specificare l&#39;URL per l&#39;applicazione Web Forms in questa casella, come illustrato nell&#39;esempio seguente:
 
 `https://<host name>:<port>/FormServer`
 
-Dove `host name`e `port` sono il nome del server e il numero di porta del server che ospita l&#39;applicazione web Forms.
+Dove `host name` e `port` sono il nome del server e il numero di porta del server che ospita l&#39;applicazione Web Forms.
 
 Il valore predefinito è una stringa vuota.
 
-**URI radice Web:** La directory principale del web dell’applicazione. Questo valore è combinato con il parametro sTargetURL (quando sTargetURL viene fornito come relativo), specificato tramite l’SDK dei moduli AEM, per creare un URL assoluto per accedere a contenuti web specifici per l’applicazione.
+**Web Root URI:** Web root dell&#39;applicazione. Questo valore è combinato con il parametro sTargetURL (quando sTargetURL viene fornito come relativo), specificato tramite l’SDK dei moduli AEM, per creare un URL assoluto per accedere a contenuti web specifici per l’applicazione.
 
 Il valore predefinito è una stringa vuota.
 
@@ -60,11 +60,11 @@ Il valore predefinito è una stringa vuota.
 
 Il valore predefinito è una stringa vuota.
 
-**URI configurazione XCI:** La posizione relativa o assoluta in cui si trova il file XCI utilizzato per il rendering. Per un valore relativo, si presume che il file XCI risieda nel file EAR dei moduli AEM distribuibili.
+**URI configurazione XCI:** Percorso relativo o assoluto in cui è stato trovato il file XCI utilizzato per il rendering. Per un valore relativo, si presume che il file XCI risieda nel file EAR dei moduli AEM distribuibili.
 
 Il valore predefinito è `com/adobe/formServer/PA/pa.xci`.
 
-**URI mappa caratteri:** Posizione relativa o assoluta del file di mapping dei caratteri. Per un valore relativo, si presume che questo file risieda nel file EAR dei moduli AEM distribuibili.
+**URI mappa caratteri:** La posizione relativa o assoluta del file di mappatura caratteri. Per un valore relativo, si presume che questo file risieda nel file EAR dei moduli AEM distribuibili.
 
 Il file di mappatura dei font viene utilizzato per creare mappature dei font personalizzate per le trasformazioni dei HTML nei moduli, consentendo quindi di specificare quale font verrà sostituito quando un font non è disponibile sul computer del client.
 
@@ -74,19 +74,19 @@ La voce seguente è un esempio di una voce nel file di mappatura dei caratteri:
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**File di Seed PDF:** Il file PDF iniziale utilizzato in una trasformazione PDFForm per ottimizzare la consegna. Il file PDF di seed specifica un file PDF personalizzato (contenente solo le risorse flusso XFA, immagine e font) che viene aggiunto alla struttura e ai dati del modulo. Il modulo viene renderizzato da Acrobat 7 o versione successiva e si applica alla trasformazione PDFForm.
+**File di seed PDF:** il file di PDF iniziale utilizzato in una trasformazione PDFForm per ottimizzare la consegna. Il file PDF di seed specifica un file PDF personalizzato (contenente solo le risorse flusso XFA, immagine e font) che viene aggiunto alla struttura e ai dati del modulo. Il modulo viene renderizzato da Acrobat 7 o versione successiva e si applica alla trasformazione PDFForm.
 
 Il valore predefinito è una stringa vuota.
 
-**Percorso cache:** Specifica la posizione della cache del disco di Forms. Quando si modifica questa impostazione, tutte le informazioni della cache esistenti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle opzioni seguenti:
+**Posizione cache:** Specifica la posizione della cache del disco di Forms. Quando si modifica questa impostazione, tutte le informazioni della cache esistenti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle opzioni seguenti:
 
 **Posizione predefinita:** Questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione dipendente dal server applicazioni in uso:
 
-* **JBoss:** [Home page JBoss]\server\[tipo di installazione]\svcdata\FormServer\Cache
-* **WebLogic:** [Home di WebLogic]\user_projects\domains\[nome dominio aem-forms]\adobe\[nome server Forms]\FormServer\Cache
-* **WebSphere:** [Pagina principale di IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
+* **JBoss:** [JBoss Home]\server\[tipo installazione]\svcdata\FormServer\Cache
+* **WebLogic:** [Home WebLogic]\user_projects\domains\[nome dominio aem-forms]\adobe\[nome server Forms]\FormServer\Cache
+* **WebSphere:** [Home di IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**Directory temporanea LC:** La cache viene creata in una sottodirectory della directory temporanea dei moduli AEM, specificata nella console di amministrazione in Impostazioni > Impostazioni sistema core > Configurazioni > Posizione della directory temporanea. La sottodirectory è denominata adobeform_[nomeserver].
+**Directory temporanea LC:** La cache viene creata in una sottodirectory della directory temporanea dei moduli AEM, specificata nella console di amministrazione in Impostazioni > Impostazioni sistema core > Configurazioni > Posizione della directory temporanea. La sottodirectory è denominata adobeform_[servername].
 
 >[!NOTE]
 >

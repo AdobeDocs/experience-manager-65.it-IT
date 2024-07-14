@@ -25,7 +25,7 @@ Per aggiungere i contenuti si trascinano sulla pagina specifici [componenti](/he
 
 >[!NOTE]
 >
->Il tuo account ha bisogno di [diritti di accesso appropriati](/help/sites-administering/security.md) e [autorizzazioni](/help/sites-administering/security.md#permissions) per modificare le pagine, ad esempio aggiungendo, modificando o eliminando componenti, annotando o sbloccando.
+>Il tuo account necessita dei [diritti di accesso appropriati](/help/sites-administering/security.md) e delle [autorizzazioni](/help/sites-administering/security.md#permissions) per modificare le pagine, ad esempio aggiungere, modificare o eliminare componenti, annotare e sbloccare.
 >
 >Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
@@ -55,7 +55,7 @@ Questi forniscono accesso a un’ampia selezione di funzionalità, tra cui:
 * [modalità di commutazione](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 * [creazione](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [ripristino](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) e [confronto](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versioni
 
-* [pubblicazione](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [annullamento della pubblicazione](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) una pagina
+* [pubblicazione](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [annullamento della pubblicazione](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) di una pagina
 
 * [modifica delle proprietà di pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
@@ -73,22 +73,22 @@ Per inserire un nuovo componente:
 
 1. Esistono diversi metodi per selezionare il tipo di paragrafo che si desidera inserire:
 
-   * Fare doppio clic sull&#39;area etichettata **Trascina qui i componenti o le risorse...** - il **Inserisci nuovo componente** viene visualizzata la barra degli strumenti. Seleziona un componente e fai clic su **OK**.
+   * Fare doppio clic sull&#39;area con l&#39;etichetta **Trascinare qui i componenti o le risorse...** - Viene visualizzata la barra degli strumenti **Inserisci nuovo componente**. Selezionare un componente e fare clic su **OK**.
 
    * Trascina un componente dalla barra degli strumenti mobile (barra laterale) per inserire un nuovo paragrafo.
-   * Fare clic con il pulsante destro del mouse su un paragrafo esistente e selezionare **Nuovo...** - Viene visualizzata la barra degli strumenti Inserisci nuovo componente. Seleziona un componente e fai clic su **OK**.
+   * Fare clic con il pulsante destro del mouse su un paragrafo esistente e selezionare **Nuovo...**. Verrà visualizzata la barra degli strumenti Inserisci nuovo componente. Selezionare un componente e fare clic su **OK**.
 
-   ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
+   ![schermata_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Sia nella barra laterale che nella **Inserisci nuovo componente** sulla barra degli strumenti viene visualizzato un elenco dei componenti disponibili (tipi di paragrafo). Possono essere suddivise in varie sezioni (ad esempio Generale, Colonne e così via), che possono essere espanse in base alle esigenze.
+1. Sia nella barra laterale che nella barra degli strumenti **Inserisci nuovo componente** viene visualizzato un elenco dei componenti disponibili (tipi di paragrafo). Possono essere suddivise in varie sezioni (ad esempio Generale, Colonne e così via), che possono essere espanse in base alle esigenze.
 
-   A seconda dell’ambiente di produzione, queste scelte possono essere diverse. Per informazioni complete sui componenti, vedi [Componenti predefiniti](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
+   A seconda dell’ambiente di produzione, queste scelte possono essere diverse. Per informazioni complete sui componenti, vedere [Componenti predefiniti](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
 1. Inserire il componente desiderato nella pagina. Fai doppio clic sul paragrafo per aprire una finestra che consente di configurare il paragrafo e aggiungere contenuto.
 
 ### Inserimento di un componente tramite Content Finder {#inserting-a-component-using-the-content-finder}
 
-Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa dal menu [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). In questo modo viene creato automaticamente un componente del tipo appropriato contenente la risorsa.
+Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa da [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). In questo modo viene creato automaticamente un componente del tipo appropriato contenente la risorsa.
 
 Questa opzione è valida per i seguenti tipi di risorse (alcune dipenderanno dal sistema pagina/paragrafo):
 
@@ -101,27 +101,27 @@ Questa opzione è valida per i seguenti tipi di risorse (alcune dipenderanno dal
 
 >[!NOTE]
 >
->Puoi configurare questo comportamento per l’installazione in uso. Consulta [Configurazione di un sistema di paragrafi in modo che il trascinamento di una risorsa crei un’istanza di componente](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) per ulteriori dettagli.
+>Puoi configurare questo comportamento per l’installazione in uso. Per ulteriori dettagli, consulta [Configurazione di un sistema di paragrafi in modo che il trascinamento di una risorsa crei un&#39;istanza del componente](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance).
 
 Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
 1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 1. Apri [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Trascina la risorsa richiesta nella posizione desiderata. Il [segnaposto componente](#componentplaceholder) mostra dove verrà posizionato il componente.
+1. Trascina la risorsa richiesta nella posizione desiderata. Il segnaposto [componente](#componentplaceholder) mostra dove verrà posizionato il componente.
 
    Nella posizione richiesta verrà creato un componente appropriato per il tipo di risorsa, che conterrà la risorsa selezionata.
 
-1. [Modifica](#editmovecopypastedelete) il componente, se necessario.
+1. [Modificare](#editmovecopypastedelete) il componente, se necessario.
 
 ## Modifica di un componente (contenuto e proprietà) {#editing-a-component-content-and-properties}
 
 Per modificare un paragrafo esistente, effettuate una delle seguenti operazioni:
 
-* **Doppio clic** il paragrafo per aprirlo. Viene visualizzata la stessa finestra visualizzata quando hai creato il paragrafo con il contenuto esistente. Apporta le modifiche e fai clic su **OK**.
+* **Fare doppio clic** sul paragrafo per aprirlo. Viene visualizzata la stessa finestra visualizzata quando hai creato il paragrafo con il contenuto esistente. Apporta le modifiche e fai clic su **OK**.
 
-* **Clic con il pulsante destro** il paragrafo e fai clic su **Modifica**.
+* **Fare clic con il pulsante destro del mouse** sul paragrafo e scegliere **Modifica**.
 
-* **Clic** due volte sul paragrafo (un doppio clic lento) per accedere alla modalità di modifica diretta. Potrai modificare direttamente il testo sulla pagina, anziché all’interno di una finestra di dialogo. In questa modalità, ti verrà fornita una barra degli strumenti nella parte superiore della pagina. Apporta le modifiche e verranno salvate automaticamente.
+* **Fare clic** due volte sul paragrafo (un doppio clic lento) per accedere alla modalità di modifica diretta. Potrai modificare direttamente il testo sulla pagina, anziché all’interno di una finestra di dialogo. In questa modalità, ti verrà fornita una barra degli strumenti nella parte superiore della pagina. Apporta le modifiche e verranno salvate automaticamente.
 
 ## Spostamento di un componente {#moving-a-component}
 
@@ -133,39 +133,39 @@ Per spostare un paragrafo:
 
 1. Selezionare il paragrafo da spostare:
 
-   ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
+   ![schermata_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
 1. Trascina il paragrafo nella nuova posizione: AEM indica dove è possibile spostare il paragrafo con un segno di spunta verde. Rilascialo nella posizione desiderata.
 1. Il paragrafo è stato spostato:
 
-   ![screen_shot_2012-02-15alle120030pm](assets/screen_shot_2012-02-15at120030pm.png)
+   ![schermata_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
 ## Eliminazione di un componente {#deleting-a-component}
 
 Per eliminare un paragrafo:
 
-1. Seleziona il paragrafo e **clic con il pulsante destro del mouse**:
+1. Selezionare il paragrafo e **fare clic con il pulsante destro del mouse**:
 
-   ![screen_shot_2012-02-15alle120220pm](assets/screen_shot_2012-02-15at120220pm.png)
+   ![schermata_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Seleziona **Elimina** dal menu. WCM AEM richiede di confermare l’eliminazione del paragrafo, poiché questa azione non può essere annullata.
+1. Selezionare **Elimina** dal menu. WCM AEM richiede di confermare l’eliminazione del paragrafo, poiché questa azione non può essere annullata.
 1. Fai clic su **OK**.
 
 >[!NOTE]
 >
->Se hai impostato [Proprietà utente per visualizzare la barra degli strumenti Modifica globale](/help/sites-classic-ui-authoring/author-env-user-props.md) è inoltre possibile eseguire determinate azioni sui paragrafi utilizzando **Copia**, **Taglia**, **Incolla**, **Elimina** pulsanti disponibili.
+>Se hai impostato [Proprietà utente per visualizzare la Barra degli strumenti di modifica globale](/help/sites-classic-ui-authoring/author-env-user-props.md), puoi anche eseguire determinate azioni sui paragrafi utilizzando i pulsanti **Copia**, **Taglia**, **Incolla**, **Elimina** disponibili.
 >
->Varie [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) sono inoltre disponibili.
+>Sono inoltre disponibili [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 ## Tagliare, copiare e incollare un componente {#cut-copy-paste-a-component}
 
-Come quando [Eliminazione di un componente](#deleting-a-component) è possibile utilizzare il menu di scelta rapida per copiare, tagliare e/o incollare un componente
+Come quando si elimina un componente [È possibile utilizzare il menu di scelta rapida per copiare, tagliare e/o incollare un componente](#deleting-a-component)
 
 >[!NOTE]
 >
->Se hai impostato [Proprietà utente per visualizzare la barra degli strumenti Modifica globale](/help/sites-classic-ui-authoring/author-env-user-props.md) è inoltre possibile eseguire determinate azioni sui paragrafi utilizzando **Copia**, **Taglia**, **Incolla**, **Elimina** pulsanti disponibili.
+>Se hai impostato [Proprietà utente per visualizzare la Barra degli strumenti di modifica globale](/help/sites-classic-ui-authoring/author-env-user-props.md), puoi anche eseguire determinate azioni sui paragrafi utilizzando i pulsanti **Copia**, **Taglia**, **Incolla**, **Elimina** disponibili.
 >
->Varie [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) sono inoltre disponibili.
+>Sono inoltre disponibili [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 * [Gestione multisito](/help/sites-administering/msm.md); anche in combinazione con [scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
-* [Lanci](/help/sites-classic-ui-authoring/classic-launches.md) (se basato su Live Copy).
+* [Lanci](/help/sites-classic-ui-authoring/classic-launches.md) (se basati su Live Copy).
 * Componenti specifici, ad esempio il sistema paragrafo ereditato all&#39;interno di Geometrixx.
 
 È possibile annullare l’ereditarietà, quindi riabilitarla. A seconda del componente, questo può essere disponibile da:
@@ -194,7 +194,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. **Un sistema di paragrafi ereditato**
+1. **Un Sistema Di Paragrafi Ereditato**
 
    La finestra di dialogo di configurazione. Ad esempio, come con il sistema paragrafo ereditato all’interno di Geometrixx:
 
@@ -202,13 +202,13 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 ## Aggiunta di annotazioni {#adding-annotations}
 
-[Annotazioni](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) consenti ad altri autori di fornire feedback sui contenuti. Questo viene spesso utilizzato a scopo di revisione e convalida.
+[Annotazioni](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) consente ad altri autori di fornire feedback sul contenuto. Questo viene spesso utilizzato a scopo di revisione e convalida.
 
 ## Anteprima delle pagine {#previewing-pages}
 
 Il bordo inferiore della barra laterale contiene due icone importanti per l&#39;anteprima delle pagine:
 
-![Bordo inferiore della barra laterale con una riga orizzontale di sette icone. Due delle icone all&#39;inizio della riga, l&#39;icona di modifica e l&#39;icona della modalità di anteprima, sono indicate rispettivamente da un simbolo a forma di matita e da un simbolo di lente di ingrandimento.](do-not-localize/chlimage_1-5.png)
+![Bordo inferiore della barra laterale con una riga orizzontale di sette icone. Due delle icone all&#39;inizio della riga, l&#39;icona Modifica e l&#39;icona Modalità anteprima, sono indicate rispettivamente da un simbolo a forma di matita e da un simbolo a forma di lente d&#39;ingrandimento.](do-not-localize/chlimage_1-5.png)
 
 * L’icona a forma di matita mostra che al momento sei in modalità di modifica e puoi aggiungere, modificare, spostare o eliminare contenuti.
 
@@ -220,11 +220,11 @@ Il bordo inferiore della barra laterale contiene due icone importanti per l&#39;
 
   In modalità anteprima la barra laterale viene ridotta, fai clic sull’icona freccia giù per tornare alla modalità di modifica:
 
-  ![Una barra con AEM come titolo e un&#39;icona della modalità di modifica a destra del titolo indicato da un simbolo di freccia giù.](do-not-localize/chlimage_1-8.png)
+  ![Barra con AEM come titolo e un&#39;icona della modalità di modifica a destra del titolo indicata da un simbolo di freccia giù.](do-not-localize/chlimage_1-8.png)
 
 ## Trova e sostituisci {#find-replace}
 
-Per modifiche su larga scala della stessa frase, **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** opzione di menu consente di cercare e sostituire più istanze di una stringa, all’interno di una sezione del sito web.
+Per modifiche su larga scala della stessa frase, un&#39;opzione di menu **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** consente di cercare e sostituire più istanze di una stringa all&#39;interno di una sezione del sito Web.
 
 ## Blocco di una pagina   {#locking-a-page}
 
@@ -236,23 +236,23 @@ AEM consente di bloccare una pagina in modo che nessun altro possa modificarne i
 
 Per bloccare una pagina:
 
-1. In **Siti Web** , selezionare la pagina da bloccare.
+1. Nella scheda **Siti Web** selezionare la pagina che si desidera bloccare.
 1. Fare doppio clic sulla pagina per aprirla per la modifica.
-1. In **Pagina** scheda della barra laterale, seleziona **Blocca pagina**:
+1. Nella scheda **Pagina** della barra laterale, seleziona **Blocca pagina**:
 
-   ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
+   ![schermata_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Un messaggio mostra che la pagina è bloccata per altri utenti. Inoltre, nel riquadro a destra della sezione **Siti Web** , WCM per AEM visualizza la pagina come bloccata e indica quale utente ha bloccato la pagina.
+   Un messaggio mostra che la pagina è bloccata per altri utenti. Inoltre, nel riquadro destro della console **Siti Web**, WCM AEM visualizza la pagina come bloccata e indica l&#39;utente che ha bloccato la pagina.
 
-   ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
+   ![schermata_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
 ## Sblocco di una pagina {#unlocking-a-page}
 
 Per sbloccare una pagina:
 
-1. In **Siti Web** , selezionare la pagina da sbloccare.
+1. Nella scheda **Siti Web** selezionare la pagina che si desidera sbloccare.
 1. Fare doppio clic sulla pagina per aprirla.
-1. In **Pagina** scheda della barra laterale, seleziona **Sblocca pagina**.
+1. Nella scheda **Pagina** della barra laterale, seleziona **Sblocca pagina**.
 
 ## Annullamento e ripristino di operazioni di modifica delle pagine {#undoing-and-redoing-page-edits}
 
@@ -271,7 +271,7 @@ Quando annullate o ripristinate la rimozione, l&#39;aggiunta o il trasferimento 
 
 >[!NOTE]
 >
->L&#39;amministratore di sistema può [configurare vari aspetti delle funzioni Annulla/Ripristina](/help/sites-administering/config-undo.md) in base ai requisiti della tua istanza.
+>L&#39;amministratore di sistema può [configurare vari aspetti delle funzioni Annulla/Ripristina](/help/sites-administering/config-undo.md) in base ai requisiti dell&#39;istanza.
 
 AEM memorizza una cronologia delle azioni eseguite e la sequenza in cui sono state eseguite. In questo modo, si annullano diverse azioni nell&#39;ordine in cui sono state eseguite. Quindi, potete utilizzare l&#39;opzione Ripristina (Redo) per riapplicare una o più azioni.
 

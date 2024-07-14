@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Prerequisiti {#prerequisites}
 
-Il componente Collegamento è un membro della categoria Servizi basati su documenti. Assicurati che la categoria Document Services sia visibile nel browser dei componenti AEM. Se la categoria non è elencata, segui i passaggi elencati in [Abilitazione dei componenti del portale Forms](/help/forms/using/enabling-forms-portal-components.md).
+Il componente Collegamento è un membro della categoria Servizi basati su documenti. Assicurati che la categoria Document Services sia visibile nel browser dei componenti AEM. Se la categoria non è elencata, seguire i passaggi elencati in [Abilitazione dei componenti del portale Forms](/help/forms/using/enabling-forms-portal-components.md).
 
 ## Componente collegamento {#link-component}
 
@@ -28,26 +28,26 @@ Il componente Collegamento consente agli autori del portale dei moduli di creare
 
 Per aggiungere un componente Collegamento alla pagina, effettua le seguenti operazioni:
 
-1. Trascina **Collegamento** sulla pagina. Seleziona il componente e seleziona ![cmppr](assets/cmppr.png). Viene visualizzata la finestra di dialogo Modifica componente collegamento.
+1. Trascina il componente **Collegamento** nella pagina. Selezionare il componente e selezionare ![cmppr](assets/cmppr.png). Viene visualizzata la finestra di dialogo Modifica componente collegamento.
 
-   ![edit-link-component](assets/edit-link-component.png)
+   ![modifica-collegamento-componente](assets/edit-link-component.png)
 
-1. In **Visualizzazione** , specificare quanto segue:
+1. Nella scheda **Visualizzazione**, specificare quanto segue:
 
-   * **Didascalia collegamento**: testo di collegamento o didascalia del collegamento.
-   * **Descrizione collegamento**: descrizione del collegamento.
+   * **Didascalia collegamento**: testo collegamento o didascalia collegamento.
+   * **Descrizione**: descrizione del collegamento.
    * **Modello di layout**: modello per il layout del componente Collegamento.
 
-1. Apri **Info risorsa** e specifica il tipo di risorsa. Una risorsa può essere **modulo**. A seconda del tipo di risorsa selezionato, vengono visualizzate le opzioni elencate di seguito:
+1. Apri la scheda **Informazioni risorsa** e specifica il tipo di risorsa. Una risorsa può essere un **modulo**. A seconda del tipo di risorsa selezionato, vengono visualizzate le opzioni elencate di seguito:
 
-   * **Percorso risorsa**: percorso dell’archivio in cui è memorizzata la risorsa.
+   * **Percorso risorsa**: percorso dell&#39;archivio in cui è memorizzata la risorsa.
 
-   * **Tipo di rendering**: formato di rendering, ovvero PDF, HTML o Auto. Il tipo di rendering automatico rileva l’ambiente utente e, di conseguenza, esegue il rendering del modulo come HTML o come PDF. Se, ad esempio, il modulo è accessibile da un dispositivo mobile, il tipo di rendering Automatico eseguirà il rendering del modulo in HTML.
-   * **URL invio:**  URL del servlet in cui vengono inviati i dati del modulo.
+   * **Tipo di rendering**: il formato di rendering, ovvero PDF, HTML o Auto. Il tipo di rendering automatico rileva l’ambiente utente e, di conseguenza, esegue il rendering del modulo come HTML o come PDF. Se, ad esempio, il modulo è accessibile da un dispositivo mobile, il tipo di rendering Automatico eseguirà il rendering del modulo in HTML.
+   * **URL di invio:** URL al servlet in cui vengono inviati i dati del modulo.
    * **Profilo HTML**: profilo per il rendering del modulo come HTML.
    * **Profilo PDF**: profilo per il rendering del modulo come documento PDF.
 
-1. Apri **Avanzate** scheda. Potete specificare i parametri aggiuntivi nel formato coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
+1. Apri la scheda **Avanzate**. Potete specificare i parametri aggiuntivi nel formato coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
 
    Seleziona **Fine** per salvare la configurazione.
 
