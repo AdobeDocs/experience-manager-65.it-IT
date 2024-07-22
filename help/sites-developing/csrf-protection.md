@@ -9,10 +9,10 @@ exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8d7c5b4962ea0dbd80cf78faa31238b2252f4a5c
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,10 @@ Per utilizzare i token, devi replicare il file binario HMAC in tutte le istanze 
 
 >[!NOTE]
 >
->Assicurati anche di apportare le [modifiche alla configurazione di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) necessarie per utilizzare CSRF Protection Framework.
+>Assicurati anche di apportare le modifiche di configurazione Dispatcher necessarie per utilizzare il framework di protezione CSRF:
+>
+>* [Configurazione di Adobe Experience Manager Dispatcher per impedire attacchi CSRF](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Panoramica di Dispatcher](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
