@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c8901ab9484d91a1f5ced285efe60613984aeb
+source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
 workflow-type: tm+mt
-source-wordcount: '5686'
+source-wordcount: '5744'
 ht-degree: 2%
 
 ---
@@ -492,6 +492,8 @@ Nel dashboard operazioni sono disponibili le seguenti attività:
 1. L&#39;attività **Raccolta oggetti inattivi dell&#39;archivio dati**, che si trova nel menu **Finestra manutenzione settimanale**.
 1. L&#39;attività **Manutenzione log di controllo**, che si trova nel menu **Finestra manutenzione settimanale**.
 1. L&#39;attività **Manutenzione rimozione versione**, che si trova nel menu **Finestra manutenzione settimanale**.
+1. L&#39;attività di manutenzione **Rimozione progetto**, che si trova nel menu **Finestra manutenzione settimanale**, utilizza l&#39;opzione **Aggiungi**.
+1. **Eliminazione delle attività ad hoc** attività di manutenzione, disponibile nel menu **Finestra manutenzione settimanale**, utilizzando l&#39;opzione **Aggiungi**.
 
 L&#39;orario predefinito per la finestra di manutenzione giornaliera è dalle 2.00 alle 5.00. Le attività configurate per l’esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le ore 1:00 e le ore 2:00 del sabato.
 
@@ -562,6 +564,26 @@ Per la manutenzione del registro di controllo, consulta la [pagina separata dell
 >[!CAUTION]
 >
 >Per ottimizzare le dimensioni dell&#39;archivio, è consigliabile eseguire frequentemente l&#39;operazione di rimozione della versione. L’attività deve essere pianificata al di fuori dell’orario di lavoro in presenza di una quantità limitata di traffico.
+
+### Eliminazione progetti {#project-purge}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`. See the Maintenance Window table below for additional configuration details.
+
+Enable the maintenance task by adding another node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. 
+-->
+
+Configurare le proprietà OSGI in **Configurazione eliminazione progetti di Adobe** (com.adobe.cq.projects.purge.Scheduler).
+
+### Eliminazione di attività ad-hoc {#purge-of-ad-hoc-tasks}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`.
+
+See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it `granite_TaskPurgeTask`, with attribute `sling:resourceType` set to `granite/operations/components/maintenance/task` and attribute `granite.maintenance.name` set to `TaskPurge`. 
+-->
+
+Configura le proprietà OSGI in **Rimozione attività ad hoc** (`com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask`).
 
 ## Attività di manutenzione personalizzate {#custom-maintenance-tasks}
 
