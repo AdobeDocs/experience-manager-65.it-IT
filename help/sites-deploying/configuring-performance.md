@@ -9,7 +9,7 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 13%
@@ -24,7 +24,7 @@ ht-degree: 13%
 >
 >Per ulteriori informazioni sulla risoluzione dei problemi e sulla risoluzione dei problemi relativi alle prestazioni, vedere anche la [Struttura delle prestazioni](/help/sites-deploying/performance-tree.md).
 >
->È inoltre possibile esaminare un articolo della Knowledge Base su [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
+>È inoltre possibile esaminare un articolo della Knowledge Base su [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466).
 
 Un problema chiave è il tempo impiegato dal sito web per rispondere alle richieste dei visitatori. Anche se questo valore varia per ogni richiesta, è possibile definire un valore target medio. Una volta dimostrato che questo valore è sia realizzabile che gestibile, può essere utilizzato per monitorare le prestazioni del sito web e indicare lo sviluppo di potenziali problemi.
 
@@ -41,7 +41,7 @@ Questo ambiente contiene contenuti che rendi disponibili agli utenti. Qui il num
 >[!NOTE]
 >
 >* Dopo la configurazione per l&#39;ottimizzazione delle prestazioni, seguire le procedure in [Giorno difficile](/help/sites-developing/tough-day.md) per testare l&#39;ambiente con un carico elevato.
->* Vedi anche [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
+>* Vedi anche [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## Metodologia di ottimizzazione delle prestazioni {#performance-optimization-methodology}
 
