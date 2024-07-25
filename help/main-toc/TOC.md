@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
+source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
 workflow-type: tm+mt
-source-wordcount: '7456'
+source-wordcount: '7445'
 ht-degree: 20%
 
 ---
@@ -809,7 +809,7 @@ ht-degree: 20%
       + [Crea corrispondenza](/help/forms/using/create-correspondence.md)
       + [Funzioni remote in Expression Builder](/help/forms/using/expression-builder.md)
       + [Gestisci immagini firma agente](/help/forms/using/manage-agent-signature-images.md)
-      + [Elaborazione Post di lettere e comunicazioni interattive](/help/forms/using/submit-letter-topostprocess.md)
+      + [Post-elaborazione di lettere e comunicazioni interattive](/help/forms/using/submit-letter-topostprocess.md)
       + [Aggiungere un’azione personalizzata alla vista Elenco risorse](/help/forms/using/add-custom-action-asset-listing-view.md)
       + [Aggiungi azione/pulsante personalizzato nell’interfaccia utente per la creazione di corrispondenza](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
       + [Aggiungere proprietà personalizzate alle risorse di Gestione della corrispondenza](/help/forms/using/add-custom-properties-cm-assets.md)
@@ -1260,9 +1260,6 @@ ht-degree: 20%
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [Sviluppo (generico)](/help/commerce/cif-classic/developing/generic.md)
          + [Sviluppo con SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-   + [Guida introduttiva a Edge Delivery](/help/edge/overview.md)
-   + [Utilizzo di Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [Percorsi AEM Headless](/help/journey-headless/overview.md)
    + Percorso di sviluppatori AEM headless {#developer}
@@ -1603,7 +1600,7 @@ ht-degree: 20%
          + [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md)
          + [Utilizzo dello strumento di migrazione CRX2Oak](/help/sites-deploying/using-crx2oak.md)
          + [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Verifiche e risoluzione dei problemi relativi all&#39;aggiornamento di Post](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Controlli post-aggiornamento e risoluzione dei problemi](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Aggiornamento del Forms di ricerca personalizzato](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md)
          + [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md)
