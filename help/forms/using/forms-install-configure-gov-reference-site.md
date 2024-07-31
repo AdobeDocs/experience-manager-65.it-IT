@@ -7,7 +7,7 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '4534'
 ht-degree: 1%
@@ -35,6 +35,7 @@ Questo pacchetto contiene una configurazione cloud che supporta le seguenti vers
 | Adobe Sign | API v5 | **Supportato** |
 | Microsoft® Dynamics 365 | 1710 (9,1.0.3020) | **Supportato** |
 | Adobe Analytics | API Rest v1.4 | **Supportato** |
+
 **Considerazioni sull&#39;installazione del pacchetto:**
 
 * Installa il pacchetto su un server pulito, senza altri pacchetti demo o versioni di pacchetti demo precedenti.

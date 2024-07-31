@@ -11,7 +11,7 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7e0f1225d5bf4de095c4a8cc042517997898a44c
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11203'
 ht-degree: 2%
@@ -840,6 +840,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
    | Crea una cartella separata per ogni risorsa | Creare una cartella per ogni file di didascalia o di traccia audio selezionato per il download. |
    | E-mail | Utilizza il tuo programma e-mail predefinito per inviare il file .zip a un indirizzo e-mail specificato. |
    | Risorse | Specifica il numero di file da scaricare e la dimensione totale combinata di tutti i file selezionati. Deselezionando questa opzione, il pulsante **[!UICONTROL Scarica]** viene disattivato, impedendo di scaricare qualsiasi file. |
+
 1. Seleziona **[!UICONTROL Scarica]**.
 1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 

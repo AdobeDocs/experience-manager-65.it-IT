@@ -6,7 +6,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11687'
 ht-degree: 0%
@@ -133,7 +134,7 @@ Quando specificate il testo alternativo, tenete presente quanto segue:
 * Non creare descrizioni testuali per le immagini statiche utilizzate solo a scopo di decorazione.
 * Non utilizzare dati digitalizzati come informazioni di background. Ciò può verificarsi quando una finestra di progettazione analizza un modulo di stampa e utilizza Adobe LiveCycle Designer per aggiungere nuovi campi al modulo. Gli assistenti vocali non sono in grado di rilevare i dati digitalizzati in questo stato.
 
-Quando si includono contenuti grafici puramente decorativi nei moduli, è importante assicurarsi che gli assistenti vocali non annuncino la presenza dell’immagine. Per la maggior parte degli assistenti vocali, questo può essere ottenuto impostando la proprietà Testo Reader su Nessuno nella tavolozza Accessibilità. In caso contrario, alcuni assistenti vocali potrebbero annunciare la presenza di un&#39;immagine, senza indicare ciò che l&#39;immagine rappresenta. Per le immagini dinamiche, come gli oggetti campo immagine, assicurati che le alternative di testo vengano aggiornate correttamente quando l’immagine viene modificata. Non creare descrizioni testuali per gli oggetti campo immagine utilizzati solo a scopo di decorazione. È possibile utilizzare il linguaggio di script FormCalc per assegnare descrizioni di testo a un oggetto campo immagine in modo dinamico. FormCalc è il linguaggio di script standard di Adobe LiveCycle Designer. Si consideri ad esempio un modulo con un campo immagine denominato ImageField1 e testo associato nel nodo imagetext dei dati di runtime. È possibile utilizzare gli script per passare questo testo in un evento appropriato, ad esempio `form:ready`, nel modo seguente:
+Quando si includono contenuti grafici puramente decorativi nei moduli, è necessario assicurarsi che gli assistenti vocali non annuncino la presenza dell&#39;immagine. Per la maggior parte degli assistenti vocali, questo può essere ottenuto impostando la proprietà Testo Reader su Nessuno nella tavolozza Accessibilità. In caso contrario, alcuni assistenti vocali potrebbero annunciare la presenza di un&#39;immagine, senza indicare ciò che l&#39;immagine rappresenta. Per le immagini dinamiche, come gli oggetti campo immagine, assicurati che le alternative di testo vengano aggiornate correttamente quando l’immagine viene modificata. Non creare descrizioni testuali per gli oggetti campo immagine utilizzati solo a scopo di decorazione. È possibile utilizzare il linguaggio di script FormCalc per assegnare descrizioni di testo a un oggetto campo immagine in modo dinamico. FormCalc è il linguaggio di script standard di Adobe LiveCycle Designer. Si consideri ad esempio un modulo con un campo immagine denominato ImageField1 e testo associato nel nodo imagetext dei dati di runtime. È possibile utilizzare gli script per passare questo testo in un evento appropriato, ad esempio `form:ready`, nel modo seguente:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -148,13 +149,15 @@ Punti di controllo correlati
 
 ## Fornire etichette appropriate per i controlli modulo{#provide-proper-labels}
 
-L&#39;etichetta o la didascalia di un controllo modulo identifica ciò che il controllo modulo dovrebbe rappresentare. Ad esempio, il testo &quot;Nome&quot; indica agli utenti che devono immettere il proprio nome in un campo di testo. Per essere accessibile agli assistenti vocali, l&#39;etichetta deve essere associata a livello di programmazione al controllo modulo oppure il controllo modulo deve essere configurato con informazioni aggiuntive sull&#39;accessibilità utilizzando la tavolozza Accessibilità. Non è sufficiente posizionare un oggetto di testo accanto al controllo. Per gli utenti non vedenti o ipovedenti è importante che l’etichetta sia posizionata correttamente accanto al controllo. Entrambe le tecniche saranno discusse nelle sezioni seguenti.
+L&#39;etichetta o la didascalia di un controllo modulo identifica ciò che il controllo deve rappresentare. Ad esempio, il testo &quot;Nome&quot; indica agli utenti che devono immettere il proprio nome in un campo di testo. Per essere accessibile agli assistenti vocali, l&#39;etichetta deve essere associata a livello di programmazione al controllo modulo oppure il controllo modulo deve essere configurato con informazioni aggiuntive sull&#39;accessibilità utilizzando la tavolozza Accessibilità. Non è sufficiente posizionare un oggetto di testo accanto al controllo. Per gli utenti non vedenti o ipovedenti è importante che l’etichetta sia posizionata correttamente accanto al controllo. Entrambe le tecniche saranno discusse nelle sezioni seguenti.
 
 ### Specifica del testo dell&#39;etichetta accessibile mediante la tavolozza Accessibilità
 
-L’etichetta percepita dagli utenti di utilità di lettura dello schermo non deve necessariamente essere la stessa della didascalia visiva. In alcuni casi può essere utile specificare meglio lo scopo del controllo.
+L’etichetta percepita dagli utenti di utilità di lettura dello schermo non deve necessariamente essere la stessa della didascalia visiva. In alcuni casi può essere necessario specificare meglio lo scopo del controllo.
 Per ogni oggetto campo di un modulo, è possibile utilizzare la tavolozza Accessibilità (vedere la Figura 3) per specificare l&#39;annuncio che verrà visualizzato dall&#39;assistente vocale per identificare il campo modulo specifico.
+
 Per utilizzare la tavolozza Accessibilità, effettuare le seguenti operazioni:
+
 1. Visualizzare la tavolozza Accessibilità scegliendo Finestra > Accessibilità o premendo Maiusc+F6.
 1. Selezionare un oggetto nel modulo. La palette mostra le proprietà di accessibilità dell’oggetto.
 
@@ -245,7 +248,7 @@ Nella tabella seguente viene fornita una panoramica delle regole di posizionamen
 
 ### Compilazione dinamica di una descrizione comando o di un testo del Reader di schermate personalizzato
 
-È inoltre possibile compilare in modo dinamico un&#39;alternativa testuale di un controllo modulo, ad esempio la descrizione comando, con un valore proveniente da un&#39;origine dati. Ad esempio, è possibile visualizzare una descrizione personalizzata per un oggetto in francese.
+È inoltre possibile popolare dinamicamente un&#39;alternativa testuale di un controllo modulo, ad esempio la descrizione comando, con un valore proveniente da un&#39;origine dati. Ad esempio, è possibile visualizzare una descrizione personalizzata per un oggetto in francese.
 Per una descrizione comandi dello schema a cui ci si connette è possibile definire quanto segue:
 
 
@@ -325,7 +328,7 @@ Per i moduli semplici, ovvero i moduli con un layout da sinistra a destra e dall
 * Scegliete Visualizza > Mostra ordine tabulazioni.
 * Fare clic su Mostra ordine nella tavolozza Ordine schede.
 
-Tutti gli oggetti verranno visualizzati con un numero nell&#39;angolo superiore destro, che indica la posizione dell&#39;oggetto nell&#39;ordine di tabulazione predefinito. Gli oggetti interattivi in questa sequenza formano l&#39;ordine di tabulazione. La Figura 7 mostra la visualizzazione dell’ordine di lettura di un modulo di base.
+Tutti gli oggetti vengono visualizzati con un numero nell&#39;angolo superiore destro, che indica la posizione dell&#39;oggetto nell&#39;ordine di tabulazione predefinito. Gli oggetti interattivi in questa sequenza formano l&#39;ordine di tabulazione. La Figura 7 mostra la visualizzazione dell’ordine di lettura di un modulo di base.
 
 ![Visualizzazione dell&#39;ordine di lettura predefinito per un modulo d&#39;ordine tipico](/help/forms/using/assets/image-7.png)
 
@@ -363,7 +366,7 @@ Figura 9: **L&#39;ordine di tabulazione predefinito è da sinistra a destra**
 >[!NOTE]
 > Può essere utile mantenere l&#39;allineamento degli oggetti scegliendo Visualizza > Blocca sulla griglia.
 
-Potete modificare le coordinate di un oggetto in modo più preciso utilizzando la tavolozza Layout (mostrata nella Figura 10). Questa tavolozza consente di specificare le coordinate X e Y, nonché la larghezza e l’altezza dell’oggetto.
+Potete modificare le coordinate di un oggetto in modo più preciso utilizzando la tavolozza Layout (mostrata nella Figura 10). Questa tavolozza consente di specificare le coordinate X e Y, nonché la larghezza e l&#39;altezza dell&#39;oggetto.
 
 ![Utilizzo delle coordinate per posizionare con precisione un oggetto con la tavolozza Layout](/help/forms/using/assets/image-10.png)
 
@@ -390,7 +393,7 @@ Le sottomaschere, i pulsanti di scelta e le aree contenuto, insieme alla posizio
 ### Creazione di un ordine di tabulazione personalizzato mediante la tavolozza Ordine di tabulazione
 
 È possibile modificare l&#39;ordine di tabulazione predefinito quando è necessaria una sequenza diversa nel modulo e la modifica non può essere eseguita con il posizionamento o il raggruppamento nelle sottomaschere. Per modificare l&#39;ordine di tabulazione predefinito è possibile creare un ordine di tabulazione personalizzato utilizzando la tavolozza Ordine di tabulazione.
-La palette Ordine di tabulazione (vedere Figura 12) consente di verificare e modificare l&#39;ordine in cui gli oggetti del modulo vengono letti dalla tecnologia per l&#39;accessibilità e spostati mediante il tasto TAB dell&#39;utente.
+La tavolozza Ordine di tabulazione (vedere Figura 12) consente di verificare e modificare l&#39;ordine in cui gli oggetti del modulo vengono letti dalla tecnologia di accesso facilitato e spostati mediante il tasto TAB dell&#39;utente.
 
 ![Tavolozza Ordine schede](/help/forms/using/assets/image-12.png)
 
@@ -439,7 +442,7 @@ Gli utenti devono essere in grado di compilare completamente il modulo utilizzan
 
 In Designer di LiveCycle, il modo più semplice per garantire l&#39;accesso da tastiera ai controlli consiste nell&#39;utilizzare i controlli elencati nella scheda Comune della tavolozza Libreria oggetti. Per impostazione predefinita, questi controlli rispondono sia all&#39;input del mouse che a quello della tastiera. Per ulteriori informazioni, vedere la sezione 2.3 Scegliere i controlli appropriati in questa guida.
 
-Un altro aspetto importante dell’accessibilità della tastiera è garantire che ogni elemento interattivo faccia parte dell’ordine di tabulazione del modulo. In questo modo l&#39;utente può spostare il cursore avanti e indietro nel modulo utilizzando i tasti TAB e MAIUSC+TAB. Assicurarsi di impostare un ordine di tabulazione logico che includa tutti i campi e i pulsanti. Per ulteriori informazioni, vedere la sezione 2.6 Verificare che l&#39;ordine di lettura e di tabulazione sia corretto in questa guida.
+Un altro aspetto importante dell&#39;accessibilità della tastiera è garantire che ogni elemento interattivo sia incluso nell&#39;ordine di tabulazione del modulo. In questo modo l&#39;utente può spostare il cursore avanti e indietro nel modulo utilizzando i tasti TAB e MAIUSC+TAB. Assicurarsi di impostare un ordine di tabulazione logico che includa tutti i campi e i pulsanti. Per ulteriori informazioni, vedere la sezione 2.6 Verificare che l&#39;ordine di lettura e di tabulazione sia corretto in questa guida.
 
 Infine, è importante garantire che anche il comportamento basato su script sia accessibile da tastiera e non dipenda da eventi specifici del dispositivo. L&#39;evento mouse MouseEnter, ad esempio, non può essere eseguito utilizzando la tastiera. Inoltre, tali gestori di eventi non devono interferire con l’accessibilità della tastiera. Ad esempio, assicurati che gli eventi di modifica utilizzati negli elenchi a discesa o nelle caselle di riepilogo non attivino azioni impreviste.
 
@@ -472,7 +475,7 @@ La Figura 13 mostra ad esempio un campo modulo con una didascalia rossa (specifi
 
 Figura 13: **Utilizzo del solo colore per trasmettere informazioni**
 
-Per risolvere questo problema, indicare anche lo stato richiesto del modulo nel testo alternativo del controllo modulo (come descritto nella sezione 2.5 Fornire etichette appropriate per i controlli modulo). Ad esempio, puoi impostare il testo dell’assistente vocale su &quot;Codice postale (obbligatorio)&quot;. Per gli utenti che hanno difficoltà a visualizzare il colore in determinate combinazioni, si consiglia di impostare il tipo di campo di testo su Inserito dall&#39;utente - Obbligatorio nella palette Oggetto, oltre al testo alternativo che indica che il campo è obbligatorio. In alternativa, è possibile utilizzare indicazioni diverse dal colore, ad esempio testo visivo, stili di testo e stili di bordo. Tuttavia, gli utenti di utilità di lettura dello schermo dovranno comunque trasmettere le informazioni richieste utilizzando la palette Accessibilità.
+Per risolvere questo problema, indicare anche lo stato obbligatorio del modulo nel testo alternativo del controllo modulo (come descritto nella sezione 2.5 Fornire etichette appropriate per i controlli modulo). Ad esempio, puoi impostare il testo dell’assistente vocale su &quot;Codice postale (obbligatorio)&quot;. Per gli utenti che hanno difficoltà a visualizzare il colore in determinate combinazioni, si consiglia di impostare il tipo di campo di testo su Inserito dall&#39;utente - Obbligatorio nella palette Oggetto, oltre al testo alternativo che indica che il campo è obbligatorio. In alternativa, è possibile utilizzare indicazioni diverse dal colore, ad esempio testo visivo, stili di testo e stili di bordo. Tuttavia, gli utenti di utilità di lettura dello schermo dovranno comunque trasmettere le informazioni richieste utilizzando la palette Accessibilità.
 
 Inoltre, quando fornisci descrizioni o istruzioni all’utente del modulo, tieni presente che le istruzioni basate sul solo colore non sono sufficienti per gli utenti con disabilità visive. Ad esempio, invece di un&#39;istruzione come, &quot;Fai clic sul pulsante verde per continuare&quot;, utilizza una descrizione testuale per le azioni, come &quot;Fai clic sul pulsante Successivo per continuare&quot;.
 
@@ -619,9 +622,9 @@ Figura 16: **Strutturazione di un modulo tramite intestazioni**
 Queste intestazioni sono solo elementi di testo statico a cui sono state assegnate una dimensione di carattere specifica e un ruolo di intestazione con il livello appropriato.
 
 >[!NOTE]
-> La semplice modifica dell’aspetto visivo di un’etichetta di testo in modo che sembri un’intestazione non fa sì che gli assistenti vocali la riconoscano come intestazione. È necessario applicare un ruolo di intestazione.
+> La semplice modifica dell&#39;aspetto visivo di un&#39;etichetta di testo in modo che sembri un&#39;intestazione non consente agli assistenti vocali di riconoscerla come intestazione. È necessario applicare un ruolo di intestazione.
 
-Assicurati sempre che l’ordine dei livelli di intestazione sia logico. Ad esempio, una sottosezione di un&#39;intestazione di livello 2 deve essere sempre un&#39;intestazione di livello 3. Non è necessario saltare i livelli quando si contrassegnano le sottosezioni. Gli utenti che usano gli assistenti vocali utilizzano i diversi livelli per comprendere meglio la struttura del modulo. Ad esempio, dopo aver incontrato un’intestazione di livello 2, l’utente può utilizzare un collegamento per cercare le intestazioni di livello 3 e determinare se sono presenti sottosezioni. Se salti i livelli, l’utente avrà difficoltà a identificare queste sottosezioni.
+Assicurati sempre che l’ordine dei livelli di intestazione sia logico. Ad esempio, una sottosezione di un&#39;intestazione di livello 2 deve essere sempre un&#39;intestazione di livello 3. Non è necessario saltare i livelli quando si contrassegnano le sottosezioni. Gli utenti di utilità di lettura dello schermo utilizzano i diversi livelli per comprendere meglio la struttura del modulo. Ad esempio, dopo aver incontrato un’intestazione di livello 2, l’utente può utilizzare un collegamento per cercare le intestazioni di livello 3 e determinare se sono presenti sottosezioni. Se salti i livelli, l’utente avrà difficoltà a identificare queste sottosezioni.
 
 ### Marcatura di elenchi
 
@@ -661,7 +664,7 @@ Come parte del processo di progettazione del modulo, gli sviluppatori possono ut
 Durante la progettazione di script per l&#39;accessibilità, tenere presenti le seguenti linee guida generali:
 
 * Mantenere il contenuto del modulo esente da interruzioni visive. Ad esempio, evita le funzioni che causano sfarfallio, sfarfallio o spostamento del contenuto.
-* Assicurarsi che le finestre popup vengano visualizzate solo come risultato delle azioni avviate dall&#39;utente. Analogamente, è opportuno evitare che lo stato attivo corrente del modulo (la visualizzazione corrente dell’utente) cambi o che il contenuto venga rivisualizzato, a meno che non sia stato avviato dall’utente. Ad esempio, se l’utente compila dei campi nella metà inferiore del modulo, non consentire lo stato attivo nell’angolo superiore sinistro del modulo, a meno che l’utente non scelga di passare a questa posizione.
+* Assicurarsi che le finestre popup vengano visualizzate solo come risultato delle azioni avviate dall&#39;utente. Analogamente, non consentire la modifica dello stato attivo corrente del modulo (la visualizzazione corrente dell&#39;utente) o la visualizzazione del contenuto, a meno che non sia stato avviato dall&#39;utente. Ad esempio, se l’utente compila dei campi nella metà inferiore del modulo, non consentire lo stato attivo nell’angolo superiore sinistro del modulo, a meno che l’utente non scelga di passare a questa posizione.
 * Gli utenti con disabilità possono richiedere più tempo per fornire input nei campi. Non specificare risposte basate sul tempo per i campi di input.
 * Tieni presente che gli script lato client possono interferire con gli assistenti vocali e le tastiere se lo script cambia lo stato attivo dell’applicazione client. Ad esempio, gli eventi change e mouseEnter, se utilizzati con elenchi a discesa o caselle di riepilogo, possono causare azioni impreviste. Verifica che gli script lato client non introducano problemi per gli utenti di utilità di lettura dello schermo e per gli utenti solo tastiera.
 * Gli utenti delle tecnologie per l’accessibilità a volte avranno bisogno di più tempo per completare le attività. In tutti i casi in cui una routine temporizzata sta per scadere, visualizza un messaggio accessibile per consentire l’estensione. Le caselle di avviso create tramite JavaScript sono utilizzabili con la tecnologia per l&#39;accessibilità. È inoltre possibile distribuire una nuova finestra con un messaggio che avvisa l’utente di un timeout imminente.
@@ -712,7 +715,7 @@ Il contenuto del modulo verrà letto da tecnologie per l’accessibilità che ut
 
 Se il testo (o testo alternativo) nei moduli viene presentato in più lingue, è necessario identificare le aree del modulo in cui viene effettuato un passaggio da una lingua all&#39;altra.
 
-In Designer di LiveCycle, l&#39;impostazione della lingua primaria viene eseguita impostando la proprietà Locale della maschera e la proprietà Locale della sottomaschera di livello superiore. Per identificare le modifiche apportate alla lingua primaria, modificare la proprietà Locale per qualsiasi oggetto che utilizza una lingua diversa dalla lingua del modulo.
+In Designer di LiveCycle, l&#39;impostazione della lingua primaria viene eseguita impostando la proprietà Locale della maschera e la proprietà Locale della sottomaschera di livello superiore. Per identificare le modifiche apportate alla lingua principale, modificare la proprietà Locale per qualsiasi oggetto che utilizza una lingua diversa dalla lingua del modulo.
 
 Per impostare la proprietà Locale di una maschera:
 1. Scegliete File > Proprietà modulo e selezionate la scheda Default
