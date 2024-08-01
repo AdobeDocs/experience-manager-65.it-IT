@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '930'
 ht-degree: 1%
 
 ---
@@ -92,6 +92,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      <li>Quando un modulo adattivo viene inviato da un’istanza di Adobe Experience Manager Publish a un flusso di lavoro di Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati.  (FORMS-14209) </li>
      <li> Durante l’installazione del pacchetto AEM 6.5 Forms Service Pack 20 (pacchetto del componente aggiuntivo AEM Forms per SP20), l’interfaccia utente di AEM Sites presenta un significativo deterioramento delle prestazioni.  (FORMS-13791) </li>
      <li>Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)</li>
+     <li>Le configurazioni che utilizzano il servizio cloud legacy per Adobe Analytics con autenticazione basata sulle credenziali utente non funzionano correttamente, causando l’errore di esecuzione delle regole di analisi. (FORMS-15428)
     </ul>
     </td>    
   </tr>

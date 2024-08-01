@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
 workflow-type: tm+mt
-source-wordcount: '4332'
+source-wordcount: '4390'
 ht-degree: 2%
 
 ---
@@ -550,6 +550,8 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
    1. Passare alla directory `/libs/fd/aemforms/install/` in CRXDE.
    1. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Riavvia il server AEM.
+
+* Quando un utente si aggiorna a AEM Forms Service Pack 20 (6.5.20.0) installato con il componente aggiuntivo Forms, le configurazioni che utilizzano il servizio cloud legacy per Adobe Analytics con autenticazione basata sulle credenziali utente non funzionano correttamente, causando l’esecuzione errata delle regole di analisi. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 
 * Quando un utente si aggiorna a AEM Forms Service Pack 20 (6.5.20.0) sul server JEE e genera PDF utilizzando i servizi di output, i PDF presentano problemi di accessibilità. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
 * Quando un utente genera PDF con tag utilizzando il servizio di output su JEE, viene visualizzato il messaggio &quot;Inappropriate structure warning&quot; (Avviso per struttura inappropriata). Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
