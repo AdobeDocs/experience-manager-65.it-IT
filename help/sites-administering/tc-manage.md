@@ -5,9 +5,9 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
 workflow-type: tm+mt
-source-wordcount: '3506'
+source-wordcount: '3519'
 ht-degree: 41%
 
 ---
@@ -188,9 +188,13 @@ Puoi aggiungere pagine, risorse, tag o dizionari i18n al processo di traduzione 
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Selezionare il dizionario che si desidera aggiungere e quindi fare clic su Pulsante Aggiungi.
+1. Selezionare la **Directory principale** e il dizionario (se necessario) che si desidera aggiungere, quindi selezionare **Aggiungi**.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   Dizionario ![i18N](assets/tc-manage-i18n-dictionary.png)
+
+1. Se richiesto, selezionare la natura dell&#39;aggiornamento:
+
+   ![Traduci](assets/tc-manage-translate.png)
 
 Il tuo dizionario è ora nel tuo lavoro di traduzione.
 
