@@ -10,9 +10,9 @@ exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2114'
 ht-degree: 1%
 
 ---
@@ -219,7 +219,7 @@ Crea una finestra di dialogo con la seguente struttura:
 
 È ora possibile adattare la finestra di dialogo alle proprie esigenze modificando le proprietà o creando nodi.
 
-Per modificare una finestra di dialogo, puoi anche utilizzare l’Editor finestre di dialogo. Facendo doppio clic sul nodo della finestra di dialogo in CRXDE Lite viene visualizzato l’editor. Ulteriori informazioni sull&#39;Editor finestre di dialogo sono disponibili [qui](/help/sites-developing/dialog-editor.md).
+Per modificare una finestra di dialogo, puoi anche utilizzare l’Editor finestre di dialogo. Facendo doppio clic sul nodo della finestra di dialogo in CRXDE Lite viene visualizzato l’editor. Per ulteriori dettagli, consulta [Editor finestre di dialogo](/help/sites-developing/dialog-editor.md).
 
 ## Creazione di un nodo {#creating-a-node}
 

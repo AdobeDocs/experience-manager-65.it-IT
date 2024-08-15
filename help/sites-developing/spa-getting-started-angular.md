@@ -9,9 +9,9 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '998'
 ht-degree: 5%
 
 ---
@@ -68,7 +68,7 @@ Il file `package.json` definisce i requisiti del pacchetto SPA complessivo. Le d
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Ulteriori dettagli su di esso sono disponibili [su GitHub qui](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Ulteriori dettagli su [aem-clientlib-generator sono disponibili su GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 >[!CAUTION]
 >

@@ -11,9 +11,9 @@ feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2143'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Durante la pianificazione di un aggiornamento, è necessario esaminare e risolve
 
 ## Panoramica {#overview}
 
-1. **Rilevatore pattern** - Eseguire il rilevatore pattern come descritto nella pianificazione dell&#39;aggiornamento e descritto in dettaglio in [questa pagina](/help/sites-deploying/pattern-detector.md). Ottieni un report del rilevatore pattern che contiene più dettagli sulle aree che devono essere trattate oltre alle API/bundle non disponibili nella versione Target dell’AEM. Il rapporto Pattern Detection (Rilevamento pattern) fornisce un’indicazione di eventuali incompatibilità nel codice. Se non ne esiste alcuna, la distribuzione è già compatibile con la versione 6.5. Puoi comunque scegliere di eseguire un nuovo sviluppo per l’utilizzo della funzionalità 6.5, ma non è necessario solo per mantenere la compatibilità. Se vengono segnalate incompatibilità, puoi scegliere di eseguire in modalità di compatibilità e posticipare lo sviluppo per le nuove funzioni 6.5 o per la compatibilità. In alternativa, puoi decidere di eseguire lo sviluppo dopo l’aggiornamento e passare al passaggio 2. Per ulteriori dettagli, vedere [Compatibilità con le versioni precedenti in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+1. **Rilevatore pattern** - Eseguire il rilevatore pattern come descritto nella pianificazione dell&#39;aggiornamento e descritto in dettaglio nella pagina [Valutazione della complessità dell&#39;aggiornamento con il rilevatore pattern](/help/sites-deploying/pattern-detector.md). Ottieni un report del rilevatore pattern che contiene più dettagli sulle aree che devono essere trattate oltre alle API/bundle non disponibili nella versione Target dell’AEM. Il rapporto Pattern Detection (Rilevamento pattern) fornisce un’indicazione di eventuali incompatibilità nel codice. Se non ne esiste alcuna, la distribuzione è già compatibile con la versione 6.5. Puoi comunque scegliere di eseguire un nuovo sviluppo per l’utilizzo della funzionalità 6.5, ma non è necessario solo per mantenere la compatibilità. Se vengono segnalate incompatibilità, puoi scegliere di eseguire in modalità di compatibilità e posticipare lo sviluppo per le nuove funzioni 6.5 o per la compatibilità. In alternativa, puoi decidere di eseguire lo sviluppo dopo l’aggiornamento e passare al passaggio 2. Per ulteriori dettagli, vedere [Compatibilità con le versioni precedenti in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
 1. **Develop Code Base for 6.5 **- Crea un ramo o archivio dedicato per la base di codice per la versione di Target. Utilizza le informazioni di Compatibilità pre-aggiornamento per pianificare le aree di codice da aggiornare.
 1. **Compilare con file jar 6.5 Uber **- Aggiornare i POM della base di codice in modo che puntino al file jar 6.5 Uber e compilare il codice in base a esso.
@@ -40,7 +40,7 @@ Durante la pianificazione di un aggiornamento, è necessario esaminare e risolve
 
 Prima di procedere con un aggiornamento, è necessario disporre di una base di codice dell’applicazione stabile che sia stata accuratamente testata rispetto alla versione di destinazione dell’AEM. In base alle osservazioni effettuate nei test, ci potrebbero essere modi per ottimizzare il codice personalizzato. Ad esempio, potrebbe includere il refactoring del codice per evitare l’attraversamento dell’archivio, l’indicizzazione personalizzata per ottimizzare la ricerca o l’utilizzo di nodi non ordinati in JCR, tra gli altri.
 
-Oltre ad aggiornare facoltativamente la base di codice e le personalizzazioni per lavorare con la nuova versione dell&#39;AEM, 6.5 consente anche di gestire le personalizzazioni in modo più efficiente con la funzione di compatibilità con le versioni precedenti, come descritto in [questa pagina](/help/sites-deploying/backward-compatibility.md).
+Oltre ad aggiornare facoltativamente la base di codice e le personalizzazioni per lavorare con la nuova versione dell&#39;AEM, 6.5 consente anche di gestire le personalizzazioni in modo più efficiente con la funzione di compatibilità con le versioni precedenti, come descritto in [Compatibilità con le versioni precedenti in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
 Come accennato in precedenza e mostrato nel diagramma seguente, l&#39;esecuzione del [rilevatore pattern](/help/sites-deploying/pattern-detector.md) nel primo passaggio può essere utile per valutare la complessità complessiva dell&#39;aggiornamento. Può anche aiutarti a decidere se desideri eseguire in modalità di compatibilità o aggiornare le personalizzazioni per utilizzare tutte le nuove funzioni di AEM 6.5. Per ulteriori dettagli, vedere la pagina [Compatibilità con le versioni precedenti in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 [![opz_ritagliato](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
@@ -67,7 +67,7 @@ Il file jar Uber dell’AEM include tutte le API AEM come una singola dipendenza
 
 ### Eliminazione graduale dell&#39;utilizzo di Risolutore risorse amministrative {#phase-out-use-of-administrative-resource-resolver}
 
-L&#39;utilizzo di una sessione amministrativa tramite `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` era prevalente nelle basi di codice prima di AEM 6.0. Questi metodi sono stati dichiarati obsoleti per motivi di sicurezza in quanto concedono un livello di accesso troppo ampio. [Nelle versioni future di Sling questi metodi verranno rimossi](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Si consiglia vivamente di eseguire il refactoring del codice per utilizzare al suo posto gli utenti del servizio. Ulteriori informazioni sugli utenti dei servizi e su [come eliminare gradualmente le sessioni amministrative sono disponibili qui](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
+L&#39;utilizzo di una sessione amministrativa tramite `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` era prevalente nelle basi di codice prima di AEM 6.0. Questi metodi sono stati dichiarati obsoleti per motivi di sicurezza in quanto concedono un livello di accesso troppo ampio. [Nelle versioni future di Sling questi metodi verranno rimossi](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Si consiglia vivamente di eseguire il refactoring del codice per utilizzare al suo posto gli utenti del servizio. Per informazioni sugli utenti del servizio e su come eliminare gradualmente le sessioni amministrative, vedere [Utenti del servizio in Adobe Experience Manager (AEM)](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
 ### Query e indici Oak {#queries-and-oak-indexes}
 
@@ -83,7 +83,7 @@ Sono disponibili i seguenti strumenti per l’analisi e l’analisi delle presta
 
 ### Authoring con interfaccia classica {#classic-ui-authoring}
 
-L’authoring dell’interfaccia classica è ancora disponibile in AEM 6.5 ma è ora obsoleto. Ulteriori informazioni sono disponibili [qui](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Se l’applicazione è in esecuzione nell’ambiente di authoring dell’interfaccia classica, si consiglia di eseguire l’aggiornamento a AEM 6.5 e continuare a utilizzare tale interfaccia. La migrazione all’interfaccia utente touch può quindi essere pianificata come progetto separato da completare in diversi cicli di sviluppo. Per utilizzare l’interfaccia classica in AEM 6.5, è necessario eseguire il commit di diverse configurazioni OSGi nella base di codice. Ulteriori dettagli su come eseguire la configurazione sono disponibili [qui](/help/sites-administering/enable-classic-ui.md).
+L’authoring dell’interfaccia classica è ancora disponibile in AEM 6.5 ma è ora obsoleto. Per ulteriori informazioni, vedere [Funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Se l’applicazione è in esecuzione nell’ambiente di authoring dell’interfaccia classica, si consiglia di eseguire l’aggiornamento a AEM 6.5 e continuare a utilizzare tale interfaccia. La migrazione all’interfaccia utente touch può quindi essere pianificata come progetto separato da completare in diversi cicli di sviluppo. Per utilizzare l’interfaccia classica in AEM 6.5, è necessario eseguire il commit di diverse configurazioni OSGi nella base di codice. Ulteriori dettagli su come eseguire la configurazione sono disponibili in [Abilitazione dell&#39;accesso all&#39;interfaccia utente classica](/help/sites-administering/enable-classic-ui.md).
 
 ## Allinea alla struttura dell’archivio 6.5 {#align-repository-structure}
 
@@ -97,7 +97,7 @@ Devono essere identificate tutte le personalizzazioni dell’ambiente di authori
 
 ### Sovrapposizioni in generale {#overlays-in-general}
 
-È una pratica comune estendere la funzionalità predefinita dell’AEM sovrapponendo nodi e/o file in /libs con nodi aggiuntivi in /apps. Queste sovrapposizioni devono essere tracciate nel controllo della versione e testate rispetto alla versione target dell’AEM. Se un file (come JS, JSP, HTL) è sovrapposto, l’Adobe consiglia di lasciare un commento su quale funzionalità è stata migliorata per facilitare il test di regressione sulla versione di destinazione dell’AEM. Ulteriori informazioni sulle sovrapposizioni in generale sono disponibili [qui](/help/sites-developing/overlays.md). Le istruzioni per specifiche sovrapposizioni AEM sono riportate di seguito.
+È una pratica comune estendere la funzionalità predefinita dell’AEM sovrapponendo nodi e/o file in /libs con nodi aggiuntivi in /apps. Queste sovrapposizioni devono essere tracciate nel controllo della versione e testate rispetto alla versione target dell’AEM. Se un file (come JS, JSP, HTL) è sovrapposto, l’Adobe consiglia di lasciare un commento su quale funzionalità è stata migliorata per facilitare il test di regressione sulla versione di destinazione dell’AEM. Consulta [Sovrapposizioni](/help/sites-developing/overlays.md) per informazioni generiche. Le istruzioni per specifiche sovrapposizioni AEM sono riportate di seguito.
 
 ### Aggiornamento del Forms di ricerca personalizzato {#upgrading-custom-search-forms}
 
@@ -143,11 +143,11 @@ Per tutti gli altri scopi, utilizzare l&#39;API `migrateAllAssets()`.
 
 ### Personalizzazioni degli script InDesign {#indesign-script-customizations}
 
-L&#39;Adobe consiglia di inserire script personalizzati nel percorso `/apps/settings/dam/indesign/scripts`. Ulteriori informazioni sulle personalizzazioni degli script InDesign sono disponibili [qui](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
+L&#39;Adobe consiglia di inserire script personalizzati nel percorso `/apps/settings/dam/indesign/scripts`. Ulteriori informazioni sulle personalizzazioni degli script InDesign sono disponibili in [Integrare Adobe Experience Manager Assets con Adobe InDesign Server](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
 
 ### Ripristino configurazioni ContextHub {#recovering-contexthub-configurations}
 
-Un aggiornamento influisce sulle configurazioni ContextHub. Le istruzioni su come ripristinare le configurazioni ContextHub esistenti sono disponibili [qui](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
+Un aggiornamento influisce sulle configurazioni ContextHub. Per istruzioni su come ripristinare le configurazioni ContextHub esistenti, consulta [Configurazione di ContextHub](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
 
 ### Personalizzazioni flusso di lavoro {#workflow-customizations}
 
@@ -163,7 +163,7 @@ La struttura dei modelli modificabili è cambiata tra AEM 6.2 e 6.3. Se si esegu
 
 ### Modifiche all’implementazione CUG {#cug-implementation-changes}
 
-L’implementazione di gruppi chiusi di utenti è cambiata in modo significativo per affrontare i limiti di prestazioni e scalabilità delle versioni precedenti dell’AEM. La versione precedente di CUG è stata dichiarata obsoleta nella versione 6.3 e la nuova implementazione è supportata solo nell’interfaccia utente touch. Se stai eseguendo l&#39;aggiornamento da 6.2 o versioni precedenti, le istruzioni per la migrazione alla nuova implementazione CUG sono disponibili [qui](/help/sites-administering/closed-user-groups.md#upgradetoaem63).
+L’implementazione di gruppi chiusi di utenti è cambiata in modo significativo per affrontare i limiti di prestazioni e scalabilità delle versioni precedenti dell’AEM. La versione precedente di CUG è stata dichiarata obsoleta nella versione 6.3 e la nuova implementazione è supportata solo nell’interfaccia utente touch.
 
 ## Procedura di prova {#testing-procedure}
 

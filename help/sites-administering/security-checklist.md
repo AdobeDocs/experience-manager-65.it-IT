@@ -10,7 +10,7 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 1%
@@ -339,7 +339,7 @@ Per attenuare questo problema, puoi effettuare le seguenti operazioni:
 
 Il servlet di download delle risorse predefinito consente agli utenti autenticati di inviare richieste di download simultanee di grandi dimensioni e arbitrarie per creare file ZIP delle risorse. La creazione di grandi archivi ZIP può sovraccaricare il server e la rete. Per attenuare un potenziale rischio Denial of Service (DoS) causato da questo comportamento, il componente OSGi `AssetDownloadServlet` è disabilitato per impostazione predefinita nell&#39;istanza di pubblicazione [!DNL Experience Manager]. Per impostazione predefinita, è abilitato nell&#39;istanza di authoring [!DNL Experience Manager].
 
-Se non hai bisogno della funzionalità di download, disabilita il servlet nelle distribuzioni di authoring e pubblicazione. Se la tua configurazione richiede che la funzionalità di download delle risorse sia abilitata, consulta [questo articolo](/help/assets/download-assets-from-aem.md) per ulteriori informazioni. Inoltre, puoi definire un limite massimo di download supportato dalla tua implementazione.
+Se non hai bisogno della funzionalità di download, disabilita il servlet nelle distribuzioni di authoring e pubblicazione. Se la configurazione richiede che la funzionalità di download delle risorse sia abilitata, consulta [Scaricare risorse da Adobe Experience Manager](/help/assets/download-assets-from-aem.md) per ulteriori informazioni. Inoltre, puoi definire un limite massimo di download supportato dalla tua implementazione.
 
 ### Disattiva WebDAV {#disable-webdav}
 
@@ -395,7 +395,7 @@ Per impostazione predefinita, l&#39;AEM memorizza i metadati di sistema, ad esem
 
 Come tutti i dati dell’archivio, queste proprietà sono mediate dallo stack di autorizzazione di Oak. L&#39;accesso ad esse dovrebbe essere limitato conformemente al principio del minimo privilegio.
 
-Per supportare questa funzione, Adobe fornisce un pacchetto di protezione delle autorizzazioni come base su cui i clienti possono basarsi. Funziona installando una voce di controllo di accesso &quot;nega&quot; nella directory principale dell’archivio, limitando l’accesso anonimo alle proprietà di sistema comunemente utilizzate. Il pacchetto è disponibile per il download [qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e può essere installato in tutte le versioni supportate di AEM.
+Per supportare questa funzione, Adobe fornisce un pacchetto di protezione delle autorizzazioni come base su cui i clienti possono basarsi. Funziona installando una voce di controllo di accesso &quot;nega&quot; nella directory principale dell’archivio, limitando l’accesso anonimo alle proprietà di sistema comunemente utilizzate. Il pacchetto può essere [scaricato](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e installato in tutte le versioni supportate di AEM.
 
 Per illustrare le modifiche, possiamo confrontare le proprietà del nodo che possono essere visualizzate in modo anonimo prima di installare il pacchetto:
 

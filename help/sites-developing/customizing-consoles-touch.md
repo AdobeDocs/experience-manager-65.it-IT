@@ -10,9 +10,9 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -161,4 +161,4 @@ Per personalizzare le colonne nella vista a elenco:
 
 Quando si utilizza una console, un caso d’uso comune si verifica quando l’utente deve selezionare tra le risorse (ad esempio pagine, componenti, risorse e così via). Può assumere la forma di un elenco, ad esempio, dal quale l’autore deve scegliere un elemento.
 
-Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Consulta [questo articolo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) per i dettagli.
+Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Per ulteriori informazioni, vedere [Personalizzazione dell&#39;authoring delle pagine - Filtraggio delle risorse](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources).

@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5743'
 ht-degree: 2%
 
 ---
@@ -507,7 +507,7 @@ Puoi anche configurare gli intervalli premendo l’icona ingranaggio su una qual
 
 ### Pulizia revisioni {#revision-clean-up}
 
-Per ulteriori informazioni sull&#39;esecuzione di Pulizia revisioni, [consulta questo articolo dedicato](/help/sites-deploying/revision-cleanup.md).
+Per ulteriori informazioni, vedere [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md).
 
 ### Pulizia dati binari di Lucene {#lucene-binaries-cleanup}
 
@@ -522,7 +522,7 @@ Puoi accedere all&#39;attività Pulizia file binari Lucene da: **AEM > Strumenti
 
 ### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
 
-Per informazioni dettagliate sulla raccolta oggetti inattivi dell&#39;archivio dati, consulta la [pagina dedicata della documentazione](/help/sites-administering/data-store-garbage-collection.md).
+Per informazioni dettagliate sulla raccolta oggetti inattivi dell&#39;archivio dati, consulta la pagina dedicata della documentazione di [Raccolta oggetti inattivi dell&#39;archivio dati](/help/sites-administering/data-store-garbage-collection.md).
 
 ### Eliminazione flusso di lavoro {#workflow-purge}
 
@@ -533,7 +533,7 @@ I flussi di lavoro possono essere eliminati anche dal dashboard di manutenzione.
 
 >[!NOTE]
 >
->Per informazioni più dettagliate sulla manutenzione dei flussi di lavoro, consulta [questa pagina](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Per informazioni più dettagliate sulla manutenzione dei flussi di lavoro, vedere [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Manutenzione del registro di controllo {#audit-log-maintenance}
 

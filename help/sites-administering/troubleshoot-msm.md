@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 59%
+source-wordcount: '762'
+ht-degree: 58%
 
 ---
 
@@ -69,7 +69,7 @@ Ecco alcune domande frequenti relative a MSM e Live Copy.
 
 Le azioni di sincronizzazione MSM sono altamente configurabili. Quali proprietà o componenti vengono modificati durante il rollout dipendono direttamente dalle proprietà di tali configurazioni.
 
-Per ulteriori informazioni su questo argomento, consulta [questo articolo](msm-best-practices.md).
+Consulta [Best practice MSM](msm-best-practices.md) per ulteriori informazioni su questo argomento.
 
 ### Come posso rimuovere le autorizzazioni di rollout per un gruppo di autori? {#remove-rollout-permissions}
 

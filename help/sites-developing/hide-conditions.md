@@ -9,9 +9,9 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Se un autore di modelli sceglie di disabilitare l’opzione pagine figlie, viene
 
 1. Il valore di `disableChildren` viene estratto dalla configurazione di progettazione e l&#39;espressione `${cqDesign.disableChildren}` restituisce `false`, il che significa che l&#39;opzione non verrà rappresentata come parte del componente.
 
-   È possibile visualizzare l&#39;espressione hide come valore della proprietà `granite:hide` [in GitHub qui](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
+   È possibile visualizzare l&#39;espressione hide come valore della proprietà `granite:hide` [in GitHub](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
 1. L&#39;opzione **Pagine secondarie** non viene più visualizzata per l&#39;autore della pagina quando si utilizza il componente Elenco.
 

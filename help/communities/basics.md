@@ -9,7 +9,7 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
@@ -28,7 +28,7 @@ I componenti possono essere esaminati utilizzando un&#39;istanza AEM e la [guida
 
 Durante l’authoring del contenuto di una pagina, se il modello sottostante consente di modificare la struttura della pagina, è possibile abilitare componenti non ancora disponibili nel browser Componenti come parte della progettazione del sito.
 
-I componenti community disponibili sono elencati [qui](author-communities.md#available-communities-components).
+Vedi l&#39;elenco in [Componenti community disponibili](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >

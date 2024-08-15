@@ -10,9 +10,9 @@ exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1756'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ I vantaggi:
 
 >[!NOTE]
 >
->Nel diagramma precedente, al server AEM 3 e al server AEM 4 viene presentato uno stato inattivo presupponendo una latenza di rete tra i server AEM nel centro dati 2 e il nodo primario MongoDB nel centro dati 1 superiore al requisito documentato [qui](/help/sites-deploying/aem-with-mongodb.md#checklists). Se la latenza massima è compatibile con i requisiti, ad esempio mediante l&#39;uso di zone di disponibilità, anche i server AEM nel centro dati 2 possono essere attivi, creando un cluster AEM attivo-attivo in più centri dati.
+>Nel diagramma precedente, al server AEM 3 e al server AEM 4 viene presentato uno stato inattivo presupponendo una latenza di rete tra i server AEM nel centro dati 2 e il nodo primario MongoDB nel centro dati 1 superiore al requisito documentato in [Adobe Experience Manager con MongoDB - Elenchi di controllo](/help/sites-deploying/aem-with-mongodb.md#checklists). Se la latenza massima è compatibile con i requisiti, ad esempio mediante l&#39;uso di zone di disponibilità, anche i server AEM nel centro dati 2 possono essere attivi, creando un cluster AEM attivo-attivo in più centri dati.
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Il motivo principale per scegliere il back-end di persistenza MongoMK su TarMK �
 
 >[!NOTE]
 >
->È possibile utilizzare il metodo Tough Day per valutare le prestazioni dell&#39;applicazione del cliente nel contesto della configurazione hardware implementata. Ulteriori informazioni su questo strumento sono disponibili [qui](/help/sites-developing/tough-day.md).
+>[È possibile utilizzare un giorno difficile](/help/sites-developing/tough-day.md) per valutare le prestazioni dell&#39;applicazione del cliente nel contesto della configurazione hardware distribuita.
 
 Una distribuzione minima con MongoDB implica in genere la seguente topologia:
 
@@ -184,9 +184,9 @@ Questo non si applica ad AEM Communities che utilizza cluster MongoMK sul livell
 
 **Consigli efficaci per le distribuzioni MongoDB:**
 
-* Consultare MongoDB per Adobe Experience Manager [articolo](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* Rivedi la [lista di controllo](https://docs.mongodb.org/manual/administration/production-checklist/) della produzione MongoDB;
-* Partecipa a un corso di certificazione su MongoDB disponibile online [qui](https://university.mongodb.com/).
+* Consulta la [revisione della distribuzione di MongoDB per Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Rivedi l&#39;[elenco di controllo delle operazioni di MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Partecipa a una [classe di certificazione su MongoDB - disponibile online](https://university.mongodb.com/).
 
 >[!NOTE]
 >

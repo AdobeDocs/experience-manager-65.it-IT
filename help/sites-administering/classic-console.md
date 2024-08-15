@@ -10,9 +10,9 @@ exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 1%
 
 Questa sezione è per la console di assegnazione tag dell’interfaccia classica.
 
-La console di assegnazione tag dell&#39;interfaccia utente ottimizzata per il tocco è [qui](/help/sites-administering/tags.md#tagging-console).
+>[!NOTE]
+>
+>Per informazioni dettagliate sulla console di assegnazione tag dell&#39;interfaccia utente ottimizzata per il tocco, vedere [Amministrazione dei tag](/help/sites-administering/tags.md#tagging-console).
 
 Per accedere alla console di assegnazione tag dell’interfaccia classica:
 

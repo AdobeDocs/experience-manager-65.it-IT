@@ -10,9 +10,9 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -379,7 +379,7 @@ Quando si utilizza il metodo ** secondi precedenti**, le chiamate di Adobe Analy
 
    ![lsecondi](assets/lseconds.png)
 
-   *La chiamata è simile alla chiamata Legacy Milestones precedente. Vedi le informazioni sul pev3 **[fornito](/help/sites-administering/adobeanalytics.md)**.*
+   *La chiamata è simile alla chiamata Legacy Milestones precedente. Vedi le informazioni sul pev3 fornite in [Integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics.md).*
 
 **Riferimenti utilizzati in questa esercitazione:**
 

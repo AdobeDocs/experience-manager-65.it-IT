@@ -10,9 +10,9 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ Questa opzione è facoltativa, se lasciata vuota, viene utilizzata la pagina di 
    >
    >Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione della Live Copy.
    >
-   >Per ulteriori informazioni, vedere [questa pagina](closed-user-groups.md#aem-livecopy).
+   >Per ulteriori informazioni, consulta [Gruppi utenti chiusi in AEM - Livecopy](closed-user-groups.md#aem-livecopy).
 
 1. Viene visualizzata la finestra di dialogo **Modifica gruppo utenti chiuso**. Qui puoi cercare e selezionare il tuo CUG, quindi confermare la selezione del gruppo con **Salva**.
 

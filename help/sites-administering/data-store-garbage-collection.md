@@ -10,9 +10,9 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ Il comando curl restituisce immediatamente.
 
 La verifica di coerenza dell’archivio dati segnala eventuali dati binari mancanti ma a cui si fa ancora riferimento. Per avviare una verifica di coerenza, effettua le seguenti operazioni:
 
-1. Passa alla console JMX. Per informazioni su come utilizzare la console JMX, vedi [questo articolo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Passa alla console JMX. Per informazioni sull&#39;utilizzo della console JMX, vedere [Risorse di Monitoring Server mediante la console JMX](/help/sites-administering/jmx-console.md#using-the-jmx-console).
 1. Cercare l&#39;oggetto Mbean **BlobGarbageCollection** e fare clic su di esso.
 1. Fare clic sul collegamento `checkConsistency()`.
 

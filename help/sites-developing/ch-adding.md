@@ -5,9 +5,9 @@ exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Tieni presente che i candidati all’archivio personalizzato possono definire fu
 >
 >ContextHub non è a conoscenza, per impostazione predefinita, dell’accesso attualmente utilizzato sui server di pubblicazione e tali utenti sono considerati da ContextHub come &quot;Anonimi&quot;.
 >
->Puoi rendere ContextHub consapevole degli utenti connessi caricando l’archivio profili. Fai riferimento a [codice di esempio su GitHub qui](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Puoi rendere ContextHub consapevole degli utenti connessi caricando l’archivio profili. Fai riferimento al [codice di esempio su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Evento ContextHub {#contexthub-eventing}
 

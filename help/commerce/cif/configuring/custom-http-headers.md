@@ -5,9 +5,9 @@ exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '272'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ I componenti che utilizzano la configurazione del servizio cloud precedente invi
 
 ## Restrizioni {#restrictions}
 
-Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non sono disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. Un elenco di nomi di intestazione con restrizioni è disponibile [qui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
+Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non sono disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. Un elenco di nomi di intestazione con restrizioni si trova in [documenti Web MDN - intestazioni HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
 
 * &quot;Store&quot;: utilizzato dall’CIF per identificare il negozio Adobe Commerce
 * &quot;Preview-Version&quot;: utilizzato dall&#39;CIF per recuperare i prodotti in staging

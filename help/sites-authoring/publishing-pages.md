@@ -5,9 +5,9 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1669'
 ht-degree: 65%
 
 ---
@@ -32,16 +32,14 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >
 >* **Replicare/Replica**
 >  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
->
 
->[!NOTE]
->
->Se non disponi dei privilegi necessari per la pubblicazione di una pagina specifica:
->
->* Verrà attivato un flusso di lavoro per notificare alla persona appropriata la richiesta di pubblicazione.
->* Il [flusso di lavoro potrebbe essere stato personalizzato](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) dal team di sviluppo.
->* Verrà visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
->
+## Privilegi insufficienti {#insufficient-privileges}
+
+Se non disponi dei privilegi necessari per la pubblicazione di una pagina specifica:
+
+* Verrà attivato un flusso di lavoro per notificare alla persona appropriata la richiesta di pubblicazione.
+* Il [flusso di lavoro potrebbe essere stato personalizzato](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) dal team di sviluppo.
+* Verrà visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
 
 ## Pubblicazione delle pagine {#publishing-pages-1}
 
@@ -185,7 +183,9 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    >[!NOTE]
    >
-   >Il passaggio **Flussi di lavoro** verrà visualizzato in base ai diritti di cui dispone o meno l’utente. Consulta la [nota precedente su questa pagina](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) relativa ai privilegi di pubblicazione e [Gestione dell&#39;accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md) e [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) per ulteriori dettagli.
+   >Il passaggio **Flussi di lavoro** viene visualizzato in base ai diritti di cui dispone l&#39;utente.
+   >
+   >Per informazioni dettagliate, consulta le sezioni [Privilegi insufficienti](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Gestione dell&#39;accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md) e [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
 
    Le risorse sono raggruppate in base ai flussi di lavoro attivati e a ciascuna opzione specificata per:
 

@@ -10,9 +10,9 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -409,7 +409,7 @@ In alternativa, l’archivio primario può essere copiato manualmente in standby
 1. Eseguire la manutenzione dell&#39;archivio in standby a freddo come descritto nella sezione [precedente](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
 1. Dopo il completamento del processo di manutenzione e il riavvio delle istanze:
 
-   * Nel database primario, eseguire la raccolta di oggetti inattivi dell&#39;archivio dati tramite il bean JMX pertinente come descritto in [questo articolo](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
+   * Sul database primario, eseguire la raccolta di oggetti inattivi dell&#39;archivio dati tramite il bean JMX pertinente come descritto in [Esecuzione della raccolta di oggetti inattivi dell&#39;archivio dati tramite la console JMX](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * In standby, la raccolta di oggetti inattivi dell&#39;archivio dati è disponibile solo tramite **BlobGarbageCollection** MBean - `startBlobGC()`. **RepositoryManagement** MBean non disponibile in standby.
 
    >[!NOTE]

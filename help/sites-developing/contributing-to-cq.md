@@ -9,9 +9,9 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2642'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ In sostanza, JCR è un sistema di nodi e proprietà, in cui i nodi possono eredi
 
 JCR dispone di diversi tipi di nodo e tipi di proprietà predefiniti, ma in generale il sistema di digitazione è flessibile e uno dei punti di forza di JCR è che consente di memorizzare e gestire contenuti strutturati e non strutturati con la stessa facilità. In altre parole, JCR può gestire dati altamente strutturati, ma può anche ospitare strutture di dati dinamici arbitrari senza vincoli di schema.
 
-Il JavaDoc per l&#39;API Java™ di JCR è [qui](https://jackrabbit.apache.org/jcr/jcr-api.html).
+JavaDoc per l&#39;API Java™ di JCR è disponibile da [Apache Software Foundation - JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Prima di tentare di leggere JavaDoc o la specifica JCR stessa, è possibile esaminare [questa spiegazione di alto livello](/help/sites-developing/the-basics.md#java-content-repository) di JCR implementata da Adobe Experience Services.
 

@@ -1,5 +1,5 @@
 ---
-title: Verifiche e risoluzione dei problemi relativi all'aggiornamento di Post
+title: Controlli post-aggiornamento e risoluzione dei problemi
 description: Scopri come risolvere i problemi che potrebbero verificarsi dopo un aggiornamento.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
 
-# Verifiche e risoluzione dei problemi relativi all&#39;aggiornamento di Post{#post-upgrade-checks-and-troubleshooting}
+# Controlli post-aggiornamento e risoluzione dei problemi{#post-upgrade-checks-and-troubleshooting}
 
-## Verifiche aggiornamento Post {#post-upgrade-checks}
+## Controlli post-aggiornamento {#post-upgrade-checks}
 
 Dopo l&#39;[aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md), è necessario eseguire le seguenti attività per finalizzare l&#39;aggiornamento. Si presume che l’AEM sia stato avviato con il file jar 6.5 e che la base di codice aggiornata sia stata distribuita.
 
@@ -103,7 +103,7 @@ Diverse funzioni dell’AEM richiedono passaggi aggiuntivi dopo l’aggiornament
 
 #### Abilita raccolta oggetti inattivi dell’archivio dati {#enable-data-store-garbage-collection}
 
-Se utilizzi un archivio dati file, accertati che l’attività Raccolta oggetti inattivi dell’archivio dati sia abilitata e aggiunta all’elenco Manutenzione settimanale. Le istruzioni sono descritte [qui](/help/sites-administering/data-store-garbage-collection.md).
+Se utilizzi un archivio dati file, accertati che l’attività Raccolta oggetti inattivi dell’archivio dati sia abilitata e aggiunta all’elenco Manutenzione settimanale. Le istruzioni sono descritte in [Pulizia revisioni](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Se utilizzi un archivio dati file, accertati che l’attività Raccolta oggetti 
 
 #### Abilita pulizia revisioni online {#enable-online-revision-cleanup}
 
-Se utilizzi MongoMK o il nuovo formato di segmento TarMK, accertati che l’attività Pulizia revisioni sia abilitata e aggiunta all’elenco Manutenzione giornaliera. Le istruzioni sono descritte [qui](/help/sites-deploying/revision-cleanup.md).
+Se utilizzi MongoMK o il nuovo formato di segmento TarMK, accertati che l’attività Pulizia revisioni sia abilitata e aggiunta all’elenco Manutenzione giornaliera. Le istruzioni sono descritte in [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md).
 
 ### Esegui piano di test {#execute-test-plan}
 

@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3442'
 ht-degree: 0%
 
 ---
@@ -237,7 +237,7 @@ In caso contrario, sono supportate le immagini URL assolute per i tag immagine c
 
 ### Componenti dell’invito all’azione {#call-to-action-components}
 
-È possibile contrassegnare una parte della pagina di destinazione per l’importazione come &quot;componente di invito all’azione modificabile&quot;: tali componenti di invito all’azione importati possono essere modificati dopo l’importazione della pagina di destinazione. L’AEM include le seguenti componenti del CTA:
+È possibile contrassegnare una parte della pagina di destinazione per l’importazione come &quot;componente di invito all’azione modificabile&quot;: tali componenti di invito all’azione importati possono essere modificati dopo l’importazione della pagina di destinazione. L’AEM include i seguenti componenti CTA:
 
 * Collegamento Click-through: consente di aggiungere un collegamento di testo che, se selezionato, porta il visitatore a un URL di destinazione.
 * Collegamento grafico: consente di aggiungere un’immagine che, se selezionata, porta il visitatore a un URL di destinazione.
@@ -324,9 +324,9 @@ Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profi
 
 * Campi lead predefiniti: nome, cognome, indirizzo, dominio, genere, informazioni, ID utente, ID e-mail, pulsante di invio sono disponibili nella barra laterale. È sufficiente trascinare il componente richiesto nel modulo del lead.
 * Con l’aiuto di questi componenti, l’autore può progettare un modulo lead indipendente; questi campi corrispondono ai campi del modulo lead. In un’applicazione zip indipendente o importata, l’utente può aggiungere campi aggiuntivi utilizzando i campi del modulo cq:form o cta lead, il nome e progettarli in base ai requisiti.
-* Mappa i campi del modulo lead utilizzando nomi specifici predefiniti del modulo lead CTA, ad esempio - firstName per nome nel modulo lead e così via.
+* Mappare i campi del modulo lead utilizzando nomi predefiniti specifici del modulo lead di CTA, ad esempio - firstName per nome nel modulo lead e così via.
 * I campi non mappati ai componenti modulo lead vengono mappati su cq:form: testo, radio, casella di controllo, menu a discesa, nascosto, password.
-* L’utente può fornire il titolo utilizzando il tag &quot;label&quot; e lo stile utilizzando l’attributo di stile &quot;class&quot; (disponibile solo per i componenti del modulo lead CTA).
+* L’utente può fornire il titolo utilizzando il tag &quot;label&quot; e lo stile utilizzando l’attributo di stile &quot;class&quot; (disponibile solo per i componenti del modulo lead di CTA).
 * La pagina di ringraziamento e l’elenco delle iscrizioni possono essere forniti come parametro nascosto del modulo (presente nel file index.htm) oppure possono essere aggiunti/modificati dalla barra di modifica di &quot;Inizio del modulo lead&quot;
 
   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
@@ -443,7 +443,7 @@ Se nel HTML importato non è specificata alcuna codifica, la codifica predefinit
 
 Il modello Pagina di destinazione vuota può essere sovrapposto creando un layout in: `/apps/<appName>/designimporter/templates/<templateName>`
 
-I passaggi per la creazione di un modello in AEM sono descritti [qui](/help/sites-developing/templates.md).
+I passaggi per creare un modello in AEM sono descritti in [Modelli](/help/sites-developing/templates.md).
 
 ### Riferimento a un componente dalla pagina di destinazione {#referring-a-component-from-landing-page}
 

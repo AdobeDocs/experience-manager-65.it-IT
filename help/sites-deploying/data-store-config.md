@@ -8,9 +8,9 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3461'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,9 @@ Per configurare sia l’archivio nodi che l’archivio dati, effettua le seguent
 
 >[!CAUTION]
 >
->Le versioni più recenti di Oak utilizzano un nuovo schema di denominazione e un nuovo formato per i file di configurazione OSGi. Il nuovo schema di denominazione richiede che il file di configurazione sia denominato **.config** e che il nuovo formato richieda la digitazione dei valori. Tale file è [documentato qui](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Le versioni più recenti di Oak utilizzano un nuovo schema di denominazione e un nuovo formato per i file di configurazione OSGi. Il nuovo schema di denominazione richiede che il file di configurazione sia denominato **.config** e che il nuovo formato richieda la digitazione dei valori. Per informazioni dettagliate, vedere [Modello di provisioning Apache Sling e Apache SlingStart - Formato configurazione predefinito](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Se esegui l&#39;aggiornamento da una versione precedente di Oak, accertati di eseguire prima un backup della cartella `crx-quickstart/install`. Dopo l&#39;aggiornamento, ripristinare il contenuto della cartella nell&#39;installazione aggiornata e modificare l&#39;estensione dei file di configurazione da **.cfg** a **.config**.
->
->Se stai leggendo questo articolo per prepararti a un aggiornamento da un&#39;installazione di **AEM 5.x**, accertati di consultare prima la documentazione di [upgrade](https://experienceleague.adobe.com/docs/).
 
 ### Archivio nodi segmento {#segment-node-store}
 
@@ -372,7 +370,7 @@ Per configurare la replica senza binari con S3, sono necessari i seguenti passag
 
    * Se si utilizza S3 come archivio dati, creare un file denominato o `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` nella cartella `<aem-install>/crx-quickstart/install` come indicato sopra.
 
-1. Modifica i file di configurazione dell’archivio dati in ogni istanza in modo che puntino allo stesso archivio dati. Per ulteriori informazioni, vedere [questo articolo](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Modifica i file di configurazione dell’archivio dati in ogni istanza in modo che puntino allo stesso archivio dati. Per ulteriori informazioni, vedere [Configurazioni archivio dati](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Se l&#39;istanza è stata clonata da un server esistente, è necessario rimuovere `clusterId` della nuova istanza utilizzando l&#39;ultimo strumento oak-run mentre l&#39;archivio è offline. Il comando da eseguire è:
 
    ```xml

@@ -10,10 +10,10 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '6650'
-ht-degree: 0%
+source-wordcount: '6662'
+ht-degree: 1%
 
 ---
 
@@ -78,7 +78,7 @@ A differenza della precedente implementazione, i nuovi criteri CUG vengono sempr
 
 Oltre a una gestione dedicata del controllo degli accessi per i gruppi di utenti chiusi (CUG), il nuovo modello di autorizzazione consente di abilitare in modo condizionale la valutazione delle autorizzazioni per i relativi criteri. Questo consente di impostare i criteri per i gruppi utenti chiusi (CUG) in un ambiente di staging e di valutare solo le autorizzazioni valide una volta replicate nell’ambiente di produzione.
 
-La valutazione delle autorizzazioni per i criteri CUG e l’interazione con il modello di autorizzazione predefinito o aggiuntivo segue il modello progettato per più meccanismi di autorizzazione in Apache Jackrabbit Oak. In altre parole, un determinato set di autorizzazioni viene concesso se e solo se tutti i modelli concedono l’accesso. Vedi [questa pagina](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) per ulteriori dettagli.
+La valutazione delle autorizzazioni per i criteri CUG e l’interazione con il modello di autorizzazione predefinito o aggiuntivo segue il modello progettato per più meccanismi di autorizzazione in Apache Jackrabbit Oak. In altre parole, un determinato set di autorizzazioni viene concesso se e solo se tutti i modelli concedono l’accesso. Per ulteriori dettagli, consulta la [documentazione di Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
 Le seguenti caratteristiche si applicano alla valutazione delle autorizzazioni associata al modello di autorizzazione progettato per gestire e valutare i criteri CUG:
 
@@ -129,7 +129,7 @@ Lo stesso vale per la proprietà `granite:loginPath`. Viene rispettato solo se �
 
 Poiché si prevede che questo tipo di requisito di autenticazione sia limitato a determinate modalità di esecuzione e a un piccolo sottoinsieme di strutture all’interno dell’archivio dei contenuti, il tracciamento del tipo mixin dei requisiti e delle proprietà del percorso di accesso è condizionale. ed è associata a una configurazione corrispondente che definisce i percorsi supportati (vedi Opzioni di configurazione di seguito). Pertanto, solo le modifiche all’interno dell’ambito di questi percorsi supportati attivano un aggiornamento della registrazione OSGi, altrove vengono ignorati sia il tipo mixin che la proprietà.
 
-La configurazione AEM predefinita ora utilizza questa configurazione consentendo di impostare il mixin in modalità di esecuzione dell’autore, ma solo per renderla effettiva al momento della replica nell’istanza di pubblicazione. Consulta [questa pagina](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) per informazioni dettagliate su come Sling applica il requisito di autenticazione.
+La configurazione AEM predefinita ora utilizza questa configurazione consentendo di impostare il mixin in modalità di esecuzione dell’autore, ma solo per renderla effettiva al momento della replica nell’istanza di pubblicazione. Per informazioni dettagliate su come Sling applica il requisito di autenticazione, consulta la documentazione [Sling Authentication - Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html).
 
 L&#39;aggiunta del tipo mixin `granite:AuthenticationRequired` nei percorsi configurati supportati causa l&#39;aggiornamento della registrazione OSGi del gestore responsabile contenente una nuova voce aggiuntiva con la proprietà `sling.auth.requirements`. Se un determinato requisito di autenticazione specifica la proprietà `granite:loginPath` facoltativa, il valore viene registrato anche con l&#39;autenticatore con il prefisso &#39;-&#39; da escludere dal requisito di autenticazione.
 
@@ -187,7 +187,7 @@ Nel definire i requisiti di autenticazione è necessario tenere conto delle segu
 
 ### Rappresentazione dei criteri CUG nell’archivio {#cug-policy-representation-in-the-repository}
 
-La documentazione di Oak illustra il modo in cui i nuovi criteri CUG si riflettono nel contenuto dell’archivio. Per ulteriori informazioni, consultare [questa pagina](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
+La documentazione di Oak illustra il modo in cui i nuovi criteri CUG si riflettono nel contenuto dell’archivio. Per ulteriori informazioni, consultare la [documentazione di Jackrabbit Oak sulla gestione dell&#39;accesso con i gruppi utenti chiusi](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
 
 ### Autenticazione richiesta nel repository {#authentication-requirement-in-the-repository}
 

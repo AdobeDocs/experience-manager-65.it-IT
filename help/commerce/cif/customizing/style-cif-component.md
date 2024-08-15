@@ -11,7 +11,7 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 16%
@@ -435,7 +435,7 @@ Torna all’IDE e al progetto generato.
 
    ![Modifiche al teaser di Webpack Dev Server](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   Tuttavia, le modifiche non sono ancora state implementate nell&#39;AEM. Puoi scaricare il [file di soluzione qui](../assets/style-cif-component/_productteaser.scss).
+   Tuttavia, le modifiche non sono ancora state implementate nell&#39;AEM. Puoi [scaricare il file della soluzione qui](../assets/style-cif-component/_productteaser.scss).
 
 1. Distribuisci gli aggiornamenti a AEM utilizzando le tue competenze Maven, da un terminale della riga di comando:
 

@@ -10,9 +10,9 @@ exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -118,8 +118,8 @@ Red Hat® Linux® utilizza un algoritmo di gestione della memoria chiamato Trans
 >
 >Consulta le seguenti risorse:
 >
->* Per ulteriori informazioni su Transparent Huge Pages su Red Hat® Linux®, consulta questo [articolo](https://access.redhat.com/solutions/46111).
->* Per suggerimenti sul tuning di Linux®, consulta questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
+>* Per ulteriori informazioni su Transparent Huge Pages su Red Hat® Linux®, consultare il seguente articolo dal portale clienti Red Hat®: [Come utilizzare, monitorare e disabilitare gli hugepage trasparenti in Red Hat Enterprise Linux 6,7 e 8?](https://access.redhat.com/solutions/46111)
+>* Per suggerimenti per l&#39;ottimizzazione di Linux®, vedere [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
 >
 
 ## Gestione dell’archivio {#maintaining-the-repository}

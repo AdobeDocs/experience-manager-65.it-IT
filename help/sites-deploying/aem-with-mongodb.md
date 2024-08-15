@@ -10,9 +10,9 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '6192'
+source-wordcount: '6216'
 ht-degree: 0%
 
 ---
@@ -488,7 +488,7 @@ Puoi disattivarla seguendo la procedura seguente:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle pagine di grandi dimensioni trasparenti, consulta questo [articolo](https://access.redhat.com/solutions/46111).
+>Per ulteriori informazioni su Transparent Huge Pages, consultare il seguente articolo dal portale clienti Red Hat®: [Come utilizzare, monitorare e disabilitare gli hugepage trasparenti in Red Hat Enterprise Linux 6,7 e 8?](https://access.redhat.com/solutions/46111).
 
 #### Disattiva NUMA {#disable-numa}
 
@@ -657,7 +657,7 @@ I CSP consentono di perfezionare i criteri. Tuttavia, in un’applicazione compl
 
 >[!NOTE]
 >
->Per ulteriori informazioni su come funziona, vedere la [pagina OWASP sui criteri di sicurezza dei contenuti](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Per ulteriori informazioni su come funziona, consulta la [pagina OWASP sui criteri di sicurezza dei contenuti](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Ridimensionamento {#sizing}
 

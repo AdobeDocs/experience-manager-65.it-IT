@@ -10,9 +10,9 @@ feature: Developing,Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Il mixin `cq:OwnerTaggable`, che eredita da `cq:Taggable`, ha lo scopo di indica
 
 ### Notazione del tipo di nodo (CND) {#node-type-notation-cnd}
 
-Le definizioni dei tipi di nodo esistono nell’archivio come file CND. La notazione CND è definita nella documentazione JCR [qui](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Le definizioni dei tipi di nodo esistono nell’archivio come file CND. La notazione CND è definita nella [documentazione Jackrabbit](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Le definizioni essenziali per i tipi di nodo inclusi nell’AEM sono le seguenti:
 
