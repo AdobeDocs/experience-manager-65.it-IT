@@ -9,24 +9,28 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
 
 # Abilitazione del single sign-on nei moduli AEM{#enabling-single-sign-on-in-aem-forms}
 
-I moduli AEM offrono due modi per abilitare il Single Sign-On (SSO): intestazioni HTTP e SPNEGO.
+I moduli AEM forniscono due modi per abilitare il single sign-on (SSO): intestazioni HTTP e SPNEGO.
 
 Quando l’SSO viene implementato, le pagine di accesso degli utenti dei moduli AEM non sono obbligatorie e non vengono visualizzate se l’utente è già autenticato tramite il portale aziendale.
 
 Se i moduli AEM non sono in grado di autenticare un utente utilizzando uno di questi metodi, l’utente viene reindirizzato a una pagina di accesso.
 
+* [Abilita SSO tramite intestazioni HTTP](#enable-sso-using-http-headers)
+* [Abilita SSO tramite SPNEGO](#enable-sso-using-spnego)
+* [Assegnare ruoli a utenti e gruppi](#assign-roles-to-users-groups)
+
 ## Abilita SSO tramite intestazioni HTTP {#enable-sso-using-http-headers}
 
-È possibile utilizzare la pagina Configurazione portale per abilitare il Single Sign-On (SSO) tra le applicazioni e qualsiasi applicazione che supporti la trasmissione dell&#39;identità tramite l&#39;intestazione HTTP. Quando l’SSO viene implementato, le pagine di accesso degli utenti dei moduli AEM non sono obbligatorie e non vengono visualizzate se l’utente è già autenticato tramite il portale aziendale.
+È possibile utilizzare la pagina Configurazione portale per abilitare il Single Sign-On (SSO) tra le applicazioni e qualsiasi applicazione che supporti la trasmissione dell&#39;identità tramite un&#39;intestazione HTTP. Quando l’SSO viene implementato, le pagine di accesso degli utenti dei moduli AEM non sono obbligatorie e non vengono visualizzate se l’utente è già autenticato tramite il portale aziendale.
 
 È inoltre possibile abilitare SSO utilizzando SPNEGO. (Vedi [Abilitare l&#39;SSO tramite SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
@@ -51,6 +55,10 @@ Se i moduli AEM non sono in grado di autenticare un utente utilizzando uno di qu
 ### Configurare i referenti consentiti {#configure-allowed-referers}
 
 Per i passaggi per configurare i referenti consentiti, vedere [Configurare i referenti consentiti](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
+
+### Assegnare ruoli a utenti e gruppi
+
+Fai clic per conoscere i passaggi per [assegnare ruoli a utenti e gruppi](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
 
 ## Abilita SSO tramite SPNEGO {#enable-sso-using-spnego}
 
@@ -167,3 +175,21 @@ Se si accede al server utilizzando il nome del computer, ad esempio https://lcse
    `lcserver.um.lc.com` - Configura Firefox per consentire SPNEGO solo per il tuo server specifico. Non iniziare questo valore con un punto (&quot;.&quot;).
 
 1. Verifica la configurazione accedendo all’applicazione. Viene visualizzata la pagina di benvenuto per l’applicazione di destinazione.
+
+Fai clic per conoscere i passaggi per [assegnare ruoli a utenti e gruppi](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+
+## Assegnare ruoli a utenti e gruppi {#assign-roles-to-users-groups}
+
+1. Accedi all’ambiente AEM Forms su JEE.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
+1. Seleziona la configurazione del dominio, ad esempio LDAP, e fai clic su di essa. Nella Directory sono disponibili tutti gli utenti e i gruppi creati. Se necessario, puoi creare nuovi utenti o gruppi.
+   ![Pagina gestione dominio](/help/forms/using/assets/domain-mgmt-page.png)
+1. Fare clic su Autenticazione. Nella nuova pagina selezionare un provider di autenticazione, ad esempio LDAP.
+1. Passare alla pagina Gestione dominio, selezionare LDAP, quindi fare clic su **Sincronizza ora** per sincronizzare la directory con lo schema di autenticazione configurato per l&#39;accesso AEM.
+   ![Sincronizza ldap](/help/forms/using/assets/sync-ldap.png)
+1. Vai a Gestione utenti e fai clic su Utenti e gruppi.
+1. Cerca utenti o gruppi con i loro nomi, come mostrato nell&#39;immagine seguente.
+   ![Cerca gruppo utenti](/help/forms/using/assets/search-user-group.png)
+1. Assegna i ruoli agli utenti o ai gruppi in base alle esigenze.
+   ![Assegnazione ruolo utente](/help/forms/using/assets/user-role-assign.png)
+
