@@ -9,7 +9,7 @@ exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Dynamic Medie offre esperienze di visualizzazione interattiva, tra cui zoom, 360 gradi in rotazione e video. Dynamic Medie incorpora in modo esclusivo i flussi di lavoro della soluzione Adobe Experience Manager di gestione delle risorse digitali (Assets) per semplificare e semplificare il processo di gestione delle campagne digitali.
 
-L’utilizzo di Dynamic Medie non è disponibile nell’interfaccia classica. Consulta [Utilizzare Dynamic Medie,](/help/assets/dynamic-media.md) che tratta l&#39;interfaccia utente touch.
+L’utilizzo di Dynamic Medie non è disponibile nell’interfaccia classica. Consulta [Utilizzare Dynamic Medie](/help/assets/dynamic-media.md), che descrive l&#39;interfaccia utente touch.
 
 >[!NOTE]
 >
