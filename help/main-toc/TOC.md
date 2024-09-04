@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
+source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
 workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 20%
@@ -611,7 +611,7 @@ ht-degree: 20%
       + [Introduzione all’integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md)
       + [Configurare origini dati](/help/forms/using/configure-data-sources.md)
       + [Configurazione di Microsoft Dynamics Odata](/help/forms/using/ms-dynamics-odata-configuration.md)
-      + [Integrazione Salesforce tramite l’autorizzazione del flusso delle credenziali del client OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+      + [Integrazione di Salesforce tramite l’autorizzazione del flusso delle credenziali del client OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
       + [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
       + [Utilizzare il modello dati del modulo](/help/forms/using/work-with-form-data-model.md)
       + [Usa modello dati modulo](/help/forms/using/using-form-data-model.md)
@@ -620,7 +620,6 @@ ht-degree: 20%
       + [Creare componenti core basati sul modulo adattivo](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Creare e utilizzare frammenti di Forms adattivi in un modulo adattivo](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Creazione di temi per Forms adattivo basato su Componenti core](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-      + [Creare e utilizzare funzioni personalizzate in un modulo adattivo](/help/forms/using/create-and-use-custom-functions.md)
       + [Editor regole](/help/forms/using/rule-editor-core-components.md)
       + [Creare e utilizzare funzioni personalizzate in componenti core di un modulo adattivo](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Creazione e utilizzo di un gestore di errori personalizzato per i Componenti core basati su Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -677,6 +676,7 @@ ht-degree: 20%
       + [Integrare Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [Creazione e gestione delle revisioni delle risorse nei moduli](/help/forms/using/create-reviews-forms.md)
       + [Incorporare un modulo adattivo o una comunicazione interattiva nell’applicazione a pagina singola AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [Creare e utilizzare funzioni personalizzate in un modulo adattivo](/help/forms/using/create-and-use-custom-functions.md)
       + [Creazione e utilizzo di un gestore di errori personalizzato per Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + Comunicazioni interattive {#interactive-communications}
       + [Introduzione all’interfaccia utente di authoring delle comunicazioni interattive](/help/forms/using/introduction-interactive-communication-authoring.md)
@@ -1272,7 +1272,7 @@ ht-degree: 20%
       + [Come accedere ai contenuti tramite API di consegna AEM](/help/journey-headless/developer/access-your-content.md)
       + [Come aggiornare i contenuti tramite API di AEM Assets](/help/journey-headless/developer/update-your-content.md)
       + [Come mettere tutto insieme](/help/journey-headless/developer/put-it-all-together.md)
-      + [Come vivere con la tua applicazione headless](/help/journey-headless/developer/go-live.md)
+      + [Come pubblicare con la tua applicazione headless](/help/journey-headless/developer/go-live.md)
       + [Facoltativo - Come creare applicazioni a pagina singola con AEM](/help/journey-headless/developer/create-spa.md)
    + Percorso Architect di contenuti AEM headless {#architect}
       + [Panoramica del percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
