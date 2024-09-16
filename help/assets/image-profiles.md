@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a4c95d604e63c4fd00f17d2fb99a9e46f823ca10
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 5%
+source-wordcount: '3063'
+ht-degree: 4%
 
 ---
 
@@ -63,22 +63,22 @@ Puoi scegliere tra due opzioni di ritaglio dell’immagine: Ritaglio pixel o Rit
 | --- | --- | --- |
 | Ritaglio pixel | Ritaglia in blocco le immagini solo in base alle dimensioni. | Per utilizzare questa opzione, selezionare **[!UICONTROL Ritaglio pixel]** dall&#39;elenco a discesa Opzioni di ritaglio.<br><br>Per ritagliare dai lati di un&#39;immagine, immettere il numero di pixel da ritagliare da qualsiasi lato o da ogni lato dell&#39;immagine. La quantità di immagine ritagliata dipende dall&#39;impostazione ppi (pixel per pollice) nel file di immagine.<br><br>Il ritaglio di un pixel di un profilo immagine viene eseguito nel modo seguente:<br>· I valori sono Top, Bottom, Left e Right.<br>· In alto a sinistra è considerato `0,0` e il ritaglio pixel viene calcolato da lì.<br>· Punto iniziale ritaglio: A sinistra è X e In alto è Y<br>· Calcolo orizzontale: dimensione in pixel orizzontale dell&#39;immagine originale meno A sinistra e quindi meno A destra.<br>· Calcolo verticale: altezza verticale in pixel meno Superiore e quindi meno Inferiore.<br><br>Si supponga, ad esempio, di disporre di un&#39;immagine di 4000 x 3000 pixel. Si utilizzano i seguenti valori: Top=250, Bottom=500, Left=300, Right=700.<br><br>Dall&#39;alto a sinistra (300.250) ritaglia utilizzando lo spazio di riempimento di (4000-300-700, 3000-250-500 o 3000.2250). |
 | Ritaglio avanzato | Ritaglia in blocco le immagini in base al loro punto focale visivo. | Smart Crop utilizza la potenza dell’intelligenza artificiale in Adobe Sensei per automatizzare rapidamente il ritaglio di immagini in blocco. Il ritaglio avanzato rileva automaticamente e ritaglia fino al punto focale di qualsiasi immagine per acquisire il punto di interesse desiderato, indipendentemente dalle dimensioni dello schermo.</p> <p>Per utilizzare Ritaglio avanzato, seleziona **[!UICONTROL Ritaglio avanzato]** dall&#39;elenco a discesa Opzioni di ritaglio, quindi a destra di Ritaglio immagine reattivo, abilita (attiva) la funzione.</p> <p>Le dimensioni predefinite dei punti di interruzione di Large, Medium e Small coprono in genere l&#39;intera gamma di dimensioni utilizzate dalla maggior parte delle immagini su dispositivi mobili e tablet, desktop e banner. Se lo si desidera, è possibile modificare i nomi predefiniti di Large, Medium e Small.</p> <p>Per aggiungere altri punti di interruzione, seleziona **[!UICONTROL Aggiungi ritaglio]** per eliminare un ritaglio, quindi fai clic sull&#39;icona Cestino. |
-| Campione immagine e colore | Genera un campione di immagine per ogni immagine. | **Nota**: campione avanzato non supportato in Dynamic Media Classic.<br><br>Individua e genera automaticamente campioni di alta qualità da immagini di prodotti con colori o texture.<br><br>Per utilizzare il campione colore e immagine, seleziona **[!UICONTROL Ritaglio avanzato]** dall&#39;elenco a discesa Opzioni di ritaglio, quindi a destra di Campione colore e immagine, abilita (attiva) la funzione. Immettere un valore in pixel nelle caselle di testo Larghezza e Altezza.<br><br>Anche se tutte le ritagli di immagini sono disponibili nella barra Rappresentazioni, i campioni vengono utilizzati solo tramite la funzione Copia URL. Utilizza il tuo componente di visualizzazione per eseguire il rendering del campione sul tuo sito. (L&#39;eccezione a questa regola sono i banner a carosello. Dynamic Medie fornisce il componente visualizzazione per il campione utilizzato nei banner carosello.)<br><br>**Utilizzo di campioni di immagine**<br> L&#39;URL per i campioni di immagine è semplice. È:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>dove `:Swatch` è aggiunto alla richiesta della risorsa.<br><br>**Utilizzo di campioni colore**<br> Per utilizzare i campioni colore, è necessario eseguire una richiesta `req=userdata` con le seguenti informazioni:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Ad esempio, la risorsa seguente è una risorsa campione in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>ed è presente l&#39;URL `req=userdata` corrispondente della risorsa campione:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>La risposta `req=userdata` è la seguente:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>È inoltre possibile richiedere una risposta `req=userdata` in formato XML o JSON, come nei seguenti esempi URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota:** Creare un proprio componente WCM per richiedere un campione colore e analizzare l&#39;attributo `SmartSwatchColor`, rappresentato da un RGB a 24 bit valore adecimale.<br><br>Vedere anche [`userdata` nella Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html). |
+| Campione immagine e colore | Genera un campione di immagine per ogni immagine. | **Nota**: campione avanzato non supportato in Dynamic Media Classic.<br><br>Individua e genera automaticamente campioni di alta qualità da immagini di prodotti con colori o texture.<br><br>Per utilizzare il campione colore e immagine, seleziona **[!UICONTROL Ritaglio avanzato]** dall&#39;elenco a discesa Opzioni di ritaglio, quindi a destra di Campione colore e immagine, abilita (attiva) la funzione. Immettere un valore in pixel nelle caselle di testo Larghezza e Altezza.<br><br>Anche se tutte le ritagli di immagini sono disponibili nella barra Rappresentazioni, i campioni vengono utilizzati solo tramite la funzione Copia URL. Utilizza il tuo componente di visualizzazione per eseguire il rendering del campione sul tuo sito. (L&#39;eccezione a questa regola sono i banner a carosello. Dynamic Medie fornisce il componente visualizzazione per il campione utilizzato nei banner carosello.)<br><br>**Utilizzo di campioni di immagine**<br> L&#39;URL per i campioni di immagine è semplice. È:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>dove `:Swatch` è aggiunto alla richiesta della risorsa.<br><br>**Utilizzo di campioni colore**<br> Per utilizzare i campioni colore, è necessario eseguire una richiesta `req=userdata` con le seguenti informazioni:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Ad esempio, la risorsa seguente è una risorsa campione in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>ed è presente l&#39;URL `req=userdata` corrispondente della risorsa campione:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>La risposta `req=userdata` è la seguente:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>È inoltre possibile richiedere una risposta `req=userdata` in formato XML o JSON, come nei seguenti esempi URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota:** Creare un proprio componente WCM per richiedere un campione colore e analizzare l&#39;attributo `SmartSwatchColor`, rappresentato da un RGB a 24 bit valore adecimale.<br><br>Vedere anche [`userdata` nella Guida di riferimento visualizzatori](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
 
 ## Maschera di contrasto {#unsharp-mask}
 
-Usa **[!UICONTROL Maschera definizione dettagli]** per regolare con precisione un effetto filtro di nitidezza sull’immagine ricampionata verso il basso finale. È possibile controllare l&#39;intensità dell&#39;effetto, il raggio in pixel e una soglia di contrasto ignorata. Questo effetto utilizza le stesse opzioni del filtro *Maschera definizione dettagli* di Adobe Photoshop.
+Utilizza **[!UICONTROL Maschera definizione dettagli]** per ottimizzare un effetto filtro di nitidezza sull&#39;immagine ricampionata verso il basso finale. È possibile controllare l&#39;intensità dell&#39;effetto, il raggio in pixel e una soglia di contrasto ignorata. Questo effetto utilizza le stesse opzioni del filtro *Maschera definizione dettagli* di Adobe Photoshop.
 
 >[!NOTE]
 >
->La maschera di contrasto viene applicata solo alle rappresentazioni ridotte all&#39;interno del file PTIFF (piramide tiff) con ricampionamento verso il basso di oltre il 50%. Ciò significa che le rappresentazioni di dimensioni maggiori all’interno del file ptiff non sono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono alterate (e mostrano la maschera di contrasto).
+>La maschera di contrasto viene applicata solo alle rappresentazioni ridotte all&#39;interno del file PTIFF (piramide tiff) con ricampionamento verso il basso di oltre il 50%. Ciò significa che le rappresentazioni di dimensioni maggiori all’interno del file ptiff non sono influenzate dalla maschera di contrasto, mentre le rappresentazioni di dimensioni minori come le miniature vengono modificate (e mostrano la maschera di contrasto).
 
 In **[!UICONTROL Maschera definizione dettagli]** sono disponibili le seguenti opzioni di filtro:
 
 | Opzione | Descrizione |
 | --- | --- |
 | Quantità | Controlla il contrasto applicato ai pixel del bordo. Il valore predefinito è 1,75. Per le immagini ad alta risoluzione, è possibile aumentarlo fino a 5. Considera Importo come una misura dell’intensità del filtro. L&#39;intervallo è 0-5. |
-| Raggio | Determina il numero di pixel circostanti il bordo che influiscono sulla nitidezza. Per le immagini ad alta risoluzione, immettere da 1 a 2. Un valore basso agisce solo sui pixel del bordo; un valore alto agisce su una banda più ampia di pixel. Il valore corretto dipende dalle dimensioni dell&#39;immagine. Il valore predefinito è 0,2. L&#39;intervallo è 0-250. |
+| Raggio | Determina il numero di pixel circostanti il bordo che influiscono sulla nitidezza. Per le immagini ad alta risoluzione, immettere da 1 a 2. Un valore basso agisce solo sui pixel del bordo; un valore alto agisce su una banda più ampia di pixel. Il valore corretto dipende dalle dimensioni dell&#39;immagine. Il valore predefinito è 0,2. L&#39;intervallo è compreso tra 0 e 250. |
 | Soglia | Determina l&#39;intervallo di contrasto da ignorare quando si applica il filtro Maschera di contrasto. In altre parole, questa opzione determina quanto devono differire i pixel resi più nitidi dall’area circostante prima che vengano considerati pixel del bordo e resi più nitidi. Per evitare di introdurre disturbi, prova con valori compresi tra 0 e 255. |
 
 La nitidezza è descritta in [Immagini nitide](/help/assets/assets/sharpening_images.pdf).
@@ -183,17 +183,20 @@ Puoi riallineare o ridimensionare manualmente la finestra di ritaglio avanzato d
 
 Dopo aver modificato un ritaglio avanzato e aver salvato, la modifica viene propagata ovunque si utilizzi il ritaglio per le immagini specifiche.
 
-Se necessario, puoi eseguire nuovamente il ritaglio avanzato per generare di nuovo i ritagli aggiuntivi.
+Se necessario, esegui nuovamente il ritaglio avanzato per generare nuovamente i ritagli aggiuntivi.
 
 Vedi anche [Modificare il ritaglio o campione avanzato di più immagini](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **Per modificare il ritaglio o il campione avanzato di una singola immagine:**
 
 1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Assets]**, quindi alla cartella a cui è applicato un profilo immagine di ritaglio o campione avanzato.
-
 1. Seleziona la cartella in modo da poterne aprire il contenuto.
 1. Seleziona l’immagine di cui desideri regolare il ritaglio o il campione avanzato.
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Ritaglio avanzato]**.
+
+   >[!TIP]
+   >
+   >Utilizza il tasto di scelta rapida `s` per modificare i ritagli avanzati o i campioni avanzati.
 
 1. Effettua una delle seguenti operazioni:
 
@@ -214,7 +217,7 @@ Dopo aver applicato un profilo immagine contenente Ritaglio avanzato a una carte
 
 Dopo aver modificato un ritaglio avanzato e aver salvato, la modifica viene propagata ovunque si utilizzi il ritaglio per le immagini specifiche.
 
-Se necessario, puoi eseguire nuovamente il ritaglio avanzato per generare di nuovo i ritagli aggiuntivi.
+Se necessario, esegui nuovamente il ritaglio avanzato per generare nuovamente i ritagli aggiuntivi.
 
 **Per modificare il ritaglio o il campione avanzato di più immagini:**
 
