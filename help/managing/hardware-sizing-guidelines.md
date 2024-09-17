@@ -5,9 +5,9 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9eeba0532a9eddb668b8488218c0570ca2241439
+source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -89,8 +89,6 @@ Lo spazio su disco necessario dipende in larga misura dal volume e dal tipo dell
 * la crescita complessiva dei contenuti nel tempo
 
 Lo spazio su disco viene costantemente monitorato durante la pulizia delle revisioni online e offline. Se lo spazio su disco disponibile scende al di sotto di un valore critico, il processo viene annullato. Il valore critico è pari al 25% dell&#39;attuale spazio su disco dell&#39;archivio e non è configurabile. L&#39;Adobe consiglia di ridimensionare il disco almeno due o tre volte più grande della dimensione dell&#39;archivio, inclusa la crescita stimata.
-
-Considerare la configurazione di array ridondanti di dischi indipendenti (RAID, ad esempio, RAID10) per la ridondanza dei dati.
 
 ### Virtualizzazione {#virtualization}
 
