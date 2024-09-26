@@ -9,7 +9,7 @@ feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 7bf70ba18603bfd17dec391ddcd623e9085fbd04
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
@@ -30,7 +30,7 @@ In questo flusso di lavoro, i frammenti di contenuto da tradurre vengono copiati
 
 **Aggiorna copie per lingua**
 
-Quando il frammento di contenuto sorgente viene aggiornato o modificato, il frammento di contenuto corrispondente specifico per lingua/lingua richiede la riconversione. Il flusso di lavoro di aggiornamento delle copie per lingua traduce un ulteriore gruppo di frammenti di contenuto e lo include in una copia per lingua specifica per una specifica lingua. In questo caso, i frammenti di contenuto tradotti vengono aggiunti alla cartella di destinazione che contiene già frammenti di contenuto tradotti in precedenza.
+Quando il frammento di contenuto sorgente viene aggiornato o modificato, il frammento di contenuto corrispondente specifico per lingua/lingua richiede la riconversione. Il flusso di lavoro di aggiornamento delle copie per lingua traduce un ulteriore gruppo di frammenti di contenuto e lo include in una copia in lingua per una specifica lingua. In questo caso, i frammenti di contenuto tradotti vengono aggiunti alla cartella di destinazione che contiene già frammenti di contenuto tradotti in precedenza.
 
 ## Creare e tradurre il flusso di lavoro {#create-and-translate-workflow}
 
