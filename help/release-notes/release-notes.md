@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 1fa3a56d2868cad0e1b54bf3fe1b018061b4b7a8
+source-git-commit: f87f762068992695ffd6e24f572281653cf9f75f
 workflow-type: tm+mt
-source-wordcount: '4394'
+source-wordcount: '4500'
 ht-degree: 2%
 
 ---
@@ -559,6 +559,10 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 * Quando un utente in un ambiente Linux esegue il rendering di un modulo adattivo (su JEE) in HTML, il rendering non riesce. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921957)
 * Quando un utente converte un file XTG in formato PostScript utilizzando il servizio di output in AEM Forms JEE, l&#39;operazione non riesce e viene visualizzato l&#39;errore: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921720)
 * Dopo l’aggiornamento ad AEM Forms Service Pack 18 (6.5.18.0) sul server JEE, quando un utente invia un modulo, non riesce a eseguire il rendering di HTML5 o PDF forms e XMLFM si arresta. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921718)
+* Nell’anteprima di stampa dell’interfaccia utente di Interactive Communications Agent, il simbolo di valuta (ad esempio il simbolo del dollaro $) viene visualizzato in modo incoerente per tutti i valori dei campi. Viene visualizzato per valori fino a 999 ma non per valori di 1000 e superiori. (FORMS-16557)
+* Eventuali modifiche apportate all’XDP dei frammenti di layout nidificati in una comunicazione interattiva non vengono riportate nell’editor IC. (FORMS-16575)
+* Nell’anteprima di stampa dell’interfaccia utente di Interactive Communications Agent, alcuni valori calcolati non vengono visualizzati correttamente. (FORMS-16603)
+* Quando la lettera viene visualizzata in Anteprima di stampa, il contenuto cambia. Alcuni spazi scompaiono e alcune lettere vengono sostituite con una &quot;x&quot;. (FORMS-15681)
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
