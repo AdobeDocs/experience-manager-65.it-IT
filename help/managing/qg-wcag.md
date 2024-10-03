@@ -5,10 +5,10 @@ exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 92%
+source-wordcount: '1744'
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,9 @@ La [versione 2.1 delle linee guida per l’accessibilità dei contenuti web (WCA
 
 >[!NOTE]
 >
->Attualmente, è in fase di sviluppo una versione [aggiornata delle linee guida, WCAG 2.2](https://www.w3.org/TR/WCAG22/), ma questa non verrà presa in considerazione al momento.
+>Poiché questi documenti sono stati scritti con la [versione aggiornata delle linee guida, WCAG 2.2](https://www.w3.org/TR/) è stato reso disponibile a ottobre 2023.
+>
+>Vedi [Confronto con WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) e [Nuove funzioni in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 Le linee guida WCAG 2.1 sono costituite da un insieme di criteri di successo e linee guida che non dipendono dalla tecnologia in uso e hanno l’obiettivo di rendere i contenuti web accessibili e utilizzabili da persone con disabilità. Forniscono consigli agli autori, ai designer e agli sviluppatori di contenuti web per garantire che le risorse prodotte siano il più possibile accessibili a quante più persone possibile, indipendentemente da eventuali disabilità: ad esempio disabilità visive, perdita dell’udito, difficoltà di apprendimento, limitazioni correlate all’età.
 
