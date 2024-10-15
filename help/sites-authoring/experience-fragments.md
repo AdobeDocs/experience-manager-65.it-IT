@@ -5,7 +5,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 73%
@@ -31,8 +31,8 @@ Un frammento di esperienza:
 
 Puoi utilizzare Frammenti esperienza:
 
-* Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di una pagina, deve copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
-* Per supportare il caso d’uso del CMS headless. Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. È possibile che un sistema o punto di contatto di terzi prenda in carico questa particolare esperienza e in seguito la trasmetta all’utente finale.
+* Se un autore desidera riutilizzare parti di una pagina (un frammento di un’esperienza), deve copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
+* Per supportare il caso d’uso di CMS headless. Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. È possibile che un sistema o punto di contatto di terzi prenda in carico questa particolare esperienza e in seguito la trasmetta all’utente finale.
 * Con [Gestione multisito (MSM)](/help/sites-administering/msm.md); come frammento di esperienza fa parte di una pagina. Questo vale sia per i singoli frammenti che per le cartelle in cui risiedono.
 
 >[!NOTE]
