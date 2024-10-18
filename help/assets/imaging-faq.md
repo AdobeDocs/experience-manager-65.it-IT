@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
+source-git-commit: 7fb3ec9654b56605321f0d12a4c1e23d2e18dab9
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3322'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La tecnologia Smart Imaging applica le esclusive caratteristiche di visualizzazione di ogni utente per fornire le immagini giuste ottimizzate automaticamente per la propria esperienza, con conseguente miglioramento delle prestazioni e del coinvolgimento.
 
-## Che cos&#39;è l&#39;imaging avanzato? {#what-is-smart-imaging}
+## Informazioni sulla tecnologia Smart Imaging {#what-is-smart-imaging}
 
 La tecnologia di imaging intelligente applica le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
@@ -136,7 +136,7 @@ I valori di DPR e larghezza di banda di rete si basano sui valori lato client ri
 * In precedenza, le immagini originali e derivate venivano memorizzate nella cache ed era un processo in due fasi per invalidare la cache. Nell’ultima versione di Smart Imaging, vengono memorizzate nella cache solo le derivate, consentendo un processo di invalidamento della cache in un unico passaggio.
 * I clienti che utilizzano intestazioni personalizzate nei propri set di regole beneficiano della tecnologia Smart Imaging più recente, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging. &quot;Timing Allow Origin&quot; e &quot;X-Robot&quot;, ad esempio, come suggerito in [Aggiungere un valore di intestazione personalizzato alle risposte dell&#39;immagine|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Domande frequenti {#fag}
+## Domande frequenti
 
 +++Esistono costi di licenza associati all&#39;imaging avanzato?
 
