@@ -5,10 +5,10 @@ exl-id: 372e6a46-72bb-4db4-ad01-534ca723ae58
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 573057b8e4c01b1c14f8c66b3da7b44e9d857760
+source-git-commit: 1788e5f77d4c46a548710361e9e5dae3c6daab28
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 26%
 
 ---
 
@@ -34,6 +34,24 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 * Sono stati corretti i test dell’interfaccia utente per il corretto funzionamento con i componenti core CIF.
 * È stato risolto un problema a causa del quale il formato dell’URL della categoria non funzionava come previsto nell’istanza cloud.
+
+## Data di rilascio: settembre 2024
+
+| Componente | Versione | Dettagli |
+|:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
+| Componenti core CIF | 2.14.2. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.14.2) |
+
+### Miglioramenti {#improvements-September}
+
+* Rendere personalizzabile il limite delle categorie.
+
+### Correzioni di bug {#bug-fixes-September}
+
+* I campi di Commerce non sono correttamente integrati nell’editor schema metadati di Assets.
+* Problema con più campi dei prodotti carosello per il trascinamento.
+* Problema con il multicampo della categoria Carosello per il trascinamento
+* Il clic non funziona per i menu nella pagina Informazioni pagina nell’editor categoria e prodotto.
+* Il campo Numero ordine non è visibile nella pagina di conferma dell’ordine.
 
 ## Data di rilascio: gennaio 2024
 
