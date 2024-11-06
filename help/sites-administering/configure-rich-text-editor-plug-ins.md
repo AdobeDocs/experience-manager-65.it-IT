@@ -6,7 +6,7 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%
@@ -721,7 +721,7 @@ Per configurare il modo in cui i collegamenti vengono aggiunti in AEM da un altr
       * Specifica la modalità di destinazione:
 
          * **Nome** `mode`
-         * **Tipo** `String`)
+         * **Tipo** `String`
          * **Valore**
 
             * `auto`: indica che è stata scelta una destinazione automatica
