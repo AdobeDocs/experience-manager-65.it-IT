@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
+source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
 workflow-type: tm+mt
-source-wordcount: '7448'
-ht-degree: 20%
+source-wordcount: '7450'
+ht-degree: 21%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 20%
 + Note sulla versione {#release-notes}
    + [Note sulla versione](/help/release-notes/release-notes.md)
    + Note sulle versioni precedenti {#service-pack}
+      + [6.5.21](/help/release-notes/previous/6-5-21.md)
       + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
@@ -333,11 +334,11 @@ ht-degree: 20%
          + [Creazione di Adobe Campaign Forms nell’AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
       + Authoring Assets nell&#39;interfaccia classica {#assets}
          + [Utilizzo delle risorse](/help/sites-classic-ui-authoring/classicui-assets.md)
-         + [Distribuzione di Dynamic Medie Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
-         + [Aggiunta di Dynamic Medie Assets alle pagine](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+         + [Distribuzione di Dynamic Media Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
+         + [Aggiunta di Dynamic Media Assets alle pagine](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Aggiunta di funzioni Scene7 alla pagina](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
-         + [Utilizzo di Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+         + [Utilizzare Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [Convenzioni di denominazione per il test delle risorse](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
    + [Informazioni su DAM](/help/assets/assets.md)
@@ -358,17 +359,17 @@ ht-degree: 20%
       + [Aggiungere mappe immagine](/help/assets/image-maps.md)
       + [Riutilizzare le risorse con MSM](/help/assets/reuse-assets-using-msm.md)
       + [Assets connesso con  [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
-   + Dynamic Medie{#dynamic}
+   + Dynamic Media{#dynamic}
       + [Archivio newsletter per Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Impostazione di Dynamic Media](/help/assets/administering-dynamic-media.md)
-      + [Utilizzo di Dynamic Media](/help/assets/dynamic-media.md)
-      + [Configurare Dynamic Medie - Modalità Scene7](/help/assets/config-dms7.md)
-      + [Facoltativo - Configurare Dynamic Medie - Modalità Scene7, Impostazioni generali](/help/assets/dm-general-settings.md)
-      + [Facoltativo - Configurare Dynamic Medie - Modalità Scene7, Installazione di Publish](/help/assets/dm-publish-settings.md)
-      + [Risoluzione dei problemi di Dynamic Medie - Modalità Scene7](/help/assets/troubleshoot-dms7.md)
-      + [Configurare un account alias società Dynamic Medie](/help/assets/dm-alias-account.md)
-      + [Configurare Dynamic Medie - Modalità ibrida](/help/assets/config-dynamic.md)
-      + [Migrazione da Dynamic Medie in modalità ibrida a Dynamic Medie in modalità S7](/help/assets/migrate-from-hybrid-to-dms7.md)
+      + [Utilizzare Dynamic Media](/help/assets/dynamic-media.md)
+      + [Configurare Dynamic Media - Modalità Scene7](/help/assets/config-dms7.md)
+      + [Facoltativo - Configurare Dynamic Media - Modalità Scene7, Impostazioni generali](/help/assets/dm-general-settings.md)
+      + [Facoltativo - Configurare Dynamic Media - Modalità Scene7, Installazione di Publish](/help/assets/dm-publish-settings.md)
+      + [Risoluzione dei problemi di Dynamic Media - Modalità Scene7](/help/assets/troubleshoot-dms7.md)
+      + [Configurare un account alias società Dynamic Media](/help/assets/dm-alias-account.md)
+      + [Configurare Dynamic Media - Modalità ibrida](/help/assets/config-dynamic.md)
+      + [Migrazione da Dynamic Media in modalità ibrida a Dynamic Media in modalità S7](/help/assets/migrate-from-hybrid-to-dms7.md)
       + [Accessibilità in Dynamic Media](/help/assets/accessibility-dm.md)
       + [Gestire le risorse Dynamic Media](/help/assets/managing-assets.md)
       + [Best practice per ottimizzare la qualità delle immagini](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -376,8 +377,8 @@ ht-degree: 20%
       + [Applicazione dei predefiniti per il visualizzatore Dynamic Media](/help/assets/viewer-presets.md)
       + [Gestione dei predefiniti per le immagini Dynamic Media](/help/assets/managing-image-presets.md)
       + [Applicare predefiniti per le immagini Dynamic Media](/help/assets/image-presets.md)
-      + [Profili video Dynamic Medie](/help/assets/video-profiles.md)
-      + [Profili immagine Dynamic Medie](/help/assets/image-profiles.md)
+      + [Profili video Dynamic Media](/help/assets/video-profiles.md)
+      + [Profili immagine Dynamic Media](/help/assets/image-profiles.md)
       + [Imaging avanzato](/help/assets/imaging-faq.md)
       + [Imaging avanzato con proporzioni pixel del dispositivo lato client](/help/assets/client-side-dpr.md)
       + [Video](/help/assets/s7-video.md)
@@ -598,7 +599,7 @@ ht-degree: 20%
          + [Flussi di lavoro incentrati su Forms su OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
          + [Gestione degli utenti Forms](/help/forms/using/user-management-handling-user-data.md)
          + [Flussi di lavoro di Forms JEE](/help/forms/using/forms-workflow-jee-handling-user-data.md)
-         + [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
+         + [Portale moduli](/help/forms/using/forms-portal-handling-user-data.md)
          + [Gestione della corrispondenza](/help/forms/using/correspondence-management-handling-user-data.md)
          + [Integrazione con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
          + [Document Security](/help/forms/using/document-security-handling-user-data.md)
@@ -610,7 +611,7 @@ ht-degree: 20%
    + Modello dati modulo {#form-data-model}
       + [Introduzione all’integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md)
       + [Configurare origini dati](/help/forms/using/configure-data-sources.md)
-      + [Configurazione di Microsoft Dynamics Odata](/help/forms/using/ms-dynamics-odata-configuration.md)
+      + [Configurazione Microsoft Dynamics Odata](/help/forms/using/ms-dynamics-odata-configuration.md)
       + [Integrazione di Salesforce tramite l’autorizzazione del flusso delle credenziali del client OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
       + [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
       + [Utilizzare il modello dati del modulo](/help/forms/using/work-with-form-data-model.md)
@@ -649,7 +650,7 @@ ht-degree: 20%
       + [Applicare firme elettroniche a un modulo utilizzando le firme scarabocchio](/help/forms/using/signing-forms-using-scribble.md)
       + [Scelte rapide da tastiera per AEM Forms](/help/forms/using/keyboard-shortcuts.md)
       + [Associazione dei revisori di invio a un modulo](/help/forms/using/adding-reviewers-form.md)
-      + [Creazione della Guida contestuale per i campi modulo](/help/forms/using/authoring-in-field-help.md)
+      + [Creazione di una guida contestuale per i campi modulo](/help/forms/using/authoring-in-field-help.md)
       + [Utilizzare la modalità Layout per ridimensionare i componenti](/help/forms/using/resize-using-layout-mode.md)
       + [Connettere e inviare i dati del modulo adattivo a Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
    + Forms adattivo - Authoring avanzato {#adaptive-forms-advanced-authoring}
@@ -662,9 +663,9 @@ ht-degree: 20%
       + [Invio asincrono di moduli adattivi](/help/forms/using/asynchronous-submissions-adaptive-forms.md)
       + [Creare un modulo adattivo utilizzando un set di moduli adattivi](/help/forms/using/create-adaptive-form-using-adaptive-form-set.md)
       + [Modelli di modulo adattivo](/help/forms/using/template-editor.md)
-      + [Espressioni modulo adattivo](/help/forms/using/adaptive-form-expressions.md)
+      + [Espressioni per moduli adattivi](/help/forms/using/adaptive-form-expressions.md)
       + [Generare un documento di record per i moduli adattivi](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + [Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/using/lazy-loading-adaptive-forms.md)
+      + [Migliorare le prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/using/lazy-loading-adaptive-forms.md)
       + [Precompilare i campi del modulo adattivo](/help/forms/using/prepopulate-adaptive-form-fields.md)
       + [Utilizzo di espressioni SOM nei moduli adattivi](/help/forms/using/using-som-expressions-adaptive-forms.md)
       + [Aggiunta di informazioni dai dati utente ai metadati di invio del modulo](/help/forms/using/form-submission-metadata.md)
@@ -672,7 +673,7 @@ ht-degree: 20%
       + [Concedere l’accesso all’editor di regole a specifici gruppi di utenti](/help/forms/using/rule-editor-access-user-groups.md)
       + [Utilizzo del flusso di lavoro di traduzione AEM per localizzare i moduli adattivi e i documenti di record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
       + [Costrutti di stile per i moduli adattivi](/help/forms/using/styling-constructs-adaptive-forms.md)
-      + [Sincronizzazione di Forms adattivo con i modelli di modulo XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
+      + [Sincronizzazione di moduli adattivi con i modelli di modulo XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
       + [Integrare Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [Creazione e gestione delle revisioni delle risorse nei moduli](/help/forms/using/create-reviews-forms.md)
       + [Incorporare un modulo adattivo o una comunicazione interattiva nell’applicazione a pagina singola AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
@@ -828,7 +829,7 @@ ht-degree: 20%
       + [Creare esperienze mirate in AEM Forms](/help/forms/using/experience-targeting-forms.md)
       + [Misurare e migliorare l’efficacia e la conversione dei moduli](/help/forms/using/measure-improve-performance-forms-documents.md)
       + [Analytics con framework di Cloud Service](/help/forms/using/configure-analytics-forms-documents.md)
-      + [Analytics utilizzando Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
+      + [Analytics tramite Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
       + [Visualizzare e comprendere i rapporti di AEM Forms Analytics](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
       + [Creare e gestire test A/B per i moduli adattivi](/help/forms/using/ab-testing-adaptive-forms.md)
    + Publish ed elabora AEM Forms {#publish-process-aem-forms}
@@ -839,7 +840,7 @@ ht-degree: 20%
       + [Cartella controllata in AEM Forms](/help/forms/using/watched-folder-in-aem-forms.md)
       + [Componente Bozze e invii](/help/forms/using/draft-submission-component.md)
       + [Incorporazione di un componente collegamento in una pagina](/help/forms/using/embedding-link-component-page.md)
-      + [Pubblicazione e annullamento della pubblicazione di moduli e documenti](/help/forms/using/publishing-unpublishing-forms.md)
+      + [Pubblicare e annullare la pubblicazione di moduli e documenti](/help/forms/using/publishing-unpublishing-forms.md)
       + [Elencare moduli su una pagina web utilizzando le API](/help/forms/using/listing-forms-webpage-using-apis.md)
       + [Accesso e compilazione di moduli pubblicati](/help/forms/using/accessing-filling-published-forms.md)
       + [Invio di una conferma per l’invio di un modulo tramite e-mail](/help/forms/using/form-submission-receipt-via-email.md)
@@ -877,7 +878,7 @@ ht-degree: 20%
       + [Riferimento script Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
       + [Riferimento Designer FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Utilizzo della firma scarabocchio nei moduli di HTML5](/help/forms/using/scribble-signature.md)
-      + [Modifica del contenuto di Page Zero in Designer](/help/forms/using/changing-page-zero-content-designer.md)
+      + [Modifica del contenuto della pagina zero in Designer](/help/forms/using/changing-page-zero-content-designer.md)
       + [Best practice per l&#39;accessibilità]{#accessibility-best-practices}
          + [Introduzione](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Best practice per la creazione di moduli](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
@@ -1367,7 +1368,7 @@ ht-degree: 20%
             + [Internazionalizzazione dei componenti](/help/sites-developing/i18n.md)
             + [Internazionalizzazione delle stringhe dell’interfaccia utente](/help/sites-developing/i18n-dev.md)
             + [Utilizzo di Translator per gestire i dizionari](/help/sites-developing/i18n-translator.md)
-            + [Estrazione di stringhe per la traduzione](/help/sites-developing/i18n-extract.md)
+            + [Estrazione delle stringhe per la traduzione](/help/sites-developing/i18n-extract.md)
          + Componenti interfaccia classica{#classic-ui-components}
             + [Sviluppo di componenti AEM (interfaccia classica)](/help/sites-developing/developing-components-classic.md)
             + [Utilizzo ed estensione dei widget (interfaccia classica)](/help/sites-developing/widgets.md)
@@ -1612,7 +1613,7 @@ ht-degree: 20%
          + [Ristrutturazione dell’archivio comune in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio Sites in AEM 6.5](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio Assets nell’AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
-         + [Ristrutturazione dell’archivio Dynamic Medie nell’AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
+         + [Ristrutturazione dell’archivio Dynamic Media nell’AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio Forms nell’AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell&#39;archivio E-Commerce nell&#39;AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio per AEM Communities nella versione 6.5](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
