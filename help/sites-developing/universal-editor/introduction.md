@@ -3,9 +3,10 @@ title: Editor universale
 description: Scopri la flessibilità di Universal Editor e come può aiutare a potenziare le tue esperienze headless utilizzando AEM 6.5.
 feature: Developing
 role: Developer
-source-git-commit: a088fcb3069fae7e63c7238710534d817a308eff
+exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
+source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -46,17 +47,17 @@ Dopo aver completato la configurazione, puoi [dotare le applicazioni dell&#39;ed
 
 ### Aggiorna AEM {#update-aem}
 
-Per utilizzare Universal Editor con AEM 6.5 sono necessari Service Pack 21 e un feature pack per AEM.
+Per poter utilizzare l’editor universale con AEM 6.5 sono necessari i Service Pack 21 o 22 e un feature pack per l’AEM.
 
 #### Applica Service Pack più recente {#latest}
 
-Assicurati di eseguire almeno il service pack 21 per AEM 6.5. È possibile scaricare il service pack più recente da [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
+Assicurati di eseguire almeno il service pack 21 o 22 per AEM 6.5. È possibile scaricare il service pack più recente da [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
 
 #### Installazione del Feature Pack di Universal Editor {#feature-pack}
 
 Installa **Universal Editor Feature Pack per AEM 6.5** [disponibile in Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-Se si sta già eseguendo il service pack 23 o versione successiva, questo passaggio non è necessario.
+Se è già in esecuzione il service pack 23 o versione successiva, il feature pack non è necessario.
 
 ### Configura servizi {#configure-services}
 
