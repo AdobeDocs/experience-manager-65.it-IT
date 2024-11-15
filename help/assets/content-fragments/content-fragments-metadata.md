@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 81%
+source-wordcount: '228'
+ht-degree: 79%
 
 ---
 
 # Metadati - Proprietà dei frammenti {#metadata-fragment-properties}
 
-Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare i contenuti headless.
+Scopri come utilizzare l’editor dei frammenti di contenuto per visualizzare e modificare le proprietà dei metadati dei frammenti di contenuto in AEM per regolare i contenuti headless.
 
 ## Modifica di proprietà o metadati {#editing-properties-meta-data}
 

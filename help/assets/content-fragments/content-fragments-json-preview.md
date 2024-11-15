@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User,Developer
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '117'
+ht-degree: 70%
 
 ---
 
 # Anteprima - Rappresentazione JSON {#preview-json-representation}
 
-Durante lo sviluppo di modelli per frammenti di contenuto come parte dell’implementazione AEM headless, potrebbe essere utile visualizzare un output JSON di esempio per un frammento di contenuto, in base a un modello. Ad esempio, per avere un’idea dell’aspetto dell’output finale. Questo potrebbe essere utile durante la convalida della struttura JSON del modello, con contenuto di esempio predefinito per tipo di dati.
+Durante lo sviluppo di modelli per frammenti di contenuto come parte dell’implementazione AEM headless, puoi utilizzare l’editor frammenti di contenuto per visualizzare un output JSON di esempio per un frammento di contenuto, in base a un modello. Ad esempio, per avere un’idea dell’aspetto dell’output finale. Questo potrebbe essere utile durante la convalida della struttura JSON del modello, con contenuto di esempio predefinito per tipo di dati.
 
 Utilizzo dell’icona **Anteprima**:
 
