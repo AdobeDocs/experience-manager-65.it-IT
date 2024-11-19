@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
+source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2149'
 ht-degree: 8%
 
 ---
@@ -119,9 +119,11 @@ This is an automatically generated message. Please do not reply.
 
 Per personalizzare il modello e-mail inglese per la notifica della pagina:
 
-1. In CRXDE, apri il file:
+1. Crea una sovrapposizione per [notifiche pagina](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 
-   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
+1. Apri il file:
+
+   `en.txt`
 
 1. Modifica il file in base alle tue esigenze.
 1. Salva le modifiche.
@@ -181,9 +183,11 @@ This is an automatically generated message. Please do not reply.
 
 Per personalizzare il modello e-mail inglese per la notifica degli eventi del flusso di lavoro:
 
-1. In CRXDE, apri il file:
+1. Crea una sovrapposizione per [notifiche flusso di lavoro](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-   `/libs/settings/workflow/notification/email/default/en.txt`
+1. Apri il file:
+
+   `en.txt`
 
 1. Modifica il file in base alle tue esigenze.
 1. Salva le modifiche.
@@ -239,11 +243,12 @@ Le seguenti variabili possono essere utilizzate all’interno del modello e-mail
 
 Per aggiungere un modello per una nuova lingua:
 
-1. In CRXDE, aggiungere un file `<language-code>.txt` di seguito:
+1. Crea una [sovrapposizione](/help/sites-developing/overlays.md) come appropriato.
 
-   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : per le notifiche pagina
-   * `/libs/settings/workflow/notification/email/default` : per le notifiche del flusso di lavoro
+   * [Notifiche di pagina](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+   * [Notifiche del flusso di lavoro](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
+1. Aggiungere un file `<language-code>.txt`.
 1. Adattare il file alla lingua.
 1. Salva le modifiche.
 
@@ -285,7 +290,7 @@ Puoi configurare OAuth per più provider di posta elettronica, come descritto di
 
 >[!NOTE]
 >
->I clienti Adobe Managed Service possono collaborare con il proprio tecnico dell’assistenza clienti per apportare queste modifiche agli ambienti di produzione.
+>I clienti di Adobe Managed Service possono collaborare con il proprio tecnico dell’assistenza clienti per apportare queste modifiche agli ambienti di produzione.
 
 Innanzitutto, configura il servizio di posta:
 
