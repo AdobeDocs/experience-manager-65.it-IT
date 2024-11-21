@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 5b4153f83d725c307e23ea10c4ea151911d4d390
+source-git-commit: 917723f89c037756a74fef9a54df9237d4283c1d
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,17 +34,17 @@ Prima di utilizzare il Servizio di contenuti avanzati, verifica quanto segue:
 
 * Installa il [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it) più recente.
 
-## Aggiornamento SCS per supportare Oauth, ad Adobe Managed Services {#scs-upgrade-oauth-managed-services}
+## ADOBE Aggiornamento SCS per supportare Oauth per Managed Services {#scs-upgrade-oauth-managed-services}
 
 **Nuovi utenti**
 
-Installare Service Pack 21. Per supportare l&#39;integrazione Oauth in Service Pack 21, è necessario installare [Hotfix per Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
+Installare Service Pack 22. Per supportare l&#39;integrazione Oauth in Service Pack 22, è necessario installare [Hotfix per Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
 Segui le istruzioni riportate in questo articolo per configurare Smart Content Services.
 
 **Utenti esistenti**
 
-Se è stato eseguito l&#39;aggiornamento al Service Pack 21, installare [Hotfix per SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) per supportare l&#39;integrazione Oauth. Qualsiasi configurazione esistente viene eliminata automaticamente. Segui le istruzioni riportate in questo articolo per configurare Smart Content Services.
+Se è stato eseguito l&#39;aggiornamento al Service Pack 21, installare [Hotfix per Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) per supportare l&#39;integrazione Oauth. Qualsiasi configurazione esistente viene eliminata automaticamente. Segui le istruzioni riportate in questo articolo per configurare Smart Content Services. Se si esegue l&#39;aggiornamento al Service Pack 22, è necessario installare questo [Hotfix per Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
 Per Service Pack 20 e versioni precedenti, è necessario eseguire i passaggi per la soluzione alternativa per il supporto dell’integrazione Oauth da parte di SCS. Consulta [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md).
 
@@ -58,7 +58,7 @@ Smart Content Services non è più disponibile per i nuovi utenti locali di [!DN
 
 Gli utenti on-premise esistenti che dispongono già di questa funzionalità possono continuare a utilizzare Smart Content Services.
 
-Se è stato eseguito l&#39;aggiornamento al Service Pack 21, installare [Hotfix per SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) per supportare l&#39;integrazione Oauth. Qualsiasi configurazione esistente viene eliminata automaticamente. Segui le istruzioni riportate in questo articolo per configurare Smart Content Services.
+Se è stato eseguito l&#39;aggiornamento al Service Pack 21, installare [Hotfix per Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) per supportare l&#39;integrazione Oauth. Qualsiasi configurazione esistente viene eliminata automaticamente. Segui le istruzioni riportate in questo articolo per configurare Smart Content Services. Se si esegue l&#39;aggiornamento al Service Pack 22, è necessario installare questo [Hotfix per Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
 Per Service Pack 20 e versioni precedenti, è necessario eseguire i passaggi per la soluzione alternativa per il supporto dell’integrazione Oauth da parte di SCS. Consulta [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md).
 
@@ -427,7 +427,7 @@ Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candida
 
 >[!NOTE]
 >
->La capacità del Servizio di contenuti avanzati di addestrarsi sui tag e di applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione. Per ottenere i migliori risultati, l’Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
+>La capacità del Servizio di contenuti avanzati di addestrarsi sui tag e di applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione. Per ottenere i migliori risultati, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
 
 ### Formazione periodica {#periodic-training}
 
