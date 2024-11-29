@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4ce52d90f9d3300e543563ce3dc242f28e00912e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
 >
 >* La versione a 64 bit del designer è stata introdotta con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 >* La versione a 32 bit della finestra di progettazione è obsoleta dal rilascio di [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+> * Le piattaforme supportate per Forms Designer si allineano alle piattaforme supportate da AEM Forms. Per informazioni sulle piattaforme supportate per Forms Designer, [fai clic qui](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Per ulteriori informazioni sull&#39;installazione di Forms Designer, visitare [Domande frequenti](#fandq).
 
@@ -51,7 +52,7 @@ Designer è disponibile come programma di installazione autonomo ed è fornito i
 
    >[!NOTE]
    > 
-   >* Forms Designer a 32 bit diventerà obsoleto con AEM 6.5 Forms Service Pack 20 (6.5.20.0). L&#39;Adobe consiglia di eseguire l&#39;aggiornamento a Forms Designer a 64 bit.
+   >* Forms Designer a 32 bit diventerà obsoleto con AEM 6.5 Forms Service Pack 20 (6.5.20.0). Adobe consiglia di eseguire l’aggiornamento a Forms Designer a 64 bit.
    >* Forms Designer a 64 bit è disponibile solo per AEM 6.5 Forms Service Pack 19 (6.5.19.0) o versioni successive.
    >* Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) e versioni successive Forms Designer includono anche la versione Service Pack. Ad esempio, per Service Pack 15 il numero di versione è 6.5.15.20221112.1.0. In questo esempio, 6.5.15 è la versione del service pack.
 
@@ -60,7 +61,7 @@ Designer è disponibile come programma di installazione autonomo ed è fornito i
 
    >[!NOTE]
    >
-   >* Ottieni il codice di licenza di Forms Designer da [sito Web Adobe Licensing](https://licensing.adobe.com/).
+   >* Ottieni il codice di licenza di Forms Designer dal [sito Web Adobe Licensing](https://licensing.adobe.com/).
 
 1. Se si accetta il contratto di licenza, fare clic su Avanti per continuare.
 1. (Facoltativo) modificare il percorso di installazione predefinito se si desidera installare Designer nel percorso desiderato. Fai clic su Avanti.
