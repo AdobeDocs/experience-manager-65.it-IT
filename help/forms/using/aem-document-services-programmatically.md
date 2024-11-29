@@ -8,9 +8,9 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: 60414285277281d9b1e0c9d93ddf04bc267fd0fb
+source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
 workflow-type: tm+mt
-source-wordcount: '6388'
+source-wordcount: '6448'
 ht-degree: 1%
 
 ---
@@ -2759,7 +2759,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Verifica di più firme digitali {#verifying-multiple-digital-signatures}
 
-AEM consente di verificare le firme digitali nei documenti di PDF. Un documento PDF può contenere più firme digitali se è soggetto a un processo aziendale che richiede firme da più firmatari. Ad esempio, una transazione finanziaria richiede le firme sia del responsabile del prestito che del manager. È possibile utilizzare l’API del servizio di firma per verificare tutte le firme all’interno del documento di PDF. Quando si verificano più firme digitali, è possibile controllare lo stato e le proprietà di ogni firma. Prima di considerare attendibile una firma digitale, l&#39;Adobe consiglia di verificarla.
+AEM consente di verificare le firme digitali nei documenti di PDF. Un documento PDF può contenere più firme digitali se è soggetto a un processo aziendale che richiede firme da più firmatari. Ad esempio, una transazione finanziaria richiede le firme sia del responsabile del prestito che del manager. È possibile utilizzare l’API del servizio di firma per verificare tutte le firme all’interno del documento di PDF. Quando si verificano più firme digitali, è possibile controllare lo stato e le proprietà di ogni firma. Prima di considerare attendibile una firma digitale, Adobe consiglia di verificarla.
 
 **Sintassi**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -4570,7 +4570,7 @@ Il servizio createPDF genera le seguenti eccezioni:
      <li>Nessuna protezione</li>
      <li>Sicurezza password<br /> </li>
      <li>Sicurezza certificato<br /> </li>
-     <li>Server dei criteri Adobe</li>
+     <li>Server Adobe Policy</li>
     </ul> <p>Si tratta di un parametro facoltativo.</p> </td>
   </tr>
   <tr>
@@ -4983,7 +4983,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>Nessuna protezione</li>
      <li>Sicurezza password<br /> </li>
      <li>Sicurezza certificato<br /> </li>
-     <li>Server dei criteri Adobe</li>
+     <li>Server Adobe Policy</li>
     </ul> <p>Si tratta di un parametro facoltativo.</p> </td>
   </tr>
   <tr>
@@ -5065,110 +5065,67 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 #### Assegna tag automatici ai documenti di PDF {#auto-tag-api}
 
-L’API di assegnazione tag automatici a PDF consente di rendere accessibile un documento PDF aggiungendovi tag, supporta il blocco di tag di testo (paragrafi) e gli elenchi puntati in un unico operatore.
+L’API di Auto Tag PDF migliora l’accessibilità dei PDF aggiungendo tag ai documenti, garantendo la conformità agli standard di accessibilità. Ciò non solo migliora l’esperienza utente, ma garantisce anche precisione e coerenza tra i documenti. L’API di assegnazione tag automatica supporta l’assegnazione tag ai seguenti elementi:
+
+* Blocchi di testo (paragrafi)
+* Elenchi puntati in un operatore
+* Sommario (TOC)
 
 ![Documento PDF con tag automatici](assets/auto-tag-api.png)
 
-<!--
+Nell&#39;esempio di codice Java riportato di seguito viene illustrato come convertire un file PDF in un documento PDF con tag.
 
-**Syntax**: `tag(Document inDoc)`
+**Sintassi**: `Document tag(final Document inDoc)`
 
-**Input Parameters**
+**Parametri di input**
 
 <table>
  <tbody>
   <tr>
-   <th>Parameters</th>
-   <th>Description</th>
+   <th>Parametri</th>
+   <th>Descrizione</th>
   </tr>
   <tr>
-   <td><code>inDoc</code><br /> </td>
-   <td>Document object containing PDF.<br /> </td>
+   <td><code>inDoc</code></td>
+   <td>Documento fornito come input da taggare. È un parametro obbligatorio.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-The following Java code tags the PDF document with lists and paragraphs.
-
 ```java
-/*************************************************************************
- *
- * ADOBE CONFIDENTIAL
- * ___________________
- *
- * Copyright 2014 Adobe Systems Incorporated
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains
- * the property of Adobe Systems Incorporated and its suppliers,
- * if any.  The intellectual and technical concepts contained
- * herein are proprietary to Adobe Systems Incorporated and its
- * suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from Adobe Systems Incorporated.
- **************************************************************************/
-package com.adobe.fd.pdfutility.services.impl;
-import com.adobe.aem.transaction.core.ITransactionRecorder;
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.jbig2.wrapper.api.JBIG2Wrapper;
-import com.adobe.fd.pdfutility.services.PDFUtilityService;
-import com.adobe.fd.pdfutility.services.client.*;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFIOException;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFInvalidDocumentException;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFSecurityException;
-import com.adobe.internal.pdftoolkit.pdf.document.*;
-import com.adobe.internal.pdftoolkit.services.pdftagging.structlib.StructLib;
-import com.adobe.internal.pdfutil.util.IOUtils;
-import com.adobe.internal.pdfutil.util.JBIG2CustomFilter;
-import com.day.cq.dam.handler.gibson.fontmanager.FontManagerService;
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.osgi.service.component.ComponentContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import java.io.IOException;
-import java.util.List;
-
-/**
- * The following Java code example is used to tag the PDF document with lists and paragraphs.
- */
-
-public PDFDocument tag(final Document inDoc) throws PDFUtilityException {
-        if (LOGGER.isTraceEnabled()) {
-            LOGGER.trace(pdfUtilService, "tag");
+@Reference
+private PDFUtilityService pdfutilityService;
+private static final File outputFolder = new File("C:/Output/");
+void tag(File inputFile) throws Exception
+{
+    Document inDoc = null;
+    try
+    {
+        inDoc = new Document(inputFile);
+        if(inputFile.getName().trim().isEmpty()) {
+            throw new Exception("Input file name cannot be null");
+        }
+        String inputFileExtension = "";
+        int dotIndex = inputFile.getName().lastIndexOf('.');
+        if (dotIndex > 0 && dotIndex < inputFile.getName().length() - 1) {
+            inputFileExtension = inputFile.getName().substring(dotIndex + 1);
+        }
+        if(inputFileExtension.isEmpty()) {
+            throw new Exception("Input file should have an extension");
+        }
+        Document taggedDoc;
+        taggedDoc = pdfutilityService.tag(inDoc);
+        File outputFile = new File(outputFolder,"Output.pdf");
+        taggedDoc.copyToFile(outputFile);
+        taggedDoc.close();
+    } 
+    finally {
+        if (inDoc != null) {
+            inDoc.dispose();
+            inDoc = null;
+        }
+    }
 }
-        if (inDoc == null) {
-            LOGGER.info(PDFUtilityMsgSet.UTL_S00_001_MISSING_DOCUMENT);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_001_MISSING_DOCUMENT, null));
-}
-PDFDocument outDoc;
-        try {
-PDFOpenOptions openOptions = PDFOpenOptions.newInstance();
-            openOptions.setFontSet(fontManagerService.getPdfFontSet());
-            outDoc = IOUtils.toPDFDocument(inDoc, openOptions);
-StructLib.AutoTagDoc(outDoc);
-            LOGGER.info("Successfully tagged the PDF document.");
-} catch (PDFSecurityException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_015_PDF_SECURITY_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_015_PDF_SECURITY_ERROR, null), e);
-} catch (PDFIOException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_011_PDF_IO_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_011_PDF_IO_ERROR, null), e);
-} catch (PDFInvalidDocumentException e) {
-            LOGGER.info(PDFUtilityMsgSet.UTL_S00_003_INVALID_PDF_DOCUMENT);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_003_INVALID_PDF_DOCUMENT, null), e);
-} catch (IOException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_016_PDF_GENERAL_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_016_PDF_GENERAL_ERROR, null), e);
-} finally {
-            if (LOGGER.isTraceEnabled()) {
-                LOGGER.trace(pdfUtilService, "tag");
-}
-}
-        return outDoc;
-}
-
 ```
--->
+
+

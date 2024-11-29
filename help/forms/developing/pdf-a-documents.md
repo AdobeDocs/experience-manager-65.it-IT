@@ -9,9 +9,9 @@ role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4df88fc37b86b6ff3b3a9b788c91b61e2aa7b07f
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2347'
 ht-degree: 1%
 
 ---
@@ -36,6 +36,8 @@ Il servizio DocConverter può convertire i documenti PDF in documenti PDA/A. Puo
 La specifica PDF/A-1 è costituita da due livelli di conformità, ovvero A e B. La differenza principale tra i due è relativa al supporto della struttura logica (accessibilità), che non è richiesto per il livello di conformità B. Indipendentemente dal livello di conformità, PDF/A-1 impone che tutti i font siano incorporati all&#39;interno del documento PDF/A generato. Al momento, solo PDF/A-1b è supportato nella convalida (e nella conversione).
 
 Sebbene PDF/A sia lo standard per l’archiviazione dei documenti PDF PDF, non è obbligatorio utilizzarlo per l’archiviazione se un documento PDF standard soddisfa i requisiti aziendali. Lo scopo dello standard PDF/A è quello di stabilire un file PDF per esigenze di archiviazione a lungo termine e conservazione dei documenti.
+
+Gli standard di conformità PDF/A supportati includono PDF/A-1a, 1b, 2a, 2b, 3a e 3b.
 
 >[!NOTE]
 >

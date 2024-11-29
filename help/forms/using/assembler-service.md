@@ -9,9 +9,9 @@ feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2159'
 ht-degree: 6%
 
 ---
@@ -204,6 +204,22 @@ fragment="myFragment"/>
 </DDX>
 ```
 
+#### Risolvere i riferimenti nell’archivio CRX {#resolve-references-on-crx-repository}
+
+È possibile specificare in modo selettivo il riferimento di origine che si desidera risolvere fornendo il percorso crx del
+riferimento al frammento nell’origine XDP. Nell’esempio seguente, sono inclusi anche i frammenti
+risolto.
+
+```xml
+<DDX xmlns="http://ns.adobe.com/DDX/1.0/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ns.adobe.com/DDX/1.0/ coldfusion_ddx.xsd">
+<XDP result="stitched.xdp">
+<XDP source="crx:///content/dam/formsanddocuments/test-xdp/sample.xdp" />
+</XDP>
+</DDX>
+```
+
 #### Risoluzione selettiva di riferimenti assoluti o relativi {#selectively-resolve-absolute-or-relative-references}
 
 È possibile risolvere in modo selettivo i riferimenti assoluti o relativi in tutti o in alcuni dei documenti di origine, come illustrato nell&#39;esempio seguente:
@@ -345,4 +361,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-L&#39;utilizzo di DDX e del servizio Assembler per richiamare altri servizi ciclici LiveC può semplificare il diagramma dei processi. Può anche ridurre il carico di lavoro dedicato alla personalizzazione dei flussi di lavoro. (Vedere anche
+L&#39;utilizzo di DDX e del servizio Assembler per richiamare altri servizi ciclici LiveC può semplificare il diagramma dei processi. Può anche ridurre il carico di lavoro dedicato alla personalizzazione dei flussi di lavoro. (Vedere anche)

@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
+source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 6%
@@ -18,9 +18,9 @@ ht-degree: 6%
 
 | Prodotto | Forms Adobe Experience Manager 6.5 |
 |---|---|
-| Versione | 6.5.21.0 |
+| Versione | 6.5.22.0 |
 | Tipo | Versione Service Pack |
-| Data | 29 maggio 2024 |
+| Data | 29 novembre 2024 |
 | URL di download | [Ultime versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -36,7 +36,7 @@ Il service pack di Adobe Experience Manager (AEM) Forms include funzioni nuove e
 
 >[!NOTE]
 >
-> * In Adobe viene rilasciato un programma di installazione completo ogni sei Service Pack. AEM 6.5 Forms Service Pack 18 (6.5.18.0) è l’ultimo programma di installazione completo di JEE. Il programma di installazione completo supporta le nuove piattaforme, mentre il programma di installazione dei Service Pack standard include nuove funzionalità, correzioni di bug e miglioramenti generali. Se stai eseguendo una nuova installazione o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE rilasciato il 31 agosto 2023 invece del programma di installazione di AEM 6.5 Forms rilasciato il 08 aprile 2019 o 6.5.12.0 AEM Forms Installer rilasciato il 03 marzo 2022. Dopo aver utilizzato il programma di installazione completo, installare il service pack più recente.
+> * Adobe rilascia un programma di installazione completo ogni sei Service Pack. AEM 6.5 Forms Service Pack 18 (6.5.18.0) è l’ultimo programma di installazione completo di JEE. Il programma di installazione completo supporta le nuove piattaforme, mentre il programma di installazione dei Service Pack standard include nuove funzionalità, correzioni di bug e miglioramenti generali. Se stai eseguendo una nuova installazione o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE rilasciato il 31 agosto 2023 invece del programma di installazione di AEM 6.5 Forms rilasciato il 08 aprile 2019 o 6.5.12.0 AEM Forms Installer rilasciato il 03 marzo 2022. Dopo aver utilizzato il programma di installazione completo, installare il service pack più recente.
 > * La funzionalità di AEM Forms, ad esempio Forms adattivo, disponibile in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it), è destinata esclusivamente a scopi di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms.
 
 <!--
@@ -160,7 +160,7 @@ Per scaricare e installare il frammento del servlet:
 
 +++6 Installare il Service Pack di AEM
 
-1. Riavvia l’istanza prima dell’installazione se l’istanza è in modalità di aggiornamento (quando l’istanza è stata aggiornata da una versione precedente). L&#39;Adobe consiglia di riavviare se il tempo di attività corrente per un&#39;istanza è elevato.
+1. Riavvia l’istanza prima dell’installazione se l’istanza è in modalità di aggiornamento (quando l’istanza è stata aggiornata da una versione precedente). Adobe consiglia di riavviare il sistema se il tempo di attività corrente di un&#39;istanza è elevato.
 1. Prima di eseguire l&#39;installazione, creare una copia istantanea o un nuovo backup dell&#39;istanza [!DNL Experience Manager].
 1. Scarica il service pack da [Distribuzione software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
 1. Apri Gestione pacchetti, quindi seleziona **[!UICONTROL Carica pacchetto]** per caricare il pacchetto. Per ulteriori informazioni, vedere [Gestione pacchetti](/help/sites-administering/package-manager.md).
@@ -234,7 +234,7 @@ Il pacchetto è      installato automaticamente.
 
 +++4 Installare il Service Pack di AEM
 
-1. Riavvia l’istanza prima dell’installazione se l’istanza è in modalità di aggiornamento (quando l’istanza è stata aggiornata da una versione precedente). L&#39;Adobe consiglia di riavviare se il tempo di attività corrente per un&#39;istanza è elevato.
+1. Riavvia l’istanza prima dell’installazione se l’istanza è in modalità di aggiornamento (quando l’istanza è stata aggiornata da una versione precedente). Adobe consiglia di riavviare il sistema se il tempo di attività corrente di un&#39;istanza è elevato.
 1. Prima di eseguire l&#39;installazione, creare una copia istantanea o un nuovo backup dell&#39;istanza [!DNL Experience Manager].
 1. Scarica il service pack da [Distribuzione software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
 1. Apri Gestione pacchetti, quindi seleziona **[!UICONTROL Carica pacchetto]** per caricare il pacchetto. Per ulteriori informazioni, vedere [Gestione pacchetti](/help/sites-administering/package-manager.md).

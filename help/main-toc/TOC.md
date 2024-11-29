@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: f3dda5271c0d3bdd9d23bc26f3b5abe50fc1b90a
+source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
 workflow-type: tm+mt
-source-wordcount: '7454'
+source-wordcount: '7477'
 ht-degree: 21%
 
 ---
@@ -624,6 +624,8 @@ ht-degree: 21%
       + [Editor regole](/help/forms/using/rule-editor-core-components.md)
       + [Creare e utilizzare funzioni personalizzate in componenti core di un modulo adattivo](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Creazione e utilizzo di un gestore di errori personalizzato per i Componenti core basati su Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+      + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/using/add-versioning-reviews-comments.md)
+      + [Confrontare i moduli adattivi](/help/forms/using/compare-forms-core-components.md)
    + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
       + [Best practice per l’utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md)
       + [Creazione di un modulo adattivo](/help/forms/using/creating-adaptive-form.md)
@@ -631,6 +633,8 @@ ht-degree: 21%
       + [Frammenti di moduli adattivi](/help/forms/using/adaptive-form-fragments.md)
       + [Configurazione dell’azione Invia](/help/forms/using/configuring-submit-actions.md)
       + [Utilizzo del CAPTCHA nei moduli adattivi](/help/forms/using/captcha-adaptive-forms.md)
+      + [Utilizzo di hCaptcha nei moduli adattivi](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+      + [Utilizzo di Turnstile Captcha nei moduli adattivi](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [Parole chiave per moduli adattivi](/help/forms/using/adaptive-forms-keywords.md)
       + [Tabelle in moduli adattivi](/help/forms/using/adaptive-forms-tables.md)
       + [Grafici in moduli adattivi](/help/forms/using/adaptive-form-charts.md)
