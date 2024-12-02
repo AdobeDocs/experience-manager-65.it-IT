@@ -1,6 +1,6 @@
 ---
 title: Utilizza Media Library per la gestione di base delle risorse digitali
-description: "[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse."
+description: '[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse.'
 contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
@@ -86,7 +86,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!IMPORTANT]
 >
->Molti casi d&#39;uso avanzati di DAM sono stati soddisfatti da [!DNL Experience Manager Assets]. La licenza di Media Library ti autorizza a soddisfare solo i casi d’uso elencati utilizzando Media Library. Se un caso d’uso non è elencato, non utilizzarlo con la licenza Media Library. In caso di domande, contatta l’Assistenza clienti Adobe.
+>Molti casi d&#39;uso avanzati di DAM sono stati soddisfatti da [!DNL Experience Manager Assets]. La licenza di Media Library ti autorizza a soddisfare solo i casi d’uso elencati utilizzando Media Library. Se un caso d’uso non è elencato, non utilizzarlo con la licenza Media Library. Per eventuali domande, contatta l’Assistenza clienti Adobe.
 
 Non è possibile utilizzare smart tag, collegamento [!DNL Asset], selettore [!DNL Asset], assegnazione di tag in blocco, modificare i flussi di lavoro delle risorse o l&#39;interfaccia utente standard [!DNL Adobe Experience Manager] per accedere a Media Library senza licenza [!DNL Assets].
 

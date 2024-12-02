@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: creare un modello di dati modulo"
+title: 'Tutorial: creare un modello di dati modulo '
 description: Scopri come configurare MySQL come origine dati, creare un modello dati del modulo (FDM), configurarlo e testare per AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](../../forms/using/create-your-first-adaptive-form.md). L’Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
+Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](../../forms/using/create-your-first-adaptive-form.md). Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
 ## Informazioni sull’esercitazione {#about-the-tutorial}
 
@@ -175,7 +175,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 1. Vai alla scheda **[!UICONTROL Servizi]** e configura i servizi **[!UICONTROL get]** e **[!UICONTROL update]**.
 
    1. Selezionare il servizio **[!UICONTROL get]** e selezionare **[!UICONTROL Modifica proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
-   1. Nella finestra di dialogo Modifica Proprietà, specifica quanto segue:
+   1. Nella finestra di dialogo Proprietà Modifica, specifica quanto segue:
 
       * **Titolo**: specifica il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
       * **Descrizione**: specificare la descrizione contenente il funzionamento dettagliato del servizio. Ad esempio:

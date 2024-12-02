@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets] API HTTP."
+title: API HTTP [!DNL Assets].
 description: Crea, leggi, aggiorna, elimina, gestisci le risorse digitali tramite API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer

@@ -1,5 +1,5 @@
 ---
-title: "Database IBM DB2: esecuzione di comandi per manutenzione regolare"
+title: 'Database IBM DB2: esecuzione di comandi per manutenzione regolare'
 description: In questo documento sono elencati i comandi di IBM DB2 consigliati per la manutenzione regolare del database dei moduli AEM.
 contentOwner: admin
 content-type: reference

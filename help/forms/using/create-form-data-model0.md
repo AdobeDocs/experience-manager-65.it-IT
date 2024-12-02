@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: creare un modello di dati modulo in AEM Forms"
+title: 'Tutorial: creare un modello di dati modulo in AEM Forms'
 description: Crea modello dati modulo per comunicazione interattiva
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

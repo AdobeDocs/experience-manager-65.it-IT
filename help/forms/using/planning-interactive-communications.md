@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: pianificare la comunicazione interattiva"
+title: 'Tutorial: pianificare la comunicazione interattiva'
 description: Pianificare l'anatomia per la comunicazione interattiva
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Publish il tuo modulo adattivo"
+title: 'Tutorial: crea un Publish per il modulo adattivo'
 description: Publish il modulo adattivo come pagina AEM, incorporalo in una pagina AEM Sites o incorporalo in una pagina web esterna
 contentOwner: khsingh
 topic-tags: introduction

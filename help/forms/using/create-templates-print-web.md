@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: creare modelli"
+title: 'Tutorial: creare modelli'
 description: Creazione di modelli Web e di stampa per la comunicazione interattiva
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -29,7 +29,7 @@ I modelli per il canale web vengono creati in AEM. Gli autori e gli amministrato
 
 Questo tutorial illustra i passaggi necessari per creare modelli per i canali di stampa e web, in modo che siano disponibili per l’utilizzo durante la creazione di comunicazioni interattive. Al termine di questa esercitazione, sarai in grado di:
 
-* Creazione di modelli XDP per il canale di stampa con Adobe Forms Designer
+* Creazione di modelli XDP per il canale di stampa tramite Adobe Forms Designer
 * Carica i modelli XDP sul server AEM Forms
 * Creare e abilitare modelli per il canale web
 

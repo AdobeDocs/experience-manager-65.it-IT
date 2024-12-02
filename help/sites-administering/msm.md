@@ -1,5 +1,5 @@
 ---
-title: "Riutilizzo del contenuto: Multi Site Manager e Live Copy"
+title: 'Riutilizzo del contenuto: Multi-Site Manager e Live Copy'
 description: Scopri come riutilizzare i contenuti con Live Copy e il gestore multisito.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES

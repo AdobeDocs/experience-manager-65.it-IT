@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: creare un modulo adattivo"
+title: 'Tutorial: creare un modulo adattivo'
 description: Scopri come creare, creare il layout e visualizzare in anteprima un modulo adattivo. Inoltre, scopri come configurare le azioni di invio.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
@@ -8,7 +8,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -102,9 +102,9 @@ I componenti sono elementi costitutivi di un modulo adattivo. L&#39;AEM [!DNL Fo
      </tr> 
      <tr> 
       <td>Consenti più righe<br /> </td> 
-      <td>Disattivato</td> 
+      <td>Disabilitato</td> 
       <td>Abilitato</td> 
-      <td>Disattivato</td> 
+      <td>Disabilitato</td> 
      </tr> 
     </tbody> 
    </table>

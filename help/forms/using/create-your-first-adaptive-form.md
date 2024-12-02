@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: creare il primo modulo adattivo"
+title: 'Tutorial: creare il primo modulo adattivo'
 description: Scopri come creare moduli di classe aziendale, interattivi e reattivi.
 topic-tags: introduction
 docset: aem65
@@ -57,7 +57,7 @@ Il sito Web viene eseguito su Adobe Experience Manager (AEM) e utilizza AEM [!DN
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-I moduli adattivi sono di nuova generazione, coinvolgenti, reattivi, dinamici e di natura adattiva. Utilizzando i moduli adattivi, puoi offrire esperienze personalizzate e mirate. AEM [!DNL Forms] fornisce un editor WYSIWYG per la creazione di moduli adattivi tramite trascinamento. Per ulteriori informazioni sui moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](../../forms/using/introduction-forms-authoring.md).
+I moduli adattivi sono di nuova generazione, coinvolgenti, reattivi, dinamici e di natura adattiva. Utilizzando i moduli adattivi, puoi offrire esperienze personalizzate e mirate. L&#39;AEM [!DNL Forms] fornisce un editor di WYSIWYG per la creazione di moduli adattivi tramite trascinamento della selezione. Per ulteriori informazioni sui moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](../../forms/using/introduction-forms-authoring.md).
 
 Obiettivi:
 

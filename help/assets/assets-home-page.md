@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets] esperienza pagina iniziale"
+title: '[!DNL Assets] esperienza pagina iniziale'
 description: Personalizza la  [!DNL Experience Manager Assets] home page per un'esperienza avanzata con la schermata di benvenuto, inclusa un'istantanea delle attività recenti relative alle risorse.
 contentOwner: AG
 feature: Asset Management
@@ -85,6 +85,6 @@ La schermata iniziale fornisce semplici strumenti di navigazione, ad esempio ico
 >
 >L&#39;acquisizione, il filtraggio e l&#39;eliminazione delle attività utente necessarie per la home page di [!DNL Assets] determinano un sovraccarico delle prestazioni. Pertanto, gli amministratori devono configurare la pagina Home in modo efficace per gli utenti target.
 >
->L’Adobe consiglia agli amministratori e agli utenti che eseguono operazioni in blocco di evitare di utilizzare la funzione Pagina iniziale risorse per impedire un aumento delle attività degli utenti. Inoltre, gli amministratori possono escludere le attività di registrazione per utenti specifici configurando [!UICONTROL Day CQ DAM Event Recorder] da [!UICONTROL Configuration Manager].
+>Adobe consiglia agli amministratori e agli utenti che eseguono operazioni in blocco di evitare di utilizzare la funzione Pagina iniziale risorse per evitare un aumento delle attività degli utenti. Inoltre, gli amministratori possono escludere le attività di registrazione per utenti specifici configurando [!UICONTROL Day CQ DAM Event Recorder] da [!UICONTROL Configuration Manager].
 >
 >Se utilizzi la funzione, Adobe consiglia di pianificare la frequenza di eliminazione in base al caricamento del server.

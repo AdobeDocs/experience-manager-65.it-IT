@@ -1,5 +1,5 @@
 ---
-title: "Database di Microsoft SQL Server: ottimizzazione della configurazione"
+title: 'Database di Microsoft SQL Server: ottimizzazione della configurazione'
 description: Scopri come ottimizzare la configurazione del database di Microsoft SQL Server.
 contentOwner: admin
 content-type: reference

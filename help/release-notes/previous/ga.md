@@ -1,6 +1,6 @@
 ---
 title: Note generali sulla versione per  [!DNL Adobe Experience Manager] 6.5
-description: "[!DNL Adobe Experience Manager] 6.5 note che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."
+description: '[!DNL Adobe Experience Manager] 6.5 note che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche.'
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
@@ -47,7 +47,7 @@ Quickstart utilizza Eclipse Jetty 9.4.15 come servlet engine.
 
 * Nuovo supporto per Java™ 11 e Java™ 8 già supportato.
 * Per ottenere prestazioni ottimali, sostituire i valori GC predefiniti con altri valori. Per ulteriori informazioni, vedere la sezione [installare e aggiornare](/help/sites-deploying/custom-standalone-install.md).
-* Gli aggiornamenti di manutenzione di Java™ 11 e Java™ 8 vengono distribuiti da Adobe per l’utilizzo da parte del cliente nei progetti relativi all’AEM, se non sono disponibili al pubblico da Oracle.
+* Gli aggiornamenti di manutenzione di Java™ 11 e Java™ 8 vengono distribuiti da Adobe per l’utilizzo da parte dei clienti nei progetti relativi all’AEM, se non sono disponibili al pubblico da Oracle.
 
 #### Sviluppo Java™ {#java-development}
 
@@ -184,7 +184,7 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 
 >[!CAUTION]
 >
->AEM include la versione 1.12.4 della libreria jQuery per fornire la massima compatibilità con il codice personalizzato esistente. Sono state apportate modifiche per Adobe per risolvere problemi di sicurezza noti.
+>AEM include la versione 1.12.4 della libreria jQuery per fornire la massima compatibilità con il codice personalizzato esistente. Sono state apportate modifiche da Adobe per risolvere problemi di sicurezza noti.
 
 #### Amministrazione sito {#site-administration}
 
@@ -245,12 +245,12 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 >* Sia `at.js. 1.x` che `at.js 2.x` sono supportati se si utilizza l&#39;esportazione di frammenti di esperienza in Target e si eseguono attività all&#39;interno della console di Target.
 
 * L’integrazione di Adobe Target ora utilizza l’API Target Standard. Le versioni precedenti di AEM utilizzano l’API HTTP di Target Classic, che ora è obsoleta.
-* Adobe Target `mbox.js` versione 63 inclusa. L&#39;Adobe consiglia vivamente di passare all&#39;implementazione `at.js` v1.x.
-* `at.js` versione 1.5.0 è ora inclusa. L&#39;Adobe consiglia di utilizzare [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) per eseguire il provisioning di `at.js` v1.x nel sito.
+* Adobe Target `mbox.js` versione 63 inclusa. Adobe consiglia vivamente di passare all&#39;implementazione `at.js` v1.x.
+* `at.js` versione 1.5.0 è ora inclusa. Adobe consiglia di utilizzare [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) per eseguire il provisioning di `at.js` v1.x nel sito.
 
 #### AEM e ADOBE ANALYTICS {#aem-amp-adobe-analytics}
 
-* È incluso `s_code.js` H.27.5. L&#39;Adobe consiglia di passare all&#39;implementazione in `AppMeasurement.js`
+* È incluso `s_code.js` H.27.5. Adobe consiglia di passare all&#39;implementazione in `AppMeasurement.js`
 * `AppMeasurement.js` v1.8.0 è incluso. Adobe consiglia di utilizzare [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) per eseguire il provisioning di AppMeasurement.js nel sito.
 
 #### AEM e COMMERCE {#aem-commerce}
@@ -328,7 +328,7 @@ AEM 6.5 introduce le seguenti funzionalità e miglioramenti per aumentare la pro
 
 Continua a leggere per scoprire le funzionalità e le integrazioni specifiche di [!DNL Experience Manager] 6.5 che puoi utilizzare per supportare al meglio i tuoi casi di utilizzo di velocità dei contenuti.
 
-##### Adobe collegamento risorsa {#aal}
+##### Adobe Asset Link {#aal}
 
 [!DNL Adobe Asset Link] rafforza la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. I creativi possono accedere ai contenuti archiviati in [!DNL Experience Manager Assets] senza uscire dalle app che hanno più familiarità con. I creativi possono sfogliare, cercare, estrarre e archiviare senza problemi le risorse tramite il pannello in-app nelle app [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign].
 
@@ -376,7 +376,7 @@ Nelle grandi aziende è possibile distribuire l&#39;infrastruttura necessaria pe
 
 [!DNL Dynamic Media] offre funzioni avanzate di authoring e distribuzione di contenuti rich media in [!DNL Experience Manager Assets] per promuovere esperienze all&#39;avanguardia, coinvolgenti e personalizzate. Caricando una singola risorsa principale di alta qualità e utilizzando il rendering e i visualizzatori cloud avanzati di Adobe, puoi fornire al volo qualsiasi combinazione di rendering per supportare la strategia multimediale della tua organizzazione.
 
-Per ulteriori dettagli sulle nuove funzionalità di [!DNL Dynamic Media], consulta [Note sulla versione di Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Per ulteriori dettagli sulle nuove funzionalità di [!DNL Dynamic Media], consulta [Note sulla versione di Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ##### Supporto video 360 {#video-support}
 
@@ -433,9 +433,9 @@ Per informazioni sulle funzionalità nuove e migliorate e sulle risorse della do
 
 ### Utilizzare lo sviluppo incentrato sul cliente {#use-customer-focused-development}
 
-Ad Adobe, utilizza un modello di sviluppo incentrato sul cliente che consente ai clienti di contribuire a tutte le fasi del processo di sviluppo, durante la specifica, lo sviluppo e il test. I nostri ringraziamenti vanno a tutti i clienti e partner che hanno contribuito a questo processo.
+Adobe utilizza un modello di sviluppo incentrato sul cliente che consente ai clienti di contribuire a tutte le fasi del processo di sviluppo, durante le fasi di specifica, sviluppo e test. I nostri ringraziamenti vanno a tutti i clienti e partner che hanno contribuito a questo processo.
 
-Adobe dispone delle procedure e dei processi necessari per abilitare la raccolta, la definizione delle priorità e il tracciamento della risoluzione dei bug incentrata sul cliente e lo sviluppo delle richieste di miglioramento. Il [portale di supporto Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=it#support) è integrato con Adobe Enhancement and Defect Tracking System. Le domande dei clienti vengono identificate e risolte dal team di assistenza clienti, ove possibile. Quando vengono trasferiti a R&amp;D, tutte le informazioni sui clienti vengono acquisite e utilizzate a scopo di definizione delle priorità e reporting. La priorità è data nello sviluppo al supporto a pagamento, alle questioni di garanzia e ai miglioramenti pagati dal cliente.
+Adobe dispone delle procedure e dei processi necessari per consentire la raccolta, la definizione delle priorità e il tracciamento della risoluzione dei bug incentrata sul cliente e lo sviluppo delle richieste di miglioramento. Il [portale di supporto Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=it#support) è integrato con Adobe Enhancement and Defect Tracking System. Le domande dei clienti vengono identificate e risolte dal team di assistenza clienti, ove possibile. Quando vengono trasferiti a R&amp;D, tutte le informazioni sui clienti vengono acquisite e utilizzate a scopo di definizione delle priorità e reporting. La priorità è data nello sviluppo al supporto a pagamento, alle questioni di garanzia e ai miglioramenti pagati dal cliente.
 
 Questo processo di definizione delle priorità ha prodotto più di 750 modifiche incentrate sui clienti fissate in AEM 6.5.
 
@@ -541,7 +541,7 @@ Per [!DNL Adobe Experience Manager] 6.5, [leggere l&#39;elenco delle funzionalit
 
 Per risolvere l&#39;errore:
 
-1. Arresta l’istanza AEM. Vai a `<aem_server_path_on_server>crx-quickstart\conf` e apri il file `sling.properties`. L’Adobe consiglia di eseguire un backup del file.
+1. Arresta l’istanza AEM. Vai a `<aem_server_path_on_server>crx-quickstart\conf` e apri il file `sling.properties`. Adobe consiglia di eseguire un backup del file.
 
 1. Cerca `org.osgi.framework.bootdelegation=`. Aggiungi `jdk.internal.reflect,jdk.internal.reflect.*` proprietà per visualizzare il risultato come.
 
@@ -599,4 +599,4 @@ I seguenti siti sono disponibili solo per i clienti. Se sei un cliente e hai bis
 
 * Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive in [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
 
-* [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza di supporto clienti Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza di assistenza clienti Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

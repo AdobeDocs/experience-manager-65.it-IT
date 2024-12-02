@@ -1,5 +1,5 @@
 ---
-title: "Gestione della corrispondenza: risoluzione dei problemi"
+title: 'Gestione della corrispondenza: risoluzione dei problemi'
 description: Scopri come gestire gli errori che si verificano durante il salvataggio di una lettera in un ambiente AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

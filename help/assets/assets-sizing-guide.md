@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets] guida al dimensionamento"
+title: Guida al dimensionamento di [!DNL Assets]
 description: Procedure consigliate per determinare metriche efficienti per stimare l'infrastruttura e le risorse necessarie per distribuire  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Admin
@@ -32,7 +32,7 @@ Tenendo conto di questi fattori, è necessario utilizzare una metodologia per ca
 1. Determina le dimensioni e il numero di risorse caricate nel sistema.
 1. Ottieni un esempio rappresentativo delle risorse da caricare in [!DNL Experience Manager]. Ad esempio, se si prevede di caricare nel sistema file PSD, JPG PDF, AI e, è necessario disporre di più immagini di esempio per ciascun formato di file. Inoltre, questi campioni devono essere rappresentativi delle diverse dimensioni e complessità delle immagini.
 1. Definisci le rappresentazioni da utilizzare.
-1. Creare le copie trasformate in [!DNL Experience Manager] utilizzando [!DNL ImageMagick] o [!DNL Adobe Creative Cloud] applicazioni. Oltre alle rappresentazioni specificate dagli utenti, crea rappresentazioni pronte all’uso. Per gli utenti che implementano Dynamic Medie, puoi utilizzare il binario IC per generare le rappresentazioni PTIFF da memorizzare in Experience Manager.
+1. Creare le copie trasformate in [!DNL Experience Manager] utilizzando [!DNL ImageMagick] o [!DNL Adobe Creative Cloud] applicazioni. Oltre alle rappresentazioni specificate dagli utenti, crea rappresentazioni pronte all’uso. Per gli utenti che implementano Dynamic Media, puoi utilizzare il binario IC per generare le rappresentazioni PTIFF da memorizzare in Experience Manager.
 1. Se prevedi di utilizzare risorse secondarie, generale per i tipi di file appropriati.
 1. Confronta le dimensioni delle immagini di output, delle rappresentazioni e delle risorse secondarie con le immagini originali. Ti consente di generare un fattore di crescita previsto quando il sistema viene caricato. Ad esempio, se generi copie trasformate e risorse secondarie con una dimensione combinata di 3 GB dopo l’elaborazione di 1 GB di risorse, il fattore di crescita della copia trasformata è 3.
 1. Determina il tempo massimo per il quale le versioni delle risorse devono essere mantenute nel sistema.

@@ -1,5 +1,5 @@
 ---
-title: "Database DB2&reg;: esecuzione settimanale di un processo"
+title: 'DB2&reg; database: esecuzione settimanale di un processo'
 description: Scopri come migliorare le prestazioni del database AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
