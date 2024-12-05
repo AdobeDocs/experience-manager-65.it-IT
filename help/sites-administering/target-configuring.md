@@ -9,9 +9,9 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2125'
 ht-degree: 28%
 
 ---
@@ -40,7 +40,7 @@ I seguenti valori delle proprietà vengono utilizzati nella configurazione cloud
 * **Sincronizza Segmenti Da Adobe Target:** Selezionati.
 
 * **Libreria client:** mbox.js.
-* **Utilizza DTM per distribuire la libreria client:** non selezionata. Seleziona questa opzione se [utilizzi DTM](/help/sites-administering/dtm.md) o un altro sistema di gestione dei tag per ospitare il file mbox.js o AT.js. L’Adobe consiglia di utilizzare DTM anziché AEM per distribuire la libreria.
+* **Utilizza DTM per distribuire la libreria client:** non selezionata. Seleziona questa opzione se [utilizzi DTM](/help/sites-administering/dtm.md) o un altro sistema di gestione dei tag per ospitare il file mbox.js o AT.js. Adobe Per la distribuzione della libreria, si consiglia di utilizzare DTM anziché AEM.
 
 * **Mbox.js personalizzato:** Nessuno specificato in modo che venga utilizzato il file mbox.js predefinito. Specifica un file mbox.js personalizzato da utilizzare, se necessario. Viene visualizzato solo se hai selezionato mbox.js.
 * **AT.js personalizzato:** Nessuno specificato in modo che venga utilizzato il file AT.js predefinito. Specifica un file AT.js personalizzato da utilizzare, in base alle esigenze. Viene visualizzato solo se avete selezionato AT.js.
@@ -87,7 +87,7 @@ A questo scopo, specifica la configurazione cloud A4T con cui collegare la confi
    >
    >Durante la configurazione di A4T con AEM, è possibile che in un riferimento alla configurazione manchi una voce. Per selezionare il framework di analisi, effettua le seguenti operazioni:
    >
-   >1. Passa a **Strumenti** > **Generale** > **CRXDE Liti**.
+   >1. Passa a **Strumenti** > **Generale** > **CRXDE Lite**.
    1. Passa alla [finestra di dialogo Configurazione di A4T Analytics](#a4t-analytics-config-dialog) (vedi di seguito)
    1. Impostare la proprietà **disable** su **false**.
    1. Fare clic su **Salva tutto**.
@@ -140,7 +140,10 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
 
    1. Assegna alla configurazione un **Titolo**.
    1. Seleziona il modello **Configurazione Adobe Target**.
-   1. Fai clic su **Crea**.
+
+      ![Configurazione Adobe Target](assets/adobe-target-create-configuration.png)
+
+1. Fai clic su **Crea**.
 
    Viene visualizzata la finestra di dialogo di modifica.
 
@@ -150,7 +153,7 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
    >
    Durante la configurazione di A4T con AEM, è possibile che in un riferimento alla configurazione manchi una voce. Per selezionare il framework di analisi, effettua le seguenti operazioni:
    >
-   1. Passa a **Strumenti** > **Generale** > **CRXDE Liti**.
+   1. Passa a **Strumenti** > **Generale** > **CRXDE Lite**.
    1. Passa a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    1. Impostare la proprietà **disable** su **false**.
    1. Fare clic su **Salva tutto**.
@@ -166,7 +169,7 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
    * **Utilizza targeting accurato:** per impostazione predefinita questa casella di controllo è selezionata. Se viene selezionata, la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Vedi la nota che segue.
    * **Sincronizza segmenti da Adobe Target:** Seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli nell&#39;AEM. Seleziona questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi utilizzare i segmenti da Target. Il termine AEM &quot;segmento&quot; equivale al termine Target &quot;pubblico&quot;.
    * **Libreria client:** seleziona se desideri la libreria client mbox.js o AT.js.
-   * **Utilizza DTM per distribuire la libreria client**. Seleziona questa opzione per utilizzare AT.js o mbox.js da DTM o un altro sistema di gestione dei tag. Configura [l&#39;integrazione DTM](/help/sites-administering/dtm.md) per utilizzare questa opzione. L’Adobe consiglia di utilizzare DTM anziché AEM per distribuire la libreria.
+   * **Utilizza DTM per distribuire la libreria client**. Seleziona questa opzione per utilizzare AT.js o mbox.js da DTM o un altro sistema di gestione dei tag. Configura [l&#39;integrazione DTM](/help/sites-administering/dtm.md) per utilizzare questa opzione. Adobe Per la distribuzione della libreria, si consiglia di utilizzare DTM anziché AEM.
    * **Mbox.js personalizzato**: lascia vuoto se hai selezionato la casella DTM o per utilizzare il file mbox.js predefinito. In alternativa, puoi caricare il file mbox.js personalizzato. Viene visualizzato solo se hai selezionato mbox.js.
    * **AT.js personalizzato**: lascia vuoto se hai selezionato la casella DTM o per utilizzare il file AT.js predefinito. In alternativa, carica il tuo file AT.js personalizzato. Viene visualizzato solo se avete selezionato AT.js.
 
