@@ -3,22 +3,19 @@ title: Come si utilizza hCaptcha&reg; in un Forms AEM 6.5?
 description: Migliora la sicurezza dei moduli con il servizio hCaptcha&reg; senza sforzo. Guida dettagliata all’interno!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
+source-git-commit: 25dfe85048184e34cc3afb5e7b08cc0e2f054a01
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 19%
+source-wordcount: '846'
+ht-degree: 20%
 
 ---
 
 # Connetti il tuo ambiente AEM Forms con hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
-
-<span class="preview"> Questa funzione è in fase di adozione anticipata. Se ti interessa partecipare al nostro programma di accesso anticipato per questa funzionalità, invia un&#39;e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com per richiedere l&#39;accesso </span>
 
 Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
