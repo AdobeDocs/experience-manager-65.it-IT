@@ -3,9 +3,10 @@ title: Come si utilizza hCaptcha&reg; in un Forms AEM 6.5?
 description: Migliora la sicurezza dei moduli con il servizio hCaptcha&reg; senza sforzo. Guida dettagliata all’interno!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
+source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '863'
 ht-degree: 19%
 
 ---
@@ -75,13 +76,13 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
 1. Nel **[!UICONTROL Contenitore configurazione]**, seleziona la configurazione cloud per hCaptcha®.
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
-   Se non disponi di un Contenitore di configurazione di questo tipo, consulta la sezione [Connettere il tuo ambiente AEM Forms con hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) per capire come creare un Contenitore di configurazione.
+   Se non disponi di un contenitore di configurazione per hCaptcha, consulta la sezione [Connettere l&#39;ambiente AEM Forms con hCaptcha®](#configure-hcaptcha-steps-to-configure-hcaptcha) per scoprire come creare un contenitore di configurazione.
 
    ![Seleziona contenitore configurazione](/help/forms/using/assets/captcha-properties.png)
 
 1. Seleziona un modulo adattivo e fai clic su **[!UICONTROL Modifica]** per aprire il modulo nell&#39;editor.
 1. Dal browser componenti, trascina il componente **[!UICONTROL Captcha]** nel modulo adattivo.
-1. Seleziona il componente **[!UICONTROL hCaptcha®]** del modulo adattivo e fai clic su proprietà ![icona Proprietà](assets/configure-icon.svg) per aprire la finestra di dialogo delle proprietà. Specifica le seguenti proprietà:
+1. Selezionare il componente **[!UICONTROL Captcha]** e fare clic su proprietà ![icona Proprietà](assets/configure-icon.svg) per aprire la finestra di dialogo delle proprietà. Specifica le seguenti proprietà:
 
    ![hCaptcha® v1](assets/config-hcaptcha-v1-img.png)
 
@@ -91,13 +92,14 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
    * **[!UICONTROL Impostazioni di configurazione]:** Seleziona la configurazione cloud configurata per hCaptcha®.
      >[!NOTE]
      >Puoi avere più configurazioni cloud nell’ambiente per uno scopo simile. Quindi, scegli il servizio con attenzione. Se non è elencato alcun servizio, consulta [Connettere l&#39;ambiente AEM Forms con hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) per scoprire come creare un Cloud Service che colleghi l&#39;ambiente AEM Forms al servizio hCaptcha®.
-   * **Messaggio di errore:** Fornisci il messaggio di errore da visualizzare all&#39;utente quando l&#39;invio Captcha non riesce.
-   * **Dimensione captcha:** È possibile selezionare la dimensione di visualizzazione della finestra di dialogo di verifica hCaptcha®. Utilizza l&#39;opzione **[!UICONTROL Compact]** per visualizzare una finestra di dialogo di verifica hCaptcha® di piccole dimensioni e **[!UICONTROL Normal]** per visualizzare una finestra di dialogo di verifica hCaptcha di dimensioni relativamente grandi oppure **[!UICONTROL Invisible]** per convalidare hCaptcha® senza eseguire il rendering esplicito del widget della casella di controllo nell&#39;interfaccia utente.
+
+   * **[!UICONTROL Messaggio di errore]:** Fornisci il messaggio di errore da visualizzare all&#39;utente quando l&#39;invio Captcha non riesce.
+   * **[!UICONTROL Dimensione captcha]:** È possibile selezionare la dimensione di visualizzazione della finestra di dialogo della richiesta di verifica hCaptcha®. Utilizza l&#39;opzione **[!UICONTROL Compact]** per visualizzare una finestra di dialogo di verifica hCaptcha® di piccole dimensioni e **[!UICONTROL Normal]** per visualizzare una finestra di dialogo di verifica hCaptcha di dimensioni relativamente grandi oppure **[!UICONTROL Invisible]** per convalidare hCaptcha® senza eseguire il rendering esplicito del widget della casella di controllo nell&#39;interfaccia utente.
 
 1. Seleziona **[!UICONTROL Fine]**.
 
 
-Ora, solo i moduli legittimi, in cui il compilatore di moduli elimina con successo la sfida posta dal servizio hCaptcha® sono consentiti per l’invio del modulo. hCaptcha®
+Ora, solo i moduli legittimi, in cui il compilatore di moduli elimina con successo la sfida posta dal servizio hCaptcha® sono consentiti per l’invio del modulo.
 
 **hCaptcha® è un marchio registrato di Intuition Machines, Inc.**
 
