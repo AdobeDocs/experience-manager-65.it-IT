@@ -3,16 +3,18 @@ title: Confronta due moduli adattivi distinti.
 description: Confronta due moduli distinti in base ai campi, al contenuto e ai componenti del modulo.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 7%
+source-wordcount: '180'
+ht-degree: 8%
 
 ---
 
 # Confrontare i moduli adattivi {#compare-two-forms}
 
-<span class="preview"> Questa funzione è in fase di adozione anticipata. Se ti interessa partecipare al nostro programma di accesso anticipato per questa funzionalità, invia un&#39;e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com per richiedere l&#39;accesso </span>
+<!--
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+-->
 
 La funzione Confronto nei componenti core di Forms adattivi consente agli autori dei moduli di identificare le differenze tra due moduli analizzando campi, contenuto e componenti.
 

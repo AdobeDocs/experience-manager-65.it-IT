@@ -4,18 +4,16 @@ description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida d
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '846'
 ht-degree: 11%
 
 ---
 
 # Collegare l’ambiente AEM Forms con Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">Questa funzionalità è basata sull&#39;ID attivazione/disattivazione funzionalità `FT_FORMS-12407`. Per attivare la funzionalità, seguire i passaggi indicati nell&#39;articolo [Attiva/disattiva funzionalità](/help/forms/using/enable-feature-toggle.md). </span>
 
 Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
@@ -84,7 +82,7 @@ Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operaz
    ![Seleziona contenitore configurazione](assets/captcha-properties.png)
 
 1. Seleziona un modulo adattivo e fai clic su **[!UICONTROL Modifica]** per aprire il modulo adattivo nell&#39;editor.
-1. Dal browser componenti, trascina o aggiungi il componente **[!UICONTROL Stile modulo adattivo]** al modulo adattivo.
+1. Dal browser componenti, trascina il componente **[!UICONTROL Captcha]** nel modulo adattivo.
 1. Selezionare il componente **[!UICONTROL Stile modulo adattivo]** e fare clic su proprietà ![icona Proprietà](assets/configure-icon.svg). Apre la finestra di dialogo delle proprietà. Specifica le seguenti proprietà:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->

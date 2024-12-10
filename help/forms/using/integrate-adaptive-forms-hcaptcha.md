@@ -3,19 +3,17 @@ title: Come si utilizza hCaptcha&reg; in un Forms AEM 6.5?
 description: Migliora la sicurezza dei moduli con il servizio hCaptcha&reg; senza sforzo. Guida dettagliata all’interno!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 25dfe85048184e34cc3afb5e7b08cc0e2f054a01
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 20%
+source-wordcount: '864'
+ht-degree: 19%
 
 ---
 
 # Connetti il tuo ambiente AEM Forms con hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">Questa funzionalità è basata sull&#39;ID attivazione/disattivazione funzionalità `FT_FORMS-12407`. Per attivare la funzionalità, seguire i passaggi indicati nell&#39;articolo [Attiva/disattiva funzionalità](/help/forms/using/enable-feature-toggle.md). </span>
+
 
 Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
@@ -82,7 +80,7 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
    ![Seleziona contenitore configurazione](/help/forms/using/assets/captcha-properties.png)
 
 1. Seleziona un modulo adattivo e fai clic su **[!UICONTROL Modifica]** per aprire il modulo nell&#39;editor.
-1. Dal browser dei componenti, trascina o aggiungi il componente **[!UICONTROL hCaptcha®]** del modulo adattivo al modulo adattivo.
+1. Dal browser componenti, trascina il componente **[!UICONTROL Captcha]** nel modulo adattivo.
 1. Seleziona il componente **[!UICONTROL hCaptcha®]** del modulo adattivo e fai clic su proprietà ![icona Proprietà](assets/configure-icon.svg) per aprire la finestra di dialogo delle proprietà. Specifica le seguenti proprietà:
 
    ![hCaptcha® v1](assets/config-hcaptcha-v1-img.png)
