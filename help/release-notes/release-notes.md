@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 9c58545406bc539dbd0c224b3c88365d3851deb8
+source-git-commit: 64bc2ecbb2b5ef5847af4449562240a7c1ec45e9
 workflow-type: tm+mt
-source-wordcount: '6085'
+source-wordcount: '6146'
 ht-degree: 1%
 
 ---
@@ -43,13 +43,7 @@ ht-degree: 1%
 
 Le funzionalità e i miglioramenti principali di questa versione includono:
 
-* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) e [Servizi CAPTCHA di Cloudflare Turnstile](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms supporta i seguenti servizi Captcha:
-   * Captcha protegge i moduli da bot, spam e abusi automatizzati sfidando gli utenti con un widget di casella di controllo. Garantisce che solo gli utenti umani procedano, migliorando la sicurezza per le transazioni online.
-   * Cloudflare Turnstile offre una misura di sicurezza che mira a proteggere i moduli da bot automatizzati, attacchi dannosi, spam e traffico automatizzato indesiderato. Presenta una casella di controllo all’invio del modulo per verificare che sia umana, prima di consentire loro di inviare il modulo.
-
-* Controllo delle versioni dei moduli adattivi:
-   * [Creare più versioni di un modulo adattivo](/help/forms/using/add-versioning-reviews-comments.md) - Ora gli utenti possono gestire facilmente le varianti dei moduli esistenti. Questo processo semplifica il controllo delle versioni e facilita il confronto per l’ottimizzazione dei moduli, il tutto all’interno di un unico flusso di lavoro semplificato.
-   * [Confronta Forms adattivo](/help/forms/using/compare-forms-core-components.md): ora gli utenti possono confrontare facilmente due moduli per identificare le differenze. Questo semplifica la collaborazione consentendo ai membri del gruppo di confrontare le revisioni e discutere le modifiche in modo efficiente.
+#### Nuove funzioni GA in AEM Forms {#ga-aem-forms-sp22}
 
 * È stato aggiunto il supporto per abilitare l&#39;incorporamento di font nelle [API Batch di comunicazioni interattive](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel). Le comunicazioni interattive ora includono il supporto per l&#39;incorporamento di font Adobe Ming e Adobe Myungjo nelle PDF generate tramite l&#39;API Batch. Questo miglioramento garantisce un rendering accurato del testo nei documenti generati, anche quando si utilizzano sottoinsiemi di font, fornendo un migliore supporto per contenuti multilingue negli output PDF.
 
@@ -60,6 +54,18 @@ Le funzionalità e i miglioramenti principali di questa versione includono:
 * [Miglioramenti alla conformità PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - Ora gli utenti possono convertire i PDF in formati PDF/A (1a, 2a, 3a) a scopo di archiviazione, garantendo al contempo l&#39;accessibilità e verificando la conformità a questi standard.
 
 * **Supporto per il ridimensionamento automatico dei caratteri per i documenti di PDF statici** - AEM Forms Designer, OutputService e FormsService ora supportano il ridimensionamento automatico dei caratteri per i PDF statici. Se l&#39;utente imposta la dimensione del carattere 0 per i campi di tipo testo, numerico, password o datetime, la dimensione del carattere viene regolata automaticamente all&#39;interno di questi campi senza modificare la dimensione complessiva del campo. Per utilizzare la funzione, gli utenti passano un flag nell&#39;XCI personalizzato: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
+
+#### Nuove funzioni di Beta in AEM Forms {#beta-aem-forms-sp22}
+
+La funzione beta offre un’opportunità unica per ottenere accesso esclusivo alle innovazioni all’avanguardia e aiutarti a modellarne lo sviluppo. Ti interessa abilitare una funzione beta per i tuoi ambienti? Invia un’e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com con l’elenco delle funzionalità che ti interessano.
+
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) e [Servizi CAPTCHA di Cloudflare Turnstile](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms supporta i seguenti servizi Captcha:
+   * Captcha protegge i moduli da bot, spam e abusi automatizzati sfidando gli utenti con un widget di casella di controllo. Garantisce che solo gli utenti umani procedano, migliorando la sicurezza per le transazioni online.
+   * Cloudflare Turnstile offre una misura di sicurezza che mira a proteggere i moduli da bot automatizzati, attacchi dannosi, spam e traffico automatizzato indesiderato. Presenta una casella di controllo all’invio del modulo per verificare che sia umana, prima di consentire loro di inviare il modulo.
+
+* Controllo delle versioni dei moduli adattivi:
+   * [Creare più versioni di un modulo adattivo](/help/forms/using/add-versioning-reviews-comments.md) - Ora gli utenti possono gestire facilmente le varianti dei moduli esistenti. Questo processo semplifica il controllo delle versioni e facilita il confronto per l’ottimizzazione dei moduli, il tutto all’interno di un unico flusso di lavoro semplificato.
+   * [Confronta Forms adattivo](/help/forms/using/compare-forms-core-components.md): ora gli utenti possono confrontare facilmente due moduli per identificare le differenze. Questo semplifica la collaborazione consentendo ai membri del gruppo di confrontare le revisioni e discutere le modifiche in modo efficiente.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -621,7 +627,7 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 * Eventuali modifiche apportate all’XDP dei frammenti di layout nidificati in una comunicazione interattiva non vengono riportate nell’editor IC. (FORMS-16575)
 * Nell’anteprima di stampa dell’interfaccia utente di Interactive Communications Agent, alcuni valori calcolati non vengono visualizzati correttamente. (FORMS-16603)
 * Quando la lettera viene visualizzata in Anteprima di stampa, il contenuto viene modificato. In altre parole, alcuni spazi scompaiono e alcune lettere vengono sostituite con una &quot;x&quot;. (FORMS-15681)
-* Quando un utente configura un’istanza WebLogic 14c, il servizio PDFG in AEM Forms Service Pack 21 (6.5.21.0) su JEE in esecuzione su JBoss non riesce a causa di conflitti del caricatore di classi che coinvolgono la libreria SLF4J. L’errore viene visualizzato come segue (CQDOC-22178):
+* Quando un utente configura un’istanza WebLogic 14c, il servizio PDFG in AEM Forms Service Pack 21 (6.5.21.0) su JEE in esecuzione su JBoss® non riesce a causa di conflitti del caricatore di classi che coinvolgono la libreria SLF4J. L’errore viene visualizzato come segue (CQDOC-22178):
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"

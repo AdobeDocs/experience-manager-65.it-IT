@@ -3,9 +3,10 @@ title: Aggiungi versioni, commenti e annotazioni al modulo adattivo dell’AEM 6
 description: Utilizza i componenti core per moduli adattivi AEM 6.5 per aggiungere commenti, annotazioni e versioni a un modulo adattivo.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -13,11 +14,10 @@ ht-degree: 0%
 # Controllo delle versioni, revisione e aggiunta di commenti in un modulo adattivo
 
 <!--
-
 <span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
-
 -->
 
+<span class="preview">Questa funzionalità non è attivata per impostazione predefinita. È possibile scrivere dal proprio indirizzo ufficiale all&#39;indirizzo aem-forms-ea@adobe.com per richiedere l&#39;accesso alla funzionalità.</span>
 
 I componenti core per moduli adattivi consentono agli autori dei moduli di aggiungere versioni, commenti e annotazioni ai moduli. Queste funzioni semplificano lo sviluppo dei moduli consentendo agli utenti di creare e gestire più versioni, collaborare tramite commenti e aggiungere note a sezioni di moduli specifiche, migliorando l’esperienza di creazione dei moduli.
 
