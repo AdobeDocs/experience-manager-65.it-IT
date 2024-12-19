@@ -1,18 +1,18 @@
 ---
-title: Editor universale
+title: L’editor universale
 description: Scopri la flessibilità di Universal Editor e come può aiutare a potenziare le tue esperienze headless utilizzando AEM 6.5.
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
+source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
 
 
-# Editor universale {#universal-editor}
+# L’editor universale {#universal-editor}
 
 Scopri la flessibilità di Universal Editor e come può aiutare a potenziare le tue esperienze headless utilizzando AEM 6.5.
 
@@ -21,7 +21,7 @@ Scopri la flessibilità di Universal Editor e come può aiutare a potenziare le 
 Universal Editor è un editor visivo versatile che fa parte di Adobe Experience Manager Sites. Consente agli autori di modificare ciò che si vede è ciò che si ottiene (WYSIWYG) di qualsiasi esperienza headless.
 
 * Gli autori possono trarre vantaggio dalla flessibilità di Universal Editor in quanto supporta lo stesso editing visivo coerente per tutte le forme di contenuti AEM headless.
-* Gli sviluppatori traggono vantaggio dalla versatilità di Universal Editor in quanto supporta anche un vero e proprio disaccoppiamento dell’implementazione. Consente agli sviluppatori di utilizzare virtualmente qualsiasi framework o architettura a loro scelta, senza imporre vincoli di SDK o tecnologia.
+* Gli sviluppatori traggono vantaggio dalla versatilità di Universal Editor in quanto supporta anche un vero e proprio disaccoppiamento dell’implementazione. Consente agli sviluppatori di utilizzare virtualmente qualsiasi framework o architettura a loro scelta, senza imporre alcun vincolo di SDK o tecnologia.
 
 Per ulteriori informazioni, vedere la documentazione di [AEM as a Cloud Service nell&#39;editor universale](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
@@ -178,3 +178,11 @@ Quando si segue la documentazione di Universal Editor con AEM as a Cloud Service
 >[!TIP]
 >
 >Per una guida completa per gli sviluppatori su come iniziare a utilizzare Universal Editor, consulta il documento [Panoramica di Universal Editor per gli sviluppatori di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) nella documentazione di AEM as a Cloud Service, tenendo presente le modifiche necessarie per il supporto di AEM 6.5 come indicato in questa sezione.
+
+## Differenze tra AEM 6.5 e AEM as a Cloud Service {#differences}
+
+L’editor universale in AEM 6.5 funziona in generale come in AEM as a Cloud Service, inclusa l’interfaccia utente e gran parte della configurazione. Ci sono, tuttavia, delle differenze da notare.
+
+* Universal Editor nella versione 6.5 supporta solo il caso d’uso headless.
+* La configurazione dell&#39;editor universale varia leggermente per 6.5 ([come descritto](#setup) nel documento corrente).
+* L’editor universale nella versione 6.5 utilizza un selettore di risorse diverso e un selettore di frammenti di contenuto diverso da AEM as a Cloud Service.
