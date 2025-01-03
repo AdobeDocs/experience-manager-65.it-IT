@@ -9,10 +9,10 @@ feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 30%
+source-wordcount: '529'
+ht-degree: 31%
 
 ---
 
@@ -61,10 +61,6 @@ La **Panoramica Live Copy** può essere aperta quando si visualizzano le proprie
    ![Scheda Blueprint - Panoramica Live Copy](assets/chlimage_1-360.png)
 
 1. Seleziona **Panoramica Live Copy** per mostrare e utilizzare la panoramica di tutte le Live Copy relative alla blueprint corrente.
-
-   >[!NOTE]
-   >
-   >Per ulteriori dettagli, vedere anche l&#39;articolo della Knowledge Base [Messaggio di stato LiveCopy - Aggiornato/Verde/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 1. Utilizza **Chiudi** per uscire e tornare alla console **Sites**.
 
