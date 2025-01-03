@@ -9,14 +9,18 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
 
 # Utilizzo di operazioni e rami bloccati {#working-with-stalled-operations-and-branches}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Le pagine Operazioni bloccate e Rami bloccati mostrano i processi bloccati. Un processo può bloccarsi quando si verifica un errore durante o dopo l&#39;esecuzione di un&#39;operazione o a causa di un&#39;operazione di arresto intenzionale nel processo:
 

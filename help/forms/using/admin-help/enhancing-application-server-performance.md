@@ -9,9 +9,9 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1882'
 ht-degree: 0%
 
 ---
@@ -93,13 +93,17 @@ Le dimensioni massime in linea e le directory di archiviazione (l’AEM forma la
 
 ### Dimensione del documento e dimensione massima in linea {#document-size-and-maximum-inline-size}
 
-Quando un documento inviato per l&#39;elaborazione dai moduli AEM è inferiore o uguale alla dimensione in linea massima del documento predefinita, il documento viene memorizzato sul server in linea e serializzato come oggetto documento di Adobe. L&#39;archiviazione dei documenti in linea può comportare notevoli vantaggi in termini di prestazioni. Tuttavia, se utilizzi un flusso di lavoro per moduli, il contenuto può anche essere memorizzato nel database a scopo di tracciamento. Pertanto, l’aumento della dimensione massima in linea può influire sulle dimensioni del database.
+Quando un documento inviato per l&#39;elaborazione dai moduli AEM è inferiore o uguale alla dimensione in linea massima del documento predefinita, il documento viene memorizzato sul server in linea e serializzato come oggetto Document di Adobe. L&#39;archiviazione dei documenti in linea può comportare notevoli vantaggi in termini di prestazioni. Tuttavia, se utilizzi un flusso di lavoro per moduli, il contenuto può anche essere memorizzato nel database a scopo di tracciamento. Pertanto, l’aumento della dimensione massima in linea può influire sulle dimensioni del database.
 
 Nel file system locale viene memorizzato un documento con dimensioni superiori alla dimensione massima in linea. L&#39;oggetto Adobe Document trasferito da e verso il server è solo un puntatore a tale file.
 
 Quando il contenuto del documento è allineato, ovvero inferiore alla dimensione massima in linea, viene memorizzato nel database come parte del payload di serializzazione del documento. Pertanto, l’aumento della dimensione massima in linea può influenzare la dimensione del database.
 
 **Modifica la dimensione massima in linea**
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Impostazioni sistema core > Configurazioni.
 1. Immettere un valore nella casella Dimensione in linea massima documento predefinita e fare clic su OK.

@@ -9,21 +9,25 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # Configura impostazioni provider di servizi SAML{#configure-saml-service-provider-settings}
 
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
+
 Il linguaggio SAML (Security Assertion Markup Language) è una delle opzioni che è possibile selezionare durante la configurazione dell&#39;autorizzazione per un dominio enterprise o ibrido. SAML viene utilizzato principalmente per supportare SSO tra più domini. Quando SAML è configurato come provider di autenticazione, gli utenti accedono e si autenticano nei moduli AEM tramite un provider di identità (IDP) di terze parti specificato.
 
 Per una spiegazione di SAML, vedere [Panoramica tecnica SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Impostazioni provider di servizi SAML.
-1. Nella casella ID entità fornitore di servizi digitare un ID univoco da utilizzare come identificatore per l&#39;implementazione del provider di servizi AEM forms. È inoltre possibile specificare questo ID univoco durante la configurazione dell&#39;IDP (ad esempio, `um.lc.com`). È inoltre possibile utilizzare l&#39;URL utilizzato per accedere ai moduli AEM, ad esempio `https://AEMformsserver`.
+1. Nella casella ID entità fornitore di servizi digitare un ID univoco da utilizzare come identificatore per l&#39;implementazione del provider di servizi AEM forms. È inoltre possibile specificare questo ID univoco durante la configurazione dell&#39;IDP (ad esempio `um.lc.com`). È inoltre possibile utilizzare l&#39;URL utilizzato per accedere ai moduli AEM (ad esempio `https://AEMformsserver`).
 1. Nella casella URL di base provider di servizi digitare l&#39;URL di base per il server Forms, ad esempio `https://AEMformsserver:8080`.
 1. (Facoltativo) Per consentire ai moduli AEM di inviare richieste di autenticazione firmate all&#39;IDP, eseguire le operazioni seguenti:
 

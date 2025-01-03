@@ -9,9 +9,9 @@ exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ Se alcuni utenti dell&#39;organizzazione dispongono di giorni non lavorativi div
 
    Il modo in cui si assegnano le chiavi del calendario aziendale agli utenti dipende dal fatto che si utilizzi un dominio enterprise, locale o ibrido. Per informazioni dettagliate sulla configurazione dei domini, vedere [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-   Se si utilizza un dominio locale o ibrido, le informazioni relative agli utenti vengono memorizzate solo nel database Gestione utenti. Per impostare la chiave del calendario aziendale per questi utenti, immettere una stringa nel campo Chiave del calendario aziendale quando si aggiunge o si modifica un utente in Gestione utente. (Vedi [Aggiunta e configurazione di utenti](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) È quindi possibile mappare le chiavi del calendario aziendale (le stringhe) ai calendari aziendali nel flusso di lavoro dei moduli. (Vedi [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se si utilizza un dominio locale o ibrido, le informazioni relative agli utenti vengono memorizzate solo nel database Gestione utenti. Per impostare la chiave del calendario aziendale per questi utenti, immettere una stringa nel campo Chiave del calendario aziendale quando si aggiunge o si modifica un utente in Gestione utente. (Vedere [Aggiunta e configurazione di utenti](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) È quindi possibile mappare le chiavi del calendario aziendale (le stringhe) ai calendari aziendali nel flusso di lavoro di Forms. (Vedi [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Se si utilizza un dominio enterprise, le informazioni sugli utenti risiedono in un sistema di storage di terze parti, ad esempio una directory LDAP, che User Management sincronizza con il database User Management. Questo consente di mappare una chiave del calendario aziendale a un campo nella directory LDAP. Ad esempio, se ogni record utente della directory contiene un campo &quot;paese&quot; e si desidera assegnare calendari aziendali in base al paese in cui si trova l&#39;utente, specificare il nome del campo &quot;paese&quot; nel campo Chiave calendario aziendale quando si specificano le impostazioni utente per la directory. (Vedi [Configurazione delle directory](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) È quindi possibile mappare le chiavi del calendario aziendale (i valori definiti per il campo &quot;paese&quot; nella directory LDAP) ai calendari aziendali nel flusso di lavoro dei moduli. (Vedi [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se si utilizza un dominio enterprise, le informazioni sugli utenti risiedono in un sistema di storage di terze parti, ad esempio una directory LDAP, che User Management sincronizza con il database User Management. Questo consente di mappare una chiave del calendario aziendale a un campo nella directory LDAP. Ad esempio, se ogni record utente della directory contiene un campo &quot;paese&quot; e si desidera assegnare calendari aziendali in base al paese in cui si trova l&#39;utente, specificare il nome del campo &quot;paese&quot; nel campo Chiave calendario aziendale quando si specificano le impostazioni utente per la directory. (Vedere [Configurazione delle directory](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) È quindi possibile mappare le chiavi del calendario aziendale (i valori definiti per il campo &quot;paese&quot; nella directory LDAP) ai calendari aziendali nel flusso di lavoro di Forms. (Vedi [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. Nei flussi di lavoro dei moduli, definisci un calendario per ogni set di utenti che condividono gli stessi giorni non lavorativi. (Vedi [Crea o aggiorna un calendario aziendale](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. Nel flusso di lavoro dei moduli, mappa le chiavi del calendario aziendale o le appartenenze ai gruppi per ogni calendario. (Vedi [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -64,26 +64,28 @@ Se l&#39;organizzazione contiene diversi gruppi di utenti che hanno giorni non l
 
 >[!NOTE]
 >
->Se non si crea un calendario aziendale, verrà utilizzato il calendario predefinito.
+> * Se non si crea un calendario aziendale, verrà utilizzato il calendario predefinito.
+> * Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
+
 
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro di Forms > Calendari aziendali.
-1. Per aggiungere un nuovo calendario aziendale, fare clic su ![bus_cal_plus](assets/bus_cal_plus.png). Il testo *Nuovo calendario* viene visualizzato nell&#39;elenco a discesa. Selezionare il testo e digitare un altro nome per il calendario.
+2. Per aggiungere un nuovo calendario aziendale, fare clic su ![bus_cal_plus](assets/bus_cal_plus.png). Il testo *Nuovo calendario* viene visualizzato nell&#39;elenco a discesa. Selezionare il testo e digitare un altro nome per il calendario.
 
    Per modificare un calendario aziendale esistente, selezionarlo dall&#39;elenco a discesa.
 
-1. In Giorni non lavorativi predefiniti selezionare qualsiasi giorno non lavorativo settimanale, ad esempio i fine settimana.
-1. [Facoltativo] Selezionare Usa orario di lavoro e specificare l&#39;orario di inizio e di fine per i giorni lavorativi.
+3. In Giorni non lavorativi predefiniti selezionare qualsiasi giorno non lavorativo settimanale, ad esempio i fine settimana.
+4. [Facoltativo] Selezionare Usa orario di lavoro e specificare l&#39;orario di inizio e di fine per i giorni lavorativi.
 
    Se si seleziona questa opzione, un evento che si verifica prima dell&#39;intervallo di tempo specificato viene spostato all&#39;inizio dell&#39;intervallo di tempo e un evento che si verifica dopo l&#39;intervallo di tempo viene spostato all&#39;ora di inizio del giorno lavorativo successivo.
 
    Consideriamo ad esempio la situazione in cui a un utente viene assegnata un’attività alle 02:00 del martedì e il promemoria per tale attività è impostato su due giorni lavorativi. Senza l’orario di lavoro, il promemoria verrà visualizzato alle 02:00 del giovedì. Se l’orario di lavoro è impostato sulle 8:00 alle 17:00, il promemoria verrà inviato alle 8:00 del giovedì. Senza orario di lavoro, se un evento di promemoria è stato creato alle 18:00 di martedì, il promemoria si verificherà dopo l’orario di lavoro di giovedì. Con l’orario di lavoro impostato sulle 08:00 alle 17:00, il promemoria verrà visualizzato alle 08:00 del venerdì.
 
-1. Nel calendario a sinistra fare doppio clic su qualsiasi altro giorno non lavorativo, ad esempio festività. Non è possibile selezionare i giorni passati. I giorni non lavorativi selezionati vengono visualizzati in un elenco a destra, con la data visualizzata due volte su una riga. Selezionare la data a sinistra per digitare il nome o la descrizione del giorno non lavorativo.
+5. Nel calendario a sinistra fare doppio clic su qualsiasi altro giorno non lavorativo, ad esempio festività. Non è possibile selezionare i giorni passati. I giorni non lavorativi selezionati vengono visualizzati in un elenco a destra, con la data visualizzata due volte su una riga. Selezionare la data a sinistra per digitare il nome o la descrizione del giorno non lavorativo.
 
    Per rimuovere un giorno non lavorativo dall&#39;elenco, fare clic su ![bus_cal_trash](assets/bus_cal_trash.png) accanto al giorno.
 
-1. [Facoltativo] Se il calendario deve essere quello predefinito, selezionare Calendario predefinito. Il calendario predefinito viene utilizzato quando non esiste alcun altro mapping di calendario per gli eventi associati all&#39;utente o non è specificato alcun calendario aziendale per l&#39;evento timer o il servizio di attesa. Impossibile eliminare il calendario predefinito.
-1. Dopo aver definito i giorni non lavorativi, selezionare Calendario abilitato per attivarlo e quindi fare clic su Salva.
+6. [Facoltativo] Se il calendario deve essere quello predefinito, selezionare Calendario predefinito. Il calendario predefinito viene utilizzato quando non esiste alcun altro mapping di calendario per gli eventi associati all&#39;utente o non è specificato alcun calendario aziendale per l&#39;evento timer o il servizio di attesa. Impossibile eliminare il calendario predefinito.
+7. Dopo aver definito i giorni non lavorativi, selezionare Calendario abilitato per attivarlo e quindi fare clic su Salva.
 
    Se si aggiorna un calendario esistente, la nuova versione viene applicata immediatamente e viene utilizzata per tutti i calcoli del calendario aziendale, inclusi i task già in esecuzione.
 

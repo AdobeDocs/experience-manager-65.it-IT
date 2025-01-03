@@ -9,9 +9,9 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,8 @@ La pagina Configurazioni core della console di amministrazione fornisce le impos
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> * Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
+> * Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio del SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può portare a incongruenze nell’ambiente di sviluppo dell’AEM.
 
 Per informazioni sull&#39;attivazione della modalità di backup sicuro, vedere [Attivazione e disattivazione della modalità di backup sicuro](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
@@ -72,7 +73,7 @@ Se non si specifica una directory radice GDS, la directory predefinita è una di
 
 Per ulteriori informazioni sulla directory GDS, vedere [Preparazione all&#39;installazione dei moduli AEM (server singolo)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
-**Posizione della directory dei tipi di carattere del server Adobe** *ndash; digitare il percorso della directory che contiene i tipi di carattere del server Adobe. Questi font vengono installati con i moduli AEM. Il percorso predefinito per questi tipi di carattere è la directory [root]/font di aem-forms. Se questa directory non è accessibile, potete copiare i font altrove e utilizzare questa impostazione per specificare la nuova posizione.
+**Posizione della directory dei tipi di carattere di Adobe Server** *ndash; digitare il percorso della directory che contiene i tipi di carattere di Adobe Server. Questi font vengono installati con i moduli AEM. Il percorso predefinito per questi tipi di carattere è la directory [root]/font di aem-forms. Se questa directory non è accessibile, potete copiare i font altrove e utilizzare questa impostazione per specificare la nuova posizione.
 
 **Posizione della directory Caratteri cliente** *ndash; digitare il percorso di una directory contenente i caratteri aggiuntivi che si desidera utilizzare.
 
@@ -122,4 +123,4 @@ Abilita questa opzione negli ambienti di sviluppo, in cui gli sviluppatori utili
 
 **Consenti caricamento di documenti non protetti da applicazioni Flex** *ndash; Il servlet di caricamento file utilizzato per caricare documenti da applicazioni Adobe Flex® ai moduli AEM richiede che gli utenti siano autenticati e autorizzati prima di poter caricare documenti. All&#39;utente deve essere assegnato il ruolo di Utente dell&#39;applicazione di caricamento documento o un altro ruolo che includa l&#39;autorizzazione di caricamento documento. In questo modo si evita che utenti non autorizzati possano caricare documenti sul server AEM Forms. Selezionare questa opzione se si desidera disattivare questa funzione di protezione in un ambiente di sviluppo o per garantire la compatibilità con le versioni precedenti dei moduli AEM. Per impostazione predefinita, questa opzione non è selezionata. Per informazioni dettagliate, consulta &quot;Richiamo dei moduli AEM con moduli AEM in remoto&quot; in Programmazione con moduli AEM.
 
-**Consenti caricamento di documenti non protetti da applicazioni SDK Java** *ndash; i caricamenti di HTTP DocumentManager devono essere protetti. Per impostazione predefinita, i caricamenti HTTP richiedono che gli utenti siano autenticati e autorizzati prima di poter caricare i documenti. All&#39;utente deve essere assegnato il ruolo Utente servizi o un altro ruolo contenente l&#39;autorizzazione Richiamo servizio. In questo modo si evita che utenti non autorizzati possano caricare documenti su Forms Server. Selezionare questa opzione se si desidera disabilitare questa funzione di protezione in un ambiente di sviluppo, per garantire la compatibilità con le versioni precedenti dei moduli AEM o in base alla configurazione del firewall. Per impostazione predefinita, questa opzione non è selezionata. Per informazioni dettagliate, consulta &quot;Richiamo dei moduli AEM tramite l’API Java&quot; in Programmazione con i moduli AEM.
+**Consenti caricamento di documenti non protetti da applicazioni Java SDK** *ndash; i caricamenti HTTP DocumentManager devono essere protetti. Per impostazione predefinita, i caricamenti HTTP richiedono che gli utenti siano autenticati e autorizzati prima di poter caricare i documenti. All&#39;utente deve essere assegnato il ruolo Utente servizi o un altro ruolo contenente l&#39;autorizzazione Richiamo servizio. In questo modo si evita che utenti non autorizzati possano caricare documenti su Forms Server. Selezionare questa opzione se si desidera disabilitare questa funzione di protezione in un ambiente di sviluppo, per garantire la compatibilità con le versioni precedenti dei moduli AEM o in base alla configurazione del firewall. Per impostazione predefinita, questa opzione non è selezionata. Per informazioni dettagliate, consulta &quot;Richiamo dei moduli AEM tramite l’API Java&quot; in Programmazione con i moduli AEM.

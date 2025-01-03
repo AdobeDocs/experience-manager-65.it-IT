@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2643'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ Per consentire ai moduli AEM di ricevere e gestire i messaggi e-mail in arrivo d
 Se i processi sono progettati e implementati senza richiedere l’invio di e-mail, non è necessario configurare alcuna delle opzioni nella pagina Impostazioni e-mail.
 
 ### Configurare le impostazioni e-mail in uscita {#configure-outgoing-email-settings}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro moduli > Impostazioni server > Impostazioni e-mail.
 1. Selezionare Abilita messaggi in uscita.

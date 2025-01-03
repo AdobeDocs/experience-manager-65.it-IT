@@ -9,14 +9,18 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
 
 # File di backup e ripristino {#files-to-back-up-and-recover}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 L&#39;applicazione e i file di dati di cui è necessario eseguire il backup sono descritti più dettagliatamente nelle sezioni seguenti.
 
@@ -91,7 +95,7 @@ Per eseguire il backup del database in tempo reale, è necessario utilizzare la 
 
 >[!NOTE]
 >
->Adobe ® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Consulta [Adobe documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe LiveCycle® ® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Adobe Consulta il [documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -110,7 +114,7 @@ DB2 dispone di funzionalità incorporate per eseguire il backup di un database i
 
 ### Oracle {#oracle}
 
-Utilizza i backup delle copie istantanee o configura il database Oracle per l’esecuzione in modalità registro archivio. (Vedi [Backup Oracle: Introduzione](https://www.databasedesign-resource.com/oracle-backup.md).) Per ulteriori informazioni sul backup e il ripristino del database Oracle, visitare i seguenti siti:
+Utilizza i backup delle copie istantanee o configura il database Oracle per l’esecuzione in modalità registro archivio. (Vedi [Backup di Oracle: introduzione](https://www.databasedesign-resource.com/oracle-backup.md).) Per ulteriori informazioni sul backup e il ripristino del database di Oracle, visitare i seguenti siti:
 
 [Oracle di backup e ripristino:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Vengono illustrati i concetti di backup e ripristino e le tecniche più comuni per l&#39;utilizzo di Recovery Manager (RMAN) per il backup, il ripristino e il reporting in modo più dettagliato e vengono fornite ulteriori informazioni su come pianificare una strategia di backup e ripristino.
 
@@ -131,7 +135,7 @@ Per ulteriori informazioni, vedere [Backup e ripristino](https://msdn.microsoft.
 
 ### MySQL {#mysql}
 
-Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il database MySQL in modo che venga eseguito in modalità di log binaria. (Vedi [Registrazione binaria MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) È inoltre disponibile uno strumento di backup a caldo per MySQL dal software InnoBase. (Vedi [Backup a caldo Innobase](https://www.innodb.com/hot-backup/features.md).)
+Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il database MySQL in modo che venga eseguito in modalità di log binaria. (Vedere [Registrazione binaria MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) È disponibile anche uno strumento di backup a caldo per MySQL dal software InnoBase. (Vedi [Backup a caldo Innobase](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >
@@ -196,6 +200,6 @@ Se nell&#39;ambiente dei moduli AEM sono stati installati altri tipi di caratter
 
 >[!NOTE]
 >
->Per impostazione predefinita, i tipi di carattere Adobe installati con i moduli AEM si trovano nella directory `[aem-forms root]/fonts`.
+>Per impostazione predefinita, i caratteri Adobe installati con i moduli AEM si trovano nella directory `[aem-forms root]/fonts`.
 
 Se si sta reinizializzando il sistema operativo sul computer host e si desidera utilizzare i caratteri del sistema operativo precedente, è necessario eseguire anche il backup del contenuto della directory dei caratteri del sistema. Per istruzioni specifiche, consultare la documentazione del sistema operativo in uso.

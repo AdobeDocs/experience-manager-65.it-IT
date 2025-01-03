@@ -9,14 +9,18 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10824'
+source-wordcount: '10836'
 ht-degree: 0%
 
 ---
 
 # Configurare le impostazioni del servizio {#configure-service-settings}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 È possibile utilizzare la pagina Gestione dei servizi per configurare le impostazioni per ciascuno dei servizi che fanno parte dei moduli AEM. Le impostazioni disponibili variano a seconda del servizio configurato.
 
@@ -38,7 +42,7 @@ ht-degree: 0%
 
 ## Impostazioni del servizio Flusso di lavoro di controllo {#audit-workflow-service-settings}
 
-Workbench consente di registrare le istanze del processo durante l’esecuzione e quindi riprodurle per osservare il comportamento del processo. (Vedi [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Per risparmiare spazio sul file system di Forms Server, è possibile limitare la quantità di dati di registrazione del processo memorizzati. È possibile configurare le seguenti proprietà del servizio Servizio flusso di lavoro di controllo ( `AuditWorkflowService`):
+Workbench consente di registrare le istanze del processo durante l’esecuzione e quindi riprodurle per osservare il comportamento del processo. (Vedere [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Per risparmiare spazio sul file system di Forms Server, è possibile limitare la quantità di dati di registrazione del processo archiviati. È possibile configurare le seguenti proprietà del servizio Servizio flusso di lavoro di controllo ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** Numero massimo di registrazioni archiviate. Quando viene memorizzato il numero massimo, la registrazione meno recente viene rimossa dal file system quando viene creata una nuova registrazione. Questa proprietà è utile se si tende a creare molte registrazioni e si desidera rimuovere automaticamente le registrazioni precedenti. Il valore predefinito è 50.
 
@@ -158,7 +162,7 @@ Per il servizio Distiller sono disponibili le impostazioni seguenti.
 
 >[!NOTE]
 >
->Adobe ® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Consulta [Adobe documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe LiveCycle® ® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Adobe Consulta il [documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 Il servizio Document Management ( `DocumentManagementService`) consente ai processi di utilizzare la funzionalità di gestione dei contenuti fornita da Content Services (obsoleto). Le operazioni di gestione dei documenti forniscono le attività di base necessarie per mantenere spazi e contenuti nel sistema di gestione dei contenuti. Esempi di tali attività sono la copia, l&#39;eliminazione, lo spostamento, il recupero e l&#39;archiviazione del contenuto, la creazione di spazi e associazioni e l&#39;ottenimento e l&#39;impostazione degli attributi del contenuto.
 
@@ -692,7 +696,7 @@ Convalida delle firme:** Quando questa opzione è selezionata, per convalidare l
 
 ## Impostazioni del servizio Cartelle controllate {#watched-folder-service-settings}
 
-Il servizio Cartelle controllate ( `WatchedFolder`) configura gli attributi comuni a tutti gli endpoint della cartella controllata. Fornisce inoltre valori predefiniti per gli endpoint della cartella controllata. (Vedi [Configurazione degli endpoint della cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Non viene richiamato da applicazioni client esterne o utilizzato nei processi creati in Workbench.
+Il servizio Cartelle controllate ( `WatchedFolder`) configura gli attributi comuni a tutti gli endpoint della cartella controllata. Fornisce inoltre valori predefiniti per gli endpoint della cartella controllata. (Vedi [Configurazione degli endpoint della cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Non viene richiamata da applicazioni client esterne o utilizzata nei processi creati in Workbench.
 
 Per il servizio Cartella controllata sono disponibili le impostazioni seguenti.
 

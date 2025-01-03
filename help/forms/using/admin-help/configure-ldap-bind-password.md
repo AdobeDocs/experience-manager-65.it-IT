@@ -9,14 +9,18 @@ exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
 # Configurare la password di binding LDAP{#configure-the-ldap-bind-password}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Per evitare rischi di sicurezza, il campo bind password (password di associazione) nel file di configurazione esportato (config.xml) non è configurato. Prima di importare il file di configurazione in un altro sistema, verificare di aver configurato la password. Questa password sostituisce una password esistente memorizzata nel database. Una password Null non sostituisce un valore esistente per una password non Null.
 

@@ -9,14 +9,18 @@ exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
 # Configurare i moduli AEM per preacquisire le informazioni sul dominio {#configure-aem-forms-to-prefetchdomain-information}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Gli utenti possono riscontrare un tempo di risposta più lento se appartengono a più gruppi (ad esempio, 500 o più) o se i gruppi sono nidificati in profondità (ad esempio, 30 livelli). Se si verifica questo problema, è possibile configurare i moduli AEM per preacquisire le informazioni da determinati domini.
 

@@ -9,18 +9,22 @@ exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
 
 # Configurazione delle estensioni Acrobat Reader DC per l’acquisizione dei dati {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
+
 Se gli utenti dell’installazione dei moduli AEM utilizzano la funzionalità di acquisizione dati di Content Services (obsoleto), è consigliabile creare un ruolo con accesso in sola lettura per tali utenti.
 
-***Nota **: Adobe ® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con il LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Consulta [Adobe documento sul ciclo di vita del prodotto](https://helpx.adobe.com/it/support/programs/eol-matrix.html).*
+***Nota **: AdobeLiveCycle® ® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con il LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 12/31/2014. Adobe Consulta il [documento sul ciclo di vita del prodotto](https://helpx.adobe.com/it/support/programs/eol-matrix.html).*
 
 Per l&#39;acquisizione dei dati è necessario assegnare un ruolo utente per accedere a SampleReaderExtensionsCredential. È possibile assegnare il ruolo standard Amministratore trust. Tuttavia, si consideri che questo ruolo conferisce agli utenti generali e non amministratori privilegi di amministratore che controllano le impostazioni di attendibilità PKI e gestiscono le credenziali PKI, il che potrebbe compromettere la sicurezza dell&#39;installazione dei moduli AEM in un ambiente di produzione. Si consiglia all&#39;amministratore di sistema dei moduli AEM di creare un ruolo che consenta solo l&#39;accesso in sola lettura all&#39;archivio fonti attendibili e assegnare questo nuovo ruolo agli utenti non amministratori che utilizzano l&#39;acquisizione dei dati.
 

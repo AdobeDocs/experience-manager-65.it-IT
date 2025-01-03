@@ -9,14 +9,18 @@ exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
 # Personalizzazione dei modelli di ricerca {#customizing-search-templates}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Puoi creare modelli di ricerca da utilizzare in Workspace per cercare istanze di processi dalle pagine Da fare e Tracciamento. È inoltre possibile modificare o eliminare i modelli di ricerca esistenti.
 

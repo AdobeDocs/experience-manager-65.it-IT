@@ -9,12 +9,13 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 0%
 
 ---
+
 
 # Configurazione delle directory {#configuring-directories}
 
@@ -25,6 +26,10 @@ Per ogni dominio enterprise configurato, specificare le directory in cui il prov
 Per ogni dominio enterprise configurato, specificare le directory in cui il provider di autenticazione esegue la query delle informazioni utente. È possibile aggiungere una directory a un dominio enterprise esistente o a un nuovo dominio enterprise che si sta aggiungendo. Puoi configurare più directory per un dominio. È inoltre possibile configurare un dominio per l&#39;utilizzo di una SPI (Service Provider Interface) personalizzata per la sincronizzazione.
 
 ### Aggiungi una directory {#add-a-directory}
+
+>[!NOTE]
+>
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fare clic su Nuovo dominio enterprise o selezionare un dominio enterprise esistente.

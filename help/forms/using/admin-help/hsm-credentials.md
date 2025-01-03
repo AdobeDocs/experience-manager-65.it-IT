@@ -9,9 +9,9 @@ exl-id: facbeab2-de95-4778-894c-faa771d3391e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
 >Dopo aver modificato la configurazione HSM, riavvia il server AEM Forms.
 
 ## Creare un alias per una credenziale HSM quando il dispositivo HSM è online {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali HSM, quindi fai clic su Aggiungi.
 1. Nella casella Nome profilo digitare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni di Firma digitale, ad esempio l&#39;operazione Firma campo.
@@ -103,4 +107,4 @@ I moduli AEM utilizzano un meccanismo IPC/RPC basato su servizi Web. Questo mecc
 Questo meccanismo non supporta la creazione online di profili HSM o i controlli dello stato. Tuttavia, esistono due modi per creare profili HSM ed eseguire controlli dello stato:
 
 * Creare un AEM per creare le credenziali del client trasmettendole il certificato del firmatario. Segui i passaggi descritti in [Configurazione del supporto HSM per AEM Forms ES utilizzando Sun JDK sulla piattaforma Windows a 64 bit](https://kb2.adobe.com/cps/808/cpsid_80835.html). Il percorso del servizio Web viene passato come proprietà Credential. È inoltre supportata la creazione di profili HSM offline utilizzando il gestore di certificati o l’esadecimale SHA-1 del certificato. Tuttavia, se hai effettuato l’aggiornamento ai moduli AEM da una versione precedente di moduli AEM, apporta modifiche al client perché le credenziali contenevano informazioni sul certificato e sul servizio Web.
-* Il percorso del servizio Web è specificato nella console di amministrazione del servizio di firma. (Vedi [Impostazioni del servizio di firma](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) In questo caso, il client conteneva solo l’alias del profilo HSM nell’archivio fonti attendibili. Puoi utilizzare questa opzione senza apportare alcuna modifica al client, anche se hai effettuato l’aggiornamento ai moduli AEM da una versione precedente dei moduli AEM. Questa opzione non supporta i profili HSM che utilizzano il certificato SHA-1.
+* Il percorso del servizio Web è specificato nella console di amministrazione del servizio di firma. (Vedere [Impostazioni servizio di firma](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) In questo caso, il client contiene solo l&#39;alias del profilo HSM nell&#39;archivio fonti attendibili. Puoi utilizzare questa opzione senza apportare alcuna modifica al client, anche se hai effettuato l’aggiornamento ai moduli AEM da una versione precedente dei moduli AEM. Questa opzione non supporta i profili HSM che utilizzano il certificato SHA-1.

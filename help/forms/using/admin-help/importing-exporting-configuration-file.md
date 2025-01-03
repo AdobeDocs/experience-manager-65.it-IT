@@ -9,14 +9,18 @@ exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
 # Importazione ed esportazione del file di configurazione {#importing-and-exporting-the-configuration-file}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Utilizzare la pagina Configurazione manuale per scaricare una copia delle impostazioni di configurazione in formato XML. Le impostazioni di questo file controllano tutte le preferenze del server. Puoi quindi modificare il file e caricarlo nuovamente sul server. Puoi anche utilizzare il file per configurare un’altra istanza del prodotto AEM forms.
 

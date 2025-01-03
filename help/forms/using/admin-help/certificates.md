@@ -9,21 +9,25 @@ exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
 # Gestione dei certificati {#managing-certificates}
 
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
+
 Tramite la gestione dell&#39;archivio fonti attendibili è possibile importare, modificare ed eliminare certificati attendibili nel server per la convalida delle firme digitali e l&#39;autenticazione dei certificati. È possibile importare ed esportare un numero qualsiasi di certificati. Dopo l&#39;importazione di un certificato, è possibile modificare le impostazioni di attendibilità e il tipo di archivio fonti attendibili. Quando si combinano tipi di archivio fonti attendibili, prendere in considerazione le opzioni seguenti:
 
 * **Attendibilità per autenticazione certificato con CA:** Per la convalida CRL, selezionare anche Attendibilità per identità.
 * **Attendibilità per autenticazione certificato con ICA:** Selezionare Solo attendibilità per identità. Non è consigliabile considerare attendibile un&#39;istanza di autenticazione per l&#39;autenticazione dei certificati. Se si considera attendibile l&#39;ICA per l&#39;autenticazione dei certificati, l&#39;ICA diventa una CA per la creazione di percorsi. Se l&#39;ICA è attendibile sia per l&#39;autenticazione dei certificati che per l&#39;identità, il certificato del fornitore CA viene ignorato perché l&#39;ICA diventa la CA.
 * **Attendibilità per il server OCSP con HTTP:** Se il server del partecipante OSCP si trova in una posizione HTTP, è necessario selezionare anche Attendibilità per connessioni SSL. Se il rispondente OSCP richiede la convalida CRL, assicurarsi di selezionare anche Attendibilità per identità.
-* **Radice Adobe:** Non selezionare connessioni SSL o tipi di archivio fonti attendibili del server OCSP. La radice Adobe non è attendibile per le connessioni SSL e il server OCSP. L’Adobe non rilascia certificati OCSP e SSL. Adobe Root è implicitamente attendibile con un alias name=&quot;ADOBEROOT&quot;.
+* **Radice Adobe:** Non selezionare connessioni SSL o tipi di archivio fonti attendibili del server OCSP. La radice Adobe non è attendibile per le connessioni SSL e il server OCSP. Adobe non rilascia certificati OCSP e SSL. Adobe Root è implicitamente attendibile con un alias name=&quot;ADOBEROOT&quot;.
 
 Sono supportati solo i certificati X509v3. Questo tipo di certificato può essere fornito in un file binario con codifica DER (file con estensione cer) o in un file di testo contenente una versione con codifica Base64 dello stesso certificato con codifica DER (inclusi i certificati X509 in formato PEM (Privacy Enhanced Mail)).
 
@@ -45,7 +49,7 @@ I certificati necessari per completare una verifica della firma devono trovarsi 
 
    >[!NOTE]
    >
-   >L&#39;archivio fonti attendibili considera in modo implicito attendibile un certificato radice Adobe per l&#39;autenticazione, la firma, la firma di certificazione e l&#39;identità del certificato.
+   >L&#39;archivio fonti attendibili considera in modo implicito attendibile un certificato radice di Adobe per l&#39;autenticazione, la firma, la firma di certificazione e l&#39;identità del certificato.
 
 1. Nella casella Alias digitare l&#39;identificatore del certificato.
 1. Fare clic su **[!UICONTROL Sfoglia]** per individuare il certificato e quindi su **[!UICONTROL OK]**.

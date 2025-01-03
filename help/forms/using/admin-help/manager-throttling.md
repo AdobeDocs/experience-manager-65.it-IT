@@ -9,14 +9,18 @@ exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Gestione del lavoro e limitazione{#work-manager-and-throttling}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 I moduli AEM (e versioni precedenti) utilizzavano code JMS per eseguire operazioni in modo asincrono. Nei moduli AEM, le code JMS sono state sostituite da Work Manager. Questo documento fornisce informazioni di base su Work Manager e istruzioni sulla configurazione delle opzioni di limitazione di Work Manager.
 
@@ -34,7 +38,7 @@ Le operazioni asincrone vengono gestite in questo modo:
 
 1. Work Manager riceve un elemento di lavoro per l&#39;esecuzione.
 1. Work Manager memorizza l&#39;elemento di lavoro in una tabella di database e assegna un identificatore univoco all&#39;elemento di lavoro. Il record del database contiene tutte le informazioni necessarie per eseguire l&#39;elemento di lavoro.
-1. I thread di Work Manager estraggono gli elementi di lavoro quando diventano liberi. Prima di estrarre gli elementi di lavoro, i thread possono verificare se i servizi richiesti sono stati avviati, se sono presenti dimensioni heap sufficienti per estrarre l&#39;elemento di lavoro successivo e se sono presenti cicli di CPU sufficienti per elaborare l&#39;elemento di lavoro. Work Manager valuta anche gli attributi dell’elemento di lavoro (come la sua priorità) durante la pianificazione dell’esecuzione.
+1. I thread di Work Manager estraggono gli elementi di lavoro quando diventano liberi. Prima di estrarre gli elementi di lavoro, i thread possono verificare se i servizi richiesti sono stati avviati, se il numero di heap disponibili è sufficiente per estrarre l&#39;elemento di lavoro successivo e se il numero di cicli di CPU necessari per l&#39;elaborazione dell&#39;elemento di lavoro è sufficiente. Work Manager valuta anche gli attributi dell’elemento di lavoro (come la sua priorità) durante la pianificazione dell’esecuzione.
 
 Gli amministratori di moduli AEM possono utilizzare Monitoraggio integrità per verificare le statistiche di Gestione lavoro, ad esempio il numero di elementi di lavoro nella coda e i relativi stati. È inoltre possibile utilizzare Health Monitor per sospendere, riprendere, riprovare o eliminare elementi di lavoro. (Vedi [Visualizza statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 

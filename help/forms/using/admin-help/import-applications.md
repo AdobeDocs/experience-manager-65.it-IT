@@ -9,9 +9,9 @@ exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Utilizzare la scheda Applicazioni per importare e gestire le applicazioni create
 * profili di sicurezza
 
 ## Importare un&#39;applicazione o un archivio {#import-an-application-or-archive}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione applicazioni.
 1. Fai clic su Importa.

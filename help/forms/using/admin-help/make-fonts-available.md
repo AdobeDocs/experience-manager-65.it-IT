@@ -9,14 +9,18 @@ exl-id: e9eae896-b1e4-4caa-b466-ac8c9e7416a4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 2%
 
 ---
 
 # Rendi disponibili i font {#make-fonts-available}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Verificare che i caratteri utilizzati in un modulo siano disponibili per l&#39;utilizzo nel server applicazioni J2EE che ospita i moduli AEM. Ad esempio, considera lo scenario seguente. Un progettista di moduli aggiunge un tipo di carattere alla directory dei tipi di carattere utilizzata da Designer e crea un modulo che utilizza tale tipo di carattere in un computer separato. Affinché il servizio di output utilizzi il carattere, inseriscilo nella directory dei caratteri del cliente. Se la directory dei caratteri del cliente non esiste, creare una directory nel server applicazioni J2EE che ospita i moduli AEM.
 

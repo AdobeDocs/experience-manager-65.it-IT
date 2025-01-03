@@ -9,14 +9,18 @@ exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
 # Gestione delle credenziali locali {#managing-local-credentials}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Le credenziali locali sono credenziali di chiave privata ospitate in Gestione archivio fonti attendibili. Una *credenziale locale* identifica la posizione in cui sono memorizzate le credenziali DES di un utente. Tramite Gestione archivio fonti attendibili è possibile importare e gestire le credenziali locali utilizzando, ad esempio, i file PFX esistenti, in modo da poter importare, modificare ed eliminare le credenziali locali.
 
@@ -37,7 +41,7 @@ Per informazioni e istruzioni relative alle estensioni Acrobat Reader DC, vedere
 
    Per informazioni su come ottenere le credenziali, vedere [Preparazione all&#39;installazione dei moduli AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-1. Nella casella Alias digitare un identificatore per le credenziali. Questo identificatore viene utilizzato come nome visualizzato per le credenziali nelle estensioni di Acrobat Reader DC e nel servizio Signature. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione tramite l’SDK per moduli AEM.
+1. Nella casella Alias digitare un identificatore per le credenziali. Questo identificatore viene utilizzato come nome visualizzato per le credenziali nelle estensioni di Acrobat Reader DC e nel servizio Signature. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione utilizzando l&#39;AEM form SDK.
 
    >[!NOTE]
    >

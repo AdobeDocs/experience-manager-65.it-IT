@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '4713'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
 
 # Creazione e gestione delle policy {#creating-and-managing-policies}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Un *criterio* definisce un set di impostazioni di riservatezza e gli utenti che possono accedere a un documento a cui viene applicato il criterio. Un *set di criteri* viene utilizzato per raggruppare un set di criteri con uno scopo aziendale comune. Questi set di criteri vengono quindi resi disponibili a un sottoinsieme di utenti nel sistema. Per informazioni dettagliate sui criteri, vedere [Criteri e documenti protetti tramite criteri](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 

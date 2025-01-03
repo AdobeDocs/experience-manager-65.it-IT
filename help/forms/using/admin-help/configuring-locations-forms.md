@@ -9,14 +9,18 @@ exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '834'
 ht-degree: 1%
 
 ---
 
 # Configurazione delle posizioni per Forms {#configuring-locations-for-forms}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 È possibile specificare l&#39;URL, l&#39;URI e le posizioni di file di attributi quali la directory principale del Web, la posizione dei moduli da recuperare, il file dei PDF di inizializzazione utilizzato nelle trasformazioni del modulo PDF e la posizione della cache.
 
@@ -52,7 +56,7 @@ Dove `host name` e `port` sono il nome del server e il numero di porta del serve
 
 Il valore predefinito è una stringa vuota.
 
-**Web Root URI:** Web root dell&#39;applicazione. Questo valore è combinato con il parametro sTargetURL (quando sTargetURL viene fornito come relativo), specificato tramite l’SDK dei moduli AEM, per creare un URL assoluto per accedere a contenuti web specifici per l’applicazione.
+**Web Root URI:** Web root dell&#39;applicazione. Questo valore viene combinato con il parametro sTargetURL (quando sTargetURL viene fornito come relativo), specificato tramite l’AEM Forms SDK, per creare un URL assoluto per accedere a contenuti web specifici per l’applicazione.
 
 Il valore predefinito è una stringa vuota.
 

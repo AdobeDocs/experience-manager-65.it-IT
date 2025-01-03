@@ -9,14 +9,18 @@ exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
 # Ricerca di istanze di processo{#searching-for-process-instances}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Utilizzare la pagina Ricerca processo per inserire i criteri di ricerca per trovare un&#39;istanza di processo. È possibile accedere alla pagina Ricerca processo dalla pagina Flusso di lavoro moduli oppure facendo clic su Cerca nella pagina Istanza processo.
 

@@ -8,14 +8,18 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '6188'
+source-wordcount: '6200'
 ht-degree: 0%
 
 ---
 
 # Configurazione delle impostazioni del tipo di file {#configuring-file-type-settings}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 In PDF Generator è possibile impostare le impostazioni dell&#39;applicazione per i tipi di file supportati. In Windows è possibile impostare le impostazioni dell&#39;applicazione per ogni tipo di file supportato. In UNIX e Linux è possibile impostare le impostazioni dell&#39;applicazione per HTML-to-PDF e OpenOffice.
 
@@ -216,7 +220,7 @@ Abilitare queste opzioni per specificare l&#39;aspetto della finestra:
 
 ## Flash video in impostazioni PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator supporta la possibilità di inviare un video, ad Adobe un Flash (file SWF o FLV) e di creare un file PDF con un video, ad Adobe un Flash incorporato. Questa conversione non richiede l&#39;installazione del Flash Player Adobe sul server Forms. Per istruzioni sull&#39;accesso a questa opzione, vedere [Creare o modificare le impostazioni del tipo di file](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator Adobe supporta la possibilità di inviare un video ad Flash (file SWF o FLV) e di creare un file PDF con un video ad Adobe Flash incorporato. Questa conversione non richiede l&#39;installazione di Adobe Flash Player sul server Forms. Per istruzioni sull&#39;accesso a questa opzione, vedere [Creare o modificare le impostazioni del tipo di file](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Estensioni dei nomi di file:** elenco separato da virgole delle estensioni dei nomi di file che è possibile convertire.
 
@@ -619,7 +623,7 @@ Queste opzioni determinano la modalità di conversione dei file di OpenOffice. P
 Non è possibile modificare le impostazioni per altre applicazioni tramite la console di amministrazione, poiché visualizzano le estensioni dei nomi di file per i tipi di file supportati. Per istruzioni sull&#39;accesso a queste impostazioni, vedere [Creare o modificare le impostazioni del tipo di file](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
-* PageMaker Adobe: `pmd, pm6, p65, pm`
+* Adobe PageMaker: `pmd, pm6, p65, pm`
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 

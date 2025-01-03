@@ -9,9 +9,9 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
@@ -82,13 +82,15 @@ La posizione della directory GDS può essere configurata manualmente durante il 
 
 >[!NOTE]
 >
->Esegui la migrazione dei dati nel modo seguente o si verifica una perdita di dati.
+> * Esegui la migrazione dei dati nel modo seguente o si verifica una perdita di dati.
+> * Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
+
 
 1. Accedi alla console di amministrazione e fai clic su Impostazioni > Impostazioni sistema core > Configurazioni.
-1. Nella casella Directory Global Document Storage immettere il percorso completo della nuova directory GDS e quindi fare clic su OK.
-1. Arrestare immediatamente il server applicazioni.
-1. Spostare tutti i file dalla vecchia directory GDS nella nuova posizione, mantenendo la struttura della directory interna.
-1. Riavviare il server applicazioni.
+2. Nella casella Directory Global Document Storage immettere il percorso completo della nuova directory GDS e quindi fare clic su OK.
+3. Arrestare immediatamente il server applicazioni.
+4. Spostare tutti i file dalla vecchia directory GDS nella nuova posizione, mantenendo la struttura della directory interna.
+5. Riavviare il server applicazioni.
 
 ## Informazioni sui file di distribuzione {#about-deployment-files}
 

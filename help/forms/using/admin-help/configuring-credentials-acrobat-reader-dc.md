@@ -9,9 +9,9 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,14 @@ L&#39;archivio fonti attendibili può contenere più di una credenziale Estensio
 
 ## Importare una credenziale delle estensioni Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
+
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
 1. Fai clic su Importa e, in Tipo di archivio fonti attendibili, seleziona Credenziali estensioni Acrobat Reader DC.
 1. (Facoltativo) Per indicare che questa credenziale è quella predefinita da utilizzare con le estensioni di Acrobat Reader DC, selezionare Predefinita.
-1. Nella casella Alias digitare un identificatore per le credenziali. Questo identificatore viene utilizzato come nome visualizzato per le credenziali nelle estensioni Acrobat Reader DC. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione tramite l’SDK per moduli AEM.
+1. Nella casella Alias digitare un identificatore per le credenziali. Questo identificatore viene utilizzato come nome visualizzato per le credenziali nelle estensioni Acrobat Reader DC. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione utilizzando l&#39;AEM form SDK.
 
    >[!NOTE]
    >

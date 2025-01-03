@@ -9,9 +9,9 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,10 @@ A seconda dei componenti dei moduli AEM installati, è possibile includere i seg
 >Flex Workspace è obsoleto per il rilascio di moduli AEM.
 
 ## Creare un ruolo {#create-a-role}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fai clic su Nuovo ruolo.
 1. Nella casella Nome ruolo digitare un nome per il ruolo e, facoltativamente, digitare una descrizione del ruolo e quindi fare clic su Avanti.

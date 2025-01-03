@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '7403'
+source-wordcount: '7415'
 ht-degree: 0%
 
 ---
@@ -56,9 +56,9 @@ Questi file PDF possono essere aperti in Adobe Acrobat 5 e Adobe Acrobat Reader�
 
 **Pagine di dimensioni eccessive:** crea documenti di PDF adatti per la visualizzazione e la stampa affidabili di disegni tecnici di dimensioni superiori a 200 x 200 pollici. I documenti PDF creati possono essere aperti in Adobe Acrobat Professional e Acrobat Standard, versione 7 o successiva, e Adobe Reader 7 o versione successiva.
 
-**PDF/A-1B 2005 CMYK / PDF/A-1B 2005 RGB:** Verifica la conformità dei processi in arrivo allo standard ISO per la conservazione a lungo termine (archiviazione) dei documenti elettronici e crea file PDF/A solo se conformi. Questi file vengono utilizzati principalmente per l&#39;archiviazione. I file conformi possono contenere solo testo, immagini raster e oggetti vettoriali; non possono contenere crittografia e script. Inoltre, tutti i font devono essere incorporati in modo che i documenti possano essere aperti e visualizzati come creati. PDF/A-1b utilizza PDF 1.4 e converte tutti i colori in CMYK o RGB, a seconda dello standard scelto. I file PDF creati con questo file di impostazioni possono essere aperti in Acrobat 5 e Acrobat Reader 5 e versioni successive. Per ulteriori informazioni su PDF/A, consulta l’Adobe e gli standard di settore.
+**PDF/A-1B 2005 CMYK / PDF/A-1B 2005 RGB:** Verifica la conformità dei processi in arrivo allo standard ISO per la conservazione a lungo termine (archiviazione) dei documenti elettronici e crea file PDF/A solo se conformi. Questi file vengono utilizzati principalmente per l&#39;archiviazione. I file conformi possono contenere solo testo, immagini raster e oggetti vettoriali; non possono contenere crittografia e script. Inoltre, tutti i font devono essere incorporati in modo che i documenti possano essere aperti e visualizzati come creati. PDF/A-1b utilizza PDF 1.4 e converte tutti i colori in CMYK o RGB, a seconda dello standard scelto. I file PDF creati con questo file di impostazioni possono essere aperti in Acrobat 5 e Acrobat Reader 5 e versioni successive. Per ulteriori informazioni su PDF/A, consulta Adobe e standard di settore.
 
-**PDF/X-1a 2001:** verifica la conformità dei processi in arrivo per PDF/X-1a e crea i file PDF solo se conformi. PDF/X-1a è uno standard ISO per lo scambio di contenuti grafici. PDF/X-1a richiede l&#39;incorporamento di tutti i font, la specifica delle caselle di PDF appropriate e la visualizzazione del colore come colori CMYK o tinta piatta. I file PDF che soddisfano i requisiti PDF/X-1a sono destinati a una condizione di output specifica, ad esempio la stampa offset Web in base alle specifiche Web Offset Publications. Per ulteriori informazioni su PDF/X, consulta l’Adobe e gli standard di settore.
+**PDF/X-1a 2001:** verifica la conformità dei processi in arrivo per PDF/X-1a e crea i file PDF solo se conformi. PDF/X-1a è uno standard ISO per lo scambio di contenuti grafici. PDF/X-1a richiede l&#39;incorporamento di tutti i font, la specifica delle caselle di PDF appropriate e la visualizzazione del colore come colori CMYK o tinta piatta. I file PDF che soddisfano i requisiti PDF/X-1a sono destinati a una condizione di output specifica, ad esempio la stampa offset Web in base alle specifiche Web Offset Publications. Per ulteriori informazioni su PDF/X, consulta Standard di settore e di Adobe.
 
 **PDF/X-3 2002:** verifica la conformità dei processi in ingresso per PDF/X-3 e crea i file PDF solo se conformi. Come PDF/X-1a, PDF/X-3 è uno standard ISO per lo scambio di contenuti grafici. La differenza principale è che PDF/X-3 supporta colori indipendenti dal dispositivo.
 
@@ -82,6 +82,10 @@ I processi di stampa hanno esito negativo se dispongono di tipi di carattere che
 **Standard:** crea file PDF per la stampa su stampanti desktop o fotocopiatrici digitali, la pubblicazione su CD o l&#39;invio a un client come bozza di pubblicazione. Questa serie di opzioni utilizza la compressione e il downsampling per ridurre le dimensioni del file. Incorpora inoltre sottoinsiemi di tutti i font utilizzati nel file, converte tutti i colori in sRGB e stampa a una risoluzione media per creare una rappresentazione ragionevolmente accurata del documento originale. I sottoinsiemi di caratteri di Microsoft Windows non sono incorporati per impostazione predefinita. Questi file PDF possono essere aperti in Acrobat 5 e Acrobat Reader 5.0 e versioni successive.
 
 ## Aggiungi o modifica impostazioni PDF {#add-or-edit-pdf-settings}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Le impostazioni di PDF determinano con precisione il modo in cui i file vengono convertiti e la struttura e le funzionalità PDF risultanti. Definisci una nuova impostazione di PDF o modificane una creata in precedenza. Non è possibile modificare le impostazioni predefinite, ma è possibile creare un&#39;impostazione basata su una esistente modificandola e salvandola con un nuovo nome.
 
@@ -324,7 +328,7 @@ Le opzioni Colore impostano tutte le informazioni di gestione colore per PDF Gen
 
 ### Impostazioni Adobe Color {#adobe-color-settings}
 
-**File impostazioni:** Questo elenco contiene un elenco di impostazioni dei colori utilizzate anche nelle principali applicazioni grafiche, ad esempio Adobe Photoshop e Adobe Illustrator. L&#39;impostazione del colore selezionata determina le altre impostazioni del colore di Adobe in questa pagina. Ad esempio, se selezioni un’impostazione diversa da Nessuno, tutte le opzioni diverse da quelle per Dati dipendenti dal dispositivo sono predefinite e disabilitate. È possibile modificare le impostazioni di Criteri gestione colore e Spazi di lavoro solo se si seleziona Nessuno per File impostazioni.
+**File impostazioni:** Questo elenco contiene un elenco di impostazioni dei colori utilizzate anche nelle principali applicazioni grafiche, ad esempio Adobe Photoshop e Adobe Illustrator. L&#39;impostazione del colore selezionata determina le altre impostazioni del colore di Adobe di questa pagina. Ad esempio, se selezioni un’impostazione diversa da Nessuno, tutte le opzioni diverse da quelle per Dati dipendenti dal dispositivo sono predefinite e disabilitate. È possibile modificare le impostazioni di Criteri gestione colore e Spazi di lavoro solo se si seleziona Nessuno per File impostazioni.
 
 ### Criteri di gestione colore {#color-management-policies}
 

@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
 
 # Utilizzo delle pagine web di Document Security {#using-the-document-security-webpages}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Utenti e amministratori utilizzano le pagine web relative alla sicurezza dei documenti per creare e gestire le policy, gestire i documenti protetti tramite policy e monitorare gli eventi associati ai documenti protetti tramite policy. Gli amministratori utilizzano inoltre le pagine web per creare set di criteri e designare i coordinatori dei set di criteri, configurare le impostazioni predefinite di Document Security, gestire la registrazione e gli account degli utenti invitati e monitorare e gestire eventi relativi a server, criteri, utenti e documenti.
 

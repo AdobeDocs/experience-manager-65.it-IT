@@ -9,14 +9,18 @@ feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # Importazione ed esportazione dei file di configurazione di PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Il file di configurazione contiene le informazioni sulla conversione di PDF Generator, inclusi PDF, tipo di file e impostazioni di protezione.
 

@@ -9,14 +9,18 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # User Management {#user-management}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Gestione utenti consente di abilitare il Single Sign-On (SSO) tra i moduli AEM e le applicazioni protette da Netegrity SiteMinder utilizzando il linguaggio SAML (Security Assertion Markup Language). Quando l’SSO viene implementato, le pagine di accesso degli utenti dei moduli AEM non sono obbligatorie e non vengono visualizzate se l’utente è già autenticato tramite il portale aziendale.
 

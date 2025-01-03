@@ -9,9 +9,9 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ La funzione Fuori sede consente agli utenti o agli amministratori di specificare
 Durante la creazione di un processo, l’utente di Workbench può specificare se un’attività può essere reindirizzata a causa di impostazioni Fuori sede.
 
 ## Visualizzare le informazioni Fuori sede di un utente {#view-a-user-s-out-of-office-information}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro moduli > Fuori sede.
 1. Nella casella nella parte superiore della pagina Fuori sede è possibile effettuare una delle operazioni seguenti:

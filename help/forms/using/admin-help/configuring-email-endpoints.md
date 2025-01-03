@@ -9,14 +9,18 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3808'
 ht-degree: 0%
 
 ---
 
 # Configurazione degli endpoint e-mail {#configuring-email-endpoints}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Gli endpoint e-mail consentono agli utenti di richiamare un servizio inviando uno o più documenti (come allegati e-mail) a un account e-mail specificato. La posta in arrivo funge da punto di raccolta per gli allegati. Il servizio controlla la casella in entrata ed elabora gli allegati. I risultati della conversione vengono inoltrati all&#39;utente definito nell&#39;endpoint.
 

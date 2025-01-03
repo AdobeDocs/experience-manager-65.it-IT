@@ -9,9 +9,9 @@ exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ Questi articoli forniscono indicazioni sulle funzioni di base del database per i
    Per ulteriori informazioni sull&#39;interfaccia della riga di comando per la modalità di backup, vedere il file Leggimi nella directory BackupRestoreCommandline.
 
 ### Uscita dalle modalità di backup {#leaving-backup-modes}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Per uscire dalla modalità di backup è possibile utilizzare la console di amministrazione o l&#39;opzione della riga di comando.
 

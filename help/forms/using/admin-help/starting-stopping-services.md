@@ -9,14 +9,18 @@ exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
 
 # Avvio e arresto dei servizi {#starting-and-stopping-services}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Esistono due tipi di servizi che fanno parte delle forme AEM:
 
@@ -29,7 +33,7 @@ I moduli di moduli AEM (ad esempio, Forms, Rights Management, Output) funzionano
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio del SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può portare a incongruenze nell’ambiente di sviluppo dell’AEM.
 
 1. Nella console di amministrazione, fare clic su **Servizi** > **Applicazioni e servizi** > **Gestione servizi**.
 1. Nella pagina Gestione servizio selezionare la casella di controllo accanto al servizio da arrestare o avviare e fare clic su Arresta o Avvia.

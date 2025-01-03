@@ -9,14 +9,18 @@ exl-id: e372558d-4c1d-47d9-9989-f697e781cce9
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
 
 # Cerca un utente o un gruppo {#search-for-a-user-or-group}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Utenti e gruppi.
 1. Specificare le informazioni per limitare la ricerca e fare clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. È possibile ordinare l&#39;elenco facendo clic su una delle intestazioni di colonna. Vengono restituiti al massimo 1000 risultati.

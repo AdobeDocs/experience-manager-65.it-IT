@@ -9,14 +9,18 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
 
 # Abilitazione del single sign-on nei moduli AEM{#enabling-single-sign-on-in-aem-forms}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 I moduli AEM forniscono due modi per abilitare il single sign-on (SSO): intestazioni HTTP e SPNEGO.
 
@@ -71,7 +75,7 @@ Puoi anche abilitare il SSO utilizzando le intestazioni HTTP. (Vedi [Abilitare S
 >AEM Forms su JEE non supporta la configurazione del SSO utilizzando Kerberos/SPNEGO in più ambienti di dominio figlio.
 
 1. Decidi quale dominio utilizzare per abilitare l&#39;SSO. Il server AEM Forms e gli utenti devono far parte dello stesso dominio Windows o dominio trusted.
-1. In Active Directory, creare un utente che rappresenti il server AEM Forms. (Vedi [Creare un account utente](enabling-single-sign-on-aem.md#create-a-user-account).) Se configuri più domini per l&#39;utilizzo di SPNEGO, assicurati che le password di ciascuno di questi utenti siano diverse. Se le password non sono diverse, SPNEGO SSO non funziona.
+1. In Active Directory, creare un utente che rappresenti il server AEM Forms. (Vedi [Creare un account utente](enabling-single-sign-on-aem.md#create-a-user-account).) Se stai configurando più domini per l&#39;utilizzo di SPNEGO, assicurati che le password di ciascuno di questi utenti siano diverse. Se le password non sono diverse, SPNEGO SSO non funziona.
 1. Mappare il nome dell&#39;entità servizio. (Vedere [Mappare un nome principale di servizio (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configurare il controller di dominio. (Vedi [Impedisci errori di verifica integrità Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Aggiungere o modificare un dominio enterprise come descritto in [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains) o [Modifica e conversione di domini esistenti](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Quando si crea o si modifica il dominio enterprise, eseguire le operazioni seguenti:

@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10266'
+source-wordcount: '10278'
 ht-degree: 0%
 
 ---
 
 # Configurare il server di Document Security {#configure-the-document-security-server}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 1. Nella console di amministrazione, fai clic su Servizi > Document Security > Configurazione > Configurazione server.
 1. Configurare le impostazioni e fare clic su OK.
@@ -308,9 +312,9 @@ Se utilizzi un’applicazione abilitata per la protezione dei documenti che supp
 
 **Cambia criterio nel documento:** Un utente o un amministratore cambia il criterio associato a un documento.
 
-**Documento Publish con nome:** Un nuovo documento con nome documento e licenza identici a quelli di un documento esistente è registrato nel server e i documenti non hanno una relazione padre-figlio. Questo evento può essere attivato utilizzando l’SDK per moduli AEM.
+**Documento Publish con nome:** Un nuovo documento con nome documento e licenza identici a quelli di un documento esistente è registrato nel server e i documenti non hanno una relazione padre-figlio. Questo evento può essere attivato utilizzando i moduli SDK dell’AEM.
 
-**Itera documento:** Un nuovo documento con documentName e licenza identici a un documento esistente è registrato nel server e i documenti hanno una relazione padre-figlio. Questo evento può essere attivato utilizzando l’SDK per moduli AEM.
+**Itera documento:** Un nuovo documento con documentName e licenza identici a un documento esistente è registrato nel server e i documenti hanno una relazione padre-figlio. Questo evento può essere attivato utilizzando i moduli SDK dell’AEM.
 
 **Eventi criteri**
 
@@ -365,7 +369,7 @@ Directory **Sincronizzazione completata:** Queste informazioni non sono disponib
 
 **Client sincronizzato** L&#39;applicazione client deve sincronizzare le informazioni con il server per consentire l&#39;accesso offline.
 
-**Versione non corrispondente:** Una versione dell&#39;SDK dei moduli AEM non compatibile con il server ha tentato la connessione al server.
+**Mancata corrispondenza versione:** Una versione di AEM form SDK non compatibile con il server ha tentato la connessione al server.
 
 **Informazioni sulla sincronizzazione della directory:** Queste informazioni non sono disponibili nella pagina Eventi. Le informazioni sulla sincronizzazione della directory corrente, inclusi lo stato di sincronizzazione corrente e l&#39;ora dell&#39;ultima sincronizzazione, vengono visualizzate nella pagina Gestione dominio. Per accedere alla pagina Gestione dominio nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 
@@ -554,7 +558,7 @@ Document Security genera automaticamente un messaggio e-mail di invito alla regi
 
 L’e-mail di registrazione contiene un collegamento a una pagina di registrazione e informazioni su come registrarsi. Dopo che l’utente invitato si è registrato, Document Security invia un’e-mail di attivazione con un collegamento a una pagina di attivazione. Quando viene attivato, l’account rimane valido fino a quando non viene disattivato o eliminato.
 
-Se si abilita la registrazione incorporata, specificare il server SMTP, i dettagli dell&#39;e-mail di registrazione, le funzionalità di accesso e reimpostare le informazioni dell&#39;e-mail della password una sola volta. Prima di abilitare la registrazione incorporata, accertati di aver creato un dominio locale in Gestione utenti e di aver assegnato il ruolo &quot;Invita utente&quot; di Document Security agli utenti e ai gruppi appropriati dell’organizzazione. (Vedi [Aggiungere un dominio locale](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Creare e configurare ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se non utilizzi la registrazione incorporata, devi avere un sistema di registrazione degli utenti creato utilizzando l’SDK dei moduli AEM. Consulta la guida sullo sviluppo di SPI per i moduli AEM in [Programmazione con moduli AEM](/help/forms/developing/introducing-java-api-soap-quick.md). Se non utilizzi l’opzione di registrazione incorporata, ti consigliamo di configurare un messaggio nell’e-mail di attivazione e nella schermata di accesso del client per avvisare gli utenti di come contattare l’amministratore per una nuova password o per altre informazioni.
+Se si abilita la registrazione incorporata, specificare il server SMTP, i dettagli dell&#39;e-mail di registrazione, le funzionalità di accesso e reimpostare le informazioni dell&#39;e-mail della password una sola volta. Prima di abilitare la registrazione incorporata, accertati di aver creato un dominio locale in Gestione utenti e di aver assegnato il ruolo &quot;Invita utente&quot; di Document Security agli utenti e ai gruppi appropriati dell’organizzazione. (Vedi [Aggiungi un dominio locale](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se non utilizzi la registrazione incorporata, devi creare un sistema di registrazione utenti personalizzato con i moduli AEM di SDK. Consulta la guida sullo sviluppo di SPI per i moduli AEM in [Programmazione con moduli AEM](/help/forms/developing/introducing-java-api-soap-quick.md). Se non utilizzi l’opzione di registrazione incorporata, ti consigliamo di configurare un messaggio nell’e-mail di attivazione e nella schermata di accesso del client per avvisare gli utenti di come contattare l’amministratore per una nuova password o per altre informazioni.
 
 **Abilita e configura la registrazione degli utenti invitati**
 
@@ -778,13 +782,13 @@ Quando le applicazioni client tentano di stabilire un collegamento con la sicure
 
 Le impostazioni Rifiuti possono contenere diversi set di condizioni di rifiuto. Se tutti gli attributi di un set corrispondono, all’applicazione richiedente viene negato l’accesso ai servizi di protezione dei documenti.
 
-La funzione di negazione del servizio richiede che le applicazioni client utilizzino la versione 8.2 o successiva dell’SDK client di Document Security C++. I seguenti prodotti di Adobe forniscono informazioni sul prodotto quando si richiedono i servizi di sicurezza dei documenti:
+La funzione di negazione del servizio richiede che le applicazioni client utilizzino la versione 8.2 o successiva di Document Security C++ Client SDK. I seguenti Adobe forniscono informazioni sul prodotto quando si richiedono i servizi di sicurezza dei documenti:
 
 * Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard e versioni successive
 * Adobe Reader 9.0 e versioni successive
 * Estensioni Acrobat Reader DC per Microsoft Office 8.2 e versioni successive
 
-Le applicazioni client utilizzano l’API client di Document Security C++ Client SDK per richiedere servizi di Document Security. Le richieste API client includono informazioni sulla piattaforma e sulla versione dell’SDK (precompilate nell’API client) e informazioni sul prodotto ottenute dall’applicazione client.
+Le applicazioni client utilizzano l’API client di Document Security C++ Client SDK per richiedere servizi di Document Security. Le richieste API client includono informazioni sulla piattaforma e sulla versione di SDK (precompilate nell’API client) e informazioni sul prodotto ottenute dall’applicazione client.
 
 Le applicazioni client o i plug-in forniscono informazioni sui prodotti nell’implementazione di una funzione di callback. L&#39;applicazione fornisce le seguenti informazioni:
 
@@ -796,7 +800,7 @@ Le applicazioni client o i plug-in forniscono informazioni sui prodotti nell’i
 
 Se non sono applicabili informazioni, l’applicazione client lascia vuoto il campo corrispondente.
 
-Diverse applicazioni di Adobe includono informazioni di prodotto quando si richiedono servizi di sicurezza dei documenti, tra cui Acrobat, Adobe Reader e le estensioni Acrobat Reader DC per Microsoft Office.
+Diverse applicazioni di Adobe includono informazioni sul prodotto quando si richiedono servizi di sicurezza dei documenti, tra cui Acrobat, Adobe Reader e le estensioni Acrobat Reader DC per Microsoft Office.
 
 **Acrobat e Adobe Reader**
 

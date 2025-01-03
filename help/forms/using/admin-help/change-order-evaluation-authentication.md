@@ -9,14 +9,18 @@ exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
 
 # Modifica dell’ordine di valutazione per l’autenticazione {#change-the-order-of-evaluation-for-authentication}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Se sono stati configurati più provider di autenticazione, è possibile modificare l&#39;ordine di valutazione dei moduli AEM per l&#39;autenticazione. L&#39;ordine dei provider di autenticazione elencati nel file config.xml determina l&#39;ordine di valutazione per l&#39;autenticazione.
 

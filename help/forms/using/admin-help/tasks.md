@@ -9,14 +9,18 @@ exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
 
 # Utilizzo delle attività {#working-with-tasks}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Utilizzare la pagina Ricerca task per cercare i task in base al nome utente o all&#39;ID task. I risultati della ricerca vengono visualizzati nella pagina Elenco task, in cui è possibile accedere alla cronologia di un task. È inoltre possibile riassegnare un&#39;attività se un utente ha troppe attività o se un utente ha ricevuto un&#39;assegnazione di attività per errore.
 

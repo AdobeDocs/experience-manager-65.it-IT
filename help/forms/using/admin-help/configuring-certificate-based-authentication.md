@@ -9,14 +9,18 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
 
 # Configurazione dell’autenticazione basata su certificati {#configuring-certificate-based-authentication}
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Gestione utenti in genere esegue l&#39;autenticazione utilizzando un nome utente e una password. Gestione utenti supporta anche l’autenticazione basata su certificati, che può essere utilizzata per autenticare gli utenti tramite Acrobat o a livello di programmazione. Per informazioni dettagliate sull&#39;autenticazione degli utenti a livello di programmazione, vedere [Programmazione con moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63).
 
@@ -47,7 +51,7 @@ Quando verifichi un certificato, Gestione utente carica i controlli del certific
 1. Fare clic su Nuovo mapping certificati e, nell&#39;elenco Per emittente, selezionare l&#39;alias del certificato configurato in Gestione archivio fonti attendibili.
 1. Mappa uno degli attributi del certificato a un attributo dell’utente. Ad esempio, puoi mappare il nome comune del certificato all’ID di accesso dell’utente.
 
-   Se il contenuto dell’attributo nel certificato è diverso da quello nell’attributo dell’utente nel database di User Management, puoi utilizzare un’espressione regolare Java (regex) per far corrispondere i due attributi. Ad esempio, se i nomi comuni dei certificati sono nomi come *Alex Pink (autenticazione)* e *Alex Pink (firma)* e il nome comune nel database di gestione utenti è *Alex Pink*, utilizzare un regex per estrarre la parte richiesta dell&#39;attributo del certificato (in questo esempio, *Alex Pink*). L’espressione regolare specificata deve essere conforme alla specifica Java regex.
+   Se il contenuto dell’attributo nel certificato è diverso da quello nell’attributo dell’utente nel database di User Management, puoi utilizzare un’espressione regolare Java (regex) per far corrispondere i due attributi. Ad esempio, se i nomi comuni dei certificati sono nomi come *Alex Pink (autenticazione)* e *Alex Pink (firma)* e il nome comune nel database di gestione utenti è *Alex Pink*, utilizzare un regex per estrarre la parte richiesta dell&#39;attributo del certificato (in questo esempio, *Alex Pink*). L&#39;espressione regolare specificata deve essere conforme alla specifica Java regex.
 
    È possibile trasformare l&#39;espressione specificando l&#39;ordine dei gruppi nella casella Ordine personalizzato. Ordine personalizzato utilizzato con il metodo `java.util.regex.Matcher.replaceAll()`. Il comportamento visualizzato corrisponderà al comportamento del metodo e la stringa di input (l’ordine personalizzato) deve essere specificata di conseguenza.
 

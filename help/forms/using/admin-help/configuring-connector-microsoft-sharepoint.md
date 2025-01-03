@@ -9,19 +9,24 @@ exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 98cbaaf64c0268be1afe7196a7bbbf5c93f02148
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '214'
 ht-degree: 1%
 
 ---
 
-# Configurazione del connettore per Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
+
+# Configurazione del connettore per Microsoft SharePoint
+
+>[!NOTE]
+> 
+> Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
 Il connettore per Microsoft SharePoint consente la comunicazione tra i moduli AEM e Microsoft SharePoint. Per ulteriori informazioni di base, vedere &quot;Connettori per ECM&quot; in [Riferimento servizi](https://www.adobe.com/go/learn_aemforms_services_63).
 
 1. Nella console di amministrazione, fai clic su Servizi > Connettore per Microsoft SharePoint.
-1. Specificare le impostazioni seguenti per il server SharePoint:
+2. Specificare le impostazioni seguenti per il server SharePoint:
 
    **Nome host SharePoint Server:** Il numero di porta del nome host dell&#39;applicazione Web nel server SharePoint, nel formato `[hostname]:'port'`.
 
@@ -31,7 +36,7 @@ Il connettore per Microsoft SharePoint consente la comunicazione tra i moduli AE
 
    **Nome dominio:** Dominio in cui si trova il server SharePoint.
 
-1. Fai clic su Salva.
+3. Fai clic su Salva.
 
 ## Servizio di configurazione di Microsoft SharePoint {#microsoft-sharepoint-configuration-service}
 
