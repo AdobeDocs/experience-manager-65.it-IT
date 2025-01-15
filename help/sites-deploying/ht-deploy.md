@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: eca7d67c564501225997455e91b5d3f60ee6ffc9
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '52'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,16 @@ ht-degree: 1%
 
 Gli argomenti riportati di seguito descrivono come eseguire specifiche attività di distribuzione dell’AEM:
 
-* [Come utilizzare il Visualizzatore log](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
-* [Eliminare i flussi di lavoro e il registro di controllo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
+<!--
+* [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
+-->
+
+* [Eliminare i flussi di lavoro e il registro di controllo](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
+
 * [Come rimuovere le funzionalità dalla schermata iniziale](/help/sites-developing/customizing-the-welcome-console.md)
-* [Disattivare la funzionalità di localizzazione](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+
+<!--
+* [How to Turn Off the Location Tracker Feature](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+-->
