@@ -8,18 +8,16 @@ exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '955'
 ht-degree: 1%
 
 ---
 
 # Consegna dei contenuti{#content-delivery}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Le app mobili devono essere in grado di utilizzare tutti i contenuti dell’AEM in base alle esigenze, per fornire un’esperienza di utilizzo dell’app mirata.
 
@@ -95,7 +93,7 @@ Lasciamo da parte i passaggi del modo in cui la pagina viene resa disponibile tr
 
 #### Ottenimento di un elenco di entità risorse disponibili {#getting-a-list-of-available-asset-entities}
 
-Uno sviluppatore di app può ottenere un elenco delle risorse disponibili recuperando le entità delle risorse. L’endpoint dello spazio di Content Services può fornire tali informazioni tramite l’SDK dell’API del servizio web.
+Uno sviluppatore di app può ottenere un elenco delle risorse disponibili recuperando le entità delle risorse. L’endpoint di spazio di Content Services può fornire tali informazioni tramite l’API SDK del servizio web.
 
 Il risultato sarebbe un oggetto in formato JSON che fornirebbe un elenco delle risorse nella cartella &quot;icons&quot;.
 

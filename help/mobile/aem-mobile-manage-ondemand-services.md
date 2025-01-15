@@ -9,10 +9,10 @@ exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 2%
+source-wordcount: '247'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,7 @@ ht-degree: 2%
 
 Questa pagina spiega come visualizzare l’anteprima con l’app Verifica preliminare.
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Le azioni seguenti vengono eseguite sull&#39;applicazione nel suo insieme.
 

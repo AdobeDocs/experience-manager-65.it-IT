@@ -9,18 +9,16 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2675'
+source-wordcount: '2654'
 ht-degree: 1%
 
 ---
 
 # Creazione e modifica di app tramite la console App{#creating-and-editing-apps-using-the-apps-console}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Il processo di sviluppo delle applicazioni mobili dell&#39;AEM riconosce che gli utenti di diverse competenze contribuiscono allo sviluppo delle applicazioni mobili. La mappa di processo riportata di seguito illustra l&#39;ordine generale in cui gli autori di contenuti e gli sviluppatori di applicazioni eseguono le attività.
 
@@ -79,7 +77,7 @@ Puoi anche fornire un file di immagine da utilizzare come miniatura dell’appli
 Sono disponibili schede aggiuntive (e facoltative) per build Cloud Service e per l’integrazione del plug-in SDK di Adobe Mobile Services nell’app.
 
 * Genera: fai clic su Gestisci configurazioni e configura il servizio di build build.phonegap.com qui. Quindi, dall’elenco a discesa, potrai selezionare il servizio cloud PhoneGap Build appena creato.
-* Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) di Adobe Mobile Services. Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
+* Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
 
 >[!NOTE]
 >

@@ -9,18 +9,16 @@ exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '376'
 ht-degree: 1%
 
 ---
 
 # Avvio di PhoneGap AEM {#starting-aem-phonegap}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Per gli sviluppatori, il punto migliore per iniziare è quello di guardare il Adobe Experience Manager Mobili Starterkit in github
 

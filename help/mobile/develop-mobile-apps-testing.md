@@ -9,18 +9,16 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
 # Verifica delle app mobili{#testing-mobile-apps}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Data l’ampia gamma di dispositivi sul mercato e di dispositivi in fase di rilascio, il test delle app è diventato imperativo. Si tratta di un’area in cui funzionalità e usabilità possono ottenere recensioni negative su un app store, ma un singolo difetto può causare la disinstallazione dell’app. Presta particolare attenzione ai piani di test e al controllo qualità. Il seguente collegamento tratta molti degli argomenti che devono essere trattati in generale, ad esempio l’identificazione dell’ambiente, la definizione dei casi di test, i tipi di test, i presupposti e il coinvolgimento dei clienti. Vengono inoltre descritti gli strumenti utili per l’attività di test. Gli strumenti interni, come [Hobbes](/help/sites-developing/hobbes.md), possono essere utili per i test dell&#39;interfaccia utente basati sul Web. [Giorno difficile](/help/sites-developing/tough-day.md) può stressare le tue istanze con un carico simulato. Se l’ambiente di test ha già esperienza con strumenti di terze parti, come Selenium, puoi utilizzare anche questi.
 

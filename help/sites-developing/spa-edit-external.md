@@ -5,9 +5,9 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Innanzitutto, devi caricare l’SPA esterno nel tuo progetto AEM.
 
 1. Sostituisci `src` nella cartella dei progetti `/ui.frontend` con la cartella `src` dell&#39;applicazione React.
 1. Includere eventuali dipendenze aggiuntive nel file `/ui.frontend/package.json` dell&#39;app `package.json`.
-   * Assicurati che le dipendenze dell&#39;SDK SPA siano di [versioni consigliate](spa-getting-started-react.md#dependencies).
+   * Verificare che le dipendenze del SDK SPA siano di [versioni consigliate](spa-getting-started-react.md#dependencies).
 1. Includere eventuali personalizzazioni nella cartella `/public`.
 1. Includere eventuali script o stili in linea aggiunti nel file `/public/index.html`.
 
@@ -80,7 +80,7 @@ In questo esempio, `ModelManager` è inizializzato e viene creato un `ModelStore
 
 * `path` - All&#39;inizializzazione, il modello nel percorso definito viene recuperato e memorizzato in `ModelStore`. Può essere utilizzato per recuperare `rootModel` all&#39;inizializzazione, se necessario.
 * `modelClient` - Consente di fornire un client personalizzato responsabile del recupero del modello.
-* `model` - Un oggetto `model` passato come parametro viene generalmente popolato quando [si utilizza SSR](spa-ssr.md)
+* `model` - Un oggetto `model` passato come parametro viene generalmente popolato quando si utilizza SSR.
 
 ### Componenti foglia compatibili con AEM {#authorable-leaf-components}
 
@@ -375,4 +375,3 @@ I seguenti materiali di riferimento possono essere utili per comprendere l&#39;S
 * [Materiali di riferimento SPA (riferimenti API)](spa-reference-materials.md)
 * [Blueprint SPA e PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [Routing modello SPA](spa-routing.md)
-* [Rendering lato server e SPA](spa-ssr.md)

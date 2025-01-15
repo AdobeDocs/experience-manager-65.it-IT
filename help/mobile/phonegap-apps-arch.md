@@ -8,18 +8,16 @@ exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2605'
+source-wordcount: '2584'
 ht-degree: 0%
 
 ---
 
 # Anatomia di un’app{#the-anatomy-of-an-app}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 ## Modelli di pagina per le app mobili {#page-templates-for-mobile-apps}
 
@@ -312,7 +310,7 @@ Questa directory contiene [hook CLI](https://cordova.apache.org/docs/en/10.x/gui
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-La directory after-platform_add contiene il file `copy_AMS_Conifg.js`. Questo script copia un file di configurazione per supportare la raccolta di dati analitici di Adobe Mobile Services.
+La directory after-platform_add contiene il file `copy_AMS_Conifg.js`. Questo script copia un file di configurazione per supportare la raccolta di analisi di Adobe Mobile Services.
 
 #### .cordova/hook/after-preparation/ {#cordova-hooks-after-prepare}
 

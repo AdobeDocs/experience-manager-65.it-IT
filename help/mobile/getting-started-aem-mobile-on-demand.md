@@ -9,18 +9,16 @@ exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '740'
 ht-degree: 1%
 
 ---
 
 # AEM Mobile On-Demand{#aem-mobile-on-demand}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >
@@ -90,7 +88,7 @@ Per iniziare a usare i ruoli e le responsabilità degli sviluppatori, consulta [
 >
 >Il ruolo *Sviluppatore AEM* non inizia e non termina con lo sviluppo di modelli e componenti. Uno sviluppatore *AEM* può creare un&#39;app completamente nuova anziché semplicemente estendere l&#39;esempio di implementazione di riferimento preconfigurato.
 
-## Autore AEM {#aem-author}
+## AEM Author {#aem-author}
 
 Un ***Autore AEM* (o *Addetto marketing*)**utilizza modelli e componenti sviluppati o predefiniti per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere supporti di tutti i tipi da DAM, inclusi immagini, video e frammenti di testo (frammenti di contenuto). L&#39;editor di contenuti integrato dell&#39;AEM viene quindi utilizzato da *autori AEM* per creare esperienze avanzate e rilevanti all&#39;interno dell&#39;app, inclusa l&#39;integrazione con il resto del Adobe Experience Cloud.
 

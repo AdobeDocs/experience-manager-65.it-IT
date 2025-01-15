@@ -9,18 +9,16 @@ exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 5%
+source-wordcount: '356'
+ht-degree: 4%
 
 ---
 
 # Modifica dei metadati dell’app {#editing-app-metadata}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Il riquadro **Gestione app** e la pagina &quot;Gestione app&quot; consentono di visualizzare e modificare i metadati dell&#39;applicazione. I metadati dell’app sono dettagli necessari per rilasciare un’applicazione nello store di un fornitore. Possono includere metadati comuni, metadati iOS e schermate. Per ulteriori dettagli sui metadati comuni e iOS, consulta [Gestione riquadro app](/help/mobile/phonegap-app-details-tile.md).
 

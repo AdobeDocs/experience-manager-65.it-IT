@@ -11,18 +11,16 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3701'
 ht-degree: 0%
 
 ---
 
 # Creazione di siti per dispositivi mobili{#creating-sites-for-mobile-devices}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 La creazione di un sito mobile è simile alla creazione di un sito standard, in quanto comporta anche la creazione di modelli e componenti. Per ulteriori dettagli sulla creazione di modelli e componenti, vedere le pagine seguenti: [Modelli](/help/sites-developing/templates.md), [Componenti](/help/sites-developing/components.md) e [Guida introduttiva allo sviluppo di AEM Sites](/help/sites-developing/getting-started.md). La differenza principale consiste nell’abilitare le funzionalità mobili integrate di Adobe Experience Manager (AEM) all’interno del sito. Ciò si ottiene creando un modello che si basa sul componente Pagina mobile.
 
@@ -160,7 +158,7 @@ OPPURE
 
 ### Emulatori {#emulators}
 
-L’authoring basato su emulatore consente agli autori di creare pagine di contenuti destinate ai clienti di dispositivi mobili. L’authoring dei contenuti per dispositivi mobili segue lo stesso principio dell’editing WYSIWYG sul posto. Affinché gli autori possano percepire l’aspetto della pagina su un dispositivo mobile, una pagina di contenuto mobile viene modificata utilizzando un emulatore di dispositivo.
+L’authoring basato su emulatore consente agli autori di creare pagine di contenuti destinate ai clienti di dispositivi mobili. L’authoring dei contenuti per dispositivi mobili segue lo stesso principio dell’editing sul posto di WYSIWYG. Affinché gli autori possano percepire l’aspetto della pagina su un dispositivo mobile, una pagina di contenuto mobile viene modificata utilizzando un emulatore di dispositivo.
 
 Gli emulatori per dispositivi mobili si basano sul framework dell’emulatore generico. Per ulteriori dettagli, vedi [Emulatori](/help/sites-developing/emulators.md).
 
@@ -338,7 +336,7 @@ AEM analizza automaticamente il file `wurfl.xml` e aggiorna i nodi sottostanti `
 
 Aggiungi user-agent come espressione regolare sotto /apps/wcm/mobile/devicespecs/wurfl/regexp per puntare a un tipo di dispositivo WURFL™ esistente.
 
-1. In **CRXDE Liti**, creare un nodo sotto /apps/wcm/mobile/devicespecs/regexp, ad esempio, `apple_ipad_ver1`.
+1. In **CRXDE Lite**, creare un nodo sotto /apps/wcm/mobile/devicespecs/regexp, ad esempio, `apple_ipad_ver1`.
 1. Aggiungi le seguenti proprietà al nodo:
 
    * **regexp**: espressione regolare che definisce gli user-agents, ad esempio.&#42;Mozilla.&#42;iPad.&#42;AppleWebKit.&#42;Safari.&#42;
@@ -383,7 +381,7 @@ Quando il valore della proprietà `cq:variantDomain` di un nodo `cq:siteVariant`
 
 ### Definizione di un URL specifico per un gruppo di dispositivi {#defining-a-device-group-specific-url}
 
-Se non si desidera utilizzare collegamenti alternativi, è possibile configurare un URL globale per ogni `DeviceGroup`. L&#39;Adobe consiglia di creare una libreria client personalizzata che incorpori la libreria client `browsermap.standard`, ma ridefinisce i gruppi di dispositivi.
+Se non si desidera utilizzare collegamenti alternativi, è possibile configurare un URL globale per ogni `DeviceGroup`. Adobe consiglia di creare una libreria client personalizzata che incorpori la libreria client `browsermap.standard` ma ridefinisca i gruppi di dispositivi.
 
 BrowserMap è progettato in modo che le definizioni dei gruppi di dispositivi possano essere ignorate creando e aggiungendo un gruppo di dispositivi con lo stesso nome all&#39;oggetto `BrowserMap` dalla libreria client personalizzata.
 
@@ -417,7 +415,7 @@ Inoltre, devi chiamare manualmente il metodo `BrowserMap.forwardRequest()` nel c
 >
 >Per ulteriori informazioni sull&#39;integrazione della libreria client, vedere [Utilizzo delle librerie HTML lato client](/help/sites-developing/clientlibs.md).
 
-Dopo aver creato la libreria client `BrowserMap` personalizzata, l&#39;Adobe suggerisce il seguente approccio:
+Dopo aver creato la libreria client `BrowserMap` personalizzata, Adobe suggerisce il seguente approccio:
 
 1. Crea un file `browsermap.jsp` nell&#39;applicazione
 

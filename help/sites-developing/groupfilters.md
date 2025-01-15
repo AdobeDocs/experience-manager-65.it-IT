@@ -11,18 +11,16 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
 
 # Creazione di filtri per gruppi di dispositivi{#creating-device-group-filters}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Crea un filtro per gruppi di dispositivi per definire un set di requisiti di funzionalità per dispositivi. Crea tutti i filtri necessari per eseguire il targeting dei gruppi necessari di funzionalità del dispositivo.
 
@@ -188,9 +186,9 @@ Il seguente codice POM è utile se utilizzi Maven per creare le applicazioni. Il
 
 * `org.apache.felix.scr.annotations.jar`: fornisce le annotazioni del componente e del servizio.
 
-Le interfacce DeviceGroup e DeviceGroupFilter sono incluse nel bundle Day Communique 5 WCM Mobile API. Le annotazioni Felix sono incluse nel bundle Apache Felix Declarative Services. Puoi ottenere questo file JAR dall’archivio di Adobi pubblico.
+Le interfacce DeviceGroup e DeviceGroupFilter sono incluse nel bundle Day Communique 5 WCM Mobile API. Le annotazioni Felix sono incluse nel bundle Apache Felix Declarative Services. Puoi ottenere questo file JAR dall’archivio pubblico Adobe.
 
-Al momento dell’authoring, 5.5.2 è la versione del bundle WCM Mobile API che si trova nell’ultima versione dell’AEM. Utilizza la console Web Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) per assicurarti che si tratti della versione del bundle distribuita nell&#39;ambiente.
+Al momento dell’authoring, 5.5.2 è la versione del bundle WCM Mobile API che si trova nell’ultima versione dell’AEM. Utilizza la console Web di Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) per assicurarti che questa sia la versione del bundle distribuita nell&#39;ambiente.
 
 **POM:** (il POM utilizza un groupId e una versione diversi).
 
@@ -257,4 +255,4 @@ Al momento dell’authoring, 5.5.2 è la versione del bundle WCM Mobile API che 
 </project>
 ```
 
-Aggiungi il profilo fornito dalla sezione [Ottenere il plug-in Maven del pacchetto di contenuti](/help/sites-developing/vlt-mavenplugin.md) al file delle impostazioni Maven per utilizzare l&#39;archivio di Adobi pubblico.
+Aggiungi il profilo fornito dalla sezione [Ottenere il plug-in Maven del pacchetto di contenuti](/help/sites-developing/vlt-mavenplugin.md) al file delle impostazioni Maven per utilizzare l&#39;archivio Adobe pubblico.

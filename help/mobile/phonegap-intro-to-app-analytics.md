@@ -1,6 +1,6 @@
 ---
 title: Tracciare le prestazioni dell’app con Adobe Mobile Analytics
-description: Con Mobile Services di Adobe, puoi ottenere informazioni su come gli utenti utilizzano le tue app mobili monitorando l’utilizzo, gli arresti anomali dell’app, i dettagli del dispositivo e molte altre metriche critiche per le tue app mobili. Per ulteriori informazioni, segui questa pagina.
+description: Con Adobe Mobile Services, puoi ottenere informazioni su come gli utenti utilizzano le tue app mobili monitorando l’utilizzo, gli arresti anomali dell’app, i dettagli del dispositivo e molte altre metriche critiche per le tue app mobili. Per ulteriori informazioni, segui questa pagina.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,18 +9,16 @@ exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1033'
 ht-degree: 1%
 
 ---
 
 # Tracciare le prestazioni dell’app con Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Desideri promuovere conversioni più elevate dei clienti e fidelizzazione.
 
@@ -30,11 +28,11 @@ Che cosa fa la tua app AEM Mobile per le campagne di marketing?
 
 Come mettere a punto le applicazioni mobili per fornire la migliore esperienza agli utenti?
 
-Con Mobile Services di Adobe, puoi ottenere informazioni su come gli utenti utilizzano le tue app mobili monitorando l’utilizzo, gli arresti anomali dell’app, i dettagli del dispositivo e molte altre metriche critiche per le tue app mobili.
+Con Adobe Mobile Services, puoi ottenere informazioni su come gli utenti utilizzano le tue app mobili monitorando l’utilizzo, gli arresti anomali dell’app, i dettagli del dispositivo e molte altre metriche critiche per le tue app mobili.
 
-Adobe Experience Manager Mobili fornisce un’occhiata ai dettagli della tua analisi mobile direttamente dal dashboard dell’applicazione AEM Mobile. Il riquadro **Metriche mobile** nel dashboard fornisce Real-Time Analytics per la tua app mobile, consentendo a sviluppatori, autori e amministratori di ottenere un rapido sguardo sullo stato della tua app mobile. Sotto le copertine, il motore dell&#39;analisi è l&#39;SDK [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html). L’SDK Adobe Mobile Analytics può essere collegato alle applicazioni in modo nativo o tramite un plug-in PhoneGap Bridge per le visualizzazioni Web. Le metriche vengono raccolte e memorizzate nella cache del dispositivo fino a quando il dispositivo non è connesso, e i dati vengono inviati al cloud Adobe Mobile Services per scopi di reporting e analisi.
+Adobe Experience Manager Mobili fornisce un’occhiata ai dettagli della tua analisi mobile direttamente dal dashboard dell’applicazione AEM Mobile. Il riquadro **Metriche mobile** nel dashboard fornisce Real-Time Analytics per la tua app mobile, consentendo a sviluppatori, autori e amministratori di ottenere un rapido sguardo sullo stato della tua app mobile. Sotto le copertine, il motore dell&#39;analisi è il SDK [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html). Il SDK Adobe Mobile Analytics può essere collegato alle applicazioni in modo nativo o tramite un plug-in PhoneGap Bridge per le visualizzazioni Web. Le metriche vengono raccolte e memorizzate nella cache del dispositivo fino a quando il dispositivo non è connesso, e i dati vengono inviati al cloud di Adobe Mobile Services a scopo di reporting e analisi.
 
-L’SDK di Adobe Mobile Analytics fornisce quanto segue:
+Adobe Mobile Analytics SDK fornisce quanto segue:
 
 1. **Raccolta dati per i canali mobili** - Raccolta di dati completi per i siti Web e le app mobili in tutti i principali sistemi operativi.
 1. **Analisi del coinvolgimento mobile** - Comprendi il coinvolgimento degli utenti nell&#39;app mobile, nel sito Web o nel video, compresa la frequenza con cui i consumatori avviano il canale, se effettuano acquisti da esso e altro ancora.
@@ -47,7 +45,7 @@ In questa sezione viene descritto come [gli sviluppatori di AEM](#developers) po
 
 Infine, [Amministratori AEM](#administrators) imparano a:
 
-* creazione di un servizio cloud per Adobe Mobile Services
+* creazione di un servizio cloud in Adobe Mobile Services
 * creare una configurazione per servizio mobile e associare una suite di rapporti
 * associare la configurazione del servizio mobile a un’app mobile
 * visualizzare le metriche tramite il Centro di comando delle app AEM
@@ -69,7 +67,7 @@ Per configurare il servizio cloud nella tua app mobile, fai clic sull’icona a 
 
 Fai clic sull’icona a forma di ingranaggio nel riquadro Analizza metriche per aprire la finestra di dialogo modale &quot;Configura analisi Mobile Services&quot;. Seleziona la configurazione dal menu a discesa Seleziona una configurazione del servizio mobile. Se è necessario creare una configurazione, fare clic sul pulsante chiave inglese.
 
-Per creare un Adobe di servizio cloud Mobile Services sono necessari due passaggi: la connessione al servizio e la selezione della suite di rapporti da assegnare alla configurazione.
+Per creare un servizio cloud Adobe Mobile Service sono necessari due passaggi: stabilire la connessione al servizio e selezionare la suite di rapporti da assegnare alla configurazione.
 
 Per iniziare, fai clic sul pulsante &#39;+&#39; nella sezione Gestisci Cloud Service del dashboard.
 
@@ -83,7 +81,7 @@ Seleziona o crea una configurazione per servizio mobile compilando i campi obbli
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-Dopo aver completato le impostazioni dell’account Mobile Services, ti viene richiesto di selezionare un’app. In questo modo si collega il reporting analitico di Adobe Mobile Services a tale applicazione.
+Dopo aver completato le impostazioni dell’account Mobile Services, ti viene richiesto di selezionare un’app. In questo modo si collega il reporting di Adobe Mobile Services Analytics a tale applicazione.
 
 Seleziona il servizio mobile desiderato, quindi fai clic su Aggiorna per assegnare la configurazione del servizio mobile e chiudere la finestra di dialogo.
 
@@ -95,11 +93,11 @@ Ora che hai associato la configurazione del servizio mobile all’app AEM Mobile
 
 A questo punto, l’app mobile è associata a un servizio cloud, ma non sa ancora come comunicare ad Adobe Analytics le metriche mobile raccolte. Per collegare l’app mobile ad Adobe Analytics, è necessario aggiungere a Adobe Experience Manager il file di configurazione SDK di Adobe Mobile Services.
 
-Dal riquadro Analizza metriche, fai clic sull&#39;icona a forma di freccia per esporre le voci del menu Scarica/Carica configurazione SDK di AMS.
+Dal riquadro Analizza metriche, fai clic sull’icona a forma di freccia per esporre le voci del menu Scarica/Carica configurazione SDK di AMS.
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Il primo passaggio consiste nell’ottenere la configurazione SDK da Adobe Mobile Services. Fai clic su Scarica configurazione SDK di AMS per essere reindirizzato al sito web di Adobe Mobile Services da cui puoi scaricare il file di configurazione. Dopo aver ottenuto il file ADBMobileConfig.json, fai clic su &quot;Carica configurazione SDK di AMS&quot; per caricare il file di configurazione in AEM.
+Il primo passaggio consiste nell’ottenere la configurazione SDK da Adobe Mobile Services. Fai clic su Scarica configurazione SDK AMS per essere reindirizzato al sito web di Adobe Mobile Services da cui puoi scaricare il file di configurazione. Dopo aver ottenuto il file ADBMobileConfig.json, fai clic su &quot;Carica configurazione SDK AMS&quot; per caricare il file di configurazione nell’AEM.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 

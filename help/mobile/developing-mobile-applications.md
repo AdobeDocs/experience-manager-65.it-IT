@@ -9,20 +9,18 @@ exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
 
 # Sviluppo di applicazioni mobili in AEM {#developing-mobile-applications-in-aem}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-AEM utilizza Adobe PhoneGap e Adobe Publishing Solutions, che consentono di creare e gestire applicazioni mobili multipiattaforma ricche di contenuti e basate su utility:
+L’AEM utilizza Adobe PhoneGap e le soluzioni Adobe Publishing per creare e gestire applicazioni mobili multipiattaforma ricche di contenuti e basate su utility:
 
 * Gestisci tutte le app mobili aziendali in un’unica posizione.
 * Esamina le app negli ambienti di sviluppo e staging senza la complessità dei profili di provisioning e l’impegno aggiuntivo per generare e caricare l’app per la condivisione.

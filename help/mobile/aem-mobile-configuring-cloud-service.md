@@ -9,18 +9,16 @@ exl-id: d370d772-ef4d-4f38-826c-e90d07735822
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1233'
 ht-degree: 1%
 
 ---
 
 # Configurazione del Cloud Service Adobe Target {#configuring-adobe-target-cloud-service}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >
@@ -54,29 +52,29 @@ Dal menu a discesa Seleziona una configurazione, puoi creare una configurazione 
 
 Il servizio cloud creato viene associato automaticamente all’app mobile tramite la procedura guidata. Il valore della proprietà cq:cloudserviceconfigs viene impostato sul nodo jcr:content del nodo del gruppo apps. Per l’esempio di app ibrida, viene impostato su /content/mobileapps/hybrid-reference-app/jcr:content con il valore che punta al nodo del framework generato automaticamente in /etc/cloudservices/testandtarget/adobe-target—aem-apps/framework. Il nodo del framework ha due proprietà impostate per impostazione predefinita: genere ed età. Il framework viene utilizzato solo dall’anteprima AEM e non ha alcun impatto sul dispositivo.
 
-Dopo il completamento della procedura guidata, il riquadro Gestisci Cloud Service contiene il servizio cloud di Target, ma contiene un avviso relativo a un account Adobe Mobile Service mancante.
+Dopo il completamento della procedura guidata, il riquadro Gestisci Cloud Service contiene il servizio cloud di Target, ma contiene un avviso relativo a un account di Adobe Mobile Services mancante.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
-## Servizio mobile Adobe {#adobe-mobile-service}
+## Servizio mobile di Adobe {#adobe-mobile-service}
 
-È necessario collegare un account Adobe Mobile Services (AMS) anche all’applicazione, il servizio AMS fornisce il file ADBMobileConfig.json richiesto che contiene le informazioni sul codice client di Target. Prima di creare un&#39;associazione con l&#39;account AMS, l&#39;account AMS deve essere modificato da un utente che dispone di autorizzazioni per AMS.
+È necessario collegare un account di Adobe Mobile Services (AMS) anche all’applicazione, il servizio AMS fornisce il file ADBMobileConfig.json richiesto che contiene le informazioni sul codice client di Target. Prima di creare un&#39;associazione con l&#39;account AMS, l&#39;account AMS deve essere modificato da un utente che dispone di autorizzazioni per AMS.
 
 ### Codice cliente {#client-code}
 
-Per accedere ai servizi AMS, visita [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), seleziona l&#39;app mobile e fai clic sulle impostazioni. Individua il campo Opzioni SDK Target, inserisci il codice client nel campo e fai clic su Salva.
+Per accedere ai servizi AMS, visita [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), seleziona l&#39;app mobile e fai clic sulle impostazioni. Individua il campo Opzioni di SDK Target, inserisci il codice client nel campo e fai clic su Salva.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-Ora che il codice client è stato associato all’app mobile, quando il servizio cloud AMS è configurato tramite l’Adobe Dashboard per dispositivi mobili, le impostazioni del servizio verranno distribuite tramite il file ADBMobileConfig.json.
+Ora che il codice client è stato associato all’app mobile, quando il servizio cloud AMS è configurato tramite il dashboard di Adobe Mobile, le impostazioni del servizio verranno distribuite tramite il file ADBMobileConfig.json.
 
-### Servizio mobile Adobe: servizio possibile {#adobe-mobile-service-could-service}
+### Servizio di Adobe Mobile {#adobe-mobile-service-could-service}
 
-Ora che AMS è configurato, è necessario associare l’applicazione mobile all’Adobe Dashboard di Mobile. Dal dashboard di AEM Mobile, individua il Cloud Service Gestisci e fai clic sul pulsante +.
+Ora che AMS è configurato, è necessario associare l’applicazione mobile alla dashboard di Adobe Mobile. Dal dashboard di AEM Mobile, individua il Cloud Service Gestisci e fai clic sul pulsante +.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
-Seleziona la scheda Adobe Mobile Services e fai clic su Avanti.
+Seleziona la scheda di Adobe Mobile Services e fai clic su Avanti.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -100,7 +98,7 @@ Dopo aver impostato il percorso delle attività nella proprietà path del gestor
 
 Il gestore mobileapffers è configurato in modo diverso per le impostazioni di pubblicazione e sviluppo. Per le impostazioni di pubblicazione esiste una proprietà denominata *renderMode* con un valore di *publish* impostato sul nodo cq:ContentSyncConfig. Il gestore mobileapffers fa riferimento al renderMode e, se impostato su publish, modifica l’ID mbox creato. Per impostazione predefinita, alle mbox create dall’AEM viene aggiunto un valore —author all’ID mbox. Questo identifica che l’attività non è stata pubblicata e deve utilizzare la campagna non pubblicata per le risoluzioni delle offerte.
 
-Quando il contenuto viene gestito tramite l’Adobe Mobile Dashboard, il contenuto gestito viene considerato pronto per la produzione e ne viene eseguito il rendering tramite la configurazione di sincronizzazione contenuti non di sviluppo. Il rendering in questo modo fa sì che —author venga rimosso da tutti gli ID mbox e preveda che un’attività pubblicata sia disponibile sul server di Target. Prima di testare il contenuto con staging, assicurati che l’attività sia pubblicata.
+Quando il contenuto viene gestito tramite la dashboard di Adobe Mobile, il contenuto gestito viene considerato pronto per la produzione e ne viene eseguito il rendering tramite la configurazione di sincronizzazione contenuti non di sviluppo. Il rendering in questo modo fa sì che —author venga rimosso da tutti gli ID mbox e preveda che un’attività pubblicata sia disponibile sul server di Target. Prima di testare il contenuto con staging, assicurati che l’attività sia pubblicata.
 
 ## Creazione di contenuti {#creating-content}
 

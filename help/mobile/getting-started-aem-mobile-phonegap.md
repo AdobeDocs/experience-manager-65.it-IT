@@ -9,18 +9,16 @@ exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 # AEM Adobe PhoneGap{#aem-adobe-phonegap}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM si integra con PhoneGap in modo da poter creare facilmente app utilizzando le pagine AEM. PhoneGap permette all’utente di creare app che consentono agli utenti di lavorare con i contenuti. Sincronizzazione contenuti consente di creare archivi con versioni delle pagine da includere nel bundle con le app.
 
@@ -32,7 +30,7 @@ La vera potenza di AEM Mobile è che uno *esperto* ***sviluppatore AEM*** può e
 
 >[!NOTE]
 >
->Quando l&#39;*Autore AEM* ritiene che l&#39;app sia pronta, le parti interessate possono prima scaricare l&#39;app con **[Verifica Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (disponibile sia in AppStore che in PlayStore) per la revisione e l&#39;approvazione. Una volta ricevuta la luce verde, può rilasciare questo contenuto nuovo o aggiornato direttamente ai suoi utenti tramite la dashboard di gestione del rilascio dei contenuti di AEM Mobile ContentSync. Una persona può assumere qualsiasi numero di ruoli, questo dipende da te e dai tuoi criteri di governance.
+>Quando l&#39;*Autore AEM* ritiene che l&#39;app sia pronta, le parti interessate possono prima scaricare l&#39;app con **[Adobe Verify](/help/mobile/phonegap-mobile-quickstart.md)** (disponibile sia in AppStore che in PlayStore) per la revisione e l&#39;approvazione. Una volta ricevuta la luce verde, può rilasciare questo contenuto nuovo o aggiornato direttamente ai suoi utenti tramite la dashboard di gestione del rilascio dei contenuti di AEM Mobile ContentSync. Una persona può assumere qualsiasi numero di ruoli, questo dipende da te e dai tuoi criteri di governance.
 
 ## Prerequisiti {#prerequisites}
 

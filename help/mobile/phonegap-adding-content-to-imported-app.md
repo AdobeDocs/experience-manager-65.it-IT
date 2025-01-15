@@ -10,18 +10,16 @@ exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '697'
 ht-degree: 1%
 
 ---
 
 # La tua app ibrida è pronta per Adobe Experience Manager Mobili?{#is-your-hybrid-app-ready-for-aem-mobile}
 
->[!NOTE]
->
->L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Quindi hai importato la tua app Hybrid PhoneGap o Cordova nell&#39;AEM, e ora? È probabile che tu voglia aggiungere contenuto creabile all’app. Per eseguire questa attività, è necessario avere una conoscenza generale della struttura di un’app AEM. Un’app nell’AEM è comunemente divisa in due parti. La &quot;shell&quot; e il &quot;contenuto&quot;. La &quot;shell&quot; comprende le parti statiche dell’app, ad esempio i file di configurazione PhoneGap, il framework dell’app e i controlli di navigazione. Il contenuto dell&#39;archivio importato viene memorizzato come parte della shell. Nel contesto di questo documento, la shell è tutto il contenuto creato non dall’AEM dell’app Hybrid PhoneGap creata dallo sviluppatore dell’app.
 
