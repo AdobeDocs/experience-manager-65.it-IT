@@ -10,12 +10,13 @@ exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '523'
 ht-degree: 9%
 
 ---
+
 
 # Implementazione di un Componente React per applicazioni a pagina singola (SPA){#implementing-a-react-component-for-spa}
 
@@ -23,9 +24,7 @@ Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti a
 
 La funzione di authoring dell’SPA offre una soluzione completa per il supporto dell’SPA nell’ambito dell’AEM. Questo articolo presenta un esempio di come adattare un componente React semplice ed esistente per lavorare con l’Editor SPA dell’AEM.
 
->[!NOTE]
->
->L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+{{ue-over-spa}}
 
 ## Introduzione {#introduction}
 

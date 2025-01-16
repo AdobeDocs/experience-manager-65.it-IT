@@ -5,16 +5,19 @@ exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
 
 ---
 
+
 # Componente RemotePage {#remote-page-component}
 
 Quando si decide quale livello di integrazione si desidera avere tra l&#39;SPA esterno e l&#39;AEM, spesso è chiaro che è necessario essere in grado di visualizzare e modificare l&#39;SPA all&#39;interno dell&#39;AEM. Il componente RemotePage è un componente pagina personalizzato appositamente per questo scopo.
+
+{{ue-over-spa}}
 
 ## Panoramica {#overview}
 

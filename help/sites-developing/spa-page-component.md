@@ -10,20 +10,19 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '707'
 ht-degree: 6%
 
 ---
+
 
 # Componente pagina SPA{#spa-page-component}
 
 In un SPA il componente page non fornisce gli elementi HTML dei suoi componenti figlio, ma lo delega al framework SPA. Questo documento spiega come questo renda univoco il componente page di un SPA.
 
->[!NOTE]
->
->L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+{{ue-over-spa}}
 
 ## Introduzione {#introduction}
 
@@ -92,7 +91,7 @@ Le proprietà delle metarisorse che descrivono il contenuto dell’SPA:
 >
 >Questo documento utilizza l&#39;app We.Retail Journal solo a scopo dimostrativo. Non utilizzare per alcun lavoro di progetto.
 >
->Qualsiasi progetto AEM deve utilizzare l&#39;[Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta i progetti SPA utilizzando React o Angular e utilizza l&#39;SDK dell&#39;SPA. Tutti i progetti SPA sull&#39;AEM devono essere basati sull&#39;Archetipo Maven per SPA Starter Kit.
+>Qualsiasi progetto AEM deve utilizzare l&#39;[Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta i progetti SPA utilizzando React o Angular e utilizza SPA SDK. Tutti i progetti SPA sull&#39;AEM SPA devono essere basati sull&#39;archetipo Maven per il kit Starter di.
 
 ## Sincronizzazione sovrapposizione editor pagina {#page-editor-overlay-synchronization}
 

@@ -10,12 +10,13 @@ exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2018'
 ht-degree: 5%
 
 ---
+
 
 # Sviluppo di SPA per AEM{#developing-spas-for-aem}
 
@@ -23,9 +24,7 @@ Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti a
 
 Questo articolo presenta questioni importanti da considerare quando si impegna uno sviluppatore front-end a sviluppare un SPA per l’AEM e fornisce una panoramica dell’architettura dell’AEM per quanto riguarda la diffusione dell’SPA sull’AEM.
 
->[!NOTE]
->
->L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+{{ue-over-spa}}
 
 ## Principi di sviluppo dell&#39;SPA per l&#39;AEM {#spa-development-principles-for-aem}
 
@@ -92,7 +91,7 @@ In alcuni casi, tuttavia, ciò non è del tutto necessario. Nella tabella seguen
    <td><p>Gli autori dei contenuti sono limitati a un set limitato di esperienze AEM per l’authoring dei contenuti.</p> <p>Il codice rischia di non essere né portatile né riutilizzabile se contiene riferimenti statici o instradamento.</p> <p>Non consente l’utilizzo dell’editor di modelli, pertanto lo sviluppatore front-end deve mantenere i modelli modificabili tramite JCR.</p> </td>
   </tr>
   <tr>
-   <td>Il progetto utilizza appieno l’SDK dell’editor dell’SPA e i componenti front-end vengono sviluppati come una libreria e la struttura del contenuto dell’app viene delegata all’AEM.</td>
+   <td>Il progetto utilizza appieno il SDK dell’editor dell’SPA e i componenti front-end vengono sviluppati come una libreria e la struttura del contenuto dell’app viene delegata all’AEM.</td>
    <td><p>L’app è riutilizzabile e portatile.</p> <p>L'autore del contenuto può modificare l'app utilizzando l'esperienza di authoring dei contenuti dell'AEM.<br /> </p> <p>L’SPA è compatibile con l’editor di modelli.</p> </td>
    <td><p>Lo sviluppatore non ha il controllo della struttura dell’app e della parte di contenuto delegata all’AEM.</p> <p>Lo sviluppatore può comunque riservare alcune aree dell’app per i contenuti che non devono essere creati con l’AEM.</p> </td>
   </tr>
@@ -112,7 +111,7 @@ Segui questi passaggi per preparare il tuo SPA esistente a lavorare con l’AEM.
 1. **Rendere modulari i componenti JS.**
 
    Rendi possibile il rendering in qualsiasi ordine, posizione e dimensione.
-1. **Utilizza i contenitori forniti dall&#39;SDK di Adobe per inserire i componenti sullo schermo.**
+1. **Utilizza i contenitori forniti da Adobe SDK per inserire i tuoi componenti sullo schermo.**
 
    L’AEM fornisce un componente per il sistema di pagine e paragrafi da utilizzare.
 1. **Creare un componente AEM per ogni componente JS.**
@@ -165,7 +164,7 @@ Di seguito è riportato uno schema dei passaggi che uno sviluppatore front-end d
 
 ## AEM-agnostico {#aem-agnostic}
 
-Questi blocchi di codice illustrano in che modo i componenti React e Angular non richiedono nulla che sia specifico per Adobe o AEM.
+Questi blocchi di codice illustrano in che modo i componenti React e Angular non hanno bisogno di nulla che sia specifico per Adobe o AEM.
 
 * Tutto ciò che si trova all’interno del componente JavaScript è indipendente dall’AEM.
 * Tuttavia, ciò che è specifico per l’AEM è che il componente JS deve essere mappato su un componente AEM con l’helper MapTo.
@@ -230,4 +229,4 @@ Per una guida dettagliata alla creazione di un proprio SPA, consulta [Guida intr
 
 Per ulteriori dettagli sulla mappatura da modello dinamico a componente e sul suo funzionamento all&#39;interno dell&#39;SPA nell&#39;AEM, vedere l&#39;articolo [Mappatura da modello dinamico a componente per SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Se desideri implementare l&#39;SPA nell&#39;AEM per un framework diverso da React o Angular o semplicemente approfondire il funzionamento dell&#39;SDK SPA per l&#39;AEM, consulta l&#39;articolo [Blueprint SPA](/help/sites-developing/spa-blueprint.md).
+Se desideri implementare l&#39;SPA nell&#39;AEM per un framework diverso da React o Angular o semplicemente approfondire il funzionamento del SDK SPA per l&#39;AEM, consulta l&#39;articolo [Blueprint SPA](/help/sites-developing/spa-blueprint.md).

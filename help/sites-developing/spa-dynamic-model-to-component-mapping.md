@@ -1,6 +1,6 @@
 ---
 title: Mappatura di un modello dinamico a un componente per SPA
-description: Scopri come avviene la mappatura del modello dinamico ai componenti nell’SDK SPA di JavaScript per Adobe Experience Manager.
+description: Scopri come avviene la mappatura del modello dinamico ai componenti in JavaScript SPA SDK for Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -9,20 +9,19 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
+
 # Mappatura di un modello dinamico a un componente per SPA{#dynamic-model-to-component-mapping-for-spas}
 
-Questo documento descrive come avviene la mappatura del modello dinamico ai componenti nell’SDK SPA di JavaScript per Adobe Experience Manager (AEM).
+Questo documento descrive come avviene la mappatura del modello dinamico ai componenti in JavaScript SPA SDK for Adobe Experience Manager (AEM).
 
->[!NOTE]
->
->L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+{{ue-over-spa}}
 
 ## Modulo ComponentMapping {#componentmapping-module}
 

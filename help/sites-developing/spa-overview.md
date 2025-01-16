@@ -10,12 +10,13 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 84%
+source-wordcount: '1626'
+ht-degree: 85%
 
 ---
+
 
 # Panoramica dell’editor di SPA{#spa-editor-overview}
 
@@ -23,9 +24,7 @@ Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti a
 
 L’editor di SPA offre una soluzione completa per il supporto di SPA in AEM. Questa pagina offre una panoramica di come è strutturato il supporto SPA in AEM, come funziona l’editor di SPA e come il framework SPA mantiene la sincronizzazione con AEM.
 
->[!NOTE]
->
->L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+{{ue-over-spa}}
 
 ## Introduzione {#introduction}
 
@@ -190,7 +189,7 @@ Per ulteriori informazioni sulla proprietà `editElementQuery` e la configurazio
 
 ### Limitazioni {#limitations}
 
-L’SDK dell’editor SPA dell’AEM è stato introdotto con il service pack 2 per AEM 6.4. È completamente supportato da Adobe, e continua a essere migliorato ed espanso. Le seguenti funzioni di AEM non sono ancora supportate dall’editor di SPA:
+Il SDK dell’Editor SPA dell’AEM è stato introdotto con AEM 6.4 service pack 2. È completamente supportato da Adobe, e continua a essere migliorato ed espanso. Le seguenti funzioni di AEM non sono ancora supportate dall’editor di SPA:
 
 * Modalità di destinazione
 * ContextHub

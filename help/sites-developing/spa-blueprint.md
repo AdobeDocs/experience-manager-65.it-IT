@@ -9,20 +9,19 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
+
 
 # Blueprint SPA{#spa-blueprint}
 
 Per consentire all’autore di utilizzare l’Editor SPA dell’AEM per modificare il contenuto di un SPA, l’SPA deve soddisfare alcuni requisiti descritti in questo documento.
 
->[!NOTE]
->
->L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+{{ue-over-spa}}
 
 ## Introduzione {#introduction}
 
@@ -60,7 +59,7 @@ Ogni elemento presente nel modello contiene un campo `:type` che espone un tipo 
 
 #### Mappatura di un modello dinamico a un componente {#dynamic-model-to-component-mapping}
 
-Per informazioni dettagliate sul modo in cui si verifica la mappatura da modello dinamico a componente nell&#39;SDK JavaScript SPA per AEM, vedere l&#39;articolo [Mappatura da modello dinamico a componente per SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Per informazioni dettagliate sulla mappatura del modello dinamico ai componenti in JavaScript SPA SDK for AEM, vedere l&#39;articolo [Mappatura del modello dinamico ai componenti per SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Livello specifico del framework {#framework-specific-layer}
 
@@ -94,7 +93,7 @@ Consulta anche [Guida introduttiva di AEM Content Services.](https://helpx.adobe
 
 Separare i dubbi aiuta a facilitare l’implementazione del progetto. Pertanto, è necessario fornire un pacchetto specifico per npm. Questo pacchetto è responsabile dell’aggregazione e dell’esposizione dei moduli, dei servizi e dei componenti di base. Questi componenti devono incapsulare la logica di gestione del modello dati e fornire accesso ai dati previsti dal componente del progetto. Il modulo è anche responsabile dell’esposizione transitiva di utili punti di ingresso delle librerie sottostanti.
 
-Per facilitare l’interoperabilità delle librerie, Adobe consiglia al modulo specifico per il framework di raggruppare le seguenti librerie. Se necessario, il livello può incapsulare e adattare le API sottostanti prima di esporle al progetto.
+Adobe Per facilitare l’interoperabilità delle librerie, consiglia al modulo specifico per il framework di raggruppare le seguenti librerie. Se necessario, il livello può incapsulare e adattare le API sottostanti prima di esporle al progetto.
 
 * [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
