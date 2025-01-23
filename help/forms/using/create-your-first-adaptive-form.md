@@ -7,10 +7,10 @@ feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 6%
+source-wordcount: '908'
+ht-degree: 3%
 
 ---
 
@@ -66,7 +66,7 @@ Obiettivi:
 * Crea un’azione di invio per inviare un’e-mail contenente il contenuto del modulo.
 * Visualizzare in anteprima e inviare un modulo adattivo.
 
-[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![Consulta la Guida](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Passaggio 2: creare il modello dati del modulo {#step-create-form-data-model}
 
@@ -82,7 +82,7 @@ Obiettivi:
 * Configurare i servizi di lettura e scrittura per il modello dati del modulo.
 * Verificare il modello dati del modulo e i servizi configurati con i dati di test.
 
-[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![Consulta la Guida](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Passaggio 3: applicare le regole ai campi del modulo adattivo {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ Obiettivi:
 * Crea e applica regole ai campi del modulo adattivo.
 * Utilizzare le regole per attivare i servizi modello dati modulo per aggiornare i dati nel database.
 
-[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Consulta la Guida](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Passaggio 4: Personalizzare lo stile del modulo adattivo {#step-style-your-adaptive-form}
 
@@ -109,7 +109,7 @@ Obiettivi:
 * Crea un tema per il modulo adattivo utilizzando l’editor del tema.
 * Utilizzare i Web Fonts in un tema personalizzato.
 
-[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Consulta la Guida](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Passaggio 5: creare un Publish per il modulo adattivo {#step-publish-your-adaptive-form}
 
@@ -123,4 +123,4 @@ Obiettivi:
 * Incorpora il modulo adattivo in una pagina AEM [!DNL Sites].
 * Incorpora il modulo adattivo in una pagina web esterna (una pagina web non AEM ospitata al di fuori dell’AEM).
 
-[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Consulta la Guida](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
