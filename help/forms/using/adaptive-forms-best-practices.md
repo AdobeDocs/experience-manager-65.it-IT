@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5597'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ L’editor di regole fornisce un editor visivo e un editor di codice per la scri
 * Gli autori di moduli adattivi potrebbero dover scrivere codice JavaScript per creare una logica di business in un modulo. JavaScript è potente ed efficace, ma probabilmente potrebbe compromettere le aspettative di sicurezza. Pertanto, devi assicurarti che l’autore del modulo sia un utente fidato e che esistano processi per rivedere e approvare il codice JavaScript prima che un modulo venga messo in produzione. L’amministratore può limitare l’accesso all’editor di regole ai gruppi di utenti in base al loro ruolo o funzione. Consulta [Concedere l&#39;accesso all&#39;editor di regole a specifici gruppi di utenti](/help/forms/using/rule-editor-access-user-groups.md).
 * È possibile utilizzare le espressioni nelle regole per rendere dinamici i moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per ulteriori informazioni sulle espressioni e sulle relative best practice, vedere [Espressioni modulo adattivo](/help/forms/using/adaptive-form-expressions.md).
 
-* L’Adobe consiglia di utilizzare le operazioni sincrone di JavaScript anziché quelle asincrone durante la creazione di regole con l’editor di regole. L&#39;uso di operazioni asincrone è fortemente sconsigliato. Tuttavia, se ti trovi in una situazione in cui le operazioni asincrone sono inevitabili, è essenziale implementare le funzioni di chiusura di JavaScript. In questo modo, puoi proteggere efficacemente da potenziali condizioni di concorrenza, garantendo prestazioni ottimali alle tue implementazioni di regole e mantenendo la stabilità nell’intero processo.
+* Adobe consiglia di utilizzare le operazioni sincrone di JavaScript anziché quelle asincrone durante la creazione di regole con l’editor di regole. L&#39;uso di operazioni asincrone è fortemente sconsigliato. Tuttavia, se ti trovi in una situazione in cui le operazioni asincrone sono inevitabili, è essenziale implementare le funzioni di chiusura di JavaScript. In questo modo, puoi proteggere efficacemente da potenziali condizioni di concorrenza, garantendo prestazioni ottimali alle tue implementazioni di regole e mantenendo la stabilità nell’intero processo.
 
   Ad esempio, supponiamo che sia necessario recuperare dati da un’API esterna e quindi applicare alcune regole in base a tali dati. Utilizziamo una chiusura per gestire la chiamata API asincrona e ci assicuriamo che le regole vengano applicate dopo il recupero dei dati. Di seguito è riportato un codice di esempio:
 
@@ -210,6 +210,7 @@ Per risolvere i problemi di prestazioni con i moduli di grandi dimensioni, consi
 * Includi solo i campi e i pannelli nei moduli adattivi che acquisiscono informazioni dall’utente. Valuta se mantenere minimo il contenuto statico o utilizza URL per aprirli in una finestra separata.
 * Anche se ogni modulo è progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni. Ad esempio, dati personali, indirizzo, dettagli sull’impiego e così via. Crea [frammenti di moduli adattivi](/help/forms/using/adaptive-form-fragments.md) per sezioni e elementi modulo comuni e utilizzali in tutti i moduli. È inoltre possibile salvare un pannello in un modulo esistente come frammento. Qualsiasi modifica in un frammento si riflette in tutti i moduli adattivi associati. Promuove l’authoring collaborativo in quanto più autori possono lavorare contemporaneamente su diversi frammenti che compongono un modulo.
 
+   * È consigliabile creare frammenti di modulo anche per sezioni non riutilizzabili durante la creazione di moduli. Man mano che le dimensioni e la complessità dei moduli aumentano, la loro suddivisione in frammenti può semplificare notevolmente il processo di authoring e rendere il modulo più semplice da gestire. Questo approccio consente di concentrarsi su parti più piccole e più gestibili del modulo, anziché occuparsi dell&#39;intero modulo contemporaneamente.
    * Analogamente ai moduli adattivi, si consiglia di definire nella libreria client tutti gli stili e gli script personalizzati specifici del frammento, utilizzando la finestra di dialogo del contenitore di frammenti. Inoltre, prova a creare frammenti autosufficienti che non dipendono da oggetti esterni.
    * Evita l’utilizzo di script per più frammenti. Se è presente un oggetto esterno al frammento a cui si deve fare riferimento, provare a rendere tale oggetto parte del modulo principale. Se l’oggetto deve ancora trovarsi in un altro frammento, fai riferimento a esso con il relativo nome nello script.
 
