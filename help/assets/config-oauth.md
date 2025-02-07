@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: 3f11bba91cfb699dc216cf312eaf93fd9bbfe121
+source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 17%
+source-wordcount: '1089'
+ht-degree: 16%
 
 ---
 
@@ -39,12 +39,12 @@ Una configurazione OAuth richiede i seguenti prerequisiti:
 
 * Crea una nuova integrazione OAuth in [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Utilizza `ClientID`, `ClientSecret`, `OrgID` e altre proprietà nei passaggi seguenti:
 * I seguenti file si trovano in questo percorso `/apps/system/config in crx/de`:
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### Configurazione OAuth per gli utenti AMS esistenti e On-Prem {#steps-config-oauth-onprem}
 
-I seguenti passaggi possono essere eseguiti dall’amministratore di sistema. Il cliente AMS può contattare il rappresentante Adobe o inviare un ticket di supporto dopo la [procedura di supporto](https://experienceleague.adobe.com/?lang=it&amp;support-tab=home#support).
+I seguenti passaggi possono essere eseguiti dall&#39;amministratore di sistema in **CRXDE**. Il cliente AMS può contattare il rappresentante di Adobe o inviare un ticket di supporto dopo la [procedura di supporto](https://experienceleague.adobe.com/?lang=it&amp;support-tab=home#support).
 
 1. Aggiungi o aggiorna le seguenti proprietà in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -56,6 +56,11 @@ I seguenti passaggi possono essere eseguiti dall’amministratore di sistema. Il
    * Aggiorna `auth.token.provider.client.id` con l&#39;ID client della nuova configurazione OAuth.
    * Aggiorna `auth.access.token.request` a `"https://ims-na1.adobelogin.com/ims/token/v3"`
 1. Rinominare il file in `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+
+   >[!IMPORTANT]
+   >
+   >Sostituire il punto (.) con il trattino (-) come prefisso di `<randomnumber>`.
+
 1. Eseguire i passaggi seguenti in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
    * Aggiorna la proprietà auth.ims.client.secret con il segreto client dalla nuova integrazione OAuth.
    * Rinomina il file in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
@@ -64,7 +69,7 @@ I seguenti passaggi possono essere eseguiti dall’amministratore di sistema. Il
 1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
 1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 -->
-1. In `System/console/configMgr`, eliminare le configurazioni precedenti per `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` e il nome del provider del token di accesso `adobe-ims-similaritysearch`.
+1. In `System/console/configMgr` è possibile visualizzare sia file di configurazione precedenti che nuovi. Eliminare le configurazioni precedenti per `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` e il nome del provider del token di accesso `adobe-ims-similaritysearch`. Verifica che sia attiva solo la configurazione aggiornata, anziché le configurazioni precedenti.
 1. Riavvia la console.
 
 ## Convalidare la configurazione {#validate-the-configuration}
@@ -81,13 +86,19 @@ Dopo aver completato la configurazione, puoi utilizzare un MBean JMX per convali
 
 I risultati della convalida vengono visualizzati nella stessa finestra di dialogo.
 
+>[!NOTE]
+>
+>Se si verifica l&#39;errore `unsupported_grant_type`, provare a installare l&#39;hotfix Granite. Consulta [migrazione da account di servizio (JWT) a credenziali server-to-server OAuth](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660).
+
 ## Integrare con Adobe Developer Console {#integrate-adobe-io}
 
 In qualità di nuovo utente, quando si esegue l&#39;integrazione con Adobe Developer Console, il server [!DNL Experience Manager] autentica le credenziali del servizio con il gateway di Adobe Developer Console prima di inoltrare la richiesta al Servizio di contenuti avanzati. Per l’integrazione, è necessario un account Adobe ID con privilegi di amministratore per l’organizzazione e una licenza del Servizio di contenuti avanzati acquistata e abilitata per la tua organizzazione.
 
 Per configurare il Servizio di contenuti avanzati, segui questi passaggi di livello principale:
 
-1. Per generare una chiave pubblica, [crea una configurazione del Servizio di contenuti avanzati](#obtain-public-certificate) in [!DNL Experience Manager]. [Scarica un certificato pubblico](#obtain-public-certificate) per l&#39;integrazione OAuth.
+<!--![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)-->
+
+1. Per generare una chiave pubblica, [crea una configurazione del Servizio di contenuti avanzati](#oauth-config) in [!DNL Experience Manager]. [Scarica un certificato pubblico](#oauth-config) per l&#39;integrazione OAuth.
 
 1. *[Non applicabile se sei un utente esistente]* [crea un&#39;integrazione in Adobe Developer Console](#create-adobe-i-o-integration).
 
@@ -148,7 +159,7 @@ Per utilizzare le API del Servizio di contenuti avanzati, creare un&#39;integraz
 
 1. Aggiungi/modifica **[!UICONTROL Nome credenziali]** come richiesto. Fai clic su **[!UICONTROL Avanti]**.
 
-1. Selezionare il profilo di prodotto **[!UICONTROL Servizi di contenuti avanzati]**. Fare clic su **[!UICONTROL Salva API configurata]**. L’API OAuth viene aggiunta nelle credenziali connesse per un ulteriore utilizzo. È possibile copiare la [!UICONTROL chiave API (ID client)] o [!UICONTROL generare il token di accesso] da essa.
+1. Selezionare il profilo di prodotto **[!UICONTROL Servizi di contenuti avanzati]**. Fare clic su **[!UICONTROL Salva API configurata]**. L’API OAuth viene aggiunta alle credenziali connesse per un ulteriore utilizzo. È possibile copiare la [!UICONTROL chiave API (ID client)] o [!UICONTROL generare il token di accesso] da essa.
 <!--
 1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
 
