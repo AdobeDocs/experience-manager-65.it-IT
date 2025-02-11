@@ -10,20 +10,27 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1479'
 ht-degree: 2%
 
 ---
 
+
 # Configurazione del contenitore di layout e della modalità layout{#configuring-layout-container-and-layout-mode}
 
-[Layout reattivo](/help/sites-authoring/responsive-layout.md) è un meccanismo per la realizzazione di [design responsive](https://en.wikipedia.org/wiki/Responsive_web_design). Questo consente all’utente di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
+Scopri come configurare Contenitore di layout e Modalità di layout.
 
->[!NOTE]
+>[!TIP]
 >
->Questo può essere confrontato con i meccanismi [Web mobile](/help/sites-developing/mobile-web.md), che utilizzano la progettazione web adattiva (principalmente per l&#39;interfaccia classica).
+>Questo documento fornisce una panoramica della progettazione reattiva per amministratori e sviluppatori del sito e descrive come vengono realizzate le funzioni nell’AEM.
+>
+>Per gli autori di contenuto, i dettagli sull&#39;utilizzo delle funzionalità di progettazione reattiva in una pagina di contenuto sono disponibili nel documento [Layout reattivo per le pagine di contenuto.](/help/sites-authoring/responsive-layout.md)
+
+## Panoramica {#overview}
+
+[Layout reattivo](/help/sites-authoring/responsive-layout.md) è un meccanismo per la realizzazione di [design responsive](https://en.wikipedia.org/wiki/Responsive_web_design). Questo consente all’utente di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
 
 AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
@@ -33,7 +40,7 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
    * Il componente predefinito **Contenitore di layout** è definito in:
 
-     /libs/wcm/foundation/components/responsivegrid
+     `/libs/wcm/foundation/components/responsivegrid`
 
    * Puoi definire i contenitori di layout:
 
@@ -49,10 +56,6 @@ Una volta che il contenitore di layout è posizionato nella pagina, è possibile
 * [**Emulatore**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Questo consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare come viene eseguito il rendering del contenuto utilizzando l’emulatore.
 
->[!CAUTION]
->
->Sebbene il componente **Contenitore di layout** sia disponibile nell&#39;interfaccia utente classica, la sua funzionalità completa è disponibile solo nell&#39;interfaccia touch.
-
 Con questi meccanismi basati su una griglia dinamica è possibile:
 
 * Utilizza i punti di interruzione (che indicano il raggruppamento del dispositivo) per definire un comportamento di contenuto diverso in base al layout del dispositivo.
@@ -60,9 +63,17 @@ Con questi meccanismi basati su una griglia dinamica è possibile:
 * Utilizzate l&#39;aggancio orizzontale alla griglia (posizionate i componenti nella griglia, ridimensionate secondo necessità, definite quando comprimerli o rifluirli per essere affiancati o superiori/inferiori).
 * Gestire il controllo delle colonne.
 
+>[!TIP]
+>
+>Adobe fornisce la [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
+
 >[!NOTE]
 >
 >In un&#39;installazione predefinita, il layout dinamico è stato configurato per il [sito di riferimento We.Retail](/help/sites-developing/we-retail.md). [Attiva il componente Contenitore di layout](#enable-the-layout-container-component-for-page) per altre pagine.
+
+>[!CAUTION]
+>
+>Sebbene il componente **Contenitore di layout** sia disponibile nell&#39;interfaccia utente classica, la sua funzionalità completa è disponibile solo nell&#39;interfaccia touch.
 
 ## Configurazione dell’emulatore reattivo {#configuring-the-responsive-emulator}
 
@@ -148,7 +159,7 @@ I punti di interruzione si trovano all&#39;interno della sezione `<jcr:content>`
 
 Esempio di definizione:
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -186,13 +197,13 @@ I due esempi seguenti illustrano la definizione:
 
 * **HTL:**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP:**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -204,7 +215,7 @@ AEM utilizza LESS per generare parti del CSS necessario, che devono essere inclu
 
 Sarà inoltre necessario creare una [libreria client](https://experienceleague.adobe.com/docs/) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -311,3 +322,61 @@ Puoi configurare il numero di colonne disponibili per ogni istanza specifica del
    * Componenti che possono essere aggiunti al componente corrente:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## Griglie reattive nidificate {#nested-responsive-grids}
+
+In alcuni casi potrebbe essere necessario nidificare le griglie reattive per supportare le esigenze del progetto. Tuttavia, tieni presente che la best practice consigliata da Adobe è quella di mantenere la struttura il più piatto possibile.
+
+Quando non puoi evitare di utilizzare griglie reattive nidificate, assicurati che:
+
+* Tutti i contenitori (contenitori, schede, fisarmoniche, ecc.) hanno la proprietà `layout = responsiveGrid`.
+* Non combinare la proprietà `layout = simple` nella gerarchia dei contenitori.
+
+Sono inclusi tutti i contenitori strutturali del modello della pagina.
+
+Il numero di colonna del contenitore interno non deve mai essere maggiore di quello del contenitore esterno. L&#39;esempio seguente soddisfa questa condizione. Mentre il numero di colonna del contenitore esterno è 8 per la schermata predefinita (desktop), il numero di colonna del contenitore interno è 4.
+
+>[!BEGINTABS]
+
+>[!TAB Esempio di struttura del nodo]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Esempio di HTML risultante]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]

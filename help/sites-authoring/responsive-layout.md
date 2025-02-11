@@ -1,6 +1,6 @@
 ---
 title: Layout reattivo per le pagine di contenuto
-description: Adobe Experience Manager consente di realizzare un layout dinamico per le pagine.
+description: Adobe Experience Manager consente di realizzare un layout dinamico per le pagine utilizzando il componente Contenitore di layout.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,18 +9,27 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 59%
+source-wordcount: '1853'
+ht-degree: 58%
 
 ---
 
+
 # Layout reattivo{#responsive-layout}
 
-AEM consente di avere un layout dinamico per le pagine utilizzando il componente **Contenitore di layout**.
+Adobe Experience Manager consente di realizzare un layout dinamico per le pagine utilizzando il componente **Contenitore di layout**.
 
-Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme alla modalità [**Layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout reattivo in base al dispositivo.
+>[!TIP]
+>
+>Questo documento fornisce una panoramica delle funzioni del Contenitore di layout disponibili per gli autori di contenuto.
+>
+>Per gli amministratori e gli sviluppatori del sito, i dettagli sulla configurazione del contenitore di layout per i siti sono descritti nel documento [Configurazione del contenitore di layout e della modalità di layout.](/help/sites-authoring/responsive-layout.md)
+
+## Panoramica {#overview}
+
+Il componente **Contenitore di layout** fornisce un sistema paragrafo che consente di posizionare i componenti all&#39;interno di una griglia dinamica. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme alla modalità [**Layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout reattivo in base al dispositivo.
 
 Il contenitore layout:
 
@@ -62,7 +71,7 @@ A seconda del progetto, il Contenitore di layout può essere usato come il siste
 
 >[!NOTE]
 >
->L&#39;Adobe fornisce [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
+>Adobe fornisce la [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
 
 >[!NOTE]
 >
