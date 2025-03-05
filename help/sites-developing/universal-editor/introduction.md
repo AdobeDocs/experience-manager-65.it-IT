@@ -4,9 +4,9 @@ description: Scopri la flessibilità di Universal Editor e come può aiutare a p
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: bf9dc1695be7f7a10cb76160b531c9adbbfc8c34
+source-git-commit: d3dd827e93549c558284be1c1991b4e003c9e0e8
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1252'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,16 @@ Universal Editor è un servizio che funziona insieme ad AEM per creare contenuti
 * Il servizio Universal Editor, che viene eseguito sullo stesso host di Dispatcher, riscrive le modifiche nell&#39;istanza di authoring di AEM.
 
 ![Flusso di authoring con Universal Editor](assets/author-flow.png)
+
+## Requisiti {#requirements}
+
+L’editor universale è supportato da:
+
+* AEM 6.5 (service pack 21 o 22 più un feature pack)
+   * Sono supportati sia l’hosting locale che AMS.
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versione `2023.8.13099` o successiva)
+
+Questo documento si concentra sul supporto di AEM 6.5 di Universal Editor.
 
 ## Configurazione {#setup}
 
