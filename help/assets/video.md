@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10488'
 ht-degree: 2%
 
 ---
@@ -553,8 +553,6 @@ Alcuni dei casi d’uso da considerare per aggiungere più didascalie e tracce a
 |  | Audio descrittivo |
 
 Tutti i formati video [supportati in Dynamic Media](/help/assets/assets-formats.md) e tutti i visualizzatori video Dynamic Media, ad eccezione del visualizzatore *Video_360* di Dynamic Media, sono supportati per l&#39;utilizzo con più didascalie e tracce audio.
-
-È disponibile la funzionalità di didascalia multipla e traccia audio per l’account Dynamic Media tramite un interruttore di funzioni che deve essere abilitato (attivato) dall’Assistenza clienti di Adobe.
 
 ### Aggiungere più didascalie e tracce audio al video {#add-msma}
 
@@ -1389,7 +1387,7 @@ Il servlet viene richiamato eseguendo un&#39;operazione `GET` in `/dmSample/dyna
 | `manifestType` | Facoltativo. Il parametro può essere DASH o HLS. Se non viene passato, per impostazione predefinita viene usato il DASH. |
 | `onlyIfPublished` | Facoltativo. Se passato, `manifestUrl` viene restituito solo se il video è pubblicato. |
 
-In questo esempio, supponiamo la seguente configurazione:
+In questo esempio, si supponga di effettuare le seguenti operazioni di impostazione:
 
 * L&#39;azienda è `samplecompany`.
 * L&#39;istanza di authoring è `http://sample-aem-author.com`.

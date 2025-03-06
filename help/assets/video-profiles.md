@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '3750'
+source-wordcount: '3730'
 ht-degree: 8%
 
 ---
@@ -301,7 +301,7 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
    <td><code>audioBitrateCustom</code></td>
    <td>Impostare il valore su <code>true</code> per forzare un bitrate costante per il flusso audio, se supportato dal codec audio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Il valore predefinito è <code>false</code>.</p> <p>Il valore consigliato per DASH o HLS è <code>false</code>. Per usare DASH per i video, devi prima abilitarlo sul tuo account. Vedi <a href="/help/assets/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Il valore predefinito è <code>false</code>.</p> <p>Il valore consigliato per DASH o HLS è <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: '2308'
 ht-degree: 19%
 
 ---
@@ -22,8 +22,8 @@ Consulta anche [Note sulla versione più recente del Service Pack di Adobe Exper
 
 ## AEM 6.5, Service Pack 18 - 7 dicembre 2023
 
-* Abilitazione dell’utente del componente Editor pagina/immagine di Sites per fare riferimento alle risorse dal Cloud Service Assets remoto. (SITES-13448, SITES-13433)
-* AEM ora supporta l’ordinamento lato server per una navigazione più rapida dei progetti nella vista a elenco. I nodi del progetto vengono ordinati in base alla colonna selezionata dall’utente prima di essere visualizzati nell’interfaccia.
+* Abilitazione dell’utente del componente Editor pagina/Immagine di Sites per fare riferimento alle risorse dal Cloud Service Assets remoto. (SITES-13448, SITES-13433)
+* AEM ora supporta l’ordinamento lato server per velocizzare la navigazione dei progetti nella vista a elenco. I nodi del progetto vengono ordinati in base alla colonna selezionata dall’utente prima di essere visualizzati nell’interfaccia.
 
 ### [!DNL Forms]
 
@@ -46,22 +46,22 @@ Consulta anche [Note sulla versione più recente del Service Pack di Adobe Exper
 
 ## AEM 6.5, Service Pack 18 - 24 agosto 2023
 
-* Assets, Dynamic Medie - [Supporto di più sottotitoli e tracce audio per i video in Dynamic Medie](/help/assets/video.md#about-msma) - È ora possibile aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
+* Assets, Dynamic Media - [Supporto di didascalie multiple e tracce audio per video in Dynamic Media](/help/assets/video.md#about-msma). Ora puoi aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
 * Assets - Dai risultati della ricerca, ora puoi passare alla posizione della cartella che contiene una risorsa per eseguire varie attività di gestione delle risorse.
 * Il selettore Polaris di Sites nei frammenti di contenuto ha migliorato le prestazioni.
-* Abilitazione dell’utente del componente Editor pagina/immagine di Sites per fare riferimento alle risorse dal Cloud Service Assets remoto.
+* Abilitazione dell’utente del componente Editor pagina/Immagine di Sites per fare riferimento alle risorse dal Cloud Service Assets remoto.
 * Per trovare rapidamente un progetto nella vista a elenco, in cui è possibile che siano presenti molti progetti, Adobe ora supporta l’ordinamento lato server. I nodi del progetto sono ordinati sul backend in base alla colonna selezionata dall’utente prima di eseguirne il rendering nell’interfaccia utente.
-* L’AEM 6.5.18.0 supporta MongoDB da 5.0 a 6.0.
+* AEM 6.5.18.0 supporta MongoDB da 5.0 a 6.0.
 
 ### [!DNL Forms]
 
 * **[Gestione avanzata degli errori con gestori di errori personalizzati nell&#39;editor di regole](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - È ora possibile richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno. Inoltre, è possibile fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile
 
-* **[Passaggio del flusso di lavoro Adobe Sign migliorato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - Il passaggio del flusso di lavoro Adobe Sign nei flussi di lavoro AEM è disponibile con i seguenti miglioramenti.
+* **[Passaggio del flusso di lavoro Adobe Sign migliorato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - Il passaggio del flusso di lavoro Adobe Sign nei flussi di lavoro di AEM è disponibile con i seguenti miglioramenti.
 
    * **Sicurezza avanzata con autenticazione basata su ID governativi per Adobe Sign** - L&#39;autenticazione basata su ID governativi di Adobe Acrobat Sign offre un ulteriore livello di verifica. Consente agli utenti di autenticare la propria identità utilizzando gli ID governativi (patente di guida, carta d&#39;identità, passaporto). Utilizzando documenti di identificazione attendibili, questo miglioramento aggiunge un ulteriore livello di affidabilità al processo di firma, rendendolo ideale per scenari che richiedono maggiore sicurezza, conformità e convalida degli utenti.
 
-   * **Trasparenza avanzata con Audit Trail per documenti Adobe Sign**. Utilizza la funzione Audit Trail per ottenere informazioni dettagliate sul ciclo di vita dei documenti Adobe Sign. Con l’Audit Trail è ora possibile mantenere un record completo di tutte le azioni e interazioni relative ai documenti. Tali azioni e interazioni includono dettagli quali visualizzazioni, modifiche o firme del documento, nonché le marche temporali di ciascun evento. Questo miglioramento è fondamentale per mantenere la conformità, risolvere le controversie e garantire l’integrità degli accordi digitali.
+   * **Trasparenza migliorata con Audit Trail per i documenti Adobe Sign**. Utilizza la funzione Audit Trail per ottenere informazioni dettagliate sul ciclo di vita dei documenti Adobe Sign. Con l’Audit Trail è ora possibile mantenere un record completo di tutte le azioni e interazioni relative ai documenti. Tali azioni e interazioni includono dettagli quali visualizzazioni, modifiche o firme del documento, nonché le marche temporali di ciascun evento. Questo miglioramento è fondamentale per mantenere la conformità, risolvere le controversie e garantire l’integrità degli accordi digitali.
 
 
    * **I ruoli per i destinatari del contratto sono stati estesi oltre al solo firmatario** - Adobe Acrobat Sign consente di espandere i ruoli per i destinatari del contratto oltre al solo firmatario per soddisfare meglio i requisiti del flusso di lavoro. Quando questa opzione è abilitata, ogni destinatario di un contratto ha il proprio ruolo configurabile singolarmente, con Firmatario come impostazione predefinita.
@@ -75,7 +75,7 @@ Consulta anche [Note sulla versione più recente del Service Pack di Adobe Exper
    * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
    * Connettore JDBC MySQL 8
 
-Se stai installando o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE. Per esplorare l’elenco completo dei nuovi software aggiunti e obsoleti, consulta la documentazione di AEM Forms su JEE o AEM Forms su OSGi.
+Se stai installando o pianificando di utilizzare il software più recente per il tuo ambiente AEM 6.5 Forms su JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE. Per esplorare l’elenco completo dei nuovi software aggiunti e obsoleti, consulta la documentazione di AEM Forms su JEE o AEM Forms su OSGi.
 
 ## AEM 6.5, Service Pack 17 - 25 maggio 2023
 
@@ -85,9 +85,9 @@ Se stai installando o pianificando di utilizzare il software più recente per il
    * Correla o non correla risorse
 
   Per eseguire queste operazioni, non è necessario passare alla posizione della risorsa e visualizzarne le proprietà.
-* **Dynamic Medie _Snapshot_**: prova le immagini di prova o gli URL di Dynamic Medie per visualizzare l&#39;output di diversi modificatori di immagini e le ottimizzazioni di Smart Imaging per le dimensioni del file (con distribuzione WebP e AVIF), la larghezza di banda di rete e le proporzioni pixel del dispositivo. Consulta [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=it).
-* **Streaming DASH con Dynamic Medie** - È stato avviato il supporto del nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) per lo streaming adattivo nella distribuzione di video Dynamic Medie (con CMAF abilitato). Disponibile ora per tutte le aree geografiche, [abilitato tramite un ticket di supporto](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
-* **Integrazione di Experience Manager Sites e frammenti di contenuto con Assets Dynamic Medie di nuova generazione** - Gli utenti di Experience Manager Assets as a Cloud Service Dynamic Medie di nuova generazione possono ora utilizzare tali risorse ospitate nel cloud per l&#39;authoring e la distribuzione con istanze locali o Managed Services di Experience Manager Sites 6.5.
+* **Snapshot di elementi multimediali dinamici _2}: prova le immagini di test o gli URL di elementi multimediali dinamici per visualizzare l&#39;output di diversi modificatori di immagini e le ottimizzazioni di Smart Imaging per le dimensioni dei file (con distribuzione WebP e AVIF), la larghezza di banda della rete e le proporzioni pixel del dispositivo._**Consulta [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=it).
+* **Streaming DASH con Dynamic Media** - Nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) avviato per lo streaming adattivo nella distribuzione video Dynamic Media (con CMAF abilitato). Disponibile ora per tutte le aree geografiche.
+* **Integrazione di Experience Manager Sites e frammenti di contenuto con Assets Dynamic Media di nuova generazione** - Gli utenti di Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media possono ora utilizzare tali risorse ospitate nel cloud per l&#39;authoring e la distribuzione con istanze locali o Managed Services di Experience Manager Sites 6.5.
 
 ### [!DNL Forms]
 
@@ -102,13 +102,11 @@ Se stai installando o pianificando di utilizzare il software più recente per il
 
 ## AEM 6.5, Service Pack 16 - 23 febbraio 2023
 
-Il nuovo protocollo DASH (Dynamic Adaptive Streaming over HTTP) supporta lo streaming con bitrate adattivo avviato nella distribuzione di video Dynamic Medie (con CMAF [Common Media Application Format] abilitato).
+È stato avviato il nuovo DASH (Dynamic Adaptive Streaming over HTTP) del protocollo per lo streaming con bitrate adattivo nella distribuzione di video Dynamic Media (con CMAF [Common Media Application Format] abilitato).
 
 * Lo streaming adattivo (DASH/HLS) garantisce una migliore esperienza di visualizzazione per i video per l’utente finale.
 * DASH è il protocollo standard internazionale per lo streaming video adattivo ed è ampiamente adottato nel settore.
-* Disponibile ora in Asia-Pacifico e Nord America (da attivare tramite un ticket di supporto); disponibile a breve in Europa-Medio Oriente-Africa.
-
-Vedi [Abilita DASH sul tuo account](/help/assets/video.md#enable-dash).
+* Disponibile ora in Asia-Pacifico e Nord America; disponibile a breve in Europa-Medio Oriente-Africa.
 
 ### [!DNL Forms]
 
