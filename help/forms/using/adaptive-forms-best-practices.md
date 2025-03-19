@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
+source-git-commit: 80c2ff4dcb826af99ecba5ccf7c303bd36abe745
 workflow-type: tm+mt
-source-wordcount: '5597'
+source-wordcount: '5963'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-I moduli di Adobe Experience Manager (AEM) possono aiutarti a trasformare transazioni complesse in esperienze digitali semplici e deliziose. Tuttavia, richiede uno sforzo concertato per implementare, generare, eseguire e mantenere un ecosistema AEM Forms efficiente e produttivo.
+I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e straordinarie. Tuttavia, richiede uno sforzo concertato per implementare, generare, eseguire e mantenere un ecosistema AEM Forms efficiente e produttivo.
 
 Questo documento fornisce linee guida e consigli di cui possono beneficiare amministratori, autori e sviluppatori di Forms quando lavorano con AEM Forms, in particolare con il componente Moduli adattivi. Descrive le best practice, dall’impostazione di un progetto di sviluppo di moduli alla configurazione, alla personalizzazione, all’authoring e all’ottimizzazione di AEM Forms. Queste best practice contribuiscono collettivamente alle prestazioni complessive dell’ecosistema AEM Forms.
 
-Inoltre, di seguito sono riportate alcune indicazioni consigliate sulle best practice generali per l’AEM:
+Inoltre, ecco alcune indicazioni consigliate per le best practice generali di AEM:
 
-* [Best practice: distribuzione e manutenzione dell’AEM](/help/sites-deploying/best-practices.md)
+* [Best practice: distribuzione e manutenzione di AEM](/help/sites-deploying/best-practices.md)
 * [Best practice: authoring dei contenuti](/help/sites-authoring/best-practices.md)
-* [Best practice: amministrazione dell’AEM](/help/sites-administering/administer-best-practices.md)
+* [Best practice: amministrazione di AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practice: sviluppo di soluzioni](/help/sites-developing/best-practices.md)
 
 ## Configurare AEM Forms {#set-up-and-configure-aem-forms}
@@ -37,16 +37,16 @@ Inoltre, di seguito sono riportate alcune indicazioni consigliate sulle best pra
 
 Una struttura di progetto semplificata e standardizzata può ridurre notevolmente gli sforzi di sviluppo e manutenzione. Apache Maven è uno strumento open source consigliato per la creazione di progetti AEM.
 
-* Utilizzare Apache Maven `aem-project-archetype` per creare e gestire la struttura per il progetto AEM. Crea la struttura e i modelli consigliati per il progetto AEM. Inoltre, fornisce sistemi di automazione della build e di controllo delle modifiche per facilitare la gestione del progetto.
+* Utilizza Apache Maven `aem-project-archetype` per creare e gestire la struttura per il progetto AEM. Crea la struttura e i modelli consigliati per il progetto AEM. Inoltre, fornisce sistemi di automazione della build e di controllo delle modifiche per facilitare la gestione del progetto.
 
    * Utilizza il comando maven `archetype:generate` per generare la struttura iniziale.
    * Utilizza il comando maven `eclipse:eclipse` per generare i file di progetto dell’eclissi e importare il progetto nell’eclissi.
 
 Per ulteriori informazioni, consulta [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-* Lo strumento FileVault o VLT consente di mappare il contenuto di un&#39;istanza CRX o AEM sul file system. Fornisce operazioni di gestione del controllo delle modifiche, come il check-in e il check-out del contenuto del progetto AEM. Consulta [Come utilizzare lo strumento VLT](/help/sites-developing/ht-vlttool.md).
+* Lo strumento FileVault o VLT consente di mappare il contenuto di un&#39;istanza CRX o AEM al file system. Fornisce operazioni di gestione del controllo delle modifiche, come il check-in e il check-out del contenuto del progetto AEM. Consulta [Come utilizzare lo strumento VLT](/help/sites-developing/ht-vlttool.md).
 
-* Se utilizzi un ambiente di sviluppo integrato con Eclipse, puoi utilizzare gli strumenti per sviluppatori AEM per integrare perfettamente Eclipse IDE con le istanze AEM per creare applicazioni AEM. Per informazioni dettagliate, consulta [Strumenti per sviluppatori AEM per Eclipse](/help/sites-developing/aem-eclipse.md).
+* Se utilizzi un ambiente di sviluppo integrato con Eclipse, puoi utilizzare gli strumenti per sviluppatori di AEM per integrare facilmente Eclipse IDE con le istanze di AEM per creare applicazioni AEM. Per informazioni dettagliate, consulta [Strumenti per sviluppatori AEM per Eclipse](/help/sites-developing/aem-eclipse.md).
 
 * Non memorizzare alcun contenuto e non apportare modifiche nella cartella /libs. Crea sovrapposizioni nelle cartelle /app per estendere o sovrascrivere le funzionalità predefinite.
 
@@ -60,7 +60,7 @@ Per ulteriori informazioni, consulta [Come creare progetti AEM utilizzando Apach
 
 ### Pianificazione per l’ambiente di authoring {#planning-for-authoring-environment}
 
-Dopo aver configurato il progetto AEM, definisci la strategia per l’authoring e la personalizzazione dei modelli e dei componenti dei moduli adattivi.
+Dopo aver configurato il progetto AEM, definisci la strategia per la creazione e la personalizzazione di modelli e componenti per moduli adattivi.
 
 * Un modello di modulo adattivo è una pagina AEM specializzata che definisce la struttura e le informazioni intestazione-piè di pagina di un modulo adattivo. Un modello presenta layout, stili e struttura di base preconfigurati per un modulo adattivo. AEM Forms fornisce modelli e componenti pronti all’uso che puoi utilizzare per la creazione di moduli adattivi. Tuttavia, puoi creare modelli e componenti personalizzati in base alle tue esigenze. Si consiglia di raccogliere i requisiti per i modelli e i componenti aggiuntivi necessari nei moduli adattivi. Per informazioni dettagliate, consulta [Personalizzazione di moduli e componenti adattivi](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
 * Si consiglia di caricare i pacchetti del modulo utilizzando l’interfaccia utente di Form Manager invece dell’interfaccia utente di CRX Package Manager, in quanto il caricamento dei pacchetti tramite CRX Package Manager può talvolta causare anomalie.
@@ -69,7 +69,7 @@ Dopo aver configurato il progetto AEM, definisci la strategia per l’authoring 
    * **Nessuno**: i moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
    * **Schema XML o JSON**: gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell&#39;organizzazione. È possibile associare uno schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili nella scheda Oggetto modello dati del browser dei contenuti per la creazione di moduli adattivi. Puoi trascinare gli elementi dello schema per creare il modulo.
    * **Modello di modulo XFA**: è un modello di modulo ideale se si dispone di investimenti in moduli HTML5 basati su XFA. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
-   * **Modello dati modulo**: è un modello di modulo preferito se desideri integrare i sistemi back-end, come database, servizi Web e profilo utente AEM, per precompilare i moduli adattivi e riscrivere i dati dei moduli inviati nei sistemi back-end. L’editor modello dati modulo consente di definire e configurare entità e servizi in un modello dati modulo da utilizzare per creare moduli adattivi. Per ulteriori informazioni, vedere [Integrazione dati AEM Forms](/help/forms/using/data-integration.md).
+   * **Modello dati modulo**: è un modello di modulo preferito se desideri integrare i sistemi back-end, come database, servizi Web e profilo utente di AEM, per precompilare i moduli adattivi e riscrivere i dati dei moduli inviati nei sistemi back-end. L’editor modello dati modulo consente di definire e configurare entità e servizi in un modello dati modulo da utilizzare per creare moduli adattivi. Per ulteriori informazioni, vedere [Integrazione dati AEM Forms](/help/forms/using/data-integration.md).
 
 È importante scegliere con attenzione il modello dati che non solo soddisfa le tue esigenze, ma estende gli investimenti esistenti in risorse XFA e XSD, se presenti. Utilizzare il modello XSD per creare modelli di modulo, in quanto l&#39;XML generato contiene dati in base all&#39;XPATH definito dallo schema. L’utilizzo del modello XSD come scelta predefinita per il modello dati del modulo è utile anche perché disaccoppia la progettazione del modulo dal sistema back-end che elabora e utilizza i dati e migliora le prestazioni del modulo grazie alla mappatura uno a uno dei campi del modulo. Inoltre, BindRef del campo può essere reso l’XPATH del relativo valore dati in XML.
 
@@ -79,7 +79,7 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 
 ### Personalizzazione di moduli e componenti adattivi {#customize-components}
 
-* AEM Forms fornisce modelli di moduli adattivi pronti all’uso che è possibile utilizzare per creare moduli adattivi. Puoi anche creare modelli personalizzati. L’AEM fornisce modelli statici e modificabili.
+* AEM Forms fornisce modelli di moduli adattivi pronti all’uso che è possibile utilizzare per creare moduli adattivi. Puoi anche creare modelli personalizzati. AEM fornisce modelli statici e modificabili.
 
    * I modelli statici sono definiti e configurati dagli sviluppatori.
    * I modelli modificabili vengono creati dagli autori mediante l’editor di modelli. L’editor modelli ti consente di definire una struttura di base e il contenuto iniziale in un modello. Qualsiasi modifica nel livello struttura si riflette in tutti i moduli che utilizzano tale modello. Il contenuto iniziale può includere un tema preconfigurato, un servizio di precompilazione, un’azione di invio e così via. Tuttavia, queste impostazioni possono essere modificate per un modulo utilizzando l’editor di moduli. Per ulteriori informazioni, vedere [Modelli di modulo adattivo](/help/forms/using/template-editor.md).
@@ -104,7 +104,7 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo vengono resi disponibili installando [pacchetti aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Alcune delle best practice consigliate sono:
 
 * La modalità di esecuzione **nosamplecontent** è consigliata solo per i nodi Author e non Publish.
-* L’authoring di risorse come moduli adattivi, temi, modelli o configurazioni cloud viene eseguito solo sui nodi Author, che possono essere pubblicati sui nodi Publish configurati.
+* L’authoring di risorse come moduli adattivi, temi, modelli o configurazioni cloud viene eseguito solo sui nodi di authoring, che possono essere pubblicati sui nodi di pubblicazione configurati.
 Per ulteriori informazioni, vedere [Pubblicazione e annullamento della pubblicazione di moduli e documenti](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
 * Il pacchetto aggiuntivo Forms è necessario per il supporto delle operazioni di authoring e pubblicazione dei servizi documentali; può quindi essere considerato una dipendenza.
 Se desideri solo modelli di esempio, temi e pacchetti DOR relativi a Forms, puoi scaricarli da [pacchetti aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
@@ -155,7 +155,7 @@ L’editor di regole fornisce un editor visivo e un editor di codice per la scri
 * Gli autori di moduli adattivi potrebbero dover scrivere codice JavaScript per creare una logica di business in un modulo. JavaScript è potente ed efficace, ma probabilmente potrebbe compromettere le aspettative di sicurezza. Pertanto, devi assicurarti che l’autore del modulo sia un utente fidato e che esistano processi per rivedere e approvare il codice JavaScript prima che un modulo venga messo in produzione. L’amministratore può limitare l’accesso all’editor di regole ai gruppi di utenti in base al loro ruolo o funzione. Consulta [Concedere l&#39;accesso all&#39;editor di regole a specifici gruppi di utenti](/help/forms/using/rule-editor-access-user-groups.md).
 * È possibile utilizzare le espressioni nelle regole per rendere dinamici i moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per ulteriori informazioni sulle espressioni e sulle relative best practice, vedere [Espressioni modulo adattivo](/help/forms/using/adaptive-form-expressions.md).
 
-* Adobe consiglia di utilizzare le operazioni sincrone di JavaScript anziché quelle asincrone durante la creazione di regole con l’editor di regole. L&#39;uso di operazioni asincrone è fortemente sconsigliato. Tuttavia, se ti trovi in una situazione in cui le operazioni asincrone sono inevitabili, è essenziale implementare le funzioni di chiusura di JavaScript. In questo modo, puoi proteggere efficacemente da potenziali condizioni di concorrenza, garantendo prestazioni ottimali alle tue implementazioni di regole e mantenendo la stabilità nell’intero processo.
+* Adobe consiglia di utilizzare le operazioni sincrone di JavaScript rispetto a quelle asincrone durante la creazione di regole con l’editor di regole. L&#39;uso di operazioni asincrone è fortemente sconsigliato. Tuttavia, se ti trovi in una situazione in cui le operazioni asincrone sono inevitabili, è essenziale implementare le funzioni di chiusura di JavaScript. In questo modo, puoi proteggere efficacemente da potenziali condizioni di concorrenza, garantendo prestazioni ottimali alle tue implementazioni di regole e mantenendo la stabilità nell’intero processo.
 
   Ad esempio, supponiamo che sia necessario recuperare dati da un’API esterna e quindi applicare alcune regole in base a tali dati. Utilizziamo una chiusura per gestire la chiamata API asincrona e ci assicuriamo che le regole vengano applicate dopo il recupero dei dati. Di seguito è riportato un codice di esempio:
 
@@ -223,6 +223,36 @@ Per risolvere i problemi di prestazioni con i moduli di grandi dimensioni, consi
    * È consigliabile scrivere regole di visibilità per i frammenti che devono essere visualizzati o nascosti in base a una condizione.
 * Imposta il valore di **Numero di chiamate per richiesta** in **Apache Sling Main Servlet** su un numero abbastanza grande. Consente al server Forms di consentire chiamate aggiuntive. Nella configurazione viene visualizzato il valore predefinito 1500. Il valore, 1500 chiamate, è per altri componenti di Experience Manager come Sites e Assets. Il set di valori predefinito per i moduli adattivi è 20000. Se l&#39;errore `too many calls` si verifica nei registri o se il rendering del modulo non riesce, prova ad aumentare il valore a un numero elevato per risolvere il problema. Se il numero di chiamate supera i 20000, significa che il modulo è complesso e potrebbe richiedere un po’ di tempo per il rendering nel browser. Questo accade solo la prima volta che il modulo viene caricato, dopo che il modulo è stato memorizzato nella cache e una volta memorizzato nella cache, non vi è alcun impatto significativo sulle prestazioni.
 
+### Considerazioni sulle dimensioni dei DOM e prestazioni del browser
+
+Durante la creazione di moduli adattivi complessi e di grandi dimensioni, è importante considerare l’impatto della dimensione DOM sul rendering e sulle prestazioni:
+
+* **Impatto dimensione DOM**: anche se in AEM Forms non esiste un limite massimo per la dimensione DOM, una dimensione DOM eccessiva può influire in modo significativo sulle prestazioni, soprattutto quando si gestiscono frammenti con caricamento lazy. Le grandi strutture DOM richiedono più memoria e tempo di elaborazione per il rendering e la manipolazione.
+
+* **Differenze di rendering del browser**: le prestazioni di rendering possono variare in modo significativo tra browser e dispositivi diversi. Alcuni motori di rendering del browser elaborano gli aggiornamenti DOM dinamici in modo diverso, con approcci diversi ai ricalcoli degli stili, ai riflussi e ai ritocchi. Ciò è particolarmente evidente nel caso di contenuti di grandi dimensioni caricati dinamicamente. In alcuni browser, ogni manipolazione DOM significativa può attivare un ricalcolo completo del layout e un aggiornamento della pagina, che intensificano i problemi di prestazioni con moduli complessi o di grandi dimensioni.
+
+* **Fattori di prestazioni**: diversi fattori influiscono sulle prestazioni di caricamento lento:
+   * Dimensioni e complessità dei frammenti
+   * Stili CSS applicati agli elementi
+   * Numero di rientri attivati dagli aggiornamenti dinamici
+   * Funzionalità del dispositivo e del browser
+
+* **Impatto reale**: nei casi osservati, i moduli con dimensioni DOM di circa 400 KB hanno subito ritardi di rendering significativi fino a 15 secondi su alcuni browser. Questi ritardi sono dovuti non solo alle dimensioni del frammento, ma anche all’elaborazione CSS e ai rientri di pagina attivati durante l’inserimento dinamico dei contenuti.
+
+**Procedure consigliate per la gestione delle dimensioni DOM:**
+
+* Per il contenuto statico, puoi utilizzare i Frammenti di contenuto di AEM invece di inserire in modo dinamico blocchi di HTML di grandi dimensioni tramite caricamento lento. Questo approccio consente di ridurre i rientri, gli aggiornamenti e i tempi di esecuzione di JavaScript, migliorando le prestazioni complessive di caricamento delle pagine.
+
+* Quando i frammenti devono essere dinamici e con caricamento lazy, suddividi i frammenti di grandi dimensioni in frammenti più piccoli e più gestibili e carica solo le sezioni richieste in base alle esigenze.
+
+* Applicare, se del caso, modelli di divulgazione progressiva, rivelando campi modulo aggiuntivi solo se necessario in base alle indicazioni dell&#39;utente.
+
+* Esegui il test dei moduli su più browser e dispositivi, in particolare quando utilizzi frammenti con caricamento lazy, per garantire prestazioni coerenti tra i diversi ambienti.
+
+* Monitora e ottimizza i CSS utilizzati nei moduli, in quanto i CSS estesi o con struttura insufficiente possono aumentare in modo significativo i tempi di rendering, soprattutto durante gli aggiornamenti dinamici dei contenuti.
+
+Per ulteriori dettagli tecnici su come i diversi motori di rendering del browser gestiscono gli aggiornamenti DOM, i rientri e i ritorni, considera l’esplorazione della documentazione del motore del browser, come quelli forniti da vari fornitori di browser.
+
 ### Precompilazione dei moduli adattivi {#prefilling-adaptive-forms}
 
 Puoi precompilare i campi dei moduli adattivi con dati recuperati dal backend per consentire agli utenti di compilare rapidamente il modulo ed evitare errori di digitazione.
@@ -245,7 +275,7 @@ I moduli adattivi richiedono azioni di invio per elaborare i dati specificati da
 * Se le azioni di invio predefinite non soddisfano il caso d’uso, puoi scrivere un’azione di invio personalizzata. Per ulteriori informazioni, vedere [Scrittura di un&#39;azione di invio personalizzata per i moduli adattivi](/help/forms/using/custom-submit-action-form.md).
 * Includi convalide lato server per impedire l’invio di dati non validi.
 
-Puoi utilizzare l’esperienza multi-firma di Adobe Sign nei moduli adattivi. Quando configuri Adobe Sign nei moduli adattivi, tieni presente quanto segue. Per informazioni dettagliate, consulta [Utilizzo di Adobe Sign in un modulo adattivo](/help/forms/using/working-with-adobe-sign.md).
+Puoi utilizzare l’esperienza multi-firma di Adobe Sign nei moduli adattivi. Quando configuri Adobe Sign in adaptive forms, tieni presente quanto segue. Per informazioni dettagliate, consulta [Utilizzo di Adobe Sign in un modulo adattivo](/help/forms/using/working-with-adobe-sign.md).
 
 * Il modulo adattivo abilitato per Adobe Sign viene inviato solo dopo che tutti i firmatari hanno firmato il modulo. Forms viene visualizzato nello stato In sospeso fino a quando il modulo non viene firmato da tutti i firmatari.
 * Al momento dell’invio, puoi configurare l’esperienza di firma nei moduli o reindirizzare i firmatari a una pagina di firma.
@@ -253,7 +283,7 @@ Puoi utilizzare l’esperienza multi-firma di Adobe Sign nei moduli adattivi. Qu
 
 ### Generazione del documento record {#generating-document-of-record}
 
-Un documento di record (DoR) è una versione appiattita di un modulo adattivo che può essere stampata, firmata o archiviata da un PDF.
+Un documento di record (DoR) è una versione PDF semplificata di un modulo adattivo che può essere stampata, firmata o archiviata.
 
 * A seconda del modello di dati del modulo su cui si basa un modulo adattivo, è possibile configurare un modello per DoR come segue:
 
@@ -276,14 +306,14 @@ Un documento di record (DoR) è una versione appiattita di un modulo adattivo ch
 * Debug di regole e script nel modulo
 * Esplora e scopri le API guideBridge
 
-Per ulteriori informazioni, vedere [Plug-in Chrome AEM - Modulo adattivo](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
+Per ulteriori informazioni, vedere [Plug-in Chrome di AEM - Modulo adattivo](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
 
 ### Convalida dei moduli adattivi sul server AEM {#validating-adaptive-forms-on-aem-server}
 
 Le convalide lato server sono necessarie per evitare tentativi di aggirare le convalide sul client e possibili compromissioni dell’invio dei dati e violazioni delle regole aziendali. Le convalide lato server vengono eseguite sul server caricando la libreria client richiesta.
 
 * Includi funzioni in una libreria client per la convalida delle espressioni nei moduli adattivi e specifica la libreria client nella finestra di dialogo del contenitore di moduli adattivi. Per ulteriori informazioni, vedere [Riconvalida lato server](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
-* La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile HTML e la manipolazione DOM nella stessa libreria client.
+* La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile di HTML e la manipolazione DOM nella stessa libreria client.
 
 ### Localizzazione di moduli adattivi {#localizing-adaptive-forms}
 
@@ -315,13 +345,13 @@ Spesso è necessario spostare i progetti AEM da un ambiente all’altro. Di segu
 * Esegui il backup delle librerie client esistenti, del codice personalizzato e delle configurazioni.
 * Distribuire pacchetti e patch di prodotto manualmente e nell&#39;ordine specificato nel nuovo ambiente.
 * Distribuisci manualmente pacchetti di codice e bundle specifici del progetto e come pacchetto o bundle separato sul nuovo server AEM.
-* (*AEM Forms solo su JEE*) Distribuisci manualmente LCA e DSC sul server di Forms Workflow.
+* (*AEM Forms solo su JEE*) Distribuisci manualmente LCA e DSC sul server Forms Workflow.
 * Utilizza la funzionalità [Esporta-Importa](/help/forms/using/import-export-forms-templates.md) per spostare le risorse nel nuovo ambiente. Puoi anche configurare l’agente di replica e pubblicare le risorse.
 * Quando esegui l’aggiornamento, sostituisci tutte le API e le funzioni obsolete con nuove API e funzioni.
 
-### Configurazione dell’AEM {#configuring-aem}
+### Configurazione di AEM {#configuring-aem}
 
-Di seguito sono riportate alcune best practice per configurare l’AEM in modo da migliorare le prestazioni complessive:
+Di seguito sono riportate alcune best practice per configurare AEM per migliorare le prestazioni generali:
 
 * Abilita la compressione della libreria client HTML per JavaScript e CSS dalla console Felix.
 * Memorizza nella cache tutte le librerie client in `/etc.clientlibs/fd` ed eventuali librerie client personalizzate in AEM Dispatcher per aumentare la reattività e la sicurezza dei moduli pubblicati. Per ulteriori informazioni, vedere [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
@@ -342,7 +372,7 @@ Di seguito sono riportate alcune best practice per configurare l’AEM in modo d
 
 ### Configurazione dell’archiviazione esterna per le bozze e i dati dei moduli inviati {#external-storage}
 
-In un ambiente di produzione, si consiglia di non archiviare i dati del modulo inviati nell’archivio AEM. L&#39;implementazione predefinita delle azioni di invio Forms Portal Store, Store Content e Store PDF consente di memorizzare i dati del modulo nell&#39;archivio AEM. Queste azioni di invio sono intese solo a scopo dimostrativo. Inoltre, le funzioni Salva e Riprendi e Salvataggio automatico utilizzano l&#39;archiviazione del portale per impostazione predefinita. Pertanto, considera le seguenti raccomandazioni:
+In un ambiente di produzione, si consiglia di non archiviare i dati del modulo inviati nell’archivio di AEM. L’implementazione predefinita delle azioni di invio Forms Portal Store, Store Content e Store PDF memorizza i dati del modulo nell’archivio di AEM. Queste azioni di invio sono intese solo a scopo dimostrativo. Inoltre, le funzioni Salva e Riprendi e Salvataggio automatico utilizzano l&#39;archiviazione del portale per impostazione predefinita. Pertanto, considera le seguenti raccomandazioni:
 
 * **Memorizzazione dei dati bozza**: se si utilizza la funzione Bozza dei moduli adattivi, è necessario implementare un&#39;interfaccia SPI (Service Provide Interface) personalizzata per memorizzare i dati bozza in un&#39;archiviazione più sicura, ad esempio nel database. Per ulteriori informazioni, vedere [Esempio per l&#39;integrazione del componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).
 
@@ -350,7 +380,7 @@ In un ambiente di produzione, si consiglia di non archiviare i dati del modulo i
 
   È inoltre possibile scrivere un&#39;azione di invio personalizzata che memorizzi i dati del modulo e l&#39;allegato in un archivio protetto. Per ulteriori informazioni, vedere [Scrittura di un&#39;azione di invio personalizzata per i moduli adattivi](/help/forms/using/custom-submit-action-form.md).
 
-* **Lunghezza bozza ID**: quando salvi un modulo adattivo come bozza, viene generato un ID bozza per identificare in modo univoco la bozza. Il valore minimo per la lunghezza del campo ID bozza è di 26 caratteri. L&#39;Adobe consiglia di impostare la lunghezza dell&#39;ID bozza su 26 o più caratteri.
+* **Lunghezza bozza ID**: quando salvi un modulo adattivo come bozza, viene generato un ID bozza per identificare in modo univoco la bozza. Il valore minimo per la lunghezza del campo ID bozza è di 26 caratteri. Adobe consiglia di impostare la lunghezza dell&#39;ID bozza su 26 o più caratteri.
 
 ### Trattamento di informazioni personali {#handling-personally-identifiable-information}
 
