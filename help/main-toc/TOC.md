@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
+source-git-commit: c878a4d21a7f6197261ac86b27fbdc76eefa589f
 workflow-type: tm+mt
 source-wordcount: '7471'
 ht-degree: 21%
@@ -1439,7 +1439,7 @@ ht-degree: 21%
          + [Guida introduttiva all’utilizzo di React](/help/sites-developing/spa-getting-started-react.md)
          + [Implementazione di un Componente React per applicazioni a pagina singola (SPA)](/help/sites-developing/spa-implementing-react-component.md)
          + [Guida introduttiva all’utilizzo di Angular](/help/sites-developing/spa-getting-started-angular.md)
-         + [Approfondimenti su SPA](/help/sites-developing/spa-deep-dives.md)
+         + [Approfondimenti su SPA](/help/sites-developing/spa-deep-dives-gems.md)
          + [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md)
          + [Panoramica dell’editor di SPA](/help/sites-developing/spa-overview.md)
          + [Blueprint SPA](/help/sites-developing/spa-blueprint.md)
