@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
+source-git-commit: bc67c991d7498beafd20fa7a9f20cbd901d79045
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 1%
+source-wordcount: '1034'
+ht-degree: 0%
 
 ---
 
@@ -30,19 +30,37 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     <td><strong>Problemi risolti</strong></td>
   </tr>
   <tr>
+    <td>26 marzo 2025 </br> </br> Per installare questa correzione, segui le istruzioni <a href="/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md"> Mitigazione delle vulnerabilità Spring Framework per AEM Forms su JEE</a>.</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-win-jboss.tar.gz">Hotfix per AEM Service Pack 6.5.22.0 su Windows per il server JEE JBoss </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-jboss.tar.gz">Hotfix per AEM Service Pack 6.5.22.0 su Linux per il server JEE JBoss </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/weblogic/adobe-aem-forms-jee-hotfix-6.5.22.0-win-weblogic.tar.gz">Hotfix per AEM Service Pack 6.5.22.0 in Windows per il server JEE Weblogic </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/weblogic/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-weblogic.tar.gz">Hotfix per AEM Service Pack 6.5.22.0 su Linux per il server JEE Weblogic</a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/websphere/adobe-aem-forms-jee-hotfix-6.5.22.0-win-websphere.tar.gz">Hotfix per AEM Service Pack 6.5.22.0 su Windows per il server WebSphere JEE </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/websphere/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-websphere.tar.gz">Hotfix per AEM Service Pack 6.5.22.0 su Linux per il server WebSphere JEE</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>Mitigazione delle vulnerabilità del framework di primavera per AEM Forms su JEE</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
     <td>giovedì 10 luglio 2024</td>
      <td>
      <ul>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">Hotfix per AEM Service Pack 6.5.21.0 in Windows per il server JEE JBoss </a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">Hotfix per AEM Service Pack 6.5.21.0 su Windows per il server JEE JBoss </a> </li>
       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz">Hotfix per AEM Service Pack 6.5.21.0 su Linux per il server JEE JBoss </a> </li>
-       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">Hotfix per AEM Service Pack 6.5.21.0 in Windows per il server WebShpere JEE </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">Hotfix per AEM Service Pack 6.5.21.0 su Windows per il server WebShpere JEE </a> </li>
         <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-websphere.tar.gz">Hotfix per AEM Service Pack 6.5.21.0 su Linux per il server WebShpere JEE</a> </li>
-        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip">Hotfix per AEM Service Pack 6.5.21.0 in Windows per il server WebLogic JEE </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip">Hotfix per AEM Service Pack 6.5.21.0 in Windows per il server JEE Weblogic </a> </li>
         <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz">Hotfix per AEM Service Pack 6.5.21.0 su Linux per il server JEE Weblogic</a> </li>
      </ul>
      </td>
     <td>
-    <ul><li>Quando un utente si aggiorna a AEM Forms Service Pack 20 (6.5.20.0) sul server JEE e genera PDF utilizzando i servizi di output, i PDF presentano problemi di accessibilità. (LC-3922112)</li><li>I PDF con tag generati utilizzando il servizio di output su AEM Forms JEE mostrano un avviso di struttura inappropriata. (LC-3922038)</li><li>Quando un modulo viene inviato in AEM Forms JEE, le istanze di un elemento XML ripetuto vengono rimosse dai dati. (LC-3922017)</li><li>Quando un utente in un ambiente Linux esegue il rendering di un modulo adattivo (su JEE) in HTML, il rendering non riesce. (LC-3921957)</li><li>Quando un utente converte un file XTG in formato PostScript utilizzando il servizio di output in AEM Forms JEE, l’operazione non riesce e viene visualizzato l’errore: AEM_OUT_001_003: Eccezione imprevista: errore PAExecute: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Dopo l’aggiornamento ad AEM Forms Service Pack 18 (6.5.18.0) sul server JEE, quando un utente invia un modulo, non riesce a eseguire il rendering di HTML5 o PDF forms e XMLFM si arresta. (LC-3921718)
+    <ul><li>Quando un utente effettua l’aggiornamento ad AEM Forms Service Pack 20 (6.5.20.0) sul server JEE e genera PDF utilizzando i servizi di output, il rendering dei PDF presenta problemi di accessibilità. (LC-3922112)</li><li>I PDF con tag generati utilizzando il servizio di output su AEM Forms JEE mostrano l’avviso di struttura inappropriata. (LC-3922038)</li><li>Quando un modulo viene inviato in AEM Forms JEE, le istanze di un elemento XML ripetuto vengono rimosse dai dati. (LC-3922017)</li><li>Quando un utente in un ambiente Linux esegue il rendering di un modulo adattivo (su JEE) in HTML, il rendering non riesce. (LC-3921957)</li><li>Quando un utente converte un file XTG in formato PostScript utilizzando il servizio di output in AEM Forms JEE, l’operazione non riesce e viene visualizzato l’errore: AEM_OUT_001_003: Eccezione imprevista: errore PAExecute: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Dopo l’aggiornamento ad AEM Forms Service Pack 18 (6.5.18.0) sul server JEE, quando un utente invia un modulo, non riesce a eseguire il rendering degli arresti anomali di HTML5 o PDF forms e XMLFM. (LC-3921718)
     </ul>
     </td>    
   </tr>
@@ -58,7 +76,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      </td>
     <td>
     <ul>
-    <li> Dopo l'aggiornamento a AEM Forms Service Pack 6.5.21.0, il servizio PaperCapture non è in grado di eseguire operazioni OCR (riconoscimento ottico dei caratteri) sui PDF. Per le istruzioni di installazione, fare riferimento all'articolo <a href="/help/forms/using/papercapture-service-resolution.md"> sulla risoluzione dei problemi</a>.(CQDOC-21680) </li>
+    <li> Dopo l'aggiornamento ad AEM Forms Service Pack 6.5.21.0, il servizio PaperCapture non esegue operazioni OCR (Optical Character Recognition) sui PDF. Per le istruzioni di installazione, fare riferimento all'articolo <a href="/help/forms/using/papercapture-service-resolution.md"> sulla risoluzione dei problemi</a>.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -89,7 +107,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     <li>In un modulo adattivo basato su un XDP con script incorporati nelle caselle di controllo, gli script non vengono eseguiti per gli elementi che seguono tali caselle di controllo. Per questo problema è disponibile un hotfix. (FORMS-14244) </li>
      <li> Le righe nel widget del selettore data vengono troncate quando si attraversano i mesi nel widget popup per i campi con pattern di modifica/visualizzazione. Per questo problema è disponibile un hotfix. (FORMS-13620) </li>
      <li>L’invio dei moduli non riesce quando si tenta di utilizzare il servizio DOR (Document of Record) nel back-end. Messaggio di errore: "Impossibile completare l'azione di invio perché la risorsa del modulo non è assegnata correttamente". (FORMS-13798) </li>
-     <li>Quando un modulo adattivo viene inviato da un’istanza di Adobe Experience Manager Publish a un flusso di lavoro di Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati.  (FORMS-14209) </li>
+     <li>Quando un modulo adattivo viene inviato da un’istanza Adobe Experience Manager Publish a un flusso di lavoro Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati.  (FORMS-14209) </li>
      <li> Durante l’installazione del pacchetto AEM 6.5 Forms Service Pack 20 (pacchetto del componente aggiuntivo AEM Forms per SP20), l’interfaccia utente di AEM Sites presenta un significativo deterioramento delle prestazioni.  (FORMS-13791) </li>
      <li>Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)</li>
      <li>Le configurazioni che utilizzano il servizio cloud legacy per Adobe Analytics con autenticazione basata sulle credenziali utente non funzionano correttamente, causando l’errore di esecuzione delle regole di analisi. (FORMS-15428)
