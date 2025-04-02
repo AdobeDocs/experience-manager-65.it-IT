@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e67f19784abae1cd41819dd2a763ddd064beee08
+source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,6 @@ Una volta creato un processo con il servizio Execute Script incluso, è possibil
 >
 > Se il codice dello script JAVA supera le 10 righe, si consiglia di aggiungerlo ai DSC (Document Service Components) personalizzati anziché scriverlo direttamente nel processo. Le DSC personalizzate migliorano la manutenibilità, la riutilizzabilità e le prestazioni mantenendo leggeri i flussi di lavoro. Il riferimento a questi componenti nei flussi di lavoro garantisce una migliore efficienza di esecuzione e impedisce potenziali rallentamenti dovuti all’elaborazione di blocchi di codice di grandi dimensioni all’interno del flusso di lavoro.
 
->[!NOTE]
->
-> Se il codice dello script JAVA supera le 10 righe, si consiglia di aggiungerlo ai DSC (Document Service Components) personalizzati anziché scriverlo direttamente nel processo. Le DSC personalizzate migliorano la manutenibilità, la riutilizzabilità e le prestazioni mantenendo leggeri i flussi di lavoro. Il riferimento a questi componenti nei flussi di lavoro garantisce una migliore efficienza di esecuzione e impedisce potenziali rallentamenti dovuti all’elaborazione di blocchi di codice di grandi dimensioni all’interno del flusso di lavoro.
 
 **Informazioni sulla tecnologia del servizio Execute Script**
 
