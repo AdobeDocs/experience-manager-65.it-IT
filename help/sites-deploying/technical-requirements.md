@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3632'
 ht-degree: 1%
 
 ---
@@ -452,9 +452,9 @@ Per Windows x86:
 
 ### Requisiti di AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-* Per testare le conversioni PDF sul server SUSE® Linux®, assicurati di disporre delle seguenti configurazioni:
+* Per testare le conversioni di PDF sul server SUSE® Linux® (SLES 15 SP6 o successivo), assicurati di disporre delle seguenti configurazioni:
    * Passare al file `/etc/profile` e impostare la variabile di ambiente `OpenOffice_PATH` su `/opt/openoffice4` per configurarla globalmente.
-   * Installare la versione a 32 bit di OpenOffice sul sistema operativo Linux®
+   * Installare la versione a 32 bit di OpenOffice.
 
 ### Supporto software per PDF Generator {#software-support-for-pdf-generator}
 
@@ -517,7 +517,7 @@ Per Windows x86:
 >
 >Inoltre,
 >
->* Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078.
+>* Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html).
 >* PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
 >* L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
 >* Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio se un&#39;installazione con licenza Volume License non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.

@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 8fda6635ec0e28b95209431bd12d191f36df943b
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '4197'
+source-wordcount: '4216'
 ht-degree: 0%
 
 ---
@@ -317,7 +317,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
    <td><p>Service Pack, patch cumulative e aggiornamenti di sicurezza critici</p> </td>
   </tr>
   <tr>
-   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64 bit)</p> </td>
+   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64 bit) </p> </td>
    <td><p>R: Supportato</p> </td>
    <td><p>Service Pack, patch cumulative e aggiornamenti di sicurezza critici</p> </td>
   </tr>
@@ -467,9 +467,9 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 
 ### Requisiti per PDF Generator
 
-- Per testare le conversioni PDF sul server SUSE® Linux®, assicurati di disporre delle seguenti configurazioni:
+- Per testare le conversioni di PDF sul server SUSE® Linux® (SLES 15 SP6 o successivo), assicurati di disporre delle seguenti configurazioni:
    - Passare al file `/etc/profile` e impostare la variabile di ambiente `OpenOffice_PATH` su `/opt/openoffice4` per configurarla globalmente.
-   - Installare la versione a 32 bit di OpenOffice sul sistema operativo Linux®
+   - Installare la versione a 32 bit di OpenOffice.
 
 ### Supporto software per PDF Generator {#software-support-for-pdf-generator}
 
@@ -508,6 +508,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 >
 >Inoltre:
 >
+>- Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html).
 >- PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
 >- L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
 >- Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio se un&#39;installazione con licenza Volume License non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
