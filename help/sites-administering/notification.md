@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
+source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -35,18 +35,18 @@ Quando un utente riceve una notifica, riceve un’e-mail nella lingua definita n
 
 >[!NOTE]
 >
->Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
+>Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 ## Configurazione del servizio e-mail {#configuring-the-mail-service}
 
-Affinché l&#39;AEM possa inviare e-mail, è necessario configurare correttamente il servizio di posta CQ **Day**. Puoi visualizzare la configurazione nella console Web. Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
+Affinché AEM possa inviare e-mail, è necessario che il servizio di posta CQ **Day** sia configurato correttamente. Puoi visualizzare la configurazione nella console Web. Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Si applicano i seguenti vincoli:
 
 * La **porta del server SMTP** deve essere 25 o superiore.
 
 * Il nome host del server SMTP **** non può essere vuoto.
-* L&#39;indirizzo **&quot;Da&quot;** non può essere vuoto.
+* L&#39;indirizzo **&quot;Da&quot;** non può essere vuoto ed è necessario modificare il valore predefinito &quot;<noreply@day.com>&quot;.
 
 Per aiutarti a eseguire il debug di un problema relativo al servizio di posta **Day CQ**, puoi visualizzare i registri del servizio:
 
@@ -60,7 +60,7 @@ Nella console Web la configurazione si presenta come segue:
 
 Quando ci si abbona alle notifiche degli eventi di pagina o forum, l&#39;indirizzo e-mail da è impostato su `no-reply@acme.com` per impostazione predefinita. È possibile modificare questo valore configurando il servizio **Canale e-mail di notifica** nella console Web.
 
-Per configurare l&#39;indirizzo di posta elettronica da, aggiungere un nodo `sling:OsgiConfig` all&#39;archivio. Per aggiungere il nodo direttamente utilizzando CRXDE Lite, attenersi alla procedura descritta di seguito.
+Per configurare l&#39;indirizzo di posta elettronica da, aggiungere un nodo `sling:OsgiConfig` all&#39;archivio. Utilizza la procedura seguente per aggiungere il nodo direttamente utilizzando CRXDE Lite:
 
 1. In CRXDE Lite, aggiungi una cartella denominata `config` sotto la cartella dell&#39;applicazione.
 1. Nella cartella di configurazione, aggiungi un nodo denominato:
@@ -84,7 +84,7 @@ Per definire il nodo nelle cartelle di origine dei pacchetti di contenuti, atten
 
 ## Configurazione del servizio di notifica e-mail del flusso di lavoro {#configuring-the-workflow-email-notification-service}
 
-Quando ricevi le notifiche e-mail del flusso di lavoro, sia l’indirizzo e-mail da che il prefisso dell’URL host vengono impostati sui valori predefiniti. È possibile modificare questi valori configurando il servizio di notifica e-mail del flusso di lavoro CQ **Day** nella console Web. In tal caso, si consiglia di mantenere la modifica nell’archivio.
+Quando ricevi le notifiche e-mail del flusso di lavoro, sia l’indirizzo e-mail da che il prefisso dell’URL host vengono impostati sui valori predefiniti. È possibile modificare questi valori configurando il servizio di notifica e-mail del flusso di lavoro CQ **Day** nella console Web. In questo caso, devi rendere persistente la modifica nell’archivio.
 
 Nella console Web la configurazione predefinita è la seguente:
 
@@ -254,25 +254,25 @@ Per aggiungere un modello per una nuova lingua:
 
 >[!NOTE]
 >
->`<language-code>` utilizzato come nome file per il modello e-mail deve essere un codice di lingua in minuscolo di due lettere riconosciuto dall&#39;AEM. Per i codici di lingua, l&#39;AEM si basa sullo standard ISO-639-1.
+>Il `<language-code>` utilizzato come nome file per il modello e-mail deve essere un codice di lingua in minuscolo di due lettere riconosciuto da AEM. Per i codici di lingua, AEM si basa sullo standard ISO-639-1.
 
 ## Configurazione delle notifiche e-mail di AEM Assets {#assetsconfig}
 
-Quando le raccolte in AEM Assets sono condivise o non condivise, gli utenti possono ricevere notifiche e-mail dall’AEM. Per configurare le notifiche e-mail, segui la procedura riportata di seguito.
+Quando le raccolte in AEM Assets sono condivise o non condivise, gli utenti possono ricevere notifiche e-mail da AEM. Per configurare le notifiche e-mail, segui la procedura riportata di seguito.
 
 1. Configurare il servizio di posta elettronica come descritto in precedenza in [Configurazione del servizio di posta](/help/sites-administering/notification.md#configuring-the-mail-service).
-1. Accedi all’AEM come amministratore. Fai clic su **Strumenti** > **Operazioni** > **Console Web** per aprire Configurazione console Web.
+1. Accedi ad AEM come amministratore. Fai clic su **Strumenti** > **Operazioni** > **Console Web** per aprire Configurazione console Web.
 1. Modifica **giorno CQ DAM Resource Collection Servlet**. Seleziona **invia e-mail**. Fai clic su **Salva**.
 
 ## Configurazione di OAuth {#setting-up-oauth}
 
-AEM offre il supporto OAuth2 per il suo servizio Mailer integrato, per consentire alle organizzazioni di rispettare i requisiti e-mail sicuri.
+AEM offre il supporto OAuth2 per il servizio Mailer integrato, per consentire alle organizzazioni di rispettare i requisiti e-mail sicuri.
 
 Puoi configurare OAuth per più provider di posta elettronica, come descritto di seguito.
 
 >[!NOTE]
 >
->Questa procedura è un esempio per un’istanza di Publish. Se desideri abilitare le notifiche e-mail su un’istanza Autore, segui gli stessi passaggi anche sull’Autore.
+>Questa procedura è un esempio per un&#39;istanza Publish. Se desideri abilitare le notifiche e-mail su un’istanza Autore, segui gli stessi passaggi anche sull’Autore.
 
 ### Gmail {#gmail}
 
@@ -294,7 +294,7 @@ Puoi configurare OAuth per più provider di posta elettronica, come descritto di
 
 Innanzitutto, configura il servizio di posta:
 
-1. Aprire la console Web AEM accedendo a `http://serveraddress:serverport/system/console/configMgr`
+1. Apri la console Web AEM da `http://serveraddress:serverport/system/console/configMgr`
 1. Cerca, quindi fai clic su **Day CQ Mail Service**
 1. Aggiungi le seguenti impostazioni:
    * Nome host server SMTP: `smtp.gmail.com`
@@ -310,7 +310,7 @@ Quindi, configura il provider OAuth SMTP seguendo la procedura seguente:
 >
 >Se non vengono eseguite, il token di accesso archiviato in `/conf/global/settings/mailer/oauth` non sarà valido e la connessione OAuth2 al server SMTP non riuscirà.
 
-1. Aprire la console Web AEM accedendo a `http://serveraddress:serverport/system/console/configMgr`
+1. Apri la console Web AEM da `http://serveraddress:serverport/system/console/configMgr`
 1. Cerca, quindi fai clic su **Provider SMTP OAuth2 CQ Mailer**
 
 1. Compila le informazioni richieste come segue:
@@ -340,7 +340,7 @@ Ora, attiva i componenti OAuth. Per farlo, segui questi passaggi:
 
 Infine, conferma la configurazione:
 
-1. Vai all’indirizzo dell’istanza di Publish e accedi come amministratore.
+1. Vai all’indirizzo dell’istanza Publish e accedi come amministratore.
 1. Apri una nuova scheda nel browser e passa a `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Questo ti reindirizzerà alla pagina del tuo provider SMTP, in questo caso Gmail.
 1. Accesso e consenso per l’assegnazione delle autorizzazioni richieste
 1. Dopo il consenso, il token verrà archiviato nell’archivio. Puoi accedervi in `accessToken` accedendo direttamente a questo URL nella tua istanza di pubblicazione: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
@@ -429,7 +429,7 @@ Ora, attiva i componenti OAuth. Per farlo, segui questi passaggi:
 
 Infine, conferma la configurazione:
 
-1. Vai all’indirizzo dell’istanza di Publish e accedi come amministratore.
+1. Vai all’indirizzo dell’istanza Publish e accedi come amministratore.
 1. Apri una nuova scheda nel browser e passa a `http://serveraddress:serverport/services/mailer/oauth2/authorize`. In questo caso verrà reindirizzato alla pagina del provider SMTP, in questo caso Outlook.
 1. Accesso e consenso per l’assegnazione delle autorizzazioni richieste
 1. Dopo il consenso, il token verrà archiviato nell’archivio. Puoi accedervi in `accessToken` accedendo direttamente a questo URL nella tua istanza di pubblicazione: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
