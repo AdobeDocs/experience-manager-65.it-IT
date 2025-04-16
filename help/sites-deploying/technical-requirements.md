@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
+source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
 workflow-type: tm+mt
-source-wordcount: '3632'
+source-wordcount: '3593'
 ht-degree: 1%
 
 ---
@@ -39,11 +39,11 @@ Requisiti minimi per l&#39;esecuzione di Adobe Experience Manager:
 
 >[!NOTE]
 >
->* I casi di utilizzo di risorse digitali richiedono una maggiore quantità di memoria di base. Per ulteriori informazioni, vedere [Distribuzione e manutenzione](/help/sites-deploying/deploy.md#default-local-install).
->* [Il pacchetto del componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) richiede 15 GB di spazio temporaneo.
+>* I casi d&#39;uso dei risorsa digitali richiedono più memoria di base. Per informazioni dettagliate, vedere [Distribuzione e manutenzione](/help/sites-deploying/deploy.md#default-local-install) .
+>* [AEM Forms pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md) aggiuntivo richiede 15 GB di spazio temporaneo.
 >
 
-Per ulteriori informazioni, vedere le [linee guida per il dimensionamento hardware](/help/managing/hardware-sizing-guidelines.md).
+Per ulteriori informazioni, vedere le Linee guida](/help/managing/hardware-sizing-guidelines.md) per il dimensionamento dell&#39;hardware[.
 
 ### Livelli di supporto {#support-levels}
 
@@ -51,7 +51,7 @@ Questo documento elenca le piattaforme client e server supportate per Adobe Expe
 
 ### Configurazioni supportate {#supported-configurations}
 
-Adobe consiglia queste configurazioni e fornisce supporto completo come parte del contratto standard di manutenzione software.
+Adobe Systems consiglia queste configurazioni e fornisce supporto completo come parte del contratto di manutenzione software standard.
 
 <table>
  <tbody>
@@ -91,7 +91,7 @@ Adobe Experience Manager funziona con le seguenti versioni di Java™ Virtual Ma
 | **Piattaforma** | **Livello di supporto** | **Collegamento** |
 |---|---|---|
 | JDK per Oracle Java™ SE 17 | Z: Non supportato `[1]` |
-| JDK Oracle Java™ SE 11 - 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Oracle Java™ SE 11 JDK - 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | JDK Oracle Java™ SE 10 | Z: Non supportato `[1]` |
 | JDK per Oracle Java™ SE 9 | Z: Non supportato `[1]` |
 | JDK Oracle Java™ SE 8 a 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
@@ -114,7 +114,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 
 | **Piattaforma** | **Descrizione** | **Livello di supporto** |
 |---|---|---|
-| **File system con file TAR** `[1]` | Archivio | R: Supportato |
+| **File sistema con file** TAR `[1]` | Archivio | R: Supportato |
 | **File system con archivio dati** `[1]` | File binari | R: Supportato |
 | Archivia file binari in file TAR nel file system `[1]` | Binari | Z: non supportato per la produzione |
 | Amazon S3 | File binari | R: Supportato |
@@ -124,8 +124,8 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 | MongoDB Enterprise 4.4 | Archivio | R: Supportato `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.2 | Archivio | R: Supportato `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | Archivio | Z: non supportato |
-| MongoDB Enterprise 3.6 | Archivio | Z: non supportato |
-| MongoDB Enterprise 3.4 | Archivio | Z: non supportato |
+| MongoDB Enterprise 3,6 | Archivio | Z: Non supportato |
+| MongoDB Enterprise 3,4 | Archivio | Z: non supportato |
 | IBM® DB2® 10.5 | Archivio e database Forms | R: Supporto limitato `[5]` |
 | Oracle Database 12c (12.1.x) | Archivio e database Forms | R: Supporto limitato |
 | Microsoft® SQL Server 2016 | Database Forms | R: Supportato |
@@ -186,8 +186,8 @@ Il Versione minimo richiesto dall&#39;API Servlet è Servlet 3.1
 | JBoss® EAP 7.1.4 con JBoss® Application Server | R: Supporto limitato per i nuovi contratti `[1]` `[2]` |
 | JBoss® EAP 7.0.x con JBoss® Application Server | Z: non supportato |
 
-1. Consigliato per le distribuzioni con AEM Forms.
-1. L’avvio delle implementazioni di AEM 6.5 sui server applicazioni passa al Supporto con restrizioni. I clienti esistenti possono effettuare l’aggiornamento ad AEM 6.5 e continuare a utilizzare i server delle applicazioni. Per i nuovi clienti, include i criteri di supporto e un programma di supporto come indicato nella descrizione del livello R riportata sopra.
+1. Consigliato per distribuzioni con AEM Forms.
+1. A partire da AEM le distribuzioni 6.5 sui server applicazione passa al supporto limitato. I clienti esistenti possono eseguire l&#39;aggiornamento alla versione AEM 6.5 e continuare a utilizzare i server applicazione. Per i nuovi clienti, viene fornito con criteri di supporto e un programma di supporto come indicato nella descrizione di Level-R sopra.
 1. Applicabile solo AEM Forms:
    * Rimozione del supporto per JBoss® EAP 7.1.4 e aggiunta del supporto per JBoss® EAP 7.4.10.
 
@@ -251,7 +251,7 @@ Per consigli su come distribuire AEM su Azure o AWS, al di fuori di Adobe Manage
 
 Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
-Con Dispatcher versione 4.3.2 sono supportati i seguenti server web:
+I seguenti server Web sono supportati per l&#39;utilizzo con Dispatcher versione 4.3.2:
 
 | Platform | Livello di supporto |
 |---|---|
@@ -300,7 +300,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
   <tr>
    <td>Microsoft® Internet Explorer 11</td>
    <td>Z: Non supportato</td>
-   <td>Z: non supportato</td>
+   <td>Z: Non supportato</td>
   </tr>
   <tr>
    <td>Mozilla Firefox (Evergreen)</td>
@@ -340,7 +340,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
 
 ### Browser supportati per i siti Web {#supported-browsers-for-websites}
 
-Generalmente, browser supporto per i siti Web resi da AEM Sites dipende dalla implementazione dei modelli di pagina, dal design e dall&#39;output dei componenti AEM ed è quindi sotto il controllo della parte che implementa queste parti.
+In genere, il supporto del browser per i siti web di cui è stato eseguito il rendering da AEM Sites dipende dall’implementazione dei modelli di pagina di AEM, dalla progettazione e dall’output dei componenti ed è quindi sotto il controllo della parte che implementa queste parti.
 
 ### Client WebDAV {#webdav-clients}
 
@@ -418,7 +418,7 @@ Se utilizzi Dynamic Media su Linux®, è necessario soddisfare i seguenti prereq
 >
 >Il costrutto a più nodi può causare esaurimento della memoria su uno o più nodi prima che gli altri nodi si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
 >
->Pertanto, Adobe Systems consiglia che se si esegue un sistema di questo tipo si disattivi NUMA utilizzando l&#39;opzione di **avvio numa=off** per evitare che il kernel uccida questi processi.
+>Pertanto, Adobe consiglia di disattivare NUMA utilizzando l&#39;opzione di avvio **numa=off** per evitare che il kernel uccida questi processi.
 
 >[!NOTE]
 >
@@ -451,10 +451,6 @@ Per Windows x86:
 * Supportato solo a scopo di prova e demo
 
 ### Requisiti di AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
-
-* Per testare le conversioni di PDF sul server SUSE® Linux® (SLES 15 SP6 o successivo), assicurati di disporre delle seguenti configurazioni:
-   * Passare al file `/etc/profile` e impostare la variabile di ambiente `OpenOffice_PATH` su `/opt/openoffice4` per configurarla globalmente.
-   * Installare la versione a 32 bit di OpenOffice.
 
 ### Supporto software per PDF Generator {#software-support-for-pdf-generator}
 
@@ -543,9 +539,9 @@ Per Windows x86:
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 * Privilegi amministrativi per l&#39;installazione di Designer
 * Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 32 bit per AEM Forms Designer a 32 bit
-* Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 64 bit per AEM Forms Designer a 64 bit (per OSGI e stack JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 64 bit per AEM Forms Designer a 64 bit (per gli stack OSGI e JEE)
 
-[Installare e configurare AEM Forms finestra di progettazione](/help/forms/using/installing-configuring-designer.md)
+[Installare e configurare AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
 ### Requisiti per il write-back dei metadati di AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
@@ -558,8 +554,8 @@ La funzione di write-back di XMP è supportata e abilitata per le piattaforme e 
    * Windows Server
    * macOS X (64 bit)
 
-* **File formati**: JPEG, PNG, TIFF, PDF, INDD, AI ed EPS.
+* **Formati file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 
-### Requisiti per AEM Assets per elaborare metadati risorse pesanti su Linux® {#assetsonlinux}
+### Requisiti per AEM Assets per l’elaborazione di risorse contenenti metadati su Linux® {#assetsonlinux}
 
-Il processo XMPFilesProcessor richiede il funzionamento della libreria GLIBC_2.14. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L&#39;utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Il processo XMPFilesProcessor richiede il libreria GLIBC_2.14 per funzionare. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio il kernel Linux® versione 3.1.x. Migliora le prestazioni per l&#39;elaborazione di risorse che contengono una grande quantità di file metadati like PSD. L&#39;utilizzo di una versione precedente di GLIBC porta a errori nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
+source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
 workflow-type: tm+mt
-source-wordcount: '4216'
+source-wordcount: '4177'
 ht-degree: 0%
 
 ---
@@ -466,10 +466,6 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 
 
 ### Requisiti per PDF Generator
-
-- Per testare le conversioni di PDF sul server SUSE® Linux® (SLES 15 SP6 o successivo), assicurati di disporre delle seguenti configurazioni:
-   - Passare al file `/etc/profile` e impostare la variabile di ambiente `OpenOffice_PATH` su `/opt/openoffice4` per configurarla globalmente.
-   - Installare la versione a 32 bit di OpenOffice.
 
 ### Supporto software per PDF Generator {#software-support-for-pdf-generator}
 
