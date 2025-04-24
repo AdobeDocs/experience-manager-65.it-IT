@@ -5,10 +5,10 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 63%
+source-wordcount: '1567'
+ht-degree: 61%
 
 ---
 
@@ -21,6 +21,13 @@ Il controllo delle versioni crea lo snapshot di una pagina in un determinato mom
    * per annullare una modifica apportata alla pagina.
 * Confrontare la versione corrente di una pagina con una versione precedente:
    * per evidenziare le differenze nel testo e nelle immagini.
+
+>[!NOTE]
+>
+>Nell’archivio AEM viene creata una versione solo del contenuto. Le risorse dinamiche come codice, CSS e JavaScript non dispongono di versioni.
+>
+>* Quando si visualizzano le versioni, il contenuto viene visualizzato con il codice, CSS e JavaScript correnti dell’archivio.
+>* Durante il ripristino delle versioni, viene ripristinato solo il contenuto e vengono applicati il codice, i CSS e il JavaScript correnti dell’archivio.
 
 ## Creazione di una nuova versione   {#creating-a-new-version}
 
@@ -196,7 +203,7 @@ Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di 
 
 >[!TIP]
 >
->[Timewarp può essere utilizzato anche con Launches per visualizzare in anteprima il futuro](/help/sites-authoring/launches.md) quando si esegue AEM 6.5.10.0 o versione successiva.
+>[Timewarp può essere utilizzato anche con Launches per visualizzare in anteprima il futuro](/help/sites-authoring/launches.md) durante l&#39;esecuzione di AEM 6.5.10.0 o versione successiva.
 
 La creazione dei contenuti è un processo continuo e collaborativo. Lo scopo di Timewarp è quello di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, per aiutarli a comprendere come è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione:
 
