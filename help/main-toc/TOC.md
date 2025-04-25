@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: 8009e4cf7da17afbcfae7f90009157d32ee261fa
+source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
 workflow-type: tm+mt
-source-wordcount: '7494'
+source-wordcount: '7520'
 ht-degree: 22%
 
 ---
@@ -1213,6 +1213,9 @@ ht-degree: 22%
       + [Il servizio PaperCapture non riesce a eseguire l&#39;OCR sui PDF](/help/forms/using/papercapture-service-resolution.md)
       + [Mitigazione delle vulnerabilità del framework di primavera per AEM Forms su JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Mitigazione delle vulnerabilità di Log4j2 per Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
+      + [Problemi di visualizzazione per PDF forms basato su XFA e documenti protetti tramite policy](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
+      + [Come aprire PDF forms basato su XFA su Firefox e Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
+      + [Vulnerabilità XXE (XML External Entity) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
       + [Distribuzione EAR non riuscita sul server WebLogic JEE](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Documentazione legacy {#legacy-documentation}
       + [Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML](/help/forms/developing/building-xml.md)
@@ -1398,7 +1401,7 @@ ht-degree: 22%
                + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html)
                + [Come effettuare il Go Live con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html)
                + [Facoltativo - Come creare applicazioni a pagina singola con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html)
-            + Percorso Architect di contenuti headless {#architect}
+            + Percorso di architettura dei contenuti headless {#architect}
                + [Panoramica del Percorso Architect di contenuti AEM headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html)
                + [Modellazione dei contenuti per headless con AEM - Introduzione](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
                + [Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
