@@ -1,13 +1,13 @@
 ---
-title: Risoluzione dei problemi Articolo per risolvere il problema quando il servizio PaperCapture non esegue operazioni OCR (riconoscimento ottico dei caratteri) sui PDF.
-description: Scopri i passaggi per risolvere il problema in cui il servizio PaperCapture non esegue operazioni OCR (riconoscimento ottico dei caratteri) sui PDF.
+title: Articolo sulla risoluzione dei problemi per risolvere il problema quando il servizio PaperCapture non esegue operazioni OCR (riconoscimento ottico dei caratteri) sui PDF.
+description: Scopri i passaggi per risolvere il problema in cui il servizio PaperCapture non riesce a eseguire operazioni OCR (Optical Character Recognition) sui PDF.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: e030a71a0f52e22a803597122369cb111774f49b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 2%
 
 ## Problema  
 
-Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.21.0, il servizio `PaperCapture` non è in grado di eseguire operazioni OCR (riconoscimento ottico dei caratteri) sui PDF. Il servizio non genera output sotto forma di PDF o file di registro.
+Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0, il servizio `PaperCapture` non è in grado di eseguire operazioni OCR (riconoscimento ottico dei caratteri) sui PDF. Il servizio non genera output sotto forma di PDF o file di registro.
 
 ## Applicabile a
 
 Questa soluzione si applica a:
+
 * AEM Forms su tutti i server JEE (JBoss, Weblogic, Websphere)
 * AEM Forms sui server OSGi
 
@@ -38,10 +39,10 @@ Questa soluzione si applica a:
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **Configurazione OSGi**:\
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
-1. Arrestare il server applicazioni AEM.
+1. Arresta il server applicazioni AEM.
 1. Sostituire il contenuto esistente della cartella `PaperCaptureSvc` con il contenuto copiato.
-1. Riavviare il server applicazioni AEM.
+1. Riavvia il server applicazioni AEM.
 
    >[!NOTE]
    >
-   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
