@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c361d62beb93fc546f3ef2e53f52ff50bdcdc530
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 65%
+source-wordcount: '2343'
+ht-degree: 64%
 
 ---
 
@@ -105,6 +105,13 @@ Per definire il modello è disponibile una selezione di tipi di dati:
    * Aggiungi uno o più campi di una singola riga di testo; la lunghezza massima può essere definita
 * **Testo su più righe**
    * Area di testo che può essere RTF, Testo normale o Markdown
+
+     >[!NOTE]
+     >
+     Per motivi di prestazioni, si consiglia di non disporre di più di dieci campi Rich Text in un modello.
+     >
+     Se necessario, è consigliabile utilizzare [frammenti di contenuto nidificati](#fragment-reference-nested-fragments) per distribuire il caricamento.
+
 * **Numero**
    * Aggiungi uno o più campi numerici
 * **Booleano**
@@ -125,7 +132,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
       * Creare un nuovo frammento di contenuto basato sul modello appropriato
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
-      * Per consentire all’AEM di memorizzare JSON diretto che hai copiato e incollato da un altro servizio.
+      * Per consentire ad AEM di memorizzare direttamente JSON copiato e incollato da un altro servizio.
       * Il codice JSON viene trasmesso e riprodotto come codice JSON in GraphQL.
       * Include le funzioni di evidenziazione della sintassi JSON, completamento automatico ed evidenziazione degli errori nell’editor dei frammenti di contenuto.
 * **Segnaposto scheda**
