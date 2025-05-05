@@ -258,7 +258,7 @@ Le autorizzazioni per i tag sono [&#39;sicure (per impostazione predefinita)&#39
       * ad esempio, passa a http://localhost:4502/useradmin
 
    * nel riquadro di sinistra, selezionare il gruppo (o l&#39;utente) per il quale deve essere concessa l&#39;[autorizzazione di lettura](/help/sites-administering/security.md#permissions)
-   * nel riquadro di destra, individua il **Percorso **dello spazio dei nomi dei tag
+   * nel riquadro di destra, individua il **Percorso &#x200B;** dello spazio dei nomi dei tag
 
       * ad esempio, `/content/cq:tags/mycommunity`
 

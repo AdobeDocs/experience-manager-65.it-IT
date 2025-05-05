@@ -184,7 +184,7 @@ I provider di stati gestiscono una proprietà di profilo e i relativi stati.
 
 ## Profili e account utente {#profiles-and-user-accounts}
 
-I profili vengono archiviati nel repository dei contenuti come parte dell&#39;account utente [](/help/sites-administering/user-group-ac-admin.md).
+I profili vengono archiviati nel repository dei contenuti come parte dell&#39;account utente [&#128279;](/help/sites-administering/user-group-ac-admin.md).
 
 Il profilo si trova in `/home/users/geometrixx`:
 

@@ -338,7 +338,7 @@ Ancora nessuna destinazione, ma implementa Adaptable e potrebbe essere utilizzat
 
 #### Sicurezza {#security}
 
-**Authorizable**, **User e **Group** si adattano a:
+**Authorizable**, **User e &#x200B;** Group** si adattano a:
 
 | [Nodo](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Restituisce il nodo principale dell&#39;utente/gruppo. |
 |---|---|

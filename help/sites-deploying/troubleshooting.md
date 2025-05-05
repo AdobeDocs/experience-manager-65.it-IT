@@ -72,7 +72,7 @@ Per risolvere i problemi, effettuare le seguenti operazioni:
 
 La stessa CRX ha un ingombro di memoria ridotto. Se l’applicazione in esecuzione in CRX ha requisiti di memoria più elevati o richiede operazioni che richiedono molta memoria (ad esempio, transazioni di grandi dimensioni), l’istanza JVM in cui viene eseguito CRX deve essere avviata con le impostazioni di memoria appropriate.
 
-Utilizza le opzioni di comando Java™ per definire le impostazioni di memoria della JVM (ad esempio, java -Xmx512m -jar crx&amp;ast;.jar per impostare heapsize su 512 MB).
+Utilizza le opzioni di comando Java™ per definire le impostazioni di memoria della JVM (ad esempio, java -Xmx512m -jar crx&ast;.jar per impostare heapsize su 512 MB).
 
 Specificare l&#39;opzione di impostazione della memoria durante l&#39;avvio di AEM WCM dalla riga di comando. È inoltre possibile modificare gli script di avvio/arresto di WCM AEM o gli script personalizzati per la gestione dell&#39;avvio di WCM AEM per definire le impostazioni di memoria richieste.
 
@@ -80,7 +80,7 @@ Se hai già definito l’heapsize su 512 MB, puoi analizzare ulteriormente il pr
 
 Per creare automaticamente un’immagine heap quando la memoria è esaurita, utilizza il comando seguente:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 Questo metodo genera un file dell&#39;immagine heap (**java_...hprof**) ogni volta che il processo esaurisce la memoria. Il processo può continuare a essere eseguito dopo la generazione dell’immagine heap.
 

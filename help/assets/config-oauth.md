@@ -52,6 +52,7 @@ I seguenti passaggi possono essere eseguiti dall&#39;amministratore di sistema i
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Aggiorna `auth.token.provider.client.id` con l&#39;ID client della nuova configurazione OAuth.
    * Aggiorna `auth.access.token.request` a `"https://ims-na1.adobelogin.com/ims/token/v3"`

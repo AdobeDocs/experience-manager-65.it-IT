@@ -75,6 +75,7 @@ Ulteriori informazioni su [Best practice per organizzare le risorse digitali per
    * Visualizzare in anteprima e pubblicare le risorse video
 
       * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
+
         [Anteprima video](managing-video-assets.md#upload-and-preview-video-assets) o [Anteprima risorse](previewing-assets.md)
         [Visualizza rappresentazioni video](video-renditions.md)
         [Gestione rappresentazioni video](manage-assets.md#managing-renditions)
@@ -85,9 +86,11 @@ Ulteriori informazioni su [Best practice per organizzare le risorse digitali per
    * Utilizzare i metadati video
 
       * Visualizza le proprietà di un rendering video codificato come frame rate, bitrate audio e video e codec:
+
         [Visualizza proprietà rappresentazione video](video-renditions.md)
 
       * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
+
         [Modifica proprietà video](manage-assets.md#editing-properties)
 
       * [Gestire i metadati per le risorse digitali](metadata.md)
@@ -112,9 +115,11 @@ Ulteriori informazioni su [Best practice per organizzare le risorse digitali per
    * Se utilizzi un sistema di gestione dei contenuti web di terze parti, puoi collegare o incorporare video nelle pagine web.
 
       * Integra video tramite URL:
+
         [Collega URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
       * Integra video utilizzando il codice di incorporamento in una pagina web:
+
         [Incorpora il visualizzatore video in una pagina Web](embed-code.md).
 
    * [Genera report video](#viewing-video-reports).

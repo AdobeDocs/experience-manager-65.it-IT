@@ -130,7 +130,7 @@ Puoi anche aggiungere citazioni nidificate. Esempio:
 
 Puoi creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizza il simbolo &amp;ast; davanti agli elementi dell’elenco. Esempio:
+Per creare un elenco non ordinato, utilizza il simbolo &ast; davanti agli elementi dell’elenco. Esempio:
 
     `* item in list`
 

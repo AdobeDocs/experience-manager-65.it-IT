@@ -84,6 +84,7 @@ I frammenti di contenuto con contenuto strutturato (ovvero, basati su un modello
 * Tutto il contenuto è archiviato nel nodo `jcr:content/data` della risorsa:
 
    * I dati dell’elemento vengono memorizzati nel sottonodo principale:
+
      `jcr:content/data/master`
 
    * Le varianti vengono memorizzate in un sottonodo che porta il nome della variante:
@@ -133,7 +134,7 @@ Per ulteriori dettagli vedi [Frammento di contenuto - Considerazioni sull&#39;el
 >
 >Il [componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) è ora consigliato. Per ulteriori dettagli, vedere [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
-È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. AEM fornisce il componente di base ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) [**Frammento di contenuto** - un componente [che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo componente core **Frammento di contenuto**.
+È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. AEM fornisce il componente di base [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) **Frammento di contenuto** - un componente [che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo componente core **Frammento di contenuto**.
 
 * Il componente utilizza la proprietà `fragmentPath` per fare riferimento al frammento di contenuto effettivo. La proprietà `fragmentPath` viene gestita nello stesso modo di proprietà simili di altri tipi di risorse, ad esempio quando il frammento di contenuto viene spostato in un’altra posizione.
 

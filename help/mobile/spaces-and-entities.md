@@ -118,7 +118,7 @@ La funzione **Copia lingua** consente agli autori di copiare la copia master in 
    >
    >I nodi della copia lingua possono esistere solo come figlio diretto dello spazio.
 
-1. Scegliere **Lingua pacchetto contenuti&amp;ast;** e immettere **Titolo&amp;ast;** nella finestra di dialogo **Crea copia lingua**.
+1. Scegliere **Lingua pacchetto contenuti&ast;** e immettere **Titolo&ast;** nella finestra di dialogo **Crea copia lingua**.
 
    Fai clic su **Crea**.
 
@@ -237,7 +237,7 @@ Se per la modellazione dei dati vengono raccolti elementi secondari di entità, 
 
 È possibile scegliere **Albero Publish** o **Publish rapido** per pubblicare l&#39;entità.
 
-1. Selezionate un&#39;entità dall&#39;elenco della console dello spazio e fate clic su **Albero Publish (Tree) **per pubblicare l&#39;entità e i relativi elementi figlio.
+1. Selezionate un&#39;entità dall&#39;elenco della console dello spazio e fate clic su **Albero Publish (Tree) &#x200B;** per pubblicare l&#39;entità e i relativi elementi figlio.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 

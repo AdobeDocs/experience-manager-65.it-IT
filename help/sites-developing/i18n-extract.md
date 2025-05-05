@@ -66,10 +66,10 @@ La parte pattern di una regola viene utilizzata per far corrispondere i nomi dei
 | Prefisso | Effetto |
 |---|---|
 | / | Indica un percorso JCR. Pertanto, questo prefisso corrisponde ai file sotto la directory jcr_root. |
-| &amp;ast; | Indica un file normale nel file system. |
+| &ast; | Indica un file normale nel file system. |
 | nessuno | Nessun prefisso o pattern che inizia con una cartella o un nome di file indica un file normale nel file system. |
 
-Se utilizzato all&#39;interno di un pattern, il carattere / indica una sottodirectory e il carattere &amp;ast; corrisponde a tutti. Nella tabella seguente sono elencati diversi esempi di regole.
+Se utilizzato all&#39;interno di un pattern, il carattere / indica una sottodirectory e il carattere &ast; corrisponde a tutti. Nella tabella seguente sono elencati diversi esempi di regole.
 
 <table>
  <tbody>

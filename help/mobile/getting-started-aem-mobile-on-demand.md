@@ -90,7 +90,7 @@ Per iniziare a usare i ruoli e le responsabilità degli sviluppatori, consulta [
 
 ## AEM Author {#aem-author}
 
-Un ***Autore AEM* (o *Addetto marketing*)**utilizza modelli e componenti sviluppati o predefiniti per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere supporti di tutti i tipi da DAM, inclusi immagini, video e frammenti di testo (frammenti di contenuto). L&#39;editor di contenuti integrato dell&#39;AEM viene quindi utilizzato da *autori AEM* per creare esperienze avanzate e rilevanti all&#39;interno dell&#39;app, inclusa l&#39;integrazione con il resto del Adobe Experience Cloud.
+Un ***Autore AEM* (o *Addetto marketing*)**&#x200B;utilizza modelli e componenti sviluppati o predefiniti per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere supporti di tutti i tipi da DAM, inclusi immagini, video e frammenti di testo (frammenti di contenuto). L&#39;editor di contenuti integrato dell&#39;AEM viene quindi utilizzato da *autori AEM* per creare esperienze avanzate e rilevanti all&#39;interno dell&#39;app, inclusa l&#39;integrazione con il resto del Adobe Experience Cloud.
 
 Un autore AEM deve comprendere i seguenti argomenti durante la creazione di un’app tramite AEM Mobile On-demand Services:
 

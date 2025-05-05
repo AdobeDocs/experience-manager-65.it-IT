@@ -52,6 +52,7 @@ Ecco alcuni suggerimenti di carattere generale su come creare URL per l’ottimi
    * Se utilizzi selettori in una pagina, scegli quelli che forniscono valori semantici.
    * Se un utente non riesce a interpretare l’URL, non può farlo nemmeno un motore di ricerca.
    * Ad esempio:
+
      `mybrand.com/products/product-detail.product-category.product-name.html`
 è da preferirsi a `mybrand.com/products/product-detail.1234.html`
 
@@ -256,6 +257,7 @@ Tuttavia, esiste anche un modo più semplice per gestire questo problema:
    Utilizzando la console web, ad esempio localhost:4502/system/console/configMgr, puoi configurare Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
+
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    L&#39;Adobe consiglia di creare le mappature necessarie per ridurre gli URL come espressioni regolari, quindi di definire queste configurazioni in un nodo OsgiConfignode, `config.publish`, incluso nella build.

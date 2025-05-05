@@ -93,6 +93,7 @@ Per configurare la connettività Connected Assets e la connettività locale di [
 1. Accedere a una distribuzione [!DNL Sites] esistente o crearne una utilizzando il comando seguente:
 
    1. Nella cartella del file JAR, eseguire il comando seguente su un terminale per creare ogni server [!DNL Experience Manager].
+
       `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. Dopo alcuni minuti, il server [!DNL Experience Manager] verrà avviato correttamente. Considera questa distribuzione [!DNL Sites] come computer locale per l&#39;authoring delle pagine Web, ad esempio in `https://[local_sites]:4502`.

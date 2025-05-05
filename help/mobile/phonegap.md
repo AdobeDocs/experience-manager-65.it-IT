@@ -29,7 +29,7 @@ L’avvio di una nuova esperienza di app AEM Mobile richiede una coerenza di ruo
 
 ## Creazione di applicazioni PhoneGap {#authoring-phonegap-applications}
 
-Un ***Autore AEM* (o *Addetto marketing*)**è in grado di utilizzare i modelli e i componenti predefiniti per aggiungere e modificare le pagine. Puoi trascinare e rilasciare componenti e aggiungere file multimediali di tutti i tipi dal DAM, incluse immagini, video e frammenti di testo (frammenti di contenuto).
+Un ***Autore AEM* (o *Addetto marketing*)**&#x200B;è in grado di utilizzare i modelli e i componenti predefiniti per aggiungere e modificare le pagine. Puoi trascinare e rilasciare componenti e aggiungere file multimediali di tutti i tipi dal DAM, incluse immagini, video e frammenti di testo (frammenti di contenuto).
 
 Consulta le risorse seguenti:
 

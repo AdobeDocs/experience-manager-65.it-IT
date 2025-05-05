@@ -119,7 +119,7 @@ Per ulteriori informazioni, consulta i seguenti documenti:
 
 ### Controllo accesso {#access-control}
 
-I tag esistono come nodi nell&#39;archivio nel nodo principale della tassonomia [](#taxonomy-root-node). È possibile consentire o negare agli autori e ai visitatori del sito la creazione di tag in un determinato spazio dei nomi impostando ACL appropriati nell’archivio.
+I tag esistono come nodi nell&#39;archivio nel nodo principale della tassonomia [&#128279;](#taxonomy-root-node). È possibile consentire o negare agli autori e ai visitatori del sito la creazione di tag in un determinato spazio dei nomi impostando ACL appropriati nell’archivio.
 
 Inoltre, il rifiuto delle autorizzazioni di lettura per alcuni tag o spazi dei nomi controlla la possibilità di applicare tag a contenuto specifico.
 

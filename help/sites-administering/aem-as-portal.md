@@ -171,7 +171,7 @@ Il portlet può essere configurato con una propria cache, in modo che il contenu
 Una volta distribuita la cache, il portlet memorizza in cache i contenuti dell’istanza Publish. La cache del portlet può essere invalidata con uno svuotamento del dispatcher dall’AEM. Per configurare il portlet in modo che utilizzi la propria cache:
 
 1. Configurare un agente di replica nell&#39;istanza di authoring che esegua il targeting del server portale.
-1. Supponendo che il server portale sia in esecuzione sull&#39;host **localhost**, **porta 8080 **e che l&#39;applicazione Web portlet AEM sia montata nel contesto **cqportlet**, l&#39;URL per svuotare la cache è `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilizza GET come metodo.
+1. Supponendo che il server portale sia in esecuzione sull&#39;host **localhost**, **porta 8080 &#x200B;** e che l&#39;applicazione Web portlet AEM sia montata nel contesto **cqportlet**, l&#39;URL per svuotare la cache è `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilizza GET come metodo.
    **Nota:** Anziché utilizzare un parametro di richiesta, è possibile inviare un&#39;intestazione http denominata **Percorso**.
 
 #### Scaricamento della cache tramite l’agente di replica {#flushing-the-cache-via-replication-agent}
@@ -526,7 +526,7 @@ title="{text}"/>
 
 #### Installazione di un layout personalizzato {#installing-a-custom-layout}
 
-Per installare un layout personalizzato, accedi alla sezione **Bundle **console web OSGI del portlet) e carica il bundle.
+Per installare un layout personalizzato, accedi alla sezione **Bundle &#x200B;** console web OSGI del portlet) e carica il bundle.
 
 #### Pacchetti {#packages}
 
@@ -610,7 +610,7 @@ Se il sito non dispone di regole severe per la gestione delle informazioni sulle
 
 I seguenti servizi hanno un’implementazione predefinita nel portlet dei contenuti (con la corrispondente interfaccia Java). Per personalizzare, è necessario distribuire nell&#39;applicazione portlet un bundle contenente la nuova implementazione del servizio.
 
-Quando implementi tale servizio, assicurati di impostare la proprietà **service.ranking** del servizio su un valore positivo. L’implementazione predefinita utilizza la classificazione** 0** e il portlet utilizza il servizio con la classificazione più alta.
+Quando implementi tale servizio, assicurati di impostare la proprietà **service.ranking** del servizio su un valore positivo. L’implementazione predefinita utilizza la classificazione **&#x200B; 0** e il portlet utilizza il servizio con la classificazione più alta.
 
 | **Nome** | **Descrizione** | **Comportamento predefinito** |
 |---|---|---|
@@ -715,7 +715,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 1. Fai doppio clic sul componente per aprire le proprietà Portlet.
 1. Nel menu a discesa **Entità portlet**, selezionare il portlet dall&#39;elenco.
-1. Selezionare o deselezionare la casella di controllo **Nascondi barra del titolo **a seconda che si desideri visualizzare la barra del titolo del portlet.
+1. Selezionare o deselezionare la casella di controllo **Nascondi barra del titolo &#x200B;** a seconda che si desideri visualizzare la barra del titolo del portlet.
 1. Nel campo **Finestra portlet**, immettere un ID univoco per la finestra portlet, se necessario.
 
    >[!NOTE]

@@ -80,10 +80,10 @@ Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagi
    >Il tag &lt;div id=&quot;rightdiv&quot;> della **riga 18** contiene lo snippet HTML del modulo XFA.
    >
    >
-   Lo stile della pagina è in due contenitori: **left** e **right**. Il contenitore corretto contiene il modulo. Il contenitore sinistro dispone di due campi di input e fa parte della pagina HTML esterna.
+   >Lo stile della pagina è in due contenitori: **left** e **right**. Il contenitore corretto contiene il modulo. Il contenitore sinistro dispone di due campi di input e fa parte della pagina HTML esterna.
    >
    >
-   Nella schermata seguente viene illustrato come il modulo viene visualizzato in un browser.
+   >Nella schermata seguente viene illustrato come il modulo viene visualizzato in un browser.
 
    ![portale](assets/portal.jpg)
 

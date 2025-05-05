@@ -7,7 +7,7 @@ ht-degree: 1%
 ---
 # Snippet {#snippets}
 
-## L&#39;editor universale è da preferirsi all&#39;editor SPA {#ue-over-spa}
+## L'editor universale è da preferirsi all'editor SPA {#ue-over-spa}
 
 >[!IMPORTANT]
 >
@@ -16,7 +16,7 @@ ht-degree: 1%
 >* [Editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva di contenuti headless.
 >* [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo di contenuti headless.
 
-## L&#39;editor universale è preferito rispetto a Mobile {#ue-over-mobile}
+## L'editor universale è preferito rispetto a Mobile {#ue-over-mobile}
 
 >[!IMPORTANT]
 >

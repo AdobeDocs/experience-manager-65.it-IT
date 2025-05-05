@@ -42,13 +42,13 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->&amp;ast; Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, il collegamento `Ctrl-Shift-m` non è più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
+>&ast; Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, il collegamento `Ctrl-Shift-m` non è più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano le [console](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
-Le scelte rapide da tastiera dell’editor sono sempre attive, anche se le [scelte rapide della console sono state disattivate](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Le scelte rapide da tastiera dell’editor sono sempre attive, anche se le [scelte rapide della console sono state disattivate](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Tasti modificatori specifici del sistema operativo {#os-specific-modifier-keys}
 

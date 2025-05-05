@@ -143,6 +143,7 @@ Eseguire la procedura seguente per configurare un nuovo [!DNL Adobe Stock IMS co
    * **[!UICONTROL Ambito]**: passa al dashboard del progetto, fai clic sull&#39;opzione **[!UICONTROL OAuth Server-to-Server]** disponibile nel riquadro a sinistra, seleziona **[!UICONTROL Dettagli credenziali]**, copia **[!UICONTROL Ambito]** e incollalo qui (vedi [passaggio 7](#set-up-a-program-in-developer-console)).
 
    * **[!UICONTROL ID organizzazione]**: passa al dashboard del progetto, fai clic sull&#39;opzione **[!UICONTROL OAuth Server-to-Server]** disponibile nel riquadro a sinistra, seleziona **[!UICONTROL Dettagli credenziali]**, copia il **[!UICONTROL ID organizzazione]** e incollalo qui (vedi [passaggio 7](#set-up-a-program-in-developer-console)).
+
      ![risorse aem e adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. Fai clic su **[!UICONTROL Crea]**. Viene aperta la pagina **[!UICONTROL Configurazioni Adobe IMS]** in cui viene visualizzata l&#39;integrazione [!DNL Adobe Stock] creata.
 

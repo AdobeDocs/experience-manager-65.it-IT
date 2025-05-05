@@ -56,7 +56,7 @@ Il foglio di lavoro **Heartbeat progetto** fornisce una panoramica grafica delle
 
 ## Stato per Ruolo {#status-by-role}
 
-Il foglio di lavoro **Stato per ruolo** mostra un raggruppamento dettagliato di [**Integrità**, **Qualità e **Completezza**](#projectheartbeat) per **[Fase](#phases-and-milestones)** e **[Persona](#persona)**.
+Il foglio di lavoro **Stato per ruolo** mostra un raggruppamento dettagliato di [**Integrità**, **Qualità e &#x200B;** Completezza&#x200B;**](#projectheartbeat) per &#x200B;** [Fase](#phases-and-milestones)**&#x200B; e &#x200B;** [Persona](#persona)**.
 
 ## Fasi e attività cardine {#phases-and-milestones}
 

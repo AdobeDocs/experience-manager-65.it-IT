@@ -40,7 +40,7 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
 È possibile configurare i database relazionali utilizzando Configurazione console Web AEM. Effettua le seguenti operazioni:
 
 1. Passa alla console Web AEM all&#39;indirizzo `https://server:host/system/console/configMgr`.
-1. Cerca la configurazione dell&#39;]**dell&#39;origine dati in pool di connessione Apache Sling**[!UICONTROL . Seleziona per aprire la configurazione in modalità di modifica.
+1. Cerca la configurazione dell&#39;**dell&#39;origine dati in pool di connessione Apache Sling**. Seleziona per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo di configurazione specificare i dettagli del database che si desidera configurare, ad esempio:
 
    * Nome dell’origine dati
@@ -95,7 +95,7 @@ Puoi configurare il profilo utente AEM utilizzando la configurazione del connett
 
 >[!NOTE]
 >
-Per configurare i servizi cloud per i servizi RESTful, SOAP e OData è necessaria la configurazione della cartella Servizi cloud.
+>Per configurare i servizi cloud per i servizi RESTful, SOAP e OData è necessaria la configurazione della cartella Servizi cloud.
 
 Tutte le configurazioni dei servizi cloud in AEM sono consolidate nella cartella `/conf` nell&#39;archivio AEM. Per impostazione predefinita, la cartella `conf` contiene la cartella `global` in cui è possibile creare configurazioni del servizio cloud. Tuttavia, devi abilitarlo manualmente per le configurazioni cloud. È inoltre possibile creare cartelle aggiuntive in `conf` per creare e organizzare le configurazioni del servizio cloud.
 
@@ -153,7 +153,7 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
 1. Selezionare **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
 
-1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL  per l&#39;origine dati REST]:
+1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL &#x200B; per l&#39;origine dati REST]:
 
    * Specifica il numero massimo di connessioni consentite tra il modello di dati del modulo e i servizi Web RESTful nel campo **[!UICONTROL Limite di connessioni in totale]**. Il valore predefinito è 20 connessioni.
 
@@ -193,8 +193,8 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 
 >[!NOTE]
 >
-Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
-Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
+>Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
@@ -208,7 +208,7 @@ Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online 
 
    >[!NOTE]
    >
-   Seleziona il tipo di autenticazione OAuth 2.0 per connettersi ai servizi Microsoft Dynamics utilizzando l’endpoint OData come radice del servizio.
+   >Seleziona il tipo di autenticazione OAuth 2.0 per connettersi ai servizi Microsoft Dynamics utilizzando l’endpoint OData come radice del servizio.
 
 1. Selezionare **Crea** per creare la configurazione cloud per il servizio OData.
 

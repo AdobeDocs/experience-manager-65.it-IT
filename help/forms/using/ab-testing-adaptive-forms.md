@@ -109,7 +109,7 @@ Puoi selezionare il pubblico quando configuri il test A/B per un modulo, come mo
 1. Fai clic sullo strumento **Seleziona** nella barra degli strumenti e seleziona il modulo adattivo.
 1. Fai clic su **Altro** nella barra degli strumenti e seleziona **Configura test A/B**. Viene visualizzata la pagina Configura test A/B.
 
-[](assets/ab-test-configure-1.png)
+[&#128279;](assets/ab-test-configure-1.png)
 
 1. Specifica un **Nome attività** per il test A/B.
 
@@ -153,7 +153,7 @@ Per visualizzare e analizzare il rapporto del test A/B:
 
 1. Selezionare il modulo adattivo, fare clic su **Altro** e quindi su **Rapporto test A/B**. Il report viene visualizzato.
 
-[](assets/ab-test-report-3.png)
+[&#128279;](assets/ab-test-report-3.png)
 
 1. Analizza il rapporto e verifica di disporre di un numero sufficiente di punti dati per dichiarare vincitrice una delle esperienze con prestazioni migliori. Puoi scegliere di continuare con lo stesso test A/B per più tempo o dichiarare un vincitore e terminare il test A/B.
 1. Per dichiarare un vincitore e terminare il test A/B, fare clic sul pulsante **Termina test A/B** nel dashboard di reporting. Viene visualizzata una finestra di dialogo in cui viene richiesto di dichiarare vincitrice una delle due esperienze. Scegli un vincitore e conferma di terminare il test A/B.

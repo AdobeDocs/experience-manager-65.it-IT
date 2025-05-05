@@ -47,7 +47,7 @@ Durante la preparazione della comunicazione interattiva tramite l’interfaccia 
 
 ### Inserisci dati {#enter-data}
 
-1. Nella scheda Dati, immettere i dati per le variabili, le proprietà del modello di dati del modulo e i campi del modello di stampa (XDP), come richiesto. Compila tutti i campi obbligatori contrassegnati da un asterisco (&amp;ast;) per abilitare il pulsante **Invia**.
+1. Nella scheda Dati, immettere i dati per le variabili, le proprietà del modello di dati del modulo e i campi del modello di stampa (XDP), come richiesto. Compila tutti i campi obbligatori contrassegnati da un asterisco (&ast;) per abilitare il pulsante **Invia**.
 
    Seleziona un valore per un campo dati nell’anteprima della comunicazione interattiva per evidenziare il campo dati corrispondente nella scheda Dati o viceversa.
 

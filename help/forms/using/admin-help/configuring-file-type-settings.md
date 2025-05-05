@@ -126,7 +126,7 @@ Le seguenti opzioni determinano la modalità di conversione dei file di immagine
 
 **Usa OCR:** Specifica se applicare OCR (riconoscimento ottico dei caratteri) al PDF. Il software OCR consente di cercare, correggere e copiare il testo nel PDF.
 
-***nota **: la funzionalità PDF OCR (PDF ricercabile) è supportata solo in Microsoft Windows.*
+***nota &#x200B;**: la funzionalità PDF OCR (PDF ricercabile) è supportata solo in Microsoft Windows.*
 
 **Lingua OCR primaria:** Specifica la lingua che il motore OCR deve utilizzare per identificare i caratteri.
 
@@ -265,7 +265,7 @@ Per istruzioni sull&#39;accesso a questa impostazione, vedere [Creare o modifica
 
    >[!NOTE]
    >
-   >*Se si utilizza questa opzione in combinazione con **Alcuni tipi di carattere non incorporati**, i tipi di carattere nell&#39;elenco **Aggiungi tipi di carattere a non incorporati**sono ancora completamente non incorporati.*
+   >*Se si utilizza questa opzione in combinazione con **Alcuni tipi di carattere non incorporati**, i tipi di carattere nell&#39;elenco **Aggiungi tipi di carattere a non incorporati**&#x200B;sono ancora completamente non incorporati.*
 
    >[!NOTE]
    >

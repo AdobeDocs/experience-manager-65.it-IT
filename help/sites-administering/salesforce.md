@@ -47,7 +47,7 @@ Per configurare l’AEM per l’integrazione con Salesforce:
 
 >[!CAUTION]
 >
->Installa il pacchetto di integrazione dell&#39;API ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) di Salesforce [prima di continuare con la procedura. Per ulteriori dettagli su come utilizzare i pacchetti, vedere la pagina [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md#package-share).
+>Installa il pacchetto di integrazione dell&#39;API [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) di Salesforce prima di continuare con la procedura. Per ulteriori dettagli su come utilizzare i pacchetti, vedere la pagina [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md#package-share).
 
 1. In AEM, passa a **Cloud Service**. In Servizi di terze parti, fare clic su **Configura ora** in **Salesforce**.
 

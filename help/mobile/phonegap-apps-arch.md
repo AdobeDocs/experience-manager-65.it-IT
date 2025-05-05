@@ -191,7 +191,7 @@ Si noti il GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; nel percorso.
 
 In qualità di sviluppatore di PhoneGap, il contenuto che ti interessa si trova sotto la directory www. Per accedere alle risorse dell’app, usa i percorsi relativi.
 
-Per aggravare il problema, l’applicazione PhoneGap utilizza il modello di app a pagina singola (SPA) in modo che l’URI di base (escluso l’hash) non cambi mai. Pertanto, ogni risorsa, modello o script a cui fai riferimento **deve essere relativo alla pagina di livello principale. **La pagina di primo livello inizializza il routing e i controller Angular in virtù di `*<name>*.angular-app-module.js` e `*<name>*.angular-app-controllers.js`. Questa pagina deve essere quella più vicina alla directory principale dell’archivio che *non *estende un reindirizzamento sling:redirect.
+Per aggravare il problema, l’applicazione PhoneGap utilizza il modello di app a pagina singola (SPA) in modo che l’URI di base (escluso l’hash) non cambi mai. Pertanto, ogni risorsa, modello o script a cui fai riferimento **deve essere relativo alla pagina di livello principale. &#x200B;** La pagina di primo livello inizializza il routing e i controller Angular in virtù di `*<name>*.angular-app-module.js` e `*<name>*.angular-app-controllers.js`. Questa pagina deve essere quella più vicina alla directory principale dell’archivio che *non *estende un reindirizzamento sling:redirect.
 
 Sono disponibili diversi metodi di supporto per gestire i percorsi relativi:
 

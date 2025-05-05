@@ -82,7 +82,7 @@ Quando l’elaborazione delle richieste genera un’eccezione, il framework Slin
 
   nel corpo della risposta.
 
-È possibile creare uno script `500.jsp` personalizzando le pagine visualizzate dal gestore degli errori](#how-to-customize-pages-shown-by-the-error-handler). [ Tuttavia, viene utilizzato solo se `HttpServletResponse.sendError(500)` viene eseguito in modo esplicito, ovvero da un servizio di raccolta eccezioni.
+È possibile creare uno script `500.jsp` personalizzando le pagine visualizzate dal gestore degli errori[&#128279;](#how-to-customize-pages-shown-by-the-error-handler).  Tuttavia, viene utilizzato solo se `HttpServletResponse.sendError(500)` viene eseguito in modo esplicito, ovvero da un servizio di raccolta eccezioni.
 
 In caso contrario, il codice di risposta è impostato su 500, ma lo script `500.jsp` non viene eseguito.
 

@@ -48,7 +48,7 @@ In AEM 6.3, per impostazione predefinita, quando viene raggiunto un attraversame
 
 #### Durante lo sviluppo {#during-development}
 
-Spiega **tutte** le query e assicurati che i relativi piani di query non contengano la spiegazione **/&amp;ast; traverse**. Esempio di piano di query di attraversamento:
+Spiega **tutte** le query e assicurati che i relativi piani di query non contengano la spiegazione **/&ast; traverse**. Esempio di piano di query di attraversamento:
 
 * **PIANO:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 

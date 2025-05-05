@@ -37,7 +37,7 @@ Espressione supportata per la clausola Date Picture:
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{date} Simboli della clausola immagine}
+* date{date} Simboli della clausola immagine&rbrace;
 
 >[!NOTE]
 >

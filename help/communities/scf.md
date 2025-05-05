@@ -60,7 +60,7 @@ Per personalizzare o estendere i componenti, scrivi solo le sovrapposizioni e le
 * Per aggiungere l&#39;elaborazione personalizzata durante le operazioni:
    * Scrivere un [OperationExtension](server-customize.md#operationextension-class).
 * Per aggiungere un&#39;operazione personalizzata:
-   * Crea un&#39;operazione Sling Post [](server-customize.md#postoperation-class).
+   * Crea un&#39;operazione Sling Post [&#128279;](server-customize.md#postoperation-class).
    * Utilizza [OperationServices](server-customize.md#operationservice-class) esistente in base alle esigenze.
    * Aggiungi il codice JavaScript per richiamare l’operazione dal lato client in base alle esigenze.
 

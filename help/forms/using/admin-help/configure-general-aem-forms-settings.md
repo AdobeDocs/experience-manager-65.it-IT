@@ -77,7 +77,7 @@ Per ulteriori informazioni sulla directory GDS, vedere [Preparazione all&#39;ins
 
 **Posizione della directory Caratteri cliente** *ndash; digitare il percorso di una directory contenente i caratteri aggiuntivi che si desidera utilizzare.
 
-***nota **: i tipi di carattere vengono selezionati dalla cache dei tipi di carattere del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei caratteri del cliente, assicurarsi di riavviare il sistema in cui sono installati i moduli AEM.*
+***nota &#x200B;**: i tipi di carattere vengono selezionati dalla cache dei tipi di carattere del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei caratteri del cliente, assicurarsi di riavviare il sistema in cui sono installati i moduli AEM.*
 
 **Posizione della directory System Fonts** *ndash; digitare il percorso della directory dei font fornita dal sistema operativo. È possibile aggiungere più directory, separate da un punto e virgola **;**.
 

@@ -397,11 +397,11 @@ Una delle sfide principali per le organizzazioni è la gestione dei dati persona
 
 L’editor di regole di AEM Forms fornisce un’interfaccia visiva per la creazione e la gestione delle regole, riducendo la necessità di ricorrere a estese funzioni di codifica. Può essere particolarmente utile per gli utenti aziendali o i progettisti di moduli che non dispongono di competenze avanzate di programmazione ma devono definire e mantenere regole di business all’interno dei moduli. A questo proposito vengono descritti alcuni casi d’uso in cui l’editor di regole consente di:
 
-* <!-- Allows you --> Definire le regole aziendali per i moduli senza la necessità di una programmazione estesa.
-* <!-- Use the Rule Editor when you need --> Per implementare la logica condizionale nei moduli. Ciò include la visualizzazione o l&#39;eliminazione di elementi modulo, la modifica dei valori dei campi in base a determinate condizioni o la modifica dinamica del comportamento dei moduli.
-* <!--When you want --> Per applicare le regole di convalida dei dati all’invio di moduli, è possibile utilizzare l’Editor di regole per definire le condizioni di convalida.
-* <!-- When you need --> Per integrare i moduli con origini dati o servizi esterni, l&#39;editor di regole consente di definire regole per il recupero, la visualizzazione o la modifica dei dati durante le interazioni dei moduli.
-* <!-- If you want -->Per creare moduli dinamici e interattivi che rispondano alle azioni dell’utente, l’Editor regole consente di definire regole che disciplinano il comportamento degli elementi del modulo in tempo reale.
+* &#x200B;<!-- Allows you --> Definire le regole aziendali per i moduli senza la necessità di una programmazione estesa.
+* &#x200B;<!-- Use the Rule Editor when you need --> Per implementare la logica condizionale nei moduli. Ciò include la visualizzazione o l&#39;eliminazione di elementi modulo, la modifica dei valori dei campi in base a determinate condizioni o la modifica dinamica del comportamento dei moduli.
+* &#x200B;<!--When you want --> Per applicare le regole di convalida dei dati all’invio di moduli, è possibile utilizzare l’Editor di regole per definire le condizioni di convalida.
+* &#x200B;<!-- When you need --> Per integrare i moduli con origini dati o servizi esterni, l&#39;editor di regole consente di definire regole per il recupero, la visualizzazione o la modifica dei dati durante le interazioni dei moduli.
+* &#x200B;<!-- If you want -->Per creare moduli dinamici e interattivi che rispondano alle azioni dell’utente, l’Editor regole consente di definire regole che disciplinano il comportamento degli elementi del modulo in tempo reale.
 
 L’editor di regole è disponibile sia per i componenti di AEM Forms Foundation che per i componenti core.
 

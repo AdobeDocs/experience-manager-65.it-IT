@@ -325,7 +325,7 @@ Per applicare gli hotfix a una configurazione di standby a freddo, si consiglia 
 
 Per farlo, segui i passaggi descritti di seguito:
 
-1. Arresta il processo di sincronizzazione sull’istanza in standby a freddo passando alla console JMX e utilizzando **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Per ulteriori informazioni su come eseguire questa operazione, vedere la sezione relativa al [monitoraggio](#monitoring).
+1. Arresta il processo di sincronizzazione sull’istanza in standby a freddo passando alla console JMX e utilizzando **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**&#x200B;bean. Per ulteriori informazioni su come eseguire questa operazione, vedere la sezione relativa al [monitoraggio](#monitoring).
 1. Arrestare l&#39;istanza di standby a freddo.
 1. Installa l’hotfix sull’istanza primaria. Per ulteriori dettagli su come installare un hotfix, vedi [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 1. Verificare la presenza di eventuali problemi dopo l&#39;installazione.

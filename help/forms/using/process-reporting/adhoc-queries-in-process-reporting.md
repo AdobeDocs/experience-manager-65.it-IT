@@ -149,7 +149,7 @@ Utilizza le opzioni del pannello **Filtri personali** per **aggiungere** ![lc_pr
    ![risultato_ricerca_attività](assets/task_search_result.png)
 
 1. Fai clic sul pulsante della barra ![lc_pr_rail_button](assets/lc_pr_rail_button.png) in alto a sinistra per comprimere il riquadro **I miei filtri** ed espandere lo spazio disponibile per il pannello **Report**.
-1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report **per eseguire operazioni sui risultati della query.
+1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report &#x200B;** per eseguire operazioni sui risultati della query.
 
    * **Aggiorna**: aggiorna il report con i dati più recenti presenti nell&#39;archivio
 

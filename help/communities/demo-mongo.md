@@ -130,7 +130,7 @@ Questo processo avvia un server HTTP Solr utilizzando la porta predefinita 8983.
 >
 >Se la console Solr non è disponibile, controllare i registri in &lt;solrinstall>/example/logs. Verificare se SOLR sta tentando di eseguire il binding a un nome host specifico che non può essere risolto (ad esempio, &quot;user-macbook-pro&quot;).
 >
-In tal caso, aggiornare il file `etc/hosts` con una nuova voce per questo nome host (ad esempio, 127.0.0.1 user-macbook-pro) in modo da avviare correttamente Solr.
+>In tal caso, aggiornare il file `etc/hosts` con una nuova voce per questo nome host (ad esempio, 127.0.0.1 user-macbook-pro) in modo da avviare correttamente Solr.
 
 ### SolrCloud {#solrcloud}
 

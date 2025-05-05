@@ -157,9 +157,11 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
      ```
 
    * Dichiarazioni di variabili con data-sly-set :
+
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Elenca e ripeti parametri di controllo: begin, step, end:
+
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identificatori per data-sly-unwrap:

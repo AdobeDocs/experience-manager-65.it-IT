@@ -73,7 +73,7 @@ Durante la creazione di proprietà personalizzate ricercabili, è necessario ris
 
 Per [JSRP](jsrp.md), UGC è archiviato in [Oak](../../help/sites-deploying/platform.md) ed è visibile solo nell&#39;archivio dell&#39;istanza di Publish o di creazione AEM in cui è stato immesso.
 
-Poiché UGC viene in genere immesso nell&#39;ambiente Publish, per i sistemi di produzione con più editori è necessario configurare un cluster di pubblicazione [](topologies.md), non una farm di pubblicazione, in modo che il contenuto immesso sia visibile da tutti gli editori.
+Poiché UGC viene in genere immesso nell&#39;ambiente Publish, per i sistemi di produzione con più editori è necessario configurare un cluster di pubblicazione [&#128279;](topologies.md), non una farm di pubblicazione, in modo che il contenuto immesso sia visibile da tutti gli editori.
 
 Per JSRP, le voci UGC immesse nell’ambiente Publish non sono mai visibili nell’ambiente di authoring. Pertanto, tutte le [attività di moderazione](moderate-ugc.md) si svolgono nell&#39;ambiente Publish.
 

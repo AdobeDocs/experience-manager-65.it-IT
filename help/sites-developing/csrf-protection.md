@@ -45,6 +45,6 @@ Per utilizzare i token, devi replicare il file binario HMAC in tutte le istanze 
 
 >[!NOTE]
 >
->Se utilizzi la cache del manifesto con l&#39;applicazione Web, assicurati di aggiungere &quot;**&amp;ast;**&quot; al manifesto per assicurarti che il token non metta offline la chiamata di generazione del token CSRF. Per ulteriori informazioni, consulta questo [collegamento](https://www.w3.org/TR/offline-webapps/).
+>Se utilizzi la cache del manifesto con l&#39;applicazione Web, assicurati di aggiungere &quot;**&ast;**&quot; al manifesto per assicurarti che il token non metta offline la chiamata di generazione del token CSRF. Per ulteriori informazioni, consulta questo [collegamento](https://www.w3.org/TR/offline-webapps/).
 >
-Per ulteriori informazioni sugli attacchi CSRF e sui modi per mitigarli, vedere la [pagina OWASP Cross-Site Request Forgery](https://owasp.org/www-community/attacks/csrf).
+>Per ulteriori informazioni sugli attacchi CSRF e sui modi per mitigarli, vedere la [pagina OWASP Cross-Site Request Forgery](https://owasp.org/www-community/attacks/csrf).

@@ -581,6 +581,7 @@ I criteri di pagina consentono di definire il [criterio contenuto](#content-poli
    * Impostazione della proprietà di stato nel nodo `jcr:content`.
 
       * Ad esempio, su:
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definisci la proprietà:
@@ -593,6 +594,7 @@ I criteri di pagina consentono di definire il [criterio contenuto](#content-poli
 
    * [Definisci i percorsi dei modelli consentiti nelle **Proprietà pagina**](/help/sites-authoring/templates.md#allowing-a-template-author) della pagina appropriata o della pagina principale di un ramo secondario.
    * Imposta la proprietà:
+
      `cq:allowedTemplates`
 Nel nodo `jcr:content` del ramo richiesto.
 

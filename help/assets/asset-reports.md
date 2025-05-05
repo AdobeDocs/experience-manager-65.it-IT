@@ -164,7 +164,7 @@ Per rimuovere i rapporti che non sono più necessari, configura il servizio Rimo
 
 ## Informazioni, suggerimenti e limitazioni per la risoluzione dei problemi {#best-practices-and-limitations}
 
-* Se alcuni rapporti o numeri nei rapporti non sono disponibili o come previsto, assicurati che il servizio Registrazione eventi DAM CQ ] di [!UICONTROL giorno sia abilitato.
+* Se alcuni rapporti o numeri nei rapporti non sono disponibili o come previsto, assicurati che il servizio Registrazione eventi DAM CQ  di giorno sia abilitato.
 
 * Rimuovi i rapporti che non sono più necessari. Utilizza le opzioni di configurazione nel servizio Rimozione report DAM per configurare i criteri per l’eliminazione dei report.
 

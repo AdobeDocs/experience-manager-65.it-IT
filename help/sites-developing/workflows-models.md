@@ -415,6 +415,7 @@ Per definire una regola OR, procedere come segue:
    * Definisci come **Route predefinita** impostando **Valore** su `true`.
 
    * Imposta il percorso dello script come **Regola**. Ad esempio:
+
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -424,6 +425,7 @@ Per definire una regola OR, procedere come segue:
 1. Modifica le proprietà del **ramo 2** della **divisione OR**.
 
    * Imposta il percorso dell&#39;altro script come **Regola**. Ad esempio:
+
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Imposta le proprietà dei singoli passaggi in ciascun ramo. Verificare che l&#39;**utente/gruppo** sia impostato.

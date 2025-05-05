@@ -73,7 +73,7 @@ Per impostazione predefinita, Gestione utenti registra le statistiche dettagliat
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
 1. In Espressione cron Synch Finisher immettere un&#39;espressione cron che rappresenta l&#39;intervallo di tempo in cui i tentativi di sincronizzazione non sono riusciti da parte di Gestione utente. L’utilizzo delle espressioni cron si basa sul sistema di pianificazione dei processi open source Quartz, versione 1.4.0.
 
-   Il valore predefinito è 0 0/13 &amp;ast; ? &amp;ast; , il che significa che il controllo viene eseguito ogni 13 minuti.
+   Il valore predefinito è 0 0/13 &ast; ? &ast; , il che significa che il controllo viene eseguito ogni 13 minuti.
 
 ## Sincronizzare manualmente le directory {#manually-synchronize-directories}
 

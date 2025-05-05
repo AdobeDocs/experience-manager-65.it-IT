@@ -66,7 +66,7 @@ Assicurati di aggiungere il gruppo creato come membro del gruppo di utenti prede
 Per associare gruppi di utenti a un modulo adattivo:
 
 1. In modalità creazione, passa a **Forms** > **Forms e documenti**.
-1. Utilizza l&#39;opzione **Seleziona **per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
+1. Utilizza l&#39;opzione **Seleziona &#x200B;** per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
 1. Nella finestra Proprietà del modulo fare clic su **Modifica** e quindi su **AVANZATE**.
 1. Immettere il gruppo nel campo gruppo revisore invio e fare clic su **Fine**.
 

@@ -59,13 +59,13 @@ Per una discussione sul funzionamento del lease e della sincronizzazione offline
 
 Se si seleziona questa opzione, le applicazioni client potranno utilizzare l&#39;autenticazione estesa. L’autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server AEM Forms. Ad esempio, ora gli utenti possono utilizzare l’autenticazione basata su SAML invece dei moduli AEM nome utente/password di Acrobat e client di Reader. Per impostazione predefinita, l&#39;URL di destinazione contiene *localhost* come nome del server. Sostituisci il nome del server con un nome host completo. Se l’autenticazione estesa non è ancora abilitata, il nome host nell’URL di destinazione viene popolato automaticamente dall’URL di base. Vedere [Aggiungere il provider di autenticazione estesa](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
-***nota **: l&#39;autenticazione estesa è supportata in Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successive.*
+***nota &#x200B;**: l&#39;autenticazione estesa è supportata in Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successive.*
 
 **Larghezza controllo HTML preferenziale per autenticazione estesa** Specificare la larghezza della finestra di dialogo di autenticazione estesa che si apre in Acrobat per l&#39;immissione delle credenziali utente.
 
 **Altezza controllo HTML preferito per autenticazione estesa** Specificare l&#39;altezza della finestra di dialogo di autenticazione estesa che si apre in Acrobat per l&#39;immissione delle credenziali utente.
 
-***nota **: i limiti di larghezza e altezza per questa finestra di dialogo sono i seguenti:*
+***nota &#x200B;**: i limiti di larghezza e altezza per questa finestra di dialogo sono i seguenti:*
 Larghezza: minima = 400, massima = 900
 
 Altezza: minima = 450; massima = 800
@@ -88,7 +88,7 @@ L’elenco visibile di utenti e gruppi è visibile al coordinatore del set di cr
 
 1. Dopo aver installato e configurato l’ambiente dei moduli AEM con la protezione dei documenti, imposta tutti i domini appropriati in Gestione utente. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***nota **: prima di creare i criteri è necessario creare i domini.*
+   ***nota &#x200B;**: prima di creare i criteri è necessario creare i domini.*
 
 1. Nella console di amministrazione, fai clic su Servizi > Gestione documenti > Criteri, quindi fai clic sulla scheda Set di criteri.
 1. Selezionare Set di criteri globale, quindi fare clic sulla scheda Utenti e gruppi visibili.
@@ -488,7 +488,7 @@ Alcune applicazioni client potrebbero non supportare le filigrane dinamiche. Con
 1. Fai clic su Nuovo.
 1. Nella casella Nome digitare un nome per la nuova filigrana.
 
-   ***nota **: non è possibile utilizzare caratteri speciali nei nomi o nelle descrizioni di filigrane o elementi filigrana. Vedi le restrizioni elencate in [Considerazioni per la modifica dei criteri](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***nota &#x200B;**: non è possibile utilizzare caratteri speciali nei nomi o nelle descrizioni di filigrane o elementi filigrana. Vedi le restrizioni elencate in [Considerazioni per la modifica dei criteri](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. In Nome, accanto al segno più, immettere un nome significativo per l&#39;elemento della filigrana, ad esempio Intestazione, aggiungere una descrizione ed espandere il segno più per visualizzare le opzioni.
 1. In Source, selezionare il tipo di filigrana come Testo o PDF.
@@ -497,11 +497,11 @@ Alcune applicazioni client potrebbero non supportare le filigrane dinamiche. Con
    * Selezionare i tipi di filigrana da includere. Se si seleziona Testo personalizzato, nella casella adiacente digitare il testo da visualizzare per la filigrana. Tenere presente la lunghezza del testo che verrà visualizzato come filigrana.
    * Specificare le proprietà di formattazione del testo, ad esempio il nome, la dimensione, il colore di primo piano e il colore di sfondo del testo della filigrana. Specificate il colore di primo piano e di sfondo come valori esadecimali.
 
-     ***nota **: se si seleziona l&#39;opzione di ridimensionamento Adatta alla pagina, la proprietà Dimensione carattere non sarà disponibile per la modifica.*
+     ***nota &#x200B;**: se si seleziona l&#39;opzione di ridimensionamento Adatta alla pagina, la proprietà Dimensione carattere non sarà disponibile per la modifica.*
 
 1. Se hai selezionato PDF per le opzioni della filigrana avanzata, fai clic su **Sfoglia** accanto a Seleziona PDF filigrana per selezionare il documento PDF che desideri utilizzare come filigrana.
 
-   ***nota **: non utilizzare un documento PDF protetto da password. Se si specifica un PDF protetto da password come elemento filigrana, la filigrana non verrà applicata.*
+   ***nota &#x200B;**: non utilizzare un documento PDF protetto da password. Se si specifica un PDF protetto da password come elemento filigrana, la filigrana non verrà applicata.*
 
 1. In Usa come sfondo selezionare Sì o No.
 
@@ -583,9 +583,9 @@ Per impostazione predefinita, il processo di registrazione degli utenti invitati
 
 Le impostazioni seguenti si trovano nell&#39;area Filtro restrizioni e-mail della pagina Registrazione utente invitato.
 
-**Esclusione:** Digitare l&#39;indirizzo di posta elettronica di un utente o di un gruppo da escludere. Per escludere più utenti o gruppi, digita ogni indirizzo e-mail su una nuova riga. Per escludere tutti gli utenti che appartengono a un dominio specifico, immettere un carattere jolly e il nome di dominio. Ad esempio, per escludere tutti gli utenti nel dominio example.com, immettere &amp;ast;.example.com.
+**Esclusione:** Digitare l&#39;indirizzo di posta elettronica di un utente o di un gruppo da escludere. Per escludere più utenti o gruppi, digita ogni indirizzo e-mail su una nuova riga. Per escludere tutti gli utenti che appartengono a un dominio specifico, immettere un carattere jolly e il nome di dominio. Ad esempio, per escludere tutti gli utenti nel dominio example.com, immettere &ast;.example.com.
 
-**Inclusione:** Digitare l&#39;indirizzo di posta elettronica di un utente o di un gruppo da includere. Per includere più utenti o gruppi, digita ogni indirizzo e-mail su una nuova riga. Per includere tutti gli utenti che appartengono a un determinato dominio, immettere un carattere jolly e il nome di dominio. Ad esempio, per includere tutti gli utenti nel dominio example.com, immettere &amp;ast;.example.com.
+**Inclusione:** Digitare l&#39;indirizzo di posta elettronica di un utente o di un gruppo da includere. Per includere più utenti o gruppi, digita ogni indirizzo e-mail su una nuova riga. Per includere tutti gli utenti che appartengono a un determinato dominio, immettere un carattere jolly e il nome di dominio. Ad esempio, per includere tutti gli utenti nel dominio example.com, immettere &ast;.example.com.
 
 ### Parametri server e account di registrazione {#server-and-registration-account-parameters}
 
@@ -950,7 +950,7 @@ In questo esempio, tutte le richieste provenienti da un&#39;installazione di Mic
 
 Per impostazione predefinita, è possibile specificare un massimo di cinque elementi in una filigrana. Inoltre, la dimensione massima del file del documento PDF che si desidera utilizzare come filigrana è limitata a 100 KB. È possibile modificare questi parametri nel file config.xml.
 
-***nota **: è necessario modificare questi parametri con cautela.*
+***nota &#x200B;**: è necessario modificare questi parametri con cautela.*
 
 1. Esporta il file di configurazione di document security. (Vedi [Modifica manuale del file di configurazione di document security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Aprire il file di configurazione in un editor e individuare il nodo `ServerSettings`.

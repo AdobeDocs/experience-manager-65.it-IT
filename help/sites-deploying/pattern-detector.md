@@ -53,7 +53,7 @@ Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https:/
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Tramite un&#39;interfaccia JSON normale o basata su testo reattivo**
-* **Tramite un’interfaccia per righe JSON reattive, **che genera un documento JSON separato in ogni riga.
+* **Tramite un’interfaccia per righe JSON reattive, &#x200B;** che genera un documento JSON separato in ogni riga.
 
 Entrambi i metodi sono descritti di seguito:
 

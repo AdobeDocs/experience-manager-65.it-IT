@@ -421,6 +421,7 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
 
 * **[!UICONTROL BASE]**
    * **Modello:** Puoi selezionare il modello predefinito o personalizzato.
+
      ![testo alternativo](image.png)
    * **Colore accento:** È possibile predefinire il colore del modello del [!UICONTROL Documento di record].
    * **Famiglia di caratteri:** Seleziona il tipo di carattere per il [!UICONTROL documento di record] testi.
@@ -433,6 +434,7 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
       * Verticale
       * Orizzontale
       * Come Modulo adattivo
+
      >[!NOTE]
      > L’allineamento verticale e orizzontale è applicabile solo a     Pulsante di opzione e casella di controllo
 * **[!UICONTROL PROPRIETÀ PAGINA MASTER]** Fare clic per ulteriori informazioni sulle [proprietà pagina master](#master-page-properties-master-page-properties)

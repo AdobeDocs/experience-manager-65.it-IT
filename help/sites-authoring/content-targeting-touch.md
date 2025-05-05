@@ -297,7 +297,7 @@ In caso di modifica del contenuto con targeting, è necessario fare clic su **In
    >Gli amministratori possono decidere se impostare questa configurazione è necessario in **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   Per richiedere agli utenti di immettere una posizione, selezionare la casella di controllo **Forza posizione **Force).
+   >Per richiedere agli utenti di immettere una posizione, selezionare la casella di controllo **Forza posizione &#x200B;** Force).
 
 1. Seleziona l’esperienza per la quale desideri creare l’offerta.
 1. Crea l’offerta:
@@ -579,13 +579,13 @@ Per configurare obiettivi e impostazioni se si utilizza Adobe Target:
 
    >[!NOTE]
    >
-   Devi avere almeno un obiettivo definito.
+   >Devi avere almeno un obiettivo definito.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
    >
-   Se mancano informazioni nella metrica, una linea rossa la circonda.
+   >Se mancano informazioni nella metrica, una linea rossa la circonda.
 
 1. Fai clic su **Aggiungi una nuova metrica** per configurare ulteriori metriche di successo.
 
@@ -593,7 +593,7 @@ Per configurare obiettivi e impostazioni se si utilizza Adobe Target:
 
    >[!NOTE]
    >
-   Per rimuovere altri obiettivi, tocca o fai clic sui tre punti e poi tocca o fai clic su **Elimina**. AEM richiede che tu abbia almeno un obiettivo definito.
+   >Per rimuovere altri obiettivi, tocca o fai clic sui tre punti e poi tocca o fai clic su **Elimina**. AEM richiede che tu abbia almeno un obiettivo definito.
 
 1. Se desideri un maggiore controllo sul conteggio delle metriche di successo, fai clic su **Impostazioni avanzate** per accedere a queste impostazioni.
 1. Fai clic su **Salva**.
@@ -616,7 +616,7 @@ Se durante il caricamento di un profilo nella pagina viene visualizzato contenut
 
 >[!NOTE]
 >
-Se utilizzi i test A/B, durante la simulazione le esperienze vengono visualizzate in base alla percentuale di traffico. Questa funzione è controllata da Adobe Target e può causare risultati imprevisti per gli autori. (L’attività _author è sincronizzata con impostazioni specifiche che consentono la rivalutazione durante la simulazione). Gli autori potrebbero dover eseguire un aggiornamento per visualizzare le altre esperienze in base alle impostazioni del traffico.
+>Se utilizzi i test A/B, durante la simulazione le esperienze vengono visualizzate in base alla percentuale di traffico. Questa funzione è controllata da Adobe Target e può causare risultati imprevisti per gli autori. (L’attività _author è sincronizzata con impostazioni specifiche che consentono la rivalutazione durante la simulazione). Gli autori potrebbero dover eseguire un aggiornamento per visualizzare le altre esperienze in base alle impostazioni del traffico.
 
 Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 
@@ -710,7 +710,7 @@ Se hai selezionato Adobe Target come motore:
 
 >[!NOTE]
 >
-Quando selezioni un componente e lo rendi utilizzabile come destinazione, AEM inoltre sostituisce il componente e inserisce un componente Adobe Target. (Il componente Adobe Target viene utilizzato non solo quando lo aggiungi manualmente alla pagina, ma anche quando esegui il targeting di un componente esistente).
+>Quando selezioni un componente e lo rendi utilizzabile come destinazione, AEM inoltre sostituisce il componente e inserisce un componente Adobe Target. (Il componente Adobe Target viene utilizzato non solo quando lo aggiungi manualmente alla pagina, ma anche quando esegui il targeting di un componente esistente).
 
 Se si seleziona ClientContext (lato client) come motore:
 

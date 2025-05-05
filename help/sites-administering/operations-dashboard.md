@@ -452,7 +452,7 @@ Se si seleziona la casella **Includi tempo di esecuzione** prima di eseguire la 
 
 Lo scopo di Gestione indici è quello di facilitare la gestione degli indici, ad esempio la manutenzione degli indici o la visualizzazione del loro stato.
 
-È possibile accedervi da **Strumenti - Operazioni - Diagnosi **dalla schermata iniziale, quindi fare clic sul pulsante **Gestione indice**.
+È possibile accedervi da **Strumenti - Operazioni - Diagnosi &#x200B;** dalla schermata iniziale, quindi fare clic sul pulsante **Gestione indice**.
 
 È inoltre possibile accedervi direttamente da questo URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 

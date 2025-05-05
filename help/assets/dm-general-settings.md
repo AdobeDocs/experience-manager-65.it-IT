@@ -52,7 +52,7 @@ Vedi anche [Facoltativo - Installazione e configurazione di Dynamic Medie - Impo
    * Scheda [Illustrator](#illustrator-tab)
 
    ![Pagina Impostazioni generali di Dynamic Medie](/help/assets/assets-dm/dm-general-settings.png)
-   *Pagina Impostazioni generali di Dynamic Medie, con la scheda **[!UICONTROL Modifica immagine]**selezionata.*<br><br>
+   *Pagina Impostazioni generali di Dynamic Medie, con la scheda **[!UICONTROL Modifica immagine]**&#x200B;selezionata.*<br><br>
 
 1. Al termine, vicino all&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]**.
 

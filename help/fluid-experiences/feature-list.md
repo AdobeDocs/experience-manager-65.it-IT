@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Le esperienze fluide di Adobe Experience Manager si basano sui potenti set di funzioni di AEM Sites, AEM Dynamic Medie e AEM Assets per fornire una soluzione solida per la distribuzione di contenuti headless.
 
-AEM Fluid Experiences si distingue dal classico AEM in quanto viene affrontato solo il caso di utilizzo di consegna headless. Le soluzioni complete AEM Sites, Assets e Dynamic Medie supportano l&#39;authoring e la distribuzione di contenuti headful e i casi di utilizzo ibridi dell&#39;AEM.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it)[
+AEM Fluid Experiences si distingue dal classico AEM in quanto viene affrontato solo il caso di utilizzo di consegna headless. Le soluzioni complete AEM Sites, Assets e Dynamic Medie supportano l&#39;authoring e la distribuzione di contenuti headful e i casi di utilizzo ibridi dell&#39;AEM.[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it)
 
 Le tabelle seguenti definiscono le funzioni delle esperienze AEM Fluid e contengono i collegamenti alla relativa documentazione di supporto.
 

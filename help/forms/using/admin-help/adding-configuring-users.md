@@ -169,7 +169,7 @@ Se un utente senza i moduli AEM e le autorizzazioni CQ richiesti tenta di accede
 * Soluzione per la gestione della corrispondenza
 * Workspace di AEM Forms
 
-  ***nota **: l&#39;area di lavoro Flex è obsoleta per la versione dei moduli AEM.*
+  ***nota &#x200B;**: l&#39;area di lavoro Flex è obsoleta per la versione dei moduli AEM.*
 
 * gestione moduli
 * Reporting processi

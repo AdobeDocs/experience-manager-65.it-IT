@@ -108,9 +108,11 @@ Le impostazioni definite da un utente o da un amministratore di sistema possono 
 * Durante l’authoring delle pagine:
 
    * L&#39;utilizzo dell&#39;editor classico viene forzato quando si accede alla pagina utilizzando `cf#` nell&#39;URL. Ad esempio:
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * L&#39;utilizzo dell&#39;editor touch è forzato quando si utilizza `/editor.html` nell&#39;URL o quando si utilizza un dispositivo touch. Ad esempio:
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Qualsiasi forzatura è temporanea e valida solo per la sessione del browser

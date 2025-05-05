@@ -60,7 +60,7 @@ Quando verifichi un certificato, Gestione utente carica i controlli del certific
    Puoi utilizzare i seguenti caratteri nel codice regex:
 
    * . (qualsiasi carattere)
-   * &amp;ast; (0 o più occorrenze)
+   * &ast; (0 o più occorrenze)
    * () (specificare il gruppo tra parentesi)
    * \ (utilizzato per sostituire un carattere regex con un carattere regolare)
    * $n (utilizzato per fare riferimento all’ennesimo gruppo)
@@ -69,21 +69,21 @@ Quando verifichi un certificato, Gestione utente carica i controlli del certific
 
    * Per estrarre &quot;Alex Pink&quot; da &quot;Alex Pink (Authentication)&quot;
 
-     **Regex:** (.&amp;ast;) \(autenticazione\)
+     **Regex:** (.&ast;) \(autenticazione\)
 
    * Per estrarre &quot;Alex Pink&quot; da &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&amp;ast;)\(autenticazione\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(autenticazione\) (.&ast;)
 
    * Per estrarre &quot;Pink Alex&quot; da &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&amp;ast;)\(autenticazione\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(autenticazione\) (.&ast;)
 
      Ordine personalizzato: $2 $1 (secondo gruppo restituito, concatenato al primo gruppo, acquisito dal carattere spazio vuoto)
 
    * Per estrarre &quot;apink@sampleorg.com&quot; da &quot;smtp:apink@sampleorg.com&quot;
 
-     **Regex:** smtp:(.&amp;ast;)
+     **Regex:** smtp:(.&ast;)
 
    Per informazioni dettagliate sull&#39;utilizzo delle espressioni regolari, vedere [Esercitazione Java sulle espressioni regolari](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

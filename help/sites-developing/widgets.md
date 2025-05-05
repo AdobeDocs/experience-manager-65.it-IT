@@ -395,6 +395,7 @@ Finestra di dialogo **Multifield personalizzato** basato su widget:
 * Il widget `multifield` dispone di un file fieldconfig (tipo di nodo = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) basato sull&#39;xtype personalizzato &#39; `ejstcustom`&#39;:
    * &#39;`fieldconfig`&#39; è un&#39;opzione di configurazione dell&#39;oggetto ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`.
    * &#39;`optionsProvider`&#39; è una configurazione del widget `ejstcustom`. È impostato con il metodo `Ejst.x3.provideOptions` definito in `exercises.js` in:
+
      `/apps/extjstraining/clientlib/js/exercises.js`
 e restituisce due opzioni.
 * È definito dal nodo `multifield` in:
@@ -545,6 +546,7 @@ Il codice JavaScript incorporato nel componente jsp:
 * Se la finestra che visualizza la struttura non esiste, viene creato `treePanel` ([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)):
    * `treePanel` contiene i dati utilizzati per creare la finestra.
    * I dati vengono recuperati chiamando il servlet registrato in:
+
      `/bin/wcm/siteadmin/tree.json`
 * Il listener `beforeload` verifica che il nodo selezionato sia caricato.
 * L&#39;oggetto `root` imposta il percorso `apps/extjstraining` come directory principale della struttura.
@@ -631,8 +633,10 @@ Il file JavaScript ( `defaultgrid.js`) a cui si fa riferimento nel componente js
   `store.load();`
 * `gridPanel` è un oggetto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` che utilizza `store`:
    * le larghezze delle colonne vengono sempre riproporzionate:
+
      `forceFit: true`
    * è possibile selezionare una sola riga alla volta:
+
      `singleSelect:true`
 
 #### Esempio 2: griglia di ricerca di riferimento {#example-reference-search-grid}
@@ -643,7 +647,7 @@ Quando si installa il pacchetto, `content.jsp` del componente **Panoramica grigl
 * Si basa sui dati recuperati dall’archivio chiamando un servlet.
 * È possibile modificare le celle dell&#39;ultima colonna. Il valore viene mantenuto in una proprietà `test` sotto il nodo definito dal percorso visualizzato nella prima colonna.
 
-Come spiegato nella sezione precedente, l&#39;oggetto window ottiene l&#39;oggetto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` chiamando il metodo `getGridPanel()` definito nel file `defaultgrid.js` in `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Il componente **Panoramica griglia **fornisce un&#39;implementazione diversa per il metodo `getGridPanel()`, definito nel file `referencesearch.js` in `/apps/extjstraining/components/gridoverview/referencesearch.js`. Cambiando il file .js a cui si fa riferimento nel componente jsp, la griglia si basa sui dati recuperati dall’archivio.
+Come spiegato nella sezione precedente, l&#39;oggetto window ottiene l&#39;oggetto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` chiamando il metodo `getGridPanel()` definito nel file `defaultgrid.js` in `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Il componente **Panoramica griglia &#x200B;** fornisce un&#39;implementazione diversa per il metodo `getGridPanel()`, definito nel file `referencesearch.js` in `/apps/extjstraining/components/gridoverview/referencesearch.js`. Cambiando il file .js a cui si fa riferimento nel componente jsp, la griglia si basa sui dati recuperati dall’archivio.
 
 Cambia il file .js a cui si fa riferimento nel jsp del componente:
 
@@ -673,6 +677,7 @@ Le celle della colonna &quot;Test&quot; possono essere modificate così come son
 * `gridPanel` è un oggetto ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` che può essere modificato:
    * è basato su `store` predefinito e sul modello di colonna `cm`
    * è possibile selezionare una sola riga alla volta:
+
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * il listener `afteredit` si assicura che dopo la modifica di una cella nella colonna &quot;**Test**&quot;:
       * la proprietà &#39;`test`&#39; del nodo nel percorso definito dalla colonna &quot;**jcr:path**&quot; è impostata nell&#39;archivio con il valore della cella

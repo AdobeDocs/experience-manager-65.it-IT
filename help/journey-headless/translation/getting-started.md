@@ -88,6 +88,7 @@ Poiché i modelli di contenuto definiscono la struttura del contenuto, è necess
 1. L’**Editor modello frammento di contenuto** si apre.
    1. La colonna a sinistra contiene i campi del modello. Questa colonna ci interessa.
    1. La colonna a destra contiene i campi che si possono aggiungere al modello. Si può ignorare questa colonna.
+
       ![Editor modello per frammenti di contenuto](assets/content-fragment-model-editor.png)
 1. Fate clic su uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
    ![Dettaglio dell’editor modello dei frammenti di contenuto](assets/content-fragment-model-editor-detail.png)

@@ -21,7 +21,7 @@ L’Editor Rich Text è un componente essenziale per l’inserimento di contenut
 
 ## Modifica diretta {#in-place-editing}
 
-Se si seleziona un componente basato su testo con un solo clic, verrà visualizzata la barra degli strumenti del componente [](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
+Se si seleziona un componente basato su testo con un solo clic, verrà visualizzata la barra degli strumenti del componente [&#128279;](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
 
 ![schermata_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 

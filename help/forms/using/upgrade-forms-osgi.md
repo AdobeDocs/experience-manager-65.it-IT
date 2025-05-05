@@ -62,7 +62,7 @@ Per effettuare l’aggiornamento da Forms AEM 6.3 o Forms AEM 6.4 a Forms AEM 6.
 
    >[!NOTE]
    >
-   Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+   >Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 1. Eseguire attività successive all&#39;installazione.
 
@@ -111,4 +111,4 @@ Per effettuare l’aggiornamento da Forms AEM 6.3 o Forms AEM 6.4 a Forms AEM 6.
 
    >[!NOTE]
    >
-   In AEM 6.4 Forms, la struttura dell’archivio crx è cambiata. Se si esegue l’aggiornamento da Forms 6.3 a Forms AEM 6.5, utilizzare i percorsi modificati per la personalizzazione che si creano di nuovo. Per l&#39;elenco completo dei percorsi modificati, vedere [Ristrutturazione dell&#39;archivio Forms nell&#39;AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   >In AEM 6.4 Forms, la struttura dell’archivio crx è cambiata. Se si esegue l’aggiornamento da Forms 6.3 a Forms AEM 6.5, utilizzare i percorsi modificati per la personalizzazione che si creano di nuovo. Per l&#39;elenco completo dei percorsi modificati, vedere [Ristrutturazione dell&#39;archivio Forms nell&#39;AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).

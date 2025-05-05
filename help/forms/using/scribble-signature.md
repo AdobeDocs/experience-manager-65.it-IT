@@ -72,7 +72,7 @@ Facendo clic sull’icona di geolocalizzazione durante la creazione dello scarab
 
 >[!NOTE]
 >
-In iPad, per impostazione predefinita, è obbligatorio incorporare le informazioni di geolocalizzazione.
+>In iPad, per impostazione predefinita, è obbligatorio incorporare le informazioni di geolocalizzazione.
 
 In iPad l&#39;icona di geolocalizzazione non viene visualizzata per impostazione predefinita e le informazioni di geolocalizzazione vengono incorporate automaticamente quando si fa clic su **OK**.
 

@@ -41,7 +41,7 @@ Per visualizzare i dettagli di un componente specifico, fai clic sulla risorsa r
   Nella scheda Proprietà puoi:
 
    * Visualizzare le proprietà generali del componente.
-   * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
+   * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [&#128279;](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
 
       * Facendo clic sull’origine dell’icona si aprirà quel componente.
 

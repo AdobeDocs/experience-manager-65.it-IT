@@ -114,7 +114,7 @@ La sezione seguente descrive come modificare il file HTML in modo da convertire 
 
 Prima di importare, tieni presente le seguenti limitazioni:
 
-### Qualsiasi attributo come classe o ID applicato al tag &amp;lt;body> non viene mantenuto {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Qualsiasi attributo come classe o ID applicato al tag &lt;body> non viene mantenuto {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Se ad esempio al tag body viene applicato un attributo come id o classe, `<body id="container">`, questo non viene mantenuto dopo l&#39;importazione. La progettazione in fase di importazione non deve quindi avere alcuna dipendenza dagli attributi applicati al tag `<body>`.
 
@@ -470,7 +470,7 @@ L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con el
 Questo perché dopo l’importazione vengono aggiunti all’HTML generato elementi HTML aggiuntivi come il tag &lt;div>.
 
 * Anche gli script che si basano su una struttura simile a quella descritta sopra non sono consigliati per l’uso con elementi contrassegnati per la conversione in componenti AEM.
-* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&amp;ast;&quot;> non è consigliato.
+* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&ast;&quot;> non è consigliato.
 * Il layout del progetto deve seguire le best practice di HTML5 Boilerplate. Ulteriori informazioni su: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configurazione dei moduli OSGI {#configuring-osgi-modules}
@@ -531,7 +531,7 @@ La tabella seguente descrive brevemente le proprietà:
 >
 >Ad esempio, se la configurazione predefinita è
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >E devi sostituire `CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il tuo modello di ricerca dovrebbe essere simile al seguente:
 >

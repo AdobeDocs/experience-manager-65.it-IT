@@ -93,7 +93,7 @@ Gli script di modulo presenti nell&#39;evento form:ready vengono eseguiti una so
 
 >[!NOTE]
 >
-In un modulo multipagina, le modifiche apportate da JavaScript a una pagina non vengono mantenute se si passa a un&#39;altra pagina.
+>In un modulo multipagina, le modifiche apportate da JavaScript a una pagina non vengono mantenute se si passa a un&#39;altra pagina.
 
 È possibile richiamare script personalizzati prima di inviare un modulo. Questa funzione funziona su tutti i browser disponibili. Tuttavia, può essere utilizzato solo quando gli utenti eseguono il rendering del modulo HTML la cui proprietà `Output Type` è impostata su `Form Body`. Non funzionerà quando `Output Type` è `Full HTML`. Per informazioni su come configurare questa funzione, consulta Configurazione dei moduli nella guida per l’amministrazione.
 
@@ -167,7 +167,7 @@ Lo script seguente mantiene `fillColor` di un campo in base al valore di `hidden
 
 >[!NOTE]
 >
-Gli oggetti statici non vengono visualizzati in un modulo di rendering HTML quando sono nidificati all&#39;interno di una cella di tabella. Ad esempio, un cerchio e un rettangolo nidificati all’interno di una cella di tabella non vengono visualizzati all’interno di un modulo di rendering HTML. Tuttavia, questi stessi oggetti statici vengono visualizzati correttamente quando si trovano all’esterno della tabella.
+>Gli oggetti statici non vengono visualizzati in un modulo di rendering HTML quando sono nidificati all&#39;interno di una cella di tabella. Ad esempio, un cerchio e un rettangolo nidificati all’interno di una cella di tabella non vengono visualizzati all’interno di un modulo di rendering HTML. Tuttavia, questi stessi oggetti statici vengono visualizzati correttamente quando si trovano all’esterno della tabella.
 
 ## Firma digitale di moduli HTML {#digitally-signing-html-forms}
 
@@ -190,7 +190,7 @@ Per informazioni sulla firma digitale di un documento, vedere [Firma digitale e 
 
 >[!NOTE]
 >
-Per ulteriori informazioni sul servizio Forms, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
@@ -226,11 +226,11 @@ Gli URL HTTP in cui vengono pubblicati i dati del modulo possono essere specific
 
 >[!NOTE]
 >
-Il rendering di un modulo HTML con una barra degli strumenti è facoltativo.
+>Il rendering di un modulo HTML con una barra degli strumenti è facoltativo.
 
 >[!NOTE]
 >
-Se si esegue il rendering di un modulo HTML, si consiglia di non aggiungere una barra degli strumenti al modulo.
+>Se si esegue il rendering di un modulo HTML, si consiglia di non aggiungere una barra degli strumenti al modulo.
 
 **Eseguire il rendering di un modulo HTML**
 
@@ -282,7 +282,7 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (Java):
 
    >[!NOTE]
    >
-   Il rendering di Forms in HTML non viene eseguito correttamente se l&#39;opzione `StandAlone` è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il valore `ApplicationWebRoot` è specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient`). Se `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore dell&#39;URI dell&#39;applicazione Web del modulo. Per eseguire questa operazione, accedi alla console di amministrazione, fai clic su Servizi > Forms e imposta l’URI della directory principale del web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
+   >Il rendering di Forms in HTML non viene eseguito correttamente se l&#39;opzione `StandAlone` è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il valore `ApplicationWebRoot` è specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient`). Se `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore dell&#39;URI dell&#39;applicazione Web del modulo. Per eseguire questa operazione, accedi alla console di amministrazione, fai clic su Servizi > Forms e imposta l’URI della directory principale del web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
 
 1. Rendering di un modulo HTML
 
@@ -340,7 +340,7 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (servizio web)
 
    >[!NOTE]
    >
-   Il rendering di Forms in HTML non viene eseguito correttamente se l&#39;opzione `StandAlone` è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il valore `ApplicationWebRoot` è specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient`). Se `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore dell&#39;URI dell&#39;applicazione Web del modulo. Per eseguire questa operazione, accedi alla console di amministrazione, fai clic su Servizi > Forms e imposta l’URI della directory principale del web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
+   >Il rendering di Forms in HTML non viene eseguito correttamente se l&#39;opzione `StandAlone` è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il valore `ApplicationWebRoot` è specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient`). Se `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore dell&#39;URI dell&#39;applicazione Web del modulo. Per eseguire questa operazione, accedi alla console di amministrazione, fai clic su Servizi > Forms e imposta l’URI della directory principale del web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
 
 1. Rendering di un modulo HTML
 

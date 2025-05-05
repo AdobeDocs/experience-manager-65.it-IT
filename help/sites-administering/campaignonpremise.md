@@ -205,7 +205,7 @@ Dopo aver configurato Externalizer, Adobe Campaign può accedere al contenuto.
 
 >[!NOTE]
 >
-L’istanza di pubblicazione deve essere raggiungibile dal server Adobe Campaign. Se punta a `localhost:4503` o a un altro server che Adobe Campaign non è in grado di raggiungere, le immagini dell&#39;AEM non verranno visualizzate nella console Adobe Campaign.
+>L’istanza di pubblicazione deve essere raggiungibile dal server Adobe Campaign. Se punta a `localhost:4503` o a un altro server che Adobe Campaign non è in grado di raggiungere, le immagini dell&#39;AEM non verranno visualizzate nella console Adobe Campaign.
 
 ## Configurare l’utente remoto di Campaign in AEM {#configure-user}
 

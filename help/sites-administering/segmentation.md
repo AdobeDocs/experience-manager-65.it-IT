@@ -51,7 +51,7 @@ L&#39;**Editor segmenti** consente di modificare facilmente un segmento. Per mod
 
 Tramite il browser Componenti puoi aggiungere i contenitori **AND** e **OR** per definire la logica del segmento. In seguito puoi aggiungere altri componenti per confrontare proprietà e valori o script di riferimento e altri segmenti per definire i criteri di selezione (consulta [Creazione di un nuovo segmento](#creating-a-new-segment)) per definire lo scenario esatto per la selezione del segmento.
 
-Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Se sono presenti più segmenti applicabili, viene utilizzato anche il fattore **Incrementa**. Per informazioni dettagliate sul [fattore di incremento, consulta [Creazione di un nuovo segmento](#creating-a-new-segment).](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Se sono presenti più segmenti applicabili, viene utilizzato anche il fattore **Incrementa**. Per informazioni dettagliate sul [&#128279;](/help/sites-administering/campaign-segmentation.md#boost-factor)fattore di incremento, consulta [Creazione di un nuovo segmento](#creating-a-new-segment).
 
 >[!CAUTION]
 >
@@ -255,6 +255,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. La cartella verrà visualizzata nell’elenco dei segmenti.
    * L’ordinamento delle colonne incide sulla posizione di visualizzazione della nuova cartella nell’elenco.
    * Puoi fare clic sulle intestazioni di colonna per modificare l’ordinamento.
+
      ![La nuova cartella](assets/contexthub-folder.png)
 
 ### Modificare le cartelle esistenti {#modify-folders}

@@ -474,17 +474,17 @@ In un&#39;istanza Autore, ha effettuato l&#39;accesso con privilegi amministrati
 1. Modificare le proprietà del nodo ntBaseLucene-oauth:
 
    * **[!UICONTROL indexPath]**: `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL nome]**: `oauthid-123****`
+   * **[!UICONTROL nome]**: `oauthid-123&#x200B;**&#x200B;**`
    * **[!UICONTROL reindicizza]**: `true`
    * **[!UICONTROL reindexCount]**: `1`
 
 1. Nel nodo /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
    * Elimina tutti i nodi secondari, ad eccezione di cqTags.
-   * Rinomina cqTags in `oauthid-123****`
-   * Modificare le proprietà del nodo `oauthid-123****`
+   * Rinomina cqTags in `oauthid-123**&#x200B;**`
+   * Modificare le proprietà del nodo `oauthid-123**&#x200B;**`
 
-      * **[!UICONTROL nome]**: `oauthid-123****`
+      * **[!UICONTROL nome]**: `oauthid-123&#x200B;**&#x200B;**`
 
    * Seleziona **[!UICONTROL Salva tutto]**.
 

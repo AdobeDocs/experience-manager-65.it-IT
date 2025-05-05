@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Integrazione con Adobe Sign | Gestione dei dati utente {#integration-with-adobe-sign-handling-user-data}
 
-[!DNL AEM Forms] si integra con [!DNL  Adobe Sign] per abilitare i flussi di lavoro di firma elettronica nei moduli adattivi per elaborare moduli o accordi per flussi di lavoro legali, di vendita, di gestione delle retribuzioni e delle risorse umane. Consente la firma singola e multiutente, flussi di lavoro sequenziali e simultanei, la firma dei moduli come utente anonimo o connesso e diversi modi per autenticare gli utenti.
+[!DNL AEM Forms] si integra con [!DNL &#x200B; Adobe Sign] per abilitare i flussi di lavoro di firma elettronica nei moduli adattivi per elaborare moduli o accordi per flussi di lavoro legali, di vendita, di gestione delle retribuzioni e delle risorse umane. Consente la firma singola e multiutente, flussi di lavoro sequenziali e simultanei, la firma dei moduli come utente anonimo o connesso e diversi modi per autenticare gli utenti.
 
 Quando uno o più firmatari firmano e inviano un modulo adattivo, viene generato un contratto [!DNL Adobe Sign] che include informazioni sui firmatari.
 

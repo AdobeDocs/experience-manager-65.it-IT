@@ -78,7 +78,7 @@ A seconda dei componenti dei moduli AEM installati, è possibile includere i seg
 
 **L&#39;amministratore di Workspace di AEM forms:** può visualizzare e modificare le impostazioni dalla pagina Workspace in Administration Console
 
-***nota **: l&#39;area di lavoro Flex è obsoleta per la versione dei moduli AEM.*
+***nota &#x200B;**: l&#39;area di lavoro Flex è obsoleta per la versione dei moduli AEM.*
 
 **Utente Workspace:** può accedere all&#39;applicazione dell&#39;utente finale Workspace
 

@@ -763,7 +763,7 @@ Il componente Presentazione visualizza ripetutamente ogni diapositiva in sequenz
 
 >[!NOTE]
 >
->Il componente di base **Table** è basato sull&#39;editor Rich Text [3}, così come il componente di base **[Text](#text)**.](/help/sites-authoring/rich-text-editor.md)
+>Il componente di base **Table** è basato sull&#39;editor Rich Text [&#128279;](/help/sites-authoring/rich-text-editor.md)3&rbrace;, così come il componente di base **[Text](#text)**.
 
 Il componente **Tabella** è preconfigurato per consentire la creazione, il riempimento e la formattazione di una tabella. La finestra di dialogo consente di configurare la tabella e crearne il contenuto in uno dei modi seguenti:
 
@@ -812,7 +812,7 @@ Per ulteriori informazioni sull&#39;applicazione dei tag, visitare [Utilizzo dei
 
 >[!NOTE]
 >
->Il componente di base **Testo** è basato sull&#39;editor Rich Text [3}, così come il componente di base **Tabella**.](/help/sites-authoring/rich-text-editor.md)
+>Il componente di base **Testo** è basato sull&#39;editor Rich Text [3&rbrace;, così come il componente di base **Tabella**.](/help/sites-authoring/rich-text-editor.md)
 
 Il componente Testo consente di immettere un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite dall&#39;[editor Rich Text](/help/sites-authoring/rich-text-editor.md). Una selezione di icone consente di formattare il testo, incluse le caratteristiche dei caratteri, l&#39;allineamento, i collegamenti, gli elenchi e i rientri.
 
@@ -1094,7 +1094,7 @@ Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. L&#39;Adobe consiglia di utilizzare il componente core Contenitore modulo [1}.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html)
+>Questo componente di base è obsoleto. L&#39;Adobe consiglia di utilizzare il componente core Contenitore modulo [1&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html)
 
 Il componente Modulo definisce sia l&#39;inizio che la fine di un modulo utilizzando gli elementi **Inizio modulo** e **Fine modulo**. L’inizio e la fine vengono sempre associati per garantire che il modulo sia definito correttamente.
 

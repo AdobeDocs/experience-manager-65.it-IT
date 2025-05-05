@@ -99,6 +99,7 @@ La directory principale predefinita è il sito padre, ma la directory principale
    * Ricontrollare il nome in quanto non può essere modificato facilmente dopo la creazione del gruppo.
    * L&#39;URL di base viene visualizzato sotto `Community Group Name`.
    * Per un URL valido, aggiungi &quot;.html&quot;
+
      *ad esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menu **Modello per gruppo community**

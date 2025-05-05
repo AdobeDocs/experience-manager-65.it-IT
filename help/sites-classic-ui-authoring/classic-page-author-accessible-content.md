@@ -409,9 +409,9 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
   >L’editor Rich Text in un’installazione standard di AEM è configurato per utilizzare:
   >
   >* &lt;b> per &lt;strong>
-  * &lt;i> per &lt;em>
+  >* &lt;i> per &lt;em>
   >
-  L’efficacia è la stessa, ma &lt;strong> e &lt;em> sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il team di sviluppo può configurare l’editor Rich Text in modo che utilizzi &lt;strong> e &lt;em> (anziché &lt;b> e &lt;i>) durante lo sviluppo dell’istanza di progetto.
+  >L’efficacia è la stessa, ma &lt;strong> e &lt;em> sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il team di sviluppo può configurare l’editor Rich Text in modo che utilizzi &lt;strong> e &lt;em> (anziché &lt;b> e &lt;i>) durante lo sviluppo dell’istanza di progetto.
 
 * **Utilizzare gli elenchi**: è possibile utilizzare l’HTML per specificare tre diversi tipi di elenchi:
 
@@ -427,7 +427,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  Elemento `<dl>` non supportato dall&#39;editor Rich Text.
+  >Elemento `<dl>` non supportato dall&#39;editor Rich Text.
 
 * **Usa tabelle**:
 
@@ -440,7 +440,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  Le tabelle devono essere realizzate con il componente **Tabella**. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
+  >Le tabelle devono essere realizzate con il componente **Tabella**. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
 
   Inoltre, le tabelle accessibili utilizzano gli elementi e gli attributi seguenti:
 
@@ -450,7 +450,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   Quando si aggiunge una **Tabella**, è possibile configurare **Proprietà tabella** utilizzando la finestra di dialogo.
 
@@ -469,11 +469,11 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
+  >L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
 
   >[!NOTE]
   >
-  Le tabelle devono essere realizzate con il componente **Tabella**. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
+  >Le tabelle devono essere realizzate con il componente **Tabella**. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
 
   ```xml
   <table>
@@ -506,7 +506,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, delle regole HTML e del serializzatore.
+  >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, delle regole HTML e del serializzatore.
 
 #### Ulteriori informazioni - Informazioni e correlazioni (1.3.1)  {#more-information-info-and-relationships}
 
@@ -527,7 +527,7 @@ Allo stesso modo, le informazioni che richiedono di distinguere tra suoni divers
 
 >[!NOTE]
 >
-Per requisiti relativi alle alternative di colore, consulta [Utilizzo del colore](#use-of-color).
+>Per requisiti relativi alle alternative di colore, consulta [Utilizzo del colore](#use-of-color).
 
 #### Come soddisfare il criterio: caratteristiche sensoriali (1.3.3)  {#how-to-meet-sensory-characteristics}
 
@@ -538,7 +538,7 @@ Assicurati che anche tutte le informazioni che si basano sulle caratteristiche v
 
 >[!NOTE]
 >
-L’uso di termini descrittivi è accettabile se si ritiene che abbiano un significato in un contesto non visivo. Ad esempio, l&#39;utilizzo di *sopra* e *sotto* sarebbe generalmente accettabile, in quanto implicano rispettivamente contenuti prima e dopo un particolare elemento di contenuto. Avrebbe comunque senso quando il contenuto viene parlato ad alta voce.
+>L’uso di termini descrittivi è accettabile se si ritiene che abbiano un significato in un contesto non visivo. Ad esempio, l&#39;utilizzo di *sopra* e *sotto* sarebbe generalmente accettabile, in quanto implicano rispettivamente contenuti prima e dopo un particolare elemento di contenuto. Avrebbe comunque senso quando il contenuto viene parlato ad alta voce.
 
 #### Ulteriori informazioni - Caratteristiche sensoriali (1.3.3) {#more-information-sensory-characteristics}
 
@@ -557,7 +557,7 @@ L’uso di termini descrittivi è accettabile se si ritiene che abbiano un signi
 
 >[!NOTE]
 >
-Questo criterio di successo riguarda in particolare la percezione del colore. Altre forme di percezione sono trattate in [Adattabilità (1.3)](#adaptable), incluso l’accesso programmatico al colore e ad altre codifiche di presentazione visiva.
+>Questo criterio di successo riguarda in particolare la percezione del colore. Altre forme di percezione sono trattate in [Adattabilità (1.3)](#adaptable), incluso l’accesso programmatico al colore e ad altre codifiche di presentazione visiva.
 
 #### Finalità - Uso del colore (1.4.1)  {#purpose-use-of-color}
 
@@ -621,7 +621,7 @@ Le persone con determinate disabilità visive possono non essere in grado di dis
 
 >[!NOTE]
 >
-Il testo utilizzato esclusivamente a scopo decorativo è escluso da questo criterio di successo.
+>Il testo utilizzato esclusivamente a scopo decorativo è escluso da questo criterio di successo.
 
 #### Come soddisfare il criterio - Contrasto (minimo) (1.4.3)  {#how-to-meet-contrast-minimum}
 
@@ -653,7 +653,7 @@ Se non è possibile soddisfare i livelli di contrasto consigliati, fornisci un c
 
 >[!NOTE]
 >
-I logotipi (testo che fa parte di un logo o di un marchio) sono considerati essenziali.
+>I logotipi (testo che fa parte di un logo o di un marchio) sono considerati essenziali.
 
 #### Finalità - Immagini di testo (1.4.5)  {#purpose-images-of-text}
 
@@ -726,7 +726,7 @@ In base alla natura del contenuto, è possibile applicare uno o più dei seguent
 
 >[!NOTE]
 >
-Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (che sia utilizzato per soddisfare altri criteri di successo o meno) deve rispondere a questo criterio. Consulta [Requisito di conformità 5: non interferenza](https://www.w3.org/TR/WCAG20/#cc5).
+>Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (che sia utilizzato per soddisfare altri criteri di successo o meno) deve rispondere a questo criterio. Consulta [Requisito di conformità 5: non interferenza](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Finalità - Tre lampeggiamenti o inferiore alla soglia (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -812,7 +812,7 @@ John Smith's publications
 
 >[!NOTE]
 >
-Lo snippet di cui sopra è un&#39;illustrazione, si consiglia di utilizzare il componente **Immagine**.
+>Lo snippet di cui sopra è un&#39;illustrazione, si consiglia di utilizzare il componente **Immagine**.
 
 Mentre è opportuno fornire un testo di collegamento che identifichi lo scopo del collegamento senza necessità di ulteriore contesto, questo effettivamente non è sempre possibile. I collegamenti senza contesto possono essere utilizzati nei casi seguenti, di cui è possibile trovare alcuni esempi HTML in [Come soddisfare il criterio di successo 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
@@ -898,7 +898,7 @@ L’attributo `lang` può essere utilizzato per identificare le modifiche nella 
 
 >[!NOTE]
 >
-Gli elementi blockquote non sono supportati in un’istanza standard. Un componente personalizzato può essere sviluppato per supportare la funzione.
+>Gli elementi blockquote non sono supportati in un’istanza standard. Un componente personalizzato può essere sviluppato per supportare la funzione.
 
 Analogamente, il browser può rappresentare correttamente un prestito lessicale non comune o una frase se l’elemento `span` viene utilizzato come segue:
 
@@ -908,7 +908,7 @@ Analogamente, il browser può rappresentare correttamente un prestito lessicale 
 
 >[!NOTE]
 >
-Non è necessario seguire questo criterio di successo per nomi o città in lingue diverse, o quando si utilizzano prestiti lessicali o frasi diventati comuni nella lingua predefinita (come *schadenfreude* in inglese).
+>Non è necessario seguire questo criterio di successo per nomi o città in lingue diverse, o quando si utilizzano prestiti lessicali o frasi diventati comuni nella lingua predefinita (come *schadenfreude* in inglese).
 
 Per aggiungere l’elemento span con una lingua appropriata, è possibile modificare manualmente il codice HTML nella modalità di modifica sorgente dell’editor Rich Text, affinché venga letto come sopra indicato. In alternativa, l’attributo `lang` può essere incluso nell’editor Rich Text da un amministratore di sistema (consulta [ Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

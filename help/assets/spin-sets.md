@@ -226,6 +226,7 @@ Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostit
    * Per eliminare una risorsa, selezionala e seleziona **[!UICONTROL Elimina risorsa]**.
    * Per applicare un predefinito, fai clic sull’icona Predefinito e seleziona un predefinito.
    * Per eliminare un intero set 360 gradi, passare al set 360 gradi, selezionarlo e selezionare **[!UICONTROL Elimina]**
+
    >[!NOTE]
    >
    >Per modificare le immagini di un set 360 gradi, passa al set e seleziona **[!UICONTROL Membri set]** nella barra a sinistra, quindi seleziona l&#39;icona a forma di matita su una singola risorsa per aprire la finestra di modifica.

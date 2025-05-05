@@ -92,7 +92,7 @@ Nella scheda **Impostazioni** specificare se consentire l&#39;applicazione di ta
 
 * **Dimensione massima file immagine allegato**
 
-  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152** **(2 Mb).
+  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 **&#x200B; **(2 Mb).
 
 * **Tipi di immagine di copertina consentiti**
 
@@ -164,7 +164,7 @@ Nella scheda **Campo tag**, i tag che possono essere applicati, se consentiti ne
 
 * **Limite suggerimenti**
 
-  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore predefinito è **-**1 (nessun limite).
+  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore predefinito è **-**&#x200B;1 (nessun limite).
 
 >[!NOTE]
 >

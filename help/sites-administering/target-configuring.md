@@ -88,9 +88,9 @@ A questo scopo, specifica la configurazione cloud A4T con cui collegare la confi
    >Durante la configurazione di A4T con AEM, è possibile che in un riferimento alla configurazione manchi una voce. Per selezionare il framework di analisi, effettua le seguenti operazioni:
    >
    >1. Passa a **Strumenti** > **Generale** > **CRXDE Lite**.
-   1. Passa alla [finestra di dialogo Configurazione di A4T Analytics](#a4t-analytics-config-dialog) (vedi di seguito)
-   1. Impostare la proprietà **disable** su **false**.
-   1. Fare clic su **Salva tutto**.
+   >1. Passa alla [finestra di dialogo Configurazione di A4T Analytics](#a4t-analytics-config-dialog) (vedi di seguito)
+   >1. Impostare la proprietà **disable** su **false**.
+   >1. Fare clic su **Salva tutto**.
 
 #### Finestra di dialogo Configurazione di A4T Analytics {#a4t-analytics-config-dialog}
 
@@ -108,16 +108,16 @@ Integrazione manuale con Adobe Target invece di utilizzare la procedura guidata 
 
 >[!NOTE]
 >
-Il file della libreria di Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), è una nuova libreria di implementazione per Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
+>Il file della libreria di Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), è una nuova libreria di implementazione per Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
 >
-AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
+>AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
 >
-* Tempi di caricamento delle pagine migliorati per le implementazioni web
-* Maggiore sicurezza
-* Migliori opzioni di implementazione per le applicazioni a pagina singola
-* AT.js contiene i componenti inclusi in target.js, quindi non effettua più chiamate a target.js
+>* Tempi di caricamento delle pagine migliorati per le implementazioni web
+>* Maggiore sicurezza
+>* Migliori opzioni di implementazione per le applicazioni a pagina singola
+>* AT.js contiene i componenti inclusi in target.js, quindi non effettua più chiamate a target.js
 >
-Puoi selezionare AT.js o mbox.js nel menu a discesa **Libreria client**.
+>Puoi selezionare AT.js o mbox.js nel menu a discesa **Libreria client**.
 
 <!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
@@ -151,12 +151,12 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
 
    >[!NOTE]
    >
-   Durante la configurazione di A4T con AEM, è possibile che in un riferimento alla configurazione manchi una voce. Per selezionare il framework di analisi, effettua le seguenti operazioni:
+   >Durante la configurazione di A4T con AEM, è possibile che in un riferimento alla configurazione manchi una voce. Per selezionare il framework di analisi, effettua le seguenti operazioni:
    >
-   1. Passa a **Strumenti** > **Generale** > **CRXDE Lite**.
-   1. Passa a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   1. Impostare la proprietà **disable** su **false**.
-   1. Fare clic su **Salva tutto**.
+   >1. Passa a **Strumenti** > **Generale** > **CRXDE Lite**.
+   >1. Passa a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   >1. Impostare la proprietà **disable** su **false**.
+   >1. Fare clic su **Salva tutto**.
 
 1. Nella finestra di dialogo, specifica i valori per queste proprietà.
 
@@ -175,13 +175,13 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
 
    >[!NOTE]
    >
-   Per impostazione predefinita, quando scegli di accedere alla procedura guidata di configurazione di Adobe Target, il targeting accurato è abilitato.
+   >Per impostazione predefinita, quando scegli di accedere alla procedura guidata di configurazione di Adobe Target, il targeting accurato è abilitato.
    >
-   Il targeting accurato significa che la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Di conseguenza, in termini di prestazioni, un targeting accurato può creare un ritardo di alcuni millisecondi prima del caricamento del contenuto.
+   >Il targeting accurato significa che la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Di conseguenza, in termini di prestazioni, un targeting accurato può creare un ritardo di alcuni millisecondi prima del caricamento del contenuto.
    >
-   Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell’istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
+   >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell’istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
    >
-   Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Modifica direttamente tali componenti.
+   >Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Modifica direttamente tali componenti.
 
 1. Fai clic su **Connetti a Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio **Connessione riuscita**. Fai clic su **OK** sul messaggio e quindi **OK** nella finestra di dialogo.
 
@@ -206,7 +206,7 @@ Puoi creare più framework per una singola configurazione di Target. I framework
 
    >[!NOTE]
    >
-   Durante la mappatura, i parametri vengono passati a una mbox tramite stringhe semplici. Non è possibile mappare array da ContextHub.
+   >Durante la mappatura, i parametri vengono passati a una mbox tramite stringhe semplici. Non è possibile mappare array da ContextHub.
 
    Ad esempio, per utilizzare **Dati profilo** relativi ai visitatori del sito per controllare la campagna di Target, trascina il componente **Dati profilo** nella pagina. Vengono visualizzate le variabili dei dati di profilo disponibili per la mappatura per i parametri di Adobe Target.
 
@@ -218,7 +218,7 @@ Puoi creare più framework per una singola configurazione di Target. I framework
 
    >[!NOTE]
    >
-   La sincronizzazione dei parametri è solo unidirezionale, cioè da AEM ad Adobe Target.
+   >La sincronizzazione dei parametri è solo unidirezionale, cioè da AEM ad Adobe Target.
 
 Il framework viene creato. Per replicare il framework nell’istanza di pubblicazione, utilizza l’opzione **Attiva framework** dalla barra laterale.
 
@@ -228,14 +228,14 @@ Associa le [attività AEM](/help/sites-authoring/activitylib.md) alla configuraz
 
 >[!NOTE]
 >
-Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:
+>Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:
 >
 >
-* Se l&#39;opzione **xt_only** è abilitata nel tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
+>* Se l&#39;opzione **xt_only** è abilitata nel tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
 >
-* Se l&#39;opzione **xt_only** è abilitata **not** nel tenant di Adobe Target (clientcode), puoi creare **entrambe** le attività XT e A/B nell&#39;AEM.
+>* Se l&#39;opzione **xt_only** è abilitata **not** nel tenant di Adobe Target (clientcode), puoi creare **entrambe** le attività XT e A/B nell&#39;AEM.
 >
-**Nota aggiuntiva:** l&#39;opzione **xt_only** è un&#39;impostazione applicata a un determinato tenant di Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
+>**Nota aggiuntiva:** l&#39;opzione **xt_only** è un&#39;impostazione applicata a un determinato tenant di Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
 
 ### Associazione del framework di Target al sito {#associating-the-target-framework-with-your-site}
 
@@ -255,14 +255,14 @@ Quando si associa una pagina al framework, le pagine figlie ereditano l&#39;asso
 
    >[!NOTE]
    >
-   Accertati di selezionare il **framework** specifico creato e non la configurazione cloud di Target in cui è stato creato.
+   >Accertati di selezionare il **framework** specifico creato e non la configurazione cloud di Target in cui è stato creato.
 
 1. Fai clic su **Fine**.
 1. Attiva la pagina root del sito web in modo da replicarlo sul server di pubblicazione. (Vedi [Come Utilizzare Le Pagine Di Publish](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
    >
-   Se il framework allegato alla pagina non è ancora stato attivato, viene visualizzata una procedura guidata che consente di pubblicarlo.
+   >Se il framework allegato alla pagina non è ancora stato attivato, viene visualizzata una procedura guidata che consente di pubblicarlo.
 
 ## Risoluzione dei problemi di connessione a Target {#troubleshooting-target-connection-problems}
 

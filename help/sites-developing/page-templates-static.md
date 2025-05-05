@@ -303,17 +303,17 @@ Per creare un modello basato su un modello esistente:
    >Le modifiche apportate al nodo **/apps/&lt;sito Web>/templates/&lt;nome-modello>** hanno effetto sull&#39;istanza del modello (come nell&#39;elenco di selezione).
    >
    >
-   Le modifiche apportate al nodo **/apps/&lt;sito Web>/components/&lt;nome-componente>** interessano la pagina del contenuto creata quando si utilizza il modello.
+   >Le modifiche apportate al nodo **/apps/&lt;sito Web>/components/&lt;nome-componente>** interessano la pagina del contenuto creata quando si utilizza il modello.
 
    Ora puoi creare una pagina all’interno del sito web utilizzando il nuovo modello.
 
 >[!NOTE]
 >
-La libreria client dell&#39;editor presuppone la presenza dello spazio dei nomi `cq.shared` nelle pagine di contenuto e, se è assente, l&#39;errore JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` restituisce i risultati.
+>La libreria client dell&#39;editor presuppone la presenza dello spazio dei nomi `cq.shared` nelle pagine di contenuto e, se è assente, l&#39;errore JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` restituisce i risultati.
 >
-Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse include automaticamente `cq.shared`. Tuttavia, se decidi di creare pagine di contenuto personalizzate da zero senza basarle su contenuto di esempio, devi assicurarti di includere lo spazio dei nomi `cq.shared`.
+>Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse include automaticamente `cq.shared`. Tuttavia, se decidi di creare pagine di contenuto personalizzate da zero senza basarle su contenuto di esempio, devi assicurarti di includere lo spazio dei nomi `cq.shared`.
 >
-Per ulteriori informazioni, vedere [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md).
+>Per ulteriori informazioni, vedere [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md).
 
 ## Come rendere disponibile un modello esistente {#making-an-existing-template-available}
 

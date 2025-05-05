@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM Forms consente agli sviluppatori di moduli di incorporare facilmente moduli adattivi e comunicazioni interattive in un’applicazione AEM Sites a pagina singola (SPA). Il modulo adattivo incorporato e la comunicazione interattiva sono completamente funzionali e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Aiuta l’utente a rimanere nel contesto di altri elementi della pagina web e a interagire contemporaneamente con il modulo adattivo o la comunicazione interattiva.
 
-Nell&#39;applicazione AEM Sites a pagina singola è possibile aggiungere un modulo adattivo o una comunicazione interattiva utilizzando il [componente Contenitore SPA di AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) È un componente di AEM Forms per AEM Sites SPA che puoi aggiungere alla pagina Sites.
+Nell&#39;applicazione AEM Sites a pagina singola è possibile aggiungere un modulo adattivo o una comunicazione interattiva utilizzando il [componente Contenitore SPA di AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) È un componente di AEM Forms per AEM Sites SPA che puoi aggiungere alla pagina Sites.
 
 Per informazioni sull&#39;incorporamento di un modulo adattivo in un AEM Sites non SPA, consulta [Incorporare un modulo adattivo o una comunicazione interattiva nella pagina AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 

@@ -123,8 +123,8 @@ Puoi configurare il firewall interno in modo che alcuni componenti di AEM Forms 
 
 Per impostazione predefinita, le risorse disponibili sui nodi di pubblicazione sono accessibili a tutti. L’accesso in sola lettura è abilitato per tutte le risorse. È necessario per abilitare l’accesso anonimo. Se prevedi di limitare l’accesso alla visualizzazione modulo e all’invio solo agli utenti autenticati, utilizza un gruppo comune per consentire solo agli utenti autenticati di avere accesso in sola lettura alle risorse disponibili sui nodi di pubblicazione. Le seguenti posizioni/directory contengono risorse di Forms che richiedono protezione avanzata (accesso in sola lettura per gli utenti autenticati):
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
+* /content/&ast;
+* /etc.clientlibs/fd/&ast;
 * /libs/fd/&amp;ast
 
 ## Gestione sicura dei dati dei moduli  {#securely-handle-forms-data}

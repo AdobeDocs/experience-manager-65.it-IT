@@ -162,7 +162,7 @@ Una volta eseguito lo script, è necessario aggiornare la sezione `SCHEMAS` di `
 
 ## Configura connessione JDBC {#configure-jdbc-connection}
 
-La configurazione OSGi per il pool di connessioni JDBC Day Commons **** configura il driver JDBC MySQL.
+La configurazione OSGi per il pool di connessioni JDBC Day Commons **&#x200B;**&#x200B;configura il driver JDBC MySQL.
 
 Tutte le istanze AEM di pubblicazione e creazione devono puntare allo stesso server MySQL.
 

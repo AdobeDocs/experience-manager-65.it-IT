@@ -91,6 +91,7 @@ Inoltre, se hai selezionato uno schema XML o un modello di modulo XDP come model
 1. Nella finestra di dialogo Creazione frammento, specifica le seguenti informazioni:
 
    * **Nome**: nome del frammento. Il valore predefinito è il nome dell’elemento del pannello. È un campo obbligatorio.
+
      >[!NOTE]
      >
      >Assicurati di specificare un nome univoco per il frammento. Se esiste un altro frammento con lo stesso nome, la creazione del frammento non riesce.

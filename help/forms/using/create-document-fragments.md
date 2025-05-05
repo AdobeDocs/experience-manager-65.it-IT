@@ -164,7 +164,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    ![Testo statico dettagli cliente](assets/customer_details_static_text_new.png)
 
 1. Posizionare il cursore accanto al campo **Mobile Number** e fare doppio clic sulla proprietà **customer** > **mobilenum**.
-1. Posizionare il cursore accanto al campo **Numero contatto alternativo** e fare doppio clic sulla proprietà** cliente** > **alternatemobilenumber**.
+1. Posizionare il cursore accanto al campo **Numero contatto alternativo** e fare doppio clic sulla proprietà **&#x200B; cliente** > **alternatemobilenumber**.
 1. Posizionare il cursore accanto al campo **Numero relazione** e fare doppio clic sulla proprietà **cliente** > **numero relazione**.
 1. Selezionare la scheda **Variabili**, posizionare il cursore accanto al campo **Luogo di fornitura** e fare doppio clic sulla variabile **Fornitura**.
 1. Posizionare il cursore accanto al campo **Codice stato** e fare doppio clic sulla variabile **Codice stato**.

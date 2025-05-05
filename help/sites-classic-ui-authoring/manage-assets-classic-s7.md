@@ -395,7 +395,7 @@ Per impostazione predefinita, in Experience Manager vengono cercate la cartella 
 >* Nell&#39;interfaccia classica, è inoltre possibile cercare **Flash** e **FXG**. Il filtro per questi due termini nell’interfaccia touch non è supportato.
 >
 >* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono il rendering originale (solo &#42;.mp4) e il rendering codificato.
-* Durante la ricerca in un set di video adattivi, esegui una ricerca nella cartella e in tutte le sottocartelle, ma solo se hai aggiunto una parola chiave alla ricerca. Se non è stata aggiunta alcuna parola chiave, la ricerca nelle sottocartelle non verrà eseguita in Experience Manager.
+>* Durante la ricerca in un set di video adattivi, esegui una ricerca nella cartella e in tutte le sottocartelle, ma solo se hai aggiunto una parola chiave alla ricerca. Se non è stata aggiunta alcuna parola chiave, la ricerca nelle sottocartelle non verrà eseguita in Experience Manager.
 >
 
 **Stato Publish** - È possibile filtrare le risorse in base allo stato di pubblicazione: Non pubblicato o Pubblicato. Se non si seleziona alcuno stato di Publish, per impostazione predefinita in Experience Manager vengono cercati tutti gli stati di pubblicazione.

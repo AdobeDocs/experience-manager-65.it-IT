@@ -77,7 +77,7 @@ Configurazione dell’azione di invio endpoint REST
 
 >[!NOTE]
 >
-Per passare i campi come parametri in un URL REST, tutti i campi devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi.
+>Per passare i campi come parametri in un URL REST, tutti i campi devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi.
 
 ### Post ha inviato dati a una risorsa o a un endpoint di riposo esterno  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -108,7 +108,7 @@ L&#39;azione di invio **Invia e-mail** invia un&#39;e-mail a uno o più destinat
 
 >[!NOTE]
 >
-Tutti i campi modulo devono avere nomi di elementi diversi, anche se sono inseriti in pannelli diversi), ad esempio per includere i dati del modulo in un messaggio e-mail.
+>Tutti i campi modulo devono avere nomi di elementi diversi, anche se sono inseriti in pannelli diversi), ad esempio per includere i dati del modulo in un messaggio e-mail.
 
 ## Invia PDF tramite e-mail {#send-pdf-via-email}
 
@@ -116,7 +116,7 @@ L&#39;azione di invio **Invia PDF tramite e-mail** invia un messaggio e-mail con
 
 >[!NOTE]
 >
-Questa azione di invio è disponibile per i moduli adattivi basati su XFA e per i moduli di adattamento basati su XSD che dispongono del modello del documento di record.
+>Questa azione di invio è disponibile per i moduli adattivi basati su XFA e per i moduli di adattamento basati su XSD che dispongono del modello del documento di record.
 
 ## Richiama un Forms Workflow {#invoke-a-forms-workflow}
 
@@ -150,7 +150,7 @@ L’azione Invia inserisce quanto segue nella posizione del payload del flusso d
 
 >[!NOTE]
 >
-Le variabili possono essere utilizzate indipendentemente dal fatto che il modello di flusso di lavoro sia contrassegnato o meno per l’archiviazione dati esterna.
+>Le variabili possono essere utilizzate indipendentemente dal fatto che il modello di flusso di lavoro sia contrassegnato o meno per l’archiviazione dati esterna.
 
 * **Allegati**: è possibile utilizzare l&#39;opzione **[!UICONTROL Percorso allegato]** per specificare il nome della cartella in cui archiviare gli allegati caricati nel modulo adattivo. La cartella viene creata in relazione al payload. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni, utilizza l’opzione della variabile e seleziona la variabile dall’elenco di variabili disponibili per il modello di flusso di lavoro.
 
@@ -173,7 +173,7 @@ Dopo una configurazione corretta, utilizzare l&#39;azione di invio [Richiama un 
 
 >[!NOTE]
 >
-La funzione Submit to Microsoft® SharePoint List è stata introdotta con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+>La funzione Submit to Microsoft® SharePoint List è stata introdotta con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 L&#39;azione di invio **[!UICONTROL Invia a SharePoint]** collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso.
 
@@ -199,7 +199,7 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
      >[!NOTE]
      >
-     Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+     >Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
 
 1. Fai clic su **[!UICONTROL Connetti]**. Se la connessione ha esito positivo, viene visualizzato il messaggio `Connection Successful`.
 1. Selezionare **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa.
@@ -218,16 +218,16 @@ Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Mi
 
 >[!NOTE]
 >
-In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
-* colonna immagine
-* colonna metadati
-* colonna persona
-* colonna di dati esterni
+>In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
+>* colonna immagine
+>* colonna metadati
+>* colonna persona
+>* colonna di dati esterni
 
 
 >[!NOTE]
 >
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando l&#39;SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza di Cloud Service.
+>Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando l&#39;SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza di Cloud Service.
 
 ## Riconvalida lato server in modulo adattivo {#server-side-revalidation-in-adaptive-form}
 
@@ -255,7 +255,7 @@ Se l&#39;utente finale ignora tali convalide e invia i moduli, il server esegue 
 
 >[!NOTE]
 >
-La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile HTML e la manipolazione DOM nella stessa libreria client.
+>La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile HTML e la manipolazione DOM nella stessa libreria client.
 
 ### Supporto di funzioni personalizzate nelle espressioni di convalida {#supporting-custom-functions-in-validation-expressions-br}
 

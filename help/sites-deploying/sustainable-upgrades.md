@@ -89,7 +89,7 @@ I mixin applicati in CRXDE Lite mostrano i nodi di contenuto e gli alberi contra
 
 L’AEM 6.5 viene fornito con un controllo di integrità per avvisare i clienti se il contenuto sovrapposto o di riferimento viene utilizzato in modo incoerente con la classificazione del contenuto.
 
-Il** Sling/Granite Content Access Check** è un nuovo controllo di integrità che monitora l’archivio per verificare se il codice del cliente accede in modo errato ai nodi protetti in AEM.
+Il **&#x200B; Sling/Granite Content Access Check** è un nuovo controllo di integrità che monitora l’archivio per verificare se il codice del cliente accede in modo errato ai nodi protetti in AEM.
 
 Questa operazione esegue la scansione di **/apps** e in genere richiede diversi secondi.
 

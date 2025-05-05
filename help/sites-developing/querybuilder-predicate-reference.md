@@ -381,7 +381,7 @@ Supporta l&#39;estrazione dei facet. Fornisce bucket per ogni valore di propriet
 
 * **profondità**
 
-  Numero di livelli di caratteri jolly sotto i quali può esistere la proprietà o il percorso relativo (ad esempio, `property=size depth=2` controlla nodo/dimensione, nodo/&amp;ast;/dimensione e nodo/&amp;ast;/&amp;ast;/dimensione).
+  Numero di livelli di caratteri jolly sotto i quali può esistere la proprietà o il percorso relativo (ad esempio, `property=size depth=2` controlla nodo/dimensione, nodo/&ast;/dimensione e nodo/&ast;/&ast;/dimensione).
 
 ### rangeproperty {#rangeproperty}
 

@@ -244,7 +244,7 @@ I certificati autofirmati possono essere utilizzati durante la configurazione de
 
 1. Assicurati di avere una libreria SSL installata e funzionante. Questa procedura utilizza OpenSSL come esempio.
 
-1. Crea un file di configurazione OpenSSL (cnf) personalizzato. Questa configurazione può essere eseguita copiando il file di configurazione **openssl.cnf **predefinito e personalizzandolo. Sui sistemi UNIX®, si trova in `/usr/lib/ssl/openssl.cnf`
+1. Crea un file di configurazione OpenSSL (cnf) personalizzato. Questa configurazione può essere eseguita copiando il file di configurazione **openssl.cnf &#x200B;** predefinito e personalizzandolo. Sui sistemi UNIX®, si trova in `/usr/lib/ssl/openssl.cnf`
 
 1. Procedi alla creazione della chiave radice CA eseguendo il comando seguente in un terminale:
 
@@ -280,12 +280,12 @@ Per abilitare la registrazione di debug, è necessario effettuare le seguenti op
 
 * Livello registro: debug
 * File di registro logs/ldap.log
-* Schema messaggio: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Schema messaggio: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Livello registro: debug
 * File di registro: logs/external.log
-* Schema messaggio: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Schema messaggio: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Una parola sull&#39;affiliazione di gruppo {#a-word-on-group-affiliation}

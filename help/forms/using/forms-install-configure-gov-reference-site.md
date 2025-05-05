@@ -312,15 +312,15 @@ Una volta completata la configurazione cloud, potrebbe essere utile testare il m
 
    >[!NOTE]
    >
-   Dopo aver eseguito il test dei servizi, fare clic su **Annulla** per assicurarsi che le modifiche involontarie non vengano propagate al modello dati del modulo.
+   >Dopo aver eseguito il test dei servizi, fare clic su **Annulla** per assicurarsi che le modifiche involontarie non vengano propagate al modello dati del modulo.
 
    >[!NOTE]
    >
-   È stato segnalato che era necessario un riavvio del server AEM per consentire al Data Source di eseguire correttamente l’associazione a FDM.
+   >È stato segnalato che era necessario un riavvio del server AEM per consentire al Data Source di eseguire correttamente l’associazione a FDM.
 
    >[!NOTE]
    >
-   Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+   >Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 #### Test del modello dati di Forms (Derby) {#test-fdm-derby}
 
@@ -425,7 +425,7 @@ Gli amministratori possono fornire agli utenti le autorizzazioni per l’analisi
 
 >[!NOTE]
 >
-I dati di AEM Forms Analytics sono disponibili in modalità offline o senza una configurazione di Adobe Analytics Cloud se il pacchetto `we-gov-forms.ui.analytics-<version>.zip` è installato, ma i dati di AEM Sites richiedono una configurazione cloud attiva.
+>I dati di AEM Forms Analytics sono disponibili in modalità offline o senza una configurazione di Adobe Analytics Cloud se il pacchetto `we-gov-forms.ui.analytics-<version>.zip` è installato, ma i dati di AEM Sites richiedono una configurazione cloud attiva.
 
 1. Passa a *https://&lt;aemserver>:&lt;porta>/sites.html/content*
 1. Seleziona il &quot;Sito We.Gov di AEM Forms&quot; per visualizzare le pagine del sito.
@@ -454,7 +454,7 @@ I dati di AEM Forms Analytics sono disponibili in modalità offline o senza una 
 
 >[!NOTE]
 >
-I dati di AEM Forms Analytics sono disponibili in modalità offline o senza una configurazione di Adobe Analytics Cloud se il pacchetto `we-gov-forms.ui.analytics-<version>.zip` è installato, ma i dati di AEM Sites richiedono una configurazione cloud attiva.
+>I dati di AEM Forms Analytics sono disponibili in modalità offline o senza una configurazione di Adobe Analytics Cloud se il pacchetto `we-gov-forms.ui.analytics-<version>.zip` è installato, ma i dati di AEM Sites richiedono una configurazione cloud attiva.
 
 1. Passa a
 
@@ -501,7 +501,7 @@ Manager in alto a sinistra > Strumenti > Sicurezza > Configurazione Adobe IMS.
 
 >[!NOTE]
 >
-Il certificato creato in questa sezione verrà utilizzato per creare il servizio di integrazione in Adobe I/O. Dopo che gli utenti hanno creato nel servizio di integrazione possono utilizzare tali informazioni da Adobe I/O per completare la configurazione.
+>Il certificato creato in questa sezione verrà utilizzato per creare il servizio di integrazione in Adobe I/O. Dopo che gli utenti hanno creato nel servizio di integrazione possono utilizzare tali informazioni da Adobe I/O per completare la configurazione.
 
 #### Creazione dell’integrazione in Adobe I/O {#create-integration-adobeio}
 
@@ -800,7 +800,7 @@ Per configurarli in modo che siano abilitati all’interno del flusso di lavoro,
 
    >[!NOTE]
    >
-   Solo perché un utente abilita il servizio all’interno della pagina di Configuration Manager, gli utenti devono comunque impostare una configurazione del servizio per comunicare con i servizi esterni richiesti.
+   >Solo perché un utente abilita il servizio all’interno della pagina di Configuration Manager, gli utenti devono comunque impostare una configurazione del servizio per comunicare con i servizi esterni richiesti.
 
    ![pacchetto moduli governativi](assets/aftia-configuration-options.jpg)
 

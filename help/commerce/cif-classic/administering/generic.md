@@ -40,7 +40,7 @@ La soluzione generica Adobe Experience Manager (AEM) fornisce metodi per gestire
 >
 >Le procedure seguenti si applicano sia ai prodotti che alle varianti di prodotto.
 
-Prima di creare i prodotti, definire uno scaffold [](/help/sites-authoring/scaffolding.md). Specifica i campi da definire, i prodotti e la modalità di modifica.
+Prima di creare i prodotti, definire uno scaffold [&#128279;](/help/sites-authoring/scaffolding.md). Specifica i campi da definire, i prodotti e la modalità di modifica.
 
 È necessario uno scaffold per ogni tipo di prodotto distinto. Lo scaffold appropriato è associato ai prodotti da:
 

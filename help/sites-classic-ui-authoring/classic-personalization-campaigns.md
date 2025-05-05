@@ -45,6 +45,7 @@ Una campagna è una raccolta di singole **esperienze**.
 Il contenuto mirato forma le varie esperienze, presentate al visitatore ai **punti di contatto**. Sono disponibili diversi tipi di esperienza:
 
    * **Teaser**
+
      [Le pagine/paragrafi teaser](#teasers) vengono utilizzati per indirizzare specifici visitatori **Segmenti** a contenuti incentrati sui loro interessi.
 
      Le pagine teaser possono:

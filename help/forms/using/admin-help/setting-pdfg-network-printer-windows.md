@@ -69,6 +69,6 @@ Gli utenti che hanno il ruolo Amministratore PDFG o Utente PDFG possono installa
 
 1. In Installazione stampante di rete PDFG, fare clic sul collegamento. Quando vengono richieste informazioni sull&#39;account utente, specificare il nome utente e la password utilizzati nel passaggio 1 per l&#39;accesso. Viene visualizzato un messaggio che indica che la stampante è stata installata correttamente.
 
-   ***nota **: se la password dell&#39;utente cambia, gli utenti devono reinstallare la stampante di rete PDFG sui propri computer. Impossibile aggiornare la password dalla console di amministrazione.*
+   ***nota &#x200B;**: se la password dell&#39;utente cambia, gli utenti devono reinstallare la stampante di rete PDFG sui propri computer. Impossibile aggiornare la password dalla console di amministrazione.*
 
 1. Fare clic su OK.

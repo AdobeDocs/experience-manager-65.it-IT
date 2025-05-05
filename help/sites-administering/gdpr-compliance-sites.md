@@ -44,7 +44,7 @@ Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati dei 
 
 ## Consenso/rinuncia {#opt-in-opt-out}
 
-AEM dispone di un servizio di rinuncia ai cookie [](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire il consenso/diniego per gli utenti.
+AEM dispone di un servizio di rinuncia ai cookie [&#128279;](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire il consenso/diniego per gli utenti.
 
 ## Approfondimenti migliorati da Analytics {#enhanced-insights-by-analytics}
 

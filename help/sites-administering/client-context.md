@@ -117,7 +117,7 @@ Ad esempio, se il mouse si trova sulla parte sinistra o destra della finestra. Q
 
 >[!NOTE]
 >
-I tag impostati sulle risorse DAM visualizzate nelle pagine visitate non verranno conteggiati.
+>I tag impostati sulle risorse DAM visualizzate nelle pagine visitate non verranno conteggiati.
 
 **Archivio tecnografica** Questo componente dipende dall&#39;installazione.
 
@@ -129,7 +129,7 @@ Per ulteriori informazioni, vedere [ClientContext in Detail](/help/sites-develop
 
 >[!NOTE]
 >
-I dati di pagina non sono più nel contesto client come componente predefinito. Se necessario, è possibile aggiungerlo modificando il contesto del client, aggiungendo il componente **Proprietà store generiche** e configurandolo per definire l&#39;archivio **Store** come `pagedata`.
+>I dati di pagina non sono più nel contesto client come componente predefinito. Se necessario, è possibile aggiungerlo modificando il contesto del client, aggiungendo il componente **Proprietà store generiche** e configurandolo per definire l&#39;archivio **Store** come `pagedata`.
 
 ## Modifica del profilo ClientContext {#changing-the-client-context-profile}
 

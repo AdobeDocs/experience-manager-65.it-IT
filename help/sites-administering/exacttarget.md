@@ -66,7 +66,7 @@ Per creare una configurazione ExactTarget in Strumenti:
 
 1. Nella pagina di benvenuto, fai clic su **Strumenti**. Oppure accedi direttamente a `https://<hostname>:<port>/misadmin#/etc`.
 1. Seleziona **Strumenti**, quindi **Configurazioni Cloud Service,** e infine **ExactTarget**.
-1. Fai clic su **Nuovo** per aprire la finestra **Crea pagina **Crea.
+1. Fai clic su **Nuovo** per aprire la finestra **Crea pagina &#x200B;** Crea.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 

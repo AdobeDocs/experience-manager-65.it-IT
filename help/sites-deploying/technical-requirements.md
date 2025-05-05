@@ -43,7 +43,7 @@ Requisiti minimi per l&#39;esecuzione di Adobe Experience Manager:
 >* [AEM Forms pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md) aggiuntivo richiede 15 GB di spazio temporaneo.
 >
 
-Per ulteriori informazioni, vedere le Linee guida](/help/managing/hardware-sizing-guidelines.md) per il dimensionamento dell&#39;hardware[.
+Per ulteriori informazioni, vedere le Linee guida[&#128279;](/help/managing/hardware-sizing-guidelines.md) per il dimensionamento dell&#39;hardware.
 
 ### Livelli di supporto {#support-levels}
 
@@ -148,7 +148,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 
 >[!NOTE]
 >
->MongoDB è un programma software di terze parti e non è incluso nel pacchetto di licenze di AEM. Per ulteriori informazioni, consulta la pagina regola](https://www.mongodb.com/licensing/server-side-public-license/faq) sulle [licenze MongoDB.
+>MongoDB è un programma software di terze parti e non è incluso nel pacchetto di licenze di AEM. Per ulteriori informazioni, consulta la pagina regola[&#128279;](https://www.mongodb.com/licensing/server-side-public-license/faq) sulle licenze MongoDB.
 >
 >Per ottenere il massimo dalla distribuzione AEM con MongoDB, Adobe Systems consiglia di concedere in licenza la versione MongoDB Enterprise per beneficiare del supporto professionale. Per ulteriori informazioni, vedere [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk).
 >

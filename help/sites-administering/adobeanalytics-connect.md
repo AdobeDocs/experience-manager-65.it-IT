@@ -174,7 +174,7 @@ I discendenti della pagina ereditano l’associazione con il framework. Ad esemp
 
 1. Dalla console **Sites**, seleziona la pagina che desideri impostare con il tracciamento.
 1. Apri **[Proprietà pagina](/help/sites-authoring/editing-page-properties.md)** direttamente dalla console o dall&#39;editor pagina.
-1. Apri la scheda** Cloud Service **.
+1. Apri la scheda **&#x200B; Cloud Service &#x200B;**.
 
 1. Utilizza il menu a discesa **Aggiungi configurazione** per selezionare **Adobe Analytics** dalle opzioni disponibili. Se è presente l’ereditarietà, disattivala prima che il selettore diventi disponibile.
 

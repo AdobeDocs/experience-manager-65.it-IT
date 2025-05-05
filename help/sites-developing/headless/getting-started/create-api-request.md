@@ -37,6 +37,7 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
    * Il pannello a sinistra consente di creare la query.
    * Nel pannello a destra vengono visualizzati i risultati.
    * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
+
      ![Editor GraphiQL](assets/graphiql.png)
 
 1. Supponendo che il modello che hai creato si chiama `person` con campi `firstName`, `lastName` e `position`, puoi creare una semplice query per recuperare il contenuto del frammento di contenuto.
@@ -67,6 +68,7 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
    * **Documenti** in alto a destra della pagina per visualizzare la documentazione contestuale per aiutarti a creare le query che si adattano ai tuoi modelli.
    * **Cronologia** nella barra degli strumenti superiore per visualizzare le query precedenti.
    * **Salva con nome** e **Salva** per salvare le query, dopodiché potrai elencarle e recuperarle dal pannello **Query persistenti** e da **Publish**.
+
      ![Documentazione di GraphiQL](assets/graphiql-documentation.png)
 
 GraphQL consente query strutturate in grado di eseguire il targeting non solo di set di dati specifici o di singoli oggetti di dati, ma anche di fornire elementi specifici degli oggetti, risultati nidificati, offerte di supporto per variabili di query e molto altro.

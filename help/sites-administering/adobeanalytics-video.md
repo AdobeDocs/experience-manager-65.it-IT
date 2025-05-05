@@ -227,7 +227,7 @@ Le chiamate ad Adobe Analytics che utilizzano l&#39;esempio fornito dovrebbero e
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Questa è la **prima chiamata**effettuata ad Adobe Analytics contenente i seguenti valori:*
+*Questa è la **prima chiamata**&#x200B;effettuata ad Adobe Analytics contenente i seguenti valori:*
 
 * *prop1 e eVar1 per eventdata.a.media.name,*
 * *props2-4, insieme a eVar2 e eVar3 contenenti contentType (video) e segmento (1:O:1-4)*
@@ -235,7 +235,7 @@ Le chiamate ad Adobe Analytics che utilizzano l&#39;esempio fornito dovrebbero e
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Questa è la **terza chiamata**effettuata ad Adobe Analytics:*
+*Questa è la **terza chiamata**&#x200B;effettuata ad Adobe Analytics:*
 
 * *prop1 e eVar1 contengono a.media.name;*
 * *evento1 perché è stato visualizzato un segmento*
@@ -322,7 +322,7 @@ Questo metodo è simile al metodo Milestones, con la differenza che le milestone
 
    ![milestones1](assets/lmilestones1.png)
 
-   *La variabile **pev3**inviata nella chiamata contiene le seguenti informazioni:*
+   *La variabile **pev3**&#x200B;inviata nella chiamata contiene le seguenti informazioni:*
 
    * *Nome* - Nome del file video (*film.avi*)
 
@@ -338,7 +338,7 @@ Questo metodo è simile al metodo Milestones, con la differenza che le milestone
 
 ## Secondi legacy {#legacy-seconds}
 
-Quando si utilizza il metodo ** secondi precedenti**, le chiamate di Adobe Analytics vengono attivate ogni N-esimo secondo, dove N è specificato nel campo Offset tracciamento.
+Quando si utilizza il metodo **&#x200B; secondi precedenti**, le chiamate di Adobe Analytics vengono attivate ogni N-esimo secondo, dove N è specificato nel campo Offset tracciamento.
 
 1. Impostare lo scostamento del brano su un numero qualsiasi di secondi,
 

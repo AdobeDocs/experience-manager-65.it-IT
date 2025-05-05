@@ -171,5 +171,5 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
 >
 >* Se utilizzi una posizione diversa per GDS e la directory temporanea, apri AdminUI in `https://'[server]:[port]'/adminui`, passa a **Home > Impostazioni > Impostazioni sistema core > Configurazioni core** per confermare la posizione in uso.
 >
-* Se il server AEM Forms funziona lentamente anche dopo l’esclusione delle directory suggerite, escludi anche il file eseguibile Java™ (java.exe).
+>* Se il server AEM Forms funziona lentamente anche dopo l’esclusione delle directory suggerite, escludi anche il file eseguibile Java™ (java.exe).
 >

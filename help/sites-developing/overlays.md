@@ -22,7 +22,7 @@ Adobe Experience Manager (AEM), e prima ancora CQ, ha a lungo utilizzato il prin
 
 Sovrapposizione è un termine utilizzato in molti contesti. In questo contesto (estensione dell’AEM), una sovrapposizione significa accettare la funzionalità predefinita e imporre le tue definizioni al riguardo (per personalizzare la funzionalità standard).
 
-In un&#39;istanza standard, la funzionalità predefinita si trova in `/libs` e si consiglia di definire la sovrapposizione (personalizzazioni) nel ramo `/apps`. AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel ramo `/apps` e poi nel ramo `/libs` (è possibile configurare il percorso di ricerca [](#configuring-the-search-paths)). Questo meccanismo indica che la sovrapposizione (e le personalizzazioni ivi definite) ha la priorità.
+In un&#39;istanza standard, la funzionalità predefinita si trova in `/libs` e si consiglia di definire la sovrapposizione (personalizzazioni) nel ramo `/apps`. AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel ramo `/apps` e poi nel ramo `/libs` (è possibile configurare il percorso di ricerca [&#128279;](#configuring-the-search-paths)). Questo meccanismo indica che la sovrapposizione (e le personalizzazioni ivi definite) ha la priorità.
 
 A partire dalla versione 6.0 dell’AEM, sono state apportate modifiche alle modalità di implementazione e utilizzo delle sovrapposizioni:
 
@@ -63,7 +63,7 @@ A partire dalla versione 6.0 dell’AEM, sono state apportate modifiche alle mod
 
 Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio [configurazione delle console](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [creazione della categoria di selezione nel browser risorse nel pannello laterale](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (utilizzato durante la creazione delle pagine). Sono necessari in quanto:
 
-* ***Non* apportare modifiche nel ramo `/libs`**Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
+* ***Non* apportare modifiche nel ramo `/libs`**&#x200B;Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
 
    * aggiorna nell’istanza
    * applicare un hotfix

@@ -58,8 +58,10 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
 
 1. Configurare i Cloud Service:
    1. Nell&#39;istanza dell&#39;autore AEM, vai a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e fai clic su **[!UICONTROL hCaptcha®]**.
+
       ![hCaptcha® nell&#39;interfaccia utente](assets/hcaptcha-in-ui.png)
    1. Seleziona un Contenitore di configurazione, creato o aggiornato, come descritto nella sezione precedente. Seleziona **[!UICONTROL Crea]**.
+
       ![Configurazione hCaptcha®](assets/config-hcaptcha.png)
    1. Specifica **[!UICONTROL Titolo]**, <!--**[!UICONTROL Name]**--> **[!UICONTROL Chiave sito]** e **[!UICONTROL Chiave segreta]** per il servizio hCaptcha® [ottenuti nel prerequisito](#prerequisite).
    1. Fai clic su **[!UICONTROL Crea]**.
@@ -93,6 +95,7 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
    * **[!UICONTROL Messaggio di convalida]:** Fornisci un messaggio di convalida per la convalida Captcha all&#39;invio del modulo o a un&#39;azione dell&#39;utente.
    * **[!UICONTROL Servizio Captcha]:** Seleziona il servizio CAPTCHA per l&#39;invio del modulo, qui selezioni hCaptcha®.
    * **[!UICONTROL Impostazioni di configurazione]:** Seleziona la configurazione cloud configurata per hCaptcha®.
+
      >[!NOTE]
      >Puoi avere più configurazioni cloud nell’ambiente per uno scopo simile. Quindi, scegli il servizio con attenzione. Se non è elencato alcun servizio, consulta [Connettere l&#39;ambiente AEM Forms con hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) per scoprire come creare un Cloud Service che colleghi l&#39;ambiente AEM Forms al servizio hCaptcha®.
 

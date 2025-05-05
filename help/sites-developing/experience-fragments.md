@@ -110,9 +110,11 @@ Per creare un modello di frammento esperienza rilevato dalla procedura guidata *
 1. Entrambi:
 
    1. Il tipo di risorsa del modello (nodo iniziale) deve ereditare da:
+
       `cq/experience-fragments/components/xfpage`
 
    1. Il nome del modello deve iniziare con:
+
       `experience-fragments`
 Ciò consente agli utenti di creare frammenti di esperienza in /content/experience-fragments, in quanto la proprietà `cq:allowedTemplates` di questa cartella include tutti i modelli i cui nomi iniziano con `experience-fragment`. I clienti possono aggiornare questa proprietà per includere il proprio schema di denominazione o le posizioni dei modelli.
 

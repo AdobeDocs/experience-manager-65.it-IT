@@ -29,29 +29,29 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 | Chiude il browser Proprietà per il componente modulo adattivo selezionato | Ctrl+Alt+W | Comando+Alt+W |
 | Salva le modifiche nel browser Proprietà per il componente modulo adattivo selezionato | Ctrl+S | Comando+S |
 | Modifica regola per il componente modulo adattivo selezionato | CTRL+ALT+INVIO | Comando+Alt+Invio |
-| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&amp;ast; |
-| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
-| Ripristina ultima modifica | CTRL+Y | CTRL+A&amp;P;ast; |
+| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&ast; |
+| Ripristina ultima modifica | CTRL+Y | CTRL+A&P;ast; |
 | Selezione di più componenti | Maiusc+clic | Maiusc+clic |
-| Copia componente selezionato | Ctrl-C | CTRL&amp;C;ast; |
-| Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&amp;ast; |
+| Copia componente selezionato | Ctrl-C | CTRL&C;ast; |
+| Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&ast; |
 | Incolla componenti | Ctrl+V | Ctrl+V |
-| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&amp;AMMA;ast; |
-| Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&amp;ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | CTRL+B&amp;ast; |
-| Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&amp;ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&amp;ast; |
+| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&AMMA;ast; |
+| Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | CTRL+B&ast; |
+| Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&ast; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con un &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che con i tasti Comando in macOS.
+>I tasti di scelta rapida contrassegnati con un &#39;&ast;&#39; funzionano sia con i tasti Ctrl che con i tasti Comando in macOS.
 
 >[!NOTE]
 >
-Selezione multipla su un dispositivo desktop:
+>Selezione multipla su un dispositivo desktop:
 >
-* Windows: Ctrl+clic sui componenti richiesti.
-* macOS: Comando+clic sui componenti richiesti.
+>* Windows: Ctrl+clic sui componenti richiesti.
+>* macOS: Comando+clic sui componenti richiesti.
 >
 
 ## Editor temi  {#themeeditor}
@@ -60,13 +60,13 @@ Selezione multipla su un dispositivo desktop:
 |---|---|---|
 | Apri il browser Proprietà per il componente selezionato in un tema | ALT+INVIO | ALT+INVIO |
 | Chiude il browser Proprietà per il componente selezionato in un tema | Ctrl+Alt+W | Comando+Alt+W |
-| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
-| Ripristina ultima modifica | CTRL+Y | CTRL+A&amp;P;ast; |
-| Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&amp;ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&ast; |
+| Ripristina ultima modifica | CTRL+Y | CTRL+A&P;ast; |
+| Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&ast; |
 
 >[!NOTE]
 >
-I tasti di scelta rapida contrassegnati con un &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che con i tasti Comando in macOS.
+>I tasti di scelta rapida contrassegnati con un &#39;&ast;&#39; funzionano sia con i tasti Ctrl che con i tasti Comando in macOS.
 
 ## Browser contenuti  {#contentbrowser}
 

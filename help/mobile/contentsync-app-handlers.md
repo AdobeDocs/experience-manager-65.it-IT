@@ -63,8 +63,8 @@ Questo gestore deve essere aggiunto a qualsiasi configurazione di ContentSync pe
 
 * ***tipo - Stringa - mobilecontentlisting***
 * ***percorso*** - Stringa - mantieni vuoto, deve essere presente per essere visualizzato come un gestore valido, ma si deduce che il percorso sia la cache ContentSync corrente. Questo valore viene ignorato.
-* ***targetRootDirectory* -**Stringa - Prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore.
-* ***order - Long* -**Order for ContentSync per eseguire questo gestore. Questo numero deve essere impostato su un valore superiore a tutti gli altri gestori, ad esempio 100. Deve essere eseguito dopo i gestori di contenuti tradizionali.
+* ***targetRootDirectory* -**&#x200B;Stringa - Prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore.
+* ***order - Long* -**&#x200B;Order for ContentSync per eseguire questo gestore. Questo numero deve essere impostato su un valore superiore a tutti gli altri gestori, ad esempio 100. Deve essere eseguito dopo i gestori di contenuti tradizionali.
 
 ```xml
 {
@@ -89,9 +89,9 @@ Questo gestore deve essere aggiunto a qualsiasi configurazione di ContentSync pe
 Il gestore deve essere utilizzato nella configurazione ContentSync della shell dell’app AEM (nodo con pge-type=app-instance)
 
 * ***tipo - Stringa - mobilecontentpackageslisting***
-* ***percorso **-**Stringa*** - Percorso di una shell app (nodo con pge-type=app-instance).
+* ***percorso &#x200B;**-**Stringa*** - Percorso di una shell app (nodo con pge-type=app-instance).
 * ***targetRootDirectory - Stringa*** - Prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore.
-* ***order - Long* -**Order for ContentSync per eseguire questo gestore. Questo numero deve essere impostato su un valore superiore a tutti gli altri gestori, ad esempio 100. Deve essere eseguito dopo i gestori di contenuti tradizionali.
+* ***order - Long* -**&#x200B;Order for ContentSync per eseguire questo gestore. Questo numero deve essere impostato su un valore superiore a tutti gli altri gestori, ad esempio 100. Deve essere eseguito dopo i gestori di contenuti tradizionali.
 
 >[!NOTE]
 >
@@ -123,8 +123,8 @@ Il gestore deve essere utilizzato nella configurazione ContentSync della shell d
 
 Questo gestore deve essere utilizzato in una configurazione ContentSync della shell dell&#39;app AEM (nodo con pge-type=[app-instance]).
 
-* ***tipo - Stringa* - **widgetconfig
-* ***percorso **-**Stringa*** - Percorso di qualsiasi nodo figlio della shell dell&#39;app (nodo con pge-type=[app-instance]).
+* ***tipo - Stringa* - &#x200B;** widgetconfig
+* ***percorso &#x200B;**-**Stringa*** - Percorso di qualsiasi nodo figlio della shell dell&#39;app (nodo con pge-type=[app-instance]).
 * ***targetRootDirectory - Stringa*** - Prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore.
 * ***targetIconDirectory - Stringa*** - Directory in cui inserire le icone per l&#39;app
 
@@ -165,7 +165,7 @@ Le proprietà dell’AEM sono quelle con spazio dei nomi tra &quot;cq&quot;, &qu
 
 * ***tipo - Stringa*** - risorse-app
 
-* ***percorso **-**Stringa*** - percorso in un&#39;istanza dell&#39;app in cui sono archiviate le risorse dell&#39;app
+* ***percorso &#x200B;**-**Stringa*** - percorso in un&#39;istanza dell&#39;app in cui sono archiviate le risorse dell&#39;app
 
 **mobileappoffers** È stato introdotto un nuovo gestore di sincronizzazione dei contenuti per il caso d&#39;uso Personalization per il rendering del contenuto di destinazione. Il gestore &quot;mobileapffers&quot; è in grado di eseguire il rendering delle offerte target associate create dall’autore di contenuto. Il gestore mobileapffers estende il gestore di aggiornamento delle pagine astratte, pertanto molte delle proprietà sono simili. I dettagli del gestore mobileappoffers hanno le seguenti proprietà.
 
@@ -178,7 +178,7 @@ Il gestore mobileappofferers estende il gestore mobileappspages e aggiunge le se
 
 **mobileappconfig** Il gestore di sincronizzazione del contenuto mobileappconfig consente di inserire dati JSON in MobileAppsConfig.json. Per registrare una classe provider, gli sviluppatori aggiungeranno la classe MobileAppsInfoProvider all&#39;elenco dei provider. Il gestore scorre l’elenco di MobileAppsInfoProviders e consente al provider di inserire dati nel file json risultante. L&#39;elenco delle proprietà supportate dal gestore è:
 
-* ***percorso **-**Stringa*** - Percorso di un nodo di istanza dell&#39;app con pge-type=app-instance o un RT che estende /libs/mobileapps/core/components/instance
+* ***percorso &#x200B;**-**Stringa*** - Percorso di un nodo di istanza dell&#39;app con pge-type=app-instance o un RT che estende /libs/mobileapps/core/components/instance
 * ***provider - Stringa*** `[]` - Elenco di MobileAppsInfoProvider completi
 * ***targetRootDirectory - String*** - la directory in cui scrivere il file MobileAppsConfig.json.
 * **nomeFile - Stringa** - nome facoltativo del file in cui scrivere il JSON; impostazione predefinita: MobileAppsConfig.json

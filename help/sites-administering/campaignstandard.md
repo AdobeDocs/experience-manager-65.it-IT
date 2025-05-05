@@ -202,7 +202,7 @@ Dopo aver configurato Externalizer, Adobe Campaign può accedere al contenuto.
 
 >[!NOTE]
 >
-L’istanza di pubblicazione deve essere raggiungibile dal server Adobe Campaign. Se punta a `localhost:4503` o a un altro server che Adobe Campaign non è in grado di raggiungere, le immagini dell&#39;AEM non verranno visualizzate nella console Adobe Campaign.
+>L’istanza di pubblicazione deve essere raggiungibile dal server Adobe Campaign. Se punta a `localhost:4503` o a un altro server che Adobe Campaign non è in grado di raggiungere, le immagini dell&#39;AEM non verranno visualizzate nella console Adobe Campaign.
 
 ## Configurare l’utente remoto di Campaign in AEM {#campaign-remote-user}
 
@@ -234,7 +234,7 @@ Quando [hai creato un modello di consegna e-mail specifico per AEM](#aem-email-d
 
    1. Server: URL del server di authoring AEM. Non deve terminare con una barra.
    1. Account: questo è l&#39;utente `campaign-remote` [ configurato in precedenza in AEM.](#campaign-remote-user)
-   1. Password: questa è la password per l&#39;utente `campaign-remote` configurato in precedenza in AEM.](#campaign-remote-user)[
+   1. Password: questa è la password per l&#39;utente `campaign-remote` configurato in precedenza in AEM.[&#128279;](#campaign-remote-user)
 
    ![Modifica dell&#39;utente aemInstance](assets/acs-external-acount-editor.png)
 

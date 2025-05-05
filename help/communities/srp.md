@@ -24,7 +24,7 @@ A partire da Adobe Experience Manager (AEM) Communities 6.1, il contenuto della 
 
 Sono disponibili diverse opzioni SRP, tutte per accedere a UGC tramite una nuova interfaccia AEM Communities, l&#39;[API SocialResourceProvider](srp-and-ugc.md) (API SRP), che include tutte le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD).
 
-Tutti i componenti SCF vengono implementati utilizzando l&#39;API SRP, consentendo lo sviluppo del codice senza conoscere la topologia sottostante [1} o la posizione di UGC.](topologies.md)
+Tutti i componenti SCF vengono implementati utilizzando l&#39;API SRP, consentendo lo sviluppo del codice senza conoscere la topologia sottostante [1&rbrace; o la posizione di UGC.](topologies.md)
 
 ***L&#39;API SocialResourceProvider è disponibile solo per i clienti con licenza di AEM Communities.***
 

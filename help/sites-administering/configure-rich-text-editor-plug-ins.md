@@ -352,17 +352,17 @@ Innanzitutto, abilita il plug-in paraformat:
 
 >[!NOTE]
 >
-Se il plug-in non viene configurato ulteriormente, vengono attivati i seguenti formati predefiniti:
+>Se il plug-in non viene configurato ulteriormente, vengono attivati i seguenti formati predefiniti:
 >
-* Paragrafo ( `<p>`)
-* Titolo 1 ( `<h1>`)
-* Titolo 2 ( `<h2>`)
-* Titolo 3 ( `<h3>`)
+>* Paragrafo ( `<p>`)
+>* Titolo 1 ( `<h1>`)
+>* Titolo 2 ( `<h2>`)
+>* Titolo 3 ( `<h3>`)
 >
 
 >[!CAUTION]
 >
-Durante la configurazione del formato paragrafo dell’editor Rich Text, non rimuovere il tag paragrafo &lt;p> come opzione di formattazione. Se il tag `<p>` viene rimosso, l&#39;autore di contenuto non può selezionare l&#39;opzione **Formati paragrafo** anche se sono configurati altri formati.
+>Durante la configurazione del formato paragrafo dell’editor Rich Text, non rimuovere il tag paragrafo &lt;p> come opzione di formattazione. Se il tag `<p>` viene rimosso, l&#39;autore di contenuto non può selezionare l&#39;opzione **Formati paragrafo** anche se sono configurati altri formati.
 
 ### Specificare i formati di paragrafo disponibili {#paraformatsindropdown}
 
@@ -399,7 +399,7 @@ I formati dei paragrafi possono essere resi disponibili per la selezione:
 
 >[!CAUTION]
 >
-Se si definiscono formati personalizzati, i formati predefiniti (`<p>`, `<h1>`, `<h2>` e `<h3>`) vengono rimossi. Ricreare il formato `<p>` come predefinito.
+>Se si definiscono formati personalizzati, i formati predefiniti (`<p>`, `<h1>`, `<h2>` e `<h3>`) vengono rimossi. Ricreare il formato `<p>` come predefinito.
 
 ## Configurare caratteri speciali {#spchar}
 
@@ -409,7 +409,7 @@ In un&#39;installazione AEM standard, quando il plug-in `misctools` è abilitato
 
 >[!CAUTION]
 >
-L’aggiunta di caratteri speciali sostituisce la selezione predefinita. Se necessario, definisci o ridefinisci questi caratteri nella tua selezione.
+>L’aggiunta di caratteri speciali sostituisce la selezione predefinita. Se necessario, definisci o ridefinisci questi caratteri nella tua selezione.
 
 ### Definisci un singolo carattere {#definesinglechar}
 
@@ -460,10 +460,12 @@ In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappr
 1. Sotto questo nodo (denominato in base all’intervallo di caratteri speciali) aggiungi le due proprietà seguenti:
 
    * **Nome** `rangeStart`
+
      **Tipo** `Long`
      **Valore** la rappresentazione [Unicode](https://unicode.org/) (decimale) del primo carattere dell&#39;intervallo
 
    * **Nome** `rangeEnd`
+
      **Tipo** `Long`
      **Valore** la rappresentazione [Unicode](https://unicode.org/) (decimale) dell&#39;ultimo carattere nell&#39;intervallo
 
@@ -483,11 +485,11 @@ Gli stili vengono in genere applicati al testo, ma è possibile applicare un set
 
 >[!NOTE]
 >
-Puoi definire stili per tabelle e celle solo per l’interfaccia classica.
+>Puoi definire stili per tabelle e celle solo per l’interfaccia classica.
 
 >[!NOTE]
 >
-Copiare e incollare tabelle nel componente Editor Rich Text o da esso dipende dal browser. Non è supportato per tutti i browser. Puoi ottenere risultati diversi a seconda della struttura della tabella e del browser. Ad esempio, quando copi e incolla una tabella in un componente Editor Rich Text in Mozilla Firefox nell’interfaccia classica e nell’interfaccia touch, il layout della tabella non viene mantenuto.
+>Copiare e incollare tabelle nel componente Editor Rich Text o da esso dipende dal browser. Non è supportato per tutti i browser. Puoi ottenere risultati diversi a seconda della struttura della tabella e del browser. Ad esempio, quando copi e incolla una tabella in un componente Editor Rich Text in Mozilla Firefox nell’interfaccia classica e nell’interfaccia touch, il layout della tabella non viene mantenuto.
 
 1. All&#39;interno del componente, passare al nodo `<rtePlugins-node>/table`. Crea i nodi se non esistono. Per ulteriori dettagli, vedere [attivare un plug-in](#activateplugin).
 1. Creare la proprietà `features` nel nodo `table`:
@@ -498,13 +500,13 @@ Copiare e incollare tabelle nel componente Editor Rich Text o da esso dipende da
 
    >[!NOTE]
    >
-   Se non si desidera abilitare tutte le funzionalità della tabella, è possibile creare la proprietà `features` come:
+   >Se non si desidera abilitare tutte le funzionalità della tabella, è possibile creare la proprietà `features` come:
    >
-   * **Tipo** `String[]`
+   >* **Tipo** `String[]`
    >
-   * **Valore** uno dei seguenti elementi o entrambi, come richiesto:
-   * `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
-   * `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
+   >* **Valore** uno dei seguenti elementi o entrambi, come richiesto:
+   >* `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
+   >* `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
 
 1. Definisci la posizione dei fogli di stile CSS in modo da poterli fare riferimento. Vedere [Specifica della posizione del foglio di stile](#locationofstylesheet), come quando si definiscono [stili per il testo](#textstyles). La posizione può essere definita se sono stati definiti altri stili.
 1. Nel nodo `table` creare i seguenti nuovi nodi (come richiesto):
@@ -566,7 +568,7 @@ Quando il plug-in spellcheck è attivato, l&#39;editor Rich Text utilizza dizion
 
 >[!NOTE]
 >
-Viene visualizzato il messaggio `Spell checking failed` se si tenta di verificare una lingua non installata. I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file readme appropriati. Non modificare i file.
+>Viene visualizzato il messaggio `Spell checking failed` se si tenta di verificare una lingua non installata. I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file readme appropriati. Non modificare i file.
 
 Un&#39;installazione AEM standard include i dizionari per l&#39;inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, eseguire la procedura seguente.
 
@@ -581,16 +583,16 @@ Un&#39;installazione AEM standard include i dizionari per l&#39;inglese american
 
    >[!CAUTION]
    >
-   Sono supportati solo i dizionari nel formato `MySpell` per OpenOffice.org v2.0.1 o versioni precedenti. Poiché i dizionari sono ora file di archivio, si consiglia di verificare l&#39;archivio dopo averlo scaricato.
+   >Sono supportati solo i dizionari nel formato `MySpell` per OpenOffice.org v2.0.1 o versioni precedenti. Poiché i dizionari sono ora file di archivio, si consiglia di verificare l&#39;archivio dopo averlo scaricato.
 
 1. Individuare i file `.aff` e `.dic`. Mantieni il nome del file in minuscolo. Ad esempio, `de_de.aff` e `de_de.dic`.
 1. Caricare i file `.aff` e `.dic` nell&#39;archivio in `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
-Il controllo ortografico dell’editor Rich Text è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare il testo. Per eseguire il controllo ortografico, fare clic su [!UICONTROL Controllo ortografico] nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole ed evidenzia le parole errate.
+>Il controllo ortografico dell’editor Rich Text è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare il testo. Per eseguire il controllo ortografico, fare clic su [!UICONTROL Controllo ortografico] nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole ed evidenzia le parole errate.
 >
-Se si incorporano le modifiche suggerite dal correttore ortografico, lo stato del testo cambia e le parole errate non vengono più evidenziate. Per eseguire il controllo ortografico, fare nuovamente clic sul pulsante Controllo ortografico.
+>Se si incorporano le modifiche suggerite dal correttore ortografico, lo stato del testo cambia e le parole errate non vengono più evidenziate. Per eseguire il controllo ortografico, fare nuovamente clic sul pulsante Controllo ortografico.
 
 ## Configurare la dimensione della cronologia per le azioni Annulla e Ripristina {#undohistory}
 
@@ -626,7 +628,7 @@ Quando il rientro è abilitato (impostazione predefinita), è possibile definire
 
 >[!NOTE]
 >
-Questa dimensione di rientro viene applicata solo ai paragrafi (blocchi) di testo e non influisce sul rientro degli elenchi effettivi.
+>Questa dimensione di rientro viene applicata solo ai paragrafi (blocchi) di testo e non influisce sul rientro degli elenchi effettivi.
 
 1. All&#39;interno del componente, passare al nodo `<rtePlugins-node>/lists`. Crea questi nodi se non esistono. Per ulteriori dettagli, vedere [attivare un plug-in](#activateplugin).
 1. Nel nodo `lists`, creare il parametro `indentSize`:
@@ -639,7 +641,7 @@ Questa dimensione di rientro viene applicata solo ai paragrafi (blocchi) di test
 
 >[!NOTE]
 >
-Questa opzione è applicabile solo quando si utilizza l’editor Rich Text in una finestra di dialogo (non la modifica diretta nell’interfaccia classica).
+>Questa opzione è applicabile solo quando si utilizza l’editor Rich Text in una finestra di dialogo (non la modifica diretta nell’interfaccia classica).
 
 Puoi definire l’altezza dello spazio modificabile mostrato nella finestra di dialogo del componente:
 
@@ -651,7 +653,7 @@ Puoi definire l’altezza dello spazio modificabile mostrato nella finestra di d
 
    >[!NOTE]
    >
-   L&#39;altezza della finestra di dialogo non viene modificata.
+   >L&#39;altezza della finestra di dialogo non viene modificata.
 
 1. Salva le modifiche.
 
@@ -672,13 +674,13 @@ Per configurare il modo in cui i collegamenti vengono aggiunti in AEM da un altr
 
    >[!NOTE]
    >
-   Il nodo `../items/text` ha la proprietà:
+   >Il nodo `../items/text` ha la proprietà:
    >
-   * **Nome** `xtype`
-   * **Tipo** `String`
-   * **Valore** `richtext`
+   >* **Nome** `xtype`
+   >* **Tipo** `String`
+   >* **Valore** `richtext`
    >
-   La posizione del nodo `../items/text` può variare a seconda della struttura della finestra di dialogo; due esempi sono `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   >La posizione del nodo `../items/text` può variare a seconda della struttura della finestra di dialogo; due esempi sono `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. In `htmlRules` creare un nodo.
 

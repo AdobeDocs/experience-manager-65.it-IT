@@ -298,6 +298,7 @@ Vedi anche [Aggiungere mappe immagine](/help/assets/image-maps.md).
    * Seleziona **[!UICONTROL Collegamento ipertestuale]**.
 
       * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore siti (cartella) per passare a un URL.
+
         >[!NOTE]
         >
         >Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.

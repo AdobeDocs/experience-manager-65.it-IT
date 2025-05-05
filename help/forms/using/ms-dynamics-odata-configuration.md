@@ -103,6 +103,7 @@ Per registrare un client OAuth nel computer Active Directory Federation Services
 
    * `Client-ID` è un ID client che può essere generato utilizzando qualsiasi generatore GUID.
    * `redirect-uri` è l&#39;URL del servizio cloud Microsoft Dynamics OData su AEM Forms. Il servizio cloud predefinito installato con il pacchetto AEM Forms viene distribuito al seguente URL:
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Eseguire il comando seguente per concedere l&#39;accesso al computer AD FS:

@@ -324,7 +324,7 @@ Per evitare l&#39;uso improprio del DoS, è possibile effettuare le seguenti ope
 >
 >Questa mitigazione deve essere eseguita solo sugli ambienti AEM che non utilizzano Forms.
 
-Poiché l&#39;AEM non fornisce indici predefiniti per `FormChooserServlet`, l&#39;utilizzo di selettori di moduli nelle query può determinare un costoso attraversamento dell&#39;archivio, in genere bloccando l&#39;istanza dell&#39;AEM. I selettori di moduli possono essere rilevati dalla presenza di **&amp;ast;.form.&amp;ast;** stringa nelle query.
+Poiché l&#39;AEM non fornisce indici predefiniti per `FormChooserServlet`, l&#39;utilizzo di selettori di moduli nelle query può determinare un costoso attraversamento dell&#39;archivio, in genere bloccando l&#39;istanza dell&#39;AEM. I selettori di moduli possono essere rilevati dalla presenza di **&ast;.form.&ast;** stringa nelle query.
 
 Per attenuare questo problema, puoi effettuare le seguenti operazioni:
 
@@ -377,7 +377,7 @@ Non è necessario eseguire alcuna configurazione per abilitarla, perché è ora 
 
 Anche se non consigliato, puoi disattivarlo nel caso sia necessaria la vecchia implementazione per compatibilità con le applicazioni esistenti. A tale scopo, è necessario effettuare le seguenti operazioni:
 
-1. Vai alla console Web e rimuovi la voce** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** dalla proprietà **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
+1. Vai alla console Web e rimuovi la voce **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** dalla proprietà **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
    Puoi anche trovare il provider della sicurezza Oak cercando il PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** nelle configurazioni OSGi.
 

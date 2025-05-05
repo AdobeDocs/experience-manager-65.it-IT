@@ -670,7 +670,7 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 **Microsoft® Windows**
 
-* Assicurarsi che sia installata la versione](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) supportata a 32 bit [di Microsoft Office e che le finestre di dialogo di apertura vengano annullate per tutte le applicazioni.
+* Assicurarsi che sia installata la versione[&#128279;](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) supportata a 32 bit di Microsoft Office e che le finestre di dialogo di apertura vengano annullate per tutte le applicazioni.
 * Assicurarsi che nella interfaccia di configurazione PDF venga aggiunto un utente generatore di PDF.
 * Assicurarsi che il utente PDF Generator sia membro del gruppo administrators e che il [Sostituisci sia impostato un privilegio token](#grant-the-replace-a-process-level-token-privilege) a livello di processo per il utente.
 * Assicurati che l’utente sia configurato nell’interfaccia utente di PDF Generator ed esegua le azioni seguenti:

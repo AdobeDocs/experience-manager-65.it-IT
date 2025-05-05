@@ -111,7 +111,7 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 * **Componenti validi**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Descrizione**: elenco di componenti che devono essere interessati dai comandi Annulla e Ripristina. Aggiungete i percorsi dei componenti a questo elenco quando funzionano correttamente con Annulla/Ripristina. Aggiungete un asterisco (&amp;ast;) per specificare un gruppo di componenti:
+   * **Descrizione**: elenco di componenti che devono essere interessati dai comandi Annulla e Ripristina. Aggiungete i percorsi dei componenti a questo elenco quando funzionano correttamente con Annulla/Ripristina. Aggiungete un asterisco (&ast;) per specificare un gruppo di componenti:
 
       * Il valore seguente specifica il componente testo di base:
 

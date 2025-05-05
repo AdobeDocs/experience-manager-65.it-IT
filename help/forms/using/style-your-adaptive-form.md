@@ -479,7 +479,7 @@ Puoi utilizzare vari font per progettare un modulo adattivo. È possibile che in
 9. Passare alla cartella `clientlibs` appena creata e aggiungere le proprietà `allowProxy` e `categories`.
 10. Passare a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e creare una cartella css.
 11. Vai alla cartella CSS creata e crea un file. Ad esempio, crea un file come `fonts.css` e incolla il codice di incorporamento insieme all&#39;URL.
-   ![Struttura cartella](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![Struttura cartella](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Salva le modifiche.
 
 >[!NOTE]
