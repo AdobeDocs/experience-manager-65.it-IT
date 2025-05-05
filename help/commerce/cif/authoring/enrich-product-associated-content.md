@@ -19,19 +19,19 @@ Scopri come gli esperti di marketing possono arricchire i dati dei prodotti con 
 
 ## Risorse digitali
 
->[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447317/?quality=12&learn=on&captions=ita)
 
 Le risorse digitali possono essere associate a uno o più SKU di prodotto. Una volta associata, la risorsa digitale può essere individuata con ricerche di parole chiave basate sullo SKU. La risorsa verrà inoltre visualizzata automaticamente come contenuto associato durante la modifica di una pagina che include il prodotto rilevante, rendendo ancora più semplice creare la tua prossima esperienza digitale
 
 ## Frammenti di esperienza
 
->[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343379/?quality=12&learn=on&captions=ita)
 
 I frammenti di esperienza sono una funzione di Adobe Experience Manager che consente a un addetto marketing di creare **contenuti non strutturati** riutilizzabili. I frammenti di esperienza possono essere associati a uno SKU di prodotto o a un ID catalogo. Una volta effettuata l’associazione, gli addetti al marketing possono individuare facilmente i frammenti correlati in base ai prodotti visualizzati su una pagina. I frammenti di esperienza possono essere inclusi in modo dinamico anche in una pagina del catalogo dei prodotti tramite un segnaposto e un’associazione.
 
 ## Frammenti di contenuto
 
->[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452165/?quality=12&learn=on&captions=ita)
 
 I Frammenti di contenuto sono una funzione di Adobe Experience Manager che consente a un addetto marketing di creare **contenuto riutilizzabile strutturato**. I frammenti di contenuto possono essere associati a uno SKU di prodotto o a un ID catalogo. Una volta effettuata l’associazione, gli addetti al marketing possono individuare facilmente i frammenti correlati in base ai prodotti visualizzati su una pagina. I frammenti di contenuto possono anche essere inclusi in modo dinamico in una pagina del catalogo dei prodotti tramite un segnaposto e un’associazione.
 

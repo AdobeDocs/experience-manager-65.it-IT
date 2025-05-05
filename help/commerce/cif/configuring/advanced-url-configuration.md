@@ -26,7 +26,7 @@ ht-degree: 24%
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Molte implementazioni personalizzano questi URL a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
->[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/38587/?quality=12&captions=ita)
 
 ## Configurazione {#configuration}
 

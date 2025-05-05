@@ -34,7 +34,7 @@ AEM Forms 6.5 supporta le seguenti soluzioni CAPTCHA:
 
 Il Turnstile Captcha di Cloudflare è una misura di sicurezza che mira a proteggere moduli e siti da bot automatizzati, attacchi dannosi, spam e traffico automatizzato indesiderato. Presenta una casella di controllo all’invio del modulo per verificare che sia umana, prima di consentire loro di inviare il modulo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440940/)
+>[!VIDEO](https://video.tv.adobe.com/v/3440948?captions=ita)
 
 ### Prerequisiti per integrare l’ambiente AEM Forms con Turnstile Captcha {#prerequisite}
 

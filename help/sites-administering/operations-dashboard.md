@@ -660,7 +660,7 @@ Il **Dashboard panoramica sistema** visualizza una panoramica di alto livello de
 
 >[!NOTE]
 >
->Puoi anche [guardare questo video](https://video.tv.adobe.com/v/21340) per un&#39;introduzione alla dashboard di panoramica del sistema.
+>Puoi anche [guardare questo video](https://video.tv.adobe.com/v/327265?captions=ita) per un&#39;introduzione alla dashboard di panoramica del sistema.
 
 ### Come Accedere {#how-to-access}
 
