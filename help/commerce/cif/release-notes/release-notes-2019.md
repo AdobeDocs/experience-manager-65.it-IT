@@ -52,7 +52,7 @@ ht-degree: 6%
 
 * Modelli completamente personalizzabili per la pagina dei dettagli e la pagina dell’elenco dei prodotti. Gli autori possono ora creare modelli e trascinare e rilasciare l’elenco dei prodotti e i componenti dei dettagli dei prodotti su tali modelli. Oltre ad aggiungere altri componenti, gli autori possono ora modificare anche il layout di questi modelli, dando loro una libertà illimitata di creare esperienze straordinarie combinando contenuti di marketing e di e-commerce.
 
-* Tutti i componenti core CIF compatibili con l&#39;autore sono stati migliorati per supportare [Sistema di stili dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html). Sono stati forniti stili di esempio per il componente elenco prodotti.
+* Tutti i componenti core CIF compatibili con l&#39;autore sono stati migliorati per supportare [Sistema di stili dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=it). Sono stati forniti stili di esempio per il componente elenco prodotti.
 
 * Componenti lato client basati su React per la gestione degli account. Questa versione supporta le seguenti funzionalità: Accesso, Password dimenticata e Creazione di un account.
 

@@ -19,7 +19,7 @@ ht-degree: 1%
 
 [Il frammento di modulo adattivo](../../forms/using/adaptive-form-fragments.md) è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare durante la creazione di un modulo. Consente di creare un modulo in modo semplice e rapido. Puoi trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor moduli.
 
-Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Include i seguenti frammenti:
+Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). Include i seguenti frammenti:
 
 * Indirizzo
 * Informazioni di contatto

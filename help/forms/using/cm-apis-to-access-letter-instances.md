@@ -40,7 +40,7 @@ Gestione della corrispondenza espone le API per recuperare le istanze di lettere
 
 ### Utilizzo di getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L’API seguente trova le istanze di lettere in base all’oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è null, restituisce tutte le istanze di lettere. Questa API restituisce un elenco di oggetti [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) che possono essere utilizzati per estrarre informazioni aggiuntive dell&#39;istanza della lettera.
+L’API seguente trova le istanze di lettere in base all’oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è null, restituisce tutte le istanze di lettere. Questa API restituisce un elenco di oggetti [LetterInstanceVO](https://helpx.adobe.com/it/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) che possono essere utilizzati per estrarre informazioni aggiuntive dell&#39;istanza della lettera.
 
 **Sintassi**: `List getAllLetterInstances(Query query) throws ICCException;`
 

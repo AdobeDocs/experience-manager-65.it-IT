@@ -54,12 +54,12 @@ Gli elementi dell&#39;interfaccia utente [!DNL Dynamic Media] funzionano con tec
 
 Tutti i componenti predefiniti dei visualizzatori [!DNL Dynamic Media] supportano l&#39;accessibilità da tastiera per i clienti.
 
-Consulta [Accesso facilitato alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori di Dynamic Medie.
+Consulta [Accesso facilitato alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=it) nella Guida di riferimento dei visualizzatori di Dynamic Medie.
 
 ## Supporto per la tecnologia di supporto in [!DNL Dynamic Media] visualizzatori {#assistive-technology-support-for-dm-viewers}
 
 Tutti i componenti visualizzatore [!DNL Dynamic Media] supportano i ruoli e gli attributi ARIA (Accessible Rich Internet Applications) per migliorare l&#39;integrazione con tecnologie per l&#39;accessibilità, come gli assistenti vocali.
-Vedere l&#39;argomento della Guida relativo al supporto tecnico **Assistive Technology** in qualsiasi argomento relativo alla personalizzazione dei visualizzatori nella Guida di riferimento dei visualizzatori di Dynamic Medie. Ad esempio, consulta [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore di video o [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattivo.
+Vedere l&#39;argomento della Guida relativo al supporto tecnico **Assistive Technology** in qualsiasi argomento relativo alla personalizzazione dei visualizzatori nella Guida di riferimento dei visualizzatori di Dynamic Medie. Ad esempio, consulta [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=it) per il visualizzatore di video o [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=it#viewers-for-aem-assets-only) per il visualizzatore di immagini interattivo.
 
 ## Supporto per sottotitoli codificati in Dynamic Medie {#closed-caption-support}
 

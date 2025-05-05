@@ -30,6 +30,6 @@ Il modulo adattivo abilitato per [!DNL Adobe Sign] include informazioni sui firm
 
 I dati utente vengono raccolti all&#39;interno del contratto ma non vengono salvati in nessuna delle tabelle del servizio. [!DNL Adobe Sign] consente agli amministratori di effettuare le proprie scelte sulla gestione dei dati controllati nel servizio. Gli amministratori della privacy nel servizio [!DNL Adobe Sign] possono elencare o rimuovere accordi in base all&#39;indirizzo e-mail di un richiedente.
 
-[!DNL Adobe Sign] offre un&#39;applicazione Web che consente la ricerca di accordi da parte dei partecipanti e, se necessario, la loro eliminazione. Per ulteriori informazioni, vedere [Adobe Sign - Funzionalità: Elimina informazioni utente](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
+[!DNL Adobe Sign] offre un&#39;applicazione Web che consente la ricerca di accordi da parte dei partecipanti e, se necessario, la loro eliminazione. Per ulteriori informazioni, vedere [Adobe Sign - Funzionalità: Elimina informazioni utente](https://helpx.adobe.com/it/sign/help/adobesign_gdpr_user_deletion.html).
 
 I dati dei contratti per i moduli adattivi configurati per l’utilizzo dell’azione di invio di Forms Portal vengono salvati anche nell’archivio dati di Forms Portal. Per accedere ed eliminare dati dall&#39;archivio dati di Forms Portal, vedere [Forms Portal | Gestione dei dati utente](/help/forms/using/forms-portal-handling-user-data.md).

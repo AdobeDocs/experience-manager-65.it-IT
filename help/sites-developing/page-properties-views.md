@@ -50,7 +50,7 @@ Ad esempio, vedi le impostazioni per i campi raggruppati sotto **Altri titoli e 
 
 >[!TIP]
 >
->Per una guida alla personalizzazione delle proprietà di pagina, consulta il [tutorial Estensione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
+>Per una guida alla personalizzazione delle proprietà di pagina, consulta il [tutorial Estensione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=it).
 
 ## Configurazione delle proprietà della pagina {#configuring-your-page-properties}
 

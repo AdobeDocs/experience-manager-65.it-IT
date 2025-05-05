@@ -46,4 +46,4 @@ All’interno dei pannelli, puoi accedere alla funzione dalla barra degli strume
 
 Estrazione di espressioni SOM tramite la barra degli strumenti del pannello
 
-Alcune API elencate in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) utilizzano l&#39;espressione SOM di un elemento. Ad esempio, per spostare lo stato attivo su un particolare campo in un modulo adattivo, passa l’espressione SOM corrispondente all’API `getFocus` in `guideBridge`.
+Alcune API elencate in [GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html) utilizzano l&#39;espressione SOM di un elemento. Ad esempio, per spostare lo stato attivo su un particolare campo in un modulo adattivo, passa l’espressione SOM corrispondente all’API `getFocus` in `guideBridge`.

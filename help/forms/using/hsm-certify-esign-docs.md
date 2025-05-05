@@ -28,7 +28,7 @@ Adobe Experience Manager Forms può utilizzare le credenziali memorizzate su un 
 
 ## Prima di configurare i dispositivi HSM o etoken con AEM Forms {#configurehsmetoken}
 
-* Installa il pacchetto del componente aggiuntivo [AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+* Installa il pacchetto del componente aggiuntivo [AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
 * Installare e configurare il software client HSM o etoken sullo stesso computer del server AEM. Il software client è necessario per comunicare con i dispositivi HSM ed etoken.
 
 ## Abilitare il servizio DocAssurance {#configuredocassurance}

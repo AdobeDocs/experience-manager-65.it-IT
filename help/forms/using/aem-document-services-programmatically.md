@@ -19,17 +19,17 @@ ht-degree: 1%
 
 Esempi ed esempi in questo documento sono utili per comprendere e utilizzare i servizi documentali AEM in un ambiente AEM Forms su OSGi. Per esempi ed esempi sull’ambiente AEM Forms su JEE, consulta
 
-* [Guida rapida all&#39;API Java di Signature Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+* [Guida rapida all&#39;API Java di Signature Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=it&#programming-aem-forms-jee)
 
-* [Guida rapida all&#39;API Java del servizio di crittografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+* [Guida rapida all&#39;API Java del servizio di crittografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=it&#developer-reference)
 
-* [Guida rapida all&#39;API Java del servizio Acrobat Reader extensions](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
+* [Guida rapida all&#39;API Java del servizio Acrobat Reader extensions](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=it&#developer-reference)
 
 ## Prerequisito {#prerequisite}
 
 * Prima di utilizzare le API del servizio DocAssurance, [configurare il servizio DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) con il tuo progetto Maven AEM. Le classi client necessarie per creare progetti Maven utilizzando i servizi documentali AEM sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) con il tuo progetto Maven AEM. Le classi client necessarie per creare progetti Maven utilizzando i servizi documentali AEM sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 
 * Scopri [come creare il tuo progetto AEM utilizzando Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -71,7 +71,7 @@ Il servizio DocAssurance include i seguenti servizi:
 
 >[!NOTE]
 >
->Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
+>Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Aggiunta di un campo di firma invisibile {#adding-an-invisible-signature-field}
 
@@ -4466,7 +4466,7 @@ Il servizio PDF Generator fornisce API per la conversione di formati di file nat
 GeneratePDFService fornisce API per la conversione di vari formati di file, ad esempio doc, docx, ppt, pptx, xls, xlsx, odp, odt, ods, swf (obsoleto), jpg, bmp, tif, png, html e molti altri formati di file in PDF. Fornisce inoltre API per esportare PDF in vari formati di file e ottimizzare i PDF. Il servizio supporta le seguenti API:
 
 * **createPDF**: converte un tipo di file supportato in un documento PDF. Supporta formati di file come Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Oltre a queste applicazioni, qualsiasi PDF generico di terze parti che generi un tipo di applicazione può anche essere collegato all’API.
-* **exportPDF**: converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento di PDF in PostScript( eps) incapsulato, HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). È inoltre possibile specificare [profili di verifica preliminare personalizzati](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) per gli output PDF.
+* **exportPDF**: converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento di PDF in PostScript( eps) incapsulato, HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). È inoltre possibile specificare [profili di verifica preliminare personalizzati](https://helpx.adobe.com/it/acrobat/using/preflight-profiles-acrobat-pro.html) per gli output PDF.
 
 * **optimizePDF**: ottimizza il documento PDF e converte un documento PDF da un tipo a un altro. Il metodo accetta un documento PDF come input.
 * **htmlToPdf2**: converte una pagina di HTML in un documento di PDF. Accetta l’URL della pagina HTML come input.

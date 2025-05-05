@@ -104,7 +104,7 @@ In alternativa, è possibile scaricare l&#39;origine del dispositivo per la comp
 >
 >Per informazioni dettagliate, consulta [Configurare il Cloud Service Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md).
 
-AEM Mobile si integra con Adobe Analytics tramite [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
+AEM Mobile si integra con Adobe Analytics tramite [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it) (AMS).
 
 Nel riquadro **Metriche** del Centro di controllo vengono visualizzate le analisi di riepilogo estratte da AMS per l&#39;applicazione. Per approfondire il dashboard di Analytics, fai clic su &quot;...&quot; in basso a destra.
 

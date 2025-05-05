@@ -98,7 +98,7 @@ Le proprietà sono distribuite su più schede.
   >* non devono essere impostati su una pagina esistente.
   >
 
-  Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
+  Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
 
 * **Reindirizza URL personalizzato**
 
@@ -190,7 +190,7 @@ Mostra l&#39;immagine di anteprima della pagina. Operazioni disponibili:
 
 * **Condivisione social media**
 
-  Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per il componente di base [Condivisione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
+  Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per il componente di base [Condivisione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=it).
 
    * **Abilita condivisione utenti per Facebook**
    * **Abilita condivisione utenti per Pinterest**

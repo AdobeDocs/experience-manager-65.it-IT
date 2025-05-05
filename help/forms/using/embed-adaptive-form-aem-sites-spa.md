@@ -34,7 +34,7 @@ Per incorporare un modulo adattivo o una comunicazione interattiva in un SPA dei
 * Java SE Development Kit 8 o successivo
 * Apache Maven 3.3.1 o successivo
 * Istanza di authoring AEM
-* [Pacchetto del componente aggiuntivo AEM Forms 6.4.2](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) nell&#39;istanza di authoring
+* [Pacchetto del componente aggiuntivo AEM Forms 6.4.2](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) nell&#39;istanza di authoring
 
 ## Installare il componente Contenitore SPA di AEM Forms {#install-aem-forms-spa-container-component}
 

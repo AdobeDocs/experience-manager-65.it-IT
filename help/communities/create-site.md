@@ -119,7 +119,7 @@ Ad esempio:
 
 >[!NOTE]
 >
->[Il servizio tunnel](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) consente la selezione di membri e gruppi esistenti solo nell&#39;ambiente di pubblicazione.
+>[Il servizio tunnel](https://helpx.adobe.com/it/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) consente la selezione di membri e gruppi esistenti solo nell&#39;ambiente di pubblicazione.
 
 ![ruoli utente nel nuovo sito](assets/site-admin-1.png)
 

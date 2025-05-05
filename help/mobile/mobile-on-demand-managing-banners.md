@@ -30,9 +30,9 @@ I banner rappresentano in genere collegamenti promozionali grafici.
 >
 >Consulta le seguenti risorse nella Guida in linea per scoprire i seguenti argomenti nelle app AEM Mobile:
 >
->* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considerazioni sulla progettazione](https://helpx.adobe.com/it/digital-publishing-solution/help/design-app.html)
 >
->* [Creazione di banner](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+>* [Creazione di banner](https://helpx.adobe.com/it/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Creazione di un banner {#creating-a-banner}

@@ -66,7 +66,7 @@ Se hai bisogno di un flusso di lavoro o di un controllo delle versioni per le ri
 
 Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per le risorse, carica le risorse in Scene7. Di seguito è riportato il flusso di lavoro consigliato:
 
-1. In Dynamic Media Classic, [configurare un caricamento e una codifica FTP pianificati in Scene7 (sistema automatizzato)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+1. In Dynamic Media Classic, [configurare un caricamento e una codifica FTP pianificati in Scene7 (sistema automatizzato)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=it#upload-files-using-via-ftp).
 1. Ad Experience Manager, accedi alle risorse video in WCM nella scheda **[!UICONTROL Scene7]** di Content Finder.
 1. Autore con il componente **[!UICONTROL Video di Scene7]**.
 
@@ -85,7 +85,7 @@ Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per l
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul significato dei predefiniti video, consulta la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Per ulteriori informazioni sul significato dei predefiniti video, consulta la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=it#video-presets-for-encoding-video-files).
    >
    >L&#39;Adobe consiglia di selezionare entrambi i set di video adattivi durante la configurazione dei predefiniti universali o di selezionare l&#39;opzione **[!UICONTROL Codifica video adattivo]**.
 

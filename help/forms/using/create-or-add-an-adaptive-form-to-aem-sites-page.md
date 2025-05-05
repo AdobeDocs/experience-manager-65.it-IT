@@ -70,7 +70,7 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 +++  Abilitare i componenti core Forms adattivi per il tuo ambiente
 
-Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
+Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=it).
 
 +++
 

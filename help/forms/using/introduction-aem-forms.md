@@ -20,7 +20,7 @@ ht-degree: 15%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
 Per informazioni sulle ultime funzionalità e sui miglioramenti di AEM Forms, vedi [Novità di AEM Forms](../../forms/using/whats-new.md).

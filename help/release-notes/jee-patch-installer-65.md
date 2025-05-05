@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->[Contattare il supporto tecnico](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support) per ulteriori informazioni o per ottenere la patch.
+>[Contattare il supporto tecnico](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support) per ulteriori informazioni o per ottenere la patch.
 
 ## Informazioni sul programma di installazione delle patch {#about-the-patch-installer}
 
@@ -71,8 +71,8 @@ Passare alla directory appropriata e dal prompt dei comandi digitare `./aem65_cf
 
 1. A seconda del server applicazioni in uso, scegliere uno dei seguenti documenti e seguire le istruzioni riportate nella sezione *Configurazione e distribuzione dei moduli AEM*.
 
-   * [Installazione e distribuzione di moduli AEM per JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [Installazione e distribuzione di moduli AEM per WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [Installazione e distribuzione di moduli AEM per JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_it)
+   * [Installazione e distribuzione di moduli AEM per WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_it)
 
 1. (Solo JBoss®) Dopo aver installato la patch e configurato il server, eliminare tmp e le directory di lavoro del server applicazioni JBoss®.
 
@@ -97,4 +97,4 @@ Se l’autenticazione SAML è configurata e si verificano problemi con metadati 
 * Document Security
 * JEE per Foundation
 
-[Contatta il supporto](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support)
+[Contatta il supporto](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support)

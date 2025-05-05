@@ -34,9 +34,9 @@ Con il servizio Convert PDF è possibile effettuare le seguenti operazioni:
 
 Il servizio ConvertPDF fornisce le due API seguenti:
 
-* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte un documento PDF in un file PostScript.
+* **[toPS](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte un documento PDF in un file PostScript.
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte un documento PDF in un file di immagine. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF.
+* **[toImage](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte un documento PDF in un file di immagine. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF.
 
 ### Utilizzo dell&#39;API toPS con JSP o Servlet {#using-tops-api-with-a-jsp-or-servlets}
 

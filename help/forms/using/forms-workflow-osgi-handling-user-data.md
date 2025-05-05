@@ -158,4 +158,4 @@ Puoi inoltre utilizzare le API per accedere e rimuovere nodi e proprietà. Per u
 
 * [Come accedere a livello di programmazione al JCR per AEM](/help/sites-developing/access-jcr.md)
 * [Rimozione di nodi e proprietà](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Riferimento API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Riferimento API](https://helpx.adobe.com/it/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

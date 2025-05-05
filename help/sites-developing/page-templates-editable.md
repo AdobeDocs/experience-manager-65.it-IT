@@ -49,7 +49,7 @@ In questo documento si presuppone che tu abbia già familiarità con la creazion
 >[!NOTE]
 >
 >Il seguente tutorial potrebbe essere utile anche per impostare un modello di pagina modificabile in un nuovo progetto:
->[Guida introduttiva ad AEM Sites Parte 2 - Creazione di una pagina base e di un modello](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>[Guida introduttiva ad AEM Sites Parte 2 - Creazione di una pagina base e di un modello](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=it)
 
 ## Creazione di un nuovo modello {#creating-a-new-template}
 
@@ -73,7 +73,7 @@ Quando crei un modello modificabile:
    * La struttura ti consente di definire componenti e contenuti per il modello.
    * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
 
-      * Se si crea un modello in una cartella personalizzata all&#39;esterno del contenuto di esempio di `We.Retail`, è possibile scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
+      * Se si crea un modello in una cartella personalizzata all&#39;esterno del contenuto di esempio di `We.Retail`, è possibile scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it).
 
    * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.

@@ -207,4 +207,4 @@ Fai riferimento ai frammenti di modulo adattivo che è possibile utilizzare per 
 * [Crea o personalizza temi per Forms adattivi basati su componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crea un modello per Forms adattive basate su componenti core](template-editor.md)
 * [Crea o aggiungere un modulo adattivo a un frammento di AEM Sites Pagina o esperienza](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)

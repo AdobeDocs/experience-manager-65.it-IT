@@ -92,9 +92,9 @@ Puoi trovare il codice di questa pagina su GitHub
 
 Per ulteriori dettagli, vedi:
 
-* L&#39;argomento [Frammenti di contenuto nella guida utente di Assets](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* L&#39;argomento [Frammenti di contenuto nella guida utente di Assets](https://helpx.adobe.com/it/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 * [Esportatore JSON per Content Services](/help/sites-developing/json-exporter.md)
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://helpx.adobe.com/it/experience-manager/core-components/using/content-fragment-component.html)

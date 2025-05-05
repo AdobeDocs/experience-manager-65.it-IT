@@ -355,7 +355,7 @@ OPPURE
 
 ### Creare una libreria client utilizzando l’archetipo di progetto AEM{#create-client-library-archetype}
 
-È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando l&#39;archetipo di progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando l&#39;archetipo di progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Se hai un progetto esistente <!--and have already the project structure as shown in the image below,--> puoi aggiungere direttamente [funzioni personalizzate](#create-add-custom-function) al progetto locale.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -572,7 +572,7 @@ Visualizziamo in anteprima il modulo per osservare come le funzioni personalizza
 
 >[!NOTE]
 >
-> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Supporto delle funzioni asincrone nelle funzioni personalizzate {#support-of-async-functions}
 

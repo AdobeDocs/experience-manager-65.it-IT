@@ -116,12 +116,12 @@ L&#39;istanza del provider e dell&#39;applicazione OAuth [Adobe Granite](#adobe-
    ![fbsocialloinconfigpng](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL Titolo]** (*Obbligatorio*) Immettere un titolo di visualizzazione che identifichi l&#39;app Facebook. Utilizza lo stesso nome immesso come *Nome visualizzato* per l&#39;app Facebook.
-   * **[!UICONTROL ID app/Chiave API]** (*Obbligatorio*) Immetti ***ID app*** per l&#39;app Facebook. Identifica l&#39;istanza [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) creata dalla finestra di dialogo.
+   * **[!UICONTROL ID app/Chiave API]** (*Obbligatorio*) Immetti ***ID app*** per l&#39;app Facebook. Identifica l&#39;istanza [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) creata dalla finestra di dialogo.
    * **[!UICONTROL Segreto app]** (*Obbligatorio*) Immetti il ***Segreto app*** per l&#39;app Facebook.
    * **[!UICONTROL Crea utenti]** Se questa opzione è selezionata, l&#39;accesso con un account Facebook creerà una voce utente AEM e le aggiungerà come membri ai gruppi di utenti selezionati.  Il valore predefinito è selezionato (scelta consigliata).
    * **[!UICONTROL Maschera ID utente]**: lascia deselezionata.
    * **[!UICONTROL E-mail ambito]**: l&#39;ID e-mail dell&#39;utente deve essere recuperato da Facebook.
-   * **[!UICONTROL Aggiungi a gruppi utenti]** selezionare Aggiungi gruppo utenti per scegliere uno o più [gruppi membri](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) per il sito community a cui verranno aggiunti gli utenti.
+   * **[!UICONTROL Aggiungi a gruppi utenti]** selezionare Aggiungi gruppo utenti per scegliere uno o più [gruppi membri](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/users.html) per il sito community a cui verranno aggiunti gli utenti.
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ L&#39;istanza del provider e dell&#39;applicazione OAuth [Adobe Granite](#adobe-
    * Seleziona **[!UICONTROL SALVA]**.
    * **[!UICONTROL Publish]**.
 
-Il risultato è un&#39;istanza di [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) che non richiede ulteriori modifiche a meno che non si aggiunga ulteriore ambito (autorizzazioni). L&#39;ambito predefinito è quello standard per l&#39;accesso a Facebook. Se desideri un ambito aggiuntivo, devi modificare direttamente la configurazione OSGI. Se sono state apportate modifiche direttamente tramite il sistema o la console, evita di modificare le configurazioni del servizio cloud dall’interfaccia utente touch per evitare la sovrascrittura.
+Il risultato è un&#39;istanza di [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) che non richiede ulteriori modifiche a meno che non si aggiunga ulteriore ambito (autorizzazioni). L&#39;ambito predefinito è quello standard per l&#39;accesso a Facebook. Se desideri un ambito aggiuntivo, devi modificare direttamente la configurazione OSGI. Se sono state apportate modifiche direttamente tramite il sistema o la console, evita di modificare le configurazioni del servizio cloud dall’interfaccia utente touch per evitare la sovrascrittura.
 
 ### Provider OAuth di AEM Communities Facebook {#aem-communities-facebook-oauth-provider}
 
@@ -270,7 +270,7 @@ L&#39;istanza del provider e dell&#39;applicazione OAuth [Adobe Granite](#adobe-
 
    * **[!UICONTROL Chiave consumer]**
 
-     (*Obbligatorio*) Immetti la **Chiave consumer (API)** per l&#39;app di Twitter. Identifica l&#39;istanza [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) creata dalla finestra di dialogo.
+     (*Obbligatorio*) Immetti la **Chiave consumer (API)** per l&#39;app di Twitter. Identifica l&#39;istanza [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) creata dalla finestra di dialogo.
 
    * **[!UICONTROL Segreto consumer]**
 
@@ -286,7 +286,7 @@ L&#39;istanza del provider e dell&#39;applicazione OAuth [Adobe Granite](#adobe-
 
    * **[!UICONTROL Aggiungi a gruppi di utenti]**
 
-     Selezionare Aggiungi gruppo utenti per scegliere uno o più [gruppi membri](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) per il sito community a cui verranno aggiunti gli utenti.
+     Selezionare Aggiungi gruppo utenti per scegliere uno o più [gruppi membri](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/users.html) per il sito community a cui verranno aggiunti gli utenti.
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ L&#39;istanza del provider e dell&#39;applicazione OAuth [Adobe Granite](#adobe-
 
 1. Selezionare **[!UICONTROL SALVA]** e **[!UICONTROL Publish]**.
 
-Il risultato è un&#39;istanza [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) che non richiede ulteriori modifiche. L&#39;ambito predefinito corrisponde alle autorizzazioni standard per l&#39;accesso al Twitter.
+Il risultato è un&#39;istanza [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) che non richiede ulteriori modifiche. L&#39;ambito predefinito corrisponde alle autorizzazioni standard per l&#39;accesso al Twitter.
 
 ### Provider OAuth Twitter AEM Communities {#aem-communities-twitter-oauth-provider}
 
@@ -346,7 +346,7 @@ I passaggi successivi sono gli stessi sia per Facebook che per Twitter:
 
 ### Console Sites di AEM Communities {#aem-communities-sites-console}
 
-Una volta configurato, il servizio cloud può essere abilitato per l&#39;impostazione di accesso social network pertinente per un sito community utilizzando il pannello secondario Impostazioni [Gestione utente](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) durante la creazione del sito community [create](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) o [management](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
+Una volta configurato, il servizio cloud può essere abilitato per l&#39;impostazione di accesso social network pertinente per un sito community utilizzando il pannello secondario Impostazioni [Gestione utente](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) durante la creazione del sito community [create](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) o [management](https://helpx.adobe.com/it/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
 1. Scegli il contesto di configurazione del sito in cui hai salvato le configurazioni di accesso social network.
 

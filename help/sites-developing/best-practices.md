@@ -31,7 +31,7 @@ Prima di iniziare il progetto di sviluppo dell’AEM, esamina le seguenti best p
 * [Insidie del codice](/help/sites-developing/code-pitfalls.md)
 * [Interazione JCR](/help/sites-developing/jcr-integration.md)
 * [Bundle OSGi](/help/sites-developing/osgi-bundles.md)
-* [Best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=it)
 
 ### Informazioni aggiuntive sulle best practice {#additional-best-practices-information}
 
@@ -96,7 +96,7 @@ HTL (HTML Template Language) è un nuovo sistema di modelli di HTML introdotto c
 |  |  |  |
 |---|---|---|
 | Panoramica di HTL | [Panoramica e sintassi HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) | Questo documento descrive cosa è HTL, come passare ad HTL, un progetto di esempio, la sintassi, le espressioni e le istruzioni |
-| Utilizzo dell’API in Java | [API di utilizzo Java HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | Java Use-API per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. |
+| Utilizzo dell’API in Java | [API di utilizzo Java HTL](https://helpx.adobe.com/it/experience-manager/htl/using/use-api.html) | Java Use-API per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. |
 
 >[!NOTE]
 >

@@ -87,17 +87,17 @@ Per configurare le funzionalità di Analytics for Communities, è necessario col
 
 ## Suite di rapporti Adobe Analytics per reporting video {#adobe-analytics-report-suite-for-video-reporting}
 
-Utilizzando la [Gestione suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html) di Adobe Experience Cloud, è possibile configurare le suite di rapporti di Analytics in modo che un sito community possa essere abilitato per fornire rapporti per le funzioni di Communities.
+Utilizzando la [Gestione suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=it) di Adobe Experience Cloud, è possibile configurare le suite di rapporti di Analytics in modo che un sito community possa essere abilitato per fornire rapporti per le funzioni di Communities.
 
-Effettuando l&#39;accesso a [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) con [Nome società e Nome utente](/help/communities/analytics.md#prerequisites), è possibile configurare una suite di rapporti nuova o esistente con:
+Effettuando l&#39;accesso a [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=it) con [Nome società e Nome utente](/help/communities/analytics.md#prerequisites), è possibile configurare una suite di rapporti nuova o esistente con:
 
-* [11 Variabili di conversione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) (eVars)
+* [11 Variabili di conversione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=it) (eVars)
 
    * Da **`evar1`** a **`evar11`** abilitato
 
    * Possibilità di riutilizzare (rinominare) le eVar esistenti o crearne di da utilizzare per le funzioni community
 
-* [7 eventi di successo](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) (eventi)
+* [7 eventi di successo](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=it) (eventi)
 
    * Da **`event1`** a **`event7`** abilitato
 
@@ -107,7 +107,7 @@ Effettuando l&#39;accesso a [Adobe Experience Cloud](https://experienceleague.ad
 
    * È possibile riutilizzare (rinominare) gli eventi esistenti o crearne di nuovi da utilizzare per le funzioni di Communities
 
-* [Gestione video](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [Gestione video](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it)
 
    * Console di reporting video
 
@@ -659,6 +659,6 @@ Adobe Analytics fornisce API che ti consentono di accedere, esportare ed elimina
 
 ## Riferimenti {#resources}
 
-* Adobe Experience Cloud: [Guida e riferimento di Analytics](https://experienceleague.adobe.com/docs/analytics.html)
+* Adobe Experience Cloud: [Guida e riferimento di Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=it)
 * AEM: [Integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics con provider esterni](/help/sites-administering/external-providers.md)

@@ -24,7 +24,7 @@ I flussi di lavoro di AEM Forms JEE forniscono gli strumenti necessari per proge
 * Utilizzo della cartella controllata
 * Utilizzo dell’e-mail
 
-Per ulteriori informazioni sulla creazione del processo del flusso di lavoro AEM Forms JEE, consulta la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
+Per ulteriori informazioni sulla creazione del processo del flusso di lavoro AEM Forms JEE, consulta la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_it).
 
 ## Dati utente e archivi dati {#user-data-and-data-stores}
 
@@ -127,7 +127,7 @@ Dopo aver identificato gli ID delle istanze di processo associati a un utente, e
 
 1. Creare un&#39;istanza del client `ProcessManager` pubblico ( `com.adobe.idp.workflow.client.ProcessManager`) utilizzando un&#39;istanza `ServiceClientFactory` con le impostazioni di connessione corrette.
 
-   Per ulteriori informazioni, vedere Riferimento API Java™ per [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Per ulteriori informazioni, vedere Riferimento API Java™ per [Class ProcessManager](https://helpx.adobe.com/it/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controlla lo stato dell’istanza del flusso di lavoro. Se lo stato è diverso da 2 (COMPLETE) o 4 (TERMINATED), terminare prima l&#39;istanza chiamando il metodo seguente:
 

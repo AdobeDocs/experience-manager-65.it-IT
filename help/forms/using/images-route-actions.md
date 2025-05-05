@@ -29,7 +29,7 @@ Per personalizzare le immagini utilizzate nelle azioni di route, eseguire i pass
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, vedere [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Per ulteriori informazioni, vedere [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=it).
 
    >[!NOTE]
    >

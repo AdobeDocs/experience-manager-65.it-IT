@@ -35,7 +35,7 @@ Verifica collegamenti convalida [collegamenti interni](#internal) e [collegament
 I collegamenti interni sono collegamenti ad altri contenuti nel tuo archivio AEM. È possibile aggiungere collegamenti interni utilizzando il selettore di percorsi dell’editor Rich Text o utilizzando un componente personalizzato. Ad esempio:
 
 * Pagina `/content/wknd/us/en/adventures/ski-touring.html`
-* Contiene un collegamento a `/content/wknd/us/en/adventures/extreme-ironing.html` in un [componente testo.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* Contiene un collegamento a `/content/wknd/us/en/adventures/extreme-ironing.html` in un [componente testo.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=it)
 
 I collegamenti interni vengono convalidati non appena l’autore di contenuto aggiunge un collegamento interno a una pagina. Se il collegamento non è più valido:
 
@@ -49,7 +49,7 @@ I collegamenti interni vengono convalidati non appena l’autore di contenuto ag
 I collegamenti esterni sono collegamenti a contenuti esterni all’archivio AEM. È possibile aggiungere collegamenti esterni utilizzando l’editor Rich Text o un componente personalizzato. Ad esempio:
 
 * Pagina `/content/wknd/us/en/adventures/ski-touring.html`
-* Contiene un collegamento a `https://bunwarmerthermalunderwear.com` in un [componente testo.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* Contiene un collegamento a `https://bunwarmerthermalunderwear.com` in un [componente testo.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=it)
 
 I collegamenti esterni vengono convalidati per la sintassi e verificandone la disponibilità. Questo controllo viene eseguito in modo asincrono in un ambiente interno configurabile. Se Verifica collegamenti rileva un collegamento esterno non valido:
 

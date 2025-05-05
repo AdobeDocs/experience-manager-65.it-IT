@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Se non utilizzi Adobe Experience Manager (AEM) come origine per la gestione dei contenuti, consulta la [Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se non utilizzi Adobe Experience Manager (AEM) come origine per la gestione dei contenuti, consulta la [Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/it/digital-publishing-solution/topics.html).
 
 AEM fornisce diversi strumenti che consentono di integrare i contenuti nelle applicazioni mobili.
 
@@ -32,7 +32,7 @@ L’app Verifica preliminare AEM può essere considerata un ambiente di test per
 
 >[!NOTE]
 >
->Per informazioni approfondite sull&#39;app Verifica preliminare, vedere [Utilizzo dell&#39;app Verifica preliminare AEM](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) nella Guida di AEM Mobile On-demand Services.
+>Per informazioni approfondite sull&#39;app Verifica preliminare, vedere [Utilizzo dell&#39;app Verifica preliminare AEM](https://helpx.adobe.com/it/digital-publishing-solution/help/preflight-app.html) nella Guida di AEM Mobile On-demand Services.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -104,4 +104,4 @@ Per iniziare a utilizzare i ruoli e le responsabilità di un autore, consulta [C
 
 >[!NOTE]
 >
->Un autore AEM è anche responsabile della configurazione dei diritti, della creazione di schede e layout e dell’invio di notifiche push. Per ulteriori informazioni sui metodi di creazione dei contenuti, gestione di articoli e raccolte, creazione di banner, schede e layout in AEM Mobile, vedere [AEM Mobile On-Demand Portal](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>Un autore AEM è anche responsabile della configurazione dei diritti, della creazione di schede e layout e dell’invio di notifiche push. Per ulteriori informazioni sui metodi di creazione dei contenuti, gestione di articoli e raccolte, creazione di banner, schede e layout in AEM Mobile, vedere [AEM Mobile On-Demand Portal](https://helpx.adobe.com/it/digital-publishing-solution/topics.html#dynamicpod_reference_2).

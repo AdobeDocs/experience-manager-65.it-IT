@@ -385,4 +385,4 @@ Analogamente, il test delle stringhe di dizionario deve essere eseguito come par
 
 >[!NOTE]
 >
->Quando si utilizza Dispatcher, è necessario [annullare la validità delle pagine memorizzate in cache](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) per includere nuove stringhe di dicationary nelle stringhe dei componenti renderizzati.
+>Quando si utilizza Dispatcher, è necessario [annullare la validità delle pagine memorizzate in cache](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html) per includere nuove stringhe di dicationary nelle stringhe dei componenti renderizzati.

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Che cos’è il giorno difficile 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; è un’applicazione che consente di sottoporre a test di stress i limiti dell’istanza di AEM. Può essere eseguita con la suite di test predefinita o configurata in base alle tue esigenze di test. Puoi guardare [questa registrazione](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) per una presentazione dell&#39;applicazione.
+&quot;Tough Day 2&quot; è un’applicazione che consente di sottoporre a test di stress i limiti dell’istanza di AEM. Può essere eseguita con la suite di test predefinita o configurata in base alle tue esigenze di test. Puoi guardare [questa registrazione](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=it) per una presentazione dell&#39;applicazione.
 
 >[!CAUTION]
 >

@@ -312,7 +312,7 @@ I dettagli precisi sulle modalità di creazione di video con descrizione audio v
 
 * [Comprendere i criteri di successo 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Come soddisfare i criteri di successo 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/it/premiere-pro/using/whats-new.html)
 
 ### Sottotitoli (dal vivo) (1.2.4)    {#captions-live}
 

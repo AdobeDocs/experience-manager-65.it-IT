@@ -188,7 +188,7 @@ La divisione **OR** crea una divisione nel flusso di lavoro, dopo la quale è at
 
 >[!NOTE]
 >
->Vedi [O passaggio suddiviso](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Vedi [O passaggio suddiviso](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=it#use-a-variable)
 
 ![Diramazione tramite O Divisione](assets/variables_orsplit_new.png)
 

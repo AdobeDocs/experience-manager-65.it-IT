@@ -50,8 +50,8 @@ Alcune delle caratteristiche dei tag all’interno dell’AEM includono:
    * Un tag che non è un tag contenitore viene definito tag foglia
    * Uno spazio dei nomi dei tag è un tag foglia o un tag contenitore
 
-* I tag vengono utilizzati dal [componente Ricerca](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) per facilitare la ricerca del contenuto.
-* I tag sono utilizzati dal [componente Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), che monitora il cloud di tag di un utente per fornire contenuti mirati.
+* I tag vengono utilizzati dal [componente Ricerca](https://helpx.adobe.com/it/experience-manager/core-components/using/quick-search.html) per facilitare la ricerca del contenuto.
+* I tag sono utilizzati dal [componente Teaser](https://helpx.adobe.com/it/experience-manager/core-components/using/teaser.html), che monitora il cloud di tag di un utente per fornire contenuti mirati.
 * Se l’assegnazione tag è un aspetto importante del contenuto
 
    * assicurati di creare un pacchetto di tag con le pagine che li utilizzano

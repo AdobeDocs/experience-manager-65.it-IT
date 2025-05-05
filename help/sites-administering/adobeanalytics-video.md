@@ -139,7 +139,7 @@ Nella tabella seguente vengono descritte le variabili CQ predefinite fornite per
 
 1. Per mappare le variabili CQ alle proprietà di Adobe Analytics, trascina le proprietà di Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it).
 
 1. [Aggiungere il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
 1. Per verificare l&#39;installazione in **Modalità anteprima**, riprodurre il video per attivare le chiamate di Adobe Analytics.
@@ -274,7 +274,7 @@ eventdata.events.milestoneXX
 
 1. Per mappare le variabili CQ alle proprietà di Adobe Analytics, trascina le proprietà di Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it).
 
 1. [Aggiungere il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
 1. Per verificare l&#39;installazione in **Modalità anteprima**, riprodurre il video per attivare le chiamate di Adobe Analytics.
@@ -383,4 +383,4 @@ Quando si utilizza il metodo **&#x200B; secondi precedenti**, le chiamate di Ado
 
 **Riferimenti utilizzati in questa esercitazione:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it)

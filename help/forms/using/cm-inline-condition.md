@@ -200,7 +200,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
    * Un file di dati XML di esempio creato in base al dizionario dati pertinente durante l’anteprima della lettera con dati di esempio.
    * File di dati XML associato al dizionario dati pertinente.
 
-   Per ulteriori informazioni, vedere [Dizionario dati](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
+   Per ulteriori informazioni, vedere [Dizionario dati](https://helpx.adobe.com/it/aem-forms/6-2/data-dictionary.html).
 
    ![6_Repeoutputpreview](assets/6_repeatoutputpreview.png)
 

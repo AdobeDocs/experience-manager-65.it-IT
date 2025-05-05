@@ -31,7 +31,7 @@ Questo gestore archivia il messaggio di risposta SAML crittografato nel nodo ute
 
 >[!NOTE]
 >
->Vedere [una dimostrazione dell&#39;integrazione di AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
+>Vedere [una dimostrazione dell&#39;integrazione di AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=it).
 
 ## Configurazione del gestore di autenticazione SAML 2.0 {#configuring-the-saml-authentication-handler}
 

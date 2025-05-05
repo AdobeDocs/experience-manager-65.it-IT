@@ -86,7 +86,7 @@ Al momento della creazione dell’account, Adobe Dynamic Medie fornisce automati
 
   Controlla la conservazione di qualsiasi definizione di ritaglio manuale esistente.
 
-  Vedi anche `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), entrambi nella Guida di riferimento visualizzatori Dynamic Medie.
+  Vedi anche `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=it) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=it), entrambi nella Guida di riferimento visualizzatori Dynamic Medie.
 
 ## Opzioni di caricamento predefinite {#default-upload-options}
 

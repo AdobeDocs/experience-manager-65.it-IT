@@ -105,7 +105,7 @@ Specifico per store:
 
 >[!NOTE]
 >
->Vedi anche il riferimento API [ContextHub completo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Vedi anche il riferimento API [ContextHub completo](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
 ## Aggiunta di callback di record {#adding-record-callbacks}
 

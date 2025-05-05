@@ -18,7 +18,7 @@ ht-degree: 9%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
 La funzione Approfondimenti di Assets consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe. Consente di ricavare informazioni sulla loro performance e popolarità.
@@ -27,7 +27,7 @@ La funzione Approfondimenti di Assets consente di monitorare le valutazioni degl
 
 Affinché [!DNL Assets] Insights possa acquisire le statistiche di utilizzo delle immagini da un sito Web, è necessario includere il codice di incorporamento dell&#39;immagine nel codice del sito Web.
 
-Per consentire a Assets Insights di visualizzare le statistiche di utilizzo delle risorse, configura innanzitutto la funzione per recuperare i dati di reporting da Adobe Analytics. Per ulteriori dettagli, vedere [Configurare Assets Insights](/help/assets/configure-asset-insights.md). Per utilizzare questa funzionalità in un&#39;installazione locale, acquistare separatamente la licenza [!DNL Adobe Analytics]. I clienti su [!DNL Managed Services] ricevono [!DNL Analytics] licenza in bundle con [!DNL Experience Manager]. Vedi [descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Per consentire a Assets Insights di visualizzare le statistiche di utilizzo delle risorse, configura innanzitutto la funzione per recuperare i dati di reporting da Adobe Analytics. Per ulteriori dettagli, vedere [Configurare Assets Insights](/help/assets/configure-asset-insights.md). Per utilizzare questa funzionalità in un&#39;installazione locale, acquistare separatamente la licenza [!DNL Adobe Analytics]. I clienti su [!DNL Managed Services] ricevono [!DNL Analytics] licenza in bundle con [!DNL Experience Manager]. Vedi [descrizione del prodotto Managed Services](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >

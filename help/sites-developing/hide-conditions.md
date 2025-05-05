@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Utilizzo di Nascondi condizioni {#using-hide-conditions}
 
-È possibile utilizzare le condizioni Nascondi per determinare se una risorsa componente è sottoposta o meno a rendering. Un esempio potrebbe essere quando un autore di modelli configura il componente core [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) nell&#39;[editor modelli](/help/sites-authoring/templates.md) e decide di disabilitare le opzioni per creare l&#39;elenco in base alle pagine figlie. La disattivazione di questa opzione nella finestra di dialogo per progettazione imposta una proprietà in modo che, quando viene eseguito il rendering del componente elenco, venga valutata la condizione Nascondi e non venga visualizzata l’opzione per visualizzare le pagine figlie.
+È possibile utilizzare le condizioni Nascondi per determinare se una risorsa componente è sottoposta o meno a rendering. Un esempio potrebbe essere quando un autore di modelli configura il componente core [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it) nell&#39;[editor modelli](/help/sites-authoring/templates.md) e decide di disabilitare le opzioni per creare l&#39;elenco in base alle pagine figlie. La disattivazione di questa opzione nella finestra di dialogo per progettazione imposta una proprietà in modo che, quando viene eseguito il rendering del componente elenco, venga valutata la condizione Nascondi e non venga visualizzata l’opzione per visualizzare le pagine figlie.
 
 ## Panoramica {#overview}
 
@@ -56,7 +56,7 @@ Quando definisci l’espressione Nascondi, tieni presente quanto segue:
 
 ## Esempio {#example}
 
-Esempi di condizioni di Nascondi sono disponibili in AEM e nei [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) in particolare. Consideriamo ad esempio il componente di base [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
+Esempi di condizioni di Nascondi sono disponibili in AEM e nei [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) in particolare. Consideriamo ad esempio il componente di base [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it).
 
 [Utilizzando l&#39;editor modelli](/help/sites-authoring/templates.md), l&#39;autore del modello può definire nella finestra di dialogo per progettazione le opzioni del componente Elenco disponibili per l&#39;autore della pagina. È possibile abilitare o disabilitare opzioni quali l’abilitazione o meno dell’elenco come elenco statico, elenco di pagine figlie, elenco di pagine con tag e così via.
 

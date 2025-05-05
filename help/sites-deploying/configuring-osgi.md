@@ -174,7 +174,7 @@ Poiché lo stesso parametro di configurazione si trova in più posizioni, il sis
 
 >[!NOTE]
 >
->Leggi anche [come definire una configurazione basata su repository solo per un&#39;istanza specifica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
+>Leggi anche [come definire una configurazione basata su repository solo per un&#39;istanza specifica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=it).
 
 ### Aggiunta di una nuova configurazione all’archivio {#adding-a-new-configuration-to-the-repository}
 

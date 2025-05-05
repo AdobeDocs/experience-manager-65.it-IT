@@ -195,7 +195,7 @@ Di seguito è riportato un esempio per la creazione di un certificato autofirmat
 
 >[!NOTE]
 >
->Per un elenco centralizzato di comandi cURL utili nell&#39;AEM, vedere [Utilizzo di cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html).
+>Per un elenco centralizzato di comandi cURL utili nell&#39;AEM, vedere [Utilizzo di cURL con AEM](https://helpx.adobe.com/it/experience-manager/6-4/sites/administering/using/curl.html).
 
 Puoi anche automatizzare la configurazione SSL/TLS utilizzando lo strumento cURL. Per eseguire questa operazione, invia i parametri di configurazione a questo URL:
 

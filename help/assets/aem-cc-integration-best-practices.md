@@ -19,7 +19,7 @@ ht-degree: 11%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
 | AEM 6.5 | Questo articolo |
 
 [!DNL Adobe Experience Manager Assets] è una soluzione DAM (Digital Asset Management) che può essere integrata con [!DNL Adobe Creative Cloud] per aiutare gli utenti DAM a collaborare con i team creativi, semplificando la collaborazione nel processo di creazione dei contenuti.
@@ -30,7 +30,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 
 >[!NOTE]
 >
->La condivisione di cartelle da [!DNL Experience Manager] a [!DNL Creative Cloud] è obsoleta e non è più trattata in questa guida. L&#39;Adobe consiglia di utilizzare funzionalità più recenti, ad esempio [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [Experience Manager Desktop App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html), per consentire ai creativi di accedere alle risorse gestite in [!DNL Experience Manager].
+>La condivisione di cartelle da [!DNL Experience Manager] a [!DNL Creative Cloud] è obsoleta e non è più trattata in questa guida. L&#39;Adobe consiglia di utilizzare funzionalità più recenti, ad esempio [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [Experience Manager Desktop App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=it), per consentire ai creativi di accedere alle risorse gestite in [!DNL Experience Manager].
 
 ## Esigenze di Collaboration per creativi, addetti al marketing e utenti DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
@@ -45,10 +45,10 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 | Proposta di valore per gli utenti tipo interessati | offerta Adobe | Superfici interessate |
 |---|---|---|
 | Gli utenti creativi individuano le risorse da [!DNL Experience Manager], le aprono e le utilizzano, modificano e caricano le modifiche in [!DNL Experience Manager] e caricano nuovi file in [!DNL Experience Manager], senza uscire da [!DNL Creative Cloud] app. | [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | .[!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign]. |
-| Gli utenti aziendali semplificano l&#39;apertura e l&#39;utilizzo delle risorse, la modifica e il caricamento delle modifiche in [!DNL Experience Manager] e il caricamento di nuovi file in [!DNL Experience Manager] dall&#39;ambiente desktop. Utilizzano un’integrazione generica per aprire qualsiasi tipo di risorsa nell’applicazione desktop nativa, incluse quelle non di Adobe. | [app desktop di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | App desktop [!DNL Experience Manager] su desktop Win e Mac |
+| Gli utenti aziendali semplificano l&#39;apertura e l&#39;utilizzo delle risorse, la modifica e il caricamento delle modifiche in [!DNL Experience Manager] e il caricamento di nuovi file in [!DNL Experience Manager] dall&#39;ambiente desktop. Utilizzano un’integrazione generica per aprire qualsiasi tipo di risorsa nell’applicazione desktop nativa, incluse quelle non di Adobe. | [app desktop di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it) | App desktop [!DNL Experience Manager] su desktop Win e Mac |
 | Gli addetti al marketing e gli utenti aziendali possono individuare, visualizzare in anteprima, concedere in licenza e salvare le risorse [!DNL Adobe Stock] e gestirle da [!DNL Experience Manager]. Le risorse concesse in licenza e salvate forniscono alcuni metadati [!DNL Adobe Stock] per una migliore governance. | [Integrazione di Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | Interfaccia Web [!DNL Experience Manager] |
 
-Questo articolo si concentra principalmente sui primi due aspetti delle esigenze di collaborazione. La distribuzione e l’approvvigionamento delle risorse su scala viene brevemente citata come caso d’uso. Per tali esigenze, valuta prodotti come Adobe Brand Portal o Asset Share Commons. Le soluzioni alternative, come [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), che possono essere create in base ai componenti [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Link Share](/help/assets/link-sharing.md), utilizzando [Experience Manager Assets](/help/assets/manage-assets.md), devono essere esaminate in base a requisiti specifici.
+Questo articolo si concentra principalmente sui primi due aspetti delle esigenze di collaborazione. La distribuzione e l’approvvigionamento delle risorse su scala viene brevemente citata come caso d’uso. Per tali esigenze, valuta prodotti come Adobe Brand Portal o Asset Share Commons. Le soluzioni alternative, come [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=it), che possono essere create in base ai componenti [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Link Share](/help/assets/link-sharing.md), utilizzando [Experience Manager Assets](/help/assets/manage-assets.md), devono essere esaminate in base a requisiti specifici.
 
 ![Creative Cloud connessioni per Experience Manager, decidere quale funzionalità utilizzare](assets/creative-connections-aem.png)
 
@@ -75,7 +75,7 @@ Questo articolo si concentra principalmente sui primi due aspetti delle esigenze
 
 Per supportare i casi di utilizzo della distribuzione delle risorse, è necessario prendere in considerazione altre soluzioni:
 
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) per un componente aggiuntivo SaaS configurabile in [!DNL Experience Manager Assets] per la pubblicazione delle risorse.
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=it) per un componente aggiuntivo SaaS configurabile in [!DNL Experience Manager Assets] per la pubblicazione delle risorse.
 * Le soluzioni personalizzate vengono create in base alla base di codice di [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * [!DNL Experience Manager] [condivisione collegamenti](/help/assets/link-sharing.md) per condividere risorse su richiesta tramite collegamenti.
 * [Interfaccia Web di Experience Manager Assets](/help/assets/manage-assets.md) con aree per le parti esterne protette dalla configurazione del controllo di accesso di [!DNL Experience Manager] e con le necessarie regolazioni della configurazione IT/di rete, consentendo a tali utenti esterni di accedere a [!DNL Experience Manager].
@@ -96,7 +96,7 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 
 ### Considerazioni durante l&#39;utilizzo dell&#39;integrazione di [!DNL Experience Manager] e [!DNL Creative Cloud] {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Vedi [best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
+* Vedi [best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=it#best-practices-to-prevent-troubles)
 * Vedi [Integrazione Adobe Stock](aem-assets-adobe-stock.md)
 * Vedi [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 
@@ -184,7 +184,7 @@ Le agenzie esterne e i freelance che non dispongono di un accesso diretto all’
 Utilizza le seguenti strategie per fornire accesso alle risorse finali/approvate:
 
 * Se Asset Link non funziona, utilizza l’app desktop.
-* Utilizza [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) per distribuire le risorse in modo sicuro ai partner esterni
+* Utilizza [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=it) per distribuire le risorse in modo sicuro ai partner esterni
 * Utilizza un&#39;implementazione personalizzata di un portale di distribuzione e sourcing basato su [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilizzare il controllo degli accessi configurato in [!DNL Experience Manager] e l&#39;infrastruttura di rete necessaria (ad esempio, VPN e elenco Consentiti IP) per consentire alle parti esterne di accedere a un&#39;area dedicata di contenuto nel DAM. Possono utilizzare l&#39;interfaccia utente Web di [!DNL Experience Manager] per ottenere risorse e caricare nuovi contenuti in DAM.
 
@@ -216,7 +216,7 @@ La descrizione si riferisce al caricamento operativo dei file (ad esempio, ogni 
 
 Puoi utilizzare le seguenti funzionalità di caricamento:
 
-* Per caricare in blocco cartelle di grandi dimensioni o gerarchiche, utilizzare l&#39;app desktop [!DNL Experience Manager] che fornisce la funzionalità di [caricamento cartelle](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem). Puoi anche caricare strutture di cartelle gerarchiche. [!DNL Assets] sono caricati in background e, pertanto, non sono associati a una sessione del browser Web
+* Per caricare in blocco cartelle di grandi dimensioni o gerarchiche, utilizzare l&#39;app desktop [!DNL Experience Manager] che fornisce la funzionalità di [caricamento cartelle](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#upload-and-add-new-assets-to-aem). Puoi anche caricare strutture di cartelle gerarchiche. [!DNL Assets] sono caricati in background e, pertanto, non sono associati a una sessione del browser Web
 * Per caricare alcuni file da una singola cartella, trascinarli direttamente nell&#39;interfaccia Web o utilizzare l&#39;opzione Crea nell&#39;interfaccia Web [!DNL Assets].
 * A seconda dei requisiti aziendali, puoi anche utilizzare un caricatore personalizzato.
 
@@ -233,6 +233,6 @@ Per pianificare ed eseguire le migrazioni delle risorse dal sistema esistente a 
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
->* [Experienci Manager di best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
->* [Experience Manager Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [Experienci Manager di best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html?lang=it)
+>* [Experience Manager Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=it)
 >* [Integrazione di Experience Manager e Adobe Stock](aem-assets-adobe-stock.md)

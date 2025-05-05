@@ -32,15 +32,15 @@ L’API REST consente di accedere alle stesse funzioni tramite HTTP con risposte
 
 >[!NOTE]
 >
->L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR di Adobe Experience Manager utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, consulta [Adobe Experience Manager utilizzando l&#39;API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html).
+>L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR di Adobe Experience Manager utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, consulta [Adobe Experience Manager utilizzando l&#39;API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=it).
 
 ## Sessione Gem {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobi. Questa sessione dedicata al generatore di query è utile per una panoramica e per l’utilizzo dello strumento.
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=it) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobi. Questa sessione dedicata al generatore di query è utile per una panoramica e per l’utilizzo dello strumento.
 
 >[!NOTE]
 >
->I moduli di ricerca della sessione Gem [dell&#39;AEM sono stati semplificati con il generatore di query dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) per ottenere una panoramica dettagliata del generatore di query.
+>I moduli di ricerca della sessione Gem [dell&#39;AEM sono stati semplificati con il generatore di query dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=it) per ottenere una panoramica dettagliata del generatore di query.
 
 ## Query di esempio {#sample-queries}
 

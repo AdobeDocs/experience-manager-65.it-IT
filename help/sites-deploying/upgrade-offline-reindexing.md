@@ -180,7 +180,7 @@ Si consiglia di clonare il sistema di produzione e creare l’indice offline uti
 
 ### Preparare un Runbook e un’esecuzione di prova {#prepare-a-runbook-and-trial-run}
 
-È consigliabile preparare un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) ed eseguire alcune prove prima di eseguire l&#39;aggiornamento in produzione.
+È consigliabile preparare un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=it#building-the-upgrade-and-rollback-runbook) ed eseguire alcune prove prima di eseguire l&#39;aggiornamento in produzione.
 
 ### Modalità Di Trasferimento Dei Documenti Con Indicizzazione Offline {#doc-traversal-mode-with-offline-indexing}
 

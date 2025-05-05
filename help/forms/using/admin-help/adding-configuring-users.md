@@ -176,4 +176,4 @@ Se un utente senza i moduli AEM e le autorizzazioni CQ richiesti tenta di accede
 
 CQ fornisce un meccanismo per sostituire il gestore jsp 404 predefinito.
 
-Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, vedere [Personalizzazione delle pagine visualizzate dal gestore degli errori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en) nella documentazione di Adobe Experience Manager.
+Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, vedere [Personalizzazione delle pagine visualizzate dal gestore degli errori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=it) nella documentazione di Adobe Experience Manager.

@@ -37,11 +37,11 @@ Le risorse presenti in questa tabella possono essere utili per ulteriori informa
   </tr>
   <tr>
    <td><p>Informazioni generali su AEM Forms e su come si integra con altri prodotti Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=it">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Tutta la documentazione disponibile per AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=it">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Aggiornamenti patch, note tecniche e informazioni aggiuntive su questa versione del prodotto</p> </td>
@@ -100,7 +100,7 @@ Spazio su disco per installazione:
 
 ### Piattaforme supportate {#supported-platforms}
 
-Consulta l&#39;elenco completo delle piattaforme supportate per Workbench in [Piattaforme supportate da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
+Consulta l&#39;elenco completo delle piattaforme supportate per Workbench in [Piattaforme supportate da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_it).
 
 ## Considerazioni sull’installazione di Designer {#designer-installation-considerations}
 
@@ -191,7 +191,7 @@ Per utilizzare Workbench, è necessario disporre di un&#39;istanza di AEM Forms 
 
 ### Configurazione delle impostazioni di timeout {#configuring-timeout-settings}
 
-Per impostazione predefinita, Workbench riceve un timeout dopo due ore, indipendentemente dall’attività o dall’inattività. Per modificare l&#39;impostazione di timeout, vedere la sezione relativa alla configurazione della gestione utente e degli attributi di sistema avanzati nella <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Guida della console di amministrazione</a>.
+Per impostazione predefinita, Workbench riceve un timeout dopo due ore, indipendentemente dall’attività o dall’inattività. Per modificare l&#39;impostazione di timeout, vedere la sezione relativa alla configurazione della gestione utente e degli attributi di sistema avanzati nella <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=it">Guida della console di amministrazione</a>.
 
 ### Configurazione di Workbench per la connessione tramite HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

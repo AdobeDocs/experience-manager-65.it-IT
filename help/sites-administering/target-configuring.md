@@ -56,7 +56,7 @@ I seguenti valori delle proprietà vengono utilizzati nella configurazione cloud
 >* Migliori opzioni di implementazione per le applicazioni a pagina singola
 >* AT.js contiene i componenti inclusi in target.js, quindi cessano le chiamate a target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=it -->
 
 ### Proprietà framework destinazione con provisioning {#provisioned-target-framework-properties}
 
@@ -119,7 +119,7 @@ Integrazione manuale con Adobe Target invece di utilizzare la procedura guidata 
 >
 >Puoi selezionare AT.js o mbox.js nel menu a discesa **Libreria client**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=it -->
 
 ### Creazione di una configurazione cloud di Target {#creating-a-target-cloud-configuration}
 
@@ -224,7 +224,7 @@ Il framework viene creato. Per replicare il framework nell’istanza di pubblica
 
 ### Associazione di attività alla configurazione cloud di Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associa le [attività AEM](/help/sites-authoring/activitylib.md) alla configurazione cloud di Target in modo da poter eseguire il mirroring delle attività in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associa le [attività AEM](/help/sites-authoring/activitylib.md) alla configurazione cloud di Target in modo da poter eseguire il mirroring delle attività in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=it).
 
 >[!NOTE]
 >

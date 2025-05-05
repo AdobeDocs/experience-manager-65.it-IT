@@ -92,7 +92,7 @@ La sezione Riepilogo a livello di modulo fornisce informazioni approfondite sull
 * **Bozze**: numero di volte in cui il modulo è stato salvato come bozza
 * **Invii**: numero di volte in cui il modulo è stato inviato
 * **Interrompi**: numero di volte in cui gli utenti hanno iniziato a compilare il modulo e poi hanno lasciato il modulo senza completarlo
-* **Visitatori univoci**: il numero di volte in cui il modulo &quot;viene renderizzato da visitatori univoci. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Visitatori univoci**: il numero di volte in cui il modulo &quot;viene renderizzato da visitatori univoci. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://helpx.adobe.com/it/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Report analisi riepilogo a livello di modulo espanso](assets/analytics-report.png)
 

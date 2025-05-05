@@ -37,13 +37,13 @@ L&#39;utilità di migrazione converte le [risorse di Forms adattivi](../../forms
 
 **Se è presente un aggiornamento sul posto**
 
-Se hai eseguito un aggiornamento sul posto, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (incluso il pacchetto di compatibilità per Gestione corrispondenza)
+Se hai eseguito un aggiornamento sul posto, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) (incluso il pacchetto di compatibilità per Gestione corrispondenza)
 
 È quindi necessario aggiornare le risorse e i documenti [eseguendo l&#39;utilità di migrazione](#runningmigrationutility).
 
 **In caso di installazione fuori sede**
 
-Se si tratta di un&#39;installazione fuori sede (nuova), prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (incluso il pacchetto di compatibilità per Gestione corrispondenza).
+Se si tratta di un&#39;installazione fuori sede (nuova), prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) (incluso il pacchetto di compatibilità per Gestione corrispondenza).
 
 Quindi devi importare il pacchetto di risorse (zip o cmp) nella nuova configurazione e quindi aggiornare le risorse e i documenti eseguendo [l&#39;utilità di migrazione](#runningmigrationutility). L’Adobe consiglia di creare le risorse nella nuova configurazione solo dopo aver eseguito l’utility di migrazione.
 

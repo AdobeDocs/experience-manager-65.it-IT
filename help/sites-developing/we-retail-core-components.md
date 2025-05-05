@@ -86,6 +86,6 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni sui Componenti core, vedi il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei Componenti core e il documento per sviluppatori [Sviluppo di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) per una panoramica tecnica.
+Per ulteriori informazioni sui Componenti core, vedi il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei Componenti core e il documento per sviluppatori [Sviluppo di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per una panoramica tecnica.
 
 È inoltre possibile esaminare ulteriormente [modelli modificabili](/help/sites-developing/we-retail-editable-templates.md). Per informazioni complete sui modelli modificabili, consultare il documento di creazione [Creazione di modelli di pagina](/help/sites-authoring/templates.md) o il documento per sviluppatori Pagina [Modelli - Modificabili](/help/sites-developing/page-templates-editable.md).

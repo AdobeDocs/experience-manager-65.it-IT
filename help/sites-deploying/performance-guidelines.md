@@ -304,7 +304,7 @@ In AEM, i dati binari possono essere memorizzati indipendentemente dai nodi di c
 
 >[!CAUTION]
 >
->Il supporto del micro kernel del database relazionale è limitato. Contatta [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support) prima di utilizzare questo tipo di micro kernel.
+>Il supporto del micro kernel del database relazionale è limitato. Contatta [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support) prima di utilizzare questo tipo di micro kernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

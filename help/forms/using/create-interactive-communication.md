@@ -300,7 +300,7 @@ Nella tabella seguente è riportato un esempio dei valori visualizzati in seguit
 | Codice fiscale | 1234567 | testo{999-99-9999} | 1-23-4567 | Il numero di cifre nel campo del valore predefinito è inferiore al numero di cifre nel campo Pattern. Il modello si applica alle 7 cifre disponibili. |
 | Codice fiscale | 1234567890 | testo{999-99-9999} | 1234567890 | Il numero di cifre nel campo del valore predefinito è maggiore del numero di cifre nel campo Pattern. Di conseguenza, il valore visualizzato non cambia. |
 
-Se non viene specificato un modello di visualizzazione per una variabile o un elemento del modello dati del modulo, per impostazione predefinita viene utilizzata la [configurazione globale del frammento di documento](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html).
+Se non viene specificato un modello di visualizzazione per una variabile o un elemento del modello dati del modulo, per impostazione predefinita viene utilizzata la [configurazione globale del frammento di documento](https://helpx.adobe.com/it//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html).
 
 Se non si applica un motivo di visualizzazione a una variabile di tipo numerico, nell&#39;anteprima di stampa il motivo viene visualizzato in base alla configurazione globale del frammento di documento. Se si applicano modifiche alla configurazione globale predefinita del frammento di documento, il modello viene comunque visualizzato nell’interfaccia utente dell’agente in base ai separatori predefiniti definiti per le impostazioni internazionali.
 
@@ -618,7 +618,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-Per generare l&#39;output in qualsiasi altro formato, specificate il tipo di formato di output. Per un elenco dei tipi di formato di output supportati, fare riferimento a [API PrintChannel](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html).
+Per generare l&#39;output in qualsiasi altro formato, specificate il tipo di formato di output. Per un elenco dei tipi di formato di output supportati, fare riferimento a [API PrintChannel](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html).
 
 Ad esempio, potete utilizzare l&#39;esempio seguente per definire PCL come formato di output per una comunicazione interattiva:
 

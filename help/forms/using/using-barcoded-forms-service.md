@@ -137,9 +137,9 @@ Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la 
 
 Il servizio Forms in codice a barre fornisce le due API seguenti:
 
-* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodifica tutti i codici a barre disponibili in un documento di input PDF o in un&#39;immagine tiff. Restituisce un altro documento XML contenente dati recuperati da tutti i codici a barre disponibili nel documento o nell&#39;immagine di input.
+* **[decode](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodifica tutti i codici a barre disponibili in un documento di input PDF o in un&#39;immagine tiff. Restituisce un altro documento XML contenente dati recuperati da tutti i codici a barre disponibili nel documento o nell&#39;immagine di input.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: converte i dati decodificati utilizzando l&#39;API di decodifica in dati XML. Questi dati XML possono essere uniti a un modulo XFA. Restituisce un elenco di documenti XML, uno per ogni codice a barre.
+* **[extractToXML](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: converte i dati decodificati utilizzando l&#39;API di decodifica in dati XML. Questi dati XML possono essere uniti a un modulo XFA. Restituisce un elenco di documenti XML, uno per ogni codice a barre.
 
 ### Utilizzo del servizio BCF con una JSP o Servlet {#using-bcf-service-with-a-jsp-or-servlets}
 

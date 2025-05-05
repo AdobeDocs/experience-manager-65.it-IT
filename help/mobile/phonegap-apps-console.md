@@ -77,7 +77,7 @@ Puoi anche fornire un file di immagine da utilizzare come miniatura dell’appli
 Sono disponibili schede aggiuntive (e facoltative) per build Cloud Service e per l’integrazione del plug-in SDK di Adobe Mobile Services nell’app.
 
 * Genera: fai clic su Gestisci configurazioni e configura il servizio di build build.phonegap.com qui. Quindi, dall’elenco a discesa, potrai selezionare il servizio cloud PhoneGap Build appena creato.
-* Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
+* Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=it). Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
 
 >[!NOTE]
 >

@@ -28,9 +28,9 @@ Come parte del processo di integrazione, configura il flusso di lavoro **Risorsa
 
 >[!NOTE]
 >
->Puoi generare modelli InDesign da file InDesign prima di importarli in AEM Assets. Per ulteriori dettagli, vedere [Utilizzo di file e modelli](https://helpx.adobe.com/indesign/using/files-templates.html).
+>Puoi generare modelli InDesign da file InDesign prima di importarli in AEM Assets. Per ulteriori dettagli, vedere [Utilizzo di file e modelli](https://helpx.adobe.com/it/indesign/using/files-templates.html).
 >
->Puoi mappare gli elementi nei modelli InDesign ai tag XML. I tag mappati vengono visualizzati come proprietà quando mappate le proprietà del prodotto con le proprietà del modello in Catalog Producer. Per informazioni sui tag XML nei file InDesign, vedere [Contenuto tag per XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
+>Puoi mappare gli elementi nei modelli InDesign ai tag XML. I tag mappati vengono visualizzati come proprietà quando mappate le proprietà del prodotto con le proprietà del modello in Catalog Producer. Per informazioni sui tag XML nei file InDesign, vedere [Contenuto tag per XML](https://helpx.adobe.com/it/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >

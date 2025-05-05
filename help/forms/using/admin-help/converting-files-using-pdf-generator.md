@@ -116,7 +116,7 @@ Se il file ZIP contiene più di un file HTML al livello inferiore della gerarchi
 
    Il tempo di conversione visualizzato quando il file viene convertito potrebbe essere maggiore del valore specificato in questo campo. Il Tempo di conversione include il tempo trascorso in attesa del thread o del processo, il tempo impiegato per convertire il file e il tempo impiegato dal convertitore di fallback (se applicabile). tempo. Il valore di Specifica timeout corrisponde al tempo necessario per convertire il file.
 
-1. (Facoltativo) Nell&#39;opzione **Specifica profilo verifica preliminare personalizzato**, fare clic su Sfoglia e selezionare un [profilo verifica preliminare personalizzato](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). I profili di verifica preliminare vengono utilizzati solo durante la conversione di documenti in formato archivio PDF (PDF/A).
+1. (Facoltativo) Nell&#39;opzione **Specifica profilo verifica preliminare personalizzato**, fare clic su Sfoglia e selezionare un [profilo verifica preliminare personalizzato](https://helpx.adobe.com/it/acrobat/using/preflight-profiles-acrobat-pro.html). I profili di verifica preliminare vengono utilizzati solo durante la conversione di documenti in formato archivio PDF (PDF/A).
 1. Fai clic su Esporta. Al termine della conversione, viene visualizzato un collegamento al file esportato.
 1. Fai clic sul collegamento per visualizzare il file convertito.
 

@@ -110,11 +110,11 @@ L’Adobe consiglia di definire pagine personalizzate del gestore degli errori, 
 
 >[!NOTE]
 >
->Per ulteriori dettagli, vedere [Come creare script personalizzati o gestori di errori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html).
+>Per ulteriori dettagli, vedere [Come creare script personalizzati o gestori di errori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=it).
 
 ### Completa elenco di controllo della sicurezza di Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher è un componente fondamentale dell&#39;infrastruttura aziendale. L&#39;Adobe consiglia di completare l&#39;[elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
+AEM Dispatcher è un componente fondamentale dell&#39;infrastruttura aziendale. L&#39;Adobe consiglia di completare l&#39;[elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=it).
 
 >[!CAUTION]
 >

@@ -66,7 +66,7 @@ Poiché HTL è la tecnologia preferita per lo sviluppo di siti AEM, deve essere 
 
 ### Utilizzo di HTL {#using-htl}
 
-In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [`data-sly-use`](https://helpx.adobe.com/it/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [`data-sly-call`](https://helpx.adobe.com/it/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Carica solo i file CSS delle librerie client di riferimento.
 * **js** - Carica solo i file JavaScript delle librerie client di riferimento.
@@ -74,7 +74,7 @@ In HTL, le librerie client vengono caricate tramite un modello helper fornito da
 
 Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere un array di valori stringa o una stringa contenente un elenco di valori separati da virgola.
 
-Per ulteriori dettagli ed esempi di utilizzo, vedere il documento [Guida introduttiva a HTML Template Language](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Per ulteriori dettagli ed esempi di utilizzo, vedere il documento [Guida introduttiva a HTML Template Language](https://helpx.adobe.com/it/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Utilizzo di JSP {#using-jsp}
 

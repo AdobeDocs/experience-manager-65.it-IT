@@ -31,4 +31,4 @@ La funzionalità di rilevamento duplicati è ora abilitata in [!DNL Assets]. Qua
 >[!MORELIKETHIS]
 >
 >* [Risorse duplicate nell&#39;archivio esistente (un&#39;esercitazione eseguita da un membro della community)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [Rileva risorse duplicate in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
+>* [Rileva risorse duplicate in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=it)

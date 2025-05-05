@@ -24,7 +24,7 @@ Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/it/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
 >[!CAUTION]
 >

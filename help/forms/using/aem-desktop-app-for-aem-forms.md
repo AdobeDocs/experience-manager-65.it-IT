@@ -20,7 +20,7 @@ ht-degree: 0%
 
 L’app desktop AEM consente di mappare l’archivio Assets di Adobe Experience Manager (AEM) e i file binari di AEM Forms in una directory di rete sul sistema. È possibile visualizzare le risorse sincronizzate e i file binari in un Esplora file e utilizzare varie app per modificare i file come desiderato. Oltre a visualizzare i file, puoi anche creare, caricare ed eliminare i file binari. È inoltre possibile aprire, modificare e salvare i file direttamente dal software. Ad esempio, puoi aprire e modificare direttamente un file XDP da Designer. Le modifiche apportate localmente alle risorse si riflettono nell’archivio AEM Assets e nell’interfaccia utente di AEM Forms.
 
-Puoi scaricare l’app da un’istanza AEM. Per informazioni dettagliate sul download dell&#39;app, consulta [Note sulla versione dell&#39;app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
+Puoi scaricare l’app da un’istanza AEM. Per informazioni dettagliate sul download dell&#39;app, consulta [Note sulla versione dell&#39;app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=it).
 
 ## Risorse AEM Forms supportate nell’app desktop AEM {#aem-forms-assets-supported-in-aem-desktop-app}
 

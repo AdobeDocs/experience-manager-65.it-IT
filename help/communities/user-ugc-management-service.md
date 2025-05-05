@@ -29,7 +29,7 @@ Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center]
 
 >[!NOTE]
 >
->Se hai configurato [Adobe Analytics nel sito AEM Communities](/help/communities/analytics.md), i dati utente acquisiti vengono inviati al server Adobe Analytics. Adobe Analytics fornisce API che ti consentono di accedere, esportare ed eliminare dati utente in conformità con il RGPD. Per ulteriori informazioni, vedere [Invia richieste di accesso ed eliminazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>Se hai configurato [Adobe Analytics nel sito AEM Communities](/help/communities/analytics.md), i dati utente acquisiti vengono inviati al server Adobe Analytics. Adobe Analytics fornisce API che ti consentono di accedere, esportare ed eliminare dati utente in conformità con il RGPD. Per ulteriori informazioni, vedere [Invia richieste di accesso ed eliminazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html?lang=it).
 
 Per utilizzare queste API, è necessario abilitare l&#39;endpoint `/services/social/ugcmanagement` attivando il servizio UserUgcManagement. Per attivare questo servizio, installa il [servlet di esempio](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponibile in [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Quindi, premi l’endpoint sull’istanza di pubblicazione del sito community con i parametri appropriati utilizzando una richiesta http simile alla seguente:
 

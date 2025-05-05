@@ -19,7 +19,7 @@ Adobe Dynamic Tag Management è uno strumento che attiva gli strumenti di market
 
 >[!CAUTION]
 >
->Adobe DTM è obsoleto a favore di [!DNL Adobe Experience Platform] e presto raggiungerà [la fine del ciclo di vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). L&#39;Adobe consiglia di [utilizzare [!DNL Adobe Experience Platform] per approfondimenti risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM è obsoleto a favore di [!DNL Adobe Experience Platform] e presto raggiungerà [la fine del ciclo di vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). L&#39;Adobe consiglia di [utilizzare [!DNL Adobe Experience Platform] per approfondimenti risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=it).
 
 Segui questi passaggi per abilitare Assets Insights tramite DTM.
 

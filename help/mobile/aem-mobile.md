@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Se non utilizzi Adobe Experience Manager (AEM) come origine per la gestione dei contenuti, consulta la [Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se non utilizzi Adobe Experience Manager (AEM) come origine per la gestione dei contenuti, consulta la [Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/it/digital-publishing-solution/topics.html).
 
 ## Amministratore AEM {#aem-administrator}
 
@@ -36,7 +36,7 @@ Un ***amministratore AEM*** è responsabile dell&#39;aggiunta di un&#39;applicaz
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione di gruppi e autorizzazioni AEM, fare clic su [Creazione di ruoli utente e concessione dell&#39;accesso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) nella Guida in linea.
+>Per ulteriori informazioni sulla configurazione di gruppi e autorizzazioni AEM, fare clic su [Creazione di ruoli utente e concessione dell&#39;accesso](https://helpx.adobe.com/it/digital-publishing-solution/help/account-admin-dps.html) nella Guida in linea.
 
 Un amministratore AEM è responsabile delle seguenti attività durante la creazione di un’app tramite AEM Mobile On-demand Services:
 

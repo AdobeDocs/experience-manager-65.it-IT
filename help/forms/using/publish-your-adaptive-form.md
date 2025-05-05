@@ -32,7 +32,7 @@ Per pubblicare un modulo adattivo, sono disponibili i seguenti metodi:
 ## Prima di iniziare {#before-you-start}
 
 * **[Configura un&#39;istanza di pubblicazione di AEM Forms](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: l&#39;istanza di pubblicazione è un&#39;istanza pubblica dell&#39;AEM [!DNL Forms] in esecuzione in modalità di pubblicazione. In un ambiente di produzione, l’istanza Publish si trova all’esterno del firewall dell’organizzazione.
-* **[Imposta replica e replica inversa](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**: la replica copia il contenuto dall&#39;istanza di authoring a un&#39;istanza di pubblicazione e restituisce l&#39;input utente (ad esempio, l&#39;input del modulo) dall&#39;istanza di pubblicazione all&#39;istanza di authoring.
+* **[Imposta replica e replica inversa](https://helpx.adobe.com/it/experience-manager/6-3/help/sites-deploying/replication.html)**: la replica copia il contenuto dall&#39;istanza di authoring a un&#39;istanza di pubblicazione e restituisce l&#39;input utente (ad esempio, l&#39;input del modulo) dall&#39;istanza di pubblicazione all&#39;istanza di authoring.
 
 ## Publish il modulo adattivo come pagina AEM {#publish-the-adaptive-form-as-an-aem-page}
 
@@ -54,7 +54,7 @@ AEM [!DNL Forms] fornisce un componente, AEM [!DNL Forms] Container, per incorpo
 
    È inoltre possibile incorporare il modulo adattivo in una pagina We.Retail [!DNL Site's] esistente. Ad esempio, la pagina INFO SU [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Consente di risparmiare tempo per creare una pagina. I passaggi seguenti utilizzano la pagina appena creata.
 
-   Il sito We.Retail è fornito con AEM. Se non hai installato il sito We.Retail, consulta la sezione [Implementazione di riferimento We.Retail](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) per installare il sito.
+   Il sito We.Retail è fornito con AEM. Se non hai installato il sito We.Retail, consulta la sezione [Implementazione di riferimento We.Retail](https://helpx.adobe.com/it/experience-manager/6-3/help/sites-developing/we-retail.html) per installare il sito.
 
 1. Seleziona ![proprietà](assets/properties.png) informazioni pagina e seleziona l&#39;opzione **[!UICONTROL Modifica modello]** nella pagina del sito We.Retail appena creata. Il modello della pagina si apre in una nuova scheda del browser.
 1. Seleziona nella casella **[!UICONTROL contenitore layout]** e seleziona ![gestione feed](assets/feedmanagement.png). Nella scheda **[!UICONTROL Componenti consentiti]**, espandi il pannello a soffietto **[!UICONTROL Generale]**, seleziona l&#39;opzione **[!UICONTROL Modulo AEM]** e seleziona ![icona_salvataggio](assets/save_icon.svg). Il componente contenitore [!DNL Forms] dell&#39;AEM è abilitato per la pagina.

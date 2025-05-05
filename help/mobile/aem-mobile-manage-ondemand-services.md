@@ -42,7 +42,7 @@ Con l’app Verifica preliminare Mobile On-Demand puoi visualizzare tutti i prog
 
 >[!NOTE]
 >
->L’app Verifica preliminare AEM viene utilizzata per visualizzare in anteprima i contenuti e sfogliare le pagine. Per informazioni approfondite sulla verifica preliminare dell&#39;app, fai clic [qui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>L’app Verifica preliminare AEM viene utilizzata per visualizzare in anteprima i contenuti e sfogliare le pagine. Per informazioni approfondite sulla verifica preliminare dell&#39;app, fai clic [qui](https://helpx.adobe.com/it/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Come procedere {#getting-ahead}

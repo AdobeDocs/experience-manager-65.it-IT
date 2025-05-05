@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Aggiungere funzioni di Dynamic Media Classic alle pagine {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) è una soluzione ospitata per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse rich media a visualizzazioni e stampe connesse a Internet, dispositivi mobili e posta elettronica.
+[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=it) è una soluzione ospitata per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse rich media a visualizzazioni e stampe connesse a Internet, dispositivi mobili e posta elettronica.
 
 Puoi visualizzare le risorse di Experience Manager pubblicate in Dynamic Media Classic in vari visualizzatori:
 
@@ -179,13 +179,13 @@ Il componente **[!UICONTROL Immagine]** di Dynamic Media Classic consente di agg
 
 **[!UICONTROL Nitidezza]** - Seleziona la modalità di nitidezza dell&#39;immagine. La nitidezza è spiegata in dettaglio nelle [best practice per i predefiniti immagine](/help/assets/managing-image-presets.md#image-preset-options) e nelle [best practice per la nitidezza](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificatori URL]** - È possibile modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. Questi comandi sono descritti in [Predefiniti immagine](/help/assets/managing-image-presets.md) e nel [Riferimento comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificatori URL]** - È possibile modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. Questi comandi sono descritti in [Predefiniti immagine](/help/assets/managing-image-presets.md) e nel [Riferimento comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it).
 
 **[!UICONTROL Punti di interruzione]** - Se il sito Web è reattivo, modificare i punti di interruzione. I punti di interruzione devono essere separati da virgole ( , ).
 
 ### Modello immagini {#image-template}
 
-[I modelli di immagine Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) sono contenuti Photoshop a più livelli importati in Dynamic Media Classic, in cui il contenuto e le proprietà sono stati parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagine]** consente di importare immagini e modificare il testo in modo dinamico in Experience Manager. È inoltre possibile configurare il componente **[!UICONTROL Modello immagine]** in modo che utilizzi i valori del contesto client, in modo che ogni utente visualizzi l&#39;immagine in modo personalizzato.
+[I modelli di immagine Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=it) sono contenuti Photoshop a più livelli importati in Dynamic Media Classic, in cui il contenuto e le proprietà sono stati parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagine]** consente di importare immagini e modificare il testo in modo dinamico in Experience Manager. È inoltre possibile configurare il componente **[!UICONTROL Modello immagine]** in modo che utilizzi i valori del contesto client, in modo che ogni utente visualizzi l&#39;immagine in modo personalizzato.
 
 Selezionare **[!UICONTROL Modifica]** per configurare il componente. È possibile configurare [impostazioni comuni a tutti i componenti di Dynamic Media Classic](#settings-common-to-all-scene-components) e altre impostazioni descritte in questa sezione.
 

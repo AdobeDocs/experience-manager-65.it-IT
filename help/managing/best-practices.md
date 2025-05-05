@@ -239,7 +239,7 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
   Prima dello sviluppo, è necessario impostare tutti i processi di supporto necessari per distribuire, rilasciare, testare e segnalare i problemi.
 
-  Consulta anche [Adobe Support Portal](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support).
+  Consulta anche [Adobe Support Portal](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support).
 
 ### Pianificazione e operazioni {#operations-planning-and-operations}
 
@@ -632,4 +632,4 @@ Sono di particolare interesse (tuttavia l’elenco non è esaustivo) anche le se
 
 * Documentazione correlata
 
-   * Adobe Experience Cloud - [Pianificazione per Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Pianificazione per Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=it)

@@ -260,7 +260,7 @@ In questo modo puoi distribuire i contenuti. Puoi vedere se una newsletter è co
 
 Per collegare una pagina creata in AEM con un messaggio e-mail di Adobe Campaign:
 
-1. Crea un messaggio e-mail basato su un modello e-mail specifico per l’AEM. Per ulteriori informazioni, consulta [Creazione di e-mail in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html).
+1. Crea un messaggio e-mail basato su un modello e-mail specifico per l’AEM. Per ulteriori informazioni, consulta [Creazione di e-mail in Adobe Campaign Standard](https://helpx.adobe.com/it/campaign/standard/channels/using/creating-an-email.html).
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

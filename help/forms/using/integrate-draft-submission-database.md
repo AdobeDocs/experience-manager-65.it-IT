@@ -26,7 +26,7 @@ L’esempio, discusso in questo documento, è un’implementazione di riferiment
 >[!NOTE]
 >
 >* Gli esempi e le configurazioni illustrate in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
->* Verifica di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per un elenco dei pacchetti disponibili, consulta l&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+>* Verifica di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per un elenco dei pacchetti disponibili, consulta l&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
 >* Il pacchetto di esempio funziona solo con azioni di invio Adaptive Forms.
 
 ## Impostare e configurare l’esempio {#set-up-and-configure-the-sample}

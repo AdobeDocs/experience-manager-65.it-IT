@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Temi di riferimento{#reference-themes}
 
-[Temi](../../forms/using/themes.md) consente di applicare uno stile ai moduli senza una conoscenza approfondita del CSS. Oltre al tema predefinito, è possibile ottenere i temi seguenti installando il [pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+[Temi](../../forms/using/themes.md) consente di applicare uno stile ai moduli senza una conoscenza approfondita del CSS. Oltre al tema predefinito, è possibile ottenere i temi seguenti installando il [pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it):
 
 * Beryl
 * Eseg
