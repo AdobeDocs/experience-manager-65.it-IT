@@ -92,7 +92,7 @@ Nella scheda **Impostazioni** specificare se consentire l&#39;applicazione di ta
 
 * **Dimensione massima file immagine allegato**
 
-  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 **&#x200B; **(2 Mb).
+  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 **&#x200B; &#x200B;**(2 Mb).
 
 * **Tipi di immagine di copertina consentiti**
 
