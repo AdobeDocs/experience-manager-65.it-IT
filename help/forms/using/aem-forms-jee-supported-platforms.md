@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
+source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
 workflow-type: tm+mt
-source-wordcount: '4177'
-ht-degree: 0%
+source-wordcount: '4370'
+ht-degree: 1%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 <div class="preview">
 
-Adobe ha rilasciato un [programma di installazione completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) con AEM 6.5 Forms Service Pack 18 (6.5.18.0) su JEE insieme ai programmi di installazione delle patch. Il programma di installazione completo supporta nuove piattaforme, mentre il programma di installazione delle patch include solo correzioni di bug.
-Se stai eseguendo una nuova installazione o stai pianificando di utilizzare il software più recente per il tuo ambiente AEM 6.5 Forms su JEE, Adobe consiglia di utilizzare [il programma di installazione completo di AEM 6.5.18.0 Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) rilasciato il 31 agosto 2023 invece del programma di installazione di AEM 6.5 Forms rilasciato l’8 aprile 2019 o di AEM 6.5.12 Forms Installer rilasciato il 3 marzo 2022.
+Adobe ha rilasciato un [programma di installazione completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) con AEM 6.5 Forms Service Pack 18 (6.5.18.0) su JEE insieme ai programmi di installazione delle patch. Il programma di installazione completo supporta nuove piattaforme, mentre il programma di installazione delle patch include solo correzioni di bug.
+Se stai eseguendo una nuova installazione o stai pianificando di utilizzare il software più recente per il tuo ambiente AEM 6.5 Forms su JEE, Adobe consiglia di utilizzare [il programma di installazione completo di AEM 6.5.18.0 Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) rilasciato il 31 agosto 2023 invece del programma di installazione di AEM 6.5 Forms rilasciato l’8 aprile 2019 o di AEM 6.5.12 Forms Installer rilasciato il 3 marzo 2022.
 
 </div>
 
@@ -169,9 +169,19 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
    <td><p>Funzione supportata</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 6.0 </p> </td>
+   <td><p> MongoDB Enterprise 6.0 (obsoleto) </p> </td>
    <td><p>Microkernel archivio</p> </td>
    <td><p>Funzione supportata</p> </td>
+  </tr>
+  <tr>
+   <td><p> MongoDB Enterprise 7.0 </p> </td>
+   <td><p>Microkernel archivio</p> </td>
+   <td><p>Funzione supportata</p> </td>
+  </tr>
+   <tr>
+   <td>Oracle Database 19c (Standard, Real Application Clusters (RAC) ed Enterprise Edition) </td>
+   <td>Archivio Microkernal </td>
+   <td>Funzione supportata</td>
   </tr>
    <tr>
    <td>Oracle Database 19c (Standard, Real Application Clusters (RAC) ed Enterprise Edition) </td>
@@ -181,9 +191,15 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
   <tr>
    <td><p>Microkernel archivio</p> </td>
    <td><p>Funzione supportata</p> </td>
+   <td></td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2019 </p> </td>
+   <td><p>Microsoft® SQL Server 2019 (obsoleto) </p> </td>
+   <td><p>Microkernel archivio</p> </td>
+   <td><p>Funzione supportata</p> </td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® SQL Server 2022 </p> </td>
    <td><p>Microkernel archivio</p> </td>
    <td><p>Funzione supportata</p> </td>
   </tr>
@@ -194,7 +210,13 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
   </tr>
   <tr>
   <tr>
-   <td>MySQL 8.0.27</td>
+   <td>MySQL 8.0.27 (obsoleto) </td>
+   <td>-</td>
+   <td>R: Supporto limitato</td>
+  </tr>
+  <tr>
+  <tr>
+   <td>MySQL 8.4</td>
    <td>-</td>
    <td>R: Supporto limitato</td>
   </tr>
@@ -228,7 +250,12 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
   </tr>
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
-   <td><p>Driver JDBC Microsoft® SQL Server 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
+   <td><p>Driver JDBC Microsoft® SQL Server 8.2.2 <br /> </p> <p>sqljdbc8.jar (obsoleto) </p> </td>
+   <td><p>Scarica dal sito web Microsoft®.</p> </td>
+  </tr>
+  <tr>
+   <td>Microsoft® SQL Server<br /> </td>
+   <td><p>Driver JDBC Microsoft® SQL Server 12.8 <br /> </p> <p>sqljdbc8.jar</p> </td>
    <td><p>Scarica dal sito web Microsoft®.</p> </td>
   </tr>
   <tr>
@@ -302,12 +329,17 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bit)</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bit) (obsoleto)</p> </td>
    <td><p>R: Supportato</p> </td>
    <td><p>Versioni minori, aggiornamenti cumulativi e aggiornamenti critici</p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bit) (obsoleto)</td>
+   <td><p>R: Supportato</p> </td>
+   <td><p>Versioni minori, aggiornamenti cumulativi e aggiornamenti critici</p> </td>
+  </tr>
+  <tr>
+   <td><p>Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 bit)</p> </td>
    <td><p>R: Supportato</p> </td>
    <td><p>Versioni minori, aggiornamenti cumulativi e aggiornamenti critici</p> </td>
   </tr>
@@ -445,7 +477,7 @@ Inoltre, considera i seguenti punti durante la scelta del software per le implem
    <td>IBM® Content Manager Server (obsoleto) </td>
    <td>8.5 Fix pack 2</td>
   </tr>
-  <tr>
+   <tr>
    <td> Client IBM® Content Manager (obsoleto)</td>
    <td>8,5 </td>
   </tr>
@@ -476,11 +508,15 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> ultima versione</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> ultima versione</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2019</td>
+   <td>Microsoft® Office 2019 (obsoleto) </td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF e TXT</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2021</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF e TXT</td>
   </tr>
   <tr>
@@ -489,6 +525,10 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
   </tr>
   <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
+   <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Publisher 2021<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
@@ -504,7 +544,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 >
 >Inoltre:
 >
->- Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html).
+>- Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html).
 >- PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
 >- L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
 >- Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio se un&#39;installazione con licenza Volume License non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
@@ -512,7 +552,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 >- PDF Generator supporta la versione a 32 bit di OpenOffice sul sistema operativo Linux®.
 >- Le conversioni PDF Generator per OpenOffice sono supportate solo su Windows e Linux®.
 >- Le funzioni PDF, Ottimizza PDF e Export PDF di OCR sono supportate solo in Windows.
->- Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. La versione in bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>- Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. La versione in bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >- Il servizio PDF Generator non supporta Microsoft® Windows 10.
 >- PDF Generator non riesce a convertire i file con Microsoft® Visio 2019.
 >- PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019.
@@ -570,8 +610,8 @@ I seguenti sottosistemi di AEM Forms non sono conformi a [508](https://www.secti
 
 Per ulteriori informazioni, vedere:
 
-- [Requisiti di sistema per una distribuzione AEM Forms su JEE per server singolo](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_it)
-- [Requisiti di sistema per una distribuzione AEM Forms in cluster su JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_it)
+- [Requisiti di sistema per una distribuzione AEM Forms su JEE per server singolo](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [Requisiti di sistema per una distribuzione AEM Forms in cluster su JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat e Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -639,6 +679,11 @@ Per ulteriori informazioni, vedere:
 - Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 - Privilegi amministrativi per l&#39;installazione di Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 o versione successiva), runtime a 32 bit
+- OpenSSL 3 (richiesto nella posizione predefinita sul sistema operativo).
+
+>[!NOTE]
+>
+> Le librerie libcrypto.so.3 e libssl.so.3 devono essere disponibili nel percorso di libreria predefinito rappresentato dalla variabile di ambiente LD_LIBRARY_PATH. Se sono installati in un percorso non standard, assicurarsi che questo percorso venga aggiunto a LD_LIBRARY_PATH prima di avviare il server.
 
 ### Browser {#browsers}
 
@@ -742,7 +787,7 @@ AEM Forms su JEE supporta aggiornamenti, patch e fix pack oltre alla versione pr
 
 ## Criteri di supporto delle patch di terze parti {#third-party-patch-support-policy}
 
-I requisiti software di terze parti per AEM Forms su JEE sono documentati nella sezione &quot;Requisiti di sistema&quot; dei rispettivi documenti di prodotto. Accedi a tutta la documentazione da [https://adobe.com/go/learn_aemforms_documentation_65_it](https://adobe.com/go/learn_aemforms_documentation_65_it) .
+I requisiti software di terze parti per AEM Forms su JEE sono documentati nella sezione &quot;Requisiti di sistema&quot; dei rispettivi documenti di prodotto. Accedi a tutta la documentazione da [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
 
 AEM Forms sulle piattaforme di riferimento di terze parti di JEE indica il livello di patch specifico dell’infrastruttura di terze parti corrente durante lo sviluppo e il rilascio di AEM Forms su JEE e il livello minimo di patch/service pack dell’infrastruttura supportata da tale versione di AEM Forms su JEE.
 
@@ -770,7 +815,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -853,7 +898,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -862,6 +907,16 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### Versione 6.5.23.0 (29 maggio 2025)
+
+| Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
+| -------------- | --------------- | ------------------- |
+| MongoDB Enterprise 7.0 | | MongoDB Enterprise 6.0 |
+| MYSQL 8.4 | | MYSQL 8.0.27 |
+| Microsoft® SQL Server 2022 | | Microsoft® SQL Server 2019 |
+| Driver JDBC Microsoft® SQL Server 12.8 | | Driver JDBC Microsoft® SQL Server 8.2 |
+| Microsoft® Office 2021 | | Microsoft® Office 2019 |
+| Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bit) |
 
 ### Versione 6.5.22.0 (29 novembre 2024)
 
