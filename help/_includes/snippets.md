@@ -16,7 +16,7 @@ ht-degree: 60%
 >* [Editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva di contenuti headless.
 >* [Editor frammenti di contenuto](/help/sites-developing/universal-editor/introduction.md) per la modifica di contenuti headless basata su modulo.
 
-## L&#39;editor universale è preferito rispetto a Mobile {#ue-over-mobile}
+## L'editor universale è preferito rispetto a Mobile {#ue-over-mobile}
 
 >[!IMPORTANT]
 >
