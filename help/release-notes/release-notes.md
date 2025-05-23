@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e1a8a73e10101a380183658d64f08a7dc5933ee0
+source-git-commit: d66d1a535ed4b1b8964139ffc5b110a5b52e32f1
 workflow-type: tm+mt
-source-wordcount: '5214'
+source-wordcount: '5315'
 ht-degree: 2%
 
 ---
@@ -193,11 +193,11 @@ Correggi i tag `<br>` imprevisti nell&#39;Editor Rich Text con la modalità Inco
 
 ### [!DNL Assets]{#assets-6523}
 
-* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, aver selezionato la cartella&#x200B;**[!UICONTROL &#x200B; Search Adobe Stock &#x200B;]**&#x200B;e aver selezionato un&#39;immagine di archivio:
+* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, aver selezionato la cartella**[!UICONTROL  Search Adobe Stock ]**e aver selezionato un&#39;immagine di archivio:
    * L&#39;immagine stock selezionata non può essere concessa in licenza e salvata perché facendo clic su **[!UICONTROL Licenza e salvataggio]** viene visualizzato un elenco a discesa vuoto.
    * Selezionando l&#39;immagine Stock o immettendo nuovamente l&#39;URL della pagina Stock, si reindirizza alla home page di [!DNL AEM], impedendo l&#39;accesso all&#39;immagine Adobe Stock. (ASSETS-48687)
 * Problemi durante la gestione delle cartelle se il nome della cartella include `/` nel nome nella pagina di navigazione locale [!DNL AEM] (6.5.22.0). (ASSETS-46740)
-* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte &#x200B;]**&#x200B;a causa di un elevato utilizzo di memoria. (ASSETS-46738)
+* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte ]**a causa di un elevato utilizzo di memoria. (ASSETS-46738)
 * Problemi di integrazione con [!DNL InDesign] come servizio `Day CQ DAM Mime Type OSGI` che identifica erroneamente [!DNL InDesign] file come `x-adobe-indesign` invece di `x-indesign`. (ASSETS-45953)
 * [!DNL AEM 6.5.21] perdita di dati della sessione rilevata nel passaggio del flusso di lavoro predefinito **[!UICONTROL Pubblicazione pianificata in Brand Portal]**. (ASSETS-44104)
 * **[!UICONTROL Memoria insufficiente]** errori visualizzati in [!DNL AEM] durante l&#39;elaborazione e la pubblicazione delle immagini. Questo problema era dovuto a metodi obsoleti nei flussi di lavoro, ad esempio **[!DNL Dam Asset update]** e **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -474,6 +474,20 @@ Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora:
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
+* **Problema con il bundle di script JSP in AEM 6.5.21-6.5.23 e AEM 6.5 LTS GA**
+AEM 6.5.21, 6.5.22, 6.5.23 e AEM 6.5 LTS GA includono il bundle `org.apache.sling.scripting.jsp:2.6.0`, che è interessato da un problema noto. Questo problema si verifica in genere in condizioni di carico elevato quando molte richieste simultanee vengono elaborate dall’istanza di AEM.
+
+Quando si verifica questo problema, è possibile che nei registri errori venga visualizzata una delle eccezioni seguenti insieme ai riferimenti a `org.apache.sling.scripting.jsp:2.6.0`:
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+Quando si verifica questo errore, l&#39;unico metodo di ripristino consiste nel riavviare l&#39;istanza di AEM.
+
+Contatta l’Assistenza clienti Adobe e fai riferimento a questa nota sulla versione per una risoluzione.
+
 * **Correlato ad Oak**
 Da Service Pack 13 e versioni successive è stato avviato il seguente log degli errori che influisce sulla cache di persistenza:
 
@@ -623,10 +637,10 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedervi, contatta il tuo account manager Adobe.
 
 * [Download del prodotto all&#39;indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/it/docs/customer-one/using/home).
+* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
