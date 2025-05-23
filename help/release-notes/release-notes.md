@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 5c1955fdf714cd82fcd8d6b23ae11cd59d8ab1a6
+source-git-commit: e1a8a73e10101a380183658d64f08a7dc5933ee0
 workflow-type: tm+mt
-source-wordcount: '5204'
+source-wordcount: '5214'
 ht-degree: 2%
 
 ---
@@ -193,11 +193,11 @@ Correggi i tag `<br>` imprevisti nell&#39;Editor Rich Text con la modalità Inco
 
 ### [!DNL Assets]{#assets-6523}
 
-* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, aver selezionato la cartella&#x200B;**[!UICONTROL &#x200B; Search Adobe Stock &#x200B;]**&#x200B;e aver selezionato un&#39;immagine di archivio:
+* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, aver selezionato la cartella**[!UICONTROL  Search Adobe Stock ]**e aver selezionato un&#39;immagine di archivio:
    * L&#39;immagine stock selezionata non può essere concessa in licenza e salvata perché facendo clic su **[!UICONTROL Licenza e salvataggio]** viene visualizzato un elenco a discesa vuoto.
    * Selezionando l&#39;immagine Stock o immettendo nuovamente l&#39;URL della pagina Stock, si reindirizza alla home page di [!DNL AEM], impedendo l&#39;accesso all&#39;immagine Adobe Stock. (ASSETS-48687)
 * Problemi durante la gestione delle cartelle se il nome della cartella include `/` nel nome nella pagina di navigazione locale [!DNL AEM] (6.5.22.0). (ASSETS-46740)
-* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte &#x200B;]**&#x200B;a causa di un elevato utilizzo di memoria. (ASSETS-46738)
+* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte ]**a causa di un elevato utilizzo di memoria. (ASSETS-46738)
 * Problemi di integrazione con [!DNL InDesign] come servizio `Day CQ DAM Mime Type OSGI` che identifica erroneamente [!DNL InDesign] file come `x-adobe-indesign` invece di `x-indesign`. (ASSETS-45953)
 * [!DNL AEM 6.5.21] perdita di dati della sessione rilevata nel passaggio del flusso di lavoro predefinito **[!UICONTROL Pubblicazione pianificata in Brand Portal]**. (ASSETS-44104)
 * **[!UICONTROL Memoria insufficiente]** errori visualizzati in [!DNL AEM] durante l&#39;elaborazione e la pubblicazione delle immagini. Questo problema era dovuto a metodi obsoleti nei flussi di lavoro, ad esempio **[!DNL Dam Asset update]** e **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -231,9 +231,7 @@ A partire da AEM 6.5 Service Pack 23, è disponibile un nuovo pacchetto aggiunti
 
 **Scarica pacchetto del componente aggiuntivo ibrido**
 
-Il pacchetto del componente aggiuntivo Ibrido è disponibile su Software Distribution ed è accessibile al pubblico quando AEM 6.5.23 viene rilasciato ufficialmente giovedì 22 maggio 2025.
-
-[Download del pacchetto del componente aggiuntivo Dynamic Media ibrido](https://author-p11553-e21065.adobeaemcloud.com/ui#/aem/assetdetails.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-dam-delivery-65-hybrid-addon-1.0.zip).
+Il pacchetto del componente aggiuntivo Ibrido è disponibile pubblicamente su Adobe Software Distribution a partire da giovedì 22 maggio 2025, con la versione ufficiale di AEM 6.5.23. Gli utenti possono trovarlo cercando **Pacchetto del componente aggiuntivo ibrido per AEM 6.5** in Distribuzione software.
 
 
 ### [!DNL Forms]{#forms-6523}
@@ -625,10 +623,10 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedervi, contatta il tuo account manager Adobe.
 
 * [Download del prodotto all&#39;indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/it/docs/customer-one/using/home).
+* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
