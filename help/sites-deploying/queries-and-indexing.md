@@ -10,9 +10,9 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3051'
 ht-degree: 1%
 
 ---
@@ -212,6 +212,10 @@ L’unico documento trovato che contiene entrambi i termini è 200, come nell’
 
 Quando vengono trovate più voci, queste vengono ordinate in base al punteggio.
 
+>[!NOTE]
+>
+>Il meccanismo di ricerca descritto in questa sezione utilizza l&#39;indicizzazione Lucene, non una corrispondenza parziale come il comando Linux `grep`.
+
 ### Indice della proprietà Lucene {#the-lucene-property-index}
 
 A partire da **Oak 1.0.8**, Lucene può essere utilizzato per creare indici che comportano vincoli di proprietà che non sono full-text.
@@ -362,13 +366,13 @@ In casi quali il caricamento di parole non significative in cui è necessario ca
 
 L&#39;indice Solr è una ricerca full-text, ma può anche essere utilizzato per indicizzare la ricerca in base al percorso, alle restrizioni di proprietà e alle restrizioni di tipo primario. Ciò significa che l’indice Solr in Oak può essere utilizzato per qualsiasi tipo di query JCR.
 
-L’integrazione nell’AEM avviene a livello di archivio, in modo che Solr sia uno dei possibili indici utilizzabili in Oak, la nuova implementazione dell’archivio fornita con AEM.
+L’integrazione in AEM avviene a livello di archivio, in modo che Solr sia uno dei possibili indici utilizzabili in Oak, la nuova implementazione dell’archivio fornita con AEM.
 
-Può essere configurato per funzionare come server remoto con l’istanza AEM.
+Può essere configurato per funzionare come server remoto con l’istanza di AEM.
 
 ### Configurazione di AEM con un unico server Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
 
-L&#39;AEM può anche essere configurato per funzionare con un&#39;istanza remota del server Solr:
+AEM può anche essere configurato per funzionare con un’istanza remota del server Solr:
 
 1. Scarica ed estrai l’ultima versione di Solr. Per ulteriori informazioni su come eseguire questa operazione, consulta la [documentazione sull&#39;installazione di Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Ora, crea due frammenti Solr. A tale scopo, creare cartelle per ogni frammento della cartella in cui è stato decompresso Solr:
@@ -431,7 +435,7 @@ L&#39;AEM può anche essere configurato per funzionare con un&#39;istanza remota
 
 #### Configurazione consigliata per Solr {#recommended-configuration-for-solr}
 
-Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le implementazioni Solr descritte in questo articolo. Consente di gestire gli indici di proprietà dedicati già presenti nell’AEM; non utilizzarli con altre applicazioni.
+Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le implementazioni Solr descritte in questo articolo. Consente di gestire gli indici di proprietà dedicati già presenti in AEM; non utilizzare con altre applicazioni.
 
 Per utilizzarlo correttamente, è necessario inserire il contenuto dell&#39;archivio direttamente nella home directory Solr. In caso di distribuzioni con più nodi, questa deve trovarsi direttamente nella cartella principale di ciascun nodo.
 
@@ -439,14 +443,14 @@ File di configurazione Solr consigliati
 
 [Ottieni file](assets/recommended-conf.zip)
 
-### Strumenti di indicizzazione AEM {#aem-indexing-tools}
+### Strumenti di indicizzazione di AEM {#aem-indexing-tools}
 
-AEM 6.1 integra anche due strumenti di indicizzazione presenti in AEM 6.0 come parte degli strumenti Adobe Consulting Services Commons:
+AEM 6.1 integra anche due strumenti di indicizzazione presenti in AEM 6.0 come parte del set di strumenti Adobe Consulting Services Commons:
 
 1. **Spiega query**, uno strumento progettato per aiutare gli amministratori a comprendere il modo in cui vengono eseguite le query;
 1. **Oak Index Manager**, interfaccia utente Web per la gestione degli indici esistenti.
 
-Ora puoi raggiungerli da **Strumenti - Operazioni - Dashboard - Diagnosi** dalla schermata di benvenuto dell&#39;AEM.
+Ora puoi raggiungerli da **Strumenti - Operazioni - Dashboard - Diagnosi** nella schermata iniziale di AEM.
 
 Per ulteriori informazioni su come utilizzarli, consulta la [documentazione di Operations Dashboard](/help/sites-administering/operations-dashboard.md).
 
@@ -478,7 +482,7 @@ Per abilitare la registrazione, devi abilitare i registri di livello **DEBUG** p
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-La categoria **com.day.cq.search** è applicabile solo se si utilizza l&#39;utilità QueryBuilder fornita dall&#39;AEM.
+La categoria **com.day.cq.search** è applicabile solo se si utilizza l&#39;utilità QueryBuilder fornita da AEM.
 
 >[!NOTE]
 >
