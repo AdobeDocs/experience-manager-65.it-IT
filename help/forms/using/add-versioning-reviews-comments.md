@@ -27,7 +27,7 @@ Guarda questo video dettagliato sulle funzioni di controllo delle versioni, comm
 
 ## Prerequisito {#prerequisite-versioning}
 
-Per utilizzare le funzioni di controllo delle versioni, inserimento di commenti e annotazioni in un modulo adattivo, assicurati che [Componenti core modulo adattivo](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sia abilitato nel tuo ambiente Forms AEM 6.5.
+Per utilizzare le funzioni di controllo delle versioni, inserimento di commenti e annotazioni in un modulo adattivo, assicurati che [Componenti core modulo adattivo](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sia abilitato nel tuo ambiente Forms AEM 6.5.
 
 ## Controllo delle versioni dei moduli adattivi {#adaptive-form-versioning}
 
