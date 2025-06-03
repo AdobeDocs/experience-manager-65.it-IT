@@ -7,16 +7,16 @@ exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
 
 # Installazione autonoma personalizzata{#custom-standalone-install}
 
-Questa sezione descrive le opzioni disponibili durante l’installazione di un’istanza AEM autonoma. È inoltre possibile leggere [Elementi di archiviazione](/help/sites-deploying/storage-elements-in-aem-6.md) per ulteriori informazioni sulla scelta del tipo di archiviazione back-end dopo l&#39;installazione di AEM 6.
+In questa sezione sono descritte le opzioni disponibili durante l’installazione di un’istanza AEM autonoma. È inoltre possibile leggere [Elementi di archiviazione](/help/sites-deploying/storage-elements-in-aem-6.md) per ulteriori informazioni sulla scelta del tipo di archiviazione back-end dopo l&#39;installazione di AEM 6.
 
 ## Modifica del numero di porta rinominando il file {#changing-the-port-number-by-renaming-the-file}
 
@@ -46,7 +46,7 @@ Esistono varie regole da seguire quando si rinomina il file jar quickstart:
 
 ### Considerazioni su Java 11 {#java-considerations}
 
-Se si esegue Oracle Java 11 (o generalmente versioni di Java più recenti di 8), è necessario aggiungere opzioni aggiuntive alla riga di comando all&#39;avvio dell&#39;AEM.
+Se esegui Oracle Java 11 (o generalmente versioni di Java più recenti di 8), è necessario aggiungere opzioni aggiuntive alla riga di comando all’avvio di AEM.
 
 * È necessario aggiungere i seguenti parametri: `-add-opens` per impedire l&#39;accesso ai messaggi di avviso di reflection correlati in `stdout.log`
 
@@ -56,7 +56,7 @@ Se si esegue Oracle Java 11 (o generalmente versioni di Java più recenti di 8),
 
 * Inoltre, è necessario utilizzare lo switch `-XX:+UseParallelGC` per attenuare eventuali problemi di prestazioni.
 
-Di seguito è riportato un esempio dell’aspetto dei parametri JVM aggiuntivi quando si avvia un AEM su Java 11:
+Di seguito è riportato un esempio dell’aspetto dei parametri JVM aggiuntivi all’avvio di AEM su Java 11:
 
 ```shell
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
@@ -68,7 +68,7 @@ Infine, se esegui un&#39;istanza aggiornata da AEM 6.3, assicurati che la seguen
 
 ## Modalità di esecuzione {#run-modes}
 
-**Modalità di esecuzione** consente di regolare l&#39;istanza AEM per uno scopo specifico, ad esempio creazione o pubblicazione, test, sviluppo, Intranet e così via. Queste modalità consentono inoltre di controllare l’utilizzo di contenuti campione. Questo contenuto di esempio viene definito prima della creazione del modulo quickstart e può includere pacchetti, configurazioni e così via. Questo può essere particolarmente utile per le installazioni pronte per la produzione quando si desidera mantenere l&#39;installazione snella e senza contenuti di esempio. Per ulteriori informazioni, consulta:
+**Modalità di esecuzione** consente di regolare l&#39;istanza di AEM per uno scopo specifico, ad esempio creazione o pubblicazione, test, sviluppo, Intranet e così via. Queste modalità consentono inoltre di controllare l’utilizzo di contenuti campione. Questo contenuto di esempio viene definito prima della creazione del modulo quickstart e può includere pacchetti, configurazioni e così via. Questo può essere particolarmente utile per le installazioni pronte per la produzione quando si desidera mantenere l&#39;installazione snella e senza contenuti di esempio. Per ulteriori informazioni, consulta:
 
 * [Modalità di esecuzione](/help/sites-deploying/configure-runmodes.md)
 
@@ -86,10 +86,6 @@ Questo è particolarmente interessante per diversi casi d’uso:
 * Se si verifica un errore, la console web e l’archivio non sono raggiungibili. Con questo è possibile inserire bundle aggiuntivi in questa directory e dovrebbero essere installati.
 * È possibile creare la cartella `crx-quickstart/install` prima dell&#39;avvio rapido e inserire pacchetti aggiuntivi.
 
->[!NOTE]
->
->Per esempi, vedere anche [Come installare automaticamente i pacchetti CRX all&#39;avvio del server](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
-
 ## Installazione e avvio di Adobe Experience Manager as a Windows Service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
@@ -98,7 +94,7 @@ Questo è particolarmente interessante per diversi casi d’uso:
 >
 >Accesso come utente con privilegi di amministratore **insufficiente**. Se non hai effettuato l&#39;accesso come Amministratore durante il completamento di questi passaggi, riceverai **errori Accesso negato**.
 
-Per installare e avviare AEM come servizio Windows:
+Per installare e avviare AEM as a Windows Service:
 
 1. Apri il file crx-quickstart\opt\helpers\instsrv.bat in un editor di testo.
 1. Se si sta configurando un server Windows a 64 bit, sostituire tutte le istanze di prunsrv con uno dei seguenti comandi, in base al sistema operativo in uso:
@@ -112,7 +108,7 @@ Per installare e avviare AEM come servizio Windows:
 
    `set jvm_options=-Xmx1792m`
 
-1. Apri il prompt dei comandi, modifica la directory corrente nella cartella crx-quickstart/opt/helpers dell’installazione AEM e immetti il comando seguente per creare il servizio:
+1. Apri Prompt dei comandi, modifica la directory corrente nella cartella crx-quickstart/opt/helpers dell’installazione di AEM e immetti il comando seguente per creare il servizio:
 
    `instsrv.bat cq5`
 
@@ -128,7 +124,7 @@ Per installare e avviare AEM come servizio Windows:
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. Il servizio è in esecuzione. L&#39;AEM viene avviato e l&#39;eseguibile prunsrv viene visualizzato in Gestione attività. Nel browser, passa a AEM, ad esempio `https://localhost:4502` per iniziare a utilizzare AEM.
+1. Il servizio è in esecuzione. AEM viene avviato e l&#39;eseguibile prunsrv viene visualizzato in Gestione attività. Nel browser, passa ad AEM, ad esempio `https://localhost:4502` per iniziare a utilizzare AEM.
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -138,13 +134,13 @@ Per installare e avviare AEM come servizio Windows:
 
 >[!NOTE]
 >
->Durante l&#39;installazione di AEM come servizio, è necessario fornire il percorso assoluto per la directory dei registri in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` da Configuration Manager.
+>Durante l&#39;installazione di AEM as service, è necessario fornire il percorso assoluto della directory dei registri in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` da Configuration Manager.
 
 Per disinstallare il servizio, fare clic su **Interrompi** nel Pannello di controllo **Servizi** oppure nella riga di comando passare alla cartella e digitare `instsrv.bat -uninstall cq5`. Il servizio viene rimosso dall&#39;elenco nel Pannello di controllo **Services** o dall&#39;elenco nella riga di comando quando si digita `net start`.
 
 ## Ridefinizione della posizione della directory di lavoro temporanea {#redefining-the-location-of-the-temporary-work-directory}
 
-Il percorso predefinito della cartella temporanea del computer Java è `/tmp`. AEM utilizza anche questa cartella, ad esempio, durante la creazione dei pacchetti.
+Il percorso predefinito della cartella temporanea del computer Java è `/tmp`. Anche AEM utilizza questa cartella, ad esempio, per la creazione di pacchetti.
 
 Se desideri modificare la posizione della cartella temporanea (ad esempio, se hai bisogno di una directory con più spazio libero), definisci un * `<new-tmp-path>`* aggiungendo il parametro JVM:
 
@@ -274,11 +270,11 @@ Log files
 
 ## Installazione di AEM nell’ambiente Amazon EC2 {#installing-aem-in-the-amazon-ec-environment}
 
-Durante l&#39;installazione di AEM in un&#39;istanza di Amazon Elastic Compute Cloud (EC2), se si installa sia Author che Publish nell&#39;istanza EC2, l&#39;istanza Author viene installata correttamente seguendo la procedura [Installazione delle istanze di AEM Manager](#installinginstancesofaemmanager); tuttavia, l&#39;istanza Publish diventa Author.
+Durante l&#39;installazione di AEM in un&#39;istanza di Amazon Elastic Compute Cloud (EC2), se si installa sia Author che Publish nell&#39;istanza EC2, l&#39;istanza Author viene installata correttamente seguendo la procedura su [Installazione delle istanze di AEM Manager](#installinginstancesofaemmanager); tuttavia, l&#39;istanza Publish diventa Author.
 
-Prima di installare l’istanza di Publish nell’ambiente EC2, effettua le seguenti operazioni:
+Prima di installare l’istanza Publish nell’ambiente EC2, effettua le seguenti operazioni:
 
-1. Decomprimi il file jar per l’istanza di Publish prima di avviare l’istanza per la prima volta. Per decomprimere il file, utilizzare il comando seguente:
+1. Decomprimi il file jar per l’istanza Publish prima di avviare l’istanza per la prima volta. Per decomprimere il file, utilizzare il comando seguente:
 
    ```xml
    java -jar quickstart.jar -unpack
@@ -296,7 +292,7 @@ Prima di installare l’istanza di Publish nell’ambiente EC2, effettua le segu
 
    >[!CAUTION]
    >
-   >Assicurati di eseguire l’istanza prima dopo averla decompressa eseguendo il comando precedente. In caso contrario, il riempimento quickstart.properties non verrà generato. Senza questo file, eventuali aggiornamenti futuri dell’AEM non riusciranno.
+   >Assicurati di eseguire l’istanza prima dopo averla decompressa eseguendo il comando precedente. In caso contrario, il riempimento quickstart.properties non verrà generato. Senza questo file, eventuali aggiornamenti futuri di AEM avranno esito negativo.
 
 1. Nella cartella **bin**, apri lo script **start** e controlla la sezione seguente:
 
@@ -330,21 +326,21 @@ Console Web.
 
 ## Azioni dopo l&#39;installazione {#actions-after-installation}
 
-Sebbene vi siano molte possibilità di configurare AEM WCM, è necessario intraprendere alcune azioni o almeno riesaminarle immediatamente dopo l’installazione:
+Sebbene esistano molte possibilità per configurare AEM WCM, è necessario eseguire alcune azioni o almeno riesaminarle immediatamente dopo l’installazione:
 
 * Consulta l&#39;[elenco di controllo protezione](/help/sites-administering/security-checklist.md) per le attività necessarie per garantire la protezione del sistema.
-* Rivedi l’elenco degli utenti e dei gruppi predefiniti installati con WCM AEM. Verificare se si desidera intervenire su altri account. Per ulteriori dettagli, vedere [Sicurezza e amministrazione utente](/help/sites-administering/security.md).
+* Rivedi l’elenco degli utenti e dei gruppi predefiniti installati con AEM WCM. Verificare se si desidera intervenire su altri account. Per ulteriori dettagli, vedere [Sicurezza e amministrazione utente](/help/sites-administering/security.md).
 
 ## Accesso a CRXDE Lite e alla console web {#accessing-crxde-lite-and-the-web-console}
 
-Una volta avviato WCM per AEM, puoi anche accedere a:
+Una volta avviato AEM WCM, puoi anche accedere a:
 
-* [CRXDE Liti](#accessing-crxde-lite) - utilizzato per accedere e gestire l&#39;archivio
+* [CRXDE Lite](#accessing-crxde-lite) - utilizzato per accedere e gestire l&#39;archivio
 * [Console web](#accessing-the-web-console): utilizzata per gestire o configurare i bundle OSGi (nota anche come console OSGi)
 
 ### Accesso a CRXDE Lite {#accessing-crxde-lite}
 
-Per aprire CRXDE Lite puoi selezionare **CRXDE Liti** dalla schermata di benvenuto o utilizzare il browser per passare a
+Per aprire CRXDE Lite puoi selezionare **CRXDE Lite** dalla schermata di benvenuto o utilizzare il browser per passare a
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -357,7 +353,7 @@ Ad esempio:
 
 #### Accesso alla console web {#accessing-the-web-console}
 
-Per accedere alla console Web di Adobe CQ puoi selezionare **Console OSGi** dalla schermata di benvenuto o utilizzare il browser per passare a
+Per accedere alla console Web Adobe CQ, seleziona **Console OSGi** dalla schermata di benvenuto o utilizza il browser per passare a
 
 ```
  https://<host>:<port>/system/console
@@ -380,12 +376,12 @@ Per informazioni su come risolvere i problemi che possono verificarsi durante l&
 
 ## Disinstallazione di Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
-Poiché l&#39;AEM viene installato in un&#39;unica directory, non è necessario utilizzare un&#39;utilità di disinstallazione. La disinstallazione può essere semplice come l&#39;eliminazione dell&#39;intera directory di installazione, anche se il modo in cui si disinstalla AEM dipende da cosa si desidera ottenere e quale storage persistente si utilizza.
+Poiché AEM viene installato in un&#39;unica directory, non è necessaria un&#39;utilità di disinstallazione. La disinstallazione può essere semplice come l’eliminazione dell’intera directory di installazione, anche se il modo in cui disinstalli AEM dipende da cosa desideri ottenere e da quale archiviazione persistente utilizzi.
 
 Se l&#39;archiviazione persistente è incorporata nella directory di installazione, ad esempio nell&#39;installazione TarPM predefinita, l&#39;eliminazione delle cartelle comporta anche la rimozione dei dati.
 
 >[!NOTE]
 >
->L’Adobe consiglia vivamente di eseguire il backup dell’archivio prima di eliminare l’AEM. Se si elimina l&#39;intero &lt;cq-installation-directory>, l&#39;archivio verrà eliminato. Per conservare i dati del repository prima dell&#39;eliminazione, spostare o copiare la cartella &lt;cq-installation-directory>/crx-quickstart/repository altrove prima di eliminare le altre cartelle.
+>Adobe consiglia vivamente di eseguire il backup dell’archivio prima di eliminare AEM. Se si elimina l&#39;intero &lt;cq-installation-directory>, l&#39;archivio verrà eliminato. Per conservare i dati del repository prima dell&#39;eliminazione, spostare o copiare la cartella &lt;cq-installation-directory>/crx-quickstart/repository altrove prima di eliminare le altre cartelle.
 
-Se l’installazione dell’AEM utilizza uno storage esterno, ad esempio un server di database, la rimozione della cartella non rimuove automaticamente i dati, ma rimuove la configurazione di archiviazione, rendendo difficile il ripristino del contenuto JCR.
+Se l’installazione di AEM utilizza un archivio esterno, ad esempio un server di database, la rimozione della cartella non rimuove automaticamente i dati, ma rimuove la configurazione di archiviazione, rendendo difficile il ripristino del contenuto JCR.
