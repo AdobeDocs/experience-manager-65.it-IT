@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
+source-git-commit: 0dca00759fc37a2bc095a5a6e74f6b1b79f9eb76
 workflow-type: tm+mt
 source-wordcount: '3651'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -60,11 +60,11 @@ Adobe consiglia queste configurazioni e fornisce supporto completo come parte de
    <td>Descrizione<br /> </td>
   </tr>
   <tr>
-   <td><strong>R: Supportato</strong></td>
+   <td><strong>A: supportato</strong></td>
    <td>Adobe fornisce supporto e manutenzione completi per questa configurazione. Questa configurazione è coperta dal processo di controllo qualità di Adobe.</td>
   </tr>
   <tr>
-   <td><strong>R: Supporto limitato</strong></td>
+   <td><strong>R: supporto limitato</strong></td>
    <td>Per garantire il successo dei progetti dei clienti, Adobe fornisce supporto completo nell’ambito di un programma di supporto limitato, che richiede il rispetto di condizioni specifiche. Il supporto a livello R richiede una richiesta formale del cliente e una conferma da parte di Adobe. Per ulteriori informazioni, contatta l’Assistenza clienti di Adobe.</td>
   </tr>
  </tbody>
@@ -74,7 +74,7 @@ Adobe consiglia queste configurazioni e fornisce supporto completo come parte de
 
 | Livello di supporto | Descrizione |
 |---|---|
-| **Z: non supportato** | Configurazione non supportata. Adobe non fornisce istruzioni sul funzionamento o meno della configurazione e non la supporta. |
+| **Z: non supportato** | La configurazione non è supportata. Adobe non fornisce istruzioni sul funzionamento o meno della configurazione e non la supporta. |
 
 ## Piattaforme supportate {#supported-platforms}
 
@@ -114,11 +114,12 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 
 | **Piattaforma** | **Descrizione** | **Livello di supporto** |
 |---|---|---|
-| **File system con file TAR** `[1]` | Archivio | R: Supportato |
-| **File system con archivio dati** `[1]` | Binari | R: Supportato |
+| **File system con file TAR** `[1]` | Archivio | A: supportato |
+| **File system con archivio dati** `[1]` | Binari | A: supportato |
 | Archivia file binari in file TAR nel file system `[1]` | Binari | Z: non supportato per la produzione |
-| Amazon S3 | Binari | R: Supportato |
-| Archiviazione BLOB di Microsoft® Azure | Binari | R: Supportato |
+| Amazon S3 | Binari | A: supportato |
+| Archiviazione BLOB di Microsoft® Azure | Binari | A: supportato |
+| MongoDB Enterprise 7.0 | Archivio | R: Supportato `[3, 4]` |
 | MongoDB Enterprise 6.0 | Archivio | R: Supportato `[3, 4]` |
 | MongoDB Enterprise 5.0 | Archivio | R: Supportato `[3, 4]` |
 | MongoDB Enterprise 4.4 | Archivio | R: Supportato `[2, 3, 4, 7]` |
@@ -127,10 +128,10 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 | MongoDB Enterprise 3.6 | Archivio | Z: non supportato |
 | MongoDB Enterprise 3.4 | Archivio | Z: non supportato |
 | IBM® DB2® 10.5 | Archivio e database Forms | R: Supporto limitato `[5]` |
-| Oracle Database 12c (12.1.x) | Archivio e database Forms | R: Supporto limitato |
-| Microsoft® SQL Server 2016 | Database Forms | R: Supportato |
-| **Apache Lucene (predefinito Quickstart)** | Servizio di ricerca | R: Supportato |
-| Apache Solr | Servizio di ricerca | R: Supportato |
+| Oracle Database 12c (12.1.x) | Archivio e database Forms | R: supporto limitato |
+| Microsoft® SQL Server 2016 | Database Forms | A: supportato |
+| **Apache Lucene (predefinito Quickstart)** | Servizio di ricerca | A: supportato |
+| Apache Solr | Servizio di ricerca | A: supportato |
 
 1. &#39;File system&#39; include l&#39;archiviazione dei blocchi compatibile con POSIX. Include la tecnologia di storage in rete. Tieni presente che le prestazioni del file system potrebbero variare e influenzare le prestazioni complessive. Caricare AEM di prova con il file system remoto/di rete.
 1. Le versioni 4.2 e 4.4 di MongoDB Enterprise richiedono almeno AEM 6.5 SP9.
@@ -177,7 +178,7 @@ La versione minima dell’API Servlet richiesta è Servlet 3.1
 
 | Platform | Livello di supporto |
 |---|---|
-| **Motore servlet integrato Quickstart (Jetty 9.4)** | R: Supportato |
+| **Motore servlet integrato Quickstart (Jetty 9.4)** | A: supportato |
 | Server Oracle WebLogic 12.2 (12cR2) | Z: non supportato |
 | IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) con Web Profile 7.0 e IBM® JRE 1.8 | R: Supporto limitato per i nuovi contratti `[2]` |
 | IBM® WebSphere® Application Server 9.0 e IBM® JRE 1.8 | R: Supporto limitato per i nuovi contratti `[1]` `[2]` |
@@ -200,14 +201,14 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | **Linux®, basato sulla distribuzione Red Hat®** | R: Supportato `[1]` `[3]` |
 | Linux®, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[1]` `[2]` |
 | Linux®, basato sulla distribuzione SUSE® | R: Supportato `[1]` |
-| Microsoft® Windows Server 2022 | R: Supporto limitato |
+| Microsoft® Windows Server 2022 | R: supporto limitato |
 | Microsoft® Windows Server 2019 `[4]` | R: Supporto limitato per i nuovi contratti `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Supporto limitato per i nuovi contratti `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: non supportato |
 | Oracle Solaris™ 11 | Z: non supportato |
 | IBM® AIX® 7.2 | Z: non supportato |
 
-1. Kernel Linux® 2.6, 3. x, 4. x, 5. x e 6. x include derivati dalla distribuzione Red Hat®, tra cui Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®. Le funzioni del componente aggiuntivo AEM Forms sono supportate solo su CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
+1. Kernel Linux® 2.6, 3. x, 4. x, 5. x e 6. x include derivati dalla distribuzione Red Hat®, tra cui Red Hat® Enterprise Linux®, Oracle Linux® e Amazon Linux®. Le funzioni del componente aggiuntivo AEM Forms sono supportate solo su Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
 1. AEM Forms è supportato su Ubuntu 20.04 LTS.
 1. Distribuzione Linux® supportata da Adobe Managed Services.
 
@@ -253,14 +254,14 @@ Per consigli su come distribuire AEM su Azure o AWS, al di fuori di Adobe Manage
 
 ### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=it). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
+Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
 Con Dispatcher versione 4.3.2 sono supportati i seguenti server web:
 
 | Platform | Livello di supporto |
 |---|---|
-| **Apache httpd 2.4.x** `[1,2]` | R: Supportato |
-| Microsoft® IIS 10 (Internet Information Server) | R: Supportato |
+| **Apache httpd 2.4.x** `[1,2]` | A: supportato |
+| Microsoft® IIS 10 (Internet Information Server) | A: supportato |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: non supportato |
 
 1. I server web generati in base al codice sorgente httpd di Apache supportano sia la versione di httpd su cui si basa. In caso di dubbi, chiedere ad Adobe di confermare il livello di supporto relativo al rispettivo prodotto server. I seguenti casi:
@@ -293,13 +294,13 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
   </tr>
   <tr>
    <td><strong>Google Chrome (Evergreen)</strong></td>
-   <td>R: Supportato</td>
-   <td>R: Supportato</td>
+   <td>A: supportato</td>
+   <td>A: supportato</td>
   </tr>
   <tr>
    <td>Microsoft® Edge (Evergreen)</td>
-   <td>R: Supportato</td>
-   <td>R: Supportato</td>
+   <td>A: supportato</td>
+   <td>A: supportato</td>
   </tr>
   <tr>
    <td>Microsoft® Internet Explorer 11</td>
@@ -308,18 +309,18 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
   </tr>
   <tr>
    <td>Mozilla Firefox (Evergreen)</td>
-   <td>R: Supportato</td>
-   <td>R: Supportato</td>
+   <td>A: supportato</td>
+   <td>A: supportato</td>
   </tr>
   <tr>
    <td>Mozilla Firefox ultimo ESR [1]</td>
-   <td>R: Supportato</td>
-   <td>R: Supportato</td>
+   <td>A: supportato</td>
+   <td>A: supportato</td>
   </tr>
   <tr>
    <td>Apple Safari su macOS (Evergreen)</td>
-   <td>R: Supportato</td>
-   <td>R: Supportato</td>
+   <td>A: supportato</td>
+   <td>A: supportato</td>
   </tr>
   <tr>
    <td>Apple Safari 11.x su macOS</td>
@@ -339,7 +340,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
  </tbody>
 </table>
 
-1. Supporto esteso per Firefox [Ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Supporto esteso per Firefox [Ulteriori informazioni su mozilla.org](https://www.mozilla.org/it-IT/firefox/enterprise/)
 1. supporto per Apple iPad
 
 ### Browser supportati per i siti Web {#supported-browsers-for-websites}
@@ -401,7 +402,7 @@ I seguenti requisiti hardware sono applicabili sia per Linux® che per Windows:
 
 Se utilizzi Dynamic Media su Linux®, è necessario soddisfare i seguenti prerequisiti:
 
-* Red Hat® Enterprise 7 o CentOS 7 e versioni successive con le ultime patch di correzione
+* Red Hat® Enterprise 7 e versioni successive con le ultime patch di correzione
 * Sistema operativo a 64 bit
 * Scambio disabilitato (consigliato)
 * SELinux disabilitato (vedi nota che segue)
@@ -465,11 +466,11 @@ Per Windows x86:
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> ultima versione</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> ultima versione</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> ultima versione (obsoleto)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> ultima versione (obsoleto)</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -517,7 +518,7 @@ Per Windows x86:
 >
 >Inoltre,
 >
->* Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html).
+>* Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html).
 >* PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
 >* L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
 >* Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio se un&#39;installazione con licenza Volume License non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
@@ -525,7 +526,7 @@ Per Windows x86:
 >* PDF Generator non supporta Microsoft® Office 365.
 >* Le conversioni PDF Generator per OpenOffice sono supportate solo su Windows e Linux®.
 >* Le funzioni PDF, Ottimizza PDF e Export PDF di OCR sono supportate solo in Windows.
->* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. Accedi a livello di programmazione alla versione in bundle solo con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. Accedi a livello di programmazione alla versione in bundle solo con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* Il servizio PDF Generator non supporta Microsoft® Windows 10.
 >* PDF Generator non riesce a convertire i file con Microsoft® Visio 2019.
 >* PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019.
