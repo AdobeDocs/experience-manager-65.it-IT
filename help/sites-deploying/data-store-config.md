@@ -8,7 +8,7 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '3461'
 ht-degree: 1%
@@ -27,11 +27,11 @@ Utilizzando la configurazione OSGi è possibile configurare sia gli archivi dati
 
 Per configurare sia l’archivio nodi che l’archivio dati, effettua le seguenti operazioni:
 
-1. Copiare il file JAR quickstart dell&#39;AEM nella relativa directory di installazione.
+1. Copia il file JAR quickstart di AEM nella relativa directory di installazione.
 1. Creare una cartella `crx-quickstart/install` nella directory di installazione.
 1. Innanzitutto, configurare l&#39;archivio nodi creando un file di configurazione con il nome dell&#39;opzione dell&#39;archivio nodi che si desidera utilizzare nella directory `crx-quickstart/install`.
 
-   Ad esempio, l&#39;archivio dei nodi Document (che è la base per l&#39;implementazione di MongoMK da parte dell&#39;AEM) utilizza il file `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
+   L&#39;archivio nodi Document, ad esempio, che è la base per l&#39;implementazione di AEM MongoMK, utilizza il file `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
 
 1. Modifica il file e imposta le opzioni di configurazione.
 1. Crea un file di configurazione con il PID dell’archivio dati che desideri utilizzare. Modificate il file per impostare le opzioni di configurazione.
@@ -52,18 +52,18 @@ Per configurare sia l’archivio nodi che l’archivio dati, effettua le seguent
 
 ### Archivio nodi segmento {#segment-node-store}
 
-L’archivio dei nodi di segmento è la base dell’implementazione TarMK di Adobe nell’AEM6. Utilizza il PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` per la configurazione.
+L’archivio dei nodi di segmento è la base dell’implementazione TarMK di Adobe in AEM6. Utilizza il PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` per la configurazione.
 
 >[!CAUTION]
 >
->Il PID per l&#39;archivio dei nodi di segmento è cambiato da `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` di AEM 6 a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` nell&#39;AEM 6.3. Assicurati di apportare le regolazioni di configurazione necessarie per riflettere questa modifica.
+>Il PID per l&#39;archivio dei nodi di segmento è stato modificato da `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` di AEM 6 a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3. Assicurati di apportare le regolazioni di configurazione necessarie per riflettere questa modifica.
 
 Puoi configurare le seguenti opzioni:
 
 * `repository.home`: percorso della home del repository in cui vengono archiviati i dati relativi al repository. Per impostazione predefinita, i file dei segmenti vengono memorizzati nella directory `crx-quickstart/segmentstore`.
 
 * `tarmk.size`: dimensione massima di un segmento in MB. Il valore massimo predefinito è 256 MB.
-* `customBlobStore`: valore booleano che indica l&#39;utilizzo di un archivio dati personalizzato. Il valore predefinito è true per AEM 6.3 e versioni successive. Prima di AEM 6.3 il valore predefinito era falso.
+* `customBlobStore`: valore booleano che indica l&#39;utilizzo di un archivio dati personalizzato. Il valore predefinito è true per AEM 6.3 e versioni successive. Prima di AEM 6.3, il valore predefinito era false.
 
 Di seguito è riportato un esempio di file `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
@@ -80,7 +80,7 @@ customBlobStore=B"true"
 
 #### Archivio nodi documento {#document-node-store}
 
-L’archivio dei nodi di documenti è la base dell’implementazione MongoMK dell’AEM. Utilizza il PID `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`*. Sono disponibili le seguenti opzioni di configurazione:
+L’archivio dei nodi di documento è la base dell’implementazione MongoMK di AEM. Utilizza il PID `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`*. Sono disponibili le seguenti opzioni di configurazione:
 
 * `mongouri`: [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necessario per connettersi al database Mongo. Il valore predefinito è `mongodb://localhost:27017`
 
@@ -137,13 +137,13 @@ Sono disponibili le seguenti opzioni di configurazione:
 
 ## Archivio dati Amazon S3 {#amazon-s-data-store}
 
-L’AEM può essere configurato per memorizzare i dati nel servizio di archiviazione semplice (S3) di Amazon. Utilizza il PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` per la configurazione.
+AEM può essere configurato per archiviare i dati nel servizio di archiviazione semplice (S3) di Amazon. Utilizza il PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` per la configurazione.
 
 >[!NOTE]
 >
->AEM 6.5 supporta la memorizzazione di dati in Amazon S3, tuttavia il supporto non è esteso alla memorizzazione di dati in altre piattaforme, i cui fornitori possono avere le proprie implementazioni delle API S3 di Amazon.
+>AEM 6.5 supporta la memorizzazione di dati in Amazon S3, tuttavia il supporto non è esteso alla memorizzazione di dati in altre piattaforme, i cui fornitori possono disporre di implementazioni proprie delle API S3 di Amazon.
 
-Per abilitare la funzionalità di archiviazione dati di S3, è necessario scaricare e installare un feature pack contenente il connettore S3 Datastore. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e scarica la versione più recente dalle versioni 1.10.x del feature pack (ad esempio, com.adobe.granite.oak.s3connector-1.10.0.zip). Inoltre, devi scaricare e installare il service pack AEM più recente come elencato nella pagina [Note sulla versione di AEM 6.5](/help/release-notes/release-notes.md).
+Per abilitare la funzionalità di archiviazione dati di S3, è necessario scaricare e installare un feature pack contenente il connettore S3 Datastore. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e scarica la versione più recente dalle versioni 1.10.x del feature pack (ad esempio, com.adobe.granite.oak.s3connector-1.10.0.zip). È inoltre necessario scaricare e installare il service pack di AEM più recente come elencato nella pagina [Note sulla versione di AEM 6.5](/help/release-notes/release-notes.md).
 
 >[!NOTE]
 >
@@ -191,9 +191,9 @@ Una volta scaricato, puoi installare e configurare il connettore S3 come segue:
 
 Per effettuare l’aggiornamento a una nuova versione del connettore 1.10.x S3 (ad esempio, da 1.10.0 a 1.10.4), effettua le seguenti operazioni:
 
-1. Arresta l’istanza AEM.
+1. Arresta l’istanza di AEM.
 
-1. Passare a `<aem-install>/crx-quickstart/install/15` nella cartella di installazione dell&#39;AEM e creare un backup del contenuto.
+1. Passa a `<aem-install>/crx-quickstart/install/15` nella cartella di installazione di AEM e crea un backup del relativo contenuto.
 1. Dopo il backup, eliminare la versione precedente del connettore S3 e le relative dipendenze eliminando tutti i file jar nella cartella `<aem-install>/crx-quickstart/install/15`, ad esempio:
 
    * **oak-blob-cloud-1.6.1.jar**
@@ -205,8 +205,8 @@ Per effettuare l’aggiornamento a una nuova versione del connettore 1.10.x S3 (
 
 1. Scarica la versione più recente del feature pack 1.10.x dall&#39;[archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Decomprimere il contenuto in una cartella separata, quindi passare a `jcr_root/libs/system/install/15`.
-1. Copia i file jar in **&lt;aem-install>**/crx-quickstart/install/15 nella cartella di installazione dell&#39;AEM.
-1. Avviare AEM e verificare la funzionalità del connettore.
+1. Copia i file jar in **&lt;aem-install>**/crx-quickstart/install/15 nella cartella di installazione di AEM.
+1. Avvia AEM e controlla la funzionalità del connettore.
 
 Puoi utilizzare il file di configurazione con le opzioni descritte di seguito.
 
@@ -242,7 +242,7 @@ Puoi utilizzare il file di configurazione con le opzioni descritte di seguito.
 | maxConnections | Imposta il numero massimo di connessioni HTTP aperte consentite. | 50 | No. |
 | maxErrorRetry | Imposta il numero massimo di tentativi per le richieste non riuscite (recuperabili). | 3 | No. |
 | minRecordLength | Dimensione minima (in byte) di un oggetto da archiviare nell&#39;archivio dati. | 16384 | No. |
-| percorso | Percorso locale dell’archivio dati dell’AEM. | `crx-quickstart/repository/datastore` | No. |
+| percorso | Percorso locale dell’archivio dati di AEM. | `crx-quickstart/repository/datastore` | No. |
 | proxyHost | Impostare l&#39;host proxy opzionale tramite cui il client si connette. | | No. |
 | proxyPort | Impostare la porta proxy opzionale attraverso la quale il client si connette. | | No. |
 | s3Bucket | Nome del bucket S3. | | Sì |
@@ -343,7 +343,7 @@ Per configurare la replica senza binari con S3, sono necessari i seguenti passag
 
    `java -jar cq-quickstart.jar -unpack`
 
-1. Dopo aver decompresso AEM, creare una cartella nella directory di installazione *crx-quickstart*/*install*.
+1. Dopo aver decompresso AEM, creare una cartella all&#39;interno della directory di installazione *crx-quickstart*/*install*.
 
 1. Crea questi due file nella cartella `crx-quickstart`:
 
@@ -359,7 +359,7 @@ Per configurare la replica senza binari con S3, sono necessari i seguenti passag
 
    `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
-1. Ripetere i passaggi da 1 a 4 per la seconda istanza di AEM.
+1. Ripeti i passaggi da 1 a 4 per la seconda istanza di AEM.
 1. Avvia la seconda istanza di AEM.
 
 #### Configurazione di un archivio dati condiviso {#configuring-a-shared-data-store}
@@ -389,12 +389,12 @@ Per configurare la replica senza binari con S3, sono necessari i seguenti passag
    >[https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
    >
-   >È necessario utilizzare versioni diverse dello strumento, a seconda della versione di Oak utilizzata con l’installazione dell’AEM. Prima di utilizzare lo strumento, controlla l’elenco dei requisiti delle versioni riportato di seguito:
+   >È necessario utilizzare versioni diverse dello strumento a seconda della versione di Oak utilizzata con l’installazione di AEM. Prima di utilizzare lo strumento, controlla l’elenco dei requisiti delle versioni riportato di seguito:
    >
    >
    >
    >    * Per le versioni di Oak **1.2.x** utilizza l&#39;Oak-run **1.2.12 o successiva**
-   >    * Per le versioni di Oak **più recenti di quelle precedenti**, utilizza la versione di Oak-run che corrisponde al core Oak dell&#39;installazione AEM.
+   >    * Per le versioni di Oak **più recenti di quelle precedenti**, utilizza la versione di Oak-run che corrisponde al core Oak dell&#39;installazione di AEM.
    >
    >
 
@@ -409,13 +409,13 @@ Per configurare la replica senza binari con S3, sono necessari i seguenti passag
 
 ## Archivio dati Azure {#azure-data-store}
 
-L’AEM può essere configurato per archiviare i dati nel servizio di archiviazione Azure di Microsoft®. Utilizza il PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` per la configurazione.
+AEM può essere configurato per archiviare i dati nel servizio di archiviazione Azure di Microsoft®. Utilizza il PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` per la configurazione.
 
-Per abilitare la funzionalità dell’archivio dati di Azure, è necessario scaricare e installare un feature pack contenente il connettore di Azure. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e scarica la versione più recente dalle versioni 1.6.x del feature pack (ad esempio, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Per abilitare la funzionalità dell’archivio dati di Azure, è necessario scaricare e installare un feature pack contenente il connettore di Azure. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e scarica la versione più recente dalle versioni 1.6.x del pacchetto di funzionalità (ad esempio, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
->Quando si utilizza l’AEM con TarMK, i file binari vengono memorizzati per impostazione predefinita in FileDataStore. Per utilizzare TarMK con Azure DataStore, è necessario avviare AEM utilizzando la modalità di esecuzione `crx3tar-nofds`, ad esempio:
+>Quando si utilizza AEM con TarMK, i file binari vengono memorizzati per impostazione predefinita in FileDataStore. Per utilizzare TarMK con Azure DataStore, è necessario avviare AEM utilizzando la modalità di esecuzione `crx3tar-nofds`, ad esempio:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -426,7 +426,7 @@ Una volta scaricato, puoi installare e configurare il connettore Azure come segu
 1. Estrai il contenuto del file zip del feature pack in una cartella temporanea.
 
 1. Passare alla cartella temporanea e copiare il contenuto di `jcr_root/libs/system/install` nella cartella `<aem-install>crx-quickstart/install`.
-1. Se AEM è già configurato per l&#39;utilizzo con l&#39;archiviazione Tar o MongoDB, rimuovere tutti i file di configurazione esistenti dalla cartella `/crx-quickstart/install` prima di procedere. I file che devono essere rimossi sono:
+1. Se AEM è già configurato per funzionare con l&#39;archiviazione Tar o MongoDB, rimuovere tutti i file di configurazione esistenti dalla cartella `/crx-quickstart/install` prima di procedere. I file che devono essere rimossi sono:
 
    Per MongoMK:
 
@@ -445,7 +445,7 @@ Puoi utilizzare il file di configurazione con le seguenti opzioni:
 * azureSas=&quot;&quot;: nella versione 1.6.3 del connettore è stato aggiunto il supporto per la firma di accesso condiviso di Azure. **Se nel file di configurazione sono presenti sia le credenziali SAS che le credenziali di archiviazione, SAS ha la priorità.** Per ulteriori informazioni sulle associazioni di protezione, vedere la [documentazione ufficiale](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Assicurati che il carattere &#39;=&#39; sia di escape come &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: l&#39;endpoint BLOB di Azure. Ad esempio, https://&lt;account di archiviazione>.blob.core.windows.net.
-* accessKey=&quot;&quot;: nome dell&#39;account di archiviazione. Per ulteriori dettagli sulle credenziali di autenticazione di Microsoft® Azure, vedere la [documentazione ufficiale](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: nome dell&#39;account di archiviazione. Per ulteriori dettagli sulle credenziali di autenticazione di Microsoft® Azure, vedere la [documentazione ufficiale](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: la chiave di accesso all’archiviazione. Assicurati che il carattere &#39;=&#39; sia di escape come &#39;\=&#39;.
 * container=&quot;&quot;: nome del contenitore di archiviazione BLOB di Microsoft® Azure. Il contenitore è un raggruppamento di un insieme di BLOB. Per ulteriori dettagli, consulta la [documentazione ufficiale](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
@@ -501,9 +501,9 @@ Per eseguire la raccolta di oggetti inattivi dell’archivio dati:
 >
 >Se utilizzi una configurazione dell’archivio dati condiviso e la raccolta di oggetti inattivi dell’archivio dati è disabilitata, l’esecuzione dell’attività di pulizia binaria di Lucene può improvvisamente aumentare lo spazio su disco utilizzato. Prova a disabilitare BlobTracker su tutte le istanze di authoring e pubblicazione effettuando le seguenti operazioni:
 >
->1. Interrompi l’istanza AEM.
+>1. Arresta l’istanza di AEM.
 >2. Aggiungi il parametro `blobTrackSnapshotIntervalInSecs=L"0"` nel file `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Questo parametro richiede Oak 1.12.0, 1.10.2 o versione successiva.
->3. Riavvia l’istanza AEM.
+>3. Riavvia l’istanza di AEM.
 
 Con le versioni più recenti di AEM, la raccolta di oggetti inattivi dell’archivio dati può essere eseguita anche sugli archivi dati condivisi da più di un archivio. Per poter eseguire la raccolta di oggetti inattivi dell’archivio dati in un archivio dati condiviso, effettua le seguenti operazioni:
 

@@ -1,24 +1,24 @@
 ---
-title: Configurazione delle integrazioni IMS per l’AEM
-description: Scopri come impostare le integrazioni IMS per l’AEM
+title: Configurazione delle integrazioni IMS per AEM
+description: Scopri come impostare le integrazioni IMS per AEM
 feature: Security
 role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
-# Configurazione delle integrazioni IMS per l’AEM {#setting-up-ims-integrations-for-aem}
+# Configurazione delle integrazioni IMS per AEM {#setting-up-ims-integrations-for-aem}
 
 
 >[!NOTE]
 >
 >I clienti Adobe utilizzano [Adobe Developer Console](https://developer.adobe.com/console) per generare credenziali che consentono l&#39;accesso a varie API. È possibile scegliere tra vari tipi di credenziali, da server a server OAuth ad applicazione a pagina singola. Il tipo di credenziali Account di servizio (JWT) è ora obsoleto, in favore delle credenziali server-to-server OAuth con Service Pack 20. Questa modifica può essere riportata ai Service Pack precedenti, a partire da Service Pack 11 fino a Service Pack 20 con l&#39;utilizzo di un hotfix che puoi [scaricare](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
-Adobe Experience Manager (AEM) può essere integrato con molte altre soluzioni Adobi. Ad esempio, Adobe Target, Adobe Analytics e altre.
+Adobe Experience Manager (AEM) può essere integrato con molte altre soluzioni Adobe. Ad esempio, Adobe Target, Adobe Analytics e altre.
 
 Le integrazioni utilizzano un’integrazione IMS, configurata con OAuth S2S.
 
@@ -50,11 +50,11 @@ Per informazioni dettagliate su come eseguire questa configurazione, consulta la
 
 * Creazione di nuove credenziali OAuth:
 
-   * [Guida all’implementazione delle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [Guida all’implementazione delle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Migrazione di una credenziale JWT esistente a una credenziale OAuth:
 
-   * [Migrazione dalle credenziali dell’account di servizio (JWT) alle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [Migrazione dalle credenziali dell’account di servizio (JWT) alle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 Ad esempio:
 
@@ -68,7 +68,7 @@ Per creare una nuova integrazione Adobe IMS utilizzando OAuth:
 
 1. Seleziona **Crea**.
 
-1. Completa la configurazione in base ai dettagli di [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Ad esempio:
+1. Completa la configurazione in base ai dettagli di [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation). Ad esempio:
 
    ![Crea configurazione OAuth](assets/ims-create-oauth-configuration.png)
 

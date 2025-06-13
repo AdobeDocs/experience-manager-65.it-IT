@@ -10,7 +10,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >Questo documento descrive come personalizzare le console nella moderna interfaccia touch e non si applica all’interfaccia classica.
 
-AEM fornisce vari meccanismi per consentirti di personalizzare le console (e la [funzionalità di authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)) della tua istanza di authoring.
+AEM offre diversi meccanismi per consentirti di personalizzare le console (e la funzionalità di [authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)) dell&#39;istanza di authoring.
 
 * Clientlibs
 Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare una libreria client personalizzata in `/apps.`. Ad esempio, può contenere il codice necessario per il componente personalizzato.
@@ -64,7 +64,7 @@ Ad esempio, è possibile sovrapporre la seguente posizione all&#39;interno della
 
 >[!NOTE]
 >
->Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch dell&#39;AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
+>Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935).
 
 ## Personalizzazione della vista predefinita per una console {#customizing-the-default-view-for-a-console}
 
@@ -94,7 +94,7 @@ Puoi personalizzare la vista predefinita (colonna, scheda, elenco) per una conso
 
 ### Aggiungi nuova azione alla barra degli strumenti {#add-new-action-to-the-toolbar}
 
-1. Puoi creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un&#39;azione **Promuovi al Twitter** in:
+1. Puoi creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un&#39;azione **Promuovi a Twitter** in:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -151,7 +151,6 @@ Per personalizzare le colonne nella vista a elenco:
 1. Facoltativamente:
 
    * Se si desidera inserire dati aggiuntivi, è necessario scrivere un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-
      Proprietà `pageInfoProviderType`.
 
    Ad esempio, consulta la classe/bundle allegato (da GitHub) di seguito.

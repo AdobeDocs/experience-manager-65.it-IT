@@ -10,7 +10,7 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 3%
@@ -56,8 +56,8 @@ Questi aiutano uno sviluppatore a:
 >
 >Consulta:
 >
->* Articolo della Knowledge Base, [Risoluzione dei problemi relativi all&#39;interfaccia utente touch dell&#39;AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), per ulteriori suggerimenti e strumenti.
->* Sessione AEM Gems relativa alla [modalità sviluppatore AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=it).
+>* Articolo della Knowledge Base, [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), per ulteriori suggerimenti e strumenti.
+>* Sessione AEM Gems su [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Apertura modalità sviluppatore {#opening-developer-mode}
@@ -125,7 +125,7 @@ Ogni voce di componente può mostrare (ad esempio):
 
 Si spera che la scheda **Errori** sia sempre vuota (come sopra), ma quando si verificano problemi vengono visualizzati i dettagli seguenti per ciascun componente:
 
-* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Lite.
+* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato in CRXDE Lite.
 * Un avviso se il componente apre una sessione di amministrazione.
 
 Ad esempio, in una situazione in cui viene chiamato un metodo non definito, l&#39;errore risultante viene visualizzato nella scheda **Errori**:
@@ -138,6 +138,6 @@ Anche la voce del componente nella struttura della scheda Componenti verrà cont
 
 >[!CAUTION]
 >
->In AEM 6.2, le funzioni di test della modalità Sviluppatore sono state reimplementate come applicazione per strumenti standalone.
+>In AEM 6.2, le funzioni di test della modalità Sviluppatore sono state reimplementate come applicazione per strumenti autonoma.
 >
 >Per informazioni dettagliate, consulta [Verifica dell&#39;interfaccia utente](/help/sites-developing/hobbes.md).

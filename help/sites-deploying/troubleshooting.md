@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi di installazione con AEM
-description: Questo articolo descrive alcuni dei problemi di installazione che potrebbero verificarsi con AEM.
+description: Questo articolo descrive alcuni dei problemi di installazione che potresti incontrare con AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,16 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
 
 # Risoluzione dei problemi di installazione con AEM{#troubleshooting}
 
-Questa sezione include informazioni dettagliate sui registri disponibili per aiutarti a risolvere eventuali problemi e informazioni su alcuni dei problemi che potresti riscontrare con l’AEM.
+AEM Questa sezione include informazioni dettagliate sui registri disponibili per aiutarti a risolvere eventuali problemi e informazioni su alcuni di essi.
 
 ## Risolvere i problemi relativi alle prestazioni dell&#39;autore {#troubleshoot-author-performance}
 
@@ -38,7 +38,7 @@ AEM registra registri dettagliati che è possibile configurare per la risoluzion
 
 ## Utilizzo dell&#39;opzione Dettagliato {#using-the-verbose-option}
 
-Quando si avvia AEM WCM, è possibile aggiungere l&#39;opzione -v (verbose) alla riga di comando come in: java -jar cq-wcm-quickstart-&lt;versione>.jar -v.
+Quando si avvia AEM WCM, è possibile aggiungere l’opzione -v (dettagliata) alla riga di comando come in: java -jar cq-wcm-quickstart-&lt;versione>.jar -v.
 
 L’opzione dettagliata visualizza parte dell’output del registro Quickstart sulla console, in modo che possa essere utilizzato per la risoluzione dei problemi.
 
@@ -55,8 +55,8 @@ Poiché i file jar utilizzano il formato ZIP onnipresente, alcuni programmi di a
 Per risolvere i problemi, effettuare le seguenti operazioni:
 
 * Verifica di avere installato almeno Java™ versione 1.6.
-* Provare un menu di scelta rapida (in genere facendo clic con il pulsante destro del mouse) su Quickstart di WCM AEM e selezionare &quot;Apri con....&quot;
-* Verificare se Java™ o Sun Java™ è presente nell&#39;elenco e provare a eseguire con esso AEM WCM. Se hai installato più versioni di Java™, seleziona quella supportata.
+* Prova un menu contestuale (in genere con un clic con il pulsante destro del mouse) su AEM WCM Quickstart e seleziona &quot;Apri con&quot;....
+* Verifica se Java™ o Sun Java™ è elencato e prova a eseguire AEM WCM con esso. Se hai installato più versioni di Java™, seleziona quella supportata.
 
   Se si esegue questo passaggio e il sistema operativo in uso offre l&#39;opzione di utilizzare sempre il programma selezionato per eseguire i file .jar, selezionarlo. D’ora in poi il doppio clic dovrebbe funzionare.
 
@@ -67,20 +67,20 @@ Per risolvere i problemi, effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it).
+>Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
 La stessa CRX ha un ingombro di memoria ridotto. Se l’applicazione in esecuzione in CRX ha requisiti di memoria più elevati o richiede operazioni che richiedono molta memoria (ad esempio, transazioni di grandi dimensioni), l’istanza JVM in cui viene eseguito CRX deve essere avviata con le impostazioni di memoria appropriate.
 
-Utilizza le opzioni di comando Java™ per definire le impostazioni di memoria della JVM (ad esempio, java -Xmx512m -jar crx&ast;.jar per impostare heapsize su 512 MB).
+Utilizza le opzioni di comando Java™ per definire le impostazioni di memoria della JVM (ad esempio, java -Xmx512m -jar crx&amp;ast;.jar per impostare heapsize su 512 MB).
 
-Specificare l&#39;opzione di impostazione della memoria durante l&#39;avvio di AEM WCM dalla riga di comando. È inoltre possibile modificare gli script di avvio/arresto di WCM AEM o gli script personalizzati per la gestione dell&#39;avvio di WCM AEM per definire le impostazioni di memoria richieste.
+Specificare l&#39;opzione di impostazione della memoria durante l&#39;avvio di AEM WCM dalla riga di comando. È inoltre possibile modificare gli script di avvio/arresto di AEM WCM o gli script personalizzati per la gestione dell&#39;avvio di AEM WCM per definire le impostazioni di memoria richieste.
 
 Se hai già definito l’heapsize su 512 MB, puoi analizzare ulteriormente il problema della memoria creando un’immagine heap.
 
 Per creare automaticamente un’immagine heap quando la memoria è esaurita, utilizza il comando seguente:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Questo metodo genera un file dell&#39;immagine heap (**java_...hprof**) ogni volta che il processo esaurisce la memoria. Il processo può continuare a essere eseguito dopo la generazione dell’immagine heap.
 
@@ -97,21 +97,21 @@ Questi possono essere confrontati per vedere le modifiche e come gli oggetti usa
 >
 >Se raccogli regolarmente tali informazioni o hai esperienza nella lettura delle immagini heap, un file dell’immagine heap può essere sufficiente per analizzare il problema.
 
-### La schermata iniziale dell’AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
+### La schermata iniziale di AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
-In determinate situazioni, le schermate di benvenuto di WCM per AEM non vengono visualizzate automaticamente anche se l’archivio stesso è in esecuzione correttamente. Questo problema può dipendere dalla configurazione del sistema operativo, dalla configurazione del browser o da fattori simili.
+In alcune situazioni, le schermate di benvenuto di AEM WCM non vengono visualizzate automaticamente anche se l’archivio stesso è in esecuzione correttamente. Questo problema può dipendere dalla configurazione del sistema operativo, dalla configurazione del browser o da fattori simili.
 
-Il sintomo comune è che nella finestra QuickStart per WCM per AEM viene visualizzato &quot;Avvio di WCM per AEM in attesa dell’avvio del server&quot;.... Se il messaggio viene visualizzato per un periodo di tempo relativamente lungo, immettere manualmente l&#39;URL WCM AEM nella finestra del browser, utilizzando la porta 4502 predefinita o la porta su cui è in esecuzione l&#39;istanza: http://localhost:4502/.
+Il sintomo comune è che nella finestra AEM WCM Quickstart viene visualizzato &quot;Avvio di AEM WCM in corso, in attesa dell’avvio del server&quot;.... Se il messaggio viene visualizzato per un periodo di tempo relativamente lungo, immetti manualmente l’URL di AEM WCM nella finestra del browser utilizzando la porta 4502 predefinita o la porta su cui è in esecuzione l’istanza: http://localhost:4502/.
 
 Inoltre, i registri possono rivelare il motivo per cui il browser non si avvia.
 
-A volte, la finestra Quickstart di WCM AEM ha il messaggio &quot;WCM AEM in esecuzione su http://localhost:port/&quot; e il browser non si avvia automaticamente. In questo caso, fai clic sull’URL nella finestra QuickStart di AEM WCM (si tratta di un collegamento ipertestuale) o immetti manualmente l’URL nel browser.
+A volte, nella finestra AEM WCM Quickstart viene visualizzato il messaggio &quot;AEM WCM in esecuzione su http://localhost:port/&quot; e il browser non si avvia automaticamente. In questo caso, fai clic sull’URL nella finestra AEM WCM Quickstart (si tratta di un collegamento ipertestuale) o immetti manualmente l’URL nel browser.
 
 Se tutto il resto non funziona, controlla i registri per scoprire cosa è successo.
 
 ### Il sito web non viene caricato o ha esito negativo a intermittenza con Java™ 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
 
-Esiste un problema noto con l’AEM 6.5 in esecuzione su Java™ 11, in cui il sito web potrebbe non venire caricato o non riuscire a intermittenza.
+Si è verificato un problema noto con AEM 6.5 in esecuzione su Java™ 11, a causa del quale il sito web potrebbe non venire caricato o non funzionare in modo intermittente.
 
 Se si verifica questo problema, eseguire le operazioni seguenti:
 
@@ -138,23 +138,18 @@ Per informazioni dettagliate, consulta i passaggi *Distribuisci applicazione Web
 
 ### La dimensione dell’intestazione di risposta può essere maggiore di 4 KB {#response-header-size-can-be-greater-than-kb}
 
-Gli errori 502 possono indicare che il server web non è in grado di gestire le dimensioni dell’intestazione di risposta HTTP AEM. L’AEM può generare intestazioni di risposta HTTP che includono cookie di dimensioni superiori a 4 KB. Assicurati che il contenitore del servlet sia configurato in modo che la dimensione massima dell’intestazione di risposta possa superare i 4 KB.
+Gli errori 502 possono indicare che il server web non può gestire le dimensioni dell’intestazione di risposta HTTP di AEM. AEM può generare intestazioni di risposta HTTP che includono cookie di dimensioni superiori a 4 KB. Assicurati che il contenitore del servlet sia configurato in modo che la dimensione massima dell’intestazione di risposta possa superare i 4 KB.
 
 Ad esempio, per Tomcat 7.0, l&#39;attributo maxHttpHeaderSize del [connettore HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controlla le limitazioni relative alla dimensione dell&#39;intestazione.
 
 ## Disinstallazione di Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
-Poiché l&#39;AEM viene installato in un&#39;unica directory, non è necessario utilizzare un&#39;utilità di disinstallazione. La disinstallazione può essere semplice come l&#39;eliminazione dell&#39;intera directory di installazione, anche se il modo in cui si disinstalla AEM dipende da cosa si desidera ottenere e quale storage persistente si utilizza.
+Poiché AEM viene installato in un&#39;unica directory, non è necessaria un&#39;utilità di disinstallazione. La disinstallazione può essere semplice come l’eliminazione dell’intera directory di installazione, anche se il modo in cui disinstalli AEM dipende da cosa desideri ottenere e da quale archiviazione persistente utilizzi.
 
 Se l&#39;archiviazione persistente è incorporata nella directory di installazione, ad esempio nell&#39;installazione TarPM predefinita, l&#39;eliminazione delle cartelle comporta anche la rimozione dei dati.
 
 >[!NOTE]
 >
->L’Adobe consiglia di eseguire il backup dell’archivio prima di eliminare l’AEM. Se si elimina l&#39;intero &lt;cq-installation-directory>, verrà eliminato anche l&#39;archivio. Per conservare i dati del repository prima dell&#39;eliminazione, spostare o copiare la cartella &lt;cq-installation-directory>/crx-quickstart/repository altrove prima di eliminare le altre cartelle.
+>Adobe consiglia di eseguire il backup dell’archivio prima di eliminare AEM. Se si elimina l&#39;intero &lt;cq-installation-directory>, verrà eliminato anche l&#39;archivio. Per conservare i dati del repository prima dell&#39;eliminazione, spostare o copiare la cartella &lt;cq-installation-directory>/crx-quickstart/repository altrove prima di eliminare le altre cartelle.
 
-Se l’installazione dell’AEM utilizza uno storage esterno, ad esempio un server di database, la rimozione della cartella non rimuove automaticamente i dati, ma rimuove la configurazione di archiviazione, rendendo difficile il ripristino del contenuto JCR.
-
-### I file JSP non sono compilati su JBoss® {#jsp-files-are-not-compiled-on-jboss}
-
-Se installi o aggiorni i file JSP per l’Experience Manager su JBoss® e i servlet corrispondenti non vengono compilati, assicurati che il compilatore JSP JBoss® sia configurato correttamente. Per informazioni, vedere
-[Problemi di compilazione JSP nell&#39;articolo JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
+Se l’installazione di AEM utilizza un archivio esterno, ad esempio un server di database, la rimozione della cartella non rimuove automaticamente i dati, ma rimuove la configurazione di archiviazione, rendendo difficile il ripristino del contenuto JCR.

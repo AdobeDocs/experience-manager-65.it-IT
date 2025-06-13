@@ -9,16 +9,16 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
 # Registrazione{#logging}
 
-L’AEM ti offre la possibilità di configurare:
+AEM offre la possibilità di configurare:
 
 * parametri globali per il servizio di registrazione centrale
 * richiedere la registrazione dei dati; una configurazione di registrazione specializzata per le informazioni sulla richiesta
@@ -32,17 +32,13 @@ Sono tutte [configurazioni OSGi](/help/sites-deploying/configuring-osgi.md).
 
 ## Registrazione globale {#global-logging}
 
-[Configurazione registrazione Sling Apache](/help/sites-deploying/osgi-configuration-settings.md) utilizzata per configurare il logger radice. Questo definisce le impostazioni globali per l’accesso all’AEM:
+[Configurazione registrazione Sling Apache](/help/sites-deploying/osgi-configuration-settings.md) utilizzata per configurare il logger radice. Questo definisce le impostazioni globali per l’accesso ad AEM:
 
 * livello di registrazione
 * posizione del file di registro centrale
 * il numero di versioni da conservare
 * rotazione delle versioni; dimensione massima o intervallo di tempo
 * formato da utilizzare per la scrittura dei messaggi di registro
-
->[!NOTE]
->
->Questo [articolo della Knowledge Base](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) spiega come ruotare i file request.log e access.log.
 
 ## Logger e writer per singoli servizi {#loggers-and-writers-for-individual-services}
 
@@ -57,7 +53,7 @@ Oltre alle impostazioni di registrazione globali, AEM consente di configurare im
 
 In questo modo è possibile canalizzare i messaggi di registro per un singolo servizio in un file separato. Ciò può essere particolarmente utile durante lo sviluppo o il test; ad esempio, quando è necessario un livello di registro aumentato per un servizio specifico.
 
-AEM utilizza quanto segue per scrivere i messaggi di registro nel file:
+AEM utilizza quanto segue per scrivere i messaggi di registro su un file:
 
 1. Un servizio **OSGi** (logger) scrive un messaggio di registro.
 1. Un **Logger** accetta questo messaggio e lo formatta in base alle tue specifiche.
@@ -83,7 +79,7 @@ Questi elementi sono collegati dai seguenti parametri per gli elementi appropria
 
 ### Logger e writer standard {#standard-loggers-and-writers}
 
-Alcuni Logger e Writer sono inclusi in un&#39;installazione AEM standard.
+Alcuni logger e writer sono inclusi in un’installazione standard di AEM.
 
 Il primo è un caso speciale in quanto controlla sia i file `request.log` che `access.log`:
 

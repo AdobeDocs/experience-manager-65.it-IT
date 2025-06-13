@@ -10,9 +10,9 @@ exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 59%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 59%
 >
 >Poiché l’interfaccia classica è stata rimossa in AEM 6.4, il contenuto di questa pagina non è stato aggiornato per WCAG 2.1.
 >
->Per informazioni dettagliate relative a AEM e WCAG 2.1, consulta le pagine seguenti:
+>Per informazioni dettagliate su AEM e WCAG 2.1, consulta le pagine seguenti:
 >
 >* [AEM e le linee guida per l&#39;accessibilità dei contenuti web](/help/managing/web-accessibility.md)
 >* [Guida rapida alle linee guida WCAG 2.1](/help/managing/qg-wcag.md)
@@ -93,7 +93,7 @@ Il campo **Testo alternativo** è disponibile nella scheda **Avanzate** delle pr
 
 ![Finestra di dialogo per modifica del componente Immagine nell&#39;interfaccia classica; mostra il campo Testo alternativo.](assets/chlimage_1-17a.png)
 
-Per impostazione predefinita, AEM aggiunge **Testo alternativo** alle immagini. Nell&#39;interfaccia classica sono disponibili due scenari diversi per la creazione dell&#39;attributo predefinito, anche se il valore predefinito potrebbe non essere sufficiente come alternativa e probabilmente dovrà essere modificato nella scheda **Avanzate** delle proprietà dell&#39;immagine:
+Per impostazione predefinita, AEM aggiunge un **Testo alternativo** alle immagini. Nell&#39;interfaccia classica sono disponibili due scenari diversi per la creazione dell&#39;attributo predefinito, anche se il valore predefinito potrebbe non essere sufficiente come alternativa e probabilmente dovrà essere modificato nella scheda **Avanzate** delle proprietà dell&#39;immagine:
 
 * File:
 
@@ -126,7 +126,7 @@ Esistono varie forme di contenuti non testuali, di conseguenza il valore del tes
 * Se il contenuto non testuale è contenuto in un elemento pulsante e non è presente testo che fa parte dello stesso pulsante, il testo alternativo dell’immagine deve indicare la funzionalità del pulsante e non descrivere l’immagine.
 * È accettabile che a un’immagine venga assegnato testo alternativo vuoto (null), ma solo se l’immagine non ha testo alternativo. Si tratta ad esempio di un elemento grafico puramente decorativo. Oppure, se il testo equivalente è già presente nel testo della pagina.
 
-[Bozza W3C: tecniche HTML5 per fornire alternative testuali utili](https://html.spec.whatwg.org/multipage/images.html#alt) contiene ulteriori dettagli ed esempi di disposizioni testuali alternative appropriate per immagini di tipi diversi.
+La bozza [W3C: tecniche HTML5 per fornire alternative testuali utili](https://html.spec.whatwg.org/multipage/images.html#alt) contiene ulteriori dettagli ed esempi di disposizioni testuali alternative appropriate per immagini di tipi diversi.
 
 Tipi specifici di contenuto non testuale che richiedono alternative testuali potrebbero includere:
 
@@ -156,7 +156,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
   >
   >Lo snippet di cui sopra viene utilizzato solo per illustrare l’ordine. Utilizza il componente **Immagine** anziché il riferimento a `img src` utilizzato in precedenza.
 
-  In AEM è possibile utilizzare una combinazione dei campi **Testo alternativo** e **Descrizione** nella finestra di dialogo di configurazione dell&#39;immagine, come in [Come soddisfare il criterio - Contenuto non testuale (1.1.1)](#how-to-meet-non-text-content).
+  In AEM puoi utilizzare una combinazione dei campi **Testo alternativo** e **Descrizione** nella finestra di dialogo di configurazione dell&#39;immagine, come in [Come soddisfare il criterio: contenuto non testuale (1.1.1)](#how-to-meet-non-text-content).
 
 * Mappe, diagrammi, diagrammi di flusso:
 
@@ -233,7 +233,7 @@ Fornire queste informazioni in un formato diverso, ad esempio testo (o audio per
 >
 >Se il contenuto audio o video viene fornito come alternativa a contenuto esistente in un altro formato su una pagina web, non è necessario seguire i requisiti di cui sopra. Ad esempio, se un video illustra un elenco di istruzioni di testo, questo video non richiede un’alternativa in quanto le istruzioni di testo già agiscono come un’alternativa al video.
 
-Inserire contenuti multimediali, in particolare contenuti di Flash, nelle pagine Web AEM è simile a inserire un’immagine. Tuttavia, poiché i contenuti multimediali sono molto più di un fermo immagine, esistono varie impostazioni e opzioni diverse per controllare la riproduzione dei contenuti multimediali.
+L&#39;inserimento di contenuti multimediali, in particolare contenuti Flash, nelle pagine Web AEM è simile all&#39;inserimento di un&#39;immagine. Tuttavia, poiché i contenuti multimediali sono molto più di un fermo immagine, esistono varie impostazioni e opzioni diverse per controllare la riproduzione dei contenuti multimediali.
 
 >[!NOTE]
 >
@@ -312,7 +312,7 @@ I dettagli precisi sulle modalità di creazione di video con descrizione audio v
 
 * [Comprendere i criteri di successo 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Come soddisfare i criteri di successo 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/it/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Sottotitoli (dal vivo) (1.2.4)    {#captions-live}
 
@@ -328,12 +328,11 @@ Questo criterio di successo è identico a [Sottotitoli (preregistrati)](#caption
 
 Segui le indicazioni fornite per [Sottotitoli (preregistrati)](#captions-pre-recorded) qui sopra. Tuttavia, data la natura live dei media, i sottotitoli dovranno essere creati il più rapidamente possibile e in risposta a ciò che sta accadendo. Pertanto, è consigliabile utilizzare strumenti per la creazione di sottotitoli in tempo reale o di sintesi vocale.
 
-Istruzioni dettagliate al riguardo vanno oltre l&#39;ambito di questo documento, ma informazioni utili sono reperibili tramite le risorse seguenti:
+Istruzioni dettagliate vanno oltre lo scopo di questo documento, ma la risorsa seguente fornisce informazioni utili:
 
 * [WebAIM: aggiunta di sottotitoli in tempo reale](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (University of Washington): i sottotitoli possono essere generati automaticamente utilizzando il riconoscimento vocale?](https://www.washington.edu/doit/programs/accessit?1209)
 
-#### Ulteriori informazioni - Sottotitoli (dal vivo) (1.2.4)  {#more-information-captions-live}
+#### Ulteriori informazioni - Sottotitoli (in tempo reale) (1.2.4)  {#more-information-captions-live}
 
 * [Comprendere i criteri di successo 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Come soddisfare i criteri di successo 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
@@ -381,7 +380,7 @@ Questo criterio di successo esiste per garantire che tali informazioni struttura
 
 #### Come soddisfare il criterio - Informazioni e correlazioni (1.3.1)  {#how-to-meet-info-and-relationships}
 
-L’AEM semplifica la creazione di pagine web utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell&#39;editor Rich Text (un componente testo) e utilizza il menu **Formato** per specificare l&#39;elemento strutturale appropriato (ad esempio paragrafo e intestazione).
+AEM semplifica la creazione di pagine web utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell&#39;editor Rich Text (un componente testo) e utilizza il menu **Formato** per specificare l&#39;elemento strutturale appropriato (ad esempio paragrafo e intestazione).
 
 Nell&#39;immagine seguente viene illustrato il testo a cui è stato applicato lo stile di testo paragrafo. Nella vista del codice sorgente in uso vengono visualizzati i tag di apertura e chiusura &lt;p> e &lt;/p> corretti.
 
@@ -391,7 +390,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
 * **Utilizzando i titoli:**  
 
-  Se le funzioni di accessibilità dell&#39;editor Rich Text sono abilitate (vedere [AEM e accessibilità](/help/sites-administering/rte-accessible-content.md)), l&#39;AEM offre tre livelli di intestazione di pagina. Puoi utilizzarli per identificare sezioni e sottosezioni di contenuto. Titolo 1 rappresenta il livello di intestazione più alto, Titolo 3 quello più basso. L’amministratore di sistema può configurare il sistema per consentire l’utilizzo di più livelli di intestazione.
+  Se le funzioni di accessibilità dell&#39;editor Rich Text sono abilitate (vedi [AEM e accessibilità](/help/sites-administering/rte-accessible-content.md)), AEM offre tre livelli di intestazione di pagina. Puoi utilizzarli per identificare sezioni e sottosezioni di contenuto. Titolo 1 rappresenta il livello di intestazione più alto, Titolo 3 quello più basso. L’amministratore di sistema può configurare il sistema per consentire l’utilizzo di più livelli di intestazione.
 
   Nell&#39;immagine seguente viene illustrato un esempio dei diversi tipi di intestazione.
 
@@ -423,7 +422,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
      Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
 
-  Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell&#39;esempio precedente che mostra come viene immesso il testo di paragrafo, gli elementi di elenco appropriati vengono aggiunti automaticamente al HTML, ma è possibile visualizzarli nella visualizzazione di modifica dell&#39;origine.
+  Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell&#39;esempio precedente che mostra come viene immesso il testo di paragrafo, gli elementi di elenco appropriati vengono aggiunti automaticamente al HTML, ma è possibile visualizzarli nella vista di modifica dell&#39;origine.
 
   >[!NOTE]
   >
@@ -431,7 +430,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
 * **Usa tabelle**:
 
-  Le tabelle di dati devono essere identificate utilizzando gli elementi di tabella HTML:
+  Le tabelle di dati devono essere identificate utilizzando gli elementi di tabella di HTML:
 
    * un elemento `<table>`
    * un elemento `<tr>` per ogni riga della tabella
@@ -506,7 +505,7 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
   >[!NOTE]
   >
-  >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, delle regole HTML e del serializzatore.
+  >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, delle regole di HTML e del serializzatore.
 
 #### Ulteriori informazioni - Informazioni e correlazioni (1.3.1)  {#more-information-info-and-relationships}
 
@@ -758,7 +757,7 @@ Questo criterio di successo consente a tutti gli utenti, indipendentemente da ev
 
 Quando crei una nuova pagina HTML in AEM, puoi specificare il titolo della pagina. Assicurati che il titolo descriva adeguatamente il contenuto della pagina, in modo che i visitatori possano identificare rapidamente se il contenuto è pertinente alle loro esigenze.
 
-È inoltre possibile modificare il titolo della pagina durante la modifica, accessibile da **Sidekick** - **Scheda Pagina** - **Proprietà pagina...**
+È inoltre possibile modificare il titolo della pagina durante la modifica, accessibile da **Sidekick** - **Pagina** - **Proprietà pagina...**
 
 #### Ulteriori informazioni - Titolazione della pagina (2.4.2) {#more-information-page-titled}
 

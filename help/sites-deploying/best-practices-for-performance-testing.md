@@ -9,9 +9,9 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-I test delle prestazioni sono una parte importante di qualsiasi implementazione dell’AEM. A seconda dei requisiti dei clienti, è possibile eseguire test delle prestazioni sulle istanze di pubblicazione, di authoring o entrambe.
+Il test delle prestazioni è una parte importante di qualsiasi implementazione di AEM. A seconda dei requisiti dei clienti, è possibile eseguire test delle prestazioni sulle istanze di pubblicazione, di authoring o entrambe.
 
-Questa documentazione illustra strategie generali e metodologie per l’esecuzione di test delle prestazioni e alcuni degli strumenti resi disponibili da Adobe per facilitare la procedura. Infine, leggi un’analisi degli strumenti disponibili in AEM 6 per facilitare l’ottimizzazione delle prestazioni, sia dal punto di vista dell’analisi del codice che della configurazione del sistema.
+Questa documentazione illustra strategie generali e metodologie per l’esecuzione di test delle prestazioni e alcuni degli strumenti resi disponibili da Adobe per facilitare il processo. Infine, leggi un’analisi degli strumenti disponibili in AEM 6 per facilitare l’ottimizzazione delle prestazioni, sia dal punto di vista dell’analisi del codice che della configurazione del sistema.
 
 ### Simulazione della realtà {#simulating-reality}
 
@@ -30,11 +30,11 @@ Quando esegui i test delle prestazioni, accertati di simulare il più possibile 
 
 * Contenuti simili alla produzione
 
-Molte misurazioni delle prestazioni nell’AEM, come il tempo di risposta alle query, possono essere influenzate dalle dimensioni del contenuto sul sistema. È importante assicurarsi che l’ambiente di test disponga di una copia dei dati di produzione il più simile possibile.
+Molte misurazioni delle prestazioni in AEM, come il tempo di risposta delle query, possono essere influenzate dalle dimensioni del contenuto sul sistema. È importante assicurarsi che l’ambiente di test disponga di una copia dei dati di produzione il più simile possibile.
 
 * Codice di produzione
 
-La versione dell’AEM e gli hotfix implementati in produzione devono essere gli stessi nell’ambiente di test. È inoltre importante eseguire il test sulla versione del codice distribuita in produzione.
+La versione di AEM e gli hotfix distribuiti in produzione devono essere gli stessi nell’ambiente di test. È inoltre importante eseguire il test sulla versione del codice distribuita in produzione.
 
 * Configurazione di rete e hardware simile alla produzione
 
@@ -54,12 +54,10 @@ Sul mercato sono disponibili molti strumenti di test delle prestazioni. Quando s
 
 #### Strumenti di test {#testing-tools}
 
-* Lo strumento **Giorno difficile** di Adobe può essere utilizzato per generare il carico sulle istanze AEM e raccogliere i dati sulle prestazioni. Il team di progettazione AEM di Adobe utilizza lo strumento per eseguire il test di carico del prodotto AEM stesso. Gli script eseguiti in Giornata difficile vengono configurati tramite file di proprietà e file XML JMX. Per ulteriori informazioni, consulta la [documentazione del giorno difficile](/help/sites-developing/tough-day.md).
+* Lo strumento **Giorno difficile** di Adobe può essere utilizzato per generare il carico sulle istanze di AEM e raccogliere i dati sulle prestazioni. Il team di progettazione AEM di Adobe utilizza lo strumento per eseguire test di carico del prodotto AEM stesso. Gli script eseguiti in Giornata difficile vengono configurati tramite file di proprietà e file XML JMX. Per ulteriori informazioni, consulta la [documentazione del giorno difficile](/help/sites-developing/tough-day.md).
 
 * AEM fornisce strumenti predefiniti per visualizzare rapidamente query, richieste e messaggi di errore problematici. Per ulteriori informazioni, vedere la sezione [Strumenti di diagnostica](/help/sites-administering/operations-dashboard.md#diagnosis-tools) della documentazione del dashboard operazioni.
 * Apache fornisce un prodotto denominato **JMeter** che può essere utilizzato per il test delle prestazioni e del carico e per il comportamento funzionale. È un software open-source e libero da usare, ma ha un set di funzioni più piccolo rispetto ai prodotti aziendali e una curva di apprendimento più ripida. JMeter è disponibile sul sito web di Apache all&#39;indirizzo [https://jmeter.apache.org/](https://jmeter.apache.org/)
-
-* **Load Runner** è un prodotto di test del carico di livello Enterprise. È disponibile una versione di valutazione gratuita. Ulteriori informazioni sono disponibili all&#39;indirizzo [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
 * È inoltre possibile utilizzare strumenti di test del caricamento del sito Web come [Vercara](https://vercara.com/website-performance-management).
 * Quando si esegue il test di siti web mobili o reattivi, è necessario utilizzare un set di strumenti separato. Funzionano limitando la larghezza di banda della rete, simulando connessioni mobili più lente come 3G o EDGE. Tra gli strumenti più utilizzati vi sono:
@@ -75,11 +73,11 @@ La documentazione di [Monitoraggio delle prestazioni](/help/sites-deploying/moni
 
 **Modalità sviluppatore nell&#39;interfaccia utente touch**
 
-Una delle nuove funzioni nell’interfaccia utente touch di AEM 6 è la Modalità sviluppatore. Così come gli autori possono passare dalla modalità di modifica a quella di anteprima, gli sviluppatori possono passare alla modalità sviluppatore nell’interfaccia utente di authoring. In questo modo puoi visualizzare il tempo di rendering per ciascuno dei componenti della pagina e le tracce dello stack di eventuali errori. Per ulteriori informazioni sulla modalità sviluppatore, consulta questa [presentazione CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=it).
+Una delle nuove funzioni nell’interfaccia utente touch di AEM 6 è la Modalità sviluppatore. Così come gli autori possono passare dalla modalità di modifica a quella di anteprima, gli sviluppatori possono passare alla modalità sviluppatore nell’interfaccia utente di authoring. In questo modo puoi visualizzare il tempo di rendering per ciascuno dei componenti della pagina e le tracce dello stack di eventuali errori. Per ulteriori informazioni sulla modalità sviluppatore, consulta questa [presentazione CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Utilizzo di rlog.jar per leggere i registri di richiesta**
 
-Per un&#39;analisi più completa dei log delle richieste su un sistema AEM, è possibile utilizzare `rlog.jar` per eseguire ricerche e ordinare i file `request.log` generati dall&#39;AEM. Questo file jar è incluso in un&#39;installazione AEM nella cartella `/crx-quickstart/opt/helpers`. Per ulteriori informazioni sullo strumento rlog e sul log delle richieste generale, vedere la documentazione [Monitoraggio e manutenzione](/help/sites-deploying/monitoring-and-maintaining.md).
+Per un&#39;analisi più completa dei log delle richieste su un sistema AEM, è possibile utilizzare `rlog.jar` per eseguire ricerche e ordinare i file `request.log` generati da AEM. Questo file jar è incluso in un&#39;installazione AEM nella cartella `/crx-quickstart/opt/helpers`. Per ulteriori informazioni sullo strumento rlog e sul log delle richieste generale, vedere la documentazione [Monitoraggio e manutenzione](/help/sites-deploying/monitoring-and-maintaining.md).
 
 **Strumento Explain Query**
 
@@ -108,7 +106,7 @@ Sui sistemi con backend MongoDB, AEM fornisce diversi [JMX](/help/sites-administ
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Per la cache denominata **Document-Diff**, la frequenza di hit deve essere superiore a `.90`. Se la percentuale di hit scende al di sotto del 90%, è probabile che sia necessario modificare la configurazione di `DocumentNodeStoreService`. Il supporto di prodotto di Adobe può consigliare impostazioni ottimali per il tuo ambiente.
+Per la cache denominata **Document-Diff**, la frequenza di hit deve essere superiore a `.90`. Se la percentuale di hit scende al di sotto del 90%, è probabile che sia necessario modificare la configurazione di `DocumentNodeStoreService`. Il supporto tecnico per i prodotti Adobe può consigliare le impostazioni ottimali per il tuo ambiente.
 
 * Mbean **Statistiche Archivio Oak**. È accessibile direttamente da:
 
@@ -120,7 +118,7 @@ La sezione **ObservationQueueMaxLength** mostra il numero di eventi nella coda d
 1. Inseriscilo nella cartella /crx--quickstart/install.
 
 >[!NOTE]
->Vedere [AEM 6.x | Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
+>Consulta [AEM 6.x | Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
 
 L’impostazione predefinita è 10.000, ma la maggior parte delle distribuzioni deve portarla a 20.000 o 50.000.
 
@@ -134,7 +132,7 @@ La parte più importante di una distribuzione che deve essere sottoposta a test 
 
 La maggior parte dei siti web di produzione dispone di ottimizzazioni come il caching di Dispatcher e una rete per la distribuzione dei contenuti. Durante il test, assicurati che queste ottimizzazioni siano disponibili anche per l’ambiente di test. Oltre a monitorare i tempi di risposta per gli utenti finali, monitora le metriche di sistema sui server di pubblicazione e sui dispatcher per garantire che il sistema non sia vincolato dalle risorse hardware.
 
-Su un sistema che non richiede un livello elevato di personalizzazione, Dispatcher deve memorizzare in cache la maggior parte delle richieste. Di conseguenza, il carico sull’istanza Publish dovrebbe rimanere relativamente piatto. Se è necessario un alto livello di personalizzazione, si consiglia di utilizzare tecnologie come iFrame o le richieste AJAX per i contenuti personalizzati, per consentire il maggior numero possibile di memorizzazione in cache di Dispatcher.
+Su un sistema che non richiede un livello elevato di personalizzazione, Dispatcher deve memorizzare in cache la maggior parte delle richieste. Di conseguenza, il carico sull’istanza Publish dovrebbe rimanere relativamente piatto. Se è necessario un alto livello di personalizzazione, si consiglia di utilizzare tecnologie come iFrame o le richieste di AJAX per i contenuti personalizzati, per consentire il più possibile il caching in Dispatcher.
 
 Per i test di base, Apache Bench può essere utilizzato per misurare i tempi di risposta del server web e aiutare a creare un carico per misurare elementi come le perdite di memoria. Vedi l&#39;esempio nella [documentazione sul monitoraggio](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
@@ -146,7 +144,7 @@ Dopo aver eseguito i test delle prestazioni sull’istanza di authoring, è nece
 * Analizza le query con esecuzione lenta con lo strumento [Prestazioni query](/help/sites-administering/operations-dashboard.md#query-performance)
 
 * Controllare il registro degli errori per individuare eventuali errori o avvisi. Per ulteriori informazioni, vedere [Registrazione](/help/sites-deploying/configure-logging.md).
-* Monitorare le risorse hardware di sistema come l&#39;utilizzo della memoria e della CPU, l&#39;I/O del disco o l&#39;I/O di rete. Queste risorse sono spesso la causa dei colli di bottiglia delle prestazioni.
+* Monitorare le risorse hardware di sistema come memoria e utilizzo del CPU, I/O su disco o I/O di rete. Queste risorse sono spesso la causa dei colli di bottiglia delle prestazioni.
 * Ottimizza l’architettura delle pagine e il modo in cui vengono indirizzate per ridurre al minimo l’utilizzo dei parametri URL per consentire il maggior numero possibile di operazioni di caching.
 * Segui la documentazione di [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md) e [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 
@@ -155,4 +153,4 @@ Dopo aver eseguito i test delle prestazioni sull’istanza di authoring, è nece
 * Elimina CSS e JS incorporati dai componenti. Devono essere incluse e ridotte con le librerie lato client per ridurre al minimo il numero di richieste necessarie per il rendering della pagina.
 * Per esaminare le richieste del server e vedere quali richiedono più tempo, utilizza strumenti del browser come la scheda Rete di Chrome.
 
-Una volta identificate le aree problematiche, è possibile controllare il codice dell&#39;applicazione per ottimizzare le prestazioni. Qualsiasi funzione AEM preconfigurata che non funziona correttamente può essere gestita con il supporto Adobe.
+Una volta identificate le aree problematiche, è possibile controllare il codice dell&#39;applicazione per ottimizzare le prestazioni. Tutte le funzioni AEM pronte all’uso che non funzionano correttamente possono essere gestite con il supporto Adobe.

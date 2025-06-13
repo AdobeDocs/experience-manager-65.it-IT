@@ -9,9 +9,9 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Di seguito sono riportate le idee e i commenti espressi da David Nuescheler.
 
-David è stato co-fondatore e CTO di Day Software AG, uno dei principali fornitori di software per la gestione dei contenuti e l&#39;infrastruttura dei contenuti globali, che è stato acquisito da Adobe nel 2010. David è ora membro e vicepresidente della divisione Enterprise Technology di Adobe e guida lo sviluppo di JSR-170, l&#39;API Java™ Content Repository (JCR), lo standard tecnologico per la gestione dei contenuti.
+David è stato co-fondatore e CTO di Day Software AG, uno dei principali fornitori di software per la gestione dei contenuti e l&#39;infrastruttura dei contenuti globali, acquisito da Adobe nel 2010. David è ora membro e vicepresidente della divisione Enterprise Technology di Adobe e guida lo sviluppo di JSR-170, l&#39;API Java™ Content Repository (JCR), lo standard tecnologico per la gestione dei contenuti.
 
 Ulteriori aggiornamenti possono essere visualizzati anche in [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
 
@@ -73,8 +73,6 @@ Personalmente, preferisco le convenzioni gerarchiche al sistema di digitazione d
 >[!CAUTION]
 >
 >La struttura di un archivio di contenuti può influire anche sulle prestazioni. Per prestazioni ottimali, il numero di nodi secondari collegati ai singoli nodi in un archivio di contenuti non deve superare le 1.000 unità.
->
->Vedi [Quanti dati può gestire CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Esempio {#example-2}
 
@@ -175,7 +173,7 @@ Penso che ci siano casi d&#39;uso in cui un sistema non può funzionare se un ri
 
 Se un modello di contenuto espone qualcosa che odora anche in remoto come un file o una cartella, si tenta di utilizzare (o estendere da) `nt:file`, `nt:folder` e `nt:resource`.
 
-Nella mia esperienza, molte applicazioni generiche consentono l’interazione con nt:folder e nt:files in modo implicito e sanno come gestire e visualizzare tali eventi se arricchiti da metadati aggiuntivi. Ad esempio, un’interazione diretta con implementazioni di file server come CIF o WebDAV che si trovano sopra JCR diventa implicita.
+Nella mia esperienza, molte applicazioni generiche consentono l’interazione con nt:folder e nt:files in modo implicito e sanno come gestire e visualizzare tali eventi se arricchiti da metadati aggiuntivi. Ad esempio, un’interazione diretta con implementazioni di file server come CIFS o WebDAV che si trovano sopra JCR diventa implicita.
 
 Come buona regola empirica si potrebbe usare quanto segue: Se si deve memorizzare il nome del file e il tipo mime allora `nt:file`/ `nt:resource` è una buona corrispondenza. Se si possono avere più &quot;file&quot;, la cartella nt:folder è un buon punto in cui memorizzarli.
 

@@ -1,5 +1,5 @@
 ---
-title: Monitoraggio e manutenzione del Adobe Experience Manager istanza
+title: Monitoraggio e manutenzione dell’istanza di Adobe Experience Manager
 description: Scopri come monitorare e gestire l’istanza di Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5755'
 ht-degree: 0%
 
 ---
 
 # Monitoraggio e manutenzione dell’istanza di Adobe Experience Manager{#monitoring-and-maintaining-your-aem-instance}
 
-Dopo aver implementato le istanze AEM, è necessario monitorarne e mantenerne il funzionamento, le prestazioni e l&#39;integrità.
+Dopo aver implementato le istanze AEM, è necessario monitorarne e mantenerne il funzionamento, le prestazioni e l’integrità.
 
 Un fattore chiave in questo caso è che per riconoscere potenziali problemi è necessario conoscere l&#39;aspetto e il funzionamento del sistema in condizioni normali. Questa capacità è resa possibile al meglio monitorando il sistema e raccogliendo informazioni nel tempo.
 
@@ -31,7 +31,7 @@ Un fattore chiave in questo caso è che per riconoscere potenziali problemi è n
 | Monitoraggio dei file system. | L’archivio CRX si &quot;blocca&quot; se lo spazio disponibile su disco è insufficiente. Riprende quando lo spazio diventa disponibile. | &quot;È possibile visualizzare i messaggi &quot;`*ERROR* LowDiskSpaceBlocker`&quot; nel file di registro quando lo spazio disponibile è insufficiente. |
 | [Monitoraggio dei file di registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) in corso. |  |  |
 | Il monitoraggio del sistema è (costantemente) in esecuzione in background. | Compreso l&#39;utilizzo di CPU, memoria, disco e rete. Ad esempio, utilizzando iostat / vmstat / perfmon. | I dati registrati vengono visualizzati e possono essere utilizzati per monitorare i problemi di prestazioni. Anche i dati non elaborati sono accessibili. |
-| [Monitoraggio delle prestazioni dell&#39;AEM](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) in corso. | Inclusione di [contatori di richieste](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) per monitorare i livelli di traffico. | Se si osserva una perdita significativa, o a lungo termine, di rendimento, è necessario effettuare un&#39;indagine dettagliata. |
+| [Monitoraggio delle prestazioni di AEM in corso](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Inclusione di [contatori di richieste](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) per monitorare i livelli di traffico. | Se si osserva una perdita significativa, o a lungo termine, di rendimento, è necessario effettuare un&#39;indagine dettagliata. |
 | Stai monitorando i tuoi [agenti di replica](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Eliminare regolarmente le istanze del flusso di lavoro. | Dimensioni dell’archivio e prestazioni del flusso di lavoro. | Vedi [Rimozione regolare delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
@@ -55,7 +55,7 @@ Spesso viene eseguito un backup completo a intervalli regolari (ad esempio, gior
 
 >[!CAUTION]
 >
->Durante l&#39;implementazione dei backup delle istanze di produzione, è necessario eseguire i test *1&rbrace; per verificare che sia possibile ripristinare correttamente il backup.*
+>Durante l&#39;implementazione dei backup delle istanze di produzione, è necessario eseguire i test *1} per verificare che sia possibile ripristinare correttamente il backup.*
 >
 >Senza questo test, il backup è potenzialmente inutile (scenario peggiore).
 
@@ -65,11 +65,11 @@ Spesso viene eseguito un backup completo a intervalli regolari (ad esempio, gior
 
 ### Backup dell&#39;installazione del software {#backing-up-your-software-installation}
 
-Dopo l&#39;installazione o modifiche significative nella configurazione, creare un backup dell&#39;installazione del software.
+Dopo l&#39;installazione, o dopo modifiche significative della configurazione, creare un backup dell&#39;installazione del software.
 
-Per eseguire questa operazione, [eseguire il backup dell&#39;intero archivio](#backing-up-your-repository) e quindi:
+Per eseguire questa attività, [esegui il backup dell&#39;intero archivio](#backing-up-your-repository), quindi:
 
-1. Interruzione AEM.
+1. Interrompi AEM.
 1. Eseguire il backup dell&#39;intero `<cq-installation-dir>` dal file system.
 
 >[!CAUTION]
@@ -94,7 +94,7 @@ Per informazioni dettagliate sull&#39;esecuzione di un backup &quot;a caldo&quot
 
 Lo strumento **Rimuovi versioni** è progettato per eliminare le versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
 
-Questa sezione tratta le operazioni di manutenzione relative alla funzione di controllo delle versioni dell’AEM. Lo strumento **Rimuovi versione** è destinato all&#39;eliminazione delle versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutarti a ridurre le dimensioni del tuo archivio rimuovendo le vecchie versioni dei tuoi nodi.
+Questa sezione tratta le operazioni di manutenzione relative alla funzione di controllo delle versioni di AEM. Lo strumento **Rimuovi versione** è destinato all&#39;eliminazione delle versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
 
 ### Panoramica {#overview}
 
@@ -130,7 +130,7 @@ Impostare il percorso iniziale del contenuto da eliminare, ad esempio `/content/
 
      >[!CAUTION]
      >
-     >L’Adobe consiglia di definire più percorsi per ciascuno dei siti web.
+     >Adobe consiglia di definire più percorsi per ciascuno dei siti web.
      >
      >La definizione di un percorso con troppi elementi figlio può allungare notevolmente il tempo necessario per eseguire l&#39;eliminazione.
 
@@ -182,20 +182,20 @@ Inoltre, la console fornisce informazioni utili sulle versioni:
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: la data della versione.
 
-Nel prossimo esempio:
+Nell&#39;esempio seguente:
 
-* Le **[!DNL Shirts]** versioni vengono eliminate perché la loro versione è superiore a due giorni.
+* Le versioni **[!DNL Shirts]** vengono eliminate perché la loro validità è superiore a due giorni.
 * Le versioni **[!DNL Tonga Fashions!]** vengono eliminate perché il numero di versioni è maggiore di 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
 ## Utilizzo dei record di controllo e dei file di registro {#working-with-audit-records-and-log-files}
 
-I record di controllo e i file di registro relativi a Adobe Experience Manager (AEM) sono disponibili in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare e dove è possibile trovarlo.
+I record di controllo e i file di registro relativi a Adobe Experience Manager (AEM) si trovano in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare e dove è possibile trovarlo.
 
 ### Utilizzo dei registri {#working-with-logs}
 
-WCM AEM registra registri dettagliati. Dopo aver decompresso e avviato Quickstart, puoi trovare i registri in:
+AEM WCM registra i registri dettagliati. Dopo aver decompresso e avviato Quickstart, puoi trovare i registri in:
 
 * `<cq-installation-dir>/crx-quickstart/logs/`
 
@@ -207,11 +207,11 @@ La rotazione del file di registro si riferisce al processo che limita la crescit
 
 * Il file `error.log` è stato rinominato in base al pattern `{original_filename}.yyyy-MM-dd`. Ad esempio, l&#39;11 luglio 2010 il file di registro corrente viene rinominato `error.log-2010-07-10`, quindi viene creato un nuovo `error.log`.
 
-* Precedente file di registro non vengono eliminati, pertanto è responsabilità dell&#39;utente pulire periodicamente i vecchi file di registro per limitare l&#39;utilizzo del disco.
+* I file di registro precedenti non vengono eliminati, pertanto è responsabilità dell&#39;utente pulire periodicamente i file di registro precedenti per limitare l&#39;utilizzo del disco.
 
 >[!NOTE]
 >
->Se si aggiorna l&#39;installazione dell&#39;AEM, tutti i file di registro esistenti non più utilizzati dall&#39;AEM rimangono sul disco. È possibile rimuoverli senza rischi. Tutte le nuove voci di registro vengono scritte nei nuovi file di registro.
+>Se aggiorni l’installazione di AEM, tutti i file di registro esistenti non più utilizzati da AEM rimangono sul disco. È possibile rimuoverli senza rischi. Tutte le nuove voci di registro vengono scritte nei nuovi file di registro.
 
 ### Ricerca dei file di registro {#finding-the-log-files}
 
@@ -220,7 +220,7 @@ Nel file server in cui è stato installato AEM sono presenti diversi file di reg
 * `<cq-installation-dir>/crx-quickstart/logs`
 
    * `access.log`
-Tutte le richieste di accesso a AEM WCM e all’archivio sono registrate qui.
+Tutte le richieste di accesso a AEM WCM e all’archivio vengono registrate qui.
 
    * `audit.log`
 Le azioni di moderazione sono registrate qui.
@@ -228,13 +228,13 @@ Le azioni di moderazione sono registrate qui.
    * `error.log`
 I messaggi di errore (di diversi livelli di gravità) sono registrati qui.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=it)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 Questo registro viene utilizzato solo se [!DNL Dynamic Media] è abilitato. Fornisce statistiche e informazioni analitiche utilizzate per analizzare il comportamento del processo interno ImageServer.
 
    * `request.log`
 Ogni richiesta di accesso viene registrata qui insieme alla risposta.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=it)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 Questo registro viene utilizzato solo se [!DNL Dynamic Media] è abilitato. Il registro s7access registra ogni richiesta effettuata a [!DNL Dynamic Media] tramite `/is/image` e `/is/content`.
 
    * `stderr.log`
@@ -253,7 +253,7 @@ Revisione delle informazioni del giornale di registrazione.
 
 >[!NOTE]
 >
->I registri di ImageServer e s7access non sono inclusi nel pacchetto **Download Full &#x200B;** generato dalla **pagina &#x200B;** system/console/status-Bundlelist&quot;. Per assistenza, se hai [!DNL Dynamic Media] problemi, aggiungi i registri di accesso ImageServer e s7access quando contatti l&#39;Assistenza clienti.
+>I registri di ImageServer e s7access non sono inclusi nel pacchetto **Download Full **generato dalla **pagina **system/console/status-Bundlelist&quot;. Per assistenza, se hai [!DNL Dynamic Media] problemi, aggiungi i registri di accesso ImageServer e s7access quando contatti l&#39;Assistenza clienti.
 
 ### Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
 
@@ -275,8 +275,8 @@ I livelli del registro sono i seguenti:
 
 | 0 | Errore irreversibile | Azione non riuscita. Impossibile continuare l&#39;installazione. |
 |---|---|---|
-| 1 | Errore | Azione non riuscita. L&#39;installazione procede, ma una parte di WCM AEM non è stata installata correttamente e non funziona. |
-| 2 | Avvertenza | L&#39;azione è stata completata ma si sono verificati problemi. Il WCM dell’AEM può funzionare correttamente o meno. |
+| 1 | Errore | Azione non riuscita. L&#39;installazione procede, ma una parte di AEM WCM non è stata installata correttamente e non funziona. |
+| 2 | Avvertenza | L&#39;azione è stata completata ma si sono verificati problemi. AEM WCM potrebbe funzionare correttamente o meno. |
 | 3 | Informazioni | Azione completata. |
 
 ### Creare un file di registro personalizzato {#create-a-custom-log-file}
@@ -296,13 +296,13 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
      Ad esempio `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
-   * Digitare: `sling:OsgiConfig`
+   * Tipo: `sling:OsgiConfig`
 
    >[!NOTE]
    >
-   >Sebbene non sia un requisito tecnico, è consigliabile rendere `<identifier>` unico.
+   >Sebbene non si tratti di un requisito tecnico, è consigliabile rendere `<identifier>` univoco.
 
-1. Impostare le seguenti proprietà su questo nodo:
+1. Imposta le seguenti proprietà su questo nodo:
 
    * Nome: `org.apache.sling.commons.log.file`
 
@@ -330,7 +330,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
       * Nome: `org.apache.sling.commons.log.pattern`
 
-        Digitare: `String`
+        Tipo: `String`
 
         Valore: specifica il pattern del messaggio di registro come richiesto; ad esempio,
 
@@ -435,11 +435,11 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >* È possibile specificare un limite di dimensione con un numero. Se non viene fornito alcun indicatore di dimensione, verrà considerato come il numero di byte oppure sarà possibile aggiungere uno degli indicatori di dimensione: `KB`, `MB` o `GB` (il case verrà ignorato).
    >* È possibile specificare una pianificazione di data/ora come modello `java.util.SimpleDateFormat`. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l’identificazione).
    >
-   >Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera dei log).
+   >Il valore predefinito è &#39;.&#39;dd/MM/yyyy (per la rotazione giornaliera dei log).
    >
-   >Ad esempio, alla mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di log dopo questa data si verifica per essere precisi), .. /logs/error.log viene rinominato in .. /logs/error.log.2010-01-20. La registrazione per il 21 gennaio è l&#39;output a (un nuovo e vuoto) .. /logs/error.log finché non viene eseguito il rollover al successivo cambio di giornata.
+   >Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo questa data è preciso), ../logs/error.log viene rinominato ../logs/error.log.2010-01-20. La registrazione per il 21 gennaio viene generata in (nuovo e vuoto) ../logs/error.log fino al suo rollover al cambio di giorno successivo.
    >
-   >| `'.'yyyy-MM` | Rotazione all&#39;inizio di ogni mese |
+   >| `'.'yyyy-MM` | Rotazione all’inizio di ogni mese |
    >|---|---|
    >| `'.'yyyy-ww` | Rotazione al primo giorno di ogni settimana (a seconda delle impostazioni internazionali). |
    >| `'.'yyyy-MM-dd` | Rotazione ogni giorno a mezzanotte. |
@@ -463,9 +463,9 @@ La console Felix fornisce anche informazioni sul supporto del registro Sling in 
 
 ### Ricerca dei record di audit {#finding-the-audit-records}
 
-I registri di audit sono tenuti per fornire una registrazione di chi ha fatto cosa e quando. Vengono generati record di audit diversi per entrambi gli eventi AEM WCM e OSGi.
+I registri di audit sono tenuti per fornire una registrazione di chi ha fatto cosa e quando. Vengono generati record di audit diversi per gli eventi AEM WCM e OSGi.
 
-#### Record di audit WCM AEM visualizzati durante l’authoring delle pagine {#aem-wcm-audit-records-shown-when-page-authoring}
+#### Record di controllo WCM di AEM visualizzati durante l’authoring delle pagine {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Apri una pagina.
 1. Dalla barra laterale puoi selezionare la scheda con l&#39;icona del lucchetto, quindi fai doppio clic su **Registro di controllo...**
@@ -475,7 +475,7 @@ I registri di audit sono tenuti per fornire una registrazione di chi ha fatto co
 
 1. Fare clic su **OK** per chiudere la finestra.
 
-#### Record di controllo WCM AEM nell’archivio {#aem-wcm-auditing-records-within-the-repository}
+#### Record di AEM WCM Auditing all’interno dell’archivio {#aem-wcm-auditing-records-within-the-repository}
 
 All&#39;interno della cartella `/var/audit`, i record di controllo vengono mantenuti in base alla risorsa. È possibile espandere la visualizzazione fino a visualizzare i singoli record e le informazioni in essi contenute.
 
@@ -546,21 +546,21 @@ Di seguito sono elencati i problemi di prestazioni comuni che si verificano, ins
 
 | Area | Sintomo | Per aumentare la capacità... | Per ridurre il volume... |
 |---|---|---|---|
-| Client | Utilizzo intensivo della CPU del client. | Installare una CPU client con prestazioni superiori. | Semplifica il layout (HTML). |
-|   | Utilizzo ridotto della CPU del server. | Esegui l’aggiornamento a un browser più veloce. | Miglioramento della cache lato client. |
+| Client | Utilizzo intensivo di CPU client. | Installare un CPU client con prestazioni più elevate. | Semplifica il layout (HTML). |
+|   | Basso utilizzo di CPU server. | Esegui l’aggiornamento a un browser più veloce. | Miglioramento della cache lato client. |
 |   | Alcuni clienti sono veloci, altri lenti. |  |  |
 | Server |  |  |  |
-| Rete | Utilizzo della CPU ridotto sia sui server che sui client. | Rimuovere eventuali colli di bottiglia della rete. | Migliora/ottimizza la configurazione della cache client. |
-|   | La navigazione locale sul server è (comparativamente) veloce. | Aumentare la larghezza di banda di rete. | Riduci il &quot;peso&quot; delle pagine web (ad esempio, meno immagini, HTML ottimizzati). |
-| Server web | L&#39;utilizzo della CPU nel server Web è elevato. | Crea un cluster per i server web. | Riduci gli hit per pagina (visita). |
+| Rete | Utilizzo di CPU basso sia sui server che sui client. | Rimuovere eventuali colli di bottiglia della rete. | Migliora/ottimizza la configurazione della cache client. |
+|   | La navigazione locale sul server è (comparativamente) veloce. | Aumentare la larghezza di banda di rete. | Riduci il &quot;peso&quot; delle pagine web (ad esempio, meno immagini, HTML ottimizzato). |
+| Server web | L’utilizzo di CPU sul server web è elevato. | Crea un cluster per i server web. | Riduci gli hit per pagina (visita). |
 |   |  | Utilizzare un load balancer hardware. |  |
-| Applicazione | Utilizzo CPU server elevato. | Cluster per le istanze AEM. | Cercare ed eliminare hog di CPU e memoria (utilizzare l&#39;output di revisione del codice e di temporizzazione). |
+| Applicazione | L&#39;utilizzo di CPU server è elevato. | Crea un cluster per le istanze AEM. | Cercare ed eliminare i CPU e gli hog di memoria (utilizzare la revisione del codice e l&#39;output di temporizzazione). |
 |   | Elevato consumo di memoria. |  | Migliora la memorizzazione nella cache a tutti i livelli. |
 |   | Tempi di risposta ridotti. |  | Ottimizza modelli e componenti (ad esempio struttura, logica). |
 | Archivio |  |  |  |
 | Cache |  |  |  |
 
-I problemi di prestazioni possono derivare da varie cause che non hanno nulla a che fare con il sito web, tra cui rallentamenti temporanei della velocità di connessione, del carico della CPU e molto altro.
+I problemi di prestazioni possono derivare da varie cause che non hanno nulla a che fare con il sito web, tra cui rallentamenti temporanei della velocità di connessione, caricamento del CPU e molto altro.
 
 Inoltre, può influire su tutti i visitatori o solo su un sottoinsieme di essi.
 
@@ -613,17 +613,17 @@ Alcuni di questi strumenti dipendono dal sistema operativo.
   <tr>
    <td>Dump heap</td>
    <td>Memoria insufficiente che causa rallentamento delle prestazioni.</td>
-   <td><p>Aggiungere l'opzione:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> alla chiamata Java™ per l'AEM.</p> <p>Consulta la <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">pagina Opzioni/flag per la risoluzione dei problemi JVM</a>.</p> </td>
+   <td><p>Aggiungere l'opzione:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> alla chiamata Java™ che va ad AEM.</p> <p>Consulta la <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">pagina Opzioni/flag per la risoluzione dei problemi JVM</a>.</p> </td>
   </tr>
   <tr>
    <td>Chiamate di sistema</td>
    <td>Identificare i problemi relativi alla tempistica.</td>
-   <td><p>Chiamate a <code>System.currentTimeMillis()</code> o <code>com.day.util</code>. La tempistica viene utilizzata per generare marche temporali dal codice o tramite <a href="#html-comments">HTML-comments</a>.</p> <p><strong>Nota:</strong> implementa questi elementi in modo che possano essere attivati o disattivati come richiesto. Quando un sistema funziona senza problemi, il sovraccarico della raccolta delle statistiche non è necessario.</p> </td>
+   <td><p>Chiamate a <code>System.currentTimeMillis()</code> o <code>com.day.util</code>. La tempistica viene utilizzata per generare marche temporali dal codice o tramite <a href="#html-comments">commenti-HTML</a>.</p> <p><strong>Nota:</strong> implementa questi elementi in modo che possano essere attivati o disattivati come richiesto. Quando un sistema funziona senza problemi, il sovraccarico della raccolta delle statistiche non è necessario.</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
    <td>Identificare le perdite di memoria e analizzare in modo selettivo i tempi di risposta.</td>
-   <td><p>utilizzo di base:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Per informazioni dettagliate, vedere <a href="#apache-bench">Apache Bench</a> e la <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">ab man page</a>.</p> </td>
+   <td><p>utilizzo di base:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Per informazioni dettagliate, vedere <a href="#apache-bench">Apache Bench</a> e la <a href="https://httpd.apache.org/docs/2.4/programs/ab.html?lang=it">ab man page</a>.</p> </td>
   </tr>
   <tr>
    <td>Ricerca analisi</td>
@@ -637,7 +637,7 @@ Alcuni di questi strumenti dipendono dal sistema operativo.
   </tr>
   <tr>
    <td>JProfiler</td>
-   <td>Profilatura approfondita della CPU e della memoria.</td>
+   <td>Profilatura approfondita di CPU e memoria.</td>
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
@@ -666,7 +666,7 @@ Alcuni di questi strumenti dipendono dal sistema operativo.
    <td><p>Per visualizzare le statistiche sugli intervalli per il rendering della pagina, puoi utilizzare <strong>Ctrl-Maiusc-U</strong> insieme a <code>?debugClientLibs=true</code> impostato nell'URL.</p> </td>
   </tr>
   <tr>
-   <td>Strumento di analisi della CPU e della memoria<br /> </td>
+   <td>Strumento di profilatura di CPU e memoria<br /> </td>
    <td><a href="#interpreting-the-request-log">Utilizzato per l'analisi di richieste lente durante lo sviluppo</a>.</td>
    <td>Ad esempio, <a href="https://www.yourkit.com/">YourKit</a>. o il registratore di volo <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Java™</a>.</td>
   </tr>
@@ -680,11 +680,11 @@ Alcuni di questi strumenti dipendono dal sistema operativo.
 
 ### Interpretazione di request.log {#interpreting-the-request-log}
 
-In questo file vengono registrate le informazioni di base relative a ogni richiesta inviata all&#39;AEM. Da ciò si possono trarre conclusioni preziose.
+Questo file registra le informazioni di base su ogni richiesta effettuata ad AEM. Da ciò si possono trarre conclusioni preziose.
 
 `request.log` offre una modalità incorporata per ottenere un&#39;idea di quanto tempo richiedono le richieste. A scopo di sviluppo, è utile `tail -f` `request.log` e tenere d&#39;occhio i tempi di risposta lenti. Per analizzare un `request.log` più grande, Adobe consiglia l&#39;[utilizzo di `rlog.jar` che consente di ordinare e filtrare per i tempi di risposta](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
-L&#39;Adobe consiglia di isolare le pagine &quot;lente&quot; da `request.log`, quindi di regolarle singolarmente per ottenere prestazioni migliori. Includere metriche delle prestazioni per componente o utilizzare uno strumento di analisi delle prestazioni quale ` [yourkit](https://www.yourkit.com/)`.
+Adobe consiglia di isolare le pagine &quot;lente&quot; da `request.log`, quindi di regolarle singolarmente per ottenere prestazioni migliori. Includere metriche delle prestazioni per componente o utilizzare uno strumento di analisi delle prestazioni quale ` [yourkit](https://www.yourkit.com/)`.
 
 #### Monitoraggio del traffico sul sito web {#monitoring-traffic-on-your-website}
 
@@ -768,7 +768,7 @@ Anche in questo caso `request.log` può essere utilizzato per monitorare la conc
 
 ### Utilizzo di rlog.jar per trovare richieste con tempi di durata prolungata {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-L’AEM include vari strumenti di assistenza nei seguenti casi:
+AEM include diversi strumenti di supporto nei seguenti elementi:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Uno di questi strumenti, `rlog.jar`, può essere utilizzato per ordinare rapidamente `request.log` in modo che le richieste vengano visualizzate per durata, da quella più lunga a quella più breve.
@@ -814,7 +814,7 @@ Concatenare i singoli file `request.log` se è necessario eseguire questa operaz
 
 ### Apache Bench {#apache-bench}
 
-Per ridurre al minimo l&#39;impatto di casi speciali (ad esempio la raccolta di oggetti inattivi), si consiglia di utilizzare uno strumento come `apachebench` (ad esempio, [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) per ulteriore documentazione) per identificare eventuali perdite di memoria e analizzare in modo selettivo i tempi di risposta.
+Per ridurre al minimo l&#39;impatto di casi speciali (ad esempio la raccolta di oggetti inattivi), si consiglia di utilizzare uno strumento come `apachebench` (ad esempio, [ab](https://httpd.apache.org/docs/2.4/programs/ab.html?lang=it) per ulteriore documentazione) per identificare eventuali perdite di memoria e analizzare in modo selettivo i tempi di risposta.
 
 Apache Bench può essere utilizzato nel modo seguente:
 
@@ -877,7 +877,7 @@ Percentage of the requests served within a certain time (ms)
 100% 8106 (longest request)
 ```
 
-I numeri riportati sopra sono ricavati da un notebook standard MAcBook Pro (metà 2010) che accede alla pagina della società del Geometrixx, come incluso in un&#39;installazione AEM predefinita. La pagina è semplice, ma non ottimizzata per le prestazioni.
+I numeri riportati sopra sono ricavati da un notebook standard MAcBook Pro (metà 2010) che accede alla pagina della società di Geometrixx, come incluso in un&#39;installazione predefinita di AEM. La pagina è semplice, ma non ottimizzata per le prestazioni.
 
 `apachebench` visualizza anche il tempo per richiesta come media, in tutte le richieste simultanee; vedi `Time per request: 54.595 [ms]` (media, in tutte le richieste simultanee). È possibile modificare il valore del parametro di concorrenza `-c` (numero di richieste multiple da eseguire alla volta) per visualizzare eventuali effetti.
 
@@ -913,9 +913,9 @@ Le informazioni raccolte possono essere utilizzate per indicare:
 
 Il comando dello strumento `jconsole` è disponibile con JDK.
 
-1. Avvia l’istanza AEM.
+1. Avvia l’istanza di AEM.
 1. Esegui `jconsole.`
-1. Seleziona la tua istanza AEM e **Connetti**.
+1. Seleziona la tua istanza di AEM e **Connetti**.
 
 1. Dall&#39;applicazione `Local`, fare doppio clic su `com.day.crx.quickstart.Main`. La panoramica viene visualizzata come predefinita:
 
@@ -923,11 +923,11 @@ Il comando dello strumento `jconsole` è disponibile con JDK.
 
    Ora puoi selezionare altre opzioni.
 
-### Monitoraggio delle prestazioni con (J)VisualVM {#monitoring-performance-using-j-visualvm}
+### Monitoraggio delle prestazioni tramite (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
 Per JDK 6-8, è disponibile il comando dello strumento `visualvm`. Dopo aver installato un JDK, puoi effettuare le seguenti operazioni:
 
-1. Avvia l’istanza AEM.
+1. Avvia l’istanza di AEM.
 
    >[!NOTE]
    >
@@ -1037,7 +1037,7 @@ Per visualizzare quante risorse DAM sono attualmente gestite, utilizza una query
 
 #### Qual è la dimensione media delle risorse? {#what-is-the-average-size-of-the-assets}
 
-Per determinare la dimensione totale della `/var/dam` cartella:
+Per determinare la dimensione totale della cartella `/var/dam`:
 
 1. Utilizzare WebDAV per mappare l&#39;archivio al file system locale.
 
@@ -1098,19 +1098,10 @@ Di seguito è riportato un elenco di suggerimenti su cosa controllare se si veri
 >
 >Per ulteriori informazioni, consulta anche i seguenti articoli:
 >
->* [Immagini thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
->* [Analisi dei problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
->* [Analizza utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=it)
->* [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [Immagini thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analisi dei problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analizza utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
-
-### CPU al 100% {#cpu-at}
-
-Se la CPU del sistema è costantemente in esecuzione al 100%, vedi quanto segue:
-
-* Knowledge Base:
-
-   * [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 ### Memoria insufficiente {#out-of-memory}
 
@@ -1125,7 +1116,7 @@ In questi casi verificare:
 * Impostazioni JVM utilizzate per [avviare AEM](/help/sites-deploying/deploy.md#getting-started)
 * Knowledge Base:
 
-   * [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
+* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### I/O disco {#disk-i-o}
 
@@ -1136,15 +1127,14 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
    * [Gestore script Apache Sling JSP](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
    * [Gestore JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Configurazione registrazione Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Gestione libreria CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ Web Content Management Filtra Debug](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [Filtro di debug CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Logger](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Se e come hai configurato [Versione Eliminazione](/help/sites-deploying/version-purging.md)
+* Indica se e come hai configurato [Rimozione versione](/help/sites-deploying/version-purging.md)
 * Knowledge Base:
 
-   * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=it)
-   * [Windows Journal utilizza troppo spazio su disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [Troppi file aperti]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
 
 ### Degradazione delle prestazioni regolare {#regular-performance-degradation}
 
@@ -1153,13 +1143,13 @@ Se le prestazioni dell’istanza si deteriorano dopo ogni riavvio (a volte una s
 * [Memoria insufficiente](#outofmemory)
 * Knowledge Base:
 
-   * [Sessioni non chiuse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+   * [Risolutore risorse non chiuso](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### Ottimizzazione JVM {#jvm-tuning}
 
 La Java™ Virtual Machine (JVM) è migliorata per quanto riguarda la messa a punto (soprattutto da Java™ 7). Di conseguenza, spesso è opportuno specificare una dimensione JVM fissa ragionevole e utilizzare le impostazioni predefinite.
 
-Se le impostazioni predefinite non sono adatte, è importante stabilire un metodo per monitorare e valutare le prestazioni di GC. Farlo prima di provare a regolare la JVM. Questo processo può includere fattori di monitoraggio, tra cui la dimensione dell’heap, l’algoritmo e altri aspetti.
+Se le impostazioni predefinite non sono adatte, è importante stabilire un metodo per monitorare e valutare le prestazioni di GC. Eseguire questa operazione prima di tentare di ottimizzare la JVM. Questo processo può includere fattori di monitoraggio, tra cui la dimensione dell’heap, l’algoritmo e altri aspetti.
 
 Alcune scelte comuni sono:
 
@@ -1194,6 +1184,6 @@ Oppure JConsole:
 
 >[!NOTE]
 >
->Ad Oracle, nella VM sono disponibili informazioni su:
+>Per la VM di Oracle, sono inoltre disponibili informazioni su:
 >
 >[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

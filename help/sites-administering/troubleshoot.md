@@ -10,9 +10,9 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ La tabella seguente fornisce una panoramica dei problemi che gli amministratori 
   </tr>
   <tr>
    <td><p>Amministratore di sistema</p> </td>
-   <td><p>La schermata iniziale dell’AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM CM Quickstart</p> </td>
+   <td><p>La schermata iniziale di AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM CM Quickstart</p> </td>
   </tr>
   <tr>
    <td><p>Amministratore di sistema</p> <p>utente amministratore</p> </td>
@@ -68,13 +68,13 @@ Consulta [Problemi comuni di installazione](/help/sites-deploying/troubleshootin
 
 * Il doppio clic sul file JAR Quickstart non ha alcun effetto o sul file JAR con un altro programma (ad esempio, Archive Manager).
 * Le applicazioni in esecuzione su CRX generano errori di memoria insufficiente.
-* La schermata iniziale dell’AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM Quickstart.
+* La schermata iniziale di AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM Quickstart.
 
 ## Metodi per la risoluzione dei problemi di analisi {#methods-for-troubleshooting-analysis}
 
 ### Creazione di un&#39;immagine thread {#making-a-thread-dump}
 
-L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. Se l’AEM non risponde correttamente, l’immagine thread può aiutarti a identificare deadlock o altri problemi.
+L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. Se AEM non risponde correttamente, l’immagine thread può aiutarti a identificare deadlock o altri problemi.
 
 ### Utilizzo di Sling Thread Dumper {#using-sling-thread-dumper}
 
@@ -85,7 +85,7 @@ L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. S
 
 ### Utilizzo di jstack (riga di comando) {#using-jstack-command-line}
 
-1. Trova il PID (ID processo) dell’istanza Java™ dell’AEM.
+1. Trova il PID (ID processo) dell’istanza Java™ di AEM.
 
    È possibile, ad esempio, utilizzare `ps -ef` o `jps`.
 
@@ -101,17 +101,17 @@ L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. S
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Per ulteriori informazioni, consulta la [documentazione su come estrarre immagini thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
+Per ulteriori informazioni, consulta la [documentazione su come estrarre immagini thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 
 ### Verifica di sessioni JCR non chiuse {#checking-for-unclosed-jcr-sessions}
 
-Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le sessioni JCR (come per l’apertura di una connessione al database). Se le sessioni aperte non vengono mai chiuse, il sistema potrebbe presentare i seguenti sintomi:
+Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le sessioni JCR (operazione paragonabile all’apertura di una connessione a un database). Se le sessioni aperte non vengono mai chiuse, il sistema potrebbe presentare i seguenti sintomi:
 
 * Il sistema diventa più lento.
 * È possibile visualizzare gran parte di CacheManager: resizeAll voci nel file di registro; il seguente numero (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
 * Di tanto in tanto il sistema esaurisce la memoria (dopo alcune ore, giorni o settimane, a seconda della gravità).
 
-Per analizzare le sessioni non chiuse e individuare il codice che non chiude una sessione, vedere l&#39;articolo della Knowledge Base [Analisi delle sessioni non chiuse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Per avviare l&#39;analisi delle sessioni non chiuse, vedere l&#39;articolo della Knowledge Base [Risolutore risorse non chiuso](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Utilizzo della console Web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
