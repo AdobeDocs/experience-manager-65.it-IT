@@ -599,7 +599,7 @@ Nell’archivio sono presenti molte configurazioni esistenti. Puoi cercare facil
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Per cercare un nodo figlio di `cq:editConfig`, ad esempio, è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in** CRXDE Lite** e cercare con la seguente stringa di query XPath:
+* Per cercare un nodo figlio di `cq:editConfig`, ad esempio, è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in **&#x200B; CRXDE Lite** e cercare con la seguente stringa di query XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

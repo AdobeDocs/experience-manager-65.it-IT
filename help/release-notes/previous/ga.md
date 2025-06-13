@@ -157,9 +157,11 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
      ```
 
    * Dichiarazioni di variabili con data-sly-set :
+
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Elenca e ripeti parametri di controllo: begin, step, end:
+
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identificatori per data-sly-unwrap:
@@ -308,7 +310,7 @@ Gli amministratori del sito possono creare un gruppo a qualsiasi livello gerarch
 
 Supporto di **SCORM 2017.1**
 
-La funzionalità di abilitazione di AEM 6.5 Communities supporta il motore SCORM (Shared Content Object Reference Model) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).[
+La funzionalità di abilitazione di AEM 6.5 Communities supporta il motore SCORM (Shared Content Object Reference Model) 2017.1[&#128279;](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Supporto della navigazione tramite tastiera nei componenti di attivazione
 * I componenti di abilitazione (ad esempio, Riproduzione di cataloghi e corsi, Assegnazioni, Libreria file) in AEM Communities supportano la navigazione da tastiera per migliorare l’accessibilità.
