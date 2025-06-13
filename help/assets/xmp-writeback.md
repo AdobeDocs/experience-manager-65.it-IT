@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
 | AEM 6.5 | Questo articolo |
 
 Questa funzionalità di writeback di XMP in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati nelle rappresentazioni della risorsa originale. Quando modifichi i metadati di una risorsa dall’interno di Assets o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo metadati nella gerarchia delle risorse.

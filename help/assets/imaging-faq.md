@@ -88,7 +88,7 @@ Attivando la conversione del formato del browser aggiungendo `bfc=on` all&#39;UR
 
 Per disattivare Smart Imaging, aggiungi `bfc=off` all&#39;URL dell&#39;immagine.
 
-Vedi anche [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
+Vedi anche [bfc](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
 
 ### Informazioni sull&#39;ottimizzazione del rapporto pixel del dispositivo (dpr) {#dpr}
 
@@ -255,7 +255,7 @@ Quando crei il caso di supporto, specifica le funzioni di Smart Imaging da attiv
 
       * Elenca tutti i domini rilevanti, ad esempio *`company.com`* o *`mycompany.scene7.com`*
       * Smart Imaging supporta domini sia generici che personalizzati.
-      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
+      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
 
          1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
          1. Cerca il campo **[!UICONTROL Nome server pubblicato]** per confermare il dominio.
