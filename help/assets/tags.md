@@ -242,7 +242,7 @@ Il campione impostato sopra influisce anche sulla durata del valore dell’eleme
 
 In ogni caso, i valori degli elementi dati guidati dai visualizzatori Dynamic Media non vengono memorizzati nell’archiviazione locale o sul server, ma vengono conservati solo nella libreria di tag Experience Platform lato client. I valori di tale elemento dati scompaiono quando la pagina web viene ricaricata.
 
-In genere, l&#39;editor degli elementi dati supporta la selezione della durata di archiviazione [](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element). Tuttavia, gli elementi dati che utilizzano l&#39;estensione Dynamic Media Viewers supportano solo l&#39;opzione di durata di archiviazione **[!UICONTROL None]**. Nell’interfaccia utente è possibile impostare qualsiasi altro valore, ma in questo caso il comportamento dell’elemento dati non è definito. L’estensione gestisce il valore dell’elemento dati singolarmente: l’elemento dati che mantiene il valore dell’argomento evento visualizzatore durante l’intero ciclo di vita del visualizzatore.
+In genere, l&#39;editor degli elementi dati supporta la selezione della durata di archiviazione [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element). Tuttavia, gli elementi dati che utilizzano l&#39;estensione Dynamic Media Viewers supportano solo l&#39;opzione di durata di archiviazione **[!UICONTROL None]**. Nell’interfaccia utente è possibile impostare qualsiasi altro valore, ma in questo caso il comportamento dell’elemento dati non è definito. L’estensione gestisce il valore dell’elemento dati singolarmente: l’elemento dati che mantiene il valore dell’argomento evento visualizzatore durante l’intero ciclo di vita del visualizzatore.
 
 ### Informazioni sulle regole nell’estensione Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -726,7 +726,7 @@ La configurazione di Experience Manager prevede i due passaggi principali seguen
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Viene visualizzata una pagina dei dettagli delle integrazioni, **** simile alla seguente:
+1. Viene visualizzata una pagina dei dettagli delle integrazioni, **&#x200B;**&#x200B;simile alla seguente:
 
    >[!NOTE]
    >

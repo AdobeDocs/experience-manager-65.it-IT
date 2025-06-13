@@ -336,9 +336,9 @@ Questa intestazione indica quanto segue:
 >**X-Adobe-Smart-Imaging = -1 con WebP consegnato**
 >
 >Se il valore di `X-Adobe-Smart-Imaging` è -1 e WebP è ancora in fase di distribuzione, Smart Imaging è attivo. Tuttavia, i vantaggi in termini di dimensioni non sono stati calcolati a causa di una cache obsoleta. Per risolvere il problema, è possibile utilizzare `cache=update` (una sola volta) nell&#39;URL dell&#39;immagine.
->>Esempio di utilizzo del modificatore:
->>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->>Per invalidare l’intera cache, è necessario creare un caso di supporto.
+>&#x200B;>Esempio di utilizzo del modificatore:
+>&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>&#x200B;>Per invalidare l’intera cache, è necessario creare un caso di supporto.
 
 +++
 
