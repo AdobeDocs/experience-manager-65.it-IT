@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 917723f89c037756a74fef9a54df9237d4283c1d
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2129'
+ht-degree: 14%
 
 ---
 
 # Prepara [!DNL Assets] per assegnazione tag avanzati {#configure-asset-tagging-using-the-smart-content-service}
 
-Prima di iniziare a assegnare tag alle risorse utilizzando Smart Content Services, è necessario integrare [!DNL Experience Manager Assets] con Adobe Developer Console per utilizzare Smart Service di [!DNL Adobe Sensei]. Una volta configurato, il servizio viene addestrato utilizzando alcune immagini e un tag.
+Prima di iniziare a assegnare tag alle risorse tramite Smart Content Services, è necessario integrare [!DNL Experience Manager Assets] con Adobe Developer Console per utilizzare il servizio intelligente di [!DNL Adobe Sensei]. Una volta configurato, il servizio viene addestrato utilizzando alcune immagini e un tag.
 
 <!--
 >[!NOTE]
@@ -32,9 +32,9 @@ Prima di utilizzare il Servizio di contenuti avanzati, verifica quanto segue:
 * [Integrare con Adobe Developer Console](#integrate-adobe-io).
 * [Formazione del Servizio di contenuti avanzati](#training-the-smart-content-service).
 
-* Installa il [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it) più recente.
+* Installa il [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) più recente.
 
-## ADOBE Aggiornamento SCS per supportare Oauth per Managed Services {#scs-upgrade-oauth-managed-services}
+## Aggiornamento SCS per supportare Oauth per Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
 **Nuovi utenti**
 
@@ -71,7 +71,7 @@ Per configurare il Servizio di contenuti avanzati, segui questi passaggi di live
 
 1. Crea un&#39;integrazione in [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Crea la configurazione dell&#39;account tecnico [IMS](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
+1. Crea una configurazione dell&#39;account tecnico IMS [](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
 
 1. [Configura il Servizio di contenuti avanzati](#configure-smart-content-service).
 
@@ -93,7 +93,11 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### Creare l’integrazione con Adobe Developer Console {#create-adobe-io-integration}
 
-Per utilizzare le API del Servizio di contenuti avanzati, creare un&#39;integrazione in Adobe Developer Console per ottenere [!UICONTROL la chiave API] (generata nel campo [!UICONTROL ID CLIENT] dell&#39;integrazione di Adobe Developer Console), [!UICONTROL ID ORGANIZZAZIONE] e [!UICONTROL SEGRETO CLIENT] per [!UICONTROL le impostazioni del Servizio di tag avanzati di Assets] della configurazione cloud in [!DNL Experience Manager].
+Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione in Adobe Developer Console per ottenere quanto segue:
+
+* [!UICONTROL CHIAVE API] (generata nel campo [!UICONTROL ID CLIENT] dell&#39;integrazione Adobe Developer Console),
+* [!UICONTROL ID ORGANIZZAZIONE],
+* e [!UICONTROL SEGRETO CLIENT], per [!UICONTROL Impostazioni servizio di assegnazione tag avanzati Assets] della configurazione cloud in [!DNL Experience Manager].
 
 1. Accedi a [https://developer.adobe.com](https://developer.adobe.com/) in un browser. Selezionare l&#39;account appropriato e verificare che il ruolo organizzazione associato sia **amministratore** di sistema.
 
@@ -104,17 +108,12 @@ Per utilizzare le API del Servizio di contenuti avanzati, creare un&#39;integraz
 1. Selezionare **[!UICONTROL OAuth Server-to-Server]**. Fai clic su **[!UICONTROL Avanti]**.
 Per informazioni dettagliate su come eseguire questa configurazione, consulta la documentazione di Developer Console, a seconda dei requisiti:
 
-   * Panoramica:
-      * [Autenticazione da server a server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
-
-   * Creazione di nuove credenziali OAuth:
-      * [Guida all’implementazione delle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
-
-   * Migrazione di una credenziale JWT esistente a una credenziale OAuth:
-      * [Migrazione dalle credenziali dell’account di servizio (JWT) alle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * Per una panoramica, vedere *Autenticazione da server a server* su developer.adobe.com.
+   * Per creare una nuova credenziale OAuth, consulta la *Guida all&#39;implementazione delle credenziali server-to-server OAuth* su developer.adobe.com.
+   * Per eseguire la migrazione di una credenziale JWT esistente a una credenziale OAuth, vedere *Migrazione delle credenziali dall&#39;account di servizio (JWT) alle credenziali server-to-server OAuth* in developer.adobe.com.
 
 
-1. Nella pagina **[!UICONTROL Seleziona profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**. Fai clic su **[!UICONTROL Salva API configurata]**.
+1. Nella pagina **[!UICONTROL Seleziona profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**, quindi fai clic sull&#39;opzione **[!UICONTROL Salva API configurata]**.
 
    In una pagina vengono visualizzate ulteriori informazioni sulla configurazione. Tieni aperta questa pagina per copiare e aggiungere questi valori nelle [!UICONTROL Impostazioni del servizio di assegnazione tag avanzati di Assets] della configurazione cloud in [!DNL Experience Manager] per configurare gli smart tag.
 
@@ -122,7 +121,7 @@ Per informazioni dettagliate su come eseguire questa configurazione, consulta la
 
 ### Creare la configurazione dell’account tecnico IMS {#create-ims-account-config}
 
-Devi creare la configurazione dell’account tecnico IMS seguendo questi passaggi:
+Devi creare una configurazione dell’account tecnico IMS seguendo questi passaggi:
 
 1. Nell’interfaccia utente di [!DNL Experience Manager], accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**.
 
@@ -137,10 +136,10 @@ Devi creare la configurazione dell’account tecnico IMS seguendo questi passagg
    | Soluzione cloud | Scegli **[!UICONTROL Tag avanzati]** dal menu a discesa. |
    | Titolo | Aggiungi il titolo della configurazione dell’account IMS. |
    | Server autorizzazioni | Aggiungi `https://ims-na1.adobelogin.com` |
-   | ID client | Da fornire tramite [console Adobe Developer](https://developer.adobe.com/console/). |
-   | Segreto client | Da fornire tramite [console Adobe Developer](https://developer.adobe.com/console/). |
-   | Ambito | Da fornire tramite [console Adobe Developer](https://developer.adobe.com/console/). |
-   | ID organizzazione | Da fornire tramite [console Adobe Developer](https://developer.adobe.com/console/). |
+   | ID client | Da fornire tramite la [console Adobe Developer](https://developer.adobe.com/console/). |
+   | Segreto client | Da fornire tramite la [console Adobe Developer](https://developer.adobe.com/console/). |
+   | Ambito | Da fornire tramite la [console Adobe Developer](https://developer.adobe.com/console/). |
+   | ID organizzazione | Da fornire tramite la [console Adobe Developer](https://developer.adobe.com/console/). |
 
 1. Selezionare la configurazione creata e fare clic su **[!UICONTROL Verifica stato]**.
 
@@ -152,14 +151,14 @@ Devi creare la configurazione dell’account tecnico IMS seguendo questi passagg
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
 
 Per configurare l&#39;integrazione, utilizzare i valori dei campi [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE], [!UICONTROL SEGRETO CLIENT] e [!UICONTROL ID CLIENT] dell&#39;integrazione Adobe Developer Console. La creazione di una configurazione cloud di tag avanzati consente l&#39;autenticazione delle richieste API dalla distribuzione [!DNL Experience Manager].
 
-1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Tag avanzati]** per aprire [!UICONTROL Configurazioni smart tag].
+1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Smart Tag]** per aprire le [!UICONTROL Configurazioni smart tag].
 
 1. Fai clic su **[!UICONTROL Crea]** per creare una nuova configurazione. In caso contrario, fare clic su **[!UICONTROL Proprietà]** per aggiornare la configurazione esistente.
 
@@ -170,12 +169,12 @@ Per configurare l&#39;integrazione, utilizzare i valori dei campi [!UICONTROL ID
    | Campo | Descrizione |
    | -------- | ---------------------------- |
    | Titolo | Aggiungi il titolo della configurazione dell’account IMS. |
-   | Configurazione Adobe IMS associata | Scegli la configurazione dal menu a discesa. |
-   | URL del servizio | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Ad esempio, `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea` o `apac` come aree in cui è ospitata l&#39;istanza Autore Experience Manager. |
+   | Configurazione Adobe IMS associata | Scegli una configurazione dal menu a discesa. |
+   | URL del servizio | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Ad esempio, `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea` o `apac` come aree in cui è ospitata l&#39;istanza di authoring di Experience Manager. |
 
    >[!NOTE]
    >
-   >Se il provisioning di Experience Manager Managed Service è stato eseguito prima del 1° settembre 2022, utilizza il seguente URL del servizio:
+   >Se il provisioning del servizio gestito di Experience Manager è stato eseguito prima del 1° settembre 2022, utilizza il seguente URL del servizio:
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
@@ -292,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -363,11 +362,11 @@ The validation results are displayed in the same dialog.
 
 1. In [!DNL Experience Manager], vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 
-1. Nella pagina **[!UICONTROL Modelli flusso di lavoro]**, seleziona il modello del flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
+1. Nella pagina **[!UICONTROL Modelli flusso di lavoro]**, seleziona il modello di flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 
 1. Fai clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
 
-1. Per visualizzare i passaggi, espandi il pannello laterale. Trascina il passaggio **[!UICONTROL Risorsa di tag avanzati]** della sezione Flusso di lavoro DAM e inseriscilo dopo il passaggio **[!UICONTROL Elabora miniature]**.
+1. Per visualizzare i passaggi, espandi il pannello laterale. Trascina il passaggio **[!UICONTROL Risorsa di tag avanzati]** disponibile nella sezione Flusso di lavoro DAM e inseriscilo dopo il passaggio **[!UICONTROL Elabora miniature]**.
 
    ![Aggiungi il passaggio Risorsa di tag avanzati dopo il passaggio Elabora miniature nel flusso di lavoro Aggiorna risorsa DAM](assets/smart-tag-in-dam-update-asset-workflow.png)
 
@@ -483,4 +482,4 @@ Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag 
 >
 >* [Panoramica e formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=it)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)

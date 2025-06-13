@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1558'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,17 @@ ht-degree: 1%
 
 I modelli di risorse sono una classe speciale di risorse che facilita la ridefinizione rapida dei contenuti con effetti visivi avanzati per i supporti digitali e di stampa. Un modello di risorsa include due parti, la sezione messaggi fissi e la sezione modificabile. La sezione dei messaggi fissi può contenere contenuti proprietari, ad esempio il logo del marchio e informazioni sul copyright, che sono disabilitati per la modifica. La sezione modificabile può contenere contenuti visivi e testuali in campi che possono essere modificati per personalizzare la messaggistica.
 
-La flessibilità di apportare modifiche limitate, pur proteggendo il digital signage globale, rende i modelli di risorse ideali per adattare e distribuire rapidamente i contenuti come artefatti per varie funzioni. I contenuti riproposti consentono di ridurre i costi di gestione dei canali di stampa e digitali e di offrire esperienze olistiche e coerenti su questi canali.
+I modelli di risorse offrono la flessibilità di apportare modifiche limitate, mantenendo al contempo il digital signage sicuro. Questa capacità li rende ideali per adattare e distribuire rapidamente i contenuti tra le varie funzioni. I contenuti riproposti consentono di ridurre i costi di gestione dei canali di stampa e digitali e di offrire esperienze olistiche e coerenti su questi canali.
 
 In qualità di addetto al marketing, puoi archiviare e gestire modelli in [!DNL Experience Manager Assets] e utilizzare un unico modello di base per creare con facilità più esperienze di stampa personalizzate. Puoi creare vari tipi di materiale promozionale di marketing, tra cui opuscoli, volantini, cartoline, biglietti da visita e così via, per trasmettere in modo lucido il messaggio di marketing ai clienti. È inoltre possibile assemblare output di stampa multipagina da output di stampa nuovi o esistenti. Soprattutto, puoi fornire simultaneamente esperienze digitali e di stampa con facilità, per fornire agli utenti un’esperienza coerente e integrata.
 
-Anche se i modelli di risorse sono per lo più file [!DNL Adobe InDesign], la conoscenza di [!DNL Adobe InDesign] non costituisce un ostacolo alla creazione di artefatti stellari. Non è necessario mappare i campi del modello [!DNL Adobe InDesign] con i campi prodotto che altrimenti sarebbero necessari durante la creazione dei cataloghi. È possibile modificare i modelli in modalità WYSIWYG direttamente sull’interfaccia web. Tuttavia, affinché [!DNL Adobe InDesign] possa elaborare le modifiche, devi prima configurare [!DNL Experience Manager Assets] per l&#39;integrazione con [!DNL Adobe InDesign Server].
+Anche se i modelli di risorse sono per lo più file [!DNL Adobe InDesign], la conoscenza di [!DNL Adobe InDesign] non costituisce un ostacolo alla creazione di artefatti stellari. Non è necessario mappare i campi del modello [!DNL Adobe InDesign] con i campi prodotto che altrimenti sarebbero necessari durante la creazione dei cataloghi. Puoi modificare i modelli in modalità WYSIWYG direttamente sull’interfaccia web. Tuttavia, affinché [!DNL Adobe InDesign] possa elaborare le modifiche, devi prima configurare [!DNL Experience Manager Assets] per l&#39;integrazione con [!DNL Adobe InDesign Server].
 
-La possibilità di modificare [!DNL Adobe InDesign] modelli dall&#39;interfaccia Web consente di migliorare la collaborazione tra il personale creativo e il personale di marketing. La maggiore velocità dei contenuti riduce il time-to-market dei materiali di marketing.
+La possibilità di modificare i modelli [!DNL Adobe InDesign] dall&#39;interfaccia Web consente di migliorare la collaborazione tra il personale creativo e il personale di marketing. La maggiore velocità dei contenuti riduce il time-to-market dei materiali di marketing.
 
 Con i modelli di risorse puoi ottenere quanto segue:
 
-* Modifica i campi modello modificabili dall’interfaccia web.
+* Modifica i campi modello modificabili dall’interfaccia Web.
 * Controlla lo stile di base del testo, ad esempio la dimensione, lo stile e il tipo di carattere a livello di tag.
 * Modifica le immagini all’interno del modello utilizzando il Selettore contenuto.
 * Visualizzare in anteprima le modifiche apportate ai modelli.
@@ -67,7 +67,7 @@ Considera uno scenario in cui desideri creare materiale collaterale digitale sta
 
 ## Modificare un materiale promozionale {#editing-a-collateral}
 
-Potete modificare un materiale promozionale subito dopo averlo creato. In alternativa, è possibile aprirlo dalla pagina [!UICONTROL Modelli] o dalla pagina della risorsa.
+Potete modificare un materiale promozionale subito dopo averlo creato. In alternativa, è possibile aprirlo dalla pagina [!UICONTROL Modelli] o dalla pagina Risorsa.
 
 1. Per aprire il materiale promozionale per la modifica, effettuare una delle seguenti operazioni:
 
@@ -90,7 +90,7 @@ Potete modificare un materiale promozionale subito dopo averlo creato. In altern
 
    >[!NOTE]
    >
-   >Assicurarsi che la distribuzione di [!DNL Experience Manager] sia integrata con un [!DNL InDesign Server] per consentire a [!DNL Experience Manager Assets] di estrarre i dati dal modello di [!DNL InDesign] e renderli disponibili per la modifica. Per ulteriori dettagli, vedere [Integrare Experience Manager Assets con InDesign Server](/help/assets/indesign.md).
+   >Integra la distribuzione di [!DNL Experience Manager] con [!DNL InDesign Server] in modo che [!DNL Experience Manager Assets] possa estrarre i dati dal modello di [!DNL InDesign] e renderli disponibili per la modifica. Per ulteriori dettagli, vedere [Integrare Experience Manager Assets con InDesign Server](/help/assets/indesign.md).
 
 1. Per modificare il testo in un campo modificabile, fare clic sul campo di testo nell&#39;elenco dei campi modificabili e modificare il testo nel campo.
 
@@ -124,12 +124,11 @@ Potete modificare un materiale promozionale subito dopo averlo creato. In altern
    >
    >Per consentire a [!DNL Experience Manager] di risolvere le immagini, eseguire le operazioni seguenti:
    >
-   >* Incorpora le immagini durante la creazione di [!DNL InDesign] modelli (consulta [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/it/indesign/using/graphics-links.html)).
-   >* Montare [!DNL Experience Manager] nel file system locale, quindi mappare le icone mancanti con le risorse esistenti in [!DNL Experience Manager].
+   >* Incorpora le immagini durante la creazione di [!DNL InDesign] modelli (consulta [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Montare [!DNL Experience Manager] nel file system locale, quindi associare le icone mancanti alle risorse esistenti in [!DNL Experience Manager].
    >
-   >Per ulteriori informazioni sull&#39;utilizzo di [!DNL InDesign] documenti, vedere [best practice per l&#39;utilizzo di documenti InDesign nell&#39;Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
-1. Per generare un rendering PDF per la brochure, seleziona l&#39;opzione Acrobat nella finestra di dialogo e fai clic su **[!UICONTROL Continua]**.
+1. Per generare una copia trasformata di PDF per la brochure, seleziona l&#39;opzione Acrobat nella finestra di dialogo, quindi fai clic su **[!UICONTROL Continua]**.
 1. Il materiale promozionale viene creato nella cartella con cui hai iniziato. Per visualizzare le rappresentazioni, aprire il materiale collaterale e scegliere **[!UICONTROL Rappresentazioni]** dall&#39;elenco GlobalNav.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)

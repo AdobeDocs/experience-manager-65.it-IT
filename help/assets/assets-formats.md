@@ -8,16 +8,16 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 26%
+source-wordcount: '1556'
+ht-degree: 12%
 
 ---
 
 # Formati supportati in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzionalità supporta diversi tipi MIME. Per integrare [!DNL Assets] con altre soluzioni DAM (Digital Asset Management) e software desktop conformi agli standard, utilizzare l&#39;Adobe [!DNL Extensible Metadata Platform] (XMP).
+[!DNL Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzionalità supporta diversi tipi MIME. Per integrare [!DNL Assets] con altre soluzioni DAM (Digital Asset Management) e software desktop conformi agli standard, utilizzare Adobe [!DNL Extensible Metadata Platform] (XMP).
 
 La legenda seguente indica i diversi livelli di supporto.
 
@@ -61,9 +61,9 @@ Oltre alle informazioni di cui sopra, considera quanto segue:
 
 È supportato il seguente elenco di formati 3D.
 
-Vedi anche [Utilizzo di risorse 3D in Dynamic Medie.](/help/assets/assets-3d.md)
+Vedi anche [Utilizzo di risorse 3D in Dynamic Media.](/help/assets/assets-3d.md)
 
-| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo degli accessi | Anteprima miniatura | Anteprima 3D | Consegna Dynamic Medie |
+| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo degli accessi | Anteprima miniatura | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | | ✓ | ✓ | − | − |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
@@ -74,9 +74,9 @@ Vedi anche [Utilizzo di risorse 3D in Dynamic Medie.](/help/assets/assets-3d.md)
 
 ## Libreria PDF Rasterizer supportata {#supported-pdf-rasterizer-library}
 
-La libreria Adobe PDF Rasterizer genera anteprime e miniature di alta qualità per file di grandi dimensioni e con un elevato numero di contenuti [!DNL Adobe Illustrator] e PDF. L’Adobe consiglia di utilizzare la libreria PDF Rasterizer per i seguenti elementi:
+La libreria Rasterizer di Adobe PDF genera anteprime e miniature di alta qualità per file [!DNL Adobe Illustrator] e PDF di grandi dimensioni e ad uso intensivo di contenuti. Adobe consiglia di utilizzare la libreria Rasterizer di PDF per i seguenti elementi:
 
-* File AI/PDF a uso intensivo di contenuti che richiedono molte risorse per essere elaborati.
+* File AI/PDF ad uso intensivo di contenuti che richiedono molte risorse per essere elaborati.
 * File AI/PDF, per i quali le miniature non vengono generate per impostazione predefinita.
 * File AI con colori Pantone Matching System (PMS).
 
@@ -86,11 +86,11 @@ Vedere [Utilizzo di PDF Rasterizer](aem-pdf-rasterizer.md).
 
 La libreria Adobe Imaging Transcoding è una soluzione di elaborazione delle immagini che esegue funzioni di base per la gestione delle immagini, quali codifica, transcodifica, ricampionamento e ridimensionamento.
 
-La libreria Imaging Transcoding supporta JPG/JPEG, PNG (8 bit e 16 bit), GIF, BMP, TIFF/Compressed TIFF (a parte i file TIFF a 32 bit e i file PTIFF), ICO e ICN MIME.
+La libreria Imaging Transcoding supporta JPG/JPEG, PNG (8 bit e 16 bit), GIF, BMP, TIFF/Compressed TIFF (a parte i file TIFF a 32 bit e i file PTIFF), ICO e i tipi ICN MIME.
 
 Vedi [Libreria trascodifica immagini](imaging-transcoding-library.md).
 
-## Supportato in Camera Raw {#supported-camera-raw}
+## Camera Raw supportato {#supported-camera-raw}
 
 La libreria [!DNL Adobe Camera Raw] consente a [!DNL Assets] di acquisire immagini non elaborate. Consulta [Supporto Camera Raw](camera-raw.md).
 
@@ -146,7 +146,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM comuni sono descritti nella tabella seguente.
 
-| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Medie |
+| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
@@ -158,7 +158,7 @@ I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM c
 
 Di seguito è descritta l’applicabilità delle usuali funzionalità DAM per alcuni formati di file specifici.
 
-| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Medie |
+| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -178,46 +178,46 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global
 
 | Estensione file | Tipo MIME/tipo di file multimediale Internet | Valore jobParam predefinito | Valore jobParam consentito |
 |---|---|---|---|
-| Immagine | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | Il valore predefinito jobParam si applica a tutte le risorse di tipo MIME per immagini.<ul><li>[knockoutBackgroundOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html?lang=it)</li><li>[manualCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html?lang=it)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html?lang=it)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html?lang=it)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html?lang=it)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html?lang=it)</li><li>[emailSetting](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html?lang=it)</li><li>[xmpKeywords](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html?lang=it)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html?lang=it)</li></ul> |
-| 3G2 | video/3gpp2 | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| 3GP | video/3gpp | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| Immagine | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | Il valore predefinito jobParam si applica a tutte le risorse di tipo MIME per immagini.<ul><li>[knockoutBackgroundOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options)</li><li>[manualCropOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options)</li><li>[emailSetting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings)</li><li>[xmpKeywords](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options)</li></ul> |
+| 3G2 | video/3gpp2 | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| 3GP | video/3gpp | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | AAC | audio/x-aac | | |
 | AFM | application/x-font-type1 | | |
-| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[opzioniPostScript](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=it)</li><li> [illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=it)</li></ul> |
+| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[opzioniPostScript](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li> [illustratorOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options)</li></ul> |
 | AIFF | audio/x-aiff | | |
-| AVI | video/x-msvideo | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| AVI | video/x-msvideo | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | BMP | image/bmp | | |
 | CSS | text/css | | |
 | DOC | application/msword | | |
 | EPS | <ul><li>application/postscript</li><li>application/eps</li><li>application/x-eps</li><li>image/eps</li><li>image/x-eps</li></ul> | | |
 | F4V | video/x-f4v | | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash | | |
-| FLV | video/x-flv | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| FLV | video/x-flv | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | FPX | image/vnd.fpx | | |
 | GIF | image/gif | | |
 | ICC | application/vnd.iccprofile | | |
 | ICM | application/vnd.iccprofile | | |
 | INDD | application/x-indesign | | |
 | JPEG | image/jpeg | | |
-| JPG- | image/jpeg | | |
-| M2V | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| M4V | video/x-m4v | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| MOV | video/quicktime | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| JPG | image/jpeg | | |
+| M2V | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| M4V | video/x-m4v | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| MOV | video/quicktime | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | MP3 | audio/mpeg | | |
-| MP4 | video/mp4 | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| MPEG | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| MPG | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| MP4 | video/mp4 | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| MPEG | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| MPG | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | MTS | model/vnd.mts | | |
-| OGV | video/ogg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| OGV | video/ogg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | OTF | application/x-font-otf | | |
-| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [opzioniPDF](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options.html?lang=it) |
+| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [opzioniPDF](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options) |
 | PFB | application/x-font-type1 | | |
 | PFM | application/x-font-type1 | | |
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms-powerpoint | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[opzioniPostScript](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=it)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=it)</li></ul> |
-| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html?lang=it)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html?lang=it)</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[opzioniPostScript](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li>[illustratorOptions]&#x200B;(https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options)</li></ul> |
+| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |
 | SWF | application/x-shockwave-flash | | |
@@ -225,21 +225,21 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global
 | TIF/TIFF | image/tiff | | |
 | TTC | application/x-font-ttf | | |
 | TTF | application/x-font-ttf | | |
-| VOB | video/dvd | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| VOB | video/dvd | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | VTT | text/vtt | | |
 | WAV | audio/x-wav | | |
-| WEBM | video/webm | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| WEBM | video/webm | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | WMA | audio/x-ms-wma | | |
-| WMV | video/x-ms-wmv | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| WMV | video/x-ms-wmv | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | XLS | application/vnd.ms-excel | | |
 | ZIP | application/zip | | |
 
-## Dynamic Medie - Formati video di ingresso supportati per la transcodifica {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Dynamic Media: formati video di ingresso supportati per la transcodifica {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
 |---|---|---|---|
 | AVI | Interfoliazione A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
-| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, animazione Apple |
@@ -250,29 +250,29 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global
 | WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Schermo Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
 
-‡ Questo formato video non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie o con Annotation in Experience Manager Assets.
+‡ Questo formato video non è ancora supportato per l’utilizzo con video interattivi in Dynamic Media o con Annotation in Experience Manager Assets.
 
-## Dynamic Medie - Formati di documenti supportati {#supported-document-formats-dynamic-media}
+## Dynamic Media - Formati di documenti supportati {#supported-document-formats-dynamic-media}
 
 | Formato | Carica<br> (formato di input) | Crea <br> immagine<br> predefinito<br> (formato di output) | Anteprima <br> rappresentazione dinamica<br> | Consegna <br> rappresentazione dinamica<br> | Scarica <br> rappresentazione dinamica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [IA](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (vedi la nota seguente) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (vedere la nota seguente) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
->Per PDF sicuri, è supportato solo il caricamento.
+>Per i PDF protetti, è supportato solo il caricamento.
 
 Oltre alle funzionalità di cui sopra, considera quanto segue:
 
-* Per utilizzare Dynamic Medie per generare rappresentazioni dinamiche per i file PDF, vedere [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file PDF, vedere [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Per utilizzare Dynamic Medie per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, vedere [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, vedere [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Per utilizzare Dynamic Medie per generare rappresentazioni dinamiche per i file INDD, vedere [Formato di file InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file INDD, vedere [Formato file InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
 
-## Dynamic Medie - Formati di immagine raster supportati {#supported-raster-image-formats-dynamic-media}
+## Dynamic Media - Formati supportati per le immagini raster {#supported-raster-image-formats-dynamic-media}
 
 | Formato | Carica (formato di input) | Crea predefinito immagine (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di una rappresentazione dinamica | Scarica rappresentazione dinamica | Imposta i tipi che supportano questo formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
@@ -298,11 +298,9 @@ Oltre alle funzionalità di cui sopra, considera quanto segue:
 
 * Per i file EPS, il writeback dei metadati è supportato in PostScript Document Structuring Convention (PS-Adobe) versione 3.0 o successiva.
 
-## Dynamic Medie - Formati immagine raster non supportati {#unsupported-image-formats-dynamic-media}
+## Dynamic Media - Formati immagine raster non supportati {#unsupported-image-formats-dynamic-media}
 
-Nell&#39;elenco seguente vengono descritti i sottotipi di formati di file immagine raster *non* supportati in Dynamic Medie.
-
-Vedere anche [Rileva formati di file non supportati per l&#39;articolo della Knowledge Base di Dynamic Medie](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Nell&#39;elenco seguente vengono descritti i sottotipi di formati di file immagine raster *non* supportati in Dynamic Media.
 
 * File PNG con dimensioni del blocco IDAT superiori a 100 MB.
 * File PSB.
@@ -329,11 +327,11 @@ The following table describes the sub-types of raster image formats that are *no
 |  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
 -->
 
-## Dynamic Medie - Formati 3D supportati {#supported-three-d-file-formats-in-dm}
+## Dynamic Media - Formati 3D supportati {#supported-three-d-file-formats-in-dm}
 
-Dynamic Medie supporta i seguenti formati 3D.
+Dynamic Media supporta i seguenti formati 3D.
 
-Vedi anche [Utilizzo di risorse 3D in Dynamic Medie](/help/assets/assets-3d.md).
+Vedi anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/assets-3d.md).
 
 | Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
