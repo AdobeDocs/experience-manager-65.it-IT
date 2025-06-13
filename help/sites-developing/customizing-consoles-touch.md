@@ -64,7 +64,7 @@ Ad esempio, è possibile sovrapporre la seguente posizione all&#39;interno della
 
 >[!NOTE]
 >
->Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935).
+>Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-16935).
 
 ## Personalizzazione della vista predefinita per una console {#customizing-the-default-view-for-a-console}
 

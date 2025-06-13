@@ -28,7 +28,7 @@ App Builder offre ai clienti un modo per estendere facilmente Adobe Experience M
 
 >[!NOTE]
 >
->Per i clienti di AEM as a Cloud Service che desiderano utilizzare App Builder, consulta [Estensione di Adobe Experience Manager as a Cloud Service con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+>Per i clienti di AEM as a Cloud Service che desiderano utilizzare App Builder, consulta [Estensione di Adobe Experience Manager as a Cloud Service con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=it).
 
 ## Architettura {#architecture}
 

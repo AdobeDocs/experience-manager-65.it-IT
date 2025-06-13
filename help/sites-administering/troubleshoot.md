@@ -101,7 +101,7 @@ L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. S
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Per ulteriori informazioni, consulta la [documentazione su come estrarre immagini thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+Per ulteriori informazioni, consulta la [documentazione su come estrarre immagini thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
 
 ### Verifica di sessioni JCR non chiuse {#checking-for-unclosed-jcr-sessions}
 
@@ -111,7 +111,7 @@ Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le ses
 * È possibile visualizzare gran parte di CacheManager: resizeAll voci nel file di registro; il seguente numero (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
 * Di tanto in tanto il sistema esaurisce la memoria (dopo alcune ore, giorni o settimane, a seconda della gravità).
 
-Per avviare l&#39;analisi delle sessioni non chiuse, vedere l&#39;articolo della Knowledge Base [Risolutore risorse non chiuso](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Per avviare l&#39;analisi delle sessioni non chiuse, vedere l&#39;articolo della Knowledge Base [Risolutore risorse non chiuso](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Utilizzo della console Web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
