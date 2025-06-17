@@ -10,7 +10,8 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 85%
@@ -37,15 +38,15 @@ Il supporto SPA in AEM introduce un livello JS sottile che interagisce con il co
 Per ulteriori dettagli su SPA in AEM, consulta i seguenti documenti:
 
 * [Blueprint SPA](/help/sites-developing/spa-blueprint.md) per i requisiti tecnici di una SPA
-* [Guida introduttiva all&#39;SPA nell&#39;AEM](/help/sites-developing/spa-getting-started-react.md) per una presentazione rapida di un semplice SPA
+* [Guida introduttiva alle applicazioni a pagina singola in AEM](/help/sites-developing/spa-getting-started-react.md) per una presentazione rapida di una semplice applicazione a pagina singola
 
 ## Design {#design}
 
-Il componente pagina per una SPA non fornisce gli elementi HTML dei suoi componenti secondari tramite il file JSP o HTL. Questa operazione è delegata al framework SPA. La rappresentazione dei componenti o del modello figlio viene recuperata come struttura dati JSON dal JCR. I componenti SPA vengono quindi aggiunti alla pagina in base a tale struttura. Questo comportamento differenzia la composizione iniziale del corpo del componente della pagina dalle controparti non SPA.
+Il componente pagina per una SPA non fornisce gli elementi HTML dei suoi componenti secondari tramite il file JSP o HTL. Questa operazione è delegata al framework SPA. La rappresentazione dei componenti o del modello secondario viene recuperata come struttura dati JSON dal JCR. I componenti SPA vengono quindi aggiunti alla pagina in base a tale struttura. Questo comportamento differenzia la composizione iniziale del corpo del componente della pagina dalle controparti non SPA.
 
 ### Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina sono delegate a una libreria `PageModel`. L’SPA deve utilizzare la libreria Modello pagina per essere inizializzata e creata dall’Editor SPA. La libreria Modello di pagina fornita indirettamente al componente Pagina AEM tramite l’npm `aem-react-editable-components`. Il Modello di pagina è un interprete tra AEM e SPA e quindi deve essere sempre presente. Quando si crea la pagina, è necessario aggiungere una libreria aggiuntiva `cq.authoring.pagemodel.messaging` per abilitare la comunicazione con l&#39;editor pagina.
+La risoluzione e la gestione del modello di pagina sono delegate a una libreria `PageModel`. L’applicazione a pagina singola deve utilizzare la libreria Modello pagina per essere inizializzata e creata dall’editor di applicazioni a pagina singola. La libreria Modello di pagina fornita indirettamente al componente Pagina AEM tramite l’npm `aem-react-editable-components`. Il Modello di pagina è un interprete tra AEM e SPA e quindi deve essere sempre presente. Quando si crea la pagina, è necessario aggiungere una libreria aggiuntiva `cq.authoring.pagemodel.messaging` per abilitare la comunicazione con l&#39;editor pagina.
 
 Se il componente pagina SPA eredita dal componente core della pagina, sono disponibili due opzioni per rendere la categoria libreria client `cq.authoring.pagemodel.messaging` disponibile:
 
@@ -157,7 +158,7 @@ Questa è una panoramica più dettagliata incentrata sull’esperienza di author
 
 ## Requisiti e limitazioni {#requirements-limitations}
 
-Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Consulta la [Guida introduttiva all&#39;SPA nell&#39;AEM](/help/sites-developing/spa-getting-started-react.md) per sapere quanto meno se è necessario per eseguire le tue attività.
+Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Consulta [Guida introduttiva alle applicazioni a pagina singola in AEM](/help/sites-developing/spa-getting-started-react.md) per informazioni minime necessarie per l&#39;esecuzione.
 
 ### Framework supportati {#supported-frameworks}
 
@@ -170,7 +171,7 @@ Le versioni precedenti di questi framework possono funzionare con l’SDK dell�
 
 ### Framework aggiuntivi {#additional-frameworks}
 
-Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Per informazioni sui requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi da utilizzare con l&#39;Editor SPA dell&#39;AEM, vedere [Blueprint SPA](/help/sites-developing/spa-blueprint.md).
+Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Per informazioni sui requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi da utilizzare con l&#39;Editor SPA di AEM, consulta la [Blueprint SPA](/help/sites-developing/spa-blueprint.md).
 
 ### Utilizzo di più selettori {#multiple-selectors}
 
@@ -189,7 +190,7 @@ Per ulteriori informazioni sulla proprietà `editElementQuery` e la configurazio
 
 ### Limitazioni {#limitations}
 
-Il SDK dell’Editor SPA dell’AEM è stato introdotto con AEM 6.4 service pack 2. È completamente supportato da Adobe, e continua a essere migliorato ed espanso. Le seguenti funzioni di AEM non sono ancora supportate dall’editor di SPA:
+AEM SPA Editor SDK è stato introdotto con AEM 6.4 service pack 2. È completamente supportato da Adobe e continua a essere migliorato ed espanso. Le seguenti funzioni di AEM non sono ancora supportate dall’editor di SPA:
 
 * Modalità di destinazione
 * ContextHub
@@ -197,6 +198,6 @@ Il SDK dell’Editor SPA dell’AEM è stato introdotto con AEM 6.4 service pack
 * Modifica le configurazioni (ad esempio ascoltatori)
 * Annulla/Ripeti
 * Differenze tra pagine e alterazione ora
-* Funzioni che eseguono la riscrittura HTML lato server, come Verifica collegamenti, servizio di rewriter CDN, abbreviazione URL e così via.
+* Funzioni che eseguono la riscrittura lato server di HTML, come Verifica collegamenti, servizio di rewriter CDN, abbreviazione degli URL e così via.
 * Modalità sviluppatore
 * Lanci AEM

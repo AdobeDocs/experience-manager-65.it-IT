@@ -1,5 +1,5 @@
 ---
-title: Mappatura di un modello dinamico a un componente per SPA
+title: Mappatura da modello dinamico a componente per applicazioni a pagina singola
 description: Scopri come avviene la mappatura del modello dinamico ai componenti in JavaScript SPA SDK for Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,7 +9,8 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -17,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Mappatura di un modello dinamico a un componente per SPA{#dynamic-model-to-component-mapping-for-spas}
+# Mappatura da modello dinamico a componente per applicazioni a pagina singola{#dynamic-model-to-component-mapping-for-spas}
 
-Questo documento descrive come avviene la mappatura del modello dinamico ai componenti in JavaScript SPA SDK for Adobe Experience Manager (AEM).
+Questo documento descrive come si verifica il modello dinamico per la mappatura dei componenti in JavaScript SPA SDK for Adobe Experience Manager (AEM).
 
 {{ue-over-spa}}
 
@@ -29,7 +30,7 @@ Il modulo `ComponentMapping` viene fornito come pacchetto NPM al progetto front-
 
 Ogni elemento presente nel modello contiene un campo `:type` che espone un tipo di risorsa AEM. Una volta montato, il componente front-end può eseguire il rendering utilizzando il frammento di modello ricevuto dalle librerie sottostanti.
 
-Per ulteriori informazioni sull&#39;analisi del modello e sull&#39;accesso al componente front-end del modello, vedere [Blueprint per SPA](/help/sites-developing/spa-blueprint.md).
+Per ulteriori informazioni sull&#39;analisi del modello e sull&#39;accesso al componente front-end del modello, vedere [Blueprint SPA](/help/sites-developing/spa-blueprint.md).
 
 Vedi anche il pacchetto npm: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 

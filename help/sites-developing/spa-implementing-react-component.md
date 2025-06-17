@@ -1,6 +1,6 @@
 ---
 title: Implementazione di un Componente React per applicazioni a pagina singola (SPA)
-description: Questo articolo illustra come adattare un componente React semplice esistente all’editor SPA di Adobe Experience Manager (AEM).
+description: Questo articolo presenta un esempio di come adattare un componente React semplice ed esistente per funzionare con l’editor SPA di Adobe Experience Manager (AEM).
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,8 @@ exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 9%
@@ -22,15 +23,15 @@ ht-degree: 9%
 
 Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti agli utenti di siti web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando framework SPA e gli autori desiderano modificare facilmente i contenuti all’interno di Adobe Experience Manager (AEM) per un sito creato utilizzando framework SPA.
 
-La funzione di authoring dell’SPA offre una soluzione completa per il supporto dell’SPA nell’ambito dell’AEM. Questo articolo presenta un esempio di come adattare un componente React semplice ed esistente per lavorare con l’Editor SPA dell’AEM.
+La funzione di authoring di applicazioni a pagina singola offre una soluzione completa per il supporto di applicazioni a pagina singola in AEM. Questo articolo presenta un esempio di come adattare un componente React semplice ed esistente per funzionare con l’editor SPA di AEM.
 
 {{ue-over-spa}}
 
 ## Introduzione {#introduction}
 
-Grazie al contratto semplice e leggero richiesto dall&#39;AEM e stabilito tra l&#39;SPA e l&#39;SPA Editor, è facile prendere un&#39;applicazione JavaScript esistente e adattarla per l&#39;uso con un SPA in AEM.
+Grazie al contratto semplice e leggero richiesto da AEM e stabilito tra l’applicazione a pagina singola e l’editor di applicazioni a pagina singola, è facile prendere un’applicazione JavaScript esistente e adattarla per l’utilizzo con un’applicazione a pagina singola in AEM.
 
-Questo articolo illustra l’esempio della componente meteo sull’SPA di esempio del Diario We.Retail.
+Questo articolo illustra l’esempio della componente meteo nell’applicazione a pagina singola di esempio di We.Retail Journal.
 
 Prima di leggere questo articolo, è necessario conoscere la struttura [di un&#39;applicazione SPA per AEM](/help/sites-developing/spa-getting-started-react.md).
 
@@ -47,11 +48,11 @@ Il componente meteo si trova in alto a sinistra nell’app We.Retail Journal. Vi
 
 ![schermata_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-Quando si crea un contenuto dell’SPA nell’Editor SPA, la componente meteo viene visualizzata come qualsiasi altro componente AEM, completa di una barra degli strumenti, ed è modificabile.
+Quando si crea un contenuto dell’applicazione a pagina singola nell’editor dell’applicazione a pagina singola, il componente meteo viene visualizzato come qualsiasi altro componente di AEM, completo di una barra degli strumenti, ed è modificabile.
 
 ![schermata_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
-La città può essere aggiornata in una finestra di dialogo come qualsiasi altra componente dell’AEM.
+La città può essere aggiornata in una finestra di dialogo come qualsiasi altro componente di AEM.
 
 ![schermata_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
 
@@ -70,7 +71,7 @@ Di seguito sono riportati alcuni snippet della documentazione NPM relativa all�
 Analisi del codice del componente meteo personalizzato ( `Weather.js`) nell&#39;applicazione del diario We.Retail:
 
 * **Riga 16**: il widget Meteo React Open è stato caricato come richiesto.
-* **Riga 46**: la funzione `MapTo` collega il componente React a un componente AEM corrispondente in modo che possa essere modificato nell&#39;editor SPA.
+* **Riga 46**: la funzione `MapTo` mette in relazione il componente React con un componente AEM corrispondente in modo che possa essere modificato nell&#39;editor SPA.
 
 * **Righe 22-29**: `EditConfig` è definito, verificando se la città è stata popolata e definendo il valore se vuoto.
 
@@ -125,8 +126,8 @@ class Weather extends Component {
 MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig);
 ```
 
-Anche se un componente back-end deve già esistere, lo sviluppatore front-end può utilizzare il componente React Open Weather nell’SPA di We.Retail Journal con poca codifica.
+Anche se un componente back-end deve già esistere, lo sviluppatore front-end può utilizzare il componente React Open Weather nell’applicazione a pagina singola di We.Retail Journal con poca codifica.
 
 ## Passaggio successivo {#next-step}
 
-Per ulteriori informazioni sullo sviluppo dell&#39;SPA per l&#39;AEM, vedere l&#39;articolo [Sviluppo dell&#39;SPA per l&#39;AEM](/help/sites-developing/spa-architecture.md).
+Per ulteriori informazioni sullo sviluppo di applicazioni a pagina singola per AEM, vedere l&#39;articolo [Sviluppo di applicazioni a pagina singola per AEM](/help/sites-developing/spa-architecture.md).

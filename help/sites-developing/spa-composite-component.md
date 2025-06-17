@@ -1,11 +1,12 @@
 ---
 title: Componenti compositi negli SPA
-description: Scopri come creare componenti compositi personalizzati, composti da altri componenti compatibili con l’editor di applicazioni a pagina singola (SPA) dell’AEM.
+description: Scopri come creare componenti compositi personalizzati, composti da altri componenti compatibili con l’editor di applicazioni a pagina singola di AEM.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
@@ -15,11 +16,11 @@ ht-degree: 1%
 
 # Componenti compositi negli SPA {#composite-components-in-spas}
 
-I componenti compositi utilizzano la natura modulare dei componenti dell’AEM combinando più componenti di base in un unico componente. Un caso d’uso comune di componente composito è il componente scheda, costituito da una combinazione dei componenti immagine e testo.
+I componenti compositi utilizzano la natura modulare dei componenti di AEM combinando più componenti di base in un singolo componente. Un caso d’uso comune di componente composito è il componente scheda, costituito da una combinazione dei componenti immagine e testo.
 
-Quando i componenti compositi vengono implementati correttamente nel framework dell’Editor applicazioni a pagina singola (SPA) dell’AEM, gli autori dei contenuti possono trascinare e rilasciare tali componenti come farebbero con qualsiasi altro componente, ma hanno comunque la possibilità di modificare singolarmente ogni componente che costituisce il componente composito.
+Quando i componenti compositi vengono implementati correttamente nel framework dell’Editor applicazioni a pagina singola di AEM, gli autori dei contenuti possono trascinare e rilasciare tali componenti come farebbero con qualsiasi altro componente, ma hanno comunque la possibilità di modificare singolarmente ogni componente che costituisce il componente composito.
 
-Questo articolo illustra come aggiungere un componente composito all’applicazione a pagina singola per lavorare direttamente con l’editor SPA dell’AEM.
+Questo articolo illustra come aggiungere un componente composito all’applicazione a pagina singola per lavorare senza problemi con l’Editor SPA di AEM.
 
 {{ue-over-spa}}
 
@@ -33,15 +34,15 @@ I seguenti modelli per il supporto dei casi di utilizzo dei componenti compositi
 
 * L’istanza di sviluppo AEM è in esecuzione localmente sulla porta 4502 con un progetto di esempio.
 * Un&#39;app React esterna funzionante [è abilitata per la modifica in AEM.](spa-edit-external.md)
-* L&#39;app React è caricata nell&#39;editor AEM [tramite il componente RemotePage.](spa-remote-page.md)
+* L&#39;app React è caricata nell&#39;editor di AEM [tramite il componente RemotePage.](spa-remote-page.md)
 
-## Aggiunta di componenti compositi a un SPA {#adding-composite-components}
+## Aggiunta di componenti compositi a un’applicazione a pagina singola {#adding-composite-components}
 
-Esistono tre diversi modelli per implementare il componente composito a seconda dell’implementazione SPA all’interno dell’AEM.
+Esistono tre modelli diversi per implementare il componente composito a seconda dell’implementazione dell’applicazione a pagina singola in AEM.
 
 * [Il componente non esiste nel progetto AEM.](#component-does-not-exist)
 * [Il componente esiste nel progetto AEM, ma il contenuto richiesto no.](#content-does-not-exist)
-* [Il componente e il contenuto richiesto sono entrambi presenti nel progetto AEM.](#both-exist)
+* [Il componente e il relativo contenuto richiesto sono entrambi presenti nel progetto AEM.](#both-exist)
 
 Le sezioni seguenti forniscono esempi di implementazione di ogni caso utilizzando il componente scheda come esempio.
 
@@ -49,7 +50,7 @@ Le sezioni seguenti forniscono esempi di implementazione di ogni caso utilizzand
 
 Inizia creando i componenti che costituiranno il componente composito, ovvero i componenti per l’immagine e il relativo testo.
 
-1. Crea la componente testo nel progetto AEM.
+1. Crea il componente testo nel progetto AEM.
 1. Aggiungi il `resourceType` corrispondente dal progetto nel nodo `editConfig` del componente.
 
    ```text
@@ -110,7 +111,7 @@ export const AEMCard = ({ pagePath, itemPath}) => (
 );
 ```
 
-Questo componente composito risultante può ora essere posizionato ovunque nell’app e aggiungerà segnaposto per un componente testo e immagine nell’editor SPA. Nell’esempio seguente, il componente scheda viene aggiunto al componente Home sotto il titolo.
+Questo componente composito risultante può ora essere posizionato ovunque nell&#39;app e aggiungerà segnaposto per un componente testo e immagine nell&#39;editor di applicazioni a pagina singola. Nell’esempio seguente, il componente scheda viene aggiunto al componente Home sotto il titolo.
 
 ```javascript
 function Home() {
@@ -130,13 +131,13 @@ Nell’editor verrà visualizzato un segnaposto vuoto per un testo e un’immagi
 
 ### Il componente esiste nel progetto AEM, ma il contenuto richiesto no. {#content-does-not-exist}
 
-In questo caso, il componente scheda è già stato creato nel progetto AEM contenente il titolo e i nodi immagine. I nodi secondari (testo e immagine) dispongono dei tipi di risorse corrispondenti.
+In questo caso, il componente scheda è già stato creato nel progetto AEM contenente i nodi titolo e immagine. I nodi secondari (testo e immagine) dispongono dei tipi di risorse corrispondenti.
 
 ![Struttura del nodo del componente scheda](assets/composite-node-structure.png)
 
-Puoi quindi aggiungerlo all’SPA e recuperarne il contenuto.
+Puoi quindi aggiungerlo all’applicazione a pagina singola e recuperarne il contenuto.
 
-1. Crea un componente corrispondente nell’SPA a questo scopo. Assicurati che i componenti secondari siano mappati sui corrispondenti tipi di risorse AEM all’interno del progetto SPA. In questo esempio vengono utilizzati gli stessi componenti `AEMText` e `AEMImage` descritti [ nel caso precedente.](#component-does-not-exist)
+1. Crea un componente corrispondente nell’applicazione a pagina singola per questo. Assicurati che i componenti secondari siano mappati sui corrispondenti tipi di risorse AEM all’interno del progetto SPA. In questo esempio vengono utilizzati gli stessi componenti `AEMText` e `AEMImage` descritti [ nel caso precedente.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -152,9 +153,9 @@ Puoi quindi aggiungerlo all’SPA e recuperarne il contenuto.
    MapTo('wknd-spa/components/image')(Image, ImageEditConfig);
    ```
 
-1. Poiché non è presente alcun contenuto per il componente `imagecard`, aggiungi la scheda alla pagina. Includere nell’SPA il contenitore esistente dell’AEM.
-   * Se il progetto AEM contiene già un contenitore, possiamo includerlo nell’SPA e aggiungerlo al contenitore dall’AEM.
-   * Assicurati che il componente della scheda sia mappato sul tipo di risorsa corrispondente nell’SPA.
+1. Poiché non è presente alcun contenuto per il componente `imagecard`, aggiungi la scheda alla pagina. Includi nell’applicazione a pagina singola il contenitore esistente di AEM.
+   * Se nel progetto AEM è già presente un contenitore, possiamo includerlo nell’applicazione a pagina singola e aggiungere invece il componente al contenitore da AEM.
+   * Assicurati che il componente scheda sia mappato sul tipo di risorsa corrispondente nell’applicazione a pagina singola.
 
    ```javascript
    <ResponsiveGrid
@@ -164,13 +165,13 @@ Puoi quindi aggiungerlo all’SPA e recuperarne il contenuto.
 
 1. Aggiungi il componente `wknd-spa/components/imagecard` creato ai componenti consentiti per il componente contenitore [ nel modello di pagina.](/help/sites-authoring/templates.md)
 
-Ora il componente `imagecard` può essere aggiunto direttamente al contenitore nell&#39;editor AEM.
+Ora il componente `imagecard` può essere aggiunto direttamente al contenitore nell&#39;editor di AEM.
 
 ![Scheda composita nell&#39;editor](assets/composite-card.gif)
 
-### Il componente e il contenuto richiesto sono entrambi presenti nel progetto AEM. {#both-exist}
+### Il componente e il relativo contenuto richiesto sono entrambi presenti nel progetto AEM. {#both-exist}
 
-Se il contenuto esiste nell’AEM, può essere incluso direttamente nell’SPA fornendo il percorso del contenuto.
+Se il contenuto esiste in AEM, può essere incluso direttamente nell’applicazione a pagina singola fornendo il percorso del contenuto.
 
 ```javascript
 <AEMCard
@@ -180,4 +181,4 @@ Se il contenuto esiste nell’AEM, può essere incluso direttamente nell’SPA f
 
 ![Percorso composito nella struttura del nodo](assets/composite-path.png)
 
-Il componente `AEMCard` corrisponde al componente definito [ nel caso d&#39;uso precedente.](#content-does-not-exist) In questo caso il contenuto definito nella posizione precedente nel progetto AEM è incluso nell&#39;SPA.
+Il componente `AEMCard` corrisponde al componente definito [ nel caso d&#39;uso precedente.](#content-does-not-exist) Qui il contenuto definito nella posizione precedente nel progetto AEM è incluso nell&#39;applicazione a pagina singola.

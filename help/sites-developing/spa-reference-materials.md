@@ -9,7 +9,8 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%
@@ -21,14 +22,14 @@ ht-degree: 1%
 
 {{ue-over-spa}}
 
-## Riferimenti API di JavaScript per SPA{#spa-javascript-api-references}
+## Riferimenti API di SPA JavaScript{#spa-javascript-api-references}
 
-Di seguito sono riportati i riferimenti API di JavaScript disponibili per i moduli NPM per il framework SDK dell’editor SPA dell’AEM.
+Di seguito sono riportati i riferimenti API di JavaScript disponibili per i moduli NPM per il framework SDK dell’editor SPA di AEM.
 
 * [Mappatura componenti](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gestione modelli pagine](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 * [Componenti modificabili React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Angular di componenti modificabili](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Componenti modificabili di Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Aprire gli archivi GitHub di Source {#github-repositories}
 
@@ -37,5 +38,5 @@ Di seguito sono riportati gli archivi open-source su GitHub per le librerie SPA.
 * [Mappatura componenti](https://github.com/adobe/aem-spa-component-mapping)
 * [Gestione modelli pagine](https://github.com/adobe/aem-spa-page-model-manager)
 * [Componenti modificabili React](https://github.com/adobe/aem-react-editable-components)
-* [Angular di componenti modificabili](https://github.com/adobe/aem-angular-editable-components)
+* [Componenti modificabili di Angular](https://github.com/adobe/aem-angular-editable-components)
 * [Core progetto SPA](https://github.com/adobe/aem-spa-project-core)

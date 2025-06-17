@@ -3,13 +3,14 @@ title: Rimozione dell’editor di SPA
 description: Anche se l’editor di applicazioni a pagina singola rimane supportato da Adobe, scopri cosa significa la sua rimozione dal progetto e quali opzioni hai per i progetti futuri.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
+exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Rimozione dell’editor di SPA {#spa-editor-deprecation}
 
@@ -32,7 +33,7 @@ I seguenti SDK sono ora in fase di blocco delle funzioni.
 * [Core progetto SPA di AEM](https://github.com/adobe/aem-spa-project-core)
 * [Gestione modelli pagina SPA di AEM](https://github.com/adobe/aem-spa-page-model-manager)
 * [Mappatura componente SPA di AEM](https://github.com/adobe/aem-spa-component-mapping)
-* [Componenti modificabili di AEM SPA React](https://github.com/adobe/aem-react-editable-components)
+* [Componenti modificabili di React SPA di AEM](https://github.com/adobe/aem-react-editable-components)
    * [Componenti core React di AEM](https://github.com/adobe/aem-react-core-wcm-components)
    * [Base componenti core React di AEM](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [SPA dei componenti core AEM React](https://github.com/adobe/aem-react-core-wcm-components-spa)
@@ -64,7 +65,7 @@ L&#39;editor universale offre molti vantaggi, rendendo la migrazione ad esso un&
 * **Future-Proofing:** la roadmap di AEM dà priorità all&#39;editor universale come editor visivo. La sua adozione garantisce l’accesso alle innovazioni e ai miglioramenti più recenti.
 * **Integrazione semplificata:** Non è necessario alcun SDK specifico per AEM per utilizzare Universal Editor, riducendo il blocco dello stack tecnologico.
 * **Porta la tua app:** Universal Editor supporta qualsiasi framework o architettura Web, consentendo l&#39;adozione senza richiedere il refactoring complesso.
-* **Estensibilità:** Universal Editor dispone di un solido framework di [estensione,](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) che include integrazioni con GenAI, Workfront e altro ancora.
+* **Estensibilità:** Universal Editor dispone di un solido framework di [estensione,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) che include integrazioni con GenAI, Workfront e altro ancora.
 
 Non esiste un percorso di migrazione diretta dall’editor SPA all’editor universale. Ciò è dovuto a differenze fondamentali nelle due tecnologie.
 
@@ -87,7 +88,7 @@ L’editor universale offre molta più libertà agli implementatori di app web, 
 
 ![Architetture Universal Editor e SPA Editor confrontate](assets/spa-editor-vs-ue.png)
 
-|  | Editor SPA | Editor universale |
+|  | Editor di SPA | Editor universale |
 |---|---|---|
 | **Tema** | L’app deve implementare il layout con il CSS griglia di AEM. | L’app può utilizzare qualsiasi tecnica CSS moderna per il layout. |
 | **Rendering** | L’app deve seguire la struttura di indirizzamento dell’editor di applicazioni a pagina singola. | L’app può essere implementata liberamente, senza regole o pattern imposti da seguire. |
