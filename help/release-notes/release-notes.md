@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 21d0ba51297b4e90645a9ab64d98016598c0a2be
+source-git-commit: 16a75f6308319e07bed68b668fc9c20e0ef5f5c9
 workflow-type: tm+mt
-source-wordcount: '6485'
+source-wordcount: '6444'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Le funzionalità e i miglioramenti principali di questa versione includono:
 
    * Red Hat® Enterprise Linux® 9 (kernel 4.x, 64 bit) 
 
-* [Componente allegato file protetto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): come misura di sicurezza, il componente ora impedisce l&#39;invio di file con estensioni modificate che tentano di ignorare i controlli dei tipi di file consentiti. Tali file vengono bloccati durante l’invio per garantire che siano accettati solo i tipi di file validi.
+* [Componente allegato file protetto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): come misura di sicurezza, il componente ora impedisce l&#39;invio di file con estensioni modificate che tentano di ignorare i controlli dei tipi di file consentiti. Tali file vengono bloccati durante l’invio per garantire che siano accettati solo i tipi di file validi.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -215,11 +215,11 @@ Correggi i tag `<br>` imprevisti nell&#39;Editor Rich Text con la modalità Inco
 
 ### [!DNL Assets]{#assets-6523}
 
-* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, aver selezionato la cartella&#x200B;**[!UICONTROL &#x200B; Search Adobe Stock &#x200B;]**&#x200B;e aver selezionato un&#39;immagine di archivio:
+* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, aver selezionato la cartella**[!UICONTROL  Search Adobe Stock ]**e aver selezionato un&#39;immagine di archivio:
    * L&#39;immagine stock selezionata non può essere concessa in licenza e salvata perché facendo clic su **[!UICONTROL Licenza e salvataggio]** viene visualizzato un elenco a discesa vuoto.
    * Selezionando l&#39;immagine Stock o immettendo nuovamente l&#39;URL della pagina Stock, si reindirizza alla home page di [!DNL AEM], impedendo l&#39;accesso all&#39;immagine Adobe Stock. (ASSETS-48687)
 * Problemi durante la gestione delle cartelle se il nome della cartella include `/` nel nome nella pagina di navigazione locale [!DNL AEM] (6.5.22.0). (ASSETS-46740)
-* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte &#x200B;]**&#x200B;a causa di un elevato utilizzo di memoria. (ASSETS-46738)
+* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte ]**a causa di un elevato utilizzo di memoria. (ASSETS-46738)
 * Problemi di integrazione con [!DNL InDesign] come servizio `Day CQ DAM Mime Type OSGI` che identifica erroneamente [!DNL InDesign] file come `x-adobe-indesign` invece di `x-indesign`. (ASSETS-45953)
 * [!DNL AEM 6.5.21] perdita di dati della sessione rilevata nel passaggio del flusso di lavoro predefinito **[!UICONTROL Pubblicazione pianificata in Brand Portal]**. (ASSETS-44104)
 * **[!UICONTROL Memoria insufficiente]** errori visualizzati in [!DNL AEM] durante l&#39;elaborazione e la pubblicazione delle immagini. Questo problema era dovuto a metodi obsoleti nei flussi di lavoro, ad esempio **[!DNL Dam Asset update]** e **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -676,33 +676,30 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
 
 ### Problemi noti per AEM Forms {#known-issues-aem-forms-6523}
 
-* Quando un cliente effettua l&#39;aggiornamento da Struts 2.x a 6.x, un controllo del tipo più rigoroso può causare errori invisibili all&#39;utente, in particolare quando i componenti della casella di controllo restituiscono false e sono associati a un elenco di *valori interi*. Questa mancata corrispondenza dei valori deve essere gestita esplicitamente per evitare errori di deserializzazione. (FORMS-20203)
+>[!NOTE]
+>
+> Non eseguire l&#39;aggiornamento al Service Pack 6.5.23.0 per i problemi che non dispongono di hotfix disponibili, in quanto potrebbero verificarsi errori imprevisti. Eseguire l&#39;aggiornamento al Service Pack 6.5.23.0 solo dopo il rilascio degli hotfix richiesti.
 
-* Se la conversione da HTML a PDF non riesce su un server SUSE® Linux® (SLES 15 SP6 e versioni successive) con il seguente errore:
-
-  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-quindi impostare la variabile di ambiente seguente e riavviare il server:
-  `OPENSSL_CONF=/etc/ssl`
+* Quando un utente aggiorna Struts da AEM Service Pack 2.5.x a AEM Forms Service Pack 6.x, l’interfaccia utente Criteri non visualizza tutte le configurazioni, ad esempio l’opzione per aggiungere una filigrana. (FORMS-20203)
+* Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.23.0, il servizio di conversione ImageToPDF non riesce e viene visualizzato l&#39;errore (FORMS-20360):
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
 
 * Dopo aver installato AEM Forms JEE Service Pack 21 (6.5.21.0), se trovi voci duplicate dei file jar Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` nella cartella `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), effettua le seguenti operazioni per risolvere il problema:
 
    1. Fermate i localizzatori, se sono in esecuzione.
-   1. Arresta il server AEM.
-   1. Passare a `<AEM_Forms_Installation>/lib/caching/lib`.
-   1. Rimuovere tutti i file patch Geode ad eccezione di `geode-*-1.15.1.2.jar`. Verificare che siano presenti solo i file jar Geode con `version 1.15.1.2`.
-   1. Apri il prompt dei comandi in modalità amministratore.
-   1. Installare la patch Geode utilizzando il file `geode-*-1.15.1.2.jar`.
+   2. Arresta il server AEM.
+   3. Passare a `<AEM_Forms_Installation>/lib/caching/lib`.
+   4. Rimuovere tutti i file patch Geode ad eccezione di `geode-*-1.15.1.2.jar`. Verificare che siano presenti solo i file jar Geode con `version 1.15.1.2`.
+   5. Apri il prompt dei comandi in modalità amministratore.
+   6. Installare la patch Geode utilizzando il file `geode-*-1.15.1.2.jar`.
 
 * Se un utente tenta di visualizzare in anteprima una bozza di lettera con dati XML salvati, per alcune lettere specifiche si blocca nello stato `Loading`. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-14521)
-
-* Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.21.0, il servizio `PaperCapture` non è in grado di eseguire operazioni OCR (riconoscimento ottico dei caratteri) sui PDF. Il servizio non genera output sotto forma di PDF o file di registro. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
-
 * Quando si esegue l’aggiornamento da AEM 6.5 Forms Service Pack 18 o 19 a Service Pack 20 o 21, si verifica un errore di compilazione JSP. Questo errore impediva loro di aprire o creare moduli adattivi. Inoltre, ha causato problemi con altre interfacce AEM. Tali interfacce includevano l’Editor pagina, l’interfaccia utente di AEM Forms, l’Editor flusso di lavoro e l’interfaccia utente Panoramica sistema. (FORMS-15256)
 
   In caso di problemi di questo tipo, effettua le seguenti operazioni per risolverli:
    1. Passare alla directory `/libs/fd/aemforms/install/` in CRXDE.
-   1. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
-   1. Riavvia il server AEM.
+   2. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
+   3. Riavvia il server AEM.
 
 * Dopo l&#39;aggiornamento ad AEM Forms Service Pack 20 (6.5.20.0) con il componente aggiuntivo Forms, le configurazioni basate sul servizio Adobe Analytics Cloud legacy che utilizzano l&#39;autenticazione basata sulle credenziali cessano di funzionare. Questo problema impediva la corretta esecuzione delle regole di analisi. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 * Nell’anteprima di stampa dell’interfaccia utente di Interactive Communications Agent, il simbolo di valuta (ad esempio il simbolo del dollaro $) viene visualizzato in modo incoerente per tutti i valori dei campi. Viene visualizzato per valori fino a 999 ma non per valori di 1000 e superiori. (FORMS-16557)
@@ -732,10 +729,10 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedervi, contatta il tuo account manager Adobe.
 
 * [Download del prodotto all&#39;indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/it/docs/customer-one/using/home).
+* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
