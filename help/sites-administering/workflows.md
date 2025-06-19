@@ -9,9 +9,9 @@ exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -24,10 +24,10 @@ I flussi di lavoro consentono di automatizzare le attività di Adobe Experience 
 
    * Ogni passaggio esegue un’attività distinta, ad esempio l’attesa dell’input dell’utente, l’attivazione di una pagina o l’invio di un messaggio e-mail.
 
-* Può interagire con le risorse nell’archivio, negli account utente e nei servizi AEM.
-* Può coordinare attività complicate che coinvolgono qualsiasi aspetto dell&#39;AEM.
+* Può interagire con le risorse nell’archivio, gli account utente e i servizi AEM.
+* Può coordinare attività complicate che coinvolgono qualsiasi aspetto di AEM.
 
-I processi aziendali stabiliti dalla tua organizzazione possono essere rappresentati come flussi di lavoro. Ad esempio, il processo di pubblicazione dei contenuti dei siti web include in genere passaggi quali l’approvazione e l’approvazione da parte di vari soggetti interessati. Questi processi possono essere implementati come flussi di lavoro AEM e applicati a pagine di contenuti e risorse.
+I processi aziendali stabiliti dalla tua organizzazione possono essere rappresentati come flussi di lavoro. Ad esempio, il processo di pubblicazione dei contenuti dei siti web include in genere passaggi quali l’approvazione e l’approvazione da parte di vari soggetti interessati. Questi processi possono essere implementati come flussi di lavoro di AEM e applicati a pagine di contenuti e risorse.
 
 * [Avvio dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
 * [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md)
@@ -44,7 +44,7 @@ I processi aziendali stabiliti dalla tua organizzazione possono essere rappresen
 
 ## Modelli e istanze del flusso di lavoro {#workflow-models-and-instances}
 
-[I modelli di flusso di lavoro](/help/sites-developing/workflows.md#model) in AEM sono la rappresentazione e l&#39;implementazione dei processi aziendali:
+I [modelli di flusso di lavoro](/help/sites-developing/workflows.md#model) in AEM rappresentano e implementano i processi aziendali:
 
 * In genere agiscono su pagine o risorse per ottenere un risultato specifico.
 * Queste pagine e/o risorse sono denominate payload del flusso di lavoro.
@@ -55,7 +55,7 @@ All’avvio (esecuzione) di un modello di flusso di lavoro, viene creata un’is
 
 >[!CAUTION]
 >
->I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell&#39;istanza*. Per ulteriori dettagli, vedi [Sviluppo di flussi di lavoro](/help/sites-developing/workflows.md#model).
+>I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell&#39;istanza*. Per ulteriori dettagli, vedi [Sviluppo ed estensione dei flussi di lavoro - Modelli](/help/sites-developing/workflows.md#model).
 
 Le istanze del flusso di lavoro avanzano nel seguente ciclo di vita:
 
@@ -63,14 +63,14 @@ Le istanze del flusso di lavoro avanzano nel seguente ciclo di vita:
 
    1. Il payload dell’istanza del flusso di lavoro viene identificato all’avvio del modello.
    1. La variante è di fatto una copia del modello (come al momento della creazione).
-   1. Gli autori, gli amministratori o i servizi AEM possono avviare modelli di flusso di lavoro.
+   1. Gli autori, gli amministratori o i servizi di AEM possono avviare i modelli di flusso di lavoro.
 
 1. Viene eseguito il primo passaggio del modello di flusso di lavoro.
 1. Il passaggio viene completato e il motore del flusso di lavoro utilizza il modello per determinare il passaggio successivo da eseguire.
 1. I passaggi successivi nel modello di flusso di lavoro vengono eseguiti e completati.
 1. Una volta completato il passaggio finale, l’istanza del flusso di lavoro viene completata e quindi archiviata.
 
-Con l’AEM vengono forniti molti utili modelli di flusso di lavoro. Inoltre, gli sviluppatori dell’organizzazione possono creare modelli di flusso di lavoro personalizzati, personalizzati in base alle esigenze specifiche dei processi aziendali.
+AEM fornisce molti utili modelli di flusso di lavoro. Inoltre, gli sviluppatori dell’organizzazione possono creare modelli di flusso di lavoro personalizzati, personalizzati in base alle esigenze specifiche dei processi aziendali.
 
 ## Passaggi del flusso di lavoro {#workflow-steps}
 
