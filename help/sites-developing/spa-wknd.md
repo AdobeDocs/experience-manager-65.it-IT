@@ -24,7 +24,7 @@ Immergiti nello sviluppo di applicazioni a pagina singola con questa esercitazio
 
 Per un esempio end-to-end di creazione di un’applicazione a pagina singola modificabile con AEM a partire dalla configurazione del progetto fino al routing dell’applicazione, consulta i tutorial sulle applicazioni a pagina singola WKND:
 
-* [Guida introduttiva all&#39;Editor SPA di AEM e Angular](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview)
-* [Guida introduttiva all&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2)
+* [Guida introduttiva all&#39;Editor SPA di AEM e Angular](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview)
+* [Guida introduttiva all&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2)
 
 Prima di iniziare il progetto SPA per AEM, tuttavia, assicurati di rivedere anche il documento [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md).
