@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 2a843cefdd881e3cab60b2ddba12a26d0a498d13
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 65%
+source-wordcount: '1701'
+ht-degree: 63%
 
 ---
 
@@ -25,13 +25,13 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
 >* **Pubblicare/Annullare la pubblicazione**
->  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>  >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
 >* **Attivare/Disattivare**
->  Sinonimi di pubblicare/annullare la pubblicazione.
+>  >  Sinonimi di pubblicare/annullare la pubblicazione.
 >
 >* **Replicare/Replica**
->  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
+>  >  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 
 ## Privilegi insufficienti {#insufficient-privileges}
 
@@ -61,7 +61,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
    * La pagina verrà pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
    * Se la pagina include riferimenti da pubblicare, questi saranno elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
 
-      * Specifica le risorse o i tag da pubblicare insieme alla pagina, quindi utilizza **Publish** per completare il processo.
+      * Specifica le risorse o i tag da pubblicare insieme alla pagina, quindi utilizza **Pubblica** per completare il processo.
 
       * Seleziona **Annulla** per annullare l’azione.
 
@@ -96,11 +96,11 @@ Nella console Sites sono disponibili due opzioni per la pubblicazione:
 
 Per pubblicare una pagina con Pubblicazione rapida:
 
-1. Selezionare le pagine nella console Sites e fare clic sul pulsante **Publish rapido**.
+1. Selezionare le pagine desiderate nella console Sites e fare clic sul pulsante **Pubblicazione rapida**.
 
    ![pp-02](assets/pp-02.png)
 
-1. Nella finestra di dialogo Publish veloce, confermare la pubblicazione facendo clic su **Publish** o annullare facendo clic su **Annulla**. Tieni presente che verranno pubblicati automaticamente anche eventuali riferimenti non pubblicati.
+1. Nella finestra di dialogo Pubblicazione rapida, confermare la pubblicazione facendo clic su **Pubblica** o annullare facendo clic su **Annulla**. Tieni presente che verranno pubblicati automaticamente anche eventuali riferimenti non pubblicati.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -112,7 +112,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 #### Gestisci pubblicazione  {#manage-publication}
 
-**Gestisci pubblicazione** offre più opzioni rispetto a Quick Publish, consentendo l&#39;inclusione di pagine figlie, la personalizzazione dei riferimenti, l&#39;avvio di tutti i flussi di lavoro applicabili e la possibilità di pubblicare in un secondo momento.
+**Gestisci pubblicazione** offre più opzioni rispetto alla Pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti, avviare tutti i flussi di lavoro applicabili e pubblicare la pagina in un secondo momento.
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
@@ -151,17 +151,17 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    ![pp-03](assets/pp-03.png)
 
-   Facendo clic su **Includi elementi figlio** viene visualizzata una finestra di dialogo che consente di includere:
+   Facendo clic su **Includi elementi secondari** viene visualizzata una finestra di dialogo che consente di includere:
 
    * Solo gli elementi secondari di primo livello.
    * Solo pagine modificate.
    * Solo pagine già pubblicate.
 
-   Fai clic su **Aggiungi** per aggiungere le pagine figlio nell’elenco delle pagine da pubblicare o di cui annullare la pubblicazione, in base alle opzioni selezionate. Fai clic su **Annulla** per annullare la selezione e tornare alla procedura guidata.
+   Fai clic su **Aggiungi** per aggiungere le pagine secondarie nell’elenco delle pagine da pubblicare o di cui annullare la pubblicazione, in base alle opzioni selezionate. Fai clic su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
-   Tornando alla procedura guidata vengono visualizzate le pagine aggiunte in base alle opzioni selezionate nella finestra di dialogo Includi elementi figlio.
+   Tornando alla procedura guidata vengono visualizzate le pagine aggiunte in base alle opzioni selezionate nella finestra di dialogo Includi elementi secondari.
 
    Puoi visualizzare e modificare i riferimenti da pubblicare o di cui annullare la pubblicazione per una pagina selezionandola e facendo clic sul pulsante **Riferimenti pubblicati**.
 
@@ -196,6 +196,10 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
    Fai clic su **Pubblica** o **Pubblica più tardi** per completare la pubblicazione.
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
+
+>[!TIP]
+>
+>La pianificazione del contenuto per la pubblicazione replica il contenuto e rispetta i flussi di lavoro di pubblicazione. Se desideri nascondere temporaneamente il contenuto già pubblicato senza annullare la pubblicazione, considera [**Ora di attivazione** e **Ora di disattivazione** disponibili nelle proprietà della pagina.](/help/sites-authoring/editing-page-properties.md#on-time)
 
 ## Annullamento della pubblicazione delle pagine {#unpublishing-pages}
 
