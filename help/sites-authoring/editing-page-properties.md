@@ -95,7 +95,7 @@ Ad esempio, se l&#39;URL personalizzato è impostato su `welcome` per la pagina 
 >* non supportano le espressioni regolari;
 >* non devono essere impostati su una pagina esistente.
 
-Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
+Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
 
 * **Aggiungi** - Tocca o fai clic per aggiungere un URL personalizzato.
 * **Rimuovi** - Tocca o fai clic per rimuovere un URL personalizzato.
