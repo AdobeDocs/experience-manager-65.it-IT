@@ -25,13 +25,13 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
 >* **Pubblicare/Annullare la pubblicazione**
->  >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>  &#x200B;>  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
 >* **Attivare/Disattivare**
->  >  Sinonimi di pubblicare/annullare la pubblicazione.
+>  &#x200B;>  Sinonimi di pubblicare/annullare la pubblicazione.
 >
 >* **Replicare/Replica**
->  >  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
+>  &#x200B;>  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 
 ## Privilegi insufficienti {#insufficient-privileges}
 
