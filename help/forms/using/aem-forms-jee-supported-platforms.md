@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 64ffbf05eb3ae6ca3f2475fc99979e420cef15ec
+source-git-commit: 2920e7fd0ce336817a445952a3213c185b224ca9
 workflow-type: tm+mt
-source-wordcount: '3827'
-ht-degree: 3%
+source-wordcount: '4283'
+ht-degree: 2%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 3%
 <div class="preview">
 
 
-Adobe ha rilasciato un [programma di installazione completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) con AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) su JEE insieme ai programmi di installazione delle patch. Il programma di installazione completo supporta nuove piattaforme, mentre il programma di installazione delle patch include solo correzioni di bug.
+Adobe ha rilasciato un [programma di installazione completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) con AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) su JEE insieme ai programmi di installazione delle patch. Il programma di installazione completo supporta nuove piattaforme, mentre il programma di installazione delle patch include solo correzioni di bug.
 
-Se si sta eseguendo una nuova installazione o si prevede di utilizzare il software più recente per l&#39;ambiente AEM 6.5.23.0 Forms su JEE, Adobe consiglia di utilizzare il [programma di installazione completo di AEM 6.5.23.0 Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) rilasciato il 6 giugno 2025 invece del programma di installazione di AEM 6.5.18 Forms rilasciato il 31 agosto 2023 o del programma di installazione di AEM 6.5.12 Forms rilasciato il 8 aprile 2019.
+Se si sta eseguendo una nuova installazione o si prevede di utilizzare il software più recente per l&#39;ambiente AEM 6.5.23.0 Forms su JEE, Adobe consiglia di utilizzare il [programma di installazione completo di AEM 6.5.23.0 Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) rilasciato il 6 giugno 2025 invece del programma di installazione di AEM 6.5.18 Forms rilasciato il 31 agosto 2023 o del programma di installazione di AEM 6.5.12 Forms rilasciato il 8 aprile 2019.
 
 
 </div>
@@ -46,6 +46,7 @@ Questo documento elenca le piattaforme client e server supportate per AEM Forms 
 
 >[!NOTE]
 >
+>- Per un elenco completo delle eccezioni alle piattaforme server supportate, vedere [Eccezioni alle piattaforme server supportate](#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms su JEE supporta solo le versioni in inglese, francese, tedesco e giapponese dei sistemi operativi e delle applicazioni supportati.
 
 ### Criteri di aggiornamento e supporto
@@ -420,39 +421,37 @@ Puoi eseguire AEM Forms su JEE in un computer fisico o in un ambiente virtuale. 
 </tbody>
 </table>
 
-
-<!--
-### Exceptions to supported server platforms {#exceptions-to-supported-server-platforms}
+### Eccezioni alle piattaforme server supportate {#exceptions-to-supported-server-platforms}
 
 
-Consider the following exceptions while choosing a platform to set up your AEM Forms on JEE server.
+Quando scegli una piattaforma per configurare il server AEM Forms su JEE, considera le seguenti eccezioni.
 
 
-1. AEM Forms on JEE do not support IBM&reg; WebSphere&reg; with MySQL.
-1. AEM Forms on JEE do not support JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
-1. AEM Forms on JEE do not support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
-1. AEM Forms on JEE do not support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
-1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
-1. AEM Forms on JEE do not support WebSphere&reg; application server on CentOS.
-1. AEM Forms on JEE do not support JBoss&reg; role-based access control (RBAC).
-1. AEM Forms on JEE support Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4 only.
-1. JDK versions higher than 1.8.0_281 are not supported for WebLogic server. (FORMS-8498)
-1. JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer.
+1. AEM Forms su JEE non supporta IBM® WebSphere® con MySQL.
+1. AEM Forms su JEE non supporta JBoss® su SUSE® Linux® Enterprise Server 12. Solo IBM® WebSphere® è supportato su SUSE® Linux® Enterprise Server 12.
+1. AEM Forms su JEE non supporta JDK con JBoss® ad eccezione di Oracle Java™ SE.
+1. AEM Forms su JEE non supporta JDK con IBM® WebSphere® ad eccezione di IBM® JDK.
+1. L’archivio CRX supporta la persistenza di tipi TarMK, MongoDB e database relazionali (RDBMK). Non è possibile avere due sistemi di database diversi tra il server applicazioni e il repository CRX. Tuttavia, in un ambiente AEM Forms su JEE, puoi utilizzare MongoMK con l’archivio CRX e un database relazionale supportato con il server applicazioni.
+1. AEM Forms su JEE non supporta il server applicazioni WebSphere® su CentOS.
+1. AEM Forms su JEE non supporta JBoss® RBAC (role-based access control).
+1. AEM Forms su JEE supporta Oracle Java™ SE 11 (64 bit) SDK solo per il server applicazioni JBoss® EAP 7.4.
+1. Le versioni JDK superiori a 1.8.0_281 non sono supportate per il server WebLogic. (FORMS-8498)
+1. JDK 11.0.20 non è supportato per installare AEM Forms sul programma di installazione JEE. Per installare AEM Forms sul programma di installazione di JEE sono supportate solo JDK 11.0.19 o versioni precedenti.
 
-2. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
-
-
-In addition, consider the following points while choosing software for Adobe AEM Forms on JEE deployments:
+1. [!DNL Microsoft® Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] non supporta le installazioni chiavi in mano per [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
 
 
-- AEM Forms on JEE support updates, patches, and fix packs on top of the specified major and minor version of supported software. However, update to the next major or minor version is not supported unless specified.
-- Cluster-based installations do not support TarMK persistence. For information about supported persistence, see [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE support various third-party software as per Adobe's [Third-party software support Policy](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
-- AEM Forms on JEE support platforms as per the support provided by third-party vendors. Some combinations may not be allowed by third-party vendors. For example, many vendors have not certified their application servers with Oracle. As a result, AEM Forms on JEE also do not support these combinations. To ensure that you choose the supported software versions, check the support matrix for the third-party vendors as well.
-- AEM Forms on JEE do not support TarMK Cold Standby.
-- AEM Forms on JEE do not support vertical clustering.
-- AEM Forms on JEE do not support MySQL database on a clustered environment.
-- For the list of removed or updated platforms, see [AEM 6.5 Forms New Feature Summary](../../forms/using/whats-new.md) document.-->
+Inoltre, considera i seguenti punti durante la scelta del software per le implementazioni Adobe AEM Forms su JEE:
+
+
+- AEM Forms su JEE supporta aggiornamenti, patch e fix pack oltre alla versione principale e secondaria specificata del software supportato. Tuttavia, l’aggiornamento alla versione principale o secondaria successiva non è supportato, a meno che non sia specificato.
+- Le installazioni basate su cluster non supportano la persistenza TarMK. Per informazioni sulla persistenza supportata, vedere [Scelta di un tipo di persistenza per un&#39;installazione di AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+- AEM Forms su JEE supporta diversi software di terze parti in base ai [criteri di supporto software di terze parti](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) di Adobe.
+- AEM Forms sulle piattaforme di supporto JEE in base al supporto fornito da fornitori terzi. Alcune combinazioni potrebbero non essere consentite da fornitori di terze parti. Molti fornitori, ad esempio, non hanno certificato i propri server applicazioni con Oracle. Di conseguenza, anche AEM Forms su JEE non supporta queste combinazioni. Per assicurarsi di scegliere le versioni del software supportate, consultare la matrice di supporto anche per i fornitori di terze parti.
+- AEM Forms su JEE non supporta lo standby a freddo di TarMK.
+- AEM Forms su JEE non supporta il clustering verticale.
+- AEM Forms su JEE non supporta il database MySQL in un ambiente cluster.
+- Per l&#39;elenco delle piattaforme rimosse o aggiornate, vedere il documento [Riepilogo delle nuove funzioni di AEM 6.5 Forms](../../forms/using/whats-new.md).
 
 ### Server LDAP (facoltativo) {#ldap-servers-optional}
 
@@ -546,7 +545,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
   <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
  </tr>
  <tr>
-  <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> ultima versione</td>
+  <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> ultima versione</td>
   <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
  </tr>
  <tr>
@@ -579,7 +578,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 >
 >Inoltre:
 >
->- Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html).
+>- Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html).
 >- PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
 >- L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
 >- Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio se un&#39;installazione con licenza Volume License non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
@@ -587,7 +586,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 >- PDF Generator supporta la versione a 32 bit di OpenOffice sul sistema operativo Linux®.
 >- Le conversioni PDF Generator per OpenOffice sono supportate solo su Windows e Linux®.
 >- Le funzioni PDF, Ottimizza PDF e Export PDF di OCR sono supportate solo in Windows.
->- Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. La versione in bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>- Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. La versione in bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >- Il servizio PDF Generator non supporta Microsoft® Windows 10.
 >- PDF Generator non riesce a convertire i file con Microsoft® Visio 2019.
 >- PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019.
@@ -657,8 +656,8 @@ I seguenti sottosistemi di AEM Forms non sono conformi a [508](https://www.secti
 Per ulteriori informazioni, vedere:
 
 
-- [Requisiti di sistema per una distribuzione AEM Forms su JEE per server singolo](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_it)
-- [Requisiti di sistema per una distribuzione AEM Forms in cluster su JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_it)
+- [Requisiti di sistema per una distribuzione AEM Forms su JEE per server singolo](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [Requisiti di sistema per una distribuzione AEM Forms in cluster su JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 
 ### Adobe Acrobat e Adobe Reader {#adobe-acrobat-and-adobe-reader}
@@ -855,7 +854,7 @@ AEM Forms su JEE supporta aggiornamenti, patch e fix pack oltre alla versione pr
 ## Criteri di supporto delle patch di terze parti {#third-party-patch-support-policy}
 
 
-I requisiti software di terze parti per AEM Forms su JEE sono documentati nella sezione &quot;Requisiti di sistema&quot; dei rispettivi documenti di prodotto. Accedi a tutta la documentazione da [https://adobe.com/go/learn_aemforms_documentation_65_it](https://adobe.com/go/learn_aemforms_documentation_65_it) .
+I requisiti software di terze parti per AEM Forms su JEE sono documentati nella sezione &quot;Requisiti di sistema&quot; dei rispettivi documenti di prodotto. Accedi a tutta la documentazione da [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
 
 
 AEM Forms sulle piattaforme di riferimento di terze parti di JEE indica il livello di patch specifico dell’infrastruttura di terze parti corrente durante lo sviluppo e il rilascio di AEM Forms su JEE e il livello minimo di patch/service pack dell’infrastruttura supportata da tale versione di AEM Forms su JEE.
@@ -896,7 +895,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -993,7 +992,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
