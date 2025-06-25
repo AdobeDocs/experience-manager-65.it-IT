@@ -4,24 +4,47 @@ description: L’attivazione delle funzioni è una funzionalità di AEM che cons
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
+source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '381'
 ht-degree: 2%
 
 ---
 
 # Attivazione/disattivazione delle funzioni in Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
 
-La funzione di attivazione/disattivazione delle funzioni è una funzionalità di AEM che consente agli amministratori di abilitare o disabilitare in modo dinamico funzioni specifiche. Questa funzionalità è particolarmente utile per la gestione di **funzioni Early Adopter** e **funzioni prerelease** senza richiedere distribuzioni principali o modifiche alla base di codice. Garantisce flessibilità e controllo su quali funzioni sono accessibili in un ambiente AEM.
+L’interruttore delle funzioni è una funzionalità di AEM che consente agli amministratori di abilitare o disabilitare in modo dinamico funzioni specifiche. Questa funzionalità è particolarmente utile per la gestione di **funzioni Early Adopter** e **funzioni prerelease** senza richiedere distribuzioni principali o modifiche alla base di codice. Garantisce flessibilità e controllo su quali funzioni sono accessibili in un ambiente AEM.
+
+## Perché utilizzare gli interruttori delle funzioni in una configurazione di AEM 6.5?
+
+Quando si lavora in una configurazione di AEM 6.5, la funzione attiva la guida in:
+
+* Verifica sicura delle caratteristiche sperimentali.
+
+* Rollout di nuovi componenti in fasi.
+
+* Mantenimento di un&#39;unica base di codice in più ambienti.
+
+* Riduzione dei rischi durante le installazioni e gli aggiornamenti.
+
+## Prerequisiti
+
+Prima di abilitare l’attivazione delle funzioni nella configurazione di AEM 6.5, verifica quanto segue:
+
+* Utente membro del gruppo `forms-users`.
+
+* Passa a `http://<author-instance-url>:portnumber/system/console/bundles` e controlla se il bundle **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** è presente o meno. Se non è presente, [scarica il bundle dal collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+
+  ![Attiva/Disattiva funzionalità](/help/forms/using/assets/feature-toggle-6.5.png)
 
 ## Attiva/disattiva funzione {#enable-feature-toggle-65}
 
-È possibile configurare gli interruttori delle funzionalità per i primi utenti o le nuove funzionalità tramite la **console Web AEM** seguendo la procedura seguente:
+È possibile configurare gli interruttori delle funzionalità per i primi utenti o le nuove funzionalità tramite la **console Web AEM** seguendo la procedura riportata di seguito:
 
 1. Accedi all’istanza di AEM Forms.
 2. Accedi a `http://<author-instance-url>:portnumber/system/console/configMgr`.
-3. Cerca **Provider di attivazione/disattivazione dinamica Adobe Granite** in Configuration Manager.
+3. Cercare **Adobe Granite Dynamic Toggle Provider** in Configuration Manager.
 4. Fai clic sull&#39;icona ![icona-matita](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 5. Nella sezione [!UICONTROL Attivazione/disattivazione] fare clic su ![icona a forma di matita](assets/aem6forms_add.png).
 6. Aggiungi l’ID di attivazione/disattivazione della funzione, come illustrato nell’immagine seguente.
@@ -39,7 +62,7 @@ Per disattivare l&#39;attivazione/disattivazione delle funzionalità per le funz
 
 1. Accedi all’istanza di AEM Forms.
 2. Accedi a `http://<author-instance-url>:portnumber/system/console/configMgr`.
-3. Cerca **Provider di attivazione/disattivazione dinamica Adobe Granite** in Configuration Manager.
+3. Cercare **Adobe Granite Dynamic Toggle Provider** in Configuration Manager.
 4. Fai clic sull&#39;icona ![icona-matita](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 5. Nella sezione [!UICONTROL Attivazione/disattivazione] fare clic su ![icona a forma di matita](assets/aem6forms_add.png).
 6. Aggiungi il numero di attivazione/disattivazione della funzione.
