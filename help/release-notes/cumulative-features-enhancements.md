@@ -7,16 +7,16 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: 03c070f7bba1d66ce2a5309d2ab79567dbef3264
+source-git-commit: 3d47b1e17a4500e5e68e1abe2e2d4ac86376f424
 workflow-type: tm+mt
-source-wordcount: '3539'
-ht-degree: 9%
+source-wordcount: '3122'
+ht-degree: 8%
 
 ---
 
 # Funzioni principali e miglioramenti cumulativi
 
-Elenco cumulativo delle funzioni chiave e dei miglioramenti introdotti in Adobe Experience Manager 6.5 per le versioni precedenti dei service pack.
+Elenco cumulativo delle funzioni chiave e dei miglioramenti introdotti in Adobe Experience Manager 6.5 per le otto versioni precedenti dei service pack.
 
 Consulta anche [Note sulla versione più recente del Service Pack di Adobe Experience Manager 6.5](/help/release-notes/release-notes.md).
 
@@ -43,7 +43,7 @@ Consulta anche [Note sulla versione più recente del Service Pack di Adobe Exper
 
    * Red Hat® Enterprise Linux® 9 (kernel 4.x, 64 bit)
 
-* [Componente allegato file protetto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): come misura di sicurezza, il componente ora impedisce l&#39;invio di file con estensioni modificate che tentano di ignorare i controlli dei tipi di file consentiti. Tali file vengono bloccati durante l’invio per garantire che siano accettati solo i tipi di file validi.
+* [Componente allegato file protetto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): come misura di sicurezza, il componente ora impedisce l&#39;invio di file con estensioni modificate che tentano di ignorare i controlli dei tipi di file consentiti. Tali file vengono bloccati durante l’invio per garantire che siano accettati solo i tipi di file validi.
 
 ## AEM 6.5, Service Pack 22 - 21 novembre 2024
 
@@ -59,7 +59,7 @@ La scheda IPTC ora supporta [!UICONTROL Alt Text] e [!UICONTROL Extended Descrip
 
 #### Nuove funzioni GA in AEM Forms {#ga-aem-forms-sp22}
 
-* È stato aggiunto il supporto per abilitare l&#39;incorporamento dei font nelle [API Batch di comunicazioni interattive](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel). Le comunicazioni interattive ora includono il supporto per l&#39;incorporamento dei font Adobe Ming e Adobe Myungjo nei PDF generati tramite l&#39;API Batch. Questo miglioramento garantisce un rendering accurato del testo nei documenti generati, anche quando si utilizzano sottoinsiemi di font, fornendo un migliore supporto per contenuti multilingue negli output di PDF.
+* È stato aggiunto il supporto per abilitare l&#39;incorporamento dei font nelle [API Batch di comunicazioni interattive](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel). Le comunicazioni interattive ora includono il supporto per l&#39;incorporamento dei font Adobe Ming e Adobe Myungjo nei PDF generati tramite l&#39;API Batch. Questo miglioramento garantisce un rendering accurato del testo nei documenti generati, anche quando si utilizzano sottoinsiemi di font, fornendo un migliore supporto per contenuti multilingue negli output di PDF.
 
 * [API per l&#39;accesso facilitato di PDF](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - AEM Forms su OSGi ora supporta la nuova API per tag TOC per migliorare PDF per gli standard di accesso facilitato. Rende i PDF più accessibili agli utenti con tecnologia assistiva.
 
@@ -116,7 +116,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 ### [!DNL Assets]
 
-* Dynamic Media ora supporta il formato immagine HEIC senza perdita di dati per Apple iOS/iPadOS. Consulta [fmt](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) nell&#39;API di server e rendering immagini Dynamic Media.
+* Dynamic Media ora supporta il formato immagine HEIC senza perdita di dati per Apple iOS/iPadOS. Consulta [fmt](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) nell&#39;API di server e rendering immagini Dynamic Media.
 * Multisite Manager (MSM) ora supporta le strutture dei frammenti di esperienza, incluse cartelle e sottocartelle, per un rollout in blocco efficiente dei frammenti di esperienza in Live Copy.
 
 ### [!DNL Forms]
@@ -137,13 +137,13 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 ### [!DNL Forms]
 
 * **Nuovi componenti core modulo adattivo**: sono state aggiunte schede verticali, termini e condizioni e casella di controllo per migliorare la scalabilità dei moduli.
-   * **[Componente casella di controllo](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**: Forms adattivo basato su componenti core ora può includere un componente casella di controllo. Consente agli utenti di effettuare scelte binarie, selezionando o deselezionando una particolare opzione. In genere viene visualizzata come una piccola casella su cui è possibile fare clic o toccare per alternare due stati: selezionato e deselezionato. La casella di controllo è un elemento modulo comune utilizzato per presentare una scelta sì/no o vero/falso.
+   * **[Componente casella di controllo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**: Forms adattivo basato su componenti core ora può includere un componente casella di controllo. Consente agli utenti di effettuare scelte binarie, selezionando o deselezionando una particolare opzione. In genere viene visualizzata come una piccola casella su cui è possibile fare clic o toccare per alternare due stati: selezionato e deselezionato. La casella di controllo è un elemento modulo comune utilizzato per presentare una scelta sì/no o vero/falso.
 
-   * **[Componente termini e condizioni](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**: il Forms adattivo basato su componenti core ora include un componente termini e condizioni. Gli autori dei moduli aggiungono questa sezione per mostrare agli utenti i termini, le condizioni o gli accordi legali per il servizio, il prodotto o la piattaforma. Questo componente è progettato per informare gli utenti sulle regole, le normative e gli obblighi che si impegnano a rispettare inviando il modulo.
+   * **[Componente termini e condizioni](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**: il Forms adattivo basato su componenti core ora include un componente termini e condizioni. Gli autori dei moduli aggiungono questa sezione per mostrare agli utenti i termini, le condizioni o gli accordi legali per il servizio, il prodotto o la piattaforma. Questo componente è progettato per informare gli utenti sulle regole, le normative e gli obblighi che si impegnano a rispettare inviando il modulo.
 
      ![Schede verticali, termini e condizioni e componenti casella di controllo](/help/forms/using/assets/forms-components.png)
 
-   * **[Componente schede verticali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**: Forms adattivo basato su componenti core ora può organizzare il contenuto del modulo in un elenco verticale di schede, fornendo un layout strutturato e navigabile. Le schede verticali in un modulo migliorano l’esperienza utente semplificando la navigazione e organizzando il contenuto. Sono particolarmente utili quando il modulo contiene più sezioni o informazioni complesse.
+   * **[Componente schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**: Forms adattivo basato su componenti core ora può organizzare il contenuto del modulo in un elenco verticale di schede, fornendo un layout strutturato e navigabile. Le schede verticali in un modulo migliorano l’esperienza utente semplificando la navigazione e organizzando il contenuto. Sono particolarmente utili quando il modulo contiene più sezioni o informazioni complesse.
 
 * **[Versione a 64 bit di AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: la versione a 64 bit di AEM Forms Designer offre prestazioni, scalabilità e gestione della memoria migliorate per migliorare l&#39;esperienza di creazione dei moduli. Grazie all&#39;architettura a 64 bit, è possibile gestire con facilità progetti ancora più grandi e complessi, garantendo flussi di lavoro di progettazione ottimizzati ed efficienza. Migliora le funzionalità di progettazione dei moduli e abbraccia il futuro di AEM Forms Designer con questa versione all’avanguardia.
 
@@ -164,9 +164,9 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 ### [!DNL Forms]
 
-* **[Gestione avanzata degli errori con gestori di errori personalizzati nell&#39;editor di regole](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** - È ora possibile richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno. Inoltre, è possibile fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile
+* **[Gestione avanzata degli errori con gestori di errori personalizzati nell&#39;editor di regole](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** - È ora possibile richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno. Inoltre, è possibile fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile
 
-* **[Passaggio del flusso di lavoro Adobe Sign migliorato](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - Il passaggio del flusso di lavoro Adobe Sign nei flussi di lavoro di AEM è disponibile con i seguenti miglioramenti.
+* **[Passaggio del flusso di lavoro Adobe Sign migliorato](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - Il passaggio del flusso di lavoro Adobe Sign nei flussi di lavoro di AEM è disponibile con i seguenti miglioramenti.
 
    * **Sicurezza migliorata con l&#39;autenticazione basata su ID governativi per Adobe Sign** - L&#39;autenticazione basata su ID governativi di Adobe Acrobat Sign offre un ulteriore livello di verifica. Consente agli utenti di autenticare la propria identità utilizzando gli ID governativi (patente di guida, carta d&#39;identità, passaporto). Utilizzando documenti di identificazione attendibili, questo miglioramento aggiunge un ulteriore livello di affidabilità al processo di firma, rendendolo ideale per scenari che richiedono maggiore sicurezza, conformità e convalida degli utenti.
 
@@ -176,7 +176,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
    * **I ruoli per i destinatari del contratto sono stati estesi oltre al solo firmatario** - Adobe Acrobat Sign consente di espandere i ruoli per i destinatari del contratto oltre al solo firmatario per soddisfare meglio i requisiti del flusso di lavoro. Quando questa opzione è abilitata, ogni destinatario di un contratto ha il proprio ruolo configurabile singolarmente, con Firmatario come impostazione predefinita.
 
 
-* **[Programma di installazione completo per AEM Forms su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** - Il service pack include un programma di installazione completo per AEM Forms su JEE che supporta più nuove combinazioni di software, tra cui:
+* **[Programma di installazione completo per AEM Forms su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** - Il service pack include un programma di installazione completo per AEM Forms su JEE che supporta più nuove combinazioni di software, tra cui:
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Oracle WebLogic 14C su Windows Server 2022
@@ -195,7 +195,7 @@ Se stai installando o pianificando di utilizzare il software più recente per il
 
   Per eseguire queste operazioni, non è necessario passare alla posizione della risorsa e visualizzarne le proprietà.
 
-* **Dynamic Media _Snapshot_**&#x200B;consente di visualizzare in anteprima i modificatori di immagini e le ottimizzazioni di Smart Imaging, ad esempio l&#39;output WebP o AVIF, la compressione in base alla larghezza di banda e il ridimensionamento delle proporzioni pixel del dispositivo, utilizzando immagini di test o URL di Dynamic Media. Puoi quindi confrontare immediatamente il modo in cui ogni impostazione influisce sulla qualità e sulla dimensione del file.
+* **Dynamic Media _Snapshot_**consente di visualizzare in anteprima i modificatori di immagini e le ottimizzazioni di Smart Imaging, ad esempio l&#39;output WebP o AVIF, la compressione in base alla larghezza di banda e il ridimensionamento delle proporzioni pixel del dispositivo, utilizzando immagini di test o URL di Dynamic Media. Puoi quindi confrontare immediatamente il modo in cui ogni impostazione influisce sulla qualità e sulla dimensione del file.
 Consulta [Dynamic Media Snapshot](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **Streaming DASH con Dynamic Media** - Nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) avviato per lo streaming adattivo nella distribuzione video Dynamic Media (con CMAF abilitato). Disponibile ora per tutte le aree geografiche.
 * **Integrazione di Experience Manager Sites e frammenti di contenuto con Assets Dynamic Media di nuova generazione** - Gli utenti possono ora utilizzare le risorse ospitate nel cloud in Experience Manager Sites 6.5. Possono creare e distribuire tali risorse on-premise o sulle istanze Managed Services.
@@ -221,46 +221,8 @@ Consulta [Dynamic Media Snapshot](https://experienceleague.adobe.com/it/docs/exp
 
 ### [!DNL Forms]
 
-* [Forms adattivo headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/overview) consente agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e con cui interagire tramite API, anziché tramite un&#39;interfaccia utente grafica tradizionale.
+* [Forms adattivo headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview) consente agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e con cui interagire tramite API, anziché tramite un&#39;interfaccia utente grafica tradizionale.
 
-* [I componenti core adattivi di Forms](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) sono un set di 24 componenti open source conformi a BEM e basati sui componenti core di Adobe Experience Manager WCM. Questi componenti sono open source e consentono agli sviluppatori di personalizzarli ed estenderli facilmente in base alle esigenze specifiche dell’organizzazione. Chiunque disponga delle competenze necessarie per personalizzare [Componenti core WCM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/get-started/authoring) può personalizzare e assegnare uno stile a tali componenti.
+* [I componenti core adattivi di Forms](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) sono un set di 24 componenti open source conformi a BEM e basati sui componenti core di Adobe Experience Manager WCM. Questi componenti sono open source e consentono agli sviluppatori di personalizzarli ed estenderli facilmente in base alle esigenze specifiche dell’organizzazione. Chiunque disponga delle competenze necessarie per personalizzare [Componenti core WCM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/get-started/authoring) può personalizzare e assegnare uno stile a tali componenti.
 
 * Il servizio Reader Extension su OSGi ora fornisce opzioni separate per abilitare i diritti di utilizzo di importazione ed esportazione su un PDF per importare o esportare dati in Adobe Acrobat Reader.
-
-## AEM 6.5, Service Pack 15 - 24 novembre 2022
-
-### [!DNL Forms]
-
-* AEM Forms Designer è ora disponibile nelle [impostazioni locali spagnole](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
-* È ora possibile utilizzare [OAuth2 per l&#39;autenticazione con i protocolli del server di posta di Microsoft® Office 365 (SMTP e IMAP)](/help/forms/using/oauth2-support-for-mail-service.md).
-* È possibile impostare la proprietà [Riconvalida sul server](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#enabling-server-side-validation-br) su true per identificare i campi nascosti per l&#39;esclusione da un documento di record sul lato server.
-* AEM Forms Designer richiede una versione a 32 bit di Visual C++ 2019 Redistributable (x86).
-
-## AEM 6.5, Service Pack 14 - 25 agosto 2022
-
-Solo correzioni di bug.
-
-## AEM 6.5, Service Pack 13 - 26 maggio 2022
-
-* Utilizzare il CAPTCHA invisibile in un modulo adattivo: ora puoi utilizzare un CAPTCHA invisibile per mostrare la richiesta CAPTCHA solo se viene rilevata un’attività sospetta. Se non viene trovata alcuna attività sospetta, la richiesta CAPTCHA non viene visualizzata. Consente di valutare il completamento manuale dei moduli senza bisogno di caselle di controllo, ridurre le operazioni di personalizzazione e migliorare l’esperienza dell’utente finale.
-
-* È stato aggiunto il supporto per recuperare le intestazioni di risposta nel postprocessore del modello dati modulo per gli endpoint REST.
-
-* Ora, quando si genera un file di traduzione di un modulo adattivo, la stessa sequenza di testi nel file XLIFF generato è identica alla sequenza di componenti nel modulo adattivo corrispondente.
-
-* Quando localizzi un modulo adattivo e apporti anche una piccola modifica al testo della lingua di base, la traduzione completa risulta mancante per tutte le altre lingue. Il problema è risolto in [!DNL Experience Manager] 6.5.13.0.
-
-* Miglioramenti all’accessibilità per Forms:
-
-   * È stato aggiunto il supporto per gli assistenti vocali per riconoscere l’intestazione e il corpo di una tabella come entità continue e connesse. Consente agli assistenti vocali di navigare correttamente nelle tabelle. (NPR-37139)
-   * È stato aggiunto il supporto per gli assistenti vocali per interrompere la navigazione nell’area di lavoro di HTML fino all’apertura di una finestra di dialogo.
-
-## AEM 6.5, Service Pack 12 - 24 febbraio 2022
-
-* Dopo aver configurato una connessione tra le implementazioni remote di DAM e Sites, le risorse in DAM remoto sono rese disponibili nell’implementazione di Sites. È ora possibile aggiornare, eliminare, ridenominare e spostare le risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites.
-* I rollout push di un’origine Live Copy a più Live Copy sono ora possibili per impostazione predefinita, senza richiedere una configurazione blueprint.
-* Ora nell’interfaccia utente è visualizzato lo stato delle operazioni asincrone in corso per evitare che gli utenti attivino accidentalmente più operazioni asincrone sullo stesso percorso.
-* Per le API di Analytics 2.0 è disponibile il supporto per l’autenticazione basata su IMS.
-* Supporto API per frammenti di esperienza di tipo offerta JSON.
-* Ora viene fornita la richiesta di offerta per Elimina offerta (API Frammento di esperienza) in IMS.
-* L’archivio incorporato (Apache Jackrabbit Oak) rimane alla versione 1.22.9.
