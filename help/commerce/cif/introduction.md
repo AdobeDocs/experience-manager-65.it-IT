@@ -1,6 +1,6 @@
 ---
 title: Introduzione e panoramica
-description: Scopri come utilizzare e amministrare AEM Content and Commerce con i nostri articoli utili sulle integrazioni e come iniziare a utilizzare AEM Storefront.
+description: Scopri come utilizzare e amministrare AEM Content and Commerce con i nostri articoli utili sulle integrazioni e come iniziare a utilizzare una vetrina digitale AEM.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce
@@ -46,11 +46,11 @@ Questa complessità apre le porte a potenziali punti di errore, aumento del TCO,
 
 ## CIF supporta correttamente i clienti dal 2013
 
-Con oltre 200 clienti, CIF si è affermata come un ingrediente di successo per un progetto di content &amp; commerce di successo. Ciò fornisce valore per l’IT e le aziende oggi e in futuro. Recenti progetti dei clienti descrivono l’CIF come un &quot;grande acceleratore e un enorme risparmio di tempo con molto valore&quot;.
+Con oltre 200 clienti, CIF si è affermata come un ingrediente di successo per un progetto di content &amp; commerce di successo. Ciò fornisce valore per l’IT e le aziende oggi e in futuro. Recenti progetti dei clienti descrivono CIF come &quot;un grande acceleratore e un enorme risparmio di tempo con molto valore&quot;.
 
 ## Vantaggi di CIF {#cif-benefits}
 
-CIF fornisce componenti core di commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando il tempo di immissione sul mercato per i marchi. Tutti i componenti core sono pronti all’uso e integrati con il livello di dati lato client di Adobe, per arricchire i profili presonalizzati, come il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere usato per prevedere e personalizzare il percorso del cliente in tempo reale.
+CIF fornisce componenti core di commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando il tempo di immissione sul mercato per i marchi. Tutti i componenti core sono pronti all’uso e integrati con il livello dati lato client di Adobe, per arricchire i profili presonalizzati, come il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere usato per prevedere e personalizzare il percorso del cliente in tempo reale.
 
 Il componente aggiuntivo CIF porta il contesto del prodotto in Experience Manager e fornisce strumenti di authoring come una console del prodotto e selettori di prodotti/categorie che consentono all’addetto al marketing di creare e distribuire esperienze di acquisto in Experience Manager senza dover dipendere dallo sviluppatore. I vantaggi includono:
 
@@ -62,7 +62,7 @@ I potenti strumenti CIF in AEM consentono ai creatori di contenuti di realizzare
 
 ### Time-To-Value (TTV)
 
-Accelera lo sviluppo del progetto con [componenti core AEM](https://www.aemcomponents.dev/), [vetrina di riferimento Venia AEM](https://github.com/adobe/aem-cif-guides-venia), [archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e modelli di integrazione per PWA (contenuti headless e Commerce).
+Accelera lo sviluppo del progetto con [Componenti core AEM](https://www.aemcomponents.dev/), [vetrina di riferimento AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e modelli di integrazione per PWA (contenuti headless e Commerce).
 
 CIF è progettato per l’innovazione continua con un componente aggiuntivo sempre aggiornato, che consente ai clienti di accedere a funzioni nuove e migliorate.
 
