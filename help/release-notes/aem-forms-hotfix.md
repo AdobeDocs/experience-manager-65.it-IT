@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: e030a71a0f52e22a803597122369cb111774f49b
+source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,27 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     <td><strong>Data</strong></td>
     <td><strong>Collegamento per il download degli hotfix (collegamento per la distribuzione di software AEM)</strong></td>
     <td><strong>Problemi risolti</strong></td>
+  </tr>
+  <tr>
+    <td>Hotfix SP23 caricato su SD-</td>
+    <td>
+    <ul>
+    <li><strong>Jboss:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/jboss/adobe-aem-forms-jee-hotfix-6.5.23.0-win-jboss.zip">Hotfix per AEM Service Pack 6.5.23.0 su Windows per il server JEE JBoss</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/jboss/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-jboss.tar.gz">Hotfix per AEM Service Pack 6.5.23.0 su Linux per il server JEE JBoss</a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/weblogic/adobe-aem-forms-jee-hotfix-6.5.23.0-win-weblogic.zip">Hotfix per AEM Service Pack 6.5.23.0 su Windows per il server JEE Weblogic</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/weblogic/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-weblogic.tar.gz">Hotfix per AEM Service Pack 6.5.23.0 su Linux per il server JEE Weblogic</a></li>
+    <li><strong>WebSphere:</strong></li>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/websphere/adobe-aem-forms-jee-hotfix-6.5.23.0-win-websphere.zip">Hotfix per AEM Service Pack 6.5.23.0 su Windows per il server WebSphere JEE</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/websphere/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-websphere.tar.gz">Hotfix per AEM Service Pack 6.5.23.0 su Linux per il server WebSphere JEE</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Hotfix SP23 per AEM Forms su JEE</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>26 marzo 2025 </br> </br> Per installare questa correzione, segui le istruzioni <a href="/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md"> Mitigazione delle vulnerabilità Spring Framework per AEM Forms su JEE</a>.</td>
