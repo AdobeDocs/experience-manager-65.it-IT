@@ -10,9 +10,9 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2965'
 ht-degree: 41%
 
 ---
@@ -24,16 +24,16 @@ ht-degree: 41%
 >* Questa pagina offre una panoramica delle operazioni di base nell’ambiente di authoring di Adobe Experience Manager (AEM). Usa la console **Sites** come base.
 >
 >* Alcune funzionalità non sono disponibili in tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. Informazioni specifiche sulle singole console e sulle relative funzionalità sono descritte più dettagliatamente in altre pagine.
->* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [si utilizzano le console](/help/sites-authoring/keyboard-shortcuts.md) e [si modificano le pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Le scelte rapide da tastiera sono disponibili in AEM. In particolare quando [si utilizzano le console](/help/sites-authoring/keyboard-shortcuts.md) e [si modificano le pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Guida introduttiva {#getting-started}
 
 ### Interfaccia touch {#a-touch-enabled-ui}
 
-L’interfaccia utente dell’AEM è stata abilitata per il tocco. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali la selezione, il tocco e lo scorrimento. Questo è in contrasto con il funzionamento di un&#39;interfaccia desktop tradizionale con azioni del mouse come clic, doppio clic, clic con il pulsante destro del mouse e passaggio del mouse.
+L’interfaccia utente di AEM è stata abilitata per il tocco. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali la selezione, il tocco e lo scorrimento. Questo è in contrasto con il funzionamento di un&#39;interfaccia desktop tradizionale con azioni del mouse come clic, doppio clic, clic con il pulsante destro del mouse e passaggio del mouse.
 
-Poiché l’interfaccia utente dell’AEM è dotata di funzionalità touch, puoi utilizzare i gesti touch sui dispositivi touch (ad esempio, dispositivi mobili o tablet) e le azioni del mouse su un dispositivo desktop tradizionale.
+Poiché l’interfaccia utente di AEM è dotata di funzionalità touch, puoi utilizzare i gesti touch sui dispositivi touch (ad esempio, dispositivi mobili o tablet) e le azioni del mouse su un dispositivo desktop tradizionale.
 
 ### Primi passi {#first-steps}
 
@@ -43,13 +43,13 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 >[!NOTE]
 >
->Per comprendere l&#39;utilizzo di base dell&#39;AEM, questo documento si basa sulla console **Sites**.
+>Per comprendere l&#39;utilizzo di base di AEM, questo documento si basa sulla console **Sites**.
 >
 >Per iniziare, fai clic su **Sites**.
 
 ### Navigazione nel prodotto  {#product-navigation}
 
-Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Fai clic qui per una buona panoramica delle operazioni di base dell’AEM.
+Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Fai clic qui per una buona panoramica delle operazioni di base di AEM.
 
 ![Navigazione prodotto](assets/bh-02.png)
 
@@ -94,7 +94,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>Queste console ti consentono di importare e <a href="/help/assets/assets.md">gestire risorse digitali</a> quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM. </td>
+   <td>Queste console ti consentono di importare e <a href="/help/assets/assets.md">gestire risorse digitali</a> quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza di AEM. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -122,7 +122,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=it">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -171,7 +171,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   >[!NOTE]
   >
-  >L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Per informazioni dettagliate, consulta [Posta in arrivo - Attività amministrative predefinite](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks).
+  >AEM preconfigurato viene fornito con le attività amministrative assegnate al gruppo di utenti amministratore. Per informazioni dettagliate, consulta [Posta in arrivo - Attività amministrative predefinite](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks).
 
 * [Proprietà utente](/help/sites-authoring/user-properties.md)
 
@@ -237,7 +237,7 @@ Sono disponibili diverse risorse di Aiuto:
 
 * **Navigazione**
 
-  La prima volta che accedi al sistema, [una serie di diapositive introduce la navigazione AEM](/help/sites-authoring/basic-handling.md#product-navigation).
+  La prima volta che accedi al sistema, [una serie di diapositive introduce la navigazione in AEM](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Editor pagina**
 
@@ -568,15 +568,16 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 
 ### Riferimenti {#references}
 
-**I riferimenti** mostrano connessioni alla risorsa selezionata. Ad esempio, nella console **Sites**, i [riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) per le pagine mostrano:
+**I riferimenti** mostrano le connessioni alla risorsa selezionata. Ad esempio, nella console **Sites**, i [riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) per le pagine mostrano:
 
+* [Blueprint](/help/sites-administering/msm.md)
 * [Lanci](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copy](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Copie per lingua](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Riferimenti ai contenuti:
 
-   * collegamenti da altre pagine alla pagina selezionata
-   * contenuto preso in prestito da, o prestato, o entrambi, alla pagina selezionata dal componente Riferimento
+   * Collegamenti diretti da altre pagine alla pagina selezionata
+   * Contenuto preso in prestito da, prestato a, o entrambi, nella pagina selezionata dal componente Riferimento
 
 ![bh-28](assets/bh-28.png)
 

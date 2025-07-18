@@ -1,6 +1,6 @@
 ---
 title: Creazione e organizzazione delle pagine
-description: Questa sezione descrive come creare e gestire le pagine con AEM in modo da poter creare contenuti su di esse.
+description: Questa sezione descrive come creare e gestire le pagine con AEM in modo da poter poi creare contenuti su di esse.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,16 +9,16 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 16%
 
 ---
 
 # Creazione e organizzazione delle pagine{#creating-and-organizing-pages}
 
-In questa sezione viene descritto come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuto](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) in tali pagine.
+Questa sezione descrive come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuto](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) su tali pagine.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ In questa sezione viene descritto come creare e gestire le pagine con Adobe Expe
 
 ## Organizzazione del sito web {#organizing-your-website}
 
-In qualità di autore, devi organizzare il tuo sito web all’interno dell’AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
+In qualità di autore, devi organizzare il tuo sito web all’interno di AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * si trovano facilmente nell’ambiente di authoring
 * i visitatori del sito possono facilmente sfogliarli nell’ambiente di pubblicazione
@@ -37,13 +37,13 @@ In qualità di autore, devi organizzare il tuo sito web all’interno dell’AEM
 
 La struttura di un sito Web può essere considerata come una *struttura ad albero* che contiene le pagine di contenuto. I nomi di queste pagine di contenuto vengono utilizzati per formare gli URL, mentre il titolo viene visualizzato quando viene visualizzato il contenuto della pagina.
 
-Di seguito è riportato un estratto dal Geometrixx, in cui, ad esempio, sarà possibile accedere alla pagina `Triangle`:
+Di seguito è riportato un estratto dal sito Geometrixx, dove, ad esempio, sarà possibile accedere alla pagina `Triangle`:
 
 * Ambiente di authoring
 
   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* Ambiente Publish
+* Ambiente di pubblicazione
 
   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
@@ -101,21 +101,21 @@ Utilizzare solo questi caratteri per essere certi che vengano accettati o utiliz
 
 #### Titolo {#title}
 
-Se specifichi solo una pagina **Titolo** durante la creazione di una pagina, AEM deriva la pagina **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR. In entrambe le interfacce verrà accettato un campo **Titolo** contenente caratteri non validi, ma al nome derivato verranno sostituiti i caratteri non validi. Ad esempio:
+Se durante la creazione di una pagina si specifica solo una pagina **Titolo**, AEM deriva la pagina **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR. In entrambe le interfacce verrà accettato un campo **Titolo** contenente caratteri non validi, ma al nome derivato verranno sostituiti i caratteri non validi. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Nome {#name}
 
-Se durante la creazione di una pagina si specifica il nome **Name**, l&#39;AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+Se durante la creazione di una pagina si specifica **Nome**, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
 Nell&#39;interfaccia classica **non è possibile immettere caratteri non validi** nel campo **Nome**.
 
 >[!NOTE]
->Nell&#39;interfaccia utente touch **non è possibile inviare caratteri non validi** nel campo **Name**. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
+>Nell&#39;interfaccia utente touch **non è possibile inviare caratteri non validi** nel campo **Name**. Quando AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ Elenco di modelli disponibili per la generazione della nuova pagina.
 
 ### Componenti {#components}
 
-I componenti sono gli elementi forniti da AEM che consentono di aggiungere specifici tipi di contenuto. L’AEM viene fornito con una serie di componenti pronti all’uso che offrono funzionalità complete, tra cui:
+I componenti sono gli elementi forniti da AEM che consentono di aggiungere specifici tipi di contenuto. AEM viene fornito con una serie di componenti pronti all’uso che offrono funzionalità complete, tra cui:
 
 * Testo
 * Immagine
@@ -173,7 +173,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
    * Fornisci un **Titolo** da mostrare all&#39;utente.
    * Fornisci un **Nome**; viene utilizzato per generare l&#39;URI. Se non viene specificato, il nome verrà derivato dal titolo.
 
-      * Se durante la creazione di una pagina si specifica il nome **Name**, l&#39;AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+      * Se durante la creazione di una pagina si specifica **Nome**, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
       * Nell&#39;interfaccia classica **non è possibile immettere caratteri non validi** nel campo **Nome**.
 
    * Fare clic sul modello da utilizzare per creare la nuova pagina.
@@ -266,7 +266,7 @@ Per spostare o rinominare una pagina:
 
    ![schermata_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   Nella pagina sono inoltre elencate le pagine che fanno riferimento alla pagina spostata. A seconda dello stato della pagina di riferimento, è possibile regolare tali collegamenti e/o ripubblicare le pagine.
+   Nella pagina sono inoltre elencate tutte le pagine che fanno riferimento direttamente o indirettamente alla pagina spostata. A seconda dello stato della pagina di riferimento, è possibile regolare tali collegamenti e/o ripubblicare le pagine.
 
 1. Compila i campi seguenti, a seconda dei casi:
 
@@ -286,7 +286,7 @@ Per spostare o rinominare una pagina:
 
    * **Regola**
 
-     Aggiorna i collegamenti nella pagina elencata che puntano alla pagina spostata: ad esempio, se la pagina A contiene collegamenti alla pagina B, in caso di spostamento della pagina B l’AEM regola i collegamenti nella pagina A.
+     Aggiorna i collegamenti nella pagina elencata che puntano alla pagina spostata: ad esempio, se la pagina A contiene collegamenti alla pagina B, AEM regola i collegamenti nella pagina A in caso di spostamento della pagina B.
 
      Può essere selezionato/deselezionato per ogni singola pagina di riferimento.
 

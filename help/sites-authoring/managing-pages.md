@@ -5,16 +5,16 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 383192083ec84176f67882a869550374f6074eef
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 64%
+source-wordcount: '2476'
+ht-degree: 62%
 
 ---
 
 # Creazione e organizzazione delle pagine {#creating-and-organizing-pages}
 
-In questa sezione viene descritto come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuto](/help/sites-authoring/editing-content.md) in tali pagine.
+Questa sezione descrive come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuto](/help/sites-authoring/editing-content.md) su tali pagine.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ In questa sezione viene descritto come creare e gestire le pagine con Adobe Expe
 
 ## Organizzazione del sito web {#organizing-your-website}
 
-In qualità di autore, organizza il tuo sito web all’interno dell’AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
+In qualità di autore, organizza il tuo sito web in AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * siano facilmente reperibili nell’ambiente di authoring;
 * i visitatori possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
@@ -42,7 +42,7 @@ Di seguito è riportato un esempio tratto dal sito We.Retail, in cui è possibil
 * Ambiente di authoring
   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Ambiente Publish
+* Ambiente di pubblicazione
   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 A seconda della configurazione dell&#39;istanza, l&#39;utilizzo di `/content` potrebbe essere facoltativo nell&#39;ambiente di pubblicazione.
@@ -107,7 +107,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Durante la creazione di una pagina, l&#39;AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte dall&#39;AEM e dal JCR.
+Durante la creazione di una pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -125,7 +125,7 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzi
 
 #### Titolo {#title}
 
-Se specifichi solo una pagina **Titolo** durante la creazione di una pagina, AEM deriva la pagina **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR. Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
+Se durante la creazione di una pagina si specifica solo una pagina **Titolo**, AEM deriva la pagina **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR. Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
@@ -134,7 +134,7 @@ Se specifichi solo una pagina **Titolo** durante la creazione di una pagina, AEM
 
 #### Nome {#name}
 
-Se specifichi il nome della pagina **Name** durante la creazione, l&#39;AEM [lo convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte dall&#39;AEM e da JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
+Se specifichi il nome della pagina **Name** durante la creazione, AEM [lo convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
 
 ![caop-02](assets/caop-02.png)
 
@@ -216,9 +216,9 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se durante la creazione di una pagina si specifica il nome **Name**, l&#39;AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+      * Se durante la creazione di una pagina si specifica **Nome**, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
-      * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
+      * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
 
    >[!NOTE]
    >
@@ -289,8 +289,8 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
    ![Incolla](assets/paste-without-children.png)
 
    Puoi effettuare le seguenti operazioni:
-   * Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
-   * Selezionare la freccia a discesa per visualizzare l&#39;opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
+   * Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine secondarie in questa posizione.
+   * Selezionare la freccia a discesa per visualizzare l&#39;opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine secondarie non verranno copiate.
 
    >[!NOTE]
    >
@@ -326,10 +326,9 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    Verrà avviata la procedura guidata Sposta pagina.
 
-1. Dal passaggio **Rinomina** della procedura guidata, puoi effettuare le seguenti operazioni:
+1. Il passaggio **Rinomina** della procedura guidata fornisce **informazioni** sulla pagina, inclusa la data di creazione, il percorso e il numero di riferimenti diretti. Da qui puoi effettuare le seguenti operazioni:
 
    * Specifica il nome da assegnare alla pagina spostata, quindi fai clic su **Avanti** per continuare.
-
    * Seleziona **Annulla** per interrompere la procedura.
 
    ![caop-07](assets/caop-07.png)
@@ -365,7 +364,8 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    >[!NOTE]
    >
-   >Se la pagina non è collegata né è soggetta a riferimenti, questo passaggio non sarà disponibile.
+   >* Se la pagina non è collegata né è soggetta a riferimenti, questo passaggio non sarà disponibile.
+   >* Questo passaggio elenca riferimenti diretti e indiretti. Questo valore può essere diverso dalla quantità riportata nel passaggio **Rinomina** della procedura guidata e dai riferimenti riportati dalla barra dei riferimenti, che in entrambi i casi segnalano solo riferimenti diretti per motivi di prestazioni.
 
    ![caop-09](assets/caop-09.png)
 
@@ -397,7 +397,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 
 >[!NOTE]
 >
->L’elaborazione asincrona dello spostamento delle pagine richiede AEM 6.5.3.0 o versione successiva.
+>L&#39;elaborazione dello spostamento asincrono delle pagine richiede AEM 6.5.3.0 o versione successiva.
 
 ### Eliminazione di una pagina {#deleting-a-page}
 

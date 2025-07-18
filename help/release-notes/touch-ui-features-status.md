@@ -5,9 +5,9 @@ exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1087'
 ht-degree: 15%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 15%
 
 Adobe Experience Manager (AEM) versione 6.4 e successive [L&#39;interfaccia utente classica è obsoleta](../release-notes/deprecated-removed-features.md). Adobe non sta apportando ulteriori miglioramenti all’interfaccia classica e gli utenti sono invitati a utilizzare le nuove potenti funzioni disponibili nell’interfaccia touch.
 
-A partire dalla versione 6.0, AEM ha introdotto una nuova interfaccia utente denominata &quot;interfaccia touch&quot; (denominata &quot;interfaccia touch&quot;), allineata a [!DNL Adobe Experience Cloud] e alle linee guida generali dell&#39;interfaccia utente di Adobe. Con la parità delle funzioni quasi raggiunta, questa è diventata l’interfaccia utente standard in AEM con l’interfaccia legacy orientata al desktop denominata &quot;interfaccia classica&quot;.
+A partire dalla versione 6.0, AEM ha introdotto una nuova interfaccia utente denominata &quot;interfaccia touch&quot; (denominata &quot;interfaccia touch&quot;), allineata a [!DNL Adobe Experience Cloud] e alle linee guida generali dell&#39;interfaccia utente di Adobe. Con la parità delle funzioni quasi raggiunta, questa è diventata l’interfaccia standard in AEM con l’interfaccia legacy orientata al desktop denominata &quot;interfaccia classica&quot;.
 
 Anche se la maggior parte delle funzionalità sono presenti nell’interfaccia utente touch, alcune non sono ancora complete e verranno aggiunte nelle versioni future.
 
 L’elenco seguente mostra lo stato delle funzionalità implementate in AEM 6.5.
 
-Per i consigli per i clienti che eseguono l&#39;aggiornamento a AEM 6.5, consulta [Consigli sull&#39;interfaccia utente per i clienti](/help/sites-deploying/ui-recommendations.md).
+Per i consigli per i clienti che eseguono l&#39;aggiornamento ad AEM 6.5, consulta [Consigli sull&#39;interfaccia utente per i clienti](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Per i consigli per i clienti che eseguono l&#39;aggiornamento a AEM 6.5, consult
 
 Elenco delle funzionalità di cui dispone l&#39;amministratore del sito dell&#39;interfaccia utente classica (`/siteadmin`) e dello stato nell&#39;interfaccia utente touch (`/sites.html`).
 
-| Funzione obsoleta | Stato | Commenti |
+| Funzione | Stato | Commenti |
 |--- |--- |--- |
 | Naviga nella gerarchia del sito | Completato | AEM 6.4 ha introdotto una [visualizzazione struttura contenuto](/help/sites-authoring/basic-handling.md#content-tree). |
 | Avvia flusso di lavoro | Completato |  |
@@ -57,14 +57,14 @@ Elenco delle funzionalità di cui dispone l&#39;amministratore del sito dell&#39
 | Ricerca | Completato |  |
 | Copia e incolla pagina (duplicato) | Completato |  |
 | Sposta pagine | Completato |  |
-| Pagine Publish | Completato |  |
-| Pagine Publish senza diritti di replica | Completato |  |
+| Pubblicare le pagine | Completato |  |
+| Pubblicare pagine senza diritti di replica | Completato |  |
 | Pubblica più tardi | Completato |  |
-| Struttura Publish | Completato |  |
+| Pubblica struttura | Completato |  |
 | Annullare la pubblicazione delle pagine | Completato |  |
 | Annullare la pubblicazione delle pagine senza diritti di replica | Completato |  |
 | Annulla pubblicazione più tardi | Completato |  |
-| Elimina | Completato |  |
+| Eliminare | Completato |  |
 | Blocca/Sblocca | Completato |  |
 | Visualizza/Modifica proprietà | Completato |  |
 | Impostare le autorizzazioni sulle pagine | Completato |  |
@@ -76,13 +76,13 @@ Elenco delle funzionalità di cui dispone l&#39;amministratore del sito dell&#39
 | Vedi copie per lingua | Completato |  |
 | Trova e sostituisci | Mancante | Utilizza l’interfaccia classica. |
 | Casella in entrata delle notifiche (eventi JCR) | Mancante | Utilizza l’interfaccia classica. Sostituito con un’implementazione diversa in futuro. |
-| Riferimenti | Completato | Visualizzazione dei collegamenti alle pagine in arrivo aggiunti a AEM 6.5. |
+| Riferimenti | Completato | Visualizzazione dei collegamenti alle pagine in arrivo aggiunti ad AEM 6.5. Per motivi di prestazioni, vengono visualizzati solo i collegamenti diretti alla pagina. |
 
 ## Stato delle funzioni: Editor pagina {#feature-status-page-editor}
 
 Questo è un elenco delle funzionalità dell&#39;Editor pagina per interfaccia utente classica (`/cf#`) e dello stato nel touch abilitato (`/editor.html`).
 
-| Funzione obsoleta | Stato | Commenti |
+| Funzione | Stato | Commenti |
 |--- |--- |--- |
 | Modifica pagine Web | Completato |  |
 | Modifica pagine web per dispositivi mobili | Completato |  |
@@ -129,7 +129,7 @@ Questo è un elenco delle funzionalità dell&#39;Editor pagina per interfaccia u
 
 Elenco delle funzionalità dell’editor di testo, tabelle e immagini dell’interfaccia classica e dello stato dell’interfaccia touch.
 
-| Funzione obsoleta | Stato | Commenti |
+| Funzione | Stato | Commenti |
 |--- |--- |--- |
 | Editor Rich Text | Completato | Utilizzabile sul posto, nella finestra di dialogo e a schermo intero. |
 | Abilitare/disabilitare i plug-in dell’editor Rich Text | Completato | È possibile eseguire questa operazione utilizzando [Editor modelli](/help/sites-authoring/templates.md). |
@@ -165,9 +165,9 @@ Elenco delle funzionalità dell’editor di testo, tabelle e immagini dell’int
 
 Questo è un elenco di vari strumenti di cui dispone l’interfaccia classica e lo stato dell’interfaccia touch.
 
-| Funzione obsoleta | Stato | Commenti |
+| Funzione | Stato | Commenti |
 |--- |--- |--- |
-| Gestione attività | Sostituito | 6.0 ha introdotto progetti e compiti. |
+| Gestione delle attività | Sostituito | 6.0 ha introdotto progetti e compiti. |
 | Casella in entrata flusso di lavoro | Completato |  |
 | Configurazione da flusso di lavoro a modello pagina (`/etc/workflow/wcm/templates.html`) | Mancante | Utilizza l’interfaccia classica. |
 | Interfaccia utente amministratore assegnazione tag | Completato |  |

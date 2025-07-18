@@ -10,9 +10,9 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 8%
 
 ---
@@ -37,7 +37,7 @@ La console **Siti Web** consente di gestire e navigare nel sito Web. Utilizzando
 
 ## Accedere all’Aiuto   {#accessing-help}
 
-È possibile accedere direttamente a diverse risorse **Help** dall&#39;interno di AEM:
+È possibile accedere direttamente a diverse risorse di **Aiuto** da AEM:
 
 Oltre ad accedere alla [guida dalle barre degli strumenti della console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), è possibile accedere alla guida dalla barra laterale (utilizzando ? ) durante la modifica di una pagina:
 
@@ -60,7 +60,7 @@ Puoi utilizzare Content Finder per individuare una serie di risorse. Se necessar
 * [Immagini](#finding-images)
 * [Documenti](#finding-documents)
 * [Filmati](#finding-movies)
-* [Browser Dynamic Medie](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Browser Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [Pagine](#finding-pages)
 
 * [Paragrafi](#referencing-paragraphs-from-other-pages)
@@ -87,9 +87,9 @@ Dopo aver creato un paragrafo Scarica sulla pagina, puoi trascinare un elemento 
 
 ### Ricerca di filmati {#finding-movies}
 
-Questa scheda elenca tutti i filmati (ad esempio gli elementi di Flash) presenti nel repository.
+Questa scheda elenca tutti i filmati (ad esempio, gli elementi Flash) presenti nel repository.
 
-Dopo aver creato un paragrafo appropriato, ad esempio Flash, nella pagina, è possibile trascinare un elemento e rilasciarlo nel paragrafo.
+Dopo aver creato un paragrafo appropriato (ad esempio Flash) sulla pagina, potete trascinare un elemento e rilasciarlo nel paragrafo.
 
 ![chlimage_1-113](assets/chlimage_1-113.png)
 
@@ -154,19 +154,23 @@ in una query è possibile utilizzare un numero qualsiasi di caratteri jolly.
 
 ## Visualizzazione dei riferimenti {#showing-references}
 
-L’AEM consente di visualizzare le pagine collegate alla pagina su cui stai lavorando.
+AEM consente di visualizzare le pagine collegate alla pagina su cui stai lavorando.
 
-Per visualizzare i riferimenti diretti alle pagine:
+Per visualizzare i riferimenti di pagina:
 
 1. Nella barra laterale, seleziona l&#39;icona della scheda **Pagina**.
 
    ![schermata_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Seleziona **Mostra riferimenti...** L&#39;AEM apre la finestra Riferimenti e visualizza le pagine che si riferiscono alla pagina selezionata, inclusi i relativi percorsi.
+1. Seleziona **Mostra riferimenti...** AEM apre la finestra Riferimenti e visualizza le pagine che si riferiscono alla pagina selezionata, inclusi i relativi percorsi.
 
    ![schermata_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-In alcune situazioni sono disponibili ulteriori azioni da parte del Sidekick, tra cui:
+AEM mostra tutte le pagine che fanno direttamente riferimento alla pagina selezionata, nonché eventuali riferimenti indiretti. È utile per comprendere tutti i collegamenti che verranno aggiornati se devi spostare o eliminare la pagina.
+
+## Azioni Sidekick aggiuntive {#additional-actions}
+
+In alcune situazioni sono disponibili ulteriori azioni da parte di Sidekick, tra cui:
 
 * [Lanci](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copy](/help/sites-administering/msm.md)
@@ -191,7 +195,7 @@ Durante la modifica di una pagina con l’interfaccia utente classica, è possib
 
 ![Modalità pagina](do-not-localize/chlimage_1-12.png)
 
-La riga di icone nella parte inferiore del Sidekick consente di cambiare modalità per l&#39;utilizzo delle pagine:
+La riga di icone nella parte inferiore del Sidekick consente di cambiare modalità per l’utilizzo delle pagine:
 
 * [Modifica](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 Questa è la modalità predefinita e consente di modificare la pagina, aggiungere o eliminare componenti ed effettuare altre modifiche.
