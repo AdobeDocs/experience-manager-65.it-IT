@@ -106,7 +106,7 @@ Se durante la creazione di una pagina si specifica solo una pagina **Titolo**, A
 | Titolo | Nome derivato |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### Nome {#name}
 
