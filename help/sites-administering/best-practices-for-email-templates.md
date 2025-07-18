@@ -1,6 +1,6 @@
 ---
 title: Best practice per i modelli e-mail
-description: Scopri le best practice per la creazione di modelli e-mail in AEM.
+description: Trova le best practice per la creazione di modelli e-mail in AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration, best-practices
@@ -10,9 +10,10 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
@@ -22,13 +23,13 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Questo articolo si applica ai componenti e-mail AEM basati su Componenti di base obsoleti.
+>Questo articolo si applica ai componenti e-mail AEM basati su Componenti Foundation obsoleti.
 >
->Gli utenti sono invitati a utilizzare i [Componenti core e-mail moderni.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=it)
+>Gli utenti sono invitati a utilizzare i [Componenti core e-mail moderni.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Questo documento descrive alcune delle best practice relative alla progettazione delle e-mail, che si traducono in un modello di campagna e-mail ben sviluppato.
 
-La campagna dimostrativa disponibile nell’AEM segue tutte queste best practice. Per ogni best practice viene descritto come implementare le best practice nella campagna demo.
+La campagna demo disponibile in AEM segue tutte queste best practice. Per ogni best practice viene descritto come implementare le best practice nella campagna demo.
 
 Utilizza queste best practice per creare una newsletter personalizzata.
 
@@ -46,7 +47,7 @@ Utilizza queste best practice per creare una newsletter personalizzata.
 
 >[!NOTE]
 >
->Durante la creazione di un modello di posta elettronica per Adobe Campaign, è necessario includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello. In caso contrario, non è possibile selezionare il modello Adobe Campaign nell&#39;Experience Manager **Proprietà pagina** (il campo è disabilitato).
+>Durante la creazione di un modello di posta per Adobe Campaign, devi includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello. In caso contrario, non puoi selezionare il modello Adobe Campaign in **Proprietà pagina** di Experience Manager (il campo è disabilitato).
 
 ## Componente modello/pagina {#template-page-component}
 
@@ -80,7 +81,7 @@ Utilizza queste best practice per creare una newsletter personalizzata.
   </tr>
   <tr>
    <td>CSS in linea è meglio che inserire tutti i CSS all’inizio.</td>
-   <td><p>Per dimostrare meglio la struttura di base dei HTML e facilitare la possibilità di personalizzare la struttura delle newsletter, sono state allineate solo alcune definizioni CSS.</p> <p>Gli stili di base e le varianti di modello sono stati estratti in un blocco di stile nel &lt;head&gt; della pagina. Al momento dell’invio finale della newsletter, queste definizioni CSS sono allineate nel HTML. È pianificato un meccanismo di allineamento automatico, ma al momento non disponibile.</p> </td>
+   <td><p>Per dimostrare meglio la struttura di base di HTML e facilitare la possibilità di personalizzare la struttura delle newsletter, sono state allineate solo alcune definizioni CSS.</p> <p>Gli stili di base e le varianti di modello sono stati estratti in un blocco di stile nel &lt;head&gt; della pagina. All’invio finale della newsletter, queste definizioni CSS sono allineate in HTML. È pianificato un meccanismo di allineamento automatico, ma al momento non disponibile.</p> </td>
   </tr>
   <tr>
    <td>Semplifica il tuo CSS. Evita dichiarazioni di stile composte, codice abbreviato, proprietà di layout CSS, selettori complessi e pseudo-elementi.</td>
@@ -100,7 +101,7 @@ Utilizza queste best practice per creare una newsletter personalizzata.
 | **Best practice** | **Implementazione** |
 |---|---|
 | Aggiungi attributi *alt* alle immagini | L&#39;attributo *alt* è stato definito come obbligatorio per il componente immagine. |
-| Utilizza il formato *jpg* invece del formato *png* per le immagini | Le immagini vengono sempre gestite come JPG-dal componente immagine. |
+| Utilizza il formato *jpg* invece del formato *png* per le immagini | Le immagini vengono sempre servite come JPG dal componente immagine. |
 | Utilizza l&#39;elemento `<img>` invece delle immagini di sfondo in una tabella. | Nei modelli non vengono utilizzati dati immagine di sfondo. |
 | Aggiungi attributo style=&quot;display block&quot; sulle immagini. In questo modo possono essere ben visualizzati su Gmail. | Per impostazione predefinita, tutte le immagini contengono l&#39;attributo *style=&quot;display block&quot;*. |
 
@@ -135,7 +136,7 @@ Utilizza queste best practice per creare una newsletter personalizzata.
 
 ## Modelli ed esempi di newsletter di Campaign {#campaign-newsletter-templates-and-examples}
 
-L’AEM viene fornito con diversi modelli e componenti pronti all’uso per la creazione di newsletter di campagne. È possibile utilizzare questi modelli e componenti per creare newsletter personalizzate.
+AEM viene fornito con diversi modelli e componenti pronti all’uso per la creazione di newsletter di campagne. È possibile utilizzare questi modelli e componenti per creare newsletter personalizzate.
 
 ### Modelli {#templates}
 
@@ -156,7 +157,7 @@ Al momento sono disponibili [sette componenti da utilizzare nei modelli di campa
 | Testo e Personalization | /libs/mcm/campaign/components/personalization |
 | Texttimage | /libs/mcm/campaign/components/textimage |
 | Collegamento | /libs/mcm/campaign/components/reference |
-| Modello immagine Dynamic Media Classic (precedentemente Scene7) | /libs/mcm/campaign/s7image |
+| Modello immagini Dynamic Media Classic (precedentemente Scene7) | /libs/mcm/campaign/s7image |
 | Riferimento di destinazione | /libs/mcm/campaign/components/reference |
 
 >[!NOTE]

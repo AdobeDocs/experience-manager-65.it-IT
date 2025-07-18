@@ -9,29 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '297'
 ht-degree: 2%
 
 ---
 
+
 # Creazione di un modello di pagina AEM personalizzato con i componenti di Adobe Campaign Form{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-In questa pagina viene illustrato come creare un modello di pagina personalizzato che utilizza i componenti di [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) esaminando il modo in cui il modello Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`) viene implementato e indica le informazioni importanti che potrebbero essere necessarie durante la creazione di un modello personalizzato.
-
->[!NOTE]
->
->[Gli esempi di e-mail e moduli sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md). Scarica il contenuto di esempio di un Geometrixx da Condivisione pacchetti.
+In questa pagina viene illustrato come creare un modello di pagina personalizzato che utilizza i componenti di [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) esaminando il modo in cui il modello Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`) viene implementato e viene indicato che potrebbero essere necessarie informazioni importanti durante la creazione di un modello personalizzato.
 
 >[!CAUTION]
 >
->I componenti e-mail dell’AEM sono stati dichiarati obsoleti. A causa della natura dell’e-mail, che unisce contenuti e stile, i componenti e-mail forniti come predefiniti dall’AEM vengono riutilizzati in modo limitato per i clienti, a causa della necessità di implementare stili personalizzati in tutti i componenti necessari per i progetti.
+>I componenti e-mail di AEM sono stati dichiarati obsoleti. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti come predefiniti da AEM vengono riutilizzati in modo limitato per i clienti, a causa della necessità di implementare stili personalizzati in tutti i componenti necessari per i progetti.
 >
->I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ciò possa essere ottenuto. Tuttavia, non utilizzare questi componenti obsoleti nei progetti.
+>I componenti e-mail possono essere implementati a livello di progetto e i componenti e-mail AEM obsoleti illustrano come farlo. Tuttavia, non utilizzare questi componenti obsoleti nei progetti.
 
 
-Per creare un modello di pagina AEM personalizzato utilizzando i componenti di Adobe Campaign Form, è necessario disporre dei seguenti elementi:
+Per creare un modello di pagina AEM personalizzato utilizzando i componenti di Adobe Campaign Form, verificare di disporre dei seguenti elementi:
 
 1. **RisorsaSuperType corretto**
 
@@ -48,7 +46,7 @@ Per creare un modello di pagina AEM personalizzato utilizzando i componenti di A
 
    Se si esaminano le impostazioni clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), vengono visualizzate le impostazioni seguenti:
 
-   * Il ClientContext punta a `/etc/clientcontext/campaign`
+   * ClientContext punta a `/etc/clientcontext/campaign`
    * È inoltre presente un nodo *config* aggiuntivo.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)

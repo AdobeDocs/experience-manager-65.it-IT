@@ -9,20 +9,20 @@ exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
 
-# Creazione di Adobe Campaign Forms nell’AEM {#creating-adobe-campaign-forms-in-aem}
+# Creazione di Adobe Campaign Forms in AEM {#creating-adobe-campaign-forms-in-aem}
 
 AEM consente di creare e utilizzare moduli che interagiscono con Adobe Campaign sul sito web. Campi specifici possono essere inseriti nei moduli e mappati al database di Adobe Campaign.
 
 Puoi gestire le sottoscrizioni di nuovi contatti, il loro annullamento e i dati del profilo utente, il tutto integrando i relativi dati nel database di Adobe Campaign.
 
-Per utilizzare Adobe Campaign Forms nell’AEM, è necessario seguire questi passaggi, descritti in questo documento:
+Per utilizzare Adobe Campaign Forms in AEM, è necessario seguire questi passaggi, descritti in questo documento:
 
 1. Rendi disponibile un modello.
 1. Crea un modulo.
@@ -66,7 +66,7 @@ Adobe Campaign Prima di tutto, verifica che la connessione tra le istanze di aut
 
 1. Nel campo **Name**, aggiungi il nome della pagina. Deve essere un nome JCR valido.
 1. Nel campo **Titolo** immettere un titolo e fare clic su **Crea**.
-1. Apri la pagina e seleziona **Apri proprietà**; in Cloud Service aggiungi la configurazione Adobe Campaign e seleziona il segno di spunta per salvare le modifiche.
+1. Apri la pagina e seleziona **Apri proprietà**; in Cloud Services aggiungi la configurazione Adobe Campaign e seleziona il segno di spunta per salvare le modifiche.
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
@@ -78,11 +78,11 @@ Forms dedicato ad Adobe Campaign dispone di componenti specifici. Questi compone
 
 >[!NOTE]
 >
->Se il modello desiderato non è disponibile, vedere [Come rendere disponibile un modello](/help/sites-authoring/adobe-campaign.md).
+>Se il modello desiderato non è disponibile, vedere [Come rendere disponibile un modello.](/help/sites-authoring/campaign.md)
 
 Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulteriori informazioni su una panoramica più generale sull&#39;utilizzo dei moduli in Adobe Experience Manager, vedere [Componenti Editmode](/help/sites-authoring/default-components-foundation.md).
 
-1. Seleziona **Apri proprietà** e in Cloud Service aggiungi la configurazione Adobe Campaign e seleziona il segno di spunta per salvare le modifiche.
+1. Seleziona **Apri proprietà** e in Cloud Services aggiungi la configurazione Adobe Campaign e seleziona il segno di spunta per salvare le modifiche.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
@@ -114,7 +114,7 @@ Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulter
    >
    >È possibile aggiungere o rimuovere i campi visualizzati nella tabella dei destinatari seguendo le istruzioni disponibili: [https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
 
-1. Fare clic su **Pagina Publish**. La pagina viene attivata sul sito. Puoi visualizzarlo dalla tua istanza di pubblicazione AEM. È inoltre possibile [testare un modulo](#testing-a-form).
+1. Fai clic su **Pubblica pagina**. La pagina viene attivata sul sito. Per visualizzarlo, vai all’istanza della pubblicazione AEM. È inoltre possibile [testare un modulo](#testing-a-form).
 
    >[!CAUTION]
    >
@@ -139,7 +139,7 @@ A questo scopo, devi ottenere manualmente l’EPK di un profilo Adobe Campaign e
    * In Adobe Campaign Standard - Passa a **Profili e tipi di pubblico** > **Profili**, in cui sono elencati i profili esistenti. Accertati che nella tabella sia visualizzato il campo **Identificatore risorsa principale** in una colonna (per configurarlo, tocca o fai clic su **Configura elenco**). Copia l’identificatore della risorsa principale del profilo desiderato.
    * In Adobe Campaign Classic, vai a **Profili e destinazioni** > **Destinatari**, in cui sono elencati i profili esistenti. Assicurarsi che nella tabella sia visualizzato il campo **Identificatore crittografato** in una colonna (per configurare questo campo, fare clic con il pulsante destro del mouse su una voce e selezionare **Configura elenco...**). Copia l’identificatore crittografato del profilo desiderato.
 
-1. In AEM, aprire la pagina del modulo nell&#39;istanza di pubblicazione e aggiungere l&#39;EPK del passaggio 1 come parametro URL: utilizzare lo stesso nome precedentemente definito nel componente EPK durante la creazione del modulo (ad esempio: `?epk=...`)
+1. In AEM, apri la pagina del modulo nell’istanza di pubblicazione e aggiungi l’EPK del passaggio 1 come parametro URL: utilizza lo stesso nome precedentemente definito nel componente EPK durante la creazione del modulo (ad esempio: `?epk=...`)
 1. Il modulo può ora essere utilizzato per modificare i dati e le sottoscrizioni associati al profilo Adobe Campaign collegato. Dopo aver modificato alcuni campi e aver inviato il modulo, puoi verificare in Adobe Campaign che i dati appropriati siano stati aggiornati.
 
 I dati nel database di Adobe Campaign vengono aggiornati dopo la convalida di un modulo.

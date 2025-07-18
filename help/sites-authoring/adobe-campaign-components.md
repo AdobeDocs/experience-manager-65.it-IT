@@ -10,12 +10,14 @@ exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2857'
 ht-degree: 6%
 
 ---
+
 
 # Componenti di Adobe Campaign{#adobe-campaign-components}
 
@@ -23,9 +25,9 @@ Quando si esegue l’integrazione con Adobe Campaign, sono disponibili component
 
 >[!CAUTION]
 >
->I componenti e-mail dell’AEM sono stati dichiarati obsoleti. A causa della natura dell’e-mail, che unisce contenuti e stile, i componenti e-mail forniti come predefiniti dall’AEM vengono riutilizzati in modo limitato per i clienti, a causa della necessità di implementare stili personalizzati in tutti i componenti necessari per i progetti.
+>I componenti e-mail di AEM sono stati dichiarati obsoleti. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti come predefiniti da AEM vengono riutilizzati in modo limitato per i clienti, a causa della necessità di implementare stili personalizzati in tutti i componenti necessari per i progetti.
 >
->I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ciò possa essere ottenuto. Tuttavia, non utilizzare questi componenti obsoleti nei progetti.
+>I componenti e-mail possono essere implementati a livello di progetto e i componenti e-mail AEM obsoleti illustrano come farlo. Tuttavia, non utilizzare questi componenti obsoleti nei progetti.
 
 ## Componenti della newsletter di Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -64,7 +66,7 @@ Puoi configurare quanto segue:
 Se si desidera utilizzare un nome diverso dal titolo della pagina, immetterlo qui.
 
 * **Livello di intestazione (1, 2, 3, 4)**
-Livello di intestazione in base alle dimensioni di intestazione HTML da 1 a 4.
+Il livello di intestazione si basa sulle dimensioni di intestazione 1-4 di HTML.
 
 L’esempio seguente mostra un componente Titolo (Campagna) visualizzato.
 
@@ -171,11 +173,11 @@ L’esempio seguente mostra un componente Collega (Campagna) visualizzato.
 
 ### Modello immagini Dynamic Media Classic (Scene7) (Campaign) {#scene-image-template-campaign}
 
-I modelli di immagine Dynamic Media Classic (Scene7) sono a più livelli e sono file di immagine a più livelli, in cui il contenuto e le proprietà possono essere parametrizzati per variabilità. Il componente **[!UICONTROL Modello immagine]** consente di utilizzare i modelli di Scene7 nelle newsletter e di modificare i valori dei parametri del modello. Inoltre, puoi utilizzare le variabili di metadati di Adobe Campaign all’interno dei parametri, in modo che ogni utente possa percepire l’immagine in modo personalizzato.
+I modelli di immagine Dynamic Media Classic (Scene7) sono a più livelli e sono file di immagine a più livelli, in cui il contenuto e le proprietà possono essere parametrizzati per variabilità. Il componente **[!UICONTROL Modello immagine]** consente di utilizzare i modelli Scene7 nelle newsletter e di modificare i valori dei parametri del modello. Inoltre, puoi utilizzare le variabili di metadati di Adobe Campaign all’interno dei parametri, in modo che ogni utente possa percepire l’immagine in modo personalizzato.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-Fai clic su **Modifica** per configurare il componente. È possibile configurare le impostazioni descritte in questa sezione. Questo modello di immagine Scene7 è descritto in dettaglio in [Componente modello immagine Scene7](/help/assets/scene7.md#image-template).
+Fai clic su **Modifica** per configurare il componente. È possibile configurare le impostazioni descritte in questa sezione. Questo modello di immagine Scene7 è descritto in dettaglio nel [componente modello immagine Scene7](/help/assets/scene7.md#image-template).
 
 Inoltre, il pannello dei parametri elenca tutti i parametri di modello definiti per il modello in Scene7. Per ciascuno di questi parametri, puoi adattare il valore, inserire variabili o reimpostarle sul valore predefinito.
 
@@ -246,7 +248,7 @@ L’esempio seguente mostra un componente Testo e immagine (Campaign) visualizza
 
 ### Testo e personalizzazione (Campaign) {#text-personalization-campaign}
 
-Il componente Testo e Personalization (Campaign) consente di immettere un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite dall&#39;[editor Rich Text](/help/sites-authoring/rich-text-editor.md). Questo componente consente inoltre di utilizzare i campi di contesto e i blocchi di personalizzazione disponibili da Adobe Campaign. Vedere anche [Inserimento di Personalization](/help/sites-authoring/campaign.md#inserting-personalization).
+Il componente Testo e Personalization (Campaign) consente di immettere un blocco di testo utilizzando un editor di WYSIWYG, con funzionalità fornite dall&#39;[editor Rich Text](/help/sites-authoring/rich-text-editor.md). Questo componente consente inoltre di utilizzare i campi di contesto e i blocchi di personalizzazione disponibili da Adobe Campaign. Vedere anche [Inserimento di Personalization](/help/sites-authoring/campaign.md#inserting-personalization).
 
 La selezione delle icone consente di formattare il testo, incluse le caratteristiche dei caratteri, l&#39;allineamento, i collegamenti, gli elenchi e i rientri. La funzionalità è sostanzialmente la stessa in [entrambe le interfacce utente](/help/sites-authoring/editing-content.md), anche se l&#39;aspetto è diverso:
 
@@ -265,7 +267,7 @@ Nell’editor locale puoi aggiungere testo, modificare la giustificazione, aggiu
 
 >[!NOTE]
 >
->Vengono presi in considerazione solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi delle tabelle collegate a **nms:seedMember** non sono disponibili.
+>Vengono considerati solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi delle tabelle collegate a **nms:seedMember** non sono disponibili.
 
 ## Componenti di Adobe Campaign Form {#adobe-campaign-form-components}
 
