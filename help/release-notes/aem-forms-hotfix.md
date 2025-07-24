@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
+source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
 >
 > Gli hotfix sono progettati per essere cumulativi e comprendono tutte le correzioni precedenti. Quando applichi l’aggiornamento rapido più recente a una versione, questo non solo risolve il problema più recente, ma incorpora anche tutte le correzioni di bug e i miglioramenti precedenti.
 
-## Hotfix per Adaptive Forms {#hotfix-for-adaptive-forms}
+## Hotfix per AEM Forms {#hotfix-for-aem-forms}
 
 <table>
   <tbody>
@@ -46,7 +46,16 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     </td>
     <td>
     <ul>
-    <li>Hotfix SP23 per AEM Forms su JEE</li>
+    <li><strong>Questo aggiornamento rapido corregge i seguenti problemi:</strong>
+      <ul>
+        <li><strong>FORMS-20533:</strong> AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x per il componente Forms. In questo modo si ottengono le modifiche Struts precedentemente mancate che non erano incluse in SP23. Il supporto è stato aggiunto tramite un Hotfix che è possibile scaricare e installare per aggiungere il supporto per la versione più recente di Struts.</li>
+        <li><strong>FORMS-20532:</strong> AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x per il componente di output. In questo modo si ottengono le modifiche Struts precedentemente mancate che non erano incluse in SP23. Il supporto è stato aggiunto tramite un Hotfix che è possibile scaricare e installare per aggiungere il supporto per la versione più recente di Struts.</li>
+        <li><strong>FORMS-20203:</strong> Quando un utente aggiorna Struts da AEM Service Pack 2.5.x ad AEM Forms Service Pack 6.x, nell'interfaccia utente dei criteri non vengono visualizzate tutte le configurazioni, ad esempio l'opzione per aggiungere una filigrana. Puoi scaricare e installare l’Hotfix per risolvere questo problema.</li>
+        <li><strong>FORMS-20360:</strong> Dopo l'aggiornamento ad AEM Forms Service Pack 6.5.23.0, il servizio di conversione ImageToPDF non riesce e viene visualizzato l'errore:<br>
+        <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
+        Puoi scaricare e installare l’Hotfix per risolvere questo problema.</li>
+      </ul>
+    </li>
     </ul>
     </td>    
   </tr>

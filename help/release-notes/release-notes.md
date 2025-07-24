@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
+source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
 workflow-type: tm+mt
-source-wordcount: '6643'
+source-wordcount: '6684'
 ht-degree: 1%
 
 ---
@@ -71,11 +71,21 @@ Le funzionalità e i miglioramenti principali di questa versione includono:
 
    * Red Hat® Enterprise Linux® 9 (kernel 4.x, 64 bit) 
 
-* [Componente allegato file protetto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): come misura di sicurezza, il componente ora impedisce l&#39;invio di file con estensioni modificate che tentano di ignorare i controlli dei tipi di file consentiti. Tali file vengono bloccati durante l’invio per garantire che siano accettati solo i tipi di file validi.
+* [Componente allegato file protetto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): come misura di sicurezza, il componente ora impedisce l&#39;invio di file con estensioni modificate che tentano di ignorare i controlli dei tipi di file consentiti. Tali file vengono bloccati durante l’invio per garantire che siano accettati solo i tipi di file validi.
 
-* FORMS-20533: AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x per il componente Forms. In questo modo si ottengono le modifiche Struts precedentemente mancate che non erano incluse in SP23. Il supporto è stato aggiunto tramite un [Hotfix](/help/release-notes/aem-forms-hotfix.md) che puoi [scaricare e installare](/help/release-notes/aem-forms-hotfix.md) per aggiungere il supporto per la versione più recente di Struts.
+* FORMS-20533, FORMS-20532: AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x. Il supporto è stato aggiunto tramite un [Hotfix](/help/release-notes/aem-forms-hotfix.md) che puoi [scaricare e installare](/help/release-notes/aem-forms-hotfix.md) per aggiungere il supporto per la versione più recente di Struts.
 
-* FORMS-20532: AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x per il componente di output. In questo modo si ottengono le modifiche Struts precedentemente mancate che non erano incluse in SP23. Il supporto è stato aggiunto tramite un [Hotfix](/help/release-notes/aem-forms-hotfix.md) che puoi [scaricare e installare](/help/release-notes/aem-forms-hotfix.md) per aggiungere il supporto per la versione più recente di Struts.
+* **LC-3922769**: alcune funzionalità di AEM Forms ora richiedono OpenSSL 3 per funzionare correttamente. OpenSSL 3 deve essere installato nel sistema con le librerie `libcrypto.so.3` e `libssl.so.3`. Poiché gli aggiornamenti di sicurezza sono disponibili solo nelle versioni con OpenSSL 3.0.14 e il supporto di SafeLogic termina a febbraio 2025, abbiamo rimosso bsafe e ora utilizziamo OpenSSL 3 per la conformità in materia di sicurezza. Per la compatibilità della piattaforma e i requisiti dettagliati, vedi [Piattaforme supportate per AEM Forms su JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) e [Requisiti tecnici](/help/sites-deploying/technical-requirements.md).
+
+  **Per verificare l&#39;installazione di OpenSSL 3:**
+
+   * **Sistemi basati su RHEL/CentOS/Fedora**: `rpm -qa | grep   openssl3`
+   * **Sistemi basati su Ubuntu/Debian**: `dpkg -l | grep openssl3`
+   * **Verifica alternativa**: `ldd /path/to/XMLForm |   grep -E 'libcrypto.so.3|libssl.so.3'` (se le librerie si trovano in LD_LIBRARY_PATH)
+
+
+
+
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -219,11 +229,11 @@ Correggi i tag `<br>` imprevisti nell&#39;Editor Rich Text con la modalità Inco
 
 ### [!DNL Assets]{#assets-6523}
 
-* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, aver selezionato la cartella&#x200B;**[!UICONTROL &#x200B; Search Adobe Stock &#x200B;]**&#x200B;e aver selezionato un&#39;immagine di archivio:
+* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, aver selezionato la cartella**[!UICONTROL  Search Adobe Stock ]**e aver selezionato un&#39;immagine di archivio:
    * L&#39;immagine stock selezionata non può essere concessa in licenza e salvata perché facendo clic su **[!UICONTROL Licenza e salvataggio]** viene visualizzato un elenco a discesa vuoto.
    * Selezionando l&#39;immagine Stock o immettendo nuovamente l&#39;URL della pagina Stock, si reindirizza alla home page di [!DNL AEM], impedendo l&#39;accesso all&#39;immagine Adobe Stock. (ASSETS-48687)
 * Problemi durante la gestione delle cartelle se il nome della cartella include `/` nel nome nella pagina di navigazione locale [!DNL AEM] (6.5.22.0). (ASSETS-46740)
-* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte &#x200B;]**&#x200B;a causa di un elevato utilizzo di memoria. (ASSETS-46738)
+* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte ]**a causa di un elevato utilizzo di memoria. (ASSETS-46738)
 * Problemi di integrazione con [!DNL InDesign] come servizio `Day CQ DAM Mime Type OSGI` che identifica erroneamente [!DNL InDesign] file come `x-adobe-indesign` invece di `x-indesign`. (ASSETS-45953)
 * [!DNL AEM 6.5.21] perdita di dati della sessione rilevata nel passaggio del flusso di lavoro predefinito **[!UICONTROL Pubblicazione pianificata in Brand Portal]**. (ASSETS-44104)
 * **[!UICONTROL Memoria insufficiente]** errori visualizzati in [!DNL AEM] durante l&#39;elaborazione e la pubblicazione delle immagini. Questo problema era dovuto a metodi obsoleti nei flussi di lavoro, ad esempio **[!DNL Dam Asset update]** e **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -684,9 +694,22 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
 >
 > Non eseguire l&#39;aggiornamento al Service Pack 6.5.23.0 per i problemi che non dispongono di hotfix disponibili, in quanto potrebbero verificarsi errori imprevisti. Eseguire l&#39;aggiornamento al Service Pack 6.5.23.0 solo dopo il rilascio degli hotfix richiesti.
 
-* Quando un utente aggiorna il framework Struts dalla versione 2.5.x alla versione 6.x, l’interfaccia utente Criteri di AEM Forms non visualizza tutte le configurazioni, ad esempio l’opzione per aggiungere una filigrana. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere il problema. (FORMS-20203)
-* Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.23.0, il servizio di conversione ImageToPDF non riesce e viene visualizzato l&#39;errore (FORMS-20360):
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere il problema.
+#### Problemi relativi agli hotfix disponibili {#aem-forms-issues-with-hotfixes}
+
+Nei seguenti problemi è disponibile un hotfix per il download e l’installazione. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere questi problemi:
+
+* **FORMS-20203**: quando un utente aggiorna il framework Struts dalla versione 2.5.x alla versione 6.x, nell&#39;interfaccia utente Criteri di AEM Forms non vengono visualizzate tutte le configurazioni, ad esempio l&#39;opzione per aggiungere una filigrana.
+
+* **FORMS-20360**: dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.23.0, il servizio di conversione ImageToPDF non riesce e viene visualizzato il messaggio di errore:
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+
+* **FORMS-20478**: durante il tentativo di convertire i file TIFF di tipo 7/8 in PDF, il processo di conversione non riesce e viene visualizzato l&#39;errore &quot;Conversione ALC-PDG-001-000-Image2Pdf non riuscita a causa di: com/sun/image/codec/jpeg/JPEGCodec&quot; e &quot;ALC-PDG-016-003-Si è verificato un errore sconosciuto/imprevisto durante la post-elaborazione di PDF.&quot; Il sistema tenta di riprovare utilizzando il decodificatore TIFF TM ImageIO, ma alla fine non riesce a completare il processo.
+
+* **FORMS-14521**: se un utente tenta di visualizzare in anteprima una bozza di lettera con dati XML salvati, si blocca nello stato `Loading` per alcune lettere specifiche.
+
+* AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x per il componente Forms. In questo modo si ottengono le modifiche Struts precedentemente mancate che non erano incluse in SP23. Il supporto è stato aggiunto tramite un [Hotfix](/help/release-notes/aem-forms-hotfix.md) che puoi scaricare e installare per aggiungere il supporto per la versione più recente di Struts.
+
+#### Altri problemi noti {#aem-forms-other-known-issues}
 
 * Dopo aver installato AEM Forms JEE Service Pack 21 (6.5.21.0), se trovi voci duplicate dei file jar Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` nella cartella `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), effettua le seguenti operazioni per risolvere il problema:
 
@@ -697,7 +720,6 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
    5. Apri il prompt dei comandi in modalità amministratore.
    6. Installare la patch Geode utilizzando il file `geode-*-1.15.1.2.jar`.
 
-* Se un utente tenta di visualizzare in anteprima una bozza di lettera con dati XML salvati, per alcune lettere specifiche si blocca nello stato `Loading`. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-14521)
 * Quando si esegue l’aggiornamento da AEM 6.5 Forms Service Pack 18 o 19 a Service Pack 20 o 21, si verifica un errore di compilazione JSP. Questo errore impediva loro di aprire o creare moduli adattivi. Inoltre, ha causato problemi con altre interfacce AEM. Tali interfacce includevano l’Editor pagina, l’interfaccia utente di AEM Forms, l’Editor flusso di lavoro e l’interfaccia utente Panoramica sistema. (FORMS-15256)
 
   In caso di problemi di questo tipo, effettua le seguenti operazioni per risolverli:
@@ -705,11 +727,12 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
    2. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Riavvia il server AEM.
 
-* Dopo l&#39;aggiornamento ad AEM Forms Service Pack 20 (6.5.20.0) con il componente aggiuntivo Forms, le configurazioni basate sul servizio Adobe Analytics Cloud legacy che utilizzano l&#39;autenticazione basata sulle credenziali cessano di funzionare. Questo problema impediva la corretta esecuzione delle regole di analisi. Per scaricare e installare l&#39;aggiornamento rapido, consulta l&#39;articolo [Aggiornamenti rapidi di Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 * Nell’anteprima di stampa dell’interfaccia utente di Interactive Communications Agent, il simbolo di valuta (ad esempio il simbolo del dollaro $) viene visualizzato in modo incoerente per tutti i valori dei campi. Viene visualizzato per valori fino a 999 ma non per valori di 1000 e superiori. (FORMS-16557)
 * Eventuali modifiche apportate all’XDP dei frammenti di layout nidificati in una comunicazione interattiva non vengono riportate nell’editor IC. (FORMS-16575)
 * Nell’anteprima di stampa dell’interfaccia utente di Interactive Communications Agent, alcuni valori calcolati non vengono visualizzati correttamente. (FORMS-16603)
 * Quando la lettera viene visualizzata in Anteprima di stampa, il contenuto viene modificato. In altre parole, alcuni spazi scompaiono e alcune lettere vengono sostituite con `x`. (FORMS-15681)
+* **FORMS-15428**: dopo l&#39;aggiornamento ad AEM Forms Service Pack 20 (6.5.20.0) con il componente aggiuntivo Forms, le configurazioni basate sul servizio Adobe Analytics Cloud legacy che utilizzano l&#39;autenticazione basata sulle credenziali cessano di funzionare. Questo problema impediva la corretta esecuzione delle regole di analisi.
+
 * Quando un utente configura un&#39;istanza WebLogic 14c, il servizio PDFG in AEM Forms Service Pack 21 (6.5.21.0) su JEE in esecuzione su JBoss® non riesce a causa di conflitti del caricatore di classi che interessano la libreria SLF4J. L’errore viene visualizzato come segue (CQDOC-22178):
 
   ```java
@@ -720,7 +743,6 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
-* FORMS-20478: quando si tenta di convertire i file TIFF di tipo 7/8 in PDF, il processo di conversione non riesce e viene visualizzato l’errore &quot;ALC-PDG-001-000-Image2Pdf conversion failed, causes by: com/sun/image/codec/jpeg/JPEGCodec&quot; and &quot;ALC-PDG-016-003-An unknown/unexpected error during PDF post-processing&quot; (Impossibile convertire i file PDF di tipo 7/8 in). Il sistema tenta di riprovare utilizzando il decodificatore TIFF TM ImageIO, ma alla fine non riesce a completare il processo. Puoi [scaricare e installare l&#39;aggiornamento rapido](/help/release-notes/aem-forms-hotfix.md) per risolvere il problema.
 
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
@@ -735,10 +757,10 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedervi, contatta il tuo account manager Adobe.
 
 * [Download del prodotto all&#39;indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/it/docs/customer-one/using/home).
+* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
