@@ -6,16 +6,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-exl-id: c8f3e7c1-d5a2-4e2f-8b9c-1a8d7f8e2a9b
+exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
+source-git-commit: 8420597b7ee09b15a7f0004acc64e3625771a4d8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '674'
 ht-degree: 5%
 
 ---
-
 
 # Mitigazione di RCE (CVE-2025-49533), configurazione Struts Dev Mode (CVE-2025-54253), XXE (CVE-2025-54254) e vulnerabilità per AEM Forms su JEE {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
@@ -67,22 +66,18 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 ### Opzione 1: (per gli utenti nella versione 6.5.23.0) installare l&#39;aggiornamento rapido più recente
 
 1. [Scarica l&#39;aggiornamento rapido per 6.5.23.0](/help/release-notes/aem-forms-hotfix.md).
-2. Segui le [istruzioni di installazione hotfix/patch standard](/help/release-notes/jee-patch-installer-65.md)
-3. Se utilizzi Document Security (precedentemente Rights Management) su IBM WebSphere o Oracle WebLogic, imposta la seguente proprietà di sistema Java (argomento JVM) prima di avviare il server AEM Forms:
+1. Segui le [istruzioni di installazione hotfix/patch standard](/help/release-notes/jee-patch-installer-65.md)
+1. Se utilizzi Document Security (precedentemente Rights Management) su IBM WebSphere o Oracle WebLogic, imposta la seguente proprietà di sistema Java (argomento JVM) prima di avviare il server AEM Forms:
 
    ```
    -Dcom.adobe.forms.jee.services.allowDoctypeDeclaration=true
    ```
 
-4. Riavvia il server applicazioni
-
-</details>
+1. Riavvia il server applicazioni
 
 ### Opzione 2: (per gli utenti su 6.5.18.0 - 6.5.22.0) Installazione manuale degli hotfix
 
-
-<details>
-<summary><b>Installazione manuale degli hotfix per 6.5.18.0 - 6.5.22.0</b></summary>
++++<b>Installazione manuale degli hotfix per 6.5.18.0 - 6.5.22.0</b>
 
 **Passaggio 1: scarica ed estrai il pacchetto Hotfix**
 
@@ -125,7 +120,7 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/jboss/adminui.war`
 
-2. All&#39;interno di `adobe-core-jboss.ear`, passare alla cartella `lib/` e sostituire `adobe-uisupport.jar` con:
+1. All&#39;interno di `adobe-core-jboss.ear`, passare alla cartella `lib/` e sostituire `adobe-uisupport.jar` con:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -133,10 +128,10 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Salvare l&#39;EAR. Assicurati che le modifiche siano salvate correttamente.
+1. Salvare l&#39;EAR. Assicurati che le modifiche siano salvate correttamente.
 
 
-4. Sostituisci `adobe-edcserver-jboss.ear` con
+1. Sostituisci `adobe-edcserver-jboss.ear` con
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-edcserver-jboss.ear
@@ -144,7 +139,7 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/jboss/adobe-edcserver-jboss.ear`
 
-5. Sostituisci `adobe-forms-jboss.ear` con
+1. Sostituisci `adobe-forms-jboss.ear` con
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-forms-jboss.ear
@@ -164,7 +159,7 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/weblogic/adminui.war`
 
-2. All&#39;interno di `adobe-core-weblogic.ear`, sostituisci `adobe-uisupport.jar` con:
+1. All&#39;interno di `adobe-core-weblogic.ear`, sostituisci `adobe-uisupport.jar` con:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -172,10 +167,10 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Salvare l&#39;EAR. Assicurati che le modifiche siano salvate correttamente.
+1. Salvare l&#39;EAR. Assicurati che le modifiche siano salvate correttamente.
 
 
-4. Sostituisci `adobe-edcserver-weblogic.ear` con
+1. Sostituisci `adobe-edcserver-weblogic.ear` con
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-edcserver-weblogic.ear
@@ -183,7 +178,7 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/weblogic/adobe-edcserver-weblogic.ear`
 
-5. Sostituisci `adobe-forms-weblogic.ear` con
+1. Sostituisci `adobe-forms-weblogic.ear` con
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-forms-weblogic.ear
@@ -201,7 +196,7 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/websphere/adminui.war`
 
-2. All&#39;interno di `adobe-core-websphere.ear`, sostituisci `adobe-uisupport.jar` con:
+1. All&#39;interno di `adobe-core-websphere.ear`, sostituisci `adobe-uisupport.jar` con:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -209,10 +204,10 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Salvare l&#39;EAR. Assicurati che le modifiche siano salvate correttamente.
+1. Salvare l&#39;EAR. Assicurati che le modifiche siano salvate correttamente.
 
 
-4. Sostituisci `adobe-edcserver-websphere.ear` con
+1. Sostituisci `adobe-edcserver-websphere.ear` con
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-edcserver-websphere.ear
@@ -220,7 +215,7 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
    Ad esempio `adobe-xxe-configuration-hotfix/SP20/websphere/adobe-edcserver-websphere.ear`
 
-5. Sostituisci `adobe-forms-websphere.ear` con
+1. Sostituisci `adobe-forms-websphere.ear` con
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-forms-websphere.ear
@@ -253,12 +248,12 @@ Se utilizzi Document Security (precedentemente Rights Management), imposta la se
 
 - Avvia Configuration Manager per ridistribuire l’EAR aggiornato e applicare l’hotfix
 
-</details>
++++
 
 ### Opzione 3: percorso di aggiornamento per gli utenti di 6.5.17.0 e versioni precedenti
 
 1. [Passare a una versione del Service Pack supportata](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
-2. Segui le opzioni 1 o 2 di cui sopra in base alla nuova versione
+1. Segui le opzioni 1 o 2 di cui sopra in base alla nuova versione
 
 ## Riferimenti
 
