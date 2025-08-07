@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
 workflow-type: tm+mt
-source-wordcount: '10051'
+source-wordcount: '10085'
 ht-degree: 1%
 
 ---
@@ -253,6 +253,12 @@ Il processo di installazione di Adobe Acrobat Pro DC for Microsoft Office varia 
 * **Tipo di distribuzione**: utente singolo o più utenti
 
 Ogni scheda contiene istruzioni personalizzate ottimizzate per la configurazione specifica, che consentono di evitare problemi di configurazione e garantire la conformità alle licenze.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>Il video illustra il processo di installazione di una licenza Retail - Configurazione per utente singolo. Per altri scenari di distribuzione (vendita al dettaglio - più utenti, contratti multilicenza - utente singolo o contratti multilicenza - più utenti), fare riferimento alle istruzioni specifiche del passaggio 9 nelle schede corrispondenti di seguito per garantire l&#39;avvio e l&#39;attivazione delle licenze corretti per il tipo di distribuzione.
 
 >[!BEGINTABS]
 
@@ -701,7 +707,7 @@ Dopo aver disinstallato la versione precedente, è necessario scaricare e instal
 Dopo aver completato tutti i processi, eseguire un test di azione rapida per confermare la validità dell&#39;installazione:
 
 1. Utilizzare Desktop remoto (RDP) per accedere al server e avviare il server AEM Forms utilizzando i servizi.
-2. Utilizzare Desktop remoto (RDP) per accedere al server e avviare il server AEM Forms utilizzando Servizi Windows. Una volta che il server è in esecuzione, non chiudere semplicemente la finestra RDP. Disconnettersi dall&#39;utente per garantire che la sessione termini correttamente mentre il servizio continua a essere eseguito in background.
+2. Una volta che il server è in esecuzione, non chiudere semplicemente la finestra RDP. Disconnettersi dall&#39;utente per garantire che la sessione termini correttamente mentre il servizio continua a essere eseguito in background.
 
 ###### Passaggio 10: verifica del servizio PDF Generator
 
