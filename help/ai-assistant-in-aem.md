@@ -1,6 +1,6 @@
 ---
 title: Assistente AI in AEM 6.5
-description: Utilizza l’Assistente AI per trovare risposte e risolvere eventuali problemi relativi alle soluzioni disponibili in Adobe Experience Manager.
+description: Utilizza l’Assistente IA per trovare risposte e risolvere eventuali problemi relativi alle soluzioni disponibili in Adobe Experience Manager.
 solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -8,7 +8,7 @@ exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
 source-git-commit: 2e4293b68db12936068c434cda591be7a7de0f11
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
