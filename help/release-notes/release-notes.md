@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 00161ecf48725b774c14ff6c89bd2817e00dc9f3
+source-git-commit: f018681e9202a934be2cfa8d426a32014c5ff66f
 workflow-type: tm+mt
-source-wordcount: '6710'
-ht-degree: 2%
+source-wordcount: '6713'
+ht-degree: 12%
 
 ---
 
@@ -26,10 +26,13 @@ ht-degree: 2%
 
 | Prodotto | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Versione | 6.5.23.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| Tipo | Versione Service Pack |
-| Data | Giovedì 22 maggio 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Versione | 6.5.23.0, Hotfix per GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Tipo | Versione del Service Pack |
+| Data | 9 settembre 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcq-6.5.0-hotfix-GRANITE-61551-SP23-1.2.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+
+<!-- OLD DOWNLOAD URL
+(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.23.0 {#what-is-included-in-aem-6523}
 
@@ -37,7 +40,7 @@ ht-degree: 2%
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-## Funzioni principali e miglioramenti
+## Nuove funzioni e miglioramenti
 
 <!--### Sites {#sites}
 
@@ -71,7 +74,7 @@ Le funzionalità e i miglioramenti principali di questa versione includono:
 
    * Red Hat® Enterprise Linux® 9 (kernel 4.x, 64 bit) 
 
-* [Componente allegato file protetto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): come misura di sicurezza, il componente ora impedisce l&#39;invio di file con estensioni modificate che tentano di ignorare i controlli dei tipi di file consentiti. Tali file vengono bloccati durante l’invio per garantire che siano accettati solo i tipi di file validi.
+* [Componente allegato file protetto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): come misura di sicurezza, il componente ora impedisce l&#39;invio di file con estensioni modificate che tentano di ignorare i controlli dei tipi di file consentiti. Tali file vengono bloccati durante l’invio per garantire che siano accettati solo i tipi di file validi.
 
 * FORMS-20533, FORMS-20532: AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x. Il supporto è stato aggiunto tramite un [Hotfix](/help/release-notes/aem-forms-hotfix.md) che puoi [scaricare e installare](/help/release-notes/aem-forms-hotfix.md) per aggiungere il supporto per la versione più recente di Struts.
 
@@ -109,18 +112,18 @@ Le funzionalità e i miglioramenti principali di questa versione includono:
 
 #### Accessibilità {#sites-accessibility-6523}
 
-* Le sezioni Canvas nelle pagine dell’Editor di AEM ora supportano l’accessibilità completa da tastiera. Gli utenti possono attivare i titoli delle sezioni e i pulsanti di modifica utilizzando solo la tastiera, senza dover passare con il mouse. Questo aggiornamento garantisce la conformità a WCAG 2.1.1 e migliora l’usabilità tra i componenti (come moduli Teaser, Immagine, Carosello, Layout, Timewarp e Annotation). (SITES-25256) <!-- 6.5 LTS SP1 -->
-* È stato risolto un problema di accessibilità nell’Editor pagina di AEM a causa del quale lo stato attivo sulla tastiera si ripristina all’inizio della barra degli strumenti Demografica dopo l’attivazione di pulsanti come Persona, Carrello o Abbandonato. Ora è attivo il pulsante attivato per supportare flussi di lavoro coerenti per la navigazione da tastiera e l’utilità di lettura dello schermo. (SITES-25306)
+* Le sezioni dell’area di lavoro nelle pagine dell&#39;Editor AEM ora supportano l’accessibilità completa da tastiera. Gli utenti possono attivare i titoli delle sezioni e i pulsanti di modifica utilizzando solo la tastiera, senza dover passare con il mouse. Questo aggiornamento garantisce la conformità a WCAG 2.1.1 e migliora l’usabilità tra i componenti (come modali Teaser, Immagine, Carosello, Layout, Timewarp e Annotazione). (SITES-25256) <!-- 6.5 LTS SP1 -->
+* È stato risolto un problema di accessibilità nell’Editor pagina di AEM a causa del quale lo stato attivo sulla tastiera si ripristina all’inizio della barra degli strumenti Demografica dopo l’attivazione di pulsanti come Persona, Carrello o Abbandonato. Ora lo stato attivo resta sul pulsante attivato per supportare flussi di lavoro coerenti per la navigazione da tastiera e l’assistente vocale. (SITES-25306)
 * È stato risolto un problema critico di accessibilità nell’Editor pagina di AEM a causa del quale gli elementi dell’area di lavoro in più finestre di dialogo e modalità (ad esempio, barra delle risorse o anteprima del layout) non potevano essere utilizzati utilizzando solo una tastiera. Tutti gli elementi dell’area di lavoro interattiva ora supportano la navigazione solo da tastiera, garantendo la conformità al criterio di successo WCAG 2.1.1 (SITE-25256)
 * È stato risolto un problema di accessibilità nell’interfaccia utente di amministrazione di Sites a causa del quale le voci di elenco interattive nel pop-up Crea utilizzavano ruoli ARIA errati. Agli elementi che si comportavano come collegamenti veniva assegnato `role="listitem"` invece di `role="menuitem"`, violando i pattern di progettazione ARIA e confondendo gli assistenti vocali. Gli aggiornamenti garantiscono che tutti i componenti dell’elenco seguano i ruoli semantici appropriati per migliorare il supporto della tastiera e della tecnologia per l’accessibilità. (SITES-24493)
-* È stato risolto il problema di associazione delle etichette di accessibilità per i campi titolo pagina e tag. L’interfaccia di AEM ora associa correttamente le etichette di accessibilità ai campi &quot;Titolo&quot; e &quot;Titolo pagina&quot; quando si utilizzano utilità per la lettura dello schermo come JAWS. La correzione assicura la corretta lettura delle etichette e migliora la conformità ADA nei flussi di lavoro di creazione, proprietà e spostamento delle pagine. (SITES-27149)
+* È stato risolto il problema relativo all’associazione delle etichette di accessibilità per i campi titolo pagina e tag. L’interfaccia di AEM ora associa correttamente le etichette di accessibilità ai campi “Titolo” e “Titolo pagina” durante l’utilizzo di assistenti vocali come JAWS. La correzione assicura la corretta lettura delle etichette e migliora la conformità ADA nei flussi di lavoro di creazione, proprietà e spostamento delle pagine. (SITES-27149)
 * È stato risolto un problema di accessibilità relativo all’identificazione delle tabelle nella finestra di dialogo delle autorizzazioni. La tabella delle autorizzazioni in AEM ora utilizza i ruoli e gli attributi ARIA corretti per garantire che gli assistenti vocali come JAWS la identifichino correttamente come tabella. La correzione migliora la conformità in materia di accessibilità e garantisce che gli utenti ricevano annunci accurati relativi alla navigazione e ai contenuti. (SITES-27140)
-* È stata corretta l’etichetta visiva mancante per i campi di input dei commenti nella timeline. Sono state corrette le etichette visive mancanti per i campi di input &quot;commento&quot; nella sezione timeline per migliorarne l’accessibilità. L’aggiornamento garantisce che gli assistenti vocali possano annunciare con precisione le etichette dei campi. Questa esperienza migliora la navigazione e l’invio dei moduli per tutti gli utenti, in particolare gli utenti che si basano su tecnologie per l’accessibilità. (SITES-26903)
-* È stata corretta l’accessibilità da tastiera per il pulsante con puntini di sospensione nei commenti della timeline. Attivazione della navigazione tramite tastiera per il pulsante con puntini di sospensione (tre punti) accanto ai commenti nella sezione timeline. Gli utenti possono ora accedere al pulsante e interagire con esso utilizzando il tasto TAB, migliorando l’accessibilità per gli utenti che si affidano alla navigazione tramite sola tastiera. (SITES-26891)
-* Sono stati migliorati gli annunci NVDA/Assistente vocale per i risultati di ricerca nelle finestre di dialogo di selezione. È stata aggiornata la finestra di dialogo Apri selezione per indicare se i risultati della ricerca vengono trovati o meno quando si utilizzano utilità per la lettura dello schermo, come NVDA o Assistente vocale. Questo miglioramento consente agli utenti che si affidano alle tecnologie per l’accessibilità di comprendere il risultato delle azioni di ricerca senza bisogno di conferma visiva. (SITES-26883)
-* È stato corretto il ruolo ARIA per l’icona con i puntini di sospensione accanto al campo di input del commento. È stata aggiornata l’icona con i puntini di sospensione (tre punti) accanto al campo di immissione del commento per utilizzare il ruolo ARIA corretto, in modo che gli assistenti vocali possano identificare con precisione l’elemento. Questo miglioramento migliora la conformità in materia di accessibilità e l’esperienza degli utenti che si affidano alle tecnologie per l’accessibilità. (SITES-26881)
-* Sono stati corretti gli attributi ARIA non validi nei componenti dell’interfaccia utente Coral. Sono stati aggiornati i componenti dell’interfaccia utente Coral per garantire che tutti gli attributi ARIA utilizzino valori validi, migliorando l’accessibilità e la conformità. In particolare, sono stati risolti casi in cui valori non validi come `aria-modal="dialog"` non venivano assegnati correttamente. Questo miglioramento consente agli assistenti vocali di interpretare correttamente gli elementi delle finestre di dialogo, migliorando l’accessibilità per gli utenti che si affidano a tecnologie per l’accessibilità. (SITES-26873)
-* Sono state migliorate la visibilità e le descrizioni per le icone negli scenari di riversamento. È stato migliorato il comportamento Ridisponi per garantire la corretta visualizzazione delle descrizioni per le icone **Scarica**, **Rielabora risorse** e **Estrai**. Focalizzato su un problema di accessibilità in cui le icone e le relative etichette diventavano invisibili quando il riquadro di visualizzazione veniva ridimensionato o le impostazioni di zoom del browser cambiavano. Questa correzione consente di mantenere la visibilità degli utenti ipovedenti e fornisce descrizioni delle icone durante il riversamento. (SITES-26871)
+* È stata corretta l&#39;etichetta visiva mancante per i campi di input dei commenti nella timeline. Sono state corrette le etichette visive mancanti per i campi di input &quot;commento&quot; nella sezione della timeline per migliorarne l’accessibilità. L’aggiornamento garantisce che gli assistenti vocali possano annunciare con precisione le etichette dei campi. Questa esperienza migliora la navigazione e l&#39;invio dei moduli per tutti gli utenti, in particolare gli utenti che contano sulle tecnologie per l&#39;accessibilità. (SITES-26903)
+* È stata corretta l&#39;accessibilità da tastiera per il pulsante con puntini di sospensione nei commenti della timeline. È stata abilitata la navigazione tramite tastiera per il pulsante con puntini di sospensione (tre punti) accanto ai commenti nella sezione della timeline. Gli utenti possono ora accedere al pulsante e interagire con esso utilizzando il tasto tab, migliorando l&#39;accessibilità per gli utenti che si affidano alla navigazione tramite sola tastiera. (SITES-26891)
+* Sono stati migliorati gli annunci NVDA/Assistente vocale per i risultati di ricerca nelle finestre di dialogo di selezione. È stata aggiornata la finestra di dialogo Apri selezione per indicare se i risultati della ricerca vengono trovati o meno quando si utilizzano gli assistenti vocali, come NVDA o Assistente vocale. Questo miglioramento consente agli utenti che si affidano alle tecnologie per l&#39;accessibilità di comprendere il risultato delle azioni di ricerca senza bisogno di conferma visiva. (SITES-26883)
+* È stato corretto il ruolo ARIA per l&#39;icona con i puntini di sospensione accanto al campo di input del commento. È stata aggiornata l&#39;icona con i puntini di sospensione (tre punti) accanto al campo di input del commento per utilizzare il ruolo ARIA corretto, in modo che gli assistenti vocali possano identificare con precisione l&#39;elemento. Questo miglioramento migliora la conformità in materia di accessibilità e l&#39;esperienza degli utenti che si affidano alle tecnologie per l&#39;accessibilità. (SITES-26881)
+* Sono stati corretti gli attributi ARIA non validi nei componenti dell’interfaccia utente Coral. Sono stati aggiornati i componenti dell’interfaccia utente Coral per garantire che tutti gli attributi ARIA utilizzino valori validi, migliorando l’accessibilità e la conformità. In particolare, sono stati risolti casi in cui valori non validi come `aria-modal="dialog"` non venivano assegnati correttamente. Questo miglioramento consente agli assistenti vocali di interpretare correttamente gli elementi delle finestre di dialogo, migliorando l’accessibilità per gli utenti che si affidano a queste tecnologie. (SITES-26873)
+* Sono state migliorate la visibilità e le descrizioni delle icone negli scenari di ridisposizione. È stato migliorato il comportamento Ridisponi per garantire la corretta visualizzazione delle descrizioni per le icone **Scarica**, **Rielabora risorse** e **Estrai**. È stato individuato un problema di accessibilità in cui le icone e le relative etichette diventavano invisibili quando il riquadro di visualizzazione veniva ridimensionato o le impostazioni di zoom del browser cambiavano. Questa correzione consente di mantenere la visibilità degli utenti ipovedenti e fornisce descrizioni delle icone durante la ridisposizione. (SITES-26871)
 
 #### Interfaccia utente amministratore{#sites-adminui-6523}
 
@@ -134,7 +137,7 @@ Le funzionalità e i miglioramenti principali di questa versione includono:
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
 * È stato corretto un errore di test di convalida per `DeleteVariationIT.testUpdateBasic`. Il test `DeleteVariationIT.testUpdateBasic` non ha più esito negativo durante l&#39;esecuzione della convalida del Service Pack. La correzione corregge un problema di mappatura del testo mancante nella logica di gestione JSON, garantendo la stabilità del test ed evitando inutili interruzioni del test. (SITES-28022)
-* AEM ora evita il deterioramento delle prestazioni causato da metadati XMP non validi nelle risorse immagine. Assets che contiene nomi di proprietà XMP non validi o non conformi, ad esempio quelli con segmenti numerici o strutture non qualificate, non attiva più i registri di avviso ripetuti durante l’elaborazione. Il sistema filtra i metadati problematici per garantire che l’inserimento e la convalida delle risorse siano completati senza errori. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
+* AEM ora evita il deterioramento delle prestazioni causato da metadati XMP non validi nelle risorse immagine. Le risorse che contengono nomi di proprietà XMP non validi o non conformi, ad esempio quelli con segmenti numerici o strutture non qualificate, non attivano più i registri di avviso ripetuti durante l’elaborazione. Il sistema filtra i metadati problematici per garantire che l’acquisizione e la convalida delle risorse siano completate senza errori. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
 
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
@@ -160,7 +163,7 @@ Altri autori possono comunque pubblicare frammenti di contenuto anche quando un 
 * A () -->
 
 
-#### Console Componenti{#sites-component-console-6523}
+#### Console dei componenti{#sites-component-console-6523}
 
 Sono stati apportati miglioramenti al caricamento della pagina &quot;Utilizzo live dei componenti&quot;. Ottimizza la pagina &quot;Utilizzo live dei componenti&quot; in AEM per impedire la visualizzazione di righe vuote durante lo scorrimento tra set di dati di grandi dimensioni. Gli utenti che caricano componenti con riferimenti di utilizzo estesi possono ora eseguire il caricamento continuo dei dati senza spazi vuoti o voci vuote. Questa esperienza migliora la navigazione nelle pagine, la precisione del tracciamento e l’efficienza di gestione nei rapporti sull’utilizzo dei componenti. (SITES-26454)
 
@@ -168,7 +171,7 @@ Sono stati apportati miglioramenti al caricamento della pagina &quot;Utilizzo li
 
 * È stato corretto un errore nell’elenco delle risorse di Content Finder causato da nomi di risorse non validi. Content Finder ora gestisce correttamente i nomi delle risorse con caratteri non codificabili. L’elenco delle risorse nell’Editor pagina non ha più esito negativo o genera eccezioni quando si incontrano risorse con nomi problematici. (SITES-28722)
 * Si è verificato un problema a causa del quale il componente `SearchPathLimiter` ha generato voci di registro eccessive stampando messaggi a livello ERROR per ogni chiamata. Questo comportamento è iniziato dopo Service Pack 17 e ha causato problemi di prestazioni a causa di volumi di registro estremamente elevati. La correzione riduce il livello di registro a DEBUG, riducendo in modo significativo il disturbo del registro e migliorando il monitoraggio del sistema e l&#39;efficienza diagnostica. (SITES-29835)
-* I metadati di XMP formattati in modo non corretto hanno generato un errore durante l&#39;elaborazione delle risorse immagine in `ValidationDataServlet`. La correzione assicura la gestione dei metadati conforme ed evita l’analisi ridondante di proprietà non valide. (30683 DEL SITO) <!-- LTS -->
+* I metadati XMP formattati in modo non corretto hanno generato un errore durante l&#39;elaborazione delle risorse immagine in `ValidationDataServlet`. La correzione assicura la gestione conforme dei metadati ed evita l’analisi ridondante di proprietà non valide. (30683 DEL SITO) <!-- LTS -->
 
 
 <!-- #### Core Components{#sites-core-components-6523}
@@ -230,11 +233,11 @@ Correggi i tag `<br>` imprevisti nell&#39;Editor Rich Text con la modalità Inco
 
 ### [!DNL Assets]{#assets-6523}
 
-* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, aver selezionato la cartella&#x200B;**[!UICONTROL &#x200B; Search Adobe Stock &#x200B;]**&#x200B;e aver selezionato un&#39;immagine di archivio:
+* I seguenti problemi si verificano nella pagina di navigazione on-premise [!DNL AEM] (6.5.22.0) dopo aver selezionato ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, aver selezionato la cartella**[!UICONTROL  Search Adobe Stock ]**e aver selezionato un&#39;immagine di archivio:
    * L&#39;immagine stock selezionata non può essere concessa in licenza e salvata perché facendo clic su **[!UICONTROL Licenza e salvataggio]** viene visualizzato un elenco a discesa vuoto.
    * Selezionando l&#39;immagine Stock o immettendo nuovamente l&#39;URL della pagina Stock, si reindirizza alla home page di [!DNL AEM], impedendo l&#39;accesso all&#39;immagine Adobe Stock. (ASSETS-48687)
 * Problemi durante la gestione delle cartelle se il nome della cartella include `/` nel nome nella pagina di navigazione locale [!DNL AEM] (6.5.22.0). (ASSETS-46740)
-* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte &#x200B;]**&#x200B;a causa di un elevato utilizzo di memoria. (ASSETS-46738)
+* In [!DNL AEM] 6.5, la pagina dei dettagli della risorsa non viene caricata dalla visualizzazione ![Raccolta](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Raccolte ]**a causa di un elevato utilizzo di memoria. (ASSETS-46738)
 * Problemi di integrazione con [!DNL InDesign] come servizio `Day CQ DAM Mime Type OSGI` che identifica erroneamente [!DNL InDesign] file come `x-adobe-indesign` invece di `x-indesign`. (ASSETS-45953)
 * [!DNL AEM 6.5.21] perdita di dati della sessione rilevata nel passaggio del flusso di lavoro predefinito **[!UICONTROL Pubblicazione pianificata in Brand Portal]**. (ASSETS-44104)
 * **[!UICONTROL Memoria insufficiente]** errori visualizzati in [!DNL AEM] durante l&#39;elaborazione e la pubblicazione delle immagini. Questo problema era dovuto a metodi obsoleti nei flussi di lavoro, ad esempio **[!DNL Dam Asset update]** e **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -755,7 +758,7 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 * [Elenco dei bundle OSGi inclusi in Experience Manager 6.5.23.0](/help/release-notes/assets/65230-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Elenco dei pacchetti di contenuti inclusi in Experience Manager 6.5.23.0](/help/release-notes/assets/65230-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
-## Siti Web con restrizioni{#restricted-sites}
+## Siti web con restrizioni{#restricted-sites}
 
 Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
@@ -765,5 +768,5 @@ Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientel
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
