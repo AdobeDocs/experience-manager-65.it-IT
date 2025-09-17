@@ -3,13 +3,14 @@ title: Informazioni su Experience Hub
 description: Scopri la pagina Experience Hub di Adobe.
 landing-page-description: Scopri Adobe Experience Hub, un punto di partenza centralizzato per accedere a tutte le funzionalità di AEM.
 solution: Experience Manager, Experience Manager 6.5
-feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
+role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: 25c154fb310902079e6cd116e29a8e7f9a88e157
+source-git-commit: fa84767b13e3b13ee5115b7dc7d2032092a9063b
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -19,7 +20,7 @@ Experience Hub introduce un punto di partenza centralizzato per la gestione di c
 
 Guarda un rapido tour dell’area di lavoro AEM Experience Hub riprogettata (4 minuti e 9 secondi).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471449?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -80,6 +81,6 @@ Se non esiste alcun ambiente AEM Cloud Service o Managed Services di produzione,
 
 ![Experience Hub senza ambienti di produzione](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 
-## Assistente AI in AEM
+## Assistente IA in AEM
 
-Per i clienti che hanno [completato i criteri dei prerequisiti](/help/ai-assistant-in-aem.md#get-access), l&#39;Assistente AI in AEM è disponibile per gli utenti della loro organizzazione. Consulta [Assistente AI in AEM](/help/ai-assistant-in-aem.md).
+Per i clienti che hanno [completato i criteri dei prerequisiti](/help/ai-assistant-in-aem.md#get-access), l&#39;Assistente AI in AEM è disponibile per gli utenti della loro organizzazione. Consulta [Assistente IA in AEM](/help/ai-assistant-in-aem.md).
