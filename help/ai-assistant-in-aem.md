@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 646816ab50c432c86772c228878f8114854c320f
+source-git-commit: 4ec42cee96cbedfc70db8a5272ceff64658a22a3
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1311'
 ht-degree: 4%
 
 ---
@@ -35,32 +35,27 @@ L’Assistente AI supporta AEM as a Cloud Service, incluse le seguenti soluzioni
 
 Il seguente video di 3 minuti e 39 secondi offre una guida dettagliata dell’Assistente AI in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470363?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Accedere all’Assistente IA in AEM{#get-access}
 
-Per concedere agli utenti l&#39;accesso all&#39;Assistente per l&#39;intelligenza artificiale in AEM, l&#39;amministratore di Adobe deve configurare le seguenti autorizzazioni personalizzate per i profili che richiedono l&#39;accesso in **Adobe Admin Console**:
+Per accedere all’Assistente all’intelligenza artificiale in AEM, i clienti devono disporre dei seguenti elementi:
 
-* **Accesso all&#39;Assistente AI** - Autorizzazione a utilizzare l&#39;Assistente AI in AEM per conoscere il prodotto, consentendo agli utenti di porre domande relative al prodotto nella chat dell&#39;Assistente AI. Questa autorizzazione deve essere abilitata.
-* **Accesso al supporto** - Gli utenti devono inoltre disporre dell&#39;autorizzazione per aprire i ticket di supporto, che richiede il ruolo di **Amministratore supporto**.
+* Autorizzazione per l’utilizzo di AI Assistant in AEM per la conoscenza del prodotto. Questa autorizzazione consente di porre domande relative al prodotto nella chat di AI Assistant. Questa autorizzazione deve essere abilitata.
+* Autorizzazione ad aprire i ticket di supporto, che richiede il ruolo **Amministratore supporto**.
 
-Le richieste di Assistente IA in AEM vengono autenticate tramite Adobe Identity Management Services (IMS). Per informazioni dettagliate, vedere [Panoramica dei servizi Adobe Identity Management](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>[!NOTE]
+>
+>Le richieste di Assistente IA in AEM vengono autenticate tramite Adobe Identity Management Services (IMS). Per informazioni dettagliate, vedere [Panoramica dei servizi Adobe Identity Management](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **Per accedere all&#39;Assistente di intelligenza artificiale in AEM:**
 
 1. I clienti devono disporre di un accordo aggiuntivo per accedere alla maggior parte delle funzionalità basate sull’intelligenza artificiale e di gestione degli agenti in Adobe Experience Manager. Per ulteriori informazioni, contatta il rappresentante Adobe.
 
-<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. Per utilizzare l’Assistente all’intelligenza artificiale in AEM, è necessario disporre dell’autorizzazione per accedere alla Knowledge Base del prodotto tramite l’Assistente all’intelligenza artificiale. Questa autorizzazione è attivata per impostazione predefinita.
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+   Se desideri controllare chi può accedere alla conoscenza del prodotto, invia un&#39;e-mail a [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID. Adobe può abilitare il controllo degli accessi a livello di utente. Quando è abilitato, l&#39;amministratore può concedere l&#39;accesso a livello utente seguendo i passaggi descritti in [Configurare l&#39;Assistente IA in AEM](/help/ai-assistant-in-aem-admin.md).
 
-1. L’amministratore di AEM configura l’Assistente AI per l’utilizzo all’interno dell’organizzazione. Consulta [Configurare l&#39;Assistente AI in AEM](/help/ai-assistant-in-aem-admin.md).
-
-<!--
->[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
->
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## Ambito {#scope}
 
@@ -93,7 +88,7 @@ La conoscenza del prodotto include concetti e argomenti derivati dalla documenta
 | Apprendimento puntato | <ul><li>Cos’è Universal Editor?</li><li>Come si crea un programma in Cloud Manager?</li></ul> |
 | Rilevamento aperto | <ul><li>Come si utilizza Universal Editor?</li><li>Esiste un modo per copiare il contenuto da un ambiente all’altro?</li></ul> |
 | Risoluzione di problemi | <ul><li>Perché non è possibile accedere a Universal Editor?</li><li>Perché la pipeline non riesce?</li></ul> |
-| **Creazione ticket di supporto** | **Disponibile solo per gli amministratori del supporto &#x200B;**<br>**Esempi** |
+| **Creazione ticket di supporto** | **Disponibile solo per gli amministratori del supporto **<br>**Esempi** |
 | Creazione automatizzata di ticket di supporto per acquisire la cronologia e il contesto delle chat dell’Assistente di intelligenza artificiale | <ul><li>Crea un ticket di supporto per me.</li></ul> |
 | Recupera lo stato del ticket di supporto | <ul><li>Mostrami tutti i biglietti di supporto che ho aperto.</li><li>Mostra lo stato del biglietto &quot;E-----------&quot;</li></ul> |
 
@@ -133,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
