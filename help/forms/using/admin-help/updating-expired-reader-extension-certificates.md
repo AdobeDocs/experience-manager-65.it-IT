@@ -33,7 +33,7 @@ R. In base alla rivalutazione della situazione, tutti i documenti PDF estesi uti
 
 **D. A chi devo rivolgermi in caso di ulteriori domande?**
 
-R. Puoi contattare il [supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=it#support) o aprire un ticket di supporto.
+R. Puoi contattare il [supporto Adobe](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&lang=it#support) o aprire un ticket di supporto.
 
 **D. Cosa succede se non aggiorno il certificato prima del 7 gennaio 2023?**
 
@@ -45,7 +45,7 @@ R. La descrizione dei nuovi certificati Acrobat Reader Extensions riporta la dic
 
 **D. Come si ottengono i certificati più recenti?**
 
-R. Tutti i clienti Forms autorizzati (con licenza attiva) possono scaricare i nuovi certificati (certificati basati su “Adobe Root CA G2”) dal sito web [Adobe Licensing Website](https://licensing.adobe.com/). Se non riesci a trovare il certificato sul sito web Adobe Licensing Website, contatta il [supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=it#support) o apri un ticket di supporto.
+R. Tutti i clienti Forms autorizzati (con licenza attiva) possono scaricare i nuovi certificati (certificati basati su “Adobe Root CA G2”) dal sito web [Adobe Licensing Website](https://licensing.adobe.com/). Se non riesci a trovare il certificato sul sito web Adobe Licensing Website, contatta il [supporto Adobe](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&lang=it#support) o apri un ticket di supporto.
 
 **D. I miei documenti PDF estesi utilizzando certificati rilasciati da “Adobe Root CA” (la precedente autorità di certificazione) continuano a essere utilizzabili dopo il 7 gennaio 2023?**
 
@@ -97,7 +97,7 @@ You can choose one of the following paths to apply latest certificates:
 Updating the certificates requires using actions available on AEM Forms administrator console and Reader Extension APIs provided by AEM Forms. The document is intended for users and administrators with knowledge of using Adobe Experience Manger Forms APIs. Before you start, ensure that: 
 
 * the user has administrator rights on underlying AEM Forms environment. 
-* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html) and has access to it.
+* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html?lang=it) and has access to it.
 * [obtain the certificates](#obtain-the-certificates).
 
 
@@ -189,4 +189,4 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).  -->
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=it).  -->
