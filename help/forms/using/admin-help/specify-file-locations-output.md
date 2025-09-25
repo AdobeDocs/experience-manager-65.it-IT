@@ -1,6 +1,6 @@
 ---
-title: Specificare i percorsi dei file per l'output
-description: Scopri come specificare i percorsi dei file di output per alcuni tipi di file, ad esempio URI radice contenuto, File di configurazione XCI, Cache e Default.
+title: Specificare i percorsi dei file per l’output
+description: Scopri come specificare i percorsi dei file nell’output per determinati tipi di file, ad esempio file URI principale del contenuto, file di configurazione XCI, file di cache e file predefiniti.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
@@ -10,44 +10,44 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Specificare i percorsi dei file per l&#39;output {#specify-file-locations-for-output}
+# Specificare i percorsi dei file per l’output {#specify-file-locations-for-output}
 
 >[!NOTE]
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-È possibile specificare i percorsi in cui Output cerca determinati tipi di file necessari.
+Puoi specificare i percorsi in cui l’output cerca determinati tipi di file necessari.
 
-1. Nella console di amministrazione, fai clic su Servizi > output.
-1. In Posizioni (Locations), specificate le opzioni appropriate.
+1. Nella Console di amministrazione, fai clic su Servizi > Output.
+1. In Posizioni specifica le opzioni appropriate.
 1. Fai clic su Salva.
 
-## Impostazioni posizioni {#locations-settings}
+## Impostazioni di Posizioni {#locations-settings}
 
-**URI radice contenuto:** URI o posizione assoluta dell&#39;archivio da cui vengono recuperati i moduli. Questo valore è combinato con il parametro sForm, specificato tramite l’API, per costruire il percorso assoluto del modulo che viene recuperato. Questo valore può fare riferimento a una directory o a un percorso web accessibile tramite HTTP.
+**URI principale contenuto:** URI o posizione assoluta dell’archivio da cui vengono recuperati i moduli. Questo valore è combinato con il parametro sForm, specificato tramite l’API, per creare il percorso assoluto del modulo che viene recuperato. Il valore può fare riferimento a una directory o a un percorso web accessibile tramite HTTP.
 
 Il valore predefinito è una stringa vuota.
 
-**File di configurazione XCI:** posizione relativa o assoluta del file di configurazione XCI utilizzato dal servizio di output per il rendering. Per un valore relativo, si presume che il file XCI risieda nel file EAR distribuibile dei moduli AEM.
+**File di configurazione XCI:** posizione relativa o assoluta del file di configurazione XCI utilizzato dal servizio di output per il rendering. Per un valore relativo, si presume che il file XCI si trovi nel file EAR distribuibile di AEM forms.
 
 Il valore predefinito è `com/adobe/formServer/PA/pa_output.xci`.
 
-**Posizione cache:** Specifica la posizione della cache del disco di output. Quando si modifica questa impostazione, tutte le informazioni della cache esistenti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle opzioni seguenti:
+**Percorso della cache:** specifica la posizione della cache su disco per l’output. Quando modifichi questa impostazione, tutti i dati della cache esistenti per la posizione corrente vengono reimpostati e viene creata una nuova cache nella nuova posizione. Seleziona una delle opzioni seguenti:
 
-**Posizione predefinita:** Questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione dipendente dal server applicazioni in uso:
+**Percorso predefinito:** questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione che dipende dal server applicazioni in uso:
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[Forms Server name]\Output\Cache`
 * **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
-**Directory temporanea LC:** La cache viene creata in una sottodirectory della directory temporanea dei moduli AEM, specificata nella console di amministrazione in Impostazioni > Impostazioni sistema core > Configurazioni > Posizione della directory temporanea. La sottodirectory è denominata `adobeoutput_[servername]`.
+**Directory temporanea LC:** la cache viene creata in una sottodirectory della directory temporanea dei moduli AEM, specificata nella Console di amministrazione in Impostazioni > Impostazioni sistema core > Configurazioni > Percorso directory temporanea. Il nome della sottodirectory è `adobeoutput_[servername]`.
 
 >[!NOTE]
 >
->Se si utilizza un&#39;utilità di pulizia temporanea, anche se l&#39;eliminazione di queste directory non influisce sulla funzionalità, può avere un impatto significativo sulle prestazioni per un breve periodo di tempo, fino alla creazione della nuova cache. Per evitare questo problema, non eliminare queste directory mentre si cancella la directory temporanea dei moduli AEM.
+>Se esegui un’utilità di pulizia dei file temporanei, l’eliminazione di queste directory non influisce sulla funzionalità, ma può avere un impatto significativo sulle prestazioni per un periodo di tempo limitato, fino alla creazione della nuova cache. Per evitare il problema, non eliminare queste directory quando cancelli la directory temporanea di AEM Forms.

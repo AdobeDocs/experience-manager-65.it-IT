@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '719'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -22,68 +22,68 @@ ht-degree: 0%
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Le pagine Operazioni bloccate e Rami bloccati mostrano i processi bloccati. Un processo può bloccarsi quando si verifica un errore durante o dopo l&#39;esecuzione di un&#39;operazione o a causa di un&#39;operazione di arresto intenzionale nel processo:
+Le pagine Operazioni bloccate e Rami bloccati mostrano i processi bloccati. Un processo può bloccarsi quando si verifica un errore durante o dopo l’esecuzione di un’operazione oppure a causa di un’operazione di arresto intenzionale nel processo:
 
-* Le operazioni possono bloccarsi a causa di un errore imprevisto. Tuttavia, un’operazione Stall Branch in un processo interrompe deliberatamente l’ulteriore esecuzione di un processo e richiede l’intervento dell’amministratore.
+* Le operazioni possono bloccarsi a causa di un errore imprevisto. Tuttavia, un’operazione di ramo bloccato in un processo interrompe deliberatamente l’ulteriore esecuzione di un processo e richiede l’intervento dell’amministratore.
 * I rami possono bloccarsi tra le operazioni durante la valutazione di una regola.
 
-Quando un processo si arresta, non vengono eseguite ulteriori operazioni finché il problema non viene risolto e l&#39;operazione o il ramo non viene riavviato.
+Quando un processo si arresta, non vengono eseguite ulteriori operazioni finché il problema non viene risolto e l’operazione o il ramo non viene riavviato.
 
-Per ogni elemento in stallo, l&#39;elenco mostra le seguenti informazioni:
+Per ogni elemento bloccato, l’elenco mostra le seguenti informazioni:
 
-**Nome operazione o nome ramo:** Nome dell&#39;operazione o del ramo.
+**Nome operazione o nome ramo:** nome dell’operazione o del ramo.
 
-**Stato:** sempre BLOCCATO per gli elementi in stallo.
+**Stato:** sempre BLOCCATO per gli elementi bloccati.
 
-**Errore:** Breve descrizione del problema.
+**Errore:** una breve descrizione del problema.
 
-**ID processo:** Il numero intero positivo assegnato dal flusso di lavoro dei moduli quando viene creata un&#39;istanza del processo, ovvero quando un utente o un passaggio automatico avvia un processo. È possibile utilizzare questo identificatore per tenere traccia dell&#39;istanza di processo durante il relativo ciclo di vita.
+**ID processo:** il numero intero positivo assegnato da Forms workflow quando viene creata un’istanza del processo (vale a dire quando un utente o un passaggio automatico avvia un processo). Puoi utilizzare questo identificatore per tenere traccia dell’istanza di processo durante il relativo ciclo di vita.
 
-**Nome processo - Versione:** Il nome del processo assegnato in Workbench.
+**Nome processo - Versione:** il nome del processo assegnato in Workbench.
 
-**Data di blocco:** La data e l&#39;ora in cui l&#39;operazione o il ramo si è interrotto.
+**Data di blocco:** la data e l’ora in cui l’operazione o il ramo si è bloccato.
 
 Nella pagina Operazioni bloccate o Rami bloccati è possibile eseguire le operazioni seguenti:
 
-* Seleziona un errore per visualizzare i dettagli su di esso. Quando si seleziona un errore, viene visualizzata la pagina Dettagli errore.
-* Termina o riprova le operazioni bloccate o riprova i rami bloccati.
+* Seleziona un errore per visualizzarne i dettagli. Quando si seleziona un errore, viene visualizzata la pagina Dettagli errore.
+* Terminare oppure provare a eseguire di nuovo le operazioni bloccate o i rami bloccati.
 
-## Interruzione o nuovo tentativo di operazioni o rami bloccati {#terminating-or-retrying-stalled-operations-or-branches}
+## Interruzione o nuovo tentativo di esecuzione di operazioni o rami bloccati {#terminating-or-retrying-stalled-operations-or-branches}
 
-Nella pagina Operazioni bloccate è possibile terminare le istanze di processo visualizzate.
+Nella pagina Operazioni bloccate, è possibile terminare le istanze di processo visualizzate.
 
-Quando si termina un&#39;istanza di processo, l&#39;esecuzione viene interrotta e non vengono eseguite ulteriori operazioni. In genere, un processo viene terminato solo se diventa bloccato o inutilizzabile a causa di un errore e non può essere corretto e riavviato.
+Quando si termina un’istanza di processo, l’esecuzione viene interrotta e non vengono eseguite ulteriori operazioni. In genere, un processo viene terminato solo se si blocca o diventa inutilizzabile a causa di un errore e non può essere corretto e riavviato.
 
-Nella pagina Operazioni bloccate o Rami bloccati è possibile ritentare l&#39;operazione o il ramo.
+Nella pagina Operazioni bloccate o Rami bloccati è possibile ritentare l’operazione o il ramo.
 
-Quando si ritenta un&#39;operazione, al flusso di lavoro di Forms viene inviata una richiesta per riavviare l&#39;operazione. Se l&#39;errore che ha causato l&#39;arresto del processo è stato corretto e la richiesta di nuovo tentativo ha esito positivo, il processo riprende a funzionare dal punto in cui era stato arrestato e il suo stato cambia in ESECUZIONE. Se non è possibile riavviare l&#39;operazione, questa rimane BLOCCATA e potrebbe essere necessario terminarla.
+Quando ritenti un’operazione, a Forms Workflow viene inviata una richiesta per riavviare l’operazione. Se l’errore che ha causato l’arresto del processo è stato corretto e la richiesta di nuovo tentativo ha esito positivo, il processo riprende a funzionare dal punto in cui era stato arrestato e il suo stato cambia in ESECUZIONE. Se non è possibile riavviare l’operazione, questa rimane BLOCCATA e potrebbe essere necessario terminarla.
 
-### Termina un&#39;operazione in stallo {#terminate-a-stalled-operation}
+### Come terminare un’operazione bloccata {#terminate-a-stalled-operation}
 
-1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro moduli > Errori operazioni bloccate.
-1. Nella pagina Operazioni bloccate selezionare l&#39;elemento che si desidera terminare e fare clic su Termina.
+1. Nella console di amministrazione, fare clic su Servizi > Forms workflow > Errori operazioni bloccate.
+1. Nella pagina Operazioni bloccate, selezionare l’elemento che si desidera terminare e fare clic su Termina.
 
-### Riprovare un&#39;operazione o un ramo bloccato {#retry-a-stalled-operation-or-branch}
+### Nuova esecuzione di un’operazione o di un ramo bloccato {#retry-a-stalled-operation-or-branch}
 
-1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro moduli, quindi fai clic su Errori di operazioni bloccate o Errori di ramo bloccati.
-1. Nella pagina Operazioni bloccate o Rami bloccati selezionare l&#39;elemento che si desidera riprovare e fare clic su Riprova.
+1. Nella console di amministrazione, fare clic su Servizi > Forms workflow, quindi fare clic su Errori di operazioni bloccate o Errori di ramo bloccati.
+1. Nella pagina Operazioni bloccate o Rami bloccati selezionare l’elemento che si desidera riprovare e fare clic su Riprova.
 
 ## Visualizzazione dei dettagli di errore relativi alle operazioni o ai rami bloccati {#viewing-error-details-about-stalled-operations-or-branches}
 
-Se si seleziona un errore dall&#39;elenco degli elementi bloccati nella pagina Operazioni bloccate o Rami bloccati, viene visualizzata la pagina Dettagli errore, che mostra i dettagli dell&#39;errore che possono facilitare la risoluzione del problema.
+Se si seleziona un errore dall’elenco degli elementi bloccati nella pagina Operazioni bloccate o Rami bloccati, viene visualizzata la pagina Dettagli errore, che mostra i dettagli dell’errore, i quali possono facilitare la risoluzione del problema.
 
-La casella nella parte inferiore della pagina contiene le informazioni sull&#39;errore.
+La casella nella parte inferiore della pagina contiene le informazioni sull’errore.
 
-Dalla pagina Dettagli errore è inoltre possibile terminare o riprovare le operazioni bloccate e riprovare i rami bloccati.
+Dalla pagina Dettagli errore è inoltre possibile terminare o riprovare a eseguire le operazioni bloccate e riprovare i rami bloccati.
 
-## Il processo non si arresta quando l&#39;utente di riassegnazione non esiste {#process-does-not-stall-when-escalation-user-does-not-exist}
+## Il processo non si arresta quando l’utente di escalation non esiste {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Si verificano errori quando l&#39;operazione Assegna attività nel servizio Utente di AEM Forms è configurata per l&#39;inoltro dell&#39;attività a un altro utente dopo un periodo di tempo specifico e l&#39;utente dell&#39;inoltro viene eliminato dopo l&#39;esecuzione dell&#39;operazione Assegna attività, ma prima dell&#39;inoltro.
+Si verificano errori quando l’operazione Assegna attività nel servizio Utente di AEM Forms è configurata per l’inoltro dell’attività a un altro utente dopo un periodo di tempo specifico e l’utente dell’inoltro viene eliminato dopo l’esecuzione dell’operazione Assegna attività, ma prima dell’inoltro.
 
-Quando si verifica questa situazione, lo stato del processo e dell&#39;attività non cambia al momento dell&#39;escalation configurata e l&#39;escalation non si verifica, ma il processo non si arresta. Nel registro del server viene visualizzato il seguente messaggio:
+Quando si verifica questa situazione, lo stato del processo e dell’attività non cambia al momento dell’escalation configurata e l’escalation non si verifica, ma il processo non si arresta. Nel registro del server viene visualizzato il seguente messaggio:
 
-&quot;L&#39;entità specificata per l&#39;escalation non è valida per taskID: *numero*, coda specificata: *numero*.&quot;
+&quot;L’entità principale specificata per l’escalation non è valida per taskID: *numero*, coda specificata: *numero*.&quot;
 
-Se l&#39;utente di escalation viene eliminato prima della generazione dell&#39;attività (prima dell&#39;esecuzione dell&#39;operazione Assegna attività), il processo si arresta oppure viene generato l&#39;evento di eccezione InvalidPrincipal.
+Se l’utente di escalation viene eliminato prima della generazione dell’attività (prima dell’esecuzione dell’operazione Assegna attività), il processo si arresta oppure viene generato l’evento di eccezione InvalidPrincipal.
 
-Per evitare questo problema, quando si elimina un utente, cercare le attività appartenenti a tale utente e gestirle di conseguenza. (Vedi [Utilizzo delle attività](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Per evitare questo problema, quando si elimina un utente, cercare le attività appartenenti a tale utente e gestirle di conseguenza. Vedere [Utilizzo delle attività](/help/forms/using/admin-help/tasks.md#working-with-tasks).

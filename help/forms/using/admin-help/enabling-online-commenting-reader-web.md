@@ -1,5 +1,5 @@
 ---
-title: Abilitazione del commento online per il plug-in del browser Web Adobe Reader
+title: Abilitare i commenti online per il plug-in del browser web Adobe Reader
 description: Scopri come abilitare i commenti online per il plug-in del browser web Adobe Reader.
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '113'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Abilitazione del commento online per il plug-in del browser Web Adobe Reader {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
+# Abilitare i commenti online per il plug-in del browser web Adobe Reader {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
 
-Per abilitare la barra degli strumenti Commenti e markup in un file PDF visualizzato tramite il plug-in del browser Web Adobe Reader, è necessario che sia attivo un back-end di collaborazione, ad esempio un server di revisione. Se non è disponibile un back-end di collaborazione, è necessario salvare il file PDF nel computer, esaminare e contrassegnare il file in Adobe Reader e inviarlo nuovamente al server di origine.
+Per attivare la barra degli strumenti Commenti e markup in un file PDF visualizzato tramite il plug-in del browser web Adobe Reader, devi disporre di un back-end di collaborazione, ad esempio un server di revisione. Se non disponi un back-end di collaborazione, devi salvare il file PDF nel computer, esaminare e annotare il file in Adobe Reader e inviarlo nuovamente a chi lo ha creato.
 
-Se è necessario inserire commenti online in un ambiente non collaborativo, contatta il supporto Adobe per ulteriori informazioni.
+Se è necessario inserire commenti online in un ambiente non collaborativo, contatta l’Assistenza Adobe per ulteriori informazioni.

@@ -1,6 +1,6 @@
 ---
 title: Configurazione dell’autenticazione basata su certificati
-description: Importare un certificato di autorità di certificazione (CA) nell'archivio fonti attendibili e creare un mapping di certificati per l'autenticazione basata su certificati.
+description: Importa un certificato di Autorità di certificazione (CA) nell’archivio di certificati attendibili e crea una mappatura di certificati per l’autenticazione basata su certificati.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -22,82 +22,82 @@ ht-degree: 0%
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Gestione utenti in genere esegue l&#39;autenticazione utilizzando un nome utente e una password. Gestione utenti supporta anche l’autenticazione basata su certificati, che può essere utilizzata per autenticare gli utenti tramite Acrobat o a livello di programmazione. Per informazioni dettagliate sull&#39;autenticazione degli utenti a livello di programmazione, vedere [Programmazione con moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63).
+La Gestione utenti in genere esegue l’autenticazione utilizzando un nome utente e una password. La Gestione utenti supporta anche l’autenticazione basata su certificati, che può essere utilizzata per autenticare gli utenti tramite Acrobat o a livello di programmazione. Per informazioni dettagliate sull’autenticazione degli utenti a livello di programmazione, consulta [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_it).
 
-Per utilizzare l&#39;autenticazione basata su certificati, importare un certificato di Autorità di certificazione (CA) attendibile nell&#39;archivio fonti attendibili e quindi creare un mapping di certificati.
+Per utilizzare l’autenticazione basata su certificati, importa un certificato di Autorità di certificazione (CA) attendibile nell’archivio di certificati attendibili e quindi crea una mappatura di certificati.
 
-## Importa il certificato CA {#import-the-ca-certificate}
+## Importare il certificato CA {#import-the-ca-certificate}
 
-Durante l&#39;importazione del certificato, selezionare le opzioni Considera attendibili l&#39;autenticazione del certificato e Considera attendibili l&#39;identità e qualsiasi altra opzione necessaria. Per informazioni dettagliate sull&#39;importazione dei certificati, vedere [Gestione dei certificati](/help/forms/using/admin-help/certificates.md#managing-certificates).
+Durante l’importazione del certificato, seleziona le opzioni Considera attendibile l’autenticazione del certificato e Considera attendibile l’identità e qualsiasi altra opzione necessaria. Per informazioni dettagliate sull’importazione dei certificati, consulta [Gestione dei certificati](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
 ## Configurazione della mappatura dei certificati {#configuring-certificate-mapping}
 
-Per abilitare l’autenticazione basata su certificato per gli utenti, crea un mapping dei certificati. Un *mapping certificato* definisce un mapping tra gli attributi di un certificato e gli attributi degli utenti in un dominio. È possibile mappare più certificati allo stesso dominio.
+Per abilitare l’autenticazione basata su certificati per gli utenti, crea una mappatura dei certificati. Una *mappatura dei certificati* definisce una mappatura tra gli attributi di un certificato e gli attributi degli utenti in un dominio. Puoi mappare più certificati allo stesso dominio.
 
-Quando verifichi un certificato, Gestione utente carica i controlli del certificato per verificare che soddisfi i seguenti requisiti:
+Quando verifichi un certificato, la Gestione utenti carica i controlli del certificato per assicurare che soddisfi i seguenti requisiti:
 
-* Il certificato è valido.
-* L&#39;autorità di certificazione specificata può verificare il certificato.
+* Questo certificato è valido.
+* L’emittente specificato può verificare il certificato.
 * Il certificato contiene l’attributo necessario per la mappatura.
-* Il mapping specificato associa il certificato a un solo utente nel database dei moduli AEM. Gli utenti correnti e obsoleti (eliminati) vengono controllati per determinare se corrispondono ai criteri di mappatura. Pertanto, il test del certificato non riesce se più utenti, inclusi gli utenti obsoleti, hanno preso in considerazione il valore dell’attributo.
+* La mappatura specificata associa il certificato a un solo utente nel database di AEM Forms. Gli utenti correnti e obsoleti (eliminati) vengono controllati per determinare se corrispondono ai criteri di mappatura. Pertanto, il test del certificato non riesce se più utenti, inclusi quelli obsoleti, hanno preso in considerazione il valore dell’attributo.
 
 >[!NOTE]
 >
->Non è possibile modificare un mapping di certificati esistente.
+>Non è possibile modificare una mappatura di certificati esistente.
 
-**Aggiungere un mapping di certificati**
+**Aggiungere la mappatura di un certificato**
 
-1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Mappatura certificato.
-1. Fare clic su Nuovo mapping certificati e, nell&#39;elenco Per emittente, selezionare l&#39;alias del certificato configurato in Gestione archivio fonti attendibili.
+1. Nella console di amministrazione fai clic su Impostazioni > Gestione utenti > Configurazione > Mappatura certificato.
+1. Fai clic su Mappatura di nuovi certificati e, nell’elenco Per emittente, seleziona l’alias del certificato configurato in Gestione archivio di certificati attendibili.
 1. Mappa uno degli attributi del certificato a un attributo dell’utente. Ad esempio, puoi mappare il nome comune del certificato all’ID di accesso dell’utente.
 
-   Se il contenuto dell’attributo nel certificato è diverso da quello nell’attributo dell’utente nel database di User Management, puoi utilizzare un’espressione regolare Java (regex) per far corrispondere i due attributi. Ad esempio, se i nomi comuni dei certificati sono nomi come *Alex Pink (autenticazione)* e *Alex Pink (firma)* e il nome comune nel database di gestione utenti è *Alex Pink*, utilizzare un regex per estrarre la parte richiesta dell&#39;attributo del certificato (in questo esempio, *Alex Pink*). L&#39;espressione regolare specificata deve essere conforme alla specifica Java regex.
+   Se il contenuto dell’attributo nel certificato è diverso da quello nell’attributo dell’utente nel database della Gestione utenti, puoi utilizzare un’espressione regolare Java (regex) per far corrispondere i due attributi. Ad esempio, se i nomi comuni dei certificati sono nomi come *Alex Pink (autenticazione)* e *Alex Pink (firma)* e il nome comune nel database della gestione utenti è *Alex Pink*, utilizza un regex per estrarre la parte dell’attributo del certificato richiesta (in questo esempio, *Alex Pink*). L’espressione regolare specificata deve essere conforme alla specifica Java regex.
 
-   È possibile trasformare l&#39;espressione specificando l&#39;ordine dei gruppi nella casella Ordine personalizzato. Ordine personalizzato utilizzato con il metodo `java.util.regex.Matcher.replaceAll()`. Il comportamento visualizzato corrisponderà al comportamento del metodo e la stringa di input (l’ordine personalizzato) deve essere specificata di conseguenza.
+   Puoi trasformare l’espressione specificando l’ordine dei gruppi nella casella Ordine personalizzato. L’ordine personalizzato è utilizzato con il metodo `java.util.regex.Matcher.replaceAll()`. Il comportamento visualizzato corrisponderà al comportamento del metodo e la stringa di input (l’ordine personalizzato) deve essere specificata di conseguenza.
 
-   Per verificare il regex, immettete un valore nella casella Parametro test (Test Parameter) e fate clic su Test.
+   Per testare il regex, immetti un valore nella casella Parametro di test e fai clic su Test.
 
-   Puoi utilizzare i seguenti caratteri nel codice regex:
+   Nel regex puoi utilizzare i seguenti caratteri:
 
    * . (qualsiasi carattere)
-   * &ast; (0 o più occorrenze)
-   * () (specificare il gruppo tra parentesi)
+   * &amp;ast; (0 o più occorrenze)
+   * () (specifica il gruppo tra parentesi)
    * \ (utilizzato per sostituire un carattere regex con un carattere regolare)
-   * $n (utilizzato per fare riferimento all’ennesimo gruppo)
+   * $n (utilizzato per fare riferimento all’n-esimo gruppo)
 
    Esempi di espressioni regolari:
 
-   * Per estrarre &quot;Alex Pink&quot; da &quot;Alex Pink (Authentication)&quot;
+   * Per estrarre “Alex Pink” da “Alex Pink (Authentication)”
 
-     **Regex:** (.&ast;) \(autenticazione\)
+     **Regex:** (.&amp;ast;) \(Authentication\)
 
-   * Per estrarre &quot;Alex Pink&quot; da &quot;Alex (Authentication) Pink&quot;
+   * Per estrarre “Alex Pink” da “Alex (Authentication) Pink”
 
-     **Regex:** (.&ast;)\(autenticazione\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
-   * Per estrarre &quot;Pink Alex&quot; da &quot;Alex (Authentication) Pink&quot;
+   * Per estrarre “Pink Alex” da “Alex (Authentication) Pink”
 
-     **Regex:** (.&ast;)\(autenticazione\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
-     Ordine personalizzato: $2 $1 (secondo gruppo restituito, concatenato al primo gruppo, acquisito dal carattere spazio vuoto)
+     Ordine personalizzato: $2 $1 (secondo gruppo restituito, concatenato al primo gruppo, acquisito dal carattere di spazio vuoto)
 
-   * Per estrarre &quot;apink@sampleorg.com&quot; da &quot;smtp:apink@sampleorg.com&quot;
+   * Per estrarre “apink@sampleorg.com” da “smtp:apink@sampleorg.com”
 
-     **Regex:** smtp:(.&ast;)
+     **Regex:** smtp:(.&amp;ast;)
 
-   Per informazioni dettagliate sull&#39;utilizzo delle espressioni regolari, vedere [Esercitazione Java sulle espressioni regolari](https://java.sun.com/docs/books/tutorial/essential/regex/).
+   Per informazioni dettagliate sull’utilizzo delle espressioni regolari, consulta [Tutorial di Java sulle espressioni regolari](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
-1. Nell’elenco Per dominio, seleziona il dominio dell’utente.
-1. Per verificare questa configurazione, fai clic su Sfoglia per caricare un certificato utente di esempio, fai clic su Prova certificato e, se la configurazione è corretta, fai clic su OK.
+1. Nell’elenco Per dominio seleziona il dominio dell’utente.
+1. Per testare questa configurazione, fai clic su Sfoglia per caricare un certificato utente di esempio, fai clic su Testa certificato e, se la configurazione è corretta, fai clic su OK.
 
-**Modifica mapping certificato esistente**
+**Modifica della mappatura di un certificato esistente**
 
-1. In Administration Console, fai clic su Impostazioni > Gestione utente > Configurazione.
+1. Nella console di amministrazione fai clic su Impostazioni > Gestione utenti > Configurazione.
 1. Fai clic su Mappatura certificato.
-1. Seleziona il mapping del certificato per modificarne e modificarne la configurazione. Puoi aggiornare l’espressione regolare e l’ordine personalizzato.
-1. Per verificare le modifiche, fare clic su Sfoglia per caricare un certificato di esempio, fare clic su Prova certificato e quindi su OK.
+1. Seleziona la mappatura del certificato da modificare e cambiane la configurazione. Puoi aggiornare l’espressione regolare e l’ordine personalizzato.
+1. Per verificare le modifiche, fai clic su Sfoglia per caricare un certificato di esempio, su Testa certificato, quindi su OK.
 
-**Eliminare un mapping di certificati**
+**Eliminazione della mappatura di un certificato**
 
-1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Mappatura certificato.
-1. Selezionare la casella di controllo relativa al mapping dei certificati da eliminare, fare clic su Elimina e quindi su OK.
+1. Nella console di amministrazione fai clic su Impostazioni > Gestione utenti > Configurazione > Mappatura certificato.
+1. Seleziona la casella di controllo relativa alla mappatura del certificato da eliminare, fai clic su Elimina, quindi su OK.

@@ -6,29 +6,29 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1744'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Guida rapida alle linee guida WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) è stato sviluppato per garantire la massima conformità con le linee guida per l’accessibilità dei contenuti web.
+Adobe Experience Manager (AEM) è stato sviluppato per garantire una conformità ottimale alle linee guida per l’accessibilità dei contenuti web.
 
 La [versione 2.1 delle linee guida per l’accessibilità dei contenuti web (WCAG)](https://www.w3.org/TR/WCAG/) è costituita da una serie di indicazioni riconosciute a livello internazionale sviluppate dal [World Wide Web Consortium (W3C)](https://www.w3.org/) nell’ambito dell’iniziativa [WAI (Web Accessibility Initiative)](https://www.w3.org/WAI/).
 
 >[!NOTE]
 >
->Le linee guida WCAG 2.1 rappresentano un aggiornamento della versione precedente, WCAG 2.0, del 2008. Vedi il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+>Le linee guida WCAG 2.1 rappresentano un aggiornamento della versione precedente, WCAG 2.0, del 2008. Consulta il [confronto tra WCAG 2.1 e WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 >
->Poiché questi documenti sono stati scritti con la [versione aggiornata delle linee guida, WCAG 2.2](https://www.w3.org/TR/) è stato reso disponibile a ottobre 2023.
+>Da quando questi documenti sono stati scritti, la [versione aggiornata delle linee guida, WCAG 2.2](https://www.w3.org/TR/) è stata resa disponibile a ottobre 2023.
 >
 >Vedi [Confronto con WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) e [Nuove funzioni in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
-Le linee guida WCAG 2.1 sono costituite da un insieme di criteri di successo e linee guida che non dipendono dalla tecnologia in uso e hanno l’obiettivo di rendere i contenuti web accessibili e utilizzabili da persone con disabilità. Forniscono consigli agli autori, ai designer e agli sviluppatori di contenuti web per garantire che le risorse prodotte siano il più possibile accessibili a quante più persone possibile, indipendentemente da eventuali disabilità: ad esempio disabilità visive, perdita dell’udito, difficoltà di apprendimento, limitazioni correlate all’età.
+Le linee guida WCAG 2.1 sono costituite da un insieme di criteri di successo e linee guida che non dipendono dalla tecnologia in uso e hanno l’obiettivo di rendere i contenuti web accessibili e utilizzabili da persone affette da disabilità. Includono suggerimenti e indicazioni per autori, designer e sviluppatori di contenuti web al fine di garantire che le risorse prodotte offrano la massima accessibilità a un pubblico più ampio possibile, indipendentemente da eventuali disabilità, quali disabilità visive o uditive, difficoltà di apprendimento o limiti correlati all’età.
 
 Ad esempio, la descrizione di un’immagine (o di qualsiasi altro contenuto non testuale) tramite l’attributo `alt` nel linguaggio HTML offre notevoli vantaggi alle persone non vedenti o ipovedenti. La descrizione testuale contenuta nell’attributo `alt` può essere convertita in un output vocale o trasmessa a display Braille elettronici aggiornabili.
 
@@ -47,7 +47,7 @@ in altre parole, si tratta di linee guida che possono essere applicate a diversi
 ogni istruzione è redatta in modo da poter essere testata in modo oggettivo affinché un gruppo di esperti di accessibilità possa concordare in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno.
 
 * Supporto dell’**implementazione contestuale e basata su priorità**:
-alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Viene inoltre introdotto il concetto di *supporto dell’accessibilità*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non disporre del supporto completo per l’accessibilità o che potrebbero richiedere agli utenti di disporre di tecnologie e/o browser per l’accessibilità specifici per beneficiare delle funzioni di accessibilità.
+alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Viene inoltre introdotto il concetto di *supporto dell’accessibilità*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non prevedere il supporto completo per l’accessibilità oppure che, per beneficiare delle funzioni di accessibilità, potrebbero richiedere l’accesso a particolari browser e/o tecnologie per l’accessibilità.
 
 Tali obiettivi hanno influenzato in modo significativo la struttura delle linee guida WCAG 2.1.
 
@@ -73,8 +73,8 @@ In particolare:
 * Le linee guida sono numerate da 1.1 a 4.1 e la prima cifra corrisponde al principio padre.
 * Ogni linea guida è costituita da uno o più **criteri di successo**.
 * I criteri di successo sono formulati come istruzioni, che possono essere `True` o `False` per una determinata pagina web.
-* I criteri di successo possono includere una o più scelte oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
-* I criteri di successo sono numerati in base alla linea guida e al principio padre, da 1.1.1 a 4.1.1. Hanno anche un nome breve che riassume l’intento del criterio, per un riferimento più semplice. Ad esempio, il criterio di successo [1.1.1 prevede contenuto non testuale](https://www.w3.org/TR/WCAG/#non-text-content).
+* I criteri di successo possono includere una o più opzioni oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
+* I criteri di successo sono numerati in base alla linea guida e al principio principali, da 1.1.1 a 4.1.1. Dispongono anche di un nome breve che riassume l’intento del criterio, per un riferimento più semplice. Ad esempio, il criterio di successo [1.1.1 prevede contenuto non testuale](https://www.w3.org/TR/WCAG/#non-text-content).
 * I criteri di successo includono un elenco delle **tecniche** correlate (descritte più in dettaglio di seguito).
 
 ## Risorse di supporto {#supporting-resources}

@@ -10,30 +10,30 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Database di Microsoft SQL Server: ottimizzazione della configurazione {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
-È consigliabile modificare le impostazioni di configurazione predefinite quando si utilizza Microsoft SQL Server. Fare clic con il pulsante destro del mouse sul server locale in Oracle Enterprise Manager per accedere alla finestra di dialogo delle proprietà.
+È consigliabile modificare le impostazioni di configurazione predefinite quando si utilizza Microsoft SQL Server. Fai clic con il pulsante destro del mouse sul server locale in Oracle Enterprise Manager per accedere alla finestra di dialogo delle proprietà.
 
 ## Impostazioni della memoria {#memory-settings}
 
-Impostare l&#39;allocazione minima della memoria su un numero il più grande possibile. Se il database è in esecuzione su un computer separato, utilizzare tutta la memoria. Le impostazioni predefinite non allocano in modo aggressivo la memoria, il che ostacola le prestazioni su quasi tutti i database. Deve essere più aggressivo nell’allocare memoria sui macchinari di produzione.
+Imposta l’allocazione minima della memoria sul numero più grande possibile. Se il database è in esecuzione su un computer separato, utilizza tutta la memoria. Le impostazioni predefinite non allocano in modo deciso la memoria, pertanto le prestazioni vengono ostacolate su quasi tutti i database. L’allocazione della memoria nei computer deve essere più decisa.
 
-## Impostazioni processore {#processor-settings}
+## Impostazioni del processore {#processor-settings}
 
-Modificare le impostazioni del processore e, soprattutto, selezionare la casella di controllo Aumenta priorità SQL Server in Windows in modo che il server utilizzi il maggior numero di cicli possibile. L&#39;impostazione Usa fibre NT è meno importante, ma potrebbe essere necessario selezionarla.
+Modifica le impostazioni del processore e, soprattutto, seleziona la casella di controllo Aumenta la priorità di SQL Server su Windows in modo che il server utilizzi il maggior numero di cicli possibile. L’impostazione Usa NT Fibers è meno importante, ma potrebbe essere necessario selezionarla comunque.
 
 ## Impostazioni del database {#database-settings}
 
-Modificare le impostazioni del database. L&#39;impostazione più importante è Intervallo di ripristino, che specifica il tempo massimo di attesa del ripristino dopo un arresto anomalo. L&#39;impostazione predefinita è un minuto. L&#39;utilizzo di un valore più grande, da 5 a 15 minuti, migliora le prestazioni perché consente al server di disporre di più tempo per scrivere le modifiche dal log del database nei file del database.
+Modifica le impostazioni del database. L’impostazione più importante è Intervallo di ripristino che specifica il tempo massimo di attesa per il ripristino dopo un arresto anomalo. L’impostazione predefinita è un minuto. L’utilizzo di un valore più grande, da 5 a 15 minuti, migliora le prestazioni perché dà al server più tempo per scrivere le modifiche dal registro del database ai file del database.
 
 >[!NOTE]
 >
->Questa impostazione non compromette il comportamento transazionale perché modifica solo la lunghezza della ripetizione del file di log che deve essere eseguita all&#39;avvio.
+>Questa impostazione non compromette il comportamento transazionale perché modifica solo la lunghezza della riesecuzione del file di registro che avviene all’avvio.
 
-Impostare la dimensione Spazio allocato sia per il file di log che per il file di dati in modo che sia molto più grande del database iniziale. Considera la crescita del database nell&#39;arco di un anno. Idealmente, i file di registro e i file di dati vengono allocati in un&#39;estensione contigua in modo che i dati non finiscano frammentati su tutto il disco.
+Imposta la dimensione dello spazio allocato sia per il file di registro sia per il file di dati in modo che sia molto più grande del database iniziale. Prendi in considerazione la possibile crescita del database nell’arco di un anno. Idealmente, i file di registro e di dati sono allocati in un’estensione contigua in modo che i dati non vengano frammentati su tutto il disco.

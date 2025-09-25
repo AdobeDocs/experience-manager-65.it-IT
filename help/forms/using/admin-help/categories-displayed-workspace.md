@@ -1,6 +1,6 @@
 ---
-title: Gestione delle categorie visualizzate in Workspace
-description: In Workspace, i processi che un utente può avviare vengono visualizzati in categorie nel riquadro di navigazione a sinistra. Scopri come gestire queste categorie visualizzate in Workspace.
+title: Gestire le categorie visualizzate in Workspace
+description: Nell’area di lavoro i processi che un utente può avviare vengono visualizzati in categorie nel riquadro di navigazione a sinistra. Scopri come gestire le categorie visualizzate nell’area di lavoro.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
@@ -10,48 +10,48 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '494'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Gestione delle categorie visualizzate in Workspace {#managing-the-categories-displayed-in-workspace}
+# Gestire le categorie visualizzate in Workspace {#managing-the-categories-displayed-in-workspace}
 
 >[!NOTE]
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-In Workspace, i processi che un utente può avviare vengono visualizzati in categorie nel riquadro di navigazione a sinistra. È possibile impostare le categorie nella console di amministrazione oppure i designer del processo possono impostarle in Workbench. Quando i progettisti di processi creano processi, li assegnano a categorie.
+Nell’area di lavoro i processi che un utente può avviare vengono visualizzati in categorie nel riquadro di navigazione a sinistra. È possibile impostare le categorie nella console di amministrazione oppure gli sviluppatori di processi possono configurarle in Workbench. Quando gli sviluppatori di processi creano processi, li assegnano a delle categorie.
 
-Quando si specificano i nomi delle categorie, crearli in modo che vengano visualizzati correttamente nel riquadro di spostamento di Workspace. Per impostazione predefinita, il riquadro di navigazione sinistro ha una larghezza fissa di 210 pixel, pari a circa 24 caratteri. Se il nome della categoria specificato è troppo lungo per essere contenuto nella larghezza fissa del riquadro di spostamento a sinistra, verrà troncato. Il nome completo viene visualizzato solo quando si posiziona il puntatore del mouse su di esso. Prova ad evitare i nomi di categoria che verranno troncati. Negli esempi seguenti vengono illustrati i nomi delle categorie che possono essere adattati e quelli troncati:
+Quando specifichi i nomi delle categorie, creale in modo che vengano visualizzate correttamente nel riquadro di navigazione dell’area di lavoro. Per impostazione predefinita, il riquadro di navigazione a sinistra ha una larghezza fissa di 210 pixel, pari a circa 24 caratteri. Se è troppo lungo per essere contenuto nella larghezza fissa del riquadro di navigazione a sinistra, il nome categoria specificato verrà troncato. Il nome completo viene visualizzato solo quando il cursore del mouse viene posizionato sopra di esso. Evita i nomi di categoria che possono essere troncati. Negli esempi seguenti vengono illustrati i nomi categoria che possono essere contenuti e quelli che vengono troncati:
 
-**Nome categoria adatto a:** Partecipazione e congedo
+**Nome categoria adatto:** Frequenza e uscita
 
-**Nome categoria troncato:** Partecipazione e congedo (Stati Uniti)
+**Nome categoria troncato:** Frequenza e uscita (Stati Uniti)
 
-In Workspace, i processi all’interno di una categoria vengono generalmente visualizzati come schede nella pagina Avvia processo. In generale, è possibile visualizzare sullo schermo sei schede per una categoria prima che all&#39;utente venga richiesto di scorrere per visualizzare le schede rimanenti. Poiché lo scorrimento rende più difficile trovare un processo, è consigliabile limitare ogni categoria a sei processi o, a seconda della risoluzione, limitare il numero di processi che possono essere visualizzati sullo schermo senza richiedere alcuno scorrimento.
+Nell’area di lavoro i processi all’interno di una categoria vengono generalmente visualizzati come schede nella pagina Avvia processo. In generale, è possibile visualizzare sullo schermo sei schede per una categoria prima che l’utente debba scorrere per visualizzare le altre schede. Poiché lo scorrimento rende più difficile trovare un processo, è consigliabile limitare ogni categoria a sei processi o, a seconda della risoluzione, limitare il numero di processi che possono essere visualizzati sullo schermo senza che sia necessario uno scorrimento.
 
-Se si utilizza MySQL come database di moduli AEM, la console di amministrazione non è in grado di distinguere due nomi di categoria che differiscono solo nell&#39;uso di caratteri estesi. Ad esempio, se crei una categoria denominata abcde e una categoria denominata âbcdè, queste vengono considerate uguali.
+Se utilizzi MySQL come database di AEM Forms, la console di amministrazione non è in grado di distinguere due nomi di categoria che differiscono solo nell’uso di caratteri estesi. Ad esempio, se crei una categoria denominata abcde e una categoria denominata âbcdè, queste vengono considerate uguali.
 
-## Aggiungi una categoria {#add-a-category}
+## Aggiungere una categoria {#add-a-category}
 
-1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione categorie.
-1. Fai clic su Aggiungi. Per aggiungere una sottocategoria, selezionare una categoria e fare clic su Aggiungi.
-1. Nella casella Nome digitare un nome per la categoria e nella casella Descrizione digitare una descrizione della categoria.
+1. Nella console di amministrazione, fai clic su Servizi > Applicazioni e servizi > Gestione categorie.
+1. Fai clic su Aggiungi. Per aggiungere una sottocategoria, seleziona una categoria e fai clic su Aggiungi.
+1. Nella casella Nome digita un nome per la categoria e nella casella Descrizione digita una descrizione della categoria.
 1. Fai clic su Aggiungi. La categoria viene visualizzata nella pagina Gestione categorie.
 
-   ***nota &#x200B;**: è possibile aggiungere solo fino a cinque livelli gerarchici durante la creazione delle categorie.*
+   ***Nota **: puoi aggiungere solo fino a cinque livelli gerarchici durante la creazione delle categorie.*
 
 ## Modificare una categoria {#edit-a-category}
 
-1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione categorie.
-1. Seleziona la categoria da modificare e fai clic su Modifica. In alternativa, è possibile fare doppio clic su una categoria da modificare.
-1. Modificare il nome della categoria nella casella Nome.
+1. Nella console di amministrazione, fai clic su Servizi > Applicazioni e servizi > Gestione categorie.
+1. Seleziona la categoria da modificare e fai clic su Modifica. In alternativa, puoi fare doppio clic su una categoria da modificare.
+1. Modifica il nome della categoria nella casella Nome.
 
 ## Rimuovere una categoria {#remove-a-category}
 
-È possibile rimuovere solo le categorie non utilizzate.
+Puoi rimuovere solo le categorie non utilizzate.
 
-1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione categorie.
-1. Nella pagina Gestione categorie selezionare la casella di controllo relativa alla categoria da rimuovere e fare clic su Rimuovi. La categoria non viene più visualizzata.
+1. Nella console di amministrazione, fai clic su Servizi > Applicazioni e servizi > Gestione categorie.
+1. Nella pagina Gestione categorie seleziona la casella di controllo relativa alla categoria da rimuovere e fai clic su Rimuovi. La categoria non verrà più visualizzata.

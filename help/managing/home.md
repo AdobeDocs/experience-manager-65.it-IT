@@ -6,22 +6,22 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
 # Guida utente alla gestione di AEM 6.5
 
-Scopri come gestire con successo un progetto AEM, con il supporto di risorse chiave, insieme a best practice e linee guida.
+Scopri come gestire correttamente un progetto AEM, con il supporto di risorse chiave, insieme alle best practice e alle linee guida.
 
-## Articoli chiave
+## Articoli principali
 
 Gli articoli principali di questa guida includono:
 
 * [Gestione dei progetti - Elenco di controllo delle best practice](/help/managing/best-practices.md)
-* [Linee guida per il dimensionamento dell&#39;hardware](/help/managing/hardware-sizing-guidelines.md)
+* [Linee guida per le dimensioni dell’hardware](/help/managing/hardware-sizing-guidelines.md)
 * [Best practice per la gestione di SEO e URL](/help/managing/seo-and-url-management.md)
-* [AEM e linee guida per l’accessibilità dei contenuti web](/help/managing/web-accessibility.md)
-* [Preparazione di Adobe Experience Manager per le normative su privacy e protezione dei dati](/help/managing/data-protection-and-privacy.md)
+* [AEM e le Linee guida di accessibilità dei contenuti web](/help/managing/web-accessibility.md)
+* [Compatibilità di Adobe Experience Manager per le normative sulla protezione dei dati e la privacy](/help/managing/data-protection-and-privacy.md)

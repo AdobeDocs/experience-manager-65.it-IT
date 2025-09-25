@@ -1,6 +1,6 @@
 ---
 title: Impostazione del messaggio del giorno
-description: Il messaggio del giorno consente di impostare un messaggio da visualizzare nella pagina di benvenuto nell'interfaccia utente di Workspace.
+description: Il messaggio del giorno consente di impostare un messaggio da visualizzare nella pagina di benvenuto nell’interfaccia utente di Workspace.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -22,30 +22,30 @@ ht-degree: 1%
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-È possibile impostare un messaggio da visualizzare nella pagina di benvenuto dell&#39;interfaccia utente di Workspace.
+È possibile impostare un messaggio da visualizzare nella pagina di benvenuto dell’interfaccia utente di Workspace.
 
-Se necessario, è possibile utilizzare i tag HTML Adobe supportati da Flash® Player per formattare l&#39;aspetto del testo:
+Se necessario, puoi utilizzare i tag HTML supportati da Adobe Flash® Player per formattare l’aspetto del testo:
 
 * &lt;a> Tag di ancoraggio
 * &lt;b> Tag grassetto
-* &lt;br> Interrompi tag
+* &lt;br> Tag interruzione di riga
 * &lt;font> Tag font
-* Tag immagine &lt;img>
+* &lt;img> Tag immagine 
 * &lt;i> Tag corsivo
 * &lt;li> Tag voce di elenco
 * &lt;p> Tag paragrafo
-* Tag &lt;span> Span
-* Tag formato testo &lt;textformat>
-* &lt;u> Sottolinea tag
+* &lt;span> Tag span
+* &lt;textformat> Tag formato testo
+* &lt;u> Tag sottolineatura
 
-Per ulteriori informazioni sui tag supportati, vedere la definizione della proprietà `htmlText` per la classe TextField nella [Guida di riferimento al linguaggio Flex](https://flex.apache.org/).
+Per ulteriori informazioni sui tag supportati, consulta la definizione della proprietà `htmlText` per la classe TextField in [Riferimento linguaggio Flex](https://flex.apache.org/).
 
 ## Imposta il messaggio del giorno {#set-the-message-of-the-day}
 
 1. Nella console di amministrazione, fai clic su Servizi > Workspace > Messaggio del giorno.
-1. Nella casella Messaggio del giorno specificare il testo da visualizzare nella schermata iniziale.
+1. Nella casella Messaggio del giorno specifica il testo da visualizzare nella schermata introduttiva.
 1. Fai clic su Salva.
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per il rilascio di moduli AEM.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.

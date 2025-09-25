@@ -1,6 +1,6 @@
 ---
-title: Utilizzo delle pagine web di Document Security
-description: Scopri come accedere, navigare e utilizzare le pagine web di document security.
+title: Utilizzo delle pagine web sulla protezione dei documenti
+description: Scopri come accedere, navigare e utilizzare le pagine web sulla protezione dei documenti.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
@@ -10,66 +10,66 @@ exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '933'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilizzo delle pagine web di Document Security {#using-the-document-security-webpages}
+# Utilizzo delle pagine web sulla protezione dei documenti {#using-the-document-security-webpages}
 
 >[!NOTE]
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Utenti e amministratori utilizzano le pagine web relative alla sicurezza dei documenti per creare e gestire le policy, gestire i documenti protetti tramite policy e monitorare gli eventi associati ai documenti protetti tramite policy. Gli amministratori utilizzano inoltre le pagine web per creare set di criteri e designare i coordinatori dei set di criteri, configurare le impostazioni predefinite di Document Security, gestire la registrazione e gli account degli utenti invitati e monitorare e gestire eventi relativi a server, criteri, utenti e documenti.
+Utenti e amministratori utilizzano le pagine web relative alla protezione dei documenti per creare e gestire i criteri e i documenti protetti da criteri e monitorare gli eventi associati ai documenti protetti tramite criteri. Gli amministratori utilizzano inoltre le pagine web per creare set di criteri e designare i coordinatori dei set di criteri, configurare le impostazioni predefinite sulla protezione dei documenti, gestire la registrazione e gli account degli utenti invitati e monitorare e gestire eventi relativi a server, criteri, utenti e documenti.
 
 >[!NOTE]
 >
->Puoi accedere a document security anche tramite Acrobat e altre applicazioni client utilizzando il tuo account di accesso utente. (Vedi [Impostazione dell&#39;accesso alla sicurezza dei documenti dalle applicazioni client](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>Puoi accedere alla protezione dei documenti anche tramite Acrobat e altre applicazioni client utilizzando il tuo account di accesso utente. Consulta [Impostazione dell’accesso alla protezione dei documenti dalle applicazioni client](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).
 
-Per aprire le pagine web, devi disporre di un browser, dell’URL e delle informazioni di accesso per Document Security. L’URL per gli utenti è diverso da quello per gli amministratori.
+Per aprire le pagine web, devi disporre di un browser, dell’URL e delle informazioni di accesso per la protezione dei documenti. L’URL per gli utenti è diverso da quello per gli amministratori.
 
-Poiché la funzione di protezione dei documenti fa riferimento alle directory esistenti dell’organizzazione per le informazioni utente, le informazioni di accesso alla funzione di protezione dei documenti potrebbero essere le stesse utilizzate per accedere alla rete e ad altre applicazioni. Per informazioni sull&#39;account, rivolgersi all&#39;amministratore di sistema o all&#39;amministratore di sistema.
+Poiché la funzione di protezione dei documenti fa riferimento alle directory esistenti dell’organizzazione per le informazioni utente, le informazioni di accesso alla funzione di protezione dei documenti potrebbero essere le stesse utilizzate per accedere alla rete e ad altre applicazioni. Per informazioni sull’account, rivolgiti all’amministratore di sistema o all’amministratore.
 
-Per accedere come amministratore, devi disporre del ruolo di amministratore assegnato. È possibile utilizzare l&#39;account amministratore privilegiato predefinito creato durante il processo di installazione.
+Per accedere come amministratore, devi disporre del ruolo di amministratore assegnato. Puoi utilizzare l’account amministratore privilegiato predefinito creato durante il processo di installazione.
 
 ## Accedi alle pagine web {#log-in-to-the-web-pages}
 
-Per accedere alle pagine web utilizzando un browser, devi disporre dell’URL di document security e di un account. L’URL per gli utenti è diverso da quello per gli amministratori. Gli amministratori possono anche accedere alle pagine utente per creare i criteri.
+Per accedere alle pagine web utilizzando un browser, devi disporre dell’URL relativo alla protezione dei documenti e di un account. L’URL per gli utenti è diverso da quello per gli amministratori. Gli amministratori possono anche accedere alle pagine utente per creare i criteri.
 
-Se hai accesso a più installazioni di document security, devi disporre dell’URL dell’istanza di document security a cui desideri accedere. Se non disponi di queste informazioni, rivolgiti al tuo amministratore. L&#39;URL predefinito per le pagine utente è `https://[host]:[port]/edc`. In alcuni casi il numero di porta potrebbe non essere necessario. Per ulteriori informazioni, rivolgersi all&#39;amministratore.
+Se hai accesso a più installazioni di protezione dei documenti, devi disporre dell’URL dell’istanza della protezione dei documenti a cui desideri accedere. Se non disponi di queste informazioni, rivolgiti al tuo amministratore. L’URL predefinito per le pagine utente è `https://[host]:[port]/edc`. In alcuni casi il numero di porta potrebbe non essere necessario. Per ulteriori informazioni, rivolgiti all’amministratore.
 
-L&#39;URL predefinito per gli amministratori è `https://[host]:[port]/adminui`.
+L’URL predefinito per gli amministratori è `https://[host]:[port]/adminui`.
 
-Per gli amministratori, durante l&#39;installazione viene creato un account di amministratore privilegiato predefinito. È possibile utilizzare questo account per eseguire l’accesso alla prima installazione di Document Security.
+Per gli amministratori, durante l’installazione viene creato un account di amministratore privilegiato predefinito. È possibile utilizzare questo account per eseguire l’accesso alla prima installazione della protezione dei documenti.
 
 >[!NOTE]
 >
->Puoi anche accedere alle pagine web da Acrobat e da altre applicazioni client. Per ulteriori informazioni, consulta la Guida di Acrobat o la Guida delle estensioni di Acrobat Reader DC appropriate.
+>Puoi anche accedere alle pagine web da Acrobat e da altre applicazioni client. Per ulteriori informazioni, vedere la Guida di Acrobat o la Guida alle estensioni di Acrobat Reader DC appropriate.
 
 1. Digita l’URL nel browser:
 
-   URL di Document Security: `https://[host]:[port]/edc`
+   URL alla protezione dei documenti: `https://[host]:[port]/edc`
 
-   o URL console di amministrazione: `https://[host]:[port]/adminui`
+   o URL alla Console di amministrazione: `https://[host]:[port]/adminui`
 
-1. Nella finestra di accesso, digitare il nome utente e la password e fare clic su OK.
-1. In Administration Console, fai clic su Servizi > Document Security.
+1. Nella finestra di accesso, digita il nome utente e la password e fai clic su OK.
+1. Nella Console di amministrazione, fai clic su Servizi > Protezione dei documenti.
 
 >[!NOTE]
 >
->Quando si lavora con le pagine Web, evitare di utilizzare i pulsanti del browser, ad esempio il pulsante Indietro, il pulsante di aggiornamento e le frecce Indietro e Avanti perché questa azione può causare problemi indesiderati di acquisizione dei dati e visualizzazione dei dati.
+>Quando utilizzi le pagine web, evita di utilizzare i pulsanti del browser, ad esempio il pulsante Indietro, il pulsante Aggiorna e le frecce Indietro e Avanti, perché questa azione può causare problemi indesiderati di acquisizione e visualizzazione dei dati.
 
 ## Navigazione nelle pagine web {#navigating-the-web-pages}
 
-Quando accedi alle pagine web degli utenti, trovi i collegamenti alle pagine utente Criteri, Documenti ed Eventi.
+Accedendo alle pagine web degli utenti, troverai i collegamenti alle pagine utente Criteri, Documenti ed Eventi.
 
-Quando accedi alla console di amministrazione e apri la pagina principale di document security, potrebbero essere visualizzati uno o due collegamenti aggiuntivi, uno per la pagina Configurazione e uno per la pagina Utenti invitati e locali. La pagina Utenti invitati e utenti locali viene visualizzata solo se la registrazione degli utenti invitati è abilitata.
+Quando accedi alla Console di amministrazione e apri la pagina principale relativa alla protezione dei documenti, potresti visualizzare uno o due collegamenti aggiuntivi, uno per la pagina Configurazione e uno per la pagina Utenti invitati e locali. La pagina Utenti invitati e locali viene visualizzata solo se la registrazione degli utenti invitati è abilitata.
 
-Utilizzare questi collegamenti per accedere alle varie pagine, in cui è possibile creare e gestire policy e documenti protetti tramite policy.
+Utilizza questi collegamenti per accedere alle varie pagine, in cui è possibile creare e gestire policy e documenti protetti tramite criteri.
 
-**Visualizza una pagina**
+**Mostra una pagina**
 
 1. Fai clic sul nome della pagina, ad esempio Criteri.
 
@@ -77,34 +77,34 @@ Utilizzare questi collegamenti per accedere alle varie pagine, in cui è possibi
 
 1. Fai clic sul collegamento di navigazione nella parte superiore della pagina per la pagina a cui desideri tornare.
 
-**Aggiorna l&#39;elenco dei dati in una pagina**
+**Aggiorna l’elenco dei dati in una pagina**
 
-1. Nella pagina principale fare clic sul collegamento alla pagina che si desidera aggiornare.
+1. Nella pagina principale fai clic sul collegamento alla pagina che si desidera aggiornare.
 
 >[!NOTE]
 >
->Quando si lavora con le pagine Web, evitare di utilizzare i pulsanti del browser, ad esempio il pulsante Indietro, il pulsante di aggiornamento e le frecce Indietro e Avanti, in quanto questa azione può causare problemi indesiderati di acquisizione dei dati e visualizzazione dei dati.
+>Quando utilizzi le pagine web, evita di utilizzare i pulsanti del browser, ad esempio il pulsante Indietro, il pulsante Aggiorna e le frecce Indietro e Avanti, perché questa azione può causare problemi indesiderati di acquisizione e visualizzazione dei dati.
 
-## Impostazione dell’accesso alla sicurezza dei documenti dalle applicazioni client {#setting-up-access-to-document-security-from-client-applications}
+## Impostazione dell’accesso alla protezione dei documenti dalle applicazioni client {#setting-up-access-to-document-security-from-client-applications}
 
-Le applicazioni client devono essere configurate in modo da connettersi alla protezione dei documenti per proteggere i documenti, aprire i documenti protetti tramite policy e connettersi alle pagine web di Document Security. Per informazioni sulla configurazione della connessione nell&#39;applicazione client, vedere *Guida di Acrobat* o la *Guida di RightsManagementExtension* appropriata.
+Le applicazioni client devono essere configurate in modo da connettersi alla protezione dei documenti per proteggerli, aprire i documenti protetti tramite criteri e connettersi alle pagine web di sicurezza dei documenti. Per informazioni sulla configurazione della connessione nell’applicazione client, consulta la *Guida di Acrobat* o la *Guida di RightsManagementExtension* appropriata.
 
-Document Security è accessibile tramite Secure Sockets Layer (SSL). Installa il certificato del sito web nel tuo archivio certificati in modo da poter accedere alla sicurezza dei documenti tramite le applicazioni client.
+La protezione dei documenti è accessibile tramite Secure Sockets Layer (SSL). Installa il certificato del sito web nel tuo archivio certificati in modo da poter accedere alla protezione dei documenti tramite le applicazioni client.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 
-Queste istruzioni sono specifiche per Internet Explorer, ma è possibile installare il certificato utilizzando qualsiasi browser Web supportato. Per ulteriori informazioni, vedere la Guida del browser in uso.
+Queste istruzioni sono specifiche per Internet Explorer, ma puoi installare il certificato utilizzando qualsiasi browser web supportato. Per ulteriori informazioni, consulta la Guida del browser in uso.
 
 **Installare il certificato del server utilizzando Internet Explorer**
 
-1. Apri il browser web e digita l’URL di base per la sicurezza dei documenti nella casella Indirizzo. Digitare ad esempio `https://[host]:[port]`. Verrà visualizzata una finestra di dialogo Avviso di protezione.
-1. Fare clic su Visualizza certificato, quindi su Installa certificato e selezionare le impostazioni predefinite per l&#39;installazione. Il certificato deve essere installato nelle Autorità di certificazione principali attendibili.
+1. Apri il browser web e digita l’URL di base per la protezione dei documenti nella casella Indirizzo. Ad esempio, digita `https://[host]:[port]`. Verrà visualizzata una finestra di dialogo Avviso di sicurezza.
+1. Fai clic su Visualizza certificato, quindi su Installa certificato e seleziona le impostazioni predefinite per l’installazione. Il certificato deve essere installato nelle Autorità di certificazione principali affidabili.
 1. Chiudi la sessione del browser.
-1. Aprire un&#39;altra finestra del browser e digitare lo stesso URL nella casella Indirizzo. La finestra di dialogo Avviso di protezione non dovrebbe essere visualizzata. Il test conferma che il certificato è installato correttamente.
+1. Apri un’altra finestra del browser e digita lo stesso URL nella casella Indirizzo. La finestra di dialogo Avviso di sicurezza non dovrebbe essere visualizzata. Il test conferma che il certificato è installato correttamente.
 
-## Esci dalle pagine web {#log-out-of-the-web-pages}
+## Disconnettersi dalle pagine web {#log-out-of-the-web-pages}
 
-Esci al termine dell’utilizzo delle pagine web in modo da poter utilizzare il browser web per altri scopi in modo sicuro. A seconda della configurazione di document security, potrebbe essere necessario chiudere il browser per disconnettersi completamente.
+Disconnettiti al termine dell’utilizzo delle pagine web in modo da poter utilizzare in modo sicuro il browser web per altri scopi. A seconda della configurazione della protezione dei documenti, potrebbe essere necessario chiudere il browser per disconnettersi completamente.
 
-1. Nell&#39;angolo superiore destro della pagina fare clic su Disconnetti.
-1. Se nella pagina Disconnetti viene visualizzato un messaggio, chiudere la finestra del browser per disconnettersi completamente. In caso contrario, puoi continuare a utilizzare il browser per altri scopi.
+1. Fai clic su Disconnetti nell’angolo superiore destro della pagina.
+1. Se nella pagina Disconnetti viene visualizzato un messaggio, chiudi la finestra del browser per disconnetterti completamente. In caso contrario, puoi continuare a utilizzare il browser per altri scopi.

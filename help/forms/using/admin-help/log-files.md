@@ -10,20 +10,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # File di registro {#log-files}
 
-Eventi quali errori di runtime o di avvio vengono registrati nei file di registro del server applicazioni. In caso di problemi di distribuzione nel server applicazioni, è possibile utilizzare i file di registro per individuare il problema. È possibile aprire i file di registro utilizzando qualsiasi editor di testo.
+Eventi quali errori di runtime o di avvio vengono registrati nei file di registro del server applicazioni. In caso di problemi relativi all’implementazione nel server applicazioni, è possibile utilizzare i file di registro per aiutarti a individuare il problema. È possibile aprire i file di registro utilizzando qualsiasi editor di testo.
 
 (JBoss) I seguenti file di registro si trovano nella directory `[appserver root]/server/'server'/log`:
 
 * boot.log
-* server.log.*[aaaa-mm-gg]*
+* server.log.*[dd/mm/yyyy]*
 * server.log
 
 (WebLogic) I file di registro del dominio si trovano nella directory `[appserverdomain]` e i file di registro del server si trovano nella directory `[appserverdomain]/servers/[appserver name]/logs`:
@@ -32,7 +32,7 @@ Eventi quali errori di runtime o di avvio vengono registrati nei file di registr
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) I seguenti file di log si trovano nella directory `[appserver root]/profiles/default/logs/[appserver name]`:
+(WebSphere) I seguenti file di registro si trovano nella directory `[appserver root]/profiles/default/logs/[appserver name]`:
 
 * SystemErr.log
 * SystemOut.log

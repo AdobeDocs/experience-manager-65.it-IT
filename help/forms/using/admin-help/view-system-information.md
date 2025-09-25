@@ -1,6 +1,6 @@
 ---
-title: Visualizza informazioni di sistema
-description: Scopri come visualizzare i grafici di monitoraggio delle risorse e le informazioni sul server che esegue i moduli AEM.
+title: Visualizzare le informazioni di sistema
+description: Scopri come visualizzare i grafici di monitoraggio delle risorse e le informazioni sul server che esegue AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -10,91 +10,91 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Visualizza informazioni di sistema {#view-system-information}
+# Visualizzare le informazioni di sistema {#view-system-information}
 
-Nella scheda Sistema vengono visualizzati i grafici di monitoraggio delle risorse e le informazioni relative al server che esegue i moduli AEM. Per accedere a queste informazioni, nella console di amministrazione fare clic su Health Monitor nell&#39;angolo superiore destro della pagina. Se si eseguono moduli AEM in un ambiente cluster, le informazioni visualizzate si riferiscono al nodo selezionato dall&#39;elenco Server.
+Nella scheda Sistema vengono visualizzati i grafici di monitoraggio delle risorse e le informazioni sul server che esegue AEM Forms. Per accedere a queste informazioni, nella console di amministrazione fai clic su Health Monitor nell’angolo superiore destro della pagina. Se esegui AEM Forms in un ambiente cluster, le informazioni visualizzate si riferiscono al nodo selezionato dall’elenco Server.
 
-Per salvare le informazioni di sistema correnti come file delle proprietà, fare clic su Salva.
+Per salvare le informazioni di sistema correnti come file delle proprietà, fai clic su Salva.
 
 Nel riquadro destro della scheda Sistema vengono visualizzate rappresentazioni grafiche delle seguenti informazioni:
 
 * Elementi di lavoro e numero lavori
-* Utilizzo heap e heap confermato
-* Utilizzo non heap e non heap confermato
+* Utilizzo memoria heap e memoria heap allocata
+* Utilizzo memoria non-heap e memoria non-heap allocata
 
-È possibile trascinare il puntatore lungo la linea temporale per ottenere i valori di un particolare punto nel tempo.
+È possibile trascinare il puntatore lungo la timeline per ottenere i valori di un particolare punto nel tempo.
 
 >[!NOTE]
 >
->I dati del grafico, i valori delle informazioni sul server e l’ora di clock vengono aggiornati ogni 10 minuti. Le informazioni non vengono visualizzate in tempo reale.
+>I dati del grafico, i valori delle informazioni sul server e l’ora locale vengono aggiornati ogni 10 minuti. Le informazioni non vengono visualizzate in tempo reale.
 
 Nel riquadro sinistro della scheda Sistema vengono visualizzate le seguenti informazioni sul server o sul nodo:
 
-**Macchina virtuale:** versione di Java Virtual Machine (JVM) nel server.
+**Virtual Machine:** versione della Virtual Machine Java (JVM) sul server.
 
-**Fornitore macchina virtuale:** produttore della JVM.
+**Fornitore Virtual Machine:** produttore della JVM.
 
-**Versione macchina virtuale:** Numero versione JVM
+**Versione Virtual Machine:** numero versione JVM
 
-**Nome computer:** Nome host del server in cui sono installati i moduli AEM.
+**Nome computer:** nome host del server su cui è installato AEM Forms.
 
-**Tempo di attività:** il tempo, in ore e minuti, in cui il server è in esecuzione.
+**Tempo di attività:** il tempo, in ore e minuti, di funzionamento del server.
 
-**Compilatore JIT:** Nome del compilatore utilizzato.
+**Just-In-Time Compiler:** nome del compiler utilizzato.
 
-**Tempo di compilazione:** Tempo impiegato per la compilazione.
+**Tempo di compilazione:** tempo impiegato per la compilazione.
 
-**Numero di Live Threads:** Il numero totale di thread attualmente presenti nel sistema di moduli AEM.
+**Numero di thread attivi:** il numero totale di thread attualmente presenti nel sistema AEM Forms.
 
-**Numero massimo di Threads:** Il numero massimo di thread live mai registrati nel sistema.
+**Numero del picco di thread:** il numero maggiore di thread attivi mai registrati nel sistema.
 
-**Numero di classi caricate:** Numero di classi caricate nella JVM.
+**Numero di classi caricate:** numero di classi caricate in JVM.
 
-**Numero di classi scaricate:** Numero di classi scaricate dalla JVM.
+**Numero di classi scaricate:** numero di classi scaricate dalla JVM.
 
-**Heap minimo:** La quantità minima di heap utilizzata.
+**Memoria heap minima:** la quantità minima di memoria heap utilizzata.
 
-**Memoria heap massima:** La quantità massima di heap utilizzata.
+**Memoria heap massima:** la quantità massima di memoria heap utilizzata.
 
-**Nome sistema operativo:** Il nome del sistema operativo in esecuzione sul server AEM Forms.
+**Nome sistema operativo:** il nome del sistema operativo in esecuzione sul server AEM Forms.
 
-**Versione sistema operativo:** Numero di versione del sistema operativo in esecuzione sul server AEM Forms.
+**Versione sistema operativo:** numero di versione del sistema operativo in esecuzione sul server AEM Forms.
 
-**Arco sistema operativo:** Architettura del sistema operativo su cui è in esecuzione JVM.
+**Arco sistema operativo:** architettura del sistema operativo su cui è in esecuzione JVM.
 
-**Numero di processori:** Numero di processori nel sistema.
+**Numero di processori:** il numero di processori nel sistema.
 
-**Argomenti macchina virtuale:** Argomento utilizzato da JVM.
+**Argomenti Virtual Machine:** l’argomento utilizzato da JVM.
 
-**Percorso classe:** Percorso di classe utilizzato da JVM.
+**Percorso classe:** il percorso di classe utilizzato da JVM.
 
-**Percorso libreria:** Percorso della libreria utilizzato da JVM.
+**Percorso libreria:** il percorso della libreria utilizzato da JVM.
 
-**Percorso classe di avvio:** Percorso della classe di avvio utilizzato dalla JVM.
+**Percorso classe di avvio:** il percorso della classe di avvio utilizzato dalla JVM.
 
-**Tipo di server applicazioni:** Tipo di server applicazioni utilizzato per eseguire i moduli AEM.
+**Tipo di server applicazioni:** tipo di server applicazioni utilizzato per eseguire AEM Forms.
 
-**Versione server applicazioni:** Numero di versione del server applicazioni utilizzato per eseguire i moduli AEM.
+**Versione server applicazioni:** il numero di versione del server applicazioni utilizzato per eseguire AEM Forms.
 
-**Fornitore server applicazioni:** Produttore del server applicazioni utilizzato per eseguire i moduli AEM.
+**Fornitore server applicazioni:** produttore del server applicazioni utilizzato per eseguire AEM Forms.
 
-**Data di installazione:** Data (in formato aaaa-mm-gg) in cui sono stati installati i moduli AEM.
+**Data di installazione:** data (in formato dd-mm-yyyy) in cui è stato installato AEM Forms.
 
-**Versione moduli AEM:** versione dei moduli AEM installata.
+**Versione di AEM Forms:** versione di AEM Forms installata.
 
-**Versione patch:** AEM forma il numero di patch.
+**Versione patch:** numero patch AEM Forms.
 
-**Nome database:** Tipo di database utilizzato dai moduli AEM.
+**Nome database:** tipo di database utilizzato da AEM Forms.
 
-**Versione database:** Numero di versione del database utilizzato dai moduli AEM.
+**Versione database:** numero di versione del database utilizzato da AEM Forms.
 
-**Nome unità di database:** Il nome del driver utilizzato dalla JVM per connettersi al database.
+**Nome unità di database:** il nome del driver utilizzato da JVM per connettersi al database.
 
 **Versione driver di database:** versione del driver utilizzata dalla JVM per connettersi al database.
 

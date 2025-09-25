@@ -1,6 +1,6 @@
 ---
-title: Strategia di backup per il connettore per gli utenti di EMC Documentum&reg;
-description: Come creare una strategia di backup per Connector per gli utenti di EMC Documentum&reg;.
+title: Strategia di backup del connettore per gli utenti di EMC Documentum&reg;
+description: Vieni a scoprire come creare una strategia di backup per il connettore per gli utenti di EMC Documentum&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -10,22 +10,22 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '155'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Strategia di backup per il connettore per gli utenti di EMC Documentum® {#backup-strategy-for-connector-for-emc-documentum-users}
+# Strategia di backup del connettore per gli utenti di EMC Documentum® {#backup-strategy-for-connector-for-emc-documentum-users}
 
-Se è installato il connettore per EMC Documentum®, oltre alle istruzioni riportate in questo capitolo, la strategia di backup e ripristino deve includere il backup (o il ripristino) del computer su cui è installato il sistema ECM. Consultare la documentazione di ECM Documentum®.
+Se hai installato il connettore per EMC Documentum®, oltre alle istruzioni riportate in questo capitolo, la strategia di backup e ripristino deve includere il backup (o il ripristino) del computer su cui è installato il sistema ECM. (Consulta la documentazione di ECM Documentum®).
 
-Eseguire il backup dell’ambiente dei moduli AEM utilizzando l’archivio ECM ed eseguendo le seguenti attività:
+Esegui il backup dell’ambiente AEM Forms utilizzando l’archivio ECM e procedendo con le attività seguenti:
 
-* Eseguire il backup dei moduli AEM seguendo le istruzioni descritte in questo documento.
-* Eseguire il backup del sistema ECM Documentum® seguendo le istruzioni riportate in [Eseguire il backup di EMC Documentum® Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
+* Eseguire il backup di AEM Forms seguendo le istruzioni presenti in questo documento.
+* Eseguire il backup del sistema ECM Documentum® seguendo le istruzioni riportate in [Backup del server di gestione dei contenuti EMC Documentum®](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
 
-Ripristinare l’ambiente dei moduli AEM utilizzando l’archivio ECM ed eseguendo le seguenti attività:
+Ripristina l’ambiente AEM Forms utilizzando l’archivio ECM e procedendo con le seguenti attività:
 
-* Ripristinare il proprio sistema ECM seguendo le istruzioni in [Ripristinare EMC Documentum® Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
-* Ripristinare i moduli AEM seguendo le istruzioni descritte in questo documento.
+* Ripristinare il proprio sistema ECM seguendo le istruzioni in [Ripristino del server di gestione dei contenuti EMC Documentum®](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
+* Ripristinare AEM Forms seguendo le istruzioni presenti in questo documento.

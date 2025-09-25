@@ -1,6 +1,6 @@
 ---
-title: Normative sulla protezione dei dati e la privacy dei dati - Preparazione di Adobe Experience Manager
-description: Scopri come Adobe Experience Manager supporta le varie normative su privacy e protezione dei dati. Include il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi quando si implementa un nuovo progetto AEM.
+title: Normative sulla protezione dei dati e la privacy - Compatibilità di Adobe Experience Manager
+description: Scopri il supporto di Adobe Experience Manager per le varie normative sulla protezione dei dati e la privacy. Questo include il Regolamento generale sulla Protezione dei Dati (GDPR) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto AEM.
 contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
@@ -11,17 +11,17 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
-# Preparazione di Adobe Experience Manager per le normative su privacy e protezione dei dati {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# Compatibilità di Adobe Experience Manager per le normative sulla protezione dei dati e la privacy {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->Il contenuto di questo documento non costituisce una consulenza legale e non intende sostituirsi a una consulenza legale.
+>Il contenuto di questo documento non costituisce una consulenza legale e non intende esserne una sostituzione.
 >
 >Consulta l’ufficio legale della tua azienda per ricevere consigli in merito alle normative su privacy e protezione dei dati.
 
@@ -29,11 +29,11 @@ ht-degree: 37%
 >
 >Per ulteriori informazioni sulla risposta di Adobe ai problemi di privacy e sulle conseguenze per i clienti di Adobe, consulta [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
 
-Adobe fornisce documentazione e procedure (con API se disponibili) per l’amministratore della privacy del cliente o l’amministratore AEM per gestire le richieste di protezione dei dati e privacy dei dati. Può aiutarti a conformarti a queste normative. Le procedure documentate consentono ai clienti di eseguire le richieste normative manualmente o chiamando nelle API, se disponibili, da un portale o servizio esterno.
+Adobe fornisce documentazione e procedure (con API, se disponibili) per l’amministratore della privacy della clientela o di AEM per gestire le richieste di protezione dei dati e privacy. Può aiutarti a diventare conforme a queste normative. Le procedure documentate consentono alla clientela di eseguire le richieste normative manualmente o di effettuare chiamate API, se disponibili, da un portale o servizio esterno.
 
 >[!CAUTION]
 >
->I dettagli qui documentati sono limitati a Adobe Experience Manager.
+>I dettagli qui documentati sono limitati ad Adobe Experience Manager.
 >
 >I dati provenienti da un altro servizio Adobe on-demand, insieme a eventuali richieste di accesso a dati personali correlate, richiederanno azioni su tale servizio.
 >
@@ -41,7 +41,7 @@ Adobe fornisce documentazione e procedure (con API se disponibili) per l’ammin
 
 ## Introduzione {#introduction}
 
-Le istanze di Adobe Experience Manager e le applicazioni che vengono eseguite su di esse sono di proprietà e gestite da clienti Adobi.
+Le istanze di Adobe Experience Manager e le applicazioni che le eseguono sono di proprietà e gestite dalla clientela Adobe.
 
 Di conseguenza, le normative sulla protezione dei dati, come GDPR, CCPA e altri, sono in gran parte responsabilità dei clienti.
 
@@ -63,9 +63,9 @@ Le principali disposizioni di tali regolamenti sono le seguenti:
 
 Per Adobe Experience Manager:
 
-* Le istanze, e le applicazioni che le eseguono, sono di proprietà e gestite dal cliente.
+* Le istanze, e le applicazioni che le eseguono, sono di proprietà e gestite dalla clientela.
 
-   * Il cliente gestisce i ruoli normativi, tra cui Business Entities e Service Provider, Data Controller e Data Processor, tra gli altri.
+   * La clientela gestisce i ruoli normativi, tra cui entità aziendali e fornitori di servizi, titolari e responsabili del trattamento dati, tra gli altri.
 
    * Adobe Experience Platform Privacy Service non farà parte del flusso di lavoro per AEM, come illustrato nel diagramma seguente.
 
@@ -77,62 +77,62 @@ Per Adobe Experience Manager:
 
 * AEM non includerà alcuno strumento predefinito per supportare il flusso di lavoro delle richieste di privacy.
 
-   * L’Adobe fornisce la documentazione e le procedure per l’amministratore della privacy del cliente e l’amministratore AEM, consentendo loro di eseguire manualmente le richieste relative alle normative sulla privacy.
+   * Adobe fornisce documentazione e procedure per l’amministratore della privacy della clientela e per l’amministratore di AEM, consentendo loro di eseguire manualmente le richieste relative alle normative sulla privacy.
 
-Adobe fornisce procedure per la gestione delle richieste di accesso, cancellazione e rinuncia alla privacy relative a Adobe Experience Manager. A volte sono disponibili API che possono essere richiamate da un portale sviluppato dal cliente o da script per facilitare l’automazione.
+Adobe fornisce procedure per la gestione delle richieste di privacy relative ad accesso, eliminazione e rinuncia per Adobe Experience Manager. In alcuni casi, sono disponibili API che possono essere richiamate da un portale sviluppato dalla clientela o da script per facilitare l’automazione.
 
 Il diagramma seguente illustra l’aspetto di un flusso di lavoro per la richiesta di accesso a dati personali (illustrato con Adobe Experience Manager 6.5):
 
 ![Protezione dei dati e privacy](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager e preparazione alle normative {#aem-and-regulatory-readiness}
+## Compatibilità di Adobe Experience Manager e delle normative {#aem-and-regulatory-readiness}
 
-Consulta le sezioni seguenti per la documentazione regolamentare per le aree di prodotto dell’AEM.
+Consulta le sezioni seguenti per la documentazione sulla normativa per le aree di prodotto di AEM.
 
-## Fondazione AEM {#aem-foundation}
+## AEM Foundation {#aem-foundation}
 
 Consulta [Gestione delle richieste di protezione dei dati e privacy per AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
-## Raccolta statistiche di utilizzo aggregazione consenso AEM {#aem-opting-into-aggregate-usage-statistics-collection}
+## AEM: consenso alla raccolta di statistiche di utilizzo aggregate {#aem-opting-into-aggregate-usage-statistics-collection}
 
-Vedi [Raccolta di statistiche di utilizzo aggregate](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Consulta [raccolta di statistiche di utilizzo aggregate](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 ## AEM Sites {#aem-sites}
 
-Consulta [AEM Sites - Preparazione per la protezione dei dati e la privacy.](/help/sites-administering/gdpr-compliance-sites.md)
+Consulta [AEM Sites: compatibilità della protezione dei dati e della privacy.](/help/sites-administering/gdpr-compliance-sites.md)
 
 ## AEM Commerce {#aem-commerce}
 
-Consulta [AEM Commerce - Preparazione per la privacy e la protezione dei dati](/help/sites-administering/gdpr-compliance-commerce.md).
+Consulta [AEM Commerce: compatibilità della protezione dei dati e della privacy](/help/sites-administering/gdpr-compliance-commerce.md).
 
 ## AEM Mobile {#aem-mobile}
 
-Consulta [AEM Mobile - Preparazione per la privacy e la protezione dei dati](/help/mobile/aem-mobile-gdpr-compliance.md).
+Consulta [AEM Mobile: compatibilità della protezione dei dati e della privacy](/help/mobile/aem-mobile-gdpr-compliance.md).
 
-## Integrazione AEM con Adobe Target e Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
+## Integrazione di AEM con Adobe Target e Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Queste integrazioni Adobe Experience Manager si riferiscono ai servizi di protezione dei dati e privacy pronti (ad esempio, GDPR o CCPA). Nessun dato personale da Adobe Target o Adobe Analytics viene memorizzato nell’AEM in relazione alle integrazioni.
+Queste integrazioni di Adobe Experience Manager sono associate a servizi conformi alla protezione dei dati e alla privacy (ad esempio, GDPR). Nessun dato personale da Adobe Target o Adobe Analytics viene memorizzato in AEM in relazione alle integrazioni.
 
 Per ulteriori informazioni, consulta:
 
-* [Adobe Target - Panoramica sulla privacy](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
+* [Adobe Target - Panoramica sulla privacy](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=it)
 
 * [Flusso di lavoro sulla privacy dei dati di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=it)
 
 ## Community AEM {#aem-communities}
 
-AEM Communities conferisce alle persone interessate il diritto alla portabilità dei dati, il diritto di accesso e il diritto all&#39;oblio tramite [API pronte all&#39;uso](/help/communities/user-ugc-management-service.md). Queste API consentono l’eliminazione in blocco e l’esportazione in blocco di contenuti generati dagli utenti, nonché la disabilitazione degli account utente identificati tramite i loro ID autorizzabili. Tuttavia, l’eliminazione permanente dell’account utente può essere realizzata tramite l’eliminazione del nodo utente in CRXDE Lite, che risponde alla necessità di una facile rinuncia al sistema.
+AEM Communities conferisce alle persone interessate il diritto alla portabilità dei dati, il diritto di accesso e il diritto all’oblio tramite [API pronte all’uso](/help/communities/user-ugc-management-service.md). Queste API abilitano l’eliminazione e l’esportazione in blocco dei contenuti generati dagli utenti, nonché la disabilitazione degli account utente identificati tramite i loro ID autorizzabili. Tuttavia, l’eliminazione permanente di un account utente può essere realizzata tramite l’eliminazione del nodo utente in CRXDE Lite, soddisfacendo la necessità di una semplice rinuncia dal sistema.
 
-Inoltre, AEM Communities offre privacy by design (tutela della privacy fin dalla progettazione) grazie alla sua console di moderazione in blocco, che consente ai membri con privilegi di trovare ed eliminare i contributi e i dettagli degli utenti. La console di gestione Membri consente di limitare il limite al punto di vietare un collaboratore. Inoltre, autorizza le persone interessate a eliminare i contributi da esse creati.
+Inoltre, AEM Communities offre privacy by design grazie alla console di moderazione in blocco, che consente ai membri privilegiati di trovare ed eliminare i contributi e i dettagli degli utenti. La console di gestione dei membri consente di porre dei limiti, fino al punto di escludere un collaboratore. Inoltre, autorizza le persone interessate a eliminare i contributi che hanno creato.
 
 ## AEM Forms {#aem-forms}
 
 AEM Forms include componenti e flussi di lavoro che acquisiscono, elaborano e memorizzano dati per orchestrare i processi aziendali e completare le transazioni digitali. Componenti diversi utilizzano archivi di dati diversi e consentono l’integrazione anche con archivi di dati personalizzati. Nella documentazione seguente sono illustrate le procedure e le linee guida per l’accesso e la gestione dei dati utente per supportare i flussi di lavoro relativi alla privacy e alla protezione dei dati (ad esempio, GDPR o CCPA) per un componente.
 
-* [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
+* [Portale dei moduli](/help/forms/using/forms-portal-handling-user-data.md)
 * [Gestione della corrispondenza](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integrazione con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-* [Flussi di lavoro incentrati su Forms su OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Flussi di lavoro di Forms JEE](/help/forms/using/forms-workflow-jee-handling-user-data.md) (solo AEM Forms JEE)
-* [Document Security](/help/forms/using/document-security-handling-user-data.md) (solo AEM Forms JEE)
-* [Gestione utente](/help/forms/using/user-management-handling-user-data.md) (solo AEM Forms JEE)
+* [Flussi di lavoro incentrati sui moduli su OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
+* [Flussi di lavoro Forms JEE](/help/forms/using/forms-workflow-jee-handling-user-data.md) (solo AEM Forms JEE)
+* [Protezione dei documenti](/help/forms/using/document-security-handling-user-data.md) (solo AEM Forms JEE)
+* [Gestione utenti](/help/forms/using/user-management-handling-user-data.md) (solo AEM Forms JEE)
