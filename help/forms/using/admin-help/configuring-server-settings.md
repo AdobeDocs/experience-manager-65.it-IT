@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ---
 
-#  Configurazione delle impostazioni del server {#configuring-server-settings}
+# Configurazione delle impostazioni del server {#configuring-server-settings}
 
 La pagina Impostazioni server consente di accedere a varie impostazioni per Forms Workflow:
 
