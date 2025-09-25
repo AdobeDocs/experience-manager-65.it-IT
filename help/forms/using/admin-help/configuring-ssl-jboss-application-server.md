@@ -89,8 +89,7 @@ In questa procedura:
 
    * Cluster di server - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. 
-   * **Per il server singolo,** nel file lc_&lt;dbaname/tunkey>.xml, aggiungi quanto segue dopo la sezione &lt;security-realms>:
+1. * **Per il server singolo,** nel file lc_&lt;dbaname/tunkey>.xml, aggiungi quanto segue dopo la sezione &lt;security-realms>:
 
    ```xml
    <security-realm name="SSLRealm">
