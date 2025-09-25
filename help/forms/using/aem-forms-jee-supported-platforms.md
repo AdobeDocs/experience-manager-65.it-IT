@@ -106,8 +106,8 @@ Adobe consiglia queste configurazioni e fornisce supporto completo o limitato co
 >[!NOTE]
 >
 >Per aiutare i clienti AEM Forms a ridurre il costo di proprietà, semplificare l’architettura di distribuzione e modernizzare lo stack di sviluppo, la piattaforma aziendale Adobe Experience Manager si sta allontanando dalle implementazioni basate su server applicazioni a favore delle implementazioni autonome basate su OSGi. Adobe continua a supportare lo stack AEM Forms JEE con una matrice ridotta di componenti dell’infrastruttura.
->><br>
->>Con il rilascio della versione 6.5, i componenti dell’infrastruttura che hanno l’utilizzo più basso tra i clienti di Adobe non sono più supportati, come segue:
+>&#x200B;><br>
+>&#x200B;>Con il rilascio della versione 6.5, i componenti dell’infrastruttura che hanno l’utilizzo più basso tra i clienti di Adobe non sono più supportati, come segue:
 >
 > - Database IBM® DB2®
 > - Sistemi operativi IBM® AIX® e Sun Solaris™
