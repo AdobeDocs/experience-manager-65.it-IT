@@ -42,7 +42,7 @@ Quando crei degli utenti, puoi aggiungerli ai gruppi e assegnare loro ruoli.
 
    >[!NOTE]
    >
-   >Se riscontri problemi di accesso con l’utente, consulta [L’utente AEM Forms su JEE non riesce ad accedere ad AEM Forms lato OSGi](ttps://helpx.adobe.com/it/aem-forms/kb/AEM-users-fails-to-login.html).
+   >Se riscontri problemi di accesso con l’utente, consulta [L’utente AEM Forms su JEE non riesce ad accedere ad AEM Forms lato OSGi](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Impostazioni utente {#user-settings}
 
