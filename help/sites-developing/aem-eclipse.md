@@ -1,5 +1,5 @@
 ---
-title: Strumenti AEM Developer per Eclipse
+title: Strumenti per sviluppatori AEM per Eclipse
 description: Scopri gli strumenti per sviluppatori di Adobe Experience Manager per Eclipse.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,32 +9,32 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 172b8667b1ff0bd533a035b21c316e2e66721bf8
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
 
-# Strumenti AEM Developer per Eclipse{#aem-developer-tools-for-eclipse}
+# Strumenti per sviluppatori AEM per Eclipse{#aem-developer-tools-for-eclipse}
 
-![Motivo immagine circolare per gli strumenti per sviluppatori AEM per Eclipse.](do-not-localize/chlimage_1-9.png)
+![Motivo immagine circolare per AEM Developer Tools per Eclipse.](do-not-localize/chlimage_1-9.png)
 
 ## Panoramica {#overview}
 
-&quot;Strumenti per sviluppatori AEM&quot; è un plug-in Eclipse basato sul plug-in [Eclipse per Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) rilasciato con la Licenza Apache 2.
+&quot;AEM Developer Tools&quot; è un plug-in Eclipse basato sul plug-in [Eclipse per Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) rilasciato con la Licenza Apache 2.
 
-Offre diverse funzioni che facilitano lo sviluppo dell’AEM:
+Offre diverse funzioni che facilitano lo sviluppo di AEM:
 
-* Integrazione perfetta con le istanze AEM tramite il connettore del server Eclipse.
+* Integrazione perfetta con le istanze di AEM tramite il connettore del server Eclipse.
 * Sincronizzazione sia per i bundle di contenuti che per quelli OSGI.
 * Supporto del debug con funzionalità di hot-swapping del codice.
-* Semplice Bootstrap di progetti AEM tramite una procedura guidata specifica per la creazione di progetti.
+* Bootstrap semplice di progetti AEM tramite una procedura guidata specifica per la creazione di progetti.
 * Facile modifica delle proprietà JCR.
 
 ## Requisiti {#requirements}
 
-Prima di utilizzare gli strumenti per sviluppatori dell’AEM, effettua le seguenti operazioni:
+Prima di utilizzare gli strumenti per sviluppatori di AEM, effettua le seguenti operazioni:
 
 * Scarica e installa [Eclipse IDE per sviluppatori Java™ EE](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). Gli strumenti per sviluppatori di AEM supportano attualmente Eclipse Kepler o versioni successive
 
@@ -45,11 +45,11 @@ Prima di utilizzare gli strumenti per sviluppatori dell’AEM, effettua le segue
 >
 >In macOS, fare clic con il pulsante destro del mouse su **Eclipse.app**, quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`.
 
-## Come installare gli strumenti per sviluppatori AEM per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
+## Come installare AEM Developer Tools per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
 Dopo aver soddisfatto i [requisiti](#requirements) di cui sopra, puoi installare il plug-in come segue:
 
-1. Sfoglia il sito Web **Strumenti per sviluppatori AEM** all&#39;indirizzo `https://eclipse.adobe.com/aem/dev-tools/`.
+1. Aprire il [sito Web AEM Developer Tools](https://eclipse.adobe.com/).
 
 1. Copia il **collegamento di installazione**.
 
@@ -73,19 +73,19 @@ Dopo aver soddisfatto i [requisiti](#requirements) di cui sopra, puoi installare
 >
 >Vedi [Come utilizzare un bundle in Eclipse quando è stato scaricato da AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
-## La prospettiva dell&#39;AEM {#the-aem-perspective}
+## La prospettiva di AEM {#the-aem-perspective}
 
-Gli strumenti di sviluppo AEM per Eclipse vengono forniti con una prospettiva che offre il pieno controllo sui tuoi progetti e istanze AEM.
+Gli strumenti di sviluppo AEM per Eclipse vengono forniti con una prospettiva che ti offre il controllo completo sui tuoi progetti e istanze di AEM.
 
 ![chlimage_1-2](assets/chlimage_1-2a.jpeg)
 
 ## Esempio di progetto con più moduli {#sample-multi-module-project}
 
-Gli &quot;Strumenti per sviluppatori AEM&quot; includono un esempio di progetto con più moduli che ti consente di imparare rapidamente a utilizzare la configurazione di un progetto in Eclipse. Funge anche da guida alle best practice per diverse funzioni dell’AEM. [Ulteriori informazioni su Archetipo progetto](https://github.com/adobe/aem-project-archetype).
+Gli &quot;Strumenti per sviluppatori di AEM&quot; includono un esempio di progetto con più moduli che ti consente di imparare rapidamente a utilizzare la configurazione di un progetto in Eclipse. Funge anche da guida alle best practice per diverse funzioni di AEM. [Ulteriori informazioni su Archetipo progetto](https://github.com/adobe/aem-project-archetype).
 
 La procedura seguente illustra come creare il progetto di esempio:
 
-1. Nel menu **File** > **Nuovo** > **Progetto**, individua la sezione **AEM** e seleziona **Progetto con più moduli AEM di esempio**.
+1. Nel menu **File** > **Nuovo** > **Progetto**, individua la sezione **AEM** e seleziona **Progetto con più moduli di esempio AEM**.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -121,7 +121,7 @@ La procedura seguente illustra come creare il progetto di esempio:
    >
    >In una nuova installazione (nello specifico, quando le dipendenze Maven non sono mai state scaricate) puoi creare il progetto con errori. In questo caso, seguire la procedura descritta in [Risoluzione della definizione del progetto non valida](#resolving-invalid-project-definition).
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### Risoluzione di una definizione di progetto non valida {#resolving-invalid-project-definition}
 
@@ -134,9 +134,9 @@ Per risolvere le dipendenze non valide e la definizione del progetto procedere c
 
 ### Abilitazione del completamento automatico della libreria di tag nei file JSP {#enabling-tag-library-autocompletion-in-jsp-files}
 
-Il completamento automatico della libreria di tag funziona in modo predefinito, dato che al progetto vengono aggiunte le dipendenze appropriate. Esiste un problema noto quando si utilizza il file JAR Uber dell’AEM, che non include i file tld e TagExtraInfo necessari.
+Il completamento automatico della libreria di tag funziona in modo predefinito, dato che al progetto vengono aggiunte le dipendenze appropriate. Esiste un problema noto quando si utilizza il file JAR Uber di AEM, che non include i file tld e TagExtraInfo necessari.
 
-Per ovviare a questo problema, accertati che l’artefatto org.apache.sling.scripting.jsp.taglib si trovi nel percorso di classe prima del file JAR Uber dell’AEM. Per i progetti Maven, inserisci la seguente dipendenza nel file pom.xml prima del file JAR Uber.
+Per ovviare a questo problema, accertati che l’artefatto org.apache.sling.scripting.jsp.taglib si trovi nel percorso di classe prima del file JAR di AEM Uber. Per i progetti Maven, inserisci la seguente dipendenza nel file pom.xml prima del file JAR Uber.
 
 ```xml
 <dependency>
@@ -146,13 +146,13 @@ Per ovviare a questo problema, accertati che l’artefatto org.apache.sling.scri
 </dependency>
 ```
 
-Assicurati di aggiungere la versione corretta per la distribuzione dell’AEM.
+Assicurati di aggiungere la versione corretta per la distribuzione di AEM.
 
 ## Ulteriori informazioni {#more-information}
 
 Il sito web ufficiale Apache Sling IDE tooling per Eclipse fornisce informazioni utili:
 
-* La [**Guida utente di Apache Sling IDE tooling per Eclipse**](https://sling.apache.org/documentation/development/ide-tooling.html), questa documentazione ti guida attraverso i concetti generali, l&#39;integrazione del server e le funzionalità di distribuzione supportate dagli strumenti di sviluppo AEM.
+* La [**Guida utente di Apache Sling IDE tooling per Eclipse**](https://sling.apache.org/documentation/development/ide-tooling.html), questa documentazione ti guida attraverso i concetti generali, l&#39;integrazione del server e le funzionalità di distribuzione supportate dagli strumenti di sviluppo di AEM.
 * La [sezione Risoluzione dei problemi](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * [Elenco dei problemi noti](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
