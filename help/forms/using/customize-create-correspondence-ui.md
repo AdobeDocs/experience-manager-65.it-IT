@@ -32,7 +32,7 @@ Icona personalizzata nell’interfaccia utente per la creazione di corrispondenz
 
 Per impostare un&#39;immagine del logo a scelta, effettuare le seguenti operazioni:
 
-1. Creare la struttura di cartelle [ appropriata in CRX](#creatingfolderstructure).
+1. Creare la struttura di cartelle [&#x200B; appropriata in CRX](#creatingfolderstructure).
 1. [Carica il nuovo file del logo](#uploadlogo) nella cartella creata in CRX.
 
 1. [Configura CSS](#createcss) su CRX per fare riferimento al nuovo logo.

@@ -27,7 +27,7 @@ Per configurare i registri lato server, effettua le seguenti operazioni:
 
 1. Vai a `https://'[server]:[port]'/system/console/configMgr`. Individua e apri l&#39;opzione *Configurazione logger di accesso Sling*. Viene visualizzata una finestra di dialogo:
 
-   Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![ dell&#39;interfaccia](assets/logconfig.png)
+   Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![&#x200B; dell&#39;interfaccia](assets/logconfig.png)
 
    Opzione di configurazione del logger di registrazione di accesso Sling
 

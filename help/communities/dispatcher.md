@@ -24,7 +24,7 @@ Per AEM Communities, è necessario configurare Dispatcher per garantire il corre
 
 Per scoprire cosa è necessario per la distribuzione e la progettazione del sito specifiche
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support)
 
 Consulta anche la [documentazione principale di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it).
 

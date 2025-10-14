@@ -172,7 +172,7 @@ Nell&#39;esempio di codice Java seguente viene creato un documento PDF denominat
 
 >[!NOTE]
 >
->Prima di eseguire questo avvio rapido, accertarsi di creare un&#39;applicazione AEM Forms denominata Applications/FormsApplication. Crea una cartella all’interno dell’applicazione denominata FormsFolder e inserisci il file XDP nella cartella. Per ulteriori informazioni, vedere [Generare un documento PDF ](/help/forms/developing/creating-document-output-streams.md)*.*
+>Prima di eseguire questo avvio rapido, accertarsi di creare un&#39;applicazione AEM Forms denominata Applications/FormsApplication. Crea una cartella all’interno dell’applicazione denominata FormsFolder e inserisci il file XDP nella cartella. Per ulteriori informazioni, vedere [Generare un documento PDF &#x200B;](/help/forms/developing/creating-document-output-streams.md)*.*
 
 ```java
  /*

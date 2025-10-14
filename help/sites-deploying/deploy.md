@@ -140,7 +140,7 @@ Mentre le istanze di produzione vengono eseguite su computer dedicati che eseguo
 
 A scopo di familiarizzazione e per lo sviluppo su AEM, è comune utilizzare un’istanza installata sul computer locale con Apple OS X o versioni desktop di Microsoft® Windows o Linux®.
 
-Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; **, **Firefox &#x200B;** 47+, **Safari** 8+) sia sui sistemi operativi desktop che su quelli tablet. Per informazioni dettagliate, consulta [Piattaforme client supportate](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; &#x200B;**, **Firefox &#x200B;** 47+, **Safari** 8+) sia sui sistemi operativi desktop che su quelli tablet. Per informazioni dettagliate, consulta [Piattaforme client supportate](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Recupero del software {#getting-the-software}
 

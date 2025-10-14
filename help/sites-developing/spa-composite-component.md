@@ -137,7 +137,7 @@ In questo caso, il componente scheda è già stato creato nel progetto AEM conte
 
 Puoi quindi aggiungerlo all’applicazione a pagina singola e recuperarne il contenuto.
 
-1. Crea un componente corrispondente nell’applicazione a pagina singola per questo. Assicurati che i componenti secondari siano mappati sui corrispondenti tipi di risorse AEM all’interno del progetto SPA. In questo esempio vengono utilizzati gli stessi componenti `AEMText` e `AEMImage` descritti [ nel caso precedente.](#component-does-not-exist)
+1. Crea un componente corrispondente nell’applicazione a pagina singola per questo. Assicurati che i componenti secondari siano mappati sui corrispondenti tipi di risorse AEM all’interno del progetto SPA. In questo esempio vengono utilizzati gli stessi componenti `AEMText` e `AEMImage` descritti [&#x200B; nel caso precedente.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -163,7 +163,7 @@ Puoi quindi aggiungerlo all’applicazione a pagina singola e recuperarne il con
     itemPath='root/responsivegrid' />
    ```
 
-1. Aggiungi il componente `wknd-spa/components/imagecard` creato ai componenti consentiti per il componente contenitore [ nel modello di pagina.](/help/sites-authoring/templates.md)
+1. Aggiungi il componente `wknd-spa/components/imagecard` creato ai componenti consentiti per il componente contenitore [&#x200B; nel modello di pagina.](/help/sites-authoring/templates.md)
 
 Ora il componente `imagecard` può essere aggiunto direttamente al contenitore nell&#39;editor di AEM.
 
@@ -181,4 +181,4 @@ Se il contenuto esiste in AEM, può essere incluso direttamente nell’applicazi
 
 ![Percorso composito nella struttura del nodo](assets/composite-path.png)
 
-Il componente `AEMCard` corrisponde al componente definito [ nel caso d&#39;uso precedente.](#content-does-not-exist) Qui il contenuto definito nella posizione precedente nel progetto AEM è incluso nell&#39;applicazione a pagina singola.
+Il componente `AEMCard` corrisponde al componente definito [&#x200B; nel caso d&#39;uso precedente.](#content-does-not-exist) Qui il contenuto definito nella posizione precedente nel progetto AEM è incluso nell&#39;applicazione a pagina singola.

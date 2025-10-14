@@ -236,7 +236,7 @@ Ogni tipo di report richiede un componente contenitore derivato da `/libs/cq/rep
 Questo componente funge da contenitore per il rapporto nel suo complesso e fornisce informazioni per:
 
 * La [definizione query](#query-definition).
-* Finestra di dialogo [ (facoltativo)](#configuration-dialog) per la configurazione del report.
+* Finestra di dialogo [&#x200B; (facoltativo)](#configuration-dialog) per la configurazione del report.
 * Qualsiasi [grafico](#chart-definitions) integrato con il report.
 
 ```

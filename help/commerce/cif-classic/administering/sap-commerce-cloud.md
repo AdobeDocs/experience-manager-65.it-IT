@@ -25,7 +25,7 @@ Dopo l’installazione è possibile configurare l’istanza:
 1. [Configurare gli attributi del prodotto da caricare](#configure-the-product-attributes-to-load).
 1. [Importazione dei dati di prodotto](#importing-the-product-data).
 1. [Configura Importazione catalogo](#configure-the-catalog-importer).
-1. Utilizza l&#39;importazione [ per importare il catalogo](#catalog-import) in una posizione specifica in AEM.
+1. Utilizza l&#39;importazione [&#x200B; per importare il catalogo](#catalog-import) in una posizione specifica in AEM.
 
 ## Configurare la ricerca di Geometrixx Outdoors con facet {#configure-the-facetted-search-for-geometrixx-outdoors}
 

@@ -16,7 +16,7 @@ ht-degree: 39%
 
 Le guide introduttive di Headless definiscono un semplice percorso per la creazione, la gestione e la distribuzione di esperienze tramite Adobe Experience Manager (AEM) 6.5 in cinque passaggi per gli utenti che hanno già familiarità con la tecnologia AEM e headless. Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
 
-1. [Creazione di una configurazione ](create-configuration.md)
+1. [Creazione di una configurazione &#x200B;](create-configuration.md)
 1. [Creazione di un modello di frammento di contenuto](create-content-model.md)
 1. [Creazione di una cartella di risorse](create-assets-folder.md)
 1. [Creazione di un frammento di contenuto](create-content-fragment.md)

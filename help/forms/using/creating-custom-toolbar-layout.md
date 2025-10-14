@@ -30,7 +30,7 @@ Layout di esempio della barra degli strumenti
 
 I moduli adattivi forniscono una serie di layout predefiniti:
 
-![Layout della barra degli strumenti disponibili: ](assets/toolbar1.png)
+![Layout della barra degli strumenti disponibili: &#x200B;](assets/toolbar1.png)
 
 Layout della barra degli strumenti disponibili
 

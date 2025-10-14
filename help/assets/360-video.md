@@ -121,7 +121,7 @@ Consulta [Aggiungere Dynamic Medie Assets alle pagine](/help/assets/adding-dynam
    * Trascinare il puntatore del mouse sul video per modificare l&#39;angolo di visualizzazione della scena statica.
    * Per iniziare la riproduzione, seleziona il pulsante **[!UICONTROL Riproduci]** del video. Durante la riproduzione del video, trascinare il puntatore del mouse sul video per modificare l&#39;angolo di visualizzazione.
 
-   ![Schermata della stazione spaziale internazionale che galleggia nello spazio con la terra e il sole sullo sfondo ](assets/6_5_360video-preview-video360-social.png)*Schermata di un video a 360°.*
+   ![Schermata della stazione spaziale internazionale che galleggia nello spazio con la terra e il sole sullo sfondo &#x200B;](assets/6_5_360video-preview-video360-social.png)*Schermata di un video a 360°.*
 
    * Dall&#39;elenco Visualizzatori, selezionare **[!UICONTROL Video360VR]**.
 

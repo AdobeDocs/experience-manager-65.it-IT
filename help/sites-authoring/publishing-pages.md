@@ -87,8 +87,8 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 Nella console Sites sono disponibili due opzioni per la pubblicazione:
 
-* [Pubblicazione rapida ](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Gestisci pubblicazione ](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Pubblicazione rapida &#x200B;](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Gestisci pubblicazione &#x200B;](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Pubblicazione rapida  {#quick-publish}
 

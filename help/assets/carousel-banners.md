@@ -39,7 +39,7 @@ In questo esempio, un utente ha toccato o fatto clic su una mappa immagine e ha 
 
 ## Guarda come vengono creati i banner a carosello {#watch-how-carousel-banners-are-created}
 
-Riproduci una procedura dettagliata su [come vengono creati i banner a carosello](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minuti e 33 secondi). Scopri anche come visualizzare in anteprima, modificare e distribuire banner carosello.
+Riproduci una procedura dettagliata su [come vengono creati i banner a carosello](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)(10 minuti e 33 secondi). Scopri anche come visualizzare in anteprima, modificare e distribuire banner carosello.
 
 >[!NOTE]
 >
@@ -144,10 +144,10 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
    <td>Singolo SKU, trovato nella stringa di query.</td>
    <td><p>Gli URL registrati di Quickview includono:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>L'unica parte variabile nell'URL è il valore del parametro della stringa di query <code>productId=</code> ed è chiaramente un valore SKU. Pertanto, i punti attivi o le mappe immagine richiedono solo campi SKU compilati con valori come <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -163,9 +163,9 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
    <td>SKU e ID categoria nella stringa query.</td>
    <td><p>Gli URL registrati di Quickview includono:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>In questo caso, l’URL contiene due parti diverse. Lo SKU è archiviato nel parametro <code>prodId</code> e l'ID categoria nel parametro <code>category=</code>.</p> <p>Di conseguenza, le definizioni del punto attivo/mappa immagine sono coppie. ovvero un valore SKU e una variabile aggiuntiva denominata <code>categoryId</code>. Le coppie risultanti sono le seguenti:</p>
     <ul>
      <li><p>Lo SKU è <strong><code>305466</code></strong> e <code>categoryId</code> è <code>1100004</code>.</p> </li>

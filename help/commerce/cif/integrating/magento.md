@@ -25,7 +25,7 @@ L’Experience Manager e Adobe Commerce sono integrati direttamente tramite la C
 
 L’architettura generale è la seguente:
 
-![Panoramica dell’architettura CIF ](../assets/AEM_Magento_Architecture.png)
+![Panoramica dell’architettura CIF &#x200B;](../assets/AEM_Magento_Architecture.png)
 
 All’interno dell’CIF è disponibile il supporto di modelli di comunicazione lato server e lato client.
 Le chiamate API lato server vengono implementate utilizzando il [client GraphQL](https://github.com/adobe/commerce-cif-graphql-client) integrato e generico in combinazione con un [set di modelli di dati generati](https://github.com/adobe/commerce-cif-magento-graphql) per lo schema commerce GraphQL. Inoltre, è possibile utilizzare qualsiasi query GraphQL o mutazione in formato GQL.
@@ -42,6 +42,6 @@ La logica di business e la comunicazione back-end con Adobe Commerce per i compo
 
 >[!TIP]
 >
->La pagina [Personalizzazione dei componenti core CIF di AEM ](../customizing/customize-cif-components.md) offre un esempio dettagliato e best practice per personalizzare i componenti core CIF.
+>La pagina [Personalizzazione dei componenti core CIF di AEM &#x200B;](../customizing/customize-cif-components.md) offre un esempio dettagliato e best practice per personalizzare i componenti core CIF.
 
 All’interno dei progetti, i componenti core CIF dell’AEM e i componenti di progetto personalizzati possono facilmente recuperare il client configurato per un archivio Adobe Commerce associato a una pagina AEM tramite la configurazione Sling Context-Aware.

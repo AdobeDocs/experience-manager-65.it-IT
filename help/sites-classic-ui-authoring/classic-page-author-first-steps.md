@@ -53,7 +53,7 @@ Se la tua istanza ha già pagine esistenti o hai creato una nuova pagina da solo
 * [Tagliare, copiare e incollare un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Utilizzo della modalità Anteprima](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (per vedere come apparirà quando verrà pubblicato)
-* [Blocco di una pagina  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Blocco di una pagina  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Sblocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Pubblicazione di una pagina {#publishing-a-page}

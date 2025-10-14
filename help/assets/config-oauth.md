@@ -27,7 +27,7 @@ Per la configurazione dei servizi OAuth per un nuovo utente, consulta [configura
 
 >[!NOTE]
 >
->Se necessario, puoi inviare un ticket di supporto dopo il [processo di supporto](https://experienceleague.adobe.com/it?lang=it&amp;support-tab=home#support).
+>Se necessario, puoi inviare un ticket di supporto dopo il [processo di supporto](https://experienceleague.adobe.com/it?lang=it&support-tab=home#support).
 
 ## Configurazione OAuth per gli utenti AMS esistenti {#oauth-config-new-ams-users}
 
@@ -44,7 +44,7 @@ Una configurazione OAuth richiede i seguenti prerequisiti:
 
 ### Configurazione OAuth per gli utenti AMS esistenti e On-Prem {#steps-config-oauth-onprem}
 
-I seguenti passaggi possono essere eseguiti dall&#39;amministratore di sistema in **CRXDE**. Il cliente AMS può contattare il rappresentante di Adobe o inviare un ticket di supporto dopo la [procedura di supporto](https://experienceleague.adobe.com/it?lang=it&amp;support-tab=home#support).
+I seguenti passaggi possono essere eseguiti dall&#39;amministratore di sistema in **CRXDE**. Il cliente AMS può contattare il rappresentante di Adobe o inviare un ticket di supporto dopo la [procedura di supporto](https://experienceleague.adobe.com/it?lang=it&support-tab=home#support).
 
 1. Aggiungi o aggiorna le seguenti proprietà in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 

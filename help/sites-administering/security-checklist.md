@@ -49,7 +49,7 @@ Assicurati di aver installato gli [aggiornamenti rapidi per la sicurezza forniti
 
 ### Modificare le password predefinite per gli account amministratore di AEM e OSGi Console {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-L&#39;Adobe consiglia dopo l&#39;installazione di modificare la password per gli account [**AEM** `admin` ](#changing-the-aem-admin-password) con privilegi (su tutte le istanze).
+L&#39;Adobe consiglia dopo l&#39;installazione di modificare la password per gli account [**AEM** `admin` &#x200B;](#changing-the-aem-admin-password) con privilegi (su tutte le istanze).
 
 Tali account includono:
 

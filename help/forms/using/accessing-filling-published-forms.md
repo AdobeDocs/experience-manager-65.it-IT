@@ -32,7 +32,7 @@ Passare alla pagina pubblicata di Forms Portal. Per ulteriori informazioni sulla
 
 Il componente Ricerca ed elenco di Forms Portal visualizza i moduli disponibili nell’istanza Publish del server AEM. Questo elenco include tutti i moduli o i moduli definiti nel filtro al momento dell&#39;authoring della pagina Forms Portal. Una pagina di Forms Portal ha un aspetto simile a quello mostrato nell’immagine seguente:
 
-![Esempio di pagina del portale dei moduli ](assets/forms-portal-page.png)
+![Esempio di pagina del portale dei moduli &#x200B;](assets/forms-portal-page.png)
 
 Esempio di pagina del portale Forms
 

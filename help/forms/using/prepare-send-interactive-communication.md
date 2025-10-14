@@ -146,7 +146,7 @@ L’interfaccia utente dell’agente supporta 210 caratteri speciali. L&#39;ammi
 
 ### Frammenti di documenti {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **Frecce su/giù**: Frecce per spostare i frammenti di documento verso l&#39;alto o verso il basso nella comunicazione interattiva.
 * **Elimina**: se consentito, elimina il frammento di documento dalla comunicazione interattiva.

@@ -69,7 +69,7 @@ Puoi sviluppare script personalizzati per personalizzare le pagine visualizzate 
 
 Gli errori HTTP 500 sono causati da eccezioni sul lato server.
 
-* **[Errore interno del server ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+* **[Errore interno del server &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 Il server ha rilevato una condizione imprevista che ha impedito il completamento della richiesta.
 
 Quando l’elaborazione delle richieste genera un’eccezione, il framework Sling Apache (su cui si basa l’AEM):

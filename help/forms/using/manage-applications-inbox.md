@@ -80,7 +80,7 @@ La vista dettagliata delle attività comprende le sezioni riportate di seguito.
 
 #### Dettagli attività {#task-details}
 
-Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività ](/help/sites-developing/workflows-step-ref.md) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
+Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività &#x200B;](/help/sites-developing/workflows-step-ref.md) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
 
 #### Modulo {#form}
 

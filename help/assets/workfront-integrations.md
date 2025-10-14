@@ -22,7 +22,7 @@ ht-degree: 9%
 
 [!DNL Adobe Workfront] è un&#39;applicazione per la gestione dell&#39;intero ciclo di vita del lavoro in un&#39;unica posizione. L&#39;integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di velocizzare le attività relative ai contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto della gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini richiesti.
 
-[!DNL Workfront for Experience Manager enhanced connector] abilita processi aziendali avanzati con flussi di lavoro end-to-end e fornisce esperienze client end-to-end personalizzate e archiviazione centrale. Adobe offre un connettore standard e un connettore avanzato per integrare le due soluzioni. Vedi le funzionalità supportate di seguito per un confronto e scopri [le novità di [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+[!DNL Workfront for Experience Manager enhanced connector] abilita processi aziendali avanzati con flussi di lavoro end-to-end e fornisce esperienze client end-to-end personalizzate e archiviazione centrale. Adobe offre un connettore standard e un connettore avanzato per integrare le due soluzioni. Vedi le funzionalità supportate di seguito per un confronto e scopri [le novità di [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] consente all&#39;organizzazione di:
 
@@ -32,7 +32,7 @@ ht-degree: 9%
 * Imposta gli stati degli oggetti di Workfront in base a condizioni configurabili utilizzando flussi di lavoro di Experience Manager.
 * Risorse Publish per l’ambiente di pubblicazione Experience Manager o Brand Portal.
 
-Consulta Supporto piattaforma e [prerequisiti per il connettore avanzato](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Consulta Supporto piattaforma e [prerequisiti per il connettore avanzato](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >

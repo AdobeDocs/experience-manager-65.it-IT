@@ -20,7 +20,7 @@ L’AEM fornisce un framework di strumenti per la creazione e modifica di conten
 
 ## Modalità di targeting {#targeting-mode}
 
-[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. ](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
+[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
 
 ## Attività {#activities}
 

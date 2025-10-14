@@ -677,7 +677,7 @@ Per risolvere il problema, assicurarsi di eseguire prima l&#39;installazione con
 
 ### Lunghezza nome pagina {#page-name-length}
 
-Se AEM è in esecuzione in una distribuzione di Gestione persistenza MongoMK, i nomi di pagina [ sono limitati a 150 caratteri.](/help/sites-authoring/managing-pages.md)
+Se AEM è in esecuzione in una distribuzione di Gestione persistenza MongoMK, i nomi di pagina [&#x200B; sono limitati a 150 caratteri.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >

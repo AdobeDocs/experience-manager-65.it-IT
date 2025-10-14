@@ -79,7 +79,7 @@ Vengono visualizzate le seguenti informazioni:
 * **Destinatario che inoltra**: la pagina di contenuto che contiene il collegamento esterno
    * Viene popolato solo [se configurato.](#configuring)
 * **Ultimo controllo** - L&#39;ultima volta che Verifica collegamenti ha convalidato il collegamento esterno
-   * La frequenza con cui vengono controllati i collegamenti [ è configurabile.](#configuring)
+   * La frequenza con cui vengono controllati i collegamenti [&#x200B; è configurabile.](#configuring)
 * **Ultimo stato** - L&#39;ultimo codice di stato del HTML è stato restituito quando il collegamento selezionato ha controllato l&#39;ultima volta il collegamento esterno
 * **Ultima disponibilità** - Ora dall&#39;ultima disponibilità del collegamento per Verifica collegamenti
 * **Ultimo accesso** - ora dall&#39;ultimo accesso alla pagina con il collegamento esterno nell&#39;interfaccia di creazione

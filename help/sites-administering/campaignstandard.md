@@ -31,13 +31,13 @@ Questa integrazione consente di utilizzare AEM e Adobe Campaign Standard in modo
 
 La configurazione dell’integrazione tra AEM e Adobe Campaign Standard richiede diversi passaggi in entrambe le soluzioni.
 
-1. [Configurare ](#aemserver-user)
-1. [Verificare la ](#resource-type-filter)
+1. [Configurare &#x200B;](#aemserver-user)
+1. [Verificare la &#x200B;](#resource-type-filter)
 1. [Creare un modello di consegna e-mail specifico per AEM in Campaign](#aem-email-delivery-template)
 1. [Configurare l’integrazione di Campaign in AEM](#campaign-integration)
 1. [Configurare la replica nell’istanza Publish dell’AEM](#replication)
 1. [Configurare AEM Externalizer](#externalizer)
-1. [Configurare ](#campaign-remote-user)
+1. [Configurare &#x200B;](#campaign-remote-user)
 1. [Configurare l’account esterno dell’AEM in Campaign](#acc-external-user)
 
 Questo documento illustra in dettaglio ciascuno di questi passaggi.
@@ -233,7 +233,7 @@ Quando [hai creato un modello di consegna e-mail specifico per AEM](#aem-email-d
 1. Nella sezione **Connessione**, definisci i campi seguenti:
 
    1. Server: URL del server di authoring AEM. Non deve terminare con una barra.
-   1. Account: questo è l&#39;utente `campaign-remote` [ configurato in precedenza in AEM.](#campaign-remote-user)
+   1. Account: questo è l&#39;utente `campaign-remote` [&#x200B; configurato in precedenza in AEM.](#campaign-remote-user)
    1. Password: questa è la password per l&#39;utente `campaign-remote` configurato in precedenza in AEM.[&#128279;](#campaign-remote-user)
 
    ![Modifica dell&#39;utente aemInstance](assets/acs-external-acount-editor.png)

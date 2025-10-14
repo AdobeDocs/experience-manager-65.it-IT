@@ -24,7 +24,7 @@ Affinché la trascodifica venga eseguita correttamente, l&#39;amministratore ins
 
 >[!CAUTION]
 >
->Questo componente di base è stato dichiarato obsoleto. L&#39;Adobe consiglia di utilizzare il [Componente core Incorpora ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=it).
+>Questo componente di base è stato dichiarato obsoleto. L&#39;Adobe consiglia di utilizzare il [Componente core Incorpora &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=it).
 
 >[!CAUTION]
 >

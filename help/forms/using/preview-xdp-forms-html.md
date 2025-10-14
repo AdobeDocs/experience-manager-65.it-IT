@@ -87,7 +87,7 @@ La [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
    >
    >Verifica che il server AEM Forms sia in esecuzione. L&#39;anteprima HTML si connette al server CRX per *generare* un&#39;anteprima.
 
-   ![Opzioni AEM Forms Designer ](assets/server_options.png)
+   ![Opzioni AEM Forms Designer &#x200B;](assets/server_options.png)
 
    Opzioni AEM Forms Designer
 

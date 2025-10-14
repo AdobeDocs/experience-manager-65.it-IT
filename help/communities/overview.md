@@ -214,7 +214,7 @@ Il Demo Machine per AEM richiede una licenza AEM valida.
 
 >[!NOTE]
 >
->Visualizza un [video introduttivo](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) sul dispositivo dimostrativo AEM (13:26).
+>Visualizza un [video introduttivo](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) sul dispositivo dimostrativo AEM (13:26).
 
 ## Documentazione di AEM Communities {#aem-communities-documentation}
 

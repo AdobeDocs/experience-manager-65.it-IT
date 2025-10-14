@@ -54,7 +54,7 @@ Per creare una configurazione ExactTarget in Cloud Service:
 
    ExactTarget configurato. Puoi modificare la configurazione facendo clic su **Modifica**. È possibile passare a ExactTarget facendo clic su **Vai a ExactTarget**.
 
-1. AEM fornisce ora una funzione di estensione dei dati. Puoi importare colonne di estensione dati ExactTarget. Per configurarlo, fai clic sul segno &quot;+&quot; accanto alla configurazione ExactTarget creata correttamente. Puoi selezionare una qualsiasi delle estensioni di dati esistenti dall’elenco a discesa. Per ulteriori informazioni su come configurare le estensioni dati, consulta la [documentazione di ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
+1. AEM fornisce ora una funzione di estensione dei dati. Puoi importare colonne di estensione dati ExactTarget. Per configurarlo, fai clic sul segno &quot;+&quot; accanto alla configurazione ExactTarget creata correttamente. Puoi selezionare una qualsiasi delle estensioni di dati esistenti dall’elenco a discesa. Per ulteriori informazioni su come configurare le estensioni dati, consulta la [documentazione di ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5).
 
    Le colonne di estensione dei dati importate possono essere utilizzate in seguito tramite il componente **Text e Personalization**.
 

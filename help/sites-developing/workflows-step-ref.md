@@ -269,7 +269,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Utente/Gruppo](#step-properties-user-group-tab)
 * **Finestra di dialogo**
 
-   * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [ creata](#dialog-participant-step-creating-a-dialog).
+   * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [&#x200B; creata](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante finestra di dialogo - Creazione di una finestra di dialogo {#dialog-participant-step-creating-a-dialog}
 
@@ -393,7 +393,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 
 * **Finestra di dialogo**
 
-   * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [ creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
+   * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [&#x200B; creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante dinamico: sviluppo del selettore partecipanti {#dynamic-participant-step-developing-the-participant-chooser}
 

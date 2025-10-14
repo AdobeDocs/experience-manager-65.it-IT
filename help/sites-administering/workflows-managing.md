@@ -80,7 +80,7 @@ Se il modello di flusso di lavoro è memorizzato in `/var/workflow/models`, è p
 
 ### Crea una sottocartella in /var/workflow/models e applica a essa l’ACL {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Il tuo team di sviluppo [ può creare i flussi di lavoro in una sottocartella](/help/sites-developing/workflows-models.md#creating-a-new-workflow) di
+Il tuo team di sviluppo [&#x200B; può creare i flussi di lavoro in una sottocartella](/help/sites-developing/workflows-models.md#creating-a-new-workflow) di
 
 `/var/workflow/models`
 

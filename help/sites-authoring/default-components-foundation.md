@@ -914,7 +914,7 @@ L&#39;esempio seguente mostra un componente **Title** visualizzato; la progettaz
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. L&#39;Adobe consiglia di utilizzare il [Componente core Incorpora ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=it).
+>Questo componente di base è obsoleto. L&#39;Adobe consiglia di utilizzare il [Componente core Incorpora &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=it).
 
 >[!CAUTION]
 >

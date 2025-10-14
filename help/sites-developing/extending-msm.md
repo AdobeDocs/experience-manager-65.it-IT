@@ -652,7 +652,7 @@ Per modificare le lingue:
 1. Fare clic su **Strumenti**, **Operazioni** e quindi su **Console Web**. Da questa console fare clic su **OSGi**, quindi su **Configurazione**.
 1. Individua e fai clic su **Day CQ WCM Language Manager** e modifica il valore di **Language List** in `/apps/wcm/core/resources/languages`, quindi fai clic su **Save**.
 
-   ![ giorno CQ WCM Language Manager](assets/chlimage_1-78.png)
+   ![&#x200B; giorno CQ WCM Language Manager](assets/chlimage_1-78.png)
 
 ## Configurazione dei blocchi MSM nelle proprietà della pagina (interfaccia touch) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 

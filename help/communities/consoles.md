@@ -26,7 +26,7 @@ Le console di AEM Communities, disponibili nell’ambiente di authoring dal pann
 * Gestione di [membri della community](members.md)
 * [Moderazione](moderate-ugc.md) del contenuto generato dall&#39;utente (UGC)
 * Crea [distintivi personalizzati](badges.md)
-* Configurazione dell&#39;archiviazione predefinita [ per UGC](srp-config.md)
+* Configurazione dell&#39;archiviazione predefinita [&#x200B; per UGC](srp-config.md)
 
 Quando l&#39;archiviazione [UGC](working-with-srp.md) è configurata come archivio comune condiviso dagli ambienti Author e Publish, la [console di moderazione](moderation.md), disponibile negli ambienti Author e Publish, funziona su un&#39;istanza solitaria di UGC.
 

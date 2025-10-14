@@ -642,7 +642,7 @@ I prerequisiti per la creazione di un&#39;interfaccia utente separata per la vis
    * **descrizione**- Specifica la descrizione di una riga del report. Puoi lasciare vuoto il campo della descrizione.
    * **icona**- Specifica l&#39;immagine da rappresentare graficamente il report. Puoi lasciare vuoto il campo dell’icona.
 
-   ![Proprietà del nodo ](assets/node_properties_new.png)
+   ![Proprietà del nodo &#x200B;](assets/node_properties_new.png)
 
    Proprietà del nodo
 

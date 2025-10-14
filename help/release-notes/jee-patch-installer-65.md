@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->[Contattare il supporto tecnico](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support) per ulteriori informazioni o per ottenere la patch.
+>[Contattare il supporto tecnico](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support) per ulteriori informazioni o per ottenere la patch.
 
 ## Informazioni sul programma di installazione delle patch {#about-the-patch-installer}
 
@@ -97,4 +97,4 @@ Se l’autenticazione SAML è configurata e si verificano problemi con metadati 
 * Document Security
 * JEE per Foundation
 
-[Contatta il supporto](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support)
+[Contatta il supporto](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support)

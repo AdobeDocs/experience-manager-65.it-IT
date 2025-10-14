@@ -31,7 +31,7 @@ Questa impostazione imposta l’interfaccia utente predefinita per la modifica d
 * [Passaggio all&#39;interfaccia classica per la sessione corrente](#switching-to-classic-ui-for-the-current-session)
 Passa all&#39;interfaccia classica per la sessione corrente.
 
-* Per l&#39;authoring di [ pagine, il sistema effettua alcune sostituzioni in relazione all&#39;interfaccia utente](#ui-overrides-for-the-editor).
+* Per l&#39;authoring di [&#x200B; pagine, il sistema effettua alcune sostituzioni in relazione all&#39;interfaccia utente](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >

@@ -126,7 +126,7 @@ Le tabelle Distribuzione browser, Distribuzione sistema operativo e Distribuzion
 
 Per filtrare ulteriormente i dati di analisi, puoi fare clic su una voce in una qualsiasi delle tabelle. Ad esempio, se fai clic su Google Chrome nella tabella Distribuzione browser, il rapporto viene nuovamente sottoposto a rendering con i dati relativi al browser Google Chrome come segue:
 
-![Filtro applicato al report di Analytics - Google Chrome ](assets/filter-1.png)
+![Filtro applicato al report di Analytics - Google Chrome &#x200B;](assets/filter-1.png)
 
 Se visualizzi il rapporto del pannello dopo l’applicazione di un filtro, vengono visualizzati anche i dati del rapporto del pannello in base al filtro applicato.
 

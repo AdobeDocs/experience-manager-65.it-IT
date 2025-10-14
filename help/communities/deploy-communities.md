@@ -301,7 +301,7 @@ ad esempio:
 
 >[!CAUTION]
 >
->Se è già stata configurata un&#39;altra funzionalità di protezione basata sulle chiavi di crittografia, la replica delle chiavi di crittografia potrebbe danneggiare la configurazione. Per assistenza, [contatta l&#39;assistenza clienti](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support).
+>Se è già stata configurata un&#39;altra funzionalità di protezione basata sulle chiavi di crittografia, la replica delle chiavi di crittografia potrebbe danneggiare la configurazione. Per assistenza, [contatta l&#39;assistenza clienti](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support).
 
 #### Replica archivio {#repository-replication}
 
