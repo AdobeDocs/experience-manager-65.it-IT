@@ -54,6 +54,6 @@ Per ulteriori informazioni, consulta la documentazione del [plug-in Adobe PDF](h
 >[!NOTE]
 > 
 > LiveCycle ES4 fornisce il supporto per il rendering di moduli basati su XFA in HTML5 in modo che i moduli possano essere aperti in browser con supporto per HTML5, inclusi quelli in esecuzione su dispositivi mobili come iPad. La rappresentazione HTML5 dei moduli mantiene il layout della struttura del modulo e supporta la maggior parte delle logiche del modulo (come JavaScript, calcolo dei moduli e convalide dei moduli) incorporate nel modello di modulo XFA. In questo modo, gli investimenti tecnologici nei moduli XFA vengono facilmente trasferiti su dispositivi in cui non è possibile eseguire il plug-in Adobe Reader.
->Per ulteriori informazioni, consulta la [documentazione del prodotto LiveCycle](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
+>Per ulteriori informazioni, consulta la [documentazione del prodotto LiveCycle](https://business.adobe.com/it/products/experience-manager/forms/aem-forms.html).
 
 [Note legali](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [Informativa sulla privacy online](https://www.adobe.com/it/privacy.html)

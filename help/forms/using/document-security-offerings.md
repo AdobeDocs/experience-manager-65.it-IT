@@ -37,7 +37,7 @@ Document Security Server è il componente centrale tramite il quale Document Sec
 
 Il server di Document Security fornisce un’interfaccia basata su web (pagina web) per creare policy, gestire documenti protetti tramite policy e monitorare gli eventi associati ai documenti protetti tramite policy. Gli amministratori possono anche configurare opzioni globali quali l’autenticazione degli utenti, il controllo e la messaggistica per gli utenti invitati e gestire gli account utente invitati.
 
-Il server è incluso nell’offerta del componente aggiuntivo AEM Forms Document Security. Per acquistare il componente aggiuntivo Document Security, contatta il [team di vendita](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) di AEM Forms.
+Il server è incluso nell’offerta del componente aggiuntivo AEM Forms Document Security. Per acquistare il componente aggiuntivo Document Security, contatta il [team di vendita](https://business.adobe.com/it/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) di AEM Forms.
 
 ### Documenti Protect {#protect-documents}
 

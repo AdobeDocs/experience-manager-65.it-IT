@@ -131,7 +131,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
    * Indicatore visivo per i dati di prodotto in staging in modalità di authoring per una migliore visibilità delle modifiche imminenti
    * Nuovo componente sitemap per contenuti e pagine commerce
 
-* Supporto per [Adobe Commerce Sensei Product Recommendations, basato su Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront utilizzando consigli predefiniti o creati al volo
+* Supporto per [Adobe Commerce Sensei Product Recommendations, basato su Adobe Sensei](https://business.adobe.com/it/products/magento/product-recommendations.html) in AEM Storefront utilizzando consigli predefiniti o creati al volo
 
 ## Data di rilascio: giugno 2021
 

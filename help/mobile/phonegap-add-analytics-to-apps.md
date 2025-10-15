@@ -24,7 +24,7 @@ Vuoi creare esperienze coinvolgenti e rilevanti per gli utenti delle tue app mob
 
 Gli utenti accedono a tutti i contenuti? Stanno abbandonando l&#39;app e, in caso affermativo, dove? Quanto spesso rimangono nell’app e quanto spesso tornano per utilizzarla? Quali modifiche è possibile introdurre e quindi misurare l&#39;aumento della conservazione? E le percentuali di arresti anomali, l’app si arresta in modo anomalo per i tuoi utenti?
 
-Approfitta di [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) nelle tue app Adobe Experience Manager (AEM) tramite l&#39;integrazione con [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Approfitta di [Mobile App Analytics](https://business.adobe.com/it/products/analytics/mobile-marketing.html) nelle tue app Adobe Experience Manager (AEM) tramite l&#39;integrazione con [Adobe Mobile Services](https://business.adobe.com/it/products/campaign/mobile-marketing.html).
 
 Utilizza le tue app AEM per monitorare, segnalare e capire in che modo gli utenti interagiscono con la tua app mobile e i tuoi contenuti e per misurare le metriche chiave del ciclo di vita, come avvii, tempo nell’app e frequenza di arresti anomali.
 

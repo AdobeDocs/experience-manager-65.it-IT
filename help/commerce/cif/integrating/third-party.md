@@ -31,7 +31,7 @@ Quando l’Experience Manager recupera i dati on-demand, sono necessarie API in 
 
 >[!TIP]
 >
->Se non sono disponibili API in tempo reale, per l’integrazione deve essere utilizzata una cache di prodotto esterna con API. Esempio [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
+>Se non sono disponibili API in tempo reale, per l’integrazione deve essere utilizzata una cache di prodotto esterna con API. Esempio [Magento open-source](https://business.adobe.com/it/products/magento/open-source.html).
 
 Non è necessario implementare lo schema GraphQL completo, ma solo gli oggetti dello schema per abilitare i casi d’uso desiderati.
 

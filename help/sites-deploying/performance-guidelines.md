@@ -316,7 +316,7 @@ Per ulteriori dettagli sulle opzioni di configurazione disponibili, vedere [Conf
 
 >[!NOTE]
 >
->Adobe consiglia di scegliere l’opzione di distribuzione dell’AEM in Azure o Amazon Web Services (AWS) utilizzando Adobe Managed Services. I clienti traggono vantaggio da un team con l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe consiglia di scegliere l’opzione di distribuzione dell’AEM in Azure o Amazon Web Services (AWS) utilizzando Adobe Managed Services. I clienti traggono vantaggio da un team con l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/it/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Per raccomandazioni su come distribuire l’AEM in Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collabora con uno dei partner di Adobe che supportano l’implementazione dell’AEM nell’ambiente cloud desiderato. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura supportata per soddisfare requisiti specifici di prestazioni, carico, scalabilità e sicurezza.
 >

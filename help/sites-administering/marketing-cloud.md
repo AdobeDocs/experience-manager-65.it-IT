@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Integrazione con Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/main.html) include potenti prodotti di analisi Web e ottimizzazione del sito Web che forniscono dati e informazioni fruibili e in tempo reale per promuovere iniziative online di successo. Offre una piattaforma integrata e aperta per l&#39;ottimizzazione del business online. Il cloud è costituito da applicazioni integrate per raccogliere e sfruttare la potenza delle informazioni sul cliente al fine di ottimizzare le attività di acquisizione, conversione e conservazione dei clienti, nonché la creazione e la distribuzione dei contenuti.
+[Adobe Experience Cloud](https://business.adobe.com/it/products/marketing-cloud/main.html) include potenti prodotti di analisi Web e ottimizzazione del sito Web che forniscono dati e informazioni fruibili e in tempo reale per promuovere iniziative online di successo. Offre una piattaforma integrata e aperta per l&#39;ottimizzazione del business online. Il cloud è costituito da applicazioni integrate per raccogliere e sfruttare la potenza delle informazioni sul cliente al fine di ottimizzare le attività di acquisizione, conversione e conservazione dei clienti, nonché la creazione e la distribuzione dei contenuti.
 
 Con Adobe Experience Manager (AEM), puoi integrarti facilmente con i seguenti prodotti di Adobe Experience Cloud:
 
@@ -33,7 +33,7 @@ Inoltre, puoi [integrare AEM con Creative Cloud](/help/assets/aem-cc-integration
 
 ## Integrazione con Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) è la soluzione leader di settore che offre agli esperti di marketing digitale un&#39;unica posizione per misurare, analizzare e ottimizzare i dati integrati di tutte le iniziative online su più canali di marketing. Fornisce agli esperti di marketing informazioni analitiche web in tempo reale e pronti per essere utilizzati, su strategie digitali e iniziative di marketing. Adobe Analytics consente ai professionisti del marketing di identificare rapidamente i percorsi più redditizi in un sito web, segmentare il traffico per individuare i visitatori di valore maggiore, determinare dove i visitatori lasciano il sito e identificare importanti metriche per il successo delle campagne di marketing online.
+[Adobe Analytics](https://business.adobe.com/it/products/analytics/adobe-analytics.html) è la soluzione leader di settore che offre agli esperti di marketing digitale un&#39;unica posizione per misurare, analizzare e ottimizzare i dati integrati di tutte le iniziative online su più canali di marketing. Fornisce agli esperti di marketing informazioni analitiche web in tempo reale e pronti per essere utilizzati, su strategie digitali e iniziative di marketing. Adobe Analytics consente ai professionisti del marketing di identificare rapidamente i percorsi più redditizi in un sito web, segmentare il traffico per individuare i visitatori di valore maggiore, determinare dove i visitatori lasciano il sito e identificare importanti metriche per il successo delle campagne di marketing online.
 
 Puoi utilizzare Adobe Analytics per analizzare i dati dei tuoi siti.
 
@@ -82,7 +82,7 @@ Per ulteriori informazioni sull&#39;integrazione di Adobe Experience Manager con
 
 ## Integrazione con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-[Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) offre agli addetti al marketing strumenti intuitivi per gestire in modo rapido e semplice un numero illimitato di tag Adobe e di terze parti. È possibile ottenere maggiore controllo e flessibilità per ottimizzare virtualmente qualsiasi elemento online, riducendo al contempo la dipendenza dalle risorse IT.
+[Adobe Dynamic Tag Management](https://business.adobe.com/it/products/experience-platform/adobe-experience-platform.html) offre agli addetti al marketing strumenti intuitivi per gestire in modo rapido e semplice un numero illimitato di tag Adobe e di terze parti. È possibile ottenere maggiore controllo e flessibilità per ottimizzare virtualmente qualsiasi elemento online, riducendo al contempo la dipendenza dalle risorse IT.
 
 [Integra Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) con AEM in modo da poter utilizzare le proprietà Web di Dynamic Tag Management per tenere traccia dei siti AEM.
 
@@ -100,6 +100,6 @@ L’integrazione dell’Audience Manager è stata rimossa nell’AEM 6.3.
 
 ## Integrazione con Adobe Campaign {#integrating-with-adobe-campaign}
 
-[Adobe Campaign](https://business.adobe.com/products/campaign/adobe-campaign.html) consente di gestire il contenuto della consegna e-mail direttamente in Adobe Experience Manager.
+[Adobe Campaign](https://business.adobe.com/it/products/campaign/adobe-campaign.html) consente di gestire il contenuto della consegna e-mail direttamente in Adobe Experience Manager.
 
 Per informazioni sull&#39;integrazione dell&#39;AEM con Adobe Campaign, vedere [Integrazione con Adobe Campaign](/help/sites-administering/campaignstandard.md).

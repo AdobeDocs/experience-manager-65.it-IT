@@ -155,7 +155,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
-* [Soluzioni](https://business.adobe.com/)
+* [Soluzioni](https://business.adobe.com/it/)
 
   ![Soluzioni](do-not-localize/screen_shot_2018-03-23at103552.png)
 

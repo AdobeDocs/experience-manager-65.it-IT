@@ -21,13 +21,13 @@ ht-degree: 0%
 
 L&#39;installazione del 18912 del feature pack è *facoltativa*.
 
-Il Feature Pack 18912 consente di acquisire in blocco le risorse direttamente in modalità Dynamic Medie - Scene7 su Adobe Experience Manager tramite FTP. Consente inoltre di migrare le risorse da Dynamic Media Classic alla modalità Dynamic Medie - Scene7 su Experience Manager. Il feature pack è disponibile da [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Il Feature Pack 18912 consente di acquisire in blocco le risorse direttamente in modalità Dynamic Medie - Scene7 su Adobe Experience Manager tramite FTP. Consente inoltre di migrare le risorse da Dynamic Media Classic alla modalità Dynamic Medie - Scene7 su Experience Manager. Il feature pack è disponibile da [Adobe Professional Services](https://business.adobe.com/it/customers/consulting-services/main.html).
 
 >[!IMPORTANT]
 >
 >È possibile utilizzare il feature pack per eseguire da solo la migrazione in massa delle risorse da Dynamic Media Classic alla modalità Dynamic Medie - Scene7 in Experience Manager. È inoltre possibile eseguire la migrazione in massa delle risorse utilizzando la funzione FTP in Dynamic Media Classic. Tuttavia, Adobe *not* consiglia di utilizzare uno di questi metodi a causa della complessità.
 >
->Di conseguenza, questo feature pack per la migrazione è supportato *solo* come parte di un progetto di migrazione se eseguito tramite [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+>Di conseguenza, questo feature pack per la migrazione è supportato *solo* come parte di un progetto di migrazione se eseguito tramite [Adobe Professional Services](https://business.adobe.com/it/customers/consulting-services/main.html).
 
 Prima di installare il feature pack, è necessario creare un utente del servizio e fornire tali informazioni al supporto Adobe.
 

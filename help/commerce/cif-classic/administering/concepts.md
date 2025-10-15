@@ -40,7 +40,7 @@ Ciò significa che:
 
 >[!CAUTION]
 >
->[eCommerce Integration Framework](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) è un componente aggiuntivo AEM.
+>[eCommerce Integration Framework](https://business.adobe.com/it/products/experience-manager/sites/ecommerce-integrations.html) è un componente aggiuntivo AEM.
 >
 >Il vostro rappresentante commerciale è in grado di fornire tutti i dettagli, secondo il motore appropriato.
 
