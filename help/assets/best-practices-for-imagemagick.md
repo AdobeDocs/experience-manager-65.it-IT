@@ -6,9 +6,9 @@ role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Per elaborare file di grandi dimensioni utilizzando ImageMagick, considera requi
 
 >[!NOTE]
 >
->Se utilizzi [!DNL Experience Manager] su [!DNL Adobe Managed Services] (AMS), contatta l&#39;Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB ad alta risoluzione. [!DNL Experience Manager] potrebbe non elaborare file PSB ad alta risoluzione con più di 30000 x 23000 pixel.
+>Se utilizzi [!DNL Experience Manager] il [!DNL Adobe Managed Services] (AMS), contatta l&#39;Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB ad alta risoluzione. [!DNL Experience Manager] potrebbe non elaborare file PSB ad alta risoluzione con più di 30000 x 23000 pixel.
 
 ## Installare ImageMagick {#installing-imagemagick}
 
 Sono disponibili più versioni dei file di installazione di ImageMagic per vari sistemi operativi. Utilizzare la versione appropriata per il sistema operativo in uso.
 
-1. Scarica i [file di installazione di ImageMagick](https://www.imagemagick.org/script/download.php) appropriati per il tuo sistema operativo.
+1. Scaricare i file di installazione di ImageMagick (`https://www.imagemagick.org/script/download.php website`) appropriati per il sistema operativo.
 1. Per installare ImageMagick sul disco che ospita il server [!DNL Experience Manager], avviare il file di installazione.
 
 1. Impostare la variabile di ambiente del percorso sulla directory di installazione di ImageMagic.
@@ -37,7 +37,7 @@ Sono disponibili più versioni dei file di installazione di ImageMagic per vari 
 
 ## Impostare il passaggio del processo della riga di comando {#set-up-the-command-line-process-step}
 
-È possibile impostare il passaggio della riga di comando per il caso d’uso specifico. Eseguire la procedura seguente per generare un&#39;immagine invertita e miniature (140x100, 48x48, 319x319 e 1280x1280) ogni volta che si aggiunge un file di immagine JPEG a `/content/dam` sul server [!DNL Experience Manager]:
+È possibile impostare il passaggio della riga di comando per il caso d’uso specifico. Eseguire la procedura seguente per generare un&#39;immagine capovolta e miniature (140x100, 48x48, 319x319 e 1280x1280) ogni volta che si aggiunge un file immagine JPEG a `/content/dam` sul server [!DNL Experience Manager]:
 
 1. Nel server [!DNL Experience Manager], vai alla console Flusso di lavoro (`https://[aem_server]:[port]/workflow`) e apri il modello di flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Dal modello di flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**, apri il passaggio **[!UICONTROL Miniature EPS (con tecnologia ImageMagick)]**.
@@ -82,7 +82,7 @@ Sono disponibili più versioni dei file di installazione di ImageMagic per vari 
 
 Esistono diverse vulnerabilità di sicurezza associate all’utilizzo di ImageMagick per elaborare le immagini. Ad esempio, l’elaborazione delle immagini inviate dall’utente comporta il rischio di esecuzione di codice remoto (RCE).
 
-Inoltre, vari plug-in di elaborazione delle immagini dipendono dalla libreria ImageMagick, tra cui, ma non solo, imagemagick di PHP, ruby&#39;s magick e paperclip e imagemagick di nodejs.
+Inoltre, vari plug-in di elaborazione delle immagini dipendono dalla libreria ImageMagick, tra cui, ma non solo, l&#39;imagemagick di PHP, l&#39;ermagick di Ruby e la clip cartacea e l&#39;imagemagick di nodejs.
 
 Se utilizzi ImageMagick o una libreria interessata, Adobe consiglia di attenuare le vulnerabilità note eseguendo almeno una delle seguenti attività (ma preferibilmente entrambe):
 

@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 3%
+source-wordcount: '2109'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ I gestori di file multimediali sono servizi in [!DNL Assets] che eseguono azioni
 
 >[!NOTE]
 >
->Per una descrizione di tutti i formati supportati da [!DNL Assets] e delle funzionalità supportate per ciascun formato, vedere la pagina [Formati risorse supportati](assets-formats.md).
+>Per una descrizione di tutti i formati supportati da [ e delle funzionalità supportate per ciascun formato, vedere la pagina ](assets-formats.md)Formati risorse supportati[!DNL Assets].
 
 ## Gestori di file multimediali predefiniti {#default-media-handlers}
 
@@ -123,7 +123,7 @@ Devono essere implementati i seguenti metodi:
 
 Di seguito è riportato un modello di esempio:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementa le parti pertinenti }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementa le parti pertinenti }
 
 L’interfaccia e le classi includono:
 
@@ -153,7 +153,7 @@ Dopo aver eseguito la procedura seguente, quando si carica un file TXT in [!DNL 
       * Nome: il mio bundle [!DNL Experience Manager].
       * Descrizione: questo è il pacchetto [!DNL Experience Manager].
 
-   1. Fare clic su **[!UICONTROL Fine]**.
+   1. Fai clic su **[!UICONTROL Fine]**.
 
 1. Impostare il compilatore [!DNL Java™] sulla versione 1.5:
 
@@ -449,7 +449,7 @@ Dopo aver eseguito la procedura seguente, quando si carica un file TXT in [!DNL 
 
 Le seguenti conversioni possono essere eseguite e memorizzate automaticamente in [!DNL Assets]:
 
-* Trasformazione di EPS e AI tramite [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/).
+* Trasformazione di EPS e AI tramite `https://www.imagemagick.org/script/index.php` e [Ghostscript](https://www.ghostscript.com/).
 * Trascodifica video FLV tramite [FFmpeg](https://ffmpeg.org/).
 * Codifica MP3 tramite [LAME](https://lame.sourceforge.io/).
 * Elaborazione audio tramite [SOX](https://sourceforge.net/projects/sox/).
@@ -470,13 +470,13 @@ Il processo `CommandLineProcess` esegue le operazioni seguenti nell&#39;ordine e
 
 ### Esempio con [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-Nell&#39;esempio seguente viene illustrato come impostare il passaggio dell&#39;elaborazione della riga di comando in modo che ogni volta che una risorsa con GIF o TIFF di tipo e miMIME viene aggiunta a `/content/dam` nel server [!DNL Experience Manager], venga creata un&#39;immagine invertita dell&#39;originale. Vengono inoltre create altre tre miniature: 140x100, 48x48 e 10x250.
+Nell&#39;esempio seguente viene illustrato come impostare il passaggio del processo della riga di comando in modo che ogni volta che una risorsa con GIF o TIFF di tipo miMIME viene aggiunta a `/content/dam` sul server [!DNL Experience Manager], venga creata un&#39;immagine invertita dell&#39;originale. Vengono inoltre create altre tre miniature: 140x100, 48x48 e 10x250.
 
 Per eseguire questa operazione, utilizzare [!DNL ImageMagick]. [!DNL ImageMagick] è un software gratuito per riga di comando utilizzato per creare, modificare e comporre immagini bitmap.
 
 Installa [!DNL ImageMagick] sul disco che ospita il server [!DNL Experience Manager]:
 
-1. Installa [!DNL ImageMagick]: consulta la [documentazione di ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Installa [!DNL ImageMagick]: consulta il sito Web `https://www.imagemagick.org/script/download.php`.
 1. Configurare lo strumento in modo da poter eseguire `convert` da una riga di comando.
 1. Per verificare se lo strumento è installato correttamente, eseguire il comando seguente `convert -h` sulla riga di comando.
 
@@ -484,9 +484,9 @@ Installa [!DNL ImageMagick] sul disco che ospita il server [!DNL Experience Mana
 
    >[!NOTE]
    >
-   >In alcune versioni di Windows è possibile che il comando convert non venga eseguito perché è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di [!DNL Windows]. In questo caso, indicare il percorso completo del software [!DNL ImageMagick] utilizzato per convertire i file immagine in miniature. Esempio: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >In alcune versioni di Windows è possibile che il comando convert non venga eseguito perché è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di [!DNL Windows]. In questo caso, indicare il percorso completo del software [!DNL ImageMagick] utilizzato per convertire i file immagine in miniature. Ad esempio, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Per verificare il corretto funzionamento dello strumento, aggiungere un&#39;immagine JPG alla directory di lavoro ed eseguire il comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando. Un&#39;immagine capovolta viene aggiunta alla directory. Quindi, aggiungi il passaggio della riga di comando al flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
+1. Per verificare se lo strumento viene eseguito correttamente, aggiungere un&#39;immagine JPG alla directory di lavoro ed eseguire il comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando. Un&#39;immagine capovolta viene aggiunta alla directory. Quindi, aggiungi il passaggio della riga di comando al flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Passa alla console **[!UICONTROL Flusso di lavoro]**.
 1. Nella scheda **[!UICONTROL Modelli]**, modifica il modello **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Modifica [!UICONTROL Argomenti] del passaggio **[!UICONTROL Rendering abilitato per Web]** in: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
@@ -494,7 +494,7 @@ Installa [!DNL ImageMagick] sul disco che ospita il server [!DNL Experience Mana
 
 Per verificare il flusso di lavoro modificato, aggiungere una risorsa a `/content/dam`.
 
-1. Nel file system, ottenere un&#39;immagine TIFF desiderata. Rinominarlo in `myImage.tiff` e copiarlo in `/content/dam`, ad esempio utilizzando WebDAV.
+1. Nel file system, ottenere un&#39;immagine TIFF a scelta. Rinominarlo in `myImage.tiff` e copiarlo in `/content/dam`, ad esempio utilizzando WebDAV.
 1. Passa alla console **[!UICONTROL CQ5 DAM]**, ad esempio `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Apri la risorsa **[!UICONTROL myImage.tiff]** e verifica che l&#39;immagine capovolta e le tre miniature siano state create.
 

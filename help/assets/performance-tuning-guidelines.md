@@ -7,7 +7,7 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
 source-wordcount: '2729'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 <!-- TBD: Get reviewed by engineering. -->
 
-# Guida all&#39;ottimizzazione delle prestazioni di [!DNL Adobe Experience Manager Assets] {#assets-performance-tuning-guide}
+# Guida all’ottimizzazione delle prestazioni di [!DNL Adobe Experience Manager Assets] {#assets-performance-tuning-guide}
 
 Un&#39;installazione di [!DNL Experience Manager Assets] contiene diversi componenti hardware, software e di rete. A seconda dello scenario di distribuzione, per rimuovere i colli di bottiglia delle prestazioni potrebbe essere necessario apportare modifiche specifiche alla configurazione di hardware, software e componenti di rete.
 
@@ -211,7 +211,7 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick nel file
 
 >[!NOTE]
 >
->I file ImageMagick `policy.xml` e `configure.xml` sono disponibili in `/usr/lib64/ImageMagick-&#42;/config/` anziché `/etc/ImageMagick/`. Consulta la [documentazione di ImageMagick](https://www.imagemagick.org/script/resources.php) per il percorso dei file di configurazione.
+>I file ImageMagick `policy.xml` e `configure.xml` sono disponibili in `/usr/lib64/ImageMagick-&#42;/config/` anziché `/etc/ImageMagick/`. Per informazioni sul percorso dei file di configurazione, vedere la documentazione di ImageMagick (`https://www.imagemagick.org/script/resources.php` sito Web).
 
 Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l&#39;Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con un rappresentante dell’Assistenza clienti Adobe per implementare queste best practice per la tua implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad alta risoluzione con più di 30000 x 23000 pixel.
 
@@ -243,7 +243,7 @@ Quando replichi le risorse in un numero elevato di istanze di pubblicazione, ad 
 
 ## Cerca indici {#search-indexes}
 
-Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) per alcune ottimizzazioni dell&#39;indice.
+Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) per alcune ottimizzazioni dell&#39;indice.
 
 Creare indici personalizzati per le query eseguite spesso. Per informazioni dettagliate, consulta la [metodologia per l&#39;analisi delle query lente](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [creazione di indici personalizzati](/help/sites-deploying/queries-and-indexing.md). Per ulteriori informazioni sulle best practice per query e indici, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
