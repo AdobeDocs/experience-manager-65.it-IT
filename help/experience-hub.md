@@ -7,10 +7,10 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: ee81b9090505b357e63d6983adffdc947eda37e5
+source-git-commit: 3d4396ede2abe477665a8cc4877245780e555078
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 11%
+source-wordcount: '934'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ Experience Hub introduce un punto di partenza centralizzato per la gestione di c
 
 Guarda un rapido tour dell’area di lavoro AEM Experience Hub riprogettata (2 minuti e 39 secondi).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475200/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -80,6 +80,68 @@ Nella sezione **Recenti**, nell&#39;immagine seguente, sono elencate le pagine v
 Se non esiste alcun ambiente AEM Cloud Service o Managed Services di produzione, le opzioni di selezione vengono visualizzate in grigio (non disponibili).
 
 ![Experience Hub senza ambienti di produzione](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
+
+## Domande frequenti (FAQ) {#faq}
+
++++**Qual è lo scopo principale di Adobe Experience Hub in Adobe Experience Manager?**
+
+Adobe Experience Hub funge da punto di partenza centralizzato per la gestione di contenuti, risorse e siti all’interno di Adobe Experience Manager, offrendo un’esperienza personalizzata in base a ruoli e obiettivi degli utenti.
+
++++
+
++++**In che modo Experience Hub si adatta a ruoli utente diversi?**
+
+Experience Hub mostra viste basate sui ruoli e azioni rapide per autori, bibliotecari di risorse, amministratori e IT. Ogni ruolo ha accesso rapido agli strumenti e alle funzionalità necessarie.
+
++++
+
++++**Quali sono alcune caratteristiche della navigazione e del layout di Experience Hub?**
+
+Experience Hub utilizza una navigazione a sinistra unificata per organizzare le funzionalità di base di AEM, i widget personalizzabili e le azioni rapide. Questo layout crea un&#39;area di lavoro organizzata ed efficiente.
+
++++
+
++++**In che modo gli utenti possono personalizzare la propria area di lavoro Experience Hub?**
+
+Gli utenti possono aggiungere, rimuovere, ridimensionare e ridisporre i widget e personalizzare azioni rapide per adattare l’area di lavoro in base alle loro esigenze e preferenze.
+
++++
+
++++**Quali tipi di azioni possono essere eseguiti rapidamente utilizzando Experience Hub?**
+
+Experience Hub offre scelte rapide con un solo clic per attività importanti come la creazione di contenuti, il caricamento di risorse o la gestione dell’accesso al team, su misura per il ruolo dell’utente.
+
++++
+
++++**In che modo Experience Hub facilita la navigazione verso diverse funzioni di AEM?**
+
+La navigazione principale di Experience Hub in **Strumenti** o **Servizi** fornisce un accesso rapido alle funzioni di AEM come Assets, Sites, Forms, Frammenti di contenuto e Launches.
+
++++
+
++++**Qual è il significato dei widget in Experience Hub?**
+
+I widget in Experience Hub sono elementi personalizzabili che consentono agli utenti di gestire il proprio lavoro in modo efficiente, ad esempio il tracciamento delle attività recenti e il mantenimento delle informazioni sugli aggiornamenti dei prodotti.
+
++++
+
++++**In che modo gli utenti possono gestire più ambienti AEM utilizzando Experience Hub?**
+
+Gli utenti possono scegliere l’ambiente di destinazione e fissare i preferiti per mantenerli in alto. Scelte rapide per aprire soluzioni e pagine in tali ambienti.
+
++++
+
++++**Quale ruolo svolge l&#39;Assistente AI in AEM?**
+
+L’Assistente per l’intelligenza artificiale in AEM è disponibile per gli utenti che hanno completato i criteri dei prerequisiti, fornendo supporto aggiuntivo e informazioni approfondite all’interno dell’organizzazione.
+
++++
+
++++**Cosa succede se non esistono ambienti di produzione AEM Cloud Service o Managed Services?**
+
+Se non esiste alcun ambiente di produzione, le opzioni di selezione in Experience Hub risultano disabilitate e non disponibili.
+
++++
 
 ## Assistente IA in AEM
 
