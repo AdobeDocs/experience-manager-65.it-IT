@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
+source-git-commit: 0e80096b6b49372765b04a3bc1438b93d9cccf6e
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 3%
 
 ---
 
@@ -34,11 +34,15 @@ Prima di abilitare l’attivazione delle funzioni nella configurazione di AEM 6.
 
 * Utente membro del gruppo `forms-users`.
 
-* Passa a `http://<author-instance-url>:portnumber/system/console/bundles` e controlla se il bundle **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** è presente o meno. Se non è presente, [scarica il bundle dal collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Passa a `http://<author-instance-url>:portnumber/system/console/bundles` e controlla se il bundle **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** è presente o meno. Se non è presente, [scarica il bundle dal collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
-  ![Attiva/Disattiva funzionalità](/help/forms/using/assets/feature-toggle-6.5.png)
+![Attiva/Disattiva funzionalità](/help/forms/using/assets/feature-toggle-1.1.8.png)
 
-## Attiva/disattiva funzione {#enable-feature-toggle-65}
+>[!NOTE]
+>
+>Se necessario, puoi attivare o disattivare le funzioni nell’ambiente AEM 6.5 o nelle versioni precedenti.
+
+## Abilitare il pulsante di attivazione/disattivazione della funzione {#enable-feature-toggle-65}
 
 È possibile configurare gli interruttori delle funzionalità per i primi utenti o le nuove funzionalità tramite la **console Web AEM** seguendo la procedura riportata di seguito:
 
