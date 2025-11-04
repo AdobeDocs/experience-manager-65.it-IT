@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
+source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
 workflow-type: tm+mt
-source-wordcount: '10085'
-ht-degree: 1%
+source-wordcount: '10086'
+ht-degree: 2%
 
 ---
 
@@ -25,13 +25,13 @@ AEM Forms fornisce un set di servizi OSGi per eseguire diverse operazioni a live
 
 * **Servizio DocAssurance:** Consente di crittografare e decrittografare documenti, estendere le funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi e aggiungere firme digitali ai documenti. Il servizio Doc Assurance contiene tre servizi: firma, crittografia ed estensione Reader. Per ulteriori informazioni, vedere [Servizio DocAssurance](/help/forms/using/overview-aem-document-services.md).
 
-* **Servizio di crittografia:** consente di crittografare e decrittografare i documenti. Quando un documento viene crittografato, il suo contenuto diventa illeggibile. Un utente autorizzato può decrittografare il documento per ottenere l’accesso al relativo contenuto. Per ulteriori informazioni, vedere [Servizio di crittografia](/help/forms/using/overview-aem-document-services.md#encryption-service).
+* **Servizio di crittografia:** consente di crittografare e decrittografare i documenti. Quando un documento viene crittografato, il relativo contenuto diventa illeggibile. Un utente autorizzato può decrittografare il documento per ottenere l’accesso al relativo contenuto. Per ulteriori informazioni, vedere [Servizio di crittografia](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
 * **Servizio Forms:** consente di creare applicazioni client di acquisizione dati interattive che convalidano, elaborano, trasformano e distribuiscono moduli generalmente creati in Forms Designer. Il servizio Forms esegue il rendering di qualsiasi struttura di modulo sviluppata in documenti PDF. Per ulteriori informazioni, vedere [Servizio Forms](/help/forms/using/forms-service.md).
 
 * **Servizio di output:** consente di creare documenti in formati diversi, inclusi PDF, formati di stampanti laser e formati di stampanti di etichette. I formati delle stampanti laser sono PostScript e Printer Control Language (PCL). Per ulteriori informazioni, vedere [Servizio di output](/help/forms/using/output-service.md).
 
-* **Servizio PDF Generator:** Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF. Per ulteriori informazioni, vedere [Servizio PDF Generator](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **Servizio PDF Generator:** Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre i PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF. Per ulteriori informazioni, vedere [Servizio PDF Generator](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 * **Servizio di estensione Reader:** consente all&#39;organizzazione di condividere facilmente i documenti PDF interattivi estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio attiva funzionalità non disponibili quando un documento di PDF viene aperto mediante Adobe Reader, ad esempio l&#39;aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Per ulteriori informazioni, vedere [Servizio di estensione Reader](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
@@ -184,7 +184,7 @@ Se si utilizza un sistema operativo basato su UNIX, installare i seguenti pacche
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
-* (Solo per PDF Generator) Per abilitare la route WebKit nelle impostazioni RHEL 8 o RHEL 9, la libreria `nspr` a 32 bit potrebbe non essere disponibile per impostazione predefinita; installarla se non è presente.
+* (Solo per PDF Generator) Per abilitare la route WebKit nelle impostazioni RHEL 8 o RHEL 9, SLES15, è possibile che la libreria `nspr` a 32 bit non sia disponibile per impostazione predefinita; installarla se non è presente.
 
 * (Solo per PDF Generator) Se la conversione WebToPDF non riesce sul server Unix® con il seguente errore:
 
@@ -210,7 +210,7 @@ Se si intende utilizzare il servizio PDF Generator per convertire i formati di f
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint sono disponibili solo per Microsoft® Windows. Se si utilizza il sistema operativo basato su UNIX, installare OpenOffice per convertire i file RTF e i file Microsoft® Office supportati in documenti PDF.
 >* Chiudi tutte le finestre di dialogo visualizzate dopo l’installazione di Adobe Acrobat e del software di terze parti per tutti gli utenti configurati per l’utilizzo del servizio PDF Generator.
 >* Avviare tutto il software installato almeno una volta. Ignora tutte le finestre di dialogo per tutti gli utenti configurati per utilizzare il servizio PDF Generator.
->* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/it/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
+>* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
 
 ### Installare Adobe Acrobat Pro DC
 
@@ -905,7 +905,7 @@ Segui questi passaggi:
 >
 >La disattivazione della modalità protetta è necessaria per scenari di automazione lato server come AEM Forms PDF Generator. Questa impostazione deve essere modificata solo in ambienti server dedicati e non nei desktop degli utenti finali.
 
-Per ulteriori informazioni, consulta la [documentazione di Adobe sulla modalità protetta](https://helpx.adobe.com/it/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Per ulteriori informazioni, consulta la [documentazione di Adobe sulla modalità protetta](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1006,7 +1006,7 @@ L&#39;account utente utilizzato per avviare il server applicazioni richiede il p
 
 1. Aprire Editor Criteri di gruppo per Microsoft® Windows. Per aprire l&#39;Editor Criteri di gruppo, fare clic su **[!UICONTROL Inizio]**, digitare **gpedit.msc** nella casella Avvia ricerca, quindi fare clic su **[!UICONTROL Editor Criteri di gruppo]**.
 1. Passa a **[!UICONTROL Criteri computer locale]** > **[!UICONTROL Configurazione computer]** > **[!UICONTROL Impostazioni di Windows]** > **[!UICONTROL Impostazioni protezione]** > **[!UICONTROL Criteri locali]** > **[!UICONTROL Assegnazione diritti utente]** e modifica il criterio **[!UICONTROL Sostituisci un token a livello di processo]** e includi il gruppo Administrators.
-1. Aggiungere l&#39;utente alla voce Sostituisci token a livello di processo.
+1. Aggiungi l’utente alla voce Sostituisci token a livello di processo.
 
 >[!NOTE]
 >
@@ -1022,7 +1022,7 @@ L&#39;account utente utilizzato per avviare il server applicazioni richiede il p
 
 >[!NOTE]
 >
-> Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ### (Solo Windows) Disabilita Controllo account utente {#disable-user-account-control-uac}
 
@@ -1088,10 +1088,10 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]**.
    2. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
 1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it).
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e che il log sia stabile.
 
@@ -1206,7 +1206,7 @@ La route principale predefinita per la conversione da HTML a PDF è Webkit. Per 
 
 ### Inizializza archivio fonti attendibili globale {#intialize-global-trust-store}
 
-Tramite la gestione dell&#39;archivio fonti attendibili è possibile importare, modificare ed eliminare certificati attendibili nel server per la convalida delle firme digitali e l&#39;autenticazione dei certificati. È possibile importare ed esportare un numero qualsiasi di certificati. Dopo l&#39;importazione di un certificato, è possibile modificare le impostazioni di attendibilità e il tipo di archivio fonti attendibili. Per inizializzare un archivio fonti attendibili, eseguire la procedura seguente:
+Tramite la gestione dell’archivio fonti attendibili puoi importare, modificare o eliminare dal server i certificati che consideri attendibili per la convalida delle firme digitali e l’autenticazione. Puoi importare ed esportare un numero illimitato di certificati. Dopo l’importazione di un certificato, puoi modificare le impostazioni di affidabilità e il tipo di archivio fonti attendibili. Per inizializzare un archivio fonti attendibili, eseguire la procedura seguente:
 
 1. Accedi all’istanza di AEM Forms come amministratore.
 1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Archivio attendibile]**.
@@ -1508,7 +1508,7 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 +++ -->
 
-+++ Impossibile convertire file Word o Excel in PDF su Windows Server
++++ Impossibile convertire file Word o Excel in PDF sul server Windows
 
 Quando l&#39;utente cerca di convertire i file Word o Excel in PDF in Microsoft Windows Server, si verifica il seguente errore:
 
