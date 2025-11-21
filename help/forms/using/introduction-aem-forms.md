@@ -12,7 +12,7 @@ role: Admin, User, Developer
 source-git-commit: 24523ac85b1ac455f4bdf32a0a725cb99e0de497
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 15%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | Questo articolo |
 
 Per informazioni sulle ultime funzionalità e sui miglioramenti di AEM Forms, vedi [Novità di AEM Forms](../../forms/using/whats-new.md).

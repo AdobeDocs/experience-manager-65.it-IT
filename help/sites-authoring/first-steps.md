@@ -13,7 +13,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -57,7 +57,7 @@ Se la tua istanza ha già pagine esistenti o hai creato una nuova pagina da solo
 
 * [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Utilizzo della modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode) (per vedere come apparirà quando verrà pubblicato)
-* [Blocco di una pagina  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Blocco di una pagina  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Pubblicazione di una pagina {#publishing-a-page}
 

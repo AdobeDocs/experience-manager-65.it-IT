@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND
+title: Guida introduttiva allo sviluppo per AEM Sites - Tutorial WKND
 description: Scopri come creare un’istanza AEM. Ulteriori informazioni sulla piattaforma e i componenti e sugli strumenti di sviluppo e personalizzazione.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -36,14 +36,14 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 
 L’implementazione del tutorial utilizza molte funzioni avanzate di AEM. Il sito verrà implementato utilizzando:
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
+* [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Interfaccia utente touch](/help/sites-developing/touch-ui-concepts.md)
-* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Modelli modificabili](/help/sites-developing/page-templates-editable.md)
 
 Segui il tutorial prima di immergerti nei concetti di cui sopra.
 
 ## Passaggi successivi {#next-steps}
 
-Dopo aver completato l&#39;[esercitazione](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), prova a rivedere il documento [Concetti di base dell&#39;AEM](/help/sites-developing/the-basics.md) per comprendere meglio alcune delle tecnologie e dei paradigmi di sviluppo sottostanti dell&#39;AEM.
+Dopo aver completato l&#39;[esercitazione](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), prova a rivedere il documento [Concetti di base di AEM](/help/sites-developing/the-basics.md) per comprendere meglio alcune delle tecnologie e dei paradigmi di sviluppo sottostanti di AEM.

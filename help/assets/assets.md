@@ -25,7 +25,7 @@ AEM [!DNL Assets] è uno strumento di gestione delle risorse digitali (DAM) che 
 
 ## Che cos’è Digital Asset Management? {#what-is-digital-asset-management}
 
-[!DNL Assets] consente la condivisione e la distribuzione a livello aziendale delle risorse digitali chiave di un&#39;organizzazione. Gli utenti di un’organizzazione possono archiviare, gestire e accedere a risorse digitali quali immagini, elementi grafici, audio, video e documenti tramite un’interfaccia web (o una cartella CIF o WebDAV).
+[!DNL Assets] consente la condivisione e la distribuzione a livello aziendale delle risorse digitali chiave di un&#39;organizzazione. Gli utenti di un’organizzazione possono archiviare, gestire e accedere a risorse digitali quali immagini, elementi grafici, audio, video e documenti tramite un’interfaccia web (o una cartella CIFS o WebDAV).
 
 La funzionalità [!DNL Assets] di [!DNL Experience Manager] consente di effettuare le seguenti operazioni:
 
@@ -33,7 +33,7 @@ La funzionalità [!DNL Assets] di [!DNL Experience Manager] consente di effettua
 * Gestisci le risorse raggruppandole per tag, lightbox o stelle (i tuoi preferiti). Aggiungere annotazioni alle risorse.
 * Per trovare le risorse, cercare i nomi dei file, il testo completo dei documenti, le date, il tipo di documento e i tag.
 * Aggiungere o modificare le informazioni sui metadati per le risorse. Insieme alla risorsa corrispondente viene automaticamente creata una versione dei metadati. Puoi importare o esportare i metadati delle risorse.
-* Eseguire le funzioni di modifica delle immagini, come il ridimensionamento e l&#39;aggiunta di filtri immagine. Importare ed esportare più risorse digitali contemporaneamente utilizzando una cartella WebDAV o CIF.
+* Eseguire le funzioni di modifica delle immagini, come il ridimensionamento e l&#39;aggiunta di filtri immagine. Importare ed esportare più risorse digitali contemporaneamente utilizzando una cartella WebDAV o CIFS.
 * Utilizza i flussi di lavoro e le notifiche per consentire l’elaborazione e il download congiunti di qualsiasi insieme di risorse e gestire i diritti di accesso alle risorse.
 
 ### [!DNL Experience Manager Assets] è integrato con [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
@@ -94,7 +94,7 @@ Puoi anche applicare manualmente i flussi di lavoro. Per un elenco dei flussi di
 
 ## [!DNL Experience Manager Assets] e [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Per informazioni sulle differenze, vedere [Assets e Media Library](medialibrary.md).
+Per informazioni sulle differenze, vedere [Assets and Media Library](medialibrary.md).
 
 >[!MORELIKETHIS]
 >

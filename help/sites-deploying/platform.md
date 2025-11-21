@@ -13,18 +13,18 @@ role: Architect
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
 
 # Introduzione alla piattaforma AEM{#introduction-to-the-aem-platform}
 
-La piattaforma AEM nell’AEM 6 si basa su Apache Jackrabbit Oak.
+La piattaforma AEM in AEM 6 è basata su Apache Jackrabbit Oak.
 
 Apache Jackrabbit Oak si impegna a implementare un archivio di contenuti gerarchici scalabile e performante da utilizzare come base per siti web moderni e altre applicazioni di contenuti impegnative.
 
-È il successore di Jackrabbit 2 ed è utilizzato da AEM 6 come back-end predefinito per il suo archivio di contenuti, CRX.
+È il successore di Jackrabbit 2 ed è utilizzato da AEM 6 come backend predefinito per il suo archivio di contenuti, CRX.
 
 ## Principi e obiettivi di progettazione {#design-principles-and-goals}
 
@@ -116,13 +116,13 @@ L’archiviazione MongoDB aggiunge dati a un documento con ogni modifica. Tuttav
 
 I dati relativi ai nodi cluster attivi e inattivi vengono conservati nel database per facilitare le operazioni del cluster.
 
-Una tipica configurazione cluster AEM con archiviazione MongoDB:
+Una tipica configurazione cluster di AEM con archiviazione MongoDB:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 ## Quali sono le differenze rispetto a Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Poiché Oak è compatibile con le versioni precedenti dello standard JCR 1.0, non vi sono quasi modifiche a livello di utente. Tuttavia, quando si imposta un’installazione AEM basata su Oak è necessario tenere conto di alcune differenze rilevanti:
+Poiché Oak è compatibile con le versioni precedenti dello standard JCR 1.0, non vi sono quasi modifiche a livello di utente. Tuttavia, esistono alcune differenze notevoli di cui devi tenere conto durante la configurazione di un’installazione di AEM basata su Oak:
 
 * Oak non crea gli indici automaticamente. Di conseguenza, se necessario, è necessario creare indici personalizzati.
 * A differenza di Jackrabbit 2, in cui le sessioni riflettono sempre lo stato più recente dell’archivio, con Oak una sessione riflette una visualizzazione stabile dell’archivio dal momento in cui è stata acquisita. Il motivo è dovuto al modello MVCC su cui si basa Oak.
@@ -134,5 +134,5 @@ Per ulteriori informazioni sulla piattaforma AEM, consulta anche gli articoli se
 
 * [Configurazione degli archivi di nodi e degli archivi di dati in AEM 6](/help/sites-deploying/data-store-config.md)
 * [Query e indicizzazione Oak](/help/sites-deploying/queries-and-indexing.md)
-* [Elementi di conservazione nell’AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementi di archiviazione in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM con MongoDB](/help/sites-deploying/aem-with-mongodb.md)

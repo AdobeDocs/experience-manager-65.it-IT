@@ -19,7 +19,7 @@ Scopri come gestire AEM 6.5. Queste guide descrivono le funzioni del sito, le op
 
 ## Articoli principali sull’amministrazione
 
-* [Gestione multisito](/help/sites-administering/msm.md)
+* [Gestione multi-sito](/help/sites-administering/msm.md)
 * [MSM e traduzione](/help/sites-administering/msm-and-translation.md)
 * [Dashboard operazioni](/help/sites-administering/operations-dashboard.md)
 * [Backup e ripristino](/help/sites-administering/backup-and-restore.md)
