@@ -9,8 +9,8 @@ docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 57%
@@ -23,7 +23,7 @@ L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti,
 
 >[!NOTE]
 >
->All&#39;esterno dell&#39;ambiente di authoring sono disponibili altri meccanismi di ricerca, ad esempio [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md).
+>All&#39;esterno dell&#39;ambiente di authoring sono disponibili altri meccanismi di ricerca, ad esempio [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Informazioni di base sulla ricerca {#search-basics}
 
@@ -71,7 +71,7 @@ Per cercare e filtrare le risorse:
    * Ricerche salvate
    * Directory di ricerca
    * Tag
-   * Criteri di ricerca, ad esempio Date modificate, Stato Publish, Stato LiveCopy.
+   * Criteri di ricerca, ad esempio Date modificate, Stato pubblicazione, Stato LiveCopy.
 
    >[!NOTE]
    >
@@ -80,7 +80,7 @@ Per cercare e filtrare le risorse:
    >
    >
    >    * A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Risorse e Community sono chiaramente specifici.
-   >    * È possibile personalizzare l&#39;istanza come [Forms di ricerca](/help/sites-administering/search-forms.md) (in base alla posizione all&#39;interno dell&#39;AEM).
+   >    * È possibile personalizzare l&#39;istanza come [Forms di ricerca](/help/sites-administering/search-forms.md) (in base alla posizione all&#39;interno di AEM).
    >
    >
 

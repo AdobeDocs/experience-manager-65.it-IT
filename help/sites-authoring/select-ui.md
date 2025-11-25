@@ -4,8 +4,8 @@ description: Configurare l’interfaccia utilizzata per lavorare in Adobe Experi
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Questa impostazione imposta l’interfaccia utente predefinita per la modifica d
 * [Passaggio all&#39;interfaccia classica per la sessione corrente](#switching-to-classic-ui-for-the-current-session)
 Passa all&#39;interfaccia classica per la sessione corrente.
 
-* Per l&#39;authoring di [&#x200B; pagine, il sistema effettua alcune sostituzioni in relazione all&#39;interfaccia utente](#ui-overrides-for-the-editor).
+* Per l&#39;authoring di [ pagine, il sistema effettua alcune sostituzioni in relazione all&#39;interfaccia utente](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
@@ -108,11 +108,9 @@ Le impostazioni definite da un utente o da un amministratore di sistema possono 
 * Durante l’authoring delle pagine:
 
    * L&#39;utilizzo dell&#39;editor classico viene forzato quando si accede alla pagina utilizzando `cf#` nell&#39;URL. Ad esempio:
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * L&#39;utilizzo dell&#39;editor touch è forzato quando si utilizza `/editor.html` nell&#39;URL o quando si utilizza un dispositivo touch. Ad esempio:
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Qualsiasi forzatura è temporanea e valida solo per la sessione del browser

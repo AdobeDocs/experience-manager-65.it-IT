@@ -9,9 +9,9 @@ docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 index: false
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2857'
 ht-degree: 6%
@@ -279,7 +279,7 @@ Quando apri un modulo configurato per l&#39;integrazione con Adobe Campaign, nel
 
 * Casella di selezione (Campaign)
 * Campo data (Campaign) e Campo data/HTML5 (Campaign)
-* Chiave principale crittografata (Campaign)
+* Chiave primaria crittografata (Campaign)
 * Visualizzazione errori (Campaign)
 * Chiave di riconciliazione nascosta (Campaign)
 * Campo numerico (Campaign)
@@ -406,7 +406,7 @@ L’esempio seguente mostra un componente Campo data (Campaign) con la larghezza
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-### Chiave principale crittografata (Campaign) {#encrypted-primary-key-campaign}
+### Chiave primaria crittografata (Campaign) {#encrypted-primary-key-campaign}
 
 Questo componente definisce il nome del parametro URL che conterrà l&#39;identificatore di un profilo di Adobe Campaign (**Identificatore risorsa principale** o **Chiave primaria crittografata** in Adobe Campaign Standard e 6.1, rispettivamente).
 

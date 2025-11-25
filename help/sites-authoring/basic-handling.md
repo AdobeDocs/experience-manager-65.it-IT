@@ -9,8 +9,8 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2965'
 ht-degree: 41%
@@ -97,7 +97,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
    <td>Queste console ti consentono di importare e <a href="/help/assets/assets.md">gestire risorse digitali</a> quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza di AEM. </td>
   </tr>
   <tr>
-   <td>Communities</td>
+   <td>Community</td>
    <td>Questa console consente di creare e gestire <a href="/help/communities/sites-console.md">siti community</a> per <a href="/help/communities/overview.md#engagement-community">coinvolgimento</a> e <a href="/help/communities/overview.md#enablement-community">abilitazione</a>.</td>
   </tr>
   <tr>
@@ -109,7 +109,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">frammento di esperienza</a> è un'esperienza autonoma che può essere riutilizzata su tutti i canali, con varianti e senza dover copiare e incollare ripetutamente le esperienze o parti di esse.</td>
   </tr>
   <tr>
-   <td>Moduli</td>
+   <td>Forms</td>
    <td>Questa console consente di creare, gestire ed elaborare <a href="/help/forms/using/introduction-aem-forms.md">moduli e documenti</a>.</td>
   </tr>
   <tr>
@@ -122,7 +122,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=it">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
-* [Soluzioni](https://business.adobe.com/it/)
+* [Soluzioni](https://business.adobe.com/)
 
   ![Soluzioni](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -305,7 +305,7 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco &#x200B;](#list-view)
+* [Vista a elenco ](#list-view)
 
 >[!NOTE]
 >

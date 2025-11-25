@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1853'
 ht-degree: 58%
@@ -17,7 +17,7 @@ ht-degree: 58%
 ---
 
 
-# Layout reattivo{#responsive-layout}
+# Layout dinamico{#responsive-layout}
 
 Adobe Experience Manager consente di realizzare un layout dinamico per le pagine utilizzando il componente **Contenitore di layout**.
 
@@ -71,7 +71,7 @@ A seconda del progetto, il Contenitore di layout può essere usato come il siste
 
 >[!NOTE]
 >
->Adobe fornisce la [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
+>Adobe fornisce [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout dinamico come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia di AEM al di fuori di AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
 
 >[!NOTE]
 >
@@ -208,7 +208,7 @@ La modalità **Layout** può essere avviata in due modi.
 
 * Utilizzando il menu [modalità nella barra degli strumenti](/help/sites-authoring/author-environment-tools.md#page-modes) e selezionando la modalità **Layout**
 
-   * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
+   * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Targeting**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
 
 * Quando [si modifica un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)

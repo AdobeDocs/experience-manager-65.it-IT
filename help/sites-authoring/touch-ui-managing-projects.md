@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 18%
@@ -27,7 +27,7 @@ Utilizzando la console, puoi creare un progetto, associare risorse al progetto e
 
 ## Requisiti di accesso {#access-requirements}
 
-Progetta una funzione AEM standard e non richiede alcuna configurazione aggiuntiva.
+Progetta una funzione standard di AEM e non richiede alcuna configurazione aggiuntiva.
 
 Tuttavia, affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano i progetti, ad esempio durante la creazione di progetti, la creazione di attività/flussi di lavoro o la visualizzazione e la gestione del team, tali utenti devono avere accesso in lettura a `/home/users` e `/home/groups`.
 
@@ -153,7 +153,7 @@ Per eliminare un progetto, segui la procedura riportata di seguito.
 1. Passa al livello principale della console **Progetti**.
 1. Seleziona il progetto nella console.
 1. Fare clic su **Elimina** nella barra degli strumenti.
-1. L’AEM può rimuovere/modificare i dati del progetto associato in seguito all’eliminazione del progetto. Selezionare le opzioni necessarie nella finestra di dialogo **Elimina progetto**.
+1. AEM può rimuovere/modificare i dati del progetto associato in seguito all’eliminazione del progetto. Selezionare le opzioni necessarie nella finestra di dialogo **Elimina progetto**.
    * Rimuovi gruppi e ruoli del progetto
    * Elimina cartella Assets del progetto
    * Termina flussi di lavoro per progetto

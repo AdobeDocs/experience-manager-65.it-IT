@@ -1,11 +1,11 @@
 ---
-title: Authoring delle pagine di contenuti nell’AEM
+title: Creazione di pagine di contenuti in AEM
 description: Le attività necessarie per creare una pagina di contenuti in Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -50,4 +50,4 @@ Facendo doppio clic o facendo doppio clic lentamente, viene visualizzata la barr
 Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva.
 
 * **Cerca durante la digitazione**
-In alcuni scenari (ad esempio, la selezione del percorso nelle finestre di dialogo di modifica) la ricerca di contenuto tramite l’interfaccia AEM presenta corrispondenze dinamiche durante la digitazione della query.
+In alcuni scenari (ad esempio, la selezione del percorso nelle finestre di dialogo di modifica) la ricerca di contenuto tramite l’interfaccia di AEM presenta corrispondenze dinamiche durante la digitazione della query.

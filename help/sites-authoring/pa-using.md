@@ -8,15 +8,15 @@ topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 4%
+source-wordcount: '640'
+ht-degree: 5%
 
 ---
 
-# Visualizzazione dei dati di analisi delle pagine{#seeing-page-analytics-data}
+# Visualizzazione dei dati analitici sulle pagine{#seeing-page-analytics-data}
 
 Utilizza i dati di analisi della pagina per misurare l’efficacia del contenuto della pagina.
 
@@ -79,23 +79,23 @@ Apri [Content Insight](/help/sites-authoring/content-insights.md) dalla console 
 1. Nella console Sites, seleziona la pagina per la quale desideri visualizzare Content Insights.
 1. Sulla barra degli strumenti, fai clic sull’icona Analytics e Recommendations.
 
-   ![Icona di Analytics e Recommendations](do-not-localize/chlimage_1-16a.png)
+   ![Icona Analytics and Recommendations](do-not-localize/chlimage_1-16a.png)
 
 ## Analytics visibile dall’Editor pagina (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
->Questo viene mostrato se l&#39;Activity Map [è stato configurato](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) per il tuo sito Web.
+>Questo viene mostrato se [Activity Map è stato configurato](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) per il tuo sito Web.
 
 >[!NOTE]
 >
->I dati per l’Activity Map provengono da Adobe Analytics.
+>I dati per Activity Map provengono da Adobe Analytics.
 
-Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) per visualizzare i dati rilevanti. Ad esempio:
+Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[ in modalità ](/help/sites-authoring/author-environment-tools.md#page-modes) per visualizzare i dati rilevanti. Ad esempio:
 
 ![aa-07](assets/aa-07.png)
 
-### Accesso all’Activity Map {#accessing-the-activity-map}
+### Accesso a Activity Map {#accessing-the-activity-map}
 
 Dopo aver selezionato la modalità [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes), ti verrà richiesto di immettere le credenziali Adobe Analytics.
 
@@ -105,9 +105,9 @@ Viene visualizzata la barra degli strumenti mobile di **Analytics**. Qui è poss
 
 * modificare il formato della barra degli strumenti utilizzando le doppie frecce (**>>**)
 * Attiva/disattiva dettagli pagina (icona a forma di occhio)
-* Configurare le impostazioni Activity Map (icona a forma di codice)
+* Configurare le impostazioni di Activity Map (icona a forma di codice)
 * Seleziona l’analisi da mostrare (vari selettori a discesa)
-* Chiudere l&#39;Activity Map e la barra degli strumenti (x)
+* Chiudi Activity Map e la barra degli strumenti (x)
 
 ![aa-09](assets/aa-09.png)
 
@@ -125,7 +125,7 @@ Puoi selezionare i dati analitici da visualizzare e come visualizzarli, utilizza
 
 ![aa-13](assets/aa-13.png)
 
-### Configurazione dell’Activity Map {#configuring-the-activity-map}
+### Configurazione di Activity Map {#configuring-the-activity-map}
 
 Utilizza l&#39;icona **Mostra impostazioni** per aprire la finestra di dialogo **Impostazioni Activity Map**.
 

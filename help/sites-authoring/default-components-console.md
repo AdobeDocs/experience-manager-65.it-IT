@@ -4,8 +4,8 @@ description: La console Componenti consente di sfogliare tutti i componenti defi
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 43%
@@ -41,7 +41,7 @@ Per visualizzare i dettagli di un componente specifico, fai clic sulla risorsa r
   Nella scheda Proprietà puoi:
 
    * Visualizzare le proprietà generali del componente.
-   * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [&#128279;](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
+   * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
 
       * Facendo clic sull’origine dell’icona si aprirà quel componente.
 

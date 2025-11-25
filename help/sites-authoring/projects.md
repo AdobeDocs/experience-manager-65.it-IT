@@ -4,11 +4,11 @@ description: I progetti consentono di raggruppare le risorse in un’unica entit
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
@@ -25,7 +25,7 @@ In qualità di utente, puoi:
 
 ## Requisiti di accesso {#access-requirements}
 
-Progetta una funzione AEM standard e non richiede alcuna configurazione aggiuntiva.
+Progetta una funzione standard di AEM e non richiede alcuna configurazione aggiuntiva.
 
 Tuttavia, affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano i progetti, ad esempio durante la creazione di progetti, la creazione di attività/flussi di lavoro o la visualizzazione e la gestione del team, tali utenti devono avere accesso in lettura a `/home/users` e `/home/groups`.
 
@@ -37,7 +37,7 @@ Dalla console Progetti è possibile accedere e gestire i tuoi progetti in AEM.
 
 ![Console Progetti](assets/screen-shot_2019-03-05at125110.png)
 
-La console Progetti è simile ad altre console dell’AEM e consente di eseguire diverse azioni sui singoli progetti e di regolare la tua visione dei progetti.
+La console Progetti è simile alle altre console di AEM e consente di eseguire diverse azioni sui singoli progetti e di regolare la visualizzazione dei progetti.
 
 ### Attiva/disattiva modalità {#modes}
 
@@ -196,12 +196,12 @@ Le attività consentono di monitorare lo stato di tutte le attività correlate a
 
 ## Modelli di progetto {#project-templates}
 
-I modelli fungono da base per avviare il progetto. L’AEM fornisce questi modelli di progetto standard.
+I modelli fungono da base per avviare il progetto. AEM fornisce questi modelli di progetto standard.
 
 * **Progetto multimediale** - Questo è un progetto di riferimento per attività relative ai file multimediali. Include diversi ruoli di progetto relativi ai file multimediali e flussi di lavoro relativi ai contenuti multimediali.
 * **[Progetto servizio fotografico per prodotto](/help/sites-authoring/managing-product-information.md)** - Questo è un esempio di riferimento per la gestione della fotografia di prodotto relativa a eCommerce.
 * **[Progetto di traduzione](/help/sites-administering/translation.md)** - Questo è un esempio di riferimento per la gestione delle attività relative alla traduzione. Include ruoli di base e flussi di lavoro per la gestione della traduzione.
-* **Progetto semplice** - Questo è un esempio di riferimento per tutti i progetti che non rientrano in altre categorie. Include tre ruoli di base e quattro flussi di lavoro generali per l’AEM.
+* **Progetto semplice** - Questo è un esempio di riferimento per tutti i progetti che non rientrano in altre categorie. Include tre ruoli di base e quattro flussi di lavoro AEM generali.
 
 In base al modello selezionato, all’interno del progetto sono disponibili diverse opzioni, ad esempio i ruoli utente e i flussi di lavoro forniti.
 
@@ -228,7 +228,7 @@ Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al p
 
 Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**.
 
-Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [&#x200B; durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
+Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [ durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -237,4 +237,4 @@ Per ulteriori dettagli sull’utilizzo dei progetti, consulta i seguenti documen
 * [Gestione dei progetti](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Utilizzo delle attività](/help/sites-authoring/task-content.md)
 * [Utilizzo dei flussi di lavoro per i progetti](/help/sites-authoring/projects-with-workflows.md)
-* [Progetto creativo e integrazione PIM](/help/sites-authoring/managing-product-information.md)
+* [Integrazione Progetto creativo e PIM](/help/sites-authoring/managing-product-information.md)

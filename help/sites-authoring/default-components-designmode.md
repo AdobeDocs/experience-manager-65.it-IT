@@ -4,8 +4,8 @@ description: Configurazione dei componenti di Adobe Experience Manager in modali
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -43,7 +43,7 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 
 >[!NOTE]
 >
->Per ulteriori informazioni su `parsys`, vedere [Sviluppo di componenti](/help/sites-developing/components.md) e [Linee guida per l&#39;utilizzo di modelli e componenti](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components).
+>Per ulteriori informazioni su [, vedere ](/help/sites-developing/components.md)Sviluppo di componenti[ e ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)Linee guida per l&#39;utilizzo di modelli e componenti`parsys`.
 
 >[!CAUTION]
 >
@@ -134,7 +134,7 @@ Per attivare o disattivare un componente:
 
    La scheda **Proprietà** consente di configurare importanti parametri di progettazione del componente. Ad esempio, per un componente immagine puoi definire le dimensioni minima e massima consentite per l’immagine.
 
-   **Caratteristiche**
+   **Funzioni**
 
    La scheda **Funzionalità** consente di abilitare o disabilitare funzionalità aggiuntive del componente. Ad esempio, per un componente immagine puoi definire l’orientamento dell’immagine, le opzioni di ritaglio disponibili e se è possibile caricare un’immagine.
 

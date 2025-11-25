@@ -9,8 +9,8 @@ docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 46%
@@ -27,7 +27,7 @@ Per aggiungere i contenuti si trascinano sulla pagina specifici [componenti](/he
 >
 >Il tuo account necessita dei [diritti di accesso appropriati](/help/sites-administering/security.md) e delle [autorizzazioni](/help/sites-administering/security.md#permissions) per modificare le pagine.
 >
->In caso di problemi, si consiglia di contattare l&#39;amministratore di Adobe.
+>In caso di problemi, Adobe consiglia di contattare l&#39;amministratore di sistema.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Se la pagina è soggetta a più flussi di lavoro, il numero di flussi di lavoro 
 
 ## Segnaposto Componente {#component-placeholder}
 
-Il segnaposto del componente è un indicatore che mostra dove è posizionato un componente quando lo rilasci, sopra il componente su cui stai passando con il puntatore del mouse.
+Il segnaposto del componente è un indicatore che mostra dove è posizionato un componente quando lo rilasci, sopra il componente su cui stai passando il puntatore.
 
 * Quando aggiungi un componente alla pagina (trascinandolo dal browser dei componenti):
 
@@ -173,7 +173,7 @@ Questa opzione è valida per i seguenti tipi di risorse (alcuni dipendono dal si
 <table>
  <tbody>
   <tr>
-   <th><strong>Tipo risorsa</strong></th>
+   <th><strong>Tipo di risorsa</strong></th>
    <th><strong>Tipo di componente risultante</strong></th>
   </tr>
   <tr>
@@ -193,7 +193,7 @@ Questa opzione è valida per i seguenti tipi di risorse (alcuni dipendono dal si
    <td>Flash</td>
   </tr>
   <tr>
-   <td>Frammenti di contenuto</td>
+   <td>Frammento di contenuto</td>
    <td>Frammento di contenuto<br /> </td>
   </tr>
  </tbody>
@@ -351,7 +351,7 @@ Per tipi di componenti specifici puoi trascinare e rilasciare le risorse dal bro
 | Documento | Scarica |
 | Prodotto | Prodotto |
 | Video | Flash |
-| Frammenti di contenuto | Frammenti di contenuto |
+| Frammento di contenuto | Frammento di contenuto |
 
 ## Modifica (Contenuto) Modalità a tutto schermo {#edit-content-full-screen-mode}
 
@@ -420,7 +420,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 * [Gestione multisito](/help/sites-administering/msm.md)
 * [Lanci](/help/sites-authoring/launches.md) (se basati su Live Copy).
-* Componenti specifici, ad esempio il sistema di paragrafi ereditati all’interno di Geometrixx.
+* Componenti specifici, ad esempio il sistema paragrafo ereditato in Geometrixx.
 
 È possibile annullare l’ereditarietà, quindi riabilitarla. A seconda del componente, questo può essere disponibile da:
 
@@ -492,7 +492,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 
 ### Modalità Anteprima {#preview-mode}
 
-Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1&rbrace;. &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes) Questa modalità consente di effettuare le seguenti operazioni:
+Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1}. ](/help/sites-authoring/author-environment-tools.md#page-modes) Questa modalità consente di effettuare le seguenti operazioni:
 
 * Nascondi vari meccanismi di modifica per avere una visualizzazione rapida della pagina quando viene pubblicata.
 * Utilizza i collegamenti per navigare.

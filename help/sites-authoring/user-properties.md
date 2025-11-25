@@ -1,5 +1,5 @@
 ---
-title: Configurazione dell’ambiente dell’account
+title: 'Configurazione dell’ambiente dell’account  '
 description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 63%
@@ -82,7 +82,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Presentazione data relativa**
 
-  Per migliorare la leggibilità, AEM riproduce le date degli ultimi sette giorni come date relative (ad esempio, Tre giorni fa) e le date più lontane come date esatte (ad esempio, 20 marzo 2017).
+  Per migliorare la leggibilità, AEM esegue il rendering delle date degli ultimi sette giorni come date relative (ad esempio, Tre giorni fa) e delle date precedenti come date esatte (ad esempio, 20 marzo 2017).
 
   Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
 

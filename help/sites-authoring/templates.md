@@ -1,5 +1,5 @@
 ---
-title: Creazione di modelli di pagina
+title: 'Creazione di modelli di pagina  '
 description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,17 +9,17 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4825'
-ht-degree: 72%
+source-wordcount: '4832'
+ht-degree: 73%
 
 ---
 
 # Creazione di modelli di pagina  {#creating-page-templates}
 
-Quando crei una pagina, devi selezionare un modello, che viene utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati.
+Quando crei una pagina, è necessario selezionare un modello, il quale verrà utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati.
 
 Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore dimodelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
 
@@ -94,7 +94,7 @@ Le attività descritte nel presente documento sono elencate con il ruolo respons
 
 ### Modelli modificabili e statici {#editable-and-static-templates}
 
-L’AEM offre ora due tipi di modelli di base:
+AEM ora offre due tipi di modelli di base:
 
 * [Modelli modificabili](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
@@ -105,7 +105,7 @@ L’AEM offre ora due tipi di modelli di base:
 
 * Modelli statici
 
-   * Sono disponibili modelli statici per diverse versioni di AEM.
+   * I modelli statici sono disponibili per diverse versioni di AEM.
    * Sono [fornite dagli sviluppatori](/help/sites-developing/page-templates-static.md), pertanto non possono essere create o modificate dagli autori.
    * Vengono copiate per creare la nuova pagina, ma non esiste alcuna connessione dinamica successiva (anche se il nome del modello è registrato per informazione).
    * Utilizza [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) per rendere persistenti le proprietà di progettazione.
@@ -215,7 +215,7 @@ Per visualizzare e/o modificare le proprietà:
 
 >[!NOTE]
 >
->Lo stato di un modello (bozza, attivato o disattivato) è indicato nella console.
+>Lo stato di un modello (bozza, abilitato o disabilitato) è indicato nella console.
 
 #### Immagine della miniatura del modello {#template-thumbnail-image}
 
@@ -237,7 +237,7 @@ Per definire la miniatura del modello:
 
 Per poter utilizzare un modello quando si crea una pagina, è necessario svolgere le seguenti operazioni:
 
-* [Attiva i modelli](#enablingatemplate) per renderli disponibili per l’uso durante la creazione di pagine.
+* [Abilita i modelli](#enablingatemplate) per renderli disponibili per l’uso durante la creazione di pagine.
 * [Consenti ai modelli](#allowingatemplate) di specificare i rami di contenuto in cui è possibile utilizzare il modello.
 
 #### Abilitazione di un modello - Autore del modello {#enabling-a-template-template-author}
@@ -254,7 +254,7 @@ Un modello può essere abilitato o disabilitato per renderlo disponibile o non d
 
 >[!NOTE]
 >
->Lo stato di un modello (bozza, attivato o disattivato) è indicato nella console.
+>Lo stato di un modello (bozza, abilitato o disabilitato) è indicato nella console.
 
 #### Consentire un modello - Autore {#allowing-a-template-author}
 
@@ -392,7 +392,7 @@ In modalità **Struttura** dell&#39;editor modelli:
   >
   >Sebbene non sia identica, l’aggiunta di componenti e risorse a un modello ha molte somiglianze con azioni simili durante la [creazione di pagine](/help/sites-authoring/editing-content.md).
 
-* **Azioni componente**
+* **Azioni dei componenti**
 
   Una volta aggiunti al modello, effettua le azioni sui componenti: Ogni singola istanza dispone di una barra degli strumenti che consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
 
@@ -472,11 +472,11 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   Per rimuovere una configurazione, fare clic sul pulsante **Elimina** situato a destra della configurazione.
 
-  Per rimuovere una configurazione, fai clic sul pulsante **&#x200B; Elimina**.
+  Per rimuovere una configurazione, fai clic sul pulsante** Elimina**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
-  *Caratteristiche*
+  *Funzioni*
 
   La scheda **Funzionalità** consente di abilitare o disabilitare funzionalità aggiuntive del componente.
 
@@ -490,7 +490,7 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   >[!NOTE]
   >
-  >[I criteri dei contenuti per i componenti che si avvalgono dell&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni dell&#39;interfaccia utente. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[I criteri dei contenuti per i componenti che si avvalgono dell&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni dell&#39;interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Criteri e proprietà (contenitore di layout)**
 

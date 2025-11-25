@@ -1,5 +1,5 @@
 ---
-title: Progetto creativo e integrazione PIM
+title: Integrazione Progetto creativo e PIM
 description: Creative Project semplifica l’intero flusso di lavoro del servizio fotografico, tra cui la generazione di una richiesta di servizio fotografico, il caricamento di un servizio fotografico, la collaborazione a un servizio fotografico e la creazione di pacchetti di risorse approvate
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 ---
 
 
-# Progetto creativo e integrazione PIM {#creative-project-and-pim-integration}
+# Integrazione Progetto creativo e PIM {#creative-project-and-pim-integration}
 
 Se sei un addetto al marketing o un professionista della creatività, puoi utilizzare gli strumenti di Creative Project in Adobe Experience Manager (AEM) per gestire la fotografia di prodotti e i relativi processi creativi all’interno della tua organizzazione.
 
@@ -34,7 +34,7 @@ Puoi utilizzare Creative Project per semplificare le seguenti attività nel flus
 
 ## Flussi di lavoro per servizio fotografico per prodotto  {#exploring-product-photo-shoot-workflows}
 
-Creative Project fornisce vari modelli di progetto per soddisfare i diversi requisiti del progetto. Il modello **Product Photo Shoot Project** è già disponibile. Questo modello include flussi di lavoro per servizio fotografico che consentono di avviare e gestire richieste di servizio fotografico per prodotto. Include inoltre una serie di attività che consentono di ottenere immagini digitali per i prodotti attraverso appropriati processi di revisione e approvazione.
+In Creative Project sono disponibili vari modelli di progetto per soddisfare i diversi requisiti del progetto. Il modello **Product Photo Shoot Project** è già disponibile. Questo modello include flussi di lavoro per servizio fotografico che consentono di avviare e gestire richieste di servizio fotografico per prodotto. Include inoltre una serie di attività che consentono di ottenere immagini digitali per i prodotti attraverso appropriati processi di revisione e approvazione.
 
 ## Crea un progetto servizio fotografico per prodotto {#create-a-product-photo-shoot-project}
 
@@ -64,7 +64,7 @@ Un **progetto servizio fotografico per prodotto** include i seguenti flussi di l
 * **Flusso di lavoro per servizio fotografico per prodotto (integrazione Commerce)**: questo flusso di lavoro utilizza l&#39;integrazione con il sistema di gestione delle informazioni sui prodotti (PIM) per generare automaticamente un elenco di foto per i prodotti selezionati (gerarchia). Al termine del flusso di lavoro, puoi visualizzare i dati dei prodotti come parte dei metadati della risorsa.
 * **Flusso di lavoro per servizio fotografico per prodotto**: questo flusso di lavoro ti consente di fornire un elenco di foto invece di dipendere dall&#39;integrazione con commerce. Mappa le immagini caricate su un file CSV nella cartella delle risorse del progetto.
 
-Utilizza il flusso di lavoro **Servizio fotografico per prodotto (integrazione Commerce)** per mappare le risorse immagine con i prodotti dell&#39;AEM. Questo flusso di lavoro utilizza l&#39;integrazione con commerce per collegare le immagini approvate ai dati di prodotto esistenti nel percorso `/etc/commerce`.
+Utilizza il flusso di lavoro **Servizio fotografico per prodotto (integrazione Commerce)** per mappare le risorse immagine con i prodotti in AEM. Questo flusso di lavoro utilizza l&#39;integrazione con commerce per collegare le immagini approvate ai dati di prodotto esistenti nel percorso `/etc/commerce`.
 
 Il flusso di lavoro **Servizio fotografico per prodotto (integrazione Commerce)** include le attività seguenti:
 
@@ -195,7 +195,7 @@ L&#39;attività **Crea elenco di foto** consente al proprietario del progetto di
 
    ![Visualizza elenco di foto](assets/chlimage_1-148a.png)
 
-   Per modificare i dati esistenti o aggiungere nuovi dati, fare clic su **Modifica** nella barra degli strumenti. È possibile modificare solo i campi **Product &#x200B;** e **Description**.
+   Per modificare i dati esistenti o aggiungere nuovi dati, fare clic su **Modifica** nella barra degli strumenti. È possibile modificare solo i campi **Product **e **Description**.
 
    ![Modifica elenco di foto](assets/chlimage_1-149a.png)
 
@@ -297,7 +297,7 @@ Puoi passare alle risorse del progetto utilizzando l’interfaccia utente di Ass
 
 Fai clic sul livello successivo per visualizzare i prodotti in base alla gerarchia di dati del prodotto.
 
-In Creative Project le risorse approvate vengono associate al prodotto di riferimento. I metadati della risorsa vengono aggiornati con il riferimento al prodotto e le informazioni di base nella scheda **Dati prodotto**, in proprietà risorsa, sono visualizzati nella sezione Metadati risorse AEM.
+In Creative Project le risorse approvate vengono associate al prodotto di riferimento. I metadati della risorsa vengono aggiornati con il riferimento al prodotto e le informazioni di base nella scheda **Dati prodotto**, in proprietà risorsa, sono visualizzati nella sezione Metadati risorse di AEM.
 
 >[!NOTE]
 >

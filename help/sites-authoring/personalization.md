@@ -4,8 +4,8 @@ description: Scopri come Adobe Experience Manager 6.5 può creare contenuti pers
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 36%
@@ -16,11 +16,11 @@ ht-degree: 36%
 
 ## Personalizzazione e targeting dei contenuti {#personalization-and-content-targeting}
 
-L’AEM fornisce un framework di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personalizzate.
+AEM fornisce un framework di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personalizzate.
 
 ## Modalità di targeting {#targeting-mode}
 
-[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
+[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. ](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
 
 ## Attività {#activities}
 
@@ -34,7 +34,7 @@ Utilizza la [console Attività](/help/sites-authoring/activitylib.md) per creare
 
 ## Esperienze {#experiences}
 
-Per ogni attività, definisci una o più esperienze che identificano il pubblico di destinazione. AEM ti consente di controllare il contenuto che comprende ogni esperienza.
+Per ogni attività, definisci una o più esperienze che identificano il pubblico target. AEM ti consente di controllare il contenuto che comprende ogni esperienza.
 
 I tipi di pubblico si basano su segmenti di marketing creati in AEM o Adobe Target. Quando un visitatore apre una pagina web, la logica della pagina determina il pubblico a cui appartiene e visualizza il contenuto creato per tale pubblico.
 

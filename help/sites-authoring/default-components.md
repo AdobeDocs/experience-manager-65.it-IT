@@ -4,8 +4,8 @@ description: Adobe Experience Manager viene fornito con vari componenti pronti a
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 34%
@@ -14,7 +14,7 @@ ht-degree: 34%
 
 # Componenti{#components}
 
-Adobe Experience Manager (AEM) viene fornito con vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. I componenti sono disponibili quando si [modifica una pagina](/help/sites-authoring/editing-content.md) e, per facilitare l’applicazione di filtri, sono raggruppati per area funzionale principale, ovvero per gruppi di componenti.
+Adobe Experience Manager (AEM) è dotato di vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. I componenti sono disponibili quando si [modifica una pagina](/help/sites-authoring/editing-content.md) e, per facilitare l’applicazione di filtri, sono raggruppati per area funzionale principale, ovvero per gruppi di componenti.
 
 I componenti sono disponibili quando [si modifica una pagina](/help/sites-authoring/editing-content.md). Per facilitare il filtraggio, i componenti sono raggruppati per area funzionale principale (ovvero per gruppi di componenti).
 
@@ -46,7 +46,7 @@ I componenti sono ordinati in base a varie categorie, denominate gruppi di compo
 
 ## Panoramica di tutti i componenti {#overview-of-all-components}
 
-La [console Componenti](/help/sites-authoring/default-components-console.md) fornisce una panoramica dei gruppi di componenti e dei componenti forniti dall&#39;installazione dell&#39;AEM. Puoi visualizzare le informazioni principali sui singoli componenti e sul relativo utilizzo.
+La [console Componenti](/help/sites-authoring/default-components-console.md) fornisce una panoramica dei gruppi di componenti e dei componenti forniti dall&#39;installazione di AEM. Puoi visualizzare le informazioni principali sui singoli componenti e sul relativo utilizzo.
 
 ## Componenti - Aree principali {#components-major-areas}
 
@@ -56,11 +56,11 @@ Nelle pagine seguenti sono disponibili collegamenti ad alcune importanti informa
 
 * [Community](/help/communities/author-communities.md) - I componenti forniscono funzionalità interattive per un sito Web, ad esempio forum e commenti. Molti di questi componenti sono inclusi durante la creazione di un [sito community](/help/communities/overview.md).
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - La funzionalità eCommerce di AEM include anche una serie di componenti. L’uso effettivo può dipendere dal motore di e-commerce utilizzato.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - La funzionalità eCommerce in AEM include anche una serie di componenti. L’uso effettivo può dipendere dal motore di e-commerce utilizzato.
 
 ### Configurazione dei componenti {#configuring-components}
 
 Oltre ai componenti a cui gli autori possono accedere in un’installazione standard, sono disponibili vari altri componenti.
 
-* Se la pagina è basata sul modello moderno consigliato e modificabile, puoi [modificare il modello](/help/sites-authoring/templates.md) per attivarlo o disattivarlo, nonché modificare i parametri di componenti specifici.
+* Se la pagina è basata sul modello moderno consigliato e modificabile, puoi [modificare il modello](/help/sites-authoring/templates.md) per abilitarlo o disabilitarlo, nonché modificare i parametri di componenti specifici.
 * Se la pagina è basata su un modello statico, è possibile utilizzare la [modalità progettazione](/help/sites-authoring/default-components-designmode.md#enable-disable-components) per abilitare/disabilitare questi e modificare i parametri per componenti specifici.

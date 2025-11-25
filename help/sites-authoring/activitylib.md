@@ -9,11 +9,11 @@ docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1937'
-ht-degree: 76%
+source-wordcount: '1936'
+ht-degree: 75%
 
 ---
 
@@ -37,7 +37,7 @@ Le attività vengono visualizzate con un’etichetta che descrive il tipo di att
 
 * XT: targeting dell’esperienza Adobe Target
 * A/B: test A/B di Adobe Target
-* AEM - Targeting Adobe Experience Manager (basato su contexthub o clientcontext)
+* AEM: targeting Adobe Experience Manager (basato su contexthub o clientcontext)
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
@@ -45,15 +45,15 @@ Le attività vengono visualizzate con un’etichetta che descrive il tipo di att
 >
 >Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:
 >
->* Se l&#39;opzione **xt_only** è abilitata nel tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
+>* Se l&#39;opzione **xt_only** è abilitata nel tenant di Adobe Target (clientcode) utilizzato sul lato AEM per la connessione ad Adobe Target, puoi creare **solo** attività XT in AEM.
 >
->* Se le opzioni **xt_only** sono abilitate **not** nel tenant di Adobe Target (clientcode), puoi creare **entrambe** le attività XT e A/B nell&#39;AEM.
+>* Se le opzioni **xt_only** sono abilitate **not** nel tenant di Adobe Target (clientcode), puoi creare **entrambe** le attività XT e A/B in AEM.
 >
->**Nota aggiuntiva:** **xt_only** options è un&#39;impostazione applicata a un determinato tenant di Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
+>**Nota aggiuntiva:** **xt_only** options è un&#39;impostazione applicata a un determinato tenant di Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi abilitare o disabilitare questa opzione da AEM.
 
 >[!CAUTION]
 >
->Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull’istanza di pubblicazione, in modo che non sia accessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+>Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** nell&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 >
 >Consulta [Prerequisiti per l&#39;integrazione con Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) per informazioni dettagliate.
 
@@ -77,16 +77,16 @@ Quando crei un marchio utilizzando la console Attività, questa viene visualizza
 Aggiungi un’attività o modifica un’attività esistente per concentrare le tue attività di marketing su tipi di pubblico specifici. Quando crei o modifichi un’attività, è necessario specificare le seguenti informazioni:
 
 * **Nome:** il nome dell’attività.
-* **Motore di destinazione:** [AEM](/help/sites-authoring/personalization.md#aem) oppure [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) come motore per il contenuto di destinazione.
+* **Motore di targeting:** [AEM](/help/sites-authoring/personalization.md#aem) oppure [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) come motore per il contenuto target.
 
-* **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target è per il motore di destinazione.
-* **Tipo di attività: &#x200B;** il tipo di attività, test A/B o Targeting delle esperienze
+* **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target come motore di targeting.
+* **Tipo di attività: **il tipo di attività, test A/B o Targeting delle esperienze
 * **Obiettivo:** (facoltativo) una descrizione dell’attività.
-* **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing di destinazione.
+* **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing per cui si esegue il targeting.
 * **Traffic Percentages (Percentuali di traffico):** se è selezionato il test A/B, puoi modificare la quantità di traffico (in percentuale) che viene indirizzato a ogni esperienza.
 * **Durata:** il periodo di tempo in cui viene applicata l’attività.
 * **Priorità:** la priorità relativa dell’attività. Quando le attività forniscono contenuto per gli stessi segmenti di utenti, l’attività della priorità superiore ha la precedenza.
-* **Metrica per obiettivo:** se Adobe Target è selezionato come motore di destinazione, puoi aggiungere all’attività le metriche di successo. È necessaria una metrica di successo.
+* **Metrica per obiettivo:** se Adobe Target è selezionato come motore di targeting, puoi aggiungere all’attività le metriche di successo. È necessaria una metrica di successo.
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Per aggiungere un’attività:
 1. Aggiungi una o più esperienze all’attività. Fai clic su **Aggiungi esperienza**.
 1. Se utilizzi il targeting di AEM o il targgeting esperienze di Adobe Target:
 
-   1. Fai clic su **Seleziona pubblico &#x200B;** e seleziona il segmento al quale viene eseguito il targeting dell’esperienza.
+   1. Fai clic su **Seleziona pubblico **e seleziona il segmento al quale viene eseguito il targeting dell’esperienza.
    1. Fai clic su **Aggiungi esperienza**, digita un nome e fai clic su **OK**.
 
    1. Fai clic su **Avanti**.
@@ -154,7 +154,7 @@ Per pubblicare o annullare la pubblicazione delle attività:
 
    ![schermata_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
-1. Per pubblicare, fai clic su **Publish**. Per annullare la pubblicazione, fare clic su **Annulla pubblicazione**. L’attività o le attività vengono pubblicate o ne viene annullata la pubblicazione e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento della schermata).
+1. Per pubblicare, fai clic su **Pubblica**. Per annullare la pubblicazione, fare clic su **Annulla pubblicazione**. L’attività o le attività vengono pubblicate o ne viene annullata la pubblicazione e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento della schermata).
 
 ## Attività sulle istanze di authoring e pubblicazione {#activities-on-author-and-publish-instances}
 
@@ -201,7 +201,7 @@ Queste condizioni si applicano alle attività sulle istanze di authoring e di pu
 Quando un’attività viene sincronizzata, si crea una campagna corrispondente in Adobe Target:
 
 * Le attività sull’istanza di pubblicazione hanno lo stesso nome della campagna Adobe Target corrispondente.
-* Le attività sull&#39;istanza autore corrispondono alle campagne Target con lo stesso nome con il suffisso `_author`.
+* Le attività sull&#39;istanza di authoring corrispondono alle campagne Target con lo stesso nome con il suffisso `_author`.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 

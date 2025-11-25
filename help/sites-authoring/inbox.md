@@ -4,8 +4,8 @@ description: Gestione delle attività con la casella in entrata in Adobe Experie
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 39%
@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # Casella in entrata{#your-inbox}
 
-Puoi ricevere notifiche da varie aree dell’AEM, inclusi flussi di lavoro e progetti; ad esempio, su:
+Puoi ricevere notifiche da varie aree di AEM, inclusi flussi di lavoro e progetti; ad esempio, su:
 
 * Attività:
 
-   * possono essere create anche in vari punti nell&#39;interfaccia utente dell&#39;AEM, ad esempio in **Progetti**,
+   * possono essere create anche in vari punti nell&#39;interfaccia utente di AEM, ad esempio in **Progetti**,
    * possono essere il prodotto di un passaggio del flusso di lavoro **Crea attività** o **Crea attività progetto**.
 
 * Flussi di lavoro:
@@ -33,7 +33,7 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 
 >[!NOTE]
 >
->L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Per informazioni dettagliate, consulta [Attività amministrative predefinite](#out-of-the-box-administrative-tasks).
+>AEM preconfigurato viene fornito con le attività amministrative assegnate al gruppo di utenti amministratore. Per informazioni dettagliate, consulta [Attività amministrative predefinite](#out-of-the-box-administrative-tasks).
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 >* [Progetti](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md)
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/using/introduction-aem-forms.md)
+>* [Moduli](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
@@ -57,7 +57,7 @@ Da una qualsiasi console, il numero corrente di elementi nella casella in entrat
 
 ## Attività amministrative predefinite  {#out-of-the-box-administrative-tasks}
 
-L’AEM preconfigurato è precaricato con quattro attività assegnate al gruppo di utenti amministratore.
+La soluzione preconfigurata AEM viene fornita con quattro attività assegnate al gruppo di utenti amministratore.
 
 * [Configura Analytics e Targeting](/help/sites-administering/opt-in.md)
 * [Applica elenco di controllo sicurezza AEM](/help/sites-administering/security-checklist.md)
@@ -70,7 +70,7 @@ Per aprire la casella in entrata delle notifiche AEM:
 
 1. Fai clic sull’indicatore nella barra degli strumenti.
 
-1. Seleziona **Visualizza tutto**. Verrà aperta la cartella Posta in arrivo **AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
+1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
    Per entrambe le visualizzazioni è inoltre possibile definire [Impostazioni visualizzazione](#inbox-view-settings); le opzioni disponibili dipendono dalla visualizzazione corrente.
@@ -131,7 +131,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
 L’opzione Admin Control consente agli amministratori di:
 
-* Personalizzare le colonne della casella in entrata dell’AEM
+* Personalizzare le colonne della casella in entrata di AEM
 
 * Personalizzare il testo e il logo dell’intestazione
 
@@ -140,10 +140,10 @@ L’opzione Admin Control consente agli amministratori di:
 L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrators` o `workflow-administrators`.
 
 * **Personalizzazione colonna**: personalizza una casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
-   * **Aggiungi colonna**: selezionare una colonna da aggiungere nella casella in entrata AEM.
+   * **Aggiungi colonna**: seleziona una colonna da aggiungere nella casella in entrata di AEM.
    * **Modifica colonna**: passa il mouse sul titolo della colonna e seleziona l&#39;icona ![modifica](assets/edit.svg) per immettere il nome visualizzato della colonna.
-   * **Elimina colonna**: selezionare l&#39;icona ![elimina](assets/delete_updated.svg) per eliminare la colonna dalla casella in entrata AEM.
-   * **Sposta colonna**: trascina l&#39;icona ![Sposta](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella casella in entrata AEM.
+   * **Elimina colonna**: seleziona l&#39;icona ![elimina](assets/delete_updated.svg) per eliminare la colonna dalla casella in entrata di AEM.
+   * **Sposta colonna**: trascina l&#39;icona ![sposta](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella casella in entrata di AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
@@ -219,7 +219,7 @@ Dalla casella in entrata è possibile creare le attività:
       * **Contenuto**; simile al payload, è un riferimento dall&#39;attività a una posizione nell&#39;archivio
       * **Descrizione**
       * **Priorità attività**
-      * **Data inizio**
+      * **Data di inizio**
       * **Data di scadenza**
 
    ![wf-86](assets/wf-86.png)
@@ -252,7 +252,7 @@ Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md
 
       * **Titolo**
       * **Descrizione**
-      * **Data inizio**
+      * **Data di inizio**
       * **Data di scadenza**
       * **Utente** e ruolo
 

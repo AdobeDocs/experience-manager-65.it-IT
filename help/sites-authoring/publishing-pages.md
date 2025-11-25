@@ -4,11 +4,11 @@ description: Scopri come pubblicare le pagine di contenuto in Adobe Experience M
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 2a843cefdd881e3cab60b2ddba12a26d0a498d13
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1701'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -25,13 +25,13 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
 >* **Pubblicare/Annullare la pubblicazione**
->  &#x200B;>  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
 >* **Attivare/Disattivare**
->  &#x200B;>  Sinonimi di pubblicare/annullare la pubblicazione.
+>  Sinonimi di pubblicare/annullare la pubblicazione.
 >
 >* **Replicare/Replica**
->  &#x200B;>  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
+>  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 
 ## Privilegi insufficienti {#insufficient-privileges}
 
@@ -87,8 +87,8 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 Nella console Sites sono disponibili due opzioni per la pubblicazione:
 
-* [Pubblicazione rapida &#x200B;](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Gestisci pubblicazione &#x200B;](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Pubblicazione rapida ](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Gestisci pubblicazione ](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Pubblicazione rapida  {#quick-publish}
 
@@ -127,7 +127,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    Con Pubblica più tardi viene avviato un flusso di lavoro per attivare le pagine selezionate alla data e all’ora specificate. Al contrario, l’annullamento della pubblicazione in un secondo momento avvia un flusso di lavoro per annullare la pubblicazione della pagina o delle pagine selezionate in un momento specifico.
 
-   Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-administering/workflows.md) e interrompete il flusso di lavoro corrispondente.
+   Per annullare un’attività di pubblicazione o annullamento della pubblicazione pianificata per un momento successivo, accedi alla [console Flusso di lavoro](/help/sites-administering/workflows.md) e termina il flusso di lavoro corrispondente.
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -229,7 +229,7 @@ Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazion
 
    Con Pubblica più tardi viene avviato un flusso di lavoro per pubblicare tale versione della pagina alla data e all’ora specificate. In modo analogo, se si sceglie di annullare la pubblicazione in un secondo momento, verrà attivato un flusso di lavoro per annullare la pubblicazione delle pagine selezionate alla data e all’ora specificate.
 
-   Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-administering/workflows.md) e interrompete il flusso di lavoro corrispondente.
+   Per annullare un’attività di pubblicazione o annullamento della pubblicazione pianificata per un momento successivo, accedi alla [console Flusso di lavoro](/help/sites-administering/workflows.md) e termina il flusso di lavoro corrispondente.
 
 1. Per completare l&#39;annullamento della pubblicazione, continuare la procedura guidata come si farebbe per [pubblicare la pagina](/help/sites-authoring/publishing-pages.md#manage-publication).
 
@@ -247,7 +247,7 @@ Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, 
 
 1. Nella finestra di dialogo **Includi elementi figlio**, deseleziona le opzioni:
 
-   * Solo gli elementi figli di primo livello
+   * Solo gli elementi secondari di primo livello
    * Solo pagine già pubblicate
 
    Queste opzioni sono selezionate per impostazione predefinita, pertanto è necessario ricordarsi di deselezionarle. Fai clic su **Aggiungi** per confermare e aggiungere il contenuto alla pubblicazione o all&#39;annullamento della pubblicazione.

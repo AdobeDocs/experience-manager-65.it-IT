@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dei contenuti di destinazione in più siti
-description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati
+description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito incorporato di AEM per contenuti mirati
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 84%
@@ -18,7 +18,7 @@ ht-degree: 84%
 
 # Utilizzo dei contenuti di destinazione in più siti{#working-with-targeted-content-in-multisites}
 
-Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati.
+Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito incorporato di AEM per contenuti mirati.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ In qualsiasi momento puoi sospendere o ripristinare l’ereditarietà. Inoltre, 
 
 Il supporto multisito per contenuti mirati è disponibile come funzionalità predefinita e consente di inviare contenuti mirati dalla pagina master gestita tramite MSM a una Live Copy locale o di gestire modifiche globali e locali di tali contenuti.
 
-È possibile gestirlo in un’**area**. Le aree separano il contenuto di destinazione (attività, esperienze e offerte) utilizzato in siti diversi e forniscono un meccanismo MSM per creare e gestire l’ereditarietà di contenuti di destinazione insieme all’ereditarietà del sito. Questo impedisce di dover ricreare contenuti mirati nei siti ereditati, come era richiesto nell’AEM prima della versione 6.2.
+È possibile gestirlo in un’**area**. Le aree separano il contenuto di destinazione (attività, esperienze e offerte) utilizzato in siti diversi e forniscono un meccanismo MSM per creare e gestire l’ereditarietà di contenuti di destinazione insieme all’ereditarietà del sito. Questo impedisce di dover ricreare contenuti mirati nei siti ereditati, come era richiesto in AEM prima della versione 6.2.
 
 In un’area, solo le attività collegate a tale area vengono inviate alle Live Copy. Per impostazione predefinita, è selezionata l’Area master. Dopo aver creato altre aree, puoi collegarle ai siti o alle pagine per indicare a quale contenuto di destinazione viene inviato.
 

@@ -8,15 +8,15 @@ topic-tags: personalization
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
 
 ---
 
-# Creazione di Adobe Campaign Forms in AEM {#creating-adobe-campaign-forms-in-aem}
+# Creazione di moduli di Adobe Campaign in AEM {#creating-adobe-campaign-forms-in-aem}
 
 AEM consente di creare e utilizzare moduli che interagiscono con Adobe Campaign sul sito web. Campi specifici possono essere inseriti nei moduli e mappati al database di Adobe Campaign.
 

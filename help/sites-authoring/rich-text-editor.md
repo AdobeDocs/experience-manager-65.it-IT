@@ -1,27 +1,27 @@
 ---
-title: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti
+title: Utilizzo dell’editor Rich Text per l’authoring dei contenuti
 description: Utilizzo dell’Editor Rich Text per creare contenuti in Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 44903bc3e68f46f9880d31c33b7dc9e7598ddc38
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 31%
 
 ---
 
-# Utilizzo dell’Editor Rich Text per l’authoring dei contenuti {#use-rich-text-editor-to-author-content}
+# Utilizzo dell’editor Rich Text per l’authoring dei contenuti {#use-rich-text-editor-to-author-content}
 
 L’Editor Rich Text è un componente essenziale per l’inserimento di contenuti di testo in AEM. Costituisce la base di varie componenti, tra cui:
 
-* [Testo](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tabella](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Testo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tabella](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Modifica diretta {#in-place-editing}
 
-Se si seleziona un componente basato su testo con un solo clic, verrà visualizzata la barra degli strumenti del componente [&#128279;](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
+Se si seleziona un componente basato su testo con un solo clic, verrà visualizzata la barra degli strumenti del componente [](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
 
 ![schermata_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 

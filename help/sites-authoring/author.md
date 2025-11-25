@@ -4,8 +4,8 @@ description: Concetti di authoring e pubblicazione in Adobe Experience Manager 6
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 28%
@@ -16,7 +16,7 @@ ht-degree: 28%
 
 ## Concetto di authoring (e pubblicazione) {#concept-of-authoring-and-publishing}
 
-L’AEM offre due ambienti:
+AEM offre due ambienti:
 
 * Autore
 * Pubblicazione
@@ -30,7 +30,7 @@ L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare
 
 ![Panoramica degli ambienti](assets/chlimage_1-132.png)
 
-Nell’ambiente di authoring, le funzionalità dell’AEM sono rese disponibili tramite due interfacce utente. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
+Nell’ambiente di authoring, le funzionalità di AEM sono rese disponibili tramite due interfacce. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
 
 ### Ambiente di authoring {#author-environment}
 
@@ -58,7 +58,7 @@ Sono anche disponibili attività amministrative per la gestione dei contenuti:
 
 >[!NOTE]
 >
->L&#39;AEM è anche [amministrato](/help/sites-administering/home.md) (per la maggior parte delle attività) dall&#39;ambiente di authoring.
+>AEM è anche [amministrato](/help/sites-administering/home.md) (per la maggior parte delle attività) dall&#39;ambiente di authoring.
 
 #### Ambiente di pubblicazione {#publish-environment}
 

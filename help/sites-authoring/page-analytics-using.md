@@ -10,15 +10,15 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 4%
+source-wordcount: '437'
+ht-degree: 5%
 
 ---
 
-# Visualizzazione dei dati di analisi delle pagine{#seeing-page-analytics-data}
+# Visualizzazione dei dati analitici sulle pagine{#seeing-page-analytics-data}
 
 Utilizza i dati di analisi della pagina per misurare l’efficacia del contenuto della pagina.
 
@@ -82,12 +82,12 @@ Apri [Content Insight](/help/sites-authoring/content-insights.md) dalla console 
 1. Nella console Sites, seleziona la pagina per la quale desideri visualizzare Content Insights.
 1. Sulla barra degli strumenti, fai clic sull’icona Analytics e Recommendations.
 
-   ![Icona di Analytics e Recommendations](do-not-localize/chlimage_1-14.png)
+   ![Icona Analytics and Recommendations](do-not-localize/chlimage_1-14.png)
 
 ## Analytics visibile dall’Editor pagina (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
->A causa di modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa nell’AEM.
+>A causa di modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
 >
 >È ora necessario utilizzare il plug-in [ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it).

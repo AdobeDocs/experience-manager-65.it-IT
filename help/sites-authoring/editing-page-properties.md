@@ -4,9 +4,9 @@ description: Definisci le proprietà richieste per una pagina in Adobe Experienc
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 37%
@@ -95,18 +95,18 @@ Ad esempio, se l&#39;URL personalizzato è impostato su `welcome` per la pagina 
 >* non supportano le espressioni regolari;
 >* non devono essere impostati su una pagina esistente.
 
-Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
+Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
 
 * **Aggiungi** - Tocca o fai clic per aggiungere un URL personalizzato.
 * **Rimuovi** - Tocca o fai clic per rimuovere un URL personalizzato.
   **Reindirizza Vanity URL** - Indica se la pagina deve utilizzare il Vanity URL o reindirizzare all&#39;URL effettivo della pagina
 
-### Avanzato {#advanced}
+### Avanzate {#advanced}
 
 #### Impostazioni {#settings}
 
 * **Lingua**: indica la lingua della pagina
-* **Lingua root**: deve essere selezionato, se la pagina è la root di una copia in lingua
+* **Directory principale lingua**: questa opzione deve essere selezionata se la pagina corrisponde alla pagina principale di una copia per lingua
 * **Reindirizza**: indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente
 * **Progettazione** - Indica la [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
 * **Alias**: specifica un alias da utilizzare per la pagina
@@ -230,7 +230,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 * **Sospendi** - Sospende la Live Copy da ulteriori modifiche di rollout
 * **Scollega** - Scollega la Live Copy dalla blueprint
 
-#### Sorgente {#source}
+#### Origine {#source}
 
 * Visualizza il percorso della blueprint per questa Live Copy
 

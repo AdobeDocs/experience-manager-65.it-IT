@@ -1,6 +1,6 @@
 ---
-title: Risoluzione dei problemi durante la creazione in AEM
-description: Alcuni problemi che possono verificarsi quando si utilizza AEM.
+title: Risoluzione dei problemi durante l’authoring in AEM
+description: Alcuni problemi che potresti riscontrare durante l’utilizzo di AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -8,15 +8,15 @@ content-type: reference
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 46%
 
 ---
 
-# Risoluzione di problemi AEM nell’ambiente di authoring{#troubleshooting-aem-when-authoring}
+# Risoluzione di problemi AEM durante l’authoring{#troubleshooting-aem-when-authoring}
 
 Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 
@@ -26,7 +26,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 >[!NOTE]
 >
->Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi relativi all&#39;AEM (per gli amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, consulta l’amministratore di sistema per la risoluzione dei problemi AEM.
+>Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi ad AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi relativi ad AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, consulta l’amministratore di sistema per la risoluzione dei problemi di AEM.
 
 ## La vecchia versione della pagina è ancora nel sito pubblicato {#old-page-version-still-on-published-site}
 

@@ -9,11 +9,11 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 77%
+source-wordcount: '1096'
+ht-degree: 78%
 
 ---
 
@@ -69,13 +69,13 @@ Puoi creare un lancio dalla console Sites o Lanci:
    >
    >Se un sito contiene directory principali della lingua al di sotto del livello principale, le pagine e i rami di un lancio devono trovarsi al di sotto di una directory principale della lingua comune.
    >
-   >Se tenti di creare un lancio con una pagina padre o figlio nel percorso di origine, questo non riuscirà e restituirà l’errore &quot;La destinazione esiste già in :path to the page&quot;.
+   >Se tenti di creare un lancio con una pagina padre o figlio nel percorso di origine, questo non riuscirà e restituirà l&#39;errore &quot;La destinazione esiste già in :path per la pagina&quot;.
 
 1. Per ogni voce è possibile specificare se:
 
    * **Includere le pagine secondarie**:
 
-      * Specifica se creare il lancio con o senza pagine figlie.  Per impostazione predefinita, le pagine secondarie sono incluse.
+      * Specifica se creare il lancio con o senza pagine secondarie. Per impostazione predefinita, le pagine secondarie sono incluse.
 
    Procedi con **Successivo**.
 

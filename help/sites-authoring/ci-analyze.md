@@ -1,6 +1,6 @@
 ---
-title: Analisi delle prestazioni delle pagine
-description: Utilizza la pagina Content Insight per analizzare le prestazioni della pagina che stai creando
+title: Analisi delle prestazioni della pagina
+description: Utilizza la pagina Insight dei contenuti per analizzare le prestazioni della pagina che stai creando
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,28 +9,28 @@ docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Analisi delle prestazioni delle pagine{#analyzing-page-performance}
+# Analisi delle prestazioni della pagina{#analyzing-page-performance}
 
-Apri la pagina [Content Insight](/help/sites-authoring/content-insights.md) per analizzare le prestazioni della pagina che stai creando. Configura il periodo di reporting per concentrare l’analisi.
+Apri la pagina [Contenuto Insight](/help/sites-authoring/content-insights.md) per analizzare le prestazioni della pagina che stai creando. Configura il periodo di reporting per concentrare l’analisi.
 
 ## Apertura di Analytics e Recommendations per una pagina {#opening-analytics-and-recommendations-for-a-page}
 
-Per visualizzare Analytics e Recommendations per una pagina, utilizza la procedura seguente:
+Utilizza la procedura seguente per visualizzare le analisi e i consigli per una pagina:
 
 1. Passare alla pagina che si desidera analizzare.
-1. Nella barra degli strumenti fare clic su **Analytics e Recommendations**.
+1. Nella barra degli strumenti, fai clic su **Analytics e Recommendations**.
 
    >[!NOTE]
    >
-   >Analytics e Recommendations per una pagina vengono visualizzati solo se hai configurato l&#39;AEM per l&#39;[integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
+   >Le analisi e i consigli per una pagina vengono visualizzati solo se AEM è stato configurato per l&#39;integrazione con Adobe Analytics[.](/help/sites-administering/adobeanalytics-connect.md)
 
    ![schermata_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
@@ -41,15 +41,15 @@ Modifica i seguenti aspetti relativi al tempo nei rapporti di analisi:
 * Periodo di tempo in cui generare il rapporto.
 * Granularità dei dati.
 
-Gli strumenti per modificare gli aspetti temporali dei rapporti vengono visualizzati nella parte superiore della pagina Approfondimenti contenuto. ![chlimage_1-126](assets/chlimage_1-126.png)
+Gli strumenti per modificare gli aspetti temporali dei rapporti vengono visualizzati nella parte superiore della pagina Insight dei contenuti. ![chlimage_1-126](assets/chlimage_1-126.png)
 
 #### Modifica del periodo di reporting {#changing-the-reporting-period-1}
 
-Modifica il periodo di reporting della pagina di approfondimento dei contenuti per focalizzare l’analisi dell’attività della pagina su un periodo di tempo specifico. Quando si modifica il periodo di reporting, i rapporti vengono aggiornati automaticamente. L’area ombreggiata nell’arco temporale rappresenta il periodo di reporting. Le date nell’arco temporale aumentano da sinistra a destra.
+Modifica il periodo di reporting della pagina Insight dei contenuti per concentrare l’analisi dell’attività della pagina su un periodo di tempo specifico. Quando si modifica il periodo di reporting, i rapporti vengono aggiornati automaticamente. L’area ombreggiata nell’arco temporale rappresenta il periodo di reporting. Le date nell’arco temporale aumentano da sinistra a destra.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Per modificare il periodo di reporting di una pagina di approfondimento dei contenuti:
+Per modificare il periodo di reporting di una pagina di Content Insight:
 
 1. Se l’intervallo temporale non viene visualizzato nella parte superiore della pagina, fai clic sull’icona Attiva/Disattiva intervallo temporale.
 
@@ -75,9 +75,9 @@ La granularità influisce sui rapporti che tracciano i dati in base al tempo, ad
 
 1. Fai clic sulla granularità desiderata. Una volta selezionato, il rapporto viene aggiornato automaticamente per riflettere la granularità.
 
-### Assegnazione di attività per SEO Recommendations {#assigning-tasks-for-seo-recommendations}
+### Assegnazione di attività per i consigli SEO (Search Engine Optimization) {#assigning-tasks-for-seo-recommendations}
 
-Utilizza il rapporto SEO Recommendations per creare attività volte a migliorare la visibilità delle pagine nei motori di ricerca. Per ogni consiglio del report che non ha un segno di spunta, puoi creare un&#39;attività da assegnare a un utente per eseguire il lavoro richiesto.
+Utilizza il rapporto SEO Recommendations (Consigli SEO) per creare attività per migliorare la visibilità delle pagine nei motori di ricerca. Per ogni consiglio del report che non ha un segno di spunta, puoi creare un&#39;attività da assegnare a un utente per eseguire il lavoro richiesto.
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 

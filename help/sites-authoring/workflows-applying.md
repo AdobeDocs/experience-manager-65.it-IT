@@ -9,8 +9,8 @@ docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 82%
@@ -43,7 +43,7 @@ I flussi di lavoro possono essere avviati da:
 
 >[!NOTE]
 >
->Gli amministratori AEM possono [avviare i flussi di lavoro utilizzando diversi altri metodi](/help/sites-administering/workflows-starting.md).
+>Gli amministratori di AEM possono [avviare i flussi di lavoro utilizzando diversi altri metodi](/help/sites-administering/workflows-starting.md).
 
 ## Avvio di un flusso di lavoro dalla console Sites {#starting-a-workflow-from-the-sites-console}
 
@@ -118,7 +118,7 @@ Puoi specificare i dettagli:
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 
-      * **Includi elementi figlio** per specificare gli elementi secondari di tale risorsa che verranno inclusi nel flusso di lavoro.
+      * **Includi elementi secondari** per specificare gli elementi secondari di tale risorsa che verranno inclusi nel flusso di lavoro.
 Viene visualizzata una finestra di dialogo che consente di perfezionare la selezione in base a:
 
          * Solo gli elementi secondari di primo livello.

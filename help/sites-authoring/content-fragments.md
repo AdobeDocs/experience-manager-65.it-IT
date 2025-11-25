@@ -1,6 +1,6 @@
 ---
 title: Authoring delle pagine di contenuti con frammenti di contenuto
-description: I Frammenti di contenuto AEM consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
+description: I Frammenti di contenuto di AEM ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,11 +9,11 @@ docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e ges
 
 Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
-Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
+Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuti strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
 
 >[!NOTE]
 >

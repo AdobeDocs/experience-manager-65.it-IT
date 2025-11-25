@@ -9,8 +9,8 @@ docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 13%
@@ -57,7 +57,7 @@ Se la tua istanza ha già pagine esistenti o hai creato una nuova pagina da solo
 
 * [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Utilizzo della modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode) (per vedere come apparirà quando verrà pubblicato)
-* [Blocco di una pagina  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Blocco di una pagina  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Pubblicazione di una pagina {#publishing-a-page}
 
