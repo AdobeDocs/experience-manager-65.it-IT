@@ -39,7 +39,7 @@ Vedi anche [Limitazioni di Dynamic Media](/help/assets/limitations.md).
 
 Le coordinate di ritaglio avanzato dipendono dalle proporzioni. Per le varie impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate a Dynamic Media. Adobe consiglia di utilizzare la stessa area di ritaglio. In questo modo si evita un impatto sulle diverse dimensioni utilizzate nel profilo immagine.
 
-Ogni generazione di ritaglio avanzato creata richiede un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque proporzioni di ritaglio avanzato può causare un rallentamento del tasso di acquisizione delle risorse. Inoltre, causa un aumento del carico sui sistemi. Poiché è possibile applicare il ritaglio avanzato a livello di cartella, Adobe consiglia di utilizzarlo solo nelle cartelle *1} in cui è necessario.*
+Ogni generazione di ritaglio avanzato creata richiede un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque proporzioni di ritaglio avanzato può causare un rallentamento del tasso di acquisizione delle risorse. Inoltre, causa un aumento del carico sui sistemi. Poiché è possibile applicare il ritaglio avanzato a livello di cartella, Adobe consiglia di utilizzarlo solo nelle cartelle *1&rbrace; in cui è necessario.*
 
 **Linee guida per la definizione del ritaglio avanzato in un profilo immagine**
 Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare i tempi di elaborazione e la memorizzazione dei ritagli, Adobe consiglia di seguire le linee guida e i suggerimenti seguenti:
