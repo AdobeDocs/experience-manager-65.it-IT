@@ -194,7 +194,7 @@ Di seguito sono riportati alcuni controlli di integrità pronti all’uso che so
 Nel processo di monitoraggio, se si verificano problemi, ecco alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere problemi comuni con [!DNL Experience Manager] distribuzioni:
 
 * Se si utilizza TarMK, eseguire spesso la compattazione Tar. Per ulteriori dettagli, vedere [Gestione del repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Controlla `OutOfMemoryError` registri. Per ulteriori informazioni, vedere [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
+* Controlla `OutOfMemoryError` registri. Per ulteriori informazioni, vedere [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it).
 
 * Controlla i registri per eventuali riferimenti a query non indicizzate, attraversamenti struttura o attraversamenti indice. Ciò indica query non indicizzate o query indicizzate in modo inadeguato. Per le best practice sull&#39;ottimizzazione delle prestazioni di query e indicizzazione, vedere [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilizza la console Flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, condensa più flussi di lavoro in un unico flusso di lavoro.

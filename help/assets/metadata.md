@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
 <!-- Scope of metadata articles:
@@ -36,9 +36,9 @@ I metadati sono informazioni aggiuntive sulla risorsa in cui è possibile esegui
 
 Per aggiungere metadati alle risorse digitali è possibile utilizzare i seguenti metodi:
 
-* Per iniziare, le applicazioni native che creano le risorse vi aggiungono alcuni metadati. Ad esempio, [Acrobat aggiunge alcuni metadati](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) ai file PDF oppure una fotocamera aggiunge alcuni metadati di base alle fotografie. Durante la generazione delle risorse, puoi aggiungere i metadati nelle applicazioni native stesse. Ad esempio, puoi [aggiungere metadati IPTC in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+* Per iniziare, le applicazioni native che creano le risorse vi aggiungono alcuni metadati. Ad esempio, [Acrobat aggiunge alcuni metadati](https://helpx.adobe.com/it/acrobat/using/pdf-properties-metadata.html) ai file PDF oppure una fotocamera aggiunge alcuni metadati di base alle fotografie. Durante la generazione delle risorse, puoi aggiungere i metadati nelle applicazioni native stesse. Ad esempio, puoi [aggiungere metadati IPTC in Adobe Lightroom](https://helpx.adobe.com/it/lightroom-classic/help/metadata-basics-actions.html).
 
-* Prima di caricare una risorsa in [!DNL Experience Manager], puoi modificare i metadati utilizzando l&#39;applicazione nativa utilizzata per creare una risorsa o un&#39;altra applicazione di modifica dei metadati. Quando carichi una risorsa in Experience Manager, i metadati vengono elaborati. Ad esempio, scopri come [lavorare con i metadati in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e come visualizzare il pannello [tag per [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
+* Prima di caricare una risorsa in [!DNL Experience Manager], puoi modificare i metadati utilizzando l&#39;applicazione nativa utilizzata per creare una risorsa o un&#39;altra applicazione di modifica dei metadati. Quando carichi una risorsa in Experience Manager, i metadati vengono elaborati. Ad esempio, scopri come [lavorare con i metadati in [!DNL Adobe Bridge]](https://helpx.adobe.com/it/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e come visualizzare il pannello [tag per [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
 
 * In [!DNL Experience Manager Assets] è possibile aggiungere o modificare manualmente i metadati delle risorse nella pagina [!UICONTROL Proprietà].
 
@@ -241,7 +241,7 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!
 >
 >* [Concetti e informazioni sui metadati](metadata-concepts.md).
 >* [Modifica proprietà metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=it)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

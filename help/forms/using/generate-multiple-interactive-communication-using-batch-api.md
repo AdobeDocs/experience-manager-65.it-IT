@@ -87,7 +87,7 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
    1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Ad esempio, `c:\batchprocessing`.
    1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file tramite]**.
    1. Selezionare il servizio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** nel campo **[!UICONTROL Nome servizio]**.
-   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
+   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=it#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
 1. Configura parametri avanzati:
    1. Apri la scheda **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
 
@@ -147,7 +147,7 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
    1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Ad esempio, `c:\batchprocessing`.
    1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file tramite]**.
    1. Selezionare il servizio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** nel campo **[!UICONTROL Nome servizio]**.
-   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
+   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=it#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
 1. Configura parametri avanzati:
    1. Apri la scheda **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
 
@@ -176,8 +176,8 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
 Prima di distribuire il servlet Java™, assicurati di disporre di una comunicazione interattiva e che i file di dati corrispondenti siano pronti. Per creare e distribuire il servlet Java™, effettua le seguenti operazioni:
 
 1. Accedi all’istanza di AEM e crea una comunicazione interattiva. Per utilizzare la comunicazione interattiva indicata nel codice di esempio fornito di seguito, [fai clic qui](assets/SimpleMediumIC.zip).
-1. [Crea e distribuisci un progetto AEM utilizzando Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) nella tua istanza AEM.
-1. Aggiungi [AEM Forms Client SDK versione 6.0.12 o successiva](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) nell&#39;elenco delle dipendenze del file POM del progetto AEM. Ad esempio,
+1. [Crea e distribuisci un progetto AEM utilizzando Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=it) nella tua istanza AEM.
+1. Aggiungi [AEM Forms Client SDK versione 6.0.12 o successiva](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) nell&#39;elenco delle dipendenze del file POM del progetto AEM. Ad esempio,
 
    ```xml
        <dependency>
@@ -327,7 +327,7 @@ Prima di distribuire il servlet Java™, assicurati di disporre di una comunicaz
    * Quando si specifica l&#39;opzione WEB, viene generato un file JSON per record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template).
    * Quando si specificano le opzioni PRINT e WEB, vengono generati sia i documenti PDF che un file JSON per record.
 
-1. [Utilizza maven per distribuire il codice aggiornato alla tua istanza di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. [Utilizza maven per distribuire il codice aggiornato alla tua istanza di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=it).
 1. Per generare la comunicazione interattiva, richiama l’API batch. L’API batch restituisce un flusso di file PDF e .json in base al numero di record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template). Se si utilizza il codice riportato sopra, l&#39;API viene distribuita in `http://localhost:4502/bin/batchServlet`. Il codice stampa e restituisce un flusso di un file PDF e JSON.
 
 ### Precompilare un modello web {#web-template}
@@ -363,4 +363,4 @@ Oltre a salvare i dati sul file system, puoi archiviare i file JSON in un archiv
 
 >[!NOTE]
 >
->Per impostazione predefinita, è abilitato solo il protocollo CRX. Per abilitare altri protocolli supportati, vedere [Configurazione del servizio di precompilazione tramite Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Per impostazione predefinita, è abilitato solo il protocollo CRX. Per abilitare altri protocolli supportati, vedere [Configurazione del servizio di precompilazione tramite Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=it).
