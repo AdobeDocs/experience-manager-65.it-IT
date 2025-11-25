@@ -16,8 +16,8 @@ ht-degree: 31%
 
 L’Editor Rich Text è un componente essenziale per l’inserimento di contenuti di testo in AEM. Costituisce la base di varie componenti, tra cui:
 
-* [Testo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tabella](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Testo](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tabella](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Modifica diretta {#in-place-editing}
 
