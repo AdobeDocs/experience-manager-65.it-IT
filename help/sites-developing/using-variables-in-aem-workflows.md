@@ -9,9 +9,9 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: bdbf9b73553c42865560c76eebab76e2fc397fdf
+source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -20,23 +20,23 @@ ht-degree: 0%
 
 Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati. Puoi quindi utilizzare il nome della variabile in qualsiasi passaggio del flusso di lavoro per recuperare il valore memorizzato nella variabile. È inoltre possibile utilizzare i nomi delle variabili per definire le espressioni per l&#39;adozione delle decisioni di instradamento.
 
-Nei modelli di flusso di lavoro dell’AEM puoi effettuare le seguenti operazioni:
+Nei modelli di flusso di lavoro di AEM puoi effettuare le seguenti operazioni:
 
 * [Creare una variabile](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) di un tipo di dati in base al tipo di informazioni che si desidera memorizzare.
 * [Impostare un valore per la variabile](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) utilizzando il passaggio del flusso di lavoro Imposta variabile.
-* [Utilizzare la variabile](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) nei passaggi del flusso di lavoro OR Split e Goto AEM in modo da poter definire un&#39;espressione per prendere decisioni di indirizzamento. Puoi anche utilizzare le variabili in tutti i passaggi del flusso di lavoro di AEM Forms.
+* [Utilizza la variabile](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) nei passaggi del flusso di lavoro OR Split e Goto AEM per definire un&#39;espressione che consenta di prendere decisioni di indirizzamento. Puoi anche utilizzare le variabili in tutti i passaggi del flusso di lavoro di AEM Forms.
 
-Il video seguente illustra come creare, impostare e utilizzare le variabili nei modelli di flusso di lavoro AEM:
+Il video seguente illustra come creare, impostare e utilizzare le variabili nei modelli di flusso di lavoro di AEM:
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[Usa video variabili](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 Le variabili sono un&#39;estensione dell&#39;interfaccia [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). È possibile utilizzare [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript per accedere ai metadati salvati utilizzando le variabili.
 
 ## Creare una variabile {#create-a-variable}
 
-Puoi creare le variabili utilizzando la sezione Variabili disponibile nella barra laterale del modello di flusso di lavoro. Le variabili del flusso di lavoro AEM supportano i seguenti tipi di dati:
+Puoi creare le variabili utilizzando la sezione Variabili disponibile nella barra laterale del modello di flusso di lavoro. Le variabili del flusso di lavoro di AEM supportano i seguenti tipi di dati:
 
 * **Tipi di dati di base**: Long, Double, Boolean, Date e String
 * **Tipi di dati complessi**: [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) e [JSON](https://www.javadoc.io/doc/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
@@ -49,7 +49,7 @@ Per ulteriori tipi di dati complessi disponibili nei flussi di lavoro AEM Forms,
 
 Per creare una variabile:
 
-1. In un’istanza AEM, passa a Strumenti > Flusso di lavoro > Modelli.
+1. In un’istanza di AEM, passa a Strumenti > Flusso di lavoro > Modelli.
 1. Seleziona **[!UICONTROL Crea]** e specifica il titolo e un nome facoltativo per il modello di flusso di lavoro. Selezionare il modello e selezionare **[!UICONTROL Modifica]**.
 1. Seleziona l&#39;icona delle variabili disponibile nella barra laterale del modello di flusso di lavoro e seleziona **[!UICONTROL Aggiungi variabile]**.
 
@@ -104,7 +104,7 @@ Selezionare una variabile di tipo XML in cui memorizzare un file XML. Eseguire u
 
 In questo esempio, selezionare una variabile XML **formdata** per archiviare il file **cc-app.xml**. Eseguire una query sulla variabile **formdata** in modo da impostare il valore per la variabile di stringa **emailaddress** per archiviare il valore per la proprietà **emailAddress** disponibile nel file **cc-app.xml**.
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Imposta il valore di una variabile")
+[Imposta video variabile](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### Esempio 2: utilizzare un’espressione per memorizzare un valore basato su altre variabili {#example2}
 
@@ -114,7 +114,7 @@ In questo esempio, utilizza l&#39;editor espressioni per definire un&#39;espress
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[Video espressione variabili](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Utilizza editor di espressioni {#use-expression-editor}
 
@@ -163,7 +163,7 @@ In questo esempio, prima di definire l&#39;espressione di routing, utilizzare [e
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[O video diviso](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Analogamente, selezionate un percorso di script esterno o specificate lo script ECMA per instradare le espressioni per valutare il ramo attivo. Selezionare **[!UICONTROL Rinomina branch]** per specificare un nome alternativo per il branch.
 
@@ -251,7 +251,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Modificare una variabile {#edit-a-variable}
 
 1. Nella pagina Modifica flusso di lavoro, seleziona l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
-1. Selezionare l&#39;icona di modifica ![contrassegnata da un simbolo a forma di matita.Icona &#x200B;](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
+1. Selezionare l&#39;icona di modifica ![contrassegnata da un simbolo a forma di matita.Icona ](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
 1. Modificare le informazioni sulla variabile e selezionare ![Icona Salva contrassegnata da un segno di spunta.](assets/Done_Icon.png) per salvare le modifiche. Impossibile modificare i campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** per una variabile.
 
 ## Eliminare una variabile {#delete-a-variable}
