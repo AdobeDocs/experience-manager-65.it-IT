@@ -4,8 +4,8 @@ description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzi
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%
@@ -16,13 +16,13 @@ ht-degree: 80%
 
 Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione di AEM headless, [Traduci contenuto,](configure-connector.md) hai imparato a utilizzare i progetti di traduzione in AEM per tradurre i contenuti headless. Ora dovresti:
+Nel documento precedente del percorso di traduzione di AEM headless, [Traduci contenuto,](configure-connector.md) hai imparato a utilizzare i progetti di traduzione in AEM per tradurre i contenuti headless. Ora dovresti aver appreso quanto segue:
 
-* Sapere cos’è un progetto di traduzione.
+* Cos’è un progetto di traduzione.
 * Essere in grado di creare progetti di traduzione.
-* Utilizzare i progetti di traduzione per tradurre i contenuti headless.
+* Come utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
 Una volta completata la traduzione iniziale, questo articolo illustra il passaggio successivo per la pubblicazione di tale contenuto e le operazioni da eseguire per aggiornare le traduzioni quando il contenuto sottostante nella directory principale della lingua cambia.
 
@@ -46,7 +46,7 @@ AEM è quindi fisicamente separato in due istanze.
 1. L’istanza dell’**autore** è il sistema in cui autori e amministratori di contenuti lavorano per creare e gestire i contenuti.
 1. L’istanza di **pubblicazione** è il sistema che consegna il contenuto ai consumatori.
 
-Per essere disponibile per il consumo, dopo essere stato creato sull’istanza dell’autore, il contenuto deve essere trasferito nell’istanza di pubblicazione. Il processo di trasferimento dall’autore alla pubblicazione viene chiamato **pubblicazione**.
+Per essere disponibile per il consumo, dopo essere stato creato sull’istanza di authoring, il contenuto deve essere trasferito nell’istanza di pubblicazione. Il processo di trasferimento dall’autore alla pubblicazione viene chiamato **pubblicazione**.
 
 ## Pubblicazione del contenuto tradotto {#publishing}
 
@@ -74,7 +74,7 @@ In questo percorso sono presenti sottocartelle per ogni lingua di traduzione e p
    ![Opzioni di Gestisci pubblicazione](assets/manage-publication-options.png)
 1. Nella prossima finestra **Gestisci pubblicazione**, conferma che i percorsi corretti siano selezionati. Fai clic su **Pubblica**.
    ![Ambito di Gestisci pubblicazione](assets/manage-publication-scope.png)
-1. L’AEM conferma l’azione di pubblicazione con un messaggio a comparsa nella parte superiore dello schermo.
+1. AEM conferma l’azione di pubblicazione con un messaggio a comparsa nella parte superiore dello schermo.
    ![Banner risorse pubblicate](assets/resources-published-message.png)
 
 Il contenuto headless tradotto è ora pubblicato. È ora possibile accedervi e utilizzarli dai servizi headless.
@@ -89,7 +89,7 @@ Quando si pubblicano i contenuti, sono disponibili opzioni aggiuntive, ad esempi
 
 La traduzione è raramente un esercizio occasionale. In genere, al termine della traduzione iniziale, gli autori dei contenuti continuano ad aggiungere e modificare il contenuto nella directory principale della lingua. Ciò significa che devi aggiornare anche il contenuto tradotto.
 
-I requisiti specifici del progetto definiscono la frequenza con cui devi aggiornare le traduzioni e quale processo decisionale viene seguito prima di eseguire un aggiornamento. Una volta che hai deciso di aggiornare le traduzioni, il processo in AEM è semplice. Poiché la traduzione iniziale era basata su un progetto di traduzione, lo sono anche gli aggiornamenti.
+I requisiti specifici del progetto definiscono la frequenza con cui devi aggiornare le traduzioni e quale processo decisionale viene seguito prima di eseguire un aggiornamento. Dopo aver deciso di aggiornare le traduzioni, il processo in AEM è semplice. Poiché la traduzione iniziale era basata su un progetto di traduzione, lo sono anche gli aggiornamenti.
 
 Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di creare il progetto di traduzione automaticamente o manualmente.
 
@@ -157,10 +157,10 @@ Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come h
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni. Hai completato il percorso di traduzione headless. Ora dovresti:
+Congratulazioni. Hai completato il percorso di traduzione headless. Ora dovresti aver appreso quanto segue:
 
-* Avrai una panoramica della distribuzione headless dei contenuti.
-* avere una comprensione di base delle funzionalità headless di AEM.
+* Panoramica della distribuzione headless dei contenuti.
+* Nozioni di base sulle funzionalità headless di AEM.
 * Comprenderai le funzioni di traduzione di AEM e in che modo si relazionano con il contenuto headless.
 * Avrai la possibilità di iniziare a tradurre i tuoi contenuti headless.
 

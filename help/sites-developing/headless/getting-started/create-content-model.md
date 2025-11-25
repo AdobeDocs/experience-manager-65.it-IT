@@ -4,8 +4,8 @@ description: Definisci la struttura del contenuto creato e distribuito utilizzan
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%
@@ -26,7 +26,7 @@ I modelli per frammenti di contenuto definiscono la struttura dei dati e del con
 
 Un architetto dell’informazione esegue tali attività solo occasionalmente, quando sono necessari nuovi modelli. Ai fini di questa guida introduttiva, stai creando un solo modello.
 
-1. Accedi a AEM e dal menu principale seleziona **Strumenti > Assets > Modelli per frammenti di contenuto**.
+1. Accedi ad AEM e dal menu principale seleziona **Strumenti > Assets > Modelli per frammenti di contenuto**.
 1. Fai clic sulla cartella creata durante la creazione della configurazione.
 
    ![Cartella dei modelli](assets/models-folder.png)

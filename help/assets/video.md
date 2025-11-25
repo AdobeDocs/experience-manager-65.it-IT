@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '10488'
+source-wordcount: '10481'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,6 @@ Ulteriori informazioni su [Best practice per organizzare le risorse digitali per
    * Visualizzare in anteprima e pubblicare le risorse video
 
       * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
-
         [Anteprima video](managing-video-assets.md#upload-and-preview-video-assets) o [Anteprima risorse](previewing-assets.md)
         [Visualizza rappresentazioni video](video-renditions.md)
         [Gestione rappresentazioni video](manage-assets.md#managing-renditions)
@@ -86,15 +85,13 @@ Ulteriori informazioni su [Best practice per organizzare le risorse digitali per
    * Utilizzare i metadati video
 
       * Visualizza le proprietà di un rendering video codificato come frame rate, bitrate audio e video e codec:
-
         [Visualizza proprietà rappresentazione video](video-renditions.md)
 
       * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
-
         [Modifica proprietà video](manage-assets.md#editing-properties)
 
       * [Gestire i metadati per le risorse digitali](metadata.md)
-      * [Schemi metadati](metadata-schemas.md)
+      * [Schemi di metadati](metadata-schemas.md)
 
    * Rivedi, approva e commenta video e mantieni il controllo completo della versione
 
@@ -115,11 +112,9 @@ Ulteriori informazioni su [Best practice per organizzare le risorse digitali per
    * Se utilizzi un sistema di gestione dei contenuti web di terze parti, puoi collegare o incorporare video nelle pagine web.
 
       * Integra video tramite URL:
-
         [Collega URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
       * Integra video utilizzando il codice di incorporamento in una pagina web:
-
         [Incorpora il visualizzatore video in una pagina Web](embed-code.md).
 
    * [Genera report video](#viewing-video-reports).
@@ -155,7 +150,7 @@ Per la gestione di un singolo video e di set di video adattivi, sono supportati 
 * Organizza, sfoglia e cerca video con supporto completo per i metadati, per una gestione efficiente delle risorse video.
 * Distribuisci set video adattivi sul Web e su desktop e dispositivi mobili, inclusi iPhone, iPad, Android™, BlackBerry® e Windows Phone.
 
-Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media supporta la riproduzione di video per dispositivi mobili per video MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -171,7 +166,7 @@ Dynamic Media supporta la riproduzione di video per dispositivi mobili per video
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulta anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori per risorse di Experience Manager](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulta anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori per risorse di Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Best practice: utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -189,7 +184,7 @@ Combinando in un singolo lettore quanto segue:
 
 È possibile estendere la portata dei contenuti rich media agli utenti desktop e mobili e garantire un&#39;esperienza video semplificata.
 
-Vedi anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Vedi anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -246,32 +241,32 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
    <td>Streaming bitrate adattivo HLS.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Chrome (Android™ 6 o versioni precedenti)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Chrome (Android™ 7 o versione successiva)</td>
    <td>Streaming bitrate adattivo DASH* o HLS.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Android™ (browser predefinito)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Safari (iOS)</td>
    <td>Streaming bitrate adattivo HLS.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Chrome (iOS)</td>
    <td>Streaming bitrate adattivo HLS.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Blackberry®</td>
    <td>Streaming bitrate adattivo DASH* o HLS./td&gt;
   </tr>
@@ -336,7 +331,7 @@ Nella tabella seguente viene descritto come i risultati della formula si traduco
 | 1,33 | 4:3 |
 | 0,75 | 3:4 |
 | 1,78 | 16:9 |
-| 0,56 | 09:16 |
+| 0,56 | 9:16 |
 
 Ad esempio, un video con larghezza 1440 × altezza 1080 ha proporzioni 1440/1080 o 1,33. In questo caso, scegliete un predefinito di codifica video con proporzioni 4:3 per codificare il file video.
 
@@ -421,7 +416,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 × 1080. Nella tabella seg
 
 | Tipo di video | Larghezza × altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Sorgente | 1920 × 1080 | 1 | 1 |
+| Origine | 1920 × 1080 | 1 | 1 |
 | Codificato | 960 × 540 | 2 | 2 |
 | Codificato | 640 × 360 | 3 | 3 |
 | Codificato | 480 × 270 | 4 | 4 |
@@ -439,7 +434,7 @@ Dynamic Media consiglia di utilizzare i predefiniti di codifica video MP4 H.264.
 I report video visualizzano diverse metriche aggregate in un determinato periodo di tempo per aiutarti a monitorare che *video pubblicati* singoli e aggregati stiano ottenendo le prestazioni previste. I seguenti dati sulle metriche principali sono aggregati per tutti i video pubblicati sull’intero sito web:
 
 * Inizio video
-* Percentuale completata
+* Tasso di completamento
 * Tempo medio sul video
 * Tempo totale su video
 * Video per visita
@@ -479,7 +474,7 @@ Specificare l&#39;intervallo di date iniziale e finale per il quale si desidera 
 
 Se utilizzi un visualizzatore video predefinito fornito da Dynamic Media, o se hai creato un predefinito visualizzatore personalizzato basato su un visualizzatore video predefinito, non sono necessari passaggi aggiuntivi per visualizzare i rapporti video. Tuttavia, se hai creato un visualizzatore video personalizzato basato sull’API SDK del visualizzatore di HTML5, procedi come segue per assicurarti che il visualizzatore video invii eventi di tracciamento ai rapporti video Dynamic Media.
 
-Utilizza la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources) e l&#39;API [HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
+Utilizza la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) e l&#39;API [HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
 
 **Per visualizzare i report video basati su un visualizzatore video creato con il visualizzatore Dynamic Media HTML5 SDK:**
 
@@ -601,7 +596,7 @@ Le didascalie e i sottotitoli aggiunti sono supportati nei formati WebVTT e Adob
      | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
      | Lingua | Selezionare la lingua della didascalia. |
      | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include i rumori di sottofondo, la differenziazione degli altoparlanti e altri dettagli rilevanti. Fornisce anche la traduzione o la trascrizione della finestra di dialogo. Tutti questi aspetti rendono il contenuto più accessibile alle persone non udenti o con problemi di udito. |
-     | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o sottotitoli]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+     | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o sottotitoli]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Ad esempio, `English (CC)`. |
 
      Se necessario, puoi modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
@@ -809,7 +804,7 @@ Vedi anche [Accessibilità in Dynamic Media](/help/assets/accessibility-dm.md).
 
 Dynamic Media converte i file di didascalia in formato JSON (JavaScript Object Notation). Questa conversione ti consente di incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi eseguire la ricerca per indicizzazione e indicizzare il contenuto per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Fornire contenuto statico (non immagine)](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Fornire contenuto statico (non immagine)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
 **Per aggiungere sottotitoli codificati a un video:**
 
@@ -1129,7 +1124,7 @@ Di seguito è riportato un esempio dell&#39;API precedente che utilizza i servle
 
 >[!TAB Aggiungi dipendenza in pom.xml]
 
-+++**Aggiungi dipendenza in pom.xml**
++++**Aggiungi dipendenza in pom.xml** 
 
 ```java
 dependency> 
@@ -1144,7 +1139,7 @@ dependency>
 
 >[!TAB Servlet di esempio]
 
-+++**Servlet di esempio**
++++**Servlet di esempio** 
 
 ```java
 @Component
@@ -1223,7 +1218,7 @@ public class ManifestServlet extends HttpServlet {
 
 >[!TAB Classe di risposta per il servlet]
 
-+++**Classe di risposta per il servlet**
++++**Classe di risposta per il servlet** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1253,7 +1248,7 @@ public abstract class VideoResponse {
 
 >[!TAB File delle costanti a cui si fa riferimento nel servlet]
 
-+++**File delle costanti a cui si fa riferimento nel servlet**
++++**File delle costanti a cui si fa riferimento nel servlet** 
 
 ```java
 public final class Constants { 
@@ -1272,7 +1267,7 @@ public final class Constants {
 
 >[!TAB ContestoServlet]
 
-+++**ContestoServlet**
++++**ContestoServlet** 
 
 Montare il servlet di cui sopra utilizzando `servletContext`. Di seguito è riportato un esempio di `servletContext`.
 
@@ -1451,7 +1446,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

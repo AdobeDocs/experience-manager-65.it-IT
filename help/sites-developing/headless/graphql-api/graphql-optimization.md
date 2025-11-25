@@ -4,8 +4,8 @@ description: Scopri come ottimizzare le query GraphQL per filtrare, impaginare e
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 58%
@@ -22,7 +22,7 @@ Queste linee guida servono a prevenire problemi di prestazioni con le query Grap
 
 ## Elenco di controllo GraphQL {#graphql-checklist}
 
-Il seguente elenco di controllo ha lo scopo di aiutarti a ottimizzare la configurazione e l’utilizzo di GraphQL in Adobe Experience Manager (AEM) as a Cloud Service.
+Il seguente elenco di controllo si propone di aiutarti a ottimizzare la configurazione e l’utilizzo di GraphQL in Adobe Experience Manager (AEM) as a Cloud Service.
 
 ### Primi Principi {#first-principles}
 
@@ -32,7 +32,7 @@ Il seguente elenco di controllo ha lo scopo di aiutarti a ottimizzare la configu
 
 Si consiglia vivamente l’utilizzo di query GraphQL persistenti.
 
-Le query GraphQL persistenti consentono di ridurre le prestazioni di esecuzione delle query utilizzando la rete CDN (Content Delivery Network). Le applicazioni client richiedono query persistenti con richieste GET per un’esecuzione rapida abilitata per Edge.
+Le query GraphQL persistenti consentono di ridurre le prestazioni di esecuzione delle query utilizzando la rete CDN (Content Delivery Network). Le applicazioni client richiedono query persistenti con richieste GET per un’esecuzione rapida con abilitazione per Edge.
 
 **Ulteriori riferimenti**
 
@@ -45,9 +45,9 @@ Consulta:
 
 **Consiglio**
 
-I clienti che utilizzano GraphQL *devono* installare il pacchetto indice Frammento di contenuto Experience Manager con GraphQL. In questo modo puoi aggiungere la definizione dell’indice richiesta in base alle funzioni effettivamente utilizzate. Se non si installa questo pacchetto, è possibile che le query GraphQL risultino lente o non riuscite.
+I clienti che utilizzano GraphQL *devono* installare il pacchetto indice Frammento di contenuto di Experience Manager con GraphQL. In questo modo puoi aggiungere la definizione dell’indice richiesta in base alle funzioni effettivamente utilizzate. Se non si installa questo pacchetto, è possibile che le query GraphQL risultino lente o non riuscite.
 
-Consulta le Note sulla versione per la versione appropriata per il tuo Service Pack. Per il Service Pack più recente, vedere [Installare il pacchetto dell&#39;indice di GraphQL, ad Experience Manager Frammenti di contenuto](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package).
+Consulta le Note sulla versione per la versione appropriata per il tuo Service Pack. Ad esempio, per il Service Pack più recente, vedere [Installare il pacchetto dell&#39;indice di GraphQL per i frammenti di contenuto di Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) .
 
 >[!NOTE]
 >
@@ -56,13 +56,13 @@ Consulta le Note sulla versione per la versione appropriata per il tuo Service P
 **Ulteriori riferimenti**
 Consulta:
 
-* [Installare il pacchetto di indice GraphQL per frammenti di contenuto Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)
+* [Installare il pacchetto di indice GraphQL per i frammenti di contenuto Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)
 
 ### Strategia cache {#cache-strategy}
 
 Per l’ottimizzazione si possono utilizzare anche vari metodi di caching.
 
-#### Abilita caching AEM Dispatcher {#enable-aem-dispatcher-caching}
+#### Abilitare il caching di AEM Dispatcher {#enable-aem-dispatcher-caching}
 
 **Consiglio**
 
@@ -84,7 +84,7 @@ Le query GraphQL e le relative risposte JSON possono essere memorizzate nella ca
 
 Consulta:
 
-* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn)
+* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Impostare le intestazioni di controllo cache HTTP {#set-http-cache-control-headers}
 
@@ -149,7 +149,7 @@ AEM consente due approcci per ottimizzare le query GraphQL:
 
 Ogni approccio ha i propri casi d’uso e limitazioni. Questa sezione fornisce informazioni su Filtro e paginazione ibridi, insieme ad alcune delle [best practice](#best-practices) per l&#39;ottimizzazione delle query GraphQL.
 
-#### Utilizzare il filtro ibrido AEM GraphQL {#use-aem-graphql-hybrid-filtering}
+#### Utilizzare il filtro ibrido di AEM GraphQL {#use-aem-graphql-hybrid-filtering}
 
 **Consiglio**
 
@@ -165,7 +165,7 @@ Questa tecnica mantiene la flessibilità fornita dai filtri GraphQL, delegando l
 
 >[!NOTE]
 >
->Il filtro ibrido AEM richiede l’aggiornamento dei frammenti di contenuto esistenti
+>Il filtro ibrido di AEM richiede l’aggiornamento dei frammenti di contenuto esistenti
 
 **Ulteriori riferimenti**
 
@@ -180,7 +180,7 @@ Consulta:
 
 Il tempo di risposta di query complesse, con set di risultati di grandi dimensioni, può essere migliorato segmentando le risposte in blocchi utilizzando l’impaginazione, uno standard di GraphQL.
 
-GraphQL nell’AEM supporta due tipi di impaginazione:
+GraphQL in AEM supporta due tipi di impaginazione:
 
 * [paginazione basata su limite/offset](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Utilizzato per le query elenco; terminano con `List`; ad esempio, `articleList`.
@@ -327,16 +327,16 @@ Una nidificazione approfondita può anche avere effetti negativi sulla governanc
 
 ### Non generare tutti i formati (elementi di testo su più righe) {#do-not-output-all-formats}
 
-AEM GraphQL può restituire testo creato con il tipo di dati **[Testo su più righe](/help/assets/content-fragments/content-fragments-models.md#data-types)** in più formati: Testo formattato, Testo semplice e Markdown.
+AEM GraphQL può restituire testo, creato con il tipo di dati **[Testo su più righe](/help/assets/content-fragments/content-fragments-models.md#data-types)**, in più formati: Testo formattatot, Testo semplice e Markdown.
 
 L’output di tutti e tre i formati aumenta la dimensione dell’output di testo in JSON di un fattore di tre. Questo, combinato con set di risultati generalmente grandi da query molto ampie, può produrre risposte JSON molto grandi che richiedono quindi molto tempo per il calcolo. È meglio limitare l’output solo ai formati di testo necessari per il rendering del contenuto.
 
 ### Modifica dei frammenti di contenuto {#modifying-content-fragments}
 
-Modifica solo i frammenti di contenuto e le relative risorse, utilizzando l’interfaccia utente o le API dell’AEM. Non apportare modifiche direttamente in JCR.
+Modifica solo i frammenti di contenuto e le relative risorse, utilizzando l’interfaccia utente o le API di AEM. Non apportare modifiche direttamente in JCR.
 
 ### Verificare le query {#test-your-queries}
 
-L’elaborazione delle query GraphQL è simile all’elaborazione delle query di ricerca ed è notevolmente più complessa delle semplici richieste API per tutti i contenuti di GET.
+L’elaborazione delle query GraphQL è simile all’elaborazione delle query di ricerca ed è notevolmente più complessa delle semplici richieste API GET per tutti i contenuti.
 
 Pianificare, testare e ottimizzare accuratamente le query in un ambiente controllato non di produzione è fondamentale per il successo successivo quando viene utilizzato in produzione.

@@ -4,11 +4,11 @@ description: Scopri come le potenti funzionalità headless di AEM 6.5, come i mo
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -26,7 +26,7 @@ L’implementazione headless ignora la gestione di pagine e componenti come avvi
 
 ## Confronto tra headful e headless {#headful-headless}
 
-Questo documento si concentra sul modello completo di implementazione headless dell’AEM. Tuttavia, la scelta tra headful e headless non deve essere necessariamente binaria nell’AEM. Le funzioni headless consentono di gestire e distribuire i contenuti a diversi endpoint, consentendo agli autori dei contenuti di modificare le applicazioni a pagina singola. Tutto questo direttametne in AEM.
+Questo documento si concentra sul modello completo di implementazione headless di AEM. Tuttavia, headful e headless non devono essere necessariamente una scelta binaria in AEM. Le funzioni headless consentono di gestire e distribuire i contenuti a diversi endpoint, consentendo agli autori dei contenuti di modificare le applicazioni a pagina singola. Tutto questo direttametne in AEM.
 
 >[!TIP]
 >
@@ -38,11 +38,11 @@ AEM 6.5 è uno strumento flessibile per il modello di implementazione headless c
 
 1. Modelli di contenuto
    * I modelli di contenuto sono rappresentazioni strutturate di contenuti.
-   * Questi vengono definiti dagli architetti di informazioni nell’editor di modelli per frammenti di contenuto dell’AEM.
+   * Questi vengono definiti dagli architetti di informazioni nell’editor di modelli per frammenti di contenuto di AEM.
    * I modelli di contenuto fungono da base per i frammenti di contenuto.
 1. Frammenti di contenuto
    * I frammenti di contenuto sono istanze di modelli di contenuto.
-   * Vengono creati dagli autori di contenuti tramite l’editor di frammenti di contenuto dell’AEM.
+   * Vengono creati dagli autori di contenuti tramite l’editor di frammenti di contenuto di AEM.
    * Vengono memorizzati in AEM Assets e gestiti nell’interfaccia utente di amministrazione di Assets.
 1. API per la distribuzione dei contenuti
    * L’API GraphQL di AEM supporta la distribuzione di frammenti di contenuto.
@@ -51,11 +51,11 @@ AEM 6.5 è uno strumento flessibile per il modello di implementazione headless c
 
 ## Primi passi con AEM headless {#first-steps}
 
-Sono disponibili diverse risorse per iniziare a utilizzare le funzioni headless dell’AEM. Sono destinati a casi d’uso diversi, ma tutti offrono una panoramica delle funzioni headless dell’AEM.
+Sono disponibili diverse risorse per iniziare a utilizzare le funzioni headless di AEM. Sono destinati a casi d’uso diversi, ma forniscono tutti una panoramica delle funzioni headless di AEM.
 
 | Risorsa | Descrizione | Tipo | Pubblico | Tempo stimato |
 |---|---|---|---|---|
-| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | **Se sei un nuovo utente delle tecnologie AEM e headless**, fai clic qui per un&#39;introduzione completa all&#39;AEM e alle sue funzionalità headless, dalla teoria headless fino alla pubblicazione del primo progetto headless. | Guida | Sviluppatori **senza esperienza di AEM e headless** | 1 ora |
-| [Guida introduttiva headless](/help/sites-developing/headless/getting-started/introduction.md) | **Se sei un utente esperto di AEM** che necessita di un riepilogo delle principali funzioni headless di AEM, consulta questa breve panoramica. | Guida rapida | Sviluppatori e amministratori **con esperienza di AEM** | 20 minuti |
-| [Guida introduttiva all&#39;esercitazione pratica su headless AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it) | **Se preferisci un approccio pratico e hai familiarità con AEM**, questo tutorial si concentra direttamente sulla creazione di un semplice progetto headless. | Tutorial | Sviluppatori | 2 ore |
+| [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | **Se sei un utente senza esperienza di AEM e tecnologie headless**, fai clic qui per un&#39;introduzione completa ad AEM e alle sue funzionalità headless, dalla teoria headless fino alla pubblicazione del primo progetto headless. | Guida | Sviluppatori **senza esperienza di AEM e headless** | 1 ora |
+| [Guida introduttiva headless](/help/sites-developing/headless/getting-started/introduction.md) | **Se sei un utente esperto di AEM** che necessita di un riepilogo delle principali funzioni headless di AEM, consulta questa breve panoramica. | Avvio rapido | Sviluppatori e amministratori **con esperienza di AEM** | 20 minuti |
+| [Guida introduttiva all&#39;esercitazione pratica su AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it) | **Se preferisci un approccio pratico e hai familiarità con AEM**, questo tutorial si concentra direttamente sulla creazione di un semplice progetto headless. | Tutorial | Sviluppatori | 2 ore |
 | [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it) | Questa raccolta di risorse viene fornita sia per gli sviluppatori **new** che per quelli **esperti**. | Raccolta di risorse | Sviluppatori | |

@@ -2,11 +2,11 @@
 title: Multi-tenancy per raccolte, snippet e modelli di snippet
 description: Scopri in che modo la funzione di multi-tenancy consente di segregare i contenuti nell’archivio CRX in base all’organizzazione del cliente per evitare accessi non autorizzati.
 contentOwner: AG
-role: Architect, Admin, Leader
+role: Developer, Admin, Leader
 feature: Collections
 exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 1%

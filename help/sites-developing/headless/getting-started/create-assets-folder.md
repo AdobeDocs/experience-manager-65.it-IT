@@ -4,8 +4,8 @@ description: Utilizza i modelli per frammenti di contenuto di AEM per definire l
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 78%
@@ -28,7 +28,7 @@ Le cartelle di Assets vengono utilizzate per [organizzare risorse di contenuti t
 
 Di solito, un amministratore deve creare cartelle solo occasionalmente, per organizzare i contenuti al momento della creazione. Ai fini di questa guida introduttiva, è sufficiente creare una sola cartella.
 
-1. Accedi a AEM e dal menu principale seleziona **Navigazione > Assets > File**.
+1. Accedi ad AEM e dal menu principale seleziona **Navigazione > Assets > File**.
 1. Fare clic su **Crea > Cartella**.
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.

@@ -1,5 +1,5 @@
 ---
-title: Come utilizzare lo strumento VLT
+title: Utilizzare lo strumento VLT
 description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da The Apache Foundation che mappa il contenuto di un’istanza Jackrabbit/AEM sul file system
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,10 +9,10 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -31,8 +31,8 @@ Per una panoramica completa dei concetti e della struttura dello strumento Filev
 Per iniziare a utilizzare VLT, è necessario effettuare le seguenti operazioni:
 
 1. Installa VLT, aggiorna le variabili di ambiente e aggiorna i file di sovversione globali ignorati.
-1. Configurare l’archivio AEM (se non lo si è già fatto).
-1. Consulta l’archivio dell’AEM.
+1. Configura l’archivio AEM (se non lo hai già fatto).
+1. Consulta l’archivio AEM.
 1. Sincronizza con l’archivio.
 1. Verifica del funzionamento della sincronizzazione.
 
@@ -389,7 +389,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Pagamento (co) {#checkout-co}
 
-Esegue un check-out iniziale da un archivio JCR al file system locale a partire da &lt;uri> fino al file system locale in &lt;local-path>. È inoltre possibile aggiungere un argomento &lt;jcrPath> per estrarre una sottodirectory della struttura remota. È possibile specificare filtri Workspace da copiare nella directory META-INF.
+Esegue un check-out iniziale da un archivio JCR al file system locale a partire da &lt;uri> fino al file system locale in &lt;local-path>. È inoltre possibile aggiungere un argomento &lt;jcrPath> per estrarre una sottodirectory della struttura remota. È possibile specificare i filtri Workspace da copiare nella directory META-INF.
 
 #### Sintassi {#syntax-2}
 
@@ -443,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf per i collegamenti hotfix (nome,id), ad esempio `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf per i collegamenti hotfix (nome,id), ad esempio `[CQ520_HF_%s\|%s]` |
 | `-v (--verbose)` | output dettagliato |
 | `-q (--quiet)` | stampa il meno possibile |
 | `<localPaths> [<localPaths> ...]` | percorso locale |
@@ -635,7 +635,7 @@ propset -q|-R <propname> <propval> <file1> [<file2> ...]
 | `<propval>` | il valore della proprietà |
 | `<file> [<file> ...]` | file o directory su cui impostare la proprietà |
 
-### Aggiungi {#add}
+### Aggiungere {#add}
 
 Inserisce i file e le directory sotto il controllo della versione, pianificandoli per l&#39;aggiunta all&#39;archivio. Verranno aggiunti al prossimo commit.
 
@@ -655,7 +655,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 | `--force` | forza l&#39;esecuzione dell&#39;operazione |
 | `<file> [<file> ...]` | file o directory locale da aggiungere |
 
-### Elimina {#delete}
+### Eliminare {#delete}
 
 Rimuove file e directory dal controllo delle versioni.
 
@@ -857,7 +857,7 @@ Una volta in esecuzione, il servizio può essere configurato con i seguenti para
 >
 >Il servizio può essere configurato con la console Web o un nodo `sling:OsgiConfig` (con il nome `com.day.jcr.sync.impl.VaultSyncServiceImpl`) nell&#39;archivio.
 >
->Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
+>Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 #### Sincronizza configurazione cartelle {#sync-folder-configuration}
 

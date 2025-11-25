@@ -4,11 +4,11 @@ description: Scopri i tipi di metadati e come gestirli per consentire alle risor
 contentOwner: AG
 mini-toc-levels: 1
 feature: Tagging, Metadata
-role: Architect, Leader
+role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 <!-- Scope of metadata articles:
@@ -36,9 +36,9 @@ I metadati sono informazioni aggiuntive sulla risorsa in cui è possibile esegui
 
 Per aggiungere metadati alle risorse digitali è possibile utilizzare i seguenti metodi:
 
-* Per iniziare, le applicazioni native che creano le risorse vi aggiungono alcuni metadati. Ad esempio, [Acrobat aggiunge alcuni metadati](https://helpx.adobe.com/it/acrobat/using/pdf-properties-metadata.html) ai file PDF oppure una fotocamera aggiunge alcuni metadati di base alle fotografie. Durante la generazione delle risorse, puoi aggiungere i metadati nelle applicazioni native stesse. Ad esempio, è possibile [aggiungere metadati IPTC in Adobe Lightroom](https://helpx.adobe.com/it/lightroom-classic/help/metadata-basics-actions.html).
+* Per iniziare, le applicazioni native che creano le risorse vi aggiungono alcuni metadati. Ad esempio, [Acrobat aggiunge alcuni metadati](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) ai file PDF oppure una fotocamera aggiunge alcuni metadati di base alle fotografie. Durante la generazione delle risorse, puoi aggiungere i metadati nelle applicazioni native stesse. Ad esempio, puoi [aggiungere metadati IPTC in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Prima di caricare una risorsa in [!DNL Experience Manager], puoi modificare i metadati utilizzando l&#39;applicazione nativa utilizzata per creare una risorsa o un&#39;altra applicazione di modifica dei metadati. Quando carichi una risorsa in Experience Manager, i metadati vengono elaborati. Ad esempio, scopri come [lavorare con i metadati in [!DNL Adobe Bridge]](https://helpx.adobe.com/it/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e come visualizzare il pannello [tag per [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
+* Prima di caricare una risorsa in [!DNL Experience Manager], puoi modificare i metadati utilizzando l&#39;applicazione nativa utilizzata per creare una risorsa o un&#39;altra applicazione di modifica dei metadati. Quando carichi una risorsa in Experience Manager, i metadati vengono elaborati. Ad esempio, scopri come [lavorare con i metadati in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e come visualizzare il pannello [tag per [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
 
 * In [!DNL Experience Manager Assets] è possibile aggiungere o modificare manualmente i metadati delle risorse nella pagina [!UICONTROL Proprietà].
 
@@ -48,7 +48,7 @@ Per aggiungere metadati alle risorse digitali è possibile utilizzare i seguenti
 
 Per modificare i metadati di una risorsa nell&#39;interfaccia utente di [!DNL Assets], eseguire la procedura seguente:
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Dall&#39;interfaccia [!DNL Assets], seleziona la risorsa e fai clic su **[!UICONTROL Visualizza proprietà]** nella barra degli strumenti.
    * Dalla miniatura della risorsa, seleziona l&#39;azione rapida **[!UICONTROL Visualizza proprietà]**.
@@ -66,9 +66,9 @@ Per modificare i metadati di una risorsa nell&#39;interfaccia utente di [!DNL As
    >
    >Se un campo di testo è vuoto, non è presente alcun set di metadati. Puoi immettere un valore nel campo e salvarlo per aggiungere tale proprietà di metadati.
 
-Eventuali modifiche ai metadati di una risorsa vengono riscritte nel file binario originale come parte dei dati XMP. Il flusso di lavoro di reinserimento dei metadati aggiunge i metadati al binario originale. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e nuove proprietà (incluse le proprietà personalizzate come `cq:tags`) vengono aggiunte con lo schema.
+Eventuali modifiche ai metadati di una risorsa vengono scritte nuovamente nel file binario originale come parte dei dati XMP. Il flusso di lavoro di reinserimento dei metadati aggiunge i metadati al binario originale. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e nuove proprietà (incluse le proprietà personalizzate come `cq:tags`) vengono aggiunte con lo schema.
 
-Il write-back XMP è supportato e abilitato per le piattaforme e i formati di file descritti in [requisiti tecnici.](/help/sites-deploying/technical-requirements.md)
+Il write-back di XMP è supportato e abilitato per le piattaforme e i formati di file descritti in [requisiti tecnici.](/help/sites-deploying/technical-requirements.md)
 
 ## Modificare le proprietà dei metadati di più risorse {#editing-metadata-properties-of-multiple-assets}
 
@@ -101,7 +101,7 @@ Per personalizzare la pagina delle proprietà dei metadati, tra cui l&#39;aggiun
 
 [!DNL Assets] consente di importare in blocco i metadati delle risorse utilizzando un file CSV. Per eseguire aggiornamenti in blocco delle risorse caricate di recente o di quelle esistenti, importa un file CSV. Puoi anche inserire in blocco i metadati delle risorse da un sistema di terze parti in formato CSV.
 
-L’importazione dei metadati è asincrona e non impedisce le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa dell’attività di writeback dell’XMP se viene selezionato il flag del flusso di lavoro. Pianifica tale importazione durante l’utilizzo snello del server in modo che le prestazioni per altri utenti non siano influenzate.
+L’importazione dei metadati è asincrona e non impedisce le prestazioni del sistema. L&#39;aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa dell&#39;attività di writeback di XMP se viene selezionato il flag del flusso di lavoro. Pianifica tale importazione durante l’utilizzo snello del server in modo che le prestazioni per altri utenti non siano influenzate.
 
 >[!NOTE]
 >
@@ -116,8 +116,8 @@ L’importazione dei metadati è asincrona e non impedisce le prestazioni del si
    |:---|:---|
    | [!UICONTROL Dimensione batch] | Numero di risorse in un batch per le quali devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | [!UICONTROL Separatore campi] | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
-   | [!UICONTROL Delimitatore multivalore] | Separatore per i valori dei metadati. Il valore predefinito è `|`. |
-   | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Quando è impostato su `true` e sono attive le impostazioni predefinite per il flusso di lavoro [!UICONTROL WriteBack] dei metadati DAM (che scrive i metadati nei dati binari dell&#39;XMP). L’abilitazione dei flussi di lavoro rallenta il sistema. |
+   | [!UICONTROL Delimitatore multivalore] | Separatore per i valori dei metadati. Il valore predefinito è `\|`. |
+   | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Quando è impostato su `true` e sono attive le impostazioni predefinite per il flusso di lavoro [!UICONTROL WriteBack] dei metadati DAM (che scrive i metadati nei dati binari di XMP). L’abilitazione dei flussi di lavoro rallenta il sistema. |
    | [!UICONTROL Nome colonna percorso risorsa] | Definisce il nome della colonna per il file CSV con le risorse. |
 
 1. Fai clic su **[!UICONTROL Importa]** nella barra degli strumenti. Dopo l&#39;importazione dei metadati, viene visualizzata una notifica nella cartella Posta in arrivo [!UICONTROL Notifica].
@@ -241,7 +241,7 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!
 >
 >* [Concetti e informazioni sui metadati](metadata-concepts.md).
 >* [Modifica proprietà metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=it)
+>* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

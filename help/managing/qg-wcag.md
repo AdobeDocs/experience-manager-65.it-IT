@@ -4,9 +4,9 @@ description: Guida rapida alle linee guida WCAG (Web Content Accessibility Guide
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: ht
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 100%
 
@@ -131,13 +131,13 @@ L’elenco delle tecniche non è statico: WAI lo aggiorna costantemente con nuov
 
 Si tratta di una serie di documenti che forniscono consigli ai lettori per approfondire lo scopo di linee guida e criteri di successo specifici. È possibile [scaricare un’introduzione con collegamenti a informazioni più dettagliate](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Per ogni linea guida e criterio di successo è disponibile anche un breve documento esplicativo con informazioni su:
+Per ogni linea guida e criterio di successo è disponibile anche una pagina esplicativa con informazioni su:
 
 * Intento della linea guida
 * Criteri di successo specifici
 * Tecniche consigliate, che contribuiscono a soddisfare i requisiti della linea guida, ma che non rientrano in alcun criterio di successo specifico.
 
-Il documento esplicativo per ogni criterio di successo fornisce informazioni su:
+La pagina esplicativa per ogni criterio di successo fornisce informazioni su:
 
 * Intento del criterio di successo
 * Esempi generali di come può essere soddisfatto il criterio di successo

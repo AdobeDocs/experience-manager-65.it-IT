@@ -8,10 +8,10 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 6%
+source-wordcount: '547'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 {{ue-over-mobile}}
 
-È possibile eseguire facilmente il rendering del contenuto Adobe Experience Manager (AEM) tramite [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
+È possibile eseguire facilmente il rendering del contenuto Adobe Experience Manager (AEM) tramite [Servlet predefiniti Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
 
 In genere, questi rendering predefiniti percorrono l’archivio e restituiscono il contenuto così com’è.
 
@@ -33,7 +33,7 @@ Il diagramma seguente mostra il rendering di Content Services.
 
 ## Richiesta JSON {#requesting-json}
 
-Utilizza **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** per richiedere JSON.
+Utilizza **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json** per richiedere JSON.
 
 <table>
  <tbody>

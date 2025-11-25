@@ -2,11 +2,11 @@
 title: Migrare le risorse in blocco
 description: Descrive come inserire risorse in  [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle nelle istanze di pubblicazione.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 6%
@@ -25,8 +25,8 @@ Prima di eseguire effettivamente uno dei passaggi di questa metodologia, riveder
 >
 >I seguenti strumenti di migrazione delle risorse non fanno parte di [!DNL Experience Manager] e non sono supportati da Adobe:
 >
->* ACS AEM Tools Tag Maker
->* Importazione risorse CSV strumenti AEM ACS
+>* Creatore di tag ACS AEM Tools
+>* Importazione CSV risorse ACS AEM Tools
 >* Gestione flusso di lavoro in blocco ACS Commons
 >* ACS Commons Fast Action Manager
 >* Flusso di lavoro sintetico
@@ -52,7 +52,7 @@ Prima di avviare la migrazione, disabilita i moduli di avvio per il flusso di la
 
 ### Carica tag {#loading-tags}
 
-È possibile che sia già stata impostata una tassonomia dei tag da applicare alle immagini. Strumenti come Importazione risorse CSV e Supporto di [!DNL Experience Manager] per i profili di metadati possono automatizzare il processo di applicazione dei tag alle risorse, ma i tag devono essere caricati nel sistema. La funzionalità [Strumenti AEM ACS Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) consente di popolare i tag utilizzando un foglio di calcolo di Microsoft Excel caricato nel sistema.
+È possibile che sia già stata impostata una tassonomia dei tag da applicare alle immagini. Strumenti come Importazione risorse CSV e Supporto di [!DNL Experience Manager] per i profili di metadati possono automatizzare il processo di applicazione dei tag alle risorse, ma i tag devono essere caricati nel sistema. La funzionalità [Strumenti di AEM ACS Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) consente di popolare i tag utilizzando un foglio di calcolo di Microsoft Excel caricato nel sistema.
 
 ### Acquisire risorse {#ingesting-assets}
 
@@ -73,13 +73,13 @@ L’altro approccio per acquisire le risorse consiste nell’estrarre le risorse
 
 #### Recupera dal file system locale {#pulling-from-the-local-filesystem}
 
-La funzione di importazione risorse CSV degli strumenti AEM di [ACS](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) richiama le risorse dal file system e i metadati delle risorse da un file CSV per l&#39;importazione delle risorse. L’API di Experience Manager Asset Manager viene utilizzata per importare le risorse nel sistema e applicare le proprietà dei metadati configurate. Idealmente, le risorse vengono installate sul server tramite un file di rete o un&#39;unità esterna.
+La funzione di importazione risorse CSV [ACS AEM Tools](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) richiama le risorse dal file system e i metadati delle risorse da un file CSV per l&#39;importazione delle risorse. L’API di Experience Manager Asset Manager viene utilizzata per importare le risorse nel sistema e applicare le proprietà dei metadati configurate. Idealmente, le risorse vengono installate sul server tramite un file di rete o un&#39;unità esterna.
 
 Poiché le risorse non devono essere trasmesse in rete, le prestazioni complessive migliorano notevolmente e questo metodo è generalmente considerato il modo più efficiente per caricare le risorse nell’archivio. Inoltre, poiché lo strumento supporta l’acquisizione dei metadati, puoi importare tutte le risorse e i metadati in un singolo passaggio anziché creare anche un secondo passaggio per applicare i metadati tramite uno strumento separato.
 
 ### Elabora rappresentazioni {#processing-renditions}
 
-Dopo aver caricato le risorse nel sistema, devi elaborarle tramite il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, devi duplicare e modificare il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] in base alle tue esigenze. Il flusso di lavoro preconfigurato contiene molti passaggi che potrebbero non essere necessari, ad esempio la generazione PTIFF di Dynamic Medie o l&#39;integrazione di [!DNL InDesign Server].
+Dopo aver caricato le risorse nel sistema, devi elaborarle tramite il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, devi duplicare e modificare il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] in base alle tue esigenze. Il flusso di lavoro preconfigurato contiene molti passaggi che potrebbero non essere necessari, ad esempio la generazione PTIFF di Dynamic Media o l&#39;integrazione di [!DNL InDesign Server].
 
 Dopo aver configurato il flusso di lavoro in base alle tue esigenze, puoi eseguirlo in due modi:
 
@@ -88,7 +88,7 @@ Dopo aver configurato il flusso di lavoro in base alle tue esigenze, puoi esegui
 
 ### Attivare risorse {#activating-assets}
 
-Per le distribuzioni che hanno un livello di pubblicazione, devi attivare le risorse nella farm di pubblicazione. Adobe consiglia di eseguire più di una singola istanza Publish, ma è più efficiente replicare tutte le risorse in una singola istanza Publish e quindi clonarla. Quando attivi un numero elevato di risorse, dopo l’attivazione di una struttura ad albero potrebbe essere necessario intervenire. Ecco perché: quando si attivano le attivazioni, gli elementi vengono aggiunti alla coda dei processi/eventi Sling. Quando la dimensione di questa coda inizia a superare circa 40.000 elementi, l’elaborazione rallenta notevolmente. Quando la dimensione di questa coda supera i 100.000 elementi, la stabilità del sistema inizia a risentirne.
+Per le distribuzioni che hanno un livello di pubblicazione, devi attivare le risorse nella farm di pubblicazione. Adobe consiglia di eseguire più di una singola istanza di pubblicazione, ma è più efficiente replicare tutte le risorse in una singola istanza di pubblicazione e quindi clonarla. Quando attivi un numero elevato di risorse, dopo l’attivazione di una struttura ad albero potrebbe essere necessario intervenire. Ecco perché: quando si attivano le attivazioni, gli elementi vengono aggiunti alla coda dei processi/eventi Sling. Quando la dimensione di questa coda inizia a superare circa 40.000 elementi, l’elaborazione rallenta notevolmente. Quando la dimensione di questa coda supera i 100.000 elementi, la stabilità del sistema inizia a risentirne.
 
 Per risolvere il problema, è possibile utilizzare [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) per gestire la replica delle risorse. Questo funziona senza utilizzare le code Sling, riducendo il sovraccarico e riducendo al contempo il carico di lavoro per evitare che il server diventi sovraccarico. Un esempio dell’utilizzo di FAM per gestire la replica è riportato nella pagina della documentazione della funzione.
 
@@ -100,7 +100,7 @@ Per uno qualsiasi di questi approcci, è opportuno notare che le risorse sull’
 >
 >Adobe non gestisce o supporta Grabbit.
 
-### Clona Publish {#cloning-publish}
+### Pubblicazione clone {#cloning-publish}
 
 Dopo l’attivazione delle risorse, puoi clonare l’istanza di pubblicazione per creare tutte le copie necessarie per la distribuzione. La clonazione di un server è abbastanza semplice, ma ci sono alcuni passaggi importanti da ricordare. Per clonare la pubblicazione:
 
@@ -133,6 +133,6 @@ In questo caso, le risorse sono già compilate con metadati e le rappresentazion
 
 1. Attiva risorse: segui le istruzioni per [l&#39;attivazione delle risorse](#activating-assets) documentate per la migrazione iniziale a [!DNL Experience Manager].
 
-1. Pubblicazione duplicata: come per una nuova migrazione, caricare una singola istanza di pubblicazione e clonarla è più efficiente che attivare il contenuto su entrambi i nodi. Vedere [Clonazione di Publish.](#cloning-publish)
+1. Pubblicazione duplicata: come per una nuova migrazione, caricare una singola istanza di pubblicazione e clonarla è più efficiente che attivare il contenuto su entrambi i nodi. Vedi [Pubblicazione clonazione.](#cloning-publish)
 
 1. Abilita flussi di lavoro: dopo aver completato la migrazione, riabilita i moduli di avvio per il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per supportare la generazione di rendering e l&#39;estrazione di metadati per l&#39;utilizzo quotidiano continuo del sistema.

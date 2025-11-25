@@ -3,13 +3,13 @@ title: Funzioni e interfacce accessibili di  [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità di  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] aiutano gli utenti con disabilità.
 contentOwner: AG
 feature: Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Possible topics to cover in this article are below.
 * [Iniziativa per l&#39;accessibilità - Applicazioni Internet avanzate accessibili (WAI-ARIA) di W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-Per leggere un report con i dettagli del livello di conformità, vedere la pagina [Report conformità accessibilità](https://www.adobe.com/accessibility/compliance.html) (ACR).
+Per leggere un report con i dettagli del livello di conformità, vedere la pagina del [report sulla conformità per l&#39;accessibilità](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
 Per informazioni sull&#39;accessibilità di [!DNL Dynamic Media], vedere Accesso facilitato di [in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
@@ -209,7 +209,7 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 
 ## Documentazione accessibile {#accessible-docs}
 
-[!DNL Experience Manager] fornisce una documentazione accessibile per l&#39;utilizzo da parte di persone con disabilità. Di seguito è riportato come rendere accessibile per il momento l’offerta di contenuti, mentre Adobe continua a migliorare il modello e il contenuto:
+[!DNL Experience Manager] fornisce una documentazione accessibile per l&#39;utilizzo da parte di persone con disabilità. Di seguito è riportato come contribuire a rendere accessibile per il momento l’offerta di contenuti, mentre Adobe continua a migliorare il modello e il contenuto:
 
 * Gli assistenti vocali possono leggere il testo.
 * Per le immagini e le illustrazioni è disponibile testo alternativo.
@@ -228,4 +228,4 @@ Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto re
 >* [Funzioni di accessibilità in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Note sulla versione dei miglioramenti eseguiti in ogni versione del Service Pack](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] guida all&#39;accessibilità](/help/managing/web-accessibility.md).
->* [Report di conformità (ACR) ed elenco VPAT per soluzioni Adobe](https://www.adobe.com/accessibility/compliance.html).
+>* [Rapporti di conformità (ACR) ed elenco VPAT per le soluzioni Adobe](https://www.adobe.com/accessibility/compliance.html).

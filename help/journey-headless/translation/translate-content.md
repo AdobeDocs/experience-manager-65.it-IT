@@ -4,8 +4,8 @@ description: Utilizza il connettore di traduzione e le regole per tradurre il co
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 71%
@@ -18,10 +18,10 @@ Utilizzare l’integrazione della traduzione e le regole per tradurre il contenu
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione headless AEM, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare le regole di traduzione AEM per identificare il contenuto da tradurre. Ora dovresti:
+Nel documento precedente del percorso di traduzione headless AEM, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare le regole di traduzione AEM per identificare il contenuto da tradurre. Ora dovresti aver appreso quanto segue:
 
-* Comprendere come funzionano le regole di traduzione.
-* Essere in grado di definire le tue regole di traduzione.
+* Come funzionano le regole di traduzione.
+* Come definire le tue regole di traduzione.
 
 Ora che le regole del connettore e delle traduzioni sono configurate, questo articolo illustra il passaggio successivo per la traduzione dei contenuti headless.
 
@@ -29,7 +29,7 @@ Ora che le regole del connettore e delle traduzioni sono configurate, questo art
 
 Questo documento ti aiuta a capire come utilizzare i progetti di traduzione AEM insieme al connettore e le regole di traduzione per tradurre il contenuto. Dopo aver letto questo documento, dovresti effettuare le seguenti operazioni:
 
-* Sapere cos’è un progetto di traduzione.
+* Cos’è un progetto di traduzione.
 * Crea progetti di traduzione.
 * Utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
@@ -37,7 +37,7 @@ Questo documento ti aiuta a capire come utilizzare i progetti di traduzione AEM 
 
 I progetti di traduzione consentono di gestire la traduzione dei contenuti AEM headless. Un progetto di traduzione raccoglie i contenuti da tradurre in altre lingue in un unico luogo per una visione globale dell’attività di traduzione.
 
-Quando il contenuto è aggiunto a un progetto di traduzione, viene creato un lavoro di traduzione. I processi forniscono i comandi e le informazioni sullo stato, utili per gestire i flussi di lavoro di traduzione umana e automatica che vengono eseguiti sulle risorse.
+Quando il contenuto è aggiunto a un progetto di traduzione, viene creato un processo di traduzione. I processi forniscono i comandi e le informazioni sullo stato, utili per gestire i flussi di lavoro di traduzione umana e automatica che vengono eseguiti sulle risorse.
 
 I progetti di traduzione possono essere creati in due modi:
 
@@ -133,21 +133,21 @@ Quando crei automaticamente il progetto di traduzione, AEM valuta il contenuto h
 Per visualizzare i dettagli del contenuto headless incluso in questo progetto:
 
 1. Fai clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda **Processo di traduzione**.
-1. Nella finestra **Lavoro di traduzione** vengono elencati tutti gli elementi del lavoro.
-   ![Dettagli del lavoro di traduzione](assets/translation-job-detail.png)
+1. Nella finestra **Processo di traduzione** vengono elencati tutti gli elementi del processo.
+   ![Dettagli del processo di traduzione](assets/translation-job-detail.png)
 1. Fai clic su una riga per visualizzarne i dettagli, tenendo presente che può rappresentare più elementi di contenuto da tradurre.
 1. Fai clic sulla casella di controllo di selezione di un elemento per visualizzare ulteriori opzioni, ad esempio l’opzione per eliminarlo dal processo o visualizzarlo nelle console Frammenti di contenuto o Assets.
-   ![Opzioni del lavoro di traduzione](assets/translation-job-options.png)
+   ![Opzioni del processo di traduzione](assets/translation-job-options.png)
 
-In genere il contenuto del lavoro di traduzione inizia nello stato **Bozza** come indicato dalla colonna **Stato** nella finestra **Lavoro di traduzione**.
+In genere il contenuto del processo di traduzione inizia nello stato **Bozza** come indicato dalla colonna **Stato** nella finestra **Processo di traduzione**.
 
 Per avviare il processo di traduzione, torna alla panoramica del progetto di traduzione e fai clic sul pulsante con freccia nella parte superiore della scheda **Processo di traduzione** e seleziona **Inizio**.
 
-![Avviare il lavoro di traduzione](assets/start-translation-job.png)
+![Avviare il processo di traduzione](assets/start-translation-job.png)
 
-AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Per visualizzare l’avanzamento della traduzione, torna alla finestra **Lavoro di traduzione** e controlla la colonna **Stato** delle voci.
+AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Per visualizzare l’avanzamento della traduzione, torna alla finestra **Processo di traduzione** e controlla la colonna **Stato** delle voci.
 
-![Lavoro di traduzione approvato](assets/translation-job-approved.png)
+![Processo di traduzione approvato](assets/translation-job-approved.png)
 
 Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. La traduzione umana consente una maggiore interazione, ma va oltre lo scopo di questo percorso.
 
@@ -155,30 +155,30 @@ Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. 
 
 Quando crei manualmente un progetto di traduzione, AEM crea i processi necessari, ma non seleziona automaticamente alcun contenuto da includervi. Questo consente al project manager di traduzione di scegliere il contenuto da tradurre.
 
-Per aggiungere contenuto a un lavoro di traduzione:
+Per aggiungere contenuto a un processo di traduzione:
 
 1. Fai clic sul pulsante con i puntini di sospensione nella parte inferiore di una delle schede del **processo di traduzione**.
 1. Vedi che il processo non presenta contenunto. Fai clic sul pulsante **Aggiungi** nella parte superiore della finestra e quindi **Assets/Pages** dal menu a discesa.
 
-   ![Lavoro di traduzione vuoto](assets/empty-translation-job.png)
+   ![Processo di traduzione vuoto](assets/empty-translation-job.png)
 
 1. Viene visualizzato un browser del percorso che consente di selezionare in modo specifico quale contenuto aggiungere. Individua il contenuto e fai clic per selezionarlo.
 
    ![Browser percorsi](assets/path-browser.png)
 
 1. Fai clic su **Seleziona** per aggiungere il contenuto selezionato al processo.
-1. Nella finestra di dialogo **Traduci**, specifica **Crea copia in lingua**.
+1. Nella finestra di dialogo **Traduci**, specifica **Crea copia per lingua**.
 
    ![Crea copia per lingua](assets/translate-copy-master.png)
 
-1. Il contenuto è ora incluso nel lavoro.
+1. Il contenuto è ora incluso nel processo.
 
-   ![Contenuto aggiunto al lavoro di traduzione](assets/content-added.png)
+   ![Contenuto aggiunto al processo di traduzione](assets/content-added.png)
 
 1. Fai clic sulla casella di controllo di selezione di un elemento per visualizzare ulteriori opzioni, ad esempio l’opzione per eliminarlo dal processo o visualizzarlo nelle console Frammenti di contenuto o Assets.
-   ![Opzioni del lavoro di traduzione](assets/translation-job-options-manual.png)
+   ![Opzioni del processo di traduzione](assets/translation-job-options-manual.png)
 
-1. Ripeti questi passaggi per includere nel lavoro tutto il contenuto necessario.
+1. Ripeti questi passaggi per includere nel processo tutto il contenuto necessario.
 
 >[!TIP]
 >
@@ -192,11 +192,11 @@ In genere il contenuto del processo di traduzione inizia nello stato **Bozza** c
 
 Per avviare il processo di traduzione, torna alla panoramica del progetto di traduzione e fai clic sul pulsante con freccia nella parte superiore della scheda **Processo di traduzione** e seleziona **Inizio**.
 
-![Avviare il lavoro di traduzione](assets/start-translation-job-manual.png)
+![Avviare il processo di traduzione](assets/start-translation-job-manual.png)
 
-AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Per visualizzare l’avanzamento della traduzione, torna alla finestra **Lavoro di traduzione** e controlla la colonna **Stato** delle voci.
+AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Per visualizzare l’avanzamento della traduzione, torna alla finestra **Processo di traduzione** e controlla la colonna **Stato** delle voci.
 
-![Lavoro di traduzione approvato](assets/translation-job-approved-manual.png)
+![Processo di traduzione approvato](assets/translation-job-approved-manual.png)
 
 Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. La traduzione umana consente una maggiore interazione, ma va oltre lo scopo di questo percorso.
 
@@ -204,7 +204,7 @@ Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. 
 
 [Come visto in precedenza,](#using-translation-project) contenuto tradotto automaticamente torna in AEM con lo stato di **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
 
-Basta andare al lavoro di traduzione completato e selezionare una riga toccando o facendo clic sulla casella di spunta. L’icona **Mostra in Frammenti di contenuto** si trova nella barra degli strumenti.
+Basta andare al processo di traduzione completato e selezionare una riga toccando o facendo clic sulla casella di spunta. L’icona **Mostra in Frammenti di contenuto** si trova nella barra degli strumenti.
 
 ![Mostra in Frammenti di contenuto](assets/reveal-in-content-fragment.png)
 
@@ -234,13 +234,13 @@ Se il servizio di traduzione fornisce una traduzione umana, il processo di revis
 
 La traduzione umana va oltre lo scopo di questo percorso di localizzazione. Consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine di questo documento per ulteriori informazioni su questo argomento. Tuttavia, oltre alle opzioni di approvazione aggiuntive, il flusso di lavoro per le traduzioni umane è lo stesso delle traduzioni automatiche descritto in questo percorso.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora che hai completato questa parte del percorso di traduzione headless, dovresti essere in grado di effettuare le seguenti operazioni:
 
-* Sapere cos’è un progetto di traduzione.
+* Cos’è un progetto di traduzione.
 * Crea progetti di traduzione.
-* Utilizzare i progetti di traduzione per tradurre i contenuti headless.
+* Come utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
 Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM headless consultando il documento successivo [Pubblicare contenuti tradotti](publish-content.md) dove verrà illustrato come pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto della lingua principale cambia.
 

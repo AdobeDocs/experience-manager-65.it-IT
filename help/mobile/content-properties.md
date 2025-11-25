@@ -9,10 +9,10 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 21%
+source-wordcount: '312'
+ht-degree: 20%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 21%
 
 Articoli, banner e raccolte sono rappresentati come cq:Pages in AEM.
 
-Condividono le stesse proprietà comuni presenti in qualsiasi cq:Page, oltre a diverse altre mostrate di seguito che rappresentano i metadati di Adobe Experience Manager (AEM) Mobile On-Demand Services e le proprietà di supporto dell’integrazione.
+Condividono le stesse proprietà comuni presenti in qualsiasi cq:Page, oltre a diverse altre mostrate di seguito che rappresentano i metadati di Adobe Experience Manager (AEM) Mobile On-Demand Services e le proprietà di supporto dell&#39;integrazione.
 
 Le tabelle seguenti descrivono le proprietà e i nodi del contenuto.
 
@@ -30,12 +30,12 @@ Le tabelle seguenti descrivono le proprietà e i nodi del contenuto.
 
 | **Nome proprietà** | **Tipo** | **Valori predefiniti o previsti** | **Descrizione** |
 |---|---|---|---|
-| dps-id | Stringa |  | assegnati da AEM Mobile e memorizzati dall’AEM dopo essere stati caricati su AEM Mobile o importati da AEM Mobile |
-| dps-resourceType | Stringa | dps:Article | dps:Banner | dps:Collection | proprietà del tipo di entità |
+| dps-id | Stringa |  | assegnati da AEM Mobile e memorizzati da AEM dopo essere stati caricati su AEM Mobile o importati da AEM Mobile |
+| dps-resourceType | Stringa | dps:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-version | Stringa |  | versione dell’entità AEM Mobile (contenuta anche nell’aemm-id completo) |
-| dps-lastSynced | Data |  | data dell’ultima sincronizzazione/importazione da AEM Mobile a AEM |
-| dps-lastUploaded | Data |  | data dell’ultimo caricamento dall’AEM ad AEM Mobile |
-| dps-lastUploadedBy | Stringa:userid |  | ID utente che ha eseguito l’ultima richiesta di caricamento dall’AEM ad AEM Mobile |
+| dps-lastSynced | Data |  | data dell’ultima sincronizzazione/importazione da AEM Mobile ad AEM |
+| dps-lastUploaded | Data |  | data dell’ultimo caricamento da AEM ad AEM Mobile |
+| dps-lastUploadedBy | Stringa:userid |  | utente id che ha eseguito l’ultima richiesta di caricamento da AEM ad AEM Mobile |
 
 ## Proprietà metadati core {#core-metadata-properties}
 

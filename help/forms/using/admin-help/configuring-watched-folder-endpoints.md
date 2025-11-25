@@ -9,10 +9,10 @@ exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '7192'
-ht-degree: 100%
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
+source-wordcount: '7168'
+ht-degree: 99%
 
 ---
 
@@ -158,9 +158,9 @@ Puoi utilizzare i modelli file per escludere:
 * File con nomi specifici, ad esempio dati.&amp;ast; escluderebbe i file e le cartelle denominati *data1*, *data2* e così via.
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-   * Dati[0-9][0-9][0-9].[dD][aA]’porta’
-   * &amp;ast;.[dD][Aa]’porta’
-   * &amp;ast;.[Xx][Mm][Ll]
+   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+   * &amp;ast;.`[dD][aA]`&#39;porta&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui modelli di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -174,9 +174,9 @@ Puoi utilizzare i pattern di file per includere:
 * File con nomi specifici, ad esempio dati.&amp;ast; includerebbe i file e le cartelle con nome *dati1*, *dati2* e così via.
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-   * Dati[0-9][0-9][0-9].[dD][aA]’porta’
-   * &amp;ast;.[dD][Aa]’porta’
-   * &amp;ast;.[Xx][Mm][Ll]
+   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+   * &amp;ast;.`[dD][aA]`&#39;porta&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Per ulteriori informazioni sui pattern di file, consulta [Informazioni sui pattern di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -204,7 +204,7 @@ Se il percorso non è assoluto ma relativo, la cartella verrà creata all’inte
 
 >[!NOTE]
 >
->Minore è la dimensione delle cartelle dei risultati, migliori saranno le prestazioni della cartella controllata. Se ad esempio il carico stimato per la cartella controllata è di 1000 file all’ora, prova uno schema come `result/%Y%M%D%H` in modo che venga creata una nuova sottocartella ogni ora. Se il caricamento è più piccolo (ad esempio 1000 file al giorno), puoi utilizzare un pattern come `result/%Y%M%D`.
+>Minore è la dimensione delle cartelle dei risultati, migliori saranno le prestazioni della cartella controllata. Ad esempio, se il carico stimato per la cartella controllata è di 1000 file l’ora, prova un pattern come `result/%Y%M%D%H` in modo che venga creata una nuova sottocartella ogni ora. Se il caricamento è più piccolo (ad esempio 1000 file al giorno), puoi utilizzare un pattern come `result/%Y%M%D`.
 
 **Cartella di conservazione:** percorso in cui vengono archiviati i file dopo il completamento dell’analisi e del prelievo. Il percorso può essere un percorso di directory assoluto, relativo o nullo. Puoi utilizzare i modelli di file, come descritto per la Cartella dei risultati. Il valore predefinito è mantieni/%A/%M/%G/.
 
@@ -246,9 +246,9 @@ Gli amministratori possono specificare il tipo di file che può richiamare un se
 * File con nomi specifici. Ad esempio, data.&amp;ast;
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-   * Dati[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &amp;ast;.[dD][Aa]’porta’
-   * &amp;ast;.[Xx][Mm][Ll]
+   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+   * &amp;ast;.`[dD][aA]`&#39;porta&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 L’amministratore può definire il modello di file della cartella di output in cui memorizzare i risultati. Per le cartelle di output (risultati, conservazione ed errori), l’amministratore può specificare uno dei seguenti modelli di file:
 

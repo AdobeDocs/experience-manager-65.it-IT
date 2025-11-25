@@ -2,11 +2,11 @@
 title: '[!DNL Assets] sviluppo proxy'
 description: Un proxy è un'istanza  [!DNL Experience Manager]  che utilizza i lavoratori proxy per elaborare i processi. Scopri come configurare un proxy  [!DNL Experience Manager] , le operazioni supportate, i componenti proxy e come sviluppare un processo di lavoro proxy personalizzato.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] utilizza un proxy per distribuire l&#39;elaborazione per determinate attività.
 
-Un proxy è un&#39;istanza di Experience Manager specifica (e talvolta separata) che utilizza i lavoratori proxy come processori responsabili della gestione di un processo e della creazione di un risultato. Un processo di lavoro proxy può essere utilizzato per un&#39;ampia gamma di attività. Se è presente un proxy [!DNL Assets], può essere utilizzato per caricare le risorse per il rendering in Assets. Il processo di lavoro proxy [IDS](indesign.md) utilizza ad esempio un server [!DNL Adobe InDesign] per elaborare i file da utilizzare in Assets.
+Un proxy è un’istanza Experience Manager specifica (e a volte separata) che utilizza i lavoratori proxy come processori responsabili della gestione di un processo e della creazione di un risultato. Un processo di lavoro proxy può essere utilizzato per un&#39;ampia gamma di attività. Se è presente un proxy [!DNL Assets], può essere utilizzato per caricare le risorse per il rendering in Assets. Il processo di lavoro proxy [IDS](indesign.md) utilizza ad esempio un server [!DNL Adobe InDesign] per elaborare i file da utilizzare in Assets.
 
 Quando il proxy è un&#39;istanza [!DNL Experience Manager] separata, ciò consente di ridurre il carico sulle istanze di authoring [!DNL Experience Manager]. Per impostazione predefinita, [!DNL Assets] esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite Proxy) per ridurre il carico sull&#39;istanza di authoring [!DNL Experience Manager].
 
@@ -117,7 +117,7 @@ Le configurazioni di lavoro proxy e proxy sono disponibili tramite le configuraz
 
 >[!NOTE]
 >
->Per ulteriori informazioni, vedere [Configurazione di InDesign Server Proxy Worker](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [Configurazione di Cloud Service](../sites-developing/extending-cloud-config.md).
+>Per ulteriori informazioni, vedere [Configurazione di InDesign Server Proxy Worker](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [Configurazione di Cloud Services](../sites-developing/extending-cloud-config.md).
 
 Di seguito è riportato un esempio di utilizzo dell’API:
 
@@ -136,7 +136,7 @@ Di seguito è riportato un esempio di utilizzo dell’API:
 
 ### Sviluppo di un processo di lavoro proxy personalizzato {#developing-a-customized-proxy-worker}
 
-Il processo di lavoro proxy [IDS](indesign.md) è un esempio di un processo di lavoro proxy [!DNL Assets] già preconfigurato per esternalizzare l&#39;elaborazione delle risorse InDesign.
+Il processo di lavoro proxy [IDS](indesign.md) è un esempio di un processo di lavoro proxy [!DNL Assets] già preconfigurato per l&#39;esternalizzazione dell&#39;elaborazione delle risorse InDesign.
 
 È inoltre possibile sviluppare e configurare il proprio processo di lavoro proxy [!DNL Assets] per creare un processo di lavoro specializzato per l&#39;invio e l&#39;esternalizzazione delle attività di elaborazione [!DNL Assets].
 
@@ -188,4 +188,4 @@ Il diagramma e i passaggi seguenti descrivono in dettaglio come procedere:
 >
 >Sincronizzazione dei risultati:
 >
->In caso contrario, il risultato dell&#39;elaborazione rimarrà con il proxy. È compito del client (Autore Experience Manager) richiedere il risultato utilizzando lo stesso ID processo univoco fornito al client al momento della creazione del lavoro. Il proxy esegue semplicemente il processo e mantiene il risultato pronto per essere richiesto.
+>In caso contrario, il risultato dell&#39;elaborazione rimarrà con il proxy. È compito del client (Experience Manager Author) richiedere il risultato utilizzando lo stesso ID processo univoco fornito al client al momento della creazione del processo. Il proxy esegue semplicemente il processo e mantiene il risultato pronto per essere richiesto.

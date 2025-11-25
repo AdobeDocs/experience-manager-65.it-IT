@@ -4,8 +4,8 @@ description: È possibile implementare i progetti AEM in un modello headful e he
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 88%
@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Headful e Headless in AEM {#headful-headless}
 
-I progetti di Adobe Experience Manager possono essere implementati sia in modelli headful che headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto. Questo documento fornisce una panoramica dei diversi modelli e descrive i livelli di integrazione dell’SPA.
+I progetti di Adobe Experience Manager possono essere implementati sia in modelli headful che headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto. Questo documento fornisce una panoramica dei diversi modelli e descrive i livelli di integrazione delle applicazioni a pagina singola.
 
 ## Panoramica {#overview}
 
@@ -30,7 +30,7 @@ In un modello headful o full stack, il contenuto viene gestito nell’archivio A
 
 In un modello headless, il contenuto viene gestito nell’archivio AEM, ma distribuito tramite API come REST e GraphQL a un altro sistema per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, il contenuto viene creato in AEM, ma la sua presentazione, distribuzione e attribuzione di stile avvengono su un’altra piattaforma.
 
-Le applicazioni a pagina singola (SPA) sono spesso la destinazione del contenuto headless consegnato da AEM. Tuttavia, non è necessario che questi SPA siano completamente esterni all&#39;AEM. L’AEM consente di decidere in che misura l’SPA viene integrato nell’AEM. Prendiamo un esempio.
+Le applicazioni a pagina singola (SPA) sono spesso la destinazione del contenuto headless consegnato da AEM. Tuttavia, queste applicazioni a pagina singola non devono essere completamente esterne ad AEM. AEM consente di decidere in che misura le applicazioni a pagina singola vengono integrate in AEM. Prendiamo un esempio.
 
 ## Esempio di negozio web {#web-shop-example}
 
@@ -46,7 +46,7 @@ La sezione successiva esplora più dettagliatamente questi livelli di integrazio
 
 >[!NOTE]
 >
->Naturalmente si potrebbe anche implementare nuovamente la SPA del negozio web come una SPA di AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM.](/help/sites-developing/spa-walkthrough.md) Se si dispone già di AEM e si desidera creare un Web shop o un altro SPA, questo è il metodo consigliato, ma non è incluso nell&#39;ambito del documento.
+>Naturalmente si potrebbe anche implementare nuovamente la SPA del negozio web come una SPA di AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM.](/help/sites-developing/spa-walkthrough.md) Se si dispone già di AEM e si desidera creare un Web shop o un&#39;altra applicazione a pagina singola, questo è il metodo consigliato, ma non è incluso nell&#39;ambito del documento.
 
 ## Livelli di integrazione SPA {#integration-levels}
 

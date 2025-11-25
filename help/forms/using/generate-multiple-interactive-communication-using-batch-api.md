@@ -9,10 +9,10 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2134'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ L’API Batch accetta i record (dati) in formato JSON e da un modello di dati de
 
 ## Utilizzo dell’API Batch {#using-the-batch-api}
 
-Puoi utilizzare l’API Batch con Cartelle controllate o come API Rest indipendente. Puoi configurare un modello, un tipo di output (HTML, PRINT o Both), una lingua, un servizio di precompilazione e un nome per le comunicazioni interattive generate per utilizzare l’API Batch.
+Puoi utilizzare l’API Batch con Cartelle controllate o come API Rest indipendente. Puoi configurare un modello, un tipo di output (HTML, PRINT o Entrambi), una lingua, un servizio di precompilazione e un nome per le comunicazioni interattive generate per utilizzare l’API Batch.
 
 È possibile combinare un record con un modello di comunicazione interattiva per produrre una comunicazione interattiva. Le API batch possono leggere i record (dati per modelli di comunicazione interattivi) direttamente da un file JSON o da un’origine dati esterna accessibile tramite il modello dati del modulo. È possibile mantenere ogni record in un file JSON separato o creare un array JSON per mantenere tutti i record in un singolo file.
 
@@ -84,10 +84,10 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
 1. Crea una [cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configurala per utilizzare l&#39;API Batch:
    1. Accedi all’istanza Autore AEM Forms.
    1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Seleziona **[!UICONTROL Nuovo]**.
-   1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Esempio: `c:\batchprocessing`.
+   1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Ad esempio, `c:\batchprocessing`.
    1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file tramite]**.
    1. Selezionare il servizio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** nel campo **[!UICONTROL Nome servizio]**.
-   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=it#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
+   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
 1. Configura parametri avanzati:
    1. Apri la scheda **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
 
@@ -95,7 +95,7 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
       |--- |--- |--- |
       | templatePath | Stringa | Specifica il percorso del modello di comunicazione interattiva da utilizzare. Ad esempio, `/content/dam/formsanddocuments/testsample/mediumic`. È una proprietà obbligatoria. |
       | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specifichi /employee/Id, il valore del campo id diventa il nome della comunicazione interattiva corrispondente. Il valore predefinito è un [UUID casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Booleano | Imposta il valore su False. Puoi utilizzare il parametro usePrefillService per precompilare la comunicazione interattiva con i dati recuperati dal servizio precompilato configurato per la comunicazione interattiva corrispondente. Quando usePrefillService è impostato su true, i dati JSON di input (per ogni record) vengono trattati come argomenti FDM. Il valore predefinito è false. |
+      | usePrefillService | Booleano | Imposta il valore su False. Puoi utilizzare il parametro usePrefillService per precompilare la comunicazione interattiva con i dati recuperati dal servizio precompilato configurato per la comunicazione interattiva corrispondente. Quando usePrefillService è impostato su true, i dati JSON di input (per ogni record) vengono trattati come argomenti FDM. Il valore predefinito è falso. |
       | batchType | Stringa | Impostate il valore su PRINT, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
       | lingua | Stringa | Specifica le impostazioni locali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione internazionale, ma puoi creare un servizio personalizzato per generare comunicazioni interattive localizzate. Il valore predefinito è en_US |
 
@@ -144,17 +144,17 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
 1. Crea una [cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configurala per utilizzare il servizio API Batch:
    1. Accedi all’istanza Autore AEM Forms.
    1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Seleziona **[!UICONTROL Nuovo]**.
-   1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Esempio: `c:\batchprocessing`.
+   1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Ad esempio, `c:\batchprocessing`.
    1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file tramite]**.
    1. Selezionare il servizio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** nel campo **[!UICONTROL Nome servizio]**.
-   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=it#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
+   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
 1. Configura parametri avanzati:
    1. Apri la scheda **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
 
       | Proprietà | Tipo | Descrizione |
       |--- |--- |--- |
       | templatePath | Stringa | Specifica il percorso del modello di comunicazione interattiva da utilizzare. Ad esempio, /content/dam/formsanddocuments/testsample/media. È una proprietà obbligatoria. |
-      | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specifichi /employee/Id, il valore del campo id diventa il nome della comunicazione interattiva corrispondente. Il valore predefinito è un [UUID casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specifichi /employee/Id, il valore del campo id diventa il nome della comunicazione interattiva corrispondente. Il valore predefinito è un [UUID casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Booleano | Imposta il valore su True. Il valore predefinito è false. Quando il valore è impostato su true, l’API Batch legge i dati dal modello dati del modulo configurato e li inserisce nella comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ogni record) vengono trattati come argomenti FDM. |
       | batchType | Stringa | Impostate il valore su PRINT, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
       | lingua | Stringa | Specifica le impostazioni locali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione internazionale, ma puoi creare un servizio personalizzato per generare comunicazioni interattive localizzate. Il valore di default è en_US. |
@@ -175,9 +175,9 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
 
 Prima di distribuire il servlet Java™, assicurati di disporre di una comunicazione interattiva e che i file di dati corrispondenti siano pronti. Per creare e distribuire il servlet Java™, effettua le seguenti operazioni:
 
-1. Accedi all’istanza dell’AEM e crea una comunicazione interattiva. Per utilizzare la comunicazione interattiva indicata nel codice di esempio fornito di seguito, [fai clic qui](assets/SimpleMediumIC.zip).
-1. [Crea e distribuisci un progetto AEM utilizzando Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=it) nella tua istanza AEM.
-1. Aggiungi [AEM Forms Client SDK versione 6.0.12 o successiva](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) nell&#39;elenco delle dipendenze del file POM del progetto AEM. Ad esempio:
+1. Accedi all’istanza di AEM e crea una comunicazione interattiva. Per utilizzare la comunicazione interattiva indicata nel codice di esempio fornito di seguito, [fai clic qui](assets/SimpleMediumIC.zip).
+1. [Crea e distribuisci un progetto AEM utilizzando Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) nella tua istanza AEM.
+1. Aggiungi [AEM Forms Client SDK versione 6.0.12 o successiva](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) nell&#39;elenco delle dipendenze del file POM del progetto AEM. Ad esempio,
 
    ```xml
        <dependency>
@@ -323,12 +323,12 @@ Prima di distribuire il servlet Java™, assicurati di disporre di una comunicaz
    ```
 
 1. Nel codice precedente, sostituisci il percorso del modello (setTemplatePath) con il percorso del modello e imposta il valore dell’API setBatchType:
-   * Quando si specifica l&#39;opzione PRINT PDF, viene generato l&#39;output per la comunicazione interattiva.
+   * Quando si specifica l&#39;opzione STAMPA PDF, viene generato l&#39;output per la comunicazione interattiva.
    * Quando si specifica l&#39;opzione WEB, viene generato un file JSON per record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template).
    * Quando si specificano le opzioni PRINT e WEB, vengono generati sia i documenti PDF che un file JSON per record.
 
-1. [Utilizza maven per distribuire il codice aggiornato alla tua istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=it).
-1. Per generare la comunicazione interattiva, richiama l’API batch. L’API batch stampa restituisce un flusso di file PDF e .json a seconda del numero di record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template). Se si utilizza il codice riportato sopra, l&#39;API viene distribuita in `http://localhost:4502/bin/batchServlet`. Il codice stampa e restituisce un flusso di un file PDF e un file JSON.
+1. [Utilizza maven per distribuire il codice aggiornato alla tua istanza di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. Per generare la comunicazione interattiva, richiama l’API batch. L’API batch restituisce un flusso di file PDF e .json in base al numero di record. È possibile utilizzare il file JSON per [precompilare un modello Web](#web-template). Se si utilizza il codice riportato sopra, l&#39;API viene distribuita in `http://localhost:4502/bin/batchServlet`. Il codice stampa e restituisce un flusso di un file PDF e JSON.
 
 ### Precompilare un modello web {#web-template}
 
@@ -363,4 +363,4 @@ Oltre a salvare i dati sul file system, puoi archiviare i file JSON in un archiv
 
 >[!NOTE]
 >
->Per impostazione predefinita, è abilitato solo il protocollo CRX. Per abilitare altri protocolli supportati, vedere [Configurazione del servizio di precompilazione tramite Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=it).
+>Per impostazione predefinita, è abilitato solo il protocollo CRX. Per abilitare altri protocolli supportati, vedere [Configurazione del servizio di precompilazione tramite Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

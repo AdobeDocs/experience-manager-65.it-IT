@@ -4,8 +4,8 @@ description: Scopri come utilizzare i Frammenti di contenuto AEM per progettare,
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 73%
@@ -22,14 +22,14 @@ Scopri come utilizzare i Frammenti di contenuto AEM per progettare, creare, cura
 
 I frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali.
 
-I Frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
+I Frammenti di contenuto contengono contenuti strutturati e possono essere consegnati in formato JSON.
 
 ## Come creare un Frammento di contenuto {#how-to-create-a-content-fragment}
 
 Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per rappresentare il contenuto creato. Questa sarà l’attività principale dei Frammenti di contenuto in AEM. Ai fini di questa guida introduttiva, ne creeremo uno.
 
-1. Accedi a AEM e dal menu principale seleziona **Navigazione > Assets**.
-1. Passa alla cartella [&#x200B; creata in precedenza.](create-assets-folder.md)
+1. Accedi ad AEM e dal menu principale seleziona **Navigazione > Assets**.
+1. Passa alla cartella [ creata in precedenza.](create-assets-folder.md)
 1. Fare clic su **Crea > Frammento di contenuto**.
 1. La creazione di un Frammento di contenuto viene presentata come una procedura guidata in due passaggi. Seleziona innanzitutto il modello da utilizzare per creare il frammento di contenuto e fai clic su **Avanti**.
    * I modelli disponibili dipendono dalla [**configurazione cloud** definita per la cartella risorse](create-assets-folder.md) in cui stai creando il frammento di contenuto.

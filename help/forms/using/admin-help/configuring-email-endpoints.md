@@ -9,10 +9,10 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3808'
-ht-degree: 0%
+source-wordcount: '3805'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ Gli endpoint e-mail consentono agli utenti di richiamare un servizio inviando un
 
 Per un endpoint e-mail, gli utenti autorizzati possono richiamare un processo inviando i file all’account appropriato. I risultati verranno restituiti all’utente che ha inviato il messaggio (per impostazione predefinita) o all’utente definito nelle impostazioni dell’endpoint.
 
-Prima di configurare un endpoint e-mail, crea un account e-mail POP3 o IMAP da utilizzare per l’endpoint. Imposta un conto separato per ogni tipo di conversione. Ad esempio, un account può essere configurato per generare documenti PDF standard da allegati di file in arrivo e un altro account può essere configurato per generare documenti PDF protetti.
+Prima di configurare un endpoint e-mail, crea un account e-mail POP3 o IMAP da utilizzare per l’endpoint. Imposta un conto separato per ogni tipo di conversione. Ad esempio, è possibile configurare un account per generare documenti PDF standard dagli allegati di file in arrivo e un altro account per generare documenti PDF protetti.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Prima di configurare un endpoint e-mail, crea un account e-mail POP3 o IMAP da u
 
 Tutti gli endpoint e-mail sono configurati con un nome utente e una password autorizzati per la casella in entrata e-mail, necessari quando si richiama il servizio. L’account e-mail è protetto dal sistema del server di posta in cui è configurato.
 
-Se gli utenti inviano documenti con caratteri della lingua dell&#39;Europa occidentale nei nomi dei percorsi di file e conversione, devono utilizzare un&#39;applicazione di posta elettronica che supporti i tipi di codifica richiesti (Latin1 [ISO-8859-1], Western European [Windows] o UTF-8). Per ulteriori informazioni, vedere il documento *Installazione e distribuzione di moduli AEM* per il server applicazioni.
+Se gli utenti inviano documenti con caratteri della lingua dell&#39;Europa occidentale nei nomi dei percorsi di file e conversione, devono utilizzare un&#39;applicazione di posta elettronica che supporti i tipi di codifica richiesti (Latin1 [ISO-8859-1], Western European [Windows] o UTF-8). Per ulteriori informazioni, vedere il documento *Installazione e distribuzione di AEM forms* per il server applicazioni.
 
 Prima di configurare un endpoint e-mail, configura il servizio e-mail. (Vedi [Configurare le impostazioni predefinite dell&#39;endpoint e-mail](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) I parametri di configurazione del servizio e-mail hanno due scopi:
 
@@ -49,7 +49,7 @@ Prima di configurare un endpoint e-mail, configura il servizio e-mail. (Vedi [Co
 1. Esporta un certificato client dal server e-mail.
 1. Utilizzare il programma keytool per importare il file di certificato client nell&#39;archivio certificati Java Virtual Machine (JVM) del server applicazioni. La procedura per questo passaggio dipende dai percorsi di installazione JVM e client.
 
-   Se ad esempio si utilizza un&#39;installazione predefinita di Oracle WebLogic Server con JDK 1.5.0 in Microsoft Windows Server® 2003, digitare il testo seguente al prompt dei comandi:
+   Se ad esempio si utilizza un&#39;installazione predefinita di Oracle WebLogic Server con JDK 1.5.0 su Microsoft Windows Server® 2003, digitare il testo seguente al prompt dei comandi:
 
    `keytool -import -file client_certificate -alias myalias -keystore BEA_HOME\jdk150_04\jre\security\cacerts`
 
@@ -69,17 +69,17 @@ Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in 
 
 ### Modificare i valori predefiniti per gli endpoint e-mail {#change-the-default-values-for-email-endpoints}
 
-1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione servizi.
+1. Nella console di amministrazione, fai clic su Servizi > Applicazioni e servizi > Gestione servizi.
 1. Nella pagina Gestione servizi, fai clic su E-mail: 1.0 (l’ID componente è com.adobe.idp.dsc.provider.service.email.Email).
 1. Nella scheda Configurazione specifica le impostazioni predefinite dell’endpoint e-mail, quindi fai clic su Salva.
 
 ### Impostazioni endpoint e-mail predefinito {#default-email-endpoint-settings}
 
-**Espressione Cron:** Espressione cron utilizzata dal quarzo per pianificare il polling della directory di input.
+**Espressione cron:** espressione cron come quella utilizzata da Quartz per pianificare il polling della directory di input.
 
 **Intervallo di ripetizione:** il numero di volte in cui il polling della directory viene ripetuto. L’intervallo di ripetizione predefinito è in secondi se questo valore non è specificato nella configurazione dell’endpoint. Il valore predefinito è 10. Questo valore non può essere inferiore a 10.
 
-**Conteggio ripetizioni:** il numero di volte in cui viene eseguito il polling della directory di input. Il conteggio di ripetizioni predefinito da utilizzare se questo valore non è specificato nella configurazione dell’endpoint. Il valore -1 indica l&#39;analisi indefinita della directory. Il valore predefinito è -1.
+**Conteggio ripetizioni:** il numero di volte in cui viene eseguito il polling della directory di input. Il conteggio delle ripetizioni predefinito da utilizzare se questo valore non è specificato nella configurazione dell’endpoint. Il valore -1 indica l’analisi indefinita della directory. Il valore predefinito è -1.
 
 **Ritardo all&#39;avvio del processo:** Il valore predefinito, in secondi, per il ritardo prima che il processo inizi la scansione dell&#39;endpoint. Il valore predefinito è 0.
 
@@ -89,9 +89,9 @@ Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in 
 
 **Pattern di dominio:** il modello di nome di dominio utilizzato per filtrare le e-mail in arrivo. Ad esempio, se utilizzi adobe.com, verranno elaborate solo le e-mail da adobe.com; le e-mail da altri domini verranno ignorate.
 
-**Pattern file:** i pattern di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&ast;.dat, &ast;.xml), nomi specifici (dati) ed espressioni composite nel nome e nell’estensione (.[dD][aA]&#39;porta&#39;). Il valore predefinito è &ast;.&ast;.
+**Pattern file:** i pattern di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&amp;ast;.dat, &amp;ast;.xml), nomi specifici (dati) ed espressioni composite nel nome e nell’estensione (.``[dD][aA]``&#39;porta&#39;). Il valore predefinito è &amp;ast;.&amp;ast;.
 
-**Destinatari del processo riuscito:** Uno o più indirizzi di posta elettronica utilizzati per inviare e-mail per indicare i processi riusciti. Per impostazione predefinita, un messaggio di processo riuscito viene sempre inviato al mittente del processo iniziale. Sono supportati fino a 100 destinatari. Per disattivare questa impostazione, lasciare vuoto il campo.
+**Destinatari processo riuscito:** Uno o più indirizzi di posta elettronica utilizzati per inviare e-mail per indicare processi riusciti. Per impostazione predefinita, un messaggio di processo riuscito viene sempre inviato al mittente del processo iniziale. Sono supportati fino a 100 destinatari. Per disattivare questa impostazione, lasciare vuoto il campo.
 
 **Destinatari del processo non riuscito:** Uno o più indirizzi di posta elettronica utilizzati per inviare e-mail per indicare i processi non riusciti. Per impostazione predefinita, un messaggio di processo non riuscito viene sempre inviato al mittente che ha inviato il processo iniziale. Sono supportati fino a 100 destinatari. Per disattivare questa impostazione, lasciare vuoto il campo.
 
@@ -147,9 +147,9 @@ Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in 
 
 Utilizza le seguenti impostazioni per configurare un endpoint e-mail.
 
-**Nome:** Impostazione obbligatoria che identifica l&#39;endpoint. Non includere un carattere &lt; perché tronca il nome visualizzato in Workspace. Se immetti un URL come nome dell’endpoint, accertati che sia conforme alle regole di sintassi specificate in RFC1738.
+**Nome:** Impostazione obbligatoria che identifica l&#39;endpoint. Non includere un carattere &lt; perché tronca il nome visualizzato in Workspace. Se immetti come nome dell’endpoint un URL, accertati che sia conforme alle regole di sintassi specificate in RFC1738.
 
-**Descrizione:** una descrizione dell&#39;endpoint. Non includere un carattere &lt; perché tronca la descrizione visualizzata in Workspace.
+**Descrizione:** descrizione dell’endpoint. Non includere un carattere &lt; perché tronca la descrizione visualizzata in Workspace.
 
 **Espressione Cron:** Immettere un&#39;espressione cron se l&#39;e-mail deve essere pianificata utilizzando un&#39;espressione cron.
 
@@ -163,17 +163,17 @@ Utilizza le seguenti impostazioni per configurare un endpoint e-mail.
 
 **Nome utente:** Impostazione obbligatoria, ovvero il nome utente utilizzato quando si richiama un servizio di destinazione da un&#39;e-mail. Il valore predefinito è SuperAdmin.
 
-**Nome dominio:** Impostazione obbligatoria, che rappresenta il dominio dell&#39;utente. Il valore predefinito è DefaultDom.
+**Nome dominio:** Impostazione obbligatoria che rappresenta il dominio dell&#39;utente. Il valore predefinito è DefaultDom.
 
 **Pattern dominio:** specifica i pattern di dominio delle e-mail in arrivo accettate dal provider. Ad esempio, se utilizzi adobe.com, vengono elaborate solo le e-mail da adobe.com; le e-mail da altri domini vengono ignorate.
 
-**Modello file:** Specifica i modelli di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&ast;.dat, &ast;.xml), nomi specifici (dati) o espressioni composite nel nome e nell&#39;estensione (&ast;.[dD][aA]&#39;porta&#39;).
+**Modello file:** Specifica i modelli di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&amp;ast;.dat, &amp;ast;.xml), nomi specifici (dati) o espressioni composite nel nome e nell&#39;estensione (&amp;ast;.`[dD][aA]`&#39;porta&#39;).
 
 **Destinatari del processo riuscito:** un indirizzo e-mail a cui vengono inviati messaggi per indicare i processi riusciti. Per impostazione predefinita, un messaggio di processo riuscito viene sempre inviato al mittente. Se si digita mittente, i risultati e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica destinatari aggiuntivi con indirizzi e-mail, separati da virgole (,).
 
 Per disattivare questa impostazione, lasciare vuota l&#39;impostazione. In alcuni casi, si desidera attivare un processo e non inviare una notifica e-mail del risultato.
 
-**Destinatari del processo non riuscito:** Un indirizzo e-mail a cui vengono inviati i messaggi per indicare i processi non riusciti. Per impostazione predefinita, un messaggio di processo non riuscito viene sempre inviato al mittente. Se si digita mittente, i risultati e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica destinatari aggiuntivi con indirizzi e-mail, separati da virgole (,).
+**Destinatari processo non riuscito:** Un indirizzo e-mail a cui vengono inviati i messaggi per indicare i processi non riusciti. Per impostazione predefinita, un messaggio di processo non riuscito viene sempre inviato al mittente. Se si digita mittente, i risultati e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica destinatari aggiuntivi con indirizzi e-mail, separati da virgole (,).
 
 Per disattivare questa impostazione, lasciare vuota l&#39;impostazione. In alcuni casi, si desidera attivare un processo e non inviare una notifica e-mail del risultato.
 
@@ -199,7 +199,7 @@ Per disattivare questa impostazione, lasciare vuota l&#39;impostazione. In alcun
 
 **Password SMTP:** la password per l&#39;account SMTP. Alcuni server di posta non richiedono una password SMTP.
 
-**Invia da:** L&#39;indirizzo di posta elettronica (ad esempio, user@company.com) utilizzato per inviare notifiche e-mail di risultati ed errori. Se non si specifica un valore Invia da, il server di posta elettronica tenta di determinare l&#39;indirizzo di posta elettronica combinando il valore specificato nell&#39;impostazione Utente SMTP con un dominio predefinito configurato sul server di posta elettronica. Se il server di posta elettronica non dispone di un dominio predefinito e non si specifica un valore per Invia da, potrebbero verificarsi degli errori. Per verificare che i messaggi e-mail abbiano l’indirizzo di origine corretto, specifica un valore per l’impostazione Invia da.
+**Invia da:** L&#39;indirizzo di posta elettronica (ad esempio, `user@company.com`) utilizzato per inviare notifiche e-mail di risultati ed errori. Se non si specifica un valore Invia da, il server di posta elettronica tenta di determinare l&#39;indirizzo di posta elettronica combinando il valore specificato nell&#39;impostazione Utente SMTP con un dominio predefinito configurato sul server di posta elettronica. Se il server di posta elettronica non dispone di un dominio predefinito e non si specifica un valore per Invia da, potrebbero verificarsi degli errori. Per verificare che i messaggi e-mail abbiano l’indirizzo di origine corretto, specifica un valore per l’impostazione Invia da.
 
 **SSL SMTP abilitato:** Selezionare questa impostazione per forzare il provider di posta elettronica a utilizzare SSL per la scansione della casella in entrata. Assicurati che il server di posta supporti SSL.
 
@@ -207,7 +207,7 @@ Per disattivare questa impostazione, lasciare vuota l&#39;impostazione. In alcun
 
 **asincrono:** Quando è impostato su sincrono, tutti i documenti di input vengono elaborati e viene restituita una singola risposta. Quando è impostato su asincrono, viene inviata una risposta per ogni documento elaborato.
 
-Ad esempio, viene creato un endpoint e-mail per un servizio che accetta un singolo documento di Word e restituisce tale documento come file PDF. È possibile inviare un’e-mail alla casella in entrata dell’endpoint contenente più (3) documenti Word. Quando vengono elaborati tutti e tre i documenti, se l’endpoint è configurato come sincrono, viene inviata un’unica e-mail di risposta con tutti e tre i documenti allegati. Se l’endpoint è asincrono, viene inviata un’e-mail di risposta dopo che ogni documento di Word è stato convertito in PDF. Il risultato sono tre e-mail, ciascuna con un singolo allegato PDF.
+Ad esempio, viene creato un endpoint e-mail per un servizio che accetta un singolo documento di Word e restituisce tale documento come file PDF. È possibile inviare un messaggio e-mail alla casella in entrata dell’endpoint contenente più (3) documenti Word. Quando vengono elaborati tutti e tre i documenti, se l’endpoint è configurato come sincrono, viene inviata un’unica e-mail di risposta con tutti e tre i documenti allegati. Se l’endpoint è asincrono, viene inviata un’e-mail di risposta dopo la conversione di ogni documento di Word in PDF. Il risultato sono tre e-mail, ciascuna con un singolo allegato PDF.
 
 Il valore predefinito è asincrono.
 
@@ -235,7 +235,7 @@ Il valore predefinito è asincrono.
 
 **Letterale:** L&#39;e-mail utilizza il valore immesso nel campo così come viene visualizzato.
 
-**Variabile:** è possibile mappare una stringa dall&#39;oggetto, dal corpo, dall&#39;intestazione o dall&#39;indirizzo di posta elettronica del mittente. A tale scopo, utilizzare una delle seguenti parole chiave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Se ad esempio si utilizza %SUBJECT%, il contenuto dell&#39;oggetto dell&#39;e-mail verrà utilizzato come parametro di input. Per prelevare gli allegati, immettere un modello di file che l&#39;endpoint e-mail può utilizzare per selezionare i documenti allegati. Se ad esempio si immette &ast;.pdf, verranno selezionati tutti i documenti allegati con estensione pdf. Se si immette &ast;, verrà selezionato qualsiasi documento allegato. L&#39;immissione di example.pdf consente di selezionare qualsiasi documento allegato denominato example.pdf.
+**Variabile:** è possibile mappare una stringa dall&#39;oggetto, dal corpo, dall&#39;intestazione o dall&#39;indirizzo di posta elettronica del mittente. A tale scopo, utilizzare una delle seguenti parole chiave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Se ad esempio si utilizza %SUBJECT%, il contenuto dell&#39;oggetto dell&#39;e-mail verrà utilizzato come parametro di input. Per prelevare gli allegati, immettere un modello di file che l&#39;endpoint e-mail può utilizzare per selezionare i documenti allegati. Se ad esempio si immette &amp;ast;.pdf, verranno selezionati tutti i documenti allegati con estensione pdf. Se si immette &amp;ast;, verrà selezionato qualsiasi documento allegato. L&#39;immissione di example.pdf consente di selezionare qualsiasi documento allegato denominato example.pdf.
 
 **Mapping parametri di output:** utilizzato per configurare l&#39;output del servizio e dell&#39;operazione. I seguenti caratteri nei valori di mappatura dei parametri di output vengono espansi nel nome file allegato:
 
@@ -245,7 +245,7 @@ Il valore predefinito è asincrono.
 
 Qualsiasi occorrenza della barra rovesciata (\) viene sostituita con %%.
 
-***nota &#x200B;**: se il messaggio di richiesta del servizio include più file allegati, non è possibile utilizzare i parametri %F e %E per la proprietà Output Parameter Mappints dell&#39;endpoint. Se la risposta dei servizi restituisce più allegati, non è possibile specificare lo stesso nome per più allegati. Se non si seguono queste raccomandazioni, il servizio richiamato crea i nomi per i file restituiti e i nomi non sono prevedibili.*
+***nota **: se il messaggio di richiesta del servizio include più file allegati, non è possibile utilizzare i parametri %F e %E per la proprietà Output Parameter Mappints dell&#39;endpoint. Se la risposta dei servizi restituisce più allegati, non è possibile specificare lo stesso nome per più allegati. Se non si seguono queste raccomandazioni, il servizio richiamato crea i nomi per i file restituiti e i nomi non sono prevedibili.*
 
 Sono disponibili i seguenti valori:
 
@@ -259,7 +259,7 @@ Sono disponibili i seguenti valori:
 
 Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in arrivo dagli utenti, è necessario creare un endpoint e-mail per il servizio Completa attività.
 
-1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione servizi.
+1. Nella console di amministrazione, fai clic su Servizi > Applicazioni e servizi > Gestione servizi.
 1. Nella pagina Gestione servizio fare clic sul servizio Completa attività.
 1. Nella scheda Endpoint, seleziona E-mail dall’elenco a discesa, quindi fai clic su Aggiungi.
 1. Nella casella Posta in arrivo host digitare il nome host o l&#39;indirizzo IP del server di posta.

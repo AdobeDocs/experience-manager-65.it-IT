@@ -4,8 +4,8 @@ description: Introduzione alle potenti e flessibili funzionalità headless di Ad
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 83%
@@ -32,7 +32,7 @@ Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da u
 
 ![Il classico CMS full-stack](/help/journey-headless/developer/assets/full-stack.png)
 
-In un CMS full stack, tutte le funzionalità per la manipolazione dei contenuti sono disponibili nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
+In un CMS full stack, tutte le funzionalità per la manipolazione dei contenuti sono disponibili in CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
 
 * Occorre gestire un solo sistema.
 * I contenuti vengono gestiti a livello centrale.
@@ -71,7 +71,7 @@ Questo è più di un dettaglio di sviluppo, ma potrebbe interessarti anche solo 
 
 Dopo aver creato i modelli per frammenti di contenuto e averli utilizzati dagli autori per generare il contenuto, le applicazioni headless devono accedere a tale contenuto.
 
-Adobe Experience Manager (AEM) può accedere in modo selettivo ai frammenti di contenuto utilizzando l’API GraphQL dell’AEM, per restituire solo il contenuto necessario. Utilizzando l’API, uno sviluppatore può formulare query per la selezione di contenuti specifici. Questo processo di selezione si basa sui *tuoi* Modelli per frammenti di contenuto.
+Adobe Experience Manager (AEM) può accedere in modo selettivo ai frammenti di contenuto utilizzando l’API GraphQL di AEM, per restituire solo il contenuto necessario. Utilizzando l’API, uno sviluppatore può formulare query per la selezione di contenuti specifici. Questo processo di selezione si basa sui *tuoi* Modelli per frammenti di contenuto.
 
 Questo significa che il progetto può realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
 

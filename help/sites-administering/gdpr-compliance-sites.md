@@ -1,5 +1,5 @@
 ---
-title: AEM Sites - Preparazione al RGPD
+title: AEM Sites - Compatibilità GDPR
 description: Scopri le procedure per gestire le richieste RGPD in AEM Sites e come utilizzarle.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,15 +8,15 @@ topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
+role: Admin, Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
-# AEM Sites - Preparazione al RGPD{#aem-sites-gdpr-readiness}
+# AEM Sites - Compatibilità GDPR{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -30,13 +30,13 @@ Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center]
 
 >[!NOTE]
 >
->Consulta [Preparazione all&#39;AEM per il RGPD](/help/managing/data-protection-and-privacy.md) per ulteriori dettagli.
+>Per ulteriori dettagli, consulta [Preparazione RGPD di AEM](/help/managing/data-protection-and-privacy.md).
 
 ## Author Server {#author-server}
 
 Gli account utente e i contenuti UGC sul server di authoring sono trattati nella [documentazione RGPD di Platform](/help/managing/data-protection-and-privacy.md).
 
-## Server Publish {#publish-server}
+## Server di pubblicazione {#publish-server}
 
 Gli account utente utilizzati per autenticare i visitatori sul sito e i contenuti UGC sul server di pubblicazione sono trattati nella [documentazione RGPD di Platform](/help/managing/data-protection-and-privacy.md).
 
@@ -44,19 +44,19 @@ Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati dei 
 
 ## Consenso/rinuncia {#opt-in-opt-out}
 
-AEM dispone di un servizio di rinuncia ai cookie [&#128279;](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire il consenso/diniego per gli utenti.
+AEM dispone di un [servizio di rinuncia ai cookie](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire il consenso/diniego per gli utenti.
 
 ## Approfondimenti migliorati da Analytics {#enhanced-insights-by-analytics}
 
 AEM Sites include un’integrazione opzionale con Enhanced Insights by Analytics che utilizza funzionalità interne al servizio Adobe Analytics On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=it).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Personalization ottimizzato per Target {#enhanced-personalization-by-target}
 
 AEM Sites include un’integrazione opzionale con Enhanced Personalization by Target che utilizza funzionalità interne al servizio Adobe Target On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=it).
 
 ## ContextHub {#contexthub}
 
@@ -66,9 +66,9 @@ Per impostazione predefinita, i dati visitatore non sono memorizzati in AEM. AEM
 
 >[!NOTE]
 >
->Prima di Adobe AEM (CQ) 5.6, il ClientContext (una versione precedente di ContextHub) ha inviato i dati al server, ma non li ha memorizzati.
+>Prima di Adobe AEM (CQ) 5.6, ClientContext (una versione precedente di ContextHub) ha inviato i dati al server, ma non li ha memorizzati.
 >
->L’Adobe AEM 6.4 e versioni precedenti ora sono in fase di fine del ciclo di vita e non sono incluse in questa documentazione. Consulta [Documentazione delle versioni precedenti di Adobe Experience Manager, CQ e CRX](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>Adobe AEM 6.4 e versioni precedenti ora sono EOL e non sono incluse in questa documentazione. Consulta [Documentazione delle versioni precedenti di Adobe Experience Manager, CQ e CRX](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Implementazione di consenso/rinuncia {#implementing-opt-in-opt-out}
 

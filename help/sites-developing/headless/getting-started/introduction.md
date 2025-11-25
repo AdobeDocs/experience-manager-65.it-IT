@@ -1,11 +1,11 @@
 ---
 title: Guida introduttiva di Headless
-description: Con questa guida rapida, scopri le funzionalità headless di Adobe Experience Manager (AEM) 6.5 come Modelli di contenuto, Frammenti di contenuto e API GraphQL.
+description: Con questa guida rapida, scopri le funzionalità headless di Adobe Experience Manager (AEM) 6.5 come modelli di contenuto, frammenti di contenuto e API GraphQL.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 39%
@@ -16,7 +16,7 @@ ht-degree: 39%
 
 Le guide introduttive di Headless definiscono un semplice percorso per la creazione, la gestione e la distribuzione di esperienze tramite Adobe Experience Manager (AEM) 6.5 in cinque passaggi per gli utenti che hanno già familiarità con la tecnologia AEM e headless. Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
 
-1. [Creazione di una configurazione &#x200B;](create-configuration.md)
+1. [Creazione di una configurazione ](create-configuration.md)
 1. [Creazione di un modello di frammento di contenuto](create-content-model.md)
 1. [Creazione di una cartella di risorse](create-assets-folder.md)
 1. [Creazione di un frammento di contenuto](create-content-fragment.md)
@@ -26,11 +26,11 @@ Le guide introduttive di Headless definiscono un semplice percorso per la creazi
 >
 >Questa guida introduttiva presuppone la conoscenza delle tecnologie AEM e headless.
 >
->Se hai poca esperienza con AEM o headless, consulta i [Percorsi di documentazione headless](/help/journey-headless/overview.md) per un&#39;introduzione completa alla tecnologia headless e informazioni sul supporto fornito da AEM.
+>Se hai poca esperienza con AEM o headless, consulta i [Percorsi di documentazione headless](/help/journey-headless/overview.md) per un&#39;introduzione completa alla tecnologia headless e informazioni su come AEM supporta tale funzionalità.
 
 ## Pubblico {#audience}
 
-Le attività descritte nelle guide introduttive headless sono necessarie per una dimostrazione di base end-to-end delle funzionalità headless dell’AEM. Chiunque abbia accesso come amministratore a un’istanza di prova di AEM può seguire queste istruzioni per comprendere la distribuzione headless in AEM. Tuttavia, è consigliabile avere esperienza come sviluppatore.
+Le attività descritte nelle guide introduttive headless sono necessarie per una dimostrazione di base end-to-end delle funzionalità headless di AEM. Chiunque abbia accesso come amministratore a un’istanza di prova di AEM può seguire queste istruzioni per comprendere la distribuzione headless in AEM. Tuttavia, è consigliabile avere esperienza come sviluppatore.
 
 Tuttavia, in una situazione di produzione, le attività vengono in genere eseguite da utenti tipo diversi un numero variabile di volte. Ad esempio:
 

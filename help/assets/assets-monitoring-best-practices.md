@@ -1,14 +1,14 @@
 ---
-title: Best practice per monitorare l'implementazione  [!DNL Assets]
+title: 'Best practice per monitorare l''implementazione  [!DNL Assets] '
 description: Best practice per monitorare l'ambiente e le prestazioni della distribuzione  [!DNL Adobe Experience Manager]  dopo la distribuzione.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1638'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ In genere, [!DNL Experience Manager Assets] può essere monitorato in due modi: 
 
 È necessario eseguire il monitoraggio in tempo reale durante la fase di test delle prestazioni dello sviluppo o durante situazioni di carico elevato per comprendere le caratteristiche delle prestazioni dell’ambiente. In genere, il monitoraggio in tempo reale deve essere eseguito utilizzando una suite di strumenti. Di seguito sono riportati alcuni consigli:
 
-* [VM visiva](https://visualvm.github.io/): la VM visiva consente di visualizzare informazioni dettagliate sulla VM Java, tra cui l&#39;utilizzo della CPU e della memoria Java. Inoltre, ti consente di campionare e valutare il codice in esecuzione su una distribuzione.
-* [Top](https://man7.org/linux/man-pages/man1/top.1.html): Top è un comando di Linux che apre un dashboard che visualizza le statistiche di utilizzo, inclusi l&#39;utilizzo di CPU, memoria e I/O. Offre una panoramica di alto livello di ciò che accade in un’istanza.
-* [Htop](https://hisham.hm/htop/): Htop è un visualizzatore di processi interattivo. Fornisce informazioni dettagliate sull’utilizzo della CPU e della memoria, oltre a ciò che Top può fornire. Htop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install htop` o `apt-get install htop`.
+* [VM visiva](https://visualvm.github.io/): la VM visiva consente di visualizzare informazioni dettagliate sulla VM Java, tra cui l&#39;utilizzo di CPU e della memoria Java. Inoltre, ti consente di campionare e valutare il codice in esecuzione su una distribuzione.
+* [Top](https://man7.org/linux/man-pages/man1/top.1.html): Top è un comando Linux che apre un dashboard che visualizza le statistiche di utilizzo, inclusi CPU, memoria e utilizzo IO. Offre una panoramica di alto livello di ciò che accade in un’istanza.
+* [Htop](https://hisham.hm/htop/): Htop è un visualizzatore di processi interattivo. Fornisce informazioni dettagliate sull’utilizzo di CPU e memoria, oltre a ciò che Top può fornire. Htop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install htop` o `apt-get install htop`.
 
 * Iotop: Iotop è un dashboard dettagliato per l&#39;utilizzo di I/O su disco. Vengono visualizzate barre e contatori che illustrano i processi che utilizzano operazioni di I/O su disco e la quantità utilizzata. Iotop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install iotop` o `apt-get install iotop`.
 
@@ -69,11 +69,11 @@ Il monitoraggio dell’ambiente include il monitoraggio di quanto segue:
 * Velocità effettiva di rete
 * I/O disco
 * Memoria
-* Utilizzo della CPU
+* Utilizzo di CPU
 * MBean JMX
 * Siti Web esterni
 
-Per monitorare ogni elemento sono necessari strumenti esterni, come NewRelic(TM) e AppDynamics(TM). Utilizzando questi strumenti, puoi definire avvisi specifici per il tuo sistema, ad esempio un elevato utilizzo del sistema, il backup del flusso di lavoro, gli errori del controllo di integrità o l’accesso non autenticato al tuo sito web. L’Adobe non consiglia strumenti particolari rispetto ad altri. Trova lo strumento adatto e utilizzalo per monitorare gli elementi discussi.
+Per monitorare ogni elemento sono necessari strumenti esterni, come NewRelic(TM) e AppDynamics(TM). Utilizzando questi strumenti, puoi definire avvisi specifici per il tuo sistema, ad esempio un elevato utilizzo del sistema, il backup del flusso di lavoro, gli errori del controllo di integrità o l’accesso non autenticato al tuo sito web. Adobe non consiglia strumenti particolari rispetto ad altri. Trova lo strumento adatto e utilizzalo per monitorare gli elementi discussi.
 
 #### Monitoraggio interno delle applicazioni {#internal-application-monitoring}
 
@@ -194,11 +194,11 @@ Di seguito sono riportati alcuni controlli di integrità pronti all’uso che so
 Nel processo di monitoraggio, se si verificano problemi, ecco alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere problemi comuni con [!DNL Experience Manager] distribuzioni:
 
 * Se si utilizza TarMK, eseguire spesso la compattazione Tar. Per ulteriori dettagli, vedere [Gestione del repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Controlla `OutOfMemoryError` registri. Per ulteriori informazioni, vedere [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it).
+* Controlla `OutOfMemoryError` registri. Per ulteriori informazioni, vedere [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Controlla i registri per eventuali riferimenti a query non indicizzate, attraversamenti struttura o attraversamenti indice. Ciò indica query non indicizzate o query indicizzate in modo inadeguato. Per le best practice sull&#39;ottimizzazione delle prestazioni di query e indicizzazione, vedere [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilizza la console Flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, condensa più flussi di lavoro in un unico flusso di lavoro.
 * Rivedi il monitoraggio live e cerca ulteriori colli di bottiglia o utenti elevati di risorse specifiche.
 * Esaminare i punti di uscita dalla rete client e i punti di ingresso alla rete di distribuzione [!DNL Experience Manager], incluso Dispatcher. Spesso si tratta di aree con colli di bottiglia. Per ulteriori informazioni, vedere [Considerazioni sulla rete Assets](/help/assets/assets-network-considerations.md).
-* Ridimensiona il server [!DNL Experience Manager]. È possibile che la distribuzione di [!DNL Experience Manager] non sia stata dimensionata correttamente. L’Assistenza clienti Adobe può aiutarti a identificare se il tuo server è di dimensioni insufficienti.
+* Ridimensiona il server [!DNL Experience Manager]. È possibile che la distribuzione di [!DNL Experience Manager] non sia stata dimensionata correttamente. L’Assistenza clienti Adobe può aiutarti a identificare se il tuo server è di dimensioni inferiori a quelle reali.
 * Esaminare i file `access.log` e `error.log` per individuare eventuali voci in relazione a un problema. Cerca i pattern che possono potenzialmente indicare anomalie nel codice personalizzato. Aggiungili all’elenco degli eventi monitorati.

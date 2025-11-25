@@ -4,8 +4,8 @@ description: Introduzione alle potenti e flessibili funzionalità headless di Ad
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 87%
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 # Authoring per headless con AEM - Introduzione {#author-headless-introduction}
 
-In questa sezione del Percorso [Autore di contenuti headless AEM](overview.md), puoi imparare i concetti e la terminologia (di base) necessari per comprendere l&#39;authoring dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
+In questa sezione del [Percorso di authoring di contenuti headless AEM](overview.md), puoi imparare i concetti e la terminologia (di base) necessari per comprendere l&#39;authoring dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
 
 ## Obiettivo {#objective}
 
@@ -33,7 +33,7 @@ Headless è un termine utilizzato per descrivere i sistemi in cui i contenuti so
 
 Tradizionalmente, il contenuto era gestito con un CMS, e lo stesso CMS determinava il rendering di tale contenuto sulle pagine web.
 
-Ora, headless significa che il set di contenuti può essere gestito nel CMS e quindi accessibile da una o più applicazioni (indipendenti).
+Ora, headless significa che il set di contenuti può essere gestito in CMS e quindi accessibile da una o più applicazioni (indipendenti).
 
 Per questa ragione i contenuti possono essere inviati a qualsiasi dispositivo, in una vasta gamma di formati. Questo rende l’intero processo molto più flessibile, e implica inoltre che non è necessario preoccuparsi del layout e della formattazione.
 

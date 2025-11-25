@@ -4,11 +4,11 @@ description: Scopri come definire le regole di traduzione per identificare i con
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 81%
 
 Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
 Nel documento precedente del percorso di traduzione AEM headless, [Configurare l’integrazione della traduzione](configure-connector.md), hai imparato a installare e configurare l’integrazione della traduzione e ora dovresti:
 
-* Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
-* Essere in grado di impostare la propria connessione al servizio di traduzione.
+* I parametri importanti del framework di integrazione della traduzione in AEM.
+* Come impostare la propria connessione al servizio di traduzione.
 
 Ora che l’integrazione è configurata, questo articolo illustra il passaggio successivo per identificare il contenuto da tradurre.
 
@@ -75,10 +75,9 @@ Nell’interfaccia utente di **Configurazione della traduzione** sono disponibil
 1. Una volta deselezionato, sotto la sezione **Generale** aggiungi i nomi delle proprietà dei modelli per frammento di contenuto [precedentemente identificati come campi per la traduzione.](getting-started.md#content-models)
    1. Immetti il nome della proprietà nel campo **Nuova proprietà**.
    1. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.
-   1. Fare clic su **Aggiungi**.
+   1. Fai clic su **Aggiungi**.
    1. Ripeti questi passaggi per tutti i campi da tradurre.
    1. Fai clic su **Salva**.
-
       ![Aggiungi proprietà](assets/add-property.png)
 
 Hai configurato le regole di traduzione.
@@ -93,13 +92,13 @@ Tali funzioni generalmente non sono necessarie per iniziare a localizzare il con
 
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 
-* Comprendere come funzionano le regole di traduzione.
-* Essere in grado di definire le tue regole di traduzione.
+* Come funzionano le regole di traduzione.
+* Come definire le tue regole di traduzione.
 
 Approfondisci l&#39;argomento e continua il percorso di traduzione headless AEM consultando il documento successivo [Tradurre il contenuto](translate-content.md) dove verrà illustrato come l&#39;integrazione e le regole interagiscono per tradurre contenuti headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless consultando il documento [Traduci contenuto](translate-content.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
+Sebben sia raccomandat di passare alla parte successiva del percorso di traduzione headless esaminando il documento [Tradurre i contenuti,](translate-content.md) di seguito si trovano alcune risorse aggiuntive e facoltative per approfondire concetti menzionati in questo documento. Tuttavia, tali risorse non sono necessarie per continuare il percorso headless.
 
-* [Identificazione del contenuto da tradurre](/help/sites-administering/tc-rules.md) - Scopri come le regole di traduzione identificano i contenuti da tradurre.
+* [Identificazione del contenuto da tradurre](/help/sites-administering/tc-rules.md): scopri come le regole di traduzione identificano i contenuti da tradurre.

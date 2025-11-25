@@ -2,11 +2,11 @@
 title: Guida al dimensionamento di [!DNL Assets]
 description: Procedure consigliate per determinare metriche efficienti per stimare l'infrastruttura e le risorse necessarie per distribuire  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 0%
@@ -30,9 +30,9 @@ Infine, le funzionalità di controllo delle versioni di [!DNL Experience Manager
 Tenendo conto di questi fattori, è necessario utilizzare una metodologia per calcolare uno spazio di archiviazione sufficientemente accurato per l&#39;archiviazione delle risorse utente.
 
 1. Determina le dimensioni e il numero di risorse caricate nel sistema.
-1. Ottieni un esempio rappresentativo delle risorse da caricare in [!DNL Experience Manager]. Ad esempio, se si prevede di caricare nel sistema file PSD, JPG PDF, AI e, è necessario disporre di più immagini di esempio per ciascun formato di file. Inoltre, questi campioni devono essere rappresentativi delle diverse dimensioni e complessità delle immagini.
+1. Ottieni un esempio rappresentativo delle risorse da caricare in [!DNL Experience Manager]. Ad esempio, se si prevede di caricare nel sistema file PSD, JPG, AI e PDF, è necessario disporre di più immagini di esempio per ciascun formato di file. Inoltre, questi campioni devono essere rappresentativi delle diverse dimensioni e complessità delle immagini.
 1. Definisci le rappresentazioni da utilizzare.
-1. Creare le copie trasformate in [!DNL Experience Manager] utilizzando [!DNL ImageMagick] o [!DNL Adobe Creative Cloud] applicazioni. Oltre alle rappresentazioni specificate dagli utenti, crea rappresentazioni pronte all’uso. Per gli utenti che implementano Dynamic Media, puoi utilizzare il binario IC per generare le rappresentazioni PTIFF da memorizzare in Experience Manager.
+1. Creare le copie trasformate in [!DNL Experience Manager] utilizzando [!DNL ImageMagick] o [!DNL Adobe Creative Cloud] applicazioni. Oltre alle rappresentazioni specificate dagli utenti, crea rappresentazioni pronte all’uso. Per gli utenti che implementano Dynamic Media, puoi utilizzare il binario IC per generare le rappresentazioni PTIFF da archiviare in Experience Manager.
 1. Se prevedi di utilizzare risorse secondarie, generale per i tipi di file appropriati.
 1. Confronta le dimensioni delle immagini di output, delle rappresentazioni e delle risorse secondarie con le immagini originali. Ti consente di generare un fattore di crescita previsto quando il sistema viene caricato. Ad esempio, se generi copie trasformate e risorse secondarie con una dimensione combinata di 3 GB dopo l’elaborazione di 1 GB di risorse, il fattore di crescita della copia trasformata è 3.
 1. Determina il tempo massimo per il quale le versioni delle risorse devono essere mantenute nel sistema.
@@ -53,13 +53,13 @@ L’esecuzione dei passaggi precedenti consente di determinare quanto segue:
 
 I dati di esempio inseriti nello strumento mostrano quanto sia importante eseguire i passaggi indicati. Se imposti l’archivio dati esclusivamente in base alle immagini non elaborate caricate (1 TB), potresti aver sottovalutato la dimensione dell’archivio di un fattore di 15.
 
-[Ottieni file](assets/disk_sizing_tool.xlsx)
+[Ottieni il file](assets/disk_sizing_tool.xlsx)
 
 ### Archivi dati condivisi {#shared-datastores}
 
 Per i datastore di grandi dimensioni, puoi implementare un datastore condiviso sia tramite un datastore di file condiviso su un’unità collegata in rete sia tramite un datastore Amazon S3. In questo caso, non è necessario che le singole istanze conservino una copia dei file binari. Inoltre, un datastore condiviso facilita la replica senza binari e contribuisce a ridurre la larghezza di banda utilizzata per replicare le risorse negli ambienti di pubblicazione.
 
-#### Casi di utilizzo {#use-cases}
+#### Casi d’uso {#use-cases}
 
 L’archivio dati può essere condiviso tra un’istanza di authoring primaria e in standby per ridurre al minimo il tempo necessario per aggiornare l’istanza in standby con le modifiche apportate nell’istanza principale. Puoi anche condividere l’archivio dati tra le istanze di authoring e pubblicazione per ridurre al minimo il traffico durante la replica.
 
@@ -93,14 +93,14 @@ La latenza nelle implementazioni S3 è introdotta dai thread di scrittura in bac
 
 * Metadati risorsa
 * Versioni risorsa
-* Registri di audit
+* Registri di controllo
 * Flussi di lavoro attivi e archiviati
 
 Poiché i file binari sono memorizzati nell&#39;archivio dati, ogni file binario occupa un certo spazio. La maggior parte degli archivi ha dimensioni inferiori a 100 GB. Tuttavia, potrebbero essere presenti archivi di dimensioni fino a 1 TB. Inoltre, per eseguire la compattazione offline, è necessario spazio libero sufficiente sul volume per riscrivere l&#39;archivio compattato insieme alla versione precompattata. Una buona regola consiste nel ridimensionare il disco a 1,5 volte le dimensioni previste per l’archivio.
 
-Per l&#39;archivio, utilizzare unità SSD o dischi con un livello IOPS superiore a 3000. Per eliminare la possibilità che IOPS introduca colli di bottiglia delle prestazioni, monitorare i livelli di attesa I/O della CPU per rilevare i primi segnali di problemi.
+Per l&#39;archivio, utilizzare unità SSD o dischi con un livello IOPS superiore a 3000. Per eliminare la possibilità che IOPS introduca colli di bottiglia delle prestazioni, monitorare i livelli di attesa I/O di CPU per individuare i primi segnali di problemi.
 
-[Ottieni file](assets/aem_environment_sizingtool.xlsx)
+[Ottieni il file](assets/aem_environment_sizingtool.xlsx)
 
 ## Rete {#network}
 

@@ -1,20 +1,20 @@
 ---
-title: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query
-description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
+title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
+description: Scopri come utilizzare GraphQL con AEM per distribuire i contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 83%
+source-wordcount: '1577'
+ht-degree: 82%
 
 ---
 
 # Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query {#learn-graphql-with-aem-sample-content-queries}
 
-Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
+Scopri come utilizzare GraphQL con AEM per distribuire i contenuti headless esplorando contenuti e query di esempio.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplor
 >* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 >* [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-Per iniziare a utilizzare le query GraphQL e a come funzionano con i frammenti di contenuto AEM, è utile visualizzare alcuni esempi pratici.
+Per iniziare a utilizzare le query GraphQL e a come funzionano con i frammenti di contenuto di AEM, è utile visualizzare alcuni esempi pratici.
 
 Per assistenza, consulta:
 
@@ -1720,7 +1720,7 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 | Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
+| Marsh |  Duke |   |
 |  Smith |  Joe |   |
 | Croft |  Lara | Gamestar |
 | Caulfield |  Max |  Gameblitz |
@@ -1738,10 +1738,10 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 
 | Nome | Paese | Popolazione | Categorie |
 |--- |--- |--- |--- |
-| Basilea | Svizzera | 172258 | city:emea |
+| Basilea | Svizzera | 172258 | città:emea |
 | Berlino | Germania | 3669491 | city:capital<br>city:emea |
 | Bucarest | Romania | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San Jose |  USA |  102635 |  city:na |
-| Stoccarda |  Germania |  634830 |  city:emea |
+| San Jose |  USA |  102635 |  città:na |
+| Stoccarda |  Germania |  634830 |  città:emea |
 |  Zurigo |  Svizzera |  415367 |  city:capital<br>city:emea |

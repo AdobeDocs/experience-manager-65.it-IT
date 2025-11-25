@@ -2,18 +2,18 @@
 title: Considerazioni e requisiti di rete
 description: Vengono illustrate le considerazioni sulla rete durante la progettazione di una distribuzione  [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# [!DNL Assets] considerazioni sulla rete {#assets-network-considerations}
+# Considerazioni sulla rete di [!DNL Assets] {#assets-network-considerations}
 
 Comprendere la rete è importante quanto comprendere [!DNL Adobe Experience Manager Assets]. La rete può influenzare le esperienze di caricamento, download e utilizzo. La creazione di diagrammi della topologia di rete consente di identificare i punti di interruzione e le aree sottoottimizzate della rete che è necessario correggere per migliorare le prestazioni della rete e l&#39;esperienza utente.
 
@@ -52,7 +52,7 @@ Il diagramma mostra una velocità di uplink più elevata all&#39;interno della r
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
-È importante considerare fattori sconosciuti su Internet e sulla connessione VPC perché la larghezza di banda su Internet può essere compromessa a causa di picchi di carico o interruzioni su larga scala del provider. In generale, la connettività Internet è affidabile. Tuttavia, a volte può introdurre punti di soffocamento.
+È importante considerare fattori sconosciuti su Internet e sulla connessione VPC, perché la larghezza di banda su Internet può essere compromessa a causa di picchi di carico o interruzioni su larga scala del provider. In generale, la connettività Internet è affidabile. Tuttavia, a volte può introdurre punti di soffocamento.
 
 Nell&#39;uplink da una rete aziendale a Internet, ci possono essere altri servizi che utilizzano la larghezza di banda. È importante comprendere la quantità di larghezza di banda che può essere dedicata o assegnata a Assets. Ad esempio, se un collegamento a 1 Gb/s è già utilizzato all&#39;80%, è possibile allocare solo un massimo del 20% della larghezza di banda per [!DNL Experience Manager Assets].
 
@@ -70,7 +70,7 @@ Dai diagrammi di esempio si può concludere che sei dispositivi condividono un c
 
 La progettazione della topologia dell&#39;ambiente [!DNL Experience Manager] richiede una conoscenza dettagliata della configurazione del sistema e del modo in cui la rete è connessa all&#39;interno dell&#39;ambiente utente.
 
-Lo scenario di esempio include una farm di pubblicazione con cinque server, un archivio binario S3 e Dynamic Medie configurato.
+Lo scenario di esempio include una farm di pubblicazione con cinque server, un archivio binario S3 e Dynamic Media configurati.
 
 Dispatcher condivide la connessione a 100 Mbps con due entità, il mondo esterno e la distribuzione [!DNL Experience Manager]. Per operazioni di caricamento e download simultanee, è necessario dividere questo numero per due. Lo storage esterno collegato utilizza una connessione separata.
 
@@ -92,7 +92,7 @@ Durante la valutazione della topologia del flusso di lavoro interno, è necessar
 
 Di seguito sono riportati alcuni elementi da considerare:
 
-* Lettura/scrittura di metadati XMP
+* Lettura/scrittura metadati XMP
 * Attivazione e replica automatiche
 * Filigrana
 * Acquisizione di risorse secondarie/estrazione di pagina

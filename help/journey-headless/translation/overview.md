@@ -4,8 +4,8 @@ description: Inizia qui per un percorso guidato alla traduzione di contenuti hea
 exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 93%
@@ -18,7 +18,7 @@ Inizia qui per un percorso guidato alla traduzione di contenuti headless utilizz
 
 ## Introduzione {#introduction}
 
-L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovino e indipendentemente dal canale, dall’area geografica o dalle impostazioni internazionali.
+L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovino e indipendentemente dal canale, dall’area geografica o dalla lingua.
 
 L’implementazione headless ignora la gestione di pagine e componenti come avviene nelle soluzioni full-stack e si concentra sulla creazione dei frammenti di contenuto riutilizzabili e indipendenti dal canale, che possono essere distribuiti in modalità cross-channel. Utilizzando i potenti strumenti di traduzione di AEM, questi frammenti riutilizzabili possono essere facilmente tradotti e consegnati al pubblico ovunque si trovi.
 
@@ -74,7 +74,7 @@ Sebbene tu possa accedere direttamente a una sezione specifica del percorso, mol
 | 5 | [Tradurre il contenuto](translate-content.md) | Utilizzare l’integrazione della traduzione e le regole per tradurre il contenuto headless. |
 | 6 | [Pubblicare contenuti tradotti](publish-content.md) | Scopri come pubblicare il contenuto tradotto e aggiornare la traduzione quando il contenuto sottostante viene aggiornato. |
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 È ora possibile iniziare a utilizzare il percorso di traduzione headless di Adobe. Ti invitiamo a continuare nella parte successiva del percorso e a leggere l’articolo [Scopri i contenuti headless e come tradurli in AEM](learn-about.md)
 
@@ -87,7 +87,7 @@ I percorsi sono progettati per resistere da soli. Tuttavia, diverse di esse poss
 * [Percorso di authoring headless](/help/journey-headless/author/overview.md): inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le potenzialità e i modi in cui modellare i contenuti sul tuo primo progetto headless.
 * [Percorso Architect headless](/help/journey-headless/architect/overview.md): fai clic qui per un&#39;introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e per vedere come modellare i contenuti per il tuo progetto.
 * [Percorso per sviluppatori AEM headless](/help/journey-headless/developer/overview.md): inizia qui un percorso guidato per scoprire le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come sfruttarle nel tuo primo progetto.
-* [Documentazione tecnica AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) - Se hai già una solida conoscenza delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
+* [Documentazione tecnica di AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) - Se hai già una conoscenza approfondita delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
    * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * [Tutorial AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): se preferisci imparare con la pratica e hai capacità tecniche, segui i nostri tutorial pratici organizzati per API e framework, che esplorano la creazione e l’utilizzo di applicazioni basate su AEM Headless.
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

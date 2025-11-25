@@ -1,11 +1,11 @@
 ---
 title: Guida rapida all’accesso e alla distribuzione di frammenti di contenuto headless
-description: Scopri come utilizzare l’API REST Assets dell’AEM per gestire i frammenti di contenuto e l’API GraphQL per la distribuzione headless dei contenuti dei frammenti di contenuto.
+description: Scopri come utilizzare l’API REST di AEM per Assets per gestire i frammenti di contenuto e l’API di GraphQL per la distribuzione headless dei contenuti dei frammenti di contenuto.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 41%
@@ -30,14 +30,13 @@ Il resto di questa guida è incentrato sull’accesso a GraphQL e sulla distribu
 
 Gli architetti di informazioni devono progettare query per gli endpoint di canale per distribuire i contenuti. Considera queste query solo una volta per endpoint, per modello. Per questa guida introduttiva, creane una sola.
 
-1. Accedi all&#39;AEM e accedi all&#39;[interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
+1. Accedi ad AEM e accedi all&#39;[interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Ad esempio: `http://<host>:<port>/aem/graphiql.html`.
 
 1. GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto e distribuirli senza problemi come JSON.
    * Il pannello a sinistra consente di creare la query.
    * Nel pannello a destra vengono visualizzati i risultati.
-   * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
-
+   * L’editor di query offre la funzione di completamento del codice e tasti di scelta rapida per agevolare l’esecuzione della query.
      ![Editor GraphiQL](assets/graphiql.png)
 
 1. Supponendo che il modello che hai creato si chiama `person` con campi `firstName`, `lastName` e `position`, puoi creare una semplice query per recuperare il contenuto del frammento di contenuto.
@@ -67,8 +66,7 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
 1. Fai clic su:
    * **Documenti** in alto a destra della pagina per visualizzare la documentazione contestuale per aiutarti a creare le query che si adattano ai tuoi modelli.
    * **Cronologia** nella barra degli strumenti superiore per visualizzare le query precedenti.
-   * **Salva con nome** e **Salva** per salvare le query, dopodiché potrai elencarle e recuperarle dal pannello **Query persistenti** e da **Publish**.
-
+   * **Salva con nome** e **Salva** per salvare le query, dopodiché potrai elencarle e recuperarle dal pannello **Query persistenti** e da **Pubblica**.
      ![Documentazione di GraphiQL](assets/graphiql-documentation.png)
 
 GraphQL consente query strutturate in grado di eseguire il targeting non solo di set di dati specifici o di singoli oggetti di dati, ma anche di fornire elementi specifici degli oggetti, risultati nidificati, offerte di supporto per variabili di query e molto altro.
@@ -79,7 +77,7 @@ GraphQL può evitare richieste API iterative e consegne eccessive. Al contrario,
 
 Tutto qui. Ora hai una conoscenza di base della gestione dei contenuti headless in AEM. Sono disponibili molte altre risorse da approfondire per una comprensione completa delle funzioni disponibili.
 
-* **[Browser configurazioni](create-configuration.md)** - Per informazioni dettagliate sul Browser configurazioni AEM
+* **[Browser configurazioni](create-configuration.md)** - Per informazioni dettagliate sul Browser configurazioni di AEM
 * **[Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)**: per informazioni dettagliate sulla creazione e la gestione dei frammenti di contenuto
 * **[IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)** per ulteriori dettagli sull&#39;utilizzo dell&#39;IDE GraphiQL
 * **[Query persistenti](/help/sites-developing/headless/graphql-api/persisted-queries.md)** per ulteriori dettagli sulle query persistenti

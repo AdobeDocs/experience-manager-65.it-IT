@@ -9,9 +9,9 @@ exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -26,24 +26,24 @@ Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei metodi 
 
 ## Pacchetto SocialResourceUtilities  {#socialresourceutilities-package}
 
-| Metodi in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
-|---|
+| Metodi in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities | Note |
+|---|---|
 | CheckPermission(ResourceResolver resolver, String path, String action) booleano |  |
 | SocialResourceProvider getSocialResourceProvider(risorsa) |  |
 | GetStorageConfig(Resource) di SocialResourceConfiguration |  |
 | Risorsa getUGCResource(Resource userResource) |  |
-| Resource getUGCResource(Resource userResource, ResourceResolverFactory rf) | nuovo |
-| Resource getUGCResource(Resource userResource, ResourceResolverFactory rrf, String resourceTypeHint) | nuovo |
+| Resource getUGCResource(Resource userResource, ResourceResolverFactory rf) | novità |
+| Resource getUGCResource(Resource userResource, ResourceResolverFactory rrf, String resourceTypeHint) | novità |
 | Resource getUGCResource(Resource userResource, String resourceTypeHint) |  |
 | booleano hasModeratePermissions(Risorsa) |  |
 | Stringa resourceToACLPath(Risorsa) |  |
 | Stringa resourceToUGCStoragePath(Resource) | sostituisce String resourceToUGCPath(Resource) |
 | Stringa UGCToResourcePath(Risorsa) |  |
 | Stringa UGCToResourcePath(Stringa ugcPath) | firma del metodo modificata |
-| Stringa UGCToResourcePath(Stringa ugcPath, Risolutore ResourceResolver) | nuovo |
+| Stringa UGCToResourcePath(Stringa ugcPath, Risolutore ResourceResolver) | novità |
 
-| Metodi in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
-|---|
+| Metodi in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities | Note |
+|---|---|
 | SocialResourceProvider getSocialResourceProvider(risorsa) | sostituisce SocialResourceProvider getConfiguredProvider(risorsa risorsa) |
 
 ## Pacchetto SCFUtilities {#scfutilities-package}

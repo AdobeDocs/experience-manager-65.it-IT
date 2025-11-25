@@ -2,14 +2,14 @@
 title: Creare progetti di traduzione
 description: Scopri come creare progetti di traduzione in [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1889'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -174,7 +174,7 @@ Se utilizzi questa opzione, viene creato un progetto di traduzione per il set di
 
 1. Dall&#39;interfaccia utente [!DNL Assets], seleziona la cartella di origine in cui hai aggiunto una risorsa.
 1. Apri il riquadro **[!UICONTROL Riferimenti]** e fai clic su **[!UICONTROL Copie per lingua]** in **[!UICONTROL Copie]** per visualizzare l&#39;elenco delle copie per lingua.
-1. Seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**, quindi fai clic sulla cartella di destinazione che corrisponde alle impostazioni internazionali appropriate.
+1. Seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**, quindi fai clic sulla cartella di destinazione che corrisponde alla lingua appropriata.
 
    ![seleziona copia per lingua](assets/lang-copy1.png)
 
@@ -220,7 +220,7 @@ Se si utilizza questa opzione, il set di risorse viene aggiunto a un progetto di
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Per selezionare tutte le copie della lingua, seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**. Deseleziona le altre copie, ad eccezione della copia (o copie) per lingua corrispondente alle impostazioni internazionali verso cui vuoi tradurre.
+1. Per selezionare tutte le copie della lingua, seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**. Deseleziona le altre copie, ad eccezione della copia (o copie) per la lingua (o lingue) verso cui vuoi tradurre.
 
    ![seleziona copia per lingua](assets/lang-copy1.png)
 

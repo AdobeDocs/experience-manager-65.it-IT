@@ -4,8 +4,8 @@ description: Scopri come organizzare i contenuti headless e come funzionano gli 
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 87%
@@ -29,9 +29,9 @@ Questo articolo si basa su questi elementi fondamentali che ti consentono di com
 
 Questo documento ti aiuta a capire come iniziare a tradurre il contenuto headless in AEM. Dopo la lettura dovresti:
 
-* Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Avere compreso come AEM archivia il contenuto headless.
-* conoscere gli strumenti di traduzione di AEM.
+* L’importanza della struttura dei contenuti per la traduzione.
+* Come AEM archivia il contenuto headless.
+* Gli strumenti di traduzione di AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
@@ -88,12 +88,11 @@ Poiché i modelli di contenuto definiscono la struttura del contenuto, è necess
 1. L’**Editor modello frammento di contenuto** si apre.
    1. La colonna a sinistra contiene i campi del modello. Questa colonna ci interessa.
    1. La colonna a destra contiene i campi che si possono aggiungere al modello. Si può ignorare questa colonna.
-
       ![Editor modello per frammenti di contenuto](assets/content-fragment-model-editor.png)
 1. Fate clic su uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
    ![Dettaglio dell’editor modello dei frammenti di contenuto](assets/content-fragment-model-editor-detail.png)
 
-Prendi nota del campo **Nome proprietà** per tutti i campi che devono essere tradotti. Queste informazioni saranno necessarie più avanti nel percorso. Questi **Nome proprietà** sono necessari per informare l&#39;AEM su quali campi del contenuto devono essere tradotti.
+Prendi nota del campo **Nome proprietà** per tutti i campi che devono essere tradotti. Queste informazioni saranno necessarie più avanti nel percorso. Questi **Nome proprietà** s sono necessari per informare AEM su quali campi del contenuto devono essere tradotti.
 
 >[!TIP]
 >
@@ -137,7 +136,7 @@ Le traduzioni devono essere create come cartelle di pari livello accanto alla li
 
 >[!NOTE]
 >
->L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di elaborare successivamente lavori di traduzione.
+>L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di elaborare successivamente i processi di traduzione.
 
 La struttura finale può avere un aspetto simile al seguente.
 
@@ -181,10 +180,10 @@ In genere il connettore viene configurato una sola volta per l’istanza e le re
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 
 * comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Avere compreso come AEM archivia il contenuto headless.
-* conoscere gli strumenti di traduzione di AEM.
+* Come AEM archivia il contenuto headless.
+* Gli strumenti di traduzione di AEM.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM consultando il documento [Configura l&#39;integrazione della traduzione](configure-connector.md) dove verrà illustrato come connettere AEM a un servizio di traduzione.|
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM consultando il documento successivo [Configurare l&#39;integrazione della traduzione](configure-connector.md) dove verrà illustrato come connettere AEM a un servizio di traduzione.|
 
 ## Risorse aggiuntive {#additional-resources}
 

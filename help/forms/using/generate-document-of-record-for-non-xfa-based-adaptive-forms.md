@@ -1,5 +1,5 @@
 ---
-title: Generare un documento di record per i moduli adattivi
+title: Generare un documento record per moduli adattivi
 description: Spiega come generare un documento di record (DoR) per i moduli adattivi.
 content-type: reference
 topic-tags: adaptive_forms, develop
@@ -9,9 +9,9 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Questo articolo spiega come generare un documento di record per un frammento di 
 
 >[!NOTE]
 >
-> Il supporto per personalizzare i frammenti di moduli adattivi e i relativi campi nell’editor di moduli adattivi è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> Il supporto per personalizzare i frammenti di moduli adattivi e i relativi campi nell&#39;editor di moduli adattivi è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 
 >[!NOTE]
@@ -79,7 +79,7 @@ Per generare un documento di record per i moduli adattivi, sono necessari i segu
 
 **Frammento di modulo adattivo** Frammento di modulo adattivo per il quale si desidera generare un documento di record.
 
-**Modello di base (consigliato)** Modello XFA (file XDP) creato in Designer AEM. Il modello base viene utilizzato per specificare lo stile e le informazioni di branding per il modello del documento record.
+**Modello di base (consigliato)** Modello XFA (file XDP) creato in AEM Designer. Il modello base viene utilizzato per specificare lo stile e le informazioni di branding per il modello del documento record.
 
 Vedi [Modello base di un documento record](#base-template-of-a-document-of-record)
 
@@ -210,7 +210,7 @@ Nelle sezioni seguenti viene descritto come gli elementi di un modulo adattivo v
 | Componente modulo adattivo | Componente XFA corrispondente | Note |
 |---|---|---|
 | Immagine | Immagine | I componenti TextDraw e Image, sia associati che non associati, vengono sempre visualizzati nel documento di record di un modulo adattivo basato su XSD, a meno che non vengano esclusi utilizzando le impostazioni del documento di record. |
-| Testo | Testo |
+| Testo | Testo |  |
 
 >[!NOTE]
 >
@@ -244,7 +244,7 @@ Un modello di base viene utilizzato per definire intestazione, piè di pagina, s
 
 * Le proprietà di questi campi vengono applicate ai campi del documento record. Questi campi devono seguire la convenzione di denominazione `AF_<name of field in all caps>_XFO`. Ad esempio, il nome del campo per la casella di controllo deve essere `AF_CHECKBOX_XFO`.
 
-Per creare un modello di base, eseguire le operazioni seguenti in AEM Designer.
+Per creare un modello di base, effettuate le seguenti operazioni in AEM Designer.
 
 1. Fare clic su **File > Nuovo**.
 1. Seleziona l&#39;opzione **Basato su un modello**.
@@ -274,7 +274,7 @@ Configurare il modello del documento di record del modulo per consentire ai clie
 
 Per configurare un documento di record per i moduli adattivi, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza dell&#39;autore AEM, fare clic su **Forms > Forms and Documents.**
+1. Nell&#39;istanza di AEM Author, fare clic su **Forms > Forms and Documents.**
 1. Selezionare un modulo e fare clic su **Visualizza proprietà**.
 1. Nella finestra Proprietà, selezionare **Modello modulo**.
 È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
@@ -367,7 +367,7 @@ Se si seleziona un modello predefinito o personalizzato, nella scheda Documento 
 
 ## Layout di tabella e colonna per i pannelli nel documento record {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Il modulo adattivo potrebbe essere lungo e contenere diversi campi modulo. È possibile che non si desideri salvare un documento record come copia esatta del modulo adattivo. Ora puoi scegliere un layout di tabella o colonna per salvare uno o più pannelli di moduli adattivi nel documento di record PDF.
+Il modulo adattivo potrebbe essere lungo e contenere diversi campi modulo. È possibile che non si desideri salvare un documento record come copia esatta del modulo adattivo. Ora puoi scegliere un layout di tabella o colonna per salvare uno o più pannelli di moduli adattivi nel PDF del documento record.
 
 Prima di generare un documento di record, nelle impostazioni di un pannello, selezionate Layout per il documento di record del pannello come Tabella o Colonna. I campi nel pannello vengono organizzati di conseguenza nel documento di record.
 
@@ -421,7 +421,6 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
 
 * **[!UICONTROL BASE]**
    * **Modello:** Puoi selezionare il modello predefinito o personalizzato.
-
      ![testo alternativo](image.png)
    * **Colore accento:** È possibile predefinire il colore del modello del [!UICONTROL Documento di record].
    * **Famiglia di caratteri:** Seleziona il tipo di carattere per il [!UICONTROL documento di record] testi.
@@ -434,7 +433,6 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
       * Verticale
       * Orizzontale
       * Come Modulo adattivo
-
      >[!NOTE]
      > L’allineamento verticale e orizzontale è applicabile solo a     Pulsante di opzione e casella di controllo
 * **[!UICONTROL PROPRIETÀ PAGINA MASTER]** Fare clic per ulteriori informazioni sulle [proprietà pagina master](#master-page-properties-master-page-properties)
@@ -493,12 +491,12 @@ Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms a
 
 | Opzione XCI | Descrizione |
 |--- |--- |
-| config/present/pdf/creator | Identifica il creatore del documento utilizzando la voce Creator nel dizionario Document Information. Per informazioni su questo dizionario, vedere la [Guida di riferimento PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | Identifica il produttore del documento utilizzando la voce Producer nel dizionario Document Information. Per informazioni su questo dizionario, vedere la [Guida di riferimento PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/creator | Identifica il creatore del documento utilizzando la voce Creator nel dizionario Document Information. Per informazioni su questo dizionario, vedere la [Guida di riferimento di PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | Identifica il produttore del documento utilizzando la voce Producer nel dizionario Document Information. Per informazioni su questo dizionario, vedere la [Guida di riferimento di PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | config/present/layout | Controlla se l’output è un singolo pannello o impaginato. |
 | config/present/pdf/compression/level | Specifica il grado di compressione da utilizzare durante la generazione di un documento PDF. |
 | config/present/pdf/fontInfo/embed | Controlla l&#39;incorporamento del carattere nel documento di output. |
-| config/present/pdf/scriptModel | Controlla se le informazioni specifiche XFA vengono incluse nel documento di output PDF. |
+| config/present/pdf/scriptModel | Controlla se le informazioni specifiche XFA vengono incluse nel documento PDF di output. |
 | config/present/common/data/adjustData | Controlla se l&#39;applicazione XFA regola i dati dopo l&#39;unione. |
 | config/present/pdf/renderPolicy | Controlla se la generazione del contenuto della pagina viene eseguita sul server o differita al client. |
 | config/present/common/locale | Specifica le impostazioni locali predefinite utilizzate nel documento di output. |
@@ -509,7 +507,7 @@ Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms a
 | config/present/common/log/to | Controlla la posizione in cui vengono scritti i dati di log o di output. |
 | config/present/output/to | Controlla la posizione in cui vengono scritti i dati di log o di output. |
 | config/present/script/currentPage | Specifica la pagina iniziale all&#39;apertura del documento. |
-| config/present/script/exclude | Indica a Forms as a Cloud Service gli eventi da ignorare. |
+| config/present/script/exclude | Indica a Forms as a Cloud Service quali eventi ignorare. |
 | config/present/pdf/linearized | Controlla se il documento PDF di output è linearizzato. |
 | config/present/script/runScript | Controlla il set di script eseguiti da Forms as a Cloud Service. |
 | config/present/pdf/tagged | Controlla l&#39;inclusione dei tag nel documento PDF di output. I tag, nel contesto di PDF, sono informazioni aggiuntive incluse in un documento per esporre la struttura logica del documento. I tag facilitano l’accesso facilitato e la riformattazione. Ad esempio, un numero di pagina può essere contrassegnato come un artefatto in modo che un assistente vocale non lo enunci al centro del testo. Sebbene i tag rendano un documento più utile, aumentano anche le dimensioni del documento e il tempo di elaborazione necessario per crearlo. |
