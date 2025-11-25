@@ -195,7 +195,7 @@ L&#39;attività **Crea elenco di foto** consente al proprietario del progetto di
 
    ![Visualizza elenco di foto](assets/chlimage_1-148a.png)
 
-   Per modificare i dati esistenti o aggiungere nuovi dati, fare clic su **Modifica** nella barra degli strumenti. È possibile modificare solo i campi **Product **e **Description**.
+   Per modificare i dati esistenti o aggiungere nuovi dati, fare clic su **Modifica** nella barra degli strumenti. È possibile modificare solo i campi **Product &#x200B;** e **Description**.
 
    ![Modifica elenco di foto](assets/chlimage_1-149a.png)
 

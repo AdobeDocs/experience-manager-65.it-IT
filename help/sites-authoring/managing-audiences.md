@@ -65,7 +65,7 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 >[!NOTE]
 >
->Se nel menu **Crea** non trovi **Crea pubblico di destinazione **non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare tipi di pubblico è necessario disporre delle autorizzazioni di scrittura in **/etc/segmentation**. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
+>Se nel menu **Crea** non trovi **Crea pubblico di destinazione &#x200B;** non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare tipi di pubblico è necessario disporre delle autorizzazioni di scrittura in **/etc/segmentation**. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
 
 Per creare un pubblico di Adobe Target:
 
@@ -73,7 +73,7 @@ Per creare un pubblico di Adobe Target:
 
    ![schermata_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. Nella console Pubblico, fai clic su **Crea** e quindi** Crea pubblico Target**.
+1. Nella console Pubblico, fai clic su **Crea** e quindi **&#x200B; Crea pubblico Target**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

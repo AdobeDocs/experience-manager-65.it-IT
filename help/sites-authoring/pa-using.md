@@ -91,7 +91,7 @@ Apri [Content Insight](/help/sites-authoring/content-insights.md) dalla console 
 >
 >I dati per Activity Map provengono da Adobe Analytics.
 
-Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[ in modalità ](/help/sites-authoring/author-environment-tools.md#page-modes) per visualizzare i dati rilevanti. Ad esempio:
+Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[&#x200B; in modalità &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes) per visualizzare i dati rilevanti. Ad esempio:
 
 ![aa-07](assets/aa-07.png)
 

@@ -80,7 +80,7 @@ Aggiungi un’attività o modifica un’attività esistente per concentrare le t
 * **Motore di targeting:** [AEM](/help/sites-authoring/personalization.md#aem) oppure [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) come motore per il contenuto target.
 
 * **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target come motore di targeting.
-* **Tipo di attività: **il tipo di attività, test A/B o Targeting delle esperienze
+* **Tipo di attività: &#x200B;** il tipo di attività, test A/B o Targeting delle esperienze
 * **Obiettivo:** (facoltativo) una descrizione dell’attività.
 * **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing per cui si esegue il targeting.
 * **Traffic Percentages (Percentuali di traffico):** se è selezionato il test A/B, puoi modificare la quantità di traffico (in percentuale) che viene indirizzato a ogni esperienza.
@@ -108,7 +108,7 @@ Per aggiungere un’attività:
 1. Aggiungi una o più esperienze all’attività. Fai clic su **Aggiungi esperienza**.
 1. Se utilizzi il targeting di AEM o il targgeting esperienze di Adobe Target:
 
-   1. Fai clic su **Seleziona pubblico **e seleziona il segmento al quale viene eseguito il targeting dell’esperienza.
+   1. Fai clic su **Seleziona pubblico &#x200B;** e seleziona il segmento al quale viene eseguito il targeting dell’esperienza.
    1. Fai clic su **Aggiungi esperienza**, digita un nome e fai clic su **OK**.
 
    1. Fai clic su **Avanti**.

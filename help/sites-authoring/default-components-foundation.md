@@ -763,7 +763,7 @@ Il componente Presentazione visualizza ripetutamente ogni diapositiva in sequenz
 
 >[!NOTE]
 >
->Il componente di base **Table** è basato sull&#39;editor Rich Text [3}, così come il componente di base ](/help/sites-authoring/rich-text-editor.md)Text **[.](#text)**
+>Il componente di base **Table** è basato sull&#39;editor Rich Text [3&rbrace;, così come il componente di base &#x200B;](/help/sites-authoring/rich-text-editor.md)Text **[.](#text)**
 
 Il componente **Tabella** è preconfigurato per consentire la creazione, il riempimento e la formattazione di una tabella. La finestra di dialogo consente di configurare la tabella e crearne il contenuto in uno dei modi seguenti:
 
@@ -812,7 +812,7 @@ Per ulteriori informazioni sull&#39;applicazione dei tag, visitare [Utilizzo dei
 
 >[!NOTE]
 >
->Il componente di base **Testo** è basato sull&#39;editor Rich Text [3}, così come il componente di base ](/help/sites-authoring/rich-text-editor.md)Tabella **.**
+>Il componente di base **Testo** è basato sull&#39;editor Rich Text [3&rbrace;, così come il componente di base &#x200B;](/help/sites-authoring/rich-text-editor.md)Tabella **.**
 
 Il componente Testo consente di immettere un blocco di testo utilizzando un editor di WYSIWYG, con le funzionalità fornite dall&#39;[editor Rich Text](/help/sites-authoring/rich-text-editor.md). Una selezione di icone consente di formattare il testo, incluse le caratteristiche dei caratteri, l&#39;allineamento, i collegamenti, gli elenchi e i rientri.
 

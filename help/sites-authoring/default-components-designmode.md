@@ -43,7 +43,7 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 
 >[!NOTE]
 >
->Per ulteriori informazioni su [, vedere ](/help/sites-developing/components.md)Sviluppo di componenti[ e ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)Linee guida per l&#39;utilizzo di modelli e componenti`parsys`.
+>Per ulteriori informazioni su [, vedere &#x200B;](/help/sites-developing/components.md)Sviluppo di componenti[&#x200B; e &#x200B;](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)Linee guida per l&#39;utilizzo di modelli e componenti`parsys`.
 
 >[!CAUTION]
 >

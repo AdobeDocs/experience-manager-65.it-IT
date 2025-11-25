@@ -297,7 +297,7 @@ In caso di modifica del contenuto con targeting, è necessario fare clic su **In
    >Gli amministratori possono decidere se impostare questa configurazione è necessario in **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Per richiedere agli utenti di immettere una posizione, selezionare la casella di controllo **Forza posizione **Force).
+   >Per richiedere agli utenti di immettere una posizione, selezionare la casella di controllo **Forza posizione &#x200B;** Force).
 
 1. Seleziona l’esperienza per la quale desideri creare l’offerta.
 1. Crea l’offerta:

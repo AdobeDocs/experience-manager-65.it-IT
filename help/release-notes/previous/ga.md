@@ -228,7 +228,7 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 #### Lanci {#launches}
 
 * Nuovo flusso di lavoro di revisione e approvazione per i lanci e possibilità di promuovere solo le pagine di lancio approvate
-* È stata aggiunta l&#39;opzione [ nell&#39;interfaccia utente per scegliere di eliminare il lancio subito dopo il passaggio di promozione](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
+* È stata aggiunta l&#39;opzione [&#x200B; nell&#39;interfaccia utente per scegliere di eliminare il lancio subito dopo il passaggio di promozione](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
 #### Targeting e simulazione dei contenuti {#content-targeting-simulation}
 

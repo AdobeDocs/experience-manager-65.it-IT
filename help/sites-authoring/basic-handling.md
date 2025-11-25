@@ -305,7 +305,7 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco ](#list-view)
+* [Vista a elenco &#x200B;](#list-view)
 
 >[!NOTE]
 >
