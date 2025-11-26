@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6aba1c1d5451adcaa139c15adc2a7056419b8341
+source-git-commit: 1fb7c9b718896b18471b2bd86fab3c351d50312e
 workflow-type: tm+mt
 source-wordcount: '8932'
 ht-degree: 6%
@@ -28,7 +28,7 @@ ht-degree: 6%
 | -------- | ---------------------------- |
 | Versione | 6.5.24.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versione del Service Pack |
-| Data | 20 novembre 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Data | 26 novembre 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 <!-- OLD DOWNLOAD URL
@@ -36,7 +36,7 @@ ht-degree: 6%
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
