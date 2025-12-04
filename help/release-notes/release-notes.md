@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6eccdab5cd492686dda2aca3fee4df171a2d9011
+source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
 workflow-type: tm+mt
-source-wordcount: '8932'
+source-wordcount: '8905'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 6%
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -393,11 +393,9 @@ La pubblicazione delle attività di AEM Target non ha più esito negativo quando
 #### Security{#foundation-security-6524}
 -->
 
-
 #### Sling{#foundation-sling-6524}
 
-* È stato corretto il comportamento di caching nelle pagine protette tramite SAML. AEM aggiunge il giusto controllo della cache e vari metadati per le sessioni autenticate, in modo che i proxy e Dispatcher saltino la memorizzazione in cache di risposte personalizzate. Il contenuto anonimo viene comunque memorizzato nella cache normalmente, mentre le visualizzazioni di accesso rimangono specifiche per l’utente. (NPR-42640)
-
+* È stato corretto un errore di compilazione JSP imprevisto con il bundle `org.apache.sling.scripting.jsp:2.6.0`. (SLING-12442)
 * La piattaforma aggiorna il motore Sling di base da 2.16.2 a 2.16.6. Il nuovo motore rafforza la convalida dell’input e stabilizza l’elaborazione delle richieste sotto carico. (NPR-43105)
 
 #### Editor SPA {#foundation-spa-editor-6524}
