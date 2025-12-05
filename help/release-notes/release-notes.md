@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
+source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
 workflow-type: tm+mt
-source-wordcount: '8905'
-ht-degree: 6%
+source-wordcount: '8809'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 6%
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -541,20 +541,6 @@ Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora:
 ## Problemi noti{#known-issues}
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
-
-* **Problema con il bundle di script JSP in AEM 6.5.21-6.5.24 e AEM 6.5 LTS GA**
-AEM 6.5.21-6.5.24 e AEM 6.5 LTS GA vengono forniti con il bundle `org.apache.sling.scripting.jsp:2.6.0`, che contiene un problema noto. Il problema si verifica in genere con un carico elevato quando l’istanza AEM gestisce molte richieste simultanee.
-
-  Quando si verifica questo problema, è possibile che nei registri errori venga visualizzata una delle eccezioni seguenti insieme ai riferimenti a `org.apache.sling.scripting.jsp:2.6.0`:
-
-   * `java.io.IOException: classFile.delete() failed`
-   * `java.io.IOException: tmpFile.renameTo(classFile) failed`
-   * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
-   * `java.io.FileNotFoundException`
-
-  Quando si verifica questo errore, l&#39;unico metodo di ripristino consiste nel riavviare l&#39;istanza di AEM.
-
-  Contatta l’assistenza clienti Adobe e fai riferimento a questa nota sulla versione per una risoluzione.
 
 * **Correlato ad Oak**
 Da Service Pack 13 e versioni successive è stato avviato il seguente log degli errori che influisce sulla cache di persistenza:
