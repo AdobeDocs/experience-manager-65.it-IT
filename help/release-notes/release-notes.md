@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
+source-git-commit: ae66b28497bfb12686152b324e1758ad2d8592ee
 workflow-type: tm+mt
-source-wordcount: '8809'
+source-wordcount: '9451'
 ht-degree: 5%
 
 ---
@@ -36,15 +36,16 @@ ht-degree: 5%
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!--
-## Key features and enhancements
--->
 
+## Nuove funzioni e miglioramenti
 
+### Forms
+
+* **Supporto per il passaggio di XCI personalizzati:** Aggiunta del supporto per il passaggio di XCI personalizzati nei parametri dell&#39;applicazione cmdlet xmlformcmd. Questo consente agli utenti di specificare file XCI personalizzati per il test, migliorando la flessibilità e il controllo sul processo di test. (LC-3923248)
 
 
 ## Problemi risolti in Service Pack 24 {#fixed-issues}
@@ -302,25 +303,40 @@ La configurazione del gestore di autenticazione del token di query ha confuso gl
 
 ### [!DNL Forms]{#forms-6524}
 
+<!--
 >[!NOTE]
 >
->Le correzioni in [!DNL Experience Manager] Forms vengono distribuite tramite un pacchetto aggiuntivo separato una settimana dopo la data di rilascio pianificata per il Service Pack [!DNL Experience Manager]. In questo caso, i pacchetti del componente aggiuntivo verranno rilasciati giovedì 4 dicembre 2025. Inoltre, a questa sezione viene aggiunto un elenco di correzioni e miglioramenti di Forms.
-
-<!--
-#### Forms Designer 
-
-#### Forms
-
-#### Forms JEE 
-
-#### Forms Captcha {#forms-captcha-6524} 
-
-#### XMLFM {#forms-xmlfm-6524}
-
-#### [!DNL Forms Designer] {#forms-designer-6524}
-
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
+#### Forms Designer
+
+* Gli utenti hanno riscontrato problemi a causa dei quali non era possibile fare clic sui collegamenti ipertestuali in casi di test specifici, compromettendo la possibilità di spostarsi e verificare i collegamenti all’interno dell’applicazione. (LC-3923505)
+* Gli utenti hanno riscontrato problemi di accessibilità con i PDF generati con AEM Forms Designer 6.5.23 per lingue non latine. I tag percorso non venivano inseriti all’interno di un contenitore Artefatto, causando errori nei controlli di PAC e utilità per la lettura dello schermo. (LC-3923295)
+* Dopo l’applicazione della patch dalla versione 6.5.21 al 6.5.23 con il servizio di output, nelle caselle di testo Portable Document Format (PDF) sono stati rilevati collegamenti ipertestuali interrotti. (LC-3923290)
+* Si sono verificati problemi di accessibilità con i moduli DoR (Document of Record). Quando i campi di input erano vuoti, gli assistenti vocali leggevano solo i sottotitoli dei campi e non i valori, rendendo difficile agli utenti con disabilità navigare nei moduli in modo efficace. (LC-3923234)
+* Gli utenti hanno riscontrato problemi di accessibilità in DoR PDF forms, dove NVDA non legge correttamente &quot;non disponibile&quot; per caselle di controllo, pulsanti di scelta e campi di testo, spesso ripetendo il messaggio e creando confusione per gli utenti di utilità per la lettura dello schermo. (LC-3923201)
+* Durante l’aggiunta di nuovi campi, gli utenti hanno riscontrato una discrepanza nell’ordine di tabulazione nell’XDP. L&#39;ordine di tabulazione esistente è stato modificato in modo imprevisto, influendo sulla navigazione del modulo. (LC-3923183, LC-3922630)
+* Gli utenti hanno riscontrato problemi con il rendering di HTML. L&#39;evento `docReady` non è stato attivato correttamente in HTML, causando la mancata esecuzione degli script come previsto. (LC-3923118)
+* Gli utenti hanno riscontrato problemi con gli script di rendering di PDF che non funzionano nell’ambiente di produzione AEM Forms Cloud. (LC-3923082 )
+* Gli utenti hanno riscontrato problemi con i campi mobili nei moduli. Quando si utilizzano file di dati diversi, i campi mobili vengono riprodotti correttamente con un file ma non con l’altro, nonostante differenze minori non correlate ai campi. (LC-3923056)
+* Gli utenti visualizzavano una pagina master spagnola vuota quando in un pacchetto di dati XML (XDP) con più pagine master era selezionato solo il contenuto inglese. (LC-3923009)
+* Gli utenti hanno osservato informazioni obsolete sull’anno del copyright in AEM Designer. Ciò si verificava nella casella pop-up all’avvio, nella sezione &quot;Informazioni su&quot; e nella sezione &quot;Note legali&quot;, visualizzando &quot;2003-2024&quot; invece di &quot;2003-2025&quot;. (LC-3923005)
+* Gli utenti hanno rilevato una pagina PDF vuota durante l’utilizzo dell’impaginazione in AEM Forms Designer. Il problema si verificava selezionando &quot;Top of the Next Page/Top of Page&quot; (Inizio pagina/inizio pagina successiva) per WireAdviceHeader, interrompendo il layout delle iterazioni di dati. (LC-3922997, LC-3922830)
+* Gli utenti hanno riscontrato un problema che impediva la persistenza del valore filedigest per la definizione dello schema XSD (Extensible Markup Language) nella versione a 64 bit di AEM Forms Designer. (LC-3922924)
+* In AEM Designer 6.5.19, gli utenti hanno sperimentato una formattazione instabile dei collegamenti ipertestuali, in cui i collegamenti ipertestuali all’interno di una casella di testo adottavano erroneamente gli stili del testo circostante, ad esempio la formattazione del primo carattere. (LC-3922376)
+* Con AEM Forms OSGI v6.5.22, gli utenti hanno riscontrato dei problemi durante il rendering dei moduli HTML tramite il rendering Mobile su MAC. (LC-3923058)
+* Gli utenti hanno riscontrato errori di &quot;oggetto percorso senza tag&quot; nei file PDF (Portable Document Format) quando si utilizzano campi con bordi o in background in modelli XDP creati con Designer 6.5.23 e analizzati con PAC 2024. (LC-3923013)
+* Si è verificato un errore nel colore di sfondo dell&#39;intestazione &quot;Dati Richiedente&quot; nel componente applicazione portatile (PAC), durante la ricezione del messaggio &quot;oggetto percorso non taggato&quot;. (LC-3922912)
+* Gli utenti hanno riscontrato un problema in cui modelli specifici sostituiscono il font desiderato con un font compatto. (LC-3922330)
+
+#### Moduli adattivi
+
+* Opzioni mancanti nell’editor di regole per gli utenti. Quando gli autori scrivevano regole sugli input numerici, le opzioni Query, UTM e Browser non erano disponibili. (FORMS-21660)
+* Si sono verificati arresti anomali dell&#39;applicazione durante l&#39;interazione con OdataResponse a causa di un&#39;eccezione Null Pointer. (FORMS-20344)
+* Gli utenti hanno riscontrato dei problemi durante la creazione delle regole per mostrare un pannello e impostare lo stato attivo su un elemento al suo interno. La regola setFocus viene eseguita prima dell’aggiornamento della visibilità, causando un errore nell’azione di attivazione. (FORMS-19563)
+* In AEM Forms Author gli utenti hanno riscontrato problemi nella selezione dei componenti. Durante la navigazione tra le schede in modalità di modifica, alcuni contenitori sono diventati non selezionabili, impedendo una facile identificazione e interazione. (FORMS-18525)
+* Si è verificato un errore &quot;URL non valido&quot; durante il tentativo di annotare risorse in AEM 6.5.22. (NPR-42684)
 
 ### Foundation {#foundation-6524}
 
