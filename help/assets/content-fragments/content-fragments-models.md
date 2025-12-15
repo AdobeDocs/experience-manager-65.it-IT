@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: e3a35099a48088d5746aa23be45c3e81a1a8b02e
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 64%
+source-wordcount: '2355'
+ht-degree: 65%
 
 ---
 
@@ -22,6 +22,10 @@ Per utilizzare i modelli per frammenti di contenuto, puoi:
 1. [Crea](#creating-a-content-fragment-model) e [configura](#defining-your-content-fragment-model), i tuoi modelli per frammenti di contenuto.
 1. [Abilita i modelli per frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto.
 1. [Consenti modelli di frammento di contenuto nelle cartelle Risorse richieste](#allowing-content-fragment-models-assets-folder) configurando i **Criteri**.
+
+>[!NOTE]
+>
+>Tieni presente le [best practice](/help/assets/content-fragments/content-fragments.md#best-practices) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
@@ -237,13 +241,13 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 
 >[!NOTE]
 >
->AEM ha una protezione periodica per:
+>AEM ha una protezione di ricorrenze per:
 >
 >* Riferimenti contenuto
->Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+>  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
 >* Riferimenti frammento in GraphQL
->Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
+>  Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
 
 ### Riferimento contenuto {#content-reference}
 
