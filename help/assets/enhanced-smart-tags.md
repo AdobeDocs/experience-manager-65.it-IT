@@ -1,13 +1,13 @@
 ---
-title: Sono stati migliorati i tag avanzati
-description: Sono stati migliorati i tag avanzati
+title: Tag avanzati migliorati
+description: Tag avanzati migliorati
 contentOwner: AG
 feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre più spesso il vocabolario controllato dalla tassonomia nei metadati delle risorse. In sostanza, include un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare risorse digitali di una particolare classe. L’assegnazione dei tag alle risorse tramite un vocabolario controllato dalla tassonomia consente di identificarle e recuperarle facilmente.
@@ -31,7 +31,7 @@ Affinché il Servizio di contenuti avanzati possa applicare i tag giusti, addest
 
 Una volta che un tag è stato preparato e pronto, il servizio può ora applicarlo alle risorse tramite un flusso di lavoro sui tag.
 
-In background, il Servizio di contenuti avanzati utilizza il framework di intelligenza artificiale di Adobe Sensei per addestrare il suo algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse.
+In background, il Servizio di contenuti avanzati utilizza il framework di intelligenza artificiale di Adobe per addestrare il suo algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse.
 
 Servizio di contenuti avanzati è un servizio cloud ospitato su [!DNL Adobe Developer Console]. Per utilizzarlo in [!DNL Adobe Experience Manager], l&#39;amministratore di sistema deve integrare la distribuzione di [!DNL Experience Manager] con [!DNL Adobe Developer Console].
 
@@ -97,9 +97,9 @@ Aggiungi le risorse a una cartella e applica i tag a ciascuna risorsa dalla pagi
 
 >[!NOTE]
 >
->1. La formazione è un processo irrevocabile. L’Adobe consiglia di rivedere i tag nel set curato di risorse ben prima di addestrare il Servizio di contenuti avanzati sui tag.
+>1. La formazione è un processo irrevocabile. Adobe consiglia di rivedere i tag nel set curato di risorse ben prima di addestrare il Servizio di contenuti avanzati sui tag.
 >1. Prima della formazione per un tag, consulta [Linee guida per la formazione sul Servizio di contenuti avanzati](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
->1. Quando si addestra il Servizio di contenuti avanzati per la prima volta, l’Adobe consiglia di addestrarlo su almeno due tag distinti.
+>1. Quando si addestra il Servizio di contenuti avanzati per la prima volta, Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 ## Comprendere i risultati della ricerca di [!DNL Experience Manager] con tag avanzati {#understandsearch}
 
@@ -133,7 +133,7 @@ Puoi eseguire il flusso di lavoro sui tag periodicamente o quando necessario.
 
 Puoi abilitare il Servizio di contenuti avanzati per assegnare periodicamente tag alle risorse all’interno di una cartella. Apri la pagina delle proprietà della cartella di risorse, seleziona **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salva le modifiche.
 
-Una volta selezionata questa opzione per una cartella, il Servizio di contenuti avanzati assegna automaticamente i tag alle risorse all’interno della cartella. Per impostazione predefinita, il flusso di lavoro sui tag viene eseguito ogni giorno alle 00:00.
+Una volta selezionata questa opzione per una cartella, il Servizio di contenuti avanzati assegna automaticamente i tag alle risorse all’interno della cartella. Per impostazione predefinita, il flusso di lavoro sui tag viene eseguito ogni giorno alle ore 00:00.:00
 
 ### Assegnazione di tag su richiesta {#on-demand-tagging}
 
@@ -200,4 +200,4 @@ Puoi anche assegnare una classificazione più alta a un tag per aumentarne la ri
 >* [Panoramica e formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Configura assegnazione tag avanzati](config-smart-tagging.md)
 >* [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=it)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

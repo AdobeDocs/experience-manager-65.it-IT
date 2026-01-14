@@ -1,13 +1,13 @@
 ---
 title: Organizzazione delle risorse digitali
-description: Organizza risorse digitali, immagini, file, cartelle e così via, utilizzando Experience Manager.
+description: Organizza risorse digitali, immagini, file, cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
 role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=it) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Tutte le risorse digitali, i metadati e il contenuto dei documenti di Microsoft® Office e PDF vengono estratti e resi ricercabili. La ricerca consente di applicare filtri sofisticati alle risorse e rispetta appieno le autorizzazioni appropriate. I metadati sono descritti in dettaglio in Metadati in Gestione delle risorse digitali.
@@ -47,9 +47,9 @@ Il modo più semplice per organizzare le risorse è salvarle nelle cartelle. È 
 
 ## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
 
-Utilizzando i tag, come metadati, puoi facilmente cercare le risorse, creare raccolte utilizzando i risultati della ricerca, migliorare la classificazione delle ricerche per alcune risorse e utilizzare gli algoritmi di intelligenza artificiale di Adobe Sensei per l’individuazione delle risorse.
+Utilizzando i tag, come metadati, puoi facilmente cercare le risorse, creare raccolte utilizzando i risultati della ricerca, migliorare la classificazione delle ricerche per alcune risorse e utilizzare gli algoritmi di intelligenza artificiale di Adobe AI per l’individuazione delle risorse.
 
-[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che ti consentono di trovare la risorsa giusta in pochi clic. L’assegnazione tag avanzati utilizza Adobe Sensei, il framework di intelligenza artificiale e apprendimento automatico di Adobe, che può essere addestrato per riconoscere e applicare tag standard e specifici per l’azienda alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse
+[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che ti consentono di trovare la risorsa giusta in pochi clic. L’assegnazione tag avanzati utilizza l’intelligenza artificiale e il framework di apprendimento automatico di Adobe Adobe, che possono essere addestrati per riconoscere e applicare tag standard e specifici per l’azienda alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse
 
 Per ulteriori informazioni, consulta i seguenti articoli:
 
@@ -79,4 +79,4 @@ La standardizzazione dell’utilizzo dei metadati, della denominazione dei file 
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
 >* [Profili metadati](/help/assets/metadata-config.md#metadata-profiles).
 >* [Profili video](video-profiles.md).
->* [Profili immagine Dynamic Medie](image-profiles.md).
+>* [Profili immagine Dynamic Media](image-profiles.md).

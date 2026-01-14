@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2130'
 ht-degree: 14%
 
 ---
 
 # Prepara [!DNL Assets] per assegnazione tag avanzati {#configure-asset-tagging-using-the-smart-content-service}
 
-Prima di iniziare a assegnare tag alle risorse tramite Smart Content Services, è necessario integrare [!DNL Experience Manager Assets] con Adobe Developer Console per utilizzare il servizio intelligente di [!DNL Adobe Sensei]. Una volta configurato, il servizio viene addestrato utilizzando alcune immagini e un tag.
+Prima di iniziare a assegnare tag alle risorse tramite Smart Content Services, è necessario integrare [!DNL Experience Manager Assets] con Adobe Developer Console per utilizzare il servizio intelligente di [!DNL Adobe AI]. Una volta configurato, il servizio viene addestrato utilizzando alcune immagini e un tag.
 
 <!--
 >[!NOTE]
@@ -71,7 +71,7 @@ Per configurare il Servizio di contenuti avanzati, segui questi passaggi di live
 
 1. Crea un&#39;integrazione in [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Crea una configurazione dell&#39;account tecnico IMS [&#128279;](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
+1. Crea una configurazione dell&#39;account tecnico IMS [](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
 
 1. [Configura il Servizio di contenuti avanzati](#configure-smart-content-service).
 
@@ -151,7 +151,7 @@ Devi creare una configurazione dell’account tecnico IMS seguendo questi passag
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -291,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -368,7 +368,7 @@ The validation results are displayed in the same dialog.
 
 1. Per visualizzare i passaggi, espandi il pannello laterale. Trascina il passaggio **[!UICONTROL Risorsa di tag avanzati]** disponibile nella sezione Flusso di lavoro DAM e inseriscilo dopo il passaggio **[!UICONTROL Elabora miniature]**.
 
-   ![Aggiungi il passaggio Risorsa di tag avanzati dopo il passaggio Elabora miniature nel flusso di lavoro Aggiorna risorsa DAM](assets/smart-tag-in-dam-update-asset-workflow.png)
+   ![Aggiungere il passaggio Assegna tag avanzati a risorse dopo il passaggio Elabora miniature nel flusso di lavoro Aggiorna risorsa DAM](assets/smart-tag-in-dam-update-asset-workflow.png)
 
 1. Apri le proprietà del passaggio per modificare i dettagli. In **[!UICONTROL Impostazioni avanzate]**, accertati che sia selezionata l’opzione **[!UICONTROL Avanzamento gestore]**.
 
@@ -434,7 +434,7 @@ Puoi abilitare il Servizio di contenuti avanzati per la formazione periodica sul
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Una volta selezionata questa opzione per una cartella, [!DNL Experience Manager] esegue automaticamente un flusso di lavoro di formazione per addestrare il Servizio di contenuti avanzati sulle risorse della cartella e sui relativi tag. Per impostazione predefinita, il flusso di lavoro di formazione viene eseguito settimanalmente alle 00:30 del sabato.
+Una volta selezionata questa opzione per una cartella, [!DNL Experience Manager] esegue automaticamente un flusso di lavoro di formazione per addestrare il Servizio di contenuti avanzati sulle risorse della cartella e sui relativi tag. Per impostazione predefinita, il flusso di lavoro di formazione viene eseguito settimanalmente alle ore 00:00 del sabato.:30
 
 ### Formazione on-demand {#on-demand-training}
 
@@ -482,4 +482,4 @@ Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag 
 >
 >* [Panoramica e formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/metadata/image-smart-tags)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)
