@@ -22,4 +22,4 @@ ht-degree: 7%
 
 Adobe Commerce dispone di un motore di consigli basato su IA per Adobe. Scopri come inserire dinamicamente questi consigli di prodotto in una vetrina Adobe Experience Manager (AEM).
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342992/?captions=ita&learn=on)
