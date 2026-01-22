@@ -63,7 +63,7 @@ Il rapporto di transazione tramite dashboard fornisce il numero totale di transa
 
 ### Rapporto di transazione tramite file di registro {#transaction-report-logfile}
 
-Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **** è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
+Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **&#x200B;**&#x200B;è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
 
 ```
 For Jboss Turnkey:
