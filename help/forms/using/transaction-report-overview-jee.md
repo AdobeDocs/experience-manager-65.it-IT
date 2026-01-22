@@ -5,22 +5,25 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 0%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
+
 # Abilitazione e visualizzazione dei rapporti sulle transazioni per AEM Forms su JEE {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<span> È stata introdotta la funzionalità di reporting delle transazioni per AEM Forms su JEE da AEM Forms 6.5.20.0. Questa funzionalità è disabilitata per impostazione predefinita e può essere abilitata dall&#39;interfaccia utente amministratore.</span>
 
-* Submission of a document
-* Rendition of a document
-* Conversion of a document from one file format to another 
+I rapporti sulle transazioni in AEM Forms su JEE ti consentono di tenere un conteggio di tutte le transazioni eseguite nella distribuzione AEM Forms. L’obiettivo è quello di fornire informazioni sull’utilizzo dei prodotti e aiutare le parti interessate a comprendere i propri volumi di elaborazione digitale. Di seguito sono riportati alcuni esempi di transazioni:
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+* Presentazione di un documento
+* Rappresentazione di un documento
+* Conversione di un documento da un formato di file a un altro
+
+Per ulteriori informazioni su quella che viene considerata una transazione, vedere [API fatturabili](../../forms/using/transaction-reports-billable-apis-jee.md).
 
 ## Abilita reporting delle transazioni {#enable-transaction-reporting}
 
@@ -33,7 +36,7 @@ Per impostazione predefinita, la registrazione delle transazioni è disabilitata
 
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
-1. Riavviare il server.
+1. Riavvia il server.
 1. A parte le modifiche sul server, sul lato client è necessario aggiornare il file `adobe-livecycle-client.jar` nel progetto, se si utilizza lo stesso.
 
 <!--
@@ -60,7 +63,7 @@ Il rapporto di transazione tramite dashboard fornisce il numero totale di transa
 
 ### Rapporto di transazione tramite file di registro {#transaction-report-logfile}
 
-Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **&#x200B;**&#x200B;è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
+Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **** è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
 
 ```
 For Jboss Turnkey:
