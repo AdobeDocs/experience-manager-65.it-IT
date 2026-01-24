@@ -55,7 +55,7 @@ In questo documento si presuppone che tu abbia già familiarità con la creazion
 
 La creazione di modelli modificabili viene eseguita principalmente con la console [modelli e l&#39;editor modelli](/help/sites-authoring/templates.md) da un autore di modelli. Questa sezione offre una panoramica di questo processo e segue con una descrizione di ciò che accade a livello tecnico.
 
-Per informazioni sull&#39;utilizzo di modelli modificabili in un progetto AEM, vedere [Creazione di un progetto AEM tramite Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
+Per informazioni sull&#39;utilizzo di modelli modificabili in un progetto AEM, vedere [Creazione di un progetto AEM tramite Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=it).
 
 Quando crei un modello modificabile:
 

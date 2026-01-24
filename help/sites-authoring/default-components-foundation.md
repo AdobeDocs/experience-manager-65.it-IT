@@ -1414,7 +1414,7 @@ Il componente Caricamento file offre all’utente un meccanismo per selezionare 
 
 >[!NOTE]
 >
->Puoi creare un componente di caricamento personalizzato per caricare i file in un servlet Sling. Per informazioni, vedere [Caricamento di file in Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
+>Puoi creare un componente di caricamento personalizzato per caricare i file in un servlet Sling. Per informazioni, vedere [Caricamento di file in Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=it).
 
 ### Campo nascosto {#hidden-field}
 

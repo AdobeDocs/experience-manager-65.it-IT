@@ -234,7 +234,7 @@ Ad esempio, per disabilitare il targeting per i componenti titolo delle pagine d
 >
 >Se non utilizzi DTM, invia la conferma dell’ordine ad Adobe Target.
 
-Per tenere traccia delle prestazioni del sito web, invia le informazioni di acquisto dalla pagina di conferma dell’ordine ad Adobe Target. (Vedi [Creare una mbox orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) e [Mbox di conferma ordine - Aggiungere parametri personalizzati.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target riconosce i dati mbox come dati di conferma dell&#39;ordine quando il nome MBox è `orderConfirmPage` e utilizza i seguenti nomi di parametri specifici:
+Per tenere traccia delle prestazioni del sito web, invia le informazioni di acquisto dalla pagina di conferma dell’ordine ad Adobe Target. (Vedi [Creare una mbox orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) e [Mbox di conferma ordine - Aggiungere parametri personalizzati.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=it)) Adobe Target riconosce i dati mbox come dati di conferma dell&#39;ordine quando il nome MBox è `orderConfirmPage` e utilizza i seguenti nomi di parametri specifici:
 
 * productPurchasedId: elenco di ID che identificano i prodotti acquistati.
 * orderId: ID dell’ordine.
