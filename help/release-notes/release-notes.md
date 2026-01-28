@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: ae66b28497bfb12686152b324e1758ad2d8592ee
+source-git-commit: 4305b4c7089fe4ac2b1bfe2dc6e4919181b3d892
 workflow-type: tm+mt
-source-wordcount: '9451'
+source-wordcount: '9486'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 5%
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -694,9 +694,9 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
-* FORMS-21378: quando la convalida lato server (SSV) è abilitata, l’invio del modulo potrebbe non riuscire. Se riscontri questo problema, contatta il supporto Adobe per assistenza.
+* **FORMS-21378**: se la convalida lato server (SSV) è abilitata, l&#39;invio del modulo potrebbe non riuscire. Se riscontri questo problema, contatta il supporto Adobe per assistenza.
 
-
+* **FORMS-23703**: quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
