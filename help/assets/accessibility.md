@@ -1,15 +1,15 @@
 ---
-title: Funzioni e interfacce accessibili di  [!DNL Experience Manager Assets]
+title: Funzioni e interfacce accessibili di  [!DNL Adobe Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità di  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] aiutano gli utenti con disabilità.
 contentOwner: AG
 feature: Asset Management
 role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 3524c1e6d299576ac9691292fb29eb0cf8a48bc2
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 1%
+source-wordcount: '1881'
+ht-degree: 0%
 
 ---
 
@@ -31,13 +31,13 @@ Possible topics to cover in this article are below.
 
 # Funzioni di accessibilità in [!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] consente ai creatori e agli editori di contenuti di offrire esperienze straordinarie sul Web. Adobe si impegna a includere i creatori con disabilità migliorando l&#39;accessibilità di [!DNL Experience Manager]. Il software viene continuamente migliorato per soddisfare le esigenze di tutti i tipi di utenti e rispettare gli standard mondiali che includono le persone con disabilità visive, uditive, di mobilità o di altro tipo.
+[!DNL Adobe Experience Manager] consente ai creatori e agli editori di contenuti di offrire esperienze straordinarie sul Web. Adobe si impegna a includere i creatori con disabilità migliorando l&#39;accessibilità di [!DNL Experience Manager]. Il software viene continuamente migliorato per soddisfare le esigenze di tutti i tipi di utenti. Aderisce agli standard mondiali che includono le persone con disabilità visive, uditive, motorie o di altro tipo.
 
 [!DNL Experience Manager] pubblica informazioni sulla conformità che descrivono gli standard a cui aderisce, descrivono le funzioni di accessibilità del prodotto e descrivono il livello di conformità. I rapporti sulla conformità per l&#39;accessibilità aiutano [!DNL Experience Manager] utenti a comprendere il livello di aderenza ai vari standard. I miglioramenti apportati in [!DNL Assets] consentono a tutti gli utenti di utilizzare facilmente le interfacce tramite tastiera, utilità per la lettura dello schermo, lenti di ingrandimento e altre tecnologie per l&#39;accessibilità.
 
 [!DNL Experience Manager] fornisce diversi livelli di supporto per i seguenti standard:
 
-* [Linee guida per l&#39;accessibilità dei contenuti Web (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [Linee guida per l&#39;accessibilità dei contenuti Web (WCAG) 2.1](https://www.w3.org/TR/wcag/).
 * [Sezione 508 rivista della legge sulla riabilitazione](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [Iniziativa per l&#39;accessibilità - Applicazioni Internet avanzate accessibili (WAI-ARIA) di W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
@@ -60,14 +60,14 @@ Gli utenti con disabilità si affidano spesso a hardware e software per accedere
 
 In [!DNL Experience Manager], le funzionalità di accesso facilitato soddisfano due requisiti chiave di [!DNL Experience Manager] utenti e dei relativi clienti.
 
-* I creatori e i progettisti di contenuti dispongono di funzioni per creare e pubblicare contenuti accessibili che vengono utilizzati a loro volta dai clienti e dai visitatori del sito web. Le persone con disabilità utilizzano il contenuto con l’aiuto di tecnologie per l’accessibilità. Per informazioni dettagliate, vedere [linee guida per l&#39;accessibilità Web](/help/managing/web-accessibility.md).
+* I creatori e i progettisti di contenuti dispongono di funzioni per creare e pubblicare contenuti accessibili che vengono utilizzati a loro volta dai clienti e dai visitatori del sito web. Le persone con disabilità utilizzano il contenuto con l’aiuto di tecnologie per l’accessibilità. Per informazioni dettagliate, vedere [Linee guida per l&#39;accessibilità Web](/help/managing/web-accessibility.md).
 * [!DNL Experience Manager] consente inoltre agli utenti e agli amministratori con disabilità di accedere all&#39;interfaccia utente e ai controlli per creare e gestire i contenuti. Le persone con disabilità possono utilizzare le tecnologie per l&#39;accessibilità per navigare, utilizzare e gestire la funzionalità [!DNL Assets].
 
-Le funzionalità di base di [!DNL Assets] sono più accessibili di prima e vengono aggiornate regolarmente per migliorare la conformità agli standard globali. Le operazioni CRUD in [!DNL Assets] hanno un certo grado di accessibilità integrato in queste. I flussi di lavoro DAM, come l’aggiunta, la gestione, la ricerca e la distribuzione di risorse, sono accessibili tramite scelte rapide da tastiera, testo per utilità di lettura dello schermo, contrasto dei colori e così via.
+Le funzionalità di base di [!DNL Assets] sono più accessibili di prima e vengono aggiornate regolarmente per migliorare la conformità agli standard globali. Le operazioni CRUD in [!DNL Assets] dispongono di un certo grado di accessibilità incorporata. I flussi di lavoro DAM, come l’aggiunta, la gestione, la ricerca e la distribuzione di risorse, sono accessibili tramite scelte rapide da tastiera, testo per utilità di lettura dello schermo, contrasto dei colori e così via.
 
 ## Supporto per l’utilizzo della tastiera {#keyboard-use}
 
-Molti elementi dell’interfaccia utente che possono essere cliccati o utilizzati con un puntatore possono anche essere attivati utilizzando la tastiera. Utilizzando una tastiera, gli utenti possono concentrarsi sugli elementi dell’interfaccia utente e intraprendere un’azione appropriata. Gli utenti possono utilizzare direttamente le scelte rapide da tastiera per attivare un comando o un’azione senza dover concentrarsi sugli elementi dell’interfaccia utente e attivarli tramite la tastiera. Ad esempio, gli utenti possono aprire la timeline di una risorsa sul lato sinistro dell&#39;interfaccia utente navigando sul controllo dell&#39;interfaccia utente tramite una tastiera e selezionando `Return` e selezionando la scelta rapida da tastiera `Alt + 2`.
+Molti elementi dell’interfaccia utente che possono essere cliccati o utilizzati con un puntatore possono anche essere coinvolti con l’utilizzo di una tastiera. Utilizzando una tastiera, gli utenti possono concentrarsi sugli elementi dell’interfaccia utente e intraprendere un’azione appropriata. Gli utenti possono utilizzare direttamente le scelte rapide da tastiera per attivare un comando o un’azione senza dover concentrarsi sugli elementi dell’interfaccia utente e attivarli tramite la tastiera. Ad esempio, gli utenti possono aprire la timeline di una risorsa nella parte sinistra dell’interfaccia utente. Passare al controllo dell&#39;interfaccia utente utilizzando una tastiera e selezionare `Return`, quindi selezionare la scelta rapida da tastiera `Alt + 2`.
 
 <!-- TBD items:
 
@@ -85,11 +85,11 @@ Le azioni seguenti in [!DNL Assets] funzionano con le scelte rapide da tastiera 
 |---|---|---|
 | Vista a colonne nell&#39;interfaccia utente [!DNL Assets] | Tasti freccia su e freccia giù | Consente di passare a file e cartelle all&#39;interno della stessa gerarchia. |
 | Vista a colonne nell&#39;interfaccia utente [!DNL Assets] | Tasti freccia sinistra e destra | Passa ai file e alle cartelle al di sopra o al di sotto della cartella corrente. |
-| Esplorazione delle cartelle in [!DNL Assets] | `/` | Richiama la ricerca aprendo la casella Omnisearch. |
+| Esplorazione delle cartelle in [!DNL Assets] | `/` | Richiama una ricerca aprendo la casella Omnisearch. |
 | Console [!DNL Assets] | &grave; | Attiva/disattiva barre laterali |
 | Console [!DNL Assets] | `Alt + 1` | Apri la struttura del contenuto. |
 | Console [!DNL Assets] | `Alt + 2` | Apri la barra a sinistra di [!UICONTROL Navigazione]. |
-| Console [!DNL Assets] | `Alt + 3` | Visualizza [!UICONTROL Timeline] di una risorsa selezionata. |
+| Console [!DNL Assets] | `Alt + 3` | Visualizza una [!UICONTROL Timeline] di una risorsa selezionata. |
 | Console [!DNL Assets] | `Alt + 4` | Apri i riferimenti Live Copy della risorsa selezionata. |
 | Console [!DNL Assets] | `Alt + 5` | Avvia la ricerca nella cartella selezionata. |
 | Risorsa o cartella selezionata | Backspace | Elimina la risorsa o la cartella selezionata. |
@@ -98,7 +98,7 @@ Le azioni seguenti in [!DNL Assets] funzionano con le scelte rapide da tastiera 
 | Risorsa o cartella selezionata | `m` | Sposta la risorsa selezionata. |
 | Risorsa o cartella selezionata | `Ctrl + c` | Copia la risorsa selezionata. |
 | Risorsa o cartella selezionata | `Esc` | Annulla la selezione. |
-| La finestra di dialogo si apre ed è attiva | `Esc` | Chiudi la finestra di dialogo. |
+| La finestra di dialogo si apre ed è attiva | `Esc` | Chiudete la finestra di dialogo. |
 | All’interno di una cartella in DAM | `Ctrl + v` | Incolla la risorsa copiata. |
 | Console [!DNL Assets] | `Ctrl + A` | Seleziona tutte le risorse. |
 | Pagine delle proprietà della risorsa | `Ctrl + S` | Salva le modifiche. |
@@ -106,9 +106,9 @@ Le azioni seguenti in [!DNL Assets] funzionano con le scelte rapide da tastiera 
 
 ## Accedi e naviga nell&#39;interfaccia utente [!DNL Assets] {#login}
 
-Gli utenti possono utilizzare la tastiera per passare al campo di accesso e compilarlo per effettuare l’accesso. I messaggi di errore dovuti a combinazioni errate di nome utente e password nella pagina di accesso vengono visualizzati dagli assistenti vocali ogni volta che si verifica l’errore.
+Gli utenti possono utilizzare la tastiera per passare al campo di accesso e compilarlo per effettuare l’accesso. Gli assistenti vocali visualizzano messaggi di errore sulla pagina di accesso ogni volta che un utente immette una combinazione errata di nome utente e password.
 
-Dopo aver effettuato l&#39;accesso, gli utenti DAM possono spostarsi all&#39;interno dell&#39;interfaccia utente di [!DNL Assets] utilizzando la tastiera. Gli elementi dell’interfaccia utente, come la barra a sinistra, i menu, il profilo utente, la barra di ricerca, i file e le cartelle e le impostazioni di amministrazione e configurazione sono navigabili da tastiera. L&#39;ordine di navigazione della tastiera è da sinistra a destra e dall&#39;alto al basso. Quando si naviga utilizzando una tastiera, un’opzione actionable, se messa a fuoco, viene evidenziata con un contrasto di colore migliore e narrata da un assistente vocale. Se appropriato, lo stato, ad esempio espanso, compresso e misto, delle opzioni attivate nel menu viene annunciato da un assistente vocale. Inoltre, l’assistente vocale annuncia lo scopo dell’opzione utilizzabile, anziché, ad esempio, l’aspetto o il posizionamento dell’interfaccia.
+Dopo l&#39;accesso, gli utenti DAM possono spostarsi all&#39;interno dell&#39;interfaccia utente [!DNL Assets] utilizzando una tastiera. Gli elementi dell’interfaccia utente, come la barra a sinistra, i menu, il profilo utente, la barra di ricerca, i file e le cartelle e le impostazioni di amministrazione e configurazione sono navigabili da tastiera. L&#39;ordine di navigazione della tastiera è da sinistra a destra e dall&#39;alto al basso. Quando gli utenti navigano con una tastiera, l’interfaccia utente evidenzia l’opzione attivabile con contrasto del colore migliorato e gli assistenti vocali la narrano. Se appropriato, gli assistenti vocali annunciano lo stato (ad esempio espanso, compresso o misto) delle opzioni del menu attivo. Inoltre, l’assistente vocale annuncia lo scopo dell’opzione utilizzabile, anziché, ad esempio, l’aspetto o il posizionamento dell’interfaccia.
 
 Se un utente espande l’opzione Aiuto o Profilo utente dal menu, l’assistente vocale annuncia l’opzione o lo stato appropriato. Se un utente espande l’opzione del profilo utente, è possibile selezionare le opzioni disponibili utilizzando una tastiera. Ad esempio, un amministratore può rappresentare un altro utente. Se un utente cerca una stringa dall&#39;opzione [!UICONTROL Guida], un narratore annuncia &quot;Ricerca nella Guida&quot; per indicare che è in corso una ricerca.
 
@@ -121,7 +121,7 @@ Se un utente espande l’opzione Aiuto o Profilo utente dal menu, l’assistente
 
 ## Sfogliare le risorse e visualizzare le informazioni correlate {#browse}
 
-Nell&#39;interfaccia utente di [!DNL Assets], gli utenti possono utilizzare la tastiera per sfogliare l&#39;elenco delle risorse digitali esistenti nell&#39;archivio DAM, visualizzare in anteprima o scaricare una risorsa, visualizzare le rappresentazioni generate, cambiare vista, visualizzare le rappresentazioni generate, vedere la cronologia delle versioni e della timeline, vedere i commenti e i riferimenti e visualizzare e gestire i metadati.
+Nell&#39;interfaccia utente di [!DNL Assets], gli utenti possono utilizzare la tastiera per sfogliare le risorse digitali nell&#39;archivio DAM e visualizzare in anteprima o scaricare una risorsa. Gli utenti possono inoltre visualizzare le rappresentazioni generate, cambiare vista e rivedere la timeline, la cronologia delle versioni, i commenti e i riferimenti. Inoltre, gli utenti possono visualizzare e gestire i metadati.
 
 <!-- TBD: Not sure about the following list items mean:
 
@@ -139,7 +139,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 
 Durante la navigazione nell’archivio delle risorse, le seguenti funzionalità migliorano l’accessibilità:
 
-* L’assistente vocale annuncia alternative testuali che illustrano lo scopo o la funzionalità delle icone al posto del nome.
+* Un assistente vocale annuncia alternative testuali che illustrano lo scopo o la funzionalità delle icone al posto del loro nome.
 * Gli utenti possono accedere e attivare le opzioni dell’interfaccia utente interattiva nell’elenco Riferimenti delle risorse utilizzando i tasti di tastiera.
 * Gli elementi in ogni riga nella vista a elenco vengono annunciati dagli assistenti vocali come elementi della stessa riga.
 * Durante la navigazione con il tasto `Tab`, lo stato attivo può passare all&#39;opzione di chiusura nell&#39;anteprima della versione.
@@ -162,35 +162,33 @@ Durante la navigazione nell’archivio delle risorse, le seguenti funzionalità 
 
 ## Gestire le risorse digitali {#manage-assets}
 
-Molte attività di gestione delle risorse, come le operazioni CRUD, il download di una risorsa e l’aggiunta di metadati, sono accessibili a vari livelli. [!DNL Assets] consente di eseguire le attività utilizzando diverse tecnologie di assistenza, ad esempio un assistente vocale e una tastiera.
+Molte attività di gestione delle risorse, come le operazioni CRUD, il download di una risorsa e l’aggiunta di metadati, sono accessibili a vari livelli. [!DNL Assets] ti consente di eseguire le attività utilizzando varie tecnologie di assistenza, come un assistente vocale e una tastiera.
 
-Guarda un video che illustra come utilizzare una tastiera per [sfogliare l&#39;archivio e scaricare una risorsa](https://youtu.be/K3dgqMRQJys).
+Per le operazioni relative ai metadati che vengono in genere eseguite dai ruoli, ad esempio addetti al marketing e amministratori, le seguenti funzioni migliorano l’accessibilità:
 
-Per le operazioni sui metadati che vengono in genere eseguite da ruoli quali addetti al marketing e amministratori, le seguenti funzioni migliorano l’accessibilità:
-
-* L&#39;opzione [!UICONTROL Salva e chiudi] nella pagina [!UICONTROL Proprietà] della risorsa è ora accessibile tramite tastiera.
+* L&#39;opzione [!UICONTROL Salva e chiudi] nella pagina [!UICONTROL Proprietà] della risorsa è ora accessibile tramite la tastiera.
 * Gli assistenti vocali annunciano le opzioni per eliminare i tag selezionati nella scheda [!UICONTROL Base] della risorsa [!UICONTROL Proprietà].
-* Gli utenti possono utilizzare la finestra di dialogo a comparsa Datepicker con una tastiera. L’elemento dell’interfaccia utente Datepicker viene utilizzato per impostare orari di attivazione e orari di disattivazione e per selezionare la data.
-* La funzionalità di trascinamento tramite tastiera funziona correttamente in [!UICONTROL Editor schema metadati] nella modalità Sfoglia dell&#39;utilità per la lettura dello schermo.
-* Un utente può spostare lo stato attivo utilizzando la tastiera nel campo Aggiungi utente o gruppo in [!UICONTROL Gruppo utenti chiuso] nella scheda [!UICONTROL Autorizzazioni] della cartella [!UICONTROL Proprietà].
+* Gli utenti possono utilizzare la finestra di dialogo a comparsa Selezione data con una tastiera. L’elemento dell’interfaccia utente Selettore data viene utilizzato per impostare orari di attivazione e orari di disattivazione e per selezionare la data.
+* La funzionalità di trascinamento tramite tastiera funziona correttamente nell&#39;[!UICONTROL Editor schema metadati] nella modalità Sfoglia dell&#39;utilità per la lettura dello schermo.
+* Un utente può utilizzare la tastiera per spostare lo stato attivo sul campo **Aggiungi utente o gruppo**.
 
 ## Cercare risorse digitali {#search-assets}
 
-Un’esperienza di ricerca delle risorse rapida e semplice velocizza le operazioni relative ai contenuti. I casi di utilizzo della velocità del contenuto fanno parte della funzionalità di base [!DNL Assets]. Per avviare una ricerca dalla barra di Omnisearch, gli utenti possono utilizzare la scelta rapida da tastiera `/` o `Tab` insieme agli assistenti vocali per individuare rapidamente l&#39;opzione di ricerca. L&#39;assistente vocale legge il nome dell&#39;opzione come &quot;Pulsante di ricerca&quot; quando lo stato attivo si trova sull&#39;opzione di ricerca ![opzione di ricerca](assets/do-not-localize/search_icon.png). Gli utenti possono selezionare `Return` per aprire la casella Omnisearch. L&#39;assistente vocale non solo legge la parola chiave digitata nella casella di ricerca, ma legge anche i suggerimenti offerti da [!DNL Experience Manager Assets]. Gli utenti possono utilizzare una combinazione di tasti di direzione, `Return` e `Tab` per accedere alle varie opzioni per attivare una ricerca.
+Un’esperienza di ricerca delle risorse rapida e semplice velocizza le operazioni relative ai contenuti. I casi di utilizzo della velocità del contenuto fanno parte della funzionalità di base [!DNL Assets]. Per avviare una ricerca dalla barra di Omnisearch, gli utenti possono utilizzare la scelta rapida da tastiera `/` oppure `Tab` insieme agli assistenti vocali per individuare rapidamente l&#39;opzione di ricerca. L&#39;assistente vocale legge il nome dell&#39;opzione come &quot;Pulsante di ricerca&quot; quando lo stato attivo si trova sull&#39;opzione di ricerca ![opzione di ricerca](assets/do-not-localize/search_icon.png). Gli utenti possono selezionare `Return` per aprire la casella Omnisearch. L&#39;assistente vocale non solo legge la parola chiave digitata nella casella di ricerca, ma legge anche i suggerimenti offerti da [!DNL Experience Manager Assets]. Gli utenti possono utilizzare una combinazione di tasti di direzione, `Return` e `Tab` per accedere alle varie opzioni per attivare una ricerca.
 
 La funzionalità di ricerca è resa accessibile dalle seguenti funzionalità:
 
-* Il titolo della pagina, se disponibile per un assistente vocale, consente di identificare la pagina come pagina di ricerca delle risorse.
+* Il titolo della pagina, disponibile per un assistente vocale, consente di identificare la pagina come pagina di ricerca di una risorsa.
 * Gli utenti cercano le risorse all’interno del campo Omnisearch. Gli utenti possono aprirla utilizzando la navigazione da tastiera o la scelta rapida da tastiera `/`.
 * Gli utenti possono iniziare a digitare la parola chiave di ricerca e quindi selezionare i suggerimenti automatici utilizzando i tasti freccia. Il suggerimento evidenziato può essere selezionato utilizzando la chiave `Return` e le risorse vengono cercate per il suggerimento selezionato.
-* Gli assistenti vocali possono identificare e annunciare le caselle di controllo a stato misto (in cui, a meno che non si selezionino tutti i predicati nidificati, le caselle di controllo di primo livello non sono selezionate e sono barrate) nel pannello Filtri durante il filtraggio dei risultati di ricerca.
+* Gli assistenti vocali possono identificare e annunciare caselle di controllo a stato misto nel pannello Filtri quando gli utenti filtrano i risultati della ricerca. In uno stato misto, la casella di controllo di primo livello viene selezionata finché gli utenti non selezionano tutti i predicati nidificati.
 * Lo stato attivo dell’utente si sposta sulle opzioni di ricerca dopo la chiusura della casella Omnisearch.
 
 Quando si filtrano i risultati di ricerca:
 
 * La pagina dei risultati della ricerca ha un titolo informativo per una migliore comprensione degli utenti di utilità per la lettura dello schermo.
 * Un assistente vocale annuncia le opzioni nel filtro di ricerca come fisarmoniche espandibili.
-* I predicati con opzioni a stati misti vengono annunciati dagli assistenti vocali.
+* Gli assistenti vocali annunciano predicati che includono opzioni a stati misti.
 
 ## Condividere le risorse {#share-assets}
 
@@ -199,12 +197,12 @@ Quando si filtrano i risultati di ricerca:
 
 Quando si condividono le risorse, le seguenti funzionalità migliorano l’accessibilità:
 
-* Un utente può spostare lo stato attivo utilizzando la tastiera nel campo Cerca e aggiungi indirizzo e-mail della finestra di dialogo di condivisione del collegamento.
+* L’utente può spostare lo stato attivo utilizzando la tastiera nel campo Cerca e aggiungi indirizzo e-mail della finestra di dialogo Condivisione collegamenti.
 
-* Nella finestra di dialogo di condivisione dei collegamenti, in modalità Sfoglia, gli assistenti vocali
+* Nella finestra di dialogo Condivisione collegamenti, in modalità Sfoglia, gli assistenti vocali
 
-   * Non narrare le informazioni della tabella quando la finestra di dialogo viene caricata.
-   * Consente di accedere a tutti i suggerimenti elencati.
+   * Non narrare le informazioni della tabella al caricamento della finestra di dialogo.
+   * Passa a tutti i suggerimenti elencati.
    * Racconta i suggerimenti visualizzati per i campi Aggiungi indirizzo e-mail e Cerca.
 
 ## Documentazione accessibile {#accessible-docs}
@@ -218,10 +216,7 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 
 ## Invia feedback {#a11y-feedback}
 
-Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto relativi all’accessibilità, utilizza i metodi seguenti:
-
-* Compila il modulo in [www.adobe.com/accessibility/feedback.html](https://www.adobe.com/accessibility/feedback.html).
-* Inviaci un&#39;e-mail all&#39;indirizzo access@adobe.com.
+Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto relativi all&#39;accessibilità, utilizzare i metodi seguenti, inviare un&#39;e-mail all&#39;indirizzo `access@adobe.com`.
 
 >[!MORELIKETHIS]
 >
