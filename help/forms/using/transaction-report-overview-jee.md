@@ -5,7 +5,7 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
+source-git-commit: 5699f5814daf16a397eb6129b881ac2035456e39
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Abilitazione e visualizzazione dei rapporti sulle transazioni per AEM Forms su JEE {#transaction-reports-overview}
 
-<span> È stata introdotta la funzionalità di reporting delle transazioni per AEM Forms su JEE da AEM Forms 6.5.20.0. Questa funzionalità è disabilitata per impostazione predefinita e può essere abilitata dall&#39;interfaccia utente amministratore.</span>
+<span> È stata introdotta la funzionalità di reporting delle transazioni per [AEM Forms su JEE da AEM Forms 6.5.20.0](/help/release-notes/previous/6-5-20.md#forms). Questa funzionalità è disabilitata per impostazione predefinita e può essere abilitata dall&#39;interfaccia utente amministratore.</span>
 
 I rapporti sulle transazioni in AEM Forms su JEE ti consentono di tenere un conteggio di tutte le transazioni eseguite nella distribuzione AEM Forms. L’obiettivo è quello di fornire informazioni sull’utilizzo dei prodotti e aiutare le parti interessate a comprendere i propri volumi di elaborazione digitale. Di seguito sono riportati alcuni esempi di transazioni:
 
@@ -63,7 +63,7 @@ Il rapporto di transazione tramite dashboard fornisce il numero totale di transa
 
 ### Rapporto di transazione tramite file di registro {#transaction-report-logfile}
 
-Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **&#x200B;**&#x200B;è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
+Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **** è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
 
 ```
 For Jboss Turnkey:
