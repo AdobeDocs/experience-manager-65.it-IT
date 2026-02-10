@@ -694,7 +694,7 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
 
 * **FORMS-21378**: se la convalida lato server (SSV) è abilitata, l&#39;invio del modulo potrebbe non riuscire. Se riscontri questo problema, contatta il supporto Adobe per assistenza.
 
-* **FORMS-23703**: quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
+* **FORMS-23703**: quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
 
 * L’autenticazione dei connettori del modello dati modulo potrebbe non riuscire perché le parole chiave e il pattern regex richiesti non sono consentiti per impostazione predefinita. Per risolvere il problema, aggiungere quanto segue tramite Configuration Manager (`/system/console/configmgr`):
 
@@ -703,7 +703,7 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979.**: la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23722** (file allegati mancanti in Assegna attività): quando un modulo con un campo **File allegato** viene inviato a un flusso di lavoro di AEM che utilizza un passaggio **Assegna attività**, gli allegati non vengono visualizzati quando l&#39;attività viene aperta dalla Posta in arrivo. I file vengono salvati correttamente nell’archivio e sono visibili in CRX; solo l’interfaccia utente del passaggio Assegna attività non li mostra.
 
