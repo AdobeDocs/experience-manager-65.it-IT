@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 24e09fd7dd1801dc1511ed91a0b7c550d50eb484
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '9709'
+source-wordcount: '9732'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 5%
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -694,7 +694,7 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
 
 * **FORMS-21378**: se la convalida lato server (SSV) è abilitata, l&#39;invio del modulo potrebbe non riuscire. Se riscontri questo problema, contatta il supporto Adobe per assistenza.
 
-* **FORMS-23703**: quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
+* **FORMS-23703**: quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
 
 * L’autenticazione dei connettori del modello dati modulo potrebbe non riuscire perché le parole chiave e il pattern regex richiesti non sono consentiti per impostazione predefinita. Per risolvere il problema, aggiungere quanto segue tramite Configuration Manager (`/system/console/configmgr`):
 
@@ -703,9 +703,11 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979.**: la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23722** (file allegati mancanti in Assegna attività): quando un modulo con un campo **File allegato** viene inviato a un flusso di lavoro di AEM che utilizza un passaggio **Assegna attività**, gli allegati non vengono visualizzati quando l&#39;attività viene aperta dalla Posta in arrivo. I file vengono salvati correttamente nell’archivio e sono visibili in CRX; solo l’interfaccia utente del passaggio Assegna attività non li mostra.
+
+* **FORMS-23717** Nella ricerca del modello dati modulo, un tag HTML viene visualizzato nell&#39;interfaccia utente anche quando non è presente un&#39;entità rilevante.
 
 * **FORMS-23717** Dopo l&#39;aggiornamento a **AEM Forms6.5.24.0**, `server.log` e `error.log` possono essere inondati da messaggi di avvertenza ripetuti, ad esempio *Creazione della factory del parser protetto non riuscita* o *L&#39;attributo di sicurezza ... non è supportato*. I registri possono crescere di circa **5-10 righe al secondo** (centinaia di MB all&#39;ora), che possono riempire il disco e bloccare il rollout di produzione. **Correzione:** inclusa in AEM Forms **6.5.25.0**. **Fino ad allora:**
 

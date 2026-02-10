@@ -3,9 +3,10 @@ title: Creare e aggiungere funzioni personalizzate in un modulo adattivo
 description: AEM Forms supporta funzioni personalizzate che consentono agli utenti di creare e utilizzare le proprie funzioni all’interno dell’editor di regole.
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
+exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -13,6 +14,10 @@ ht-degree: 0%
 # Funzioni personalizzate in Adaptive Forms
 
 ## Introduzione
+
+>[!NOTE]
+>
+> Le funzioni personalizzate devono essere compatibili con ECMAScript 5 (ES5). Foundation Forms supporta solo ES5; l&#39;utilizzo delle versioni più recenti di ECMAScript (ES6 e versioni successive) non è supportato e può causare errori o comportamenti imprevisti.
 
 In AEM Forms 6.5 è stata introdotta la possibilità di definire funzioni di JavaScript che possono essere utilizzate per definire regole di business complesse utilizzando l’editor di regole. AEM Forms fornisce una serie di funzioni personalizzate pronte all’uso, ma sarà necessario definire funzioni personalizzate e utilizzarle in più moduli.
 
@@ -87,7 +92,7 @@ Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag d
 Sintassi: `@return {type}`
 In alternativa, è possibile utilizzare `@returns {type}`.
 Aggiunge informazioni sulla funzione, ad esempio l&#39;obiettivo.
-{type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
+  {type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
 
    1. stringa
    1. numero
@@ -240,7 +245,7 @@ Aggiungiamo il seguente codice al file JavaScript per calcolare l’età in base
 
 1. Salva il file `js.txt`.
 
-È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/using/assets/customfunction.zip). Scarica e installa questa cartella nella tua istanza AEM.
+È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/using/assets/customfunction.zip). Scarica e installa questa cartella nella tua istanza di AEM.
 
 Ora è possibile utilizzare la funzione personalizzata nel modulo adattivo aggiungendo la libreria client.
 
