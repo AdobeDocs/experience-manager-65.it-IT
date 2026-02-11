@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
 workflow-type: tm+mt
-source-wordcount: '11687'
+source-wordcount: '11685'
 ht-degree: 0%
 
 ---
@@ -63,25 +63,25 @@ Punti di controllo correlati
    * 14.1 Utilizza il linguaggio più chiaro e semplice appropriato per il contenuto di un sito.
 * WCAG 2.0
    * 2.2.2 Pausa, stop, nascondi: per le informazioni in movimento, lampeggianti, scorrevoli o con aggiornamento automatico, vale quanto segue: (Livello A)
-   * 2.3.1 Tre Flash o inferiore alla soglia: le pagine web non contengono elementi che lampeggiano più di tre volte al secondo, oppure il lampeggiamento è inferiore alle soglie di lampeggiamento generale e rosso. (Livello A)
-   * 2.3.2 Tre Flash: le pagine web non contengono elementi che lampeggiano più di tre volte al secondo. (livello AAA)
+   * 2.3.1 Tre lampeggiamenti o inferiore alla soglia: le pagine web non contengono elementi che lampeggiano più di tre volte al secondo, oppure il lampeggiamento è inferiore alle soglie di lampeggiamento generale e rosso. (Livello A)
+   * 2.3.2 Tre lampeggiamenti: le pagine web non contengono elementi che lampeggiano più di tre volte al secondo. (livello AAA)
 
 
 ## Configura le proprietà del modulo per generare le informazioni di accessibilità {#configure-form-properties}
 
 Affinché un modulo sia accessibile, deve essere [percepibile](https://www.w3.org/TR/WCAG20/#perceivable) dalla tecnologia per l&#39;accessibilità. La maggior parte degli assistenti vocali, ad esempio, non considera il layout visivo del modulo, ma la struttura sottostante.
 
-Per implementare questa struttura sottostante utilizzando LiveCycle Designer, è necessario creare un modulo PDF con informazioni di accessibilità (a volte denominate tag) incluse, in modo che l’assistente vocale o un’altra tecnologia possa leggere il testo e i componenti del modulo. In un modulo con informazioni sull&#39;accessibilità, ogni elemento contiene informazioni sulla propria struttura, oltre a informazioni su come è correlato o dipendente da altri elementi. Solo nei file PDF con le informazioni di accessibilità incluse è possibile identificare e descrivere con precisione il contenuto di un documento.
+Per implementare questa struttura sottostante utilizzando LiveCycle Designer, è necessario creare un modulo PDF con informazioni di accessibilità (a volte denominate tag) incluse in modo che l&#39;assistente vocale o un&#39;altra tecnologia di supporto possa leggere il testo e i componenti del modulo. In un modulo con informazioni sull&#39;accessibilità, ogni elemento contiene informazioni sulla propria struttura, oltre a informazioni su come è correlato o dipendente da altri elementi. Solo nei file PDF con le informazioni di accessibilità incluse è possibile identificare e descrivere con precisione il contenuto di un documento.
 
-Per creare un modulo accessibile, è necessario configurare le proprietà del modulo in modo che Designer di LiveCycle generi informazioni di accessibilità quando si salva la struttura del modulo come file PDF:
+Per creare un modulo accessibile, è necessario configurare le proprietà del modulo in modo che LiveCycle Designer generi informazioni di accessibilità durante il salvataggio della struttura del modulo come file PDF:
 1. Scegliete File > Proprietà modulo.
 1. Fai clic sulla scheda Opzioni di salvataggio e, nell’area PDF, accertati che sia selezionata l’opzione Genera informazioni sull’accessibilità (tag) per Acrobat.
-1. Fare clic su OK.
+1. Fai clic su OK.
 
 In LiveCycle Designer, questa opzione è selezionata per impostazione predefinita.
 
 >[!NOTE]
-> Queste opzioni sono valide solo quando si salva la struttura del modulo come file PDF. Non si applicano ai file PDF creati con LiveCycle Forms che dispongono di opzioni di configurazione indipendenti da questa opzione in LiveCycle Designer.
+> Queste opzioni sono valide solo quando si salva la struttura del modulo come file PDF. Non si applicano ai file PDF creati con LiveCycle Forms che dispone di opzioni di configurazione indipendenti da questa opzione in LiveCycle Designer.
 
 **Punti di controllo correlati**
 
@@ -121,7 +121,7 @@ Le immagini possono aiutare a migliorare la comprensione per gli utenti con alcu
 
 Se scegli di utilizzare le immagini, fornisci descrizioni testuali per tutti gli oggetti campo immagine e immagine. Verificare che il testo descriva l&#39;oggetto e il relativo scopo nel modulo. Quando si definisce un&#39;alternativa testuale, l&#39;assistente vocale legge tale alternativa quando incontra l&#39;immagine. Per questo motivo, un&#39;immagine contenente informazioni deve sempre avere un testo alternativo specificato.
 
-Le descrizioni di testo vengono fornite utilizzando le proprietà Descrizione comando o Testo Reader schermo personalizzato nella tavolozza Accessibilità oppure tramite campi di testo, didascalie e nomi di oggetto, come specificato nell&#39;opzione Nome della scheda Associazione. La Figura 2 mostra ad esempio un esempio di immagine contenente il testo &quot;Ottieni Adobe Reader&quot;. Poiché un assistente vocale non è in grado di leggere il testo che fa parte di un’immagine, è necessario includere un testo alternativo nel campo Testo Reader schermo personalizzato della tavolozza Accessibilità per questo oggetto. Nella maggior parte dei casi, il testo alternativo deve essere uguale al testo visibile nell’immagine (vedi Figura 2).
+Le descrizioni di testo vengono fornite utilizzando le proprietà Descrizione comando o Testo Reader schermo personalizzato nella tavolozza Accessibilità oppure tramite campi di testo, didascalie e nomi di oggetto, come specificato nell&#39;opzione Nome della scheda Associazione. Ad esempio, nella Figura 2 è illustrato un esempio di immagine contenente il testo &quot;Ottieni Adobe Reader&quot;. Poiché un assistente vocale non è in grado di leggere il testo che fa parte di un’immagine, è necessario includere un testo alternativo nel campo Testo Reader per schermo personalizzato della palette Accessibilità per questo oggetto. Nella maggior parte dei casi, il testo alternativo deve essere uguale al testo visibile nell’immagine (vedi Figura 2).
 
 ![Specifica di testo alternativo per un&#39;immagine mediante la tavolozza Accesso facilitato](/help/forms/using/assets/image-2.png)
 
@@ -134,7 +134,7 @@ Quando specificate il testo alternativo, tenete presente quanto segue:
 * Non creare descrizioni testuali per le immagini statiche utilizzate solo a scopo di decorazione.
 * Non utilizzare dati digitalizzati come informazioni di background. Ciò può verificarsi quando una finestra di progettazione analizza un modulo di stampa e utilizza Adobe LiveCycle Designer per aggiungere nuovi campi al modulo. Gli assistenti vocali non sono in grado di rilevare i dati digitalizzati in questo stato.
 
-Quando si includono contenuti grafici puramente decorativi nei moduli, è necessario assicurarsi che gli assistenti vocali non annuncino la presenza dell&#39;immagine. Per la maggior parte degli assistenti vocali, questo può essere ottenuto impostando la proprietà Testo Reader su Nessuno nella tavolozza Accessibilità. In caso contrario, alcuni assistenti vocali potrebbero annunciare la presenza di un&#39;immagine, senza indicare ciò che l&#39;immagine rappresenta. Per le immagini dinamiche, come gli oggetti campo immagine, assicurati che le alternative di testo vengano aggiornate correttamente quando l’immagine viene modificata. Non creare descrizioni testuali per gli oggetti campo immagine utilizzati solo a scopo di decorazione. È possibile utilizzare il linguaggio di script FormCalc per assegnare descrizioni di testo a un oggetto campo immagine in modo dinamico. FormCalc è il linguaggio di script standard di Adobe LiveCycle Designer. Si consideri ad esempio un modulo con un campo immagine denominato ImageField1 e testo associato nel nodo imagetext dei dati di runtime. È possibile utilizzare gli script per passare questo testo in un evento appropriato, ad esempio `form:ready`, nel modo seguente:
+Quando si includono contenuti grafici puramente decorativi nei moduli, è necessario assicurarsi che gli assistenti vocali non annuncino la presenza dell&#39;immagine. Per la maggior parte degli assistenti vocali, questo può essere ottenuto impostando la proprietà Screen Reader Text su None nella palette Accessibilità. In caso contrario, alcuni assistenti vocali potrebbero annunciare la presenza di un&#39;immagine, senza indicare ciò che l&#39;immagine rappresenta. Per le immagini dinamiche, come gli oggetti campo immagine, assicurati che le alternative di testo vengano aggiornate correttamente quando l’immagine viene modificata. Non creare descrizioni testuali per gli oggetti campo immagine utilizzati solo a scopo di decorazione. È possibile utilizzare il linguaggio di script FormCalc per assegnare descrizioni di testo a un oggetto campo immagine in modo dinamico. FormCalc è il linguaggio di script standard di Adobe LiveCycle Designer. Si consideri ad esempio un modulo con un campo immagine denominato ImageField1 e testo associato nel nodo imagetext dei dati di runtime. È possibile utilizzare gli script per passare questo testo in un evento appropriato, ad esempio `form:ready`, nel modo seguente:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -142,7 +142,7 @@ Punti di controllo correlati
 * Sezione 508 §1194.22
    * (a) Deve essere fornito un equivalente testuale per ogni elemento non testuale (ad esempio tramite &quot;alt&quot;, &quot;longdesc&quot; o nel contenuto dell’elemento).
 * WCAG 1.0
-   * 1.1 Fornisci un equivalente testuale per ogni elemento non testuale (ad esempio, tramite &quot;alt&quot;, &quot;longdesc&quot; o nel contenuto dell’elemento). Ciò include: immagini, rappresentazioni grafiche di testo (compresi i simboli), aree delle mappe immagine, animazioni (ad esempio, GIF animati), applet e oggetti programmatici, arte ascii, fotogrammi, script, immagini utilizzate come punti elenco, distanziatori, pulsanti grafici, suoni (riprodotti con o senza interazione dell’utente), file audio autonomi, tracce audio di video e video (P1).
+   * 1.1 Fornisci un equivalente testuale per ogni elemento non testuale (ad esempio, tramite &quot;alt&quot;, &quot;longdesc&quot; o nel contenuto dell’elemento). Ciò include: immagini, rappresentazioni grafiche di testo (compresi i simboli), aree delle mappe immagine, animazioni (ad esempio, GIF animate), applet e oggetti programmatici, arte ascii, fotogrammi, script, immagini utilizzate come punti elenco, distanziatori, pulsanti grafici, suoni (riprodotti con o senza interazione dell’utente), file audio autonomi, tracce audio di video e video (P1).
 * WCAG 2.0
    * 1.1.1 Contenuto non testuale: tutto il contenuto non testuale presentato all’utente dispone di un’alternativa testuale che svolge la finalità equivalente, fatta eccezione per le situazioni elencate di seguito. (Livello A)
 
@@ -165,36 +165,36 @@ Per utilizzare la tavolozza Accessibilità, effettuare le seguenti operazioni:
 
 Figura 3: **Tavolozza Accessibilità**
 
-Quando il modulo viene salvato come PDF, Designer di LiveCycle cerca nel modulo le proprietà Testo personalizzato, Descrizione, Didascalia e Nome, nell&#39;ordine indicato, per trovare il testo che deve essere letto dagli assistenti vocali. È possibile ignorare questo ordine predefinito utilizzando l&#39;opzione Precedenza Reader schermo nella tavolozza Accessibilità:
+Quando il modulo viene salvato come PDF, LiveCycle Designer cerca nel modulo le proprietà Custom Text, Tool Tip, Caption e Name, nell&#39;ordine indicato, per trovare il testo da leggere per gli assistenti vocali. È possibile ignorare questo ordine predefinito utilizzando l&#39;opzione Precedenza Reader schermo nella tavolozza Accessibilità:
 
 1. Selezionare l&#39;oggetto nella struttura del modulo.
 1. Fare clic sulla tavolozza Accessibilità.
-1. Selezionare un&#39;opzione di precedenza del Reader di schermate diversa da Nessuno.
+1. Selezionare un&#39;opzione di precedenza del Reader dello schermo diversa da Nessuno.
 
 Sono disponibili le seguenti opzioni:
 
-* **Testo personalizzato**, impostato nel campo Testo Reader schermo personalizzato della tavolozza Accessibilità. Questa opzione consente di specificare il testo che si desidera utilizzare con la tecnologia per l’accessibilità, ad esempio le utilità per la lettura dello schermo. L’impostazione Didascalia è la soluzione ottimale per la maggior parte delle situazioni: la creazione di Testo per Reader con schermo personalizzato deve essere considerata un’opzione solo quando non è possibile utilizzare la Didascalia o una descrizione comando.
+* **Testo personalizzato**, impostato nel campo Testo Reader schermo personalizzato della tavolozza Accessibilità. Questa opzione consente di specificare il testo che si desidera utilizzare con la tecnologia per l’accessibilità, ad esempio le utilità per la lettura dello schermo. L’utilizzo dell’impostazione Didascalia è preferibile nella maggior parte delle situazioni: la creazione di Testo Reader con schermo personalizzato deve essere considerata un’opzione solo quando non è possibile utilizzare la Didascalia o una descrizione comando.
 * **Descrizione**, impostata nel campo Descrizione comando della tavolozza Accessibilità. Per la maggior parte degli oggetti, le descrizioni comandi vengono visualizzate in fase di esecuzione quando l&#39;utente passa il puntatore sull&#39;oggetto. Le descrizioni comandi vengono visualizzate per alcuni oggetti di sola lettura, ad esempio l&#39;oggetto codice a barre di un modulo cartaceo, solo quando è in uso un assistente vocale.
-* **Didascalia**, che farà in modo che Designer di LiveCycle utilizzi l&#39;etichetta (visiva) associata al campo modulo come testo per la lettura dello schermo.
+* **Didascalia**, che farà sì che LiveCycle Designer utilizzi l&#39;etichetta (visiva) associata al campo modulo come testo per la lettura dello schermo.
 * **Nome**, impostato nel campo Nome della scheda Associazione. Questo nome non può contenere spazi.
 * **Nessuno**. L&#39;oggetto non avrà un nome. Questa opzione non è mai consigliata per i controlli modulo.
 
 Quando si utilizza la tavolozza Accessibilità per l&#39;etichettatura del controllo modulo, tenere presente quanto segue:
 
-* Se la didascalia del controllo modulo descrive correttamente il controllo, sarà accessibile agli assistenti vocali. In questo caso, lasciare vuoti i campi Testo personalizzato e Descrizione comando nella tavolozza Accessibilità oppure impostare Priorità Reader su Didascalia.
-* Quando si esegue il targeting degli assistenti vocali, non ha senso specificare descrizioni di testo diverse per lo stesso controllo modulo, in quanto ne verrà utilizzato solo uno: il primo campo non vuoto nell’ordine di precedenza del Reader Schermo. Ad esempio, non c’è motivo di specificare sia Testo personalizzato che Testo descrizione comando per un assistente vocale.
+* Se la didascalia del controllo modulo descrive correttamente il controllo, sarà accessibile agli assistenti vocali. In questo caso, lasciare vuoti i campi Testo personalizzato e Descrizione comando nella tavolozza Accessibilità oppure impostare Precedenza Reader schermo su Didascalia.
+* Quando si esegue il targeting degli assistenti vocali, non ha senso specificare descrizioni di testo diverse per lo stesso controllo modulo, in quanto ne verrà utilizzato solo uno: il primo campo non vuoto nell’ordine di precedenza di Screen Reader. Ad esempio, non c’è motivo di specificare sia Testo personalizzato che Testo descrizione comando per un assistente vocale.
 * Per impostazione predefinita, l&#39;utilità di lettura dello schermo legge la didascalia se non viene specificato nulla nella casella Descrizione comando o nella casella Testo Reader schermo personalizzato.
 * Non utilizzare la tavolozza Accessibilità per creare descrizioni per campi o aree invisibili.
-* Se è necessario creare una descrizione utilizzando le opzioni Descrizione comando o Testo Reader schermo personalizzato, includere sempre la didascalia visibile nel modulo, tranne quando la didascalia visibile non è significativa, ad esempio quando la didascalia stessa viene abbreviata. Questo consente agli utenti di utilità di lettura dello schermo di comunicare in modo efficace con altri utenti in merito agli elementi dell’interfaccia utente. Questi diversi gruppi di utenti hanno difficoltà a identificare lo stesso elemento dell’interfaccia utente se il testo della didascalia è diverso dalla descrizione comando o dal testo del Reader di schermate personalizzate.
+* Se è necessario creare una descrizione utilizzando le opzioni Descrizione comando o Testo Reader schermo personalizzato, includere sempre la didascalia visibile nel modulo, tranne quando la didascalia visibile non ha alcun significato, ad esempio quando la didascalia stessa viene abbreviata. Questo consente agli utenti di utilità di lettura dello schermo di comunicare in modo efficace con altri utenti in merito agli elementi dell’interfaccia utente. Questi diversi gruppi di utenti hanno difficoltà a identificare lo stesso elemento dell’interfaccia utente se il testo della didascalia è diverso dalla descrizione o dal testo del Reader a schermo personalizzato.
 * Per le caselle di controllo e i controlli degli elenchi a discesa nelle celle di tabella, l&#39;assistente vocale annuncerà il testo specificato per l&#39;oggetto in termini di didascalia, descrizione comando o utilità di lettura dello schermo. Se si desidera utilizzare l&#39;intestazione di colonna per il testo alternativo per questi oggetti quando si posiziona in una tabella, non fornire didascalia, descrizione comando o testo personalizzato per la lettura dello schermo.
 * Se il controllo richiede istruzioni aggiuntive, assicurarsi che siano incluse anche nel testo alternativo. Includi informazioni vocali sufficienti per consentire agli utenti di sapere quale input è previsto e come completare correttamente il campo, ma non sopraffare gli utenti con informazioni ridondanti.
 * Non fornire informazioni non necessarie che descrivono come utilizzare i controlli; lascia che siano le tecnologie per l’accessibilità dell’utente a gestirli. Gli utenti possono configurare il livello di dettaglio in base al proprio livello di comfort.
 
 La Figura 4 mostra un esempio di campo di testo con una didascalia visiva che potrebbe non essere chiara per alcuni utenti di utilità per la lettura dello schermo. In questo esempio, l&#39;opzione Testo Reader schermo personalizzato è impostata su &quot;Numero di pagine&quot; e l&#39;opzione Precedenza Reader schermo è impostata su Testo personalizzato. Di conseguenza, il testo della didascalia effettiva (visiva) (&quot;# pagine&quot;) non verrà utilizzato dall’assistente vocale. In alternativa, è possibile specificare una descrizione comandi.
 
-![Specifica del testo di Reader per lo schermo personalizzato quando l&#39;etichetta visibile non è adeguata](/help/forms/using/assets/image-4.png)
+![Specifica di un testo Reader per schermo personalizzato quando l&#39;etichetta visibile non è adeguata](/help/forms/using/assets/image-4.png)
 
-Figura 4: **Specifica del testo di Reader dello schermo personalizzato quando l&#39;etichetta visibile è inadeguata**
+Figura 4: **Specifica di un testo Reader per schermo personalizzato quando l&#39;etichetta visibile non è adeguata**
 
 ### Pulsanti di scelta Etichettatura
 
@@ -203,12 +203,12 @@ Quando un utente con problemi di vista preme un tasto di scelta, l’assistente 
 * Etichetta significativa per ogni pulsante di opzione
 Per rendere accessibili i pulsanti di scelta utilizzando le didascalie dei pulsanti:
    1. Nella tavolozza Gerarchia, selezionare il gruppo di esclusione.
-   1. Fare clic sulla tavolozza Accesso facilitato e nella casella Testo Reader schermo personalizzato digitare il testo da leggere per il gruppo. Ad esempio, per un gruppo di esclusione che indica le opzioni di pagamento per varie carte di credito, digita Selezionare un metodo di pagamento.
+   1. Fare clic sulla tavolozza Accesso facilitato e nella casella di testo Schermo personalizzato Reader digitare il testo da leggere per il gruppo. Ad esempio, per un gruppo di esclusione che indica le opzioni di pagamento per varie carte di credito, digita Selezionare un metodo di pagamento.
    1. Se le didascalie di ciascun pulsante di opzione forniscono testo significativo se pronunciato da un assistente vocale, nella palette Oggetto selezionare la scheda Associazione e deselezionare Specifica valore elemento.
 
   Per rendere accessibili i pulsanti di scelta utilizzando un valore di elemento specificato:
    1. Nella tavolozza Gerarchia, selezionare il gruppo di esclusione.
-   1. Fare clic sulla tavolozza Accesso facilitato e nella casella Testo Reader schermo personalizzato digitare il testo da leggere per il gruppo. Ad esempio, per un gruppo di esclusione che indica le opzioni di pagamento per varie carte di credito, digita Selezionare un metodo di pagamento.
+   1. Fare clic sulla tavolozza Accesso facilitato e nella casella di testo Schermo personalizzato Reader digitare il testo da leggere per il gruppo. Ad esempio, per un gruppo di esclusione che indica le opzioni di pagamento per varie carte di credito, digita Selezionare un metodo di pagamento.
    1. Nella tavolozza Gerarchia selezionare il primo pulsante di opzione del gruppo.
    1. Nella tavolozza Oggetto fare clic sulla scheda Campo. Nell&#39;area Elemento fare doppio clic sull&#39;elemento e digitare un valore significativo per il pulsante di opzione selezionato. Ad esempio, per il primo pulsante di un gruppo di metodi di pagamento, è possibile digitare Contanti.
    1. Ripeti i passaggi 3 e 4 per ogni pulsante di opzione nel gruppo di esclusione.
@@ -246,7 +246,7 @@ Nella tabella seguente viene fornita una panoramica delle regole di posizionamen
 | Pulsante | La didascalia viene automaticamente posizionata sul pulsante e non deve essere posizionata manualmente. Assicurati che lo scopo del pulsante sia descritto correttamente dal testo della didascalia. |
 
 
-### Compilazione dinamica di una descrizione comando o di un testo del Reader di schermate personalizzato
+### Compilazione dinamica di una descrizione comando o di un testo Reader con schermo personalizzato
 
 È inoltre possibile popolare dinamicamente un&#39;alternativa testuale di un controllo modulo, ad esempio la descrizione comando, con un valore proveniente da un&#39;origine dati. Ad esempio, è possibile visualizzare una descrizione personalizzata per un oggetto in francese.
 Per una descrizione comandi dello schema a cui ci si connette è possibile definire quanto segue:
@@ -274,7 +274,7 @@ Nel file di dati a cui si fa riferimento, per una descrizione comando potrebbe e
 1. Fare clic sul triangolo accanto alla casella Associazione e selezionare un&#39;associazione. Ad esempio, seleziona descrizione > @dp_tt.
 
 Nella casella Associazione viene visualizzata la stringa seguente: $record.tooltip.dp_tt Suggerimento: è possibile digitare questa stringa nella casella Elementi anziché selezionarla.
-1. Fare clic su OK.
+1. Fai clic su OK.
 1. Visualizzare il modulo nella scheda Anteprima PDF.
 
 ### Inserimento di testo di collegamento
@@ -316,7 +316,7 @@ L&#39;ordine di lettura del modulo include tutti gli oggetti statici, ad esempio
 >[!NOTE]
 > In molti casi, l&#39;ordine di tabulazione è strettamente correlato all&#39;ordine di lettura. Per semplicità, in questa guida verrà utilizzato il termine &quot;ordine di tabulazione&quot; al posto di &quot;ordine di tabulazione o di lettura&quot;.
 
-### Ordine di tabulazione predefinito nei moduli Designer di LiveCycle
+### Ordine di tabulazione predefinito nei Designer Form LiveCycle
 
 L&#39;ordine di tabulazione predefinito viene creato automaticamente quando si salva il modulo come PDF con tag. Inizialmente, l&#39;ordine di tabulazione in un modulo viene determinato in base alla posizione locale degli oggetti utilizzando le regole riportate di seguito.
 
@@ -440,7 +440,7 @@ Se si decide di non utilizzare l&#39;ordine di tabulazione personalizzato nel mo
 
 Gli utenti devono essere in grado di compilare completamente il modulo utilizzando solo la tastiera o un dispositivo di input alternativo equivalente. Gli utenti con mobilità ridotta o problemi di vista potrebbero non avere altra scelta se non quella di utilizzare la tastiera, e molti utenti che possono utilizzare un mouse preferiscono semplicemente l&#39;input da tastiera. Consentendo l&#39;utilizzo di diversi metodi di input, non solo si creano moduli accessibili, ma si creano anche moduli più adatti alle preferenze di tutti gli utenti.
 
-In Designer di LiveCycle, il modo più semplice per garantire l&#39;accesso da tastiera ai controlli consiste nell&#39;utilizzare i controlli elencati nella scheda Comune della tavolozza Libreria oggetti. Per impostazione predefinita, questi controlli rispondono sia all&#39;input del mouse che a quello della tastiera. Per ulteriori informazioni, vedere la sezione 2.3 Scegliere i controlli appropriati in questa guida.
+In LiveCycle Designer, il modo più semplice per garantire l&#39;accesso da tastiera ai controlli consiste nell&#39;utilizzare i controlli elencati nella scheda Comune della tavolozza Libreria oggetti. Per impostazione predefinita, questi controlli rispondono sia all&#39;input del mouse che a quello della tastiera. Per ulteriori informazioni, vedere la sezione 2.3 Scegliere i controlli appropriati in questa guida.
 
 Un altro aspetto importante dell&#39;accessibilità della tastiera è garantire che ogni elemento interattivo sia incluso nell&#39;ordine di tabulazione del modulo. In questo modo l&#39;utente può spostare il cursore avanti e indietro nel modulo utilizzando i tasti TAB e MAIUSC+TAB. Assicurarsi di impostare un ordine di tabulazione logico che includa tutti i campi e i pulsanti. Per ulteriori informazioni, vedere la sezione 2.6 Verificare che l&#39;ordine di lettura e di tabulazione sia corretto in questa guida.
 
@@ -492,11 +492,11 @@ Figura 14: **Modulo con contrasto cromatico insufficiente**
 
 Si consiglia vivamente di utilizzare il carattere e i colori di sfondo predefiniti: il nero su sfondo bianco. Se è necessario modificare questi colori predefiniti, assicurarsi di scegliere una combinazione appropriata di colori ad alto contrasto; utilizzare un colore di primo piano scuro su uno sfondo chiaro o viceversa. Per essere certi, usate uno strumento (come WAT-C Color Contrast Analyzer) per verificare che il contrasto sia sufficiente.
 
-Adobe Reader e Adobe Acrobat consentono agli utenti di specificare se i colori devono essere sostituiti per soddisfare le loro esigenze visive. Gli utenti possono specificare il proprio schema di contrasto o scegliere di utilizzare uno schema fornito dal sistema operativo. Inoltre, Adobe Reader e Adobe Acrobat dispongono di uno schema di contrasto elevato che può essere abilitato. Affinché queste opzioni abbiano successo, l&#39;approccio migliore è quello di utilizzare sempre i colori predefiniti.
+Adobe Reader e Adobe Acrobat consentono agli utenti di specificare se i colori devono essere sostituiti per soddisfare le proprie esigenze visive. Gli utenti possono specificare il proprio schema di contrasto o scegliere di utilizzare uno schema fornito dal sistema operativo. Inoltre, Adobe Reader e Adobe Acrobat dispongono di uno schema ad alto contrasto che potrebbe essere abilitato. Affinché queste opzioni abbiano successo, l&#39;approccio migliore è quello di utilizzare sempre i colori predefiniti.
 
 Durante la progettazione del modulo, verificarlo frequentemente utilizzando una combinazione di colori simile a quella utilizzata da molti utenti con problemi di vista per completare il modulo. Questa procedura consente di individuare e correggere i problemi nelle prime fasi del processo di progettazione.
 
-Recommendations per l&#39;utilizzo dei colori:
+Raccomandazioni per l’utilizzo dei colori:
 * Assicurati che non vadano perse informazioni se il colore semantico non è visibile.
 * Se non è possibile utilizzare i colori predefiniti, verificare che i colori siano a contrasto elevato, ad esempio il nero su uno sfondo chiaro (bianco). Gli utenti ipovedenti in genere richiedono un elevato contrasto tra il testo e il relativo sfondo per poterlo leggere.
 * Verificare la leggibilità dei moduli passando a uno schermo a contrasto elevato, sia in Windows che in Adobe Reader o Adobe Acrobat. Mac OSX offre solo un filtro semplice in scala di grigi per un contrasto elevato, quindi non è sufficiente per il test.
@@ -512,7 +512,7 @@ Recommendations per l&#39;utilizzo dei colori:
 * WCAG 2.0
    * 1.4.1 Uso del colore: il colore non è utilizzato come unico mezzo visivo per trasmettere informazioni, indicare un&#39;azione, richiedere una risposta o distinguere un elemento visivo. (Livello A)
    * 1.4.3 Contrasto (minimo): la presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 4,5:1, con le seguenti eccezioni: (livello AA)
-   * 1.4.6 Contrasto (ottimizzato): la presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 7:1, con le seguenti eccezioni: (Livello AAA)
+   * 1.4.6 Contrasto (ottimizzato): la presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 7:1, con le seguenti eccezioni: (livello AAA)
 
 
 ## Fornire celle di intestazione per le tabelle{#provide-heading-cells}
@@ -583,7 +583,7 @@ Quando una forma diventa lunga e complessa, la sua facilità d’uso sarà notev
 * Ogni intestazione indica all’utente di utilità di lettura dello schermo cosa ci si può aspettare dalla sezione che segue l’intestazione.
 * Le utilità per la lettura dello schermo consentono di spostarsi rapidamente da un titolo all&#39;altro del modulo e di accedere a un elenco di titoli che fornisce una panoramica della struttura del documento e consente una navigazione rapida.
 
-La disponibilità di meccanismi che consentono agli utenti di passare ad altre aree del modulo può rendere il modulo più pratico. È possibile aggiungere una struttura di intestazione al modulo utilizzando la tavolozza Accessibilità di LiveCycle Designer.
+La disponibilità di meccanismi che consentono agli utenti di passare ad altre aree del modulo può rendere il modulo più pratico. Puoi aggiungere una struttura di intestazione al modulo utilizzando la palette Accessibilità in LiveCycle Designer.
 
 ### Meccanismi di salto
 
@@ -630,7 +630,7 @@ Assicurati sempre che l’ordine dei livelli di intestazione sia logico. Ad esem
 
 A volte può essere utile aggiungere il contenuto dell’elenco al modulo. Gli elenchi sono utili per raggruppare gli elementi correlati e consentono agli utenti di utilità di lettura dello schermo di sapere quanti elementi sono presenti in un elenco e di spostarsi rapidamente oltre tale elenco. La corretta marcatura degli elenchi rende più chiara la struttura del modulo agli utenti di utilità di lettura dello schermo.
 
-In LiveCycle Designer è possibile creare elenchi utilizzando sottomaschere con i seguenti passaggi:
+In LiveCycle Designer puoi creare elenchi utilizzando sottomaschere con i seguenti passaggi:
 
 1. Selezionare un sottomodulo contenente il contenuto da contrassegnare come voci di elenco.
 1. Nella tavolozza Accessibilità selezionare Elenco come Ruolo.
@@ -695,7 +695,7 @@ Per i file multimediali basati su Flash, consultare [link](/help/forms/using/bes
 * Sezione 508 §1194.22
    * (b) Le alternative equivalenti per qualsiasi presentazione multimediale sono sincronizzate con la presentazione.
 * WCAG 1.0
-   * 1.1 Fornisci un equivalente testuale per ogni elemento non testuale (ad esempio, tramite &quot;alt&quot;, &quot;longdesc&quot; o nel contenuto dell’elemento). Ciò include: immagini, rappresentazioni grafiche di testo (compresi i simboli), aree delle mappe immagine, animazioni (ad esempio, GIF animati), applet e oggetti programmatici, arte ascii, fotogrammi, script, immagini utilizzate come punti elenco, distanziatori, pulsanti grafici, suoni (riprodotti con o senza interazione dell’utente), file audio autonomi, tracce audio di video e video (P1).
+   * 1.1 Fornisci un equivalente testuale per ogni elemento non testuale (ad esempio, tramite &quot;alt&quot;, &quot;longdesc&quot; o nel contenuto dell’elemento). Ciò include: immagini, rappresentazioni grafiche di testo (compresi i simboli), aree delle mappe immagine, animazioni (ad esempio, GIF animate), applet e oggetti programmatici, arte ascii, fotogrammi, script, immagini utilizzate come punti elenco, distanziatori, pulsanti grafici, suoni (riprodotti con o senza interazione dell’utente), file audio autonomi, tracce audio di video e video (P1).
    * 1.3 Fino a quando gli agenti utente non possono leggere automaticamente ad alta voce l&#39;equivalente testuale di una traccia visiva, fornire una descrizione uditiva delle informazioni importanti della traccia visiva di una presentazione multimediale (P1).
    * 1.4 Per qualsiasi presentazione multimediale basata sul tempo (ad esempio, un filmato o un&#39;animazione), sincronizzare alternative equivalenti (ad esempio, didascalie o descrizioni acustiche della traccia visiva) con la presentazione (P1).
 * WCAG 2.0
@@ -715,7 +715,7 @@ Il contenuto del modulo verrà letto da tecnologie per l’accessibilità che ut
 
 Se il testo (o testo alternativo) nei moduli viene presentato in più lingue, è necessario identificare le aree del modulo in cui viene effettuato un passaggio da una lingua all&#39;altra.
 
-In Designer di LiveCycle, l&#39;impostazione della lingua primaria viene eseguita impostando la proprietà Locale della maschera e la proprietà Locale della sottomaschera di livello superiore. Per identificare le modifiche apportate alla lingua principale, modificare la proprietà Locale per qualsiasi oggetto che utilizza una lingua diversa dalla lingua del modulo.
+In LiveCycle Designer, l&#39;impostazione della lingua primaria viene eseguita impostando la proprietà Locale della maschera e la proprietà Locale della sottomaschera di livello superiore. Per identificare le modifiche apportate alla lingua principale, modificare la proprietà Locale per qualsiasi oggetto che utilizza una lingua diversa dalla lingua del modulo.
 
 Per impostare la proprietà Locale di una maschera:
 1. Scegliete File > Proprietà modulo e selezionate la scheda Default

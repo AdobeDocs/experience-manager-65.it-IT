@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+source-git-commit: a750a6093ae8ba6b43c46af52077ed3773d59a20
 workflow-type: tm+mt
-source-wordcount: '9732'
+source-wordcount: '9595'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 5%
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -641,26 +641,26 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
 
 ### Problemi noti per AEM Forms {#known-issues-aem-forms-6524}
 
+* **FORMS-14521** Se un utente tenta di visualizzare in anteprima una bozza di lettera con dati XML salvati, si blocca nello stato `Loading` per alcune lettere specifiche.
+* **FORMS-16603** Nell&#39;anteprima di stampa dell&#39;interfaccia utente di Interactive Communications Agent alcuni valori calcolati non vengono visualizzati correttamente.
+* **FORMS-15681** Quando la lettera viene visualizzata nell&#39;anteprima di stampa, il contenuto cambia. In altre parole, alcuni spazi scompaiono e alcune lettere vengono sostituite con `x`.
+* **FORMS-15428**: dopo l&#39;aggiornamento ad AEM Forms Service Pack 20 (6.5.20.0) con il componente aggiuntivo Forms, le configurazioni basate sul servizio Adobe Analytics Cloud legacy che utilizzano l&#39;autenticazione basata sulle credenziali cessano di funzionare. Questo problema impediva la corretta esecuzione delle regole di analisi.
+* **FORMS-16557** Nell&#39;anteprima di stampa dell&#39;interfaccia utente di Interactive Communications Agent, il simbolo di valuta (ad esempio il simbolo del dollaro $) viene visualizzato in modo incoerente per tutti i valori di campo. Viene visualizzato per valori fino a 999 ma non per valori di 1000 e superiori.
+* **FORMS-16575** Eventuali modifiche all&#39;XDP dei frammenti di layout nidificati in una comunicazione interattiva non vengono riportate nell&#39;editor IC.
+* **FORMS-21378** Quando la convalida lato server (SSV) è abilitata, l&#39;invio del modulo potrebbe non riuscire. Se riscontri questo problema, contatta il supporto Adobe per assistenza.
+* **FORMS-23722** (file allegati mancanti in Assegna attività): quando un modulo con un campo **File allegato** che utilizza bindref viene inviato a un flusso di lavoro di AEM che utilizza un passaggio **Assegna attività**, gli allegati non vengono visualizzati quando l&#39;attività viene aperta dalla Posta in arrivo. I file vengono salvati correttamente nell’archivio, ma l’interfaccia utente del passaggio Assegna attività non riesce a visualizzare gli allegati.
+
+#### Problemi relativi agli hotfix disponibili {#aem-forms-issues-with-hotfixes}
+
 >[!NOTE]
 >
 >Evitare l&#39;aggiornamento al Service Pack 6.5.24.0 per i problemi senza un hotfix disponibile. Potrebbe causare errori imprevisti. Eseguire l&#39;aggiornamento al Service Pack 6.5.24.0 solo dopo il rilascio degli hotfix richiesti.
 
-#### Problemi relativi agli hotfix disponibili {#aem-forms-issues-with-hotfixes}
-
 Nei seguenti problemi è disponibile un hotfix per il download e l’installazione. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere questi problemi:
-
-* **FORMS-20203**: quando un utente aggiorna il framework Struts dalla versione 2.5.x alla versione 6.x, nell&#39;interfaccia utente Criteri di AEM Forms non vengono visualizzate tutte le configurazioni, ad esempio l&#39;opzione per aggiungere una filigrana.
-
-* **FORMS-20360**: dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.24.0, il servizio di conversione ImageToPDF non riesce e viene visualizzato il messaggio di errore:
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
-
-* **FORMS-20478**: durante il tentativo di convertire i file TIFF di tipo 7/8 in PDF, il processo di conversione non riesce e viene visualizzato l&#39;errore &quot;Conversione ALC-PDG-001-000-Image2Pdf non riuscita a causa di: com/sun/image/codec/jpeg/JPEGCodec&quot; e &quot;ALC-PDG-016-003-Si è verificato un errore sconosciuto/imprevisto durante la post-elaborazione di PDF.&quot; Il sistema tenta di riprovare utilizzando il decodificatore TIFF TM ImageIO, ma alla fine non riesce a completare il processo.
-
-* **FORMS-14521**: se un utente tenta di visualizzare in anteprima una bozza di lettera con dati XML salvati, si blocca nello stato `Loading` per alcune lettere specifiche.
 
 * AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x per il componente Forms. Questo aggiornamento consente di apportare le modifiche di avvio precedentemente mancate non incluse in SP24. Il supporto è stato aggiunto tramite un [Hotfix](/help/release-notes/aem-forms-hotfix.md) che puoi scaricare e installare per aggiungere il supporto per la versione più recente di Struts.
 
-* Dopo aver installato AEM Forms JEE Service Pack 21 (6.5.21.0), se trovi voci duplicate dei file jar Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` nella cartella `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), effettua le seguenti operazioni per risolvere il problema:
+* **FORMS-14926** Dopo aver installato AEM Forms JEE Service Pack 21 (6.5.21.0), se trovi voci duplicate dei file JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` nella cartella `<AEM_Forms_Installation>/lib/caching/lib`, effettua le seguenti operazioni per risolvere il problema:
 
    1. Fermate i localizzatori, se sono in esecuzione.
    2. Arresta il server AEM.
@@ -669,32 +669,14 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
    5. Apri il prompt dei comandi in modalità amministratore.
    6. Installare la patch Geode utilizzando il file `geode-*-1.15.1.2.jar`.
 
-* Quando si esegue l’aggiornamento da AEM 6.5 Forms Service Pack 18 o 19 a Service Pack 20 o 21, si verifica un errore di compilazione JSP. Questo errore impediva loro di aprire o creare moduli adattivi. Inoltre, ha causato problemi con altre interfacce AEM. Tali interfacce includevano l’Editor pagina, l’interfaccia utente di AEM Forms, l’Editor flusso di lavoro e l’interfaccia utente Panoramica sistema. (FORMS-15256)
+* **FORMS-15256** Quando gli utenti sono stati aggiornati da AEM 6.5 Forms Service Pack 18 o 19 al Service Pack 20 o 21, si è verificato un errore di compilazione JSP. Questo errore impediva loro di aprire o creare moduli adattivi. Inoltre, ha causato problemi con altre interfacce AEM. Tali interfacce includevano l’Editor pagina, l’interfaccia utente di AEM Forms, l’Editor flusso di lavoro e l’interfaccia utente Panoramica sistema.
 
   In caso di problemi di questo tipo, effettua le seguenti operazioni per risolverli:
    1. Passare alla directory `/libs/fd/aemforms/install/` in CRXDE.
    2. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Riavvia il server AEM.
 
-* Nell’anteprima di stampa dell’interfaccia utente di Interactive Communications Agent, il simbolo di valuta (ad esempio il simbolo del dollaro $) viene visualizzato in modo incoerente per tutti i valori dei campi. Viene visualizzato per valori fino a 999 ma non per valori di 1000 e superiori. (FORMS-16557)
-* Eventuali modifiche apportate all’XDP dei frammenti di layout nidificati in una comunicazione interattiva non vengono riportate nell’editor IC. (FORMS-16575)
-* Nell’anteprima di stampa dell’interfaccia utente di Interactive Communications Agent, alcuni valori calcolati non vengono visualizzati correttamente. (FORMS-16603)
-* Quando la lettera viene visualizzata in Anteprima di stampa, il contenuto viene modificato. In altre parole, alcuni spazi scompaiono e alcune lettere vengono sostituite con `x`. (FORMS-15681)
-* **FORMS-15428**: dopo l&#39;aggiornamento ad AEM Forms Service Pack 20 (6.5.20.0) con il componente aggiuntivo Forms, le configurazioni basate sul servizio Adobe Analytics Cloud legacy che utilizzano l&#39;autenticazione basata sulle credenziali cessano di funzionare. Questo problema impediva la corretta esecuzione delle regole di analisi.
-
-* Quando un utente configura un&#39;istanza WebLogic 14c, il servizio PDFG in AEM Forms Service Pack 21 (6.5.21.0) su JEE in esecuzione su JBoss® non riesce a causa di conflitti del caricatore di classi che interessano la libreria SLF4J. L’errore viene visualizzato come segue (CQDOC-22178):
-
-  ```java
-  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
-  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
-  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
-  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
-  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
-  ```
-
-* **FORMS-21378**: se la convalida lato server (SSV) è abilitata, l&#39;invio del modulo potrebbe non riuscire. Se riscontri questo problema, contatta il supporto Adobe per assistenza.
-
-* **FORMS-23703**: quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
+* **FORMS-23703** Se la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
 
 * L’autenticazione dei connettori del modello dati modulo potrebbe non riuscire perché le parole chiave e il pattern regex richiesti non sono consentiti per impostazione predefinita. Per risolvere il problema, aggiungere quanto segue tramite Configuration Manager (`/system/console/configmgr`):
 
@@ -703,15 +685,13 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
-
-* **FORMS-23722** (file allegati mancanti in Assegna attività): quando un modulo con un campo **File allegato** viene inviato a un flusso di lavoro di AEM che utilizza un passaggio **Assegna attività**, gli allegati non vengono visualizzati quando l&#39;attività viene aperta dalla Posta in arrivo. I file vengono salvati correttamente nell’archivio e sono visibili in CRX; solo l’interfaccia utente del passaggio Assegna attività non li mostra.
-
-* **FORMS-23717** Nella ricerca del modello dati modulo, un tag HTML viene visualizzato nell&#39;interfaccia utente anche quando non è presente un&#39;entità rilevante.
+* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Dopo l&#39;aggiornamento a **AEM Forms6.5.24.0**, `server.log` e `error.log` possono essere inondati da messaggi di avvertenza ripetuti, ad esempio *Creazione della factory del parser protetto non riuscita* o *L&#39;attributo di sicurezza ... non è supportato*. I registri possono crescere di circa **5-10 righe al secondo** (centinaia di MB all&#39;ora), che possono riempire il disco e bloccare il rollout di produzione. **Correzione:** inclusa in AEM Forms **6.5.25.0**. **Fino ad allora:**
 
   Per ridurre il volume del log, impostare il livello di log per `com.adobe.util.XMLSecurityUtil` su `ERROR` nella configurazione del server applicazioni o tramite l&#39;argomento JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Questo nasconde solo i messaggi e non corregge la causa sottostante.
+
+* **FORMS-23875** Nella ricerca del modello dati modulo, un tag HTML viene visualizzato nell&#39;interfaccia utente anche quando non è presente un&#39;entità rilevante. Per risolvere il problema, scaricare e installare l&#39;aggiornamento rapido da [il collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
