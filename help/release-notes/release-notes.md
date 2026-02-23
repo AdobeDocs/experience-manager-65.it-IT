@@ -685,7 +685,7 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
    2. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Riavvia il server AEM.
 
-* **FORMS-23703** Se la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
+* **FORMS-23703** Se la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
 
 * **GRANITE-63681** I connettori del modello dati modulo potrebbero non riuscire ad eseguire l&#39;autenticazione perché le parole chiave e il pattern regex richiesti non sono consentiti per impostazione predefinita. Per risolvere il problema, scarica e installa l&#39;aggiornamento rapido da [link](/help/release-notes/aem-forms-hotfix.md).
 
@@ -696,7 +696,7 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
-* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Dopo l&#39;aggiornamento a **AEM Forms6.5.24.0**, `server.log` e `error.log` possono essere inondati da messaggi di avvertenza ripetuti, ad esempio *Creazione della factory del parser protetto non riuscita* o *L&#39;attributo di sicurezza ... non è supportato*. I registri possono crescere di circa **5-10 righe al secondo** (centinaia di MB all&#39;ora), che possono riempire il disco e bloccare il rollout di produzione. **Correzione:** inclusa in AEM Forms **6.5.25.0**. **Fino ad allora:**
 
