@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7fdfcc9964bccfea03304e6cae3b5569421720ed
+source-git-commit: 3e1f704d1d0e64deefe157338ab5081521a45c3c
 workflow-type: tm+mt
-source-wordcount: '9628'
+source-wordcount: '9855'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 5%
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -654,9 +654,12 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
 * **FORMS-16557** Nell&#39;anteprima di stampa dell&#39;interfaccia utente di Interactive Communications Agent, il simbolo di valuta (ad esempio il simbolo del dollaro $) viene visualizzato in modo incoerente per tutti i valori di campo. Viene visualizzato per valori fino a 999 ma non per valori di 1000 e superiori.
 * **FORMS-16575** Eventuali modifiche all&#39;XDP dei frammenti di layout nidificati in una comunicazione interattiva non vengono riportate nell&#39;editor IC.
 * **FORMS-21378** Quando la convalida lato server (SSV) è abilitata, l&#39;invio del modulo potrebbe non riuscire. Se riscontri questo problema, contatta il supporto Adobe per assistenza.
+
 * **FORMS-23722** (file allegati mancanti in Assegna attività): quando un modulo con un campo **File allegato** che utilizza bindref viene inviato a un flusso di lavoro di AEM che utilizza un passaggio **Assegna attività**, gli allegati non vengono visualizzati quando l&#39;attività viene aperta dalla Posta in arrivo. I file vengono salvati correttamente nell’archivio, ma l’interfaccia utente del passaggio Assegna attività non riesce a visualizzare gli allegati.
 
-#### Problemi relativi agli hotfix disponibili {#aem-forms-issues-with-hotfixes}
+* **FORMS-23802** (le funzioni personalizzate non vengono caricate quando il modulo si trova nella pagina Sites): le funzioni personalizzate non funzionano in anteprima o in pubblicazione quando il modulo adattivo è incorporato in una pagina Sites e la versione della libreria aem-forms-core-component è inferiore a 1.1.76. Nei registri potrebbe essere visualizzato un errore come `InvalidFormContainerException: No form container found`. Per risolvere il problema, [scarica e installa l&#39;aggiornamento rapido](/help/release-notes/aem-forms-hotfix.md) per AEM Forms SP24 (AddOn 6.0.1454).
+
+#### Problemi noti con gli hotfix disponibili {#aem-forms-issues-with-hotfixes}
 
 <!-- 
 >[!NOTE]
@@ -665,7 +668,15 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
 
 Nei seguenti problemi è disponibile un hotfix per il download e l’installazione. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere questi problemi:
 
-<!--* **FORMS-23881** On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+<!--* FORMS-23881 On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+
+* **FORMS-23789** (solo AEM Forms su JEE): gli utenti hanno riscontrato problemi con Log4j in AEM Forms su JEE SP24, che hanno causato interruzioni nella registrazione e nel monitoraggio per i clienti aziendali. Per risolvere il problema, [scarica e installa l&#39;hotfix](/help/release-notes/aem-forms-hotfix.md) per AEM Forms su JEE Service Pack 6.5.24.0.
+
+* **Le funzioni personalizzate di FORMS-23802** non vengono caricate in anteprima o pubblicate quando il modulo si trova in una pagina Sites con una versione precedente di aem-forms-core-component (&lt;1.1.76). Per risolvere il problema, installare l&#39;aggiornamento rapido [AEM Forms AddOn 6.0.1454](/help/release-notes/aem-forms-hotfix.md) per SP24.
+
+* **FORMS-23789** (solo AEM Forms su JEE): gli utenti hanno riscontrato problemi con Log4j in AEM Forms su JEE SP24, che hanno causato interruzioni nella registrazione e nel monitoraggio per i clienti aziendali. Per risolvere il problema, [scarica e installa l&#39;hotfix](/help/release-notes/aem-forms-hotfix.md) per AEM Forms su JEE Service Pack 6.5.24.0.
+
+* **Le funzioni personalizzate di FORMS-23802** non vengono caricate in anteprima o pubblicate quando il modulo si trova in una pagina Sites con una versione precedente di aem-forms-core-component (&lt;1.1.76). Per risolvere il problema, installare l&#39;aggiornamento rapido [AEM Forms AddOn 6.0.1454](/help/release-notes/aem-forms-hotfix.md) per SP24.
 
 * AEM Forms ora include un aggiornamento della versione Struts da 2.5.33 a 6.x per il componente Forms. Questo aggiornamento consente di apportare le modifiche di avvio precedentemente mancate non incluse in SP24. Il supporto è stato aggiunto tramite un [Hotfix](/help/release-notes/aem-forms-hotfix.md) che puoi scaricare e installare per aggiungere il supporto per la versione più recente di Struts.
 
@@ -685,7 +696,7 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
    2. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Riavvia il server AEM.
 
-* **FORMS-23703** Se la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
+* **FORMS-23703** Se la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
 
 * **GRANITE-63681** I connettori del modello dati modulo potrebbero non riuscire ad eseguire l&#39;autenticazione perché le parole chiave e il pattern regex richiesti non sono consentiti per impostazione predefinita. Per risolvere il problema, scarica e installa l&#39;aggiornamento rapido da [link](/help/release-notes/aem-forms-hotfix.md).
 
@@ -696,11 +707,11 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
-* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
-* **FORMS-23717** Dopo l&#39;aggiornamento a **AEM Forms6.5.24.0**, `server.log` e `error.log` possono essere inondati da messaggi di avvertenza ripetuti, ad esempio *Creazione della factory del parser protetto non riuscita* o *L&#39;attributo di sicurezza ... non è supportato*. I registri possono crescere di circa **5-10 righe al secondo** (centinaia di MB all&#39;ora), che possono riempire il disco e bloccare il rollout di produzione. **Correzione:** inclusa in AEM Forms **6.5.25.0**. **Fino ad allora:**
+* **FORMS-23717** Dopo l&#39;aggiornamento a **AEM Forms6.5.24.0**, `server.log` e `error.log` possono essere inondati da messaggi di avvertenza ripetuti, ad esempio *Creazione della factory del parser protetto non riuscita* o *L&#39;attributo di sicurezza ... non è supportato*. I registri possono crescere di circa **5-10 righe al secondo** (centinaia di MB all&#39;ora), che possono riempire il disco e bloccare il rollout di produzione.
 
-  Per ridurre il volume del log, impostare il livello di log per `com.adobe.util.XMLSecurityUtil` su `ERROR` nella configurazione del server applicazioni o tramite l&#39;argomento JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Questo nasconde solo i messaggi e non corregge la causa sottostante.
+Per ridurre il volume del log, impostare il livello di log per `com.adobe.util.XMLSecurityUtil` su `ERROR` nella configurazione del server applicazioni o tramite l&#39;argomento JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Questo nasconde solo i messaggi e non corregge la causa sottostante.
 
 * **FORMS-23875** Nella ricerca del modello dati modulo, un tag HTML viene visualizzato nell&#39;interfaccia utente anche quando non è presente un&#39;entità rilevante. Per risolvere il problema, scaricare e installare l&#39;aggiornamento rapido da [il collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
