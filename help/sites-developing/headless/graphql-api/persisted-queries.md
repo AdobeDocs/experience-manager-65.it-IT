@@ -5,7 +5,7 @@ exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 85%
@@ -71,7 +71,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -117,7 +117,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -143,7 +143,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
@@ -156,7 +156,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
        -d \
@@ -169,7 +169,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
        -d \
@@ -224,7 +224,7 @@ dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query p
 
 ## Utilizzo delle variabili di query {#query-variables}
 
-Le variabili di query possono essere utilizzate con le query persistenti. Le variabili di query aggiunte alla richiesta devono essere precedute da un punto e virgola (`;`) e devono utilizzare il nome e il valore della variabile. Se si utilizzano più variabili, queste devono essere separate da un punto e virgola.
+Le variabili di query possono essere utilizzate con le query persistenti. Le variabili di query vengono aggiunte alla richiesta con un prefisso composto da punto e virgola (`;`) e il nome e il valore della variabile. Se si utilizzano più variabili, queste devono essere separate da un punto e virgola.
 
 Il pattern si presenta come segue:
 
@@ -265,7 +265,7 @@ Tieni presente che `%3B` è la codifica UTF-8 per `;` e `%3D` è la codifica per
 
 ## Memorizzazione in cache delle query persistenti {#caching-persisted-queries}
 
-Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache a livello di [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
+Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache a livello di [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) e di rete per la consegna dei contenuti (CDN), migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
 
 Per impostazione predefinita, AEM annullerà la cache basata sulla definizione TTL (Time To Live). Le definizioni TTL possono essere definite dai seguenti parametri. Questi parametri sono accessibili con vari mezzi, con variazioni dei nomi in base al meccanismo utilizzato:
 
