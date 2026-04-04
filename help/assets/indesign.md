@@ -25,7 +25,7 @@ Per caricare completamente i file in [!DNL Experience Manager Assets] che hai cr
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un’interfaccia al suo motore ExtendScript. Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
+>[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/it/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/it/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un’interfaccia al suo motore ExtendScript. Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
 
 ## Come funziona l’estrazione {#how-the-extraction-works}
 
@@ -239,4 +239,4 @@ Per [!DNL InDesign Server] 10.0 o versione successiva, eseguire la procedura seg
 
 >[!MORELIKETHIS]
 >
->* [Informazioni su Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [Informazioni su Adobe InDesign Server](https://www.adobe.com/it/products/indesignserver/faq.html)

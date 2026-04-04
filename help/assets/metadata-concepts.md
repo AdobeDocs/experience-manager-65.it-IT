@@ -71,7 +71,7 @@ Esistono diversi modi per incorporare i metadati nei file. È disponibile il sup
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre aziende supportano lo standard XMP in quanto fornisce un modello di contenuti avanzati. Gli utenti dello standard XMP e di [!DNL Experience Manager Assets] dispongono di una piattaforma potente su cui basarsi. Per ulteriori informazioni, vedere [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre aziende supportano lo standard XMP in quanto fornisce un modello di contenuti avanzati. Gli utenti dello standard XMP e di [!DNL Experience Manager Assets] dispongono di una piattaforma potente su cui basarsi. Per ulteriori informazioni, vedere [XMP](https://www.adobe.com/it/products/xmp.html).
 
 ### ID3 {#id}
 

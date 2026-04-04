@@ -235,7 +235,7 @@ La descrizione dettagliata delle modalità di creazione di video con descrizione
 * [Come soddisfare i criteri di successo 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/it/products/encore.html) - a DVD authoring software tool
 -->
 
 ### Sottotitoli (in tempo reale) (1.2.4)    {#captions-live}
