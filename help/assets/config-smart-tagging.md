@@ -71,7 +71,7 @@ Per configurare il Servizio di contenuti avanzati, segui questi passaggi di live
 
 1. Crea un&#39;integrazione in [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Crea una configurazione dell&#39;account tecnico IMS [](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
+1. Crea una configurazione dell&#39;account tecnico IMS [&#128279;](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
 
 1. [Configura il Servizio di contenuti avanzati](#configure-smart-content-service).
 
