@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: a3c0010e5eaef7fc516d49e410bba1c3b3f9e4b9
 workflow-type: tm+mt
-source-wordcount: '2130'
+source-wordcount: '2121'
 ht-degree: 14%
 
 ---
@@ -71,7 +71,7 @@ Per configurare il Servizio di contenuti avanzati, segui questi passaggi di live
 
 1. Crea un&#39;integrazione in [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Crea una configurazione dell&#39;account tecnico IMS [&#128279;](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
+1. Crea una configurazione dell&#39;account tecnico IMS [](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
 
 1. [Configura il Servizio di contenuti avanzati](#configure-smart-content-service).
 
@@ -151,7 +151,7 @@ Devi creare una configurazione dell’account tecnico IMS seguendo questi passag
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -172,11 +172,6 @@ Per configurare l&#39;integrazione, utilizzare i valori dei campi [!UICONTROL ID
    | Configurazione Adobe IMS associata | Scegli una configurazione dal menu a discesa. |
    | URL del servizio | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Ad esempio, `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea` o `apac` come aree in cui è ospitata l&#39;istanza di authoring di Experience Manager. |
 
-   >[!NOTE]
-   >
-   >Se il provisioning del servizio gestito di Experience Manager è stato eseguito prima del 1° settembre 2022, utilizza il seguente URL del servizio:
-   >`https://mc.adobe.io/marketingcloud/smartcontent`
-
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
 ### Convalidare la configurazione {#validate-the-configuration}
@@ -187,8 +182,7 @@ Dopo aver completato la configurazione, puoi utilizzare un MBean JMX per convali
 
 1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]** per aprire la console OSGi. Fai clic su **[!UICONTROL Principale] > [!UICONTROL JMX]**.
 
-<!--
-1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
+1. Fai clic su `com.day.cq.dam.similaritysearch.internal.impl`. Apre **[!UICONTROL Attività varie di SimilaritySearch]**.—>
 
 1. Fai clic su `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
 
@@ -231,7 +225,7 @@ A public certificate lets you authenticate your profile on Adobe Developer Conso
 
    >[!NOTE]
    >
-   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com/it-it](https://status.adobe.com/it-it).
+   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com](https://status.adobe.com).
 
 1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
 
@@ -291,7 +285,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -482,4 +476,4 @@ Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag 
 >
 >* [Panoramica e formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/metadata/image-smart-tags)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)
