@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2721'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,6 @@ Il writeback di XMP aggiorna la risorsa originale ogni volta che i metadati veng
 
 * La risorsa stessa viene modificata
 * Viene creata una versione della risorsa
-* [!UICONTROL Risorsa di aggiornamento DAM] eseguita per la risorsa
 
 I risultati elencati consumano risorse considerevoli. Pertanto, Adobe consiglia di disabilitare il writeback di XMP se non è necessario. Per ulteriori informazioni, vedere [XMP writeback](/help/assets/xmp-writeback.md).
 
@@ -243,7 +242,7 @@ Quando replichi le risorse in un numero elevato di istanze di pubblicazione, ad 
 
 ## Cerca indici {#search-indexes}
 
-Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) per alcune ottimizzazioni dell&#39;indice.
+Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) per alcune ottimizzazioni dell&#39;indice.
 
 Creare indici personalizzati per le query eseguite spesso. Per informazioni dettagliate, consulta la [metodologia per l&#39;analisi delle query lente](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [creazione di indici personalizzati](/help/sites-deploying/queries-and-indexing.md). Per ulteriori informazioni sulle best practice per query e indici, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
