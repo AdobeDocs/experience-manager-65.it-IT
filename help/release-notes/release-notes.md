@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: cd71ed5d9516d330685afee29a86d530a10303aa
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '9811'
+source-wordcount: '10136'
 ht-degree: 5%
 
 ---
@@ -17,10 +17,12 @@ ht-degree: 5%
 
 <!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
 
-<!-- DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
+<!--
+DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section. -->
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
+-->
 
 ## Informazioni sulla versione {#release-information}
 
@@ -31,12 +33,14 @@ ht-degree: 5%
 | Data | 26 novembre 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-<!-- OLD DOWNLOAD URL
-(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
+<!--
+OLD DOWNLOAD URL
+(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip)
+-->
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -659,10 +663,11 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
 
 #### Problemi noti con gli hotfix disponibili {#aem-forms-issues-with-hotfixes}
 
-<!-- 
+<!--
 >[!NOTE]
 >
->Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. -->
+>Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released.
+-->
 
 Nei seguenti problemi è disponibile un hotfix per il download e l’installazione. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere questi problemi:
 
@@ -694,18 +699,20 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
    2. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Riavvia il server AEM.
 
-* **FORMS-23703** Quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
+* **FORMS-23703** Quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
 
 * **GRANITE-63681** I connettori del modello dati modulo potrebbero non riuscire ad eseguire l&#39;autenticazione perché le parole chiave e il pattern regex richiesti non sono consentiti per impostazione predefinita. Per risolvere il problema, scarica e installa l&#39;aggiornamento rapido da [link](/help/release-notes/aem-forms-hotfix.md).
 
-  <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
+  <!--
+  To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
   * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
+    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+  -->
 
-* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente all&#39;[ultimo componente aggiuntivo Forms rilasciato per 6.5.24.0](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente all&#39;[ultimo componente aggiuntivo Forms rilasciato per 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Dopo l&#39;aggiornamento a **AEM Forms6.5.24.0**, `server.log` e `error.log` possono essere inondati da messaggi di avvertenza ripetuti, ad esempio *Creazione della factory del parser protetto non riuscita* o *L&#39;attributo di sicurezza ... non è supportato*. I registri possono crescere di circa **5-10 righe al secondo** (centinaia di MB all&#39;ora), che possono riempire il disco e bloccare il rollout di produzione.
 
@@ -717,15 +724,17 @@ Per ridurre il volume del log, impostare il livello di log per `com.adobe.util.X
 
 Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di contenuti inclusi in questa versione di [!DNL Experience Manager] 6.5 Service Pack:
 
-* [Elenco dei bundle OSGi inclusi in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Elenco dei pacchetti di contenuti inclusi in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Elenco dei bundle OSGi inclusi in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt)
+<!-- UPDATE FOR EACH NEW RELEASE -->
+* [Elenco dei pacchetti di contenuti inclusi in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt)
+<!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Siti web con restrizioni{#restricted-sites}
 
 Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
-* [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/)
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >

@@ -9,9 +9,9 @@ role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -41,22 +41,24 @@ Nel contesto di Dynamic Media, i siti web che utilizzano un sistema basato su XM
 >Presta attenzione quando utilizzi i set di regole; possono impedire la visualizzazione del contenuto Dynamic Media sul sito web.
 
 Sono disponibili set di regole di esempio che consentono di creare set di regole personalizzati.
-Vedi [Riferimento set di regole](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
+Vedi [Riferimento set di regole](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
 
 Come per la creazione di tutti i set di regole, prima di caricarli utilizzando un programma di convalida XML, ad esempio xmlvalid, accertarsi che il file XML sia valido.
 
 Inoltre, assicurati di eseguire il test del set di regole in un ambiente di staging che non influisce sull’ambiente di produzione live.
 In genere, gli ambienti di produzione e quelli di staging richiedono accessi diversi.
 
-Per informazioni sull&#39;accesso, consulta l&#39;[applicazione desktop Adobe Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+Per informazioni sull&#39;accesso, consulta l&#39;[applicazione desktop Adobe Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
-<!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+<!--
+OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+-->
 
 **Per distribuire i set di regole XML:**
 
-1. Accedi alla tua [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+1. Accedi alla tua [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
    Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di queste informazioni, contatta l’Assistenza clienti Adobe.
 

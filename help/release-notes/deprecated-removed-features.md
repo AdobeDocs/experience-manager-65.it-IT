@@ -5,17 +5,19 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1834'
-ht-degree: 13%
+source-wordcount: '1900'
+ht-degree: 16%
 
 ---
 
 # Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
-<!-- Search&Promote is end-of-life September 1, 2022 | Assets | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Honor the access control setup of user and ensure appropriate permissions. ||
-|Adobe Search & Promote|The integration with Adobe Search & Promote is deprecated. Adobe does not plan to make further enhancements to the Search & Promote integration. Adobe Search & Promote integration remains fully supported while being deprecated.||| -->
+<!--
+Search&Promote is end-of-life September 1, 2022 | Assets | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Honor the access control setup of user and ensure appropriate permissions. ||
+|Adobe Search & Promote|The integration with Adobe Search & Promote is deprecated. Adobe does not plan to make further enhancements to the Search & Promote integration. Adobe Search & Promote integration remains fully supported while being deprecated.|||
+-->
 
 Adobe valuta costantemente le funzionalità dei prodotti per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne al fine di migliorare il valore complessivo per il cliente, tenendo comunque in considerazione la compatibilità con le versioni precedenti.
 
@@ -57,7 +59,7 @@ Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità
 | Sviluppatori | Libreria client Handlebars. Adobe non prevede di gestire e aggiornare ulteriormente la libreria client Handlebar fornita come parte della distribuzione (Quickstart). | Adobe consiglia ai clienti che richiedono ancora `Handlebars` per il codice di aggiungerlo alla base di codice del progetto. |  |
 | Sviluppatori | Libreria client Lawnchair. Adobe non prevede di mantenere e aggiornare ulteriormente la libreria client Lawnchair fornita come parte della distribuzione (Quickstart). | Adobe consiglia ai clienti che richiedono ancora Lawnchair per il codice di aggiungerlo alla base di codice del progetto. |  |
 | Sviluppatori | Libreria client `Granite.Sling.js`. Adobe non prevede di migliorare ulteriormente la libreria client Granite.Sling.js fornita come parte della distribuzione (Quickstart). | Adobe consiglia ai clienti che si affidano alla funzionalità della libreria di eseguire il refactoring del codice per non utilizzarlo più. |  |
-| Sviluppatori | Utilizzo di YUI per comprimere/minimizzare le librerie client di JavaScript. Adobe non prevede di aggiornare ulteriormente la libreria YUI. Fino alla versione 6.4 di AEM, per impostazione predefinita YUI minimizzava JavaScript con l’opzione di passare a Google Closure Compiler (GCC). A partire da AEM 6.5, GCC è l’impostazione predefinita. | Adobe consiglia ai clienti di eseguire l’aggiornamento a AEM 6.5 per passare a GCC per l’implementazione |  |
+| Sviluppatori | Utilizzo di YUI per comprimere/minimizzare le librerie client di JavaScript. Adobe non prevede di aggiornare ulteriormente la libreria di YUI. Fino alla versione 6.4 di AEM, per impostazione predefinita YUI minimizzava JavaScript con l’opzione di passare a Google Closure Compiler (GCC). A partire da AEM 6.5, GCC è l’impostazione predefinita. | Adobe consiglia ai clienti di eseguire l’aggiornamento a AEM 6.5 per passare a GCC per l’implementazione |  |
 | Sviluppatori | Editor di finestre di dialogo dell’interfaccia classica in CRXDE Lite. Adobe non prevede di migliorare ulteriormente l’Editor di finestre di dialogo per l’interfaccia classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |  |
 | Forms | L’integrazione di AEM Forms con AEM Mobile è stata rimossa. | Nessuna sostituzione disponibile. |  |
 | Sviluppatori | Editor di finestre di dialogo dell’interfaccia classica in CRXDE Lite. Adobe non prevede di migliorare ulteriormente l’Editor di finestre di dialogo per l’interfaccia classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |  |
@@ -86,7 +88,8 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Le versioni
 | Cache | `system/console/slingjsp` è stato rimosso e non è più disponibile in AEM 6.5. | La cache di classi e Slightly è memorizzata nel bundle Apache Sling Commons FileSystem ClassLoader. È possibile controllare il numero del bundle nella Console Web AEM e rimuovere la cartella della cache direttamente dal file system (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
 | Screens | Rimozione del supporto del bundle activemq e delle relative configurazioni. |  |  |
 
-<!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
+<!--
+## Pre-announcement for next release {#pre-announcement-for-next-release}
 
 This section is used to pre-announce the upcoming changes in the future releases. The announced changes are not yet effective but will impact customers. For example, the features are not yet deprecated but impacts the users after deprecation. These updates are provided for planning purpose.
 

@@ -6,10 +6,10 @@ feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 3%
+source-wordcount: '805'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 AEM Forms su JEE fornisce diverse API per inviare, elaborare ed eseguire il rendering di documenti. Alcune API sono contabilizzate come transazioni e altre sono libere di utilizzare. Questo documento fornisce un elenco di tutte le API contabilizzate come transazioni. Di seguito sono riportati alcuni scenari comuni in cui viene utilizzata un’API fatturabile:
 
 * Conversione di un documento da un formato a un altro
-* Appiattimento di un documento di Dynamic PDF
+* Appiattimento di un documento PDF dinamico
 * Unione di un documento PDF interattivo con un altro documento PDF
 
 Le API di fatturazione non tengono conto del numero di pagine, della lunghezza di un documento o modulo o del formato finale del documento sottoposto a rendering.
@@ -145,7 +145,7 @@ Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l&#39;elenco
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -197,7 +197,8 @@ Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l&#39;elenco
  </tbody>
 </table>
 
-<!-- ### Forms Service {#forms-service}
+<!--
+### Forms Service {#forms-service}
 
 <table>
  <tbody>
@@ -208,13 +209,13 @@ Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l&#39;elenco
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XDP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -251,7 +252,7 @@ Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l&#39;elenco
  </tbody>
 </table>
 
-### Servizio Forms con codice a barre {#barcoded-forms-service}
+### Servizio moduli con codice a barre {#barcoded-forms-service}
 
 <table>
  <tbody>
@@ -268,7 +269,7 @@ Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l&#39;elenco
  </tbody>
 </table>
 
-### Servizio assemblatore {#assembler-service}
+### Servizio Assembler {#assembler-service}
 
 <table>
  <tbody>
@@ -308,7 +309,7 @@ Di seguito è riportato l’elenco delle API JEE fatturabili. Trova l&#39;elenco
 L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quando si eseguono una o più delle seguenti operazioni:
 1. Conversione da formati non PDF a formati PDF. Ad esempio, la conversione dal formato XDP al formato PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Conversione dal formato PDF al formato PDF/A.
-1. Conversione dal formato PDF a formati non PDF. Gli esempi includono la trasformazione da PDF a formato immagine o la conversione da PDF a formato testo.
+1. Conversione dal formato PDF a formati non PDF. Gli esempi includono la trasformazione da PDF al formato immagine o la conversione da PDF al formato testo.
 
 >[!NOTE]
 >
@@ -367,7 +368,8 @@ L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quan
 
 -->
 
-<!--### HTML5 Forms {#html-forms}
+<!--
+### HTML5 Forms {#html-forms}
 
 <table>
  <tbody>
@@ -440,7 +442,8 @@ L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quan
  </tbody>
 </table>
 
-<!-- ## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+<!--
+## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
 
@@ -478,7 +481,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>

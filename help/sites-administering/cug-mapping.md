@@ -10,10 +10,10 @@ exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 <table>
  <tbody>
   <tr>
-   <td><strong>Versioni precedenti dell’AEM</strong></td>
+   <td><strong>Versioni precedenti di AEM</strong></td>
    <td><strong>AEM 6.5</strong></td>
    <td><strong>Commenti</strong></td>
   </tr>
@@ -53,9 +53,9 @@ ht-degree: 1%
 
 ## Confronto dei servizi OSGi {#comparison-of-osgi-services}
 
-**Versioni AEM precedenti**
+**Versioni precedenti di AEM**
 
-Etichetta: Supporto per gruppi utenti chiusi (CUG) Adobe Granite
+Etichetta: Supporto per gruppi utenti chiusi (CUG) di Adobe Granite
 
 Nome: com.day.cq.auth.impl.CugSupportImpl
 
@@ -74,7 +74,7 @@ Nome: com.day.cq.auth.impl.CugSupportImpl
   ConfigurationPolicy = OBBLIGATORIO
 
 * Nome: com.adobe.granite.auth.requirements.impl.RequirementService
-* Etichetta: Adobe requisito di autenticazione Granite e gestore del percorso di accesso
+* Etichetta: Requisiti di autenticazione di Adobe Granite e gestore del percorso di accesso
 
   Nome: com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler
 
@@ -91,14 +91,15 @@ Servizio per configurare l&#39;elenco di esclusione di entità che non dovrebber
 
   È possibile collegare un’implementazione personalizzata di CugExclude in caso di esigenze particolari.
 
-* Il componente OSGi implementa LoginPathProvider che espone un percorso di accesso corrispondente a LoginSelectorHandler. Include un riferimento obbligatorio a RequirementHandler utilizzato per registrare l&#39;osservatore che ascolta i requisiti di autenticazione modificati memorizzati nel contenuto tramite il tipo di mixin granite:AuthenticationRequired.
+* Il componente OSGi implementa LoginPathProvider che espone un percorso di accesso corrispondente a LoginSelectorHandler. Esiste un riferimento obbligatorio a un RequirementHandler utilizzato per registrare l&#39;osservatore che ascolta i requisiti di autenticazione modificati memorizzati nel contenuto tramite il tipo mixin granite:AuthenticationRequired.
 * Il componente OSGi che implementa RequirementHandler notifica a SlingAuthenticator le modifiche apportate ai authrequirements.
 
   Poiché il criterio di configurazione per questo componente è OBBLIGATORIO, viene attivato solo se è specificato un set di percorsi supportati.
 
   L’abilitazione del servizio avvia RequirementService.
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

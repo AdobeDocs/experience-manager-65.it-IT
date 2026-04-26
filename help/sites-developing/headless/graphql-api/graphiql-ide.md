@@ -5,16 +5,16 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 86%
+source-wordcount: '792'
+ht-degree: 84%
 
 ---
 
 # Utilizzo dell’IDE GraphiQL {#graphiql-ide}
 
-È disponibile un&#39;implementazione dell&#39;IDE [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) standard da utilizzare con l&#39;API GraphQL di Adobe Experience Manager (AEM).
+Un&#39;implementazione dell&#39;IDE [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) standard è disponibile con l&#39;API GraphQL di Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query G
 
 Puoi accedere all’editor di query da:
 
-* **Strumenti** -> **Generale** -> **Editor query GraphQL**
+* **Strumenti** -> **Generale** -> **Editor di query GraphQL**
 * direttamente; ad esempio `http://localhost:4502/aem/graphiql.html`
 
 ![Interfaccia di GraphiQL](assets/cfm-graphiql-interface.png "Interfaccia di GraphiQL")
@@ -135,7 +135,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Pubblicazione di query persistenti {#publishing-persisted-queries}
 
-Dopo aver selezionato la [query persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) dall&#39;elenco (pannello a sinistra) puoi utilizzare le azioni **Publish** e **Annulla pubblicazione**. Queste consentono di attivarle nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per renderle facilmente accessibili dalle applicazioni in fase di test.
+Dopo aver selezionato la [query persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) dall&#39;elenco (pannello a sinistra) puoi utilizzare le azioni **Pubblica** e **Annulla pubblicazione**. Queste consentono di attivarle nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per renderle facilmente accessibili dalle applicazioni in fase di test.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Dopo aver selezionato la [query persistente](/help/sites-developing/headless/gra
 L&#39;opzione **Copia URL** consente di simulare una query copiando l&#39;URL utilizzato per accedere direttamente alla query persistente e visualizzare i risultati. Questa può quindi essere utilizzata per i test; ad esempio, accedendo in un browser:
 
 <!--
-  >[!NOTE]
+>[!NOTE]
   >
   >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >

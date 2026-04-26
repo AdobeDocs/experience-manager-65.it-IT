@@ -1,6 +1,6 @@
 ---
-title: Utilizzo del CAPTCHA nei moduli adattivi
-description: Scopri come configurare il servizio AEM CAPTCHA o Google reCAPTCHA in moduli adattivi.
+title: Utilizzo di CAPTCHA nei moduli adattivi
+description: Scopri come configurare il servizio AEM CAPTCHA o Google reCAPTCHA nei moduli adattivi.
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
@@ -9,14 +9,14 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 5%
+source-wordcount: '1959'
+ht-degree: 10%
 
 ---
 
-# Utilizzo del CAPTCHA nei moduli adattivi{#using-captcha-in-adaptive-forms}
+# Utilizzo di CAPTCHA nei moduli adattivi{#using-captcha-in-adaptive-forms}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -62,7 +62,7 @@ Gli utenti di AEM Forms possono utilizzare il servizio reCAPTCHA di Google per i
    1. Seleziona **[!UICONTROL Crea]** per creare la cartella abilitata per le configurazioni del servizio cloud.
 1. Configura il servizio cloud per reCAPTCHA Enterprise.
 
-   1. Nell&#39;istanza Autore Experience Manager, vai a ![strumenti-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
+   1. Nell&#39;istanza Autore Experience Manager, vai a ![strumenti-1](assets/tools-1.png) > **[!UICONTROL Servizi cloud]**.
    1. Selezionare **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Seleziona il contenitore di configurazione creato nel passaggio precedente e seleziona **[!UICONTROL Crea]**.
    1. Seleziona la versione come Enterprise reCAPTCHA e specifica Nome; ID progetto, Chiave sito e Chiave API (ottenuta nei passaggi 2 e 3) per il servizio Enterprise reCAPTCHA.
    1. Selezionare il tipo di chiave. Il tipo di chiave deve essere uguale a quello configurato nel progetto cloud Google, ad esempio **Chiave sito di casella di controllo** o **Chiave sito basata su punteggio**.
@@ -99,7 +99,7 @@ Una volta abilitato, il servizio reCAPTCHA Enterprise è disponibile per l’uti
 
 1. Configura il servizio cloud per reCAPTCHA v2.
 
-   1. Nell&#39;istanza dell&#39;autore AEM, vai a ![strumenti-1](assets/tools-1.png) > **Cloud Service**.
+   1. Nell&#39;istanza Autore AEM, vai a ![strumenti-1](assets/tools-1.png) > **Servizi cloud**.
    1. Selezionare **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Seleziona il contenitore di configurazione creato nel passaggio precedente e seleziona **[!UICONTROL Crea]**.
    1. Seleziona la versione come reCAPTCHA v2, specifica il nome, la chiave del sito e la chiave segreta per il servizio reCAPTCHA (ottenuti nel passaggio 1), quindi seleziona **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
    1. Nella finestra di dialogo Modifica componente, specifica il sito e le chiavi segrete ottenuti nel passaggio 1. Seleziona **[!UICONTROL Salva impostazioni]**, quindi seleziona **OK** per completare la configurazione.
@@ -342,4 +342,5 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` Refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form. -->
+`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form.
+-->

@@ -1,38 +1,38 @@
 ---
-title: Integrazione di [!DNL Experience Manager Assets] con  [!DNL Adobe Workfront]
-description: Introduzione all'integrazione tra [!DNL Assets] e [!DNL Workfront]
+title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]'
+description: Introduction to integration between [!DNL Assets] and [!DNL Workfront]
 role: Admin,Leader,Developer
 feature: Workfront Integrations and Apps
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1190'
 ht-degree: 7%
 
 ---
 
-# Integrazione di [!DNL Adobe Experience Manager Assets] con [!DNL Adobe Workfront] {#assets-integration-overview}
+# [!DNL Adobe Experience Manager Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
-[!DNL Adobe Workfront] è un&#39;applicazione per la gestione dell&#39;intero ciclo di vita del lavoro in un&#39;unica posizione. L’integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di migliorare la velocità dei contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto di gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini necessari.
+[!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. L’integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di migliorare la velocità dei contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto di gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini necessari.
 
-[!DNL Workfront for Experience Manager enhanced connector] abilita processi aziendali avanzati con flussi di lavoro end-to-end e fornisce esperienze client end-to-end personalizzate e archiviazione centrale. Adobe offre un connettore standard e un connettore avanzato per integrare le due soluzioni. Vedi le funzionalità supportate di seguito per un confronto e scopri [le novità di [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
+The [!DNL Workfront for Experience Manager enhanced connector] enables enhanced business processes with end-to-end workflows and provides personalized end-to-end client experiences and central storage. Adobe offers a standard connector and an enhanced connector to integrate the two solutions. See the supported features below for a comparison and see [what is new in the [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
-[!DNL Workfront for Experience Manage enhanced connector] consente all&#39;organizzazione di:
+[!DNL Workfront for Experience Manage enhanced connector] enables your organization to:
 
-* Crea automaticamente le cartelle Experience Manager collegate in Workfront e organizzale in base a portfolio, programmi e progetti Workfront.
-* Sincronizza i metadati del progetto Workfront con le cartelle Experience Manager collegate.
-* I metadati di Experience Manager vengono aggiornati con le nuove versioni.
-* Imposta gli stati degli oggetti Workfront in base a condizioni configurabili utilizzando i flussi di lavoro Experience Manager.
-* Pubblicare risorse in Experience Manager Publish Environment o Brand Portal.
+* Auto-create linked Experience Manager folders in Workfront and organize the folders based on Workfront Portfolios, Programs, and Projects.
+* Synchronize Workfront project metadata with linked Experience Manager folders.
+* Experience Manager metadata updates with new versions.
+* Set Workfront object statuses based on configurable conditions using Experience Manager workflows.
+* Publish assets to Experience Manager publish environment or to Brand Portal.
 
-Consulta Supporto piattaforma e [prerequisiti per il connettore avanzato](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
+See the platform support and [prerequisites for the enhanced connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ Consulta Supporto piattaforma e [prerequisiti per il connettore avanzato](https:
 >
 >* Adobe potrebbe rilasciare aggiornamenti a [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] che rendono ridondante questo connettore; in tal caso, i clienti potrebbero dover passare dall&#39;utilizzo di questo connettore.
 >
->* Adobe supporta le versioni migliorate del connettore 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per verificare la versione avanzata del connettore, passa al gruppo `digital.hoodoo` disponibile nel riquadro a sinistra in [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
+>* Adobe supporta le versioni migliorate del connettore 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per verificare la versione avanzata del connettore, passa al gruppo `digital.hoodoo` disponibile nel riquadro a sinistra in [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
 >
 >* Consulta [Esame di certificazione partner per il connettore avanzato Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Per informazioni sull&#39;esame, vedere [Guida all&#39;esame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 

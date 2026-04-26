@@ -11,9 +11,9 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 La console Gruppi consente di creare gruppi community quando la [struttura modello](/help/communities/sites-console.md#step1) di un sito community include la funzione [gruppi](/help/communities/functions.md#groups-function).
 
-* AEM Communities supporta la nidificazione di gruppi all’interno di altri gruppi. La nidificazione dei gruppi è possibile quando la struttura [&#x200B; del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione dei gruppi.
+* AEM Communities supporta la nidificazione di gruppi all’interno di altri gruppi. La nidificazione dei gruppi è possibile quando la struttura [ del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione dei gruppi.
 * Solo per l’ambiente di authoring, è disponibile una procedura guidata per la creazione di gruppi simile alla procedura guidata per la creazione di siti.
 * Se i membri possono o meno creare gruppi nell&#39;ambiente di pubblicazione, è possibile configurarlo quando si aggiunge una funzione Gruppi a una struttura del sito o del gruppo di community.
 
@@ -34,7 +34,8 @@ I diversi aspetti dei gruppi comunitari sono:
 * **Controllo**: il gruppo può essere aperto o segreto.
 * **Nidificazione**: il gruppo può contenere zero o più gruppi.
 
-<!-- This is a 404 on helpx. Update or remove.
+<!--
+This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
@@ -62,7 +63,7 @@ Per accedere alla console Gruppi:
 
 * Seleziona la cartella **Groups** per aprirla.
 
-  All’apertura, vengono visualizzati tutti i gruppi esistenti, siano essi creati in Author o Publish.
+  All’apertura, vengono visualizzati tutti i gruppi esistenti, siano essi creati durante la creazione o la pubblicazione.
 
   Da questa console Gruppi è possibile creare nuovi gruppi.
 
@@ -99,7 +100,6 @@ La directory principale predefinita è il sito padre, ma la directory principale
    * Ricontrollare il nome in quanto non può essere modificato facilmente dopo la creazione del gruppo.
    * L&#39;URL di base viene visualizzato sotto `Community Group Name`.
    * Per un URL valido, aggiungi &quot;.html&quot;
-
      *ad esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menu **Modello per gruppo community**
@@ -112,7 +112,7 @@ La directory principale predefinita è il sito padre, ma la directory principale
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-Il framework utilizza `Twitter Bootstrap` per portare una progettazione reattiva e flessibile al sito. È possibile selezionare uno dei numerosi temi di Bootstrap precaricati per assegnare uno stile al modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
+Il framework utilizza `Twitter Bootstrap` per portare una progettazione reattiva e flessibile al sito. È possibile selezionare uno dei numerosi temi precaricati di Bootstrap per assegnare uno stile al modello di gruppo community selezionato oppure caricare un tema Bootstrap.
 
 Se questa opzione è selezionata, il tema viene sovrapposto con un segno di spunta blu opaco.
 
@@ -181,7 +181,7 @@ L&#39;impostazione di appartenenza consente di selezionare uno dei tre modi per 
 
 La miniatura è un’immagine da visualizzare per il gruppo durante l’authoring e la pubblicazione.
 
-Le dimensioni ottimali di un&#39;immagine di gruppo sono 170 x 90 pixel in un formato di immagine supportato (come JPG-o PNG).
+Le dimensioni ottimali di un&#39;immagine di gruppo sono 170 x 90 pixel in un formato di immagine supportato (ad esempio JPG o PNG).
 
 Se non viene aggiunta alcuna immagine, viene visualizzata un&#39;immagine predefinita.
 
@@ -207,7 +207,7 @@ Al termine del processo, la scheda per il nuovo sito (gruppo) della sottocommuni
 
 ![sito aperto](assets/open-site.png)
 
-Il contenuto della pagina di un gruppo può essere creato con gli stessi strumenti di qualsiasi altra pagina dell’AEM. Per aprire il gruppo per la creazione, seleziona l’icona Apri sito che viene visualizzata quando passi il puntatore sulla scheda del gruppo.
+Il contenuto della pagina di un gruppo può essere creato con gli stessi strumenti di qualsiasi altra pagina di AEM. Per aprire il gruppo per la creazione, seleziona l’icona Apri sito che viene visualizzata quando passi il puntatore sulla scheda del gruppo.
 
 ## Modifica proprietà gruppo {#modify-group-properties}
 
@@ -283,9 +283,9 @@ Il pannello [APPARTENENZA](#membership) è puramente informativo. Non è possibi
 
 ### Modifica miniatura {#modify-thumbnail}
 
-Il pannello [THUMBNAIL](#thumbnail) consente di caricare un&#39;immagine per rappresentare il gruppo community nei visitatori del sito nell&#39;ambiente Publish e nella console Gruppi del sito community nell&#39;ambiente di authoring.
+Il pannello [THUMBNAIL](#thumbnail) consente di caricare un&#39;immagine per rappresentare il gruppo community nei visitatori del sito nell&#39;ambiente di pubblicazione e nella console Gruppi del sito community nell&#39;ambiente di authoring.
 
-## Publish il gruppo {#publish-the-group}
+## Pubblicare il gruppo {#publish-the-group}
 
 ![sito di pubblicazione](assets/publish-site.png)
 

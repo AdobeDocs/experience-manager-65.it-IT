@@ -6,9 +6,9 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1579'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Per caricare completamente i file in [!DNL Experience Manager Assets] che hai cr
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/it/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/it/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un’interfaccia al suo motore ExtendScript. Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
+>[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un’interfaccia al suo motore ExtendScript. Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
 
 ## Come funziona l’estrazione {#how-the-extraction-works}
 
@@ -115,7 +115,8 @@ Argomenti di estrazione dei contenuti multimediali e percorsi di script
 
 * **Estendi script**: qui è possibile specificare combinazioni di script diverse. Se si desidera eseguire script personalizzati in [!DNL InDesign Server], salvare gli script in `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -239,4 +240,4 @@ Per [!DNL InDesign Server] 10.0 o versione successiva, eseguire la procedura seg
 
 >[!MORELIKETHIS]
 >
->* [Informazioni su Adobe InDesign Server](https://www.adobe.com/it/products/indesignserver/faq.html)
+>* [Informazioni su Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

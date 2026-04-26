@@ -1,19 +1,20 @@
 ---
-title: Tecniche per la verifica dell'accessibilità dei moduli
+title: Tecniche per la verifica dell’accessibilità dei moduli
 description: Scopri le tecniche per testare l’accessibilità dei moduli in Forms Designer
 feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 77fd3bc5-9a05-4442-af2b-238169d8061a
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
-# Tecniche per la verifica dell&#39;accessibilità dei moduli
+# Tecniche per la verifica dell’accessibilità dei moduli
 
 Per garantire che i moduli siano accessibili a un&#39;ampia gamma di utenti, è necessario testarli con una serie di tecnologie per l&#39;accessibilità. È possibile verificare i moduli in modo semplice e a basso costo utilizzando le tecniche descritte in questa sezione.
 Assicurati che il modulo possa essere compilato utilizzando solo la tastiera. Assicurati di compilare l’intero modulo e di verificare tutti i campi e i pulsanti. Durante la compilazione del modulo, determinare se sono necessari miglioramenti in base alle risposte fornite alle domande seguenti:
@@ -33,6 +34,3 @@ Molti utenti con problemi di vista si basano su un contrasto elevato tra il test
 * Parti del modulo diventano invisibili, irriconoscibili o difficili da utilizzare?
 * Alcune aree continuano a apparire nere su uno sfondo bianco?
 * Alcuni elementi sono di dimensioni o troncati in modo errato?
-
-
-

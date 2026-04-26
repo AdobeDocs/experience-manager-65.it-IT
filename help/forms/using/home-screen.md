@@ -9,10 +9,10 @@ exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 1%
 
 ---
 
@@ -28,9 +28,11 @@ Nella figura seguente sono riportate le chiamate ai componenti essenziali nella 
 
 ![Home schermata dell&#39;app Forms](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
 1. **Pulsante Menu**: selezionare il pulsante **Menu** per passare ad Attività, Forms, Posta in uscita e Impostazioni. Se la tua app AEM Forms è connessa a un server AEM Forms JEE, puoi visualizzare l’opzione Attività. L&#39;opzione Attività consente inoltre di memorizzare in un processo le bozze create dalle attività. Per i server AEM Forms OSGi, l’opzione Attività è nascosta. In Posta in uscita vengono memorizzati i moduli e le bozze salvati prima della sincronizzazione con il server. Tutti i moduli e le bozze salvati nella cartella Posta in uscita vengono caricati sul server AEM Forms quando l&#39;app è [sincronizzata con il server](../../forms/using/sync-app.md). Per informazioni sulle impostazioni, vedere [Aggiorna impostazioni generali](../../forms/using/update-general-settings.md).
 1. **Attività o Modulo**: selezionare l&#39;attività o il modulo elencato che si desidera utilizzare.
@@ -45,4 +47,4 @@ Puoi modificare la schermata iniziale predefinita dell&#39;app dalle **[Impostaz
 
 La modifica apportata all’impostazione della schermata iniziale nell’app influisce sulla schermata iniziale dell’utente attualmente connesso o dell’utente sul dispositivo mobile corrente.
 
-Tuttavia, la modifica apportata in HTML Workspace ha effetto su tutti gli utenti dell’app AEM Forms che hanno effettuato l’accesso ad AEM Forms Server.
+Tuttavia, la modifica apportata in HTML Workspace ha effetto su tutti gli utenti dell’app AEM Forms che hanno effettuato l’accesso al server AEM Forms.

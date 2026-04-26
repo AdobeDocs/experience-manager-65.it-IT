@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1648'
 ht-degree: 85%
 
 ---
@@ -53,8 +53,8 @@ Se il componente pagina SPA eredita dal componente core della pagina, sono dispo
 * Se il modello è modificabile, aggiungilo al criterio della pagina.
 * Oppure aggiungi le categorie utilizzando il `customfooterlibs.html`.
 
-Per ogni risorsa nel modello esportato, la SPA mappa un componente effettivo che esegue il
-rendering. Il modello, rappresentato come JSON, viene quindi rappresentato utilizzando le mappature dei componenti all’interno di un contenitore.
+Per ogni risorsa nel modello esportato, l’applicazione a pagina singola mapperà un componente effettivo che eseguirà le
+rendering. Viene quindi eseguito il rendering del modello, rappresentato come JSON, utilizzando le mappature dei componenti all’interno di un contenitore.
 ![schermata_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]

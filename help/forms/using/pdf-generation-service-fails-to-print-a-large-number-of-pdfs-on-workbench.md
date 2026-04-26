@@ -5,23 +5,25 @@ exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
 
 # La generazione di PDF non riesce a stampare un numero elevato di PDF tramite WorkBench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
-## Problema   {#issue}
+## Problema {#issue}
 
 Quando un cliente genera un numero elevato di PDF tramite servizi implementati tramite WorkBench. Errore del servizio a causa di memoria insufficiente. L’errore viene visualizzato come:
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 Questo perché il numero massimo di pagine in una richiesta di stampa è limitato a circa 1000 pagine su Windows. Quando si genera un output di stampa, il modello e i dati devono essere caricati in memoria e il layout risultante deve essere incorporato nella memoria. Ciò significa che esistono limiti alla dimensione dell’output finale. Il processo che genera l&#39;output di stampa è un&#39;attività a 32 bit, ovvero è limitato a 2 GB di RAM in Windows <!--and 4 GB on UNIX-->.
 
@@ -56,7 +58,7 @@ Poiché la memoria massima del processo è limitata e la memoria utilizzata dal 
 
 Se il modulo ha molti nodi di piccole dimensioni con dati di piccole dimensioni, il processo consuma più memoria (e quindi esaurisce la memoria più rapidamente) rispetto a un modulo che ha un numero inferiore di nodi (anche) con dati di grandi dimensioni.
 
-Per ulteriori informazioni, leggere l&#39;[Appendice seguente](#appendix), dove i risultati del test si basano sul modulo Stampa (PDF non taggato). L&#39;utilizzo di PDF con tag aumenta i requisiti di memoria del processo. Dipende anche dal numero di campi nel modulo: il requisito di memoria del processo è leggermente superiore a 1,5 volte rispetto a quello di PDF non taggato.
+Per ulteriori informazioni, leggere l&#39;[Appendice seguente](#appendix), dove i risultati dei test si basano sul modulo Stampa (PDF senza tag). L&#39;utilizzo di PDF con tag aumenta i requisiti di memoria di processo. Dipende anche dal numero di campi nel modulo: il requisito di memoria del processo sarebbe leggermente superiore a 1,5 volte rispetto al PDF senza tag.
 
 ### Forms interattivo {#interactive-forms}
 
@@ -64,7 +66,7 @@ I moduli interattivi consumerebbero più memoria rispetto a Print Forms, in quan
 
 ### Formati immagine {#image-formats}
 
-L’Adobe non consiglia alcun formato immagine specifico. Ma sarebbe bello avere un&#39;immagine più piccola, ad es. PNG (Portable Network Graphics). Inoltre non è consigliabile utilizzare immagini ad alta risoluzione le cui dimensioni variano diverse centinaia di MegaByte. Inoltre, non è consigliabile utilizzare immagini compresse le cui dimensioni al momento della decompressione si espandono a diverse centinaia di megabyte di dati.
+Adobe non consiglia alcun formato immagine specifico. Ma sarebbe bello avere un&#39;immagine più piccola, ad es. PNG (Portable Network Graphics). Inoltre non è consigliabile utilizzare immagini ad alta risoluzione le cui dimensioni variano diverse centinaia di MegaByte. Inoltre, non è consigliabile utilizzare immagini compresse le cui dimensioni al momento della decompressione si espandono a diverse centinaia di megabyte di dati.
 
 ### Appendice {#appendix}
 

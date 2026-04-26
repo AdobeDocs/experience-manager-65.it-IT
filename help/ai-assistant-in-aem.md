@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1379'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ L’Assistente AI supporta AEM as a Cloud Service, incluse le seguenti soluzioni
 
 Il seguente video di 3 minuti e 25 secondi offre una guida dettagliata di AI Assistant in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475366/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Accedere all’Assistente IA in AEM{#get-access}
 
@@ -88,7 +88,7 @@ La conoscenza del prodotto include concetti e argomenti derivati dalla documenta
 | Apprendimento puntato | <ul><li>Cos’è Universal Editor?</li><li>Come si crea un programma in Cloud Manager?</li></ul> |
 | Rilevamento aperto | <ul><li>Come si utilizza Universal Editor?</li><li>Esiste un modo per copiare il contenuto da un ambiente all’altro?</li></ul> |
 | Risoluzione di problemi | <ul><li>Perché non è possibile accedere a Universal Editor?</li><li>Perché la pipeline non riesce?</li></ul> |
-| **Creazione ticket di supporto** | **Disponibile solo per gli amministratori del supporto &#x200B;**<br>**Esempi** |
+| **Creazione ticket di supporto** | **Disponibile solo per gli amministratori del supporto **<br>**Esempi** |
 | Creazione automatizzata di ticket di supporto per acquisire la cronologia e il contesto delle chat dell’Assistente di intelligenza artificiale | <ul><li>Crea un ticket di supporto per me.</li></ul> |
 | Recupera lo stato del ticket di supporto | <ul><li>Mostrami tutti i biglietti di supporto che ho aperto.</li><li>Mostra lo stato del biglietto &quot;E-----------&quot;</li></ul> |
 
@@ -115,7 +115,8 @@ Ad esempio, quando viene richiesto, è utile assegnare un nome alla soluzione AE
 
 ## Utilizzare l’Assistente AI in AEM {#ai-use}
 
-<!-- UNHIDE AFTER BETA or at GA
+<!--
+UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
 To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
@@ -128,9 +129,10 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
+-->
 
 
 ### Avviare un Assistente AI nella conversazione AEM
@@ -163,7 +165,7 @@ L’Assistente AI in AEM include una funzione di individuazione che consente di 
 
 1. Nel pannello Assistente AI, fai clic sull&#39;icona ![Scopri](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) per attivare il pannello di individuazione dei prompt.
 
-   ![Pannello che consente di esplorare i prompt per categoria nell&#39;Assistente AI](/help/assets/assets-ai/ai-assistant-discover-prompts.png)
+   ![Pannello che consente di esplorare i prompt per categoria nell&#39;Assistente IA](/help/assets/assets-ai/ai-assistant-discover-prompts.png)
    *Pannello che mostra le categorie dei prompt nell&#39;Assistente di intelligenza artificiale.*
 
 1. Selezionare una categoria per visualizzare un elenco di prompt correlati.
@@ -198,7 +200,8 @@ Di seguito sono riportate le risposte ad alcune domande comuni sull’Assistente
 * **L&#39;Assistente IA in AEM utilizza informazioni personali per i dati di formazione?**\
   No. L’Assistente AI in AEM non utilizza informazioni personali a scopo di formazione. Evita di condividere informazioni personali su di te o di altri, inclusi nomi o dettagli di contatto, con l’Assistente AI in AEM.
 
-<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
+<!--
+IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
 ## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 

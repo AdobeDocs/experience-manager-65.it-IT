@@ -8,9 +8,9 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '595'
 ht-degree: 9%
 
 ---
@@ -19,12 +19,12 @@ ht-degree: 9%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
-Experience Manager supporta il caricamento, la consegna e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
+Come parte del processo di authoring, Experience Manager supporta il caricamento, la consegna e l’anteprima interattiva di risorse 3D.
 
-Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli della risorsa in Experience Manager. Il visualizzatore include, tra le altre, una raccolta di controlli interattivi della videocamera che consentono di eseguire zoom, rotazione e scorrimento della risorsa 3D.
+Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle risorse in Experience Manager. Il visualizzatore include, tra le altre, una raccolta di controlli interattivi della videocamera che consentono di eseguire zoom, rotazione e scorrimento della risorsa 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
@@ -52,17 +52,17 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Considerazioni sulle prestazioni quando si visualizza l’anteprima delle risorse 3D in Experience Manager{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni durante l’anteprima delle risorse 3D in Experience Manager{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori, quali la larghezza di banda, la complessità delle immagini e le latenze per il server.
 
 Inoltre, le funzionalità del computer client, ad esempio una workstation, un notebook o un dispositivo touch mobile, sono importanti quando si manipola la fotocamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l&#39;esperienza di visualizzazione 3D interattiva più fluida e più favorevole.
 
-**Per visualizzare in anteprima le risorse 3D nell&#39;Experience Manager:**
+**Per visualizzare in anteprima le risorse 3D in Experience Manager:**
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
 Consulta [Formati supportati per anteprima 3D](#supported-3d-previewing-assets) e [Carica Assets](/help/assets/manage-assets.md#uploading-assets).
-1. Dall&#39;Experience Manager, nella pagina **[!UICONTROL Navigazione]**, selezionare **[!UICONTROL Assets]** > **[!UICONTROL File]**.
+1. Da Experience Manager, nella pagina **[!UICONTROL Navigazione]**, selezionare **[!UICONTROL Assets]** > **[!UICONTROL File]**.
 
    ![Pagina di navigazione](/help/assets/assets-dm/navigation-assets.png)
 

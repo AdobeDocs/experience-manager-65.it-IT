@@ -5,9 +5,9 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1993'
 ht-degree: 58%
 
 ---
@@ -84,7 +84,7 @@ Le query GraphQL e le relative risposte JSON possono essere memorizzate nella ca
 
 Consulta:
 
-* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn)
+* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Impostare le intestazioni di controllo cache HTTP {#set-http-cache-control-headers}
 
@@ -105,7 +105,8 @@ $ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+<!--
+or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache).
 -->
 
 **Ulteriori riferimenti**
@@ -182,12 +183,12 @@ Il tempo di risposta di query complesse, con set di risultati di grandi dimensio
 
 GraphQL in AEM supporta due tipi di impaginazione:
 
-* [paginazione basata su limite/offset](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+* [paginazione basata su limite/scostamento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Utilizzato per le query elenco; terminano con `List`; ad esempio, `articleList`.
 Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o dimensioni della pagina).
 
-* [paginazione basata su cursore](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (rappresentato da `first` e `after`)
-Fornisce un ID univoco per ciascun elemento, noto anche come cursore.
+* [paginazione basata su cursore](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (rappresentata da `first`e `after`)
+In questo modo viene fornito un ID univoco per ogni elemento, noto anche come cursore.
 Nella query, si specifica il cursore dell’ultimo elemento della pagina precedente, più le dimensioni della pagina (il numero massimo di elementi da restituire).
 
   Poiché l’impaginazione basata su cursore non si adatta alle strutture di dati delle query basate su elenco, AEM ha introdotto il tipo di query `Paginated`; ad esempio, `articlePaginated`. Le strutture di dati e i parametri utilizzati seguono i [Specifica di connessione cursore GraphQL](https://relay.dev/graphql/connections.htm).

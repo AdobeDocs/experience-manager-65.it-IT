@@ -1,5 +1,5 @@
 ---
-title: Routing modello SPA
+title: Indirizzamento del modello SPA
 description: Per le applicazioni a pagina singola in AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 0%
+source-wordcount: '479'
+ht-degree: 1%
 
 ---
 
 
-# Routing modello SPA{#spa-model-routing}
+# Indirizzamento del modello SPA{#spa-model-routing}
 
 Per le applicazioni a pagina singola in AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
 
@@ -38,7 +38,7 @@ Per una descrizione dettagliata, vedi la sezione [PageModelManager](/help/sites-
 
 ## Routing modello manuale e automatico {#manual-vs-automatic-model-routing}
 
-`ModelRouter` automatizza il recupero dei frammenti del modello. Ma come qualsiasi strumento automatizzato è dotato di limitazioni. Se necessario, è possibile disabilitare o configurare `ModelRouter` per ignorare i percorsi che utilizzano le metaproprietà (vedere la sezione Meta Properties del documento [Componente pagina SPA](/help/sites-developing/spa-page-component.md)). Gli sviluppatori front-end possono quindi implementare il proprio livello di routing del modello richiedendo a `PageModelManager` di caricare un determinato frammento di modello utilizzando la funzione `getData()`.
+`ModelRouter` automatizza il recupero dei frammenti del modello. Ma come qualsiasi strumento automatizzato è dotato di limitazioni. Se necessario, è possibile disabilitare o configurare `ModelRouter` per ignorare i percorsi che utilizzano le proprietà meta (vedere la sezione Proprietà Meta del documento [Componente pagina SPA](/help/sites-developing/spa-page-component.md)). Gli sviluppatori front-end possono quindi implementare il proprio livello di routing del modello richiedendo a `PageModelManager` di caricare un determinato frammento di modello utilizzando la funzione `getData()`.
 
 >[!NOTE]
 >

@@ -6,10 +6,10 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 6%
+source-wordcount: '2048'
+ht-degree: 9%
 
 ---
 
@@ -30,7 +30,7 @@ Per creare un modulo adattivo, segui la procedura riportata di seguito.
 
 1. Inserisci le credenziali nella pagina di accesso di Experience Manager.
 
-   Dopo aver effettuato l&#39;accesso, nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+   Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 
    >[!NOTE]
    >
@@ -94,7 +94,8 @@ Per utilizzare un modello di dati modulo per creare un modulo adattivo:
 
 Puoi riutilizzare i modelli di modulo XFA per creare moduli adattivi. Per riutilizzare, carica e associa un modello di modulo XFA a un modulo adattivo. Gli elementi del modello di modulo (modulo XFA) sono resi disponibili per l’utilizzo nel Finder di contenuti al momento dell’authoring dei moduli adattivi. Da Content Finder è possibile trascinare gli elementi del modello di modulo nel modulo.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -108,7 +109,8 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+   -->
 
 ## Creare un modulo adattivo basato su schema XML o JSON {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
@@ -201,7 +203,7 @@ Per impostazione predefinita, l’opzione di salvataggio automatico non è abili
 
 1. (Solo salvataggio automatico basato su eventi) Per configurare le opzioni per il salvataggio automatico basato su eventi, effettuare le seguenti operazioni.
 
-   1. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** specificare un evento [GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
+   1. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** specificare un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
 
 1. (Facoltativo) Per salvare automaticamente il contenuto per utenti anonimi, selezionare l&#39;opzione **[!UICONTROL Abilita salvataggio automatico per utenti anonimi]** e fare clic su **[!UICONTROL OK]**.
 
@@ -212,7 +214,7 @@ Per impostazione predefinita, l’opzione di salvataggio automatico non è abili
    >Per configurare il servizio, passare alla configurazione della console Web di Adobe Experience Manager all&#39;indirizzo `https://'[server]:[port]'system/console/configMgr` e modificare il **[!UICONTROL Servizio di configurazione comune di Forms]** per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvare la configurazione.
 
 
-## Come rinominare un modulo adattivo per l’AEM? {#rename-an-AEM-Adaptive-Form}
+## Come rinominare un modulo adattivo AEM? {#rename-an-AEM-Adaptive-Form}
 
 Per rinominare un modulo adattivo, effettua le seguenti operazioni:
 
@@ -222,6 +224,6 @@ Per rinominare un modulo adattivo, effettua le seguenti operazioni:
    ![Proprietà](/help/forms/using/assets/rename-form-properties.png)
 
 1. Modifica il nome del modulo nella scheda **Titolo**, come illustrato nell&#39;immagine seguente.
-1. Fare clic su **Salva e chiudi**.
+1. Fai clic su **Salva e chiudi**.
 
    ![Rinominare un modulo adattivo AEM](/help/forms/using/assets/rename-form-title.png)

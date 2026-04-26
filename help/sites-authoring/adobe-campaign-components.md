@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 index: false
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2879'
 ht-degree: 6%
 
 ---
@@ -102,7 +102,7 @@ Nella modalità di modifica a schermo intero sono disponibili diverse opzioni ag
 
 Quando viene caricata un’immagine, puoi configurare quanto segue:
 
-* **Mappa**
+* **mappa**
 Per mappare un&#39;immagine, selezionare Mappa. È possibile specificare la modalità di creazione della mappa immagine (rettangolo, poligono e così via) e il punto a cui deve puntare l&#39;area.
 
 * **Ritaglio**
@@ -122,13 +122,13 @@ Titolo dell&#39;immagine.
 * **Testo alternativo**
 Testo alternativo da utilizzare per la creazione di contenuto accessibile.
 
-* **Collegamento A**
+* **Collega a**
 Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
 * **Descrizione**
 Descrizione dell&#39;immagine.
 
-* **Dimensione**
+* **Dimensioni**
 Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
@@ -154,7 +154,7 @@ Didascalia del collegamento. Questo è il testo visualizzato dagli utenti.
 * **Descrizione comando collegamento**
 Aggiunge ulteriori informazioni sull&#39;utilizzo del collegamento.
 
-* **TipoCollegamento**
+* **Tipo collegamento**
 Nell&#39;elenco a discesa selezionare tra un **URL personalizzato** e un **documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo**
@@ -226,13 +226,13 @@ Titolo del blocco, visualizzato a comparsa.
    * **Testo alternativo**
 Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
 
-   * **Collegamento a**
+   * **Collega a**
 Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
    * **Descrizione**
 Descrizione dell&#39;immagine.
 
-   * **Dimensione**
+   * **Dimensioni**
 Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
@@ -326,7 +326,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
   </tr>
   <tr>
    <td><p>Campo testo (Campaign)</p> </td>
-   <td><p>stringa</p> </td>
+   <td><p>string</p> </td>
    <td><p>E-mail</p> </td>
   </tr>
  </tbody>

@@ -1,6 +1,6 @@
 ---
-title: Integrazione con servizi di terze parti
-description: Scopri come integrare l’AEM con i servizi di terze parti.
+title: Integrazione di servizi di terze parti
+description: Scopri come integrare AEM con i servizi di terze parti.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -9,16 +9,16 @@ exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 6%
+source-wordcount: '257'
+ht-degree: 12%
 
 ---
 
-# Integrazione con servizi di terze parti{#integrating-with-third-party-services}
+# Integrazione di servizi di terze parti{#integrating-with-third-party-services}
 
-Con l’AEM, puoi integrarlo con i seguenti prodotti non Adobi preconfigurati:
+Con AEM, puoi integrarlo con i seguenti prodotti non Adobe forniti con il prodotto:
 
 * Connessione Amazon SNS - Servizi Web Amazon
 * BrightEdge Content Optimizer - contenuto ottimizzato per la ricerca
@@ -34,13 +34,14 @@ Con l’AEM, puoi integrarlo con i seguenti prodotti non Adobi preconfigurati:
 
 Inoltre, puoi integrare AEM con [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-## Integrazione con Salesforce {#integrating-with-salesforce}
+## Integrare con Salesforce {#integrating-with-salesforce}
 
 Salesforce.com è l&#39;azienda per l&#39;elaborazione cloud di livello Enterprise leader nel passaggio a Social Enterprise.
 
 Per informazioni sull&#39;integrazione del sito AEM e di Salesforce, vedere [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
 
-<!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
+<!--
+THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
 
 >[!NOTE]
@@ -49,7 +50,8 @@ Per informazioni sull&#39;integrazione del sito AEM e di Salesforce, vedere [Int
 
 Silverpop Engage provides marketing automation, email, mobile, and social.
 
-For information about integrating your AEM site and ExactTarget, see [Integrating with Silverpop Engage](/help/sites-administering/silverpop.md). -->
+For information about integrating your AEM site and ExactTarget, see [Integrating with Silverpop Engage](/help/sites-administering/silverpop.md).
+-->
 
 ## Integrazione con ExactTarget {#integrating-with-exacttarget}
 
@@ -59,7 +61,7 @@ Per informazioni sull&#39;integrazione del sito AEM e ExactTarget, vedere [Confi
 
 ## Integrazione con Facebook e Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook e Twitter sono servizi popolari di social networking. L’integrazione dell’AEM con Facebook e Twitter consente alle organizzazioni di fornire un’opzione di accesso Facebook o di Twitter per le proprietà digitali possedute, e quindi di personalizzare l’esperienza utente in base alle informazioni del profilo. Gli addetti al marketing possono anche combinare le informazioni del profilo con i dati provenienti da fonti aggiuntive, ad esempio un sistema di gestione delle relazioni con i clienti o un profilo del sito web, per creare una visualizzazione unificata del cliente.
+Facebook e Twitter sono popolari servizi di social networking. L’integrazione di AEM con Facebook e Twitter consente alle organizzazioni di fornire un’opzione di accesso Facebook o Twitter sulle proprietà digitali possedute, e quindi di personalizzare l’esperienza utente in base alle informazioni del profilo. Gli addetti al marketing possono anche combinare le informazioni del profilo con i dati provenienti da fonti aggiuntive, ad esempio un sistema di gestione delle relazioni con i clienti o un profilo del sito web, per creare una visualizzazione unificata del cliente.
 
 Per ulteriori informazioni, consulta [Accesso social](/help/communities/social-login.md).
 

@@ -7,9 +7,9 @@ role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2272'
 ht-degree: 2%
 
 ---
@@ -18,10 +18,11 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
-<!-- old content
+<!--
+old content
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].. 
 
@@ -30,7 +31,8 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. [!DNL Experience Manager] users are able to quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
 -->
 
-<!-- New overview content
+<!--
+New overview content
 -->
 
 Il servizio [!DNL Adobe Stock] consente ai designer e alle aziende di accedere a milioni di foto, vettori, illustrazioni, video, modelli e risorse 3D di alta qualità e curate, senza royalty, per tutti i progetti creativi.
@@ -39,7 +41,8 @@ Il servizio [!DNL Adobe Stock] consente ai designer e alle aziende di accedere a
 
 Le organizzazioni possono integrare il piano [!DNL Adobe Stock] aziendale con [!DNL Experience Manager Assets] per garantire che le risorse concesse in licenza siano ampiamente disponibili per i progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di [!DNL Experience Manager]. [!DNL Experience Manager] utenti possono trovare, visualizzare in anteprima e concedere in licenza le risorse Adobe Stock salvate in [!DNL Experience Manager] senza uscire dall&#39;interfaccia [!DNL Experience Manager].
 
-<!-- Old content
+<!--
+Old content
 ## Prerequisites {#prerequisites}
 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
@@ -63,7 +66,8 @@ Un piano [!DNL Adobe Stock] dell&#39;organizzazione
 
 All&#39;interno del diritto, esiste un profilo di prodotto predefinito per [!DNL Adobe Stock] in [!DNL Admin Console]. È possibile creare più profili, che determinano chi può concedere in licenza le risorse Stock. Un utente con accesso diretto al profilo di prodotto può accedere a [https://stock.adobe.com/](https://stock.adobe.com/it) e alle risorse Stock della licenza. Esiste invece un altro metodo per utilizzare Developer Access per creare un’integrazione (API). Questa integrazione autentica la comunicazione tra [!DNL Experience Manager Assets] e [!DNL Adobe Stock].
 
-<!-- old content
+<!--
+old content
 ## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].
@@ -104,7 +108,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 Come sviluppatore, eseguire i passaggi seguenti per integrare [!DNL Adobe Experience Manager] e [!DNL Adobe Stock].
 
 1. [Configura un programma in [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Aggiungi configurazione nell&#39;istanza di authoring  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Aggiungi configurazione nell&#39;istanza di authoring  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configura un programma in [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -124,7 +128,7 @@ Eseguire la procedura seguente per configurare un programma in [!DNL Developer C
 
 Per aggiungere la configurazione nell&#39;istanza di authoring [!DNL AEM], eseguire la procedura seguente:
 
-1. [Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza dell&#39;autore [!DNL AEM] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza dell&#39;autore [!DNL AEM] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [Aggiungi la configurazione cloud a cui connettersi [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza [!DNL AEM author] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
@@ -159,7 +163,8 @@ Eseguire la procedura seguente per aggiungere la configurazione cloud per connet
    * **[!UICONTROL Lingua]**: Seleziona **[!UICONTROL Inglese (Stati Uniti)]**.
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
    ![utilizzo di adobe stock con aem](/help/assets/assets/adobe-stock-config-page.png)
-<!-- old content
+<!--
+old content
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
 
 To integrate [!DNL Experience Manager] and [!DNL Adobe Stock], perform the following steps in the listed sequence: 
@@ -375,35 +380,35 @@ Puoi creare un gruppo di utenti o assegnare le autorizzazioni a un gruppo di ute
 
 Un utente non amministratore con autorizzazioni per la configurazione cloud [!DNL Adobe Stock] può cercare e concedere in licenza le risorse [!DNL Adobe Stock] dall&#39;interfaccia [!DNL Experience Manager].
 
-L&#39;utente deve eseguire un passaggio aggiuntivo per attivare la configurazione cloud [!DNL Adobe Stock] prima di accedere alle risorse [!DNL Adobe Stock]. Si tratta di un’attività una tantum. Se all&#39;utente vengono assegnate autorizzazioni su più configurazioni cloud [!DNL Adobe Stock], l&#39;utente può selezionare la configurazione desiderata tra le **[!UICONTROL Preferenze utente]**.
+L&#39;utente deve eseguire un passaggio aggiuntivo per attivare la configurazione cloud [!DNL Adobe Stock] prima di accedere alle risorse [!DNL Adobe Stock]. Si tratta di un’attività una tantum. If the user is assigned permissions on multiple [!DNL Adobe Stock] cloud configurations, the user can select the desired configuration from the **[!UICONTROL User Preferences]**.
 
-Per attivare la configurazione cloud [!DNL Adobe Stock]:
+To activate the [!DNL Adobe Stock] cloud configuration:
 
-1. Accedi a [!DNL Experience Manager].
+1. Log in to [!DNL Experience Manager].
 
-1. Fai clic sull&#39;icona utente in alto a destra, quindi fai clic su **[!UICONTROL Preferenze]**. Viene visualizzata la finestra **[!UICONTROL Preferenze utente]**.
+1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The **[!UICONTROL User Preferences]** window opens.
 
-1. Seleziona la **[!UICONTROL Configurazione Stock]** desiderata dall&#39;elenco a discesa e fai clic su **[!UICONTROL Accetta]** per attivare la configurazione.
+1. Select the desired **[!UICONTROL Stock Configuration]** from the dropdown list and click **[!UICONTROL Accept]** to activate the configuration.
 
-   ![preferenze utente](assets/aem-stock-preferences.png)
+   ![user-preferences](assets/aem-stock-preferences.png)
 
-1. Passa a **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock]**. È ora possibile visualizzare, cercare e concedere in licenza [!DNL Adobe Stock] risorse.
+1. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock]**. You can now view, search, and license [!DNL Adobe Stock] assets.
 
-Nella tabella seguente viene illustrato il funzionamento delle autorizzazioni utente durante l&#39;accesso alle risorse [!DNL Adobe Stock]:
+The following table explains how the user permissions work while accessing the [!DNL Adobe Stock] assets:
 
-| User | Gruppo | Autorizzazioni | Accetta configurazione Stock nelle preferenze utente | Accedere ad Assets | Accedere ad Adobe Stock |
+| User | Gruppo | Autorizzazioni | Accept Stock configuration in User Preferences | Access Assets | Access Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | admin | N/D | Tutti | N/D | Sì | Sì |
 | test-doc1 | Utente DAM | /conf/global /settings/stock/cloud-config | Sì | Sì | Sì |
-| test-doc1 | Utente DAM | /conf/global /settings/stock/cloud-config | No | Errore: impossibile caricare i dati | No |
-| test-doc1 | Utente DAM | **consenti**: /conf/global /settings/stock     **nega**: /cloud-config | La configurazione Stock non è visibile | Sì | No |
+| test-doc1 | Utente DAM | /conf/global /settings/stock/cloud-config | No | Error: Failed to load data | No |
+| test-doc1 | Utente DAM | **allow**: /conf/global /settings/stock     **deny**: /cloud-config | Stock configuration is not visible | Sì | No |
 
 
-## Usa e gestisci [!DNL Adobe Stock] risorse in [!DNL Experience Manager] {#usemanage}
+## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
 
-Utilizzando questa funzionalità, le organizzazioni possono consentire ai propri utenti di lavorare utilizzando [!DNL Adobe Stock] risorse in [!DNL Experience Manager Assets]. Dall&#39;interfaccia utente di [!DNL Experience Manager], gli utenti possono cercare [!DNL Adobe Stock] risorse e concedere in licenza le risorse richieste.
+Using this capability, organizations can allow its users to work using [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets]. From within the [!DNL Experience Manager] user interface, users can search [!DNL Adobe Stock] assets and license the required assets.
 
-Una volta ottenuta la licenza per una risorsa [!DNL Adobe Stock] in [!DNL Experience Manager], è possibile utilizzarla e gestirla come una risorsa tipica. In [!DNL Experience Manager], gli utenti possono cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividere le risorse in [!DNL Brand Portal]; accedere alle risorse e utilizzarle tramite l&#39;app desktop [!DNL Experience Manager] e così via.
+Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it can be used and managed like a typical asset. In [!DNL Experience Manager], gli utenti possono cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividere le risorse in [!DNL Brand Portal]; accedere alle risorse e utilizzarle tramite l&#39;app desktop [!DNL Experience Manager] e così via.
 
 ![Cerca [!DNL Adobe Stock] risorse e filtra i risultati dall&#39;area di lavoro [!DNL Adobe Experience Manager]](assets/adobe-stock-search-results-workspace.png)
 
@@ -467,12 +472,13 @@ Gli utenti possono visualizzare le proprietà sia per le risorse con licenza che
 
 >[!MORELIKETHIS]
 >
->* [Esercitazione video sull&#39;utilizzo di [!DNL Adobe Stock] risorse con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=it)
->* [[!DNL Adobe Stock] guida del piano Enterprise](https://helpx.adobe.com/it/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/it/stock/faq.html)
+>* [Esercitazione video sull&#39;utilizzo di [!DNL Adobe Stock] risorse con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] guida del piano Enterprise](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/stock/faq.html)
 
 
-<!--old content
+<!--
+old content
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
@@ -486,7 +492,8 @@ Gli utenti possono visualizzare le proprietà sia per le risorse con licenza che
 
 -->
 
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+<!--
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--

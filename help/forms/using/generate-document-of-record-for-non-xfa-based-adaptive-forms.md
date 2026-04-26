@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 2%
+source-wordcount: '4370'
+ht-degree: 3%
 
 ---
 
@@ -400,7 +400,7 @@ Le impostazioni del documento record di un componente sono disponibili nelle rel
    * **[!UICONTROL Inserisci]** > **[!UICONTROL A pagina]** > Nome della pagina master: inserisce il pannello nella pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
    * **[!UICONTROL Inserisci]** > **[!UICONTROL Inizio pagina successiva]**: inserisce il pannello nella parte superiore della pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
    * **[!UICONTROL Inserisci]** > **[!UICONTROL Inizio pagina]** > Nome della pagina master: inserisce il pannello nella parte superiore della pagina, quando viene eseguito il rendering della pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
-* **[!UICONTROL Paginazione]** > **[!UICONTROL Dopo]**: determina quale area riempire dopo aver posizionato un pannello. I campi seguenti sono disponibili nella sezione **[!UICONTROL Dopo]**:
+* **[!UICONTROL Paginazione]** > **[!UICONTROL Dopo]**: determina l&#39;area da riempire dopo l&#39;inserimento di un pannello.I campi seguenti sono disponibili nella sezione **[!UICONTROL After]**:
    * **[!UICONTROL Dopo]** > **[!UICONTROL Continua a riempire l&#39;elemento padre]**: continua l&#39;unione dei dati per tutti gli oggetti che devono ancora essere riempiti nel pannello padre.
    * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area contenuto successiva]**: inizia a riempire l&#39;area contenuto successiva dopo l&#39;inserimento del pannello.
    * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area dei contenuti]** > Nome dell&#39;area dei contenuti: inizia a riempire l&#39;area dei contenuti specificata dopo l&#39;inserimento del pannello.
@@ -487,7 +487,7 @@ Quando lavori su un documento record per moduli adattivi, tieni presenti le cons
 
 ## Usa un file XCI personalizzato
 
-Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms as a Cloud Service has a master XCI file.--> È possibile utilizzare un file XCI personalizzato per sostituire una o più proprietà predefinite specificate nel file XCI esistente. È ad esempio possibile scegliere di incorporare un tipo di carattere in un documento o di attivare la proprietà con tag per tutti i documenti. La tabella seguente specifica le opzioni XCI:
+Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms as a Cloud Service has a master XCI file.--> È possibile utilizzare un file XCI personalizzato per ignorare una o più proprietà predefinite specificate nel file XCI esistente. È ad esempio possibile scegliere di incorporare un tipo di carattere in un documento o di attivare la proprietà con tag per tutti i documenti. La tabella seguente specifica le opzioni XCI:
 
 | Opzione XCI | Descrizione |
 |--- |--- |
@@ -533,6 +533,8 @@ Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms a
 ### Utilizzare un file XCI personalizzato nell’ambiente di sviluppo Forms locale
 
 1. Carica il file XCI nell’ambiente di sviluppo locale.
-1. Aprire Gestione configurazione <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Apri Gestione configurazione.
+   <!--Cloud Service SDK-->
+   <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. Individua e apri la configurazione **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]**.
 1. Specifica il percorso del file XCI e fai clic su **[!UICONTROL Salva]**.

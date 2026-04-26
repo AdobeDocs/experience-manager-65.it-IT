@@ -10,9 +10,9 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Un profilo è la ricetta per le opzioni da applicare alle risorse caricate in un
 
 Tali regole possono includere l’aggiunta di metadati, il ritaglio intelligente delle immagini o la definizione di profili di codifica video. In Adobe Experience Manager, puoi creare tre tipi di profili, descritti in dettaglio ai seguenti collegamenti:
 
-* [Profili metadati](/help/assets/metadata-config.md#metadata-profiles)
+* [Profili di metadati](/help/assets/metadata-config.md#metadata-profiles)
 * [Profili immagine](/help/assets/image-profiles.md)
 * [Profili video](/help/assets/video-profiles.md)
 
@@ -44,29 +44,29 @@ Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appr
 
 >[!NOTE]
 >
->Si applica a *Dynamic Medie - modalità Scene7* solo nell&#39;Experience Manager 6.4.6.0 o versione successiva.
+>Si applica a *Dynamic Media - Modalità Scene7* solo in Experience Manager 6.4.6.0 o versione successiva.
 
 È possibile rielaborare le risorse in una cartella che dispone già di un profilo di elaborazione esistente che è stato successivamente modificato.
 
-Si supponga, ad esempio, di aver creato un profilo Immagine e di averlo assegnato a una cartella. Il profilo Immagine veniva applicato automaticamente alle risorse di immagini caricate nella cartella. Tuttavia, in seguito decidi di aggiungere al profilo una nuova proporzione di ritaglio avanzato. Ora, invece di selezionare e ricaricare di nuovo le risorse nella cartella, è sufficiente eseguire il flusso di lavoro *Rielaborazione Dynamic Medie* <!-- *Scene7: Reprocess Assets* -->.
+Si supponga, ad esempio, di aver creato un profilo Immagine e di averlo assegnato a una cartella. Il profilo Immagine veniva applicato automaticamente alle risorse di immagini caricate nella cartella. Tuttavia, in seguito decidi di aggiungere al profilo una nuova proporzione di ritaglio avanzato. Ora, invece di selezionare e ricaricare nuovamente le risorse nella cartella, è sufficiente eseguire il flusso di lavoro *Rielaborazione elemento multimediale dinamico* <!-- *Scene7: Reprocess Assets* -->.
 
 Puoi eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale la prima elaborazione non è riuscita. Di conseguenza, anche se non hai modificato un profilo di elaborazione o applicato un profilo di elaborazione, puoi comunque eseguire il flusso di lavoro di rielaborazione su una cartella di risorse in qualsiasi momento.
 
-Se necessario, puoi modificare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse a un massimo di 1000 risorse. Quando si esegue il flusso di lavoro _Scene7: Rielabora Assets_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Medie per l&#39;elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa nell’intero set di batch vengono aggiornati in caso di Experience Manager. Se la dimensione del batch è grande, potrebbe verificarsi un ritardo nell’elaborazione. In alternativa, se la dimensione del batch è troppo piccola, potrebbero verificarsi troppi round trip al server Dynamic Medie.
+Se necessario, puoi modificare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse a un massimo di 1000 risorse. Quando si esegue il flusso di lavoro _Scene7: Rielabora Assets_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l&#39;elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa nell’intero set di batch vengono aggiornati in Experience Manager. Se la dimensione del batch è grande, potrebbe verificarsi un ritardo nell’elaborazione. In alternativa, se la dimensione del batch è troppo piccola, potrebbero verificarsi troppi round trip al server Dynamic Media.
 
 Vedere [Regolare la dimensione del batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
 >[!NOTE]
 >
->Se esegui una migrazione in blocco di risorse da Dynamic Media Classic ad Experience Manager, devi abilitare l’agente di replica di migrazione sul server Dynamic Medie. Al termine della migrazione, assicurati di disabilitare l’agente.
+>Se esegui una migrazione in blocco di risorse da Dynamic Media Classic ad Experience Manager, devi abilitare l’agente di replica di migrazione sul server Dynamic Media. Al termine della migrazione, assicurati di disabilitare l’agente.
 >
->L’agente di pubblicazione della migrazione deve essere disabilitato sul server Dynamic Medie in modo che il flusso di lavoro Rielabora funzioni come previsto.
+>L’agente di pubblicazione della migrazione deve essere disabilitato sul server Dynamic Media in modo che il flusso di lavoro Rielabora funzioni come previsto.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **Per rielaborare le risorse in una cartella:**
 
-1. Ad Experience Manager, dalla pagina Assets, accedi a una cartella di risorse a cui è assegnato un profilo di elaborazione e per la quale desideri applicare il flusso di lavoro **[!UICONTROL Rielaborazione Dynamic Medie]**,
+1. In Experience Manager, dalla pagina di Assets, accedi a una cartella di risorse a cui è assegnato un profilo di elaborazione e per la quale desideri applicare il flusso di lavoro **[!UICONTROL Rielaborazione elemento multimediale dinamico]**,
 
    Le cartelle a cui è già stato assegnato un profilo di elaborazione sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella in Vista a schede.
 
@@ -82,7 +82,7 @@ Vedere [Regolare la dimensione del batch del flusso di lavoro di rielaborazione]
    ![Rielabora flusso di lavoro risorse 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Seleziona **[!UICONTROL Avvia flusso di lavoro]**.
-1. Dall&#39;elenco a discesa **[!UICONTROL Avvia flusso di lavoro]**, scegliere **[!UICONTROL Rielabora Dynamic Medie]**.
+1. Dall&#39;elenco a discesa **[!UICONTROL Avvia flusso di lavoro]**, scegliere **[!UICONTROL Rielaborazione elemento multimediale dinamico]**.
 1. (Facoltativo) Nel campo di testo **Inserisci il titolo del flusso di lavoro**, immetti un nome per il flusso di lavoro. Se necessario, puoi utilizzare il nome per fare riferimento all’istanza del flusso di lavoro.
 
    ![Rielabora risorse 2](/help/assets/assets/reprocess-assets2.png)
@@ -93,40 +93,41 @@ Vedere [Regolare la dimensione del batch del flusso di lavoro di rielaborazione]
 
 ### Regolare la dimensione batch del flusso di lavoro di rielaborazione {#adjusting-load}
 
-(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è di 50 risorse per processo. Questa dimensione ottimale del batch è determinata dalla dimensione media delle risorse e dai tipi MIME di risorse su cui viene eseguita la rielaborazione. Un valore più alto indica che in un singolo processo di rielaborazione sono presenti molti file. Pertanto, il banner di elaborazione rimane sulle risorse Experience Manager per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola - 1 MB o inferiore - Adobe consiglia di aumentare il valore a diversi 100, ma mai più di 1000. Se la dimensione media del file è grande, ad esempio centinaia di megabyte, l’Adobe consiglia di ridurre la dimensione del batch fino a 10.
+(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è di 50 risorse per processo. Questa dimensione ottimale del batch è determinata dalla dimensione media delle risorse e dai tipi MIME di risorse su cui viene eseguita la rielaborazione. Un valore più alto indica che in un singolo processo di rielaborazione sono presenti molti file. Pertanto, il banner di elaborazione rimane sulle risorse di Experience Manager per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola - 1 MB o inferiore - Adobe consiglia di aumentare il valore a diversi 100, ma mai più di 1000. Se la dimensione media del file è grande, ad esempio centinaia di megabyte, Adobe consiglia di ridurre la dimensione del batch fino a 10.
 
 **Per modificare facoltativamente la dimensione del batch del flusso di lavoro di rielaborazione:**
 
 1. In Experience Manager, seleziona **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi seleziona l&#39;icona **[!UICONTROL Strumenti]** (martello) > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Nella pagina Modelli di flusso di lavoro, in Vista a schede o Vista a elenco, selezionare **[!UICONTROL Rielabora Dynamic Medie]**.
+1. Nella pagina Modelli di flusso di lavoro, in Vista a schede o Vista a elenco, selezionare **[!UICONTROL Rielaborazione elemento multimediale dinamico]**.
 
-   ![Pagina Modelli di flusso di lavoro con il flusso di lavoro Rielabora Dynamic Medie selezionato nella vista a schede](/help/assets/assets-dm/reprocess-assets7.png)
+   ![Pagina Modelli di flusso di lavoro con il flusso di lavoro Rielaborazione elementi multimediali dinamici selezionato in Vista schede](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Sulla barra degli strumenti, selezionare **[!UICONTROL Modifica]**. Una nuova scheda del browser apre la pagina del modello di flusso di lavoro Rielabora Dynamic Medie.
-1. Nella pagina del flusso di lavoro Rielabora Dynamic Medie, nell&#39;angolo superiore destro, selezionare **[!UICONTROL Modifica]** per &quot;sbloccare&quot; il flusso di lavoro.
+1. Sulla barra degli strumenti, selezionare **[!UICONTROL Modifica]**. Una nuova scheda del browser apre la pagina del modello di flusso di lavoro Rielaborazione elementi multimediali dinamici.
+1. Nella pagina del flusso di lavoro di rielaborazione Dynamic Media, nell&#39;angolo superiore destro, selezionare **[!UICONTROL Modifica]** per &quot;sbloccare&quot; il flusso di lavoro.
 1. Nel flusso di lavoro, seleziona il componente Caricamento batch Scene7 per aprire la barra degli strumenti, quindi seleziona **[!UICONTROL Configura]** nella barra degli strumenti.
 
    ![Componente caricamento batch Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, impostare quanto segue:
+1. Nella finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, imposta quanto segue:
    * Nei campi di testo **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]** immettere un nuovo titolo e una nuova descrizione per il processo, se necessario.
    * Seleziona **[!UICONTROL Avanzamento gestore]** se il gestore avanza al passaggio successivo.
    * Nel campo **[!UICONTROL Timeout]** immettere il timeout del processo esterno (secondi).
    * Nel campo **[!UICONTROL Periodo]** immettere un intervallo di polling (secondi) per verificare il completamento del processo esterno.
-   * Nel campo **[!UICONTROL Batch]**, immettere il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione batch del server Dynamic Medie.
+   * Nel campo **[!UICONTROL Batch]**, immettere il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione batch del server Dynamic Media.
    * Seleziona **[!UICONTROL Avanza per timeout]** se desideri avanzare una volta raggiunto il timeout. Annulla la selezione se desideri passare alla casella in entrata una volta raggiunto il timeout.
 
    ![Finestra di dialogo Proprietà](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Nell&#39;angolo superiore destro della finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, selezionare **[!UICONTROL Fine]**.
+1. Nell&#39;angolo superiore destro della finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, seleziona **[!UICONTROL Fine]**.
 
-1. Nell&#39;angolo superiore destro della pagina del modello di flusso di lavoro Rielabora Dynamic Medie, selezionare **[!UICONTROL Sincronizza]**. Quando viene visualizzato **[!UICONTROL Sincronizzato]**, il modello runtime del flusso di lavoro è stato sincronizzato correttamente ed è pronto per rielaborare le risorse in una cartella.
+1. Nell&#39;angolo superiore destro della pagina del modello di flusso di lavoro Rielabora elemento multimediale dinamico, selezionare **[!UICONTROL Sincronizza]**. Quando viene visualizzato **[!UICONTROL Sincronizzato]**, il modello runtime del flusso di lavoro è stato sincronizzato correttamente ed è pronto per rielaborare le risorse in una cartella.
 
    ![Sincronizza modello flusso di lavoro](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Chiudere la scheda del browser che mostra il modello di flusso di lavoro Rielabora Dynamic Medie.
+1. Chiudi la scheda del browser che mostra il modello di flusso di lavoro Rielaborazione elementi multimediali dinamici.
 
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -144,4 +145,5 @@ Vedere [Regolare la dimensione del batch del flusso di lavoro di rielaborazione]
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
+-->

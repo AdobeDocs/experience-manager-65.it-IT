@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '152'
+ht-degree: 9%
 
 ---
 
@@ -35,8 +35,8 @@ Di seguito sono riportati i riferimenti API di JavaScript disponibili per i modu
 
 Di seguito sono riportati gli archivi open-source su GitHub per le librerie SPA.
 
-* [Mappatura componenti](https://github.com/adobe/aem-spa-component-mapping)
-* [Gestione modelli pagine](https://github.com/adobe/aem-spa-page-model-manager)
-* [Componenti modificabili React](https://github.com/adobe/aem-react-editable-components)
+* [Mappatura dei componenti](https://github.com/adobe/aem-spa-component-mapping)
+* [Gestione modelli di pagina](https://github.com/adobe/aem-spa-page-model-manager)
+* [React - Componenti modificabili](https://github.com/adobe/aem-react-editable-components)
 * [Componenti modificabili di Angular](https://github.com/adobe/aem-angular-editable-components)
 * [Core progetto SPA](https://github.com/adobe/aem-spa-project-core)

@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1171'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Il reporting delle risorse consente di valutare l&#39;utilità della distribuzione di [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets] puoi generare diversi rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, sul modo in cui gli utenti interagiscono con le risorse e sulle risorse scaricate e condivise.
@@ -114,7 +114,7 @@ Gli amministratori di [!DNL Adobe Experience Manager] possono generare e persona
    ![Selezionare o annullare la selezione delle colonne del report](assets/custom_columns.png)
 
 1. Fai clic su **[!UICONTROL Crea]** nella barra degli strumenti. Un messaggio notifica che la generazione del rapporto è stata avviata.
-1. Nella pagina [!UICONTROL Report risorse], lo stato di generazione del report si basa sullo stato corrente del processo di report, ad esempio [!UICONTROL Operazione riuscita], [!UICONTROL Non riuscita], [!UICONTROL In coda] o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del report, fare clic sul collegamento al report. In alternativa, selezionare il report e fare clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
+1. Nella pagina [!UICONTROL Report risorse], lo stato di generazione del report si basa sullo stato corrente del processo di report, ad esempio [!UICONTROL Operazione riuscita], [!UICONTROL Non riuscita], [!UICONTROL In coda] o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del rapporto, fai clic sul collegamento al rapporto. In alternativa, selezionare il report e fare clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 
    <!--![A generated report](assets/report_page.png)-->
    [Stato report](assets/report-status.JPG)
@@ -164,7 +164,7 @@ Per rimuovere i rapporti che non sono più necessari, configura il servizio Rimo
 
 ## Informazioni, suggerimenti e limitazioni per la risoluzione dei problemi {#best-practices-and-limitations}
 
-* Se alcuni rapporti o numeri nei rapporti non sono disponibili o come previsto, assicurati che il servizio Registrazione eventi DAM CQ  di giorno sia abilitato.
+* Se alcuni rapporti o numeri nei rapporti non sono disponibili o come previsto, assicurati che il servizio Registrazione eventi DAM CQ ] di [!UICONTROL giorno sia abilitato.
 
 * Rimuovi i rapporti che non sono più necessari. Utilizza le opzioni di configurazione nel servizio Rimozione report DAM per configurare i criteri per l’eliminazione dei report.
 

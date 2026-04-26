@@ -8,16 +8,16 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
 # Temi di riferimento{#reference-themes}
 
-[Temi](../../forms/using/themes.md) consente di applicare uno stile ai moduli senza una conoscenza approfondita del CSS. Oltre al tema predefinito, è possibile ottenere i temi seguenti installando il [pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it):
+[Temi](../../forms/using/themes.md) consente di applicare uno stile ai moduli senza una conoscenza approfondita del CSS. Oltre al tema predefinito, è possibile ottenere i temi seguenti installando il [pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * Beryl
 * Eseg
@@ -42,9 +42,11 @@ Il tema Beryl è utilizzato dal modulo adattivo We.Gov e enfatizza l&#39;uso del
 
 ![Tema Beryl](assets/beryl.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/beryl-1.png)-->
+](assets/beryl-1.png)
+-->
 
 ## Eseg {#exec}
 
@@ -52,9 +54,11 @@ Il tema Exec evita riempimenti di sfondo solidi per enfatizzare i componenti del
 
 ![Tema esecuzione](assets/exec.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-1.png)-->
+](assets/exec-1.png)
+-->
 
 ## Luce esecuzione {#exec-light}
 
@@ -62,9 +66,11 @@ Il tema Luce esecuzione utilizza lo spazio bianco per creare un’esperienza flu
 
 ![Esegue tema chiaro](assets/exec-light.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-light-1.png)-->
+](assets/exec-light-1.png)
+-->
 
 ## Libertà {#liberty}
 
@@ -72,9 +78,11 @@ Il tema Liberty usa un approccio minimalista per evidenziare l&#39;importante. A
 
 ![Tema Liberty](assets/liberty.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/liberty-1.png)-->
+](assets/liberty-1.png)
+-->
 
 ## Tranquilla {#tranquil}
 
@@ -82,9 +90,11 @@ Il tema Tranquilla fornisce sfumature chiare e scure della combinazione di color
 
 ![Tema Tranquilla](assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tranquil-1.png)-->
+](assets/tranquil-1.png)
+-->
 
 ## Ultramarina {#ultramarine}
 
@@ -100,9 +110,11 @@ Il tema Urbano enfatizza un aspetto minimalista e funzionale per la tua forma. Q
 
 ![Tema Urbano](assets/urbane.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/urbane-1.png)-->
+](assets/urbane-1.png)
+-->
 
 ## Standard di progettazione Web USA {#u-s-web-design-standards}
 
@@ -110,6 +122,8 @@ Come suggerisce il nome, il tema degli standard di progettazione Web USA utilizz
 
 ![Stati Uniti Tema standard progettazione Web](assets/us-web-standards.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/usgov.png)-->
+](assets/usgov.png)
+-->

@@ -1,5 +1,5 @@
 ---
-title: Utilizzo dei servizi documentali AEM a livello di programmazione
+title: Utilizzo dei servizi basati su documenti di AEM a livello di programmazione
 description: Scopri come utilizzare le API di Document Services per firmare, crittografare, assegnare tag e generare documenti PDF in formato digitale.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,28 +8,28 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '6448'
+source-wordcount: '6595'
 ht-degree: 1%
 
 ---
 
-# Utilizzo dei servizi documentali AEM a livello di programmazione  {#using-aem-document-services-programmatically}
+# Utilizzo dei servizi basati su documenti di AEM a livello di programmazione  {#using-aem-document-services-programmatically}
 
-Esempi ed esempi in questo documento sono utili per comprendere e utilizzare i servizi documentali AEM in un ambiente AEM Forms su OSGi. Per esempi ed esempi sull’ambiente AEM Forms su JEE, consulta
+Esempi ed esempi in questo documento sono utili per comprendere e utilizzare AEM Document Services in un ambiente AEM Forms su OSGi. Per esempi ed esempi sull’ambiente AEM Forms su JEE, consulta
 
-* [Guida rapida all&#39;API Java di Signature Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=it&#programming-aem-forms-jee)
+* [Guida introduttiva all’API Java di Signature Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
 
-* [Guida rapida all&#39;API Java del servizio di crittografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=it&#developer-reference)
+* [Servizio di crittografia API Java - Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
 
-* [Guida rapida all&#39;API Java del servizio Acrobat Reader extensions](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=it&#developer-reference)
+* [Guida introduttiva al servizio Acrobat Reader extensions API Java](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## Prerequisito {#prerequisite}
 
 * Prima di utilizzare le API del servizio DocAssurance, [configurare il servizio DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) con il tuo progetto Maven AEM. Le classi client necessarie per creare progetti Maven utilizzando i servizi documentali AEM sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
+* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) con il tuo progetto AEM Maven. Le classi client necessarie per creare progetti Maven utilizzando AEM Document Services sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 
 * Scopri [come creare il tuo progetto AEM utilizzando Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -39,7 +39,7 @@ Il servizio DocAssurance include i seguenti servizi:
 
 * Servizio di firma
 * Servizio Encryption
-* Servizio Estensione Reader
+* Servizio Reader Extension
 
 È possibile eseguire le operazioni seguenti utilizzando il servizio DocAssurance:
 
@@ -71,11 +71,11 @@ Il servizio DocAssurance include i seguenti servizi:
 
 >[!NOTE]
 >
->Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/index.html)
+>Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Aggiunta di un campo di firma invisibile {#adding-an-invisible-signature-field}
 
-Le firme digitali vengono visualizzate nei campi firma, ovvero nei campi modulo che contengono una rappresentazione grafica della firma. I campi di firma possono essere visibili o invisibili. I firmatari possono utilizzare un campo di firma preesistente oppure è possibile aggiungere un campo di firma a livello di programmazione. In entrambi i casi, il campo firma deve esistere prima che un documento PDF possa essere firmato. Puoi aggiungere un campo di firma a livello di programmazione utilizzando l’API Java di Signature Service o l’API del servizio web di firma. È possibile aggiungere più campi firma a un documento PDF. Tuttavia, ogni nome del campo firma deve essere univoco.
+Le firme digitali vengono visualizzate nei campi firma, ovvero nei campi modulo che contengono una rappresentazione grafica della firma. I campi di firma possono essere visibili o invisibili. I firmatari possono utilizzare un campo di firma preesistente oppure è possibile aggiungere un campo di firma a livello di programmazione. In entrambi i casi, il campo firma deve esistere prima che un documento PDF possa essere firmato. Puoi aggiungere un campo di firma a livello di programmazione utilizzando l’API Java di Signature Service o l’API del servizio web di firma. È possibile aggiungere più campi firma a un documento di PDF. Tuttavia, ogni nome del campo firma deve essere univoco.
 
 **Sintassi**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -97,7 +97,7 @@ Le firme digitali vengono visualizzate nei campi firma, ovvero nei campi modulo 
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>Oggetto <code>FieldMDPOptionSpec</code> che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo parametro è facoltativo e può accettare un valore nullo.</td>
+   <td>Oggetto <code>FieldMDPOptionSpec</code> che specifica i campi del documento di PDF bloccati dopo la firma del campo firma. Questo parametro è facoltativo e può accettare un valore nullo.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
@@ -247,7 +247,7 @@ signOptions.setSigAppearence(sigAppearence);
 
 ### Aggiunta di un campo firma  {#adding-a-signature-field-nbsp}
 
-Puoi aggiungere un campo di firma a livello di programmazione utilizzando l’API Java di Signature Service o l’API del servizio web di firma. È possibile aggiungere più campi firma a un documento PDF. Tuttavia, ogni nome del campo firma deve essere univoco.
+Puoi aggiungere un campo di firma a livello di programmazione utilizzando l’API Java di Signature Service o l’API del servizio web di firma. È possibile aggiungere più campi firma a un documento di PDF. Tuttavia, ogni nome del campo firma deve essere univoco.
 
 **Sintassi**:
 
@@ -286,7 +286,7 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>Oggetto <code>FieldMDPOptionSpec</code> che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo è un parametro facoltativo e può essere nullo.</td>
+   <td>Oggetto <code>FieldMDPOptionSpec</code> che specifica i campi del documento di PDF bloccati dopo la firma del campo firma. Questo è un parametro facoltativo e può essere nullo.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
@@ -634,7 +634,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 ### Recupero firma {#getting-signature}
 
-È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi di firma in un documento PDF o per verificarli, recuperare i nomi a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+È possibile recuperare i nomi di tutti i campi firma presenti in un documento di PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi di firma in un documento PDF o per verificarli, recuperare i nomi a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintassi**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -652,7 +652,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Nome del campo firma che contiene una firma. Specificare il nome completo del campo firma. Quando si utilizza un documento PDF basato su un modulo XFA, è possibile utilizzare il nome parziale del campo firma. Ad esempio, è possibile specificare <code>form1[0].#subform[1].SignatureField3[3]</code> come <code>SignatureField3[3]</code>.</td>
+   <td>Nome del campo firma che contiene una firma. Specificare il nome completo del campo firma. Quando si utilizza un documento di PDF basato su un modulo XFA, è possibile utilizzare il nome parziale del campo firma. Ad esempio, è possibile specificare <code>form1[0].#subform[1].SignatureField3[3]</code> come <code>SignatureField3[3]</code>.</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
@@ -661,7 +661,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
  </tbody>
 </table>
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperate le informazioni sulla firma per il campo della firma specificato in un documento di PDF.
+Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperate le informazioni sulla firma per il campo di firma specificato in un documento di PDF.
 
 ```java
 /*************************************************************************
@@ -758,7 +758,7 @@ public class GetSignature {
 
 ### Recupero elenco campi firma  {#getting-signature-field-list-nbsp}
 
-È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è sicuri dei nomi dei campi di firma in un documento PDF, è possibile recuperarli e verificarli a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+È possibile recuperare i nomi di tutti i campi firma presenti in un documento di PDF che si desidera firmare o certificare. Se non si è sicuri dei nomi dei campi di firma in un documento di PDF, è possibile recuperarli e verificarli a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintassi**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
@@ -769,7 +769,7 @@ public class GetSignature {
 | `inDoc` | Oggetto documento contenente PDF |
 | `unlockOptions` | Include i parametri necessari per sbloccare un file crittografato. Questa opzione è necessaria solo se il file è crittografato. |
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperati i nomi dei campi di firma in un documento di PDF.
+Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperati i nomi dei campi firma in un documento di PDF.
 
 ```java
 /*************************************************************************
@@ -873,11 +873,11 @@ public class GetSignatureFields {
 
 ### Modifica dei campi della firma  {#modifying-signature-fields-nbsp}
 
-È possibile modificare i campi della firma presenti in un documento PDF. La modifica di un campo di firma comporta la modifica dei valori del dizionario del blocco del campo di firma o dei valori del dizionario dei valori iniziali.
+È possibile modificare i campi della firma presenti in un documento di PDF. La modifica di un campo di firma comporta la modifica dei valori del dizionario del blocco del campo di firma o dei valori del dizionario dei valori iniziali.
 
 Un dizionario di blocco dei campi specifica un elenco di campi che vengono bloccati quando il campo firma è firmato. Un campo bloccato impedisce agli utenti di modificare il campo. Un dizionario dei valori iniziali contiene informazioni vincolanti utilizzate al momento dell&#39;applicazione della firma. È ad esempio possibile modificare le autorizzazioni che controllano le azioni che possono essere eseguite senza invalidare una firma.
 
-Modificando un campo di firma esistente, è possibile modificare il documento PDF in modo che rifletta i requisiti aziendali in continua evoluzione. Ad esempio, un nuovo requisito aziendale richiede il blocco di tutti i campi del documento dopo la firma del documento.
+Modificando un campo di firma esistente, è possibile modificare il documento PDF in base ai requisiti aziendali in continua evoluzione. Ad esempio, un nuovo requisito aziendale richiede il blocco di tutti i campi del documento dopo la firma del documento.
 
 **Sintassi**: `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
@@ -1042,7 +1042,7 @@ public class ModifySignatureField {
 
 È possibile proteggere un documento PDF certificandolo con un tipo particolare di firma, denominata firma certificata. Una firma certificata si distingue da una firma digitale nei seguenti modi:
 
-* Deve essere la prima firma applicata al documento PDF. In altre parole, quando viene applicata la firma certificata, gli altri campi firma del documento devono essere non firmati. In un documento PDF è consentita una sola firma certificata. Per firmare e certificare un documento PDF, certificalo prima di firmarlo. Dopo aver certificato un documento PDF, è possibile firmare digitalmente ulteriori campi di firma.
+* Deve essere la prima firma applicata al documento PDF. In altre parole, quando viene applicata la firma certificata, gli altri campi firma del documento devono essere non firmati. In un documento PDF è consentita una sola firma certificata. Per firmare e certificare un documento di PDF, certificalo prima di firmarlo. Dopo aver certificato un documento di PDF, è possibile firmare digitalmente ulteriori campi di firma.
 * L&#39;autore o l&#39;originatore del documento può specificare che il documento può essere modificato in alcuni modi senza invalidare la firma certificata. Ad esempio, il documento può consentire la compilazione di moduli o la creazione di commenti. Se l’autore specifica che una determinata modifica non è consentita, Acrobat impedisce agli utenti di modificare il documento in questo modo. Se vengono apportate tali modifiche, la firma certificata non è valida. Inoltre, Acrobat genera un avviso quando un utente apre il documento. Con le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
 * Al momento della firma, il documento viene analizzato per individuare tipi specifici di contenuto che potrebbero rendere ambiguo o fuorviante il contenuto di un documento. Ad esempio, un’annotazione potrebbe oscurare del testo su una pagina importante per comprendere cosa viene certificato. Su tale contenuto può essere fornita una spiegazione (attestazione legale).
 
@@ -1063,11 +1063,11 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Documento PDF di input documento<br /> </td>
+   <td>Documento input PDF documento<br /> </td>
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Include gli argomenti necessari per crittografare un documento PDF<br /> </td>
+   <td>Include gli argomenti necessari per crittografare un documento di PDF<br /> </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
@@ -1075,7 +1075,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Include le opzioni necessarie per il Reader Estensione di un documento PDF</td>
+   <td>Include le opzioni necessarie per Reader Estensione di un documento PDF</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1351,7 +1351,7 @@ secureDocument consente di crittografare, firmare/certificare ed estendere un do
 
 Quando crittografi un documento PDF con una password, un utente deve specificare la password per aprire il documento PDF in Adobe Reader o Acrobat. Inoltre, prima che un’altra operazione di AEM Forms Document Services utilizzi il documento, è necessario sbloccare un documento PDF crittografato con password.
 
-**Crittografia dei documenti di PDF con certificati**
+**Crittografia di documenti PDF con certificati**
 
 La crittografia basata su certificato consente di crittografare un documento per destinatari specifici utilizzando la tecnologia a chiave pubblica.
 
@@ -1370,27 +1370,27 @@ Inoltre, gli elenchi di revoche di certificati (CRL) forniscono informazioni sui
 
 >[!NOTE]
 >
->Prima di poter crittografare un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio fonti attendibili AEM.
+>Prima di poter crittografare un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio fonti attendibili di AEM.
 
 **Applicazione dei diritti di utilizzo ai documenti di PDF**
 
-Puoi applicare i diritti di utilizzo ai documenti di PDF utilizzando l’API client Java per le estensioni di Reader e il servizio web. I diritti di utilizzo riguardano funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I documenti PDF a cui sono applicati diritti di utilizzo sono denominati documenti abilitati per i diritti. L’utente che apre un documento abilitato ai diritti in Adobe Reader può eseguire operazioni abilitate per quel documento specifico.
+Puoi applicare i diritti di utilizzo ai documenti PDF utilizzando l’API client Java e il servizio web delle estensioni di Reader. I diritti di utilizzo riguardano funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I documenti PDF a cui sono applicati diritti di utilizzo sono denominati documenti abilitati per i diritti. L’utente che apre un documento abilitato ai diritti in Adobe Reader può eseguire operazioni abilitate per quel documento specifico.
 
-Prima di poter eseguire il Reader Estendi un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio chiavi AEM.
+Prima di poter estendere un documento PDF con un certificato di Reader, è necessario assicurarsi di aggiungere il certificato ad AEM Keystore.
 
 **Firma digitale dei documenti di PDF**
 
-Le firme digitali possono essere applicate ai documenti PDF per garantire un livello di sicurezza adeguato. Le firme digitali, come le firme scritte a mano, forniscono un mezzo mediante il quale i firmatari si identificano e rilasciano dichiarazioni su un documento.
+Le firme digitali possono essere applicate ai documenti di PDF per garantire un livello di sicurezza elevato. Le firme digitali, come le firme scritte a mano, forniscono un mezzo mediante il quale i firmatari si identificano e rilasciano dichiarazioni su un documento.
 
 La tecnologia utilizzata per apporre la firma digitale ai documenti consente di garantire che il firmatario e i destinatari siano chiari su ciò che è stato firmato e certi che il documento non sia stato modificato dopo la firma.
 
-I documenti PDF sono firmati mediante una tecnologia a chiave pubblica. Un firmatario ha due chiavi: una chiave pubblica e una chiave privata. La chiave privata viene memorizzata nelle credenziali di un utente che devono essere disponibili al momento della firma.
+I documenti PDF sono firmati tramite una tecnologia a chiave pubblica. Un firmatario ha due chiavi: una chiave pubblica e una chiave privata. La chiave privata viene memorizzata nelle credenziali di un utente che devono essere disponibili al momento della firma.
 
 La chiave pubblica viene archiviata nel certificato dell&#39;utente che deve essere disponibile per i destinatari per convalidare la firma. Le informazioni sui certificati revocati si trovano nelle risposte CRL (Certificate Revocation List) e OCSP (Online Certificate Status Protocol) distribuite dalle autorità di certificazione (CA). L’ora della firma può essere ottenuta da una fonte attendibile nota come autorità di marca temporale.
 
 >[!NOTE]
 >
->Prima di poter firmare digitalmente un documento PDF, è necessario assicurarsi di aggiungere le credenziali nel registro chiavi AEM. Le credenziali sono la chiave privata utilizzata per la firma.
+>Prima di poter firmare digitalmente un documento PDF, è necessario assicurarsi di aggiungere le credenziali in AEM Keystore. Le credenziali sono la chiave privata utilizzata per la firma.
 
 >[!NOTE]
 >
@@ -1400,11 +1400,11 @@ La chiave pubblica viene archiviata nel certificato dell&#39;utente che deve ess
 
 È possibile proteggere un documento PDF certificandolo con un tipo particolare di firma, denominata firma certificata. Una firma certificata si distingue da una firma digitale nei seguenti modi:
 
-Deve essere la prima firma applicata al documento PDF, ovvero, al momento dell&#39;applicazione della firma certificata, tutti gli altri campi della firma presenti nel documento devono essere non firmati.
+Deve essere la prima firma applicata al documento PDF, ovvero, al momento dell&#39;applicazione della firma certificata, tutti gli altri campi firma del documento devono essere non firmati.
 
-In un documento PDF è consentita una sola firma certificata. Se si desidera firmare e certificare un documento PDF, è necessario certificarlo prima di firmarlo.
+In un documento PDF è consentita una sola firma certificata. Se si desidera firmare e certificare un documento di PDF, è necessario certificarlo prima di firmarlo.
 
-Dopo aver certificato un documento PDF, è possibile firmare digitalmente ulteriori campi di firma.
+Dopo aver certificato un documento di PDF, è possibile firmare digitalmente ulteriori campi di firma.
 
 L&#39;autore o l&#39;originatore del documento può specificare che il documento può essere modificato in alcuni modi senza invalidare la firma certificata.
 
@@ -1418,7 +1418,7 @@ Ad esempio, un’annotazione potrebbe oscurare del testo su una pagina important
 
 >[!NOTE]
 >
->Prima di poter firmare digitalmente un documento PDF, è necessario assicurarsi di aggiungere le credenziali nel registro chiavi AEM. Le credenziali sono la chiave privata utilizzata per la firma.
+>Prima di poter firmare digitalmente un documento PDF, è necessario assicurarsi di aggiungere le credenziali in AEM Keystore. Le credenziali sono la chiave privata utilizzata per la firma.
 
 **Sintassi**:
 
@@ -1452,7 +1452,7 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Include le opzioni necessarie per il Reader Estensione di un documento PDF</td>
+   <td>Include le opzioni necessarie per l'estensione di un documento PDF di Reader</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1461,7 +1461,7 @@ secureDocument(Document inDoc,
  </tbody>
 </table>
 
-**Esempio 1**: questo esempio viene utilizzato per eseguire la crittografia della password, certificando un campo di firma e un Reader Estensione del documento di PDF.
+**Esempio 1**: questo esempio viene utilizzato per eseguire la crittografia della password, la certificazione di un campo di firma e l&#39;estensione del documento PDF da parte di Reader.
 
 ```java
 /*************************************************************************
@@ -1763,7 +1763,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Esempio 2**: questo esempio viene utilizzato per eseguire la crittografia PKI, firmare un campo di firma e un Reader Estensione del documento PDF.
+**Esempio 2**: questo esempio viene utilizzato per eseguire la crittografia PKI, firmando un campo di firma e Reader Estendendo il documento PDF.
 
 ```java
 /*************************************************************************
@@ -2086,13 +2086,13 @@ public class PassEncryptSignExtend {
 }
 ```
 
-Se durante l’estensione di un documento PDF viene visualizzato il seguente messaggio di errore:
+Se durante l&#39;estensione di un documento PDF viene visualizzato il seguente messaggio di errore:
 
 ```javascript
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
-Significa che il servizio di estensione del Reader non è in grado di eseguire i JavaScript utilizzati nel documento entro l’intervallo di timeout definito.
+Significa che il servizio Reader Extension non è in grado di eseguire i JavaScript utilizzati nel documento entro l’intervallo di timeout definito.
 
 Gestisci l’intervallo di timeout definito per JavaScript nel documento di PDF utilizzando:
 
@@ -2441,7 +2441,7 @@ public void removeDocumentUsageRights() {
 
 #### Verifica delle firme digitali {#verifying-digital-signatures}
 
-PDF È possibile verificare che le firme digitali non siano state modificate e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le relative proprietà, ad esempio l&#39;identità del firmatario. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. Durante la verifica di una firma digitale, fare riferimento a un documento PDF contenente una firma digitale.
+È possibile verificare che le firme digitali non siano state modificate e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le relative proprietà, ad esempio l&#39;identità del firmatario. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. Durante la verifica di una firma digitale, fare riferimento a un documento di PDF contenente una firma digitale.
 
 **Sintassi**: `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
 
@@ -2759,7 +2759,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Verifica di più firme digitali {#verifying-multiple-digital-signatures}
 
-AEM consente di verificare le firme digitali nei documenti di PDF. Un documento PDF può contenere più firme digitali se è soggetto a un processo aziendale che richiede firme da più firmatari. Ad esempio, una transazione finanziaria richiede le firme sia del responsabile del prestito che del manager. È possibile utilizzare l’API del servizio di firma per verificare tutte le firme all’interno del documento di PDF. Quando si verificano più firme digitali, è possibile controllare lo stato e le proprietà di ogni firma. Prima di considerare attendibile una firma digitale, Adobe consiglia di verificarla.
+AEM consente di verificare le firme digitali nei documenti PDF. Un documento PDF può contenere più firme digitali se è soggetto a un processo aziendale che richiede firme da più firmatari. Ad esempio, una transazione finanziaria richiede le firme sia del responsabile del prestito che del manager. È possibile utilizzare l&#39;API Servizio di firma per verificare tutte le firme nel documento di PDF. Quando si verificano più firme digitali, è possibile controllare lo stato e le proprietà di ogni firma. Prima di considerare attendibile una firma digitale, Adobe consiglia di verificarla.
 
 **Sintassi**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -3178,7 +3178,7 @@ public class ClearSignatureField {
 
 ### Recupero campo firma di certificazione {#getting-certifying-signature-field}
 
-È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma presenti in un documento PDF o si desidera verificarli, è possibile recuperarli a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+È possibile recuperare i nomi di tutti i campi firma presenti in un documento di PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma presenti in un documento di PDF o si desidera verificarli, è possibile recuperarli a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintassi**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3297,7 +3297,7 @@ public class GetCertifyingSignatureField {
 
 ### Recupero tipo di crittografia PDF {#getting-pdf-encryption-type}
 
-È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma presenti in un documento PDF o si desidera verificarli, è possibile recuperarli a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+È possibile recuperare i nomi di tutti i campi firma presenti in un documento di PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma presenti in un documento di PDF o si desidera verificarli, è possibile recuperarli a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintassi**: `void getPDFEncryption(Document inDoc)`
 
@@ -3316,7 +3316,7 @@ public class GetCertifyingSignatureField {
  </tbody>
 </table>
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperate le informazioni sulla firma per il campo di firma specificato in un documento PDF.
+Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperate le informazioni sulla firma per il campo di firma specificato in un documento di PDF.
 
 ```java
 /*************************************************************************
@@ -3413,7 +3413,7 @@ public class GetPDFEncryption {
 
 ### Rimozione della crittografia della password da PDF {#removing-password-encryption-from-pdf}
 
-Rimuovi la crittografia basata su password da un documento PDF per consentire agli utenti di aprire il documento PDF in Adobe Reader o Acrobat senza dover specificare una password. Dopo aver rimosso la crittografia basata su password da un documento PDF, il documento non è più protetto.
+Rimuovere la crittografia basata su password da un documento PDF per consentire agli utenti di aprire il documento PDF in Adobe Reader o Acrobat senza dover specificare una password. Dopo aver rimosso la crittografia basata su password da un documento PDF, il documento non è più protetto.
 
 **Sintassi**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
@@ -3530,7 +3530,7 @@ Nell&#39;esempio di codice seguente viene rimossa la crittografia basata su pass
   </tr>
   <tr>
    <td><code>alias</code><br /> </td>
-   <td>Alias corrispondente alla chiave nell'archivio fonti attendibili Granite utilizzata per rimuovere la crittografia basata su certificati dal documento PDF.<br /> </td>
+   <td>Alias corrispondente alla chiave nell'archivio fonti attendibili Granite utilizzata per rimuovere la crittografia basata su certificati dal documento di PDF.<br /> </td>
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
@@ -3539,7 +3539,7 @@ Nell&#39;esempio di codice seguente viene rimossa la crittografia basata su pass
  </tbody>
 </table>
 
-Nell&#39;esempio di codice Java seguente viene rimossa la crittografia basata su certificato da un documento PDF.
+Nell&#39;esempio di codice Java riportato di seguito viene rimossa la crittografia basata su certificati da un documento PDF.
 
 ```java
     package com.adobe.docassurance.samples;
@@ -3664,7 +3664,7 @@ L’API generatePDFOutput genera un documento PDF unendo una progettazione di mo
   </tr>
   <tr>
    <td>dati</td>
-   <td>File XML contenente i dati uniti al documento PDF.<br /> </td>
+   <td>File XML contenente i dati uniti al documento di PDF.<br /> </td>
   </tr>
   <tr>
    <td>opzioni</td>
@@ -3673,7 +3673,7 @@ L’API generatePDFOutput genera un documento PDF unendo una progettazione di mo
  </tbody>
 </table>
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene generato un documento PDF unendo una struttura di modulo con i dati memorizzati in un file XML.
+Nell&#39;esempio di codice Java riportato di seguito viene generato un documento PDF unendo una progettazione di modulo con i dati memorizzati in un file XML.
 
 ```java
     @Reference private OutputService outputService;
@@ -3771,7 +3771,7 @@ L’API generatePDFOutput genera un documento PDF unendo una progettazione di mo
   </tr>
   <tr>
    <td>dati</td>
-   <td>File XML contenente i dati uniti al documento PDF.<br /> </td>
+   <td>File XML contenente i dati uniti al documento di PDF.<br /> </td>
   </tr>
   <tr>
    <td>opzioni</td>
@@ -3780,7 +3780,7 @@ L’API generatePDFOutput genera un documento PDF unendo una progettazione di mo
  </tbody>
 </table>
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene generato un documento PDF unendo una struttura di modulo con i dati memorizzati in un file XML.
+Nell&#39;esempio di codice Java riportato di seguito viene generato un documento PDF unendo una progettazione di modulo con i dati memorizzati in un file XML.
 
 ```java
     @Reference private OutputService outputService;
@@ -3894,7 +3894,7 @@ Unisce una struttura di modulo ai dati per creare un documento PDF. Facoltativam
  </tbody>
 </table>
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene generata la creazione di documenti PDF mediante l&#39;unione di progettazioni di moduli con dati memorizzati in un file XML.
+Nell&#39;esempio di codice Java riportato di seguito viene generata la creazione di documenti PDF mediante l&#39;unione di progettazioni di moduli con dati memorizzati in un file XML.
 
 ```java
 private ArrayList generatePDFBatch(String contentRoot,String multipleFiles) {
@@ -3998,7 +3998,7 @@ Genera un output PCL, PostScript e ZPL da un progetto di modulo e da un file di 
   </tr>
   <tr>
    <td>dati</td>
-   <td>File XML contenente dati uniti a documenti PDF.<br /> </td>
+   <td>File XML contenente dati uniti a documenti di PDF.<br /> </td>
   </tr>
   <tr>
    <td>opzioni</td>
@@ -4089,7 +4089,7 @@ Genera un output PCL, PostScript e ZPL in base alla progettazione del modulo e a
   </tr>
   <tr>
    <td>dati</td>
-   <td>File XML contenente dati uniti a documenti PDF.<br /> </td>
+   <td>File XML contenente dati uniti a documenti di PDF.<br /> </td>
   </tr>
   <tr>
    <td>opzioni</td>
@@ -4293,14 +4293,14 @@ String outputFolder="C:/Output";
 
 ## Servizio Forms {#forms-service}
 
-Il servizio Forms fornisce API per importare ed esportare dati da e verso un modulo interattivo di PDF. Un modulo PDF interattivo è un documento PDF che contiene uno o più campi utilizzati per visualizzare e raccogliere informazioni dagli utenti. Il servizio supporta le seguenti API:
+Il servizio Forms fornisce API per importare ed esportare dati da e verso un modulo PDF interattivo. Un modulo PDF interattivo è un documento di PDF che contiene uno o più campi utilizzati per visualizzare e raccogliere informazioni dagli utenti. Il servizio supporta le seguenti API:
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** esporta dati da un modulo PDF.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa dati in un modulo PDF interattivo.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** esporta dati da un modulo di PDF.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa dati in un PDF Form interattivo.
 
 ### exportData {#exportdata}
 
-Esporta i dati di un modulo PDF interattivo in formati XML e XDP.
+Esporta i dati del modulo da un modulo PDF interattivo in formati XML e XDP.
 
 **Sintassi:** `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
 
@@ -4459,17 +4459,17 @@ private File importData(File inDoc, File inXML)
 
 ## Servizio PDF Generator {#pdfgeneratorservice}
 
-Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
+Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre i PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
 
 ### GeneraServizioPDF {#generatepdfservice}
 
-GeneratePDFService fornisce API per la conversione di vari formati di file, ad esempio doc, docx, ppt, pptx, xls, xlsx, odp, odt, ods, swf (obsoleto), jpg, bmp, tif, png, html e molti altri formati di file in PDF. Fornisce inoltre API per esportare PDF in vari formati di file e ottimizzare i PDF. Il servizio supporta le seguenti API:
+GeneratePDFService fornisce API per la conversione in PDF di vari formati di file, ad esempio doc, docx, ppt, pptx, xls, xlsx, odp, odt, ods, swf (obsoleto), jpg, bmp, tif, png, html e molti altri formati di file. Fornisce inoltre API per esportare PDF in vari formati di file e ottimizzare i PDF. Il servizio supporta le seguenti API:
 
-* **createPDF**: converte un tipo di file supportato in un documento PDF. Supporta formati di file come Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Oltre a queste applicazioni, qualsiasi PDF generico di terze parti che generi un tipo di applicazione può anche essere collegato all’API.
-* **exportPDF**: converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento di PDF in PostScript( eps) incapsulato, HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). È inoltre possibile specificare [profili di verifica preliminare personalizzati](https://helpx.adobe.com/it/acrobat/using/preflight-profiles-acrobat-pro.html) per gli output PDF.
+* **createPDF**: converte un tipo di file supportato in un documento di PDF. Supporta formati di file come Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Oltre a queste applicazioni, qualsiasi tipo di applicazione generica PDF di terze parti che genera può anche essere collegato all’API.
+* **exportPDF**: converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento di PDF in PostScript( eps) incapsulato, HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx), Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). È inoltre possibile specificare [profili di verifica preliminare personalizzati](https://helpx.adobe.com/it/acrobat/using/preflight-profiles-acrobat-pro.html) per gli output di PDF.
 
 * **optimizePDF**: ottimizza il documento PDF e converte un documento PDF da un tipo a un altro. Il metodo accetta un documento PDF come input.
-* **htmlToPdf2**: converte una pagina di HTML in un documento di PDF. Accetta l’URL della pagina HTML come input.
+* **htmlToPdf2**: converte una pagina HTML in un documento PDF. Accetta l’URL della pagina HTML come input.
 
 >[!NOTE]
 >
@@ -4513,9 +4513,9 @@ GeneratePDFService fornisce API per la conversione di vari formati di file, ad e
 
 #### createPDF {#createpdf}
 
-L’API createPDF converte un tipo di file supportato in un documento PDF. Supporta vari formati di file come Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Oltre a queste applicazioni, qualsiasi PDF generico di terze parti che generi un tipo di applicazione può anche essere collegato all’API.
+L’API createPDF converte un tipo di file supportato in un documento PDF. Supporta vari formati di file come Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Oltre a queste applicazioni, qualsiasi tipo di applicazione generica PDF di terze parti che genera può anche essere collegato all’API.
 
-Per la conversione, sono obbligatori solo alcuni parametri. Un documento di input è un parametro obbligatorio. È possibile applicare successivamente le autorizzazioni di protezione, le impostazioni di output di PDF e le informazioni sui metadati al documento di output di PDF.
+Per la conversione, sono obbligatori solo alcuni parametri. Un documento di input è un parametro obbligatorio. È possibile applicare le autorizzazioni di protezione, le impostazioni di output di PDF e le informazioni sui metadati in un secondo momento al documento PDF di output.
 
 Il servizio createPDF restituisce un file java.util.Map con i risultati. Le chiavi della mappa sono:
 
@@ -4570,7 +4570,7 @@ Il servizio createPDF genera le seguenti eccezioni:
      <li>Nessuna protezione</li>
      <li>Sicurezza password<br /> </li>
      <li>Sicurezza certificato<br /> </li>
-     <li>Server Adobe Policy</li>
+     <li>Adobe Policy Server</li>
     </ul> <p>Si tratta di un parametro facoltativo.</p> </td>
   </tr>
   <tr>
@@ -4745,7 +4745,7 @@ finally {
 
 #### optimizePDF {#optimizepdf}
 
-L’API OptimizePDF ottimizza i file PDF riducendone le dimensioni. Il risultato di questa conversione è costituito da file PDF che potrebbero essere più piccoli delle versioni originali. Questa operazione converte anche i documenti PDF nella versione PDF specificata nei parametri di ottimizzazione. Restituisce l&#39;oggetto OptimizePDFResult contenente optimized PDF.
+L’API OptimizePDF ottimizza i file PDF riducendone le dimensioni. Il risultato di questa conversione sono file PDF che potrebbero essere più piccoli delle loro versioni originali. Questa operazione converte anche i documenti PDF nella versione PDF specificata nei parametri di ottimizzazione. Restituisce l&#39;oggetto OptimizePDFResult contenente PDF ottimizzato.
 
 Il servizio createPDF genera le seguenti eccezioni:
 
@@ -4835,7 +4835,7 @@ File optimizePDF(File inputFile, String fileTypeSettings, File settingsFile) thr
 
 Converte una pagina HTML in un documento PDF. Accetta l’URL della pagina HTML come input.
 
-Il servizio htmlToPdf2 restituisce un oggetto HtmlToPdfResult. È possibile ottenere il PDF convertito tramite result.getConvertedDocument().
+Il servizio htmlToPdf2 restituisce un oggetto HtmlToPdfResult. Puoi ottenere il PDF convertito tramite result.getConvertedDocument().
 
 Il servizio htmlToPdf2 genera le seguenti eccezioni:
 
@@ -4872,7 +4872,7 @@ HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String 
  </tbody>
 </table>
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene convertita una pagina HTML in un documento PDF.
+Il codice Java di esempio seguente converte una pagina HTML in un documento PDF.
 
 ```java
 Reference GeneratePDFService generatePdfService;
@@ -4939,7 +4939,7 @@ Il servizio createPDF genera le seguenti eccezioni:
 
 #### createPDF {#createpdf-1}
 
-Converte i formati supportati in documenti PDF. Il metodo accetta i formati di file ps, eps e prn come input. È possibile applicare al documento di PDF di output autorizzazioni di protezione, impostazioni di output e informazioni sui metadati specifiche.
+Converte i formati supportati in documenti PDF. Il metodo accetta i formati di file ps, eps e prn come input. È possibile applicare al documento PDF di output autorizzazioni di protezione, impostazioni di output e informazioni sui metadati specifiche.
 
 **Sintassi:**
 
@@ -4965,7 +4965,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
   </tr>
   <tr>
    <td>pdfSettings</td>
-   <td><p>Impostazioni di output PDF per il documento convertito. È possibile applicare solo le impostazioni seguenti:</p>
+   <td><p>Impostazioni di output di PDF per il documento convertito. È possibile applicare solo le impostazioni seguenti:</p>
     <ul>
      <li>Stampa di alta_qualità<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
@@ -4983,7 +4983,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>Nessuna protezione</li>
      <li>Sicurezza password<br /> </li>
      <li>Sicurezza certificato<br /> </li>
-     <li>Server Adobe Policy</li>
+     <li>Adobe Policy Server</li>
     </ul> <p>Si tratta di un parametro facoltativo.</p> </td>
   </tr>
   <tr>
@@ -4997,7 +4997,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
  </tbody>
 </table>
 
-Il codice Java di esempio seguente converte i file di input di tipo PostScript (PS), Encapsulated PostScript (EPS) e i file di testo della stampante (PRN) in file PDF.
+Il codice Java di esempio seguente converte i file di input di tipo PostScript (PS), PostScript incapsulato (EPS) e file di testo della stampante (PRN) in file PDF.
 
 ```java
 @Reference DistillerService distillerService;
@@ -5061,11 +5061,11 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ### Servizi Utilità Doc {#doc-utility-services}
 
-<!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
+<!-- Document utilities with synchronous APIs help you convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
-#### Assegna tag automatici ai documenti di PDF {#auto-tag-api}
+#### Assegna tag automatici ai documenti PDF {#auto-tag-api}
 
-L’API di Auto Tag PDF migliora l’accessibilità dei PDF aggiungendo tag ai documenti, garantendo la conformità agli standard di accessibilità. Ciò non solo migliora l’esperienza utente, ma garantisce anche precisione e coerenza tra i documenti. L’API di assegnazione tag automatica supporta l’assegnazione tag ai seguenti elementi:
+L’API di assegnazione tag automatici a PDF migliora l’accessibilità dei PDF aggiungendo tag ai documenti, garantendo la conformità con gli standard di accessibilità. Ciò non solo migliora l’esperienza utente, ma garantisce anche precisione e coerenza tra i documenti. L’API di assegnazione tag automatica supporta l’assegnazione tag ai seguenti elementi:
 
 * Blocchi di testo (paragrafi)
 * Elenchi puntati in un operatore

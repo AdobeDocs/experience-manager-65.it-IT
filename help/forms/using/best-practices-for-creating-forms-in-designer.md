@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '11685'
+source-wordcount: '11719'
 ht-degree: 0%
 
 ---
@@ -598,7 +598,7 @@ I campi avanzati possono essere un modo efficace per semplificare la compilazion
 
 È possibile utilizzare la tavolozza Accesso facilitato per assegnare ruoli agli oggetti in base allo scopo per cui l&#39;oggetto viene utilizzato. Questi ruoli possono essere applicati per creare titoli a livelli diversi.
 
-![Specifica di un ruolo di intestazione nella tavolozza Accesso facilitato](/help/forms/using/assets/image-15.png)
+![Specifica di un ruolo di intestazione nella tavolozza Accessibilità](/help/forms/using/assets/image-15.png)
 Figura 15: **Specificare un ruolo di intestazione nella tavolozza Accessibilità**
 
 Per creare un’intestazione nel modulo, effettua le seguenti operazioni:

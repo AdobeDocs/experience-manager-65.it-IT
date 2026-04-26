@@ -1,5 +1,5 @@
 ---
-title: Distribuzione HTTP2 dei contenuti
+title: Distribuzione di contenuti HTTP2
 description: Scopri come HTTP/2 migliora il modo in cui browser e server comunicano, consentendo un trasferimento più rapido delle informazioni e riducendo la quantità di potenza di elaborazione necessaria.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,9 +9,9 @@ role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f749892bf7fba9889adfc930771178154b92fa5d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ HTTP/2 migliora il modo in cui browser e server comunicano, consentendo un trasf
 
 Il seguente sito web descrive HTTP/2 e i relativi vantaggi in modo breve e semplice:
 
-[Informazioni su HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
+[Informazioni necessarie su HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## Quali sono i vantaggi principali del passaggio a HTTP/2 per la distribuzione dei contenuti? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -44,7 +44,8 @@ I test eseguiti da Adobe hanno prodotto i seguenti risultati:
 <!--
 The following demonstration illustrates the difference between HTTP/1 versus HTTP/2 loading:
 
-[https://http2.akamai.com/demo](https://http2.akamai.com/demo) -->
+[https://http2.akamai.com/demo](https://http2.akamai.com/demo)
+-->
 
 ## Posso passare a HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 
@@ -62,7 +63,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 La richiesta di passare a HTTP/2 viene avviata automaticamente, ma non eseguita automaticamente.
 
-1. Per passare a HTTP/2, avvia una richiesta di assistenza clienti Adobe. Vedere [Aprire un ticket di supporto](https://experienceleague.adobe.com/it?support-solution=General&lang=en&support-tab=home#support).
+1. Per passare a HTTP/2, avvia una richiesta di assistenza clienti Adobe. Vedere [Aprire un ticket di supporto](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support).
 
    1. Fornisci le seguenti informazioni nella richiesta di supporto:
 

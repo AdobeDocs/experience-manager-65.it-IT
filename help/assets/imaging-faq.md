@@ -9,10 +9,10 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3299'
-ht-degree: 0%
+source-wordcount: '3480'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ La tecnologia Smart Imaging applica le esclusive caratteristiche di visualizzazi
 
 ## Informazioni sulla tecnologia Smart Imaging {#what-is-smart-imaging}
 
-La tecnologia di imaging intelligente applica le funzionalità di intelligenza artificiale di Adobe e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
+La tecnologia Smart Imaging applica le funzionalità di Adobe AI e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
 E ora, ottieni un punteggio Google Core Web Vital migliore per LCP (Largest Contentful Paint) con Smart Imaging migliorato, che ora viene fornito con supporto sia AVIF che WebP.
 
@@ -46,12 +46,12 @@ L’imaging avanzato trae vantaggio dall’aumento delle prestazioni derivante d
 
 I seguenti esempi di risorse di immagini illustrano l’ottimizzazione Smart Imaging aggiunta:
 
-| Immagine (URL) | Miniatura  | Dimensioni (JPEG) | Dimensioni (WebP) con Smart Imaging | Formato (AVIF) con Smart Imaging | Riduzione % con WebP | % di riduzione con AVIF |
+| Immagine (URL) | Miniatura | Dimensioni (JPEG) | Dimensioni (WebP) con Smart Imaging | Formato (AVIF) con Smart Imaging | Riduzione % con WebP | % di riduzione con AVIF |
 |---|---|---|---|---|---|---|
-| [Immagine 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![immagine1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90,2 KB | 26,89% | 37,79% |
-| [Immagine 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![immagine2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16,01% | 72,57% |
-| [Immagine 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![immagine3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87,1 KB | 14,47% | 60,58% |
-| [Immagine 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![immagine4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8,25% | 51,85% |
+| [Immagine 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![immagine1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90,2 KB | 26.89% | 37.79% |
+| [Immagine 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![immagine2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
+| [Immagine 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![immagine3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87,1 KB | 14.47% | 60.58% |
+| [Immagine 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![immagine4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
 
 Analogamente a quanto sopra, Adobe ha anche eseguito un test con un set di campioni più grande. Il formato AVIF forniva una riduzione delle dimensioni del 20% in più rispetto a WebP, che forniva una riduzione del 27% rispetto a JPEG. Tutto alla stessa qualità visiva. In totale, AVIF fornisce una riduzione media delle dimensioni fino al 41% rispetto a JPEG.
 
@@ -59,12 +59,14 @@ Confrontando WebP e AVIF con PNG, si può notare una riduzione delle dimensioni 
 
 Vedi anche [Ottimizzazione immagine con formati immagine di nuova generazione (WebP e AVIF)](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
-<!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
+<!--
+HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
 * Large variety of devices with different form factors and high-resolution displays.
 * Constrained network bandwidth.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
+-->
 
 ## Vantaggi della tecnologia Smart Imaging {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -88,7 +90,7 @@ Attivando la conversione del formato del browser aggiungendo `bfc=on` all&#39;UR
 
 Per disattivare Smart Imaging, aggiungi `bfc=off` all&#39;URL dell&#39;immagine.
 
-Vedi anche [bfc](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
+Vedi anche [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
 
 ### Informazioni sull&#39;ottimizzazione del rapporto pixel del dispositivo (dpr) {#dpr}
 
@@ -203,7 +205,8 @@ No. Smart Imaging works seamlessly with your existing image URLs and image prese
 
 In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
+-->
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
@@ -255,7 +258,7 @@ Quando crei il caso di supporto, specifica le funzioni di Smart Imaging da attiv
 
       * Elenca tutti i domini rilevanti, ad esempio *`company.com`* o *`mycompany.scene7.com`*
       * Smart Imaging supporta domini sia generici che personalizzati.
-      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
+      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
 
          1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
          1. Cerca il campo **[!UICONTROL Nome server pubblicato]** per confermare il dominio.
@@ -337,8 +340,7 @@ Questa intestazione indica quanto segue:
 >
 >Se il valore di `X-Adobe-Smart-Imaging` è -1 e WebP è ancora in fase di distribuzione, Smart Imaging è attivo. Tuttavia, i vantaggi in termini di dimensioni non sono stati calcolati a causa di una cache obsoleta. Per risolvere il problema, è possibile utilizzare `cache=update` (una sola volta) nell&#39;URL dell&#39;immagine.
 >Esempio di utilizzo del modificatore:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->Per invalidare l’intera cache, è necessario creare un caso di supporto.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Per invalidare l’intera cache, è necessario creare un caso di supporto.
 
 +++
 

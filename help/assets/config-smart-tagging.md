@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a3c0010e5eaef7fc516d49e410bba1c3b3f9e4b9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2313'
 ht-degree: 14%
 
 ---
@@ -71,7 +71,7 @@ Per configurare il Servizio di contenuti avanzati, segui questi passaggi di live
 
 1. Crea un&#39;integrazione in [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Crea una configurazione dell&#39;account tecnico IMS [&#128279;](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
+1. Crea una configurazione dell&#39;account tecnico IMS [](#create-ims-account-config) utilizzando la chiave API e altre credenziali di Adobe Developer Console.
 
 1. [Configura il Servizio di contenuti avanzati](#configure-smart-content-service).
 
@@ -89,7 +89,8 @@ To configure the Smart Content Service, follow these top-level steps:
 
    1. [Configure your deployment](#configure-smart-content-service) using the API key and other credentials from Adobe Developer Console.
 
-   1. [Test the configuration](#validate-the-configuration).-->
+   1. [Test the configuration](#validate-the-configuration).
+   -->
 
 ### Creare l’integrazione con Adobe Developer Console {#create-adobe-io-integration}
 
@@ -151,7 +152,7 @@ Devi creare una configurazione dell’account tecnico IMS seguendo questi passag
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -225,7 +226,7 @@ A public certificate lets you authenticate your profile on Adobe Developer Conso
 
    >[!NOTE]
    >
-   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com/it-it](https://status.adobe.com/it-it).
+   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com](https://status.adobe.com).
 
 1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
 
@@ -285,7 +286,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -414,44 +415,44 @@ Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candida
 
 ![Immagini illustrative che illustrano le linee guida per la formazione](/help/assets/assets/do-not-localize/distraction.png)
 
-**Completeness (Completezza):** se un’immagine è idonea per più tag, aggiungi tutti i tag applicabili prima di includere l’immagine nella formazione. Ad esempio, per tag come `raincoat` e `model-side-view`, aggiungi entrambi i tag alla risorsa idonea prima di includerla nella formazione.
+**Completeness (Completezza):** se un’immagine è idonea per più tag, aggiungi tutti i tag applicabili prima di includere l’immagine nella formazione. For example, for tags, such as `raincoat` and `model-side-view`, add both the tags on the eligible asset before including it for training.
 
 ![Immagini illustrative che illustrano le linee guida per la formazione](/help/assets/assets/do-not-localize/completeness.png)
 
 >[!NOTE]
 >
->La capacità del Servizio di contenuti avanzati di addestrarsi sui tag e di applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione. Per ottenere i migliori risultati, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
+>The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training. For best results, Adobe recommends that you use visually similar images to train the service for each tag.
 
-### Formazione periodica {#periodic-training}
+### Periodic training {#periodic-training}
 
-Puoi abilitare il Servizio di contenuti avanzati per la formazione periodica sulle risorse e sui tag associati all’interno di una cartella. Apri la pagina [!UICONTROL Proprietà] della cartella di risorse, seleziona **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salva le modifiche.
+You can enable the Smart Content Service to train periodically on the assets and associated tags within a folder. Open the [!UICONTROL Properties] page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Una volta selezionata questa opzione per una cartella, [!DNL Experience Manager] esegue automaticamente un flusso di lavoro di formazione per addestrare il Servizio di contenuti avanzati sulle risorse della cartella e sui relativi tag. Per impostazione predefinita, il flusso di lavoro di formazione viene eseguito settimanalmente alle ore 00:00 del sabato.:30
+Once this option is selected for a folder, [!DNL Experience Manager] runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. By default, the training workflow runs on a weekly basis at 12:30 AM on Saturdays.
 
-### Formazione on-demand {#on-demand-training}
+### On-demand training {#on-demand-training}
 
-Puoi addestrare il Servizio di contenuti avanzati quando necessario dalla console Flusso di lavoro.
+You can train the Smart Content Service whenever required from the Workflow console.
 
-1. Nell&#39;interfaccia [!DNL Experience Manager], vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Apprendimento dei tag avanzati]**, quindi fai clic su **[!UICONTROL Avvia flusso di lavoro]** nella barra degli strumenti.
-1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]**, individua la cartella del payload che include le risorse con tag per l&#39;apprendimento del servizio.
-1. Specifica un titolo per il flusso di lavoro e aggiungi un commento. Quindi fare clic su **[!UICONTROL Esegui]**. Le risorse e i tag vengono inviati per la formazione.
+1. In the [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
+1. Specify a title for the workflow and add a comment. Then, click **[!UICONTROL Run]**. The assets and tags are submitted for training.
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
 >[!NOTE]
 >
->Una volta elaborate le risorse di una cartella per l’apprendimento, solo le risorse modificate vengono elaborate nei cicli di apprendimento successivi.
+>Once the assets in a folder are processed for training, only the modified assets are processed in subsequent training cycles.
 
-### Visualizzare i rapporti di formazione {#viewing-training-reports}
+### View training reports {#viewing-training-reports}
 
-Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag nel set di formazione di risorse, controlla il rapporto sul flusso di lavoro di formazione dalla console Rapporti.
+To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
-1. Nell&#39;interfaccia [!DNL Experience Manager], vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Rapporti]**.
-1. Nella pagina **[!UICONTROL Rapporti risorse]**, fai clic su **[!UICONTROL Crea]**.
-1. Seleziona il report **[!UICONTROL Apprendimento dei tag avanzati]** e fai clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
+1. In the [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
+1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Quindi fare clic su **[!UICONTROL Crea]** nella barra degli strumenti.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, seleziona il rapporto generato. Per visualizzare il report, fare clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 1. Esamina i dettagli del rapporto.
@@ -476,4 +477,4 @@ Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag 
 >
 >* [Panoramica e formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/metadata/image-smart-tags)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)

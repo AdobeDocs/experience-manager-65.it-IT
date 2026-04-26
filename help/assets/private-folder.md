@@ -7,10 +7,10 @@ feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 4%
+source-wordcount: '603'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Nell&#39;interfaccia utente di [!DNL Adobe Experience Manager Assets] è possibile creare una cartella privata disponibile esclusivamente per l&#39;utente. Puoi condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificarle.

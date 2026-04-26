@@ -9,10 +9,10 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 7%
+source-wordcount: '685'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +24,7 @@ Per AEM Communities, è necessario configurare Dispatcher per garantire il corre
 
 Per scoprire cosa è necessario per la distribuzione e la progettazione del sito specifiche
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&support-tab=homehome?lang=it#support)
 
 Consulta anche la [documentazione principale di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it).
 
@@ -42,15 +42,15 @@ Quando è configurato per supportare il caching di Dispatcher, all’intestazion
 
 ### Requisiti {#requirements}
 
-* Dispatcher versione 4.1.2 o successiva (vedere [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=it) per la versione più recente)
-* [Pacchetto ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
+* Dispatcher versione 4.1.2 o successiva (vedere [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) per la versione più recente)
+* [pacchetto ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versione 3.3.2 o successiva
    * Configurazione OSGi `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 
 ### Configurazione {#configuration}
 
-La configurazione OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** imposta la scadenza delle pagine memorizzate nella cache che vengono visualizzate in un percorso specificato.
+La configurazione OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** imposta la scadenza delle pagine memorizzate nella cache che appaiono nel percorso specificato.
 
 * Dalla [console Web](../../help/sites-deploying/configuring-osgi.md).
 
@@ -62,14 +62,14 @@ La configurazione OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max
   ![dispatcher](assets/dispatcher.png)
 
 * **Modelli filtro**
-  *(obbligatorio)* Uno o più percorsi alle pagine community. Esempio: `/content/sites/engage/(.*)`.
+  *(obbligatorio)* Uno o più percorsi alle pagine community. Ad esempio, `/content/sites/engage/(.*)`.
 
 * **Durata massima controllo cache**
   *(obbligatorio)* La durata massima (in secondi) da aggiungere all&#39;intestazione Controllo cache. Il valore deve essere maggiore di zero (0).
 
 ## Filtri Dispatcher {#dispatcher-filters}
 
-La sezione /filter del file `dispatcher.any` è documentata in [Configurazione dell&#39;accesso al contenuto - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it).
+La sezione /filter del file `dispatcher.any` è documentata in [Configurazione dell&#39;accesso al contenuto - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
 
 Questa sezione descrive le voci che potrebbero essere necessarie per il corretto funzionamento delle funzioni di Communities.
 
@@ -79,7 +79,7 @@ Negli esempi seguenti vengono utilizzati nomi di proprietà che probabilmente de
 
 Consulta anche:
 
-* [Elenco di controllo protezione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=it)
+* [Elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >
@@ -89,12 +89,13 @@ Consulta anche:
 
 >[!CAUTION]
 >
->Per ulteriori considerazioni sulla limitazione dell’accesso tramite Dispatcher, vedi [Elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=it). Inoltre, leggi [Elenco di controllo della sicurezza AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) per ulteriori dettagli sulla sicurezza relativi all’installazione di AEM.
+>Per ulteriori considerazioni sulla limitazione dell’accesso tramite Dispatcher, vedi [Elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html). Inoltre, leggi [Elenco di controllo della sicurezza AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) per ulteriori dettagli sulla sicurezza relativi all’installazione di AEM.
 >
 
 Le seguenti voci devono essere aggiunte alla fine della sezione /filter, specialmente dopo tutte le voci negate.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -158,7 +159,8 @@ Le seguenti voci devono essere aggiunte alla fine della sezione /filter, special
 ```
 
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # design and template assets
@@ -226,7 +228,8 @@ Le seguenti voci devono essere aggiunte alla fine della sezione /filter, special
 
 La sezione delle regole di `dispatcher.any` definisce quali risposte devono essere memorizzate nella cache in base all&#39;URL richiesto. Per le community, la sezione regole viene utilizzata per definire cosa non deve mai essere memorizzato in cache.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -248,7 +251,8 @@ La sezione delle regole di `dispatcher.any` definisce quali risposte devono esse
 /0208 { /type "deny" /url "/content/usergenerated/*" }
 ```
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # Never cache the client-side .social.json calls
@@ -270,7 +274,7 @@ La sezione delle regole di `dispatcher.any` definisce quali risposte devono esse
 ```
 -->
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 Una delle principali cause di problemi è l’inserimento di regole di filtro senza prestare attenzione all’effetto sulle regole precedenti, in particolare quando si aggiunge una regola per negare l’accesso.
 
@@ -280,7 +284,8 @@ Il primo modello di filtro viene spesso utilizzato per negare tutto in modo che 
 
 Di seguito è riportato un file `dispatcher.any` di esempio che include Communities /filters e /rules.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -594,7 +599,8 @@ Di seguito è riportato un file `dispatcher.any` di esempio che include Communit
   }
 ```
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # Each farm configures a set of load balanced renders (that is, remote servers)

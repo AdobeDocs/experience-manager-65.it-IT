@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 0%
+source-wordcount: '2476'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Questo documento descrive i passaggi consigliati per caricare un’applicazione 
 I prerequisiti sono semplici.
 
 * Assicurati che un’istanza di AEM sia in esecuzione localmente.
-* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it&#available-properties).
+* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Questo costituisce la base del progetto AEM che verrà aggiornato per includere l’applicazione a pagina singola esterna.
-   * Gli esempi in questo documento utilizzano il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it#spa-editor).
+   * Gli esempi in questo documento utilizzano il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Avrai a portata di mano l’applicazione a pagina singola React funzionante ed esterna che desideri integrare.
 
 ## Carica applicazione a pagina singola in un progetto AEM {#upload-spa-to-aem-project}
@@ -373,9 +373,9 @@ Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto
 
 Il seguente materiale di riferimento può essere utile per comprendere le applicazioni a pagina singola nel contesto di AEM.
 
-* [Archetipo Progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
+* [Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview)
 * [Progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it)
 * [Guida introduttiva alle applicazioni a pagina singola in AEM con React](spa-getting-started-react.md)
 * [Materiali di riferimento SPA (riferimenti API)](spa-reference-materials.md)
 * [Blueprint SPA e PageModelManager](spa-blueprint.md#pagemodelmanager)
-* [Routing modello SPA](spa-routing.md)
+* [Indirizzamento del modello SPA](spa-routing.md)

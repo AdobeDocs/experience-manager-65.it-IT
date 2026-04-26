@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2114'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Questo documento descrive il contratto generale che qualsiasi framework SPA deve
 >
 >I seguenti requisiti sono indipendenti dal framework. Se questi requisiti sono soddisfatti, è possibile fornire un livello specifico del framework composto da moduli, componenti e servizi.
 >
->**Questi requisiti sono già soddisfatti per i framework React e Angular in AEM.** I requisiti di questo blueprint sono rilevanti solo se desideri implementare un altro framework da utilizzare con AEM.
+>**Questi requisiti sono già soddisfatti per i framework React e Angular in AEM.** I requisiti di questo blueprint sono pertinenti solo se desideri implementare un altro framework per l’utilizzo con AEM.
 
 >[!CAUTION]
 >
@@ -76,7 +76,7 @@ La struttura del contenuto della pagina viene memorizzata in AEM. Il modello del
 
 I componenti dell’applicazione a pagina singola devono essere sincronizzati con il modello della pagina e devono essere aggiornati di conseguenza con eventuali modifiche al contenuto. Un pattern che utilizza componenti dinamici deve essere utilizzato per creare istantaneamente istanze di componenti seguendo la struttura del modello di pagina fornita.
 
-### Meta campi {#meta-fields}
+### Campi Meta {#meta-fields}
 
 Il modello di pagina utilizza il modulo di esportazione del modello JSON, a sua volta basato sull&#39;API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). I modelli sling esportabili espongono il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello di dati:
 

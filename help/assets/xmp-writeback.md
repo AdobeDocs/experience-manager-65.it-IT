@@ -1,5 +1,5 @@
 ---
-title: Write-back di XMP alle rappresentazioni
+title: Write-back XMP alle rappresentazioni
 description: Scopri in che modo la funzione di writeback di XMP propaga le modifiche ai metadati di una risorsa a tutte le sue rappresentazioni o a quelle specifiche.
 contentOwner: AG
 role: User, Admin
@@ -7,18 +7,18 @@ feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 6%
+source-wordcount: '801'
+ht-degree: 7%
 
 ---
 
-# Write-back di XMP alle rappresentazioni {#xmp-writeback-to-renditions}
+# Write-back XMP alle rappresentazioni {#xmp-writeback-to-renditions}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
 | AEM 6.5 | Questo articolo |
 
 Questa funzionalità di writeback di XMP in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati nelle rappresentazioni della risorsa originale. Quando modifichi i metadati di una risorsa dall’interno di Assets o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo metadati nella gerarchia delle risorse.
@@ -86,7 +86,7 @@ Il filtraggio dei metadati XMP tramite elenco Consentiti risolve questo problema
 
 1. Per aprire Configuration Manager, accedere a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Apri la configurazione **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. Per applicare il filtro tramite un elenco Consentiti Inserì nell&#39;elenco Consentiti, selezionare **[!UICONTROL Applica il filtro a una proprietà di XMP]** e specificare le proprietà da importare nella casella **[!UICONTROL Nomi XML consentiti per il filtro di XMP]**.
+1. Per applicare il filtro tramite un elenco Consentiti, selezionare **[!UICONTROL Applica il filtro a una proprietà di XMP]** e specificare le proprietà da importare nella casella **[!UICONTROL Nomi XML consentiti per il filtro di XMP]**.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

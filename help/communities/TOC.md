@@ -8,10 +8,10 @@ user-guide-description: Crea esperienze online come forum, gruppi di utenti, ris
 feature: Communities
 role: User
 hide: true
-source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 11%
+source-wordcount: '427'
+ht-degree: 12%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 11%
    + [Creare un nuovo sito community](create-site.md)
    + [Esperienza del sito pubblicato](published-site.md)
    + [Creazione di gruppi nidificati](nested-groups.md)
-+ Distribuzione di {#deploy}
++ Implementazione {#deploy}
    + [Distribuzione delle community](deploy-communities.md)
-   + [Aggiornamento alle community AEM 6.5](upgrade.md)
+   + [Aggiornamento ad AEM 6.5 Communities](upgrade.md)
    + [Topologie consigliate per le community](topologies.md)
    + [Configurazione di Dispatcher per Communities](dispatcher.md)
 + Amministrazione {#administer}
@@ -44,7 +44,7 @@ ht-degree: 11%
    + [Punteggio community e badge](implementing-scoring.md)
    + [Gestione di utenti e gruppi di utenti](users.md)
    + [Console Gruppi per community](groups.md)
-   + [Accesso social network con Facebook e Twitter](social-login.md)
+   + [Accesso social network tramite Facebook e Twitter](social-login.md)
    + [SRP - Archiviazione di contenuti community](working-with-srp.md)
    + [Console Siti community](sites-console.md)
    + [Console di gestione membri e gruppi](members.md)
@@ -59,7 +59,7 @@ ht-degree: 11%
    + [FFmpeg per community](ffmpeg.md)
    + [Moderazione in contesto](in-context.md)
    + [Punteggio avanzato e badge](advanced.md)
-   + [ASRP - Provider risorsa di archiviazione Adobe](asrp.md)
+   + [ASRP - Provider risorse di archiviazione Adobe](asrp.md)
    + [MSRP - Provider risorsa di archiviazione MongoDB](msrp.md)
    + [Come impostare MongoDB per la demo](demo-mongo.md)
    + [DSRP - Provider risorsa di archiviazione database relazionale](dsrp.md)
@@ -76,7 +76,7 @@ ht-degree: 11%
    + [Guida ai componenti della community](components-guide.md)
    + [Nozioni di base su componenti, funzioni e funzioni](essentials.md)
    + [Tutorial](tutorials.md)
-   + [Risoluzione dei problemi](troubleshooting.md)
+   + [Risoluzione di problemi](troubleshooting.md)
    + [Linee guida per la codifica](code-guide.md)
    + [Personalizzazione lato server](server-customize.md)
    + [Personalizzazione lato client](client-customize.md)

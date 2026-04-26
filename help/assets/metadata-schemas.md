@@ -8,18 +8,18 @@ feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3595'
+source-wordcount: '3637'
 ht-degree: 8%
 
 ---
 
-# Schemi metadati {#metadata-schemas}
+# Schemi di metadati {#metadata-schemas}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Le organizzazioni propongono un modello di metadati che migliora l’individuazione delle risorse, l’utilizzo, l’interoperabilità e così via. L’applicazione corretta dei metadati è indispensabile per mantenere i flussi di lavoro e i processi basati sui metadati. Per rispettare la strategia e gli standard per i metadati a livello di organizzazione, puoi utilizzare schemi di metadati che consentono agli utenti DAM di allinearsi. [!DNL Adobe Experience Manager] consente di creare, gestire e applicare schemi di metadati in modo semplice e flessibile.
@@ -50,14 +50,14 @@ Per visualizzare un elenco di moduli o modelli, nell&#39;interfaccia [!DNL Exper
 |---|---|---|
 | [!UICONTROL predefinito] | | Modulo schema metadati di base per le risorse. |
 | | I seguenti moduli figlio ereditano le proprietà del modulo [!UICONTROL default]: | |
-| | <ul><li>[!UICONTROL video] dm</li></ul> | Modulo schema per video Dynamic Medie. |
+| | <ul><li>[!UICONTROL video] dm</li></ul> | Modulo schema per video Dynamic Media. |
 | | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME come `image/jpeg` e `image/png`. <br> Il modulo [!UICONTROL image] contiene i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: modulo schema per risorse con sottotipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: modulo schema per le risorse con sottotipo TIFF.</li></ul> |
 | | <ul><li>[!UICONTROL applicazione]</li></ul> | Modulo schema per risorse con tipo MIME come `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: modulo schema per risorse con sottotipo PDF. |
 | | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse video con tipo MIME come `video/avi` e `video/mp4`. |
 | [!UICONTROL raccolta] | | Modulo schema per le raccolte. |
 | [!UICONTROL contentfragment] | | [Modulo schema per frammenti di contenuto](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL moduli] | | Questo modulo schema fa riferimento a [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
-| [!UICONTROL ugc_contentfragment] | | Modulo schema per contenuti e risorse generati dall’utente integrati in Experience Manager da social media. |
+| [!UICONTROL ugc_contentfragment] | | Modulo schema per contenuti e risorse generati dagli utenti e integrati in Experience Manager dai social media. |
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ Di seguito sono riportati alcuni esempi di valori validi per una proprietà:
 
 * `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della risorsa `dc:title`.
 
-* `./jcr:created`: memorizza la data e l&#39;ora di creazione di una risorsa. È una proprietà protetta. Se configuri queste proprietà, l’Adobe consiglia di contrassegnarle come Disattiva modifica. In caso contrario, al momento di salvare le proprietà della risorsa si verifica l’errore “Impossibile modificare le risorse”.
+* `./jcr:created`: memorizza la data e l&#39;ora di creazione di una risorsa. È una proprietà protetta. Se configuri queste proprietà, Adobe consiglia di contrassegnarle come Disattiva modifica. In caso contrario, al momento di salvare le proprietà della risorsa si verifica l’errore “Impossibile modificare le risorse”.
 
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema metadati, il percorso della proprietà non deve includere spazi.
 
@@ -225,7 +225,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
 1. (Facoltativo) Aggiungi gli altri campi obbligatori. Ad esempio, formato, codec e durata per il video del tipo di risorsa.
 
-   Allo stesso modo, aggiungi campi dipendenti per altri tipi di risorse. Ad esempio, aggiungi il conteggio delle pagine dei campi e crea le risorse del documento, come i file di PDF e Word.
+   Allo stesso modo, aggiungi campi dipendenti per altri tipi di risorse. Ad esempio, aggiungi il conteggio delle pagine dei campi e crea le risorse del documento, come i file PDF e Word.
 
    ![campi_dipendenti_video](assets/video_dependent_fields.png)
 
@@ -257,7 +257,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
    >Puoi applicare la condizione **[!UICONTROL Requisito]** e **[!UICONTROL Visibilità]**, pur lasciandole indipendenti tra di loro.
 
 1. Allo stesso modo, crea una dipendenza tra il valore Video nel campo Tipo di risorsa e altri campi, come Codec e Durata.
-1. Ripeti i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel campo [!UICONTROL Tipo risorsa] e campi come [!UICONTROL Conteggio pagine] e [!UICONTROL Autore].
+1. Ripeti i passaggi per creare la dipendenza tra le risorse del documento (PDF e Word) nel campo [!UICONTROL Tipo risorsa] e campi come [!UICONTROL Conteggio pagine] e [!UICONTROL Autore].
 1. Fai clic su **[!UICONTROL Salva]**. Applica lo schema metadati a una cartella.
 
 1. Passa alla cartella a cui hai applicato lo schema metadati e apri la pagina delle proprietà di una risorsa. A seconda della scelta effettuata nel campo Tipo di risorsa, vengono visualizzati i campi di metadati a cascata pertinenti.
@@ -354,32 +354,33 @@ L’ereditarietà dei metadati da parte delle risorse si basa sullo schema appli
 
 ## Definire i metadati obbligatori {#define-mandatory-metadata}
 
-Puoi definire campi obbligatori a livello di cartella, che vengono applicati alle risorse caricate nella cartella. Se carichi risorse con metadati mancanti per i campi obbligatori definiti in precedenza, nella vista a schede viene visualizzata un’indicazione visiva di metadati mancanti.
+Puoi definire campi obbligatori a livello di cartella, che vengono applicati alle risorse caricate nella cartella. If you upload assets with missing metadata for the mandatory fields defined earlier, a visual indication for missing metadata appears on the assets in the card view.
 
 >[!NOTE]
 >
->Un campo di metadati può essere definito come obbligatorio in base al valore di un altro campo. Nella vista a schede, [!DNL Experience Manager] non visualizza il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
+>A metadata field can be defined as mandatory based on the value of another field. In the card view, [!DNL Experience Manager] does not display the warning message about missing metadata for such mandatory metadata fields.
 
 1. Nell&#39;interfaccia [!DNL Experience Manager] passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
-1. Salva il modulo metadati predefinito come modulo personalizzato. Ad esempio, salvarlo come `my_default`.
+1. Save the default metadata form as a custom form. For example, save it as `my_default`.
 
-1. Modifica il modulo personalizzato. Aggiungi un campo obbligatorio. Ad esempio, aggiungi un campo **[!UICONTROL Categoria]** e rendi obbligatorio il campo.
+1. Edit the custom form. Add a mandatory field. For example, add a **[!UICONTROL Category]** field and make the field mandatory.
 
-   ![Aggiungere un campo obbligatorio al modulo metadati selezionando Obbligatorio nella scheda Regole dell&#39;Editor modulo schema metadati](assets/mandatory-field-metadata-schema-editor.png)
+   ![Add mandatory field to metadata form by selecting Required in Rules tab in Metadata Schema Form Editor](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Figura: campo obbligatorio nell&#39;editor modulo schema metadati.*
+   *Figure: Mandatory field in metadata schema form editor.*
 
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina **[!UICONTROL Schema metadati Forms]**. Seleziona il modulo e fai clic su **[!UICONTROL Applica a cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina **[!UICONTROL Schema metadati Forms]**. Select the form and then click **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
 
-1. Passa alla cartella e carica alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
+1. Navigate to the folder and upload some assets with missing metadata for the mandatory field you added to the custom form. A message for the missing metadata for the mandatory field is displayed on the card view of the asset.
 
-   ![Messaggio relativo a metadati obbligatori mancanti nella vista a schede delle risorse durante il caricamento di risorse nella cartella](assets/metadata-missing-info-card-view.png)
+   ![Message for missing mandatory metadata on asset card view on uploading assets in folder](assets/metadata-missing-info-card-view.png)
 
-1. (Facoltativo) Accesso `https://[aem_server]:[port]/system/console/components/`. Configura e abilita il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disabilitato per impostazione predefinita. Imposta la frequenza con cui [!DNL Experience Manager] controlla la validità dei metadati sulle risorse. Questa configurazione aggiunge una proprietà `hasValidMetadata` a `jcr:content` di risorse. [!DNL Experience Manager] utilizza questa proprietà per filtrare le risorse non valide in un risultato di ricerca. Se aggiungi una risorsa dopo un controllo, la risorsa non verrà contrassegnata con `hasValidMetadata` fino al successivo controllo pianificato. Pertanto, le risorse non vengono visualizzate nei filtri di ricerca per i metadati non validi fino al successivo controllo pianificato.
+1. (Optional) Access `https://[aem_server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. This configuration adds a property `hasValidMetadata` to `jcr:content` of assets. [!DNL Experience Manager] uses this property to filter the invalid assets in a search result. If you add an asset after a check, the asset is not flagged with `hasValidMetadata` until the next scheduled check. Hence the assets do not appear in search filters for invalid metadata untill after the next scheduled check.
 
    >[!CAUTION]
    >
-   >I controlli di convalida dei metadati richiedono molte risorse e possono influire sulle prestazioni del sistema. Pianificare i controlli di conseguenza. Se il server non è in grado di gestire il carico, provare a disattivare il processo.
+   >The metadata validation checks are resource-intensive and may impact the performance of your system. Schedule the checks accordingly. Se il server non è in grado di gestire il carico, provare a disattivare il processo.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 7e4150d1b335caa6c1951cee69e14e351fa03ac6
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 5%
+source-wordcount: '170'
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ Immergiti nello sviluppo di applicazioni a pagina singola con questa esercitazio
 
 Per un esempio end-to-end di creazione di un’applicazione a pagina singola modificabile con AEM a partire dalla configurazione del progetto fino al routing dell’applicazione, consulta i tutorial sulle applicazioni a pagina singola WKND:
 
-* [Guida introduttiva all&#39;Editor SPA di AEM e Angular](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview)
-* [Guida introduttiva all&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2)
+* [Guida introduttiva all’Editor di SPA di AEM e Angular](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview)
+* [Guida introduttiva all’editor di SPA di AEM e React](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2)
 
 Prima di iniziare il progetto SPA per AEM, tuttavia, assicurati di rivedere anche il documento [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md).

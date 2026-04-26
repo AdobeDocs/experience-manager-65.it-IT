@@ -1,5 +1,5 @@
 ---
-title: Approfondimenti Assets
+title: Approfondimenti sulle risorse
 description: Scopri come la funzione Approfondimenti di Assets consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
 role: User, Admin
@@ -7,27 +7,27 @@ feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 9%
+source-wordcount: '797'
+ht-degree: 17%
 
 ---
 
-# Approfondimenti Assets {#asset-insights}
+# Approfondimenti sulle risorse {#asset-insights}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 La funzione Approfondimenti di Assets consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe. Consente di ricavare informazioni sulla loro performance e popolarità.
 
-[!DNL Assets] Insights acquisisce i dettagli dell&#39;attività dell&#39;utente, ad esempio il numero di volte in cui un&#39;immagine viene valutata, cliccata e impressioni (il numero di volte in cui un&#39;immagine viene caricata sul sito Web). Assegna punteggi alle immagini in base a queste statistiche. Puoi utilizzare i punteggi e le statistiche sulle prestazioni per selezionare le immagini più comuni da includere in cataloghi, campagne di marketing e così via. È inoltre possibile formulare criteri di archiviazione e rinnovo delle licenze in base a tali statistiche.
+[!DNL Assets] Insights acquisisce i dettagli dell&#39;attività dell&#39;utente, ad esempio il numero di volte in cui un&#39;immagine viene valutata, cliccata e impressioni (il numero di volte in cui un&#39;immagine viene caricata sul sito Web). Assegna punteggi alle immagini in base a queste statistiche. Puoi utilizzare i punteggi e le statistiche sulle prestazioni per selezionare le immagini più popolari da includere in cataloghi, campagne di marketing e così via. In base a tali statistiche, puoi inoltre formulare criteri di archiviazione e di rinnovo delle licenze.
 
 Affinché [!DNL Assets] Insights possa acquisire le statistiche di utilizzo delle immagini da un sito Web, è necessario includere il codice di incorporamento dell&#39;immagine nel codice del sito Web.
 
-Per consentire a Assets Insights di visualizzare le statistiche di utilizzo delle risorse, configura innanzitutto la funzione per recuperare i dati di reporting da Adobe Analytics. Per ulteriori dettagli, vedere [Configurare Assets Insights](/help/assets/configure-asset-insights.md). Per utilizzare questa funzionalità in un&#39;installazione locale, acquistare separatamente la licenza [!DNL Adobe Analytics]. I clienti su [!DNL Managed Services] ricevono [!DNL Analytics] licenza in bundle con [!DNL Experience Manager]. Vedi [descrizione del prodotto Managed Services](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Per consentire alle informazioni sulle risorse di visualizzare le statistiche di utilizzo per le risorse, configura innanzitutto la funzione per recuperare i dati di reporting da Adobe Analytics. Per ulteriori dettagli, vedere [Configurare Assets Insights](/help/assets/configure-asset-insights.md). Per utilizzare questa funzionalità in un&#39;installazione locale, acquistare separatamente la licenza [!DNL Adobe Analytics]. I clienti su [!DNL Managed Services] ricevono [!DNL Analytics] licenza in bundle con [!DNL Experience Manager]. Vedi [descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simulta
 
 ## Pianifica processo in background {#scheduling-background-job}
 
-Assets Insights recupera periodicamente i dati di utilizzo delle risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Assets Insights esegue un processo in background ogni 24 ore alle 2 del mattino per recuperare i dati. Tuttavia, puoi modificare sia la frequenza che l&#39;ora configurando il **[!UICONTROL processo di sincronizzazione report prestazioni risorse DAM Adobe CQ]** dalla console Web.
+Assets Insights recupera periodicamente i dati di utilizzo delle risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Assets Insights esegue un processo in background ogni 24 ore alle 2 del mattino per recuperare i dati. Tuttavia, puoi modificare sia la frequenza che l&#39;ora configurando il **[!UICONTROL processo di sincronizzazione report prestazioni risorse Adobe CQ DAM]** dalla console Web.
 
 1. Fare clic sul logo [!DNL Experience Manager] e passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
 1. Apri la configurazione del servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.

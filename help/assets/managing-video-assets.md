@@ -7,10 +7,10 @@ feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '5466'
-ht-degree: 7%
+source-wordcount: '5596'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Il formato video è una parte fondamentale delle risorse digitali di un’organizzazione. [!DNL Adobe Experience Manager] offre offerte e funzionalità mature per gestire l&#39;intero ciclo di vita delle risorse video dopo la loro creazione.
@@ -43,8 +43,8 @@ Per impostazione predefinita, [!DNL Assets] non ti consente di caricare risorse 
 
 Oltre alla configurazione [!DNL Assets], modifica le seguenti configurazioni per caricare risorse di grandi dimensioni:
 
-* Aumenta il tempo di scadenza del token. Vedere [!UICONTROL Adobe Granite CSRF Servlet] nella console Web in `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione CSRF](/help/sites-developing/csrf-protection.md).
-* Aumenta `receiveTimeout` nella configurazione Dispatcher. Per ulteriori informazioni, vedere [Experience Manager configurazione Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#renders-options).
+* Aumenta il tempo di scadenza del token. Consulta [!UICONTROL Adobe Granite CSRF Servlet] nella console Web in `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione CSRF](/help/sites-developing/csrf-protection.md).
+* Aumenta `receiveTimeout` nella configurazione Dispatcher. Per ulteriori informazioni, vedere [Configurazione di Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Oltre alla configurazione [!DNL Assets], modifica le seguenti configurazioni per
 
 Per configurare un limite di dimensioni file più elevato, effettuare le seguenti operazioni nella directory `/apps`.
 
-1. In [!DNL Experience Manager], fare clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
+1. In [!DNL Experience Manager], fare clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. In CRXDE Lite, passa a `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Per visualizzare la finestra della directory, fare clic su `>>`.
 1. Dalla barra degli strumenti, fare clic sul nodo **[!UICONTROL Sovrapposizione]**. In alternativa, seleziona **[!UICONTROL Sovrapponi nodo]** dal menu di scelta rapida.
 1. Nella finestra di dialogo **[!UICONTROL Sovrapponi nodo]**, fai clic su **[!UICONTROL OK]**.
@@ -64,38 +64,38 @@ Per configurare un limite di dimensioni file più elevato, effettuare le seguent
 
 1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Salva tutto]**.
 1. In [!DNL Experience Manager], fare clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
-1. Nella pagina [!DNL Adobe Experience Manager] [!UICONTROL Bundle console Web], individuare nella colonna Nome della tabella **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
-1. Nella pagina [!UICONTROL Adobe Granite Workflow External Process Job Handler], impostare i secondi per i campi **[!UICONTROL Default Timeout]** e **[!UICONTROL Max Timeout]** su `18000` (cinque ore). Fai clic su **[!UICONTROL Salva]**.
+1. Nella pagina [!DNL Adobe Experience Manager] [!UICONTROL Bundle console Web], individua nella colonna Nome della tabella e fai clic su **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
+1. Nella pagina [!UICONTROL Adobe Granite Workflow External Process Job Handler] (Gestore processo esterno flusso di lavoro di Granite), impostare i secondi per i campi **[!UICONTROL Default Timeout]** (Timeout predefinito) e **[!UICONTROL Max Timeout]** (Timeout massimo) su `18000` (cinque ore). Fai clic su **[!UICONTROL Salva]**.
 1. In [!DNL Experience Manager], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Nella pagina Modelli flusso di lavoro, seleziona **[!UICONTROL Codifica video Dynamic Medie]**, quindi fai clic su **[!UICONTROL Modifica]**.
-1. Nella pagina del flusso di lavoro fare doppio clic sul componente **[!UICONTROL Processo servizio video Dynamic Medie]**.
+1. Nella pagina Modelli flusso di lavoro, seleziona **[!UICONTROL Codifica video elementi multimediali dinamici]**, quindi fai clic su **[!UICONTROL Modifica]**.
+1. Nella pagina del flusso di lavoro fare doppio clic sul componente **[!UICONTROL Processo Dynamic Media Video Service]**.
 1. Nella finestra di dialogo [!UICONTROL Step Properties (Proprietà passo)], nella scheda **[!UICONTROL Common (Comune)]**, espandi **Impostazioni avanzate**.
-1. Nel campo **[!UICONTROL Timeout]**, specifica un valore di `18000`, quindi fai clic su **[!UICONTROL OK]** per tornare alla pagina del flusso di lavoro **[!UICONTROL Codifica video Dynamic Medie]**.
-1. Nella parte superiore della pagina, sotto il titolo della pagina [!UICONTROL Codifica video Dynamic Medie], fai clic su **[!UICONTROL Salva]**.
+1. Nel campo **[!UICONTROL Timeout]**, specifica un valore di `18000`, quindi fai clic su **[!UICONTROL OK]** per tornare alla pagina del flusso di lavoro **[!UICONTROL Codifica video elementi multimediali dinamici]**.
+1. Nella parte superiore della pagina, sotto il titolo della pagina [!UICONTROL Codifica video Dynamic Media], fai clic su **[!UICONTROL Salva]**.
 
-## Risorse video Publish {#publish-video-assets}
+## Pubblicare risorse video {#publish-video-assets}
 
-Dopo la pubblicazione, puoi includere le risorse video in una pagina web come URL o incorporarle direttamente. Per informazioni dettagliate, consulta [pubblicare risorse Dynamic Medie](/help/assets/publishing-dynamicmedia-assets.md).
+Dopo la pubblicazione, puoi includere le risorse video in una pagina web come URL o incorporarle direttamente. Per informazioni dettagliate, consulta [pubblicare risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
 
-## Video Publish su YouTube {#publishing-videos-to-youtube}
+## Pubblicare video su YouTube {#publishing-videos-to-youtube}
 
-Puoi pubblicare risorse video di Experience Manager on-premise direttamente su un canale YouTube creato in precedenza.
+Puoi pubblicare risorse video Experience Manager on-premise direttamente su un canale YouTube creato in precedenza.
 
-Per pubblicare risorse video in YouTube, imposta Experience Manager Assets con i tag. Associa questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde a quello di un canale YouTube, il video viene pubblicato in YouTube. Il passaggio da Publish ad YouTube si verifica insieme a una normale pubblicazione del video, purché venga utilizzato un tag associato.
+Per pubblicare risorse video in YouTube, imposta Experience Manager Assets con i tag. Associa questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde a quello di un canale YouTube, il video viene pubblicato in YouTube. La pubblicazione su YouTube viene eseguita insieme alla normale pubblicazione del video, purché venga utilizzato un tag associato.
 
-YouTube esegue la propria codifica. Di conseguenza, il file video originale caricato in Experience Manager viene pubblicato in YouTube invece di qualsiasi rendering video creato con la codifica Dynamic Medie. Anche se non è necessario per elaborare i video utilizzando Dynamic Medie, è previsto che lo facciano nel caso in cui sia necessario un predefinito visualizzatore per la riproduzione.
+YouTube esegue la propria codifica. Di conseguenza, il file video originale caricato in Experience Manager viene pubblicato in YouTube invece di qualsiasi rendering video creato dalla codifica di Dynamic Media. Anche se non è necessario per elaborare i video utilizzando Dynamic Media, è previsto che lo facciano nel caso in cui sia necessario un predefinito visualizzatore per la riproduzione.
 
-Quando salti il profilo di elaborazione video e pubblichi direttamente in YouTube, significa semplicemente che la risorsa video in Experience Manager Asset non riceve una miniatura visualizzabile. Significa anche che se si esegue in modalità di esecuzione `dynamicmedia` o `dynamicmedia_scene7`, i video non codificati non funzionano con nessuno dei tipi di risorse Dynamic Medie.
+Quando salti il profilo di elaborazione video e pubblichi direttamente in YouTube, ciò significa semplicemente che la risorsa video in Experience Manager Asset non riceve una miniatura visualizzabile. Significa anche che se si esegue in modalità di esecuzione `dynamicmedia` o `dynamicmedia_scene7`, i video non codificati non funzionano con nessuno dei tipi di risorse Dynamic Media.
 
 La pubblicazione di risorse video sui server YouTube prevede il completamento delle seguenti attività per garantire un’autenticazione server-to-server sicura con YouTube:
 
 1. [Configurare le impostazioni di Google Cloud](#configuring-google-cloud-settings)
 1. [Creare un canale YouTube](#creating-a-youtube-channel)
 1. [Aggiungi tag per la pubblicazione](#adding-tags-for-publishing)
-1. [Abilitare l’agente di replica di YouTube Publish](#enabling-the-youtube-publish-replication-agent)
+1. [Abilitare l’agente di replica di pubblicazione di YouTube](#enabling-the-youtube-publish-replication-agent)
 1. [Configurare YouTube in Experience Manager](#setting-up-youtube-in-aem)
 1. [(Facoltativo) Automatizza l&#39;impostazione delle proprietà predefinite di YouTube per i video caricati](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Video Publish sul tuo canale YouTube](#publishing-videos-to-your-youtube-channel)
+1. [Pubblicare video sul canale YouTube](#publishing-videos-to-your-youtube-channel)
 1. [(Facoltativo) Verifica il video pubblicato su YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
 1. [Collegare gli URL di YouTube all’applicazione web](#linking-youtube-urls-to-your-web-application)
 
@@ -135,7 +135,7 @@ Per configurare le impostazioni di Google Cloud:
 
 1. Fai clic su **[!UICONTROL Crea]**.
 
-1. Effettuare una delle seguenti operazioni:
+1. Effettua una delle operazioni seguenti:
 
    * Nella scheda Guida introduttiva del dashboard del progetto, seleziona **[!UICONTROL Esplora e abilita API]**.
    * Nella scheda API del dashboard del progetto, seleziona **[!UICONTROL Vai alla panoramica delle API]**.
@@ -154,11 +154,11 @@ Per configurare le impostazioni di Google Cloud:
 
 1. Nella pagina **[!UICONTROL Aggiungi credenziali al progetto]**, passaggio 1, eseguire le operazioni seguenti:
 
-   * Da **[!UICONTROL Quale API si utilizza?Elenco a discesa]**, selezionare **[!UICONTROL YouTube Data API v3]**.
+   * Da **[!UICONTROL Quale API stai utilizzando?]** , selezionare **[!UICONTROL YouTube Data API v3]**.
 
-   * Da **[!UICONTROL Da dove stai chiamando l&#39;API?Elenco a discesa]**, selezionare **[!UICONTROL Server Web (ad esempio, node.js, Tomcat)]**
+   * Da **[!UICONTROL Da dove stai chiamando l&#39;API?]** , selezionare **[!UICONTROL Server Web (ad esempio, node.js, Tomcat)]**
 
-   * Da **[!UICONTROL A quali dati accedi?]**, selezionare **[!UICONTROL Dati utente]**.
+   * Da **[!UICONTROL A quali dati accedi?]** elenco a discesa, selezionare **[!UICONTROL Dati utente]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -189,7 +189,7 @@ Per configurare le impostazioni di Google Cloud:
 
 1. Sotto l&#39;intestazione **[!UICONTROL Nome prodotto mostrato agli utenti]**, immetti nel campo di testo ciò che desideri visualizzare nella schermata di consenso.
 
-   La schermata di consenso viene visualizzata dall’amministratore Experience Manager quando si autentica in YouTube; l’Experience Manager contatta YouTube per ottenere l’autorizzazione.
+   La schermata di consenso viene visualizzata per l’amministratore di Experience Manager quando si autentica in YouTube; Experience Manager contatta YouTube per l’autorizzazione.
 
 1. Fai clic su **[!UICONTROL Continua]**.
 1. Nella pagina Add credentials to your project (Aggiungi credenziali al progetto), passaggio 4, nell&#39;intestazione **[!UICONTROL Download credentials]** (Scarica credenziali), seleziona **[!UICONTROL Download]**.
@@ -210,7 +210,7 @@ La pubblicazione di video in YouTube richiede la presenza di uno o più canali. 
 
 >[!WARNING]
 >
->Assicurati di aver già configurato uno o più canali in YouTube *prima* di aggiungere canali nelle impostazioni YouTube in Experience Manager (vedi [Configurazione di YouTube nell&#39;Experience Manager](#setting-up-youtube-in-aem) di seguito). Se non si configurano uno o più canali, non viene visualizzato alcun avviso relativo ai canali inesistenti. Tuttavia, l’autenticazione Google viene comunque eseguita quando si aggiunge un canale, ma non è possibile scegliere quale canale inviare il video.
+>Accertati di aver già configurato uno o più canali in YouTube *prima* di aggiungere canali in Impostazioni YouTube in Experience Manager (vedi [Configurazione di YouTube in Experience Manager](#setting-up-youtube-in-aem) di seguito). Se non si configurano uno o più canali, non viene visualizzato alcun avviso relativo ai canali inesistenti. Tuttavia, l’autenticazione Google viene comunque eseguita quando si aggiunge un canale, ma non è possibile scegliere quale canale inviare il video.
 
 **Per creare un canale YouTube:**
 
@@ -220,7 +220,7 @@ La pubblicazione di video in YouTube richiede la presenza di uno o più canali. 
 1. Nella pagina Canali, fare clic su **[!UICONTROL Crea un nuovo canale]**.
 1. Nella pagina Account marchio, inserisci il nome di un&#39;azienda o di un altro canale scelto per la pubblicazione delle risorse video nel campo Nome account marchio, quindi fai clic su **[!UICONTROL Crea]**.
 
-   Ricorda il nome che hai immesso qui perché devi immetterlo nuovamente quando configuri YouTube in Experience Manager.
+   Ricorda il nome immesso qui perché devi immetterlo nuovamente quando configuri YouTube in Experience Manager.
 
 1. Se necessario, aggiungi altri canali.
 
@@ -228,16 +228,16 @@ La pubblicazione di video in YouTube richiede la presenza di uno o più canali. 
 
 ### Aggiungi tag per la pubblicazione {#adding-tags-for-publishing}
 
-Per pubblicare i video in YouTube, Experience Manager associa i tag a uno o più canali di YouTube. Per aggiungere i tag per la pubblicazione, vedere [Amministrare i tag](/help/sites-administering/tags.md).
+Per pubblicare nei video su YouTube, Experience Manager associa i tag a uno o più canali YouTube. Per aggiungere i tag per la pubblicazione, vedere [Amministrare i tag](/help/sites-administering/tags.md).
 
-Oppure, se desideri utilizzare i tag predefiniti in Experience Manager, puoi saltare questa attività e passare a [Abilita l&#39;agente di replica di YouTube Publish](#enabling-the-youtube-publish-replication-agent).
+Oppure, se desideri utilizzare i tag predefiniti in Experience Manager, puoi saltare questa attività e passare a [Abilita l&#39;agente di replica YouTube Publish](#enabling-the-youtube-publish-replication-agent).
 
 ### Abilitare l’agente di replica di YouTube Publish {#enabling-the-youtube-publish-replication-agent}
 
-Dopo aver abilitato l&#39;agente di replica di YouTube Publish, se si desidera verificare la connessione all&#39;account Google Cloud, selezionare **[!UICONTROL Verifica connessione]**. I risultati della connessione vengono visualizzati in una scheda del browser. Se hai aggiunto dei canali YouTube, come parte del test ne viene visualizzato un elenco.
+Dopo aver abilitato l&#39;agente di replica YouTube Publish, se desideri testare la connessione all&#39;account Google Cloud, seleziona **[!UICONTROL Verifica connessione]**. I risultati della connessione vengono visualizzati in una scheda del browser. Se hai aggiunto dei canali YouTube, come parte del test ne viene visualizzato un elenco.
 
-1. Nell&#39;angolo superiore sinistro dell&#39;Experience Manager fare clic sul logo dell&#39;Experience Manager, quindi nella barra a sinistra fare clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti per creazione]**.
-1. Nella pagina Agenti di authoring fare clic su **[!UICONTROL YouTube Publish]**.
+1. Nell&#39;angolo superiore sinistro di Experience Manager, fai clic sul logo Experience Manager, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti per creazione]**.
+1. Nella pagina Agenti di authoring fare clic su **[!UICONTROL Pubblicazione YouTube]**.
 1. Sulla barra degli strumenti, a destra di Impostazioni, fare clic su **[!UICONTROL Modifica]**.
 1. Selezionare la casella di controllo **[!UICONTROL Abilitato]** per attivare l&#39;agente di replica.
 1. Fai clic su **[!UICONTROL OK]**.
@@ -246,15 +246,15 @@ Dopo aver abilitato l&#39;agente di replica di YouTube Publish, se si desidera v
 
 ### Configurare YouTube in Experience Manager {#setting-up-youtube-in-aem}
 
-A partire dall’Experience Manager 6.4, è stato introdotto un nuovo metodo di interfaccia utente touch per configurare la pubblicazione YouTube in Experience Manager. In base all&#39;istanza installata di Experience Manager in uso, eseguire una delle operazioni seguenti:
+A partire da Experience Manager 6.4, è stato introdotto un nuovo metodo di interfaccia utente touch per configurare la pubblicazione YouTube in Experience Manager. In base all’istanza installata di Experience Manager in uso, effettua una delle seguenti operazioni:
 
 * Per configurare YouTube in Experience Manager prima della versione 6.4, vedere [Configurare YouTube in Experience Manager prima della versione 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
-* Per configurare YouTube nell&#39;Experience Manager 6.4 o versione successiva, vedere [Configurare YouTube nell&#39;Experience Manager 6.4 o versione successiva](#setting-up-youtube-in-aem-and-later).
+* Per configurare YouTube in Experience Manager 6.4 o versione successiva, vedere [Configurare YouTube in Experience Manager 6.4 o versione successiva](#setting-up-youtube-in-aem-and-later).
 
-#### Configurare YouTube all’Experience Manager 6.4 e versioni successive {#setting-up-youtube-in-aem-and-later}
+#### Configurare YouTube in Experience Manager 6.4 e versioni successive {#setting-up-youtube-in-aem-and-later}
 
-1. Accertati di accedere alla tua istanza di Dynamic Medie come amministratore.
-1. Nell&#39;angolo in alto a sinistra, seleziona il logo dell&#39;Experience Manager, quindi nella barra a sinistra seleziona **[!UICONTROL Strumenti]**(icona a forma di martello) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione pubblicazione YouTube]**.
+1. Accertati di accedere alla tua istanza di Dynamic Media come amministratore.
+1. Nell&#39;angolo in alto a sinistra, seleziona il logo Experience Manager, quindi nella barra a sinistra seleziona **[!UICONTROL Strumenti]**(icona a forma di martello) > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Configurazione pubblicazione YouTube]**.
 1. Seleziona **[!UICONTROL global]** (non selezionarlo).
 
 1. Selezionare **[!UICONTROL Crea]** nell&#39;angolo superiore destro della pagina globale.
@@ -288,7 +288,7 @@ Lascia aperta la pagina Crea configurazione di YouTube; tra un attimo la tornera
 
    Ora imposta i tag per la pubblicazione.
 
-1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** - Nella pagina Cloud Service > YouTube, seleziona l&#39;icona a forma di matita per modificare l&#39;elenco dei tag che desideri utilizzare.
+1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** - Nella pagina Cloud Services > YouTube, seleziona l&#39;icona a forma di matita per modificare l&#39;elenco dei tag che desideri utilizzare.
 1. Seleziona l’icona dell’elenco a discesa (cursore a discesa) per visualizzare l’elenco dei tag disponibili in Experience Manager.
 1. Seleziona uno o più tag per poterli aggiungere.
 
@@ -300,9 +300,9 @@ Lascia aperta la pagina Crea configurazione di YouTube; tra un attimo la tornera
 
 #### Configurare YouTube in Experience Manager prima della versione 6.4 {#setting-up-youtube-in-aem-before}
 
-1. Accertati di accedere alla tua istanza di Dynamic Medie come amministratore.
+1. Accertati di accedere alla tua istanza di Dynamic Media come amministratore.
 
-1. Nell&#39;angolo in alto a sinistra, seleziona il logo dell&#39;Experience Manager, quindi nella barra a sinistra seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud Service]**.
+1. Nell&#39;angolo in alto a sinistra, seleziona il logo Experience Manager, quindi nella barra a sinistra seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Distribuzione]** > **[!UICONTROL Servizi cloud]**.
 1. Nell&#39;intestazione Servizi di terze parti, in YouTube, seleziona **[!UICONTROL Configura ora]**.
 1. Nella finestra di dialogo Crea configurazione, immetti un titolo (obbligatorio) e un nome (facoltativo) nei rispettivi campi.
 1. Seleziona **[!UICONTROL Crea]**.
@@ -334,7 +334,7 @@ Lascia aperta la finestra di dialogo YouTube Account Setting (Impostazione accou
 
    Ora imposta i tag per la pubblicazione.
 
-1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** - Nella pagina Cloud Service > YouTube, seleziona l&#39;icona a forma di matita per modificare l&#39;elenco dei tag che desideri utilizzare.
+1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** - Nella pagina Cloud Services > YouTube, seleziona l&#39;icona a forma di matita per modificare l&#39;elenco dei tag che desideri utilizzare.
 1. Seleziona l’icona dell’elenco a discesa (cursore a discesa) per visualizzare l’elenco dei tag disponibili in Experience Manager.
 1. Seleziona uno o più tag per poterli aggiungere.
 
@@ -352,7 +352,7 @@ Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori 
 
 Per automatizzare l’impostazione delle proprietà predefinite di YouTube per i video caricati:
 
-1. Nell&#39;angolo in alto a sinistra, seleziona il logo dell&#39;Experience Manager, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Assets]** > **[!UICONTROL Schemi di metadati]**.
+1. Nell&#39;angolo in alto a sinistra, seleziona il logo Experience Manager, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Assets]** > **[!UICONTROL Schemi di metadati]**.
 1. Fare clic su **[!UICONTROL default]**. (Non aggiungere un segno di spunta alla casella di selezione a sinistra di &quot;default&quot;).
 1. Nella pagina **[!UICONTROL default]**, seleziona la casella a sinistra di **[!UICONTROL video]**, quindi seleziona **[!UICONTROL Modifica]**.
 1. Nella pagina Editor schema metadati, seleziona la scheda **[!UICONTROL Avanzate]**.
@@ -375,7 +375,7 @@ Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà nec
 Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
 
 1. Fare clic su **[!UICONTROL Annulla]** nell&#39;angolo superiore destro della pagina Editor schema metadati.
-1. Nell&#39;angolo superiore sinistro dell&#39;Experience Manager, seleziona il logo dell&#39;Experience Manager, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
+1. Nell&#39;angolo superiore sinistro di Experience Manager, seleziona il logo Experience Manager, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 
 1. Nella pagina Profili metadati, nell&#39;angolo superiore destro della pagina, fare clic su **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo Aggiungi profilo metadati, vai al campo di testo **[!UICONTROL Titolo profilo]**, immetti il nome `YouTube Video` e fai clic su **[!UICONTROL Crea]**.
@@ -407,19 +407,19 @@ Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà nec
 
    Consulta le sezioni [Profili di metadati](/help/assets/metadata-config.md#metadata-profiles) e [Profili video](/help/assets/video-profiles.md).
 
-### Video Publish sul tuo canale YouTube {#publishing-videos-to-your-youtube-channel}
+### Pubblicare video sul canale YouTube {#publishing-videos-to-your-youtube-channel}
 
-Ora associ alle risorse video i tag aggiunti in precedenza. Questo consente agli Experienci Manager di sapere quali risorse pubblicare nel canale YouTube.
-
->[!NOTE]
->
->Se l’esecuzione è in modalità Dynamic Medie - Scene7, la pubblicazione immediata non viene automaticamente pubblicata in YouTube. Quando è impostata la modalità Dynamic Medie - Scene7, è possibile scegliere tra due opzioni di pubblicazione: **[!UICONTROL Immediatamente]** o **[!UICONTROL All&#39;attivazione]**.
->
->**[!UICONTROL Publish Immediatamente]** significa che la risorsa caricata, dopo essere stata sincronizzata con IPS, viene pubblicata automaticamente nel sistema di consegna. Anche se questo è vero per Dynamic Medie, non lo è per YouTube. Per pubblicare in YouTube, devi utilizzare l’Autore Experience Manager.
+Ora associ alle risorse video i tag aggiunti in precedenza. Questo processo consente ad Experience Manager di sapere quali risorse pubblicare nel canale YouTube.
 
 >[!NOTE]
 >
->Per pubblicare contenuti da YouTube, Experience Manager utilizza il flusso di lavoro da **[!UICONTROL Publish ad YouTube]**, che consente di monitorare lo stato di avanzamento e visualizzare eventuali informazioni sull&#39;errore.
+>Quando l’esecuzione avviene in modalità Dynamic Media - Scene7, la pubblicazione immediata non viene automaticamente pubblicata in YouTube. Quando è impostata la modalità Dynamic Media - Scene7, è possibile scegliere tra due opzioni di pubblicazione: **[!UICONTROL Immediatamente]** o **[!UICONTROL All&#39;attivazione]**.
+>
+>**[!UICONTROL Pubblica immediatamente]** significa che la risorsa caricata, dopo essere stata sincronizzata con IPS, viene pubblicata automaticamente nel sistema di consegna. Anche se questo è vero per Dynamic Media, non è vero per YouTube. Per pubblicare su YouTube, devi utilizzare Experience Manager Author.
+
+>[!NOTE]
+>
+>Per pubblicare contenuti da YouTube, Experience Manager utilizza il flusso di lavoro **[!UICONTROL Pubblica in YouTube]**, che consente di monitorare lo stato di avanzamento e visualizzare eventuali informazioni sull&#39;errore.
 >
 >Consulta [Monitorare la codifica video e lo stato di pubblicazione di YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
@@ -427,7 +427,7 @@ Ora associ alle risorse video i tag aggiunti in precedenza. Questo consente agli
 
 **Per pubblicare video sul tuo canale YouTube:**
 
-1. Ad Experience Manager, individua la risorsa video da pubblicare sul tuo canale YouTube.
+1. In Experience Manager, individua la risorsa video da pubblicare sul tuo canale YouTube.
 1. Seleziona la risorsa video (il set di video adattivi).
 1. Sulla barra degli strumenti fare clic su **[!UICONTROL Proprietà]**.
 1. Nella scheda Base, sotto l&#39;intestazione Metadati, fare clic su **[!UICONTROL Apri finestra di dialogo per selezione]** a destra del campo Tag.
@@ -437,9 +437,9 @@ Ora associ alle risorse video i tag aggiunti in precedenza. Questo consente agli
 
 1. Nell&#39;angolo superiore destro della pagina fare clic su **[!UICONTROL Seleziona]**.
 1. Nell&#39;angolo superiore destro della pagina delle proprietà del video, fai clic su **[!UICONTROL Salva e chiudi]**.
-1. Sulla barra degli strumenti fare clic su **[!UICONTROL Publish rapido]**.
+1. Sulla barra degli strumenti fare clic su **[!UICONTROL Pubblicazione rapida]**.
 
-   Vedi anche [Utilizzo di Gestione pubblicazioni con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=it).
+   Vedi anche [Utilizzo di Gestione pubblicazioni con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    Facoltativamente, puoi verificare il video pubblicato sul tuo canale YouTube.
 
@@ -455,7 +455,7 @@ Se dopo otto ore viene ancora visualizzato un messaggio di stato che indica **[!
 
 ### Collegare gli URL di YouTube all’applicazione web {#linking-youtube-urls-to-your-web-application}
 
-Dopo la pubblicazione del video, puoi ottenere una stringa URL di YouTube generata da Dynamic Medie. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare nelle pagine del sito web o dell’applicazione.
+Dopo la pubblicazione del video, puoi ottenere una stringa URL di YouTube generata da Dynamic Media. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare nelle pagine del sito web o dell’applicazione.
 
 >[!NOTE]
 >
@@ -477,11 +477,11 @@ Quando annulli la pubblicazione di una risorsa video in Experience Manager, il v
 
 >[!CAUTION]
 >
->Se rimuovi un video direttamente da YouTube, Experience Manager non ne è a conoscenza e continua a comportarsi come se il video fosse ancora pubblicato in YouTube. Per Experience Manager, annulla sempre la pubblicazione di una risorsa video da YouTube.
+>Se rimuovi un video direttamente da YouTube, Experience Manager non ne è a conoscenza e continua a comportarsi come se il video fosse ancora pubblicato in YouTube. Annulla sempre la pubblicazione di una risorsa video da YouTube tramite Experience Manager.
 
 >[!NOTE]
 >
->Per rimuovere contenuto da YouTube, Experience Manager utilizza il flusso di lavoro **[!UICONTROL Annulla pubblicazione da YouTube]**, che consente di monitorare l&#39;avanzamento e visualizzare eventuali informazioni sull&#39;errore.
+>Per rimuovere contenuto da YouTube, Experience Manager utilizza il flusso di lavoro **[!UICONTROL Annulla pubblicazione da YouTube]**, che consente di monitorare lo stato di avanzamento e visualizzare eventuali informazioni sull&#39;errore.
 >
 >Consulta [Monitorare la codifica video e lo stato di pubblicazione di YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -522,10 +522,10 @@ Quando carichi un nuovo video in una cartella a cui è applicata la codifica vid
 
    >[!NOTE]
    >
-   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, nel **[!UICONTROL ritardo tentativi]** e nel **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, nel **[!UICONTROL nuovo ritardo]** e nel **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
    >* Configurazione coda processi Apache Sling
-   >* Adobe Granite Workflow External Process Job Handler
+   >* Gestore processo esterno flusso di lavoro di Adobe Granite
    >* Coda di timeout del flusso di lavoro Granite
    >
    >In queste configurazioni è possibile regolare le proprietà **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritenta tentativo]** e **[!UICONTROL timeout]**.
@@ -557,7 +557,7 @@ Quando carichi un nuovo video in una cartella a cui è applicata la codifica vid
    >Potrebbero essere necessari tempi lunghi per la registrazione del messaggio di errore, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritenta il tentativo]** e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
    >* Configurazione coda processi Apache Sling
-   >* Adobe Granite Workflow External Process Job Handler
+   >* Gestore processo esterno flusso di lavoro di Adobe Granite
    >* Coda di timeout del flusso di lavoro Granite
    >
    >In queste configurazioni è possibile regolare le proprietà **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritenta tentativo]** e **[!UICONTROL timeout]**.
@@ -580,13 +580,13 @@ Quando carichi un nuovo video in una cartella a cui è applicata la codifica vid
 
 La modalità di configurazione delle notifiche dipende dal fatto che si desideri ricevere notifiche per i processi di codifica o per i processi di pubblicazione YouTube:
 
-* Per i processi di codifica, puoi accedere alla pagina di configurazione per tutte le notifiche e-mail del flusso di lavoro di Experience Manager all&#39;indirizzo **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]** e cercare il servizio di notifica e-mail del flusso di lavoro CQ di **[!UICONTROL giorni]**. Vedi [Configurare le notifiche e-mail in Experience Manager](/help/sites-administering/notification.md). È possibile selezionare o deselezionare le caselle di controllo per **[!UICONTROL Notify on Abort]** o **[!UICONTROL Notify on Complete]**.
+* Per i processi di codifica, puoi accedere alla pagina di configurazione per tutte le notifiche e-mail del flusso di lavoro di Experience Manager all&#39;indirizzo **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]** e cercando il servizio di notifica e-mail del flusso di lavoro CQ di **[!UICONTROL giorni]**. Consulta [Configurare le notifiche e-mail in Experience Manager](/help/sites-administering/notification.md). È possibile selezionare o deselezionare le caselle di controllo per **[!UICONTROL Notify on Abort]** o **[!UICONTROL Notify on Complete]**.
 
 * Per i processi di pubblicazione di YouTube, effettua le seguenti operazioni:
 
-1. In Experience Manager, selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Nella pagina Modelli di flusso di lavoro, seleziona **[!UICONTROL Da Publish ad YouTube]**, quindi seleziona **[!UICONTROL Modifica]** sulla barra degli strumenti.
-1. Nell&#39;angolo superiore destro della pagina del flusso di lavoro da Publish ad YouTube, seleziona **[!UICONTROL Modifica]**.
+1. In Experience Manager, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. Nella pagina Modelli di flusso di lavoro, seleziona **[!UICONTROL Pubblica su YouTube]**, quindi seleziona **[!UICONTROL Modifica]** sulla barra degli strumenti.
+1. Seleziona **[!UICONTROL Modifica]** nell&#39;angolo superiore destro della pagina del flusso di lavoro Pubblica su YouTube.
 1. Passa il puntatore del mouse sul componente Caricamento di YouTube, quindi seleziona una volta per visualizzare la barra degli strumenti in linea.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
@@ -603,16 +603,16 @@ La modalità di configurazione delle notifiche dipende dal fatto che si desideri
 
    * Inizio pubblicazione
    * Errore di pubblicazione
-   * Completamento Publish: include informazioni su canali e URL
+   * Completamento pubblicazione: include informazioni sui canali e sugli URL
 
-   Deselezionando una casella di controllo si evita di ricevere la notifica e-mail specificata dal flusso di lavoro di YouTube Publish.
+   Deselezionando una casella di controllo si evita di ricevere la notifica e-mail specificata dal flusso di lavoro di pubblicazione di YouTube.
 
    >[!NOTE]
    >
    >Queste e-mail sono specifiche per YouTube e si aggiungono alle notifiche e-mail generiche del flusso di lavoro. Di conseguenza, puoi ricevere due set di notifiche e-mail: la notifica generica disponibile nel servizio **[!UICONTROL Day CQ Workflow Email Notification Service]** e una specifica per YouTube a seconda delle impostazioni di configurazione.
 
 1. Al termine, nell&#39;angolo superiore destro della finestra di dialogo, selezionare l&#39;icona **[!UICONTROL Fine]** (segno di spunta).
-1. Nella pagina del flusso di lavoro da Publish ad YouTube, nell&#39;angolo superiore destro, seleziona **[!UICONTROL Sincronizza]**.
+1. Nella pagina del flusso di lavoro Pubblica su YouTube, nell&#39;angolo superiore destro, seleziona **[!UICONTROL Sincronizza]**.
 
 ## Annotare risorse video {#annotate-video-assets}
 
@@ -620,7 +620,7 @@ La modalità di configurazione delle notifiche dipende dal fatto che si desideri
 1. Per riprodurre il video, fare clic su **[!UICONTROL Anteprima]**.
 1. Per aggiungere annotazioni al video, fare clic su **[!UICONTROL Annota]**. Nel video viene aggiunta un’annotazione in corrispondenza del momento specifico (fotogramma). Durante l&#39;annotazione, è possibile disegnare sull&#39;area di lavoro e includere un commento con il disegno. I commenti vengono salvati automaticamente. Per uscire dalla procedura guidata di annotazione, fare clic su **[!UICONTROL Chiudi]**.
 
-   ![Draw e annota in un frame video](assets/annotate-video.png)
+   ![Disegna e commenta in un fotogramma video](assets/annotate-video.png)
 
 1. Individua un punto specifico del video, specifica il tempo in secondi nel campo di **testo**, infine fai clic su **Jump (Passa a)**. Ad esempio, per saltare i primi 20 secondi del video, inserisci 20 nel campo di testo.
 
@@ -634,4 +634,4 @@ La modalità di configurazione delle notifiche dipende dal fatto che si desideri
 >
 >* [Gestione delle risorse digitali in Experience Manager Assets](/help/assets/manage-assets.md)
 >* [Gestisci raccolte in Experience Manager Assets](/help/assets/manage-collections.md)
->* [Documentazione video Dynamic Medie](/help/assets/video.md).
+>* [Documentazione video Dynamic Media](/help/assets/video.md).

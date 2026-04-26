@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2152'
 ht-degree: 4%
 
 ---
@@ -24,13 +24,14 @@ I gestori di file multimediali sono servizi in [!DNL Assets] che eseguono azioni
 
 >[!NOTE]
 >
->Per una descrizione di tutti i formati supportati da [&#x200B; e delle funzionalità supportate per ciascun formato, vedere la pagina &#x200B;](assets-formats.md)Formati risorse supportati[!DNL Assets].
+>Per una descrizione di tutti i formati supportati da [!DNL Assets] e delle funzionalità supportate per ciascun formato, vedere la pagina [Formati risorse supportati](assets-formats.md).
 
 ## Gestori di file multimediali predefiniti {#default-media-handlers}
 
 I seguenti gestori multimediali sono disponibili in [!DNL Assets] e gestiscono i tipi MIME più comuni:
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Nome gestore | Nome servizio (nella console del sistema) | Tipi MIME supportati |
@@ -123,7 +124,7 @@ Devono essere implementati i seguenti metodi:
 
 Di seguito è riportato un modello di esempio:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementa le parti pertinenti }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementa le parti pertinenti }
 
 L’interfaccia e le classi includono:
 
@@ -164,7 +165,7 @@ Dopo aver eseguito la procedura seguente, quando si carica un file TXT in [!DNL 
       * Compatibilità dei file .class generati
       * Compatibilità con Source
 
-   1. Fare clic su **[!UICONTROL OK]**. Nella finestra di dialogo, fai clic su **[!UICONTROL Sì]**.
+   1. Fai clic su **[!UICONTROL OK]**. Nella finestra di dialogo, fai clic su **[!UICONTROL Sì]**.
 
 1. Sostituire il codice nel file `pom.xml` con il seguente codice:
 

@@ -8,10 +8,10 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '3461'
-ht-degree: 1%
+source-wordcount: '3615'
+ht-degree: 2%
 
 ---
 
@@ -165,7 +165,7 @@ Una volta scaricato, puoi installare e configurare il connettore S3 come segue:
 
    Copia tutti i contenuti dalla posizione precedente in `<aem-install>/crx-quickstart/install.`
 
-1. Se AEM è già configurato per funzionare con l&#39;archivio Tar o MongoDB, rimuovi eventuali file di configurazione esistenti dalla cartella ***&lt;aem-install>***/*crx-quickstart*/*install* prima di procedere. I file che devono essere rimossi sono:
+1. Se AEM è già configurato per funzionare con l’archiviazione Tar o MongoDB, rimuovi eventuali file di configurazione esistenti dalla cartella ***&lt;aem-install>***/*crx-quickstart*/*install* prima di procedere. I file che devono essere rimossi sono:
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -174,7 +174,7 @@ Una volta scaricato, puoi installare e configurare il connettore S3 come segue:
 
    * `jcr_root/libs/system/config`
 
-   in
+   a
 
    * `<aem-install>/crx-quickstart/install`
 
@@ -255,7 +255,7 @@ Puoi utilizzare il file di configurazione con le opzioni descritte di seguito.
 | uploadThreads | Il numero di thread di caricamento utilizzati per i caricamenti asincroni. | 10 | No. |
 | writeThreads | Numero di thread simultanei utilizzati per la scrittura tramite Gestione trasferimenti S3. | 10 | No. |
 
-<!---
+<!--
 ### Bucket region options {#bucket-region-options}
 
 <table>
@@ -411,7 +411,7 @@ Per configurare la replica senza binari con S3, sono necessari i seguenti passag
 
 AEM può essere configurato per archiviare i dati nel servizio di archiviazione Azure di Microsoft®. Utilizza il PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` per la configurazione.
 
-Per abilitare la funzionalità dell’archivio dati di Azure, è necessario scaricare e installare un feature pack contenente il connettore di Azure. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e scarica la versione più recente dalle versioni 1.6.x del pacchetto di funzionalità (ad esempio, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Per abilitare la funzionalità di archiviazione dati di Azure, è necessario scaricare e installare un feature pack contenente il connettore Azure. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e scarica la versione più recente dalle versioni 1.6.x del pacchetto di funzionalità (ad esempio, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
@@ -442,16 +442,16 @@ Una volta scaricato, puoi installare e configurare il connettore Azure come segu
 
 Puoi utilizzare il file di configurazione con le seguenti opzioni:
 
-* azureSas=&quot;&quot;: nella versione 1.6.3 del connettore è stato aggiunto il supporto per la firma di accesso condiviso di Azure. **Se nel file di configurazione sono presenti sia le credenziali SAS che le credenziali di archiviazione, SAS ha la priorità.** Per ulteriori informazioni sulle associazioni di protezione, vedere la [documentazione ufficiale](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Assicurati che il carattere &#39;=&#39; sia di escape come &#39;\=&#39;.
+* azureSas=&quot;&quot;: nella versione 1.6.3 del connettore è stato aggiunto il supporto SAS (Shared Access Signature) di Azure. **Se nel file di configurazione sono presenti sia le credenziali SAS che le credenziali di archiviazione, SAS ha la priorità.** Per ulteriori informazioni sulle associazioni di protezione, vedere la [documentazione ufficiale](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Assicurati che il carattere &#39;=&#39; sia di escape come &#39;\=&#39;.
 
-* azureBlobEndpoint=&quot;&quot;: l&#39;endpoint BLOB di Azure. Ad esempio, https://&lt;account di archiviazione>.blob.core.windows.net.
-* accessKey=&quot;&quot;: nome dell&#39;account di archiviazione. Per ulteriori dettagli sulle credenziali di autenticazione di Microsoft® Azure, vedere la [documentazione ufficiale](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
+* azureBlobEndpoint=&quot;&quot;: endpoint BLOB di Azure. Ad esempio, https://&lt;account di archiviazione>.blob.core.windows.net.
+* accessKey=&quot;&quot;: nome dell&#39;account di archiviazione. Per ulteriori dettagli sulle credenziali di autenticazione di Microsoft® Azure, consulta la [documentazione ufficiale](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: la chiave di accesso all’archiviazione. Assicurati che il carattere &#39;=&#39; sia di escape come &#39;\=&#39;.
-* container=&quot;&quot;: nome del contenitore di archiviazione BLOB di Microsoft® Azure. Il contenitore è un raggruppamento di un insieme di BLOB. Per ulteriori dettagli, consulta la [documentazione ufficiale](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
+* container=&quot;&quot;: nome del contenitore di archiviazione BLOB Microsoft® Azure. Il contenitore è un raggruppamento di un insieme di BLOB. Per ulteriori dettagli, consulta la [documentazione ufficiale](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
 * maxConnections=&quot;&quot;: il numero simultaneo di richieste simultanee per operazione. Il valore predefinito è 1.
 * maxErrorRetry=&quot;&quot;: numero di tentativi per richiesta. Il valore predefinito è 3.
-* socketTimeout=&quot;&quot;: intervallo di timeout, in millisecondi, utilizzato per la richiesta. Il valore predefinito è 5 minuti.
+* socketTimeout=&quot;&quot;: intervallo di timeout, in millisecondi, utilizzato per la richiesta. Il valore predefinito è di 5 minuti.
 
 Oltre alle impostazioni precedenti, è possibile configurare anche le seguenti impostazioni:
 
@@ -480,8 +480,8 @@ Il processo di Garbage Collection dell’archivio dati viene utilizzato per rimu
 
 Per eseguire la raccolta di oggetti inattivi dell’archivio dati:
 
-1. Vai alla console JMX all&#39;indirizzo *https://&lt;serveraddress:port>/system/console/jmx*
-1. Ricerca di **RepositoryManagement.** Una volta trovato l&#39;MBean di Repository Manager, fare clic su di esso per visualizzare le opzioni disponibili.
+1. Vai alla console JMX all’indirizzo *https://&lt;serveraddress:port/system/console/jmx*
+1. Ricerca di **RepositoryManagement in corso.** Una volta individuato l’MBean di Repository Manager, fai clic su di esso per visualizzare le opzioni disponibili.
 1. Scorri fino alla fine della pagina e fai clic sul collegamento **startDataStoreGC(boolean markOnly)**.
 1. Nella finestra di dialogo seguente, immetti `false` per il parametro `markOnly`, quindi fai clic su **Richiama**:
 

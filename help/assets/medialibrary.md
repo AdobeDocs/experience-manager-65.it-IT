@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 La piattaforma [!DNL Adobe Experience Manager] offre funzionalità diverse per la gestione delle risorse. La libreria multimediale consente agli utenti di caricare un numero limitato di risorse nell’archivio, cercare e utilizzare tali risorse nelle pagine web ed eseguire semplici attività di gestione delle risorse sulle risorse.
@@ -79,7 +79,8 @@ Per utilizzare la funzionalità Catalogo multimediale, è possibile utilizzare l
 * Flusso di attività (timeline).
 * Commenti e annotazioni.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
@@ -94,6 +95,6 @@ Non è possibile utilizzare tag avanzati, collegamento [!DNL Asset], selettore [
 
 >[!MORELIKETHIS]
 >
->* [Funzioni DAM in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=it)
->* [[!DNL Experience Manager] 6.5 Descrizione del prodotto Managed Services](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 descrizione del prodotto on-premise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [Funzioni DAM in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html)
+>* [[!DNL Experience Manager] 6.5 Descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5 descrizione del prodotto on-premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)

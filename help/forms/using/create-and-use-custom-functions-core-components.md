@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 7f1283898cbeebdedb7bdea6f0a8d9db567617ee
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3385'
-ht-degree: 0%
+source-wordcount: '3498'
+ht-degree: 1%
 
 ---
 
@@ -346,16 +346,16 @@ Prima di iniziare ad aggiungere una funzione personalizzata al Forms adattivo, a
 ## Creare una funzione personalizzata {#create-custom-function}
 
 I passaggi per creare funzioni personalizzate sono i seguenti:
-1. [Crea una libreria lato client utilizzando l&#39;archetipo di progetto AEM e aggiungi una funzione personalizzata](#create-client-library-archetype)
+1. [Crea una libreria lato client utilizzando Archetipo progetto AEM e aggiungi una funzione personalizzata](#create-client-library-archetype)
 OPPURE
    [Creare funzioni personalizzate tramite CRXDE](#create-add-custom-function)
 1. [Aggiungere una libreria client a un modulo adattivo](#add-client-library)
 1. [Utilizzare una funzione personalizzata in un modulo adattivo](#use-custom-functions)
 
 
-### Creare una libreria client utilizzando l’archetipo di progetto AEM{#create-client-library-archetype}
+### Creare una libreria client utilizzando Archetipo progetto AEM{#create-client-library-archetype}
 
-È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando l&#39;archetipo di progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando Archetipo progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Se hai un progetto esistente <!--and have already the project structure as shown in the image below,--> puoi aggiungere direttamente [funzioni personalizzate](#create-add-custom-function) al progetto locale.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -446,7 +446,7 @@ Aggiungi quanto segue alla cartella della libreria client aggiunta:
 
    ![filtro funzione personalizzato xml](assets/custom-function-filterxml.png)
 
-1. Crea la cartella della libreria client appena creata nell&#39;ambiente AEM seguendo i passaggi indicati nella [sezione Come generare](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
+1. Crea la cartella della libreria client appena creata nell&#39;ambiente AEM seguendo i passaggi indicati nella [sezione Come creare](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
 
 ## Creare e distribuire funzioni personalizzate tramite CRXDE{#create-add-custom-function}
 
@@ -511,7 +511,7 @@ Aggiungiamo il seguente codice al file JavaScript per calcolare l’età in base
 
 1. Salva il file `js.txt`.
 
-È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/using/assets/customfunction.zip). Scarica e installa questa cartella nella tua istanza AEM.
+È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/using/assets/customfunction.zip). Scarica e installa questa cartella nella tua istanza di AEM.
 
 Ora è possibile utilizzare la funzione personalizzata nel modulo adattivo aggiungendo la libreria client.
 
@@ -572,7 +572,7 @@ Visualizziamo in anteprima il modulo per osservare come le funzioni personalizza
 
 >[!NOTE]
 >
-> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza di AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Supporto delle funzioni asincrone nelle funzioni personalizzate {#support-of-async-functions}
 
@@ -615,7 +615,7 @@ Per vedere come funziona, aggiungiamo un pulsante e creiamo una regola per il pu
 
 ![creazione regola per funzione asincrona](/help/forms/using/assets/rule-for-async-funct.png)
 
-Fare riferimento all&#39;illustrazione della finestra della console seguente per dimostrare che quando l&#39;utente fa clic sul pulsante `Fetch`, viene richiamata la funzione personalizzata `callAsyncFunction`, che a sua volta chiama una funzione asincrona `asyncFunction`. Inspect mostra la finestra della console per visualizzare la risposta al clic del pulsante:
+Fare riferimento all&#39;illustrazione della finestra della console seguente per dimostrare che quando l&#39;utente fa clic sul pulsante `Fetch`, viene richiamata la funzione personalizzata `callAsyncFunction`, che a sua volta chiama una funzione asincrona `asyncFunction`. Ispeziona la finestra della console per visualizzare la risposta al clic del pulsante:
 
 ![Finestra della console](/help/forms/using/assets/async-custom-funct-console.png)
 
@@ -633,7 +633,8 @@ Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modul
 >
 > `param {scope} globals` deve essere l&#39;ultimo parametro e non viene visualizzato nell&#39;editor di regole di un modulo adattivo.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -653,7 +654,8 @@ Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modul
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Scopri in che modo le funzioni personalizzate utilizzano gli oggetti field e global con l&#39;aiuto di un modulo `Contact Us` che utilizza casi d&#39;uso diversi.
 
@@ -855,7 +857,7 @@ Fare riferimento all&#39;illustrazione di `console window` seguente per dimostra
 
 È inoltre possibile esaminare la finestra della console per visualizzare i dati inviati al server:
 
-![Dati Inspect nella finestra della console](/help/forms/using/assets/custom-function-submit-data-console-data.png)
+![Verifica i dati nella finestra della console](/help/forms/using/assets/custom-function-submit-data-console-data.png)
 
 <!--
 
@@ -978,9 +980,9 @@ Forms adattivo implementa il caching per le funzioni personalizzate per migliora
 
 Se le funzioni personalizzate vengono modificate, la memorizzazione in cache viene invalidata e analizzata.
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
-* L&#39;utente deve verificare che il componente core [e la versione della specifica siano impostati sulla versione più recente](https://github.com/adobe/aem-core-forms-components/tree/release/650). Tuttavia, per i progetti e i moduli AEM esistenti, vi sono ulteriori passi da seguire:
+* L&#39;utente deve verificare che il componente core [e la versione della specifica siano impostati sulla versione più recente](https://github.com/adobe/aem-core-forms-components/tree/release/650). Tuttavia, per i progetti e i moduli AEM esistenti, sono disponibili ulteriori passaggi da seguire:
 
    * Per il progetto AEM, l&#39;utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e distribuire il progetto.
 

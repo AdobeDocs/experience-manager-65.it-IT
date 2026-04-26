@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 7b6b2adaf4dfc843aeb054c7db834cebd211f2ed
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5588'
-ht-degree: 1%
+source-wordcount: '5734'
+ht-degree: 2%
 
 ---
 
@@ -21,21 +21,21 @@ Questo articolo contiene le funzioni più recenti dell’Editor regole di Adapti
 
 La funzione Editor regole facilita la scrittura di regole su oggetti Modulo adattivo da parte di utenti aziendali e sviluppatori di Forms. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base alle condizioni preimpostate, agli input dell&#39;utente e alle azioni dell&#39;utente sul modulo. Consente di semplificare ulteriormente l’esperienza di compilazione dei moduli, garantendo precisione e velocità.
 
-L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata per scrivere regole. L’editor di regole offre un editor visivo per tutti gli utenti.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Alcune delle azioni chiave eseguite sugli oggetti modulo adattivo utilizzando le regole sono:
+L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata per scrivere regole. L&#39;editor di regole offre un editor visivo per tutti gli utenti.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Alcune delle azioni chiave eseguite sugli oggetti Modulo adattivo tramite Regole sono:
 
 * Mostrare o nascondere un oggetto
-* Attivare o disattivare un oggetto
+* Abilitare o disabilitare un oggetto
 * Impostare un valore per un oggetto
 * Convalidare il valore di un oggetto
 * Eseguire funzioni per calcolare il valore di un oggetto
-* Richiamare un modello dati del modulo (FDM) ed eseguire un’operazione
+* Richiamare un modello dati modulo (FDM) ed eseguire un’operazione
 * Impostare la proprietà di un oggetto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Gli utenti aggiunti al gruppo `forms-power-users` possono creare gli script e modificare quelli esistenti. Gli utenti di `forms-users group` possono utilizzare gli script ma non crearli o modificarli.
 
-## Informazioni su una regola {#understanding-a-rule}
+## Informazioni sulle regole {#understanding-a-rule}
 
 Una regola è una combinazione di azioni e condizioni. Nell’editor delle regole, le azioni includono attività quali nascondere, mostrare, abilitare, disabilitare o calcolare il valore di un oggetto in un modulo. Le condizioni sono espressioni booleane che vengono valutate eseguendo controlli e operazioni sullo stato, sul valore o sulla proprietà di un oggetto modulo. Le azioni vengono eseguite in base al valore ( `True` o `False`) restituito valutando una condizione.
 
@@ -95,7 +95,8 @@ L’editor di regole fornisce i seguenti operatori logici ed eventi utilizzando 
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+-->
 
 ## Tipi di regole disponibili nell’editor di regole {#available-rule-types-in-rule-editor}
 
@@ -184,11 +185,12 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 1. Add the **key** and **value** pair as follows:
    * key: fd:changeEventBehaviour
    * value: deps
-1. Click **[!UICONTROL Done]**. -->
+1. Click **[!UICONTROL Done]**.
+-->
 
 Se nella funzione Condizione When sono presenti più campi consentiti, segui i passaggi di risoluzione dei problemi descritti di seguito.
 
-1. Apri il modulo in modalità di modifica.
+1. Apri il passaggio in modalità di modifica.
 1. Apri il browser Contenuti e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
 1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
 1. Fai clic su Fine e salva di nuovo la finestra di dialogo.
@@ -256,7 +258,9 @@ La figura seguente illustra un esempio di attivazione dinamica della casella di 
 
 **[!UICONTROL Output funzione]** Definisce una regola basata su funzioni predefinite o personalizzate.
 
-**[!UICONTROL Accedi a]** Consente di passare ad altri <!--Interactive Communications,--> Forms adattivi, ad altre risorse quali immagini o frammenti di documenti o a un URL esterno. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Accedi a]** Consente di passare ad altre risorse Adaptive Forms, ad esempio immagini o frammenti di documenti, oppure a un URL esterno.
+<!--Interactive Communications,-->
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Evento di invio]** Attiva azioni o comportamenti specifici in base a condizioni o eventi predefiniti.
 
@@ -277,15 +281,15 @@ Imposta il valore dell&#39;oggetto A su:
 
 Quando (facoltativo):
 
-(Condizione 1 E Condizione 2 E Condizione 3) è VERO;
+(Condizione 1 AND Condizione 2 AND Condizione 3) è TRUE;
 
-Nell&#39;esempio seguente viene selezionato il valore di `Question2` as `True` e impostato il valore di `Result` as `correct`.
+L&#39;esempio seguente seleziona il valore di `Question2` come `True` e imposta il valore di `Result` come `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-Esempio di Set Valore regola mediante l&#39;utilizzo del servizio Form Data Model.
+Esempio di regola Imposta valore tramite il servizio Modello dati modulo.
 
-### [!UICONTROL Mostrare] {#show}
+### [!UICONTROL Mostra] {#show}
 
 Utilizzando il tipo di regola **[!UICONTROL Mostra]**, è possibile scrivere una regola per mostrare o nascondere un oggetto modulo in base al soddisfacimento o meno di una condizione. Il tipo di regola Show attiva anche l&#39;azione Nascondi nel caso in cui la condizione non sia soddisfatta o restituisca `False`.
 
@@ -385,7 +389,8 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) -->
+![FDM set options](assets/fdm_set_options_new.png)
+-->
 
 ## Interfaccia utente dell’editor di regole {#understanding-the-rule-editor-user-interface}
 
@@ -432,7 +437,7 @@ Nell&#39;albero sinistro degli oggetti modulo è possibile selezionare gli ogget
 
 ### C. Attivazione/disattivazione di funzioni e oggetti modulo {#c-form-objects-and-functions-toggle-br}
 
-Quando viene toccato, questo pulsante attiva o disattiva il riquadro delle funzioni e degli oggetti del modulo.
+Quando viene toccato questo pulsante di attivazione, diventa attivo il riquadro Oggetti modulo o il riquadro Funzioni.
 
 ### D. Editor di regole visive {#visual-rule-editor}
 
@@ -455,13 +460,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Tasti Done e cancel {#done-and-cancel-buttons}
 
-Il pulsante **[!UICONTROL Fine]** viene utilizzato per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, gli incompleti vengono non valido e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate quando si lanciare la regola editor successiva dallo stesso oggetto modulo. È possibile gestire regole esistenti in questa visualizzazione. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
+Il pulsante **[!UICONTROL Fine]** viene utilizzato per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, i dati incompleti non sono validi e non vengono eseguiti. Le regole salvate su un oggetto modulo vengono elencate quando si avvia l’editor di regole la prossima volta dallo stesso oggetto modulo. Puoi gestire le regole esistenti in tale vista. Per ulteriori informazioni, vedere [Gestione regole](rule-editor.md#p-manage-rules-p).
 
-Il **[!UICONTROL Annulla]** pulsante elimina tutte le modifiche apportate a un regola e chiude il regola editor.
+Il pulsante **[!UICONTROL Annulla]** elimina le modifiche apportate a una regola e chiude l&#39;editor di regole.
 
-## Scrivere regole {#write-rules}
+## Scrivi regole {#write-rules}
 
-È possibile scrivere regole utilizzando i regola editor visivi <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+È possibile scrivere regole utilizzando l&#39;editor di regole visive <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Vediamo innanzitutto come scrivere regole utilizzando l’editor visivo.
 
@@ -471,12 +476,12 @@ Comprendiamo come creare una regola nell’editor visivo utilizzando il seguente
 
 ![Crea-regola-esempio](assets/create-rule-example.png)
 
-La sezione Requisiti di prestito nel modulo di applicazione di prestito di esempio richiede ai richiedenti di specificare il proprio stato civile, lo stipendio e, se sposati, lo stipendio del coniuge. In base agli input dell’utente, la regola calcola l’importo di idoneità al prestito e viene visualizzata nel campo Idoneità al prestito. Per implementare lo scenario, applica le seguenti regole:
+La sezione Requisiti del prestito nell&#39;esempio di modulo di domanda di prestito richiede ai richiedenti di specificare il loro stato civile, lo stipendio e, in caso di matrimonio, lo stipendio del coniuge. In base agli input dell’utente, la regola calcola l’importo di idoneità al prestito e viene visualizzata nel campo Idoneità al prestito. Per implementare lo scenario, applica le seguenti regole:
 
 * Il campo Stipendio coniuge viene visualizzato solo quando lo stato civile è sposato.
 * L’importo di ammissibilità al prestito è pari al 50% dello stipendio totale.
 
-Per scrivere le regole, effettua le seguenti operazioni:
+Per scrivere regole, esegui i seguenti passaggi:
 
 1. Innanzitutto, scrivi la regola per controllare la visibilità del campo Stipendio coniuge in base all’opzione selezionata dall’utente per il pulsante di opzione Stato civile.
 
@@ -492,9 +497,11 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+<!--
+In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![Radio button values from rule editor](assets/radio-button-values.png)-->
+   ![Radio button values from rule editor](assets/radio-button-values.png)
+   -->
 
 1. Nel campo **[!UICONTROL Immettere una stringa]** nella regola, selezionare **Sposato** dal menu a discesa.
 
@@ -527,12 +534,13 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
 
 
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
+1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
 
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+   -->
 
 >[!NOTE]
 >
@@ -548,7 +556,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. Seleziona **[!UICONTROL Seleziona opzione]** e seleziona **[!UICONTROL Espressione matematica]**. Viene aperto un campo per scrivere espressioni matematiche.
+1. Seleziona **[!UICONTROL Seleziona opzione]** e scegli **[!UICONTROL Espressione matematica]**. Si apre un campo in cui scrivere espressioni matematiche.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
@@ -562,11 +570,11 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Quindi, seleziona nell&#39;area evidenziata intorno al campo espressione e seleziona **[!UICONTROL Estendi espressione]**.
+1. Quindi, seleziona nell’area evidenziata intorno al campo espressione e seleziona **[!UICONTROL Estendi espressione]**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   Nel campo espressione estesa, selezionare **[!UICONTROL diviso per]** dal campo **[!UICONTROL Seleziona operatore]** e **[!UICONTROL Numero]** dal campo **[!UICONTROL Seleziona opzione]**. Specificare quindi **[!UICONTROL 2]** nel campo numerico.
+   Nel campo espressione estesa, seleziona **[!UICONTROL diviso per]** dal campo **[!UICONTROL Seleziona operatore]** e **[!UICONTROL Numero]** dal campo **[!UICONTROL Seleziona opzione]**. Specificare quindi **[!UICONTROL 2]** nel campo numerico.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -574,9 +582,9 @@ Per scrivere le regole, effettua le seguenti operazioni:
    >
    >È possibile creare espressioni complesse utilizzando componenti, funzioni, espressioni matematiche e valori di proprietà dal campo Seleziona opzione.
 
-   Successivo, creare una condizione che, quando restituisce True, viene eseguita l&#39;espressione.
+   Quindi, crea una condizione, che quando restituisce True, l’espressione viene eseguita.
 
-1. Selezionare **[!UICONTROL Aggiungi condizione]** per aggiungere un&#39;istruzione Quando.
+1. Selezionare **[!UICONTROL Aggiungi condizione]** per aggiungere un&#39;istruzione When.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -605,11 +613,12 @@ In alternativa, è possibile utilizzare la regola Imposta valore di per calcolar
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -711,7 +720,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=it#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -846,7 +855,7 @@ Per copiare e incollare le regole, effettuare le seguenti operazioni:
    >
    >È possibile incollare una regola in un altro oggetto modulo solo se tale oggetto supporta l&#39;evento della regola copiata. Ad esempio, un pulsante supporta l’evento clic. È possibile incollare una regola con un evento clic su un pulsante ma non su una casella di controllo.
 
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
+1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
 
 ## Espressioni nidificate {#nestedexpressions}
 
@@ -860,13 +869,13 @@ Puoi anche trascinare le condizioni all’interno di una regola per modificarla.
 
 ![Trascinare](assets/drag-and-drop.png)
 
-## Condizioni dell&#39;espressione data {#dateexpression}
+## Condizioni di espressione data {#dateexpression}
 
-La regola editor consente di utilizzare i confronti di date per creare condizioni.
+L’editor di regole consente di utilizzare i confronti tra date per creare condizioni.
 
-Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se l&#39;ipoteca sulla casa è già stata presa, che il utente indica compilando il campo data.
+Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se l’ipoteca sulla casa è già stata accettata, che l’utente indica compilando il campo data.
 
-Quando la data di ipoteca dell&#39;immobile compilata dal utente è passata, il modulo adattivo visualizza una nota sul calcolo del reddito. Nella regola seguente viene confrontata la data compilata dall&#39;utente con la data corrente e se la data compilata dal utente è precedente alla data corrente, nel modulo viene visualizzato il messaggio di testo (denominato Reddito).
+Quando la data del mutuo dell’immobile compilata dall’utente è nel passato, il modulo adattivo visualizza una nota relativa al calcolo del reddito. La regola seguente confronta la data compilata dall&#39;utente con la data corrente. Se la data compilata dall&#39;utente è precedente alla data corrente, nel modulo viene visualizzato il messaggio di testo Income.
 
 ![Condizione espressione data](assets/dateexpressioncondition.png)
 
@@ -878,7 +887,7 @@ Quando la data di compilazione è precedente alla data corrente, nel modulo vien
 
 L’editor di regole consente di creare condizioni che confrontano due numeri.
 
-Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se il numero di mesi in cui un richiedente soggiorna all&#39;indirizzo corrente è inferiore a 36.
+Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se il numero di mesi in cui un candidato rimane all&#39;indirizzo corrente è inferiore a 36.
 
 ![Condizione di confronto dei numeri](assets/numbercomparisoncondition.png)
 
@@ -886,11 +895,13 @@ Quando l’utente indica di vivere all’attuale indirizzo residenziale per meno
 
 ![È stata richiesta un&#39;altra bozza](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## Regole di esempio {#example}
 
@@ -910,9 +921,9 @@ La regola seguente mostra come configurare l’azione Richiama servizio per eseg
 
 In un modulo di richiesta di prestito, si desidera stabilire se il richiedente è un cliente esistente o meno. In base alle informazioni fornite dall&#39;utente, il campo ID cliente deve essere visualizzato o nascosto. Inoltre, se l’utente è un cliente esistente, imposta il campo ID cliente come elemento attivo. Il modulo di richiesta di prestito presenta le seguenti componenti:
 
-* Un pulsante di scelta, **[!UICONTROL Sei già un cliente del Geometrixx?]**, che fornisce [!UICONTROL Sì] e [!UICONTROL No] opzioni. Il valore per Sì è **0** e No è **1**.
+* Un pulsante di scelta, **[!UICONTROL Sei un cliente Geometrixx esistente?]**, che fornisce [!UICONTROL Sì] e [!UICONTROL No] opzioni. Il valore per Sì è **0** e No è **1**.
 
-* Un campo di testo, **[!UICONTROL ID cliente Geometrixx]**, per specificare l&#39;ID cliente.
+* Campo di testo, **[!UICONTROL ID cliente Geometrixx]**, per specificare l&#39;ID cliente.
 
 Quando scrivi una regola When sul pulsante di scelta per implementare questo comportamento, la regola viene visualizzata come segue nell’editor di regole visive.
 
@@ -922,11 +933,13 @@ Regola nell’editor visivo
 
 Nella regola di esempio, l&#39;istruzione nella sezione When è la condizione che, quando restituisce True, esegue le azioni specificate nella sezione Then.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Utilizzo di un output di funzione in una regola {#using-a-function-output-in-a-rule}
 
@@ -946,11 +959,13 @@ Ora si desidera aggiungere le quantità specificate nella colonna Quantità prod
 
 Regola nell’editor visivo
 
-<!-- he rule appears as follows in the code editor.
+<!--
+he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Convalida di un valore di campo tramite espressione {#validating-a-field-value-using-expression}
 
@@ -959,8 +974,10 @@ Nel modulo dell&#39;ordine di acquisto illustrato nell&#39;esempio precedente, s
 ![Esempio-convalida](assets/example-validate.png)
 Regola nell’editor visivo
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

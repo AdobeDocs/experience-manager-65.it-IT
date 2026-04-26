@@ -1,25 +1,25 @@
 ---
-title: Elenco delle funzioni delle esperienze fluide AEM
+title: Elenco delle funzioni delle esperienze fluide di AEM
 description: Elenco delle funzioni delle esperienze fluide
-index: n
+index: false
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 4%
+source-wordcount: '360'
+ht-degree: 17%
 
 ---
 
-# Elenco delle funzioni delle esperienze fluide AEM{#aem-fluid-experiences-feature-list}
+# Elenco delle funzioni delle esperienze fluide di AEM{#aem-fluid-experiences-feature-list}
 
-Le esperienze fluide di Adobe Experience Manager si basano sui potenti set di funzioni di AEM Sites, AEM Dynamic Medie e AEM Assets per fornire una soluzione solida per la distribuzione di contenuti headless.
+Le esperienze fluide di Adobe Experience Manager si basano sulle potenti serie di funzioni di AEM Sites, AEM Dynamic Media e AEM Assets per fornire una soluzione solida per la distribuzione di contenuti headless.
 
-AEM Fluid Experiences si distingue dal classico AEM in quanto viene affrontato solo il caso di utilizzo di consegna headless. Le soluzioni complete AEM Sites, Assets e Dynamic Medie supportano l&#39;authoring e la distribuzione di contenuti headful e i casi di utilizzo ibridi dell&#39;AEM.[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it)
+AEM Fluid Experience si distingue dal classico AEM in quanto viene affrontato solo il caso di utilizzo della consegna headless. Le soluzioni complete AEM Sites, Assets e Dynamic Media supportano l&#39;authoring e la distribuzione headful dei contenuti e i casi d&#39;uso ibridi di AEM.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it)[
 
-Le tabelle seguenti definiscono le funzioni delle esperienze AEM Fluid e contengono i collegamenti alla relativa documentazione di supporto.
+Le tabelle seguenti definiscono le funzioni di AEM Fluid Experience e contengono i collegamenti alla relativa documentazione di supporto.
 
 * [Archivio](#repository-features)
 * [Accesso, API e consegna](#access-api-and-delivery-features)
@@ -28,7 +28,7 @@ Le tabelle seguenti definiscono le funzioni delle esperienze AEM Fluid e conteng
 
 >[!NOTE]
 >
->AEM Fluid Experiences è un sottogruppo della funzionalità AEM. Le funzioni collegate a queste tabelle possono includere funzioni aggiuntive incluse nell’AEM, ma non nelle esperienze di fluidi dell’AEM.
+>AEM Fluid Experience è un sottoinsieme delle funzionalità di AEM. Le funzioni collegate a in queste tabelle possono includere funzioni aggiuntive incluse in AEM, ma non in AEM Fluid Experience.
 
 ## Funzioni dell’archivio {#repository-features}
 
@@ -51,12 +51,12 @@ Le tabelle seguenti definiscono le funzioni delle esperienze AEM Fluid e conteng
 |---|
 | [API HTTP](/help/assets/mac-api-assets.md) |
 | [Modelli di contenuto strutturato](/help/assets/content-fragments/content-fragments.md) |
-| [Servizi contenuto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) |
+| [Servizi contenuto](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview) |
 | [Frammenti esperienza](/help/sites-authoring/experience-fragments.md) |
 | API HTTP per contenuti strutturati (lettura) |
 | API HTTP per contenuti strutturati (CRUD) |
-| [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) |
-| [Dynamic Medie](/help/assets/dynamic-media.md) |
+| [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) |
+| [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Funzioni di amministrazione e integrazione {#admin-and-integration-features}
 
@@ -84,7 +84,7 @@ Le tabelle seguenti definiscono le funzioni delle esperienze AEM Fluid e conteng
 
 ## Ulteriori informazioni {#learn-more}
 
-* [Esperienze fluide per casi d&#39;uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=it)
-* [Servizio di contenuti AEM: cosa, perché e come?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=it)
-* [Domande frequenti per l&#39;accesso di terze parti](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=it)
-* [Utilizzo delle API Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=it#sling-models)
+* [Esperienze fluide per casi d’uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [Servizio di contenuti AEM: cosa, perché e come?](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview)
+* [Domande frequenti per l’accesso di terze parti](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
+* [Utilizzo delle API Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

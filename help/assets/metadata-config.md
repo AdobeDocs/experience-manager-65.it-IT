@@ -7,10 +7,10 @@ feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 3%
+source-wordcount: '2005'
+ht-degree: 4%
 
 ---
 
@@ -18,10 +18,11 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -48,9 +49,9 @@ Per evitare una situazione di tipo Denial of Service (DOS), [!DNL Enterprise Man
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Per modificare il limite, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]** e modifica il valore di **[!UICONTROL Parametri POST massimi]** nella **[!UICONTROL Gestione parametri richiesta Apache Sling]** configurazione OSGi.
+Per modificare il limite, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]** e modifica il valore di **[!UICONTROL Parametri POST massimi]** nella configurazione OSGi **[!UICONTROL Gestione parametri richieste Apache]**.
 
-## Profili metadati {#metadata-profiles}
+## Profili di metadati {#metadata-profiles}
 
 Un profilo di metadati consente di applicare metadati predefiniti alle risorse all’interno di una cartella. Crea un profilo di metadati e applicalo a una cartella. Qualsiasi risorsa caricata successivamente nella cartella eredita i metadati predefiniti configurati nel profilo di metadati.
 
@@ -73,7 +74,7 @@ Un profilo di metadati consente di applicare metadati predefiniti alle risorse a
 
    ![Mappa su impostazione proprietà nel profilo metadati](assets/metadata-profile-setting-map-property.png)
 
-   Il valore specificato per **[!UICONTROL Mappa su proprietà]** è memorizzato come proprietà sotto il nodo di metadati della risorsa. Ad esempio, se si specifica `./jcr:content/metadata/dc:desc` come nome di **[!UICONTROL Mappa sulla proprietà]**, [!DNL Assets] memorizza il valore `dc:desc` nel nodo di metadati della risorsa. L’Adobe consiglia di mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona l’ultimo campo aggiunto mappato alla proprietà.
+   Il valore specificato per **[!UICONTROL Mappa su proprietà]** è memorizzato come proprietà sotto il nodo di metadati della risorsa. Ad esempio, se si specifica `./jcr:content/metadata/dc:desc` come nome di **[!UICONTROL Mappa sulla proprietà]**, [!DNL Assets] memorizza il valore `dc:desc` nel nodo di metadati della risorsa. Adobe consiglia di mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona l’ultimo campo aggiunto mappato alla proprietà.
 
    * **[!UICONTROL Valore predefinito]**: utilizzare questa proprietà per aggiungere un valore predefinito per il componente metadati. Ad esempio, se specifichi &quot;Descrizione&quot; questo valore viene assegnato alla proprietà `dc:desc` nel nodo di metadati della risorsa.
 
@@ -117,8 +118,9 @@ Un profilo di metadati consente di applicare metadati predefiniti alle risorse a
 1. Fare clic su **[!UICONTROL Elimina profili metadati]** nella barra degli strumenti.
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Elimina]** per confermare l&#39;operazione di eliminazione. Il profilo metadati viene eliminato dall’elenco.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/it/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -200,13 +202,13 @@ Per modificare le proprietà degli elementi del modulo, fare clic sul componente
 
 **[!UICONTROL Etichetta campo]**: nome della proprietà dei metadati visualizzata nella pagina delle proprietà della cartella.
 
-**[!UICONTROL Mappa su proprietà]**: questa proprietà specifica il percorso relativo del nodo della cartella nell&#39;archivio di CRX in cui viene salvato. Inizia con &quot;**./**&quot;, che indica che il percorso si trova nel nodo della cartella.
+**[!UICONTROL Mappa su proprietà]**: questa proprietà specifica il percorso relativo del nodo della cartella nell&#39;archivio di CRX in cui viene salvato. Inizia con &quot;**./**&quot;, che indica che il percorso si trova sotto il nodo della cartella.
 
 Di seguito sono riportati i valori validi per questa proprietà:
 
 * `./jcr:content/metadata/dc:title`: memorizza il valore nel nodo di metadati della cartella come proprietà `dc:title`.
 
-* `./jcr:created`: visualizza la proprietà JCR nel nodo della cartella. Se configuri queste proprietà in CRXDE, l’Adobe consiglia di contrassegnarle come Disattiva modifica, in quanto sono protette. In caso contrario, l&#39;errore &#39; `Asset(s) failed to modify`&#39; si verifica quando si salvano le proprietà della risorsa.
+* `./jcr:created`: visualizza la proprietà JCR nel nodo della cartella. Se configuri queste proprietà in CRXDE, Adobe consiglia di contrassegnarle come Disattiva modifica, in quanto sono protette. In caso contrario, l&#39;errore &#39; `Asset(s) failed to modify`&#39; si verifica quando si salvano le proprietà della risorsa.
 
 Per garantire che il componente sia visualizzato correttamente nel modulo schema metadati, non includere uno spazio nel percorso della proprietà.
 
@@ -262,7 +264,7 @@ Puoi assegnare uno schema di metadati della cartella durante la creazione di una
 
 ### Utilizzare lo schema di metadati della cartella {#use-the-folder-metadata-schema}
 
-Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle [!UICONTROL proprietà] della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
+Apri le proprietà di una cartella configurata con uno schema di metadati per cartelle. Nella pagina delle [!UICONTROL proprietà] della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
 Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell&#39;archivio CRX.
 
@@ -278,7 +280,7 @@ Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]*
 >
 >* [Concetti e informazioni sui metadati](metadata-concepts.md).
 >* [Modifica proprietà metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=it).
+>* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
 >* [Procedure consigliate per organizzare le risorse digitali in modo da utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
->* [Write-back XMP](/help/assets/xmp-writeback.md).
+>* [writeback di XMP](/help/assets/xmp-writeback.md).

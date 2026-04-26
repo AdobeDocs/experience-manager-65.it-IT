@@ -9,9 +9,9 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Per ulteriori informazioni, vedere [https://www.selenium.dev/](https://www.selen
 **Testdroid**
 
 * Servizio di test basato su cloud con hook di integrazione continua e test sul dispositivo reale.
-* Incluso è un App Crawler che controlla la compatibilità del dispositivo, analizza i registri, analizza le viste, acquisisce le schermate e monitora le prestazioni.
+* È incluso un Crawler di app che controlla la compatibilità del dispositivo, analizza i registri, analizza le visualizzazioni, acquisisce le schermate e monitora le prestazioni.
 
 Per ulteriori informazioni, vedere [https://testdroid.com/](https://testdroid.com/).
 
@@ -90,12 +90,14 @@ Per ulteriori informazioni, vedere [https://appium.io/](https://appium.io/).
 
 Per ulteriori informazioni, vedere [https://saucelabs.com/](https://saucelabs.com/).
 
-<!-- **AppTestNow**
+<!--
+**AppTestNow**
 
 * An outsourcing service that tests your mobile apps.
 * Included is a large pool of devices and offers a wide range of types of testing: performance, quality, functional, certification, localization, data consumption, and so on.
 
-For more information, see [https://apptestnow.com/](https://apptestnow.com/). -->
+For more information, see [https://apptestnow.com/](https://apptestnow.com/).
+-->
 
 **HockeyApp**
 

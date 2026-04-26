@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 5%
+source-wordcount: '1020'
+ht-degree: 7%
 
 ---
 
@@ -113,7 +113,7 @@ Una volta generato, il pacchetto può essere caricato in un’istanza di AEM.
 
 ### Archetipo di progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Struttura dell&#39;applicazione {#application-structure}
 

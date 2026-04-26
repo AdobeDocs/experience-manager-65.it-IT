@@ -7,18 +7,18 @@ feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1798'
 ht-degree: 1%
 
 ---
 
-# API HTTP [!DNL Assets] {#assets-http-api}
+# [!DNL Assets] API HTTP {#assets-http-api}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 ## Panoramica {#overview}
@@ -73,7 +73,7 @@ Le cartelle sono simili alle directory dei file system tradizionali. Sono conten
 
 ### Risorse {#assets}
 
-Ad Experience Manager, una risorsa contiene i seguenti elementi:
+In Experience Manager una risorsa contiene i seguenti elementi:
 
 * Proprietà e metadati della risorsa.
 * Più rappresentazioni, ad esempio la rappresentazione originale (la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Altre rappresentazioni possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da file PDF o [!DNL Adobe InDesign].
@@ -127,7 +127,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 
 ## Crea una cartella {#create-a-folder}
 
-Crea un nuovo `sling`: `OrderedFolder` nel percorso specificato. Se viene fornito un `*` invece del nome di un nodo, il servlet utilizza il nome del parametro come nome di nodo. Accettati come dati della richiesta è una rappresentazione Siren della nuova cartella o un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`, utili per la creazione di una cartella direttamente da un modulo HTML. Inoltre, è possibile specificare le proprietà della cartella come parametri di query URL.
+Crea un nuovo `sling`: `OrderedFolder` nel percorso specificato. Se viene fornito un `*` invece del nome di un nodo, il servlet utilizza il nome del parametro come nome di nodo. Accettati come dati di richiesta è una rappresentazione Siren della nuova cartella o un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`, utili per la creazione di una cartella direttamente da un modulo di HTML. Inoltre, è possibile specificare le proprietà della cartella come parametri di query URL.
 
 Una chiamata API non riesce con un codice di risposta `500` se il nodo principale del percorso specificato non esiste. Una chiamata restituisce un codice di risposta `409` se la cartella esiste già.
 
@@ -191,7 +191,7 @@ Aggiorna le proprietà dei metadati della risorsa. Se si aggiorna una proprietà
 
 ### Aggiornamento dei metadati di sincronizzazione tra `dc` e lo spazio dei nomi `jcr` {#sync-metadata-between-namespaces}
 
-Il metodo API aggiorna le proprietà dei metadati nello spazio dei nomi `jcr`. Gli aggiornamenti apportati tramite l&#39;interfaccia utente modificano le proprietà dei metadati nello spazio dei nomi `dc`. Per sincronizzare i valori dei metadati tra lo spazio dei nomi `dc` e `jcr`, è possibile creare un flusso di lavoro e configurare Experience Manager per eseguire il flusso di lavoro in seguito alla modifica della risorsa. Utilizza uno script ECMA per sincronizzare le proprietà dei metadati richieste. Lo script di esempio seguente sincronizza la stringa del titolo tra `dc:title` e `jcr:title`.
+Il metodo API aggiorna le proprietà dei metadati nello spazio dei nomi `jcr`. Gli aggiornamenti apportati tramite l&#39;interfaccia utente modificano le proprietà dei metadati nello spazio dei nomi `dc`. Per sincronizzare i valori dei metadati tra lo spazio dei nomi `dc` e `jcr`, è possibile creare un flusso di lavoro e configurare Experience Manager per l&#39;esecuzione del flusso di lavoro in seguito alla modifica della risorsa. Utilizza uno script ECMA per sincronizzare le proprietà dei metadati richieste. Lo script di esempio seguente sincronizza la stringa del titolo tra `dc:title` e `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();

@@ -9,10 +9,10 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2085'
-ht-degree: 0%
+source-wordcount: '2116'
+ht-degree: 2%
 
 ---
 
@@ -105,7 +105,7 @@ Ciò significa che, quando è necessario specificare un indirizzo IP, è possibi
 
   ad esempio, `http://localhost:4502`
 
-### Rimozione versione {#version-purging}
+### Eliminazione della versione {#version-purging}
 
 In un’installazione standard, AEM crea una versione di una pagina o di un nodo ogni volta che attivi una pagina (dopo l’aggiornamento del contenuto). Puoi anche creare versioni aggiuntive su richiesta utilizzando la scheda **Controllo versioni** della barra laterale. Tutte queste versioni vengono memorizzate nell’archivio e possono essere ripristinate, se necessario.
 
@@ -160,7 +160,7 @@ Gli agenti di replica sono centrali per AEM in quanto il meccanismo utilizzato p
 
 Per ulteriori dettagli, vedere [Replica](/help/sites-deploying/replication.md).
 
-### Impostazioni configurazione OSGi {#osgi-configuration-settings}
+### Impostazioni di configurazione di OSGi {#osgi-configuration-settings}
 
 [OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack di tecnologia di AEM. Viene utilizzato per controllare i bundle compositi di AEM e la relativa configurazione.
 
@@ -180,7 +180,7 @@ Per informazioni sulla gestione degli utenti in AEM (inclusa l&#39;assegnazione 
 
 Dispatcher è lo strumento di Adobe Experience Manager per il caching, o il bilanciamento del carico, o entrambi. Può essere utilizzato con un server web di classe enterprise.
 
-Per informazioni dettagliate, vedere [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it), in particolare [Configurazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it) per ulteriori dettagli sulla configurazione.
+Per informazioni dettagliate, vedere [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it), in particolare [Configurazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) per ulteriori dettagli sulla configurazione.
 
 ### Configurazione del connettore AEM LiveCycle {#configuring-aem-livecycle-connector}
 
@@ -206,9 +206,11 @@ La console Benvenuti dell’interfaccia classica fornisce un elenco di collegame
 
 Per ulteriori dettagli, vedere [Configurazione per le prestazioni](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### Archivio dati condiviso {#shared-data-store}
 
@@ -228,7 +230,7 @@ Puoi abilitare HTTP su SSL per utilizzare connessioni più sicure ai server.
 
 Per ulteriori dettagli, vedere [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md).
 
-### Portlet e portali AEM {#aem-portals-and-portlets}
+### Portlet e portali di AEM {#aem-portals-and-portlets}
 
 Un portale è un&#39;applicazione Web che offre personalizzazione, Single Sign-On, integrazione di contenuti da origini diverse e ospita il livello di presentazione dei sistemi informativi. Il componente portlet consente inoltre di incorporare un portlet sulla pagina. Per accedere al contenuto fornito da CQ5 WCM, il server portale può essere dotato del portlet CQ5 Portal Director. Per eseguire questa operazione, installare, configurare e aggiungere il portlet alla pagina del portale.
 

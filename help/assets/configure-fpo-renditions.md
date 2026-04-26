@@ -7,9 +7,9 @@ feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1098'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
-Quando inserisci risorse di grandi dimensioni da Experience Manager nei documenti di Adobe InDesign, un professionista deve attendere molto tempo dopo aver [inserito una risorsa](https://helpx.adobe.com/it/indesign/using/placing-graphics.html). Nel frattempo, l’utente non può utilizzare InDesign. Questo interrompe il flusso creativo e influisce negativamente sull’esperienza utente. Adobe consente di inserire temporaneamente nei documenti di InDesign copie trasformate di piccole dimensioni. Quando è necessario l’output finale, ad esempio per i flussi di lavoro di stampa e pubblicazione, le risorse originali a risoluzione completa sostituiscono la rappresentazione temporanea in background. Questo aggiornamento asincrono in background accelera il processo di progettazione per aumentare la produttività e non ostacola il processo creativo.
+Quando inserisci risorse di grandi dimensioni da Experience Manager nei documenti di Adobe InDesign, un professionista deve attendere molto tempo dopo aver [inserito una risorsa](https://helpx.adobe.com/indesign/using/placing-graphics.html). Nel frattempo, l’utente non può utilizzare InDesign. Questo interrompe il flusso creativo e influisce negativamente sull’esperienza utente. Adobe consente di inserire temporaneamente nei documenti di InDesign copie trasformate di piccole dimensioni. Quando è necessario l’output finale, ad esempio per i flussi di lavoro di stampa e pubblicazione, le risorse originali a risoluzione completa sostituiscono la rappresentazione temporanea in background. Questo aggiornamento asincrono in background accelera il processo di progettazione per aumentare la produttività e non ostacola il processo creativo.
 
 In Adobe Experience Manager (AEM) sono disponibili copie trasformate utilizzate solo per il posizionamento (FPO). Queste copie trasformate FPO hanno dimensioni di file ridotte ma hanno le stesse proporzioni. Se per una risorsa non è disponibile una rappresentazione FPO, Adobe InDesign utilizza la risorsa originale. Questo meccanismo di fallback assicura che il flusso di lavoro creativo proceda senza interruzioni.
 

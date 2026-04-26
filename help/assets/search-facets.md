@@ -7,9 +7,9 @@ feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: '2437'
 ht-degree: 15%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Una distribuzione a livello aziendale di [!DNL Adobe Experience Manager Assets] ha la capacità di archiviare molte risorse. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo se si utilizzano solo le funzionalità di ricerca generiche di [!DNL Experience Manager].
@@ -115,7 +115,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 1. Dalla pagina **[!UICONTROL Cerca in Forms]**, seleziona **[!UICONTROL Barra di ricerca amministrazione Assets]**, quindi fai clic su **[!UICONTROL Modifica]**.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l&#39;etichetta, ad esempio **[!UICONTROL Tipo file]**. Specificare la proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio `jcr:content/metadata/dc:format.`
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Nel campo **[!UICONTROL Nome proprietà]**, indica il percorso del file JSON in cui si definiscono i nodi per le opzioni e specifica le coppie chiave-valore corrispondenti.
    * Fare clic sul simbolo `+` accanto al campo Opzioni per specificare il testo e il valore da visualizzare per le opzioni che si desidera specificare nel pannello Filtri. Per aggiungere un&#39;altra opzione, fare clic sul simbolo `+` e ripetere il passaggio.
@@ -165,17 +165,17 @@ Analogamente al modo in cui si aggiunge un predicato Proprietà o Opzioni, è po
 
 | Nome predicato | Descrizione | Proprietà |
 |---|---|---|
-| [!UICONTROL Testo completo] | Predicato di ricerca per eseguire ricerche full-text su un intero nodo di risorsa. È mappato con l’operatore jcr:contains. Puoi specificare un percorso relativo se desideri eseguire una ricerca full-text su una parte specifica del nodo della risorsa. | <ul><li>Etichetta</li><li>Segnaposto</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
-| [!UICONTROL Browser Percorsi] | Predicato di ricerca per cercare le risorse in cartelle e sottocartelle in un percorso principale preconfigurato | <ul><li>Segnaposto</li><li>Percorso directory principale</li><li>Descrizione</li></ul> |
+| [!UICONTROL Testo completo] | Predicato di ricerca per eseguire ricerche full-text su un intero nodo di risorsa. È mappato con l&#39;operatore jcr:contains. Puoi specificare un percorso relativo se desideri eseguire una ricerca full-text su una parte specifica del nodo della risorsa. | <ul><li>Etichetta</li><li>Segnaposto</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
+| [!UICONTROL Browser Percorsi] | Predicato di ricerca per cercare le risorse in cartelle e sottocartelle in un percorso principale preconfigurato | <ul><li>Segnaposto</li><li>Percorso principale</li><li>Descrizione</li></ul> |
 | [!UICONTROL Percorso] | Utilizzala per filtrare i risultati in base alla posizione. È possibile specificare percorsi diversi come opzioni. | <ul><li>Etichetta</li><li>Percorso</li><li>Descrizione</li></ul> |
-| [!UICONTROL Stato Publish] | Cerca predicato per cercare le risorse in base al loro stato di pubblicazione | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
+| [!UICONTROL Stato pubblicazione] | Cerca predicato per cercare le risorse in base al loro stato di pubblicazione | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Data relativa] | Cerca predicato per cercare le risorse in base alla data relativa di creazione. Ad esempio, puoi configurare diverse opzioni, come 2 mesi fa, 3 settimane fa e così via. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Data relativa</li></ul> |
 | [!UICONTROL Intervallo] | Predicato di ricerca per cercare le risorse che si trovano all’interno di un intervallo specificato. Nel pannello Ricerca, potete specificare i valori minimo e massimo per l&#39;intervallo. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Intervallo date] | Cerca predicato per cercare le risorse create all’interno di un intervallo specificato per una proprietà di data. Nel pannello Ricerca, potete specificare le date di inizio e di fine utilizzando gli strumenti di selezione delle date. | <ul><li>Etichetta</li><li>Segnaposto</li><li>Nome proprietà</li><li>Testo intervallo (Da)</li><li>Testo intervallo (A)</li><li>Descrizione</li></ul> |
 | [!UICONTROL Data] | Predicato di ricerca per una ricerca di risorse basata su cursore e basata su una proprietà data. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Dimensione file] | Cerca predicato per cercare le risorse in base alle loro dimensioni. Si tratta di un predicato basato su silder in cui è possibile selezionare le opzioni del cursore da un nodo configurabile. Le opzioni predefinite sono definite in /libs/dam/options/predicates/filesize nell’archivio CRXDE. La dimensione del file è indicata in byte. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Percorso</li><li>Descrizione</li></ul> |
 | [!UICONTROL Ultima modifica risorsa] | Cerca predicato per cercare le risorse modificate di recente | <ul><li>Nome proprietà</li><li>Valore proprietà</li><li>Descrizione</li></ul> |
-| [!UICONTROL Stato Publish] | Cerca predicato per cercare le risorse in base al loro stato di pubblicazione | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
+| [!UICONTROL Stato pubblicazione] | Cerca predicato per cercare le risorse in base al loro stato di pubblicazione | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Valutazione] | Cerca predicato per cercare le risorse in base alla loro valutazione media | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Percorso opzione</li><li>Descrizione</li></ul> |
 | [!UICONTROL Stato scadenza] | Cerca predicato per cercare le risorse in base al loro stato di scadenza | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Nascosto] | Predicato di ricerca che definisce una proprietà di campo nascosto per la ricerca di risorse | <ul><li>Nome proprietà</li><li>Valore proprietà</li><li>Descrizione</li></ul> |

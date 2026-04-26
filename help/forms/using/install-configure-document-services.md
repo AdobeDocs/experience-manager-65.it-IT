@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '10086'
-ht-degree: 2%
+source-wordcount: '10489'
+ht-degree: 3%
 
 ---
 
@@ -210,7 +210,7 @@ Se si intende utilizzare il servizio PDF Generator per convertire i formati di f
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint sono disponibili solo per Microsoft® Windows. Se si utilizza il sistema operativo basato su UNIX, installare OpenOffice per convertire i file RTF e i file Microsoft® Office supportati in documenti PDF.
 >* Chiudi tutte le finestre di dialogo visualizzate dopo l’installazione di Adobe Acrobat e del software di terze parti per tutti gli utenti configurati per l’utilizzo del servizio PDF Generator.
 >* Avviare tutto il software installato almeno una volta. Ignora tutte le finestre di dialogo per tutti gli utenti configurati per utilizzare il servizio PDF Generator.
->* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/it/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
+>* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
 
 ### Installare Adobe Acrobat Pro DC
 
@@ -226,8 +226,10 @@ Prima di installare Acrobat, controlla questi requisiti essenziali. Dovresti ave
 * Privilegi di amministratore locale sul computer che esegue AEM Forms
 * Sistema operativo Windows a 64 bit
 * Connessione Internet stabile per l&#39;attivazione della licenza
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+ -->
 
 
 #### Flusso di lavoro di implementazione e timeline
@@ -237,11 +239,11 @@ Il processo completo richiede in genere 1-2 ore, a seconda dell’ambiente:
 | Passaggio | Tempo stimato | Prerequisiti |
 |------|----------------|---------------|
 | &#x200B;1. Creare un pacchetto FRL in Admin Console) | 15-20 minuti | [Accesso ad Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
-| &#x200B;2. Concedere Le Autorizzazioni Di Download | 5-10 minuti | [Accesso ad Admin Console](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
-| &#x200B;3. Disinstallare Acrobat precedente | 10-15 minuti | Accesso amministratore del server |
+| &#x200B;2. Concedi autorizzazioni download | 5-10 minuti | [Accesso ad Admin Console](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
+| &#x200B;3. Disinstalla Acrobat precedente | 10-15 minuti | Accesso amministratore del server |
 | &#x200B;4. Scaricare e installare Adobe Acrobat Pro | 10-15 minuti | Accesso amministratore del server |
-| &#x200B;5. Scaricare e distribuire il pacchetto FRL | 20-30 minuti | Accesso amministratore del server |
-| &#x200B;6. Verifica dell’installazione | 5-10 minuti | Accesso al server |
+| &#x200B;5. Scarica e distribuisci pacchetto FRL | 20-30 minuti | Accesso amministratore del server |
+| &#x200B;6. Verifica installazione | 5-10 minuti | Accesso al server |
 
 <!-- ![Workflow diagram showing the FRL implementation process](/help/forms/using/assets/frl.svg) -->
 
@@ -905,7 +907,7 @@ Segui questi passaggi:
 >
 >La disattivazione della modalità protetta è necessaria per scenari di automazione lato server come AEM Forms PDF Generator. Questa impostazione deve essere modificata solo in ambienti server dedicati e non nei desktop degli utenti finali.
 
-Per ulteriori informazioni, consulta la [documentazione di Adobe sulla modalità protetta](https://helpx.adobe.com/it/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Per ulteriori informazioni, consulta la [documentazione di Adobe sulla modalità protetta](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1033,7 +1035,7 @@ L&#39;account utente utilizzato per avviare il server applicazioni richiede il p
 
    1. Microsoft® consiglia di eseguire il backup del Registro di sistema prima di modificarlo. Per i passaggi dettagliati, vedere [Eseguire il backup e il ripristino del Registro di sistema in Windows](https://support.microsoft.com/en-us/help/322756).
    1. Aprire l&#39;editor del Registro di sistema di Microsoft® Windows. Per aprire l&#39;editor del Registro di sistema, passare a Start > Esegui, digitare regedit e fare clic su OK.
-   1. Passa a `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Assicurarsi che il valore di EnableLUA sia impostato su 0 (zero).
+   1. Accedi a `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Assicurarsi che il valore di EnableLUA sia impostato su 0 (zero).
    1. Assicurarsi che il valore di **EnableLUA** sia impostato su 0 (zero). Se il valore non è 0, modificare il valore in 0. Chiudi l’editor del Registro di sistema.
 
 1. Riavvia il computer.
@@ -1088,12 +1090,12 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]**.
    2. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
 1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it).
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e che il log sia stabile.
+1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e che il log sia stabile.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
 
@@ -1320,7 +1322,7 @@ Lo strumento [Preparazione sistema](#srt-configuration) verifica se il computer 
    >
    >* Se System Readiness Tool segnala che il file pdfgen.api non è disponibile nella cartella dei plug-in di Acrobat, copiare il file pdfgen.api dalla directory `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` alla directory `[Acrobat_root]\Acrobat\plug_ins`.
 
-1. Passa a `[Path_of_reports_folder]`. Aprire il file SystemReadinessTool.html. Verifica il rapporto e correggi i problemi indicati.
+1. Accedi a `[Path_of_reports_folder]`. Aprire il file SystemReadinessTool.html. Verifica il rapporto e correggi i problemi indicati.
 
 ### Configurazione delle opzioni per lo strumento SRT {#srt-configuration}
 
@@ -1453,7 +1455,8 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 +++
 
-<!-- +++ Unable to add a PDF Generator (PDFG) user
+<!--
++++ Unable to add a PDF Generator (PDFG) user
 
 * (Acrobat 2020 only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
@@ -1467,7 +1470,8 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 +++
 
-<!-- +++ (Acrobat 2020 only) Multiple user conversion failures 
+<!--
++++ (Acrobat 2020 only) Multiple user conversion failures 
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
@@ -1479,9 +1483,11 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 * Perform a sample conversion.
 
-+++ -->
++++
+-->
 
-<!-- (Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
+<!--
+(Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1506,7 +1512,8 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
-+++ -->
++++
+-->
 
 +++ Impossibile convertire file Word o Excel in PDF sul server Windows
 

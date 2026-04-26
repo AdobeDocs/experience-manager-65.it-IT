@@ -9,10 +9,10 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 0%
+source-wordcount: '939'
+ht-degree: 1%
 
 ---
 
@@ -171,7 +171,9 @@ L&#39;esempio di codice JSP seguente ottiene un&#39;istanza dell&#39;origine dat
 >Se il metodo getDataSource genera un&#39;eccezione perché l&#39;origine dati non è stata trovata, verificare che la configurazione del servizio del pool di connessioni sia corretta. Verificare i nomi, i valori e i tipi di dati delle proprietà.
 >
 
-<!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
+<!--
+Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
 >
->To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html). -->
+>To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+-->

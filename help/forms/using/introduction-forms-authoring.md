@@ -9,10 +9,10 @@ feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3142'
-ht-degree: 54%
+source-wordcount: '3206'
+ht-degree: 53%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 54%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -28,14 +28,14 @@ ht-degree: 54%
 
 I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce un’interfaccia utente intuitiva e componenti pronti all’uso per la creazione e l’utilizzo di moduli adattivi. Puoi scegliere di creare un modulo adattivo basato su un modello di modulo o uno schema di modulo o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti. Puoi scegliere tra le seguenti opzioni per creare un modulo adattivo:
 
-* **Seleziona un modello dati del modulo**
+* **Utilizzo di un modello dati modulo**
   [Integrazione dati](../../forms/using/data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati modulo che può essere utilizzato per creare moduli adattivi. Scegli il modello dati del modulo se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
 * **Utilizzo di un modello di modulo XDP**
-Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
+È un modello di modulo ideale se disponi di investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
 
 * **Utilizzo di una definizione di schema XML (XSD) o di uno schema JSON**
-Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di moduli adattivi.
+Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di moduli adattivi.
 
 * **Utilizzo di nessuno o senza un modello di modulo**
 I moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
@@ -74,9 +74,11 @@ La barra laterale consente di:
 
 **A.** Browser dei contenuti **B.** Browser delle proprietà **C.** Browser delle risorse **D.** Browser delle componenti
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 La barra laterale comprende i seguenti browser:
 
@@ -88,7 +90,7 @@ Mostra la gerarchia degli oggetti del modulo. L’autore può passare a un compo
 
    * **Oggetti modello dati**
 Consente di visualizzare la gerarchia del modello di modulo.
-Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. È possibile visualizzare gli oggetti del modello dati quando il modulo utilizza lo schema XML, lo schema JSON o il modello XDP.
+Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. È possibile visualizzare gli oggetti modello dati quando il modulo utilizza lo schema XML, lo schema JSON o il modello XDP.
 
 * **Browser proprietà**
 
@@ -120,7 +122,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Captcha</td>
-   <td>Aggiunge la convalida CAPTCHA tramite il servizio Google reCAPTCHA. Per informazioni dettagliate, consulta <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Utilizzo del CAPTCHA nei moduli adattivi</a>.</td>
+   <td>Aggiunge la convalida CAPTCHA utilizzando il servizio Google reCAPTCHA. Per informazioni dettagliate, consulta <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Utilizzo del CAPTCHA nei moduli adattivi</a>.</td>
   </tr>
   <tr>
    <td>Grafico</td>
@@ -152,11 +154,11 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Allegato file</td>
-   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo. È possibile allegare più file a un componente File allegato. È inoltre possibile specificare le **[!UICONTROL Maximum File Size]** e **[!UICONTROL Supported File Types]** per gli allegati nel browser delle proprietà del componente. </p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l'associazione di file il cui nome inizia con i caratteri (.) e che contengono i caratteri \ / : * ? " &lt; &gt; | ; % $, o contenente nomi di file speciali riservati per il sistema operativo Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente file allegato aperto nel browser Apple Safari, selezionare e allegare i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/it/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formati di file supportati</a>. </li></ul></p> </td>
+   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo. È possibile allegare più file a un componente File allegato. È inoltre possibile specificare le **[!UICONTROL Maximum File Size]** e **[!UICONTROL Supported File Types]** per gli allegati nel browser delle proprietà del componente. </p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l'associazione di file il cui nome inizia con i caratteri (.) e che contengono i caratteri \ / : * ? " &lt; &gt; | ; % $, o contenenti nomi di file speciali riservati per il sistema operativo Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente file allegato aperto nel browser Apple Safari, selezionare e allegare i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/it/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formati di file supportati</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Elenco allegato file</td>
@@ -192,7 +194,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Pannello</td>
-   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando il pulsante <span class="uicontrol">Aggiungi pannello</code>  pulsante. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando il pulsante <span class="uicontrol">Aggiungi barra degli strumenti del</code> pulsante. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td>
+   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando il pulsante <span class="uicontrol">Aggiungi pannello</code> pulsante. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando il pulsante <span class="uicontrol">Aggiungi barra degli strumenti del</code> pulsante. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td>
   </tr>
   <tr>
    <td>Casella password</td>
@@ -240,7 +242,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Interruttore</td>
-   <td>Aggiunge un interruttore che esegue un’azione di mostra/nascondi o attivazione/disattivazione. Non è possibile aggiungere più di due opzioni nel componente Interruttore. Poiché un interruttore può avere solo due valori, on o off, obbligatorio non è applicabile. Almeno un valore viene salvato indipendentemente dall’input dell’utente. <br /> </td>
+   <td>Aggiunge un interruttore che esegue un’azione di mostra/nascondi o abilitazione/disabilitazione. Non è possibile aggiungere più di due opzioni nel componente Interruttore. Poiché un interruttore può avere solo due valori, on o off, obbligatorio non è applicabile. Almeno un valore viene salvato indipendentemente dall’input dell’utente. <br /> </td>
   </tr>
   <tr>
    <td>Tabella</td>
@@ -292,7 +294,7 @@ Di seguito sono riportate alcune best practice e punti chiave da tenere a mente 
 
 * Alcuni componenti dei moduli adattivi come E-mail e Telefono includono modelli di convalida predefiniti. Tuttavia, è possibile specificare la convalida personalizzata aggiornando il campo **[!UICONTROL Pattern di convalida]** nel pannello a soffietto Patterns nelle proprietà del componente. Per ulteriori informazioni sulle convalide predefinite, consulta le descrizioni dei componenti nella tabella precedente.
 
-* I campi dei moduli adattivi, come Casella numerica e E-mail, possono essere configurati per includere tipi di input HTML5 specializzati. Quando questi campi sono attivati su dispositivi mobili e tablet, il tastierino mostra in anticipo caratteri, numeri e caratteri specifici che vengono comunemente utilizzati per immettere informazioni nei campi. Consente agli utenti di immettere rapidamente le informazioni senza dover passare da un set di caratteri all’altro sul tastierino. Per consentire l&#39;input specializzato per un componente, abilitare la casella di controllo **[!UICONTROL Usa numero tipo di HTML]** nelle proprietà del componente.
+* I campi dei moduli adattivi, come Casella numerica e E-mail, possono essere configurati per includere tipi di input HTML5 specializzati. Quando questi campi sono attivati su dispositivi mobili e tablet, il tastierino mostra in anticipo caratteri, numeri e caratteri specifici che vengono comunemente utilizzati per immettere informazioni nei campi. Consente agli utenti di immettere rapidamente le informazioni senza dover passare da un set di caratteri all’altro sul tastierino. Per consentire l&#39;input specializzato per un componente, abilitare la casella di controllo **[!UICONTROL Usa numero tipo HTML]** nelle proprietà del componente.
 
 * È possibile abilitare un componente Casella di testo per accettare il testo RTF. Per abilitare il testo RTF per una casella di testo, abilitare la casella di controllo **[!UICONTROL Consenti testo RTF]** nelle proprietà del componente.
 
@@ -305,7 +307,7 @@ Di seguito sono riportate alcune best practice e punti chiave da tenere a mente 
    1. Trova e seleziona **[!UICONTROL Servizio di configurazione adattivo di Forms]**.
    1. Nella finestra di dialogo Servizio configurazione Forms adattivo, abilita **[!UICONTROL Rendi univoci i nomi dei file]**. Per impostazione predefinita, è disabilitato.
 
-* Per consentire agli utenti di allegare un PDF tramite il browser Safari, accertarsi che **application/pdf** sia aggiunto alla proprietà Tipi di file supportati del componente File allegato. I moduli adattivi creati con la versione precedente di AEM Forms possono contenere **.pdf** invece di **application/pdf** nella proprietà Tipi di file supportati.
+* Per consentire agli utenti di allegare un PDF utilizzando il browser Safari, accertarsi che **application/pdf** sia aggiunto alla proprietà Tipi di file supportati del componente File allegato. I moduli adattivi creati con la versione precedente di AEM Forms possono contenere **.pdf** invece di **application/pdf** nella proprietà Tipi di file supportati.
 
 Per ulteriori best practice sui moduli adattivi, consulta [Best practice per l&#39;utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md).
 
@@ -372,7 +374,7 @@ J. **Altri**: fornisce ulteriori opzioni per lavorare con il componente selezion
 
 * Visualizza espressione SOM
 * Salva un pannello come frammento (solo per i pannelli)
-* Aggiungi pannello figlio (solo per pannelli)
+* Aggiungi pannello secondario (solo per pannelli)
 * Aggiungi barra degli strumenti del pannello (solo per i pannelli)
 * Sostituisci (non per pannelli)
 

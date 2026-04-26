@@ -1,5 +1,5 @@
 ---
-title: Introduzione all’interfaccia utente di authoring delle comunicazioni interattive
+title: Introduzione all’interfaccia utente di creazione delle comunicazioni interattive
 description: Introduzione ai vari elementi dell’interfaccia utente che è possibile utilizzare per creare la comunicazione interattiva
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,18 +9,18 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 10%
+source-wordcount: '1316'
+ht-degree: 11%
 
 ---
 
-# Introduzione all’interfaccia utente di authoring delle comunicazioni interattive{#introduction-to-interactive-communication-authoring-ui}
+# Introduzione all’interfaccia utente di creazione delle comunicazioni interattive{#introduction-to-interactive-communication-authoring-ui}
 
 L&#39;interfaccia utente per l&#39;authoring di [comunicazione interattiva](/help/forms/using/interactive-communications-overview.md) è intuitiva e fornisce le seguenti informazioni per l&#39;authoring di stampa e canale Web della comunicazione interattiva:
 
-* Editor di documenti con trascinamento della selezione WYSIWYG
+* Editor di documenti con trascinamento della selezione di WYSIWYG
 * Archivio integrato per le risorse: le risorse caricate e create sul server sono disponibili nel browser Risorse dell’interfaccia di authoring di comunicazioni interattive
 
 Quando [crei o modifichi una comunicazione interattiva esistente](../../forms/using/create-interactive-communication.md), utilizzi i seguenti elementi dell&#39;interfaccia utente:
@@ -40,9 +40,11 @@ Quando [crei o modifichi una comunicazione interattiva esistente](../../forms/us
 
 **A.** Browser canali **B.** Browser contenuti **C.** Browser proprietà **D.** Browser risorse **E.** Browser componenti **F.** Browser origini dati - Modello dati **G.** Browser origini dati - Contenuto principale
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 La barra laterale include quanto segue:
 
@@ -78,7 +80,7 @@ Include componenti che è possibile utilizzare per creare i canali di stampa e w
 
 &#42;&#42; Nel canale di stampa, le aree di destinazione sono predefinite nel modello XDP/print. Non è possibile aggiungere nuove aree di destinazione utilizzando l’interfaccia utente di creazione della comunicazione interattiva.
 
-* **Browser Origini Dati**
+* **Browser origini dati**
 Il browser Origini dati visualizza le origini dati disponibili nel modello dati del modulo selezionato durante la creazione della comunicazione interattiva.
 
 ### Punti chiave per l’utilizzo dei componenti {#key-points-for-working-with-components}
@@ -116,7 +118,7 @@ G. **Incolla**: consente di incollare il componente tagliato o copiato utilizzan
 
 H. **Gruppo**: consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
 
-I. **Elemento padre**: consente di selezionare il padre di un componente.
+I. **Elemento principale**: consente di selezionare l’elemento principale di un componente.
 
 J. **Visualizza espressione SOM:** Consente di visualizzare [espressione SOM](../../forms/using/using-som-expressions-adaptive-forms.md) per il componente.
 
@@ -124,7 +126,7 @@ K: **Raggruppa oggetti nel pannello:** Consente di raggruppare i componenti in u
 
 L. **Aggiungi pannello figlio** (solo per i pannelli): consente di aggiungere un pannello figlio al pannello.
 
-M: **Barra degli strumenti Aggiungi pannello** (solo per i pannelli):Consente di aggiungere la barra degli strumenti per il componente Pannello. È quindi possibile eseguire ulteriori azioni sulla barra degli strumenti.
+M: **Aggiungi barra degli strumenti pannello** (solo per i pannelli):Lets aggiungi la barra degli strumenti per il componente Pannello. È quindi possibile eseguire ulteriori azioni sulla barra degli strumenti.
 
 Inoltre, l&#39;opzione **Sostituisci** nella barra degli strumenti consente di sostituire il componente esistente con un componente alternativo. L’opzione non è disponibile per il componente Pannello.
 

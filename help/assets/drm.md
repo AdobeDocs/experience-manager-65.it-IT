@@ -1,5 +1,5 @@
 ---
-title: Digital Rights Management di risorse
+title: Digital Rights Management delle risorse
 description: Scopri come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 role: User, Admin
@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1440'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata di utilizzo. Poiché [!DNL Adobe Experience Manager Assets] è completamente integrato con la piattaforma [!DNL Experience Manager], è possibile gestire in modo efficiente le informazioni sulla scadenza delle risorse e gli stati delle risorse. È inoltre possibile associare le informazioni sulle licenze alle risorse.
@@ -74,7 +74,7 @@ Inoltre, se un problema o un errore impedisce al modulo di pianificazione di ril
 Per abilitare la console [!DNL Assets] per visualizzare le risorse composte di riferimento insieme alle risorse secondarie scadute, configura un flusso di lavoro **[!UICONTROL Adobe CQ DAM Expiry Notification]** in [!DNL Experience Manager] Configuration Manager.
 
 1. Aprire [!DNL Experience Manager] Configuration Manager.
-1. Scegli **[!UICONTROL Notifica di scadenza DAM Adobe CQ]**. Per impostazione predefinita, è selezionata l&#39;utilità di pianificazione **[!UICONTROL Time based]**, che pianifica un processo per verificare in un momento specifico se una risorsa è scaduta o meno. Al termine del processo, le risorse con risorse secondarie scadute e le risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
+1. Scegli **[!UICONTROL Notifica di scadenza Adobe CQ DAM]**. Per impostazione predefinita, è selezionata l&#39;utilità di pianificazione **[!UICONTROL Time based]**, che pianifica un processo per verificare in un momento specifico se una risorsa è scaduta o meno. Al termine del processo, le risorse con risorse secondarie scadute e le risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
 
 1. Per eseguire il processo periodicamente, cancella il campo **[!UICONTROL Time Based Scheduler Rule (Regola modulo di pianificazione basato sul tempo)]** e modifica il tempo in secondi nel campo **[!UICONTROL Periodic Scheduler (Modulo di pianificazione periodica)]**. L&#39;espressione di esempio `0 0 0 * * ?`, ad esempio, attiva il processo alle ore 00.
 1. Seleziona **[!UICONTROL Invia e-mail]** per ricevere e-mail alla scadenza di una risorsa.
@@ -92,8 +92,8 @@ Per abilitare la console [!DNL Assets] per visualizzare le risorse composte di r
 La console [!DNL Assets] può visualizzare vari stati per le risorse. A seconda dello stato corrente di una particolare risorsa, la relativa vista a schede mostra un’etichetta che ne descrive lo stato, ad esempio Scaduto, Pubblicato, Approvato, Rifiutato e così via.
 
 1. Nell&#39;interfaccia utente [!DNL Assets], seleziona una risorsa.
-1. Fare clic su **[!UICONTROL Publish]** nella barra degli strumenti. Se non trovi **Publish** sulla barra degli strumenti, fai clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individua l&#39;opzione **[!UICONTROL Publish]** ![pubblica](assets/do-not-localize/publish-globe.png).
-1. Scegliere **[!UICONTROL Publish]** dal menu, quindi chiudere la finestra di dialogo di conferma.
+1. Fai clic su **[!UICONTROL Pubblica]** nella barra degli strumenti. Se non vedi **Pubblica** sulla barra degli strumenti, fai clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individua l&#39;opzione **[!UICONTROL Pubblica]** ![Pubblica](assets/do-not-localize/publish-globe.png).
+1. Scegliere **[!UICONTROL Pubblica]** dal menu, quindi chiudere la finestra di dialogo di conferma.
 1. Esci dalla modalità di selezione. Lo stato di pubblicazione della risorsa viene visualizzato nella parte inferiore della miniatura nella vista a schede. Nella vista a elenco, la colonna Pubblicato mostra l’ora in cui la risorsa è stata pubblicata.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
@@ -119,7 +119,7 @@ La console [!DNL Assets] può visualizzare vari stati per le risorse. A seconda 
 
 1. Per cercare le risorse in base al loro stato, fai clic su **[!UICONTROL Cerca]** ![opzione di ricerca](assets/do-not-localize/search_icon.png) per visualizzare la barra di Omnisearch.
 1. Selezionare `Return` e fare clic su [!DNL Experience Manager] per visualizzare il pannello di ricerca.
-1. Nel pannello di ricerca, fai clic su **[!UICONTROL Stato Publish]** e seleziona **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in [!DNL Assets].
+1. Nel pannello di ricerca, fai clic su **[!UICONTROL Stato pubblicazione]** e seleziona **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -152,7 +152,7 @@ Un bene è considerato protetto se è soddisfatta una delle seguenti condizioni:
 >
 >Il percorso `/etc/dam/drm/licenses` utilizzato per l&#39;archiviazione delle licenze nelle versioni precedenti di [!DNL Experience Manager] è obsoleto.
 >
->Se si creano o si modificano le pagine delle licenze o si eseguono il port dalle versioni precedenti di [!DNL Experience Manager], l&#39;Adobe consiglia di memorizzarle in `/apps/settings/dam/drm/licenses` o `/conf/&ast;/settings/dam/drm/licenses`.
+>Se si creano o si modificano le pagine delle licenze o si eseguono il port dalle versioni precedenti di [!DNL Experience Manager], Adobe consiglia di archiviarle in `/apps/settings/dam/drm/licenses` o `/conf/&ast;/settings/dam/drm/licenses`.
 
 ### Scaricare risorse protette da DRM {#downloading-drm-assets}
 

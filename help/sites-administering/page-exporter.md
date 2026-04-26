@@ -1,18 +1,18 @@
 ---
-title: Esportatore pagina
+title: Esportazione della pagina
 description: Scopri come utilizzare Adobe Experience Manager (AEM) Page Exporter.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 0%
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
-# Esportatore pagina{#the-page-exporter}
+# Esportazione della pagina{#the-page-exporter}
 
 Adobe Experience Manager (AEM) consente di esportare una pagina come pagina Web completa che include immagini, `.js` e `.css` file.
 
@@ -68,7 +68,7 @@ L&#39;utilità di esportazione delle pagine si basa sul [framework di sincronizz
 
 Quando viene attivata un’esportazione di pagine, viene fatto riferimento al modello di esportazione. Sia il percorso della pagina che il percorso della progettazione vengono applicati in modo dinamico. Il file zip viene quindi creato utilizzando la funzionalità standard di sincronizzazione dei contenuti.
 
-Un&#39;installazione standard di AEM include un modello predefinito in `/etc/contentsync/templates/default`.
+Un&#39;installazione predefinita di AEM include un modello predefinito in `/etc/contentsync/templates/default`.
 
 * Questo modello è il modello di fallback quando non viene trovato alcun modello di esportazione nel repository.
 
@@ -87,7 +87,7 @@ Il metodo più semplice per creare un modello di esportazione pagine consiste ne
 
 Per creare un modello completamente nuovo:
 
-1. In **CRXDE Liti**, creare un nodo sotto `/etc/contentsync/templates`:
+1. In **CRXDE Lite**, creare un nodo sotto `/etc/contentsync/templates`:
 
    * `Name`: nome appropriato per il sito, ad esempio `<mysite>`. Il nome viene visualizzato nella finestra di dialogo delle proprietà della pagina quando si sceglie il modello di esportazione della pagina.
 
@@ -110,7 +110,8 @@ Quando il modello è configurato, lo rendi disponibile:
 
 Il modello è costituito da una struttura di nodi, in quanto utilizza il framework [Content Sync](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Ogni nodo ha una proprietà `type` che definisce un&#39;azione specifica nel processo di creazione del file zip.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Per creare un modello di esportazione è possibile utilizzare i seguenti nodi:
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Per soddisfare alcuni requisiti specifici, implementa un [gestore di aggiornamento personalizzato](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Esportazione di una pagina a livello di programmazione {#programmatically-exporting-a-page}
@@ -192,6 +194,6 @@ Per esportare una pagina a livello di programmazione, puoi utilizzare il servizi
 
 Il servlet associato al selettore `export` e all&#39;estensione `zip` utilizza il servizio PageExporter.
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 Se si verifica un problema con il download del file zip, è possibile eliminare il nodo `/var/contentsync` nell&#39;archivio e inviare nuovamente la richiesta di esportazione.
