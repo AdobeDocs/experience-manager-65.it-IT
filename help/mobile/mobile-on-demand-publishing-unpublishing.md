@@ -24,7 +24,7 @@ Una volta acquisite familiarità con le azioni di gestione dei contenuti su arti
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/it/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) nella Guida in linea.
 
 ## Pubblicazione/annullamento della pubblicazione del contenuto {#publishing-unpublishing-the-content}
 

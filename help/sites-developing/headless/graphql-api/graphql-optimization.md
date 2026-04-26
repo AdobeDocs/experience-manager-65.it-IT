@@ -84,7 +84,7 @@ Le query GraphQL e le relative risposte JSON possono essere memorizzate nella ca
 
 Consulta:
 
-* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn)
 
 #### Impostare le intestazioni di controllo cache HTTP {#set-http-cache-control-headers}
 

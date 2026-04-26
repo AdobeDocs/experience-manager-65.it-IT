@@ -29,9 +29,9 @@ Questo documento descrive i passaggi consigliati per caricare un’applicazione 
 I prerequisiti sono semplici.
 
 * Assicurati che un’istanza di AEM sia in esecuzione localmente.
-* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
+* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it&#available-properties).
    * Questo costituisce la base del progetto AEM che verrà aggiornato per includere l’applicazione a pagina singola esterna.
-   * Gli esempi in questo documento utilizzano il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
+   * Gli esempi in questo documento utilizzano il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it#spa-editor).
 * Avrai a portata di mano l’applicazione a pagina singola React funzionante ed esterna che desideri integrare.
 
 ## Carica applicazione a pagina singola in un progetto AEM {#upload-spa-to-aem-project}

@@ -19,17 +19,17 @@ ht-degree: 1%
 
 Esempi ed esempi in questo documento sono utili per comprendere e utilizzare AEM Document Services in un ambiente AEM Forms su OSGi. Per esempi ed esempi sull’ambiente AEM Forms su JEE, consulta
 
-* [Guida introduttiva all’API Java di Signature Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+* [Guida introduttiva all’API Java di Signature Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=it&#programming-aem-forms-jee)
 
-* [Servizio di crittografia API Java - Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+* [Servizio di crittografia API Java - Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=it&#developer-reference)
 
-* [Guida introduttiva al servizio Acrobat Reader extensions API Java](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
+* [Guida introduttiva al servizio Acrobat Reader extensions API Java](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=it&#developer-reference)
 
 ## Prerequisito {#prerequisite}
 
 * Prima di utilizzare le API del servizio DocAssurance, [configurare il servizio DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) con il tuo progetto AEM Maven. Le classi client necessarie per creare progetti Maven utilizzando AEM Document Services sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) con il tuo progetto AEM Maven. Le classi client necessarie per creare progetti Maven utilizzando AEM Document Services sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 
 * Scopri [come creare il tuo progetto AEM utilizzando Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -71,7 +71,7 @@ Il servizio DocAssurance include i seguenti servizi:
 
 >[!NOTE]
 >
->Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
+>Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Aggiunta di un campo di firma invisibile {#adding-an-invisible-signature-field}
 

@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
 Il reporting delle risorse consente di valutare l&#39;utilità della distribuzione di [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets] puoi generare diversi rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, sul modo in cui gli utenti interagiscono con le risorse e sulle risorse scaricate e condivise.
