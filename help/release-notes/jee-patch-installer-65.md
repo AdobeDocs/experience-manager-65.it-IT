@@ -4,11 +4,10 @@ description: Scopri come utilizzare AEM Forms JEE Patch Installer per risolvere 
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
-hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 26%
@@ -31,7 +30,7 @@ Il programma di installazione delle patch di AEM 6.5 Forms JEE include tutti i p
 
 ## Installazione e configurazione della patch {#installing-and-configuring-the-patch}
 
-1. Esegui una copia di backup della cartella &lt;*AEM_forms_root*>/deploy. Sarà necessaria se decidi di disinstallare la correzione rapida.
+1. Esegui un backup della cartella &lt;*AEM_forms_root*>/deploy. Sarà necessaria se decidi di disinstallare la correzione rapida.
 1. Arresta il server applicazioni.
 1. Estrai sul disco rigido il file archivio del programma di installazione della patch.
 1. Nella directory denominata in base al sistema operativo in uso:

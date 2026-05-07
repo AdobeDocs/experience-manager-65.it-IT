@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 3%
@@ -887,8 +887,6 @@ Dopo aver completato tutti i processi, eseguire un test di azione rapida per con
 
 >[!ENDTABS]
 
-
-
 ### Disabilita modalità protetta all’avvio in Acrobat
 
 Dopo aver abilitato Feature Restricted Licensing (FRL) e verificato l’attivazione di Acrobat, si consiglia di disabilitare la modalità protetta all’avvio in Adobe Acrobat per garantire la compatibilità con AEM Forms PDF Generator.
@@ -1543,7 +1541,6 @@ Quando si converte Microsoft Excel 2019 in PDF in Microsoft Windows Server 2019,
 Per risolvere il problema, [crea una chiave del Registro di sistema specifica della funzionalità in Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
-
 
 ## Passaggi successivi {#next-steps}
 
