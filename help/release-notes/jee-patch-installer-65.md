@@ -4,11 +4,10 @@ description: Scopri come utilizzare AEM Forms JEE Patch Installer per risolvere 
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
-hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 26%
@@ -19,7 +18,7 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->[Contattare il supporto tecnico](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support) per ulteriori informazioni o per ottenere la patch.
+>[Contattare il supporto tecnico](https://experienceleague.adobe.com/?support-solution=General&support-tab=homehome?lang=it#support) per ulteriori informazioni o per ottenere la patch.
 
 ## Informazioni sul programma di installazione delle patch {#about-the-patch-installer}
 
@@ -31,7 +30,7 @@ Il programma di installazione delle patch di AEM 6.5 Forms JEE include tutti i p
 
 ## Installazione e configurazione della patch {#installing-and-configuring-the-patch}
 
-1. Esegui una copia di backup della cartella &lt;*AEM_forms_root*>/deploy. Sarà necessaria se decidi di disinstallare la correzione rapida.
+1. Esegui un backup della cartella &lt;*AEM_forms_root*>/deploy. Sarà necessaria se decidi di disinstallare la correzione rapida.
 1. Arresta il server applicazioni.
 1. Estrai sul disco rigido il file archivio del programma di installazione della patch.
 1. Nella directory denominata in base al sistema operativo in uso:
@@ -71,8 +70,8 @@ Passare alla directory appropriata e dal prompt dei comandi digitare `./aem65_cf
 
 1. A seconda del server applicazioni in uso, scegliere uno dei seguenti documenti e seguire le istruzioni riportate nella sezione *Configurazione e distribuzione di AEM Forms*.
 
-   * [Installazione e distribuzione di AEM Forms per JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_it)
-   * [Installazione e distribuzione di AEM Forms per WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_it)
+   * [Installazione e distribuzione di AEM Forms per JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [Installazione e distribuzione di AEM Forms per WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Solo JBoss®) Dopo aver installato la patch e configurato il server, eliminare tmp e le directory di lavoro del server applicazioni JBoss®.
 
@@ -97,4 +96,4 @@ Se l’autenticazione SAML è configurata e si verificano problemi con metadati 
 * Protezione dei documenti
 * JEE per Foundation
 
-[Contatta il supporto](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support)
+[Contatta il supporto](https://experienceleague.adobe.com/?support-solution=General&support-tab=homehome?lang=it#support)
