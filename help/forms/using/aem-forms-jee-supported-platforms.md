@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: bd638125068fd6408a6dde1b51c613a7dc06587d
+source-git-commit: 16c687cd949ba8bf0b476415f33ba5317ebc7e24
 workflow-type: tm+mt
-source-wordcount: '3908'
+source-wordcount: '3851'
 ht-degree: 3%
 
 ---
@@ -527,12 +527,12 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
   </tr>
 
 <tr>
-   <td>Licenze Microsoft® Office 2021 Professional Plus, per vendite al dettaglio e volumi</td>
+   <td>Licenze Microsoft® Office 2024 Professional Plus, per vendite al dettaglio e volumi</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF e TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   OpenOffice 4.1.15 </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT<br>
 
@@ -544,29 +544,19 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 >[!NOTE]
 >
 >- PDF Generator supporta solo le versioni in inglese, francese, tedesco e giapponese dei sistemi operativi e delle applicazioni supportati.
->- PDF Generator supporta Microsoft® Office 2024.
->- PDF Generator richiede Adobe Acrobat Pro DC (32 Bit) per eseguire la conversione.
->- PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
->- Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio se un&#39;installazione con licenza Volume License non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
+>- PDF Generator richiede Adobe Acrobat Pro DC a 32 bit e Microsoft® Office Professional Plus per eseguire la conversione.
+>- L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
+>- Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio un&#39;installazione con licenza multilicenza che non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
 >- PDF Generator non supporta Microsoft® Office 365.
 >- Le conversioni PDF Generator per OpenOffice sono supportate sia su Windows che su Linux®.
 >- Le funzioni PDF, Ottimizza PDF e Export PDF di OCR sono supportate solo in Windows.
->- Il servizio PDF Generator non supporta Microsoft® Windows 11.
-
-
-PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
-
-
-L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
-
-
-Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio se un&#39;installazione con licenza Volume License non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
+>- PDF Generator non supporta Microsoft® Windows 11.
+>- Il supporto per Microsoft® Office 2021 Professional Plus è diventato obsoleto.
 
 <!--
 Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
 -->
-
 
 ### Eccezioni al supporto dell’accessibilità {#exceptions-to-accessibility-support}
 
@@ -924,6 +914,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### Versione 6.5.24.0 (26 novembre 2025)
+
+| Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
+| -------------- | --------------- | ------------------- |
+| Microsoft® Office 2024 | | Microsoft® Office 2021 |
+
 ### Versione 6.5.23.0 (6 giugno 2025)
 
 | Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
@@ -933,8 +929,6 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Driver JDBC Microsoft® SQL Server 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64 bit) | Driver JDBC Microsoft® SQL Server 8.2 |
 | Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64 bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bit) |
-| Microsoft® Office 2024 | |  |
-
 
 ### Versione 6.5.22.0 (29 novembre 2024)
 
