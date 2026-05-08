@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
+source-git-commit: 7df2debfd24bb6caca27ecea2f1b98966095a553
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 3%
@@ -81,11 +81,11 @@ Prima di iniziare l’installazione e la configurazione dei servizi documentali 
 >
 >* In Microsoft® Windows, PDF Generator supporta percorsi di conversione WebKit, Acrobat WebCapture e WebToPDF per convertire i file HTML in documenti PDF.
 >* Nei sistemi operativi basati su UNIX, PDF Generator supporta le route di conversione WebKit e WebToPDF per convertire i file HTML in documenti PDF.
->
 
 ### Requisiti aggiuntivi per sistemi operativi basati su UNIX {#extrarequirements}
 
 Se si utilizza un sistema operativo basato su UNIX, installare i seguenti pacchetti a 32 bit dal supporto di installazione del rispettivo sistema operativo:
+
 <table>
  <tbody>
   <tr>
@@ -188,8 +188,10 @@ Se si utilizza un sistema operativo basato su UNIX, installare i seguenti pacche
 
 * (Solo per PDF Generator) Se la conversione WebToPDF non riesce sul server Unix® con il seguente errore:
 
-  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-quindi impostare la variabile di ambiente seguente e riavviare il server:
+  `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`
+
+  quindi impostare la variabile di ambiente seguente e riavviare il server:
+
   `OPENSSL_CONF=/etc/ssl`
 
 >[!NOTE]
