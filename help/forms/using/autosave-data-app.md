@@ -10,14 +10,18 @@ exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 0%
+source-wordcount: '309'
+ht-degree: 3%
 
 ---
 
 # Utilizzo del salvataggio automatico nell’app AEM Forms{#using-autosave-in-aem-forms-app}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Quando un utente immette dati nell’app Adobe Experience Manager Forms, la funzione di salvataggio automatico li salva a intervalli regolari. La funzione di salvataggio automatico nell’app AEM Forms consente di evitare la perdita di dati in caso di chiusura accidentale dell’app.
 
@@ -42,4 +46,4 @@ Per utilizzare la funzione di salvataggio automatico nell’app AEM Forms, effet
 1. Quando riavvii l’app e accedi con lo stesso utente, ti viene richiesto di ripristinare l’attività tramite la finestra di dialogo Recupera attività non salvata. Fare clic su **OK** nella finestra di dialogo Recupera attività non salvata per riprendere a utilizzare l&#39;attività salvata. Puoi fare clic su **Annulla** per eliminare i dati salvati corrispondenti all&#39;ultimo salvataggio automatico attivato e iniziare a lavorare con una nuova attività.
 
    Quando fai clic su **OK**, l&#39;attività viene ripristinata con i dati corrispondenti all&#39;ultimo salvataggio automatico attivato prima dell&#39;arresto anomalo dell&#39;app. Include i dati del modulo e tutti gli allegati associati all&#39;attività.
-   [![Recupero di un&#39;attività&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Modulo in corso di lavorazione **B.** App chiusa forzatamente **C.** App riavviata con la finestra di dialogo Recupera attività non salvata **D.** Modulo ripristinato con i dati originali
+   [![Recupero attività&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Un modulo in corso di lavorazione **B.** app è stato chiuso forzatamente **C.** app riavviata con la finestra di dialogo Recupera attività non salvata **D.** modulo ripristinato con i dati originali

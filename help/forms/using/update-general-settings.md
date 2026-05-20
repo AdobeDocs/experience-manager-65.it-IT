@@ -9,14 +9,18 @@ exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 1%
+source-wordcount: '406'
+ht-degree: 2%
 
 ---
 
 # Aggiornamento delle impostazioni generali{#updating-general-settings}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Le impostazioni generali dell’app AEM Forms consentono di specificare impostazioni quali recupero di allegati, modalità offline, schermata di destinazione, categoria predefinita e frequenza di salvataggio automatico.
 
@@ -50,7 +54,7 @@ Puoi apportare le seguenti modifiche alle impostazioni dell’app.
 * **Schermata di destinazione**: per impostare la posizione iniziale ([Schermata iniziale](../../forms/using/home-screen.md)) per l&#39;app.
 Opzioni disponibili:
 
-   * Moduli
+   * Forms
    * Attività
    * Preferiti
 

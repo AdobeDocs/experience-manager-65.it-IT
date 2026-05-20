@@ -1,5 +1,5 @@
 ---
-title: app AEM Forms
+title: App AEM Forms
 description: L’app AEM Forms consente ai lavoratori sul campo di utilizzare moduli adattivi sui loro dispositivi mobili.
 contentOwner: sashanka
 content-type: reference
@@ -9,14 +9,18 @@ exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 0%
+source-wordcount: '2485'
+ht-degree: 1%
 
 ---
 
 # Introduzione all’app AEM Forms {#aem-forms-app}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Panoramica {#overview}
 
@@ -26,11 +30,11 @@ Il codice sorgente dell’app AEM Forms è disponibile per i clienti tramite Sof
 
 L’app AEM Forms è supportata su dispositivi iOS, Android e Windows. Puoi installare l’app AEM Forms per Android da Google Play, iOS da App Store e Windows da Windows Store.
 
-    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
+    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Per installare, personalizzare e distribuire l&#39;app su dispositivi iOS, Android o Windows, vedere [Personalizzare, generare e distribuire l&#39;app AEM Forms](#customize-build-distribute).
 
@@ -51,7 +55,7 @@ Se disponi di un server AEM Forms, puoi eseguire il rendering dei moduli adattiv
 
 Un server AEM Forms che non utilizza AEM Forms Workflow è AEM Forms su OSGi, un modulo mobile standalone o un modulo adattivo. L&#39;app AEM Forms funziona con l&#39;implementazione AEM Forms in [OSGi](/help/sites-deploying/configuring-osgi.md). I Forms che abiliti e pubblichi per l’app AEM Forms sono disponibili nella tua app.
 
-I moduli vengono scaricati nell’app e sono disponibili offline. Si supponga ad esempio di gestire una società bancaria e che un cliente riempia un&#39;applicazione sul sito. L’applicazione è un modulo adattivo che accetta informazioni dai clienti e le memorizza per la revisione. L’amministratore rivede il modulo e crea un modulo di verifica nell’istanza di authoring AEM. L’amministratore abilita la sincronizzazione del modulo con l’app AEM Forms e lo pubblica. Se il modulo di verifica è disponibile nell’app AEM Forms, l’agente sul campo può utilizzare un dispositivo mobile per verificare i dettagli del cliente. Il dispositivo mobile si sincronizza con il server e il modulo di verifica viene caricato nell’app. L’agente sul campo può visitare il cliente, verificare i dettagli, salvare i dati come bozza o inviare il modulo di verifica. Il modulo viene sincronizzato con il server ogni volta che l&#39;app è online.
+I moduli vengono scaricati nell’app e sono disponibili offline. Si supponga ad esempio di gestire una società bancaria e che un cliente riempia un&#39;applicazione sul sito. L’applicazione è un modulo adattivo che accetta informazioni dai clienti e le memorizza per la revisione. L’amministratore rivede il modulo e crea un modulo di verifica nell’istanza di authoring di AEM. L’amministratore abilita la sincronizzazione del modulo con l’app AEM Forms e lo pubblica. Se il modulo di verifica è disponibile nell’app AEM Forms, l’agente sul campo può utilizzare un dispositivo mobile per verificare i dettagli del cliente. Il dispositivo mobile si sincronizza con il server e il modulo di verifica viene caricato nell’app. L’agente sul campo può visitare il cliente, verificare i dettagli, salvare i dati come bozza o inviare il modulo di verifica. Il modulo viene sincronizzato con il server ogni volta che l&#39;app è online.
 
 Per sincronizzare il modulo nell’app AEM Forms:
 
@@ -72,7 +76,7 @@ Vedi l&#39;[app AEM Forms (precedentemente nota come Mobile Workspace)](/help/fo
 
 Puoi sincronizzare la tua app con il server AEM Forms e lavorare con i moduli sul tuo dispositivo mobile.
 
-Con il server di AEM Forms Workflow, un modulo può essere associato a un punto d’inizio in un processo di Workbench e a un’applicazione Casella in entrata AEM. A un’applicazione Casella in entrata AEM può essere associato un modulo adattivo. A un punto iniziale può essere associato un modulo adattivo, un modulo HTML5 o un set di moduli. È possibile inviare un punto d&#39;inizio come attività oppure salvare l&#39;attività come bozza. Per ulteriori informazioni sulle differenze tra un&#39;applicazione Casella in entrata AEM e un punto iniziale, consulta [Azioni e funzionalità dei flussi di lavoro AEM basati su moduli nei flussi di lavoro OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Con il server di AEM Forms Workflow, un modulo può essere associato a un punto d’inizio in un processo di Workbench e nell’applicazione Casella in entrata AEM. A un’applicazione Casella in entrata AEM può essere associato un modulo adattivo. A un punto iniziale può essere associato un modulo adattivo, un modulo HTML5 o un set di moduli. È possibile inviare un punto d&#39;inizio come attività oppure salvare l&#39;attività come bozza. Per ulteriori informazioni sulle differenze tra un&#39;applicazione Casella in entrata AEM e un punto d&#39;inizio, consulta [Azioni e funzionalità dei flussi di lavoro AEM basati su moduli nei flussi di lavoro OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
 
 Con il server di AEM Forms senza il flusso di lavoro di AEM Forms, nell’app di AEM Forms viene eseguito il rendering di un modulo abilitato per la sincronizzazione nell’app. I Forms sono disponibili nella scheda Forms dell’app, possono essere inviati o salvati come bozza. I moduli adattivi e i moduli mobili sono supportati nell’app.
 
@@ -121,9 +125,9 @@ Quando un utente immette dati nell’app AEM Forms, la funzione di salvataggio a
 
 Vedi [Utilizzo del salvataggio automatico nell&#39;app AEM Forms](/help/forms/using/autosave-data-app.md).
 
-## Differenze tra la casella in entrata dell’AEM e le funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
+## Differenze tra la casella in entrata di AEM e le funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono l&#39;utilizzo di [Casella in entrata AEM](/help/forms/using/manage-applications-inbox.md) e dell&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata dell’AEM e dell’app AEM Forms sono diverse. La casella in entrata AEM funziona solo con [flussi di lavoro incentrati su Forms](/help/forms/using/aem-forms-workflow.md), mentre l&#39;app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi. Per ulteriori informazioni sulle differenze tra la Casella in entrata AEM e le funzionalità delle app AEM Forms, consulta [Azioni e funzionalità dei flussi di lavoro AEM incentrati su moduli nei flussi di lavoro OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono l&#39;utilizzo di [Posta in arrivo AEM](/help/forms/using/manage-applications-inbox.md) e dell&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata di AEM e dell’app AEM Forms sono diverse. La casella in entrata di AEM funziona solo con [flussi di lavoro incentrati su Forms](/help/forms/using/aem-forms-workflow.md), mentre l&#39;app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi. Per ulteriori informazioni sulle differenze tra la Casella in entrata di AEM e le funzionalità delle app AEM Forms, consulta [Azioni e funzionalità dei flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
 
 ## Moduli supportati {#supported-forms}
 
@@ -188,7 +192,7 @@ Per ottenere l’origine dell’app AEM Forms, effettua le seguenti operazioni:
    1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]**.
    2. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
 1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
 **Per iOS**:
@@ -209,11 +213,11 @@ Per informazioni dettagliate su come creare un&#39;app Windows (.appx), fare rif
 
 Per informazioni dettagliate su come distribuire l&#39;app tramite MDM, consulta [Distribuire l&#39;app AEM Forms](/help/forms/using/distribute-mobile-workspace-app.md). La distribuzione delle app tramite MDM è applicabile solo ad iOS e Android.
 
-## Recommendations per aggiornare Mobile Workspace all&#39;app AEM Forms {#recommendations-to-upgrade-mobile-workspace-to-aem-forms-app}
+## Consigli per aggiornare Mobile Workspace all’app AEM Forms {#recommendations-to-upgrade-mobile-workspace-to-aem-forms-app}
 
 Se stai effettuando l’aggiornamento alla versione più recente dell’app AEM Forms, assicurati di aver letto i seguenti punti:
 
-* **Se hai installato una versione precedente dell&#39;app da Play Store in Android**
+* **Se hai installato una versione precedente dell&#39;app dal Play Store su Android**
 Puoi aggiornare l’app direttamente dal play store.
 
 * **Se la versione precedente dell&#39;app viene generata e installata utilizzando il codice sorgente (applicabile per iOS e Android)**:

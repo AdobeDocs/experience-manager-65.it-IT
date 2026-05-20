@@ -8,14 +8,18 @@ exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
 # Utilizzo della modalità offline {#working-in-the-offline-mode}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 La modalità offline dell’app AEM Forms consente di lavorare senza problemi anche se l’app va offline. È possibile aprire, aggiornare e inviare un modulo senza richiedere alcuna connettività di rete.
 
@@ -46,6 +50,6 @@ Per configurare il componente offline lato server dell&#39;app AEM Forms:
    * **Cancella cache**: cancella la cache lato server delle dipendenze del modulo.
    * **Ripristina configurazione**: reimposta la configurazione offline dell&#39;app AEM Forms.
    * **Validità cache**: specifica il periodo di validità per la cache offline lato server.
-   * **Percorsi di osservazione risorse**: specifica i percorsi in cui il servizio offline controlla le modifiche alle risorse. Se si verificano modifiche nei percorsi specificati, la cache offline di tutti i moduli dipendenti viene aggiornata. Esempio: `/etc/clientlibs/fd,/content/dam/images`.
+   * **Percorsi di osservazione risorse**: specifica i percorsi in cui il servizio offline controlla le modifiche alle risorse. Se si verificano modifiche nei percorsi specificati, la cache offline di tutti i moduli dipendenti viene aggiornata. Ad esempio, `/etc/clientlibs/fd,/content/dam/images`.
 
 1. Nella scheda **Cache risorse manuale**, specificare le dipendenze del modulo che il servizio offline non è in grado di identificare. Puoi specificare risorse quali immagini caricate da JavaScript. L’app AEM Forms scaricherà queste risorse anche per la modalità offline.

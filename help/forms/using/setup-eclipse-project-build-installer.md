@@ -1,5 +1,5 @@
 ---
-title: Creare l’app AEM Forms Android
+title: Creare l’app AEM Forms per Android
 description: Passaggi per configurare il progetto Android Studio e creare il file .apk per l’app AEM Forms per Android
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,18 @@ exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 2%
+source-wordcount: '752'
+ht-degree: 4%
 
 ---
 
-# Creare l’app AEM Forms Android {#build-the-aem-forms-android-app}
+# Creare l’app AEM Forms per Android {#build-the-aem-forms-android-app}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Per creare l’app Android per AEM Forms, esegui i seguenti passaggi nella sequenza consigliata.
 
@@ -35,7 +39,7 @@ Per scaricare il file `adobe-aemfd-forms-app-src-pkg-<version>.zip`, effettuare 
    1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]**.
    2. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
 1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 1. Per scaricare l&#39;archivio del codice sorgente, apri **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** nel browser. Il file .zip dell’app Android viene scaricato sul tuo dispositivo.
 1. Estrarre il contenuto del file .zip in una cartella del file system locale. Ad esempio, *C:\&lt;Struttura cartella>\adobe-lc-mobileworkspace-src-2.4.20*
@@ -49,8 +53,8 @@ Nell&#39;immagine seguente viene visualizzata la struttura della cartella `adobe
 Imposta le seguenti variabili di ambiente prima di avviare il processo di build per l’app AEM Forms:
 
 * Impostare la variabile di ambiente JAVA_HOME sulla posizione del software JDK nel file system locale. Ad esempio, C:\Program Files\Java\jdk1.8.0_181
-* Impostare la variabile di ambiente di sistema `ANDROID_SDK_ROOT` sulla posizione SDK per Android. Ad esempio, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk
-* Impostare la variabile di ambiente di sistema `Path` per includere i percorsi delle cartelle degli strumenti e degli strumenti di Platform per Android. Ad esempio, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools e C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Impostare la variabile di ambiente di sistema `ANDROID_SDK_ROOT` sul percorso SDK per Android. Ad esempio, C:\Users\&lt;username>\AppData\Local\Android\Sdk
+* Impostare la variabile di ambiente di sistema `Path` per includere i percorsi delle cartelle degli strumenti e degli strumenti di Platform per Android. Ad esempio, C:\Users\&lt;nomeutente>\AppData\Local\Android\Sdk\platform-tools e C:\Users\&lt;nomeutente>\AppData\Local\Android\Sdk\tools.
 
 ## Creare un’app AEM Forms standard {#set-up-the-xcode-project}
 
@@ -77,7 +81,7 @@ Per creare un’app AEM Forms con Android Studio, effettua le seguenti operazion
    Una volta creato correttamente l’ambiente di sviluppo, puoi applicare le personalizzazioni all’app. Utilizza i seguenti articoli per personalizzare l’app:
 
    * [Personalizzazione branding](/help/forms/using/branding-customization.md)
-   * [Personalizzazione tema](/help/forms/using/theme-customization.md)
+   * [Personalizzazione del tema](/help/forms/using/theme-customization.md)
    * [Personalizzazione movimento](/help/forms/using/gesture-customization.md)
 
    Dopo aver applicato le personalizzazioni appropriate all’app, puoi generare il file .apk per la distribuzione.

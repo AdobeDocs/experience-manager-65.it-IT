@@ -1,6 +1,6 @@
 ---
 title: Configura il progetto Android&trade; studio e crea l’app Android&trade;
-description: Passaggi per configurare il progetto Android&trade; Studio e creare il programma di installazione per l'app Forms Adobe Experience Manager (AEM)
+description: Passaggi per configurare il progetto Android&trade; Studio e creare il programma di installazione per l’app Forms Adobe Experience Manager (AEM)
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
@@ -8,16 +8,20 @@ exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '613'
 ht-degree: 2%
 
 ---
 
 # Configurate il progetto Android™ studio e create l&#39;app Android™ {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Questo articolo è destinato alla creazione dell’app AEM Forms 6.3.1.1 e versioni successive. Per creare un&#39;app dal codice sorgente dell&#39;app AEM Forms 6.3, vedi [Configurare il progetto Eclipse e creare l&#39;app Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
+Questo articolo è destinato alla creazione dell&#39;app AEM Forms 6.3.1.1 e versioni successive. Per creare un&#39;app dal codice sorgente dell&#39;app AEM Forms 6.3, vedi [Configurare il progetto Eclipse e creare l&#39;app Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine contiene tutti i componenti per creare un’app AEM Forms personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` fa parte del pacchetto `adobe-aemfd-forms-app-src-pkg-<version>.zip` in Distribuzione software.
 
@@ -29,7 +33,7 @@ Per ottenere l’origine dell’app AEM Forms, effettua le seguenti operazioni:
    1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]**.
    2. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
 1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
 Nell&#39;immagine seguente viene visualizzato il contenuto estratto di `adobe-lc-mobileworkspace-src-<version>.zip`.

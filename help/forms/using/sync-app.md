@@ -10,14 +10,18 @@ exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 0%
+source-wordcount: '388'
+ht-degree: 2%
 
 ---
 
 # Sincronizzazione dell’app{#synchronizing-the-app}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Sincronizzazione dell’app {#synchronizing-the-app-1}
 
@@ -44,6 +48,6 @@ Selezionare il pulsante Sincronizza ![sync-app](assets/sync-app.png) nell&#39;an
 ### Specifiche tecniche {#technical-specifications}
 
 * La logica principale per l’invio dei dati dell’app offline al server AEM Forms è inclusa in runtime/offline/util/offline.js.
-* Nella funzione .js, la chiamata alla funzione processOfflineSubmittedSavedTasks(...) invia le attività salvate/inviate al server. Gestisce inoltre eventuali errori o conflitti nel processo di sincronizzazione. Se l’invio di un’attività non riesce, l’attività nell’app viene contrassegnata come non riuscita. Inoltre, l’attività rimane nella cartella Posta in uscita.
+* In .js, la chiamata a processOfflineSubmittedSavedTasks(...) , invia le attività salvate/inviate al server. Gestisce inoltre eventuali errori o conflitti nel processo di sincronizzazione. Se l’invio di un’attività non riesce, l’attività nell’app viene contrassegnata come non riuscita. Inoltre, l’attività rimane nella cartella Posta in uscita.
 * Le funzioni syncSubmittedTask() e syncSavedTask() eseguono operazioni su singole attività.
 * La chiamata alla funzione processOfflineSubmittedSavedTasks() viene avviata dal componente Elenco attività dopo che un utente ha scelto di sincronizzare lo stato offline con il server o una sincronizzazione automatica da parte del thread in background.

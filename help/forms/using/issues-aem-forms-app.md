@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi relativi all’app AEM Forms
+title: Risoluzione dei problemi dell’app AEM Forms
 description: Scopri i problemi comuni dell’app AEM Forms e come risolverli.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,21 +8,25 @@ exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 0%
+source-wordcount: '697'
+ht-degree: 2%
 
 ---
 
-# Risolvere i problemi relativi all’app AEM Forms {#troubleshoot-aem-forms-app}
+# Risoluzione dei problemi dell’app AEM Forms {#troubleshoot-aem-forms-app}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Questo articolo descrive i messaggi di errore che potrebbero essere visualizzati durante la creazione dell’app AEM Forms e i passaggi per risolverli.
 
 Le sezioni in questo articolo includono:
 
 * [Perdita di allegati per utenti iOS](/help/forms/using/issues-aem-forms-app.md#attachment-loss-for-ios-users)
-* [Le bozze dei moduli di HTML5 inviate dagli utenti dell’area di lavoro non sono visibili nel portale](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
+* [Le bozze dei moduli di HTML5 inviate dagli utenti dell&#39;area di lavoro non sono visibili nel portale](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
 * [Impossibile caricare i moduli HTML5 (non memorizzati in cache) nell’app AEM Forms](/help/forms/using/issues-aem-forms-app.md#html-forms-not-cached-fail-to-load-in-aem-forms-app)
 * [AEM Forms do not sync on Windows (Non sincronizzare su Windows)](/help/forms/using/issues-aem-forms-app.md#aem-forms-do-not-sync-on-windows)
 * [Versione di Gradle non supportata](/help/forms/using/issues-aem-forms-app.md#unsupported-version-of-gradle)
@@ -40,9 +44,9 @@ L’app AEM Forms per iOS configurata per la sincronizzazione con AEM Forms su O
 
 1. Fai clic su **Salva**.
 
-## Le bozze dei moduli di HTML5 inviate dagli utenti dell’area di lavoro non sono visibili nel portale {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## Le bozze dei moduli di HTML5 inviate dagli utenti dell&#39;area di lavoro non sono visibili nel portale {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Per i moduli HTML5 abilitati nell&#39;app AEM Forms con **Salva come bozza** profilo di rendering HTML, le bozze salvate non sono visibili agli utenti dell&#39;area di lavoro. Per visualizzare le bozze salvate dei moduli HTML5 inviati dagli utenti del workspace sul portale, effettuare le seguenti operazioni:
+Per HTML5 Forms abilitato nell&#39;app AEM Forms con **Salva come bozza** profilo di rendering HTML, le bozze salvate non sono visibili agli utenti dell&#39;area di lavoro. Per visualizzare le bozze salvate dei moduli di HTML5 inviati dagli utenti dell&#39;area di lavoro sul portale, effettuare le seguenti operazioni:
 
 1. Apri CRXDE e accedi con le credenziali di amministratore.
 

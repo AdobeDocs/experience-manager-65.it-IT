@@ -1,5 +1,5 @@
 ---
-title: Salvataggio di un'attività o di un modulo come bozza
+title: Salvataggio di un’attività o di un modulo come bozza
 description: Passaggi per salvare una bozza di copia di un’attività o di un modulo nell’app AEM Forms
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,20 +8,24 @@ exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 0%
+source-wordcount: '511'
+ht-degree: 3%
 
 ---
 
-# Salvataggio di un&#39;attività o di un modulo come bozza {#saving-a-task-or-form-as-a-draft}
+# Salvataggio di un’attività o di un modulo come bozza {#saving-a-task-or-form-as-a-draft}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 L’opzione Salva come bozza consente di salvare un’istantanea di un’attività o di un modulo insieme ai dati inseriti nel modulo associato. Potete anche creare una bozza da un modello. Le bozze vengono salvate nel dispositivo mobile e sincronizzate con il server Adobe Experience Manager Forms per un recupero successivo.
 
 È possibile [aggiornare il modulo](/help/forms/using/working-with-form.md), [annotarlo](/help/forms/using/add-attachments.md) con fotografie e note a mano. Mentre si continua ad aggiornare un modulo, si consiglia di salvarlo come bozza. Nelle situazioni in cui si decide di inviare un modulo compilato in un momento successivo, è utile salvarlo come bozza.
 
-Per abilitare la funzione Salva come bozza per i moduli salvati nel portale dei moduli, vedere [Salvataggio di un modulo HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).
+Per abilitare la funzione Salva come bozza per i moduli salvati nel portale dei moduli, vedere [Salvataggio di un modulo di HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).
 Per configurare l&#39;invio di moduli adattivi, vedere [Componente bozze e invii](/help/forms/using/draft-submission-component.md). (Non valido per i moduli sincronizzati con il server AEM Forms JEE).
 
 Per creare una bozza, apri il modulo e seleziona **Salva come bozza** ![salva come bozza](assets/save-as-draft.png). Immetti il nome della bozza e seleziona **Salva**. La bozza viene salvata nella cartella Bozze e sincronizzata con il server. Se l’app non è in linea, viene salvata nella cartella Posta in uscita.
