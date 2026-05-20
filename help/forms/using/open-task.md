@@ -8,16 +8,20 @@ exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
 # Apertura di un’attività {#opening-a-task}
 
-Se l’app Adobe Experience Manager (AEM) Forms si sincronizza con un server AEM Forms, puoi lavorare con le attività che ti sono state assegnate. Le attività sono passaggi del flusso di lavoro definito in Workbench o nell’editor del flusso di lavoro AEM.
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
+Se l’app Adobe Experience Manager (AEM) Forms si sincronizza con un server AEM Forms, puoi lavorare con le attività che ti sono state assegnate. Le attività sono passaggi del flusso di lavoro definito in Workbench o nell’editor del flusso di lavoro di AEM.
 
 Gli altri moduli vengono salvati come bozza nella scheda Bozze. Vedere [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
 

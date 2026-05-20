@@ -9,14 +9,18 @@ exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 1%
 
 ---
 
 # Personalizzazione del gesto {#gesture-customization}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Puoi personalizzare i movimenti dell’app AEM Forms in modo da fornire un metodo distinto per interagire con l’app. È ad esempio possibile aggiungere nuovi movimenti per aprire o chiudere un&#39;attività o un punto d&#39;inizio.
 
@@ -71,4 +75,4 @@ Nell’app AEM Forms, con il pulsante sinistro del mouse viene aperta una nuova 
 1. Salvare e chiudere il file `task.js`.
 1. Crea ed esegui l’app AEM Forms. Ora è possibile aprire un utilizzando con le opzioni scorri a sinistra e scorri a destra.
 
-Analogamente, è possibile apportare modifiche in altre viste per varie combinazioni di movimenti, elementi HTML e funzioni.
+Allo stesso modo, è possibile apportare modifiche in altre viste per varie combinazioni di movimenti, elementi HTML e funzioni.

@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione tema
+title: Personalizzazione del tema
 description: Scopri come personalizzare il tema dell’applicazione AEM Forms. Puoi personalizzare il codice HTML e il file CSS per dare un aspetto specifico all’organizzazione.
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,18 @@ exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 0%
+source-wordcount: '254'
+ht-degree: 5%
 
 ---
 
-# Personalizzazione tema {#theme-customization}
+# Personalizzazione del tema {#theme-customization}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Puoi personalizzare il codice HTML e il file CSS per fornire all’app AEM Forms un aspetto specifico per l’organizzazione. È ad esempio possibile modificare il colore e l&#39;altezza dello sfondo delle attività o dei punti iniziali. Nell&#39;esempio seguente vengono fornite istruzioni per la modifica:
 

@@ -1,5 +1,5 @@
 ---
-title: Utilizzo dei punti d'inizio
+title: Utilizzo dei punti iniziali
 description: Passaggi per lavorare con un processo Adobe Experience Manager Forms dal dispositivo mobile definito in Workbench.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,15 +9,19 @@ exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: dd8748cee7a4b3ba91795a51928bd8590c47ef27
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 0%
+source-wordcount: '249'
+ht-degree: 2%
 
 ---
 
 
-# Utilizzo dei punti d&#39;inizio{#working-with-startpoints}
+# Utilizzo dei punti iniziali{#working-with-startpoints}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Un punto iniziale richiama un processo creato in Workbench. È associata a un modulo che richiama il processo quando il modulo viene inviato.
 
@@ -25,7 +29,7 @@ Un punto iniziale richiama un processo creato in Workbench. È associata a un mo
 >
 >I termini punti iniziali, processo iniziale e modulo vengono utilizzati in modo intercambiabile quando si fa riferimento a questo concetto.
 
-Per avviare un processo dall&#39;app Forms di Adobe Experience Manager (AEM), è necessario che nel processo sia presente un punto d&#39;inizio di tipo **Workspace**. È inoltre necessario selezionare l&#39;opzione **[!UICONTROL Visibile in Mobile Workspace]** per il punto iniziale.
+Per avviare un processo dall&#39;app Adobe Experience Manager (AEM) Forms, devi avere un punto d&#39;inizio di tipo **Workspace** nel processo. È inoltre necessario selezionare l&#39;opzione **[!UICONTROL Visibile in Mobile Workspace]** per il punto iniziale.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 

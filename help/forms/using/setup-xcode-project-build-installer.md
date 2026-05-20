@@ -9,14 +9,18 @@ exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 4%
 
 ---
 
 # Configurare il progetto Xcode e creare l’app iOS{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine contiene tutti i componenti per la creazione di un’app AEM Forms personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` fa parte del pacchetto `adobe-aemfd-forms-app-src-pkg-<version>.zip` in Distribuzione software.
 
@@ -48,7 +52,7 @@ La tabella seguente descrive il contenuto della cartella `adobe-lc-mobileworkspa
   </tr>
   <tr>
    <td><p><code>CordovaLib</code></p> </td>
-   <td><p>SDK di PhoneGap 6.4.0</p> </td>
+   <td><p>PhoneGap SDK 6.4.0</p> </td>
   </tr>
   <tr>
    <td><p><code>AEM Forms</code></p> </td>
@@ -85,7 +89,7 @@ Per informazioni dettagliate sulla firma del codice e sull&#39;aggiunta di dispo
 1. Nella scheda **Impostazioni build**, fai clic su **Tutti**, quindi su **Combinati**.
 1. Nell&#39;elenco **Impostazioni** espandere **Firma codice**.
 1. Per **Identità firma codice**, selezionare la firma appropriata. Per informazioni dettagliate sulla creazione di nuove firme, vedere [Creazione e download di profili di provisioning per lo sviluppo](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
-1. Assicurati che la stessa firma sia selezionata per **Debug**, **Versione** e **Qualsiasi SDK iOS**.
+1. Assicurati che la stessa firma sia selezionata per **Debug**, **Versione** e **Qualsiasi SDK di iOS**.
 1. Sostituire il codice seguente nel file `AEM Forms-info.plist`:
 
    ```xml

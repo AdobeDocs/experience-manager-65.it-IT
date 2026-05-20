@@ -10,14 +10,18 @@ exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 0%
+source-wordcount: '234'
+ht-degree: 5%
 
 ---
 
 # Configurare l’ambiente per l’app AEM Forms{#set-up-environment-for-aem-forms-app}
+
+>[!NOTE]
+>
+>L’app AEM Forms è attualmente obsoleta. Per domande o assistenza, contattare [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Per creare e distribuire l&#39;app AEM Forms sono necessari i seguenti componenti hardware, software e licenze:
 
@@ -40,8 +44,8 @@ Per creare e distribuire l&#39;app AEM Forms sono necessari i seguenti component
 
 * Android™ Development Toolkit (bundle ADT) scaricabile da [https://developer.android.com/studio](https://developer.android.com/studio)
 * Se l’ambiente è configurato su un sistema Mac, l’ADT deve essere installato nella cartella Applicazioni.
-* Se l&#39;ADT è installato in un&#39;altra posizione in Mac o se l&#39;ambiente è configurato in un sistema Windows, il percorso dell&#39;SDK ADT deve essere aggiornato nel file `local.properties`. Il file è disponibile nella cartella `src\android` dell&#39;archivio di origine `mobileworkspace-src.zip` estratto. In questo file, puntare la variabile `sdk.dir` alla posizione SDK ADT sul desktop.
+* Se ADT è installato in un&#39;altra posizione in Mac o se l&#39;ambiente è configurato in un sistema Windows, il percorso di ADT SDK deve essere aggiornato nel file `local.properties`. Il file è disponibile nella cartella `src\android` dell&#39;archivio di origine `mobileworkspace-src.zip` estratto. In questo file, puntare la variabile `sdk.dir` alla posizione ADT SDK sul desktop.
 
 >[!NOTE]
 >
->Adobe-lc-mobileworkspace-src.zip contiene l&#39;SDK PhoneGap 5.0. Assicurati che PhoneGap SDK non sia preinstallato.
+>Il file adobe-lc-mobileworkspace-src.zip contiene PhoneGap SDK 5.0. Verifica che PhoneGap SDK non sia preinstallato.
