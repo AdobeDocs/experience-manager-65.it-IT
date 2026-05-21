@@ -11,9 +11,16 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+autotag-review: '2026-05-18T18:37:44.170Z'
+TQID: 'https://experienceleague.adobe.com/ePAqMpipETShCgP-zIuOJjvkopRXp77eHxrGlgBC1SQ'
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: 3779
 ht-degree: 8%
 
 ---
@@ -99,7 +106,7 @@ La tabella seguente identifica i profili di codifica delle best practice per lo 
 
 ## Informazioni sull’utilizzo del ritaglio avanzato nei profili video {#about-smart-crop-video}
 
-Il ritaglio avanzato per video, una funzione opzionale disponibile in Profili video, è uno strumento che utilizza la potenza dell’intelligenza artificiale nell’intelligenza artificiale di Adobe. Rileva e ritaglia automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
+Il ritaglio avanzato per video, una funzione opzionale disponibile in Profili video, è uno strumento che sfrutta la potenza dell’intelligenza artificiale in Adobe AI. Rileva e ritaglia automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
 
 I formati video supportati per il ritaglio avanzato includono MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -109,7 +116,7 @@ Le dimensioni massime supportate per i file video con ritaglio avanzato sono i s
 * 30 fps.
 * 300 MB.
 
-Adobe AI è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il video ha un FPS più alto, la durata video massima supportata diminuisce. Ad esempio, un video a 60 FPS deve avere una durata di due minuti e mezzo per essere supportato da Adobe AI e Smart Crop.
+Adobe AI è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il video ha un FPS più alto, la durata video massima supportata diminuisce. Ad esempio, un video a 60 FPS deve avere una durata di due minuti e mezzo per essere supportato da Adobe AI e SmartCrop.
 
 ![Ritaglio avanzato per video](assets/smart-crop-video.png)
 
@@ -281,19 +288,19 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Numero di fotogrammi di destinazione tra fotogrammi chiave. Calcolate questo valore in modo che possa generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo dei fotogrammi chiave deve essere compreso tra 60 e 300.<br /> <br /> Gli intervalli di fotogrammi chiave inferiori migliorano il comportamento di ricerca e passaggio di flusso per le codifiche video adattivi e possono anche migliorare la qualità dei video con molti movimenti. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito determina una qualità video complessiva inferiore a un determinato bitrate.</td>
+   <td>Numero di fotogrammi di destinazione tra fotogrammi chiave. Calcolate questo valore in modo che possa generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo dei fotogrammi chiave deve essere compreso tra 60 e 300.<br /> <br /> Intervalli di fotogrammi chiave inferiori migliorano il comportamento di ricerca e passaggio tra flussi per le codifiche video adattivi e possono anche migliorare la qualità dei video che hanno molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito determina una qualità video complessiva inferiore a un determinato bitrate.</td>
    <td><code>String</code></td>
    <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per DASH o HLS è 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
-   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante<strong> di </strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito.</p> </td>
   </tr>
   <tr>
    <td><code>maxBitrate</code></td>
-   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante<strong> di </strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito. Tuttavia, il valore consigliato è fino a due volte il bitrate di codifica.</p> </td>
   </tr>
