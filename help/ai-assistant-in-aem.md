@@ -53,7 +53,7 @@ L’Assistente IA supporta AEM as a Cloud Service, incluse le seguenti soluzioni
 
 Il seguente video, della durata di 3 minuti e 25 secondi, offre una guida dettagliata all’Assistente IA in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475366/?captions=ita&learn=on&enablevpops)
 
 ## Accedere all’Assistente IA in AEM{#get-access}
 
