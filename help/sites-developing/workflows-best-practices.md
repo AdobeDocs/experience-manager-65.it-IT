@@ -1,17 +1,13 @@
 ---
 title: Best practice per i flussi di lavoro
 description: Scopri le best practice per l’utilizzo dei flussi di lavoro in Adobe Experience Manager.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: extending-aem
-content-type: reference
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1962'
 ht-degree: 1%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 1%
 
 I flussi di lavoro consentono di automatizzare le attività di Adobe Experience Manager (AEM).
 
-Spesso rappresentano una grande quantità di elaborazione che si verifica in un ambiente AEM, quindi quando i passaggi del flusso di lavoro personalizzati non vengono scritti in base alle best practice o i flussi di lavoro preconfigurati non sono configurati per essere eseguiti nel modo più efficiente possibile, il sistema può risentirne.
+Spesso rappresentano una grande quantità di elaborazione che si verifica in un ambiente AEM, quindi quando i passaggi del flusso di lavoro personalizzati non vengono scritti in base alle best practice o i flussi di lavoro predefiniti non sono configurati per essere eseguiti nel modo più efficiente possibile, il sistema può risentirne.
 
 Pertanto, si consiglia vivamente di pianificare con attenzione le implementazioni dei flussi di lavoro.
 
@@ -32,13 +28,13 @@ Durante la configurazione dei processi del flusso di lavoro (personalizzati e/o 
 
 Per ottimizzare i carichi di acquisizione elevati, puoi definire un [flusso di lavoro come transitorio](/help/sites-developing/workflows.md#transient-workflows).
 
-Quando un flusso di lavoro è transitorio, i dati di runtime relativi ai passaggi di lavoro intermedi non vengono mantenuti in JCR quando vengono eseguiti (le rappresentazioni di output vengono mantenute).
+Quando un flusso di lavoro è transitorio, i dati di runtime relativi ai passaggi di lavoro intermedi non vengono memorizzati nel JCR quando vengono eseguiti (le rappresentazioni di output vengono rese permanenti).
 
 I vantaggi includono:
 
-* Riduzione del tempo di elaborazione del flusso di lavoro, fino al 10%.
+* Riduzione del tempo di elaborazione del flusso di lavoro fino al 10%.
 * Riduzione significativa della crescita dell&#39;archivio.
-* Non sono necessari altri flussi di lavoro CRUD per l’eliminazione.
+* Non è necessario eliminare altri flussi di lavoro CRUD.
 * Inoltre, riduce il numero di file TAR da compattare.
 
 >[!CAUTION]
@@ -51,15 +47,15 @@ Per le linee guida per l&#39;ottimizzazione delle prestazioni per i flussi di la
 
 ### Configurare il numero massimo di flussi di lavoro simultanei {#configure-the-maximum-number-of-concurrent-workflows}
 
-L’AEM può consentire l’esecuzione simultanea di più thread di flusso di lavoro. Per impostazione predefinita, il numero di thread è configurato in modo da essere la metà del numero di core del processore presenti sul sistema.
+AEM può consentire l’esecuzione simultanea di più thread di flusso di lavoro. Per impostazione predefinita, il numero di thread è configurato in modo da essere la metà del numero di core del processore presenti sul sistema.
 
-Nei casi in cui i flussi di lavoro in esecuzione richiedono risorse di sistema, questo può significare che l’AEM non può utilizzare molto per altre attività, come il rendering dell’interfaccia utente di authoring. Di conseguenza, il sistema potrebbe risultare lento durante attività quali il caricamento di immagini in massa.
+Nei casi in cui i flussi di lavoro eseguiti richiedono risorse di sistema, ciò può significare che per AEM è rimasto poco da utilizzare per altre attività, come il rendering dell’interfaccia utente di authoring. Di conseguenza, il sistema potrebbe risultare lento durante attività quali il caricamento di immagini in massa.
 
-Per risolvere questo problema, l&#39;Adobe consiglia di configurare il numero di **Processi paralleli massimi** in modo che sia compreso tra la metà e i tre quarti del numero di core del processore presenti nel sistema. Questo dovrebbe consentire al sistema di mantenere una capacità sufficiente per rispondere durante l’elaborazione di questi flussi di lavoro.
+Per risolvere questo problema, Adobe consiglia di configurare il numero di **Processi paralleli massimi** in modo che sia compreso tra la metà e i tre quarti del numero di core del processore presenti nel sistema. Questo dovrebbe consentire al sistema di mantenere una capacità sufficiente per rispondere durante l’elaborazione di questi flussi di lavoro.
 
 Per configurare **Processi paralleli massimi**, è possibile:
 
-* Configurare la **[configurazione OSGi](/help/sites-deploying/configuring-osgi.md)** dalla console Web AEM; per **coda: coda flusso di lavoro Granite** (una **configurazione coda processi Apache Sling**).
+* Configura la **[configurazione OSGi](/help/sites-deploying/configuring-osgi.md)** dalla console Web AEM; per **coda: coda flusso di lavoro Granite** (una **configurazione coda processi Apache Sling**).
 
 * Configurare la coda può essere configurato dall&#39;opzione **Processi Sling** della console Web AEM; per **Configurazione coda processi: Coda flusso di lavoro Granite**, alle `http://localhost:4502/system/console/slingevent`.
 
@@ -67,17 +63,17 @@ Esiste inoltre una configurazione separata per la **coda processi esterni flusso
 
 ### Configurare singole code di processi {#configure-individual-job-queues}
 
-In alcuni casi è utile configurare singole code di job per controllare thread simultanei o altre opzioni di coda su base di job individuale. È possibile aggiungere e configurare una singola coda dalla console Web tramite la factory **Apache Sling Job Queue Configuration**. Per trovare l&#39;argomento appropriato da elencare, eseguire il modello del flusso di lavoro e cercarlo nella console **Processi Sling**, ad esempio in `http://localhost:4502/system/console/slingevent`.
+In alcuni casi, è utile configurare singole code di job per controllare thread simultanei o altre opzioni di coda su base di job individuale. È possibile aggiungere e configurare una singola coda dalla console Web tramite la factory **Apache Sling Job Queue Configuration**. Per trovare l&#39;argomento appropriato da elencare, eseguire il modello del flusso di lavoro e cercarlo nella console **Processi Sling**, ad esempio in `http://localhost:4502/system/console/slingevent`.
 
 È possibile aggiungere singole code di processi anche per flussi di lavoro transitori.
 
 ### Configurare la rimozione dei flussi di lavoro {#configure-workflow-purging}
 
-In un’installazione standard, l’AEM fornisce una console di manutenzione in cui è possibile pianificare e configurare le attività di manutenzione giornaliere e settimanali; ad esempio, all’indirizzo:
+In un’installazione standard, AEM fornisce una console di manutenzione in cui è possibile pianificare e configurare le attività di manutenzione giornaliere e settimanali, ad esempio all’indirizzo:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-Per impostazione predefinita, la **finestra Manutenzione settimanale** dispone di un&#39;attività **Rimozione flusso di lavoro**, ma è necessario configurarla prima che venga eseguita. Per configurare le eliminazioni del flusso di lavoro, è necessario aggiungere alla console Web una nuova **configurazione di eliminazione del flusso di lavoro Granite di Adobe**.
+Per impostazione predefinita, la **finestra Manutenzione settimanale** dispone di un&#39;attività **Rimozione flusso di lavoro**, ma è necessario configurarla prima che venga eseguita. Per configurare le eliminazioni del flusso di lavoro, è necessario aggiungere alla console Web una nuova **configurazione di eliminazione del flusso di lavoro di Adobe Granite**.
 
 Per ulteriori dettagli sulle attività di manutenzione in AEM, vedi [Dashboard operazioni](/help/sites-administering/operations-dashboard.md).
 
@@ -91,7 +87,7 @@ Le definizioni di modelli di flusso di lavoro, moduli di avvio, script e notific
 
 >[!NOTE]
 >
->Vedere anche [Ristrutturazione dell&#39;archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Vedi anche [Ristrutturazione dell&#39;archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 #### Posizioni - Modelli di flusso di lavoro {#locations-workflow-models}
 
@@ -126,7 +122,7 @@ I modelli di flusso di lavoro vengono memorizzati nell’archivio in base al tip
 
   >[!NOTE]
   >
-  >Se queste progettazioni vengono modificate *utilizzando l&#39;interfaccia utente dell&#39;AEM*, i dettagli verranno copiati nelle nuove posizioni.
+  >Se queste progettazioni vengono modificate *utilizzando l&#39;interfaccia utente di AEM*, i dettagli verranno copiati nelle nuove posizioni.
 
 #### Posizioni - Moduli di avvio dei flussi di lavoro {#locations-workflow-launchers}
 
@@ -157,7 +153,7 @@ Anche le definizioni del modulo di avvio dei flussi di lavoro vengono memorizzat
 
   >[!NOTE]
   >
-  >Se queste definizioni vengono modificate *utilizzando l&#39;interfaccia utente dell&#39;AEM*, i dettagli verranno copiati nelle nuove posizioni.
+  >Se queste definizioni vengono modificate *utilizzando l&#39;interfaccia utente di AEM*, i dettagli verranno copiati nelle nuove posizioni.
 
 #### Posizioni - Script del flusso di lavoro {#locations-workflow-scripts}
 
@@ -230,7 +226,7 @@ Come in qualsiasi sviluppo personalizzato, si consiglia sempre di utilizzare la 
 Quando si implementa un processo di workflow:
 
 * Verrà fornita una sessione di flusso di lavoro che deve essere utilizzata a meno che non vi siano motivi validi per non farlo.
-* Non è consigliabile creare nuove sessioni dai passaggi del flusso di lavoro, in quanto ciò causa incoerenze negli stati e possibili problemi di concorrenza nel motore del flusso di lavoro.
+* Non è consigliabile creare nuove sessioni dai passaggi del flusso di lavoro, in quanto questo causa incoerenze negli stati e possibili problemi di concorrenza nel motore del flusso di lavoro.
 * Non devi acquisire una nuova sessione JCR dall’interno di un passaggio del processo in un flusso di lavoro; devi adattare la sessione del flusso di lavoro fornita dall’API della fase del processo a una sessione JCR. Ad esempio:
 
 ```
@@ -247,14 +243,14 @@ Salvataggio di una sessione
 * All&#39;interno di un processo del flusso di lavoro, se `WorkflowSession` viene utilizzato per modificare l&#39;archivio, non salvare esplicitamente la sessione. Al termine, il flusso di lavoro salverà la sessione.
 * `Session.Save` non deve essere chiamato da un passaggio del flusso di lavoro:
 
-   * si consiglia di adattare la sessione jcr del flusso di lavoro; `save` non è necessario in quanto il motore del flusso di lavoro salva la sessione automaticamente al termine dell&#39;esecuzione del flusso di lavoro.
-   * non è consigliabile che una fase del processo crei una propria sessione jcr.
+   * si consiglia di adattare la sessione JCR del flusso di lavoro; `save` non è necessario in quanto il motore del flusso di lavoro salva la sessione automaticamente al termine dell&#39;esecuzione del flusso di lavoro.
+   * non è consigliabile che una fase del processo crei una propria sessione JCR.
 
 * Eliminando i risparmi non necessari, è possibile ridurre il sovraccarico e quindi rendere più efficienti i flussi di lavoro.
 
 >[!CAUTION]
 >
->Se, nonostante i consigli qui riportati, crei una tua sessione JCR, questa deve essere salvata.
+>Se, nonostante i consigli qui riportati, crei una sessione JCR personalizzata, questa deve essere salvata.
 
 ### Riduci al minimo il numero e l&#39;ambito dei moduli di avvio {#minimize-the-number-scope-of-launchers}
 
@@ -315,7 +311,7 @@ Durante l’aggiornamento dell’istanza:
 
 >[!NOTE]
 >
->Vedere anche [Ristrutturazione dell&#39;archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Vedi anche [Ristrutturazione dell&#39;archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 ## Strumenti di sistema {#system-tools}
 
