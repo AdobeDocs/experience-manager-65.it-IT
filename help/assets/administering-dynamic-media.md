@@ -25,7 +25,7 @@ ht-degree: 3%
 
 # Impostazione di Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse distribuendo risorse di marketing e merchandising visivo su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primarie, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://business.adobe.com/it/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse distribuendo risorse di marketing e merchandising visivo su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primarie, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
 
 >[!NOTE]
 >
