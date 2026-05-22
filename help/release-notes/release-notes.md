@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 15bdc427d138101a429aeb0c46059ad0492d7739
+source-git-commit: d60ff7278e62833c732c55d328882a2976bfd964
 workflow-type: tm+mt
-source-wordcount: '7111'
+source-wordcount: '7116'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ OLD DOWNLOAD URL
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.25.0 {#what-is-included-in-aem-6525}
 
-[!DNL Experience Manager] 6.5.25.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.25.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack ](#install) in [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -632,7 +632,7 @@ Per ridurre il volume del log, impostare il livello di log per `com.adobe.util.X
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
-Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di contenuti inclusi in questa versione di [!DNL Experience Manager] 6.5 Service Pack:
+I seguenti file zip contengono i documenti di testo che elencano i bundle OSGi e i pacchetti di contenuti inclusi in questa versione di [!DNL Experience Manager] 6.5 Service Pack:
 
 * [Elenco dei bundle OSGi inclusi in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
