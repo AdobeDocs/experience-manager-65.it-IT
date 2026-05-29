@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e12267324516982a654ce61ff6c11554f8c87d8a
+source-git-commit: 7e225038e925468f6e4dbdcf1d3dce6eceee9292
 workflow-type: tm+mt
-source-wordcount: '7116'
+source-wordcount: '7156'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
-## Informazioni sulla versione {#release-information}
+## Riepilogo delle versioni {#release-information}
 
 | Prodotto | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
@@ -33,14 +33,15 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Data | 21 maggio 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-<!--
-OLD DOWNLOAD URL
-(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip)
--->
+Experience Manager 6.5.25.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza basati sulla base 6.5 disponibile da aprile 2019.
 
-## Cosa è incluso in [!DNL Experience Manager] 6.5.25.0 {#what-is-included-in-aem-6525}
+Questa versione del service pack fornisce 275 porte posteriori tra Sites, Assets e Foundation, incluse correzioni di bug critici e protezione avanzata. Questa versione migliora inoltre l’accessibilità nell’authoring di Sites grazie a funzioni avanzate di navigazione da tastiera, gestione dell’attivazione, semantica ARIA, miglioramenti del contrasto dei colori e dimensioni del target di contatto in linea con gli standard WCAG.
 
-[!DNL Experience Manager] 6.5.25.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la data di disponibilità iniziale di 6.5 di aprile 2019. [Installa il Service Pack &#x200B;](#install) in [!DNL Experience Manager] 6.5.
+Crosswalk è disponibile per impostazione predefinita in questa versione, eliminando la necessità di un pacchetto o una configurazione separata dopo l&#39;installazione.
+
+Le back-port di sicurezza risolvono le vulnerabilità XSS e migliorano la gestione dei metadati delle risorse condivise.
+
+Anche i frammenti di contenuto e l’API GraphQL ricevono miglioramenti in termini di affidabilità, che riguardano i riferimenti alle immagini incorporate, la gestione delle query persistenti e la localizzazione degli editor.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -222,7 +223,7 @@ AEM ora carica i modelli corretti quando gli autori creano varianti di Frammento
 * Le descrizioni dei criteri di pagina ora vengono visualizzate correttamente nell’Editor modelli. Gli utenti possono leggere la guida completa sulle classi CSS predefinite senza troncare il testo nella scheda Stili. (SITES-29724)
 * Ora quando un autore tenta di trascinare un componente su un modello eliminato, nell’Editor modelli viene visualizzato un errore localizzato. Il messaggio non viene più visualizzato come stringa non tradotta &quot;durante l’elaborazione&quot;. (SITES-19313)
 * Ora viene visualizzata l’etichetta &quot;Target&quot; nella finestra Configurazione teaser con testo localizzato. La sezione Collegamento ipertestuale non mostra più la stringa inglese in lingue diverse dall&#39;inglese. (SITES-18622)
-* La finestra di dialogo Avvia flusso di lavoro nell’Editor pagina ora visualizza le etichette delle azioni per il flusso di lavoro localizzato. Gli autori non visualizzano più le stringhe in inglese per le opzioni del flusso di lavoro come le azioni di approvazione, pubblicazione, richiesta e annullamento della pubblicazione. (SITES-18103)
+* La finestra di dialogo Avvia flusso di lavoro nell’Editor pagina ora visualizza le etichette delle azioni per il flusso di lavoro localizzato. Gli autori non visualizzano più le stringhe in inglese per le opzioni del flusso di lavoro. Le opzioni includono le azioni di approvazione, pubblicazione, richiesta e annullamento della pubblicazione. (SITES-18103)
 * Il menu a discesa Padre nel pannello di modifica Separatore ora visualizza le stringhe localizzate senza troncamento. Gli autori possono rivedere l’etichetta completa quando configurano il componente. (SITES-17480)
 * L’Editor pagina ora visualizza le etichette localizzate per &quot;Larghezza intera&quot; e &quot;Larghezza fissa&quot; nel menu Stili del componente Contenitore. Gli autori che utilizzano le lingue supportate non visualizzano più tali stringhe in inglese. (SITES-17478)
 * Ora gli autori possono leggere la descrizione completa nell’area Proprietà di navigazione della console Modelli. L’interfaccia utente mantiene la descrizione allineata e impedisce il troncamento del testo durante la modifica del modello. (SITES-15480)
@@ -365,7 +366,7 @@ I conteggi dello stato del progetto di traduzione ora vengono aggiornati corrett
 #### Interfaccia utente{#foundation-ui-6525}
 
 * Gli URL immessi manualmente nella console Sites ora vengono risolti nel percorso della pagina o della cartella desiderato. La gerarchia dei contenuti rimane coerente dopo l’aggiornamento e non viene più utilizzata come fallback dell’URL di base. (NPR-43688)
-* La suite di test di CRX Package Manager non ha più esito negativo dopo l&#39;aggiornamento di un&#39;istanza AEM 6.5 LTS SP1 a LTS SP2. Il test del servlet elenco miniature ora viene completato come previsto. (NPR-43534)
+* La suite di test di Adobe CRX Package Manager non ha più esito negativo dopo l&#39;aggiornamento di un&#39;istanza AEM 6.5 LTS SP1 a LTS SP2. Il test del servlet elenco miniature ora viene completato come previsto. (NPR-43534)
 
 * La struttura del contenuto della console Sites ora viene caricata in modo coerente dopo ogni aggiornamento del browser. Gli autori non visualizzano più una barra a sinistra vuota o un messaggio &quot;Non esiste alcun elemento&quot; quando il contenuto esiste. (NPR-43442)
 
@@ -569,7 +570,7 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
    * Il punto attivo in un’immagine interattiva di Dynamic Media non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore di banner Shoppable.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del registro per l&#39;annullamento della registrazione.
 
-* A partire da AEM 6.5.15, il motore JavaScript Rhino fornito dal bundle ```org.apache.servicemix.bundles.rhino``` ha un nuovo comportamento di posizionamento. Gli script che utilizzano la modalità rigorosa (```use strict;```) devono dichiarare le variabili corrette. In caso contrario, non vengono eseguiti e finiscono per generare un errore di runtime.
+* A partire da AEM 6.5.15, il motore JavaScript Rhino fornito dal bundle `org.apache.servicemix.bundles.rhino` ha un nuovo comportamento di posizionamento. Gli script che utilizzano la modalità rigorosa (`use strict;`) devono dichiarare le variabili corrette. In caso contrario, non vengono eseguiti e finiscono per generare un errore di runtime.
 
 * Se si installa il contenuto predefinito correlato ai tag tramite un pacchetto di aggiornamento ufficiale, la proprietà Languages del nodo `/content/cq:tags` viene ripristinata sul valore predefinito. Questa azione è valida per Service Pack, Service Pack di sicurezza, Feature Pack estesi, Feature Pack cumulativi, patch e così via. Pertanto, è necessario aggiungerlo dalle proprietà prima dell’installazione.
 
@@ -621,14 +622,14 @@ Nei seguenti problemi è disponibile un hotfix per il download e l’installazio
    2. Eliminare il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Riavvia il server AEM.
 
-* **FORMS-23703** Quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
-* **GRANITE-63681** I connettori del modello dati modulo potrebbero non riuscire ad eseguire l&#39;autenticazione perché le parole chiave e il pattern regex richiesti non sono consentiti per impostazione predefinita. Per risolvere il problema, scarica e installa l&#39;aggiornamento rapido da [link](/help/release-notes/aem-forms-hotfix.md).
-* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.25.0](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23703** Quando la regola `contains` è configurata senza un valore predefinito, la convalida lato server per un modulo adattivo non riesce. È possibile installare la versione più recente di [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) per risolvere il problema.
+* **GRANITE-63681** La configurazione di sistema predefinita blocca le parole chiave richieste e i pattern regex, impedendo l&#39;autenticazione dei connettori del modello dati modulo. Per risolvere il problema, scarica e installa l&#39;aggiornamento rapido da [link](/help/release-notes/aem-forms-hotfix.md).
+* **FORMS-23979** la conversione da HTML a PDF (PDFG) potrebbe verificarsi timeout intermittenti. Successivamente è stata rilasciata una versione più recente del componente aggiuntivo Forms per SP24 che include la correzione. Se si verifica questo problema, aggiornare l&#39;ambiente al componente aggiuntivo di Forms [più recente rilasciato per 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** Dopo l&#39;aggiornamento a **AEM Forms6.5.25.0**, `server.log` e `error.log` possono essere inondati da messaggi di avvertenza ripetuti, ad esempio *Creazione della factory del parser protetto non riuscita* o *L&#39;attributo di sicurezza ... non è supportato*. I registri possono crescere di circa **5-10 righe al secondo** (centinaia di MB all&#39;ora), che possono riempire il disco e bloccare il rollout di produzione.
 
 Per ridurre il volume del log, impostare il livello di log per `com.adobe.util.XMLSecurityUtil` su `ERROR` nella configurazione del server applicazioni o tramite l&#39;argomento JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Questa funzionalità nasconde solo i messaggi e non corregge la causa sottostante.
 
-* **FORMS-23875** Nella ricerca del modello dati modulo, un tag HTML viene visualizzato nell&#39;interfaccia utente anche quando non è presente un&#39;entità rilevante. Per risolvere il problema, scaricare e installare l&#39;aggiornamento rapido da [il collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
+* **FORMS-23875** In Ricerca modello dati modulo, l&#39;interfaccia utente visualizza un tag HTML anche quando un&#39;entità rilevante è assente. Per risolvere il problema, scaricare e installare l&#39;aggiornamento rapido da [il collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
@@ -644,7 +645,7 @@ I seguenti file zip contengono i documenti di testo che elencano i bundle OSGi e
 Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
