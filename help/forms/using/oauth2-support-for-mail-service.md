@@ -5,32 +5,32 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1032'
 ht-degree: 5%
 
 ---
 
 # Integrare AEM Forms con i protocolli del server di posta Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-Per consentire alle organizzazioni di rispettare i requisiti e-mail sicuri, AEM Forms offre il supporto OAuth 2.0 per l’integrazione con i protocolli del server di posta Microsoft® Office 365. È possibile utilizzare il servizio di autenticazione di Azure Active Directory (Azure AD) OAuth 2.0 per connettersi con vari protocolli quali IMAP, POP o SMTP e accedere ai dati e-mail per gli utenti di Office 365. Di seguito sono riportate le istruzioni dettagliate per configurare i protocolli del server di posta Microsoft® Office 365 per l’autenticazione tramite il servizio OAuth 2.0:
+Per consentire alle organizzazioni di rispettare i requisiti e-mail sicuri, AEM Forms offre il supporto OAuth 2.0 per l’integrazione con i protocolli del server di posta Microsoft® Office 365. È possibile utilizzare il servizio di autenticazione OAuth 2.0 di Azure Active Directory (Azure AD) per connettersi con vari protocolli quali IMAP, POP o SMTP e accedere ai dati e-mail per gli utenti di Office 365. Di seguito sono riportate le istruzioni dettagliate per configurare i protocolli del server di posta Microsoft® Office 365 per l’autenticazione tramite il servizio OAuth 2.0:
 
 1. Accedi a [https://portal.azure.com/](https://portal.azure.com/) e cerca **Azure Active Directory** nella barra di ricerca, quindi fai clic sul risultato.
-In alternativa, è possibile passare direttamente a [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+In alternativa, puoi navigare direttamente in [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Fai clic su **Aggiungi** > **Registrazione app** > **Nuova registrazione**.
 
    ![Registrazione app](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. Compila le informazioni in base alle tue esigenze, quindi fai clic su **Registra**.
    ![Account supportato](/help/forms/using/assets/azure_suuportedaccountype.png)
-Nel caso precedente, viene selezionata l&#39;opzione **Account in qualsiasi directory organizzativa (qualsiasi directory di Azure AD - Multitenant) e account Microsoft® personali (ad esempio, Skype, Xbox)**.
+Nel caso precedente, viene selezionata l&#39;opzione **Account in qualsiasi directory organizzativa (qualsiasi directory Azure AD - Multitenant) e account Microsoft® personali (ad esempio, Skype, Xbox)**.
 
    >[!NOTE]
    >
-   > * Per gli account **in qualsiasi directory organizzativa (qualsiasi directory di Azure AD - Multitenant)**, l&#39;Adobe consiglia di utilizzare un account di lavoro anziché un account di posta elettronica personale.
+   > * Per gli account **in qualsiasi directory organizzativa (qualsiasi directory Azure AD - Multitenant)**, Adobe consiglia di utilizzare un account di lavoro anziché un account di posta elettronica personale.
    > * **Solo account Microsoft® personali** applicazione non supportata.
-   > * L&#39;Adobe consiglia di utilizzare l&#39;applicazione **Multi-tenant and personal Microsoft® account**.
+   > * Adobe consiglia di utilizzare l&#39;applicazione **Multi-tenant e account Microsoft® personale**.
 
 1. Quindi, passa a **Certificati e segreti**, fai clic su **Nuovo segreto client** e segui i passaggi sullo schermo per creare un segreto. Assicurati di prendere nota di questo valore di segreto per un uso successivo.
 
@@ -71,7 +71,7 @@ Successivamente, devi generare il codice di autorizzazione, descritto nei passag
 
 1. Apri il seguente URL nel browser dopo aver sostituito `clientID` con `<client_id>` e `redirect_uri` con l&#39;URI di reindirizzamento dell&#39;applicazione:
 
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+   `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ Ora configura il servizio e-mail al più recente server JEE accedendo all’inte
    > Per abilitare il servizio di autenticazione oAuth 2.0, è necessario selezionare **Se il server SMTP richiede l&#39;autenticazione (autenticazione SMTP)**.
 
 1. Impostare **oAuth 2.0 Authentication Settings** come `True`.
-1. Copia i valori di **ID client** e **Segreto client** dal portale di Azure.
+1. Copia i valori di **ID client** e **Segreto client** da Azure Portal.
 1. Copia il valore del **Token di aggiornamento** generato.
 1. Accedi a **Workbench** e cerca in **E-mail 1.0** da **Selezione attività**.
 1. In E-mail 1.0 sono disponibili tre opzioni:
@@ -143,7 +143,7 @@ Ora configura il servizio e-mail al più recente server JEE accedendo all’inte
 
 1. Vai a **Home** > **Servizi** > **Flusso di lavoro modulo** > **Impostazioni server** > **Impostazioni e-mail**
 1. Per abilitare le notifiche delle attività OAuth, selezionare la casella di controllo **Abilita OAuth**.
-1. Copia i valori di **ID client** e **Segreto client** dal portale di Azure.
+1. Copia i valori di **ID client** e **Segreto client** da Azure Portal.
 1. Copia il valore del **Token di aggiornamento** generato.
 1. Fai clic su **Salva** per salvare i dettagli.
 
@@ -151,13 +151,13 @@ Ora configura il servizio e-mail al più recente server JEE accedendo all’inte
 
    >[!NOTE]
    >
-   > Per ulteriori informazioni relative alle notifiche delle attività, [fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=it#create-an-email-endpoint-for-the-complete-task-service).
+   > Per ulteriori informazioni relative alle notifiche delle attività, [fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Per configurare l’endpoint e-mail {#configure_email_endpoint}
 
 1. Vai alla **Home** > **Servizi** > **Applicazione e servizi** > **Gestione endpoint**
 1. Per configurare l&#39;endpoint e-mail, impostare **oAuth 2.0 Authentication Settings** come `True`.
-1. Copia i valori di **ID client** e **Segreto client** dal portale di Azure.
+1. Copia i valori di **ID client** e **Segreto client** da Azure Portal.
 1. Copia il valore del **Token di aggiornamento** generato.
 1. Fai clic su **Salva** per salvare i dettagli.
 
@@ -165,9 +165,9 @@ Ora configura il servizio e-mail al più recente server JEE accedendo all’inte
 
    >[!NOTE]
    >
-   > Per ulteriori informazioni sulla configurazione degli endpoint e-mail, fare clic su [Configura un endpoint e-mail](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=it).
+   > Per ulteriori informazioni sulla configurazione degli endpoint e-mail, fare clic su [Configura un endpoint e-mail](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 * Se il servizio di posta elettronica non funziona correttamente, provare a rigenerare `Refresh Token` come descritto in precedenza. L’implementazione del nuovo valore richiede alcuni minuti.
 

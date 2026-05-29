@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: eaeb4be3cc28ed958b33276f89ebe2302d4330f3
+source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3958'
 ht-degree: 3%
 
 ---
@@ -182,12 +182,12 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
  <tr>
   <td><p>File system</p> </td>
   <td><p>Microkernel dell’archivio (file TAR MK)</p> </td>
-  <td><p>Supportato</p> </td>
+  <td><p>Funzione supportata</p> </td>
  </tr>
    <tr>
   <td><p> MongoDB Enterprise 6.0 (obsoleto) </p> </td>
   <td><p>Microkernel archivio</p> </td>
-  <td><p>Supportato</p> </td>
+  <td><p>Funzione supportata</p> </td>
  </tr>
  <tr>
   <td><p> MongoDB Enterprise 7.0 </p> </td>
@@ -201,13 +201,13 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
  </tr>
  <tr>
   <td><p>Microkernel archivio</p> </td>
-  <td><p>Supportato</p> </td>
+  <td><p>Funzione supportata</p> </td>
   <td></td>
  </tr>
  <tr>
   <td><p>Microsoft® SQL Server 2019 (obsoleto) </p> </td>
   <td><p>Microkernel archivio</p> </td>
-  <td><p>Supportato</p> </td>
+  <td><p>Funzione supportata</p> </td>
  </tr>
  <tr>
   <td><p>Microsoft® SQL Server 2022 </p> </td>
@@ -250,7 +250,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
 <tbody>
  <tr>
   <th>Database </th>
-  <th><p><strong>Piattaforma</strong></p> </th>
+  <th><p><strong>Platform</strong></p> </th>
   <th><p><strong>Definizioni di patch supportate</strong></p> </th>
  </tr>
   <tr>
@@ -329,7 +329,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
 <table>
 <tbody>
  <tr>
-  <th><p><strong> Piattaforma</strong></p> </th>
+  <th><p><strong> Platform</strong></p> </th>
   <th><p><strong>Livello di supporto</strong></p> </th>
   <th><p><strong>Definizioni di patch supportate</strong></p> </th>
  </tr>
@@ -513,7 +513,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 - Cordova Android™ 6.0.0
 - Cordova Windows 4.4.3
 
-### Considerazioni per PDF Generator
+### Considerazioni per PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -522,7 +522,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> ultima versione</td>
+   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (Traccia continua, versione più recente)</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -544,7 +544,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 >[!NOTE]
 >
 >- PDF Generator supporta solo le versioni in inglese, francese, tedesco e giapponese dei sistemi operativi e delle applicazioni supportati.
->- PDF Generator richiede Adobe Acrobat Pro DC a 32 bit e Microsoft® Office Professional Plus per eseguire la conversione.
+>- PDF Generator richiede una build Windows a 32 bit supportata di Adobe Acrobat Pro DC (Continuous track, ultima versione) per conversioni native basate su Acrobat e Microsoft® Office Professional Plus a 32 bit per conversioni basate su Office, su Microsoft® Windows. Attiva Acrobat tramite Feature Restricted Licensing (FRL) o il processo di distribuzione aziendale di Adobe; vedi [Installare Adobe Acrobat Pro DC](install-configure-document-services.md#install-adobe-acrobat-pro-dc) nell&#39;articolo di installazione dei servizi documentali.
 >- L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
 >- Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio un&#39;installazione con licenza multilicenza che non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
 >- PDF Generator non supporta Microsoft® Office 365.
@@ -622,14 +622,16 @@ Per ulteriori informazioni, vedere:
   <th><p><strong>Definizioni di patch supportate</strong></p> </th>
  </tr>
  <tr>
-  <td>Acrobat 2020 (brano classico)</td>
-  <td>Versione 20.004.30006 o successiva<br /> </td>
+  <td>Adobe Acrobat Pro DC (Traccia continua, versione più recente)</td>
+  <td>Versione più recente come descritto nelle <a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">note sulla versione di Acrobat e Reader</a><br /> </td>
  </tr>
  </tbody>
 </table>
 
 
 >[!NOTE]
+>
+>Adobe Acrobat 2020 (brano classico) non è supportato con AEM Forms. Al suo posto, utilizza Adobe Acrobat Pro DC (Continuous track, ultima versione).
 >
 >La famiglia di prodotti Acrobat DC introduce due tracce per Acrobat e Reader, che sono prodotti diversi: &quot;Classic&quot; e &quot;Continuous&quot;. Per i dettagli e un confronto dei due brani, vedere [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
@@ -642,7 +644,7 @@ Per ulteriori informazioni, vedere:
 <table>
 <tbody>
  <tr>
-  <th><p><strong>Piattaforma</strong></p> </th>
+  <th><p><strong>Platform</strong></p> </th>
   <th><p><strong>Definizioni di patch supportate</strong></p> </th>
  </tr>
  <tr>
@@ -917,6 +919,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
 | -------------- | --------------- | ------------------- |
 | Microsoft® Office 2024 | | Microsoft® Office 2021 |
+| Adobe Acrobat Pro DC (Continuous track, ultima versione) per PDF Generator e servizi documentali correlati | Adobe Acrobat 2020 (brano classico) |  |
 
 ### Versione 6.5.23.0 (6 giugno 2025)
 

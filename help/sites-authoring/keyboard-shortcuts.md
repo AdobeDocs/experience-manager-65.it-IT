@@ -9,16 +9,16 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 1785216a13a809117cf178bd2dabf921e36dd9af
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 47%
+source-wordcount: '386'
+ht-degree: 44%
 
 ---
 
-# Scelte rapide da tastiera per le console  {#keyboard-shortcuts-for-consoles}
+# Scelte rapide da tastiera per le console{#keyboard-shortcuts-for-consoles}
 
-AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili all&#39;uso delle console, altre alla [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Commerce, Scree
 | Console | `?` | Aiuto per scelte rapide da tastiera |
 |  | `/` | Avvia la [ricerca](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Consente di attivare o disattivare il [selettore della barra](/help/sites-authoring/basic-handling.md#rail-selector) da visualizzare |
-|  | ``` ` ``` | Nasconde la barra |
+|  | `Backtick` | Nasconde la barra |
 |  | `e` | Modifica |
 |  | `p` | Proprietà |
 |  | `m` | Sposta |
