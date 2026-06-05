@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -144,7 +144,7 @@ viene inviato al server AEM come:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Quando il server AEM e la pagina web si trovano su domini diversi, è necessario configurare CORS anche nell’istanza AEM Publish. Segui i passaggi elencati nella sezione [abilitare AEM Forms a distribuire moduli adattivi a un sito tra domini diversi](#cross-site).
+Quando il server AEM e la pagina web si trovano su domini diversi, è necessario configurare CORS anche nell’istanza AEM Publish. Segui i passaggi elencati nella sezione [abilitare AEM Forms a distribuire moduli adattivi a un sito tra domini diversi](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Topologia di esempio {#sample-topology}
 
@@ -193,8 +193,8 @@ Quando incorpori un modulo adattivo in una pagina web, considera le seguenti bes
 
 * Assicurati che le regole di stile definite nel CSS della pagina web non siano in conflitto con il CSS dell’oggetto modulo. Per evitare i conflitti, puoi riutilizzare il CSS della pagina web nel tema del modulo adattivo utilizzando la libreria client di AEM. Per informazioni sull&#39;utilizzo della libreria client nei temi dei moduli adattivi, vedi [Temi in AEM Forms](../../forms/using/themes.md).
 * Fare in modo che il contenitore del modulo nella pagina Web utilizzi l&#39;intera larghezza della finestra. In questo modo le regole CSS configurate per i dispositivi mobili funzionano senza modifiche. Se il contenitore del modulo non occupa l’intera larghezza della finestra, è necessario scrivere file CSS personalizzati per adattare il modulo a dispositivi mobili diversi.
-* Utilizza l&#39;API `[getData](https://helpx.adobe.com/it/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` per ottenere la rappresentazione XML o JSON dei dati del modulo nel client.
-* Utilizza l&#39;API `[unloadAdaptiveForm](https://helpx.adobe.com/it/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` per scaricare il modulo adattivo dal DOM di HTML.
+* Utilizza l&#39;API `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` per ottenere la rappresentazione XML o JSON dei dati del modulo nel client.
+* Utilizza l&#39;API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` per scaricare il modulo adattivo dal DOM di HTML.
 * Imposta l’intestazione access-control-origin quando invii una risposta da un server AEM.
 
 ## Consentire ad AEM Forms di distribuire moduli adattivi a un sito tra più domini {#cross-site}
@@ -221,3 +221,4 @@ Quando utilizzi un proxy inverso o incorpori il modulo adattivo senza la configu
 1. Nel campo Host consentiti specifica il dominio in cui si trova la pagina web. Consente all’host di effettuare richieste POST al server AEM. È inoltre possibile utilizzare espressioni regolari per specificare una serie di domini di applicazioni esterni.
 
 >[!ENDTABS]
+
