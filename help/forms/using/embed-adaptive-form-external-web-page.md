@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -144,7 +144,7 @@ viene inviato al server AEM come:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Quando il server AEM e la pagina web si trovano su domini diversi, è necessario configurare CORS anche nell’istanza AEM Publish. Segui i passaggi elencati nella sezione [abilitare AEM Forms a distribuire moduli adattivi a un sito tra domini diversi](#cross-site).
+Quando il server AEM e la pagina web si trovano su domini diversi, è necessario configurare CORS anche nell’istanza AEM Publish. Segui i passaggi elencati nella sezione [abilitare AEM Forms a distribuire moduli adattivi a un sito tra domini diversi](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Topologia di esempio {#sample-topology}
 
@@ -221,3 +221,4 @@ Quando utilizzi un proxy inverso o incorpori il modulo adattivo senza la configu
 1. Nel campo Host consentiti specifica il dominio in cui si trova la pagina web. Consente all’host di effettuare richieste POST al server AEM. È inoltre possibile utilizzare espressioni regolari per specificare una serie di domini di applicazioni esterni.
 
 >[!ENDTABS]
+
