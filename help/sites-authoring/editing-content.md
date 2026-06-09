@@ -10,10 +10,10 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 46%
+source-wordcount: '3030'
+ht-degree: 45%
 
 ---
 
@@ -145,7 +145,7 @@ Il segnaposto del componente è un indicatore che mostra dove è posizionato un 
 >
 >Su un dispositivo mobile, il browser Componenti riempie l’intero schermo. Una volta iniziato a trascinare un componente, il browser si chiude per mostrare nuovamente la pagina e inserire il componente.
 
-### Inserimento di un Componente dal Sistema Paragrafo   {#inserting-a-component-from-the-paragraph-system}
+### Inserimento di un Componente dal Sistema Paragrafo {#inserting-a-component-from-the-paragraph-system}
 
 Puoi aggiungere un componente utilizzando la casella **Trascina qui i componenti** del sistema paragrafo:
 
@@ -310,7 +310,7 @@ Esistono due metodi per aggiungere o modificare contenuti nei componenti:
 * Aprire la [finestra di dialogo del componente per la modifica](#component-edit-dialog).
 * [Trascinare una risorsa](#draganddropintocomponent) dal browser Risorse per aggiungere direttamente il contenuto.
 
-### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
+### Finestra di dialogo di modifica del componente {#component-edit-dialog}
 
 Per aprire un componente e modificarne il contenuto, utilizza l’icona [Modifica (a forma di matita) nella barra degli strumenti del componente](#edit-configure-copy-cut-delete-paste).
 
@@ -343,7 +343,7 @@ Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti
 
 ### Trascinare risorse nel componente {#drag-and-drop-assets-into-component}
 
-Per tipi di componenti specifici puoi trascinare e rilasciare le risorse dal browser Risorse direttamente nel componente per aggiornare il contenuto:
+Per tipi di componenti specifici, puoi trascinare e rilasciare le risorse dal browser Risorse direttamente nel componente, per aggiornare il contenuto:
 
 | **Tipo risorsa** | **Tipo di componente** |
 |---|---|
@@ -372,7 +372,7 @@ Per esempio, il componente **Testo**:
 Per spostare un componente paragrafo:
 
 1. Selezionare il paragrafo da spostare con la selezione o il clic e la conservazione.
-1. Trascina il paragrafo nella nuova posizione. In AEM viene indicato dove è possibile rilasciare il paragrafo. Rilascialo nella posizione desiderata.
+1. Trascina il paragrafo nella nuova posizione. AEM indica dove è possibile inserire il paragrafo. Rilascialo nella posizione desiderata.
 
    ![spostamento componente paragrafo](assets/screen_shot_2018-03-22at121821.png)
 
@@ -456,7 +456,7 @@ Se la pagina è basata su un [modello statico](/help/sites-authoring/templates.m
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-authoring/basic-handling.md#column-view) o [Vista a elenco](/help/sites-authoring/basic-handling.md#list-view).
 
-## Stato della Live Copy   {#live-copy-status}
+## Stato della Live Copy {#live-copy-status}
 
 La [modalità di pagina Stato Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) consente di avere una rapida panoramica dello stato della Live Copy e di sapere quali componenti vengono ereditati e quali no:
 
@@ -481,7 +481,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 
 >[!NOTE]
 >
->* In modalità Modifica, i collegamenti nel contenuto sono visibili, ma non accessibili.
+>* I collegamenti nel contenuto sono visibili ma non accessibili in modalità di modifica.
 >* Per effettuare la navigazione tramite i collegamenti, utilizza una delle opzioni di anteprima.
 >* Utilizza la [scelta rapida da tastiera](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` per passare dall’anteprima all’ultima modalità selezionata.
 >
@@ -492,7 +492,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 
 ### Modalità Anteprima {#preview-mode}
 
-Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1&rbrace;. &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes) Questa modalità consente di effettuare le seguenti operazioni:
+Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1}. ](/help/sites-authoring/author-environment-tools.md#page-modes)Questa modalità consente di effettuare le seguenti operazioni:
 
 * Nascondi vari meccanismi di modifica per avere una visualizzazione rapida della pagina quando viene pubblicata.
 * Utilizza i collegamenti per navigare.
@@ -506,7 +506,7 @@ Durante l’authoring, la modalità di anteprima è disponibile utilizzando l’
 
 L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information). In questo modo la pagina viene aperta in una nuova scheda, il contenuto viene aggiornato e la pagina viene visualizzata esattamente come appare quando viene pubblicata.
 
-## Blocco di una pagina   {#locking-a-page}
+## Blocco di una pagina {#locking-a-page}
 
 AEM consente di bloccare una pagina in modo che nessun altro possa modificarne il contenuto. Questa funzione è utile quando si apportano numerose modifiche a una pagina specifica o quando è necessario bloccarla per un breve periodo.
 
@@ -524,7 +524,7 @@ Per bloccare una pagina è possibile utilizzare:
    1. Per aprire il menu, seleziona l&#39;icona **Informazioni pagina**.
    1. Seleziona l’opzione **Blocca pagina**.
 
-Una volta eseguito il blocco le informazioni di visualizzazione della console vengono aggiornate e, durante la modifica, un simbolo a forma di lucchetto viene visualizzato nella barra degli strumenti.
+Una volta eseguito il blocco, le informazioni di visualizzazione della console vengono aggiornate e, durante la modifica, un simbolo di blocco viene visualizzato nella barra degli strumenti.
 
 ![Blocca simbolo](assets/screen_shot_2018-03-22at135010.png)
 

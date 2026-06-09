@@ -10,10 +10,10 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 8cb06cb2240f4ba460493dda1615cb64006d4646
 workflow-type: tm+mt
-source-wordcount: '2965'
-ht-degree: 41%
+source-wordcount: '3016'
+ht-degree: 40%
 
 ---
 
@@ -37,17 +37,17 @@ Poiché l’interfaccia utente di AEM è dotata di funzionalità touch, puoi uti
 
 ### Primi passi {#first-steps}
 
-Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navigazione](#navigation-panel). Selezionando una delle opzioni, si apre la rispettiva console.
+Immediatamente dopo aver effettuato l&#39;accesso, si accede al [pannello di navigazione](#navigation-panel). Selezionando una delle opzioni, si apre la rispettiva console.
 
 ![Navigazione](assets/bh-01.png)
 
 >[!NOTE]
 >
->Per comprendere l&#39;utilizzo di base di AEM, questo documento si basa sulla console **Sites**.
+>Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites**.
 >
 >Per iniziare, fai clic su **Sites**.
 
-### Navigazione nel prodotto  {#product-navigation}
+### Navigazione nel prodotto {#product-navigation}
 
 Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Fai clic qui per una buona panoramica delle operazioni di base di AEM.
 
@@ -55,7 +55,7 @@ Ogni volta che un utente accede per la prima volta a una console, viene avviato 
 
 Fai clic su **Avanti** per passare alla pagina successiva della panoramica. Fai clic su **Chiudi** o fai clic all&#39;esterno della finestra di dialogo della panoramica per chiudere.
 
-La panoramica verrà riavviata al successivo accesso a una console, a meno che non si visualizzino tutte le diapositive, oppure si selezioni l&#39;opzione **Non mostrare più questa schermata**.
+La panoramica verrà riavviata al successivo accesso a una console, a meno che non si visualizzino tutte le diapositive o non si selezioni l&#39;opzione **Non mostrare più questo messaggio**.
 
 ## Navigazione globale {#global-navigation}
 
@@ -71,12 +71,12 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **[Navigazione](/help/sites-authoring/basic-handling.md#navigation-panel)**: rappresentata da una bussola 
+* **[Navigazione](/help/sites-authoring/basic-handling.md#navigation-panel)**: rappresentata da una bussola
 * **[Strumenti](/help/sites-authoring/basic-handling.md#tools-panel)**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
-### Pannello di navigazione  {#navigation-panel}
+### Pannello di navigazione {#navigation-panel}
 
 Il pannello di navigazione consente di accedere alle console AEM:
 
@@ -122,7 +122,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=it">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
-* [Soluzioni](https://business.adobe.com/it/)
+* [Soluzioni](https://business.adobe.com/)
 
   ![Soluzioni](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -189,7 +189,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   ![Breadcrumb](assets/bh-05.png)
 
-  Viene visualizzato al centro della barra e mostra sempre la descrizione dell’elemento attualmente selezionato. Le breadcrumb consentono di spostarsi all’interno di una console specifica. Nella console Sites puoi spostarti tra i vari livelli del sito web.
+  Le breadcrumb vengono visualizzate al centro della barra e, mostrando sempre la descrizione dell’elemento attualmente selezionato, consentono di spostarsi all’interno di una console specifica. Nella console Sites puoi spostarti tra i vari livelli del sito web.
 
   Facendo clic sul testo della breadcrumb viene aperto un elenco a discesa in cui sono elencati i livelli della gerarchia dell’elemento attualmente selezionato. Per passare a tale posizione, fare clic su una voce.
 
@@ -209,7 +209,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
 * [Viste](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-  L’icona di visualizzazione si trova all’estrema destra della barra degli strumenti di AEM. Inoltre, indica la vista corrente e ne consente la modifica. Ad esempio, la visualizzazione predefinita **Vista a colonne** presenta questa icona:
+  L’icona di visualizzazione si trova all’estrema destra della barra degli strumenti di AEM. Poiché indica anche la vista corrente, il suo aspetto cambia. Ad esempio, nella visualizzazione predefinita **Vista a colonne** viene visualizzato quanto segue:
 
   ![Vista a colonne](assets/bh-07.png)
 
@@ -225,7 +225,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   ![Passa al contenuto principale](assets/bh-30.png)
 
-## Accedere all’Aiuto   {#accessing-help}
+## Accedere all’Aiuto {#accessing-help}
 
 Sono disponibili diverse risorse di Aiuto:
 
@@ -241,7 +241,7 @@ Sono disponibili diverse risorse di Aiuto:
 
 * **Editor pagina**
 
-  La prima volta che modifichi una pagina, compare una serie di diapositive introduttive sull’editor pagina.
+  La prima volta che modifichi una pagina, compare una serie di diapositive introduttive sull’editor di pagine.
 
   ![Editor pagina](assets/bh-11.png)
 
@@ -268,7 +268,7 @@ Risorse per sviluppatori e download
   >* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
-## Barra delle azioni  {#actions-toolbar}
+## Barra delle azioni {#actions-toolbar}
 
 Ogni volta che viene selezionata una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -280,7 +280,7 @@ Le azioni disponibili nella barra degli strumenti cambiano per riflettere le azi
 
 La modalità di [selezione di una risorsa](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) dipende dalla vista.
 
-A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso, vengono visualizzate altre opzioni. Toccando o facendo clic sui puntini di sospensione (i tre punti o **...**) si apre un selettore a discesa contenente tutte le azioni che non rientrano nella barra. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
+A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso, vengono visualizzate altre opzioni. Tocca o fai clic sui puntini di sospensione (i tre punti o **...**) apre un selettore a discesa contenente tutte le azioni rimanenti. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
 
 ![Barra degli strumenti Azioni](assets/bh-12.png)
 
@@ -288,7 +288,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide  {#quick-actions}
+## Azioni rapide {#quick-actions}
 
 In [Vista a schede](#cardviewquickactions), alcune azioni sono disponibili come icone di azione rapida e sulla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un singolo elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -305,13 +305,13 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco &#x200B;](#list-view)
+* [Vista a elenco](#list-view)
 
 >[!NOTE]
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse  {#selecting-resources}
+### Selezionare le risorse {#selecting-resources}
 
 La selezione di una risorsa specifica dipende dalla combinazione della vista e del dispositivo:
 
@@ -441,7 +441,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
    * Una rappresentazione visiva del contenuto della pagina.
    * Titolo della pagina.
    * Date importanti (ad esempio ultima modifica, ultima pubblicazione).
-   * La pagina è bloccata, nascosta o fa parte di una Live Copy.
+   * Se la pagina è bloccata, nascosta o fa parte di una Live Copy.
    * Se appropriato, quando devi eseguire un’azione nell’ambito di un flusso di lavoro.
 
       * Alle voci della [Casella in entrata](/help/sites-authoring/inbox.md) possono essere correlati dei marcatori che indicano le azioni necessarie.
@@ -452,7 +452,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista a elenco  {#list-view}
+### Vista a elenco {#list-view}
 
 ![Vista a elenco](assets/bh-19.png)
 

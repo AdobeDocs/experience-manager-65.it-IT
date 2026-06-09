@@ -10,16 +10,16 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 33bf1d9f64c32691f6a9c0568c1c5cb2150f331a
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 47%
+source-wordcount: '2262'
+ht-degree: 42%
 
 ---
 
 # Authoring - Ambiente e strumenti{#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi meccanismi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 ## Gestione del sito {#managing-your-site}
 
@@ -43,7 +43,7 @@ Puoi modificare una pagina con l’editor pagina. Esempio:
 >
 >Se necessario, puoi saltare la presentazione e ripeterla in qualsiasi momento selezionando una delle opzioni dal menu **Informazioni pagina**.
 
-## Accedere all’Aiuto   {#accessing-help}
+## Accedere all’Aiuto {#accessing-help}
 
 Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
@@ -52,7 +52,7 @@ Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti a
 
 Ulteriori [risorse di aiuto sono disponibili nelle console](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Browser Componenti   {#components-browser}
+## Browser Componenti {#components-browser}
 
 Il browser Componenti mostra tutti componenti disponibili per la pagina corrente. Questi possono essere trascinati nella posizione appropriata, quindi modificati per aggiungere il contenuto.
 
@@ -153,7 +153,7 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
   Il browser Risorse copre completamente la pagina in fase di modifica.
 
-  Per aggiungere una risorsa alla pagina, tocca e tieni premuto sulla risorsa richiesta, quindi spostala verso destra: il browser Risorse si chiude e viene visualizzata di nuovo la pagina, dove puoi aggiungere la risorsa al componente richiesto.
+  Per aggiungere una risorsa alla pagina, tocca e tieni premuto il tasto sulla risorsa richiesta, quindi spostala verso destra: il browser Risorse si chiude e viene visualizzata di nuovo la pagina, dove puoi aggiungere la risorsa al componente richiesto.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -255,7 +255,7 @@ Ad esempio, potete correggere un riferimento interrotto all&#39;interno di un co
 
 ## Eventi - Timeline {#events-timeline}
 
-Per le risorse appropriate (ad esempio, pagine dalla console **Sites** o risorse dalla console **Assets**) è possibile utilizzare la [timeline per visualizzare le attività recenti relative agli elementi selezionati](/help/sites-authoring/basic-handling.md#timeline).
+Per le risorse appropriate (ad esempio, pagine dalla console **Sites** o risorse dalla console **Assets**), è possibile utilizzare la [timeline per visualizzare le attività recenti relative agli elementi selezionati](/help/sites-authoring/basic-handling.md#timeline).
 
 Apri la console richiesta, quindi accedi alla risorsa desiderata e apri la **Timeline** utilizzando:
 
@@ -267,7 +267,7 @@ Apri la console richiesta, quindi accedi alla risorsa desiderata e apri la **Tim
 
 ## Informazioni sulle pagine {#page-information}
 
-Il pulsante Informazioni pagina (icona equalizzatore) apre un menu che fornisce anche dettagli sull’ultima modifica e sull’ultima pubblicazione. A seconda delle caratteristiche della pagina, del sito e delle istanze, potrebbero essere disponibili più o meno opzioni:
+Il pulsante Informazioni pagina (icona equalizzatore) apre un menu che fornisce anche dettagli sull’ultima modifica e sull’ultima pubblicazione. A seconda delle caratteristiche della pagina, del sito, dell’istanza e delle autorizzazioni, potrebbero essere disponibili più o meno opzioni:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -288,16 +288,16 @@ Ad esempio, se appropriato, **Informazioni pagina** dispone anche delle opzioni 
 * [Promuovi lancio](/help/sites-authoring/launches-promoting.md) se la pagina è un lancio
 * [Apri nell&#39;interfaccia classica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) se questa opzione è stata [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
 
-Inoltre, se necessario, **Informazioni pagina** può fornire accesso alle analisi e alle raccomandazioni.
+Inoltre, se necessario, **Informazioni pagina** può fornire accesso alle analisi e ai consigli.
 
-## Modalità pagina   {#page-modes}
+## Modalità pagina {#page-modes}
 
 Esistono diverse modalità di modifica di una pagina che consentono di eseguire azioni diverse:
 
 * [Modifica](/help/sites-authoring/editing-content.md) - utilizza questa modalità quando modifichi il contenuto della pagina.
-* [Layout](/help/sites-authoring/responsive-layout.md) - consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout)
+* [Layout](/help/sites-authoring/responsive-layout.md) - consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout).
 
-* [Scaffolding](/help/sites-authoring/scaffolding.md): ti consente di creare un set di pagine di grandi dimensioni che condividono la struttura ma hanno contenuti diversi.
+* [Scaffolding](/help/sites-authoring/scaffolding.md) - consente di creare un set di pagine di grandi dimensioni che condividono la struttura ma hanno contenuti diversi.
 * [Sviluppatore](/help/sites-developing/developer-mode.md) - consente di eseguire varie azioni (richiede privilegi). Ad esempio, è necessario esaminare i dettagli tecnici di una pagina e dei relativi componenti.
 
 * [Progettazione](/help/sites-authoring/default-components-designmode.md) - consente di abilitare/disabilitare i componenti da utilizzare in una pagina e di configurare la progettazione del componente (se la pagina è basata su un [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates)).
@@ -307,7 +307,7 @@ Esistono diverse modalità di modifica di una pagina che consentono di eseguire 
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - consente di visualizzare lo stato di una pagina in un determinato momento.
 * [Stato Live Copy](/help/sites-authoring/editing-content.md#live-copy-status): consente di ottenere una rapida panoramica dello stato della live copy e dei componenti che vengono/non vengono ereditati.
-* [Anteprima](/help/sites-authoring/editing-content.md#previewing-pages): utilizzato per visualizzare l’aspetto che la pagina avrà nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
+* [Anteprima](/help/sites-authoring/editing-content.md#previewing-pages) - viene utilizzato per visualizzare la pagina così come viene visualizzata nell&#39;ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
 
 * [Annota](/help/sites-authoring/annotations.md): utilizzato per aggiungere o visualizzare annotazioni nella pagina.
 
@@ -327,7 +327,7 @@ Per accedervi, utilizza le icone nell’angolo in alto a destra. L’icona effet
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) offrono un completamento automatico e il [browser percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più solida.
 
-### Campi percorso   {#path-fields}
+### Campi percorso {#path-fields}
 
 L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull&#39;utilizzo e la modifica dei componenti, vedere [Componenti per l&#39;authoring delle pagine](/help/sites-authoring/default-components.md).
 

@@ -10,10 +10,10 @@ feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: e4c42f989baf1a91e94944c612ee6b8de1dc331a
 workflow-type: tm+mt
-source-wordcount: '3363'
-ht-degree: 2%
+source-wordcount: '3334'
+ht-degree: 3%
 
 ---
 
@@ -21,53 +21,53 @@ ht-degree: 2%
 
 Gli agenti di replica sono centrali per Adobe Experience Manager (AEM) in quanto il meccanismo utilizzato per:
 
-* [Contenuto Publish (attiva)](/help/sites-authoring/publishing-pages.md#activatingcontent) da un ambiente Author a un ambiente Publish.
+* [Pubblicare (attivare)](/help/sites-authoring/publishing-pages.md#activatingcontent) contenuto da un ambiente Author a uno Publish.
 * Svuota in modo esplicito il contenuto dalla cache di Dispatcher.
-* Restituisce l’input dell’utente (ad esempio, l’input del modulo) dall’ambiente Publish all’ambiente Author (sotto il controllo dell’ambiente Author).
+* Restituisce l’input dell’utente (ad esempio, l’input del modulo) dall’ambiente di pubblicazione all’ambiente di authoring (sotto il controllo dell’ambiente di authoring).
 
 Le richieste sono [in coda](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) per l&#39;agente appropriato per l&#39;elaborazione.
 
 >[!NOTE]
 >
->I dati utente (utenti, gruppi di utenti e profili utente) non vengono replicati tra le istanze di Author e Publish.
+>I dati utente (utenti, gruppi di utenti e profili utente) non vengono replicati tra le istanze Author e Publish.
 >
->Per più istanze di Publish, i dati utente sono distribuiti Sling quando [Sincronizzazione utente](/help/sites-administering/sync.md) è abilitato.
+>Per più istanze Publish, i dati utente sono distribuiti Sling quando [Sincronizzazione utente](/help/sites-administering/sync.md) è abilitato.
 
-## Replica da Author a Publish {#replicating-from-author-to-publish}
+## Replica da authoring a pubblicazione {#replicating-from-author-to-publish}
 
-La replica, su un’istanza di Publish o Dispatcher, avviene in diversi passaggi:
+La replica in un’istanza Publish o Dispatcher viene eseguita in diversi passaggi:
 
 * l’Autore richiede che determinati contenuti siano pubblicati (attivati); questo può essere avviato da una richiesta manuale o da attivatori automatici preconfigurati.
 * la richiesta viene passata all’agente di replica predefinito appropriato; un ambiente può avere diversi agenti predefiniti sempre selezionati per tali azioni.
 * l’agente di replica &quot;crea pacchetti&quot; del contenuto e lo inserisce nella coda di replica.
 * nella scheda Siti Web l&#39;indicatore di stato [colorato](/help/sites-authoring/publishing-pages.md#determiningpagepublicationstatus) è impostato per le singole pagine.
-* il contenuto viene rimosso dalla coda e trasportato nell’ambiente Publish utilizzando il protocollo configurato; in genere si tratta di HTTP.
-* un servlet nell&#39;ambiente Publish riceve la richiesta e pubblica il contenuto ricevuto; il servlet predefinito è `https://localhost:4503/bin/receive`.
+* il contenuto viene rimosso dalla coda e trasportato nell’ambiente di pubblicazione utilizzando il protocollo configurato; in genere si tratta di HTTP.
+* un servlet nell&#39;ambiente di pubblicazione riceve la richiesta e pubblica il contenuto ricevuto; il servlet predefinito è `https://localhost:4503/bin/receive`.
 
 * è possibile configurare più ambienti Author e Publish.
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-### Replica da Publish a Author {#replicating-from-publish-to-author}
+### Replica dalla pubblicazione all’authoring {#replicating-from-publish-to-author}
 
-Alcune funzioni consentono agli utenti di immettere dati in un’istanza di Publish.
+Alcune funzioni consentono agli utenti di immettere dati in un’istanza Publish.
 
-A volte, per restituire i dati all’ambiente di authoring da cui vengono ridistribuiti in altri ambienti Publish, è necessario un tipo di replica noto come replica inversa. Per motivi di sicurezza, il traffico dall’ambiente Publish all’ambiente di authoring deve essere controllato rigorosamente.
+A volte, per restituire questi dati all’ambiente di authoring da dove vengono ridistribuiti ad altri ambienti di pubblicazione, è necessario un tipo di replica noto come replica inversa. Per motivi di sicurezza, il traffico dall’ambiente di pubblicazione a quello di authoring deve essere controllato rigorosamente.
 
-La replica inversa utilizza un agente nell’ambiente Publish che fa riferimento all’ambiente di authoring. Questo agente inserisce i dati in una casella in uscita. Questa casella in uscita corrisponde ai listener di replica nell’ambiente di authoring. I listener eseguono il polling delle caselle in uscita per raccogliere i dati immessi e quindi distribuirli in base alle esigenze. In questo modo l’ambiente di authoring controlla tutto il traffico.
+La replica inversa utilizza un agente nell’ambiente di pubblicazione che fa riferimento all’ambiente di authoring. Questo agente inserisce i dati in una casella in uscita. Questa casella in uscita corrisponde ai listener di replica nell’ambiente di authoring. I listener eseguono il polling delle caselle in uscita per raccogliere i dati immessi e quindi distribuirli in base alle esigenze. In questo modo l’ambiente di authoring controlla tutto il traffico.
 
-In altri casi, come per le funzioni di Communities (ad esempio forum, blog, commenti e recensioni), la quantità di contenuti generati dagli utenti (UGC, User-Generated Content) immessi nell’ambiente Publish è difficile da sincronizzare in modo efficiente tra le istanze AEM utilizzando la replica.
+In altri casi, come per le funzioni di Communities (ad esempio forum, blog, commenti e recensioni), la quantità di contenuti generati dagli utenti (UGC) immessi nell’ambiente di pubblicazione è difficile da sincronizzare in modo efficiente tra le istanze di AEM utilizzando la replica.
 
-[Communities](/help/communities/overview.md) dell&#39;AEM non utilizza mai la replica per UGC. La distribuzione per Communities richiede invece un archivio comune per UGC (vedi [Archiviazione contenuto community](/help/communities/working-with-srp.md)).
+AEM [Communities](/help/communities/overview.md) non utilizza mai la replica per UGC. La distribuzione per Communities richiede invece un archivio comune per UGC (vedi [Archiviazione contenuto community](/help/communities/working-with-srp.md)).
 
 ### Replica: funzioni pronte all’uso {#replication-out-of-the-box}
 
-Il sito web we-retail incluso in un&#39;installazione standard di AEM può essere utilizzato per illustrare la replica.
+Il sito web we-retail incluso in un’installazione standard di AEM può essere utilizzato per illustrare la replica.
 
 Per seguire questo esempio e utilizzare gli agenti di replica predefiniti, [installa AEM](/help/sites-deploying/deploy.md) con:
 
 * ambiente di authoring sulla porta `4502`
-* ambiente Publish sulla porta `4503`
+* ambiente di pubblicazione sulla porta `4503`
 
 >[!NOTE]
 >
@@ -75,43 +75,43 @@ Per seguire questo esempio e utilizzare gli agenti di replica predefiniti, [inst
 >
 >* Agenti per creazione: agente predefinito (pubblicazione)
 >
->Effettivamente disabilitati per impostazione predefinita (a partire da AEM 6.1) :
+>Effettivamente disabilitato per impostazione predefinita (a partire da AEM 6.1):
 >
 >* Agenti per creazione: agente di replica inversa (publish_reverse)
->* Agenti in Publish: replica inversa (casella in uscita)
+>* Agenti per pubblicazione : Replica inversa (casella in uscita)
 >
 >Per verificare lo stato dell&#39;agente o della coda, utilizzare la console **Strumenti**.
 >Consulta [Monitoraggio degli agenti di replica](#monitoring-your-replication-agents).
 
-#### Replica (da authoring a Publish) {#replication-author-to-publish}
+#### Replica (da autore a pubblicazione) {#replication-author-to-publish}
 
 1. Passa alla pagina di supporto nell’ambiente di authoring.
    **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
 1. Modifica la pagina in modo da poter aggiungere nuovo testo.
 1. **Attiva pagina** per pubblicare le modifiche.
-1. Apri la pagina Supporto nell’ambiente Publish:
+1. Apri la pagina di supporto nell’ambiente di pubblicazione:
    **https://localhost:4503/content/we-retail/us/en/experience.html**
 1. Ora puoi vedere le modifiche inserite al momento dell’authoring.
 
 Questa replica viene eseguita dall’ambiente di authoring in base a:
 
 * **Agente predefinito (pubblicazione)**
-Questo agente replica il contenuto nell’istanza predefinita di Publish.
+Questo agente replica il contenuto nell’istanza Publish predefinita.
 I dettagli di questo (configurazione e registri) sono accessibili dalla console Strumenti dell’ambiente di authoring; oppure:
   `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Agenti di replica - Pronti all’uso {#replication-agents-out-of-the-box}
 
-I seguenti agenti sono disponibili in un&#39;installazione standard per AEM:
+I seguenti agenti sono disponibili in un’installazione standard di AEM:
 
 * [Agente predefinito](#replication-author-to-publish)
-Utilizzato per la replica da Author a Publish.
+Utilizzato per replicare da Author a Publish.
 
-* Svuotamento Dispatcher
-Viene utilizzato per la gestione della cache di Dispatcher. Per ulteriori informazioni, vedere [Annullamento della validità della cache di Dispatcher dall&#39;ambiente di authoring](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-the-authoring-environment) e [Annullamento della validità della cache di Dispatcher da un&#39;istanza di pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-a-publishing-instance).
+* Eliminazione dispatcher
+Viene utilizzato per la gestione della cache di Dispatcher. Per ulteriori informazioni, vedere [Annullamento della validità della cache di Dispatcher dall&#39;ambiente di authoring](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Annullamento della validità della cache di Dispatcher da un&#39;istanza di pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance).
 
 * [Replica inversa](#reverse-replication-publish-to-author)
-Utilizzato per la replica da Publish a Author. La replica inversa non viene utilizzata per le funzioni di Communities, ad esempio forum, blog e commenti. Viene effettivamente disattivata in quanto la casella in uscita non è abilitata. L’utilizzo della replica inversa richiederebbe una configurazione personalizzata.
+Utilizzato per replicare da Publish a Author. La replica inversa non viene utilizzata per le funzioni di Communities, ad esempio forum, blog e commenti. Viene effettivamente disattivata in quanto la casella in uscita non è abilitata. L’utilizzo della replica inversa richiederebbe una configurazione personalizzata.
 
 * Agente statico
 Si tratta di un &quot;agente che memorizza una rappresentazione statica di un nodo nel file system&quot;.
@@ -160,17 +160,17 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
   A seconda dell’ambiente, l’agente utilizza questo account utente per:
 
    * raccogliere e creare pacchetti di contenuti dall’ambiente di authoring;
-   * creare e scrivere contenuti nell’ambiente Publish
+   * creare e scrivere contenuti nell’ambiente di pubblicazione
 
   Lascia questo campo vuoto per utilizzare l’account utente di sistema (l’account definito in sling come utente amministratore; per impostazione predefinita è `admin`).
 
   >[!CAUTION]
   >
-  >Per un agente nell&#39;ambiente di authoring questo account *deve* disporre dell&#39;accesso in lettura a tutti i percorsi che si desidera replicare.
+  >Per un agente nell&#39;ambiente di authoring, questo account *deve* disporre dell&#39;accesso in lettura a tutti i percorsi che si desidera replicare.
 
   >[!CAUTION]
   >
-  >Per un agente nell&#39;ambiente Publish questo account *deve* disporre dell&#39;accesso di creazione/scrittura necessario per replicare il contenuto.
+  >Per un agente nell&#39;ambiente di pubblicazione questo account *deve* disporre dell&#39;accesso di creazione/scrittura necessario per replicare il contenuto.
 
   >[!NOTE]
   >
@@ -188,7 +188,7 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
 * **Usa per replica inversa**
 
-  Indica se questo agente viene utilizzato per la replica inversa; restituisce l&#39;input dell&#39;utente dall&#39;ambiente Publish all&#39;ambiente Author.
+  Indica se questo agente viene utilizzato per la replica inversa; restituisce l&#39;input dell&#39;utente dall&#39;ambiente di pubblicazione all&#39;ambiente di authoring.
 
 * **Aggiornamento alias**
 
@@ -207,7 +207,7 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Il protocollo qui specificato (HTTP o HTTPS) determina il metodo di trasporto.
 
-  Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. È possibile utilizzare l&#39;URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
+  Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
 
 * **Utente**
 
@@ -219,11 +219,11 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
 * **Dominio NTLM**
 
-  Dominio per autenticazione NTML.
+  Dominio per autenticazione NTLM.
 
 * **Host NTLM**
 
-  Host per autenticazione NTML.
+  Host per autenticazione NTLM.
 
 * **Abilita SSL rilassato**
 
@@ -273,7 +273,7 @@ Le seguenti impostazioni sono necessarie solo se è necessario un proxy:
 
   Il metodo HTTP da utilizzare.
 
-  Per un agente di Dispatcher Flush, questo valore è quasi sempre GET e non deve essere modificato (POST sarebbe un altro valore possibile).
+  Per un agente di Dispatcher Flush, questo è quasi sempre GET e non deve essere modificato (POST sarebbe un altro valore possibile).
 
 * **Intestazioni HTTP**
 
@@ -348,15 +348,15 @@ Queste impostazioni vengono utilizzate per definire i trigger per la replica aut
 
 ## Configurazione degli agenti di replica {#configuring-your-replication-agents}
 
-Per informazioni sulla connessione degli agenti di replica all&#39;istanza di Publish tramite MSSL, vedere [Replica con SSL reciproco](/help/sites-deploying/mssl-replication.md).
+Per informazioni sulla connessione degli agenti di replica all&#39;istanza Publish tramite MSSL, vedere [Replica con SSL reciproco](/help/sites-deploying/mssl-replication.md).
 
 ### Configurazione degli agenti di replica dall’ambiente di authoring {#configuring-your-replication-agents-from-the-author-environment}
 
-Dalla scheda Strumenti nell&#39;ambiente di authoring è possibile configurare gli agenti di replica che risiedono nell&#39;ambiente di authoring (**Agenti nell&#39;ambiente di authoring**) o nell&#39;ambiente di Publish (**Agenti in Publish**). Le procedure seguenti illustrano la configurazione di un agente per l’ambiente di authoring, ma possono essere utilizzate per entrambi.
+Dalla scheda Strumenti nell&#39;ambiente di authoring, è possibile configurare gli agenti di replica che risiedono nell&#39;ambiente di authoring (**Agenti nell&#39;ambiente di authoring**) o nell&#39;ambiente di pubblicazione (**Agenti nella pubblicazione**). Le procedure seguenti illustrano la configurazione di un agente per l’ambiente di authoring, ma possono essere utilizzate per entrambi.
 
 >[!NOTE]
 >
->Quando un Dispatcher gestisce le richieste HTTP per le istanze Author o Publish, la richiesta HTTP dell’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, è necessario aggiungere l’intestazione PATH all’elenco delle intestazioni client di Dispatcher. Vedere [/clientheaders (Client Headers)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#specifying-the-http-headers-to-pass-through-clientheaders).
+>Quando un Dispatcher gestisce le richieste HTTP per le istanze Author o Publish, la richiesta HTTP dell’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, è necessario aggiungere l’intestazione PATH all’elenco delle intestazioni client di Dispatcher. Vedere [/clientheaders (Client Headers)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Accedi alla scheda **Strumenti** in AEM.
@@ -377,42 +377,42 @@ Dalla scheda Strumenti nell&#39;ambiente di authoring è possibile configurare g
 
 ### Configurazione della replica inversa {#configuring-reverse-replication}
 
-La replica inversa viene utilizzata per restituire il contenuto dell’utente generato in un’istanza di Publish a un’istanza di authoring. Questa funzione è comunemente utilizzata per funzioni quali sondaggi e moduli di registrazione.
+La replica inversa viene utilizzata per riportare il contenuto dell’utente generato in un’istanza Publish a un’istanza Author. Questa funzione è comunemente utilizzata per funzioni quali sondaggi e moduli di registrazione.
 
 Per motivi di sicurezza, la maggior parte delle topologie di rete non consente connessioni *da* alla &quot;zona demilitarizzata&quot; (una sottorete che espone i servizi esterni a una rete non attendibile come Internet).
 
-Poiché l’ambiente Publish si trova in genere nella zona demilitarizzata, per riportare il contenuto nell’ambiente di authoring la connessione deve essere avviata dall’istanza di authoring. Questa operazione viene eseguita con:
+Poiché l’ambiente di pubblicazione si trova in genere nella zona demilitarizzata, per riportare il contenuto nell’ambiente di authoring la connessione deve essere avviata dall’istanza di authoring. Questa operazione viene eseguita con:
 
-* una *casella in uscita* nell&#39;ambiente Publish in cui viene inserito il contenuto.
+* una *casella in uscita* nell&#39;ambiente di pubblicazione in cui viene inserito il contenuto.
 * un agente (pubblicazione) nell’ambiente di authoring che esegue periodicamente il polling della casella in uscita per i nuovi contenuti.
 
 >[!NOTE]
 >
->Per le [community](/help/communities/overview.md) dell&#39;AEM, la replica non viene utilizzata per i contenuti generati dall&#39;utente in un&#39;istanza di Publish. Vedi [Archiviazione dei contenuti della community](/help/communities/working-with-srp.md).
+>Per AEM [Communities](/help/communities/overview.md), la replica non viene utilizzata per i contenuti generati dall&#39;utente in un&#39;istanza Publish. Vedi [Archiviazione dei contenuti della community](/help/communities/working-with-srp.md).
 
 A questo scopo, è necessario:
 
-**Agente di replica inversa nell&#39;ambiente di authoring** - Agisce come componente attivo per raccogliere informazioni dalla cartella Posta in uscita nell&#39;ambiente Publish:
+**Agente di replica inversa nell&#39;ambiente di authoring** - Agisce come componente attivo per raccogliere informazioni dalla cartella Posta in uscita nell&#39;ambiente di pubblicazione:
 
 Se desideri utilizzare la replica inversa, assicurati che questo agente sia attivato.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-**Agente di replica inversa nell&#39;ambiente Publish (casella in uscita)** - L&#39;elemento passivo funge da &quot;casella in uscita&quot;. L’input dell’utente viene inserito qui, da dove viene raccolto dall’agente nell’ambiente di authoring.
+**Agente di replica inversa nell&#39;ambiente di pubblicazione (casella in uscita)** - L&#39;elemento passivo funge da casella in uscita. L’input dell’utente viene inserito qui, da dove viene raccolto dall’agente nell’ambiente di authoring.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-### Configurazione della replica per più istanze di Publish {#configuring-replication-for-multiple-publish-instances}
+### Configurazione della replica per più istanze di pubblicazione {#configuring-replication-for-multiple-publish-instances}
 
 >[!NOTE]
 >
 >Viene replicato solo il contenuto, non i dati utente (utenti, gruppi di utenti e profili utente).
 >
->Per sincronizzare i dati utente in più istanze di Publish, abilitare [Sincronizzazione utente](/help/sites-administering/sync.md).
+>Per sincronizzare i dati utente in più istanze di pubblicazione, abilitare [Sincronizzazione utente](/help/sites-administering/sync.md).
 
-Dopo l&#39;installazione, un agente predefinito è già configurato per la replica del contenuto in un&#39;istanza di Publish in esecuzione sulla porta 4503 dell&#39;host locale.
+Dopo l&#39;installazione, un agente predefinito è già configurato per la replica del contenuto in un&#39;istanza Publish in esecuzione sulla porta 4503 dell&#39;host locale.
 
-Per configurare la replica dei contenuti per un’ulteriore istanza di Publish, crea e configura un nuovo agente di replica:
+Per configurare la replica dei contenuti per un’ulteriore istanza Publish, crea e configura un nuovo agente di replica:
 
 1. Apri la scheda **Strumenti** in AEM.
 1. Seleziona **Replica**, quindi **Agenti per creazione** nel pannello a sinistra.
@@ -432,8 +432,7 @@ Per configurare la replica dei contenuti per un’ulteriore istanza di Publish, 
 
    * Nella scheda **Trasporto**:
 
-      * Immetti l’URI richiesto per la nuova istanza di Publish; ad esempio,
-
+      * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
         `https://localhost:4504/bin/receive`.
 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
@@ -443,16 +442,16 @@ Per configurare la replica dei contenuti per un’ulteriore istanza di Publish, 
 
 Puoi quindi verificare l’operazione aggiornando e pubblicando una pagina nell’ambiente di authoring.
 
-Gli aggiornamenti vengono visualizzati in tutte le istanze di Publish configurate come sopra.
+Gli aggiornamenti vengono visualizzati in tutte le istanze Publish configurate come sopra.
 
-In caso di problemi, puoi controllare i registri nell’istanza Autore. A seconda del livello di dettaglio richiesto, è inoltre possibile impostare **Log Level** su `Debug` utilizzando la finestra di dialogo **Agent Settings** come indicato sopra.
+In caso di problemi, puoi controllare i registri nell’istanza Autore. A seconda del livello di dettaglio richiesto, è inoltre possibile impostare il **livello di registro** su `Debug` utilizzando la finestra di dialogo **Impostazioni agente** come indicato sopra.
 
 >[!NOTE]
 >
->Questo può essere combinato con l&#39;uso dell&#39;[ID utente agente](#agentuserid) per selezionare contenuti diversi da replicare nei singoli ambienti Publish. Per ogni ambiente Publish:
+>Questo può essere combinato con l&#39;uso dell&#39;[ID utente agente](#agentuserid) per selezionare contenuti diversi da replicare nei singoli ambienti di pubblicazione. Per ogni ambiente di pubblicazione:
 >
->1. Configurare un agente di replica per la replica in tale ambiente Publish.
->1. Configurare un account utente con i diritti di accesso necessari per leggere il contenuto replicato in tale ambiente Publish specifico.
+>1. Configura un agente di replica per la replica nell’ambiente di pubblicazione.
+>1. Configura un account utente con i diritti di accesso necessari per leggere il contenuto replicato in tale ambiente di pubblicazione specifico.
 >1. Assegnare l&#39;account utente come **ID utente agente** per l&#39;agente di replica.
 >
 
@@ -462,7 +461,7 @@ Gli agenti predefiniti sono inclusi nell&#39;installazione. Tuttavia, è ancora 
 
 1. Apri la scheda **Strumenti** in AEM.
 1. Fare clic su **Distribuzione**.
-1. Selezionare **Replica** e quindi **Agenti in Publish**.
+1. Selezionare **Replica** e quindi **Agenti nella pubblicazione**.
 1. Fai doppio clic sull&#39;elemento **Svuotamento del Dispatcher** per aprire la panoramica.
 1. Fare clic su **Modifica**. Verrà visualizzata la finestra di dialogo **Impostazioni agente**:
 
@@ -476,23 +475,22 @@ Gli agenti predefiniti sono inclusi nell&#39;installazione. Tuttavia, è ancora 
 
    * Nella scheda **Trasporto**:
 
-      * Immetti l’URI richiesto per la nuova istanza di Publish; ad esempio,
-
+      * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
       * Se necessario, puoi configurare altri parametri.
 
-   Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. È possibile utilizzare l&#39;URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
+   Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
 
    >[!NOTE]
    >
    >Se hai installato AEM in un contesto diverso da quello predefinito consigliato, configura le [intestazioni HTTP](#extended) nella scheda **Extended**.
 
 1. Fai clic su **OK**.
-1. Torna alla scheda **Strumenti**, da qui puoi **Attivare** l&#39;agente **Dispatcher Flush** (**Agenti in Publish**).
+1. Torna alla scheda **Strumenti**, da qui puoi **Attivare** l&#39;agente **Svuotamento del Dispatcher** (**Agenti alla pubblicazione**).
 
-L&#39;agente di replica **Dispatcher Flush** non è attivo nell&#39;istanza di authoring. È possibile accedere alla stessa pagina nell&#39;ambiente Publish utilizzando l&#39;URI equivalente, ad esempio `https://localhost:4503/etc/replication/agents.publish/flush.html`.
+L&#39;agente di replica **Dispatcher Flush** non è attivo nell&#39;istanza di authoring. È possibile accedere alla stessa pagina nell&#39;ambiente di pubblicazione utilizzando l&#39;URI equivalente, ad esempio `https://localhost:4503/etc/replication/agents.publish/flush.html`.
 
 ### Controllo dell’accesso agli agenti di replica {#controlling-access-to-replication-agents}
 
@@ -508,7 +506,7 @@ L&#39;accesso alle pagine utilizzate per configurare gli agenti di replica può 
 >
 >La creazione di agenti di replica è supportata solo nel percorso dell&#39;archivio `/etc/replication`. Questo è necessario per gestire correttamente gli ACL associati. La creazione di un agente di replica in un&#39;altra posizione della struttura potrebbe comportare l&#39;accesso non autorizzato.
 
-Vari parametri degli agenti di replica possono essere configurati utilizzando CRXDE Lite.
+È possibile configurare vari parametri degli agenti di replica utilizzando CRXDE Lite.
 
 Se si passa a `/etc/replication`, è possibile visualizzare i tre nodi seguenti:
 
@@ -516,7 +514,7 @@ Se si passa a `/etc/replication`, è possibile visualizzare i tre nodi seguenti:
 * `agents.publish`
 * `treeactivation`
 
-I due `agents` contengono informazioni di configurazione sull&#39;ambiente appropriato e sono attivi solo quando tale ambiente è in esecuzione. `agents.publish`, ad esempio, viene utilizzato solo nell&#39;ambiente Publish. La schermata seguente mostra l’agente Publish nell’ambiente di authoring, incluso in WCM per AEM:
+I due `agents` contengono informazioni di configurazione sull&#39;ambiente appropriato e sono attivi solo quando tale ambiente è in esecuzione. Ad esempio, `agents.publish` è utilizzato solo nell&#39;ambiente di pubblicazione. La schermata seguente mostra l’agente di pubblicazione nell’ambiente di authoring, incluso in AEM WCM:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -548,7 +546,7 @@ Per monitorare un agente di replica:
 
    >[!CAUTION]
    >
-   >Non utilizzare il collegamento &quot;Prova connessione&quot; per la cartella Posta in uscita di replica inversa in un&#39;istanza di Publish.
+   >Non utilizzare il collegamento &quot;Prova connessione&quot; per la cartella Posta in uscita di replica inversa in un&#39;istanza Publish.
    >
    >
    >Se viene eseguito un test di replica per una coda Posta in uscita, tutti gli elementi precedenti alla replica del test vengono rielaborati con ogni replica inversa.
@@ -561,18 +559,18 @@ Per monitorare un agente di replica:
 
 ## Replica in batch {#batch-replication}
 
-La replica batch non replica singole pagine o risorse, ma attende l’attivazione della prima soglia delle due, in base al tempo o alle dimensioni.
+La replica batch non replica singole pagine o risorse. Attende piuttosto che venga attivata la prima soglia dei due (basata sul tempo o sulla dimensione).
 
 Tutti gli elementi di replica vengono quindi inseriti in un pacchetto, che viene quindi replicato come un singolo file nel server di pubblicazione.
 
-Il server di pubblicazione decomprime tutti gli elementi, li salva e riporta all&#39;autore.
+Il server di pubblicazione decomprime tutti gli elementi, li salva e restituisce all&#39;autore tutti gli elementi.
 
 ### Configurazione della replica in batch {#configuring-batch-replication}
 
 1. Vai a `http://serveraddress:serverport/siteadmin`
 1. Premi l&#39;icona **[!UICONTROL Strumenti]** nella parte superiore dello schermo
 1. Dalla barra di navigazione a sinistra, vai a **[!UICONTROL Replica - Agenti in Author]** e fai doppio clic su **[!UICONTROL Agente predefinito]**.
-   * È inoltre possibile raggiungere l&#39;agente di replica predefinito di Publish andando direttamente in `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
+   * È inoltre possibile raggiungere l&#39;agente di replica di pubblicazione predefinito accedendo direttamente a `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
 1. Premere il pulsante **[!UICONTROL Modifica]** sopra la coda di replica.
 1. Nella finestra seguente, passare alla scheda **[!UICONTROL Batch]**:
    ![batchreplication](assets/batchreplication.png)

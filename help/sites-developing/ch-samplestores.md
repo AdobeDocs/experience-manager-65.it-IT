@@ -1,5 +1,5 @@
 ---
-title: Candidati archivio ContextHub di esempio
+title: Candidati dell’archivio di ContextHub di esempio
 description: ContextHub fornisce diversi esempi di store candidati che puoi utilizzare nelle tue soluzioni
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: ab939c3928068a0836674db6207d9774d6033e79
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 1%
+source-wordcount: '475'
+ht-degree: 2%
 
 ---
 
-# Candidati archivio ContextHub di esempio{#sample-contexthub-store-candidates}
+# Candidati dell’archivio di ContextHub di esempio{#sample-contexthub-store-candidates}
 
 ContextHub fornisce diversi esempi di store candidati che puoi utilizzare nelle soluzioni. Per ciascun campione vengono fornite le seguenti informazioni:
 
@@ -110,7 +110,7 @@ L’archivio utilizza una struttura dati simile a quella del seguente esempio:
 
 >[!NOTE]
 >
->Un criterio di sicurezza introdotto in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione vengano effettuate tramite una connessione protetta. Pertanto, l’AEM forza l’utilizzo di https per le chiamate API di geolocalizzazione se l’AEM è in esecuzione anche su https. Altrimenti http viene utilizzato per rispettare il criterio della stessa origine. Consulta [questo post di blog di Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) per ulteriori dettagli sulla modifica in Chrome.
+>Un criterio di sicurezza introdotto in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione vengano effettuate tramite una connessione protetta. Pertanto, AEM forza l’utilizzo di https per le chiamate API di geolocalizzazione se AEM è in esecuzione anche su https. Altrimenti http viene utilizzato per rispettare il criterio della stessa origine. Consulta [questo post di blog di Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) per ulteriori dettagli sulla modifica in Chrome.
 
 ## contexthub.surferinfo Sample Store Candidate {#contexthub-surferinfo-sample-store-candidate}
 
@@ -351,3 +351,4 @@ Gli archivi che utilizzano questo candidato hanno una struttura dati simile a qu
    "authorizableId":"anonymous"
 }
 ```
+

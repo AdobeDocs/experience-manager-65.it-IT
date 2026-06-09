@@ -1,6 +1,6 @@
 ---
 title: Configurazione dei moduli di ricerca
-description: Scopri come utilizzare Search Forms per personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili nelle console e nei pannelli AEM dell’ambiente di authoring.
+description: Scopri come utilizzare Search Forms per personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili nelle console e nei pannelli di AEM dell’ambiente di authoring.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -9,9 +9,9 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2079'
 ht-degree: 7%
 
 ---
@@ -41,7 +41,7 @@ Le configurazioni predefinite disponibili sono:
 
 * **Editor pagina (ricerca documenti):**
 
-  Questa configurazione definisce le opzioni disponibili durante la ricerca di un documento nel browser Risorse (quando si modifica una pagina).
+  Questa configurazione definisce le opzioni disponibili durante la ricerca di documenti nel browser Risorse (durante la modifica di una pagina).
 
 * **Editor pagina (ricerca immagini):**
 
@@ -63,7 +63,7 @@ Le configurazioni predefinite disponibili sono:
 
   Questa configurazione definisce le opzioni disponibili durante la ricerca di prodotti nel browser Risorse (durante la modifica di una pagina).
 
-* **Editor pagina (ricerca di Dynamic Media Classic [precedentemente Scene7])**:
+* **Editor pagina (ricerca di Dynamic Media Classic [già Scene7])**:
 
   Questa configurazione definisce le opzioni disponibili durante la ricerca di risorse Scene7 nel browser Risorse (durante la modifica di una pagina).
 
@@ -361,7 +361,7 @@ A seconda del predicato, è disponibile una selezione di impostazioni per la con
 
   Proprietà su cui eseguire la ricerca. Utilizza un percorso relativo e i caratteri jolly `*/*/*` specificano la profondità della proprietà relativa al nodo `jcr:content` (ogni asterisco rappresenta un livello di nodo).
 
-  Se si desidera eseguire ricerche solo in un nodo figlio di primo livello della risorsa con la proprietà `x` nel nodo `jcr:content`, utilizzare `*/jcr:content/x`
+  Se si desidera eseguire una ricerca solo in un nodo figlio di primo livello della risorsa con la proprietà `x` nel nodo `jcr:content`, utilizzare `*/jcr:content/x`
 
 * **Profondità proprietà**
 
@@ -391,10 +391,10 @@ Effettivamente come il **Percorso opzioni**, solo questo è nel campo predicato 
 * **Selezione singola**
 Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle di controllo che consentono una sola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
 
-* **Nomi proprietà Publish e Live Copy**
+* **Nomi proprietà pubblicazione e Live Copy**
 Le etichette per le caselle di controllo di pubblicazione e Live Copy per il predicato specifico di Sites.
 
-* Il &ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, viene visualizzato un messaggio di errore.
+* L&#39;&amp;ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, viene visualizzato un messaggio di errore.
 
 ## Configurazione del Forms di ricerca {#configuring-your-search-forms}
 
@@ -482,7 +482,7 @@ L’eliminazione di una configurazione personalizzata viene eseguita dalla conso
 
 I predicati di opzione (Opzioni, Proprietà opzioni) consentono di configurare un elemento da cercare. Vengono utilizzati per cercare elementi direttamente sotto la pagina, ad esempio una proprietà sul nodo della pagina.
 
-L’esempio seguente (per eseguire ricerche in base al modello utilizzato per creare una pagina), illustra i passaggi necessari:
+L’esempio seguente (per eseguire ricerche in base al modello utilizzato per creare una pagina) illustra i passaggi necessari:
 
 1. Crea il nodo che definisce la proprietà su cui eseguire la ricerca.
 
@@ -548,12 +548,12 @@ Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire a
    <td>Autorizzazioni di lettura e scrittura sul nodo <code>/apps </code>.</td>
   </tr>
   <tr>
-   <td>Elimina</td>
+   <td>Eliminare</td>
    <td>Autorizzazioni di lettura, scrittura ed eliminazione sul nodo <code>/apps</code></td>
   </tr>
   <tr>
    <td>Anteprima</td>
-   <td>Autorizzazioni di lettura, scrittura ed eliminazione sul nodo <code>/var/dam/content</code>.<br /> autorizzazioni di lettura e scrittura sul nodo <code>/apps</code>.</td>
+   <td>Autorizzazioni di lettura, scrittura ed eliminazione sul nodo <code>/var/dam/content</code>.<br /> Autorizzazioni di lettura e scrittura sul nodo <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>

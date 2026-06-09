@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1173'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Il reporting delle risorse consente di valutare l&#39;utilità della distribuzione di [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets] puoi generare diversi rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, sul modo in cui gli utenti interagiscono con le risorse e sulle risorse scaricate e condivise.
@@ -164,8 +164,8 @@ Per rimuovere i rapporti che non sono più necessari, configura il servizio Rimo
 
 ## Informazioni, suggerimenti e limitazioni per la risoluzione dei problemi {#best-practices-and-limitations}
 
-* Se alcuni rapporti o numeri nei rapporti non sono disponibili o come previsto, assicurati che il servizio Registrazione eventi DAM CQ  di giorno sia abilitato.
+* Se alcuni rapporti o numeri nei rapporti non sono disponibili o come previsto, assicurati che il servizio [!UICONTROL Day CQ DAM Event Recorder] sia abilitato.
 
 * Rimuovi i rapporti che non sono più necessari. Utilizza le opzioni di configurazione nel servizio Rimozione report DAM per configurare i criteri per l’eliminazione dei report.
 
-* Se il Report sull&#39;utilizzo del disco non viene generato e si sta utilizzando [!DNL Dynamic Media], verificare che tutte le risorse procedano correttamente. Per risolvere il problema, rielabora le risorse e quindi genera di nuovo il rapporto.
+* Se il Report sull&#39;utilizzo del disco non viene generato e si sta utilizzando [!DNL Dynamic Media], verificare che tutte le risorse siano elaborate correttamente. Per risolvere il problema, rielabora le risorse e quindi genera di nuovo il rapporto.

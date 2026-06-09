@@ -5,10 +5,10 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 35042bcda42d01a9f21afc2230556475cb2983d8
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 27%
+source-wordcount: '1373'
+ht-degree: 30%
 
 ---
 
@@ -25,9 +25,9 @@ In qualità di utente, puoi:
 
 ## Requisiti di accesso {#access-requirements}
 
-Progetta una funzione standard di AEM e non richiede alcuna configurazione aggiuntiva.
+I progetti sono una funzione standard di AEM e non richiedono alcuna configurazione aggiuntiva.
 
-Tuttavia, affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano i progetti, ad esempio durante la creazione di progetti, la creazione di attività/flussi di lavoro o la visualizzazione e la gestione del team, tali utenti devono avere accesso in lettura a `/home/users` e `/home/groups`.
+Tuttavia, affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano i progetti, ad esempio durante la creazione di progetti, la creazione di attività/flussi di lavoro o la visualizzazione e la gestione del team, è necessario che tali utenti abbiano accesso in lettura a `/home/users` e `/home/groups`.
 
 Il modo più semplice per eseguire questa operazione è concedere al gruppo **utenti-progetti** l&#39;accesso in lettura a `/home/users` e `/home/groups`.
 
@@ -37,7 +37,7 @@ Dalla console Progetti è possibile accedere e gestire i tuoi progetti in AEM.
 
 ![Console Progetti](assets/screen-shot_2019-03-05at125110.png)
 
-La console Progetti è simile alle altre console di AEM e consente di eseguire diverse azioni sui singoli progetti e di regolare la visualizzazione dei progetti.
+La console Progetti è simile alle altre console di AEM. Consente di eseguire più azioni su singoli progetti e di regolare la visualizzazione dei progetti.
 
 ### Attiva/disattiva modalità {#modes}
 
@@ -81,7 +81,7 @@ Fai clic su **Crea** per aggiungere un nuovo progetto.
 
 I progetti sono costituiti da diversi tipi di informazioni che si desidera gestire insieme. Queste informazioni sono rappresentate da **Tiles** diversi.
 
-Al progetto possono essere associate le seguenti tessere.
+È possibile associare i seguenti riquadri al progetto.
 
 * [Risorse](#assets)
 * [Raccolte di risorse](#asset-collections)
@@ -162,7 +162,7 @@ Il riquadro **Pagine di destinazione** consente di richiedere una nuova pagina d
 
 ![Riquadro pagina di destinazione](assets/project-tile-landing.png)
 
-Questo flusso di lavoro è descritto nel documento[Creare un flusso di lavoro per la pagina di destinazione.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+Questo flusso di lavoro è descritto nel documento [Creare un flusso di lavoro per la pagina di destinazione.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### E-mail {#emails}
 
@@ -210,7 +210,7 @@ In base al modello selezionato, all’interno del progetto sono disponibili dive
 I diversi ruoli utente sono definiti nel modello di progetto e vengono utilizzati per due motivi principali:
 
 1. Autorizzazioni: i ruoli utente rientrano in una delle tre categorie elencate: osservatore, editor, proprietario. Ad esempio, un fotografo o un copywriter avrà gli stessi privilegi di un editor. Le autorizzazioni determinano cosa può fare un utente in relazione al contenuto di un progetto.
-1. Flussi di lavoro: i flussi di lavoro determinano chi sono le attività assegnate in un progetto. Le attività possono essere associate a un ruolo del progetto. Ad esempio, è possibile assegnare un&#39;attività ai fotografi in modo che tutti i membri del gruppo che hanno il ruolo di fotografo ottengano l&#39;attività.
+1. Flussi di lavoro: i flussi di lavoro determinano chi sono le attività assegnate in un progetto. Le attività possono essere associate a un ruolo del progetto. Ad esempio, è possibile assegnare un&#39;attività ai fotografi in modo che tutti i membri del gruppo che hanno il ruolo di fotografo abbiano l&#39;attività assegnata loro.
 
 Tutti i progetti supportano i seguenti ruoli predefiniti per consentire l’amministrazione delle autorizzazioni di sicurezza e controllo.
 
@@ -228,7 +228,7 @@ Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al p
 
 Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**.
 
-Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [&#x200B; durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
+Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
 
 ## Risorse aggiuntive {#additional-resources}
 

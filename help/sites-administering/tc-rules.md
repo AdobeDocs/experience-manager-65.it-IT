@@ -6,9 +6,9 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: ffa4c2522bfe98d99693e3c17666b728377337f9
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1154'
 ht-degree: 62%
 
 ---
@@ -29,14 +29,14 @@ Il file si applica a tutti i progetti di traduzione.
 
 >[!NOTE]
 >
->Dopo un aggiornamento alla versione 6.4, si consiglia di spostare il file da /etc. Per ulteriori dettagli, vedere [Ristrutturazione dell&#39;archivio comune in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
+>Dopo un aggiornamento alla versione 6.4, si consiglia di spostare il file da /etc. Per ulteriori dettagli, vedi [Ristrutturazione dell&#39;archivio comune in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
 
 Le regole includono le seguenti informazioni:
 
 * Percorso del nodo a cui si applica la regola. La regola si applica anche ai discendenti del nodo.
 * Nomi delle proprietà del nodo che contengono il contenuto da tradurre. La proprietà può essere specifica per un tipo di risorsa specifico o per tutti i tipi di risorsa.
 
-Ad esempio, puoi creare una regola che traduca il contenuto aggiunto dagli autori a tutti i componenti Testo di base AEM sulle tue pagine. La regola può identificare il nodo `/content` e la proprietà `text` per il componente `foundation/components/text`.
+Ad esempio, puoi creare una regola che traduca il contenuto aggiunto dagli autori a tutti i componenti Testo di AEM Foundation nelle tue pagine. La regola può identificare il nodo `/content` e la proprietà `text` per il componente `foundation/components/text`.
 
 C’è una [console](#translation-rules-ui) aggiunta per la configurazione delle regole di traduzione. Le definizioni nell’interfaccia utente compileranno il file per tuo conto.
 
@@ -48,7 +48,7 @@ Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Trad
 
 ## Sintassi delle regole per pagine, componenti e risorse {#rule-syntax-for-pages-components-and-assets}
 
-Una regola è un `node` elemento con uno o più elementi secondari `property` e zero o più elementi figlio secondari`node`:
+Una regola è un elemento `node` con uno o più elementi secondari `property` e zero o più elementi secondari `node`:
 
 ```xml
 <node path="content path">
@@ -65,7 +65,7 @@ Ognuno di questi elementi `node` presentano le seguenti caratteristiche:
 * Gli elementi secondari `property` identificano le proprietà del nodo da tradurre per tutti i tipi di risorse:
 
    * L’attributo `name` contiene il nome della proprietà.
-   * L’attributo opzionale `translate` è uguale a `false` se la proprietà non è tradotta. Il valore per impostazione predefinita è `true`. Questo attributo è utile quando si ignorano le regole precedenti.
+   * L’attributo opzionale `translate` è uguale a `false` se la proprietà non è tradotta. Il valore predefinito è `true`. Questo attributo è utile quando si ignorano le regole precedenti.
 
 * Gli elementi secondari `node` identificano le proprietà del nodo da tradurre per tipi di risorsa specifici:
 
@@ -80,7 +80,7 @@ La regola di esempio seguente causa il contenuto di tutte le proprietà `text` d
 </node>
 ```
 
-L&#39;esempio seguente traduce il contenuto di tutte le proprietà `text` e traduce anche altre proprietà del componente immagine di base. Se altri componenti hanno proprietà con lo stesso nome, la regola non si applica a essi.
+L&#39;esempio seguente traduce sia il contenuto di tutte le proprietà `text` che altre proprietà del componente immagine di base. Se altri componenti hanno proprietà con lo stesso nome, la regola non si applica a essi.
 
 ```xml
 <node path="/content">
@@ -170,7 +170,7 @@ Poi devi selezionare il contesto e fare clic su **Modifica**. Viene aperto l’E
 
 **isDeep** Questo attributo è applicabile ai filtri dei nodi ed è true per impostazione predefinita. Controlla se il nodo (o i suoi predecessori) contiene tale proprietà con il valore della proprietà specificato nel filtro. Se false, controlla solo il nodo corrente.
 
-Ad esempio, i nodi secondari vengono aggiunti a un processo di traduzione anche quando la proprietà `draftOnly` del nodo principale è impostata su true per contrassegnare il contenuto in formato bozza. Qui `isDeep` entra in gioco e controlla se i nodi principali hanno proprietà `draftOnly` come true ed esclude tali nodi secondari.
+Ad esempio, i nodi secondari vengono aggiunti a un processo di traduzione anche quando il nodo principale ha la proprietà `draftOnly` impostata su true per contrassegnare il contenuto in formato bozza. `isDeep` verifica se i nodi padre hanno la proprietà `draftOnly` come true ed esclude tali nodi figlio.
 
 Nell&#39;editor, è possibile selezionare/deselezionare **Deep** nella scheda **Filters**.
 
@@ -184,7 +184,7 @@ Di seguito è riportato un esempio dell&#39;xml risultante quando **Deep** è de
 </filter>
 ```
 
-**inherit** applicabile alle proprietà. Per impostazione predefinita, ogni proprietà viene ereditata, ma se desideri che alcune non vengano ereditate dall’elemento secondario, puoi contrassegnarle come false in modo che venga applicata solo a quel nodo specifico.
+**inherit** Applicabile alle proprietà. Per impostazione predefinita, ogni proprietà viene ereditata, ma se desideri che non venga ereditata dall’elemento secondario, puoi contrassegnarla come false in modo che venga applicata solo a quel nodo specifico.
 
 Nell’interfaccia utente, puoi selezionare/deselezionare **Eredita** nella scheda **Proprietà**.
 
@@ -194,7 +194,7 @@ Nell’interfaccia utente, puoi selezionare/deselezionare **Eredita** nella sche
 
 Nell’interfaccia utente, puoi selezionare/deselezionare **Traduci** nella scheda **Proprietà**.
 
-**updateDestinationLanguage** Questo attributo viene utilizzato per le proprietà che non contengono testo ma codici di lingua, ad esempio jcr:language. L&#39;utente non traduce il testo, ma la lingua locale dal sorgente alla destinazione. Tali proprietà non vengono inviate per la traduzione.
+**updateDestinationLanguage** Questo attributo viene utilizzato per le proprietà che non contengono testo ma codici di lingua come `jcr:language`. L&#39;utente non traduce il testo, ma la lingua dalla sorgente alla destinazione. Tali proprietà non vengono inviate per la traduzione.
 
 Nell&#39;interfaccia utente, puoi selezionare/deselezionare **Traduci** nella scheda **Proprietà**, ma per le proprietà specifiche che hanno come valore i codici lingua.
 
@@ -213,7 +213,7 @@ Il risultato nel file xml sarà simile al seguente:
 
 Il file translation_rules.xml installato con AEM contiene un set predefinito di regole di traduzione. Puoi modificare il file per supportare i requisiti dei tuoi progetti di traduzione. Ad esempio, puoi aggiungere regole per tradurre il contenuto dei componenti personalizzati.
 
-Se modifichi il file translation_rules.xml, conserva una copia di backup in un pacchetto di contenuti. L’installazione dei service pack dell’AEM o la reinstallazione di alcuni pacchetti AEM può sostituire l’attuale file translation_rules.xml con l’originale. Per ripristinare le regole in questa situazione, puoi installare il pacchetto che contiene la copia di backup.
+Se modifichi il file translation_rules.xml, conserva una copia di backup in un pacchetto di contenuti. L’installazione dei service pack di AEM o la reinstallazione di alcuni pacchetti AEM può sostituire l’attuale file translation_rules.xml con l’originale. Per ripristinare le regole in questa situazione, puoi installare il pacchetto che contiene la copia di backup.
 
 >[!NOTE]
 >
