@@ -10,10 +10,10 @@ role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f4fc3b788d4128135ff77ebb87f1369059b1d2ec
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 0%
+source-wordcount: '618'
+ht-degree: 1%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA e così via.
+>Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati come RGPD, CCPA e così via.
 
 AEM Communities espone le API pronte all’uso per gestire i profili utente e i contenuti generati dagli utenti (UGC, User Generated Content) in blocco. Una volta attivato, il servizio **UserUgcManagement** consente agli utenti con privilegi (amministratori e moderatori della community) di disabilitare i profili utente ed eliminare in blocco o esportare in blocco UGC per utenti specifici. Queste API consentono inoltre ai titolari del trattamento e ai responsabili del trattamento dei dati dei clienti di conformarsi alle normative generali sulla protezione dei dati (RGPD) dell’Unione Europea e ad altri mandati sulla privacy ispirati al RGPD.
 
-Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center.](https://www.adobe.com/privacy/general-data-protection-regulation.html)
 
 >[!NOTE]
 >
->Se hai configurato [Adobe Analytics nel sito AEM Communities](/help/communities/analytics.md), i dati utente acquisiti vengono inviati al server Adobe Analytics. Adobe Analytics fornisce API che ti consentono di accedere, esportare ed eliminare dati utente in conformità con il RGPD. Per ulteriori informazioni, vedere [Invia richieste di accesso ed eliminazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html?lang=it).
+>Se hai configurato [Adobe Analytics nel sito AEM Communities](/help/communities/analytics.md), i dati utente acquisiti vengono inviati ai server Adobe Analytics. Adobe Analytics fornisce API che ti consentono di accedere, esportare ed eliminare dati utente in conformità con il RGPD. Per ulteriori informazioni, vedere [Invia richieste di accesso ed eliminazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html?lang=it).
 
 Per utilizzare queste API, è necessario abilitare l&#39;endpoint `/services/social/ugcmanagement` attivando il servizio UserUgcManagement. Per attivare questo servizio, installa il [servlet di esempio](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponibile in [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Quindi, premi l’endpoint sull’istanza di pubblicazione del sito community con i parametri appropriati utilizzando una richiesta http simile alla seguente:
 
@@ -54,18 +54,18 @@ Ad esempio, per esportare l&#39;UGC di un utente di nome Weston McCall, che util
 
 * **utente**: ID autorizzabile dell&#39;utente.
 
-Ad esempio, per eliminare l’UGC di un utente con ID autorizzabile weston.mccall@dodgit.com tramite richiesta http-POST, utilizza i seguenti parametri:
+Ad esempio, per eliminare l&#39;UGC di un utente il cui ID autorizzabile è `weston.mccall@dodgit.com` tramite richiesta http-POST, utilizzare i parametri seguenti:
 
 * utente = `weston.mccall@dodgit.com`
 * operazione = `deleteUgc`
 
 ### Elimina UGC da Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Per eliminare i dati utente da Adobe Analytics, segui il [flusso di lavoro di analisi RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=it); in quanto l&#39;API non elimina i dati utente da Adobe Analytics.
+Per eliminare i dati utente da Adobe Analytics, segui il flusso di lavoro [Analisi RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=it), in quanto l&#39;API non elimina i dati utente da Adobe Analytics.
 
 Per le mappature delle variabili di Adobe Analytics utilizzate da AEM Communities, fai riferimento alla seguente immagine:
 
-![Mappatura variabile delle community AEM per Adobe Analytics](assets/analytics-communities-mapping.png)
+![Mappatura delle variabili delle community AEM per Adobe Analytics](assets/analytics-communities-mapping.png)
 
 ## Disattivare un account utente {#disable-a-user-account}
 
@@ -77,11 +77,11 @@ Per le mappature delle variabili di Adobe Analytics utilizzate da AEM Communitie
 >
 >La disabilitazione di un utente comporta l’eliminazione di tutto il contenuto generato dall’utente che si trova sul server.
 
-Per eliminare ad esempio il profilo di un utente con ID autorizzabile `weston.mccall@dodgit.com` tramite richiesta http-POST, utilizzare i parametri seguenti:
+Ad esempio, per eliminare il profilo di un utente il cui ID autorizzabile è `weston.mccall@dodgit.com` tramite richiesta http-POST, utilizzare i parametri seguenti:
 
 * utente = `weston.mccall@dodgit.com`
 * operazione = `deleteUser`
 
 >[!NOTE]
 >
->L’API deleteUserAccount() disabilita solo un profilo utente nel sistema e rimuove l’UGC. Tuttavia, per eliminare un profilo utente dal sistema, passare a **CRXDE Liti**: [https://&lt;server>/crx/de](https://localhost:4502/crx/de), individuare il nodo utente ed eliminarlo.
+>L&#39;API `deleteUserAccount()` disabilita solo un profilo utente nel sistema e rimuove l&#39;UGC. Tuttavia, per eliminare un profilo utente dal sistema, passare a **CRXDE Lite** in `https://<server>:<port>/crx/de`, individuare il nodo utente ed eliminarlo.

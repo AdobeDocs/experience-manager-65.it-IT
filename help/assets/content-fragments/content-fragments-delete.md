@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a77b577341050316ce60ae809a4912bbbbce974c
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 79%
+source-wordcount: '517'
+ht-degree: 72%
 
 ---
 
@@ -46,7 +46,7 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 
 Dovrai assegnare autorizzazioni specifiche agli utenti che necessitano di modificare/aggiornare un frammento di contenuto, **ma a cui non vuoi consentire di eliminare un intero frammento**, poiché il funzionamento di base dell’Editor frammento di contenuto richiede l’eliminazione di elementi secondari transitori.
 
-Ad esempio, quando si manipolano le varianti, ma anche durante la modifica dei metadati o la gestione dei contenuti associati.
+Ad esempio, quando si manipolano le varianti, quando si modificano i metadati o quando si gestisce il contenuto associato.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Ad esempio, una cartella contenente tutti i frammenti di contenuto, come:
 >
 >È anche possibile impostare le autorizzazioni su `/content/dam`, in quanto tutti i frammenti di contenuto sono memorizzati qui.
 >
->Tuttavia, questa azione applica le stesse autorizzazioni di eliminazione anche a *tutti* gli altri tipi di risorse.
+>Tuttavia, questa azione applica le stesse autorizzazioni di eliminazione anche a *tutti* altri tipi di risorse.
 
 I prerequisiti di autorizzazione per consentire a un utente e/o gruppo specifico di modificare/aggiornare un frammento di contenuto sono:
 
@@ -74,7 +74,7 @@ I prerequisiti di autorizzazione per consentire a un utente e/o gruppo specifico
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Per il `jcr:content` nodo di tutti i frammenti di contenuto:
+* Per il nodo `jcr:content` di tutti i frammenti di contenuto:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
 
@@ -82,9 +82,9 @@ I prerequisiti di autorizzazione per consentire a un utente e/o gruppo specifico
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
-Questi privilegi `remove` devono essere [amministrati utilizzando gli elenchi di controllo di accesso, in CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Questi privilegi di `remove` devono essere [amministrati utilizzando gli elenchi di controllo di accesso, in CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-È inoltre possibile amministrare i privilegi `add` e `modify` in CRXDE Lite o utilizzando la console Gestione utente.
+È inoltre possibile amministrare i privilegi `add` e `modify` in CRXDE Lite o tramite la console Gestione utente.
 
 Ad esempio, la definizione dei privilegi `remove` per un gruppo `content-authors-no-delete`:
 

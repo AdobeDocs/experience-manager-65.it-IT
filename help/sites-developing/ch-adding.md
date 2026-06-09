@@ -1,18 +1,18 @@
 ---
-title: Aggiunta di ContextHub alle pagine e accesso agli store
+title: Aggiunta di ContextHub alle pagine e accesso agli archivi
 description: Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 2b39796a6ede351258adaa28e6a3f1f54f83ec92
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '924'
+ht-degree: 1%
 
 ---
 
-# Aggiunta di ContextHub alle pagine e accesso agli store {#adding-contexthub-to-pages-and-accessing-stores}
+# Aggiunta di ContextHub alle pagine e accesso agli archivi {#adding-contexthub-to-pages-and-accessing-stores}
 
 Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub.
 
@@ -43,13 +43,13 @@ Tutti i tipi di archivio sono estensioni della classe [`ContextHub.Store.Core`](
 
 Gli archivi Context Hub utilizzano una delle seguenti modalità di persistenza:
 
-* **Locale:** utilizza HTML5 localStorage per salvare i dati in modo permanente. L’archiviazione locale viene mantenuta nel browser per tutte le sessioni.
-* **Sessione:** utilizza HTML5 sessionStorage per salvare i dati in modo permanente. L’archiviazione della sessione viene mantenuta per tutta la durata della sessione del browser ed è disponibile per tutte le finestre del browser.
+* **Locale:** utilizza LocalStorage di HTML5 per salvare i dati in modo permanente. L’archiviazione locale viene mantenuta nel browser per tutte le sessioni.
+* **Sessione:** utilizza HTML5 sessionStorage per rendere persistenti i dati. L’archiviazione della sessione viene mantenuta per tutta la durata della sessione del browser ed è disponibile per tutte le finestre del browser.
 * **Cookie:** utilizza il supporto nativo dei cookie del browser per l&#39;archiviazione dei dati. I dati dei cookie vengono inviati al e dal server nelle richieste HTTP.
 * **Window.name:** Utilizza la proprietà window.name per rendere persistenti i dati.
 * **Memoria:** utilizza un oggetto JavaScript per salvare i dati in modo permanente.
 
-Per impostazione predefinita, Context Hub utilizza la modalità di persistenza locale. Se il browser non supporta o consente HTML5 localStorage, viene utilizzata la persistenza della sessione. Se il browser non supporta o consente HTML5 sessionStorage, viene utilizzata la persistenza Window.name.
+Per impostazione predefinita, Context Hub utilizza la modalità di persistenza locale. Se il browser non supporta o consente l&#39;archiviazione locale di HTML5, viene utilizzata la persistenza della sessione. Se il browser non supporta o consente HTML5 sessionStorage, viene utilizzata la persistenza Window.name.
 
 ### Dati store {#store-data}
 
@@ -110,7 +110,7 @@ Tieni presente che i candidati all’archivio personalizzato possono definire fu
 
 >[!NOTE]
 >
->ContextHub non è a conoscenza, per impostazione predefinita, dell’accesso attualmente utilizzato sui server di pubblicazione e tali utenti sono considerati da ContextHub come &quot;Anonimi&quot;.
+>ContextHub per impostazione predefinita non è a conoscenza dell’utente attualmente connesso sui server di pubblicazione e tali utenti sono considerati &quot;Anonimi&quot;.
 >
 >Puoi rendere ContextHub consapevole degli utenti connessi caricando l’archivio profili. Fai riferimento al [codice di esempio su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
@@ -137,7 +137,7 @@ I seguenti segmenti sono installati con il [sito WKND tutorial.](getting-started
 
 Le regole utilizzate per risolvere questi segmenti sono riepilogate come segue:
 
-* Innanzitutto, viene utilizzato l&#39;archivio [geolocation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) per determinare la latitudine dell&#39;utente.
+* Innanzitutto viene utilizzato l&#39;archivio [geolocation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) per determinare la latitudine dell&#39;utente.
 * Quindi l&#39;elemento dati del mese dell&#39;[archivio surferinfo](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) determina la stagione in cui si trova tale latitudine.
 
 >[!WARNING]

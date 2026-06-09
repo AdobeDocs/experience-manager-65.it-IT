@@ -10,9 +10,9 @@ role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9c0089e1305ffba72d88842a07bf36b6f923834c
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1538'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-Il contenuto della community, noto anche come contenuto generato dall&#39;utente (UGC, User-Generated Content), viene creato quando un membro (visitatore del sito connesso) pubblica contenuti da un sito pubblicato della community tramite l&#39;interazione con uno dei seguenti componenti della community:
+Il contenuto della community, noto anche come contenuto generato dall&#39;utente (UGC, User-Generated Content), viene creato quando un membro (visitatore del sito connesso) pubblica contenuti da un sito della community pubblicato tramite l&#39;interazione con uno dei seguenti componenti della community:
 
 * [Blog](/help/communities/blog-feature.md): i membri pubblicano un articolo o un commento nel blog.
 * [Calendario](/help/communities/calendar.md): i membri pubblicano un evento o un commento del calendario.
@@ -42,7 +42,7 @@ La moderazione dell’UGC è utile per riconoscere i contributi positivi e limit
 
 * [Moderazione nel contesto](in-context.md)
 
-  La moderazione nell&#39;ambiente Publish può essere eseguita da amministratori e moderatori della community direttamente sulla pagina in cui è stato pubblicato il contenuto.
+  La moderazione nell&#39;ambiente di pubblicazione può essere eseguita da amministratori e moderatori della community direttamente sulla pagina in cui è stato pubblicato il contenuto.
 
 ## Azioni di moderazione {#moderation-actions}
 
@@ -159,7 +159,7 @@ Selezionando l’azione Taglia, il contenuto viene copiato negli Appunti. È pos
 
 ![putbackugc](assets/putbackugc.png)
 
-Dall’altra parte, quando il contenuto è presente negli Appunti, accanto a Nuovo Post è visibile un pulsante Incolla con un numero che identifica il numero di post che verranno incollati. Il pulsante Incolla include un’opzione per cancellare gli Appunti invece di incollarli.
+Nell&#39;altra posizione, quando il contenuto è presente negli Appunti, accanto a Nuovo post è visibile un pulsante Incolla con un numero che identifica il numero di post che verranno incollati. Il pulsante Incolla include un’opzione per cancellare gli Appunti invece di incollarli.
 
 ![pasteugc](assets/pasteugc.png)
 
@@ -173,7 +173,7 @@ Un moderatore potrebbe impedire a UGC di rimanere visibile sul sito pubblicato. 
 
 L&#39;azione Chiudi viene eseguita sull&#39;intero thread della conversazione (un argomento forum o il commento iniziale) e include tutti i post o le risposte successivi.
 
-Quando è chiusa, non solo non è possibile fornire ulteriori risposte, ma non è consentita alcuna azione di moderazione.
+Alla chiusura, non sono consentite ulteriori risposte o azioni di moderazione.
 
 Per eseguire qualsiasi operazione, è necessario riaprire l&#39;argomento o il commento.
 
@@ -213,7 +213,7 @@ Tuttavia, per personalizzare o estendere le parole spam predefinite, creare un s
 
 Un post generato dall’utente (per tutti i tipi di contenuto, ad esempio blog, forum e commenti) contenente spam word è contrassegnato con il testo &quot;Questo post è stato classificato come spam&quot; sopra il post.
 
-Il moderatore può visualizzare un post di questo tipo e contrassegnarlo per consentire o negare la visualizzazione sul sito. Le azioni di moderazione su questi post possono essere eseguite nel contesto o tramite l&#39;interfaccia utente per la moderazione in blocco.
+I moderatori possono vedere un post di questo tipo e contrassegnarlo come non visualizzato sul sito. Le azioni di moderazione su questi post possono essere eseguite nel contesto o tramite l&#39;interfaccia utente per la moderazione in blocco.
 
 ![spamdetection](assets/spamdetection.png)
 
@@ -232,11 +232,11 @@ Per abilitare il motore di rilevamento di posta indesiderata, effettua le seguen
 
 ### Sentimento {#sentiment}
 
-La valutazione viene calcolata in base al numero di parole chiave positive e negative ([parole chiave](#configuringwatchwords)) presenti in un post (UGC).
+Il sentiment viene calcolato in base al numero di parole chiave positive e negative ([parole chiave](#configuringwatchwords)) presenti in un post (UGC).
 
 L’analisi del sentiment utilizza un set di regole preconfigurate e calcola il sentiment dell’UGC. Le regole predefinite si trovano in `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
-Il valore generato dalle regole va da 1 (tutte le parole negative, nessuna parola positiva) a 10 (tutte le parole positive, nessuna parola negativa). Il valore 5 è un sentimento neutro ed è l&#39;impostazione predefinita.
+Il valore generato dalle regole va da 1 (tutte le parole negative, nessuna parola positiva) a 10 (tutte le parole positive, nessuna parola negativa). Il valore sentiment 5 è un sentiment neutro ed è quello predefinito.
 
 Le regole definite nel componente /libs sono:
 
@@ -245,25 +245,25 @@ Le regole definite nel componente /libs sono:
 * Regola 3: imposta il valore su 3 se il numero di parole negative è maggiore di quello positivo.
 * Regola 4: imposta il valore su 8 se il numero di parole positive è superiore a quello di parole negative.
 
-Per sovrascrivere o aggiungere regole, creare un set di regole nella directory /apps seguendo la struttura delle regole predefinite. Modifica la configurazione della valutazione in modo da identificare la posizione delle regole.
+Per sovrascrivere o aggiungere regole, creare un set di regole nella directory /apps seguendo la struttura delle regole predefinite. Modifica la configurazione del sentiment in modo da identificare la posizione delle regole.
 
-Una volta analizzato, il sentiment viene memorizzato con l&#39;UGC.
+Una volta analizzato, il sentiment viene conservato con UGC.
 
-Dalla [console di moderazione in blocco](/help/communities/moderation.md), è possibile filtrare e visualizzare i contenuti generati dagli utenti a seconda che siano negativi, neutri o positivi.
+Dalla [console di moderazione in blocco](/help/communities/moderation.md), è possibile filtrare e visualizzare UGC in base al sentiment, che sia negativo, neutro o positivo.
 
 #### Parole di controllo {#watchwords}
 
-AEM Communities fornisce un *analizzatore di parole d&#39;ordine* come passaggio del processo per valutare [sentiment](#sentiment). Il contributo al valore di valutazione fornito dalle parole d&#39;ordine è dovuto a un confronto tra le parole d&#39;ordine negative e positive utilizzate nel contenuto pubblicato e le parole non consentite.
+AEM Communities fornisce un *analizzatore di parole d&#39;ordine* come passaggio del processo per valutare [sentiment](#sentiment). Il contributo al valore sentiment fornito dalle parole d&#39;ordine è dovuto a un confronto tra le parole d&#39;ordine negative e positive utilizzate nel contenuto pubblicato e le parole non consentite.
 
-#### Configura sentiment e parole d&#39;ordine {#configure-sentiment-and-watchwords}
+#### Configura Sentiment e parole d&#39;ordine {#configure-sentiment-and-watchwords}
 
-L’elenco delle parole d’ordine positive e negative può essere personalizzato così come le regole di valutazione.
+L’elenco delle parole d’ordine positive e negative può essere personalizzato come le regole del sentiment.
 
 L&#39;elenco predefinito di parole d&#39;ordine può essere immesso come proprietà di un nodo nell&#39;archivio, in modo simile all&#39;elenco predefinito o sostituendo l&#39;elenco predefinito configurando il servizio OSGi `sentimentprocess.name` con l&#39;elenco di parole.
 
-È inoltre possibile modificare **sentimentprocess.name** per fare riferimento alla posizione di un set personalizzato di regole di valutazione.
+È inoltre possibile modificare **sentimentprocess.name** per fare riferimento alla posizione di un set personalizzato di regole di sentiment.
 
-Per configurare il sentiment e le parole d’ordine:
+Per configurare il sentiment e le parole d&#39;ordine:
 
 * Accedi all’istanza di authoring come amministratore.
 * Apri [Console Web](https://localhost:4502/system/console/configMgr).
@@ -274,19 +274,19 @@ Per configurare il sentiment e le parole d’ordine:
 
 * **Parole di controllo positive**
 
-  Elenco separato da virgole di parole che contribuiscono a un&#39;opinione positiva che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
+  Elenco separato da virgole di parole che contribuiscono a un sentiment positivo che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
 
 * **Parole di controllo negative**
 
-  Elenco separato da virgole di parole che contribuiscono a un&#39;opinione negativa che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
+  Elenco separato da virgole di parole che contribuiscono a un sentiment negativo che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
 
 * **Percorso esplicito al nodo parole d&#39;ordine**
 
   Percorso dell&#39;archivio di un nodo contenente le proprietà predefinite `positive` e `negative` che specificano le parole d&#39;ordine predefinite. Il valore predefinito è `/libs/settings/community/watchwords/default`.
 
-* **Regole valutazione**
+* **Regole di Sentiment**
 
-  Posizione dell’archivio delle regole per il calcolo della valutazione in base a parole d’ordine positive e negative. Il valore predefinito è `/libs/cq/workflow/components/workflow/social/sentiments/rules` (tuttavia, non è più coinvolto alcun flusso di lavoro).
+  Posizione dell’archivio delle regole per il calcolo del sentiment in base a parole d’ordine positive e negative. Il valore predefinito è `/libs/cq/workflow/components/workflow/social/sentiments/rules` (tuttavia, non è più coinvolto alcun flusso di lavoro).
 
 Di seguito è riportato un esempio di voce personalizzata per le parole d&#39;ordine predefinite quando `Explicit Path to Watchwords Node` è impostato su `/libs/settings/community/watchwords/default`.
 

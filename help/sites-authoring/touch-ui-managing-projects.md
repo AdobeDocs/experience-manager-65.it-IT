@@ -9,10 +9,10 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 2b2c54f2a59c73747fd9cdd982aa8b059e554c23
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 18%
+source-wordcount: '971'
+ht-degree: 20%
 
 ---
 
@@ -27,9 +27,9 @@ Utilizzando la console, puoi creare un progetto, associare risorse al progetto e
 
 ## Requisiti di accesso {#access-requirements}
 
-Progetta una funzione standard di AEM e non richiede alcuna configurazione aggiuntiva.
+I progetti sono una funzione standard di AEM e non richiedono alcuna configurazione aggiuntiva.
 
-Tuttavia, affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano i progetti, ad esempio durante la creazione di progetti, la creazione di attività/flussi di lavoro o la visualizzazione e la gestione del team, tali utenti devono avere accesso in lettura a `/home/users` e `/home/groups`.
+Tuttavia, affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano i progetti, ad esempio durante la creazione di progetti, la creazione di attività/flussi di lavoro o la visualizzazione e la gestione del team, è necessario che tali utenti abbiano accesso in lettura a `/home/users` e `/home/groups`.
 
 Il modo più semplice per eseguire questa operazione è concedere al gruppo **utenti-progetti** l&#39;accesso in lettura a `/home/users` e `/home/groups`.
 
@@ -38,11 +38,11 @@ Il modo più semplice per eseguire questa operazione è concedere al gruppo **ut
 Segui questi passaggi per creare un progetto.
 
 1. Nella console **Progetti**, fai clic su **Crea** per aprire la procedura guidata **Crea progetto**.
-1. Seleziona un modello e fai clic su **Avanti**. Ulteriori informazioni sui modelli di progetto standard [sono disponibili qui.](/help/sites-authoring/projects.md#project-templates)
+1. Seleziona un modello e fai clic su **Avanti**. Ulteriori informazioni sui modelli di progetto standard [sono disponibili qui.](/help/sites-authoring/projects.md#project-templates)
 
    ![Creazione guidata progetto](assets/create-project-wizard.png)
 
-1. Definisci **Titolo** e **Descrizione** e aggiungi un&#39;immagine **Miniatura**, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono.
+1. Definisci **Titolo** e **Descrizione** e aggiungi un&#39;immagine **Miniatura**, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono,
 
    ![Passaggio proprietà della procedura guidata](assets/create-project-wizard-properties.png)
 
@@ -52,7 +52,7 @@ La procedura per la creazione di un progetto è la stessa per tutti i modelli di
 
 ### Associazione delle risorse al progetto {#associating-resources-with-your-project}
 
-I progetti consentono di raggruppare le risorse in un’unica entità per gestirle nel loro insieme. Pertanto devi associare le risorse al progetto. Queste risorse sono raggruppate all&#39;interno del progetto come **Tiles**. I tipi di risorse che è possibile aggiungere sono descritti nella sezione [Riquadri progetto](/help/sites-authoring/projects.md#project-tiles).
+I progetti consentono di raggruppare le risorse in un’unica entità per gestirle nel loro insieme. Pertanto, devi associare le risorse al progetto. Queste risorse sono raggruppate all&#39;interno del progetto come **Tiles**. I tipi di risorse che è possibile aggiungere sono descritti nella sezione [Riquadri progetto](/help/sites-authoring/projects.md#project-tiles).
 
 Per associare le risorse a un progetto:
 
@@ -101,7 +101,7 @@ La timeline di un progetto fornisce informazioni sull’ultimo utilizzo delle ri
 
 1. Nella console **Progetti**, fai clic su **Timeline** nel selettore della barra in alto a sinistra nella console.
    ![Selezione della modalità timeline](assets/projects-timeline-rail.png)
-2. Nella console seleziona il progetto per il quale desideri visualizzarne la timeline.
+2. Nella console, seleziona il progetto per il quale desideri visualizzarne la timeline.
    ![Visualizzazione sequenza temporale progetto](assets/project-timeline-view.png)
 
 Assets vengono visualizzati nella barra. Al termine, utilizza il selettore della barra per tornare alla vista normale.
@@ -122,7 +122,7 @@ Sono disponibili diverse opzioni per organizzare i progetti in modo da mantenere
 
 Puoi creare cartelle nella console **Progetti** per raggruppare e organizzare progetti simili.
 
-1. Nella console **Progetti** fare clic su **Crea** e quindi su **Crea cartella**.
+1. Nella console **Progetti**, fai clic su **Crea** e quindi su **Crea cartella**.
 
    ![Crea cartella](assets/project-create-folder.png)
 
@@ -136,7 +136,7 @@ Ora puoi creare progetti all’interno della cartella. Puoi creare più cartelle
 
 È possibile contrassegnare un progetto come inattivo se è stato completato, ma si desidera comunque mantenere le informazioni relative al progetto. [I progetti inattivi ora vengono visualizzati](#viewing-active-inactive-projects) per impostazione predefinita nella console **Progetti**.
 
-Per disattivare un progetto, effettua le seguenti operazioni.
+Per disattivare un progetto, segui la procedura riportata di seguito.
 
 1. Apri la finestra **Proprietà progetto** del progetto.
    * Puoi eseguire questa operazione dalla console selezionando il progetto o dall&#39;interno del progetto tramite il riquadro **Informazioni progetto**.

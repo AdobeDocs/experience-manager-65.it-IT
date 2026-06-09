@@ -10,16 +10,16 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
-source-wordcount: '5284'
-ht-degree: 72%
+source-wordcount: '5344'
+ht-degree: 71%
 
 ---
 
 # Creazione di contenuti di destinazione utilizzando la modalità di targeting{#authoring-targeted-content-using-targeting-mode}
 
-Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. La modalità di targeting e il componente Target forniscono gli strumenti per la creazione di contenuti per esperienze:
+Con la modalità di targeting è possibile creare contenuti mirati per AEM. La modalità di targeting e il componente Target forniscono gli strumenti per la creazione di contenuti per esperienze:
 
 * Facile riconoscimento del contenuto di destinazione presente sulla pagina. Tutti i contenuti di destinazione sono contrassegnati da un bordo tratteggiato.
 * Selezione di un marchio e un’attività per visualizzare le esperienze.
@@ -41,7 +41,7 @@ Le attività ed esperienze visualizzate in modalità Target riflettono la [conso
 
 >[!NOTE]
 >
->Quando crei una campagna in Adobe Target, questo assegna una proprietà denominata `thirdPartyId` a ogni campagna. Quando elimini la campagna in Adobe Target, thirdPartyId non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, assegna a ciascuna campagna un nome univoco; i nomi delle campagne non possono essere riutilizzati in diversi tipi di campagna.
+>Quando crei una campagna in Adobe Target, questo assegna una proprietà denominata `thirdPartyId` a ogni campagna. Quando elimini la campagna in Adobe Target, thirdPartyId non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, assegna a ciascuna campagna un nome univoco. I nomi delle campagne non possono essere riutilizzati in diversi tipi di campagne.
 >
 >Se utilizzi lo stesso nome nello stesso tipo di campagna, sovrascrivi la campagna esistente.
 >
@@ -72,7 +72,7 @@ Utilizza la modalità di targeting per aggiungere un’attività a un marchio. Q
 
 Puoi inoltre creare e gestire attività di Adobe Target da AEM con la possibilità di selezionare il motore di targeting, AEM o Adobe Target, e il tipo di attività, targeting delle esperienze o test A/B.
 
-Inoltre, puoi gestire gli obiettivi e le metriche per tutte le attività di Adobe Target e gestire il pubblico di Adobe Target. È incluso anche il reporting delle attività di Adobe Target, tra cui la conversione dei vincitori per test A/B.
+Inoltre, puoi gestire gli obiettivi e le metriche per tutte le attività di Adobe Target e gestire il pubblico di Adobe Target. È incluso anche il reporting delle attività di Adobe Target (inclusa la conversione dei vincitori per il test A/B).
 
 Quando aggiungi un’attività, questa viene visualizzata anche nella [console Attività](/help/sites-authoring/activitylib.md).
 
@@ -92,7 +92,7 @@ Per aggiungere un’attività:
 
    >[!NOTE]
    >
-   >Quando crei un’attività e disponi di una configurazione cloud di Adobe Target associata alla pagina o a una delle pagine principali, AEM assume automaticamente Adobe Target come motore.
+   >Quando crei un’attività e disponi di una configurazione cloud di Adobe Target associata alla pagina o a uno dei suoi elementi principali, AEM assume automaticamente Adobe Target come motore.
 
 1. Nel menu a comparsa del motore di **targeting**, seleziona il motore di targeting.
 
@@ -112,7 +112,7 @@ Per aggiungere un’attività:
 La modalità di targeting ti consente di configurare diversi aspetti di un’attività. Utilizza il seguente processo in tre fasi per creare contenuti mirati per un’attività del marchio:
 
 1. [Creazione:](#create-authoring-the-experiences) consente di aggiungere o rimuovere le esperienze e di aggiungere le offerte a ogni esperienza.
-1. [Targeting:](#diagramtargetconfiguringtheaudiences) consente di specificare il pubblico al quale è mirata ciascuna esperienza. Puoi eseguire il targeting a un pubblico specifico e, se utilizzi il test A/B decidere quale percentuale di traffico è riservata a quale esperienza.
+1. [Targeting:](#diagramtargetconfiguringtheaudiences) consente di specificare il pubblico al quale è mirata ciascuna esperienza. Puoi indirizzare l’attività a un pubblico specifico. Se utilizzi il test A/B, puoi decidere quale percentuale di traffico viene indirizzata a quale esperienza.
 1. [Obiettivi e impostazioni](#settingsgoalssettingsconfiguringtheactivityandsettinggoals): consente di programmare l’attività e impostare la priorità. Puoi anche definire gli obiettivi della metrica di successo.
 
 Per avviare il processo di targeting dei contenuti di un’attività, utilizza la procedura seguente.
@@ -135,7 +135,7 @@ Per aggiungere un’attività:
 
 ## Creazione: authoring di esperienze {#create-authoring-the-experiences}
 
-Il passaggio Crea del targeting dei contenuti comporta la creazione di esperienze. Durante questo passaggio puoi creare o eliminare le esperienze nell’attività e aggiungere offerte in ogni esperienza.
+Il passaggio Crea del targeting dei contenuti comporta la creazione di esperienze. Durante questo passaggio, puoi creare o eliminare le esperienze dell’attività e aggiungere offerte a ogni esperienza.
 
 ### Visualizzazione delle offerte di esperienza in modalità di targeting {#seeing-experience-offers-in-targeting-mode}
 
@@ -202,7 +202,7 @@ Per rinominare le esperienze utilizzando la modalità di targeting:
 
 1. Fai clic sulla freccia accanto al nome dell’esperienza.
 1. Fai clic su **Rinomina esperienza** e digita il nuovo nome.
-1. Fai clic in un altro punto dello schermo per salvare le modifiche.
+1. Fai clic in un altro punto della schermata per salvare le modifiche.
 
 #### Modifica dei tipi di pubblico utilizzando la modalità di targeting {#editing-audiences-using-targeting-mode}
 
@@ -268,7 +268,7 @@ Per ulteriori informazioni su come personalizzare questo componente, consulta [C
 
 Poiché il componente Target è un contenitore, viene visualizzato come area di rilascio per altri componenti.
 
-In modalità di targeting, il componente di destinazione ha un bordo blu e il messaggio di destinazione indica la natura del target.
+In modalità Target, il componente Target ha un bordo blu e il messaggio di destinazione indica la natura del target.
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -297,7 +297,7 @@ In caso di modifica del contenuto con targeting, è necessario fare clic su **In
    >Gli amministratori possono decidere se impostare questa configurazione è necessario in **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Per richiedere agli utenti di immettere una posizione, selezionare la casella di controllo **Forza posizione &#x200B;** Force).
+   >Per richiedere agli utenti di inserire una posizione, seleziona la casella di controllo **Force location (Forza posizione)**.
 
 1. Seleziona l’esperienza per la quale desideri creare l’offerta.
 1. Crea l’offerta:
@@ -324,7 +324,7 @@ Se decidi che l’offerta può essere utilizzata per altre esperienze, puoi crea
 
    ![Menu offerte](do-not-localize/chlimage_1-2.png)
 
-1. Modifica il contenuto del componente. 
+1. Modifica il contenuto del componente.
 
 #### Aggiunta di un’offerta da una libreria di offerte {#adding-an-offer-from-an-offer-library}
 
@@ -391,13 +391,13 @@ Apri un’offerta dalla libreria da un’esperienza in modalità targeting per m
 
 1. Seleziona l’esperienza per visualizzare l’offerta dalla libreria.
 1. Converti l’offerta dalla libreria in offerta personalizzata/locale. Consulta [Convertire un’offerta dalla libreria in una libreria personalizzata](#converting-a-library-offer-to-a-custom-library).
-1. Modifica il contenuto dell’offerta. 
+1. Modifica il contenuto dell’offerta.
 
 1. Salvalo nuovamente nella libreria. Consulta [Aggiunta di un’offerta personalizzata a una libreria](#adding-a-custom-offer-to-a-library).
 
 ## Target: configurazione dei tipi di pubblico {#target-configuring-the-audiences}
 
-Il passaggio di destinazione del [iprocesso di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implica la mappatura dei tipi di pubblico con le esperienze con cui hai lavorato nel passaggio Crea. La pagina di targeting mostra il pubblico per ogni esperienza di cui stai eseguendo il targeting. Puoi specificare o modificare il pubblico per ogni esperienza. Se utilizzi Adobe Target, puoi anche creare test A/B che ti consentono di eseguire il targeting della percentuale di traffico per un pubblico per una particolare esperienza.
+Il passaggio di destinazione del [iprocesso di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implica la mappatura dei tipi di pubblico con le esperienze con cui hai lavorato nel passaggio Crea. La pagina di Target mostra i tipi di pubblico a cui è destinato ogni esperienza. Puoi specificare o modificare il pubblico per ogni esperienza. Se utilizzi Adobe Target, puoi anche creare test A/B che ti consentono di eseguire il targeting di una percentuale di traffico per un pubblico per una particolare esperienza.
 
 ### Se utilizzi il targeting di AEM o Adobe Target (targeting delle esperienze) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -439,7 +439,7 @@ Puoi modificare le percentuali purché la loro somma raggiunga il 100%. Un pubbl
 
 ## Obiettivi e impostazioni: configurazione dell’attività e impostazione degli obiettivi {#goals-settings-configuring-the-activity-and-setting-goals}
 
-La fase Obiettivi e impostazioni del [processo di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) comporta la configurazione del comportamento dell’attività del marchio. Specifica quando inizia e termina l’attività e la priorità dell’attività. Inoltre, tieni traccia degli obiettivi. In particolare, puoi decidere cosa misurare con le attività.
+La fase Obiettivi e impostazioni del [processo di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) comporta la configurazione del comportamento dell’attività del marchio. Specifica quando inizia e termina l’attività e la priorità dell’attività. Inoltre, puoi anche tenere traccia degli obiettivi. In particolare, puoi decidere cosa misurare con le attività.
 
 Le metriche obiettivo sono disponibili solo se utilizzi Adobe Target per il motore di targeting. Definisci almeno una metrica di obiettivo. Se hai configurato Adobe Analytics e disponi di una configurazione cloud A4T Analytics, puoi scegliere se desideri che l’origine per la generazione di rapporti sia Adobe Target o Adobe Analytics.
 
@@ -530,7 +530,7 @@ Utilizza le impostazioni avanzate per determinare cosa accade **dopo** che un ut
  </tbody>
 </table>
 
-Consulta [Documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=it) per ulteriori informazioni sulle metriche di successo.
+Per ulteriori informazioni sulle metriche di successo, consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=it).
 
 ### Configurazione delle impostazioni (targeting AEM) {#configuring-settings-aem-targeting}
 
@@ -687,11 +687,11 @@ Se hai selezionato Adobe Target come motore:
   </tr>
   <tr>
    <td><strong>Targeting preciso</strong></td>
-   <td><p>L’abilitazione di un targeting accurato indica al componente di attendere che i dati contestuali o del context hub siano disponibili prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per l’authoring, il targeting accurato è sempre abilitato.</p> <p>Se selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue prima un <code>mboxDefine</code> e poi un <code>mboxUpdate</code>, dando luogo a una richiesta Ajax una volta che i dati sono disponibili.</p> <p>Se non selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue <code>mboxCreate</code> generando immediatamente una richiesta sincrona (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili).</p> <p><strong>Nota:</strong> l'abilitazione o la disabilitazione del targeting accurato su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td>
+   <td><p>L’abilitazione di un targeting accurato indica al componente di attendere che i dati contestuali o del context hub siano disponibili prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato.</p> <p>Se selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue prima un <code>mboxDefine</code> e poi un <code>mboxUpdate</code>, dando luogo a una richiesta Ajax una volta che i dati sono disponibili.</p> <p>Se non selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue <code>mboxCreate</code> generando immediatamente una richiesta sincrona (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili).</p> <p><strong>Nota:</strong> l'abilitazione o la disabilitazione del targeting accurato su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td>
   </tr>
   <tr>
    <td><strong>Includi segmenti risolti</strong></td>
-   <td><p>La selezione di questa casella di controllo include tutti i segmenti risolti nella chiamata mbox ed eventuali parametri configurati nella pagina e nel framework.</p> <p>Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se disponi di segmenti in AEM che non sono gestiti da Adobe Target (come i segmenti di script), questa opzione consente di risolvere il segmento in AEM e di inviare ad Adobe Target le informazioni che indicano che il segmento è attivo.</p> </td>
+   <td><p>La selezione di questa casella di controllo include tutti i segmenti risolti nella chiamata mBox e tutti i parametri configurati nella pagina e nel framework.</p> <p>Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se disponi di segmenti in AEM che non sono gestiti da Adobe Target (come i segmenti di script), questa opzione consente di risolvere il segmento in AEM e di inviare ad Adobe Target le informazioni che indicano che il segmento è attivo.</p> </td>
   </tr>
   <tr>
    <td><strong>Parametri di contesto ereditati</strong></td>
