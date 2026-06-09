@@ -9,10 +9,10 @@ exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f6a903263eca2c412c6ca9af2f5e51ea1c5878aa
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 0%
+source-wordcount: '701'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ In un&#39;installazione standard le impostazioni predefinite sono definite come 
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
-Questo nodo contiene `cq.wcm.undo.whitelist` e `cq.wcm.undo.blacklist` proprietà. Per le altre proprietà vengono utilizzate le impostazioni predefinite.
+Questo nodo contiene `cq.wcm.undo.whitelist` e `cq.wcm.undo.blacklist` proprietà. Per le altre proprietà, vengono utilizzati i valori predefiniti.
 
 >[!CAUTION]
 >
@@ -40,11 +40,11 @@ Puoi configurare queste proprietà del servizio OSGi per la tua istanza.
 
 >[!NOTE]
 >
->Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
+>Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Di seguito è riportato un elenco delle proprietà visualizzate nella console Web, seguite dal nome del parametro OSGi corrispondente, insieme a una descrizione e al valore predefinito (se appropriato):
 
-* **Abilita**
+* **Attiva**
 ( `cq.wcm.undo.enabled`)
 
    * **Descrizione**: determina se gli autori delle pagine possono annullare e ripristinare le modifiche.
@@ -111,7 +111,7 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 * **Componenti validi**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Descrizione**: elenco di componenti che devono essere interessati dai comandi Annulla e Ripristina. Aggiungete i percorsi dei componenti a questo elenco quando funzionano correttamente con Annulla/Ripristina. Aggiungete un asterisco (&ast;) per specificare un gruppo di componenti:
+   * **Descrizione**: elenco di componenti che devono essere interessati dai comandi Annulla e Ripristina. Aggiungete i percorsi dei componenti a questo elenco quando funzionano correttamente con Annulla/Ripristina. Aggiungi un asterisco (&ast;) per specificare un gruppo di componenti:
 
       * Il valore seguente specifica il componente testo di base:
 
@@ -147,3 +147,4 @@ Di seguito è riportato un elenco delle proprietà visualizzate nella console We
 
    * **Predefinito**: la proprietà è compilata con diverse operazioni del componente.
    * **Tipo**: `String[]`
+
