@@ -122,7 +122,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=it">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
-* [Soluzioni](https://business.adobe.com/)
+* [Soluzioni](https://business.adobe.com/it/)
 
   ![Soluzioni](do-not-localize/screen_shot_2018-03-23at103552.png)
 
