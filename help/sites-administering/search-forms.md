@@ -394,7 +394,7 @@ Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle d
 * **Nomi proprietà pubblicazione e Live Copy**
 Le etichette per le caselle di controllo di pubblicazione e Live Copy per il predicato specifico di Sites.
 
-* L&#39;&amp;ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, viene visualizzato un messaggio di errore.
+* L&#39;&ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, viene visualizzato un messaggio di errore.
 
 ## Configurazione del Forms di ricerca {#configuring-your-search-forms}
 
