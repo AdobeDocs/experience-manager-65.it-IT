@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
 workflow-type: tm+mt
-source-wordcount: '10527'
+source-wordcount: '10688'
 ht-degree: 3%
 
 ---
@@ -1139,6 +1139,27 @@ Per eseguire il servizio PDF Generator è necessario un account utente locale. P
 1. Apri la pagina [Configurazione AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 
 1. Nella scheda **[!UICONTROL Account utente]**, fornisci le credenziali di un account utente locale e fai clic su **[!UICONTROL Invia]**. Se Microsoft® Windows richiede, consenti l’accesso all’utente. Una volta aggiunto, l&#39;utente configurato viene visualizzato nella sezione **[!UICONTROL Account utente]** della scheda **[!UICONTROL Account utente]**.
+
+### Abilitare conversioni PDF Generator multithread (solo Windows)
+
+Per eseguire conversioni di documenti multithread mentre AEM Forms viene eseguito come servizio Windows, PDF Generator elabora le conversioni con un singolo account utente configurato.
+
+>[!NOTE]
+>
+> In questa modalità, più istanze di **Microsoft® Word** (doc/docx) e **Excel** (xls/xlsx) vengono eseguite con lo stesso utente e gestiscono le conversioni contemporaneamente. **Microsoft® PowerPoint** (ppt/pptx) non supporta questa modalità. PDF Generator avvia una sola istanza di PowerPoint alla volta, pertanto le conversioni multithread non sono supportate per PowerPoint.
+
+Per abilitare le conversioni multithread per Word ed Excel:
+
+1. Configura un [account utente locale](#configure-a-local-user-account-to-run-the-pdf-generator-service) per PDF Generator.
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura PDF Generator]**. URL predefinito: <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Nella scheda **[!UICONTROL Configurazione generale]**, impostare le opzioni seguenti (configurare PDFMaker per Word e Native2PDF per Excel):
+
+   * **Attiva modalità utente singolo per PDFMaker:** **true**
+   * **Dimensione pool di processi per utente singolo PDFMaker:** Imposta come desiderato. Questo valore rappresenta il numero massimo di istanze di Word che possono eseguire conversioni contemporaneamente.
+   * **Attiva Modalità Utente Singolo Per Native2PDF:** **true**
+   * **Native2PDF Single User Process Pool Size:** Imposta come desiderato. Questo valore è il numero massimo di istanze di Excel che possono eseguire conversioni contemporaneamente.
+
+1. Riavvia il server AEM Forms.
 
 ### Configurare le impostazioni di timeout {#configure-the-time-out-settings}
 

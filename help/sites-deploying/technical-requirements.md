@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2493f25c9f22a165360107e9f642ef3f8c07e957
 workflow-type: tm+mt
-source-wordcount: '3790'
+source-wordcount: '3772'
 ht-degree: 5%
 
 ---
@@ -198,6 +198,7 @@ La versione minima dell’API Servlet richiesta è Servlet 3.1
 2. L’avvio delle implementazioni di AEM 6.5 sui server applicazioni passa al Supporto con restrizioni. I clienti esistenti possono effettuare l’aggiornamento ad AEM 6.5 e continuare a utilizzare i server delle applicazioni. Per i nuovi clienti, include i criteri di supporto e un programma di supporto come indicato nella descrizione del livello R riportata sopra.
 3. Applicabile solo AEM Forms:
    * Rimozione del supporto per JBoss® EAP 7.1.4 e aggiunta del supporto per JBoss® EAP 7.4.10.
+   * A partire da AEM Forms Service Pack 6.5.25.0, è stato aggiunto il supporto per JBoss® EAP 7.4.23 . È possibile scaricare JBoss® EAP 7.4.23 dal portale di distribuzione software utilizzando questo [collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
 
 ### Sistemi operativi server {#server-operating-systems}
 
@@ -206,7 +207,7 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | **Piattaforma** | **Livello di supporto** |
 |---|---|
 | **Linux®, basato sulla distribuzione Red Hat®** | R: Supportato `[1]` `[3]` |
-| Linux®, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[1]` `[2]` |
+| Linux®, basato sulla distribuzione Debian inclusa Ubuntu | R: Supportato `[1]` `[2]` |
 | Linux®, basato sulla distribuzione SUSE® | R: Supportato `[1]` |
 | Microsoft® Windows Server 2022 | R: supporto limitato |
 | Microsoft® Windows Server 2019 `[4]` (obsoleto) | R: Supporto limitato per i nuovi contratti `[5]` |
@@ -503,7 +504,7 @@ OpenOffice 4.1.15 </td>
 
 ### Requisiti per AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, Windows® 11 o Microsoft® Windows Terminal Server 2025
 * Processore da 1 GHz o superiore con supporto per PAE, NX e SSE2.
 * 1 GB di RAM per 32 bit o 2 GB di RAM per sistema operativo a 64 bit
 * 16 GB di spazio su disco per 32 bit o 20 GB di spazio su disco per sistema operativo a 64 bit
