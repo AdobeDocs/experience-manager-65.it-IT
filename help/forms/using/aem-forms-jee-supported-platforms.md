@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: ca3f909f4085537a085fd4c8d92f4dcef66f1cab
+source-git-commit: 518481c75e22655bce0b104fe2eb5614f1d8a3b9
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3920'
 ht-degree: 3%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 3%
 
 <div class="preview">
 
-Adobe ha rilasciato un [programma di installazione completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) con AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) su JEE insieme ai programmi di installazione delle patch. Il programma di installazione completo supporta nuove piattaforme, mentre il programma di installazione delle patch include solo correzioni di bug.
+Adobe ha rilasciato un [programma di installazione completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) con AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) su JEE insieme ai programmi di installazione delle patch. Il programma di installazione completo supporta nuove piattaforme, mentre il programma di installazione delle patch include solo correzioni di bug.
 
-Se si sta eseguendo una nuova installazione o si prevede di utilizzare il software più recente per l&#39;ambiente AEM 6.5.23.0 Forms su JEE, Adobe consiglia di utilizzare il [programma di installazione completo di AEM 6.5.23.0 Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) rilasciato il 6 giugno 2025 invece del programma di installazione di AEM 6.5.18 Forms rilasciato il 31 agosto 2023 o del programma di installazione di AEM 6.5.12 Forms rilasciato il 8 aprile 2019.
+Se si sta eseguendo una nuova installazione o si prevede di utilizzare il software più recente per l&#39;ambiente AEM 6.5.23.0 Forms su JEE, Adobe consiglia di utilizzare il [programma di installazione completo di AEM 6.5.23.0 Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) rilasciato il 6 giugno 2025 invece del programma di installazione di AEM 6.5.18 Forms rilasciato il 31 agosto 2023 o del programma di installazione di AEM 6.5.12 Forms rilasciato il 8 aprile 2019.
 
 
 </div>
@@ -207,7 +207,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
  <tr>
   <td><p>Microsoft® SQL Server 2019 (obsoleto) </p> </td>
   <td><p>Microkernel archivio</p> </td>
-  <td><p>Funzione supportata</p> </td>
+  <td><p>Supportato</p> </td>
  </tr>
  <tr>
   <td><p>Microsoft® SQL Server 2022 </p> </td>
@@ -308,17 +308,17 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
   <td>Service Pack e aggiornamenti critici</td>
  </tr>
  <tr>
-  <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
+  <td><p>JBoss® Enterprise Application Platform (EAP) 7.4.23 <sup>[2] [3] [7]</sup> </p> </td>
   <td><p>A: supportato</p> </td>
   <td><p>Patch e patch cumulative per la versione EAP supportata</p> </td>
  </tr>
 </tbody>
 </table>
 
-
 >[!NOTE]
 >
->I cluster IBM® WebSphere® sono supportati solo nelle edizioni di distribuzione in rete.
+>- A partire da AEM Forms Service Pack 6.5.25.0, è supportato JBoss® Enterprise Application Platform (EAP) 7.4.23. È possibile scaricare JBoss® EAP 7.4.23 dal portale di distribuzione software utilizzando questo [collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
+>- I cluster IBM® WebSphere® sono supportati solo nelle edizioni di distribuzione in rete.
 
 ### Sistemi operativi server {#server-operating-systems}
 
@@ -488,12 +488,8 @@ Inoltre, considera i seguenti punti durante la scelta del software per le implem
   <td>5.5.2</td>
  </tr>
  <tr>
-  <td>IBM® Content Manager Server (obsoleto) </td>
-  <td>8.5 Fix pack 2</td>
- </tr>
-  <tr>
-  <td> Client IBM® Content Manager (obsoleto)</td>
-  <td>8.5 </td>
+  <td>Client IBM® Content Manager</td>
+  <td>8,7</td>
  </tr>
   <td>Microsoft® Sharepoint </td>
   <td>2019<br /> </td>
@@ -522,7 +518,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (Traccia continua, versione più recente)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (Traccia continua, versione più recente)</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -608,8 +604,8 @@ I seguenti sottosistemi di AEM Forms non sono conformi a [508](https://www.secti
 
 Per ulteriori informazioni, vedere:
 
-- [Requisiti di sistema per un’implementazione AEM Forms su JEE per un singolo server](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_it)
-- [Requisiti di sistema per un’implementazione cluster di AEM Forms su JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_it)
+- [Requisiti di sistema per un’implementazione AEM Forms su JEE per un singolo server](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [Requisiti di sistema per un’implementazione cluster di AEM Forms su JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 
 ### Adobe Acrobat e Adobe Reader {#adobe-acrobat-and-adobe-reader}
@@ -623,7 +619,7 @@ Per ulteriori informazioni, vedere:
  </tr>
  <tr>
   <td>Adobe Acrobat Pro DC (Traccia continua, versione più recente)</td>
-  <td>Versione più recente come descritto nelle <a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">note sulla versione di Acrobat e Reader</a><br /> </td>
+  <td>Versione più recente come descritto nelle <a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">note sulla versione di Acrobat e Reader</a><br /> </td>
  </tr>
  </tbody>
 </table>
@@ -676,10 +672,9 @@ Per ulteriori informazioni, vedere:
 ### Designer {#designer}
 
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, Windows® 11 o Microsoft® Windows Terminal Server 2025
 - Processore da 1 GHz o superiore con supporto per PAE, NX e SSE2.
 - 1 GB di RAM per 32 bit o 2 GB di RAM per sistema operativo a 64 bit
-@@ -729,49 +601,45 @@ Per ulteriori requisiti, vedere:
 - Privilegi amministrativi per l&#39;installazione di Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 o versione successiva), runtime a 32 bit
 
@@ -795,7 +790,7 @@ AEM Forms su JEE supporta aggiornamenti, patch e fix pack oltre alla versione pr
 ## Criteri di supporto delle patch di terze parti {#third-party-patch-support-policy}
 
 
-I requisiti software di terze parti per AEM Forms su JEE sono documentati nella sezione &quot;Requisiti di sistema&quot; dei rispettivi documenti di prodotto. Accedi a tutta la documentazione da [https://adobe.com/go/learn_aemforms_documentation_65_it](https://adobe.com/go/learn_aemforms_documentation_65_it) .
+I requisiti software di terze parti per AEM Forms su JEE sono documentati nella sezione &quot;Requisiti di sistema&quot; dei rispettivi documenti di prodotto. Accedi a tutta la documentazione da [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
 
 
 AEM Forms sulle piattaforme di riferimento di terze parti di JEE indica il livello di patch specifico dell’infrastruttura di terze parti corrente durante lo sviluppo e il rilascio di AEM Forms su JEE e il livello minimo di patch/service pack dell’infrastruttura supportata da tale versione di AEM Forms su JEE.
@@ -826,7 +821,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -897,7 +892,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -913,6 +908,15 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 
 -->
+
+### Versione 6.5.25.0 (28 maggio 2026)
+
+| Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
+| -------------- | --------------- | ------------------- |
+| JBoss® Enterprise Application Platform (EAP) 7.4.23 | JBoss® Enterprise Application Platform (EAP) 7.4.10 | |
+| Client IBM® Content Manager 8.7 | Client IBM® Content Manager 8.5 | |
+| Microsoft® Windows Terminal Server 2025 | | |
+
 
 ### Versione 6.5.24.0 (26 novembre 2025)
 
