@@ -367,7 +367,7 @@ Di seguito sono riportati i vantaggi e le funzionalità disponibili nell’antep
 * **Interruzione di pagina**: nell&#39;anteprima PDF è possibile visualizzare esattamente in che modo le interruzioni di pagina nella lettera influiscono sul relativo output.
 * **Anteprima finale**: nell&#39;anteprima PDF è possibile visualizzare la formattazione e l&#39;aspetto esatti della lettera così come apparirà nell&#39;output.
 
-Per informazioni sul supporto degli script nei PDF forms, vedere [Supporto degli script](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
+Per informazioni sul supporto degli script nei PDF forms, vedere [Supporto degli script](https://help.adobe.com/it_IT/livecycle/11.0/ScriptingSupport/index.html).
 
 Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [Supporto degli script per i moduli HTML5](/help/forms/using/scripting-support.md).
 

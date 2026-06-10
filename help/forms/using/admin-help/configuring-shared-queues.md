@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Configurare le code condivise{#configuring-shared-queues}
 
-Le code condivise ti consentono di configurare e gestire in modo efficace le code utente. Una coda utente è costituita semplicemente da tutte le attività assegnate a un utente. Per ulteriori informazioni, consulta [Elenchi attività](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html). Puoi assegnare, annullare l’assegnazione e riassegnare le code utente in base alle tue esigenze organizzative. Puoi gestire le code condivise in due modi:
+Le code condivise ti consentono di configurare e gestire in modo efficace le code utente. Una coda utente è costituita semplicemente da tutte le attività assegnate a un utente. Per ulteriori informazioni, consulta [Elenchi attività](https://help.adobe.com/it_IT/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html). Puoi assegnare, annullare l’assegnazione e riassegnare le code utente in base alle tue esigenze organizzative. Puoi gestire le code condivise in due modi:
 
 **Gestire l’accesso a un utente**
 

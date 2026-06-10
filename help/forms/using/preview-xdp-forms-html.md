@@ -111,7 +111,7 @@ La [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
 
 Designer consente di visualizzare in anteprima e verificare il modulo utilizzando dati XML di esempio. Si consiglia di verificare frequentemente il modulo con dati di esempio per verificare che venga eseguito correttamente il rendering.
 
-Se non disponi di dati di esempio, puoi crearli direttamente in Designer. (Vedi [Per generare automaticamente i dati di esempio per l&#39;anteprima del modulo](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Per creare i dati di esempio per l&#39;anteprima del modulo](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Se non disponi di dati di esempio, puoi crearli direttamente in Designer. (Vedi [Per generare automaticamente i dati di esempio per l&#39;anteprima del modulo](https://help.adobe.com/it_IT/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Per creare i dati di esempio per l&#39;anteprima del modulo](https://help.adobe.com/it_IT/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 Il test del modulo tramite un&#39;origine dati di esempio assicura che i dati e i campi siano mappati e che le sottomaschere ripetute vengano ripetute come previsto. È possibile creare un layout di modulo bilanciato che fornisca lo spazio appropriato per ogni oggetto per visualizzare i dati uniti.
 

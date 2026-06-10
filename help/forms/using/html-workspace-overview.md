@@ -28,7 +28,7 @@ Per ulteriori informazioni, vedere [Introduzione all&#39;area di lavoro di AEM F
 
 ## Acquisizione di familiarità {#getting-familiar}
 
-Per avere familiarità con il processo end-to-end di creazione di un&#39;applicazione Forms per automatizzare un processo aziendale, seguire la procedura dettagliata. Dopo aver seguito la procedura dettagliata, è possibile creare, gestire e testare un&#39;applicazione utilizzando l&#39;area di lavoro Workbench, Designer e AEM Forms. Per informazioni dettagliate sull&#39;implementazione, vedere [Creazione della prima applicazione AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+Per avere familiarità con il processo end-to-end di creazione di un&#39;applicazione Forms per automatizzare un processo aziendale, seguire la procedura dettagliata. Dopo aver seguito la procedura dettagliata, è possibile creare, gestire e testare un&#39;applicazione utilizzando l&#39;area di lavoro Workbench, Designer e AEM Forms. Per informazioni dettagliate sull&#39;implementazione, vedere [Creazione della prima applicazione AEM Forms](https://help.adobe.com/it_IT/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Panoramica funzionale {#functional-overview}
 
