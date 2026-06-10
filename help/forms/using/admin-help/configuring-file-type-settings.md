@@ -86,7 +86,7 @@ Crea o modifica un’impostazione del tipo di file per specificare il modo in cu
 
 1. Dopo aver completato tutte le sezioni, fai clic su **[!UICONTROL Salva]** o **[!UICONTROL Salva con nome]** e specifica un nome per l’impostazione
 
-È possibile personalizzare il supporto per vari tipi di file. Consulta “[Aggiunta di supporto per formati aggiuntivi di file nativi](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)” in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_lc_programming_11).
+È possibile personalizzare il supporto per vari tipi di file. Consulta “[Aggiunta di supporto per formati aggiuntivi di file nativi](https://help.adobe.com/it_IT/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)” in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_lc_programming_11).
 
 ## Modificare le impostazioni predefinite {#change-the-default-settings}
 
@@ -620,7 +620,7 @@ Puoi inoltre specificare la modalità di invio dei moduli. Le opzioni sono XML, 
 
 ## Altre impostazioni dell’applicazione (solo Windows) {#other-applications-settings-windows-only}
 
-Non puoi modificare le impostazioni per altre applicazioni tramite la console di amministrazione, poiché visualizzano le estensioni dei nomi di file per i tipi di file supportati. Per istruzioni sull’accesso a queste impostazioni, consulta [Creare o modificare le impostazioni del tipo di file](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Non puoi modificare le impostazioni per altre applicazioni tramite la console di amministrazione, poiché visualizzano le estensioni dei nomi di file per i tipi di file supportati. Per istruzioni sull’accesso a queste impostazioni, consulta [Creare o modificare le impostazioni del tipo di file](https://help.adobe.com/it_IT/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`

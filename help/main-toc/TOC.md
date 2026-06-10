@@ -569,7 +569,7 @@ ht-degree: 96%
          + [Configurare la cache dei moduli adattivi](/help/forms/using/configure-adaptive-forms-cache.md)
          + [Configurazione delle impostazioni di AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
          + [Configurazione del modulo di pianificazione di sincronizzazione](/help/forms/using/configure-synchronization-scheduler.md)
-         + [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
+         + [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/it_IT/AEMForms/6.1/SharePointConfig/index.html)
          + [Collegamento di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
          + [Configurazione di AEM Forms per inviare i dati del modulo a un processo AEM Forms su JEE](/help/forms/using/submit-form-data-livecycle-process.md)
          + [App desktop AEM per AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)

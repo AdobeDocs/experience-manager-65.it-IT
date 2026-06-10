@@ -68,7 +68,7 @@ Con il servizio Estensioni di Reader è possibile eseguire le seguenti attività
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>Specifica un oggetto di tipo <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. L'oggetto usageRights rappresenta singoli diritti che possono essere applicati a un documento PDF protetto tramite policy.</p> </td>
+   <td><p>Specifica un oggetto di tipo <a href="https://help.adobe.com/it_IT/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. L'oggetto usageRights rappresenta singoli diritti che possono essere applicati a un documento PDF protetto tramite policy.</p> </td>
   </tr>
  </tbody>
 </table>

@@ -85,4 +85,4 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
    >Per informazioni dettagliate sulla creazione di un modulo adattivo, consulta [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >Per informazioni dettagliate sulla creazione di un processo, vedere [Creazione e gestione dei processi](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Per informazioni dettagliate sulla creazione di un processo, vedere [Creazione e gestione dei processi](https://help.adobe.com/it_IT/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

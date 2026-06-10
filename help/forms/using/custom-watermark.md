@@ -79,7 +79,7 @@ Per personalizzare il testo e l&#39;aspetto della filigrana, attenersi alla proc
    </DDX>
    ```
 
-   Per informazioni sulla personalizzazione dell&#39;aspetto della filigrana, del testo e dell&#39;allineamento, vedere Aggiunta e rimozione di filigrane e sfondi nel documento [Servizio assemblatore e Riferimenti DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
+   Per informazioni sulla personalizzazione dell&#39;aspetto della filigrana, del testo e dell&#39;allineamento, vedere Aggiunta e rimozione di filigrane e sfondi nel documento [Servizio assemblatore e Riferimenti DDX](https://help.adobe.com/it_IT/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >
