@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 1b8290b3e1b7e5f62cda1dd45561bc4e3c09703f
+source-git-commit: fddc5a648d8945e84283ce87725e64da57f1daed
 workflow-type: tm+mt
-source-wordcount: '2259'
-ht-degree: 2%
+source-wordcount: '4289'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,22 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     <td><strong>Data</strong></td>
     <td><strong>Collegamento per il download degli hotfix (collegamento per la distribuzione di software AEM)</strong></td>
     <td><strong>Problemi risolti</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>8 giugno 2026</strong><br>
+      <em>Si applica a:</em> distribuzioni AEM 6.5.25.0 WAR/JEE (incluso AEM Forms su JEE)<br>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-service-pkg-6.5.25-NPR-44100-B0002.zip">Hotfix per AEM Service Pack 6.5.25.0 (NPR-44100)</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>NPR-44100</b> Dopo aver installato AEM 6.5 Service Pack 25.0 nelle distribuzioni WAR/JEE, il bundle <code>com.adobe.cq.screens.sessions</code> rimane nello stato Installato e non diventa mai Attivo.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
@@ -291,7 +307,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      </td>
     <td>
     <ul>
-    <li>Le lettere bozza con dati XML si bloccano nello stato di caricamento durante l'anteprima. Per le istruzioni di download e installazione dell'hotfix, fare riferimento alla sezione <a href="#install-hotfix"> Download and install hotfix per bozza lettera problema</a>.(FORMS-14521)</li>
+    <li>Le lettere bozza con dati XML si bloccano nello stato di caricamento durante l'anteprima. Per le istruzioni di download e installazione dell'hotfix, fare riferimento alla sezione <a href="#install-hotfix"> Download e installazione hotfix per bozza di lettera problema</a>.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
