@@ -9,10 +9,10 @@ role: Admin,User
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
-source-git-commit: 09f38a8596098d7dbc415ae41dff4123de6d375c
+source-git-commit: 652162941dd716ae797ce50709e91757dad99054
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 1%
+source-wordcount: '420'
+ht-degree: 6%
 
 ---
 
@@ -36,7 +36,9 @@ Eseguire la procedura seguente per utilizzare il programma di installazione comp
 1. A seconda dell&#39;ambiente e del server applicazioni esistenti, scegliere uno dei seguenti documenti e seguire le istruzioni.
 
    * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_it)
-   * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms ad AEM 6.5 Forms per WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_it)
+   * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_it)
    * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_it)
+   * [Aggiornamento EAP JBoss da 7.4.10 a 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
+   * [Aggiornamento del cluster EAP JBoss da 7.4.10 a 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
 
 Non è disponibile l’aggiornamento diretto da LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms ad AEM 6.5 Forms. Puoi eseguire un aggiornamento intermedio a una o più versioni di LiveCycle o AEM Forms e quindi eseguire l’aggiornamento a AEM 6.5 Forms. Per l&#39;elenco delle versioni intermedie e le istruzioni di aggiornamento corrispondenti, vedere [Scegliere un percorso di aggiornamento](upgrade.md).
