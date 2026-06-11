@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: dcf42fbacda68e1badbb9f7a6e7d42068f2281a9
+source-git-commit: ada1a7e3074515181f78dae914f7a664132c0226
 workflow-type: tm+mt
 source-wordcount: '7373'
 ht-degree: 4%
@@ -602,12 +602,6 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
 * **FORMS-23722** Quando un modulo contenente un campo **File allegato** che utilizza `bindref` viene inviato a un flusso di lavoro di AEM con un passaggio **Assegna attività**, gli allegati non vengono visualizzati. Di conseguenza, non vengono visualizzate quando l&#39;attività viene aperta dalla cartella Posta in arrivo. I file vengono salvati correttamente nell’archivio, ma l’interfaccia utente del passaggio Assegna attività non riesce a visualizzare gli allegati.
 
 #### Problemi noti con gli hotfix disponibili {#aem-forms-issues-with-hotfixes}
-
-<!--
->[!NOTE]
->
->Avoid upgrading to Service Pack 6.5.25.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.25.0 only after the required hotfixes are released.
--->
 
 Nei seguenti problemi è disponibile un hotfix per il download e l’installazione. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere questi problemi:
 
