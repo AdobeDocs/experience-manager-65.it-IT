@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e come può esserti utile il software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: 652162941dd716ae797ce50709e91757dad99054
+source-git-commit: 606ea57b0e9c012b9bc87ac87910337c025038ee
 workflow-type: tm+mt
-source-wordcount: '8272'
+source-wordcount: '8270'
 ht-degree: 96%
 
 ---
@@ -587,14 +587,14 @@ ht-degree: 96%
          + [Aggiornamento ad AEM Forms su JEE per JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_it)
          + [Aggiornamento ad Adobe Experience Manager Forms su JEE per WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_it)
          + [Aggiornamento ad Adobe Experience Manager Forms su JEE per WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_it)
-         + [Aggiornamento EAP JBoss da 7.4.10 a 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
-         + [Aggiornamento del cluster EAP JBoss da 7.4.10 a 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
+         + [Aggiornamento di JBoss da 7.4.10 a 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
+         + [Aggiornamento del cluster JBoss da 7.4.10 a 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
    + Gestire AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms su gruppi e privilegi OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Creare nuove cartelle per categorizzare i moduli](/help/forms/using/creating-new-folders-categorize-forms.md)
       + [Ricerca di moduli e risorse](/help/forms/using/searching-forms-or-assets.md)
       + [Gestire i metadati dei moduli](/help/forms/using/manage-form-metadata.md)
-      + [Scaricare un modello di modulo XFA o PDF](/help/forms/using/download-xfa-or-pdf-form.md)
+      + [Download di un modello di modulo XFA o PDF](/help/forms/using/download-xfa-or-pdf-form.md)
       + [Eliminare moduli e risorse correlati](/help/forms/using/deleting-forms-related-resources.md)
       + [Recupero documenti XDP e PDF in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md)
       + [Importazione ed esportazione di risorse in AEM Forms](/help/forms/using/import-export-forms-templates.md)
