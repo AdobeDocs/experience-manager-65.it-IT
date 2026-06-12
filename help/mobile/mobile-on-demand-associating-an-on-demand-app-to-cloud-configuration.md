@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '406'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 {{ue-over-mobile}}
 
-L’associazione di un’app on-demand a una configurazione cloud consente a Adobe Experience Manager (AEM) di comunicare direttamente con un progetto ospitato da Mobile On-Demand creando un collegamento bidirezionale. Collegando l’app a un progetto Mobile On-Demand, potrai creare contenuti, ad esempio articoli, banner e raccolte nell’ambito dell’AEM, e distribuirli a Mobile On-Demand.
+L’associazione di un’app on-demand a una configurazione cloud consente a Adobe Experience Manager (AEM) di comunicare direttamente con un progetto ospitato da Mobile On-Demand creando un collegamento bidirezionale. Collegando l’app a un progetto Mobile On-Demand, potrai creare contenuti, ad esempio articoli, banner e raccolte all’interno di AEM, e distribuirli a Mobile On-Demand.
 
 Da qui, diventa possibile pubblicare, visualizzare in anteprima e gestire i contenuti. Puoi anche importare contenuti Mobile On-Demand esistenti in AEM ed eseguire modifiche al contenuto.
 
@@ -28,11 +28,11 @@ Da qui, diventa possibile pubblicare, visualizzare in anteprima e gestire i cont
 
 >[!CAUTION]
 >
->Prima di iniziare a configurare la configurazione cloud per l’app On-Demand, è necessario avere familiarità con il provisioning e la configurazione di AEM Mobile AEM Mobile On-demand Services Client.
+>Prima di iniziare a configurare la configurazione cloud per l’app On-Demand, è necessario avere familiarità con il provisioning e la configurazione di AEM Mobile Client.
 >
 >Per informazioni dettagliate, vedere [Configurazione di AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) nella sezione Amministrazione.
 
-Per configurare i Cloud Service Mobile On-Demand, fai clic sull&#39;ingranaggio in alto a destra del riquadro **Gestione connessione** dal dashboard dell&#39;app.
+Per configurare Mobile On-Demand Cloud Services, fai clic sull&#39;ingranaggio in alto a destra del riquadro **Gestisci connessione** dal dashboard dell&#39;app.
 
 Dovresti avere familiarità con il dashboard dell’app e i riquadri disponibili. Per ulteriori dettagli, vedi [Dashboard applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 

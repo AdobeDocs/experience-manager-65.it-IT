@@ -1,5 +1,5 @@
 ---
-title: QuickStart (SOAP) per API Java di Signature Service
+title: Avvio rapido di API Java per il servizio di firma (SOAP)
 description: Utilizzare il servizio Firma per aggiungere un campo firma a un documento PDF, recuperare i nomi dei campi firma, modificare un campo firma, firmare digitalmente un documento PDF, firmare digitalmente un modulo basato su XFA, certificare un documento PDF, verificare una firma digitale, verificare più firme digitali e rimuovere una firma digitale.
 contentOwner: admin
 content-type: reference
@@ -11,26 +11,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
 
 # Guida introduttiva all’API Java di Signature Service (SOAP) {#signature-service-java-api-quickstart-soap}
 
-Per il servizio AEM Forms JEE Signature sono disponibili le seguenti funzioni di avvio rapido (SOAP) dell’API Java:
+Per il servizio di firma JEE di AEM Forms sono disponibili le seguenti funzioni di avvio rapido dell’API Java (SOAP):
 
-[Guida rapida (modalità SOAP): aggiunta di un campo firma a un documento PDF tramite l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
+[Guida rapida (modalità SOAP): aggiunta di un campo firma a un documento PDF utilizzando l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
-[Quick Start (modalità SOAP): recupero dei nomi dei campi della firma utilizzando l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[Quick Start (modalità SOAP): recupero dei nomi dei campi della firma tramite l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
-[Quick Start (modalità SOAP): modifica di un campo firma tramite API Java](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
+[Guida rapida (modalità SOAP): modifica di un campo firma tramite API Java](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
 
 [Quick Start (modalità SOAP): firma digitale di un documento PDF tramite l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[Quick Start (modalità SOAP): firma digitale di un modulo basato su XFA tramite API Java](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
+[Quick Start (modalità SOAP): firma digitale di un modulo basato su XFA tramite l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
 
-[Quick Start (modalità SOAP): certificazione di un documento PDF tramite API Java](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
+[Quick Start (modalità SOAP): certificazione di un documento PDF tramite l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
 [Quick Start (modalità SOAP): verifica di una firma digitale tramite l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
@@ -46,9 +46,9 @@ Le operazioni di AEM Forms JEE possono essere eseguite utilizzando l’API forte
 >
 >La Guida introduttiva alla programmazione con AEM Forms si basa sul server Forms distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Guida rapida (modalità SOAP): aggiunta di un campo firma a un documento PDF tramite l’API Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
+## Guida rapida (modalità SOAP): aggiunta di un campo firma a un documento PDF utilizzando l’API Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene aggiunto un campo firma denominato *SignatureField1* a un documento PDF basato su un file PDF denominato *Loan.pdf*. Il documento PDF che contiene il nuovo campo firma viene salvato come file PDF denominato *LoanSig.pdf*. (Vedi [Aggiunta di campi firma](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
+Nell&#39;esempio di codice Java seguente viene aggiunto un campo firma denominato *SignatureField1* a un documento di PDF basato su un file PDF denominato *Loan.pdf*. Il documento PDF contenente il nuovo campo firma viene salvato come file PDF denominato *LoanSig.pdf*. (Vedi [Aggiunta di campi firma](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
 ```java
  /*
@@ -162,9 +162,9 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un campo firma denominat
  
 ```
 
-## Quick Start (modalità SOAP): recupero dei nomi dei campi della firma utilizzando l’API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
+## Quick Start (modalità SOAP): recupero dei nomi dei campi della firma tramite l’API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente vengono recuperati i nomi dei campi firma in un documento PDF denominato *LoanSig.pdf*. (Vedere [Recupero dei nomi dei campi di firma](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+Nell&#39;esempio di codice Java seguente vengono recuperati i nomi dei campi firma in un documento di PDF denominato *LoanSig.pdf*. (Vedere [Recupero dei nomi dei campi di firma](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
 ```java
  /*
@@ -268,7 +268,7 @@ Nell&#39;esempio di codice Java seguente vengono recuperati i nomi dei campi fir
  }
 ```
 
-## Quick Start (modalità SOAP): modifica di un campo firma tramite API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
+## Guida rapida (modalità SOAP): modifica di un campo firma tramite API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificato un campo di firma denominato SignatureField1 bloccando tutti i campi del modulo quando viene applicata una firma al campo di firma e garantendo che non siano consentite modifiche. Dopo che il servizio di firma restituisce il documento PDF contenente il campo di firma modificato, il documento PDF viene salvato come file PDF denominato LoanSig.pdf. In questo esempio viene sovrascritto il file PDF passato al servizio di firma. (Vedi [Modifica dei campi di firma](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
@@ -398,7 +398,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificato un
 
 ## Quick Start (modalità SOAP): firma digitale di un documento PDF tramite l’API Java {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene apposta una firma digitale a un documento PDF basato su un file PDF denominato *LoanSig.pdf*. L&#39;alias specificato per le credenziali di protezione è protetto e viene eseguito il controllo della revoca. Poiché non vengono specificate informazioni sul server CRL o OCSP, le informazioni sul server vengono ottenute dal certificato utilizzato per firmare digitalmente il documento PDF. Il documento firmato è stato salvato come file PDF denominato *LoanSigned.pdf*. (Vedi [Documenti PDF Con Firma Digitale](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+Nell&#39;esempio di codice Java seguente viene apposta una firma digitale a un documento PDF basato su un file PDF denominato *LoanSig.pdf*. L&#39;alias specificato per le credenziali di protezione è protetto e viene eseguito il controllo della revoca. Poiché non vengono specificate informazioni sul server CRL o OCSP, le informazioni sul server vengono ottenute dal certificato utilizzato per firmare digitalmente il documento PDF. Il documento firmato è stato salvato come file PDF denominato *LoanSigned.pdf*. (Vedi [Firma digitale dei documenti di PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ```java
  /*
@@ -545,7 +545,7 @@ Nell&#39;esempio di codice Java seguente viene apposta una firma digitale a un d
  
 ```
 
-## Quick Start (modalità SOAP): firma digitale di un modulo basato su XFA tramite API Java {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
+## Quick Start (modalità SOAP): firma digitale di un modulo basato su XFA tramite l’API Java {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene firmato un modulo interattivo di cui il servizio Forms esegue il rendering. L&#39;istanza `com.adobe.idp.Document` restituita dal servizio Forms viene passata al servizio Signature. Il modulo interattivo firmato viene salvato come file PDF denominato *LoanXFASigned.pdf*.
 
@@ -757,7 +757,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene firmato un mo
  
 ```
 
-## Quick Start (modalità SOAP): certificazione di un documento PDF tramite API Java {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
+## Quick Start (modalità SOAP): certificazione di un documento PDF tramite l’API Java {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java seguente viene certificato un documento PDF basato su un file PDF denominato *LoanSig.pdf*. L&#39;alias specificato per le credenziali di protezione è protetto e il controllo della revoca non viene eseguito. Il documento certificato è stato salvato come file PDF denominato *LoanCertified.pdf*. (Vedi [Certificazione dei documenti di PDF](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
@@ -1343,7 +1343,7 @@ Esempio Nell&#39;esempio di codice Java seguente viene rimossa una firma digital
 
 ## Guida rapida (modalità SOAP): applicare la marca temporale del documento utilizzando l’API Java {#quick-start-soap-mode-apply-document-timestamp-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene applicata una marca temporale a un documento PDF:
+Nell&#39;esempio di codice Java riportato di seguito viene applicata una marca temporale a un documento PDF:
 
 ```java
  /*

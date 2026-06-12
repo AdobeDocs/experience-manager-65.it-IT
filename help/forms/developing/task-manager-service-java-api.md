@@ -1,5 +1,5 @@
 ---
-title: Guida rapida (SOAP) dell’API Java del servizio Task Manager
+title: Avvio rapido di API Java per il servizio di gestione delle attività (SOAP)
 description: Utilizzare il servizio Gestione attività per assegnare attività, bloccare attività, recuperare attività assegnate agli utenti, recuperare i dati del modulo dalle attività, modificare i dati del modulo, recuperare i file allegati e recuperare le informazioni sulle attività.
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '525'
+ht-degree: 1%
 
 ---
 
@@ -24,15 +24,15 @@ Per il servizio Task Manager sono disponibili i seguenti Quick Start.
 
 [Quick Start (modalità SOAP): blocco delle attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
-[Quick Start (modalità SOAP): recupero delle attività assegnate agli utenti tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
+[Guida rapida (modalità SOAP): recupero delle attività assegnate agli utenti tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
 [Quick Start (modalità SOAP): recupero dei dati del modulo dalle attività tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Quick Start (modalità SOAP): modifica dei dati dei moduli tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Guida rapida (modalità SOAP): modifica dei dati dei moduli tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
 [Guida rapida (modalità SOAP): recupero di allegati dalle attività tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
-[Quick Start (modalità SOAP): recupero delle informazioni sulle attività tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
+[Guida rapida (modalità SOAP): recupero delle informazioni sulle attività tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
@@ -266,7 +266,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene bloccata un&#
  
 ```
 
-## Quick Start (modalità SOAP): recupero delle attività assegnate agli utenti tramite l’API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Guida rapida (modalità SOAP): recupero delle attività assegnate agli utenti tramite l’API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
 Nell&#39;esempio di codice Java seguente vengono recuperate tutte le attività assegnate a un utente denominato *tony blue*. Si noti che questo utente è specificato nelle proprietà di connessione. Vengono visualizzate le informazioni sulle attività restituite, ad esempio il valore e la descrizione dell&#39;identificatore.
 
@@ -498,7 +498,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperati 
  
 ```
 
-## Quick Start (modalità SOAP): modifica dei dati dei moduli tramite API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
+## Guida rapida (modalità SOAP): modifica dei dati dei moduli tramite l’API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo con i dati contenuti nel file *FormData.xml*.
 
@@ -712,7 +712,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperati 
  
 ```
 
-## Quick Start (modalità SOAP): recupero delle informazioni sulle attività tramite API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Guida rapida (modalità SOAP): recupero delle informazioni sulle attività tramite API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
 Nell&#39;esempio di codice Java seguente vengono recuperate tutte le attività basate su un processo denominato *MutuoLoan - Precompilato*. Lo stato di ogni attività restituita viene controllato per verificare che sia un&#39;attività completata. Vengono recuperate e visualizzate informazioni quali il nome dell&#39;utente che ha completato l&#39;attività e la data di completamento dell&#39;attività.
 

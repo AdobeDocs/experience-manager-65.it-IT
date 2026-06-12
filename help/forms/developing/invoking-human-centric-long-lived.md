@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3762'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Puoi richiamare in modo programmatico i processi a vita lunga incentrati sull’
 
 * Applicazione client Java basata sul Web che utilizza l&#39;API di richiamo. (Vedi [Richiamare AEM Forms utilizzando l&#39;API Java](/help/forms/developing/invoking-aem-forms-using-java.md)(/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
 * Applicazione ASP.NET che utilizza servizi Web. (Vedi [Chiamata di AEM Forms tramite servizi Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
-* Applicazione client creata con Flex che utilizza la funzionalità di comunicazione remota. (Vedi [Chiamata di AEM Forms tramite (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+* Applicazione client creata con Flex che utilizza la funzionalità di comunicazione remota. (Vedi [Chiamata di AEM Forms tramite (obsoleto per AEM Forms) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Il processo di lunga durata richiamato è denominato *FirstAppSolution/PreLoanProcess*. Puoi creare questo processo seguendo l&#39;esercitazione specificata in [Creazione della prima applicazione AEM Forms](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
 
@@ -131,7 +131,7 @@ Per il percorso di questi file JAR, vedi [Inclusi i file della libreria Java di 
 **Aggiungi una pagina HTML al progetto**
 
 1. Nella finestra Esplora progetti fare clic con il pulsante destro del mouse sul progetto `InvokePreLoanProcess` e selezionare **Nuovo** > **Altro**.
-1. Espandi la cartella **Web**, seleziona **HTML**, quindi fai clic su **Avanti**.
+1. Espandi la cartella **Web**, seleziona **HTML** e fai clic su **Avanti**.
 1. Nella finestra di dialogo Nuovo HTML digitare `index.html` per il nome del file e quindi fare clic su **Fine**.
 
 >[!NOTE]
@@ -357,7 +357,7 @@ L&#39;esempio di codice Java seguente rappresenta il servlet Java che richiama i
 
 ### Creare la pagina web per l’applicazione web {#create-the-web-page-for-the-web-application}
 
-La pagina Web *index.html* fornisce un punto di ingresso al servlet Java che richiama il processo `FirstAppSolution/PreLoanProcess`. Questa pagina Web è un modulo HTML di base che contiene un modulo HTML e un pulsante di invio. Quando l&#39;utente fa clic sul pulsante di invio, i dati del modulo vengono inviati al servlet Java `SubmitXML`.
+La pagina Web *index.html* fornisce un punto di ingresso al servlet Java che richiama il processo `FirstAppSolution/PreLoanProcess`. Questa pagina Web è un modulo di base di HTML contenente un modulo di HTML e un pulsante di invio. Quando l&#39;utente fa clic sul pulsante di invio, i dati del modulo vengono inviati al servlet Java `SubmitXML`.
 
 Il servlet Java acquisisce i dati pubblicati dalla pagina HTML utilizzando il seguente codice Java:
 
@@ -368,7 +368,7 @@ Il servlet Java acquisisce i dati pubblicati dalla pagina HTML utilizzando il se
  String amount = request.getParameter("amount");
 ```
 
-Il codice HTML seguente rappresenta il file index.html creato durante l’installazione dell’ambiente di sviluppo. (Vedi [Creare un progetto Web](invoking-human-centric-long-lived.md#create-a-web-project).)
+Il seguente codice HTML rappresenta il file index.html creato durante l’installazione dell’ambiente di sviluppo. (Vedi [Creare un progetto Web](invoking-human-centric-long-lived.md#create-a-web-project).)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
@@ -423,7 +423,7 @@ L’illustrazione seguente mostra il contenuto del progetto Eclipse, inserito in
 
 >[!NOTE]
 >
->Nell’illustrazione precedente, il file JPG può essere sostituito da qualsiasi file di immagine JPG.
+>Nell&#39;illustrazione precedente, il file JPG può essere sostituito da qualsiasi file di immagine JPG.
 
 **Creare il pacchetto di un&#39;applicazione Web in un file WAR:**
 
@@ -445,7 +445,7 @@ Dopo aver distribuito l’applicazione web, puoi testarla utilizzando un browser
 
 * http://localhost:8080/PreLoanProcess/index.html
 
-  Immettere i valori nei campi del modulo HTML e fare clic sul pulsante Sottometti applicazione. Se si verificano problemi, vedere il file di registro del server applicazioni J2EE.
+  Immettere i valori nei campi del modulo di HTML e fare clic sul pulsante Invia applicazione. Se si verificano problemi, vedere il file di registro del server applicazioni J2EE.
 
 >[!NOTE]
 >
@@ -487,7 +487,7 @@ Avviso in Riferimenti servizio sono disponibili due elementi. Il primo elemento 
 1. Nell&#39;elenco **Modelli** selezionare **ASP.NET sito Web**.
 1. Nella casella **Posizione** selezionare una posizione per il progetto. Denomina il progetto *InvokePreLoanProcess*.
 1. Nella casella **Lingua** selezionare Visual C#
-1. Fare clic su OK.
+1. Fai clic su OK.
 
 **Aggiungi riferimenti al servizio:**
 
@@ -593,7 +593,7 @@ Per creare una pagina ASP che richiami il processo `FirstAppSolution/PreLoanProc
 1. Impostare il membro dati `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
 1. Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-   * Assegnare il nome utente dei moduli AEM al membro dati `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.UserName`.
+   * Assegnare il nome utente di AEM Forms al membro dati `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.UserName`.
    * Assegnare il valore della password corrispondente al membro dati `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.Password`.
    * Assegnare il valore costante `HttpClientCredentialType.Basic` al membro dati `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al membro dati `BasicHttpBindingSecurity.Security.Mode`.
@@ -829,7 +829,7 @@ dove localhost è il nome del server web che ospita il progetto ASP.NET e 1629 �
 
 ## Creazione di un&#39;applicazione client creata con Flex che richiama un processo di lunga durata incentrato sull&#39;uomo {#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process}
 
-È possibile creare un&#39;applicazione client creata con Flex per richiamare il processo *FirstAppSolution/PreLoanProcess*. Questa applicazione utilizza la funzionalità di comunicazione remota per richiamare il processo *FirstAppSolution/PreLoanProcess*. (Vedi [Chiamata di AEM Forms tramite (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+È possibile creare un&#39;applicazione client creata con Flex per richiamare il processo *FirstAppSolution/PreLoanProcess*. Questa applicazione utilizza la funzionalità di comunicazione remota per richiamare il processo *FirstAppSolution/PreLoanProcess*. (Vedi [Chiamata di AEM Forms tramite (obsoleto per AEM Forms) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 L’illustrazione seguente mostra un’applicazione client creata con Flex che raccoglie dati da un utente finale. I dati vengono inseriti in un&#39;origine dati XML e inviati al processo.
 

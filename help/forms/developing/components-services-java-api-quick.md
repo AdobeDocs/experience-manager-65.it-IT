@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 0%
 Java™ API Quick Start (SOAP) è disponibile per componenti e servizi.
 
 
-[Quick Start (modalità SOAP): distribuzione di un componente utilizzando Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
+[Guida rapida (modalità SOAP): distribuzione di un componente tramite l’API Java™](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
-[Quick Start (modalità SOAP): impostazione del contesto di esecuzione di un servizio utilizzando Java](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
+[Quick Start (modalità SOAP): impostazione del contesto di esecuzione di un servizio utilizzando l’API Java™](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
 
-[Quick Start (modalità SOAP): disabilitazione della sicurezza del servizio tramite Java](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
+[Quick Start (modalità SOAP): disabilitazione della sicurezza del servizio tramite l’API Java™](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
 
-[Quick Start (modalità SOAP): avvio di un servizio utilizzando Java](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
+[Quick Start (modalità SOAP): avvio di un servizio utilizzando l’API Java™](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
 
-[Quick Start (modalità SOAP): modifica dei valori di configurazione del servizio tramite Java](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+[Guida rapida (modalità SOAP): modifica dei valori di configurazione del servizio tramite l’API Java™](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
 
-[Quick Start (modalità SOAP): rimozione di componenti tramite Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+[Guida rapida (modalità SOAP): rimozione di componenti tramite l’API Java™](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
@@ -42,13 +42,13 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->Gli avvii rapidi nella programmazione con i moduli AEM si basano sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi nella programmazione con i moduli di AEM si basano sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >Se si dispone di un componente personalizzato e si utilizzano protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate smettono di funzionare dopo un aggiornamento, utilizzare la strategia di chiamata in-VM. Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando i protocolli SOAP o EJB.
 
-## Quick Start (modalità SOAP): distribuzione di un componente utilizzando l’API Java™ {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+## Guida rapida (modalità SOAP): distribuzione di un componente tramite l’API Java™ {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
 Nell&#39;esempio Java™ seguente viene distribuito un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
 
@@ -525,7 +525,7 @@ Nell&#39;esempio Java™ seguente vengono modificati i valori di configurazione 
  
 ```
 
-## Quick Start (modalità SOAP): rimozione di componenti tramite l’API Java™ {#quick-start-soap-mode-removing-components-using-the-java-api}
+## Guida rapida (modalità SOAP): rimozione di componenti tramite l’API Java™ {#quick-start-soap-mode-removing-components-using-the-java-api}
 
 Il seguente esempio di codice Java™ rimuove un componente utilizzando l’API Java™.
 

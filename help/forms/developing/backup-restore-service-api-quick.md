@@ -1,5 +1,5 @@
 ---
-title: Servizio di backup e ripristino APIQuesto avvio
+title: Avvio rapido di API per il servizio di backup e ripristino
 description: Scopri in che modo l’API di backup e ripristino di AEM Forms Quick Starts consente processi efficienti di creazione e ripristino dei backup.
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 0%
+source-wordcount: '261'
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Java™ API Quick Start (SOAP) è disponibile per l’API del servizio Backup e ripristino.
+Java™ API Quick Start(SOAP) è disponibile per l’API del servizio Backup e ripristino.
 
-[Guida introduttiva: attivazione della modalità di backup con Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Guida introduttiva: attivazione della modalità di backup con l’API Java™ (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Guida introduttiva: uscire dalla modalità di backup con Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Guida introduttiva: uscire dalla modalità di backup con l’API Java™ (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
@@ -147,7 +147,7 @@ Il seguente esempio di codice Java™ entra in modalità di backup con un’etic
  
 ```
 
-## Guida rapida (modalità SOAP): uscire dalla modalità di backup utilizzando l’API Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Quick Start (modalità SOAP): uscita dalla modalità di backup tramite l’API Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
 Nell&#39;esempio di codice Java™ riportato di seguito un server Forms esce in modo esplicito dalla modalità di backup e ritorna alla rimozione dei file da Global Document Storage. (Vedere [Uscita dalla modalità di backup in Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
