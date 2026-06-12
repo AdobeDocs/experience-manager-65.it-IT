@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c98a3d8a9ece450b120c80e99a1c09fce81f29dd
+source-git-commit: 0f718a65a5aa0257a1507f3c9541dba84d861ea3
 workflow-type: tm+mt
-source-wordcount: '4289'
+source-wordcount: '3491'
 ht-degree: 1%
 
 ---
@@ -47,76 +47,6 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
   </tr>
   <tr>
     <td>
-      <strong>18 febbraio 2026</strong><br>
-      <em>Si applica a:</em> AEM Forms su JEE Service Pack 6.5.24.0<br>
-    </td>
-    <td>
-    <ul>
-    <strong>Jboss:</strong>
-    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/jboss/adobe-aem-forms-jee-hotfix-6.5.24.0-win-jboss.zip">Hotfix per AEM Service Pack 6.5.24.0 su Windows per il server JEE JBoss</a></li>
-    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/jboss/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-jboss.zip">Hotfix per AEM Service Pack 6.5.24.0 su Linux per il server JEE JBoss</a></li>
-    <strong>Logica Web:</strong>
-    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/weblogic/adobe-aem-forms-jee-hotfix-6.5.24.0-win-weblogic.zip">Hotfix per AEM Service Pack 6.5.24.0 su Windows per il server JEE Weblogic</a></li>
-    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/weblogic/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-weblogic.tar.gz">Hotfix per AEM Service Pack 6.5.24.0 su Linux per il server JEE Weblogic</a></li>
-    <strong>WebSfera:</strong>
-    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-win-websphere.zip">Hotfix per AEM Service Pack 6.5.24.0 su Windows per il server WebSphere JEE</a></li>
-    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-websphere.zip">Hotfix per AEM Service Pack 6.5.24.0 su Linux per il server WebSphere JEE</a></li>
-    </ul>
-    </td>
-    <td>
-    <ul>
-    <li><b>FORMS-23789</b> affronta i problemi relativi a Log4j in AEM Forms su JEE SP24 che hanno causato interruzioni nella registrazione e nel monitoraggio per i clienti aziendali.
-    </ul>
-    </td>
-  </tr>
-    <tr>
-    <td>
-      <strong>17 febbraio 2026</strong><br>
-      <em>Si applica a:</em> AEM Forms SP24<br>
-    </td>
-    <td>
-    <ul> <a href = "https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-GRANITE-64751-SP24-1.0.zip"> Hotfix per AEM 6.5 Forms</a>
-    </ul>
-    </td>
-    <td>
-    <ul>
-    <li><b>GRANITE-63681</b> I connettori del modello dati modulo potrebbero non riuscire ad eseguire l'autenticazione perché le parole chiave e il pattern regex richiesti non sono consentiti per impostazione predefinita.</li>
-    </ul>
-    </td>
-  </tr>
-    <tr>
-    <td>
-      <strong>17 febbraio 2026</strong><br>
-      <em>Si applica a:</em> AEM Forms SP24<br>
-    </td>
-    <td>
-    <ul>
-    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-on-add-on/adobe-aemfd-win-pkg-6.0.1454.zip">Hotfix per AEM Forms AddOn 6.0.1454 in Windows</a></li>
-    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-on-add-on/adobe-aemfd-linux-pkg-6.0.1454.zip">Hotfix per AEM Forms AddOn 6.0.1454 su Linux</a></li>
-    <li>OSX: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.0.1454.zip">Hotfix per AEM Forms AddOn 6.0.1454 su macOS</a></li>
-    </ul>
-    </td>
-    <td>
-    <ul>
-    <li><b>Le funzioni personalizzate di FORMS-23802</b> non funzionano in anteprima o pubblicazione quando il modulo adattivo è incorporato in una pagina Sites e la versione del componente core di aem-forms-core è inferiore a 1.1.76. Questo hotfix ripristina la compatibilità con le versioni precedenti di aem-forms-core-component.
-    </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <strong>10 febbraio 2026</strong><br>
-      <em>Si applica a:</em> AEM Forms SP24<br>
-    </td>
-    <td>
-    <ul> <a href = "https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip"> Hotfix per il componente aggiuntivo AEM 6.5 Forms</a>
-    </ul>
-    </td>
-    <td>
-    <ul>
-    <li><b>FORMS-23875</b> Nella ricerca del modello dati modulo, un tag HTML viene visualizzato nell'interfaccia utente anche quando non è presente un'entità rilevante.
-      <ul></tr>
-  <tr>
-    <td>
       <strong>14 ottobre 2025</strong><br>
       <em>Si applica a:</em> Errore di ImgToPdf con AEM Forms SP23 Jboss<br>
     </td>
@@ -126,8 +56,10 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     </td>
     <td>
     <ul>
-    <li> <b>(FORMS-22029):</b> Migliora l'affidabilità della conversione PDF risolvendo un problema che impedisce a PDF Generator (PDFG) di convertire i file immagine in PDF dopo l'aggiornamento a SP23, causando errori imprevisti di post-elaborazione.
-      <ul></tr>
+    <li> <b>(FORMS-22029):</b> Migliora l'affidabilità della conversione PDF risolvendo un problema che impedisce a PDF Generator (PDFG) di convertire i file immagine in PDF dopo l'aggiornamento a SP23, causando errori imprevisti di post-elaborazione.</li>
+    </ul>
+    </td>
+  </tr>
   <tr>
     <td>
       <strong>23 settembre 2025</strong><br>
@@ -148,15 +80,11 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     <td>
     <ul>
     <strong>Questo aggiornamento rapido corregge i seguenti problemi:</strong> 
-    <li> <b>(FORMS-21378):</b> È stata migliorata l'affidabilità dell'invio dei moduli grazie alla risoluzione di un problema che impediva l'invio quando la convalida lato server (SSV) è abilitata e le informazioni di Meta calcolate sono vuote.
-
-<li> <b>(FORMS-21721):</b> È stato risolto un problema che impediva le conversioni da PS a PDF e da HTML a PDF (WebKit) dopo la distribuzione dell'hotfix (rilasciato il <b>05 agosto 2025</b>) per 6.5.23.0. 
+   <li> <b>(FORMS-21721):</b> È stato risolto un problema che impediva le conversioni da PS a PDF e da HTML a PDF (WebKit) dopo la distribuzione dell'hotfix (rilasciato il <b>05 agosto 2025</b>) per 6.5.23.0. 
     </li>
     </ul>
     </td>    
   </tr>
-    </ul>
-    </td>
   <tr>
     <td>
       <strong>5 agosto 2025</strong><br>
@@ -286,28 +214,15 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     <td>sabato 21 giugno 2024</td>
      <td>
      <ul>
-     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Hotfix per AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 sul server JEE JBoss </a> </li>
-      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Hotfix per AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 sul server JEE Weblogic </a> </li>
-       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Hotfix per AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 sul server WebShpere JEE </a> </li>
-        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Hotfix per AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 sul server OSGi </a> </li>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix per AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 sul server JEE JBoss </a> </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix per AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 sul server JEE Weblogic </a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix per AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 sul server WebShpere JEE </a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix per AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 sul server OSGi </a> </li>
      </ul>
      </td>
     <td>
     <ul>
     <li> Dopo l'aggiornamento ad AEM Forms Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0, il servizio PaperCapture non riesce a eseguire le operazioni OCR (Optical Character Recognition) sui PDF. Per le istruzioni di installazione, fare riferimento all'articolo <a href="/help/forms/using/papercapture-service-resolution.md"> sulla risoluzione dei problemi</a>.(CQDOC-21680) </li>
-    </ul>
-    </td>    
-  </tr>
-  <tr>
-    <td>sabato 21 giugno 2024</td>
-     <td>
-     <ul>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip">Hotfix per AEM Service Pack 6.5.21.0 </a> </li>
-     </ul>
-     </td>
-    <td>
-    <ul>
-    <li>Le lettere bozza con dati XML si bloccano nello stato di caricamento durante l'anteprima. Per le istruzioni di download e installazione dell'hotfix, fare riferimento alla sezione <a href="#install-hotfix"> Download e installazione hotfix per bozza di lettera problema</a>.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
@@ -328,7 +243,6 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      <li>Quando un modulo adattivo viene inviato da un’istanza Adobe Experience Manager Publish a un flusso di lavoro Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati.  (FORMS-14209) </li>
      <li> Durante l’installazione del pacchetto AEM 6.5 Forms Service Pack 20 (pacchetto del componente aggiuntivo AEM Forms per SP20), l’interfaccia utente di AEM Sites presenta un significativo deterioramento delle prestazioni.  (FORMS-13791) </li>
      <li>Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)</li>
-     <li>Le configurazioni che utilizzano il servizio cloud legacy per Adobe Analytics con autenticazione basata sulle credenziali utente non funzionano correttamente, causando l’errore di esecuzione delle regole di analisi. (FORMS-15428)
     </ul>
     </td>    
   </tr>
@@ -351,7 +265,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-win-pkg-6.0.1016-004.zip">Hotfix per AEM Service Pack 6.5.18.0 per Microsoft Windows</a> </li>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-linux-pkg-6.0.1016-004.zip">Hotfix per AEM Service Pack 6.5.18.0 per Linux</a></li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-osx-pkg-6.0.1016-004.zip">Hotfix per AEM Service Pack 6.5.18.0 per Apple macOS</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-osx-pkg-6.0.1016-004.zip">Hotfix per AEM Service Pack 6.5.18.0 per Apple macOS</a></li> 
      </ul>
      </td>
     <td>
@@ -377,7 +291,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     </ul>
     </td>    
   </tr>
-  <tbody>
+  </tbody>
 </table>
 
 ## Scaricare e installare un aggiornamento rapido OSGi {#download-install-hotfix}
@@ -393,10 +307,106 @@ Per scaricare e installare l’Hotfix, effettua le seguenti operazioni:
 
 Per istruzioni su come installare una patch JEE, consulta la [documentazione del programma di installazione di AEM Forms JEE Patch](/help/release-notes/jee-patch-installer-65.md).
 
+<!--
+Retained for retrieval: hotfix entries hidden because issues are fixed in AEM Forms 6.5.25.0 or earlier.
+Issues: FORMS-14521, FORMS-15428, FORMS-21378, FORMS-23789, FORMS-23802, FORMS-23875, GRANITE-63681
 
-## Scarica e installa l’hotfix per il problema della bozza di lettera {#install-hotfix}
+  <tr>
+    <td>
+      <strong>Feb 18, 2026</strong><br>
+      <em>Applies to:</em> AEM Forms on JEE Service Pack 6.5.24.0<br>
+    </td>
+    <td>
+    <ul>
+    <strong>Jboss:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/jboss/adobe-aem-forms-jee-hotfix-6.5.24.0-win-jboss.zip">Hotfix for AEM Service Pack 6.5.24.0 on Windows for JBoss JEE server</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/jboss/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-jboss.zip">Hotfix for AEM Service Pack 6.5.24.0 on Linux for JBoss JEE server</a></li>
+    <strong>Weblogic:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/weblogic/adobe-aem-forms-jee-hotfix-6.5.24.0-win-weblogic.zip">Hotfix for AEM Service Pack 6.5.24.0 on Windows for Weblogic JEE server</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/weblogic/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-weblogic.tar.gz">Hotfix for AEM Service Pack 6.5.24.0 on Linux for Weblogic JEE server</a></li>
+    <strong>Websphere:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-win-websphere.zip">Hotfix for AEM Service Pack 6.5.24.0 on Windows for Websphere JEE server</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-websphere.zip">Hotfix for AEM Service Pack 6.5.24.0 on Linux for Websphere JEE server</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-23789</b> Addresses Log4j-related issues in AEM Forms on JEE SP24 that caused disruptions in logging and monitoring for enterprise customers.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Feb 17, 2026</strong><br>
+      <em>Applies to:</em> AEM Forms SP24<br>
+    </td>
+    <td>
+    <ul> <a href = "https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-GRANITE-64751-SP24-1.0.zip"> AEM 6.5 Forms Hotfix</a>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>GRANITE-63681</b> Form Data Model connectors may fail to authenticate because the required keywords and regex pattern are not allowed by default.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Feb 17, 2026</strong><br>
+      <em>Applies to:</em> AEM Forms SP24<br>
+    </td>
+    <td>
+    <ul>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-on-add-on/adobe-aemfd-win-pkg-6.0.1454.zip">Hotfix for AEM Forms AddOn 6.0.1454 on Windows</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-on-add-on/adobe-aemfd-linux-pkg-6.0.1454.zip">Hotfix for AEM Forms AddOn 6.0.1454 on Linux</a></li>
+    <li>OSX: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.0.1454.zip">Hotfix for AEM Forms AddOn 6.0.1454 on macOS</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-23802</b> Custom functions do not work in preview or publish when the Adaptive Form is embedded in a Sites page and the aem-forms-core-component version is less than 1.1.76. This hotfix restores backward compatibility with older aem-forms-core-component versions.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Feb 10, 2026</strong><br>
+      <em>Applies to:</em>  AEM Forms SP24<br>
+    </td>
+    <td>
+    <ul> <a href = "https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip"> AEM 6.5 Forms AddOn Hotfix</a>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-23875</b> In Form Data Model search, an HTML tag is displayed in the UI even when a relevant entity is not present.</li>
+    </ul>
+    </td>
+  </tr>
 
-Per risolvere il problema, effettuare le seguenti operazioni:
+  Sept 23, 2025 — FORMS-21378 list item:
+  <li> <b>(FORMS-21378):</b> Improved form submission reliability by addressing an issue where submissions fail when Server-Side Validation (SSV) is enabled and computed Meta Info is empty.</li>
 
-1. Scarica [hotfix](#hotfix-for-adaptive-forms) dal portale di distribuzione software.
-2. Carica e installa il pacchetto (.zip) utilizzando [Gestione pacchetti CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+  June 21, 2024 — FORMS-14521 row:
+  <tr>
+    <td>June 21, 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip">Hotfix for AEM Service Pack 6.5.21.0 </a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>Draft letters with XML data are getting stuck in the loading state during preview. (FORMS-14521)</li>
+    </ul>
+    </td>
+  </tr>
+
+  May 16, 2024 — FORMS-15428 list item:
+  <li>Configurations using the legacy cloud service for Adobe Analytics with user credential-based authentication, fail to function correctly, causing the failure of analytics rules to execute. (FORMS-15428)</li>
+
+  ## Download and install hotfix for draft letter issue {#install-hotfix}
+  To resolve FORMS-14521, perform the following steps:
+  1. Download the hotfix from the Software Distribution portal.
+  2. Upload and install the package (.zip) using the CRX Package Manager.
+-->
