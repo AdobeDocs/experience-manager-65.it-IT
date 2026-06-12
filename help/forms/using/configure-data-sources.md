@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 1%
+source-wordcount: '2096'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -28,19 +28,19 @@ ht-degree: 1%
 L’integrazione dei dati di AEM Forms consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti tipi pronti all’uso. Tuttavia, con una personalizzazione ridotta, puoi integrare anche altre origini dati.
 
 * Database relazionali: MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL e Sybase
-* Profilo utente AEM
+* Profilo utente di AEM
 * Servizi Web RESTful
-* Servizi web basati su SOAP
+* Servizi Web basati su SOAP
 * Servizi OData
 
-L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), l&#39;autenticazione di base e i tipi di autenticazione con chiave API predefiniti e consente l&#39;implementazione dell&#39;autenticazione personalizzata per l&#39;accesso ai servizi Web. Mentre i servizi RESTful, basati su SOAP e OData sono configurati nei Cloud Service AEM, JDBC per i database relazionali e il connettore per il profilo utente AEM sono configurati nella console web AEM.
+L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), l&#39;autenticazione di base e i tipi di autenticazione con chiave API predefiniti e consente l&#39;implementazione dell&#39;autenticazione personalizzata per l&#39;accesso ai servizi Web. Mentre i servizi RESTful, basati su SOAP e OData sono configurati in AEM Cloud Services, JDBC per i database relazionali e il connettore per il profilo utente di AEM sono configurati nella console web di AEM.
 
 ## Configurare il database relazionale {#configure-relational-database}
 
-È possibile configurare i database relazionali utilizzando Configurazione console Web AEM. Effettua le seguenti operazioni:
+È possibile configurare i database relazionali utilizzando Configurazione della console Web di AEM. Effettua le seguenti operazioni:
 
-1. Passa alla console Web AEM all&#39;indirizzo `https://server:host/system/console/configMgr`.
-1. Cerca la configurazione dell&#39;**dell&#39;origine dati in pool di connessione Apache Sling**. Seleziona per aprire la configurazione in modalità di modifica.
+1. Passa alla console Web di AEM all&#39;indirizzo `https://server:host/system/console/configMgr`.
+1. Cerca la configurazione dell&#39;]**dell&#39;origine dati in pool di connessione Apache Sling**[!UICONTROL . Seleziona per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo di configurazione specificare i dettagli del database che si desidera configurare, ad esempio:
 
    * Nome dell’origine dati
@@ -54,7 +54,7 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
    >Prima di configurare l&#39;origine dati, assicurarsi di crittografare informazioni riservate come le password. Per crittografare:
    >
    > 1. Vai a https://&#39;[server]:[porta]&#39;/system/console/crypto.
-   > 1. Nel campo **[!UICONTROL Testo normale]**, specifica la password o qualsiasi stringa da crittografare e seleziona **[!UICONTROL Protect]**.
+   > 1. Nel campo **[!UICONTROL Testo normale]**, specifica la password o qualsiasi stringa da crittografare e seleziona **[!UICONTROL Proteggi]**.
    >
    >Il testo crittografato viene visualizzato nel campo Testo protetto che è possibile specificare nella configurazione.
 
@@ -62,7 +62,7 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
 1. Specificare una query SQL SELECT nel campo **[!UICONTROL Query di convalida]** per convalidare le connessioni dal pool. La query deve restituire almeno una riga. In base al database, specificare una delle seguenti opzioni:
 
    * SELECT 1 (MySQL e MS SQL)
-   * SELECT 1 da dual (Oracle)
+   * SELECT 1 from dual (Oracle) (Seleziona 1 da doppio)
 
 1. Seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -70,9 +70,9 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
    >
    > Se il modello dati di Forms contiene un oggetto che è una parola chiave riservata per il database relazionale, può causare problemi di aggiunta, aggiornamento o recupero di dati. Evita quindi di utilizzare tali oggetti nel modello dati del modulo.
 
-## Configurare il profilo utente AEM {#configure-aem-user-profile}
+## Configurare il profilo utente di AEM {#configure-aem-user-profile}
 
-Puoi configurare il profilo utente AEM utilizzando la configurazione del connettore profilo utente nella console web AEM. Effettua le seguenti operazioni:
+Puoi configurare il profilo utente di AEM utilizzando la configurazione del connettore profilo utente nella console web di AEM. Effettua le seguenti operazioni:
 
 1. Vai alla console Web AEM all&#39;indirizzo https://&#39;[server]:[porta]&#39;system/console/configMgr.
 1. Cerca **[!UICONTROL Integrazioni dati di AEM Forms - Configurazione connettore profilo utente]** e seleziona per aprire la configurazione in modalità di modifica.
@@ -87,7 +87,7 @@ Puoi configurare il profilo utente AEM utilizzando la configurazione del connett
 
    >[!NOTE]
    >
-   >**&#42;** nell&#39;esempio precedente denota tutti i nodi sotto il nodo `profile/empLocation/` nel profilo utente AEM nella struttura CRXDE. Ciò significa che il modello dati del modulo può accedere alla proprietà `city` di tipo `string` presente in qualsiasi nodo sotto il nodo `profile/empLocation/`. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
+   >**&#42;** nell&#39;esempio precedente denota tutti i nodi sotto il nodo `profile/empLocation/` nel profilo utente di AEM nella struttura CRXDE. Ciò significa che il modello dati del modulo può accedere alla proprietà `city` di tipo `string` presente in qualsiasi nodo sotto il nodo `profile/empLocation/`. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
 
 1. Seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -97,7 +97,7 @@ Puoi configurare il profilo utente AEM utilizzando la configurazione del connett
 >
 >Per configurare i servizi cloud per i servizi RESTful, SOAP e OData è necessaria la configurazione della cartella Servizi cloud.
 
-Tutte le configurazioni dei servizi cloud in AEM sono consolidate nella cartella `/conf` nell&#39;archivio AEM. Per impostazione predefinita, la cartella `conf` contiene la cartella `global` in cui è possibile creare configurazioni del servizio cloud. Tuttavia, devi abilitarlo manualmente per le configurazioni cloud. È inoltre possibile creare cartelle aggiuntive in `conf` per creare e organizzare le configurazioni del servizio cloud.
+Tutte le configurazioni del servizio cloud in AEM sono consolidate nella cartella `/conf` nell&#39;archivio AEM. Per impostazione predefinita, la cartella `conf` contiene la cartella `global` in cui è possibile creare configurazioni del servizio cloud. Tuttavia, devi abilitarlo manualmente per le configurazioni cloud. È inoltre possibile creare cartelle aggiuntive in `conf` per creare e organizzare le configurazioni del servizio cloud.
 
 Per configurare la cartella per le configurazioni del servizio cloud:
 
@@ -117,11 +117,11 @@ Per configurare la cartella per le configurazioni del servizio cloud:
 
 ## Configurare i servizi web RESTful {#configure-restful-web-services}
 
-È possibile descrivere il servizio Web RESTful utilizzando [le specifiche Swagger](https://swagger.io/specification/) in formato JSON o YAML in un file di definizione Swagger. Per configurare il servizio Web RESTful nei servizi cloud AEM, accertati di disporre del file Swagger sul file system o dell’URL in cui è ospitato il file.
+È possibile descrivere il servizio Web RESTful utilizzando [le specifiche Swagger](https://swagger.io/specification/) in formato JSON o YAML in un file di definizione Swagger. Per configurare il servizio web RESTful in AEM Cloud Services, accertati di disporre del file Swagger sul file system o dell’URL in cui è ospitato il file.
 
 Per configurare i servizi RESTful, effettuare le seguenti operazioni:
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](../../forms/using/configure-data-sources.md#cloud-folder).
 
@@ -153,7 +153,7 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
 1. Selezionare **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
 
-1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL &#x200B; per l&#39;origine dati REST]:
+1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL  per l&#39;origine dati REST]:
 
    * Specifica il numero massimo di connessioni consentite tra il modello di dati del modulo e i servizi Web RESTful nel campo **[!UICONTROL Limite di connessioni in totale]**. Il valore predefinito è 20 connessioni.
 
@@ -165,11 +165,11 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
    * Specificare il periodo di tempo massimo per l&#39;inattività tra due pacchetti di dati nel campo **[!UICONTROL Timeout socket]**. Il valore predefinito è 30 secondi.
 
-## Configurare i servizi web dell’SOAP {#configure-soap-web-services}
+## Configurare i servizi Web di SOAP {#configure-soap-web-services}
 
-I servizi Web basati su SOAP sono descritti utilizzando [le specifiche WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). Per configurare il servizio Web basato su SOAP nei servizi cloud AEM, verificare di disporre dell&#39;URL WSDL per il servizio Web e procedere come segue:
+I servizi Web basati su SOAP sono descritti utilizzando [le specifiche WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). Per configurare il servizio Web basato su SOAP in AEM Cloud Services, accertati di disporre dell’URL WSDL per il servizio Web e procedi come segue:
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](../../forms/using/configure-data-sources.md#cloud-folder).
 
@@ -189,14 +189,14 @@ Specificare l&#39;alias KeyStore per il certificato X509 nel campo **[!UICONTROL
 
 ## Configurare i servizi OData {#config-odata}
 
-Un servizio OData è identificato dall&#39;URL radice del servizio. Per configurare un servizio OData nei servizi cloud AEM, accertarsi di disporre dell&#39;URL principale del servizio ed eseguire le operazioni seguenti:
+Un servizio OData è identificato dall&#39;URL radice del servizio. Per configurare un servizio OData in AEM Cloud Services, accertati di disporre dell’URL principale del servizio ed effettua le seguenti operazioni:
 
 >[!NOTE]
 >
 >Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
->Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione OData di Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](../../forms/using/configure-data-sources.md#cloud-folder).
 
@@ -212,9 +212,9 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 
 1. Selezionare **Crea** per creare la configurazione cloud per il servizio OData.
 
-## Autenticazione reciproca basata su certificato per i servizi web RESTful e SOAP {#mutual-authentication}
+## Autenticazione reciproca basata su certificato per i servizi Web RESTful e SOAP {#mutual-authentication}
 
-Quando si abilita l&#39;autenticazione reciproca per il modello dati modulo, sia l&#39;origine dati che il server AEM che esegue il modello dati modulo autenticano l&#39;identità dell&#39;altro prima di condividere i dati. Puoi utilizzare l’autenticazione reciproca per le connessioni basate su REST e SOAP (origini dati). Per configurare l’autenticazione reciproca per un modello di dati modulo nell’ambiente AEM Forms:
+Quando si abilita l&#39;autenticazione reciproca per il modello dati modulo, sia l&#39;origine dati che AEM Server che esegue il modello dati modulo autenticano l&#39;identità dell&#39;altro prima di condividere i dati. È possibile utilizzare l’autenticazione reciproca per le connessioni basate su REST e SOAP (origini dati). Per configurare l’autenticazione reciproca per un modello di dati modulo nell’ambiente AEM Forms:
 
 1. Caricare la chiave privata (certificato) nel server [!DNL AEM Forms]. Per caricare la chiave privata:
    1. Accedi al server [!DNL AEM Forms] come amministratore.

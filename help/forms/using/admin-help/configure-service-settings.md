@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '10836'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '10923'
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Puoi utilizzare la pagina Gestione servizi per configurare le impostazioni per c
 
 ## Impostazioni del servizio flusso di lavoro di auditing {#audit-workflow-service-settings}
 
-Workbench consente di registrare le istanze del processo durante l’esecuzione e di riprodurle per osservare il comportamento del processo. Consulta la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it). Per risparmiare spazio sul file system del server Forms, puoi limitare la quantità di dati di registrazione del processo archiviati. Puoi configurare le seguenti proprietà del servizio flusso di lavoro di auditing ( `AuditWorkflowService`):
+Workbench consente di registrare le istanze del processo durante l’esecuzione e di riprodurle per osservare il comportamento del processo. (Consulta [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).) Per risparmiare spazio sul file system di Forms Server, è possibile limitare la quantità di dati di registrazione del processo memorizzati. Puoi configurare le seguenti proprietà del servizio flusso di lavoro di auditing ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** il numero massimo di registrazioni archiviate. Quando viene memorizzato il numero massimo, la registrazione meno recente viene rimossa dal file system quando crei una nuova registrazione. Questa proprietà è utile se tendi a creare molte registrazioni e desideri rimuovere automaticamente le registrazioni precedenti. Il valore predefinito è 50.
 
@@ -76,8 +76,8 @@ Il servizio Central Migration Bridge (`CentralMigrationBridge`) richiama un sott
 
 * progettazione modello (&amp;ast;.ifd)
 * modelli di output (&amp;ast;.mdf)
-* file di dati (&amp;ast; file .dat)
-* file preambolo (&amp;ast; file .pre)
+* file di dati (&amp;ast;.dat files)
+* file preambolo (&amp;ast;.pre files)
 * file di definizione dati (&amp;ast;.tdf)
 
 Per il servizio Central Migration Bridge è disponibile l’impostazione seguente.
@@ -106,7 +106,7 @@ L’impostazione seguente è disponibile per il servizio Content Repository Conn
 
 **Percorso predefinito oggetto Asset Link:** parte predefinita del percorso nell’archivio IBM FileNet per la conservazione dell’oggetto Asset Link. Il percorso effettivo è costituito dal percorso predefinito e dalla posizione del modello per moduli nell’archivio di AEM Forms.
 
-Ad esempio, se il percorso predefinito è impostato su `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects` e il modello per moduli è conservato in una cartella `/Docbase/forms/`, l’oggetto Asset Link viene archiviato nella posizione seguente:
+Ad esempio, se il percorso predefinito è impostato su `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects` e il modello per moduli è archiviato in una cartella `/Docbase/forms/`, l’oggetto Asset Link viene archiviato nella posizione seguente:
 
 `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects/Docbase/forms/`
 
@@ -268,8 +268,8 @@ Per il servizio di generazione PDF sono disponibili le seguenti impostazioni.
 
 **Abilita conversioni AutoCAD basate su Acrobat (solo Windows):** quando questa impostazione è vero, il servizio di generazione PDF utilizza Acrobat per tutte le conversioni da DWG a PDF. Questa impostazione è utile solo se AutoCAD non è installato sul server o se il meccanismo di conversione AutoCAD non è in grado di convertire i file.
 
-**Espressioni regolari per la ricerca di caratteri speciali
-proibiti nel nome utente (solo Windows):** specifica i caratteri che interferiscono con le operazioni di Esporta PDF e Ottimizza PDF quando i caratteri vengono visualizzati nel nome di un utente.
+**Espressioni Regolari Per La Ricerca Di Speciali Proibiti
+Caratteri nel nome utente (solo Windows):** Specifica i caratteri che interferiscono con le operazioni di Export PDF e Optimize PDF quando i caratteri vengono visualizzati nel nome di un utente.
 
 **Dimensioni pool ImageToPDF:** le dimensioni pool del convertitore da immagine a PDF predefinito (Java puro) nel servizio di generazione PDF. Questa impostazione consente di controllare il numero massimo di conversioni simultanee da immagine a PDF che il servizio di generazione PDF può eseguire. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che puoi aumentare nei sistemi a più processori.
 
@@ -299,7 +299,7 @@ proibiti nel nome utente (solo Windows):** specifica i caratteri che interferisc
 
 Quando crei una guida, alcune risorse, ad esempio la definizione della guida, sono incorporate nella guida. Le risorse possono anche esistere come riferimenti a risorse dell’applicazione memorizzate localmente o sul server AEM Forms. La guida non contiene dati e i valori per la posizione di invio e gli input non sono adatti a tutti gli ambienti esterni.
 
-Nella maggior parte dei casi, i servizi di rendering delle guide predefiniti sono sufficienti per preparare una guida da utilizzare in Workspace o in altri ambienti esterni. Nella vista Servizi, in Workbench, il servizio predefinito è Guide (sistema)/Processi/Guida rendering - 1.0. Il servizio Utility per le guide ( `GuidesUtility`) ti consente di creare un processo personalizzato per il rendering di una guida, se necessario.
+Nella maggior parte dei casi, i servizi di rendering delle guide predefiniti sono sufficienti per preparare una guida da utilizzare in Workspace o in altri ambienti esterni. Nella vista Servizi, in Workbench, il servizio predefinito è Guide (sistema)/Processi/Guida rendering - 1.0. Il servizio Utilità guida ( `GuidesUtility`) consente di creare un processo personalizzato per il rendering di una guida, se necessario.
 
 Le operazioni di Utility per le guide ti consentono di aggiungere le seguenti attività di rendering della guida a un processo:
 
@@ -320,7 +320,7 @@ I valori predefiniti per il servizio Utility per le guide supportano la maggior 
 
 **collateralExpiryInSeconds:** L’intervallo dopo il quale scade una richiesta di risorse ausiliarie da un client. Il valore predefinito è 315576000.
 
-**mismatchExpiryInSeconds:** L’intervallo dopo il quale scade una richiesta di risorse ausiliarie da un client, quando l’eTag (tag di entità) non corrisponde. (Un eTag è un’intestazione di risposta HTTP.) Il valore predefinito è 1.
+**mismatchExpiryInSeconds:** L’intervallo dopo il quale scade una richiesta di risorse ausiliarie da un client, quando l’eTag (tag di entità) non corrisponde. Un eTag è un’intestazione di risposta HTTP. Il valore predefinito è 1.
 
 **guideContext:** La radice del contesto dell’applicazione web Guide. Corrisponde al valore impostato utilizzando l’applicazione web Guide. Il valore predefinito è /Guides/.
 
@@ -420,7 +420,7 @@ A seconda del server LDAP, il nome utente potrebbe essere un nome utente semplic
 
 ## Impostazioni del servizio di configurazione di Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-Il servizio di configurazione di Microsoft SharePoint `(MSSharePointConfigService)` consente di specificare le credenziali per l’utente di AEM Forms con autorizzazioni di rappresentazione. Per informazioni sulle autorizzazioni di rappresentazione, consulta [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/it_IT/AEMForms/6.1/SharePointConfig/index.html).
+Il servizio di configurazione di Microsoft SharePoint `(MSSharePointConfigService)` consente di specificare le credenziali per l’utente di AEM Forms con autorizzazioni di rappresentazione. Per informazioni sulle autorizzazioni di rappresentazione, consulta [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 Per il servizio di configurazione di Microsoft SharePoint sono disponibili le impostazioni seguenti:
 
@@ -566,21 +566,23 @@ Per il servizio di firma sono disponibili le impostazioni seguenti.
 
 **Includi le informazioni di revoca durante la certificazione:** specifica se le informazioni di revoca vengono incorporate durante la certificazione del documento PDF. Il valore predefinito è falso.
 
-**Applica l’inclusione delle informazioni di revoca per tutti i certificati durante la firma/certificazione:** specifica se un’operazione di firma o certificazione non riesce quando non sono incorporate informazioni di revoca valide per tutti i certificati. Si noti che se un certificato non contiene informazioni CRL o OCSP, viene considerato valido anche se non vengono recuperate informazioni di revoca. Il valore predefinito è falso.
+**Applica l&#39;incorporamento delle informazioni di revoca per tutti i certificati
+Durante la firma/certificazione:** Specifica se un&#39;operazione di firma o certificazione non riesce se non sono incorporate informazioni di revoca valide per tutti i certificati. Si noti che se un certificato non contiene informazioni CRL o OCSP, viene considerato valido anche se non vengono recuperate informazioni di revoca. Il valore predefinito è falso.
 
 **Ordine di verifica della revoca:** specifica l’ordine di verifica della revoca quando la verifica è possibile tramite i meccanismi CRL (Certificate Revocation List) e OCSP (Online Certificate Status Protocol). Il valore predefinito è OCSPFirst.
 
 **Dimensione massima delle informazioni archiviate sulla revoca:** la dimensione massima delle informazioni archiviate sulla revoca in kilobyte. AEM Forms tenta di memorizzare il volume massimo possibile di informazioni della revoca senza superare il limite. Il valore predefinito è 10 KB.
 
-**Supporta le firme create con versioni pre-release dei prodotti Adobe:** quando questa opzione è selezionata, la firma creata con una versione prerelease dei prodotti Adobe verrà convalidata correttamente. Il valore predefinito è falso.
+**Firme Di Supporto Create Da Build PreRelease Di
+Prodotti Adobe:** Quando questa opzione è selezionata, la firma creata con una versione non definitiva dei prodotti Adobe verrà convalidata correttamente. Il valore predefinito è falso.
 
 **Opzione per il tempo di verifica:** specifica il tempo della verifica del certificato di un firmatario. Il valore predefinito è Ora protetta diversa dall’ora corrente.
 
-**Utilizza le informazioni di revoca archiviate nella firma durante
-la convalida:** specifica se le informazioni di revoca archiviate con la firma vengono utilizzate per il controllo della revoca. Il valore predefinito è vero.
+**Utilizzare le informazioni di revoca archiviate nella firma durante
+Convalida:** Specifica se le informazioni di revoca archiviate con la firma vengono utilizzate per il controllo della revoca. Il valore predefinito è vero.
 
-**Utilizza le informazioni di convalida archiviate nel documento per
-la convalida delle firme:** quando questa opzione è selezionata, per convalidare le firme vengono utilizzate le informazioni di convalida (incluse le informazioni di revoca e marca temporale) incorporate nel documento. Il valore predefinito è vero.
+**Utilizzare Le Informazioni Di Convalida Memorizzate Nel Documento Per
+Convalida delle firme:** Quando questa opzione è selezionata, per convalidare le firme vengono utilizzate le informazioni di convalida, incluse le informazioni di revoca e timestamp, incorporate nel documento. Il valore predefinito è vero.
 
 **Numero massimo di sessioni di verifica nidificate consentite:** numero massimo di sessioni di verifica nidificate consentite. AEM Forms utilizza questo valore per evitare un ciclo infinito durante la verifica dei certificati del firmatario OCSP o CRL quando quest’ultimo non è configurato correttamente. Il valore predefinito è 10.
 
@@ -694,7 +696,7 @@ la convalida delle firme:** quando questa opzione è selezionata, per convalidar
 
 ## Impostazioni servizio cartella controllata {#watched-folder-service-settings}
 
-Il servizio Cartella controllata ( `WatchedFolder`) configura gli attributi comuni a tutti gli endpoint della cartella controllata. Fornisce inoltre valori predefiniti per gli endpoint della cartella controllata. (Consulta [Configurazione degli endpoint della cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Non viene richiamata da applicazioni client esterne o utilizzata nei processi creati in Workbench.
+Il servizio Cartella controllata ( `WatchedFolder`) configura gli attributi comuni a tutti gli endpoint della cartella controllata. Fornisce inoltre valori predefiniti per gli endpoint della cartella controllata. (Consulta [Configurazione degli endpoint della cartella monitorata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Non viene richiamato da applicazioni client esterne o utilizzato nei processi creati in Workbench.
 
 Per il servizio Cartella controllata sono disponibili le impostazioni seguenti.
 
@@ -838,7 +840,7 @@ Vengono installati i profili di sicurezza predefiniti, che possono essere config
    * **INVOKE_PERM:** per richiamare tutte le operazioni nel servizio
    * **MODIFY_CONFIG_PERM:** per modificare la configurazione di un servizio
    * **SUPERVISOR_PERM:** per visualizzare i dati dell’istanza di processo per un servizio creato da un processo
-   * **START_STOP_PERM:** per avviare e arrestare un servizio
+   * **START_STOP_PERM:** per avviare e interrompere un servizio
    * **ADD_REMOVE_ENDPOINTS_PERM:** per aggiungere, rimuovere e modificare endpoint per un servizio
    * **CREATE_VERSION_PERM:** per creare una versione del servizio
    * **DELETE_VERSION_PERM:** per eliminare una versione del servizio

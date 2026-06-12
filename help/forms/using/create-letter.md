@@ -1,5 +1,5 @@
 ---
-title: Crea lettera
+title: Creare una lettera
 description: In questo argomento vengono descritti i passaggi necessari per creare una lettera, aggiungervi moduli di dati e allegati e visualizzarne l'anteprima in Gestione corrispondenza.
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
@@ -9,12 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '4013'
 ht-degree: 2%
 
 ---
 
-# Crea lettera {#create-letter}
+# Creare una lettera {#create-letter}
 
 ## Flusso di lavoro di gestione della corrispondenza {#correspondence-management-workflow}
 
@@ -159,7 +159,7 @@ Analizzare ogni lettera per scoprire i vari pezzi che compongono la lettera. Lo 
 
 * Le condizioni in base alle quali gli utenti aziendali, ad esempio i periti per la liquidazione dei sinistri o i lavoratori addetti ai casi, modificano il contenuto o parti della lettera.
 * Gli scenari sono narrazioni che descrivono l’esperienza utente, i requisiti e i vantaggi dell’utilizzo della soluzione Letters.
-* Gli scenari forniscono anche:le competenze e gli strumenti necessari per il progetto.
+* Gli scenari forniscono anche :The set di competenze e strumenti necessari per il progetto.
 * Best practice per la pianificazione dell’implementazione. &quot;Panoramica sull’implementazione di alto livello.
 
 ## Vantaggi dell’esecuzione dell’analisi {#benefits-of-performing-the-analysis}
@@ -228,7 +228,7 @@ Per creare una corrispondenza è necessario disporre quanto segue:
 
 * [Pacchetto di compatibilità](compatibility-package.md). Installa il pacchetto di compatibilità per visualizzare l&#39;opzione **Lettere** nella pagina **Forms**.
 * La lettera XDP ([layout](/help/forms/using/document-fragments.md)).
-* Altri XDP ([frammenti di layout](document-fragments.md#document-fragments)) che costituiscono parti della lettera. Gli XDP\Layout vengono creati in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_it).
+* Altri XDP ([frammenti di layout](document-fragments.md#document-fragments)) che costituiscono parti della lettera. Gli XDP\Layout vengono creati in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65).
 * Il dizionario dati [pertinente](/help/forms/using/data-dictionary.md) (facoltativo).
 * I [moduli dati](/help/forms/using/document-fragments.md) che desideri utilizzare nella corrispondenza.
 * [Dati di prova](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) è il file XML contenente i dati di prova. I dati di test sono necessari se si utilizza un dizionario dati.
@@ -254,7 +254,7 @@ Per creare una corrispondenza è necessario disporre quanto segue:
    * **Descrizione (facoltativo):** Descrivere la lettera per il riferimento.
    * **Dizionario dati (facoltativo)**: il dizionario dati può essere associato alla corrispondenza. Le risorse inserite successivamente in questa corrispondenza devono avere lo stesso dizionario dati scelto per la corrispondenza in questo campo o nessun dizionario dati.
    * **Tag (facoltativo):** Selezionare i tag da applicare alla corrispondenza. Puoi anche immettere un nome di tag nuovo/personalizzato e premere Invio per crearlo.
-   * **Processo Post (facoltativo):** Selezionare il processo di post da applicare al modello di lettera. Esistono processi di post predefiniti e quelli creati con l’AEM, ad esempio e-mail e stampa.
+   * **Processo post (facoltativo):** Selezionare il processo di post da applicare al modello di lettera. Esistono processi di post predefiniti e quelli creati con AEM, ad esempio e-mail e stampa.
 
    ![Proprietà corrispondenza](assets/createcorrespondenceproperties.png)
 
@@ -404,7 +404,7 @@ I seguenti valori nella tabella
    <td>N/D</td> 
   </tr> 
   <tr> 
-   <td><strong>numero intero</strong></td> 
+   <td><strong>intero</strong></td> 
    <td>Sì</td> 
    <td>No</td> 
    <td>Sì</td> 

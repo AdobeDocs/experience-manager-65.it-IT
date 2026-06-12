@@ -11,8 +11,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 5723e9990969dff1b508062d69a68f68a20eb576
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 0%
+source-wordcount: '1288'
+ht-degree: 1%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 ## Prerequisiti {#prerequisites}
 
-* Informazioni su [Modello pagina](/help/sites-authoring/templates.md) e [Authoring moduli adattivi](https://helpx.adobe.com/it/aem-forms/6-1/introduction-forms-authoring.html) dell&#39;AEM
+* Informazioni su [Modello pagina](/help/sites-authoring/templates.md) e [Authoring moduli adattivi](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html) di AEM
 
-* Informazioni sulle [librerie lato client](/help/sites-developing/clientlibs.md) dell&#39;AEM
+* Informazioni sulle [librerie lato client](/help/sites-developing/clientlibs.md) di AEM
 
 ## Modello di modulo adattivo {#adaptive-form-template}
 
@@ -36,13 +36,13 @@ Dopo la creazione di un modulo, le eventuali modifiche apportate alla struttura 
 
 ## Modelli di modulo adattivo predefiniti {#default-adaptive-form-templates}
 
-QuickStart per AEM fornisce i seguenti modelli di moduli adattivi:
+AEM QuickStart fornisce i seguenti modelli di moduli adattivi:
 
 * Modello di sondaggio: consente di creare un modulo adattivo a pagina singola utilizzando il layout reattivo con più colonne configurate. Il layout si regola automaticamente in base alle dimensioni delle varie schermate in cui si desidera visualizzare il modulo.
 * Modello di iscrizione semplice: consente di creare un modulo adattivo con più passaggi utilizzando un layout di procedura guidata. In questo layout è possibile specificare un&#39;espressione di completamento del passaggio per ogni passaggio, che viene convalidata prima che la procedura guidata passi al passaggio successivo.
 * Modello di iscrizione a schede: consente di creare un modulo adattivo con più schede utilizzando un layout tabulazioni a sinistra, in cui è possibile visitare le schede in qualsiasi ordine casuale.
 * Modello di iscrizione avanzato: consente di creare un modulo con più schede e procedura guidata. Utilizza un layout tabulazioni a sinistra che consente di visitare le schede in qualsiasi ordine. Utilizza i servizi di progettazione Adobe Document Cloud per la firma e la verifica.
-* Modello vuoto: consente di creare un modulo senza intestazione, piè di pagina e contenuto iniziale. È possibile aggiungere componenti quali caselle di testo, pulsanti e immagini. Il modello vuoto ti consente di creare un modulo che puoi [incorporare nelle pagine del sito AEM](/help/forms/using/embed-adaptive-form-aem-sites.md).
+* Modello vuoto: consente di creare un modulo senza intestazione, piè di pagina e contenuto iniziale. È possibile aggiungere componenti quali caselle di testo, pulsanti e immagini. Il modello vuoto consente di creare un modulo che è possibile [incorporare nelle pagine del sito AEM](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
 Per questi modelli la proprietà `sling:resourceType` è impostata sul componente pagina corrispondente. Il componente Pagina esegue il rendering della pagina CQ, contenente il contenitore di moduli adattivi, che a sua volta esegue il rendering del modulo adattivo.
 
@@ -52,7 +52,7 @@ La tabella seguente enumera l’associazione tra modelli e componente Pagina:
  <tbody>
   <tr>
    <td><p><strong>Modello</strong></p> </td>
-   <td><p><strong>Componente Pagina </strong></p> </td>
+   <td><p><strong>Componente Pagina</strong></p> </td>
   </tr>
   <tr>
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>
@@ -75,7 +75,7 @@ La tabella seguente enumera l’associazione tra modelli e componente Pagina:
 
 ## Creazione di un modello di modulo adattivo tramite l’editor di modelli {#creating-an-adaptive-form-template-using-template-editor}
 
-Puoi specificare la struttura e il contenuto iniziale di un modulo adattivo utilizzando l’Editor modelli. Ad esempio, si desidera che tutti gli autori di moduli dispongano di poche caselle di testo, pulsanti di spostamento e un pulsante di invio in un modulo di iscrizione. È possibile creare un modello utilizzabile dagli autori per creare un modulo coerente con altri moduli di iscrizione. L’editor di modelli AEM consente di:
+Puoi specificare la struttura e il contenuto iniziale di un modulo adattivo utilizzando l’Editor modelli. Ad esempio, si desidera che tutti gli autori di moduli dispongano di poche caselle di testo, pulsanti di spostamento e un pulsante di invio in un modulo di iscrizione. È possibile creare un modello utilizzabile dagli autori per creare un modulo coerente con altri moduli di iscrizione. L’Editor modelli di AEM consente di:
 
 * Aggiungere i componenti intestazione e piè di pagina di un modulo nel livello struttura
 * Fornire il contenuto iniziale del modulo.
@@ -109,7 +109,7 @@ Per creare un modello personalizzato, ad esempio simpleEnrollmentTemplate, effet
 
    Invece di `guideformtitle`, puoi includere un componente personalizzato o il componente `parsys`. Rimuovere ad esempio `guideformtitle` e aggiungere un componente personalizzato o il nodo del componente `parsys`. Assicurarsi che la proprietà `sling:resourceType` del componente faccia riferimento al componente e che lo stesso sia definito nel file `component.jsp` della pagina.
 
-1. Passa alla posizione /apps/mycompany/templates/enrollment-template/jcr:content.
+1. Passare alla posizione /apps/mycompany/templates/enrollment-template/jcr:content.
 
 1. Aprire la scheda **[!UICONTROL Proprietà]** e modificare il valore della proprietà `cq:designPath` in /etc/designs/mycompany.
 
@@ -128,7 +128,7 @@ Il modello personalizzato ha lo stesso stile del modello predefinito perché il 
 
    1. Per il nodo `enrollmentpage`, impostare il valore della proprietà `sling:resourceSuperType` su mycompany/components/page/contentpage. Il componente `contentpage` è il componente della pagina base per il sito. Altri componenti della pagina possono estenderlo. Rimuovere i file di script in `enrollmentpage`, ad eccezione di `head.jsp`, `content.jsp` e `library.jsp`. Il componente `sling:resourceSuperType`, che in questo caso è `contentpage`, include tutti questi script. Le intestazioni, inclusi la barra di navigazione e il piè di pagina, sono ereditati dal componente `contentpage`.
 
-   1. Aprire il file `head.jsp`.
+   1. Apri il file in `head.jsp`.
 
       Il file JSP contiene la riga `<cq.include script="library.jsp"/>`.
 

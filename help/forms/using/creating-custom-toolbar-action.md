@@ -1,5 +1,5 @@
 ---
-title: Creazione di un'azione personalizzata sulla barra degli strumenti
+title: Creazione di un’azione personalizzata sulla barra degli strumenti
 description: Gli sviluppatori di moduli possono creare azioni della barra degli strumenti personalizzate per i moduli adattivi in AEM Forms. L’utilizzo di azioni personalizzate da parte degli autori di moduli può fornire più flussi di lavoro e opzioni ai loro utenti finali.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 0%
+source-wordcount: '498'
+ht-degree: 2%
 
 ---
 
-# Creazione di un&#39;azione personalizzata sulla barra degli strumenti{#creating-a-custom-toolbar-action}
+# Creazione di un’azione personalizzata sulla barra degli strumenti{#creating-a-custom-toolbar-action}
 
 ## Prerequisiti {#prerequisite}
 
@@ -187,4 +187,4 @@ Per illustrare la creazione di un’azione personalizzata nella barra degli stru
 
 Il seguente archivio contiene un pacchetto di contenuti. Il pacchetto include un modulo adattivo relativo alla demo di cui sopra per l’azione personalizzata della barra degli strumenti.
 
-[Ottieni file](assets/customtoolbaractiondemo.zip)
+[Ottieni il file](assets/customtoolbaractiondemo.zip)

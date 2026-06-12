@@ -10,8 +10,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## Tema modulo adattivo {#adaptive-form-theme}
 
-Un **tema modulo adattivo** è una libreria client AEM utilizzata per definire gli stili (aspetto) di un modulo adattivo.
+Un **tema modulo adattivo** è una libreria client di AEM che puoi utilizzare per definire gli stili (look and feel) di un modulo adattivo.
 
 Si crea un **modello adattivo** e si applica il tema al modello. Puoi quindi utilizzare questo modello personalizzato per creare un **modulo adattivo**.
 
@@ -39,11 +39,11 @@ Si crea un **modello adattivo** e si applica il tema al modello. Puoi quindi uti
 
 >[!NOTE]
 >
->La procedura seguente viene descritta utilizzando nomi di esempio per gli oggetti AEM come nodi, proprietà e cartelle.
+>La procedura seguente viene descritta utilizzando nomi di esempio per oggetti AEM come nodi, proprietà e cartelle.
 >
 >Se si esegue la procedura seguente utilizzando i nomi, il modello risultante dovrebbe essere simile allo snapshot seguente:
 
-![Snapshot modulo adattivo a tema foresta](assets/thumbnail.png)
+![Istantanea modulo adattivo a tema foresta](assets/thumbnail.png)
 **Figura:** *Esempio di tema foresta*
 
 1. Creare un nodo di tipo `cq:ClientLibraryFolder` sotto il nodo `/apps`.

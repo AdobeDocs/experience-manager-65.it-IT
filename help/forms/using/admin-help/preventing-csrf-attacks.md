@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: ht
-source-wordcount: '955'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Ad esempio, prendi in considerazione uno scenario in cui hai effettuato l’acce
 * qualsiasi client desktop che effettua una richiesta HTTP su un endpoint SOAP o REST di AEM Forms
 * quando viene aperta una nuova finestra del browser e viene inserito l’URL per qualsiasi pagina di accesso all’applicazione web AEM forms
 
-Consentire un referrer null sugli endpoint SOAP e REST. Consenti anche un referrer nullo in tutte le pagine di accesso URI, ad esempio /adminui e /contentspace, e nelle relative risorse mappate corrispondenti. Ad esempio, il servlet mappato per /contentspace è /contentspace/faces/jsp/login.jsp, che deve essere un’eccezione referrer nullo. Questa eccezione è necessaria solo se abiliti il filtro GET per l’applicazione Web. Le applicazioni possono specificare se consentire l’utilizzo di referrer nulli. Consulta “Protezione da attacchi di vulnerabilità cross-Site request forgery” in [Protezione avanzata e sicurezza di AEM forms](https://help.adobe.com/it_IT/livecycle/11.0/HardeningSecurity/index.html).
+Consentire un referrer null sugli endpoint SOAP e REST. Consenti anche un referrer nullo in tutte le pagine di accesso URI, ad esempio /adminui e /contentspace, e nelle relative risorse mappate corrispondenti. Ad esempio, il servlet mappato per /contentspace è /contentspace/faces/jsp/login.jsp, che deve essere un’eccezione referrer nullo. Questa eccezione è necessaria solo se abiliti il filtro GET per l’applicazione Web. Le applicazioni possono specificare se consentire l’utilizzo di referrer nulli. Consulta “Protezione da attacchi di vulnerabilità cross-Site request forgery” in [Protezione avanzata e sicurezza di AEM forms](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
 **Eccezione referrer consentita:** l’eccezione referrer consentita è un sottoelenco dell’elenco dei referrer consentiti da cui le richieste sono bloccate. Le eccezioni referrer consentiti sono specifiche per un’applicazione web. Se a un sottoinsieme dei referrer consentiti non deve essere permesso di richiamare una particolare applicazione web, puoi inserire i referrer nell’elenco bloccati tramite le eccezioni referrer consentiti. Le eccezioni referrer consentiti sono specificate nel file web.xml dell’applicazione. Consulta “Protezione da attacchi di vulnerabilità cross-Site request forgery” in Rafforzamento e protezione per i moduli AEM nella pagina Guida e tutorial.
 
@@ -47,7 +47,7 @@ AEM Forms fornisce il filtro del referrer che può aiutare a prevenire gli attac
 1. Forms Server controlla il metodo HTTP utilizzato per la chiamata:
 
    * se è POST, Forms Server esegue il controllo dell’intestazione del referrer.
-   * Se si tratta di GET, Forms Server ignora il controllo del referrer, a meno che CSRF_CHECK_GETS non sia impostato su true, nel qual caso esegue il controllo dell’intestazione del referente. CSRF_CHECK_GETS è specificato nel file web.xml dell’applicazione. Consulta “Protezione da attacchi di vulnerabilità cross-Site request forgery” nella [Guida per il rafforzamento e la protezione](https://help.adobe.com/it_IT/livecycle/11.0/HardeningSecurity/index.html).
+   * Se si tratta di GET, Forms Server ignora il controllo del referrer, a meno che CSRF_CHECK_GETS non sia impostato su true, nel qual caso esegue il controllo dell’intestazione del referente. CSRF_CHECK_GETS è specificato nel file web.xml dell’applicazione. Consulta “Protezione da attacchi di vulnerabilità cross-Site request forgery” nella [Guida per il rafforzamento e la protezione](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
 1. Forms Server verifica se l’URI richiesto è inserito nell’elenco consentiti:
 
@@ -68,7 +68,7 @@ AEM Forms fornisce il filtro del referrer che può aiutare a prevenire gli attac
 
 Quando esegui Configuration Manager, l’host e l’indirizzo IP predefiniti o il server Forms vengono aggiunti all’elenco Referrer consentiti. Puoi modificare questo elenco nella console di amministrazione.
 
-1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utenti > Configurazione > Configura URL referrer consentiti. L’elenco Referrer consentiti viene visualizzato nella parte inferiore della pagina.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Configura URL referente consentiti. L&#39;elenco Referenti consentiti viene visualizzato nella parte inferiore della pagina.
 1. Per aggiungere un referrer consentito:
 
    * Digita un nome host o un indirizzo IP nella casella Referrer consentiti. Per aggiungere più di un referrer consentito alla volta, digita ogni nome host o indirizzo IP in una nuova riga.

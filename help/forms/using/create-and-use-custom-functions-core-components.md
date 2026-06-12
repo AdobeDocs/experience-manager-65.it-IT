@@ -8,7 +8,7 @@ role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3342'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Le funzioni personalizzate sono essenzialmente librerie client aggiunte al file 
 
 >[!NOTE]
 >`[functionName]` è il nome della funzione. Gli spazi non sono consentiti.
->`<Function Name>` è il nome visualizzato della funzione nell’editor di regole di Adaptive Forms.
+>`<Function Name>` è il nome visualizzato della funzione nell&#39;editor di regole di Adaptive Forms.
 >Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi.
 
 #### Parametro
@@ -355,7 +355,7 @@ OPPURE
 
 ### Creare una libreria client utilizzando Archetipo progetto AEM{#create-client-library-archetype}
 
-È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando Archetipo progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Se hai un progetto esistente <!--and have already the project structure as shown in the image below,--> puoi aggiungere direttamente [funzioni personalizzate](#create-add-custom-function) al progetto locale.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -537,7 +537,7 @@ Ora vediamo come configurare e utilizzare una funzione personalizzata utilizzand
 ## Utilizzo di una funzione personalizzata in un modulo adattivo {#use-custom-functions}
 
 In un modulo adattivo, puoi utilizzare [funzioni personalizzate all&#39;interno dell&#39;editor di regole](/help/forms/using/rule-editor-core-components.md).
-Aggiungiamo il codice seguente al file JavaScript (`Function.js` file) per calcolare l&#39;età in base alla data di nascita (AAAA-MM-GG). Creare una funzione personalizzata come `calculateAge()` che utilizza come input la data di nascita e restituisce l&#39;età:
+Aggiungiamo il seguente codice al file JavaScript (`Function.js` file) per calcolare l&#39;età in base alla data di nascita (AAAA-MM-GG). Creare una funzione personalizzata come `calculateAge()` che utilizza come input la data di nascita e restituisce l&#39;età:
 
 ```javascript
     /**
@@ -572,7 +572,7 @@ Visualizziamo in anteprima il modulo per osservare come le funzioni personalizza
 
 >[!NOTE]
 >
-> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza di AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza di AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Supporto delle funzioni asincrone nelle funzioni personalizzate {#support-of-async-functions}
 
