@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '685'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ Gli articoli rappresentano il testo basato sull&#39;arte per trasmettere informa
 >
 >Consulta le seguenti risorse nella Guida in linea per scoprire i seguenti argomenti nelle app AEM Mobile:
 >
->* [Considerazioni sulla progettazione](https://helpx.adobe.com/it/digital-publishing-solution/help/design-app.html)
+>* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Gestione degli articoli](https://helpx.adobe.com/it/digital-publishing-solution/help/creating-articles.html)
+>* [Gestione degli articoli](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Creazione di un articolo {#creating-an-article}
@@ -49,7 +49,7 @@ Il flusso di lavoro generale per la creazione di un articolo è il seguente:
 
 ## Importazione di un nuovo articolo {#importing-a-new-article}
 
-Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand a AEM. Ciò consente di modificare e visualizzare contenuti locali.
+Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand ad AEM. Ciò consente di modificare e visualizzare contenuti locali.
 
 >[!NOTE]
 >
@@ -70,11 +70,11 @@ Flusso di lavoro per importare un nuovo articolo
 
 ## Modifica di un articolo {#editing-an-article}
 
-Utilizza l’editor integrato di trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da DAM Assets.
+Utilizza l’editor Trascina e rilascia integrato in AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da DAM Assets.
 
 >[!CAUTION]
 >
->Solo gli articoli creati nell’AEM possono essere aperti nell’editor.
+>Solo gli articoli creati in AEM possono essere aperti nell’editor.
 
 Flusso di lavoro per modificare un articolo:
 

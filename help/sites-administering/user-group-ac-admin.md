@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3107'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ In CRX, ogni account utente è un nodo nell’area di lavoro. Un account utente 
 
 * È possibile specificare i diritti di accesso per l&#39;account utente.
 
-  Tuttavia, per semplificare la gestione, Adobe consiglia di assegnare (nella maggior parte dei casi) i diritti di accesso agli account dei gruppi. L’assegnazione dei diritti di accesso a ogni singolo utente diventa rapidamente difficile da gestire (le eccezioni sono determinate dagli utenti del sistema quando esistono solo una o due istanze).
+  Tuttavia, per semplificare la gestione, Adobe consiglia di assegnare (nella maggior parte dei casi) i diritti di accesso agli account del gruppo. L’assegnazione dei diritti di accesso a ogni singolo utente diventa rapidamente difficile da gestire (le eccezioni sono determinate dagli utenti del sistema quando esistono solo una o due istanze).
 
 **Account gruppo** - Gli account gruppo sono insiemi di utenti e/o altri gruppi. Questi vengono utilizzati per semplificare la gestione in quanto una modifica dei diritti di accesso assegnati a un gruppo viene applicata automaticamente a tutti gli utenti di tale gruppo. Un utente non deve necessariamente appartenere a nessun gruppo, ma spesso appartiene a più gruppi.
 
@@ -437,7 +437,7 @@ In alternativa, eliminare un membro esistente con il simbolo del cestino.
 
 ## Gestione diritti di accesso {#access-right-management}
 
-Con la scheda **Controllo di accesso** di CRXDE Lite, puoi definire i criteri di controllo di accesso e assegnare i relativi privilegi.
+Con la scheda **Controllo di accesso** di CRXDE Lite, è possibile definire i criteri di controllo di accesso e assegnare i relativi privilegi.
 
 Ad esempio, per **Percorso corrente** selezionare la risorsa richiesta nel riquadro sinistro, la scheda Controllo di accesso nel riquadro inferiore destro:
 
@@ -485,7 +485,7 @@ I criteri possono essere selezionati per:
 
 >[!NOTE]
 >
->Per semplificare la gestione, l&#39;Adobe consiglia di assegnare i diritti di accesso agli account dei gruppi e non ai singoli account utente.
+>Per semplificare la gestione, Adobe consiglia di assegnare i diritti di accesso agli account dei gruppi e non ai singoli account utente.
 >
 >È più facile gestire alcuni gruppi, piuttosto che molti account utente.
 
@@ -512,7 +512,7 @@ Durante l&#39;aggiunta di una voce di controllo di accesso è possibile selezion
    <td>Si tratta di un privilegio di aggregazione che contiene tutti gli altri privilegi predefiniti.</td>
   </tr>
   <tr>
-   <td><strong>Avanzate </strong></td>
+   <td><strong>Avanzate</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -561,7 +561,7 @@ Durante l&#39;aggiunta di una voce di controllo di accesso è possibile selezion
   </tr>
   <tr>
    <td><code>jcr:removeNode</code></td>
-   <td>Rimuovere un nodo.</td>
+   <td>Rimuovi un nodo.</td>
   </tr>
   <tr>
    <td><code>jcr:retentionManagement</code></td>

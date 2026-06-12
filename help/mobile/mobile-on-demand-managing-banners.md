@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '666'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ I banner rappresentano in genere collegamenti promozionali grafici.
 >
 >Consulta le seguenti risorse nella Guida in linea per scoprire i seguenti argomenti nelle app AEM Mobile:
 >
->* [Considerazioni sulla progettazione](https://helpx.adobe.com/it/digital-publishing-solution/help/design-app.html)
+>* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Creazione di banner](https://helpx.adobe.com/it/digital-publishing-solution/help/creating-banners.html)
+>* [Creazione di banner](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Creazione di un banner {#creating-a-banner}
@@ -50,7 +50,7 @@ Il flusso di lavoro generale per la creazione di un articolo è il seguente:
 
 ## Importazione di un nuovo banner {#importing-a-new-banner}
 
-Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand a AEM. Ciò consente di modificare e visualizzare contenuti locali.
+Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand ad AEM. Ciò consente di modificare e visualizzare contenuti locali.
 
 >[!NOTE]
 >
@@ -69,16 +69,16 @@ Flusso di lavoro per importare un nuovo articolo
 
 ## Modifica di un banner {#editing-a-banner}
 
-Utilizza l’editor integrato di trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da DAM Assets.
+Utilizza l’editor Trascina e rilascia integrato in AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da DAM Assets.
 
 >[!CAUTION]
 >
->Solo i banner creati nell&#39;AEM possono essere aperti nell&#39;editor.
+>Nell’editor è possibile aprire solo i banner creati in AEM.
 
 Flusso di lavoro per modificare un articolo:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Seleziona un banner di origine AEM dal riquadro **&#x200B; Gestisci banner**.
+1. Seleziona un banner originato da AEM dal riquadro **&#x200B; Gestisci banner**.
 1. Fai clic sul banner evidenziato nella vista a elenco per aprirlo nell’editor di contenuti.
 1. Utilizza l’editor di contenuti per trascinare il contenuto del banner (manoscritti, immagini, testo e così via).
 

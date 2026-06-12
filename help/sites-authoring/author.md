@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 28%
+source-wordcount: '499'
+ht-degree: 26%
 
 ---
 
@@ -72,14 +72,14 @@ Se il sito AEM è un [sito community](/help/communities/overview.md) o include [
 >
 >Sfortunatamente a volte c&#39;è una sovrapposizione nella terminologia utilizzata. Ciò può accadere con:
 >
->* **Pubblicare/Annullare la pubblicazione**
->  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>* **Pubblica/Annulla pubblicazione**
+>  Questi sono i termini principali delle azioni che rendono i contenuti disponibili al pubblico nell&#39;ambiente di pubblicazione (o meno).
 >
->* **Attivare/Disattivare**
->  Sinonimi di pubblicare/annullare la pubblicazione.
+>* **Attiva/Disattiva**
+>  Questi termini sono sinonimi di pubblicazione/annullamento pubblicazione.
 >
->* **Replicare/Replica**
->  Questi sono i termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ovvero durante la pubblicazione o la replica inversa di commenti degli utenti.
+>* **Replica/Replica**
+>  Questi sono i termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all&#39;altro, ovvero durante la pubblicazione o la replica inversa di commenti degli utenti.
 >
 
 #### Dispatcher {#dispatcher}

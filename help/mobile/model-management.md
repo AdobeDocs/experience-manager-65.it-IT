@@ -10,7 +10,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 La gestione dei modelli comporta la creazione e la gestione di modelli per l’associazione a eventuali oggetti dati. Ogni modello include tutte le proprietà e le definizioni dei campi necessarie per facilitare la creazione e il rendering degli oggetti.
 
-Gestione modelli prevede la creazione di **modelli**, **entità** e **spazi**. Il diagramma seguente illustra la relazione tra il contenuto dell’AEM e i modelli.
+Gestione modelli prevede la creazione di **modelli**, **entità** e **spazi**. Il diagramma seguente illustra la relazione tra il contenuto di AEM e i modelli.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -29,11 +29,11 @@ Gestione modelli prevede la creazione di **modelli**, **entità** e **spazi**. I
 
 Un modello descrive il tipo di contenuto e indica quali informazioni sono disponibili per l&#39;applicazione nativa. È una descrizione di ciò che costituisce un contenuto. Un modello di contenuto è costituito dalle regole per la creazione di un contenuto. Il modello di contenuto include i dati disponibili, le risorse utilizzabili, la relazione tra risorse e dati, la relazione con altri modelli di contenuto e i metadati disponibili.
 
-I modelli fungono anche da modo per trasformare i contenuti AEM esistenti in oggetti che possono essere facilmente utilizzati dalle app native per dispositivi mobili.
+I modelli consentono inoltre di trasformare i contenuti AEM esistenti in oggetti facilmente utilizzabili dalle app native per dispositivi mobili.
 
-Content Services fornisce alcuni modelli predefiniti per oggetti comuni come risorse, raccolte di risorse, pagine HTML, configurazioni di app e pagine indipendenti dal canale. Sono configurabili in modo da soddisfare le esigenze specifiche dei clienti senza richiedere attività di sviluppo per l’AEM.
+Content Services fornisce alcuni modelli predefiniti per oggetti comuni come risorse, raccolte di risorse, pagine HTML, configurazioni di app e pagine indipendenti dal canale. Questi sono configurabili in modo da soddisfare le esigenze specifiche dei clienti senza richiedere un impegno di sviluppo AEM.
 
-Gli utenti possono creare i propri modelli. In questo modo è possibile creare nuovi tipi di contenuto non ancora gestiti dall’AEM. La creazione del modello viene eseguita tramite un&#39;interfaccia utente che utilizza i tipi primitivi esistenti.
+Gli utenti possono creare i propri modelli. In questo modo è possibile creare nuovi tipi di contenuto non ancora gestiti da AEM. La creazione del modello viene eseguita tramite un&#39;interfaccia utente che utilizza i tipi primitivi esistenti.
 
 Il diagramma seguente illustra il modello di contenuto per le app AEM Mobile e il modo in cui entità, cartelle e spazi vengono assegnati a un’app.
 
@@ -41,7 +41,7 @@ Il diagramma seguente illustra il modello di contenuto per le app AEM Mobile e i
 
 ### Modelli {#the-models}
 
-I modelli vengono utilizzati per determinare la modalità di creazione delle entità. Definiscono cosa è disponibile in un’entità e come quei dati vengono generati dal contenuto dell’AEM. Prima di iniziare a lavorare con spazi, cartelle ed entità, è necessario avere familiarità con la creazione e la gestione dei modelli.
+I modelli vengono utilizzati per determinare la modalità di creazione delle entità. Definiscono cosa è disponibile in un’entità e come quei dati vengono generati dal contenuto di AEM. Prima di iniziare a lavorare con spazi, cartelle ed entità, è necessario avere familiarità con la creazione e la gestione dei modelli.
 
 >[!NOTE]
 >
@@ -54,22 +54,22 @@ Per creare e gestire modelli nel dashboard e nel repository, vedere **[Modelli](
 
 Un&#39;entità è un&#39;istanza di un modello di contenuto. Un’entità viene esposta alla libreria lato client tramite l’API Content Services e consente a un’app nativa di accedere al contenuto in modo indipendente dal canale.
 
-Se è presente un contenuto AEM, un’entità viene generata utilizzando un modello e l’origine del contenuto AEM. Ad esempio, un’entità pagina è un oggetto indipendente dal canale e dal layout generato da una pagina AEM e dal modello della pagina.
+Se è presente del contenuto AEM esistente, un’entità viene generata utilizzando un modello e l’origine di contenuto AEM. Ad esempio, un’entità pagina è un oggetto indipendente dal canale e dal layout generato da una pagina AEM e dal modello della pagina.
 
-Le modifiche al contenuto di riferimento di un’entità determinano una modifica dell’entità. Se ad esempio si aggiorna una *cq:page*, verranno aggiornate anche tutte le entità basate su tale pagina.
+Le modifiche al contenuto di riferimento di un’entità determinano una modifica dell’entità. Ad esempio, se un *cq:page* viene aggiornato, vengono aggiornate anche tutte le entità basate su tale pagina.
 
 Per creare entità personalizzate dai modelli, vedi **[Utilizzo delle entità](/help/mobile/spaces-and-entities.md)**.
 
 >[!NOTE]
 >
->Se il modello non corrisponde a un contenuto AEM esistente, ad esempio il cliente ha creato un modello, è disponibile un’interfaccia utente che consente al cliente di creare un’entità.
+>Se il modello non corrisponde a un contenuto AEM esistente, ad esempio il cliente ha creato un modello, esiste un’interfaccia utente che consente al cliente di creare un’entità.
 >
 
 ### Spazi nel modello di contenuto {#spaces-in-content-model}
 
 Viene utilizzato uno spazio per organizzare le entità in modo da semplificarne l&#39;accesso. Uno spazio può contenere uno o più tipi di entità e può contenere sottocartelle.
 
-Sul lato AEM, uno spazio è un modo conveniente per gestire le entità correlate. Può anche essere utilizzato per assegnare autorizzazioni di autorizzazione. L&#39;autorizzazione può essere concessa a uno spazio, che protegge le entità presenti in tale spazio.
+Sul lato AEM, uno spazio è un modo pratico per gestire le entità correlate. Può anche essere utilizzato per assegnare autorizzazioni di autorizzazione. L&#39;autorizzazione può essere concessa a uno spazio, che protegge le entità presenti in tale spazio.
 
 *Ad esempio*,
 
