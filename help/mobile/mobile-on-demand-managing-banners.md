@@ -78,7 +78,7 @@ Utilizza l’editor Trascina e rilascia integrato in AEM per aggiungere o modifi
 Flusso di lavoro per modificare un articolo:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Seleziona un banner originato da AEM dal riquadro** Gestisci banner**.
+1. Seleziona un banner originato da AEM dal riquadro **&#x200B; Gestisci banner**.
 1. Fai clic sul banner evidenziato nella vista a elenco per aprirlo nell’editor di contenuti.
 1. Utilizza l’editor di contenuti per trascinare il contenuto del banner (manoscritti, immagini, testo e così via).
 
