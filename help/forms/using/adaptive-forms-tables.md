@@ -1,5 +1,5 @@
 ---
-title: Tabelle in moduli adattivi
+title: Tabelle nei moduli adattivi
 description: Il componente Tabella in AEM Forms consente di creare tabelle in moduli adattivi che rispondono ai layout mobili e consente anche l’utilizzo di componenti tabella XDP.
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 0%
+source-wordcount: '2541'
+ht-degree: 1%
 
 ---
 
-# Tabelle in moduli adattivi{#tables-in-adaptive-forms}
+# Tabelle nei moduli adattivi{#tables-in-adaptive-forms}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -43,7 +43,7 @@ AEM Forms fornisce un componente Tabella nella barra laterale del browser Compon
 
 Per creare una tabella, trascina il componente Tabella dal browser Componenti nella barra laterale del modulo adattivo. Per impostazione predefinita, la tabella contiene due colonne e tre righe, inclusa la riga di intestazione.
 
-![Componente tabella nella barra laterale AEM](assets/sidebar-tables.png)
+![Componente tabella nella barra laterale di AEM](assets/sidebar-tables.png)
 
 ### Informazioni sulle celle di intestazione e corpo {#about-header-and-body-cells}
 

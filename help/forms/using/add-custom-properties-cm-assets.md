@@ -1,5 +1,5 @@
 ---
-title: Aggiungere proprietà personalizzate alle risorse di Gestione della corrispondenza
+title: Aggiungere proprietà personalizzate alle risorse di gestione della corrispondenza
 description: Scopri come aggiungere proprietà personalizzate alle risorse di Gestione della corrispondenza.
 content-type: reference
 topic-tags: correspondence-management
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '4434'
-ht-degree: 3%
+source-wordcount: '4415'
+ht-degree: 4%
 
 ---
 
-# Aggiungere proprietà personalizzate alle risorse di Gestione della corrispondenza{#add-custom-properties-to-correspondence-management-assets}
+# Aggiungere proprietà personalizzate alle risorse di gestione della corrispondenza{#add-custom-properties-to-correspondence-management-assets}
 
 ## Panoramica {#overview}
 
@@ -63,7 +63,7 @@ Per aggiungere una proprietà personalizzata a tutti i tipi di risorse e alle le
 
       ![Sovrapponi nodo](assets/cmmetapropertiesoverlaynode.png)
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Fare clic su **Salva tutto**.
 
@@ -204,7 +204,7 @@ La procedura seguente consente di aggiungere una scheda con un campo a tutte le 
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       ![Sovrapponi struttura cartelle creata in CRX](assets/cmmetadatapropertiesappsfolder.png)
 
@@ -295,7 +295,7 @@ La procedura seguente consente di aggiungere una scheda con un campo a tutte le 
 
    1. Fare clic su **Salva tutto**.
 
-1. Per creare un campo nella scheda personalizzata (qui Destinatari), aggiungi un nodo (qui GeographicalLocation). Questa proprietà corrisponde alla colonna creata. Per creare il campo, utilizza i passaggi seguenti (per creare altri campi o nodi, ripeti questi passaggi).:
+1. Per creare un campo nella scheda personalizzata (qui Destinatari), aggiungi un nodo (qui GeographicalLocation). Questa proprietà corrisponde alla colonna creata. Per creare il campo, utilizza i passaggi seguenti (per creare altri campi o nodi, ripeti questi passaggi):
 
    1. Fare clic con il pulsante destro del mouse sul nodo elementi e selezionare **Crea** > **Crea nodo**.
    1. Verificare che la finestra di dialogo Crea nodo contenga i valori seguenti e fare clic su **OK**:
@@ -333,7 +333,7 @@ La procedura seguente consente di aggiungere una scheda con un campo a tutte le 
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La cartella viene creata. Fare clic su **Salva tutto**.
+   1. Fai clic su **OK**. La cartella viene creata. Fare clic su **Salva tutto**.
 
 1. Nella cartella degli elementi appena creata, aggiungi un nodo per la scheda personalizzata nella risorsa (in questo caso mytab - questo nome non viene visualizzato nell’interfaccia utente) seguendo la procedura riportata di seguito:
 
@@ -419,7 +419,7 @@ La procedura seguente illustra come aggiungere una proprietà a un tipo di risor
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Fare clic su **Salva tutto**.
 
@@ -537,12 +537,12 @@ Per impostazione predefinita, le proprietà personalizzate aggiunte alle nuove s
    | **Tipo di risorsa/documento** | **Percorso da aggiungere** |
    |---|---|
    | Testo | /libs/fd/cm/ma/gui/content/createasset/createtext/jcr:content/body/items/form/items/textwizard/items/editproperties/items/items/tab/items/tab |
-   | Elenco | /libs/fd/cm/ma/gui/content/createasset/createlist/jcr:content/body/items/form/listwizard/items/editproperties/items/items/items/tab/items |
-   | Condizione | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionwizard/items/editproperties/items/items/items/tab/items |
+   | Elenco | /libs/fd/cm/ma/gui/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/items/items/tab/items |
+   | Condizione | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionwizard/items/editproperties/items/items/tab/items/tab1/items |
    | Frammento | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/items/items/tabs2/items/tab1/items |
    | Lettera | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/items/letterproperties/items |
 
-1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
 1. Nel nodo degli elementi di sovrapposizione creato, creare un nodo con il nome col4 (o qualsiasi altro nome) e fare clic su **Salva tutto**.
 
@@ -605,7 +605,7 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Fare clic su **Salva tutto**.
 
@@ -663,7 +663,7 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Fare clic su **Salva tutto**.
 
@@ -713,7 +713,7 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
       %>
       ```
 
-      Nel codice, GeoLocation è il valore impostato nella proprietà name durante la creazione del nodo o campo personalizzato. Durante la creazione di un nodo/campo personalizzato, hai specificato il nome della proprietà con ./extendedproperties/ prefisso: ./extendedproperties/GeoLocation. Nel codice, il prefisso non è obbligatorio.
+      Nel codice, GeoLocation è il valore impostato nella proprietà name durante la creazione del nodo o campo personalizzato. Durante la creazione di un nodo/campo personalizzato, è stato specificato il nome della proprietà con ./extendedproperties/ prefix: ./extendedproperties/GeoLocation. Nel codice, il prefisso non è obbligatorio.
 
    1. Per visualizzare la nuova proprietà nell&#39;interfaccia utente, aggiungi un tag TD come segue prima del tag di chiusura (&lt;/tr>):
 
@@ -750,7 +750,7 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
  </tbody>
 </table>
 
-Quando si aggiunge la proprietà sling:orderBefore per specificare la posizione della colonna, è inoltre necessario aggiornare l&#39;ordine del tag &lt;td> corrispondente specificato al passaggio 6.4 di questa routine. Ad esempio, in questo caso, è necessario assicurarsi che il tag &lt;td> della posizione geografica venga posizionato prima del tag &lt;td> della colonna Versione:
+Quando si aggiunge la proprietà sling:orderBefore per specificare la posizione della colonna, è inoltre necessario aggiornare l&#39;ordine del tag &lt;td> corrispondente specificato al passaggio 6.4 di questa procedura. Ad esempio, in questo caso, è necessario assicurarsi che il tag &lt;td> della posizione geografica venga posizionato prima del tag &lt;td> della colonna Versione:
 
 ```xml
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
@@ -777,7 +777,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
 
    1. Fare clic su **Salva tutto**.
 
-1. Nella cartella degli aggregati appena creata, aggiungi un nodo cm:resource. Nella sezione cm:resource, aggiungi un nodo denominato include0.
+1. Nella cartella degli aggregati appena creata, aggiungere un nodo cm:resource. In cm:resource aggiungere un nodo denominato include0.
 
    1. Fare clic con il pulsante destro del mouse sulla cartella degli aggregati e selezionare **Crea** > **Crea nodo**. Verificare che la finestra di dialogo Crea nodo contenga i valori seguenti e fare clic su **OK**:
 
@@ -859,7 +859,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Fare clic su **Salva tutto**.
 
@@ -905,7 +905,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Fare clic su **Salva tutto**.
 
@@ -932,7 +932,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
 
 La procedura seguente illustra come visualizzare o nascondere le proprietà personalizzate:
 
-1. Nel nodo della proprietà personalizzata, ad esempio Geraphicallocation, crea un nodo denominato &quot;granite:rendercondition&quot; di tipo &quot;nt:unstructured&quot;.
+1. Nel nodo della proprietà personalizzata, ad esempio Geraphicallocation, creare un nodo denominato &quot;granite:rendercondition&quot; di tipo &quot;nt:unstructured&quot;.&quot;
 1. Aggiungi la seguente proprietà al nodo e fai clic su **Salva tutto**:
 
    <table>

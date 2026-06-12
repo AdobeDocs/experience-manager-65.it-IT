@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare modelli'
+title: 'Esercitazione: creare modelli'
 description: Creazione di modelli Web e di stampa per la comunicazione interattiva
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,18 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1820'
 ht-degree: 1%
 
 ---
 
-# Tutorial: creare modelli{#tutorial-create-templates}
+# Esercitazione: creare modelli{#tutorial-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
 Questo tutorial è un passaggio della serie [Crea la tua prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md). È consigliabile seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
-Per creare una comunicazione interattiva, è necessario che sul server AEM siano disponibili modelli per la stampa e i canali Web.
+Per creare una comunicazione interattiva, è necessario disporre di modelli disponibili sul server AEM per i canali di stampa e web.
 
 I modelli per il canale di stampa vengono creati in Adobe Forms Designer e caricati sul server AEM. Questi modelli sono quindi disponibili per l’utilizzo durante la creazione di una comunicazione interattiva.
 
@@ -29,7 +29,7 @@ I modelli per il canale web vengono creati in AEM. Gli autori e gli amministrato
 
 Questo tutorial illustra i passaggi necessari per creare modelli per i canali di stampa e web, in modo che siano disponibili per l’utilizzo durante la creazione di comunicazioni interattive. Al termine di questa esercitazione, sarai in grado di:
 
-* Creazione di modelli XDP per il canale di stampa tramite Adobe Forms Designer
+* Creare modelli XDP per il canale di stampa con Adobe Forms Designer
 * Carica i modelli XDP sul server AEM Forms
 * Creare e abilitare modelli per il canale web
 

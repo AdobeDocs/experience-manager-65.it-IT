@@ -1,5 +1,5 @@
 ---
-title: Precompilazione di Forms con layout fluibili
+title: Precompilazione dei moduli con layout fluidi
 description: Precompila i moduli con layout fluibile per visualizzare i dati agli utenti all’interno di un modulo renderizzato utilizzando l’API Java e l’API del servizio Web.
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3478'
-ht-degree: 0%
+source-wordcount: '3513'
+ht-degree: 1%
 
 ---
 
-# Precompilazione di Forms con layout fluibili {#prepopulating-forms-with-flowable-layouts1}
+# Precompilazione dei moduli con layout fluidi {#prepopulating-forms-with-flowable-layouts1}
 
-## Precompilazione di Forms con layout fluibili {#prepopulating-forms-with-flowable-layouts2}
+## Precompilazione dei moduli con layout fluidi {#prepopulating-forms-with-flowable-layouts2}
 
 La precompilazione dei moduli consente di visualizzare i dati agli utenti all’interno di un modulo di cui è stato eseguito il rendering. Ad esempio, supponiamo che un utente acceda a un sito web con un nome utente e una password. Se l&#39;autenticazione ha esito positivo, l&#39;applicazione client esegue una query su un database per ottenere informazioni sull&#39;utente. I dati vengono uniti nel modulo, quindi il modulo viene sottoposto a rendering per l’utente. L’utente può quindi visualizzare dati personalizzati all’interno del modulo.
 
@@ -37,7 +37,7 @@ Un modulo può essere precompilato dalle due origini dati XML seguenti:
 
 Quando si precompila un modulo che contiene già dati, è necessario specificare i dati già visualizzati nell&#39;origine dati XML. Si supponga che un modulo contenente 10 campi contenga dati in quattro campi. Quindi, si supponga di voler precompilare i sei campi rimanenti. In questa situazione è necessario specificare 10 elementi XML nell&#39;origine dati XML utilizzata per precompilare il modulo. Se specifichi solo sei elementi, i quattro campi originali sono vuoti.
 
-Ad esempio, puoi precompilare un modulo come il modulo di conferma di esempio. (Vedi &quot;Modulo di conferma&quot; in [Rendering dei PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Ad esempio, puoi precompilare un modulo come il modulo di conferma di esempio. (Vedi &quot;Modulo di conferma&quot; in [Rendering di PDF forms interattivo](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 Per precompilare il modulo di conferma di esempio, è necessario creare un&#39;origine dati XML contenente tre elementi XML corrispondenti ai tre campi del modulo. Questo modulo contiene i tre campi seguenti: `FirstName`, `LastName` e `Amount`. Il primo passaggio consiste nel creare un&#39;origine dati XML contenente elementi XML corrispondenti ai campi della struttura del modulo. Il passaggio successivo consiste nell&#39;assegnare valori di dati agli elementi XML, come illustrato nel codice XML riportato di seguito.
 
@@ -230,9 +230,9 @@ Si esegue il rendering di un modulo precompilato come di un altro modulo. L&#39;
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering dei PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -262,7 +262,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API Forms (J
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo visualizzato nella parte statica del modulo (nel diagramma origine dati XML questi campi sono visualizzati nella sezione A. Vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
+   * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo presente nella parte statica del modulo (nel diagramma dell&#39;origine dati XML questi campi sono illustrati nella sezione A). (Vedi [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
    * Creare l&#39;elemento dettaglio dell&#39;origine dati XML chiamando il metodo `createElement` dell&#39;oggetto `Document`. Passa un valore stringa che rappresenta il nome dell&#39;elemento al metodo `createElement`. Eseguire il cast del valore restituito in `Element`. Aggiungere quindi l&#39;elemento di dettaglio all&#39;elemento radice chiamando il metodo `appendChild` dell&#39;oggetto `root` e passare l&#39;oggetto elemento di dettaglio come argomento. Gli elementi XML accodati all&#39;elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -306,7 +306,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API Forms (J
 
 **Consulta anche**
 
-[Quick Start (modalità SOAP): precompilazione di Forms con layout accessibili tramite API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Guida rapida (modalità SOAP): precompilazione di Forms con layout accessibili tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -338,7 +338,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API di Forms
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo visualizzato nella parte statica del modulo (nel diagramma origine dati XML questi campi sono visualizzati nella sezione A. Vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
+   * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo presente nella parte statica del modulo (nel diagramma dell&#39;origine dati XML questi campi sono illustrati nella sezione A). (Vedi [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
    * Creare l&#39;elemento dettaglio dell&#39;origine dati XML chiamando il metodo `createElement` dell&#39;oggetto `Document`. Passa un valore stringa che rappresenta il nome dell&#39;elemento al metodo `createElement`. Eseguire il cast del valore restituito in `Element`. Aggiungere quindi l&#39;elemento di dettaglio all&#39;elemento radice chiamando il metodo `appendChild` dell&#39;oggetto `root` e passare l&#39;oggetto elemento di dettaglio come argomento. Gli elementi XML accodati all&#39;elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -371,7 +371,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API di Forms
    * Un oggetto `PDFFormRenderSpecc` che memorizza le opzioni di runtime. Per ulteriori informazioni, consulta [Riferimento API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
    * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
-   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato eseguito il rendering.
+   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo di PDF sottoposto a rendering.
    * Oggetto `javax.xml.rpc.holders.LongHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
    * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
    * Oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.

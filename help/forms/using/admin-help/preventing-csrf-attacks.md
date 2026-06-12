@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: ht
-source-wordcount: '955'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ AEM Forms fornisce il filtro del referrer che può aiutare a prevenire gli attac
 
 Quando esegui Configuration Manager, l’host e l’indirizzo IP predefiniti o il server Forms vengono aggiunti all’elenco Referrer consentiti. Puoi modificare questo elenco nella console di amministrazione.
 
-1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utenti > Configurazione > Configura URL referrer consentiti. L’elenco Referrer consentiti viene visualizzato nella parte inferiore della pagina.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Configura URL referente consentiti. L&#39;elenco Referenti consentiti viene visualizzato nella parte inferiore della pagina.
 1. Per aggiungere un referrer consentito:
 
    * Digita un nome host o un indirizzo IP nella casella Referrer consentiti. Per aggiungere più di un referrer consentito alla volta, digita ogni nome host o indirizzo IP in una nuova riga.

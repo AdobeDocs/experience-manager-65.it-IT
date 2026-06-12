@@ -1,5 +1,5 @@
 ---
-title: Creare tabelle complesse accessibili in moduli HTML5
+title: Creare tabelle complesse accessibili nei moduli HTML5
 description: Scopri come creare tabelle accessibili nei moduli di HTML5.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,16 +11,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 5%
 
 ---
 
-# Creare tabelle complesse accessibili in moduli HTML5 {#create-accessible-complex-tables-in-html-forms}
+# Creare tabelle complesse accessibili nei moduli HTML5 {#create-accessible-complex-tables-in-html-forms}
 
 L’implementazione predefinita delle tabelle in HTML5 Forms utilizza gli elementi DIV di HTML per eseguire il rendering di una tabella. Il rendering prevede l’utilizzo dei ruoli ARIA per soddisfare i requisiti di accessibilità.
 
-Per evitare problemi di accessibilità con gli assistenti vocali che non supportano completamente i ruoli ARIA utilizzati con le tabelle di dati, HTML5 Forms fornisce una rappresentazione alternativa per le tabelle. Queste tabelle si basano sul nuovo formato di tabella introdotto in Designer che supporta anche:
+Per evitare problemi di accessibilità con gli assistenti vocali che non supportano completamente i ruoli ARIA utilizzati con le tabelle dati, HTML5 Forms fornisce una rappresentazione alternativa per le tabelle. Queste tabelle si basano sul nuovo formato di tabella introdotto in Designer che supporta anche:
 
 * Intestazioni di riga
 * Estensione riga
@@ -33,7 +33,7 @@ Per utilizzare il nuovo formato in HTML5 Forms, contrassegna la tabella come com
  </extras>
 ```
 
-Le tabelle contrassegnate come *complexTable* seguono la rappresentazione nativa di HTML e forniscono un migliore supporto per l&#39;accessibilità per determinati assistenti vocali.  Per creare un&#39;estensione di riga, selezionare celle consecutive di una tabella nella stessa colonna, fare clic con il pulsante destro del mouse sulla selezione e quindi scegliere **[!UICONTROL Unisci celle]**.
+Le tabelle contrassegnate come *complexTable* seguono il rendering nativo di HTML e forniscono un migliore supporto per l&#39;accesso facilitato ad alcuni assistenti vocali.  Per creare un&#39;estensione di riga, selezionare celle consecutive di una tabella nella stessa colonna, fare clic con il pulsante destro del mouse sulla selezione e quindi scegliere **[!UICONTROL Unisci celle]**.
 
 >[!NOTE]
 >
