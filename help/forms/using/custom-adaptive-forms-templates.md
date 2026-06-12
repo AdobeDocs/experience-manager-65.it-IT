@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Prerequisiti {#prerequisites}
 
-* Informazioni su [Modello pagina](/help/sites-authoring/templates.md) e [Authoring moduli adattivi](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html) di AEM
+* Informazioni su [Modello pagina](/help/sites-authoring/templates.md) e [Authoring moduli adattivi](https://helpx.adobe.com/it/aem-forms/6-1/introduction-forms-authoring.html) di AEM
 
 * Informazioni sulle [librerie lato client](/help/sites-developing/clientlibs.md) di AEM
 
