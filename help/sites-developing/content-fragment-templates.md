@@ -1,5 +1,5 @@
 ---
-title: Modelli per frammenti di contenuto
+title: Modelli di frammento di contenuto
 description: I modelli vengono selezionati durante la creazione di un frammento di contenuto e forniscono al nuovo frammento la struttura, l’elemento e la variante di base
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 3%
+source-wordcount: '690'
+ht-degree: 4%
 
 ---
 
-# Modelli per frammenti di contenuto{#content-fragment-templates}
+# Modelli di frammento di contenuto{#content-fragment-templates}
 
 >[!CAUTION]
 >
@@ -158,7 +158,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obbligatorio</p> </td>
-     <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo figlio per l'elemento <strong>Main</strong>, ma può contenere [1..n] nodi secondari.</p> <p>Quando si utilizza il modello, il ramo secondario degli elementi viene copiato nel ramo secondario del modello del frammento.</p> <p>Il primo elemento (come visualizzato in CRXDE Lite) viene automaticamente considerato come l'elemento <i>main</i>; il nome del nodo è irrilevante e il nodo stesso non ha un significato particolare, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi vengono gestiti come risorse secondarie.</p> </td>
+     <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo figlio per l'elemento <strong>Main</strong>, ma può contenere [1..n] nodi figlio.</p> <p>Quando si utilizza il modello, il ramo secondario degli elementi viene copiato nel ramo secondario del modello del frammento.</p> <p>Il primo elemento (come visualizzato in CRXDE Lite) viene automaticamente considerato come l'elemento <i>main</i>; il nome del nodo è irrilevante e il nodo stesso non ha un significato particolare, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi vengono gestiti come risorse secondarie.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -234,7 +234,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obbligatorio se è presente un nodo di variante</p> </td>
-     <td><p>Definisce una variante iniziale.<br /> Per impostazione predefinita, la variante viene aggiunta a tutti gli elementi del frammento di contenuto.</p> <p>La variante avrà lo stesso contenuto iniziale del rispettivo elemento (vedere <code class="code">defaultContent/
+     <td><p>Definisce una variante iniziale.<br /> La variante viene aggiunta a tutti gli elementi del frammento di contenuto per impostazione predefinita.</p> <p>La variante avrà lo stesso contenuto iniziale del rispettivo elemento (vedere <code class="code">defaultContent/
        initialContentType</code>)</p> </td>
     </tr>
     <tr>

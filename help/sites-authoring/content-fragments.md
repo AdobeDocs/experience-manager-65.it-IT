@@ -12,8 +12,8 @@ feature: Authoring,Content Fragments
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 63%
+source-wordcount: '1158'
+ht-degree: 64%
 
 ---
 
@@ -64,7 +64,7 @@ I frammenti di contenuto consentono:
    * Possono contare sul fatto che i contenuti multimediali associati sono sempre curati in base alla rilevanza.
    * Possono creare all’istante varianti di contenuto ad hoc garantendo che queste restino comunque gestite a livello centrale nel frammento.
 
-## Aggiunta di un frammento di contenuto alla pagina  {#adding-a-content-fragment-to-your-page}
+## Aggiunta di un frammento di contenuto alla pagina {#adding-a-content-fragment-to-your-page}
 
 1. Apri la pagina per la modifica.
 
@@ -134,7 +134,7 @@ Nella finestra di dialogo di configurazione appropriata potete selezionare i par
 
 * **Tratta le intestazioni come paragrafi propri**
 
-### Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
+### Collegamento rapido all’Editor frammento di contenuto {#quick-connection-to-fragment-editor}
 
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, Ciò ti consente di [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
 
@@ -142,7 +142,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 >
 >Come sempre, la modifica dell’origine del frammento può avere un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
 
-### Aggiunta di contenuto intermedio  {#adding-in-between-content}
+### Aggiunta di contenuto intermedio {#adding-in-between-content}
 
 Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un segnaposto **Trascina qui i componenti** tra ciascun paragrafo HTML (e nella parte superiore/inferiore) del frammento.
 
@@ -164,7 +164,7 @@ Per il contenuto intermedio è possibile:
 >
 >È inoltre possibile [inserire risorse visive (immagini) nel frammento stesso](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Ciò significa che non è possibile posizionare contenuto intermedio tra una risorsa visiva e il paragrafo precedente.
+>Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Non è pertanto possibile inserire contenuto intermedio tra una risorsa visiva e il paragrafo precedente.
 
 >[!CAUTION]
 >
@@ -178,7 +178,7 @@ Per il contenuto intermedio è possibile:
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
 >
 
-### Uso di contenuti associati  {#using-associated-content}
+### Uso di contenuti associati {#using-associated-content}
 
 Se hai [contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse sono disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](#adding-in-between-content).
 

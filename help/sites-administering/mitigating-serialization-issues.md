@@ -1,6 +1,6 @@
 ---
-title: Mitigazione dei problemi di serializzazione nell’AEM
-description: Scopri come attenuare i problemi di serializzazione nell’AEM.
+title: Mitigazione dei problemi di serializzazione in AEM
+description: Scopri come attenuare i problemi di serializzazione in AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -11,34 +11,34 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 0%
+source-wordcount: '934'
+ht-degree: 1%
 
 ---
 
-# Mitigazione dei problemi di serializzazione nell’AEM{#mitigating-serialization-issues-in-aem}
+# Mitigazione dei problemi di serializzazione in AEM{#mitigating-serialization-issues-in-aem}
 
 ## Panoramica {#overview}
 
-Il team AEM di Adobe ha lavorato a stretto contatto con il progetto open-source [NotSoSerial](https://github.com/kantega/notsoserial) per contribuire a mitigare le vulnerabilità descritte in **CVE-2015-7501**. NotSoSerial è concesso in licenza con la [licenza Apache 2](https://www.apache.org/licenses/LICENSE-2.0) e include il codice ASM concesso in licenza con la propria [licenza BSD](https://asm.ow2.io/).
+Il team AEM di Adobe ha lavorato a stretto contatto con il progetto open-source [NotSoSerial](https://github.com/kantega/notsoserial) per attenuare le vulnerabilità descritte in **CVE-2015-7501**. NotSoSerial è concesso in licenza con la [licenza Apache 2](https://www.apache.org/licenses/LICENSE-2.0) e include il codice ASM concesso in licenza con la propria [licenza BSD](https://asm.ow2.io/).
 
 Il file jar dell’agente incluso in questo pacchetto è la distribuzione modificata di NotSoSerial di Adobe.
 
-NotSoSerial è una soluzione Java™ a un problema di livello Java™ e non è specifica per l’AEM. Aggiunge un controllo preliminare a un tentativo di deserializzare un oggetto. Questo controllo verifica il nome di una classe in base a un inserisco nell&#39;elenco Consentiti di classe di tipo firewall-style, a un elenco Bloccati di classe di tipo o a entrambi. A causa del numero limitato di classi nel inserisco nell&#39;elenco Bloccati di predefinito, è improbabile che questo test influisca sui sistemi o sul codice.
+NotSoSerial è una soluzione a livello Java™ per risolvere un problema a livello Java™ e non è specifica per AEM. Aggiunge un controllo preliminare a un tentativo di deserializzare un oggetto. Questo controllo verifica il nome di una classe rispetto a un inserisco nell&#39;elenco Consentiti di classe di tipo firewall, a un inserisco nell&#39;elenco Bloccati di o a entrambi. A causa del numero limitato di classi nel inserisco nell&#39;elenco Bloccati di predefinito, è improbabile che questo test influisca sui sistemi o sul codice.
 
 Per impostazione predefinita, l&#39;agente esegue un controllo di inserisce nell&#39;elenco Bloccati basato su un valore di  per le classi vulnerabili correnti note. Questo inserisco nell&#39;elenco Bloccati di ha lo scopo di proteggerti dall’elenco corrente di exploit che utilizzano questo tipo di vulnerabilità.
 
-La inserisce nell&#39;elenco Bloccati e il elenco Consentiti di dell&#39;agente di possono essere configurati seguendo le istruzioni riportate nella sezione [Configurazione dell&#39;agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) di questo articolo.
+Il inserisco nell&#39;elenco Bloccati di e di può essere configurato seguendo le istruzioni riportate nella sezione [Configurazione dell&#39;agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) di questo articolo.
 
 L’agente ha lo scopo di contribuire a mitigare le classi vulnerabili più recenti. Se il progetto deserializza dati non attendibili, potrebbe essere vulnerabile ad attacchi Denial of Service, attacchi di memoria insufficiente e attacchi di deserializzazione futuri sconosciuti.
 
-Adobe supporta ufficialmente Java™ 6, 7 e 8. Tuttavia, Adobe è consapevole del fatto che NotSoSerial supporta anche Java™ 5.
+Adobe supporta ufficialmente Java™ 6, 7 e 8. Tuttavia, Adobe sa che NotSoSerial supporta anche Java™ 5.
 
 ## Installazione dell’agente {#installing-the-agent}
 
 >[!NOTE]
 >
->Se in precedenza è stato installato l&#39;hotfix di serializzazione per AEM 6.1, rimuovere i comandi di avvio agente dalla riga di esecuzione Java™.
+>Se in precedenza hai installato l’hotfix di serializzazione per AEM 6.1, rimuovi i comandi di avvio dell’agente dalla riga di esecuzione Java™.
 
 1. Installa il bundle **com.adobe.cq.cq-serialization-tester**.
 
@@ -47,15 +47,15 @@ Adobe supporta ufficialmente Java™ 6, 7 e 8. Tuttavia, Adobe è consapevole de
 
 ## Installazione dell&#39;agente sui server applicazioni {#installing-the-agent-on-application-servers}
 
-L&#39;agente NotSoSerial non è incluso nella distribuzione standard dell&#39;AEM per i server applicazioni. Tuttavia, puoi estrarlo dalla distribuzione del file jar dell’AEM e utilizzarlo con la configurazione del server applicazioni:
+L&#39;agente NotSoSerial non è incluso nella distribuzione standard di AEM per i server applicazioni. Tuttavia, puoi estrarlo dalla distribuzione JAR di AEM e utilizzarlo con la configurazione del server applicazioni:
 
-1. Per prima cosa, scarica il file quickstart dell’AEM ed estrailo:
+1. Scarica il file quickstart di AEM ed estrailo:
 
    ```shell
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Passare al percorso dell&#39;avvio rapido AEM appena decompresso e copiare la cartella `crx-quickstart/opt/notsoserial/` nella cartella `crx-quickstart` dell&#39;installazione del server applicazioni AEM.
+1. Passare al percorso del programma AEM quickstart appena decompresso e copiare la cartella `crx-quickstart/opt/notsoserial/` nella cartella `crx-quickstart` dell&#39;installazione di AEM Application Server.
 
 1. Cambia la proprietà di `/opt` all&#39;utente che esegue il server:
 
@@ -67,7 +67,7 @@ L&#39;agente NotSoSerial non è incluso nella distribuzione standard dell&#39;AE
 
 ## Configurazione dell’agente {#configuring-the-agent}
 
-La configurazione predefinita è adeguata per la maggior parte delle installazioni. Questa configurazione include un inserisco nell&#39;elenco Bloccati di esecuzione remota vulnerabile di classi conosciute ed un inserisco nell&#39;elenco Consentiti di esecuzione remota di pacchetti in cui la deserializzazione dei dati attendibili è sicura.
+La configurazione predefinita è adeguata per la maggior parte delle installazioni. Questa configurazione include una inserisce nell&#39;elenco Bloccati vulnerabile di classi di esecuzione remota note e un elenco Consentiti di pacchetti in cui la deserializzazione dei dati attendibili è sicura.
 
 La configurazione del firewall è dinamica e può essere modificata in qualsiasi momento:
 
@@ -84,7 +84,7 @@ Questa configurazione contiene la registrazione del inserisco nell&#39;elenco Co
 
 **Inserzione consentita**
 
-Nella sezione dell’elenco Consentiti queste voci sono classi o prefissi di pacchetti consentiti per la deserializzazione. Se si desidera deserializzare classi personalizzate, aggiungere le classi o i pacchetti a questo inserisco nell&#39;elenco Consentiti di.
+Nella sezione dell’elenco Consentiti queste voci sono classi o prefissi di pacchetti consentiti per la deserializzazione. Se stai deserializzando classi personalizzate, aggiungi le classi o i pacchetti a questo elenco Consentiti di.
 
 **Elenco Bloccati**
 
@@ -110,7 +110,7 @@ Per ulteriori informazioni sulla risoluzione dei problemi con l&#39;agente, vede
 
 >[!NOTE]
 >
->Se aggiungi `org.apache.commons.collections.functors` al inserisco nell&#39;elenco Consentiti di, il controllo dello stato di integrità non riesce mai.
+>Se si aggiunge `org.apache.commons.collections.functors` al inserisco nell&#39;elenco Consentiti di, il controllo dello stato di integrità non riesce sempre.
 
 ## Gestione degli errori con il caricamento degli agenti dinamici {#handling-errors-with-dynamic-agent-loading}
 
@@ -126,11 +126,11 @@ Per caricare l&#39;agente manualmente, eseguire le operazioni seguenti:
 
    >[!NOTE]
    >
-   >Richiede che si utilizzi anche l&#39;opzione -nofork CQ/AEM, insieme alle impostazioni di memoria JVM appropriate, in quanto l&#39;agente non è abilitato su una JVM fork.
+   >Richiede l’utilizzo anche dell’opzione -nofork CQ/AEM, insieme alle impostazioni di memoria JVM appropriate, in quanto l’agente non è abilitato su una JVM fork.
 
    >[!NOTE]
    >
-   >La distribuzione di Adobe del file jar dell&#39;agente NotSoSerial si trova nella cartella `crx-quickstart/opt/notsoserial/` dell&#39;installazione dell&#39;AEM.
+   >La distribuzione Adobe del file jar dell’agente NotSoSerial si trova nella cartella `crx-quickstart/opt/notsoserial/` dell’installazione di AEM.
 
 1. Arrestare e riavviare la JVM;
 
