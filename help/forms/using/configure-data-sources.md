@@ -40,7 +40,7 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
 È possibile configurare i database relazionali utilizzando Configurazione della console Web di AEM. Effettua le seguenti operazioni:
 
 1. Passa alla console Web di AEM all&#39;indirizzo `https://server:host/system/console/configMgr`.
-1. Cerca la configurazione dell&#39;]**dell&#39;origine dati in pool di connessione Apache Sling**[!UICONTROL . Seleziona per aprire la configurazione in modalità di modifica.
+1. Cerca la configurazione dell&#39;**dell&#39;origine dati in pool di connessione Apache Sling**. Seleziona per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo di configurazione specificare i dettagli del database che si desidera configurare, ad esempio:
 
    * Nome dell’origine dati
@@ -153,7 +153,7 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
 1. Selezionare **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
 
-1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL  per l&#39;origine dati REST]:
+1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL &#x200B; per l&#39;origine dati REST]:
 
    * Specifica il numero massimo di connessioni consentite tra il modello di dati del modulo e i servizi Web RESTful nel campo **[!UICONTROL Limite di connessioni in totale]**. Il valore predefinito è 20 connessioni.
 
