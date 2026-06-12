@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '2076'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Il video seguente illustra come creare, impostare e utilizzare le variabili nei 
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[Usa video variabili](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[Video sull’utilizzo delle variabili](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 Le variabili sono un&#39;estensione dell&#39;interfaccia [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). È possibile utilizzare [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript per accedere ai metadati salvati utilizzando le variabili.
 
@@ -93,10 +93,10 @@ A seconda del tipo di dati della variabile, puoi utilizzare le seguenti opzioni 
 Per aggiungere la mappatura tra variabili, eseguire le operazioni seguenti:
 
 1. Nella pagina di modifica del flusso di lavoro, seleziona l’icona Passaggi disponibile nella barra laterale del modello di flusso di lavoro.
-1. Trascinare e rilasciare il passaggio **Imposta variabile** nell&#39;editor del flusso di lavoro, selezionare il passaggio e selezionare ![Icona Configura indicata da una chiave inglese.](assets/configure_icon.png) (Configura).
+1. Trascina il passaggio **Imposta variabile** nell&#39;editor del flusso di lavoro, seleziona il passaggio e fai clic sull&#39;icona ![Configura indicata da una chiave inglese.](assets/configure_icon.png) (Configura).
 1. Nella finestra di dialogo Imposta variabile, seleziona **[!UICONTROL Mapping]** > **[!UICONTROL Aggiungi mapping]**.
 1. Nella sezione **Variabile mappa** selezionare la variabile per la memorizzazione dei dati, selezionare la modalità di mappatura e specificare un valore da memorizzare nella variabile. Le modalità di mappatura variano in base al tipo di variabile.
-1. Mappa più variabili in modo da poter creare un’espressione significativa. Selezionare l&#39;icona di salvataggio ![contrassegnata da un segno di spunta all&#39;interno di una casella.](assets/Done_Icon.png) per salvare le modifiche.
+1. Mappa più variabili in modo da poter creare un’espressione significativa. Seleziona l&#39;icona ![Salva indicata da un segno di spunta all&#39;interno di una casella.](assets/Done_Icon.png) per salvare le modifiche.
 
 ### Esempio 1: eseguire una query su una variabile XML per impostare il valore per una variabile stringa {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -114,7 +114,7 @@ In questo esempio, utilizza l&#39;editor espressioni per definire un&#39;espress
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[Video espressione variabili](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[Video sull’espressione variabili](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Utilizza editor di espressioni {#use-expression-editor}
 
@@ -163,7 +163,7 @@ In questo esempio, prima di definire l&#39;espressione di routing, utilizzare [e
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[O video diviso](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[Video suddiviso in OR](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Analogamente, selezionate un percorso di script esterno o specificate lo script ECMA per instradare le espressioni per valutare il ramo attivo. Selezionare **[!UICONTROL Rinomina branch]** per specificare un nome alternativo per il branch.
 
@@ -251,7 +251,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Modificare una variabile {#edit-a-variable}
 
 1. Nella pagina Modifica flusso di lavoro, seleziona l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
-1. Selezionare l&#39;icona di modifica ![contrassegnata da un simbolo a forma di matita.Icona &#x200B;](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
+1. Selezionare l&#39;icona di modifica ![contrassegnata da un simbolo a forma di matita.](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
 1. Modificare le informazioni sulla variabile e selezionare ![Icona Salva contrassegnata da un segno di spunta.](assets/Done_Icon.png) per salvare le modifiche. Impossibile modificare i campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** per una variabile.
 
 ## Eliminare una variabile {#delete-a-variable}
@@ -262,4 +262,4 @@ Per eliminare una variabile:
 
 1. Nella pagina Modifica flusso di lavoro, seleziona l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
 1. Seleziona l’icona Elimina accanto al nome della variabile da eliminare.
-1. Selezionare l&#39;icona ![Fine indicata da un segno di spunta.](assets/Done_Icon.png) per confermare ed eliminare la variabile.
+1. Seleziona l&#39;icona ![Fine indicata da un segno di spunta.](assets/Done_Icon.png) per confermare ed eliminare la variabile.

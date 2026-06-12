@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1799'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ Poiché Adobe Experience Manager (AEM) è basato su Sling e utilizza un archivio
 * [Tipi di nodo JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipi di nodo Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Oltre a questi tipi di nodo, l’AEM fornisce una serie di tipi di nodo personalizzati.
+Oltre a questi tipi di nodo, AEM fornisce una serie di tipi di nodo personalizzati.
 
 ## Audit {#audit}
 
@@ -447,7 +447,7 @@ Elenco dei contenitori.
 
 **Descrizione**
 
-Il tipo di nodo `cq:attributes` è per i ContentBus di versione. Questo nodo ha solo una serie di proprietà; di queste tre sono predefinite, &quot;created&quot;, &quot;csd&quot; e &quot;timestamp&quot;.
+Il tipo di nodo `cq:attributes` è per i tag di versione di ContentBus. Questo nodo ha solo una serie di proprietà; di queste tre sono predefinite, &quot;created&quot;, &quot;csd&quot; e &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy` - Timestamp della creazione delle informazioni sulla versione, in genere l&#39;ora dell&#39;archiviazione della versione precedente o l&#39;ora della creazione della pagina.
 * `@prop csd (string) mandatory copy` - attributo standard csd, copia della proprietà cq:csd del nodo della pagina
@@ -466,11 +466,11 @@ Il tipo di nodo `cq:attributes` è per i ContentBus di versione. Questo nodo ha 
 
 **Descrizione**
 
-Il tipo di nodo `cq:contentPage` contiene la proprietà e le definizioni dei nodi figlio per le pagine di contenuto ContentBus. Solo quando questo tipo mixin viene aggiunto a un nodo di tipo `cq:page`, un nodo diventa una pagina di contenuto ContentBus.
+Il tipo di nodo `cq:contentPage` contiene le definizioni di proprietà e nodi figlio per le pagine di contenuto di ContentBus. Solo quando questo tipo mixin viene aggiunto a un nodo di tipo `cq:page`, un nodo diventa una pagina di contenuto ContentBus.
 
 Gli elementi in un `cq:Cq4ContentPage` sono:
 
-* `@prop cq:csd` - CSD di ContentBus della pagina.
+* `@prop cq:csd` - Il CSD ContentBus della pagina.
 * `@node cq:content` - Contenuto della pagina. Questo nodo secondario non esiste se il nodo della pagina si trova nello stato &quot;Esistente senza contenuto&quot; o &quot;Eliminato&quot;.
 * `@node cq:attributes` - Elenco di attributi di pagina precedentemente noti come tag di versione. Questo nodo è obbligatorio per il tipo cq:contentPage. Quando viene creata una versione della pagina, nel nodo degli attributi viene creata una versione.
 
@@ -489,7 +489,7 @@ Gli elementi in un `cq:Cq4ContentPage` sono:
 Configurazione sondaggio.
 
 * `@prop source (String) mandatory` - URI origine dati. Obbligatorio e non può essere vuoto.
-* `@prop target (String)` - Percorso di destinazione in cui sono archiviati i dati recuperati dall&#39;origine dati. Facoltativo e viene impostato automaticamente sul nodo cq:PollConfig.
+* `@prop target (String)` - Percorso di destinazione in cui sono archiviati i dati recuperati dall&#39;origine dati. Facoltativo e predefinito al nodo cq:PollConfig.
 * `@prop interval (Long)` - Intervallo in secondi in cui eseguire il polling per dati nuovi o aggiornati dall&#39;origine dati. Facoltativo e il valore predefinito è 30 minuti (1800 secondi).
 * [Creazione di servizi di importazione dati personalizzati per Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
@@ -577,7 +577,7 @@ Definisce un mixin LiveSync. Se un nodo è coinvolto in una LiveRelationship con
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCanceled {#cq-livesynccancelled}
+### cq:LiveSyncCancelled {#cq-livesynccancelled}
 
 **Descrizione**
 
@@ -616,7 +616,7 @@ Configurazione Live Sync.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Per AEM 5.4 aggiungere alla fine dell’elenco:
+Per AEM 5.4 aggiungi alla fine dell’elenco:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
@@ -669,7 +669,7 @@ Definisce il mixin delle informazioni sullo stato della replica.
    * `- cq:lastReplicationAction (string) ignore`
    * `- cq:lastReplicationStatus (string) ignore`
 
-## Sicurezza {#security}
+## Protezione {#security}
 
 ### cq:ApplicationPrivilege {#cq-applicationprivilege}
 
@@ -763,7 +763,7 @@ Definisce un tipo mixin che contrassegna i file che possono essere aperti con l�
 
 `[cq:ComponentExtractorSource] mixin`
 
-## Assegnazione dei tag {#tagging}
+## Assegnazione tag {#tagging}
 
 ### cq:Tag {#cq-tag}
 
@@ -806,7 +806,7 @@ Solo gli autori/proprietari possono assegnare tag al contenuto (tag moderati/amm
 
 **Descrizione**
 
-Qualsiasi utente/sito web pubblico può assegnare tag al contenuto (stile Web2.0), utilizzato all’interno di cq:userContent.
+Qualsiasi utente/sito Web pubblico può assegnare tag al contenuto (stile Web2.0), utilizzato all&#39;interno di cq:userContent.
 
 **Definizione**
 
@@ -941,7 +941,7 @@ Campo
 
 ## Wiki {#wiki}
 
-### wiki:Argomento {#wiki-topic}
+### wiki:Topic {#wiki-topic}
 
 **Descrizione**
 
@@ -962,7 +962,7 @@ Argomento Wiki
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:Utente {#wiki-user}
+### wiki:User {#wiki-user}
 
 **Descrizione**
 
@@ -973,7 +973,7 @@ Utente wiki
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:Proprietà {#wiki-properties}
+### wiki:Properties {#wiki-properties}
 
 **Descrizione**
 

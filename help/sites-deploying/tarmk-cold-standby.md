@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
@@ -86,8 +86,8 @@ Inoltre, è possibile specificare le istanze in standby a cui è consentito conn
 >
 >Il PID per l’archivio dei nodi di segmento e il servizio archivio in standby è stato modificato in AEM 6.3 rispetto alle versioni precedenti come segue:
 >
->* da org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService in org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
->* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
+>* da org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService a org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
+>* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 >
 >Effettuare le regolazioni di configurazione necessarie in modo che riflettano questa modifica.
 
@@ -325,7 +325,7 @@ Per applicare gli hotfix a una configurazione di standby a freddo, si consiglia 
 
 Per farlo, segui i passaggi descritti di seguito:
 
-1. Arresta il processo di sincronizzazione sull’istanza in standby a freddo passando alla console JMX e utilizzando **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**&#x200B;bean. Per ulteriori informazioni su come eseguire questa operazione, vedere la sezione relativa al [monitoraggio](#monitoring).
+1. Arresta il processo di sincronizzazione sull’istanza in standby a freddo passando alla console JMX e utilizzando **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Per ulteriori informazioni su come eseguire questa operazione, vedere la sezione relativa al [monitoraggio](#monitoring).
 1. Arrestare l&#39;istanza di standby a freddo.
 1. Installa l’hotfix sull’istanza primaria. Per ulteriori dettagli su come installare un hotfix, vedi [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 1. Verificare la presenza di eventuali problemi dopo l&#39;installazione.

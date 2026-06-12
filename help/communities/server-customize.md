@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 I SocialComponents sono POJO che rappresentano una risorsa per una funzione di AEM Communities. Idealmente, ogni SocialComponent rappresenta un resourceType specifico con GETters esposti che forniscono dati al client in modo che la risorsa sia rappresentata accuratamente. Tutta la logica di business e di visualizzazione è incapsulata in SocialComponent, incluse le informazioni sulla sessione del visitatore del sito, se necessario.
 
-L’interfaccia definisce un set di base di GETter necessari per rappresentare una risorsa. È importante sottolineare che l’interfaccia stabilisce i metodi Map&lt;String, Object> getAsMap() e String toJSONString() necessari per eseguire il rendering dei modelli Handlebars ed esporre gli endpoint JSON di GET per le risorse.
+L’interfaccia definisce un set di base di GETter necessari per rappresentare una risorsa. È importante sottolineare che l’interfaccia stabilisce i metodi Map&lt;String, Object> getAsMap() e String toJSONString() necessari per eseguire il rendering dei modelli Handlebars ed esporre gli endpoint GET JSON per le risorse.
 
 Tutte le classi SocialComponent devono implementare l&#39;interfaccia `com.adobe.cq.social.scf.SocialComponent`
 
@@ -68,7 +68,7 @@ Ottenuto un handle per il servizio OSGi richiamando `com.adobe.cq.social.scf.Soc
 
 Gli endpoint POST API HTTP sono classi PostOperation definite implementando l&#39;interfaccia `SlingPostOperation` (pacchetto `org.apache.sling.servlets.post`).
 
-L&#39;implementazione dell&#39;endpoint `PostOperation` imposta `sling.post.operation` su un valore al quale risponde l&#39;operazione. Tutte le richieste POST con il parametro:operation impostato su tale valore sono delegate a questa classe di implementazione.
+L&#39;implementazione dell&#39;endpoint `PostOperation` imposta `sling.post.operation` su un valore al quale risponde l&#39;operazione. Tutte le richieste POST con un parametro :operation impostato su tale valore sono delegate a questa classe di implementazione.
 
 `PostOperation` richiama `SocialOperation` che esegue le azioni necessarie per l&#39;operazione.
 

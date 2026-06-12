@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3628'
 ht-degree: 1%
 
 ---
@@ -182,7 +182,7 @@ Per rendere attivo il componente per l’utilizzo in uno scenario di flusso di l
 
    Per ulteriori informazioni sul nodo cq:editConfig, vedere [Configurazione del comportamento di modifica di un componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
-1. Al di sotto del nodo cq:EditConfig, aggiungi il seguente nodo:
+1. Sotto il nodo cq:EditConfig, aggiungi il seguente nodo:
 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
@@ -217,7 +217,7 @@ Eseguire la procedura seguente sul nuovo componente (vedere [Creazione di compon
 
    Per ulteriori informazioni sul nodo cq:editConfig, vedere [Configurazione del comportamento di modifica di un componente](/help/sites-developing/components-basics.md#edit-behavior).
 
-1. Al di sotto del nodo cq:EditConfig, aggiungi il seguente nodo:
+1. Sotto il nodo cq:EditConfig, aggiungi il seguente nodo:
 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
@@ -380,7 +380,7 @@ Quando si avviano le fasi del processo durante il processo di un flusso di lavor
 
 Per definire un passaggio del processo come componente del servizio OSGI (bundle Java):
 
-1. Crea il bundle e distribuiscilo nel contenitore OSGI. Consulta la documentazione sulla creazione di un bundle con [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md) o [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
+1. Crea il bundle e distribuiscilo nel contenitore OSGI. Consulta la documentazione sulla creazione di un bundle con [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) o [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
@@ -1031,7 +1031,7 @@ Esempio `_cq_dialog/.content.xml` utilizzato in questo esempio:
 >
 >Le finestre di dialogo dell’editor di modelli dell’interfaccia classica continueranno a funzionare con l’editor di interfaccia touch standard.
 >
->Sebbene l&#39;AEM disponga di [strumenti di modernizzazione](/help/sites-developing/modernization-tools.md) se desideri aggiornare le finestre di dialogo del passaggio dell&#39;interfaccia classica alle finestre di dialogo standard dell&#39;interfaccia utente. Dopo la conversione ci sono ancora alcuni miglioramenti manuali che potrebbero essere apportati alla finestra di dialogo per alcuni casi.
+>Anche se AEM dispone di [strumenti di modernizzazione](/help/sites-developing/modernization-tools.md) se desideri aggiornare le finestre di dialogo del passaggio dell&#39;interfaccia classica alle finestre di dialogo standard dell&#39;interfaccia utente. Dopo la conversione ci sono ancora alcuni miglioramenti manuali che potrebbero essere apportati alla finestra di dialogo per alcuni casi.
 >
 >* Nei casi in cui una finestra di dialogo aggiornata è vuota, è possibile esaminare le finestre di dialogo in `/libs` che hanno funzionalità simili a esempi di come fornire una soluzione. Ad esempio:
 >

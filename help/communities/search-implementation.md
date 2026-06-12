@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1207'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## Panoramica {#overview}
 
-La funzione di ricerca è una caratteristica essenziale delle community Adobe Experience Manager (AEM). Oltre alle funzionalità di [ricerca per piattaforma AEM](../../help/sites-deploying/queries-and-indexing.md), AEM Communities fornisce [API di ricerca UGC](#ugc-search-api) per la ricerca di contenuti generati dagli utenti (UGC, User-Generated Content). UGC ha proprietà univoche in quanto viene immesso e memorizzato separatamente dagli altri contenuti e dati utente dell’AEM.
+La funzione di ricerca è una funzione essenziale delle community di Adobe Experience Manager (AEM). Oltre alle funzionalità di [ricerca per piattaforma AEM](../../help/sites-deploying/queries-and-indexing.md), AEM Communities fornisce l&#39;[API di ricerca UGC](#ugc-search-api) per la ricerca di contenuti generati dagli utenti (UGC). UGC ha proprietà univoche in quanto viene immesso e memorizzato separatamente da altri contenuti e dati utente di AEM.
 
 Per le comunità, le due cose generalmente cercate sono:
 
@@ -48,7 +48,7 @@ L&#39;archivio comune [UGC](working-with-srp.md) è fornito da uno dei vari prov
 
 ### Ricerche ASRP {#asrp-searches}
 
-Per [ASRP](asrp.md), UGC è archiviato nel cloud Adobe. Anche se UGC non è visibile in CRX, [moderation](moderate-ugc.md) è disponibile sia dall&#39;ambiente di authoring che da quello di Publish. L&#39;utilizzo dell&#39;[API di ricerca UGC](#ugc-search-api) funziona per ASRP allo stesso modo degli altri SRP.
+Per [ASRP](asrp.md), UGC è archiviato nel cloud Adobe. Anche se UGC non è visibile in CRX, [moderation](moderate-ugc.md) è disponibile sia dall&#39;ambiente di authoring che da quello di pubblicazione. L&#39;utilizzo dell&#39;[API di ricerca UGC](#ugc-search-api) funziona per ASRP allo stesso modo degli altri SRP.
 
 Al momento non esistono strumenti per la gestione delle ricerche ASRP.
 
@@ -56,12 +56,12 @@ Durante la creazione di proprietà personalizzate ricercabili, è necessario ris
 
 ### Ricerche MSRP {#msrp-searches}
 
-Per [MSRP](msrp.md), UGC è archiviato in MongoDB configurato per l&#39;utilizzo di Solr per la ricerca. UGC non è visibile in CRX, ma [moderation](moderate-ugc.md) è disponibile sia dall&#39;ambiente di authoring che da quello di Publish.
+Per [MSRP](msrp.md), UGC è archiviato in MongoDB configurato per l&#39;utilizzo di Solr per la ricerca. UGC non è visibile in CRX, ma [moderation](moderate-ugc.md) è disponibile sia dall&#39;ambiente di authoring che da quello di pubblicazione.
 
 Per quanto riguarda MSRP e Solr:
 
-* La Solr incorporata per la piattaforma AEM non viene utilizzata per la MSRP.
-* Se si utilizza una Solr remota per la piattaforma AEM, questa può essere condivisa con MSRP, ma è necessario che utilizzino raccolte diverse.
+* La Solr incorporata per la piattaforma AEM non viene utilizzata per MSRP.
+* Se utilizzi una Solr remota per la piattaforma AEM, questa potrebbe essere condivisa con MSRP, ma dovrebbero utilizzare raccolte diverse.
 * Solr può essere configurato per la ricerca standard o per la ricerca multilingue (MLS).
 * Per informazioni dettagliate sulla configurazione, vedere [Configurazione Solr](msrp.md#solr-configuration) per MSRP.
 
@@ -71,17 +71,17 @@ Durante la creazione di proprietà personalizzate ricercabili, è necessario ris
 
 ### Ricerche JSRP {#jsrp-searches}
 
-Per [JSRP](jsrp.md), UGC è archiviato in [Oak](../../help/sites-deploying/platform.md) ed è visibile solo nell&#39;archivio dell&#39;istanza di Publish o di creazione AEM in cui è stato immesso.
+Per [JSRP](jsrp.md), UGC è archiviato in [Oak](../../help/sites-deploying/platform.md) ed è visibile solo nell&#39;archivio dell&#39;istanza AEM Author o Publish in cui è stato immesso.
 
-Poiché UGC viene in genere immesso nell&#39;ambiente Publish, per i sistemi di produzione con più editori è necessario configurare un cluster di pubblicazione [&#128279;](topologies.md), non una farm di pubblicazione, in modo che il contenuto immesso sia visibile da tutti gli editori.
+Poiché UGC viene in genere immesso nell&#39;ambiente di pubblicazione, per i sistemi di produzione con più editori è necessario configurare un cluster di pubblicazione [](topologies.md), non una farm di pubblicazione, in modo che il contenuto immesso sia visibile da tutti gli editori.
 
-Per JSRP, le voci UGC immesse nell’ambiente Publish non sono mai visibili nell’ambiente di authoring. Pertanto, tutte le [attività di moderazione](moderate-ugc.md) si svolgono nell&#39;ambiente Publish.
+Per JSRP, le voci UGC immesse nell’ambiente di pubblicazione non sono mai visibili nell’ambiente di authoring. Pertanto, tutte le [attività di moderazione](moderate-ugc.md) si svolgono nell&#39;ambiente di pubblicazione.
 
 Le funzionalità di ricerca personalizzate devono utilizzare l&#39;[API di ricerca UGC](#ugc-search-api).
 
 #### Indicizzazione Oak {#oak-indexing}
 
-Sebbene gli indici Oak non vengano creati automaticamente per la ricerca della piattaforma AEM, a partire dalla versione 6.2 dell’AEM sono stati aggiunti per consentire ad AEM Communities di migliorare le prestazioni e supportare l’impaginazione durante la presentazione dei risultati della ricerca UGC.
+Sebbene gli indici Oak non vengano creati automaticamente per la ricerca sulla piattaforma AEM, a partire da AEM 6.2 sono stati aggiunti per consentire ad AEM Communities di migliorare le prestazioni e supportare l’impaginazione durante la presentazione dei risultati della ricerca UGC.
 
 Se le proprietà personalizzate sono in uso e le ricerche sono lente, è necessario creare indici aggiuntivi per le proprietà personalizzate per renderle più performanti. Per mantenere la portabilità, attieniti ai [requisiti di denominazione](#naming-of-custom-properties) durante la creazione di proprietà personalizzate ricercabili.
 
@@ -92,7 +92,7 @@ Per modificare gli indici esistenti o creare indici personalizzati, vedere [Quer
 * Una visualizzazione degli indici esistenti.
 * La capacità di avviare la reindicizzazione.
 
-Per visualizzare gli indici Oak esistenti in [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md), il percorso è:
+Per visualizzare gli indici Oak esistenti in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), il percorso è:
 
 * `/oak:index/socialLucene`
 
@@ -119,7 +119,7 @@ Di seguito sono riportate alcune delle proprietà ricercabili utilizzate per var
 | userIdentifier | *Stringa* |
 | risposte | *Lungo* |
 | jcr:title | *Stringa* |
-| jcr:descrizione | *Stringa* |
+| jcr:description | *Stringa* |
 | sling:resourceType | *Stringa* |
 | allowThreadedReply | *Booleano* |
 | isDraft | *Booleano* |
@@ -177,7 +177,7 @@ La sintassi del filtro per la logica AND e OR è espressa come segue (visualizza
 
    * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
-L&#39;implementazione predefinita del [componente Ricerca](search.md) utilizza questa sintassi, come riportato nell&#39;URL che apre la pagina Risultati ricerca nella [guida dei componenti community](components-guide.md). Per fare delle prove, passa a [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
+L&#39;implementazione predefinita del [componente Ricerca](search.md) utilizza questa sintassi, come riportato nell&#39;URL che apre la pagina Risultati ricerca nella [guida dei componenti community](components-guide.md). Per fare prove, passa a [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
 Gli operatori filtro sono:
 
@@ -213,7 +213,7 @@ Ad esempio, per eliminare tutti i contenuti generati dagli utenti (UGC) in ASRP:
 curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/usergenerated/asi/cloud -uadmin:admin
 ```
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### Query Solr {#solr-query}
 

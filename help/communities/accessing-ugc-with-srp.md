@@ -1,6 +1,6 @@
 ---
 title: Accesso a UGC con SRP
-description: Quando un sito è configurato per l’utilizzo di ASRP o MSRP, l’UGC effettivo non viene memorizzato nell’archivio dei nodi (JCR) dell’AEM
+description: Quando un sito è configurato per l’utilizzo di ASRP o MSRP, l’UGC effettivo non viene memorizzato nell’archivio nodi (JCR) di AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -12,7 +12,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ Tutti i componenti e le funzionalità di AEM Communities sono basati sul [framew
 
 Prima di creare un sito community, è necessario configurare il provider di risorse di archiviazione [SRP](/help/communities/working-with-srp.md) per selezionare un&#39;implementazione coerente con la [topologia](/help/communities/topologies.md) sottostante. Le implementazioni SRP si basano su tre opzioni di storage:
 
-1. [ASRP](/help/communities/asrp.md) - Adobe archiviazione su richiesta
+1. [ASRP](/help/communities/asrp.md) - Archiviazione su richiesta Adobe
 1. [MSRP](/help/communities/msrp.md) - MongoDB
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
 ## Informazioni sull’archiviazione UGC {#about-ugc-storage}
 
-Ciò che è importante sapere sull&#39;archiviazione di UGC è che, quando un sito è configurato per l&#39;utilizzo di ASRP o MSRP, l&#39;UGC effettivo non viene archiviato nell&#39;[archivio nodi](/help/sites-deploying/data-store-config.md) (JCR) dell&#39;AEM.
+Ciò che è importante sapere sull&#39;archiviazione di UGC è che, quando un sito è configurato per utilizzare ASRP o MSRP, l&#39;UGC effettivo non viene archiviato nell&#39;[archivio nodi](/help/sites-deploying/data-store-config.md) (JCR) di AEM.
 
 Anche se in JCR possono esserci nodi che ombreggiano l’UGC per fornire metadati utili, questi non devono essere confusi con l’UGC effettivo.
 
@@ -70,7 +70,7 @@ Diversi SRP possono avere lingue di query native diverse. Utilizzare i metodi de
 
 Per ulteriori informazioni, vedere [Search Essentials](/help/communities/search-implementation.md).
 
-## Riferimenti {#resources}
+## Risorse {#resources}
 
 * [Archiviazione contenuto community](/help/communities/working-with-srp.md): illustra le scelte SRP disponibili per un archivio comune UGC
 * [Panoramica del provider di risorse di archiviazione](/help/communities/srp.md) - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio

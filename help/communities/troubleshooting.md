@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Quando si utilizza Dispatcher 4.1.5 con una versione più recente di Jetty, un r
 
 Questo problema è risolto con l’utilizzo di Dispatcher versione 4.1.6 o successiva.
 
-### Impossibile accedere a Forum Post dopo l’aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
+### Impossibile accedere al post del forum dopo l’aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Se un forum è stato creato su CQ 5.4 e sono stati pubblicati degli argomenti, e poi il sito è stato aggiornato a AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore nella pagina:
+Se è stato creato un forum in CQ 5.4 e sono stati pubblicati degli argomenti e successivamente il sito è stato aggiornato ad AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore nella pagina:
 
 Carattere pattern &quot;a&quot; non valido
 Impossibile distribuire la richiesta a `/content/demoforums/forum-test.html` su questo server e i registri contengono quanto segue:
@@ -49,7 +49,7 @@ Pertanto, qualsiasi codice che utilizza l’API RelativeTimeFormat() deve cambia
 * Da: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-L’errore è diverso in Author e Publish. In Autore, non riesce in silenzio e semplicemente non visualizza gli argomenti del forum. Su Publish, genera l’errore sulla pagina.
+L’errore varia in Author e Publish. In Autore, non riesce in silenzio e semplicemente non visualizza gli argomenti del forum. Al momento della pubblicazione, genera l’errore sulla pagina.
 
 Per ulteriori informazioni, consulta l&#39;API [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html).
 
@@ -80,7 +80,7 @@ Questi avvisi possono essere tranquillamente ignorati.
 
 ### Errore nei registri: NoClassDefFoundError per IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-L’aggiornamento di AEM 5.6.1 alla versione più recente di cq-socialCommunities-pkg-1.4.x o a AEM 6.0 genera errori nel file di registro. Ciò si verifica durante l&#39;avvio per una condizione che si risolve da sola come evidenziato dall&#39;errore non visualizzato al riavvio.
+L’aggiornamento di AEM 5.6.1 alla versione più recente di cq-socialCommunities-pkg-1.4.x o ad AEM 6.0 genera errori nel file di registro. Ciò si verifica durante l&#39;avvio per una condizione che si risolve da sola come evidenziato dall&#39;errore non visualizzato al riavvio.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
