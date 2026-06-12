@@ -44,7 +44,7 @@ Lo standard Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.
 
 Il lead delle specifiche è detenuto da Adobe Research (Switzerland) AG.
 
-Il pacchetto [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto dell&#39;archivio.
+Il pacchetto [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto dell&#39;archivio.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -285,7 +285,7 @@ Se chiami direttamente la rappresentazione (lo script), nascondi la risorsa all�
 
 ### API Sling {#sling-api}
 
-Questo utilizza il pacchetto API Sling, org.apache.sling.&amp;ast; e le librerie di tag.
+Questo utilizza il pacchetto API Sling, org.apache.sling.&ast; e le librerie di tag.
 
 ### Riferimento a elementi esistenti tramite sling:include {#referencing-existing-elements-using-sling-include}
 
