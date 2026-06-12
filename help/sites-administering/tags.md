@@ -9,9 +9,9 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1795'
 ht-degree: 4%
 
 ---
@@ -34,9 +34,9 @@ Oltre alle pagine e alle risorse, i tag vengono utilizzati per le funzioni di AE
 
 ## Funzioni tag {#tag-features}
 
-Alcune delle caratteristiche dei tag all’interno dell’AEM includono:
+Alcune delle funzioni dei tag in AEM includono:
 
-* I tag possono essere raggruppati in vari spazi dei nomi. Tali gerarchie consentono la creazione di tassonomie. Queste tassonomie sono globali in tutta l&#39;AEM.
+* I tag possono essere raggruppati in vari spazi dei nomi. Tali gerarchie consentono la creazione di tassonomie. Queste tassonomie sono globali in AEM.
 * La restrizione principale per i nuovi tag creati è che devono essere univoci all’interno di uno spazio dei nomi specifico.
 * Il titolo di un tag non deve includere i caratteri di separazione del percorso del tag (né verranno visualizzati se presenti)
 
@@ -50,8 +50,8 @@ Alcune delle caratteristiche dei tag all’interno dell’AEM includono:
    * Un tag che non è un tag contenitore viene definito tag foglia
    * Uno spazio dei nomi dei tag è un tag foglia o un tag contenitore
 
-* I tag vengono utilizzati dal [componente Ricerca](https://helpx.adobe.com/it/experience-manager/core-components/using/quick-search.html) per facilitare la ricerca del contenuto.
-* I tag sono utilizzati dal [componente Teaser](https://helpx.adobe.com/it/experience-manager/core-components/using/teaser.html), che monitora il cloud di tag di un utente per fornire contenuti mirati.
+* I tag vengono utilizzati dal [componente Ricerca](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) per facilitare la ricerca del contenuto.
+* I tag sono utilizzati dal [componente Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), che monitora il cloud di tag di un utente per fornire contenuti mirati.
 * Se l’assegnazione tag è un aspetto importante del contenuto
 
    * assicurati di creare un pacchetto di tag con le pagine che li utilizzano
@@ -108,7 +108,7 @@ La selezione di uno spazio dei nomi o di un altro tag rende disponibili le segue
 * [Unisci](#merging-tags)
 * [Pubblicazione](#publishing-tags)
 * [Annulla pubblicazione](#unpublishing-tags)
-* [Elimina](#deleting-tags)
+* [Eliminare](#deleting-tags)
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -230,7 +230,7 @@ Sfoglia per selezionare il percorso del tag in cui eseguire l’unione.
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-Quando è selezionato uno spazio dei nomi o un altro tag, seleziona l&#39;icona **Publish** per attivare il tag nell&#39;ambiente di pubblicazione. Analogamente al contenuto della pagina, viene pubblicato solo il tag selezionato, indipendentemente dal fatto che si tratti o meno di un tag contenitore.
+Quando è selezionato uno spazio dei nomi o un altro tag, seleziona l&#39;icona **Pubblica** per attivare il tag nell&#39;ambiente di pubblicazione. Analogamente al contenuto della pagina, viene pubblicato solo il tag selezionato, indipendentemente dal fatto che si tratti o meno di un tag contenitore.
 
 Per pubblicare una tassonomia (uno spazio dei nomi e tag secondari), è consigliabile creare un [pacchetto](/help/sites-administering/package-manager.md) dello spazio dei nomi (vedi [Nodo principale tassonomia](/help/sites-developing/framework.md#taxonomy-root-node)). Assicurarsi di [applicare le autorizzazioni](#setting-tag-permissions) allo spazio dei nomi prima di creare il pacchetto.
 
@@ -255,10 +255,10 @@ Le autorizzazioni per i tag sono [&#39;sicure (per impostazione predefinita)&#39
    * accedi con privilegi amministrativi
    * accedere a [Console sicurezza](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * ad esempio, passa a http://localhost:4502/useradmin
+      * ad esempio, passare a http://localhost:4502/useradmin
 
    * nel riquadro di sinistra, selezionare il gruppo (o l&#39;utente) per il quale deve essere concessa l&#39;[autorizzazione di lettura](/help/sites-administering/security.md#permissions)
-   * nel riquadro di destra, individua il **Percorso &#x200B;** dello spazio dei nomi dei tag
+   * nel riquadro di destra, individua il **Percorso **dello spazio dei nomi dei tag
 
       * ad esempio, `/content/cq:tags/mycommunity`
 
@@ -283,7 +283,7 @@ La proprietà `title` di un tag può essere tradotta in più lingue. Una volta t
 
 ### Definizione dei titoli di tag in più lingue {#defining-tag-titles-in-multiple-languages}
 
-Di seguito viene descritto come tradurre il `title`tag **Animali** dall&#39;inglese al tedesco e al francese.
+Di seguito viene descritto come tradurre `title` del tag **Animali** dall&#39;inglese al tedesco e al francese.
 
 Per iniziare, seleziona il tag nello spazio dei nomi **Foto Stock** e fai clic sull&#39;icona **`Edit`** (consulta la sezione [Modifica dei tag](#editing-tags)).
 
@@ -305,10 +305,11 @@ Per aggiungere una nuova lingua alla finestra di dialogo, vedere [Aggiunta di un
 >
 >Il tag cloud e le parole chiave meta nel componente pagina standard utilizzano il tag localizzato `titles` in base alla lingua della pagina, se disponibile.
 
-## Riferimenti {#resources}
+## Risorse {#resources}
 
 * [Assegnazione di tag per sviluppatori](/help/sites-developing/tags.md)
 
   Informazioni sul framework dei tag ed estensione e inclusione dei tag nelle applicazioni personalizzate.
 
-* [Console classica per l’assegnazione di tag dell’interfaccia utente](/help/sites-administering/classic-console.md)
+* [Console per l’assegnazione di tag dell’interfaccia classica](/help/sites-administering/classic-console.md)
+
