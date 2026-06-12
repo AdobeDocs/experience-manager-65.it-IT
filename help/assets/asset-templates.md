@@ -124,7 +124,7 @@ Potete modificare un materiale promozionale subito dopo averlo creato. In altern
    >
    >Per consentire a [!DNL Experience Manager] di risolvere le immagini, eseguire le operazioni seguenti:
    >
-   >* Incorpora le immagini durante la creazione di [!DNL InDesign] modelli (consulta [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Incorpora le immagini durante la creazione di [!DNL InDesign] modelli (consulta [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/it/indesign/using/graphics-links.html)).
    >* Montare [!DNL Experience Manager] nel file system locale, quindi associare le icone mancanti alle risorse esistenti in [!DNL Experience Manager].
    >
 
