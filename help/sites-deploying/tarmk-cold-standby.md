@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
@@ -86,8 +86,8 @@ Inoltre, è possibile specificare le istanze in standby a cui è consentito conn
 >
 >Il PID per l’archivio dei nodi di segmento e il servizio archivio in standby è stato modificato in AEM 6.3 rispetto alle versioni precedenti come segue:
 >
->* da org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService in org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
->* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
+>* da org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService a org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
+>* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 >
 >Effettuare le regolazioni di configurazione necessarie in modo che riflettano questa modifica.
 

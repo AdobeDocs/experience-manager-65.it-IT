@@ -1,5 +1,5 @@
 ---
-title: Modelli di risorse
+title: Modelli per risorse
 description: Scopri i modelli di risorse in [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli di risorse per creare materiale promozionale di marketing.
 contentOwner: AG
 role: User
@@ -8,12 +8,12 @@ exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 1%
+source-wordcount: '1571'
+ht-degree: 2%
 
 ---
 
-# Modelli di risorse {#asset-templates}
+# Modelli per risorse {#asset-templates}
 
 I modelli di risorse sono una classe speciale di risorse che facilita la ridefinizione rapida dei contenuti con effetti visivi avanzati per i supporti digitali e di stampa. Un modello di risorsa include due parti, la sezione messaggi fissi e la sezione modificabile. La sezione dei messaggi fissi può contenere contenuti proprietari, ad esempio il logo del marchio e informazioni sul copyright, che sono disabilitati per la modifica. La sezione modificabile può contenere contenuti visivi e testuali in campi che possono essere modificati per personalizzare la messaggistica.
 

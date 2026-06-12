@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 0%
+source-wordcount: '2996'
+ht-degree: 1%
 
 ---
 
@@ -75,7 +75,7 @@ Un componente archivio contesto è un componente CQ che può essere aggiunto a C
 I componenti dell’archivio contesto possono includere i seguenti elementi:
 
 * Script JSP che definiscono l’aspetto in ClientContext.
-* Proprietà per elencare il componente nel Sidekick.
+* Proprietà per l’elenco del componente in Sidekick.
 * Finestre di dialogo di modifica per la configurazione delle istanze dei componenti.
 * JavaScript che inizializza l&#39;archivio sessioni.
 
@@ -186,7 +186,7 @@ Crea un componente archivio di contesto per eseguire il rendering dei dati archi
 
 #### Estensione dei componenti dell’archivio contesto forniti {#extending-the-provided-context-store-components}
 
-AEM fornisce i componenti archivio dati generico e archivio dati contestuali genericstoreproperties che è possibile estendere. La struttura dei dati del tuo archivio determina il componente che estendi:
+AEM fornisce i componenti dell’archivio contestuale genericstore e genericstoreproperties che è possibile estendere. La struttura dei dati del tuo archivio determina il componente che estendi:
 
 * Coppie proprietà-valore: estendere il componente `GenericStoreProperties`. Questo componente esegue automaticamente il rendering degli archivi di coppie proprietà-valore. Vengono forniti diversi punti di interazione:
 
@@ -204,11 +204,11 @@ ID del div in cui deve essere eseguito il rendering dell’archivio.
 >
 >Tutti i componenti ClientContext sono estensioni dei componenti Generic Store o Generic Store Properties. Nella cartella `/libs/cq/personalization/components/contextstores` sono installati diversi esempi.
 
-#### Configurazione dell&#39;aspetto nel Sidekick {#configuring-the-appearance-in-sidekick}
+#### Configurazione dell&#39;aspetto in Sidekick {#configuring-the-appearance-in-sidekick}
 
-Quando si modifica ClientContext, i componenti dell’archivio contestuale vengono visualizzati nel Sidekick. Come per tutti i componenti, le proprietà `componentGroup` e `jcr:title` del componente contesto client determinano il gruppo e il nome del componente.
+Quando si modifica ClientContext, i componenti dell’archivio contestuale vengono visualizzati in Sidekick. Come per tutti i componenti, le proprietà `componentGroup` e `jcr:title` del componente contesto client determinano il gruppo e il nome del componente.
 
-Per impostazione predefinita, tutti i componenti con valore di proprietà `componentGroup` pari a `Client Context` vengono visualizzati nel Sidekick. Se si utilizza un valore diverso per la proprietà `componentGroup`, è necessario aggiungere manualmente il componente al Sidekick utilizzando la modalità Progettazione.
+Per impostazione predefinita, tutti i componenti con valore di proprietà `componentGroup` pari a `Client Context` vengono visualizzati in Sidekick. Se si utilizza un valore diverso per la proprietà `componentGroup`, è necessario aggiungere manualmente il componente a Sidekick utilizzando la modalità Progettazione.
 
 #### Istanze componente archivio contesto {#context-store-component-instances}
 
@@ -302,7 +302,7 @@ Il componente dell&#39;archivio di contesto `/libs/cq/personalization/components
 
 Per eseguire il rendering dei dati di archivio utilizzando un componente genericstore, è necessario effettuare le seguenti operazioni:
 
-* Aggiungi il tag personalization:storeRendererTag allo script JSP del componente per identificare il nome dell’archivio sessione.
+* Aggiungi il tag di personalizzazione:storeRendererTag allo script JSP del componente per identificare il nome dell&#39;archivio sessione.
 * Implementa un metodo di rendering nella classe dell’archivio di sessione.
 
 #### Identificazione dell&#39;archivio sessioni genericstore {#identifying-the-genericstore-session-store}
@@ -419,7 +419,7 @@ function getName(){
 
 Per evitare che una proprietà di `PersistedSessionStore` venga resa persistente (ovvero, esclusa dal cookie `sessionpersistence`), aggiungerla all&#39;elenco delle proprietà non persistenti dell&#39;archivio di sessione persistente.
 
-Vedi ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
+Consulta ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
@@ -562,7 +562,7 @@ Aggiungi il codice al file JSP del componente geoloc per eseguire il rendering d
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. In CRXDE Lite, aprire il file `/apps/myapp/contextstores/geoloc/geoloc.jsp`.
+1. In CRXDE Lite, apri il file `/apps/myapp/contextstores/geoloc/geoloc.jsp`.
 1. Aggiungi il seguente codice HTML sotto il codice stub:
 
    ```xml
@@ -595,7 +595,7 @@ Aggiungi il codice al file JSP del componente geoloc per eseguire il rendering d
 
 Aggiungi il componente Archivio posizione a ClientContext in modo che venga inizializzato al caricamento della pagina.
 
-1. Apri la home page dei Geometrixx Outdoors nell&#39;istanza di authoring ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Apri la home page di Geometrixx Outdoors nell&#39;istanza di authoring ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Fare clic su Ctrl-Alt-C (Windows) o su Control-Opzione-C (Mac) per aprire ClientContext.
 1. Per aprire ClientContext Designer, fai clic sull’icona Modifica nella parte superiore di ClientContext.
 
@@ -605,7 +605,7 @@ Aggiungi il componente Archivio posizione a ClientContext in modo che venga iniz
 
 ### Visualizzare le informazioni sulla posizione in ClientContext {#see-the-location-information-in-client-context}
 
-Apri la home page dei Geometrixx Outdoors in modalità di modifica, quindi apri ClientContext per visualizzare i dati dal componente Archivio posizione.
+Apri la home page di Geometrixx Outdoors in modalità di modifica, quindi apri ClientContext per visualizzare i dati dal componente Archivio posizione.
 
 1. Apri la pagina inglese del sito Geometrixx Outdoors. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
 1. Per aprire ClientContext, premere Ctrl-Alt-c (Windows) o Control-option-c (Mac).

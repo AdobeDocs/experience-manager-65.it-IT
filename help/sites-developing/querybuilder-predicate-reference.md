@@ -11,8 +11,8 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 2%
+source-wordcount: '2381'
+ht-degree: 1%
 
 ---
 
@@ -483,7 +483,7 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query, è implicito.
 
    * **selettivo**:
 
-     Solo le proprietà specificate in `p.properties`, che è un elenco di percorsi relativi separato da spazi (utilizzare &quot;+&quot; negli URL); se il percorso relativo ha una profondità > 1, questi sono rappresentati come oggetti figlio; la speciale proprietà jcr:path include il percorso dell&#39;hit
+     Solo le proprietà specificate in `p.properties`, che è un elenco di percorsi relativi separato da spazi (utilizzare &quot;+&quot; negli URL). Se il percorso relativo ha una profondità > 1, questi sono rappresentati come oggetti figlio. La proprietà jcr:path speciale include il percorso dell&#39;hit
 
 ### savedquery {#savedquery}
 
@@ -513,7 +513,7 @@ Filtro non supportato. Non supporta l&#39;estrazione dei facet.
 Percorso assoluto del nodo per il quale trovare nodi simili.
 
 * **locale**
-Percorso relativo di un nodo discendente o `.` per il nodo corrente (facoltativo, l&#39;impostazione predefinita è &quot; `.`&quot;).
+Percorso relativo di un nodo discendente o `.` per il nodo corrente (facoltativo, il valore predefinito è &quot; `.`&quot;).
 
 ### tag {#tag}
 

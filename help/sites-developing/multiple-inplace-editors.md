@@ -8,7 +8,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Per configurare più editor, eseguire la procedura seguente:
 
 ### Configurazione aggiuntiva per gli editor Rich Text {#additional-configuration-for-rich-text-editors}
 
-La configurazione di più editor Rich Text è leggermente diversa, in quanto è possibile configurare separatamente ogni singola istanza di RTE. Per ulteriori dettagli, vedere [configurare l&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md). Per disporre di più editor Rich Text, creare una configurazione per ogni editor Rich Text locale. L&#39;Adobe consiglia di creare il nuovo nodo di configurazione in `cq:InplaceEditingConfig` in quanto ogni singolo editor Rich Text può avere una configurazione diversa. Nel nuovo nodo creare ogni singola configurazione dell’editor Rich Text.
+La configurazione di più editor Rich Text è leggermente diversa, in quanto è possibile configurare separatamente ogni singola istanza di RTE. Per ulteriori dettagli, vedere [configurare l&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md). Per disporre di più editor Rich Text, creare una configurazione per ogni editor Rich Text locale. Adobe consiglia di creare il nuovo nodo di configurazione in `cq:InplaceEditingConfig` in quanto ogni singolo editor Rich Text può avere una configurazione diversa. Nel nuovo nodo creare ogni singola configurazione dell’editor Rich Text.
 
 ```xml
     texttext

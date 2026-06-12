@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3263'
 ht-degree: 14%
 
 ---
@@ -120,8 +120,8 @@ Alcuni punti importanti su questa integrazione:
 * La risorsa salvata in [!DNL Experience Manager] è una copia, non un collegamento in [!DNL Adobe Stock].
 
 **Utilizzo delle risorse salvate da [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]**. Questa integrazione è indipendente da [!DNL Adobe Asset Link], ma [!DNL Adobe Asset Link] riconosce queste risorse salvate da [!DNL Stock] in questo modo e visualizza metadati aggiuntivi e un logo [!DNL Adobe Stock] su queste risorse nell&#39;interfaccia utente dell&#39;estensione [!DNL Adobe Asset Link] in [!DNL Photoshop], [!DNL Illustrator] o [!DNL InDesign]. I file sono disponibili per l&#39;esplorazione, l&#39;apertura e così via, in quanto si tratta di risorse normali quando vengono salvate in [!DNL Experience Manager].
-Gli utenti di Creative che lavorano in app [!DNL Creative Cloud] con estensione [!DNL Adobe Asset Link] presenti, oltre ad avere accesso a risorse con licenza da [!DNL Adobe Stock] in [!DNL Experience Manager], possono anche utilizzare il pannello Librerie [!DNL Creative Cloud] per cercare, visualizzare in anteprima e concedere in licenza [!DNL Adobe Stock] risorse.
-[!DNL Assets] da [!DNL Adobe Stock] concesso in licenza e salvato in [!DNL Experience Manager] diventa disponibile ai team più grandi che accedono alla distribuzione di [!DNL Experience Manager Assets], mentre le risorse create con licenza da [!DNL Adobe Stock] tramite il pannello Librerie [!DNL Creative Cloud] le rendono disponibili solo per impostazione predefinita nel loro account [!DNL Creative Cloud].
+Gli utenti di Creative che lavorano in app [!DNL Creative Cloud] con estensione [!DNL Adobe Asset Link] presenti, oltre ad avere accesso a risorse con licenza già da [!DNL Adobe Stock] in [!DNL Experience Manager], possono utilizzare anche il pannello Librerie [!DNL Creative Cloud] per cercare, visualizzare in anteprima e concedere in licenza [!DNL Adobe Stock] risorse.
+[!DNL Assets] di [!DNL Adobe Stock] concesso in licenza e salvato in [!DNL Experience Manager] diventa disponibile per i team più grandi che accedono alla distribuzione di [!DNL Experience Manager Assets], mentre le risorse con licenza Creative di [!DNL Adobe Stock] tramite il pannello Librerie di [!DNL Creative Cloud] le rendono disponibili a se stesse solo per impostazione predefinita nel loro account di [!DNL Creative Cloud].
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
@@ -135,7 +135,7 @@ Per progettare un flusso di lavoro efficiente tra i team creativi e di marketing
 
 L’archiviazione delle risorse in DAM ne semplifica l’accesso e la ricerca. In questo modo le risorse possono essere utilizzate da numerosi utenti nell’organizzazione o nell’ecosistema, inclusi partner, clienti e così via.
 
-La maggior parte delle organizzazioni sceglie di memorizzare solo le risorse rilevanti per i processi di marketing/LOB a valle (pubblicazione su canali come il canale web tramite [!DNL Experience Manager Sites] o altri canali gestiti da Adobe Experience Cloud, Marketing Cloud, Advertising Cloud e misurati da Analytics Cloud, fornendo informazioni a utenti/partner e così via). Inoltre, le organizzazioni memorizzano in DAM le risorse che possono essere soggette a un processo di revisione/approvazione. In questo modo, DAM archivia principalmente le risorse che hanno elevate probabilità di essere utilizzate ed evita di archiviare le risorse inattive.
+La maggior parte delle organizzazioni sceglie di memorizzare solo le risorse rilevanti per i processi di marketing/LOB a valle (pubblicazione su canali come il canale web tramite [!DNL Experience Manager Sites] o altri canali gestiti da Adobe Experience Cloud, come Marketing Cloud, Advertising Cloud e misurati da Analytics Cloud, fornendo informazioni a utenti/partner e così via). Inoltre, le organizzazioni memorizzano in DAM le risorse che possono essere soggette a un processo di revisione/approvazione. In questo modo, DAM archivia principalmente le risorse che hanno elevate probabilità di essere utilizzate ed evita di archiviare le risorse inattive.
 
 L’archiviazione delle risorse è inoltre soggetta a considerazioni tecniche e sull’utilizzo delle risorse. DAM offre servizi aggiuntivi sulle risorse memorizzate, tra cui estrazione di metadati, controllo delle versioni, generazione di anteprime/transcodifica, gestione dei riferimenti e aggiunta di informazioni di controllo degli accessi. Questi servizi richiedono più tempo e risorse infrastrutturali.
 

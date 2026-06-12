@@ -1,6 +1,6 @@
 ---
-title: Concetti di base dell’AEM
-description: Panoramica dei concetti fondamentali della struttura di Adobe Experience Manager (AEM) e del suo sviluppo, inclusa la comprensione di JCR, Sling, OSGi, Dispatcher, flussi di lavoro e MSM.
+title: Concetti di base di AEM
+description: Panoramica dei concetti di base sulla struttura di Adobe Experience Manager (AEM) e su come svilupparlo, inclusa la comprensione di JCR, Sling, OSGi, Dispatcher, flussi di lavoro e MSM.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -11,20 +11,20 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 0%
+source-wordcount: '3364'
+ht-degree: 1%
 
 ---
 
-# Concetti di base dell’AEM {#aem-core-concepts}
+# Concetti di base di AEM {#aem-core-concepts}
 
 >[!NOTE]
 >
->Prima di passare ai concetti di base di Adobe Experience Manager (AEM), l&#39;Adobe consiglia di completare l&#39;esercitazione WKND nel documento [Guida introduttiva allo sviluppo di AEM Sites](/help/sites-developing/getting-started.md). Esso include una panoramica del processo di sviluppo dell’AEM e un’introduzione ai concetti fondamentali.
+>Prima di passare ai concetti di base di Adobe Experience Manager (AEM), Adobe consiglia di completare l&#39;esercitazione WKND nel documento [Guida introduttiva allo sviluppo di AEM Sites](/help/sites-developing/getting-started.md). Include una panoramica del processo di sviluppo di AEM e un’introduzione ai concetti di base.
 
-## Prerequisiti per lo sviluppo sull’AEM {#prerequisites-for-developing-on-aem}
+## Prerequisiti per lo sviluppo in AEM {#prerequisites-for-developing-on-aem}
 
-Per sviluppare in aggiunta all’AEM, ha bisogno delle seguenti competenze:
+Per sviluppare al di sopra di AEM sono necessarie le seguenti competenze:
 
 * Conoscenza di base delle tecniche di applicazione web, tra cui:
 
@@ -42,13 +42,13 @@ Per sviluppare in aggiunta all’AEM, ha bisogno delle seguenti competenze:
 
 Lo standard Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specifica un modo indipendente dal fornitore e dall&#39;implementazione per accedere al contenuto in modo bidirezionale su un livello granulare all&#39;interno di un repository dei contenuti.
 
-Il piombo delle specifiche è detenuto da Adobe Research (Switzerland) AG.
+Il lead delle specifiche è detenuto da Adobe Research (Switzerland) AG.
 
-Il pacchetto [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto del repository.
+Il pacchetto [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto dell&#39;archivio.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
-Experience Server fornisce i servizi di esperienza su cui si basa l’AEM, che possono essere utilizzati per creare applicazioni personalizzate e incorpora il Content Repository basato su Jackrabbit.
+Experience Server fornisce i servizi di esperienza su cui è basato AEM, che possono essere utilizzati per creare applicazioni personalizzate e incorpora il Content Repository basato su Jackrabbit.
 
 [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) è un&#39;implementazione open source, pienamente conforme, dell&#39;API 2.0 JCR.
 
@@ -56,7 +56,7 @@ Experience Server fornisce i servizi di esperienza su cui si basa l’AEM, che p
 
 ### Introduzione a Sling {#introduction-to-sling}
 
-L&#39;AEM viene creato utilizzando [Sling](https://sling.apache.org/index.html), un framework di applicazioni Web basato sui principi REST che consente di sviluppare facilmente applicazioni orientate ai contenuti. Sling utilizza come archivio dati un archivio JCR, come Apache Jackrabbit o, in presenza di AEM, CRX Content Repository. Sling ha contribuito alla Apache Software Foundation; ulteriori informazioni sono disponibili su Apache.
+AEM è stato creato utilizzando [Sling](https://sling.apache.org/index.html), un framework di applicazioni Web basato sui principi REST che consente di sviluppare facilmente applicazioni orientate ai contenuti. Sling utilizza come archivio dati un archivio JCR, come Apache Jackrabbit o, se esiste AEM, CRX Content Repository. Sling ha contribuito alla Apache Software Foundation; ulteriori informazioni sono disponibili su Apache.
 
 Utilizzando Sling, il tipo di contenuto di cui eseguire il rendering non è la prima considerazione di elaborazione. Al contrario, la considerazione principale è se l’URL viene risolto in un oggetto di contenuto per il quale è possibile trovare uno script per eseguire il rendering. Questo fornisce un supporto eccellente agli autori di contenuti web per creare pagine facilmente personalizzate in base alle loro esigenze.
 
@@ -68,7 +68,7 @@ Il diagramma seguente spiega la risoluzione dello script Sling. Mostra come pass
 
 ![Informazioni sulla risoluzione dello script Apache Sling](assets/sling-cheatsheet-01.png)
 
-Il diagramma seguente spiega tutti i potenti, nascosti, parametri di richiesta che è possibile utilizzare quando si tratta di SlingPostServlet. Include il gestore predefinito per tutte le richieste POST, che offre opzioni infinite per la creazione, la modifica, l’eliminazione, la copia e lo spostamento dei nodi nell’archivio.
+Il diagramma seguente spiega tutti i potenti, nascosti, parametri di richiesta che è possibile utilizzare quando si tratta di SlingPostServlet. Include il gestore predefinito per tutte le richieste POST che offre opzioni infinite per la creazione, la modifica, l’eliminazione, la copia e lo spostamento dei nodi nell’archivio.
 
 ![Utilizzo di SlingPostServlet](assets/sling-cheatsheet-02.png)
 
@@ -157,10 +157,10 @@ Tutti gli script Sling sono archiviati in sottocartelle di `/apps` o `/libs`, in
 
 Altri punti da notare sono:
 
-* quando il metodo (GET, POST) è obbligatorio, viene specificato in maiuscolo in base alla specifica HTTP, ad esempio jobs.POST.esp (vedi di seguito)
+* quando il metodo (GET, POST) è obbligatorio, viene specificato in maiuscolo in base alla specifica HTTP, ad esempio jobs.POST.esp (vedi sotto)
 * sono supportati vari motori di script:
 
-   * HTL (HTML Template Language, il sistema di modelli lato server preferito e consigliato di Adobe Experience Manager per HTML): `.html`
+   * HTL (HTML Template Language - Sistema di modelli lato server preferito e consigliato di Adobe Experience Manager per HTML): `.html`
    * Pagine ECMAScript (JavaScript) (esecuzione lato server): `.esp, .ecma`
    * Pagine Java™ Server (esecuzione lato server): `.jsp`
    * Compilatore Java™ Servlet (esecuzione lato server): `.java`
@@ -172,9 +172,9 @@ Inoltre, Apache Sling supporta l’integrazione con altri motori di script popol
 
 Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` allora per:
 
-* Richieste GET/HEAD e URL con estensione html (tipi di richiesta predefiniti, formato predefinito)
+* Richieste GET/HEAD e URL che terminano con .html (tipi di richiesta predefiniti, formato predefinito)
 
-  Lo script è /apps/hr/jobs/jobs.esp; l’ultima sezione di sling:resourceType forma il nome del file.
+  Lo script è /apps/hr/jobs/jobs.esp; l&#39;ultima sezione di sling:resourceType forma il nome del file.
 
 * Richieste POST (tutti i tipi di richiesta tranne GET/HEAD, il nome del metodo deve essere in maiuscolo)
 
@@ -196,7 +196,7 @@ Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` allor
 
   Lo script è `/apps/hr/jobs/jobs.print.esp`. Il selettore viene aggiunto al nome dello script.
 
-* Se non è definito sling:resourceType:
+* Se non è definito alcun sling:resourceType:
 
    * il percorso del contenuto viene utilizzato per cercare uno script appropriato (se ResourceTypeProvider basato sul percorso è attivo).
 
@@ -278,22 +278,22 @@ Se chiami direttamente la rappresentazione (lo script), nascondi la risorsa all�
 
 * gestione automatica di metodi http diversi da GET, tra cui:
 
-   * POST, PUT, DELETE gestito con un’implementazione sling predefinita
+   * POST, PUT, DELETE che viene gestito con un’implementazione sling predefinita
    * lo script `POST.jsp` nel percorso sling:resourceType
 
 * l&#39;architettura del codice non è più pulita né strutturata in modo chiaro come dovrebbe essere; di primaria importanza per lo sviluppo su larga scala
 
 ### API Sling {#sling-api}
 
-Questo utilizza il pacchetto API Sling, org.apache.sling.&ast; e librerie di tag.
+Questo utilizza il pacchetto API Sling, org.apache.sling.&ast; e le librerie di tag.
 
-### Riferimento a elementi esistenti mediante sling:include {#referencing-existing-elements-using-sling-include}
+### Riferimento a elementi esistenti tramite sling:include {#referencing-existing-elements-using-sling-include}
 
 Un&#39;ultima considerazione è la necessità di fare riferimento agli elementi esistenti all&#39;interno degli script.
 
 Gli script più complessi (aggregazione di script) devono accedere a più risorse (ad esempio, navigazione, barra laterale, piè di pagina, elementi di un elenco) includendo la *risorsa*.
 
-A questo scopo, utilizza il comando sling:include(&quot;/&lt;percorso>/&lt;risorsa>&quot;). Ciò include effettivamente la definizione della risorsa di riferimento, come nell’istruzione seguente che fa riferimento a una definizione esistente per il rendering delle immagini:
+A tale scopo, utilizzare il comando sling:include(&quot;/&lt;percorso>/&lt;risorsa>&quot;). Ciò include effettivamente la definizione della risorsa di riferimento, come nell’istruzione seguente che fa riferimento a una definizione esistente per il rendering delle immagini:
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -358,17 +358,17 @@ Per ulteriori informazioni sulla manipolazione degli oggetti Node, vedere i docu
 
 Le finestre di dialogo vengono create combinando widget.
 
-L’AEM è stato sviluppato utilizzando la libreria ExtJS di widget.
+AEM è stato sviluppato utilizzando la libreria ExtJS di widget.
 
 **Finestra di dialogo** Una finestra di dialogo è un tipo speciale di widget.
 
-Per modificare il contenuto, l’AEM utilizza le finestre di dialogo definite dallo sviluppatore dell’applicazione. Combinano una serie di widget per presentare all’utente tutti i campi e le azioni necessari per modificare il contenuto correlato.
+Per modificare il contenuto, AEM utilizza le finestre di dialogo definite dallo sviluppatore dell’applicazione. Combinano una serie di widget per presentare all’utente tutti i campi e le azioni necessari per modificare il contenuto correlato.
 
 Le finestre di dialogo vengono utilizzate anche per la modifica dei metadati e da vari strumenti di amministrazione.
 
 **Componente** Un componente software è un elemento di sistema che offre un servizio o un evento predefinito ed è in grado di comunicare con altri componenti.
 
-All’interno dell’AEM, un componente viene spesso utilizzato per riprodurre il contenuto di una risorsa. Quando la risorsa è una pagina, il componente di cui viene eseguito il rendering è denominato Componente di livello principale o Componente pagina. Tuttavia, un componente non deve eseguire il rendering del contenuto né essere collegato a una risorsa specifica. Ad esempio, un componente di navigazione visualizza informazioni su più risorse.
+In AEM, un componente viene spesso utilizzato per eseguire il rendering del contenuto di una risorsa. Quando la risorsa è una pagina, il componente di cui viene eseguito il rendering è denominato Componente di livello principale o Componente pagina. Tuttavia, un componente non deve eseguire il rendering del contenuto né essere collegato a una risorsa specifica. Ad esempio, un componente di navigazione visualizza informazioni su più risorse.
 
 La definizione di un componente include quanto segue:
 
@@ -379,13 +379,13 @@ La definizione di un componente include quanto segue:
 
 Un modello è una gerarchia di nodi con la stessa struttura della pagina da creare, ma senza alcun contenuto effettivo.
 
-Definisce il componente Pagina utilizzato per eseguire il rendering della pagina e il contenuto predefinito (contenuto principale di primo livello). Il contenuto definisce il modo in cui viene riprodotto poiché l’AEM è incentrato sui contenuti.
+Definisce il componente Pagina utilizzato per eseguire il rendering della pagina e il contenuto predefinito (contenuto principale di primo livello). Il contenuto definisce il modo in cui viene eseguito il rendering quando AEM è incentrato sui contenuti.
 
 **Componente Pagina (Componente Di Livello Superiore)** Componente da utilizzare per il rendering della pagina.
 
 **Pagina** Una pagina è un&#39;istanza di un modello.
 
-Una pagina ha un nodo di gerarchia di tipo cq:Page e un nodo di contenuto di tipo cq:PageContent. La proprietà sling:resourceType del nodo di contenuto punta al componente Pagina utilizzato per il rendering della pagina.
+Una pagina ha un nodo di gerarchia di tipo cq:Page e un nodo di contenuto di tipo cq:PageContent. La proprietà sling:resourceType del nodo del contenuto punta al componente Pagina utilizzato per il rendering della pagina.
 
 Ad esempio, per ottenere il nome della pagina corrente, è possibile utilizzare il codice seguente nello script:
 
@@ -431,7 +431,7 @@ L’elenco seguente offre una panoramica della struttura visualizzata all’inte
 
 * `/libs`
 
-  Librerie e definizioni che appartengono al nucleo dell’AEM. Le sottocartelle in `/libs` rappresentano le funzionalità predefinite di AEM, ad esempio ricerca o replica. Il contenuto in `/libs` non deve essere modificato in quanto influisce sul funzionamento dell&#39;AEM. Le funzionalità specifiche del sito Web devono essere sviluppate in `/apps` (vedi [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Librerie e definizioni che appartengono al nucleo di AEM. Le sottocartelle in `/libs` rappresentano le funzionalità predefinite di AEM, ad esempio la ricerca o la replica. Il contenuto in `/libs` non deve essere modificato in quanto influisce sul funzionamento di AEM. Le funzionalità specifiche del sito Web devono essere sviluppate in `/apps` (vedi [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -443,7 +443,7 @@ L’elenco seguente offre una panoramica della struttura visualizzata all’inte
 
 ## Ambienti {#environments}
 
-Con l&#39;AEM, un ambiente di produzione è spesso costituito da due diversi tipi di istanze: un [istanza Autore e un&#39;istanza Publish](/help/sites-deploying/deploy.md#author-and-publish-installs).
+Con AEM, un ambiente di produzione è spesso costituito da due diversi tipi di istanze: un [istanza Autore e un&#39;istanza Publish](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
 ## Dispatcher {#the-dispatcher}
 

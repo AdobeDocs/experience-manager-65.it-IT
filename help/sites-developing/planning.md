@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 1%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 0%
 Questo documento descrive cosa devi sapere per pianificare il test. Inoltre, è necessario rispondere alle seguenti domande prima di eseguire i test:
 
 * [Quali ambienti di test saranno necessari?](/help/sites-developing/test-environments.md)
-* [Definizione dei test case](/help/sites-developing/test-cases.md)
+* [Definizione dei casi di test](/help/sites-developing/test-cases.md)
 * [Test: quando e con chi?](/help/sites-developing/when-who.md)
 
 ## Prima di iniziare {#before-you-start}
 
 Prima di iniziare con l&#39;analisi e la definizione effettive dei test, esaminare le informazioni riportate di seguito.
 
-**Architettura AEM** - Consulta Concetti di base per conoscere l&#39;architettura e i principi di base dell&#39;AEM.
+**Architettura di AEM** - Consulta Concetti di base per conoscere l&#39;architettura e i principi di base di AEM.
 
 **Documentazione** - Per ulteriori informazioni, consulta una delle sezioni della documentazione o gli articoli Come fare.
 
-**Principi di base dei test** - È necessario conoscere i principi di base dei test software e della garanzia di qualità. È preferibile che tu abbia esperienza con i progetti di test.
+**Principi di base dei test** - È necessario conoscere i principi di base dei test software e di Assurance di qualità. È preferibile che tu abbia esperienza con i progetti di test.
 
 Ci sono molti siti web, libri e corsi che trattano di tali principi e quindi non saranno trattati in dettaglio in questo documento.
 
@@ -50,7 +50,7 @@ Anche se i numeri futuri non possono essere previsti con una precisione del 100%
 
 ## Tipi di test {#types-of-tests}
 
-Esistono varie classificazioni standard dei test che sono appropriate per l&#39;uso quando si esegue un test su un progetto AEM. Dovresti avere familiarità con questi elementi per decidere quale usare:
+Esistono diverse classificazioni standard di test appropriate da utilizzare per testare un progetto AEM. Dovresti avere familiarità con questi elementi per decidere quale usare:
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ I test Black-box sono test funzionali di un&#39;unità/componente/modulo complet
 
 Testano la funzionalità su base black-box.
 
-**Test delle prestazioni** - I test delle prestazioni sono fondamentali per il test dell&#39;AEM.
+**Test delle prestazioni** - I test delle prestazioni sono fondamentali durante il test di AEM.
 
 Vengono utilizzati per illustrare le prestazioni in condizioni diverse:
 
