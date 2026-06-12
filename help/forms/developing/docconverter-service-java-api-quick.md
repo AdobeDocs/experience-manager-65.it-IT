@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 Java™ API Quick Start(SOAP) è disponibile per il servizio DocConverter.
 
-[Guida rapida (modalità SOAP): determinazione della conformità PDF/A tramite Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Guida rapida (modalità SOAP): determinazione della conformità PDF/A tramite l’API Java™](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Guida rapida (modalità SOAP): conversione di un documento in un documento PDF/A tramite Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Guida rapida (modalità SOAP): conversione di un documento in un documento PDF/A tramite l’API Java™](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi nella programmazione con i moduli AEM si basano sul server Forms distribuito su JBoss® Application Server e sul sistema operativo Microsoft® Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi nella programmazione con AEM Form si basano sul server Forms distribuito su JBoss® Application Server e sul sistema operativo Microsoft® Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Guida rapida (modalità SOAP): conversione di un documento in un documento PDF/A tramite l’API Java™ {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
@@ -133,9 +133,9 @@ Nell&#39;esempio di codice Java™ seguente un documento PDF denominato *Loan.pd
  }
 ```
 
-## Quick Start (modalità SOAP): determinazione della conformità PDF/A tramite l’API Java™ {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
+## Guida rapida (modalità SOAP): determinazione della conformità PDF/A tramite l’API Java™ {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-Nell&#39;esempio di codice Java™ seguente viene determinato se il documento PDF di input è compatibile con PDF/A. Il documento di input PDF passato al servizio DocConverter è denominato *LoanArchive.pdf*. I risultati della convalida vengono scritti in un file XML denominato *ValidationResults.xml*. (Vedi [Determinazione A Livello Di Programmazione Della Conformità Di PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+Nell&#39;esempio di codice Java™ seguente viene determinato se il documento PDF di input è compatibile con PDF/A. Il documento PDF di input passato al servizio DocConverter è denominato *LoanArchive.pdf*. I risultati della convalida vengono scritti in un file XML denominato *ValidationResults.xml*. (Vedi [Determinazione A Livello Di Programmazione Della Conformità PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 Java™ API Quick Start(SOAP) è disponibile per il servizio Credential.
 
-[Quick Start (modalità SOAP): importazione delle credenziali tramite Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Quick Start (modalità SOAP): importazione delle credenziali tramite l’API Java™](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Guida rapida (modalità SOAP): eliminazione delle credenziali tramite Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Guida rapida (modalità SOAP): eliminazione delle credenziali tramite l’API Java™](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->I moduli di avvio rapido nella programmazione con AEM si basano sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi nella programmazione con i moduli di AEM si basano sul server Forms distribuito su JBoss® e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene importata una cred
  
 ```
 
-## Quick Start (modalità SOAP): eliminazione delle credenziali tramite l’API Java™ {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Guida rapida (modalità SOAP): eliminazione delle credenziali tramite l’API Java™ {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice riportato di seguito viene eliminata una credenziale basata su un valore di alias *secure*. (Vedi [Eliminazione delle credenziali tramite l&#39;API di Gestione trust](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 

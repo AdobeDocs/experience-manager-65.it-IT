@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Con l’app Verifica preliminare Mobile On-Demand puoi visualizzare tutti i prog
 ## Anteprima con verifica preliminare {#previewing-with-preflight-1}
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Fai clic sui puntini di sospensione (...) dalla sezione **Gestisci articoli** (o banner/raccolte).
+1. Fai clic sui puntini (...) dal riquadro **Gestisci articoli** (o banner/raccolte).
 1. Seleziona **Verifica preliminare** dalla barra delle azioni.
 1. Fare clic su **Attiva verifica preliminare** nella finestra di dialogo.
 1. L’app è ora pronta per l’anteprima nell’app Mobile On-Demand Preflight.
@@ -42,7 +42,7 @@ Con l’app Verifica preliminare Mobile On-Demand puoi visualizzare tutti i prog
 
 >[!NOTE]
 >
->L’app Verifica preliminare AEM viene utilizzata per visualizzare in anteprima i contenuti e sfogliare le pagine. Per informazioni approfondite sulla verifica preliminare dell&#39;app, fai clic [qui](https://helpx.adobe.com/it/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>L’app Verifica preliminare di AEM viene utilizzata per visualizzare in anteprima i contenuti e sfogliare le pagine. Per informazioni approfondite sulla verifica preliminare dell&#39;app, fai clic [qui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Come procedere {#getting-ahead}
@@ -57,4 +57,4 @@ Per ulteriori informazioni sull’authoring dei contenuti, consulta le risorse s
 Per ulteriori informazioni sugli altri due ruoli e responsabilità per la creazione di un’app AEM Mobile On-demand Services, consulta le risorse seguenti:
 
 * [Sviluppo di contenuti AEM per AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Creazione di contenuti AEM per l’app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Authoring di contenuti AEM per l’app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

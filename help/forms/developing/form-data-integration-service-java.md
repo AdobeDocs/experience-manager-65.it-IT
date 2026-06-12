@@ -1,6 +1,6 @@
 ---
-title: Servizio di integrazione dei dati dei moduli Quick Start JavaAPI (SOAP)
-description: Utilizza il servizio di integrazione dei dati del modulo per importare i dati in un modulo PDF ed esportare i dati da un modulo PDF utilizzando l’API Java.
+title: Avvio rapido di API Java per il servizio di integrazione dei dati del modulo (SOAP)
+description: Utilizza il servizio Integrazione dati modulo per importare dati in un modulo PDF ed esportare dati da un modulo PDF utilizzando l’API Java.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
+source-wordcount: '251'
+ht-degree: 3%
 
 ---
 
-# Servizio di integrazione dei dati dei moduli - Guida rapida API Java (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
+# Servizio di integrazione dei dati dei moduli - Guida introduttiva all’API Java (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
 
 Per il servizio di integrazione dei dati del modulo sono disponibili i seguenti Quick Start.
 
@@ -28,7 +28,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva alla programmazione con i moduli AEM si basa sul server Forms distribuito sul server applicazioni JBoss e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva alla programmazione con AEM Form si basa sul server Forms distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (modalità SOAP): importazione di dati dai moduli tramite API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
@@ -134,7 +134,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito i dati vengono impo
 
 ## Quick Start (modalità SOAP): esportazione di dati modulo tramite API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito i dati vengono esportati da un modulo PDF. I dati del modulo vengono salvati come file XML denominato *Loan_data.xml*. (Vedi [Esportazione dei dati del modulo](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+Esempio Nell&#39;esempio di codice Java riportato di seguito i dati vengono esportati da un modulo di PDF. I dati del modulo vengono salvati come file XML denominato *Loan_data.xml*. (Vedi [Esportazione dei dati del modulo](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*

@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Se pensi a una rivista online, il contenuto principale include articoli, annunci
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/it/digital-publishing-solution/help/design-app.html) nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
 ## Creazione e gestione dei contenuti {#creating-and-managing-content}
 
@@ -44,7 +44,7 @@ Gli argomenti seguenti descrivono la creazione e la gestione di contenuti, ovver
 * [Gestione dei banner](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gestione delle raccolte](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Caricamento delle risorse condivise](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Annullamento pubblicazione contenuto Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Pubblica contenuto di annullamento pubblicazione](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
