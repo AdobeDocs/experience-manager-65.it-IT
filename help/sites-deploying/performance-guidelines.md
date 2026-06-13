@@ -304,7 +304,7 @@ In AEM, i dati binari possono essere memorizzati indipendentemente dai nodi di c
 
 >[!CAUTION]
 >
->Il supporto del micro kernel del database relazionale è limitato. Contatta l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=homehome?lang=it#support) prima di utilizzare questo tipo di micro kernel.
+>Il supporto del micro kernel del database relazionale è limitato. Contatta l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support) prima di utilizzare questo tipo di micro kernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -316,7 +316,7 @@ Per ulteriori dettagli sulle opzioni di configurazione disponibili, vedere [Conf
 
 >[!NOTE]
 >
->Adobe consiglia di scegliere l’opzione di distribuire AEM su Azure o Amazon Web Services (AWS) utilizzando Adobe Managed Services. I clienti traggono vantaggio da un team con l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe consiglia di scegliere l’opzione di distribuire AEM su Azure o Amazon Web Services (AWS) utilizzando Adobe Managed Services. I clienti traggono vantaggio da un team con l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/it/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Per consigli su come implementare AEM su Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collabora con uno dei partner di Adobe che supportano l’implementazione di AEM nell’ambiente cloud desiderato. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura supportata per soddisfare requisiti specifici di prestazioni, carico, scalabilità e sicurezza.
 >
