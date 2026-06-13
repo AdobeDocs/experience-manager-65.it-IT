@@ -57,7 +57,7 @@ Selezionare la lettera da visualizzare in anteprima seguendo la procedura descri
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul passaggio dalla modalità di rendering HTML o PDF all&#39;anteprima della lettera, vedere [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto di PDF in Gestione della corrispondenza e AEM, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Per ulteriori informazioni sul passaggio dalla modalità di rendering HTML o PDF all&#39;anteprima della lettera, vedere [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto di PDF in Gestione della corrispondenza e AEM, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/it/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Immetti i dati {#enterdata}
 
@@ -367,7 +367,7 @@ Di seguito sono riportati i vantaggi e le funzionalità disponibili nell’antep
 * **Interruzione di pagina**: nell&#39;anteprima di PDF puoi visualizzare esattamente in che modo le interruzioni di pagina nella lettera influiscono sul relativo output.
 * **Anteprima finale**: nell&#39;anteprima di PDF è possibile visualizzare la formattazione e l&#39;aspetto esatti della lettera così come apparirà nell&#39;output.
 
-Per informazioni sul supporto degli script in PDF forms, vedere [Supporto degli script](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
+Per informazioni sul supporto degli script in PDF forms, vedere [Supporto degli script](https://help.adobe.com/it_IT/livecycle/11.0/ScriptingSupport/index.html).
 
 Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [Supporto degli script per i moduli HTML5](/help/forms/using/scripting-support.md).
 
@@ -375,7 +375,7 @@ Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [S
 
 Per impostazione predefinita, nell’interfaccia utente per la creazione di corrispondenza vengono utilizzati i moduli HTML o mobili per eseguire il rendering dell’anteprima della lettera. L’anteprima dei moduli mobili non presenta problemi di rendering in alcun browser, poiché utilizza il plug-in nativo del browser e non richiede plug-in aggiuntivi. Potete cambiare la modalità di anteprima della lettera in PDF. Tuttavia, i vincoli del browser possono creare problemi per diverse funzioni dell’anteprima PDF interattiva della lettera.
 
-Per ulteriori informazioni sulla compatibilità del browser con l&#39;anteprima della lettera, vedere [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Per ulteriori informazioni sulla compatibilità del browser con l&#39;anteprima della lettera, vedere [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/it/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 La procedura seguente illustra come modificare la modalità di anteprima della lettera:
 
