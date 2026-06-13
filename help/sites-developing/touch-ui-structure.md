@@ -11,22 +11,22 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '892'
 ht-degree: 5%
 
 ---
 
 # Struttura dell’interfaccia utente touch di Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
 
-L’interfaccia utente touch di Adobe Experience Manager (AEM) ha diversi principi di base ed è costituita da diversi elementi chiave:
+L’interfaccia utente touch di Adobe Experience Manager (AEM) presenta diversi principi di base ed è costituita da diversi elementi chiave:
 
 ## Console {#consoles}
 
 ### Layout e ridimensionamento di base {#basic-layout-and-resizing}
 
-L’interfaccia utente è adatta sia per i dispositivi mobili che per quelli desktop, ma invece di creare due stili, Adobe ha deciso di utilizzare uno stile che funziona per tutti gli schermi e i dispositivi.
+L’interfaccia utente di è adatta sia per i dispositivi mobili che per quelli desktop, ma invece di creare due stili Adobe ha deciso di utilizzare uno stile che funziona per tutti gli schermi e i dispositivi.
 
-Tutti i moduli utilizzano lo stesso layout di base, che nell’AEM può essere visto come:
+Tutti i moduli utilizzano lo stesso layout di base; in AEM questo può essere visto come:
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -42,7 +42,7 @@ Ad esempio, quando la risoluzione scende al di sotto di 1024 px (come su un disp
 
 La barra dell’intestazione mostra gli elementi globali, tra cui:
 
-* il logo e lo specifico prodotto/soluzione attualmente in uso; per l’AEM questo costituisce anche un collegamento alla navigazione globale
+* il logo e lo specifico prodotto/soluzione attualmente in uso; per AEM, costituisce anche un collegamento alla navigazione globale
 * Ricerca
 * icona per accedere alle risorse della guida
 * icona per accedere ad altre soluzioni
@@ -141,7 +141,7 @@ Un livello è un bundle indipendente di funzionalità che può essere attivato p
 
 I livelli forniscono funzionalità avanzate per l’intera pagina, anziché azioni specifiche per un singolo componente.
 
-L’AEM viene fornito con diversi livelli già implementati per l’authoring delle pagine, tra cui, ad esempio, modifica, anteprima e annota.
+AEM include diversi livelli già implementati per l’authoring delle pagine, tra cui, ad esempio, modifica, anteprima e annota.
 
 >[!NOTE]
 >
@@ -165,6 +165,6 @@ A seconda dello spazio disponibile, le barre degli strumenti del componente sono
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori dettagli sui concetti relativi all&#39;interfaccia utente touch, leggere [Concetti dell&#39;interfaccia utente touch AEM](/help/sites-developing/touch-ui-concepts.md).
+Per ulteriori dettagli sui concetti relativi all&#39;interfaccia utente touch, leggere [Concetti dell&#39;interfaccia utente touch di AEM](/help/sites-developing/touch-ui-concepts.md).
 
 Per ulteriori informazioni tecniche, consulta [Set di documentazione JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l&#39;editor di pagine touch.

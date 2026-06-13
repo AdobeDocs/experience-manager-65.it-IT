@@ -1,5 +1,5 @@
 ---
-title: Modifica delle impostazioni locali dell'interfaccia utente di AEM Forms Workspace
+title: Modifica delle impostazioni locali dell’interfaccia utente dell’area di lavoro di AEM Forms
 description: Come modificare l’area di lavoro di AEM Forms per localizzare testo, categorie compresse, code e processi e il selettore data sull’interfaccia.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 0%
+source-wordcount: '559'
+ht-degree: 3%
 
 ---
 
-# Modifica delle impostazioni locali dell&#39;interfaccia utente di AEM Forms Workspace{#changing-the-locale-of-aem-forms-workspace-user-interface}
+# Modifica delle impostazioni locali dell’interfaccia utente dell’area di lavoro di AEM Forms{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
 AEM Forms Workspace offre supporto integrato per le lingue inglese, francese, tedesco e giapponese. Consente inoltre di localizzare l’interfaccia utente dell’area di lavoro di AEM Forms in qualsiasi altra lingua.
 
@@ -38,7 +38,7 @@ Prima di eseguire i passaggi precedenti, assicurati di seguire i passaggi elenca
 Eseguire la procedura seguente per aggiungere il supporto per una lingua *New* e il codice delle impostazioni locali del browser *nw*.
 
 1. Accedi a CRXDE Lite.
-URL predefinito di CRXDE Lite: `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+L&#39;URL predefinito di CRXDE Lite è `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Passare alla posizione `apps/ws/locales` e creare una cartella `nw.`
 1. Copiare il file `translation.json` dal percorso `/apps/ws/locales/en-US` al percorso `/apps/ws/locales/nw`.
 1. Passare a `/apps/ws/locales/nw` e aprire `translation.json` per la modifica. Apporta al file translation.json le modifiche specifiche per le impostazioni internazionali.
@@ -80,7 +80,7 @@ Per localizzare le immagini, effettuare le seguenti operazioni:
 
 1. Esegui tutte le modifiche semantiche elencate nell&#39;articolo [Personalizzazione Workspace](../../forms/using/introduction-customizing-html-workspace.md).
 1. Passa alla cartella *js/runtime/utility* e apri il file *usersession.js* per la modifica.
-1. Individua il codice elencato nel blocco di codice originale e aggiungi la condizione *lang!== &#39;nw&#39;* all&#39;istruzione if:
+1. Individua il codice elencato nel blocco di codice originale e aggiungi la condizione *lang !== &#39;nw&#39;* all&#39;istruzione if:
 
    ```javascript
    // Orignal code

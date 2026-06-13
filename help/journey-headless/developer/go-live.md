@@ -1,20 +1,20 @@
 ---
 title: Come pubblicare con la tua applicazione headless
-description: In questa sezione del Percorso per sviluppatori headless AEM, scopri come distribuire un’applicazione headless in tempo reale.
+description: In questa sezione del Percorso per sviluppatori AEM Headless, scopri come distribuire un’applicazione headless in tempo reale.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 53%
+source-wordcount: '1930'
+ht-degree: 51%
 
 ---
 
 # Come pubblicare con la tua applicazione headless {#go-live}
 
-In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), scopri come distribuire un&#39;applicazione headless live.
+In questa sezione del [Percorso di sviluppatori AEM Headless](overview.md), scopri come distribuire un&#39;applicazione headless live.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -28,7 +28,7 @@ Questo articolo si basa sulle nozioni di base che ti faranno capire come prepara
 
 Questo documento ti aiuta a comprendere la pipeline di pubblicazione headless AEM e le considerazioni sulle prestazioni di cui devi tener conto prima di pubblicare l’applicazione.
 
-* Scopri l’SDK per AEM e gli strumenti di sviluppo necessari
+* Scopri AEM SDK e gli strumenti di sviluppo necessari
 * Imposta un runtime di sviluppo locale per simulare i contenuti prima della pubblicazione
 * Nozioni di base sulla replica e il caching dei contenuti AEM
 * Proteggi e ridimensiona l’applicazione prima del lancio
@@ -45,7 +45,7 @@ L’SDK di AEM viene utilizzato per generare e distribuire il codice personalizz
 
 ## Strumenti di sviluppo aggiuntivi {#additional-development-tools}
 
-Oltre all’SDK per AEM, hai bisogno di strumenti aggiuntivi che facilitino lo sviluppo e il test locale del codice e del contenuto:
+Oltre ad AEM SDK, è necessario disporre di strumenti aggiuntivi che facilitino lo sviluppo e il test locale del codice e del contenuto:
 
 * Java™
 * Git
@@ -59,7 +59,7 @@ Git è ciò che utilizzerai per gestire il controllo del codice sorgente e per t
 
 AEM utilizza Apache Maven per creare progetti generati dall’archetipo del progetto Maven di AEM. Tutti gli IDE principali forniscono supporto per l’integrazione per Maven.
 
-Node.js è un ambiente di runtime JavaScript utilizzato per lavorare con le risorse front-end del sottoprogetto `ui.frontend` di un progetto AEM. Node.js è distribuito con npm, che è de facto il gestore di pacchetti Node.js, utilizzato per gestire le dipendenze di JavaScript.
+Node.js è un ambiente runtime di JavaScript utilizzato per lavorare con le risorse front-end del sottoprogetto `ui.frontend` di un progetto AEM. Node.js è distribuito con npm, che è de facto il gestore di pacchetti Node.js, utilizzato per gestire le dipendenze di JavaScript.
 
 ## Panoramica dei componenti di un sistema AEM {#components-of-an-aem-system-at-a-glance}
 
@@ -69,7 +69,7 @@ Un ambiente AEM completo è costituito da authoring, pubblicazione e Dispatcher.
 
 * Il **servizio di authoring** è il luogo in cui gli utenti interni creano, gestiscono e visualizzano in anteprima i contenuti.
 
-* **Il servizio Publish** è considerato l&#39;ambiente &quot;Live&quot; ed è normalmente ciò con cui gli utenti finali interagiscono. I contenuti, dopo essere stati modificati e approvati nel servizio di authoring, vengono distribuiti (replicati) al servizio Publish. Il modello di implementazione più comune per le applicazioni headless AEM consiste nella connessione della versione di produzione dell’applicazione a un servizio di pubblicazione AEM.
+* **Il servizio di pubblicazione** è considerato l&#39;ambiente &quot;live&quot; ed è normalmente ciò con cui gli utenti finali interagiscono. I contenuti, dopo essere stati modificati e approvati nel servizio di authoring, vengono distribuiti (replicati) nel servizio di pubblicazione. Il modello di implementazione più comune per le applicazioni headless AEM consiste nella connessione della versione di produzione dell’applicazione a un servizio di pubblicazione AEM.
 
 * **Il Dispatcher** è un server web statico potenziato con il modulo Dispatcher di AEM. Memorizza nella cache le pagine web prodotte dall’istanza di pubblicazione per migliorare le prestazioni.
 
@@ -77,7 +77,7 @@ Un ambiente AEM completo è costituito da authoring, pubblicazione e Dispatcher.
 
 Il progetto di sviluppo locale è basato su Apache Maven e utilizza Git per il controllo del codice sorgente. Per aggiornare il progetto, gli sviluppatori possono utilizzare, tra gli altri, il proprio ambiente di sviluppo integrato preferito, ad esempio Eclipse, Visual Studio Code o IntelliJ.
 
-Per testare gli aggiornamenti del codice o del contenuto acquisiti dall’applicazione headless, distribuisci gli aggiornamenti nel runtime AEM locale. Queste includono istanze locali dei servizi di authoring e pubblicazione dell’AEM.
+Per testare gli aggiornamenti del codice o del contenuto acquisiti dall’applicazione headless, distribuisci gli aggiornamenti nel runtime AEM locale. tra cui istanze locali dei servizi di authoring e pubblicazione di AEM.
 
 Assicurati di prendere nota delle distinzioni tra ogni componente nel runtime AEM locale, in quanto è importante testare gli aggiornamenti dove contano di più. Ad esempio, prova gli aggiornamenti del contenuto sull’authoring o testa il nuovo codice sull’istanza di pubblicazione.
 
@@ -97,13 +97,13 @@ L&#39;ambiente di sviluppo locale è costituito da tre aree principali:
 
 Dopo aver configurato l’ambiente di sviluppo locale, puoi simulare il contenuto da distribuire all’app React distribuendo localmente un server Nodo statico.
 
-Per informazioni più approfondite sulla configurazione di un ambiente di sviluppo locale e su tutte le dipendenze necessarie per l&#39;anteprima del contenuto, consulta [Documentazione sulla distribuzione di produzione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=it).
+Per informazioni più approfondite sulla configurazione di un ambiente di sviluppo locale e su tutte le dipendenze necessarie per l&#39;anteprima del contenuto, consulta [Documentazione sulla distribuzione di produzione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Prepara la tua applicazione AEM headless per il lancio {#prepare-your-aem-headless-application-for-golive}
 
 <!-- Start of CDN Review -->
 
-Ora è il momento di preparare l’applicazione headless AEM per il lancio, seguendo le best practice descritte di seguito.
+Ora è il momento di preparare la tua applicazione headless AEM per il lancio, seguendo le best practice descritte di seguito.
 
 ### Protezione dell&#39;applicazione headless prima dell&#39;avvio {#secure-and-scale-before-launch}
 
@@ -140,17 +140,17 @@ Ora è il momento di preparare l’applicazione headless AEM per il lancio, segu
 
 ## Distribuzione alla produzione {#deploy-to-production}
 
-La distribuzione in Produzione può dipendere dal fatto che tu disponga di un&#39;istanza *tradizionale* dell&#39;AEM che distribuisce utilizzando Maven oppure di Adobe Managed Services (AMS) e quindi di Cloud Manager.
+La distribuzione in Produzione può dipendere dal fatto che tu disponga di un&#39;istanza di AEM *tradizionale* che distribuisce utilizzando Maven oppure di Adobe Managed Services (AMS) e quindi di Cloud Manager.
 
 ## Implementare in produzione utilizzando Maven {#deploy-to-production-maven}
 
-Per una distribuzione *tradizionale* (non AMS) tramite Maven, consulta l&#39;[esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=it#build) per una panoramica.
+Per una distribuzione *tradizionale* (non AMS) tramite Maven, consulta l&#39;[esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) per una panoramica.
 
 ## Implementare in produzione utilizzando Cloud Manager {#deploy-to-production-cloud-manager}
 
-Se sei un cliente AMS che utilizza Cloud Manager, dopo aver verificato che tutto sia stato testato e funzioni correttamente, puoi inviare gli aggiornamenti del codice a un [archivio Git centralizzato in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=it).
+Se sei un cliente AMS che utilizza Cloud Manager, dopo aver verificato che tutto sia stato testato e funzioni correttamente, puoi inviare gli aggiornamenti del codice a un [archivio Git centralizzato in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
-Dopo aver caricato gli aggiornamenti in Cloud Manager, distribuiscili all&#39;AEM utilizzando [la pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=it).
+Dopo aver caricato gli aggiornamenti in Cloud Manager, distribuiscili in AEM utilizzando [la pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -184,7 +184,7 @@ Segui queste best practice come approccio generale al debug:
 * Convalida funzionalità e prestazioni con la versione di produzione dell’applicazione
 * Convalida con JSON l’anteprima dell’Editor di frammento di contenuto
 * Per verificare la presenza di problemi di consegna o applicazione client, esamina il JSON nell’applicazione client
-* Per verificare la presenza di problemi relativi al contenuto memorizzato nella cache o all’AEM, controlla il JSON utilizzando GraphQL
+* Per verificare la presenza di problemi relativi al contenuto memorizzato in cache o ad AEM, controlla il JSON utilizzando GraphQL
 
 ### Registrazione di un bug con Support {#logging-a-bug-with-support}
 
@@ -197,7 +197,7 @@ Per segnalare in modo efficiente un bug con il supporto, nel caso sia necessaria
 
 ## Il percorso è terminato - Davvero? {#journey-ends}
 
-Congratulazioni. Hai completato il Percorso per sviluppatori AEM headless! Ora dovresti avere imparato:
+Congratulazioni. Hai completato il Percorso per sviluppatori AEM headless! Ora dovresti aver appreso quanto segue:
 
 * La differenza tra distribuzione headless e headful dei contenuti.
 * Le funzionalità headless di AEM.
@@ -207,17 +207,17 @@ Congratulazioni. Hai completato il Percorso per sviluppatori AEM headless! Ora d
 * Come pubblicare con un progetto AEM headless.
 * Cosa fare dopo il completamento del go-live.
 
-Hai già avviato il tuo primo progetto headless AEM oppure ora disponi di tutte le conoscenze necessarie per farlo. Ottimo lavoro!
+Hai già avviato il tuo primo progetto AEM Headless o ora disponi di tutte le conoscenze necessarie per farlo. Ottimo lavoro!
 
 ### Esplora le applicazioni a pagina singola {#explore-spa}
 
-Non c&#39;è bisogno di fermare i negozi headless in AEM, però. Nella sezione [Guida introduttiva del percorso](getting-started.md#integration-levels), è stato discusso il modo in cui l&#39;AEM non solo supporta la distribuzione headless e i modelli full stack tradizionali, ma supporta anche i modelli ibridi che combinano i vantaggi di entrambi.
+Tuttavia, non è necessario arrestare i negozi headless in AEM. Nella sezione [Guida introduttiva del percorso](getting-started.md#integration-levels), è stato discusso il modo in cui AEM non solo supporta la distribuzione headless e i modelli full stack tradizionali, ma supporta anche modelli ibridi che combinano i vantaggi di entrambi.
 
-Se questo tipo di flessibilità è necessario per il progetto, passare alla parte facoltativa aggiuntiva del percorso [Come creare applicazioni a pagina singola (SPA) con AEM.](create-spa.md)
+Se questo tipo di flessibilità è necessario per il progetto, passare alla sezione facoltativa aggiuntiva del percorso [Come creare applicazioni a pagina singola con AEM.](create-spa.md)
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Guida allo sviluppo dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=it)
+* [Guida allo sviluppo di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
 * [Esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
 
@@ -225,10 +225,10 @@ Se questo tipo di flessibilità è necessario per il progetto, passare alla part
 
 * Cache CDN
 
-   * [Controllo di una cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#controlling-a-cdn-cache)
+   * [Controllo di una cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Configurazione del [rewriter CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=it) (*cerca rewriter CDN*)
+   * Configurazione del [rewriter CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*cerca rewriter CDN*)
 
 * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
-* [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

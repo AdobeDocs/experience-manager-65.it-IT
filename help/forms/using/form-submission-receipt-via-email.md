@@ -1,5 +1,5 @@
 ---
-title: Invio di una conferma per l’invio di un modulo tramite e-mail
+title: Invio di una conferma di invio modulo tramite e-mail
 description: AEM Forms consente di configurare l’azione di invio e-mail che invia una conferma a un utente al momento dell’invio del modulo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 0%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
-# Invio di una conferma per l’invio di un modulo tramite e-mail {#sending-a-form-submission-acknowledgement-via-email}
+# Invio di una conferma di invio modulo tramite e-mail {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Invio di dati per moduli adattivi {#adaptive-form-data-submission}
 
@@ -28,7 +28,7 @@ Questo articolo descrive i passaggi necessari per abilitare l’azione E-mail su
 
 >[!NOTE]
 >
->È inoltre possibile utilizzare l&#39;opzione **[!UICONTROL Invia PDF tramite posta elettronica]** per inviare il modulo completato tramite posta elettronica come allegato PDF. Le opzioni di configurazione disponibili per questa azione sono le stesse disponibili per l&#39;azione **[!UICONTROL Invia e-mail]**. L’azione E-mail PDF è disponibile solo per i moduli adattivi basati su XFA
+>È inoltre possibile utilizzare l&#39;opzione **[!UICONTROL Invia PDF tramite posta elettronica]** per inviare il modulo completato tramite posta elettronica come allegato di PDF. Le opzioni di configurazione disponibili per questa azione sono le stesse disponibili per l&#39;azione **[!UICONTROL Invia e-mail]**. L’azione E-mail PDF è disponibile solo per i moduli adattivi basati su XFA
 
 ## Azione Invia e-mail {#email-action}
 

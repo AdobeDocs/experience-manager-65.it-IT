@@ -1,6 +1,6 @@
 ---
-title: Differenziazione delle funzioni tra moduli di HTML5 e PDF forms
-description: Scopri le differenze di funzionalità tra moduli HTML5 e PDF forms.
+title: Differenziazione delle funzioni tra moduli HTML5 e moduli PDF
+description: Scopri le differenze di funzionalità tra HTML5 Forms e PDF forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,26 +12,26 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
-# Differenziazione delle funzioni tra moduli di HTML5 e PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Differenziazione delle funzioni tra moduli HTML5 e moduli PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-La tabella seguente specifica il supporto delle funzioni fornito per i moduli e i PDF forms di HTML5:
+La tabella seguente specifica il supporto delle funzioni fornito per i moduli HTML5 e PDF forms:
 
 <table>
  <tbody>
   <tr>
-   <th>Funzione obsoleta</th>
+   <th>Funzione</th>
    <th>Moduli HTML5</th>
    <th>PDF</th>
   </tr>
   <tr>
    <td>Codici a barre<br /> </td>
    <td>Non disponibile a livello di interfaccia utente. </td>
-   <td>Funzione supportata</td>
+   <td>Supportato</td>
   </tr>
   <tr>
    <td>Campo firma<br /> </td>
@@ -50,7 +50,7 @@ La tabella seguente specifica il supporto delle funzioni fornito per i moduli e 
   </tr>
   <tr>
    <td>Paginazione<br /> </td>
-   <td><p>Un modulo HTML5 è diviso in pannelli e caselle per conferirgli un aspetto simile a quello dei PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta. Tra le pagine sopra e sotto la pagina vuota non viene visualizzato uno spazio vuoto (spazio vuoto).</p> <p>Se l’unione dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Non vengono aggiunte nuove pagine al modulo per includere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> quando tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre pagine.</p> </td>
+   <td><p>Un modulo di HTML5 è diviso in pannelli e caselle per conferirgli un aspetto simile a quello di PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta. Tra le pagine sopra e sotto la pagina vuota non viene visualizzato uno spazio vuoto (spazio vuoto).</p> <p>Se l’unione dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Non vengono aggiunte nuove pagine al modulo per includere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> quando tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre pagine.</p> </td>
    <td>L’impaginazione in PDF dipende dal contenuto dei dati uniti o dal contenuto dell’utente e il conteggio delle pagine viene aumentato/ridotto in base a esso.</td>
   </tr>
   <tr>

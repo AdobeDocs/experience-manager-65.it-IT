@@ -1,6 +1,6 @@
 ---
 title: Configurazione dell’utilizzo dei cookie
-description: AEM fornisce un servizio che consente di configurare e controllare il modo in cui i cookie vengono utilizzati con le pagine web.
+description: AEM fornisce un servizio che ti consente di configurare e controllare il modo in cui i cookie vengono utilizzati con le pagine web.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
+source-wordcount: '557'
+ht-degree: 5%
 
 ---
 
@@ -27,9 +27,9 @@ Utilizza questa funzione per assicurarti che le pagine siano conformi al consens
 
 ## Configurazione dei cookie consentiti {#configuring-allowed-cookies}
 
-Configura il servizio di rinuncia di Adobe Granite per specificare come vengono utilizzati i cookie sulle pagine web. Nella tabella seguente sono descritte le proprietà che è possibile configurare.
+Configura il servizio Opt-out di Adobe Granite per specificare in che modo i cookie vengono utilizzati nelle pagine web. Nella tabella seguente sono descritte le proprietà che è possibile configurare.
 
-Per configurare il servizio, è possibile utilizzare la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all&#39;archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente vengono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il PID del servizio è `com.adobe.granite.optout`.
+Per configurare il servizio, è possibile utilizzare la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all&#39;archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il PID del servizio è `com.adobe.granite.optout`.
 
 | Nome proprietà (console Web) | Nome proprietà OSGi | Descrizione |
 |---|---|---|
@@ -73,7 +73,7 @@ I nomi dei cookie che, se presenti, indicano che l’utente non ha dato il conse
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -85,7 +85,7 @@ I nomi dei cookie che possono essere utilizzati indipendentemente dal consenso d
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -97,7 +97,7 @@ Determina se il browser dell’utente contiene cookie che indicano che non è st
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 

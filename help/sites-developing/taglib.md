@@ -11,7 +11,7 @@ feature: Developing,Tagging
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ La libreria globale dichiara anche la [libreria Sling](/help/sites-developing/ta
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-Il tag `<ui:includeClientLib>` include una libreria client HTML AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio, js e css, questo tag deve essere utilizzato più volte in jsp. Questo tag è un wrapper di convenienza intorno all&#39;interfaccia del servizio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+Il tag `<ui:includeClientLib>` include una libreria client html di AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio, js e css, questo tag deve essere utilizzato più volte in jsp. Questo tag è un wrapper di convenienza intorno all&#39;interfaccia del servizio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Ha i seguenti attributi:
 
@@ -257,9 +257,9 @@ Utilizzare `<cq:include>` o `<sling:include>`?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` obsoleto da AEM 5.6. Utilizzare [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib).
+>`<cq:includeClientLib>` obsoleto a partire da AEM 5.6. Utilizzare [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib).
 
-Il tag `<cq:includeClientLib>` include una libreria client HTML AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio, js e css, questo tag deve essere utilizzato più volte in jsp. Questo tag è un wrapper di convenienza intorno all&#39;interfaccia del servizio `com.day.cq.widget.HtmlLibraryManager`.
+Il tag `<cq:includeClientLib>` include una libreria client html di AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio, js e css, questo tag deve essere utilizzato più volte in jsp. Questo tag è un wrapper di convenienza intorno all&#39;interfaccia del servizio `com.day.cq.widget.HtmlLibraryManager`.
 
 Ha i seguenti attributi:
 
@@ -586,8 +586,8 @@ Il tag `<sling:defineObjects>` espone i seguenti oggetti di script, utilizzati r
 
 **slingResponse**
 
-* Oggetto SlingHttpServletResponse, che fornisce accesso alla risposta HTTP creata dal server. È lo stesso di HttpServletResponse da cui si estende.**richiesta**
-* L’oggetto richiesta JSP standard che è un HttpServletRequest puro.**risposta**
+* Oggetto SlingHttpServletResponse, che fornisce accesso alla risposta HTTP creata dal server. È lo stesso HttpServletResponse da cui estende.**richiesta**
+* L&#39;oggetto di richiesta JSP standard che è un HttpServletRequest puro.**risposta**
 * L’oggetto di risposta JSP standard che è un HttpServletResponse puro.
 
 **resourceResolver**
