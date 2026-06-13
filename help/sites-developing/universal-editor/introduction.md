@@ -6,7 +6,7 @@ role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
 source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1361'
 ht-degree: 96%
 
 ---
@@ -40,9 +40,9 @@ L’editor universale è un servizio che funziona insieme ad AEM per creare cont
 L’editor universale è supportato da:
 
 * AEM 6.5
-   * Sono supportati sia l&#39;hosting locale che l&#39;hosting AMS*.
+   * Sono supportati sia l’hosting locale che AMS*.
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * Sono supportati sia l&#39;hosting locale che l&#39;hosting AMS*.
+   * Sono supportati sia l’hosting locale che AMS*.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 Questo documento è incentrato sul supporto di AEM 6.5 dell’editor universale. Per utilizzare l’editor universale con AEM 6.5, è necessario avere:
@@ -53,7 +53,7 @@ Questo documento è incentrato sul supporto di AEM 6.5 dell’editor universale.
 
 >[!NOTE]
 >
->*Se si utilizza Adobe Managed Services (AMS), contattare il proprio Customer Success Engineer (CSE) se si desidera utilizzare Universal Editor.
+>*Se utilizzi Adobe Managed Services (AMS), contatta il tuo Customer Success Engineer (CSE) se desideri utilizzare l’editor universale.
 
 ## Configurazione {#setup}
 
@@ -142,7 +142,7 @@ Con AEM aggiornato e configurato, puoi impostare un servizio editor universale l
 1. Installa Node.js versione >=20.
 1. Scarica e decomprimi il servizio editor universale più recente da [Distribuzione del software](https://experienceleague.adobe.com/it/docs/experience-cloud/software-distribution/home)
 1. Configura il servizio editor universale tramite variabili di ambiente o un file `.env`.
-   * [Per informazioni dettagliate, consulta la documentazione dell’editor universale di AEM as a Cloud Service.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [Per informazioni dettagliate, consulta la documentazione di AEM as a Cloud Service Universal Editor.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Nota che potresti dover utilizzare l’opzione `UES_MAPPING` se è richiesta la riscrittura interna dell’IP.
 1. Eseguire `universal-editor-service.cjs`
 

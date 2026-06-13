@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3902'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Selezionare la lettera da visualizzare in anteprima seguendo la procedura descri
 
    ![Anteprima lettera](assets/8_previewcustomdatafile.png)
 
-1. Per impostazione predefinita, viene aperta l’anteprima di Letter HTML (anteprima moduli mobili) con la scheda Dati attivata.
+1. Per impostazione predefinita, viene aperta l’anteprima della lettera HTML (anteprima moduli mobili) con la scheda Dati attivata.
 
    Per ulteriori informazioni sui moduli per dispositivi mobili e sulle funzionalità supportate, vedere [Differenziazione delle funzionalità tra Mobile Forms e PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
@@ -57,7 +57,7 @@ Selezionare la lettera da visualizzare in anteprima seguendo la procedura descri
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul passaggio dalla modalità di rendering HTML alla modalità di rendering PDF dell&#39;anteprima della lettera, vedere [Modificare la modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto di PDF in Gestione della corrispondenza e AEM, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/it/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Per ulteriori informazioni sul passaggio dalla modalità di rendering HTML o PDF all&#39;anteprima della lettera, vedere [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto di PDF in Gestione della corrispondenza e AEM, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/it/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Immetti i dati {#enterdata}
 
@@ -65,7 +65,7 @@ Nella scheda Dati, compila i campi di layout e i segnaposto disponibili.
 
 1. Immetti i dati e le variabili di contenuto nei campi, in base alle esigenze. Compila tutti i campi obbligatori contrassegnati da un asterisco (&#42;) per abilitare il pulsante **Invia**.
 
-   Selezionare un valore di campo dati nell&#39;anteprima lettera HTML per evidenziare il campo dati corrispondente nella scheda Dati.
+   Selezionare un valore del campo dati nell&#39;anteprima lettera di HTML per evidenziare il campo dati corrispondente nella scheda Dati.
 
    ![Immettere i dati nella lettera](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
@@ -83,7 +83,7 @@ Nella scheda del contenuto, gestisci il contenuto, ad esempio frammenti di docum
 
    ![4_highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
-   Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra nell&#39;anteprima della lettera HTML, puoi disabilitare o abilitare la funzionalità per passare al modulo contenuto/dati quando il campo testo, paragrafo o dati pertinente è selezionato nell&#39;anteprima della lettera.
+   Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra nell’anteprima della lettera di HTML, puoi disabilitare o abilitare la funzionalità per passare al modulo contenuto/dati quando il campo testo, paragrafo o dati pertinente è selezionato nell’anteprima della lettera.
 
    Per ulteriori informazioni sulle azioni disponibili per vari moduli nell&#39;interfaccia utente Crea corrispondenza, vedere [Azioni e informazioni disponibili nell&#39;interfaccia utente Crea corrispondenza](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
@@ -229,7 +229,7 @@ Puoi apportare modifiche al layout e al contenuto per garantire che la lettera a
 
 1. Modifica i moduli di contenuto, come richiesto, nella scheda Contenuto. Per spostare lo stato attivo sul modulo del contenuto rilevante nella gerarchia del contenuto, puoi selezionare la riga o il paragrafo pertinente nell’anteprima della lettera oppure selezionare il modulo del contenuto direttamente nella gerarchia del contenuto.
 
-   Ad esempio, la riga &quot;Per consentirci di accedere a...&quot; è selezionata nell&#39;immagine seguente e il modulo di contenuto corrispondente è selezionato nella scheda Contenuto.
+   Ad esempio, la riga &quot;Per consentirci di accedere a...&quot; è selezionato nell&#39;immagine seguente e il modulo di contenuto corrispondente è selezionato nella scheda Contenuto.
 
    Toccando Evidenzia moduli selezionati nel contenuto ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), puoi disabilitare o abilitare la funzionalità per evidenziare il modulo del contenuto nella scheda Contenuto quando il testo, il paragrafo o il campo dati rilevante viene toccato nell&#39;anteprima della lettera.
 
@@ -251,23 +251,23 @@ Puoi apportare modifiche al layout e al contenuto per garantire che la lettera a
 
    Viene visualizzata la finestra di dialogo Nome bozza lettera con l&#39;ID istanza della lettera. Facoltativamente, puoi modificare questo ID. Prendere nota dell&#39;ID lettera, quindi selezionare **Fine**. In seguito puoi utilizzare questo ID per [ricaricare la bozza della lettera](submit-letter-topostprocess.md#reloaddraft).
 
-1. Per visualizzare in anteprima la lettera come PDF appiattito con il layout esatto e le interruzioni di pagina che verranno inviate, selezionare ( ![anteprima](assets/preview.png)) Anteprima.
+1. Per visualizzare l&#39;anteprima della lettera come PDF appiattito con il layout esatto e le interruzioni di pagina che verranno inviate, selezionare ( ![anteprima](assets/preview.png)) Anteprima.
 
-   La lettera viene visualizzata come PDF appiattito. Il PDF appiattito è l&#39;esatta rappresentazione della lettera, in quanto verrà inviata con i font, le interruzioni e il layout corretti della lettera.
+   La lettera viene visualizzata come un PDF appiattito. Il PDF appiattito è l&#39;esatta rappresentazione della lettera, in quanto verrà inviata con i font, le interruzioni e il layout corretti della lettera.
 
    >[!NOTE]
    >
-   >Se utilizzi Mozilla Firefox e il tipo di rappresentazione HTML, per visualizzare in anteprima la lettera come PDF appiattito, assicurati di utilizzare il plug-in nativo del browser e non il plug-in Acrobat. Per selezionare il plug-in del browser nativo, vai alle impostazioni di Mozilla Firefox e per il tipo di contenuto PDF, seleziona Anteprima in Firefox.
+   >Se utilizzi il tipo di rappresentazione Mozilla Firefox e HTML, per visualizzare l’anteprima della lettera come PDF appiattito, assicurati di utilizzare il plug-in nativo del browser e non il plug-in Acrobat. Per selezionare il plug-in del browser nativo, vai alle impostazioni di Mozilla Firefox e per il tipo di contenuto PDF, seleziona Anteprima in Firefox.
 
-1. Se l&#39;anteprima del PDF appiattito è soddisfacente, selezionare **Invia** per inviare la lettera. In alternativa, per modificare la lettera, seleziona **Esci da anteprima** per tornare all&#39;anteprima dell&#39;interfaccia utente per la creazione di corrispondenza della lettera e apportare modifiche alla lettera. Quando selezioni Invia, se la configurazione Gestisci istanza lettera è abilitata nell’istanza di Publish, viene generata l’istanza della lettera di invio.
+1. Se l&#39;anteprima di PDF appiattita è soddisfacente, selezionare **Invia** per inviare la lettera. In alternativa, per modificare la lettera, seleziona **Esci da anteprima** per tornare all&#39;anteprima dell&#39;interfaccia utente per la creazione di corrispondenza della lettera e apportare modifiche alla lettera. Quando selezioni Invia, se la configurazione Gestisci istanza lettera è abilitata nell’istanza Pubblica, viene generata l’istanza della lettera di invio.
 
    Per ulteriori informazioni, vedere Istanza bozza in Salvataggio delle bozze e invio delle istanze di lettere.
 
    È inoltre possibile salvare la lettera come bozza per modificarla in un secondo momento.
 
-   Dopo aver apportato le modifiche necessarie, è possibile inviare la lettera dall&#39;anteprima di HTML5 oppure selezionare nuovamente Anteprima per rivedere l&#39;output di PDF appiattito.
+   Dopo aver apportato le modifiche necessarie, è possibile inviare la lettera dall&#39;anteprima di HTML5 oppure selezionare nuovamente Anteprima per rivedere l&#39;output del PDF appiattito.
 
-   Per informazioni sulle differenze tra i moduli HTML5 e i PDF forms, vedere [Differenziazione delle caratteristiche tra i moduli HTML5 e i PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+   Per informazioni sulle differenze tra HTML5 Forms e PDF forms, vedere [Differenziazione delle caratteristiche tra HTML5 Forms e PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## Salvataggio delle bozze e invio delle istanze di lettere {#savingdrafts}
 
@@ -275,21 +275,21 @@ Quando si esegue il rendering di una lettera nell’interfaccia utente Crea corr
 
 È possibile salvare due tipi di istanze di lettere: Istanza bozza e Istanza invio.
 
-* **Istanza bozza**: l&#39;istanza bozza acquisisce lo stato corrente della lettera visualizzata in anteprima. Per salvare una bozza di istanza, accertatevi innanzitutto che la lettera e tutte le risorse a cui fa riferimento la lettera siano nello stato Pubblicato. Per informazioni sulla pubblicazione di una lettera, consulta [Publish an asset](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Prima di poter salvare una lettera come bozza, è necessario Publish, perché quando si pubblica una lettera, si crea una versione della lettera, delle risorse dipendenti e dei dati a quel punto. La versione pubblicata di una lettera non può essere modificata da te o da un altro utente e può essere ripristinata in un secondo momento senza alcuna discrepanza imprevista dalla versione pubblicata. Puoi tornare a questa istanza in un secondo momento e continuare da dove ti sei allontanato.
+* **Istanza bozza**: l&#39;istanza bozza acquisisce lo stato corrente della lettera visualizzata in anteprima. Per salvare una bozza di istanza, accertatevi innanzitutto che la lettera e tutte le risorse a cui fa riferimento la lettera siano nello stato Pubblicato. Per informazioni sulla pubblicazione di una lettera, consulta [Pubblicare una risorsa](../../forms/using/publishing-unpublishing-forms.md#publishanasset). È necessario pubblicare una lettera prima di salvarla come bozza, poiché quando si pubblica una lettera, si crea una versione della lettera, delle risorse dipendenti e dei dati a quel punto. La versione pubblicata di una lettera non può essere modificata da te o da un altro utente e può essere ripristinata in un secondo momento senza alcuna discrepanza imprevista dalla versione pubblicata. Puoi tornare a questa istanza in un secondo momento e continuare da dove ti sei allontanato.
 
-* **Istanza di invio**: le istanze di invio acquisiscono lo stato della lettera durante l&#39;invio. L’istanza di invio memorizza lo stato PDF dell’istanza della lettera dopo la post-elaborazione insieme ai dati immessi dall’utente nell’interfaccia utente per la creazione di corrispondenza.
+* **Istanza di invio**: le istanze di invio acquisiscono lo stato della lettera durante l&#39;invio. L’istanza di invio memorizza lo stato PDF dell’istanza della lettera dopo la post-elaborazione insieme ai dati immessi dall’utente nell’interfaccia utente di Creazione corrispondenza.
 
 Tali istanze possono essere salvate solo quando la lettera viene visualizzata nell’istanza Publish. Per impostazione predefinita, il salvataggio sulle istanze è disattivato. Per abilitare il salvataggio delle istanze di lettere, effettuare le seguenti operazioni.
 
-1. In AEM, apri Configurazione console web Adobe Experience Manager per il server utilizzando il seguente URL: https://&lt;server>:&lt;porta>/&lt;contextpath>/system/console/configMgr
+1. In AEM, apri la configurazione della console web di Adobe Experience Manager per il server utilizzando il seguente URL: https://&lt;server>:&lt;porta>/&lt;contextpath>/system/console/configMgr
 1. Individua **[!UICONTROL Configurazioni gestione corrispondenza]** e fai clic su di esso.
-1. Controlla **[!UICONTROL Gestisci istanze lettere nella configurazione di Publish]** e fai clic su **[!UICONTROL Salva]**.
+1. Controlla **[!UICONTROL Gestisci istanze lettere nella configurazione di pubblicazione]** e fai clic su **[!UICONTROL Salva]**.
 
 ### Abilita funzione Salva bozza {#enable-save-draft-feature}
 
 Prima di pubblicare lettere o salvare bozze nell’istanza di pubblicazione, effettua le seguenti operazioni sull’istanza di authoring e di pubblicazione per abilitare la funzione Salva come bozza:
 
-Per impostazione predefinita, le proprietà *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* non vengono trasferite all&#39;istanza Publish. Per trasferire le proprietà *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* all&#39;istanza Publish, disabilitare il componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Per disattivare il componente:
+Per impostazione predefinita, le proprietà *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* non vengono trasferite all&#39;istanza di pubblicazione. Per trasferire le proprietà *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* all&#39;istanza di pubblicazione, disabilitare il componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Per disattivare il componente:
 
 1. Nell’istanza di authoring, apri la console Componenti della console Web di Adobe Experience Manager. URL predefinito: `http://author-server:port/system/console/components`
 
@@ -309,7 +309,7 @@ Per abilitare la funzione Salva come bozza, sostituisci l&#39;URL esistente in [
 
 1. Fai clic su Salva.
 
-![Istanza Publish](/help/forms/using/assets/correspondencemanagement.png)
+![Istanza di pubblicazione](/help/forms/using/assets/correspondencemanagement.png)
 
 Quando è attivato il salvataggio delle istanze di lettere, è possibile selezionare la posizione in cui salvare le istanze di lettere. Sono disponibili due opzioni per il salvataggio delle istanze di lettere: Salvataggio locale o Salvataggio remoto.
 
@@ -319,7 +319,7 @@ Le istanze di lettere vengono salvate nell’istanza di pubblicazione e vengono 
 
 ### Salvataggio remoto {#remote-save}
 
-Questa opzione è disponibile per le persone che hanno dubbi sul salvataggio dei dati utente nelle istanze di pubblicazione, che in genere si trovano al di fuori del firewall aziendale. Quando è attivato il salvataggio remoto, le istanze di lettere non vengono salvate nell’istanza di pubblicazione, ma vengono salvate in remoto nell’autore dell’elaborazione specificato tramite le configurazioni dell’SDK del client di LiveCycle.
+Questa opzione è disponibile per le persone che hanno dubbi sul salvataggio dei dati utente nelle istanze di pubblicazione, che in genere si trovano al di fuori del firewall aziendale. Quando è attivato il salvataggio remoto, le istanze di lettere non vengono salvate nell’istanza di pubblicazione, ma vengono salvate in remoto nell’autore dell’elaborazione specificato tramite le configurazioni di SDK del client LiveCycle.
 
 #### Abilita salvataggio remoto {#enable-remote-save}
 
@@ -333,24 +333,24 @@ Questa opzione è disponibile per le persone che hanno dubbi sul salvataggio dei
 
    ![Configurazione console Web Adobe Experience Manager](assets/2configmanager.png)
 
-1. In questa pagina, individua la configurazione Adobe LiveCycle Client SDK e espandila facendo clic su di essa.
+1. In questa pagina, individua Adobe LiveCycle Client SDK Configuration ed espandila facendo clic su di essa.
 
-1. Nell&#39;URL del server di elaborazione, immettere il nome del server di LiveCycle, fornire le informazioni di accesso, quindi fare clic su **Salva**.
+1. Nell&#39;URL del server di elaborazione, immettere il nome del server LiveCycle, fornire le informazioni di accesso, quindi fare clic su **Salva**.
 
-   ![Immettere il nome e le informazioni di accesso del server di LiveCycle](assets/3configmanager.png)
+   ![Immettere il nome e le informazioni di accesso del server LiveCycle](assets/3configmanager.png)
 
 1. Se necessario, impostare il nome utente e la password con cui si desidera accedere al server.
 
 #### Consegna dell’allegato {#attachmentdelivery}
 
-* Gli allegati della lettera sono disponibili nell’elaborazione post in PDF, che viene creata dopo l’invio della lettera.
+* Gli allegati della lettera sono disponibili per la fase post in PDF, che viene creata dopo l’invio della lettera.
 * Quando viene eseguito il rendering della lettera utilizzando le API lato server come PDF interattivo o non interattivo, il PDF sottoposto a rendering contiene allegati come allegati PDF.
 * Quando un processo di post associato a un modello di lettera viene caricato come parte delle operazioni Invia o Completa corrispondenza tramite l’interfaccia utente Crea corrispondenza, gli allegati vengono passati come parametro List&lt;com.adobe.idp.Document> in AttachmentDocs.
-* Anche i meccanismi di consegna predefiniti, come e-mail e Stampa, consegnano allegati insieme alle PDF della corrispondenza generata.
+* Anche i meccanismi di consegna predefiniti, come e-mail e Stampa, consegnano allegati insieme al PDF della corrispondenza generata.
 
-## Modalità di rappresentazione dell’anteprima di una lettera: Anteprima moduli mobile e Anteprima PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## Modalità di rappresentazione dell’anteprima di una lettera: anteprima moduli mobile e anteprima PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms Correspondence Management visualizza una lettera come HTML nell’interfaccia utente per la creazione di corrispondenza. Tuttavia, Gestione della corrispondenza supporta ancora il ripristino dell’anteprima PDF invece di quella HTML. Per ulteriori informazioni sul passaggio dalla modalità HTML alla modalità PDF di anteprima, vedere [Modifica della modalità di rendering della lettera](#changerenditionmode).
+AEM Forms Correspondence Management visualizza una lettera come HTML nell’interfaccia utente per la creazione di corrispondenza. Tuttavia, Gestione della corrispondenza supporta ancora il ripristino dell’anteprima PDF invece di quella HTML. Per ulteriori informazioni sul passaggio dalla modalità di anteprima HTML alla modalità PDF, vedere [Modificare la modalità di rendering della lettera](#changerenditionmode).
 
 Di seguito sono riportati i vantaggi e le funzionalità disponibili nell’anteprima di HTML e PDF.
 
@@ -358,16 +358,16 @@ Di seguito sono riportati i vantaggi e le funzionalità disponibili nell’antep
 
 * **Selezionare un valore di campo dati per evidenziare il campo dati corrispondente**: nell&#39;interfaccia utente Crea corrispondenza è possibile selezionare un valore di campo dati nella lettera per evidenziare il campo dati corrispondente nella scheda Dati. Per ulteriori informazioni, vedere [Immettere i dati](#enterdata).
 
-* **Supporto browser**: i browser ritirano gradualmente il supporto NPAPI, influendo sull&#39;anteprima PDF della lettera. Questo non influisce sull’anteprima HTML/mobile forms della lettera.
+* **Supporto browser**: i browser ritirano gradualmente il supporto per NPAPI, influendo sull&#39;anteprima PDF della lettera. Questo non influisce sull’anteprima di una lettera nei moduli HTML/mobili.
 * **Evidenzia contenuto modificabile in una lettera**: nell&#39;interfaccia utente Crea corrispondenza è possibile selezionare Evidenzia contenuto modificabile per evidenziare tutto il contenuto modificabile nella lettera in grigio. Per ulteriori informazioni, vedere [Gestione contenuto](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Vantaggi dell&#39;anteprima di PDF**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Vantaggi dell&#39;anteprima PDF**
 
-* **Interruzione di pagina**: nell&#39;anteprima PDF è possibile visualizzare esattamente in che modo le interruzioni di pagina nella lettera influiscono sul relativo output.
-* **Anteprima finale**: nell&#39;anteprima PDF è possibile visualizzare la formattazione e l&#39;aspetto esatti della lettera così come apparirà nell&#39;output.
+* **Interruzione di pagina**: nell&#39;anteprima di PDF puoi visualizzare esattamente in che modo le interruzioni di pagina nella lettera influiscono sul relativo output.
+* **Anteprima finale**: nell&#39;anteprima di PDF è possibile visualizzare la formattazione e l&#39;aspetto esatti della lettera così come apparirà nell&#39;output.
 
-Per informazioni sul supporto degli script nei PDF forms, vedere [Supporto degli script](https://help.adobe.com/it_IT/livecycle/11.0/ScriptingSupport/index.html).
+Per informazioni sul supporto degli script in PDF forms, vedere [Supporto degli script](https://help.adobe.com/it_IT/livecycle/11.0/ScriptingSupport/index.html).
 
 Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [Supporto degli script per i moduli HTML5](/help/forms/using/scripting-support.md).
 

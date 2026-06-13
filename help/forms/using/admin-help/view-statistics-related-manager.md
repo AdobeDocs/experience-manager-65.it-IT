@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '1215'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
 # Visualizzare le statistiche relative a Work Manager {#view-statistics-related-to-work-manager}
 
-Nella scheda Work Manager vengono visualizzate le statistiche che si riferiscono ai relativi elementi. Questi elementi di lavoro si trovano in stati diversi a seconda della fase del processo. (Consulta [Stato (solo per le categorie Predefinito, Flusso di lavoro o Eventi)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only). È possibile filtrare le informazioni per visualizzare solo un sottoinsieme degli elementi utilizzando le varie opzioni disponibili (ad esempio, Stato o Categoria). È possibile ordinare gli elementi di lavoro o di processo risultanti (in ordine crescente o decrescente) facendo clic su una delle intestazioni di colonna. È inoltre possibile gestire gli elementi di lavoro utilizzando gli strumenti operativi visualizzati sopra l’elenco degli elementi di lavoro.
+Nella scheda Work Manager vengono visualizzate le statistiche che si riferiscono ai relativi elementi. Questi elementi di lavoro si trovano in stati diversi a seconda della fase del processo. (Vedi [Stato (solo per le categorie Predefinito, Flusso di lavoro o Eventi)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) È possibile filtrare le informazioni per visualizzare solo un sottoinsieme degli elementi utilizzando le varie opzioni disponibili (ad esempio, Stato o Categoria). È possibile ordinare gli elementi di lavoro o di processo risultanti (in ordine crescente o decrescente) facendo clic su una delle intestazioni di colonna. È inoltre possibile gestire gli elementi di lavoro utilizzando gli strumenti operativi visualizzati sopra l’elenco degli elementi di lavoro.
 
 ## Filtrare gli elementi di lavoro {#filter-the-work-items}
 

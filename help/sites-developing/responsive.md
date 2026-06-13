@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '5272'
+source-wordcount: '5461'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Vari esempi si basano sul contenuto del Geometrixx, che non viene più fornito con AEM (Adobe Experience Manager), essendo stato sostituito da We.Retail. Per informazioni su come scaricare e installare Geometrixx, consulta il documento [Implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx).
+>Diversi esempi si basano sul contenuto di esempio di Geometrixx, che non viene più fornito con AEM (Adobe Experience Manager), essendo stato sostituito da We.Retail. Per informazioni su come scaricare e installare Geometrixx, consulta il documento [Implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx).
 
 Progetta le pagine web in modo che si adattino al riquadro di visualizzazione client in cui vengono visualizzate. Con il design reattivo, le stesse pagine possono essere visualizzate in modo efficace su più dispositivi in entrambi gli orientamenti. L&#39;immagine seguente illustra alcuni modi in cui una pagina può rispondere alle modifiche apportate alle dimensioni del riquadro di visualizzazione:
 
@@ -35,7 +35,7 @@ Progetta le pagine web in modo che si adattino al riquadro di visualizzazione cl
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
-Sviluppa applicazioni Adobe Experience Manager (AEM) che generano pagine HTML5 adattabili a più dimensioni e orientamenti di finestre. Ad esempio, i seguenti intervalli di larghezze dei riquadri di visualizzazione corrispondono a vari tipi di dispositivi e orientamenti
+Sviluppa applicazioni Adobe Experience Manager (AEM) che generano pagine HTML5 adattabili alle dimensioni e agli orientamenti di più finestre. Ad esempio, i seguenti intervalli di larghezze dei riquadri di visualizzazione corrispondono a vari tipi di dispositivi e orientamenti
 
 * Larghezza massima di 480 pixel (telefono, verticale)
 * Larghezza massima di 767 pixel (telefono, orizzontale)
@@ -53,7 +53,7 @@ Durante la progettazione, utilizza **[!UICONTROL Sidekick]** per visualizzare in
 
 ## Prima di sviluppare {#before-you-develop}
 
-Prima di sviluppare l’applicazione AEM che supporta le pagine web, è necessario prendere diverse decisioni di progettazione. Ad esempio, è necessario disporre delle seguenti informazioni:
+Prima di sviluppare l’applicazione AEM che supporta le pagine web, è necessario prendere diverse decisioni relative alla progettazione. Ad esempio, è necessario disporre delle seguenti informazioni:
 
 * Dispositivi di destinazione.
 * Le dimensioni del riquadro di visualizzazione di destinazione.
@@ -61,7 +61,7 @@ Prima di sviluppare l’applicazione AEM che supporta le pagine web, è necessar
 
 ### Struttura dell’applicazione {#application-structure}
 
-La tipica struttura di applicazioni AEM supporta tutte le implementazioni di progettazione reattiva:
+La struttura tipica delle applicazioni AEM supporta tutte le implementazioni di progettazione reattiva:
 
 * I componenti di pagina si trovano sotto /apps/*nome_applicazione*/components
 * I modelli si trovano sotto /apps/*nome_applicazione*/templates
@@ -69,7 +69,7 @@ La tipica struttura di applicazioni AEM supporta tutte le implementazioni di pro
 
 ## Utilizzo delle query multimediali {#using-media-queries}
 
-Le query multimediali consentono l’utilizzo selettivo degli stili CSS per il rendering delle pagine. Gli strumenti e le funzioni di sviluppo AEM consentono di implementare in modo efficace ed efficiente le query multimediali nelle applicazioni.
+Le query multimediali consentono l’utilizzo selettivo degli stili CSS per il rendering delle pagine. Gli strumenti e le funzioni di sviluppo di AEM consentono di implementare in modo efficace ed efficiente le query multimediali nelle applicazioni.
 
 Il gruppo W3C fornisce il consiglio [Media Queries](https://www.w3.org/TR/mediaqueries-3/) che descrive questa funzione CSS3 e la sintassi.
 
@@ -100,7 +100,7 @@ Nella tabella seguente sono elencati i file presenti nella cartella secondaria c
   </tr>
   <tr>
    <td>bootstrap.css</td>
-   <td>Stili comuni, definiti dalla Bootstrap di Twitter.</td>
+   <td>Stili comuni, definiti da Twitter Bootstrap.</td>
    <td>N/D</td>
   </tr>
   <tr>
@@ -191,7 +191,7 @@ Per visualizzare un esempio, aprire il file `/apps/weretail/components/page/head
 
 Per abilitare il simulatore di dispositivi per il supporto delle pagine, registrare i componenti di pagina con il servizio di fabbrica MobileEmulatorProvider e definire la proprietà `mobile.resourceTypes`.
 
-Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
+Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Ad esempio, per creare un nodo ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` nell&#39;applicazione:
 
@@ -221,7 +221,7 @@ Per specificare i gruppi di dispositivi visualizzati nell&#39;elenco Dispositivi
 
 Nodi del gruppo di dispositivi nella cartella `/etc/mobile/groups`.
 
-La pagina principale del sito Geometrixx Media, ad esempio, è `/content/geometrixx-media`. Il nodo `/content/geometrixx-media/jcr:content` include la seguente proprietà:
+La pagina principale del sito Geometrixx Medie, ad esempio, è `/content/geometrixx-media`. Il nodo `/content/geometrixx-media/jcr:content` include la seguente proprietà:
 
 * Nome: `cq:deviceGroups`
 * Tipo: `String[]`
@@ -285,9 +285,9 @@ Quando viene eseguito il rendering della pagina, picturefull.js inserisce un ele
 </div>
 ```
 
-In una pagina AEM, il valore dell&#39;attributo `data-src` è il percorso di una risorsa nell&#39;archivio.
+In una pagina di AEM, il valore dell&#39;attributo `data-src` è il percorso di una risorsa nell&#39;archivio.
 
-### Implementazione di immagini adattive nell’AEM {#implementing-adaptive-images-in-aem}
+### Implementazione di immagini adattive in AEM {#implementing-adaptive-images-in-aem}
 
 Per implementare immagini adattive nell’applicazione AEM, devi aggiungere le librerie JavaScript richieste e includere nelle pagine il markup HTML richiesto.
 
@@ -304,7 +304,7 @@ Ottieni le seguenti librerie JavaScript e includile in una cartella di librerie 
 
 **HTML**
 
-Crea un componente che genera gli elementi div richiesti previsti dal codice picturefill.js. In una pagina AEM, il valore dell’attributo data-src è il percorso di una risorsa nell’archivio. Ad esempio, un componente pagina può eseguire il hardcode delle query multimediali e dei percorsi associati per le rappresentazioni delle immagini in DAM. In alternativa, crea un componente Immagine personalizzato che consenta agli autori di selezionare le rappresentazioni di immagini o di specificare le opzioni di rendering in fase di esecuzione.
+Crea un componente che genera gli elementi div richiesti previsti dal codice picturefill.js. In una pagina di AEM, il valore dell’attributo data-src è il percorso di una risorsa nell’archivio. Ad esempio, un componente pagina può eseguire il hardcode delle query multimediali e dei percorsi associati per le rappresentazioni delle immagini in DAM. In alternativa, crea un componente Immagine personalizzato che consenta agli autori di selezionare le rappresentazioni di immagini o di specificare le opzioni di rendering in fase di esecuzione.
 
 L’esempio seguente HTML seleziona due rappresentazioni DAM della stessa immagine.
 
@@ -326,9 +326,9 @@ L’esempio seguente HTML seleziona due rappresentazioni DAM della stessa immagi
 >La sezione successiva fornisce dettagli su questo componente.
 >
 
-### Informazioni sul rendering delle immagini nell’AEM {#understanding-image-rendering-in-aem}
+### Informazioni sul rendering delle immagini in AEM {#understanding-image-rendering-in-aem}
 
-Per personalizzare il rendering delle immagini, è necessario comprendere l’implementazione predefinita del rendering delle immagini statiche AEM. AEM fornisce il componente Immagine e un servlet di rendering delle immagini che interagiscono per eseguire il rendering delle immagini per le pagine web. Quando il componente Immagine è incluso nel sistema paragrafo della pagina, si verificano le seguenti sequenze di eventi:
+Per personalizzare il rendering delle immagini, è necessario comprendere l’implementazione predefinita del rendering delle immagini statiche di AEM. AEM fornisce il componente Immagine e un servlet di rendering delle immagini che interagiscono per eseguire il rendering delle immagini per le pagine web. Quando il componente Immagine è incluso nel sistema paragrafo della pagina, si verificano le seguenti sequenze di eventi:
 
 1. Authoring: gli autori possono modificare il componente Immagine per specificare il file di immagine da includere in una pagina HTML. Il percorso del file viene memorizzato come valore di proprietà del nodo del componente Immagine.
 1. Richiesta di pagina: la JSP del componente Pagina genera il codice HTML. La JSP del componente Immagine genera e aggiunge un elemento img alla pagina.
@@ -350,7 +350,7 @@ Quando il browser carica la pagina, richiede l’immagine utilizzando il valore 
 
 Il nodo `image_0` ha un valore `jcr:resourceType` di `foundation/components/image`, che ha un valore `sling:resourceSuperType` di `foundation/components/parbase`. Il componente parbase include lo script img.GET.java che corrisponde al selettore e l’estensione del nome file dell’URL della richiesta. CQ utilizza questo script (servlet) per riprodurre l’immagine.
 
-Per visualizzare il codice sorgente dello script, utilizzare CRXDE Lite per aprire `/libs/foundation/components/parbase/img.GET.java`
+Per visualizzare il codice sorgente dello script, utilizza CRXDE Lite per aprire `/libs/foundation/components/parbase/img.GET.java`
 file.
 
 ## Ridimensionamento delle immagini per le dimensioni correnti del riquadro di visualizzazione {#scaling-images-for-the-current-viewport-size}
@@ -462,7 +462,7 @@ Il servlet accetta un numero finito di larghezze e qualità delle immagini. Le s
 
 Il valore completo indica che non viene applicata alcuna scala.
 
-Sono supportati i seguenti valori per la qualità dei JPEG:
+Sono supportati i seguenti valori per la qualità JPEG:
 
 * BASSA
 * MEDIA
@@ -592,7 +592,7 @@ Sono supportati i seguenti valori per la qualità delle immagini:
 * media
 * alta
 
-Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
+Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per informazioni dettagliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 #### Specifica della risorsa immagine {#specifying-the-image-resource}
 
@@ -603,9 +603,9 @@ Il percorso dell’immagine, le dimensioni e i valori di qualità devono essere 
 
 * Il percorso dell&#39;immagine viene archiviato come valore di una proprietà denominata `fileReference`.
 
-Durante la creazione di una pagina, utilizza **Sidekick** per specificare l&#39;immagine e aggiungere il nodo `image` alle proprietà della pagina:
+Durante l&#39;authoring di una pagina, utilizzare **Sidekick** per specificare l&#39;immagine e aggiungere il nodo `image` alle proprietà della pagina:
 
-1. In **Sidekick** fare clic sulla scheda **Pagina** e quindi su **Proprietà pagina**.
+1. In **Sidekick**, fare clic sulla scheda **Pagina** e quindi su **Proprietà pagina**.
 1. Fare clic sulla scheda **Immagine** e specificare l&#39;immagine.
 1. Fai clic su **OK**.
 
@@ -661,13 +661,13 @@ La classe `ImageReferenceModificationServlet` sostituisce il metodo `createLayer
 
 ## Sviluppo di una griglia di fluidi {#developing-a-fluid-grid}
 
-L&#39;AEM consente di implementare in modo efficiente ed efficace le griglie fluide. In questa pagina viene illustrato come integrare la griglia dei fluidi o un&#39;implementazione della griglia esistente (ad esempio [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) nell&#39;applicazione AEM.
+AEM consente di implementare in modo efficiente ed efficace le griglie fluide. In questa pagina viene illustrato come integrare la griglia dei fluidi o un&#39;implementazione della griglia esistente (ad esempio [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) nell&#39;applicazione AEM.
 
 Se non conosci le griglie fluide, consulta la sezione [Introduzione alle griglie fluide](/help/sites-developing/responsive.md#developing-a-fluid-grid) in fondo alla pagina. Questa introduzione fornisce una panoramica delle griglie di fluidi e indicazioni per la loro progettazione.
 
 ### Definizione della griglia tramite un componente Pagina {#defining-the-grid-using-a-page-component}
 
-Utilizza i componenti di pagina per generare gli elementi HTML che definiscono i blocchi di contenuto della pagina. La ClientLibraryFolder a cui la pagina fa riferimento fornisce il CSS che controlla il layout dei blocchi di contenuto:
+Utilizza i componenti pagina per generare gli elementi HTML che definiscono i blocchi di contenuto della pagina. La ClientLibraryFolder a cui la pagina fa riferimento fornisce il CSS che controlla il layout dei blocchi di contenuto:
 
 * Componente pagina: aggiunge elementi div che rappresentano righe di blocchi di contenuto. Gli elementi div che rappresentano i blocchi di contenuto includono un componente parsys in cui gli autori aggiungono contenuto.
 * Cartella libreria client: fornisce il file CSS che include le query multimediali e gli stili per gli elementi div.
@@ -713,7 +713,7 @@ L’esempio di CSS seguente è un sottoinsieme di tali stili. Questo sottoinsiem
 
 >[!NOTE]
 >
->L&#39;esempio di Geometrixx Media integra il framework JavaScript [Bootstrap](https://getbootstrap.com/2.0.2/) nell&#39;implementazione della relativa griglia fluida. Il framework Bootstrap fornisce il file bootstrap.css.
+>L&#39;esempio di Geometrixx Medie integra il framework JavaScript [Bootstrap](https://getbootstrap.com/2.0.2/) nell&#39;implementazione della relativa griglia fluida. Il framework Bootstrap fornisce il file bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -745,7 +745,7 @@ L’esempio di CSS seguente è un sottoinsieme di tali stili. Questo sottoinsiem
 
 #### Riposizionamento del contenuto nella griglia del componente Pagina {#repositioning-content-in-the-page-component-grid}
 
-Le pagine dell’applicazione Geometrixx Media di esempio distribuiscono le righe di blocchi di contenuto in orizzontale in riquadri di visualizzazione larghi. Nei riquadri di visualizzazione più piccoli, gli stessi blocchi sono distribuiti verticalmente. Il seguente esempio di CSS mostra gli stili che implementano questo comportamento per il codice HTML generato dal componente media-home page:
+Le pagine dell’applicazione Geometrixx Medie di esempio distribuiscono righe di blocchi di contenuto in orizzontale in riquadri di visualizzazione larghi. Nei riquadri di visualizzazione più piccoli, gli stessi blocchi sono distribuiti verticalmente. L’esempio di CSS seguente mostra gli stili che implementano questo comportamento per il codice HTML generato dal componente Media-Home page:
 
 * Il CSS predefinito per la pagina di benvenuto multimediale assegna lo stile `float:left` per `span*` classi che si trovano all&#39;interno di `row-fluid` classi.
 

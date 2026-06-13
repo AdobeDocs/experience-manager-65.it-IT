@@ -9,8 +9,8 @@ exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '3109'
-ht-degree: 9%
+source-wordcount: '3356'
+ht-degree: 10%
 
 ---
 
@@ -194,7 +194,7 @@ Se stai installando o pianificando di utilizzare il software più recente per il
   Per eseguire queste operazioni, non è necessario passare alla posizione della risorsa e visualizzarne le proprietà.
 
 * **Dynamic Media _Snapshot_**&#x200B;consente di visualizzare in anteprima i modificatori di immagini e le ottimizzazioni di Smart Imaging, ad esempio l&#39;output WebP o AVIF, la compressione in base alla larghezza di banda e il ridimensionamento delle proporzioni pixel del dispositivo, utilizzando immagini di test o URL di Dynamic Media. Puoi quindi confrontare immediatamente il modo in cui ogni impostazione influisce sulla qualità e sulla dimensione del file.
-Consulta [Dynamic Media Snapshot](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+Vedi [Snapshot Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **Streaming DASH con Dynamic Media** - Nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) avviato per lo streaming adattivo nella distribuzione video Dynamic Media (con CMAF abilitato). Disponibile ora per tutte le aree geografiche.
 * **Integrazione di Experience Manager Sites e frammenti di contenuto con Assets Dynamic Media di nuova generazione** - Gli utenti possono ora utilizzare le risorse ospitate nel cloud in Experience Manager Sites 6.5. Possono creare e distribuire tali risorse on-premise o sulle istanze Managed Services.
 
@@ -205,7 +205,7 @@ Consulta [Dynamic Media Snapshot](https://experienceleague.adobe.com/it/docs/exp
    * Utilizza l’Adaptive Forms Wizard (Impostazione rapida adattivo) nell’editor di AEM Sites per creare moduli indipendentemente da qualsiasi pagina Sites, e puoi riutilizzarli su più pagine.
    * Aggiungere più moduli a una pagina di Sites per semplificare l’esperienza utente e fornire maggiore flessibilità.
 * **[Supporto di reCAPTCHA Enterprise in Experience Manager Forms](/help/forms/using/captcha-adaptive-forms.md)** - Aggiunto supporto per reCAPTCHA Enterprise in Experience Manager Forms. Questa funzionalità offre una protezione avanzata contro attività fraudolente e spam, oltre al supporto Google reCAPTCHA v2 esistente.
-* **[È stato aggiunto il supporto per Adobe Acrobat Sign for Government con Experience Manager Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**. AEM Forms ora si integra con Adobe Acrobat Sign for Government (compatibile con FedRAMP). Questa integrazione fornisce un livello avanzato di conformità e sicurezza per le firme elettroniche con l’invio di moduli adattivi per gli account governativi associati (dipartimenti e agenzie governative). Le integrazioni con Adobe Acrobat Sign for Government consentono ai partner Adobe e ai clienti governativi di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza garantisce che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai clienti del settore pubblico di Adobe la massima tranquillità.
+* **[È stato aggiunto il supporto per Adobe Acrobat Sign for Government con Experience Manager Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**. AEM Forms ora si integra con Adobe Acrobat Sign for Government (compatibile con FedRAMP). Questa integrazione fornisce un livello avanzato di conformità e sicurezza per le firme elettroniche con l’invio di moduli adattivi per gli account della pubblica amministrazione associati (dipartimenti e agenzie statali). Le integrazioni con Adobe Acrobat Sign for Government consentono ai partner Adobe e ai clienti governativi di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza garantisce che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai clienti del settore pubblico di Adobe la massima tranquillità.
 * **Abilitare l&#39;integrazione di Salesforce con Experience Manager Forms per lo scambio di dati** - Configurare l&#39;integrazione tra Experience Manager Forms e l&#39;applicazione Salesforce utilizzando il flusso di credenziali client OAuth 2.0. Questa funzionalità consente l&#39;autenticazione e l&#39;autorizzazione sicure e dirette dell&#39;applicazione e permette una comunicazione fluida senza il coinvolgimento dell&#39;utente.
 * **Ottimizzazione e funzionalità migliorate del motore del flusso di lavoro**: aumenta le prestazioni dei motori del flusso di lavoro riducendo al minimo il numero di istanze del flusso di lavoro. Oltre ai valori di stato `COMPLETED` e `RUNNING`, il flusso di lavoro supporta anche tre nuovi valori di stato: `ABORTED`, `SUSPENDED` e `FAILED`.
 

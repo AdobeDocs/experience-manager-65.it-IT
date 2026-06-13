@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 58%
+source-wordcount: '1915'
+ht-degree: 57%
 
 ---
 
@@ -32,7 +32,7 @@ Il seguente elenco di controllo si propone di aiutarti a ottimizzare la configur
 
 Si consiglia vivamente l’utilizzo di query GraphQL persistenti.
 
-Le query GraphQL persistenti consentono di ridurre le prestazioni di esecuzione delle query utilizzando la rete CDN (Content Delivery Network). Le applicazioni client richiedono query persistenti con richieste GET per un’esecuzione rapida con abilitazione per Edge.
+Le query GraphQL persistenti consentono di ridurre le prestazioni di esecuzione delle query utilizzando la rete CDN (Content Delivery Network). Le applicazioni client richiedono query persistenti con richieste GET per un’esecuzione rapida con abilitazione Edge.
 
 **Ulteriori riferimenti**
 
@@ -183,13 +183,13 @@ Il tempo di risposta di query complesse, con set di risultati di grandi dimensio
 
 GraphQL in AEM supporta due tipi di impaginazione:
 
-* [paginazione basata su limite/scostamento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+* [paginazione basata su limite/offset](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Utilizzato per le query elenco; terminano con `List`; ad esempio, `articleList`.
-Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o dimensioni della pagina).
+Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o la dimensione della pagina).
 
 * [paginazione basata su cursore](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (rappresentata da `first`e `after`)
 In questo modo viene fornito un ID univoco per ogni elemento, noto anche come cursore.
-Nella query, si specifica il cursore dell’ultimo elemento della pagina precedente, più le dimensioni della pagina (il numero massimo di elementi da restituire).
+Nella query, si specifica il cursore dell&#39;ultimo elemento della pagina precedente, più le dimensioni della pagina (il numero massimo di elementi da restituire).
 
   Poiché l’impaginazione basata su cursore non si adatta alle strutture di dati delle query basate su elenco, AEM ha introdotto il tipo di query `Paginated`; ad esempio, `articlePaginated`. Le strutture di dati e i parametri utilizzati seguono i [Specifica di connessione cursore GraphQL](https://relay.dev/graphql/connections.htm).
 
@@ -338,6 +338,6 @@ Modifica solo i frammenti di contenuto e le relative risorse, utilizzando l’in
 
 ### Verificare le query {#test-your-queries}
 
-L’elaborazione delle query GraphQL è simile all’elaborazione delle query di ricerca ed è notevolmente più complessa delle semplici richieste API GET per tutti i contenuti.
+L’elaborazione delle query GraphQL è simile all’elaborazione delle query di ricerca ed è notevolmente più complessa delle semplici richieste API GET-all-content.
 
 Pianificare, testare e ottimizzare accuratamente le query in un ambiente controllato non di produzione è fondamentale per il successo successivo quando viene utilizzato in produzione.

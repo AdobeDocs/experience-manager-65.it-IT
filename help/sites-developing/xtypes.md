@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3865'
+source-wordcount: '7653'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Nel linguaggio ExtJS, xtype è un nome simbolico assegnato a una classe. È poss
 
 Per informazioni complete su tutti i widget disponibili in AEM, consulta la [documentazione API widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-Per individuare i componenti in cui un determinato xtype viene utilizzato in AEM, è possibile utilizzare la seguente query Xpath in CRXDE sostituendo &#39;checkbox&#39; con l&#39;xtype desiderato:
+Per scoprire in quali componenti un determinato xtype viene utilizzato in AEM, puoi utilizzare la seguente query Xpath in CRXDE sostituendo &quot;checkbox&quot; con l’xtype che ti interessa:
 
 `//element(*, cq:Widget)[@xtype='checkbox']`
 
@@ -32,7 +32,7 @@ Per individuare i componenti in cui un determinato xtype viene utilizzato in AEM
 >
 >Questa pagina descrive l’utilizzo di xtype ExtJS nell’interfaccia utente classica.
 >
->L&#39;Adobe consiglia di utilizzare la [interfaccia utente touch](/help/sites-developing/touch-ui-concepts.md) standard e moderna basata su [interfaccia utente Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e [interfaccia utente Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Adobe consiglia di utilizzare la [interfaccia utente touch](/help/sites-developing/touch-ui-concepts.md) standard e moderna basata su [interfaccia utente Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e [interfaccia utente Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 ## xtypes {#xtypes}
 
@@ -102,15 +102,15 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   BulkEditor fornisce un motore di ricerca e una griglia per modificare i risultati della ricerca.
 
-  BulkEditor deve essere inserito in un modulo HTML (richiesto dalla funzionalità di importazione). Questo funziona perfettamente con un [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
+  È necessario inserire BulkEditor in un modulo di HTML (richiesto dalla funzionalità di importazione). Questo funziona perfettamente con un [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
 
 * bulkeditorform
 
   [CQ.wcm.BulkEditorForm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditorForm)
 
-  BulkEditorForm fornisce [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) circondato da un modulo HTML. Questa è la versione autonoma di [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), il modulo HTML è necessario per il pulsante di importazione.
+  BulkEditorForm fornisce [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) circondato da un modulo di HTML. Questa è la versione autonoma di [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), per il pulsante di importazione è necessario HTML Form.
 
-* pulsante
+* button
 
   [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 
@@ -128,7 +128,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   Il pacchetto CQ.Ext.chart fornisce la possibilità di visualizzare i dati con grafici basati su flash. Ogni grafico si associa direttamente a un CQ.Ext.data.Store abilitando gli aggiornamenti automatici del grafico. Per modificare l&#39;aspetto di un grafico, vedere le opzioni di configurazione [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) e [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart).
 
-* casella di controllo
+* checkbox
 
   [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox)
 
@@ -416,7 +416,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  Fornisce un componente leggero dell’editor di HTML. Alcune funzioni della barra degli strumenti non sono supportate da Safari e vengono automaticamente nascoste quando necessario. Queste sono riportate nelle opzioni di configurazione, se necessario.
+  Fornisce un componente leggero di HTML Editor. Alcune funzioni della barra degli strumenti non sono supportate da Safari e vengono automaticamente nascoste quando necessario. Queste sono riportate nelle opzioni di configurazione, se necessario.
 
   I pulsanti della barra degli strumenti dell&#39;editor contengono descrizioni nella proprietà [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor).
 
@@ -586,7 +586,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.form.OwnerDraw](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.OwnerDraw)
 
-  OwnerDraw può contenere un codice HTML personalizzato (immesso direttamente o recuperato da un URL).
+  OwnerDraw può contenere codice HTML personalizzato (immesso direttamente o recuperato da un URL).
 
 * paging
 
@@ -718,7 +718,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.wcm.Sidekick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Sidekick)
 
-  Il Sidekick è un supporto mobile che fornisce all’utente gli strumenti comuni per la modifica delle pagine.
+  Sidekick è un supporto mobile che fornisce all’utente gli strumenti comuni per la modifica delle pagine.
 
 * siteadmin
 
@@ -758,7 +758,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   SmartFile è un caricatore di file intelligente.
 
-  Se è installato un plug-in di Flash (versione >= 9), i caricamenti vengono eseguiti utilizzando la libreria SWFupload che offre un modo pratico per gestire i caricamenti.
+  Se è installato un plug-in Flash (versione >= 9), i caricamenti vengono eseguiti utilizzando la libreria SWFupload che offre un modo pratico per gestire i caricamenti.
 
 * smartimage
 
@@ -790,7 +790,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.Static](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
 
-  Lo statico può essere utilizzato per visualizzare testo o HTML arbitrari.
+  Lo statico può essere utilizzato per visualizzare testo arbitrario o HTML.
 
 * statistiche
 
