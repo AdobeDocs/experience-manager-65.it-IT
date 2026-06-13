@@ -1,5 +1,5 @@
 ---
-title: Impostazioni configurazione OSGi
+title: Impostazioni di configurazione di OSGi
 description: Questo articolo descrive le impostazioni di configurazione OSGi (elencate in base al bundle) rilevanti per l’implementazione del progetto. L'elenco funge da orientamento e non è esaustivo.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,20 +12,20 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3293'
 ht-degree: 0%
 
 ---
 
-# Impostazioni configurazione OSGi{#osgi-configuration-settings}
+# Impostazioni di configurazione di OSGi{#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack tecnologico dell&#39;AEM. Viene utilizzato per controllare i bundle compositi dell&#39;AEM e la loro configurazione.
+[OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack di tecnologia di AEM. Viene utilizzato per controllare i bundle compositi di AEM e la relativa configurazione.
 
 OSGi &quot;*fornisce le primitive standardizzate che consentono di creare applicazioni a partire da componenti di piccole dimensioni, riutilizzabili e collaborativi. Questi componenti possono essere composti in un&#39;applicazione e distribuiti*&quot;.
 
 Questa funzionalità consente una facile gestione dei bundle, poiché possono essere arrestati, installati e avviati singolarmente. Le interdipendenze vengono gestite automaticamente. Ogni componente OSGi (vedi la [specifica OSGi](https://docs.osgi.org/specification/)) è contenuto in uno dei vari bundle. Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali bundle; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
 
-Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) sono rilevanti per l’implementazione del progetto. Non tutte le impostazioni elencate devono essere regolate, alcune sono menzionate per aiutarti a capire come funziona l&#39;AEM.
+Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) sono rilevanti per l’implementazione del progetto. Non tutte le impostazioni elencate devono essere regolate, alcune sono menzionate per aiutarti a capire come funziona AEM.
 
 >[!CAUTION]
 >
@@ -37,13 +37,13 @@ Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) son
 
 >[!NOTE]
 >
->È possibile utilizzare lo strumento Diff. configurazione OSGi, parte di [Strumenti AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=it), per elencare le configurazioni OSGi predefinite.
+>Lo strumento di configurazione Diff. OSGi, parte di [Strumenti AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), può essere utilizzato per elencare le configurazioni OSGi predefinite.
 
 >[!NOTE]
 >
->Ulteriori pacchetti potrebbero essere necessari per specifiche aree di funzionalità all&#39;interno dell&#39;AEM. In questi casi, i dettagli di configurazione si trovano nella pagina relativa alle funzionalità appropriate.
+>Potrebbero essere necessari ulteriori bundle per aree specifiche di funzionalità all’interno di AEM. In questi casi, i dettagli di configurazione si trovano nella pagina relativa alle funzionalità appropriate.
 
-**Listener eventi di replica AEM** Configura:
+**Listener di eventi di replica di AEM** Configura:
 
 * **Modalità di esecuzione**, in cui gli eventi di replica vengono distribuiti ai listener. Ad esempio, se è definito come autore, è il sistema che &quot;avvia&quot; la replica.
 
@@ -67,7 +67,7 @@ Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) son
 >Assicurati di configurare quanto segue:
 >
 >**Nome utente** e **Password**, le credenziali per accedere alla Console di gestione Web Apache Felix.
->La password deve essere modificata dopo l&#39;installazione iniziale per garantire la [sicurezza](/help/sites-administering/security-checklist.md) dell&#39;istanza.
+>È necessario modificare la password dopo l&#39;installazione iniziale per garantire la [sicurezza](/help/sites-administering/security-checklist.md) dell&#39;istanza.
 
 >[!NOTE]
 >
@@ -84,9 +84,9 @@ Consulta [Registrazione AEM](/help/sites-deploying/configure-logging.md) e [Regi
 * **Dimensione minima del pool** e **Dimensione massima del pool**, ovvero la dimensione del pool utilizzata per contenere i thread evento.
 
 * **Dimensione coda**, la dimensione massima della coda del thread se il pool è esaurito.
-Il valore consigliato è `-1` perché imposta la coda su illimitato. Se viene fissato un limite, potrebbero verificarsi perdite al superamento di tale limite.
+Il valore consigliato è `-1` perché imposta la coda su illimitata. Se viene fissato un limite, potrebbero verificarsi perdite al superamento di tale limite.
 
-* La modifica di queste impostazioni può migliorare le prestazioni in scenari con un numero elevato di eventi. Ad esempio, un uso intensivo di DAM AEM o di Workflow.
+* La modifica di queste impostazioni può migliorare le prestazioni in scenari con un numero elevato di eventi. Ad esempio, utilizzo intensivo di AEM DAM o Workflow.
 * I valori specifici dello scenario devono essere stabiliti utilizzando test.
 * Queste impostazioni possono influire sulle prestazioni dell’istanza, pertanto non modificarle senza un motivo valido e la dovuta considerazione.
 
@@ -112,7 +112,7 @@ Alcune impostazioni possono influire sulle prestazioni. Se possibile, disabilita
 
 **Programma di installazione di Apache Sling JCR** Questi parametri probabilmente non richiedono configurazione, ma possono essere utili per lo sviluppo o il debug. Ad esempio, le cartelle di installazione possono essere utili per l&#39;archiviazione o l&#39;estrazione o per la creazione di un pacchetto.
 
-* **Nome delle cartelle di installazione regexp** e **Profondità massima gerarchia delle cartelle di installazione** - Specificare dove e a quale profondità vengono cercate le risorse da installare nelle cartelle del repository. Quando viene utilizzato un carattere jolly (come in .&#42;/install) vengono cercate tutte le corrispondenze appropriate, ad esempio `/libs/sling/install` e `/libs/cq/core/install`.
+* **Nome delle cartelle di installazione regexp** e **Profondità massima gerarchia delle cartelle di installazione** - Specificare dove e a quale profondità vengono cercate le risorse da installare nelle cartelle del repository. Quando si utilizza un carattere jolly (come in .&#42;/install) viene eseguita la ricerca di tutte le corrispondenze appropriate, ad esempio `/libs/sling/install` e `/libs/cq/core/install`.
 
 * **Percorso di ricerca**, elenco di percorsi che jcrinstall cerca le risorse da installare, con un numero che indica il fattore di ponderazione per il percorso.
 
@@ -120,7 +120,7 @@ Alcune impostazioni possono influire sulle prestazioni. Se possibile, disabilita
 
 * **Intervallo tentativi**, **Numero massimo tentativi**, **Numero massimo processi paralleli**, **Tempo di attesa conferma**, tra gli altri.
 
-* La modifica di queste impostazioni può migliorare le prestazioni in scenari con un numero elevato di processi, ad esempio l’utilizzo intensivo di DAM e Flussi di lavoro AEM.
+* La modifica di queste impostazioni può migliorare le prestazioni in scenari con un numero elevato di processi, ad esempio l’utilizzo intensivo di DAM AEM e Flussi di lavoro.
 * I valori specifici dello scenario devono essere stabiliti utilizzando test.
 * Non modificare queste impostazioni senza motivo, cambiale solo dopo la dovuta considerazione.
 
@@ -222,7 +222,7 @@ Vedere: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Res
 >
 >Configura queste opzioni nell’archivio.
 >
->In caso contrario, le modifiche apportate alle **mappature URL** tramite la console Felix potrebbero essere sovrascritte dall&#39;AEM al prossimo avvio.
+>In caso contrario, al prossimo avvio AEM potrebbe sovrascrivere le modifiche apportate alle **mappature URL** utilizzando la console Felix.
 
 **Apache Sling Servlet/Script Resolver e Error Handler** Il servlet Sling e lo script Resolver dispongono di più attività:
 
@@ -234,7 +234,7 @@ Vedere: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Res
 
 È possibile impostare vari parametri, tra cui:
 
-* **Percorsi di esecuzione** - Elenca i percorsi per la ricerca di script eseguibili. Configurando percorsi specifici, puoi limitare quali script possono essere eseguiti. Se non è configurato alcun percorso, viene utilizzato il valore predefinito ( `/` = root), che consente l&#39;esecuzione di tutti gli script.
+* **Percorsi di esecuzione** - Elenca i percorsi per la ricerca di script eseguibili. Configurando percorsi specifici, puoi limitare quali script possono essere eseguiti. Se non è configurato alcun percorso, viene utilizzato quello predefinito ( `/` = root), che consente l&#39;esecuzione di tutti gli script.
 Se un valore di percorso configurato termina con una barra, la ricerca viene eseguita nell&#39;intera sottostruttura. Senza una barra finale di questo tipo, lo script viene eseguito solo se corrisponde esattamente.
 
 * **Utente script** - Questa proprietà facoltativa può specificare l&#39;account utente del repository utilizzato per la lettura degli script. Se non viene specificato alcun account, per impostazione predefinita viene utilizzato l&#39;utente `admin`.
@@ -247,7 +247,7 @@ Durante la creazione di una configurazione, non modificare la configurazione di 
 
 >[!NOTE]
 >
->In AEM 6.0 e versioni precedenti, il proxy era configurato nel client HTTP Day Commons. A partire da AEM 6.1 e versioni successive, la configurazione proxy è stata spostata nella &quot;Configurazione proxy dei componenti HTTP Apache&quot; invece della configurazione &quot;Client HTTP Day Commons&quot;.
+>In AEM 6.0 e versioni precedenti, il proxy era configurato nel client HTTP Day Commons. A partire da AEM 6.1 e versioni successive, la configurazione proxy è stata spostata nella &quot;Configurazione proxy di Apache HTTP Components&quot; invece della configurazione &quot;Client HTTP Day Commons&quot;.
 
 **Day CQ Antispam** Configura il servizio anti-spam (Akismet) utilizzato. Questa funzione richiede la registrazione di quanto segue:
 
@@ -255,7 +255,7 @@ Durante la creazione di una configurazione, non modificare la configurazione di 
 * **Chiave API**
 * **URL registrato**
 
-**Adobe Granite HTML Library Manager** Configura per controllare la gestione delle librerie client (css o js), incluso, ad esempio, il modo in cui viene visualizzata la struttura sottostante.
+**Gestione librerie HTML di Adobe Granite** Configura per controllare la gestione delle librerie client (css o js), incluso, ad esempio, il modo in cui viene visualizzata la struttura sottostante.
 
 * Per le istanze di produzione:
 
@@ -273,7 +273,7 @@ Durante la creazione di una configurazione, non modificare la configurazione di 
 
 >[!CAUTION]
 >
->Quando si modifica l&#39;impostazione per **Minify** o **Gzip**, eliminare il contenuto della cache clientlibs. Per ulteriori informazioni, vedere l&#39;[articolo della Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=it).
+>Quando si modifica l&#39;impostazione per **Minify** o **Gzip**, eliminare il contenuto della cache clientlibs. Per ulteriori informazioni, vedere l&#39;[articolo della Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html).
 
 >[!NOTE]
 >
@@ -307,7 +307,7 @@ Quando si utilizzano [gruppi di utenti chiusi](/help/sites-administering/cug.md)
 
 * **Percorso di destinazione** a cui viene reindirizzata una richiesta a &quot; `/`&quot;.
 
-Nell’AEM sono disponibili due interfacce:
+In AEM sono disponibili due interfacce:
 
 * l’interfaccia touch è quella standard
 * e l’interfaccia classica obsoleta è ancora completamente operativa
@@ -330,7 +330,7 @@ Utilizzando AEM Root Mapping puoi configurare l’interfaccia utente che desider
 >
 >In un’installazione standard, l’interfaccia touch è quella predefinita.
 
-**Adobe gestore autenticazione SSO Granite** - Configurare i dettagli SSO (Single Sign-On). Questi dettagli sono spesso necessari nelle impostazioni di authoring Enterprise, spesso con LDAP.
+**Gestore autenticazione SSO Adobe Granite** - Configurare i dettagli SSO (Single Sign-On). Questi dettagli sono spesso necessari nelle impostazioni di authoring Enterprise, spesso con LDAP.
 
 Sono disponibili diverse proprietà di configurazione:
 
@@ -347,19 +347,19 @@ Nomi delle intestazioni che potrebbero contenere un ID utente.
 * **Nomi cookie**
 Nomi dei cookie che potrebbero contenere un ID utente.
 
-* **Nomi Parametri**
+* **Nomi parametri**
 Nomi dei parametri di richiesta che potrebbero fornire l’ID utente.
 
 * **Mappa utente**
 Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell’oggetto credenziali. La mappatura è definita qui. Se il nome utente `admin` viene visualizzato su entrambi i lati della mappa, la mappatura viene ignorata. Il carattere &quot;=&quot; deve essere preceduta da &quot;\&quot;.
 
 * **Formato**
-Indica il formato in cui viene fornito l’ID utente. Usa:
+Indica il formato in cui viene fornito l’ID utente. Utilizza:
 
    * `Basic` se l&#39;ID utente è codificato nel formato di autenticazione HTTP Basic
    * `AsIs` se l&#39;ID utente viene fornito in testo normale o qualsiasi valore di espressione regolare applicato deve essere utilizzato così com&#39;è o qualsiasi espressione regolare
 
-**Day CQ WCM Debug Filter** Questo è utile per lo sviluppo in quanto consente l&#39;utilizzo di suffissi quali ?debug=layout durante l&#39;accesso a una pagina. Ad esempio, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornisce informazioni di layout che possono essere di interesse per lo sviluppatore.
+**Day CQ WCM Debug Filter** Questo è utile per lo sviluppo in quanto consente l&#39;utilizzo di suffissi quali ?debug=layout durante l&#39;accesso a una pagina. Ad esempio, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornisce informazioni di layout che potrebbero essere di interesse per lo sviluppatore.
 
 * Per garantire prestazioni e sicurezza, disattiva nelle istanze di produzione.
 
@@ -387,7 +387,7 @@ Configuratore verifica collegamenti WCM CQ **Day** Configura:
 
 * **Percorsi**, un elenco di posizioni in cui il sistema ascolta le modifiche della pagina prima di attivare `jcr:Event`.
 
-**Tracciamento impression pagina di Adobe** Per un&#39;istanza Autore, configura come segue:
+**Tracciamento impression pagina Adobe** Per un&#39;istanza Autore, configura come segue:
 
 * **sling.auth.requirements**: impostare il valore di questa proprietà su `-/libs/wcm/stats/tracker`
 
@@ -425,12 +425,12 @@ Per ulteriori informazioni, vedere [Rimozione della versione](/help/sites-deploy
 
 **Servizio di notifica e-mail flusso di lavoro Day CQ** Configura le impostazioni e-mail per le notifiche inviate da un flusso di lavoro.
 
-**Fabbrica parser HTML rewriter CQ**
+**Fabbrica parser HTML del rewriter di CQ**
 
 Controlla il parser HTML per il rewriter CQ.
 
 * **Tag aggiuntivi da elaborare** - È possibile aggiungere o rimuovere i tag HTML da elaborare tramite il parser. Per impostazione predefinita, vengono elaborati i seguenti tag: A,IMG,AREA,FORM,BASE,LINK,SCRIPT,BODY,HEAD.
-* **Mantieni Camel Case** - Per impostazione predefinita, il parser HTML converte gli attributi in Camel Case (ad esempio, `eBay`) in caratteri minuscoli (ad esempio, `ebay`). È possibile disattivare questa impostazione per mantenere gli attributi Camel Case. Questa impostazione è utile quando si utilizzano framework frontend come Angular 2.
+* **Mantieni Camel Case** - Per impostazione predefinita, il parser HTML converte gli attributi in Camel Case (ad esempio, `eBay`) in caratteri minuscoli (ad esempio, `ebay`). È possibile disattivare questa impostazione per mantenere gli attributi Camel Case. Questa impostazione è utile quando si utilizzano framework front-end come Angular 2.
 
 **Pool connessioni JDBC Day Commons** Configura l&#39;accesso a un database esterno utilizzato come origine per il contenuto.
 
@@ -438,8 +438,8 @@ Configurazione di fabbrica, che consente di configurare più istanze.
 
 **Rewriter CDN** La comunicazione tra AEM e una rete CDN deve essere garantita in modo che le risorse o i file binari vengano consegnati a un utente finale in modo sicuro. Questo processo prevede le due attività seguenti:
 
-* La prima volta (o dopo la scadenza nella cache) si accede alla risorsa dall’AEM tramite la rete CDN.
-* Accesso sicuro alla risorsa memorizzata nella cache in CDN. Una volta che la risorsa è memorizzata nella cache in CDN, la richiesta non viene inviata a AEM e tutti gli utenti che hanno accesso a tale risorsa in devono essere serviti da CDN.
+* La prima volta che accedi alla risorsa da AEM tramite la rete CDN (o dopo la scadenza nella cache).
+* Accesso sicuro alla risorsa memorizzata nella cache in CDN. Dopo che la risorsa è stata memorizzata nella cache in CDN, la richiesta non viene indirizzata ad AEM e tutti gli utenti che hanno accesso a tale risorsa in devono essere serviti da CDN.
 
 AEM fornisce un rewriter per riscrivere gli URL delle risorse interne in URL CDN esterni. Riscrive i collegamenti da passare alla rete CDN, inclusa una firma JWS, e scade per consentire l’accesso sicuro alla risorsa. Questa funzione deve essere utilizzata nelle istanze di authoring.
 
@@ -451,16 +451,16 @@ Il flusso complessivo è il seguente:
    `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
 1. Il browser dell’utente inoltra quindi la richiesta di risorsa al server CDN
-1. La rete CDN deve essere configurata per inoltrare la richiesta a AEM insieme al parametro `cdn_sign`.
+1. CDN deve essere configurato per inoltrare la richiesta ad AEM insieme al parametro `cdn_sign`.
 1. Un gestore di autenticazione convalida il parametro `cdn_sign` e restituisce la risorsa alla rete CDN che viene quindi consegnata all&#39;utente
 
-Il flusso tra il browser dell’utente, la rete CDN e l’AEM può essere visualizzato come segue.
+Il flusso tra il browser dell’utente, la rete CDN e AEM può essere visualizzato come segue.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
 >[!NOTE]
 >
->Questa funzione è abilitata solo per le istanze di creazione AEM.
+>Questa funzione è abilitata solo per le istanze Autore AEM.
 
 **CDNConfigServiceImpl** fornisce configurazioni CDN
 

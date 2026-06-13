@@ -1,5 +1,5 @@
 ---
-title: 'Configurazione dell’ambiente dell’account  '
+title: Configurazione dell’ambiente dell’account
 description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '522'
 ht-degree: 63%
 
 ---
 
-# Configurazione dell’ambiente dell’account  {#configuring-your-account-environment}
+# Configurazione dell’ambiente dell’account{#configuring-your-account-environment}
 
 Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring.
 

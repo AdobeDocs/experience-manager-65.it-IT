@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 1%
+source-wordcount: '1830'
+ht-degree: 2%
 
 ---
 
@@ -171,7 +171,7 @@ Con l’Editor collettivo, puoi aggiungere, modificare, eliminare, filtrare ed e
 
 Il codice sorgente del componente Elenco prodotti è disponibile nell’archivio in /apps/geometrixx/components/productlist ed è composto da diverse parti come tutti i componenti di Adobe Experience Manager (AEM):
 
-* Rendering HTML: il rendering viene eseguito in un file JSP (/apps/geometrixx/components/productlist/productlist.jsp). JSP legge i sottonodi del componente Elenco prodotti corrente e li visualizza come riga di una tabella HTML.
+* rendering HTML: il rendering viene eseguito in un file JSP (/apps/geometrixx/components/productlist/productlist.jsp). JSP legge i sottonodi del componente Elenco prodotti corrente e li visualizza come riga di una tabella HTML.
 * Finestra di dialogo per modifica, in cui puoi definire la configurazione dell’editor di massa. Configura la finestra di dialogo in base alle esigenze del componente: colonne disponibili e possibili azioni eseguite sulla griglia o sulla ricerca. Per informazioni su tutte le proprietà di configurazione, vedere [Proprietà di configurazione dell&#39;editor in blocco](#bulk-editor-configuration-properties).
 
 Ecco una rappresentazione XML dei sottonodi della finestra di dialogo:
@@ -555,7 +555,7 @@ Puoi estendere il servlet Query per restituire un modello di ereditarietà compl
 
 ### Salva servlet {#save-servlet}
 
-Nella configurazione predefinita dell’Editor collettivo ogni riga è un nodo e il percorso di questo nodo viene memorizzato nel record di riga. L’Editor collettivo mantiene il collegamento tra la riga e il nodo attraverso il percorso jcr. Quando un utente modifica la griglia, viene creato un elenco di tutte le modifiche. Quando un utente fa clic su **Salva**, a ogni percorso viene inviata una query POST con i valori delle proprietà aggiornati. Questa è la base del concetto Sling e funziona bene se ogni cella è una proprietà del nodo. Tuttavia, se il servlet Query viene implementato per eseguire il calcolo dell’ereditarietà, questo modello non può funzionare in quanto una proprietà restituita dal servlet Query può essere ereditata da un altro nodo.
+Nella configurazione predefinita dell’Editor collettivo ogni riga è un nodo e il percorso di questo nodo viene memorizzato nel record di riga. L’Editor collettivo mantiene il collegamento tra la riga e il nodo attraverso il percorso jcr. Quando un utente modifica la griglia, viene creato un elenco di tutte le modifiche. Quando un utente fa clic su **Salva**, viene inviata una query POST a ogni percorso con i valori delle proprietà aggiornati. Questa è la base del concetto Sling e funziona bene se ogni cella è una proprietà del nodo. Tuttavia, se il servlet Query viene implementato per eseguire il calcolo dell’ereditarietà, questo modello non può funzionare in quanto una proprietà restituita dal servlet Query può essere ereditata da un altro nodo.
 
 Il concetto del servlet di salvataggio è che le modifiche non vengono inviate direttamente a ciascun nodo, ma a un servlet che esegue il processo di salvataggio. Questo consente a questo servlet di analizzare le modifiche e salvare le proprietà sul nodo giusto.
 
@@ -573,4 +573,4 @@ Il servlet deve sapere dove è memorizzata la proprietà catalogCode.
 
 Un’implementazione predefinita del servlet Save è disponibile all’indirizzo /libs/wcm/bulkeditor/save/POST.jsp e viene utilizzata nel componente Elenco prodotti. Prende tutti i parametri dalla richiesta (con un formato &lt;percorso jcr>/&lt;nome proprietà>) e scrive le proprietà sui nodi utilizzando l’API JCR. Crea anche un nodo se non esiste (righe inserite nella griglia).
 
-Non utilizzare il codice predefinito così com’è perché implementa ciò che il server fa in modo nativo (un POST su &lt;percorso jcr>/&lt;nome proprietà>) ed è quindi solo un buon punto di partenza per la creazione di un servlet Save in grado di gestire un modello di ereditarietà delle proprietà.
+Non utilizzare il codice predefinito così com’è perché implementa ciò che fa in modo nativo il server (un POST su &lt;percorso jcr>/&lt;nome proprietà>) ed è quindi solo un buon punto di partenza per la creazione di un servlet Save in grado di gestire un modello di ereditarietà delle proprietà.

@@ -1,6 +1,6 @@
 ---
 title: Editor Rich Text
-description: L’Editor Rich Text è un componente di base per l’immissione di contenuto testuale nell’AEM.
+description: L’Editor Rich Text è un componente di base per l’immissione di contenuto testuale in AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
@@ -10,14 +10,14 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1788'
 ht-degree: 2%
 
 ---
 
 # Editor Rich Text {#rich-text-editor}
 
-L’Editor Rich Text è un componente di base per l’immissione di contenuto testuale nell’AEM. Costituisce la base di varie componenti, tra cui:
+L’Editor Rich Text è un componente di base per l’immissione di contenuto testuale in AEM. Costituisce la base di varie componenti, tra cui:
 
 * Testo
 * Testo e immagine
@@ -25,7 +25,7 @@ L’Editor Rich Text è un componente di base per l’immissione di contenuto te
 
 ## Editor Rich Text {#rich-text-editor-1}
 
-La finestra di dialogo di modifica WYSIWYG offre un’ampia gamma di funzionalità:
+La finestra di dialogo per modifica di WYSIWYG offre un’ampia gamma di funzionalità:
 
 ![cq55_rte_basicchars](assets/cq55_rte_basicchars.png)
 
@@ -35,7 +35,7 @@ La finestra di dialogo di modifica WYSIWYG offre un’ampia gamma di funzionalit
 
 ## Modifica diretta {#in-place-editing}
 
-Oltre alla modalità di modifica Rich Text basata sulla finestra di dialogo, AEM fornisce anche la modalità di modifica diretta, che consente di modificare direttamente il testo così come viene visualizzato nel layout della pagina.
+Oltre alla modalità di modifica Rich Text basata sulla finestra di dialogo, AEM offre anche la modalità di modifica diretta, che consente di modificare direttamente il testo così come viene visualizzato nel layout della pagina.
 
 Fai clic due volte su un paragrafo (con un doppio clic lento) per passare alla modalità di modifica diretta (il bordo del componente sarà ora arancione).
 
@@ -85,7 +85,7 @@ Uno stile può essere applicato a una stringa specifica (uno stile è correlato 
 
 ![cq55_rte_styles_use](assets/cq55_rte_styles_use.png)
 
-Mentre un formato viene applicato all’intero paragrafo di testo (un formato è basato su HTML ):
+mentre un formato viene applicato all’intero paragrafo di testo (un formato è basato su HTML):
 
 ![cq55_rte_Paragraph_use](assets/cq55_rte_paragraph_use.png)
 
@@ -116,7 +116,7 @@ Questo è il meccanismo predefinito per incollare (Ctrl-V) per il componente; un
 
 ![Annulla, Ripeti barra degli strumenti](do-not-localize/cq55_rte_undoredo.png)
 
-L’AEM tiene un registro delle ultime 50 azioni eseguite nel componente corrente, in ordine cronologico. Se necessario, queste azioni possono essere annullate (e quindi ripristinate) in ordine rigoroso.
+AEM tiene un registro delle ultime 50 azioni nel componente corrente, in ordine cronologico. Se necessario, queste azioni possono essere annullate (e quindi ripristinate) in ordine rigoroso.
 
 >[!CAUTION]
 >
@@ -220,7 +220,7 @@ Le immagini possono essere trascinate da Content Finder per aggiungerle al testo
 
 >[!NOTE]
 >
->L&#39;AEM offre anche componenti specializzati per una configurazione dell&#39;immagine più dettagliata. Ad esempio, sono disponibili i componenti **Immagine** e **Immagine testo**.
+>AEM offre anche componenti specializzati per una configurazione delle immagini più dettagliata. Ad esempio, sono disponibili i componenti **Immagine** e **Immagine testo**.
 
 ### Controllo ortografia {#spelling-checker}
 
@@ -296,7 +296,7 @@ Le funzioni specifiche della tabella sono:
 
 >[!CAUTION]
 >
->L’Adobe consiglia di definire una larghezza per la tabella.
+>Adobe consiglia di definire una larghezza per la tabella.
 
 #### Proprietà cella {#cell-properties}
 
@@ -384,7 +384,7 @@ Utilizza il passaggio del mouse per visualizzare una versione ingrandita del car
 
 ![barra degli strumenti modalità di modifica di Source](do-not-localize/cq55_rte_sourceedit.png)
 
-La modalità di modifica della sorgente consente di visualizzare e modificare le HTML sottostanti del componente.
+La modalità di modifica della sorgente consente di visualizzare e modificare il HTML sottostante del componente.
 
 Quindi il testo:
 
@@ -396,4 +396,4 @@ Si presenta come segue in modalità sorgente (spesso la sorgente è molto più l
 
 >[!CAUTION]
 >
->Quando si esce dalla modalità sorgente, l’AEM esegue alcuni controlli di convalida (ad esempio, per verificare che il testo sia contenuto correttamente o nidificato in blocchi). Questo può comportare modifiche alle tue modifiche.
+>Quando si esce dalla modalità sorgente, AEM esegue alcuni controlli di convalida (ad esempio, per verificare che il testo sia contenuto correttamente o nidificato in blocchi). Questo può comportare modifiche alle tue modifiche.

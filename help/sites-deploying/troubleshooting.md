@@ -11,14 +11,14 @@ feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
 
 # Risoluzione dei problemi di installazione con AEM{#troubleshooting}
 
-AEM Questa sezione include informazioni dettagliate sui registri disponibili per aiutarti a risolvere eventuali problemi e informazioni su alcuni di essi.
+Questa sezione include informazioni dettagliate sui registri disponibili per aiutarti a risolvere eventuali problemi e informazioni su alcuni di essi.
 
 ## Risolvere i problemi relativi alle prestazioni dell&#39;autore {#troubleshoot-author-performance}
 
@@ -67,12 +67,12 @@ Per risolvere i problemi, effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it).
+>Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
 La stessa CRX ha un ingombro di memoria ridotto. Se l’applicazione in esecuzione in CRX ha requisiti di memoria più elevati o richiede operazioni che richiedono molta memoria (ad esempio, transazioni di grandi dimensioni), l’istanza JVM in cui viene eseguito CRX deve essere avviata con le impostazioni di memoria appropriate.
 
-Utilizza le opzioni di comando Java™ per definire le impostazioni di memoria della JVM (ad esempio, java -Xmx512m -jar crx&ast;.jar per impostare heapsize su 512 MB).
+Utilizza le opzioni del comando Java™ per definire le impostazioni di memoria della JVM (ad esempio, java -Xmx512m -jar crx&amp;ast;.jar per impostare heapsize su 512 MB).
 
 Specificare l&#39;opzione di impostazione della memoria durante l&#39;avvio di AEM WCM dalla riga di comando. È inoltre possibile modificare gli script di avvio/arresto di AEM WCM o gli script personalizzati per la gestione dell&#39;avvio di AEM WCM per definire le impostazioni di memoria richieste.
 
@@ -80,7 +80,7 @@ Se hai già definito l’heapsize su 512 MB, puoi analizzare ulteriormente il pr
 
 Per creare automaticamente un’immagine heap quando la memoria è esaurita, utilizza il comando seguente:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Questo metodo genera un file dell&#39;immagine heap (**java_...hprof**) ogni volta che il processo esaurisce la memoria. Il processo può continuare a essere eseguito dopo la generazione dell’immagine heap.
 
@@ -101,11 +101,11 @@ Questi possono essere confrontati per vedere le modifiche e come gli oggetti usa
 
 In alcune situazioni, le schermate di benvenuto di AEM WCM non vengono visualizzate automaticamente anche se l’archivio stesso è in esecuzione correttamente. Questo problema può dipendere dalla configurazione del sistema operativo, dalla configurazione del browser o da fattori simili.
 
-Il sintomo comune è che nella finestra AEM WCM Quickstart viene visualizzato &quot;Avvio di AEM WCM in corso, in attesa dell’avvio del server&quot;.... Se il messaggio viene visualizzato per un periodo di tempo relativamente lungo, immetti manualmente l’URL di AEM WCM nella finestra del browser utilizzando la porta 4502 predefinita o la porta su cui è in esecuzione l’istanza: http://localhost:4502/.
+Il sintomo comune è che nella finestra AEM WCM Quickstart viene visualizzato &quot;Avvio di AEM WCM in corso, in attesa dell’avvio del server&quot;.... Se il messaggio viene visualizzato per un periodo di tempo relativamente lungo, immettere manualmente l&#39;URL di AEM WCM nella finestra del browser utilizzando la porta predefinita 4502 o la porta su cui è in esecuzione l&#39;istanza: http://localhost:4502/.
 
 Inoltre, i registri possono rivelare il motivo per cui il browser non si avvia.
 
-A volte, nella finestra AEM WCM Quickstart viene visualizzato il messaggio &quot;AEM WCM in esecuzione su http://localhost:port/&quot; e il browser non si avvia automaticamente. In questo caso, fai clic sull’URL nella finestra AEM WCM Quickstart (si tratta di un collegamento ipertestuale) o immetti manualmente l’URL nel browser.
+Talvolta nella finestra AEM WCM Quickstart viene visualizzato il messaggio &quot;AEM WCM in esecuzione su http://localhost:port/&quot; e il browser non si avvia automaticamente. In questo caso, fai clic sull’URL nella finestra AEM WCM Quickstart (si tratta di un collegamento ipertestuale) o immetti manualmente l’URL nel browser.
 
 Se tutto il resto non funziona, controlla i registri per scoprire cosa è successo.
 

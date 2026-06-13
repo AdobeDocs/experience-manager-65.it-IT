@@ -1,5 +1,5 @@
 ---
-title: 'Differenze tra pagine '
+title: Differenze tra pagine
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '582'
 ht-degree: 80%
 
 ---
 
-# Differenze tra pagine {#page-diff}
+# Differenze tra pagine{#page-diff}
 
 ## Introduzione {#introduction}
 
@@ -40,7 +40,7 @@ La visualizzazione affiancata delle differenze permette di confrontare:
 
 Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze all’interno di questi contesti.
 
-### Presentazione delle differenze   {#presentation-of-differences}
+### Presentazione delle differenze {#presentation-of-differences}
 
 Indipendentemente dal contenuto confrontato, la presentazione della differenza rimane la stessa.
 
@@ -69,7 +69,7 @@ La differenza rileva le modifiche apportate a livello di componente e HTML. Gli 
 >
 >Quando si confrontano le copie per lingua, l’evidenziazione viene disattivata in quanto in una traduzione cambia tutto e l’evidenziazione non avrebbe alcun vantaggio.
 
-### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
+### Modalità a schermo intero e Uscita {#fullscreen-and-exiting}
 
 Per concentrarti su un contenuto particolare, puoi fare clic sull’icona a schermo intero di entrambi i &quot;lati&quot; di side-by-side diff (differenze affiancate) per ingrandirla fino alla finestra del browser completa.
 
@@ -85,7 +85,7 @@ Per chiudere la visualizzazione a schermo intero, fai clic sull’icona per usci
 
 Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsiasi momento facendo clic sul pulsante Chiudi, nell’intestazione.
 
-## Limiti   {#limitations}
+## Limiti {#limitations}
 
 In alcune situazioni, il confronto delle differenze della pagina potrebbe non essere in grado di rilevare una differenza nel modo previsto.
 

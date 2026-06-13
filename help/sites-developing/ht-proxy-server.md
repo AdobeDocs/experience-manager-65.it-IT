@@ -1,5 +1,5 @@
 ---
-title: Come utilizzare lo strumento Server proxy
+title: Utilizzare lo strumento Server proxy
 description: Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,16 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 0%
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
-# Come utilizzare lo strumento Server proxy{#how-to-use-the-proxy-server-tool}
+# Utilizzare lo strumento Server proxy{#how-to-use-the-proxy-server-tool}
 
 Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server. Il server proxy tiene traccia di tutte le interazioni client-server e genera un registro dell&#39;intera comunicazione TCP. Questo consente di monitorare esattamente ciò che sta accadendo, senza dover accedere al server principale.
 
-Il server proxy è disponibile nell&#39;installazione AEM qui:
+Il server proxy è disponibile nell’installazione di AEM qui:
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
@@ -31,7 +31,7 @@ Il server proxy è disponibile nell&#39;installazione AEM qui:
 * SMTP per i messaggi e-mail
 * LDAP per la gestione degli utenti
 
-Ad esempio, è possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP, ad esempio un browser Web e l&#39;AEM. Questo consente di monitorare esattamente cosa accade quando si richiede una pagina CQ.
+È ad esempio possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP, ad esempio un browser Web e AEM. Questo consente di monitorare esattamente cosa accade quando si richiede una pagina CQ.
 
 ## Avvio dello strumento Server proxy {#starting-the-proxy-server-tool}
 
@@ -47,7 +47,7 @@ Questo è l&#39;indirizzo host dell&#39;istanza di CRX a cui desideri connettert
 
 `<remoteport>`
 
-Porta host dell&#39;istanza CRX di destinazione. Ad esempio, il valore predefinito di una nuova installazione AEM è **`4502`** e il valore predefinito per una nuova istanza di creazione AEM è `4502`.
+Porta host dell&#39;istanza CRX di destinazione. Ad esempio, il valore predefinito di una nuova installazione di AEM è **`4502`** e il valore predefinito per una nuova istanza di AEM Author è `4502`.
 
 `<localport>`
 
@@ -127,13 +127,13 @@ Il contenuto di `test.html` è:
 </html>
 ```
 
-Se l&#39;istanza AEM è in esecuzione su `localhost:4502`, il proxy viene avviato come segue:
+Se l&#39;istanza di AEM è in esecuzione su `localhost:4502`, il proxy viene avviato come segue:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
 È ora possibile accedere all&#39;istanza di CQ/CRX tramite il proxy in `localhost:4444` e tutte le comunicazioni tramite questa porta sono registrate in `test.log`.
 
-Se ora guardi l’output del proxy, puoi vedere l’interazione tra il browser e l’istanza dell’AEM.
+Se ora guardi l’output del proxy, puoi vedere l’interazione tra il browser e l’istanza di AEM.
 
 All&#39;avvio, il proxy restituisce quanto segue:
 
@@ -163,7 +163,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-L&#39;istanza AEM risponde con il contenuto del file `test.html`:
+L&#39;istanza di AEM risponde con il contenuto del file `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]

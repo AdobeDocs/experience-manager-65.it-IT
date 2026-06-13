@@ -1,22 +1,22 @@
 ---
 title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
-description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL dell’AEM per la distribuzione di contenuti headless.
+description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL di AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '4984'
-ht-degree: 51%
+source-wordcount: '5053'
+ht-degree: 50%
 
 ---
 
 # API GraphQL AEM per l’utilizzo con Frammenti di contenuto {#graphql-api-for-use-with-content-fragments}
 
-Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL dell’AEM per la distribuzione di contenuti headless.
+Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL di AEM per la distribuzione di contenuti headless.
 
-L’API GraphQL dell’AEM utilizzata con i Frammenti di contenuto si basa in larga misura sull’API GraphQL standard open-source.
+L’API GraphQL di AEM utilizzata con i frammenti di contenuto si basa in larga misura sull’API GraphQL standard open-source.
 
 L’utilizzo dell’API GraphQL in AEM consente la consegna efficiente di Frammenti di contenuto ai client JavaScript in implementazioni CMS headless:
 
@@ -33,7 +33,7 @@ L’utilizzo dell’API GraphQL in AEM consente la consegna efficiente di Framme
 
 ## Prerequisiti {#prerequisites}
 
-I clienti che utilizzano GraphQL devono installare il pacchetto 1.0.5 dell’indice Frammento di contenuto AEM con GraphQL. Per ulteriori dettagli, consulta le [note sulla versione](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package).
+I clienti che utilizzano GraphQL devono installare il pacchetto di indice Frammento di contenuto di AEM con GraphQL 1.0.5. Per ulteriori dettagli, consulta le [note sulla versione](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package).
 
 ## API GraphQL {#graphql-api}
 
@@ -65,14 +65,14 @@ Per ulteriori informazioni sull’API di GraphQL, consulta le sezioni seguenti (
 
 * In [graphql.com](https://graphql.com):
 
-   * [Esercitazioni](https://graphql.com/tutorials/)
+   * [Tutorial](https://graphql.com/tutorials/)
 
 
 L’implementazione di GraphQL per AEM si basa sulla libreria Java™ standard di GraphQL. Consulta:
 
 * [graphQL.org - Java](https://graphql.org/code/#java)
 
-* [Java GraphQL™ su GitHub](https://github.com/graphql-java)
+* [Java™ GraphQL su GitHub](https://github.com/graphql-java)
 
 ### Terminologia GraphQL {#graphql-terminology}
 
@@ -109,7 +109,7 @@ AEM fornisce funzionalità per convertire le query (di entrambi i tipi) in [quer
 [Le query persistenti](/help/sites-developing/headless/graphql-api/persisted-queries.md) sono il metodo consigliato da utilizzare nelle istanze di pubblicazione come:
 
 * vengono memorizzate nella cache;
-* sono gestiti centralmente dall’AEM
+* sono gestite centralmente da AEM
 
 <!-- is this fully accurate? -->
 >[!NOTE]
@@ -118,7 +118,7 @@ AEM fornisce funzionalità per convertire le query (di entrambi i tipi) in [quer
 
 Le query GraphQL con l’utilizzo di POST non sono consigliate in quanto non sono memorizzate nella cache. Quindi, in un’istanza predefinita, Dispatcher è configurato per bloccarle.
 
-Anche se GraphQL supporta le richieste di GET, queste possono raggiungere dei limiti (ad esempio, la lunghezza dell’URL) che possono essere evitati utilizzando query persistenti.
+Anche se GraphQL supporta le richieste GET, queste possono raggiungere dei limiti (ad esempio, la lunghezza dell’URL) che possono essere evitati utilizzando query persistenti.
 
 Per ulteriori dettagli, vedere [Abilitare la memorizzazione nella cache delle query persistenti](#enable-caching-persisted-queries).
 
@@ -132,7 +132,7 @@ Per ulteriori dettagli, vedere [Abilitare la memorizzazione nella cache delle qu
 
 >[!NOTE]
 >
->GraphiQL è incluso in tutti gli ambienti dell’AEM (ma è accessibile/visibile solo quando configuri gli endpoint).
+>GraphiQL è incluso in tutti gli ambienti di AEM (ma è accessibile/visibile solo quando configuri gli endpoint).
 >
 >Nelle versioni precedenti, era necessario un pacchetto per installare l’IDE GraphiQL. Se hai installato questo pacchetto, ora puoi rimuoverlo.
 
@@ -152,14 +152,14 @@ Fornisce funzioni quali evidenziazione della sintassi, completamento automatico,
 
 ## Casi di utilizzo per ambienti di authoring e pubblicazione {#use-cases-author-publish-environments}
 
-I casi d’uso possono dipendere dal tipo di ambiente AEM:
+I casi di utilizzo possono dipendere dal tipo di ambiente AEM:
 
 * ambiente di pubblicazione; utilizzato per:
    * effettuare query sui dati per l’applicazione JS (caso di utilizzo standard)
 
 * ambiente di authoring; utilizzato per:
    * effettuare query sui dati a “scopo di gestione dei contenuti”:
-      * GraphQL nell’AEM è un’API di sola lettura.
+      * GraphQL in AEM è un’API di sola lettura.
       * L’API REST può essere utilizzata per le operazioni CR(u)D.
 
 ## Autorizzazioni {#permission}
@@ -197,7 +197,7 @@ Ad esempio, se un utente ha creato un modello di frammento di contenuto denomina
 
    * Tre di essi sono stati controllati dall&#39;utente: `author`, `main` e `referencearticle`.
 
-   * Gli altri campi sono stati aggiunti automaticamente dall’AEM e rappresentano metodi utili per fornire informazioni su un determinato frammento di contenuto. In questo esempio,
+   * Gli altri campi sono stati aggiunti automaticamente da AEM e rappresentano metodi utili per fornire informazioni su un determinato frammento di contenuto. In questo esempio,
 (i [campi di supporto](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Un Frammento di contenuto basato sul modello di articolo creato da un utente può essere interrogato tramite GraphQL. Per esempi, consulta la sezione [Query di esempio](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basata su una [struttura di Frammento di contenuto di esempio da utilizzare con GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
@@ -230,9 +230,9 @@ Quando i frammenti di contenuto sono nidificati, può accadere che venga pubblic
 
 >[!NOTE]
 >
->L’interfaccia utente dell’AEM impedisce che ciò accada, ma se la pubblicazione viene effettuata a livello di programmazione o con pacchetti di contenuti può verificarsi.
+>L’interfaccia utente di AEM impedisce che ciò accada, ma se la pubblicazione viene effettuata a livello di programmazione o con pacchetti di contenuti, può verificarsi.
 
-In questo caso, AEM genera uno schema *incompleto* per il modello di Frammento di contenuto padre. Significa che il Riferimento frammento, che dipende dal modello non pubblicato, viene rimosso dallo schema.
+In questo caso, AEM genera uno schema *incompleto* per il modello di Frammento di contenuto principale. Significa che il Riferimento frammento, che dipende dal modello non pubblicato, viene rimosso dallo schema.
 
 ## Campi {#fields}
 
@@ -240,11 +240,11 @@ Nello schema sono presenti singoli campi, di due categorie di base:
 
 * Campi generati dall’utente.
 
-  Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di dati](#data-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** del **Tipo di dato**.
+  Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di dati](#data-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** del **Tipo di dati**.
 
    * È inoltre necessario prendere in considerazione l&#39;impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, un campo di testo a riga singola può essere configurato per contenere più testi a riga singola scegliendo `multifield` dal menu a discesa.
 
-* GraphQL for AEM genera anche diversi [campi di supporto](#helper-fields).
+* GraphQL per AEM genera anche diversi [campi di supporto](#helper-fields).
 
   Questi campi vengono utilizzati per identificare un frammento di contenuto o per ottenere ulteriori informazioni su di esso.
 
@@ -358,7 +358,7 @@ Puoi visualizzare tutti i tipi di metadati GraphQL se visualizzi lo schema Graph
 >[!NOTE]
 >
 >**Differenza tra metadati normali e quelli di array**
->Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
+>Tieni presente che `StringMetadata` e `StringArrayMetadata` fanno entrambi riferimento a ciò che è memorizzato nell&#39;archivio, non alla modalità di recupero.
 >
 >Ad esempio, chiamando il campo `stringMetadata`, si riceve un array di tutti i metadati archiviati nell&#39;archivio come `String`. Se si chiama `stringArrayMetadata`, verrà visualizzato un array di tutti i metadati archiviati nell&#39;archivio come `String[]`.
 
@@ -706,7 +706,7 @@ query {
 
 Il tipo di query `...Paginated` riutilizza la maggior parte delle funzionalità del tipo di query `...List` (filtro, ordinamento), ma invece di utilizzare gli argomenti `offset`/`limit` utilizza `first`/`after` come definiti in [Specifica delle connessioni del cursore GraphQL](https://relay.dev/graphql/connections.htm). È possibile trovare un’introduzione meno formale in [Introduzione a GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-* `first`: i primi elementi `n` da restituire.
+* `first`: `n` primi elementi da restituire.
 Il valore predefinito è `50`.
 Il massimo è `100`.
 * `after`: cursore che determina l&#39;inizio della pagina richiesta. L&#39;elemento rappresentato dal cursore non è incluso nel set di risultati. Il cursore di un elemento è determinato dal campo `cursor` della struttura `edges`.
@@ -769,7 +769,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, sono necess
   >
   >Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
   >
-  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache. Per ulteriori dettagli vedi [Come vengono restituiti i documenti da Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=it#how-does-the-dispatcher-return-documents%3F)
+  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache. Per ulteriori dettagli vedi [Come vengono restituiti i documenti da Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
@@ -782,7 +782,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, sono necess
 
 I clienti che utilizzano richieste CORS potrebbero dover rivedere e aggiornare la configurazione CORS in Dispatcher.
 
-* L&#39;intestazione `Origin` non deve essere passata a AEM Publish tramite Dispatcher:
+* L&#39;intestazione `Origin` non deve essere passata ad AEM Publish tramite Dispatcher:
    * Controllare il file `clientheaders.any`.
 * Al contrario, le richieste CORS devono essere valutate per le origini consentite a livello di Dispatcher. Questo approccio assicura inoltre che le intestazioni relative a CORS siano impostate correttamente, in un’unica posizione, in tutti i casi.
    * Tale configurazione deve essere aggiunta al file `vhost`. Di seguito è riportato un esempio di configurazione; per semplicità, è stata fornita solo la parte CORS. Puoi adattarlo ai tuoi casi d’uso specifici.
@@ -896,7 +896,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
    * Per il contenuto:
 
       * `_locale`: per visualizzare la lingua; basato su Language Manager
-         * Vedi [Query di esempio per più frammenti di contenuto di una specifica impostazione locale](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
+         * Vedi [Query di esempio per più frammenti di contenuto di una determinata lingua](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
 
       * `_metadata`: per visualizzare i metadati del frammento
          * Vedi [Query di esempio per metadati: elenca i metadati per riconoscimenti con titolo GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
@@ -955,7 +955,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
 >[!CAUTION]
 >
->Se la memorizzazione nella cache di [&#x200B; in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
+>Se la memorizzazione nella cache di [ in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
 
 >[!NOTE]
 >
@@ -1077,7 +1077,7 @@ Per proteggere da potenziali problemi, esistono limitazioni predefinite imposte 
 
       * Quando due (o più) frammenti con modelli diversi (ad esempio, `M1`, `M2`) vengono utilizzati come possibili riferimenti (Riferimento contenuto o Riferimento frammento) da un altro frammento; ad esempio, `Fragment1` `MultiField/List`
       * E questi due frammenti con modelli diversi (`M1`, `M2`) hanno campi con lo stesso nome, ma tipi diversi.
-Per maggiore chiarezza:
+Per illustrare:
          * `M1.Title` come `Text`
          * `M2.Title` come `Text/MultiField`
       * Se la query GraphQL contiene il campo `Title`, si verificherà un errore di conflitto di campi.
@@ -1092,9 +1092,9 @@ Domande poste:
 
 1. **D**: “*quali sono le differenze tra l’API di GraphQL per AEM e l’API di Query Builder?*”
 
-   * **R**: 
-“*l’API di GraphQL per AEM offre il controllo totale dell’output JSON ed è uno standard di settore per l’esecuzione di query sui contenuti.
-In futuro, l&#39;AEM prevede di investire nell&#39;API GraphQL dell&#39;AEM.*&quot;
+   * **A**:
+&quot;*L&#39;API GraphQL di AEM offre il controllo totale dell&#39;output JSON ed è uno standard di settore per l&#39;esecuzione di query sui contenuti.
+In futuro, AEM prevede di investire nell&#39;API AEM GraphQL.*&quot;
 
 ## Tutorial: guida introduttiva ad AEM headless e GraphQL {#tutorial}
 

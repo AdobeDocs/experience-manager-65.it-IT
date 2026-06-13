@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '738'
+ht-degree: 2%
 
 ---
 
 # Single Sign-On {#single-sign-on}
 
-Single Sign-On (SSO) consente a un utente di accedere a più sistemi dopo aver fornito le credenziali di autenticazione, ad esempio un nome utente e una password. L&#39;autenticazione viene eseguita da un sistema separato, denominato autenticatore attendibile, che fornisce agli Experienci Manager le credenziali utente. Experience Manager verifica e applica le autorizzazioni di accesso per l’utente (ovvero, determina quali risorse l’utente può accedere).
+Single Sign-On (SSO) consente a un utente di accedere a più sistemi dopo aver fornito le credenziali di autenticazione, ad esempio un nome utente e una password. Un sistema separato (noto come autenticatore attendibile) esegue l’autenticazione e fornisce ad Experience Manager le credenziali utente. Experience Manager controlla e applica le autorizzazioni di accesso per l’utente (ovvero, determina quali risorse l’utente può accedere).
 
 Il servizio Gestore autenticazione SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) elabora i risultati di autenticazione forniti dall&#39;autenticatore attendibile. Il gestore di autenticazione SSO cerca un identificatore SSO (SSID) come valore di un attributo speciale nelle posizioni seguenti in questo ordine:
 
@@ -37,9 +37,9 @@ Specificare lo stesso nome di attributo per entrambi i servizi. L&#39;attributo 
 
 ## Configurazione dell’SSO {#configuring-sso}
 
-Per configurare SSO per un&#39;istanza AEM, configurare il [Gestore autenticazione SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Per configurare SSO per un&#39;istanza di AEM, configurare il [Gestore autenticazione SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
+1. Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
    Ad esempio, per il set NTLM:
 
@@ -65,11 +65,11 @@ Per configurare SSO per un&#39;istanza AEM, configurare il [Gestore autenticazio
 
 >[!CAUTION]
 >
->Assicurati che gli utenti non possano accedere direttamente all&#39;AEM se SSO è configurato.
+>Assicurati che gli utenti non possano accedere direttamente ad AEM se SSO è configurato.
 >
->Richiedendo agli utenti di passare attraverso un server web che esegue l&#39;agente del sistema SSO, si garantisce che nessun utente possa inviare direttamente un&#39;intestazione, un cookie o un parametro che porti l&#39;utente ad essere considerato attendibile dall&#39;AEM, in quanto l&#39;agente filtrerà tali informazioni se inviate dall&#39;esterno.
+>Richiedendo agli utenti di passare attraverso un server web che esegue l’agente del sistema SSO, si garantisce che nessun utente possa inviare direttamente un’intestazione, un cookie o un parametro che porti l’utente ad essere considerato attendibile da AEM, in quanto l’agente filtrerà tali informazioni se inviate dall’esterno.
 >
->Qualsiasi utente che può accedere direttamente all’istanza AEM senza passare per il server web sarà in grado di agire come qualsiasi altro utente inviando l’intestazione, il cookie o il parametro, se i nomi sono noti.
+>Qualsiasi utente che può accedere direttamente alla tua istanza di AEM senza passare attraverso il server web sarà in grado di agire come qualsiasi utente inviando l’intestazione, il cookie o il parametro, se i nomi sono noti.
 >
 >Inoltre, accertati che tra intestazioni, cookie e nomi di parametri di richiesta sia configurato solo quello necessario per la configurazione SSO.
 >
@@ -85,8 +85,7 @@ Per configurare SSO per un&#39;istanza AEM, configurare il [Gestore autenticazio
 >* `disp_iis.ini`
 >* IIS
 >
->In `disp_iis.ini` set:
->(per informazioni dettagliate, vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=it#microsoft-internet-information-server))
+>In `disp_iis.ini` set:>(per informazioni dettagliate, vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server))
 >
 >* `servervariables=1` (inoltra le variabili del server IIS come intestazioni di richiesta all&#39;istanza remota)
 >* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Authorization&quot; diversa da &quot;Basic&quot; con il suo equivalente &quot;Basic&quot;)
@@ -154,11 +153,11 @@ Oppure puoi usare il seguente comando curl per inviare l&#39;intestazione `TestH
 
 >[!NOTE]
 >
->Quando utilizzi il parametro di richiesta in un browser, vengono visualizzati solo alcuni dei HTML, senza CSS. Questo perché tutte le richieste del HTML vengono effettuate senza il parametro di richiesta.
+>Quando utilizzi il parametro di richiesta in un browser, vengono visualizzati solo alcuni dei HTML, senza CSS. Questo perché tutte le richieste provenienti da HTML vengono effettuate senza il parametro di richiesta.
 
-## Rimozione dei collegamenti di disconnessione AEM {#removing-aem-sign-out-links}
+## Rimozione dei collegamenti di disconnessione di AEM {#removing-aem-sign-out-links}
 
-Quando si utilizza l’SSO, l’accesso e la disconnessione vengono gestiti esternamente, pertanto i collegamenti di disconnessione propri dell’AEM non sono più applicabili e devono essere rimossi.
+Quando si utilizza l’SSO, l’accesso e la disconnessione vengono gestiti esternamente, pertanto i collegamenti di disconnessione di AEM non sono più applicabili e devono essere rimossi.
 
 Il collegamento di disconnessione nella schermata di benvenuto può essere rimosso seguendo la procedura riportata di seguito.
 

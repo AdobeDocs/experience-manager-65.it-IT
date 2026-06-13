@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 0%
+source-wordcount: '689'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ AEM offre diversi meccanismi per consentirti di personalizzare le console (e la 
 Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare una libreria client personalizzata in `/apps.`. Ad esempio, può contenere il codice necessario per il componente personalizzato.
 
 * Sovrapposizioni
-Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con la funzionalità personalizzata (in `/apps`). Quando crei una sovrapposizione, non è necessaria una copia 1:1 dell’originale, in quanto la fusione di risorse sling consente l’ereditarietà.
+Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con la funzionalità personalizzata (in `/apps`). Durante la creazione di una sovrapposizione, non è necessaria una copia 1:1 dell’originale, in quanto la fusione di risorse sling consente l’ereditarietà.
 
 Questi possono essere utilizzati in molti modi per estendere le console AEM. Di seguito è riportata una piccola selezione (ad alto livello).
 
@@ -64,7 +64,7 @@ Ad esempio, è possibile sovrapporre la seguente posizione all&#39;interno della
 
 >[!NOTE]
 >
->Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-16935).
+>Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935).
 
 ## Personalizzazione della vista predefinita per una console {#customizing-the-default-view-for-a-console}
 
@@ -151,7 +151,6 @@ Per personalizzare le colonne nella vista a elenco:
 1. Facoltativamente:
 
    * Se si desidera inserire dati aggiuntivi, è necessario scrivere un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-
      Proprietà `pageInfoProviderType`.
 
    Ad esempio, consulta la classe/bundle allegato (da GitHub) di seguito.

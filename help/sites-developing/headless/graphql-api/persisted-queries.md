@@ -7,7 +7,7 @@ feature: Content Fragments,GraphQL API
 role: Developer
 source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1390'
 ht-degree: 85%
 
 ---
@@ -30,9 +30,9 @@ Le query persistenti devono sempre utilizzare l’endpoint correlato alla [confi
 
 * Configurazione globale ed endpoint
 La query ha accesso a tutti i modelli per frammenti di contenuto.
-* Configurazione/i di Sites ed endpoint specifici 
-La creazione di una query persistente per una configurazione di Sites specifica richiede un endpoint specifico per la configurazione di Sites corrispondente (in modo da fornire accesso ai relativi modelli per frammenti di contenuto).
-Ad esempio, per creare una query persistente per la configurazione di Sites WKND, è necessario aver già creato una configurazione di Sites specifica per WKND corrispondente e un endpoint specifico per WKND.
+* Configurazione/i di Sites ed endpoint specifici
+La creazione di una query persistente per una configurazione Sites specifica richiede un endpoint corrispondente specifico per la configurazione Sites (per fornire accesso ai relativi modelli per frammenti di contenuto).
+Ad esempio, per creare una query persistente specifica per la configurazione di Sites WKND, è necessario creare in anticipo una configurazione di Sites specifica per WKND corrispondente e un endpoint specifico per WKND.
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Le query persistenti sono consigliate in quanto possono essere memorizzate nella
 
 Per impostazione predefinita, AEM annullerà la cache basata sulla definizione TTL (Time To Live). Le definizioni TTL possono essere definite dai seguenti parametri. Questi parametri sono accessibili con vari mezzi, con variazioni dei nomi in base al meccanismo utilizzato:
 
-| Tipo di cache | [Intestazione HTTP](https://developer.mozilla.org/it-IT/docs/Web/HTTP/Headers/Cache-Control) | cURL | Configurazione OSGi |
+| Tipo di cache | [Intestazione HTTP](https://developer.mozilla.org/it-IT/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configurazione OSGi  |
 |--- |--- |--- |--- |
 | Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
@@ -353,7 +353,7 @@ curl -u admin:admin -X POST \
 
 ### Gestione della cache con una configurazione OSGi {#cache-osgi-configration}
 
-Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/sites-deploying/configuring-osgi.md) per la **configurazione del servizio query persistente**. In caso contrario, questa configurazione OSGi utilizza i [valori predefiniti per le istanze di pubblicazione](#publish-instances).
+Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/sites-deploying/configuring-osgi.md) per la **Configurazione Query Service persistente**. In caso contrario, questa configurazione OSGi utilizza i [valori predefiniti per le istanze di pubblicazione](#publish-instances).
 
 >[!NOTE]
 >
