@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '574'
 ht-degree: 2%
 
 ---
@@ -25,27 +25,27 @@ Le app AEM Mobile si basano su una blueprint che definisce la struttura e le pro
 * **Titolo:** Titolo dell&#39;applicazione.
 * **Percorso di destinazione:** Il percorso nell&#39;archivio in cui è archiviata l&#39;applicazione. Lascia l’impostazione predefinita per creare un percorso basato sul nome dell’app.
 
-* **Nome:** Il valore predefinito è il valore della proprietà Title con spazi rimossi. Il nome viene utilizzato all’interno di AEM per fare riferimento all’applicazione, ad esempio, per il nodo dell’archivio che rappresenta l’applicazione.
+* **Nome:** Il valore predefinito è il valore della proprietà Title con spazi rimossi. Il nome viene utilizzato in AEM per fare riferimento all’applicazione, ad esempio, per il nodo dell’archivio che rappresenta l’applicazione.
 * **Descrizione:** una descrizione dell&#39;applicazione.
 * **URL server:** URL che fornisce aggiornamenti di contenuto OTA (Over-the-Air) per l&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (derivata dal servizio esternalizzatore). Nota: questa deve essere un’istanza del server di pubblicazione anziché un’istanza Autore, che richiede l’autenticazione.
 
-Puoi anche fornire un file di immagine da utilizzare come miniatura dell’applicazione, selezionare la configurazione di PhoneGap Build da utilizzare e selezionare la configurazione di analisi dell’app mobile da utilizzare. Ad Experience Manager, questa immagine viene utilizzata solo come miniatura per rappresentare l’app mobile nella console delle app mobili.
+Puoi anche fornire un file di immagine da utilizzare come miniatura dell’applicazione, selezionare la configurazione PhoneGap Build da utilizzare e selezionare la configurazione di analisi dell’app mobile da utilizzare. Questa immagine viene utilizzata solo come miniatura per rappresentare l’app mobile nella console delle app mobili in Experience Manager.
 
-Sono disponibili schede aggiuntive (e facoltative) per build Cloud Service e per l’integrazione del plug-in SDK di Adobe Mobile Services nell’app.
+Sono disponibili schede aggiuntive (e facoltative) per build cloud service e per l’integrazione del plug-in SDK di Adobe Mobile Services nell’app.
 
 * Genera: fai clic su Gestisci configurazioni e configura il servizio di build build.phonegap.com qui. Quindi, dall’elenco a discesa, potrai selezionare il servizio cloud PhoneGap Build appena creato.
-* Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=it). Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
+* Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
 
 ## Utilizzo dei modelli di app {#using-app-templates}
 
-I modelli di app offrono un modo semplice di utilizzare le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app nell’ambito dell’AEM.
+I modelli di app consentono di utilizzare facilmente le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app in AEM.
 
 Che cos’è un modello di app? Consideralo come una raccolta di modelli di pagina e componenti che rappresentano una linea di base o le basi di un’app.
 Quando crei un’app basata sul modello di un’altra app, otterrai un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
 
 Per utilizzare questa funzione, è necessario disporre di un modello di app mobile esistente (o di un’app con un modello di app installato).
 
-Il pacchetto di esempi più recente delle app AEM include una versione aggiornata dell’app Geometrixx con un modello di app. In alternativa, è possibile installare [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) che fornisce anche un modello.
+L’ultimo pacchetto di esempi delle app AEM include una versione aggiornata dell’app Geometrixx con un modello di app. In alternativa, è possibile installare [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) che fornisce anche un modello.
 
 Passaggi per creare un’app basata su un modello di app:
 

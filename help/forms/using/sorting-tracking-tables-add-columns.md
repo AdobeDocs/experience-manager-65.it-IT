@@ -10,8 +10,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 0%
+source-wordcount: '332'
+ht-degree: 2%
 
 ---
 
@@ -114,7 +114,7 @@ Gli attributi rimanenti nel modello di task disponibili per la visualizzazione n
  </tbody>
 </table>
 
-Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche al codice sorgente. Consulta [Introduzione alla personalizzazione dell&#39;area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) per informazioni su come apportare modifiche semantiche utilizzando l&#39;SDK dell&#39;area di lavoro e creare un pacchetto minimizzato dall&#39;origine modificata.
+Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche al codice sorgente. Consulta [Introduzione alla personalizzazione dell&#39;area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) per informazioni su come apportare modifiche semantiche utilizzando l&#39;area di lavoro SDK e creare un pacchetto minimizzato dall&#39;origine modificata.
 
 ## Modifica delle colonne della tabella e del relativo ordine {#changing-table-columns-and-their-order}
 

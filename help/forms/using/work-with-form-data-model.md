@@ -1,5 +1,5 @@
 ---
-title: Utilizzare il modello dati del modulo
+title: Utilizzare il modello dati modulo
 description: L’integrazione dei dati fornisce l’editor del modello dati del modulo per configurare e utilizzare i modelli dati del modulo.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '4159'
-ht-degree: 0%
+source-wordcount: '4255'
+ht-degree: 1%
 
 ---
 
-# Utilizzare il modello dati del modulo{#work-with-form-data-model}
+# Utilizzare il modello dati modulo{#work-with-form-data-model}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html) |
 | AEM 6.5 | Questo articolo |
 
 ![integrazione dati](do-not-localize/data-integeration.png)
@@ -30,7 +30,7 @@ Se hai poca esperienza con l’integrazione dei dati in Forms e non hai configur
 
 * [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md)
 * [Configurare origini dati](/help/forms/using/configure-data-sources.md)
-* [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
+* [Creare un modello di dati modulo](/help/forms/using/create-form-data-models.md)
 
 Continua a leggere per i dettagli sulle varie attività e configurazioni che puoi eseguire utilizzando l’editor dei modelli di dati dei moduli.
 
@@ -46,7 +46,7 @@ Se è stato creato un modello dati modulo con origini dati, è possibile utilizz
 
 Per aggiungere oggetti e servizi del modello dati:
 
-1. Accedi all’istanza di authoring dell’AEM, passa a **[!UICONTROL Forms > Integrazioni dati]** e apri il modello dati del modulo in cui desideri aggiungere oggetti modello dati.
+1. Accedi all’istanza di authoring di AEM, passa a **[!UICONTROL Forms > Integrazioni dati]** e apri il modello di dati del modulo in cui desideri aggiungere oggetti modello dati.
 1. Nel riquadro Origini dati espandere Origini dati per visualizzare i servizi e gli oggetti modello dati disponibili.
 1. Selezionare gli oggetti e i servizi del modello dati che si desidera aggiungere al modello dati del modulo e selezionare **[!UICONTROL Aggiungi selezionati]**.
 
@@ -92,7 +92,7 @@ Sebbene sia possibile aggiungere oggetti modello dati da origini dati configurat
 
 Per creare un oggetto modello dati senza origini dati:
 
-1. Accedi all’istanza di authoring dell’AEM, passa a **[!UICONTROL Forms > Integrazioni dati]** e apri il modello dati del modulo in cui desideri creare un oggetto o un’entità modello dati.
+1. Accedi all’istanza di authoring di AEM, passa a **[!UICONTROL Forms > Integrazioni dati]** e apri il modello di dati del modulo in cui desideri creare un oggetto o un’entità modello dati.
 1. Seleziona **[!UICONTROL Crea entità]**.
 1. Nella finestra di dialogo Crea modello dati, specifica un nome per l&#39;oggetto modello dati e seleziona **[!UICONTROL Aggiungi]**. Un oggetto modello dati viene aggiunto al modello dati del modulo. L’oggetto modello dati appena aggiunto non è associato a un’origine dati e non dispone di proprietà come mostrato nell’immagine seguente.
 
@@ -182,7 +182,7 @@ In questo esempio, i dettagli associati a **4367655678**, come valore per l&#39;
 
 #### Attributo profilo utente {#user-profile-attribute}
 
-Selezionare **[!UICONTROL Attributo profilo utente]** dal menu a discesa **[!UICONTROL Associazione a]** e immettere il nome dell&#39;attributo nel campo **[!UICONTROL Valore associazione]**. I dettagli dell’utente connesso all’istanza AEM vengono recuperati dall’origine dati in base al nome dell’attributo.
+Selezionare **[!UICONTROL Attributo profilo utente]** dal menu a discesa **[!UICONTROL Associazione a]** e immettere il nome dell&#39;attributo nel campo **[!UICONTROL Valore associazione]**. I dettagli dell’utente connesso all’istanza di AEM vengono recuperati dall’origine dati in base al nome dell’attributo.
 
 Il nome dell&#39;attributo specificato nel campo **[!UICONTROL Valore di binding]** deve includere il percorso di binding completo fino al nome dell&#39;attributo dell&#39;utente. Apri il seguente URL per accedere ai dettagli utente su CRXDE:
 
@@ -297,7 +297,7 @@ Per aggiungere un&#39;associazione:
 Per modificare le proprietà:
 
 1. Selezionare la casella di controllo accanto a un oggetto modello dati, a una proprietà o a un servizio nel modello dati del modulo.
-1. Selezionare **[!UICONTROL Modifica proprietà]**. Viene aperto il riquadro **[!UICONTROL Modifica proprietà]** per l&#39;oggetto modello, la proprietà o il servizio selezionato.
+1. Seleziona **[!UICONTROL Modifica proprietà]**. Viene aperto il riquadro **[!UICONTROL Modifica proprietà]** per l&#39;oggetto modello, la proprietà o il servizio selezionato.
 
    * **Oggetto modello dati**: specificare i servizi di lettura e scrittura e gli argomenti di modifica.
    * **Proprietà**: specificare il tipo, il sottotipo e il formato per la proprietà. È inoltre possibile specificare se la proprietà selezionata è la chiave primaria per l&#39;oggetto modello dati.
@@ -381,7 +381,7 @@ Dopo aver aggiunto il servizio `GET LINK` alla scheda Servizi nel modello dati d
 
 >[!NOTE]
 >
->I valori disponibili nel campo **Valore predefinito** dell&#39;argomento **NavigationPropertyName** dipendono dallo stato dell&#39;array **Return?Pulsante di attivazione/disattivazione**. Quando è abilitata, mostra le proprietà di navigazione del tipo Raccolta.
+>I valori disponibili nel campo **Valore predefinito** dell&#39;argomento **NavigationPropertyName** dipendono dallo stato dell&#39;array **Return?** interruttore. Quando è abilitata, mostra le proprietà di navigazione del tipo Raccolta.
 
 In questo esempio, è inoltre possibile scegliere l&#39;oggetto modello di output come oggetto Person e l&#39;argomento proprietà di navigazione come Friends o BestFriend (a seconda che l&#39;array **Return sia o meno?** è abilitato o disabilitato).
 
@@ -547,7 +547,7 @@ In questo esempio, i dati di input vengono convalidati in base ai vincoli massim
    ]
 ```
 
-Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log**. Ad esempio:
+Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log**. Ad esempio,
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}

@@ -1,5 +1,5 @@
 ---
-title: Procedura dettagliata sul sito di riferimento per la selezione dei dipendenti
+title: Procedura dettagliata sul sito di riferimento per l’assunzione dei dipendenti
 description: Il sito di riferimento AEM Forms mostra come le organizzazioni possono utilizzare le funzioni di AEM Forms per implementare il flusso di lavoro di selezione dei dipendenti.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# Procedura dettagliata sul sito di riferimento per la selezione dei dipendenti {#employee-recruitment-reference-site-walkthrough}
+# Procedura dettagliata sul sito di riferimento per l’assunzione dei dipendenti {#employee-recruitment-reference-site-walkthrough}
 
 ## Panoramica {#overview}
 
@@ -36,7 +36,7 @@ We.Finance è un&#39;organizzazione che consente ai candidati di richiedere un i
 Il caso di utilizzo della selezione dei dipendenti prevede due flussi di lavoro:
 
 * Prima del colloquio: finanziamo il flusso di lavoro di selezione dei dipendenti
-* Dopo il colloquio: finanziamo il flusso di lavoro di selezione dei dipendenti Post
+* Dopo il colloquio - Flusso di lavoro di post-colloquio per la selezione di dipendenti
 
 Questi flussi di lavoro sono creati in AEM e si trovano all’indirizzo:
 
@@ -48,9 +48,9 @@ Di seguito è riportato il modello del flusso di lavoro di selezione dei dipende
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
-#### Flusso di lavoro Interviste Post per selezione dipendenti {#we-finance-employee-recruiting-post-interview-workflow}
+#### Flusso di lavoro di post-colloquio per la selezione di dipendenti {#we-finance-employee-recruiting-post-interview-workflow}
 
-Di seguito è riportato il modello del flusso di lavoro di selezione dei dipendenti di We Finance Post Interview, illustrato in questo documento.
+Di seguito è riportato il modello del flusso di lavoro di selezione post colloquio per i dipendenti di We Finance illustrato in questo documento.
 
 ![we-finance-employee-recruiting-post-intervista-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
@@ -91,7 +91,7 @@ Assicurarsi di specificare un ID e-mail valido nell&#39;applicazione, in quanto 
 
 ## John Jacobs ha selezionato il profilo di Sarah Rose per la selezione del responsabile dell&#39;assunzione {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-L&#39;organizzazione riceve la candidatura di lavoro inviata da Sarah. A John Jacobs, un reclutatore, viene assegnato il compito di rivedere il profilo di Sarah. John rivede l’attività nella sua casella in entrata AEM, trova il profilo che corrisponde ai requisiti del lavoro e fa clic su Shortlist. Il profilo di Sarah viene inoltrato a Gloria Rios, la responsabile delle assunzioni, per la sua approvazione.
+L&#39;organizzazione riceve la candidatura di lavoro inviata da Sarah. A John Jacobs, un reclutatore, viene assegnato il compito di rivedere il profilo di Sarah. John rivede l’attività nella sua casella in entrata AEM, trova il profilo che corrisponde ai requisiti del processo e fa clic su Shortlist. Il profilo di Sarah viene inoltrato a Gloria Rios, la responsabile delle assunzioni, per la sua approvazione.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -111,7 +111,7 @@ Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.ht
 
 ## Gloria esamina la domanda e approva il candidato per un colloquio {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
-Gloria, la responsabile delle assunzioni, riceve il profilo selezionato come un&#39;attività nella sua casella in entrata AEM. Lo rivede e approva la candidata, Sarah Rose, per l&#39;intervista.
+Gloria, la responsabile delle assunzioni, riceve il profilo selezionato come un’attività nella sua casella in entrata AEM. Lo rivede e approva la candidata, Sarah Rose, per l&#39;intervista.
 
 ![gloriainbox](assets/gloriainbox.png)
 
@@ -123,7 +123,7 @@ Gloria approva Sarah Rose per un&#39;intervista
 
 **Come funziona**
 
-Quando Gloria approva il candidato per un colloquio, il flusso di lavoro crea un&#39;attività nella casella in entrata AEM di John Doe, che è un selezionatore per We.Finance.
+Quando Gloria approva il candidato per un colloquio, il flusso di lavoro crea un&#39;attività nella casella in entrata di AEM di John Doe, che è un selezionatore per We.Finance.
 
 ### Vedi tu stesso {#see-it-yourself-2}
 
@@ -215,7 +215,7 @@ Dopo aver eseguito il controllo dello sfondo, John Jacobs fa clic su Vai avanti
 
 ## John Doe invia la lettera di adesione a Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-John Doe riceve una richiesta nella sua casella di posta AEM per l’invio della lettera di adesione. John apre la richiesta e visualizza i dettagli. John Doe allega la lettera di join PDF e quindi fa clic su Allega e invia lettera di join.
+John Doe riceve una richiesta nella sua casella in entrata AEM per l’invio della lettera di iscrizione. John apre la richiesta e visualizza i dettagli. John Doe allega la lettera di join PDF e quindi fa clic su Allega e invia lettera di join.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 
@@ -227,7 +227,7 @@ John Doe invia la lettera per la firma
 
 ## Sarah Rose riceve e firma la lettera di adesione {#sarah-rose-receives-and-signs-the-joining-letter}
 
-Sarah Rose riceve la lettera di adesione per la firma. Fai Clic Su Click Here Per Rivedere E Firmare La Lettera Di Iscrizione. Il PDF della lettera di unione si apre con un campo per firmare il documento.
+Sarah Rose riceve la lettera di adesione per la firma. Fai Clic Su Click Here Per Rivedere E Firmare La Lettera Di Iscrizione. Viene aperta la lettera di unione PDF con un campo per la firma del documento.
 
 ![sarahrosejoiningletteremail](assets/sarahrosejoiningletteremail.png)
 

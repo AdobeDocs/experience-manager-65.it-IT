@@ -1,6 +1,6 @@
 ---
 title: Set di moduli in AEM Forms
-description: Questo articolo introduce il set di moduli e spiega come creare set di moduli unendo moduli di HTML5. In questo articolo viene inoltre illustrato come precompilare i dati XML in un set di moduli e come utilizzare i set di moduli nella gestione dei processi.
+description: Questo articolo introduce il set di moduli e spiega come creare set di moduli unendo moduli HTML5. In questo articolo viene inoltre illustrato come precompilare i dati XML in un set di moduli e come utilizzare i set di moduli nella gestione dei processi.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2816'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 I clienti devono spesso inviare più moduli per richiedere un servizio o un vantaggio. Comporta la ricerca di tutti i moduli rilevanti e la compilazione, l&#39;invio e il tracciamento separati. Inoltre, devono compilare i dettagli comuni più volte nei moduli. L’intero processo diventa complesso e soggetto a errori se coinvolge un numero elevato di moduli. La funzione Forms Set di AEM Forms può aiutare a semplificare l’esperienza utente in tali scenari.
 
-Un set di moduli è un insieme di moduli HTML5 raggruppati e presentati come un unico set di moduli agli utenti finali. Quando gli utenti finali iniziano a compilare un set di moduli, passano facilmente da un modulo all’altro. Alla fine, può inviare tutti i moduli con un solo clic.
+Un set di moduli è un insieme di moduli di HTML5 raggruppati e presentati come un unico set di moduli agli utenti finali. Quando gli utenti finali iniziano a compilare un set di moduli, passano facilmente da un modulo all’altro. Alla fine, può inviare tutti i moduli con un solo clic.
 
 AEM Forms fornisce agli autori dei moduli un’interfaccia utente intuitiva per creare, configurare e gestire i set di moduli. In qualità di autore, è possibile ordinare i moduli in una sequenza specifica che gli utenti finali dovranno seguire. È inoltre possibile applicare condizioni o espressioni di idoneità ai singoli moduli per controllarne la visibilità in base agli input degli utenti. Ad esempio, è possibile configurare il modulo dei dettagli del coniuge in modo che venga visualizzato solo quando lo stato civile specifica Sposato.
 
@@ -51,7 +51,7 @@ Per creare un set di moduli, effettuare le seguenti operazioni:
    * URL di invio: specifica l’URL in cui vengono pubblicati i dati inviati per il caso di rappresentazione autonoma del set di moduli (caso di utilizzo di app non AEM Forms). I dati vengono inviati a questo endpoint come dati multipart/formdata con il seguente parametro di richiesta:
    * dataXML: questo parametro contiene una rappresentazione XML dei dati del set di moduli inviati. Se tutti i moduli del set di moduli utilizzano uno schema comune, il codice XML viene generato in base a tale schema. In caso contrario, il tag radice XML contiene un tag figlio per ogni modulo compilato nel set di moduli che contiene i dati per gli allegati del modulo.
    * formsetPath: percorso del set di moduli in CRXDE, che è stato inviato.
-   * Profilo rendering HTML: è possibile configurare alcune opzioni, ad esempio campi mobili, allegati e supporto delle bozze (per la rappresentazione di set di moduli autonomi) per personalizzare l’aspetto, il comportamento e le interazioni del set di moduli. Puoi personalizzare o estendere il profilo esistente per modificare le impostazioni di profilo di HTML Form.
+   * Profilo rendering HTML: è possibile configurare alcune opzioni, ad esempio campi mobili, allegati e supporto delle bozze (per la rappresentazione di set di moduli autonomi) per personalizzare l’aspetto, il comportamento e le interazioni del set di moduli. È possibile personalizzare o estendere il profilo esistente per modificare le impostazioni del profilo di HTML Form.
 
    ![Set di moduli: aggiungi proprietà](assets/createformset1.png)
 
@@ -90,8 +90,8 @@ Una volta creato un set di moduli, è possibile eseguire le azioni seguenti su t
 * Download: puoi scaricare il set di moduli con tutte le sue dipendenze.
 * Avvia/Gestisci revisione: una volta creato il set di moduli, è possibile impostarne la revisione facendo clic su Avvia revisione. Una volta avviata la revisione di un set di moduli, l’utente visualizza l’opzione Gestisci revisione. Nella schermata Gestisci revisione, puoi aggiornare/terminare la revisione. Per le revisioni aggiunte, puoi controllare la revisione e aggiungere commenti, se necessario.
 * Elimina: elimina il set di moduli completo. I moduli nel set di moduli eliminato rimangono nell’archivio.
-* Publish/Unpublish: pubblica/annulla la pubblicazione del set di moduli, insieme a tutti i moduli in esso contenuti e alle relative risorse.
-* Anteprima: Anteprima offre due opzioni: Anteprima come HTML (senza dati) e Anteprima personalizzata con dati di esempio.
+* Pubblica/Annulla pubblicazione: pubblica/annulla la pubblicazione del set di moduli insieme a tutti i moduli in esso contenuti e alle relative risorse.
+* Anteprima: l’anteprima offre due opzioni: Anteprima come HTML (senza dati) e Anteprima personalizzata con dati di esempio.
 * Visualizza/Modifica proprietà: è possibile visualizzare/modificare le proprietà dei metadati di un set di moduli selezionato.
 
 ![createformset3](assets/createformset3.png)
@@ -121,7 +121,7 @@ Dopo aver creato un set di moduli utilizzando l’interfaccia utente di AEM Form
 
    ![Progettare un processo: utilizzare una risorsa CRX](assets/formsetinprocessmgmt1.png)
 
-1. Seleziona il set di moduli per filtrare il set di moduli nell’archivio AEM (CRX).
+1. Seleziona il set di moduli per filtrare il set di moduli nell’archivio di AEM (CRX).
 
    ![Progettare un processo: finestra di dialogo Seleziona risorsa modulo](assets/formsetinprocessmgmt2.png)
 
@@ -301,9 +301,9 @@ La sottostruttura indica i dati dei moduli nel set di moduli. L’elemento è fa
 
 `children: xfa:datasets`
 
-Questo tag indica l&#39;inizio dell&#39;XML del modulo HTML5. Questo viene aggiunto nel codice XML di invio se è presente nel codice XML di precompilazione o se non è presente alcun codice XML di precompilazione. Questo tag può essere rimosso dal file XML di precompilazione.
+Questo tag indica l&#39;inizio dell&#39;XML di HTML5 Form. Questo viene aggiunto nel codice XML di invio se è presente nel codice XML di precompilazione o se non è presente alcun codice XML di precompilazione. Questo tag può essere rimosso dal file XML di precompilazione.
 
-### XFA:SET DI DATI {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -315,7 +315,7 @@ Questo tag indica l&#39;inizio dell&#39;XML del modulo HTML5. Questo viene aggiu
 
 `children: xfa:data`
 
-### XFA:DATI {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 

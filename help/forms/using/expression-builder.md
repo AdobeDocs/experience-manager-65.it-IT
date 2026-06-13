@@ -1,5 +1,5 @@
 ---
-title: Funzioni remote in Expression Builder
+title: Funzioni remote nel Generatore di espressioni
 description: Il Generatore di espressioni in Gestione della corrispondenza consente di creare espressioni e funzioni remote.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 1%
+source-wordcount: '797'
+ht-degree: 2%
 
 ---
 
-# Funzioni remote in Expression Builder{#remote-functions-in-expression-builder}
+# Funzioni remote nel Generatore di espressioni{#remote-functions-in-expression-builder}
 
 Utilizzando il Generatore di espressioni, puoi creare espressioni o condizioni che eseguono calcoli sui valori dei dati forniti dal dizionario dati o dagli utenti finali. Gestione della corrispondenza utilizza il risultato della valutazione dell’espressione per selezionare risorse quali testo, immagini, elenchi e condizioni e inserirle nella corrispondenza come richiesto.
 
@@ -60,7 +60,7 @@ Puoi trovare ulteriori informazioni nella [specifica JSP EL](https://download.or
    * java.lang.Long
    * Lungo
    * java.lang.Float
-   * Mobile
+   * A virgola mobile
    * java.util.Calendar
    * java.util.Date
    * java.util.List
@@ -112,7 +112,7 @@ Puoi creare un bundle personalizzato per esportare le funzioni remote da utilizz
    * java.lang.Long
    * Lungo
    * java.lang.Float
-   * Mobile
+   * A virgola mobile
    * java.util.Calendar
    * java.util.Date
    * java.util.List
@@ -126,7 +126,7 @@ Puoi creare un bundle personalizzato per esportare le funzioni remote da utilizz
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-La voce exm.service=true indica a Gestione espressioni che il servizio contiene funzioni remote idonee per l&#39;utilizzo nelle espressioni. Il valore &lt;service_id> deve essere un identificatore Java valido (alfanumerico,$, _ senza altri caratteri speciali). Questo valore, preceduto dalla parola chiave REMOTE_, forma il prefisso utilizzato all&#39;interno delle espressioni. Ad esempio, è possibile fare riferimento a un&#39;interfaccia con una barra dei metodi con annotazioni e l&#39;ID del servizio nelle proprietà del servizio all&#39;interno delle espressioni utilizzando REMOTE_foo:bar().
+La voce exm.service=true indica a Gestione espressioni che il servizio contiene funzioni remote idonee per l&#39;utilizzo nelle espressioni. Il valore &lt;service_id> deve essere un identificatore Java valido (alfanumerico,$, _ senza altri caratteri speciali). Questo valore, preceduto dalla parola chiave REMOTE_, forma il prefisso utilizzato all&#39;interno delle espressioni. Ad esempio, è possibile fare riferimento a un&#39;interfaccia con una barra dei metodi con annotazioni e l&#39;ID del servizio foo nelle proprietà del servizio all&#39;interno delle espressioni utilizzando REMOTE_foo:bar().
 
 ```java
 package mergeandfuse.com;
@@ -159,8 +159,8 @@ Di seguito sono riportati alcuni archivi di esempio da utilizzare:
 
 GoodFunctions.jar.zip
 
-[Ottieni file](assets/goodfunctions.jar.zip)
+[Ottieni il file](assets/goodfunctions.jar.zip)
 
 GoodFunctions.zip
 
-[Ottieni file](assets/goodfunctions.zip)
+[Ottieni il file](assets/goodfunctions.zip)

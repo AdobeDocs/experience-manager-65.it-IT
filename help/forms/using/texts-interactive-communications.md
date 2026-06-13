@@ -1,6 +1,6 @@
 ---
-title: Testi nelle comunicazioni interattive
-description: 'Creazione e modifica di frammenti di documenti di testo da utilizzare nelle comunicazioni interattive: il testo è uno dei quattro tipi di frammenti di documenti utilizzati per creare le comunicazioni interattive. Gli altri tre sono condizioni, elenchi e frammenti di layout.  '
+title: Testi delle comunicazioni interattive
+description: 'Creazione e modifica di frammenti di documenti di testo da utilizzare nelle comunicazioni interattive: il testo è uno dei quattro tipi di frammenti di documenti utilizzati per creare le comunicazioni interattive. Gli altri tre sono condizioni, elenchi e frammenti di layout.'
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
 
-# Testi nelle comunicazioni interattive{#texts-in-interactive-communications}
+# Testi delle comunicazioni interattive{#texts-in-interactive-communications}
 
 ## Panoramica {#overview}
 
@@ -26,7 +26,7 @@ Il frammento di documento di testo nella comunicazione interattiva supporta il s
 * **Oggetti modello dati**: le proprietà dati utilizzano un&#39;origine dati back-end.
 * **Contenuto basato su regole**: parti di contenuto in un testo che vengono visualizzate o nascoste in base a una regola. Una regola può anche essere basata sulle proprietà e le variabili del modello di dati del modulo.
 * **Variabili**: nel frammento di documento di testo, le variabili non sono associate a un&#39;origine dati back-end. L’agente inserisce/seleziona i valori nelle variabili o associa le variabili alle origini dati durante la preparazione della comunicazione interattiva per l’invio a un processo post.
-* **Ripeti**: è possibile che nella comunicazione interattiva siano presenti informazioni dinamiche, ad esempio le transazioni in un estratto conto relativo a una carta di credito, il cui numero di occorrenze potrebbe cambiare con ogni comunicazione interattiva generata. Utilizzando la funzione di ripetizione è possibile formattare e strutturare tali informazioni dinamiche. Per ulteriori informazioni, vedere [Condizione in linea e ripetizione](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Ripeti**: è possibile che nella comunicazione interattiva siano presenti informazioni dinamiche, ad esempio le transazioni in un estratto conto relativo a una carta di credito, il cui numero di occorrenze potrebbe cambiare con ogni comunicazione interattiva generata. Utilizzando la funzione di ripetizione è possibile formattare e strutturare tali informazioni dinamiche. Per ulteriori informazioni, vedere [Condizione in linea e ripetizione](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Crea testo {#createtext}
 

@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ I dettagli dell&#39;app possono essere visualizzati nel dashboard o nel Centro d
 
 ## Utilizzo dei modelli di app {#using-app-templates}
 
-I modelli di app consentono di utilizzare facilmente le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app in ambito AEM.
+I modelli di app consentono di utilizzare facilmente le progettazioni esistenti create da sviluppatori e utilizzate per la creazione di nuove app in AEM.
 
 Che cos’è un modello di app? Consideralo come una raccolta di modelli di pagina e componenti che rappresentano una linea di base o le basi di un’app.
 Quando crei un’app basata sul modello di un’altra app, ottieni un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
@@ -74,7 +74,7 @@ Se hai familiarità con la creazione di un&#39;applicazione on-demand e quindi c
 * [Gestione dei banner](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gestione delle raccolte](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Caricamento delle risorse condivise](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Annullamento pubblicazione contenuto Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Pubblica contenuto di annullamento pubblicazione](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Per informazioni sui ruoli e sulle responsabilità di un amministratore e di uno sviluppatore, consulta le risorse seguenti:
 
