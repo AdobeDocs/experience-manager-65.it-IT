@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 0%
+source-wordcount: '1670'
+ht-degree: 1%
 
 ---
 
@@ -180,7 +180,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   In caso contrario, se non è necessario eseguire il rendering selettivo delle informazioni (qui transazioni), mantenere vuota la condizione eliminando quanto segue nella finestra di dialogo: `${}`. Il salvataggio di un&#39;espressione ripetuta viene abilitato quando la finestra dell&#39;espressione ripetuta è vuota (senza ${} quando non è necessaria alcuna ripetizione) o quando contiene una condizione valida per la ripetizione.
+   In caso contrario, se non è necessario eseguire il rendering selettivo delle informazioni (qui transazioni), mantenere vuota la condizione eliminando quanto segue nella finestra di dialogo: `${}`. Il salvataggio di un’espressione ripetuta viene abilitato quando la finestra dell’espressione ripetuta è vuota (senza ${} quando non è necessaria alcuna ripetizione) o quando contiene una condizione valida per la ripetizione.
 
 1. Seleziona un separatore per la formattazione del testo dinamico e seleziona il segno di spunta da salvare:
 
@@ -200,7 +200,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
    * Un file di dati XML di esempio creato in base al dizionario dati pertinente durante l’anteprima della lettera con dati di esempio.
    * File di dati XML associato al dizionario dati pertinente.
 
-   Per ulteriori informazioni, vedere [Dizionario dati](https://helpx.adobe.com/it/aem-forms/6-2/data-dictionary.html).
+   Per ulteriori informazioni, vedere [Dizionario dati](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
    ![6_Repeoutputpreview](assets/6_repeatoutputpreview.png)
 

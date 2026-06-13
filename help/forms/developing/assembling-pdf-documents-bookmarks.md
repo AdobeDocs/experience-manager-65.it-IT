@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2561'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-È possibile assemblare un documento PDF contenente segnalibri. Si supponga, ad esempio, di disporre di un documento PDF che non contiene segnalibri e di voler modificarlo fornendo segnalibri. Utilizzando il servizio Assembler, è possibile passare un documento PDF che non contiene segnalibri e restituire un documento PDF che contiene segnalibri.
+È possibile assemblare un documento PDF contenente segnalibri. Si supponga, ad esempio, di disporre di un documento di PDF che non contiene segnalibri e di volerlo modificare fornendo segnalibri. Utilizzando il servizio Assembler, è possibile passare un documento PDF che non contiene segnalibri e restituire un documento PDF che contiene segnalibri.
 
 I segnalibri contengono le seguenti proprietà:
 
 * Titolo visualizzato come testo sullo schermo.
-* Azione che specifica cosa accade quando un utente fa clic sul segnalibro. L&#39;azione tipica di un segnalibro consiste nello spostamento in un&#39;altra posizione nel documento corrente o nell&#39;apertura di un altro documento PDF, anche se è possibile specificare altre azioni.
+* Azione che specifica cosa accade quando un utente fa clic sul segnalibro. L&#39;azione tipica di un segnalibro consiste nello spostamento in un&#39;altra posizione nel documento corrente o nell&#39;apertura di un altro documento di PDF, anche se è possibile specificare altre azioni.
 
 Ai fini della presente discussione, si supponga che venga utilizzato il seguente documento DDX.
 
@@ -41,7 +41,7 @@ Ai fini della presente discussione, si supponga che venga utilizzato il seguente
  </DDX>
 ```
 
-All&#39;interno di questo documento DDX, si noti che all&#39;attributo di origine viene assegnato il valore `Loan.pdf`. Questo documento DDX specifica che un singolo documento PDF viene passato al servizio Assembler. Durante l&#39;assemblaggio di un documento PDF con segnalibri, è necessario specificare un documento XML segnalibro che descriva i segnalibri presenti nel documento risultante. Per specificare un documento XML segnalibro, verificare che l&#39;elemento `Bookmarks` sia specificato nel documento DDX.
+All&#39;interno di questo documento DDX, si noti che all&#39;attributo di origine viene assegnato il valore `Loan.pdf`. Questo documento DDX specifica che un singolo documento PDF viene passato al servizio Assembler. Quando si assembla un documento PDF con segnalibri, è necessario specificare un documento XML segnalibro che descriva i segnalibri nel documento risultante. Per specificare un documento XML segnalibro, verificare che l&#39;elemento `Bookmarks` sia specificato nel documento DDX.
 
 In questo esempio di documento DDX, l&#39;elemento `Bookmarks` specifica `doc2` come valore. Questo valore indica che la mappa di input passata al servizio Assembler contiene una chiave denominata `doc2`. Il valore della chiave `doc2` è un valore `com.adobe.idp.Document` che rappresenta il documento XML segnalibro. Consultate &quot;Bookmarks Language&quot; in [Assembler Service e riferimento DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
@@ -83,7 +83,7 @@ Quando un utente fa clic sul segnalibro *Apri dettagli prestito*, viene aperto L
 
 >[!NOTE]
 >
->Prima di leggere questa sezione, è consigliabile avere familiarità con l&#39;assemblaggio di documenti PDF utilizzando il servizio Assembler. In questa sezione non vengono descritti concetti quali la creazione di un oggetto raccolta contenente documenti di input o l&#39;apprendimento dell&#39;estrazione dei risultati dall&#39;oggetto raccolta restituito. (Vedi [Assemblaggio a livello di programmazione di documenti di PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+>Prima di leggere questa sezione, è consigliabile avere familiarità con l&#39;assemblaggio di documenti PDF utilizzando il servizio Assembler. In questa sezione non vengono descritti concetti quali la creazione di un oggetto raccolta contenente documenti di input o l&#39;apprendimento dell&#39;estrazione dei risultati dall&#39;oggetto raccolta restituito. (Vedere [Assemblaggio di documenti di PDF a livello di programmazione](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Quando un utente fa clic sul segnalibro *Apri dettagli prestito*, viene aperto L
 Per assemblare un documento PDF contenente segnalibri, eseguire le operazioni seguenti:
 
 1. Includi file di progetto.
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 1. Fare riferimento a un documento DDX esistente.
 1. Fare riferimento a un documento PDF a cui vengono aggiunti segnalibri.
 1. Fare riferimento al documento XML segnalibro.
@@ -121,7 +121,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 
 se AEM Forms viene distribuito su un server applicazioni J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazioni J2EE su cui è distribuito AEM Forms. Per informazioni sulla posizione di tutti i file JAR di AEM Forms, vedi [Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Creare un client Assembler PDF**
+**Creare un client Assembler di PDF**
 
 Prima di poter eseguire un&#39;operazione Assembler a livello di programmazione, è necessario creare un client del servizio Assembler.
 
@@ -150,7 +150,7 @@ Per assemblare un PDF contenente nuovi segnalibri, è necessario fare riferiment
 
 **Aggiungere il documento PDF e il documento XML segnalibro a una raccolta di mappe**
 
-Aggiungere all&#39;insieme Map sia il documento PDF al quale vengono aggiunti segnalibri che il documento XML segnalibro. Pertanto, l&#39;insieme Map contiene due elementi: un documento PDF e il documento XML segnalibro.
+Aggiungere all&#39;insieme Map sia il documento PDF a cui vengono aggiunti segnalibri che il documento XML segnalibro. Pertanto, l&#39;insieme Map contiene due elementi: un documento PDF e il documento XML segnalibro.
 
 **Impostare le opzioni di runtime**
 
@@ -160,9 +160,9 @@ Aggiungere all&#39;insieme Map sia il documento PDF al quale vengono aggiunti se
 
 Per assemblare un documento PDF contenente nuovi segnalibri, utilizzare l&#39;operazione `invokeDDX` del servizio Assembler. Il motivo per cui è necessario utilizzare l&#39;operazione `invokeDDX` rispetto ad altre operazioni del servizio Assembler come `invokeOneDocument` è che il servizio Assembler richiede un documento XML segnalibro passato all&#39;interno dell&#39;oggetto insieme Map. Questo oggetto è un parametro dell&#39;operazione `invokeDDX`.
 
-**Salvare il documento PDF contenente i segnalibri**
+**Salvare il documento PDF contenente segnalibri**
 
-Estrarre i risultati dall&#39;oggetto mappa restituito e salvare il documento PDF corrispondente. Consultare &quot;Estrarre i risultati&quot; in [Assemblaggio a livello di codice di documenti PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).
+Estrarre i risultati dall&#39;oggetto mappa restituito e salvare il documento PDF corrispondente. Consultare &quot;Estrarre i risultati&quot; in [Assemblaggio di documenti PDF a livello di programmazione](/help/forms/developing/programmatically-assembling-pdf-documents.md).
 
 **Consulta anche**
 
@@ -180,7 +180,7 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
 
    Includi i file JAR client, come adobe-assembler-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione. (Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
@@ -192,7 +192,7 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
 
 1. Fare riferimento a un documento PDF a cui vengono aggiunti segnalibri.
 
-   * Creare un oggetto `java.io.FileInputStream` utilizzando il relativo costruttore e passando il percorso del documento PDF.
+   * Creare un oggetto `java.io.FileInputStream` utilizzando il relativo costruttore e passando il percorso del documento di PDF.
    * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passare l&#39;oggetto `java.io.FileInputStream` che contiene il documento PDF.
 
 1. Fare riferimento al documento XML segnalibro.
@@ -202,8 +202,8 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
 
 1. Aggiungere il documento PDF e il documento XML segnalibro a un insieme Map.
 
-   * Creare un oggetto `java.util.Map` utilizzato per memorizzare sia il documento di input PDF che il documento XML segnalibro.
-   * Aggiungere il documento di input PDF richiamando il metodo `put` dell&#39;oggetto `java.util.Map` e passando i seguenti argomenti:
+   * Creare un oggetto `java.util.Map` utilizzato per memorizzare sia il documento PDF di input che il documento XML segnalibro.
+   * Aggiungere il documento PDF di input richiamando il metodo `put` dell&#39;oggetto `java.util.Map` e passando i seguenti argomenti:
 
       * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al valore dell&#39;elemento di origine PDF specificato nel documento DDX.
       * Oggetto `com.adobe.idp.Document` contenente il documento PDF di input.
@@ -223,14 +223,14 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
    Richiama il metodo `invokeDDX` dell&#39;oggetto `AssemblerServiceClient` e passa i seguenti valori richiesti:
 
    * Oggetto `com.adobe.idp.Document` che rappresenta il documento DDX da utilizzare
-   * Oggetto `java.util.Map` contenente sia il documento di input PDF che il documento XML segnalibro.
+   * Oggetto `java.util.Map` contenente sia il documento PDF di input che il documento XML segnalibro.
    * Oggetto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` che specifica le opzioni di runtime, inclusi il tipo di carattere predefinito e il livello di registro del processo
 
    Il metodo `invokeDDX` restituisce un oggetto `com.adobe.livecycle.assembler.client.AssemblerResult` contenente i risultati del processo ed eventuali eccezioni.
 
 1. Salvare il documento PDF contenente i segnalibri.
 
-   Per ottenere il documento di PDF appena creato, effettuare le seguenti operazioni:
+   Per ottenere il documento PDF appena creato, effettuare le seguenti operazioni:
 
    * Richiama il metodo `getDocuments` dell&#39;oggetto `AssemblerResult`. Restituisce un oggetto `java.util.Map`.
    * Scorrere l&#39;oggetto `java.util.Map` fino a trovare l&#39;oggetto `com.adobe.idp.Document` risultante. È possibile utilizzare l&#39;elemento risultato PDF specificato nel documento DDX per ottenere il documento.
@@ -256,7 +256,7 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
    >
    >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `AssemblerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
@@ -264,7 +264,7 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -296,10 +296,10 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
 1. Aggiungere il documento PDF e il documento XML segnalibro a un insieme Map.
 
    * Creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType`. Questo oggetto insieme viene utilizzato per memorizzare i documenti PDF di input e il documento XML segnalibro.
-   * Per ogni documento di input PDF e per il documento XML segnalibro, creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Per ogni documento PDF di input e per il documento XML segnalibro, creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Assegnare un valore stringa che rappresenta il nome chiave al campo `key` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`. Questo valore deve corrispondere al valore dell&#39;elemento di origine PDF specificato nel documento DDX.
    * Assegnare l&#39;oggetto `BLOB` che memorizza il documento PDF al campo `value` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
-   * Aggiungere l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` all&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType`. Richiama il metodo `Add` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType` e passa l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType`. (Eseguire questa operazione per ogni documento di input PDF e per il documento XML segnalibro.)
+   * Aggiungere l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` all&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType`. Richiama il metodo `Add` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType` e passa l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType`. (Eseguire questa operazione per ogni documento PDF di input e per il documento XML segnalibro.)
 
 1. Impostare le opzioni di runtime.
 
@@ -318,7 +318,7 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
 
 1. Salvare il documento PDF contenente i segnalibri.
 
-   Per ottenere il documento di PDF appena creato, effettuare le seguenti operazioni:
+   Per ottenere il documento PDF appena creato, effettuare le seguenti operazioni:
 
    * Accedere al campo `documents` dell&#39;oggetto `AssemblerResult`, che è un oggetto `Map` contenente i documenti PDF risultanti.
    * Scorrere l&#39;oggetto `Map` fino a trovare la chiave corrispondente al nome del documento risultante. Quindi esegui il cast di `value` del membro dell&#39;array in un `BLOB`.

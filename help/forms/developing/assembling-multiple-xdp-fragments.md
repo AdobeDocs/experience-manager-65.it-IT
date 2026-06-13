@@ -13,8 +13,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 0%
+source-wordcount: '1886'
+ht-degree: 1%
 
 ---
 
@@ -89,7 +89,7 @@ Per ogni modulo secondario, è possibile aggiungere un elemento `XDPContent` (qu
 Per assemblare più frammenti XDP, effettuare le seguenti operazioni:
 
 1. Includi file di progetto.
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 1. Fare riferimento a un documento DDX esistente.
 1. Fai riferimento ai documenti XDP.
 1. Impostare le opzioni di runtime.
@@ -108,7 +108,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 * adobe-utilities.jar (richiesto se AEM Forms è implementato su JBoss)
 * jbossall-client.jar (obbligatorio se AEM Forms è distribuito su JBoss)
 
-**Creare un client Assembler PDF**
+**Creare un client Assembler di PDF**
 
 Prima di eseguire un&#39;operazione Assembler a livello di programmazione, creare un client del servizio Assembler.
 
@@ -160,7 +160,7 @@ Assembla più frammenti XDP utilizzando l’API del servizio Assembler (Java):
 
    Includi i file JAR client, come adobe-assembler-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
@@ -206,7 +206,7 @@ Assembla più frammenti XDP utilizzando l’API del servizio Assembler (Java):
 
 [Assemblaggio di più frammenti XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 [Guida rapida (modalità SOAP): assemblaggio di più frammenti XDP tramite l&#39;API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Assemblare più frammenti XDP utilizzando l’API del servizio web {#assemble-multiple-xdp-fragments-using-the-web-service-api}
@@ -225,7 +225,7 @@ Assembla più frammenti XDP utilizzando l’API del servizio Assembler (servizio
    >
    >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `AssemblerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms, ad esempio `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
@@ -233,7 +233,7 @@ Assembla più frammenti XDP utilizzando l’API del servizio Assembler (servizio
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.

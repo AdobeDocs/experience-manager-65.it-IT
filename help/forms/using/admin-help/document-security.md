@@ -11,8 +11,8 @@ exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '3219'
+workflow-type: tm+mt
+source-wordcount: '3301'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
 
   Queste impostazioni possono includere, ad esempio, un URL di sicurezza del documento di base, notifiche di auditing, di privacy e di registrazione per gli utenti invitati, nonché periodi di leasing offline predefiniti.
 
-* Gli amministratori della protezione dei documenti creano criteri e relativi set e gestiscono i documenti protetti tramite criteri per gli utenti come richiesto. Inoltre, creano gli account utente invitati e monitorano il sistema, i documenti, gli utenti, i criteri, i relativi set e gli eventi personalizzati. Possono anche essere responsabili della configurazione del server globale e delle impostazioni delle pagine web e dei criteri con un amministratore di sistema.
+* Gli amministratori della protezione dei documenti creano criteri e set di criteri e gestiscono i documenti protetti tramite criteri per gli utenti in base alle esigenze. Inoltre, creano gli account per utenti invitati e monitorano il sistema, i documenti, gli utenti, i criteri, i set di criteri e gli eventi personalizzati. Possono anche essere responsabili della configurazione del server globale e delle impostazioni delle pagine web e dei criteri con un amministratore di sistema.
 
   Gli amministratori possono assegnare agli utenti i seguenti ruoli nell’area Gestione utenti della console di amministrazione. Gli utenti a cui sono assegnati questi ruoli eseguono le proprie attività nell’area dell’interfaccia utente della protezione dei documenti della console di amministrazione.
 
@@ -251,7 +251,7 @@ Aggiungi gruppi di utenti ai criteri anziché singoli utenti. Semplifica la gest
 
   L’utilizzo dei set di criteri semplifica l’assegnazione e la gestione dei criteri correlati a utenti specifici di un’organizzazione o di un reparto. Ad esempio, set di criteri separati per il reparto finanze e risorse umane possono facilitare la gestione e l’applicazione dei criteri correlati ai documenti designati per i reparti corrispondenti.
 
-* **Utilizzo di un handler per l’autorizzazione esterna per l’applicazione dinamica delle autorizzazioni:** puoi utilizzare l’[handler per l’autorizzazione esterna](https://help.adobe.com/it_IT/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) per valutare e applicare in modo dinamico le autorizzazioni in base alla condizione esterna. Quando le autorizzazioni vengono valutate in modo dinamico, in base alla condizione esterna, puoi:
+* **Utilizzo di un handler per l’autorizzazione esterna per l’applicazione dinamica delle autorizzazioni:** puoi utilizzare l’[handler per l’autorizzazione esterna](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) per valutare e applicare in modo dinamico le autorizzazioni in base alla condizione esterna. Quando le autorizzazioni vengono valutate in modo dinamico, in base alla condizione esterna, puoi:
 
    * Assicurare un controllo degli accessi centralizzato ai documenti dell’organizzazione.
 
@@ -259,14 +259,14 @@ Aggiungi gruppi di utenti ai criteri anziché singoli utenti. Semplifica la gest
 
    * Sfrutta un meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti, oltre al processo standard di valutazione dei criteri. Ad esempio, quando il servizio determina se un utente può stampare un documento protetto tramite criteri, può utilizzare il processo standard di valutazione dei criteri. Può inoltre sfruttare il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti.
 
-  Sebbene sia possibile sostituire completamente il processo di valutazione dei criteri della protezione dei documenti con un handler per l’autorizzazione esterna, si consiglia di utilizzare quest’ultimo con il processo di valutazione dei criteri. Di conseguenza, l’accesso ai documenti può essere controllato mediante lo stesso meccanismo di controllo utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio di protezione dei documenti determina se un utente può stampare un documento protetto tramite criteri, utilizza il processo standard di valutazione dei criteri. Utilizza anche il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Per ulteriori informazioni, consulta [Creazione di handler per l’autorizzazione esterna](https://help.adobe.com/it_IT/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Sebbene sia possibile sostituire completamente il processo di valutazione dei criteri della protezione dei documenti con un handler per l’autorizzazione esterna, si consiglia di utilizzare quest’ultimo con il processo di valutazione dei criteri. Di conseguenza, l’accesso ai documenti può essere controllato mediante lo stesso meccanismo di controllo utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio di protezione dei documenti determina se un utente può stampare un documento protetto tramite criteri, utilizza il processo standard di valutazione dei criteri. Utilizza anche il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Per ulteriori informazioni, consulta [Creazione di handler per l’autorizzazione esterna](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantenimento di un numero limitato di set di criteri:** diversi fattori determinano la crescita costante di criteri e dei relativi set. Di seguito sono riportati alcuni fattori comuni:
 
    * Aumento di ruoli utente, reparti e documenti all’interno di un’organizzazione in un periodo.
    * I dipartimenti di un’organizzazione lavorano in modo isolato e mantengono un rigido controllo sui criteri specifici del dipartimento. Questa condizione assicura criteri identici all’interno di un’organizzazione.
 
-  Adobe consiglia di mantenere al minimo il numero di criteri e di relativi set. In questo modo, è più semplice gestire i criteri e i relativi set, nonché garantire prestazioni migliori. Per ridurre il numero al minimo:
+  Adobe consiglia di mantenere al minimo il numero di criteri e set di criteri. In questo modo, è più semplice gestire i criteri e set di criteri, nonché garantire prestazioni migliori. Per ridurre il numero al minimo:
 
    * Crea criteri riutilizzabili. Questi criteri possono essere condivisi tra più reparti.
    * Se alcuni criteri vengono applicati a più reparti, prendi in considerazione la creazione di set di criteri a livello di organizzazione, anziché di un singolo set di criteri per ogni reparto.

@@ -1,5 +1,5 @@
 ---
-title: Utilizzo dei grafici nelle comunicazioni interattive
+title: Utilizzare i grafici nelle comunicazioni interattive
 description: Utilizzando i grafici in una comunicazione interattiva, è possibile condensare grandi quantità di informazioni in un formato visivo facile da analizzare
 content-type: reference
 topic-tags: interactive-communications
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2678'
 ht-degree: 1%
 
 ---
 
-# Utilizzo dei grafici nelle comunicazioni interattive{#using-charts-in-interactive-communications}
+# Utilizzare i grafici nelle comunicazioni interattive{#using-charts-in-interactive-communications}
 
 Un grafico o un grafico è una rappresentazione visiva dei dati. Concentra grandi quantità di informazioni in un formato visivo di facile comprensione, consentendo ai destinatari della comunicazione interattiva di visualizzare, interpretare e analizzare meglio i dati complessi.
 
@@ -81,7 +81,7 @@ Configura le seguenti proprietà durante la creazione di grafici per i canali di
   </tr>
   <tr>
    <td>Series &gt; Oggetto modello dati</td>
-   <td>Nome dell'elemento di raccolta del modello dati del modulo per aggiungere più serie al grafico.<br /> Scegliere una proprietà dell'oggetto modello dati del modulo padre per le proprietà tracciate sull'asse X e sull'asse Y per creare una serie significativa. L’oggetto modello dati associato deve essere di tipo Numerico, Stringa o Data.</td>
+   <td>Nome dell'elemento della raccolta del modello dati del modulo per aggiungere più serie al grafico.<br /> Scegliere una proprietà dell'oggetto modello dati del modulo padre per le proprietà tracciate sull'asse X e sull'asse Y per creare una serie significativa. L’oggetto modello dati associato deve essere di tipo Numerico, Stringa o Data.</td>
    <td>Stampa e Web</td>
   </tr>
   <tr>

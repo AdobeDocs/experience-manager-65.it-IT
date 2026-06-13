@@ -11,8 +11,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 5%
+source-wordcount: '696'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ Per i componenti Community consegnati nella versione, le tabelle seguenti descri
 
 ## Argomenti e verbi {#topics-and-verbs}
 
-[Componente Calendario](calendar-basics-for-developers.md)
+[Componente calendario](calendar-basics-for-developers.md)
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descrizione** |
@@ -48,7 +48,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | AGGIORNA | Commento del membro modificato |
 | ELIMINA | Commento del membro eliminato |
 
-[Componente Libreria File](essentials-file-library.md)
+[Componente libreria file](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrizione** |
@@ -78,7 +78,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | AGGIORNA | L&#39;articolo o il commento del blog del membro è stato modificato |
 | ELIMINA | L&#39;articolo o il commento del blog del membro è stato eliminato |
 
-[Componente QnA](qna-essentials.md)
+Componente [QnA](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrizione** |
@@ -107,7 +107,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 | AGGIUNGI VALUTAZIONE | Il contenuto dell&#39;utente è stato rivalutato |
 | RIMUOVI VALUTAZIONE | Il contenuto dell&#39;utente non è stato valutato correttamente |
 
-[Componente Votazione](essentials-voting.md)
+[Componente voto](essentials-voting.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrizione** |

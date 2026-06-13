@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '9036'
-ht-degree: 0%
+source-wordcount: '9089'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Informazioni sul servizio archivio**
 
-Il servizio Archivio fornisce ad AEM Forms servizi di archiviazione e gestione delle risorse. Quando gli sviluppatori creano un&#39;applicazione *AEM Forms*, possono distribuire le risorse nell&#39;archivio anziché nel file system. Le risorse possono includere qualsiasi tipo di materiale collaterale, tra cui moduli XML, PDF forms (inclusi i moduli Acrobat), frammenti di moduli, immagini, profili, criteri, file SWF, file DDX, schemi XML, file WSDL e dati di test.
+Il servizio Archivio fornisce ad AEM Forms servizi di archiviazione e gestione delle risorse. Quando gli sviluppatori creano un&#39;applicazione *AEM Forms*, possono distribuire le risorse nell&#39;archivio anziché nel file system. Le risorse possono includere qualsiasi tipo di materiale collaterale, tra cui moduli XML, moduli PDF (inclusi i moduli Acrobat), frammenti di modulo, immagini, profili, criteri, file SWF, file DDX, schemi XML, file WSDL e dati di test.
 
 Consideriamo ad esempio la seguente applicazione Forms denominata *Applications/FormsApplication*:
 
@@ -32,7 +32,7 @@ In FormsFolder è presente un file denominato Loan.xdp. Per accedere a questa st
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 
 Il percorso di una risorsa nell’archivio AEM Forms è:
 
@@ -123,7 +123,7 @@ Richiama il metodo del servizio Repository per scrivere la raccolta di risorse, 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Creare cartelle utilizzando l’API Java {#create-folders-using-the-java-api}
 
@@ -145,7 +145,7 @@ Crea una cartella utilizzando l’API del servizio Repository (Java):
 
    * Identificatore UUID `com.adobe.repository.infomodel.Id` da assegnare alla risorsa.
    * Identificatore UUID `com.adobe.repository.infomodel.Lid` da assegnare alla risorsa.
-   * `java.lang.String` contenente il nome della raccolta di risorse. Esempio: `FormsFolder`.
+   * `java.lang.String` contenente il nome della raccolta di risorse. Ad esempio, `FormsFolder`.
 
    Il metodo restituisce un oggetto `com.adobe.repository.infomodel.bean.ResourceCollection` che rappresenta la nuova cartella.
 
@@ -163,7 +163,7 @@ Crea una cartella utilizzando l’API del servizio Repository (Java):
 
 [Creazione di cartelle](aem-forms-repository.md#creating-folders)
 
-[Quick Start (modalità SOAP): creazione di una cartella utilizzando l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[Guida rapida (modalità SOAP): creazione di una cartella tramite l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -262,7 +262,7 @@ Richiama il metodo del servizio Archivio per scrivere la risorsa, specificando l
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Scrivere risorse utilizzando l’API Java {#write-resources-using-the-java-api}
 
@@ -407,7 +407,7 @@ Richiama il metodo del servizio Archivio per recuperare l’elenco delle risorse
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Elencare le risorse utilizzando l’API Java {#list-resources-using-the-java-api}
 
@@ -524,7 +524,7 @@ Richiama il metodo del servizio Archivio per leggere la risorsa, specificando l�
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Lettura delle risorse tramite API Java {#read-resources-using-the-java-api}
 
@@ -634,7 +634,7 @@ Imposta le nuove informazioni nella risorsa e richiama il metodo del servizio Ar
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Aggiornare le risorse utilizzando l’API Java {#update-resources-using-the-java-api}
 
@@ -666,7 +666,7 @@ Aggiornare una risorsa utilizzando l’API del servizio Archivio (Java):
 
 [Aggiornamento delle risorse](aem-forms-repository.md#updating-resources)
 
-[Quick Start (modalità SOAP): aggiornamento di una risorsa tramite l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[Guida rapida (modalità SOAP): aggiornamento di una risorsa tramite l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -781,7 +781,7 @@ Scorrere l&#39;elenco di risorse restituito ed estrarre le informazioni per l&#3
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Cercare risorse utilizzando l’API Java {#search-for-resources-using-the-java-api}
 
@@ -860,7 +860,7 @@ Puoi specificare le relazioni tra le risorse nell’archivio. Esistono tre tipi 
 * **Appartenenza (file system)**: una relazione in cui una risorsa si trova all&#39;interno di una determinata cartella.
 * **Personalizzato**: relazione specificata tra le risorse. Ad esempio, se una risorsa è stata dichiarata obsoleta e un’altra risorsa è stata introdotta nell’archivio, puoi specificare una tua relazione di sostituzione.
 
-Puoi creare relazioni personalizzate. Se, ad esempio, si memorizza un file HTML nel repository e viene utilizzata un&#39;immagine, è possibile specificare una relazione personalizzata per correlare il file HTML con l&#39;immagine (in genere solo i file XML vengono associati alle immagini mediante una relazione di dipendenza definita nel repository). Un altro esempio di relazione personalizzata potrebbe essere la creazione di una vista diversa dell’archivio con una struttura a grafo ciclica anziché ad albero. Puoi definire un grafico circolare insieme a un visualizzatore per analizzare tali relazioni. Infine, puoi indicare che una risorsa sostituisce un’altra anche se le due risorse sono completamente diverse. In tal caso, puoi definire un tipo di relazione al di fuori dell’intervallo riservato e creare una relazione tra queste due risorse. L&#39;applicazione è l&#39;unico client in grado di rilevare ed elaborare la relazione e può essere utilizzata per eseguire ricerche su tale relazione.
+Puoi creare relazioni personalizzate. Se, ad esempio, si memorizza un file HTML nel repository e viene utilizzata un&#39;immagine, è possibile specificare una relazione personalizzata per correlare il file HTML all&#39;immagine (in genere solo i file XML vengono associati alle immagini mediante una relazione di dipendenza definita nel repository). Un altro esempio di relazione personalizzata potrebbe essere la creazione di una vista diversa dell’archivio con una struttura a grafo ciclica anziché ad albero. Puoi definire un grafico circolare insieme a un visualizzatore per analizzare tali relazioni. Infine, puoi indicare che una risorsa sostituisce un’altra anche se le due risorse sono completamente diverse. In tal caso, puoi definire un tipo di relazione al di fuori dell’intervallo riservato e creare una relazione tra queste due risorse. L&#39;applicazione è l&#39;unico client in grado di rilevare ed elaborare la relazione e può essere utilizzata per eseguire ricerche su tale relazione.
 
 Puoi specificare in modo programmatico le relazioni tra le risorse utilizzando l’API Java o l’API del servizio web Repository.
 
@@ -903,7 +903,7 @@ Richiama il metodo del servizio Archivio per creare e specificare il tipo di rel
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Creare risorse di relazione tramite API Java {#create-relationship-resources-using-the-java-api}
 
@@ -1052,7 +1052,7 @@ Richiama il metodo del servizio Archivio per sbloccare la risorsa, specificando 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Bloccare le risorse utilizzando l’API Java {#lock-resources-using-the-java-api}
 
@@ -1094,7 +1094,7 @@ Blocca le risorse utilizzando l’API del servizio Repository (Java):
 
 [Blocco delle risorse](aem-forms-repository.md#locking-resources)
 
-[Quick Start (modalità SOAP): blocco di una risorsa tramite l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[Guida rapida (modalità SOAP): blocco di una risorsa tramite l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1143,7 +1143,7 @@ Blocca le risorse utilizzando l’API del servizio Archivio (servizio web):
 
 ## Eliminazione delle risorse {#deleting-resources}
 
-Puoi eliminare programmaticamente le risorse da una determinata posizione nell’archivio utilizzando il servizio Archivio Java API (SOAP).
+Puoi eliminare in modo programmatico le risorse da una determinata posizione nell’archivio utilizzando il servizio Repository Java API (SOAP).
 
 Quando si elimina una risorsa, l&#39;eliminazione è in genere permanente, anche se in alcuni casi gli archivi ECM possono memorizzare le versioni della risorsa in base ai rispettivi meccanismi di cronologia. Pertanto, durante l’eliminazione di una risorsa, è importante assicurarsi di non averne più bisogno. I motivi comuni per l’eliminazione di una risorsa includono la necessità di aumentare lo spazio disponibile nel database. È possibile eliminare una versione di una risorsa, ma in tal caso è necessario specificare l&#39;identificatore della risorsa e non il relativo identificatore logico (LID) o percorso. Se elimini una cartella, tutti gli elementi in essa contenuti, incluse le sottocartelle e le risorse, verranno eliminati automaticamente.
 
@@ -1194,9 +1194,9 @@ Richiama il metodo del servizio Archivio per eliminare la risorsa, specificando 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Eliminare le risorse utilizzando Java API (SOAP) {#delete-resources-using-the-java-api-soap}
+### Eliminare le risorse utilizzando API Java (SOAP) {#delete-resources-using-the-java-api-soap}
 
 Eliminare una risorsa utilizzando l’API dell’archivio (Java):
 

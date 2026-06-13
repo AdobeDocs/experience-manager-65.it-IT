@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 0%
+source-wordcount: '722'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Disassemblare un documento PDF utilizzando l&#39;API del servizio Assembler (ser
    >
    >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `AssemblerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
@@ -38,7 +38,7 @@ Disassemblare un documento PDF utilizzando l&#39;API del servizio Assembler (ser
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -81,7 +81,7 @@ Disassemblare un documento PDF utilizzando l&#39;API del servizio Assembler (ser
 
 1. Salvare i documenti PDF disassemblati.
 
-   Per ottenere i documenti di PDF appena creati, effettuare le seguenti operazioni:
+   Per ottenere i documenti PDF appena creati, effettuare le seguenti operazioni:
 
    * Accedere al campo `documents` dell&#39;oggetto `AssemblerResult`, che è un oggetto `Map` contenente i documenti PDF disassemblati.
    * Scorrere l&#39;oggetto `Map` per ottenere ogni documento risultante. Quindi, esegui il cast di `value` del membro dell&#39;array in un `BLOB`.

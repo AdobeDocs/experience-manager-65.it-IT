@@ -1,6 +1,6 @@
 ---
 title: Assemblaggio di documenti PDF crittografati
-description: Assembla documenti PDF crittografati utilizzando l’API Java e l’API del servizio web.
+description: Assembla documenti PDF crittografati utilizzando l’API Java e l’API dei servizi web.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 0%
+source-wordcount: '1676'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-È possibile crittografare un documento PDF con una password utilizzando il servizio Assembler. Dopo aver crittografato un documento PDF PDF con una password, l’utente deve specificare la password per visualizzarlo in Adobe Reader o Acrobat. Per crittografare un documento PDF con una password, il documento DDX deve contenere i valori degli elementi di crittografia necessari per crittografare un documento PDF.
+È possibile crittografare un documento PDF con una password utilizzando il servizio Assembler. Dopo aver crittografato un documento PDF con una password, l&#39;utente deve specificare la password per visualizzare il documento PDF in Adobe Reader o Acrobat. Per crittografare un documento PDF con una password, il documento DDX deve contenere i valori degli elementi di crittografia necessari per crittografare un documento PDF.
 
 Ai fini della presente discussione, si supponga che venga utilizzato il seguente documento DDX.
 
@@ -37,11 +37,11 @@ Ai fini della presente discussione, si supponga che venga utilizzato il seguente
  </DDX>
 ```
 
-All&#39;interno di questo documento DDX, si noti che all&#39;attributo di origine viene assegnato il valore `inDoc`. Nelle situazioni in cui viene passato al servizio Assembler un solo documento di input PDF e viene restituito un documento di input PDF e viene richiamata l&#39;operazione `invokeOneDocument`, assegnare il valore `inDoc` all&#39;attributo di origine PDF. Quando si richiama l&#39;operazione `invokeOneDocument`, il valore `inDoc` è una chiave predefinita che deve essere specificata nel documento DDX.
+All&#39;interno di questo documento DDX, si noti che all&#39;attributo di origine viene assegnato il valore `inDoc`. Nelle situazioni in cui viene passato un solo documento PDF di input al servizio Assembler e viene restituito un documento PDF e si richiama l&#39;operazione `invokeOneDocument`, assegnare il valore `inDoc` all&#39;attributo di origine di PDF. Quando si richiama l&#39;operazione `invokeOneDocument`, il valore `inDoc` è una chiave predefinita che deve essere specificata nel documento DDX.
 
-Al contrario, quando si trasmettono due o più documenti di input PDF al servizio Assembler, è possibile richiamare l&#39;operazione `invokeDDX`. In questa situazione, assegnare il nome file del documento PDF di input all&#39;attributo `source`.
+Al contrario, quando si trasmettono due o più documenti PDF di input al servizio Assembler, è possibile richiamare l&#39;operazione `invokeDDX`. In questa situazione, assegnare il nome file del documento PDF di input all&#39;attributo `source`.
 
-Per crittografare un documento PDF con una password, non è necessario che il servizio Crittografia faccia parte dell&#39;installazione dei moduli AEM. Vedere [Crittografia e decrittografia dei documenti di PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
+Per crittografare un documento PDF con una password non è necessario che il servizio Crittografia faccia parte dell&#39;installazione di AEM Forms. Vedere [Crittografia e decrittografia dei documenti di PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
 
 >[!NOTE]
 >
@@ -56,9 +56,9 @@ Per crittografare un documento PDF con una password, non è necessario che il se
 Per assemblare un documento PDF crittografato, effettuare le seguenti operazioni:
 
 1. Includi file di progetto.
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 1. Fare riferimento a un documento DDX esistente.
-1. Fai riferimento a un documento di PDF non protetto.
+1. Fare riferimento a un documento PDF non protetto.
 1. Impostare le opzioni di runtime.
 1. Crittografare il documento.
 1. Salvare il documento PDF crittografato.
@@ -85,9 +85,9 @@ Prima di poter eseguire un&#39;operazione Assembler a livello di programmazione,
 
 Per assemblare un documento PDF è necessario fare riferimento a un documento DDX. Si consideri ad esempio il documento DDX introdotto in questa sezione. Per crittografare un documento PDF, il documento DDX deve contenere l&#39;elemento `PasswordEncryptionProfile`.
 
-**Riferimento a un documento di PDF non protetto**
+**Riferimento a un documento PDF non protetto**
 
-È necessario fare riferimento a un documento di PDF non protetto e passarlo al servizio Assembler per crittografarlo. Se si fa riferimento a un documento PDF già crittografato, viene generata un&#39;eccezione.
+È necessario fare riferimento a un documento PDF non protetto e passarlo al servizio Assembler per crittografarlo. Se si fa riferimento a un documento PDF già crittografato, viene generata un&#39;eccezione.
 
 **Impostare le opzioni di runtime**
 
@@ -95,9 +95,9 @@ Per assemblare un documento PDF è necessario fare riferimento a un documento DD
 
 **Crittografa il documento**
 
-Dopo aver creato il client del servizio Assembler, fare riferimento al documento DDX che contiene informazioni di crittografia, fare riferimento a un documento di PDF non protetto e impostare le opzioni di runtime, è possibile richiamare l&#39;operazione `invokeOneDocument`. Poiché al servizio Assembler viene passato un solo documento di input PDF (e viene restituito un documento), è possibile utilizzare l&#39;operazione `invokeOneDocument` anziché l&#39;operazione `invokeDDX`.
+Dopo aver creato il client del servizio Assembler, aver fatto riferimento al documento DDX che contiene informazioni di crittografia, aver fatto riferimento a un documento PDF non protetto e aver impostato le opzioni di runtime, è possibile richiamare l&#39;operazione `invokeOneDocument`. Poiché al servizio Assembler viene passato un solo documento PDF di input (e viene restituito un documento), è possibile utilizzare l&#39;operazione `invokeOneDocument` anziché l&#39;operazione `invokeDDX`.
 
-**Salvare il documento crittografato di PDF**
+**Salvare il documento PDF crittografato**
 
 Se al servizio Assembler viene passato un solo documento PDF, il servizio Assembler restituisce un singolo documento invece di un oggetto insieme. In altre parole, quando si richiama l&#39;operazione `invokeOneDocument`, viene restituito un singolo documento. Poiché il documento DDX a cui si fa riferimento in questa sezione contiene informazioni di crittografia, il servizio Assembler restituisce un documento PDF crittografato con una password.
 
@@ -125,7 +125,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
    * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento DDX utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del file DDX.
    * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
-1. Fai riferimento a un documento di PDF non protetto.
+1. Fare riferimento a un documento PDF non protetto.
 
    * Creare un oggetto `java.io.FileInputStream` utilizzando il relativo costruttore e passando il percorso di un documento PDF non protetto.
    * Creare un oggetto `com.adobe.idp.Document` e passare l&#39;oggetto `java.io.FileInputStream` che contiene il documento PDF. L&#39;oggetto `com.adobe.idp.Document` è passato al metodo `invokeOneDocument`.
@@ -143,7 +143,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
    * Oggetto `com.adobe.idp.Document` contenente il documento PDF non protetto.
    * Oggetto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` che specifica le opzioni di runtime, inclusi il tipo di carattere predefinito e il livello del registro dei processi.
 
-   Il metodo `invokeOneDocument` restituisce un oggetto `com.adobe.idp.Document` contenente un documento PDF crittografato con password.
+   Il metodo `invokeOneDocument` restituisce un oggetto `com.adobe.idp.Document` che contiene un documento PDF crittografato con password.
 
 1. Salvare il documento PDF crittografato.
 
@@ -172,7 +172,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -185,7 +185,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
    * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
-1. Fai riferimento a un documento di PDF non protetto.
+1. Fare riferimento a un documento PDF non protetto.
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare il documento PDF di input. Questo oggetto `BLOB` è passato a `invokeOneDocument` come argomento.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF di input e la modalità di apertura del file in.
@@ -206,7 +206,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
    * Oggetto `BLOB` che rappresenta il documento PDF non protetto
    * Oggetto `AssemblerOptionSpec` che specifica le opzioni di runtime
 
-   Il metodo `invokeOneDocument` restituisce un oggetto `BLOB` contenente un documento PDF crittografato.
+   Il metodo `invokeOneDocument` restituisce un oggetto `BLOB` che contiene un documento PDF crittografato.
 
 1. Salvare il documento PDF crittografato.
 
