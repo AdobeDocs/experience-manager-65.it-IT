@@ -184,7 +184,7 @@ Affinché l’e-mail possa essere introdotta nell’archivio, è necessario conf
 
   *(Obbligatorio)* Il server della posta in uscita. Ad esempio, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importa nel percorso]**&amp;ast;
+* **[!UICONTROL Importa nel percorso]**&ast;
 
   *(Obbligatorio)* impostato su `/content/usergenerated/mailFolder/postEmails`
 sfogliando la cartella `postEmails`e selezionando **OK**.

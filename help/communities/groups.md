@@ -22,7 +22,7 @@ ht-degree: 1%
 
 La console Gruppi consente di creare gruppi community quando la [struttura modello](/help/communities/sites-console.md#step1) di un sito community include la funzione [gruppi](/help/communities/functions.md#groups-function).
 
-* AEM Communities supporta la nidificazione di gruppi all’interno di altri gruppi. La nidificazione dei gruppi è possibile quando la struttura [ del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione dei gruppi.
+* AEM Communities supporta la nidificazione di gruppi all’interno di altri gruppi. La nidificazione dei gruppi è possibile quando la struttura [&#x200B; del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione dei gruppi.
 * Solo per l’ambiente di authoring, è disponibile una procedura guidata per la creazione di gruppi simile alla procedura guidata per la creazione di siti.
 * Se i membri possono o meno creare gruppi nell&#39;ambiente di pubblicazione, è possibile configurarlo quando si aggiunge una funzione Gruppi a una struttura del sito o del gruppo di community.
 
