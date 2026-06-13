@@ -324,7 +324,7 @@ Per evitare l&#39;uso improprio del DoS, è possibile effettuare le seguenti ope
 >
 >Questa mitigazione deve essere eseguita solo sugli ambienti AEM che non utilizzano Forms.
 
-Poiché AEM non fornisce indici predefiniti per `FormChooserServlet`, l&#39;utilizzo di selettori di moduli nelle query può attivare un costoso attraversamento dell&#39;archivio, in genere bloccando l&#39;istanza di AEM. I selettori di moduli possono essere rilevati dalla presenza della stringa **&amp;ast;.form.&amp;ast;** nelle query.
+Poiché AEM non fornisce indici predefiniti per `FormChooserServlet`, l&#39;utilizzo di selettori di moduli nelle query può attivare un costoso attraversamento dell&#39;archivio, in genere bloccando l&#39;istanza di AEM. I selettori di moduli possono essere rilevati dalla presenza della stringa **&ast;.form.&ast;** nelle query.
 
 Per attenuare questo problema, puoi effettuare le seguenti operazioni:
 

@@ -45,7 +45,7 @@ Si applicano i seguenti vincoli:
 
 * La **porta del server SMTP** deve essere 25 o superiore.
 
-* Il nome host del server SMTP **** non può essere vuoto.
+* Il nome host del server SMTP **&#x200B;**&#x200B;non può essere vuoto.
 * L&#39;indirizzo **&quot;Da&quot;** non può essere vuoto ed è necessario modificare il valore predefinito &quot;<noreply@day.com>&quot;.
 
 Per aiutarti a eseguire il debug di un problema relativo al servizio di posta **Day CQ**, puoi visualizzare i registri del servizio:
