@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 0%
+source-wordcount: '1188'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [Gestione dei metadati del modulo](../../forms/using/manage-form-metadata.md)
 
-Conoscenza pratica di HTML e CSS
+Conoscenza operativa di HTML e CSS
 
 ## Panoramica {#overview}
 
@@ -34,7 +34,7 @@ Effettua le seguenti operazioni per creare un modello personalizzato per vari co
 
 ## Creazione di un modello personalizzato {#creating-a-nbsp-custom-template}
 
-1. Creare un nodo sling:Folder in /apps
+1. Crea un nodo sling:Folder in /apps
 
    Aggiungi una proprietà &quot;fpContentType&quot;. Specifica i valori appropriati per la proprietà a seconda del componente per il quale stai definendo il modello personalizzato.
 
@@ -50,17 +50,17 @@ Effettua le seguenti operazioni per creare un modello personalizzato per vari co
 
    >[!NOTE]
    >
-   >Il titolo può essere diverso dal nome del nodo sling:Folder creato.
+   >Il titolo può essere diverso dal nome del nodo di sling:Folder creato.
 
    L’immagine seguente illustra la configurazione del componente Ricerca ed elenco.
-   ![Creazione di una cartella sling:Folder](assets/1.png)
+   ![Creazione di un sling:Folder](assets/1.png)
 
 1. Crea un file template.html in questa cartella affinché possa fungere da modello personalizzato.
 1. Scrivi il modello personalizzato e utilizza i metadati personalizzati come descritto di seguito.
 
 ## Esempio di lavoro {#working-example}
 
-Di seguito è riportato un esempio di implementazione di un modello personalizzato in cui Forms Portal acquisisce un layout personalizzato per la scheda Geometrixx per il componente Ricerca ed elenco.
+Di seguito è riportato un esempio di implementazione di un modello personalizzato in cui Forms Portal acquisisce un layout personalizzato per la Gov Card di Geometrixx per il componente Search &amp; Lister.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -88,11 +88,11 @@ Forms Portal fornisce una sintassi per i segnaposto per visualizzare metadati pe
 
 Per includere una voce ripetibile, configurare il valore dell&#39;attributo **dati-ripetibili** su **true**.
 
-*Nell&#39;esempio discusso, due elementi Div sono presenti nella parte superiore del modello personalizzato. La prima, con classe CSS &quot;__FP_boxes-container&quot;, funziona come elemento contenitore per i moduli elencati. La seconda, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. L&#39;attributo **data-Repeable**&#x200B;presente nell&#39;elemento Div ha il valore **true**.*
+*Nell&#39;esempio discusso, due elementi Div sono presenti nella parte superiore del modello personalizzato. La prima, con classe CSS &quot;__FP_boxes-container&quot;, funziona come elemento contenitore per i moduli elencati. La seconda, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. L&#39;attributo **data-Repeable**presente nell&#39;elemento Div ha il valore **true**.*
 
 Ogni segnaposto dispone di un set di metadati predefinito esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere la proprietà **${metadata_prop}** nella posizione desiderata.
 
-*Nell&#39;esempio, la proprietà dei metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;e **path**&#x200B;nel modo prescritto.*
+*Nell&#39;esempio, la proprietà dei metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**e **path**nel modo prescritto.*
 
 ## Metadati pronti all’uso {#out-of-the-box-metadata}
 
@@ -104,10 +104,10 @@ Diversi componenti di Forms Portal forniscono set esclusivi di metadati predefin
 * **nome**: nome del modulo (per lo più è lo stesso del titolo)
 * **descrizione**: descrizione del modulo
 * **formUrl**: URL per il rendering del modulo come HTML
-* **pdfUrl**: URL per il rendering del modulo come PDF
+* **pdfUrl**: URL per eseguire il rendering del modulo come PDF
 * **assetType**: tipo di risorsa. I valori validi includono **Modulo**, **Modulo PDF**, **Modulo di stampa** e **Modulo adattivo**
 
-* **htmlStyle**&amp; **pdfStyle**: stile di visualizzazione rispettivamente per le icone HTML e PDF utilizzate per il rendering. I valori validi sono &quot;**__FP_display_none**&quot; o vuoti.
+* **htmlStyle**&amp; **pdfStyle**: stile di visualizzazione rispettivamente per le icone di HTML e PDF utilizzate per il rendering. I valori validi sono &quot;**__FP_display_none**&quot; o vuoti.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Supporto per la localizzazione, l&#39;ordinamento e l&#39;utilizzo delle proprie
 1. **Supporto per l&#39;ordinamento**: fare clic sull&#39;elemento HTML per ordinare i risultati della ricerca. Per implementare l’ordinamento in un layout di tabella, aggiungi l’attributo &quot;data-sortKey&quot; nell’intestazione della tabella specifica. Inoltre, aggiungi il relativo valore come metadati per i quali desideri ordinare.
 Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazione a griglia, il valore dell’intestazione &quot;data-sortKey&quot; è &quot;title&quot;. Fai clic sull’intestazione per ordinare i valori in una particolare colonna.
 
-1. **Utilizzo delle proprietà di configurazione**: il componente Search &amp; Lister dispone di diverse configurazioni che è possibile utilizzare nell&#39;interfaccia utente. Per visualizzare ad esempio il testo della descrizione comandi HTML salvato nella finestra di dialogo di modifica, utilizzare l&#39;attributo `${config-htmlLinkText}`. **Analogamente, per il testo della descrizione comandi di PDF, utilizzare l&#39;attributo** `${config-pdfLinkText}`.
+1. **Utilizzo delle proprietà di configurazione**: il componente Search &amp; Lister dispone di diverse configurazioni che è possibile utilizzare nell&#39;interfaccia utente. Per visualizzare ad esempio il testo della descrizione comando di HTML salvato nella finestra di dialogo per modifica, utilizzare l&#39;attributo `${config-htmlLinkText}`. **Analogamente, per il testo della descrizione comandi di PDF, utilizzare l&#39;attributo** `${config-pdfLinkText}`.
 
 ### Componente collegamento {#link-component}
 
@@ -134,7 +134,7 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 
 ### Componente Bozze e invii {#drafts-amp-submissions-component}
 
-* **Percorso**: percorso del nodo metadati bozze/invii. Utilizzalo con l’estensione .HTML come URL per aprire una bozza o inviare.
+* **Percorso**: percorso del nodo metadati bozze/invii. Utilizzala con l’estensione .HTML come URL per aprire una bozza o inviare.
 * **contextPath**: percorso contestuale dell&#39;istanza AEM
 * **primaLettera**: prima lettera (maiuscola) del titolo del modulo adattivo, salvata come bozza o inviata.
 * **formName**: titolo del modulo adattivo, salvato come bozza o inviato.
@@ -158,7 +158,7 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 
 **A**. Elemento contenitore
 
-Metadati &quot;path&quot; di **B.** con una gerarchia fissa per ottenere la miniatura archiviata per ciascun modulo.
+**B.** Metadati &quot;path&quot; con una gerarchia fissa per ottenere la miniatura memorizzata per ciascun modulo.
 
 Attributo **C.** Data-Repeable utilizzato per la sezione del modello per ogni modulo
 
@@ -173,7 +173,7 @@ Attributo **C.** Data-Repeable utilizzato per la sezione del modello per ogni mo
 1. Non utilizzare virgolette singole (&#39;) in alcun modello personalizzato.
 1. Per i metadati personalizzati, memorizzare questa proprietà solo nel nodo **jcr:content/metadata**. Se viene archiviato in un&#39;altra posizione, Forms Portal non può visualizzare i metadati.
 1. Assicurati che il nome di eventuali metadati personalizzati o esistenti non includa i due punti ( : ). In tal caso, non è possibile visualizzarlo nell’interfaccia utente.
-1. **dati-ripetibili** non ha alcun significato per un componente **Link**. L’Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
+1. **dati-ripetibili** non ha alcun significato per un componente **Link**. Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
 
 ## Articoli correlati
 

@@ -1,6 +1,6 @@
 ---
-title: Introduzione alla personalizzazione dell’area di lavoro dei moduli AEM
-description: Introduzione rapida, con informazioni concettuali e tecniche, per personalizzare lo spazio di lavoro LiveCycle AEM Forms per la gestione dei processi.
+title: Introduzione alla personalizzazione dell’area di lavoro di AEM Forms
+description: Introduzione rapida, con informazioni concettuali e tecniche, per personalizzare l'area di lavoro AEM Forms LiveCycle per la gestione dei processi.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,14 +12,14 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 0%
+source-wordcount: '1790'
+ht-degree: 1%
 
 ---
 
-# Introduzione alla personalizzazione dell’area di lavoro dei moduli AEM{#introduction-to-customizing-aem-form-workspace}
+# Introduzione alla personalizzazione dell’area di lavoro di AEM Forms{#introduction-to-customizing-aem-form-workspace}
 
-L’area di lavoro dei moduli AEM offre funzionalità per modificare la semantica delle presentazioni e la funzionalità della relativa interfaccia. Di seguito sono descritti i tipi di personalizzazioni per modificare lo stile, il layout, la formattazione, il branding e le funzionalità di base.
+AEM form workspace offre funzionalità che consentono di modificare la semantica delle presentazioni e la funzionalità dell&#39;interfaccia. Di seguito sono descritti i tipi di personalizzazioni per modificare lo stile, il layout, la formattazione, il branding e le funzionalità di base.
 
 ![cu_custom_workspace_example](assets/cu_customized_workspace_example.png)
 
@@ -145,9 +145,9 @@ Per iniziare a personalizzare le immagini nell&#39;area di lavoro di AEM Forms, 
 
 #### Modello HTML {#html-template}
 
-I modelli di HTML consentono di definire l&#39;aspetto e il layout dell&#39;interfaccia utente del workspace. Aggiornando i modelli di HTML predefiniti è possibile personalizzare l&#39;interfaccia utente predefinita del layout.
+I modelli di HTML consentono di definire l&#39;aspetto e il layout dell&#39;interfaccia utente del workspace. Aggiornando i modelli predefiniti di HTML è possibile personalizzare l&#39;interfaccia utente predefinita del layout.
 
-I passaggi di primo livello per le personalizzazioni del modello di HTML sono:
+I passaggi di primo livello per le personalizzazioni del modello HTML sono:
 
 * In una cartella creata dall&#39;utente, creare copie dei file predefiniti richiesti.
 * Aggiungere nuovi modelli nella cartella definita dall&#39;utente.
@@ -194,7 +194,7 @@ Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pac
 
 * client-html:
 
-   * assembly: contiene il file zip.xml utilizzato dallo script per la creazione dell’SDK di AEM Forms Workspace.
+   * assembly: contiene il file zip.xml utilizzato dallo script per la creazione di AEM Forms workspace SDK.
    * src/main/webapp -
 
       * css: contiene fogli di stile per l’area di lavoro di AEM Forms.
@@ -210,7 +210,7 @@ Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pac
 
             * inizializzatore: contiene il file initializer.js utilizzato per inizializzare le viste e i modelli della struttura principale utilizzati nell’area di lavoro di AEM Forms.
             * modelli: contiene i modelli di struttura di tutti i componenti presenti nell’area di lavoro di AEM Forms.
-            * route: contiene file JavaScript e HTML che caricano il processo iniziale, le attività, il tracciamento e le preferenze nell’area di lavoro AEM Forms.
+            * route: contiene file JavaScript e file HTML che caricano il processo iniziale, le attività, il tracciamento e le preferenze nell’area di lavoro AEM Forms.
             * services: contiene service.js utilizzato nell’area di lavoro di AEM Forms. Tutte le chiamate al server vengono effettuate tramite service.js.
             * modelli: contiene tutti i modelli, ovvero i file HTML di tutte le visualizzazioni nell’area di lavoro di AEM Forms.
             * util: contiene tutti i file di utilità (javascript) utilizzati nell’area di lavoro di AEM Forms.
@@ -219,7 +219,7 @@ Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pac
          * main.js
          * router.js
 
-      * libs/ws: pdf.html e pluginPing.pdf vengono utilizzati per caricare i PDF forms nell’area di lavoro di AEM Forms e WSNextAdapter.swf viene utilizzato per caricare i moduli e le guide di SWF nell’area di lavoro di AEM Forms.
+      * libs/ws: pdf.html e pluginPing.pdf vengono utilizzati per caricare PDF forms nell’area di lavoro di AEM Forms e WSNextAdapter.swf viene utilizzato per caricare i moduli e le guide di SWF nell’area di lavoro di AEM Forms.
       * lingue:
 
          * de-DE - Contiene translation.json per il tedesco.
@@ -352,7 +352,7 @@ mvn clean -P Dev install su pkg client
 
       * initializer: contiene initializer.js e modelcontrollerpath.js.
       * modelli: contiene modelli di tutti i componenti nell’area di lavoro di AEM Forms.
-      * route: contiene file JavaScript e HTML che caricano il processo iniziale, le attività, il tracciamento e le preferenze nell’area di lavoro AEM Forms.
+      * route: contiene file JavaScript e file HTML che caricano il processo iniziale, le attività, il tracciamento e le preferenze nell’area di lavoro AEM Forms.
       * services: contiene service.js utilizzato nell’area di lavoro di AEM Forms.
       * modelli: contiene tutti i modelli, ovvero i file HTML di tutti i componenti nell’area di lavoro di AEM Forms.
       * util: contiene tutti i file di utilità (JavaScript) utilizzati nell’area di lavoro di AEM Forms.

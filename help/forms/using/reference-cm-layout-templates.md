@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 0%
+source-wordcount: '476'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 In Gestione corrispondenza, un modello di lettera contiene campi modulo tipici, funzioni di layout come intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto.
 
-Gestione corrispondenza fornisce modelli di lettere nel pacchetto del componente aggiuntivo [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). Puoi personalizzare i modelli in Designer in base alle tue esigenze di branding e business. Il pacchetto include i seguenti modelli:
+Gestione corrispondenza fornisce modelli di lettere nel pacchetto del componente aggiuntivo [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Puoi personalizzare i modelli in Designer in base alle tue esigenze di branding e business. Il pacchetto include i seguenti modelli:
 
 * Classico
 * Classic Semplice
@@ -98,4 +98,4 @@ Il modello Visual Top - Classic ha un’intestazione nella parte superiore della
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-Anteprima PDF di una lettera creata utilizzando il modello Visual Top - Classic
+Anteprima PDF di una lettera creata con il modello Visual Top - Classic

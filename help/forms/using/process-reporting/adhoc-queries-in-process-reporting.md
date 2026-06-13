@@ -1,5 +1,5 @@
 ---
-title: Query ad hoc in Report di processo
+title: Query ad hoc in Rapporti sui processi
 description: Creazione di query personalizzate per la ricerca di AEM Forms nei dettagli dei processi e delle attività di JEE in Process Reporting
 content-type: reference
 topic-tags: process-reporting
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
 
-# Query ad hoc in Report di processo{#ad-hoc-queries-in-process-reporting}
+# Query ad hoc in Rapporti sui processi{#ad-hoc-queries-in-process-reporting}
 
 ## Query ad hoc in Process Reporting {#ad-hoc-queries-in-process-reporting-1}
 
@@ -149,7 +149,7 @@ Utilizza le opzioni del pannello **Filtri personali** per **aggiungere** ![lc_pr
    ![risultato_ricerca_attività](assets/task_search_result.png)
 
 1. Fai clic sul pulsante della barra ![lc_pr_rail_button](assets/lc_pr_rail_button.png) in alto a sinistra per comprimere il riquadro **I miei filtri** ed espandere lo spazio disponibile per il pannello **Report**.
-1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report &#x200B;** per eseguire operazioni sui risultati della query.
+1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report **per eseguire operazioni sui risultati della query.
 
    * **Aggiorna**: aggiorna il report con i dati più recenti presenti nell&#39;archivio
 

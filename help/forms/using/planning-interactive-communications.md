@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: pianificare la comunicazione interattiva'
+title: 'Esercitazione: pianificare la comunicazione interattiva'
 description: Pianificare l'anatomia per la comunicazione interattiva
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 2%
+source-wordcount: '658'
+ht-degree: 4%
 
 ---
 
-# Tutorial: pianificare la comunicazione interattiva {#tutorial-plan-the-interactive-communication}
+# Esercitazione: pianificare la comunicazione interattiva {#tutorial-plan-the-interactive-communication}
 
 Pianificare l&#39;anatomia per la comunicazione interattiva
 
@@ -73,7 +73,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
      <li>Data di fatturazione</li>
      <li>Periodo di fatturazione</li>
     </ul> <p> </p> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Dettagli cliente</td>
@@ -92,7 +92,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
      <li>Codice stato</li>
      <li>Numero di connessioni</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Riepilogo fatture</td>
@@ -106,7 +106,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
      <li>Importo dovuto</li>
      <li>Data di scadenza</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Riepilogo delle spese</td>
@@ -124,7 +124,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
      <li>TOTALE DA PAGARE (campo calcolato spese d’uso)</li>
     </ul> <p>Tabella - fatture</p> </td>
    <td>Nessun campo</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Chiamate dettagliate - In uscita</td>
@@ -138,20 +138,20 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
     </ul> </td>
    <td><p>Tutti i valori</p> <p>Tabella - chiamate</p> </td>
    <td>Nessun campo</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Paga ora</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Servizi a valore aggiunto</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

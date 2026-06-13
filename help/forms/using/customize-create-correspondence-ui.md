@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 0%
+source-wordcount: '1098'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Icona personalizzata nell’interfaccia utente per la creazione di corrispondenz
 
 Per impostare un&#39;immagine del logo a scelta, effettuare le seguenti operazioni:
 
-1. Creare la struttura di cartelle [&#x200B; appropriata in CRX](#creatingfolderstructure).
+1. Creare la struttura di cartelle [ appropriata in CRX](#creatingfolderstructure).
 1. [Carica il nuovo file del logo](#uploadlogo) nella cartella creata in CRX.
 
 1. [Configura CSS](#createcss) su CRX per fare riferimento al nuovo logo.
@@ -48,7 +48,7 @@ Ramo `/apps` (struttura cartelle):
 
 * Garantisce la sicurezza dei file in caso di aggiornamento del sistema. In caso di aggiornamento, feature pack o correzione rapida, il ramo `/libs` viene aggiornato e le modifiche nel ramo `/libs` vengono sovrascritte.
 * Consente di non disturbare il sistema/ramo attuale, che è possibile risolvere per errore se si utilizzano i percorsi predefiniti per la memorizzazione dei file personalizzati.
-* Consente alle risorse di ottenere una priorità più elevata quando l’AEM cerca le risorse. L&#39;AEM è configurato per cercare prima il ramo `/apps` e poi il ramo `/libs` per trovare una risorsa. Questo meccanismo significa che il sistema utilizza la sovrapposizione (e le personalizzazioni qui definite).
+* Aiuta le risorse a ottenere una priorità più elevata quando AEM cerca le risorse. AEM è configurato per eseguire prima la ricerca nel ramo `/apps` e quindi nel ramo `/libs` per trovare una risorsa. Questo meccanismo significa che il sistema utilizza la sovrapposizione (e le personalizzazioni qui definite).
 
 Per creare la struttura di cartelle richiesta nel ramo `/apps`, attenersi alla procedura descritta di seguito.
 
@@ -83,7 +83,7 @@ Per creare la struttura di cartelle richiesta nel ramo `/apps`, attenersi alla p
       >    
       >
 
-   1. Fare clic su **OK**. La cartella css viene creata nel percorso specificato.
+   1. Fai clic su **OK**. La cartella css viene creata nel percorso specificato.
 
 1. Nella cartella delle app, creare una cartella denominata `imgs` con percorso/struttura simile alla cartella `imgs` (nella cartella ccrui).
 
@@ -106,7 +106,7 @@ Per creare la struttura di cartelle richiesta nel ramo `/apps`, attenersi alla p
 
 ## Carica il nuovo logo in CRX {#uploadlogo}
 
-Carica il file del logo personalizzato in CRX. Il rendering del logo è disciplinato dalle regole standard di HTML. I formati di file di immagine supportati dipendono dal browser utilizzato per accedere ad AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consulta la documentazione specifica per il browser sui formati di immagine supportati.
+Carica il file del logo personalizzato in CRX. Le regole standard di HTML disciplinano il rendering del logo. I formati di file di immagine supportati dipendono dal browser utilizzato per accedere ad AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consulta la documentazione specifica per il browser sui formati di immagine supportati.
 
 * Le dimensioni predefinite dell&#39;immagine del logo sono 48 px &#42; 48 px. Assicurarsi che l&#39;immagine sia simile a questa dimensione o maggiore di 48 px &#42; 48 px.
 * Se l’altezza dell’immagine del logo è superiore a 50 px, l’interfaccia utente per la creazione di corrispondenza ridimensiona l’immagine a un’altezza massima di 50 px, in quanto si tratta dell’altezza dell’intestazione. Durante il ridimensionamento dell’immagine, l’interfaccia utente Crea corrispondenza mantiene le proporzioni dell’immagine.
@@ -114,7 +114,7 @@ Carica il file del logo personalizzato in CRX. Il rendering del logo è discipli
 
 Per caricare il file del logo personalizzato in CRX, procedere come segue:
 
-1. Vai a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
+1. Passa a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
 1. In CRXDE, fare clic con il pulsante destro del mouse sulla cartella **imgs** nel percorso seguente e selezionare **Crea > Crea file**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -127,11 +127,11 @@ Per caricare il file del logo personalizzato in CRX, procedere come segue:
 
 1. Fare clic su **Salva tutto**.
 
-   Nel nuovo file creato (qui CustomLogo.png), viene visualizzata la proprietà jcr:content.
+   Nel nuovo file creato (in questo caso CustomLogo.png) viene visualizzata la proprietà jcr:content.
 
 1. Fare clic su jcr:content nella struttura di cartelle.
 
-   jcr:vengono visualizzate le proprietà del contenuto.
+   vengono visualizzate le proprietà di jcr:content.
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
@@ -139,9 +139,9 @@ Per caricare il file del logo personalizzato in CRX, procedere come segue:
 
    Viene visualizzata la finestra di dialogo Modifica jcr:data.
 
-   Fare clic sulla cartella newlogo.png, quindi fare doppio clic su jcr:content (opzione dim) e impostare il tipo nt:resource. Se non è presente, crea una proprietà denominata jcr:content.
+   Fare clic sulla cartella newlogo.png, quindi fare doppio clic su jcr:content (opzione dim) e impostare il tipo nt:resource. Se non è presente, creare una proprietà denominata jcr:content.
 
-1. Nella finestra di dialogo Modifica jcr:data fare clic su **Sfoglia** e selezionare il file di immagine da utilizzare come logo (in questo caso CustomLogo.png).
+1. Nella finestra di dialogo Modifica jcr:data, fai clic su **Sfoglia** e seleziona il file di immagine da utilizzare come logo (qui CustomLogo.png).
 
    I formati di file di immagine supportati dipendono dal browser utilizzato per accedere ad AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consulta la documentazione specifica per il browser sui formati di immagine supportati.
 
@@ -157,7 +157,7 @@ L&#39;immagine logo personalizzata richiede il caricamento di un foglio di stile
 
 Utilizza i seguenti passaggi per creare il foglio di stile per il rendering del logo con l’interfaccia utente:
 
-1. Vai a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
+1. Passa a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
 1. Crea un file denominato customcss.css (non è possibile utilizzare un nome file diverso) nel percorso seguente:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -166,7 +166,7 @@ Utilizza i seguenti passaggi per creare il foglio di stile per il rendering del 
 
    1. Fare clic con il pulsante destro del mouse sulla cartella **css** e selezionare **Crea > Crea file**.
    1. Nella finestra di dialogo Nuovo file, specifica il nome del file CSS come `customcss.css` (non puoi usare un nome file diverso) e fai clic su **OK**.
-   1. Aggiungi il codice seguente al file css appena creato. In content:url nel codice, specifica il nome dell&#39;immagine caricata nella cartella imgs in CRXDE.
+   1. Aggiungi il codice seguente al file css appena creato. Nel contenuto :url del codice, specifica il nome dell&#39;immagine caricata nella cartella imgs in CRXDE.
 
       ```css
       .logo, .logo:after {
