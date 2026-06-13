@@ -12,8 +12,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 61%
+source-wordcount: '1558'
+ht-degree: 60%
 
 ---
 
@@ -200,7 +200,7 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
    >
    >Per spostarsi utilizzando i collegamenti nel contenuto, è necessario utilizzare la [modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode).
 
-### Modifica delle proprietà pagina   {#editing-the-page-properties}
+### Modifica delle proprietà pagina {#editing-the-page-properties}
 
 Esistono due metodi (principali) di [modifica delle proprietà di una pagina](/help/sites-authoring/editing-page-properties.md):
 
@@ -252,7 +252,7 @@ Esistono due metodi principali per la [pubblicazione della pagina](/help/sites-a
 
   Consulta [Pubblicazione delle pagine](/help/sites-authoring/publishing-pages.md#unpublishing-pages) per ulteriori informazioni.
 
-### Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina   {#move-copy-and-paste-or-delete-your-page}
+### Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina {#move-copy-and-paste-or-delete-your-page}
 
 Queste azioni possono essere tutte attivate nei seguenti modi:
 
@@ -306,7 +306,7 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
 1. Fare clic sul tipo di riferimento richiesto per visualizzare ulteriori dettagli e, se necessario, eseguire ulteriori azioni.
 
-### Creazione di una versione della pagina   {#creating-a-version-of-your-page}
+### Creazione di una versione della pagina {#creating-a-version-of-your-page}
 
 Per creare una [versione](/help/sites-authoring/working-with-page-versions.md) di una pagina:
 

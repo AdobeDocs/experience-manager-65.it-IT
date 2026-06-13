@@ -12,7 +12,7 @@ feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6582'
 ht-degree: 0%
 
 ---
@@ -78,8 +78,8 @@ Una RAM insufficiente determina una riduzione significativa delle prestazioni. L
 
 Per facilitare il processo di test di carico, è possibile supporre il seguente rapporto tra il working set e la dimensione totale del database:
 
-* 1:10 per storage SSD
-* 1:3 per l&#39;archiviazione su hard disk
+* 1:10 per l&#39;archiviazione SSD
+* 1:3 per l&#39;archiviazione su disco rigido
 
 Questi rapporti indicano che per le implementazioni SSD sono necessari 200 GB di RAM per un database da 2 TB.
 
@@ -263,7 +263,7 @@ MongoDB viene eseguito su diversi sistemi operativi, tra cui una vasta gamma di 
    * andkernel.threads-valore massimo di 64000
 
 * Verificare che nel sistema sia configurato lo spazio di swap. Per informazioni dettagliate sul dimensionamento appropriato, consultare la documentazione del sistema operativo in uso.
-* Verificare che il valore predefinito di sistema di TCP keepalive sia impostato correttamente. Un valore pari a 300 offre spesso prestazioni migliori per i set di repliche e i cluster condivisi. Vedere: [Il tempo di conservazione TCP influisce sulle distribuzioni di MongoDB?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) nelle Domande frequenti per ulteriori informazioni.
+* Verificare che il valore predefinito di sistema di TCP keepalive sia impostato correttamente. Un valore pari a 300 offre spesso prestazioni migliori per i set di repliche e i cluster condivisi. Vedere: [Il tempo di conservazione TCP influisce sulle distribuzioni MongoDB?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) per ulteriori informazioni, vedere Domande frequenti.
 
 #### Windows {#windows}
 
@@ -607,7 +607,7 @@ Si consiglia di abilitare le connessioni permanenti per tutti i livelli interni 
 
 #### Scadenza lunga {#long-expires}
 
-Per impostazione predefinita, il contenuto inviato da un Dispatcher di AEM ha le intestazioni Last-Modified ed Etag, senza alcuna indicazione della scadenza del contenuto. Questo flusso garantisce che l’interfaccia utente riceva sempre la versione più recente della risorsa. Significa anche che il browser esegue un’operazione GET per verificare se la risorsa è stata modificata. Di conseguenza, può causare più richieste alle quali la risposta HTTP è 304 (Non modificata), a seconda del caricamento della pagina. Per le risorse che non scadono, l’impostazione di un’intestazione Scadenza e la rimozione delle intestazioni Last-Modified e ETag causano la memorizzazione in cache del contenuto. Inoltre, non vengono effettuate ulteriori richieste di aggiornamento fino alla data specificata nell’intestazione Scade.
+Per impostazione predefinita, il contenuto inviato da un Dispatcher di AEM ha le intestazioni Last-Modified ed Etag, senza alcuna indicazione della scadenza del contenuto. Questo flusso garantisce che l’interfaccia utente riceva sempre la versione più recente della risorsa. Significa anche che il browser esegue un’operazione GET per vedere se la risorsa è cambiata. Di conseguenza, può causare più richieste alle quali la risposta HTTP è 304 (Non modificata), a seconda del caricamento della pagina. Per le risorse che non scadono, l’impostazione di un’intestazione Scadenza e la rimozione delle intestazioni Last-Modified e ETag causano la memorizzazione in cache del contenuto. Inoltre, non vengono effettuate ulteriori richieste di aggiornamento fino alla data specificata nell’intestazione Scade.
 
 Tuttavia, l’utilizzo di questo metodo significa che non esiste un modo ragionevole per causare la scadenza della risorsa nel browser prima della scadenza dell’intestazione Scade. Per attenuare questo flusso di lavoro, HtmlClientLibraryManager può essere configurato in modo da utilizzare URL immutabili per le librerie client.
 
@@ -677,7 +677,7 @@ Per risolvere il problema, assicurarsi di eseguire prima l&#39;installazione con
 
 ### Lunghezza nome pagina {#page-name-length}
 
-Se AEM è in esecuzione in una distribuzione di Gestione persistenza MongoMK, i nomi di pagina [&#x200B; sono limitati a 150 caratteri.](/help/sites-authoring/managing-pages.md)
+Se AEM è in esecuzione in una distribuzione di Gestione persistenza MongoMK, i nomi di pagina [ sono limitati a 150 caratteri.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >
