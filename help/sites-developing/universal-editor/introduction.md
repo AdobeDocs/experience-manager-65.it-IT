@@ -148,7 +148,7 @@ Con AEM aggiornato e configurato, puoi impostare un servizio editor universale l
 
 ### Aggiornare Dispatcher {#update-dispatcher}
 
-Se AEM è configurato ed è in esecuzione un servizio editor universale locale, sarà necessario consentire un proxy inverso per il nuovo servizio [ in Dispatcher.](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/dispatcher)
+Se AEM è configurato ed è in esecuzione un servizio editor universale locale, sarà necessario consentire un proxy inverso per il nuovo servizio [&#x200B; in Dispatcher.](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Modifica il file vhost dell’istanza di authoring in modo da includere un proxy inverso.
 
