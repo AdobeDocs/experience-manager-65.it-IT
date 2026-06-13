@@ -273,7 +273,7 @@ Durante la creazione di una configurazione, non modificare la configurazione di 
 
 >[!CAUTION]
 >
->Quando si modifica l&#39;impostazione per **Minify** o **Gzip**, eliminare il contenuto della cache clientlibs. Per ulteriori informazioni, vedere l&#39;[articolo della Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html).
+>Quando si modifica l&#39;impostazione per **Minify** o **Gzip**, eliminare il contenuto della cache clientlibs. Per ulteriori informazioni, vedere l&#39;[articolo della Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=it).
 
 >[!NOTE]
 >
