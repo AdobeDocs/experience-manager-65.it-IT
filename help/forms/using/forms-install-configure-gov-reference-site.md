@@ -232,7 +232,7 @@ Questa sezione contiene dettagli e istruzioni sulla configurazione di MS® Dynam
 
 1. Accedi a:
 
-   https://<aemserver>:<porta>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://&lt;aemserver>:&lt;porta>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Assicurati di accedere al server utilizzando lo stesso URL di reindirizzamento configurato nella registrazione dell’applicazione MS® Dynamics.
 
