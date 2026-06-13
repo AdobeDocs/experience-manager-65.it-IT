@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti su AEM
+title: Domande frequenti AEM
 description: Utilizza queste domande frequenti per comprendere, configurare e risolvere i problemi relativi ai flussi di lavoro o ai problemi più comuni in AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,14 @@ feature: Configuring
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 0%
+source-wordcount: '999'
+ht-degree: 1%
 
 ---
 
-# Domande frequenti su AEM {#aem-faqs}
+# Domande frequenti AEM {#aem-faqs}
 
-Scopri le risposte ad alcuni problemi di configurazione e risoluzione dei problemi AEM.
+Scopri le risposte ad alcuni problemi di configurazione e risoluzione dei problemi di AEM.
 
 ## Sites {#sites}
 
@@ -39,7 +39,7 @@ Se è necessario che anche gli autori gestiscano i progetti, è possibile aggiun
 
 Crea una directory principale della lingua e una copia per lingua all’interno della directory principale, prima di creare un progetto di traduzione.
 
-Ad esempio:
+Ad esempio,
 Creare una directory principale della lingua in `/content/geometrixx` con il nome come `fr_LU` (e il titolo come francese (Lussemburgo)). Successivamente, creare una copia in lingua della pagina dal pannello dei riferimenti e passare all&#39;opzione `Create structure only` in `Create & Translate`. Infine, crea un progetto di traduzione e quindi aggiungi la copia per lingua al processo di traduzione.
 
 Per informazioni dettagliate, consulta le risorse aggiuntive di seguito:
@@ -47,22 +47,22 @@ Per informazioni dettagliate, consulta le risorse aggiuntive di seguito:
 * [Preparazione del contenuto per la traduzione](/help/sites-administering/tc-prep.md)
 * [Gestione dei progetti di traduzione](/help/sites-administering/tc-manage.md)
 
-#### Come si controllano le funzionalità AEM come, i tentativi di accesso e ACL o le modifiche delle autorizzazioni? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
+#### Come si controllano le funzionalità di AEM, ad esempio i tentativi di accesso e gli ACL o le modifiche delle autorizzazioni? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-L&#39;AEM ha introdotto la possibilità di registrare le modifiche amministrative per una migliore risoluzione dei problemi e un migliore controllo. Per impostazione predefinita, le informazioni vengono registrate nel file `error.log`. Per semplificare il monitoraggio, si consiglia di reindirizzarli a un file di registro separato.
+AEM ha introdotto la possibilità di registrare le modifiche amministrative per migliorare la risoluzione dei problemi e l’audit. Per impostazione predefinita, le informazioni vengono registrate nel file `error.log`. Per semplificare il monitoraggio, si consiglia di reindirizzarli a un file di registro separato.
 Per reindirizzare l&#39;output a un file di log separato, vedere [Come controllare le operazioni di gestione degli utenti in AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### Come si abilita SSL per impostazione predefinita? {#how-to-enable-ssl-by-default}
 
-Adobe Experience Manager (AEM) 6.4 viene fornito con la procedura guidata SSL e offre un’interfaccia utente per configurare il supporto SSL di Jetty e Granite Jetty.
+Adobe Experience Manager (AEM) 6.4 viene fornito con la procedura guidata SSL e offre un’interfaccia utente per configurare il supporto Jetty e Granite Jetty SSL.
 
 Per abilitare SSL per impostazione predefinita, vedere [SSL per impostazione predefinita](/help/sites-administering/ssl-by-default.md).
 
-#### Qual è l’architettura consigliata quando si utilizzano Content Services dell’AEM da un’app mobile, idealmente React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### Qual è l’architettura consigliata quando si utilizzano i Content Services di AEM da un’app mobile, idealmente React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
-I servizi di contenuto sono basati sui modelli Sling e gli sviluppatori AEM devono fornire un pojo del modello Sling per ogni componente esportato.
+I servizi di contenuto sono basati sui modelli Sling e gli sviluppatori di AEM devono fornire un pojo del modello Sling per ogni componente esportato.
 
-Per informazioni su come utilizzare i servizi per contenuti AEM da un&#39;applicazione React, vedere l&#39;esercitazione [Introduzione a Servizi per contenuti AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
+Per informazioni su come utilizzare AEM Content Services da un&#39;applicazione React, vedere l&#39;esercitazione [Introduzione a AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
 
 Inoltre, se gli sviluppatori desiderano esportare una struttura di componenti, possono anche implementare le interfacce `ComponentExporter` e `ContainerExporter` e utilizzare `ModelFactory` per scorrere i componenti figlio e restituire la rappresentazione del modello. Consulta le risorse seguenti:
 
@@ -70,13 +70,13 @@ Inoltre, se gli sviluppatori desiderano esportare una struttura di componenti, p
 
 [2] [Sling Apache :: Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 
-#### Come disattivare la finestra a comparsa per sondaggi AEM 6.4? {#how-to-disable-aem-survey-pop-up}
+#### Come disattivare la finestra a comparsa sondaggio di AEM 6.4? {#how-to-disable-aem-survey-pop-up}
 
 Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’interfaccia utente touch o la console web. Per istruzioni dettagliate, vedere [Accesso alla raccolta di statistiche di utilizzo aggregate](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
-#### Esiste una buona risorsa che evidenzia le caratteristiche principali per l’aggiornamento a AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
+#### Esiste una buona risorsa che evidenzia le funzioni chiave per l’aggiornamento ad AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-Consulta [Informazioni sui motivi per l&#39;aggiornamento dell&#39;AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) che descrive il raggruppamento ad alto livello delle funzionalità chiave per i clienti che stanno valutando l&#39;opportunità di eseguire l&#39;aggiornamento alla versione più recente di Adobe Experience Manager.
+Consulta [Informazioni sui motivi per l&#39;aggiornamento di AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) che descrive il raggruppamento di alto livello delle funzionalità chiave per i clienti che stanno valutando l&#39;opportunità di eseguire l&#39;aggiornamento alla versione più recente di Adobe Experience Manager.
 
 ## Risorse {#assets}
 
@@ -89,13 +89,13 @@ Se l’utente non dispone delle autorizzazioni di eliminazione per il caricament
 Quando crei una copia per lingua tramite l&#39;interfaccia utente touch (**Riferimenti** > **Aggiorna copia per lingua**), viene creata una nuova cartella DAM nella nuova lingua e da qui viene fatto riferimento alle risorse.
 
 Questa è l’impostazione predefinita per le configurazioni pronte all’uso. È possibile impostare **Traduci pagina in Assets** = **Non tradurre** nelle configurazioni di traduzione.
-Per AEM 6.4, **Strumenti** > **Cloud Service** > **Servizi cloud di traduzione**.
+Per AEM 6.4, **Strumenti** > **Servizi cloud** > **Servizi cloud di traduzione**.
 
-#### Come disattivare una componente AEM che causa una crescita esponenziale per il SegmentStore AEM (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
+#### Come disabilitare un componente AEM che causa una crescita esponenziale per AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
 Puoi disattivare la funzione di disabilitazione del componente OSGi. Per utilizzare questo servizio, vedere [Disabler del componente OSGi](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
 
-Come soluzione alternativa, è inoltre possibile disabilitare manualmente il componente tramite l&#39;interfaccia utente o tramite un comando `curl` (ad esempio di seguito) dopo ogni riavvio dell&#39;AEM.
+Come soluzione alternativa, puoi anche disabilitare manualmente il componente tramite l’interfaccia utente o tramite un comando `curl` (ad esempio di seguito) dopo ogni riavvio di AEM.
 
 `curl -u admin:$(pass CQ_Admin) 'https://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
 
@@ -113,9 +113,9 @@ Per ulteriori informazioni, consulta [Guida alla migrazione a CoralUI 3-based](h
 
 Per informazioni sull&#39;aumento/classificazione della ricerca e ulteriori informazioni sull&#39;implementazione, consulta [Guida all&#39;implementazione della ricerca semplice](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
 
-L’implementazione di Simple Search è costituita dai materiali del laboratorio AEM Search Demystified del Summit 2017.
+L’implementazione di Ricerca semplice è costituita dai materiali del laboratorio AEM Search Demystified del Summit 2017.
 
-#### È possibile creare un plug-in per WordPress che consenta al cliente di accedere al selettore risorse di Adobe per selezionare le immagini? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
+#### È possibile creare un plug-in per WordPress che consenta a un cliente di accedere al Selettore risorse di Adobe per selezionare le immagini? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
 Sì, un cliente che utilizza WordPress può utilizzare il Selettore risorse di Adobe per selezionare immagini dal proprio server AEM Assets da aggiungere ai post sul proprio sito WordPress.
 

@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '6016'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-Il pannello operativo dell’AEM 6 aiuta gli operatori di sistema a monitorare immediatamente lo stato del sistema dell’AEM. Fornisce inoltre informazioni di diagnosi generate automaticamente su aspetti rilevanti dell’AEM e consente di configurare ed eseguire automazione della manutenzione autonoma per ridurre in modo significativo le operazioni del progetto e i casi di supporto. Il dashboard operazioni può essere esteso con controlli di integrità personalizzati e attività di manutenzione. Inoltre, i dati della dashboard operazioni sono accessibili da strumenti di monitoraggio esterni tramite JMX.
+Il dashboard operazioni in AEM 6 consente agli operatori di sistema di monitorare lo stato del sistema di AEM in breve. Fornisce inoltre informazioni di diagnosi generate automaticamente su aspetti rilevanti di AEM e consente di configurare ed eseguire automazione della manutenzione autonoma per ridurre in modo significativo le operazioni di progetto e i casi di supporto. Il dashboard operazioni può essere esteso con controlli di integrità personalizzati e attività di manutenzione. Inoltre, i dati della dashboard operazioni sono accessibili da strumenti di monitoraggio esterni tramite JMX.
 
 **Dashboard operazioni:**
 
@@ -30,7 +30,7 @@ Il pannello operativo dell’AEM 6 aiuta gli operatori di sistema a monitorare i
 * Riduzione dei tempi di individuazione, analisi e risoluzione dei problemi
 * Automazione della manutenzione autonoma che consente di ridurre in modo significativo i costi operativi del progetto
 
-Per accedervi, vai a **Strumenti** - **Operazioni** dalla schermata iniziale AEM.
+Per accedervi, vai a **Strumenti** - **Operazioni** dalla schermata iniziale di AEM.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Per accedervi, vai a **Strumenti** - **Operazioni** dalla schermata iniziale AEM
 
 ## Rapporti stato {#health-reports}
 
-Il sistema di rapporti sullo stato fornisce informazioni sullo stato di un’istanza AEM tramite Sling Health Checks. Puoi eseguire questa operazione tramite OSGI, JMX, richieste HTTP (tramite JSON) o tramite l’interfaccia utente touch. Offre misurazioni e soglie di alcuni contatori configurabili e, a volte, offre informazioni su come risolvere il problema.
+Il sistema di rapporti sullo stato fornisce informazioni sullo stato di un’istanza di AEM tramite verifiche di integrità Sling. Puoi eseguire questa operazione tramite OSGI, JMX, richieste HTTP (tramite JSON) o tramite l’interfaccia utente touch. Offre misurazioni e soglie di alcuni contatori configurabili e, a volte, offre informazioni su come risolvere il problema.
 
 Dispone di diverse funzioni, descritte di seguito.
 
@@ -46,7 +46,7 @@ Dispone di diverse funzioni, descritte di seguito.
 
 I **rapporti di stato** sono un sistema di schede che indicano uno stato di salute buono o cattivo per un&#39;area di prodotto specifica. Queste schede sono visualizzazioni dei controlli di integrità Sling, che aggregano i dati da JMX e altre origini ed espongono nuovamente le informazioni elaborate come MBean. Questi MBean possono essere esaminati anche nella [console Web JMX](/help/sites-administering/jmx-console.md), nel dominio **org.apache.sling.healthCheck**.
 
-È possibile accedere all&#39;interfaccia dei report di stato tramite il menu **Strumenti** - **Operazioni** - **Rapporti di stato** nella schermata iniziale dell&#39;AEM oppure direttamente tramite il seguente URL:
+È possibile accedere all&#39;interfaccia dei report di stato tramite il menu **Strumenti** - **Operazioni** - **Rapporti di stato** nella schermata iniziale di AEM oppure direttamente tramite il seguente URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -58,7 +58,7 @@ Il sistema di schede espone tre possibili stati: **OK**, **AVVERTENZA** e **CRIT
 
 ### Tipi di verifica stato {#health-check-types}
 
-Esistono due tipi di controlli sanitari nell&#39;AEM 6:
+In AEM 6 sono disponibili due tipi di controlli di integrità:
 
 1. Verifiche stato individuali
 1. Verifiche stato composito
@@ -156,7 +156,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
 
    >[!NOTE]
    >
-   >Per ogni nuova configurazione di Apache Sling Composite Health Check viene creato un nuovo JMX Mbean.**
+   >Per ogni nuova configurazione di Apache Sling Composite Health Check viene creato un nuovo file Mbean JMX.**
 
 1. Infine, è necessario aggiungere la voce del controllo di integrità composito creato nei nodi di configurazione del dashboard operazioni. La procedura è la stessa dei singoli controlli di integrità: un nodo di tipo **nt:unstructured** deve essere creato in `/apps/settings/granite/operations/hc`. La proprietà di risorsa del nodo è definita dal valore di **hc.mean.name** nella configurazione OSGI.
 
@@ -184,7 +184,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
    >
    >Ad esempio, se crei un singolo controllo di integrità della sicurezza, assegnagli il tag &quot;**security**&quot; e questo verrà installato. Viene visualizzato automaticamente sotto il controllo composito dei controlli di sicurezza nel dashboard operazioni.
 
-### Controlli sanitari forniti con l&#39;AEM {#health-checks-provided-with-aem}
+### Verifiche stato fornite con AEM {#health-checks-provided-with-aem}
 
 <table>
  <tbody>
@@ -194,7 +194,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
   </tr>
   <tr>
    <td>Prestazioni delle query</td>
-   <td><p>Il controllo di integrità è stato semplificato <strong> in AEM 6.4</strong> e ora controlla <code>Oak QueryStats</code> MBean di cui è stato eseguito il refactoring di recente, in particolare l'attributo <code>SlowQueries </code>. Se le statistiche contengono query lente, la verifica stato restituisce un avviso. In caso contrario, verrà restituito lo stato OK.<br /> </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td>
+   <td><p>Il controllo di integrità è stato semplificato <strong>in AEM 6.4</strong> e ora controlla <code>Oak QueryStats</code> MBean di cui è stato eseguito il refactoring di recente, in particolare l'attributo <code>SlowQueries </code>. Se le statistiche contengono query lente, la verifica stato restituisce un avviso. In caso contrario, verrà restituito lo stato OK.<br /> </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Lunghezza coda di osservazione</td>
@@ -233,7 +233,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
        <li>restituisce lo stato OK se è meno di 45 minuti fa </li>
       </ul> </li>
      <li>se nessuna di queste condizioni è soddisfatta, viene restituito lo stato OK</li>
-    </ul> <p>È possibile configurare sia le soglie di stato Critico che quelle di Avviso. L'Mbean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Questo controllo di integrità è disponibile con AEM 6.4 ed è stato supportato nell'AEM 6.3.0.1.</p> </td>
+    </ul> <p>È possibile configurare sia le soglie di stato Critico che quelle di Avviso. L'Mbean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Questo controllo di integrità è disponibile con AEM 6.4 ed è stato supportato in AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Indici Lucene di grandi dimensioni</td>
@@ -250,8 +250,8 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
      <li>ogni attività di manutenzione è accompagnata da un controllo di integrità associato</li>
      <li>se un'attività non viene aggiunta a una finestra di manutenzione, la verifica dello stato restituisce un valore Critico</li>
      <li>configurare le attività di manutenzione Registro di controllo e Rimozione flusso di lavoro o rimuoverle in altro modo dalle finestre di manutenzione. Se non viene configurata, queste attività non riusciranno al primo tentativo di esecuzione, pertanto la verifica di manutenzione del sistema restituirà lo stato Critico.</li>
-     <li><strong>Con AEM 6.4</strong>, è stata eseguita anche una verifica per l'attività <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Manutenzione binary di Lucene</a></li>
-     <li>in AEM 6.2 e versioni precedenti, il controllo di manutenzione del sistema restituisce lo stato di avviso subito dopo l'avvio perché le attività non vengono mai eseguite. A partire dalla versione 6.3, se la prima finestra di manutenzione non è stata ancora raggiunta viene visualizzato OK.</li>
+     <li><strong>Con AEM 6.4</strong>, è anche presente un controllo per l'attività <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Manutenzione binary di Lucene</a></li>
+     <li>in AEM 6.2 e versioni successive, il controllo di manutenzione del sistema restituisce uno stato di avvertenza subito dopo l’avvio perché le attività non vengono mai eseguite. A partire dalla versione 6.3, se la prima finestra di manutenzione non è stata ancora raggiunta viene visualizzato OK.</li>
     </ul> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemchecs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -297,7 +297,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
   </tr>
   <tr>
    <td>Verifiche di sicurezza</td>
-   <td><p>Il controllo di sicurezza è un elemento composito che aggrega i risultati di più controlli relativi alla sicurezza. Questi singoli controlli di integrità rispondono a problemi diversi dall'elenco di controllo della sicurezza disponibile nella pagina della documentazione dell'elenco di controllo della sicurezza <a href="/help/sites-administering/security-checklist.md">.</a> Il controllo è utile come test di fumo di sicurezza all'avvio dell'istanza. </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecs,type=HealthCheck</a></p> </td>
+   <td><p>Il controllo di sicurezza è un elemento composito che aggrega i risultati di più controlli relativi alla sicurezza. Questi singoli controlli di integrità rispondono a problemi diversi dall'elenco di controllo della sicurezza disponibile nella pagina della documentazione dell'elenco di controllo della sicurezza <a href="/help/sites-administering/security-checklist.md">.</a> Il controllo è utile come test del fumo di sicurezza all'avvio dell'istanza. </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecs,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Bundle attivi</td>
@@ -327,7 +327,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
 
 ### Configurazione verifica stato {#health-check-configuration}
 
-Per impostazione predefinita, per un’istanza AEM preconfigurata, i controlli di integrità vengono eseguiti ogni 60 secondi.
+Per impostazione predefinita, per un’istanza di AEM preconfigurata, i controlli di integrità vengono eseguiti ogni 60 secondi.
 
 È possibile configurare il **Periodo** con la [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) **configurazione verifica stato query** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
@@ -345,7 +345,7 @@ Tra le sue caratteristiche più importanti vi sono:
 * Possibilità di accedere alle immagini heap e thread
 * Richieste e analizzatori delle prestazioni delle query
 
-Per accedere alla schermata Strumenti di diagnostica, vai a **Strumenti - Operazioni - Diagnosi** dalla schermata iniziale dell&#39;AEM. È inoltre possibile accedere alla schermata accedendo direttamente al seguente URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
+Per accedere alla schermata Strumenti di diagnostica, vai a **Strumenti - Operazioni - Diagnosi** dalla schermata iniziale di AEM. È inoltre possibile accedere alla schermata accedendo direttamente al seguente URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -425,9 +425,9 @@ La pagina mostra:
 
 Per una determinata query, Oak tenta di capire il modo migliore per eseguire in base agli indici Oak definiti nell&#39;archivio nel nodo **oak:index**. A seconda della query, Oak può scegliere indici diversi. Il primo passaggio per ottimizzare la query consiste nel comprendere in che modo Oak esegue una query.
 
-Explain Query è uno strumento che spiega come Oak esegue una query. È possibile accedervi da **Strumenti - Operazioni - Diagnosi** dalla schermata iniziale AEM. Quindi, fai clic su **Prestazioni query** e passa alla scheda **Spiega query**.
+Explain Query è uno strumento che spiega come Oak esegue una query. È accessibile da **Strumenti - Operazioni - Diagnosi** dalla schermata iniziale di AEM. Quindi, fai clic su **Prestazioni query** e passa alla scheda **Spiega query**.
 
-**Caratteristiche**
+**Funzioni**
 
 * Supporta i linguaggi di query Xpath, JCR-SQL e JCR-SQL2
 * Segnala il tempo di esecuzione effettivo della query fornita
@@ -452,7 +452,7 @@ Se si seleziona la casella **Includi tempo di esecuzione** prima di eseguire la 
 
 Lo scopo di Gestione indici è quello di facilitare la gestione degli indici, ad esempio la manutenzione degli indici o la visualizzazione del loro stato.
 
-È possibile accedervi da **Strumenti - Operazioni - Diagnosi &#x200B;** dalla schermata iniziale, quindi fare clic sul pulsante **Gestione indice**.
+È possibile accedervi da **Strumenti - Operazioni - Diagnosi** dalla schermata iniziale, quindi fare clic sul pulsante **Gestione indice**.
 
 È inoltre possibile accedervi direttamente da questo URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -480,7 +480,7 @@ Puoi scaricare un’istantanea dell’heap per analizzarla in un secondo momento
 
 La pagina Attività di manutenzione automatizzata è un&#39;area in cui è possibile visualizzare e tenere traccia delle attività di manutenzione consigliate pianificate per l&#39;esecuzione periodica. Le attività sono integrate con il sistema di Verifica stato. Le attività possono anche essere eseguite manualmente dall’interfaccia.
 
-Per accedere alla pagina Manutenzione nel dashboard operazioni, dalla schermata iniziale AEM, vai a **Strumenti - Operazioni - dashboard - Manutenzione** oppure segui direttamente questo collegamento:
+Per accedere alla pagina Manutenzione nel dashboard operazioni, dalla schermata iniziale di AEM, vai a **Strumenti - Operazioni - dashboard - Manutenzione** oppure segui direttamente questo collegamento:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -495,7 +495,7 @@ Nel dashboard operazioni sono disponibili le seguenti attività:
 1. L&#39;attività di manutenzione **Rimozione progetto**, che si trova nel menu **Finestra manutenzione settimanale**, utilizza l&#39;opzione **Aggiungi**.
 1. **Eliminazione delle attività ad hoc** attività di manutenzione, disponibile nel menu **Finestra manutenzione settimanale**, utilizzando l&#39;opzione **Aggiungi**.
 
-L&#39;orario predefinito per la finestra di manutenzione giornaliera è dalle 2.00 alle 5.00. Le attività configurate per l’esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le ore 1:00 e le ore 2:00 del sabato.
+La tempistica predefinita per la finestra di manutenzione giornaliera è compresa tra le 2:00 e le 5:00. Le attività configurate per l&#39;esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le ore 1:00 e le ore 2:00 di sabato.
 
 Puoi anche configurare gli intervalli premendo l’icona ingranaggio su una qualsiasi delle due schede di manutenzione:
 
@@ -516,11 +516,11 @@ Utilizzando l&#39;attività Pulizia dati binari di Lucene, è possibile eliminar
 Anche se l’attività di manutenzione è stata sviluppata per ridurre i rifiuti di revisione correlati a Lucene, vi sono miglioramenti generali di efficienza durante l’esecuzione dell’attività:
 
 * L’esecuzione settimanale dell’attività di Garbage Collection dell’archivio dati può essere completata più rapidamente.
-* Può anche migliorare leggermente le prestazioni complessive dell’AEM.
+* Può anche migliorare leggermente le prestazioni complessive di AEM.
 
 Puoi accedere all&#39;attività Pulizia file binari Lucene da: **AEM > Strumenti > Operazioni > Manutenzione > Finestra manutenzione giornaliera > Pulizia file binari Lucene**.
 
-### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
+### Raccolta oggetti inattivi nell’archivio dati {#data-store-garbage-collection}
 
 Per informazioni dettagliate sulla raccolta oggetti inattivi dell&#39;archivio dati, consulta la pagina dedicata della documentazione di [Raccolta oggetti inattivi dell&#39;archivio dati](/help/sites-administering/data-store-garbage-collection.md).
 
@@ -543,7 +543,7 @@ Per la manutenzione del registro di controllo, consulta la [pagina separata dell
 
 È possibile pianificare l&#39;attività di manutenzione Pulizia delle versioni per eliminare automaticamente le versioni precedenti. Questa azione consente di ridurre al minimo la necessità di utilizzare manualmente gli [strumenti di eliminazione versione](/help/sites-deploying/version-purging.md). È possibile pianificare e configurare l&#39;attività Pulizia versione accedendo a **Strumenti > Operazioni > Manutenzione > Finestra manutenzione settimanale** e attenendosi alla seguente procedura:
 
-1. Fare clic su **Aggiungi**.
+1. Fai clic su **Aggiungi**.
 1. Scegliere **Rimozione versione** dal menu a discesa.
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
@@ -552,7 +552,7 @@ Per la manutenzione del registro di controllo, consulta la [pagina separata dell
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
-**Con AEM 6.4**, è possibile interrompere l&#39;attività di manutenzione Pulizia delle versioni nel modo seguente:
+**Con AEM 6.4**, puoi interrompere l&#39;attività di manutenzione Pulizia delle versioni come segue:
 
 * Automaticamente: se la finestra di manutenzione programmata si chiude prima che l&#39;attività possa essere completata, l&#39;attività si interrompe automaticamente. L&#39;operazione riprenderà all&#39;apertura della finestra di manutenzione successiva.
 * Manualmente - Per interrompere manualmente l&#39;attività, nella scheda Pulizia delle versioni fare clic sull&#39;icona **Interrompi**. Alla successiva esecuzione, l’attività riprenderà in modo sicuro.
@@ -573,7 +573,7 @@ Override the out-of-the-box Maintenance window configuration node under `/libs` 
 Enable the maintenance task by adding another node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. 
 -->
 
-Configurare le proprietà OSGI in **Configurazione eliminazione progetti di Adobe** (com.adobe.cq.projects.purge.Scheduler).
+Configurare le proprietà OSGI in **Configurazione eliminazione progetti Adobe** (com.adobe.cq.projects.purge.Scheduler).
 
 ### Eliminazione di attività ad-hoc {#purge-of-ad-hoc-tasks}
 
@@ -604,7 +604,7 @@ Le attività di manutenzione personalizzate possono essere implementate come ser
    <td>Facoltativo</td>
   </tr>
   <tr>
-   <td>granite.maintenance.mandatory</td>
+   <td>granite.maintenance.required</td>
    <td>Attributo booleano che definisce se un’attività è obbligatoria e deve essere eseguita periodicamente. Se un'attività è obbligatoria ma al momento non è presente in alcuna finestra di programmazione attiva, un controllo di integrità segnala questo errore. Il valore predefinito è false.</td>
    <td>vero</td>
    <td>Facoltativo</td>
@@ -622,8 +622,8 @@ Le attività di manutenzione personalizzate possono essere implementate come ser
    <td>Obbligatorio</td>
   </tr>
   <tr>
-   <td>job.topics</td>
-   <td>Argomento univoco dell’attività di manutenzione.<br /> La gestione del processo Apache Sling avvia un processo con esattamente questo argomento per eseguire l'attività di manutenzione e quando l'attività viene registrata per questo argomento viene eseguita.<br /> L'argomento deve iniziare con <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>job.topic</td>
+   <td>Argomento univoco dell'attività di manutenzione.<br /> La gestione del processo Apache Sling avvia un processo con esattamente questo argomento per eseguire l'attività di manutenzione e quando l'attività viene registrata per questo argomento viene eseguita.<br /> L'argomento deve iniziare con <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Obbligatorio</td>
   </tr>
@@ -656,11 +656,11 @@ Questa azione aggiunge una risorsa corrispondente in /apps/granite/operations/co
 
 ## Panoramica sistema {#system-overview}
 
-Il **Dashboard panoramica sistema** visualizza una panoramica di alto livello della configurazione, dell&#39;hardware e dello stato dell&#39;istanza AEM. Lo stato di integrità del sistema è trasparente e tutte le informazioni sono aggregate in un unico dashboard.
+Il **Dashboard panoramica sistema** visualizza una panoramica di alto livello della configurazione, dell&#39;hardware e dello stato dell&#39;istanza di AEM. Lo stato di integrità del sistema è trasparente e tutte le informazioni sono aggregate in un unico dashboard.
 
 >[!NOTE]
 >
->Puoi anche [guardare questo video](https://video.tv.adobe.com/v/327265?captions=ita) per un&#39;introduzione alla dashboard di panoramica del sistema.
+>Puoi anche [guardare questo video](https://video.tv.adobe.com/v/21340) per un&#39;introduzione alla dashboard di panoramica del sistema.
 
 ### Come Accedere {#how-to-access}
 
@@ -736,7 +736,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
    <td>Istanza</td>
    <td>
     <ul>
-     <li>versione AEM</li>
+     <li>la versione AEM</li>
      <li>elenco delle modalità di esecuzione</li>
      <li>la data in cui è stata avviata l’istanza</li>
     </ul> </td>
@@ -757,7 +757,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
        <li>per un archivio dati file, viene visualizzato il percorso</li>
        <li>per un archivio dati S3, viene visualizzato il nome del bucket S3</li>
        <li>per un archivio dati S3 condiviso, viene visualizzato il nome del bucket S3</li>
-       <li>per un Azure Data Store, viene visualizzato il contenitore</li>
+       <li>per un archivio dati di Azure, viene visualizzato il contenitore</li>
       </ul> </li>
      <li>se non è presente un archivio dati esterno personalizzato, viene visualizzato un messaggio che indica tale fatto</li>
     </ul> </td>
@@ -811,7 +811,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
      <li>Conteggi flussi di lavoro: numero di flussi di lavoro in un determinato stato (se presenti):
       <ul>
        <li>in esecuzione</li>
-       <li>non riuscito</li>
+       <li>non riuscito/i</li>
        <li>sospeso</li>
        <li>interrotto</li>
       </ul> </li>
@@ -826,7 +826,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
    <td>Processi Sling</td>
    <td><p>Conteggi processi Sling - numero di processi in un determinato stato (se presenti):</p>
     <ul>
-     <li>non riuscito</li>
+     <li>non riuscito/i</li>
      <li>in coda</li>
      <li>annullato</li>
      <li>attivi</li>

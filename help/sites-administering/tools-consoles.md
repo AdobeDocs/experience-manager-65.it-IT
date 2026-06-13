@@ -12,8 +12,8 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 26%
+source-wordcount: '597'
+ht-degree: 25%
 
 ---
 
@@ -58,7 +58,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Assegnazione dei tag</td>
+   <td>Assegnazione tag</td>
   </tr>
   <tr>
    <td> </td>
@@ -170,11 +170,11 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Schemi metadati cartelle<br /> </td>
+   <td>Schemi di metadati per cartelle<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Schemi metadati</td>
+   <td>Schemi di metadati</td>
   </tr>
   <tr>
    <td> </td>
@@ -197,7 +197,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
    <td>Configurazione DAM remoto</td>
   </tr>
   <tr>
-   <td>Riferimenti</td>
+   <td>Risorse</td>
    <td> </td>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Riferimenti per sviluppatori</td>
+   <td>Risorse per sviluppatori</td>
   </tr>
   <tr>
    <td>Implementazione</td>
@@ -286,7 +286,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione Dynamic Medie<br /> </td>
+   <td>Configurazione elemento multimediale dinamico<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -306,7 +306,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione accesso social network tramite facebook<br /> </td>
+   <td>Configurazione accesso social network tramite Facebook<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -314,10 +314,10 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione accesso social network tramite pinterest<br /> </td>
+   <td>Configurazione accesso social network tramite Pinterest<br /> </td>
   </tr>
   <tr>
-   <td>Communities</td>
+   <td>Community</td>
    <td> </td>
   </tr>
   <tr>
@@ -373,10 +373,10 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td>Configurazioni ClientContext<br /> </td>
-   <td>ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Le configurazioni predefinite e di Experience Cloud sono disponibili qui.<br /> </td>
+   <td>ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Le configurazioni predefinite ed Experience Cloud sono disponibili qui.<br /> </td>
   </tr>
   <tr>
-   <td>Configurazioni Cloud Service<br /> </td>
+   <td>Configurazioni servizi cloud<br /> </td>
    <td>Contiene le configurazioni relative all’integrazione con Adobe Experience Cloud.</td>
   </tr>
   <tr>
@@ -416,12 +416,12 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
    <td>Verifica collegamenti esterni.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivo mobile</td>
    <td>Consente di creare siti Web progettati per dispositivi mobili.</td>
   </tr>
   <tr>
    <td>Pacchetti</td>
-   <td>Un collegamento alternativo al Gestore pacchetti che mostra i pacchetti caricati per WCM AEM. Simile alle informazioni visualizzate in Gestione pacchetti di CRX.</td>
+   <td>Un collegamento alternativo al Gestore pacchetti che mostra i pacchetti caricati per AEM WCM. Simile alle informazioni visualizzate in Gestione pacchetti di CRX.</td>
   </tr>
   <tr>
    <td>Replica - Agenti di replica</td>
@@ -429,7 +429,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td>Rapporti</td>
-   <td>AEM offre una serie di rapporti personalizzati, che consentono di creare rapporti personalizzati o di svilupparne di personalizzati.</td>
+   <td>AEM fornisce una serie di rapporti personalizzati, che consentono di creare rapporti personalizzati o di svilupparne di personalizzati.</td>
   </tr>
   <tr>
    <td>Scaffolding pagine predefinito</td>

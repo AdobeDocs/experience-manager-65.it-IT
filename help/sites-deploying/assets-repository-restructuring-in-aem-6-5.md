@@ -1,5 +1,5 @@
 ---
-title: Ristrutturazione dell’archivio Assets nell’AEM 6.5
+title: Ristrutturazione dell’archivio risorse in AEM 6.5
 description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in Adobe Experience Manager (AEM) 6.5 per Assets.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 2%
+source-wordcount: '1083'
+ht-degree: 3%
 
 ---
 
-# Ristrutturazione dell’archivio Assets nell’AEM 6.5 {#assets-repository-restructuring-in-aem}
+# Ristrutturazione dell’archivio risorse in AEM 6.5 {#assets-repository-restructuring-in-aem}
 
-Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento a Adobe Experience Manager (AEM) 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Assets. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nella pagina [Ristrutturazione dell’archivio padre in AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento a Adobe Experience Manager (AEM) 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Assets. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
 **Con Aggiornamento 6.5**
 
@@ -30,7 +30,7 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](
 * [Scarica modello di notifica e-mail per risorsa](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#download-asset-e-mail-notification-template)
 * [Esempio di licenze DRM](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#example-drm-licenses)
 * [Modello di notifica tramite posta elettronica condivisione collegamenti](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#link-share-e-mail-notification-template)
-* [Script flusso di lavoro InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
+* [Script del flusso di lavoro di InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
 * [Configurazioni di trascodifica video](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#video-transcoding-configurations)
 * [Varie](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc2)
 
@@ -112,7 +112,7 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](
     <ol>
      <li>Copiare le progettazioni dal percorso precedente al nuovo percorso in <code>/apps</code>.</li>
      <li>Convertire le risorse CSS, JavaScript e statiche nella progettazione in una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Libreria client</a> con <code>allowProxy = true</code>.</li>
-     <li>Aggiorna i riferimenti alla posizione precedente nella proprietà <code>cq:designPath</code> tramite <strong>AEM &gt; Amministratore DAM &gt; Pagina condivisione risorse &gt; Proprietà pagina &gt; Scheda Avanzate &gt; Campo di progettazione</strong>.</li>
+     <li>Aggiorna i riferimenti alla posizione precedente nella proprietà <code>cq:designPath</code> tramite <strong>AEM &gt; Amministrazione DAM &gt; Pagina condivisione risorse &gt; Proprietà pagina &gt; Scheda Avanzate &gt; Campo di progettazione</strong>.</li>
      <li>Per utilizzare la nuova categoria Libreria client, aggiorna tutte le pagine che fanno riferimento alla posizione precedente. Questo richiede l’aggiornamento del codice di implementazione della pagina.</li>
      <li>Aggiornare le regole di Dispatcher in modo da consentire la distribuzione di librerie client tramite il servlet proxy <code>/etc.clientlibs/</code>.</li>
     </ol> <p>Per tutte le progettazioni non gestite in SCM e modificate in fase di esecuzione tramite le finestre di dialogo per progettazione, non spostare le progettazioni modificabili da <code>/etc</code>.</p> </td>
@@ -198,7 +198,7 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](
  </tbody>
 </table>
 
-### Script flusso di lavoro InDesign {#indesign-workflow-scripts}
+### Script del flusso di lavoro di InDesign {#indesign-workflow-scripts}
 
 <table>
  <tbody>
@@ -216,7 +216,7 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](
     <ol>
      <li>Copia tutti gli script personalizzati o modificati da <strong><code>/etc/dam/indesign/scripts</code></strong> a <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
-       <li>Solo gli script nuovi o modificati sono disponibili come script non modificati forniti dall'AEM tramite <strong><code>/libs/settings</code></strong> nell'AEM 6.5</li>
+       <li>Copia solo gli script nuovi o modificati come script non modificati forniti da AEM sono disponibili tramite <strong><code>/libs/settings</code></strong> in AEM 6.5</li>
       </ol> </li>
      <li>Individua tutti i modelli di flusso di lavoro che utilizzano il passaggio WF del processo di estrazione file multimediali e
       <ol>
@@ -246,10 +246,10 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Le personalizzazioni a livello di progetto devono essere tagliate e incollate in percorsi <code>/apps</code> o <code>/conf</code> equivalenti, a seconda dei casi.</p> <p>Per allinearsi alla struttura dell’archivio AEM 6.4:</p>
+   <td><p>Le personalizzazioni a livello di progetto devono essere tagliate e incollate in percorsi <code>/apps</code> o <code>/conf</code> equivalenti, a seconda dei casi.</p> <p>Per allinearsi alla struttura dell’archivio di AEM 6.4:</p>
     <ol>
      <li>Copia le configurazioni video modificate da <code>/etc/dam/video</code> a <code>/apps/settings/dam/video</code></li>
-     <li>Rimuovi <code>/etc/dam/video</code></li>
+     <li>Rimuovere <code>/etc/dam/video</code></li>
     </ol> </td>
   </tr>
   <tr>

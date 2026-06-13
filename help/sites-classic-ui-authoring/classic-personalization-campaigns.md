@@ -1,5 +1,5 @@
 ---
-title: Campaign Management
+title: Gestione delle campagne
 description: La gestione delle campagne offre agli esperti di marketing digitale l’opportunità di distribuire contenuti personalizzati e creare così esperienze dedicate per i visitatori. Consente di orchestrare campagne di marketing su web, e-mail e servizi mobili, coinvolgendo in tal modo i visitatori.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,13 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '625'
+ht-degree: 4%
 
 ---
 
 
-# Campaign Management{#campaign-management}
+# Gestione delle campagne{#campaign-management}
 
 La gestione delle campagne offre agli esperti di marketing digitale l’opportunità di distribuire contenuti personalizzati e creare così esperienze dedicate per i visitatori.
 
@@ -29,9 +29,9 @@ Questo documento descrive i vari elementi che compongono le campagne. Informazio
 * [E-mail marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
 * [Pagine di destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Offerte Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
-* [Utilizzo del Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+* [Utilizzo di Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Segmentazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
-* [Configurazione della campagna](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
+* [Impostazione della campagna](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 La gestione delle campagne è composta da vari elementi:
 
@@ -42,10 +42,9 @@ In Adobe Experience Manager (AEM), i brand sono l&#39;unità di livello principa
 Una campagna è una raccolta di singole **esperienze**.
 
 * **Esperienze**
-Il contenuto mirato forma le varie esperienze, presentate al visitatore ai **punti di contatto**. Sono disponibili diversi tipi di esperienza:
+Il contenuto mirato forma le varie esperienze, presentate al visitatore in **Punti di contatto**. Sono disponibili diversi tipi di esperienza:
 
    * **Teaser**
-
      [Le pagine/paragrafi teaser](#teasers) vengono utilizzati per indirizzare specifici visitatori **Segmenti** a contenuti incentrati sui loro interessi.
 
      Le pagine teaser possono:
@@ -57,7 +56,7 @@ Il contenuto mirato forma le varie esperienze, presentate al visitatore ai **pun
 
    * **Newsletter**
 
-     [Le comunicazioni tramite posta elettronica](#emailmarketing) vengono utilizzate per coinvolgere gli utenti e incoraggiarli a visitare il sito Web. In genere assumono la forma di una newsletter, inviata ai tuoi **Lead** (raggruppati in **Elenchi**). **Nota:** l&#39;Adobe non prevede di migliorare ulteriormente questa funzionalità. Si consiglia di [utilizzare Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
+     [Le comunicazioni tramite posta elettronica](#emailmarketing) vengono utilizzate per coinvolgere gli utenti e incoraggiarli a visitare il sito Web. In genere assumono la forma di una newsletter, inviata ai tuoi **Lead** (raggruppati in **Elenchi**). **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità. Si consiglia di [utilizzare Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -71,13 +70,13 @@ Il contenuto mirato forma le varie esperienze, presentate al visitatore ai **pun
 
 * **Lead**
 
-  Le informazioni raccolte sui visitatori e su come contattarli costituiscono la base per i lead. **Nota:** l&#39;Adobe non prevede di migliorare ulteriormente questa funzionalità.
+  Le informazioni raccolte sui visitatori e su come contattarli costituiscono la base per i lead. **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
 
   Si consiglia di [utilizzare Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 * **Elenchi**
 
-  I lead sono raggruppati in elenchi in modo da poter intraprendere azioni collettive su di essi. Nota: **Nota:** l&#39;Adobe non prevede di migliorare ulteriormente questa funzionalità.
+  I lead sono raggruppati in elenchi in modo da poter intraprendere azioni collettive su di essi. Nota: **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
 
   Si consiglia di [utilizzare Adobe Campaign e l&#39;integrazione con AEM.](/help/sites-administering/campaign.md)
 

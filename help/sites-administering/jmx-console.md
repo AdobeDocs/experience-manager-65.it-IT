@@ -12,8 +12,8 @@ feature: Developing,Operations
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 0%
+source-wordcount: '4969'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 La console JMX consente di monitorare e gestire i servizi sul server CRX. Le sezioni che seguono riepilogano gli attributi e le operazioni esposte tramite il framework JMX.
 
-Per informazioni sull&#39;utilizzo dei controlli della console, vedere [Utilizzo della console JMX](#using-the-jmx-console). Per informazioni di base su JMX, consulta la pagina relativa alla tecnologia [Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) nel sito Web di Oracle.
+Per informazioni sull&#39;utilizzo dei controlli della console, vedere [Utilizzo della console JMX](#using-the-jmx-console). Per informazioni di base su JMX, consulta la pagina relativa alla tecnologia [Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) sul sito Web di Oracle.
 
 Per informazioni sulla creazione di MBean per la gestione dei servizi tramite la console JMX, vedere [Integrazione dei servizi con la console JMX](/help/sites-developing/jmx-integration.md).
 
@@ -333,7 +333,7 @@ Informazioni sull’archivio CRX
    <td>true indica che le applicazioni possono eseguire l'osservazione dell'archivio registrata. con l'osservazione nel diario, è possibile ottenere una serie di notifiche di modifica per un periodo di tempo specifico. </td>
   </tr>
   <tr>
-   <td>query.languages</td>
+   <td>query.language</td>
    <td>I linguaggi di query supportati dall’archivio. Nessun valore indica che non è supportata alcuna query.</td>
   </tr>
   <tr>
@@ -377,7 +377,7 @@ Informazioni sull’archivio CRX
    <td>true indica che questo nodo cluster è il master preferito del cluster.</td>
   </tr>
   <tr>
-   <td>option.transactions.supported</td>
+   <td>option.transaction.supported</td>
    <td>true indica che il repository supporta le transazioni.</td>
   </tr>
   <tr>
@@ -385,7 +385,7 @@ Informazioni sull’archivio CRX
    <td>URL del fornitore del repository.</td>
   </tr>
   <tr>
-   <td>node.type.management.value.constraints.supported</td>
+   <td>node.type.management.value.restrictions.supported</td>
    <td>true indica che l'archivio supporta vincoli di valore per le proprietà dei nodi.</td>
   </tr>
   <tr>
@@ -691,7 +691,7 @@ Monitora i servizi per ogni agente di replica. Quando crei un agente di replica,
 * **Dominio:** com.adobe.granite.replication
 * **Tipo:** agente
 * **Nome:** nessun valore
-* **Proprietà:** {id=&quot;*Nome*&quot;}, dove *Nome* è il valore della proprietà Nome agente.
+* **Proprietà:** {id="*Name*"}, dove *Nome* è il valore della proprietà Nome agente.
 
 ### Attributi {#attributes-3}
 
@@ -851,7 +851,7 @@ Diverse risorse server di terze parti installano MBean che espongono attributi e
      <li>MemoryManager</li>
      <li>MemoryPool</li>
      <li>OperatingSystem</li>
-     <li>Runtime</li>
+     <li>Tempo di esecuzione</li>
      <li>Threading</li>
     </ul> </td>
    <td>Pacchetto <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a></td>

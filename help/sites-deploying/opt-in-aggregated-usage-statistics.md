@@ -12,8 +12,8 @@ feature: Deploying
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '307'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Puoi contribuire a migliorare Adobe Experience Cloud inviando Adobi statistici su come interagisci con Adobe Experience Manager (AEM). Queste informazioni non contengono dati sui visitatori del sito della tua azienda e vengono utilizzate solo per aiutare Adobe a fornire, supportare e migliorare l’esperienza utente.
+Per migliorare Adobe Experience Cloud, invii ad Adobe statistiche su come interagisci con Adobe Experience Manager (AEM). Queste informazioni non contengono dati sui visitatori del sito della tua azienda e vengono utilizzate solo per aiutare Adobe a fornire, supportare e migliorare l’esperienza utente.
 
 Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’interfaccia utente touch o la console web.
 
@@ -29,17 +29,17 @@ Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’int
 >
 >Esistono varie normative sulla protezione dei dati e sulla privacy; tra cui, ad esempio, RGPD e CCPA. AEM Sites è pronta ad aiutare i clienti a rispettare gli obblighi in materia di protezione dei dati e privacy. Questa pagina guida i clienti attraverso le procedure per il consenso (o la rinuncia) alla raccolta di statistiche di utilizzo aggregate.
 >
->Per ulteriori informazioni, visitare anche il Centro per la privacy [Adobe](https://www.adobe.com/it/privacy.html).
+>Per ulteriori informazioni, visitare anche il [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
 
 >[!NOTE]
 >
->Puoi rinunciare in qualsiasi momento utilizzando la [console Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) o non selezionando l&#39;opzione di consenso nella schermata di consenso dell&#39;AEM.
+>Puoi rinunciare in qualsiasi momento utilizzando la [console Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) o non selezionando l&#39;opzione di consenso nella schermata di consenso di AEM.
 
 ## Consenso tramite l’interfaccia utente touch {#opt-in-by-using-the-touch-ui}
 
-La prima volta che avvii l’AEM, puoi dare il consenso utilizzando l’interfaccia utente touch come segue:
+La prima volta che avvii AEM, puoi dare il consenso utilizzando l’interfaccia utente touch come segue:
 
-1. Nella schermata di navigazione AEM, fare clic sull&#39;icona **Posta in arrivo** (campana).
+1. Nella schermata di navigazione di AEM, fai clic sull&#39;icona **Posta in arrivo** (campana).
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
@@ -57,7 +57,7 @@ La prima volta che avvii l’AEM, puoi dare il consenso utilizzando l’interfac
 
 Puoi acconsentire (o rinunciare) utilizzando la console web come segue:
 
-1. Nella schermata di navigazione AEM, fai clic su **Strumenti** e quindi su **Operazioni**.
+1. Nella schermata di navigazione di AEM, fai clic su **Strumenti** e quindi su **Operazioni**.
 
    ![usage_statisticsopsdashboard](assets/usage_statisticsopsdashboard.png)
 
@@ -70,7 +70,7 @@ Puoi acconsentire (o rinunciare) utilizzando la console web come segue:
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
 
-1. Selezionare la casella di controllo **Abilitato**. In alternativa, è possibile deselezionare la casella di controllo se si desidera rinunciare alla raccolta delle statistiche di utilizzo.
+1. Seleziona la casella di controllo **Abilitato**. In alternativa, è possibile deselezionare la casella di controllo se si desidera rinunciare alla raccolta delle statistiche di utilizzo.
 
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 
