@@ -10,9 +10,9 @@ exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '10278'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '10334'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Se utilizzi IPv6, immetti l’URL di base come nome del computer o nome DNS. Se 
 >
 >L’URL di base è incorporato in file protetti tramite policy. Le applicazioni client utilizzano l’URL di base per riconnettersi al server. I file protetti continueranno a contenere l’URL di base, anche se viene modificato in seguito. Se modifichi l’URL di base, le informazioni di configurazione devono essere aggiornate per tutti i client connessi.
 
-**Periodo di lease offline predefinito:** periodo di tempo predefinito durante il quale un utente può utilizzare un documento protetto offline. Questa impostazione determina il valore iniziale dell’impostazione del periodo di lease per l’attivazione automatica della modalità offline durante la creazione di un criterio. Consulta Creazione e modifica dei criteri. Alla scadenza del periodo di lease, il destinatario deve sincronizzare nuovamente il documento per continuare a utilizzarlo.
+**Periodo di lease offline predefinito:** periodo di tempo predefinito durante il quale un utente può utilizzare un documento protetto offline. Questa impostazione determina il valore iniziale dell’impostazione del periodo di lease per l’attivazione automatica della modalità offline durante la creazione di un criterio. Consulta Creazione e modifica di criteri. Alla scadenza del periodo di lease, il destinatario deve sincronizzare nuovamente il documento per continuare a utilizzarlo.
 
 Per una discussione sul funzionamento del lease e della sincronizzazione offline, consulta [Introduzione alla configurazione del lease e della sincronizzazione offline](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
@@ -354,8 +354,8 @@ Puoi abilitare e disabilitare l’auditing degli eventi e specificare i tipi di 
 
 **Eventi set di criteri**
 
-**Set di criteri
-creati:** un amministratore o un coordinatore di set di criteri crea un set di criteri.
+**creato
+Set di criteri:** Un amministratore o un coordinatore di set di criteri crea un set di criteri.
 
 **Set di criteri eliminato:** un amministratore o un coordinatore di set di criteri elimina un set di criteri.
 
@@ -363,8 +363,7 @@ creati:** un amministratore o un coordinatore di set di criteri crea un set di c
 
 **Eventi di sistema**
 
-**Sincronizzazione
-directory completata:** queste informazioni non sono disponibili nella pagina Eventi. Le informazioni sulla sincronizzazione della directory corrente tra cui lo stato di sincronizzazione corrente e l’ora dell’ultima sincronizzazione, vengono visualizzate nella pagina Gestione dominio. Per accedere alla pagina Gestione dominio nella console di amministrazione, fare clic su Impostazioni > Gestione utente > Gestione dominio.
+Directory **Sincronizzazione completata:** Queste informazioni non sono disponibili nella pagina Eventi. Le informazioni sulla sincronizzazione della directory corrente tra cui lo stato di sincronizzazione corrente e l’ora dell’ultima sincronizzazione, vengono visualizzate nella pagina Gestione dominio. Per accedere alla pagina Gestione dominio nella console di amministrazione, fare clic su Impostazioni > Gestione utente > Gestione dominio.
 
 **Accesso offline abilitato client:** un utente ha abilitato l’accesso offline ai documenti protetti dal server nel computer dell’utente.
 
@@ -418,7 +417,7 @@ Queste impostazioni controllano il testo visualizzato nel prompt di accesso visu
 Queste impostazioni controllano il testo visualizzato nella finestra di dialogo Autenticazione certificato.
 
 **Scegli
-Testo per tipo di autenticazione:** testo visualizzato per indirizzare un utente alla selezione di un tipo di autenticazione.
+Testo tipo di autenticazione:** Testo visualizzato per indirizzare un utente alla selezione di un tipo di autenticazione.
 
 **Scegli testo per certificato:** testo visualizzato per indirizzare un utente alla selezione di un tipo di certificato.
 
@@ -426,7 +425,7 @@ Testo per tipo di autenticazione:** testo visualizzato per indirizzare un utente
 
 **Personalizzazione per la visualizzazione del certificato client**
 
-**Visualizza solo emittenti di credenziali attendibili:** quando questa opzione è selezionata, l’applicazione client presenta all’utente solo i certificati di emittenti di credenziali configurati per l’attendibilità di AEM forms (consulta Gestione di certificati e credenziali). Se questa opzione non è selezionata, all’utente viene presentato un elenco di tutti i certificati presenti nel sistema dell’utente.
+**Visualizza solo emittenti di credenziali attendibili:** Quando questa opzione è selezionata, l&#39;applicazione client presenta all&#39;utente solo i certificati di emittenti di credenziali configurati per l&#39;attendibilità di AEM forms (vedere Gestione di certificati e credenziali). Se questa opzione non è selezionata, all&#39;utente viene presentato un elenco di tutti i certificati presenti nel sistema dell&#39;utente.
 
 ## Configurare le filigrane dinamiche {#configure-dynamic-watermarks}
 
@@ -559,7 +558,7 @@ La funzione Sicurezza dei documenti genera automaticamente un messaggio e-mail d
 
 L’e-mail di registrazione contiene un collegamento a una pagina di registrazione e informazioni su come registrarsi. Una volta che l’utente invitato si è registrato, la protezione dei documenti invia un’e-mail di attivazione con un collegamento a una pagina di attivazione. Dopo l’attivazione, l’account rimane valido fino a quando non lo disattivi o lo elimini.
 
-Se abiliti la registrazione incorporata, dovrai specificare il server SMTP, i dettagli dell’e-mail di registrazione, le funzionalità di accesso e le informazioni dell’e-mail di reimpostazione della password una sola volta. Prima di abilitare la registrazione incorporata, accertati di aver creato un dominio locale in Gestione utenti e di aver assegnato il ruolo Invita utente di Sicurezza documenti agli utenti e ai gruppi appropriati dell’organizzazione. Consulta [Aggiungere un dominio locale](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Creare e configurare ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles). Se non utilizzi la registrazione incorporata, devi disporre di un sistema di registrazione utenti personalizzato creato con l’SDK AEM Forms. Consulta la guida allo sviluppo di interfacce del provider di servizi (SPI) per AEM Forms in [Programmare con AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Se non utilizzi l’opzione di registrazione incorporata, ti consigliamo di configurare nell’e-mail di attivazione e nella schermata di accesso del client un messaggio che indica agli utenti come contattare l’amministratore per ottenere una nuova password o per altre informazioni.
+Se abiliti la registrazione incorporata, dovrai specificare il server SMTP, i dettagli dell’e-mail di registrazione, le funzionalità di accesso e le informazioni dell’e-mail di reimpostazione della password una sola volta. Prima di abilitare la registrazione incorporata, accertati di aver creato un dominio locale in Gestione utenti e di aver assegnato il ruolo Invita utente di Sicurezza documenti agli utenti e ai gruppi appropriati dell’organizzazione. (Vedi [Aggiungere un dominio locale](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Creare e configurare ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se non si utilizza la registrazione incorporata, è necessario creare un sistema di registrazione utente personalizzato utilizzando AEM Forms SDK. Consulta la guida allo sviluppo di interfacce del provider di servizi (SPI) per AEM Forms in [Programmare con AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Se non utilizzi l’opzione di registrazione incorporata, ti consigliamo di configurare nell’e-mail di attivazione e nella schermata di accesso del client un messaggio che indica agli utenti come contattare l’amministratore per ottenere una nuova password o per altre informazioni.
 
 **Abilitare e configurare la registrazione dell’utente invitato**
 
@@ -584,9 +583,9 @@ Puoi limitare la registrazione con la protezione dei documenti per determinati u
 
 Le impostazioni seguenti si trovano nell’area Filtro di restrizione e-mail della pagina Registrazione utente invitato.
 
-**Esclusione:** digita l’indirizzo e-mail di un utente o un gruppo da escludere. Per escludere più utenti o gruppi, digita ciascun indirizzo e-mail su una nuova riga. Per escludere tutti gli utenti che appartengono a un dominio specifico, digita un carattere jolly e il nome del dominio. Ad esempio, per escludere tutti gli utenti del dominio esempio.com, digita &amp;ast;.esempio.com.
+**Esclusione:** digita l’indirizzo e-mail di un utente o un gruppo da escludere. Per escludere più utenti o gruppi, digita ciascun indirizzo e-mail su una nuova riga. Per escludere tutti gli utenti che appartengono a un dominio specifico, digita un carattere jolly e il nome del dominio. Ad esempio, per escludere tutti gli utenti nel dominio example.com, immettere &amp;ast;.example.com.
 
-**Inclusione:** digita l’indirizzo e-mail di un utente o un gruppo da includere. Per includere più utenti o gruppi, digita ogni indirizzo e-mail su una nuova riga. Per includere tutti gli utenti che appartengono a un dominio, specifico, digita un carattere jolly e il nome del dominio. Ad esempio, per includere tutti gli utenti del dominio esempio.com, digita &amp;ast;.esempio.com.
+**Inclusione:** digita l’indirizzo e-mail di un utente o un gruppo da includere. Per includere più utenti o gruppi, digita ogni indirizzo e-mail su una nuova riga. Per includere tutti gli utenti che appartengono a un dominio, specifico, digita un carattere jolly e il nome del dominio. Ad esempio, per includere tutti gli utenti nel dominio example.com, immettere &amp;ast;.example.com.
 
 ### Parametri del server e dell’account di registrazione {#server-and-registration-account-parameters}
 
@@ -650,7 +649,7 @@ Le impostazioni seguenti si trovano nell’area Configurazione e-mail di invito 
 
 ### Impostazioni e-mail di attivazione {#activation-email-settings}
 
-Dopo aver invitato gli utenti a registrarsi, la protezione dei documenti invia un’e-mail di attivazione.  L’e-mail di attivazione include un collegamento alla pagina di attivazione dell’account in cui gli utenti possono attivare il proprio account. Quando gli account vengono attivati, gli utenti possono accedere alla protezione dei documenti utilizzando il proprio indirizzo e-mail e la password creati al momento della registrazione.
+Dopo aver invitato gli utenti a registrarsi, la protezione dei documenti invia un’e-mail di attivazione. L’e-mail di attivazione include un collegamento alla pagina di attivazione dell’account in cui gli utenti possono attivare il proprio account. Quando gli account vengono attivati, gli utenti possono accedere alla protezione dei documenti utilizzando il proprio indirizzo e-mail e la password creati al momento della registrazione.
 
 Quando il destinatario attiva l’account utente, l’utente diventa un utente locale.
 
@@ -762,8 +761,8 @@ Per impostazione predefinita, la sincronizzazione viene eseguita automaticamente
 
 Nel file di configurazione di protezione dei documenti, puoi specificare la frequenza predefinita della sincronizzazione automatica in background. Questa impostazione funge da periodo di timeout predefinito per le applicazioni client, a meno che il client non imposti esplicitamente il proprio valore di timeout.
 
-1. Esporta il file di configurazione di protezione documenti. (Consulta [Modifica manuale del file di configurazione della protezione dei documenti](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Apri il file di configurazione in un editor e individua il nodo `PolicyServer`. Sotto tale nodo, individua il nodo `ServerSettings`.
+1. Esporta il file di configurazione di protezione documenti. (Consulta [Modifica manuale del file di configurazione di Protezione documenti](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Aprire il file di configurazione in un editor e individua il nodo `PolicyServer`. Sotto tale nodo, individua il nodo `ServerSettings`.
 1. Nel nodo `ServerSettings`, aggiungi la voce seguente, quindi salva il file:
 
    `<entry key="BackgroundSyncFrequency" value="`*tempo* `"/>`
@@ -954,7 +953,7 @@ Per impostazione predefinita, puoi specificare un massimo di cinque elementi in 
 ***Nota **: devi modificare questi parametri con cautela.*
 
 1. Esporta il file di configurazione di protezione documenti. (Consulta [Modifica manuale del file di configurazione della protezione dei documenti](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Apri il file di configurazione in un editor e individua il nodo `ServerSettings`.
+1. Aprire il file di configurazione in un editor e individua il nodo `ServerSettings`.
 1. Nel nodo `ServerSettings` aggiungi le voci seguenti e quindi salva il file: `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
 
    La prima voce, *dimensione masisma del file*, corrisponde alla dimensione massima del file (in KB) consentita per un elemento filigrana del PDF. Il valore predefinito è 100 KB.
@@ -978,7 +977,7 @@ Molti utenti della protezione dei documenti non hanno accesso a collegamenti est
 Le seguenti modifiche apportate al file config.xml disabilitano tutti i collegamenti esterni dalle interfacce utente della gestione dei diritti.
 
 1. Esporta il file di configurazione di protezione documenti. (Consulta [Modifica manuale del file di configurazione della protezione dei documenti](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Apri il file di configurazione in un editor e individua il nodo `DisplaySettings`.
+1. Aprire il file di configurazione in un editor e individua il nodo `DisplaySettings`.
 1. Per disabilitare tutti i collegamenti esterni, nel nodo `DisplaySettings` aggiungi la voce seguente e quindi salva il file: `<entry key="ExternalLinksAllowed" value="false"/>`
 
    ```xml
@@ -992,7 +991,7 @@ Le seguenti modifiche apportate al file config.xml disabilitano tutti i collegam
 Le seguenti modifiche apportate al file config.xml abilitano il supporto per TLS per la funzione di registrazione degli utenti invitati.
 
 1. Esporta il file di configurazione di protezione documenti. (Consulta [Modifica manuale del file di configurazione della protezione dei documenti](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Apri il file di configurazione in un editor e individua il nodo `DisplaySettings`.
+1. Aprire il file di configurazione in un editor e individua il nodo `DisplaySettings`.
 1. Individua il seguente codice: `<node name="ExternalUser">`
 
    ```xml

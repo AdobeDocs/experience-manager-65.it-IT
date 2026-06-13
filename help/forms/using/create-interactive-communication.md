@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '6130'
+source-wordcount: '6132'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Di seguito sono riportati i prerequisiti per la creazione di una comunicazione i
 
 ## Crea comunicazione interattiva {#createic}
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona **[!UICONTROL Crea]** e seleziona **[!UICONTROL Comunicazione interattiva]**. Viene visualizzata la pagina Crea comunicazione interattiva.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
@@ -45,16 +45,16 @@ Di seguito sono riportati i prerequisiti per la creazione di una comunicazione i
    * **[!UICONTROL Modello dati modulo]**: sfogliare e selezionare il modello dati modulo. Per ulteriori informazioni sul modello dati modulo, vedere [Integrazione dati AEM Forms](/help/forms/using/data-integration.md).
 
    * **[!UICONTROL Servizio di precompilazione]**: selezionare il servizio di precompilazione per recuperare i dati e precompilare la comunicazione interattiva.
-   * **[!UICONTROL Tipo di processo Post]**: è possibile selezionare il flusso di lavoro AEM o Forms da attivare quando viene inviata la comunicazione interattiva. Seleziona il tipo di flusso di lavoro da attivare.
+   * **[!UICONTROL Tipo di post-elaborazione]**: è possibile selezionare il flusso di lavoro di AEM o Forms da attivare al momento dell&#39;invio della comunicazione interattiva. Seleziona il tipo di flusso di lavoro da attivare.
 
-   * **[!UICONTROL Processo Post]**: selezionare il nome del flusso di lavoro da attivare. Quando si seleziona un flusso di lavoro AEM, specificare Percorso allegato, Percorso layout, Percorso PDF, Percorso dati di stampa e Percorso dati Web.
+   * **[!UICONTROL Post elaborazione]**: selezionare il nome del flusso di lavoro da attivare. Quando selezioni il flusso di lavoro AEM, fornisci Percorso allegato, Percorso layout, Percorso PDF, Percorso dati di stampa e Percorso dati web.
    * **[!UICONTROL Tag]**: seleziona i tag da applicare alla comunicazione interattiva. Puoi anche immettere un nome di tag nuovo/personalizzato e premere Invio per crearlo.
-   * **[!UICONTROL Autore]**: il nome dell&#39;autore viene ricavato automaticamente dal nome utente dell&#39;utente connesso.
-   * **[!UICONTROL Data Publish:]** Immettere la data di pubblicazione della comunicazione interattiva.
+   * Il nome dell&#39;autore **[!UICONTROL Author]**:The viene ricavato automaticamente dal nome utente dell&#39;utente connesso.
+   * **[!UICONTROL Data pubblicazione:]** Immettere la data di pubblicazione della comunicazione interattiva.
    * **[!UICONTROL Data annullamento pubblicazione]**: immetti la data in cui annullare la pubblicazione della comunicazione interattiva.
 
 1. Seleziona **[!UICONTROL Avanti]**. Viene visualizzata la schermata che consente di specificare i dettagli dei canali di stampa e web.
-1. Immetti quanto segue:
+1. Immetti le seguenti informazioni:
 
    * **[!UICONTROL Stampa]**: selezionare questa opzione per generare il canale di stampa della comunicazione interattiva.
    * **[!UICONTROL Modello di stampa]**: sfoglia e seleziona un XDP come modello di stampa.
@@ -296,11 +296,11 @@ Nella tabella seguente è riportato un esempio dei valori visualizzati in seguit
 
 | Tipo | Valore predefinito | Pattern di visualizzazione | Valore visualizzato | Descrizione |
 |---|---|---|---|---|
-| Codice fiscale | 123456789 | testo{999-99-9999} | 123 45 6789 | Il numero di cifre nel campo del valore predefinito corrisponde al numero di cifre nel campo Pattern. Il valore basato sul modello viene visualizzato correttamente. |
+| Codice fiscale | 123456789 | testo{999-99-9999} | 123-45-6789 | Il numero di cifre nel campo del valore predefinito corrisponde al numero di cifre nel campo Pattern. Il valore basato sul modello viene visualizzato correttamente. |
 | Codice fiscale | 1234567 | testo{999-99-9999} | 1-23-4567 | Il numero di cifre nel campo del valore predefinito è inferiore al numero di cifre nel campo Pattern. Il modello si applica alle 7 cifre disponibili. |
 | Codice fiscale | 1234567890 | testo{999-99-9999} | 1234567890 | Il numero di cifre nel campo del valore predefinito è maggiore del numero di cifre nel campo Pattern. Di conseguenza, il valore visualizzato non cambia. |
 
-Se non viene specificato un modello di visualizzazione per una variabile o un elemento del modello dati del modulo, per impostazione predefinita viene utilizzata la [configurazione globale del frammento di documento](https://helpx.adobe.com/it//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html).
+Se non viene specificato un modello di visualizzazione per una variabile o un elemento del modello dati del modulo, per impostazione predefinita viene utilizzata la [configurazione globale del frammento di documento](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html).
 
 Se non si applica un motivo di visualizzazione a una variabile di tipo numerico, nell&#39;anteprima di stampa il motivo viene visualizzato in base alla configurazione globale del frammento di documento. Se si applicano modifiche alla configurazione globale predefinita del frammento di documento, il modello viene comunque visualizzato nell’interfaccia utente dell’agente in base ai separatori predefiniti definiti per le impostazioni internazionali.
 
@@ -314,7 +314,7 @@ Per condizionare componenti o contenuti nella comunicazione interattiva, selezio
 
 Per ulteriori informazioni, consulta:
 
-* [Editor regole](/help/forms/using/rule-editor.md)
+* [Editor di regole](/help/forms/using/rule-editor.md)
 * [Introduzione all’authoring di comunicazioni interattive](/help/forms/using/introduction-interactive-communication-authoring.md)
 
 ## Utilizzo delle tabelle {#tables}
@@ -455,7 +455,7 @@ Utilizzare la pagina **Proprietà** per:
 
 Per accedere alla pagina **Proprietà**:
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Accedi all&#39;istanza di AEM Author e passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
 1. Selezionare la comunicazione interattiva e selezionare **Proprietà**.
 1. Selezionare la scheda **Generale** per modificare i campi **Titolo** e **Descrizione**.
 
@@ -546,7 +546,7 @@ Passa il puntatore del mouse sull&#39;area di destinazione o sulla variabile ril
 
 L’ereditarietà dei componenti all’interno dell’area di destinazione viene annullata e ora puoi modificarli in base alle esigenze.
 
-### Riabilita ereditarietà {#re-enable-inheritance}
+### Abilita di nuovo ereditarietà {#re-enable-inheritance}
 
 Nel canale web, se hai annullato l’ereditarietà di un componente, puoi riabilitarlo. Per riabilitare l&#39;ereditarietà, passa il cursore del mouse sul limite dell&#39;area di destinazione pertinente, che include il componente, quindi seleziona ![reenableinheritance](assets/reenableinheritance.png).
 
@@ -618,7 +618,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-Per generare l&#39;output in qualsiasi altro formato, specificate il tipo di formato di output. Per un elenco dei tipi di formato di output supportati, fare riferimento a [API PrintChannel](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html).
+Per generare l&#39;output in qualsiasi altro formato, specificate il tipo di formato di output. Per un elenco dei tipi di formato di output supportati, fare riferimento a [API PrintChannel](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html).
 
 Ad esempio, potete utilizzare l&#39;esempio seguente per definire PCL come formato di output per una comunicazione interattiva:
 

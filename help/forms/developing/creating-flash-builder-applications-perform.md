@@ -1,6 +1,6 @@
 ---
-title: Creazione di applicazioni di Flash Builder che eseguono l'autenticazione SSO tramite token HTTP
-description: Creazione di un'applicazione client tramite un Flash Builder che esegue l'autenticazione Single Sign-On (SSO) tramite token HTTP. Autentica un utente per un’operazione una sola volta e utilizza tale autenticazione per eseguire più operazioni AEM Forms.
+title: Creazione di applicazioni Flash Builder che eseguono l'autenticazione SSO tramite token HTTP
+description: Creare un'applicazione client utilizzando Flash Builder che esegue l'autenticazione Single Sign On (SSO) utilizzando token HTTP. Autentica un utente per un’operazione una sola volta e utilizza tale autenticazione per eseguire più operazioni AEM Forms.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,18 +11,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 0%
+source-wordcount: '1794'
+ht-degree: 1%
 
 ---
 
-# Creazione di applicazioni di Flash Builder che eseguono l&#39;autenticazione SSO tramite token HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# Creazione di applicazioni Flash Builder che eseguono l’autenticazione SSO tramite token HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-È possibile creare un&#39;applicazione client utilizzando un Flash Builder che esegue l&#39;autenticazione Single Sign-On (SSO) utilizzando token HTTP. Si supponga, ad esempio, di creare un&#39;applicazione basata sul Web utilizzando Flash Builder. Si supponga quindi che l&#39;applicazione contenga viste diverse, in cui ciascuna vista richiama un&#39;operazione AEM Forms diversa. Invece di autenticare un utente per ogni operazione di Forms, puoi creare una pagina di accesso che consente a un utente di eseguire l’autenticazione una volta. Una volta eseguita l’autenticazione, l’utente può richiamare più operazioni senza doverla ripetere. Ad esempio, se un utente ha effettuato l’accesso a Workspace (o a un’altra applicazione Forms), non sarà necessario ripetere l’autenticazione.
+È possibile creare un&#39;applicazione client utilizzando Flash Builder che esegue l&#39;autenticazione Single Sign On (SSO) utilizzando token HTTP. Si supponga, ad esempio, di creare un&#39;applicazione basata sul Web utilizzando Flash Builder. Si supponga quindi che l&#39;applicazione contenga viste diverse, in cui ciascuna vista richiama un&#39;operazione AEM Forms diversa. Invece di autenticare un utente per ogni operazione di Forms, puoi creare una pagina di accesso che consente a un utente di eseguire l’autenticazione una volta. Una volta eseguita l’autenticazione, l’utente può richiamare più operazioni senza doverla ripetere. Ad esempio, se un utente ha effettuato l’accesso a Workspace (o a un’altra applicazione Forms), non sarà necessario ripetere l’autenticazione.
 
-Sebbene l&#39;applicazione client contenga la logica dell&#39;applicazione necessaria per eseguire l&#39;autenticazione SSO, la gestione degli utenti di AEM Forms esegue l&#39;autenticazione utente effettiva. Per autenticare un utente tramite token HTTP, l&#39;applicazione client richiama l&#39;operazione `authenticateWithHTTPToken` del servizio Authentication Manager. Gestione utenti è in grado di autenticare gli utenti utilizzando un token HTTP. Per le successive chiamate remote o ai servizi Web ad AEM Forms, non è necessario trasmettere le credenziali per l’autenticazione.
+Sebbene l&#39;applicazione client contenga la logica dell&#39;applicazione necessaria per eseguire l&#39;autenticazione SSO, Gestione utenti di AEM Form esegue l&#39;autenticazione utente effettiva. Per autenticare un utente tramite token HTTP, l&#39;applicazione client richiama l&#39;operazione `authenticateWithHTTPToken` del servizio Authentication Manager. Gestione utenti è in grado di autenticare gli utenti utilizzando un token HTTP. Per le successive chiamate remote o ai servizi Web ad AEM Forms, non è necessario trasmettere le credenziali per l’autenticazione.
 
 >[!NOTE]
 >
@@ -34,9 +34,9 @@ Il seguente processo AEM Forms di breve durata, denominato `MyApplication/Encryp
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
-L&#39;applicazione client generata tramite Flash Builder interagisce con il servlet di sicurezza di User Manager configurato in `/um/login` e `/um/logout`. L&#39;applicazione client invia quindi una richiesta all&#39;URL `/um/login` durante l&#39;avvio per determinare lo stato dell&#39;utente. Quindi User Manager risponde con lo stato utente. L’applicazione client e il servlet di sicurezza User Manager comunicano tramite HTTP.
+L&#39;applicazione client creata con Flash Builder interagisce con il servlet di sicurezza di User Manager configurato alle `/um/login` e `/um/logout`. L&#39;applicazione client invia quindi una richiesta all&#39;URL `/um/login` durante l&#39;avvio per determinare lo stato dell&#39;utente. Quindi User Manager risponde con lo stato utente. L’applicazione client e il servlet di sicurezza User Manager comunicano tramite HTTP.
 
 **Formato richiesta**
 
@@ -50,7 +50,7 @@ Il valore `j_password` è necessario solo per le richieste di credenziali. Se il
 
 >[!NOTE]
 >
->Per una corretta gestione di i18n, accertati che questi valori siano in formato POST.
+>Per una corretta gestione di i18n, assicurarsi che questi valori siano in formato POST.
 
 **Formato risposta**
 
@@ -94,7 +94,7 @@ Quando un’applicazione client si disconnette, puoi inviare una richiesta al se
 
 Quando riceve questa richiesta, il servlet di sicurezza User Manager elimina il cookie `lcAuthToken` e risponde con `authstate=LOGGED_OUT`. Dopo che l&#39;applicazione client riceve questo valore, l&#39;applicazione può eseguire attività di pulizia.
 
-## Creazione di un&#39;applicazione client che autentica gli utenti AEM form mediante SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
+## Creazione di un&#39;applicazione client per l&#39;autenticazione degli utenti di AEM Form tramite SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
 
 Per illustrare come creare un&#39;applicazione client che esegue l&#39;autenticazione SSO, viene creata un&#39;applicazione client di esempio. Nella figura seguente vengono illustrati i passaggi eseguiti dall&#39;applicazione client per l&#39;autenticazione di un utente tramite SSO.
 

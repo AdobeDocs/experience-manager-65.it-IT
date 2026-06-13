@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '6905'
+source-wordcount: '6847'
 ht-degree: 0%
 
 ---
@@ -227,8 +227,8 @@ Un elenco è un gruppo di contenuti correlati che è possibile utilizzare in un 
 * Durante la creazione di un elenco, è possibile specificare un tipo, ad esempio:
 * **Normale**: nessuna formattazione di stile aggiuntiva applicata all&#39;elenco.
 * **Puntato**: elenco formattato con un punto elenco semplice.
-* **Numerato**: un elenco numerico con la scelta delle cifre Standard (1,2,...), Upper Roman (I, II, ...) e Lower Roman (i, ii,...).
-* **Lettered**: un elenco alfabetico con la scelta di lettere minuscole (a,b,...) e maiuscole (A,B,...).
+* **Numerato**: un elenco numerico con la scelta di Standard (1,2,...), Upper Roman (I, II, ...) e Lower Roman (i, ii,...) numeri.
+* **Lettered**: un elenco alfabetico con la scelta delle lettere minuscole (a, b,...) e maiuscole (A,B,...) lettere.
 * **Personalizzato**: puoi creare qualsiasi tipo numerato/lettera e valori di prefisso e suffisso a tua scelta.
 
 1. Seleziona **Forms** > **Frammenti di documento**.
@@ -320,7 +320,7 @@ L’editor delle condizioni consente di specificare una condizione predefinita. 
 1. Per aggiungere una risorsa alla condizione, selezionala nella pagina Seleziona Assets e seleziona **Fine**. Le risorse vengono aggiunte al riquadro Espressione.
 1. Per specificare il comportamento della condizione in fase di esecuzione, è possibile selezionare le opzioni seguenti:
 
-   * **Disabilita valutazione risultati multipli\Abilita valutazione risultati multipli**: quando questa opzione è abilitata (appare come &quot;Abilita più...&quot;), tutte le condizioni vengono valutate e il risultato è la somma di tutte le condizioni vere. Se questa opzione è disabilitata (appare come &quot;Disable Multiple...&quot;), solo la prima condizione che risulta essere true viene valutata e diventa l&#39;output della condizione.
+   * **Disabilita valutazione risultati multipli\Abilita valutazione risultati multipli**: quando questa opzione è abilitata (appare come &quot;Abilita più...&quot;), tutte le condizioni vengono valutate e il risultato è la somma di tutte le condizioni vere. Se questa opzione è disabilitata (viene visualizzato &quot;Disable Multiple...&quot; (Disabilita più...)) quindi solo la prima condizione che si trova true viene valutata e diventa l’output della condizione.
    * **Interruzione di pagina**: seleziona questa opzione ( ![interruzione](assets/break.png)) per aggiungere un&#39;interruzione di pagina tra i moduli delle condizioni. Se questa opzione non è selezionata ( ![nobreak](assets/nobreak.png)), se una condizione sta per essere riportata alla pagina successiva, l&#39;intera condizione viene spostata alla pagina successiva invece di interrompere la pagina tra le condizioni.
 
 1. Per modificare l&#39;ordine delle risorse all&#39;interno della condizione, seleziona e tieni premuto l&#39;icona delle frecce ( ![trascinamento](assets/dragndrop.png) ) e trascina. Quando l’utente apre un modello di lettera nell’interfaccia utente Crea corrispondenza, il contenuto viene assemblato nell’ordine definito qui.
@@ -441,7 +441,7 @@ In questo modo, per impostazione predefinita, le sottomaschere inserite utilizza
 
 #### Conformità alla sezione 508 {#section-compliance}
 
-Se la lettera completata creata nell’interfaccia utente Crea corrispondenza viene utilizzata per compilare un flusso di lavoro successivo. Segui queste raccomandazioni relative alla Sezione 508 durante la creazione del layout. In caso contrario, il PDF della lettera verrà visualizzato e sarà possibile ignorare i seguenti consigli:
+Se la lettera completata creata nell’interfaccia utente Crea corrispondenza viene utilizzata per compilare un flusso di lavoro successivo. Segui queste raccomandazioni relative alla Sezione 508 durante la creazione del layout. In caso contrario, la lettera PDF verrà visualizzata e sarà possibile ignorare i seguenti consigli:
 
 * Tutte le sottomaschere dell&#39;area di destinazione e tutti i campi in un layout hanno un ordine di tabulazione.
 * Per impostazione predefinita, i campi con didascalie sono conformi allo standard 508. L’attributo /field/assist/speak@priority del campo è impostato su &quot;custom&quot; per impostazione predefinita, il che significa che, a meno che non venga fornito un testo personalizzato per la lettura dello schermo, questa legge la didascalia del campo.
@@ -499,7 +499,7 @@ In questo esempio viene illustrato come creare una tabella dinamica e una tabell
 
    ![Struttura dizionario dati](assets/dd.jpeg)
 
-[Ottieni file](assets/exportpackage_1431709897770.cmp.zip)
+   [Ottieni il file](assets/exportpackage_1431709897770.cmp.zip)
 
 1. In Designer, crea due XDP (frammenti di layout): una tabella dinamica e una tabella statica. Per entrambi i layout:
 
@@ -511,9 +511,9 @@ In questo esempio viene illustrato come creare una tabella dinamica e una tabell
    Per ulteriori informazioni sull&#39;utilizzo dei frammenti di layout, vedere [Frammenti di layout](#layoutfragments).
 Per ulteriori informazioni sulla progettazione dei layout, vedere la [Guida di Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
-[Ottieni file](assets/static.xdp.zip)
+   [Ottieni il file](assets/static.xdp.zip)
 
-[Ottieni file](assets/dynamic.xdp.zip)
+   [Ottieni il file](assets/dynamic.xdp.zip)
 
 1. Carica gli XDP in AEM Forms.
 1. Crea un frammento di layout basato su XDP dinamico. Nella scheda Tabella delle proprietà viene visualizzato che la tabella è dinamica (campo Configurazione per ). Il numero di righe (1) e colonne (3) è derivato dal frammento XDP/Layout.

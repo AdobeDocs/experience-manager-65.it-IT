@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2190'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Un XDP è progettato in Adobe Forms Designer. Questo articolo fornisce dettagli 
 
 ## Creazione di un layout per le lettere o per il canale di stampa delle comunicazioni interattive {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Un layout definisce il layout grafico di un canale lettera/stampa di una comunicazione interattiva. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene anche sottomaschere vuote che denotano le aree di destinazione. Creare il layout nella finestra di progettazione dei moduli e, al termine, lo specialista dell&#39;applicazione lo carica sul server AEM. Da qui, puoi selezionare il layout durante la creazione di un modello di corrispondenza o di un canale di stampa di una comunicazione interattiva.
+Un layout definisce il layout grafico di un canale lettera/stampa di una comunicazione interattiva. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene anche sottomaschere vuote che denotano le aree di destinazione. Crea il layout nel progettista del modulo e, una volta completato, lo specialista dell’applicazione lo carica sul server AEM. Da qui, puoi selezionare il layout durante la creazione di un modello di corrispondenza o di un canale di stampa di una comunicazione interattiva.
 
 ![Designer: creazione di un layout](assets/claimsubrogationlayout.png)
 

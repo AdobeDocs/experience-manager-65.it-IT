@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '6201'
-ht-degree: 0%
+source-wordcount: '6236'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ La tabella seguente descrive ogni passaggio del processo di autenticazione.
 
 >[!NOTE]
 >
->Se il fuso orario del server è diverso da quello del client, quando si utilizza il WSDL per il servizio AEM Forms Generate PDF su uno stack SOAP nativo utilizzando un client .NET in un cluster Application Server WebSphere, può verificarsi il seguente errore di autenticazione di User Management:
+>Se il fuso orario del server è diverso da quello del client, quando si utilizza il WSDL per il servizio AEM Forms Generate PDF in uno stack SOAP nativo utilizzando un client .NET in un cluster Application Server WebSphere, può verificarsi il seguente errore di autenticazione di User Management:
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 
@@ -229,7 +229,7 @@ Aggiungere utenti utilizzando l&#39;API del servizio Gestione directory (servizi
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -358,7 +358,7 @@ Eliminare gli utenti utilizzando l&#39;API del servizio Directory Manager (servi
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -541,7 +541,7 @@ Per gestire in modo programmatico utenti, gruppi e domini utilizzando (Java), es
 
 1. Creare un client DirectoryManagerService.
 
-   Creare un oggetto `DirectoryManagerServiceClient` utilizzando il relativo costruttore e passando un oggetto `ServiceClientFactory` che contiene proprietà di connessione. Per informazioni, vedere [Impostazione delle proprietà di connessione &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Creare un oggetto `DirectoryManagerServiceClient` utilizzando il relativo costruttore e passando un oggetto `ServiceClientFactory` che contiene proprietà di connessione. Per informazioni, vedere [Impostazione delle proprietà di connessione ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Richiama le operazioni appropriate dell’utente o del gruppo.
 
@@ -602,7 +602,7 @@ Per gestire in modo programmatico utenti, gruppi e domini tramite l&#39;API del 
 
 In questo argomento viene descritto come utilizzare l&#39;API del servizio Gestione autorizzazioni (Java) per assegnare, rimuovere e determinare in modo programmatico ruoli e autorizzazioni.
 
-In AEM Forms, un *ruolo* è un gruppo di autorizzazioni per accedere a una o più risorse a livello di sistema. Queste autorizzazioni vengono create tramite Gestione utenti e vengono applicate dai componenti del servizio. Ad esempio, un amministratore può assegnare il ruolo di &quot;Autore set di criteri&quot; a un gruppo di utenti. Il Rights Management consente quindi agli utenti del gruppo con tale ruolo di creare set di criteri tramite la console di amministrazione.
+In AEM Forms, un *ruolo* è un gruppo di autorizzazioni per accedere a una o più risorse a livello di sistema. Queste autorizzazioni vengono create tramite Gestione utenti e vengono applicate dai componenti del servizio. Ad esempio, un amministratore può assegnare il ruolo di &quot;Autore set di criteri&quot; a un gruppo di utenti. Rights Management consentirebbe quindi agli utenti del gruppo con tale ruolo di creare set di criteri tramite la console di amministrazione.
 
 Esistono due tipi di ruoli: *ruoli predefiniti* e *ruoli personalizzati*. I ruoli predefiniti (*ruoli di sistema)* sono già residenti in AEM Forms. Si presume che i ruoli predefiniti non possano essere eliminati o modificati dall’amministratore e che pertanto non siano modificabili. I ruoli personalizzati creati dall’amministratore, che può successivamente modificarli o eliminarli, sono quindi modificabili.
 
@@ -694,7 +694,7 @@ Gestisci ruoli e autorizzazioni tramite l’API del servizio Gestione autorizzaz
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -783,7 +783,7 @@ Dopo aver creato il client del servizio, è possibile richiamare l&#39;operazion
 
 **Recupera il contesto di autenticazione**
 
-Dopo aver autenticato l’utente, puoi creare un contesto basato sull’utente autenticato. Quindi puoi utilizzare il contenuto per richiamare un altro servizio AEM Forms. È ad esempio possibile utilizzare il contesto per creare un `EncryptionServiceClient` e crittografare un documento PDF con una password. Verificare che l&#39;utente autenticato disponga del ruolo denominato `Services User` necessario per richiamare un servizio AEM Forms.
+Dopo aver autenticato l’utente, puoi creare un contesto basato sull’utente autenticato. Quindi puoi utilizzare il contenuto per richiamare un altro servizio AEM Forms. È ad esempio possibile utilizzare il contesto per creare un `EncryptionServiceClient` e crittografare un documento di PDF con una password. Verificare che l&#39;utente autenticato disponga del ruolo denominato `Services User` necessario per richiamare un servizio AEM Forms.
 
 **Consulta anche**
 
@@ -851,7 +851,7 @@ Autentica un utente tramite l’API del servizio Authentication Manager (servizi
 
 ## Sincronizzazione degli utenti a livello di programmazione {#programmatically-synchronizing-users}
 
-Puoi sincronizzare gli utenti a livello di programmazione utilizzando l’API User Management. Quando sincronizzi gli utenti, aggiorni AEM Forms con i dati utente presenti nell’archivio utenti. Ad esempio, si supponga di aggiungere nuovi utenti all&#39;archivio utenti. Dopo aver eseguito un&#39;operazione di sincronizzazione, i nuovi utenti diventano utenti di moduli AEM. Inoltre, gli utenti che non si trovano più nel tuo archivio utenti vengono rimossi da AEM Forms.
+Puoi sincronizzare gli utenti a livello di programmazione utilizzando l’API User Management. Quando sincronizzi gli utenti, aggiorni AEM Forms con i dati utente presenti nell’archivio utenti. Ad esempio, si supponga di aggiungere nuovi utenti all&#39;archivio utenti. Dopo aver eseguito un&#39;operazione di sincronizzazione, i nuovi utenti diventano utenti di AEM Forms. Inoltre, gli utenti che non si trovano più nel tuo archivio utenti vengono rimossi da AEM Forms.
 
 Il diagramma seguente mostra la sincronizzazione di AEM Forms con un archivio utenti.
 

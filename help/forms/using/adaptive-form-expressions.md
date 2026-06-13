@@ -1,5 +1,5 @@
 ---
-title: Espressioni modulo adattivo
+title: Espressioni dei moduli adattivi
 description: Utilizza le espressioni per moduli adattivi per aggiungere convalida, calcolo e attivare o disattivare automaticamente la visibilità di una sezione.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 0%
+source-wordcount: '2779'
+ht-degree: 1%
 
 ---
 
-# Espressioni modulo adattivo{#adaptive-form-expressions}
+# Espressioni dei moduli adattivi{#adaptive-form-expressions}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -199,7 +199,7 @@ Per rendere obbligatorio un componente, nella finestra di dialogo **Modifica** d
 
 ### Modelli di convalida {#validation-patterns}
 
-Per un campo sono disponibili più modelli di convalida predefiniti. Per selezionare un pattern di convalida, nella finestra di dialogo **Modifica** del componente, individua la sezione **Patterns** e seleziona **Patterns**. Puoi creare un pattern di convalida personalizzato in una casella di testo **Pattern**. Lo stato di convalida viene restituito **True** solo se i dati compilati sono conformi al modello di convalida, altrimenti viene restituito **False**. Per scrivere un proprio modello di convalida personalizzato, vedere [Supporto della clausola immagine per i moduli HTML5](/help/forms/using/picture-clause-support.md).
+Per un campo sono disponibili più modelli di convalida predefiniti. Per selezionare un pattern di convalida, nella finestra di dialogo **Modifica** del componente, individua la sezione **Patterns** e seleziona **Patterns**. Puoi creare un pattern di convalida personalizzato in una casella di testo **Pattern**. Lo stato di convalida viene restituito **True** solo se i dati compilati sono conformi al modello di convalida, altrimenti viene restituito **False**. Per scrivere un proprio modello di convalida personalizzato, vedere [Supporto delle clausole immagine per i moduli HTML5](/help/forms/using/picture-clause-support.md).
 
 ### Espressioni di convalida {#validation-expressions}
 
@@ -229,7 +229,7 @@ GuideBridge è una raccolta di API che possono essere utilizzate per interagire 
 
 #### Utilizzo di GuideBridge all&#39;esterno delle espressioni  {#using-guidebridge-outside-expressions-nbsp}
 
-È inoltre possibile utilizzare le API GuideBridge al di fuori delle espressioni. È possibile, ad esempio, utilizzare l’API GuideBridge per impostare la comunicazione tra il HTML della pagina che ospita il modulo adattivo e il modello di modulo. Inoltre, puoi impostare il valore proveniente dall’elemento padre dell’Iframe che ospita il modulo.
+È inoltre possibile utilizzare le API GuideBridge al di fuori delle espressioni. Ad esempio, puoi utilizzare l’API GuideBridge per impostare la comunicazione tra la pagina HTML che ospita il modulo adattivo e il modello di modulo. Inoltre, puoi impostare il valore proveniente dall’elemento padre dell’Iframe che ospita il modulo.
 
 Per utilizzare l&#39;API GuideBridge per l&#39;esempio sopra riportato, acquisire un&#39;istanza di GuideBridge. Per acquisire l&#39;istanza, ascoltare l&#39;evento `bridgeInitializeStart` di un oggetto `window`:
 
@@ -273,12 +273,12 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### Creazione di pattern personalizzati per un campo {#creating-custom-patterns-for-a-field}
 
-Come accennato in precedenza, i moduli adattivi consentono all’autore di fornire modelli per la convalida o i formati di visualizzazione. Oltre a utilizzare motivi predefiniti, è possibile definire un motivo personalizzato riutilizzabile per un componente modulo adattivo. È ad esempio possibile definire un campo di testo o un campo numerico. Una volta definiti, è possibile utilizzare questi pattern in tutte le maschere per il tipo di componente specificato. Ad esempio, puoi creare un motivo personalizzato per un campo di testo e utilizzarlo nei campi di testo dei moduli adattivi. Potete selezionare il pattern personalizzato accedendo alla relativa sezione nella finestra di dialogo per modifica di un componente. Per informazioni dettagliate sulla definizione o il formato del pattern, vedere [Supporto della clausola Picture per i moduli HTML5](/help/forms/using/picture-clause-support.md).
+Come accennato in precedenza, i moduli adattivi consentono all’autore di fornire modelli per la convalida o i formati di visualizzazione. Oltre a utilizzare motivi predefiniti, è possibile definire un motivo personalizzato riutilizzabile per un componente modulo adattivo. È ad esempio possibile definire un campo di testo o un campo numerico. Una volta definiti, è possibile utilizzare questi pattern in tutte le maschere per il tipo di componente specificato. Ad esempio, puoi creare un motivo personalizzato per un campo di testo e utilizzarlo nei campi di testo dei moduli adattivi. Potete selezionare il pattern personalizzato accedendo alla relativa sezione nella finestra di dialogo per modifica di un componente. Per informazioni dettagliate sulla definizione o il formato del motivo, vedere [Supporto della clausola immagine per i moduli HTML5](/help/forms/using/picture-clause-support.md).
 
 Per creare un pattern personalizzato per un tipo di campo specifico e riutilizzarlo per altri campi dello stesso tipo, effettua le seguenti operazioni:
 
 1. Passa a CRXDE Lite nell’istanza di authoring.
-1. Crea una cartella per mantenere i modelli personalizzati. Nella directory /apps, crea un nodo di tipo sling:folder. Ad esempio, creare un nodo con il nome `customPatterns`. In questo nodo creare un altro nodo di tipo `nt:unstructed` e denominarlo `textboxpatterns`. Questo nodo contiene i vari modelli personalizzati che desideri aggiungere.
+1. Crea una cartella per mantenere i modelli personalizzati. Nella directory /apps creare un nodo di tipo sling:folder. Ad esempio, creare un nodo con il nome `customPatterns`. In questo nodo creare un altro nodo di tipo `nt:unstructed` e denominarlo `textboxpatterns`. Questo nodo contiene i vari modelli personalizzati che desideri aggiungere.
 1. Apri la scheda Proprietà del nodo creato. Aprire ad esempio la scheda Proprietà di `textboxpatterns`. Aggiungere la proprietà `guideComponentType` a questo nodo e impostarne il valore su *fd/af/components/formatter/guideTextBox*.
 
 1. Il valore di questa proprietà varia a seconda del campo per il quale si desidera definire i modelli. Per il campo numerico, il valore della proprietà `guideComponentType` è *fd/af/components/formatter/guideNumericBox*. Il valore del campo Datepicker è *fd/af/components/formatter/guideDatepicker*.

@@ -13,7 +13,7 @@ exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4530'
 ht-degree: 8%
 
 ---
@@ -22,12 +22,12 @@ ht-degree: 8%
 
 Un predefinito visualizzatore è una raccolta di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse rich media sugli schermi dei loro computer e sui loro dispositivi mobili. Gli amministratori possono creare predefiniti visualizzatore. Le impostazioni sono disponibili per un array di opzioni di configurazione del visualizzatore. Ad esempio, è possibile modificare le dimensioni di visualizzazione o il comportamento di zoom del visualizzatore.
 
-Per istruzioni su come creare e personalizzare i predefiniti visualizzatore di HTML5, consulta la *Documentazione dell&#39;API SDK del visualizzatore di Adobe HTML Dynamic Media*. Il SDK è disponibile sul server di pubblicazione IS incorporato nel SDK stesso. Ogni versione della libreria include la propria documentazione di SDK.
+Per istruzioni su come creare e personalizzare i predefiniti visualizzatore di HTML5, consulta la *Documentazione dell&#39;API SDK del visualizzatore di Adobe Dynamic Media*. Il SDK è disponibile sul server di pubblicazione IS incorporato nel SDK stesso. Ogni versione della libreria include la propria documentazione di SDK.
 
 Percorso: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Ad esempio, 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulta anche la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=it).
+Consulta anche la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 Questa sezione descrive come creare, modificare e gestire i predefiniti visualizzatore. Puoi applicare un predefinito visualizzatore a una risorsa in qualsiasi momento in cui la visualizzi in anteprima. Vedere [Applicazione dei predefiniti visualizzatore](#applying-a-viewer-preset-to-an-asset).
 
@@ -39,7 +39,7 @@ Questa sezione descrive come creare, modificare e gestire i predefiniti visualiz
 
 Tutti i visualizzatori predefiniti supportano l’accessibilità da tastiera.
 
-Vedi anche [Accesso facilitato alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=it).
+Vedi anche [Accesso facilitato alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
 ## Gestisci predefiniti visualizzatore {#managing-viewer-presets-1}
 
@@ -55,7 +55,7 @@ Per aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e 
 
 Pagine web diverse hanno esigenze diverse. Ad esempio, a volte può essere utile una pagina web che fornisca un collegamento per aprire HTML5 Viewer in una finestra del browser separata. In altri casi, potrebbe essere necessario incorporare il visualizzatore HTML5 direttamente nella pagina di hosting. In quest’ultimo caso, la pagina web potrebbe avere un layout statico. In alternativa, può essere &quot;reattivo&quot; e visualizzato in modo diverso su dispositivi diversi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti e forniti con Dynamic Media supportano sia le pagine web statiche che quelle reattive.
 
-Per ulteriori informazioni su come incorporare i visualizzatori reattivi nelle pagine Web, consulta la [Libreria immagini reattive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=it).
+Per ulteriori informazioni su come incorporare i visualizzatori reattivi nelle pagine Web, consulta la [Libreria immagini reattive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html).
 
 >[!NOTE]
 >
@@ -139,8 +139,8 @@ Durante la creazione dei predefiniti visualizzatore, gli amministratori possono 
    <td><strong>Zoom verticale</strong></td>
    <td><p>Il visualizzatore con zoom verticale consente di massimizzare l’esperienza di visualizzazione delle immagini del prodotto, per offrire agli utenti la migliore rappresentazione possibile di un prodotto. La posizione verticale dei campioni è la seguente:</p>
     <ul>
-     <li>Assicura che i campioni siano "sopra la piega".<br/> I campioni orizzontali, a seconda delle dimensioni dello schermo del desktop dell'utente, non sono visibili finché l'utente non scorre la pagina verso il basso. Posizionando i campioni verticalmente nel visualizzatore, si garantisce che siano visibili indipendentemente dalle dimensioni dello schermo dell'utente.</li>
-     <li>Ingrandisce le dimensioni dell'immagine principale.<br /> Con i campioni orizzontali, è necessario riservare spazio sulla pagina per assicurarsi che siano visibili. Questo posizionamento riduce le dimensioni dell'immagine principale. Con un layout di campione verticale, tuttavia, non è necessario allocare questo spazio. È quindi possibile ingrandire l'immagine principale.</li>
+     <li>Assicura che i campioni siano "al di sopra della piega".<br/> Con i campioni orizzontali, a seconda delle dimensioni dello schermo del desktop dell’utente, non sono visibili fino a quando l’utente non scorre la pagina verso il basso. Posizionando i campioni verticalmente nel visualizzatore, si garantisce che siano visibili indipendentemente dalle dimensioni dello schermo dell'utente.</li>
+     <li>Ingrandisce le dimensioni dell'immagine principale.<br /> Nel caso dei campioni orizzontali, è necessario riservare spazio sulla pagina per garantirne la visibilità. Questo posizionamento riduce le dimensioni dell'immagine principale. Con un layout di campione verticale, tuttavia, non è necessario allocare questo spazio. È quindi possibile ingrandire l'immagine principale.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -158,7 +158,7 @@ Vedi anche [Demo live](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/l
 
 Per informazioni sulle versioni supportate del browser web e del sistema operativo per i visualizzatori, consulta le Note sulla versione dei visualizzatori.
 
-Consultare le note sulla versione dei visualizzatori nel sommario della [Guida di riferimento dei visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=it).
+Consultare le note sulla versione dei visualizzatori nel sommario della [Guida di riferimento dei visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 >[!NOTE]
 >
@@ -440,13 +440,13 @@ Consulta [Considerazioni speciali per la creazione di un predefinito per visuali
 
      L’editor visivo consente di vedere l’effetto di una determinata proprietà su uno stile. Imposta o regola qualsiasi proprietà per vedere immediatamente quale effetto ha sul visualizzatore utilizzando l&#39;esempio a sinistra dell&#39;editor.
 
-     Le proprietà di stile CSS per ogni tipo di predefinito visualizzatore sono descritte nell&#39;argomento della Guida &quot;Personalizzazione del visualizzatore *`<viewer name>`*&quot; nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=it). Ad esempio, se stai creando un predefinito visualizzatore di tipo `Mixed_Media`, consulta [Personalizzazione del visualizzatore di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=it) per un elenco e una descrizione di ciascuna proprietà.
+     Le proprietà di stile CSS per ogni tipo di predefinito visualizzatore sono descritte nell&#39;argomento della Guida &quot;Personalizzazione del visualizzatore *`<viewer name>`*&quot; nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Ad esempio, se stai creando un predefinito visualizzatore di tipo `Mixed_Media`, consulta [Personalizzazione del visualizzatore di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) per un elenco e una descrizione di ciascuna proprietà.
 
    * Se hai definito le impostazioni stile in un file CSS separato, puoi caricarlo in AEM Assets. Seleziona **[!UICONTROL Importa CSS]** sotto il menu a discesa **[!UICONTROL Tipo selezionato]** (se necessario, scorri l&#39;editor visivo per visualizzarlo) in modo da trovare il file CSS caricato e associarlo al predefinito visualizzatore.
 
      Quando importi un file CSS, l’editor visivo controlla se il CSS utilizza i marcatori visualizzatore corretti. Ad esempio, se crei un visualizzatore Zoom, tutte le regole CSS importate devono essere definite utilizzando il nome della classe di visualizzatore `.s7mixedmediaviewer` definito in un elemento visualizzatore padre.
 
-     Puoi importare file CSS arbitrari e fatti a mano, purché definiscano correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in qualsiasi argomento della Guida relativo alla personalizzazione di *&lt;nome visualizzatore>* Visualizzatore nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=it). Ad esempio, per informazioni sui marcatori CSS per il Visualizzatore zoom, vedere [Personalizzazione del Visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=it). È possibile, tuttavia, che l&#39;editor visivo non comprenda alcuni valori CSS. In questi casi, l’editor visivo tenta di ignorare gli errori in modo che il CSS possa ancora funzionare.
+     Puoi importare file CSS arbitrari e fatti a mano, purché definiscano correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in qualsiasi argomento della Guida relativo alla personalizzazione di *&lt;nome visualizzatore>* Visualizzatore nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Ad esempio, per informazioni sui marcatori CSS per il Visualizzatore zoom, vedere [Personalizzazione del Visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) È possibile, tuttavia, che l’editor visivo non comprenda alcuni valori CSS. In questi casi, l’editor visivo tenta di ignorare gli errori in modo che il CSS possa ancora funzionare.
 
    >[!NOTE]
    >
@@ -472,7 +472,7 @@ Ad esempio, per il tipo *VideoPlayer*, in **[!UICONTROL Modificatori]** > **[!UI
 
    A molti componenti dell’editor visivo è associata una descrizione dettagliata. Queste descrizioni vengono visualizzate all’interno di caselle blu quando espandi un componente per visualizzarne i parametri associati.
 
-   Alcuni tipi di Visualizzatore dispongono di componenti che consentono di specificare i comandi Image Server in un campo di testo **[!UICONTROL Comando IS]**. Per un elenco dei comandi utilizzabili, consulta la sezione [Riferimento API di Server immagini](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html?lang=it).
+   Alcuni tipi di Visualizzatore dispongono di componenti che consentono di specificare i comandi Image Server in un campo di testo **[!UICONTROL Comando IS]**. Per un elenco dei comandi utilizzabili, consulta la sezione [Riferimento API di Server immagini](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
    >[!NOTE]
    >
@@ -529,7 +529,7 @@ Supponiamo di avere un segmento video di 30 secondi. In totale, sono presenti no
 |---|---|---|
 | 1 | 0-10 | 1, 2, 3, 4 |
 | 2 | 10-20 | 4, 5, 6, 7 |
-| 3 | 20 — 30 | 6, 7, 8, 9 |
+| 3 | 20-30 | 6, 7, 8, 9 |
 
 Il sottosegmento video 3 non si estende oltre le miniature ad esso assegnate. Inoltre, le miniature 4, 6 e 7 sono visibili nel pannello con una lunghezza doppia rispetto alle altre miniature.
 

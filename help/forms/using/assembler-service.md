@@ -1,6 +1,6 @@
 ---
 title: Utilizzo del servizio Assembler
-description: Il servizio Assembler consente di combinare, ridisporre e integrare documenti PDF e XDP e di ottenere informazioni sui documenti PDF.
+description: Il servizio Assembler consente di combinare, ridisporre e integrare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -11,20 +11,20 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2167'
 ht-degree: 6%
 
 ---
 
 # Utilizzo del servizio Assembler{#using-assembler-service}
 
-Il servizio Assembler consente di combinare, ridisporre e integrare documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio Assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+Il servizio Assembler consente di combinare, ridisporre e integrare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio Assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 È possibile utilizzare il servizio di assemblaggio per le operazioni seguenti:
 
 ## assemblare documenti PDF {#assemble-pdf-documents}
 
-È possibile utilizzare il servizio Assembler per assemblare due o più documenti PDF in un unico documento PDF o Portfolio PDF. È inoltre possibile applicare al documento PDF funzionalità che facilitano la navigazione o migliorano la sicurezza. Di seguito sono riportati alcuni modi per assemblare documenti PDF:
+È possibile utilizzare il servizio Assembler per assemblare due o più documenti PDF in un unico documento PDF o PDF Portfolio. È inoltre possibile applicare al documento di PDF funzionalità che facilitano la navigazione o migliorano la sicurezza. Di seguito sono riportati alcuni modi per assemblare documenti PDF:
 
 ### Assemblare un semplice documento PDF {#assemble-a-simple-pdf-document}
 
@@ -54,9 +54,9 @@ caratteristiche:
 
 ### Creare un portfolio PDF {#create-a-pdf-portfolio}
 
-Il servizio Assembler può creare Portfoli di PDF che contengono una raccolta di documenti e un&#39;interfaccia utente autonoma. L’interfaccia è denominata Layout Portfolio di PDF o Navigatore Portfolio di PDF. I Portfoli PDF estendono le funzionalità dei pacchetti PDF aggiungendo un navigatore, cartelle e pagine di benvenuto. L’interfaccia può migliorare l’esperienza utente sfruttando la stringa di testo localizzata, le combinazioni di colori personalizzate e le risorse grafiche. Il Portfolio PDF può anche includere cartelle per organizzare i file nel portfolio.
+Il servizio Assembler può creare portfolio PDF contenenti una raccolta di documenti e un&#39;interfaccia utente autonoma. L’interfaccia è denominata PDF Portfolio Layout o PDF Portfolio Navigator (navigatore). I portfolio PDF estendono le funzionalità dei pacchetti PDF aggiungendo un navigatore, cartelle e pagine di benvenuto. L’interfaccia può migliorare l’esperienza utente sfruttando la stringa di testo localizzata, le combinazioni di colori personalizzate e le risorse grafiche. PDF Portfolio può anche includere cartelle per organizzare i file nel portfolio.
 
-Quando il servizio Assembler interpreta il seguente documento DDX, assembla un Portfolio di PDF che include un navigatore di Portfoli di PDF e un pacchetto di due file. Il servizio ottiene il navigatore dalla posizione specificata dall&#39;origine myNavigator. Cambia la combinazione di colori predefinita del navigatore alla combinazione di colori rosaScheme.
+Quando il servizio Assembler interpreta il seguente documento DDX, assembla un Portfolio PDF che include un navigatore PDF Portfolio e un pacchetto di due file. Il servizio ottiene il navigatore dalla posizione specificata dall&#39;origine myNavigator. Cambia la combinazione di colori predefinita del navigatore alla combinazione di colori rosaScheme.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -75,9 +75,9 @@ Quando il servizio Assembler interpreta il seguente documento DDX, assembla un P
 
 ### Assemblare documenti crittografati {#assemble-encrypted-documents}
 
-Quando si assembla un documento, è inoltre possibile crittografare il documento PDF con una password. Dopo aver crittografato un documento PDF PDF con una password, l’utente deve specificare la password per visualizzarlo in Adobe Reader o Acrobat. Per crittografare un documento PDF con una password, il documento DDX deve contenere i valori degli elementi di crittografia necessari per crittografare un documento PDF.
+Quando si assembla un documento, è inoltre possibile crittografare il documento PDF con una password. Dopo aver crittografato un documento PDF con una password, l&#39;utente deve specificare la password per visualizzare il documento PDF in Adobe Reader o Acrobat. Per crittografare un documento PDF con una password, il documento DDX deve contenere i valori degli elementi di crittografia necessari per crittografare un documento PDF.
 
-Il servizio Crittografia non deve far parte dell&#39;installazione del LiveCycle per crittografare un documento PDF con una password.
+Il servizio Crittografia non deve far parte dell&#39;installazione LiveCycle per crittografare un documento PDF con una password.
 
 Se uno o più documenti di input sono crittografati, specificare una password per aprire il documento come parte del DDX.
 
@@ -85,15 +85,15 @@ Se uno o più documenti di input sono crittografati, specificare una password pe
 
 Quando si assembla un documento, è possibile utilizzare la numerazione Bates per applicare un identificatore di pagina univoco a ogni pagina. Quando si utilizza la numerazione Bates, a ogni pagina del documento (o set di documenti) viene assegnato un numero che identifica in modo univoco la pagina. Ad esempio, i documenti di fabbricazione che contengono informazioni sulla distinta base e sono associati alla produzione di un assieme possono contenere un identificatore. Un numero Bates contiene un valore numerico incrementato in sequenza e un prefisso e un suffisso opzionali. Il prefisso + valore numerico + suffisso è chiamato pattern di Bates.
 
-Nell’illustrazione seguente viene illustrato un documento PDF che contiene un identificatore univoco nell’intestazione del documento.
+Nella figura seguente viene illustrato un documento PDF che contiene un identificatore univoco nell&#39;intestazione del documento.
 
-![Documento PDF contenente un identificatore univoco nell&#39;intestazione del documento](do-not-localize/as_batesnumber.png)
+![Documento di PDF contenente un identificatore univoco nell&#39;intestazione del documento](do-not-localize/as_batesnumber.png)
 
 Un documento PDF che contiene un identificatore univoco nell’intestazione del documento
 
 ### Uniformare e assemblare documenti {#flatten-and-assemble-documents}
 
-È possibile utilizzare il servizio Assembler per trasformare un documento interattivo di PDF (ad esempio un modulo) in un documento non interattivo di PDF. Un documento PDF interattivo consente agli utenti di immettere o modificare dati nei campi del documento PDF. Il processo di trasformazione di un documento interattivo di PDF in un documento non interattivo di PDF è denominato appiattimento. Quando un documento PDF viene appiattito, i campi modulo mantengono il loro aspetto grafico ma non sono più interattivi. Uno dei motivi per appiattire un documento PDF è garantire che i dati non possano essere modificati. Inoltre, gli script associati ai campi non funzionano più.
+È possibile utilizzare il servizio Assembler per trasformare un documento interattivo di PDF (ad esempio un modulo) in un documento non interattivo di PDF. Un documento PDF interattivo consente agli utenti di immettere o modificare dati nei campi del documento PDF. Il processo di trasformazione di un documento PDF interattivo in un documento PDF non interattivo è detto appiattimento. Quando un documento PDF viene appiattito, i campi modulo mantengono il loro aspetto grafico ma non sono più interattivi. Uno dei motivi per appiattire un documento di PDF è garantire che i dati non possano essere modificati. Inoltre, gli script associati ai campi non funzionano più.
 
 Quando si crea un documento PDF assemblato da documenti PDF interattivi, il servizio Assembler appiattisce tali moduli prima di assemblarli nel documento risultante.
 
@@ -239,7 +239,7 @@ xsi:schemaLocation="http://ns.adobe.com/DDX/1.0/ coldfusion_ddx.xsd">
 
 Il supporto per l’inserimento dinamico di frammenti di modulo supporta il controllo di un’unica origine. Puoi mantenere un’unica origine dei componenti di uso comune. Ad esempio, puoi creare un frammento per il banner dell’azienda. Se il banner cambia, devi solo modificare il frammento. Gli altri moduli che includono il frammento rimangono invariati.
 
-I progettisti di moduli utilizzano Designer di LiveCycle per creare frammenti di modulo. Questi frammenti sono sottomaschere con nomi univoci all’interno di un modulo XFA. I progettisti di moduli utilizzano inoltre Designer per creare moduli XFA con punti di inserimento con un nome univoco. Il programmatore scrive documenti DDX che specificano la modalità di inserimento dei frammenti nel modulo XFA.
+I progettisti di moduli utilizzano LiveCycle Designer per creare frammenti di modulo. Questi frammenti sono sottomaschere con nomi univoci all’interno di un modulo XFA. I progettisti di moduli utilizzano inoltre Designer per creare moduli XFA con punti di inserimento con un nome univoco. Il programmatore scrive documenti DDX che specificano la modalità di inserimento dei frammenti nel modulo XFA.
 
 Nella figura seguente vengono illustrati due moduli XML (modelli XFA). La maschera a sinistra contiene un punto di inserimento denominato myInsertionPoint. Il modulo a destra contiene un frammento denominato myFragment.
 
@@ -313,11 +313,11 @@ L&#39;esempio seguente è un documento DDX che utilizza segnalibri per disassemb
 
 ## Determinare se i documenti sono conformi a PDF/A {#determine-whether-documents-are-pdf-a-compliant}
 
-È possibile utilizzare il servizio Assembler per determinare se un documento PDF è compatibile con PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
+È possibile utilizzare il servizio Assembler per determinare se un documento di PDF è conforme a PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
 
 ## Ottenere informazioni su un documento PDF {#obtain-information-about-a-pdf-document}
 
-È possibile utilizzare il servizio Assembler per ottenere le seguenti informazioni su un documento PDF:
+È possibile utilizzare il servizio Assembler per ottenere le seguenti informazioni su un documento di PDF:
 
 * Informazioni di testo.
 
@@ -332,21 +332,21 @@ L&#39;esempio seguente è un documento DDX che utilizza segnalibri per disassemb
   posizione dell&#39;annotazione dell&#39;allegato. Puoi esportare questi dati da un documento PDF e\
   importarlo in un documento PDF.
 
-* File del pacchetto, incluse informazioni sui file, cartelle, pacchetto, schema e dati di campo. Puoi esportare questi dati da un documento PDF e importarli in un documento PDF.
+* File del pacchetto, incluse informazioni sui file, cartelle, pacchetto, schema e dati di campo. È possibile esportare questi dati da un documento PDF e importarli in un documento PDF.
 
 ## Convalida documenti DDX {#validate-ddx-documents}
 
-È possibile utilizzare il servizio Assembler per determinare se un documento DDX è valido. Se ad esempio si è eseguito l&#39;aggiornamento da una versione precedente del LiveCycle, la convalida garantisce che il documento DDX sia valido.
+È possibile utilizzare il servizio Assembler per determinare se un documento DDX è valido. Ad esempio, se hai eseguito l&#39;aggiornamento da una versione precedente di LiveCycle, la convalida assicura che il documento DDX sia valido.
 
 ## Chiama altri servizi {#call-other-services}
 
 È possibile utilizzare i documenti DDX che fanno sì che il servizio Assembler chiami i seguenti servizi ciclo LiveC. Il servizio Assembler può chiamare solo i servizi installati con LiveCycle.
 
-**Servizio estensioni di Reader**: consente agli utenti di Adobe Reader di firmare digitalmente il documento PDF risultante.
+**Servizio estensioni Reader**: consente agli utenti di Adobe Reader di firmare digitalmente il documento PDF risultante.
 
 **Servizio Forms**: unisce un file XDP e un file di dati XML per produrre un documento PDF contenente il modulo interattivo compilato.
 
-**Servizio di output**: converte un modulo XML dinamico in un documento PDF contenente un modulo non interattivo (appiattisce il modulo). Il servizio Assembler appiattisce i moduli XML statici e i moduli Acrobat senza chiamare il servizio di output.
+**Servizio di output**: converte un modulo XML dinamico in un documento di PDF contenente un modulo non interattivo (appiattisce il modulo). Il servizio Assembler appiattisce i moduli XML statici e i moduli Acrobat senza chiamare il servizio di output.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
