@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 39%
+source-wordcount: '1173'
+ht-degree: 38%
 
 ---
 
@@ -64,7 +64,7 @@ La soluzione preconfigurata AEM viene fornita con quattro attività assegnate al
 * Abilita raccolta di dati di utilizzo aggregati
 * [Configurare HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Apertura della casella in entrata  {#opening-the-inbox}
+## Apertura della casella in entrata {#opening-the-inbox}
 
 Per aprire la casella in entrata delle notifiche AEM:
 
@@ -232,7 +232,7 @@ Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto  {#creating-a-project}
+## Creazione di un progetto {#creating-a-project}
 
 Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md) in base all’attività in questione:
 

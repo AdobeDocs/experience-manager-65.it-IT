@@ -165,7 +165,7 @@ Una volta scaricato, puoi installare e configurare il connettore S3 come segue:
 
    Copia tutti i contenuti dalla posizione precedente in `<aem-install>/crx-quickstart/install.`
 
-1. Se AEM è già configurato per funzionare con l’archiviazione Tar o MongoDB, rimuovi eventuali file di configurazione esistenti dalla cartella ***&lt;aem-install>***/*crx-quickstart*/*install* prima di procedere. I file che devono essere rimossi sono:
+1. Se AEM è già configurato per funzionare con l&#39;archivio Tar o MongoDB, rimuovi eventuali file di configurazione esistenti dalla cartella ***&lt;aem-install>***/*crx-quickstart*/*install* prima di procedere. I file che devono essere rimossi sono:
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`

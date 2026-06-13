@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '2937'
-ht-degree: 5%
+source-wordcount: '3000'
+ht-degree: 6%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 5%
 
 Questa pagina fornisce linee guida generali su come ottimizzare le prestazioni della distribuzione AEM. Se hai poca esperienza con AEM, consulta le pagine seguenti prima di iniziare a leggere le linee guida sulle prestazioni:
 
-* [Concetti di base dell’AEM](/help/sites-deploying/deploy.md#basic-concepts)
-* [Panoramica sulla conservazione nell’AEM](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [Concetti di base di AEM](/help/sites-deploying/deploy.md#basic-concepts)
+* [Panoramica sull’archiviazione in AEM](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md)
 * [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)
 
-Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM (scorri per visualizzare tutte le opzioni):
+Di seguito sono illustrate le opzioni di distribuzione disponibili per AEM (scorri per visualizzare tutte le opzioni):
 
 <table>
  <tbody>
@@ -35,7 +35,7 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p><strong>Sistema operativo</strong></p> </td>
    <td><p><strong>Server applicazioni</strong></p> </td>
    <td><p><strong>JRE</strong></p> </td>
-   <td><p><strong>Sicurezza</strong></p> </td>
+   <td><p><strong>Protezione</strong></p> </td>
    <td><p><strong>Microkernel</strong></p> </td>
    <td><p><strong>Archivio dati</strong></p> </td>
    <td><p><strong>Indicizzazione</strong></p> </td>
@@ -55,7 +55,7 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p>Proprietà</p> </td>
    <td><p>Apache</p> </td>
    <td><p>Edge</p> </td>
-   <td><p>Destinazione</p> </td>
+   <td><p>Target</p> </td>
   </tr>
   <tr>
    <td><p>Risorse</p> </td>
@@ -72,7 +72,7 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p>Analisi</p> </td>
   </tr>
   <tr>
-   <td><p>Communities</p> </td>
+   <td><p>Community</p> </td>
    <td><p>Author-CS</p> </td>
    <td><p>Cappello rosso®</p> </td>
    <td><p>WebSphere®</p> </td>
@@ -86,7 +86,7 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p>Campaign</p> </td>
   </tr>
   <tr>
-   <td><p>Moduli</p> </td>
+   <td><p>Forms</p> </td>
    <td><p>Author-Offload</p> </td>
    <td><p>HP-UX</p> </td>
    <td><p>Tomcat</p> </td>
@@ -97,10 +97,10 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p>Chrome</p> </td>
-   <td><p>Social network</p> </td>
+   <td><p>Social</p> </td>
   </tr>
   <tr>
-   <td><p>Mobile</p> </td>
+   <td><p>Dispositivo mobile</p> </td>
    <td><p>Author-Cluster</p> </td>
    <td><p>IBM® AIX®</p> </td>
    <td><p>JBoss®</p> </td>
@@ -153,7 +153,7 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
-   <td><p>Mobile</p> </td>
+   <td><p>Dispositivo mobile</p> </td>
   </tr>
   <tr>
    <td><p>Brand Portal</p> </td>
@@ -266,31 +266,31 @@ Utilizzare le linee guida sulle prestazioni nelle situazioni seguenti:
 
 * **Prima distribuzione**: quando si pianifica di distribuire AEM Sites o Assets per la prima volta, è importante comprendere le opzioni disponibili. In particolare durante la configurazione di Micro Kernel, Node Store e Data Store (rispetto alle impostazioni predefinite). Ad esempio, modificando le impostazioni predefinite dell’archivio dati di TarMK in Archivio dati file.
 * **Aggiornamento a una nuova versione**: durante l&#39;aggiornamento a una nuova versione, è importante comprendere le differenze di prestazioni rispetto all&#39;ambiente in esecuzione. Ad esempio, l’aggiornamento da AEM 6.1 a 6.2 o da AEM 6.0 CRX2 a 6.2 OAK.
-* **Il tempo di risposta è lento**: quando l&#39;architettura Nodestore selezionata non soddisfa i requisiti, è importante comprendere le differenze di prestazioni rispetto ad altre opzioni di topologia. Ad esempio, distribuendo TarMK al posto di MongoMK oppure utilizzando un archivio dati di file al posto di un archivio dati di Amazon S3 o Microsoft® Azure.
+* **Il tempo di risposta è lento**: quando l&#39;architettura Nodestore selezionata non soddisfa i requisiti, è importante comprendere le differenze di prestazioni rispetto ad altre opzioni di topologia. Ad esempio, distribuendo TarMK invece di MongoMK, o utilizzando un archivio dati di file invece di un archivio dati di Amazon S3 o Microsoft® Azure.
 * **Aggiunta di altri autori**: quando la topologia TarMK consigliata non soddisfa i requisiti di prestazioni e l&#39;upsize del nodo di authoring ha raggiunto la capacità massima disponibile, comprendere le differenze di prestazioni. Confronta con l’utilizzo di MongoMK con tre o più nodi Author. Ad esempio, distribuendo MongoMK invece di TarMK.
-* **Aggiunta di altro contenuto**: quando l&#39;architettura dell&#39;archivio dati consigliata non soddisfa le tue esigenze, è importante comprendere le differenze di prestazioni rispetto ad altre opzioni dell&#39;archivio dati. Esempio: utilizzo dell’archivio dati di Amazon S3 o Microsoft® Azure invece di un archivio dati file.
+* **Aggiunta di altro contenuto**: quando l&#39;architettura dell&#39;archivio dati consigliata non soddisfa le tue esigenze, è importante comprendere le differenze di prestazioni rispetto ad altre opzioni dell&#39;archivio dati. Esempio: utilizzo dell’archivio dati Amazon S3 o Microsoft® Azure invece di un archivio dati file.
 
 ## Introduzione {#introduction}
 
-Questo capitolo offre una panoramica generale dell’architettura dell’AEM e dei suoi componenti più importanti. Fornisce inoltre linee guida per lo sviluppo e descrive gli scenari di test utilizzati nei test di benchmark TarMK e MongoMK.
+Questo capitolo offre una panoramica generale dell’architettura di AEM e dei suoi componenti più importanti. Fornisce inoltre linee guida per lo sviluppo e descrive gli scenari di test utilizzati nei test di benchmark TarMK e MongoMK.
 
 ### Piattaforma AEM {#the-aem-platform}
 
-La piattaforma AEM è costituita dai seguenti elementi:
+La piattaforma AEM è costituita dai seguenti componenti:
 
 ![chlimage_1](assets/chlimage_1a.png)
 
-Per ulteriori informazioni sulla piattaforma AEM, vedere [Informazioni sull&#39;AEM](/help/sites-deploying/deploy.md#what-is-aem).
+Per ulteriori informazioni sulla piattaforma AEM, vedere [Che cos&#39;è AEM](/help/sites-deploying/deploy.md#what-is-aem).
 
-### Architettura dell’AEM {#the-aem-architecture}
+### Architettura di AEM {#the-aem-architecture}
 
-L’attuazione dell’AEM si basa su tre importanti elementi costitutivi. **Istanza di authoring** utilizzata da autori, editor e approvatori di contenuti per creare e rivedere i contenuti. Quando il contenuto viene approvato, viene pubblicato in un secondo tipo di istanza denominato **Istanza di Publish** da cui gli utenti finali accedono. Il terzo blocco predefinito è **Dispatcher**, un modulo che gestisce il caching e il filtro degli URL e che è installato nel server Web. Per ulteriori informazioni sull&#39;architettura AEM, vedere [Scenari di distribuzione tipici](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
+Per un’implementazione di AEM sono disponibili tre importanti elementi di base. **Istanza di authoring** utilizzata da autori, editor e approvatori di contenuti per creare e rivedere i contenuti. Quando il contenuto viene approvato, viene pubblicato in un secondo tipo di istanza denominato **Istanza di pubblicazione** da cui gli utenti finali accedono. Il terzo blocco predefinito è **Dispatcher**, un modulo che gestisce il caching e il filtro degli URL e che è installato nel server Web. Per ulteriori informazioni sull&#39;architettura di AEM, vedere [Scenari di distribuzione tipici](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
 ### Microkernel {#micro-kernels}
 
-I micro kernel fungono da gestori della persistenza nell&#39;AEM. Esistono tre tipi di micro kernel utilizzati con AEM: TarMK, MongoDB e Relational Database (con supporto limitato). La scelta di un tipo di implementazione adatto alle tue esigenze dipende dallo scopo dell’istanza e dal tipo di implementazione che stai prendendo in considerazione. Per ulteriori informazioni sui micro kernel, vedere la pagina [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md).
+I micro kernel fungono da gestori di persistenza in AEM. Esistono tre tipi di micro kernel utilizzati con AEM: TarMK, MongoDB e Relational Database (con supporto limitato). La scelta di un tipo di implementazione adatto alle tue esigenze dipende dallo scopo dell’istanza e dal tipo di implementazione che stai prendendo in considerazione. Per ulteriori informazioni sui micro kernel, vedere la pagina [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md).
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -300,25 +300,25 @@ In AEM, i dati binari possono essere memorizzati indipendentemente dai nodi di c
 
 >[!NOTE]
 >
->L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti sia per le istanze Autore AEM che per quelle di Publish.
+>Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti sia per le istanze Autore AEM che per quelle Pubblica.
 
 >[!CAUTION]
 >
->Il supporto del micro kernel del database relazionale è limitato. Contatta [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support) prima di utilizzare questo tipo di micro kernel.
+>Il supporto del micro kernel del database relazionale è limitato. Contatta l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support) prima di utilizzare questo tipo di micro kernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
 ### Archivio dati {#data-store}
 
-Quando si tratta di un numero elevato di file binari, si consiglia di utilizzare un archivio dati esterno invece degli archivi nodi predefiniti per massimizzare le prestazioni. Ad esempio, se il progetto richiede molte risorse multimediali, la loro memorizzazione nel file o nell’archivio dati di Azure/S3 rende l’accesso più rapido rispetto alla loro memorizzazione direttamente in un MongoDB.
+Quando si tratta di un numero elevato di file binari, si consiglia di utilizzare un archivio dati esterno invece degli archivi nodi predefiniti per massimizzare le prestazioni. Ad esempio, se il progetto richiede molte risorse multimediali, la loro memorizzazione in File o in Azure/S3 Data Store rende l’accesso più rapido rispetto alla loro memorizzazione direttamente in un MongoDB.
 
 Per ulteriori dettagli sulle opzioni di configurazione disponibili, vedere [Configurazione di nodi e archivi dati](/help/sites-deploying/data-store-config.md).
 
 >[!NOTE]
 >
->Adobe consiglia di scegliere l’opzione di distribuzione dell’AEM in Azure o Amazon Web Services (AWS) utilizzando Adobe Managed Services. I clienti traggono vantaggio da un team con l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/it/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe consiglia di scegliere l’opzione di distribuire AEM su Azure o Amazon Web Services (AWS) utilizzando Adobe Managed Services. I clienti traggono vantaggio da un team con l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/it/products/experience-manager/managed-services.html?aemClk=t).
 >
->Per raccomandazioni su come distribuire l’AEM in Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collabora con uno dei partner di Adobe che supportano l’implementazione dell’AEM nell’ambiente cloud desiderato. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura supportata per soddisfare requisiti specifici di prestazioni, carico, scalabilità e sicurezza.
+>Per consigli su come implementare AEM su Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collabora con uno dei partner di Adobe che supportano l’implementazione di AEM nell’ambiente cloud desiderato. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura supportata per soddisfare requisiti specifici di prestazioni, carico, scalabilità e sicurezza.
 >
 >&#x200B;>Consulta anche la pagina [requisiti tecnici](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
@@ -334,12 +334,12 @@ In questa sezione sono elencati i provider di indice personalizzati utilizzati c
 
 ### Linee guida per lo sviluppo {#development-guidelines}
 
-Sviluppo per AEM con obiettivo di **prestazioni e scalabilità**. Di seguito sono riportate le best practice che è possibile seguire:
+Sviluppo per AEM con l&#39;obiettivo di **prestazioni e scalabilità**. Di seguito sono riportate le best practice che è possibile seguire:
 
 **DO**
 
 * Applicare la separazione di presentazione, logica e contenuto
-* Utilizzare le API AEM esistenti (ad es. Sling) e gli strumenti (ad es. Replication)
+* Utilizzare le API di AEM esistenti (ad es. Sling) e gli strumenti (ad es. Replica)
 * Sviluppa nel contesto di contenuti effettivi
 * Sviluppo per una migliore capacità di memorizzazione in cache
 * Riduci al minimo il numero di salvataggi (ad esempio, utilizzando flussi di lavoro transitori)
@@ -397,7 +397,7 @@ Contenuti multimediali:
 
 Questo capitolo fornisce le linee guida generali sulle prestazioni per TarMK specificando i requisiti minimi dell’architettura e la configurazione delle impostazioni. Vengono inoltre fornite prove comparative per ulteriori chiarimenti.
 
-L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze di creazione AEM che per quelle di Publish.
+Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze Author che Publish di AEM.
 
 Per ulteriori informazioni su TarMK, vedere [Scenari di distribuzione](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) e [Archiviazione Tar](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
@@ -410,10 +410,10 @@ Per ulteriori informazioni su TarMK, vedere [Scenari di distribuzione](/help/sit
 Per stabilire buone prestazioni quando si utilizza TarMK, è necessario partire dalla seguente architettura:
 
 * Un’istanza Autore
-* Due istanze di Publish
+* Due istanze di pubblicazione
 * Due dispatcher
 
-Di seguito sono illustrate le linee guida sull’architettura dei siti AEM e AEM Assets.
+Di seguito sono illustrate le linee guida sull’architettura per AEM Sites e AEM Assets.
 
 >[!NOTE]
 >
@@ -442,20 +442,20 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
   <tr>
    <td>Code processi Sling</td>
    <td><code>queue.maxparallel</code></td>
-   <td>Impostare il valore su metà del numero di core della CPU. </td>
+   <td>Impostate il valore su metà del numero di core CPU. </td>
    <td>Per impostazione predefinita, il numero di thread simultanei per coda processi è uguale al numero di core CPU.</td>
   </tr>
   <tr>
    <td>Coda del flusso di lavoro transitorio Granite</td>
    <td><code>Max Parallel</code></td>
-   <td>Imposta il valore su metà del numero di core della CPU</td>
+   <td>Imposta il valore su metà del numero di core CPU</td>
    <td> </td>
   </tr>
   <tr>
    <td>Parametri JVM</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td>
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>Vero</p> </td>
-   <td>Per evitare che query estese sovraccarichi i sistemi, aggiungi questi parametri JVM nello script iniziale dell’AEM.</td>
+   <td>Per evitare che query estese sovraccarichi i sistemi, aggiungi questi parametri JVM nello script iniziale di AEM.</td>
   </tr>
   <tr>
    <td>Configurazione dell’indice Lucene</td>
@@ -479,7 +479,7 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
    <td>Writeback di metadati DAM</td>
    <td><code>Transient Workflow</code></td>
    <td>selezionato</td>
-   <td>Questo flusso di lavoro gestisce il write-back dell’XMP nel file binario originale e imposta la data dell’ultima modifica in JCR.</td>
+   <td>Questo flusso di lavoro gestisce la scrittura di XMP nel file binario originale e imposta la data dell’ultima modifica in JCR.</td>
   </tr>
  </tbody>
 </table>
@@ -494,7 +494,7 @@ I test di riferimento sono stati eseguiti sulle seguenti specifiche:
 |---|---|
 | Server | Hardware Bare Metal (HP) |
 | Sistema operativo | Red Hat® Linux® |
-| CPU/core | CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 core |
+| CPU/Core | @2.40GHz Intel(R) Xeon(R) CPU E5-2407, 8 core |
 | RAM | 32 GB |
 | Disco | Magnetico |
 | Java™ | Oracle JRE versione 8 |
@@ -523,7 +523,7 @@ Per ulteriori informazioni su TarMK, vedere [Scenari di distribuzione](/help/sit
 Per stabilire buone prestazioni quando si utilizza MongoMK, è necessario partire dalla seguente architettura:
 
 * Tre istanze di authoring
-* Due istanze di Publish
+* Due istanze di pubblicazione
 * Tre istanze MongoDB
 * Due dispatcher
 
@@ -552,20 +552,20 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
   <tr>
    <td>Code processi Sling</td>
    <td><code>queue.maxparallel</code></td>
-   <td>Impostare il valore su metà del numero di core della CPU. </td>
+   <td>Impostate il valore su metà del numero di core CPU. </td>
    <td>Per impostazione predefinita, il numero di thread simultanei per coda processi è uguale al numero di core CPU.</td>
   </tr>
   <tr>
    <td>Coda del flusso di lavoro transitorio Granite</td>
    <td><code>Max Parallel</code></td>
-   <td>Impostare il valore su metà del numero di core della CPU.</td>
+   <td>Impostate il valore su metà del numero di core CPU.</td>
    <td> </td>
   </tr>
   <tr>
    <td>Parametri JVM</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>Vero</p> <p>60000</p> </td>
-   <td>Per evitare che query estese sovraccarichi i sistemi, aggiungi questi parametri JVM nello script iniziale dell’AEM.</td>
+   <td>Per evitare che query estese sovraccarichi i sistemi, aggiungi questi parametri JVM nello script iniziale di AEM.</td>
   </tr>
   <tr>
    <td>Configurazione dell’indice Lucene</td>
@@ -604,7 +604,7 @@ I test di riferimento sono stati eseguiti sulle seguenti specifiche:
 |---|---|---|
 | Server | Hardware Bare Metal (HP) | Hardware Bare Metal (HP) |
 | Sistema operativo | Red Hat® Linux® | Red Hat® Linux® |
-| CPU/core | CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 core | CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 core |
+| CPU/Core | @2.40GHz Intel(R) Xeon(R) CPU E5-2407, 8 core | @2.40GHz Intel(R) Xeon(R) CPU E5-2407, 8 core |
 | RAM | 32 GB | 32 GB |
 | Disco | Magnetico - >1.000 IOPS | Magnetico - >1.000 IOPS |
 | Java™ | Oracle JRE versione 8 | N/D |
@@ -624,7 +624,7 @@ I test di riferimento sono stati eseguiti sulle seguenti specifiche:
 
 ## TarMK e MongoMK {#tarmk-vs-mongomk}
 
-La regola di base da tenere in considerazione quando si sceglie tra i due è che TarMK è progettato per le prestazioni, mentre MongoMK è utilizzato per la scalabilità. L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze di creazione AEM che per quelle di Publish.
+La regola di base da tenere in considerazione quando si sceglie tra i due è che TarMK è progettato per le prestazioni, mentre MongoMK è utilizzato per la scalabilità. Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze Author che Publish di AEM.
 
 Il motivo principale per scegliere il back-end di persistenza MongoMK su TarMK è quello di scalare le istanze orizzontalmente. Questa funzionalità significa disporre di due o più istanze di authoring attive sempre in esecuzione e utilizzare MongoDB come sistema di storage di persistenza. La necessità di eseguire più di un’istanza di authoring deriva in genere dal fatto che la capacità di CPU e di memoria di un singolo server, che supporta tutte le attività di authoring simultanee, non è più sostenibile.
 
@@ -677,9 +677,9 @@ Per ulteriori dettagli su TarMK rispetto a MongoMK, vedi [Distribuzioni consigli
    <td> </td>
   </tr>
   <tr>
-   <td>CPU/core</td>
-   <td>CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 core</td>
-   <td>CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 core</td>
+   <td>CPU/Core</td>
+   <td>@2.40GHz Intel(R) Xeon(R) CPU E5-2407, 8 core</td>
+   <td>@2.40GHz Intel(R) Xeon(R) CPU E5-2407, 8 core</td>
    <td> </td>
   </tr>
   <tr>
@@ -764,7 +764,7 @@ Per ulteriori dettagli su TarMK rispetto a MongoMK, vedi [Distribuzioni consigli
    <td>Red Hat® Linux®</td>
   </tr>
   <tr>
-   <td>CPU/core</td>
+   <td>CPU/Core</td>
    <td>32</td>
    <td>32</td>
    <td>32</td>

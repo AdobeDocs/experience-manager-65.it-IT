@@ -11,18 +11,18 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 5%
+source-wordcount: '4700'
+ht-degree: 6%
 
 ---
 
 # Best practice per query e indicizzazione{#best-practices-for-queries-and-indexing}
 
-Oltre alla transizione ad Oak nell’AEM 6, sono state apportate alcune modifiche importanti al modo in cui vengono gestite le query e gli indici. Sotto Jackrabbit 2, tutto il contenuto era indicizzato per impostazione predefinita e poteva essere interrogato liberamente. In Oak, gli indici devono essere creati manualmente sotto il nodo `oak:index`. Una query può essere eseguita senza un indice, ma per i set di dati di grandi dimensioni verrà eseguita lentamente o verrà interrotta.
+Oltre alla transizione ad Oak in AEM 6, sono state apportate alcune modifiche importanti al modo in cui vengono gestite le query e gli indici. Sotto Jackrabbit 2, tutto il contenuto era indicizzato per impostazione predefinita e poteva essere interrogato liberamente. In Oak, gli indici devono essere creati manualmente sotto il nodo `oak:index`. Una query può essere eseguita senza un indice, ma per i set di dati di grandi dimensioni verrà eseguita lentamente o verrà interrotta.
 
 Questo articolo illustra quando creare indici e quando non sono necessari, trucchi per evitare di utilizzare le query quando non sono necessarie e suggerimenti per ottimizzare indici e query per ottenere le migliori prestazioni possibili.
 
-Inoltre, assicurati di leggere la [documentazione di Oak sulla scrittura di query e indici](/help/sites-deploying/queries-and-indexing.md). Oltre al fatto che gli indici sono un nuovo concetto nell’AEM 6, esistono differenze sintattiche nelle query Oak che devono essere prese in considerazione durante la migrazione del codice da una precedente installazione AEM.
+Inoltre, assicurati di leggere la [documentazione di Oak sulla scrittura di query e indici](/help/sites-deploying/queries-and-indexing.md). Oltre al fatto che gli indici sono un nuovo concetto in AEM 6, esistono differenze sintattiche nelle query Oak che devono essere prese in considerazione durante la migrazione del codice da un’installazione AEM precedente.
 
 ## Quando utilizzare le query {#when-to-use-queries}
 
@@ -74,7 +74,7 @@ Quando si esegue una query che non utilizza un indice, vengono registrati avvisi
 
 Durante l’esecuzione di query complesse, possono verificarsi casi in cui la query viene suddivisa in più query più piccole e i dati vengono uniti tramite il codice dopo che il fatto è più performante. Per questi casi si raccomanda di confrontare le prestazioni dei due approcci per determinare quale opzione sarebbe migliore per il caso d’uso in questione.
 
-L’AEM consente di scrivere le query in uno dei tre modi seguenti:
+AEM consente di scrivere query in uno dei tre modi seguenti:
 
 * Tramite le [API QueryBuilder](/help/sites-developing/querybuilder-api.md) (consigliato)
 * Utilizzo di XPath (consigliato)
@@ -120,11 +120,11 @@ Puoi anche estrarre gli indici nel sistema in formato JSON. A questo scopo, devi
 
 **Durante lo sviluppo**
 
-Impostare soglie basse per `oak.queryLimitInMemory` (ad esempio, 10000) e Oak. `queryLimitReads` (ad esempio, 5000) e ottimizza la costosa query quando si preme un UnsupportedOperationException che indica &quot;La query ha letto più di x nodi...&quot;
+Impostare soglie basse per `oak.queryLimitInMemory` (ad esempio, 10000) e Oak. `queryLimitReads` (ad esempio, 5000) e ottimizzare la costosa query quando si preme un UnsupportedOperationException che indica &quot;La query legge più di x nodi...&quot;
 
 Questo consente di evitare le query che richiedono molte risorse, ovvero che non sono supportate da alcun indice o da un indice a copertura ridotta. Ad esempio, una query che legge 1 milione di nodi porterebbe a un aumento dell’I/O e avrebbe un impatto negativo sulle prestazioni complessive dell’applicazione. Qualsiasi query che non riesce a causa di limiti superiori deve essere analizzata e ottimizzata.
 
-#### **Distribuzione-Post** {#post-deployment}
+#### **Post-distribuzione** {#post-deployment}
 
 * Monitora i registri per le query che attivano l’attraversamento di nodi di grandi dimensioni o il consumo di memoria heap di grandi dimensioni: &quot;
 
@@ -136,7 +136,7 @@ Questo consente di evitare le query che richiedono molte risorse, ovvero che non
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Ottimizza la query per ridurre il consumo di memoria heap
 
-Per le versioni da AEM 6.0 a 6.2, è possibile regolare la soglia per l’attraversamento dei nodi tramite i parametri JVM nello script di avvio dell’AEM per evitare che le query di grandi dimensioni sovraccarichi l’ambiente.
+Per le versioni AEM 6.0 - 6.2, puoi regolare la soglia per l’attraversamento dei nodi tramite i parametri JVM nello script iniziale di AEM per evitare che le query di grandi dimensioni sovraccarichi l’ambiente.
 
 I valori consigliati sono:
 
@@ -159,7 +159,7 @@ Inoltre, gli indici sono utili solo se i dati contenuti all’interno dell’ind
 
 ### Indici Lucene o di proprietà? {#lucene-or-property-indexes}
 
-Gli indici Lucene sono stati introdotti in Oak 1.0.9 e offrono alcune potenti ottimizzazioni rispetto agli indici delle proprietà introdotti nel lancio iniziale dell’AEM 6. Quando decidi se utilizzare gli indici Lucene o gli indici di proprietà, prendi in considerazione quanto segue:
+Gli indici Lucene sono stati introdotti in Oak 1.0.9 e offrono alcune potenti ottimizzazioni rispetto agli indici delle proprietà introdotti nel lancio iniziale di AEM 6. Quando decidi se utilizzare gli indici Lucene o gli indici di proprietà, prendi in considerazione quanto segue:
 
 * Gli indici Lucene offrono molte più funzioni degli indici di proprietà. Ad esempio, un indice delle proprietà può indicizzare solo una singola proprietà, mentre un indice Lucene può includere molte. Per ulteriori informazioni su tutte le funzionalità disponibili negli indici Lucene, consulta la [documentazione](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 * Gli indici Lucene sono asincroni. Questo offre un notevole miglioramento delle prestazioni, ma può anche indurre un ritardo tra la scrittura dei dati nell’archivio e l’aggiornamento dell’indice. Se è fondamentale che le query restituiscano risultati accurati al 100%, è necessario un indice delle proprietà.
@@ -169,17 +169,17 @@ In generale, si consiglia di utilizzare gli indici Lucene a meno che non vi sia 
 
 ### Indicizzazione Solr {#solr-indexing}
 
-Per impostazione predefinita, l’AEM supporta anche l’indicizzazione Solr. Viene utilizzato per supportare la ricerca full-text, ma può anche essere utilizzato per supportare qualsiasi tipo di query JCR. Solr deve essere preso in considerazione quando le istanze AEM non hanno la capacità della CPU per gestire il numero di query necessarie in implementazioni che richiedono un uso intensivo della ricerca, come i siti web basati sulla ricerca con un numero elevato di utenti simultanei. In alternativa, Solr può essere implementato in un approccio basato su crawler per utilizzare alcune delle funzioni più avanzate della piattaforma.
+Per impostazione predefinita, AEM supporta anche l’indicizzazione Solr. Viene utilizzato per supportare la ricerca full-text, ma può anche essere utilizzato per supportare qualsiasi tipo di query JCR. Solr deve essere preso in considerazione quando le istanze di AEM non hanno la capacità di CPU di gestire il numero di query necessarie in implementazioni che richiedono molte ricerche, come i siti web basati sulle ricerche con un numero elevato di utenti simultanei. In alternativa, Solr può essere implementato in un approccio basato sul crawler per utilizzare alcune delle funzioni più avanzate della piattaforma.
 
 Gli indici Solr possono essere configurati per l’esecuzione incorporata sul server AEM per gli ambienti di sviluppo oppure possono essere scaricati su un’istanza remota per migliorare la scalabilità della ricerca negli ambienti di produzione e di staging. L&#39;offload della ricerca migliora la scalabilità, ma introduce una latenza e per questo motivo non è consigliato a meno che non sia necessario. Per ulteriori informazioni su come configurare l&#39;integrazione Solr e creare indici Solr, vedere la [documentazione relativa alle query e all&#39;indicizzazione di Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
 >[!NOTE]
 >
->Con l&#39;approccio di ricerca Solr integrata è possibile scaricare l&#39;indicizzazione su un server Solr. Se le funzioni più avanzate del server Solr vengono utilizzate tramite un approccio basato su crawler, è necessario un ulteriore lavoro di configurazione.
+>Con l&#39;approccio di ricerca Solr integrata è possibile scaricare l&#39;indicizzazione su un server Solr. Se le funzioni più avanzate del server Solr vengono utilizzate mediante un approccio basato sul crawler, è necessario un ulteriore lavoro di configurazione.
 
-L’inconveniente di questo approccio è che, anche se per impostazione predefinita le query AEM rispettano gli ACL e quindi nascondono i risultati a cui un utente non ha accesso, l’esternalizzazione della ricerca a un server Solr non supporterà questa funzione. Se la ricerca deve essere esternalizzata in questo modo, è necessario prestare particolare attenzione affinché agli utenti non vengano presentati risultati che non dovrebbero vedere.
+L’inconveniente di questo approccio è che, anche se per impostazione predefinita le query di AEM rispettano gli ACL e quindi nascondono i risultati a cui un utente non ha accesso, l’esternalizzazione della ricerca a un server Solr non supporterà questa funzione. Se la ricerca deve essere esternalizzata in questo modo, è necessario prestare particolare attenzione affinché agli utenti non vengano presentati risultati che non dovrebbero vedere.
 
-Potenziali casi d’uso in cui questo approccio può essere appropriato sono i casi in cui può essere necessario aggregare i dati di ricerca provenienti da più fonti. Ad esempio, puoi avere un sito ospitato sull’AEM e un secondo sito ospitato su una piattaforma di terze parti. Solr può essere configurato per eseguire la ricerca per indicizzazione del contenuto di entrambi i siti e memorizzarli in un indice aggregato. Questo consentirebbe ricerche intersito.
+Potenziali casi d’uso in cui questo approccio può essere appropriato sono i casi in cui può essere necessario aggregare i dati di ricerca provenienti da più fonti. Ad esempio, puoi avere un sito ospitato su AEM e un secondo sito ospitato su una piattaforma di terze parti. Solr può essere configurato per scansionare il contenuto di entrambi i siti e memorizzarli in un indice aggregato. Questo consentirebbe ricerche intersito.
 
 ### Considerazioni sulla progettazione {#design-considerations}
 
@@ -214,13 +214,13 @@ Quando si rimuove un indice in un’istanza MongoDB, il costo dell’eliminazion
 
 ### Scheda di riferimento rapido per le query JCR {#jcrquerycheatsheet}
 
-Per supportare la creazione di query JCR e le definizioni degli indici efficienti, la [Scheda di riferimento rapido per le query JCR](assets/JCR_query_cheatsheet-v1.1.pdf) è disponibile per il download e l&#39;utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto di questa Scheda di riferimento rapido si applica a AEM 6.5 e AEM as a Cloud Service.
+Per supportare la creazione di query JCR e le definizioni degli indici efficienti, la [Scheda di riferimento rapido per le query JCR](assets/JCR_query_cheatsheet-v1.1.pdf) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto di questa Scheda di riferimento rapido si applica ad AEM 6.5 e AEM as a Cloud Service.
 
 ## Reindicizzazione {#re-indexing}
 
 Questa sezione descrive i **soli** motivi accettabili per reindicizzare gli indici Oak.
 
-Al di fuori dei motivi descritti di seguito, l&#39;avvio delle reindicizzazioni degli indici Oak **non** modifica il comportamento o risolve i problemi e aumenta inutilmente i carichi sull&#39;AEM.
+Al di fuori dei motivi descritti di seguito, l&#39;avvio delle reindicizzazioni degli indici Oak **non** modifica il comportamento o risolve i problemi e aumenta inutilmente i carichi su AEM.
 
 La reindicizzazione degli indici Oak deve essere evitata a meno che non sia coperta da un motivo nelle tabelle seguenti.
 
@@ -237,7 +237,7 @@ La reindicizzazione degli indici Oak deve essere evitata a meno che non sia cope
 
 Le uniche condizioni non errate accettabili per la reindicizzazione degli indici Oak sono se la configurazione di un indice Oak è cambiata.
 
-*La reindicizzazione deve sempre essere affrontata tenendo in debita considerazione il suo impatto sulle prestazioni complessive dell&#39;AEM ed eseguita durante periodi di bassa attività o finestre di manutenzione.*
+*La reindicizzazione deve sempre essere affrontata tenendo in debita considerazione il suo impatto sulle prestazioni complessive di AEM ed eseguita durante periodi di bassa attività o finestre di manutenzione.*
 
 Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
 
@@ -306,7 +306,7 @@ Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
 
 La tabella seguente descrive l’unico errore accettabile e le situazioni eccezionali in cui la reindicizzazione degli indici Oak risolve il problema.
 
-Se si verifica un problema in AEM che non corrisponde ai criteri descritti di seguito, **non** reindicizzare gli indici, in quanto il problema non verrà risolto.
+Se in AEM si verifica un problema che non corrisponde ai criteri descritti di seguito, **not** reindicizza gli indici, in quanto il problema non verrà risolto.
 
 Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
 
@@ -365,7 +365,7 @@ Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
 
    * Rimuovi la copia locale dell’indice Lucene
 
-      1. Interrompere l’AEM
+      1. Interrompi AEM
       1. Elimina la copia locale dell&#39;indice Lucene in `crx-quickstart/repository/index`
       1. Riavvia AEM
 
@@ -402,13 +402,13 @@ Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
 
 >[!NOTE]
 >
->La sezione precedente riepiloga e inquadra le linee guida per la reindicizzazione di Oak tratte dalla [documentazione di Apache Oak](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) nel contesto dell&#39;AEM.
+>Nella sezione precedente sono riepilogate e inquadrate le linee guida per la reindicizzazione di Oak riportate nella [documentazione di Apache Oak](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) nel contesto di AEM.
 
 ### Pre-estrazione del testo dei dati binari {#text-pre-extraction-of-binaries}
 
 La pre-estrazione del testo è il processo di estrazione ed elaborazione del testo dai dati binari, direttamente dall’archivio dati tramite un processo isolato, ed esposizione diretta del testo estratto a successive re/indicizzazioni degli indici Oak.
 
-* La pre-estrazione del testo Oak è consigliata per la reindicizzazione degli indici Lucene in archivi con grandi volumi di file (file binari) contenenti testo estraibile (ad esempio PDF, documenti Word, PPT, TXT e così via) idonei per la ricerca full-text tramite indici Oak distribuiti, ad esempio `/oak:index/damAssetLucene`.
+* La pre-estrazione del testo Oak è consigliata per la re/indicizzazione degli indici Lucene negli archivi con grandi volumi di file (file binari) contenenti testo estraibile (ad esempio PDF, documenti Word, PPT, TXT e così via) idonei per la ricerca full-text tramite indici Oak distribuiti, ad esempio `/oak:index/damAssetLucene`.
 * La pre-estrazione del testo offre vantaggi solo per la re/indicizzazione degli indici Lucene e NON per gli indici delle proprietà Oak, poiché gli indici delle proprietà non estraggono il testo dai dati binari.
 * La pre-estrazione del testo ha un forte impatto positivo quando la reindicizzazione full-text di file binari contenenti testo (PDF, Doc, TXT e così via), mentre un archivio di immagini non presenta le stesse efficienze poiché le immagini non contengono testo estraibile.
 * La pre-estrazione del testo esegue l’estrazione di testo completo relativo alla ricerca in modo molto efficiente e lo espone al processo di reindicizzazione Oak in modo molto efficiente.
@@ -417,11 +417,11 @@ La pre-estrazione del testo è il processo di estrazione ed elaborazione del tes
 
 Reindicizzazione di un indice Lucene **esistente** con estrazione binaria abilitata
 
-* Reindicizzazione dell&#39;elaborazione di **tutti** i contenuti candidati nell&#39;archivio; quando i file binari da cui estrarre il testo completo sono numerosi o complessi, l&#39;AEM deve sostenere un carico di elaborazione maggiore per eseguire l&#39;estrazione del testo completo. La pre-estrazione del testo sposta il &quot;lavoro computazionalmente costoso&quot; dell&#39;estrazione del testo in un processo isolato che accede direttamente all&#39;Archivio dati dell&#39;AEM, evitando il sovraccarico e il conflitto di risorse nell&#39;AEM.
+* Reindicizzazione dell&#39;elaborazione di **tutti** i contenuti candidati nell&#39;archivio; quando i binari da cui estrarre il testo completo sono numerosi o complessi, su AEM viene applicato un carico di calcolo maggiore per eseguire l&#39;estrazione del testo completo. La pre-estrazione del testo sposta il &quot;lavoro computazionalmente costoso&quot; dell’estrazione del testo in un processo isolato che accede direttamente all’archivio dati di AEM, evitando il sovraccarico e il conflitto di risorse in AEM.
 
-Supporto della distribuzione di un indice Lucene **new** all&#39;AEM con estrazione binaria abilitata
+Supporto della distribuzione di un indice Lucene **new** in AEM con estrazione binaria abilitata
 
-* Quando un nuovo indice (con estrazione binaria abilitata) viene distribuito in AEM, Oak indicizza automaticamente tutto il contenuto candidato alla successiva esecuzione dell’indice full-text asincrono. Per le stesse ragioni descritte nella reindicizzazione di cui sopra, ciò può comportare un carico eccessivo sull’AEM.
+* Quando in AEM viene distribuito un nuovo indice (con estrazione binaria abilitata), Oak indicizza automaticamente tutto il contenuto candidato alla successiva esecuzione dell’indice full-text asincrono. Per gli stessi motivi descritti nella reindicizzazione precedente, ciò potrebbe comportare un carico eccessivo su AEM.
 
 #### Quando NON è possibile utilizzare la pre-estrazione del testo? {#when-can-text-pre-extraction-not-be-used}
 
@@ -429,7 +429,7 @@ La pre-estrazione del testo non può essere utilizzata per i nuovi contenuti agg
 
 Il nuovo contenuto aggiunto all’archivio viene indicizzato naturalmente e in modo incrementale dal processo di indicizzazione full-text asincrono (per impostazione predefinita, ogni 5 secondi).
 
-In condizioni di normale funzionamento dell’AEM, ad esempio in caso di caricamento di Assets tramite l’interfaccia web o di acquisizione programmatica di Assets, l’AEM indicizzerà in modo automatico e incrementale il nuovo contenuto binario. Poiché la quantità di dati è incrementale e relativamente piccola (approssimativamente la quantità di dati che può essere mantenuta nell’archivio in 5 secondi), l’AEM può eseguire l’estrazione full-text dai dati binari durante l’indicizzazione senza influire sulle prestazioni complessive del sistema.
+In condizioni di normale funzionamento di AEM, ad esempio in caso di caricamento di Assets tramite l’interfaccia web o di acquisizione programmatica di Assets, AEM indicizzerà automaticamente e in modo incrementale il nuovo contenuto binario tramite indice full-text. Poiché la quantità di dati è incrementale e relativamente piccola (approssimativamente la quantità di dati che può essere mantenuta nell’archivio in 5 secondi), AEM può eseguire l’estrazione full-text dai dati binari durante l’indicizzazione senza influire sulle prestazioni complessive del sistema.
 
 #### Prerequisiti per l’utilizzo della pre-estrazione del testo {#prerequisites-to-using-text-pre-extraction}
 
@@ -438,9 +438,9 @@ In condizioni di normale funzionamento dell’AEM, ad esempio in caso di caricam
 * Una finestra di manutenzione per generare il file CSV E per eseguire la reindicizzazione finale
 * Oak versione: 1.0.18+, 1.2.3+
 * [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)versione 1.7.4+
-* Una cartella/condivisione del file system per memorizzare il testo estratto accessibile dalle istanze AEM di indicizzazione
+* Una cartella/condivisione del file system per memorizzare il testo estratto accessibile dalle istanze di indicizzazione di AEM
 
-   * La configurazione OSGi di pre-estrazione del testo richiede un percorso del file system per i file di testo estratti, quindi devono essere accessibili direttamente dall’istanza AEM (unità locale o montaggio con condivisione file)
+   * La configurazione OSGi di pre-estrazione del testo richiede un percorso del file system per i file di testo estratti, quindi devono essere accessibili direttamente dall’istanza di AEM (unità locale o montaggio con condivisione file)
 
 #### Come eseguire la pre-estrazione del testo {#how-to-perform-text-pre-extraction}
 
@@ -464,7 +464,7 @@ L&#39;intero archivio nodi viene attraversato (come specificato dai percorsi nel
 
 **Estrarre il testo nel file system**
 
-*Il passaggio 2(a-c) può essere eseguito durante il normale funzionamento dell&#39;AEM se interagisce solo con l&#39;archivio dati.*
+*Il passaggio 2(a-c) può essere eseguito durante il normale funzionamento di AEM se interagisce solo con l&#39;archivio dati.*
 
 2 bis. Esegui `oak-run.jar --tika` per preestrarre il testo per i nodi binari enumerati nel file CSV generato in (1b)
 
@@ -472,7 +472,7 @@ L&#39;intero archivio nodi viene attraversato (come specificato dai percorsi nel
 
 2 quater. Il testo estratto viene memorizzato nel file system in un formato che può essere acquisito dal processo di reindicizzazione Oak (3a)
 
-Il testo pre-estratto viene identificato nel file CSV dall’impronta digitale binaria. Se il file binario è lo stesso, è possibile utilizzare lo stesso testo pre-estratto in tutte le istanze AEM. Poiché AEM Publish è solitamente un sottoinsieme di AEM Author, il testo pre-estratto da AEM Author può spesso essere utilizzato anche per reindicizzare AEM Publish (supponendo che AEM Publish abbia accesso al file system ai file di testo estratti).
+Il testo pre-estratto viene identificato nel file CSV dall’impronta digitale binaria. Se il file binario è lo stesso, è possibile utilizzare lo stesso testo pre-estratto nelle istanze di AEM. Poiché AEM Publish è in genere un sottoinsieme di AEM Author, il testo pre-estratto da AEM Author può spesso essere utilizzato per reindicizzare AEM Publish (supponendo che AEM Publish abbia accesso ai file di testo estratti nel file system).
 
 Il testo pre-estratto può essere aggiunto in modo incrementale a nel tempo. La pre-estrazione del testo salta l’estrazione per i file binari estratti in precedenza, pertanto è consigliabile mantenere il testo pre-estratto nel caso in cui la reindicizzazione debba verificarsi nuovamente in futuro (supponendo che il contenuto estratto non sia eccessivamente grande. In caso affermativo, valutare la compressione del contenuto nel frattempo, poiché il testo viene compresso correttamente.
 

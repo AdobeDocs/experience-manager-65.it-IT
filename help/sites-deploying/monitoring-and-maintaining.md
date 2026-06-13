@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5992'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Nella sezione [Backup e ripristino](/help/sites-administering/backup-and-restore
 
 Per informazioni dettagliate sull&#39;esecuzione di un backup &quot;a caldo&quot; online, vedere [Creazione di un backup online](/help/sites-administering/backup-and-restore.md#online-backup).
 
-## Rimozione versione {#version-purging}
+## Eliminazione della versione {#version-purging}
 
 Lo strumento **Rimuovi versioni** è progettato per eliminare le versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
 
@@ -145,7 +145,7 @@ Imposta il numero massimo di versioni (per ogni nodo) che desideri mantenere. La
    * **Numero minimo di versioni**
 Imposta il numero minimo di versioni (per ogni nodo) che desideri mantenere. Lascia vuoto per non usare questa impostazione.
 
-   * **Versione massima**
+   * **Durata massima versione**
 Imposta la validità massima della versione in giorni (per ogni nodo) che desideri mantenere. Lascia vuoto per non usare questa impostazione.
 
    Quindi **Salva**.
@@ -340,15 +340,15 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >
    >`org.apache.sling.commons.log.pattern` supporta fino a sei argomenti.
    >
-   >{0} Timestamp di tipo `java.util.Date`
+   >`java.util.Date` Timestamp di tipo {0}
    >
-   >{1} indicatore del registro
+   >{1} il marcatore del registro
    >
-   >{2} nome del thread corrente
+   >{2} il nome del thread corrente
    >
-   >{3} nome del logger
+   >{3} il nome del logger
    >
-   >{4} livello di registro
+   >{4} il livello di registro
    >
    >{5} il messaggio di registro
    >
@@ -435,7 +435,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >* È possibile specificare un limite di dimensione con un numero. Se non viene fornito alcun indicatore di dimensione, verrà considerato come il numero di byte oppure sarà possibile aggiungere uno degli indicatori di dimensione: `KB`, `MB` o `GB` (il case verrà ignorato).
    >* È possibile specificare una pianificazione di data/ora come modello `java.util.SimpleDateFormat`. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l’identificazione).
    >
-   >Il valore predefinito è &#39;.&#39;dd/MM/yyyy (per la rotazione giornaliera dei log).
+   >Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera del registro).
    >
    >Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo questa data è preciso), ../logs/error.log viene rinominato ../logs/error.log.2010-01-20. La registrazione per il 21 gennaio viene generata in (nuovo e vuoto) ../logs/error.log fino al suo rollover al cambio di giorno successivo.
    >
@@ -591,7 +591,7 @@ Alcuni di questi strumenti dipendono dal sistema operativo.
 <table>
  <tbody>
   <tr>
-   <td>Strumento </td>
+   <td>Strumento</td>
    <td>Utilizzato per analizzare...</td>
    <td>Utilizzo / Ulteriori informazioni...</td>
   </tr>
@@ -695,7 +695,7 @@ Il registro delle richieste registra ogni richiesta effettuata, insieme alla ris
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Calcolando il totale di tutte le voci di GET in periodi specifici (ad esempio, in vari periodi di 24 ore), puoi fare dichiarazioni sul traffico medio sul tuo sito web.
+Calcolando il totale di tutte le voci GET in periodi specifici (ad esempio, in vari periodi di 24 ore), puoi fare dichiarazioni sul traffico medio sul tuo sito web.
 
 #### Monitoraggio dei tempi di risposta con request.log {#monitoring-response-times-with-the-request-log}
 
@@ -914,7 +914,7 @@ Le informazioni raccolte possono essere utilizzate per indicare:
 Il comando dello strumento `jconsole` è disponibile con JDK.
 
 1. Avvia l’istanza di AEM.
-1. Esegui `jconsole.`
+1. Eseguire `jconsole.`
 1. Seleziona la tua istanza di AEM e **Connetti**.
 
 1. Dall&#39;applicazione `Local`, fare doppio clic su `com.day.crx.quickstart.Main`. La panoramica viene visualizzata come predefinita:

@@ -1,6 +1,6 @@
 ---
 title: Segmentazione durante la creazione di una campagna
-description: La segmentazione è un fattore chiave per la creazione di una campagna.
+description: La segmentazione è un concetto chiave per la creazione di una campagna.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,8 +11,8 @@ feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 46%
+source-wordcount: '549'
+ht-degree: 48%
 
 ---
 

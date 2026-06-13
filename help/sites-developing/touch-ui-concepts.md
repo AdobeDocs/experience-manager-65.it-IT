@@ -12,25 +12,25 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2238'
 ht-degree: 1%
 
 ---
 
 # Concetti dell’interfaccia utente di Adobe Experience Manager con funzionalità touch{#concepts-of-the-aem-touch-enabled-ui}
 
-Adobe Experience Manager (AEM) dispone di un&#39;interfaccia utente touch con [design reattivo](/help/sites-authoring/responsive-layout.md) per l&#39;ambiente di authoring progettato per funzionare sia su dispositivi touch che desktop.
+Adobe Experience Manager (AEM) dispone di un&#39;interfaccia utente touch con [design reattivo](/help/sites-authoring/responsive-layout.md) per l&#39;ambiente di authoring, progettata per funzionare sia su dispositivi touch che desktop.
 
 >[!NOTE]
 >
->L’interfaccia touch è l’interfaccia utente standard per l’AEM. L’interfaccia classica è stata rimossa con AEM 6.4.
+>L’interfaccia touch è l’interfaccia standard di AEM. L’interfaccia classica è stata rimossa con AEM 6.4.
 
 L’interfaccia touch include:
 
 * L’intestazione della suite che:
    * Mostra il logo
    * Fornisce un collegamento alla navigazione globale
-   * Fornisce un collegamento ad altre azioni generiche, ad esempio Ricerca, Guida, Soluzioni di Experience Cloud, Notifiche e Impostazioni utente.
+   * Fornisce un collegamento ad altre azioni generiche, come Ricerca, Aiuto, Soluzioni Experience Cloud, Notifiche e Impostazioni utente.
 * La barra a sinistra (visualizzata quando necessario e nascosta), che può mostrare:
    * Timeline
    * Riferimenti
@@ -51,7 +51,7 @@ L’interfaccia touch include:
 
 >[!NOTE]
 >
->Quasi tutte le funzionalità AEM sono state trasferite all’interfaccia utente touch. Tuttavia, in alcuni casi limitati, la funzionalità torna all’interfaccia classica. Per ulteriori informazioni, vedere [Stato delle funzioni dell&#39;interfaccia utente touch](/help/release-notes/touch-ui-features-status.md).
+>Quasi tutte le funzionalità di AEM sono state trasferite all’interfaccia utente touch. Tuttavia, in alcuni casi limitati, la funzionalità torna all’interfaccia classica. Per ulteriori informazioni, vedere [Stato delle funzioni dell&#39;interfaccia utente touch](/help/release-notes/touch-ui-features-status.md).
 
 L’interfaccia utente touch è stata progettata da Adobe per fornire un’esperienza utente coerente su più prodotti. Si basa su:
 
@@ -68,9 +68,9 @@ I principi di base dell’interfaccia utente touch sono:
 * Includi test incorporati
 * Progettazione bottom-up per garantire che questi principi vengano applicati a ogni elemento e componente
 
-Per un&#39;ulteriore panoramica della struttura dell&#39;interfaccia utente touch, vedere [Struttura dell&#39;interfaccia utente AEM touch](/help/sites-developing/touch-ui-structure.md).
+Per un&#39;ulteriore panoramica della struttura dell&#39;interfaccia utente touch, vedere [Struttura dell&#39;interfaccia utente touch di AEM](/help/sites-developing/touch-ui-structure.md).
 
-## Stack di tecnologie AEM {#aem-technology-stack}
+## Stack di tecnologia AEM {#aem-technology-stack}
 
 AEM utilizza la piattaforma Granite come base e la piattaforma Granite include, tra le altre cose, Java™ Content Repository.
 
@@ -90,9 +90,9 @@ Granite è uno stack Open Web di Adobe che fornisce vari componenti, tra cui:
 
 >[!NOTE]
 >
->Granite viene eseguito come progetto di sviluppo aperto all’interno di Adobe: i contributi al codice, le discussioni e i problemi vengono effettuati da tutta l’azienda.
+>Granite viene eseguito come progetto di sviluppo aperto in Adobe: contributi al codice, discussioni e problemi vengono apportati da tutta l’azienda.
 >
->Granite è tuttavia **non** un progetto open-source. È basato su diversi progetti open-source (Apache Sling, Felix, Jackrabbit e Lucene in particolare), ma Adobe disegna una linea chiara tra ciò che è pubblico e ciò che è interno.
+>Granite è tuttavia **non** un progetto open-source. È basato su diversi progetti open-source (Apache Sling, Felix, Jackrabbit e Lucene in particolare), ma Adobe traccia una linea chiara tra ciò che è pubblico e ciò che è interno.
 
 ## Interfaccia utente Granite {#granite-ui}
 
@@ -124,7 +124,7 @@ L’interfaccia utente Granite:
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Componenti Foundation dell&#39;interfaccia utente Granite](#granite-ui-foundation-components)
+* [Componenti di base per l&#39;interfaccia utente Granite](#granite-ui-foundation-components)
 Questa libreria di componenti di base può essere utilizzata o estesa da altre librerie.
 * [Componenti di amministrazione dell’interfaccia utente Granite](#granite-ui-administration-components)
 
@@ -139,7 +139,7 @@ La comunicazione client-server nell’interfaccia utente Granite è costituita d
 
 #### Lato client {#client-side}
 
-Questo utilizza un’estensione del vocabolario HTML, a condizione che l’autore possa esprimere la propria intenzione di creare un’app web interattiva. Questo approccio è simile a [WAI-ARIA](https://www.w3.org/TR/wai-aria/) e [microformati](https://microformats.org/).
+Questa utilizza un’estensione del vocabolario HTML, purché l’autore possa esprimere la propria intenzione di creare un’app web interattiva. Questo approccio è simile a [WAI-ARIA](https://www.w3.org/TR/wai-aria/) e [microformati](https://microformats.org/).
 
 È costituito principalmente da una raccolta di pattern di interazione (ad esempio, l’invio asincrono di un modulo) interpretati da codici JS e CSS ed eseguiti sul lato client. Il ruolo del lato client è quello di migliorare il markup (dato come prezzo per l’hypermedia dal server) per l’interattività.
 
@@ -245,14 +245,14 @@ Quando si aggiorna il codice ExtJS per utilizzare l’interfaccia utente Granite
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete` `cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Tipo di nodo** | **Tipo di risorsa dell&#39;interfaccia utente Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Componenti di amministrazione dell’interfaccia utente Granite {#granite-ui-administration-components}
@@ -278,24 +278,24 @@ Implementazione:
 CoralUI.pdf
 
 [Ottieni file](assets/coralui.pdf)
-Coral UI (CUI) è un&#39;implementazione dello stile visivo di Adobe per l&#39;interfaccia touch progettata per fornire coerenza nell&#39;esperienza utente tra più prodotti. L’interfaccia utente Coral offre tutto il necessario per adottare lo stile visivo utilizzato nell’ambiente di authoring.
+Coral UI (CUI) è un’implementazione dello stile visivo di Adobe per l’interfaccia touch, progettata per fornire un’esperienza utente coerente su più prodotti. L’interfaccia utente Coral offre tutto il necessario per adottare lo stile visivo utilizzato nell’ambiente di authoring.
 
 >[!CAUTION]
 >
->Coral UI è una libreria dell’interfaccia utente resa disponibile ai clienti AEM per la creazione di applicazioni e interfacce web entro i limiti dell’utilizzo del prodotto concesso in licenza.
+>Coral UI è una libreria di interfacce utente resa disponibile ai clienti di AEM per la creazione di applicazioni e interfacce web entro i limiti dell’utilizzo del prodotto concesso in licenza.
 >
 >L’utilizzo dell’interfaccia utente Coral è consentito solo:
 >
 >
 >* Quando è stato spedito e fornito in bundle con AEM.
 >* Da utilizzare quando si estende l’interfaccia utente esistente dell’ambiente di authoring.
->* Adobe di materiale collaterale aziendale, annunci e presentazioni.
+>* Materiale collaterale aziendale, annunci e presentazioni di Adobe.
 >* L’interfaccia utente delle applicazioni a marchio Adobe (il font non deve essere prontamente disponibile per altri utilizzi).
 >* Con personalizzazioni minori.
 >
 >L’utilizzo dell’interfaccia utente Coral deve essere evitato in:
 >
->* Documenti e altri elementi non correlati a Adobe.
+>* Documenti e altri elementi non correlati ad Adobe.
 >* Ambienti di creazione dei contenuti (in cui gli elementi precedenti potrebbero essere generati da altri).
 >* Applicazioni/componenti/pagine web che non sono chiaramente collegati ad Adobe.
 >
@@ -304,13 +304,13 @@ L’interfaccia utente Coral è una raccolta di elementi di base per lo sviluppo
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-Progettato per essere modulare fin dall&#39;inizio, ogni modulo forma un livello distinto in base al suo ruolo principale. Anche se i livelli sono stati progettati per supportarsi a vicenda, possono anche essere utilizzati in modo indipendente, se necessario. Questo rende possibile implementare l&#39;esperienza utente di Coral in qualsiasi ambiente compatibile con HTML.
+Progettato per essere modulare fin dall&#39;inizio, ogni modulo forma un livello distinto in base al suo ruolo principale. Anche se i livelli sono stati progettati per supportarsi a vicenda, possono anche essere utilizzati in modo indipendente, se necessario. Questo consente di implementare l&#39;esperienza utente di Coral in qualsiasi ambiente compatibile con HTML.
 
-Con l’interfaccia utente Coral non è obbligatorio utilizzare un particolare modello e/o piattaforma di sviluppo. L’obiettivo principale di Coral è fornire un markup HTML5 unificato e pulito, indipendente dal metodo effettivo utilizzato per emettere questo markup. Questo può essere utilizzato per il rendering lato client o server, modelli, JSP, PHP o anche applicazioni RIA di Flash di Adobe - per citarne solo alcuni.
+Con l’interfaccia utente Coral non è obbligatorio utilizzare un particolare modello e/o piattaforma di sviluppo. L&#39;obiettivo principale di Coral è quello di fornire un markup HTML5 unificato e pulito, indipendente dal metodo effettivo utilizzato per emettere questo markup. Può essere utilizzato per il rendering lato client o server, per i modelli, per le applicazioni JSP, PHP o Adobe Flash RIA, per citarne solo alcuni.
 
 ### Elementi HTML - Livello markup {#html-elements-the-markup-layer}
 
-Gli elementi HTML forniscono un aspetto comune a tutti gli elementi dell’interfaccia utente di base (tra cui barra di navigazione, pulsante, menu, barra, ecc.).
+Gli elementi HTML hanno un aspetto comune a tutti gli elementi dell’interfaccia utente di base (tra cui barra di navigazione, pulsante, menu, barra, ecc.).
 
 Al livello più elementare, un elemento HTML è un tag HTML con un nome di classe dedicato. Gli elementi più complessi possono essere composti da più tag, nidificati l’uno all’altro (in un modo specifico).
 
@@ -323,7 +323,7 @@ Finalità:
 
 Implementazione:
 
-* HTML tag con stili ispirati a [Bootstrap](https://twitter.github.com/bootstrap/)
+* Tag HTML con stili ispirati a [Bootstrap](https://twitter.github.com/bootstrap/)
 * Le classi sono definite in file LESS
 * Le icone sono definite come sprite dei caratteri
 
@@ -360,7 +360,7 @@ I valori effettivi sono definiti in un file di variabili LESS (la seguente estra
 
 ### Plug-in elemento {#element-plugins}
 
-Molti elementi HTML devono presentare un comportamento dinamico, ad esempio l&#39;apertura e la chiusura di menu a comparsa. Questo è il ruolo dei plug-in dell’elemento, che eseguono tali attività manipolando il DOM utilizzando JavaScript.
+Molti elementi di HTML devono mostrare un qualche tipo di comportamento dinamico, come l’apertura e la chiusura dei menu a comparsa. Questo è il ruolo dei plug-in dell’elemento, che eseguono tali attività manipolando il DOM utilizzando JavaScript.
 
 Un plug-in può essere:
 
@@ -374,7 +374,7 @@ Il comportamento del plug-in può essere personalizzato con i parametri mediante
 
 Anche se lo sviluppatore può selezionare l’approccio migliore per qualsiasi plug-in, la regola empirica è quella di utilizzare:
 
-* Attributi `data-*` per le opzioni relative al layout di HTML. Ad esempio, per specificare il numero di colonne
+* Attributi `data-*` per le opzioni relative al layout HTML. Ad esempio, per specificare il numero di colonne
 * Opzioni/classi API per la funzionalità relativa ai dati. Ad esempio, la costruzione dell’elenco di elementi da visualizzare
 
 Lo stesso concetto viene utilizzato per implementare la convalida del modulo. Per un elemento da convalidare, è necessario specificare il modulo di input richiesto come attributo `data-*` personalizzato. Questo attributo viene quindi utilizzato come opzione per un plug-in di convalida.
@@ -385,7 +385,7 @@ Lo stesso concetto viene utilizzato per implementare la convalida del modulo. Pe
 
 Finalità:
 
-* Fornire un comportamento dinamico per gli elementi HTML
+* Fornire un comportamento dinamico per gli elementi di HTML
 * Fornire layout personalizzati non possibili con file CSS puri
 * Esegui convalida modulo
 * Eseguire manipolazioni DOM avanzate
@@ -489,7 +489,7 @@ Questa libreria è una raccolta di plug-in e/o funzioni di assistenza JavaScript
 
 Questi includono la gestione XSS e il bus di eventi.
 
-Anche se i plug-in e i widget dell&#39;elemento HTML possono basarsi sulle funzionalità fornite dalla libreria di utilità, la libreria di utilità non può avere alcuna dipendenza dagli elementi o dai widget stessi.
+Anche se i plug-in e i widget dell&#39;elemento HTML possono fare affidamento sulle funzionalità fornite dalla libreria di utilità, la libreria di utilità non può avere alcuna dipendenza rigida dagli elementi o dai widget stessi.
 
 Finalità:
 

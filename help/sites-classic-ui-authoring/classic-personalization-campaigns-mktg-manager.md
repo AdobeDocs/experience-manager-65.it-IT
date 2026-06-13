@@ -1,5 +1,5 @@
 ---
-title: Utilizzo del Marketing Campaign Manager
+title: Utilizzo di Marketing Campaign Manager
 description: Marketing Campaign Manager (MCM) è una console che consente di gestire campagne multicanale. Con questo software di automazione marketing puoi gestire tutti i tuoi marchi, campagne ed esperienze insieme ai relativi segmenti, elenchi, lead e rapporti.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,16 +12,16 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 1%
+source-wordcount: '866'
+ht-degree: 2%
 
 ---
 
-# Utilizzo del Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
+# Utilizzo di Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
 In AEM, Marketing Campaign Manager (MCM) è una console che consente di gestire le campagne multicanale. Con questo software di automazione marketing puoi gestire tutti i tuoi marchi, campagne ed esperienze insieme ai relativi segmenti, elenchi, lead e rapporti.
 
-MCM è accessibile da varie posizioni in AEM; ad esempio, la schermata di benvenuto, utilizzando l’icona Campagne o con l’URL:
+MCM è accessibile da varie posizioni in AEM, ad esempio dalla schermata di benvenuto, utilizzando l’icona Campagne o l’URL:
 
 `https://<hostname>:<port>/libs/mcm/content/admin.html`
 
@@ -52,11 +52,11 @@ Selezionando un rapporto si apre la relativa pagina.
 In questo riquadro sono elencate le esperienze della campagna, ad esempio [newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Lead](#leads)**
-Qui puoi gestire i lead. Puoi creare o importare lead, modificare dettagli specifici per singoli lead o eliminarli quando non sono più necessari. È inoltre possibile inserire lead in gruppi diversi, denominati Elenchi. **Nota:** l&#39;Adobe non prevede di migliorare ulteriormente questa funzionalità.
+Qui puoi gestire i lead. Puoi creare o importare lead, modificare dettagli specifici per singoli lead o eliminarli quando non sono più necessari. È inoltre possibile inserire lead in gruppi diversi, denominati Elenchi. **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
 Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 * **[Elenchi](#lists)**
-Qui puoi gestire i tuoi elenchi (di lead).**Nota:** l&#39;Adobe non prevede di migliorare ulteriormente questa funzionalità.
+Qui puoi gestire i tuoi elenchi (di lead).**Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
 Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 * **[Campagne](#campaigns)**
@@ -75,7 +75,7 @@ La dashboard mostra quattro riquadri che forniscono una panoramica degli elenchi
 >Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione dei lead).
 >Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
-In MCM AEM, puoi organizzare e aggiungere lead immettendoli manualmente o importando un elenco separato da virgole, ad esempio una mailing list. Ulteriori modi per generare i lead sono le iscrizioni a newsletter o le iscrizioni alla community (se configurate, possono attivare un flusso di lavoro che popola i lead). I lead vengono in genere suddivisi in categorie e inseriti in un elenco, in modo che in seguito sia possibile eseguire azioni sull’intero elenco, ad esempio l’invio di un’e-mail personalizzata a un determinato elenco.
+In AEM MCM, puoi organizzare e aggiungere lead immettendoli manualmente o importando un elenco separato da virgole, ad esempio una mailing list. Ulteriori modi per generare i lead sono le iscrizioni a newsletter o le iscrizioni alla community (se configurate, possono attivare un flusso di lavoro che popola i lead). I lead vengono in genere suddivisi in categorie e inseriti in un elenco, in modo che in seguito sia possibile eseguire azioni sull’intero elenco, ad esempio l’invio di un’e-mail personalizzata a un determinato elenco.
 
 In **Lead** nel riquadro a sinistra puoi creare, importare, modificare ed eliminare i lead, quindi attivarli o disattivarli in base alle esigenze. È possibile aggiungere un lead a un elenco o vedere a quali elenchi appartiene già.
 
@@ -89,7 +89,7 @@ In **Lead** nel riquadro a sinistra puoi creare, importare, modificare ed elimin
 
 >[!NOTE]
 >
->L’Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione degli elenchi).
+>Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione degli elenchi).
 >Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 Gli elenchi ti consentono di organizzare i lead in gruppi. Con gli elenchi, puoi indirizzare le tue campagne di marketing a un gruppo selezionato di persone; ad esempio, puoi inviare una newsletter mirata a un elenco.

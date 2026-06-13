@@ -1,6 +1,6 @@
 ---
 title: Backup e ripristino
-description: Scopri come eseguire il backup e il ripristino dei contenuti e delle configurazioni dell’AEM.
+description: Scopri come eseguire il backup e il ripristino dei contenuti e delle configurazioni di AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,14 +11,14 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
 
 # Backup e ripristino{#backup-and-restore}
 
-Esistono due modi per eseguire il backup e il ripristino del contenuto dell&#39;archivio in AEM:
+Esistono due modi per eseguire il backup e il ripristino del contenuto dell’archivio in AEM:
 
 * È possibile creare un backup esterno dell&#39;archivio e archiviarlo in un percorso sicuro. Se l’archivio si suddivide, puoi ripristinarlo allo stato precedente.
 * Puoi creare versioni interne del contenuto dell’archivio. Queste versioni vengono memorizzate nell’archivio insieme al contenuto, in modo da poter ripristinare rapidamente i nodi e gli alberi modificati o eliminati.
@@ -40,7 +40,7 @@ Non eseguire il backup in parallelo con la raccolta di oggetti inattivi dell’a
 
 ## Backup offline {#offline-backup}
 
-È sempre possibile eseguire un backup offline. Questo richiede tempi di inattività per l&#39;AEM, ma può essere abbastanza efficiente in termini di tempo richiesto rispetto a un backup online.
+È sempre possibile eseguire un backup offline. Questo richiede tempi di inattività di AEM, ma può essere abbastanza efficiente in termini di tempo richiesto rispetto a un backup online.
 
 Nella maggior parte dei casi si utilizza uno snapshot del file system per creare una copia di sola lettura dello storage in quel momento. Per creare un backup non in linea, effettuare le seguenti operazioni:
 
@@ -60,30 +60,30 @@ Questo metodo funziona come backup &quot;a caldo&quot; o &quot;online&quot; e pu
 
 Durante la creazione di un backup, sono disponibili le seguenti opzioni:
 
-* Backup in una directory mediante lo strumento di backup integrato AEM.
+* Backup in una directory utilizzando lo strumento di backup integrato di AEM.
 * Backup in una directory mediante uno snapshot del file system
 
 In ogni caso, il backup crea un’immagine (o un’istantanea) dell’archivio. L&#39;agente di backup del sistema deve quindi fare attenzione a trasferire effettivamente questa immagine a un sistema di backup dedicato (unità nastro).
 
 >[!NOTE]
 >
->Se si utilizza la funzionalità Backup online AEM in un&#39;istanza AEM con una configurazione di archivio dati personalizzata, è consigliabile configurare il percorso dell&#39;archivio dati in modo che si trovi all&#39;esterno della directory &quot; `crx-quickstart`&quot; ed eseguire separatamente il backup dell&#39;archivio dati.
+>Se si utilizza la funzionalità AEM Online Backup in un&#39;istanza di AEM con una configurazione di archivio dati personalizzata, è consigliabile configurare il percorso dell&#39;archivio dati in modo che si trovi all&#39;esterno della directory &quot; `crx-quickstart`&quot; ed eseguire separatamente il backup dell&#39;archivio dati.
 
 >[!CAUTION]
 >
 >Il backup online esegue solo il backup del file system. Se si archivia il contenuto del repository e/o i file del repository in un database, è necessario eseguire separatamente il backup del database. Se utilizzi AEM con MongoDB, consulta la documentazione sull&#39;utilizzo degli [strumenti di backup nativi di MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
 
-### Backup online AEM {#aem-online-backup}
+### Backup online di AEM {#aem-online-backup}
 
 Un backup online del repository consente di creare, scaricare ed eliminare i file di backup. Si tratta di una funzione di backup &quot;a caldo&quot; o &quot;online&quot;, che può essere eseguita mentre l’archivio viene utilizzato normalmente in modalità di lettura-scrittura.
 
 >[!CAUTION]
 >
->Non eseguire Backup online AEM contemporaneamente a [Raccolta oggetti inattivi archivio dati](/help/sites-administering/data-store-garbage-collection.md) o [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Influenzerà negativamente le prestazioni del sistema.
+>Non eseguire AEM Online Backup contemporaneamente a [Raccolta oggetti inattivi archivio dati](/help/sites-administering/data-store-garbage-collection.md) o [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Influenzerà negativamente le prestazioni del sistema.
 
 All&#39;avvio di un backup è possibile specificare un **Percorso di destinazione** e/o un **Ritardo**.
 
-**Percorso di destinazione** I file di backup vengono in genere salvati nella cartella padre della cartella contenente il file jar quickstart (.jar). Ad esempio, se il file jar dell’AEM si trova in /InstallationKits/AEM, il backup verrà generato in /InstallationKits. Puoi anche specificare un target per una posizione a tua scelta.
+**Percorso di destinazione** I file di backup vengono in genere salvati nella cartella padre della cartella contenente il file jar quickstart (.jar). Ad esempio, se il file jar di AEM si trova in /InstallationKits/AEM, il backup verrà generato in /InstallationKits. Puoi anche specificare un target per una posizione a tua scelta.
 
 Se **TargetPath** è una directory, l&#39;immagine dell&#39;archivio viene creata in questa directory. Se la stessa directory viene utilizzata più volte (o sempre) per memorizzare il backup,
 
@@ -107,7 +107,7 @@ Se **TargetPath** è una directory, l&#39;immagine dell&#39;archivio viene creat
 **Ritardo** indica un ritardo (in millisecondi) che non influisce sulle prestazioni dell&#39;archivio. Per impostazione predefinita, il backup dell’archivio viene eseguito a piena velocità. È possibile rallentare la creazione di un backup online in modo da non rallentare altre attività.
 
 Quando si utilizza un ritardo elevato, assicurarsi che il backup online non richieda più di 24 ore. In caso contrario, eliminare questo backup, poiché potrebbe non contenere tutti i file binari.
-Un ritardo di 1 millisecondo comporta in genere un utilizzo della CPU del 10% e un ritardo di 10 millisecondi in genere comporta un utilizzo della CPU inferiore al 3%. Il ritardo totale in secondi può essere stimato come segue: dimensione dell’archivio in MB, moltiplicata per il ritardo in millisecondi, divisa per 2 (se si utilizza l’opzione zip), o divisa per 4 (quando si esegue il backup in una directory). Ciò significa che un backup in una directory di un archivio da 200 MB con un ritardo di 1 ms aumenta il tempo di backup di circa 50 secondi.
+Un ritardo di 1 millisecondo in genere si traduce in un utilizzo del CPU del 10% e un ritardo di 10 millisecondi in genere si traduce in un utilizzo del CPU inferiore al 3%. Il ritardo totale in secondi può essere stimato come segue: dimensione dell’archivio in MB, moltiplicata per il ritardo in millisecondi, divisa per 2 (se si utilizza l’opzione zip), o divisa per 4 (quando si esegue il backup in una directory). Ciò significa che un backup in una directory di un archivio da 200 MB con un ritardo di 1 ms aumenta il tempo di backup di circa 50 secondi.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ Un ritardo di 1 millisecondo comporta in genere un utilizzo della CPU del 10% e 
 
 Per creare un backup:
 
-1. Accedi all’AEM come amministratore.
+1. Accedi ad AEM come amministratore.
 
 1. Vai a **Strumenti - Operazioni - Backup.**
 1. Fai clic su **Crea**. Viene aperta la console di backup.
@@ -149,9 +149,9 @@ Per creare un backup:
 
    >[!NOTE]
    >
-   >Se è stato eseguito il backup in una directory: al termine del processo di backup, AEM non scriverà nella directory di destinazione.
+   >Se è stato eseguito il backup in una directory: al termine del processo di backup, AEM non scrive nella directory di destinazione.
 
-### Automazione del backup online dell&#39;AEM {#automating-aem-online-backup}
+### Automazione del backup online di AEM {#automating-aem-online-backup}
 
 Se possibile, il backup online deve essere eseguito quando il carico sul sistema è ridotto, ad esempio al mattino.
 
@@ -192,7 +192,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->È inoltre possibile attivare un backup [utilizzando gli MBean forniti dall&#39;AEM](/help/sites-administering/jmx-console.md).
+>È inoltre possibile attivare un backup [utilizzando gli MBean forniti da AEM](/help/sites-administering/jmx-console.md).
 
 ### Backup snapshot del file system {#filesystem-snapshot-backup}
 
@@ -207,9 +207,9 @@ Il processo qui descritto è particolarmente adatto per archivi di grandi dimens
 1. Montare lo snapshot del file system.
 1. Eseguire un backup e smontare la copia istantanea.
 
-### Funzionamento del backup online dell&#39;AEM {#how-aem-online-backup-works}
+### Funzionamento di AEM Online Backup {#how-aem-online-backup-works}
 
-Il servizio Backup online AEM è costituito da una serie di azioni interne volte a garantire l&#39;integrità dei dati di cui viene eseguito il backup e dei file di backup creati. Di seguito sono elencati i nomi delle persone interessate.
+AEM Online Backup è costituito da una serie di azioni interne volte a garantire l&#39;integrità dei dati di cui viene eseguito il backup e dei file di backup creati. Di seguito sono elencati i nomi delle persone interessate.
 
 Il backup online utilizza il seguente algoritmo:
 
@@ -260,6 +260,6 @@ Quando si esegue il backup dei nodi utilizzando Gestione pacchetti o lo zip dei 
 * Definizioni dei tipi di nodo utilizzate per il contenuto di cui si esegue il backup.
 * Definizioni dello spazio dei nomi utilizzate per il contenuto di cui si esegue il backup.
 
-Durante il backup, l&#39;AEM perde le seguenti informazioni:
+Durante il backup, AEM perde le seguenti informazioni:
 
 * La cronologia delle versioni.

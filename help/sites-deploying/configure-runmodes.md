@@ -1,6 +1,6 @@
 ---
 title: Modalità di esecuzione
-description: Scopri come ottimizzare l’istanza AEM per scopi specifici utilizzando le modalità di esecuzione.
+description: Scopri come regolare l’istanza di AEM per scopi specifici utilizzando le modalità di esecuzione.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
 
 # Modalità di esecuzione{#run-modes}
 
-Le modalità di esecuzione consentono di regolare l’istanza AEM per uno scopo specifico, ad esempio authoring o pubblicazione, test, sviluppo, Intranet o altri.
+Le modalità di esecuzione consentono di regolare l’istanza di AEM per uno scopo specifico, ad esempio authoring o pubblicazione, test, sviluppo, Intranet o altri.
 
 Operazioni disponibili:
 
@@ -120,9 +120,9 @@ Queste cartelle sono di tipo `nt:folder` e devono contenere il bundle appropriat
 
 Se sono state definite configurazioni per più modalità di esecuzione, è necessario definire quale deve essere utilizzata all&#39;avvio. Esistono diversi metodi per specificare quale modalità di esecuzione utilizzare; l’ordine di risoluzione è:
 
-1. [proprietà di sistema (](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [proprietà di sistema (`-D`)](#using-a-system-property-in-the-start-script)
+1. [`sling.properties` file](#using-the-sling-properties-file)
+1. [Opzione `-r`](#using-the-r-option)
 1. [Rilevamento del nome file](#filename-detection-renaming-the-jar-file)
 
 Quando si utilizza un server applicazioni è inoltre possibile [definire la modalità di esecuzione in web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -141,7 +141,7 @@ Il file `sling.properties` può essere utilizzato per definire la modalità di e
 
 ### Utilizzo dell&#39;opzione -r {#using-the-r-option}
 
-È possibile attivare una modalità di esecuzione personalizzata utilizzando l&#39;opzione `-r` all&#39;avvio dell&#39;avvio rapido. Ad esempio, utilizza il seguente comando per avviare un’istanza AEM con la modalità di esecuzione impostata su dev. &quot;
+È possibile attivare una modalità di esecuzione personalizzata utilizzando l&#39;opzione `-r` all&#39;avvio dell&#39;avvio rapido. Ad esempio, utilizza il seguente comando per avviare un’istanza di AEM con la modalità di esecuzione impostata su dev. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -180,6 +180,6 @@ nel file:
 
 `WEB-INF/web.xml`
 
-Si trova nel file `war` dell&#39;AEM e deve essere aggiornato prima della distribuzione.
+Si trova nel file AEM `war` e deve essere aggiornato prima della distribuzione.
 
 Per ulteriori dettagli, vedere [Installazione di AEM con un server applicazioni](/help/sites-deploying/application-server-install.md).

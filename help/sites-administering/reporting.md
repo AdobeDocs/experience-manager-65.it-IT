@@ -1,5 +1,5 @@
 ---
-title: Generazione rapporti
+title: Reporting
 description: Scopri come utilizzare la funzione di reporting in Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2782'
-ht-degree: 3%
+source-wordcount: '2806'
+ht-degree: 4%
 
 ---
 
-# Generazione rapporti {#reporting}
+# Reporting {#reporting}
 
 Per aiutarti a monitorare e analizzare lo stato dell’istanza, Adobe Experience Manager (AEM) fornisce una selezione di rapporti predefiniti che possono essere configurati per i tuoi requisiti individuali:
 
@@ -40,7 +40,7 @@ Tutti i report sono accessibili dalla console **Strumenti**. Seleziona **Report*
 
 >[!NOTE]
 >
->Oltre ai report standard dell&#39;AEM disponibili con la procedura guidata, puoi [sviluppare i tuoi (nuovi) report](/help/sites-developing/dev-reports.md).
+>Oltre ai report standard di AEM disponibili come predefiniti, puoi [sviluppare dei report personalizzati](/help/sites-developing/dev-reports.md).
 
 ## Nozioni di base sulla personalizzazione dei rapporti {#the-basics-of-report-customization}
 
@@ -490,7 +490,7 @@ Questo offre una panoramica concisa, fornendo informazioni sulle singole istanze
 
 [Colonne di informazioni](#selecting-and-positioning-the-data-columns) su:
 
-* Completato
+* Completata
 * Durata
 * Iniziatore
 * Modello
@@ -510,13 +510,13 @@ Vengono fornite statistiche chiave sui flussi di lavoro in esecuzione nell’ist
 
 ![flusso di lavoro del report](assets/reportworkflow.png)
 
-## Utilizzo dei rapporti in un ambiente Publish {#using-reports-in-a-publish-environment}
+## Utilizzo dei rapporti in un ambiente di pubblicazione {#using-reports-in-a-publish-environment}
 
 Dopo aver configurato i rapporti in base a esigenze specifiche, puoi attivarli per trasferire la configurazione nell’ambiente di pubblicazione.
 
 >[!CAUTION]
 >
->Se desideri **Dati storici** per l&#39;ambiente Publish, **Termina** il report nell&#39;ambiente di authoring prima di attivare la pagina.
+>Se desideri **Dati storici** per l&#39;ambiente di pubblicazione, **Termina** il report nell&#39;ambiente di authoring prima di attivare la pagina.
 
 Il report appropriato è quindi accessibile in
 
@@ -526,15 +526,15 @@ Ad esempio, il rapporto User-Generated Content (Contenuto generato dall’utente
 
 `http://localhost:4503/etc/reports/ugcreport.html`
 
-Questo ora genera rapporti sui dati raccolti dall’ambiente Publish.
+Questo ora genera rapporti sui dati raccolti dall’ambiente di pubblicazione.
 
-Poiché nell&#39;ambiente Publish non è consentita alcuna configurazione di report, i pulsanti **Modifica** e **Fine** non sono disponibili. È tuttavia possibile selezionare **Periodo** e **Intervallo** per i report **Dati cronologici** se vengono raccolti snapshot.
+Poiché nell&#39;ambiente di pubblicazione non è consentita alcuna configurazione di report, i pulsanti **Modifica** e **Fine** non sono disponibili. È tuttavia possibile selezionare **Periodo** e **Intervallo** per i report **Dati cronologici** se vengono raccolti snapshot.
 
 ![reportsucgpublish](assets/reportsucgpublish.png)
 
 >[!CAUTION]
 >
->L&#39;accesso a questi report può rappresentare un problema di sicurezza; pertanto, l&#39;Adobe consiglia di configurare Dispatcher in modo che `/etc/reports` non sia disponibile per i visitatori esterni. Per ulteriori dettagli, vedere l&#39;[elenco di controllo protezione](security-checklist.md).
+>L&#39;accesso a questi report può rappresentare un problema di sicurezza; pertanto Adobe consiglia di configurare Dispatcher in modo che `/etc/reports` non sia disponibile per i visitatori esterni. Per ulteriori dettagli, consulta l’[elenco di controllo della sicurezza](security-checklist.md).
 
 ## Autorizzazioni necessarie per l’esecuzione dei rapporti {#permissions-needed-for-running-reports}
 
@@ -543,7 +543,7 @@ Le autorizzazioni necessarie dipendono dall’azione:
 * I dati del rapporto vengono raccolti utilizzando i privilegi dell’utente corrente.
 * I dati storici vengono raccolti utilizzando i privilegi dell’utente che ha completato il rapporto.
 
-In un’installazione standard dell’AEM sono preimpostate le seguenti autorizzazioni per i rapporti:
+In un’installazione standard di AEM, per i rapporti sono preimpostate le seguenti autorizzazioni:
 
 * **Report utente**
 

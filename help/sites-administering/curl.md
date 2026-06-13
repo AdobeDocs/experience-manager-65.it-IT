@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 2%
+source-wordcount: '1071'
+ht-degree: 3%
 
 ---
 
@@ -157,7 +157,7 @@ curl -u <user>:<password> http://localhost:4502/etc/packages/my_packages/test.zi
 curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip?cmd=replicate
 ```
 
-### User Management {#user-management}
+### Gestione utenti {#user-management}
 
 #### Crea un nuovo utente {#create-a-new-user}
 
@@ -284,7 +284,7 @@ curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:450
 curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
-### Communities {#communities}
+### Community {#communities}
 
 #### Assegnare e revocare i badge {#assign-and-revoke-badges}
 
@@ -296,13 +296,13 @@ Per informazioni dettagliate, consulta [Nozioni di base su punteggio e badge](/h
 
 Per informazioni dettagliate, vedere [MSRP - Provider risorse di archiviazione MongoDB](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command).
 
-### Sicurezza {#security}
+### Protezione {#security}
 
 #### Abilitazione e disabilitazione di CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
 Per ulteriori informazioni, vedere [Abilitazione di CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md).
 
-### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
+### Raccolta oggetti inattivi nell’archivio dati {#data-store-garbage-collection}
 
 Per ulteriori dettagli, vedi [Raccolta oggetti inattivi archivio dati](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection).
 

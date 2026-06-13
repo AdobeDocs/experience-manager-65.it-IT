@@ -1,5 +1,5 @@
 ---
-title: Raccolta oggetti inattivi in archivio dati
+title: Raccolta oggetti inattivi nell’archivio dati
 description: Scopri come configurare Data Store Garbage Collection per liberare spazio su disco.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,18 +12,18 @@ feature: Operations
 role: Admin
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 0%
 
 ---
 
-# Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
+# Raccolta oggetti inattivi nell’archivio dati {#data-store-garbage-collection}
 
 Quando viene rimossa una risorsa WCM convenzionale, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record di archivio dati senza riferimenti diventa quindi un &quot;immondizia&quot; che non deve essere conservata. Nei casi in cui sono presenti diverse risorse inutilizzate, è utile eliminarle per preservare lo spazio e ottimizzare le prestazioni di backup e manutenzione dei file system.
 
 Nella maggior parte dei casi, un&#39;applicazione WCM tende a raccogliere informazioni, ma non a eliminarle quasi con la stessa frequenza. Sebbene vengano aggiunte nuove immagini, anche sostituendo le versioni precedenti, il sistema di controllo delle versioni mantiene quella precedente e, se necessario, supporta il ripristino. In questo modo, la maggior parte dei contenuti che consideriamo come aggiunte al sistema vengono effettivamente archiviati in modo permanente. Qual è quindi la fonte tipica di &quot;immondizia&quot; nell&#39;archivio che potremmo voler ripulire?
 
-L’AEM utilizza l’archivio come archivio per diverse attività interne e di manutenzione:
+AEM utilizza l’archivio come archivio per diverse attività interne e di manutenzione:
 
 * Pacchetti generati e scaricati
 * File temporanei creati per la replica di pubblicazione
@@ -59,7 +59,7 @@ Questo approccio funziona bene per un singolo nodo con un archivio dati privato.
 
 ## Esecuzione della raccolta oggetti inattivi dell’archivio dati {#running-data-store-garbage-collection}
 
-Esistono tre modi per eseguire la raccolta di oggetti inattivi dell’archivio dati, a seconda della configurazione dell’archivio dati su cui è in esecuzione AEM:
+Esistono tre modi per eseguire la raccolta di oggetti inattivi dell’archivio dati, a seconda della configurazione dell’archivio dati su cui AEM è in esecuzione:
 
 1. Tramite [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md): un meccanismo di raccolta dei rifiuti utilizzato in genere per la pulizia dell&#39;archivio nodi.
 
@@ -68,7 +68,7 @@ Esistono tre modi per eseguire la raccolta di oggetti inattivi dell’archivio d
 
 Se si utilizza TarMK sia come archivio nodi che come archivio dati, è possibile utilizzare Pulizia revisioni per la raccolta di oggetti inattivi sia dell’archivio nodi che dell’archivio dati. Tuttavia, se è configurato un archivio dati esterno, ad esempio Archivio dati del file system, la raccolta di oggetti inattivi dell’archivio dati deve essere attivata in modo esplicito e separata da Pulizia revisioni. La raccolta di oggetti inattivi dell’archivio dati può essere attivata tramite il dashboard operazioni o la console JMX.
 
-La tabella seguente mostra il tipo di raccolta di oggetti inattivi dell’archivio dati che deve essere utilizzato per tutte le distribuzioni dell’archivio dati supportate nell’AEM 6:
+La tabella seguente mostra il tipo di raccolta di oggetti inattivi dell’archivio dati che deve essere utilizzato per tutte le distribuzioni dell’archivio dati supportate in AEM 6:
 
 <table>
  <tbody>
@@ -123,7 +123,7 @@ Prima di eseguire la raccolta di oggetti inattivi dell’archivio dati, verifica
 
 >[!NOTE]
 >
->L’attività Raccolta oggetti inattivi dell’archivio dati sarà visibile solo se hai configurato un archivio dati di file esterno. Per informazioni sulla configurazione di un archivio dati di file, vedere [Configurazione degli archivi di dati e nodi in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
+>L’attività Raccolta oggetti inattivi dell’archivio dati sarà visibile solo se hai configurato un archivio dati di file esterno. Per informazioni sulla configurazione di un archivio dati di file, vedere [Configurazione degli archivi dati e dei nodi in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
 
 ### Esecuzione della raccolta di oggetti inattivi dell’archivio dati tramite la console JMX {#running-data-store-garbage-collection-via-the-jmx-console}
 
@@ -152,7 +152,7 @@ Per eseguire la raccolta di oggetti inattivi:
 
 >[!NOTE]
 >
->L’attività di Garbage Collection dell’archivio dati verrà avviata solo se hai configurato un archivio dati di file esterno. Se non è stato configurato un archivio dati di file esterno, l&#39;attività restituirà il messaggio `Cannot perform operation: no service of type BlobGCMBean found` dopo la chiamata. Per informazioni sulla configurazione di un archivio dati di file, vedere [Configurazione degli archivi di dati e nodi in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
+>L’attività di Garbage Collection dell’archivio dati verrà avviata solo se hai configurato un archivio dati di file esterno. Se non è stato configurato un archivio dati di file esterno, l&#39;attività restituirà il messaggio `Cannot perform operation: no service of type BlobGCMBean found` dopo la chiamata. Per informazioni sulla configurazione di un archivio dati di file, vedere [Configurazione degli archivi dati e dei nodi in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
 
 ## Automazione della raccolta di oggetti inattivi dell’archivio dati {#automating-data-store-garbage-collection}
 

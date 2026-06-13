@@ -465,7 +465,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
   </tr>
   <tr>
    <td><strong>In base alla verifica dello stato e alle voci del registro, la pulizia delle revisioni in linea non è stata completata tre volte di seguito. Cosa è necessario per completare correttamente la pulizia delle revisioni online?</strong></td>
-   <td>Puoi intraprendere diversi passaggi per trovare e risolvere il problema:<br />
+   <td>Puoi eseguire diversi passaggi per trovare e risolvere il problema:<br />
     <ul>
      <li>Controllare innanzitutto le voci del registro<br /> </li>
      <li>A seconda delle informazioni contenute nei registri, adotta le misure appropriate:

@@ -9,7 +9,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -544,7 +544,7 @@ Per comodità, è possibile copiare e incollare il seguente codice XML nel file 
 </project>
 ```
 
-Aggiungi il seguente profilo al file delle impostazioni Maven per utilizzare l’archivio di Adobi pubblico.
+Aggiungi il seguente profilo al file delle impostazioni Maven per utilizzare l’archivio Adobe pubblico.
 
 #### Profilo Maven {#maven-profile}
 

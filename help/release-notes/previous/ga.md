@@ -7,8 +7,8 @@ feature: Release Information
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4477'
-ht-degree: 5%
+source-wordcount: '4980'
+ht-degree: 9%
 
 ---
 
@@ -87,7 +87,7 @@ Sono stati apportati diversi miglioramenti all’interfaccia utente per renderla
 #### Archivio {#repository}
 
 * Le basi di Adobe Experience Manager 6.5 si basano sulle versioni aggiornate del framework basato su OSGi (Apache Sling e Apache Felix) e del Content Repository Java™: Apache Jackrabbit Oak 1.10.2.
-* Per una panoramica dei problemi risolti, vedere [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) e [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
+* Per una panoramica dei problemi risolti, vedi [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) e [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
@@ -308,7 +308,7 @@ Gli amministratori del sito possono creare un gruppo a qualsiasi livello gerarch
 
 Supporto di **SCORM 2017.1**
 
-La funzionalità di abilitazione di AEM 6.5 Communities supporta il motore SCORM (Shared Content Object Reference Model) 2017.1[.](https://rusticisoftware.com/blog/scorm-engine-2017-released/)
+La funzionalità di abilitazione di AEM 6.5 Communities supporta il motore SCORM (Shared Content Object Reference Model) 2017.1[&#128279;](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Supporto della navigazione tramite tastiera nei componenti di attivazione
 * I componenti di abilitazione (ad esempio, Riproduzione di cataloghi e corsi, Assegnazioni, Libreria file) in AEM Communities supportano la navigazione da tastiera per migliorare l’accessibilità.
@@ -478,7 +478,7 @@ Questo processo di definizione delle priorità ha prodotto più di 750 modifiche
 
 **Moduli**
 
-* [Pacchetti per funzionalità AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it)
+* [Pacchetti per le funzionalità di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it)
 * [SDK client AEM Forms OSGi](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Lingue {#languages}
