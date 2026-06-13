@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione dell’authoring delle pagine
+title: Personalizzazione dell’authoring pagina
 description: Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la funzionalità di authoring delle pagine.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 1%
+source-wordcount: '1466'
+ht-degree: 2%
 
 ---
 
-# Personalizzazione dell’authoring delle pagine{#customizing-page-authoring}
+# Personalizzazione dell’authoring pagina{#customizing-page-authoring}
 
 >[!CAUTION]
 >
@@ -48,7 +48,7 @@ Questi possono essere utilizzati in molti modi per estendere la funzionalità di
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
 >* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Struttura dell&#39;interfaccia utente touch dell&#39;AEM](/help/sites-developing/touch-ui-structure.md) per i dettagli delle aree strutturali utilizzate per l&#39;authoring delle pagine.
+>* [Struttura dell&#39;interfaccia utente touch di AEM](/help/sites-developing/touch-ui-structure.md) per i dettagli delle aree strutturali utilizzate per l&#39;authoring delle pagine.
 >
 
 
@@ -69,7 +69,7 @@ Quando modifichi una pagina, sono disponibili varie [modalità](/help/sites-auth
 
 ### Esempio di livello: stato Live Copy {#layer-example-live-copy-status}
 
-Un&#39;istanza AEM standard fornisce il livello MSM. Consente di accedere ai dati relativi alla [gestione multisito](/help/sites-administering/msm.md) e di evidenziarli nel livello.
+Un’istanza AEM standard fornisce il livello MSM. Consente di accedere ai dati relativi alla [gestione multisito](/help/sites-administering/msm.md) e di evidenziarli nel livello.
 
 Per vederla in azione, puoi modificare qualsiasi [copia per lingua We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (o qualsiasi altra pagina Live Copy) e selezionare la modalità **Stato Live Copy**.
 
@@ -184,7 +184,7 @@ In un’installazione standard di AEM:
 
    >[!CAUTION]
    >
-   >I rapporti di ritaglio AEM, impostati dalla proprietà `ratio`, sono definiti come **altezza/larghezza**. Ciò differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per ragioni di compatibilità con le versioni precedenti. Gli utenti che creano i file non noteranno alcuna differenza, a condizione che tu definisca chiaramente la proprietà `name`, in quanto questo è ciò che viene visualizzato nell&#39;interfaccia utente.
+   >I rapporti di ritaglio di AEM, impostati dalla proprietà `ratio`, sono definiti come **altezza/larghezza**. Ciò differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per ragioni di compatibilità con le versioni precedenti. Gli utenti che creano i file non noteranno alcuna differenza, a condizione che tu definisca chiaramente la proprietà `name`, in quanto questo è ciò che viene visualizzato nell&#39;interfaccia utente.
 
 #### Creazione di un nuovo editor locale {#creating-a-new-in-place-editor}
 
@@ -214,10 +214,10 @@ CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri il progetto aem-authoring-extension-inplace-editor in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+* [Apri il progetto aem-authoring-extension-inplace-editor su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
 
-#### Configurazione di più editor locali {#configuring-multiple-in-place-editors}
+#### Configurazione di più editor diretti {#configuring-multiple-in-place-editors}
 
 È possibile configurare un componente in modo che abbia più editor locali. Quando sono configurati più editor locali, puoi selezionare il contenuto appropriato e aprire l’editor appropriato. Per ulteriori informazioni, consulta la documentazione [Configurazione di più editor locali](/help/sites-developing/multiple-inplace-editors.md).
 

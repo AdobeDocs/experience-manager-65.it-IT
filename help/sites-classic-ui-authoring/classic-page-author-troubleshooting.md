@@ -12,11 +12,11 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 30%
+ht-degree: 28%
 
 ---
 
-# Risoluzione di problemi AEM nell’ambiente di authoring{#troubleshooting-aem-when-authoring}
+# Risoluzione di problemi AEM durante l’authoring{#troubleshooting-aem-when-authoring}
 
 Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 
@@ -26,7 +26,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 >[!NOTE]
 >
->Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi relativi all&#39;AEM (per gli amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, consulta l’amministratore di sistema per la risoluzione dei problemi AEM.
+>Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi ad AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi relativi ad AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, consulta l’amministratore di sistema per la risoluzione dei problemi di AEM.
 
 ## La vecchia versione della pagina è ancora nel sito pubblicato {#old-page-version-still-on-published-site}
 
@@ -43,7 +43,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
    * Esistono varie possibilità:
    * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
-   * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
+   * Aggiungi `?` alla fine dell&#39;URL della pagina. Ad esempio:
 
      `http://localhost:4502/sites.html/content?`
 
@@ -55,7 +55,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 * **Problema**:
 
-   * Il Sidekick non è visibile quando si modifica una pagina di contenuto nell’ambiente di authoring.
+   * Sidekick non è visibile quando si modifica una pagina di contenuto nell’ambiente di authoring.
 
 * **Motivo**:
 
@@ -63,7 +63,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 * **Soluzione**:
 
-   * Esci dalla sessione corrente e accedi di nuovo. Il Sidekick tornerà alla posizione predefinita.
+   * Esci dalla sessione corrente e accedi di nuovo. Sidekick tornerà alla posizione predefinita.
 
 ## Trova e sostituisci: non tutte le istanze vengono sostituite {#find-replace-not-all-instances-are-replaced}
 

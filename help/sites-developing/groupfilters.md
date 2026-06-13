@@ -1,5 +1,5 @@
 ---
-title: Creazione di filtri per gruppi di dispositivi
+title: Creazione di filtri per gruppo dispositivi
 description: Creare un filtro gruppo di dispositivi per definire un set di requisiti di funzionalità dei dispositivi
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '782'
+ht-degree: 1%
 
 ---
 
-# Creazione di filtri per gruppi di dispositivi{#creating-device-group-filters}
+# Creazione di filtri per gruppo dispositivi{#creating-device-group-filters}
 
 {{ue-over-mobile}}
 
@@ -107,7 +107,7 @@ Il pacchetto `org.apache.commons.lang.math` fornisce la classe `NumberUtils`.
 
 >[!NOTE]
 >
->Assicurarsi che il database WURFL™ distribuito all&#39;AEM includa le funzionalità utilizzate come criteri di filtro. (Vedi [Rilevamento dispositivo](/help/sites-developing/mobile.md#server-side-device-detection).)
+>Assicurarsi che il database WURFL™ distribuito in AEM includa le funzionalità utilizzate come criteri di filtro. (Vedi [Rilevamento dispositivo](/help/sites-developing/mobile.md#server-side-device-detection).)
 
 ### Esempio Di Filtro Per Le Dimensioni Dello Schermo {#example-filter-for-screen-size}
 
@@ -186,9 +186,9 @@ Il seguente codice POM è utile se utilizzi Maven per creare le applicazioni. Il
 
 * `org.apache.felix.scr.annotations.jar`: fornisce le annotazioni del componente e del servizio.
 
-Le interfacce DeviceGroup e DeviceGroupFilter sono incluse nel bundle Day Communique 5 WCM Mobile API. Le annotazioni Felix sono incluse nel bundle Apache Felix Declarative Services. Puoi ottenere questo file JAR dall’archivio pubblico Adobe.
+Le interfacce DeviceGroup e DeviceGroupFilter sono incluse nel bundle Day Communique 5 WCM Mobile API. Le annotazioni Felix sono incluse nel bundle Apache Felix Declarative Services. Puoi ottenere questo file JAR dall’archivio Adobe pubblico.
 
-Al momento dell’authoring, 5.5.2 è la versione del bundle WCM Mobile API che si trova nell’ultima versione dell’AEM. Utilizza la console Web di Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) per assicurarti che questa sia la versione del bundle distribuita nell&#39;ambiente.
+Al momento dell’authoring, 5.5.2 è la versione del bundle API WCM Mobile disponibile nell’ultima versione di AEM. Utilizza la console web di Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) per assicurarti che questa sia la versione del bundle distribuita nel tuo ambiente.
 
 **POM:** (il POM utilizza un groupId e una versione diversi).
 

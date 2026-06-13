@@ -1,5 +1,5 @@
 ---
-title: 'Creazione di modelli di pagina  '
+title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4832'
-ht-degree: 73%
+source-wordcount: '4886'
+ht-degree: 74%
 
 ---
 
-# Creazione di modelli di pagina  {#creating-page-templates}
+# Creazione di modelli di pagina{#creating-page-templates}
 
 Quando crei una pagina, è necessario selezionare un modello, il quale verrà utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati.
 
@@ -54,7 +54,7 @@ Per informazioni dettagliate sul funzionamento dei modelli modificabili a livell
 
 Prima di iniziare, è importante considerare i seguenti punti:
 
-* La creazione di un modello richiede collaborazione. Per questo motivo per ogni attività è indicato il [Ruolo](#roles).
+* La creazione di un modello richiede collaborazione. Per questo motivo per ogni attività è indicato il relativo [Ruolo](#roles).
 
 * A seconda della configurazione dell&#39;istanza, AEM fornisce ora [due tipi di modello di base](/help/sites-authoring/templates.md#editable-and-static-templates). Questo non influisce sul modo in cui si [utilizza effettivamente un modello per creare una pagina](#using-a-template-to-create-a-page), ma influisce sul tipo di modello che è possibile creare e sul modo in cui una pagina si relaziona al relativo modello.
 
@@ -182,7 +182,7 @@ Quando crei un modello modificabile:
    >
    >Quando viene creato un nuovo modello, questo viene contrassegnato come **Bozza** nella console, a indicare che non è ancora disponibile per l’uso da parte degli autori di pagine.
 
-### Definizione delle proprietà del modello - Autore del modello   {#defining-template-properties-template-author}
+### Definizione delle proprietà del modello - Autore del modello {#defining-template-properties-template-author}
 
 Un modello può avere le seguenti proprietà:
 
@@ -233,7 +233,7 @@ Per definire la miniatura del modello:
 
 1. Quando si è soddisfatti della miniatura, fare clic su **Salva e chiudi**.
 
-### Abilitazione e autorizzazione di un modello - Autore del modello   {#enabling-and-allowing-a-template-template-author}
+### Abilitazione e autorizzazione di un modello - Autore del modello {#enabling-and-allowing-a-template-template-author}
 
 Per poter utilizzare un modello quando si crea una pagina, è necessario svolgere le seguenti operazioni:
 
@@ -295,7 +295,7 @@ Poiché al modello viene fatto riferimento quando viene eseguito il rendering di
 
 1. Seleziona **Pubblica** nella barra degli strumenti per completare l’azione.
 
-## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
+## Modifica dei modelli - Autori dei modelli {#editing-templates-template-authors}
 
 Durante la creazione o la modifica di un modello è possibile definire vari aspetti. La modifica dei modelli è simile alla creazione delle pagine.
 
@@ -695,7 +695,7 @@ L’opzione **Proprietà pagina iniziale** consente di definire le [proprietà d
 
 1. Per confermare le definizioni, seleziona **Fine**.
 
-## Best practice   {#best-practices}
+## Best practice {#best-practices}
 
 Quando crei dei modelli, prendi in considerazione quanto segue:
 

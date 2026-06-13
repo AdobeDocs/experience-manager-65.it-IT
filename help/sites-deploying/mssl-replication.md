@@ -1,6 +1,6 @@
 ---
 title: Replica tramite SSL reciproco
-description: Scopri come configurare l’AEM in modo che un agente di replica nell’istanza di authoring utilizzi SSL reciproco (MSSL) per connettersi all’istanza di pubblicazione. Utilizzando MSSL, l’agente di replica e il servizio HTTP sull’istanza Publish utilizzano i certificati per autenticarsi a vicenda.
+description: Scopri come configurare AEM in modo che un agente di replica sull’istanza di authoring utilizzi SSL reciproco (MSSL) per connettersi all’istanza di pubblicazione. Utilizzando MSSL, l’agente di replica e il servizio HTTP sull’istanza Publish utilizzano i certificati per autenticarsi a vicenda.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,24 +11,24 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1409'
 ht-degree: 4%
 
 ---
 
 # Replica tramite SSL reciproco{#replicating-using-mutual-ssl}
 
-Configura AEM in modo che un agente di replica nell’istanza di authoring utilizzi SSL reciproco (MSSL) per connettersi all’istanza di pubblicazione. Utilizzando MSSL, l’agente di replica e il servizio HTTP sull’istanza Publish utilizzano i certificati per autenticarsi a vicenda.
+Configura AEM in modo che un agente di replica sull’istanza di authoring utilizzi SSL reciproco (MSSL) per connettersi all’istanza di pubblicazione. Utilizzando MSSL, l’agente di replica e il servizio HTTP sull’istanza Publish utilizzano i certificati per autenticarsi a vicenda.
 
 La configurazione di MSSL per la replica prevede l’esecuzione dei seguenti passaggi:
 
 1. Crea o ottieni chiavi e certificati privati per le istanze di authoring e pubblicazione.
 1. Installa le chiavi e i certificati nelle istanze di authoring e pubblicazione:
 
-   * Autore: chiave privata dell’autore e certificato di Publish.
-   * Pubblicazione: chiave privata di Publish e certificato dell’autore. Il certificato è associato all’account utente autenticato con l’agente di replica.
+   * Autore: chiave privata dell’autore e certificato di pubblicazione.
+   * Publish (Pubblicazione): chiave privata di pubblicazione e certificato dell’autore. Il certificato è associato all’account utente autenticato con l’agente di replica.
 
-1. Configura il servizio HTTP basato su Jetty nell’istanza di Publish.
+1. Configura il servizio HTTP basato su Jetty nell’istanza Publish.
 1. Configura le proprietà di trasporto e SSL dell’agente di replica.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
@@ -162,7 +162,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Installare il certificato Publish {#install-the-publish-certificate}
+### Installare il certificato di pubblicazione {#install-the-publish-certificate}
 
 1. Apri la pagina Gestione utente per l’istanza di authoring. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Per aprire le proprietà dell&#39;account utente, fare clic sul nome utente.
@@ -177,7 +177,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## Installare Private Key e TrustStore in Publish {#install-private-key-and-truststore-on-publish}
+## Installa chiave privata e TrustStore durante la pubblicazione {#install-private-key-and-truststore-on-publish}
 
 Installa i seguenti elementi nell’istanza di pubblicazione:
 
@@ -186,7 +186,7 @@ Installa i seguenti elementi nell’istanza di pubblicazione:
 
 Per eseguire la procedura seguente, devi aver effettuato l’accesso come amministratore dell’istanza Publish.
 
-### Installare la chiave privata di Publish {#install-the-publish-private-key}
+### Installare la chiave privata di pubblicazione {#install-the-publish-private-key}
 
 1. Apri la pagina Gestione utente per l’istanza Publish. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Per aprire le proprietà dell&#39;account utente, fare clic sul nome utente.
@@ -206,7 +206,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 1. Accertati che l’opzione Mappa certificato a utente sia selezionata. Fai clic su Seleziona file di certificato, seleziona author.cer, quindi fai clic su Apri.
 1. Fare clic su Invia, quindi chiudere la finestra di dialogo Gestione TrustStore.
 
-## Configurare il servizio HTTP su Publish {#configure-the-http-service-on-publish}
+## Configurare il servizio HTTP al momento della pubblicazione {#configure-the-http-service-on-publish}
 
 Configura le proprietà del servizio HTTP basato su Jetty Apache Felix sull’istanza Publish in modo che utilizzi HTTPS durante l’accesso a Granite Keystore. Il PID del servizio è `org.apache.felix.http`.
 

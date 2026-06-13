@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6466'
-ht-degree: 13%
+source-wordcount: '6649'
+ht-degree: 14%
 
 ---
 
@@ -667,7 +667,7 @@ La tabella seguente illustra le dimensioni dei volumi di dati utilizzati nei ben
 
 | Contenuto | Nodi | Pagine | Immagini | Tag |
 |---|---|---|---|---|
-| Installazione di base | 69.610 | 562 | 256 | 237 |
+| Installazione di base | 69 610 | 562 | 256 | 237 |
 | Contenuto ridotto per il backup incrementale |  | +100 | +2 | +2 |
 | Contenuti di grandi dimensioni per il backup completo |  | +10 000 | +100 | +100 |
 

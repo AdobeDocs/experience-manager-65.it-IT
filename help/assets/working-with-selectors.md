@@ -48,7 +48,7 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri che un 
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Cambia il percorso in cui Experience Manager cerca i dati di prodotto toccando **[!UICONTROL Sfoglia]** e spostandosi in un&#39;altra cartella.
+   Modifica la posizione in cui Experience Manager cerca i dati di prodotto toccando **[!UICONTROL Sfoglia]** e spostandosi in un&#39;altra cartella.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
@@ -86,7 +86,7 @@ Utilizzare il selettore del sito per scegliere una pagina Web quando si desidera
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. In modalità **[!UICONTROL Anteprima]** se si seleziona il punto attivo o la mappa immagine, si passa alla pagina del sito di Experience Manager specificata.
+1. In modalità **[!UICONTROL Anteprima]** se si seleziona il punto attivo o la mappa immagine, si passa alla pagina del sito Experience Manager specificata.
 
 ## Utilizza il Selettore risorse {#selecting-assets}
 
@@ -103,7 +103,7 @@ Vedi anche [Selettore risorse](search-assets.md#assetpicker) per ulteriori infor
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Cambia il percorso in cui Experience Manager cerca le risorse passando a un&#39;altra cartella nel campo **[!UICONTROL Percorso]**.
+   Cambia la posizione in cui Experience Manager cerca le risorse passando a un&#39;altra cartella nel campo **[!UICONTROL Percorso]**.
 
    Seleziona **[!UICONTROL Raccolta]** per cercare solo le risorse all&#39;interno delle raccolte.
 

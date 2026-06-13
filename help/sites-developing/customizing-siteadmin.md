@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione della console Siti web (interfaccia classica)
+title: Personalizzazione della console siti web (interfaccia classica)
 description: La console di amministrazione dei siti Web può essere estesa per visualizzare colonne personalizzate
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '760'
+ht-degree: 1%
 
 ---
 
-# Personalizzazione della console Siti web (interfaccia classica){#customizing-the-websites-console-classic-ui}
+# Personalizzazione della console siti web (interfaccia classica){#customizing-the-websites-console-classic-ui}
 
 ## Aggiunta di una colonna personalizzata alla console Siti Web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
@@ -58,7 +58,7 @@ Di seguito è riportato un esempio di implementazione:
 
 Per creare il servizio OSGI:
 
-1. In CRXDE Lite [crea un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. In CRXDE Lite, [crea un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Aggiungi il codice di esempio seguente.
 1. Crea il bundle.
 
@@ -113,14 +113,14 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 ### Test del nuovo servizio {#testing-the-new-service}
 
-Quando apri la console di amministrazione dei siti web e esplori il sito, il browser emette una chiamata Ajax per ottenere l’oggetto JSON utilizzato per generare la console. Ad esempio, quando si passa alla cartella `/content/geometrixx`, la seguente richiesta viene inviata al server AEM per creare la console:
+Quando apri la console di amministrazione dei siti web e esplori il sito, il browser emette una chiamata Ajax per ottenere l’oggetto JSON utilizzato per generare la console. Quando ad esempio si passa alla cartella `/content/geometrixx`, la seguente richiesta viene inviata al server AEM per generare la console:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 Per assicurarti che il nuovo servizio sia in esecuzione dopo aver distribuito il bundle che lo contiene:
 
 1. Puntare il browser al seguente URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. La risposta deve visualizzare le nuove proprietà come segue:
 
@@ -128,7 +128,7 @@ Per assicurarti che il nuovo servizio sia in esecuzione dopo aver distribuito il
 
 ### Visualizzazione della nuova colonna {#displaying-the-new-column}
 
-Geometrixx L&#39;ultimo passaggio consiste nell&#39;adattare la struttura dei nodi della console di amministrazione dei siti Web per visualizzare la nuova proprietà per tutte le pagine sovrapponendo `/libs/wcm/core/content/siteadmin`. Procedere come segue:
+L&#39;ultimo passaggio consiste nell&#39;adattare la struttura dei nodi della console di amministrazione dei siti Web per visualizzare la nuova proprietà per tutte le pagine di Geometrixx sovrapponendo `/libs/wcm/core/content/siteadmin`. Procedere come segue:
 
 1. In CRXDE Lite creare la struttura dei nodi `/apps/wcm/core/content` con nodi di tipo `sling:Folder` per riflettere la struttura `/libs/wcm/core/content`.
 
@@ -139,7 +139,7 @@ Geometrixx L&#39;ultimo passaggio consiste nell&#39;adattare la struttura dei no
    * Rimuovi **testoPagina**
 
    * Imposta **pathRegex** su `/content/geometrixx(/.*)?`
-In questo modo la configurazione della griglia viene attivata per tutti i siti Web di Geometrixx.
+In questo modo la configurazione della griglia viene attivata per tutti i siti Web Geometrixx.
 
    * Imposta **storeProxySuffix** su `.pages.json`
 
@@ -164,7 +164,7 @@ In questo modo la configurazione della griglia viene attivata per tutti i siti W
 1. `/siteadmin` è un percorso personalizzato che, per impostazione predefinita, punta a `/libs/wcm/core/content/siteadmin`.
 Per reindirizzarlo alla versione di siteadmin in `/apps/wcm/core/content/siteadmin`, definire la proprietà `sling:vanityOrder` in modo che abbia un valore superiore a quello definito in `/libs/wcm/core/content/siteadmin`. Il valore predefinito è 300, quindi qualsiasi valore più alto è adatto.
 
-1. Passa alla console di amministrazione dei siti Web e passa al Geometrixx:
+1. Passa alla console di amministrazione dei siti Web e passa al sito Geometrixx:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
 
 1. La nuova colonna denominata **Starred** è disponibile e visualizza le informazioni personalizzate nel modo seguente:

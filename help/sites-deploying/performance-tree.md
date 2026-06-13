@@ -1,5 +1,5 @@
 ---
-title: Albero prestazioni
+title: Struttura delle prestazioni
 description: Scopri i passaggi da intraprendere per risolvere i problemi di prestazioni in AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Administering
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 9%
+source-wordcount: '1340'
+ht-degree: 11%
 
 ---
 
-# Albero prestazioni{#performance-tree}
+# Struttura delle prestazioni{#performance-tree}
 
 ## Ambito {#scope}
 
@@ -26,9 +26,9 @@ Ogni passaggio nel diagramma è collegato a una risorsa di documentazione o a un
 
 ## Prerequisiti e presupposti {#prerequisites-and-assumptions}
 
-Si presume che in una determinata pagina (una console AEM o una pagina web) venga rilevato un problema di prestazioni che può essere riprodotto in modo coerente. Prima di avviare l’indagine è necessario disporre di un modo per testare o monitorare le prestazioni.
+Si presume infatti che in una determinata pagina (una console AEM o una pagina web) venga rilevato un problema di prestazioni che può essere riprodotto in modo coerente. Prima di avviare l’indagine è necessario disporre di un modo per testare o monitorare le prestazioni.
 
-L’analisi inizia dal passaggio 0. L&#39;obiettivo è determinare quale entità (Dispatcher, host esterno o AEM) è responsabile del problema di prestazioni, quindi determinare quale area (server o rete) deve essere esaminata.
+L’analisi inizia dal passaggio 0. L’obiettivo è determinare quale entità (Dispatcher, host esterno o AEM) è responsabile del problema di prestazioni, quindi determinare quale area (server o rete) deve essere esaminata.
 
 ### Sezione 1 {#section}
 
@@ -57,7 +57,7 @@ L’analisi inizia dal passaggio 0. L&#39;obiettivo è determinare quale entità
   <tr>
    <td><strong>Passaggio</strong></td>
    <td><strong>Titolo</strong></td>
-   <td><strong>Riferimenti</strong></td>
+   <td><strong>Risorse</strong></td>
   </tr>
   <tr>
    <td><strong>Passaggio 0</strong></td>
@@ -82,7 +82,7 @@ L’analisi inizia dal passaggio 0. L&#39;obiettivo è determinare quale entità
   <tr>
    <td><strong>Passaggio 5</strong></td>
    <td>Dispatcher sta tentando di autenticare ogni richiesta tramite AEM?</td>
-   <td>Verifica se Dispatcher invia <code>HEAD</code> richieste all'AEM per l'autenticazione prima di consegnare la risorsa memorizzata in cache. Cerca <code>HEAD</code> richieste nell'AEM <code>access.log</code>. Per ulteriori informazioni, vedere <a href="/help/sites-deploying/configure-logging.md">Registrazione</a>.<br /> </td>
+   <td>Verifica se Dispatcher invia <code>HEAD</code> richieste ad AEM per l'autenticazione prima di consegnare la risorsa memorizzata in cache. Cerca <code>HEAD</code> richieste in AEM <code>access.log</code>. Per ulteriori informazioni, vedere <a href="/help/sites-deploying/configure-logging.md">Registrazione</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 6</strong></td>
@@ -116,7 +116,7 @@ L’analisi inizia dal passaggio 0. L&#39;obiettivo è determinare quale entità
   </tr>
   <tr>
    <td><strong>Passaggio 12</strong></td>
-   <td>Risoluzione dei problemi del server AEM</td>
+   <td>Risolvere i problemi relativi al server AEM</td>
    <td>Per ulteriori informazioni, controllare i seguenti passaggi secondari nel diagramma.</td>
   </tr>
   <tr>
@@ -244,7 +244,7 @@ L’analisi inizia dal passaggio 0. L&#39;obiettivo è determinare quale entità
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#configuring-the-dispatcher-cache-cache">Configurazione della cache di Dispatcher</a></li>
     </ol> <p>Come migliorare il rapporto della cache; rendere le richieste memorizzabili in cache (best practice Dispatcher)</p> <p>Considera inoltre le impostazioni seguenti per ottimizzare le configurazioni di memorizzazione in cache<br /> </p>
     <ol>
-     <li>Imposta una regola senza cache per la richiesta HTTP che non è di GET</li>
+     <li>Imposta una regola senza cache per la richiesta HTTP che non sia GET</li>
      <li>Configurare le stringhe di query affinché non siano memorizzabili in cache</li>
      <li>Non memorizzare in cache gli URL con estensioni mancanti</li>
      <li>Intestazioni di autenticazione cache (possibile dalla versione 4.1.10 di Dispatcher)</li>
@@ -266,13 +266,13 @@ L’analisi inizia dal passaggio 0. L&#39;obiettivo è determinare quale entità
    <td><br />
     <ul>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-the-authoring-environment">Annullamento della validità della cache per il livello di authoring;</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-a-publishing-instance">Annullamento della validità della cache per il livello Publish.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-a-publishing-instance">Invalidamento della cache per il livello di pubblicazione.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Passaggi 37 e 38</strong></td>
    <td>Caricamento lento</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=it">Visualizza la sessione Gem sulle prestazioni Web AEM.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=it">Visualizza la sessione Gem su AEM Web Performance.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 39</strong></td>

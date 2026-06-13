@@ -1,5 +1,5 @@
 ---
-title: Estensioni Adobe Campaign personalizzate
+title: Personalizzare le estensioni Adobe Campaign
 description: Puoi richiamare il codice personalizzato in Adobe Campaign da AEM o da AEM ad Adobe Campaign.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,13 @@ feature: Developing
 role: Developer
 source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 1%
+source-wordcount: '541'
+ht-degree: 3%
 
 ---
 
 
-# Estensioni Adobe Campaign personalizzate{#creating-custom-extensions}
+# Personalizzare le estensioni Adobe Campaign{#creating-custom-extensions}
 
 In genere, quando si implementa un progetto, si dispone di codice personalizzato sia in AEM che in Adobe Campaign. Con l’utilizzo dell’API esistente, puoi richiamare il codice personalizzato in Adobe Campaign da AEM o da AEM ad Adobe Campaign. Questo documento descrive come farlo.
 

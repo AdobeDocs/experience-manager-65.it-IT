@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # Creazione di progetti di traduzione per frammenti di contenuto {#creating-translation-projects-for-content-fragments}
 
-Oltre alle risorse, Adobe Experience Manager (AEM) Assets supporta i flussi di lavoro di copia per lingua per [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) (incluse le varianti). Non è necessaria alcuna ottimizzazione aggiuntiva per eseguire flussi di lavoro di copia per lingua sui frammenti di contenuto. In ogni flusso di lavoro, l’intero frammento di contenuto viene inviato per la traduzione.
+Oltre alle risorse, Adobe Experience Manager (AEM) Assets supporta flussi di lavoro di copia per lingua per [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) (incluse le varianti). Non è necessaria alcuna ottimizzazione aggiuntiva per eseguire flussi di lavoro di copia per lingua sui frammenti di contenuto. In ogni flusso di lavoro, l’intero frammento di contenuto viene inviato per la traduzione.
 
 I tipi di flussi di lavoro che è possibile eseguire sui frammenti di contenuto sono esattamente simili ai tipi di flusso di lavoro eseguiti per le risorse. Inoltre, le opzioni disponibili all’interno di ciascun tipo di flusso di lavoro corrispondono a quelle disponibili nei corrispondenti tipi di flussi di lavoro per le risorse.
 
@@ -57,7 +57,7 @@ Se il frammento di contenuto include una raccolta, le risorse all’interno dell
 
 Per tradurre frammenti di contenuto che includono file multimediali diversi, modifica innanzitutto il framework di traduzione predefinito per abilitare la traduzione delle risorse e delle raccolte in linea associate ai frammenti di contenuto.
 
-1. Fare clic sul logo AEM e passare a **[!UICONTROL Strumenti > Distribuzione > Cloud Service]**.
+1. Fai clic sul logo AEM e passa a **[!UICONTROL Strumenti > Distribuzione > Cloud Services]**.
 1. Individua **[!UICONTROL Integrazione traduzione]** in **[!UICONTROL Adobe Marketing Cloud]** e fai clic su **[!UICONTROL Mostra configurazioni]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

@@ -1,6 +1,6 @@
 ---
 title: Banner a carosello
-description: Scopri come utilizzare i banner a carosello in Dynamic Medie
+description: Scopri come utilizzare i banner a carosello in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,7 +12,7 @@ exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4677'
+source-wordcount: '4665'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ In questo esempio, un utente ha toccato o fatto clic su una mappa immagine e ha 
 
 ## Guarda come vengono creati i banner a carosello {#watch-how-carousel-banners-are-created}
 
-Riproduci una procedura dettagliata su [come vengono creati i banner a carosello](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)(10 minuti e 33 secondi). Scopri anche come visualizzare in anteprima, modificare e distribuire banner carosello.
+Riproduci una procedura dettagliata su [come vengono creati i banner a carosello](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)&#x200B;(10 minuti e 33 secondi). Scopri anche come visualizzare in anteprima, modificare e distribuire banner carosello.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Riproduci una procedura dettagliata su [come vengono creati i banner a carosello
 
 Per iniziare subito a usare i banner a carosello:
 
-1. [Identificare le variabili del punto attivo e della mappa immagine](#identifying-hotspot-and-image-map-variables) (solo per i clienti che utilizzano Experience Manager Assets + Dynamic Medie)
+1. [Identificare le variabili del punto attivo e della mappa immagine](#identifying-hotspot-and-image-map-variables) (solo per i clienti che utilizzano Experience Manager Assets + Dynamic Media)
 
    Inizia identificando le variabili dinamiche utilizzate dall’implementazione Quickview esistente, in modo da poter immettere correttamente gli hotspot e i dati della mappa immagine durante il processo di creazione del banner a carosello in Adobe Experience Manager Assets.
 
@@ -58,7 +58,7 @@ Per iniziare subito a usare i banner a carosello:
    >Se sei un cliente Experience Manager Sites o e-commerce, puoi utilizzare la funzione incorporata per passare alle pagine dei prodotti e cercare le SKU (Stock Keeping Unit) esistenti nel catalogo dei prodotti. Non è necessario immettere manualmente le variabili del punto attivo o della mappa immagine. Vedi le informazioni su [configurazione di eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
-   >Se sei un cliente di Experience Manager Assets e Dynamic Medie, immetti manualmente i dati per gli hotspot e le mappe immagine, quindi integri l’URL pubblicato o il codice da incorporare con il sistema di gestione dei contenuti di terze parti.
+   >Se sei un cliente di Experience Manager Assets e Dynamic Media, immetti manualmente i dati per gli hotspot e le mappe immagine, quindi integri l’URL pubblicato o il codice da incorporare con il sistema di gestione dei contenuti di terze parti.
 
 1. Facoltativo: se necessario, [crea un predefinito visualizzatore per set carosello](/help/assets/managing-viewer-presets.md).
 
@@ -80,17 +80,17 @@ Per iniziare subito a usare i banner a carosello:
 
    Vedere [(Facoltativo) Anteprima banner carosello](#optional-previewing-carousel-banners) - Facoltativo Se lo desideri, puoi visualizzare una rappresentazione del set carosello e testarne l’interattività.
 
-1. [Banner a carosello Publish](#publishing-carousel-banners).
+1. [Pubblica banner carosello](#publishing-carousel-banners).
 
-   Pubblichi un set carosello come faresti con una risorsa. In Assets, passa al set carosello, selezionalo e seleziona **[!UICONTROL Publish]**. La pubblicazione di un set carosello attiva l’URL e la stringa di incorporamento.
+   Pubblichi un set carosello come faresti con una risorsa. In Assets, passa al set carosello e selezionalo, quindi seleziona **[!UICONTROL Pubblica]**. La pubblicazione di un set carosello attiva l’URL e la stringa di incorporamento.
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * [Aggiungi un banner carosello alla pagina del tuo sito Web](#adding-a-carousel-banner-to-your-website-page) Puoi aggiungere l&#39;URL del banner carosello o il codice da incorporare copiato nella pagina del sito Web.
 
       * [Integrare il banner del carosello con un Quickview esistente](#integrating-the-carousel-banner-with-an-existing-quickview). Se utilizzi un sistema di gestione dei contenuti web di terze parti, devi integrare il nuovo banner carosello con l’implementazione Quickview esistente sul tuo sito web.
 
-   * [Aggiungi un banner carosello al tuo sito Web nell&#39;Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Se sei un cliente Experience Manager Sites puoi aggiungere il set carosello direttamente alla pagina nell&#39;Experience Manager, utilizzando il componente File multimediali interattivi.
+   * [Aggiungi un banner carosello al tuo sito Web in Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Se sei un cliente Experience Manager Sites puoi aggiungere il set carosello direttamente alla pagina in Experience Manager, utilizzando il componente File multimediali interattivi.
 
 Per modificare i set carosello, vedi [modifica dei set carosello](#editing-carousel-sets). Inoltre, puoi visualizzare e modificare [le proprietà del set carosello](manage-assets.md#editing-properties).
 
@@ -102,7 +102,7 @@ Quando aggiungi punti attivi o mappe immagine a un&#39;immagine del banner in Ex
 
 >[!NOTE]
 >
->Se sei un cliente Experience Manager Sites e/o Experience Manager di e-commerce, salta questo passaggio. Non è necessario identificare manualmente le variabili del punto attivo o della mappa immagine; puoi utilizzare l’integrazione con e-commerce per l’integrazione con il prodotto. Vedi le informazioni su [configurazione di eCommerce](/help/commerce/cif-classic/administering/generic.md). Inoltre, puoi utilizzare il componente Interattivo e aggiungerlo alla pagina web.
+>Se sei un cliente Experience Manager Sites e/o Experience Manager e-commerce, salta questo passaggio. Non è necessario identificare manualmente le variabili del punto attivo o della mappa immagine; puoi utilizzare l’integrazione con e-commerce per l’integrazione con il prodotto. Vedi le informazioni su [configurazione di eCommerce](/help/commerce/cif-classic/administering/generic.md). Inoltre, puoi utilizzare il componente Interattivo e aggiungerlo alla pagina web.
 >
 >Se sei un cliente Experience Manager Assets o Media, pubblichi l’URL o il codice da incorporare, quindi esegui l’integrazione con il sistema di gestione dei contenuti di terze parti e identifica manualmente i punti attivi e le mappe immagine.
 
@@ -178,7 +178,7 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
 
 ## Carica banner immagine {#uploading-image-banners}
 
-Se hai già caricato le immagini che desideri utilizzare, passa al passaggio successivo, [Crea set carosello](#creating-carousel-sets). Nota: le immagini utilizzate nel carosello devono essere caricate dopo l’abilitazione di Dynamic Medie.
+Se hai già caricato le immagini che desideri utilizzare, passa al passaggio successivo, [Crea set carosello](#creating-carousel-sets). Nota: le immagini utilizzate nel carosello devono essere caricate dopo l’abilitazione di Dynamic Media.
 
 Per caricare i banner immagine, consulta [Caricare le risorse](/help/assets/manage-assets.md).
 
@@ -206,7 +206,7 @@ Per caricare i banner immagine, consulta [Caricare le risorse](/help/assets/mana
    Per ulteriori informazioni, vedere [Utilizzare i selettori](/help/assets/working-with-selectors.md).
 
 1. Continuate ad aggiungere diapositive fino ad aggiungere tutte le immagini da ruotare nel set carosello.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
    * Se necessario, trascinare la diapositiva per riordinare le immagini nell&#39;elenco.
    * Per eliminare un&#39;immagine, selezionarla, quindi selezionare **[!UICONTROL Elimina diapositiva]** sulla barra degli strumenti.
@@ -298,7 +298,6 @@ Vedi anche [Aggiungere mappe immagine](/help/assets/image-maps.md).
    * Seleziona **[!UICONTROL Collegamento ipertestuale]**.
 
       * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore siti (cartella) per passare a un URL.
-
         >[!NOTE]
         >
         >Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
@@ -327,7 +326,7 @@ Vedi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
    Puoi anche visualizzare in anteprima come verrà visualizzato il banner del carosello. Vedere [(facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
 
 1. Seleziona **[!UICONTROL Salva]**.
-1. Publish il set carosello. La pubblicazione crea il codice o l’URL da incorporare che puoi utilizzare nella pagina del sito web. Se sei un cliente di Experience Manager Sites, puoi aggiungere il set del carosello direttamente alla pagina web.
+1. Pubblica il set carosello. La pubblicazione crea il codice o l’URL da incorporare che puoi utilizzare nella pagina del sito web. Se sei un cliente di Experience Manager Sites, puoi aggiungere il set del carosello direttamente alla pagina web.
 
    Consulta [Pubblicazione delle risorse](/help/assets/publishing-dynamicmedia-assets.md).
 
@@ -381,7 +380,7 @@ Puoi utilizzare Anteprima per vedere come il banner del carosello viene visualiz
 Quando sei soddisfatto del banner del carosello, puoi pubblicarlo.
 Consulta [Incorporazione di un visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
 Consulta [Collegamento degli URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
-Consulta [Aggiunta di Dynamic Medie Assets alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Consulta [Aggiunta di Dynamic Media Assets alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Puoi visualizzare in anteprima i banner carosello dall&#39;Editor carosello (metodo preferito) o dall&#39;elenco **[!UICONTROL Visualizzatori]**.
 
@@ -393,7 +392,7 @@ Puoi visualizzare in anteprima i banner carosello dall&#39;Editor carosello (met
 
    ![elenco a discesa experience_fragment-carouselbanner-viewer](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Selezionare **[!UICONTROL Anteprima]**.
+1. Seleziona **[!UICONTROL Anteprima]**.
 1. Seleziona gli hotspot o le mappe immagine sull&#39;immagine in modo da poter testare le azioni associate.
 
 **Per visualizzare in anteprima i banner a carosello dall&#39;elenco dei visualizzatori:**
@@ -403,9 +402,9 @@ Puoi visualizzare in anteprima i banner carosello dall&#39;Editor carosello (met
 1. Nell&#39;elenco **[!UICONTROL Visualizzatori]** nel pannello sul lato sinistro della pagina, seleziona il nome del predefinito visualizzatore banner a carosello che desideri utilizzare.
 1. Seleziona gli hotspot o le mappe immagine sull&#39;immagine in modo da poter testare le azioni associate.
 
-## Banner a carosello Publish {#publishing-carousel-banners}
+## Pubblicare i banner a carosello {#publishing-carousel-banners}
 
-Publish il carosello in modo da poterlo utilizzare. La pubblicazione di un set carosello attiva l’URL e il codice di incorporamento. Pubblica inoltre il carosello sul cloud Dynamic Medie, integrato con una rete CDN per una distribuzione scalabile e performante.
+Pubblica il carosello in modo da poterlo utilizzare. La pubblicazione di un set carosello attiva l’URL e il codice di incorporamento. Pubblica inoltre il carosello sul cloud Dynamic Media, integrato con una rete CDN per una distribuzione scalabile e performante.
 
 >[!NOTE]
 >
@@ -413,7 +412,7 @@ Publish il carosello in modo da poterlo utilizzare. La pubblicazione di un set c
 >
 >Inoltre, se modifichi un’immagine interattiva pubblicata preesistente utilizzata in un banner carosello, devi pubblicare l’immagine interattiva prima che le modifiche vengano applicate al banner stesso.
 
-Consulta [Publish Dynamic Medie Assets](/help/assets/publishing-dynamicmedia-assets.md) per informazioni su come pubblicare i banner a carosello.
+Consulta [Pubblicare Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md) per informazioni su come pubblicare i banner a carosello.
 
 ## Aggiungi un banner carosello alla pagina del tuo sito web {#adding-a-carousel-banner-to-your-website-page}
 
@@ -421,9 +420,9 @@ Dopo aver caricato le immagini del banner per creare un carosello, aggiunto punt
 
 >[!NOTE]
 >
->Se sei un cliente di Experience Manager Sites, puoi aggiungere il banner del carosello direttamente alla pagina trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+>Se sei un cliente di Experience Manager Sites, puoi aggiungere il banner del carosello direttamente alla pagina trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-Tuttavia, se sei un cliente di risorse di Experience Manager autonomo, puoi aggiungere manualmente il banner a carosello alla pagina di destinazione del sito web come descritto in questa sezione.
+Tuttavia, se sei un cliente di Experience Manager assets indipendente, puoi aggiungere manualmente il banner a carosello alla pagina di destinazione del sito web come descritto in questa sezione.
 
 1. Copia il codice di incorporamento del set carosello pubblicato.
 Vedi [Incorporare il video o il visualizzatore di immagini in una pagina Web](/help/assets/embed-code.md).

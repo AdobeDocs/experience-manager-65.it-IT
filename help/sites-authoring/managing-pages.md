@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 62%
+source-wordcount: '2505'
+ht-degree: 61%
 
 ---
 
@@ -31,7 +31,7 @@ Questa sezione descrive come creare e gestire le pagine con Adobe Experience Man
 In qualità di autore, organizza il tuo sito web in AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * siano facilmente reperibili nell’ambiente di authoring;
-* i visitatori possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
+* i visitatori del tuo sito possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
 
 È inoltre possibile utilizzare le [cartelle](#creating-a-new-folder) per organizzare i contenuti.
 
@@ -130,7 +130,7 @@ Se durante la creazione di una pagina si specifica solo una pagina **Titolo**, A
 | Titolo | Nome derivato |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&#42;ç+ | sc---c-.html |
+| SC%&amp;&#42;ç+ | sc—c-.html |
 
 #### Nome {#name}
 
@@ -153,7 +153,7 @@ Il modello definisce la struttura di una pagina, comprese una miniatura e altre 
 AEM viene fornito con diversi modelli preconfigurati. I modelli disponibili dipendono dal singolo sito web. I campi chiave sono i seguenti:
 
 * **Titolo**
-Il titolo visualizzato nella pagina web risultante.
+Titolo visualizzato nella pagina Web risultante.
 
 * **Nome**
 Utilizzato per la denominazione della pagina.
@@ -265,7 +265,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 >
 >La navigazione verso altre pagine dall’Editor pagina è possibile solo in modalità Anteprima, in quanto i collegamenti non sono attivi nella modalità di modifica.
 
-### Copiare e incollare una pagina    {#copying-and-pasting-a-page}
+### Copiare e incollare una pagina {#copying-and-pasting-a-page}
 
 È possibile copiare una pagina e tutte le relative pagine secondarie in una nuova posizione:
 
@@ -416,13 +416,13 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
    * **Elimina** per confermare l’azione:
 
       * Se la pagina non ha riferimenti, verrà eliminata.
-      * Se la pagina contiene riferimenti, verrà visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
+      * Se la pagina include riferimenti, verrà visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
 
 >[!NOTE]
 >
 >Se una pagina è già pubblicata, prima di eliminarla ne verrà automaticamente annullata la pubblicazione.
 
-### Blocco di una pagina   {#locking-a-page}
+### Blocco di una pagina {#locking-a-page}
 
 È possibile [bloccare/sbloccare una pagina](/help/sites-authoring/editing-content.md#locking-a-page) da una console o durante la modifica di una singola pagina. Le informazioni sulle pagine bloccate vengono visualizzate anche in entrambe le posizioni.
 

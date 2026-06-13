@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
+source-wordcount: '422'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Le scadenze sono specificate dallo standard HTTP relativo alla &quot;scadenza&qu
 >
 >Questa configurazione è separata (e non funzionerà) da Dispatcher.
 >
->Lo scopo del Dispatcher è quello di memorizzare i dati nella cache di fronte a Adobe Experience Manager (AEM).
+>Lo scopo di Dispatcher è quello di memorizzare i dati nella cache davanti a Adobe Experience Manager (AEM).
 
 Tutti i file non dinamici che non cambiano nel tempo possono e devono essere memorizzati in cache. A seconda dell’ambiente, la configurazione del server HTTPD Apache potrebbe essere simile a una delle seguenti:
 
@@ -51,11 +51,11 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
    </Location>
    ```
 
-   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare i file CSS, JavaScript, PNG e GIF per un massimo di un mese, fino alla scadenza. Ciò significa che non devono essere richieste dall’AEM o dal server web, ma possono rimanere nella cache del browser.
+   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare i file CSS, JavaScript, PNG e GIF per un massimo di un mese, fino alla loro scadenza. Ciò significa che non devono essere richieste da AEM o dal server web, ma possono rimanere nella cache del browser.
 
    Le altre sezioni del sito non devono essere memorizzate nella cache in un’istanza Autore, in quanto sono soggette a modifiche in qualsiasi momento.
 
-1. **Per un&#39;istanza di Publish:**
+1. **Per un&#39;istanza di pubblicazione:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -73,9 +73,9 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
    </Location>
    ```
 
-   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare i file CSS, JavaScript, PNG e GIF per un massimo di un giorno nelle cache client. Sebbene questo esempio illustri le impostazioni globali per tutti gli elementi seguenti `/content` e `/etc/designs`, è necessario renderlo più granulare.
+   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare i file CSS, JavaScript, PNG e GIF fino a un giorno nelle cache client. Sebbene questo esempio illustri le impostazioni globali per tutti gli elementi seguenti `/content` e `/etc/designs`, è necessario renderlo più granulare.
 
-   A seconda della frequenza con cui il sito viene aggiornato, puoi anche considerare la memorizzazione in cache delle pagine di HTML. Un periodo di tempo ragionevole è di un’ora:
+   A seconda della frequenza con cui il sito viene aggiornato, puoi anche prendere in considerazione la memorizzazione nella cache di pagine HTML. Un periodo di tempo ragionevole è di un’ora:
 
    ```xml
    <Location /content>

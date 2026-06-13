@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 2%
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
@@ -56,7 +56,7 @@ Quando definisci l’espressione Nascondi, tieni presente quanto segue:
 
 ## Esempio {#example}
 
-Esempi di condizioni di Nascondi sono disponibili in AEM e nei [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) in particolare. Consideriamo ad esempio il componente di base [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it).
+Alcuni esempi di condizioni di Nascondi sono disponibili in AEM e in particolare nei [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it). Consideriamo ad esempio il componente di base [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it).
 
 [Utilizzando l&#39;editor modelli](/help/sites-authoring/templates.md), l&#39;autore del modello può definire nella finestra di dialogo per progettazione le opzioni del componente Elenco disponibili per l&#39;autore della pagina. È possibile abilitare o disabilitare opzioni quali l’abilitazione o meno dell’elenco come elenco statico, elenco di pagine figlie, elenco di pagine con tag e così via.
 

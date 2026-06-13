@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 10%
 
 ---
 
@@ -46,7 +46,7 @@ Gli elementi con posizionamento assoluto possono causare problemi nella posizion
 
 ### unità vh {#vh-units}
 
-`vh` unità non sono supportate perché l&#39;altezza dell&#39;iframe deve essere regolata automaticamente da Adobe Experience Manager (AEM).
+`vh` unità non sono supportate perché l&#39;altezza iframe deve essere regolata automaticamente da Adobe Experience Manager (AEM).
 
 ### Immagini di sfondo fisse {#fixed-background-images}
 

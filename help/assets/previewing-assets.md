@@ -1,6 +1,6 @@
 ---
 title: Visualizzare l’anteprima delle risorse
-description: Scopri come visualizzare in anteprima le risorse, come video e immagini, in Dynamic Medie applicando predefiniti per immagini e predefiniti per visualizzatori.
+description: Scopri come visualizzare in anteprima le risorse, come video e immagini, in Dynamic Media applicando predefiniti per immagini e predefiniti per visualizzatori.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,7 +12,7 @@ exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1432'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Per attivare o disattivare i predefiniti visualizzatore nell&#39;interfaccia ute
       </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> se si desidera ripristinare l'immagine allo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>File multimediali</td>
@@ -99,7 +99,7 @@ Per attivare o disattivare i predefiniti visualizzatore nell&#39;interfaccia ute
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> per aumentare o ridurre rispettivamente lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> per aumentare o ridurre rispettivamente lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> se si desidera ripristinare l'immagine allo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set 360 gradi</td>
@@ -108,7 +108,7 @@ Per attivare o disattivare i predefiniti visualizzatore nell&#39;interfaccia ute
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> se si desidera ripristinare l'immagine allo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set di file multimediali diversi</td>
@@ -117,7 +117,7 @@ Per attivare o disattivare i predefiniti visualizzatore nell&#39;interfaccia ute
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall'elenco, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> se si desidera ripristinare l'immagine allo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set carosello</td>
@@ -138,7 +138,7 @@ Per attivare o disattivare i predefiniti visualizzatore nell&#39;interfaccia ute
       </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Nell’angolo in alto a sinistra della pagina, seleziona l’icona in modo da visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong>, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se ti trovi su un touch-screen, seleziona due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza le icone <strong>+</strong> e <strong>-</strong> rispettivamente per aumentare o ridurre lo zoom dell'immagine selezionata. Selezionare <strong>Reimposta</strong> se si desidera ripristinare l'immagine allo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
     </tbody>
     </table>
