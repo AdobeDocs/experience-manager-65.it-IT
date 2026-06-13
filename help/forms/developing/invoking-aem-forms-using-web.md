@@ -97,7 +97,7 @@ Nella tabella seguente sono elencate le definizioni del servizio WSDL (supponend
    <td><p><code>http://localhost:8080/soap/services/EncryptionService?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p>Moduli</p></td>
+   <td><p>Forms</p></td>
    <td><p><code>http://localhost:8080/soap/services/FormsService?wsdl</code></p></td>
   </tr>
   <tr>

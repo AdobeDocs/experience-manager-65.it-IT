@@ -1,5 +1,5 @@
 ---
-title: Aggiungere un’azione personalizzata alla vista Elenco risorse
+title: Aggiungere un’azione personalizzata alla vista elenco delle risorse
 description: Questo articolo illustra come aggiungere un’azione personalizzata alla visualizzazione Elenco risorse
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 2%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
-# Aggiungere un’azione personalizzata alla vista Elenco risorse{#add-custom-action-to-the-asset-listing-view}
+# Aggiungere un’azione personalizzata alla vista elenco delle risorse{#add-custom-action-to-the-asset-listing-view}
 
 ## Panoramica {#overview}
 
@@ -27,7 +27,7 @@ Puoi aggiungere un’azione personalizzata alla vista Elenco risorse per:
 * Uno o più tipi di risorse o lettere
 * Esecuzione (azione/comando diventa attivo) quando si selezionano risorse/lettere singole o multiple o senza selezione
 
-Questa personalizzazione viene dimostrata con lo scenario che aggiunge un comando &quot;Scarica Flat PDF&quot; alla visualizzazione Elenco risorse per le lettere. Questo scenario di personalizzazione consente agli utenti di scaricare flat PDF di una singola lettera selezionata.
+Questa personalizzazione viene dimostrata con lo scenario che aggiunge un comando &quot;Scarica Flat PDF&quot; alla vista Elenco risorse per le lettere. Questo scenario di personalizzazione consente agli utenti di scaricare il PDF semplice di una singola lettera selezionata.
 
 ### Prerequisiti {#prerequisites}
 
@@ -39,9 +39,9 @@ Per completare il seguente scenario o uno simile, è necessario conoscere:
 
 ## Scenario: aggiungere un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione flat PDF di una lettera {#addcommandtoletters}
 
-I passaggi seguenti aggiungono un comando &quot;Scarica Flat PDF&quot; alla visualizzazione Elenco risorse per Lettere e consentono agli utenti di scaricare Flat PDF della lettera selezionata. Utilizzando questi passaggi con il codice e i parametri appropriati, puoi aggiungere altre funzionalità per una risorsa diversa, ad esempio dizionari di dati o testi.
+I passaggi seguenti aggiungono un comando &quot;Scarica PDF flat&quot; alla visualizzazione Elenco risorse per le lettere e consentono agli utenti di scaricare il PDF flat della lettera selezionata. Utilizzando questi passaggi con il codice e i parametri appropriati, puoi aggiungere altre funzionalità per una risorsa diversa, ad esempio dizionari di dati o testi.
 
-La procedura seguente illustra come personalizzare Gestione della corrispondenza per consentire agli utenti di scaricare un PDF piatto di lettere:
+La procedura seguente illustra come personalizzare Gestione della corrispondenza per consentire agli utenti di scaricare un PDF di lettere piatto:
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedi come amministratore.
 
@@ -70,7 +70,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       ![Sovrapponi nodo](assets/2_createnodedownloadflatpdf.png)
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Fare clic su **Salva tutto**.
 
@@ -133,7 +133,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
         <tr>
         <td>titolo</td>
         <td>Stringa</td>
-        <td>Scarica un PDF flat della lettera selezionata (o qualsiasi altra etichetta/testo alternativo)<br /> <br /> Il titolo è il testo alt visualizzato da Gestione corrispondenza quando l'utente passa il puntatore sul comando personalizzato.</td>
+        <td>Scarica un PDF semplice della lettera selezionata (o qualsiasi altra etichetta/testo alternativo)<br /> <br /> Il titolo è il testo alternativo visualizzato da Gestione corrispondenza quando l'utente passa il puntatore sul comando personalizzato.</td>
         </tr>
         </tbody>
        </table>
@@ -152,7 +152,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app. Fare clic su **Salva tutto**.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app. Fare clic su **Salva tutto**.
 
 1. Nella cartella js, crea un file denominato formaction.js con il codice per la gestione delle azioni del pulsante, seguendo la procedura riportata di seguito:
 
@@ -242,7 +242,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Fare clic su **Salva tutto**.
 
@@ -279,7 +279,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       Questo codice è specifico per il servizio di rendering di lettere. Per qualsiasi altra risorsa, aggiungi le librerie Java™ di quella risorsa a questo codice. Per ulteriori informazioni sulle API di AEM Forms, vedi [API di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
 
-      Per ulteriori informazioni sulle librerie AEM, vedi AEM [Componenti](/help/sites-developing/components.md).
+      Per ulteriori informazioni sulle librerie AEM, vedi AEM [Components](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */
@@ -346,26 +346,26 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
       %>
       ```
 
-## Scaricare il PDF flat di una lettera utilizzando la funzionalità personalizzata {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
+## Scaricare il PDF piatto di una lettera utilizzando la funzionalità personalizzata {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Dopo aver aggiunto la funzionalità personalizzata per il download di flat PDF delle lettere, è possibile utilizzare i seguenti passaggi per scaricare la versione flat PDF della lettera selezionata:
+Dopo aver aggiunto la funzionalità personalizzata per scaricare il PDF piatto delle lettere, puoi utilizzare i seguenti passaggi per scaricare la versione flat PDF della lettera selezionata:
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/projects.html` e accedi.
 
 1. Selezionare **Forms > Lettere**. Gestione della corrispondenza elenca le lettere disponibili nel sistema.
 1. Fare clic su **Seleziona**, quindi fare clic su una lettera per selezionarla.
-1. Seleziona **Altro** > **&lt;Scarica Flat PDF>** (la funzionalità personalizzata creata seguendo le istruzioni di questo articolo). Viene visualizzata la finestra di dialogo Scarica lettera come PDF.
+1. Selezionare **Altro** > **&lt;Download Flat PDF>** (funzionalità personalizzata creata seguendo le istruzioni di questo articolo). Viene visualizzata la finestra di dialogo Scarica lettera come PDF.
 
-   Il nome della voce di menu, la funzionalità e il testo alternativo dipendono dalla personalizzazione creata in [Scenario: aggiungere un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione di flat PDF di una lettera.](#addcommandtoletters)
+   Il nome della voce di menu, la funzionalità e il testo alternativo dipendono dalla personalizzazione creata in [Scenario: aggiungere un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione di una lettera in formato flat PDF.](#addcommandtoletters)
 
    ![Funzionalità personalizzata: download di Flat PDF](assets/5_downloadflatpdf.png)
 
-1. Nella finestra di dialogo Scarica lettera come PDF, seleziona l’XML appropriato da cui vuoi popolare i dati nel PDF.
+1. Nella finestra di dialogo Scarica lettera come PDF, seleziona l’XML appropriato da cui vuoi popolare i dati in PDF.
 
    >[!NOTE]
    >
-   >Prima di scaricare la lettera come PDF flat, è possibile creare il file XML con i dati nella lettera utilizzando l&#39;opzione **Crea report**.
+   >Prima di scaricare la lettera come PDF semplice, è possibile creare il file XML con i dati contenuti nella lettera utilizzando l&#39;opzione **Crea report**.
 
    ![Scarica lettera come PDF](assets/6_downloadflatpdf.png)
 
-   La lettera viene scaricata nel computer come PDF semplice.
+   La lettera viene scaricata nel computer come un PDF piatto.

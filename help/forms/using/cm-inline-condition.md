@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 0%
+source-wordcount: '1670'
+ht-degree: 1%
 
 ---
 
@@ -180,7 +180,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   In caso contrario, se non è necessario eseguire il rendering selettivo delle informazioni (qui transazioni), mantenere vuota la condizione eliminando quanto segue nella finestra di dialogo: `${}`. Il salvataggio di un&#39;espressione ripetuta viene abilitato quando la finestra dell&#39;espressione ripetuta è vuota (senza ${} quando non è necessaria alcuna ripetizione) o quando contiene una condizione valida per la ripetizione.
+   In caso contrario, se non è necessario eseguire il rendering selettivo delle informazioni (qui transazioni), mantenere vuota la condizione eliminando quanto segue nella finestra di dialogo: `${}`. Il salvataggio di un’espressione ripetuta viene abilitato quando la finestra dell’espressione ripetuta è vuota (senza ${} quando non è necessaria alcuna ripetizione) o quando contiene una condizione valida per la ripetizione.
 
 1. Seleziona un separatore per la formattazione del testo dinamico e seleziona il segno di spunta da salvare:
 

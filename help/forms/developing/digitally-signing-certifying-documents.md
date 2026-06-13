@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '16916'
-ht-degree: 0%
+source-wordcount: '17137'
+ht-degree: 1%
 
 ---
 
@@ -129,7 +129,7 @@ Aggiungi un campo firma utilizzando Signature API (Java):
 
    * Creare un oggetto `PositionRectangle` che specifica la posizione del campo della firma utilizzando il relativo costruttore. All&#39;interno del costruttore, specificate i valori delle coordinate.
    * Se lo si desidera, creare un oggetto `FieldMDPOptions` che specifichi i campi bloccati quando viene applicata una firma digitale al campo firma.
-   * Aggiungere un campo di firma a un documento di PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `addSignatureField` e passando i valori seguenti:
+   * Aggiungere un campo di firma a un documento di PDF richiamando il metodo `addSignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
       * `com.adobe.idp`. Oggetto `Document` che rappresenta il documento PDF a cui viene aggiunto un campo firma.
       * Valore stringa che specifica il nome del campo della firma.
@@ -143,12 +143,12 @@ Aggiungi un campo firma utilizzando Signature API (Java):
 
    >[!NOTE]
    >
-   >È possibile richiamare il metodo `SignatureServiceClient` dell&#39;oggetto `addInvisibleSignatureField` per aggiungere un campo firma invisibile.
+   >È possibile richiamare il metodo `addInvisibleSignatureField` dell&#39;oggetto `SignatureServiceClient` per aggiungere un campo firma invisibile.
 
 1. Salvare il documento PDF come file PDF
 
    * Creare un oggetto `java.io.File` e verificare che l&#39;estensione del file sia .pdf.
-   * Richiama `com.adobe.idp`. Metodo `Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39;oggetto `Document` nel file. Assicurarsi di utilizzare `com.adobe.idp`. Oggetto `Document` restituito dal metodo `addSignatureField`.
+   * Richiama `com.adobe.idp`. Metodo `copyToFile` dell&#39;oggetto `Document` per copiare il contenuto dell&#39;oggetto `Document` nel file. Assicurarsi di utilizzare `com.adobe.idp`. Oggetto `Document` restituito dal metodo `addSignatureField`.
 
 **Consulta anche**
 
@@ -171,7 +171,7 @@ Per aggiungere un campo di firma utilizzando l’API di firma (servizio web):
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -183,13 +183,13 @@ Per aggiungere un campo di firma utilizzando l’API di firma (servizio web):
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare il documento PDF che conterrà un campo di firma.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando la relativa proprietà `MTOM` al contenuto della matrice di byte.
 
 1. Aggiungi un campo firma
 
-   Aggiungere un campo di firma al documento di PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `addSignatureField` e passando i valori seguenti:
+   Aggiungere un campo di firma al documento di PDF richiamando il metodo `addSignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `BLOB` che rappresenta il documento PDF a cui viene aggiunto un campo firma.
    * Valore stringa che specifica il nome del campo della firma.
@@ -203,9 +203,9 @@ Per aggiungere un campo di firma utilizzando l’API di firma (servizio web):
 1. Salvare il documento PDF come file PDF
 
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF che conterrà il campo firma e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `addSignatureField`. Popolare la matrice di byte ottenendo il valore del membro dati `BLOB` dell&#39;oggetto `binaryData`.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `addSignatureField`. Popolare la matrice di byte ottenendo il valore del membro dati `binaryData` dell&#39;oggetto `BLOB`.
    * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
-   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Consulta anche**
 
@@ -288,8 +288,8 @@ Recupera i nomi dei campi della firma utilizzando Signature API (Java):
 
 1. Recuperare i nomi dei campi firma
 
-   * Recuperare i nomi dei campi firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `getSignatureFieldList` e passando l&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF contenente i campi firma. Questo metodo restituisce un oggetto `java.util.List`, in cui ogni elemento contiene un oggetto `PDFSignatureField`. Utilizzando questo oggetto, è possibile ottenere ulteriori informazioni su un campo firma, ad esempio se è visibile o meno.
-   * Scorrere l&#39;oggetto `java.util.List` per determinare se sono presenti nomi di campi di firma. Per ogni campo firma nel documento di PDF, è possibile ottenere un oggetto `PDFSignatureField` separato. Per ottenere il nome del campo firma, richiamare il metodo `PDFSignatureField` dell&#39;oggetto `getName`. Questo metodo restituisce un valore stringa che specifica il nome del campo della firma.
+   * Recuperare i nomi dei campi firma richiamando il metodo `getSignatureFieldList` dell&#39;oggetto `SignatureServiceClient` e passando l&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF contenente i campi firma. Questo metodo restituisce un oggetto `java.util.List`, in cui ogni elemento contiene un oggetto `PDFSignatureField`. Utilizzando questo oggetto, è possibile ottenere ulteriori informazioni su un campo firma, ad esempio se è visibile o meno.
+   * Scorrere l&#39;oggetto `java.util.List` per determinare se sono presenti nomi di campi di firma. Per ogni campo firma nel documento di PDF, è possibile ottenere un oggetto `PDFSignatureField` separato. Per ottenere il nome del campo firma, richiamare il metodo `getName` dell&#39;oggetto `PDFSignatureField`. Questo metodo restituisce un valore stringa che specifica il nome del campo della firma.
 
 **Consulta anche**
 
@@ -318,7 +318,7 @@ Recupera i nomi dei campi della firma utilizzando Signature API (servizio web):
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -330,14 +330,14 @@ Recupera i nomi dei campi della firma utilizzando Signature API (servizio web):
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare il documento PDF contenente campi di firma.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando al relativo campo `MTOM` il contenuto della matrice di byte.
 
 1. Recuperare i nomi dei campi firma
 
-   * Recuperare i nomi dei campi firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `getSignatureFieldList` e passando l&#39;oggetto `BLOB` che contiene il documento PDF contenente i campi firma. Questo metodo restituisce un insieme `MyArrayOfPDFSignatureField` in cui ogni elemento contiene un oggetto `PDFSignatureField`.
-   * Scorrere l&#39;oggetto `MyArrayOfPDFSignatureField` per determinare se sono presenti nomi di campi di firma. Per ogni campo firma nel documento di PDF, è possibile ottenere un oggetto `PDFSignatureField`. Per ottenere il nome del campo firma, richiamare il metodo `PDFSignatureField` dell&#39;oggetto `getName`. Questo metodo restituisce un valore stringa che specifica il nome del campo della firma.
+   * Recuperare i nomi dei campi firma richiamando il metodo `getSignatureFieldList` dell&#39;oggetto `SignatureServiceClient` e passando l&#39;oggetto `BLOB` che contiene il documento PDF contenente i campi firma. Questo metodo restituisce un insieme `MyArrayOfPDFSignatureField` in cui ogni elemento contiene un oggetto `PDFSignatureField`.
+   * Scorrere l&#39;oggetto `MyArrayOfPDFSignatureField` per determinare se sono presenti nomi di campi di firma. Per ogni campo firma nel documento di PDF, è possibile ottenere un oggetto `PDFSignatureField`. Per ottenere il nome del campo firma, richiamare il metodo `getName` dell&#39;oggetto `PDFSignatureField`. Questo metodo restituisce un valore stringa che specifica il nome del campo della firma.
 
 **Consulta anche**
 
@@ -458,11 +458,11 @@ Modifica un campo di firma utilizzando Signature API (Java):
 
    * Creare un oggetto `PDFSignatureFieldProperties` utilizzando il relativo costruttore. Un oggetto `PDFSignatureFieldProperties` memorizza le informazioni del dizionario di blocco del campo della firma e del dizionario dei valori iniziali.
    * Creare un oggetto `PDFSeedValueOptionSpec` utilizzando il relativo costruttore. Questo oggetto consente di impostare i valori del dizionario dei valori iniziali.
-   * Non consentire modifiche al documento PDF richiamando il metodo `PDFSeedValueOptionSpec` dell&#39;oggetto `setMdpValue` e passando il valore di enumerazione `MDPPermissions.NoChanges`.
+   * Non consentire modifiche al documento PDF richiamando il metodo `setMdpValue` dell&#39;oggetto `PDFSeedValueOptionSpec` e passando il valore di enumerazione `MDPPermissions.NoChanges`.
    * Creare un oggetto `FieldMDPOptionSpec` utilizzando il relativo costruttore. Questo oggetto consente di impostare i valori del dizionario di blocco del campo della firma.
-   * Blocca tutti i campi nel documento di PDF richiamando il metodo `FieldMDPOptionSpec` dell&#39;oggetto `setMdpValue` e passando il valore di enumerazione `FieldMDPAction.ALL`.
-   * Impostare le informazioni sul dizionario dei valori iniziali richiamando il metodo `PDFSignatureFieldProperties` dell&#39;oggetto `setSeedValue` e passando l&#39;oggetto `PDFSeedValueOptionSpec`.
-   * Impostare le informazioni del dizionario di blocco del campo della firma richiamando il metodo `PDFSignatureFieldProperties` dell&#39;oggetto `setFieldMDP` e passando l&#39;oggetto `FieldMDPOptionSpec`.
+   * Blocca tutti i campi nel documento di PDF richiamando il metodo `setMdpValue` dell&#39;oggetto `FieldMDPOptionSpec` e passando il valore di enumerazione `FieldMDPAction.ALL`.
+   * Impostare le informazioni sul dizionario dei valori iniziali richiamando il metodo `setSeedValue` dell&#39;oggetto `PDFSignatureFieldProperties` e passando l&#39;oggetto `PDFSeedValueOptionSpec`.
+   * Impostare le informazioni del dizionario di blocco del campo della firma richiamando il metodo `setFieldMDP` dell&#39;oggetto `PDFSignatureFieldProperties` e passando l&#39;oggetto `FieldMDPOptionSpec`.
 
    >[!NOTE]
    >
@@ -470,7 +470,7 @@ Modifica un campo di firma utilizzando Signature API (Java):
 
 1. Modificare il campo firma
 
-   Modificare il campo firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `modifySignatureField` e passando i valori seguenti:
+   Modificare il campo firma richiamando il metodo `modifySignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * L&#39;oggetto `com.adobe.idp.Document` che memorizza il documento PDF contenente il campo firma da modificare
    * Valore stringa che specifica il nome del campo della firma
@@ -481,7 +481,7 @@ Modifica un campo di firma utilizzando Signature API (Java):
 1. Salvare il documento PDF come file PDF
 
    * Creare un oggetto `java.io.File` e verificare che l&#39;estensione del nome file sia pdf.
-   * Richiama il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39;oggetto `com.adobe.idp.Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `com.adobe.idp.Document` restituito dal metodo `modifySignatureField`.
+   * Richiama il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` per copiare il contenuto dell&#39;oggetto `com.adobe.idp.Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `com.adobe.idp.Document` restituito dal metodo `modifySignatureField`.
 
 ### Modificare i campi della firma utilizzando l’API del servizio web {#modify-signature-fields-using-the-web-service-api}
 
@@ -500,7 +500,7 @@ Modifica un campo di firma utilizzando Signature API (servizio web):
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -512,19 +512,19 @@ Modifica un campo di firma utilizzando Signature API (servizio web):
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare il documento PDF contenente il campo firma da modificare.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando alla relativa proprietà `MTOM` il contenuto della matrice di byte.
 
 1. Impostare i valori del dizionario
 
    * Creare un oggetto `PDFSignatureFieldProperties` utilizzando il relativo costruttore. Questo oggetto memorizza le informazioni del dizionario del blocco del campo della firma e del dizionario dei valori iniziali.
    * Creare un oggetto `PDFSeedValueOptionSpec` utilizzando il relativo costruttore. Questo oggetto consente di impostare i valori del dizionario dei valori iniziali.
-   * Non consentire modifiche al documento PDF assegnando il valore di enumerazione `MDPPermissions.NoChanges` al membro dati `PDFSeedValueOptionSpec` dell&#39;oggetto `mdpValue`.
+   * Non consentire modifiche al documento PDF assegnando il valore di enumerazione `MDPPermissions.NoChanges` al membro dati `mdpValue` dell&#39;oggetto `PDFSeedValueOptionSpec`.
    * Creare un oggetto `FieldMDPOptionSpec` utilizzando il relativo costruttore. Questo oggetto consente di impostare i valori del dizionario di blocco del campo della firma.
-   * Blocca tutti i campi nel documento di PDF assegnando il valore di enumerazione `FieldMDPAction.ALL` al membro dati `FieldMDPOptionSpec` dell&#39;oggetto `mdpValue`.
-   * Impostare le informazioni del dizionario del valore di inizializzazione assegnando l&#39;oggetto `PDFSeedValueOptionSpec` al membro dati `PDFSignatureFieldProperties` dell&#39;oggetto `seedValue`.
-   * Impostare le informazioni del dizionario di blocco del campo della firma assegnando l&#39;oggetto `FieldMDPOptionSpec` al membro dati `PDFSignatureFieldProperties` dell&#39;oggetto `fieldMDP`.
+   * Blocca tutti i campi nel documento di PDF assegnando il valore di enumerazione `FieldMDPAction.ALL` al membro dati `mdpValue` dell&#39;oggetto `FieldMDPOptionSpec`.
+   * Impostare le informazioni del dizionario del valore di inizializzazione assegnando l&#39;oggetto `PDFSeedValueOptionSpec` al membro dati `seedValue` dell&#39;oggetto `PDFSignatureFieldProperties`.
+   * Impostare le informazioni del dizionario di blocco del campo della firma assegnando l&#39;oggetto `FieldMDPOptionSpec` al membro dati `fieldMDP` dell&#39;oggetto `PDFSignatureFieldProperties`.
 
    >[!NOTE]
    >
@@ -532,7 +532,7 @@ Modifica un campo di firma utilizzando Signature API (servizio web):
 
 1. Modificare il campo firma
 
-   Modificare il campo firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `modifySignatureField` e passando i valori seguenti:
+   Modificare il campo firma richiamando il metodo `modifySignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * L&#39;oggetto `BLOB` che memorizza il documento PDF contenente il campo firma da modificare
    * Valore stringa che specifica il nome del campo della firma
@@ -543,9 +543,9 @@ Modifica un campo di firma utilizzando Signature API (servizio web):
 1. Salvare il documento PDF come file PDF
 
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF che conterrà il campo firma e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `addSignatureField`. Popolare la matrice di byte ottenendo il valore del membro dati `BLOB` dell&#39;oggetto `MTOM`.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `addSignatureField`. Popolare la matrice di byte ottenendo il valore del membro dati `MTOM` dell&#39;oggetto `BLOB`.
    * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
-   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Consulta anche**
 
@@ -650,7 +650,7 @@ Quando si firma un documento di PDF, è possibile impostare le opzioni di runtim
 * Verifica della revoca
 * Valori di marca temporale
 
-È possibile impostare le opzioni di aspetto utilizzando un oggetto `PDFSignatureAppearanceOptionSpec`. È ad esempio possibile visualizzare la data all&#39;interno di una firma richiamando il metodo `PDFSignatureAppearanceOptionSpec` dell&#39;oggetto `setShowDate` e passando `true`.
+È possibile impostare le opzioni di aspetto utilizzando un oggetto `PDFSignatureAppearanceOptionSpec`. È ad esempio possibile visualizzare la data all&#39;interno di una firma richiamando il metodo `setShowDate` dell&#39;oggetto `PDFSignatureAppearanceOptionSpec` e passando `true`.
 
 È inoltre possibile specificare se eseguire o meno un controllo di revoca che determini se il certificato utilizzato per firmare digitalmente un documento di PDF è stato revocato. Per eseguire il controllo della revoca, è possibile specificare uno dei seguenti valori:
 
@@ -669,7 +669,7 @@ Se si specifica di non eseguire il controllo di revoca, il servizio di firma non
 
 >[!NOTE]
 >
->Sebbene nel certificato sia possibile specificare un CRL o un server OCSP, è possibile sovrascrivere l&#39;URL specificato nel certificato utilizzando un oggetto `CRLOptionSpec` e un oggetto `OCSPOptionSpec`. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo `CRLOptionSpec` dell&#39;oggetto `setLocalURI`.
+>Sebbene nel certificato sia possibile specificare un CRL o un server OCSP, è possibile sovrascrivere l&#39;URL specificato nel certificato utilizzando un oggetto `CRLOptionSpec` e un oggetto `OCSPOptionSpec`. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo `setLocalURI` dell&#39;oggetto `CRLOptionSpec`.
 
 La marca temporale si riferisce al processo di tracciamento dell’ora in cui un documento firmato o certificato è stato modificato. Una volta firmato, il documento non deve essere modificato, nemmeno dal proprietario del documento. La marca temporale consente di applicare la validità di un documento firmato o certificato. È possibile impostare le opzioni di marca temporale utilizzando un oggetto `TSPOptionSpec`. Ad esempio, puoi specificare l’URL di un server provider di marca temporale (TSP).
 
@@ -719,11 +719,11 @@ Firmare digitalmente un documento PDF utilizzando Signature API (Java):
 
 1. Firma il documento PDF
 
-   Firmare il documento PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `sign` e passando i valori seguenti:
+   Firmare il documento PDF richiamando il metodo `sign` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `com.adobe.idp.Document` che rappresenta il documento PDF da firmare.
    * Valore string che rappresenta il nome del campo firma che conterrà la firma digitale.
-   * Oggetto `Credential` che rappresenta le credenziali utilizzate per firmare digitalmente il documento PDF. Creare un oggetto `Credential` richiamando il metodo `Credential` statico dell&#39;oggetto `getInstance` e passando un valore stringa che specifica il valore alias corrispondente alle credenziali di sicurezza.
+   * Oggetto `Credential` che rappresenta le credenziali utilizzate per firmare digitalmente il documento PDF. Creare un oggetto `Credential` richiamando il metodo `getInstance` statico dell&#39;oggetto `Credential` e passando un valore stringa che specifica il valore alias corrispondente alle credenziali di sicurezza.
    * Oggetto `HashAlgorithm` che specifica un membro dati statico che rappresenta l&#39;algoritmo hash da utilizzare per digerire il documento PDF. Ad esempio, è possibile specificare `HashAlgorithm.SHA1` per utilizzare l&#39;algoritmo SHA1.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato firmato digitalmente.
    * Valore stringa che rappresenta le informazioni di contatto del firmatario.
@@ -738,7 +738,7 @@ Firmare digitalmente un documento PDF utilizzando Signature API (Java):
 1. Salva il documento PDF firmato
 
    * Creare un oggetto `java.io.File` e verificare che l&#39;estensione del file sia .pdf.
-   * Richiama il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passa `java.io.File` per copiare il contenuto dell&#39;oggetto `Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `com.adobe.idp.Document` restituito dal metodo `sign`.
+   * Richiama il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` e passa `java.io.File` per copiare il contenuto dell&#39;oggetto `Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `com.adobe.idp.Document` restituito dal metodo `sign`.
 
 **Consulta anche**
 
@@ -767,7 +767,7 @@ Per firmare digitalmente un documento PDF utilizzando l’API di firma (servizio
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -779,17 +779,17 @@ Per firmare digitalmente un documento PDF utilizzando l’API di firma (servizio
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento PDF firmato.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF da firmare e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando alla relativa proprietà `MTOM` il contenuto della matrice di byte.
 
 1. Firma il documento PDF
 
-   Firmare il documento PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `sign` e passando i valori seguenti:
+   Firmare il documento PDF richiamando il metodo `sign` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `BLOB` che rappresenta il documento PDF da firmare.
    * Valore string che rappresenta il nome del campo firma che conterrà la firma digitale.
-   * Oggetto `Credential` che rappresenta le credenziali utilizzate per firmare digitalmente il documento PDF. Creare un oggetto `Credential` utilizzando il relativo costruttore e specificare l&#39;alias assegnando un valore alla proprietà `Credential` dell&#39;oggetto `alias`.
+   * Oggetto `Credential` che rappresenta le credenziali utilizzate per firmare digitalmente il documento PDF. Creare un oggetto `Credential` utilizzando il relativo costruttore e specificare l&#39;alias assegnando un valore alla proprietà `alias` dell&#39;oggetto `Credential`.
    * Oggetto `HashAlgorithm` che specifica un membro dati statico che rappresenta l&#39;algoritmo hash da utilizzare per digerire il documento PDF. Ad esempio, è possibile specificare `HashAlgorithm.SHA1` per utilizzare l&#39;algoritmo SHA1.
    * Un valore booleano che specifica se viene utilizzato l’algoritmo hash.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato firmato digitalmente.
@@ -806,9 +806,9 @@ Per firmare digitalmente un documento PDF utilizzando l’API di firma (servizio
 1. Salva il documento PDF firmato
 
    * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore. Passa un valore stringa che rappresenta la posizione del file del documento PDF firmato e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `sign`. Popolare la matrice di byte ottenendo il valore del membro dati `BLOB` dell&#39;oggetto `MTOM`.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `sign`. Popolare la matrice di byte ottenendo il valore del membro dati `MTOM` dell&#39;oggetto `BLOB`.
    * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
-   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Consulta anche**
 
@@ -884,7 +884,7 @@ Quando si firma un documento di PDF, è possibile impostare le opzioni di runtim
 * Verifica della revoca
 * Valori di marca temporale
 
-È possibile impostare le opzioni di aspetto utilizzando un oggetto `PDFSignatureAppearanceOptionSpec`. È ad esempio possibile visualizzare la data all&#39;interno di una firma richiamando il metodo `PDFSignatureAppearanceOptionSpec` dell&#39;oggetto `setShowDate` e passando `true`.
+È possibile impostare le opzioni di aspetto utilizzando un oggetto `PDFSignatureAppearanceOptionSpec`. È ad esempio possibile visualizzare la data all&#39;interno di una firma richiamando il metodo `setShowDate` dell&#39;oggetto `PDFSignatureAppearanceOptionSpec` e passando `true`.
 
 **Salva il documento PDF firmato**
 
@@ -924,8 +924,8 @@ Apporre una firma digitale a un modulo interattivo utilizzando Forms e Signature
    * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
    * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento XML contenente i dati del modulo da passare al servizio Forms utilizzando il relativo costruttore. Passa un valore stringa che specifica la posizione del file XML.
    * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
-   * Creare un oggetto `PDFFormRenderSpec` utilizzato per impostare le opzioni di runtime. Richiama il metodo `PDFFormRenderSpec` dell&#39;oggetto `setGenerateServerAppearance` e passa `true`.
-   * Richiama il metodo `FormsServiceClient` dell&#39;oggetto `renderPDFForm2` e passa i seguenti valori:
+   * Creare un oggetto `PDFFormRenderSpec` utilizzato per impostare le opzioni di runtime. Richiama il metodo `setGenerateServerAppearance` dell&#39;oggetto `PDFFormRenderSpec` e passa `true`.
+   * Richiama il metodo `renderPDFForm2` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
       * Oggetto `com.adobe.idp.Document` contenente il modulo PDF da riprodurre.
       * Oggetto `com.adobe.idp.Document` contenente dati da unire al modulo.
@@ -935,15 +935,15 @@ Apporre una firma digitale a un modulo interattivo utilizzando Forms e Signature
 
      Il metodo `renderPDFForm2` restituisce un oggetto `FormsResult` che contiene un flusso di dati del modulo
 
-   * Recuperare il modulo PDF richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`. Questo metodo restituisce un oggetto `com.adobe.idp.Document` che rappresenta il modulo interattivo.
+   * Recuperare il modulo PDF richiamando il metodo `getOutputContent` dell&#39;oggetto `FormsResult`. Questo metodo restituisce un oggetto `com.adobe.idp.Document` che rappresenta il modulo interattivo.
 
 1. Firma il modulo interattivo
 
-   Firmare il documento PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `sign` e passando i valori seguenti:
+   Firmare il documento PDF richiamando il metodo `sign` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `com.adobe.idp.Document` che rappresenta il documento PDF da firmare. Verificare che questo oggetto sia l&#39;oggetto `com.adobe.idp.Document` ottenuto dal servizio Forms.
    * Valore stringa che rappresenta il nome del campo firma firmato.
-   * Oggetto `Credential` che rappresenta le credenziali utilizzate per firmare digitalmente il documento PDF. Creare un oggetto `Credential` richiamando il metodo `Credential` statico dell&#39;oggetto `getInstance`. Passa un valore stringa che specifica il valore alias corrispondente alle credenziali di sicurezza.
+   * Oggetto `Credential` che rappresenta le credenziali utilizzate per firmare digitalmente il documento PDF. Creare un oggetto `Credential` richiamando il metodo `getInstance` statico dell&#39;oggetto `Credential`. Passa un valore stringa che specifica il valore alias corrispondente alle credenziali di sicurezza.
    * Oggetto `HashAlgorithm` che specifica un membro dati statico che rappresenta l&#39;algoritmo hash da utilizzare per digerire il documento PDF. Ad esempio, è possibile specificare `HashAlgorithm.SHA1` per utilizzare l&#39;algoritmo SHA1.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato firmato digitalmente.
    * Valore stringa che rappresenta le informazioni di contatto del firmatario.
@@ -958,7 +958,7 @@ Apporre una firma digitale a un modulo interattivo utilizzando Forms e Signature
 1. Salva il documento PDF firmato
 
    * Creare un oggetto `java.io.File` e verificare che l&#39;estensione del nome file sia .pdf.
-   * Richiama il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passa `java.io.File` per copiare il contenuto dell&#39;oggetto `Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `com.adobe.idp.Document` restituito dal metodo `sign`.
+   * Richiama il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` e passa `java.io.File` per copiare il contenuto dell&#39;oggetto `Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `com.adobe.idp.Document` restituito dal metodo `sign`.
 
 **Consulta anche**
 
@@ -991,7 +991,7 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1008,16 +1008,16 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento PDF firmato.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF da firmare e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando alla relativa proprietà `MTOM` il contenuto della matrice di byte.
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare i dati del modulo.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file XML contenente i dati del modulo e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando alla relativa proprietà `MTOM` il contenuto della matrice di byte.
-   * Creare un oggetto `PDFFormRenderSpec` utilizzato per impostare le opzioni di runtime. Assegnare il valore `true` al campo `PDFFormRenderSpec` dell&#39;oggetto `generateServerAppearance`.
-   * Richiama il metodo `FormsServiceClient` dell&#39;oggetto `renderPDFForm2` e passa i seguenti valori:
+   * Creare un oggetto `PDFFormRenderSpec` utilizzato per impostare le opzioni di runtime. Assegnare il valore `true` al campo `generateServerAppearance` dell&#39;oggetto `PDFFormRenderSpec`.
+   * Richiama il metodo `renderPDFForm2` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
       * Oggetto `BLOB` contenente il modulo PDF da riprodurre.
       * Oggetto `BLOB` contenente dati da unire al modulo.
@@ -1028,15 +1028,15 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
       * Parametro di output stringa utilizzato per il valore locale.
       * Valore `FormResult` che è un parametro di output utilizzato per memorizzare il modulo interattivo.
 
-   * Recuperare il modulo PDF richiamando il campo `FormsResult` dell&#39;oggetto `outputContent`. Questo campo memorizza un oggetto `BLOB` che rappresenta il modulo interattivo.
+   * Recuperare il modulo PDF richiamando il campo `outputContent` dell&#39;oggetto `FormsResult`. Questo campo memorizza un oggetto `BLOB` che rappresenta il modulo interattivo.
 
 1. Firma il modulo interattivo
 
-   Firmare il documento PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `sign` e passando i valori seguenti:
+   Firmare il documento PDF richiamando il metodo `sign` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `BLOB` che rappresenta il documento PDF da firmare. Utilizzare l&#39;istanza `BLOB` restituita dal servizio Forms.
    * Valore stringa che rappresenta il nome del campo firma firmato.
-   * Oggetto `Credential` che rappresenta le credenziali utilizzate per firmare digitalmente il documento PDF. Creare un oggetto `Credential` utilizzando il relativo costruttore e specificare l&#39;alias assegnando un valore alla proprietà `Credential` dell&#39;oggetto `alias`.
+   * Oggetto `Credential` che rappresenta le credenziali utilizzate per firmare digitalmente il documento PDF. Creare un oggetto `Credential` utilizzando il relativo costruttore e specificare l&#39;alias assegnando un valore alla proprietà `alias` dell&#39;oggetto `Credential`.
    * Oggetto `HashAlgorithm` che specifica un membro dati statico che rappresenta l&#39;algoritmo hash da utilizzare per digerire il documento PDF. Ad esempio, è possibile specificare `HashAlgorithm.SHA1` per utilizzare l&#39;algoritmo SHA1.
    * Un valore booleano che specifica se viene utilizzato l’algoritmo hash.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato firmato digitalmente.
@@ -1053,9 +1053,9 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
 1. Salva il documento PDF firmato
 
    * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore. Passa un valore stringa che rappresenta la posizione del file del documento PDF firmato e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `sign`. Popolare la matrice di byte ottenendo il valore del membro dati `BLOB` dell&#39;oggetto `MTOM`.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `sign`. Popolare la matrice di byte ottenendo il valore del membro dati `MTOM` dell&#39;oggetto `BLOB`.
    * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
-   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Consulta anche**
 
@@ -1180,11 +1180,11 @@ Certifica un documento PDF utilizzando Signature API (Java):
 
 1. Certificare il documento PDF
 
-   Certifica il documento PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `certify` e passando i valori seguenti:
+   Certifica il documento PDF richiamando il metodo `certify` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `com.adobe.idp.Document` che rappresenta il documento PDF da certificare.
    * Valore stringa che rappresenta il nome del campo firma che conterrà la firma.
-   * Oggetto `Credential` che rappresenta le credenziali utilizzate per certificare il documento di PDF. Creare un oggetto `Credential` richiamando il metodo `Credential` statico dell&#39;oggetto `getInstance` e passando un valore stringa che specifica il valore alias corrispondente alle credenziali di sicurezza.
+   * Oggetto `Credential` che rappresenta le credenziali utilizzate per certificare il documento di PDF. Creare un oggetto `Credential` richiamando il metodo `getInstance` statico dell&#39;oggetto `Credential` e passando un valore stringa che specifica il valore alias corrispondente alle credenziali di sicurezza.
    * Oggetto `HashAlgorithm` che specifica un membro dati statico che rappresenta l&#39;algoritmo hash utilizzato per digerire il documento PDF. Ad esempio, è possibile specificare `HashAlgorithm.SHA1` per utilizzare l&#39;algoritmo SHA1.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato certificato.
    * Valore stringa che rappresenta le informazioni di contatto del firmatario.
@@ -1195,14 +1195,14 @@ Certifica un documento PDF utilizzando Signature API (Java):
    * Oggetto `java.lang.Boolean` che specifica se il campo firma da certificare è bloccato. Se il campo è bloccato, il campo firma viene contrassegnato come di sola lettura, le relative proprietà non possono essere modificate e non possono essere cancellate da utenti che non dispongono delle autorizzazioni necessarie. Il valore predefinito è `false`.
    * Oggetto `OCSPPreferences` che memorizza le preferenze per il supporto del protocollo di stato del certificato online (OCSP). Se il controllo della revoca non viene eseguito, il parametro non viene utilizzato ed è possibile specificare `null`. Per informazioni su questo oggetto, vedere [Riferimento API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Oggetto `CRLPreferences` che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se il controllo della revoca non viene eseguito, il parametro non viene utilizzato ed è possibile specificare `null`.
-   * Un oggetto `TSPPreferences` che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Ad esempio, dopo aver creato un oggetto `TSPPreferences`, è possibile impostare l&#39;URL del server TSP richiamando il metodo `TSPPreferences` dell&#39;oggetto `setTspServerURL`. Questo parametro è facoltativo e può essere `null`. Per ulteriori informazioni, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+   * Un oggetto `TSPPreferences` che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Ad esempio, dopo aver creato un oggetto `TSPPreferences`, è possibile impostare l&#39;URL del server TSP richiamando il metodo `setTspServerURL` dell&#39;oggetto `TSPPreferences`. Questo parametro è facoltativo e può essere `null`. Per ulteriori informazioni, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
    Il metodo `certify` restituisce un oggetto `com.adobe.idp.Document` che rappresenta il documento PDF certificato.
 
 1. Salvare il documento PDF certificato come file PDF
 
    * Creare un oggetto `java.io.File` e verificare che l&#39;estensione del file sia .pdf.
-   * Richiama il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39;oggetto `com.adobe.idp.Document` nel file.
+   * Richiama il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` per copiare il contenuto dell&#39;oggetto `com.adobe.idp.Document` nel file.
 
 **Consulta anche**
 
@@ -1231,7 +1231,7 @@ Certifica un documento PDF utilizzando Signature API (servizio web):
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1243,17 +1243,17 @@ Certifica un documento PDF utilizzando Signature API (servizio web):
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per archiviare un documento PDF certificato.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF da certificare e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando al relativo membro dati `MTOM` il contenuto della matrice di byte.
 
 1. Certificare il documento PDF
 
-   Certifica il documento PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `certify` e passando i valori seguenti:
+   Certifica il documento PDF richiamando il metodo `certify` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `BLOB` che rappresenta il documento PDF da certificare.
    * Valore stringa che rappresenta il nome del campo firma che conterrà la firma.
-   * Oggetto `Credential` che rappresenta le credenziali utilizzate per certificare il documento di PDF. Creare un oggetto `Credential` utilizzando il relativo costruttore e specificare l&#39;alias assegnando un valore alla proprietà `Credential` dell&#39;oggetto `alias`.
+   * Oggetto `Credential` che rappresenta le credenziali utilizzate per certificare il documento di PDF. Creare un oggetto `Credential` utilizzando il relativo costruttore e specificare l&#39;alias assegnando un valore alla proprietà `alias` dell&#39;oggetto `Credential`.
    * Oggetto `HashAlgorithm` che specifica un membro dati statico che rappresenta l&#39;algoritmo hash utilizzato per digerire il documento PDF. Ad esempio, è possibile specificare `HashAlgorithm.SHA1` per utilizzare l&#39;algoritmo SHA1.
    * Un valore booleano che specifica se viene utilizzato l’algoritmo hash.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato certificato.
@@ -1268,16 +1268,16 @@ Certifica un documento PDF utilizzando Signature API (servizio web):
    * Oggetto `System.Boolean` che specifica se il campo firma è bloccato. In altre parole, se passi `true` al parametro precedente, passa `true` a questo parametro.
    * Oggetto `OCSPPreferences` che memorizza le preferenze per il supporto del protocollo di stato del certificato online (OCSP), che fornisce informazioni sullo stato delle credenziali utilizzate per certificare il documento di PDF. Se il controllo della revoca non viene eseguito, il parametro non viene utilizzato ed è possibile specificare `null`.
    * Oggetto `CRLPreferences` che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se il controllo della revoca non viene eseguito, il parametro non viene utilizzato ed è possibile specificare `null`.
-   * Un oggetto `TSPPreferences` che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Ad esempio, dopo aver creato un oggetto `TSPPreferences`, è possibile impostare l&#39;URL del TSP impostando il membro dati `TSPPreferences` dell&#39;oggetto `tspServerURL`. Questo parametro è facoltativo e può essere `null`.
+   * Un oggetto `TSPPreferences` che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Ad esempio, dopo aver creato un oggetto `TSPPreferences`, è possibile impostare l&#39;URL del TSP impostando il membro dati `tspServerURL` dell&#39;oggetto `TSPPreferences`. Questo parametro è facoltativo e può essere `null`.
 
    Il metodo `certify` restituisce un oggetto `BLOB` che rappresenta il documento PDF certificato.
 
 1. Salvare il documento PDF certificato come file PDF
 
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF che conterrà il documento PDF certificato e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `certify`. Popolare la matrice di byte ottenendo il valore del membro dati `BLOB` dell&#39;oggetto `binaryData`.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `certify`. Popolare la matrice di byte ottenendo il valore del membro dati `binaryData` dell&#39;oggetto `BLOB`.
    * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
-   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Scrivere il contenuto della matrice di byte in un file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Consulta anche**
 
@@ -1289,7 +1289,7 @@ Certifica un documento PDF utilizzando Signature API (servizio web):
 
 ## Verifica delle firme digitali {#verifying-digital-signatures}
 
-PDF È possibile verificare che le firme digitali non siano state modificate e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le relative proprietà, ad esempio l&#39;identità del firmatario. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. Durante la verifica di una firma digitale, fare riferimento a un documento di PDF contenente una firma digitale.
+È possibile verificare che le firme digitali non siano state modificate e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le relative proprietà, ad esempio l&#39;identità del firmatario. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. Durante la verifica di una firma digitale, fare riferimento a un documento di PDF contenente una firma digitale.
 
 Supponiamo che l’identità del firmatario sia sconosciuta. Quando apri il documento PDF in Acrobat, un messaggio di avviso indica che l’identità del firmatario è sconosciuta, come illustrato nella figura seguente.
 
@@ -1357,7 +1357,7 @@ Se non si esegue il controllo della revoca, il servizio di firma non verifica se
 
 >[!NOTE]
 >
->È possibile ignorare l&#39;URL specificato nel certificato utilizzando un oggetto `CRLOptionSpec` e un oggetto `OCSPOptionSpec`. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo `CRLOptionSpec` dell&#39;oggetto `setLocalURI`.
+>È possibile ignorare l&#39;URL specificato nel certificato utilizzando un oggetto `CRLOptionSpec` e un oggetto `OCSPOptionSpec`. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo `setLocalURI` dell&#39;oggetto `CRLOptionSpec`.
 
 La marca temporale è il processo di registrazione dell&#39;ora in cui un documento firmato o certificato è stato modificato. Dopo aver firmato un documento, nessuno può modificarlo. La marca temporale consente di applicare la validità di un documento firmato o certificato. È possibile impostare le opzioni di marca temporale utilizzando un oggetto `TSPOptionSpec`. Ad esempio, puoi specificare l’URL di un server provider di marca temporale (TSP).
 
@@ -1418,12 +1418,12 @@ Verifica una firma digitale utilizzando l’API Signature Service (Java):
 1. Impostare le opzioni di runtime della PKI
 
    * Creare un oggetto `PKIOptions` utilizzando il relativo costruttore.
-   * Impostare il tempo di verifica richiamando il metodo `PKIOptions` dell&#39;oggetto `setVerificationTime` e passando un valore di enumerazione `VerificationTime` che specifica il tempo di verifica.
-   * Impostare l&#39;opzione di verifica della revoca richiamando il metodo `PKIOptions` dell&#39;oggetto `setRevocationCheckStyle` e passando un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo della revoca.
+   * Impostare il tempo di verifica richiamando il metodo `setVerificationTime` dell&#39;oggetto `PKIOptions` e passando un valore di enumerazione `VerificationTime` che specifica il tempo di verifica.
+   * Impostare l&#39;opzione di verifica della revoca richiamando il metodo `setRevocationCheckStyle` dell&#39;oggetto `PKIOptions` e passando un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo della revoca.
 
 1. Verificare la firma digitale
 
-   Verificare la firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `verify2` e passando i valori seguenti:
+   Verificare la firma richiamando il metodo `verify2` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `com.adobe.idp.Document` contenente un documento PDF con firma digitale o certificato.
    * Valore stringa che rappresenta il nome del campo della firma contenente la firma da verificare.
@@ -1434,12 +1434,12 @@ Verifica una firma digitale utilizzando l’API Signature Service (Java):
 
 1. Determinare lo stato della firma
 
-   * Determinare lo stato della firma richiamando il metodo `PDFSignatureVerificationInfo` dell&#39;oggetto `getStatus`. Questo metodo restituisce un oggetto `SignatureStatus` che specifica lo stato della firma. Se ad esempio un documento PDF firmato non viene modificato, questo metodo restituisce `SignatureStatus.DocumentSigNoChanges`.
+   * Determinare lo stato della firma richiamando il metodo `getStatus` dell&#39;oggetto `PDFSignatureVerificationInfo`. Questo metodo restituisce un oggetto `SignatureStatus` che specifica lo stato della firma. Se ad esempio un documento PDF firmato non viene modificato, questo metodo restituisce `SignatureStatus.DocumentSigNoChanges`.
 
 1. Determinare l’identità del firmatario
 
-   * Determinare l&#39;identità del firmatario richiamando il metodo `PDFSignatureVerificationInfo` dell&#39;oggetto `getSigner`. Questo metodo restituisce un oggetto `IdentityInformation`.
-   * Richiama il metodo `IdentityInformation` dell&#39;oggetto `getStatus` per determinare l&#39;identità del firmatario. Questo metodo restituisce un valore di enumerazione `IdentityStatus` che specifica l&#39;identità. Ad esempio, se il firmatario è attendibile, questo metodo restituisce `IdentityStatus.TRUSTED`.
+   * Determinare l&#39;identità del firmatario richiamando il metodo `getSigner` dell&#39;oggetto `PDFSignatureVerificationInfo`. Questo metodo restituisce un oggetto `IdentityInformation`.
+   * Richiama il metodo `getStatus` dell&#39;oggetto `IdentityInformation` per determinare l&#39;identità del firmatario. Questo metodo restituisce un valore di enumerazione `IdentityStatus` che specifica l&#39;identità. Ad esempio, se il firmatario è attendibile, questo metodo restituisce `IdentityStatus.TRUSTED`.
 
 **Consulta anche**
 
@@ -1468,7 +1468,7 @@ Verifica una firma digitale utilizzando l’API del servizio di firma (servizio 
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1480,19 +1480,19 @@ Verifica una firma digitale utilizzando l’API del servizio di firma (servizio 
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per archiviare un documento PDF contenente una firma digitale o certificata da verificare.
    * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore. Passa un valore stringa che rappresenta la posizione del file del documento PDF firmato e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando alla relativa proprietà `MTOM` il contenuto della matrice di byte.
 
 1. Impostare le opzioni di runtime della PKI
 
    * Creare un oggetto `PKIOptions` utilizzando il relativo costruttore.
-   * Impostare il tempo di verifica assegnando al membro dati `PKIOptions` dell&#39;oggetto `verificationTime` un valore di enumerazione `VerificationTime` che specifica il tempo di verifica.
-   * Impostare l&#39;opzione di controllo delle revoche assegnando al membro dati `PKIOptions` dell&#39;oggetto `revocationCheckStyle` un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo delle revoche.
+   * Impostare il tempo di verifica assegnando al membro dati `verificationTime` dell&#39;oggetto `PKIOptions` un valore di enumerazione `VerificationTime` che specifica il tempo di verifica.
+   * Impostare l&#39;opzione di controllo delle revoche assegnando al membro dati `revocationCheckStyle` dell&#39;oggetto `PKIOptions` un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo delle revoche.
 
 1. Verificare la firma digitale
 
-   Verificare la firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `verify2` e passando i valori seguenti:
+   Verificare la firma richiamando il metodo `verify2` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * L&#39;oggetto `BLOB` che contiene un documento PDF con firma digitale o certificato.
    * Valore stringa che rappresenta il nome del campo della firma contenente la firma da verificare.
@@ -1503,12 +1503,12 @@ Verifica una firma digitale utilizzando l’API del servizio di firma (servizio 
 
 1. Determinare lo stato della firma
 
-   Determinare lo stato della firma ottenendo il valore del membro dati `PDFSignatureVerificationInfo` dell&#39;oggetto `status`. Questo membro dati memorizza un oggetto `SignatureStatus` che specifica lo stato della firma. Se ad esempio un documento PDF firmato viene modificato, il membro dati `status` memorizza il valore `SignatureStatus.DocumentSigNoChanges`.
+   Determinare lo stato della firma ottenendo il valore del membro dati `status` dell&#39;oggetto `PDFSignatureVerificationInfo`. Questo membro dati memorizza un oggetto `SignatureStatus` che specifica lo stato della firma. Se ad esempio un documento PDF firmato viene modificato, il membro dati `status` memorizza il valore `SignatureStatus.DocumentSigNoChanges`.
 
 1. Determinare l’identità del firmatario
 
-   * Determinare l&#39;identità del firmatario recuperando il valore del membro dati `PDFSignatureVerificationInfo` dell&#39;oggetto `signer`. Questo membro restituisce un oggetto `IdentityInformation`.
-   * Recuperare il membro dati `IdentityInformation` dell&#39;oggetto `status` per determinare l&#39;identità del firmatario. Questo membro dati restituisce un valore di enumerazione `IdentityStatus` che specifica l&#39;identità. Ad esempio, se il firmatario è attendibile, questo membro restituisce `IdentityStatus.TRUSTED`.
+   * Determinare l&#39;identità del firmatario recuperando il valore del membro dati `signer` dell&#39;oggetto `PDFSignatureVerificationInfo`. Questo membro restituisce un oggetto `IdentityInformation`.
+   * Recuperare il membro dati `status` dell&#39;oggetto `IdentityInformation` per determinare l&#39;identità del firmatario. Questo membro dati restituisce un valore di enumerazione `IdentityStatus` che specifica l&#39;identità. Ad esempio, se il firmatario è attendibile, questo membro restituisce `IdentityStatus.TRUSTED`.
 
 **Consulta anche**
 
@@ -1581,7 +1581,7 @@ Se non si esegue il controllo della revoca, il servizio di firma non verifica se
 
 >[!NOTE]
 >
->È possibile ignorare l&#39;URL specificato nel certificato utilizzando un oggetto `CRLOptionSpec` e un oggetto `OCSPOptionSpec`. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo `CRLOptionSpec` dell&#39;oggetto `setLocalURI`.
+>È possibile ignorare l&#39;URL specificato nel certificato utilizzando un oggetto `CRLOptionSpec` e un oggetto `OCSPOptionSpec`. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo `setLocalURI` dell&#39;oggetto `CRLOptionSpec`.
 
 La marca temporale è il processo di registrazione dell&#39;ora in cui un documento firmato o certificato è stato modificato. Dopo aver firmato un documento, nessuno può modificarlo. La marca temporale consente di applicare la validità di un documento firmato o certificato. È possibile impostare le opzioni di marca temporale utilizzando un oggetto `TSPOptionSpec`. Ad esempio, puoi specificare l’URL di un server provider di marca temporale (TSP).
 
@@ -1636,12 +1636,12 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (Java):
 1. Imposta opzioni runtime PKI
 
    * Creare un oggetto `PKIOptions` utilizzando il relativo costruttore.
-   * Impostare il tempo di verifica richiamando il metodo `PKIOptions` dell&#39;oggetto `setVerificationTime` e passando un valore di enumerazione `VerificationTime` che specifica il tempo di verifica.
-   * Impostare l&#39;opzione di controllo della revoca richiamando il metodo `PKIOptions` dell&#39;oggetto `setRevocationCheckStyle` e passando un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo della revoca.
+   * Impostare il tempo di verifica richiamando il metodo `setVerificationTime` dell&#39;oggetto `PKIOptions` e passando un valore di enumerazione `VerificationTime` che specifica il tempo di verifica.
+   * Impostare l&#39;opzione di controllo della revoca richiamando il metodo `setRevocationCheckStyle` dell&#39;oggetto `PKIOptions` e passando un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo della revoca.
 
 1. Recupera tutte le firme digitali
 
-   Richiama il metodo `SignatureServiceClient` dell&#39;oggetto `verifyPDFDocument` e passa i seguenti valori:
+   Richiama il metodo `verifyPDFDocument` dell&#39;oggetto `SignatureServiceClient` e passa i seguenti valori:
 
    * Oggetto `com.adobe.idp.Document` contenente un documento di PDF contenente più firme digitali.
    * Oggetto `PKIOptions` contenente opzioni di runtime PKI.
@@ -1651,8 +1651,8 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (Java):
 
 1. Iterazione di tutte le firme
 
-   * Scorrere tutte le firme richiamando il metodo `PDFDocumentVerificationInfo` dell&#39;oggetto `getVerificationInfos`. Questo metodo restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `PDFSignatureVerificationInfo`. Utilizzare un oggetto `java.util.Iterator` per scorrere l&#39;elenco delle firme.
-   * Utilizzando l&#39;oggetto `PDFSignatureVerificationInfo`, è possibile eseguire attività quali la determinazione dello stato della firma richiamando il metodo `PDFSignatureVerificationInfo` dell&#39;oggetto `getStatus`. Questo metodo restituisce un oggetto `SignatureStatus` il cui membro dati statico fornisce informazioni sullo stato della firma. Se ad esempio la firma è sconosciuta, questo metodo restituisce `SignatureStatus.DocumentSignatureUnknown`.
+   * Scorrere tutte le firme richiamando il metodo `getVerificationInfos` dell&#39;oggetto `PDFDocumentVerificationInfo`. Questo metodo restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `PDFSignatureVerificationInfo`. Utilizzare un oggetto `java.util.Iterator` per scorrere l&#39;elenco delle firme.
+   * Utilizzando l&#39;oggetto `PDFSignatureVerificationInfo`, è possibile eseguire attività quali la determinazione dello stato della firma richiamando il metodo `getStatus` dell&#39;oggetto `PDFSignatureVerificationInfo`. Questo metodo restituisce un oggetto `SignatureStatus` il cui membro dati statico fornisce informazioni sullo stato della firma. Se ad esempio la firma è sconosciuta, questo metodo restituisce `SignatureStatus.DocumentSignatureUnknown`.
 
 **Consulta anche**
 
@@ -1683,7 +1683,7 @@ Verificare più firme digitali utilizzando l&#39;API del servizio di firma (serv
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1695,19 +1695,19 @@ Verificare più firme digitali utilizzando l&#39;API del servizio di firma (serv
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` memorizza un documento PDF contenente più firme digitali da verificare.
    * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore. Passa un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando alla relativa proprietà `MTOM` il contenuto della matrice di byte.
 
 1. Imposta opzioni runtime PKI
 
    * Creare un oggetto `PKIOptions` utilizzando il relativo costruttore.
-   * Impostare il tempo di verifica assegnando al membro dati `PKIOptions` dell&#39;oggetto `verificationTime` un valore di enumerazione `VerificationTime` che specifica il tempo di verifica.
-   * Impostare l&#39;opzione di controllo della revoca assegnando al membro dati `PKIOptions` dell&#39;oggetto `revocationCheckStyle` un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo della revoca.
+   * Impostare il tempo di verifica assegnando al membro dati `verificationTime` dell&#39;oggetto `PKIOptions` un valore di enumerazione `VerificationTime` che specifica il tempo di verifica.
+   * Impostare l&#39;opzione di controllo della revoca assegnando al membro dati `revocationCheckStyle` dell&#39;oggetto `PKIOptions` un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo della revoca.
 
 1. Recupera tutte le firme digitali
 
-   Richiama il metodo `SignatureServiceClient` dell&#39;oggetto `verifyPDFDocument` e passa i seguenti valori:
+   Richiama il metodo `verifyPDFDocument` dell&#39;oggetto `SignatureServiceClient` e passa i seguenti valori:
 
    * Oggetto `BLOB` contenente un documento di PDF contenente più firme digitali.
    * Oggetto `PKIOptions` contenente opzioni di runtime PKI.
@@ -1717,8 +1717,8 @@ Verificare più firme digitali utilizzando l&#39;API del servizio di firma (serv
 
 1. Iterazione di tutte le firme
 
-   * Scorrere tutte le firme ottenendo il membro dati `PDFDocumentVerificationInfo` dell&#39;oggetto `verificationInfos`. Questo membro dati restituisce un array `Object` in cui ogni elemento è un oggetto `PDFSignatureVerificationInfo`.
-   * Utilizzando l&#39;oggetto `PDFSignatureVerificationInfo`, è possibile eseguire attività quali la determinazione dello stato della firma ottenendo il membro dati `PDFSignatureVerificationInfo` dell&#39;oggetto `status`. Questo membro dati restituisce un oggetto `SignatureStatus` il cui membro dati statico fornisce informazioni sullo stato della firma. Se ad esempio la firma è sconosciuta, questo metodo restituisce `SignatureStatus.DocumentSignatureUnknown`.
+   * Scorrere tutte le firme ottenendo il membro dati `verificationInfos` dell&#39;oggetto `PDFDocumentVerificationInfo`. Questo membro dati restituisce un array `Object` in cui ogni elemento è un oggetto `PDFSignatureVerificationInfo`.
+   * Utilizzando l&#39;oggetto `PDFSignatureVerificationInfo`, è possibile eseguire attività quali la determinazione dello stato della firma ottenendo il membro dati `status` dell&#39;oggetto `PDFSignatureVerificationInfo`. Questo membro dati restituisce un oggetto `SignatureStatus` il cui membro dati statico fornisce informazioni sullo stato della firma. Se ad esempio la firma è sconosciuta, questo metodo restituisce `SignatureStatus.DocumentSignatureUnknown`.
 
 **Consulta anche**
 
@@ -1808,7 +1808,7 @@ Rimuovere una firma digitale utilizzando Signature API (Java):
 
 1. Rimuovi la firma digitale dal campo firma
 
-   Rimuovere una firma digitale da un campo di firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `clearSignatureField` e passando i valori seguenti:
+   Rimuovere una firma digitale da un campo di firma richiamando il metodo `clearSignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `com.adobe.idp.Document` che rappresenta il documento di PDF contenente la firma da rimuovere.
    * Valore string che specifica il nome del campo firma contenente la firma digitale.
@@ -1818,7 +1818,7 @@ Rimuovere una firma digitale utilizzando Signature API (Java):
 1. Salvare il documento PDF come file PDF
 
    * Creare un oggetto `java.io.File` e verificare che l&#39;estensione del file sia .pdf.
-   * Richiama il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile`. Passa l&#39;oggetto `java.io.File` per copiare il contenuto dell&#39;oggetto `com.adobe.idp.Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `Document` restituito dal metodo `clearSignatureField`.
+   * Richiama il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document`. Passa l&#39;oggetto `java.io.File` per copiare il contenuto dell&#39;oggetto `com.adobe.idp.Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `Document` restituito dal metodo `clearSignatureField`.
 
 **Consulta anche**
 
@@ -1847,7 +1847,7 @@ Rimuovere una firma digitale utilizzando l’API di firma (servizio web):
    * Creare un oggetto `SignatureServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `SignatureServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/SignatureService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `SignatureServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
-   * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39;oggetto `MessageEncoding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
       * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1859,13 +1859,13 @@ Rimuovere una firma digitale utilizzando l’API di firma (servizio web):
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento di PDF contenente una firma digitale da rimuovere.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF firmato e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto `Length`.
-   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
+   * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando la relativa proprietà `MTOM` al contenuto della matrice di byte.
 
 1. Rimuovi la firma digitale dal campo firma
 
-   Rimuovere la firma digitale richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `clearSignatureField` e passando i valori seguenti:
+   Rimuovere la firma digitale richiamando il metodo `clearSignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Oggetto `BLOB` contenente il documento PDF firmato.
    * Valore string che rappresenta il nome del campo firma contenente la firma digitale da rimuovere.
@@ -1875,9 +1875,9 @@ Rimuovere una firma digitale utilizzando l’API di firma (servizio web):
 1. Salvare il documento PDF come file PDF
 
    * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF contenente un campo firma vuoto e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `sign`. Popolare la matrice di byte ottenendo il valore del membro dati `BLOB` dell&#39;oggetto `MTOM`.
+   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `sign`. Popolare la matrice di byte ottenendo il valore del membro dati `MTOM` dell&#39;oggetto `BLOB`.
    * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
-   * Scrivere il contenuto della matrice di byte nel file PDF richiamando il metodo `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando la matrice di byte.
+   * Scrivere il contenuto della matrice di byte nel file PDF richiamando il metodo `Write` dell&#39;oggetto `System.IO.BinaryWriter` e passando la matrice di byte.
 
 **Consulta anche**
 

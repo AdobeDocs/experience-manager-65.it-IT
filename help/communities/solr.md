@@ -11,14 +11,14 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1534'
 ht-degree: 2%
 
 ---
 
 # Configurazione Solr per SRP {#solr-configuration-for-srp}
 
-## Solr per la piattaforma AEM {#solr-for-aem-platform}
+## Solr per piattaforma AEM {#solr-for-aem-platform}
 
 Un&#39;installazione di [Apache Solr](https://solr.apache.org/) può essere condivisa tra l&#39;[archivio nodi](../../help/sites-deploying/data-store-config.md) (Oak) e l&#39;[archivio comune](working-with-srp.md) (SRP) utilizzando raccolte diverse.
 
@@ -65,26 +65,26 @@ JVM_OPTS="-server -Xmx2048m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnable
 
 Quando l’esecuzione avviene in modalità SolrCloud, prima dell’installazione di MLS è necessario utilizzare e conoscere i seguenti comandi di configurazione di SolrCloud.
 
-#### 1. Carica una configurazione in ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### &#x200B;1. Carica una configurazione in ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Riferimento:
 [https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Utilizzo:
-sh./scripts/cloud-scripts/zkcli.sh \
+sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
--zkhost *server:porta* \
+-zkhost *server:port* \
 -conname *nome-configurazione*\
 -solrhome *solr-home-path* \
 -condir *config-dir*
 
-#### 2. Creare una raccolta {#create-a-collection}
+#### &#x200B;2. Creare una raccolta {#create-a-collection}
 
 Riferimento:
 [https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
 Utilizzo:
-./bin/solr crea \
+./bin/solr create \
 -c *nome-raccolta*\
 -d *config-dir* \
 -n *nomeconfigurazione* \
@@ -92,7 +92,7 @@ Utilizzo:
 -s *numero di frammenti* \
 -rf *numero di repliche*
 
-#### 3. Collegare una raccolta a un set di configurazione {#link-a-collection-to-a-configuration-set}
+#### &#x200B;3. Collegare una raccolta a un set di configurazione {#link-a-collection-to-a-configuration-set}
 
 Collega una raccolta a una configurazione già caricata in ZooKeeper.
 
@@ -100,9 +100,9 @@ Riferimento:
 [https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Utilizzo:
-sh./scripts/cloud-scripts/zkcli.sh \
+sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
--zkhost *server:porta* \
+-zkhost *server:port* \
 -collection *nome-raccolta* \
 -confname *nomeconfigurazione*
 
@@ -140,9 +140,9 @@ In tutto, le seguenti 33 lingue sono supportate in Advanced MLS.
 | Finlandese | Lettone | Thailandese |
 | Francese | Lituano | Turco |
 
-#### Confronto tra ricerca Solr AEM 6.1, MLS standard e MLS avanzata {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Confronto tra AEM 6.1 Solr search, Standard MLS e Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Nota**: AEM 6.1 fa riferimento al FP3 e versioni precedenti di AEM 6.1 Communities.
+**Nota**: AEM 6.1 fa riferimento al FP3 di AEM 6.1 Communities e versioni precedenti.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
@@ -157,7 +157,7 @@ File MLS standard (schema.xml, solrconfig.xml) per Solr 4.10.
 
 File MLS standard (schema.xml, solrconfig.xml) per Solr 5.x.
 
-I file MLS standard sono memorizzati nel repository AEM.
+I file MLS standard vengono memorizzati nell’archivio di AEM.
 
 **Nota**: i file Solr sono memorizzati nella cartella msrp/, ma sono anche per DSRP (non sono necessarie modifiche).
 
@@ -218,11 +218,11 @@ I file MLS standard sono memorizzati nel repository AEM.
 
 Affinché la raccolta SRP (MSRP o DSRP) supporti MLS avanzati, sono necessari nuovi plug-in Solr oltre a uno schema personalizzato e alla configurazione Solr. Tutti gli elementi richiesti vengono inseriti in un file zip scaricabile. Inoltre, è incluso uno script di installazione da utilizzare quando Solr è distribuito in modalità standalone.
 
-Per ottenere il pacchetto MLS avanzato, vedere [MLS avanzato AEM](deploy-communities.md#aem-advanced-mls) nella sezione relativa alla distribuzione della documentazione.
+Per ottenere il pacchetto MLS avanzato, vedere [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) nella sezione relativa alla distribuzione della documentazione.
 
 Per iniziare a installare in modalità SolrCloud o standalone:
 
-* Scarica l&#39;archivio zip AEM-SOLR-MLS sul server che ospita Solr.
+* Scarica l’archivio zip AEM-SOLR-MLS sul server che ospita Solr.
 * Decomprimi l’archivio.
 
 #### Modalità SolrCloud - MLS avanzato {#solrcloud-mode-advanced-mls}

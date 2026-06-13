@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 0%
+source-wordcount: '1783'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 **Per la [piattaforma AEM](/help/sites-deploying/deploy.md#what-is-aem)**
 
-* Installa gli ultimi [aggiornamenti AEM 6.5](#aem64updates)
+* Installa gli ultimi [aggiornamenti di AEM 6.5](#aem64updates)
 
 * Se non si utilizzano le porte predefinite (4502, 4503), [configurare gli agenti di replica](#replication-agents-on-author)
 * [Replica la chiave di crittografia](#replicate-the-crypto-key)
@@ -83,15 +83,15 @@ ht-degree: 0%
 
 AEM 6.5 Communities GA include il pacchetto Communities. Per ulteriori informazioni sugli aggiornamenti di AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), consulta le [Note sulla versione di AEM 6.5](/help/release-notes/release-notes.md#communities-release-notes.html).
 
-### Aggiornamenti AEM 6.5 {#aem-updates}
+### Aggiornamenti di AEM 6.5 {#aem-updates}
 
-A partire da AEM 6.4, gli aggiornamenti alle community vengono forniti come parte dei Cumulative Fix Pack e Service Pack di AEM.
+A partire da AEM 6.4, gli aggiornamenti alle community vengono forniti come parte di AEM Cumulative Fix Pack e Service Pack.
 
-Per gli ultimi aggiornamenti di AEM 6.5, vedere [Adobe Experience Manager 6.4 Cumulative Fix Pack e Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
+Per gli ultimi aggiornamenti di AEM 6.5, consulta [Adobe Experience Manager 6.4 Cumulative Fix Pack e Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ### Cronologia delle versioni {#version-history}
 
-Come per AEM 6.4 e versioni successive, le funzioni e gli hotfix di AEM Communities fanno parte di Cumulative Fix Pack e Service Pack di AEM Communities. Non esistono, quindi, feature pack separate.
+Come in AEM 6.4 e versioni successive, le funzioni e gli hotfix di AEM Communities fanno parte di Cumulative Fix Pack e Service Pack di AEM Communities. Non esistono, quindi, feature pack separate.
 
 ### Driver JDBC per MySQL {#jdbc-driver-for-mysql}
 
@@ -139,7 +139,7 @@ Il download MLS avanzato (noto anche come `phasetwo`) è disponibile dall&#39;ar
 
 * AEM-SOLR-MLS-phasetwo
 
-  Per ottenere il pacchetto MLS avanzato, vedere [MLS avanzato AEM](deploy-communities.md#aem-advanced-mls) nella sezione relativa alla distribuzione della documentazione.
+  Per ottenere il pacchetto MLS avanzato, vedere [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) nella sezione relativa alla distribuzione della documentazione.
 
    * Versione 1.2.40, 6 aprile 2016
    * Scarica AEM-SOLR-MLS-phasetwo-1.2.40.zip
@@ -150,7 +150,7 @@ Per informazioni dettagliate e sull&#39;installazione, visitare [Configurazione 
 
 **Pacchetti visibili in Adobe AEM Cloud**
 
-I collegamenti ai pacchetti in questa pagina non richiedono alcuna istanza in esecuzione di AEM in quanto sono collegati a Condivisione pacchetti in `adobeaemcloud.com`. Mentre i pacchetti sono visualizzabili, il pulsante `Install` consente di installare i pacchetti in un sito ospitato di Adobe. Se si desidera eseguire l&#39;installazione in un&#39;istanza AEM locale, la selezione di `Install` genera un errore.
+I collegamenti ai pacchetti in questa pagina non richiedono alcuna istanza in esecuzione di AEM, in quanto sono collegamenti a Condivisione pacchetti in `adobeaemcloud.com`. Mentre i pacchetti sono visualizzabili, il pulsante `Install` consente di installarli in un sito ospitato da Adobe. Se si desidera eseguire l&#39;installazione in un&#39;istanza AEM locale, la selezione di `Install` genera un errore.
 
 **Installazione nell&#39;istanza AEM locale**
 
@@ -159,7 +159,7 @@ Per installare i pacchetti visibili in `adobeaemcloud.com` in un&#39;istanza AEM
 * Seleziona la scheda **Assets**
 * Seleziona **scarica su disco**
 
-Nell&#39;istanza AEM locale, utilizzare Gestione pacchetti (ad esempio, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)) per caricare nell&#39;archivio dei pacchetti dell&#39;AEM locale.
+Nell&#39;istanza AEM locale, utilizzare Gestione pacchetti (ad esempio, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)) per caricare nell&#39;archivio pacchetti di AEM locale.
 
 In alternativa, se si accede al pacchetto utilizzando Condivisione pacchetti dall&#39;istanza AEM locale (ad esempio, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), il pulsante `Download` viene scaricato nel repository del pacchetto dell&#39;istanza AEM locale.
 
@@ -179,7 +179,7 @@ L&#39;archivio comune supporta la moderazione e l&#39;analisi di UGC nell&#39;am
 
 ## Aggiornamento {#upgrading}
 
-Durante l&#39;aggiornamento alla piattaforma AEM 6.5 da versioni precedenti dell&#39;AEM, è importante leggere [Aggiornamento a AEM 6.5](/help/sites-deploying/upgrade.md).
+Durante l&#39;aggiornamento alla piattaforma AEM 6.5 da versioni precedenti di AEM, è importante leggere [Aggiornamento ad AEM 6.5](/help/sites-deploying/upgrade.md).
 
 Oltre all&#39;aggiornamento della piattaforma, leggere [Aggiornamento ad AEM Communities 6.5](/help/communities/upgrade.md) per informazioni sulle modifiche delle community.
 
@@ -187,7 +187,7 @@ Oltre all&#39;aggiornamento della piattaforma, leggere [Aggiornamento ad AEM Com
 
 ### Editore primario {#primary-publisher}
 
-Quando la distribuzione scelta è una [farm di pubblicazione](/help/communities/topologies.md#tarmk-publish-farm), è necessario identificare un&#39;istanza di pubblicazione AEM come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze. Ad esempio, funzionalità basate su **notifiche** o **Adobe Analytics**.
+Quando la distribuzione scelta è una [farm di pubblicazione](/help/communities/topologies.md#tarmk-publish-farm), è necessario identificare un&#39;istanza di pubblicazione di AEM come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze. Ad esempio, funzionalità basate su **notifiche** o **Adobe Analytics**.
 
 Per impostazione predefinita, la configurazione OSGi `AEM Communities Publisher Configuration` è configurata con la casella di controllo **`Primary Publisher`** selezionata, in modo che tutte le istanze di pubblicazione in una farm di pubblicazione si identifichino autonomamente come primarie.
 
@@ -252,7 +252,7 @@ Il servizio tunnel fornisce questo accesso utilizzando l’agente di replica sul
 Per attivare il servizio tunnel:
 
 * Accedi con privilegi di amministratore all’istanza di authoring.
-* Se l&#39;editore non è localhost:4503 o l&#39;utente di trasporto non è `admin`,
+* Se l&#39;autore non è localhost:4503 o l&#39;utente di trasporto non è `admin`,
 quindi [configurare l&#39;agente di replica](#replication-agents-on-author)
 
 * Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md)
@@ -270,11 +270,11 @@ quindi [configurare l&#39;agente di replica](#replication-agents-on-author)
 
 Esistono due funzioni di AEM Communities che richiedono che tutte le istanze del server AEM utilizzino le stesse chiavi di crittografia. Sono [Analytics](/help/communities/analytics.md) e [ASRP](/help/communities/asrp.md).
 
-A partire dalla versione 6.3 dell’AEM, il materiale principale viene memorizzato nel file system e non più nell’archivio.
+A partire da AEM 6.3, il materiale chiave viene memorizzato nel file system e non più nell’archivio.
 
 Per copiare il materiale chiave dall&#39;autore a tutte le altre istanze, è necessario:
 
-* Accedere all’istanza AEM, in genere un’istanza Autore, contenente il materiale chiave da copiare
+* Accedere all’istanza di AEM, in genere un’istanza Autore, che contiene il materiale chiave da copiare
 
    * Individuare il bundle `com.adobe.granite.crypto.file` nel file system locale
 ad esempio:
@@ -289,7 +289,7 @@ ad esempio:
 
       * Copiare i file hmac e del nodo principale
 
-* Per ogni istanza AEM target
+* Per ogni istanza AEM di destinazione
 
    * Accedi alla cartella dati,
 ad esempio:
@@ -305,7 +305,7 @@ ad esempio:
 
 #### Replica archivio {#repository-replication}
 
-Come nel caso dell’AEM 6.2 e versioni precedenti, è possibile conservare il materiale principale conservato nel deposito. Specificare la proprietà di sistema `-Dcom.adobe.granite.crypto.file.disable=true` al primo avvio di ogni istanza AEM (che crea l&#39;archivio iniziale).
+È possibile conservare il materiale chiave memorizzato nell’archivio, come è avvenuto per AEM 6.2 e versioni precedenti. Specificare la proprietà di sistema `-Dcom.adobe.granite.crypto.file.disable=true` al primo avvio di ogni istanza di AEM (che crea l&#39;archivio iniziale).
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ Come nel caso dell’AEM 6.2 e versioni precedenti, è possibile conservare il m
 
 Con il materiale della chiave memorizzato nell’archivio, il modo per replicare la chiave crittografica dall’istanza di authoring ad altre istanze è il seguente:
 
-Utilizzo di [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md):
+Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Passa a [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de)
 * Seleziona `/etc/key`
@@ -338,7 +338,7 @@ Utilizzo di [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md):
 * Dopo qualche istante verrà visualizzata una finestra di dialogo **Operazione riuscita**:
   `Operation completed successfully.`
 
-### Server HTTP Apache {#apache-http-server}
+### Apache HTTP Server {#apache-http-server}
 
 Se utilizzi il server HTTP Apache, assicurati di utilizzare il nome del server corretto per tutte le voci rilevanti.
 
@@ -365,7 +365,7 @@ In particolare, prestare attenzione a utilizzare il nome server corretto, non `l
 
 Se utilizzi un Dispatcher, consulta:
 
-* Documentazione di [Dispatcher](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) per AEM
+* Documentazione di AEM [Dispatcher](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)
 * [Installazione di Dispatcher](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configurazione di Dispatcher per Communities](/help/communities/dispatcher.md)
 * [Problemi noti](/help/communities/troubleshooting.md#dispatcher-refetch-fails)

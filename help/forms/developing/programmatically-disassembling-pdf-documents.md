@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 0%
+source-wordcount: '1779'
+ht-degree: 2%
 
 ---
 
@@ -41,11 +41,11 @@ Ai fini della presente discussione, si supponga di utilizzare il seguente docume
 
 >[!NOTE]
 >
->Prima di leggere questa sezione, è consigliabile avere familiarità con l&#39;assemblaggio di documenti PDF utilizzando il servizio Assembler. (Vedi [Assemblaggio a livello di programmazione di documenti di PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Prima di leggere questa sezione, è consigliabile avere familiarità con l&#39;assemblaggio di documenti PDF utilizzando il servizio Assembler. (Vedere [Assemblaggio di documenti di PDF a livello di programmazione](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
->Quando si passa un singolo documento PDF al servizio Assembler e si recupera un singolo documento, è possibile richiamare l&#39;operazione `invokeOneDocument`. Tuttavia, per disassemblare un documento PDF, utilizzare l&#39;operazione `invokeDDX` perché, sebbene un documento PDF di input venga passato al servizio Assembler, quest&#39;ultimo restituisce un insieme che contiene uno o più documenti.
+>Quando si passa un singolo documento PDF al servizio Assembler e si recupera un singolo documento, è possibile richiamare l&#39;operazione `invokeOneDocument`. Tuttavia, per disassemblare un documento PDF, utilizzare l&#39;operazione `invokeDDX` perché, sebbene un documento di PDF di input venga passato al servizio Assembler, quest&#39;ultimo restituisce un insieme che contiene uno o più documenti.
 
 >[!NOTE]
 >
@@ -57,10 +57,10 @@ Ai fini della presente discussione, si supponga di utilizzare il seguente docume
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
-Per disassemblare un documento PDF, effettuare le seguenti operazioni:
+Per disassemblare un documento PDF, eseguire le operazioni seguenti:
 
 1. Includi file di progetto.
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 1. Fare riferimento a un documento DDX esistente.
 1. Fare riferimento a un documento PDF da disassemblare.
 1. Impostare le opzioni di runtime.
@@ -81,7 +81,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 
 se AEM Forms viene distribuito su un server applicazioni J2EE supportato che non è JBoss, è necessario sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazioni J2EE in cui viene distribuito AEM Forms.
 
-**Creare un client Assembler PDF**
+**Creare un client Assembler di PDF**
 
 Prima di poter eseguire un&#39;operazione Assembler a livello di programmazione, è necessario creare un client del servizio Assembler.
 
@@ -103,7 +103,7 @@ Dopo aver creato il client del servizio Assembler, aver fatto riferimento al doc
 
 **Salvare i documenti PDF disassemblati**
 
-Tutti i documenti PDF disassemblati vengono restituiti all&#39;interno di un insieme. Scorrere l&#39;oggetto insieme e salvare ogni documento PDF come file PDF.
+Tutti i documenti PDF disassemblati vengono restituiti all&#39;interno di un insieme. Scorrere l&#39;oggetto insieme e salvare ogni documento di PDF come file PDF.
 
 **Consulta anche**
 
@@ -121,7 +121,7 @@ Disassemblare un documento PDF utilizzando l&#39;API del servizio Assembler (Jav
 
    Includi i file JAR client, come adobe-assembler-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
@@ -133,7 +133,7 @@ Disassemblare un documento PDF utilizzando l&#39;API del servizio Assembler (Jav
 
 1. Fare riferimento a un documento PDF da disassemblare.
 
-   * Creare un oggetto `java.util.Map` utilizzato per memorizzare i documenti di input PDF utilizzando un costruttore `HashMap`.
+   * Creare un oggetto `java.util.Map` utilizzato per memorizzare i documenti PDF di input utilizzando un costruttore `HashMap`.
    * Creare un oggetto `java.io.FileInputStream` utilizzando il relativo costruttore e passando la posizione del documento PDF da disassemblare.
    * Creare un oggetto `com.adobe.idp.Document` e passare l&#39;oggetto `java.io.FileInputStream` che contiene il documento PDF da disassemblare.
    * Aggiungere una voce all&#39;oggetto `java.util.Map` richiamando il relativo metodo `put` e passando i seguenti argomenti:
@@ -186,7 +186,7 @@ Disassemblare un documento PDF utilizzando l&#39;API del servizio Assembler (ser
    >
    >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `AssemblerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
@@ -194,7 +194,7 @@ Disassemblare un documento PDF utilizzando l&#39;API del servizio Assembler (ser
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -237,7 +237,7 @@ Disassemblare un documento PDF utilizzando l&#39;API del servizio Assembler (ser
 
 1. Salvare i documenti PDF disassemblati.
 
-   Per ottenere i documenti di PDF appena creati, effettuare le seguenti operazioni:
+   Per ottenere i documenti PDF appena creati, effettuare le seguenti operazioni:
 
    * Accedere al campo `documents` dell&#39;oggetto `AssemblerResult`, che è un oggetto `Map` contenente i documenti PDF disassemblati.
    * Scorrere l&#39;oggetto `Map` per ottenere ogni documento risultante. Quindi, eseguire il cast di `value` del membro dell&#39;array in un `BLOB`.

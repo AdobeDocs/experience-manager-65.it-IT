@@ -13,7 +13,7 @@ exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4530'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 Un predefinito visualizzatore è una raccolta di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse rich media sugli schermi dei loro computer e sui loro dispositivi mobili. Gli amministratori possono creare predefiniti visualizzatore. Le impostazioni sono disponibili per un array di opzioni di configurazione del visualizzatore. Ad esempio, è possibile modificare le dimensioni di visualizzazione o il comportamento di zoom del visualizzatore.
 
-Per istruzioni su come creare e personalizzare i predefiniti visualizzatore di HTML5, consulta la *Documentazione dell&#39;API SDK del visualizzatore di Adobe HTML Dynamic Media*. Il SDK è disponibile sul server di pubblicazione IS incorporato nel SDK stesso. Ogni versione della libreria include la propria documentazione di SDK.
+Per istruzioni su come creare e personalizzare i predefiniti visualizzatore di HTML5, consulta la *Documentazione dell&#39;API SDK del visualizzatore di Adobe Dynamic Media*. Il SDK è disponibile sul server di pubblicazione IS incorporato nel SDK stesso. Ogni versione della libreria include la propria documentazione di SDK.
 
 Percorso: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Ad esempio, 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
@@ -139,8 +139,8 @@ Durante la creazione dei predefiniti visualizzatore, gli amministratori possono 
    <td><strong>Zoom verticale</strong></td>
    <td><p>Il visualizzatore con zoom verticale consente di massimizzare l’esperienza di visualizzazione delle immagini del prodotto, per offrire agli utenti la migliore rappresentazione possibile di un prodotto. La posizione verticale dei campioni è la seguente:</p>
     <ul>
-     <li>Assicura che i campioni siano "sopra la piega".<br/> I campioni orizzontali, a seconda delle dimensioni dello schermo del desktop dell'utente, non sono visibili finché l'utente non scorre la pagina verso il basso. Posizionando i campioni verticalmente nel visualizzatore, si garantisce che siano visibili indipendentemente dalle dimensioni dello schermo dell'utente.</li>
-     <li>Ingrandisce le dimensioni dell'immagine principale.<br /> Con i campioni orizzontali, è necessario riservare spazio sulla pagina per assicurarsi che siano visibili. Questo posizionamento riduce le dimensioni dell'immagine principale. Con un layout di campione verticale, tuttavia, non è necessario allocare questo spazio. È quindi possibile ingrandire l'immagine principale.</li>
+     <li>Assicura che i campioni siano "al di sopra della piega".<br/> Con i campioni orizzontali, a seconda delle dimensioni dello schermo del desktop dell’utente, non sono visibili fino a quando l’utente non scorre la pagina verso il basso. Posizionando i campioni verticalmente nel visualizzatore, si garantisce che siano visibili indipendentemente dalle dimensioni dello schermo dell'utente.</li>
+     <li>Ingrandisce le dimensioni dell'immagine principale.<br /> Nel caso dei campioni orizzontali, è necessario riservare spazio sulla pagina per garantirne la visibilità. Questo posizionamento riduce le dimensioni dell'immagine principale. Con un layout di campione verticale, tuttavia, non è necessario allocare questo spazio. È quindi possibile ingrandire l'immagine principale.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ Consulta [Considerazioni speciali per la creazione di un predefinito per visuali
 
      Quando importi un file CSS, l’editor visivo controlla se il CSS utilizza i marcatori visualizzatore corretti. Ad esempio, se crei un visualizzatore Zoom, tutte le regole CSS importate devono essere definite utilizzando il nome della classe di visualizzatore `.s7mixedmediaviewer` definito in un elemento visualizzatore padre.
 
-     Puoi importare file CSS arbitrari e fatti a mano, purché definiscano correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in qualsiasi argomento della Guida relativo alla personalizzazione di *&lt;nome visualizzatore>* Visualizzatore nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=it). Ad esempio, per informazioni sui marcatori CSS per il Visualizzatore zoom, vedere [Personalizzazione del Visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=it). È possibile, tuttavia, che l&#39;editor visivo non comprenda alcuni valori CSS. In questi casi, l’editor visivo tenta di ignorare gli errori in modo che il CSS possa ancora funzionare.
+     Puoi importare file CSS arbitrari e fatti a mano, purché definiscano correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in qualsiasi argomento della Guida relativo alla personalizzazione di *&lt;nome visualizzatore>* Visualizzatore nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=it). Ad esempio, per informazioni sui marcatori CSS per il Visualizzatore zoom, vedere [Personalizzazione del Visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=it).) È possibile, tuttavia, che l’editor visivo non comprenda alcuni valori CSS. In questi casi, l’editor visivo tenta di ignorare gli errori in modo che il CSS possa ancora funzionare.
 
    >[!NOTE]
    >
@@ -529,7 +529,7 @@ Supponiamo di avere un segmento video di 30 secondi. In totale, sono presenti no
 |---|---|---|
 | 1 | 0-10 | 1, 2, 3, 4 |
 | 2 | 10-20 | 4, 5, 6, 7 |
-| 3 | 20 — 30 | 6, 7, 8, 9 |
+| 3 | 20-30 | 6, 7, 8, 9 |
 
 Il sottosegmento video 3 non si estende oltre le miniature ad esso assegnate. Inoltre, le miniature 4, 6 e 7 sono visibili nel pannello con una lunghezza doppia rispetto alle altre miniature.
 

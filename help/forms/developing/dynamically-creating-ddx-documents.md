@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 0%
+source-wordcount: '2111'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ Questo documento DDX disassembla un documento PDF. È consigliabile avere famili
 Per disassemblare un documento PDF utilizzando un documento DDX creato in modo dinamico, effettuare le seguenti operazioni:
 
 1. Includi file di progetto.
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 1. Creare il documento DDX.
 1. Converte il documento DDX.
 1. Impostare le opzioni di runtime.
@@ -70,7 +70,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 * adobe-utilities.jar (richiesto se AEM Forms è implementato su JBoss)
 * jbossall-client.jar (obbligatorio se AEM Forms è distribuito su JBoss)
 
-**Creare un client Assembler PDF**
+**Creare un client Assembler di PDF**
 
 Prima di eseguire un&#39;operazione Assembler a livello di programmazione, creare un client del servizio Assembler.
 
@@ -96,7 +96,7 @@ Disassemblare il documento PDF richiamando l&#39;operazione `invokeDDX`. Passa i
 
 **Salvare i documenti PDF disassemblati**
 
-Tutti i documenti PDF disassemblati vengono restituiti all&#39;interno di un insieme. Scorrere l&#39;oggetto insieme e salvare ogni documento PDF come file PDF.
+Tutti i documenti PDF disassemblati vengono restituiti all&#39;interno di un insieme. Scorrere l&#39;oggetto insieme e salvare ogni documento di PDF come file PDF.
 
 **Consulta anche**
 
@@ -118,7 +118,7 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
 
    Includi i file JAR client, come adobe-assembler-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
@@ -129,7 +129,6 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
    * Creare un oggetto Java `DocumentBuilder` chiamando il metodo `newDocumentBuilder` dell&#39;oggetto `DocumentBuilderFactory`.
    * Chiamare il metodo `newDocument` dell&#39;oggetto `DocumentBuilder` per creare un&#39;istanza di un oggetto `org.w3c.dom.Document`.
    * Creare l&#39;elemento radice del documento DDX richiamando il metodo `createElement` dell&#39;oggetto `org.w3c.dom.Document`. Questo metodo crea un oggetto `Element` che rappresenta l&#39;elemento radice. Passa un valore stringa che rappresenta il nome dell&#39;elemento al metodo `createElement`. Eseguire il cast del valore restituito in `Element`. Impostare quindi un valore per l&#39;elemento figlio chiamando il relativo metodo `setAttribute`. Infine, accodare l&#39;elemento all&#39;elemento header chiamando il metodo `appendChild` dell&#39;elemento header e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
-
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Creare l&#39;elemento `PDFsFromBookmarks` chiamando il metodo `createElement` dell&#39;oggetto `Document`. Passa un valore stringa che rappresenta il nome dell&#39;elemento al metodo `createElement`. Eseguire il cast del valore restituito in `Element`. Impostare un valore per l&#39;elemento `PDFsFromBookmarks` chiamando il relativo metodo `setAttribute`. Aggiungere l&#39;elemento `PDFsFromBookmarks` all&#39;elemento `DDX` chiamando il metodo `appendChild` dell&#39;elemento DDX. Passa l&#39;oggetto elemento `PDFsFromBookmarks` come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
@@ -154,7 +153,7 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
 
 1. Fare riferimento a un documento PDF da disassemblare.
 
-   * Creare un oggetto `java.util.Map` utilizzato per memorizzare i documenti di input PDF utilizzando un costruttore `HashMap`.
+   * Creare un oggetto `java.util.Map` utilizzato per memorizzare i documenti PDF di input utilizzando un costruttore `HashMap`.
    * Creare un oggetto `java.io.FileInputStream` utilizzando il relativo costruttore e passando la posizione del documento PDF da disassemblare.
    * Creare un oggetto `com.adobe.idp.Document`. Passa l&#39;oggetto `java.io.FileInputStream` che contiene il documento PDF da disassemblare.
    * Aggiungere una voce all&#39;oggetto `java.util.Map` richiamando il relativo metodo `put` e passando i seguenti argomenti:
@@ -205,7 +204,7 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
    >
    >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
 
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 
    * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore predefinito.
    * Creare un oggetto `AssemblerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
@@ -213,7 +212,7 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -268,7 +267,7 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
 
 1. Salvare i documenti PDF disassemblati.
 
-   Per ottenere i documenti di PDF appena creati, effettuare le seguenti operazioni:
+   Per ottenere i documenti PDF appena creati, effettuare le seguenti operazioni:
 
    * Accedere al campo `documents` dell&#39;oggetto `AssemblerResult`, che è un oggetto `Map` contenente i documenti PDF disassemblati.
    * Scorrere l&#39;oggetto `Map` per ottenere ogni documento risultante. Quindi, eseguire il cast di `value` del membro dell&#39;array in un `BLOB`.

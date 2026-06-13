@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva all’API di servizio Forms
+title: Avvio rapido di API Java per il servizio dei moduli
 description: Scopri come eseguire il rendering interattivo di PDF, HTML Forms e frammenti utilizzando l’API Java&trade;.
 contentOwner: admin
 content-type: reference
@@ -11,46 +11,46 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
 
-# Guida introduttiva all’API di servizio Forms {#forms-service-api-quick-starts}
+# Avvio rapido di API Java per il servizio dei moduli {#forms-service-api-quick-starts}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 Per il servizio Forms sono disponibili i seguenti servizi di avvio rapido:
 
-[Quick Start (modalità SOAP): rendering di un modulo PDF interattivo tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
+[Quick Start (modalità SOAP): rendering di un modulo PDF interattivo tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
 
-[Quick Start (modalità SOAP): rendering di un modulo sul client tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[Guida rapida (modalità SOAP): rendering di un modulo sul client tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
-[Guida rapida (modalità SOAP): rendering di un modulo basato su frammenti tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[Guida rapida (modalità SOAP): rendering di un modulo basato su frammenti tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
-[Quick Start (modalità SOAP): rendering di un modulo abilitato ai diritti tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Guida rapida (modalità SOAP): rendering di un modulo abilitato ai diritti tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
-[Quick Start (modalità SOAP): rendering di un modulo HTML utilizzando Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[Quick Start (modalità SOAP): rendering di un modulo HTML utilizzando l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[Guida rapida (modalità SOAP): rendering di un modulo HTML con una barra degli strumenti personalizzata tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Guida rapida (modalità SOAP): rendering di un HTML Form con una barra degli strumenti personalizzata tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Quick Start (modalità SOAP): gestione dei PDF forms inviati come XML tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Quick Start (modalità SOAP): gestione di PDF forms inviati come XML utilizzando l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Quick Start (modalità SOAP): gestione dei PDF forms inviati come PDF utilizzando Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Quick Start (modalità SOAP): gestione di PDF forms inviati come PDF tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[Guida rapida (modalità SOAP): gestione dei moduli HTML inviati come XML tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Guida rapida (modalità SOAP): gestione dei moduli HTML inviati come XML tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[Guida rapida (modalità SOAP): creazione di documenti PDF con i dati XML inviati tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
+[Guida rapida (modalità SOAP): creazione di documenti PDF con i dati XML inviati tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[Guida rapida (modalità SOAP): precompilazione di Forms con layout accessibili tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Guida rapida (modalità SOAP): precompilazione di Forms con layout accessibili tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[Quick Start (modalità SOAP): gestione di un modulo contenente uno script di calcolo tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
+[Quick Start (modalità SOAP): gestione di un modulo contenente uno script di calcolo tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
-[Quick Start (modalità SOAP): ottimizzazione delle prestazioni con Java](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[Quick Start (modalità SOAP): ottimizzazione delle prestazioni tramite l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
-[Quick Start (modalità SOAP): rendering per valore utilizzando Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[Quick Start (modalità SOAP): rendering per valore utilizzando l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[Quick Start (modalità SOAP): trasmissione di documenti al servizio Forms tramite Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Guida rapida (modalità SOAP): passare documenti al servizio Forms utilizzando l’API Java™](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 La logica dell’applicazione che utilizza l’API del servizio Forms è implementata come servlet Java™. Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
@@ -62,7 +62,7 @@ La logica dell’applicazione che utilizza l’API del servizio Forms è impleme
 
 ## Quick Start (modalità SOAP): rendering di un modulo PDF interattivo tramite l’API Java™ {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo PDF interattivo denominato *Loan.xdp* in un browser Web client. Al modulo viene allegato un file. Si noti che la struttura del modulo fa parte di un&#39;applicazione e viene fatto riferimento a tale struttura utilizzando il valore URI radice del contenuto `repository:///`. (Vedi [Rendering dei PDF forms interattivi](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo PDF interattivo denominato *Loan.xdp* in un browser Web client. Al modulo viene allegato un file. Si noti che la struttura del modulo fa parte di un&#39;applicazione e viene fatto riferimento a tale struttura utilizzando il valore URI radice del contenuto `repository:///`. (Vedi [Rendering di PDF forms interattivo](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
 ```java
  /*
@@ -202,7 +202,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il render
  }
 ```
 
-## Quick Start (modalità SOAP): rendering di un modulo sul client tramite l’API Java™ {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}
+## Guida rapida (modalità SOAP): rendering di un modulo sul client tramite l’API Java™ {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo denominato *Loan.xdp* nel client tramite l&#39;API Java™ del servizio Forms. Si noti che la struttura del modulo fa parte di un&#39;applicazione e viene fatto riferimento a tale struttura utilizzando il valore URI radice del contenuto `repository:///`. (Vedi [Rendering di Forms nel client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
@@ -471,7 +471,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il render
  
 ```
 
-## Quick Start (modalità SOAP): rendering di un modulo basato su frammenti tramite l’API Java™ {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}
+## Guida rapida (modalità SOAP): rendering di un modulo basato su frammenti tramite l’API Java™ {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo basato su frammenti. Il nome della struttura del modulo è *PurchaseOrderDynamic.xdp* e si trova nell&#39;archivio di AEM Forms (il file XDP è memorizzato in una cartella denominata `FormsFolder` nell&#39;archivio). Anche i frammenti a cui fa riferimento il modulo POFragment devono trovarsi nell’archivio. (Vedi [Rendering di Forms basato su frammenti](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
 
@@ -604,7 +604,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il render
  }
 ```
 
-## Quick Start (modalità SOAP): rendering di un modulo abilitato ai diritti tramite l’API Java™ {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}
+## Guida rapida (modalità SOAP): rendering di un modulo abilitato ai diritti tramite l’API Java™ {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo abilitato per i diritti in un browser Web client. I diritti di utilizzo impostati in questo esempio di codice consentono a un utente di aggiungere commenti nel modulo e salvare i dati del modulo. (Vedi [Rendering di Forms con diritti abilitati](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms).)
 
@@ -902,9 +902,9 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il render
  
 ```
 
-## Quick Start (modalità SOAP): rendering di un modulo HTML che utilizza un file CSS utilizzando l’API Java™ {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
+## Guida rapida (modalità SOAP): rendering di un modulo HTML che utilizza un file CSS tramite l’API Java™ {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo HTML utilizzando l&#39;API client del servizio Forms. Il nome del file CSS personalizzato a cui si fa riferimento è *custom.css*. (Vedi [Rendering di HTML Forms tramite file CSS personalizzati](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo di HTML utilizzando l&#39;API client del servizio Forms. Il nome del file CSS personalizzato a cui si fa riferimento è *custom.css*. (Vedi [Rendering di HTML Forms tramite file CSS personalizzati](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
 
 ```java
  /*
@@ -1057,9 +1057,9 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il render
  }
 ```
 
-## Quick Start (modalità SOAP): rendering di un modulo HTML con una barra degli strumenti personalizzata utilizzando l’API Java™ {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
+## Guida rapida (modalità SOAP): rendering di un HTML Form con una barra degli strumenti personalizzata tramite l’API Java™ {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo di HTML con una barra degli strumenti visualizzata in francese. Il percorso di fscmenu.xml è C:\Adobe (questa cartella deve trovarsi sul server che ospita AEM Forms). Il valore delle impostazioni locali è `fr_FR`. Nella sezione che illustra come eseguire il rendering di un modulo HTML con una barra degli strumenti personalizzata viene illustrata la sintassi del file fscmenu.xml utilizzato in questo avvio rapido. (Vedi [Rendering di HTML Forms con barre degli strumenti personalizzate](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo di HTML con una barra degli strumenti visualizzata in francese. Il percorso di fscmenu.xml è C:\Adobe (questa cartella deve trovarsi sul server che ospita AEM Forms). Il valore delle impostazioni locali è `fr_FR`. Nella sezione in cui viene illustrato come eseguire il rendering di un modulo di HTML con una barra degli strumenti personalizzata viene illustrata la sintassi del file fscmenu.xml utilizzato in questo avvio rapido. (Vedi [Rendering di HTML Forms con barre degli strumenti personalizzate](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
 
 ```java
  /*
@@ -1213,7 +1213,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eseguito il render
  
 ```
 
-## Quick Start (modalità SOAP): gestione dei PDF forms inviati come XML tramite l’API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## Quick Start (modalità SOAP): gestione di PDF forms inviati come XML utilizzando l’API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato come XML. Il valore del tipo di contenuto passato al metodo `processFormSubmission` è `CONTENT_TYPE=text/xml`. Vengono visualizzati i valori corrispondenti ai campi denominati `mortgageAmount`, `lastName` e `firstName`. In questo avvio rapido viene utilizzato un metodo definito dall&#39;utente denominato `getNodeText`. Accetta un&#39;istanza `org.w3c.dom.Document` e un valore stringa che specifica il nome del nodo. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. (Vedi [Gestione di Forms inviato](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -1382,9 +1382,9 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo 
 >
 >Quando si utilizza un oggetto `com.adobe.idp.Document` e un oggetto `org.w3c.dom.Document` nella stessa applicazione, specificare `org.w3c.dom.Document`.
 
-## Quick Start (modalità SOAP): gestione dei PDF forms inviati come PDF tramite l’API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Quick Start (modalità SOAP): gestione di PDF forms inviati come PDF tramite l’API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato come dati PDF. Il valore del tipo di contenuto passato al metodo `processFormSubmission` è `CONTENT_TYPE=application/pdf`. Il modulo inviato viene salvato come file PDF denominato *tempPDF.pdf*. Inoltre, poiché il modulo viene inviato come PDF, è possibile recuperare i file allegati. Tutti gli allegati vengono salvati come file JPEG. (Vedi [Gestione di Forms inviato](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato come dati di PDF. Il valore del tipo di contenuto passato al metodo `processFormSubmission` è `CONTENT_TYPE=application/pdf`. Il modulo inviato viene salvato come file PDF denominato *tempPDF.pdf*. Inoltre, poiché il modulo viene inviato come PDF, è possibile recuperare i file allegati. Tutti gli allegati vengono salvati come file JPEG. (Vedi [Gestione di Forms inviato](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 ```java
  /*
@@ -1532,9 +1532,9 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo 
  
 ```
 
-## Quick Start (modalità SOAP): gestione dei moduli HTML inviati come XML tramite l’API Java™ {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
+## Guida rapida (modalità SOAP): gestione dei moduli HTML inviati come XML tramite l’API Java™ {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo HTML inviato come dati XML. Il valore del tipo di contenuto passato al metodo `processFormSubmission` è `CONTENT_TYPE=application/x-www-form-urlencoded`. Vengono visualizzati i valori corrispondenti ai campi denominati `mortgageAmount`, `lastName` e `firstName`. In questa Guida rapida viene utilizzato un metodo definito dall&#39;utente denominato `getNodeText`. Accetta un&#39;istanza `org.w3c.dom.Document` e un valore stringa che specifica il nome del nodo. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. (Vedi [Gestione di Forms inviato](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo di HTML inviato come dati XML. Il valore del tipo di contenuto passato al metodo `processFormSubmission` è `CONTENT_TYPE=application/x-www-form-urlencoded`. Vengono visualizzati i valori corrispondenti ai campi denominati `mortgageAmount`, `lastName` e `firstName`. In questa Guida rapida viene utilizzato un metodo definito dall&#39;utente denominato `getNodeText`. Accetta un&#39;istanza `org.w3c.dom.Document` e un valore stringa che specifica il nome del nodo. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. (Vedi [Gestione di Forms inviato](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 ```java
  /*
@@ -1694,7 +1694,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo 
 
 ## Guida rapida (modalità SOAP): creazione di documenti PDF con i dati XML inviati tramite l’API Java™ {#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api}
 
-Nell&#39;esempio di codice Java™ riportato di seguito vengono gestiti i dati del modulo inviati come XML. I dati del modulo vengono recuperati dall’invio del modulo utilizzando l’API Forms e inviati al servizio di output. I dati del modulo e la struttura del modulo vengono utilizzati per creare un documento PDF non interattivo. Il documento PDF non interattivo è archiviato in un nodo Content Services (obsoleto) denominato `/Company Home/Test Directory`. Il nome del modulo viene creato in modo dinamico. In altre parole, il nome e il cognome dell’utente vengono utilizzati per denominare il file PDF. L’identificatore di risorsa del nuovo contenuto viene scritto sul browser web client. (Vedi [Creazione di documenti PDF con dati XML inviati](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
+Nell&#39;esempio di codice Java™ riportato di seguito vengono gestiti i dati del modulo inviati come XML. I dati del modulo vengono recuperati dall’invio del modulo utilizzando l’API Forms e inviati al servizio di output. I dati del modulo e la progettazione del modulo vengono utilizzati per creare un documento PDF non interattivo. Il documento non interattivo di PDF è archiviato in un nodo Content Services (obsoleto) denominato `/Company Home/Test Directory`. Il nome del modulo viene creato in modo dinamico. In altre parole, il nome e il cognome dell’utente vengono utilizzati per denominare il file PDF. L’identificatore di risorsa del nuovo contenuto viene scritto sul browser web client. (Vedi [Creazione di documenti PDF con dati XML inviati](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
 
 ```java
  /*
@@ -1964,7 +1964,7 @@ Nell&#39;esempio di codice Java™ riportato di seguito vengono gestiti i dati d
  }
 ```
 
-## Quick Start (modalità SOAP): precompilazione di Forms con layout accessibili tramite l’API Java™ {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
+## Guida rapida (modalità SOAP): precompilazione di Forms con layout accessibili tramite l’API Java™ {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice riportato di seguito viene precompilato un modulo con un&#39;origine dati dinamica. In altre parole, l&#39;origine dati viene creata in fase di esecuzione e non è contenuta all&#39;interno di un file XML né viene creata in fase di progettazione. Questo esempio di codice contiene tre metodi definiti dall&#39;utente:
 
@@ -2497,7 +2497,7 @@ L&#39;esempio di codice seguente ottimizza le prestazioni impostando le opzioni 
 
 ## Quick Start (modalità SOAP): rendering per valore utilizzando l’API Java™ {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
 
-Il seguente programma di avvio rapido Java™ esegue il rendering di un modulo PDF interattivo basato su una struttura di modulo denominata *Loan.xdp* in base al valore. Si noti che la struttura del modulo viene utilizzata per popolare un oggetto `com.adobe.idp.Document` denominato *inputXDP*. (Vedi [Rendering Di Forms Per Valore](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
+Il seguente programma di avvio rapido Java™ esegue il rendering di un modulo PDF interattivo basato su una struttura di modulo denominata *Loan.xdp* per valore. Si noti che la struttura del modulo viene utilizzata per popolare un oggetto `com.adobe.idp.Document` denominato *inputXDP*. (Vedi [Rendering Di Forms Per Valore](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
 ```java
  /*
@@ -2622,7 +2622,7 @@ Il seguente programma di avvio rapido Java™ esegue il rendering di un modulo P
  }
 ```
 
-## Quick Start (modalità SOAP): trasferimento di documenti al servizio Forms tramite l’API Java™ {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
+## Guida rapida (modalità SOAP): passare documenti al servizio Forms utilizzando l’API Java™ {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
 
 La seguente Guida introduttiva Java™ recupera il file Loan.xdp da Content Services (obsoleto). Il file XDP si trova nello spazio `/Company Home/Form Designs`. Il file XDP viene restituito in un&#39;istanza `com.adobe.idp.Document`. L&#39;istanza `com.adobe.idp.Document` è passata al servizio Forms. Il modulo interattivo viene scritto in un browser Web client. (Vedi [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md).)
 

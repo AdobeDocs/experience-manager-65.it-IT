@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Questa configurazione è adatta per *ambienti non di produzione* come ad esempio
    * La cartella MongoDB installata è denominata &lt;mongo-install>.
    * Il percorso della directory dati definito è denominato &lt;mongo-dbpath>.
 
-* MongoDB può essere eseguito sullo stesso host dell’AEM o in remoto.
+* MongoDB può essere eseguito sullo stesso host di AEM o in remoto.
 
 ### Avvia MongoDB {#start-mongodb}
 
@@ -70,7 +70,7 @@ Verrà avviato un server MongoDB utilizzando la porta predefinita 27017.
 
 >[!NOTE]
 >
->Se MongoDB viene avviato *dopo* AEM, **riavviare** tutte le **istanze AEM** in modo che si connettano correttamente a MongoDB.
+>Se MongoDB viene avviato *dopo* AEM, **riavvia** tutte le **istanze di AEM** in modo che si connettano correttamente a MongoDB.
 
 ### Opzione produzione demo: Imposta replica MongoDB impostata {#demo-production-option-setup-mongodb-replica-set}
 
@@ -140,9 +140,9 @@ Per eseguire un&#39;installazione di base (non di produzione) di solrCloud, avvi
 
 ## Identificare MongoDB come Common Store {#identify-mongodb-as-common-store}
 
-Avvia l’authoring e pubblica le istanze AEM, se necessario.
+Avvia l’authoring e pubblica le istanze di AEM, se necessario.
 
-Se l’AEM era in esecuzione prima dell’avvio di MongoDB, è necessario riavviare le istanze dell’AEM.
+Se AEM era in esecuzione prima dell’avvio di MongoDB, è necessario riavviare le istanze di AEM.
 
 Segui le istruzioni riportate nella pagina della documentazione principale: [MSRP - MongoDB Common Store](msrp.md)
 
@@ -152,7 +152,7 @@ Per testare e verificare il Common Store MongoDB, pubblica un commento sull’is
 
 1. Nell&#39;istanza di pubblicazione passare alla pagina [Guida ai componenti della community](http://localhost:4503/content/community-components/en/comments.html) e selezionare il componente Commenti.
 1. Effettua l&#39;accesso per pubblicare un commento:
-1. Immettere il testo nella casella di immissione testo commento e fare clic su **[!UICONTROL Post]**
+1. Immetti il testo nella casella di immissione del testo del commento e fai clic su **[!UICONTROL Post]**
 
    ![post-commento](assets/post-comment.png)
 
@@ -175,7 +175,7 @@ Per testare e verificare il Common Store MongoDB, pubblica un commento sull’is
 
    ![ugc-solr](assets/ugc-solr.png)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### Nessun UGC visualizzato {#no-ugc-appears}
 
@@ -183,9 +183,9 @@ Per testare e verificare il Common Store MongoDB, pubblica un commento sull’is
 
 1. Verificare che MSRP sia stato configurato come provider predefinito:
 
-   * Su tutte le istanze AEM di authoring e pubblicazione, visitare nuovamente la [console Configurazione archiviazione](srp-config.md) oppure controllare l&#39;archivio AEM:
+   * In tutte le istanze di authoring e pubblicazione di AEM, visita nuovamente la [console di configurazione dell&#39;archiviazione](srp-config.md) oppure controlla l&#39;archivio AEM:
 
    * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa che il provider di archiviazione è JSRP.
    * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà di default configuration devono definire MSRP come provider predefinito.
 
-1. Assicurati che l’AEM sia stato riavviato dopo la selezione di MSRP.
+1. Assicurati che AEM sia stato riavviato dopo la selezione di MSRP.

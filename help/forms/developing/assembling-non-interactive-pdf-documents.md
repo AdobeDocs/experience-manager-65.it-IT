@@ -1,5 +1,5 @@
 ---
-title: Assemblaggio di documenti di PDF non interattivi
+title: Assemblaggio di documenti PDF non interattivi
 description: Utilizza un modulo PDF non interattivo come input per assemblare un documento PDF non interattivo utilizzando l’API Java e l’API del servizio web.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 0%
+source-wordcount: '1819'
+ht-degree: 1%
 
 ---
 
-# Assemblaggio di documenti di PDF non interattivi {#assembling-non-interactive-pdf-documents}
+# Assemblaggio di documenti PDF non interattivi {#assembling-non-interactive-pdf-documents}
 
-È possibile assemblare un documento PDF non interattivo quando si utilizza come input un modulo PDF interattivo. Si supponga di disporre di un modulo che gli utenti possono utilizzare per immettere dati nei relativi campi. È possibile passare tale modulo al servizio Assembler, in modo che quest&#39;ultimo restituisca un documento PDF che impedisce agli utenti di immettere dati nei propri campi. Questo documento è un modulo di PDF non interattivo. Nell&#39;illustrazione seguente, ad esempio, viene illustrata un&#39;applicazione ipotecaria che rappresenta un modulo interattivo.
+È possibile assemblare un documento PDF non interattivo quando si utilizza come input un modulo PDF interattivo. Si supponga di disporre di un modulo che gli utenti possono utilizzare per immettere dati nei relativi campi. È possibile passare tale modulo al servizio Assembler, in modo che quest&#39;ultimo restituisca un documento di PDF che impedisce agli utenti di immettere dati nei propri campi. Questo documento è un modulo PDF non interattivo. Nell&#39;illustrazione seguente, ad esempio, viene illustrata un&#39;applicazione ipotecaria che rappresenta un modulo interattivo.
 
 Ai fini della presente discussione, si supponga che venga utilizzato il seguente documento DDX.
 
@@ -33,17 +33,17 @@ Ai fini della presente discussione, si supponga che venga utilizzato il seguente
  </DDX>
 ```
 
-All&#39;interno di questo documento DDX, si noti che all&#39;attributo di origine viene assegnato il valore `inDoc`. Nelle situazioni in cui viene passato al servizio Assembler un solo documento di input PDF e viene restituito un documento di input PDF e viene richiamata l&#39;operazione `invokeOneDocument`, assegnare il valore `inDoc` all&#39;attributo di origine PDF. Quando si richiama l&#39;operazione `invokeOneDocument`, il valore `inDoc` è una chiave predefinita che deve essere specificata nel documento DDX.
+All&#39;interno di questo documento DDX, si noti che all&#39;attributo di origine viene assegnato il valore `inDoc`. Nelle situazioni in cui viene passato un solo documento PDF di input al servizio Assembler e viene restituito un documento PDF e si richiama l&#39;operazione `invokeOneDocument`, assegnare il valore `inDoc` all&#39;attributo di origine di PDF. Quando si richiama l&#39;operazione `invokeOneDocument`, il valore `inDoc` è una chiave predefinita che deve essere specificata nel documento DDX.
 
-Al contrario, quando si trasmettono due o più documenti di input PDF al servizio Assembler, è possibile richiamare l&#39;operazione `invokeDDX`. In questa situazione, assegnare il nome file del documento PDF di input all&#39;attributo `source`.
+Al contrario, quando si trasmettono due o più documenti PDF di input al servizio Assembler, è possibile richiamare l&#39;operazione `invokeDDX`. In questa situazione, assegnare il nome file del documento PDF di input all&#39;attributo `source`.
 
 Questo documento DDX contiene l&#39;elemento `NoXFA`, che indica al servizio Assembler di restituire un documento PDF non interattivo.
 
-Il servizio Assembler può assemblare documenti PDF non interattivi senza che il servizio di output faccia parte dell’installazione dei moduli AEM se il documento PDF di input è basato su un modulo Acrobat o su un modulo XFA statico. Tuttavia, se il documento di input PDF è un modulo XFA dinamico, il servizio di output deve far parte dell’installazione dei moduli AEM. Se il servizio di output non fa parte dell’installazione dei moduli AEM quando viene assemblato un modulo XFA dinamico, viene generata un’eccezione. Vedere [Creazione di flussi di output del documento](/help/forms/developing/creating-document-output-streams.md).
+Il servizio Assembler può assemblare documenti PDF non interattivi senza che il servizio di output faccia parte dell’installazione di AEM Forms se il documento PDF di input è basato su un modulo Acrobat o su un modulo XFA statico. Tuttavia, se il documento PDF di input è un modulo XFA dinamico, il servizio di output deve far parte dell’installazione di AEM Forms. Se il servizio di output non fa parte dell’installazione di AEM Forms quando viene assemblato un modulo XFA dinamico, viene generata un’eccezione. Vedere [Creazione di flussi di output del documento](/help/forms/developing/creating-document-output-streams.md).
 
 >[!NOTE]
 >
->Prima di leggere questa sezione, è consigliabile avere familiarità con l&#39;assemblaggio di documenti PDF utilizzando il servizio Assembler. In questa sezione non vengono descritti concetti quali la creazione di un oggetto raccolta contenente documenti di input o l&#39;apprendimento dell&#39;estrazione dei risultati dall&#39;oggetto raccolta restituito. (Vedi [Assemblaggio a livello di programmazione di documenti di PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Prima di leggere questa sezione, è consigliabile avere familiarità con l&#39;assemblaggio di documenti PDF utilizzando il servizio Assembler. In questa sezione non vengono descritti concetti quali la creazione di un oggetto raccolta contenente documenti di input o l&#39;apprendimento dell&#39;estrazione dei risultati dall&#39;oggetto raccolta restituito. (Vedere [Assemblaggio di documenti di PDF a livello di programmazione](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
@@ -55,15 +55,15 @@ Il servizio Assembler può assemblare documenti PDF non interattivi senza che il
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
-Per assemblare un documento PDF non interattivo, effettuare le seguenti operazioni:
+Per assemblare un documento PDF non interattivo, eseguire le operazioni seguenti:
 
 1. Includi file di progetto.
-1. Creare un client PDF Assembler.
+1. Creare un client Assembler di PDF.
 1. Fare riferimento a un documento DDX esistente.
-1. Fai riferimento a un documento di PDF interattivo.
+1. Fai riferimento a un documento interattivo di PDF.
 1. Impostare le opzioni di runtime.
 1. Assemblare il documento PDF.
-1. Salva il documento PDF non interattivo.
+1. Salvare il documento non interattivo di PDF.
 
 **Includi file di progetto**
 
@@ -89,7 +89,7 @@ Per assemblare un documento PDF è necessario fare riferimento a un documento DD
 
 **Riferimento a un documento interattivo di PDF**
 
-È necessario fare riferimento a un documento di PDF interattivo e passarlo al servizio Assembler per recuperare un documento di PDF non interattivo.
+È necessario fare riferimento a un documento PDF interattivo e passarlo al servizio Assembler per recuperare un documento PDF non interattivo.
 
 **Impostare le opzioni di runtime**
 
@@ -97,7 +97,7 @@ Per assemblare un documento PDF è necessario fare riferimento a un documento DD
 
 **Assemblare il documento PDF**
 
-Dopo aver creato il client del servizio Assembler, aver fatto riferimento al documento DDX, aver fatto riferimento a un documento interattivo di PDF e aver impostato le opzioni di runtime, è possibile richiamare l&#39;operazione `invokeOneDocument`. Poiché al servizio Assembler viene passato un solo documento di input PDF e viene restituito un singolo documento, è possibile utilizzare l&#39;operazione `invokeOneDocument` anziché l&#39;operazione `invokeDDX`.
+Dopo aver creato il client del servizio Assembler, aver fatto riferimento al documento DDX, aver fatto riferimento a un documento PDF interattivo e aver impostato le opzioni di runtime, è possibile richiamare l&#39;operazione `invokeOneDocument`. Poiché al servizio Assembler viene passato un solo documento PDF di input e viene restituito un singolo documento, è possibile utilizzare l&#39;operazione `invokeOneDocument` anziché l&#39;operazione `invokeDDX`.
 
 **Salvare il documento non interattivo di PDF**
 
@@ -129,9 +129,9 @@ Assembla un documento PDF non interattivo utilizzando l’API del servizio Assem
    * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento DDX utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del file DDX.
    * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
-1. Fai riferimento a un documento di PDF interattivo.
+1. Fai riferimento a un documento interattivo di PDF.
 
-   * Creare un oggetto `java.io.FileInputStream` utilizzando il relativo costruttore e passando la posizione di un documento interattivo di PDF.
+   * Creare un oggetto `java.io.FileInputStream` utilizzando il relativo costruttore e passando il percorso di un documento PDF interattivo.
    * Creare un oggetto `com.adobe.idp.Document` e passare l&#39;oggetto `java.io.FileInputStream` che contiene il documento PDF. L&#39;oggetto `com.adobe.idp.Document` è passato al metodo `invokeOneDocument`.
 
 1. Impostare le opzioni di runtime.
@@ -144,21 +144,21 @@ Assembla un documento PDF non interattivo utilizzando l’API del servizio Assem
    Richiama il metodo `invokeOneDocument` dell&#39;oggetto `AssemblerServiceClient` e passa i seguenti valori:
 
    * Oggetto `com.adobe.idp.Document` che rappresenta il documento DDX. Verificare che il documento DDX contenga il valore `inDoc` per l&#39;elemento di origine PDF.
-   * Oggetto `com.adobe.idp.Document` contenente il documento interattivo di PDF.
+   * Oggetto `com.adobe.idp.Document` contenente il documento PDF interattivo.
    * Oggetto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` che specifica le opzioni di runtime, inclusi il tipo di carattere predefinito e il livello del registro dei processi.
 
    Il metodo `invokeOneDocument` restituisce un oggetto `com.adobe.idp.Document` che contiene un documento PDF non interattivo.
 
-1. Salva il documento PDF non interattivo.
+1. Salvare il documento non interattivo di PDF.
 
    * Creare un oggetto `java.io.File` e verificare che l&#39;estensione del nome file sia pdf.
    * Richiama il metodo `copyToFile` dell&#39;oggetto `Document` per copiare il contenuto dell&#39;oggetto `Document` nel file. Assicurarsi di utilizzare l&#39;oggetto `Document` restituito dal metodo `invokeOneDocument`.
 
-* &quot;Guida rapida (modalità SOAP): assemblaggio di un documento PDF non interattivo tramite API Java&quot;
+* &quot;Guida rapida (modalità SOAP): assemblaggio di un documento PDF non interattivo tramite l’API Java&quot;
 
 ## Assemblare un documento PDF non interattivo utilizzando l’API del servizio web {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
-Assembla un documento PDF non interattivo utilizzando l’API del servizio Assembler (servizio web):
+Assemblare un documento PDF non interattivo utilizzando l&#39;API del servizio Assembler (servizio Web):
 
 1. Includi file di progetto.
 
@@ -176,7 +176,7 @@ Assembla un documento PDF non interattivo utilizzando l’API del servizio Assem
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -189,7 +189,7 @@ Assembla un documento PDF non interattivo utilizzando l’API del servizio Assem
    * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream`. Passare la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` al contenuto della matrice di byte.
 
-1. Fai riferimento a un documento di PDF interattivo.
+1. Fai riferimento a un documento interattivo di PDF.
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare il documento PDF di input. Questo oggetto `BLOB` è passato a `invokeOneDocument` come argomento.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF di input e la modalità di apertura del file in.
@@ -207,12 +207,12 @@ Assembla un documento PDF non interattivo utilizzando l’API del servizio Assem
    Richiama il metodo `invokeOneDocument` dell&#39;oggetto `AssemblerServiceClient` e passa i seguenti valori:
 
    * Oggetto `BLOB` che rappresenta il documento DDX
-   * Oggetto `BLOB` che rappresenta il documento interattivo PDF
+   * Oggetto `BLOB` che rappresenta il documento interattivo di PDF
    * Oggetto `AssemblerOptionSpec` che specifica le opzioni di runtime
 
    Il metodo `invokeOneDocument` restituisce un oggetto `BLOB` che contiene un documento PDF non interattivo.
 
-1. Salva il documento PDF non interattivo.
+1. Salvare il documento non interattivo di PDF.
 
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF non interattivo e la modalità di apertura del file in.
    * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `BLOB` restituito dal metodo `invokeOneDocument`. Compilare la matrice di byte ottenendo il valore del campo `MTOM` dell&#39;oggetto `BLOB`.

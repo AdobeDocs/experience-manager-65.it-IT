@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 0%
+source-wordcount: '628'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Vedi anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteristi
 
 ### Configurazione MySQL {#mysql-configuration}
 
-Un&#39;installazione MySQL può essere condivisa tra le funzionalità di abilitazione e l&#39;archivio comune (DSRP) all&#39;interno dello stesso pool di connessioni utilizzando nomi di database (schema) diversi e anche connessioni diverse (server:porta).
+Un&#39;installazione MySQL può essere condivisa tra le funzionalità di abilitazione e l&#39;archivio comune (DSRP) all&#39;interno dello stesso pool di connessioni utilizzando nomi di database (schema) diversi e connessioni diverse (server:port).
 
 Per informazioni dettagliate sull&#39;installazione e la configurazione, vedere [Configurazione MySQL per DSRP](dsrp-mysql.md).
 
@@ -64,11 +64,11 @@ Per accedere alla console Configurazione archiviazione, dall’autore
    * Seleziona **[!UICONTROL Community]**
    * Seleziona **[!UICONTROL Configurazione archiviazione]**
 
-      * Ad esempio, la posizione risultante è: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+      * Ad esempio, la posizione risultante è: [http://localhost:4502/Communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
 
      >[!NOTE]
      >
-     >La configurazione di archiviazione predefinita è ora archiviata nel percorso conf(`/conf/global/settings/community/srpc/defaultconfiguration`)      invece del percorso `etc` (`/etc/socialconfig/srpc/defaultconfiguration`). Ti consigliamo di seguire i [passaggi della migrazione](#zerodt-migration-steps) per far funzionare defaultsrp come previsto.
+     >La configurazione di archiviazione predefinita è ora archiviata nel percorso conf(`/conf/global/settings/community/srpc/defaultconfiguration`) invece del percorso `etc` (`/etc/socialconfig/srpc/defaultconfiguration`). Ti consigliamo di seguire i [passaggi della migrazione](#zerodt-migration-steps) per far funzionare defaultsrp come previsto.
 
   ![dsrp-config](assets/dsrp-config.png)
 
@@ -107,10 +107,10 @@ Per accedere alla console Configurazione archiviazione, dall’autore
 
 ### Nessuna fase di migrazione dei tempi di inattività per defaultsrp {#zerodt-migration-steps}
 
-Per garantire che la pagina defaultsrp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funzioni come previsto, eseguire la procedura seguente:
+Per garantire che la pagina defaultsrp [http://localhost:4502/Communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funzioni come previsto, eseguire la procedura seguente:
 
 1. Rinomina il percorso in `/etc/socialconfig` in `/etc/socialconfig_old`, in modo che la configurazione di sistema torni a jsrp(default).
-1. Vai alla pagina predefinita [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), in cui è configurato jsrp. Fare clic sul pulsante **[!UICONTROL invia]** in modo che venga creato il nuovo nodo di configurazione predefinito in `/conf/global/settings/community/srpc`.
+1. Vai alla pagina defaultsrp [http://localhost:4502/Communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), in cui è configurato jsrp. Fare clic sul pulsante **[!UICONTROL invia]** in modo che venga creato il nuovo nodo di configurazione predefinito in `/conf/global/settings/community/srpc`.
 1. Eliminare la configurazione predefinita creata `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. Copiare la configurazione precedente `/etc/socialconfig_old/srpc/defaultconfiguration` al posto del nodo eliminato (`/conf/global/settings/community/srpc/defaultconfiguration`) nel passaggio precedente.
 1. Elimina il nodo `/etc/socialconfig_old` `etc` precedente.

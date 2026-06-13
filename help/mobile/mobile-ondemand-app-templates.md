@@ -10,7 +10,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ La selezione di questo modello di esempio durante la creazione di un’app offre
 
 Un modello di app viene utilizzato per creare un’app e funge da raccolta di modelli di pagina e componenti che rappresentano una linea di base o le basi di un’app. Il modello timbra alcune proprietà fondamentali per condurre l’app nel modo appropriato. In generale, un cliente non creerebbe troppe app in totale.
 
-I modelli di app offrono un modo semplice di utilizzare le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app nell’ambito dell’AEM.
+I modelli di app consentono di utilizzare facilmente le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app in AEM.
 
 Quando crei un’app basata sul modello di un’altra app, otterrai un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
 
@@ -85,7 +85,7 @@ L’articolo Unlimited è un modello di esempio che rappresenta un layout di art
 
 ### Aggiunta di componenti all’articolo {#adding-components-to-article}
 
-Una volta creato, un autore può modificare il contenuto di un articolo aggiungendo componenti come testo e immagini. Gli articoli sono un’estensione dei modelli di pagina dell’AEM.
+Una volta creato, un autore può modificare il contenuto di un articolo aggiungendo componenti come testo e immagini. Gli articoli sono un’estensione dei modelli di pagina di AEM.
 
 Seleziona un articolo da modificare, quindi fai clic su **Modifica** per aggiungere componenti all&#39;articolo.
 
@@ -97,15 +97,15 @@ Scegliere &#39;**+**&#39; nel pannello sinistro per aggiungere componenti all&#3
 
 ### Creazione di modelli predefiniti {#creating-out-of-the-box-templates}
 
-Non sono presenti modelli di articolo predefiniti, tuttavia è presente un modello predefinito che i modelli personalizzati devono estendere. Vedi [Esempio di modello di articolo dell&#39;app Geometrixx Unlimited](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
+Non sono presenti modelli di articolo predefiniti, tuttavia è presente un modello predefinito che i modelli personalizzati devono estendere. Consulta [Esempio di modello di articolo](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article) di Geometrixx Unlimited App.
 
-Le proprietà chiave oltre il normale modello AEM richiesto includono:
+Le proprietà chiave oltre le normali proprietà richieste del modello AEM includono:
 
 ***dps-resourceType=&quot;dps:Article&quot;***
 
 Questa proprietà assicura che la pagina AEM sia riconosciuta come pagina di articolo di destinazione di AEM Mobile.
 
-Come per i modelli AEM, puoi aggiungere tutte le proprietà predefinite o i nodi secondari al ***jcr:content*** del modello.
+In base ai modelli di AEM, puoi aggiungere qualsiasi proprietà predefinita o nodo figlio al ***jcr:content*** del modello.
 
 ### Banner e modelli di raccolta {#banner-and-collection-templates}
 
@@ -117,7 +117,7 @@ Come per i modelli AEM, puoi aggiungere tutte le proprietà predefinite o i nodi
 
 I componenti utilizzano e consentono l’accesso ai widget che vengono utilizzati per eseguire il rendering del contenuto.
 
-Un componente semplice è incluso nell’archivio del codice, la cui origine è reperibile in AEM. Successivamente può essere aperto anche a livello locale in CRXDE Lite.
+Un componente semplice è incluso nell’archivio del codice, la cui origine è disponibile in AEM. Successivamente, può essere aperto anche a livello locale in CRXDE Lite.
 
 >[!NOTE]
 >
@@ -126,9 +126,9 @@ Un componente semplice è incluso nell’archivio del codice, la cui origine è 
 
 Puoi aggiungere componenti alla pagina. Qualsiasi componente può essere utilizzato in un’app AEM Mobile, ma se applicato potrebbe non essere riprodotto correttamente.
 
-Tuttavia, i componenti personalizzati potrebbero non esportare e caricare correttamente in AEM Mobile On-demand Services senza un gestore di sincronizzazione del contenuto di esportazione personalizzato con rendering in AEM.
+Tuttavia, i componenti personalizzati potrebbero non esportare e caricare correttamente in AEM Mobile On-demand Services senza un gestore di sincronizzazione del contenuto di esportazione personalizzato riprodotto in AEM.
 
-Una volta che il componente è già stato incluso in una pagina AEM, insieme ad alcuni altri componenti del blocco predefinito, puoi aggiungerne un altro alla pagina o modificarne uno esistente.
+Una volta che il componente è già stato incluso in una pagina di AEM, insieme ad alcuni altri componenti del blocco predefinito, puoi aggiungerne un altro alla pagina o modificarne uno esistente.
 
 **Per aggiungere un altro componente alla pagina:**
 

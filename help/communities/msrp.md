@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Vedi anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteristi
    * Versione 2.6 o successiva
    * Non è necessario configurare i monghi o la condivisione
    * Si consiglia vivamente di utilizzare un [set di repliche](#mongoreplicaset)
-   * Può essere eseguito sullo stesso host dell&#39;AEM o in remoto
+   * Può essere eseguito sullo stesso host di AEM o in remoto
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -80,7 +80,7 @@ Per accedere alla console Configurazione archiviazione, dall’autore:
 
    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-     Se l&#39;esecuzione avviene in modalità [SolrCloud](solr.md#solrcloud-mode) con un controllo ZooKeeper esterno, impostare questo valore su `HOST:PORT` per il controllo ZooKeeper, ad esempio *my.server.com:2181*
+     Se l&#39;esecuzione avviene in modalità [SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper esterno, impostare questo valore su `HOST:PORT` per ZooKeeper, ad esempio *my.server.com:2181*
 
      Per un gruppo ZooKeeper, immettere valori `HOST:PORT` separati da virgole, ad esempio *host1:2181,host2:2181*
 
@@ -185,7 +185,7 @@ Il formato di base è:
 
 cURL -u *accedi* -d *dati* *reindicizza-url*
 
-*accesso* = administrator-id:password
+*accesso* = id-amministratore:password
 Ad esempio: admin:admin
 
 *dati* = &quot;batchSize=*size*&amp;path=*path&quot;*
@@ -216,13 +216,13 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 Per impostare MSRP per un ambiente di dimostrazione o sviluppo, vedere [Come configurare MongoDB per Demo](demo-mongo.md).
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### UGC non visibile in MongoDB {#ugc-not-visible-in-mongodb}
 
 Verificare che MSRP sia stato configurato come provider predefinito controllando la configurazione dell&#39;opzione di archiviazione. Per impostazione predefinita, il provider di risorse di archiviazione è JSRP.
 
-Su tutte le istanze AEM di authoring e pubblicazione, visitare nuovamente la [console Configurazione archiviazione](srp-config.md) o controllare l&#39;archivio AEM:
+In tutte le istanze di authoring e pubblicazione di AEM, visita nuovamente la [console Configurazione archiviazione](srp-config.md) o controlla l&#39;archivio AEM:
 
 * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -237,7 +237,7 @@ Su GitHub è disponibile uno strumento open source a tale scopo:
 
 * [Strumento di migrazione UGC per AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Lo strumento di migrazione può essere personalizzato per esportare contenuti generati dagli utenti (UGC, User-Generated Content) di versioni precedenti delle social community AEM per l’importazione in AEM Communities 6.1 o versione successiva.
+È possibile personalizzare lo strumento di migrazione per esportare contenuti generati dagli utenti (UGC) da versioni precedenti delle social community di AEM per l’importazione in AEM Communities 6.1 o versione successiva.
 
 ### Errore - campo non definito provider_id {#error-undefined-field-provider-id}
 
@@ -263,10 +263,10 @@ Per risolvere l&#39;errore, quando si seguono le istruzioni per [l&#39;installaz
 Se un tentativo di stabilire una connessione protetta al server MongoDB non riesce a causa di una definizione di classe mancante, è necessario aggiornare il bundle del driver MongoDB, `mongo-java-driver`, disponibile dall&#39;archivio maven pubblico.
 
 1. Scarica il driver da [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versione 2.13.2 o successiva).
-1. Copia il bundle nella cartella &quot;crx-quickstart/install&quot; per un’istanza AEM.
-1. Riavvia l’istanza AEM.
+1. Copia il bundle nella cartella &quot;crx-quickstart/install&quot; per un’istanza di AEM.
+1. Riavvia l’istanza di AEM.
 
-## Riferimenti {#resources}
+## Risorse {#resources}
 
 * [AEM con MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [Documentazione di MongoDB](https://docs.mongodb.org/)

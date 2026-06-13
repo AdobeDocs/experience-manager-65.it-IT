@@ -13,7 +13,7 @@ exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6951'
+source-wordcount: '6942'
 ht-degree: 6%
 
 ---
@@ -428,7 +428,7 @@ Inoltre, se questa soluzione di integrazione viene utilizzata con Experience Man
 * [!DNL Adobe Developer Console] - integrazione creata per i tag di Experience Platform.
 * Nodo di authoring di Experience Manager: configurazione IMS e configurazione cloud di tag Experience Platform.
 
-Come parte della configurazione, accertati di avere accesso a una società in Adobe Experience Cloud per la quale sono già abilitati i tag di Adobe Analytics e Experience Platform.
+Come parte della configurazione, accertati di avere accesso a una società in Adobe Experience Cloud che dispone di Tag di Adobe Analytics e Experience Platform già abilitati.
 
 ## Configurare Adobe Analytics per l’integrazione {#configuring-adobe-analytics-for-the-integration}
 
@@ -719,7 +719,7 @@ La configurazione di Experience Manager prevede i due passaggi principali seguen
 
    * Nell&#39;intestazione **[!UICONTROL Seleziona un ruolo per l&#39;API dei tag di Experience Platform]**, seleziona **[!UICONTROL Amministratore]**.
 
-   * Nell&#39;intestazione **[!UICONTROL Seleziona uno o più profili di prodotto per l&#39;API dei tag di Experience Platform]**, seleziona il profilo di prodotto denominato **[!UICONTROL Tag - &lt;nome_società>&lt;id ph=&#39;153&#39;/>.]**
+   * Nell&#39;intestazione **[!UICONTROL Seleziona uno o più profili di prodotto per l&#39;API dei tag di Experience Platform]**, seleziona il profilo di prodotto denominato **[!UICONTROL Tag - &lt;nome_società>]**.
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 

@@ -354,32 +354,32 @@ L’ereditarietà dei metadati da parte delle risorse si basa sullo schema appli
 
 ## Definire i metadati obbligatori {#define-mandatory-metadata}
 
-Puoi definire campi obbligatori a livello di cartella, che vengono applicati alle risorse caricate nella cartella. If you upload assets with missing metadata for the mandatory fields defined earlier, a visual indication for missing metadata appears on the assets in the card view.
+Puoi definire campi obbligatori a livello di cartella, che vengono applicati alle risorse caricate nella cartella. Se carichi risorse con metadati mancanti per i campi obbligatori definiti in precedenza, nella vista a schede viene visualizzata un’indicazione visiva di metadati mancanti.
 
 >[!NOTE]
 >
->A metadata field can be defined as mandatory based on the value of another field. In the card view, [!DNL Experience Manager] does not display the warning message about missing metadata for such mandatory metadata fields.
+>Un campo di metadati può essere definito come obbligatorio in base al valore di un altro campo. Nella vista a schede, [!DNL Experience Manager] non visualizza il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
 
 1. Nell&#39;interfaccia [!DNL Experience Manager] passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
-1. Save the default metadata form as a custom form. For example, save it as `my_default`.
+1. Salva il modulo metadati predefinito come modulo personalizzato. Ad esempio, salvarlo come `my_default`.
 
-1. Edit the custom form. Add a mandatory field. For example, add a **[!UICONTROL Category]** field and make the field mandatory.
+1. Modifica il modulo personalizzato. Aggiungi un campo obbligatorio. Ad esempio, aggiungi un campo **[!UICONTROL Categoria]** e rendi obbligatorio il campo.
 
-   ![Add mandatory field to metadata form by selecting Required in Rules tab in Metadata Schema Form Editor](assets/mandatory-field-metadata-schema-editor.png)
+   ![Aggiungere un campo obbligatorio al modulo metadati selezionando Obbligatorio nella scheda Regole dell&#39;Editor modulo schema metadati](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Figure: Mandatory field in metadata schema form editor.*
+   *Figura: campo obbligatorio nell&#39;editor modulo schema metadati.*
 
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina **[!UICONTROL Schema metadati Forms]**. Select the form and then click **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina **[!UICONTROL Schema metadati Forms]**. Seleziona il modulo e fai clic su **[!UICONTROL Applica a cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
-1. Navigate to the folder and upload some assets with missing metadata for the mandatory field you added to the custom form. A message for the missing metadata for the mandatory field is displayed on the card view of the asset.
+1. Passa alla cartella e carica alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 
-   ![Message for missing mandatory metadata on asset card view on uploading assets in folder](assets/metadata-missing-info-card-view.png)
+   ![Messaggio relativo a metadati obbligatori mancanti nella vista a schede delle risorse durante il caricamento di risorse nella cartella](assets/metadata-missing-info-card-view.png)
 
-1. (Optional) Access `https://[aem_server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. This configuration adds a property `hasValidMetadata` to `jcr:content` of assets. [!DNL Experience Manager] uses this property to filter the invalid assets in a search result. If you add an asset after a check, the asset is not flagged with `hasValidMetadata` until the next scheduled check. Hence the assets do not appear in search filters for invalid metadata untill after the next scheduled check.
+1. (Facoltativo) Accesso `https://[aem_server]:[port]/system/console/components/`. Configura e abilita il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disabilitato per impostazione predefinita. Imposta la frequenza con cui [!DNL Experience Manager] controlla la validità dei metadati sulle risorse. Questa configurazione aggiunge una proprietà `hasValidMetadata` a `jcr:content` di risorse. [!DNL Experience Manager] utilizza questa proprietà per filtrare le risorse non valide in un risultato di ricerca. Se aggiungi una risorsa dopo un controllo, la risorsa non verrà contrassegnata con `hasValidMetadata` fino al successivo controllo pianificato. Pertanto, le risorse non vengono visualizzate nei filtri di ricerca per i metadati non validi fino al successivo controllo pianificato.
 
    >[!CAUTION]
    >
-   >The metadata validation checks are resource-intensive and may impact the performance of your system. Schedule the checks accordingly. Se il server non è in grado di gestire il carico, provare a disattivare il processo.
+   >I controlli di convalida dei metadati richiedono molte risorse e possono influire sulle prestazioni del sistema. Pianificare i controlli di conseguenza. Se il server non è in grado di gestire il carico, provare a disattivare il processo.
 
 <!--
 TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.

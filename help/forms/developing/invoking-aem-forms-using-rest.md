@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 0%
+source-wordcount: '2399'
+ht-degree: 1%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-I processi creati in Workbench possono essere configurati in modo da poterli richiamare tramite richieste REST (Managational State Transfer). Le richieste REST vengono inviate dalle pagine di HTML. In altre parole, è possibile richiamare un processo Forms direttamente da una pagina web utilizzando una richiesta REST. Ad esempio, puoi aprire una nuova istanza di una pagina web. È quindi possibile richiamare un processo Forms e caricare un documento PDF di cui è stato eseguito il rendering con i dati inviati in una richiesta HTTP POST.
+I processi creati in Workbench possono essere configurati in modo da poterli richiamare tramite richieste REST (Managational State Transfer). Le richieste REST vengono inviate dalle pagine HTML. In altre parole, è possibile richiamare un processo Forms direttamente da una pagina web utilizzando una richiesta REST. Ad esempio, puoi aprire una nuova istanza di una pagina web. È quindi possibile richiamare un processo Forms e caricare un documento PDF sottoposto a rendering con i dati inviati in una richiesta HTTP POST.
 
-Esistono due tipi di client HTML. Il primo client HTML è un client AJAX scritto in JavaScript. Il secondo client è un modulo HTML che contiene un pulsante di invio. Un&#39;applicazione client basata su HTML non è l&#39;unico client REST possibile. Qualsiasi applicazione client che supporta le richieste HTTP può richiamare un servizio utilizzando una chiamata REST. È ad esempio possibile richiamare un servizio utilizzando una chiamata REST da un modulo PDF. (Vedi [Richiamo del processo MyApplication/EncryptDocument da Acrobat](#rest-invocation-examples).)
+Esistono due tipi di client HTML. Il primo client HTML è un client AJAX scritto in JavaScript. Il secondo client è un modulo di HTML contenente un pulsante di invio. Un&#39;applicazione client basata su HTML non è l&#39;unico client REST possibile. Qualsiasi applicazione client che supporta le richieste HTTP può richiamare un servizio utilizzando una chiamata REST. È ad esempio possibile richiamare un servizio utilizzando una chiamata REST da un modulo di PDF. (Vedi [Richiamo del processo MyApplication/EncryptDocument da Acrobat](#rest-invocation-examples).)
 
-Quando si utilizzano richieste REST, si consiglia di non richiamare direttamente i servizi Forms. Richiama invece i processi creati in Workbench. Quando crei un processo destinato alla chiamata REST, utilizza un punto iniziale programmatico. In questa situazione, l’endpoint REST viene aggiunto automaticamente. Per informazioni sulla creazione di processi in Workbench, vedere [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Quando si utilizzano richieste REST, si consiglia di non richiamare direttamente i servizi Forms. Richiama invece i processi creati in Workbench. Quando crei un processo destinato alla chiamata REST, utilizza un punto iniziale programmatico. In questa situazione, l’endpoint REST viene aggiunto automaticamente. Per informazioni sulla creazione di processi in Workbench, vedere [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 
-Quando si richiama un servizio utilizzando REST, viene richiesto di immettere un nome utente e una password per il modulo AEM. Tuttavia, se non si desidera specificare un nome utente e una password, è possibile disattivare la protezione del servizio.
+Quando si richiama un servizio utilizzando REST, viene richiesto un nome utente e una password di AEM Forms. Tuttavia, se non si desidera specificare un nome utente e una password, è possibile disattivare la protezione del servizio.
 
 Per richiamare un servizio Forms (un processo diventa servizio quando viene attivato) utilizzando REST, configura un endpoint REST. (Vedi &quot;Gestione degli endpoint&quot; nella [guida per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
-Dopo aver configurato un endpoint REST, è possibile richiamare un servizio Forms utilizzando un metodo HTTP GET o POST.
+Dopo aver configurato un endpoint REST, è possibile richiamare un servizio Forms utilizzando un metodo HTTP GET o un metodo POST.
 
 ```java
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
@@ -49,7 +49,7 @@ I seguenti tipi di dati sono supportati quando si richiamano i servizi AEM Forms
 
   Questi tipi di dati vengono comunemente accettati come valori di input per i processi creati in Workbench.
 
-  Se viene richiamato un servizio Forms con il metodo HTTP POST, gli argomenti vengono passati nel corpo della richiesta HTTP. Se la firma del servizio AEM Forms contiene un parametro di input di tipo stringa, il corpo della richiesta può contenere il valore di testo del parametro di input. Se la firma del servizio definisce più parametri stringa, la richiesta può seguire la notazione HTTP `application/x-www-form-urlencoded` con i nomi dei parametri utilizzati come nomi dei campi del modulo.
+  Se si richiama un servizio Forms con il metodo HTTP POST, gli argomenti vengono passati nel corpo della richiesta HTTP. Se la firma del servizio AEM Forms contiene un parametro di input di tipo stringa, il corpo della richiesta può contenere il valore di testo del parametro di input. Se la firma del servizio definisce più parametri stringa, la richiesta può seguire la notazione HTTP `application/x-www-form-urlencoded` con i nomi dei parametri utilizzati come nomi dei campi del modulo.
 
   Se un servizio Forms restituisce un parametro di stringa, il risultato è una rappresentazione testuale del parametro di output. Se un servizio restituisce più parametri stringa, il risultato è un documento XML che codifica i parametri di output nel formato seguente:
   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
@@ -145,7 +145,7 @@ L&#39;elemento `DSCError` è facoltativo e presente solo se l&#39;eccezione è u
 
 ## Sicurezza e autenticazione {#security-and-authentication}
 
-Per fornire chiamate REST con un trasporto sicuro, un amministratore dei moduli AEM può abilitare il protocollo HTTPS sul server applicazioni J2EE che ospita AEM Forms. Questa configurazione è specifica del server applicazioni J2EE e non fa parte della configurazione del server Forms.
+Per fornire chiamate REST con un trasporto sicuro, un amministratore di AEM Forms può abilitare il protocollo HTTPS sul server applicazioni J2EE che ospita AEM Forms. Questa configurazione è specifica del server applicazioni J2EE e non fa parte della configurazione del server Forms.
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ Vengono forniti i seguenti esempi di chiamata REST:
 
 **Trasmissione di valori booleani a un processo**
 
-Nell&#39;esempio di HTML seguente vengono passati due valori `Boolean` a un processo AEM Forms denominato `RestTest2`. Il nome del metodo di chiamata è `invoke` e la versione è 1.0. Si noti che viene utilizzato il metodo HTML Post.
+Nell&#39;esempio di HTML seguente vengono passati due valori `Boolean` a un processo di AEM Forms denominato `RestTest2`. Il nome del metodo di chiamata è `invoke` e la versione è 1.0. Si noti che viene utilizzato il metodo HTML Post.
 
 ```html
  <html>
@@ -205,7 +205,7 @@ Nell&#39;esempio di HTML seguente vengono passati due valori `Boolean` a un proc
 
 **Trasmissione di valori di data a un processo**
 
-Nell&#39;esempio di HTML seguente viene passato un valore di data a un processo AEM Forms denominato `SOAPEchoService`. Il nome del metodo di chiamata è `echoCalendar`. Si noti che viene utilizzato il metodo HTML `Post`.
+Nell&#39;esempio di HTML seguente viene passato un valore di data a un processo di AEM Forms denominato `SOAPEchoService`. Il nome del metodo di chiamata è `echoCalendar`. Si noti che viene utilizzato il metodo HTML `Post`.
 
 ```html
  <html>
@@ -289,14 +289,14 @@ Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denomin
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 Quando viene richiamato, il processo esegue le azioni seguenti:
 
 1. Ottiene il documento PDF non protetto passato al processo. Questa azione è basata sull&#39;operazione `SetValue`. Il parametro di input per questo processo è una variabile di processo `document` denominata `inDoc`.
-1. Crittografa il documento PDF con una password. Questa azione è basata sull&#39;operazione `PasswordEncryptPDF`. Il documento PDF crittografato con password è stato restituito in una variabile di processo denominata `outDoc`.
+1. Crittografa il documento PDF con una password. Questa azione è basata sull&#39;operazione `PasswordEncryptPDF`. Il documento PDF crittografato con password viene restituito in una variabile di processo denominata `outDoc`.
 
-   Quando questo processo viene richiamato utilizzando una richiesta REST, il documento PDF crittografato viene visualizzato nel browser web. Prima di visualizzare il documento PDF, specificare la password (a meno che la protezione non sia disattivata). Il codice HTML seguente rappresenta una richiesta di chiamata REST al processo `MyApplication/EncryptDocument`.
+   Quando questo processo viene richiamato utilizzando una richiesta REST, il documento PDF crittografato viene visualizzato nel browser web. Prima di visualizzare il documento di PDF, è necessario specificare la password (a meno che la protezione non sia disattivata). Il codice HTML seguente rappresenta una richiesta di chiamata REST al processo `MyApplication/EncryptDocument`.
 
    ```html
     <html>
@@ -319,8 +319,8 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
 
 Specifica l&#39;URL per richiamare il processo nel campo *Invia all&#39;URL* del pulsante, come illustrato nella figura seguente.
 
-L’URL completo per richiamare il processo è https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
+L&#39;URL completo da richiamare è https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
 
-Se il processo richiede un documento PDF come valore di input, assicurarsi di inviare il modulo come PDF, come illustrato nella figura precedente. Inoltre, per richiamare correttamente un processo, il processo deve restituire un documento PDF. In caso contrario, Acrobat non può gestire il valore restituito e si verifica un errore. Non è necessario specificare il nome della variabile di processo di input. Ad esempio, il processo *MyApplication/EncryptDocument* ha una variabile di input denominata `inDoc`. Non è necessario specificare inDoc, purché il modulo venga inviato come PDF.
+Se il processo richiede un documento PDF come valore di input, assicurarsi di inviare il modulo come PDF, come illustrato nella figura precedente. Inoltre, per richiamare correttamente un processo, è necessario che quest&#39;ultimo restituisca un documento PDF. In caso contrario, Acrobat non può gestire il valore restituito e si verifica un errore. Non è necessario specificare il nome della variabile di processo di input. Ad esempio, il processo *MyApplication/EncryptDocument* ha una variabile di input denominata `inDoc`. Non è necessario specificare inDoc, purché il modulo venga inviato come PDF.
 
-È inoltre possibile inviare i dati del modulo come XML a un processo di Forms. Per inviare i dati XML, verificare che l&#39;elenco a discesa `Submit As` specifichi XML. Poiché il valore restituito dalla procedura deve essere un documento PDF, il documento PDF viene visualizzato in Acrobat.
+È inoltre possibile inviare i dati del modulo come XML a un processo di Forms. Per inviare i dati XML, verificare che l&#39;elenco a discesa `Submit As` specifichi XML. Poiché il valore restituito dal processo deve essere un documento PDF, il documento PDF viene visualizzato in Acrobat.

@@ -11,8 +11,8 @@ exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '3219'
+workflow-type: tm+mt
+source-wordcount: '3301'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
 
   Queste impostazioni possono includere, ad esempio, un URL di sicurezza del documento di base, notifiche di auditing, di privacy e di registrazione per gli utenti invitati, nonché periodi di leasing offline predefiniti.
 
-* Gli amministratori della protezione dei documenti creano criteri e relativi set e gestiscono i documenti protetti tramite criteri per gli utenti come richiesto. Inoltre, creano gli account utente invitati e monitorano il sistema, i documenti, gli utenti, i criteri, i relativi set e gli eventi personalizzati. Possono anche essere responsabili della configurazione del server globale e delle impostazioni delle pagine web e dei criteri con un amministratore di sistema.
+* Gli amministratori della protezione dei documenti creano criteri e set di criteri e gestiscono i documenti protetti tramite criteri per gli utenti in base alle esigenze. Inoltre, creano gli account per utenti invitati e monitorano il sistema, i documenti, gli utenti, i criteri, i set di criteri e gli eventi personalizzati. Possono anche essere responsabili della configurazione del server globale e delle impostazioni delle pagine web e dei criteri con un amministratore di sistema.
 
   Gli amministratori possono assegnare agli utenti i seguenti ruoli nell’area Gestione utenti della console di amministrazione. Gli utenti a cui sono assegnati questi ruoli eseguono le proprie attività nell’area dell’interfaccia utente della protezione dei documenti della console di amministrazione.
 
@@ -266,7 +266,7 @@ Aggiungi gruppi di utenti ai criteri anziché singoli utenti. Semplifica la gest
    * Aumento di ruoli utente, reparti e documenti all’interno di un’organizzazione in un periodo.
    * I dipartimenti di un’organizzazione lavorano in modo isolato e mantengono un rigido controllo sui criteri specifici del dipartimento. Questa condizione assicura criteri identici all’interno di un’organizzazione.
 
-  Adobe consiglia di mantenere al minimo il numero di criteri e di relativi set. In questo modo, è più semplice gestire i criteri e i relativi set, nonché garantire prestazioni migliori. Per ridurre il numero al minimo:
+  Adobe consiglia di mantenere al minimo il numero di criteri e set di criteri. In questo modo, è più semplice gestire i criteri e set di criteri, nonché garantire prestazioni migliori. Per ridurre il numero al minimo:
 
    * Crea criteri riutilizzabili. Questi criteri possono essere condivisi tra più reparti.
    * Se alcuni criteri vengono applicati a più reparti, prendi in considerazione la creazione di set di criteri a livello di organizzazione, anziché di un singolo set di criteri per ogni reparto.

@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 0%
+source-wordcount: '3826'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ Un dizionario dati è una rappresentazione indipendente dei metadati che descriv
 
 Il dizionario dati è costituito da elementi di tre tipi: elementi semplici, compositi e di raccolta. I DDE semplici sono elementi primitivi quali stringhe, numeri, date e valori booleani che contengono informazioni quali il nome di una città. Un DDE composito contiene altri DDE, che possono essere di tipo primitivo, composito o raccolta. Ad esempio, un indirizzo, costituito da un indirizzo stradale, città, provincia, paese e codice postale. Una raccolta è un elenco di DDE semplici o compositi simili. Ad esempio, un cliente con più ubicazioni o diversi indirizzi di fatturazione e spedizione.
 
-Gestione della corrispondenza utilizza i dati back-end, specifici del cliente o del destinatario memorizzati in base alla struttura del dizionario dati per creare corrispondenza destinata a clienti diversi. Ad esempio, è possibile creare un documento con nomi descrittivi, ad esempio &quot;Gentile {First Name}&quot;,&quot;Sig. {Last Name}&quot;.
+Gestione della corrispondenza utilizza i dati back-end, specifici del cliente o del destinatario memorizzati in base alla struttura del dizionario dati per creare corrispondenza destinata a clienti diversi. Ad esempio, è possibile creare un documento con nomi descrittivi, ad esempio &quot;Gentile {First Name}&quot;, &quot;Sig. {Last Name}&quot;.
 
 In genere, gli utenti aziendali non devono conoscere le rappresentazioni di metadati come XSD (XML Schema) e le classi Java. Tuttavia, in genere richiedono l’accesso a tali strutture di dati e attributi per creare soluzioni.
 
@@ -362,7 +362,7 @@ L’esportazione di un XSD richiede una mappatura dei dati specifica, descritta 
   </tr>
   <tr>
    <td><p>xs:element in cui maxOccurs &gt; 1<br /> </p> </td>
-   <td>DDE di tipo - COLLECTION-<br /> Viene creato un nodo DDE accanto al DDE COLLECTION che acquisisce informazioni dal nodo COLLECTION padre. Lo stesso viene creato per entrambe le raccolte di tipi di dati semplici/compositi. Ogni volta che si dispone di una COLLECTION del tipo composito, la struttura del dizionario dati acquisisce i campi costitutivi negli elementi figlio del DDE creato per acquisire informazioni sul tipo.<br /> - DDE (RACCOLTA)<br /> - DDE(COMPOSITO per informazioni sul tipo)<br /> - Campo DDE(STRING)1<br /> - Campo DDE(STRING)2<br /> <br /> </p> </td>
+   <td>DDE di tipo - COLLECTION-<br /> Viene creato un nodo DDE accanto al DDE COLLECTION che acquisisce informazioni dal nodo COLLECTION padre. Lo stesso viene creato per entrambe le raccolte di tipi di dati semplici/compositi. Ogni volta che si dispone di una RACCOLTA del tipo composito, la struttura del dizionario dati acquisisce i campi costitutivi negli elementi figlio del DDE creato per acquisire le informazioni sul tipo.<br /> - DDE (RACCOLTA)<br /> - DDE(COMPOSITO per informazioni sul tipo)<br /> - Campo DDE(STRING)1<br /> - Campo DDE(STRING)2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>
@@ -560,7 +560,7 @@ Nell&#39;esempio seguente viene illustrato lo schema di una nota.
    <td>empty(null)<br /> </td>
   </tr>
   <tr>
-   <td>in</td>
+   <td>a</td>
    <td>/note/to</td>
   </tr>
   <tr>
@@ -647,7 +647,7 @@ Il Token.xsd associato a questo esempio è:
 
 | **Elemento dizionario dati** | **Associazione XML predefinita** |
 |---|---|
-| Principale | empty(null) |
+| Directory principale | empty(null) |
 | Token | /Root/Tokens |
 | Composito | empty(null) |
 | TokenID | TokenID |
