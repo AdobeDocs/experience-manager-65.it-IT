@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2617'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 {{ue-over-mobile}}
 
-Il processo di sviluppo delle applicazioni mobili dell&#39;AEM riconosce che gli utenti di diverse competenze contribuiscono allo sviluppo delle applicazioni mobili. La mappa di processo riportata di seguito illustra l&#39;ordine generale in cui gli autori di contenuti e gli sviluppatori di applicazioni eseguono le attività.
+Il processo di sviluppo delle applicazioni mobili AEM riconosce che gli utenti con competenze diverse contribuiscono allo sviluppo delle applicazioni mobili. La mappa di processo riportata di seguito illustra l&#39;ordine generale in cui gli autori di contenuti e gli sviluppatori di applicazioni eseguono le attività.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -36,7 +36,7 @@ AEM Mobile fornisce il blueprint dell’app PhoneGap per la creazione di applica
 
 ### Directory principale di un&#39;app PhoneGap {#the-root-of-a-phonegap-app}
 
-La pagina principale delle app mobili create in AEM viene visualizzata nella console App.
+La pagina root delle app mobili create in AEM viene visualizzata nella console App.
 
 La pagina root viene memorizzata sotto la proprietà Percorso di destinazione dell’applicazione specificata al momento della creazione dell’applicazione (il percorso predefinito è /content/phonegap/apps). Il nome della pagina è la proprietà Name dell&#39;applicazione. Ad esempio, l&#39;URL predefinito della pagina principale del sito denominato `myphonegapapp` è `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
@@ -72,16 +72,16 @@ Le applicazioni mobili si basano su una blueprint che definisce la struttura e l
 * **Descrizione:** una descrizione dell&#39;applicazione.
 * **URL server:** URL che fornisce aggiornamenti di contenuto OTA (Over-the-Air) per l&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (derivata dal servizio esternalizzatore). Nota: questa deve essere un’istanza del server di pubblicazione anziché un’istanza Autore, che richiede l’autenticazione.
 
-Puoi anche fornire un file di immagine da utilizzare come miniatura dell’applicazione, selezionare la configurazione di PhoneGap Build da utilizzare e selezionare la configurazione di analisi dell’app mobile da utilizzare. Ad Experience Manager, questa immagine viene utilizzata solo come miniatura per rappresentare l’app mobile nella console delle app mobili.
+Puoi anche fornire un file di immagine da utilizzare come miniatura dell’applicazione, selezionare la configurazione PhoneGap Build da utilizzare e selezionare la configurazione di analisi dell’app mobile da utilizzare. Questa immagine viene utilizzata solo come miniatura per rappresentare l’app mobile nella console delle app mobili in Experience Manager.
 
-Sono disponibili schede aggiuntive (e facoltative) per build Cloud Service e per l’integrazione del plug-in SDK di Adobe Mobile Services nell’app.
+Sono disponibili schede aggiuntive (e facoltative) per build cloud service e per l’integrazione del plug-in SDK di Adobe Mobile Services nell’app.
 
 * Genera: fai clic su Gestisci configurazioni e configura il servizio di build build.phonegap.com qui. Quindi, dall’elenco a discesa, potrai selezionare il servizio cloud PhoneGap Build appena creato.
 * Analytics: fai clic su Gestisci configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=it). Quindi, dal menu a discesa, puoi selezionare il servizio mobile appena creato da integrare nell’app mobile.
 
 >[!NOTE]
 >
->Gli sviluppatori possono utilizzare PhoneGap Starter Kit per AEM per creare app e aggiungerle alla console.
+>Gli sviluppatori possono utilizzare AEM PhoneGap Starter Kit per creare app e aggiungerle alla console.
 
 La procedura seguente utilizza l’interfaccia utente touch per creare un’app mobile.
 
@@ -91,11 +91,11 @@ La procedura seguente utilizza l’interfaccia utente touch per creare un’app 
    ![L&#39;icona Crea è indicata da un segno più all&#39;interno di un quadrato.](do-not-localize/chlimage_1-7.png)
 
 1. (Facoltativo) Nella scheda Avanzate, fornisci una descrizione dell’applicazione e, se necessario, modifica l’URL del server.
-1. (Facoltativo) Se si utilizza la PhoneGap Build per compilare l&#39;applicazione, nella scheda Genera selezionare la configurazione da utilizzare.
+1. (Facoltativo) Se utilizzi PhoneGap Build per compilare l&#39;applicazione, nella scheda Build seleziona la configurazione da utilizzare.
 
    Per creare una configurazione di PhoneGap Build, fai clic su Gestisci configurazioni.
 
-1. (Facoltativo) Se utilizzi il SiteCatalyst per tenere traccia dell’attività dell’applicazione, nella scheda Analytics seleziona la configurazione da utilizzare.
+1. (Facoltativo) Se utilizzi SiteCatalyst per monitorare l’attività dell’applicazione, nella scheda Analytics seleziona la configurazione da utilizzare.
 
    Per creare una configurazione di app mobile, fai clic su Gestione configurazioni.
 
@@ -124,7 +124,7 @@ Dopo aver creato un’app mobile, puoi modificarne le proprietà.
 #### Configurare una variante di lingua dell’applicazione {#configure-a-language-variation-of-the-application}
 
 1. Nella barra, fai clic su App.
-1. Fai clic su per approfondire l’app mobile da modificare nell’Admin Console delle app. Selezionare la versione della lingua dell&#39;applicazione da configurare e fare clic sull&#39;icona Visualizza proprietà applicazione.
+1. Fai clic su per approfondire l’app mobile da modificare all’interno delle app Admin Console. Selezionare la versione della lingua dell&#39;applicazione da configurare e fare clic sull&#39;icona Visualizza proprietà applicazione.
 
    ![Icona Visualizza proprietà applicazione indicata dalla lettera I all&#39;interno di un cerchio.](do-not-localize/chlimage_1-11.png)
 
@@ -146,7 +146,7 @@ Dopo aver creato l’app mobile, aggiungi il contenuto utilizzato come interfacc
 
 ### Spostamento dei contenuti nelle applicazioni mobili {#moving-content-to-mobile-applications}
 
-La cache di sincronizzazione dei contenuti nell’istanza di pubblicazione dell’AEM viene utilizzata come archivio dei contenuti per le app mobili:
+La cache di sincronizzazione contenuti nell’istanza di pubblicazione di AEM viene utilizzata come archivio di contenuti per le app mobili:
 
 * Il contenuto nella cache di sincronizzazione dei contenuti viene incluso nell’applicazione quando gli sviluppatori la compilano.
 * Il contenuto nella cache è disponibile per le applicazioni mobili installate per l’aggiornamento del contenuto dell’applicazione.
@@ -168,7 +168,7 @@ Eseguire la procedura seguente sull&#39;istanza in cui si desidera aggiornare la
 
 ### Utilizzo dei modelli di app {#using-app-templates}
 
-Questa funzione è disponibile con Apps 6.1 Feature Pack 2 e consente di utilizzare facilmente i modelli di app esistenti per creare nuove app per l’AEM.
+Questa funzione è disponibile con App 6.1 Feature Pack 2 e consente di utilizzare facilmente i modelli di app esistenti per creare nuove app in AEM.
 
 Che cos’è un modello di app? Consideralo come una raccolta di modelli di pagina e componenti che rappresentano una linea di base o le basi di un’app.
 Quando crei un’app basata sul modello di un’altra app, otterrai un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
@@ -179,7 +179,7 @@ L’ultimo pacchetto di esempi delle app AEM 6.1 include una versione aggiornata
 
 Passaggi per creare un’app basata su un modello di app:
 
-1. Assicurati di aver installato il pacchetto di funzioni e i pacchetti di esempi di riferimento per le app AEM 6.1 più recenti
+1. Verifica che siano installati il feature pack più recente di AEM Apps 6.1 e i pacchetti di esempi di riferimento
 1. Fai clic su App nella barra a sinistra.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
@@ -206,9 +206,9 @@ Passaggi per creare un’app basata su un modello di app:
 
 >[!NOTE]
 >
->Se disinstalli il pacchetto dell’app di riferimento Geometrixx Outdoors dall’AEM e disponi di un’app creata in base al relativo modello, l’app non funzionerà più. L’app Geometrixx Outdoors può essere rimossa, ma il modello di app deve rimanere se viene utilizzato da altre applicazioni mobili.
+>Se disinstalli il pacchetto dell’app di riferimento Geometrixx Outdoors da AEM e disponi di un’app creata in base al relativo modello, l’app non funzionerà più. L’app Geometrixx Outdoors può essere rimossa, ma il modello di app deve rimanere se viene utilizzato da altre applicazioni mobili.
 
-## Esplorazione dell’app dei Geometrixx Outdoors di esempio {#exploring-the-sample-geometrixx-outdoors-app}
+## Esplorazione dell’app Geometrixx Outdoors di esempio {#exploring-the-sample-geometrixx-outdoors-app}
 
 L’app Geometrixx Outdoors è un esempio di applicazione PhoneGap che illustra le funzioni della blueprint predefinita dell’applicazione PhoneGap e dei componenti mobili di esempio.
 
@@ -228,14 +228,14 @@ Ogni pagina dell’app mobile include le seguenti funzioni:
 
 * Il sistema paragrafo, per aggiungere componenti e creare contenuti.
 
-### Home Page - App mobile Geometrixx {#the-home-page-geometrixx-mobile-app}
+### Pagina Home - App mobile Geometrixx {#the-home-page-geometrixx-mobile-app}
 
 Il contenuto della home page è costituito dai seguenti strumenti di navigazione:
 
 * Un componente Elenco menu che fornisce collegamenti alle pagine figlie Ingranaggio, Recensioni, Notizie e Informazioni su di noi.
 * Componente Carosello scorrevole che mostra le pagine figlie.
 
-### Pagina Ingranaggio - App Geometrixx Mobile {#the-gear-page-geometrixx-mobile-app}
+### Pagina Gear - App mobile Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
 La pagina Ingranaggio consente agli utenti di accedere alle pagine dei prodotti. Un componente Elenco menu consente di accedere alle pagine figlie della pagina Ingranaggio. Le pagine figlie sono categorie di prodotti disponibili nel sito Web.
 
@@ -246,13 +246,13 @@ La pagina Ingranaggio consente agli utenti di accedere alle pagine dei prodotti.
 
 Ogni pagina categoria utilizza la stessa struttura di contenuto della pagina Ingranaggio. Il carosello consente di accedere a pagine figlie che sono sottocategorie di prodotti. Le pagine delle sottocategorie contengono elenchi di prodotti che forniscono collegamenti alle pagine dei prodotti.
 
-### Pagina Prodotti - App Geometrixx Mobile {#the-products-page-geometrixx-mobile-app}
+### Pagina Prodotti - App mobile Geometrixx {#the-products-page-geometrixx-mobile-app}
 
 La pagina Prodotti e la relativa gerarchia di pagine figlie implementano un sistema di classificazione per le pagine di prodotti. Le pagine più basse in ciascun ramo della gerarchia sono pagine di prodotti che contengono un componente Prodotto ng.
 
 La pagina Prodotti non è disponibile per gli utenti dell’applicazione. La pagina Ingranaggio consente di accedere a ogni pagina di prodotto.
 
-### Pagina Recensioni - App Geometrixx Mobile {#the-reviews-page-geometrixx-mobile-app}
+### Pagina Recensioni - App mobile Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contiene un pulsante Indietro. Il sistema paragrafo consente di aggiungere componenti.
 
@@ -278,7 +278,7 @@ Quando si utilizza l&#39;applicazione, la pagina Percorsi è disponibile dall&#3
 
 ## Componenti mobili di esempio {#sample-mobile-components}
 
-Diversi componenti sono immediatamente disponibili in Sidekick durante l’authoring delle pagine di un’app mobile. I componenti appartengono al gruppo di componenti PhoneGap.
+Diversi componenti sono immediatamente disponibili in Sidekick per l’authoring delle pagine di un’app mobile. I componenti appartengono al gruppo di componenti PhoneGap.
 
 ### Carosello scorrevole {#swipe-carousel}
 
@@ -301,7 +301,7 @@ Configura il comportamento del carosello:
 Specifica come viene generato l’elenco di pagine:
 
 * Build List Using: metodo da utilizzare per specificare le pagine da includere nel carosello. Consulta Creazione dell’elenco pagine.
-* Ordina per: selezionare una proprietà di pagina da utilizzare per l&#39;ordinamento dell&#39;elenco delle pagine. Ad esempio, selezionare jcr:title per ordinare alfabeticamente le pagine in base al titolo.
+* Ordina per: selezionare una proprietà di pagina da utilizzare per l&#39;ordinamento dell&#39;elenco delle pagine. Selezionare ad esempio jcr:title per ordinare alfabeticamente le pagine in base al titolo.
 * Limite: il numero massimo di pagine da includere. Questa proprietà è appropriata per i metodi di ricerca per la creazione dell&#39;elenco delle pagine.
 
 #### Creazione dell’elenco pagine {#building-the-page-list}

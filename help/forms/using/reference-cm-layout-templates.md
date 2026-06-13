@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 0%
+source-wordcount: '476'
+ht-degree: 2%
 
 ---
 
@@ -98,4 +98,4 @@ Il modello Visual Top - Classic ha un’intestazione nella parte superiore della
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-Anteprima PDF di una lettera creata utilizzando il modello Visual Top - Classic
+Anteprima PDF di una lettera creata con il modello Visual Top - Classic

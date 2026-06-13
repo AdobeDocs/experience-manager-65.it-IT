@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ Le raccolte rappresentano un *bucket* ben definito e pieno di contenuti quali ar
 >
 >Consulta le seguenti risorse nella Guida in linea per scoprire i seguenti argomenti nelle app AEM Mobile:
 >
->* [Considerazioni sulla progettazione](https://helpx.adobe.com/it/digital-publishing-solution/help/design-app.html)
+>* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Gestione delle raccolte](https://helpx.adobe.com/it/digital-publishing-solution/help/creating-collections.html)
+>* [Gestione delle raccolte](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Creazione di una raccolta {#creating-a-collection}
@@ -50,7 +50,7 @@ Il flusso di lavoro generale per creare una raccolta è il seguente:
 
 ## Importazione di una nuova raccolta {#importing-a-new-collection}
 
-Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand a AEM. Ciò consente di modificare e visualizzare contenuti locali.
+Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand ad AEM. Ciò consente di modificare e visualizzare contenuti locali.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Flusso di lavoro per importare una nuova raccolta
 
 ## Modifica di una raccolta {#editing-a-collection}
 
-Utilizza l’editor integrato di trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da DAM Assets.
+Utilizza l’editor Trascina e rilascia integrato in AEM per aggiungere o modificare un articolo. È possibile aggiungere/rimuovere componenti quali testo e immagini. È possibile inserire immagini da DAM Assets.
 
 Flusso di lavoro per modificare una raccolta:
 

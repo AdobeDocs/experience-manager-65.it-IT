@@ -1,5 +1,5 @@
 ---
-title: Riepilogo delle nuove funzioni | AEM 6.5 Forms
+title: Riepilogo delle nuove funzionalità | AEM 6.5 Forms
 description: Funzioni e miglioramenti più recenti ai moduli e ai documenti di AEM, la soluzione di gestione delle esperienze digitali più avanzata al mondo.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ---
 
-# Riepilogo delle nuove funzioni | AEM 6.5 Forms{#new-features-summary-aem-forms}
+# Riepilogo delle nuove funzionalità | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 | Prodotto | Adobe Experience Manager 6.5 |
 | -------- | ---------------------------- |

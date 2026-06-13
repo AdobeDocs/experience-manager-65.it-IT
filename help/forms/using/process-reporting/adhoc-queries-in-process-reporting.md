@@ -1,5 +1,5 @@
 ---
-title: Query ad hoc in Report di processo
+title: Query ad hoc in Rapporti sui processi
 description: Creazione di query personalizzate per la ricerca di AEM Forms nei dettagli dei processi e delle attività di JEE in Process Reporting
 content-type: reference
 topic-tags: process-reporting
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
 
-# Query ad hoc in Report di processo{#ad-hoc-queries-in-process-reporting}
+# Query ad hoc in Rapporti sui processi{#ad-hoc-queries-in-process-reporting}
 
 ## Query ad hoc in Process Reporting {#ad-hoc-queries-in-process-reporting-1}
 

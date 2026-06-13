@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Questo articolo illustra strategie e best practice da implementare per ridurre i
 
 ## Impostazioni cache {#cache-settings}
 
-Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando il componente **Configurazioni Forms mobile** nella console di configurazione Web AEM all&#39;indirizzo:
+Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando il componente **Configurazioni Forms per dispositivi mobili** nella console di configurazione web di AEM all&#39;indirizzo:
 
 * (AEM Forms su OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms su JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -43,7 +43,7 @@ Le impostazioni predefinite della cache per AEM Forms potrebbero non essere suff
 
 >[!NOTE]
 >
->Se utilizzi AEM Dispatcher per memorizzare in cache i moduli adattivi, questo memorizza in cache anche i moduli contenenti dati precompilati. Se tali moduli vengono forniti dalla cache Dispatcher dell’AEM, ciò può portare a fornire agli utenti dati precompilati o non aggiornati. Pertanto, utilizza AEM Dispatcher per memorizzare nella cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, una cache di Dispatcher non annulla automaticamente la validità dei frammenti memorizzati in cache. Pertanto, non utilizzarlo per memorizzare in cache i frammenti di modulo. Per questi moduli e frammenti, utilizza [Cache moduli adattivi](../../forms/using/configure-adaptive-forms-cache.md).
+>Se utilizzi AEM Dispatcher per memorizzare in cache i moduli adattivi, questo memorizza in cache anche i moduli contenenti dati precompilati. Se tali moduli vengono forniti dalla cache di AEM Dispatcher, ciò può comportare la trasmissione agli utenti di dati precompilati o non aggiornati. Pertanto, utilizza AEM Dispatcher per memorizzare nella cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, una cache di Dispatcher non annulla automaticamente la validità dei frammenti memorizzati in cache. Pertanto, non utilizzarlo per memorizzare in cache i frammenti di modulo. Per questi moduli e frammenti, utilizza [Cache moduli adattivi](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## Parametri JVM {#jvm-parameters}
 
@@ -62,7 +62,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 ## Utilizzo di un server web {#using-a-web-server}
 
-I moduli adattivi e i moduli HTML5 vengono riprodotti in formato HTML5. L’output risultante potrebbe essere grande a seconda di fattori quali le dimensioni del modulo e le immagini nel modulo. Per ottimizzare il trasferimento di dati, l’approccio consigliato consiste nel comprimere la risposta del HTML utilizzando il server web da cui viene trasmessa la richiesta. Questo approccio riduce le dimensioni della risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra server e client.
+I moduli adattivi e i moduli HTML5 vengono riprodotti in formato HTML5. L’output risultante potrebbe essere grande a seconda di fattori quali le dimensioni del modulo e le immagini nel modulo. Per ottimizzare il trasferimento di dati, l’approccio consigliato consiste nel comprimere la risposta di HTML utilizzando il server web da cui viene trasmessa la richiesta. Questo approccio riduce le dimensioni della risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra server e client.
 
 Ad esempio, per abilitare la compressione sul server web Apache 2.0 a 32 bit con JBoss, effettua le seguenti operazioni®:
 
@@ -144,15 +144,15 @@ Aggiungi la seguente configurazione nel file di configurazione `APACHE_HOME/conf
 
 Per migliorare le prestazioni, è possibile indirizzare il software antivirus per escludere i seguenti file e cartelle di AEM Forms dalla scansione sempre attiva (all&#39;accesso):
 
-* Directory di installazione AEM. Se non è possibile escludere la directory completa, escludere quanto segue:
+* Directory di installazione di AEM. Se non è possibile escludere la directory completa, escludere quanto segue:
 
-   * [Directory di installazione AEM]\crx-repository\temp
-   * [Directory di installazione AEM]\crx-repository\repository
-   * [Directory di installazione AEM]\crx-repository\launchpad
+   * [Directory di installazione di AEM]\crx-repository\temp
+   * [Directory di installazione di AEM]\crx-repository\repository
+   * [Directory di installazione di AEM]\crx-repository\launchpad
 
 * Directory temporanea del server applicazioni. La posizione predefinita è:
 
-   * (JBoss®) [Directory di installazione AEM]\jboss\standalone\tmp
+   * (JBoss®) [Directory di installazione di AEM]\jboss\standalone\tmp
    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (WebSphere®) \Programma Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 

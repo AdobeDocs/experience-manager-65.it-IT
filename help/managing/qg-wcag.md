@@ -7,8 +7,8 @@ feature: Compliance
 role: Developer, Leader, User
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1880'
+ht-degree: 91%
 
 ---
 
@@ -40,14 +40,14 @@ Utilizzando Adobe Experience Manager, gli autori di contenuti e/o i proprietari 
 
 WCAG 2.1 intende fornire linee guida con le caratteristiche indicate di seguito.
 
-* **Indipendenti dalla tecnologia utilizzata**:
-in altre parole, si tratta di linee guida che possono essere applicate a diversi formati di contenuti web, non solo a contenuti HTML. Le linee guida WCAG 2.1 sono quindi applicabili anche a contenuti generati o forniti tramite PDF, Flash, JavaScript o altre tecnologie web attuali e future.
+* **è indipendente dalla tecnologia:**
+In altre parole, linee guida che possono essere applicate a diversi formati di contenuti web, non solo a HTML. Le linee guida WCAG 2.1 sono quindi applicabili anche a contenuti generati o forniti tramite PDF, Flash, JavaScript o altre tecnologie web attuali e future.
 
-* **Testabili**:
-ogni istruzione è redatta in modo da poter essere testata in modo oggettivo affinché un gruppo di esperti di accessibilità possa concordare in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno.
+* **sono testabili:**
+Ogni istruzione è redatta in modo da poter essere testata in modo oggettivo per garantire che un gruppo di esperti di accessibilità concordi in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno.
 
-* Supporto dell’**implementazione contestuale e basata su priorità**:
-alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Viene inoltre introdotto il concetto di *supporto dell’accessibilità*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non prevedere il supporto completo per l’accessibilità oppure che, per beneficiare delle funzioni di accessibilità, potrebbero richiedere l’accesso a particolari browser e/o tecnologie per l’accessibilità.
+* Supporto dell&#39;implementazione contestuale e con priorità **:**
+Alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Viene inoltre introdotto il concetto di *supporto dell’accessibilità*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non prevedere il supporto completo per l’accessibilità oppure che, per beneficiare delle funzioni di accessibilità, potrebbero richiedere l’accesso a particolari browser e/o tecnologie per l’accessibilità.
 
 Tali obiettivi hanno influenzato in modo significativo la struttura delle linee guida WCAG 2.1.
 
@@ -69,12 +69,12 @@ Le linee guida WCAG 2.1 si basano su quattro principi chiave per la progettazion
 In particolare:
 * Ogni **principio** è costituito da una o più **linee guida**.
 
-* Le linee guida sono formulate come istruzioni, che possono essere positive (cose da fare) o negative (cose da non fare).
+* Le linee guida sono formulate come istruzioni, che possono essere positive (eseguire questa operazione). o negativo (non eseguire questa operazione).
 * Le linee guida sono numerate da 1.1 a 4.1 e la prima cifra corrisponde al principio padre.
 * Ogni linea guida è costituita da uno o più **criteri di successo**.
 * I criteri di successo sono formulati come istruzioni, che possono essere `True` o `False` per una determinata pagina web.
 * I criteri di successo possono includere una o più opzioni oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
-* I criteri di successo sono numerati in base alla linea guida e al principio principali, da 1.1.1 a 4.1.1. Dispongono anche di un nome breve che riassume l’intento del criterio, per un riferimento più semplice. Ad esempio, il criterio di successo [1.1.1 prevede contenuto non testuale](https://www.w3.org/TR/WCAG/#non-text-content).
+* I criteri di successo sono numerati in base alla linea guida e al principio padre, da 1.1.1 a 4.1.1. Inoltre, hanno un nome breve che riassume l’intento del criterio, per un riferimento più semplice. Ad esempio, il criterio di successo [1.1.1 prevede contenuto non testuale](https://www.w3.org/TR/WCAG/#non-text-content).
 * I criteri di successo includono un elenco delle **tecniche** correlate (descritte più in dettaglio di seguito).
 
 ## Risorse di supporto {#supporting-resources}

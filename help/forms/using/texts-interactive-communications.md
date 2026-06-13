@@ -1,6 +1,6 @@
 ---
-title: Testi nelle comunicazioni interattive
-description: 'Creazione e modifica di frammenti di documenti di testo da utilizzare nelle comunicazioni interattive: il testo è uno dei quattro tipi di frammenti di documenti utilizzati per creare le comunicazioni interattive. Gli altri tre sono condizioni, elenchi e frammenti di layout.  '
+title: Testi delle comunicazioni interattive
+description: 'Creazione e modifica di frammenti di documenti di testo da utilizzare nelle comunicazioni interattive: il testo è uno dei quattro tipi di frammenti di documenti utilizzati per creare le comunicazioni interattive. Gli altri tre sono condizioni, elenchi e frammenti di layout.'
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
 
-# Testi nelle comunicazioni interattive{#texts-in-interactive-communications}
+# Testi delle comunicazioni interattive{#texts-in-interactive-communications}
 
 ## Panoramica {#overview}
 

@@ -1,5 +1,5 @@
 ---
-title: Abilitazione dei componenti del portale Forms
+title: Abilitazione dei componenti del portale dei moduli
 description: I componenti del portale Forms sono già disattivati. Abilitare i gruppi di predicati Document Services e Document Services per abilitare i componenti di Forms Portal.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,19 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 5%
+source-wordcount: '354'
+ht-degree: 18%
 
 ---
 
-# Abilitazione dei componenti del portale Forms {#enabling-forms-portal-components}
+# Abilitazione dei componenti del portale dei moduli {#enabling-forms-portal-components}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
-I componenti del portale dei moduli non sono pronti all’uso. Per visualizzare i componenti nell’elenco dei componenti disponibili nella barra laterale AEM, effettua le seguenti operazioni:
+I componenti del portale dei moduli non sono pronti all’uso. Per visualizzare i componenti nell’elenco dei componenti disponibili nella barra laterale di AEM, effettua le seguenti operazioni:
 
 1. Accedi all’istanza di authoring del sito web e apri una pagina AEM Sites.
 
@@ -51,6 +51,6 @@ Ora le categorie di componenti Servizi basati su documenti e Predicati di serviz
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](/help/forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](/help/forms/using/draft-submission-component.md)
-* [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizzazione dei modelli per i componenti del portale Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Esempio di integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
+* [Personalizzazione dei modelli per i componenti del portale dei moduli](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)

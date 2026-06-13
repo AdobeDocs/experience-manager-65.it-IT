@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '7608'
-ht-degree: 1%
+source-wordcount: '7800'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ L&#39;articolo descrive le tecniche di tempra da applicare durante le seguenti f
 
 * **Preinstallazione:** Prima di installare AEM Forms su JEE, utilizza queste tecniche.
 * **Installazione:** Utilizzare queste tecniche durante il processo di installazione di AEM Forms su JEE.
-* **Installazione di Post:** Utilizzare queste tecniche dopo l&#39;installazione e in seguito periodicamente.
+* **Post-installazione:** Utilizzare queste tecniche dopo l&#39;installazione e in seguito periodicamente.
 
 AEM Forms su JEE è altamente personalizzabile e può funzionare in molti ambienti diversi. Alcuni consigli potrebbero non soddisfare le esigenze della tua organizzazione.
 
@@ -50,7 +50,7 @@ Nella tabella seguente vengono descritti i processi comuni che riducono le vulne
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p> </th> 
+   <th><p>Problema</p> </th> 
    <th><p>Descrizione</p> </th> 
   </tr> 
  </thead> 
@@ -86,7 +86,7 @@ Nella tabella seguente vengono descritti alcuni approcci potenziali per ridurre 
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p></th> 
+   <th><p>Problema</p></th> 
    <th><p>Descrizione</p></th> 
   </tr> 
  </thead> 
@@ -115,7 +115,7 @@ Questa sezione descrive le tecniche che puoi utilizzare durante il processo di i
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p> </th> 
+   <th><p>Problema</p> </th> 
    <th><p>Descrizione</p> </th> 
   </tr> 
  </thead> 
@@ -147,7 +147,7 @@ Questa sezione descrive le tecniche che puoi utilizzare durante il processo di i
  </tbody> 
 </table>
 
-## Passaggi per l’installazione di Post {#post-installation-steps}
+## Passaggi successivi all’installazione {#post-installation-steps}
 
 Dopo aver installato correttamente AEM Forms su JEE, è importante mantenere periodicamente l’ambiente dal punto di vista della sicurezza.
 
@@ -327,7 +327,7 @@ Nella tabella seguente vengono descritte alcune tecniche per proteggere il serve
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p> </th> 
+   <th><p>Problema</p> </th> 
    <th><p>Descrizione</p> </th> 
   </tr> 
  </thead> 
@@ -351,11 +351,11 @@ Nella tabella seguente vengono descritte alcune tecniche per proteggere il serve
 
 Quando si protegge il database, è necessario implementare le misure descritte dal fornitore del database. È necessario allocare un utente del database con le autorizzazioni minime richieste concesse per l’utilizzo da parte di AEM Forms su JEE. Ad esempio, non utilizzare un account con privilegi di amministratore del database.
 
-Ad Oracle, l&#39;account di database utilizzato richiede solo i privilegi CONNECT, RESOURCE e CREATE VIEW. Per requisiti simili per altri database, vedere [Preparazione all&#39;installazione di AEM Forms su JEE (server singolo)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_it).
+In Oracle, l&#39;account di database utilizzato richiede solo i privilegi CONNECT, RESOURCE e CREATE VIEW. Per requisiti simili per altri database, vedere [Preparazione all&#39;installazione di AEM Forms su JEE (server singolo)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_it).
 
 #### Configurazione della sicurezza integrata per SQL Server su Windows per JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Modificare [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} per aggiungere `integratedSecurity=true` all&#39;URL di connessione, come illustrato in questo esempio:
+1. Modifica [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} per aggiungere `integratedSecurity=true` all&#39;URL della connessione, come illustrato in questo esempio:
 
    ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
@@ -422,7 +422,7 @@ Puoi impostare il numero di tentativi di errore e il successivo tempo di blocco 
 
 #### Imposta blocco automatico account {#set-automatic-account-locking}
 
-1. Accedere alla console di amministrazione.
+1. Accedi alla console di amministrazione.
 1. Fai clic su **Impostazioni** > **Gestione utente** > **Gestione dominio**.
 1. In Impostazioni blocco account automatico impostare **Numero massimo di errori di autenticazione consecutivi** su un numero basso, ad esempio 3.
 1. Fai clic su **Salva**.
@@ -442,7 +442,7 @@ Questa tabella descrive le tecniche di controllo e registrazione che è possibil
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p> </th> 
+   <th><p>Problema</p> </th> 
    <th><p>Descrizione</p> </th> 
   </tr> 
  </thead> 
@@ -458,7 +458,7 @@ Questa tabella descrive le tecniche di controllo e registrazione che è possibil
  </tbody> 
 </table>
 
-### Consenti a un utente non amministratore di eseguire PDF Generator
+### Consentire a un utente non amministratore di eseguire PDF Generator
 
 È possibile abilitare un utente non amministratore all&#39;utilizzo di PDF Generator. Normalmente, solo gli utenti con privilegi amministrativi possono utilizzare PDF Generator. Per consentire a un utente non amministratore di eseguire PDF Generator, effettuare le seguenti operazioni:
 
@@ -470,7 +470,7 @@ Questa tabella descrive le tecniche di controllo e registrazione che è possibil
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ## Configurazione di AEM Forms su JEE per l’accesso oltre i confini dell’azienda {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -498,13 +498,13 @@ Alcuni URL sono evidenziati come applicazioni web rivolte all’utente finale. �
  <tbody>
   <tr> 
    <td><p>/ReaderExtensions/*</p> </td> 
-   <td><p>Estensioni Acrobat Reader DC applicazione Web per l'utente finale per l'applicazione dei diritti di utilizzo ai documenti PDF</p> </td> 
+   <td><p>Acrobat Reader DC estende l'applicazione Web per l'utente finale per l'applicazione dei diritti di utilizzo ai documenti PDF</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>Sì</p> </td> 
   </tr> 
   <tr> 
    <td><p>/edc/</p> </td> 
-   <td><p>applicazione web Rights Management per utenti finali</p> </td> 
+   <td><p>applicazione web per utenti finali di Rights Management</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>Sì</p> </td> 
   </tr> 
@@ -552,7 +552,7 @@ Alcuni URL sono evidenziati come applicazioni web rivolte all’utente finale. �
   </tr> 
   <tr> 
    <td><p>/edc/admin/*</p> </td> 
-   <td><p>applicazione web di amministrazione del Rights Management</p> </td> 
+   <td><p>applicazione web di amministrazione di Rights Management</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
@@ -654,7 +654,7 @@ Alcuni URL sono evidenziati come applicazioni web rivolte all’utente finale. �
   </tr> 
   <tr> 
    <td><p>/DocumentManager/*</p> </td> 
-   <td><p>Caricamento e download di documenti da elaborare durante l’accesso agli endpoint remoti, agli endpoint WSDL SOAP e all’SDK Java sul trasporto SOAP o EJB con i documenti HTTP abilitati.</p> </td> 
+   <td><p>Caricamento e download di documenti da elaborare quando si accede a endpoint remoti, endpoint WSDL SOAP e trasporto Java SDK su SOAP o trasporto EJB con documenti HTTP abilitati.</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>Sì</p> </td> 
   </tr> 
@@ -665,7 +665,7 @@ Alcuni URL sono evidenziati come applicazioni web rivolte all’utente finale. �
 
 Un attacco Cross-Site Request Forgery (CSRF) sfrutta l’affidabilità di un sito web per l’utente, per trasmettere comandi non autorizzati e non voluti dall’utente. L’attacco viene configurato includendo un collegamento o uno script in una pagina web, o un URL in un messaggio e-mail, per accedere a un altro sito a cui l’utente è già stato autenticato.
 
-Ad esempio, potresti aver effettuato l’accesso ad Administration Console mentre navighi simultaneamente in un altro sito web. Una delle pagine web può includere un tag immagine HTML con un attributo `src` che esegue il targeting di uno script lato server sul sito web dell&#39;utente vittima. Utilizzando il meccanismo di autenticazione delle sessioni basato su cookie fornito dai browser web, il sito web attaccante può inviare richieste dannose a questo script lato server vittima, mascherato come l&#39;utente legittimo. Per ulteriori esempi, vedere [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+Ad esempio, potresti aver effettuato l’accesso ad Administration Console mentre navighi simultaneamente in un altro sito web. Una delle pagine web può includere un tag immagine HTML con un attributo `src` che esegue il targeting di uno script lato server sul sito web della vittima. Utilizzando il meccanismo di autenticazione delle sessioni basato su cookie fornito dai browser web, il sito web attaccante può inviare richieste dannose a questo script lato server vittima, mascherato come l&#39;utente legittimo. Per ulteriori esempi, vedere [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 Le seguenti caratteristiche sono comuni al CSRF:
 
@@ -690,15 +690,15 @@ Il processo di filtro Referrer può essere descritto come segue:
    1. Se si tratta di POST, Forms Server esegue il controllo dell&#39;intestazione Referrer.
    1. Se è GET, Forms Server ignora il controllo Referrer, a meno che *CSRF_CHECK_GETS* non sia impostato su true, nel qual caso esegue il controllo dell&#39;intestazione Referrer. *CSRF_CHECK_GETS* è specificato nel file *web.xml* dell&#39;applicazione.
 
-1. Forms Server controlla se l&#39;URI richiesto esiste nel inserisco nell&#39;elenco Consentiti di controllo dell utente:
+1. Il server Forms verifica se l&#39;URI richiesto esiste nel inserisco nell&#39;elenco Consentiti di:
 
    1. Se l&#39;URI viene inserito nell&#39;elenco Consentiti, il server accetta la richiesta.
    1. Se l’URI richiesto non viene inserito nell&#39;elenco Consentiti, il server recupera il Referrer della richiesta.
 
 1. Se nella richiesta è presente un Referrer, il server controlla se si tratta di un Referrer consentito. Se consentito, il server verifica la presenza di un&#39;eccezione Referrer:
 
-   1. Se si tratta di un&#39;eccezione, la richiesta viene bloccata.
-   1. Se non si tratta di un’eccezione, la richiesta viene passata.
+   1. Se si tratta di un’eccezione, la richiesta viene bloccata.
+   1. Se non si tratta di un’eccezione, la richiesta viene trasmessa.
 
 1. Se nella richiesta non è presente alcun Referrer, il server controlla se è consentito un Referrer Nullo:
 
@@ -709,11 +709,11 @@ Il processo di filtro Referrer può essere descritto come segue:
 
 AEM Forms su JEE fornisce un filtro Referrer per specificare il Referrer che può accedere alle risorse del server. Per impostazione predefinita, il filtro Referrer non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio GET, a meno che *CSRF_CHECK_GETS* non sia impostato su true. Se il numero di porta per una voce Referrer consentito è impostato su 0, AEM Forms su JEE consentirà tutte le richieste con Referrer provenienti da tale host indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo le richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Il filtro Referrer è disattivato se tutte le voci nell&#39;elenco Referrer consentiti vengono eliminate.
 
-Quando si installa Document Services per la prima volta, l’elenco Referenti consentiti viene aggiornato con l’indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referenti consentiti vengono restituiti dal sistema operativo host. Ad esempio, un server con indirizzo IP 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per qualsiasi nome non qualificato restituito dal sistema operativo host (nomi che non dispongono di indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), il inserisco nell&#39;elenco Consentiti di non viene aggiornato. Modifica l’elenco dei Referenti consentiti in base all’ambiente aziendale. Non distribuire Forms Server nell’ambiente di produzione con l’elenco dei Destinatari autorizzati predefiniti. Dopo aver modificato uno dei Referrer consentiti, le Eccezioni referente o gli URI, assicurati di riavviare il server affinché le modifiche diventino effettive.
+Quando si installa Document Services per la prima volta, l’elenco Referenti consentiti viene aggiornato con l’indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referenti consentiti vengono restituiti dal sistema operativo host. Ad esempio, un server con un indirizzo IP di 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per tutti i nomi non qualificati restituiti dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), il inserisco nell&#39;elenco Consentiti di non viene aggiornato. Modifica l’elenco dei Referenti consentiti in base all’ambiente aziendale. Non distribuire Forms Server nell’ambiente di produzione con l’elenco dei Destinatari autorizzati predefiniti. Dopo aver modificato uno dei Referrer consentiti, le Eccezioni referente o gli URI, assicurati di riavviare il server affinché le modifiche diventino effettive.
 
 **Gestione dell&#39;elenco dei referenti consentiti**
 
-È possibile gestire l’elenco Referenti consentiti dall’interfaccia di gestione utente di Administration Console. L&#39;interfaccia User Management offre la funzionalità di creazione, modifica o eliminazione dell&#39;elenco. Per ulteriori informazioni sull&#39;utilizzo dell&#39;elenco dei referenti consentiti, consultare la sezione * [Prevenzione degli attacchi CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* della *guida per l&#39;amministrazione*.
+È possibile gestire l’elenco Referenti consentiti dall’interfaccia di gestione utente di Administration Console. L&#39;interfaccia User Management offre la funzionalità di creazione, modifica o eliminazione dell&#39;elenco. Per ulteriori informazioni sull&#39;utilizzo dell&#39;elenco dei referenti consentiti, consultare la sezione *[Prevenzione degli attacchi CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* della *guida per l&#39;amministrazione*.
 
 **Gestione dell&#39;eccezione referente consentita e degli elenchi URI consentiti**
 
@@ -838,14 +838,14 @@ Quando configuri un’architettura di rete sicura come descritto nella sezione p
     <ul> 
      <li><p>applicazioni client di servizi Web, ad esempio applicazioni .NET</p> </li> 
      <li><p>Adobe Reader® utilizza SOAP per AEM Forms sui servizi web del server JEE</p> </li> 
-     <li><p>Adobe di applicazioni Flash® utilizza SOAP per i servizi Web di Forms Server</p> </li> 
-     <li><p>Chiamate SDK di AEM Forms su JEE se utilizzate in modalità SOAP</p> </li> 
+     <li><p>Le applicazioni Adobe Flash® utilizzano SOAP per i servizi Web di Forms Server</p> </li> 
+     <li><p>Chiamate AEM Forms su JEE SDK se utilizzate in modalità SOAP</p> </li> 
      <li><p>Ambiente di progettazione di Workbench</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>RMI</p> </td> 
-   <td><p>Chiamate SDK di AEM Forms su JEE quando utilizzato in modalità Enterprise JavaBeans (EJB)</p> </td> 
+   <td><p>Chiamate AEM Forms su JEE SDK quando utilizzato in modalità Enterprise JavaBeans (EJB)</p> </td> 
   </tr> 
   <tr> 
    <td><p>IMAP/POP3</p> </td> 
@@ -881,7 +881,7 @@ Quando configuri un’architettura di rete sicura come descritto nella sezione p
   </tr> 
   <tr> 
    <td><p>AMF</p> </td> 
-   <td><p>Adobe di applicazioni di Flash, in cui i servizi server di AEM Forms su JEE sono configurati con un endpoint remoto</p> </td> 
+   <td><p>Applicazioni Adobe Flash, in cui i servizi del server AEM Forms su JEE sono configurati con un endpoint remoto</p> </td> 
   </tr> 
   <tr> 
    <td><p>JMX</p> </td> 
@@ -904,7 +904,7 @@ In questa sezione vengono descritte le porte predefinite (e gli intervalli di co
  <thead> 
   <tr> 
    <th><p>Scopo</p> </th> 
-   <th><p>Porta </p> </th> 
+   <th><p>Porta</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -925,7 +925,7 @@ In questa sezione vengono descritte le porte predefinite (e gli intervalli di co
  <thead> 
   <tr> 
    <th><p>Scopo</p> </th> 
-   <th><p>Porta </p> </th> 
+   <th><p>Porta</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -956,7 +956,7 @@ Per informazioni sulle porte WebSphere richieste da AEM Forms su JEE, passare al
 
 ### Configurazione di SSL {#configuring-ssl}
 
-Facendo riferimento all&#39;architettura fisica descritta nella sezione [AEM Forms sull&#39;architettura fisica di JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), è necessario configurare SSL per tutte le connessioni che si intende utilizzare. In particolare, tutte le connessioni SOAP devono essere condotte tramite SSL per evitare l&#39;esposizione delle credenziali utente su una rete.
+Facendo riferimento all&#39;architettura fisica descritta nella sezione [AEM Forms sull&#39;architettura fisica di JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), è necessario configurare SSL per tutte le connessioni che si intende utilizzare. In particolare, tutte le connessioni SOAP devono essere eseguite tramite SSL per evitare l&#39;esposizione delle credenziali utente su una rete.
 
 Per istruzioni su come configurare SSL su JBoss, WebLogic e WebSphere, vedere &quot;Configuring SSL&quot; nella [guida per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_64_it).
 

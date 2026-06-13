@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '7136'
-ht-degree: 18%
+source-wordcount: '7066'
+ht-degree: 19%
 
 ---
 
@@ -24,7 +24,7 @@ Un amministratore può configurare una cartella di rete, nota come cartella cont
 
 Per creare una cartella controllata nel file system, è possibile utilizzare uno dei seguenti metodi:
 
-* Durante la configurazione delle proprietà di un nodo di configurazione della cartella controllata, digitare il percorso completo della directory padre nella proprietà folderPath e aggiungere il nome della cartella controllata da creare, come illustrato nell&#39;esempio seguente: `C:/MyPDFs/MyWatchedFolder`
+* Durante la configurazione delle proprietà di un nodo di configurazione di una cartella controllata, digita il percorso completo della directory principale nella proprietà folderPath e aggiungi il nome della cartella controllata da creare, come illustrato nell’esempio seguente: `C:/MyPDFs/MyWatchedFolder`
 La cartella `MyWatchedFolder` non esiste. AEM Forms tenta di creare la cartella nel percorso specificato.
 
 * Creare una cartella nel file system prima di configurare un endpoint Watched Folder, quindi specificare il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere [Proprietà cartella controllata](#watchedfolderproperties).
@@ -94,9 +94,9 @@ Puoi configurare le seguenti proprietà per una cartella controllata.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (booleano, valore predefinito true):** Indica se il meccanismo di scadenza deve essere attivato solo quando la cartella di controllo è limitata. Il meccanismo è più pertinente per le cartelle di controllo limitate, poiché un numero limitato di file che rimangono in attesa in uno stato non elaborato (a causa di errori di processo/flusso di lavoro intermittenti) può bloccare l’elaborazione per l’intero batch quando la limitazione è abilitata. Se questa proprietà viene mantenuta come true (valore predefinito), il meccanismo di scadenza non viene attivato per le cartelle di controllo che non sono limitate. Se la proprietà viene mantenuta come false, il meccanismo viene sempre attivato purché la proprietà stageFileExpirationDuration sia un numero positivo.
 
-* **pollInterval (Long)**: intervallo in secondi per la ricerca di input nella cartella controllata. Se l&#39;impostazione Limitazione non è abilitata, l&#39;intervallo di polling deve essere più lungo del tempo necessario per elaborare un processo medio. In caso contrario, il sistema potrebbe sovraccaricare. Il valore predefinito è 5. Per ulteriori informazioni, consulta la descrizione di Dimensione batch. Il valore dell&#39;intervallo di polling deve essere maggiore o uguale a uno.
-* **excludeFilePattern (String)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati da una cartella controllata per determinare quali file e cartelle analizzare e selezionare. Qualsiasi file o cartella con questo modello non viene analizzato per l&#39;elaborazione. Questa impostazione è utile quando l’input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella controllata. Questo impedisce alla cartella controllata di selezionare una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.
-È possibile utilizzare [modelli di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) per escludere:
+* **pollInterval (Long)**: intervallo in secondi per la ricerca di input nella cartella controllata. Se l&#39;impostazione Limitazione non è abilitata, l&#39;intervallo di polling deve essere più lungo del tempo necessario per elaborare un processo medio. In caso contrario, il sistema potrebbe sovraccaricare. Il valore predefinito è 5. Per ulteriori informazioni, consulta la descrizione relativa a Dimensione batch. Il valore dell&#39;intervallo di polling deve essere maggiore o uguale a uno.
+* **excludeFilePattern (String)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati da una cartella controllata per determinare quali file e cartelle analizzare e selezionare. Qualsiasi file o cartella con questo modello non viene analizzato per l&#39;elaborazione. Questa impostazione è utile quando l&#39;input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella controllata. Questo impedisce alla cartella controllata di selezionare una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.
+Puoi utilizzare [modelli di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) per escludere:
 
    * File con estensioni di file specifiche; ad esempio, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
    * File con nomi specifici; ad esempio, dati&#42; escluderebbe file e cartelle denominati dati1, dati2 e così via.
@@ -108,7 +108,7 @@ Puoi configurare le seguenti proprietà per una cartella controllata.
 
 Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui pattern di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern (stringa)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se IncludeFilePattern è input&#42;, verranno selezionati tutti i file e le cartelle che corrispondono all&#39;input&#42;. Ciò include file e cartelle denominati input1, input2 e così via. Il valore predefinito è &#42; e indica tutti i file e le cartelle. Puoi utilizzare i pattern di file per includere:
+* **includeFilePattern (stringa)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se IncludeFilePattern è input&#42;, verranno selezionati tutti i file e le cartelle che corrispondono all&#39;input&#42;. Questo include file e cartelle denominati input1, input2 e così via. Il valore predefinito è &#42; e indica tutti i file e le cartelle. Puoi utilizzare i pattern di file per includere:
 
    * File con estensioni di file specifiche; ad esempio, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
    * File con nomi specifici, ad esempio dati.&#42; includerebbe file e cartelle denominati data1, data2 e così via.
@@ -123,7 +123,7 @@ Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui patte
 Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
 * **waitTime (Long)**: tempo, in millisecondi, di attesa prima della scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 3.600.000 millisecondi (un’ora) e il file è stato creato un minuto fa, questo file verrà acquisito dopo 59 o più minuti. Il valore predefinito è 0. Questa impostazione è utile per garantire che un file o una cartella sia completamente copiato nella cartella di input. Ad esempio, se hai un file di grandi dimensioni da elaborare e il download del file richiede dieci minuti, imposta il tempo di attesa su 10&#42;60 &#42;1000 millisecondi. Questo impedisce alla cartella controllata di esaminare il file se non ha dieci minuti.
-* **purgeDuration (Long)**: i file e le cartelle nella cartella dei risultati vengono eliminati quando sono più vecchi di questo valore. Questo valore è misurato in giorni. Questa impostazione è utile per garantire che la cartella dei risultati non sia piena. Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
+* **purgeDuration (Long)**: i file e le cartelle nella cartella dei risultati vengono eliminati quando sono più vecchi di questo valore. Questo valore è misurato in giorni. Questa impostazione è utile per garantire che la cartella dei risultati non si riempia. Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
 * **resultFolderName (String)**: cartella in cui sono archiviati i risultati salvati. Se i risultati non vengono visualizzati in questa cartella, seleziona la cartella errori. I file di sola lettura non vengono elaborati e vengono salvati nella cartella degli errori. Questo valore può essere un percorso assoluto o relativo con i seguenti pattern di file:
 
    * %F = prefisso del nome file
@@ -163,7 +163,7 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli
 
 * **overwriteDuplicateFilename (Boolean)**: se è impostato su True, i file nella cartella dei risultati e nella cartella di conservazione vengono sovrascritti. Se è impostato su falso, vengono utilizzati file e cartelle con un suffisso di indice numerico per il nome. Il valore predefinito è falso.
 * **preserveOnFailure (booleano)**: mantenere i file di input in caso di errore durante l&#39;esecuzione dell&#39;operazione su un servizio. Il valore predefinito è vero.
-* **inputFilePattern (stringa)**: specifica il modello dei file di input per una cartella controllata. Crea una inserisce nell&#39;elenco Consentiti di file di tipo.
+* **inputFilePattern (stringa)**: specifica il modello dei file di input per una cartella controllata. Crea un elenco Consentiti di file di.
 * **asincrono (booleano)**: identifica il tipo di chiamata come asincrono o sincrono. Il valore predefinito è true (asincrono). L’elaborazione del file è un’attività che consuma risorse; mantieni il valore del flag asincrono su true per evitare che il thread principale del processo di scansione venga bloccato. In un ambiente cluster, è fondamentale mantenere il flag true per abilitare il bilanciamento del carico per i file elaborati tra i server disponibili. Se il flag è false, il processo di scansione tenta di eseguire l’elaborazione per ogni file/cartella di livello principale in sequenza all’interno del proprio thread. Non impostare il flag su false senza un motivo specifico, ad esempio un’elaborazione basata sul flusso di lavoro in una configurazione a server singolo.
 
 >[!NOTE]
@@ -182,7 +182,7 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli
 Oltre alle proprietà di configurazione della cartella controllata elencate in precedenza, puoi anche specificare parametri di configurazione personalizzati. I parametri personalizzati vengono passati al codice di elaborazione del file. Consente al codice di modificarne il comportamento in base al valore del parametro. Per specificare un parametro:
 
 1. Accedi a CRXDE-Lite e passa al nodo di configurazione della cartella controllata.
-1. Aggiungi un parametro proprietà.&lt;nome_proprietà> al nodo di configurazione della cartella controllata. Il tipo della proprietà può essere solo Boolean, Date, Decimal, Double, Long e String. Puoi specificare proprietà con valore singolo e multiplo.
+1. Aggiungi un parametro di proprietà.&lt;nome_proprietà> al nodo di configurazione della cartella controllata. Il tipo della proprietà può essere solo Boolean, Date, Decimal, Double, Long e String. Puoi specificare proprietà con valore singolo e multiplo.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Puoi creare variabili mutabili per metodi di elaborazione dei file basati su flu
 
 1. Accedi a CRXDE-Lite e passa al nodo di configurazione della cartella controllata.
 
-1. Aggiungi una proprietà workflow.var.&lt;nome_variabile> nel nodo di configurazione della cartella controllata.
+1. Aggiungi una proprietà workflow.var.&lt;nome_variabile> al nodo di configurazione della cartella controllata.
 
    Il tipo della proprietà può essere solo Boolean, Date, Decimal, Double, Long e String. Sono supportate anche le proprietà con più valori. Per le proprietà con più valori, il valore disponibile per il passaggio del flusso di lavoro è un array del tipo specificato.
 
@@ -591,7 +591,7 @@ Le mappature dei parametri di output possono inoltre specificare pattern aggiunt
 * %F = Nome file di origine
 * %E = Estensione nome file di origine
 
-Se il modello di mappatura dei parametri di output termina con “File.separator” (il separatore di percorso), viene creata una cartella e il contenuto viene copiato in tale cartella. Se il modello non termina con &quot;File.separator&quot;, il contenuto (file di risultati o cartella) viene creato con tale nome.
+Se il modello di mappatura dei parametri di output termina con “File.separator” (il separatore di percorso), viene creata una cartella e il contenuto viene copiato in tale cartella. Se il modello non termina con “File.separator”, il contenuto (file di risultati o cartella) viene creato con tale nome.
 
 ## Utilizzo di PDF Generator con una cartella controllata {#using-pdf-generator-with-a-watched-folder}
 

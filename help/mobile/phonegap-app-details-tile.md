@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1206'
 ht-degree: 2%
 
 ---
@@ -47,13 +47,13 @@ Le piattaforme visualizzate sono guidate dal contenuto config.xml di PhoneGap:
 </widget>
 ```
 
-Ogni negozio di applicazioni del fornitore, ad esempio Apple App Store o Google Play Store, richiede una o più schermate dell’app mobile per mostrare ai clienti i dettagli dell’applicazione. Queste schermate possono avere requisiti rigidi relativi a dimensioni e contenuto (in pratica devono rappresentare realmente l’applicazione). Le app AEM supportano la selezione e la gestione di queste schermate per le piattaforme supportate e la visualizzazione delle dimensioni delle porte in base alle esigenze dell&#39;archivio applicazioni di ciascun fornitore.
+Ogni negozio di applicazioni del fornitore, ad esempio Apple App Store o Google Play Store, richiede una o più schermate dell’app mobile per mostrare ai clienti i dettagli dell’applicazione. Queste schermate possono avere requisiti rigidi relativi a dimensioni e contenuto (in pratica devono rappresentare realmente l’applicazione). Le app AEM supportano la selezione e la gestione di queste schermate per le piattaforme supportate e la visualizzazione delle dimensioni delle porte in base alle esigenze dell’archivio applicazioni di ciascun fornitore.
 
 >[!NOTE]
 >
 >L’app AEM Verify ti consente di inviare screenshot direttamente ai dettagli dell’app in AEM.
 >
->Per ulteriori dettagli, consulta [Mobile Quickstart per la verifica AEM](/help/mobile/phonegap-mobile-quickstart.md).
+>Per ulteriori dettagli, consulta [Mobile Quickstart per AEM Verify](/help/mobile/phonegap-mobile-quickstart.md).
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -93,9 +93,9 @@ I metadati per tutte le piattaforme configurate vengono ora visualizzati contemp
 
 >[!NOTE]
 >
->Le sezioni dei metadati della piattaforma non vengono utilizzate da PhoneGap durante una CLI o una build di Remote PhoneGap. Al contrario, l’AEM tenta di acquisire metadati per le piattaforme in modo che possano essere utilizzati in un secondo momento durante l’invio all’archivio applicazioni del fornitore interessato.
+>Le sezioni dei metadati della piattaforma non vengono utilizzate da PhoneGap durante una CLI o una build di Remote PhoneGap. Al contrario, AEM tenta di acquisire metadati per le piattaforme in modo che possano essere utilizzati in un secondo momento durante l’invio all’archivio applicazioni del fornitore di destinazione.
 
-Per le piattaforme non comprese dall’AEM, uno sviluppatore AEM può comunque estendere l’interfaccia utente per acquisire questi metadati, che in seguito possono essere esportati e utilizzati durante il processo di invio delle applicazioni.
+Per le piattaforme non comprese da AEM, uno sviluppatore AEM può comunque estendere l’interfaccia utente per acquisire questi metadati, che in seguito possono essere esportati e utilizzati durante il processo di invio delle applicazioni.
 
 #### Metadati iOS {#ios-metadata}
 
@@ -119,7 +119,7 @@ La funzionalità di esportazione consente di raccogliere in modo semplice le sch
 
 ### URL server per aggiornamento contenuti {#content-update-server-url}
 
-Una delle caratteristiche principali delle app AEM è la capacità di un’app mobile di richiedere nuovi contenuti tramite ContentSync, dove il contenuto può essere costituito da risorse HTML, pagine, video, immagini, testo e altro ancora. Dopo che un autore di contenuti ha aggiornato il contenuto e lo pubblica, il server rende disponibile l’aggiornamento del contenuto per il download dell’app mobile.
+Una delle funzionalità principali delle app AEM è la capacità di un’app mobile di richiedere nuovi contenuti tramite ContentSync, dove il contenuto può essere costituito da risorse HTML, pagine, video, immagini, testo e altro ancora. Dopo che un autore di contenuti ha aggiornato il contenuto e lo pubblica, il server rende disponibile l’aggiornamento del contenuto per il download dell’app mobile.
 
 La proprietà URL di Content Update Server è l&#39;URL che deve puntare a un&#39;istanza Publish, direttamente o tramite Dispatcher o CDN. Il formato dell’URL è semplicemente:
 

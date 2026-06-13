@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 24523ac85b1ac455f4bdf32a0a725cb99e0de497
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 16%
+source-wordcount: '999'
+ht-degree: 19%
 
 ---
 
@@ -27,7 +27,7 @@ Per informazioni sulle ultime funzionalità e sui miglioramenti di AEM Forms, ve
 
 ## Informazioni su AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con processi back-end, regole aziendali e dati.
+Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per creare, gestire, pubblicare e aggiornare i moduli digitali complessi, integrandosi al contempo con i processi di back-end, regole aziendali e dati.
 
 AEM Forms combina le funzionalità di authoring, gestione e pubblicazione dei moduli con le funzionalità di gestione della corrispondenza, la sicurezza dei documenti e l’analisi integrata per creare esperienze end-to-end coinvolgenti. Progettato per funzionare su canali web e mobili, AEM Forms può essere integrato in modo efficiente nei processi aziendali, riducendo i processi cartacei e gli errori e migliorando l&#39;efficienza.
 
@@ -62,7 +62,7 @@ AEM Forms ti consente di estendere i moduli nuovi ed esistenti per creare:
 
 **PDF forms**
 
-PDF forms I dati del modulo possono essere compilati in modalità non in linea, salvati in locale e inviati quando si è connessi in linea. È possibile utilizzare codici a barre 2D per acquisire i dati dei moduli e firme digitali per convalidarne l&#39;autenticità per gli utenti.
+I dati del modulo possono essere compilati in modalità non in linea, salvati in locale e inviati quando si è connessi in linea. È possibile utilizzare codici a barre 2D per acquisire i dati dei moduli e firme digitali per convalidarne l&#39;autenticità per gli utenti.
 
 **HTML Form**
 

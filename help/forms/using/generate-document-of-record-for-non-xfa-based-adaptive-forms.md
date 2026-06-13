@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4370'
+source-wordcount: '4312'
 ht-degree: 3%
 
 ---
@@ -434,7 +434,7 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
       * Orizzontale
       * Come Modulo adattivo
      >[!NOTE]
-     > L’allineamento verticale e orizzontale è applicabile solo a     Pulsante di opzione e casella di controllo
+     > L&#39;allineamento verticale e orizzontale è applicabile solo ai pulsanti di scelta e alle caselle di controllo
 * **[!UICONTROL PROPRIETÀ PAGINA MASTER]** Fare clic per ulteriori informazioni sulle [proprietà pagina master](#master-page-properties-master-page-properties)
 
 ## Applicare un’interruzione di pagina a un documento record {#apply-page-breaks-in-dor}

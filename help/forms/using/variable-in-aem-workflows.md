@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2208'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
 | AEM 6.5 | Questo articolo |
 
 Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati. Puoi quindi utilizzare il nome della variabile in qualsiasi passaggio del flusso di lavoro per recuperare il valore memorizzato nella variabile. È inoltre possibile utilizzare i nomi delle variabili per definire le espressioni per l&#39;adozione delle decisioni di instradamento.
@@ -123,7 +123,7 @@ In questo esempio, utilizza l&#39;editor espressioni per definire un&#39;espress
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[Video espressione variabili](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[Video sull’espressione variabili](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Utilizza editor di espressioni {#use-expression-editor}
 
@@ -170,7 +170,7 @@ La suddivisione OR crea una suddivisione nel flusso di lavoro, dopo la quale è 
 
 In questo esempio, prima di definire l&#39;espressione di routing, utilizzare [esempio 2](../../forms/using/variable-in-aem-workflows.md#example2) per impostare il valore per la variabile **totalvalue**. Il ramo 1 è attivo se il valore della variabile **totalvalue** è maggiore di 50000. Allo stesso modo, puoi definire una regola per rendere attivo il Ramo 2 se il valore della variabile **totalvalue** è minore di 50000.
 
-[O video diviso](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[Video suddiviso in OR](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Analogamente, selezionate un percorso di script esterno o specificate lo script ECMA per instradare le espressioni per valutare il ramo attivo. Selezionare **[!UICONTROL Rinomina branch]** per specificare un nome alternativo per il branch.
 
@@ -280,7 +280,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ### Archiviare dati utente sensibili all’esterno di JCR utilizzando variabili del flusso di lavoro {#jcr-independent-persistance}
 
 I dati elaborati utilizzando Forms Workflow possono contenere dati utente sensibili, come informazioni personali identificabili e informazioni personali riservate. Le aziende possono scegliere di archiviare i dati, elaborati da vari passaggi del flusso di lavoro (e trasmessi utilizzando le variabili del flusso di lavoro), dall’archiviazione JCR a un archivio dati esterno di loro proprietà e gestito. Per ulteriori informazioni sulla persistenza dei dati del flusso di lavoro in un archivio esterno, vedere [Utilizzo delle variabili del flusso di lavoro per i datastore di proprietà del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] fornisce l&#39;API del flusso di lavoro [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) per archiviare le variabili del flusso di lavoro negli archivi BLOB di Azure esterni. Per informazioni dettagliate sull&#39;utilizzo dell&#39;API, vedere [Utilizzare le variabili del flusso di lavoro per parametrizzare i dati sensibili e archiviarli in archivi dati esterni](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+[!DNL Adobe Experience Manager] fornisce l&#39;API del flusso di lavoro [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) per archiviare le variabili del flusso di lavoro in archivi BLOB Azure esterni. Per informazioni dettagliate sull&#39;utilizzo dell&#39;API, vedere [Utilizzare le variabili del flusso di lavoro per parametrizzare i dati sensibili e archiviarli in archivi dati esterni](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Modificare una variabile {#edit-a-variable}
 
