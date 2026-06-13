@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 0%
+source-wordcount: '1624'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Creare un sito community {#create-a-community-site}
 
-Utilizza l’istanza di authoring per creare un sito community. Sull’istanza dell’autore AEM:
+Utilizza l’istanza di authoring per creare un sito community. Nell’istanza Autore di AEM:
 
 1. Accedi con privilegi di amministratore.
 1. Dalla navigazione globale, passa a **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
@@ -79,7 +79,7 @@ Seleziona **Avanti**.
 
 Nel passaggio Impostazioni, prima di selezionare `Next`, sono disponibili sette sezioni che forniscono accesso a configurazioni che includono gestione degli utenti, assegnazione di tag, moderazione, gestione dei gruppi, analisi e traduzione.
 
-#### User Management {#user-management}
+#### Gestione utenti {#user-management}
 
 Seleziona tutte le caselle di controllo per [Gestione utente](/help/communities/sites-console.md#user-management)
 
@@ -87,19 +87,19 @@ Seleziona tutte le caselle di controllo per [Gestione utente](/help/communities/
 * Per consentire ai visitatori del sito di visualizzare il sito senza effettuare l&#39;accesso
 * Per consentire ai membri di inviare e ricevere messaggi da altri membri della community
 * Per consentire l’accesso con Facebook anziché registrare e creare un profilo
-* Per consentire l&#39;accesso con il Twitter invece di registrare e creare un profilo
+* Per consentire l’accesso con Twitter anziché registrare e creare un profilo
 
 >[!NOTE]
 >
->Per un ambiente di produzione, è necessario creare applicazioni Facebook e di Twitter personalizzate. Consulta [Accesso social network con Facebook e Twitter](/help/communities/social-login.md).
+>Per un ambiente di produzione, è necessario creare applicazioni Facebook e Twitter personalizzate. Consulta [Accesso social network con Facebook e Twitter](/help/communities/social-login.md).
 
 ![impostazioni sito community](assets/site-settings.png)
 
 #### ASSEGNAZIONE TAG {#tagging}
 
-I tag applicati al contenuto della community vengono controllati selezionando gli spazi dei nomi AEM precedentemente definiti tramite la [console di assegnazione tag](/help/sites-administering/tags.md#tagging-console) (ad esempio lo spazio dei nomi [Tutorial](/help/communities/setup.md#create-tutorial-tags)).
+I tag applicati al contenuto della community vengono controllati selezionando gli spazi dei nomi di AEM precedentemente definiti tramite la [Console tag](/help/sites-administering/tags.md#tagging-console) (ad esempio lo spazio dei nomi [Tutorial](/help/communities/setup.md#create-tutorial-tags)).
 
-Trovare gli spazi dei nomi è facile con la ricerca del tipo-ahead. Ad esempio:
+Trovare gli spazi dei nomi è facile con la ricerca del tipo-ahead. Ad esempio,
 
 * Digita `tut`
 * Seleziona `Tutorial`
@@ -112,14 +112,14 @@ Trovare gli spazi dei nomi è facile con la ricerca del tipo-ahead. Ad esempio:
 
 Per consentire a un membro della community (o a un gruppo di membri) di utilizzare il sito come manager della community, utilizzare la ricerca di completamento automatico e selezionare il nome del membro o del gruppo tra le opzioni disponibili nel menu a discesa.
 
-Ad esempio:
+Ad esempio,
 
 * Digita `q`
 * Seleziona Quinn Harper
 
 >[!NOTE]
 >
->[Il servizio tunnel](https://helpx.adobe.com/it/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) consente la selezione di membri e gruppi esistenti solo nell&#39;ambiente di pubblicazione.
+>[Il servizio tunnel](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) consente la selezione di membri e gruppi esistenti solo nell&#39;ambiente di pubblicazione.
 
 ![ruoli utente nel nuovo sito](assets/site-admin-1.png)
 
@@ -160,7 +160,7 @@ Al termine del processo, la cartella per il nuovo sito viene visualizzata nella 
 
 ![communitiesconsole](assets/communitiessitesconsole.png)
 
-## Publish il sito community {#publish-the-community-site}
+## Pubblica il sito community {#publish-the-community-site}
 
 Il sito creato deve essere gestito dalla console Community - Sites, la stessa da cui è possibile creare nuovi siti.
 
@@ -182,9 +182,9 @@ Da sinistra a destra:
 
   Selezionando l&#39;icona delle proprietà si apre il sito community per modificare le proprietà, ad esempio il titolo o il tema.
 
-* **Sito Publish**
+* **Pubblica sito**
 
-  Se si seleziona l&#39;icona mondo, il sito community verrà pubblicato (ad esempio, se il server di pubblicazione è in esecuzione sul computer locale, su localhost:4503 per impostazione predefinita).
+  Se si seleziona l&#39;icona mondo, il sito community verrà pubblicato (ad esempio, se il server di pubblicazione è in esecuzione nel computer locale, su localhost:4503 per impostazione predefinita).
 
 * **Esporta sito**
 
@@ -211,7 +211,7 @@ Da sinistra a destra:
 >1. Selezionare **[!UICONTROL OK]**.
 >1. (Facoltativo) Seleziona **[!UICONTROL Cancella]** o **[!UICONTROL Forza nuovo tentativo]** per reimpostare la coda di replica.
 
-### Seleziona Publish {#select-publish}
+### Seleziona pubblicazione {#select-publish}
 
 Dopo aver verificato che il server di pubblicazione sia in esecuzione, seleziona l’icona mondo per pubblicare il sito community.
 
@@ -291,7 +291,7 @@ Per iniziare:
 
 1. Seleziona **Salva tutto.**
 1. (Facoltativo) Elimina la cronologia esplorazioni.
-1. Passa a https://localhost:4503/.
+1. Passare a https://localhost:4503/.
 
    * Arrivare a https://localhost:4503/content/sites/engage/en.html
 
@@ -309,16 +309,16 @@ Se non è possibile salvare le modifiche, verificare che il nome del nodo sia `l
 
 #### Risoluzione dei problemi: impossibile reindirizzare {#troubleshooting-fail-to-redirect}
 
-L&#39;oggetto &#39;**$**&#39; alla fine della stringa dell&#39;espressione regolare `sling:match` è fondamentale, in modo che venga mappato solo `https://localhost:4503/`. In caso contrario, il valore di reindirizzamento viene anteposto a qualsiasi percorso che potrebbe esistere dopo server:port nell&#39;URL. Pertanto, quando l’AEM tenta di reindirizzare alla pagina di accesso, questo non riesce.
+L&#39;oggetto &#39;**$**&#39; alla fine della stringa dell&#39;espressione regolare `sling:match` è fondamentale, in modo che solo `https://localhost:4503/` sia mappato, altrimenti il valore di reindirizzamento viene preceduto da qualsiasi percorso che potrebbe esistere dopo il server:port nell&#39;URL. Pertanto, quando AEM tenta di reindirizzare alla pagina di accesso, questo non riesce.
 
 ### Modificare il sito {#modify-the-site}
 
-Dopo la creazione iniziale del sito, gli autori potranno utilizzare l&#39;[icona Apri sito](/help/communities/sites-console.md#authoring-site-content) per eseguire attività standard di creazione AEM.
+Dopo la creazione iniziale del sito, gli autori potranno utilizzare l&#39;[icona Apri sito](/help/communities/sites-console.md#authoring-site-content) per eseguire le attività di authoring standard di AEM.
 
 Inoltre, gli amministratori possono utilizzare l&#39;icona [Modifica sito](/help/communities/sites-console.md#modifying-site-properties) per modificare le proprietà del sito, ad esempio il titolo.
 
-Dopo eventuali modifiche, ricorda di **Salvare** e di **Publish** il sito.
+Dopo eventuali modifiche, ricorda di **salvare** e di **pubblicare** il sito.
 
 >[!NOTE]
 >
->Se non conosci l&#39;AEM, consulta la documentazione sulle [operazioni di base](/help/sites-authoring/basic-handling.md) e una [guida rapida all&#39;authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
+>Se non conosci AEM, consulta la documentazione sulle [operazioni di base](/help/sites-authoring/basic-handling.md) e una [guida rapida all&#39;authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).

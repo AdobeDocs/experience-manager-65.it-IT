@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -182,11 +182,11 @@ Affinché l’e-mail possa essere introdotta nell’archivio, è necessario conf
 
 * **[!UICONTROL URL]**
 
-  *(Obbligatorio)* Il server della posta in uscita. Esempio: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`.
+  *(Obbligatorio)* Il server della posta in uscita. Ad esempio, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importa nel percorso]**&ast;
+* **[!UICONTROL Importa nel percorso]**&amp;ast;
 
-  *(Obbligatorio)* Impostato su `/content/usergenerated/mailFolder/postEmails`
+  *(Obbligatorio)* impostato su `/content/usergenerated/mailFolder/postEmails`
 sfogliando la cartella `postEmails`e selezionando **OK**.
 
 * **[!UICONTROL Intervallo di aggiornamento in secondi]**
@@ -207,7 +207,7 @@ sfogliando la cartella `postEmails`e selezionando **OK**.
 
 Una volta salvata la nuova configurazione di polling, è necessario modificare ulteriormente le proprietà dell&#39;utilità di importazione e-mail per modificare il protocollo da `POP3` a `emailreply`.
 
-Utilizzo di [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Accedi all&#39;editore principale con privilegi di amministratore e passa a [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importer/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Seleziona la configurazione appena creata e modifica le seguenti proprietà:

@@ -1,13 +1,13 @@
 ---
 title: Utilizzo di Smart Imaging con proporzioni pixel del dispositivo lato client
-description: Scopri come utilizzare le proporzioni pixel del dispositivo lato client con Smart Imaging in Adobe Experience Manager as a Cloud Service con Dynamic Medie.
+description: Scopri come utilizzare le proporzioni pixel del dispositivo lato client con Smart Imaging in Adobe Experience Manager as a Cloud Service con Dynamic Media.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dis
 
 **App sottoposte a rendering lato server**
 
-1. Carica il processo di lavoro del servizio iniziando (`srvinit.js`) includendo lo script seguente nella sezione dell&#39;intestazione della pagina HTML:
+1. Caricare il processo di lavoro del servizio iniziando (`srvinit.js`) includendo lo script seguente nella sezione dell&#39;intestazione della pagina HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   L&#39;Adobe consiglia di caricare lo script _prima_ di qualsiasi altro script in modo che il service worker inizi immediatamente l&#39;inizializzazione.
+   Adobe consiglia di caricare lo script _prima_ di qualsiasi altro script in modo che il service worker inizi immediatamente l&#39;inizializzazione.
 
 1. Includi il seguente codice tag immagine DPR nella parte superiore della sezione body della pagina HTML:
 
@@ -56,8 +56,8 @@ Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dis
 
    È possibile combinare entrambi gli script DPR in uno per evitare più richieste di rete.
 
-   L&#39;Adobe consiglia di caricare questi script _prima_ di qualsiasi altro script nella pagina HTML.
-L’Adobe consiglia inoltre di eseguire la Bootstrap dell’app con il tag HTML diff anziché con un elemento body. Il motivo è che `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
+   Adobe consiglia di caricare questi script _prima_ di qualsiasi altro script nella pagina HTML.
+Adobe consiglia inoltre di usare l’app per Bootstrap con il tag HTML diff anziché con un elemento body. Il motivo è che `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
 
 ## Download di file JavaScript {#client-side-dpr-script}
 

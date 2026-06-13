@@ -12,8 +12,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2403'
-ht-degree: 0%
+source-wordcount: '2417'
+ht-degree: 1%
 
 ---
 
@@ -21,21 +21,21 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Nelle community Adobe Experience Manager (AEM), dall&#39;ambiente Publish (a seconda delle autorizzazioni configurate), *visitatori del sito* possono diventare *membri*, creare *gruppi di utenti* e modificare il loro *profilo membro*.
+In Adobe Experience Manager (AEM) Communities, dall&#39;ambiente di pubblicazione (a seconda delle autorizzazioni configurate), *visitatori del sito* possono diventare *membri*, creare *gruppi di utenti* e modificare il loro *profilo membro*.
 
 *Dati utente* fa riferimento a *utenti*, *profili utente* e *gruppi utenti*.
 
-*Membri* fanno riferimento a *utenti* registrati nell&#39;ambiente Publish, a differenza degli utenti registrati nell&#39;ambiente di authoring.
+*Membri* fanno riferimento a *utenti* registrati nell&#39;ambiente di pubblicazione, a differenza degli utenti registrati nell&#39;ambiente di authoring.
 
 Per ulteriori informazioni sui dati utente, visitare [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
 
-## Sincronizzazione degli utenti in una farm di Publish {#synchronizing-users-across-a-publish-farm}
+## Sincronizzazione degli utenti in una farm di pubblicazione {#synchronizing-users-across-a-publish-farm}
 
-Per progettazione, i dati utente creati nell’ambiente Publish non vengono visualizzati nell’ambiente di authoring.
+Per progettazione, i dati utente creati nell’ambiente di pubblicazione non vengono visualizzati nell’ambiente di authoring.
 
-La maggior parte dei dati utente creati nell’ambiente di authoring deve rimanere nell’ambiente di authoring e non viene sincronizzata né replicata nelle istanze di Publish.
+La maggior parte dei dati utente creati nell’ambiente di authoring devono rimanere nell’ambiente di authoring e non vengono sincronizzati né replicati nelle istanze di pubblicazione.
 
-Se la [topologia](/help/communities/topologies.md) è una [farm di pubblicazione](/help/sites-deploying/recommended-deploys.md#tarmk-farm), la registrazione e le modifiche apportate in un&#39;istanza di Publish devono essere sincronizzate con le altre istanze di Publish. I membri devono essere in grado di accedere e visualizzare i propri dati su qualsiasi nodo di Publish.
+Quando la [topologia](/help/communities/topologies.md) è una [farm di pubblicazione](/help/sites-deploying/recommended-deploys.md#tarmk-farm), la registrazione e le modifiche apportate in un&#39;istanza di pubblicazione devono essere sincronizzate con altre istanze di pubblicazione. I membri devono essere in grado di accedere e visualizzare i propri dati su qualsiasi nodo Publish.
 
 Quando la sincronizzazione utente è abilitata, i dati utente vengono sincronizzati automaticamente tra le istanze Publish nella farm.
 
@@ -57,21 +57,21 @@ Per istruzioni dettagliate su come abilitare la sincronizzazione in una farm di 
 
 ## Cosa Succede Quando... {#what-happens-when}
 
-### Sito Publish dalla console dei siti di Communities {#publish-site-from-communities-sites-console}
+### Pubblica sito dalla console Siti di Communities {#publish-site-from-communities-sites-console}
 
 Quando un sito community viene pubblicato dalla console [Sites per community](/help/communities/sites-console.md), l&#39;effetto è di [replicare](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) le pagine associate e Sling distribuisce i gruppi di utenti community creati in modo dinamico, inclusa la loro appartenenza.
 
-### L&#39;utente è stato creato o modifica il profilo su Publish {#user-is-created-or-edits-profile-on-publish}
+### L&#39;utente è stato creato o modifica il profilo al momento della pubblicazione {#user-is-created-or-edits-profile-on-publish}
 
-Per progettazione, gli utenti e i profili creati nell’ambiente Publish (ad esempio tramite registrazione autonoma, accesso social, autenticazione LDAP) non vengono visualizzati nell’ambiente di authoring.
+Per progettazione, gli utenti e i profili creati nell’ambiente di pubblicazione (ad esempio mediante registrazione autonoma, accesso social, autenticazione LDAP) non vengono visualizzati nell’ambiente di authoring.
 
 Se la topologia è una [farm di pubblicazione](/help/communities/topologies.md) e la sincronizzazione utente è stata configurata correttamente, il profilo utente *utente* e *utente* viene sincronizzato nella farm di pubblicazione utilizzando la distribuzione Sling.
 
-### Nuovo gruppo community creato su Publish {#new-community-group-is-created-on-publish}
+### Nuovo gruppo community creato al momento della pubblicazione {#new-community-group-is-created-on-publish}
 
-Sebbene avviata da un&#39;istanza di Publish, la creazione del gruppo community, che genera nuove pagine del sito e un nuovo gruppo di utenti, si verifica in realtà nell&#39;istanza Autore.
+Anche se avviata da un’istanza Publish, la creazione del gruppo community, che si traduce in nuove pagine del sito e in un nuovo gruppo di utenti, si verifica in realtà nell’istanza Author.
 
-Come parte del processo, le nuove pagine del sito vengono replicate in tutte le istanze di Publish. Il gruppo di utenti community creato in modo dinamico e la sua appartenenza sono Sling distribuiti a tutte le istanze di Publish.
+Come parte del processo, le nuove pagine del sito vengono replicate in tutte le istanze Publish. Il gruppo utenti community creato in modo dinamico e i relativi membri sono Sling distribuiti a tutte le istanze Publish.
 
 ### Gli utenti o i gruppi di utenti vengono creati utilizzando la console Sicurezza {#users-or-user-groups-are-created-using-security-console}
 
@@ -79,7 +79,7 @@ Per progettazione, i dati utente creati nell’ambiente di pubblicazione non ven
 
 Se necessario, quando si utilizza la console [Amministrazione utenti e sicurezza](/help/sites-administering/security.md) per aggiungere nuovi utenti nell&#39;ambiente di pubblicazione, la sincronizzazione utenti sincronizza i nuovi utenti e l&#39;appartenenza al gruppo con altre istanze di pubblicazione. La sincronizzazione degli utenti sincronizza anche i gruppi di utenti creati tramite la console di sicurezza.
 
-### L&#39;utente pubblica il contenuto su Publish {#user-posts-content-on-publish}
+### L&#39;utente pubblica il contenuto al momento della pubblicazione {#user-posts-content-on-publish}
 
 Per i contenuti generati dagli utenti (UGC, User-Generated Content), i dati immessi in un&#39;istanza Publish sono accessibili tramite il [SRP configurato](/help/communities/srp-config.md).
 
@@ -114,7 +114,7 @@ L’istanza di authoring esegue il ping dell’endpoint di esportazione degli ed
 
 Per configurare la configurazione degli agenti di sincronizzazione Apache Sling:
 
-1. Accedi con privilegi di amministratore all’istanza di authoring AEM.
+1. Accedi con privilegi di amministratore all’istanza Autore AEM.
 1. Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md). Ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Individua **Agente di distribuzione Apache Sling - Factory agenti di sincronizzazione**.
 
@@ -130,7 +130,7 @@ Per configurare la configurazione degli agenti di sincronizzazione Apache Sling:
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe Granite Distribution - Provider segreto di trasporto con password crittografata {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Distribuzione Adobe Granite - Provider segreto di trasporto con password crittografata {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Consente all’autore di identificare l’utente autorizzato come autorizzato a sincronizzare i dati utente dall’autore alla pubblicazione.
 
@@ -140,7 +140,7 @@ Ogni volta che i dati devono essere installati o recuperati dagli editori, l’a
 
 Per connettere l’autore agli editori che utilizzano un utente autorizzato:
 
-1. Accedi con privilegi di amministratore all’istanza di authoring AEM.
+1. Accedi con privilegi di amministratore all’istanza Autore AEM.
 1. Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md).
 
    Ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
@@ -177,10 +177,10 @@ Per configurare i dati (percorsi dei nodi) da sincronizzare:
 
    ![queue-agents-fact](assets/queue-agents-fact.png)
 
-### Adobe Granite Distribution - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
+### Distribuzione Adobe Granite - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
 Questa configurazione sincronizza l&#39;appartenenza ai gruppi tra gli editori.
-Se la modifica dell&#39;appartenenza di un gruppo in un editore non comporta l&#39;aggiornamento dell&#39;appartenenza ad altri editori, verificare che **ref :members** sia aggiunto a **nomi di proprietà cercate**.
+Se la modifica dell&#39;appartenenza di un gruppo in un editore non comporta l&#39;aggiornamento dell&#39;appartenenza ad altri editori, verificare che **ref:members** sia aggiunto ai **nomi di proprietà cercate**.
 
 Per garantire la sincronizzazione dei membri:
 
@@ -207,7 +207,7 @@ L’autore esegue il polling degli editori ogni 30 secondi (impostazione predefi
 
 Per modificare l&#39;intervallo di polling:
 
-1. Accedi con privilegi di amministratore all’istanza di authoring AEM.
+1. Accedi con privilegi di amministratore all’istanza Autore AEM.
 1. Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md), ad esempio [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. Individua **Trigger di distribuzione Apache Sling - Factory dei trigger pianificati**
 
@@ -230,7 +230,7 @@ Per i problemi nella distribuzione Sling in cui si verifica una discrepanza nell
 
 Per sincronizzare sottoscrizioni, operazioni e notifiche
 
-Su ogni istanza di pubblicazione AEM:
+Su ogni istanza di pubblicazione di AEM:
 
 1. Accedi con privilegi di amministratore.
 1. Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md). Ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
@@ -255,7 +255,7 @@ Su ogni istanza di pubblicazione AEM:
 
    I tipi di nodo specificati in questa proprietà vengono sincronizzati e le informazioni sulle notifiche (blog e configurazioni seguite) vengono sincronizzate tra diversi editori.
 
-1. Aggiungi tutte le cartelle da sincronizzare in **DistributedFolders**. Ad esempio:
+1. Aggiungi tutte le cartelle da sincronizzare in **DistributedFolders**. Ad esempio,
 
    `segments/scoring`
 
@@ -275,18 +275,18 @@ Su ogni istanza di pubblicazione AEM:
 
 ### ID Sling univoco {#unique-sling-id}
 
-L’istanza di authoring dell’AEM utilizza l’ID Sling per identificare da dove provengono i dati e a quali editori deve (o non deve) inviare nuovamente il pacchetto a.
+L’istanza di authoring di AEM utilizza l’ID Sling per identificare da dove provengono i dati e a quali editori deve (o non deve) inviare nuovamente il pacchetto a.
 
 Assicurati che tutti gli editori in una farm di pubblicazione abbiano un ID Sling univoco. Se l’ID Sling è lo stesso per più istanze di pubblicazione in una farm di pubblicazione, la sincronizzazione degli utenti non riesce. Poiché l’autore non sa da dove recuperare il pacchetto e dove installarlo.
 
-Per garantire un ID Sling univoco degli editori nella farm di pubblicazione, in ogni istanza di Publish:
+Per garantire un ID Sling univoco degli editori nella farm di pubblicazione, in ogni istanza di pubblicazione:
 
-1. Passa a [https://_host:porta_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
+1. Passa a [https://_host :port_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
 1. Verifica il valore di **ID Sling**.
 
    ![slingid](assets/slingid.png)
 
-   Se l’ID Sling di un’istanza di Publish corrisponde all’ID Sling di qualsiasi altra istanza di Publish:
+   Se l’ID Sling di un’istanza Publish corrisponde all’ID Sling di qualsiasi altra istanza Publish:
 
 1. Arresta una delle istanze Publish con un ID Sling corrispondente.
 1. Nella directory `crx-quickstart/launchpad/felix` cercare ed eliminare il file denominato *sling.id.file.*
@@ -299,10 +299,10 @@ Per garantire un ID Sling univoco degli editori nella farm di pubblicazione, in 
 
    Usa Esplora risorse e cerca `sling.id.file`
 
-1. Avvia l’istanza di Publish. All’avvio gli viene assegnato un nuovo ID Sling.
+1. Avvia l’istanza Publish. All’avvio gli viene assegnato un nuovo ID Sling.
 1. Verifica che l&#39;ID **Sling** sia univoco.
 
-Ripeti questi passaggi fino a quando tutte le istanze di Publish non avranno un ID Sling univoco.
+Ripeti questi passaggi fino a quando tutte le istanze Publish non hanno un ID Sling univoco.
 
 ### Generatore pacchetti Vault - Fabbrica {#vault-package-builder-factory}
 
@@ -311,7 +311,7 @@ In `/home/users`, viene creato un nodo `*/rep:cache`. Si tratta di una cache uti
 
 La sincronizzazione degli utenti può essere interrotta se `rep :cache` nodi vengono sincronizzati tra gli editori.
 
-Per garantire che gli aggiornamenti vengano sincronizzati correttamente tra gli editori, su ogni istanza di AEM Publish:
+Per garantire che gli aggiornamenti vengano sincronizzati correttamente tra gli editori, in ogni istanza di AEM Publish:
 
 1. Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md)
 
@@ -325,7 +325,7 @@ Per garantire che gli aggiornamenti vengano sincronizzati correttamente tra gli 
    * `/home/users|-.*/.tokens`
    * `/home/users|-.*/rep:cache`
 1. Gestione delle policy
-   * Per sovrascrivere i nodi rep :policy esistenti con nuovi nodi, aggiungere un terzo filtro pacchetto: `/home/users|+.*/rep:policy`
+   * Per sovrascrivere i nodi esistenti della rappresentazione :policy con quelli nuovi, aggiungere un terzo filtro pacchetto: `/home/users|+.*/rep:policy`
    * Per impedire la distribuzione dei criteri, impostare: `Acl Handling: IGNORE`
 
    ![Generatore di pacchetti Vault factory](assets/vault-package-builder-factory.png)
@@ -343,7 +343,7 @@ Se la distribuzione Sling non riesce, prova i seguenti passaggi di debug:
 
 1. **Verifica autorizzazioni utente autorizzate**
 
-   Se i pacchetti non sono installati correttamente, verificare che l&#39;[utente autorizzato](/help/sites-administering/sync.md#createauthuser) creato nella prima istanza di Publish disponga degli ACL corretti.
+   Se i pacchetti non sono installati correttamente, verificare che l&#39;[utente autorizzato](/help/sites-administering/sync.md#createauthuser) creato nella prima istanza Publish disponga degli ACL corretti.
 
    Per convalidarlo, invece dell&#39;[utente autorizzato creato](/help/sites-administering/sync.md#createauthuser), modifica la configurazione [Distribuzione Adobe Granite - Provider segreto di trasporto password crittografata](/help/sites-administering/sync.md#adobegraniteencpasswrd) nell&#39;istanza Autore per utilizzare le credenziali utente amministratore. Ora prova a installare di nuovo i pacchetti. Se la sincronizzazione degli utenti funziona correttamente con le credenziali di amministratore, significa che l’utente Publish creato non disponeva di ACL appropriati.
 
@@ -351,13 +351,13 @@ Se la distribuzione Sling non riesce, prova i seguenti passaggi di debug:
 
    Se nella farm di pubblicazione non vengono sincronizzati solo nodi specifici, ad esempio i membri del gruppo non sono sincronizzati, verificare che la configurazione [Distribuzione Adobe Granite - Diff Observer Factory](/help/sites-administering/sync.md#diffobserver) sia abilitata e che **rep: members** siano impostati in **nomi di proprietà visualizzati**.
 
-1. **Verifica la configurazione del listener di sincronizzazione utenti di AEM Communities.** Se gli utenti creati sono sincronizzati ma le sottoscrizioni e i seguenti non funzionano, verificare che la configurazione del listener di sincronizzazione utenti di AEM Communities abbia:
+1. **Verifica la configurazione del listener di sincronizzazione utenti di AEM Communities.** Se gli utenti creati sono sincronizzati ma le sottoscrizioni e i seguenti non funzionano, assicurati che la configurazione del listener di sincronizzazione utenti di AEM Communities disponga di:
 
    * Tipi di nodo- impostati su **rep:User, nt:unstructured**, **nt:resource**, **rep:ACL**, **sling:Folder** e **sling:OrderedFolder**.
-   * Nodi ignorabili - impostati su **.token**, **system** e **rep :cache**.
+   * Nodi ignorabili: impostati su **.token**, **sistema** e **rappresentazione:cache**.
    * Cartelle distribuite: impostare le cartelle che si desidera distribuire.
 
-1. **Verifica i registri generati durante la creazione dell&#39;utente nell&#39;istanza di Publish**
+1. **Verifica i registri generati durante la creazione dell&#39;utente nell&#39;istanza di pubblicazione**
 
    Se le configurazioni di cui sopra sono impostate in modo appropriato ma la sincronizzazione utente non funziona, controlla i registri generati al momento della creazione dell’utente.
 
@@ -378,7 +378,7 @@ Se la distribuzione Sling non riesce, prova i seguenti passaggi di debug:
 Per eseguire il debug:
 
 1. Disattiva la sincronizzazione utente:
-1. Nell’istanza di authoring AEM, accedi con privilegi di amministratore.
+1. Nell’istanza Autore di AEM, accedi con privilegi di amministratore.
 
    1. Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md). Ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
    1. Individuare la configurazione **Agente di distribuzione Apache Sling - Factory agenti di sincronizzazione**.
@@ -391,6 +391,6 @@ Per eseguire il debug:
 1. Passare a un editore e creare un utente nell&#39;editore. Di conseguenza, vengono creati gli eventi.
 1. Controlla l&#39;[ordine dei registri](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) creati durante la creazione dell&#39;utente.
 1. Verificare se un pacchetto **vlt** è stato creato in **/var/sling/distribution/packages/socialpubsync-vlt/data**.
-1. Ora abilita la sincronizzazione degli utenti nell’istanza Autore AEM.
+1. Ora abilita la sincronizzazione degli utenti nell’istanza Autore di AEM.
 1. Nel server di pubblicazione, modificare gli endpoint di esportazione o importazione in **Agente di distribuzione Apache Sling - Factory agenti di sincronizzazione**.
 Possiamo scaricare ed estrarre i dati del pacchetto per verificare tutte le proprietà inviate ad altri editori e quali dati vengono persi.

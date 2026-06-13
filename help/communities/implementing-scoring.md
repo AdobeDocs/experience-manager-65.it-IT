@@ -13,7 +13,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
@@ -181,8 +181,7 @@ I punteggi vengono memorizzati in SRP.
 >
 >Esempio di cosa *non* fare:
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring
->/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### Sottoregole punteggio {#scoring-sub-rules}
 
@@ -332,7 +331,7 @@ La proprietà `scoringRules` di una regola di badge limita semplicemente le rego
 
 >[!NOTE]
 >
->Best practice : crea immagini distintive univoche per ciascun sito AEM.
+>Best practice : crea immagini distintive univoche per ogni sito AEM.
 
 ![badging-rule-configuration](assets/badging-rule-configuration.png)
 
@@ -396,10 +395,10 @@ cURL -i -X POST -H *intestazione* -u *firma* -F *operazione* -F *distintivo* *me
 *intestazione* = &quot;Accept:application/json&quot;
 intestazione personalizzata da passare al server (obbligatoria)
 
-*accesso* = administrator-id:password
+*accesso* = id-amministratore:password
 ad esempio, admin:admin
 
-*operation* = &quot;:operation=social:assignBadge&quot; OPPURE &quot;:operation=social:deleteBadge&quot;
+*operazione* = &quot;:operation=social:assignBadge&quot; O &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
@@ -450,7 +449,7 @@ Per i componenti community consegnati, le tabelle seguenti descrivono i `verbs` 
 >
 >Una nuova proprietà booleana, `allowBadges`, abilita/disabilita la visualizzazione dei badge per un&#39;istanza del componente. È configurabile nelle [finestre di dialogo di modifica dei componenti](/help/communities/author-communities.md) aggiornate tramite una casella di controllo con etichetta **Distintivi visualizzati**.
 
-**[Componente Calendario](/help/communities/calendar.md)**
+**[Componente calendario](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descrizione** |
@@ -470,7 +469,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | AGGIORNA | commento del membro modificato |
 | ELIMINA | commento del membro eliminato |
 
-**[Componente Libreria File](/help/communities/file-library.md)**
+**[Componente libreria file](/help/communities/file-library.md)**
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrizione** |
@@ -500,7 +499,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | AGGIORNA | articolo del blog o commento di un membro è stato modificato |
 | ELIMINA | l&#39;articolo o il commento del blog del membro è stato eliminato |
 
-**[Componente QnA](/help/communities/working-with-qna.md)**
+Componente **[QnA](/help/communities/working-with-qna.md)**
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrizione** |
@@ -529,7 +528,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally/rating
 | AGGIUNGI VALUTAZIONE | il contenuto dell&#39;utente è stato rivalutato |
 | RIMUOVI VALUTAZIONE | il contenuto dell&#39;utente non è stato valutato correttamente |
 
-**[Componente Votazione](/help/communities/voting.md)**
+**[Componente voto](/help/communities/voting.md)**
 SocialEvent `topic`= com/adobe/cq/social/tally/voting
 
 | **Verbo** | **Descrizione** |
@@ -555,7 +554,7 @@ Per un componente personalizzato, viene creata un&#39;istanza di SocialEvent per
 
 Per supportare il punteggio, SocialEvent deve eseguire l&#39;override del metodo `getVerb()` in modo che venga restituito un `verb` appropriato per ogni `action`. Il `verb` restituito per un&#39;azione può essere uno usato comunemente (ad esempio `POST`) o uno specializzato per il componente (ad esempio `ADD RATING`). Esiste una relazione *n-1* tra `actions` e `verbs`.
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### I badge non vengono visualizzati {#badges-are-not-appearing}
 
@@ -631,7 +630,7 @@ Infine,
 
 * Individua il componente nell’istanza di pubblicazione.
 * Accedi come membro della community (ad esempio, weston.mccall@dodgit.com / password).
-* Post un nuovo argomento forum.
+* Pubblica un nuovo argomento forum.
 * Affinché il badge sia visibile, è necessario aggiornare la pagina.
 
    * Esci e accedi come membro diverso della community (ad esempio: aaron.mcdonald@mailinator.com/password).

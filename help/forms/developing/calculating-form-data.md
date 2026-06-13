@@ -1,5 +1,5 @@
 ---
-title: Calcolo dati modulo
+title: Calcolo dei dati del modulo
 description: Utilizzare il servizio Forms per calcolare i valori immessi da un utente in un modulo e visualizzare i risultati. Il servizio Forms calcola i valori utilizzando l’API Java e l’API del servizio web.
 contentOwner: admin
 content-type: reference
@@ -12,16 +12,16 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 0%
+source-wordcount: '1870'
+ht-degree: 1%
 
 ---
 
-# Calcolo dati modulo {#calculating-form-data}
+# Calcolo dei dati del modulo {#calculating-form-data}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Il servizio Forms può calcolare i valori immessi da un utente in un modulo e visualizzarne i risultati. Per calcolare i dati del modulo, è necessario eseguire due attività. Innanzitutto, è possibile creare uno script di progettazione del modulo che calcola i dati del modulo. La progettazione di un modulo supporta tre tipi di script. Un tipo di script viene eseguito sul client, un altro sul server e il terzo sul server e sul client. Il tipo di script descritto in questo argomento viene eseguito sul server. I calcoli lato server sono supportati per le trasformazioni HTML, PDF e guida ai moduli (obsolete).
+Il servizio Forms può calcolare i valori immessi da un utente in un modulo e visualizzarne i risultati. Per calcolare i dati del modulo, è necessario eseguire due attività. Innanzitutto, è possibile creare uno script di progettazione del modulo che calcola i dati del modulo. La progettazione di un modulo supporta tre tipi di script. Un tipo di script viene eseguito sul client, un altro sul server e il terzo sul server e sul client. Il tipo di script descritto in questo argomento viene eseguito sul server. I calcoli lato server sono supportati per le trasformazioni HTML, PDF e Guida ai moduli (obsolete).
 
 Come parte del processo di progettazione del modulo, è possibile utilizzare calcoli e script per fornire un’esperienza utente più ricca. È possibile aggiungere calcoli e script alla maggior parte dei campi e degli oggetti del modulo. Creare uno script di progettazione del modulo per eseguire operazioni di calcolo sui dati immessi da un utente in un modulo interattivo.
 
@@ -124,11 +124,11 @@ Dopo aver verificato che lo stato di elaborazione associato a un modulo inviato 
 **Consulta anche**
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Calcola i dati del modulo utilizzando l&#39;API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
+[Calcolare i dati del modulo utilizzando l&#39;API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcola i dati del modulo utilizzando l&#39;API del servizio Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Guida introduttiva all&#39;API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Rendering PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Guida introduttiva dell&#39;API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Rendering di PDF forms interattivo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcolare i dati del modulo utilizzando l’API Java {#calculate-form-data-using-the-java-api}
@@ -150,7 +150,7 @@ Calcola i dati del modulo utilizzando l’API Forms (Java):
    * Richiama il metodo `processFormSubmission` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
       * Oggetto `com.adobe.idp.Document` contenente i dati del modulo.
-      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specificare il tipo di contenuto da gestire specificando uno o più valori per la variabile di ambiente `CONTENT_TYPE`. Per gestire i dati XML e PDF, ad esempio, specificare il seguente valore stringa per questo parametro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specificare il tipo di contenuto da gestire specificando uno o più valori per la variabile di ambiente `CONTENT_TYPE`. Per gestire ad esempio i dati XML e PDF, specificare il valore stringa seguente per questo parametro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Valore stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di runtime.
 
@@ -219,5 +219,5 @@ Calcola i dati del modulo utilizzando l’API di Forms (servizio web):
    * Creare una matrice di byte e popolarla richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` alla matrice di byte.
    * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.http.HttpServletResponse` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
-**Vedere anche**
+**Vedi anche**
 [Richiamo di AEM Forms tramite la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
