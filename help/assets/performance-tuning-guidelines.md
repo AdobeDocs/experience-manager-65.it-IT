@@ -208,42 +208,42 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick nel file
 
 >[!CAUTION]
 >
->Se ImageMagick utilizza tutto lo spazio disponibile su disco, un errore di configurazione può rendere il server instabile. The policy changes required to process large files using ImageMagick may impact the [!DNL Experience Manager] performance. For more information, see [install and configure ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Se ImageMagick utilizza tutto lo spazio disponibile su disco, un errore di configurazione può rendere il server instabile. Le modifiche della policy necessarie per elaborare file di grandi dimensioni tramite ImageMagick potrebbero influire sulle prestazioni di [!DNL Experience Manager]. Per ulteriori informazioni, vedere [installare e configurare ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
->The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`. See ImageMagick documentation (`https://www.imagemagick.org/script/resources.php` website) for the location of the configuration files.
+>I file ImageMagick `policy.xml` e `configure.xml` sono disponibili in `/usr/lib64/ImageMagick-&#42;/config/` anziché `/etc/ImageMagick/`. Per informazioni sul percorso dei file di configurazione, vedere la documentazione di ImageMagick (`https://www.imagemagick.org/script/resources.php` sito Web).
 
-If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Support if you plan to process lots of large PSD or PSB files. Work with an Adobe Customer Support representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe&#39;s proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
+Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l&#39;Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con un rappresentante dell’Assistenza clienti Adobe per implementare queste best practice per la tua implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad alta risoluzione con più di 30000 x 23000 pixel.
 
-### XMP writeback {#xmp-writeback}
+### writeback di XMP {#xmp-writeback}
 
-XMP writeback updates the original asset whenever metadata is modified in [!DNL Experience Manager], which results in the following:
+Il writeback di XMP aggiorna la risorsa originale ogni volta che i metadati vengono modificati in [!DNL Experience Manager], con il risultato seguente:
 
-* The asset itself is modified
-* A version of the asset is created
+* La risorsa stessa viene modificata
+* Viene creata una versione della risorsa
 
-The outcomes listed consume considerable resources. Therefore, Adobe recommends disabling XMP writeback if it is not required. For more information, see the [XMP writeback](/help/assets/xmp-writeback.md).
+I risultati elencati consumano risorse considerevoli. Pertanto, Adobe consiglia di disabilitare il writeback di XMP se non è necessario. Per ulteriori informazioni, vedere [XMP writeback](/help/assets/xmp-writeback.md).
 
-Importing a large amount of metadata can result in resource-intensive XMP writeback activity if the run workflows flag is checked. Pianifica tale importazione durante l’utilizzo snello del server in modo che le prestazioni per altri utenti non siano influenzate.
+L&#39;importazione di una grande quantità di metadati può comportare un&#39;attività di writeback di XMP che richiede molte risorse se il flag Esegui flussi di lavoro è selezionato. Pianifica tale importazione durante l’utilizzo snello del server in modo che le prestazioni per altri utenti non siano influenzate.
 
 ## Replica {#replication}
 
-When replicating assets to a large number of publish instances, for example, in a Sites implementation, Adobe recommends you use chain replication. In this case, the author instance replicates to a single publish instance which in turn replicates to the other publish instances, freeing up the author instance.
+Quando replichi le risorse in un numero elevato di istanze di pubblicazione, ad esempio in un’implementazione di Sites, Adobe consiglia di utilizzare la replica a catena. In questo caso, l’istanza di authoring viene replicata in una singola istanza di pubblicazione che a sua volta viene replicata nelle altre istanze di pubblicazione, liberando l’istanza di authoring.
 
-### Configure chain replication {#configure-chain-replication}
+### Configurare la replica a catena {#configure-chain-replication}
 
-1. Choose which publish instance you want to use for chaining the replications to
-1. On that publish instance add replication agents that point to the other publish instances
-1. On each of those replication agents, enable &quot;On Receive&quot; on the &quot;Triggers&quot; tab
+1. Scegli l’istanza di pubblicazione da utilizzare per il concatenamento delle repliche
+1. In tale istanza di pubblicazione aggiungi agenti di replica che puntano alle altre istanze di pubblicazione
+1. Su ciascuno di questi agenti di replica, abilita &quot;Alla ricezione&quot; nella scheda &quot;Triggers&quot;
 
 >[!NOTE]
 >
->Adobe does not recommend auto-activating assets. However, if necessary, Adobe recommends doing this as the final step in a workflow, usually DAM Update Asset.
+>Adobe consiglia di non attivare automaticamente le risorse. Tuttavia, se necessario, Adobe consiglia di eseguire questo passaggio come passaggio finale in un flusso di lavoro, in genere Aggiorna risorsa DAM.
 
-## Search indexes {#search-indexes}
+## Cerca indici {#search-indexes}
 
-Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) per alcune ottimizzazioni dell&#39;indice.
+Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) per alcune ottimizzazioni dell&#39;indice.
 
 Creare indici personalizzati per le query eseguite spesso. Per informazioni dettagliate, consulta la [metodologia per l&#39;analisi delle query lente](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [creazione di indici personalizzati](/help/sites-deploying/queries-and-indexing.md). Per ulteriori informazioni sulle best practice per query e indici, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

@@ -12,16 +12,12 @@ exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 solution: Experience Manager, Experience Manager Assets
 autotag-review: '2026-05-18T18:33:16.243Z'
 TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
-product_v2:
-  - id: e14eb250-3c22-4a07-9061-a78112b2b826
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1093
 ht-degree: 0%
 
 ---
@@ -42,14 +38,14 @@ Vedere anche [Gestione dei predefiniti visualizzatore](/help/assets/managing-vie
 
 Selezionare [Stazione spaziale 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360 gradi. Durante la riproduzione di un video, trascinare il puntatore del mouse in una nuova posizione per modificare l&#39;angolo di visualizzazione.
 
-![Campione di video 360 con la stazione spaziale internazionale che galleggia nello spazio esterno e la terra e il sole dietro di esso.](assets/6_5_360videoiss_simplified.png)
+![Esempio di video 360 con la stazione spaziale internazionale che galleggia nello spazio esterno e la terra e il sole dietro di essa.](assets/6_5_360videoiss_simplified.png)
 *Fotogramma video da Stazione Spaziale 360*
 
 ## Video e Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}
 
 È possibile utilizzare Adobe Premier Pro per visualizzare e modificare il metraggio 360/VR. Ad esempio, potete inserire correttamente loghi e testo in una scena e applicare effetti e transizioni progettati appositamente per gli elementi multimediali equirettangolari.
 
-Vedi [Modifica video 360/VR](https://helpx.adobe.com/it/premiere-pro/how-to/edit-360-vr-video.html).
+Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Carica le risorse da utilizzare con il visualizzatore video 360 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -130,7 +126,7 @@ Consulta [Aggiungere Dynamic Media Assets alle pagine](/help/assets/adding-dynam
    * Trascinare il puntatore del mouse sul video per modificare l&#39;angolo di visualizzazione della scena statica.
    * Per iniziare la riproduzione, seleziona il pulsante **[!UICONTROL Riproduci]** del video. Durante la riproduzione del video, trascinare il puntatore del mouse sul video per modificare l&#39;angolo di visualizzazione.
 
-   ![Schermata della stazione spaziale internazionale che galleggia nello spazio con la terra e il sole sullo sfondo &#x200B;](assets/6_5_360video-preview-video360-social.png)*Schermata di un video a 360°.*
+   ![Schermata della stazione spaziale internazionale che galleggia nello spazio con la terra e il sole sullo sfondo ](assets/6_5_360video-preview-video360-social.png)*Schermata di un video a 360°.*
 
    * Dall&#39;elenco Visualizzatori, selezionare **[!UICONTROL Video360VR]**.
 

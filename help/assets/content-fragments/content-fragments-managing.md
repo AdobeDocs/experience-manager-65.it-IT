@@ -7,8 +7,8 @@ exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 74%
+source-wordcount: '1741'
+ht-degree: 75%
 
 ---
 
@@ -197,7 +197,7 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 
 * **Salva** fornisce accesso all’opzione **Salva e chiudi**.
 
-* Il menu a discesa tre punti (**...**) fornisce accesso alle azioni aggiuntive:
+* I tre punti (**...**) fornisce accesso ad azioni aggiuntive:
    * **Aggiorna i riferimenti di pagina**
       * Questo aggiorna tutti i riferimenti di pagina.
    * **[Pubblicazione rapida](#publishing-and-referencing-a-fragment)**
