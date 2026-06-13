@@ -430,7 +430,7 @@ Nel concepire questi test, occorre tenere presente che non tutti gli scenari si 
 
 | Scenario errore | Tipo di errore | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Sovraccarico del componente di ricerca | Cerca nel carattere jolly globale (asterisco) | 10 | 1 |  | La ricerca viene eseguita solo in &amp;ast;&amp;ast;&amp;ast;. |
+| Sovraccarico del componente di ricerca | Cerca nel carattere jolly globale (asterisco) | 10 | 1 |  | La ricerca viene eseguita solo in &ast;&ast;&ast;. |
 |   | Interrompi parola | 20 | 2 |  | Ricerca di una parola di arresto in corso. |
 |   | Stringa vuota | 10 | 1 |  | Ricerca di una stringa vuota. |
 |   | Caratteri speciali | 10 | 1 |  | Ricerca di caratteri speciali. |

@@ -472,7 +472,7 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   Per rimuovere una configurazione, fare clic sul pulsante **Elimina** situato a destra della configurazione.
 
-  Per rimuovere una configurazione, fai clic sul pulsante** Elimina**.
+  Per rimuovere una configurazione, fai clic sul pulsante **&#x200B; Elimina**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -490,7 +490,7 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   >[!NOTE]
   >
-  >[I criteri dei contenuti per i componenti che si avvalgono dell&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni dell&#39;interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[I criteri dei contenuti per i componenti che si avvalgono dell&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni dell&#39;interfaccia utente. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Criteri e proprietà (contenitore di layout)**
 
