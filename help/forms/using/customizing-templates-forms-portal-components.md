@@ -88,11 +88,11 @@ Forms Portal fornisce una sintassi per i segnaposto per visualizzare metadati pe
 
 Per includere una voce ripetibile, configurare il valore dell&#39;attributo **dati-ripetibili** su **true**.
 
-*Nell&#39;esempio discusso, due elementi Div sono presenti nella parte superiore del modello personalizzato. La prima, con classe CSS &quot;__FP_boxes-container&quot;, funziona come elemento contenitore per i moduli elencati. La seconda, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. L&#39;attributo **data-Repeable**presente nell&#39;elemento Div ha il valore **true**.*
+*Nell&#39;esempio discusso, due elementi Div sono presenti nella parte superiore del modello personalizzato. La prima, con classe CSS &quot;__FP_boxes-container&quot;, funziona come elemento contenitore per i moduli elencati. La seconda, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. L&#39;attributo **data-Repeable**&#x200B;presente nell&#39;elemento Div ha il valore **true**.*
 
 Ogni segnaposto dispone di un set di metadati predefinito esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere la proprietà **${metadata_prop}** nella posizione desiderata.
 
-*Nell&#39;esempio, la proprietà dei metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**e **path**nel modo prescritto.*
+*Nell&#39;esempio, la proprietà dei metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;e **path**&#x200B;nel modo prescritto.*
 
 ## Metadati pronti all’uso {#out-of-the-box-metadata}
 

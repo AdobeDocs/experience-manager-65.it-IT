@@ -241,7 +241,7 @@ Per abilitare il servizio di precompilazione, specifica la Configurazione predef
 >La Configurazione del servizio di precompilazione è applicabile ai moduli adattivi, ai moduli HTML5 e ai set di moduli HTML5.
 
 1. Apri **[!UICONTROL Configurazione console Web Adobe Experience Manager]** utilizzando l&#39;URL:\
-   https://<server>:<porta>/system/console/configMgr
+   https://&lt;server>:&lt;porta>/system/console/configMgr
 1. Cerca e apri **[!UICONTROL Configurazione predefinita servizio di precompilazione]**.
 
    ![Configurazione preriempimento](assets/prefill_config_new.png)
