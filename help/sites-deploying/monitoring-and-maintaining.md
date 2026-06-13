@@ -55,7 +55,7 @@ Spesso viene eseguito un backup completo a intervalli regolari (ad esempio, gior
 
 >[!CAUTION]
 >
->Durante l&#39;implementazione dei backup delle istanze di produzione, è necessario eseguire i test *1} per verificare che sia possibile ripristinare correttamente il backup.*
+>Durante l&#39;implementazione dei backup delle istanze di produzione, è necessario eseguire i test *1&rbrace; per verificare che sia possibile ripristinare correttamente il backup.*
 >
 >Senza questo test, il backup è potenzialmente inutile (scenario peggiore).
 
@@ -253,7 +253,7 @@ Revisione delle informazioni del giornale di registrazione.
 
 >[!NOTE]
 >
->I registri di ImageServer e s7access non sono inclusi nel pacchetto **Download Full **generato dalla **pagina **system/console/status-Bundlelist&quot;. Per assistenza, se hai [!DNL Dynamic Media] problemi, aggiungi i registri di accesso ImageServer e s7access quando contatti l&#39;Assistenza clienti.
+>I registri di ImageServer e s7access non sono inclusi nel pacchetto **Download Full &#x200B;** generato dalla **pagina &#x200B;** system/console/status-Bundlelist&quot;. Per assistenza, se hai [!DNL Dynamic Media] problemi, aggiungi i registri di accesso ImageServer e s7access quando contatti l&#39;Assistenza clienti.
 
 ### Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
 
