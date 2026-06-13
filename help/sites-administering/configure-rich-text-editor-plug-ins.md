@@ -1,5 +1,5 @@
 ---
-title: Configurare i plug-in dell’Editor Rich Text
+title: Configurare i plug-in del Rich Text editor
 description: Scopri come configurare i plug-in dell’Editor Rich Text di Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
@@ -8,13 +8,13 @@ feature: Configuring
 role: Admin
 source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4473'
 ht-degree: 2%
 
 ---
 
 
-# Configurare i plug-in dell’Editor Rich Text {#configure-the-rich-text-editor-plug-ins}
+# Configurare i plug-in del Rich Text editor {#configure-the-rich-text-editor-plug-ins}
 
 Le funzionalità dell’editor Rich Text sono disponibili tramite una serie di plug-in, ciascuno con la proprietà Features. È possibile configurare la proprietà features per abilitare o disabilitare una o più funzionalità dell’editor Rich Text. Questo articolo descrive come configurare in modo specifico i plug-in dell’editor Rich Text.
 
@@ -65,7 +65,7 @@ Dopo aver attivato un plug-in, seguire queste linee guida per configurare la pro
 | | Abilita tutte le funzioni | Abilita alcune funzioni specifiche | Disattiva tutte le funzionalità |
 |---|---|---|---|
 | Nome | funzioni | funzioni | funzioni |
-| Tipo | Stringa | String[] (multi-string; imposta Type su String e fai clic su Multi in CRXDE Lite) | Stringa |
+| Tipo | Stringa | Stringa[] (multistringa; impostare Tipo su Stringa e fare clic su Multiplo in CRXDE Lite) | Stringa |
 | Valore | `*` (un asterisco) | imposta su uno o più valori di feature | - |
 
 ## Comprendere il plug-in Findreplace {#findreplace}
@@ -123,7 +123,7 @@ La configurazione consente i tre tipi di casi di utilizzo seguenti:
 
 ### Configurare i formati consentiti quando si incollano i contenuti {#pasteformats}
 
-È possibile configurare ulteriormente la modalità Incolla come Microsoft Word (`paste-wordhtml`) in modo da poter definire in modo esplicito gli stili consentiti quando si incolla AEM da un altro programma, ad esempio Microsoft® Word.
+È possibile configurare ulteriormente la modalità Incolla come Microsoft Word (`paste-wordhtml`) in modo da poter definire esplicitamente quali stili sono consentiti quando si incolla in AEM da un altro programma, ad esempio Microsoft® Word.
 
 Ad esempio, se solo i formati e gli elenchi in grassetto devono essere consentiti quando si incolla in AEM, puoi filtrare gli altri formati. Questa operazione è denominata filtro di incollamento configurabile e può essere eseguita per entrambi:
 
@@ -135,7 +135,7 @@ Per i collegamenti, puoi anche definire i protocolli che vengono accettati autom
 Per configurare i formati consentiti quando si incolla testo in AEM da un altro programma:
 
 1. Nel componente, passa al nodo `<rtePlugins-node>/edit`. Crea i nodi se non esistono. Per ulteriori dettagli, vedere [attivare un plug-in](#activateplugin).
-1. Crea un nodo sotto il nodo `edit` in modo da poter mantenere le regole di incollamento HTML:
+1. Crea un nodo sotto il nodo `edit` in modo da poter mantenere le regole Incolla di HTML:
 
    * **Nome** `htmlPasteRules`
    * **Tipo** `nt:unstructured`
@@ -194,7 +194,7 @@ Di seguito è riportato un esempio di struttura `htmlPasteRules` valida.
 
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare gli stili per modificare l&#39;aspetto di una parte di testo. Gli stili sono basati su classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso tra tag `span` che utilizzano l&#39;attributo `class` per fare riferimento alla classe CSS. Esempio: `<span class=monospaced>Monospaced Text Here</span>`.
+Gli autori possono applicare gli stili per modificare l&#39;aspetto di una parte di testo. Gli stili sono basati su classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso tra tag `span` che utilizzano l&#39;attributo `class` per fare riferimento alla classe CSS. Ad esempio, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Quando il plug-in Stili viene attivato per la prima volta, non sono disponibili stili predefiniti. L&#39;elenco popup è vuoto. Per fornire agli autori stili, effettuare le seguenti operazioni:
 
@@ -271,7 +271,7 @@ Specificare quindi le posizioni dei fogli di stile a cui si desidera fare riferi
 
    * **Nome** `cssName`
    * **Tipo** `String`
-   * **Valore** Il nome della classe CSS (senza un &#39;.&#39; precedente.; ad esempio, `cssClass` invece di `.cssClass`)
+   * **Valore** Il nome della classe CSS (senza un &#39;.&#39; precedente; ad esempio, `cssClass` invece di `.cssClass`)
 
 1. Aggiungere la proprietà `text` allo stesso nodo, che definisce il testo visualizzato nella casella di selezione:
 
@@ -285,7 +285,7 @@ Specificare quindi le posizioni dei fogli di stile a cui si desidera fare riferi
 
 ### Configurare l’editor Rich Text per interruzioni di parola ottimali in giapponese {#jpwordwrap}
 
-Gli autori che utilizzano l’AEM per creare contenuti in lingua giapponese possono applicare uno stile ai caratteri per evitare interruzioni di riga laddove non sia necessaria un’interruzione. Questo consente agli autori di lasciare che le frasi si interrompano nella posizione desiderata. Lo stile di questa funzionalità si basa sulla classe CSS predefinita nel foglio di stile CSS.
+Gli autori che utilizzano AEM per la creazione di contenuti in lingua giapponese possono applicare uno stile ai caratteri per evitare interruzioni di riga quando non è richiesta un’interruzione. Questo consente agli autori di lasciare che le frasi si interrompano nella posizione desiderata. Lo stile di questa funzionalità si basa sulla classe CSS predefinita nel foglio di stile CSS.
 
 >[!NOTE]
 >
@@ -403,7 +403,7 @@ I formati dei paragrafi possono essere resi disponibili per la selezione:
 
 ## Configurare caratteri speciali {#spchar}
 
-In un&#39;installazione AEM standard, quando il plug-in `misctools` è abilitato per i caratteri speciali (`specialchars`), è immediatamente disponibile una selezione predefinita, ad esempio i simboli di copyright e di marchio.
+In un&#39;installazione standard di AEM, quando il plug-in `misctools` è abilitato per i caratteri speciali (`specialchars`) è immediatamente disponibile una selezione predefinita, ad esempio i simboli di copyright e marchio.
 
 È possibile configurare l’editor Rich Text in modo da rendere disponibile una selezione personalizzata di caratteri, definendo caratteri distinti o un’intera sequenza.
 
@@ -460,12 +460,10 @@ In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappr
 1. Sotto questo nodo (denominato in base all’intervallo di caratteri speciali) aggiungi le due proprietà seguenti:
 
    * **Nome** `rangeStart`
-
      **Tipo** `Long`
      **Valore** la rappresentazione [Unicode](https://unicode.org/) (decimale) del primo carattere dell&#39;intervallo
 
    * **Nome** `rangeEnd`
-
      **Tipo** `Long`
      **Valore** la rappresentazione [Unicode](https://unicode.org/) (decimale) dell&#39;ultimo carattere nell&#39;intervallo
 
@@ -505,8 +503,8 @@ Gli stili vengono in genere applicati al testo, ma è possibile applicare un set
    >* **Tipo** `String[]`
    >
    >* **Valore** uno dei seguenti elementi o entrambi, come richiesto:
-   >* `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
-   >* `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
+   >   * `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
+   >   * `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
 
 1. Definisci la posizione dei fogli di stile CSS in modo da poterli fare riferimento. Vedere [Specifica della posizione del foglio di stile](#locationofstylesheet), come quando si definiscono [stili per il testo](#textstyles). La posizione può essere definita se sono stati definiti altri stili.
 1. Nel nodo `table` creare i seguenti nuovi nodi (come richiesto):
@@ -570,7 +568,7 @@ Quando il plug-in spellcheck è attivato, l&#39;editor Rich Text utilizza dizion
 >
 >Viene visualizzato il messaggio `Spell checking failed` se si tenta di verificare una lingua non installata. I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file readme appropriati. Non modificare i file.
 
-Un&#39;installazione AEM standard include i dizionari per l&#39;inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, eseguire la procedura seguente.
+Un&#39;installazione standard di AEM include i dizionari per l&#39;inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, eseguire la procedura seguente.
 
 1. Passa alla pagina [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 

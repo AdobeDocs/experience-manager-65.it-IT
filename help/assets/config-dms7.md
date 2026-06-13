@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6444'
 ht-degree: 4%
 
 ---
@@ -148,7 +148,7 @@ A meno che non disponiate di una disposizione speciale per utilizzare il server 
    * **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**
       * **[!UICONTROL Attivata per impostazione predefinita]** - La configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non si contrassegni una cartella specificamente per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabilitata per impostazione predefinita]** - La configurazione non viene applicata ad alcuna cartella fino a quando non contrassegni esplicitamente una cartella selezionata per la sincronizzazione con Dynamic Media.
-Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**, scegliere una delle tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **[!UICONTROL Sincronizza tutto il contenuto]**&#x200B;in precedenza.* Vedi anche [Utilizzare la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/selective-publishing.md).
+Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**, scegliere una delle tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **[!UICONTROL Sincronizza tutto il contenuto]**&#x200B;in precedenza.* Vedi anche [Operazioni con la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito nella cartella. La cartella eredita invece il valore di sincronizzazione da una delle cartelle precedenti o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per ereditato viene visualizzato tramite una descrizione comando.
          * **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto in questa sottostruttura per la sincronizzazione con Dynamic Media. Le impostazioni specifiche della cartella sovrascrivono la modalità predefinita nella configurazione cloud.
          * **[!UICONTROL Disattivato per le sottocartelle]** - Escludi tutto ciò che si trova in questa struttura secondaria dalla sincronizzazione in Dynamic Media.
@@ -160,7 +160,7 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
    >Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in tempo reale in S7 Delivery.
 
 1. Seleziona **[!UICONTROL Salva]**.
-1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima che venga pubblicato, Experience Manager Author utilizza la convalida basata su token e quindi Experience Manager Author visualizza in anteprima il contenuto Dynamic Media per impostazione predefinita. Tuttavia, puoi &quot;inserire nell&#39;elenco Consentiti&quot; più IP per consentire agli utenti di accedere ai contenuti in anteprima in modo sicuro. Per configurare questa azione in Experience Manager, vedere [Configurare l&#39;installazione della pubblicazione Dynamic Media per il server immagini - Scheda Sicurezza](/help/assets/dm-publish-settings.md#security-tab).
+1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima che venga pubblicato, Experience Manager Author utilizza la convalida basata su token e quindi Experience Manager Author visualizza in anteprima il contenuto Dynamic Media per impostazione predefinita. Tuttavia, puoi &quot;inserire nell&#39;elenco Consentiti&quot; più IP per consentire agli utenti di accedere in modo sicuro all’anteprima del contenuto. Per configurare questa azione in Experience Manager, vedere [Configurare l&#39;installazione della pubblicazione Dynamic Media per il server immagini - Scheda Sicurezza](/help/assets/dm-publish-settings.md#security-tab).
 
 Se si desidera personalizzare ulteriormente la configurazione, ad esempio abilitando le autorizzazioni ACL (Access Control List), è possibile completare facoltativamente qualsiasi attività in [(Facoltativo) Configura impostazioni avanzate in Dynamic Media - Modalità Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 

@@ -7,8 +7,8 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Quando si richiama un servizio AEM Forms su JEE utilizzando i servizi web, è possibile utilizzare le intestazioni WS-Security per trasmettere le informazioni di autenticazione client richieste da AEM Forms su JEE. WS-Security definisce le estensioni SOAP per implementare l&#39;autenticazione client, la riservatezza dei messaggi e l&#39;integrità dei messaggi. Di conseguenza, puoi richiamare AEM Forms sui servizi JEE quando AEM Forms su JEE viene distribuito come server autonomo o in un ambiente cluster.
 
-La modalità di trasmissione delle intestazioni WS-Security ad AEM Forms su JEE dipende dall&#39;utilizzo di classi Java generate da Axis o di un assembly client .NET che utilizza lo stack SOAP nativo di un servizio.
+La modalità di trasmissione delle intestazioni WS-Security ad AEM Forms su JEE dipende dal fatto che si utilizzino classi Java generate da Axis o assembly client .NET che utilizzano lo stack nativo di SOAP di un servizio.
 
 >[!NOTE]
 >

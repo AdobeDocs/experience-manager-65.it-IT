@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 87%
+source-wordcount: '1108'
+ht-degree: 84%
 
 ---
 
@@ -18,13 +18,13 @@ In questa parte del [Percorso per sviluppatori headless di AEM,](overview.md) sc
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso headless di AEM, [Come accedere ai contenuti utilizzando API di distribuzione di AEM](access-your-content.md) hai imparato ad accedere ai contenuti headless in AEM utilizzando l’API GraphQL AEM e ora dovresti:
+Nel documento precedente del percorso headless di AEM, [Come accedere ai contenuti utilizzando API di distribuzione di AEM](access-your-content.md) hai imparato ad accedere ai contenuti headless in AEM utilizzando l’API GraphQL AEM e ora dovresti aver appreso quanto segue:
 
-* Conoscere GraphQL ad alto livello.
-* Sapere come funziona l’API GraphQL di AEM.
-* Comprendere alcune query pratiche di esempio.
+* Conoscenza generale di GraphQL.
+* Come funziona l’API GraphQL di AEM.
+* Alcune query pratiche di esempio.
 
-Questo articolo si basa su questi elementi fondamentali per comprendere come aggiornare il contenuto headless esistente in AEM utilizzando l’API REST.
+Questo articolo si basa su questi elementi fondamentali per comprendere come aggiornare contenuti headless esistenti in AEM utilizzando l’API REST.
 
 ## Obiettivo {#objective}
 
@@ -253,7 +253,7 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 
 >[!CAUTION]
 >
->La configurazione del dispatcher sulle istanze AEM potrebbe bloccare l&#39;accesso a `/api`.
+>La configurazione del dispatcher sulle istanze di AEM potrebbe bloccare l&#39;accesso a `/api`.
 
 >[!NOTE]
 >
@@ -307,10 +307,10 @@ Per ulteriori dettagli sull’utilizzo dell’API REST di AEM Assets, puoi fare 
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai completato questa parte del percorso per sviluppatori headless di AEM, dovresti:
+Ora che hai completato questa parte del percorso per sviluppatori di AEM headless, dovresti aver appreso quanto segue:
 
-* Scopri le nozioni di base dell’API HTTP di AEM Assets.
-* Scopri in che modo i frammenti di contenuto sono supportati in questa API.
+* Le nozioni di base dell’API HTTP di AEM Assets.
+* Come i frammenti di contenuto sono supportati in questa API.
 
 <!--
 * Have experience with sample code and know how the API works in practice.
@@ -320,18 +320,18 @@ Ora che hai completato questa parte del percorso per sviluppatori headless di AE
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Continua il tuo percorso di headless AEM esaminando il documento [How to Go Live with Your Headless Application](go-live.md) in cui realizzi il progetto AEM Headless.
+Continua il tuo percorso AEM headless consultando il documento [Come iniziare a utilizzare l&#39;applicazione headless](go-live.md), dove puoi realizzare il tuo progetto AEM Headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 * [API REST per frammenti di contenuto](/help/assets/assets-api-content-fragments.md)
    * [Riferimento API](/help/assets/assets-api-content-fragments.md#api-reference)
-* [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 * [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=it)
 * [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=it)
 * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

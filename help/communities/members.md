@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 1%
+source-wordcount: '903'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Le funzioni di AEM Communities spesso richiedono la registrazione e l’accesso dei visitatori del sito prima di poter partecipare a una community nell’ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell&#39;ambiente di pubblicazione e viene comunemente indicata come *membri* per distinguerli dagli *utenti* registrati nell&#39;ambiente di authoring.
 
-### Membri (utenti) su Publish {#members-users-on-publish}
+### Membri (utenti) alla pubblicazione {#members-users-on-publish}
 
 Utilizzando le console Membri e Gruppi di Communities, è possibile creare e gestire membri e gruppi di membri registrati nell&#39;ambiente *publish* dall&#39;ambiente *author*. Ciò è possibile solo quando il servizio [tunnel](deploy-communities.md#tunnel-service-on-author) è abilitato.
 

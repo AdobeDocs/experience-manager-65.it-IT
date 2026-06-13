@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6654'
-ht-degree: 0%
+source-wordcount: '6780'
+ht-degree: 1%
 
 ---
 
@@ -819,7 +819,7 @@ Il modello di autorizzazione CUG consente di attivare singolarmente la gestione 
 
 Nella nuova valutazione predefinita dell’installazione di AEM dei criteri per gruppi utenti chiusi (CUG), è abilitata solo con la modalità di esecuzione &quot;pubblicazione&quot;. Per ulteriori dettagli, vedi i dettagli sulla configurazione predefinita [&#x200B; da AEM 6.3](#default-configuration-since-aem). Questo può essere verificato confrontando i criteri efficaci per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i gruppi di utenti chiusi (CUG).
 
-Come spiegato in precedenza, i criteri di controllo dell&#39;accesso ai gruppi utenti chiusi (CUG) ora sono sempre memorizzati nel contenuto, ma la valutazione delle autorizzazioni effettive risultanti da tali criteri verrà applicata solo se **Valutazione gruppi utenti chiusi (CUG) abilitata** è attivata nella console di sistema in Apache Jackrabbit Oak **Configurazione gruppi utenti chiusi (CUG).** Per impostazione predefinita, è abilitato solo con la modalità di esecuzione &#39;pubblicazione&#39;.
+Come spiegato in precedenza, i criteri di controllo dell&#39;accesso ai gruppi utenti chiusi (CUG) ora sono sempre memorizzati nel contenuto, ma la valutazione delle autorizzazioni effettive risultanti da tali criteri verrà applicata solo se **Valutazione gruppi utenti chiusi (CUG) abilitata** è attivata nella console di sistema in Apache Jackrabbit Oak **Configurazione gruppi utenti chiusi (CUG).** Per impostazione predefinita, è abilitato solo con la modalità di esecuzione &quot;pubblicazione&quot;.
 
 ### Differenze Di Autenticazione {#differences-with-regards-to-authentication}
 

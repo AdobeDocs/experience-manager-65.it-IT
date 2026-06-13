@@ -1,5 +1,5 @@
 ---
-title: Gestione dei Forms inviati
+title: Gestione dei moduli inviati
 description: Utilizza il servizio Forms per recuperare i dati inviati immessi in un modulo interattivo. L’utente può inviare i dati del modulo nei formati XML, PDF e URL UTF-16.
 contentOwner: admin
 content-type: reference
@@ -12,18 +12,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2894'
-ht-degree: 0%
+source-wordcount: '2915'
+ht-degree: 1%
 
 ---
 
-# Gestione dei Forms inviati {#handling-submitted-forms}
+# Gestione dei moduli inviati {#handling-submitted-forms}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
 Le applicazioni basate sul Web che consentono a un utente di compilare moduli interattivi richiedono l&#39;invio dei dati al server. Tramite il servizio Forms è possibile recuperare i dati immessi dall&#39;utente in un modulo interattivo. Dopo aver recuperato i dati, è possibile elaborarli per soddisfare i requisiti aziendali. È ad esempio possibile memorizzare i dati in un database, inviarli a un&#39;altra applicazione, inviarli a un altro servizio, unire i dati in una struttura di modulo, visualizzarli in un browser Web e così via.
 
-I dati del modulo vengono inviati al servizio Forms come dati XML o PDF, opzione impostata in Designer. Un modulo inviato come XML consente di estrarre i singoli valori dei dati dei campi. In altre parole, è possibile estrarre il valore di ogni campo modulo immesso dall&#39;utente nel modulo. Un modulo inviato come dati PDF è costituito da dati binari e non da dati XML. È possibile salvare il modulo come file PDF o inviarlo a un altro servizio. Se si desidera estrarre dati da un modulo inviato come XML e quindi utilizzare i dati del modulo per creare un documento PDF, richiamare un&#39;altra operazione AEM Forms. (Vedi [Creazione di documenti PDF con dati XML inviati](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+I dati del modulo vengono inviati al servizio Forms come dati XML o PDF, opzione impostata in Designer. Un modulo inviato come XML consente di estrarre i singoli valori dei dati dei campi. In altre parole, è possibile estrarre il valore di ogni campo modulo immesso dall&#39;utente nel modulo. Un modulo inviato come dati di PDF è costituito da dati binari e non da dati XML. È possibile salvare il modulo come file di PDF o inviarlo a un altro servizio. Se si desidera estrarre dati da un modulo inviato come XML e quindi utilizzare i dati del modulo per creare un documento PDF, richiamare un&#39;altra operazione AEM Forms. (Vedi [Creazione di documenti PDF con dati XML inviati](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 Il diagramma seguente mostra i dati inviati a un servlet Java denominato `HandleData` da un modulo interattivo visualizzato in un browser Web.
 
@@ -73,7 +73,7 @@ utilizzo delle classi XML Java.
 
 ## Gestione dei dati PDF inviati {#handling-submitted-pdf-data}
 
-Considera un’applicazione web che richiama il servizio Forms. Dopo che il servizio Forms esegue il rendering di un modulo interattivo PDF in un browser Web client, l&#39;utente compila il modulo e lo invia nuovamente come dati PDF. Quando il servizio Forms riceve i dati PDF PDF, può inviarli a un altro servizio o salvarli come file PDF. Il diagramma seguente mostra il flusso logico dell’applicazione.
+Considera un’applicazione web che richiama il servizio Forms. Dopo che il servizio Forms esegue il rendering di un modulo PDF interattivo in un browser Web client, l&#39;utente compila il modulo e lo invia nuovamente come dati di PDF. Quando il servizio Forms riceve i dati PDF, può inviare i dati PDF a un altro servizio o salvarli come file PDF. Il diagramma seguente mostra il flusso logico dell’applicazione.
 
 ![hs_hs_savingforms](assets/hs_hs_savingforms.png)
 
@@ -145,12 +145,12 @@ Per recuperare i dati del modulo inviati, è necessario richiamare il metodo `pr
 Specificare il tipo di contenuto del modulo inviato quando si richiama il metodo `processFormSubmission`. L&#39;elenco seguente specifica i valori dei tipi di contenuto applicabili:
 
 * **text/xml**: rappresenta il tipo di contenuto da utilizzare quando un modulo di PDF invia i dati del modulo come XML.
-* **application/x-www-form-urlencoded**: rappresenta il tipo di contenuto da utilizzare quando un modulo HTML invia dati come XML.
+* **application/x-www-form-urlencoded**: rappresenta il tipo di contenuto da utilizzare quando un modulo di HTML invia i dati come XML.
 * **application/pdf**: rappresenta il tipo di contenuto da utilizzare quando un modulo di PDF invia dati come PDF.
 
 >[!NOTE]
 >
->Nella sezione Gestione degli invii di Forms sono disponibili tre avvii rapidi corrispondenti. La sezione Gestione dei PDF forms inviati come PDF con la Guida introduttiva all’API Java illustra come gestire i dati PDF inviati. Il tipo di contenuto specificato in questo avvio rapido è `application/pdf`. La sezione Gestione dei PDF forms inviati come XML mediante l&#39;avvio rapido API Java illustra come gestire i dati XML inviati da un modulo PDF. Il tipo di contenuto specificato in questo avvio rapido è `text/xml`. Analogamente, la gestione dei moduli HTML inviati come XML mediante l&#39;avvio rapido API Java illustra come gestire i dati XML inviati da un modulo HTML. Il tipo di contenuto specificato in questo avvio rapido è application/x-www-form-urlencoded.
+>Nella sezione Gestione degli invii di Forms sono disponibili tre avvii rapidi corrispondenti. La sezione Gestione di PDF forms inviati come PDF tramite l’avvio rapido dell’API Java illustra come gestire i dati PDF inviati. Il tipo di contenuto specificato in questo avvio rapido è `application/pdf`. Gestione di PDF forms inviati come XML mediante l&#39;API Java Quick Start viene illustrato come gestire i dati XML inviati da un modulo di PDF. Il tipo di contenuto specificato in questo avvio rapido è `text/xml`. Analogamente, la gestione dei moduli HTML inviati come XML mediante l&#39;avvio rapido API Java illustra come gestire i dati XML inviati da un modulo HTML. Il tipo di contenuto specificato in questo avvio rapido è application/x-www-form-urlencoded.
 
 Recuperi i dati del modulo pubblicati nel servizio Forms e ne determini lo stato di elaborazione. In altre parole, quando i dati vengono inviati al servizio Forms, non significa necessariamente che il servizio Forms abbia terminato l’elaborazione dei dati e che i dati siano pronti per essere elaborati. Ad esempio, i dati possono essere inviati al servizio Forms in modo da poter eseguire un calcolo. Una volta completato il calcolo, il modulo viene riprodotto all’utente con i risultati del calcolo visualizzati. Prima di elaborare i dati inviati, è consigliabile determinare se il servizio Forms ha completato l&#39;elaborazione dei dati.
 
@@ -168,7 +168,7 @@ Il servizio Forms restituisce i seguenti valori per indicare se ha completato l�
 
 **Determinare se l&#39;invio del modulo contiene file allegati**
 
-Forms inviato al servizio Forms può contenere allegati. Ad esempio, utilizzando il riquadro degli allegati integrato di Acrobat, un utente può selezionare i file allegati da inviare insieme al modulo. L’utente può inoltre selezionare i file allegati utilizzando una barra degli strumenti di HTML sottoposta a rendering con un file di HTML.
+Forms inviato al servizio Forms può contenere allegati. Ad esempio, utilizzando il riquadro degli allegati integrato di Acrobat, un utente può selezionare i file allegati da inviare insieme al modulo. L’utente può anche selezionare i file allegati utilizzando una barra degli strumenti di HTML sottoposta a rendering con un file HTML.
 
 Dopo aver determinato se un modulo contiene file allegati, è possibile elaborare i dati. È ad esempio possibile salvare l&#39;allegato nel file system locale.
 
@@ -178,7 +178,7 @@ Dopo aver determinato se un modulo contiene file allegati, è possibile elaborar
 
 **Elabora i dati inviati**
 
-A seconda del tipo di contenuto dei dati inviati, è possibile estrarre singoli valori dei campi modulo dai dati XML inviati oppure salvare i dati PDF inviati come file PDF (o inviarli a un altro servizio). Per estrarre singoli campi modulo, convertire i dati XML inviati in un&#39;origine dati XML e quindi recuperare i valori dell&#39;origine dati XML utilizzando le classi `org.w3c.dom`.
+A seconda del tipo di contenuto dei dati inviati, è possibile estrarre singoli valori dei campi modulo dai dati XML inviati oppure salvare i dati PDF inviati come file PDF o inviarli a un altro servizio. Per estrarre singoli campi modulo, convertire i dati XML inviati in un&#39;origine dati XML e quindi recuperare i valori dell&#39;origine dati XML utilizzando le classi `org.w3c.dom`.
 
 **Consulta anche**
 
@@ -186,7 +186,7 @@ A seconda del tipo di contenuto dei dati inviati, è possibile estrarre singoli 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -253,11 +253,11 @@ Gestisci un modulo inviato utilizzando l’API Forms (Java):
 
 **Consulta anche**
 
-[Quick Start (modalità SOAP): gestione dei PDF forms inviati come XML tramite API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Quick Start (modalità SOAP): gestione di PDF forms inviati come XML tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Quick Start (modalità SOAP): gestione dei moduli HTML inviati come XML tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Guida rapida (modalità SOAP): gestione dei moduli HTML inviati come XML tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[Quick Start (modalità SOAP): gestione dei PDF forms inviati come PDF tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Quick Start (modalità SOAP): gestione di PDF forms inviati come PDF tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

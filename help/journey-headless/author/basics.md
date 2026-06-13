@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 75%
+source-wordcount: '1653'
+ht-degree: 70%
 
 ---
 
@@ -29,7 +29,7 @@ Questo articolo si basa su questi elementi per comprendere come creare contenuti
 
 ## Operazioni di base {#basic-handling}
 
-Prima di iniziare a gestire i frammenti di contenuto, ecco un’introduzione (molto) rapida all’utilizzo di AEM...ma niente sostituisce l’esperienza di accesso e di utilizzo del sistema.
+Prima di acquisire familiarità con i frammenti di contenuto, ecco una rapida introduzione all’utilizzo di AEM....ma nulla sostituisce realmente l’esperienza di accesso e tentativo di utilizzo del sistema.
 
 ### Creazione e pubblicazione {#author-preview-publish}
 
@@ -193,8 +193,8 @@ OK, questa potrebbe sembrare una sezione leggermente ambigua, ma una volta apert
 
 * **Modelli per frammenti di contenuto**
 
-  Il nome del modello di frammento di contenuto verrà visualizzato nella parte superiore dell’editor, direttamente sotto il nome del frammento. Questo è anche un collegamento che ti porta all’editor modelli.
-I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di contenuto quando definiscono la struttura utilizzata. Tuttavia, la creazione e la modifica di tali elementi è (in genere) responsabilità di un’altra persona, l’architect di contenuti.
+  Il nome del modello per frammenti di contenuto viene visualizzato nella parte superiore dell’editor direttamente sotto il nome del frammento. Questo è anche un collegamento che ti porta all’editor modelli.
+I modelli per frammenti di contenuto sono effettivamente vitali per i frammenti di contenuto in quanto definiscono la struttura utilizzata. Tuttavia, la loro creazione e modifica è (in genere) responsabilità di un altro utente, l’architetto dei contenuti.
 
   >[!NOTE]
   >
@@ -204,7 +204,7 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
   Questo è abbastanza ovvio in quanto si tratta di una scheda nell’editor.
 
-  I frammenti di contenuto sono disponibili in AEM in diverse versioni. Originariamente erano disponibili per l’uso “tradizionale” durante l’authoring delle pagine....e sono ancora utilizzati in questo contesto. Questo può comportare l’associazione di risorse (ad esempio immagini) che, pur non essendo incorporate nel frammento, devono essere disponibili per l’autore durante l’authoring di una pagina.
+  I frammenti di contenuto sono disponibili in AEM in diverse versioni. Originariamente erano resi disponibili per l’uso &quot;tradizionale&quot;.... durante l’authoring delle pagine, e vengono ancora utilizzati in questo contesto. Questo può comportare l’associazione di risorse (ad esempio immagini) che, pur non essendo incorporate nel frammento, devono essere disponibili per l’autore durante l’authoring di una pagina.
 
 * **Anteprima**
 

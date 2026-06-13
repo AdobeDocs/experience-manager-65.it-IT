@@ -1,6 +1,6 @@
 ---
 title: Classificazioni Adobe
-description: Scopri come utilizzare le classificazioni Adobe per esportare i dati delle classificazioni in Adobe Analytics.
+description: Scopri come utilizzare le classificazioni di Adobe per esportare i dati delle classificazioni in Adobe Analytics.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,18 +11,18 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '619'
 ht-degree: 5%
 
 ---
 
 # Classificazioni Adobe{#adobe-classifications}
 
-Adobe Classificazioni esporta i dati delle classificazioni in [Adobe Analytics](/help/sites-administering/adobeanalytics.md) in modo pianificato. L&#39;esportatore è un&#39;implementazione di un **com.adobe.cq.scheduled.exporter.Exporter**.
+Classificazioni Adobe esporta i dati delle classificazioni in [Adobe Analytics](/help/sites-administering/adobeanalytics.md) in modo pianificato. L&#39;esportatore è un&#39;implementazione di un **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Per configurarlo:
 
-1. Utilizzando **Navigazione**, seleziona **Strumenti**, **Cloud Service**, quindi **Cloud Service precedenti**.
+1. Utilizzando **Navigazione**, seleziona **Strumenti**, **Servizi cloud**, quindi **Servizi cloud precedenti**.
 1. Scorri fino a **Adobe Analytics** e seleziona **Mostra configurazioni**.
 1. Fai clic sul collegamento **[+]** accanto alla configurazione di Adobe Analytics.
 
@@ -47,8 +47,8 @@ Per configurarlo:
    | Abilitato | Seleziona **Sì** per abilitare le impostazioni delle classificazioni di Adobe. |
    | Sovrascrivi in caso di conflitto | Seleziona **Sì** per sovrascrivere eventuali conflitti di dati. Per impostazione predefinita, è impostato su **No**. |
    | Elimina elementi elaborati | Se è impostato su **Sì**, elimina i nodi elaborati dopo l&#39;esportazione. Il valore predefinito è **False**. |
-   | Descrizione processo esportazione | Immettere una descrizione per il job Classificazioni di Adobe. |
-   | E-mail di notifica | Immetti un indirizzo e-mail per la notifica Classificazioni di Adobe. |
+   | Descrizione processo esportazione | Immetti una descrizione per il processo Classificazioni Adobe. |
+   | E-mail di notifica | Immetti un indirizzo e-mail per la notifica delle classificazioni di Adobe. |
    | Suite per report | Immetti la suite di rapporti per la quale eseguire il processo di importazione. |
    | Set di dati | Immetti l’ID di relazione del set di dati per cui eseguire il processo di importazione. |
    | Trasformazione | Dal menu a discesa, seleziona un’implementazione di trasformatore. |
@@ -59,9 +59,9 @@ Per configurarlo:
 
 ## Modifica delle dimensioni di pagina {#modifying-page-size}
 
-I record vengono elaborati nelle pagine. Per impostazione predefinita, Classificazioni di Adobe crea pagine con dimensioni pari a 1000.
+I record vengono elaborati nelle pagine. Per impostazione predefinita, in Adobe Classifications vengono create pagine con dimensioni pari a 1000.
 
-Una pagina può avere dimensioni 25000 al massimo, per definizione in Classificazioni di Adobe e può essere modificata dalla console Felix. Durante l’esportazione, Adobe Classifications blocca il nodo di origine per impedire modifiche simultanee. Il nodo viene sbloccato dopo l’esportazione, in caso di errore o quando la sessione viene chiusa.
+Una pagina può avere dimensioni 25000 al massimo, per definizione, in Classificazioni Adobe e può essere modificata dalla console Felix. Durante l’esportazione, Adobe Classifications blocca il nodo di origine per impedire modifiche simultanee. Il nodo viene sbloccato dopo l’esportazione, in caso di errore o quando la sessione viene chiusa.
 
 Per modificare le dimensioni della pagina:
 
@@ -77,7 +77,7 @@ Per modificare le dimensioni della pagina:
 >
 >Adobe Classifications era precedentemente noto come SAINT Exporter.
 
-Un esportatore può utilizzare un trasformatore per trasformare i dati di esportazione in un formato specifico. Ad Adobe Classificazioni, è stata fornita una sottointerfaccia `SAINTTransformer<String[]>` che implementa l&#39;interfaccia del trasformatore. Questa interfaccia viene utilizzata per limitare il tipo di dati a `String[]`, utilizzato dall&#39;API SAINT, e per disporre di un&#39;interfaccia indicatore per trovare tali servizi da selezionare.
+Un esportatore può utilizzare un trasformatore per trasformare i dati di esportazione in un formato specifico. Per le classificazioni Adobe, è stata fornita una sottointerfaccia `SAINTTransformer<String[]>` che implementa l&#39;interfaccia del trasformatore. Questa interfaccia viene utilizzata per limitare il tipo di dati a `String[]`, utilizzato dall&#39;API SAINT, e per disporre di un&#39;interfaccia indicatore per trovare tali servizi da selezionare.
 
 Nell&#39;implementazione predefinita di SAINTDefaultTransformer, le risorse figlie dell&#39;origine di esportazione vengono considerate come record con nomi di proprietà come chiavi e valori di proprietà come valori. La colonna **Chiave** viene aggiunta automaticamente come prima colonna. Il suo valore sarà il nome del nodo. Le proprietà con spazio dei nomi (contenenti `:`) non vengono considerate.
 
@@ -112,7 +112,7 @@ Le proprietà includono:
    <td>Nome di classe di un'implementazione di SAINTTransformer</td>
   </tr>
   <tr>
-   <td>e-mail</td>
+   <td>email</td>
    <td>Indirizzo e-mail di notifica.</td>
   </tr>
   <tr>
@@ -142,6 +142,6 @@ Le proprietà includono:
  </tbody>
 </table>
 
-## Automazione dell’esportazione di classificazioni di Adobi {#automating-adobe-classifications-export}
+## Automazione dell’esportazione delle classificazioni di Adobe {#automating-adobe-classifications-export}
 
 Puoi creare un flusso di lavoro personalizzato in modo che tutte le nuove importazioni avviino il flusso di lavoro per creare i dati appropriati e correttamente strutturati in **/var/export/** in modo che possano essere esportati in Classificazioni Adobe.

@@ -1,6 +1,6 @@
 ---
-title: Creazione di documenti PDF con i dati SubmittedXML
-description: Utilizza il servizio Forms per recuperare i dati del modulo immessi dall’utente in un modulo interattivo. Passa i dati del modulo a un’altra operazione del servizio AEM Forms e crea un documento PDF utilizzando i dati.
+title: Creazione di documenti PDF con i dati XML inviati
+description: Utilizza il servizio Forms per recuperare i dati del modulo immessi dall’utente in un modulo interattivo. Trasferisci i dati del modulo a un’altra operazione del servizio AEM Forms e crea un documento PDF utilizzando i dati.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 0%
+source-wordcount: '1334'
+ht-degree: 1%
 
 ---
 
@@ -34,24 +34,24 @@ Prendi in considerazione il seguente flusso di lavoro che coinvolge tre servizi 
 * Un utente invia dati XML al servizio Forms da un&#39;applicazione basata sul Web.
 * Il servizio Forms viene utilizzato per elaborare il modulo inviato ed estrarre i campi del modulo. I dati del modulo possono essere elaborati. Ad esempio, i dati possono essere inviati a un database aziendale.
 * I dati del modulo vengono inviati al servizio di output per creare un documento PDF non interattivo.
-* Il documento PDF non interattivo viene archiviato in Content Services (obsoleto).
+* Il documento non interattivo di PDF viene archiviato in Content Services (obsoleto).
 
 Il diagramma seguente fornisce una rappresentazione visiva del flusso di lavoro.
 
 ![cd_cd_finsrv_architecture_xml_pdf1](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
 
-Dopo che l’utente ha inviato il modulo dal browser Web client, il documento PDF non interattivo viene memorizzato in Content Services (obsoleto). Nella figura seguente viene illustrato un documento PDF memorizzato in Content Services (obsoleto).
+Dopo che l’utente ha inviato il modulo dal browser Web client, il documento non interattivo di PDF viene memorizzato in Content Services (obsoleto). Nella figura seguente viene illustrato un documento di PDF memorizzato in Content Services (obsoleto).
 
 ![cd_cd_cs_gui](assets/cd_cd_cs_gui.png)
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
-Per creare un documento di PDF non interattivo con i dati XML inviati e memorizzarlo nel documento di PDF in Content Services (obsoleto), effettuare le seguenti operazioni:
+Per creare un documento non interattivo di PDF con dati XML inviati e memorizzarlo nel documento di PDF in Content Services (obsoleto), effettuare le seguenti operazioni:
 
 1. Includi file di progetto.
 1. Creare oggetti Forms, Output e Document Management.
 1. Recupera i dati del modulo utilizzando il servizio Forms.
-1. Crea un documento PDF non interattivo utilizzando il servizio di output.
+1. Creare un documento PDF non interattivo utilizzando il servizio di output.
 1. Memorizzare il modulo PDF in Content Services (obsoleto) utilizzando il servizio Document Management.
 
 **Includi file di progetto**
@@ -64,11 +64,11 @@ Prima di poter eseguire un&#39;operazione API del servizio Forms a livello di pr
 
 **Recupera dati modulo tramite il servizio Forms**
 
-Recupera i dati del modulo inviati al servizio Forms. È possibile elaborare i dati inviati per soddisfare i requisiti aziendali. È ad esempio possibile memorizzare i dati dei moduli in un database aziendale. Tuttavia, per creare un documento di PDF non interattivo, i dati del modulo vengono passati al servizio di output.
+Recupera i dati del modulo inviati al servizio Forms. È possibile elaborare i dati inviati per soddisfare i requisiti aziendali. È ad esempio possibile memorizzare i dati dei moduli in un database aziendale. Tuttavia, per creare un documento PDF non interattivo, i dati del modulo vengono passati al servizio di output.
 
-**Crea un documento PDF non interattivo utilizzando il servizio di output.**
+**Creare un documento non interattivo di PDF utilizzando il servizio di output.**
 
-Utilizzare il servizio di output per creare un documento PDF non interattivo basato sulla struttura di un modulo e sui dati del modulo XML. Nel flusso di lavoro, i dati del modulo vengono recuperati dal servizio Forms.
+Utilizzare il servizio Output per creare un documento non interattivo di PDF basato sulla struttura di un modulo e sui dati del modulo XML. Nel flusso di lavoro, i dati del modulo vengono recuperati dal servizio Forms.
 
 **Archivia il modulo PDF in Content Services (obsoleto) utilizzando il servizio Document Management**
 
@@ -80,11 +80,11 @@ Utilizza l’API del servizio Document Management per memorizzare un documento P
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 ### Creare un documento PDF con i dati XML inviati utilizzando l’API Java {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
 
-Crea un documento PDF con i dati XML inviati utilizzando Forms, Output e Document Management API (Java):
+Creare un documento PDF con i dati XML inviati utilizzando Forms, Output e Document Management API (Java):
 
 1. Includi file di progetto
 
@@ -116,7 +116,7 @@ Crea un documento PDF con i dati XML inviati utilizzando Forms, Output e Documen
    * Creare un oggetto `org.w3c.dom.Document` richiamando il metodo `parse` dell&#39;oggetto `org.w3c.dom.DocumentBuilder` e passando l&#39;oggetto `java.io.InputStream`.
    * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: l&#39;oggetto `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, il metodo personalizzato è denominato `getNodeText`. Viene visualizzato il corpo di questo metodo.
 
-1. Crea un documento PDF non interattivo utilizzando il servizio di output.
+1. Creare un documento non interattivo di PDF utilizzando il servizio di output.
 
    Creare un documento PDF richiamando il metodo `generatePDFOutput` dell&#39;oggetto `OutputClient` e passando i valori seguenti:
 
@@ -129,7 +129,7 @@ Crea un documento PDF con i dati XML inviati utilizzando Forms, Output e Documen
    * Il metodo `generatePDFOutput` restituisce un oggetto `OutputResult` contenente i risultati dell&#39;operazione.
    * Recuperare il documento PDF non interattivo richiamando il metodo `getGeneratedDoc` dell&#39;oggetto `OutputResult`. Questo metodo restituisce un&#39;istanza `com.adobe.idp.Document` che rappresenta il documento PDF non interattivo.
 
-1. Memorizzare il modulo PDF in Content Services (obsoleto) utilizzando il servizio Document Management
+1. Archiviare il modulo PDF in Content Services (obsoleto) tramite il servizio Document Management
 
    Aggiungere il contenuto richiamando il metodo `storeContent` dell&#39;oggetto `DocumentManagementServiceClientImpl` e passando i valori seguenti:
 

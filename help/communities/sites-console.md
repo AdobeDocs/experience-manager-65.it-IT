@@ -12,8 +12,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3084'
-ht-degree: 0%
+source-wordcount: '2963'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Consulta [Guida introduttiva di AEM Communities](/help/communities/getting-start
 
 Prima di creare un sito community, è *obbligatorio* per:
 
-* Assicurati che una o più istanze di Publish siano in esecuzione.
+* Assicurati che una o più istanze di pubblicazione siano in esecuzione.
 * Abilita il servizio [tunnel](/help/communities/deploy-communities.md#tunnel-service-on-author) per gestire membri e gruppi di membri.
 * Identificare l&#39;[editore primario](/help/communities/deploy-communities.md#primary-publisher).
 * [Configura la replica](/help/communities/deploy-communities.md#replication-agents-on-author) quando la porta di pubblicazione primaria non è quella predefinita (4503).
@@ -61,7 +61,7 @@ Per creare un sito community, selezionare l&#39;icona **Crea**.
 
 Per accedere a un sito community esistente per la creazione, la modifica, la pubblicazione, l&#39;esportazione o l&#39;aggiunta di un gruppo nidificato, selezionare l&#39;icona della cartella del sito.
 
-## Creazione di siti {#site-creation}
+## Creazione di un sito {#site-creation}
 
 La console di creazione siti fornisce un approccio dettagliato per assemblare le funzionalità del sito in base a un [modello di sito community](/help/communities/sites.md) selezionato e alle impostazioni.
 
@@ -124,7 +124,7 @@ Il pannello Progettazione contiene due pannelli secondari per la selezione del t
 
 ![siteteme](assets/sitetheme.png)
 
-Il framework utilizza `Twitter Bootstrap` per portare una progettazione reattiva e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per assegnare uno stile al modello di sito community selezionato oppure caricare un tema di Bootstrap.
+Il framework utilizza `Twitter Bootstrap` per portare una progettazione reattiva e flessibile al sito. È possibile selezionare uno dei numerosi temi Bootstrap precaricati per assegnare uno stile al modello di sito community selezionato oppure caricare un tema Bootstrap.
 
 Quando questa opzione è selezionata, il tema viene sovrapposto con un segno di spunta blu opaco.
 
@@ -194,23 +194,23 @@ Deselezionare la casella di controllo per un sito community *private*. Il valore
 Se questa opzione è deselezionata, la messaggistica non viene impostata per la community.
 L&#39;impostazione predefinita è deselezionata.
 
-* **Consenti accessi social network: Facebook**
+* **Consenti accesso social network: Facebook**
 
-  Se questa opzione è selezionata, consentire ai visitatori del sito di accedere con le credenziali del proprio account Facebook. La [configurazione cloud Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) selezionata deve essere configurata per aggiungere utenti al gruppo membri del sito community dopo la creazione del sito community.
-Se non è selezionata, non viene visualizzato alcun accesso a Facebook.
+  Se questa opzione è selezionata, consenti ai visitatori del sito di accedere con le credenziali del proprio account Facebook. La [configurazione cloud Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) selezionata deve essere configurata per aggiungere utenti al gruppo membri del sito community dopo la creazione del sito community.
+Se questa opzione è deselezionata, non viene visualizzato alcun accesso a Facebook.
 Lascia deselezionata l&#39;opzione per un sito community *private*. L&#39;impostazione predefinita è deselezionata.
 
-* **Consenti accessi social network: Twitter**
+* **Consenti accesso social network: Twitter**
 
-  Se questa opzione è selezionata, consentire ai visitatori del sito di accedere con le credenziali dell&#39;account di Twitter. La configurazione cloud [Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) selezionata deve essere configurata per aggiungere utenti al gruppo membri del sito community dopo la creazione del sito community.
-Se questa opzione è deselezionata, non viene visualizzato alcun accesso di Twitter.
+  Se questa opzione è selezionata, consenti ai visitatori del sito di accedere con le credenziali del proprio account Twitter. La [configurazione cloud Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) selezionata deve essere configurata per aggiungere utenti al gruppo membri del sito community dopo la creazione del sito community.
+Se questa opzione è deselezionata, non viene visualizzato alcun accesso a Twitter.
 Lascia deselezionata l&#39;opzione per un sito community *private*. L&#39;impostazione predefinita è deselezionata.
 
 >[!NOTE]
 >
 >**Consenti accesso social network**
 >
->Anche se alcune configurazioni Facebook e di Twitter di esempio possono esistere ed essere selezionabili per un [ambiente di produzione](/help/sites-administering/production-ready.md), è necessario creare applicazioni Facebook e di Twitter personalizzate. Consulta [Accesso social network con Facebook e Twitter](/help/communities/social-login.md).
+>Anche se alcune configurazioni Facebook e Twitter di esempio possono esistere ed essere selezionabili per un [ambiente di produzione](/help/sites-administering/production-ready.md), è necessario creare applicazioni Facebook e Twitter personalizzate. Consulta [Accesso social network con Facebook e Twitter](/help/communities/social-login.md).
 
 #### ASSEGNAZIONE TAG {#tagging}
 
@@ -371,13 +371,13 @@ Quando si passa il puntatore del mouse su un sito o si tocca una scheda del sito
 
 ## Authoring dei contenuti del sito {#authoring-site-content}
 
-Il contenuto di un sito può essere creato con gli stessi strumenti di qualsiasi altro sito web dell’AEM. Per aprire il sito per l&#39;authoring, selezionare l&#39;icona `Open Site` visualizzata quando si passa il puntatore del mouse sul sito. Il sito viene aperto in una nuova scheda in modo che la console Siti community rimanga accessibile.
+Il contenuto di un sito può essere creato con gli stessi strumenti di qualsiasi altro sito web AEM. Per aprire il sito per l&#39;authoring, selezionare l&#39;icona `Open Site` visualizzata quando si passa il puntatore del mouse sul sito. Il sito viene aperto in una nuova scheda in modo che la console Siti community rimanga accessibile.
 
 ![contenuto-sito](assets/site-content.png)
 
 >[!NOTE]
 >
->Se non conosci l&#39;AEM, consulta la documentazione sulle [operazioni di base](/help/sites-authoring/basic-handling.md) e una [guida rapida all&#39;authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
+>Se non conosci AEM, consulta la documentazione sulle [operazioni di base](/help/sites-authoring/basic-handling.md) e una [guida rapida all&#39;authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
 
 ## Modifica delle proprietà del sito {#modifying-site-properties}
 
@@ -454,7 +454,7 @@ Il pannello PROGETTAZIONE consente di applicare un nuovo tema:
 
 Il pannello SETTINGS (IMPOSTAZIONI) consente di accedere alla maggior parte delle impostazioni nei sottopannelli di per il passaggio 3 della creazione di siti community:
 
-* [User Management](#user-management)
+* [Gestione utenti](#user-management)
 * [Tag](#tagging)
 * [Moderazione](#moderation)
 * [Ruoli dei membri](#roles)
@@ -519,7 +519,7 @@ Per impostazione predefinita, un sito community viene reindirizzato a una pagina
 
 Per reindirizzare correttamente, una volta configurato il sito e inviato per la pubblicazione, completa questi passaggi per evitare che l&#39;autenticazione reindirizzi al sito community:
 
-* Su ogni istanza di pubblicazione AEM.
+* Su ogni istanza di pubblicazione di AEM.
 * Accedi con privilegi di amministratore.
 * Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md).
 
@@ -540,7 +540,7 @@ Per reindirizzare correttamente, una volta configurato il sito e inviato per la 
 
 ### Test reindirizzamento autenticazione {#test-authentication-redirection}
 
-Nella stessa istanza di pubblicazione AEM configurata con una mappatura della pagina di accesso per il sito community:
+Nella stessa istanza di pubblicazione di AEM configurata con una mappatura della pagina di accesso per il sito community:
 
 * Passare alla home page del sito community.
 

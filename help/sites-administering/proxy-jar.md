@@ -1,5 +1,5 @@
 ---
-title: Strumento Server proxy (proxy.jar)
+title: Strumento server proxy (proxy.jar)
 description: Scopri lo strumento Server proxy (proxy.jar) in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
 
-# Strumento Server proxy (proxy.jar){#proxy-server-tool-proxy-jar}
+# Strumento server proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
 Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server. Il server proxy tiene traccia di tutte le interazioni client-server e genera un registro dell&#39;intera comunicazione TCP. Questo consente di monitorare esattamente ciò che sta accadendo, senza dover accedere al server principale.
 
@@ -33,11 +33,11 @@ Il server proxy si trova nella cartella di installazione appropriata:
 * SMTP per i messaggi e-mail
 * LDAP per la gestione degli utenti
 
-Ad esempio, è possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP, ad esempio un browser Web e l&#39;AEM. Questo consente di monitorare esattamente cosa accade quando si richiede una pagina AEM.
+È ad esempio possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP, ad esempio un browser Web e AEM. Questo consente di monitorare esattamente cosa accade quando si richiede una pagina AEM.
 
 ## Avvio dello strumento Server proxy {#starting-the-proxy-server-tool}
 
-Lo strumento si trova nella cartella /opt/helpers dell’installazione dell’AEM. Per avviarlo, digita:
+Lo strumento si trova nella cartella /opt/helpers dell’installazione di AEM. Per avviarlo, digita:
 
 ```xml
 java -jar proxy.jar <host> <remoteport> <localport> [options]
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa che questa voce proviene dal client (si tratta di una richiesta per una pagina Web)
 * 0 è il numero di connessione (il contatore di connessione inizia da 0)
 * #00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
-* [GET &lt;?>] è il contenuto della richiesta, nell&#39;esempio una delle intestazioni HTTP (url).
+* [GET &lt;??>] è il contenuto della richiesta, nell&#39;esempio una delle intestazioni HTTP (url).
 
 Quando una connessione viene chiusa, vengono registrate le seguenti informazioni:
 
@@ -143,7 +143,7 @@ Rivedi un modello semplice che, se richiesto, genera il seguente codice:
 </html>
 ```
 
-Se l&#39;AEM è in esecuzione su localhost:4303, avviare il server proxy come indicato di seguito:
+Se AEM è in esecuzione su localhost:4303, avviare il server proxy nel modo seguente:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
@@ -162,7 +162,7 @@ starting proxy for localhost:4303 on port 4444
 using logfile: C:\CQUnify355default\opt\helpers\test.log
 ```
 
-I seguenti campi di intestazione sono elencati all’inizio della prima connessione (0), che richiede la pagina HTML principale:
+I seguenti campi di intestazione sono elencati all’inizio della prima connessione (0), che richiede la pagina principale di HTML:
 
 ```xml
 C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102936796533 HTTP/1.1 ]
@@ -182,7 +182,7 @@ C-0-#000369 -> [Connection: Keep-Alive ]
 
 Il server proxy è uno strumento utile per verificare se i cookie sono impostati correttamente o meno. Qui puoi vedere quanto segue:
 
-* Cookie cq3session generato da AEM
+* cookie cq3session generato da AEM
 * il cookie del commutatore della modalità di visualizzazione generato dal CFC
 * un cookie denominato JSESSIONID; viene creato automaticamente da JSP se non viene disattivato esplicitamente utilizzando &lt;%@ page session=&quot;false&quot; %>:
 
@@ -277,7 +277,7 @@ C-1-Finished: 403 bytes (0.0 kb/s)
 
 L’esempio precedente è relativamente semplice, perché le due connessioni si verificano in sequenza:
 
-* in primo luogo, il server restituisce il codice HTML
+* il server restituisce innanzitutto il codice HTML
 * quindi il browser richiede l’immagine e apre una nuova connessione
 
-In pratica, una pagina può generare molte richieste parallele per immagini, fogli di stile, file JavaScript e così via. Ciò significa che i registri presentano voci sovrapposte di connessioni aperte parallele. In tal caso, l’Adobe consiglia di utilizzare l’opzione -i per migliorare la leggibilità.
+In pratica, una pagina può generare molte richieste parallele per immagini, fogli di stile, file JavaScript e così via. Ciò significa che i registri presentano voci sovrapposte di connessioni aperte parallele. In tal caso, Adobe consiglia di utilizzare l’opzione -i per migliorare la leggibilità.

@@ -1,5 +1,5 @@
 ---
-title: Costrutti di stile per i moduli adattivi
+title: Costrutti di stile per moduli adattivi
 description: Utilizza il framework LESS per personalizzare l’aspetto dei moduli adattivi.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 3%
+source-wordcount: '2378'
+ht-degree: 4%
 
 ---
 
-# Costrutti di stile per i moduli adattivi{#styling-constructs-for-adaptive-forms}
+# Costrutti di stile per moduli adattivi{#styling-constructs-for-adaptive-forms}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -44,9 +44,9 @@ Le modifiche dell’aspetto generale del modulo adattivo che utilizzano propriet
 
 In base al bootstrap, il seguente insieme di proprietà CSS definisce il tema di una pagina web:
 
-* Colore sfondo
+* Colore di sfondo
 * Bordo (tipo, colore, spessore)
-* Colore carattere
+* Colore font
 * Riempimento
 * Margine
 * Dimensione font
@@ -140,7 +140,7 @@ I campi includono etichette, widget, descrizioni della Guida (descrizione lunga 
 
 ## Stile etichetta {#label-styling}
 
-L&#39;elemento HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o a sinistra.
+L&#39;elemento di HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o a sinistra.
 
 <table>
  <tbody>
@@ -355,10 +355,10 @@ Il widget Termini e condizioni (TnC `` ``) consente di specificare termini e con
 I pulsanti sono anche widget. Tuttavia, il loro stile è leggermente diverso dai widget. Nei moduli adattivi, costituisce un pulsante uno dei seguenti elementi:
 
 * input[tipo = testo]
-* pulsante
+* button
 * element con classe .button
 
-Codice HTML per pulsante:
+Codice HTML per il pulsante:
 
 `<button type="button" >`
 
@@ -561,7 +561,7 @@ Il widget File allegato dei moduli adattivi consente di caricare i file. Puoi an
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
-   <td><p>Colore per l'icona Anteprima (icona Bootstrap) nel widget</p> </td>
+   <td><p>Colore dell'icona Anteprima (icona Bootstrap) nel widget</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
@@ -599,7 +599,7 @@ Sono disponibili quattro tipi di schede del navigatore. Queste includono le sche
  </tbody>
 </table>
 
-Di seguito è riportato il codice HTML per l&#39;elemento tab navigator (simile alle schede bootstrap):
+Di seguito è riportato il codice HTML per l&#39;elemento navigator della scheda (simile alle schede di avvio):
 
 `<li>`
 

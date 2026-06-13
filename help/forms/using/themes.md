@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '6086'
-ht-degree: 1%
+source-wordcount: '5966'
+ht-degree: 2%
 
 ---
 
@@ -145,13 +145,13 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
   </tr>
   <tr>
    <td>8.</td>
-   <td>Ora di attivazione Publish</td>
+   <td>Ora di attivazione pubblicazione</td>
    <td>Sì</td>
    <td>Tempo per pubblicare automaticamente il tema.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Ora di disattivazione Publish</td>
+   <td>Ora di disattivazione pubblicazione</td>
    <td>Sì</td>
    <td>Tempo per annullare automaticamente la pubblicazione del tema.</td>
   </tr>
@@ -162,7 +162,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
    <td>Etichetta associata al tema per l’identificazione utilizzata per migliorare la ricerca.</td>
   </tr>
   <tr>
-   <td>11</td>
+   <td>11.</td>
    <td>Riferimenti</td>
    <td>Collegamenti</td>
    <td>
@@ -172,7 +172,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
     </ul> </td>
   </tr>
   <tr>
-   <td>12</td>
+   <td>12.</td>
    <td>Posizione Clientlib</td>
    <td>Sì</td>
    <td>
@@ -180,11 +180,11 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
      <li>Percorso dell’archivio definito dall’utente all’interno di "/etc" in cui sono memorizzate le clientlibs corrispondenti a questo tema.</li>
      <li>Valore predefinito - "/etc/clientlibs/fd/theme" + percorso relativo della risorsa tema.</li>
      <li>Se la posizione non esiste, la gerarchia di cartelle viene generata automaticamente.</li>
-     <li>Quando questo valore viene modificato, la struttura del nodo clientlib viene spostata nella nuova posizione immessa.<br /> <em><strong>Nota:</strong> Se modifichi la posizione predefinita di clientlib, nell'archivio CRXDE assegna <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> a <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read</code> a <code>fd-service</code> nella nuova posizione. Allega anche un altro ACL aggiungendo <code>deny jcr:addChildNodes</code> per <code>forms-user</code></em></li>
+     <li>Quando questo valore viene modificato, la struttura del nodo clientlib viene spostata nella nuova posizione immessa.<br /> <em><strong>Nota:</strong> se si modifica la posizione predefinita clientlib, nell'archivio CRXDE assegnare <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> a <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read</code> a <code>fd-service</code> nella nuova posizione. Allega anche un altro ACL aggiungendo <code>deny jcr:addChildNodes</code> per <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
-   <td>13</td>
+   <td>13.</td>
    <td>Nome categoria Clientlib</td>
    <td>Sì</td>
    <td>
@@ -224,7 +224,7 @@ Un componente specifico influisce sugli oggetti della categoria specifica. Quand
      Quando personalizzi tutti i componenti campo con un colore di sfondo specifico, tutti i campi come età, nome e indirizzo ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio età, e se ne riduce la larghezza, la larghezza di tutte le caselle numeriche, ad esempio età, viene ridotto il numero di persone in una famiglia. La larghezza delle caselle di testo non viene modificata.
 
    * **Stato:** consente di personalizzare gli stili di un oggetto in uno stato specifico. È ad esempio possibile specificare l&#39;aspetto di un oggetto quando si trova nello stato predefinito, attivo, disattivato, al passaggio del mouse o di errore.
-   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Dimension e posizione, testo, sfondo, bordo ed effetti. In ogni categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo è possibile specificare Colore sfondo e Immagine e sfumatura.
+   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Ad esempio, Dimension &amp; Position, Testo, Sfondo, Bordo ed Effetti. In ogni categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo è possibile specificare Colore sfondo e Immagine e sfumatura.
 
    * **Avanzate:** consente di aggiungere CSS personalizzati a un oggetto, che si sovrappone alle proprietà definite dai controlli visivi in caso di sovrapposizione.
 
@@ -424,7 +424,7 @@ Le opzioni per la personalizzazione degli stili di stato variano a seconda dei c
    <td><p>Consente di aggiungere effetti speciali ai componenti quali opacità, modalità di fusione e ombre. </p> </td>
   </tr>
   <tr>
-   <td><p>Avanzate </p> </td>
+   <td><p>Avanzate</p> </td>
    <td><p>Consente di aggiungere:</p>
     <ul>
      <li>Proprietà per gli pseudo elementi <code>::before</code> e <code>::after</code> per aggiungere contenuto dopo o prima del contenuto predefinito nel selettore e assegnarvi uno stile.<br /> Consulta <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elementi CSS</a>.</li>
@@ -497,10 +497,10 @@ Puoi assegnare uno stile ai componenti di comunicazione interattiva o di modulo 
 
 È ora possibile utilizzare i font disponibili in un servizio web in un modulo adattivo o in una comunicazione interattiva. Predefinito, [Adobe Fonts](https://fonts.adobe.com/), il servizio font Web di Adobe, è disponibile come configurazione. Per utilizzare Adobe Fonts, crea un kit, aggiungi font e ottieni l&#39;ID del kit da [Adobe Fonts](https://fonts.adobe.com/).
 
-Per configurare Adobe Fonts nell’AEM, effettua le seguenti operazioni:
+Per configurare Adobe Fonts in AEM, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza di authoring, fare clic su ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![hammer](assets/hammer.png) > Distribuzione > Cloud Service.
-1. Nella pagina **Cloud Service**, passa all&#39;opzione **Adobe Fonts** e aprila. Apri la cartella di configurazione e fai clic su **Crea**.
+1. Nell&#39;istanza di authoring, fare clic su ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![hammer](assets/hammer.png) > Distribuzione > Servizi cloud.
+1. Nella pagina **Servizi cloud**, passa all&#39;opzione **Adobe Fonts** e apri. Apri la cartella di configurazione e fai clic su **Crea**.
 1. Nella finestra di dialogo **Crea configurazione**, specifica un titolo per la configurazione e fai clic su **Crea**.
 
    Ti reindirizzano alla pagina di configurazione.
@@ -519,7 +519,7 @@ Per configurare un tema per l’utilizzo della configurazione di Adobe Fonts, ef
 
 Puoi utilizzare il servizio di configurazione del tema per aggiungere più font all’editor del tema. Per aggiungere font, effettuate le seguenti operazioni:
 
-1. Accedi alla console web AEM con privilegi di amministratore. L&#39;URL per la console Web AEM è `https://'[server]:[port]'/system/console/configMgr`.
+1. Accedi ad AEM Web Console con privilegi di amministratore. L&#39;URL per la console Web AEM è `https://'[server]:[port]'/system/console/configMgr`.
 1. Apri **Servizio configurazione tema modulo adattivo**.
 
    ![theme-config](assets/theme-config.png)
@@ -607,7 +607,7 @@ Dopo aver personalizzato il tema, applicalo al modulo o alla comunicazione inter
 
 ## Impatto su altri casi di utilizzo di moduli adattivi {#impact-on-other-adaptive-form-use-cases}
 
-* **Publish/annulla pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema applicato a (se non è già pubblicato)
+* **Pubblicazione/annullamento della pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema applicato a (se non è già pubblicato)
 * **Importa/esporta modulo:** Durante l&#39;importazione o l&#39;esportazione di un modulo, viene automaticamente importato o esportato anche il tema associato.
 * **Riferimenti di un modulo:** La sezione Riferimenti nei riferimenti del modulo contiene una voce aggiuntiva per il tema.
 * **Data dell&#39;ultima modifica di un modulo:** Aggiornato quando il tema associato viene modificato.

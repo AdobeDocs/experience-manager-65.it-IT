@@ -28,7 +28,7 @@ Il percorso del componente è univoco e fa riferimento al componente predefinito
 
 ## Esempio {#example}
 
-Supponiamo che l’intestazione del componente Commento debba essere visualizzata con un aspetto alternativo in un sito dell’istanza AEM, mentre appare con la visualizzazione predefinita in un altro sito. Invece di sovrapporre il commento predefinito, che modifica il componente Commento per tutte le istanze, una soluzione migliore è garantire che siano disponibili più componenti di commento da utilizzare su vari siti.
+Supponiamo che l’intestazione del componente Commento debba essere visualizzata con un aspetto alternativo in un sito dell’istanza di AEM, mentre appare con la visualizzazione predefinita in un altro sito. Invece di sovrapporre il commento predefinito, che modifica il componente Commento per tutte le istanze, una soluzione migliore è garantire che siano disponibili più componenti di commento da utilizzare su vari siti.
 
 Per implementare questa soluzione, crea un componente che estende (sostituisce) quello esistente e modifica lo script Handlebars. L&#39;area del sito che utilizza i nuovi commenti può utilizzare quello esteso, mentre i siti che utilizzano l&#39;aspetto predefinito rimangono invariati.
 

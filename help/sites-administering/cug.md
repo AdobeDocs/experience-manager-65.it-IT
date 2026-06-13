@@ -12,8 +12,8 @@ feature: Security
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 1%
+source-wordcount: '748'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ Per configurare tale area all’interno del sito web:
 
 Per creare un gruppo utenti chiuso:
 
-1. Passa a **Strumenti - Sicurezza** dalla home page AEM.
+1. Passa a **Strumenti - Sicurezza** dalla schermata home di AEM.
 
    >[!NOTE]
    >
@@ -134,8 +134,7 @@ Configura la gestione di [sessione nel file dispatcher.any](https://experiencele
 
 >[!NOTE]
 >
->Quando la gestione delle sessioni è abilitata in una farm di Dispatcher, tutte le pagine gestite dalla farm non vengono memorizzate nella cache. Per memorizzare in cache le pagine che si trovano al di fuori del gruppo utenti chiusi (CUG), crea una seconda farm in dispatcher.any
->che gestisce le pagine non appartenenti a gruppi utenti chiusi (CUG).
+>Quando la gestione delle sessioni è abilitata in una farm di Dispatcher, tutte le pagine gestite dalla farm non vengono memorizzate nella cache. Per memorizzare in cache le pagine esterne a CUG, crea una seconda farm in dispatcher.any>che gestisca le pagine non a CUG.
 
 1. Configurare [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#enabling-secure-sessions-sessionmanagement) definendo `/directory`, ad esempio:
 

@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2174'
 ht-degree: 10%
 
 ---
@@ -251,7 +251,7 @@ Puoi utilizzare un tema personalizzato per applicare uno stile identico a tutti 
       <td><b>Valore</b></td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -351,7 +351,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +425,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
