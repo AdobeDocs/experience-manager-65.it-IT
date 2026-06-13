@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2174'
 ht-degree: 10%
 
 ---
@@ -23,7 +23,7 @@ Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](ht
 
 ## Informazioni sul tutorial  {#about-the-tutorial}
 
-Puoi utilizzare i temi per fornire un aspetto e uno stile unici a un modulo adattivo. Puoi applicare i temi predefiniti forniti con l’editor di moduli adattivi o creare temi personalizzati. AEM [!DNL Forms] fornisce un [editor temi](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/themes.html) per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l’editor di temi, ma è preferibile.
+Puoi utilizzare i temi per fornire un aspetto e uno stile unici a un modulo adattivo. Puoi applicare i temi predefiniti forniti con l’editor di moduli adattivi o creare temi personalizzati. AEM [!DNL Forms] fornisce un [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l’editor di temi, ma è preferibile.
 
 Al termine dell’esercitazione, dovresti essere in grado di effettuare le seguenti operazioni:
 
@@ -251,7 +251,7 @@ Puoi utilizzare un tema personalizzato per applicare uno stile identico a tutti 
       <td><b>Valore</b></td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -351,7 +351,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +425,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -480,7 +480,7 @@ Puoi utilizzare vari font per progettare un modulo adattivo. È possibile che in
 9. Passare alla cartella `clientlibs` appena creata e aggiungere le proprietà `allowProxy` e `categories`.
 10. Passare a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e creare una cartella css.
 11. Vai alla cartella CSS creata e crea un file. Ad esempio, crea un file come `fonts.css` e incolla il codice di incorporamento insieme all&#39;URL.
-    ![Struttura cartella](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![Struttura cartella](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Salva le modifiche.
 
 >[!NOTE]

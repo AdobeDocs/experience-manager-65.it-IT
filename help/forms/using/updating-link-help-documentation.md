@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 2%
+source-wordcount: '142'
+ht-degree: 11%
 
 ---
 
@@ -37,7 +37,7 @@ Per aggiornare l&#39;URL della documentazione online, seguire i [passaggi generi
      </li>
    ```
 
-   in
+   a
 
    ```html
    <ul class="helpmenu">

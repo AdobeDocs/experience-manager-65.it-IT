@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '2115'
-ht-degree: 71%
+source-wordcount: '2121'
+ht-degree: 70%
 
 ---
 
@@ -71,7 +71,7 @@ Viene visualizzato un messaggio che informa che il progetto è stato creato.
 
 >[!NOTE]
 >
->Si presume che la struttura linguistica necessaria per le lingue di traduzione sia già stata creata come parte della [definizione della struttura del contenuto.](getting-started.md#content-structure) Questo dovrebbe essere fatto in collaborazione con l&#39;architetto dei contenuti.
+>Si presume che la struttura linguistica necessaria per le lingue di traduzione sia già stata creata come parte della [definizione della struttura del contenuto.](getting-started.md#content-structure) Questo dovrebbe essere fatto in collaborazione con l’architetto di contenuti.
 >
 >Se le cartelle della lingua non vengono create in anticipo, non sarà possibile creare copie in lingua come descritto nei passaggi precedenti.
 
@@ -249,4 +249,4 @@ Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM h
 Sebbene sia raccomandato passare alla parte successiva del percorso di traduzione headless esaminando il documento [Pubblicare il contenuto tradotto,](publish-content.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Gestione dei progetti di traduzione](/help/sites-administering/tc-manage.md): scopri i dettagli dei progetti di traduzione e le funzioni aggiuntive, come i flussi di lavoro di traduzione umana e i progetti multilingue.
-* [Strumenti e ambiente di authoring](/help/sites-authoring/author-environment-tools.md#path-selection): AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser del percorso affidabile.
+* [Ambiente e strumenti di authoring](/help/sites-authoring/author-environment-tools.md#path-selection) - AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser con percorso affidabile.

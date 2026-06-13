@@ -12,8 +12,8 @@ feature: Operations
 role: Admin
 source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 2%
+source-wordcount: '1502'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Scopri come configurare Contenitore di layout e Modalità di layout.
 
 >[!TIP]
 >
->Questo documento fornisce una panoramica della progettazione reattiva per amministratori e sviluppatori del sito e descrive come vengono realizzate le funzioni nell’AEM.
+>Questo documento fornisce una panoramica della progettazione reattiva per amministratori di siti e sviluppatori e descrive come vengono realizzate le funzioni in AEM.
 >
 >Per gli autori di contenuto, i dettagli sull&#39;utilizzo delle funzionalità di progettazione reattiva in una pagina di contenuto sono disponibili nel documento [Layout reattivo per le pagine di contenuto.](/help/sites-authoring/responsive-layout.md)
 
@@ -65,7 +65,7 @@ Con questi meccanismi basati su una griglia dinamica è possibile:
 
 >[!TIP]
 >
->Adobe fornisce la [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
+>Adobe fornisce [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout dinamico come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia di AEM al di fuori di AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
 
 >[!NOTE]
 >
@@ -211,9 +211,9 @@ I due esempi seguenti illustrano la definizione:
 
 #### CSS per i punti di interruzione che utilizzano MENO {#css-for-breakpoints-using-less}
 
-AEM utilizza LESS per generare parti del CSS necessario, che devono essere incluse nei progetti.
+AEM utilizza LESS per generare parti del CSS necessario, che deve essere incluso nei progetti.
 
-Sarà inoltre necessario creare una [libreria client](https://experienceleague.adobe.com/docs/?lang=it) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
+Sarà inoltre necessario creare una [libreria client](https://experienceleague.adobe.com/docs/) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -247,7 +247,7 @@ La definizione della griglia di base è disponibile in:
 
 #### Considerazioni sullo stile {#styling-considerations}
 
-I componenti contenuti in un contenitore reattivo vengono ridimensionati (insieme ai rispettivi elementi DOM HTML) in base alla dimensione della griglia reattiva. Pertanto, in queste circostanze, si consiglia di evitare (o aggiornare) le definizioni degli elementi DOM a larghezza fissa (contenuti).
+I componenti contenuti in un contenitore reattivo vengono ridimensionati (insieme ai rispettivi elementi DOM di HTML) in base alla dimensione della griglia reattiva. Pertanto, in queste circostanze, si consiglia di evitare (o aggiornare) le definizioni degli elementi DOM a larghezza fissa (contenuti).
 
 Ad esempio:
 
@@ -329,7 +329,7 @@ In alcuni casi potrebbe essere necessario nidificare le griglie reattive per sup
 
 Quando non puoi evitare di utilizzare griglie reattive nidificate, assicurati che:
 
-* Tutti i contenitori (contenitori, schede, fisarmoniche, ecc.) hanno la proprietà `layout = responsiveGrid`.
+* Tutti i contenitori (contenitori, linguette, fisarmoniche, ecc.) hanno la proprietà `layout = responsiveGrid`.
 * Non combinare la proprietà `layout = simple` nella gerarchia dei contenitori.
 
 Sono inclusi tutti i contenitori strutturali del modello della pagina.

@@ -11,8 +11,8 @@ exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
 | AEM 6.5 | Questo articolo |
 
 ## Informazioni sui dizionari delle impostazioni internazionali {#about-locale-dictionaries}
@@ -29,13 +29,13 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
 **Dizionario specifico per modulo** Contiene stringhe utilizzate nei moduli adattivi. Ad esempio, etichette, nomi dei campi, messaggi di errore, descrizioni della guida e così via. Viene gestito come un insieme di file XLIFF per ogni lingua e puoi accedervi all&#39;indirizzo `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Dizionari globali** Nella libreria client AEM sono presenti due dizionari globali gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, modelli di data e ora e così via. Puoi trovare questi dizionari in CRXDe Lite su /libs/fd/xfaforms/clientlibs/I18N. Questi percorsi contengono cartelle separate per ogni lingua. Poiché i dizionari globali di solito non vengono aggiornati frequentemente, la separazione dei file JavaScript per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l’utilizzo della larghezza di banda di rete quando si accede a moduli adattivi diversi sullo stesso server.
+**Dizionari globali** Nella libreria client di AEM sono presenti due dizionari globali gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, modelli di data e ora e così via. Puoi trovare questi dizionari in CRXDe Lite su /libs/fd/xfaforms/clientlibs/I18N. Questi percorsi contengono cartelle separate per ogni lingua. Poiché i dizionari globali di solito non vengono aggiornati frequentemente, la separazione dei file JavaScript per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l’utilizzo della larghezza di banda di rete quando si accede a moduli adattivi diversi sullo stesso server.
 
 ### Come funziona la localizzazione dei moduli adattivi {#how-localization-of-adaptive-form-works}
 
 Esistono due metodi per identificare le impostazioni locali del modulo adattivo. Quando viene eseguito il rendering di un modulo adattivo, questo identifica le impostazioni locali richieste tramite:
 
-* visualizzazione del selettore `[local]` nell&#39;URL del modulo adattivo. Il formato dell&#39;URL è `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Il selettore `[local]` consente di memorizzare nella cache un modulo adattivo.
+* visualizzazione del selettore `[local]` nell&#39;URL del modulo adattivo. Il formato dell’URL è `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Il selettore `[local]` consente di memorizzare nella cache un modulo adattivo.
 
 * esaminare i seguenti parametri nell&#39;ordine specificato:
 
@@ -45,7 +45,7 @@ Per ignorare le impostazioni locali del browser degli utenti, è possibile passa
 
    * Impostazioni locali del browser impostate per l&#39;utente, specificate nella richiesta utilizzando l&#39;intestazione `Accept-Language`.
 
-   * Impostazione della lingua dell&#39;utente specificato nell&#39;AEM.
+   * Impostazione della lingua dell’utente specificato in AEM.
 
    * Le impostazioni locali del browser sono attivate per impostazione predefinita. Per modificare le impostazioni internazionali del browser:
       * Apri Gestione configurazione. URL: `http://[server]:[port]/system/console/configMgr`
@@ -96,7 +96,7 @@ I18N.js
 
 ### Aggiungere una libreria client per moduli adattivi per una lingua {#add-adaptive-form-client-library-for-a-locale-br}
 
-Creare un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con categoria come `guides.I18N.<locale>` e dipendenze come `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
+Creare un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con categoria `guides.I18N.<locale>` e dipendenze `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
 
 Aggiungi i seguenti file alla libreria client:
 
@@ -124,14 +124,14 @@ Eseguire questo passaggio solo se il `<locale>` che si sta aggiungendo non è tr
 
 ### Riavvia il server {#restart-the-server}
 
-Riavviare il server AEM per rendere effettive le impostazioni locali aggiunte.
+Riavvia il server AEM per rendere effettive le impostazioni locali aggiunte.
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ## Librerie di esempio per l’aggiunta del supporto per lo spagnolo {#sample-libraries-for-adding-support-for-spanish}
 
 Librerie client di esempio per aggiungere il supporto per la lingua spagnola
 
-[Ottieni file](assets/sample.zip)
+[Ottieni il file](assets/sample.zip)

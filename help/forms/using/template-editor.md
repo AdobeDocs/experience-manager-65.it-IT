@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 1%
+source-wordcount: '1956'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -37,7 +37,7 @@ Ad esempio, si desidera che tutti gli autori di moduli dispongano di determinate
 
 ## Utilizzo dei modelli {#working-with-templates}
 
-Puoi accedere all&#39;editor modelli dal menu Strumenti passando a **Adobe Experience Manager > Strumenti > Modelli**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. L’AEM fornisce una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, vedere [Cartelle modelli](/help/sites-developing/page-templates-editable.md).
+Puoi accedere all&#39;editor modelli dal menu Strumenti passando a **Adobe Experience Manager > Strumenti > Modelli**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. AEM fornisce una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, vedere [Cartelle modelli](/help/sites-developing/page-templates-editable.md).
 
 Dopo aver selezionato di aprire una cartella, viene visualizzato un pulsante Crea che consente di creare un modello per i moduli adattivi.
 
@@ -55,7 +55,7 @@ Dopo aver creato una cartella, aprila ed esegui i seguenti passaggi per creare u
 
 ### Interfaccia utente dell’editor modelli {#template-editor-ui}
 
-Quando apri un modello per la modifica, puoi vedere i seguenti componenti dell’editor AEM:
+Quando apri un modello per la modifica, puoi vedere i seguenti componenti di AEM Editor:
 
 * **Barra degli strumenti Pagina**
 Contiene le seguenti opzioni:
@@ -64,7 +64,7 @@ Contiene le seguenti opzioni:
    * **Informazioni pagina**: consente di specificare informazioni quali l&#39;ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri di pagina e la libreria lato client di progettazione pagina.
    * **Emulatore**: consente di simulare e personalizzare l&#39;aspetto per dispositivi diversi.
    * **Selettore livello:** consente di modificare il livello.
-Puoi scegliere il livello **Struttura** o **Contenuto iniziale**. Il livello Struttura consente di aggiungere e personalizzare l&#39;intestazione e il piè di pagina. Il livello Contenuto iniziale consente di personalizzare il contenuto del modulo.
+Puoi scegliere **Structure** layer o **Initial Content** layer. Il livello Struttura consente di aggiungere e personalizzare l&#39;intestazione e il piè di pagina. Il livello Contenuto iniziale consente di personalizzare il contenuto del modulo.
 
    * **Anteprima:** consente di visualizzare in anteprima l&#39;aspetto del modello quando viene pubblicato. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
 
@@ -193,7 +193,7 @@ Per mostrare e nascondere i modelli, effettua le seguenti operazioni:
 1. Individuare e aprire le impostazioni di configurazione **FormsManager**:
 
    * Per mostrare o nascondere il modello di moduli adattivi preconfigurato, seleziona o deseleziona l’opzione **Includi modelli AF e AD preconfigurati**.
-   * Per mostrare o nascondere i modelli di modulo adattivo inclusi nelle versioni di Forms AEM 6.0 o AEM 6.1 Forms ma ora obsoleti, seleziona o deseleziona l’opzione **Includi modelli AF AEM 6.0**. Se questa opzione è selezionata, per diventare effettiva è necessario abilitare la configurazione **Includi modelli AF e AD predefiniti**.
+   * Per mostrare o nascondere i modelli di modulo adattivo preconfigurati che sono stati aggiunti nelle versioni Forms di AEM 6.0 o Forms di AEM 6.1 ma che sono ora obsoleti, seleziona o deseleziona l&#39;opzione **Includi modelli AF di AEM 6.0**. Se questa opzione è selezionata, per diventare effettiva è necessario abilitare la configurazione **Includi modelli AF e AD predefiniti**.
 
 1. Fai clic su **Salva**. Le opzioni di visualizzazione per i modelli predefiniti vengono modificate.
 
