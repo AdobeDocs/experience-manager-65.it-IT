@@ -9,10 +9,10 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
 workflow-type: tm+mt
-source-wordcount: '10334'
-ht-degree: 98%
+source-wordcount: '10377'
+ht-degree: 97%
 
 ---
 
@@ -58,6 +58,10 @@ Per una discussione sul funzionamento del lease e della sincronizzazione offline
 **Consenti autenticazione estesa:** seleziona questa opzione per abilitare l’autenticazione estesa, quindi immettere l’URL di destinazione per l’autenticazione estesa.
 
 Se selezioni questa opzione, le applicazioni client potranno utilizzare l’autenticazione estesa. L’autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server AEM Forms. Ad esempio, ora gli utenti possono utilizzare l’autenticazione basata su SAML invece del nome utente/password di AEM Forms da Acrobat e Reader Client. Per impostazione predefinita, l’URL di destinazione contiene *localhost* come nome del server. Sostituisci il nome del server con un nome host completo. Se l’autenticazione estesa non è ancora abilitata, il nome host nell’URL di destinazione viene completato automaticamente dall’URL di base. Consulta [Aggiungere il provider di autenticazione estesa](configuring-client-server-options.md#add-the-extended-authentication-provider).
+
+>[!NOTE]
+>
+> L&#39;autenticazione del browser esterno è disponibile in AEM Forms su JEE Service Pack 6.5.25.0 e versioni successive. Se si utilizza il Service Pack 6.5.24.0 o versioni precedenti, eseguire l&#39;aggiornamento al Service Pack 6.5.25.0 o installare la patch dell&#39;hotfix JEE applicabile. Consulta [Configurare l&#39;autenticazione estesa dal browser esterno per Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md).
 
 ***nota &#x200B;**: l’autenticazione estesa è supportata da Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successive.*
 
