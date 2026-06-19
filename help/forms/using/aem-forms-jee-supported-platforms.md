@@ -207,7 +207,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
  <tr>
   <td><p>Microsoft® SQL Server 2019 (obsoleto) </p> </td>
   <td><p>Microkernel archivio</p> </td>
-  <td><p>Funzione supportata</p> </td>
+  <td><p>Supportato</p> </td>
  </tr>
  <tr>
   <td><p>Microsoft® SQL Server 2022 </p> </td>
