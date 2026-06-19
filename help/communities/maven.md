@@ -9,9 +9,9 @@ exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -22,21 +22,21 @@ ht-degree: 0%
 
 Questa sezione della documentazione di Adobe Experience Manager (AEM) Communities si aggiunge a:
 
-* [Creazione di progetti AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Creazione di progetti AEM tramite Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Esiste un solo artefatto &quot;uber&quot; che sostituisce i singoli artefatti:
 
-* JAR API [Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar) dell&#39;AEM
+* JAR API di AEM [Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->A partire da AEM 6.4, le API Communities non vengono rilasciate esplicitamente. Tutte le API Communities sono ora incluse nel file jar di Uber.
+>Da AEM 6.4 in poi, le API Communities non vengono rilasciate esplicitamente. Tutte le API Communities sono ora incluse nel file jar di Uber.
 >
 >Tieniti aggiornato con la versione più recente delle community.
 >
 >Consulta la sezione [Ultime versioni](deploy-communities.md#latest-releases) in cui puoi identificare la versione più recente.
 
-## Esempio di dipendenza Maven {#maven-dependency-example}
+## Esempio di dipendenza Maven
 
 ```xml
 <dependency>
@@ -49,7 +49,7 @@ Esiste un solo artefatto &quot;uber&quot; che sostituisce i singoli artefatti:
 
 >[!NOTE]
 >
->Vedi l&#39;[archivio JAR Uber dell&#39;AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) dove puoi identificare l&#39;artefatto JAR Uber più recente.
+>Vedi l&#39;[archivio JAR AEM Uber](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) in cui puoi identificare l&#39;ultimo artefatto JAR Uber.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:
@@ -87,7 +87,7 @@ Ensure thet the version specified corresponds with the Communities package versi
 >
 >Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
 
-## Maven Dependency Example {#maven-dependency-example}
+## Maven Dependency Example
 
 The Communities API jar must be specified before the Uber API jar.
 

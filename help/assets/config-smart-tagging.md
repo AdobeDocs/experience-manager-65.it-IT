@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2294'
 ht-degree: 14%
 
 ---
@@ -146,7 +146,7 @@ Devi creare una configurazione dell’account tecnico IMS seguendo questi passag
 
 1. Confermare la finestra di dialogo Verifica stato e fare clic su Chiudi una volta che la configurazione è nello stato integro.
 
-### Crea una nuova configurazione {#configure-smart-content-service}
+### Crea una nuova configurazione
 
 <!--
 >[!CAUTION]
@@ -175,7 +175,7 @@ Per configurare l&#39;integrazione, utilizzare i valori dei campi [!UICONTROL ID
 
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
-### Convalidare la configurazione {#validate-the-configuration}
+### Convalidare la configurazione
 
 Dopo aver completato la configurazione, puoi utilizzare un MBean JMX per convalidarla. Per eseguire la convalida, effettua le seguenti operazioni.
 
@@ -281,7 +281,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
    *Figure: Details of integration in Adobe Developer Console*
 
-### Configure Smart Content Service {#configure-smart-content-service}
+### Configure Smart Content Service
 
 >[!CAUTION]
 >
@@ -338,7 +338,7 @@ An authorization scope is an OAuth string that contains the following prerequisi
 6. Delete the old configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 7. Restart the console.
 
-### Validate the configuration {#validate-the-configuration}
+### Validate the configuration
 
 After you have completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
 
@@ -415,44 +415,44 @@ Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candida
 
 ![Immagini illustrative che illustrano le linee guida per la formazione](/help/assets/assets/do-not-localize/distraction.png)
 
-**Completeness (Completezza):** se un’immagine è idonea per più tag, aggiungi tutti i tag applicabili prima di includere l’immagine nella formazione. For example, for tags, such as `raincoat` and `model-side-view`, add both the tags on the eligible asset before including it for training.
+**Completeness (Completezza):** se un’immagine è idonea per più tag, aggiungi tutti i tag applicabili prima di includere l’immagine nella formazione. Ad esempio, per tag come `raincoat` e `model-side-view`, aggiungi entrambi i tag alla risorsa idonea prima di includerla nella formazione.
 
 ![Immagini illustrative che illustrano le linee guida per la formazione](/help/assets/assets/do-not-localize/completeness.png)
 
 >[!NOTE]
 >
->The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training. For best results, Adobe recommends that you use visually similar images to train the service for each tag.
+>La capacità del Servizio di contenuti avanzati di addestrarsi sui tag e di applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione. Per ottenere i migliori risultati, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
 
-### Periodic training {#periodic-training}
+### Formazione periodica {#periodic-training}
 
-You can enable the Smart Content Service to train periodically on the assets and associated tags within a folder. Open the [!UICONTROL Properties] page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
+Puoi abilitare il Servizio di contenuti avanzati per la formazione periodica sulle risorse e sui tag associati all’interno di una cartella. Apri la pagina [!UICONTROL Proprietà] della cartella di risorse, seleziona **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salva le modifiche.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Once this option is selected for a folder, [!DNL Experience Manager] runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. By default, the training workflow runs on a weekly basis at 12:30 AM on Saturdays.
+Una volta selezionata questa opzione per una cartella, [!DNL Experience Manager] esegue automaticamente un flusso di lavoro di formazione per addestrare il Servizio di contenuti avanzati sulle risorse della cartella e sui relativi tag. Per impostazione predefinita, il flusso di lavoro di formazione viene eseguito settimanalmente alle ore 00:00 del sabato.:30
 
-### On-demand training {#on-demand-training}
+### Formazione on-demand {#on-demand-training}
 
-You can train the Smart Content Service whenever required from the Workflow console.
+Puoi addestrare il Servizio di contenuti avanzati quando necessario dalla console Flusso di lavoro.
 
-1. In the [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
-1. Specify a title for the workflow and add a comment. Then, click **[!UICONTROL Run]**. The assets and tags are submitted for training.
+1. Nell&#39;interfaccia [!DNL Experience Manager], vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Apprendimento dei tag avanzati]**, quindi fai clic su **[!UICONTROL Avvia flusso di lavoro]** nella barra degli strumenti.
+1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]**, individua la cartella del payload che include le risorse con tag per l&#39;apprendimento del servizio.
+1. Specifica un titolo per il flusso di lavoro e aggiungi un commento. Quindi fare clic su **[!UICONTROL Esegui]**. Le risorse e i tag vengono inviati per la formazione.
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
 >[!NOTE]
 >
->Once the assets in a folder are processed for training, only the modified assets are processed in subsequent training cycles.
+>Una volta elaborate le risorse di una cartella per l’apprendimento, solo le risorse modificate vengono elaborate nei cicli di apprendimento successivi.
 
-### View training reports {#viewing-training-reports}
+### Visualizzare i rapporti di formazione {#viewing-training-reports}
 
-To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
+Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag nel set di formazione di risorse, controlla il rapporto sul flusso di lavoro di formazione dalla console Rapporti.
 
-1. In the [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
+1. Nell&#39;interfaccia [!DNL Experience Manager], vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Rapporti]**.
+1. Nella pagina **[!UICONTROL Rapporti risorse]**, fai clic su **[!UICONTROL Crea]**.
+1. Seleziona il report **[!UICONTROL Apprendimento dei tag avanzati]** e fai clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Quindi fare clic su **[!UICONTROL Crea]** nella barra degli strumenti.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, seleziona il rapporto generato. Per visualizzare il report, fare clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 1. Esamina i dettagli del rapporto.
