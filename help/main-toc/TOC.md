@@ -1413,7 +1413,7 @@ ht-degree: 95%
                + [Come accedere ai contenuti tramite API di consegna AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/access-your-content.html?lang=it)
                + [Come aggiornare i contenuti tramite API di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/update-your-content.html?lang=it)
                + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html?lang=it)
-               + [Come pubblicare con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html)
+               + [Come pubblicare con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html?lang=it)
                + [Facoltativo - Come creare applicazioni a pagina singola con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html?lang=it)
             + Percorso di architettura dei contenuti headless {#architect}
                + [Panoramica del percorso Architect di contenuti AEM headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html?lang=it)
@@ -1448,8 +1448,8 @@ ht-degree: 95%
             + [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/persisted-queries.html?lang=it)
             + [Ottimizzazione delle query GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-            + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html)
-            + [API GraphQL di AEM con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html)
+            + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html?lang=it)
+            + [API GraphQL di AEM con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html?lang=it)
          + L’editor universale {#universal-editor}
             + [Introduzione](/help/sites-developing/universal-editor/introduction.md)
       + Sviluppo ibrido e di SPA con AEM {#spas}
