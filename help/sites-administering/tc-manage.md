@@ -5,10 +5,10 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
+source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
 workflow-type: tm+mt
-source-wordcount: '3519'
-ht-degree: 41%
+source-wordcount: '3546'
+ht-degree: 42%
 
 ---
 
@@ -48,8 +48,8 @@ AEM rileva se viene creato un progetto per la traduzione iniziale del contenuto 
 
 Ad esempio, viene creata la directory principale della lingua /content/geometrixx/fr per la traduzione francese della lingua master /content/geometrixx/en. Non ci sono altre pagine nella copia per lingua francese.
 
-* Viene creato un progetto di traduzione per la pagina /content/geometrixx/en/products e tutte le pagine figlie, con targeting per la copia in lingua francese. Poiché la copia per lingua non include la pagina /content/geometrixx/fr/products, l’AEM copia immediatamente la pagina /content/geometrixx/en/products e tutte le pagine figlie nella copia in lingua francese. Le copie sono incluse anche nel progetto di traduzione.
-* Viene creato un progetto di traduzione per la pagina /content/geometrixx/en e tutte le pagine figlie, con targeting per la copia in lingua francese. Poiché la copia per lingua include la pagina che corrisponde alla pagina /content/geometrixx/en (directory principale della lingua), l’AEM copia la pagina /content/geometrixx/en e tutte le pagine figlie e le aggiunge a un lancio. Le copie sono incluse anche nel progetto di traduzione.
+* Viene creato un progetto di traduzione per la pagina /content/geometrixx/en/products e tutte le pagine figlie, con targeting per la copia in lingua francese. Poiché la copia per lingua non include la pagina /content/geometrixx/fr/products, AEM copia immediatamente la pagina /content/geometrixx/en/products e tutte le pagine figlie nella copia in lingua francese. Le copie sono incluse anche nel progetto di traduzione.
+* Viene creato un progetto di traduzione per la pagina /content/geometrixx/en e tutte le pagine figlie, con targeting per la copia in lingua francese. Poiché la copia per lingua include la pagina che corrisponde alla pagina /content/geometrixx/en (directory principale della lingua), AEM copia la pagina /content/geometrixx/en e tutte le pagine figlie e le aggiunge a un lancio. Le copie sono incluse anche nel progetto di traduzione.
 
 ## Creazione di progetti di traduzione tramite il pannello Riferimenti {#creating-translation-projects-using-the-references-panel}
 
@@ -59,7 +59,7 @@ Crea progetti di traduzione in modo da poter eseguire e gestire il flusso di lav
 * Viene creato un progetto per ogni copia per lingua selezionata.
 * Viene creata e aggiunta a ciascun progetto una copia della pagina selezionata e delle risorse associate. Queste copie vengono successivamente inviate al fornitore di traduzione per la lavorazione.
 
-È possibile specificare anche la selezione delle pagine figlie insieme alla pagina selezionata. In questo caso, a ogni progetto vengono aggiunte anche copie delle pagine figlie in modo che vengano tradotte. Se alle pagine figlie sono associate diverse configurazioni del framework di integrazione della traduzione, AEM crea ulteriori progetti.
+È possibile specificare anche la selezione delle pagine secondarie insieme alla pagina selezionata. In questo caso, a ogni progetto vengono aggiunte anche copie delle pagine secondarie in modo che vengano tradotte. Se alle pagine secondarie sono associate diverse configurazioni del framework di integrazione della traduzione, AEM crea ulteriori progetti.
 
 È inoltre possibile [creare manualmente progetti di traduzione](#creating-a-translation-project-using-the-projects-console).
 
@@ -81,7 +81,7 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
 
 1. Usa la console Sites per selezionare la pagina che stai aggiungendo ai progetti di traduzione.
 
-   Ad esempio, per tradurre le pagine in inglese del sito demo Geometrixx, seleziona Geometrixx sito demo > Inglese.
+   Ad esempio, per tradurre le pagine in inglese del sito demo di Geometrixx, seleziona Sito demo di Geometrixx > Inglese.
 
 1. Sulla barra degli strumenti fare clic su Riferimenti.
 
@@ -103,7 +103,7 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
 
 1. Usa la console Sites per selezionare la pagina da aggiungere ai progetti di traduzione.
 
-   Ad esempio, per tradurre le pagine in inglese del sito demo Geometrixx, seleziona Geometrixx sito demo > Inglese.
+   Ad esempio, per tradurre le pagine in inglese del sito demo di Geometrixx, seleziona Sito demo di Geometrixx > Inglese.
 
 1. Sulla barra degli strumenti fare clic su Riferimenti.
 
@@ -130,7 +130,7 @@ Come per la creazione di un progetto, quando si aggiungono pagine, se necessario
 
 1. Usa la console Sites per selezionare la pagina che stai aggiungendo al progetto di traduzione.
 
-   Ad esempio, per tradurre le pagine in inglese del sito demo Geometrixx, seleziona Geometrixx sito demo > Inglese.
+   Ad esempio, per tradurre le pagine in inglese del sito demo di Geometrixx, seleziona Sito demo di Geometrixx > Inglese.
 
 1. Sulla barra degli strumenti fare clic su Riferimenti.
 
@@ -393,13 +393,13 @@ Dopo aver completato il job, lo stato del job è Completato.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Archivia un processo di traduzione una volta completato e non è più necessario visualizzare i dettagli sullo stato del processo. Quando archivi il processo, il riquadro Processo di traduzione viene rimosso dal progetto.
+Archivia un processo di traduzione quando è terminato e non è più necessario visualizzare i dettagli relativi allo stato. Quando archivi il processo, il riquadro Processo di traduzione viene rimosso dal progetto.
 
 ## Creazione della struttura di una copia per lingua {#creating-the-structure-of-a-language-copy}
 
 Compila la copia per lingua in modo che contenga il contenuto del master lingua che si sta traducendo. Prima di compilare la copia per lingua, è necessario [creare la directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root) della copia per lingua.
 
-1. Utilizza la console Sites per selezionare la directory principale della lingua del master che utilizzi come origine. Ad esempio, per tradurre le pagine in inglese del sito demo Geometrixx, seleziona Contenuto > Geometrixx sito demo > Inglese.
+1. Utilizza la console Sites per selezionare la directory principale della lingua del master che utilizzi come origine. Ad esempio, per tradurre le pagine in inglese del sito demo di Geometrixx, seleziona Contenuto > Sito demo di Geometrixx > Inglese.
 1. Sulla barra degli strumenti fare clic su Riferimenti.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
@@ -459,11 +459,11 @@ Quando crei manualmente un progetto di traduzione, devi fornire valori per le se
 1. Seleziona il modello Progetto di traduzione e fai clic su Avanti.
 1. Immetti i valori per le proprietà Base.
 1. Fai clic su Avanzate e fornisci i valori per le proprietà relative alla traduzione.
-1. Fai clic su Crea. Nella casella di conferma, fai clic su Fine per tornare alla console Progetti, oppure fai clic su Apri progetto per aprire e iniziare a gestire il progetto.
+1. Fai clic su crea. Nella casella di conferma, fai clic su Fine per tornare alla console Progetti, oppure fai clic su Apri progetto per aprire e iniziare a gestire il progetto.
 
 ## Esportazione di un processo di traduzione {#exporting-a-translation-job}
 
-Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un fornitore di traduzione che non è integrato con l’AEM tramite un connettore o per rivederlo.
+Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un provider di traduzione che non è integrato con AEM tramite un connettore o per rivederlo.
 
 1. Dal menu a discesa del riquadro Lavoro di traduzione, fai clic su Esporta.
 1. Nella finestra di dialogo Esporta fare clic su Scarica file esportato e, se necessario, utilizzare la finestra di dialogo del browser Web per salvare il file.
