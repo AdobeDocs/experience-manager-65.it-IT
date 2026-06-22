@@ -377,7 +377,7 @@ Per confrontare le copie per lingua con la lingua master:
 1. Nella console **Sites**, passa alla copia per lingua che desideri confrontare.
 1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)**.
 1. Sotto l’intestazione **Copie** seleziona **Copie per lingua.**
-1. Seleziona la specifica copia per lingua e fai clic su **Confronta con ** principaleo **Confronta con precedente **se applicabile.
+1. Seleziona la specifica copia per lingua e fai clic su **Confronta con &#x200B;** principaleo **Confronta con precedente &#x200B;** se applicabile.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
