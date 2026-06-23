@@ -1,5 +1,5 @@
 ---
-title: Giornata difficile
+title: Giorno difficile
 description: Il test Duro giorno simula il carico giornaliero di circa 1000 autori in uno scenario peggiore, con tutte le operazioni in corso nello stesso momento.
 topic-tags: testing
 content-type: reference
@@ -7,18 +7,18 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 0dc83f7613a7202658d2d2eda421cb58c7e0092a
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1838'
 ht-degree: 1%
 
 ---
 
-# Giornata difficile{#tough-day}
+# Giorno difficile{#tough-day}
 
 ## Che cos’è il giorno difficile 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; è un’applicazione che consente di sottoporre a test di stress i limiti dell’istanza di AEM. Può essere eseguita con la suite di test predefinita o configurata in base alle tue esigenze di test. Puoi guardare [questa registrazione](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=it) per una presentazione dell&#39;applicazione.
+&quot;Duro giorno 2&quot; è un’applicazione che consente di sottoporre a test di stress i limiti dell’istanza di AEM. Può essere eseguita con la suite di test predefinita o configurata in base alle tue esigenze di test.
 
 >[!CAUTION]
 >
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## Come eseguire duro giorno 2 {#how-to-run-tough-day}
 
-Scarica la versione più recente del secondo giorno rigido dall&#39;[archivio Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Dopo aver scaricato l&#39;applicazione, è possibile eseguirla automaticamente fornendo il parametro `host`. Nell&#39;esempio seguente, l&#39;istanza AEM viene eseguita localmente in modo da utilizzare il valore `localhost`:
+Scarica la versione più recente del secondo giorno rigido dal [archivio Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Dopo aver scaricato l&#39;applicazione, è possibile eseguirla automaticamente fornendo il parametro `host`. Nell&#39;esempio seguente, l&#39;istanza di AEM viene eseguita localmente in modo da utilizzare il valore `localhost`:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -55,7 +55,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >Il Giorno 2 duro non ha un passaggio di pulizia. Di conseguenza, si consiglia di eseguire il Giorno 2 completo su un’istanza di staging clonata e non sull’istanza di produzione principale. L’istanza di staging deve essere rilasciata dopo i test.
 >
 
-### Ottenimento della Guida {#getting-help}
+### Come trovare assistenza {#getting-help}
 
 Duro Giorno 2 offre un&#39;ampia gamma di opzioni di aiuto accessibili dalla riga di comando. Ad esempio:
 
@@ -354,7 +354,7 @@ Duro Giorno 2 attualmente riporta nove metriche di test che è possibile valutar
 | **Nome** | **Descrizione** |
 |---|---|
 | Marca temporale | Timestamp dell’ultima esecuzione di test completata. |
-| Superata | Numero di esecuzioni riuscite. |
+| Superati | Numero di esecuzioni riuscite. |
 | Non riuscito | Numero di esecuzioni non riuscite. |
 | Min&#42; | Durata minima dell’esecuzione del test. |
 | Max&#42; | Durata massima dell’esecuzione del test. |
@@ -363,7 +363,7 @@ Duro Giorno 2 attualmente riporta nove metriche di test che è possibile valutar
 | DevStandard&#42; | La deviazione standard. |
 | 90p&#42; | 90 percentile. |
 | 99p&#42; | 99 percentile. |
-| 99,9p&#42; | 99,9 percentile. |
+| 99.9p&#42; | 99,9 percentile. |
 | Throughput reale&#42; | Numero di esecuzioni diviso per il tempo di esecuzione trascorso. |
 
 Queste metriche vengono scritte con l&#39;aiuto di editori che possono essere aggiunti con il parametro `add` (in modo simile all&#39;aggiunta di test). Attualmente sono disponibili due opzioni:
