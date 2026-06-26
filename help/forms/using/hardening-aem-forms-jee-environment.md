@@ -8,9 +8,9 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
 workflow-type: tm+mt
-source-wordcount: '7800'
+source-wordcount: '7949'
 ht-degree: 2%
 
 ---
@@ -807,6 +807,20 @@ Se le richieste di server legittime vengono bloccate dal filtro CSRF, eseguire u
 * Se la richiesta rifiutata non ha un’intestazione Referrer, modifica l’applicazione client per includere un’intestazione Referrer.
 * Se il client può funzionare in un browser, provare il modello di distribuzione.
 * In ultima istanza, puoi aggiungere la risorsa all’elenco degli URI consentiti. Questa impostazione non è consigliata.
+
+### Mitigazione dei problemi di serializzazione {#mitigating-serialization-issues}
+
+Gli attacchi di deserializzazione Java sfruttano applicazioni che deserializzano dati non attendibili, consentendo potenzialmente l&#39;esecuzione di codice remoto sul server. AEM Forms su JEE include un firewall di deserializzazione che esegue una verifica preliminare prima di qualsiasi tentativo di deserializzare un oggetto. La verifica verifica verifica i nomi delle classi in base a un elenco Consentiti di in stile firewall, a un elenco Bloccati di controllo o a entrambi e rifiuta le classi che possono essere sfruttate tramite attacchi di deserializzazione.
+
+Nelle installazioni che eseguono **JDK 11 o versione successiva**, questa protezione viene attivata dal filtro di serializzazione nativo della piattaforma e non richiede passaggi manuali. Nelle installazioni che eseguono **JDK 8**, il filtro di serializzazione nativo non è efficace, pertanto l&#39;agente NotSoSerial deve essere associato in modo esplicito alla JVM all&#39;avvio.
+
+Verificare che la protezione sia attiva passando alla verifica stato filtro di deserializzazione:
+
+```text
+https://<server>:<port>/system/console/healthcheck?tags=deserialization
+```
+
+Se il controllo di integrità segnala un errore in un&#39;istanza JDK 8, allegare e configurare l&#39;agente come descritto in [Mitigazione dei problemi di serializzazione in AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md).
 
 ## Configurazione di rete sicura {#secure-network-configuration}
 
