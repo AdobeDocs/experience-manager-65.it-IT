@@ -262,7 +262,7 @@ Configuration Manager ha utilizzato un servlet distribuito sul server applicazio
 1. Avvia il server AEM Forms.
 1. Digita l’URL seguente in un browser per verificare la modifica e assicurarti che non funzioni più.
 
-   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
+   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
 
 **Blocca l&#39;accesso remoto all&#39;archivio fonti attendibili**
 
