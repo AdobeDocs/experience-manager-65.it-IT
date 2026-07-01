@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,7 @@ Per modificare la configurazione dell&#39;elenco dei messaggi per **Posta in arr
 1. In modalità `Preview`, seleziona il collegamento **Messaggi** per aprire la pagina di messaggistica principale. Quindi seleziona **Posta in arrivo**, **Elementi inviati** o **Cestino** per configurare il componente per l&#39;elenco dei messaggi.
 
 1. In modalità `Edit`, selezionare il componente nella pagina.
-1. Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.
-Una volta annullata l’ereditarietà, è possibile selezionare l’icona di configurazione per aprire la finestra di dialogo di configurazione.
+1. Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.Una volta annullata l’ereditarietà, è possibile selezionare l’icona di configurazione per aprire la finestra di dialogo di configurazione.
 
 1. Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39;icona `broken link`.
 
@@ -137,8 +136,7 @@ Per modificare la configurazione della pagina del messaggio di composizione, apr
 * In modalità `Preview`, seleziona il collegamento **Messaggi** per aprire la pagina di messaggistica principale. Quindi selezionare il pulsante Nuovo messaggio per aprire la pagina `Compose Message`.
 
 * In modalità `Edit`, selezionare il componente principale nella pagina contenente il corpo del messaggio.
-* Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.
-Una volta annullata l’ereditarietà, è possibile selezionare l’icona di configurazione per aprire la finestra di dialogo di configurazione.
+* Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.Una volta annullata l’ereditarietà, è possibile selezionare l’icona di configurazione per aprire la finestra di dialogo di configurazione.
 
 * Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39;icona `broken link`.
 
@@ -150,11 +148,11 @@ Una volta annullata l’ereditarietà, è possibile selezionare l’icona di con
 
 * **URL di reindirizzamento**
 
-  Immetti l’URL della pagina visualizzata dopo l’invio del messaggio. Esempio: `../messaging.html`.
+  Immetti l’URL della pagina visualizzata dopo l’invio del messaggio. Ad esempio, `../messaging.html`.
 
 * **Annulla URL**
 
-  Inserisci l’URL della pagina visualizzata se il mittente annulla il messaggio. Esempio: `../messaging.html`.
+  Inserisci l’URL della pagina visualizzata se il mittente annulla il messaggio. Ad esempio, `../messaging.html`.
 
 * **Lunghezza massima dell&#39;oggetto del messaggio**
 
