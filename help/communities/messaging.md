@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Come mostrato di seguito, esiste una configurazione del servizio per i siti crea
 
 Per aggiungere una configurazione, selezionare l&#39;icona più &#39;**+**&#39; accanto al nome del servizio:
 
-* **Inserisco nell&#39;elenco Consentiti campi messaggio**
+* **Campi messaggio in Inserita nell&#39;elenco Consentiti**.
 
   Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, è necessario aggiungere l’ID elemento se si desidera memorizzarlo in SRP. Il valore predefinito è due voci: *oggetto* e *contenuto*.
 
@@ -109,13 +109,13 @@ Per aggiungere una configurazione, selezionare l&#39;icona più &#39;**+**&#39; 
 
   Se supportAttachments è selezionato, questo valore specifica la dimensione totale massima consentita (in byte) di tutti gli allegati. Il valore predefinito è *104857600* (100 MB).
 
-* inserire nell&#39;elenco Bloccati **Tipo di allegato**
+* **Tipo di allegato**
 
-  Un&#39;estensione di nome file con il prefisso &#39;**&#39; è una inserisce nell&#39;elenco Bloccati di nome file.**&#39;, rifiutato dal sistema. Se non è inserita nell&#39;elenco Bloccati, allora l’estensione è consentita. È possibile aggiungere o rimuovere estensioni utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
+  Una inserisce nell&#39;elenco Bloccati di estensioni di nomi file con prefisso &#39;**.**&#39;, che è stata rifiutata dal sistema. Se non è inserita nell&#39;elenco Bloccati, allora l’estensione è consentita. È possibile aggiungere o rimuovere estensioni utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
 
 * **Tipi di allegati consentiti**
 
-  **(*Azione richiesta*)** Un inserisco nell&#39;elenco Consentiti di estensioni del nome file, all&#39;opposto del inserisco nell&#39;elenco Bloccati di. Inserire nell&#39;elenco Bloccati Per consentire tutte le estensioni del nome file, ad eccezione di quelle, utilizzare l&#39;icona &#39;**-**&#39; per rimuovere la singola voce vuota.
+  **(*Azione richiesta*)** Un elenco Consentiti di estensioni del nome file, l&#39;opposto del inserisco nell&#39;elenco Bloccati di. Per consentire tutte le estensioni del nome file, ad eccezione di quelle, utilizzare l&#39;icona &#39;**-**&#39; per rimuovere la singola voce vuota.
 
 * **Selettore servizio**
 
@@ -123,15 +123,15 @@ Per aggiungere una configurazione, selezionare l&#39;icona più &#39;**+**&#39; 
 
   Il valore predefinito è */bin/messaging*.
 
-* inserire nell&#39;elenco Consentiti **Campo**
+* **Inserisco nell&#39;elenco Consentiti campo**
 
-  Utilizza **Campi messaggio Inserire nell&#39;elenco Consentiti**.
+  Utilizza **Campi messaggio in modo che vengano Inseriti nell&#39;elenco Consentiti**.
 
 >[!CAUTION]
 >
 >Ogni volta che una configurazione `Messaging Operations Service` viene aperta per la modifica, se `allowedAttachmentTypes.name` è stato rimosso, viene letta una voce vuota per rendere configurabile la proprietà. Una singola voce vuota disattiva efficacemente gli allegati.
 >
->Inserire nell&#39;elenco Bloccati Per consentire tutte le estensioni del nome file, ad eccezione di quelle, utilizzare l&#39;icona &#39;**-**&#39; per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
+>Per consentire tutte le estensioni del nome file, ad eccezione di quelle, utilizzare l&#39;icona &#39;**-**&#39; per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
 
 ## Messaggistica di gruppo {#group-messaging}
 
@@ -148,7 +148,7 @@ Per consentire agli utenti registrati di inviare messaggi diretti in blocco a gr
 
 ![social-message-op-service](assets/social-message-op-service.png)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 Un modo per risolvere i problemi consiste nell&#39;abilitare [i messaggi di debug nel registro.](/help/sites-administering/troubleshooting.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Componenti community
-description: Scopri quando AEM Communities viene concesso in licenza, puoi aggiungere funzioni delle community a qualsiasi sito AEM utilizzando gli strumenti standard di creazione AEM.
+description: Scopri quando AEM Communities viene concesso in licenza, puoi aggiungere funzioni di Communities a qualsiasi sito AEM utilizzando gli strumenti di authoring standard di AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 15%
+ht-degree: 17%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## Introduzione {#introduction}
 
-Quando AEM Communities ha la licenza, oltre a creare siti community, è possibile aggiungere funzioni Communities a qualsiasi sito AEM utilizzando gli strumenti standard di creazione AEM.
+Con la licenza di AEM Communities, oltre a creare siti community, è possibile aggiungere funzioni Communities a qualsiasi sito AEM utilizzando gli strumenti di authoring standard di AEM.
 
 Per ulteriori informazioni sulla creazione di un sito community, visitare il sito:
 
@@ -42,7 +42,7 @@ Consulta anche la [guida interattiva dei componenti della community](/help/commu
 >
 >Leggi [Nozioni di base sui componenti Communities](/help/communities/basics.md) in quanto contiene le informazioni necessarie per l&#39;authoring con i componenti Communities.
 
-| **Titolo componente** | **Funzionalità** |
+| **Titolo componente** | **Funzione** |
 |---|---|
 | Flussi attività | [Flussi attività](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
@@ -69,7 +69,7 @@ Consulta anche la [guida interattiva dei componenti della community](/help/commu
 | Recensioni | [Recensioni](/help/communities/reviews.md) |
 | Riepilogo recensioni (visualizzazione) | [Recensioni](/help/communities/reviews.md) |
 | Ricerca | [Ricerca](/help/communities/search.md) |
-| Risultato di ricerca  | [Ricerca](/help/communities/search.md) |
+| Risultato di ricerca | [Ricerca](/help/communities/search.md) |
 | Tag cloud per social network | [Tag cloud per social network](/help/communities/tagcloud.md) |
 | Votazione | [Votazione](/help/communities/voting.md) |
 

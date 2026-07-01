@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 0%
+source-wordcount: '1046'
+ht-degree: 1%
 
 ---
 
-# Tutorial: crea la tua prima comunicazione interattiva {#tutorial-create-your-first-interactive-communication}
+# Esercitazione: creare la prima comunicazione interattiva {#tutorial-create-your-first-interactive-communication}
 
 Scopri come creare la tua prima comunicazione interattiva.
 
@@ -47,10 +47,10 @@ Un operatore di telecomunicazioni invia fatture mensili ai clienti tramite e-mai
 
 ## Prerequisiti {#prerequisites}
 
-* Configura un’istanza di authoring AEM.
+* Configura un’istanza Autore AEM.
 * Installa il componente aggiuntivo [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) nell&#39;istanza di authoring
 * Configurare il database MYSQL
-* Ottenere il driver del database JDBC (file JAR) dal provider del database. Gli esempi contenuti nell&#39;esercitazione sono basati sul database MySQL e utilizzano il driver di database JDBC [MySQL di Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Ottenere il driver del database JDBC (file JAR) dal provider del database. Esempi nell&#39;esercitazione sono basati sul database MySQL e utilizzano il driver [MySQL JDBC di Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Passaggio 1: pianificare la comunicazione interattiva {#step-plan-the-interactive-communication}
 
@@ -68,13 +68,13 @@ Per creare un&#39;anatomia per la comunicazione interattiva con le seguenti moda
 * Dati condizionali
 * Immagini
 
-[&#128279;](/help/forms/using/planning-interactive-communications.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## Passaggio 2: creare il modello dati del modulo {#step-create-form-data-model}
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modello per dati modulo consente di collegare una comunicazione interattiva per utilizzare origini dati diverse. Ad esempio, profilo utente AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare i dati dalle origini dati connesse. Per ulteriori informazioni sul modello dati modulo, vedere [Integrazione dati AEM Forms](/help/forms/using/data-integration.md).
+Un modello per dati modulo consente di collegare una comunicazione interattiva per utilizzare origini dati diverse. Ad esempio, profilo utente di AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare i dati dalle origini dati connesse. Per ulteriori informazioni sul modello dati modulo, vedere [Integrazione dati AEM Forms](/help/forms/using/data-integration.md).
 
 **Obiettivi:**
 
@@ -87,7 +87,7 @@ Un modello per dati modulo consente di collegare una comunicazione interattiva p
 * Modifica dati di esempio
 * Test del modello di dati del modulo e servizi configurati con i dati di test
 
-[&#128279;](/help/forms/using/create-form-data-model0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## Passaggio 3: creare frammenti di documento {#step-create-document-fragments}
 
@@ -101,13 +101,13 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 * Creare le variabili
 * Creare e applicare regole
 
-[&#128279;](/help/forms/using/create-document-fragments.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## Passaggio 4: creare modelli {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Per creare una comunicazione interattiva, è necessario che sul server AEM siano disponibili modelli per la stampa e i canali Web.
+Per creare una comunicazione interattiva, è necessario disporre di modelli disponibili sul server AEM per i canali di stampa e web.
 
 I modelli per il canale di stampa vengono creati in Adobe Forms Designer e caricati sul server AEM. Questi modelli sono quindi disponibili per l’utilizzo durante la creazione di una comunicazione interattiva.
 
@@ -115,11 +115,11 @@ I modelli per il canale web vengono creati in AEM. Gli autori e gli amministrato
 
 **Obiettivi:**
 
-* Creazione di modelli XDP per il canale di stampa con Adobe Forms Designer
+* Creare modelli XDP per il canale di stampa con Adobe Forms Designer
 * Carica i modelli XDP sul server AEM Forms
 * Creare e abilitare modelli per il canale web
 
-[&#128279;](/help/forms/using/create-templates-print-web.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## Passaggio 5: creare una comunicazione interattiva {#step-create-an-interactive-communication}
 
@@ -138,9 +138,9 @@ Le comunicazioni interattive possono essere distribuite attraverso due canali: s
 * Creare un grafico nella versione web della comunicazione interattiva
 * Creare collegamenti ipertestuali nella versione web della comunicazione interattiva
 
-[&#128279;](/help/forms/using/create-interactive-communication0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
-## Passaggio 6: Publish la tua comunicazione interattiva {#step-publish-your-interactive-communication}
+## Passaggio 6: pubblicare la comunicazione interattiva {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

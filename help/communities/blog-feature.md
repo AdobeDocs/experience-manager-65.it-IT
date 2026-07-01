@@ -1,6 +1,6 @@
 ---
 title: Funzione blog
-description: Scopri in che modo la funzione blog supporta la fornitura di informazioni sulla community in un formato di diario. Le voci vengono effettuate nell’ambiente Publish da utenti autorizzati.
+description: Scopri in che modo la funzione blog supporta la fornitura di informazioni sulla community in un formato di diario. Le voci vengono effettuate nell’ambiente di pubblicazione da utenti autorizzati.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 0%
+source-wordcount: '1719'
+ht-degree: 1%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-La funzione blog per AEM Communities si è trasformata da attività di authoring a una vera e propria attività community che ha luogo nell’ambiente Publish.
+La funzione blog per AEM Communities si è trasformata da attività di authoring a una vera e propria attività community che ha luogo nell’ambiente di pubblicazione.
 
-La funzione blog supporta la fornitura di informazioni sulla community in formato di diario. I post di blog vengono inseriti in Publish da membri autorizzati (utenti registrati e connessi).
+La funzione blog supporta la fornitura di informazioni sulla community in formato di diario. I post di blog vengono inseriti nell’ambiente di pubblicazione da membri autorizzati (utenti registrati e connessi).
 
 La funzione blog fornisce:
 
-* Creazione lato Publish di articoli e commenti sui blog
+* Creazione lato pubblicazione di articoli e commenti sui blog
 * Modifica Rich Text
 * Immagini in linea (con supporto per il trascinamento della selezione)
 * Contenuto per social network incorporato ([oSupporto per l&#39;incorporamento](/help/communities/blog-developer-basics.md#allowing-rich-media))
@@ -192,7 +192,7 @@ Nella scheda **Impostazioni**, specifica le caratteristiche di base del blog:
 
 * **Pattern menzioni interfaccia utente**
 
-  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
+  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Ad esempio, `~{{familyName}}{{givenName}}`.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -290,9 +290,9 @@ Altre funzionalità dipendono dal fatto che il visitatore del sito sia un modera
 
 Quando si crea un articolo di blog, è possibile scegliere di effettuare le seguenti operazioni:
 
-1. Publish immediatamente
-1. Publish una bozza
-1. Publish a una data e un’ora pianificate
+1. Pubblica immediatamente
+1. Pubblicare una bozza
+1. Pubblica a una data e un’ora pianificate
 
 Gli articoli del blog vengono visualizzati nella scheda appropriata (Pubblicato, Bozze o Pianificato) per i membri in grado di creare al momento della pubblicazione.
 
@@ -309,8 +309,8 @@ Quando l&#39;utente connesso è un membro della community o [membro privilegiato
 In particolare, essi possono:
 
 * Creare un articolo di blog
-* Post un nuovo articolo di blog per conto di un altro membro
-* Post: commento a un articolo di blog
+* Pubblica un nuovo articolo di blog per conto di un altro membro
+* Pubblica un commento su un articolo di blog
 * Modifica il proprio articolo o commento sul blog
 * Eliminare il proprio articolo o commento del blog
 * Contrassegna gli articoli o i commenti di altri blog

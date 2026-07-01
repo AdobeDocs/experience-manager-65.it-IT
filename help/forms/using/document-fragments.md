@@ -10,7 +10,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ I frammenti di documento sono parti/componenti riutilizzabili di una corrisponde
 
 * **Testo**: una risorsa di testo è un contenuto costituito da uno o più paragrafi di testo. Un paragrafo può essere statico o dinamico.
 
-   * [Testi nelle comunicazioni interattive](/help/forms/using/texts-interactive-communications.md)
+   * [Testi delle comunicazioni interattive](/help/forms/using/texts-interactive-communications.md)
 
 * **Condizione**: le condizioni ti consentono di definire quale contenuto viene incluso al momento della creazione della corrispondenza, in base ai dati forniti. La condizione è descritta in termini di variabili di controllo. Una variabile di controllo può essere un elemento del dizionario dati o un segnaposto.
 

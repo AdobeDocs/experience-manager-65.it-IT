@@ -12,19 +12,19 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
 
 # Esperienza del sito pubblicato {#experience-the-published-site}
 
-## Passa a nuovo sito in Publish {#browse-to-new-site-on-publish}
+## Passa al nuovo sito al momento della pubblicazione {#browse-to-new-site-on-publish}
 
 Dopo la pubblicazione del sito delle community appena creato, individuare l&#39;URL visualizzato durante la creazione del sito, ma nel server di pubblicazione, ad esempio:
 
 * URL autore = https://localhost:4502/content/sites/engage/en.html
-* URL PUBLISH = https://localhost:4503/content/sites/engage/en.html
+* URL pubblicazione = https://localhost:4503/content/sites/engage/en.html
 
 Per ridurre al minimo la confusione in merito al membro che ha effettuato l’accesso durante l’authoring e la pubblicazione, si consiglia di utilizzare browser diversi per ogni istanza.
 
@@ -55,7 +55,7 @@ Una limitazione nota espone il contenuto del sito community ai visitatori anonim
 
 Per proteggere il contenuto del sito community dall’accesso da parte di utenti anonimi tramite il contenuto JCR e JSON , effettua le seguenti operazioni:
 
-1. Nell’istanza Autore AEM, vai a https:// nomehost:port/editor.html/content/site/sitename.html.
+1. Nell&#39;istanza Autore AEM, vai a https:// nomehost:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -72,7 +72,7 @@ Per proteggere il contenuto del sito community dall’accesso da parte di utenti
    ![autenticazione sito](assets/site-authentication.png)
 
 1. Aggiungi il percorso della pagina di accesso. Ad esempio, **/content/......./GetStarted**.
-1. Publish la pagina.
+1. Pubblica la pagina.
 
 ## Membro community attendibile {#trusted-community-member}
 
@@ -193,7 +193,7 @@ Accedi come Weston McCall (weston.mccall@dodgit.com / password) e passa alla ste
 
 ### Collegamento pagina web {#web-page-link}
 
-Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento Pagina Web. Per aggiungere contenuti a questa pagina nell’ambiente di authoring, è possibile utilizzare gli strumenti AEM standard.
+Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento Pagina Web. Per aggiungere contenuti a questa pagina nell’ambiente di authoring, è possibile utilizzare gli strumenti di authoring standard di AEM.
 
 Ad esempio, vai all&#39;istanza **author**, apri la cartella `engage` nella console [Communities Sites](/help/communities/sites-console.md), seleziona l&#39;icona **Apri sito** per accedere alla modalità di modifica dell&#39;autore. Quindi seleziona la modalità anteprima in modo da poter selezionare il collegamento `Web Page`, quindi seleziona la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblica solo la pagina o l’intero sito.
 
