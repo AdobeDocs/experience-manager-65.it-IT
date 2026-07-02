@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 25%
+source-wordcount: '2681'
+ht-degree: 26%
 
 ---
 
@@ -50,7 +50,7 @@ Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che
 
 ### Configurazioni di rollout installate {#installed-rollout-configurations}
 
-Nella tabella seguente sono elencate le configurazioni di rollout installate con AEM. La tabella include le azioni di attivazione e sincronizzazione di ogni configurazione di rollout. Se le azioni di configurazione rollout installate non soddisfano i requisiti, puoi [creare una configurazione di rollout](#creating-a-rollout-configuration).
+Nella tabella seguente sono elencate le configurazioni di rollout installate con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout. Se le azioni di configurazione rollout installate non soddisfano i requisiti, puoi [creare una configurazione di rollout](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -170,7 +170,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Nella Live Copy, questa azione di sincronizzazione aggiorna i riferimenti, come i collegamenti.<br /> Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all'interno della blueprint. Una volta trovato, aggiorna il percorso in modo che punti alla risorsa correlata all’interno della Live Copy (anziché alla blueprint). I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configura il servizio CQ MSM References Update Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. </p> </td>
+   <td><p>Nella Live Copy, questa azione di sincronizzazione aggiorna i riferimenti, ad esempio i collegamenti.<br /> Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all’interno della blueprint. Una volta trovato, aggiorna il percorso in modo che punti alla risorsa correlata all’interno della Live Copy (anziché alla blueprint). I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configura il servizio CQ MSM References Update Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -229,8 +229,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>Crea o aggiorna le risorse prodotto all'interno di un catalogo. Questa azione è destinata a essere utilizzata in una delle seguenti situazioni:
-    <ul>
+   <td>Crea o aggiorna le risorse prodotto all'interno di un catalogo. Questa azione è destinata a essere utilizzata in una delle seguenti situazioni:<ul>
      <li>Generazione o rollout di un catalogo (o di una sezione di catalogo)</li>
      <li>Un utente ripristina l’ereditarietà della sincronizzazione per un componente prodotto.</li>
     </ul> </td>
@@ -243,7 +242,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
   </tr>
   <tr>
    <td>catalogRolloutHooks</td>
-   <td>Esegue gli hook di rollout specifici della generazione del catalogo. Chiama i metodi executePageRolloutHooks e executeProductRolloutHooks di CatalogGenerator.<br /> Consulta com.adobe.cq.commerce.pim.api.CatalogGenerator nei documenti Java AEM.</td>
+   <td>Esegue gli hook di rollout specifici della generazione del catalogo. Chiama i metodi executePageRolloutHooks e executeProductRolloutHooks di CatalogGenerator.<br /> Consulta com.adobe.cq.commerce.pim.api.CatalogGenerator in Java AEM.</td>
    <td> </td>
   </tr>
   <tr>
@@ -265,9 +264,9 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
 ### Esclusione delle proprietà e dei tipi di nodo dalla sincronizzazione {#excluding-properties-and-node-types-from-synchronization}
 
-Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti in modo che non influiscano su proprietà e tipi di nodo specifici. Ad esempio, molte proprietà e sottonodi relativi al funzionamento interno dell’AEM non devono essere inclusi in una Live Copy. Deve essere copiato solo il contenuto rilevante all’utente della pagina.
+Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti in modo che non influiscano su proprietà e tipi di nodo specifici. Ad esempio, molte proprietà e sottonodi correlati al funzionamento interno di AEM non devono essere inclusi in una Live Copy. Deve essere copiato solo il contenuto rilevante all’utente della pagina.
 
-Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
+Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione per le quali è possibile specificare i nodi da escludere. La tabella fornisce i nomi dei servizi da configurare utilizzando la console web e il PID per la configurazione con un nodo dell’archivio.
 
@@ -292,7 +291,7 @@ La tabella seguente descrive le proprietà che puoi configurare:
    <td>Un’espressione regolare che corrisponde ai tipi di nodo da escludere dall’azione di sincronizzazione.</td>
   </tr>
   <tr>
-   <td><p>Elementi di paragrafo esclusi</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
+   <td><p>Elementi di paragrafo esclusi</p> <p>cq.wcm.msm.action.excludedparaghitems</p> </td>
    <td>Espressione regolare che corrisponde agli elementi di paragrafo da escludere dall'azione di sincronizzazione.</td>
   </tr>
   <tr>
@@ -332,7 +331,7 @@ Ad esempio, se desideri includere il **Titolo** della pagina nelle modifiche con
 
 Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti, relative all’aggiornamento dei riferimenti.
 
-Quando si lavora con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le procedure consigliate.
+Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione per cui è possibile specificare l’aggiornamento dei riferimenti. La tabella fornisce i nomi dei servizi da configurare utilizzando la console web e il PID per la configurazione con un nodo dell’archivio.
 
@@ -410,7 +409,7 @@ Le pagine figlie della pagina blueprint ereditano la configurazione. Quando impo
 
 Specifica una configurazione di rollout da utilizzare come impostazione predefinita del sistema. Per specificare il valore predefinito, configura il servizio OSGi:
 
-* **Day CQ WCM Live Relationship Manager**
+* **giorno CQ WCM Live Relationship Manager**
 il PID del servizio è `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configurare il servizio utilizzando [Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un [nodo repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
