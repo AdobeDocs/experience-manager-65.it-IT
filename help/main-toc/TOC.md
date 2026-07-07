@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e come può esserti utile il software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: ec3941675081255879065c3be9d5af77474b2072
+source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
-source-wordcount: '8286'
+source-wordcount: '8300'
 ht-degree: 95%
 
 ---
@@ -1213,6 +1213,7 @@ ht-degree: 95%
       + [Elaborazione di documenti anche se il server AEM Forms non è completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Impossibile utilizzare il servizio di output, il servizio Forms o il servizio Document of Record (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Mitigazione delle vulnerabilità RCE Struts 2 per Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Mitigazione della vulnerabilità del servizio web Document Security di Apache Axis per Experience Manager Forms su JEE](/help/forms/using/mitigating-apache-axis-document-security-webservice-vulnerability-for-aem-forms-jee.md)
       + [Impossibile eseguire il backup del database durante l’aggiornamento a 6.5.12.0 per MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La generazione di PDF non riesce a stampare un numero elevato di PDF su WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Come riavviare correttamente AEM SDK](/help/forms/using/restart-aem-sdk.md)
@@ -1418,7 +1419,7 @@ ht-degree: 95%
             + Percorso di architettura dei contenuti headless {#architect}
                + [Panoramica del percorso Architect di contenuti AEM headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html?lang=it)
                + [Modellazione dei contenuti per headless con AEM - Introduzione](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html?lang=it)
-               + [Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html?lang=it)
+               + [Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
                + [Scopri come creare modelli di frammenti di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html?lang=it)
          + Guide introduttive {#getting-started}
             + [Introduzione](/help/sites-developing/headless/getting-started/introduction.md)
