@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 2%
+source-wordcount: '494'
+ht-degree: 6%
 
 ---
 
@@ -74,4 +74,4 @@ Tutte le pagine di We.Retail sono basate su modelli modificabili, che consentono
 
 Per ulteriori informazioni, vedere il documento di creazione [Creazione di modelli di pagina](/help/sites-authoring/templates.md) o il documento per sviluppatori Pagina [Modelli - Modificabili](/help/sites-developing/page-templates-editable.md) per informazioni tecniche complete sui modelli modificabili.
 
-È inoltre possibile analizzare [componenti core](/help/sites-developing/we-retail-core-components.md). Per una panoramica tecnica, consulta il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei Componenti core e il documento per sviluppatori [Sviluppo di Componenti core](https://helpx.adobe.com/it/experience-manager/core-components/using/developing.html).
+È inoltre possibile analizzare [componenti core](/help/sites-developing/we-retail-core-components.md). Per una panoramica tecnica, consulta il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei Componenti core e il documento per sviluppatori [Sviluppo di Componenti core](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).

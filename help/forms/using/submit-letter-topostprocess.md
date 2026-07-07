@@ -1,6 +1,6 @@
 ---
-title: Elaborazione Post di lettere e comunicazioni interattive
-description: L’elaborazione delle lettere da parte di Post nella gestione della corrispondenza consente di creare processi di post AEM e Forms, come la stampa e l’e-mail, e di integrarli con le lettere.
+title: Post-elaborazione di lettere e comunicazioni interattive
+description: La post-elaborazione delle lettere in Gestione della corrispondenza consente di creare processi di post AEM e Forms, come la stampa e l’e-mail, e di integrarli con le lettere.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -11,24 +11,24 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 2%
 
 ---
 
-# Elaborazione Post di lettere e comunicazioni interattive{#post-processing-of-letters-and-interactive-communications}
+# Post-elaborazione di lettere e comunicazioni interattive{#post-processing-of-letters-and-interactive-communications}
 
-## Elaborazione Post {#post-processing}
+## Post-elaborazione {#post-processing}
 
-Gli agenti possono associare ed eseguire flussi di lavoro di post-elaborazione su lettere e comunicazioni interattive. Il processo Post da eseguire può essere selezionato nella vista Proprietà del modello Lettera. È possibile impostare i processi di post per la posta elettronica, la stampa, il fax o l&#39;archiviazione delle lettere finali.
+Gli agenti possono associare ed eseguire flussi di lavoro di post-elaborazione su lettere e comunicazioni interattive. Il processo post da eseguire può essere selezionato nella vista Proprietà del modello Lettera. È possibile impostare i processi di post per la posta elettronica, la stampa, il fax o l&#39;archiviazione delle lettere finali.
 
-![Elaborazione Post](assets/ppoverview.png)
+![Post elaborazione](assets/ppoverview.png)
 
 Per associare i processi di post a lettere o comunicazioni interattive, è innanzitutto necessario impostare i processi di post. È possibile eseguire due tipi di flussi di lavoro sulle lettere inviate:
 
-1. **Forms Workflow:** Si tratta dei flussi di lavoro di gestione dei processi di AEM Forms su JEE. Istruzioni per configurare [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** si tratta dei flussi di lavoro di gestione dei processi di AEM Forms su JEE. Istruzioni per configurare [Forms Workflow](#formsworkflow).
 
-1. **Flusso di lavoro AEM:** i flussi di lavoro AEM possono essere utilizzati anche come processi di post per le lettere inviate. Istruzioni per la configurazione di [Flusso di lavoro AEM](../../forms/using/aem-forms-workflow.md).
+1. **Flusso di lavoro di AEM:** I flussi di lavoro di AEM possono essere utilizzati anche come processi di post per le lettere inviate. Istruzioni per la configurazione di [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 
 ## Flusso di lavoro per moduli {#formsworkflow}
 
@@ -36,21 +36,21 @@ Per associare i processi di post a lettere o comunicazioni interattive, è innan
 
    ![Gestione configurazione](assets/2configmanager-1.png)
 
-1. In questa pagina, individua la configurazione AEM Forms Client SDK e espandila facendo clic su di essa.
+1. In questa pagina, individua AEM Forms Client SDK Configuration ed espandila facendo clic su di essa.
 1. In URL server, immetti il nome del tuo AEM Forms sul server JEE, i dettagli di accesso, quindi fai clic su **Salva**.
 
-   ![Immettere il nome del server di LiveCycle](assets/1cofigmanager.png)
+   ![Immettere il nome del server LiveCycle](assets/1cofigmanager.png)
 
 1. Specifica nome utente e password.
 1. Verificare che sun.util.calendar sia aggiunto alla configurazione del firewall di deserializzazione.
 
    Vai a Configurazione firewall deserializzazione e in Classi Inserite nell&#39;elenco Consentiti di prefissi di pacchetto, aggiungi sun.util.calendar.
 
-1. Ora i server sono mappati e i processi post in AEM Forms su JEE sono disponibili nell’interfaccia utente dell’AEM durante la creazione di lettere.
+1. Ora i server sono mappati e i processi di post in AEM Forms su JEE sono disponibili nell’interfaccia utente di AEM durante la creazione di lettere.
 
    ![Crea schermata lettere con post-processi elencati](assets/0configmanager.png)
 
-1. Per autenticare un processo/servizio, copia il nome di un processo, torna alla pagina Configurazioni console web Adobe Experience Manager > Configurazione SDK client AEM Forms e aggiungi il processo come nuovo servizio.
+1. Per autenticare un processo/servizio, copiare il nome di un processo, tornare alla pagina Configurazioni console web Adobe Experience Manager > Configurazione SDK client AEM Forms e aggiungere il processo come nuovo servizio.
 
    Se ad esempio nell&#39;elenco a discesa della pagina Proprietà della lettera il nome del processo viene visualizzato come Forms Workflow -> ValidCCPostProcess/SaveXML, aggiungere un nome di servizio come `ValidCCPostProcess/SaveXML`.
 
@@ -64,9 +64,9 @@ Per associare i processi di post a lettere o comunicazioni interattive, è innan
    1. **inAttachmentDocs (parametro Attachment Documents):** Parametro di input elenco. Questo input contiene tutti gli allegati come input.
    1. **redirectURL (output URL di reindirizzamento):** tipo di output che indica l&#39;URL a cui reindirizzare.
 
-   Il flusso di lavoro dei moduli deve avere come input il parametro del documento PDF o il parametro dei dati XML con lo stesso nome specificato in **[!UICONTROL Configurazioni gestione corrispondenza]**. Questa opzione è necessaria per elencare il processo nel menu a discesa Processo Post.
+   Il flusso di lavoro dei moduli deve avere come input il parametro del documento PDF o il parametro dei dati XML con lo stesso nome specificato in **[!UICONTROL Configurazioni gestione corrispondenza]**. Questo è necessario affinché il processo sia elencato nel menu a discesa Post Process (Pubblica elaborazione).
 
-## Impostazioni nell’istanza Publish {#settings-on-the-publish-instance}
+## Impostazioni sull’istanza Publish {#settings-on-the-publish-instance}
 
 1. accedere a `https://localhost:publishport/aem/forms`.
 1. Passa a **[!UICONTROL Lettere]** per visualizzare la lettera pubblicata disponibile nell&#39;istanza di pubblicazione.
@@ -116,9 +116,9 @@ Nell&#39;interfaccia utente di CCR, completare i passaggi seguenti per associare
 
 1. Passa il puntatore del mouse su una lettera e seleziona **Visualizza proprietà**.
 1. Seleziona **Modifica**.
-1. Post Nel menu a discesa Proprietà di base, selezionare il processo di post da associare alla lettera. Sia i processi post relativi all’AEM che quelli relativi al Forms sono elencati nel menu a discesa.
+1. Nel menu a discesa Proprietà di base, selezionare il processo di post da associare alla lettera. Sia i processi di post relativi ad AEM che quelli relativi a Forms sono elencati nel menu a discesa.
 1. Seleziona **Salva**.
-1. Dopo aver configurato la lettera con il processo Post, pubblicarla e, facoltativamente, specificare l&#39;URL di elaborazione nel servizio Impostazioni DS AEM. In questo modo il processo di post viene eseguito sull’istanza di elaborazione.
+1. Dopo aver configurato la lettera con l’elaborazione post, pubblicala e, facoltativamente, nell’istanza di pubblicazione, specifica l’URL di elaborazione nel servizio Impostazioni di AEM DS. In questo modo il processo di post viene eseguito sull’istanza di elaborazione.
 
 ## Ricarica un&#39;istanza bozza di lettera  {#reloaddraft}
 

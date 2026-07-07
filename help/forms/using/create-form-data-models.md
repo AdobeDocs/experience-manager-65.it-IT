@@ -1,5 +1,5 @@
 ---
-title: Crea modello dati modulo
+title: Creare un modello di dati modulo
 description: Scopri come creare modelli di dati per moduli con o senza origini dati configurate.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 1%
+source-wordcount: '974'
+ht-degree: 3%
 
 ---
 
-# Crea modello dati modulo{#create-form-data-model}
+# Creare un modello di dati modulo{#create-form-data-model}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -35,17 +35,17 @@ L’integrazione dei dati in AEM Forms fornisce un’interfaccia utente intuitiv
 >
 >Per poter creare e utilizzare il modello di dati del modulo, è necessario essere membri sia del gruppo **fdm-author** che del gruppo **forms-user**. Contatta il tuo amministratore AEM per diventare membro dei gruppi.
 
-## Crea modello dati modulo {#data-sources}
+## Creare un modello di dati modulo {#data-sources}
 
 Verificare di aver configurato le origini dati che si intende utilizzare nel modello dati del modulo come descritto in [Configurare le origini dati](../../forms/using/configure-data-sources.md). Per creare un modello dati modulo basato su origini dati configurate, eseguire le operazioni seguenti:
 
-1. Nell&#39;istanza di authoring dell&#39;AEM, passa a **[!UICONTROL Forms > Integrazioni dati]**.
+1. Nell&#39;istanza Autore AEM, passa a **[!UICONTROL Forms > Integrazioni dati]**.
 1. Selezionare **[!UICONTROL Crea > Modello dati modulo]**.
 1. Nella finestra di dialogo Crea modello dati modulo:
 
    * Specifica un nome per il modello dati del modulo.
    * (**Facoltativo**) Specificare titolo, descrizione e tag per il modello dati del modulo.
-   * (**Facoltativo e applicabile solo se le origini dati sono configurate**) Selezionare l&#39;icona di spunta accanto al campo **[!UICONTROL Configurazione Source dati]** e selezionare il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che si desidera utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, per impostazione predefinita vengono elencati tutti i database JDBC e le origini dati del profilo utente AEM. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
+   * (**Facoltativo e applicabile solo se le origini dati sono configurate**) Selezionare l&#39;icona di spunta accanto al campo **[!UICONTROL Configurazione Source dati]** e selezionare il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che si desidera utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, per impostazione predefinita, vengono elencati tutti i database JDBC e le origini dati del profilo utente di AEM. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
 
    Seleziona **[!UICONTROL Avanti]**.
 
@@ -54,7 +54,7 @@ Verificare di aver configurato le origini dati che si intende utilizzare nel mod
 
 Esaminiamo i diversi componenti dell’interfaccia utente dell’editor dei modelli di dati dei moduli.
 
-![Un modello di dati modulo con tre origini dati: un servizio RESTful, un profilo utente AEM e un RDBMS](assets/fdm-ui.png)
+![Un modello di dati modulo con tre origini dati: un servizio RESTful, un profilo utente di AEM e un RDBMS](assets/fdm-ui.png)
 
 **A. Origini dati** Elenca le origini dati in un modello dati modulo. Espandere un&#39;origine dati per visualizzare i relativi servizi e oggetti modello dati.
 

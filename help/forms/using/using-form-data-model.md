@@ -1,5 +1,5 @@
 ---
-title: Usa modello dati modulo
+title: Utilizzare il modello dati modulo
 description: Scopri come utilizzare il modello dati modulo per creare e utilizzare i moduli adattivi e le comunicazioni interattive.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 2%
+source-wordcount: '1314'
+ht-degree: 3%
 
 ---
 
-# Usa modello dati modulo{#use-form-data-model}
+# Utilizzare il modello dati modulo{#use-form-data-model}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -29,8 +29,8 @@ L’integrazione dei dati in AEM Forms consente di utilizzare diverse origini da
 
 * [Integrazione dei dati di AEM Forms](../../forms/using/data-integration.md)
 * [Configurare origini dati](../../forms/using/configure-data-sources.md)
-* [Crea modello dati modulo](../../forms/using/create-form-data-models.md)
-* [Utilizzare il modello dati del modulo](../../forms/using/work-with-form-data-model.md)
+* [Creare un modello di dati modulo](../../forms/using/create-form-data-models.md)
+* [Utilizzare il modello dati modulo](../../forms/using/work-with-form-data-model.md)
 
 Un modello dati modulo è un’estensione dello schema JSON che puoi utilizzare per:
 
@@ -95,7 +95,7 @@ L’editor del modello dati modulo consente di generare e modificare dati di ese
 
 Per visualizzare in anteprima una comunicazione interattiva con dati modello dati modulo di esempio:
 
-1. Nell&#39;istanza dell&#39;autore AEM, passa a **[!UICONTROL Forms > Forms &amp; Documents]**.
+1. Nell&#39;istanza Autore AEM, passa a **[!UICONTROL Forms > Forms &amp; Documents]**.
 1. Seleziona una comunicazione interattiva e seleziona **[!UICONTROL Anteprima]** nella barra degli strumenti per selezionare **[!UICONTROL Canale Web]**, **[!UICONTROL Canale di stampa]** o **[!UICONTROL Entrambi i canali]** per visualizzare l&#39;anteprima della comunicazione interattiva.
 1. Nella finestra di dialogo Anteprima [*canale*], accertati che sia selezionato **[!UICONTROL Dati di prova del modello dati modulo]** e seleziona **[!UICONTROL Anteprima]**.
 
