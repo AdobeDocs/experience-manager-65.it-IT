@@ -77,7 +77,7 @@ Per ulteriori informazioni sulla directory GDS, consulta [Preparazione all’ins
 
 **Posizione della directory font clientela** *ndash; digita il percorso di una directory contenente font aggiuntivi che desideri utilizzare.
 
-***nota **: i font vengono selezionati dalla cache dei font del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei font della clientela, assicurati di riavviare il sistema in cui è installato AEM Forms.*
+***nota &#x200B;**: i font vengono selezionati dalla cache dei font del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei font della clientela, assicurati di riavviare il sistema in cui è installato AEM Forms.*
 
 **Posizione della directory dei font di sistema** *ndash; digita il percorso della directory dei font fornita dal sistema operativo. È possibile aggiungere più directory, separate da un punto e virgola **;**.
 
