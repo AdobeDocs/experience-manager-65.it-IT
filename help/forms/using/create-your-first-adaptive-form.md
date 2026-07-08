@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare il primo modulo adattivo'
+title: 'Esercitazione: creare il primo modulo adattivo'
 description: Scopri come creare moduli di classe aziendale, interattivi e reattivi.
 topic-tags: introduction
 docset: aem65
@@ -9,12 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 3%
+source-wordcount: '997'
+ht-degree: 9%
 
 ---
 
-# Tutorial: creare il primo modulo adattivo {#tutorial-create-your-first-adaptive-form}
+# Esercitazione: creare il primo modulo adattivo {#tutorial-create-your-first-adaptive-form}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -45,11 +45,11 @@ Il sito Web viene eseguito su Adobe Experience Manager (AEM) e utilizza AEM [!DN
 
 ### Prerequisito {#prerequisite}
 
-* Configura un&#39;istanza [dell&#39;autore AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=it#author-and-publish-installs)
+* Configura un&#39;istanza di authoring [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installa il componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) nell&#39;istanza di authoring.
 * Ottenere il driver del database JDBC (file JAR) dal provider del database. Esempi nell&#39;esercitazione sono basati sul database [!DNL MySQL] e utilizzano [!DNL Oracle's] [Driver di database MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-* Configura un database contenente i dati dei clienti con i campi visualizzati di seguito. Un database non è essenziale per creare un modulo adattivo. Questa esercitazione utilizza un database per visualizzare il modello di dati modulo e le funzionalità di persistenza dell&#39;AEM [!DNL Forms].
+* Configura un database contenente i dati dei clienti con i campi visualizzati di seguito. Un database non è essenziale per creare un modulo adattivo. Questa esercitazione utilizza un database per visualizzare il modello di dati modulo e le funzionalità di persistenza di AEM [!DNL Forms].
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
@@ -57,7 +57,7 @@ Il sito Web viene eseguito su Adobe Experience Manager (AEM) e utilizza AEM [!DN
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-I moduli adattivi sono di nuova generazione, coinvolgenti, reattivi, dinamici e di natura adattiva. Utilizzando i moduli adattivi, puoi offrire esperienze personalizzate e mirate. L&#39;AEM [!DNL Forms] fornisce un editor di WYSIWYG per la creazione di moduli adattivi tramite trascinamento della selezione. Per ulteriori informazioni sui moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](../../forms/using/introduction-forms-authoring.md).
+I moduli adattivi sono di nuova generazione, coinvolgenti, reattivi, dinamici e di natura adattiva. Utilizzando i moduli adattivi, puoi offrire esperienze personalizzate e mirate. AEM [!DNL Forms] fornisce un editor di WYSIWYG con funzionalità di trascinamento per la creazione di moduli adattivi. Per ulteriori informazioni sui moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](../../forms/using/introduction-forms-authoring.md).
 
 Obiettivi:
 
@@ -68,11 +68,11 @@ Obiettivi:
 
 [![Consulta la Guida](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
-## Passaggio 2: creare il modello dati del modulo {#step-create-form-data-model}
+## Passaggio 2: creare il modello dati modulo {#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Un modello dati modulo consente di collegare un modulo adattivo a origini dati diverse. Ad esempio, profilo utente AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con un modulo adattivo per recuperare, aggiornare, eliminare e aggiungere dati alle origini dati connesse.
+Un modello dati modulo consente di collegare un modulo adattivo a origini dati diverse. Ad esempio, profilo utente di AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con un modulo adattivo per recuperare, aggiornare, eliminare e aggiungere dati alle origini dati connesse.
 
 Obiettivi:
 
@@ -107,20 +107,20 @@ Obiettivi:
 
 * Applicare un tema preconfigurato a un modulo adattivo.
 * Crea un tema per il modulo adattivo utilizzando l’editor del tema.
-* Utilizzare i Web Fonts in un tema personalizzato.
+* Utilizza Web Fonts in un tema personalizzato.
 
 [![Consulta la Guida](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## Passaggio 5: creare un Publish per il modulo adattivo {#step-publish-your-adaptive-form}
+## Passaggio 5: pubblicare il modulo adattivo {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-È possibile pubblicare moduli adattivi come modulo autonomo (applicazione a pagina singola), includere nella pagina [Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) dell&#39;AEM o inserire un elenco in una pagina AEM [!DNL Site] utilizzando [Forms Portal](../../forms/using/introduction-publishing-forms.md).
+È possibile pubblicare moduli adattivi come modulo autonomo (applicazione a pagina singola), includere in AEM [Sites page](/help/forms/using/embed-adaptive-form-aem-sites.md) o elencare in un AEM [!DNL Site] utilizzando [Forms Portal](../../forms/using/introduction-publishing-forms.md).
 
 Obiettivi:
 
-* Publish il modulo adattivo come pagina AEM.
+* Pubblica il modulo adattivo come pagina AEM.
 * Incorpora il modulo adattivo in una pagina AEM [!DNL Sites].
-* Incorpora il modulo adattivo in una pagina web esterna (una pagina web non AEM ospitata al di fuori dell’AEM).
+* Incorpora il modulo adattivo in una pagina web esterna (una pagina web non AEM ospitata al di fuori di AEM).
 
 [![Consulta la Guida](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)

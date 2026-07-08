@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '952'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >
 >* Applicazioni a pagina singola
 >* Applicazioni mobile native
->* Altri canali e punti di contatto esterni all’AEM
+>* Altri canali e punti di contatto esterni ad AEM
 >
 >Vedere il documento [Esportatore JSON per Content Services](/help/sites-developing/json-exporter.md).
 
@@ -474,7 +474,7 @@ Configurare il servizio Day CQ WCM Workflow Package Info Provider in modo che re
 
 >[!NOTE]
 >
->La scheda Flusso di lavoro del Sidekick utilizza il servlet PageInfo per ottenere un elenco di pacchetti del flusso di lavoro. Dall’elenco, puoi selezionare il pacchetto a cui aggiungere la pagina corrente. I filtri creati hanno effetto su questo elenco.
+>La scheda Flusso di lavoro di Sidekick utilizza il servlet PageInfo per ottenere un elenco di pacchetti di flusso di lavoro. Dall’elenco, puoi selezionare il pacchetto a cui aggiungere la pagina corrente. I filtri creati hanno effetto su questo elenco.
 >
 
 ID del servizio: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Per creare un filtro, specificare un valore per una proprietà `workflowpackageinfoprovider.filter`.
@@ -494,7 +494,7 @@ Il servizio applica il risultato cumulativo di tutti i filtri. Ad esempio, i seg
 
 >[!NOTE]
 >
->Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Per informazioni dettagliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
+>Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per informazioni dettagliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Ad esempio, per configurare il servizio utilizzando CRXDE Lite:
 
@@ -538,7 +538,7 @@ Per configurare il servizio nell’origine del progetto:
 
 Creare un servizio personalizzato Page Information Provider per aggiungere metadati di pagina facilmente ottenibili dall&#39;applicazione.
 
-1. Implementare l&#39;interfaccia `com.day.cq.wcm.api.PageInfoProvider`.
+1. Implementa l’interfaccia `com.day.cq.wcm.api.PageInfoProvider`.
 1. Crea il bundle e distribuisci la classe come servizio OSGi.
 1. Crea un componente pagina nell’applicazione. Utilizzare `foundation/components/page` come valore della proprietà `sling:resourceSuperType`.
 
