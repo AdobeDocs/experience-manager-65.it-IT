@@ -12,8 +12,8 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
+source-wordcount: '7022'
+ht-degree: 99%
 
 ---
 
@@ -109,8 +109,8 @@ Assicurati che il tuo team sia composto da personale con formazione adeguata. Pe
 
 * almeno uno sviluppatore principale certificato AEM
 * almeno un architetto certificato AEM
-* almeno il 75% degli sviluppatori con certificazione AEM;
-in questo modo gli sviluppatori certificati possono dare consigli agli sviluppatori junior e le conoscenze vengono condivise con trasparenza
+* almeno il 75% degli sviluppatori ha la certificazione AEM;
+questo consente agli sviluppatori certificati di fornire consigli agli sviluppatori junior e garantisce la condivisione delle conoscenze e la trasparenza
 
 ### Diagramma dell’architettura {#architecture-diagram}
 
@@ -205,10 +205,10 @@ I KPI aziendali definiscono valori misurabili che dimostrano l’efficacia con c
 
 ### Documentazione sui requisiti aziendali {#business-requirements-documentation}
 
-Un documento sui requisiti aziendali (BRD) descrive la soluzione aziendale per un progetto, fornendo una chiara definizione delle esigenze e delle aspettative aziendali della clientela. Il BRD distingue anche tra soluzione aziendale e soluzione tecnica.
+Un documento sui requisiti aziendali (BRD) descrive la soluzione aziendale per un progetto, fornendo una chiara definizione delle aspettative e delle esigenze di business del cliente. Il BRD distingue anche tra soluzione aziendale e soluzione tecnica.
 
-Nell’esaminare la soluzione aziendale, il BRD dovrebbe rispondere alla domanda:
-“Cosa vuole fare l’azienda?”
+Nell&#39;esaminare la soluzione aziendale, la BRD dovrebbe rispondere alla seguente domanda:
+&quot;Cosa vuole fare l&#39;azienda?&quot;
 
 ### Approvazione dell’azienda per eventuali modifiche necessarie alla soluzione o all’architettura identificate e allineate alle aspettative del ROI e dei KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -355,7 +355,7 @@ Report del lead di qualità durante il periodo di test di accettazione utente (U
 
 Eventuali personalizzazioni e/o hotfix applicati devono essere documentati in quanto possono influenzare aggiornamenti futuri:
 
-* AEM può essere personalizzato in base alle esigenze aziendali. Tutte le personalizzazioni che possono influire sull’aggiornamento devono essere documentate a pieno. Ad esempio, eventuali modifiche principali all’interfaccia utente di AEM.
+* AEM può essere personalizzato in base a specifiche esigenze business. Tutte le personalizzazioni che possono influire sull’aggiornamento devono essere documentate a pieno. Ad esempio, eventuali modifiche principali all’interfaccia utente di AEM.
 * Tutti gli aggiornamenti necessari per la soluzione corrente devono essere documentati a pieno, tra cui:
 
    * Cumulative Fix Pack (CFP)
@@ -556,7 +556,7 @@ Questa mappa del sistema dovrebbe fornire un diagramma di alto livello del siste
 
 Definizione della struttura del contenuto del sistema legacy. Viene utilizzato come riferimento e anche durante la preparazione della strategia di migrazione.
 
-### Prestazioni precedenti e KPI delle prestazioni precedenti  {#historical-performance-and-historical-performance-kpis}
+### Prestazioni precedenti e KPI delle prestazioni precedenti {#historical-performance-and-historical-performance-kpis}
 
 Raccogli e documenta le statistiche sulle prestazioni e i KPI relativi alle prestazioni dal sistema legacy. Vengono poi utilizzati come punto di riferimento e per eseguire il benchmark della nuova soluzione.
 

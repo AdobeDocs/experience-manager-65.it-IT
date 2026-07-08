@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
@@ -75,34 +75,34 @@ Sono inclusi anche i seguenti gruppi:
 
 ### Legenda dei termini della panoramica della demo {#demo-overview-terms-legend}
 
-1. **Rappresenta**: utenti e gruppi definiti nella demo AEM.
+1. **Rappresenta**: utenti e gruppi definiti nella demo di AEM.
 1. **Pulsante**: rettangolo colorato o freccia cerchiata per la navigazione.
 1. **Fare clic**: per eseguire un&#39;azione nella storia utente.
 1. **Collegamenti**: nella parte superiore del menu principale nel sito We.Gov.
 1. **Istruzioni utente**: un insieme di passaggi numerici da seguire per spostarsi all&#39;interno del brano dell&#39;utente.
 1. **Forms Portal**: *https://&lt;aemserver>:&lt;porta>/content/we-gov/formsportal.html*
-1. **Visualizzazione mobile**:l&#39;utente We.Gov deve replicare una visualizzazione mobile con un browser ridimensionato.
+1. **Visualizzazione mobile**:We.Gov per replicare una visualizzazione mobile con un browser ridimensionato.
 1. **Vista desktop**: We.gov utente per visualizzare una demo su un laptop o desktop.
 1. **Modulo pre-screening**: modulo nella home page del sito We.Gov.
 1. **Modulo adattivo**: modulo di richiesta di registrazione per la demo We.gov.
 
    *https://&lt;aemserver>:&lt;porta>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **Sito We.Gov Adobe**: *https://&lt;aemserver>:&lt;porta>/content/we-gov/home.html*
-1. **Casella in entrata Adobe**: barra dei menu superiore [icona campana](assets/bell.svg) nel backend AEM.
+1. **Sito We.Gov di Adobe**: *https://&lt;aemserver>:&lt;porta>/content/we-gov/home.html*
+1. **Casella in entrata Adobe**: barra dei menu superiore [icona campana](assets/bell.svg) nel backend di AEM.
 
    *https://&lt;aemserver>:&lt;porta>/aem/start.html*
 
 1. **Client e-mail**: metodo preferito per visualizzare le e-mail (Gmail, Outlook)
-1. **CTA**: invito all&#39;azione
+1. **CTA**: Call to action
 1. **Naviga**: per individuare un punto di riferimento specifico nella pagina del browser.
-1. **AFC**: Automated forms conversion
+1. **AFC**: conversione moduli automatica
 
-## Automated forms conversion (Camila) {#automated-forms-conversion}
+## Conversione moduli automatica (Camila) {#automated-forms-conversion}
 
-**Questa sezione**: Camila il lead CX ha un modulo esistente basato su PDF che è stato utilizzato come parte di un processo cartaceo. Come parte di un progetto di modernizzazione, Camila vuole utilizzare questo modulo PDF per creare automaticamente un moderno Forms adattivo.
+**Questa sezione**: Camila il lead CX ha un modulo esistente basato su PDF che è stato utilizzato come parte di un processo cartaceo. Come parte di un’opera di modernizzazione, Camila vuole utilizzare questo modulo PDF per creare automaticamente un Forms adattivo moderno.
 
-### Automated forms conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
+### Conversione moduli automatica - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
 1. Passa a *https://&lt;aemserver>:&lt;porta>/aem/start.html*
 
@@ -144,7 +144,7 @@ Sono inclusi anche i seguenti gruppi:
 
 **Questa sezione**: dopo la conversione del documento e la generazione di un modulo adattivo, Camila deve connettere il modulo adattivo a un&#39;origine dati.
 
-1. Camila apre le Proprietà nel modulo convertito in [Automated forms conversion - We.Gov](#automated-forms-conversion-wegov).
+1. Camila apre le Proprietà nel modulo convertito in [Conversione moduli automatica - We.Gov](#automated-forms-conversion-wegov).
 
 1. Camila seleziona quindi Modello modulo > Seleziona modello dati modulo dal menu a discesa Seleziona da > Seleziona FDM di iscrizione We.gov dall’elenco di opzioni.
 
@@ -227,7 +227,7 @@ Aya deve rivedere alcuni documenti a casa prima di poter completare l&#39;applic
    1. **Sposato**: mostra pannello coniugale dipendente
    1. **Divorziato**: mostra pannello accanto
    1. **Vedovo**: mostra pannello vicino
-   1. **Hai figli?**: pulsante di opzione (Sì/No) per visualizzare il pannello dipendente figlio.
+   1. **Hai figli?**: (Sì/No) pulsante di opzione per visualizzare il pannello dipendente dall&#39;elemento secondario.
 
       1. (Aggiungi/Rimuovi) per aggiungere/rimuovere più pannelli figlio dipendenti.
 
@@ -254,9 +254,9 @@ Aya deve rivedere alcuni documenti a casa prima di poter completare l&#39;applic
 
    **Istruzioni utente:**
 
-1. Fate clic con il pulsante destro del mouse su Circle CTA (Circle CTA) per passare alla sezione successiva.
+1. Fate clic con il pulsante destro del mouse su Cerchio (Circle CTA) per passare alla sezione successiva.
 
-   ![CTA cerchio destro](/help/forms/using/assets/right_circle_cta_new.png)
+   ![Cerchio destro CTA](/help/forms/using/assets/right_circle_cta_new.png)
 
    Il modulo viene compilato fino al punto dell&#39;ultima voce di Aya. Aya ha inserito tutte le sue informazioni ed è pronta a inviarle.
 
@@ -275,7 +275,7 @@ Aya deve rivedere alcuni documenti a casa prima di poter completare l&#39;applic
 1. Passa al client e-mail e trova l’e-mail di Adobe Sign.
 1. Fai clic sul collegamento ad Adobe Sign.
 
-   ![Collegamento Adobe](/help/forms/using/assets/adobe_sign_link.png)
+   ![Collegamento Adobe Sign](/help/forms/using/assets/adobe_sign_link.png)
 
 **Istruzioni utente:**
 
@@ -328,7 +328,7 @@ Grazie alle integrazioni di dati e ai flussi di lavoro automatizzati, viene visu
 
    1. Facoltativamente, aggiungi alcune note di revisione direttamente in Dynamics.
 
-1. Chiudere e tornare alla casella in entrata AEM.
+1. Chiudi e torna alla casella in entrata di AEM.
 
    ![Record MS Dynamics](/help/forms/using/assets/ms_dynamics.png)
 
@@ -351,7 +351,7 @@ George approva l&#39;applicazione di Aya e, grazie a un flusso di lavoro automat
 
 **Questa sezione:** Camila il lead CX imposta una telefonata di benvenuto con Aya per spiegare come utilizzare i servizi governativi per i quali è approvata.
 
-### (Facoltativo) Casella in entrata AEM e MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### Casella in entrata AEM e MS® Dynamics (facoltativo) {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Istruzioni utente:**
 
@@ -387,7 +387,7 @@ George approva l&#39;applicazione di Aya e, grazie a un flusso di lavoro automat
    1. Aggiungi i dettagli della telefonata.
    1. Salvare e chiudere la finestra.
 
-1. Torna a AEM, passa all&#39;angolo in alto a sinistra e fai clic su **Invia** per inviare l&#39;applicazione.
+1. Tornando in AEM, passa all&#39;angolo in alto a sinistra e fai clic su **Invia** per inviare l&#39;applicazione.
 1. Nel modale, puoi lasciare un messaggio.
 1. Fai clic su Fine.
 
@@ -395,7 +395,7 @@ George approva l&#39;applicazione di Aya e, grazie a un flusso di lavoro automat
 
 ## (Facoltativo) Welcome Kit Citizen (Aya) {#welcome-kit-citizen-aya}
 
-**Questa sezione:** Aya riceve un&#39;e-mail contenente un collegamento a una comunicazione interattiva che riassume i vantaggi e include anche campi modulo da compilare. Con l’istruzione sui vantaggi PDF allegata e il collegamento alla lettera di comunicazione interattiva nell’e-mail (con lo stesso tema/branding della comunicazione interattiva).
+**Questa sezione:** Aya riceve un&#39;e-mail contenente un collegamento a una comunicazione interattiva che riassume i vantaggi e include anche campi modulo da compilare. Con la dichiarazione sui vantaggi PDF allegata e il collegamento alla lettera di comunicazione interattiva nell&#39;e-mail (con lo stesso tema/branding della comunicazione interattiva).
 
 ### Notifica Client E-Mail (Aya) {#aya-user-story-email-client}
 
@@ -486,7 +486,7 @@ George approva l&#39;applicazione di Aya e, grazie a un flusso di lavoro automat
 
 1. Passa a *https://&lt;aemserver>:&lt;porta>/sites.html/content*
 1. Seleziona **Sito AEM Forms We.Gov** per visualizzare le pagine del sito.
-1. Selezionare una delle pagine del sito, ad esempio Home, e scegliere **Analytics &amp; Recommendations**.
+1. Selezionare una delle pagine del sito (ad esempio Home) e scegliere **Analytics &amp; Recommendations**.
 
    ![Analisi e consigli](/help/forms/using/assets/analytics_recommendation.jpg)
 

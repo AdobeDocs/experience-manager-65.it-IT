@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3051'
-ht-degree: 1%
+source-wordcount: '3098'
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ Se la reindicizzazione è necessaria in archivi di grandi dimensioni, specialmen
 
 Gli indici sono configurati come nodi nell&#39;archivio nel nodo **Oak:index**.
 
-Il tipo del nodo indice deve essere **oak:QueryIndexDefinition.** Per ogni indicizzatore sono disponibili diverse opzioni di configurazione come proprietà del nodo. Per ulteriori informazioni, consulta i dettagli di configurazione per ogni tipo di indicizzatore riportati di seguito.
+Il tipo del nodo indice deve essere **oak:QueryIndexDefinition.** Sono disponibili diverse opzioni di configurazione per ogni indicizzatore come proprietà del nodo. Per ulteriori informazioni, consulta i dettagli di configurazione per ogni tipo di indicizzatore riportati di seguito.
 
 ### Indice proprietà {#the-property-index}
 
@@ -165,7 +165,7 @@ I caratteri speciali come *&quot;-&quot;* non sono indicizzati.
 | dimensione | 300 |
 | fine | ..., 100,... |
 | inventare | 200 |
-| oggetto | ..., 300... |
+| oggetto | ..., 300,... |
 | rubik | ..., 100, 200,... |
 
 L&#39;elenco dei documenti è ordinato. Questo è utile quando si esegue una query.
@@ -441,7 +441,7 @@ Per utilizzarlo correttamente, è necessario inserire il contenuto dell&#39;arch
 
 File di configurazione Solr consigliati
 
-[Ottieni file](assets/recommended-conf.zip)
+[Ottieni il file](assets/recommended-conf.zip)
 
 ### Strumenti di indicizzazione di AEM {#aem-indexing-tools}
 
