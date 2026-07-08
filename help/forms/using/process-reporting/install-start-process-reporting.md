@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva ai report sui processi
+title: Guida introduttiva ai rapporti sui processi
 description: Passaggi per iniziare a utilizzare AEM Forms su JEE Process Reporting
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,14 +11,14 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 0%
+source-wordcount: '1773'
+ht-degree: 4%
 
 ---
 
-# Guida introduttiva ai report sui processi{#getting-started-with-process-reporting}
+# Guida introduttiva ai rapporti sui processi{#getting-started-with-process-reporting}
 
-La funzione di reporting sui processi consente agli utenti di AEM Forms di eseguire query sulle informazioni sui processi di AEM Forms attualmente definiti nell’implementazione di AEM Forms. Tuttavia, il reporting dei processi non accede ai dati direttamente dall’archivio di AEM Forms. I dati vengono pubblicati per la prima volta nel repository di Process Reporting in base a una pianificazione (*dal servizio ProcessDataPublisher e ProcessDataStorage* s). I report e le query in Process Reporting vengono quindi generati dai dati di Process Reporting pubblicati nel repository. Process Reporting viene installato come parte del modulo di Forms Workflow.
+La funzione di reporting sui processi consente agli utenti di AEM Forms di eseguire query sulle informazioni sui processi di AEM Forms attualmente definiti nell’implementazione di AEM Forms. Tuttavia, il reporting dei processi non accede ai dati direttamente dall’archivio di AEM Forms. I dati vengono pubblicati per la prima volta nel repository di Process Reporting in base a una pianificazione (*dal servizio ProcessDataPublisher e ProcessDataStorage* s). I report e le query in Process Reporting vengono quindi generati dai dati di Process Reporting pubblicati nel repository. Process Reporting viene installato come parte del modulo Forms Workflow.
 
 Questo articolo descrive i passaggi necessari per abilitare la pubblicazione dei dati di AEM Forms nell’archivio di Process Reporting. In seguito, sarà possibile utilizzare Report processi per eseguire report e query. Nell&#39;articolo vengono inoltre illustrate le opzioni disponibili per configurare i servizi di report dei processi.
 
@@ -44,7 +44,7 @@ I servizi di report dei processi pubblicano i dati dal database di AEM Forms all
 
 Questa operazione può richiedere molte risorse e può influire sulle prestazioni dei server AEM Forms. È consigliabile pianificare questa operazione all’esterno degli slot orari occupati del server AEM Forms.
 
-Per impostazione predefinita, la pubblicazione dei dati viene pianificata per essere eseguita ogni giorno alle 02:00.
+Per impostazione predefinita, la pubblicazione dei dati è pianificata per essere eseguita ogni giorno alle 2:00.
 
 Per modificare la pianificazione di pubblicazione, effettuare le seguenti operazioni:
 
@@ -101,7 +101,7 @@ Per modificare la pianificazione di pubblicazione, effettuare le seguenti operaz
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ### Servizio ProcessDataStorage {#processdatastorage-service}
 
@@ -177,7 +177,7 @@ Il servizio ProcessDataPublisher importa i dati di processo dal database di AEM 
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
-**Dati Publish**
+**Pubblica dati**
 
 Abilita questa opzione per avviare la pubblicazione dei dati del processo. Per impostazione predefinita, l’opzione è disabilitata.
 
@@ -207,7 +207,7 @@ Se un servizio di pubblicazione che ha acquisito un blocco è inattivo per il nu
 
 `Unit`: `Seconds`
 
-**Dati Publish Da**
+**Pubblica dati da**
 
 L’ambiente AEM Forms contiene i dati relativi al momento in cui è stato configurato.
 
