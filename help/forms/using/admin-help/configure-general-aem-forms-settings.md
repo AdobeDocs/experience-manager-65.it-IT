@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
-workflow-type: ht
-source-wordcount: '1774'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ Per ulteriori informazioni sulla directory GDS, consulta [Preparazione all’ins
 
 **Posizione della directory font clientela** *ndash; digita il percorso di una directory contenente font aggiuntivi che desideri utilizzare.
 
-***nota **: i font vengono selezionati dalla cache dei font del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei font della clientela, assicurati di riavviare il sistema in cui è installato AEM Forms.*
+***nota &#x200B;**: i font vengono selezionati dalla cache dei font del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei font della clientela, assicurati di riavviare il sistema in cui è installato AEM Forms.*
 
 **Posizione della directory dei font di sistema** *ndash; digita il percorso della directory dei font fornita dal sistema operativo. È possibile aggiungere più directory, separate da un punto e virgola **;**.
 
@@ -101,7 +101,7 @@ Questa impostazione è obbligatoria. Il valore predefinito è 30 secondi.
 
 **Abilita FIPS** *ndash; seleziona questa opzione per abilitare la modalità FIPS. Lo standard FIPS (Federal Information Processing Standard) 140-2 è uno standard di crittografia definito dal governo degli Stati Uniti. Quando viene eseguito in modalità FIPS, AEM Forms limita la protezione dei dati agli algoritmi approvati da FIPS 140-2 utilizzando il modulo di crittografia RSA BSAFE Crypto-C 2.1.
 
-La modalità FIPS non supporta gli algoritmi di crittografia utilizzati nelle versioni di Adobe Acrobat® precedenti alla 7.0. Se la modalità FIPS è attivata e si utilizza il servizio crittografia per crittografare il PDF utilizzando una password con un livello di compatibilità impostato su Acrobat 5, il tentativo di crittografia non riuscirà e verrà restituito un errore.
+La modalità FIPS non supporta gli algoritmi di crittografia utilizzati nelle versioni di Adobe Acrobat® precedenti alla 7.0. Se la modalità FIPS è attivata e si utilizza il servizio Crittografia per crittografare il PDF utilizzando una password con un livello di compatibilità impostato su Acrobat 5, il tentativo di crittografia non riuscirà e verrà restituito un errore.
 
 In generale, quando FIPS è abilitato, il servizio Assembler non applica la crittografia della password a nessun documento. Se si tenta di eseguire questa operazione, viene generata una FIPSModeException che indica che “la crittografia della password non è consentita in modalità FIPS.” Inoltre, l’elemento PDFsFromBookmarks nella descrizione del documento XML (DDX) non è supportato in modalità FIPS quando il documento di base è crittografato con password.
 
