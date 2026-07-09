@@ -1419,7 +1419,7 @@ ht-degree: 95%
             + Percorso di architettura dei contenuti headless {#architect}
                + [Panoramica del percorso Architect di contenuti AEM headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html?lang=it)
                + [Modellazione dei contenuti per headless con AEM - Introduzione](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html?lang=it)
-               + [Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
+               + [Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html?lang=it)
                + [Scopri come creare modelli di frammenti di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html?lang=it)
          + Guide introduttive {#getting-started}
             + [Introduzione](/help/sites-developing/headless/getting-started/introduction.md)
