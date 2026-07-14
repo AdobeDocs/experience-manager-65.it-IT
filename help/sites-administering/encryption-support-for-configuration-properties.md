@@ -11,8 +11,8 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '280'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +42,7 @@ Questi passaggi mostrano come crittografare la password SMTP per il servizio di 
    ![schermata_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
 1. Nel campo **Testo normale** immettere il testo dei dati sensibili che si desidera proteggere.
-1. Seleziona **Protect**. Il testo protetto viene visualizzato come testo crittografato.
+1. Selezionare **Proteggi**. Il testo protetto viene visualizzato come testo crittografato.
 
    ![schermata_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
@@ -54,4 +54,4 @@ Questi passaggi mostrano come crittografare la password SMTP per il servizio di 
 
 ## Supporto decrittografia {#decryption-support}
 
-AEM fornisce ora un plug-in di configurazione per decrittografare le proprietà di configurazione. Questo plug-in AEM decrittografa e recupera automaticamente le proprietà di testo non crittografato.
+AEM ora fornisce un plug-in di configurazione per decrittografare le proprietà di configurazione. Questo plug-in di AEM decrittografa e recupera automaticamente le proprietà di testo non crittografato.
