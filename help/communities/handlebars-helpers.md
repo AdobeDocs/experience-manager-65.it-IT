@@ -9,7 +9,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1531'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,7 @@ Un helper per restituire una stringa di data formattata.
 // returns "03-18-2015"
 ```
 
-## Uguale a {#equals}
+## Uguale {#equals}
 
 Un helper per restituire il contenuto a seconda di un condizionale di uguaglianza.
 
@@ -275,7 +275,7 @@ Include un nuovo componente commenti in `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-Helper che include una libreria client HTML AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nello script Handlebars.
+Helper che include una libreria client HTML di AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nello script Handlebars.
 
 Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a [ui:includeClientLib](../../help/sites-developing/taglib.md) per gli script JSP.
 
@@ -374,7 +374,7 @@ Depending on how long in the past, may return
 
 ## Xss-html {#xss-html}
 
-Helper che codifica una stringa di origine per il contenuto dell’elemento HTML per evitare attacchi XSS.
+Helper che codifica una stringa di origine per il contenuto dell’elemento HTML per proteggersi da XSS.
 
 NOTA: questo helper non è un validatore e non deve essere utilizzato per la scrittura di valori di attributo.
 
@@ -382,7 +382,7 @@ NOTA: questo helper non è un validatore e non deve essere utilizzato per la scr
 
 * **contesto**: oggetto
 
-  HTML da codificare.
+  Il HTML da codificare.
 
 ### Esempio {#example-6}
 
@@ -400,7 +400,7 @@ NOTA: questo helper non è un validatore e non deve essere utilizzato per scrive
 
 * **contesto**: oggetto
 
-  HTML da codificare.
+  Il HTML da codificare.
 
 ### Esempio {#example-7}
 
@@ -418,7 +418,7 @@ NOTA: questo helper non è un validatore e non deve essere utilizzato per la scr
 
 * **contesto**: oggetto
 
-  HTML da codificare.
+  Il HTML da codificare.
 
 ### Esempio {#example-8}
 
@@ -428,7 +428,7 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-Helper che bonifica un URL per la scrittura come valore di attributo HTML href o di risorsa per proteggersi da XSS.
+Helper che bonifica un URL per la scrittura come valore di attributo di HTML href o di risorsa per proteggersi da XSS.
 
 NOTA: questo helper potrebbe restituire una stringa vuota.
 
@@ -463,7 +463,7 @@ NOTA: questo helper potrebbe restituire una stringa vuota.
    * Possibilità di richiamarsi (options.fn())
    * Possibilità di richiamare l’inverso di se stesso (options.inverse())
 
-* È consigliabile che il contenuto della stringa HTML restituito da un helper sia un SafeString.
+* È consigliabile che il contenuto di HTML String restituito da un helper sia un SafeString.
 
 ### Un esempio di un semplice helper dalla documentazione di Handlebars.js: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
@@ -519,7 +519,7 @@ Esegue il rendering:
 
 ## Helper SCF personalizzati {#custom-scf-helpers}
 
-Gli helper personalizzati devono essere implementati sul lato server e sul lato client, soprattutto durante il trasferimento dei dati. Per l&#39;SCF, la maggior parte dei modelli viene compilata e riprodotta sul lato server mentre il server genera le HTML per un determinato componente quando la pagina viene richiesta.
+Gli helper personalizzati devono essere implementati sul lato server e sul lato client, soprattutto durante il trasferimento dei dati. Per l&#39;SCF, la maggior parte dei modelli viene compilata e riprodotta sul lato server mentre il server genera il HTML per un determinato componente quando la pagina viene richiesta.
 
 ### Helper personalizzati lato server {#server-side-custom-helpers}
 

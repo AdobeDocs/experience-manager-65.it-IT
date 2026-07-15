@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1639'
 ht-degree: 90%
 
 ---
@@ -21,7 +21,7 @@ In questa parte del [Percorso per sviluppatori headless di AEM,](overview.md) sc
 Questo documento è utile per comprendere la distribuzione dei contenuti headless e perché deve essere utilizzata. Dopo la lettura dovresti:
 
 * Comprendere i concetti e la terminologia di base per la distribuzione di contenuti headless
-* Capire perché e quando è richiesto un headless
+* Perché e quando è richiesto un headless
 * Conoscere ad alto livello come vengono utilizzati i concetti headless e come si relazionano
 
 ## Distribuzione contenuti full-stack {#full-stack}
@@ -30,7 +30,7 @@ Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da u
 
 ![Il classico CMS full-stack](assets/full-stack.png)
 
-In un CMS full stack, tutte le funzionalità per la manipolazione dei contenuti sono disponibili nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
+In un CMS full stack, tutte le funzionalità per la manipolazione dei contenuti sono disponibili in CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
 
 * Hai un sistema da mantenere.
 * I contenuti vengono gestiti a livello centrale.
@@ -85,11 +85,11 @@ In passato, le API per CMS erano solitamente basate su REST. Il trasferimento di
 
 C&#39;è ancora bisogno di disporre di API REST affidabili. Tuttavia le richieste REST possono essere grandi e complesse. Se hai più consumatori che fanno chiamate REST per tutti i tuoi canali, questi composti di verbosità e le prestazioni possono essere influenzati.
 
-La distribuzione di contenuti headless utilizza spesso le API GraphQL. GraphQL consente un trasferimento senza stato simile, ma consente query più mirate, riducendo il numero totale di query necessarie e migliorando le prestazioni. È comune vedere le soluzioni utilizzare un mix di REST e GraphQL, essenzialmente scegliendo lo strumento migliore per il lavoro in corso.
+La distribuzione di contenuti headless utilizza spesso le API GraphQL. GraphQL consente un trasferimento senza stato simile, ma consente query più mirate, riducendo il numero totale di query necessarie e migliorando le prestazioni. Molte soluzioni utilizzano un mix di REST e GraphQL, essenzialmente scegliendo lo strumento migliore per uno specifico lavoro.
 
 Qualunque sia l’API scelta, definendo un sistema headless basato su API comuni, puoi sfruttare il browser più aggiornato e altre tecnologie web come le app web progressive (PWA). Le API creano un’interfaccia standard facilmente estensibile e adattabile.
 
-In genere, il rendering del contenuto viene eseguito sul lato client. In genere, significa che qualcuno chiama il contenuto su un dispositivo mobile, che il CMS distribuisce il contenuto e quindi che il dispositivo mobile (il client) è responsabile del rendering del contenuto fornito. Se il dispositivo è vecchio o altrimenti lento, anche l’esperienza digitale è lenta.
+In genere, il rendering del contenuto viene eseguito sul lato client. In genere, significa che qualcuno chiama il contenuto su un dispositivo mobile, che il CMS distribuisce il contenuto e che il dispositivo mobile (il client) è responsabile del rendering del contenuto fornito. Se il dispositivo è vecchio o altrimenti lento, anche l’esperienza digitale è lenta.
 
 La possibilità di separare i contenuti dalla presentazione consente di avere un maggiore controllo su tali problemi di prestazioni dal lato client. Il rendering dal lato server (SSR) trasferisce la responsabilità del rendering del contenuto dal browser del client al server. In questo modo, in qualità di fornitore del contenuto, puoi offrire al pubblico un livello di prestazioni garantito, se necessario.
 
@@ -123,11 +123,11 @@ Grazie per la tua partecipazione al percorso headless di AEM Dopo aver letto que
 * Capire perché e quando è richiesto l&#39;headless.
 * Sapere bene come vengono utilizzati i concetti headless e come si relazionano.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di headless AEM consultando il documento [Guida introduttiva di AEM Headless](getting-started.md) dove imparerai a configurare gli strumenti necessari e a pensare all&#39;approccio dell&#39;AEM alla distribuzione di contenuti headless e ai relativi prerequisiti.
+Approfondisci l&#39;argomento e continua il tuo percorso headless AEM consultando il documento [Guida introduttiva di AEM Headless](getting-started.md) dove verrà illustrato come impostare gli strumenti necessari e iniziare a pensare all&#39;approccio di AEM alla distribuzione di contenuti headless e ai relativi prerequisiti.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva di AEM headless](getting-started.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva di AEM Headless](getting-started.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

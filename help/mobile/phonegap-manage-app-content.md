@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '692'
 ht-degree: 2%
 
 ---
@@ -50,17 +50,17 @@ Seleziona uno dei pacchetti di contenuti elencati per creare o modificare conten
 
 Nota *tutto è contenuto*, il che significa che gli stili dell&#39;applicazione, la copia (testo), i file multimediali, le pagine, la navigazione e il targeting del contenuto possono essere modificati e aggiornati OTA, senza un viaggio in un app store.
 
-Per modificare il contenuto di AEM Mobile, *Gli autori AEM *avranno bisogno di una solida conoscenza dell&#39;interfaccia di modifica dei contenuti AEM: [Authoring delle pagine in AEM.](/help/sites-authoring/qg-page-authoring.md)
+Per modificare il contenuto di AEM Mobile, *gli autori di AEM *avranno bisogno di una solida conoscenza dell&#39;interfaccia di modifica del contenuto di AEM: [Authoring delle pagine in AEM.](/help/sites-authoring/qg-page-authoring.md)
 
 ## Sezione Gestione pacchetti di contenuti {#the-manage-content-packages-tile}
 
-In questo caso, *gli amministratori dell&#39;AEM* possono aggiornare in modo rapido e semplice le app per fornire esperienze coinvolgenti e contenuti aggiornati, per promuovere il brand engagement e raggiungere gli obiettivi aziendali senza dover ricorrere a un nuovo invio da parte di sviluppatori o app store.
+In questo caso, *gli amministratori di AEM* possono aggiornare in modo rapido e semplice le app per fornire esperienze coinvolgenti e contenuti aggiornati, per promuovere il brand engagement e raggiungere gli obiettivi aziendali senza dover ricorrere a un nuovo invio da parte di sviluppatori o app store.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Una volta che *gli autori dell&#39;AEM* hanno aggiunto o modificato il contenuto tramite il riquadro Gestisci contenuto, *gli amministratori dell&#39;AEM* possono inviare tali modifiche ai clienti con un aggiornamento dei pacchetti di contenuti.
+Una volta che *gli autori di AEM* hanno aggiunto o modificato il contenuto tramite il riquadro Gestisci contenuto, *gli amministratori di AEM* possono inviare tali modifiche ai clienti con un aggiornamento dei pacchetti di contenuti.
 
-L&#39;azione Pacchetto di contenuti consente all&#39;autore *AEM* di creare e modificare il contenuto della pagina mentre il team di sviluppo apporta modifiche alla progettazione e all&#39;implementazione di un&#39;applicazione host, inclusi navigazione, stile, logica lato server, modelli e componenti, quindi di inviare tali modifiche ai clienti OTA senza dover risottomettere i vari store per la distribuzione.
+L&#39;azione Pacchetto di contenuti consente all&#39;*Autore AEM* di creare e modificare il contenuto della pagina mentre il team di sviluppo apporta modifiche alla progettazione e all&#39;implementazione di un&#39;applicazione host, inclusi navigazione, stile, logica lato server, modelli e componenti, quindi di inviare tali modifiche a OTA ai clienti senza dover risottomettere nei vari store per la distribuzione.
 
 **Per pubblicare contenuti nuovi o aggiornati**
 
@@ -78,13 +78,13 @@ La gestione temporanea di un aggiornamento del contenuto consente di effettuare 
 
 >[!NOTE]
 >
->Il contenuto in staging può essere verificato utilizzando l&#39;app Verifica AEM prima della pubblicazione.
+>Il contenuto in staging può essere verificato utilizzando l&#39;app AEM Verify prima di pubblicarlo.
 >
->Per ulteriori dettagli sull&#39;app di verifica AEM, vedere [Mobile Quickstart per la verifica AEM](/help/mobile/phonegap-mobile-quickstart.md).
+>Per ulteriori dettagli sull&#39;app AEM Verify, consulta [Mobile Quickstart per AEM Verify](/help/mobile/phonegap-mobile-quickstart.md).
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-Quando sei pronto a distribuire nuovi contenuti agli utenti dell&#39;app con Content Sync OTA, seleziona **Publish** come mostrato di seguito.
+Quando sei pronto a distribuire nuovi contenuti agli utenti dell&#39;app con Content Sync OTA, seleziona **Pubblica** come mostrato di seguito.
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 

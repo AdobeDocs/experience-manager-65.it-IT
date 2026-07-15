@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 0%
+source-wordcount: '1613'
+ht-degree: 2%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 0%
 
 È probabile che i clienti abbandonino un modulo se l’esperienza che fornisce non è coinvolgente. Se da un lato è frustrante per i clienti, dall’altro può anche aumentare il volume e i costi del supporto per la tua organizzazione. Identificare e fornire la giusta esperienza del cliente che aumenti il tasso di conversione è fondamentale e impegnativo. Adobe Experience Manager Forms è la chiave di questo problema.
 
-AEM Forms si integra con Adobe Target, una soluzione Adobe Experience Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Una delle funzionalità principali di Target è il test A/B, che consente di configurare rapidamente test A/B simultanei, presentare contenuti rilevanti agli utenti target e identificare l’esperienza che determina un migliore tasso di conversione.
+AEM Forms si integra con Adobe Target, una soluzione di Adobe Experience Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Una delle funzionalità principali di Target è il test A/B, che consente di configurare rapidamente test A/B simultanei, presentare contenuti rilevanti agli utenti target e identificare l’esperienza che determina un migliore tasso di conversione.
 
-Con Adobe Experience Manager (AEM) Forms, puoi configurare ed eseguire test A/B sui moduli adattivi in tempo reale. Fornisce inoltre funzionalità di reporting pronte all’uso e personalizzabili per visualizzare le prestazioni in tempo reale delle esperienze dei moduli e identificare quella che massimizza il coinvolgimento e la conversione degli utenti.
+Con Adobe Experience Manager (AEM) Forms, puoi impostare ed eseguire test A/B sui moduli adattivi in tempo reale. Fornisce inoltre funzionalità di reporting pronte all’uso e personalizzabili per visualizzare le prestazioni in tempo reale delle esperienze dei moduli e identificare quella che massimizza il coinvolgimento e la conversione degli utenti.
 
 ## Configurare e integrare Target in AEM Forms {#set-up-and-integrate-target-in-aem-forms}
 
@@ -36,7 +36,7 @@ Prima di iniziare a creare e analizzare test A/B per i moduli adattivi, è neces
 
 ### Configurare Target {#set-up-target}
 
-Per integrare l’AEM con Target, accertati di disporre di un account Adobe Target valido. Quando ti registri a Adobe Target, ricevi un codice cliente. Per collegare AEM a Target sono necessari il codice client, l’e-mail associata all’account Target e la password.
+Per integrare AEM con Target, accertati di disporre di un account Adobe Target valido. Quando ti registri a Adobe Target, ricevi un codice cliente. Per collegare AEM a Target sono necessari il codice client, l’e-mail associata all’account Target e la password.
 
 Il codice client identifica l’account cliente Adobe Target e viene utilizzato come sottodominio nell’URL quando si chiama il server Adobe Target. Prima di procedere, accedere a [https://experience.adobe.com/](https://experience.adobe.com/) e, se si dispone dell&#39;accesso, visualizzare l&#39;opzione [!DNL Adobe Target] nella sezione [!UICONTROL Accesso rapido].
 
@@ -53,7 +53,7 @@ Se si sta configurando una destinazione per la prima volta, fare clic su **Confi
 1. Specifica i dettagli dell’account Target, ad esempio codice client, e-mail e password.
 1. Selezionare **Rest** dall&#39;elenco a discesa Tipo API.
 
-1. Fai clic su **Connetti ad Adobe Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio Connessione riuscita. Fare clic su **OK** nel messaggio e quindi su **OK** nella finestra di dialogo. L’account Target è configurato.
+1. Fai clic su **Connetti ad Adobe Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio Connessione riuscita. Fai clic su **OK** sul messaggio e quindi **OK** nella finestra di dialogo. L’account Target è configurato.
 
 1. Creare un framework di destinazione come descritto in [Aggiungere un framework](/help/sites-administering/target.md).
 
@@ -62,7 +62,7 @@ Se si sta configurando una destinazione per la prima volta, fare clic su **Confi
 1. Fai clic su **Configurazione di AEM Forms Target**.
 1. Selezionare un **Framework di destinazione**.
 1. Nel campo **URL di destinazione**, specifica tutti gli URL in cui vengono eseguiti i test A/B. Ad esempio, https://&lt;*nomehost*>:&lt;*porta*>/ per AEM Forms Server su OSGi o https://&lt;*nomehost*>:&lt;*porta*>/lc/ per AEM Forms Server su JEE.
-Considera di voler configurare un URL di Target per un’istanza di Publish e che i tuoi clienti possano accedervi utilizzando il nome host o l’indirizzo IP. In questo caso, devi configurare sia come URL di Target, utilizzando il nome host che l’indirizzo IP. Se configuri solo uno degli URL, il test A/B non viene eseguito per i clienti provenienti dall’altro URL. Fare clic su **+** per specificare più URL.
+Considera di voler configurare un URL di Target per un’istanza Publish e che i tuoi clienti possano accedervi utilizzando il nome host o l’indirizzo IP. In questo caso, devi configurare sia come URL di Target, utilizzando il nome host che l’indirizzo IP. Se configuri solo uno degli URL, il test A/B non viene eseguito per i clienti provenienti dall’altro URL. Fare clic su **+** per specificare più URL.
 
 1. Fai clic su **Salva**.
 
@@ -72,7 +72,7 @@ Se disponi di una licenza completa per l’utilizzo di Adobe Target, avvia il se
 
 `parameter -Dabtesting.enabled=true java -Xmx2048m -XX:MaxPermSize=512M -jar -Dabtesting.enabled=true`
 
-Se l&#39;istanza AEM è in esecuzione su JBoss®, avviata come servizio da chiavi in mano, nel file `jboss\bin\standalone.conf.bat` aggiungere il parametro -Dabtesting.enabled=true nella voce seguente:
+Se l&#39;istanza di AEM è in esecuzione su JBoss®, avviata come servizio da chiavi in mano, nel file `jboss\bin\standalone.conf.bat` aggiungere il parametro -Dabtesting.enabled=true nella voce seguente:
 
 `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
@@ -85,7 +85,7 @@ Oltre al server JBoss®, è possibile aggiungere l&#39;argomento -Dabtesting.ena
 
 ## Creare tipi di pubblico in AEM {#create-audiences-within-aem}
 
-AEM consente di creare un pubblico e di utilizzarlo per un test A/B. Il pubblico creato all’interno dell’AEM è disponibile in AEM Forms. Per creare un pubblico in AEM, effettua le seguenti operazioni:
+AEM consente di creare un pubblico e utilizzarlo per un test A/B. Il pubblico creato all’interno di AEM è disponibile in AEM Forms. Per creare un pubblico in AEM, effettua le seguenti operazioni:
 
 1. Nell&#39;istanza di authoring, selezionare **Adobe Experience Manager** > **Personalization** > **Tipi di pubblico**.
 
@@ -109,7 +109,7 @@ Puoi selezionare il pubblico quando configuri il test A/B per un modulo, come mo
 1. Fai clic sullo strumento **Seleziona** nella barra degli strumenti e seleziona il modulo adattivo.
 1. Fai clic su **Altro** nella barra degli strumenti e seleziona **Configura test A/B**. Viene visualizzata la pagina Configura test A/B.
 
-[&#128279;](assets/ab-test-configure-1.png)
+[![Pagina di configurazione test A/B per moduli adattivi](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. Specifica un **Nome attività** per il test A/B.
 
@@ -126,7 +126,7 @@ Puoi selezionare il pubblico quando configuri il test A/B per un modulo, come mo
    * Descrizione, etichetta e testo della guida di un campo
    * Script che non influiscono sul flusso di invio o lo interrompono
    * Convalide (lato client e lato server)
-   * Tema per l’esperienza B. (puoi selezionare un tema alternativo per l’esperienza B)
+   * Tema per l’esperienza B. (puoi selezionare un tema alternativo per l’esperienza B).
 
 1. Passa all&#39;interfaccia utente di Forms e Documents, seleziona il modulo adattivo, fai clic su **Altro** e seleziona **Avvia test A/B**.
 
@@ -153,7 +153,7 @@ Per visualizzare e analizzare il rapporto del test A/B:
 
 1. Selezionare il modulo adattivo, fare clic su **Altro** e quindi su **Rapporto test A/B**. Il report viene visualizzato.
 
-[&#128279;](assets/ab-test-report-3.png)
+[![Rapporto test A/B](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. Analizza il rapporto e verifica di disporre di un numero sufficiente di punti dati per dichiarare vincitrice una delle esperienze con prestazioni migliori. Puoi scegliere di continuare con lo stesso test A/B per più tempo o dichiarare un vincitore e terminare il test A/B.
 1. Per dichiarare un vincitore e terminare il test A/B, fare clic sul pulsante **Termina test A/B** nel dashboard di reporting. Viene visualizzata una finestra di dialogo in cui viene richiesto di dichiarare vincitrice una delle due esperienze. Scegli un vincitore e conferma di terminare il test A/B.
