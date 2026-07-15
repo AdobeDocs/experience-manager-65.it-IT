@@ -11,7 +11,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ La directory /apps è protetta e non è accessibile al pubblico, così come le d
 
 1. Crea la cartella `/apps/an-scf-sandbox`.
 
-   Utilizzo di **[!UICONTROL CRXDE Liti]** nel riquadro dell&#39;elenco delle cartelle
+   Utilizzo di **[!UICONTROL CRXDE Lite]** nel riquadro dell&#39;elenco delle cartelle
 
    1. Selezionare la cartella `/apps`.
    1. Fare clic con il pulsante destro del mouse su **[!UICONTROL Crea]**... o trascinare il menu **[!UICONTROL Crea...]**.
@@ -79,7 +79,7 @@ La directory /apps è protetta e non è accessibile al pubblico, così come le d
 
    Come per qualsiasi processo di modifica, è consigliabile salvare spesso. In caso di problemi durante l&#39;immissione dei dati, è possibile che il login sia scaduto o che si debbano salvare le modifiche precedenti.
 
-1. La struttura nel riquadro Esplora di CRXDE Lite dovrebbe ora essere simile alla seguente:
+1. La struttura nel riquadro Esplora risorse di CRXDE Lite dovrebbe ora essere simile alla seguente:
 
    ![modello-crxde](assets/crxde-template.png)
 

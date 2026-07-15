@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 3%
+source-wordcount: '2961'
+ht-degree: 4%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 3%
 
 Con AEM Forms puoi incorporare facilmente i moduli adattivi nelle pagine web. Questo consente ai visitatori di compilare e inviare i moduli in modo comodo, senza mai uscire dalla pagina in cui si trovano. In questo modo, possono rimanere coinvolti senza difficoltà con altri elementi del sito web interagendo attivamente con il modulo.
 
-È possibile utilizzare l’Editor pagina AEM per creare e aggiungere rapidamente più moduli alle pagine AEM Sites. L’editor di pagine AEM consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites, sfruttando la potenza dei componenti per moduli adattivi, tra cui comportamento dinamico, convalide, integrazione dei dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
+È possibile utilizzare l’Editor pagina di AEM per creare e aggiungere rapidamente più moduli alle pagine di AEM Sites. L’utilizzo dell’Editor pagina di AEM consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites utilizzando la potenza dei componenti per moduli adattivi, tra cui comportamento dinamico, convalide, integrazione di dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
 
 AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - Incorpora. È possibile utilizzare il Contenitore di moduli adattivi per creare un modulo in un frammento di esperienza o in una pagina AEM Sites, mentre il componente Forms adattivo - Incorpora consente di aggiungere un modulo adattivo esistente o di creare un modulo utilizzando l’editor di Forms adattivo.
 
 ![Modulo adattivo nella pagina Sites](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
-## Vantaggi dell’utilizzo del componente Contenitore modulo adattivo nell’Editor pagina o nel Frammento di esperienza AEM
+## Vantaggi dell’utilizzo del componente Contenitore modulo adattivo nell’Editor pagina di AEM o nel Frammento di esperienza
 
-L’utilizzo di Adaptive Form Container nell’editor di pagine AEM consente di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites utilizzando la potenza dei componenti di Forms adattivi, tra cui comportamento dinamico, convalide, integrazione di dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito, migliorando l’esperienza complessiva di creazione e gestione dei moduli. Esaminiamo alcune di queste funzioni:
+L’utilizzo del contenitore di moduli adattivi nell’editor di pagine di AEM consente di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites utilizzando la potenza dei componenti di Forms adattivi, tra cui comportamento dinamico, convalide, integrazione di dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito, migliorando l’esperienza complessiva di creazione e gestione dei moduli. Esaminiamo alcune di queste funzioni:
 
 * **Controllo delle versioni:** le pagine AEM Sites offrono [solide funzionalità di controllo delle versioni](/help/sites-authoring/working-with-page-versions.md), che consentono di tenere traccia e gestire versioni diverse dei moduli. In questo modo è possibile apportare modifiche e miglioramenti ai moduli mantenendo la possibilità di ripristinare le versioni precedenti, se necessario. Il controllo delle versioni garantisce un approccio controllato e organizzato allo sviluppo e all’evoluzione dei moduli.
 * **Targeting (integrazione con Adobe Target):** Con le funzionalità di targeting delle pagine di AEM Sites, puoi anche [personalizzare l&#39;esperienza del modulo per tipi di pubblico diversi](/help/sites-administering/target.md). Utilizzando i segmenti utente e i criteri di targeting, è possibile adattare il contenuto, la progettazione o il comportamento del modulo a specifici gruppi di utenti. Questo ti consente di fornire un’esperienza di modulo personalizzata e rilevante, aumentando i tassi di coinvolgimento e conversione.
@@ -43,13 +43,13 @@ L’utilizzo di Adaptive Form Container nell’editor di pagine AEM consente di 
 * **Blocco e sblocco del contenuto:** AEM Sites consente agli utenti di [controllare l&#39;accesso e le modifiche alle pagine](/help/sites-authoring/editing-content.md#locking-a-page-locking-a-page) nell&#39;ambiente AEM Sites. Quando una pagina viene bloccata, significa che è protetta da modifiche o modifiche non autorizzate da parte di altri utenti. Solo l’utente che ha bloccato il contenuto o un amministratore designato può sbloccarlo per consentire modifiche.
 
 
-## Varie opzioni per aggiungere un modulo adattivo nell’editor di pagine AEM
+## Varie opzioni per aggiungere un modulo adattivo nell’Editor pagina di AEM
 
 Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 * **[Aggiungi un modulo adattivo personalizzato a una pagina di AEM Sites:](#create-an-adaptive-form-in-sites-editor)** Crea un nuovo modulo da zero, adattandolo in modo specifico alle tue esigenze e preferenze di progettazione.
 
-* **[Aggiungi un modulo adattivo personalizzato a un frammento di esperienza:](#create-an-adaptive-form-in-experience-fragment)** Estendi la portata dei moduli aggiungendoli ai frammenti di esperienza AEM per consentirne il riutilizzo su più pagine o siti.
+* **[Aggiungi un modulo adattivo personalizzato a un frammento di esperienza:](#create-an-adaptive-form-in-experience-fragment)** Estendi la portata dei moduli aggiungendoli ai frammenti di esperienza AEM, per consentirne il riutilizzo su più pagine o siti.
 
 * **[Convertire un modulo adattivo in frammento di esperienza:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Convertire un modulo adattivo aggiunto a una pagina AEM Sites in un frammento di esperienza per riutilizzare il modulo in più pagine AEM Sites.
 
@@ -70,15 +70,15 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 +++  Abilitare i componenti core Forms adattivi per il tuo ambiente
 
-Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=it).
+Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
-+++
++++ 
 
-+++  Aggiungere librerie client Forms adattive ai componenti della pagina AEM Sites e della pagina Frammento esperienza
++++  Aggiungere librerie client Forms adattive ai componenti della pagina AEM Sites e della pagina Frammento esperienza 
 
 Per abilitare la funzionalità completa del componente Contenitore Forms adattivo, aggiungi le librerie client Customheaderlibs e Customfooterlibs alla pagina AEM Sites utilizzando la pipeline di distribuzione. Per aggiungere le librerie:
 
-1. Accedi all’istanza di authoring dell’AEM e apri CRX DE. L&#39;URL predefinito per un&#39;istanza Autore in esecuzione localmente è `http://localhost:4502/crx/de`.
+1. Accedi all’istanza di AEM Author e apri CRX DE. L&#39;URL predefinito per un&#39;istanza Autore in esecuzione localmente è `http://localhost:4502/crx/de`.
 
 1. Aprire il file `/apps/[your-sites-project]/components/page/customheaderlibs.html` e aggiungere il codice seguente al file:
 
@@ -118,7 +118,7 @@ Per abilitare la funzionalità completa del componente Contenitore Forms adattiv
 
 1. Ripeti i passaggi precedenti per tutte le istanze Author e Publish nell’ambiente.
 
-+++
++++ 
 
 +++ Abilita contenitore Forms adattivo
 
@@ -143,7 +143,7 @@ Puoi creare un nuovo modulo da zero, adattandolo in modo specifico ai tuoi requi
 
 ### Creare un modulo in una pagina di AEM Sites {#create-an-adaptive-form-in-sites-editor}
 
-Puoi utilizzare il componente Contenitore modulo adattivo nell’Editor pagina AEM per creare un modulo personalizzato. Il componente consente di creare un modulo trascinandone e rilasciandone i componenti. I componenti del modulo sono basati su Componenti core. Puoi personalizzarli facilmente in base alle esigenze della tua organizzazione.
+Puoi utilizzare il componente Contenitore modulo adattivo nell’Editor pagina di AEM per creare un modulo personalizzato. Il componente consente di creare un modulo trascinandone e rilasciandone i componenti. I componenti del modulo sono basati su Componenti core. Puoi personalizzarli facilmente in base alle esigenze della tua organizzazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -158,7 +158,7 @@ Successivamente, [impostare l&#39;azione di invio](#configure-submit-action-for-
 
 ### Creare un modulo in un frammento esperienza {#create-an-adaptive-form-in-experience-fragment}
 
-Puoi estendere la portata dei moduli aggiungendoli ai Frammenti esperienza AEM per consentirne il riutilizzo su più pagine o siti. Ad esempio, puoi includere un modulo di iscrizione a una newsletter all’interno di un frammento di esperienza. In questo modo è possibile riutilizzare il frammento in più pagine del sito Web, eliminando la necessità di ricreare ripetutamente il modulo. Eventuali aggiornamenti o modifiche apportate al modulo di iscrizione alla newsletter all’interno del frammento di esperienza vengono propagate automaticamente a tutte le pagine in cui viene utilizzato. Questo semplifica il processo e garantisce un’esperienza utente fluida, semplificando al contempo la gestione dei moduli del sito web.
+Puoi estendere la portata dei moduli aggiungendoli a Frammenti esperienza AEM, per consentirne il riutilizzo su più pagine o siti. Ad esempio, puoi includere un modulo di iscrizione a una newsletter all’interno di un frammento di esperienza. In questo modo è possibile riutilizzare il frammento in più pagine del sito Web, eliminando la necessità di ricreare ripetutamente il modulo. Eventuali aggiornamenti o modifiche apportate al modulo di iscrizione alla newsletter all’interno del frammento di esperienza vengono propagate automaticamente a tutte le pagine in cui viene utilizzato. Questo semplifica il processo e garantisce un’esperienza utente fluida, semplificando al contempo la gestione dei moduli del sito web.
 
 Per creare un modulo adattivo in un frammento di esperienza:
 
@@ -193,7 +193,7 @@ Per convertire un modulo adattivo nella pagina di AEM Sites in un frammento di e
 
 Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic sul pulsante Invia in un modulo adattivo. I moduli adattivi includono alcune azioni di invio pronte all’uso. Puoi anche estendere un’azione di invio predefinita per creare un’azione di invio personalizzata. Per configurare un&#39;azione di invio per il modulo:
 
-1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
+1. Apri l’Editor pagina di AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona il **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo con cui configurare le azioni di invio.
    ![Contenitore moduli adattivi](/help/forms/using/assets/adaptive-forms-container.png)
@@ -202,7 +202,7 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 
 ## Configurare uno schema o un modello dati modulo per un modulo {#configure-schema-or-data-model-for-form}
 
-È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito.
+È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito.
 
 Prima di collegare un modulo a uno schema o a un modello di dati del modulo
 
@@ -211,7 +211,7 @@ Prima di collegare un modulo a uno schema o a un modello di dati del modulo
 
 Per configurare uno schema JSON o un modello dati modulo per il modulo:
 
-1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
+1. Apri l’Editor pagina di AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona il **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
    ![Contenitore moduli adattivi modello dati modulo](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
@@ -233,7 +233,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 
 È possibile utilizzare il servizio di precompilazione del modello dati modulo per precompilare i campi di un modulo utilizzando un modello dati modulo configurato. Il servizio di precompilazione del modello dati modulo utilizza il servizio [Get Service del modello dati modulo configurato](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) per recuperare i dati. Per utilizzare il servizio di precompilazione del modello dati modulo per un modulo adattivo:
 
-1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
+1. Apri l’Editor pagina di AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona il **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
    ![Editor pagina per siti fdm aem del servizio di precompilazione](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
@@ -244,7 +244,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 
 All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altra pagina Web o a un messaggio. Per reindirizzare l’utente o configurare il messaggio di ringraziamento:
 
-1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
+1. Apri l’Editor pagina di AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona il **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
 1. Apri la scheda **[!UICONTROL Invio]**.
