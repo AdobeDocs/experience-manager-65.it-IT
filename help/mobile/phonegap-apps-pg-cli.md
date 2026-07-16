@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '639'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ In qualsiasi momento, come sviluppatore puoi eseguire l’app su un dispositivo 
 
 Per eseguire gli esempi seguenti, è necessario un sistema che esegua macOS X con Xcode oppure un sistema Mac/Win/Linux con Android™ SDK installato.
 
-## Bootstrap l’ambiente di sviluppo {#bootstrap-your-development-environment}
+## Bootstrap il tuo ambiente di sviluppo {#bootstrap-your-development-environment}
 
 Configura CLI PhoneGap (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
@@ -86,7 +86,7 @@ phonegap run ios
 >
 >1. Creare una cartella (test mkdir)
 >1. Passa a questa nuova cartella (test cd)
->1. Esegui `phonegap create helloWorld`
+>1. Eseguire `phonegap create helloWorld`
 >1. Navigare in helloWorld (cd helloWorld)
 >1. Esegui `phonegap run android` (o sostituisci Android™ con iOS come sopra).
 >1. L’emulatore apre l’esecuzione della nuova app PhoneGap creata, dicendo &quot;Device Ready&quot; (Pronto per il dispositivo) se il Bridge JavaScript to native è operativo.

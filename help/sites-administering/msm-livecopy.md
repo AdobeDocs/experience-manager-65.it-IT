@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '4177'
+source-wordcount: '4204'
 ht-degree: 40%
 
 ---
@@ -88,7 +88,7 @@ Puoi creare una Live Copy di qualsiasi pagina:
 
 * Pagine che fanno riferimento a una [configurazione blueprint](#creating-a-blueprint-configuration).
 * E pagine prive di connessione a una configurazione.
-* AEM supporta anche la creazione di una Live Copy all’interno delle pagine di un’altra Live Copy.
+* AEM supporta anche la creazione di una live copy all’interno delle pagine di un’altra live copy.
 
 L&#39;unica differenza è che la disponibilità del **Rollout** nelle pagine sorgente/blueprint dipende dal fatto che un modello di configurazione faccia riferimento al sorgente o meno:
 
@@ -233,7 +233,7 @@ I rollout vengono elaborati come processi asincroni e possono essere controllati
 
 >[!NOTE]
 >
->L’elaborazione del rollout asincrono richiede AEM 6.5.3.0 o versione successiva. Nelle versioni precedenti, le pagine venivano elaborate immediatamente e in modo sincrono.
+>L&#39;elaborazione del rollout asincrono richiede AEM 6.5.3.0 o versione successiva. Nelle versioni precedenti, le pagine venivano elaborate immediatamente e in modo sincrono.
 
 #### Effettuare il roll out di una blueprint dalla barra dei riferimenti {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -259,7 +259,7 @@ I rollout vengono elaborati come processi asincroni e possono essere controllati
 
 >[!NOTE]
 >
->L’elaborazione del rollout asincrono richiede AEM 6.5.3.0 o versione successiva. Nelle versioni precedenti, le pagine venivano elaborate immediatamente e in modo sincrono a meno che non fosse selezionata l&#39;opzione **Rollout in background**.
+>L&#39;elaborazione del rollout asincrono richiede AEM 6.5.3.0 o versione successiva. Nelle versioni precedenti, le pagine venivano elaborate immediatamente e in modo sincrono a meno che non fosse selezionata l&#39;opzione **Rollout in background**.
 
 #### Eseguire il rollout di una blueprint dalla panoramica della Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -279,7 +279,7 @@ I rollout vengono elaborati come processi asincroni e possono essere controllati
 
 >[!NOTE]
 >
->L’elaborazione del rollout asincrono richiede AEM 6.5.3.0 o versione successiva. Nelle versioni precedenti, le pagine venivano elaborate immediatamente e in modo sincrono.
+>L&#39;elaborazione del rollout asincrono richiede AEM 6.5.3.0 o versione successiva. Nelle versioni precedenti, le pagine venivano elaborate immediatamente e in modo sincrono.
 
 ### Sincronizzazione di una Live Copy {#synchronizing-a-live-copy}
 
@@ -380,7 +380,7 @@ Quando viene selezionata una pagina Live Copy, l’azione [Sospendi è disponibi
 1. Seleziona l’opzione appropriata da:
 
    * **Sospendi**
-   * **Sospendi con figli**
+   * **Sospendi con elementi secondari**
 
    ![Selezionare l&#39;opzione di sospensione appropriata](assets/chlimage_1-226.png)
 
@@ -392,7 +392,7 @@ Quando viene selezionata una pagina Live Copy, l’azione [Sospendi è disponibi
 
 Sospendere l’ereditarietà della Live Copy per una pagina è un’azione temporanea. Una volta sospesa, l’azione **Riprendi** diventa disponibile e consente di ripristinare la relazione live.
 
-Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, puoi richiedere una sincronizzazione:
+Quando abiliti di nuovo l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, puoi richiedere una sincronizzazione:
 
 * Nella finestra di dialogo **Riprendi**/**Ripristina**; ad esempio:
 
@@ -402,7 +402,7 @@ Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticam
 
 >[!CAUTION]
 >
->Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione al momento della ripresa o in un secondo momento.
+>Quando abiliti di nuovo l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione al momento della ripresa o in un secondo momento.
 
 #### Ripresa dell’ereditarietà dalle proprietà della pagina {#resuming-inheritance-from-page-properties}
 
@@ -428,7 +428,7 @@ Su una Live Copy esistente puoi modificare la profondità di una pagina, ovvero 
 
    * Avrà effetto immediato ed è non reversibile.
 
-      * Le pagine figlie vengono esplicitamente staccate dalla Live Copy. Ulteriori modifiche sugli elementi figlio non potranno essere mantenute se annullate.
+      * Le pagine figlie vengono esplicitamente staccate dalla Live Copy. Ulteriori modifiche sugli elementi secondari non potranno essere mantenute se annullate.
 
       * Rimuove eventuali discendenti `LiveRelationships` anche se sono nidificati `LiveCopies`.
 
@@ -445,7 +445,7 @@ Per specificare o modificare la profondità:
 
 1. Apri le proprietà della pagina Live Copy utilizzando il comando **Visualizza proprietà** della console **Sites** oppure utilizzando **Informazioni pagina** sulla barra degli strumenti della pagina.
 1. Fai clic sulla scheda **Live Copy**.
-1. Nella sezione **Configurazione** imposta o cancella l&#39;opzione **Ereditarietà Live Copy** a seconda che le pagine figlie siano incluse o meno:
+1. Nella sezione **Configurazione** imposta o cancella l&#39;opzione **Ereditarietà Live Copy** a seconda che le pagine secondarie siano incluse o meno:
 
    * selezionato: una live copy profonda (le pagine figlie sono incluse)
    * cancella: una live copy shallow (le pagine figlie sono escluse)
@@ -468,7 +468,7 @@ Annulla l’ereditarietà della Live Copy per un componente in modo che non veng
 
 >[!NOTE]
 >
->Quando riabiliti l’ereditarietà, il componente non viene sincronizzato automaticamente con il sorgente. Se necessario, è possibile richiedere manualmente una sincronizzazione.
+>Quando abiliti di nuovo l’ereditarietà, il componente non viene sincronizzato automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione.
 
 Annulla l&#39;ereditarietà per modificare il contenuto o eliminare il componente:
 

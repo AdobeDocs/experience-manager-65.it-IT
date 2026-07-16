@@ -11,8 +11,8 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 4%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 A partire dalla versione 6.3, Adobe Experience Manager (AEM) consente di impostare la password amministratore tramite la riga di comando durante l’installazione di una nuova istanza.
 
-Con le versioni precedenti di AEM, la password per l&#39;account amministratore, insieme alla password per varie altre console, doveva essere modificata dopo l&#39;installazione.
+Con le versioni precedenti di AEM, la password dell’account amministratore, insieme alla password per varie altre console, doveva essere modificata dopo l’installazione.
 
-Questa funzione aggiunge la possibilità di impostare una nuova password amministratore per l’archivio e il Servlet Engine durante l’installazione di un’istanza AEM, eliminando in tal modo la necessità di eseguirla manualmente in seguito.
+Questa funzione consente inoltre di impostare una nuova password amministratore per l’archivio e il Servlet Engine durante l’installazione di un’istanza di AEM, eliminando in tal modo la necessità di eseguire manualmente l’operazione successivamente.
 
 >[!CAUTION]
 >
@@ -32,9 +32,9 @@ Questa funzione aggiunge la possibilità di impostare una nuova password amminis
 
 ## Come Si Utilizza? {#how-do-i-use-it}
 
-Questa funzione si attiva automaticamente se si sceglie di installare AEM tramite la riga di comando, anziché fare doppio clic sul file JAR da un elenco di cartelle del file system.
+Questa funzione si attiva automaticamente se si sceglie di installare AEM tramite la riga di comando, anziché fare doppio clic sul file JAR da una finestra di esplorazione del file system.
 
-La sintassi generale per l’esecuzione di un’istanza AEM dalla riga di comando è la seguente:
+La sintassi generale per l’esecuzione di un’istanza AEM dalla riga di comando è:
 
 ```shell
 java -jar aem6.3.jar
@@ -46,7 +46,7 @@ Dopo aver eseguito l’istanza dalla riga di comando, viene visualizzata l’opz
 
 >[!NOTE]
 >
->La richiesta di modifica della password amministratore viene visualizzata solo durante l’installazione di una nuova istanza AEM.
+>La richiesta di modifica della password amministratore viene visualizzata solo durante l’installazione di una nuova istanza di AEM.
 
 ## Utilizzo del flag -nointeractive {#using-the-nointeractive-flag}
 
@@ -66,4 +66,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Se si utilizza semplicemente il parametro `-nointeractive` senza la proprietà di sistema `-Dadmin.password.file`, AEM utilizza la password predefinita dell&#39;amministratore senza chiedere di modificarla, essenzialmente replicando il comportamento delle versioni precedenti. Questa modalità non interattiva può essere utilizzata per le installazioni automatizzate tramite la riga di comando in uno script di installazione.
+>Se si utilizza semplicemente il parametro `-nointeractive` senza la proprietà di sistema `-Dadmin.password.file`, AEM utilizza la password amministratore predefinita senza chiedere di modificarla, essenzialmente replicando il comportamento delle versioni precedenti. Questa modalità non interattiva può essere utilizzata per le installazioni automatizzate tramite la riga di comando in uno script di installazione.

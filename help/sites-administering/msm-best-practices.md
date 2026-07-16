@@ -1,6 +1,6 @@
 ---
 title: Best practice MSM
-description: Trova le best practice compilate dai team tecnici e di consulenza Adobi per iniziare a utilizzare AEM Multi Site Manager.
+description: Trova le best practice compilate dai team tecnici e di consulenza di Adobe per iniziare a utilizzare AEM Multi Site Manager.
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 34%
+source-wordcount: '1624'
+ht-degree: 36%
 
 ---
 
@@ -21,7 +21,7 @@ MSM è un framework configurabile per automatizzare la distribuzione dei contenu
 
 * Pianifica attentamente **la struttura e i flussi di contenuto** prima di iniziare l&#39;implementazione.
 * **Mantieni al minimo la quantità di Live Copy.** L&#39;elaborazione delle Live Copy richiede molte risorse. Più Live Copy esistono nel sistema, più possono esserne influenzate le prestazioni: dall’elaborazione degli indici Live Copy interni, alle operazioni Live Copy come i rollout, alle operazioni dell’interfaccia utente come la visualizzazione delle relazioni Live Copy nella barra dei riferimenti di amministrazione di Sites. Si consiglia di creare Live Copy di siti o rami di un sito, in cui le relazioni Live Copy vengono ereditate dalle pagine del sito o del ramo. Evita di creare singole Live Copy per le pagine di un sito o di un ramo quando l’intera struttura può essere trasformata in una Live Copy.
-* **Personalizza tutto il necessario, ma il meno possibile.** Sebbene MSM supporti un elevato grado di personalizzazione (ad esempio le configurazioni di rollout), in genere la best practice per le prestazioni, l&#39;affidabilità e l&#39;aggiornamento del sito Web è quella di ridurre al minimo la personalizzazione.
+* **Personalizzare il più possibile, ma il meno possibile.** Anche se MSM supporta un elevato grado di personalizzazione (ad esempio le configurazioni di rollout), in genere come best practice per prestazioni, affidabilità e aggiornamento del sito web conviene ridurre al minimo la personalizzazione.
 * Stabilisci anticipatamente un modello di **governance** e forma gli utenti di conseguenza per assicurarti che proceda tutto in maniera ottimale. Dal punto di vista della governance, una best practice consiste nel **ridurre al minimo l&#39;autorità di cui dispongono i produttori locali di contenuti** per allocare/connettere contenuti ad altri utenti locali e alle rispettive Live Copy. Ciò è dovuto al fatto che le ereditarietà chained non gestite possono aumentare notevolmente la complessità di una struttura MSM e comprometterne le prestazioni e l&#39;affidabilità.
 
 * Una volta che esiste un piano per la struttura, i flussi di contenuto, l&#39;automazione e la governance - **prototipo e verifica accuratamente il sistema**, prima di avviare l&#39;implementazione live.
@@ -67,9 +67,9 @@ In generale, la regola di rollout in MSM per quanto riguarda la sincronizzazione
 * I componenti vengono implementati per sincronizzare tutte le risorse contenute nella blueprint.
 * I contenitori sincronizzano solo la risorsa corrente.
 
-Ciò significa che i componenti sono trattati come un aggregato e in un rollout il componente stesso e tutti i suoi figli vengono sostituiti con quelli nei progetti. Ciò significa che se una risorsa viene aggiunta localmente a tale componente, andrà persa per il contenuto della blueprint al momento del rollout.
+Ciò significa che i componenti sono trattati come un aggregato e in un rollout il componente stesso e tutti i suoi elementi secondari vengono sostituiti con quelli nei progetti. Ciò significa che se una risorsa viene aggiunta localmente a tale componente, andrà persa per il contenuto della blueprint al momento del rollout.
 
-Per supportare la nidificazione dei componenti in modo che i componenti aggiunti localmente vengano mantenuti in un rollout, il componente deve essere dichiarato come contenitore. Ad esempio, il parsys predefinito è dichiarato come contenitore in modo da poter supportare contenuti aggiunti localmente.
+Per supportare la nidificazione dei componenti in modo che i componenti aggiunti localmente siano mantenuti in un rollout, il componente deve essere dichiarato come contenitore. Ad esempio, il parsys predefinito è dichiarato come contenitore in modo da poter supportare contenuti aggiunti localmente.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Per supportare la nidificazione dei componenti in modo che i componenti aggiunti
 
 ## Crea sito {#create-site}
 
-Tieni presente che l’AEM ha due approcci principali per la creazione di Live Copy:
+Tieni presente che AEM dispone di due approcci principali per la creazione di Live Copy:
 
 * Durante la [creazione di una Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
@@ -91,7 +91,7 @@ Di seguito sono riportate alcune considerazioni da tenere presenti durante la cr
 
 * Per creare un sito, è necessaria una [configurazione blueprint](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Per consentire la selezione dei percorsi linguistici da creare in un nuovo sito, le lingue root corrispondenti devono esistere nella blueprint (sorgente).
-* Una volta creato un [nuovo sito come Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (utilizzando **Crea**, quindi **Sito**), i primi due livelli di questa Live Copy sono *Shallow*. Gli elementi figli della pagina non appartengono alla relazione live, ma se viene trovata una relazione live corrispondente al trigger, verrà comunque generato un rollout.
+* Una volta creato un [nuovo sito come Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (utilizzando **Crea**, quindi **Sito**), i primi due livelli di questa Live Copy sono *Shallow*. Gli elementi secondari della pagina non appartengono alla relazione live, ma se viene trovata una relazione live corrispondente al trigger, verrà comunque generato un rollout.
 
   Consente di evitare:
 
@@ -195,6 +195,6 @@ Ricorda che:
 Questa e le pagine seguenti trattano i problemi correlati:
 
 * [Creazione e sincronizzazione di Live Copy](/help/sites-administering/msm-livecopy.md)
-* [Panoramica Live Copy](/help/sites-administering/msm-livecopy-overview.md)
+* [Panoramica sulla console Live Copy](/help/sites-administering/msm-livecopy-overview.md)
 * [Configurazione della sincronizzazione di una Live Copy](/help/sites-administering/msm-sync.md)
 * [Conflitti di rollout MSM](/help/sites-administering/msm-rollout-conflicts.md)
