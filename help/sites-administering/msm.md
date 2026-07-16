@@ -319,7 +319,7 @@ Quando crei una Live Copy in AEM, puoi visualizzare e navigare attraverso il ram
 
 #### Live Copy nidificate {#nested-live-copies}
 
-Quando crei una pagina [ all&#39;interno di una Live Copy esistente](#live-copy-with-non-live-copy-pages), questa nuova pagina può anche essere impostata come Live Copy di un&#39;altra blueprint. Questa è nota come Live Copy nidificata, in cui il comportamento della seconda Live Copy (interna) è interessato dalla prima Live Copy (esterna) nel modo seguente:
+Quando crei una pagina [&#x200B; all&#39;interno di una Live Copy esistente](#live-copy-with-non-live-copy-pages), questa nuova pagina può anche essere impostata come Live Copy di un&#39;altra blueprint. Questa è nota come Live Copy nidificata, in cui il comportamento della seconda Live Copy (interna) è interessato dalla prima Live Copy (esterna) nel modo seguente:
 
 * Un rollout profondo attivato per la Live Copy di livello superiore può essere continuato nella Live Copy nidificata (ad esempio, se il trigger corrisponde).
 * Eventuali collegamenti tra le sorgenti vengono riscritti all’interno delle Live Copy.
@@ -397,7 +397,7 @@ Le configurazioni di rollout possono essere riutilizzate, in modo che più Live 
 
 ### Conflitti di rollout {#rollout-conflicts}
 
-I rollout possono complicarsi, soprattutto quando gli autori modificano il contenuto sia nell&#39;origine che nella Live Copy, pertanto è utile essere a conoscenza di come AEM gestisce eventuali [ conflitti che potrebbero verificarsi durante il rollout](/help/sites-administering/msm-rollout-conflicts.md).
+I rollout possono complicarsi, soprattutto quando gli autori modificano il contenuto sia nell&#39;origine che nella Live Copy, pertanto è utile essere a conoscenza di come AEM gestisce eventuali [&#x200B; conflitti che potrebbero verificarsi durante il rollout](/help/sites-administering/msm-rollout-conflicts.md).
 
 ### Sospensione e annullamento dell’ereditarietà e della sincronizzazione {#suspending-and-cancelling-inheritance-and-synchronization}
 
