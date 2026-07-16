@@ -1,5 +1,5 @@
 ---
-title: Riferimento API di JavaScript ContextHub
+title: Riferimento API di JavaScript per ContextHub
 description: L’API JavaScript di ContextHub è disponibile per i tuoi script quando il componente ContextHub è stato aggiunto alla pagina
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4976'
 ht-degree: 2%
 
 ---
 
-# Riferimento API di JavaScript ContextHub{#contexthub-javascript-api-reference}
+# Riferimento API di JavaScript per ContextHub{#contexthub-javascript-api-reference}
 
 L&#39;API JavaScript ContextHub è disponibile per gli script quando il componente [ContextHub è stato aggiunto alla pagina](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
@@ -62,14 +62,14 @@ Nella tabella seguente sono elencati i nomi degli eventi che si verificano per l
 | ContextHub.Constants.EVENT_UI_MODULE_ADDED | Generato quando viene aggiunto un nuovo modulo | ui-module-aggiunto |
 | ContextHub.Constants.EVENT_UI_MODULE_REMOVED | Generato quando un modulo viene rimosso | ui-module-remove |
 | ContextHub.Constants.EVENT_UI_CONTAINER_ADDED | Generato quando il contenitore dell’interfaccia utente viene aggiunto alla pagina | ui-container-ADDED |
-| ContextHub.Constants.EVENT_UI_CONTAINER_OPENED | Generato quando viene aperta l’interfaccia utente di ContextHub | ui-container-open |
+| ContextHub.Constants.EVENT_UI_CONTAINER_OPEN | Generato quando viene aperta l’interfaccia utente di ContextHub | ui-container-open |
 | ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED | Generato quando l’interfaccia utente di ContextHub è compressa | ui-container-closed |
 | ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | Generato quando una proprietà viene modificata | ui-property-modified |
 | ContextHub.Constants.EVENT_UI_RENDERED | Generato ogni volta che viene eseguito il rendering dell’interfaccia utente di ContextHub (ad esempio, dopo una modifica della proprietà) | con rendering dell&#39;interfaccia utente |
 | ContextHub.Constants.EVENT_UI_INITIALIZED | Generato quando il contenitore dell’interfaccia utente viene inizializzato | inizializzato dall&#39;interfaccia utente |
 | ContextHub.Constants.ACTIVE_UI_MODE | Indica la modalità interfaccia utente attiva | /_/active-ui-mode |
 
-## Riferimento API di JavaScript ContextHub {#contexthub-javascript-api-reference-2}
+## Riferimento API di JavaScript per ContextHub {#contexthub-javascript-api-reference-2}
 
 L&#39;oggetto ContextHub consente di accedere a tutti gli archivi.
 
@@ -406,7 +406,7 @@ Configura i dettagli per la connessione al servizio JSONP utilizzato da questo o
 * **serviceConfig:** oggetto contenente le proprietà seguenti:
 
    * host: (stringa) il nome o l’indirizzo IP del server.
-   * jsonp: (booleano) Un valore true indica che il servizio è un servizio JSONP, in caso contrario false. Se è true, il callback {callback: &quot;ContextHub.Callbacks.*Oggetto.nome*} è stato aggiunto all&#39;oggetto service.params.
+   * jsonp: (booleano) Un valore true indica che il servizio è un servizio JSONP, in caso contrario false. Se è true, l&#39;oggetto {callback: &quot;ContextHub.Callbacks.*Object.name*} viene aggiunto all&#39;oggetto service.params.
    * parametri: (Oggetto) parametri URL rappresentati come proprietà oggetto. I nomi dei parametri sono nomi di proprietà e i valori dei parametri sono valori di proprietà.
    * path: (String) il percorso del servizio.
    * porta: (Numero) il numero di porta del servizio.
@@ -435,7 +435,7 @@ Recupera l&#39;oggetto servizio per l&#39;oggetto ContextHub.Store.JSONPStore. L
 Oggetto con le seguenti proprietà:
 
 * **host:** (stringa) Nome o indirizzo IP del server.
-* **jsonp:** (booleano) Il valore true indica che il servizio è un servizio JSONP, in caso contrario false. Se è true, il callback {callback: &quot;ContextHub.Callbacks.*Oggetto.nome*} è stato aggiunto all&#39;oggetto service.params.
+* **jsonp:** (booleano) Il valore true indica che il servizio è un servizio JSONP, in caso contrario false. Se è true, l&#39;oggetto {callback: &quot;ContextHub.Callbacks.*Object.name*} viene aggiunto all&#39;oggetto service.params.
 
 * **parametri:** (oggetto) parametri URL rappresentati come proprietà oggetto. I nomi dei parametri sono nomi di proprietà e i valori dei parametri sono valori di proprietà.
 * **percorso:** (stringa) Percorso del servizio.

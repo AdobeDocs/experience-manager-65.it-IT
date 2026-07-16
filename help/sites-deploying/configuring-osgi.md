@@ -1,6 +1,6 @@
 ---
 title: Configurazione di OSGi
-description: OSGi è un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi dell'AEM e la loro configurazione. Questo articolo descrive come gestire le impostazioni di configurazione per tali bundle.
+description: OSGi è un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi di AEM e la relativa configurazione. Questo articolo descrive come gestire le impostazioni di configurazione per tali bundle.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '1999'
 ht-degree: 0%
 
 ---
 
 # Configurazione di OSGi{#configuring-osgi}
 
-[OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi dell&#39;AEM e la loro configurazione.
+[OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi di AEM e la relativa configurazione.
 
 OSGi &quot;*fornisce le primitive standardizzate che consentono di creare applicazioni a partire da componenti di piccole dimensioni, riutilizzabili e collaborativi. Questi componenti possono essere composti in un&#39;applicazione e distribuiti*&quot;.
 
@@ -32,7 +32,7 @@ Puoi gestire le impostazioni di configurazione per tali bundle:
 
 Entrambi i metodi possono essere utilizzati anche se ci sono sottili differenze, principalmente in relazione a [Modalità di esecuzione](/help/sites-deploying/configure-runmodes.md):
 
-* [Console web di Adobe CQ](#osgi-configuration-with-the-web-console)
+* [Console web Adobe CQ](#osgi-configuration-with-the-web-console)
 
    * La console web è l’interfaccia standard per la configurazione OSGi. Fornisce un’interfaccia utente per la modifica delle varie proprietà, dove è possibile selezionare i valori possibili dagli elenchi predefiniti.
 
@@ -45,7 +45,7 @@ Entrambi i metodi possono essere utilizzati anche se ci sono sottili differenze,
    * Contengono le impostazioni definite nella console web.
    * Può essere incluso nei pacchetti di contenuti per l’utilizzo in altre istanze.
 
-* [content-nodes (sling:osgiConfig) nell’archivio](#osgi-configuration-in-the-repository)
+* [content-nodes (sling:osgiConfig) nell&#39;archivio](#osgi-configuration-in-the-repository)
 
    * Richiede la configurazione manuale con CRXDE Lite.
    * A causa delle convenzioni di denominazione dei nodi `sling:OsgiConfig`, è possibile collegare la configurazione a una [modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) specifica. Puoi anche salvare le configurazioni per più di una modalità di esecuzione nello stesso archivio.
@@ -64,7 +64,7 @@ Indipendentemente dal metodo utilizzato, tutti i metodi di configurazione seguen
 
 ## Configurazione OSGi con la console web {#osgi-configuration-with-the-web-console}
 
-La [console Web](/help/sites-deploying/web-console.md) in AEM fornisce un&#39;interfaccia standardizzata per la configurazione dei bundle. La scheda **Configurazione** viene utilizzata per la configurazione dei bundle OSGi ed è pertanto il meccanismo sottostante per la configurazione dei parametri di sistema AEM.
+La [console Web](/help/sites-deploying/web-console.md) in AEM fornisce un&#39;interfaccia standardizzata per la configurazione dei bundle. La scheda **Configurazione** viene utilizzata per configurare i bundle OSGi ed è pertanto il meccanismo sottostante per configurare i parametri di sistema di AEM.
 
 Tutte le modifiche apportate vengono immediatamente applicate alla configurazione OSGi pertinente, non è necessario riavviare il sistema.
 
@@ -174,7 +174,7 @@ Poiché lo stesso parametro di configurazione si trova in più posizioni, il sis
 
 >[!NOTE]
 >
->Leggi anche [come definire una configurazione basata su repository solo per un&#39;istanza specifica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=it).
+>Leggi anche [come definire una configurazione basata su repository solo per un&#39;istanza specifica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
 
 ### Aggiunta di una nuova configurazione all’archivio {#adding-a-new-configuration-to-the-repository}
 
@@ -186,7 +186,7 @@ Per aggiungere una configurazione all’archivio, è necessario conoscere quanto
 
    Fai riferimento al campo **Configurazioni** nella console Web. Il nome viene visualizzato tra parentesi dopo il nome del bundle (o in **Informazioni di configurazione** nella parte inferiore della pagina).
 
-   Ad esempio, creare un nodo `com.day.cq.wcm.core.impl.VersionManagerImpl.` per configurare **Gestione versioni WCM AEM**.
+   Creare ad esempio un nodo `com.day.cq.wcm.core.impl.VersionManagerImpl.` per configurare **Gestione versioni di AEM WCM**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -249,7 +249,7 @@ Per aggiungere effettivamente la nuova configurazione all’archivio:
    * Tipo: a seconda dei casi.
    * Valore: come richiesto.
 
-   È necessario creare solo le proprietà per i parametri che si desidera configurare, mentre per gli altri parametri vengono comunque utilizzati i valori predefiniti impostati dall&#39;AEM.
+   Devi creare solo le proprietà per i parametri che desideri configurare; gli altri devono comunque accettare i valori predefiniti impostati da AEM.
 
 1. Salva tutte le modifiche.
 
@@ -314,11 +314,11 @@ L’elenco seguente mostra una piccola selezione delle configurazioni disponibil
 
   `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Publish - Filtro WCM AEM:
+* Pubblicazione - Filtro WCM AEM:
 
   `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Statistiche pagina WCM Publish - AEM:
+* Pubblicazione - Statistiche pagina WCM AEM:
 
   `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 

@@ -1,5 +1,5 @@
 ---
-title: Framework di aspetto per moduli adattivi e HTML5
+title: Framework dell’aspetto per moduli adattivi e HTML5
 description: Mobile Forms esegue il rendering dei modelli di modulo come moduli HTML5. Questi moduli utilizzano i file jQuery, Backbone.js e Underscore.js per l'aspetto e per abilitare gli script.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,16 @@ feature: HTML5 Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 2%
+source-wordcount: '1165'
+ht-degree: 3%
 
 ---
 
-# Framework di aspetto per moduli adattivi e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
+# Framework dell’aspetto per moduli adattivi e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms (moduli adattivi e moduli HTML5) utilizza [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) librerie per aspetto e script. I moduli utilizzano inoltre l&#39;architettura [jQuery UI](https://jqueryui.com/) **Widget** per tutti gli elementi interattivi (ad esempio campi e pulsanti) del modulo. Questa architettura consente allo sviluppatore di moduli di utilizzare un set completo di widget e plug-in jQuery disponibili in Forms. Puoi anche implementare una logica specifica per il modulo durante l’acquisizione di dati da utenti come le restrizioni leadDigits/trailDigits o l’implementazione di clausole immagine. Gli sviluppatori di moduli possono creare e utilizzare le funzionalità personalizzate per migliorare l’esperienza di acquisizione dei dati e renderla più semplice da usare.
+Forms (moduli adattivi e HTML5) utilizza [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) librerie per aspetto e script. I moduli utilizzano inoltre l&#39;architettura [jQuery UI](https://jqueryui.com/) **Widget** per tutti gli elementi interattivi (ad esempio campi e pulsanti) del modulo. Questa architettura consente allo sviluppatore di moduli di utilizzare un set completo di widget e plug-in jQuery disponibili in Forms. Puoi anche implementare una logica specifica per il modulo durante l’acquisizione di dati da utenti come le restrizioni leadDigits/trailDigits o l’implementazione di clausole immagine. Gli sviluppatori di moduli possono creare e utilizzare le funzionalità personalizzate per migliorare l’esperienza di acquisizione dei dati e renderla più semplice da usare.
 
-Questo articolo è destinato agli sviluppatori con una conoscenza sufficiente dei widget jQuery e jQuery. Fornisce informazioni approfondite sul framework dell&#39;aspetto e consente agli sviluppatori di creare un aspetto alternativo per un campo modulo.
+Questo articolo è destinato agli sviluppatori con una conoscenza sufficiente dei widget jQuery e jQuery. Fornisce ad insight il framework dell&#39;aspetto e consente agli sviluppatori di creare un aspetto alternativo per un campo modulo.
 
 Il framework dell&#39;aspetto si basa su varie opzioni, eventi (trigger) e funzioni per acquisire le interazioni dell&#39;utente con il modulo e risponde alle modifiche del modello per informare l&#39;utente finale. Inoltre:
 
@@ -51,7 +51,7 @@ Di seguito sono riportate le opzioni globali impostate. Queste opzioni sono disp
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>I Reader di schermate utilizzano questo valore per annotare informazioni sul campo. Il modulo fornisce il valore ed è possibile sostituirlo.<br /> </td>
+   <td>Gli assistenti vocali utilizzano questo valore per annotare informazioni sul campo. Il modulo fornisce il valore ed è possibile sostituirlo.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>

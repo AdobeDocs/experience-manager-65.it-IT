@@ -11,14 +11,14 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 2%
+source-wordcount: '1125'
+ht-degree: 4%
 
 ---
 
 # Gestione delle applicazioni e delle attività di Forms nella casella in entrata AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Uno dei modi per avviare o attivare un flusso di lavoro incentrato su Forms è tramite le applicazioni nella casella in entrata AEM. Per rendere un flusso di lavoro Forms disponibile come applicazione nella Casella in entrata, creare un&#39;applicazione flusso di lavoro. Per ulteriori informazioni sull&#39;applicazione del flusso di lavoro e su altri modi per avviare i flussi di lavoro di Forms, vedere [Avviare un flusso di lavoro incentrato su Forms in OSGi](../../forms/using/aem-forms-workflow.md#launch).
+Uno dei modi per avviare o attivare un flusso di lavoro incentrato su Forms è tramite le applicazioni nella casella in entrata di AEM. Per rendere un flusso di lavoro Forms disponibile come applicazione nella Casella in entrata, creare un&#39;applicazione flusso di lavoro. Per ulteriori informazioni sull&#39;applicazione del flusso di lavoro e su altri modi per avviare i flussi di lavoro di Forms, vedere [Avviare un flusso di lavoro incentrato su Forms in OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Inoltre, la Casella in entrata AEM consolida le notifiche e le attività da vari componenti AEM, inclusi i flussi di lavoro Forms. Quando viene attivato un flusso di lavoro dei moduli contenente un passaggio Assegna attività, l’applicazione associata viene elencata come attività nella casella in entrata dell’assegnatario. Se l&#39;assegnatario è un gruppo, l&#39;attività viene visualizzata nella Posta in arrivo di tutti i membri del gruppo fino a quando un singolo utente non richiede o delega l&#39;attività.
 
@@ -28,11 +28,11 @@ In sintesi, Casella in entrata consente di creare un&#39;applicazione e gestire 
 
 >[!NOTE]
 >
->Per poter utilizzare la casella in entrata AEM, è necessario essere membri del gruppo utenti flusso di lavoro.
+>Per utilizzare la casella in entrata di AEM è necessario essere membri del gruppo utenti flusso di lavoro.
 
 ## Crea applicazione {#create-application}
 
-1. Vai alla casella in entrata AEM all&#39;indirizzo https://&#39;[server]:[porta]&#39;/aem/inbox.
+1. Vai a Casella in entrata AEM all&#39;indirizzo https://&#39;[server]:[porta]&#39;/aem/inbox.
 1. Nell&#39;interfaccia utente Posta in arrivo, selezionare **[!UICONTROL Crea > Applicazione]**. Viene visualizzata la pagina Seleziona applicazione.
 1. Selezionare un&#39;applicazione e fare clic su **[!UICONTROL Crea]**. Viene aperto il modulo adattivo associato all’applicazione. Inserisci le informazioni nel modulo adattivo e seleziona **[!UICONTROL Invia]**. Avvia il flusso di lavoro associato e crea un&#39;attività nella Posta in arrivo dell&#39;assegnatario.
 
@@ -48,7 +48,7 @@ Le attività assegnate a un gruppo vengono visualizzate nella cartella Posta in 
 
    ![attività selezionata](assets/select-task.png)
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Per delegare l&#39;attività, selezionare **[!UICONTROL Delega]**. Viene visualizzata la finestra di dialogo Delega elemento. Selezionare un utente, aggiungere un commento e selezionare **[!UICONTROL OK]**.
 
@@ -80,7 +80,7 @@ La vista dettagliata delle attività comprende le sezioni riportate di seguito.
 
 #### Dettagli attività {#task-details}
 
-Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività &#x200B;](/help/sites-developing/workflows-step-ref.md) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
+Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività ](/help/sites-developing/workflows-step-ref.md) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
 
 #### Modulo {#form}
 
@@ -102,16 +102,16 @@ Mentre si lavora sull&#39;attività, questa procede ulteriormente nel flusso di 
 
 ### Visualizza attività completate {#view-completed-tasks}
 
-Nella casella in entrata AEM vengono visualizzate solo le attività attive. Le attività completate non vengono visualizzate nell&#39;elenco. È tuttavia possibile utilizzare i filtri Posta in arrivo per filtrare le attività in base a diversi parametri, ad esempio il tipo di attività, lo stato e le date di inizio e fine. Per visualizzare le attività completate:
+Nella casella in entrata di AEM sono visualizzate solo le attività attive. Le attività completate non vengono visualizzate nell&#39;elenco. È tuttavia possibile utilizzare i filtri Posta in arrivo per filtrare le attività in base a diversi parametri, ad esempio il tipo di attività, lo stato e le date di inizio e fine. Per visualizzare le attività completate:
 
-1. Nella casella in entrata AEM, seleziona ![toggle-side-panel1](assets/toggle-side-panel1.png) per aprire il selettore di filtri.
+1. Nella casella in entrata di AEM, seleziona ![toggle-side-panel1](assets/toggle-side-panel1.png) per aprire il selettore di filtri.
 1. Seleziona il pannello a soffietto **[!UICONTROL Stato attività]** e seleziona **[!UICONTROL Completa]**. Vengono visualizzate tutte le attività completate.
 
    ![filtro](assets/filter.png)
 
 1. Seleziona per selezionare un&#39;attività e fai clic su **[!UICONTROL Apri]**.
 
-L’attività si apre per visualizzare il documento o il modulo adattivo associato all’attività. Per il modulo adattivo, l&#39;attività visualizza il modulo adattivo di sola lettura o il relativo documento di record PDF come configurato nella scheda Modulo/Documento del passaggio [Assegna attività del flusso di lavoro](/help/sites-developing/workflows-step-ref.md).
+L’attività si apre per visualizzare il documento o il modulo adattivo associato all’attività. Per il modulo adattivo, l&#39;attività visualizza il modulo adattivo di sola lettura o il relativo documento di record PDF come configurato nella scheda Modulo/Documento del passaggio [Assegna attività flusso di lavoro](/help/sites-developing/workflows-step-ref.md).
 
 Nella sezione dei dettagli dell&#39;attività vengono visualizzate informazioni quali l&#39;azione intrapresa, lo stato dell&#39;attività, la data di inizio e la data di fine.
 
@@ -121,11 +121,11 @@ La scheda **[!UICONTROL Dettagli flusso di lavoro]** mostra ogni passaggio del f
 
 ![attività-flusso di lavoro completato](assets/completed-task-workflow.png)
 
-## Risoluzione dei problemi {#troubleshooting-workflows}
+## Risoluzione di problemi {#troubleshooting-workflows}
 
 ### Impossibile visualizzare gli elementi relativi al flusso di lavoro AEM nella casella in entrata AEM {#unable-to-see-aem-worklow-items}
 
-Il proprietario di un modello di flusso di lavoro non è in grado di visualizzare gli elementi relativi al flusso di lavoro AEM nella casella in entrata AEM. Per risolvere il problema, aggiungi gli indici elencati di seguito al tuo archivio AEM e ricostruisci l’indice.
+Il proprietario di un modello di flusso di lavoro non è in grado di visualizzare gli elementi relativi al flusso di lavoro di AEM nella casella in entrata di AEM. Per risolvere il problema, aggiungi gli indici elencati di seguito al tuo archivio AEM e ricostruisci l’indice.
 
 1. Per aggiungere indici, utilizzate uno dei seguenti metodi:
 
@@ -140,7 +140,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Distribuire gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto dell’archetipo AEM:
+   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,7 +150,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Creare un indice delle proprietà e impostarlo su true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=it#the-property-index).
+1. [Creare un indice delle proprietà e impostarlo su true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
 
 1. Dopo la configurazione degli indici in CRX DE o la distribuzione tramite un pacchetto, [reindicizza l&#39;archivio](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
