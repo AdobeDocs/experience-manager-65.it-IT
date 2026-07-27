@@ -12,14 +12,14 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '5991'
+source-wordcount: '5721'
 ht-degree: 3%
 
 ---
 
 # Componenti per l’authoring delle pagine{#components-for-page-authoring}
 
-I seguenti componenti sono destinati all’utilizzo durante l’authoring di contenuti per una pagina web standard. I componenti costituiscono un sottoinsieme dei componenti pronti all’uso disponibili per un’installazione standard dell’AEM.
+I seguenti componenti sono destinati all’utilizzo durante l’authoring di contenuti per una pagina web standard. I componenti costituiscono un sottoinsieme dei componenti disponibili come predefiniti per un’installazione standard di AEM.
 
 Alcune sono immediatamente disponibili tramite la barra laterale, altre sono disponibili utilizzando la [modalità Progettazione](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md) per attivarle o disattivarle.
 
@@ -71,7 +71,7 @@ Con il componente Immagine adattiva è possibile utilizzare i file immagine con 
 
 >[!CAUTION]
 >
->&#42;&#42; I file GIF animati non sono supportati in AEM per le rappresentazioni adatte.
+>&#42;&#42; i file GIF animati non sono supportati in AEM per le rappresentazioni adatte.
 
 #### Dimensioni e qualità delle immagini {#images-sizes-and-quality}
 
@@ -98,31 +98,31 @@ La finestra di dialogo consente di modificare le proprietà dell’istanza del c
 
 * **Immagine**
 
-   * **Immagine**
-Trascina un&#39;immagine dal Finder del contenuto o fai clic per aprire una finestra di navigazione in cui puoi caricare un&#39;immagine. Una volta caricata l&#39;immagine, è possibile ritagliarla, ruotarla o eliminarla. Per ingrandire e ridurre l&#39;immagine, utilizzare la barra di scorrimento sotto l&#39;immagine (sopra i pulsanti OK e Annulla)
+  * **Immagine**
+    Trascina un&#39;immagine dal Finder del contenuto o fai clic per aprire una finestra di navigazione in cui puoi caricare un&#39;immagine. Una volta caricata l&#39;immagine, è possibile ritagliarla, ruotarla o eliminarla. Per ingrandire e ridurre l&#39;immagine, utilizzare la barra di scorrimento sotto l&#39;immagine (sopra i pulsanti OK e Annulla)
 
-   * **Ritaglio**
-Consente di ritagliare parti di un&#39;immagine. Trascinate il bordo per tagliare l&#39;immagine.
+  * **Ritaglio**
+    Consente di ritagliare parti di un&#39;immagine. Trascinate il bordo per tagliare l&#39;immagine.
 
-   * **Ruota**
-Fare clic su Ruota ripetutamente fino a quando l&#39;immagine non viene ruotata come desiderato.
+  * **Rotazione**
+    Fare clic su Ruota ripetutamente fino a quando l&#39;immagine non viene ruotata come desiderato.
 
-   * **Cancella**
-Rimuove l&#39;immagine corrente.
+  * **Cancella**
+    Rimuove l&#39;immagine corrente.
 
 * **Avanzate**
 
-   * **Titolo**
-Il componente Immagine adattiva non utilizza questa proprietà.
+  * **Titolo**
+    Il componente Immagine adattiva non utilizza questa proprietà.
 
-   * **Testo alternativo**
-Testo alternativo da utilizzare per l&#39;immagine.
+  * **Testo alternativo**
+    Testo alternativo da utilizzare per l&#39;immagine.
 
-   * **Collegamento A**
-Il componente Immagine adattiva non utilizza questa proprietà.
+  * **Collega a**
+    Il componente Immagine adattiva non utilizza questa proprietà.
 
-   * **Descrizione**
-Il componente Immagine adattiva non utilizza questa proprietà.
+  * **Descrizione**
+    Il componente Immagine adattiva non utilizza questa proprietà.
 
 #### Estensione del componente Immagine adattiva {#extending-the-adaptive-image-component}
 
@@ -146,54 +146,54 @@ Le proprietà sono disponibili in due schede:
 * **Carosello**
 Qui puoi specificare come funziona il carosello:
 
-   * Velocità di riproduzione
-Tempo in millisecondi prima della visualizzazione della diapositiva successiva.
-   * Tempo di transizione
-Tempo in millisecondi per la transizione tra due diapositive.
-   * Stile controlli
-Sono disponibili varie opzioni da un menu a discesa, ad esempio Pulsanti Prec/Successivo e Opzioni in alto a destra.
+  * Velocità di riproduzione
+    Tempo in millisecondi prima della visualizzazione della diapositiva successiva.
+  * Tempo di transizione
+    Tempo in millisecondi per la transizione tra due diapositive.
+  * Stile comandi
+    Sono disponibili varie opzioni da un menu a discesa, ad esempio Pulsanti Prec/Successivo e Opzioni in alto a destra.
 
 * **Elenco**
 Qui puoi specificare in che modo le pagine vengono incluse nel carosello:
 
-   * **Genera elenco con**
-Esistono diversi modi per creare un elenco di pagine: pagine figlie, elenco fisso, ricerca o ricerca avanzata (tutti descritti di seguito).
-Indipendentemente dal metodo scelto, le pagine incluse nell’elenco devono già avere un’immagine associata alla pagina. Questa immagine viene visualizzata nel carosello. Se non è presente alcuna immagine per una pagina nelle Proprietà pagina di tale pagina, è necessario associare un’immagine alla pagina prima di iniziare. In caso contrario, nel carosello viene visualizzata una pagina vuota. Consulta [Modifica delle proprietà di pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
-A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
+  * **Genera elenco con**
+    Esistono diversi modi per creare un elenco di pagine: pagine figlie, elenco fisso, ricerca o ricerca avanzata (tutti descritti di seguito).
+    Indipendentemente dal metodo scelto, le pagine incluse nell’elenco devono già avere un’immagine associata alla pagina. Questa immagine viene visualizzata nel carosello. Se non è presente alcuna immagine per una pagina nelle Proprietà pagina di tale pagina, è necessario associare un’immagine alla pagina prima di iniziare. In caso contrario, nel carosello viene visualizzata una pagina vuota. Consulta [Modifica delle proprietà di pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+    A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
 
-      * **Opzioni per pagine figlie**
+    * **Opzioni per pagine figlie**
 
-         * **Pagina padre**
-Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
+      * **Pagina padre**
+        Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
 
-      * **Opzioni per elenco fisso**
+    * **Opzioni per elenco fisso**
 
-         * **Pagine**
-Seleziona un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti Su/Giù per regolare l&#39;ordine.
+      * **Pagine**
+        Seleziona un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti Su/Giù per regolare l&#39;ordine.
 
-      * **Opzioni per la ricerca**
+    * **Opzioni per la ricerca**
 
-         * **Inizia tra**
-Immetti un percorso iniziale, manualmente o utilizzando il selettore.
+      * **Inizia tra**
+        Immetti un percorso iniziale, manualmente o utilizzando il selettore.
 
-         * **Query di ricerca**
-È possibile immettere una query di ricerca in testo normale.
+      * **Query di ricerca**
+        È possibile immettere una query di ricerca in testo normale.
 
-      * **Opzioni per la ricerca avanzata**
+    * **Opzioni per la ricerca avanzata**
 
-         * **Notazione predicato Querybuilder**
-È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
-Consulta [API QueryBuilder](/help/sites-developing/querybuilder-api.md) per informazioni complete sulle espressioni di query e altri esempi.
+      * **Notazione predicato Querybuilder**
+        È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
+        Per informazioni complete sulle espressioni di query e altri esempi, vedere [API QueryBuilder](/help/sites-developing/querybuilder-api.md).
 
-   * **Ordina per**
-Selezionare `jcr:title`, `jcr:created`, `cq:lastModified` o `cq:template` dal menu a discesa.
+  * **Ordina per**
+    Selezionare `jcr:title`, `jcr:created`, `cq:lastModified` o `cq:template` dal menu a discesa.
 
-   * **Limite**
-Facoltativo. Il numero massimo di elementi da utilizzare nel carosello.
+  * Limite **&#x200B;**
+    Facoltativo. Il numero massimo di elementi da utilizzare nel carosello.
 
 >[!NOTE]
 >
->Puoi creare un componente carosello personalizzato per Adobe Experience Manager che visualizzi le risorse digitali nel DAM AEM.
+>Puoi creare un componente carosello personalizzato per Adobe Experience Manager che visualizzi le risorse digitali in AEM DAM.
 
 ### Grafico {#chart}
 
@@ -201,22 +201,22 @@ Il componente Grafico consente di aggiungere un grafico a barre, a linee o a tor
 
 * **Dati**
 
-   * **Dati grafico**
-Immetti i dati del grafico utilizzando il formato CSV; il formato Valori separati da virgole utilizza le virgole (&quot;,&quot;) come separatore di campo.
+  * **Dati grafico**
+    Immetti i dati del grafico utilizzando il formato CSV; il formato Valori separati da virgole utilizza le virgole (&quot;,&quot;) come separatore di campo.
 
 * **Avanzate**
 
-   * **Tipo di grafico**
-Selezionare Grafico a torta, Grafico a linee e Grafico a barre.
+  * **Tipo di grafico**
+    Selezionare Grafico a torta, Grafico a linee e Grafico a barre.
 
-   * **Testo alternativo**
-Testo visualizzato al posto del grafico.
+  * **Testo alternativo**
+    Testo visualizzato al posto del grafico.
 
-   * **Larghezza**
-Larghezza del grafico in pixel.
+  * **Larghezza**
+    Larghezza del grafico in pixel.
 
-   * **Altezza**
-Altezza del grafico in pixel.
+  * **Altezza**
+    Altezza del grafico in pixel.
 
 Di seguito è riportato un esempio di dati del grafico seguito dal grafico a barre risultante:
 
@@ -224,7 +224,7 @@ Di seguito è riportato un esempio di dati del grafico seguito dal grafico a bar
 
 
 
-### Frammenti di contenuto {#content-fragment}
+### Frammento di contenuto {#content-fragment}
 
 >[!CAUTION]
 >
@@ -244,11 +244,11 @@ Il componente Scarica crea un collegamento nella pagina web selezionata per scar
 
 * **Download**
 
-   * **Descrizione**
-Breve descrizione visualizzata con il collegamento per il download.
+  * **Descrizione**
+    Breve descrizione visualizzata con il collegamento per il download.
 
-   * **File**
-Il file disponibile per il download nella pagina Web risultante. Trascina una risorsa dal Finder del contenuto o seleziona l’area in modo da poter caricare il file da rendere disponibile per il download.
+  * **File**
+    Il file disponibile per il download nella pagina Web risultante. Trascina una risorsa dal Finder del contenuto o seleziona l’area in modo da poter caricare il file da rendere disponibile per il download.
 
 L’esempio seguente mostra il componente Scarica in Geometrixx:
 
@@ -260,21 +260,21 @@ Il componente di integrazione dell&#39;applicazione esterna (**Esterno**) consen
 
 * **Esterno**
 
-   * **Applicazione di destinazione**
+  * **Applicazione di destinazione**
 
-     Specifica l’URL dell’applicazione web da integrare, ad esempio:
+    Specifica l’URL dell’applicazione web da integrare, ad esempio:
 
-     ```
-     https://en.wikipedia.org/wiki/Main_Page
-     ```
+    ```
+    https://en.wikipedia.org/wiki/Main_Page
+    ```
 
-   * **Parametri di passaggio**
+  * **Parametri di passaggio**
 
-     Seleziona la casella per i parametri da trasmettere all&#39;applicazione quando necessario.
+    Seleziona la casella per i parametri da trasmettere all&#39;applicazione quando necessario.
 
-   * **Larghezza e altezza**
+  * **Larghezza e altezza**
 
-     Definire la dimensione dell’iframe
+    Definire la dimensione dell’iframe
 
 L&#39;applicazione esterna è integrata nel sistema paragrafo della pagina AEM; ad esempio, quando si utilizza un&#39;applicazione Target di `https://en.wikipedia.org/wiki/Main_Page`:
 
@@ -286,17 +286,17 @@ L&#39;applicazione esterna è integrata nel sistema paragrafo della pagina AEM; 
 
 ### Flash {#flash}
 
-Il componente Flash consente di caricare un filmato del Flash. Puoi trascinare una risorsa flash dal Finder contenuto al componente, oppure puoi utilizzare la finestra di dialogo:
+Il componente Flash consente di caricare un filmato Flash. Puoi trascinare una risorsa flash dal Finder contenuto al componente, oppure puoi utilizzare la finestra di dialogo:
 
 * **Flash**
 
-   * **filmato Flash**
+  * **Filmato Flash**
 
-     Il file del filmato flash. Trascina una risorsa da Content Finder oppure fai clic su per aprire una finestra.
+    Il file del filmato flash. Trascina una risorsa da Content Finder oppure fai clic su per aprire una finestra.
 
-   * **Dimensione**
+  * **Dimensione**
 
-     Dimension in pixel dell&#39;area di visualizzazione che contiene il filmato.
+    Dimensioni in pixel dell&#39;area di visualizzazione contenente il filmato.
 
 * **Immagine alternativa**
 
@@ -304,25 +304,25 @@ Il componente Flash consente di caricare un filmato del Flash. Puoi trascinare u
 
 * **Avanzate**
 
-   * **Menu di scelta rapida**
+  * **Menu di scelta rapida**
 
-     Indica se visualizzare o nascondere il menu di scelta rapida.
+    Indica se visualizzare o nascondere il menu di scelta rapida.
 
-   * **Modalità finestra**
+  * **Modalità finestra**
 
-     Modalità di visualizzazione della finestra, ad esempio opaca, trasparente o come finestra distinta (solida).
+    Modalità di visualizzazione della finestra, ad esempio opaca, trasparente o come finestra distinta (solida).
 
-   * **Colore di sfondo**
+  * **Colore di sfondo**
 
-     Colore di sfondo selezionato dalla tabella colori fornita.
+    Colore di sfondo selezionato dalla tabella colori fornita.
 
-   * **Versione minima**
+  * **Versione minima**
 
-     La versione minima del Flash Player Adobe necessaria per eseguire il filmato. Il valore predefinito è 9.0.0.
+    La versione minima di Adobe Flash Player necessaria per eseguire il filmato. Il valore predefinito è 9.0.0.
 
-   * **Attributi**
+  * **Attributi**
 
-     Eventuali altri attributi richiesti.
+    Eventuali altri attributi richiesti.
 
 ### Immagine {#image}
 
@@ -340,7 +340,7 @@ Puoi caricare un’immagine, quindi modificarla e manipolarla (ad esempio ritagl
 >
 >Gli utenti di Internet Explorer devono caricare l&#39;immagine e fare clic su **Ok**, quindi riaprire l&#39;immagine per visualizzare il file caricato nell&#39;anteprima e per poter eseguire le modifiche (ovvero il ritaglio).
 >
->Consulta la sezione [Piattaforme certificate](/help/release-notes/release-notes.md#certifiedplatforms) per ulteriori informazioni sulle funzioni HTML5 utilizzate dall&#39;AEM.
+>Consulta la sezione [Piattaforme certificate](/help/release-notes/release-notes.md#certifiedplatforms) per ulteriori informazioni sulle funzioni di HTML5 utilizzate da AEM.
 
 Quando viene caricata un’immagine, puoi configurare quanto segue:
 
@@ -400,64 +400,64 @@ Il componente Elenco consente di configurare i criteri di ricerca per la visuali
 
 * **Elenco**
 
-   * **Genera elenco con**
+  * **Genera elenco con**
 
-     Qui si specifica dove l’elenco recupera il contenuto. Esistono diversi metodi:
+    Qui si specifica dove l’elenco recupera il contenuto. Esistono diversi metodi:
 
-   * A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
+  * A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
 
-      * **Opzioni per pagine figlie**
+    * **Opzioni per pagine figlie**
 
-         * **Elementi figlio di** (pagina padre)
-Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
+      * **Elementi figlio di** (pagina padre)
+        Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
 
-      * **Opzioni per elenco fisso**
+    * **Opzioni per elenco fisso**
 
-         * **Pagine**
+      * **Pagine**
 
-           Seleziona un elenco di pagine. Utilizza + per aggiungere altre voci e i pulsanti Su/Giù per regolare l’ordine.
+        Seleziona un elenco di pagine. Utilizza + per aggiungere altre voci e i pulsanti Su/Giù per regolare l’ordine.
 
-      * **Opzioni per la ricerca**
+    * **Opzioni per la ricerca**
 
-         * **Inizia tra**
+      * **Inizia tra**
 
-           Immetti un percorso iniziale, manualmente o utilizzando il selettore.
+        Immetti un percorso iniziale, manualmente o utilizzando il selettore.
 
-         * **Query di ricerca**
+      * **Query di ricerca**
 
-           È possibile immettere una query di ricerca in testo normale.
+        È possibile immettere una query di ricerca in testo normale.
 
-      * **Opzioni per la ricerca avanzata**
+    * **Opzioni per la ricerca avanzata**
 
-         * **Notazione predicato Querybuilder**
+      * **Notazione predicato Querybuilder**
 
-           È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
+        È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
 
-           Consulta [API QueryBuilder](/help/sites-developing/querybuilder-api.md) per informazioni complete sulle espressioni di query e altri esempi.
+        Consulta [API QueryBuilder](/help/sites-developing/querybuilder-api.md) per informazioni complete sulle espressioni di query e altri esempi.
 
-      * **Tag**
+    * **Tag**
 
-        Specifica la **pagina padre**, **tag/parole chiave** e i criteri di corrispondenza richiesti.
+      Specifica la **pagina padre**, **tag/parole chiave** e i criteri di corrispondenza richiesti.
 
-   * **Visualizza come**
+  * **Visualizza come**
 
-     Come desideri che gli elementi vengano elencati; include collegamenti, teaser e notizie.
+    Come desideri che gli elementi vengano elencati; include collegamenti, teaser e notizie.
 
-   * **Ordina per**
+  * **Ordina per**
 
-     Indica se l’elenco deve essere ordinato e, in tal caso, i criteri da utilizzare per l’ordinamento. Puoi inserire un criterio o selezionarne uno dall’elenco a discesa fornito.
+    Indica se l’elenco deve essere ordinato e, in tal caso, i criteri da utilizzare per l’ordinamento. Puoi inserire un criterio o selezionarne uno dall’elenco a discesa fornito.
 
-   * **Limite**
+  * **Limite**
 
-     Specifica il numero massimo di elementi da visualizzare nell’elenco.
+    Specifica il numero massimo di elementi da visualizzare nell’elenco.
 
-   * **Abilita feed**
+  * **Abilita feed**
 
-     Indica se per l&#39;elenco deve essere attivato un feed RSS.
+    Indica se per l&#39;elenco deve essere attivato un feed RSS.
 
-   * **Pagina dopo**
+  * **Pagina dopo**
 
-     Qui puoi specificare il numero di voci di elenco da visualizzare contemporaneamente. Un elenco con un numero di elementi superiore a quello specificato utilizza la paginazione per visualizzare l’elenco in diverse parti.
+    Qui puoi specificare il numero di voci di elenco da visualizzare contemporaneamente. Un elenco con un numero di elementi superiore a quello specificato utilizza la paginazione per visualizzare l’elenco in diverse parti.
 
 L&#39;esempio seguente mostra un componente **List** nel modo in cui può visualizzare un elenco di pagine figlie (la progettazione è controllata dalle definizioni CSS personalizzate di una progettazione del sito).
 
@@ -473,47 +473,47 @@ Puoi configurare:
 
 * Accesso
 
-   * Etichetta sezione
+  * Etichetta sezione
 
-     Testo lead-in per i campi di input.
+    Testo lead-in per i campi di input.
 
-   * Etichetta nome utente
+  * Etichetta nome utente
 
-     Testo per etichettare il campo del nome utente.
+    Testo per etichettare il campo del nome utente.
 
-   * Etichetta password
+  * Etichetta password
 
-     Testo per etichettare il campo password.
+    Testo per etichettare il campo password.
 
-   * Etichetta pulsante Accesso
+  * Etichetta pulsante Accesso
 
-     Testo per il pulsante di accesso.
+    Testo per il pulsante di accesso.
 
-   * Reindirizza a
+  * Reindirizza a
 
-     Puoi specificare la pagina del tuo sito web che deve essere aperta una volta che l’utente ha effettuato l’accesso.
+    Puoi specificare la pagina del tuo sito web che deve essere aperta una volta che l’utente ha effettuato l’accesso.
 
 * Accesso già effettuato
 
-   * Etichetta pulsante Continua
+  * Etichetta pulsante Continua
 
-     Testo per indicare che l&#39;utente ha già eseguito l&#39;accesso.
+    Testo per indicare che l&#39;utente ha già eseguito l&#39;accesso.
 
 ### Stato ordine {#order-status}
 
 * **Titolo**
 
-   * **Titolo**
+  * **Titolo**
 
-     Specificare il testo del titolo da visualizzare.
+    Specificare il testo del titolo da visualizzare.
 
-   * **Collegamento**
+  * **Collegamento**
 
-     Specifica la pagina (prodotto) per la quale visualizzare lo stato dell’ordine.
+    Specifica la pagina (prodotto) per la quale visualizzare lo stato dell’ordine.
 
-   * **Tipo/Dimensione**
+  * **Tipo/Dimensione**
 
-     Seleziona dalla selezione fornita.
+    Seleziona dalla selezione fornita.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -523,9 +523,9 @@ Il componente **Riferimento** consente di fare riferimento al testo da un&#39;al
 
 * **Riferimento paragrafo**
 
-   * **Riferimento**
+  * **Riferimento**
 
-     Specifica il percorso della pagina e del paragrafo a cui desideri fare riferimento (includi contenuto).
+    Specifica il percorso della pagina e del paragrafo a cui desideri fare riferimento (includi contenuto).
 
 Per specificare il percorso di un paragrafo, è necessario aggiungere al percorso (della pagina) i seguenti suffissi:
 
@@ -555,54 +555,54 @@ Puoi configurare:
 
 * Ricerca
 
-   * **Tipi di nodo**
+  * **Tipi di nodo**
 
-     Se la ricerca deve essere limitata a un tipo di nodo specifico, elencarli qui; ad esempio, `cq:Page`.
+    Se la ricerca deve essere limitata a un tipo di nodo specifico, elencarli qui; ad esempio, `cq:Page`.
 
-   * **Percorso di ricerca in**
+  * **Percorso di ricerca in**
 
-     Specifica la pagina principale del ramo in cui desideri eseguire la ricerca.
+    Specifica la pagina principale del ramo in cui desideri eseguire la ricerca.
 
-   * **Testo pulsante di ricerca**
+  * **Testo pulsante di ricerca**
 
-     Il nome visualizzato sul pulsante di ricerca effettivo.
+    Il nome visualizzato sul pulsante di ricerca effettivo.
 
-   * **Testo statistiche**
+  * **Testo statistiche**
 
-     Testo visualizzato sopra i risultati della ricerca.
+    Testo visualizzato sopra i risultati della ricerca.
 
-   * **Nessun testo risultati**
+  * **Nessun testo risultati**
 
-     Se non sono presenti risultati, viene visualizzato il testo immesso.
+    Se non sono presenti risultati, viene visualizzato il testo immesso.
 
-   * **Testo controllo ortografia**
+  * **Testo controllo ortografia**
 
-     Se qualcuno immette un termine simile, questo testo viene visualizzato prima del termine.
-Se ad esempio si digita `Geometrixxe`, verrà visualizzato il messaggio &quot;Si intende? Geometrixx&quot;.
+    Se qualcuno immette un termine simile, questo testo viene visualizzato prima del termine.
+    Se ad esempio si digita `Geometrixxe`, verrà visualizzato il messaggio &quot;Si intende? Geometrixx&quot;.
 
-   * **Testo pagine simili**
+  * **Testo pagine simili**
 
-     Testo visualizzato accanto a un risultato per pagine simili. Per ritagliare parte di un&#39;immagine, fare clic su questo collegamento.
+    Testo visualizzato accanto a un risultato per pagine simili. Per ritagliare parte di un&#39;immagine, fare clic su questo collegamento.
 
-   * **Testo ricerche correlate**
+  * **Testo ricerche correlate**
 
-     Testo visualizzato accanto alla ricerca di termini e argomenti correlati.
+    Testo visualizzato accanto alla ricerca di termini e argomenti correlati.
 
-   * **Testo tendenze ricerca**
+  * **Testo tendenze ricerca**
 
-     Il titolo sopra i termini di ricerca immessi da un utente.
+    Il titolo sopra i termini di ricerca immessi da un utente.
 
-   * **Etichetta pagine risultati**
+  * **Etichetta pagine risultati**
 
-     Testo visualizzato in fondo all&#39;elenco con collegamenti ad altre pagine dei risultati.
+    Testo visualizzato in fondo all&#39;elenco con collegamenti ad altre pagine dei risultati.
 
-   * **Etichetta precedente**
+  * **Etichetta precedente**
 
-     Il nome visualizzato sul collegamento alle pagine di ricerca precedenti.
+    Il nome visualizzato sul collegamento alle pagine di ricerca precedenti.
 
-   * **Etichetta successiva**
+  * **Etichetta successiva**
 
-     Nome visualizzato sul collegamento alle pagine di ricerca successive.
+    Nome visualizzato sul collegamento alle pagine di ricerca successive.
 
 Nell&#39;esempio seguente viene illustrato il componente Search dopo la ricerca della parola *`geometrixx`* dalla directory radice di un&#39;installazione standard. Illustra inoltre l’impaginazione dei risultati:
 
@@ -622,9 +622,9 @@ Se necessario, puoi configurare:
 
 * **Mappa del sito**
 
-   * **Percorso principale**
+  * **Percorso principale**
 
-     Percorso da cui deve iniziare l’inserzione.
+    Percorso da cui deve iniziare l’inserzione.
 
 ### Presentazione {#slideshow}
 
@@ -634,19 +634,19 @@ Puoi configurare:
 
 * **Diapositive**
 
-   * **Nuova diapositiva**
+  * **Nuova diapositiva**
 
-     È possibile specificare una selezione di diapositive utilizzando i pulsanti **Aggiungi** (e **Rimuovi**).
+    È possibile specificare una selezione di diapositive utilizzando i pulsanti **Aggiungi** (e **Rimuovi**).
 
-   * **Titolo**
+  * **Titolo**
 
-     Se necessario, specifica un titolo. Questo titolo è sovrapposto alla diapositiva appropriata.
+    Se necessario, specifica un titolo. Questo titolo è sovrapposto alla diapositiva appropriata.
 
 * **Avanzate**
 
-   * **Dimensione**
+  * **Dimensione**
 
-     Specifica la larghezza e l&#39;altezza in pixel.
+    Specifica la larghezza e l&#39;altezza in pixel.
 
 Il componente Presentazione visualizza quindi ogni diapositiva in sequenza, per un breve periodo di tempo, prima di passare alla diapositiva successiva:
 
@@ -658,7 +658,7 @@ Il componente Presentazione visualizza quindi ogni diapositiva in sequenza, per 
 >
 >Il componente **Tabella** è basato sull&#39;[Editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), così come il componente **[Testo](#text)**.
 >
->L&#39;Adobe consiglia di utilizzare il componente **Tabella** per le tabelle, anche se possono essere create anche con il componente **Testo**.
+>Adobe consiglia di utilizzare il componente **Tabella** per le tabelle, anche se possono essere create anche con il componente **Testo**.
 
 Il componente **Tabella** è preconfigurato per consentire la creazione, il riempimento e la formattazione di una tabella. La finestra di dialogo consente di configurare la tabella e crearne il contenuto da zero oppure copiando e incollando un foglio di calcolo o una tabella da un editor esterno, ad esempio Excel, OpenOffice o Blocco note.
 
@@ -679,7 +679,7 @@ Durante la configurazione del componente Tag cloud, puoi specificare:
 * **Tag da visualizzare**
 Da dove vengono raccolti i tag da visualizzare. Seleziona da una pagina, una pagina con tutti i tag secondari o tutti i tag.
 
-* **Pagina**
+* **pagina**
 Seleziona la pagina a cui fare riferimento.
 
 * **Nessun collegamento sui tag**
@@ -693,9 +693,9 @@ Per ulteriori informazioni sull&#39;applicazione dei tag, visitare [Utilizzo dei
 >
 >Il componente **Testo** è basato sul [Editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), così come il componente **[Tabella](#table)**.
 >
->L&#39;Adobe consiglia di utilizzare il componente **Tabella** per le tabelle, anche se possono essere create anche con il componente **Testo**.
+>Adobe consiglia di utilizzare il componente **Tabella** per le tabelle, anche se possono essere create anche con il componente **Testo**.
 
-Il componente Testo consente di immettere un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite dall&#39;[editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). Una selezione di icone consente di formattare il testo, incluse le caratteristiche dei caratteri, l&#39;allineamento, i collegamenti, gli elenchi e i rientri.
+Il componente Testo consente di immettere un blocco di testo utilizzando un editor di WYSIWYG, con le funzionalità fornite dall&#39;[editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). Una selezione di icone consente di formattare il testo, incluse le caratteristiche dei caratteri, l&#39;allineamento, i collegamenti, gli elenchi e i rientri.
 
 ![dc_text](assets/dc_text.png)
 
@@ -730,29 +730,29 @@ Puoi configurare:
 
   Consente di specificare quanto segue:
 
-   * **Risorsa immagine**
+  * **Risorsa immagine**
 
-     Carica l’immagine richiesta.
+    Carica l’immagine richiesta.
 
-   * **Titolo**
+  * **Titolo**
 
-     Titolo del blocco. Viene mostrato con il mouse sopra.
+    Titolo del blocco. Viene mostrato con il mouse sopra.
 
-   * **Testo alternativo**
+  * **Testo alternativo**
 
-     Testo alternativo da visualizzare se l’immagine non può essere visualizzata. Se lasciato vuoto, viene utilizzato il titolo.
+    Testo alternativo da visualizzare se l’immagine non può essere visualizzata. Se lasciato vuoto, viene utilizzato il titolo.
 
-   * **Collegamento a**
+  * **Collegamento a**
 
-     Specifica un percorso di destinazione.
+    Specifica un percorso di destinazione.
 
-   * **Descrizione**
+  * **Descrizione**
 
-     Descrizione dell&#39;immagine.
+    Descrizione dell&#39;immagine.
 
-   * **Dimensione**
+  * **Dimensione**
 
-     Imposta l&#39;altezza e la larghezza dell&#39;immagine.
+    Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 L’esempio seguente mostra un componente Immagine di testo che mostra l’immagine allineata a sinistra:
 
@@ -793,13 +793,13 @@ Dopo aver inserito un’istanza del componente nella pagina, puoi configurare qu
 
 * Video
 
-   * **Risorsa video**
+  * **Risorsa video**
 
-     Carica o rilascia la risorsa video.
+    Carica o rilascia la risorsa video.
 
-   * **Dimensione**
+  * **Dimensione**
 
-     La dimensione nativa del video (larghezza x altezza in pixel) viene visualizzata nelle caselle accanto a Dimensione (vedi sopra). Immetti manualmente le dimensioni di larghezza e altezza qui se desideri ignorare le dimensioni native del video. Selezionando **OK** la finestra di dialogo viene chiusa.
+    La dimensione nativa del video (larghezza x altezza in pixel) viene visualizzata nelle caselle accanto a Dimensione (vedi sopra). Immetti manualmente le dimensioni di larghezza e altezza qui se desideri ignorare le dimensioni native del video. Selezionando **OK** la finestra di dialogo viene chiusa.
 
 >[!NOTE]
 >
@@ -812,7 +812,7 @@ Dopo aver inserito un’istanza del componente nella pagina, puoi configurare qu
 
 ## Colonne {#columns}
 
-Le colonne sono un meccanismo per controllare il layout dei contenuti in AEM. In un’installazione standard, vengono forniti i componenti per la creazione di due e/o tre colonne.
+Le colonne sono un meccanismo per controllare il layout del contenuto in AEM. In un’installazione standard, vengono forniti i componenti per la creazione di due e/o tre colonne.
 
 Nell&#39;esempio seguente vengono illustrati i due componenti Columns e i tre componenti Columns in uso. Puoi utilizzare i segnaposto per i nuovi componenti:
 
@@ -832,9 +832,9 @@ Il componente Controllo colonna consente agli utenti di selezionare la modalità
 
 * **Controllo colonna**
 
-   * **Layout colonna**
+  * **Layout colonna**
 
-     Selezionare il numero di colonne di cui si desidera eseguire il rendering. Una volta creata, ogni colonna ha il proprio collegamento per trascinare componenti o risorse quando si aggiunge contenuto.
+    Selezionare il numero di colonne di cui si desidera eseguire il rendering. Una volta creata, ogni colonna ha il proprio collegamento per trascinare componenti o risorse quando si aggiunge contenuto.
 
 ## Modulo {#form}
 
@@ -884,7 +884,7 @@ Durante la configurazione di uno dei componenti del modulo, nella finestra di di
 
   Qui è possibile specificare se un campo è obbligatorio e inserire vincoli in tale campo, ad esempio numerici.
 
-* **Stile**
+* **Definizione dello stile**
 
   Indica le dimensioni e lo stile dei campi.
 
@@ -896,61 +896,61 @@ Queste schede forniscono i parametri necessari. Le schede dipendono dal singolo 
 
 * **Titolo e testo**
 
-   * **Nome elemento**
+  * **Nome elemento**
 
-     Nome dell’elemento modulo. Indica dove vengono memorizzati i dati nell’archivio.
-Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
+    Nome dell’elemento modulo. Indica dove vengono memorizzati i dati nell’archivio.
+    Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
 
-      * caratteri alfanumerici
-      * `_ . / : -`
+    * caratteri alfanumerici
+    * `_ . / : -`
 
-   * **Titolo**
+  * **Titolo**
 
-     Titolo visualizzato con il campo. Se questo campo viene lasciato vuoto, viene visualizzato il titolo predefinito.
+    Titolo visualizzato con il campo. Se questo campo viene lasciato vuoto, viene visualizzato il titolo predefinito.
 
-   * **Descrizione**
+  * **Descrizione**
 
-     Consente di fornire ulteriori informazioni all’utente, se necessario. Nel modulo questa descrizione viene visualizzata sotto il campo, con un carattere più piccolo del titolo.
+    Consente di fornire ulteriori informazioni all’utente, se necessario. Nel modulo questa descrizione viene visualizzata sotto il campo, con un carattere più piccolo del titolo.
 
-   * **Mostra/Nascondi**
+  * **Mostra/Nascondi**
 
-     Determina quando il campo è visibile.
+    Determina quando il campo è visibile.
 
 * **Valori iniziali**
 
-   * **Valore predefinito**
+  * **Valore predefinito**
 
-     Valore visualizzato nel campo all&#39;apertura del modulo. In altre parole, prima che l’utente abbia fornito qualsiasi input.
+    Valore visualizzato nel campo all&#39;apertura del modulo. In altre parole, prima che l’utente abbia fornito qualsiasi input.
 
 * **Vincoli**
 
-   * **Obbligatorio**
+  * **Obbligatorio**
 
-     Questo vincolo dipende dal tipo di componente modulo, ma fornisce una o più caselle di selezione per indicare che questo campo è obbligatorio oppure che alcune parti di questo campo sono obbligatorie.
+    Questo vincolo dipende dal tipo di componente modulo, ma fornisce una o più caselle di selezione per indicare che questo campo è obbligatorio oppure che alcune parti di questo campo sono obbligatorie.
 
-   * **Messaggio richiesto**
+  * **Messaggio richiesto**
 
-     Un messaggio per informare gli utenti che questo campo è obbligatorio. Un campo obbligatorio è contrassegnato da un asterisco.
+    Un messaggio per informare gli utenti che questo campo è obbligatorio. Un campo obbligatorio è contrassegnato da un asterisco.
 
-   * **Vincolo**
+  * **Vincolo**
 
-     I vincoli disponibili per la selezione dipendono dal tipo di componente modulo.
+    I vincoli disponibili per la selezione dipendono dal tipo di componente modulo.
 
-   * **Messaggio vincolo**
+  * **Messaggio vincolo**
 
-     Un messaggio per informare gli utenti di ciò che è necessario.
+    Un messaggio per informare gli utenti di ciò che è necessario.
 
-* **Stile**
+* **Definizione dello stile**
 
-   * **Dimensione**
+  * **Dimensione**
 
-     In righe e colonne.
+    In righe e colonne.
 
-   * **Larghezza**
+  * **Larghezza**
 
-     In pixel.
+    In pixel.
 
-   * **CSS**
+  * **CSS**
 
 ### Modulo (componente) {#form-component}
 
@@ -966,176 +966,176 @@ Questo componente necessario definisce l’inizio di un nuovo modulo su una pagi
 
 * **Modulo**
 
-   * **Pagina di ringraziamento**
+  * **Pagina di ringraziamento**
 
-     La pagina a cui fare riferimento per ringraziare i visitatori che hanno fornito il loro contributo. Se non specificato, il modulo viene visualizzato nuovamente dopo l&#39;invio.
+    La pagina a cui fare riferimento per ringraziare i visitatori che hanno fornito il loro contributo. Se non specificato, il modulo viene visualizzato nuovamente dopo l&#39;invio.
 
-   * **Avvia flusso di lavoro**
+  * **Avvia flusso di lavoro**
 
-     Determina quale flusso di lavoro viene attivato dopo l&#39;invio di un modulo.
+    Determina quale flusso di lavoro viene attivato dopo l&#39;invio di un modulo.
 
 * **Avanzate**
 
-   * **Tipo azione**
+  * **Tipo azione**
 
-     Un modulo richiede un&#39;azione. L’azione definisce l’operazione attivata per l’esecuzione con i dati inviati dall’utente (in modo simile a action= in HTML). Alcune richiedono una **Configurazione azione** corrispondente.
+    Un modulo richiede un&#39;azione. L’azione definisce l’operazione attivata per l’esecuzione con i dati inviati dall’utente (in modo simile a action= in HTML). Alcune richiedono una **Configurazione azione** corrispondente.
 
-     Una selezione di tipi di azione è inclusa in un impianto AEM standard:
+    In un’installazione standard di AEM è inclusa una selezione di tipi di azione:
 
-      * **Richiesta account**
-      * **Crea contenuto**
-      * **Crea lead**
-      * **Crea e aggiorna account**
-      * **Servizio di posta elettronica: crea sottoscrittore e aggiungi all&#39;elenco**
-      * **Servizio di posta elettronica: invia messaggio di risposta automatica**
-      * **Servizio di posta elettronica: annullamento sottoscrizione utente da elenco**
-      * **Modifica community**
-      * **Modifica risorse**
-      * **Modifica risorse controllate dal flusso di lavoro**
-      * **Posta**
-      * **Dettagli ordine inoltrato**
-      * **Aggiornamento profilo**
-      * **Reimposta password**
-      * **Imposta password**
-      * **Contenuto store**
+    * **Richiesta account**
+    * **Crea contenuto**
+    * **Crea lead**
+    * **Crea e aggiorna account**
+    * **Servizio di posta elettronica: crea sottoscrittore e aggiungi all&#39;elenco**
+    * **Servizio di posta elettronica: invia messaggio di risposta automatica**
+    * **Servizio di posta elettronica: annullamento sottoscrizione utente da elenco**
+    * **Modifica community**
+    * **Modifica risorse**
+    * **Modifica risorse controllate dal flusso di lavoro**
+    * **Posta**
+    * **Dettagli ordine inoltrato**
+    * **Aggiornamento profilo**
+    * **Reimposta password**
+    * **Imposta password**
+    * **Contenuto store**
 
-        Tipo di azione predefinito.
+      Tipo di azione predefinito.
 
-      * **Archivia contenuto con caricamenti**
-      * **Invia ordine**
-      * **Annulla sottoscrizione**
-      * **Aggiorna ordine**
+    * **Archivia contenuto con caricamenti**
+    * **Invia ordine**
+    * **Annulla sottoscrizione**
+    * **Aggiorna ordine**
 
-   * **Identificatore modulo**
+  * **Identificatore modulo**
 
-     L’identificatore del modulo identifica il modulo in modo univoco. Utilizza l’identificatore del modulo se in una singola pagina sono presenti più moduli; assicurati che abbiano identificatori diversi.
+    L’identificatore del modulo identifica il modulo in modo univoco. Utilizza l’identificatore del modulo se in una singola pagina sono presenti più moduli; assicurati che abbiano identificatori diversi.
 
-   * **Percorso di caricamento**
+  * **Percorso di caricamento**
 
-     Percorso delle proprietà del nodo utilizzato per caricare valori predefiniti nei campi modulo.
-Questo campo è facoltativo e specifica il percorso di un nodo nell’archivio. Se le proprietà di questo nodo corrispondono ai nomi dei campi, i campi appropriati del modulo vengono precaricati con il valore di tali proprietà. Se non esiste alcuna corrispondenza, il campo contiene il valore predefinito.
-Utilizzando **Percorso di caricamento** è possibile precaricare il modulo con i valori presenti nei campi obbligatori. Vedere [Precaricamento valori modulo](/help/sites-developing/developing-forms.md#preloading-form-values).
+    Percorso delle proprietà del nodo utilizzato per caricare valori predefiniti nei campi modulo.
+    Questo campo è facoltativo e specifica il percorso di un nodo nell’archivio. Se le proprietà di questo nodo corrispondono ai nomi dei campi, i campi appropriati del modulo vengono precaricati con il valore di tali proprietà. Se non esiste alcuna corrispondenza, il campo contiene il valore predefinito.
+    Utilizzando **Percorso di caricamento** è possibile precaricare il modulo con i valori presenti nei campi obbligatori. Vedere [Precaricamento dei valori del modulo](/help/sites-developing/developing-forms.md#preloading-form-values).
 
-   * **Convalida client**
+  * **Convalida client**
 
-     Indica se per questo modulo è necessaria la convalida del client (si verifica la convalida del server *always*). Convalida eseguita con il componente **Forms Captcha**.
+    Indica se per questo modulo è necessaria la convalida del client (si verifica la convalida del server *always*). Convalida eseguita con il componente **Forms Captcha**.
 
-   * **Tipo risorsa convalida**
+  * **Tipo risorsa convalida**
 
-     Definisce il tipo di risorsa di convalida del modulo se si desidera convalidare l&#39;intero modulo (anziché i singoli campi). Se si convalida il modulo completo, includere anche uno dei seguenti elementi:
+    Definisce il tipo di risorsa di convalida del modulo se si desidera convalidare l&#39;intero modulo (anziché i singoli campi). Se si convalida il modulo completo, includere anche uno dei seguenti elementi:
 
-      * Uno script per la convalida del client:
+    * Uno script per la convalida del client:
 
-        `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+      `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
-      * Uno script per la convalida sul lato server:
+    * Uno script per la convalida sul lato server:
 
-        `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+      `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-   * **Configurazione azione**
+  * **Configurazione azione**
 
-     Le opzioni disponibili in **Configurazione azione** dipendono dal **Tipo azione** selezionato:
+    Le opzioni disponibili in **Configurazione azione** dipendono dal **Tipo azione** selezionato:
 
-      * **Richiesta account**
+    * **Richiesta account**
 
-         * **Crea pagina account**
-Pagina utilizzata per la creazione di un account.
+      * **Crea pagina account**
+        Pagina utilizzata per la creazione di un account.
 
-      * **Crea contenuto**
+    * **Crea contenuto**
 
-         * Percorso contenuto
+      * Percorso contenuto
 Percorso del contenuto per qualsiasi contenuto sottoposto a dump dal modulo. Immettere un percorso che termina con una barra `/`. La barra indica che per ogni porta del modulo viene creato un nuovo nodo nella posizione specificata, ad esempio:
-           `/forms/feedback/`
+        `/forms/feedback/`
 
-         * **Tipo**
+      * **Tipo**
 
-           Seleziona il tipo richiesto.
+        Seleziona il tipo richiesto.
 
-         * **Modulo**
+      * **Modulo**
 
-           Specifica il modulo.
+        Specifica il modulo.
 
-         * **Rendering con**
+      * **Rendering con**
 
-           Seleziona l’opzione desiderata dall’elenco.
+        Seleziona l’opzione desiderata dall’elenco.
 
-         * **Tipo risorsa**
+      * **Tipo risorsa**
 
-           Se impostato, viene aggiunto a ogni commento come `sling:resourceType`
+        Se impostato, viene aggiunto a ogni commento come `sling:resourceType`
 
-         * **Selettore visualizzazione**
+      * **Selettore visualizzazione**
 
-      * **Crea lead**
+    * **Crea lead**
 
-         * **Lead verrà aggiunto a questo elenco**
-Specifica l’elenco di lead richiesto.
+      * **Il lead verrà aggiunto a questo elenco**
+        Specifica l’elenco di lead richiesto.
 
-      * **Crea e aggiorna account**
+    * **Crea e aggiorna account**
 
-         * **Gruppo iniziale**
+      * **Gruppo iniziale**
 
-           Gruppo a cui assegnare il nuovo utente.
+        Gruppo a cui assegnare il nuovo utente.
 
-         * **Home**
+      * **Home**
 
-           Pagina da visualizzare dopo l’accesso riuscito.
+        Pagina da visualizzare dopo l’accesso riuscito.
 
-         * **Percorso**
+      * **Percorso**
 
-           Percorso (relativo) in cui viene creato e memorizzato il nuovo account.
+        Percorso (relativo) in cui viene creato e memorizzato il nuovo account.
 
-         * **Visualizza dati...**
+      * **Visualizza dati...**
 
-           Selezionare il pulsante per accedere alle informazioni sui risultati del modulo nell&#39;Editor collettivo. Da qui è possibile esportare le informazioni in un file `.tsv` (separato da tabulazioni) (per l&#39;utilizzo, ad esempio, in un foglio di calcolo Excel).
+        Selezionare il pulsante per accedere alle informazioni sui risultati del modulo nell&#39;Editor collettivo. Da qui è possibile esportare le informazioni in un file `.tsv` (separato da tabulazioni) (per l&#39;utilizzo, ad esempio, in un foglio di calcolo Excel).
 
-      * **Posta**
+    * **Posta**
 
-         * **Da**
+      * **Da**
 
-           Immetti l’indirizzo e-mail da cui deve provenire l’e-mail.
+        Immetti l’indirizzo e-mail da cui deve provenire l’e-mail.
 
-         * **Invia a**
+      * **Invia a**
 
-           Immetti uno o più indirizzi e-mail a cui viene inviato il modulo.
+        Immetti uno o più indirizzi e-mail a cui viene inviato il modulo.
 
-         * **CC**
+      * **CC**
 
-           Immetti uno o più indirizzi e-mail CC.
+        Immetti uno o più indirizzi e-mail CC.
 
-         * **CCN**
+      * **CCN**
 
-           Immettere uno o più indirizzi e-mail Ccn.
+        Immettere uno o più indirizzi e-mail Ccn.
 
-         * **Oggetto**
+      * **Oggetto**
 
-           Immetti un oggetto per l’e-mail.
+        Immetti un oggetto per l’e-mail.
 
-      * **Reimposta password**
+    * **Reimposta password**
 
-         * **Pagina modifica password**
+      * **Pagina modifica password**
 
-           Pagina utilizzata per modificare la password.
+        Pagina utilizzata per modificare la password.
 
-      * **Contenuto store**
+    * **Contenuto store**
 
-         * **Percorso contenuto**
+      * **Percorso contenuto**
 
-           Percorso del contenuto per qualsiasi contenuto sottoposto a dump dal modulo. Immettere un percorso che termina con una barra `/`. La barra indica che per ogni porta del modulo viene creato un nuovo nodo nella posizione specificata, ad esempio:
-           `/forms/feedback/`
+        Percorso del contenuto per qualsiasi contenuto sottoposto a dump dal modulo. Immettere un percorso che termina con una barra `/`. La barra indica che per ogni porta del modulo viene creato un nuovo nodo nella posizione specificata, ad esempio:
+        `/forms/feedback/`
 
-         * **Visualizza dati...**
+      * **Visualizza dati...**
 
-           Selezionare il pulsante per accedere alle informazioni sui risultati del modulo nell&#39;Editor collettivo. Da qui è possibile esportare le informazioni in un file .tsv (separato da tabulazioni), ad esempio in un foglio di calcolo Excel.
+        Selezionare il pulsante per accedere alle informazioni sui risultati del modulo nell&#39;Editor collettivo. Da qui è possibile esportare le informazioni in un file .tsv (separato da tabulazioni), ad esempio in un foglio di calcolo Excel.
 
-      * **Archivia Contenuto Con Caricamenti**
+    * **Archivia Contenuto Con Caricamenti**
 
-        Ha le stesse opzioni di **Contenuto store**.
+      Ha le stesse opzioni di **Contenuto store**.
 
-      * **Annulla sottoscrizione**
+    * **Annulla sottoscrizione**
 
-         * **Lead verrà eliminato da questo elenco**
+      * **Lead verrà eliminato da questo elenco**
 
-           Specifica l’elenco di lead richiesto.
+        Specifica l’elenco di lead richiesto.
 
 #### Fine del modulo {#end-of-form}
 
@@ -1143,29 +1143,29 @@ Contrassegna la fine del modulo. Puoi configurare quanto segue:
 
 * **Fine modulo**
 
-   * **Mostra pulsante di invio**
+  * **Mostra pulsante di invio**
 
-     Indica se deve essere visualizzato o meno un pulsante Invia.
+    Indica se deve essere visualizzato o meno un pulsante Invia.
 
-   * **Invia nome**
+  * **Invia nome**
 
-     Un identificatore se in un modulo si utilizzano più pulsanti di invio.
+    Un identificatore se in un modulo si utilizzano più pulsanti di invio.
 
-   * **Invia titolo**
+  * **Invia titolo**
 
-     Nome visualizzato sul pulsante, ad esempio Invia o Invia.
+    Nome visualizzato sul pulsante, ad esempio Invia o Invia.
 
-   * **Mostra pulsante Ripristina**
+  * **Mostra pulsante Ripristina**
 
-     Selezionando la casella di controllo, il pulsante Reimposta diventa visibile.
+    Selezionando la casella di controllo, il pulsante Reimposta diventa visibile.
 
-   * **Reimposta titolo**
+  * **Reimposta titolo**
 
-     Il nome visualizzato sul pulsante Reimposta.
+    Il nome visualizzato sul pulsante Reimposta.
 
-   * **Descrizione**
+  * **Descrizione**
 
-     Informazioni visualizzate sotto il pulsante.
+    Informazioni visualizzate sotto il pulsante.
 
 ### Nome account {#account-name}
 
@@ -1181,7 +1181,7 @@ Consente di aggiungere un campo indirizzo internazionale con il seguente formato
 
 Il componente è configurato per l’uso immediato, ma puoi modificare la configurazione, se necessario. Ad esempio, è possibile aggiungere vincoli per i singoli elementi dell&#39;indirizzo. Lasciare vuoti i campi significa che vengono utilizzate le impostazioni predefinite.
 
-### Captcha {#captcha}
+### CAPTCHA {#captcha}
 
 Il componente Captcha richiede che l’utente digiti una stringa alfanumerica come visualizzato sullo schermo. La stringa cambia con ogni aggiornamento.
 
@@ -1314,19 +1314,19 @@ Puoi specificare vari parametri, inclusi gli spazi dei nomi che possono essere u
 
 * **Campo tag**
 
-   * **Spazi dei nomi consentiti**
+  * **Spazi dei nomi consentiti**
 
-      * **Geometrixx Outdoors**
-      * **Flusso di lavoro**
-      * **Forum**
-      * **Foto d&#39;archivio**
-      * **Geometrixx Media**
-      * **Tag standard**
-      * **Marketing**
-      * **Proprietà risorsa**
+    * **Geometrixx Outdoors**
+    * **Flusso di lavoro**
+    * **Forum**
+    * **Foto d&#39;archivio**
+    * **Geometrixx Medie**
+    * **Tag standard**
+    * **Marketing**
+    * **Proprietà risorsa**
 
-   * **Larghezza in pixel**
-   * **Dimensione popup**
+  * **Larghezza in pixel**
+  * **Dimensione popup**
 
 ### Campo testo {#text-field}
 

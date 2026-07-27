@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 2%
+source-wordcount: '1622'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +33,7 @@ Per impostazione predefinita, i componenti di Forms portal non sono disponibili 
 
 **I predicati di Document Services** includono i componenti predicato data, predicato full-text, predicato proprietà e predicato tag. Questi componenti vengono utilizzati per configurare la ricerca nel componente Ricerca ed elenco.
 
-Una volta abilitate in una pagina dei siti AEM, queste categorie di componenti sono disponibili per l’utilizzo nel browser Componenti.
+Una volta abilitate in una pagina di AEM Sites, queste categorie di componenti sono disponibili per l’utilizzo nel browser Componenti.
 
 ![Componenti del portale AEM Forms nel browser componenti](assets/component-categories.png)
 
@@ -67,7 +67,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
 <table>
  <tbody>
   <tr>
-   <th>Linguetta</th>
+   <th>Scheda</th>
    <th>Configurazione</th>
    <th>Descrizione</th>
   </tr>
@@ -93,7 +93,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   </tr>
   <tr>
    <td> </td>
-   <td>Disattiva ricerca testo</td>
+   <td>Disabilita ricerca testuale</td>
    <td>Quando è attivata, nasconde la barra di ricerca full-text.</td>
   </tr>
   <tr>
@@ -119,7 +119,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   <tr>
    <td><span class="uicontrol"><strong>Collegamento modulo</strong></code></td>
    <td>Tipo di rendering</td>
-   <td>Controlla l'elenco dei moduli in base al tipo di rendering specificato. Le opzioni disponibili sono PDF e HTML. Ad esempio, se selezioni solo HTML come tipo di rendering, i PDF forms vengono filtrati.</td>
+   <td>Controlla l'elenco dei moduli in base al tipo di rendering specificato. Le opzioni disponibili sono PDF e HTML. Ad esempio, se selezioni solo HTML come tipo di rendering, il PDF forms viene filtrato.</td>
   </tr>
   <tr>
    <td> </td>
@@ -128,7 +128,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   </tr>
   <tr>
    <td> </td>
-   <td>Invia URL</td>
+   <td>URL di invio</td>
    <td><p>Configura un servlet in cui vengono inviati i dati del modulo.</p> <p><strong>Nota:</strong> <em>È possibile specificare l'URL di invio di un modulo in più posizioni e il relativo ordine di precedenza è il seguente:</em></p>
     <ol>
      <li><em>L’URL di invio incorporato nel modulo (nel pulsante Invia ) ha la priorità più alta.</em></li>
@@ -144,7 +144,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   <tr>
    <td> </td>
    <td>Descrizione comando azione rendering PDF</td>
-   <td>Configura il testo per la descrizione, visualizzata quando si passa il puntatore del mouse su <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (icona PDF).</td>
+   <td>Configura il testo per la descrizione, visualizzata quando si passa il puntatore del mouse su <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (icona di PDF).</td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Stile</strong></code></td>
@@ -153,7 +153,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   </tr>
   <tr>
    <td> </td>
-   <td>Percorso stile personalizzato</td>
+   <td>Percorso stili personalizzati</td>
    <td>Se hai selezionato Personalizzato come Tipo di stile, cerca il percorso del CSS personalizzato, altrimenti seleziona Predefinito.</td>
   </tr>
  </tbody>
@@ -260,6 +260,6 @@ Il portale dei moduli fornisce azioni di rendering pronte all’uso. È possibil
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](/help/forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](/help/forms/using/draft-submission-component.md)
-* [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizzazione dei modelli per i componenti del portale Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Esempio di integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
+* [Personalizzazione dei modelli per i componenti del portale dei moduli](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)

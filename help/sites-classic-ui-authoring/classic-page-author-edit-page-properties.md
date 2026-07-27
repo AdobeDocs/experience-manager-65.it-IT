@@ -11,8 +11,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 20%
+source-wordcount: '766'
+ht-degree: 19%
 
 ---
 
@@ -36,13 +36,13 @@ Le proprietà sono distribuite in diverse schede:
 
   Qui puoi aggiungere o rimuovere i tag dalla pagina aggiornando l’elenco nella casella di selezione:
 
-   * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
-   * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
+  * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
+  * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
 
-     Il nuovo tag verrà effettivamente creato quando premi Invio. Il nuovo tag verrà quindi visualizzato in una casella, con una piccola stella a destra che indica che si tratta di un nuovo tag.
+    Il nuovo tag verrà effettivamente creato quando premi Invio. Il nuovo tag verrà quindi visualizzato in una casella, con una piccola stella a destra che indica che si tratta di un nuovo tag.
 
-   * Con l’elenco a discesa puoi selezionare uno dei tag esistenti.
-   * Quando si passa il mouse su una voce di tag nel riquadro di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere il tag per la pagina.
+  * Con l’elenco a discesa puoi selezionare uno dei tag esistenti.
+  * Quando si passa il mouse su una voce di tag nel riquadro di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere il tag per la pagina.
 
 * **Nascondi in navigazione**
 
@@ -93,7 +93,7 @@ Le proprietà sono distribuite in diverse schede:
 
   Indica se desideri che la pagina utilizzi il Vanity URL.
 
-### Avanzate  {#advanced}
+### Avanzate {#advanced}
 
 * **Lingua**
 
@@ -131,19 +131,19 @@ Le proprietà sono distribuite in diverse schede:
 
   Specifica una configurazione di esportazione.
 
-### Miniatura  {#thumbnail}
+### Miniatura {#thumbnail}
 
 * **Miniatura pagina**
 
   Mostra l&#39;immagine di anteprima della pagina. Operazioni disponibili:
 
-   * **Genera anteprima**
+  * **Genera anteprima**
 
-     Genera un’anteprima della pagina da utilizzare come miniatura.
+    Genera un’anteprima della pagina da utilizzare come miniatura.
 
-   * **Carica immagine**
+  * **Carica immagine**
 
-     Carica un&#39;immagine da usare come miniatura.
+    Carica un&#39;immagine da usare come miniatura.
 
 ### Servizi cloud {#cloud-services}
 
@@ -157,7 +157,7 @@ Le proprietà sono distribuite in diverse schede:
 
   Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Autorizzazioni   {#permissions}
+### Autorizzazioni {#permissions}
 
 * **Autorizzazioni** (interfaccia touch)
 
@@ -169,13 +169,13 @@ Le proprietà sono distribuite in diverse schede:
 
   Definisci le proprietà per una pagina blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Livecopy**
 
   Definisci le proprietà per una pagina Live Copy nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito  {#site-structure}
+### Struttura sito {#site-structure}
 
 * Fornisci i collegamenti alle pagine che forniscono funzionalità a livello di sito, ad esempio **Pagina registrazione**, **Pagina offline**.
 

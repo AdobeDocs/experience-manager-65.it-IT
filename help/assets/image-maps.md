@@ -8,8 +8,8 @@ exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 2%
+source-wordcount: '273'
+ht-degree: 3%
 
 ---
 
@@ -45,4 +45,4 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamenti iper
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Se l&#39;opzione Dynamic Medie è abilitata, accedi all&#39;editor risorse e fai clic su **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.
+   Se l&#39;opzione Dynamic Media è abilitata, accedi all&#39;editor risorse e fai clic su **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.

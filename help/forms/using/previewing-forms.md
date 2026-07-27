@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 5%
+source-wordcount: '417'
+ht-degree: 9%
 
 ---
 
@@ -39,14 +39,14 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
   </tr>
   <tr>
    <td>Modulo PDF</td>
-   <td>Anteprima e anteprima PDF con dati<br /> </td>
+   <td>Anteprima PDF con dati<br /> </td>
   </tr>
   <tr>
    <td>modulo adattivo</td>
    <td>Anteprima HTML e Anteprima HTML con dati</td>
   </tr>
   <tr>
-   <td>Modello modulo</td>
+   <td>Modello per moduli</td>
    <td>Anteprima PDF, Anteprima PDF con dati, Anteprima HTML, Anteprima HTML con dati<br /> </td>
   </tr>
  </tbody>

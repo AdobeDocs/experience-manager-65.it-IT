@@ -1,6 +1,6 @@
 ---
-title: Best practice per i moduli HTML5
-description: Ottimizza le prestazioni del tuo Forms HTML5 basato su XFA.
+title: Best practice per moduli HTML5
+description: Ottimizza le prestazioni del Forms HTML5 basato su XFA.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
@@ -12,29 +12,29 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 0%
+source-wordcount: '1468'
+ht-degree: 1%
 
 ---
 
-# Best practice per i moduli HTML5{#best-practices-for-html-forms}
+# Best practice per moduli HTML5{#best-practices-for-html-forms}
 
 ## Panoramica {#overview}
 
-AEM Forms dispone di un componente denominato HTML5 forms. Consente di eseguire il rendering dei PDF forms basati su XFA esistenti (file XDP) in formato HTML5. Questo documento fornisce linee guida e raccomandazioni per ridurre il tempo di caricamento e migliorare le prestazioni dei moduli HTML5 sui dispositivi mobili.
+AEM Forms dispone di un componente denominato HTML5 forms. Consente di eseguire il rendering dei PDF forms basati su XFA (file XDP) esistenti in formato HTML5. Questo documento fornisce linee guida e raccomandazioni per ridurre il tempo di caricamento e migliorare le prestazioni dei moduli HTML5 sui dispositivi mobili.
 
-La maggior parte dei dispositivi mobili ha una potenza di elaborazione e funzionalità di memoria limitate. Consente di migliorare il tempo di standby dei dispositivi mobili. I browser web in esecuzione su un dispositivo mobile hanno accesso a risorse limitate (memoria e funzionalità di elaborazione limitate). Una volta raggiunto il limite, il comportamento del browser diventa lento. Questo documento fornisce consigli per mantenere la dimensione di un modulo HTML5 sotto controllo. Un modulo più piccolo non supera i limiti di memoria e di potenza di elaborazione di un dispositivo e offre un’esperienza fluida.
+La maggior parte dei dispositivi mobili ha una potenza di elaborazione e funzionalità di memoria limitate. Consente di migliorare il tempo di standby dei dispositivi mobili. I browser web in esecuzione su un dispositivo mobile hanno accesso a risorse limitate (memoria e funzionalità di elaborazione limitate). Una volta raggiunto il limite, il comportamento del browser diventa lento. Questo documento fornisce consigli per controllare le dimensioni di un modulo HTML5. Un modulo più piccolo non supera i limiti di memoria e di potenza di elaborazione di un dispositivo e offre un’esperienza fluida.
 
 Anche se le raccomandazioni discusse in questo articolo sono mirate ai moduli HTML5, questi sono ugualmente applicabili ai PDF forms basati su XFA. Queste best practice contribuiscono collettivamente alle prestazioni complessive dei moduli HTML5. Richiede un&#39;attenta pianificazione per sviluppare forme efficienti e produttive. Iniziamo:
 
-## I nodi sono la valuta dei moduli HTML5, spendili con saggezza {#nodes-are-currency-of-html-forms-spend-them-wisely}
+## I nodi sono la valuta dei moduli HTML5, spenderli con saggezza {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
 In genere, un modulo XFA ha più elementi. Ad esempio, tabella, campo di testo e immagini. Ogni elemento ha diverse proprietà per controllarne il comportamento e l&#39;aspetto. Quando si esegue il rendering di un modulo XFA in formato HTML5, tutti gli elementi XFA e le proprietà corrispondenti vengono convertiti in nodi DOM Model o HTML. Questi nodi aumentano le dimensioni e la complessità di un DOM. Rendere il rendering del modulo HTML5 più lento.
 
 Per i browser è più semplice eseguire il rendering di un DOM più semplice. Pertanto, puoi eseguire le seguenti ottimizzazioni su un modulo XFA per ridurre il numero di nodi. Pertanto, genera una struttura DOM snella:
 
 * Utilizzare la proprietà caption per aggiungere un&#39;etichetta a un campo. Non utilizzare un elemento di testo separato per aggiungere un&#39;etichetta. Aiuta a ridurre il peso, portando a un aumento delle prestazioni. Consente inoltre di evitare problemi di layout.
-* Mantenere al minimo il numero di elementi di testo di Draw in un modulo. Gli elementi di Draw sono utili per migliorare la leggibilità e l’aspetto, ma non dispongono di funzionalità di archiviazione delle informazioni. È consigliabile unire più elementi di testo di Draw in un singolo elemento di testo di Draw. Non lasciate nulla di intentato per rendere la forma più snella.
+* Ridurre al minimo il numero di elementi di testo da disegnare in un modulo. Gli elementi di disegno sono utili per migliorare la leggibilità e l&#39;aspetto, ma non dispongono di alcuna funzionalità di memorizzazione delle informazioni. Si consiglia di unire più elementi di testo Draw in un singolo elemento di testo Draw. Non lasciate nulla di intentato per rendere la forma più snella.
 
 ## I moduli Lite offrono prestazioni migliori, mantenendo le risorse compresse {#lite-forms-perform-better-keep-the-resources-compressed}
 
@@ -50,13 +50,13 @@ Pertanto, ridurre le dimensioni delle risorse esterne e utilizzare solo le risor
 
 Un modulo HTML5 può contenere centinaia di pagine. Il caricamento di un modulo con un numero elevato di campi nel browser è lento. È possibile eseguire le seguenti ottimizzazioni su un modulo XFA per ottimizzare i moduli con un numero elevato di campi e pagine:
 
-* Valutare la suddivisione dei moduli di grandi dimensioni in più moduli. È inoltre possibile utilizzare un set di moduli per raggruppare tutti i moduli più piccoli e presentarli come un&#39;unica unità. Un set di moduli carica solo i moduli richiesti. Inoltre, in un set di moduli è possibile configurare campi comuni in moduli diversi per condividere associazioni di dati. Le associazioni di dati consentono agli utenti di compilare le informazioni comuni una sola volta; le informazioni vengono compilate automaticamente nei moduli successivi, determinando miglioramenti sostanziali delle prestazioni. Per ulteriori dettagli sui set di moduli, vedere [Set di moduli nei moduli AEM](https://helpx.adobe.com/it/aem-forms/6-3/formset-in-aem-forms.html).
+* Valutare la suddivisione dei moduli di grandi dimensioni in più moduli. È inoltre possibile utilizzare un set di moduli per raggruppare tutti i moduli più piccoli e presentarli come un&#39;unica unità. Un set di moduli carica solo i moduli richiesti. Inoltre, in un set di moduli è possibile configurare campi comuni in moduli diversi per condividere associazioni di dati. Le associazioni di dati consentono agli utenti di compilare le informazioni comuni una sola volta; le informazioni vengono compilate automaticamente nei moduli successivi, determinando miglioramenti sostanziali delle prestazioni. Per ulteriori dettagli sui set di moduli, vedere [Set di moduli in AEM Forms](https://helpx.adobe.com/it/aem-forms/6-3/formset-in-aem-forms.html).
 * È consigliabile suddividere le sezioni e spostare ogni sezione in una pagina diversa. I moduli HTML5 caricano dinamicamente ogni pagina nella richiesta di scorrimento delle pagine. Nella memoria vengono memorizzate solo le pagine scorrevoli (la pagina visualizzata e le pagine precedenti); le altre pagine vengono caricate su richiesta. La suddivisione e lo spostamento di una sezione in una pagina specifica riduce il tempo necessario per caricare un modulo. È inoltre possibile utilizzare la prima pagina del modulo come pagina di destinazione. È simile al sommario di un libro. Una pagina di destinazione del modulo contiene solo collegamenti alle altre sezioni del modulo. Migliora in modo significativo il tempo di caricamento della prima pagina del modulo e consente di migliorare l’esperienza utente.
 * Per impostazione predefinita, le sezioni condizionali vengono nascoste. Rendi visibili queste sezioni solo quando viene soddisfatta una determinata condizione. Consente di ridurre al minimo le dimensioni del DOM. È inoltre possibile utilizzare la navigazione a schede per visualizzare una sola sezione alla volta.
 
 ## Meno è di più, riduci il numero di pagine {#less-is-more-reduce-the-number-of-pages}
 
-I moduli HTML5 possono contenere campi basati su dati (tabelle e sottomaschere). Questi campi consentono di espandere le dimensioni del modulo in fase di esecuzione. Una tabella basata sui dati in un modulo di HTML5 può ad esempio estendersi su migliaia di righe. Tali tabelle possono causare il deterioramento del layout e delle prestazioni. Le ottimizzazioni suggerite di seguito possono essere utili per ridurre il tempo di caricamento dei moduli HTML5 con campi basati su dati:
+I moduli HTML5 possono contenere campi basati su dati (tabelle e sottomoduli). Questi campi consentono di espandere le dimensioni del modulo in fase di esecuzione. Ad esempio, una tabella basata sui dati in un modulo di HTML5 può estendersi su migliaia di righe. Tali tabelle possono causare il deterioramento del layout e delle prestazioni. Le ottimizzazioni suggerite di seguito consentono di ridurre il tempo di caricamento dei moduli HTML5 con campi basati sui dati:
 
 * Utilizza gli script XFA per ottenere una navigazione impaginata per visualizzare campi basati su dati (tabelle e sottomaschere). Nella navigazione impaginata, in una pagina vengono visualizzati solo dati specifici. Limita l’operazione di disegno del browser ai campi visualizzati in una sola volta e semplifica la navigazione in un modulo. Inoltre, gli utenti dei dispositivi mobili sono interessati solo a un sottoinsieme di dati. Consente di fornire un’esperienza utente ottimale e di ridurre il tempo necessario per caricare i dati richiesti. Si ottengono due soluzioni al prezzo di una.  Inoltre, la navigazione impaginata non è disponibile come funzionalità integrata. Puoi utilizzare gli script XFA per sviluppare la navigazione a pagina.
 
@@ -69,16 +69,16 @@ Un modulo XFA può avere un numero elevato di sezioni dedicate solo al documento
 
 ## Letture consigliate  {#recommended-reads}
 
-I moduli di Adobe Experience Manager (AEM) possono aiutarti a trasformare transazioni complesse in esperienze digitali semplici e deliziose. Tuttavia, esso richiede uno sforzo concertato per sviluppare forme efficienti e produttive. Oltre a HTML5 Forms, ecco alcune best practice per l’AEM generali:
+I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e straordinarie. Tuttavia, esso richiede uno sforzo concertato per sviluppare forme efficienti e produttive. Oltre a HTML5 Forms, di seguito sono riportate alcune indicazioni consigliate per le best practice generali di AEM:
 
-* [Best practice per l’implementazione e la manutenzione dell’AEM](/help/sites-deploying/best-practices.md)
+* [Best practice per la distribuzione e la manutenzione di AEM](/help/sites-deploying/best-practices.md)
 * [Best practice per l’authoring dei contenuti](/help/sites-authoring/best-practices.md)
-* [Best practice per la somministrazione dell’AEM](/help/sites-administering/administer-best-practices.md)
+* [Best practice per l’amministrazione di AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practice per lo sviluppo di soluzioni](/help/sites-developing/best-practices.md)
 * [Best practice per l’utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md)
-* [Il server AEM Forms non incorpora tipi di carattere in un modulo Dynamic PDF](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
+* [Il server AEM Forms non incorpora font in un modulo Dynamic PDF](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Scheda di riferimento rapido {#quick-reference-card}
 
 È possibile stampare la seguente scheda (fare clic sulla scheda per scaricare una versione ad alta risoluzione) e tenerla sulla scrivania per un riferimento rapido:
-[![Scheda di riferimento rapido sulle best practice per Forms di HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![Scheda di riferimento rapido sulle best practice di HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

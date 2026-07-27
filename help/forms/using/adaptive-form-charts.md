@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '1956'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Vediamo ora come aggiungere e configurare il componente Grafico:
 
 ## Aggiungi grafico {#add-chart}
 
-Per impostazione predefinita, il componente Grafico è disponibile nella barra laterale dell’AEM. In modalità di authoring, puoi trascinare il componente Grafico dalla barra laterale AEM al modulo o al documento adattivo. Quando rilasci il componente, questo crea un segnaposto per un grafico.
+Per impostazione predefinita, il componente Grafico è disponibile nella barra laterale di AEM. In modalità di authoring, puoi trascinare il componente Grafico dalla barra laterale di AEM al modulo o al documento adattivo. Quando rilasci il componente, questo crea un segnaposto per un grafico.
 
 ## Configura grafico {#configure-chart}
 
@@ -63,7 +63,7 @@ Nella scheda Base, puoi configurare le seguenti proprietà:
 * **Asse Y > Usa funzione**: specifica la funzione statistica da utilizzare per calcolare i valori sull&#39;asse Y. Nell’esempio, viene aggiunto l’importo speso in ciascuna categoria e il valore calcolato viene tracciato sull’asse Y. Pertanto, selezionare Somma dall&#39;elenco a discesa Usa funzione. Per ulteriori informazioni sulle funzioni, vedere Utilizzare le funzioni nel grafico.
 * **Posizione legenda**: specifica la posizione della legenda rispetto al grafico. Le opzioni disponibili sono Right, Left, Top e Bottom.
 * **Mostra legenda**: se abilitata, mostra una legenda per il grafico.
-* **Descrizione**: specifica il formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati nel grafico. Il valore predefinito è **\${x}(\${y})**. A seconda del tipo di grafico, quando si posiziona il mouse su un punto, una barra o una sezione del grafico, le variabili **\${x}** e **\${y}** vengono sostituite in modo dinamico con i valori corrispondenti sull&#39;asse X e sull&#39;asse Y e visualizzate nella descrizione comando. Come mostrato nell&#39;esempio seguente, la descrizione viene visualizzata come **Negozi al dettaglio(5870)** quando si punta il mouse sulla colonna Negozi al dettaglio. Per disattivare la descrizione, lasciare vuoto il campo Descrizione. Questa opzione non è applicabile ai grafici a linee e a superficie.
+* **Descrizione**: specifica il formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati nel grafico. Il valore predefinito è **\${x}(\${y})**. A seconda del tipo di grafico, quando si posiziona il puntatore del mouse su un punto, una barra o una sezione del grafico, le variabili **\${x}** e **\${y}** vengono sostituite in modo dinamico con i valori corrispondenti sull&#39;asse X e sull&#39;asse Y e visualizzate nella descrizione comando. Come mostrato nell&#39;esempio seguente, la descrizione viene visualizzata come **Negozi al dettaglio(5870)** quando si punta il mouse sulla colonna Negozi al dettaglio. Per disattivare la descrizione, lasciare vuoto il campo Descrizione. Questa opzione non è applicabile ai grafici a linee e a superficie.
 * **Configurazioni specifiche per il grafico**: oltre alle configurazioni comuni, è disponibile la seguente configurazione specifica per il grafico:
 * **Raggio interno**: disponibile per i grafici ad anello per specificare il raggio (in pixel) del cerchio interno nel grafico.
 * **Colore linea**: disponibile per i grafici a linee, a linee, a punti e ad area per specificare il valore esadecimale del colore per la linea nel grafico.
@@ -173,7 +173,7 @@ La proprietà chartType specifica il tipo di grafico. I valori possibili sono to
 
 Considera di aver configurato un istogramma. Si desidera tuttavia anche fornire agli utenti un&#39;opzione per selezionare un tipo di grafico diverso da un elenco a discesa e ridisegnare il grafico. È possibile ottenere questo risultato utilizzando la proprietà chartType in una regola nel modo seguente:
 
-1. Trascina un componente elenco a discesa dalla barra laterale AEM nel modulo adattivo.
+1. Trascina un componente elenco a discesa dalla barra laterale di AEM nel modulo adattivo.
 1. Seleziona il componente e tocca ![Impostazioni](cmppr1.png).
 1. Specifica un titolo per l’elenco a discesa. Selezionare ad esempio il tipo di grafico.
 1. Aggiungi i tipi di grafico supportati nella sezione Elementi, per popolare l’elenco a discesa. Fai clic su **Fine**.
