@@ -1,5 +1,5 @@
 ---
-title: Manutenzione del registro di controllo dell’AEM 6
+title: Manutenzione del registro di controllo in AEM 6
 description: Scopri come gestire i registri di audit in Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,11 +12,11 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Manutenzione del registro di controllo dell’AEM 6{#audit-log-maintenance-in-aem}
+# Manutenzione del registro di controllo in AEM 6{#audit-log-maintenance-in-aem}
 
 Gli eventi AEM idonei per la registrazione di audit generano molti dati archiviati. Questi dati possono crescere rapidamente nel tempo a causa di repliche, caricamenti di risorse e altre attività del sistema.
 
@@ -32,7 +32,7 @@ Esistono tre tipi di opzioni di eliminazione del log di controllo:
 1. [Rimozione registro di controllo DAM](/help/sites-administering/operations-audit-log.md#configure-dam-audit-log-purging)
 1. [Esecuzione del log di controllo della replica](/help/sites-administering/operations-audit-log.md#configure-replication-audit-log-purging)
 
-Ciascuno può essere configurato creando regole nella console web AEM. Dopo averli configurati, puoi attivarli passando a **Strumenti - Operazioni - Manutenzione - Finestra manutenzione settimanale** ed eseguendo l&#39;**Attività di manutenzione del registro di controllo**.
+Ciascuno può essere configurato creando regole nella console web di AEM. Dopo averli configurati, puoi attivarli passando a **Strumenti - Operazioni - Manutenzione - Finestra manutenzione settimanale** ed eseguendo l&#39;**Attività di manutenzione del registro di controllo**.
 
 ## Configurare la rimozione del registro di controllo della pagina {#configure-page-audit-log-purging}
 
@@ -56,7 +56,7 @@ Per configurare la rimozione del registro di controllo, effettua le seguenti ope
    >Il percorso del contenuto si applica solo agli elementi figlio del nodo `/var/audit/com.day.cq.wcm.core.page` nell&#39;archivio.
 
 1. Salva la regola.
-1. Per poter essere eseguita, la regola creata deve essere esposta nel dashboard operazioni. Per eseguire questa operazione, vai a **Strumenti - Operazioni - Manutenzione** dalla schermata iniziale dell&#39;AEM.
+1. Per poter essere eseguita, la regola creata deve essere esposta nel dashboard operazioni. Per eseguire questa operazione, vai a **Strumenti - Operazioni - Manutenzione** dalla schermata iniziale di AEM.
 
 1. Premere la scheda **Finestra manutenzione settimanale**.
 
@@ -66,7 +66,7 @@ Per configurare la rimozione del registro di controllo, effettua le seguenti ope
 
 1. È possibile controllare la data dell&#39;esecuzione successiva, configurarla o eseguirla manualmente premendo il pulsante di riproduzione.
 
-In AEM 6.3, se la finestra di manutenzione programmata si chiude prima che l&#39;attività di rimozione del log di controllo possa essere completata, l&#39;attività si interrompe automaticamente. L&#39;operazione riprenderà all&#39;apertura della finestra di manutenzione successiva.
+In AEM 6.3, se la finestra di manutenzione programmata si chiude prima che l’attività di rimozione del registro di controllo possa essere completata, l’attività si interrompe automaticamente. L&#39;operazione riprenderà all&#39;apertura della finestra di manutenzione successiva.
 
 **Con AEM 6.5**, puoi interrompere manualmente un&#39;attività di eliminazione del registro di controllo facendo clic sull&#39;icona **Interrompi**. Alla successiva esecuzione l’attività riprenderà in modo sicuro.
 

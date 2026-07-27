@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1208'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 94%
 
 ---
 
@@ -84,7 +84,7 @@ Le impostazioni *specialRoutes* specificano le proprietà dei percorso speciali 
 **client_specialRoutes_route_deny_names:** la varietà di stringhe che un utente di Workbench può utilizzare per essere interpretata come “rifiuta”. Le stringhe fanno distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è “rifiuta”. Se l’utente di Workbench utilizza la parola Rifiuta in un processo, la parola non viene riconosciuta. Affinché il pulsante del percorso sia personalizzato e sia applicato lo stile, è necessario aggiungere la parola Rifiuta a questa impostazione.
 
 **client_specialRoutes_route_deny_style:** nome dello stile presente nel file del tema dell’area di lavoro che identifica le icone del pulsante di rifiuto. Lo stile deve includere valori per un’icona attivata e disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_route_approve_names:** la varietà di stringhe che un utente di Workbench può utilizzare per essere interpretata come “approva”. Le stringhe fanno distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è “approva”. Se l’utente di Workbench utilizza la parola Approva in un processo, la parola non viene riconosciuta. La parola Approva deve essere aggiunta a questa impostazione affinché il pulsante per il percorso sia personalizzato e ad esso sia applicato lo stile.
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_route_approve_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretata come &quot;approva&quot;. Le stringhe fanno distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è “approva”. Se l’utente di Workbench utilizza la parola Approva in un processo, la parola non viene riconosciuta. La parola Approva deve essere aggiunta a questa impostazione affinché il pulsante per il percorso sia personalizzato e ad esso sia applicato lo stile.
 
 **client_specialRoutes_names:** le chiavi utilizzate per individuare il valore della stringa personalizzato dai file di risorse. Ogni voce di questa impostazione deve includere i valori per i nomi e lo stile.
 

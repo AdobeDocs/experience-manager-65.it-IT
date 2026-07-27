@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 0%
+source-wordcount: '697'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ Le comunicazioni interattive possono essere distribuite attraverso due canali: s
 
 Gli autori delle comunicazioni interattive possono riutilizzare risorse quali frammenti di documenti e immagini per creare versioni stampate e web delle comunicazioni interattive.
 
-Uno dei prerequisiti per la [creazione di una comunicazione interattiva](../../forms/using/create-interactive-communication.md) è disporre dei modelli per la stampa e/o il canale Web sul server. Mentre gli autori di modelli creano il modello di canale web nello stesso AEM, il modello di canale di stampa XDP viene creato in Adobe Forms Designer e caricato sul server.
+Uno dei prerequisiti per la [creazione di una comunicazione interattiva](../../forms/using/create-interactive-communication.md) è disporre dei modelli per la stampa e/o il canale Web sul server. Mentre gli autori dei modelli creano il modello di canale web all’interno di AEM, il modello di canale di stampa XDP viene creato in Adobe Forms Designer e caricato sul server.
 
 ## Stampa canale {#printchannel}
 

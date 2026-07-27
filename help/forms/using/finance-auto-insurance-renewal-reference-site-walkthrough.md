@@ -11,7 +11,7 @@ feature: Adaptive Forms,Foundation Components
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Il sito We.Finance è un sito di servizi finanziari progettato per aiutarti ad apprendere le funzionalità di comunicazione interattiva di AEM Forms.
 
-Leggi una procedura dettagliata relativa a un caso d’uso di We.Finance Auto Insurance che illustra il modo in cui l’AEM si forma e la sua integrazione con Microsoft® Dynamics consente di personalizzare l’esperienza del cliente in una società di servizi finanziari. La procedura dettagliata interattiva è progettata per facilitare l’implementazione di transazioni digitali complesse e la comunicazione con i clienti in una società finanziaria.
+Leggi una procedura dettagliata relativa a un caso d’uso di We.Finance Auto Insurance che illustra come AEM Forms e la sua integrazione con Microsoft® Dynamics consentono di personalizzare l’esperienza del cliente in una società di servizi finanziari. La procedura dettagliata interattiva è progettata per facilitare l’implementazione di transazioni digitali complesse e la comunicazione con i clienti in una società finanziaria.
 
 **Il percorso inizia con il caso d&#39;uso:**
 
@@ -37,7 +37,7 @@ Lo scenario di applicazione di Assicurazione automatica We.Finance è una narraz
 
 ### Gloria invia una comunicazione di rinnovo della polizza assicurativa da We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria accede all&#39;istanza dell&#39;AEM, fa clic su **Rinnovo assicurazione automatica,**, quindi fa clic su **Apri interfaccia utente agente**. Il clic precompila il documento di assicurazione con i dettagli della polizza di Sarah Rose. Gloria fa clic su **Invia** e viene visualizzato un messaggio nella schermata &quot;Invio avviato&quot; e quindi tra pochi secondi &quot;Invio completato&quot;.
+Gloria accede all&#39;istanza di AEM, fa clic su **Rinnovo assicurazione automatica,**, quindi fa clic su **Apri interfaccia utente agente**. Il clic precompila il documento di assicurazione con i dettagli della polizza di Sarah Rose. Gloria fa clic su **Invia** e viene visualizzato un messaggio nella schermata &quot;Invio avviato&quot; e quindi tra pochi secondi &quot;Invio completato&quot;.
 
 Sarah riceve un’e-mail con l’oggetto &quot;Rinnovo dell’assicurazione automatica&quot;.
 
@@ -65,7 +65,7 @@ Il pulsante Rinnova ora nell’e-mail è collegato all’applicazione Rinnova as
 
 #### Vedi tu stesso {#see-it-yourself-1}
 
-Devi aver ricevuto un&#39;e-mail con un PDF allegato. Il PDF è una versione stampata della lettera di Assicurazione automatica. Fare clic su **Rinnova ora** per accedere alla versione Web del criterio. Controlla le tue informazioni personali e i dettagli dei criteri e fai clic su **Rinnova ora** per passare a un&#39;altra comunicazione interattiva.
+È necessario aver ricevuto un&#39;e-mail con un PDF allegato. Il PDF è una versione stampata della lettera di assicurazione automatica. Fare clic su **Rinnova ora** per accedere alla versione Web del criterio. Controlla le tue informazioni personali e i dettagli dei criteri e fai clic su **Rinnova ora** per passare a un&#39;altra comunicazione interattiva.
 
 Il pulsante **Rinnova ora** nell&#39;e-mail indirizza Sarah al criterio sul Web. Puoi visitare il seguente URL:
 

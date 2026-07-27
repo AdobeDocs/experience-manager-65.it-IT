@@ -12,16 +12,16 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2073'
 ht-degree: 2%
 
 ---
 
 # Console di moderazione {#moderation-console}
 
-In AEM Communities, è possibile eseguire la [moderazione di massa del contenuto della community](/help/communities/moderate-ugc.md) sia dagli ambienti Author che Publish da parte di amministratori e moderatori della community (membri della community attendibili assegnati come moderatori).
+In AEM Communities, è possibile eseguire la [moderazione di massa del contenuto della community](/help/communities/moderate-ugc.md) dagli ambienti Author e Publish sia da parte degli amministratori che dei moderatori della community (membri della community attendibili assegnati come moderatori).
 
-Gli amministratori e i moderatori della community possono anche eseguire [la moderazione nel contesto](/help/communities/in-context.md) nell&#39;ambiente Publish.
+Gli amministratori e i moderatori della community possono anche eseguire [la moderazione nel contesto](/help/communities/in-context.md) nell&#39;ambiente di pubblicazione.
 
 Una caratteristica di tutti i [siti community](/help/communities/sites-console.md) è una voce di menu `Administration` disponibile per gli utenti che accedono con privilegi amministrativi. Il collegamento `Administration` fornisce l&#39;accesso alla console di moderazione.
 
@@ -38,7 +38,7 @@ La console Moderazione supporta:
 
 Le attività di moderazione possono essere eseguite solo dopo aver effettuato l&#39;accesso come amministratore o come membro con ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`.
 
-## Accesso all&#39;ambiente Publish {#publish-environment-access}
+## Accesso all’ambiente di pubblicazione {#publish-environment-access}
 
 L&#39;accesso alla console di moderazione da un sito community pubblicato avviene tramite un collegamento Amministrazione che viene visualizzato quando un moderatore della community ha effettuato l&#39;accesso.
 
@@ -58,13 +58,13 @@ Solo quando si accede come amministratore o come membro con [autorizzazioni mode
 
 >[!NOTE]
 >
->UGC dall’ambiente Publish è visibile nell’ambiente Author solo se l’SRP scelto implementa un archivio comune. Ad esempio, per impostazione predefinita l’archiviazione è JSRP, che non è un archivio comune per Author e Publish. Vedi [Archiviazione dei contenuti della community](/help/communities/working-with-srp.md).
+>UGC dall’ambiente di pubblicazione è visibile nell’ambiente di authoring solo se l’SRP scelto implementa un archivio comune. Ad esempio, per impostazione predefinita l’archiviazione è JSRP, che non è un archivio comune per Author e Publish. Vedi [Archiviazione dei contenuti della community](/help/communities/working-with-srp.md).
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## Interfaccia utente console di moderazione {#moderation-console-ui}
 
-Lasciando da parte la barra di navigazione a sinistra (che viene visualizzata su Author ma non su Publish), l&#39;interfaccia utente di moderazione presenta le seguenti aree principali:
+Lasciando da parte la barra di navigazione a sinistra (che appare nell&#39;ambiente di authoring ma non in quello di pubblicazione), l&#39;interfaccia utente di moderazione presenta le seguenti aree principali:
 
 * **[Barra di navigazione superiore](#top-navigation-bar)**
 * **[Barra degli strumenti](#toolbar)**
@@ -100,7 +100,7 @@ L’area del contenuto contiene informazioni per UGC pubblicati:
 * Posizione del posto
 * Quando è stato pubblicato
 * Numero di risposte al post
-* [Sentimento](/help/communities/moderate-ugc.md#sentiment) associato al post
+* [Sentiment](/help/communities/moderate-ugc.md#sentiment) associato al post
 * Se approvata, viene visualizzato un segno di spunta
 * Se è presente un allegato, viene visualizzata una graffetta
 
@@ -150,7 +150,7 @@ Il sito limita il contenuto UGC di riferimento visualizzato ai post per i siti c
 >
 >Quando un amministratore accede alla console di moderazione in blocco, vengono visualizzati tutti i riferimenti a UGC, inclusi i siti non creati con la [procedura guidata per la creazione di siti](/help/communities/sites-console.md), ad esempio gli esempi di Geometrixx.
 >
->Quando un membro attendibile della community accede alla console di moderazione in blocco su Publish, vengono visualizzati solo i riferimenti a contenuti generati dagli utenti (UGC) per i siti della community che il membro è autorizzato a moderare. Inoltre, può essere filtrato con il filtro Sito.
+>Quando un membro attendibile della community accede alla console di moderazione in blocco al momento della pubblicazione, vengono visualizzati solo i riferimenti a contenuti generati dagli utenti per i siti della community che il membro è autorizzato a moderare. Inoltre, può essere filtrato con il filtro Sito.
 
 #### Tipo di contenuto {#content-type}
 
@@ -182,9 +182,9 @@ Per aggiungere altre risorse da filtrare:
 * Seleziona la configurazione per aprirla in modalità di modifica.
 * Immettere il ResourceType di un componente su cui filtrare:
 
-   * Ad esempio, per filtrare in base ai componenti di voto inclusi, immettere:
+  * Ad esempio, per filtrare in base ai componenti di voto inclusi, immettere:
 
-     `Voting=social/tally/components/hbs/voting`
+    `Voting=social/tally/components/hbs/voting`
 
   ![additional-contenttype](assets/additional-contenttype.png)
 
@@ -227,7 +227,7 @@ Pubblicato in L&#39;ultimo limita il UGC di riferimento visualizzato ai post eff
 
 #### Sentimento {#sentiment}
 
-[Sentimento](/help/communities/moderate-ugc.md#sentiment) limita il contenuto UGC di riferimento visualizzato ai post con un valore di valutazione positivo, negativo o neutro.
+[Il Sentiment](/help/communities/moderate-ugc.md#sentiment) limita il contenuto UGC di riferimento visualizzato ai post con un valore sentiment positivo, negativo o neutro.
 
 ![sentiment](assets/sentiment.png)
 
@@ -241,11 +241,11 @@ Il [progetto di esempio](https://github.com/Adobe-Marketing-Cloud/aem-communitie
 
 Per installare l’esempio per il filtro Tag:
 
-1. Aprire Gestione pacchetti nell&#39;istanza Autore AEM (`https://[aem-author]:4502/crx/packmgr/index.jsp`) e nell&#39;istanza Publish AEM (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Aprire Gestione pacchetti nell&#39;istanza Autore AEM (`https://[aem-author]:4502/crx/packmgr/index.jsp`) e nell&#39;istanza Pubblicazione AEM (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
 1. Creare il pacchetto `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` dal codice GitHub, quindi installarlo e attivarlo.
-1. Aprire la console dei bundle nell&#39;istanza Autore AEM ( `https://[aem-author]:4502/system/console/bundles`) e nell&#39;istanza Publish AEM ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Apri la console dei bundle nell&#39;istanza Autore AEM ( `https://[aem-author]:4502/system/console/bundles`) e nell&#39;istanza Pubblicazione AEM ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Creare il pacchetto (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) da GitHub e installarlo e abilitarlo.
-1. Vai al nodo **/apps/social/moderation/facets** sull&#39;istanza di AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. Vai al nodo **/apps/social/moderation/facets** nell&#39;istanza AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Aggiungere un utente tecnico **community-utility-reader** con autorizzazioni `jcr:read`.
 
 Per esporre i filtri personalizzati sui siti community esistenti:
@@ -281,7 +281,7 @@ Per uscire dalla modalità di selezione collettiva, seleziona l’icona Annulla 
 Le azioni di moderazione che possono essere eseguite su più post sono:
 
 * Rifiuta
-* Elimina
+* Eliminare
 * Chiudi/riapri i post
 
 Le icone che consentono queste azioni vengono visualizzate sulla barra degli strumenti solo quando sono selezionati più post.
@@ -297,7 +297,7 @@ Nella modalità di selezione singola, è possibile:
 * [Risposta](#reply)
 * [Consenti](#allow)
 * [Rifiuta](#deny)
-* [Elimina](#delete)
+* [Eliminare](#delete)
 * [Chiudi](#close)
 * Visualizza [Cronologia moderazione](#moderation-history)
 * [Visualizza dettagli](#viewdetails)
@@ -335,7 +335,7 @@ Il contenuto moderato entra inizialmente nello stato In sospeso e può essere mo
 
 Il contenuto che lascia lo stato in sospeso non può mai tornare a uno stato in sospeso. Il contenuto contrassegnato come approvato o negato può essere modificato in un altro stato in qualsiasi momento.
 
-#### Elimina {#delete}
+#### Eliminare {#delete}
 
 ![elimina](assets/delete.png)
 

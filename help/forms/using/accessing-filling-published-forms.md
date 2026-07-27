@@ -11,8 +11,8 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 0%
+source-wordcount: '942'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ Per ulteriori informazioni su Forms Portal e sulle relative funzionalità, veder
 
 Passare alla pagina pubblicata di Forms Portal. Per ulteriori informazioni sulla creazione di una pagina di Forms Portal, vedere [Creazione di una pagina di Forms Portal](../../forms/using/creating-form-portal-page.md).
 
-Il componente Ricerca ed elenco di Forms Portal visualizza i moduli disponibili nell’istanza Publish del server AEM. Questo elenco include tutti i moduli o i moduli definiti nel filtro al momento dell&#39;authoring della pagina Forms Portal. Una pagina di Forms Portal ha un aspetto simile a quello mostrato nell’immagine seguente:
+Il componente Ricerca ed elenco di Forms Portal visualizza i moduli disponibili nell’istanza Pubblica del server AEM. Questo elenco include tutti i moduli o i moduli definiti nel filtro al momento dell&#39;authoring della pagina Forms Portal. Una pagina di Forms Portal ha un aspetto simile a quello mostrato nell’immagine seguente:
 
-![Esempio di pagina del portale dei moduli &#x200B;](assets/forms-portal-page.png)
+![Esempio di pagina del portale dei moduli ](assets/forms-portal-page.png)
 
 Esempio di pagina del portale Forms
 

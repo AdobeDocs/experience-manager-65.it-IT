@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '611'
 ht-degree: 1%
 
 ---
@@ -21,20 +21,20 @@ ht-degree: 1%
 
 ## Creazione di gruppi durante la creazione {#creating-groups-on-author}
 
-Nell’istanza Autore AEM, dalla navigazione globale:
+Nell’istanza Autore di AEM, dalla navigazione globale:
 
 * Seleziona **[!UICONTROL Community]** > **[!UICONTROL Siti]**.
 * Seleziona **[!UICONTROL coinvolgi cartella]** per aprirla.
 * Seleziona la scheda per il **[!UICONTROL tutorial introduttivo]** sito in inglese.
 
-   * Selezionare l&#39;immagine della scheda.
-   * *non* selezionare un&#39;icona.
+  * Selezionare l&#39;immagine della scheda.
+  * *non* selezionare un&#39;icona.
 
 Il risultato è quello di raggiungere la [console Gruppi](/help/communities/groups.md):
 
 ![crea-gruppo](assets/create-group.png)
 
-La funzione gruppi viene visualizzata come una cartella in cui vengono create le istanze dei gruppi. Per aprirla, seleziona la cartella Gruppi. Il gruppo creato su Publish è visibile.
+La funzione gruppi viene visualizzata come una cartella in cui vengono create le istanze dei gruppi. Per aprirla, seleziona la cartella Gruppi. Il gruppo creato al momento della pubblicazione è visibile.
 
 ![create-new-group](assets/create-new-group.png)
 
@@ -48,13 +48,13 @@ Queste console sono simili alla console Siti di Communities.
 
 * **Modello per gruppo community**:
 
-   * **[!UICONTROL Titolo gruppo community]**: arti
-   * **[!UICONTROL Descrizione gruppo community]**: un gruppo padre per vari gruppi artistici
-   * **[!UICONTROL Directory principale gruppo community]**: *lascia come predefinito*
-   * **[!UICONTROL Lingue aggiuntive gruppo community disponibili]**: utilizzare il menu a discesa per selezionare le lingue disponibili per il gruppo community. Il menu visualizza tutte le lingue in cui viene creato il sito community principale. Gli utenti possono scegliere tra queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti community.
-   * **[!UICONTROL Nome gruppo community]**: arts
-   * **[!UICONTROL Modello]**: elenco a discesa per selezionare `Reference Group`
-   * Seleziona **[!UICONTROL Avanti]**
+  * **[!UICONTROL Titolo gruppo community]**: arti
+  * **[!UICONTROL Descrizione gruppo community]**: un gruppo padre per vari gruppi artistici
+  * **[!UICONTROL Directory principale gruppo community]**: *lascia come predefinito*
+  * **[!UICONTROL Lingue aggiuntive gruppo community disponibili]**: utilizzare il menu a discesa per selezionare le lingue disponibili per il gruppo community. Il menu visualizza tutte le lingue in cui viene creato il sito community principale. Gli utenti possono scegliere tra queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti community.
+  * **[!UICONTROL Nome gruppo community]**: arts
+  * **[!UICONTROL Modello]**: elenco a discesa per selezionare `Reference Group`
+  * Seleziona **[!UICONTROL Avanti]**
 
 ![Gruppi community nidificati](assets/parent-to-nestedgroup.png)
 
@@ -62,23 +62,23 @@ Continua a scorrere gli altri pannelli con queste impostazioni:
 
 * **[!UICONTROL Design]**
 
-   * Modifica la progettazione o consenti la progettazione del sito padre predefinito.
-   * Seleziona **[!UICONTROL Avanti]**.
+  * Modifica la progettazione o consenti la progettazione del sito padre predefinito.
+  * Seleziona **[!UICONTROL Avanti]**.
 
 * **[!UICONTROL Impostazioni]**
 
-   * **[!UICONTROL Moderazione]**
+  * **[!UICONTROL Moderazione]**
 
-      * Lascia vuoto (eredita dal sito padre).
+    * Lascia vuoto (eredita dal sito padre).
 
-   * **[!UICONTROL Appartenenza]**
+  * **[!UICONTROL Appartenenza]**
 
-      * Usa `Optional Membership.` predefinito
+    * Usa `Optional Membership.` predefinito
 
-      * **[!UICONTROL Miniatura]**
-         * `optional.*`
+    * **[!UICONTROL Miniatura]**
+      * `optional.*`
 
-      * **[!UICONTROL Seleziona Successivo]**.
+    * **[!UICONTROL Seleziona Successivo]**.
 
 * Seleziona **[!UICONTROL Crea]**.
 
@@ -88,7 +88,7 @@ La cartella `groups` contiene ora due gruppi (aggiorna la pagina).
 
 ![Nidificazione dei gruppi](assets/create-community-group.png)
 
-#### Gruppo Publish {#publish-group}
+#### Pubblica gruppo {#publish-group}
 
 Prima di creare i gruppi nidificati nel gruppo `arts`, passa il cursore del mouse sulla scheda `arts` e seleziona l&#39;icona Pubblica per pubblicarla.
 
@@ -139,29 +139,29 @@ Per passare ai gruppi nidificati dalla console Siti community:
 
 Dopo la pubblicazione del sito principale della community:
 
-* Publish ogni gruppo singolarmente:
+* Pubblica ogni gruppo singolarmente:
 
-   * In attesa di conferma della pubblicazione del gruppo.
+  * In attesa di conferma della pubblicazione del gruppo.
 
-* Prima di pubblicare i gruppi nidificati in, esegui il Publish del gruppo padre:
+* Pubblica il gruppo principale prima di pubblicare eventuali gruppi nidificati in:
 
-   * Tutti i gruppi devono essere pubblicati dall’alto verso il basso.
+  * Tutti i gruppi devono essere pubblicati dall’alto verso il basso.
 
 ![gruppo-pubblicato](assets/group-published.png)
 
-## Esperienza in Publish {#experience-on-publish}
+## Esperienza alla pubblicazione {#experience-on-publish}
 
 È possibile provare i diversi gruppi quando si è connessi, ad esempio, con [utenti demo](/help/communities/tutorials.md#demo-users) utilizzati per:
 
 * Membro gruppo artistico/storico: `emily.andrews@mailinator.com/password`
-   * Il gruppo ristretto (segreto), arte/storia, è visibile:
-   * In grado di visualizzare gruppi opzionali (pubblici).
-   * Possibilità di partecipare a gruppi con restrizioni (aperti).
+  * Il gruppo ristretto (segreto), arte/storia, è visibile:
+  * In grado di visualizzare gruppi opzionali (pubblici).
+  * Possibilità di partecipare a gruppi con restrizioni (aperti).
 
 * Gestione gruppi: `aaron.mcdonald@mailinator.com/password`
 
-   * In grado di visualizzare gruppi opzionali (pubblici).
-   * Possibilità di partecipare a gruppi con restrizioni (aperti).
-   * Impossibile visualizzare i gruppi con restrizioni (segreti).
+  * In grado di visualizzare gruppi opzionali (pubblici).
+  * Possibilità di partecipare a gruppi con restrizioni (aperti).
+  * Impossibile visualizzare i gruppi con restrizioni (segreti).
 
 Accedi alle console [Membri e gruppi](/help/communities/members.md) per aggiungere altri utenti ai vari gruppi di membri che corrispondono ai gruppi della community.

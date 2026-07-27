@@ -1,6 +1,6 @@
 ---
-title: Avviare le API di Document Services dal flusso di lavoro AEM
-description: Scopri come richiamare i servizi di documentazione AEM su DDX o gli input forniti. Vedi anche come convertire PDF in PDF/A
+title: Avviare le API dei servizi basati sui documenti dal flusso di lavoro AEM
+description: Scopri come richiamare AEM Document Services su DDX o input forniti. Vedi anche come convertire PDF in PDF/A
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -10,19 +10,19 @@ feature: Interactive Communication
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 0%
+source-wordcount: '1173'
+ht-degree: 1%
 
 ---
 
-# Avviare le API di Document Services dal flusso di lavoro AEM  {#initiate-document-services-apis-from-aem-workflow}
+# Avviare le API dei servizi basati sui documenti dal flusso di lavoro AEM  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assemblatore {#assembler}
 
 AEM Forms fornisce flussi di lavoro personalizzati per richiamare le seguenti API del servizio Assembler:
 
 * **invoke**: richiama le operazioni specificate in DDX di input sugli input forniti.
-* **toPDFA**: converte un documento di input PDF in un documento PDF/A.
+* **toPDFA**: converte il documento PDF di input in un documento PDF/A.
 
 ### Richiama flusso di lavoro DDX {#invoke-ddx-workflow}
 
@@ -38,9 +38,9 @@ Il flusso di lavoro Richiama DDX richiede i seguenti documenti di input:
 
 * **DDX**: è un input obbligatorio per il passaggio del flusso di lavoro Richiama DDX e può essere specificato selezionando una delle seguenti opzioni dal menu a discesa dell&#39;input DDX.
 
-   * *Relativo al payload*: il file di input DDX è relativo alla cartella di payload per l&#39;elemento del flusso di lavoro.
-   * *Usa payload*: il payload per l&#39;elemento del flusso di lavoro viene utilizzato come documento DDX di input.
-   * *Percorso assoluto*: il percorso assoluto del documento DDX nell&#39;archivio CRX.
+  * *Relativo al payload*: il file di input DDX è relativo alla cartella di payload per l&#39;elemento del flusso di lavoro.
+  * *Usa payload*: il payload per l&#39;elemento del flusso di lavoro viene utilizzato come documento DDX di input.
+  * *Percorso assoluto*: il percorso assoluto del documento DDX nell&#39;archivio CRX.
 
 * **Crea mappa da PayLoad**: se selezionata, tutti i documenti nella cartella del payload vengono aggiunti alla mappa del documento di input per l&#39;API `invoke` nell&#39;Assembler. Il nome del nodo di ciascun documento viene utilizzato come chiave nella mappa.
 
@@ -53,7 +53,7 @@ La scheda Opzioni ambiente consente di impostare varie opzioni di elaborazione p
 * *Livello log processi*: specifica il livello di log per i log di elaborazione.
 * *Solo convalida*: verifica la validità del DDX di input.
 
-* *Non riuscito in caso di errore*: specifica se la chiamata al servizio Assembler deve non riuscire in caso di errore. Il valore predefinito è False.
+* *Non riuscito in caso di errore*: specifica se la chiamata al servizio Assembler deve non riuscire in caso di errore. Il valore predefinito è falso.
 
 #### Documenti di output {#output-documents}
 
@@ -64,11 +64,11 @@ A seconda del DDX di input, l’API di richiamo può produrre più documenti di 
 
 1. *Registro processi*: specifica dove salvare il documento del registro processi, utile per la risoluzione dei problemi.
 
-### Converti in flusso di lavoro di PDF/A {#convert-to-pdf-a-workflow}
+### Converti in flusso di lavoro PDF/A {#convert-to-pdf-a-workflow}
 
-Il passaggio del flusso di lavoro Converti in PDF/A richiama l&#39;API del servizio Assembler `toPDFA`. Viene utilizzato per convertire i documenti PDF in documenti conformi a PDF/A.
+Il passaggio del flusso di lavoro Converti in PDF/A richiama l&#39;API del servizio Assembler `toPDFA`. Viene utilizzato per la conversione di documenti PDF in documenti conformi a PDF/A.
 
-1. Trascina il passaggio del flusso di lavoro **[!UICONTROL ConvertToPDFA]** nella scheda Forms Workflow in Sidekick.
+1. Trascina il passaggio del flusso di lavoro **[!UICONTROL ConvertToPDFA]** nella scheda Forms Workflow di Sidekick.
 
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configurare documenti di input, opzioni di conversione e documenti di output e fare clic su **[!UICONTROL OK]**.
@@ -85,14 +85,14 @@ Specificare l&#39;origine del documento da convertire in un documento conforme a
 
 Le opzioni di conversione consentono di specificare le opzioni che modificano il processo di conversione PDF/A.
 
-* *Conformità* : specifica lo standard PDF/A a cui il PDF/A di output deve conformarsi.
+* *Conformità* : specifica lo standard PDF/A a cui deve conformarsi il PDF/A di output.
 * *Livello risultati* : specifica il livello di registro da utilizzare per i registri di conversione PDF/A.
 * *Firme*: specifica la modalità di elaborazione delle firme nel documento di input durante la conversione.
 * *Spazio colore*: specifica lo spazio colore predefinito da utilizzare per il documento PDF/A di output.
 * *Verifica* conversione: specifica se il documento PDF/A convertito deve essere verificato per la conformità PDF/A dopo la conversione.
 * *Livello log processi*: specifica il livello di log da utilizzare per l&#39;elaborazione dei log.
 
-* *Schema di estensione dei metadati* : specifica il percorso dello schema di estensione dei metadati da utilizzare per le proprietà XMP nei metadati del documento PDF.
+* *Schema estensione metadati* : specifica il percorso dello schema di estensione metadati da utilizzare per le proprietà XMP nei metadati del documento PDF.
 
 #### Documenti di output {#output-documents-1}
 
@@ -101,13 +101,13 @@ La scheda Documenti di output consente di specificare la destinazione dei docume
 * *Documento PDFA*: specifica il percorso in cui viene salvato il documento PDF/A convertito. Può sovrascrivere il documento di payload o salvarlo nella cartella di payload.
 * *Registro conversione*: specifica il percorso in cui vengono salvati i registri di conversione. Può sovrascrivere il documento di payload o essere salvato nella cartella di payload.
 
-## Moduli {#forms}
+## Forms {#forms}
 
-Il flusso di lavoro Modulo di rendering PDF è un wrapper intorno all&#39;API di servizio Forms `renderPDFForm` per la creazione di un modulo di PDF utilizzando un modello XDP e un XML dati.
+Il flusso di lavoro di rendering di PDF Form è un wrapper intorno all&#39;API di servizio Forms `renderPDFForm` per la creazione di un modulo PDF utilizzando un modello XDP e un XML dati.
 
-### Flusso di lavoro di Rendering modulo PDF {#render-pdf-form-workflow}
+### Flusso di lavoro di rendering di PDF Form {#render-pdf-form-workflow}
 
-1. Trascina il passaggio del flusso di lavoro Modulo di Rendering PDF nella scheda Forms Workflow in Sidekick.
+1. Trascina il passaggio del flusso di lavoro Rendering di PDF Form nella scheda Forms Workflow in Sidekick.
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configurare documenti di input, documenti di output e parametri aggiuntivi e fare clic su **[!UICONTROL OK]**.
 
@@ -124,7 +124,7 @@ Il flusso di lavoro Modulo di rendering PDF è un wrapper intorno all&#39;API di
 #### Parametri aggiuntivi {#additional-parameters}
 
 * *Directory principale contenuto*: specifica il percorso della cartella nell&#39;archivio in cui sono archiviati i frammenti o le immagini utilizzati nel modello XDP di input.
-* *URL di invio*: specifica l&#39;URL di invio predefinito per il modulo PDF generato.
+* *URL invio*: specifica l&#39;URL di invio predefinito per il modulo PDF generato.
 * *Impostazioni locali*: specifica le impostazioni locali predefinite per il modulo PDF generato.
 * *Acrobat versione*: specifica la versione di Acrobat di destinazione per il modulo PDF generato.
 * *PDF con tag*: specifica se rendere accessibile il PDF generato.
@@ -132,11 +132,11 @@ Il flusso di lavoro Modulo di rendering PDF è un wrapper intorno all&#39;API di
 
 ## Output {#output}
 
-Il flusso di lavoro di Generate Non Interactive PDF è un wrapper intorno all&#39;API del servizio di output `generatePDFOutput`. Viene utilizzato per generare documenti PDF non interattivi da un modello XDP e dati xml.
+Il flusso di lavoro Generate Non Interactive PDF è un wrapper intorno all&#39;API del servizio di output `generatePDFOutput`. Viene utilizzato per generare documenti PDF non interattivi da un modello XDP e dati xml.
 
-### Genera flusso di lavoro di output PDF non interattivo   {#generate-non-interactive-pdf-output-workflow-nbsp}
+### Genera flusso di lavoro di output non interattivo di PDF   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
-1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow in Sidekick.
+1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow di Sidekick.
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configurare documenti di input, documenti di output e parametri aggiuntivi e fare clic su **[!UICONTROL OK]**.
 
@@ -155,6 +155,6 @@ Il flusso di lavoro di Generate Non Interactive PDF è un wrapper intorno all&#3
 * *Directory principale contenuto*: specifica il percorso della cartella nell&#39;archivio in cui sono archiviati i frammenti o le immagini utilizzati nel modello XDP di input.
 * *Impostazioni locali*: specifica le impostazioni locali predefinite per il modulo PDF generato.
 * *Acrobat versione*: specifica la versione di Acrobat di destinazione per il modulo PDF generato.
-* Linearized PDF: specifica se ottimizzare il PDF generato per la visualizzazione Web.
+* Linearized PDF: specifica se ottimizzare il PDF generato per la visualizzazione web.
 * *PDF con tag*: specifica se rendere accessibile il PDF generato.
 * *Documento XCI*: specifica il percorso del file XCI.

@@ -11,8 +11,8 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 1%
+source-wordcount: '1066'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +30,7 @@ In un tipico scenario di distribuzione di un portale incentrato sui moduli, lo s
 
 Tali scenari spesso causano problemi di gestione e ritardi nella produzione. Ad esempio, se nell&#39;archivio è disponibile una versione più recente di un modulo, è necessario sostituire il modulo sul livello Web, modificare l&#39;applicazione Web e ridistribuire il modulo sul sito pubblico. La ridistribuzione dell’applicazione web potrebbe causare tempi di inattività del server. In genere, il tempo di inattività del server è un’attività pianificata e pertanto le modifiche non possono essere inviate istantaneamente al sito pubblico.
 
-AEM Forms fornisce componenti portale che riducono i costi generali di gestione e i ritardi di produzione. I componenti consentono agli sviluppatori Web di creare e personalizzare un portale Forms nei siti Web creati con Adobe Experience Manager (AEM).
+AEM Forms fornisce componenti portale che riducono i costi generali di gestione e i ritardi di produzione. I componenti consentono agli sviluppatori web di creare e personalizzare un portale Forms su siti web creati con Adobe Experience Manager (AEM).
 
 ![Portale AEM Forms](assets/aem-forms-portal.png)
 
@@ -67,8 +67,8 @@ Il componente Collegamento consente di creare un collegamento a un modulo in un 
 
 Forms Portal consente di elencare i moduli dal repository dei moduli nella pagina del portale. Consente inoltre di specificare i criteri di ricerca per consentire agli utenti del portale di eseguire ricerche nell&#39;elenco dei moduli. È inoltre possibile utilizzare il componente Bozze e invii per visualizzare i moduli salvati come bozza da compilare in un secondo momento e quelli inviati. Prima di rendere disponibili queste funzionalità in una pagina Sites, è necessario eseguire un determinato insieme di operazioni. Per rendere disponibili i componenti e le rispettive funzionalità in una pagina del sito, effettua le operazioni riportate nella sequenza riportata di seguito:
 
-1. **Abilita componenti di Forms Portal**: i componenti di Forms Portal non sono pronti all&#39;uso. [Abilita i componenti dalla barra laterale AEM](/help/forms/using/enabling-forms-portal-components.md) per una pagina AEM Sites.
-1. **Elenca moduli in una pagina (crea pagina di Forms Portal):** Puoi elencare i moduli sia nelle pagine di AEM Sites che in quelle di siti non AEM. L’elenco contiene i moduli disponibili nell’istanza Publish. Un utente può aprire i moduli e iniziare a compilarli. Ogni volta che un utente apre un modulo, viene creata una nuova istanza del modulo:
+1. **Abilita componenti di Forms Portal**: i componenti di Forms Portal non sono pronti all&#39;uso. [Abilita i componenti dalla barra laterale di AEM](/help/forms/using/enabling-forms-portal-components.md) per una pagina AEM Sites.
+1. **Elenca moduli in una pagina (crea pagina portale Forms):** Puoi elencare i moduli sia nelle pagine AEM Sites che in quelle non AEM Site. L’elenco contiene i moduli disponibili nell’istanza Publish. Un utente può aprire i moduli e iniziare a compilarli. Ogni volta che un utente apre un modulo, viene creata una nuova istanza del modulo:
 
    1. **Elenca moduli in una pagina di AEM Sites**: aggiungi il componente **[Cerca ed elenca](../../forms/using/creating-form-portal-page.md)** alla pagina e configura il **[riquadro elenco](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** in essa per elencare i moduli in una pagina. Aggiungere e configurare il componente **Riquadro di ricerca** nel componente **Ricerca ed elenco** per aggiungere funzionalità di ricerca alla pagina. La pagina con il componente Forms Portal è nota come [pagina Forms Portal](../../forms/using/creating-form-portal-page.md).
 
@@ -78,10 +78,10 @@ Forms Portal consente di elencare i moduli dal repository dei moduli nella pagin
 
    Per attivare la visualizzazione di un modulo adattivo inviato nella scheda Invii, impostare **Azione invio** su **[Azione invio portale Forms](configuring-submit-actions.md).** In alternativa, abilitare l&#39;opzione di invio di Forms Portal. Ogni volta che un utente invia il modulo, questo viene aggiunto alla scheda Invii.
 
-1. **Configura l&#39;archiviazione per i dati delle bozze e dei moduli inviati:** Per impostazione predefinita, i dati delle bozze e degli invii vengono memorizzati nell&#39;archivio AEM. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati nell’archivio AEM. [Configurare il componente Forms Portal per il salvataggio dei dati in un percorso sicuro](../../forms/using/draft-submission-component.md#customizing-the-storage).
+1. **Configura l&#39;archiviazione per i dati delle bozze e dei moduli inviati:** Per impostazione predefinita, i dati delle bozze e degli invii vengono memorizzati nell&#39;archivio di AEM. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati nell’archivio di AEM. [Configurare il componente Forms Portal per il salvataggio dei dati in un percorso sicuro](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Facoltativo) Personalizzazione dei componenti di Forms Portal:** [Personalizzare i modelli di pagina di Forms Portal](../../forms/using/customizing-templates-forms-portal-components.md) per conferire un aspetto distintivo ai componenti.
 1. **(Facoltativo) Aggiungi metadati personalizzati ai moduli:** [Aggiungi metadati personalizzati ai moduli](../../forms/using/customizing-templates-forms-portal-components.md) per migliorare l&#39;esperienza di inserimento e ricerca.
-1. **Publish la pagina del portale Forms:** La pagina del portale Forms è ora pronta. Publish la pagina.
+1. **Pubblica la pagina del portale Forms:** La pagina del portale Forms è ora pronta. Pubblica la pagina.
 
 ## Articoli correlati {#related-articles}
 
@@ -90,6 +90,6 @@ Forms Portal consente di elencare i moduli dal repository dei moduli nella pagin
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](../../forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](../../forms/using/draft-submission-component.md#customizing-the-storage)
-* [Esempio per integrare il componente Bozze e invii con il database](integrate-draft-submission-database.md)
+* [Esempio di integrazione del componente bozze e invii con il database](integrate-draft-submission-database.md)
 * [Personalizzazione dei modelli per i componenti di Forms Portal](../../forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](../../forms/using/introduction-publishing-forms.md)
