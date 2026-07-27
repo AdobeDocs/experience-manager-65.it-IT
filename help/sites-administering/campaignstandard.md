@@ -233,7 +233,7 @@ Quando [hai creato un modello di consegna e-mail specifico per AEM](#aem-email-d
 1. Nella sezione **Connessione**, definisci i campi seguenti:
 
    1. Server: URL del server di authoring di AEM. Non deve terminare con una barra.
-   1. Account: questo è l&#39;utente `campaign-remote` [ configurato in precedenza in AEM.](#campaign-remote-user)
+   1. Account: questo è l&#39;utente `campaign-remote` [&#x200B; configurato in precedenza in AEM.](#campaign-remote-user)
    1. Password: questa è la password per l&#39;`campaign-remote`utente [configurato in precedenza in AEM.](#campaign-remote-user)
 
    ![Modifica dell&#39;utente aemInstance](assets/acs-external-acount-editor.png)

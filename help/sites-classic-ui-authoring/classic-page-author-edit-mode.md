@@ -188,7 +188,7 @@ Qui puoi specificare in che modo le pagine vengono incluse nel carosello:
   * **Ordina per**
     Selezionare `jcr:title`, `jcr:created`, `cq:lastModified` o `cq:template` dal menu a discesa.
 
-  * Limite ****
+  * Limite **&#x200B;**
     Facoltativo. Il numero massimo di elementi da utilizzare nel carosello.
 
 >[!NOTE]
