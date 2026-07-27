@@ -45,7 +45,7 @@ Questo documento illustra in dettaglio ciascuno di questi passaggi.
 ## Prerequisiti {#prerequisites}
 
 * Accesso amministratore ad Adobe Campaign Standard
-  * Per ulteriori informazioni su come configurare Adobe Campaign Standard, consulta la [documentazione di Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+  * Per ulteriori informazioni su come configurare Adobe Campaign Standard, consulta la [documentazione di Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=it)
 * Accesso amministratore ad AEM
 
 ## Configurare l’utente aemserver in Campaign {#aemserver-user}
@@ -66,7 +66,7 @@ Adobe Campaign Standard per impostazione predefinita viene fornito con un utente
 
 L&#39;utente `aemserver` dispone ora dei diritti necessari per consentire ad AEM di utilizzarlo per comunicare con Adobe Campaign.
 
-Tuttavia, prima che AEM possa utilizzare l&#39;utente `aemserver`, è necessario impostarne la password. Questo non può essere fatto tramite Adobe Campaign. Deve essere eseguito da un tecnico del supporto Adobe. [Invia un ticket all&#39;Assistenza clienti di Adobe](https://experienceleague.adobe.com/?support-tab=home?lang=it#support) per richiedere la reimpostazione della password `aemserver`. Una volta ottenuta la password dall’Assistenza clienti di Adobe, conservala in un luogo sicuro.
+Tuttavia, prima che AEM possa utilizzare l&#39;utente `aemserver`, è necessario impostarne la password. Questo non può essere fatto tramite Adobe Campaign. Deve essere eseguito da un tecnico del supporto Adobe. [Invia un ticket all&#39;Assistenza clienti di Adobe](https://experienceleague.adobe.com/it?support-tab=home?lang=it#support) per richiedere la reimpostazione della password `aemserver`. Una volta ottenuta la password dall’Assistenza clienti di Adobe, conservala in un luogo sicuro.
 
 ## Verificare AEMResourceTypeFilter in Campaign {#resource-type-filter}
 
