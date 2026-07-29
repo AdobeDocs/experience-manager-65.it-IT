@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla generazione di rapporti sui processi
+title: Introduzione ai rapporti sui processi
 description: Introduzione e funzionalità chiave di AEM Forms su JEE Process Reporting
 content-type: reference
 topic-tags: process-reporting
@@ -9,14 +9,14 @@ exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: c29c24f3e8b05d12689536376ce1a07798f784e6
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 0%
+source-wordcount: '305'
+ht-degree: 3%
 
 ---
 
-# Introduzione alla generazione di rapporti sui processi{#introduction-to-process-reporting}
+# Introduzione ai rapporti sui processi{#introduction-to-process-reporting}
 
 ![report di processo](assets/process-reporting.png)
 
@@ -31,7 +31,7 @@ Per l&#39;elenco dei browser supportati, vedere [Piattaforme supportate da AEM F
 Process Reporting è basato su moduli che:
 
 * Leggi dati processo da AEM Forms Database
-* Publish elabora i dati in un repository Process Reporting incorporato
+* Pubblicare i dati del processo in un repository Process Reporting incorporato
 * Fornisce un&#39;interfaccia utente basata su browser per visualizzare i rapporti
 
 ## Funzionalità principali {#key-capabilities}
@@ -46,7 +46,7 @@ Process Reporting offre inoltre la possibilità di esportare il report ed esegui
 
 ### Rapporti ad hoc {#adhoc-reports}
 
-![stampa e colori](assets/print-&-colour.png)
+![stampa e colori](assets/print-and-colour.png)
 
 Utilizza i filtri per ottenere una visualizzazione specifica dei dati.
 
@@ -62,7 +62,7 @@ Puoi quindi salvare i filtri del rapporto in modo che vengano eseguiti in una da
 
 I server AEM Forms eseguono numerosi processi in parallelo. Questi processi continuano a passare da uno stato all’altro. Pubblicando i dati di Forms nel repository di Process Reporting a intervalli regolari, Process Reporting conserva le informazioni di transizione sui processi in esecuzione in AEM Forms.
 
-### Controllo accesso {#access-control-br}
+### Controllo degli accessi {#access-control-br}
 
 ![senza titolo](assets/untitled.png)
 
