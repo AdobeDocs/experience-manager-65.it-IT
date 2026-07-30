@@ -1,6 +1,6 @@
 ---
 title: Best practice per la gestione di SEO e URL
-description: Scopri le best practice e le raccomandazioni SEO per l’implementazione di AEM.
+description: Scopri le best practice e i consigli SEO per l’implementazione di AEM.
 topic-tags: managing
 content-type: reference
 docset: aem65
@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
-source-wordcount: '3522'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3793'
+ht-degree: 98%
 
 ---
 
@@ -39,53 +39,53 @@ Ecco alcuni suggerimenti di carattere generale su come creare URL per l’ottimi
 
 * Separa le parole con un trattino.
 
-   * Usa i trattini (-) come separatori nei nomi delle pagine.
-   * Evita di usare la notazione camel, caratteri di sottolineatura e spazi.
+  * Usa i trattini (-) come separatori nei nomi delle pagine.
+  * Evita di usare la notazione camel, caratteri di sottolineatura e spazi.
 
 * Se possibile, evita l’uso di parametri di query. In caso di necessità, limitali a un massimo di due.
 
-   * Utilizza la struttura di directory per indicare l’architettura delle informazioni, se disponibile.
-   * Se non puoi utilizzare una struttura di directory, utilizza i selettori Sling invece delle stringhe di query nell’URL. Oltre a fornire il valore SEO, i selettori Sling consentono anche di rendere le pagine memorizzabili nella cache per Dispatcher.
+  * Utilizza la struttura di directory per indicare l’architettura delle informazioni, se disponibile.
+  * Se non puoi utilizzare una struttura di directory, utilizza i selettori Sling invece delle stringhe di query nell’URL. Oltre a fornire il valore SEO, i selettori Sling consentono anche di rendere le pagine memorizzabili nella cache per Dispatcher.
 
 * Un URL chiaro e leggibile è sempre meglio. La presenza di parole chiave nell’URL ne aumenta il valore.
 
-   * Se utilizzi selettori in una pagina, scegli quelli che forniscono valori semantici.
-   * Se un utente non riesce a interpretare l’URL, non può farlo nemmeno un motore di ricerca.
-   * Ad esempio:
-     `mybrand.com/products/product-detail.product-category.product-name.html`
-è da preferirsi a `mybrand.com/products/product-detail.1234.html`
+  * Se utilizzi selettori in una pagina, scegli quelli che forniscono valori semantici.
+  * Se un utente non riesce a interpretare l’URL, non può farlo nemmeno un motore di ricerca.
+  * Ad esempio:
+    `mybrand.com/products/product-detail.product-category.product-name.html`
+    è da preferirsi a `mybrand.com/products/product-detail.1234.html`
 
 * Se possibile, evita i sottodomini perché i motori di ricerca li considereranno come entità diverse, frammentando il valore SEO del sito.
 
-   * Utilizza invece percorsi secondari di primo livello. Ad esempio, usa `www.mybrand.com/es/home.html` invece di `es.mybrand.com/home.html`.
+  * Utilizza invece percorsi secondari di primo livello. Ad esempio, usa `www.mybrand.com/es/home.html` invece di `es.mybrand.com/home.html`.
 
-   * Pianifica la gerarchia dei contenuti in modo che corrisponda all’ordine in cui verranno presentati, in base a questa linea guida.
+  * Pianifica la gerarchia dei contenuti in modo che corrisponda all’ordine in cui verranno presentati, in base a questa linea guida.
 
 * Le parole chiave negli URL perdono efficacia se si trovano in URL lunghi e se non sono posizionate all’inizio. In altre parole, scegli URL brevi.
 
-   * Utilizza le tecniche e le funzioni di abbreviazione degli URL fornite da AEM per rimuovere gli elementi superflui.
-   * Ad esempio, `mybrand.com/en/myPage.html` è da preferirsi a `mybrand.com/content/my-brand/en/myPage.html`.
+  * Utilizza le tecniche e le funzioni di abbreviazione degli URL fornite da AEM per rimuovere gli elementi superflui.
+  * Ad esempio, `mybrand.com/en/myPage.html` è da preferirsi a `mybrand.com/content/my-brand/en/myPage.html`.
 
 * Utilizza URL canonici.
 
-   * Quando un URL può essere gestito da percorsi diversi o con parametri o selettori diversi, assicurati di usare un tag `rel=canonical` nella pagina.
+  * Quando un URL può essere gestito da percorsi diversi o con parametri o selettori diversi, assicurati di usare un tag `rel=canonical` nella pagina.
 
-   * Includi URL canonici nel codice del modello AEM.
+  * Includi URL canonici nel codice del modello AEM.
 
 * Se possibile, fai in modo che l’URL corrisponda al titolo della pagina.
 
-   * Invita gli autori dei contenuti a seguire questa pratica.
+  * Invita gli autori dei contenuti a seguire questa pratica.
 
 * Non richiedere il rispetto della distinzione tra maiuscole/minuscole nelle richieste URL.
 
-   * Configura il Dispatcher in modo da riscrivere in lettere minuscole tutte le richieste in entrata.
-   * Chiedi agli autori di contenuti di creare tutte le pagine utilizzando solo lettere minuscole.
+  * Configura il Dispatcher in modo da riscrivere in lettere minuscole tutte le richieste in entrata.
+  * Chiedi agli autori di contenuti di creare tutte le pagine utilizzando solo lettere minuscole.
 
 * Assicurati che ogni pagina sia gestita da un solo protocollo.
 
-   * A volte i siti vengono gestiti tramite `http` fino a quando l’utente non raggiunge una pagina contenente, ad esempio, un modulo di pagamento o di accesso, che viene gestito tramite `https`. Quando il collegamento viene effettuato da questa pagina, se l’utente può tornare alle `http` pagine e accedervi tramite questi `https`, il motore di ricerca ne tiene traccia come se fossero due pagine separate.
+  * A volte i siti vengono gestiti tramite `http` fino a quando l’utente non raggiunge una pagina contenente, ad esempio, un modulo di pagamento o di accesso, che viene gestito tramite `https`. Quando il collegamento viene effettuato da questa pagina, se l’utente può tornare alle `http` pagine e accedervi tramite questi `https`, il motore di ricerca ne tiene traccia come se fossero due pagine separate.
 
-   * Google attualmente preferisce le pagine `https` a quelle `http`. Contribuiscono a semplificare la gestione dell’intero sito tramite `https`.
+  * Google attualmente preferisce le pagine `https` a quelle `http`. Contribuiscono a semplificare la gestione dell’intero sito tramite `https`.
 
 ### Configurazione del server {#server-configuration}
 
@@ -93,7 +93,7 @@ Dal punto di vista della configurazione del server, puoi adottare le seguenti mi
 
 * Utilizza un file `robots.txt` per bloccare la ricerca per indicizzazione di qualsiasi contenuto che non deve essere indicizzato.
 
-   * Blocca **tutte** le operazioni di ricerca per indicizzazione negli ambienti di test.
+  * Blocca **tutte** le operazioni di ricerca per indicizzazione negli ambienti di test.
 
 * Quando lanci un nuovo sito con URL aggiornati, implementa i reindirizzamenti 301 per non perdere il tuo ranking SEO esistente.
 * Includi un favicon per il tuo sito.
@@ -206,7 +206,7 @@ La proprietà `sling:alias` ti permette di risolverlo anche con Adobe. Puoi aggi
 * Una proprietà aggiunta a tale pagina:
   `sling:alias` = `casa`
 
-Questo flusso permette agli strumenti di traduzione di AEM, come l’utilità di gestione di più siti, di continuare a mantenere una relazione tra:
+Questo flusso permette agli strumenti di traduzione di AEM, come Multi-Site Manager, di continuare a mantenere una relazione tra:
 
 * `/en/home`
 
@@ -245,7 +245,7 @@ Ecco un esempio di scenario in cui si verifica questo problema:
 
 1. Il Dispatcher memorizza nella cache la risposta in `/my-page.html` e restituisce la risposta all’utente.
 1. Un autore di contenuti modifica e attiva la pagina.
-1. L’agente di svuotamento del Dispatcher invia una richiesta di annullamento della validità per `/content/my-brand/my-page`**.** Poiché il Dispatcher non ha una pagina memorizzata nella cache in questo percorso, il contenuto precedente rimane memorizzato nella cache e non viene aggiornato.
+1. L&#39;agente di svuotamento del Dispatcher invia una richiesta di annullamento della validità per `/content/my-brand/my-page`**.** Poiché Dispatcher non ha una pagina memorizzata nella cache in questo percorso, il contenuto precedente rimane memorizzato nella cache e non è aggiornato.
 
 Sono disponibili vari modi per configurare regole di eliminazione personalizzate che mappano l’URL più breve all’URL più lungo per consentire l’annullamento della validità della cache.
 
@@ -253,7 +253,7 @@ Esiste però anche una soluzione più semplice per gestire questo problema:
 
 1. **Regole di SlingResourceResolver**
 
-   Utilizzando la console web (ad esempio localhost:4502/system/console/configMgr), puoi configurare Sling Resource Resolver:
+   Utilizzando la console web (ad esempio, localhost:4502/system/console/configMgr) è possibile configurare Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.

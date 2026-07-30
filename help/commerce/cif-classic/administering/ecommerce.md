@@ -1,6 +1,6 @@
 ---
 title: Framework di integrazione eCommerce
-description: L’eCommerce dell’AEM aiuta gli esperti di marketing a fornire esperienze di acquisto personalizzate e di marchio attraverso punti di contatto web, mobili e sociali.
+description: AEM eCommerce consente agli addetti al marketing di fornire esperienze di acquisto personalizzate e con marchio attraverso punti di contatto web, mobili e social network.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '788'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 * [Concetti](/help/commerce/cif-classic/administering/concepts.md)
 * [Amministrazione (generica)](/help/commerce/cif-classic/administering/generic.md)
 
-L&#39;Adobe fornisce due versioni della Commerce integration framework:
+Adobe fornisce due versioni di Commerce integration framework:
 
 <table>
  <tbody>
@@ -51,7 +51,7 @@ L&#39;Adobe fornisce due versioni della Commerce integration framework:
   </tr>
   <tr>
    <td><p>Front-end</p> </td>
-   <td><p>Pagine sottoposte a rendering lato server dell’AEM</p> </td>
+   <td><p>Pagine sottoposte a rendering lato server di AEM</p> </td>
    <td>Applicazione a pagina mista (rendering ibrido)</td>
   </tr>
   <tr>
@@ -88,7 +88,7 @@ L&#39;Adobe fornisce due versioni della Commerce integration framework:
   </tr>
   <tr>
    <td>Disponibilità</td>
-   <td><p>Sì. COMMERCE CLOUD SAP (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (impostazione predefinita) e mantenere la compatibilità con Hybris 4</p> <p>Commerce Cloud Salesforce (connettore open source per supportare AEM 6.4)</p> </td>
+   <td><p>Sì. SAP Commerce Cloud (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (impostazione predefinita) e mantenere la compatibilità con Hybris 4</p> <p>Salesforce Commerce Cloud (connettore open source per supportare AEM 6.4)</p> </td>
    <td>Sì tramite open source tramite GitHub. Adobe Commerce (supporta 2.3.2 (impostazione predefinita) e compatibile con 2.3.1).</td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ L’eCommerce, insieme al Product Information Management (PIM), gestisce le atti
 * Record di storage live e centralizzati
 * Interfacce web
 
-L’eCommerce dell’AEM aiuta gli esperti di marketing a fornire esperienze di acquisto personalizzate e di marchio attraverso punti di contatto web, mobili e sociali. L’ambiente di authoring AEM consente di personalizzare pagine e componenti in base al contesto del visitatore target e alle strategie di merchandising, ad esempio:
+AEM eCommerce consente agli addetti al marketing di fornire esperienze di acquisto personalizzate e con marchio attraverso punti di contatto web, mobili e social network. L’ambiente di authoring di AEM consente di personalizzare pagine e componenti in base al contesto del visitatore target e alle strategie di merchandising, ad esempio:
 
 * Pagine prodotto
 * Componenti del carrello
@@ -129,44 +129,44 @@ L’implementazione consente l’accesso in tempo reale alle informazioni sui pr
 
 ## Caratteristiche principali {#main-features}
 
-L’eCommerce dell’AEM fornisce:
+AEM eCommerce fornisce:
 
-* Alcuni **componenti AEM preconfigurati** per illustrare ciò che è possibile ottenere per il progetto:
+* Alcuni **componenti predefiniti di AEM** per illustrare cosa è possibile ottenere per il progetto:
 
-   * Display del prodotto
-   * Carrello
-   * Check-out
-   * Prodotti visualizzati di recente
-   * Voucher
-   * e altri
+  * Display del prodotto
+  * Carrello
+  * Check-out
+  * Prodotti visualizzati di recente
+  * Voucher
+  * e altri
 
   ![esempio di componenti geometrixx](/help/sites-administering/assets/chlimage_1-130.png)
 
   >[!NOTE]
   >
-  >Il framework di integrazione fornito dall’AEM consente inoltre di creare componenti AEM aggiuntivi per le funzionalità di e-commerce, indipendentemente dal motore di eCommerce specifico.
+  >Il framework di integrazione fornito da AEM consente inoltre di creare componenti AEM aggiuntivi per le funzionalità commerce, indipendentemente dal motore di eCommerce specifico.
 
 * **Ricerca** - utilizzando:
 
-   * la ricerca AEM
-   * la ricerca del sistema di e-commerce
-   * una ricerca di terze parti
-   * o una combinazione degli stessi.
+  * la ricerca AEM
+  * la ricerca del sistema di e-commerce
+  * una ricerca di terze parti
+  * o una combinazione degli stessi.
 
   ![esempio di ricerca](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Utilizza la funzionalità AEM per **presentare i contenuti su più canali**, che si tratti della finestra del browser completa o del dispositivo mobile. In questo modo i contenuti vengono consegnati nel formato richiesto dai visitatori.
+* Utilizza la funzionalità di AEM per **presentare i contenuti su più canali**, che si tratti della finestra del browser completa o del dispositivo mobile. In questo modo i contenuti vengono consegnati nel formato richiesto dai visitatori.
 
   ![esempio visualizzazione mobile](/help/sites-administering/assets/chlimage_1-132.png)
 
-* Possibilità di **sviluppare un&#39;implementazione di integrazione personalizzata basata sul [framework eCommerce dell&#39;AEM](#the-framework)**.
+* Possibilità di **sviluppare un&#39;implementazione di integrazione personalizzata basata sul [framework eCommerce di AEM](#the-framework)**.
 
   Le due implementazioni attualmente disponibili sono entrambe basate sulla stessa API generale (il framework). L’implementazione di una nuova integrazione comporta solo l’implementazione delle funzioni necessarie per l’integrazione. I componenti front-end possono essere utilizzati da qualsiasi nuova implementazione in quanto utilizzano le interfacce (in modo che siano indipendenti dall’implementazione).
 
 * Possibilità di sviluppare **attività e commercio basate sull&#39;esperienza in base ai dati e all&#39;attività dell&#39;acquirente**. Questo consente di realizzare molti scenari:
 
-   * Un esempio potrebbe essere la riduzione delle spese di spedizione quando l&#39;ordine totale supera un importo specifico.
-   * Un altro potrebbe consentirti di fornire offerte stagionali che utilizzano dati di profilo (ad esempio, posizione). Questi possono quindi essere evidenziati, anche in questo caso a seconda di altri fattori, se necessario.
+  * Un esempio potrebbe essere la riduzione delle spese di spedizione quando l&#39;ordine totale supera un importo specifico.
+  * Un altro potrebbe consentirti di fornire offerte stagionali che utilizzano dati di profilo (ad esempio, posizione). Questi possono quindi essere evidenziati, anche in questo caso a seconda di altri fattori, se necessario.
 
   Nell’esempio seguente viene mostrato un teaser poiché il contenuto del carrello è inferiore a $ 75:
 
@@ -178,9 +178,9 @@ L’eCommerce dell’AEM fornisce:
 
 * E altre caratteristiche, tra cui:
 
-   * Contenuto del carrello mantenuto nelle sessioni
-   * Cronologia ordine completa
-   * Aggiornamento del catalogo rapido
+  * Contenuto del carrello mantenuto nelle sessioni
+  * Cronologia ordine completa
+  * Aggiornamento del catalogo rapido
 
 ## Il framework {#the-framework}
 

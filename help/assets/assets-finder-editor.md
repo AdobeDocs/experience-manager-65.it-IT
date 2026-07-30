@@ -8,8 +8,8 @@ exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 1%
+source-wordcount: '2121'
+ht-degree: 2%
 
 ---
 
@@ -206,7 +206,7 @@ Quando si crea la pagina Editor risorse, è buona norma creare la pagina diretta
 Per creare una pagina Editor risorse:
 
 1. Nella scheda **[!UICONTROL Siti Web]**, passa alla posizione in cui desideri creare una pagina Editor risorse e fai clic su **Nuovo**.
-1. Geometrixx Seleziona **Editor risorse** e fai clic su **Crea**. La nuova pagina viene creata e la pagina è elencata nella scheda **Siti Web**.
+1. Seleziona **Editor risorse Geometrixx** e fai clic su **Crea**. La nuova pagina viene creata e la pagina è elencata nella scheda **Siti Web**.
 
 ![schermata_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
@@ -214,7 +214,7 @@ La pagina di base creata utilizzando il modello Editor risorse di Geometrixx ha 
 
 ![assetshare5](assets/assetshare5.png)
 
-Per personalizzare la pagina Editor risorse, utilizza gli elementi della barra laterale. Geometrixx La pagina Editor risorse a cui si accede dal **Press Center** è una versione personalizzata di una pagina basata su questo modello:
+Per personalizzare la pagina Editor risorse, utilizza gli elementi della barra laterale. La pagina Editor risorse a cui si accede dal **Centro stampa Geometrixx** è una versione personalizzata di una pagina basata su questo modello:
 
 ![assetshare6](assets/assetshare6.png)
 
@@ -330,7 +330,7 @@ Di seguito è riportato un componente Tag popolato:
 
 ![schermata_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura  {#thumbnail}
+#### Miniatura {#thumbnail}
 
 Il componente Miniatura è il punto in cui la risorsa visualizza la miniatura selezionata (per molti dei formati la miniatura viene estratta automaticamente). Inoltre, il componente visualizza il nome del file e [le azioni che puoi modificare](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -393,7 +393,7 @@ Con [!DNL Experience Manager Assets] è possibile modificare più risorse contem
 
 Per modificare più risorse con la pagina Editor risorse:
 
-1. Apri la pagina **Centro stampa** Geometrixx:
+1. Apri la pagina **Centro stampa** di Geometrixx:
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Seleziona le risorse:
@@ -404,7 +404,7 @@ Per modificare più risorse con la pagina Editor risorse:
    Per selezionare un intervallo di risorse: fai clic sulla prima risorsa, quindi `Shift + click` sull&#39;ultima.
 
 1. Fai clic su **Modifica metadati** nel campo **Azioni** (parte sinistra della pagina).
-1. La pagina di Geometrixx **Press Center Asset Editor** si apre in una nuova scheda. I metadati delle risorse vengono visualizzati come segue:
+1. La pagina Geometrixx **Press Center Asset Editor** si apre in una nuova scheda. I metadati delle risorse vengono visualizzati come segue:
 
    * Viene visualizzato in corsivo un tag che non si applica a tutte le risorse, ma solo ad alcune.
    * Un tag applicato a tutte le risorse viene visualizzato con un font normale.
