@@ -1,26 +1,26 @@
 ---
-title: Produttore catalogo
+title: Catalog Producer
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-description: Produttore catalogo
+description: Catalog Producer
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
 
-# Produttore catalogo{#catalog-producer}
+# Catalog Producer{#catalog-producer}
 
 Scopri come utilizzare Catalog Producer in AEM Assets per generare cataloghi di prodotti utilizzando le risorse digitali.
 
-Con Adobe Experience Manager (AEM) Assets Catalog Producer, puoi creare cataloghi per i prodotti del tuo marchio utilizzando modelli InDesign importati da un’applicazione InDesign. Per importare modelli InDesign, devi prima integrare AEM Assets con un server InDesign.
+Con Adobe Experience Manager (AEM) Assets Catalog Producer, puoi creare cataloghi per i prodotti del tuo marchio utilizzando modelli di InDesign importati da un’applicazione InDesign. Per importare modelli di InDesign, devi prima integrare AEM Assets con un server InDesign.
 
 ## Integrazione con il server InDesign {#integrating-with-indesign-server}
 
@@ -28,9 +28,9 @@ Come parte del processo di integrazione, configura il flusso di lavoro **Risorsa
 
 >[!NOTE]
 >
->Puoi generare modelli InDesign da file InDesign prima di importarli in AEM Assets. Per ulteriori dettagli, vedere [Utilizzo di file e modelli](https://helpx.adobe.com/it/indesign/using/files-templates.html).
+>Puoi generare modelli InDesign da file InDesign prima di importarli in AEM Assets. Per ulteriori dettagli, vedere [Utilizzo di file e modelli](https://helpx.adobe.com/indesign/using/files-templates.html).
 >
->Puoi mappare gli elementi nei modelli InDesign ai tag XML. I tag mappati vengono visualizzati come proprietà quando mappate le proprietà del prodotto con le proprietà del modello in Catalog Producer. Per informazioni sui tag XML nei file InDesign, vedere [Contenuto tag per XML](https://helpx.adobe.com/it/indesign/using/tagging-content-xml.html).
+>Puoi mappare gli elementi nei modelli InDesign ai tag XML. I tag mappati vengono visualizzati come proprietà quando mappate le proprietà del prodotto con le proprietà del modello in Catalog Producer. Per informazioni sui tag XML nei file InDesign, vedere [Contenuto tag per XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Come parte del processo di integrazione, configura il flusso di lavoro **Risorsa
 
 Catalog Producer utilizza i dati PIM (Product Information Management) per mappare le proprietà del prodotto con le proprietà XML visualizzate nel modello. Per creare un catalogo, effettua le seguenti operazioni:
 
-1. Nell&#39;interfaccia utente di Assets, fare clic sul logo **AEM** e passare a **Assets > Cataloghi**.
+1. Dall&#39;interfaccia utente di Assets, fai clic sul **logo AEM** e passa a **Assets > Cataloghi**.
 1. Nella pagina **Cataloghi**, fai clic su **Crea** nella barra degli strumenti, quindi seleziona **Catalogo** dall&#39;elenco.
 1. Nella pagina **Crea catalogo**, immetti un nome e una descrizione (facoltativa) per il catalogo e specifica eventuali tag. Puoi anche aggiungere una miniatura per il catalogo.
 
@@ -87,15 +87,15 @@ Catalog Producer utilizza i dati PIM (Product Information Management) per mappar
 
    >[!NOTE]
    >
-   >Per modificare i metadati per un prodotto a cui si fa riferimento, accedi alla console Prodotti (**Logo AEM** > **Commerce** > **Prodotti**) e seleziona il prodotto. Quindi, fai clic sull&#39;icona **Visualizza proprietà** nella barra degli strumenti e modifica i metadati nella pagina Proprietà della risorsa.
+   >Per modificare i metadati di un prodotto a cui si fa riferimento, accedi alla console Prodotti (**Logo AEM** > **Commerce** > **Prodotti**) e seleziona il prodotto. Quindi, fai clic sull&#39;icona **Visualizza proprietà** nella barra degli strumenti e modifica i metadati nella pagina Proprietà della risorsa.
 
 1. Per ridisporre le pagine nel catalogo, fai clic sull&#39;icona **Crea** nella barra degli strumenti, quindi scegli **Unisci** dal menu. Nella procedura guidata, il carosello nella parte superiore consente di riordinare le pagine trascinandole. È inoltre possibile rimuovere le pagine.
 
-1. Fai clic su **Avanti**. Per aggiungere un file InDesign esistente come frontespizio, fare clic su **Sfoglia** accanto alla casella **Scegli frontespizio** e specificare il percorso per il modello di frontespizio.
+1. Fai clic su **Avanti**. Per aggiungere un file InDesign esistente come frontespizio, fai clic su **Sfoglia** accanto alla casella **Scegli frontespizio** e specifica il percorso per il modello di frontespizio.
 1. Fai clic su **Salva**, quindi su **Fine** per chiudere la finestra di dialogo di conferma.
 Quando si seleziona l&#39;opzione **Fine**, viene visualizzata una finestra di dialogo che consente di scegliere se si desidera una copia trasformata PDF.
    ![esporta in pdf](assets/CatalogPDF.png)
-Se è selezionata l&#39;opzione Acrobat(PDF), viene creata una copia trasformata pdf in **/jcr:content/renditions** oltre alla copia trasformata indesign. Puoi scaricare tutte le rappresentazioni selezionando la casella di controllo &quot;Rappresentazioni&quot; nella finestra di dialogo di download.
+   Se è selezionata l&#39;opzione Acrobat(PDF), viene creata una copia trasformata pdf in **/jcr:content/renditions** oltre alla copia trasformata indesign. Puoi scaricare tutte le rappresentazioni selezionando la casella di controllo &quot;Rappresentazioni&quot; nella finestra di dialogo di download.
 
 1. Per generare un&#39;anteprima per il catalogo creato, selezionarla nella console **Cataloghi**, quindi fare clic sull&#39;icona **Anteprima** nella barra degli strumenti.
 
