@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Il componente aggiuntivo CIF estende l’authoring AEM con funzionalità specifiche per l’e-commerce. Questo consente agli autori di creare e gestire in modo efficiente esperienze relative al commercio, accedendo ai dati e ai contenuti dei prodotti senza uscire dal contesto.
+Il componente aggiuntivo CIF estende l’authoring di AEM con funzionalità specifiche per l’e-commerce. Questo consente agli autori di creare e gestire in modo efficiente esperienze relative al commercio, accedendo ai dati e ai contenuti dei prodotti senza uscire dal contesto.
 
 ## Pickers {#pickers}
 
@@ -36,7 +36,7 @@ Facendo clic sulla categoria principale, l’autore ritorna al livello del prodo
 
 ![Componente teaser senza selezione](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-La finestra di dialogo per la configurazione di questo componente richiede un prodotto. L’CIF utilizza lo SKU come identificatore del prodotto. Gli autori possono immettere manualmente lo SKU oppure fare clic sull’icona della cartella per aprire il selettore prodotti. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome del prodotto selezionato
+La finestra di dialogo per la configurazione di questo componente richiede un prodotto. CIF utilizza lo SKU come identificatore del prodotto. Gli autori possono immettere manualmente lo SKU oppure fare clic sull’icona della cartella per aprire il selettore prodotti. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome del prodotto selezionato
 
 ![Componente teaser con selezione](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
@@ -50,7 +50,7 @@ Questo selettore può offrire una navigazione nella struttura del catalogo per t
 
 ![Componente carosello senza selezione](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-La finestra di dialogo per configurazione di questo componente richiede le categorie 1: n. L’CIF utilizza l’UID/ID come identificatore della categoria. Gli autori possono immettere manualmente l’UID oppure fare clic sull’icona della cartella per aprire il selettore delle categorie. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome della categoria selezionata.
+La finestra di dialogo per configurazione di questo componente richiede le categorie 1: n. CIF utilizza UID/ID come identificatore della categoria. Gli autori possono accedere manualmente a UID oppure fare clic sull’icona della cartella per aprire il selettore delle categorie. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome della categoria selezionata.
 
 ![Componente carosello con selezione](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
@@ -68,7 +68,7 @@ Analogamente alle risorse, i prodotti possono essere aggiunti a una pagina (crea
 
 ### Aggiunta di collegamenti nei campi di testo mediante l’editor Rich Text {#rte}
 
-Le pagine del catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine AEM. L’CIF aggiunge una nuova azione &quot;Collegamenti Commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
+Le pagine del catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine di AEM. CIF aggiunge una nuova azione &quot;Collegamenti Commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
 
 ![EDITOR RICH TEXT](/help/commerce/cif/assets/authoring/RTE.png)
 
@@ -80,7 +80,7 @@ Questo crea un collegamento segnaposto che viene sostituito da un collegamento r
 
 ### Accesso al contenuto prodotto associato {#associated-content}
 
-Se Universal Editor riconosce i prodotti 1:n in una pagina, il pannello laterale mostra automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente ai contenuti AEM con tag assegnati al prodotto. Per ulteriori informazioni, vedere [arricchire i dati del prodotto con i contenuti AEM associati](./enrich-product-associated-content.md). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se nella pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Assets&quot;.
+Se Universal Editor riconosce 1:n prodotti in una pagina, nel pannello laterale viene visualizzata automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente al contenuto AEM con tag del prodotto. Per ulteriori informazioni, vedere [arricchire i dati del prodotto con il contenuto AEM associato](./enrich-product-associated-content.md). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se nella pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Assets&quot;.
 
 ![Pannello lato dati prodotto](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
@@ -96,7 +96,7 @@ I componenti visualizzano un indicatore visivo se la data utilizzata è pubblica
 
 ## Omnisearch {#omnisearch}
 
-L’utilizzo di Omnisearch è un modo semplice per i professionisti di trovare i contenuti AEM e i dati del catalogo dei prodotti utilizzando la ricerca full-text. Omnisearch eseguirà una ricerca full-text in AEM e nel backend di e-commerce per trovare gli oggetti del catalogo dei prodotti nel backend di e-commerce e il contenuto dell’AEM. I risultati dell’AEM includono anche contenuti che sono stati taggati con dati di prodotto/categoria.
+L’utilizzo di Omnisearch è un modo semplice per i professionisti di trovare i contenuti e i dati del catalogo dei prodotti di AEM utilizzando la ricerca full-text. Omnisearch eseguirà una ricerca full-text in AEM e nel backend di Commerce per trovare gli oggetti del catalogo dei prodotti nel backend di Commerce e nel contenuto di AEM. I risultati di AEM includono anche i contenuti a cui sono stati assegnati tag con dati di prodotto/categoria.
 
 ![Omnisearch](/help/commerce/cif/assets/authoring/omnisearch.png)
 
