@@ -148,36 +148,36 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 * Archetipo progetto Maven app a pagina singola 1.0.6+ per i nuovi progetti, consulta [GitHub per le note sulla versione](https://github.com/adobe/aem-spa-project-archetype/releases).
 * HTL versione 1.4, consulta [GitHub per le note sulla versione](https://github.com/adobe/htl-spec/releases/tag/1.4).
 
-   * Operatore &quot;in&quot; per stringhe, array e oggetti:
+  * Operatore &quot;in&quot; per stringhe, array e oggetti:
 
-     ```html
-     ${'a' in 'abc'}
-     ${100 in myArray}
-     ${'a' in myObject}
-     ```
+    ```html
+    ${'a' in 'abc'}
+    ${100 in myArray}
+    ${'a' in myObject}
+    ```
 
-   * Dichiarazioni di variabili con data-sly-set :
-     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+  * Dichiarazioni di variabili con data-sly-set :
+    `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Elenca e ripeti parametri di controllo: begin, step, end:
-     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+  * Elenca e ripeti parametri di controllo: begin, step, end:
+    `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-   * Identificatori per data-sly-unwrap:
+  * Identificatori per data-sly-unwrap:
 
-     ```html
-     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-     </div>
-     ```
+    ```html
+    <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+    text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+    </div>
+    ```
 
-   * Supporto per numeri negativi
+  * Supporto per numeri negativi
 
 * Componenti core 2.3.2+, consulta [GitHub per le note sulla versione](https://github.com/adobe/aem-core-wcm-components/releases).
 * Grid System per il contenitore di layout. Vedere [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
 * Clientlib Manager: ha impostato Google Closure Compiler come predefinito per la minimizzazione delle clientlibs di JavaScript (il vecchio predefinito era Yahoo YUI) e ha aggiornato Google Closure Compiler alla versione v20190121
 * Editor modelli e criteri
 
-   * Creare e modificare modelli per le app a pagina singola che utilizzano JS SDK (noto anche come editor SPA)
+  * Creare e modificare modelli per le app a pagina singola che utilizzano JS SDK (noto anche come editor SPA)
 
 * Sito di riferimento We.Retail 4.0, consulta [GitHub per le note sulla versione](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
 * Toolkit per aggiornare i siti esistenti in modo da utilizzare le funzionalità dell&#39;editor più recenti. Vedere [Archivio GitHub](https://github.com/adobe/aem-modernize-tools)
@@ -457,17 +457,17 @@ Questo processo di definizione delle priorità ha prodotto più di 750 modifiche
 * Implementazione del riferimento We.Retail ([ulteriori informazioni](/help/sites-developing/we-retail.md))
 * Archetipi progetto Maven:
 
-   * per siti full stack: [Progetto GitHub](https://github.com/adobe/aem-project-archetype)
-   * per le app a pagina singola con React/Angular: [Progetto GitHub](https://github.com/adobe/aem-spa-project-archetype)
+  * per siti full stack: [Progetto GitHub](https://github.com/adobe/aem-project-archetype)
+  * per le app a pagina singola con React/Angular: [Progetto GitHub](https://github.com/adobe/aem-spa-project-archetype)
 
 * Lettori AEM Screens per varie piattaforme di destinazione ([download](https://download.macromedia.com/screens/))
 
 * Modelli linguistici per contenuti avanzati. L&#39;inglese è preinstallato - è possibile scaricare più lingue
 
-   * [Tedesco](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [Spagnolo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [Italiano](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [Francese](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+  * [Tedesco](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+  * [Spagnolo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+  * [Italiano](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+  * [Francese](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * Suite di strumenti di modernizzazione AEM, ad esempio Strumento di conversione delle finestre di dialogo. ([Progetto GitHub](https://github.com/adobe/aem-modernize-tools))
 
@@ -526,9 +526,9 @@ Per [!DNL Adobe Experience Manager] 6.5, [leggere l&#39;elenco delle funzionalit
 
   In ognuna di queste azioni, verificare che la proprietà `htmllibmanager.fileSystemOutputCacheLocation` non sia una stringa vuota:
 
-   1. Chiamata di `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
-   2. Aggiornamento ad AEM 6.5.
-   3. Esecuzione della &quot;migrazione lenta dei contenuti&quot; su AEM 6.5.
+  1. Chiamata di `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
+  2. Aggiornamento ad AEM 6.5.
+  3. Esecuzione della &quot;migrazione lenta dei contenuti&quot; su AEM 6.5.
 
 * Se utilizzi JDK 11 con l’istanza AEM 6.5, alcune pagine potrebbero risultare vuote dopo la distribuzione di alcuni pacchetti. Nel file di registro viene visualizzato il seguente messaggio di errore:
 
@@ -575,13 +575,13 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * Quando un modulo adattivo è configurato per aggiornare dinamicamente i valori di un componente e l’istanza Publish che ospita il modulo è accessibile tramite Dispatcher, la funzionalità per aggiornare dinamicamente i valori di un campo smette di funzionare. Per risolvere il problema, nell&#39;istanza di pubblicazione aprire CRXDE, passare a `/libs/fd/af/runtime/clientlibs/guideChartReducer` e creare la proprietà elencata di seguito.
 
-   * Nome: allowProxy
-   * Tipo: booleano
-   * Valore: true
-   * Protetto: False
-   * Obbligatorio: False
-   * Multiplo: False
-   * Creazione automatica: False
+  * Nome: allowProxy
+  * Tipo: booleano
+  * Valore: true
+  * Protetto: False
+  * Obbligatorio: False
+  * Multiplo: False
+  * Creazione automatica: False
 
   La proprietà consente alle librerie client nella cartella runtime di accedere ai proxy. (CQ-4268679)
 
