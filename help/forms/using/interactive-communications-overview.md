@@ -8,15 +8,20 @@ exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 2e13a0cd09477ccd5374f1850efad882c8222f0a
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 8%
+source-wordcount: '526'
+ht-degree: 10%
 
 ---
 
 
 # Panoramica delle comunicazioni interattive {#interactive-communications-overview}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
+| AEM 6.5 | Questo articolo |
 
 Questo articolo include una panoramica, alcuni esempi di casi di utilizzo, un flusso di lavoro per la creazione e differenze tra comunicazione interattiva e lettera.
 
