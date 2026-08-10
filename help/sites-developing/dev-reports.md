@@ -158,7 +158,7 @@ Se le fasi e gli elementi dettagliati sono:
 
 1. Trasforma i risultati restituiti dalla [query iniziale (reportbase)](#query-definition) nel set di risultati di base utilizzando gli estrattori di valori.
 
-   Gli estrattori di valori vengono scelti automaticamente in base al tipo di colonna [](#column-specific-definitions). Vengono utilizzati per leggere i valori dalla query JCR sottostante e creare un set di risultati da essi; dopo di che è possibile applicare ulteriori elaborazioni. Ad esempio, per il tipo `diff`, l&#39;estrattore di valore legge due proprietà, calcola il singolo valore che viene quindi aggiunto al set di risultati. Impossibile configurare gli estrattori di valore.
+   Gli estrattori di valori vengono scelti automaticamente in base al tipo di colonna [&#128279;](#column-specific-definitions). Vengono utilizzati per leggere i valori dalla query JCR sottostante e creare un set di risultati da essi; dopo di che è possibile applicare ulteriori elaborazioni. Ad esempio, per il tipo `diff`, l&#39;estrattore di valore legge due proprietà, calcola il singolo valore che viene quindi aggiunto al set di risultati. Impossibile configurare gli estrattori di valore.
 
 1. A questo set di risultati iniziale, contenente dati non elaborati, viene applicato [filtro iniziale](#column-specific-definitions) (*fase raw*).
 
@@ -236,7 +236,7 @@ Ogni tipo di report richiede un componente contenitore derivato da `/libs/cq/rep
 Questo componente funge da contenitore per il rapporto nel suo complesso e fornisce informazioni per:
 
 * La [definizione query](#query-definition).
-* Finestra di dialogo [ (facoltativo)](#configuration-dialog) per la configurazione del report.
+* Finestra di dialogo [&#x200B; (facoltativo)](#configuration-dialog) per la configurazione del report.
 * Qualsiasi [grafico](#chart-definitions) integrato con il report.
 
 ```

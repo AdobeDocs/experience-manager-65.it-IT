@@ -526,7 +526,7 @@ title="{text}"/>
 
 #### Installazione di un layout personalizzato {#installing-a-custom-layout}
 
-Per installare un layout personalizzato, accedi alla sezione **Bundle **console web OSGI del portlet) e carica il bundle.
+Per installare un layout personalizzato, accedi alla sezione **Bundle &#x200B;** console web OSGI del portlet) e carica il bundle.
 
 #### Pacchetti {#packages}
 
@@ -610,7 +610,7 @@ Se il sito non dispone di regole severe per la gestione delle informazioni sulle
 
 I seguenti servizi hanno un’implementazione predefinita nel portlet dei contenuti (con la corrispondente interfaccia Java). Per personalizzare, è necessario distribuire nell&#39;applicazione portlet un bundle contenente la nuova implementazione del servizio.
 
-Quando implementi tale servizio, assicurati di impostare la proprietà **service.ranking** del servizio su un valore positivo. L’implementazione predefinita utilizza la classificazione** 0** e il portlet utilizza il servizio con la classificazione più alta.
+Quando implementi tale servizio, assicurati di impostare la proprietà **service.ranking** del servizio su un valore positivo. L’implementazione predefinita utilizza la classificazione **&#x200B; 0** e il portlet utilizza il servizio con la classificazione più alta.
 
 | **Nome** | **Descrizione** | **Comportamento predefinito** |
 |---|---|---|
@@ -715,7 +715,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 1. Fai doppio clic sul componente per aprire le proprietà Portlet.
 1. Nel menu a discesa **Entità portlet**, selezionare il portlet dall&#39;elenco.
-1. Selezionare o deselezionare la casella di controllo **Nascondi barra del titolo **a seconda che si desideri visualizzare la barra del titolo del portlet.
+1. Selezionare o deselezionare la casella di controllo **Nascondi barra del titolo &#x200B;** a seconda che si desideri visualizzare la barra del titolo del portlet.
 1. Nel campo **Finestra portlet**, immettere un ID univoco per la finestra portlet, se necessario.
 
    >[!NOTE]

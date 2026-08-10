@@ -955,7 +955,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
 >[!CAUTION]
 >
->Se la memorizzazione nella cache di [ in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
+>Se la memorizzazione nella cache di [&#x200B; in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
 
 >[!NOTE]
 >
