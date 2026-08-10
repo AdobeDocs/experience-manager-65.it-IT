@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6110'
+source-wordcount: '6118'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Per configurare il contenuto di AEM affinché venga visualizzato in un portale, 
 
 >[!CAUTION]
 >
->AEM Portal Director è diventato obsoleto a partire da AEM 6.4. Vedere [Funzioni obsolete e rimosse](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>AEM Portal Director è diventato obsoleto a partire da AEM 6.4. Vedere [Funzioni obsolete e rimosse](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Amministrazione del portlet dei contenuti di AEM {#administering-the-aem-content-portlet}
 
@@ -389,7 +389,7 @@ Per aprire la pagina di amministrazione del sito web o per modificare una pagina
    </LoginModule>
    ```
 
-1. Nella console di configurazione OSGi, per impostazione predefinita disponibile all&#39;indirizzo https://localhost:4502/system/console/configMgr, seleziona **CQ PIN Authentication Handler** dal menu a discesa.
+1. Nella console di configurazione OSGi, per impostazione predefinita disponibile all&#39;indirizzo https://localhost:4502/system/console/configMgr, seleziona **Gestore autenticazione PIN CQ** dal menu a discesa.
 1. Modificare il parametro **URL Root Path** in modo che contenga solo il valore singolo **/**.
 
 ### Privilegi {#privileges}
@@ -526,7 +526,7 @@ title="{text}"/>
 
 #### Installazione di un layout personalizzato {#installing-a-custom-layout}
 
-Per installare un layout personalizzato, accedi alla sezione **Bundle &#x200B;** console web OSGI del portlet) e carica il bundle.
+Per installare un layout personalizzato, accedi alla sezione **Bundle **console web OSGI del portlet) e carica il bundle.
 
 #### Pacchetti {#packages}
 
@@ -610,7 +610,7 @@ Se il sito non dispone di regole severe per la gestione delle informazioni sulle
 
 I seguenti servizi hanno un’implementazione predefinita nel portlet dei contenuti (con la corrispondente interfaccia Java). Per personalizzare, è necessario distribuire nell&#39;applicazione portlet un bundle contenente la nuova implementazione del servizio.
 
-Quando implementi tale servizio, assicurati di impostare la proprietà **service.ranking** del servizio su un valore positivo. L’implementazione predefinita utilizza la classificazione **&#x200B; 0** e il portlet utilizza il servizio con la classificazione più alta.
+Quando implementi tale servizio, assicurati di impostare la proprietà **service.ranking** del servizio su un valore positivo. L’implementazione predefinita utilizza la classificazione** 0** e il portlet utilizza il servizio con la classificazione più alta.
 
 | **Nome** | **Descrizione** | **Comportamento predefinito** |
 |---|---|---|
@@ -715,7 +715,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 1. Fai doppio clic sul componente per aprire le proprietà Portlet.
 1. Nel menu a discesa **Entità portlet**, selezionare il portlet dall&#39;elenco.
-1. Selezionare o deselezionare la casella di controllo **Nascondi barra del titolo &#x200B;** a seconda che si desideri visualizzare la barra del titolo del portlet.
+1. Selezionare o deselezionare la casella di controllo **Nascondi barra del titolo **a seconda che si desideri visualizzare la barra del titolo del portlet.
 1. Nel campo **Finestra portlet**, immettere un ID univoco per la finestra portlet, se necessario.
 
    >[!NOTE]
@@ -730,7 +730,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 Per accedere al contenuto fornito da AEM WCM, il server di portale deve essere dotato del portlet AEM Portal Director. A tale scopo, installare, configurare e aggiungere il portlet alla pagina del portale utilizzando i passaggi descritti in questa sezione.
 
-Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Autore in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. Scarica il file .war dell’applicazione prima di utilizzarlo.
+Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Author in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. Scarica il file .war dell’applicazione prima di utilizzarlo.
 
 ### Download del file .war {#downloading-the-war-file}
 
@@ -776,7 +776,7 @@ Per configurare il portlet:
    * **URL di base autore**: URL di base per l&#39;istanza di authoring di AEM.
    * **URL di base pubblicazione**: URL di base per l&#39;istanza di pubblicazione di AEM.
    * **Autore utilizzato come pubblicazione**: l&#39;istanza dell&#39;autore è utilizzata come pubblicazione
-istanza (per lo sviluppo)?
+     istanza (per lo sviluppo)?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

@@ -10,8 +10,8 @@ exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1185'
+workflow-type: tm+mt
+source-wordcount: '1222'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ I documenti PDF creati da PDF Generator in Acrobat 5.0 o versione successiva con
 
 I metadati del documento contengono informazioni (ma non solo) che vengono visualizzate anche nella scheda Descrizione della finestra di dialogo Proprietà documento in Acrobat. Le modifiche apportate nella scheda Descrizione vengon riflesse nei metadati del documento. I metadati del documento possono essere estesi e modificati utilizzando prodotti di terze parti.
 
-Adobe Extensible Metadata Platform (XMP) fornisce alle applicazioni Adobe un framework XML comune che standardizza la creazione, l’elaborazione e lo scambio di metadati del documento tra i flussi di lavoro di pubblicazione. Puoi salvare e importare il codice sorgente XML dei metadati del documento in formato XMP per semplificare la condivisione dei metadati tra vari documenti. Per ulteriori informazioni sui file di XMP, consulta [Extensible Metadata Platform (XMP)](https://www.adobe.com/it/products/xmp/) e il [centro sviluppatori Adobe XMP](https://www.adobe.com/devnet/xmp.html).
+Adobe Extensible Metadata Platform (XMP) fornisce alle applicazioni Adobe un framework XML comune che standardizza la creazione, l’elaborazione e lo scambio di metadati del documento tra i flussi di lavoro di pubblicazione. Puoi salvare e importare il codice sorgente XML dei metadati del documento in formato XMP per semplificare la condivisione dei metadati tra vari documenti. Per ulteriori informazioni sui file di XMP, consulta [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) e il [centro sviluppatori Adobe XMP](https://www.adobe.com/devnet/xmp.html).
 
 Puoi creare file XMP in Acrobat.
 
@@ -101,7 +101,7 @@ Se il file ZIP contiene più di un file HTML al livello più basso della relativ
 
    * Per utilizzare un file di impostazioni esistente, seleziona Carica file di impostazioni e fai clic su Sfoglia per passare alla posizione del file.
 
-1. Per caricare un file XMP, fai clic su Sfoglia e passa alla posizione del file. Per includere informazioni sui metadati standard, può essere utilizzato un file XMP. (Consulta [Informazioni sui file XMP](converting-files-using-pdf-generator.md#about-xmp-files)).
+1. Per caricare un file XMP, fai clic su Sfoglia e passa alla posizione del file. Per includere informazioni sui metadati standard, può essere utilizzato un file XMP. Consulta le [informazioni sui file XMP](converting-files-using-pdf-generator.md#about-xmp-files).
 1. Fai clic su Crea. Al momento della creazione del file, viene visualizzato un collegamento al file PDF.
 1. Fai clic sul collegamento per visualizzare il documento PDF in Acrobat.
 

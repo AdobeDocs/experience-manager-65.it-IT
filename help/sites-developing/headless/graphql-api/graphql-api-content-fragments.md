@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '5053'
-ht-degree: 50%
+source-wordcount: '5154'
+ht-degree: 51%
 
 ---
 
@@ -59,13 +59,13 @@ Per ulteriori informazioni sull’API di GraphQL, consulta le sezioni seguenti (
 
 * In [graphql.org](https://graphql.org):
 
-   * [Introduzione a GraphQL](https://graphql.org/learn)
+  * [Introduzione a GraphQL](https://graphql.org/learn)
 
-   * [Specifiche GraphQL](https://spec.graphql.org/)
+  * [Specifiche GraphQL](https://spec.graphql.org/)
 
 * In [graphql.com](https://graphql.com):
 
-   * [Tutorial](https://graphql.com/tutorials/)
+  * [Tutorial](https://graphql.com/tutorials/)
 
 
 L’implementazione di GraphQL per AEM si basa sulla libreria Java™ standard di GraphQL. Consulta:
@@ -82,15 +82,15 @@ GraphQL utilizza quanto segue:
 
 * **[Schemi e tipi](https://graphql.org/learn/schema/)**:
 
-   * Gli schemi vengono generati da AEM in base ai modelli di Frammenti di contenuto.
-   * Utilizzando i tuoi schemi, GraphQL presenta i tipi e le operazioni consentiti per l’implementazione GraphQL per AEM.
+  * Gli schemi vengono generati da AEM in base ai modelli di Frammenti di contenuto.
+  * Utilizzando i tuoi schemi, GraphQL presenta i tipi e le operazioni consentiti per l’implementazione GraphQL per AEM.
 
 * **[Campi](https://graphql.org/learn/queries/#fields)**
 
 * **[Endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#graphql-aem-endpoint)**
-   * Il percorso in AEM che risponde alle query GraphQL e fornisce accesso agli schemi GraphQL.
+  * Il percorso in AEM che risponde alle query GraphQL e fornisce accesso agli schemi GraphQL.
 
-   * Consulta [Abilitazione dell’endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) per ulteriori dettagli.
+  * Consulta [Abilitazione dell’endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) per ulteriori dettagli.
 
 Consulta[(GraphQL.org) Introduzione a GraphQL](https://graphql.org/learn/) per informazioni complete, che comprendono le [Best practice](https://graphql.org/learn/best-practices/).
 
@@ -155,12 +155,12 @@ Fornisce funzioni quali evidenziazione della sintassi, completamento automatico,
 I casi di utilizzo possono dipendere dal tipo di ambiente AEM:
 
 * ambiente di pubblicazione; utilizzato per:
-   * effettuare query sui dati per l’applicazione JS (caso di utilizzo standard)
+  * effettuare query sui dati per l’applicazione JS (caso di utilizzo standard)
 
 * ambiente di authoring; utilizzato per:
-   * effettuare query sui dati a “scopo di gestione dei contenuti”:
-      * GraphQL in AEM è un’API di sola lettura.
-      * L’API REST può essere utilizzata per le operazioni CR(u)D.
+  * effettuare query sui dati a “scopo di gestione dei contenuti”:
+    * GraphQL in AEM è un’API di sola lettura.
+    * L’API REST può essere utilizzata per le operazioni CR(u)D.
 
 ## Autorizzazioni {#permission}
 
@@ -198,7 +198,7 @@ Ad esempio, se un utente ha creato un modello di frammento di contenuto denomina
    * Tre di essi sono stati controllati dall&#39;utente: `author`, `main` e `referencearticle`.
 
    * Gli altri campi sono stati aggiunti automaticamente da AEM e rappresentano metodi utili per fornire informazioni su un determinato frammento di contenuto. In questo esempio,
-(i [campi di supporto](#helper-fields)) `_path`, `_metadata`, `_variations`.
+     (i [campi di supporto](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Un Frammento di contenuto basato sul modello di articolo creato da un utente può essere interrogato tramite GraphQL. Per esempi, consulta la sezione [Query di esempio](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basata su una [struttura di Frammento di contenuto di esempio da utilizzare con GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -242,7 +242,7 @@ Nello schema sono presenti singoli campi, di due categorie di base:
 
   Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di dati](#data-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** del **Tipo di dati**.
 
-   * È inoltre necessario prendere in considerazione l&#39;impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, un campo di testo a riga singola può essere configurato per contenere più testi a riga singola scegliendo `multifield` dal menu a discesa.
+  * È inoltre necessario prendere in considerazione l&#39;impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, un campo di testo a riga singola può essere configurato per contenere più testi a riga singola scegliendo `multifield` dal menu a discesa.
 
 * GraphQL per AEM genera anche diversi [campi di supporto](#helper-fields).
 
@@ -358,7 +358,7 @@ Puoi visualizzare tutti i tipi di metadati GraphQL se visualizzi lo schema Graph
 >[!NOTE]
 >
 >**Differenza tra metadati normali e quelli di array**
->Tieni presente che `StringMetadata` e `StringArrayMetadata` fanno entrambi riferimento a ciò che è memorizzato nell&#39;archivio, non alla modalità di recupero.
+>Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
 >
 >Ad esempio, chiamando il campo `stringMetadata`, si riceve un array di tutti i metadati archiviati nell&#39;archivio come `String`. Se si chiama `stringArrayMetadata`, verrà visualizzato un array di tutti i metadati archiviati nell&#39;archivio come `String[]`.
 
@@ -586,7 +586,7 @@ Per altri esempi, consulta:
 
 * [Query di esempio che utilizzano il contenuto e la struttura di esempio](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
-   * e il [contenuto e la struttura di esempio](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql) predisposta per l’utilizzo in query di esempio
+  * e il [contenuto e la struttura di esempio](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql) predisposta per l’utilizzo in query di esempio
 
 * [Query di esempio basate sul progetto WKND](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
@@ -601,13 +601,13 @@ Questa funzione consente di ordinare i risultati della query in base a un campo 
 I criteri di ordinamento:
 
 * è un elenco di valori separati da virgole che rappresenta il percorso del campo
-   * il primo campo dell&#39;elenco definisce l&#39;ordinamento principale
-      * il secondo campo viene utilizzato se due valori del criterio di ordinamento primario sono uguali
-      * il terzo campo viene utilizzato se i primi due criteri sono uguali e così via.
-   * notazione punteggiata, ovvero `field1.subfield.subfield` e così via.
+  * il primo campo dell&#39;elenco definisce l&#39;ordinamento principale
+    * il secondo campo viene utilizzato se due valori del criterio di ordinamento primario sono uguali
+    * il terzo campo viene utilizzato se i primi due criteri sono uguali e così via.
+  * notazione punteggiata, ovvero `field1.subfield.subfield` e così via.
 * con una direzione d’ordine opzionale
-   * ASC (crescente) o DESC (decrescente); con l’applicazione di ASC come predefinito
-   * la direzione può essere specificata per campo; questa capacità significa che è possibile ordinare un campo in ordine crescente, un altro in ordine decrescente (nome, nome DESC)
+  * ASC (crescente) o DESC (decrescente); con l’applicazione di ASC come predefinito
+  * la direzione può essere specificata per campo; questa capacità significa che è possibile ordinare un campo in ordine crescente, un altro in ordine decrescente (nome, nome DESC)
 
 Esempio:
 
@@ -706,7 +706,7 @@ query {
 
 Il tipo di query `...Paginated` riutilizza la maggior parte delle funzionalità del tipo di query `...List` (filtro, ordinamento), ma invece di utilizzare gli argomenti `offset`/`limit` utilizza `first`/`after` come definiti in [Specifica delle connessioni del cursore GraphQL](https://relay.dev/graphql/connections.htm). È possibile trovare un’introduzione meno formale in [Introduzione a GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-* `first`: `n` primi elementi da restituire.
+* `first`: i primi elementi `n` da restituire.
 Il valore predefinito è `50`.
 Il massimo è `100`.
 * `after`: cursore che determina l&#39;inizio della pagina richiesta. L&#39;elemento rappresentato dal cursore non è incluso nel set di risultati. Il cursore di un elemento è determinato dal campo `cursor` della struttura `edges`.
@@ -769,7 +769,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, sono necess
   >
   >Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
   >
-  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache. Per ulteriori dettagli vedi [Come vengono restituiti i documenti da Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=it#how-does-the-dispatcher-return-documents%3F)
+  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache. Per ulteriori dettagli vedi [Come vengono restituiti i documenti da Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
@@ -783,9 +783,9 @@ Per abilitare la memorizzazione nella cache delle query persistenti, sono necess
 I clienti che utilizzano richieste CORS potrebbero dover rivedere e aggiornare la configurazione CORS in Dispatcher.
 
 * L&#39;intestazione `Origin` non deve essere passata ad AEM Publish tramite Dispatcher:
-   * Controllare il file `clientheaders.any`.
+  * Controllare il file `clientheaders.any`.
 * Al contrario, le richieste CORS devono essere valutate per le origini consentite a livello di Dispatcher. Questo approccio assicura inoltre che le intestazioni relative a CORS siano impostate correttamente, in un’unica posizione, in tutti i casi.
-   * Tale configurazione deve essere aggiunta al file `vhost`. Di seguito è riportato un esempio di configurazione; per semplicità, è stata fornita solo la parte CORS. Puoi adattarlo ai tuoi casi d’uso specifici.
+  * Tale configurazione deve essere aggiunta al file `vhost`. Di seguito è riportato un esempio di configurazione; per semplicità, è stata fornita solo la parte CORS. Puoi adattarlo ai tuoi casi d’uso specifici.
 
   ```xml
   <VirtualHost *:80>
@@ -858,24 +858,24 @@ I clienti che utilizzano richieste CORS potrebbero dover rivedere e aggiornare l
 Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifiche standard di GraphQL. Per le query GraphQL con AEM, sono disponibili alcune estensioni:
 
 * Se necessiti di un singolo risultato:
-   * utilizza il nome del modello; ad esempio, città
+  * utilizza il nome del modello; ad esempio, città
 
 * Se prevedi un elenco di risultati:
-   * aggiungi `List` al nome del modello; ad esempio, `cityList`
-   * Vedi [Query di esempio: informazioni su tutte le città](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
+  * aggiungi `List` al nome del modello; ad esempio, `cityList`
+  * Vedi [Query di esempio: informazioni su tutte le città](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
 
   Puoi effettuare le seguenti operazioni:
 
-   * [Ordinare i risultati](#sorting)
+  * [Ordinare i risultati](#sorting)
 
-      * `ASC` : crescente
-      * `DESC` : decrescente
+    * `ASC` : crescente
+    * `DESC` : decrescente
 
-   * Restituisci una pagina di risultati utilizzando:
+  * Restituisci una pagina di risultati utilizzando:
 
-      * [Query elenco con offset e limite](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#list-offset-limit)
-      * [Query impaginata con prima e dopo](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#paginated-first-after)
-   * Vedi [Query di esempio: informazioni su tutte le città](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
+    * [Query elenco con offset e limite](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#list-offset-limit)
+    * [Query impaginata con prima e dopo](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#paginated-first-after)
+  * Vedi [Query di esempio: informazioni su tutte le città](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
 
 * Il filtro `includeVariations` è incluso nel tipo di query `List`. Per recuperare le varianti di frammenti di contenuto nei risultati della query, il filtro `includeVariations` deve essere impostato su `true`.
 
@@ -883,79 +883,79 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
   >Impossibile utilizzare il filtro `includeVariations` insieme al campo generato dal sistema `_variation`.
 
 * Se vuoi utilizzare un operatore OR logico:
-   * utilizza ` _logOp: OR`
-   * Vedi [Query di esempio: tutti gli utenti denominati “Jobs” o “Smith”](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
+  * utilizza ` _logOp: OR`
+  * Vedi [Query di esempio: tutti gli utenti denominati “Jobs” o “Smith”](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
 
 * Esiste anche l’operatore AND logico, ma è (spesso) implicito
 
 * Puoi eseguire query sui nomi dei campi corrispondenti ai campi all’interno del modello per frammenti di contenuto
-   * Vedi [Query di esempio: informazioni complete sull’amministratore delegato e sui dipendenti di un’azienda](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-full-details-company-ceos-employees)
+  * Vedi [Query di esempio: informazioni complete sull’amministratore delegato e sui dipendenti di un’azienda](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-full-details-company-ceos-employees)
 
 * Oltre ai campi del modello, sono disponibili alcuni campi generati dal sistema (preceduti dal carattere di sottolineatura):
 
-   * Per il contenuto:
+  * Per il contenuto:
 
-      * `_locale`: per visualizzare la lingua; basato su Language Manager
-         * Vedi [Query di esempio per più frammenti di contenuto di una determinata lingua](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
+    * `_locale`: per visualizzare la lingua; basato su Language Manager
+      * Vedi [Query di esempio per più frammenti di contenuto di una determinata lingua](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
 
-      * `_metadata`: per visualizzare i metadati del frammento
-         * Vedi [Query di esempio per metadati: elenca i metadati per riconoscimenti con titolo GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+    * `_metadata`: per visualizzare i metadati del frammento
+      * Vedi [Query di esempio per metadati: elenca i metadati per riconoscimenti con titolo GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
 
-      * `_model`: consente di eseguire query per un modello per frammenti di contenuto (percorso e titolo)
-         * Vedi [Query di esempio per un modello per frammenti di contenuto da un modello](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-content-fragment-model-from-model)
+    * `_model`: consente di eseguire query per un modello per frammenti di contenuto (percorso e titolo)
+      * Vedi [Query di esempio per un modello per frammenti di contenuto da un modello](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-content-fragment-model-from-model)
 
-      * `_path`: il percorso del frammento di contenuto all’interno dell’archivio
-         * Vedi [Query di esempio: un singolo frammento di città specifico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+    * `_path`: il percorso del frammento di contenuto all’interno dell’archivio
+      * Vedi [Query di esempio: un singolo frammento di città specifico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
 
-      * `_reference`: per visualizzare riferimenti; inclusi riferimenti in linea nell’Editor testo RTF
-         * Vedi [Query di esempio per più frammenti di contenuto con riferimenti di prelettura](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-prefetched-references)
+    * `_reference`: per visualizzare riferimenti; inclusi riferimenti in linea nell’Editor testo RTF
+      * Vedi [Query di esempio per più frammenti di contenuto con riferimenti di prelettura](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-prefetched-references)
 
-      * `_variation`: per visualizzare varianti specifiche all’interno del frammento di contenuto
+    * `_variation`: per visualizzare varianti specifiche all’interno del frammento di contenuto
 
-        >[!NOTE]
-        >
-        >Se per un frammento di contenuto non esiste la variante determinata, la variante principale viene restituita come impostazione predefinita (fallback).
+      >[!NOTE]
+      >
+      >Se per un frammento di contenuto non esiste la variante determinata, la variante principale viene restituita come impostazione predefinita (fallback).
 
-        >[!CAUTION]
-        >Il campo generato dal sistema `_variation` non può essere utilizzato insieme al filtro `includeVariations`.
+      >[!CAUTION]
+      >Il campo generato dal sistema `_variation` non può essere utilizzato insieme al filtro `includeVariations`.
 
-         * Consulta [Query di esempio: tutte le città con una variante denominata](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
+      * Consulta [Query di esempio: tutte le città con una variante denominata](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 
-      * `_tags` : per visualizzare gli ID dei frammenti di contenuto o delle varianti che contengono tag; questo elenco è una matrice di `cq:tags` identificatori.
+    * `_tags` : per visualizzare gli ID dei frammenti di contenuto o delle varianti che contengono tag; questo elenco è una matrice di `cq:tags` identificatori.
 
-         * Consulta la [Query di esempio - Nomi di tutte le città classificate come Soggiorni in città](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
-         * Consulta la [Query di esempio per le varianti dei frammenti di contenuto di un determinato modello a cui è assegnato un tag specifico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * Consulta la [Query di esempio - Nomi di tutte le città classificate come Soggiorni in città](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+      * Consulta la [Query di esempio per le varianti dei frammenti di contenuto di un determinato modello a cui è assegnato un tag specifico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
 
-        >[!NOTE]
-        >
-        >È inoltre possibile eseguire query sui tag elencando i metadati di un frammento di contenuto.
+      >[!NOTE]
+      >
+      >È inoltre possibile eseguire query sui tag elencando i metadati di un frammento di contenuto.
 
-   * E operazioni:
+  * E operazioni:
 
-      * `_operator`: applica operatori specifici; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * Vedi [Query di esempio: tutti gli utenti non denominati “Jobs”](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
-         * Vedi [Query di esempio: tutte le avventure in cui `_path` inizia con un prefisso specifico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
+    * `_operator`: applica operatori specifici; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * Vedi [Query di esempio: tutti gli utenti non denominati “Jobs”](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
+      * Vedi [Query di esempio: tutte le avventure in cui `_path` inizia con un prefisso specifico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
 
-      * `_apply`: applica condizioni specifiche; ad esempio, `AT_LEAST_ONCE`
-         * Vedi [Query di esempio: applica filtro su un array con un elemento che deve verificarsi almeno una volta](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
+    * `_apply`: applica condizioni specifiche; ad esempio, `AT_LEAST_ONCE`
+      * Vedi [Query di esempio: applica filtro su un array con un elemento che deve verificarsi almeno una volta](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
 
-      * `_ignoreCase`: per ignorare il caso durante la query
-         * Vedi [Query di esempio: tutte le città che contengono SAN nel nome, indipendentemente da maiuscole/minuscole](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
+    * `_ignoreCase`: per ignorare il caso durante la query
+      * Vedi [Query di esempio: tutte le città che contengono SAN nel nome, indipendentemente da maiuscole/minuscole](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
 
 * I tipi di unione GraphQL sono supportati:
 
-   * utilizza `... on`
-      * Vedi [Query di esempio per un frammento di contenuto di un modello specifico con un riferimento ai contenuti](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-specific-model-content-reference)
+  * utilizza `... on`
+    * Vedi [Query di esempio per un frammento di contenuto di un modello specifico con un riferimento ai contenuti](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Fallback durante la query dei frammenti nidificati:
 
-   * Se la variante richiesta non esiste in un frammento nidificato, viene restituita la variante **Master**.
+  * Se la variante richiesta non esiste in un frammento nidificato, viene restituita la variante **Master**.
 
 ### Filtro CORS {#cors-filter}
 
 >[!CAUTION]
 >
->Se la memorizzazione nella cache di [&#x200B; in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
+>Se la memorizzazione nella cache di [ in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
 
 >[!NOTE]
 >
@@ -1061,26 +1061,26 @@ Per proteggere da potenziali problemi, esistono limitazioni predefinite imposte 
 
 * Se la query GraphQL contiene campi con lo stesso nome in due o più modelli, viene restituito un errore di conflitto di campi e vengono soddisfatte le seguenti condizioni:
 
-   * Quindi dove:
+  * Quindi dove:
 
-      * Due (o più modelli) sono utilizzati come riferimenti possibili; quando sono definiti come un **Tipo di modello** consentito nel riferimento Frammento di contenuto.
+    * Due (o più modelli) sono utilizzati come riferimenti possibili; quando sono definiti come un **Tipo di modello** consentito nel riferimento Frammento di contenuto.
 
-     e:
+    e:
 
-      * Questi due modelli hanno campi con un nome comune; ciò significa che lo stesso nome si verifica in entrambi i modelli.
+    * Questi due modelli hanno campi con un nome comune; ciò significa che lo stesso nome si verifica in entrambi i modelli.
 
-     e
+    e
 
-      * Tali campi sono di tipi di dati diversi.
+    * Tali campi sono di tipi di dati diversi.
 
-   * Ad esempio:
+  * Ad esempio:
 
-      * Quando due (o più) frammenti con modelli diversi (ad esempio, `M1`, `M2`) vengono utilizzati come possibili riferimenti (Riferimento contenuto o Riferimento frammento) da un altro frammento; ad esempio, `Fragment1` `MultiField/List`
-      * E questi due frammenti con modelli diversi (`M1`, `M2`) hanno campi con lo stesso nome, ma tipi diversi.
-Per illustrare:
-         * `M1.Title` come `Text`
-         * `M2.Title` come `Text/MultiField`
-      * Se la query GraphQL contiene il campo `Title`, si verificherà un errore di conflitto di campi.
+    * Quando due (o più) frammenti con modelli diversi (ad esempio, `M1`, `M2`) vengono utilizzati come possibili riferimenti (Riferimento contenuto o Riferimento frammento) da un altro frammento; ad esempio, `Fragment1` `MultiField/List`
+    * E questi due frammenti con modelli diversi (`M1`, `M2`) hanno campi con lo stesso nome, ma tipi diversi.
+      Per maggiore chiarezza:
+      * `M1.Title` come `Text`
+      * `M2.Title` come `Text/MultiField`
+    * Se la query GraphQL contiene il campo `Title`, si verificherà un errore di conflitto di campi.
 
 ## Autenticazione {#authentication}
 
@@ -1093,8 +1093,8 @@ Domande poste:
 1. **D**: “*quali sono le differenze tra l’API di GraphQL per AEM e l’API di Query Builder?*”
 
    * **A**:
-&quot;*L&#39;API GraphQL di AEM offre il controllo totale dell&#39;output JSON ed è uno standard di settore per l&#39;esecuzione di query sui contenuti.
-In futuro, AEM prevede di investire nell&#39;API AEM GraphQL.*&quot;
+     &quot;*L&#39;API GraphQL di AEM offre il controllo totale dell&#39;output JSON ed è uno standard di settore per l&#39;esecuzione di query sui contenuti.
+     In futuro, AEM prevede di investire nell&#39;API AEM GraphQL.*&quot;
 
 ## Tutorial: guida introduttiva ad AEM headless e GraphQL {#tutorial}
 

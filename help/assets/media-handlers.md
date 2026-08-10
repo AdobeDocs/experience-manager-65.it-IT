@@ -112,9 +112,9 @@ L’interfaccia e le classi includono:
 * Interfaccia `com.day.cq.dam.api.handler.AssetHandler`: descrive il servizio che aggiunge il supporto per tipi MIME specifici. L’aggiunta di un tipo MIME richiede l’implementazione di questa interfaccia. L’interfaccia contiene metodi per importare ed esportare documenti specifici, per creare miniature ed estrarre metadati.
 * Classe `com.day.cq.dam.core.AbstractAssetHandler`: questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni.
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
-   * Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comunemente utilizzate oltre a quelle più comuni per l’estrazione di risorse secondarie.
-   * Il modo migliore per avviare un’implementazione è ereditare da un’implementazione astratta fornita che si occupa della maggior parte delle cose e fornisce un comportamento predefinito ragionevole: la classe com.day.cq.dam.core.AbstractAssetHandler.
-   * Questa classe fornisce già un descrittore di servizio astratto. Pertanto, se hai ereditato da questa classe e utilizzi maven-sling-plugin, assicurati di impostare il flag inherit su true.
+  * Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comunemente utilizzate oltre a quelle più comuni per l’estrazione di risorse secondarie.
+  * Il modo migliore per avviare un’implementazione è ereditare da un’implementazione astratta fornita che si occupa della maggior parte delle cose e fornisce un comportamento predefinito ragionevole: la classe com.day.cq.dam.core.AbstractAssetHandler.
+  * Questa classe fornisce già un descrittore di servizio astratto. Pertanto, se hai ereditato da questa classe e utilizzi maven-sling-plugin, assicurati di impostare il flag inherit su true.
 
 Devono essere implementati i seguenti metodi:
 
@@ -124,7 +124,7 @@ Devono essere implementati i seguenti metodi:
 
 Di seguito è riportato un modello di esempio:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementa le parti pertinenti }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementa le parti pertinenti }
 
 L’interfaccia e le classi includono:
 

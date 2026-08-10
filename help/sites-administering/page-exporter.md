@@ -7,7 +7,7 @@ feature: Administering
 role: Admin
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Seleziona il modello richiesto per il sito, quindi conferma con **OK**.
 
    * la sottocartella `content`, che è la radice di una serie di sottocartelle che riflettono il percorso della pagina nell&#39;archivio
 
-      * in questa struttura è presente il file html per la pagina selezionata (`<page-name>.html`)
+     * in questa struttura è presente il file html per la pagina selezionata (`<page-name>.html`)
 
    * altre risorse (`.js` file, `.css` file, immagini e così via) si trovano in base alle impostazioni nel modello di esportazione
 
@@ -119,16 +119,16 @@ Per creare un modello di esportazione è possibile utilizzare i seguenti nodi:
 * `page`
 Il nodo della pagina viene utilizzato per copiare il codice HTML della pagina nel file zip. Presenta le seguenti caratteristiche:
 
-   * Un nodo obbligatorio.
-   * Si trova sotto `/etc/contentsync/templates/<mysite>`.
-   * Definito con la proprietà `Name` impostata su `page`.
-   * Il tipo di nodo è `nt:unstructured`
+  * Un nodo obbligatorio.
+  * Si trova sotto `/etc/contentsync/templates/<mysite>`.
+  * Definito con la proprietà `Name` impostata su `page`.
+  * Il tipo di nodo è `nt:unstructured`
 
   Il nodo `page` ha le seguenti proprietà:
 
-   * Una proprietà `type` impostata con il valore `pages`.
+  * Una proprietà `type` impostata con il valore `pages`.
 
-   * Non dispone di una proprietà `path` poiché il percorso della pagina corrente viene copiato dinamicamente nella configurazione.
+  * Non dispone di una proprietà `path` poiché il percorso della pagina corrente viene copiato dinamicamente nella configurazione.
   <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
@@ -140,25 +140,25 @@ Il nodo di riscrittura definisce come vengono riscritti i collegamenti nella pag
 * `design`
 Il nodo di progettazione viene utilizzato per copiare la progettazione utilizzata per la pagina esportata. Presenta le seguenti caratteristiche:
 
-   * Facoltativo.
-   * Si trova sotto `/etc/contentsync/templates/<mysite>`.
-   * Definito con la proprietà `Name` impostata su `design`.
-   * Il tipo di nodo è `nt:unstructured`.
+  * Facoltativo.
+  * Si trova sotto `/etc/contentsync/templates/<mysite>`.
+  * Definito con la proprietà `Name` impostata su `design`.
+  * Il tipo di nodo è `nt:unstructured`.
 
   Il nodo `design` ha le seguenti proprietà:
 
-   * Una proprietà `type` impostata sul valore `copy`.
+  * Una proprietà `type` impostata sul valore `copy`.
 
-   * Non dispone di una proprietà `path`, poiché il percorso della pagina corrente viene copiato dinamicamente nella configurazione.
+  * Non dispone di una proprietà `path`, poiché il percorso della pagina corrente viene copiato dinamicamente nella configurazione.
 
 * `generic`
 Un nodo generico viene utilizzato per copiare risorse come clientlibs `.js` o `.css` file nel file zip. Presenta le seguenti caratteristiche:
 
-   * Facoltativo.
-   * Si trova sotto `/etc/contentsync/templates/<mysite>`.
-   * Nessun nome specifico.
-   * Il tipo di nodo è `nt:unstructured`.
-   * Ha una proprietà `type` e `type` proprietà correlate. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
+  * Facoltativo.
+  * Si trova sotto `/etc/contentsync/templates/<mysite>`.
+  * Nessun nome specifico.
+  * Il tipo di nodo è `nt:unstructured`.
+  * Ha una proprietà `type` e `type` proprietà correlate. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   Ad esempio, il seguente nodo di configurazione copia i file `mysite.clientlibs.js` nel file zip:
 
