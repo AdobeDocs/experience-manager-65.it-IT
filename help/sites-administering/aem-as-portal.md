@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6110'
+source-wordcount: '6118'
 ht-degree: 0%
 
 ---
@@ -389,7 +389,7 @@ Per aprire la pagina di amministrazione del sito web o per modificare una pagina
    </LoginModule>
    ```
 
-1. Nella console di configurazione OSGi, per impostazione predefinita disponibile all&#39;indirizzo https://localhost:4502/system/console/configMgr, seleziona **CQ PIN Authentication Handler** dal menu a discesa.
+1. Nella console di configurazione OSGi, per impostazione predefinita disponibile all&#39;indirizzo https://localhost:4502/system/console/configMgr, seleziona **Gestore autenticazione PIN CQ** dal menu a discesa.
 1. Modificare il parametro **URL Root Path** in modo che contenga solo il valore singolo **/**.
 
 ### Privilegi {#privileges}
@@ -730,7 +730,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 Per accedere al contenuto fornito da AEM WCM, il server di portale deve essere dotato del portlet AEM Portal Director. A tale scopo, installare, configurare e aggiungere il portlet alla pagina del portale utilizzando i passaggi descritti in questa sezione.
 
-Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Autore in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. Scarica il file .war dell’applicazione prima di utilizzarlo.
+Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Author in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. Scarica il file .war dell’applicazione prima di utilizzarlo.
 
 ### Download del file .war {#downloading-the-war-file}
 
@@ -776,7 +776,7 @@ Per configurare il portlet:
    * **URL di base autore**: URL di base per l&#39;istanza di authoring di AEM.
    * **URL di base pubblicazione**: URL di base per l&#39;istanza di pubblicazione di AEM.
    * **Autore utilizzato come pubblicazione**: l&#39;istanza dell&#39;autore è utilizzata come pubblicazione
-istanza (per lo sviluppo)?
+     istanza (per lo sviluppo)?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

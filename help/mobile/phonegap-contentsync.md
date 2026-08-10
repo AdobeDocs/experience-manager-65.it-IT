@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ Utilizza Sincronizzazione contenuti per creare pacchetti di contenuti in modo ch
 
 >[!NOTE]
 >
->Le app PhoneGap create con gli strumenti AEM sono già configurate per utilizzare le pagine AEM come contenuti tramite Sincronizzazione contenuti.
+>Le app PhoneGap create con gli strumenti di AEM sono già configurate per utilizzare le pagine AEM come contenuti tramite Sincronizzazione contenuti.
 
-Il framework di sincronizzazione dei contenuti crea un file di archivio contenente il contenuto web. Il contenuto può essere qualsiasi cosa, da semplici pagine, immagini e file PDF o intere applicazioni Web. L’API di sincronizzazione dei contenuti consente di accedere al file di archivio dalle app per dispositivi mobili o dai processi di generazione, in modo che il contenuto possa essere recuperato e incluso nell’app.
+Il framework di sincronizzazione dei contenuti crea un file di archivio contenente il contenuto web. Il contenuto può essere qualsiasi cosa, da semplici pagine, immagini, file PDF o intere applicazioni web. L’API di sincronizzazione dei contenuti consente di accedere al file di archivio dalle app per dispositivi mobili o dai processi di generazione, in modo che il contenuto possa essere recuperato e incluso nell’app.
 
 La sequenza di passaggi seguente illustra un caso d’uso tipico della sincronizzazione dei contenuti:
 
-1. Lo sviluppatore AEM crea una configurazione di Sincronizzazione contenuti che specifica il contenuto da includere.
+1. Lo sviluppatore AEM crea una configurazione di Sincronizzazione contenuto che specifica il contenuto da includere.
 1. Il framework Content Sync raccoglie e memorizza in cache il contenuto.
 1. Su un dispositivo mobile, l’app mobile viene avviata e richiede il contenuto dal server, che viene distribuito in un file ZIP.
 1. Il client decomprime il contenuto ZIP nel file system locale. La struttura di cartelle nel file ZIP simula i percorsi che un client (ad esempio, un browser) richiederebbe normalmente dal server.
@@ -50,9 +50,9 @@ La sequenza di passaggi seguente illustra un caso d’uso tipico della sincroniz
 
 Crea una configurazione di sincronizzazione contenuti per specificare il contenuto del file ZIP che viene distribuito al client. Puoi creare un numero qualsiasi di configurazioni di sincronizzazione dei contenuti. Ogni configurazione ha un nome a scopo di identificazione.
 
-Per creare una configurazione di sincronizzazione dei contenuti, aggiungere un nodo `cq:ContentSyncConfig` all&#39;archivio con la proprietà `sling:resourceType` impostata su `contentsync/config`. Il nodo `cq:ContentSyncConfig` può trovarsi in qualsiasi punto del repository, tuttavia il nodo deve essere accessibile agli utenti nell&#39;istanza di pubblicazione AEM. Pertanto, aggiungere il nodo sotto `/content`.
+Per creare una configurazione di sincronizzazione dei contenuti, aggiungere un nodo `cq:ContentSyncConfig` all&#39;archivio con la proprietà `sling:resourceType` impostata su `contentsync/config`. Il nodo `cq:ContentSyncConfig` può trovarsi in qualsiasi punto dell&#39;archivio, tuttavia il nodo deve essere accessibile agli utenti nell&#39;istanza di pubblicazione di AEM. Pertanto, aggiungere il nodo sotto `/content`.
 
-Per specificare il contenuto del file ZIP di sincronizzazione contenuti, aggiungi nodi secondari al nodo cq:ContentSyncConfig. Le seguenti proprietà di ciascun nodo figlio identificano un elemento di contenuto da includere e come viene elaborato quando lo si aggiunge:
+Per specificare il contenuto del file ZIP di sincronizzazione contenuti, aggiungere nodi secondari al nodo cq:ContentSyncConfig. Le seguenti proprietà di ciascun nodo figlio identificano un elemento di contenuto da includere e come viene elaborato quando lo si aggiunge:
 
 * `path`: posizione del contenuto.
 * `type`: nome del tipo di configurazione da utilizzare per elaborare il contenuto. Sono disponibili diversi tipi descritti in Tipi di configurazione.
@@ -69,7 +69,7 @@ Dopo aver creato la configurazione di Sincronizzazione contenuti, questa viene v
 
 Specifica un utente o un gruppo che può scaricare da Sincronizzazione contenuti. Puoi configurare l’utente o il gruppo predefinito che può essere scaricato da tutte le cache di Sincronizzazione contenuto, nonché ignorare l’impostazione predefinita e configurare l’accesso per una specifica configurazione di Sincronizzazione contenuto.
 
-Quando AEM è installato, i membri del gruppo dell&#39;amministratore possono scaricare da Sincronizzazione contenuti per impostazione predefinita.
+Quando AEM è installato, i membri del gruppo dell’amministratore possono scaricare da Sincronizzazione contenuti per impostazione predefinita.
 
 ### Impostazione dell’accesso predefinito per i download di sincronizzazione dei contenuti {#setting-the-default-access-for-content-sync-downloads}
 
@@ -100,13 +100,13 @@ Quando un utente esegue un aggiornamento alla cache di sincronizzazione contenut
 
 Puoi sovrascrivere l’utente predefinito e specificare un utente o un gruppo che aggiorna una cache di sincronizzazione contenuti specifica.
 
-Per ignorare l&#39;utente predefinito, specificare un utente o un gruppo che esegua aggiornamenti per una configurazione di Sincronizzazione contenuto specifica aggiungendo la seguente proprietà al nodo cq:ContentSyncConfig:
+Per sostituire l&#39;utente predefinito, specificare un utente o un gruppo che esegua aggiornamenti per una configurazione di Sincronizzazione contenuto specifica aggiungendo la seguente proprietà al nodo cq:ContentSyncConfig:
 
 * Nome: updateuser
 * Tipo: String
 * Valore: nome dell&#39;utente o del gruppo che può eseguire gli aggiornamenti.
 
-Se il nodo cq:ContentSyncConfig non dispone di una proprietà `updateuser`, l&#39;utente anonimo predefinito aggiorna la cache.
+Se il nodo cq:ContentSyncConfig non ha una proprietà `updateuser`, l&#39;utente anonimo predefinito aggiorna la cache.
 
 ### Tipi di configurazione {#configuration-types}
 
@@ -135,11 +135,11 @@ L’elaborazione può variare dal rendering di un JSON semplice al rendering com
 * **percorso** - Percorso di una cartella di risorse in /content/dam.
 * **renditions** - Type è una matrice di stringhe che consente all&#39;utente di specificare quali copie trasformate utilizzare al posto dell&#39;immagine predefinita. Nell’elenco seguente sono riepilogate alcune rappresentazioni predefinite, ma è anche possibile utilizzare qualsiasi rappresentazione creata dal flusso di lavoro:
 
-   * *originale*
-   * *cq5dam.thumbnail.48.48.png*
-   * *cq5dam.thumbnail.319.319.png*
-   * *cq5dam.thumbnail.140.100.png*
-   * *cq5dam.web.1280.1280.png*
+  * *originale*
+  * *cq5dam.thumbnail.48.48.png*
+  * *cq5dam.thumbnail.319.319.png*
+  * *cq5dam.thumbnail.140.100.png*
+  * *cq5dam.web.1280.1280.png*
 
 **immagine** - Raccogli un&#39;immagine.
 
@@ -147,7 +147,7 @@ L’elaborazione può variare dal rendering di un JSON semplice al rendering com
 
 Il tipo di immagine viene utilizzato per includere il logo We.Retail nel file zip.
 
-**pagine** - Eseguire il rendering delle pagine AEM e raccogliere le risorse di riferimento.
+**pagine** - Esegui il rendering delle pagine AEM e raccogli le risorse di riferimento.
 
 * **percorso** - Percorso di una pagina.
 * **estensione** - Estensione da utilizzare nella richiesta. Per le pagine si tratta quasi sempre di *html*, ma altri sono ancora possibili.
@@ -174,11 +174,11 @@ Ogni proprietà può avere uno dei seguenti valori:
 
 * `REWRITE_RELATIVE`: riscrive il percorso con una posizione relativa al file html della pagina nel file system.
 
-* `REWRITE_EXTERNAL`: riscrive il percorso puntando alla risorsa sul server, utilizzando il servizio [Externalizer](/help/sites-developing/externalizer.md) dell&#39;AEM.
+* `REWRITE_EXTERNAL`: riscrive il percorso puntando alla risorsa sul server, utilizzando il servizio AEM [Externalizer](/help/sites-developing/externalizer.md).
 
 Il servizio AEM denominato **PathRewriterTransformerFactory** consente di configurare gli attributi html specifici che verranno riscritti. Il servizio può essere configurato nella console Web e dispone di una configurazione per ogni proprietà del nodo `rewrite`: `clientlibs`, `images` e `links`.
 
-Questa funzione è stata aggiunta all’AEM 5.5.
+Questa funzione è stata aggiunta in AEM 5.5.
 
 ### Esempio di configurazione della sincronizzazione dei contenuti {#example-content-sync-configuration}
 
@@ -288,7 +288,7 @@ La definizione di *factory* contiene l&#39;interfaccia comune e il tipo personal
 
 ### Implementazione di un gestore di aggiornamento personalizzato {#implementing-a-custom-update-handler}
 
-Ogni pagina mobile We.Retail contiene un logo nell&#39;angolo in alto a sinistra che vorremmo includere nel file zip. Tuttavia, per l&#39;ottimizzazione della cache, AEM non fa riferimento alla posizione reale del file di immagine nell&#39;archivio, il che impedisce di utilizzare semplicemente il tipo di configurazione **copy**. In alternativa, è necessario fornire il tipo di configurazione **logo** che rende l&#39;immagine disponibile nel percorso richiesto dall&#39;AEM. Il seguente elenco di codici mostra la completa implementazione del gestore di aggiornamento del logo:
+Ogni pagina mobile We.Retail contiene un logo nell&#39;angolo in alto a sinistra che vorremmo includere nel file zip. Tuttavia, per l&#39;ottimizzazione della cache, AEM non fa riferimento alla posizione reale del file di immagine nell&#39;archivio, il che impedisce di utilizzare semplicemente il tipo di configurazione **copy**. In alternativa, è necessario fornire il tipo di configurazione **logo** che rende l&#39;immagine disponibile nel percorso richiesto da AEM. Il seguente elenco di codici mostra la completa implementazione del gestore di aggiornamento del logo:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -377,7 +377,7 @@ Tutti i dati trasferiti possono essere estratti nella stessa struttura di direct
 Percorso di esecuzione tipico di un’app AEM Mobile basata su iOS:
 
 * L’utente avvia l’app sul dispositivo iOS.
-* L’app tenta di connettersi al backend AEM e richiede modifiche ai dati dall’ultima esecuzione.
+* L’app tenta di connettersi al backend di AEM e richiede modifiche ai dati dall’ultima esecuzione.
 * Il server recupera i dati in questione e li comprime in un file.
 * I dati vengono restituiti al dispositivo client da cui vengono estratti nella cartella documenti.
 * Il componente UIWebView viene avviato/aggiornato.
