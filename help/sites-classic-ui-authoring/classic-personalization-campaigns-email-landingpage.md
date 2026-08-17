@@ -1,5 +1,5 @@
 ---
-title: Creazione di una pagina di destinazione efficace per la newsletter
+title: Creazione di una pagina di destinazione efficace per una newsletter
 description: Una pagina di destinazione efficace per la newsletter ti consente di iscrivere quante più persone possibile alla newsletter (o ad altre campagne di e-mail marketing). Per ottenere i lead, puoi utilizzare le informazioni raccolte dalle iscrizioni alle newsletter.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 0%
+source-wordcount: '612'
+ht-degree: 2%
 
 ---
 
-# Creazione di una pagina di destinazione efficace per la newsletter{#creating-an-effective-newsletter-landing-page}
+# Creazione di una pagina di destinazione efficace per una newsletter{#creating-an-effective-newsletter-landing-page}
 
 Una pagina di destinazione efficace per la newsletter ti consente di iscrivere quante più persone possibile alla newsletter (o ad altre campagne di e-mail marketing). Per ottenere i lead, puoi utilizzare le informazioni raccolte dalle iscrizioni alle newsletter.
 
@@ -30,12 +30,12 @@ Per creare una pagina di destinazione efficace per la newsletter, devi effettuar
 
 >[!NOTE]
 >
->L’Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).
+>Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).
 >Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 ## Creazione di un elenco per la newsletter {#creating-a-list-for-the-newsletter}
 
-Crea un elenco, ad esempio **Newsletter di Geometrixx**, in MCM per la newsletter a cui gli utenti devono iscriversi. La creazione di elenchi è descritta in [Creazione di elenchi](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+Crea un elenco, ad esempio **Newsletter Geometrixx**, in MCM per la newsletter a cui gli utenti devono iscriversi. La creazione di elenchi è descritta in [Creazione di elenchi](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
 Di seguito è riportato un esempio di elenco:
 
@@ -43,7 +43,7 @@ Di seguito è riportato un esempio di elenco:
 
 ## Creare un modulo di registrazione {#create-a-sign-up-form}
 
-Crea un modulo di registrazione per newsletter che consenta agli utenti di iscriversi ai tag. Il Geometrixx Web di esempio include una pagina newsletter nella barra degli strumenti di Geometrixx in cui è possibile creare il modulo.
+Crea un modulo di registrazione per newsletter che consenta agli utenti di iscriversi ai tag. Il sito Web Geometrixx di esempio fornisce una pagina newsletter nella barra degli strumenti di Geometrixx in cui è possibile creare il modulo.
 
 Per creare un modulo per newsletter personalizzato, consulta le informazioni sulla creazione di moduli nella [documentazione di Forms](/help/sites-authoring/default-components.md#form). La newsletter utilizza i tag della libreria Tag. Per aggiungere altri tag, vedere [Amministrazione tag](/help/sites-authoring/tags.md#tagadministration).
 

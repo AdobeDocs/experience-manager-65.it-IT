@@ -1,5 +1,5 @@
 ---
-title: Configurazione della campagna
+title: Impostazione della campagna
 description: Per impostare una nuova campagna devi creare un marchio che contenga le campagne, creare una campagna che contenga le esperienze e infine definire le proprietà per la nuova campagna.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2219'
 ht-degree: 1%
 
 ---
 
-# Configurazione della campagna{#setting-up-your-campaign}
+# Impostazione della campagna{#setting-up-your-campaign}
 
 La configurazione di una nuova campagna include i seguenti passaggi (generici):
 
@@ -30,22 +30,22 @@ Quindi, a seconda del tipo di esperienze create, devi [creare un&#39;esperienza]
 
 * Se crei un teaser:
 
-   1. [Crea un&#39;esperienza teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [Aggiungi contenuto al teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Crea un punto di contatto per il teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (aggiungi il teaser a una pagina di contenuto).
+  1. [Crea un&#39;esperienza teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+  1. [Aggiungi contenuto al teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+  1. [Crea un punto di contatto per il teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (aggiungi il teaser a una pagina di contenuto).
 
 * Durante la creazione di una newsletter:
 
-   1. [Crea un&#39;esperienza newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [Aggiungi contenuto alla newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   1. [Personalizza la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Crea una pagina di destinazione interessante per le newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Invia la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) agli abbonati o ai lead.
+  1. [Crea un&#39;esperienza newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+  1. [Aggiungi contenuto alla newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  1. [Personalizza la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  1. [Crea una pagina di destinazione interessante per le newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  1. [Invia la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) agli abbonati o ai lead.
 
 * Durante la creazione di un&#39;offerta Adobe Target (precedentemente Test&amp;Target):
 
-   1. [Crea un&#39;esperienza di offerta Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Procedi all’integrazione con Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+  1. [Crea un&#39;esperienza di offerta Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+  1. [Procedi all’integrazione con Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -89,14 +89,14 @@ Configura le proprietà della campagna che controllano il comportamento:
 
 * **Priorità:** la priorità di questa campagna rispetto ad altre campagne. Quando più campagne sono contemporaneamente attive, la campagna con priorità più alta controlla l’esperienza del visitatore.
 * **Ora di attivazione e disattivazione:** queste proprietà controllano il periodo di tempo in cui la campagna controlla l&#39;esperienza del visitatore. La proprietà On Time controlla il momento in cui la campagna inizia a controllare l’esperienza. La proprietà Off Time controlla quando le campagne non controllano più l’esperienza.
-* **Immagine:** l&#39;immagine che rappresenta la campagna in AEM.
-* **Cloud Services:** le configurazioni di Cloud Service con cui è integrata la campagna. (Vedere [Integrazione con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Immagine:** immagine che rappresenta la campagna in AEM.
+* **Servizi cloud:** le configurazioni Cloud Service con cui è integrata la campagna. (Vedere [Integrazione con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
 * **Adobe Target:** proprietà che configurano le campagne integrate con Adobe Target. (Vedi [Integrazione con Adobe Target](/help/sites-administering/target.md).)
 
 1. Da **Campagne**, seleziona il tuo marchio. Nel riquadro di destra, seleziona la campagna e fai clic su **Proprietà**.
 
-   Puoi immettere varie proprietà, tra cui un **Titolo**, **Descrizione** e qualsiasi **Cloud Service** desiderato.
+   Puoi immettere varie proprietà, tra cui un **Titolo**, **Descrizione** e tutti i **Servizi cloud** che desideri.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -122,19 +122,19 @@ Dopo aver creato l’ossatura di base per l’esperienza, devi continuare con le
 
 * [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
-   * [Connetti la pagina del teaser ai segmenti dei visitatori.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Crea un punto di contatto per il teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (aggiungi il teaser a una pagina di contenuto).
+  * [Connetti la pagina del teaser ai segmenti dei visitatori.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+  * [Crea un punto di contatto per il teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (aggiungi il teaser a una pagina di contenuto).
 
 * [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [Aggiungi contenuto alla newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   * [Personalizza la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Invia la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) agli abbonati o ai lead.
-   * [Crea una pagina di destinazione interessante per le newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  * [Aggiungi contenuto alla newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  * [Personalizza la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  * [Invia la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) agli abbonati o ai lead.
+  * [Crea una pagina di destinazione interessante per le newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Offerta Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Procedi all’integrazione con Adobe Target](/help/sites-administering/target.md)
+  * [Procedi all’integrazione con Adobe Target](/help/sites-administering/target.md)
 
 ### Aggiunta di un nuovo punto di contatto {#adding-a-new-touchpoint}
 
@@ -174,7 +174,7 @@ Dopo aver creato nuovi lead, assicurati di [attivarli](#activating-or-deactivati
 Per creare manualmente un lead:
 
 1. In AEM, passa a MCM. Nel dashboard, fai clic su **Lead**.
-1. Fare clic su **Nuovo**. Viene visualizzata la finestra **Crea nuovo**.
+1. Fai clic su **Nuovo**. Viene visualizzata la finestra **Crea nuovo**.
 
    ![schermata_2012-02-21at115008am](assets/screen_shot_2012-02-21at115008am.png)
 
@@ -200,7 +200,7 @@ Per i lead attivi o disattivi:
 
    ![schermata_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   Come per le pagine AEM, lo stato di pubblicazione è indicato nella colonna **Pubblicato**.
+   Come per le pagine di AEM, lo stato di pubblicazione è indicato nella colonna **Pubblicato**.
 
    ![schermata_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
@@ -238,7 +238,7 @@ Per importare i lead da un elenco separato da virgole:
 
    ![schermata_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
-1. Fai clic su **Avanti**. Selezionare l&#39;elenco a cui si desidera che appartengano i lead. Se non desideri che appartengano a un elenco, elimina le informazioni nel campo. Per impostazione predefinita, AEM crea un nome di elenco che include la data e l’ora. Fai clic su **Importa**.
+1. Fai clic su **Avanti**. Selezionare l&#39;elenco a cui si desidera che appartengano i lead. Se non desideri che appartengano a un elenco, elimina le informazioni nel campo. Per impostazione predefinita, AEM crea un nome elenco che include la data e l’ora. Fai clic su **Importa**.
 
    ![schermata_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
@@ -254,7 +254,7 @@ Per aggiungere lead a elenchi preesistenti:
 
    ![schermata_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Nel menu **Strumenti**, seleziona **Aggiungi all&#39;elenco....** Viene aperta la finestra **Aggiungi all&#39;elenco**.
+1. Nel menu **Strumenti**, seleziona **Aggiungi all&#39;elenco....** Viene visualizzata la finestra **Aggiungi all&#39;elenco**.
 
    ![schermata_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -300,7 +300,7 @@ Per eliminare i lead esistenti nel MCM, selezionare la casella di controllo acca
 
 >[!NOTE]
 >
->L’Adobe non prevede di migliorare ulteriormente questa funzionalità (gestione degli elenchi).
+>Adobe non prevede di migliorare ulteriormente questa funzionalità (gestione degli elenchi).
 >Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 Gli elenchi ti consentono di organizzare i lead in gruppi. Con gli elenchi, puoi indirizzare le tue campagne di marketing a un gruppo selezionato di persone, ad esempio puoi inviare una newsletter mirata a un elenco. Gli elenchi sono visibili in MCM, nel dashboard o facendo clic su **Elenchi**. Entrambi ti forniscono il nome dell’elenco e il numero di membri.
