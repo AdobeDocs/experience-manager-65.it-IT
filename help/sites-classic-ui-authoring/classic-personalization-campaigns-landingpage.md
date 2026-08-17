@@ -1,6 +1,6 @@
 ---
 title: Pagine di destinazione
-description: La funzione delle pagine di destinazione consente di importare in modo rapido e semplice una progettazione e un contenuto direttamente in una pagina AEM. Uno sviluppatore web può preparare il HTML e le risorse aggiuntive che possono essere importate come pagina intera o solo come parte di una pagina.
+description: La funzione delle pagine di destinazione consente di importare in modo rapido e semplice una progettazione e un contenuto direttamente in una pagina AEM. Uno sviluppatore web può preparare il HTML e le risorse aggiuntive da importare come pagina intera o solo come parte di una pagina.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -12,14 +12,14 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3376'
 ht-degree: 2%
 
 ---
 
 # Pagine di destinazione{#landing-pages}
 
-La funzione delle pagine di destinazione consente di importare in modo rapido e semplice una progettazione e un contenuto direttamente in una pagina AEM. Uno sviluppatore web può preparare il HTML e le risorse aggiuntive che possono essere importate come pagina intera o solo come parte di una pagina. Questa funzionalità è utile per creare pagine di destinazione di marketing attive solo per un periodo di tempo limitato e che devono essere create rapidamente.
+La funzione delle pagine di destinazione consente di importare in modo rapido e semplice una progettazione e un contenuto direttamente in una pagina AEM. Uno sviluppatore web può preparare il HTML e le risorse aggiuntive da importare come pagina intera o solo come parte di una pagina. Questa funzionalità è utile per creare pagine di destinazione di marketing attive solo per un periodo di tempo limitato e che devono essere create rapidamente.
 
 Questa pagina descrive quanto segue:
 
@@ -32,7 +32,7 @@ La preparazione del pacchetto di progettazione per l&#39;importazione è descrit
 
 >[!CAUTION]
 >
->Importazione progettazione, utilizzata per importare le pagine di destinazione, [è stata dichiarata obsoleta con AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>Importazione progettazione, utilizzata per importare pagine di destinazione, [è stata dichiarata obsoleta con AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
@@ -42,11 +42,11 @@ La preparazione del pacchetto di progettazione per l&#39;importazione è descrit
 
 Le pagine di destinazione sono siti singoli o multipagina che costituiscono l’&quot;endpoint&quot; di un’attività di marketing, ad esempio e-mail, adwords/banner e social media. Una pagina di destinazione può essere utile per vari scopi, ma tutti hanno una cosa in comune: il visitatore deve svolgere un’attività che definisce il successo di una pagina di destinazione.
 
-La funzione Landing Pages (Pagine di destinazione) in AEM consente agli addetti al marketing di lavorare con web designer presso agenzie o team creativi interni per creare design di pagine che possano essere facilmente importati nell&#39;AEM e che possano essere comunque modificabili dagli addetti al marketing e pubblicati con la stessa governance degli altri siti basati sull&#39;AEM.
+La funzione Pagine di destinazione in AEM consente agli addetti al marketing di collaborare con web designer presso agenzie o team creativi interni per creare design di pagine che possono essere facilmente importati in AEM e che possono essere comunque modificati dagli addetti al marketing e pubblicati con la stessa governance degli altri siti basati su AEM.
 
-In AEM, puoi creare pagine di destinazione eseguendo i seguenti passaggi:
+In AEM puoi creare pagine di destinazione eseguendo i seguenti passaggi:
 
-1. Crea una pagina in AEM che contenga l’area di lavoro delle pagine di destinazione. L&#39;AEM viene fornito con un campione denominato **Pagina importazione**.
+1. Crea in AEM una pagina contenente l’area di lavoro delle pagine di destinazione. AEM viene fornito con un esempio denominato **Pagina importazione**.
 
 1. [Prepara il HTML e le risorse.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Crea un pacchetto delle risorse in un file ZIP qui denominato pacchetto progettazione.
@@ -55,7 +55,7 @@ In AEM, puoi creare pagine di destinazione eseguendo i seguenti passaggi:
 
 ### Pagine di destinazione desktop {#desktop-landing-pages}
 
-Ecco un esempio di pagina di destinazione in AEM:
+Di seguito è riportata una pagina di destinazione di esempio in AEM:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -75,15 +75,15 @@ La pagina di destinazione mobile viene creata come pagina figlia della pagina di
 
 ## Componenti della pagina di destinazione {#landing-page-components}
 
-Per rendere modificabili parti del HTML importato all’interno dell’AEM, puoi mappare direttamente il contenuto all’interno del HTML delle pagine di destinazione ai componenti dell’AEM. L’importazione di progetti comprende i seguenti componenti per impostazione predefinita:
+Per rendere modificabili le parti di HTML importate all’interno di AEM, puoi mappare direttamente il contenuto delle pagine di destinazione da HTML ai componenti di AEM. L’importazione di progetti comprende i seguenti componenti per impostazione predefinita:
 
 * Testo, per qualsiasi testo
 * Titolo, per il contenuto nei tag H1-6
 * Immagine, per le immagini che devono essere rese scambiabili
 * Inviti all&#39;azione:
 
-   * Collegamento click-through
-   * Collegamento grafico
+  * Collegamento click-through
+  * Collegamento grafico
 
 * Modulo lead CTA, per acquisire informazioni utente
 * Sistema paragrafo (Parsys), per consentire l&#39;aggiunta o la conversione di qualsiasi componente
@@ -92,7 +92,7 @@ Inoltre, è possibile estenderla e supportare componenti personalizzati. Questa 
 
 ### Testo {#text}
 
-Il componente Testo consente di immettere un blocco di testo utilizzando un editor WYSIWYG. Per ulteriori informazioni, vedere [Componente testo](/help/sites-authoring/default-components.md#text).
+Il componente Testo consente di immettere un blocco di testo utilizzando un editor di WYSIWYG. Per ulteriori informazioni, vedere [Componente testo](/help/sites-authoring/default-components.md#text).
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -120,11 +120,11 @@ Di seguito è riportato un esempio di un componente immagine in una pagina di de
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-#### Invito all’azione (CTA) {#call-to-action-cta}
+#### Call to action (CTA) {#call-to-action-cta}
 
 La progettazione di una pagina di destinazione può contenere diversi collegamenti, alcuni dei quali possono essere intesi come &quot;Inviti all’azione&quot;.
 
-Il CTA (Call to Action) viene utilizzato per fare in modo che il visitatore agisca immediatamente sulla pagina di destinazione, ad esempio &quot;Subscribe Now&quot;, &quot;view this video&quot; (Visualizza questo video), &quot;Limited Time Only&quot; (Solo a tempo limitato) e così via.
+Call to action (CTA) viene utilizzato per consentire al visitatore di intervenire immediatamente sulla pagina di destinazione, ad esempio &quot;Subscribe Now&quot; (Abbonati ora), &quot;View this video&quot; (Visualizza questo video), &quot;Limited Time Only&quot; (Solo tempo limitato) e così via.
 
 * Collegamento Click-through: consente di aggiungere un collegamento di testo che, se selezionato, porta il visitatore a un URL di destinazione.
 * Collegamento grafico: consente di aggiungere un’immagine che, se selezionata, porta il visitatore a un URL di destinazione.
@@ -133,7 +133,7 @@ Entrambi i componenti CTA hanno opzioni simili. Il collegamento Click-through in
 
 #### Collegamento Click-through {#click-through-link}
 
-Questo componente CTA può essere utilizzato per aggiungere un collegamento di testo alla pagina di destinazione. È possibile fare clic su tale collegamento per indirizzare l’utente all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo &quot;Invito all&#39;azione&quot;.
+Questo componente CTA può essere utilizzato per aggiungere un collegamento di testo alla pagina di destinazione. È possibile fare clic su tale collegamento per indirizzare l’utente all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo &quot;Call to action&quot;.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -158,7 +158,7 @@ Di seguito è riportato un esempio di collegamento click-through:
 
 #### Collegamento grafico {#graphical-link}
 
-Questo componente CTA può essere utilizzato per aggiungere qualsiasi immagine grafica con collegamento nella pagina di destinazione. L&#39;immagine può essere un semplice pulsante o qualsiasi immagine grafica come sfondo. Quando si fa clic sull’immagine, l’utente viene indirizzato all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo **Invito all&#39;azione**.
+Questo componente CTA può essere utilizzato per aggiungere qualsiasi immagine grafica con collegamento nella pagina di destinazione. L&#39;immagine può essere un semplice pulsante o qualsiasi immagine grafica come sfondo. Quando si fa clic sull’immagine, l’utente viene indirizzato all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo **Call to action**.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -181,15 +181,15 @@ Di seguito è riportato un esempio di collegamento grafico:
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-### Modulo lead CTA (Call to Action) {#call-to-action-cta-lead-form}
+### Modulo lead call to action (CTA) {#call-to-action-cta-lead-form}
 
 Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profilo di un visitatore/lead. Queste informazioni possono essere memorizzate e utilizzate in un secondo momento per effettuare un marketing efficace basato sulle informazioni. Queste informazioni generalmente includono titolo, nome, e-mail, data di nascita, indirizzo, interesse e così via. Fa parte del gruppo **Modulo lead CTA**.
 
-Un esempio di modulo lead CTA è simile al seguente:
+Un esempio di modulo lead di CTA è simile al seguente:
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-I moduli lead CTA sono costituiti da diversi componenti:
+I moduli lead di CTA sono costituiti da diversi componenti:
 
 * **Modulo lead**
 Il componente Modulo lead definisce l’inizio e la fine di un nuovo modulo lead in una pagina. Altri componenti possono quindi essere posizionati tra questi elementi, ad esempio ID e-mail, Nome e così via.
@@ -202,7 +202,7 @@ I componenti profilo si riferiscono ai profili dei visitatori utilizzati per la 
 
 Il precedente mostra un modulo di esempio, composto dal componente **Modulo lead** (inizio e fine), con i campi **Nome** e **ID e-mail** utilizzati per l&#39;input e un campo **Invia**
 
-Dalla barra laterale, sono disponibili i seguenti componenti per il modulo lead CTA:
+Dalla barra laterale, sono disponibili i seguenti componenti per il Modulo lead di CTA:
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
@@ -232,7 +232,7 @@ Indica le dimensioni e lo stile dei campi.
 
 #### Componenti modulo lead {#lead-form-components}
 
-Nella sezione seguente sono descritti i componenti disponibili per i moduli lead di invito all’azione.
+Nella sezione seguente sono descritti i componenti disponibili per i lead form di Call-to-action.
 
 **Informazioni** consente agli utenti di aggiungere informazioni.
 
@@ -282,7 +282,7 @@ Sono disponibili due schede per la configurazione **Modulo** e **Avanzate**:
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**Opzioni Post** Sono disponibili le seguenti opzioni di post:
+**Opzioni post** Sono disponibili le seguenti opzioni post:
 
 * Crea lead
 * Servizio e-mail: crea utente con sottoscrizione e aggiungi all’elenco - Da utilizzare se utilizzi un provider di servizi e-mail come ExactTarget.
@@ -308,7 +308,7 @@ Se si convalida il modulo completo, includere anche uno dei seguenti elementi:
 * Uno script per la convalida sul lato server:
   ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**Configurazione azione** A seconda della selezione in Opzioni Post, la configurazione dell&#39;azione cambia. Ad esempio, quando si seleziona Crea lead, è possibile configurare l&#39;elenco a cui il lead viene aggiunto.
+**Configurazione azione** A seconda della selezione in Opzioni post, la configurazione azione cambia. Ad esempio, quando si seleziona Crea lead, è possibile configurare l&#39;elenco a cui il lead viene aggiunto.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -318,10 +318,10 @@ Indica se deve essere visualizzato o meno un pulsante Invia.
 * **Invia nome**
 Un identificatore se in un modulo si utilizzano più pulsanti di invio.
 
-* **Invia titolo**
+* **Titolo invio**
 Nome visualizzato sul pulsante, ad esempio Invia o Invia.
 
-* **Mostra pulsante Ripristina**
+* **Mostra pulsante Reimposta**
 Selezionare la casella di controllo per rendere visibile il pulsante Reimposta.
 
 * **Reimposta titolo**
@@ -335,7 +335,7 @@ Informazioni visualizzate sotto il pulsante.
 Quando crei una pagina di destinazione, devi eseguire tre passaggi:
 
 1. Crea una pagina di importazione.
-1. [Prepara le HTML per l’importazione.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+1. [Prepara il HTML per l’importazione.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Importare il pacchetto progettazione.
 
 ### Utilizzo dell&#39;Importazione progettazione {#use-of-the-design-importer}
@@ -344,9 +344,9 @@ Poiché l’importazione di pagine comporta la preparazione di HTML, la verifica
 
 >[!NOTE]
 >
->Poiché l&#39;utilità di importazione progettazione è uno strumento di amministrazione che richiede autorizzazioni di lettura, scrittura, creazione ed eliminazione per `/apps`, l&#39;Adobe non consiglia di utilizzare l&#39;utilità di importazione progettazione in produzione.
+>Poiché l&#39;utilità di importazione della progettazione è uno strumento di amministrazione che richiede autorizzazioni di lettura, scrittura, creazione ed eliminazione per `/apps`, Adobe sconsiglia di utilizzare l&#39;utilità di importazione della progettazione in produzione.
 
-L’Adobe consiglia di utilizzare l’importazione progettazione in un’istanza di staging. In un’istanza di staging l’importazione può essere testata e convalidata da uno sviluppatore che è quindi responsabile della distribuzione del codice nell’istanza di produzione.
+Adobe consiglia di utilizzare l’importazione progettazione in un’istanza di staging. In un’istanza di staging l’importazione può essere testata e convalidata da uno sviluppatore che è quindi responsabile della distribuzione del codice nell’istanza di produzione.
 
 ### Creazione di una pagina di importazione {#creating-an-importer-page}
 
@@ -388,7 +388,7 @@ Se il pacchetto di progettazione è pronto, i passaggi seguenti descrivono come 
 
 >[!NOTE]
 >
->Al momento dell’importazione, il markup viene bonificato per motivi di sicurezza e per evitare di importare e pubblicare markup non validi. Ciò presuppone che il markup solo HTML e tutti gli altri tipi di elementi, ad esempio SVG in linea o Componenti Web, vengano esclusi.
+>Al momento dell’importazione, il markup viene bonificato per motivi di sicurezza e per evitare di importare e pubblicare markup non validi. Ciò presuppone che il markup solo HTML e tutti gli altri tipi di elementi, come SVG in linea o Componenti Web, vengano filtrati.
 
 >[!NOTE]
 >
@@ -398,7 +398,7 @@ Se il pacchetto di progettazione è pronto, i passaggi seguenti descrivono come 
 
 La progettazione e le risorse di una pagina di destinazione vengono solitamente create da un designer possibilmente presso un’agenzia in strumenti a cui sono abituate, come Adobe Photoshop o Adobe Dreamweaver. Una volta completata la progettazione, la finestra di progettazione invia un file zip con tutte le risorse al marketing. Il contatto nel marketing è quindi responsabile della rimozione del file zip in AEM e della pubblicazione del contenuto.
 
-Inoltre, potrebbe essere necessario apportare modifiche alla pagina di destinazione dopo l’importazione modificando o eliminando il contenuto e configurando i componenti di invito all’azione. Infine, l’addetto al marketing vorrà visualizzare in anteprima la pagina di destinazione e quindi attivare la campagna per assicurarsi che sia pubblicata.
+Inoltre, potrebbe essere necessario apportare modifiche alla pagina di destinazione dopo l’importazione modificando o eliminando il contenuto e configurando i componenti di call-to-action. Infine, l’addetto al marketing vorrà visualizzare in anteprima la pagina di destinazione e quindi attivare la campagna per assicurarsi che sia pubblicata.
 
 Questa sezione descrive come effettuare le seguenti operazioni:
 
@@ -448,7 +448,7 @@ Per aggiungere componenti nella pagina di destinazione, trascina i componenti fi
 
 >[!NOTE]
 >
->Se un componente nella pagina di destinazione non può essere modificato, è necessario reimportare il file zip dopo [la modifica del file HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Ciò significa che durante l&#39;importazione le parti non modificabili non sono state convertite in componenti AEM.
+>Se non è possibile modificare un componente nella pagina di destinazione, è necessario reimportare il file zip dopo [aver modificato il file HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Ciò significa che durante l’importazione le parti non modificabili non sono state convertite in componenti AEM.
 
 ### Eliminazione di una pagina di destinazione {#deleting-a-landing-page}
 
