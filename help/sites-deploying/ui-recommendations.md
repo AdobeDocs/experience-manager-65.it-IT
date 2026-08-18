@@ -1,5 +1,5 @@
 ---
-title: Raccomandazioni in merito all’interfaccia utente per clienti
+title: Consigli in merito all’interfaccia utente per la clientela
 description: Elenco di consigli relativi alle interfacce utente classiche e ottimizzate per il tocco.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 0%
+source-wordcount: '790'
+ht-degree: 1%
 
 ---
 
-# Raccomandazioni in merito all’interfaccia utente per clienti{#user-interface-recommendations-for-customers}
+# Consigli in merito all’interfaccia utente per la clientela{#user-interface-recommendations-for-customers}
 
 Adobe Experience Manager viene fornito con due interfacce: l’interfaccia utente unificata di Experience Cloud (nota anche come interfaccia touch) e l’interfaccia classica.
 
@@ -26,7 +26,7 @@ Questo documento ha lo scopo di guidare i clienti nella scelta dell’interfacci
 Condizioni di interesse:
 
 * **Interfaccia utente (o interfaccia standard)**
-Interfaccia utente moderna introdotta in 5.6.0 come anteprima tecnologica ed estesa nelle versioni successive. Si basa sull’esperienza utente unificata per Adobe Experience Cloud, precedentemente nota come interfaccia touch o interfaccia touch.
+Interfaccia utente moderna introdotta in 5.6.0 come anteprima tecnologica ed estesa nelle versioni successive. Si basa sull’esperienza utente unificata di Adobe Experience Cloud, precedentemente nota come interfaccia touch o interfaccia touch.
 
 * **Interfaccia classica**
 Interfaccia utente basata sulla tecnologia ExtJS introdotta con CQ 5.1 nel 2008.
@@ -37,7 +37,7 @@ Funzionalità per gestire la gerarchia del sito (spostare, attivare, gestire rif
 * **Authoring delle pagine**
 Funzionalità per aggiungere/modificare il contenuto di una pagina.
 
-* **Amministratore DAM/Assets**
+* Amministratore **DAM/Assets**
 Funzionalità per gestire le risorse digitali (tra cui immagini, video, documenti, download).
 
 * **ContextHub**
@@ -45,7 +45,7 @@ Funzionalità per aggregare informazioni sul visitatore e utilizzarlo per vari s
 
 ## Generale {#general}
 
-Negli ultimi anni Adobe ha aggiornato tutte le soluzioni Adobe Experience Cloud con un’interfaccia utente unificata. Gli utenti delle soluzioni Experience Cloud godono di un’esperienza coerente con i pattern comuni su come utilizzare e utilizzare le applicazioni. A ogni rilascio, Adobe ha perfezionato la propria interfaccia utente in base al feedback ricevuto dai clienti che lavorano sulle varie soluzioni.
+Negli ultimi anni Adobe ha aggiornato tutte le soluzioni Adobe Experience Cloud con un’interfaccia utente unificata. Gli utenti delle soluzioni Experience Cloud hanno un’esperienza coerente con i pattern comuni per l’utilizzo e l’utilizzo delle applicazioni. A ogni rilascio, Adobe ha perfezionato la propria interfaccia utente in base al feedback ricevuto dai clienti che lavorano sulle varie soluzioni.
 
 L’interfaccia utente originale per Adobe Experience Manager (precedentemente nota come CQ5), introdotta nel 2008 e utilizzata dai clienti che eseguono le versioni da 5.0 a 5.6.1, è presente in AEM 6.5. In questo modo i clienti possono eseguire l’aggiornamento alla versione 6.5 e beneficiare di una piattaforma aggiornata con nuove funzionalità, continuando a utilizzare la stessa interfaccia utente.
 
@@ -72,7 +72,7 @@ Di seguito è riportato un elenco di consigli di Product Management per Adobe Ex
    <td>
     <ol>
      <li>Aggiornamento a 6.5</li>
-     <li>Utilizza l’interfaccia utente predefinita per amministrazione sito, risorse, .. ecc.<br /> </li>
+     <li>Utilizza l'interfaccia utente predefinita per l'amministrazione del sito, le risorse, ecc.<br /> </li>
      <li>Configura l’azione "Modifica pagina" per aprire l’Editor pagina dell’interfaccia utente classica. Vedi <a href="#selecting-your-ui">Selezione della tua interfaccia utente</a>.</li>
     </ol> <p>Quindi, in una seconda fase:</p>
     <ol>
@@ -84,7 +84,7 @@ Di seguito è riportato un elenco di consigli di Product Management per Adobe Ex
    <td>
     <ol>
      <li>Aggiornamento a 6.5</li>
-     <li>Utilizza l’interfaccia utente predefinita per amministrazione sito, risorse, .. ecc.</li>
+     <li>Utilizza l’interfaccia utente predefinita per l’amministrazione del sito, le risorse, ecc.</li>
      <li>Configura l’azione "Modifica pagina" per aprire l’Editor pagina dell’interfaccia utente classica. Vedi <a href="#selecting-your-ui">Selezione della tua interfaccia utente</a>.</li>
     </ol> <p>Quindi, in una seconda fase:</p>
     <ol>

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 0%
+source-wordcount: '1802'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Il modo principale per ottenere una sessione amministrativa o un risolutore risorse in AEM è stato l&#39;utilizzo dei metodi `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` forniti da Sling.
+Il modo principale per ottenere una sessione amministrativa o un risolutore risorse in AEM consisteva nell&#39;utilizzare i metodi `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` forniti da Sling.
 
 Tuttavia, nessuno di questi metodi è stato progettato in base al principio [di privilegio minimo](https://en.wikipedia.org/wiki/Principle_of_least_privilege). In questo modo è troppo semplice per uno sviluppatore non pianificare in anticipo una struttura appropriata e i corrispondenti livelli di controllo di accesso (ACL, Access Control Levels) per il contenuto. Se una vulnerabilità è presente in un servizio di questo tipo, spesso si verificano escalation di privilegi per l&#39;utente `admin`, anche se il codice stesso non avrebbe bisogno di privilegi amministrativi per funzionare.
 
@@ -41,31 +41,31 @@ Molti problemi possono essere risolti ristrutturando il contenuto. Durante la ri
 
 * **Modifica controllo dell&#39;accesso**
 
-   * Assicurati che gli utenti o i gruppi che necessitano effettivamente di accesso abbiano effettivamente accesso;
+  * Assicurati che gli utenti o i gruppi che necessitano effettivamente di accesso abbiano effettivamente accesso;
 
 * **Perfeziona struttura contenuto**
 
-   * Spostalo in altre posizioni, ad esempio, in cui il controllo di accesso corrisponde alle sessioni di richiesta disponibili;
-   * Modificare la granularità del contenuto;
+  * Spostalo in altre posizioni, ad esempio, in cui il controllo di accesso corrisponde alle sessioni di richiesta disponibili;
+  * Modificare la granularità del contenuto;
 
 * **Effettua il refactoring del codice per renderlo un servizio appropriato**
 
-   * Sposta la logica di business dal codice JSP al servizio. Questo consente una modellazione del contenuto diversa.
+  * Sposta la logica di business dal codice JSP al servizio. Questo consente una modellazione del contenuto diversa.
 
 Inoltre, assicurati che tutte le nuove funzioni sviluppate siano conformi ai seguenti principi:
 
 * **I requisiti di sicurezza devono guidare la struttura del contenuto**
 
-   * La gestione del controllo degli accessi dovrebbe essere naturale
-   * Il controllo degli accessi deve essere applicato dall&#39;archivio, non dall&#39;applicazione
+  * La gestione del controllo degli accessi dovrebbe essere naturale
+  * Il controllo degli accessi deve essere applicato dall&#39;archivio, non dall&#39;applicazione
 
 * **Usa tipi di nodo**
 
-   * Limita il set di proprietà che è possibile impostare
+  * Limita il set di proprietà che è possibile impostare
 
 * **Rispetta impostazioni privacy**
 
-   * Se sono presenti profili privati, un esempio potrebbe essere quello di non esporre l’immagine del profilo, l’e-mail o il nome completo trovati sul nodo `/profile` privato.
+  * Se sono presenti profili privati, un esempio potrebbe essere quello di non esporre l’immagine del profilo, l’e-mail o il nome completo trovati sul nodo `/profile` privato.
 
 ## Controllo accesso rigoroso {#strict-access-control}
 
@@ -78,7 +78,7 @@ Sia che si applichi il controllo degli accessi durante la ristrutturazione dei c
 * Applica ACL per i tipi di nodo
 * Limita le autorizzazioni
 
-   * ad esempio, se devi solo scrivere le proprietà, non dare l&#39;autorizzazione `jcr:write`; usa invece `jcr:modifyProperties`
+  * ad esempio, se devi solo scrivere le proprietà, non dare l&#39;autorizzazione `jcr:write`; usa invece `jcr:modifyProperties`
 
 ## Utenti e mappature dei servizi {#service-users-and-mappings}
 
@@ -97,7 +97,7 @@ I metodi restituiscono un risolutore sessione/risorsa con i privilegi solo di un
 * `service-id` è mappato a un resolver di risorse e/o all&#39;ID utente dell&#39;archivio JCR per l&#39;autenticazione
 * `service-name` è il nome simbolico del bundle che fornisce il servizio
 
-## Altro Recommendations {#other-recommendations}
+## Altre raccomandazioni {#other-recommendations}
 
 ### Sostituzione della sessione di amministrazione con un utente del servizio {#replacing-the-admin-session-with-a-service-user}
 
@@ -118,7 +118,7 @@ Per sostituire la sessione di amministrazione con un utente del servizio, è nec
 
 ## Creazione di un utente del servizio {#creating-a-new-service-user}
 
-Dopo aver verificato che nessun utente nell’elenco degli utenti del servizio AEM è applicabile al tuo caso d’uso e che i corrispondenti problemi RTC sono stati approvati, aggiungi il nuovo utente al contenuto predefinito.
+Dopo aver verificato che nessun utente nell’elenco degli utenti del servizio AEM sia applicabile al caso d’uso e che i corrispondenti problemi RTC siano stati approvati, aggiungi il nuovo utente al contenuto predefinito.
 
 L&#39;approccio consigliato consiste nel creare un utente del servizio per utilizzare Esplora repository in *https://&lt;server>:&lt;porta>/crx/explorer/index.jsp*
 
@@ -248,4 +248,4 @@ Per risolvere questi problemi, si consiglia di utilizzare gli stessi approcci in
 
 ## Processori Sling POST e pagine eliminate {#sling-post-processors-and-deleted-pages}
 
-Esistono un paio di sessioni amministrative utilizzate nelle implementazioni del processore sling POST. In genere, le sessioni amministrative vengono utilizzate per accedere ai nodi in attesa di eliminazione all’interno del POST in fase di elaborazione. Di conseguenza, non sono più disponibili tramite la sessione di richiesta. È possibile accedere a un nodo in attesa di eliminazione per divulgare metadati che altrimenti non dovrebbero essere accessibili.
+Esistono un paio di sessioni amministrative utilizzate nelle implementazioni del processore Sling POST. In genere, le sessioni amministrative vengono utilizzate per accedere ai nodi in attesa di eliminazione all’interno del POST in fase di elaborazione. Di conseguenza, non sono più disponibili tramite la sessione di richiesta. È possibile accedere a un nodo in attesa di eliminazione per divulgare metadati che altrimenti non dovrebbero essere accessibili.

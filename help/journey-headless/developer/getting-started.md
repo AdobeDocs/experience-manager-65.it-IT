@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '2999'
-ht-degree: 95%
+source-wordcount: '3072'
+ht-degree: 94%
 
 ---
 
@@ -18,11 +18,11 @@ In questa parte del [Percorso per sviluppatori headless di AEM,](overview.md) sc
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso AEM headless, [Informazioni sullo sviluppo headless di CMS](learn-about.md), hai imparato la teoria di base su cosa sia un CMS headless e ora dovresti:
+Nel documento precedente del percorso AEM headless, [Informazioni sullo sviluppo headless di CMS](learn-about.md), hai imparato la teoria di base su cosa sia un CMS headless e ora dovresti aver appreso quanto segue:
 
-* Comprendere i concetti e la terminologia di base per la distribuzione di contenuti headless
-* Capire perché e quando è richiesto un headless
-* Conoscere ad alto livello come vengono utilizzati i concetti headless e come si relazionano
+* I concetti e la terminologia di base per la distribuzione di contenuti headless
+* Perché e quando è richiesto un headless
+* Conoscenza ad alto livello di come vengono utilizzati i concetti headless e come si relazionano
 
 Questo articolo si basa su questi elementi fondamentali per comprendere come utilizzare AEM per implementare una soluzione headless.
 
@@ -75,7 +75,7 @@ I modelli per frammenti di contenuto definiscono la struttura dei dati e del con
 
 I frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali.
 
-I Frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
+I Frammenti di contenuto contengono contenuti strutturati e possono essere consegnati in formato JSON.
 
 ### API GraphQL e REST {#apis}
 
@@ -144,7 +144,7 @@ Per ogni progetto riuscito è importante definire chiaramente non solo i requisi
 
 È importante disporre di un ambito chiaramente definito per il progetto. L’ambito segnala i criteri di accettazione e consente di stabilire una definizione di operazione completata.
 
-La prima domanda che dovresti porti è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che in futuro si dispone o si disporrà di un’applicazione Experience creata con i propri strumenti di sviluppo e non con l’AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
+La prima domanda che dovresti porti è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che in futuro disponi di un’applicazione Experience creata con i tuoi strumenti di sviluppo e non con AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
 
 ### Ruoli e responsabilità {#roles-responsibilities}
 
@@ -159,7 +159,7 @@ I ruoli di ogni singolo progetto variano, ma quelli importanti da considerare ne
 
 L’amministratore è responsabile dell’impostazione e della configurazione di base del sistema. Ad esempio, l’amministratore configura l’organizzazione all’interno del sistema di gestione utenti di Adobe, denominato Identity Management System (IMS). L’amministratore è il primo utente dell’organizzazione a ricevere un invito e-mail da Adobe dopo che l’organizzazione è stata creata da Adobe in IMS. L’amministratore può accedere a IMS e aggiungere utenti di altri utenti tipo.
 
-Una volta configurati dall’amministratore, agli utenti vengono concesse le autorizzazioni di accesso a tutte le risorse AEM per svolgere il loro lavoro di collaboratori per la distribuzione dell’applicazione Experience tramite AEM Headless.
+Una volta configurati dall’amministratore, agli utenti vengono concesse le autorizzazioni di accesso a tutte le risorse AEM per svolgere il loro lavoro come collaboratori per la distribuzione dell’applicazione Experience tramite AEM Headless.
 
 L’amministratore deve essere l’utente che configura AEM e prepara l’ambiente di esecuzione per abilitare gli [autori di contenuti](#content-author) a creare e aggiornare contenuti e gli [sviluppatori](#developer) a utilizzare le API che recuperano o modificano il contenuto per le applicazioni di esperienza.
 
@@ -176,7 +176,7 @@ Pianificare la traduzione all’inizio del progetto. Considerare “specialista 
 Creare un piano su quali contenuti devono essere tradotti.
 
 * Hai bisogno di lingue diverse o anche di una lingua da adottare per caratteristiche regionali specifiche?
-* È necessario che contenuti multimediali complessi come immagini o video siano diversi per impostazioni internazionali diverse?
+* I contenuti multimediali complessi, come immagini o video, devono essere diversi per lingue diverse?
 
 Procedere con sicurezza sul flusso di lavoro di aggiornamento dei contenuti. Quale processo di approvazione deve supportare il sistema? È possibile utilizzare i flussi di lavoro AEM per automatizzare questo processo?
 
@@ -191,7 +191,7 @@ La gerarchia delle cartelle può affrontare due problemi principali relativi all
 * [Traduzione](#translation): AEM gestisce la traduzione dei contenuti mantenendone delle copie in cartelle specifiche delle impostazioni locali.
 * Organizzazione: le cartelle vengono utilizzate per definire una gerarchia di contenuti necessaria per supportare le esigenze di traduzione e per gestire in modo logico i frammenti di contenuto.
 
-AEM consente una struttura dei contenuti flessibile e una gerarchia può essere arbitrariamente grande. Tuttavia è importante rendersi conto che eventuali modifiche nella struttura delle cartelle possono avere conseguenze indesiderate per le query esistenti che [si basano sul percorso del contenuto.](#developer) Pertanto, una gerarchia ben definita, chiaramente impostata in anticipo, può essere utile per gli autori dei contenuti.
+AEM consente una struttura dei contenuti flessibile e una gerarchia che può essere arbitrariamente grande. Tuttavia, è importante comprendere che eventuali modifiche nella struttura delle cartelle possono avere conseguenze indesiderate per le query esistenti che [utilizzano il percorso del contenuto.](#developer) Pertanto, una gerarchia ben definita, chiaramente impostata in anticipo, può essere utile per gli autori di contenuti.
 
 Le cartelle possono anche essere limitate per consentire solo alcuni tipi di contenuto (in base ai Modelli per frammenti di contenuto). Si consiglia di specificare sempre in modo esplicito quali modelli sono consentiti per tutte le cartelle nella gerarchia. Specifica del contenuto consentito per una determinata cartella:
 
@@ -211,7 +211,7 @@ Consulta la sezione [risorse aggiuntive](#additional-resources) per ulteriore do
 
 ##### Non estendere eccessivamente la nidificazione dei contenuti {#content-nesting}
 
-I [Frammenti di contenuto](#content-fragments) vengono utilizzati in AEM per creare contenuti headless. AEM supporta fino a dieci livelli di nidificazione dei contenuti per i frammenti di contenuto. Tuttavia è importante tenere presente che AEM deve risolvere in modo iterativo ogni riferimento definito nel frammento di contenuto principale, quindi verificare se in tutti gli elementi di pari livello sono presenti riferimenti figlio. Queste operazioni possono sommarsi rapidamente e provocare un problema di prestazioni.
+I [Frammenti di contenuto](#content-fragments) vengono utilizzati in AEM per creare contenuti headless. AEM supporta fino a dieci livelli di nidificazione dei contenuti per i frammenti di contenuto. Tuttavia è importante tenere presente che AEM deve risolvere in modo iterativo ogni riferimento definito nel frammento di contenuto principale, quindi verificare se in tutti gli elementi di pari livello sono presenti riferimenti secondari. Queste operazioni possono sommarsi rapidamente e provocare un problema di prestazioni.
 
 Come regola generale, i riferimenti ai frammenti di contenuto non dovrebbero essere nidificati oltre i cinque livelli.
 
@@ -232,8 +232,8 @@ GraphQL funge da “colla” tra AEM e i consumatori di contenuti headless. Grap
 Gli sviluppatori devono tenere presenti alcuni consigli di base durante la pianificazione delle query:
 
 * Le query non devono basarsi su un percorso fisso (`ByPath`) per recuperare i frammenti di contenuto.
-   * [Gli autori dei contenuti dispongono del controllo completo sulla gerarchia dei frammenti di contenuto](#content-hierarchy) e potrebbero apportare modifiche tali da interrompere la query.
-   * Le query devono invece optare per i riferimenti al modello per frammento di contenuto con parametri di query dinamici per filtrare i risultati e generare il payload desiderato.
+  * [Gli autori dei contenuti dispongono del controllo completo sulla gerarchia dei frammenti di contenuto](#content-hierarchy) e potrebbero apportare modifiche tali da interrompere la query.
+  * Le query devono invece optare per i riferimenti al modello per frammento di contenuto con parametri di query dinamici per filtrare i risultati e generare il payload desiderato.
 * Per ottenere le migliori prestazioni delle query, utilizza sempre query persistenti in AEM. Queste sono trattate più avanti nel percorso.
 * GraphQL è dichiarativo secondo il motto “Chiedi esattamente ciò di cui hai bisogno, e ottieni esattamente quello.” Ciò significa che, durante la creazione di query GraphQL, devi evitare sempre query di tipo `select *` che è possibile creare in un database relazionale.
 
@@ -290,7 +290,7 @@ Mentre si raccomanda di spostarsi nella parte successiva del percorso per lo svi
 * [Concetti sull’authoring](/help/sites-authoring/author.md) - Documentazione tecnica per l’ambiente di authoring di AEM, compresi i dettagli sull’impostazione di authoring-pubblicazione
 * [Pubblicazione delle pagine](/help/sites-authoring/publishing-pages.md) - Documentazione tecnica per la pubblicazione dei contenuti su AEM
 * [Convenzioni di denominazione](/help/sites-developing/naming-conventions.md) - Documentazione tecnica sulle restrizioni di denominazione delle pagine in AEM
-* [Gestore multisito e traduzione](/help/sites-administering/msm-and-translation.md) - Documentazione tecnica sulle potenti funzioni di traduzione di AEM
+* [Multi-Site Manager e traduzione](/help/sites-administering/msm-and-translation.md) - Documentazione tecnica sulle potenti funzioni di traduzione di AEM
 * [Flussi di lavoro AEM](/help/sites-authoring/workflows.md) - Documentazione tecnica su come automatizzare i flussi di lavoro in AEM
 * [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Documentazione tecnica per i frammenti di contenuto.
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Documentazione tecnica per i modelli per frammenti di contenuto.

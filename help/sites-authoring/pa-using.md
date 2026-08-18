@@ -11,7 +11,7 @@ feature: Authoring,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '655'
 ht-degree: 5%
 
 ---
@@ -91,7 +91,7 @@ Apri [Content Insight](/help/sites-authoring/content-insights.md) dalla console 
 >
 >I dati per Activity Map provengono da Adobe Analytics.
 
-Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[&#x200B; in modalità &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes) per visualizzare i dati rilevanti. Ad esempio:
+Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[&#128279;](/help/sites-authoring/author-environment-tools.md#page-modes) in modalità  per visualizzare i dati rilevanti. Ad esempio:
 
 ![aa-07](assets/aa-07.png)
 
@@ -137,23 +137,23 @@ La finestra di dialogo **Impostazioni Activity Map** fornisce una serie di opzio
 
 * Generale
 
-   * Suite per report
-   * Nome pagina
-   * Lingua
-   * Sovrapposizioni etichetta con
-   * Dimensione font etichetta
-   * Colore sfumatura
-   * Colore bolla
-   * Sfumatura colore basata su
-   * Trasparenza sfumatura
+  * Suite per report
+  * Nome pagina
+  * Lingua
+  * Sovrapposizioni etichetta con
+  * Dimensione font etichetta
+  * Colore sfumatura
+  * Colore bolla
+  * Sfumatura colore basata su
+  * Trasparenza sfumatura
 
 * Standard
 
-   * Visualizzazione (tipo e numero di collegamenti)
-   * Nascondi sovrapposizioni per collegamenti che non hanno ricevuto hit
+  * Visualizzazione (tipo e numero di collegamenti)
+  * Nascondi sovrapposizioni per collegamenti che non hanno ricevuto hit
 
 * Live
 
-   * Visualizza in alto (guadagni o perdenti)
-   * Escludi % inferiore
-   * Aggiornamento automatico (dati e periodo)
+  * Visualizza in alto (guadagni o perdenti)
+  * Escludi % inferiore
+  * Aggiornamento automatico (dati e periodo)

@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
 source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
-workflow-type: ht
-source-wordcount: '1351'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1374'
+ht-degree: 96%
 
 ---
 
@@ -20,29 +20,29 @@ I fattori di base da considerare sono (in questo ordine):
 
 * **Velocità di rete**
 
-   * Latenza di rete
-   * Larghezza di banda disponibile
+  * Latenza di rete
+  * Larghezza di banda disponibile
 
 * **Velocità di calcolo**
 
-   * Efficienza della memorizzazione in cache
-   * Traffico previsto
-   * Complessità di modelli, applicazioni e componenti
-   * Autori simultanei
-   * Complessità dell’operazione di authoring (modifica semplice dei contenuti, rollout MSM e così via)
+  * Efficienza della memorizzazione in cache
+  * Traffico previsto
+  * Complessità di modelli, applicazioni e componenti
+  * Autori simultanei
+  * Complessità dell’operazione di authoring (modifica semplice dei contenuti, rollout MSM e così via)
 
 * **Prestazioni I/O**
 
-   * Prestazioni ed efficienza dell’archiviazione di file o database
+  * Prestazioni ed efficienza dell’archiviazione di file o database
 
 * **Disco rigido**
 
-   * almeno due o tre volte più grande della dimensione dell’archivio
+  * almeno due o tre volte più grande della dimensione dell’archivio
 
 * **Memoria**
 
-   * Dimensioni del sito Web (numero di oggetti contenuto, pagine e utenti)
-   * Numero di utenti/sessioni attivi contemporaneamente
+  * Dimensioni del sito Web (numero di oggetti contenuto, pagine e utenti)
+  * Numero di utenti/sessioni attivi contemporaneamente
 
 ## Architettura {#architecture}
 
@@ -51,19 +51,19 @@ Una tipica configurazione di AEM è costituita da un ambiente di authoring e uno
 In una tipica configurazione di progetto, sono disponibili diversi ambienti in cui suddividere le fasi del progetto:
 
 * **Ambiente di sviluppo**
-Per sviluppare nuove funzioni o apportare modifiche significative. Si consiglia di lavorare utilizzando un ambiente di sviluppo per sviluppatore (installazioni locali sui propri sistemi personali).
+Sviluppare nuove funzioni o apportare modifiche significative. Si consiglia di lavorare utilizzando un ambiente di sviluppo per sviluppatore (installazioni locali sui propri sistemi personali).
 
-* **Ambiente di test dell’autore**
+* **Ambiente di test dell&#39;autore**
 Per verificare le modifiche. Il numero di ambienti di test può variare a seconda dei requisiti del progetto (ad esempio, separati per QA, test di integrazione o test di accettazione da parte dell’utente).
 
-* **Ambiente di test di pubblicazione**
+* **Pubblica ambiente di prova**
 Principalmente per testare casi di utilizzo di collaborazione social e/o l’interazione tra l’istanza di authoring e più istanze di pubblicazione.
 
-* **Ambiente di produzione di authoring**
-Per consentire agli autori di modificare il contenuto.
+* **Ambiente di produzione dell&#39;autore**
+Consentire agli autori di modificare il contenuto.
 
-* **Ambiente di produzione di pubblicazione**
-Per distribuire il contenuto pubblicato.
+* **Pubblica ambiente di produzione**
+Distribuire il contenuto pubblicato.
 
 Inoltre, gli ambienti possono variare, da un sistema a server singolo eseguito con AEM e un server applicazioni, a un set altamente scalabile di istanze cluster multi-server e multi-CPU. Adobe consiglia di utilizzare un computer separato per ogni sistema di produzione e di non eseguire altre applicazioni su tali computer.
 
@@ -133,7 +133,7 @@ Alloca almeno 16 GB di memoria heap e configura il flusso di lavoro [!UICONTROL 
 >
 >Consulta anche la [Guida alle prestazioni delle risorse](/help/sites-deploying/assets-performance-sizing.md).
 
-### Gestione multi-sito {#multi-site-manager}
+### Multi-Site Manager {#multi-site-manager}
 
 Il consumo di risorse quando si utilizza AEM MSM in un ambiente di authoring dipende in larga misura dai casi d’uso specifici. I fattori di base sono:
 
