@@ -104,7 +104,7 @@ Le funzionalità di base dell&#39;editor Rich Text vengono attivate o disattivat
 
 Nella tabella seguente sono elencati i plug-in correnti:
 
-* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1}.](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)
+* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1&rbrace;.](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)
 * Valori consentiti per la proprietà `features`.
 * Descrizione delle funzionalità fornite dal plug-in.
 

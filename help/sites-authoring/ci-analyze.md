@@ -30,7 +30,7 @@ Utilizza la procedura seguente per visualizzare le analisi e i consigli per una 
 
    >[!NOTE]
    >
-   >Le analisi e i consigli per una pagina vengono visualizzati solo se AEM è stato configurato per l&#39;integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).[
+   >Le analisi e i consigli per una pagina vengono visualizzati solo se AEM è stato configurato per l&#39;integrazione con Adobe Analytics[&#128279;](/help/sites-administering/adobeanalytics-connect.md).
 
    ![schermata_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 

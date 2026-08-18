@@ -146,7 +146,7 @@ Quando i file vengono rilasciati nella cartella controllata, vengono elencati i 
 
 **Tempo di attesa:** il tempo di attesa, espresso in millisecondi, prima della scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 3.600.000 millisecondi (un’ora) e il file è stato creato un minuto fa, questo file verrà acquisito dopo 59 o più minuti. Il valore predefinito è 0.
 
-Questa impostazione è utile per garantire che un file o una cartella sia completamente copiato nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il download richiede dieci minuti, impostare il tempo di attesa su 10&amp;ast;60 &amp;ast;1000 millisecondi. Questo impedisce alla cartella controllata di eseguire la scansione del file se non sono disponibili dieci minuti.
+Questa impostazione è utile per garantire che un file o una cartella sia completamente copiato nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il download richiede dieci minuti, impostare il tempo di attesa su 10&ast;60 &ast;1000 millisecondi. Questo impedisce alla cartella controllata di eseguire la scansione del file se non sono disponibili dieci minuti.
 
 **Escludi motivo file:** un punto e virgola **;** ha delimitato un elenco di pattern utilizzati da una cartella controllata per determinare quali file e cartelle scansionare e acquisire. Qualsiasi file o cartella con questo motivo non verrà scansionato per l’elaborazione.
 
@@ -154,29 +154,29 @@ Questa impostazione è utile quando l’input è una cartella con più file. Il 
 
 Puoi utilizzare i modelli file per escludere:
 
-* File con estensioni specifiche, ad esempio &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* File con nomi specifici; ad esempio, data.&amp;ast; escluderebbe file e cartelle denominati *data1*, *data2* e così via.
+* File con estensioni specifiche, ad esempio &ast;.dat, &ast;.xml, &ast;.pdf.
+* File con nomi specifici; ad esempio, data.&ast; escluderebbe file e cartelle denominati *data1*, *data2* e così via.
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-  * &amp;ast;.`[dD][aA]`&#39;porta&#39;
-  * &amp;ast;.`[Xx][Mm][Ll]`
+  * &ast;.`[dD][aA]`&#39;porta&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 Per ulteriori informazioni sui pattern di file, consulta [Informazioni sui pattern di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Pattern di file di inclusione:** (obbligatorio) elenco di pattern delimitati da punto e virgola **;** utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se Includi modello file è input&amp;ast;, vengono selezionati tutti i file e le cartelle che corrispondono a input&amp;ast;. Questo include file e cartelle denominati input1, input2 e così via.
+**Pattern di file di inclusione:** (obbligatorio) elenco di pattern delimitati da punto e virgola **;** utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se Includi modello file è input&ast;, vengono selezionati tutti i file e le cartelle che corrispondono a input&ast;. Questo include file e cartelle denominati input1, input2 e così via.
 
-Il valore predefinito è &amp;ast; e indica tutti i file e le cartelle.
+Il valore predefinito è &ast; e indica tutti i file e le cartelle.
 
 Puoi utilizzare i pattern di file per includere:
 
-* File con estensioni specifiche, ad esempio &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* File con nomi specifici; ad esempio, data.&amp;ast; includerebbe file e cartelle denominati *data1*, *data2* e così via.
+* File con estensioni specifiche, ad esempio &ast;.dat, &ast;.xml, &ast;.pdf.
+* File con nomi specifici; ad esempio, data.&ast; includerebbe file e cartelle denominati *data1*, *data2* e così via.
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-  * &amp;ast;.`[dD][aA]`&#39;porta&#39;
-  * &amp;ast;.`[Xx][Mm][Ll]`
+  * &ast;.`[dD][aA]`&#39;porta&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 Per ulteriori informazioni sui pattern di file, consulta [Informazioni sui pattern di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -228,7 +228,7 @@ Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati
 
 **Letterale:** la cartella controllata utilizza il valore immesso nel campo così come viene visualizzato. Sono supportati tutti i tipi Java di base. Ad esempio, se un’API utilizza input come String, long, int e booleano, la stringa viene convertita nel tipo corretto e il servizio viene richiamato.
 
-**Variabile:** il valore immesso è un modello di file utilizzato dalla cartella controllata per scegliere l’input. Se ad esempio è disponibile il servizio di crittografia password, in cui il documento di input deve essere un file di PDF, l&#39;utente può utilizzare &amp;ast;.pdf come modello di file. La cartella controllata raccoglierà tutti i file della cartella controllata che corrispondono a questo modello e richiamerà il servizio per ogni file. Quando si utilizza una variabile, tutti i file di input vengono convertiti in documenti. Sono supportate solo le API che utilizzano Documento come tipo di input.
+**Variabile:** il valore immesso è un modello di file utilizzato dalla cartella controllata per scegliere l’input. Se ad esempio è disponibile il servizio di crittografia password, in cui il documento di input deve essere un file di PDF, l&#39;utente può utilizzare &ast;.pdf come modello di file. La cartella controllata raccoglierà tutti i file della cartella controllata che corrispondono a questo modello e richiamerà il servizio per ogni file. Quando si utilizza una variabile, tutti i file di input vengono convertiti in documenti. Sono supportate solo le API che utilizzano Documento come tipo di input.
 
 **Mappature dei parametri di output:** utilizzate per configurare gli output del servizio e dell’operazione. Le impostazioni disponibili dipendono dal servizio che utilizza l’endpoint della cartella controllata.
 
@@ -242,13 +242,13 @@ L’output della cartella controllata può essere un singolo documento, un elenc
 
 Gli amministratori possono specificare il tipo di file che può richiamare un servizio. Si possono stabilire più pattern di file per ogni cartella controllata. Un pattern di file può essere rappresentato da una delle seguenti proprietà di file:
 
-* File con estensioni del nome file specifiche. Ad esempio, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
-* File con nomi specifici. Ad esempio, data.&amp;ast;
+* File con estensioni del nome file specifiche. Ad esempio, &ast;.dat, &ast;.xml, &ast;.pdf
+* File con nomi specifici. Ad esempio, data.&ast;
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-  * &amp;ast;.`[dD][aA]`&#39;porta&#39;
-  * &amp;ast;.`[Xx][Mm][Ll]`
+  * &ast;.`[dD][aA]`&#39;porta&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 L’amministratore può definire il modello di file della cartella di output in cui memorizzare i risultati. Per le cartelle di output (risultati, conservazione ed errori), l’amministratore può specificare uno dei seguenti modelli di file:
 
@@ -374,11 +374,11 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
 * Se in Windows è presente una cartella controllata che elabora i file immagine, specificare i valori per l’opzione Includi modelli file o Escludi modelli file per impedire che il file Thumbs.db generato automaticamente da Windows venga sottoposto a polling dalla cartella controllata.
 * Se è specificata un’espressione Cron, l’intervallo di ripetizione viene ignorato. L’utilizzo dell’espressione Cron si basa sul sistema di pianificazione dei processi open source Quartz, versione 1.4.0.
 * La dimensione batch è il numero di file o cartelle che verranno raccolte in ogni scansione della cartella controllata. Se la dimensione batch è impostata su due e nella cartella di input della cartella controllata vengono rilasciati dieci file o cartelle, in ogni scansione verranno raccolti solo due file o cartelle. Nella scansione successiva, che si verifica dopo il tempo specificato nell’intervallo di ripetizione, verranno raccolti i due file successivi.
-* Per i pattern di file, gli amministratori possono specificare espressioni regolari con il supporto aggiuntivo di pattern con caratteri jolly. Cartella controllata modifica l&#39;espressione regolare per supportare i pattern con caratteri jolly, ad esempio &amp;ast;.&amp;ast; o &amp;ast;.pdf. Questi pattern con caratteri jolly non sono supportati dalle espressioni regolari.
+* Per i pattern di file, gli amministratori possono specificare espressioni regolari con il supporto aggiuntivo di pattern con caratteri jolly. Cartella controllata modifica l&#39;espressione regolare per supportare i pattern con caratteri jolly, ad esempio &ast;.&ast; o &ast;.pdf. Questi pattern con caratteri jolly non sono supportati dalle espressioni regolari.
 * La cartella controllata analizza l’input della cartella di input ma non verifica che il file o la cartella di origine sia stato completamente copiato nella cartella di input prima di iniziare l’elaborazione. Per assicurarti che il file o la cartella di origine sia stato completamente copiato nella cartella di input della cartella controllata prima che il file o la cartella venga prelevato, esegui le operazioni seguenti:
 
-  * Usa il tempo di attesa, ovvero il tempo in millisecondi per il quale la cartella controllata resta in attesa dall’ora dell’ultima modifica. Utilizza questa funzione se devi elaborare file di grandi dimensioni. Ad esempio, se il download di un file richiede 10 minuti, specificare il tempo di attesa come 10&amp;ast;60 &amp;ast;1000 millisecondi. In tal modo la cartella controllata non raccogliere il file se non esisste da almeno 10 minuti.
-  * Utilizza il pattern di file di esclusione e il pattern di file di inclusione. Se ad esempio il pattern di file di esclusione è `ex*` e il pattern di file di inclusione è `in*`, la cartella controllata raccoglierà i file che iniziano con “in” e non raccoglierà i file che iniziano con “ex”. Per copiare file o cartelle di grandi dimensioni, rinomina il file o la cartella in modo che il nome inizi con “ex”. Dopo aver copiato completamente il file o la cartella denominata &quot;ex&quot; nella cartella controllata, rinominala in &quot;in&amp;ast;&quot;.
+  * Usa il tempo di attesa, ovvero il tempo in millisecondi per il quale la cartella controllata resta in attesa dall’ora dell’ultima modifica. Utilizza questa funzione se devi elaborare file di grandi dimensioni. Ad esempio, se il download di un file richiede 10 minuti, specificare il tempo di attesa come 10&ast;60 &ast;1000 millisecondi. In tal modo la cartella controllata non raccogliere il file se non esisste da almeno 10 minuti.
+  * Utilizza il pattern di file di esclusione e il pattern di file di inclusione. Se ad esempio il pattern di file di esclusione è `ex*` e il pattern di file di inclusione è `in*`, la cartella controllata raccoglierà i file che iniziano con “in” e non raccoglierà i file che iniziano con “ex”. Per copiare file o cartelle di grandi dimensioni, rinomina il file o la cartella in modo che il nome inizi con “ex”. Dopo aver copiato completamente il file o la cartella denominata &quot;ex&quot; nella cartella controllata, rinominala in &quot;in&ast;&quot;.
 
 * Utilizza la durata di eliminazione per mantenere pulita la cartella dei risultati. La cartella controllata elimina tutti i file più vecchi della durata indicata nella durata di eliminazione. La durata è in giorni.
 * Quando aggiungi un endpoint cartella controllata, dopo la selezione del nome dell’operazione, viene popolata la mappatura dei parametri di input. Per ogni input dell’operazione viene generato un campo di mappatura dei parametri di input. Di seguito sono riportati alcuni esempi di mappature dei parametri di input:
@@ -397,7 +397,7 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
 
   * Soluzione alternativa 1
 
-    1. Specificate un pattern per Escludi pattern file, ad esempio temp&amp;ast;.ps.
+    1. Specificate un pattern per Escludi pattern file, ad esempio temp&ast;.ps.
     1. Copia i file che iniziano con temp (ad esempio, temp1.ps) nella cartella controllata.
     1. Dopo che il file è stato copiato completamente nella cartella controllata, rinomina il file in modo che corrisponda al pattern specificato per Pattern di file di inclusione. La cartella controllata sposta quindi il file completato nella cartella di fase.
 
