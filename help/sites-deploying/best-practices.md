@@ -1,5 +1,5 @@
 ---
-title: Implementazione delle best practice
+title: Best practice per la distribuzione
 description: Scopri come distribuire e gestire Adobe Experience Manager (AEM) nel modo più efficiente ed efficace possibile.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,33 +11,33 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 4%
+source-wordcount: '454'
+ht-degree: 22%
 
 ---
 
-# Implementazione delle best practice{#deploying-best-practices}
+# Best practice per la distribuzione{#deploying-best-practices}
 
-Le best practice per l’implementazione descrivono come implementare o mantenere Adobe Experience Manager (AEM) nel modo più efficiente ed efficace possibile. Questo elenco crescente di argomenti comprende varie aree dell&#39;AEM.
+Le best practice per l’implementazione descrivono come distribuire o gestire Adobe Experience Manager (AEM) nel modo più efficiente ed efficace possibile. Questo elenco crescente di argomenti include diverse aree in AEM.
 
 Nelle seguenti aree è disponibile la documentazione relativa all’implementazione e alla manutenzione delle best practice e delle raccomandazioni:
 
 * [Oak](#oak)
-* [Communities](#communities)
+* [Community](#communities)
 * [Interfaccia](#ui)
 * [Prestazioni](#performance)
 
 Per le best practice sull’amministrazione, lo sviluppo o l’authoring, consulta una delle seguenti sezioni:
 
 * [Amministrazione delle best practice](/help/sites-administering/administer-best-practices.md)
-* [Sviluppo di best practice](/help/sites-developing/best-practices.md)
-* [Best practice di authoring](/help/sites-authoring/best-practices.md)
+* [Sviluppo delle best practice](/help/sites-developing/best-practices.md)
+* [Authoring delle best practice](/help/sites-authoring/best-practices.md)
 
 I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 
 ## Oak {#oak}
 
-[Oak](/help/sites-deploying/platform.md) è un archivio di contenuti gerarchici scalabile e performante alla base dell&#39;AEM.
+[Oak](/help/sites-deploying/platform.md) è un archivio di contenuti gerarchici scalabile ed efficiente alla base di AEM.
 
 <table>
  <tbody>
@@ -69,7 +69,7 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
  </tbody>
 </table>
 
-## Communities {#communities}
+## Community {#communities}
 
 AEM Communities semplifica la creazione e la gestione delle community on-premise. Le best practice per AEM Communities sono descritte qui:
 
@@ -81,9 +81,9 @@ AEM Communities semplifica la creazione e la gestione delle community on-premise
 
 Le best practice relative all’interfaccia utente sono descritte qui:
 
-[Interfaccia utente di Recommendations per i clienti](/help/sites-deploying/ui-recommendations.md)
+[Consigli in merito all’interfaccia utente per la clientela](/help/sites-deploying/ui-recommendations.md)
 
-L’AEM dispone attualmente di due interfacce: classica e ottimizzata per il tocco nella stessa versione. Pertanto, i clienti devono prendere una decisione su quale utilizzare durante l’implementazione del progetto. Questo documento ha lo scopo di aiutare a trovare la scelta giusta.
+AEM dispone attualmente di due interfacce: classica e touch nella stessa versione. Pertanto, i clienti devono prendere una decisione su quale utilizzare durante l’implementazione del progetto. Questo documento ha lo scopo di aiutare a trovare la scelta giusta.
 
 ## Prestazioni {#performance}
 
@@ -92,14 +92,14 @@ Le best practice sulle prestazioni sono elencate qui:
 <table>
  <tbody>
   <tr>
-   <td>Best practice per la garanzia della qualità</td>
-   <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Best practice per la garanzia della qualità</a></td>
+   <td>Best practice per Assurance di qualità</td>
+   <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Best practice per Assurance di qualità</a></td>
    <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test delle prestazioni nell'ambiente <em>publish</em>. Questo è di interesse soprattutto per gli ingegneri QA, i project manager e gli amministratori di sistema.</td>
   </tr>
   <tr>
    <td>Utilizzo di Dispatcher con una rete CDN</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a></td>
-   <td>Una rete CDN (Content Delivery Network), come Akamai Edge Delivery o Amazon Cloud Front, consente di distribuire contenuto da una posizione vicina all’utente finale.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a></td>
+   <td>Una rete per la consegna dei contenuti (CDN), come Akamai Edge Delivery o Amazon Cloud Front, consente di distribuire i contenuti da una località vicina all’utente finale.</td>
   </tr>
   <tr>
    <td>Ottimizzazione delle prestazioni</td>
@@ -108,7 +108,7 @@ Le best practice sulle prestazioni sono elencate qui:
   </tr>
   <tr>
    <td>Test delle prestazioni</td>
-   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best practice per i test delle prestazioni</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best practice per il test delle prestazioni</a></td>
    <td>Descrive le best practice per l'esecuzione di test delle prestazioni in una distribuzione AEM.<br /> </td>
   </tr>
  </tbody>

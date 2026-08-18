@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 0%
+source-wordcount: '1295'
+ht-degree: 2%
 
 ---
 
@@ -60,12 +60,12 @@ Passiamo ora ai dettagli su come misurare le prestazioni e migliorare i tassi di
 
 **Configura analisi**
 
-Per ottenere informazioni approfondite sulle interazioni dei clienti con i moduli, devi prima configurare Analytics in AEM Forms. Effettua le seguenti operazioni:
+Per ottenere informazioni approfondite sulle interazioni dei clienti con i moduli, devi prima configurare Analytics in AEM Forms. Esegui i passaggi seguenti:
 
 1. Creare una suite di rapporti in Adobe Analytics
 1. Creare la configurazione del servizio cloud in AEM
 1. Creare un framework per servizi cloud in AEM
-1. Configurare il servizio di configurazione di AEM Forms Analytics nell’AEM
+1. Configurare il servizio di configurazione di AEM Forms Analytics in AEM
 1. Abilitare l’analisi sul modulo in AEM
 
 Per i passaggi dettagliati, vedi [Configurazione di analisi e report per moduli adattivi](../../forms/using/configure-analytics-forms-documents.md).
@@ -78,9 +78,9 @@ Per creare ed eseguire test A/B per i moduli adattivi, configura Target in AEM F
 
 Man mano che i tuoi clienti accedono e interagiscono con i moduli su cui hai abilitato Analytics, le loro interazioni vengono acquisite in database di Analytics altamente sicuri. I database sono segmentati dai client e accessibili tramite connessioni sicure.
 
-Puoi visualizzare un rapporto dall’AEM per i moduli abilitati per l’analisi e analizzare i dati. Per visualizzare il rapporto:
+Puoi visualizzare un rapporto in AEM per moduli abilitati per l’analisi e analizzare i dati. Per visualizzare il rapporto:
 
-1. Nel server AEM, passa a **Forms > Forms &amp; Documents**.
+1. Sul server AEM, passa a **Forms > Forms &amp; Documents**.
 1. Selezionare la maschera per la quale si desidera creare il rapporto di analisi.
 1. Fai clic sull’icona Rapporti di Analytics. Il report viene visualizzato.
 

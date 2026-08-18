@@ -1,5 +1,5 @@
 ---
-title: Protezione e protezione dei moduli AEM nell’ambiente OSGi
+title: Rafforzamento e protezione di AEM Forms in ambiente OSGi
 description: Scopri consigli e best practice per proteggere AEM Forms sul server OSGi.
 topic-tags: Security
 role: Admin,User
@@ -8,12 +8,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 0%
+source-wordcount: '1470'
+ht-degree: 1%
 
 ---
 
-# Protezione e protezione dei moduli AEM nell’ambiente OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
+# Rafforzamento e protezione di AEM Forms in ambiente OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 Scopri consigli e best practice per proteggere AEM Forms sul server OSGi.
 
@@ -24,7 +24,7 @@ L&#39;articolo è destinato a consulenti, specialisti della sicurezza, architett
 * Ingegneri IT e operativi che devono implementare applicazioni web e server sicuri all&#39;interno delle proprie organizzazioni o di quelle dei clienti.
 * Architetti e pianificatori responsabili della pianificazione degli sforzi architettonici per i clienti nelle loro organizzazioni.
 * Esperti di sicurezza IT che si concentrano sulla fornitura di sicurezza attraverso le piattaforme all&#39;interno delle loro organizzazioni.
-* Consulenti di Adobi e partner che richiedono risorse dettagliate per clienti e partner.
+* Consulenti di Adobe e partner che richiedono risorse dettagliate per clienti e partner.
 
 Nell’immagine seguente sono illustrati i componenti e i protocolli utilizzati in una tipica distribuzione AEM Forms, inclusa la topologia del firewall appropriata:
 
@@ -75,7 +75,7 @@ Puoi configurare un firewall esterno per consentire a un determinato URL di AEM 
     </ul> </td> 
   </tr>
   <tr>
-   <td>Forms Portal </td> 
+   <td>Portale dei moduli </td> 
    <td>
     <ul> 
      <li>/content/forms/portal/</li> 
@@ -105,7 +105,7 @@ Puoi configurare il firewall interno in modo che alcuni componenti di AEM Forms 
    <td>URI</td> 
   </tr>
   <tr>
-   <td>Farm Publish (nodi di pubblicazione)</td> 
+   <td>Farm di pubblicazione (nodi di pubblicazione)</td> 
    <td>/bin/receive</td> 
   </tr>
   <tr>
@@ -113,7 +113,7 @@ Puoi configurare il firewall interno in modo che alcuni componenti di AEM Forms 
    <td>/content/forms/fp/*</td> 
   </tr>
   <tr>
-   <td>Server del componente aggiuntivo Forms Workflow (AEM Forms sul server JEE)</td> 
+   <td>Server del componente aggiuntivo Forms Workflow (server AEM Forms su JEE)</td> 
    <td>/soap/sdk</td> 
   </tr>
  </tbody>
@@ -123,9 +123,9 @@ Puoi configurare il firewall interno in modo che alcuni componenti di AEM Forms 
 
 Per impostazione predefinita, le risorse disponibili sui nodi di pubblicazione sono accessibili a tutti. L’accesso in sola lettura è abilitato per tutte le risorse. È necessario per abilitare l’accesso anonimo. Se prevedi di limitare l’accesso alla visualizzazione modulo e all’invio solo agli utenti autenticati, utilizza un gruppo comune per consentire solo agli utenti autenticati di avere accesso in sola lettura alle risorse disponibili sui nodi di pubblicazione. Le seguenti posizioni/directory contengono risorse di Forms che richiedono protezione avanzata (accesso in sola lettura per gli utenti autenticati):
 
-* /content/&ast;
-* /etc.clientlibs/fd/&ast;
-* /libs/fd/&amp;ast
+* /content/&amp;ast;
+* /etc.clientlibs/fd/&amp;ast;
+* /libs/fd/&amp;ast;
 
 ## Gestione sicura dei dati dei moduli  {#securely-handle-forms-data}
 
@@ -133,7 +133,7 @@ AEM Forms memorizza i dati in posizioni predefinite e cartelle temporanee. È ne
 
 ### Imposta la pulizia periodica della cartella temporanea {#setup-periodic-cleanup-of-temporary-folder}
 
-Quando configuri i moduli per gli allegati, i componenti di verifica o anteprima, i dati corrispondenti vengono memorizzati nei nodi di pubblicazione in /tmp/fd/. I dati vengono eliminati periodicamente. Puoi modificare il processo di eliminazione dei dati predefinito in modo che risulti più aggressivo. Per modificare il processo pianificato per l’eliminazione dei dati, apri la console web AEM, apri l’attività di pulizia della memoria temporanea di AEM Forms e modifica l’espressione Cron.
+Quando configuri i moduli per gli allegati, i componenti di verifica o anteprima, i dati corrispondenti vengono memorizzati nei nodi di pubblicazione in /tmp/fd/. I dati vengono eliminati periodicamente. Puoi modificare il processo di eliminazione dei dati predefinito in modo che risulti più aggressivo. Per modificare il processo pianificato per l’eliminazione dei dati, apri AEM Web Console, apri AEM Forms Temporary Storage Cleaning Task e modifica l’espressione Cron.
 
 Negli scenari sopra indicati, i dati vengono salvati solo per gli utenti autenticati. Inoltre, i dati sono protetti da elenchi di controllo di accesso (ACL, Access Control List). Pertanto, la modifica dell’eliminazione dei dati rappresenta un ulteriore passo avanti per la protezione delle informazioni.
 
@@ -143,7 +143,7 @@ Per impostazione predefinita, l’azione di invio Forms Portal dei moduli adatti
 
 È possibile configurare il servizio di archiviazione per l&#39;invio al cluster di elaborazione senza salvare nulla localmente sul nodo di pubblicazione. Il cluster di elaborazione risiede in una zona protetta dietro il firewall privato e i dati rimangono sicuri.
 
-Utilizzare le credenziali del server di elaborazione per il servizio delle impostazioni di Servizi di dominio AEM per inviare i dati dal nodo di pubblicazione al server di elaborazione. Utilizzare le credenziali di un utente non amministrativo con accesso in lettura/scrittura all&#39;archivio del server di elaborazione. Per ulteriori informazioni, vedere [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
+Utilizzare le credenziali del server di elaborazione per il servizio delle impostazioni di AEM DS per inviare i dati dal nodo di pubblicazione al server di elaborazione. Utilizzare le credenziali di un utente non amministrativo con accesso in lettura/scrittura all&#39;archivio del server di elaborazione. Per ulteriori informazioni, vedere [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Protezione dei dati gestita dal modello dati modulo (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
@@ -152,7 +152,7 @@ L’integrazione dei dati fornisce anche metodi per autorizzare le richieste di 
 
 **Autorizzazione pre-elaborazione:** È possibile utilizzare l&#39;autorizzazione pre-elaborazione per convalidare l&#39;autenticità di una richiesta prima di eseguirla. Puoi utilizzare input, servizi e dettagli della richiesta per consentire o interrompere l’esecuzione della richiesta. È possibile restituire un&#39;eccezione di integrazione dei dati OPERATION_ACCESS_DENIED se l&#39;esecuzione viene interrotta. Puoi anche modificare la richiesta del client prima di inviarla per l’esecuzione. Ad esempio, modificando l’input e aggiungendo ulteriori informazioni.
 
-**Autorizzazione del processo Post:** È possibile utilizzare l&#39;autorizzazione post-elaborazione per convalidare e controllare i risultati prima di restituirli al richiedente. Puoi anche filtrare, eliminare e inserire dati aggiuntivi nei risultati.
+**Autorizzazione post-elaborazione:** È possibile utilizzare l&#39;autorizzazione post-elaborazione per convalidare e controllare i risultati prima di restituirli al richiedente. Puoi anche filtrare, eliminare e inserire dati aggiuntivi nei risultati.
 
 ### Limita l’accesso degli utenti {#limit-user-access}
 
@@ -168,23 +168,23 @@ Per le istanze di authoring, pubblicazione ed elaborazione è necessario un set 
 
 * Esistono diversi gruppi predefiniti con privilegi specifici per ogni utente tipo. Assegna utenti al gruppo.
 
-   * Un utente del gruppo utenti di forms:
+  * Un utente del gruppo utenti di forms:
 
-      * può creare, compilare, pubblicare e inviare un modulo.
-      * non può creare un modulo adattivo basato su XDP.
-      * non dispongono delle autorizzazioni necessarie per scrivere script per i moduli adattivi.
-      * impossibile importare XDP o un pacchetto contenente XDP
+    * può creare, compilare, pubblicare e inviare un modulo.
+    * non può creare un modulo adattivo basato su XDP.
+    * non dispongono delle autorizzazioni necessarie per scrivere script per i moduli adattivi.
+    * impossibile importare XDP o un pacchetto contenente XDP
 
-   * Un utente di forms-power-user group crea, compila, pubblica e invia tutti i tipi di moduli, scrive script per i moduli adattivi e importa pacchetti contenenti XDP.
-   * Un utente di template-author e template-power-user può visualizzare in anteprima e creare un modello.
-   * Un utente di autori di moduli fdm può creare e modificare un modello di dati modulo.
-   * Un utente del gruppo cm-user-agent può creare, visualizzare in anteprima e pubblicare lettere di gestione della corrispondenza.
-   * Un utente del gruppo di editor dei flussi di lavoro può creare un&#39;applicazione casella in entrata e un modello di flusso di lavoro.
+  * Un utente di forms-power-user group crea, compila, pubblica e invia tutti i tipi di moduli, scrive script per i moduli adattivi e importa pacchetti contenenti XDP.
+  * Un utente di template-author e template-power-user può visualizzare in anteprima e creare un modello.
+  * Un utente di autori di moduli fdm può creare e modificare un modello di dati modulo.
+  * Un utente del gruppo cm-user-agent può creare, visualizzare in anteprima e pubblicare lettere di gestione della corrispondenza.
+  * Un utente del gruppo di editor dei flussi di lavoro può creare un&#39;applicazione casella in entrata e un modello di flusso di lavoro.
 
 **Durante l&#39;elaborazione dell&#39;autore:**
 
 * Per i casi di utilizzo di salvataggio e invio remoti, crea un utente con autorizzazioni di lettura, creazione e modifica per il percorso di contenuto/modulo/fp dell’archivio crx.
-* Aggiungere un utente al gruppo di utenti del flusso di lavoro per consentire a un utente di utilizzare le applicazioni della casella in entrata AEM.
+* Aggiungi un utente al gruppo di utenti del flusso di lavoro per consentire a un utente di utilizzare le applicazioni della casella in entrata di AEM.
 
 ## Proteggere gli elementi intranet di un ambiente AEM Forms {#secure-intranet-elements-of-an-aem-forms-environment}
 
@@ -194,6 +194,6 @@ In generale, i cluster di elaborazione e il componente aggiuntivo Forms Workflow
 
 Un cluster di elaborazione viene eseguito in modalità di creazione ma non viene utilizzato per attività di sviluppo. Non consentire a un utente normale di essere incluso nei gruppi di autori di contenuti e utenti di moduli di un cluster di elaborazione.
 
-### Utilizzare le best practice per l’AEM per proteggere un ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### UTILIZZARE le best practice di AEM per proteggere un ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Questo documento fornisce istruzioni specifiche per l’ambiente AEM Forms. Al momento dell’implementazione, assicurati che l’installazione AEM sottostante sia sicura. Per istruzioni dettagliate, consulta la documentazione dell&#39;[Elenco di controllo della sicurezza AEM](/help/sites-administering/security-checklist.md).
+Questo documento fornisce istruzioni specifiche per l’ambiente AEM Forms. Assicurati che l’installazione AEM sottostante sia sicura al momento dell’implementazione. Per istruzioni dettagliate, consulta la documentazione dell&#39;[Elenco di controllo della sicurezza di AEM](/help/sites-administering/security-checklist.md).

@@ -30,9 +30,9 @@ La pagina Insight dei contenuti include rapporti che utilizzano dati di Adobe Si
 
 * SiteCatalyst: sono disponibili rapporti per le metriche seguenti:
 
-   * Visualizzazioni pagina
-   * Tempo medio trascorso sulla pagina
-   * Origini
+  * Visualizzazioni pagina
+  * Tempo medio trascorso sulla pagina
+  * Origini
 
 * Target: rapporti sull’attività della campagna per la quale la pagina include offerte.
 * BrightEdge: segnala le funzioni della pagina che migliorano la visibilità della pagina ai motori di ricerca e consiglia le funzioni che devono essere implementate.
@@ -62,8 +62,8 @@ Il rapporto Visualizzazioni include le seguenti funzioni per la valutazione del 
 * Numero totale di visualizzazioni per una pagina per il periodo di reporting.
 * Un grafico del numero di visualizzazioni nel periodo di reporting:
 
-   * Visualizzazioni totali.
-   * Visitatori univoci.
+  * Visualizzazioni totali.
+  * Visitatori univoci.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 

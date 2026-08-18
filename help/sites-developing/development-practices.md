@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,9 @@ Se l’esecuzione degli unit test richiede molto tempo, gli sviluppatori evitera
 
 Gli strumenti di analisi del codice possono essere utili, ma solo se i loro rapporti portano ad azioni da parte del team di sviluppo. Senza ottimizzare l’analisi fornita da questi strumenti, i consigli che generano diventano irrilevanti e perdono valore.
 
-### Segui la regola di Scout per ragazzi {#follow-the-boy-scout-rule}
+### Segui la regola del boy scout {#follow-the-boy-scout-rule}
 
-Gli Scout di ragazzi hanno una regola: &quot;Lascialo meglio di come l&#39;hai trovato.&quot; Se tutti i membri del team di sviluppo si attengono a questa regola e fanno pulizia quando si imbattono in un casino, il codice migliorerà costantemente.
+I boy scout hanno una regola: &quot;Lascialo meglio di come l&#39;hai trovato.&quot; Se tutti i membri del team di sviluppo si attengono a questa regola e fanno pulizia quando si imbattono in un casino, il codice migliorerà costantemente.
 
 ### Evita di implementare le funzioni YAGNI {#avoid-implementing-yagni-features}
 

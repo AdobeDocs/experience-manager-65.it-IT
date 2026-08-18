@@ -1,6 +1,6 @@
 ---
 title: Distribuzioni consigliate
-description: Questo articolo descrive le topologie consigliate per l’AEM.
+description: Questo articolo descrive le topologie consigliate per AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,8 +12,8 @@ feature: Deploying
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 0%
+source-wordcount: '1805'
+ht-degree: 1%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questa pagina fa riferimento alle topologie consigliate per l’AEM. Per ulteriori informazioni sulle funzionalità di clustering e su come configurarle, consulta la [documentazione di Apache Sling Discovery API](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
+>Questa pagina fa riferimento alle topologie consigliate per AEM. Per ulteriori informazioni sulle funzionalità di clustering e su come configurarle, consulta la [documentazione di Apache Sling Discovery API](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
 
 I microKernel fungono da gestori di persistenza a partire da AEM 6.2. La scelta di un tipo di implementazione adatto alle tue esigenze dipende dallo scopo dell’istanza e dal tipo di implementazione che stai prendendo in considerazione.
 
-Gli esempi seguenti sono intesi come un’indicazione degli usi raccomandati nelle configurazioni AEM più comuni.
+Gli esempi seguenti indicano gli usi consigliati nelle configurazioni di AEM più comuni.
 
 ## Scenari di distribuzione {#deployment-scenarios}
 
@@ -75,7 +75,7 @@ Gli svantaggi:
 
 >[!NOTE]
 >
->La distribuzione in standby a freddo in questo esempio di TarMK richiede che le istanze principale e in standby siano concesse in licenza separatamente, in quanto esiste una replica costante sul server di failover. Per ulteriori informazioni sulle licenze, consultare l&#39;[Adobe dei termini generali di licenza](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>La distribuzione in standby a freddo in questo esempio di TarMK richiede che le istanze principale e in standby siano concesse in licenza separatamente, in quanto esiste una replica costante sul server di failover. Per ulteriori informazioni sulle licenze, consultare le [Condizioni generali di licenza di Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
 
 ### Farm TarMK {#tarmk-farm}
 
@@ -97,13 +97,13 @@ I vantaggi:
 
 ### Cluster Oak con failover MongoMK per un&#39;elevata disponibilità in un singolo centro dati {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-Questo approccio implica che più istanze di Oak accedono a un set di repliche MongoDB all’interno di un singolo data center, creando in effetti un cluster attivo-attivo per l’ambiente di authoring AEM. I set di replica in MongoDB vengono utilizzati per fornire elevata disponibilità e ridondanza in caso di errore hardware o di rete.
+Questo approccio implica che più istanze Oak accedono a un set di repliche MongoDB all’interno di un singolo data center, creando in effetti un cluster attivo-attivo per l’ambiente di authoring AEM. I set di replica in MongoDB vengono utilizzati per fornire elevata disponibilità e ridondanza in caso di errore hardware o di rete.
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
 I vantaggi:
 
-* Possibilità di scalabilità orizzontale con le nuove istanze di creazione AEM
+* Possibilità di scalabilità orizzontale con le nuove istanze di authoring di AEM
 * Elevata disponibilità, ridondanza e failover automatizzato del livello dati
 
 Gli svantaggi:
@@ -118,12 +118,12 @@ Questo approccio implica che più istanze di Oak accedono a un set di repliche M
 
 I vantaggi:
 
-* Possibilità di scalabilità orizzontale con le nuove istanze di creazione AEM
+* Possibilità di scalabilità orizzontale con le nuove istanze di authoring di AEM
 * Elevata disponibilità, ridondanza e failover automatizzato del livello dati (comprese le interruzioni del centro dati)
 
 >[!NOTE]
 >
->Nel diagramma precedente, al server AEM 3 e al server AEM 4 viene presentato uno stato inattivo presupponendo una latenza di rete tra i server AEM nel centro dati 2 e il nodo primario MongoDB nel centro dati 1 superiore al requisito documentato in [Adobe Experience Manager con MongoDB - Elenchi di controllo](/help/sites-deploying/aem-with-mongodb.md#checklists). Se la latenza massima è compatibile con i requisiti, ad esempio mediante l&#39;uso di zone di disponibilità, anche i server AEM nel centro dati 2 possono essere attivi, creando un cluster AEM attivo-attivo in più centri dati.
+>Nel diagramma precedente, AEM Server 3 e AEM Server 4 presentano uno stato inattivo presupponendo una latenza di rete tra i server AEM nel centro dati 2 e il nodo primario MongoDB nel centro dati 1 superiore al requisito documentato in [Adobe Experience Manager con MongoDB - Elenchi di controllo](/help/sites-deploying/aem-with-mongodb.md#checklists). Se la latenza massima è compatibile con i requisiti, ad esempio tramite l’utilizzo di zone di disponibilità, anche i server AEM nel centro dati 2 possono essere attivi, creando un cluster AEM attivo-attivo in più centri dati.
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ La regola di base che deve essere presa in considerazione quando si sceglie tra 
 
 Puoi utilizzare queste matrici di decisione per stabilire quale sia il tipo di distribuzione più adatto alle tue esigenze.
 
-L’Adobe consiglia vivamente di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze di AEM Author che per quelle di Publish, ad eccezione dei casi di utilizzo descritti di seguito.
+Adobe consiglia vivamente di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze Author che Publish di AEM, tranne nei casi di utilizzo descritti di seguito.
 
 ### Eccezioni per la scelta di AEM MongoMK rispetto a TarMK nelle istanze di authoring {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
@@ -162,25 +162,25 @@ Inoltre, si consiglia vivamente di configurare l’archivio dati su un file syst
 
 Uno dei vantaggi aggiuntivi della distribuzione di un set di repliche MongoDB con un cluster di due o più istanze di authoring è uno scenario di ripristino automatizzato con tempi di inattività minimi in presenza di istanze di authoring, replica MongoDB o errore completo del centro dati. Tuttavia, la scelta di MongoMK rispetto a TarMK non dovrebbe essere esclusivamente guidata dai requisiti di ripristino, in quanto TarMK può anche fornire una soluzione di downtime minima con un meccanismo di failover controllato.
 
-Se non si prevede che i criteri di cui sopra siano soddisfatti durante i primi 18 mesi di implementazione, per prima cosa si consiglia di implementare l’AEM utilizzando TarMK, quindi di rivalutare la configurazione in un secondo momento, quando i criteri di cui sopra saranno applicabili, e infine di determinare se rimanere su TarMK o migrare a MongoMK.
+Se non si prevede che i criteri di cui sopra siano soddisfatti durante i primi 18 mesi di implementazione, si consiglia prima di implementare AEM utilizzando TarMK, quindi di rivalutare la configurazione in un secondo momento, quando i criteri di cui sopra saranno applicabili, e infine di determinare se rimanere su TarMK o migrare a MongoMK.
 
-### Eccezioni per la scelta di AEM MongoMK rispetto a TarMK su Publish Instances {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
+### Eccezioni per la scelta di AEM MongoMK rispetto a TarMK nelle istanze di pubblicazione {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
 Si sconsiglia di distribuire MongoMK per le istanze di pubblicazione. Il livello di pubblicazione della distribuzione viene quasi sempre distribuito come farm di istanze di pubblicazione completamente indipendenti in cui viene eseguito TarMK, che vengono mantenute sincronizzate replicando il contenuto dalle istanze di authoring. Questa architettura &quot;senza elementi condivisi&quot;, propria delle istanze di pubblicazione, consente la distribuzione del livello di pubblicazione in scala orizzontale in modo lineare. La topologia farm offre inoltre il vantaggio di applicare qualsiasi aggiornamento o aggiornamento alle istanze di pubblicazione su base continua, in modo tale che eventuali modifiche al livello di pubblicazione non richiedano tempi di inattività.
 
 Questo non si applica ad AEM Communities che utilizza cluster MongoMK sul livello di pubblicazione ogni volta che è presente più di un editore. Se si sceglie JSRP (vedi [Archiviazione contenuto community](/help/communities/working-with-srp.md)), è appropriato un cluster MongoMK, come qualsiasi cluster lato pubblicazione indipendentemente dalla MK scelta, ad esempio MongoDB o RDB.
 
-### Prerequisiti e Recommendations per l’implementazione di AEM con MongoMK {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
+### Prerequisiti e raccomandazioni per l’implementazione di AEM con MongoMK {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
-È disponibile una serie di prerequisiti e raccomandazioni se stai prendendo in considerazione una distribuzione MongoMK per AEM:
+È disponibile una serie di prerequisiti e raccomandazioni se stai valutando una distribuzione MongoMK per AEM:
 
 **Prerequisiti obbligatori per le distribuzioni MongoDB:**
 
-1. L’architettura di implementazione e il dimensionamento di MongoDB devono far parte dell’implementazione del progetto con l’aiuto di architetti Adobe Consulting o MongoDB che hanno familiarità con l’AEM;
+1. L’architettura di distribuzione e il dimensionamento di MongoDB devono far parte dell’implementazione del progetto con l’aiuto di architetti Adobe Consulting o MongoDB che hanno familiarità con AEM;
 1. Le competenze di MongoDB devono essere presenti all&#39;interno del partner o del team del cliente per poter mantenere e mantenere un ambiente MongoDB esistente o nuovo;
 1. Puoi scegliere di distribuire la versione commerciale o open source di MongoDB (AEM supporta entrambe le versioni), ma devi acquistare un contratto di manutenzione e supporto MongoDB direttamente da MongoDB Inc;
-1. Nel complesso le architetture e le infrastrutture AEM e MongoDB dovrebbero essere ben definite e convalidate da un architetto Adobe dell&#39;AEM;
-1. Rivedi il modello di supporto per le implementazioni AEM che includono MongoDB.
+1. Le architetture e l&#39;infrastruttura AEM e MongoDB dovrebbero essere definite e convalidate da un architetto Adobe AEM;
+1. Esamina il modello di supporto per le distribuzioni di AEM che includono MongoDB.
 
 **Consigli efficaci per le distribuzioni MongoDB:**
 
@@ -190,7 +190,7 @@ Questo non si applica ad AEM Communities che utilizza cluster MongoMK sul livell
 
 >[!NOTE]
 >
->Per ulteriori domande su queste linee guida, prerequisiti e consigli, contatta [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
+>Per ulteriori domande su queste linee guida, prerequisiti e consigli, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
 
 ### Considerazioni per AEM Communities {#considerations-for-aem-communities}
 
@@ -210,9 +210,9 @@ Di seguito è riportato un set di matrici decisionali che possono aiutarti a sce
 
 >[!NOTE]
 >
->MongoDB è un software di terze parti e non è incluso nel pacchetto di licenze AEM. Per ulteriori informazioni, vedere la pagina [Criteri di gestione licenze MongoDB](https://www.mongodb.org/about/licensing/).
+>MongoDB è un software di terze parti e non è incluso nel pacchetto di licenze di AEM. Per ulteriori informazioni, vedere la pagina [Criteri di gestione licenze MongoDB](https://www.mongodb.org/about/licensing/).
 >
->Per ottenere il massimo dall’implementazione dell’AEM, l’Adobe consiglia di concedere in licenza la versione Enterprise di MongoDB per beneficiare di un supporto professionale.
+>Per ottenere il massimo dall’implementazione di AEM, Adobe consiglia di concedere la licenza per la versione Enterprise di MongoDB per usufruire di un supporto professionale.
 >
 >La licenza include un set di repliche standard, composto da una istanza principale e due istanze secondarie che possono essere utilizzate per le distribuzioni di authoring o pubblicazione.
 >

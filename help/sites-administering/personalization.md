@@ -11,7 +11,7 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -135,15 +135,15 @@ Tuttavia, il controllo degli accessi può essere utilizzato per creare una forma
 
 ## Componenti disponibili per Personalization {#components-available-for-personalization}
 
-Vari componenti sono forniti con AEM per la personalizzazione. Alcuni consentono agli utenti di accedere e modificare i loro profili, altri (come I miei gadget) consentono agli utenti di configurare una pagina specifica:
+AEM fornisce diversi componenti per la personalizzazione. Alcuni consentono agli utenti di accedere e modificare i loro profili, altri (come I miei gadget) consentono agli utenti di configurare una pagina specifica:
 
-| Titolo nel Sidekick | Scopo |
+| Titolo in Sidekick | Scopo |
 |---|---|
 | Campo per password verificata | Richiede la password e la conferma della password. |
 | Iscrizione all&#39;accesso combinato | Consente all&#39;utente di accedere a un account esistente o a un nuovo account. |
 | Campo indirizzo Forms | Campo complesso che consente di inserire un indirizzo internazionale. |
 | Inizio Forms | Avvia una definizione di modulo |
-| Forms Captcha | Campo costituito da una parola alfanumerica che viene aggiornata automaticamente. Il componente captcha protegge i siti web dai bot. |
+| Captcha Forms | Campo costituito da una parola alfanumerica che viene aggiornata automaticamente. Il componente captcha protegge i siti web dai bot. |
 | Gruppo di caselle di controllo Forms | Più elementi organizzati in un elenco e preceduti da caselle di controllo. Gli utenti possono selezionare più caselle di controllo. |
 | Elenco a discesa Forms | Più elementi organizzati in un elenco a discesa. Lo switch Multi Selectable specifica se è possibile selezionare più elementi dall&#39;elenco. |
 | Fine Forms | Termina la definizione del modulo. |
@@ -170,7 +170,7 @@ Vari componenti sono forniti con AEM per la personalizzazione. Alcuni consentono
 
 ## Personalization e contenuti della community {#personalization-and-community-content}
 
-Le funzioni della community come blog, forum e calendari determinano la creazione di contenuti comunitari, comunemente denominati contenuti generati dagli utenti (UGC, User Generated Content). Quando UGC viene immesso in un ambiente di pubblicazione costituito da più istanze AEM (una [farm di pubblicazione](/help/communities/topologies.md)), un problema importante è stato come sincronizzare UGC in tutte le istanze.
+Le funzioni della community come blog, forum e calendari determinano la creazione di contenuti comunitari, comunemente denominati contenuti generati dagli utenti (UGC, User Generated Content). Quando UGC viene immesso in un ambiente di pubblicazione costituito da più istanze di AEM (una [farm di pubblicazione](/help/communities/topologies.md)), un problema importante è stato come sincronizzare UGC tra tutte le istanze.
 
 Con l&#39;estensione [AEM Communities 6.1](/help/communities/overview.md), questo problema viene risolto utilizzando un [archivio comune per UGC](/help/communities/working-with-srp.md). Per quanto riguarda, la personalizzazione, Communities include [Accesso social](/help/communities/social-login.md): la possibilità per i visitatori del sito di accedere con Facebook e Twitter.
 

@@ -7,8 +7,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 8%
+source-wordcount: '890'
+ht-degree: 10%
 
 ---
 
@@ -19,10 +19,10 @@ Quando viene eseguito il rendering di un componente in una pagina web, è possib
 * Un componente può essere modificato solo quando è racchiuso in un elemento HTML.
 * L’elemento wrapping viene utilizzato per applicare classi HTML che forniscono:
 
-   * informazioni di layout
-   * informazioni sullo stile
+  * informazioni di layout
+  * informazioni sullo stile
 
-Per gli sviluppatori, AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti. Se e come viene eseguito il rendering del tag di decorazione è definito dalla combinazione di due fattori, in cui questa pagina si immergerà:
+AEM offre agli sviluppatori una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti. Se e come viene eseguito il rendering del tag di decorazione è definito dalla combinazione di due fattori, in cui questa pagina si immergerà:
 
 * Il componente stesso può configurare il proprio tag di decorazione con un set di proprietà.
 * Gli script che includono componenti (HTL, JSP, dispatcher e così via) possono definire gli aspetti del tag di decorazione con parametri di inclusione.
@@ -39,13 +39,13 @@ Di seguito sono riportati alcuni consigli generali su quando includere l’eleme
 
 Per controllare il comportamento del tag di decorazione, è possibile applicare ai componenti le proprietà e i nodi seguenti:
 
-* **`cq:noDecoration {boolean}`:** Questa proprietà può essere aggiunta a un componente e un valore true impedisce all&#39;AEM di generare elementi wrapper sul componente.
+* **`cq:noDecoration {boolean}`:** Questa proprietà può essere aggiunta a un componente e un valore true impedisce ad AEM di generare elementi wrapper sul componente.
 
 * **`cq:htmlTag`nodo :** Questo nodo può essere aggiunto in un componente e può avere le seguenti proprietà:
 
-   * **`cq:tagName {String}`:** Questo può essere utilizzato per specificare un tag HTML personalizzato da utilizzare per il wrapping dei componenti invece dell&#39;elemento DIV predefinito.
-   * **`class {String}`:** Può essere utilizzato per specificare i nomi di classe css da aggiungere al wrapper.
-   * Altri nomi di proprietà verranno aggiunti come attributi HTML con lo stesso valore String fornito.
+  * **`cq:tagName {String}`:** Questo può essere utilizzato per specificare un tag HTML personalizzato da utilizzare per il wrapping dei componenti invece dell&#39;elemento DIV predefinito.
+  * **`class {String}`:** Può essere utilizzato per specificare i nomi di classe css da aggiungere al wrapper.
+  * Altri nomi di proprietà verranno aggiunti come attributi HTML con lo stesso valore stringa fornito.
 
 ## Controlli script {#script-controls}
 
@@ -65,7 +65,7 @@ Il comportamento dell&#39;involucro può anche essere completamente controllato.
 
 È possibile controllare completamente il comportamento dei tag wrapper dagli script HTL e dalla relativa logica associata.
 
-Per ulteriori informazioni sullo sviluppo in HTL, consulta la [documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it).
+Per ulteriori informazioni sullo sviluppo in HTL, consulta la [documentazione di HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview).
 
 #### Albero decisionale {#decision-tree}
 
@@ -144,7 +144,7 @@ Output risultante `/content/test.html`:
 
 Quando si include un componente utilizzando `cq:includ`e o `sling:include`, il comportamento predefinito in AEM consiste nell&#39;utilizzare un DIV per racchiudere l&#39;elemento. Tuttavia, questo wrapping può essere personalizzato in due modi:
 
-* Dire esplicitamente all&#39;AEM di non eseguire il wrapping del componente utilizzando `cq:noDecoration`.
+* Dire esplicitamente ad AEM di non eseguire il wrapping del componente utilizzando `cq:noDecoration`.
 * Utilizzare un tag HTML personalizzato per eseguire il wrapping del componente utilizzando `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
 
 ### Albero decisionale {#decision-tree-1}

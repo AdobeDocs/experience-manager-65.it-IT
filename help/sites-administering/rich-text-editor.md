@@ -8,14 +8,14 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 0%
+source-wordcount: '3070'
+ht-degree: 1%
 
 ---
 
-# Configurare l’editor Rich Text {#configure-the-rich-text-editor}
+# Configurare il Rich Text editor {#configure-the-rich-text-editor}
 
-L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Sono disponibili icone, caselle di selezione, barre degli strumenti e menu per un&#39;esperienza di modifica del testo WYSIWYG.
+L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Icone, caselle di selezione, barre degli strumenti e menu sono disponibili per la modifica del testo in WYSIWYG.
 
 Per informazioni su come utilizzare le funzionalità dell&#39;editor Rich Text per l&#39;authoring, vedere [Utilizzare l&#39;editor Rich Text per l&#39;authoring](/help/sites-authoring/rich-text-editor.md). L’editor Rich Text può essere configurato per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Il seguente flusso di lavoro illustra un ordine consigliato per il completamento delle attività di configurazione dell’editor Rich Text in Experience Manager.
 
@@ -25,7 +25,7 @@ Per informazioni su come utilizzare le funzionalità dell&#39;editor Rich Text p
 
 ## Interfaccia utente touch e interfaccia classica {#understand-touch-enabled-ui-and-classic-ui}
 
-L’interfaccia touch è quella standard, ad Experience Manager. L&#39;Adobe ha introdotto l&#39;interfaccia touch con [responsive design](/help/sites-authoring/responsive-layout.md) per l&#39;ambiente di authoring. L’interfaccia touch è progettata per i dispositivi touch e desktop. L’interfaccia di si differenzia notevolmente dall’interfaccia classica originale.
+L’interfaccia touch è l’interfaccia utente standard di Experience Manager. Adobe ha introdotto l&#39;interfaccia utente touch con [progettazione reattiva](/help/sites-authoring/responsive-layout.md) per l&#39;ambiente di authoring. L’interfaccia touch è progettata per i dispositivi touch e desktop. L’interfaccia di si differenzia notevolmente dall’interfaccia classica originale.
 
 ![Barra degli strumenti Editor Rich Text nell&#39;interfaccia utente touch](assets/chlimage_1-35.png)
 
@@ -38,13 +38,13 @@ L’interfaccia touch è quella standard, ad Experience Manager. L&#39;Adobe ha 
 >[!MORELIKETHIS]
 >
 >* [Consigli per l&#39;interfaccia utente](/help/sites-deploying/ui-recommendations.md)
->* Informazioni sulla rimozione dell&#39;interfaccia classica, vedere [Note sulla versione dell&#39;Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
+>* Informazioni sulla rimozione dell&#39;interfaccia classica, consulta [Note sulla versione di Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
 >* Per informazioni sulla differenza tra le interfacce utente, vedere [Interfaccia utente touch e Interfaccia classica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Per informazioni dettagliate sull&#39;interfaccia utente touch, vedere [Concetti sull&#39;interfaccia utente touch di Experience Manager](/help/sites-developing/touch-ui-concepts.md)
+>* Per informazioni dettagliate sull&#39;interfaccia utente touch, vedere [Concetti dell&#39;interfaccia utente touch di Experience Manager](/help/sites-developing/touch-ui-concepts.md)
 
 ## Varie modalità di editing {#editingmodes}
 
-Gli autori possono creare e modificare il contenuto testuale in Experience Manager utilizzando le diverse modalità dei componenti. Le opzioni della barra degli strumenti per l’authoring e la formattazione dei contenuti e l’esperienza utente dei componenti abilitati per l’editor Rich Text in diverse modalità di modifica variano in base alle configurazioni dell’editor Rich Text.
+Gli autori possono creare e modificare contenuti testuali in Experience Manager utilizzando le diverse modalità dei componenti. Le opzioni della barra degli strumenti per l’authoring e la formattazione dei contenuti e l’esperienza utente dei componenti abilitati per l’editor Rich Text in diverse modalità di modifica variano in base alle configurazioni dell’editor Rich Text.
 
 | Modalità di modifica | Area di modifica | Funzioni consigliate da abilitare | Interfaccia utente touch | Interfaccia classica |
 |--- |--- |--- |--- |--- |
@@ -69,7 +69,7 @@ Nell’interfaccia classica, un doppio clic lento sul componente consente la mod
 
 ### Modifica a tutto schermo {#full-screen-editing}
 
-I componenti di Experience Manager possono essere aperti in visualizzazione a schermo intero che nasconde il contenuto della pagina e occupa lo schermo disponibile. Prendi in considerazione la modifica a schermo intero di una versione dettagliata della modifica in linea, in quanto offre le opzioni di modifica più avanzate. Per aprirlo, fai clic su ![rte_fullscreen](assets/rte_fullscreen.png) nella barra degli strumenti compatta quando utilizzi la modalità di modifica in linea.
+I componenti Experience Manager possono essere aperti in visualizzazione a schermo intero che nasconde il contenuto della pagina e occupa lo schermo disponibile. Prendi in considerazione la modifica a schermo intero di una versione dettagliata della modifica in linea, in quanto offre le opzioni di modifica più avanzate. Per aprirlo, fai clic su ![rte_fullscreen](assets/rte_fullscreen.png) nella barra degli strumenti compatta quando utilizzi la modalità di modifica in linea.
 
 Nella finestra di dialogo in modalità a tutto schermo, insieme a una barra degli strumenti dettagliata dell’editor Rich Text, sono disponibili anche le opzioni e i componenti disponibili in una finestra di dialogo. È applicabile solo a una finestra di dialogo che contiene l’editor Rich Text insieme ad altri componenti.
 
@@ -95,8 +95,8 @@ Questa funzionalità è disponibile tramite una serie di plug-in, ciascuno con:
 
 * Una proprietà `features`:
 
-   * Utilizzato per attivare o disattivare le funzionalità di base di quel plug-in
-   * Che può essere configurato utilizzando una procedura standard
+  * Utilizzato per attivare o disattivare le funzionalità di base di quel plug-in
+  * Che può essere configurato utilizzando una procedura standard
 
 * Se necessario, proprietà e opzioni aggiuntive che richiedono una configurazione specializzata.
 
@@ -104,7 +104,7 @@ Le funzionalità di base dell&#39;editor Rich Text vengono attivate o disattivat
 
 Nella tabella seguente sono elencati i plug-in correnti:
 
-* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1&rbrace;.](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)
+* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1}.](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)
 * Valori consentiti per la proprietà `features`.
 * Descrizione delle funzionalità fornite dal plug-in.
 
@@ -115,10 +115,10 @@ Nella tabella seguente sono elencati i plug-in correnti:
 | formato | sottolineatura grassetto corsivo | [Formattazione testo di base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | immagine | immagine | Supporto immagini di base (trascinamento dal contenuto o da Content Finder). A seconda del browser, il supporto presenta comportamenti diversi per gli autori |
 | tasti |  | Per definire questo valore, vedere [dimensioni scheda](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
-| giustificare | justifyleft justifycenter justifyright | Allineamento paragrafo. |
+| giustifica | justifyleft justifycenter justifyright | Allineamento paragrafo. |
 | collegamenti | modifylink scollega ancoraggio | [Collegamenti ipertestuali e ancoraggi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
 | elenchi | rientro non ordinato ordinato rientro | Questo plug-in controlla sia il rientro [che gli elenchi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin), inclusi gli elenchi nidificati. |
-| misctools | specialchars sourceedit | Strumenti vari consentono agli autori di immettere [caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine HTML. Inoltre, puoi aggiungere un intero [intervallo di caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) se desideri definire un tuo elenco. |
+| misctools | specialchars sourceedit | Strumenti vari consentono agli autori di immettere [caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine di HTML. Inoltre, puoi aggiungere un intero [intervallo di caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) se desideri definire un tuo elenco. |
 | Paraformat | paraformat | I formati di paragrafo predefiniti sono Paragrafo, Titolo 1, Titolo 2 e Titolo 3 (`<p>`, `<h1>`, `<h2>` e `<h3>`). È possibile [aggiungere altri formati di paragrafo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) o estendere l&#39;elenco. |
 | controllo ortografico | testo di controllo | [Controllo ortografico in base alla lingua](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
 | stili | stili | Supporto per lo stile tramite una classe CSS. [Aggiungere nuovi stili di testo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) se si desidera aggiungere o estendere un intervallo personalizzato di stili da utilizzare con il testo. |
@@ -166,9 +166,9 @@ Quando si utilizza l&#39;editor Rich Text nella finestra di dialogo touch, è ob
 
 ## Personalizzazione della modifica diretta {#customizing-in-place-editing}
 
-Puoi definire su quale selettore di HTML viene avviato l’editor di testo configurando le seguenti proprietà:
+Puoi definire su quale selettore HTML viene avviato l’editor di testo configurando le seguenti proprietà:
 
-* **`editElementQuery`** - Definita il `cq:InplaceEditingConfig`, questa proprietà viene utilizzata per specificare un selettore dell&#39;elemento HTML su cui verrà avviata la modifica in linea per il componente Testo. Se non viene specificato diversamente, la modifica in linea viene avviata direttamente sul componente Testo di HTML.
+* **`editElementQuery`** - Definita il `cq:InplaceEditingConfig`, questa proprietà viene utilizzata per specificare un selettore dell&#39;elemento HTML su cui verrà avviata la modifica in linea per il componente Testo. Se non viene specificato diversamente, la modifica in linea viene avviata direttamente sul HTML del componente Testo.
 * **`textPropertyName`** - Definita il `cq:InplaceEditingConfig`, questa proprietà viene utilizzata per specificare il nome della proprietà che verrà salvata nel nodo del contenuto in cui il valore HTML del componente testo verrà mantenuto dopo la modifica in linea.
 
 La proprietà corrispondente per la modalità finestra di dialogo è `name`.
@@ -183,9 +183,9 @@ Per informazioni dettagliate sulle configurazioni dei plug-in dell&#39;editor Ri
 
 >[!NOTE]
 >
->Il componente di testo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=it#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell&#39;editor Rich Text in un&#39;interfaccia grafica come criteri di contenuto, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento.
+>Il componente di testo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell&#39;editor Rich Text in un&#39;interfaccia grafica come criteri di contenuto, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento.
 >
->Per ulteriori informazioni, consulta la sezione [Impostazioni dell&#39;interfaccia utente e criteri del contenuto](/help/sites-administering/rich-text-editor.md) di questo documento e [Creazione di modelli di pagina](/help/sites-authoring/templates.md) e la [documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=it).
+>Per ulteriori informazioni, consulta la sezione [Impostazioni dell&#39;interfaccia utente e criteri del contenuto](/help/sites-administering/rich-text-editor.md) di questo documento e [Creazione di modelli di pagina](/help/sites-authoring/templates.md) e la [documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configuraz
 * Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non consente un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
-Ad esempio, puoi visualizzare la [documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=it#the-text-component-and-the-rich-text-editor).
+Ad esempio, puoi visualizzare la [documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizzare la mappatura tra icone e comandi della barra degli strumenti {#iconstoolbar}
 
@@ -300,7 +300,7 @@ In una pagina, puoi includere la libreria client di CoralUI 2 RTE o la libreria 
 
 >[!NOTE]
 >
->L’Adobe non lo consiglia come best practice. Passa a CoralUI 2 RTE come ultima risorsa. I plug-in personalizzati per l’editor Rich Text CoralUI 2 funzionano con l’editor Rich Text CoralUI 3 se i plug-in non dipendono dagli elementi interni dell’editor Rich Text, come le classi.
+>Adobe non lo consiglia come best practice. Passa a CoralUI 2 RTE come ultima risorsa. I plug-in personalizzati per l’editor Rich Text CoralUI 2 funzionano con l’editor Rich Text CoralUI 3 se i plug-in non dipendono dagli elementi interni dell’editor Rich Text, come le classi.
 >
 >Se si utilizzano plug-in personalizzati per CoralUI3 RTE, utilizzare la libreria `rte.coralui3`.
 
@@ -325,17 +325,17 @@ In una pagina, puoi includere la libreria client di CoralUI 2 RTE o la libreria 
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni sulla configurazione dell&#39;editor Rich Text, vedere il riferimento all&#39;[API del widget AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText).
+Per ulteriori informazioni sulla configurazione dell&#39;editor Rich Text, vedere il riferimento all&#39;[API Widget di AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText).
 
 In particolare, per visualizzare i plug-in e le opzioni correlate disponibili:
 
 * Il componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fornisce un campo modulo per la modifica di informazioni di testo formattato (testo formattato). Per informazioni su tutti i parametri disponibili per il modulo Rich Text, vedere Opzioni di configurazione.
 * Il componente RichText offre un&#39;ampia gamma di funzionalità utilizzando i plug-in elencati in [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Per ogni plug-in:
 
-   * Per informazioni dettagliate sulle funzionalità che è possibile attivare (o disattivare), vedere Funzionalità.
-   * Per informazioni dettagliate sulla configurazione del plug-in appropriato, consulta Opzioni di configurazione per tutti i parametri disponibili.
+  * Per informazioni dettagliate sulle funzionalità che è possibile attivare (o disattivare), vedere Funzionalità.
+  * Per informazioni dettagliate sulla configurazione del plug-in appropriato, consulta Opzioni di configurazione per tutti i parametri disponibili.
 
-* Sono inoltre disponibili ulteriori informazioni sulle regole HTML per i collegamenti.
+* Sono inoltre disponibili ulteriori informazioni sulle regole di HTML per i collegamenti.
 
 che possono essere utilizzati per estendere e personalizzare l’editor Rich Text. Ad esempio, per elencare gli ancoraggi disponibili nella pagina durante la creazione di un collegamento, puoi fornire la tua implementazione di `LinkPlugin`.
 
@@ -343,7 +343,7 @@ che possono essere utilizzati per estendere e personalizzare l’editor Rich Tex
 
 La funzionalità AEM RTE presenta le seguenti limitazioni:
 
-* Le funzionalità di editor Rich Text sono supportate solo nelle finestre di dialogo dei componenti AEM. L&#39;editor Rich Text non è supportato nelle creazioni guidate o nei moduli Foundation come [Proprietà pagina](/help/sites-developing/page-properties-views.md) e [Scaffolding](/help/sites-authoring/scaffolding.md) nell&#39;interfaccia utente touch.
+* Le funzionalità RTE sono supportate solo nelle finestre di dialogo dei componenti di AEM. L&#39;editor Rich Text non è supportato nelle creazioni guidate o nei moduli Foundation come [Proprietà pagina](/help/sites-developing/page-properties-views.md) e [Scaffolding](/help/sites-authoring/scaffolding.md) nell&#39;interfaccia utente touch.
 
 * AEM non funziona su [dispositivi ibridi](/help/release-notes/release-notes.md).
 
@@ -371,17 +371,17 @@ Aggiungere un collegamento ipertestuale in un componente testo modificandolo tra
 
 Una soluzione consiste nel fare clic nel componente testo quando viene visualizzata la seconda volta la finestra di dialogo per modifica, quindi eseguire la convalida del collegamento.
 
-Questo problema è stato risolto con AEM 6.3 e versioni successive.
+Questo problema è stato risolto in AEM 6.3 e versioni successive.
 
 **Il contenuto HTML aggiunto in modalità di modifica origine è andato perso**
 
-Non aggiungere un HTML XSS-prone. L’AEM, e non l’editor Rich Text, può rimuovere alcuni contenuti HTML per rispettare le regole antisamiche XSS.
+Non aggiungere un HTML soggetto a XSS. AEM, e non l’editor Rich Text, potrebbe rimuovere alcuni contenuti HTML per rispettare le regole antisamy XSS.
 
 Per verificare che il HTML incollato sia stato salvato, controlla il contenuto salvato in CRXDE (nel nodo del contenuto).
 
-Se non viene salvato, il HTML deve essere stato rimosso dall’editor Rich Text in quanto non è conforme alle regole dell’editor Rich Text.
+Se non viene salvato, il HTML deve essere stato rimosso dall’editor Rich Text poiché non era conforme alle regole dell’editor Rich Text.
 
-Se viene salvata in CRXDE ma non viene riprodotta nella pagina (per verificare il rendering, vedi l&#39;[anteprima](/help/sites-authoring/editing-content.md#preview-mode) della pagina, viene rimossa dalle regole AEM XSS.
+Se salvato in CRXDE ma non sottoposto a rendering sulla pagina (per verificare il rendering, vedi l&#39;[anteprima](/help/sites-authoring/editing-content.md#preview-mode) della pagina, viene rimosso dalle regole AEM XSS.
 
 **Il componente Multifield non funziona come previsto**
 
