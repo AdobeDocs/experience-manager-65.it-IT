@@ -470,7 +470,7 @@ L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con el
 Questo perché dopo l’importazione vengono aggiunti all’HTML generato elementi HTML aggiuntivi come il tag &lt;div>.
 
 * Anche gli script che si basano su una struttura simile a quella descritta sopra non sono consigliati per l’utilizzo con elementi contrassegnati per la conversione in componenti AEM.
-* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&amp;ast;&quot;> non è consigliato.
+* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&ast;&quot;> non è consigliato.
 * Il layout del design deve seguire le best practice di HTML5 Boilerplate. Ulteriori informazioni su: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configurazione dei moduli OSGI {#configuring-osgi-modules}
@@ -531,7 +531,7 @@ La tabella seguente descrive brevemente le proprietà:
 >
 >Ad esempio, se la configurazione predefinita è
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >E devi sostituire `CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il tuo modello di ricerca dovrebbe essere simile al seguente:
 >

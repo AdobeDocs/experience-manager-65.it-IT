@@ -210,7 +210,7 @@ Nella scheda **Campo tag**, i tag che possono essere applicati, se consentiti ne
 
 * **Limite suggerimenti**
 
-  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore **-**1 indica nessun limite. Il valore predefinito è 0.
+  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore **-**&#x200B;1 indica nessun limite. Il valore predefinito è 0.
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
