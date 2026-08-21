@@ -12,8 +12,8 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 6%
+source-wordcount: '2564'
+ht-degree: 7%
 
 ---
 
@@ -23,9 +23,9 @@ Quando si esegue l’integrazione con Adobe Campaign, sono disponibili component
 
 >[!CAUTION]
 >
->I componenti e-mail dell’AEM sono stati dichiarati obsoleti. A causa della natura dell’e-mail, che unisce contenuti e stile, i componenti e-mail forniti come predefiniti dall’AEM vengono riutilizzati in modo limitato per i clienti, a causa della necessità di implementare stili personalizzati in tutti i componenti necessari per i progetti.
+>I componenti e-mail di AEM sono stati dichiarati obsoleti. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti come predefiniti da AEM vengono riutilizzati in modo limitato per i clienti, a causa della necessità di implementare stili personalizzati in tutti i componenti necessari per i progetti.
 >
->I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ciò possa essere ottenuto. Tuttavia, non utilizzare questi componenti obsoleti nei progetti.
+>I componenti e-mail possono essere implementati a livello di progetto e i componenti e-mail AEM obsoleti illustrano come farlo. Tuttavia, non utilizzare questi componenti obsoleti nei progetti.
 
 ## Componenti della newsletter di Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -62,7 +62,7 @@ Puoi configurare quanto segue:
 Se si desidera utilizzare un nome diverso dal titolo della pagina, immetterlo qui.
 
 * **Livello di intestazione (1, 2, 3, 4)**
-Livello di intestazione in base alle dimensioni di intestazione HTML da 1 a 4.
+Il livello di intestazione si basa sulle dimensioni di intestazione 1-4 di HTML.
 
 L’esempio seguente mostra un componente Titolo (Campagna) visualizzato.
 
@@ -80,13 +80,13 @@ Puoi caricare un’immagine, quindi modificarla e manipolarla (ad esempio ritagl
 
 Quando viene caricata un’immagine, puoi configurare quanto segue:
 
-* **Mappa**
+* **mappa**
 Per mappare un&#39;immagine, selezionare Mappa. È possibile specificare la modalità di creazione della mappa immagine (rettangolo, poligono e così via) e il punto a cui deve puntare l&#39;area.
 
 * **Ritaglio**
 Seleziona Ritaglia per ritagliare un’immagine. Utilizzare il mouse per ritagliare l&#39;immagine.
 
-* **Ruota**
+* **Rotazione**
 Per ruotare un&#39;immagine, selezionare Ruota. Usare ripetutamente fino a quando l&#39;immagine non viene ruotata nel modo desiderato.
 
 * **Cancella**
@@ -100,13 +100,13 @@ Titolo dell&#39;immagine.
 * **Testo alternativo**
 Testo alternativo da utilizzare per la creazione di contenuto accessibile.
 
-* **Collegamento A**
+* **Collega a**
 Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
 * **Descrizione**
 Descrizione dell&#39;immagine.
 
-* **Dimensione**
+* **Dimensioni**
 Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
@@ -134,7 +134,7 @@ Didascalia del collegamento. Questo è il testo visualizzato dagli utenti.
 * **Descrizione comando collegamento**
 Aggiunge ulteriori informazioni sull&#39;utilizzo del collegamento.
 
-* **TipoCollegamento**
+* **Tipo collegamento**
 Nell&#39;elenco a discesa selezionare tra un **URL personalizzato** e un **documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo**
@@ -176,20 +176,20 @@ Trascina un&#39;immagine dal Finder dei contenuti o fai clic per passare a un&#3
 * **Proprietà immagine** (**Proprietà immagine avanzate**)
 Consente di specificare quanto segue:
 
-   * **Titolo**
-Titolo del blocco, visualizzato a comparsa.
+  * **Titolo**
+    Titolo del blocco, visualizzato a comparsa.
 
-   * **Testo alternativo**
-Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
+  * **Testo alternativo**
+    Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
 
-   * **Collegamento a**
-Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
+  * **Collega a**
+    Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
-   * **Descrizione**
-Descrizione dell&#39;immagine.
+  * **Descrizione**
+    Descrizione dell&#39;immagine.
 
-   * **Dimensione**
-Imposta l&#39;altezza e la larghezza dell&#39;immagine.
+  * **Dimensioni**
+    Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ L’esempio seguente mostra un componente Testo e immagine (Campaign) visualizza
 
 ### Testo e personalizzazione (Campaign) {#text-personalization-campaign}
 
-Il componente Testo e Personalization (Campaign) consente di immettere un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite dall&#39;[editor Rich Text](/help/sites-authoring/rich-text-editor.md). Questo componente consente inoltre di utilizzare i campi di contesto e i blocchi di personalizzazione disponibili da Adobe Campaign. Vedere anche [Inserimento di Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+Il componente Testo e Personalization (Campaign) consente di immettere un blocco di testo utilizzando un editor di WYSIWYG, con funzionalità fornite dall&#39;[editor Rich Text](/help/sites-authoring/rich-text-editor.md). Questo componente consente inoltre di utilizzare i campi di contesto e i blocchi di personalizzazione disponibili da Adobe Campaign. Vedere anche [Inserimento di Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
 La selezione delle icone consente di formattare il testo, incluse le caratteristiche dei caratteri, l&#39;allineamento, i collegamenti, gli elenchi e i rientri.
 
@@ -216,7 +216,7 @@ Aggiungi i campi di testo e di contesto o i blocchi di personalizzazione per cre
 
 >[!NOTE]
 >
->Vengono presi in considerazione solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi delle tabelle collegate a `nms:seedMember` non sono disponibili.
+>Vengono considerati solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi delle tabelle collegate a `nms:seedMember` non sono disponibili.
 
 ## Componenti di Adobe Campaign Form {#adobe-campaign-form-components}
 
@@ -228,7 +228,7 @@ Quando apri un modulo configurato per l&#39;integrazione con Adobe Campaign, nel
 
 * Casella di selezione (Campaign)
 * Campo data (Campaign) e Campo data/HTML5 (Campaign)
-* Chiave principale crittografata (Campaign)
+* Chiave primaria crittografata (Campaign)
 * Visualizzazione errori (Campaign)
 * Chiave di riconciliazione nascosta (Campaign)
 * Campo numerico (Campaign)
@@ -342,7 +342,7 @@ L’esempio seguente mostra un componente Campo data (Campaign) con la larghezza
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
-### Chiave principale crittografata (Campaign) {#encrypted-primary-key-campaign}
+### Chiave primaria crittografata (Campaign) {#encrypted-primary-key-campaign}
 
 Questo componente definisce il nome del parametro URL che conterrà l&#39;identificatore di un profilo di Adobe Campaign (**Identificatore risorsa principale** o **Chiave primaria crittografata** in Adobe Campaign Standard e 6.1, rispettivamente).
 

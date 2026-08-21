@@ -1,6 +1,6 @@
 ---
 title: Casella in entrata
-description: Puoi ricevere notifiche da varie aree dell’AEM, ad esempio notifiche su elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
+description: Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche su elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -12,14 +12,14 @@ feature: Authoring
 role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '586'
 ht-degree: 1%
 
 ---
 
 # Casella in entrata{#your-inbox}
 
-Puoi ricevere notifiche da varie aree dell’AEM, ad esempio notifiche su elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
+Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche su elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 
 Queste notifiche vengono ricevute in due caselle in entrata, separate dal tipo di notifica:
 
@@ -69,7 +69,7 @@ Per iscriverti alle notifiche:
 
 1. Seleziona il canale di notifica:
 
-   * **Posta in arrivo**: le notifiche vengono visualizzate nella Posta in arrivo AEM.
+   * **Casella in entrata**: le notifiche vengono visualizzate nella Posta in arrivo di AEM.
    * **E-mail**: le notifiche vengono inviate tramite e-mail all&#39;indirizzo e-mail definito nel profilo utente.
 
    >[!NOTE]
@@ -81,7 +81,7 @@ Per iscriverti alle notifiche:
    * Attivato: quando una pagina è stata attivata.
    * Disattivato: quando una pagina è stata disattivata.
    * Eliminata (sindacazione): quando una pagina è stata eliminata-replicata, ovvero quando viene replicata un’azione di eliminazione eseguita su una pagina.
-Quando una pagina viene eliminata o spostata, viene replicata automaticamente un’azione di eliminazione: la pagina viene eliminata nell’istanza di origine in cui è stata eseguita l’azione di eliminazione e nell’istanza di destinazione definita dagli agenti di replica.
+     Quando una pagina viene eliminata o spostata, viene replicata automaticamente un’azione di eliminazione: la pagina viene eliminata nell’istanza di origine in cui è stata eseguita l’azione di eliminazione e nell’istanza di destinazione definita dagli agenti di replica.
 
    * Modificato: quando una pagina è stata modificata.
    * Creato: quando viene creata una pagina.
@@ -93,8 +93,8 @@ Quando una pagina viene eliminata o spostata, viene replicata automaticamente un
    * Fai clic su **Aggiungi** per aggiungere una nuova riga alla tabella.
    * Fare clic sulla cella della tabella **Percorso** e immettere il percorso, ad esempio `/content/docs`.
 
-   * Per ricevere una notifica per tutte le pagine appartenenti alla sottostruttura, impostare **Esatto?Da** a **No**.
-Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso, impostare **Exact?Da** a **Sì**.
+   * Per ricevere una notifica per tutte le pagine appartenenti alla sottostruttura, impostare **Esatto?** a **No**.
+     Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso, impostare **Esatto?** a **Sì**.
 
    * Per consentire la regola, impostare **Rule** su **Allow**. Se impostato su **Nega**, la regola viene negata ma non rimossa e può essere consentita in un secondo momento.
 
@@ -104,7 +104,7 @@ Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso,
 
 ## Elaborazione delle notifiche {#processing-your-notifications}
 
-Se si è scelto di ricevere notifiche nella cartella Posta in arrivo AEM, la cartella Posta in arrivo viene riempita con le notifiche. Puoi [visualizzare le notifiche](#viewing-your-notifications), quindi selezionare le notifiche necessarie per:
+Se hai scelto di ricevere le notifiche nella casella in entrata di AEM, questa si riempie di notifiche. Puoi [visualizzare le notifiche](#viewing-your-notifications), quindi selezionare le notifiche necessarie per:
 
 * Accettarlo facendo clic su **Approve**: il valore nella colonna **Read** è impostato su **true**.
 

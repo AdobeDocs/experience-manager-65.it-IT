@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 4%
+source-wordcount: '453'
+ht-degree: 5%
 
 ---
 
@@ -33,22 +33,22 @@ Per una panoramica e tutorial introduttivi, visita:
 
 * [console](consoles.md) community
 
-   * [Sites](sites-console.md)
+  * [Sites](sites-console.md)
 
-      * [Gruppi (sottocomunità)](groups.md)
+    * [Gruppi (sottocomunità)](groups.md)
 
-   * [Moderazione](moderation.md)
-   * [Gestione di membri e gruppi](members.md)
-   * [Rapporti](reports.md)
+  * [Moderazione](moderation.md)
+  * [Gestione di membri e gruppi](members.md)
+  * [Rapporti](reports.md)
 
 * [*strumenti*](tools.md) per community:
 
-   * [Modelli per siti](sites.md)
-   * [Modelli per gruppi](tools-groups.md)
-   * [Funzioni community](functions.md)
-   * [Configurazione di archiviazione](srp-config.md)
-   * [Guida dei componenti](components-guide.md)
-   * [Badge](badges.md)
+  * [Modelli per siti](sites.md)
+  * [Modelli per gruppi](tools-groups.md)
+  * [Funzioni community](functions.md)
+  * [Configurazione di archiviazione](srp-config.md)
+  * [Guida dei componenti](components-guide.md)
+  * [Badge](badges.md)
 
 
 ### Contenuto generato dall&#39;utente {#user-generated-content}
@@ -68,7 +68,7 @@ Una funzione importante di AEM Communities è la generazione di contenuti genera
 * [Servizio tunnel](deploy-communities.md#tunnel-service-on-author): consente l&#39;accesso ai membri e ai gruppi membri lato pubblicazione dall&#39;ambiente di authoring.
 * [Console membri e gruppi](members.md): consente la creazione e la gestione di membri e gruppi lato pubblicazione dall&#39;ambiente di authoring.
 * [Sincronizzazione utente](sync.md): per sincronizzare membri e gruppi di membri in più istanze di pubblicazione.
-* [Accesso social network tramite Facebook e Twitter](social-login.md): possibilità per i visitatori del sito di diventare membri della community utilizzando le credenziali Facebook o di Twitter.
+* [Accesso social network tramite Facebook e Twitter](social-login.md): possibilità per i visitatori del sito di diventare membri della community utilizzando le credenziali di Facebook o Twitter.
 * [Punteggio e distintivi](implementing-scoring.md): possibilità per i distintivi di essere assegnati per identificare i ruoli di un membro e per i membri di guadagnare distintivi tramite la loro partecipazione alla community.
 * [Notifiche](notifications.md): possibilità per i membri di ricevere una notifica dell&#39;attività che seguono.
 * [Iscrizioni](subscriptions.md): possibilità per i membri di interagire con la community tramite e-mail esterna.
@@ -82,7 +82,7 @@ La natura dell’utilizzo dei contenuti della community influenza la struttura d
 
 * [Topologie consigliate per le community](topologies.md)
 
-È importante installare l’ultima versione di Communities sulla piattaforma AEM:
+È importante installare la versione più recente di Communities sulla piattaforma AEM:
 
 * [Pacchetto di funzioni per community più recenti](deploy-communities.md#latestfeaturepack)
 

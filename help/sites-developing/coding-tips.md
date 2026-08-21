@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Il codice viene scritto una volta, ma letto molte volte. Dedicare un po&#39; di 
 
 Idealmente, un altro programmatore non dovrebbe aprire un modulo per capire cosa fa. Allo stesso modo, dovrebbero essere in grado di dire cosa fa un metodo senza leggerlo. Più si possono sottoscrivere a queste idee, più facile è leggere il codice e più veloce è la scrittura e la modifica del codice.
 
-Nella base di codice AEM sono utilizzate le seguenti convenzioni:
+Nella base di codice di AEM vengono utilizzate le seguenti convenzioni:
 
 
 * Una singola implementazione di un&#39;interfaccia è denominata `<Interface>Impl`, ovvero `ReaderImpl`.
@@ -56,7 +56,7 @@ Idealmente, i nomi dovrebbero rivelare la loro intenzione. Un test di codice com
   </tr>
   <tr>
    <td><p>//get tagged images<br /> public List getItems() {}</p> </td>
-   <td><p>list pubblica getTaggedImages() {}</p> </td>
+   <td><p>elenco pubblico getTaggedImages() {}</p> </td>
   </tr>
  </tbody>
 </table>
@@ -75,7 +75,7 @@ Quando un’API è obsoleta, è sempre meglio trovare il nuovo approccio consigl
 
 ### Scrivi codice localizzabile {#write-localizable-code}
 
-Eventuali stringhe non fornite da un autore devono essere racchiuse in una chiamata al dizionario i18n dell&#39;AEM tramite *I18n.get()* in JSP/Java e *CQ.I18n.get()* in JavaScript. Questa implementazione restituirà la stringa che gli è stata passata se non viene trovata alcuna implementazione, quindi offre la flessibilità di implementare la localizzazione dopo aver implementato le funzioni nella lingua primaria.
+Eventuali stringhe non fornite da un autore devono essere racchiuse in una chiamata al dizionario i18n di AEM tramite *I18n.get()* in JSP/Java e *CQ.I18n.get()* in JavaScript. Questa implementazione restituirà la stringa che gli è stata passata se non viene trovata alcuna implementazione, quindi offre la flessibilità di implementare la localizzazione dopo aver implementato le funzioni nella lingua primaria.
 
 ### Esci dai percorsi delle risorse per la sicurezza {#escape-resource-paths-for-safety}
 
@@ -83,11 +83,11 @@ Anche se i percorsi nel JCR non devono contenere spazi, la loro presenza non dev
 
 ### Utilizza l’API XSS e/o HTL per proteggere da attacchi di scripting tra siti {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM fornisce un’API XSS per pulire facilmente i parametri e garantire la sicurezza da attacchi di scripting tra siti. Inoltre, HTL dispone di queste protezioni integrate direttamente nel linguaggio dei modelli. Una scheda di riferimento API è disponibile per il download da [Sviluppo - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
+AEM fornisce un’API XSS per pulire facilmente i parametri e garantire la sicurezza da attacchi di scripting tra siti diversi. Inoltre, HTL dispone di queste protezioni integrate direttamente nel linguaggio dei modelli. Una scheda di riferimento API è disponibile per il download da [Sviluppo - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
 
 ### Implementare la registrazione appropriata {#implement-appropriate-logging}
 
-Per il codice Java™, AEM supporta slf4j come API standard per la registrazione dei messaggi e deve essere utilizzato con le configurazioni rese disponibili tramite la console OSGi per motivi di coerenza nell’amministrazione. Slf4j espone cinque diversi livelli di registrazione. L’Adobe consiglia di utilizzare le seguenti linee guida nella scelta del livello in cui registrare un messaggio:
+Per il codice Java™, AEM supporta slf4j come API standard per la registrazione dei messaggi e deve essere utilizzato con le configurazioni rese disponibili tramite la console OSGi per motivi di coerenza dell’amministrazione. Slf4j espone cinque diversi livelli di registrazione. Adobe consiglia di utilizzare le seguenti linee guida nella scelta del livello in cui registrare un messaggio:
 
 * ERRORE: quando si è verificato un errore nel codice e l’elaborazione non può continuare. Ciò si verifica spesso a seguito di un’eccezione imprevista. In questi scenari è utile includere le tracce dello stack.
 * AVVERTENZA: se qualcosa non funziona correttamente, l’elaborazione può continuare. Questo sarà spesso il risultato di un&#39;eccezione prevista, ad esempio *PathNotFoundException*.

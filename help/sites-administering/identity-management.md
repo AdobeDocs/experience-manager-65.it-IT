@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ La funzionalità di accesso (e disconnessione) è fornita da un account [con un 
 
 * Autoregistrazione dal sito web
 
-  È possibile configurare un [sito community](/help/communities/sites-console.md) per consentire ai visitatori di registrarsi autonomamente o di accedere con i propri account Facebook o di Twitter.
+  È possibile configurare un [sito community](/help/communities/sites-console.md) per consentire ai visitatori di registrarsi autonomamente o di accedere con i propri account Facebook o Twitter.
 
 * Richiesta di registrazione dal sito web
 
@@ -58,7 +58,7 @@ Per consentire ai visitatori di registrarsi, è possibile utilizzare una serie d
 
 È possibile utilizzare un [modulo](/help/sites-authoring/default-components.md#form-component) per raccogliere le informazioni di registrazione e generare il nuovo account e profilo.
 
-Gli utenti possono, ad esempio, richiedere un nuovo profilo utilizzando la pagina Geometrixx
+Ad esempio, gli utenti possono richiedere un nuovo profilo utilizzando la pagina Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![Modulo di registrazione di esempio](assets/registerform.png)
@@ -83,7 +83,7 @@ Gli utenti, ad esempio, possono effettuare l&#39;accesso o creare un account uti
 
 ## Disconnessione {#logging-out}
 
-Poiché è presente un meccanismo di accesso, è necessario anche un meccanismo di disconnessione. Questa opzione è disponibile come opzione **Disconnetti** in Geometrixx.
+Poiché è presente un meccanismo di accesso, è necessario anche un meccanismo di disconnessione. È disponibile come opzione **Disconnetti** in Geometrixx.
 
 ## Visualizzazione e aggiornamento di un profilo {#viewing-and-updating-a-profile}
 
@@ -118,9 +118,9 @@ Per visualizzare i dettagli del tuo profilo, fai clic su **Profilo personale** n
 
 ## Aggiunta di campi alla definizione del profilo {#adding-fields-to-the-profile-definition}
 
-Puoi aggiungere campi alla definizione del profilo. Ad esempio, per aggiungere un campo &quot;Colore preferito&quot; al profilo di Geometrixx:
+Puoi aggiungere campi alla definizione del profilo. Ad esempio, per aggiungere un campo &quot;Colore preferito&quot; al profilo Geometrixx:
 
-1. Dalla console Siti web, passa a Geometrixx Outdoors Sito > Inglese > Utente > Il mio profilo.
+1. Dalla console Siti Web, passa a Sito Geometrixx Outdoors > Inglese > Utente > Profilo personale.
 1. Fare doppio clic sulla pagina **Profilo personale** per aprirla per la modifica.
 1. Nella scheda **Componenti** della barra laterale espandere la sezione **Modulo**.
 1. Trascina un **elenco a discesa** dalla barra laterale al modulo, appena sotto il campo **Informazioni su di me**.

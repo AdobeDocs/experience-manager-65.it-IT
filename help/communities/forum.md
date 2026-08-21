@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1249'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-La funzione forum fornisce un’area per i visitatori del sito connessi (membri della community) nell’ambiente Publish per:
+La funzione forum fornisce un’area per i visitatori del sito connessi (membri della community) nell’ambiente di pubblicazione per:
 
 * Crea argomenti
 * Visualizza e rispondi agli argomenti
@@ -76,7 +76,7 @@ Nella scheda **Impostazioni**, specifica le impostazioni per gli argomenti e le 
 
 * **Argomenti per pagina**
 
-  Definisce il numero di topic/post mostrati per pagina. Impostazione predefinita: 10.
+  Definisce il numero di topic/post mostrati per pagina. Il valore predefinito è 10.
 
 * **Moderato**
 
@@ -167,7 +167,7 @@ Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero m
 
 * **Pattern menzioni interfaccia utente**
 
-  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
+  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Ad esempio, `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >

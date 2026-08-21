@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare una comunicazione interattiva '
+title: 'Esercitazione: creare una comunicazione interattiva '
 description: Creare una comunicazione interattiva utilizzando tutti gli elementi di base
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 0%
+source-wordcount: '1914'
+ht-degree: 1%
 
 ---
 
-# Tutorial: creare una comunicazione interattiva {#tutorial-create-interactive-communication}
+# Esercitazione: creare una comunicazione interattiva {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
@@ -47,7 +47,7 @@ Di seguito è riportato un elenco delle risorse già create in questa esercitazi
 
 **Immagini:** PayNow e ValueAddedServices
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona **Crea** e seleziona **Comunicazione interattiva**. Viene visualizzata la procedura guidata **Crea comunicazione interattiva**.
 1. Specifica **create_first_ic** nel campo **Title** e nel campo **Name**. Seleziona **FDM_Create_First_IC** come modello dati del modulo e seleziona **Next**.
 1. Nella procedura guidata **Canali**:
@@ -110,7 +110,7 @@ Di seguito è riportato l’elenco delle risorse già create in questa esercitaz
 
 **Immagini:** PayNowWeb e ValueAddedServicesWeb
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona **Crea** e seleziona **Comunicazione interattiva**. Viene visualizzata la procedura guidata **Crea comunicazione interattiva**.
 1. Specifica **create_first_ic** nel campo **Title** e nel campo **Name**. Seleziona **FDM_Create_First_IC** come modello dati del modulo e seleziona **Next**.
 1. Nella procedura guidata **Canali**:
@@ -179,7 +179,7 @@ Di seguito è riportato l’elenco delle risorse già create in questa esercitaz
    1. Nella sezione **Bordo**, specifica **1.5px** come **Larghezza bordo**, seleziona **Solido** come **Stile bordo** e specifica **46px** come **Raggio bordo**.
 
    1. Seleziona Rosso come colore di sfondo per il pulsante dalla sezione **Sfondo**.
-   1. Nel campo **Margine** per **Dimension e posizione**, seleziona l&#39;icona **Modifica contemporaneamente** e imposta il margine **Destra** come **450px**. I campi Superiore, Inferiore e Sinistro vengono impostati come vuoti.
+   1. Nel campo **Margine** per la sezione **Dimensioni e posizione**, seleziona l&#39;icona **Modifica contemporaneamente** e imposta il margine **Destra** come **450px**. I campi Superiore, Inferiore e Sinistro vengono impostati come vuoti.
 
    ![Inserisci collegamento ipertestuale nella comunicazione interattiva](assets/ic_web_hyperlink_new.png)
 
@@ -202,7 +202,7 @@ Di seguito è riportato l’elenco delle risorse già create in questa esercitaz
 
 Esegui la procedura seguente per derivare il contenuto del canale web utilizzando il canale di stampa:
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona **Crea** e seleziona **Comunicazione interattiva**. Viene visualizzata la procedura guidata **Crea comunicazione interattiva**.
 1. Specifica **create_first_ic** nel campo **Title** e nel campo **Name**. Seleziona **FDM_Create_First_IC** come modello dati del modulo e seleziona **Next**.
 1. Nella procedura guidata **Canali**:

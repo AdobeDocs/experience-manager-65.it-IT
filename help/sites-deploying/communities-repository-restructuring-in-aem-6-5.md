@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 1%
+source-wordcount: '1034'
+ht-degree: 2%
 
 ---
 
 # Ristrutturazione dell’archivio per AEM Communities nella versione 6.5 {#repository-restructuring-for-aem-communities-in}
 
-Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.4](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Communities. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nella pagina [Ristrutturazione dell’archivio padre in AEM 6.4](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento ad AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Communities. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
 **Con Aggiornamento 6.5**
 
@@ -28,12 +28,12 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.4](
 
 * [Configurazioni badge](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#badging-configurations)
 * [Progettazioni console community classiche](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#classic-communities-console-designs)
-* [Configurazioni di accesso social network tramite facebook](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
+* [Configurazioni di accesso social network tramite Facebook](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
 * [Configurazioni opzioni lingua](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#language-options-configurations)
 
-* [Configurazioni di accesso social network tramite pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
+* [Configurazioni di accesso social network tramite Pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [Configurazioni punteggio](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
-* [Configurazioni accesso social network tramite Twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
+* [Configurazioni di accesso social network tramite Twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
 * [Varie](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Con aggiornamento 6.5 {#with-upgrade}
@@ -166,7 +166,7 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.4](
  </tbody>
 </table>
 
-### Configurazioni di accesso social network tramite facebook {#facebook-social-login-configurations}
+### Configurazioni di accesso social network tramite Facebook {#facebook-social-login-configurations}
 
 <table>
  <tbody>
@@ -181,15 +181,15 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.4](
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>È necessario eseguire la migrazione di tutte le nuove configurazioni cloud di Facebook nella nuova posizione.</p>
+   <td><p>È necessario eseguire la migrazione di tutte le nuove configurazioni cloud di Facebook alla nuova posizione.</p>
     <ol>
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ol>
-       <li>Facebook Ricreare manualmente le nuove configurazioni di accesso social network tramite l'interfaccia utente di creazione AEM in <strong>Strumenti &gt; Cloud Service &gt; Configurazione accesso social network tramite Facebook</strong>.<br /> oppure <br /> </li>
-       <li>Copiare le nuove configurazioni di Facebook Cloud dal percorso precedente al nuovo percorso appropriato, in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Ricrea manualmente le nuove configurazioni di accesso social network tramite l'interfaccia utente di authoring di AEM in <strong>Strumenti &gt; Servizi cloud &gt; Configurazione di accesso social network tramite Facebook</strong>.<br /> o <br /> </li>
+       <li>Copiare le nuove configurazioni Facebook Cloud dalla posizione precedente alla nuova posizione appropriata, in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Aggiorna qualsiasi directory principale del sito AEM Communities per fare riferimento alla nuova configurazione di accesso social network Facebook impostando la proprietà <code>[cq:Page]/jcr:content@cq:conf</code> sul percorso assoluto nella nuova posizione.</li>
-     <li>Separa il Cloud Service Facebook Connect legacy da qualsiasi directory principale del sito AEM Communities aggiornata per fare riferimento alla nuova posizione.</li>
+     <li>Aggiorna qualsiasi directory principale del sito AEM Communities per fare riferimento alla nuova configurazione di accesso social network tramite Facebook impostando la proprietà <code>[cq:Page]/jcr:content@cq:conf</code> sul percorso assoluto nella nuova posizione.</li>
+     <li>Dissocia il Cloud Service legacy di Facebook Connect da qualsiasi directory principale del sito AEM Communities aggiornata per fare riferimento alla nuova posizione.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -222,7 +222,7 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.4](
  </tbody>
 </table>
 
-### Configurazioni di accesso social network tramite pinterest {#pinterest-social-login-configurations}
+### Configurazioni di accesso social network tramite Pinterest {#pinterest-social-login-configurations}
 
 <table>
  <tbody>
@@ -241,11 +241,11 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.4](
     <ol>
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ol>
-       <li>Pinterest Ricreare manualmente le nuove configurazioni di accesso social network tramite l'interfaccia utente di creazione AEM in <strong>Strumenti &gt; Cloud Service &gt; Configurazione accesso social network tramite Pinterest</strong>.<br /> o</li>
+       <li>Ricreare manualmente le nuove configurazioni di accesso social network tramite l'interfaccia utente di authoring di AEM in <strong>Strumenti &gt; Servizi cloud &gt; Configurazione di accesso social network di Pinterest</strong>.<br /> oppure</li>
        <li>Copiare le nuove configurazioni di Pinterest Cloud dal percorso precedente al nuovo percorso appropriato in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Aggiorna qualsiasi directory principale del sito AEM Communities per fare riferimento alla nuova configurazione di accesso social network Pinterest impostando la proprietà <code>[cq:Page]/jcr:content@cq:conf</code> sul percorso assoluto nella nuova posizione.</li>
-     <li>Separa il Cloud Service Pinterest Connect legacy da qualsiasi directory principale del sito AEM Communities aggiornata per fare riferimento alla nuova posizione.</li>
+     <li>Dissocia la versione precedente di Pinterest Connect Cloud Service da qualsiasi directory principale del sito AEM Communities aggiornata per fare riferimento alla nuova posizione.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -288,7 +288,7 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.4](
  </tbody>
 </table>
 
-### Configurazioni accesso social network tramite Twitter {#twitter-social-login-configurations}
+### Configurazioni di accesso social network tramite Twitter {#twitter-social-login-configurations}
 
 <table>
  <tbody>
@@ -303,15 +303,15 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.4](
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>È necessario eseguire la migrazione di tutte le nuove configurazioni cloud di Twitter alla nuova posizione.</p>
+   <td><p>È necessario eseguire la migrazione da qualsiasi nuova configurazione Twitter Cloud alla nuova posizione.</p>
     <ol>
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ol>
-       <li>Twitter Ricreare manualmente le nuove configurazioni di accesso social network tramite l'interfaccia utente di creazione AEM in <strong>Strumenti &gt; Cloud Service &gt; Configurazione accesso social network Twitter</strong>.<br /> oppure <br /> </li>
-       <li>Copiare le nuove configurazioni cloud di Twitter dalla posizione precedente alla nuova posizione appropriata, in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Ricrea manualmente le nuove configurazioni di accesso social network tramite l'interfaccia utente di authoring di AEM in <strong>Strumenti &gt; Cloud Services &gt; Configurazione accesso social network tramite Twitter</strong>.<br /> o <br /> </li>
+       <li>Copiare le nuove configurazioni Twitter Cloud dal percorso precedente al nuovo percorso appropriato, in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Aggiorna qualsiasi radice del sito AEM Communities per fare riferimento alla nuova configurazione di accesso social network del Twitter impostando la proprietà <code>[cq:Page]/jcr:content@cq:conf</code> sul percorso assoluto nella nuova posizione.</li>
-     <li>Disassociare il Cloud Service di connessione del Twitter legacy da qualsiasi directory principale del sito AEM Communities aggiornata per fare riferimento alla nuova posizione.</li>
+     <li>Aggiorna qualsiasi directory principale del sito AEM Communities per fare riferimento alla nuova configurazione di accesso social network tramite Twitter impostando la proprietà <code>[cq:Page]/jcr:content@cq:conf</code> sul percorso assoluto nella nuova posizione.</li>
+     <li>Dissocia il Cloud Service Twitter Connect legacy da qualsiasi directory principale del sito AEM Communities aggiornata per fare riferimento alla nuova posizione.</li>
     </ol> </td>
   </tr>
   <tr>

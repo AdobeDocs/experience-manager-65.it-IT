@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '282'
+workflow-type: tm+mt
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Come parte del processo di installazione di AEM Forms, è stato utilizzato Confi
 Nella pagina Modifica licenza vengono visualizzate le informazioni sulla licenza:
 
 * Il tipo di licenza corrente
-* La data e l’ora dell’ultima modifica apportata alla licenza
+* La data e l’ora dell’ultimo aggiornamento della licenza
 * Chi ha eseguito l’ultimo aggiornamento
 * Lo stato corrente della licenza
 * La data di installazione di AEM Forms

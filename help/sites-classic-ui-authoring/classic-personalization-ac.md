@@ -11,8 +11,8 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 2%
+source-wordcount: '128'
+ht-degree: 27%
 
 ---
 
@@ -29,11 +29,11 @@ Consulta le seguenti risorse:
 
 * [Utilizzo di Adobe Campaign 6.1 e Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
 * [Componenti di Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
-* [Targeting del tuo Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
+* [Targeting con Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
 In precedenza devi avere [AEM integrato con Adobe Campaign](/help/sites-administering/campaign.md).
 
 Inoltre, se desideri personalizzare le integrazioni, consulta i seguenti argomenti:
 
-* [Estensioni Adobe Campaign personalizzate](/help/sites-developing/extending-campaign-extensions.md)
-* [Creazione di mapping di moduli personalizzati](/help/sites-developing/extending-campaign-form-mapping.md)
+* [Personalizzare le estensioni Adobe Campaign](/help/sites-developing/extending-campaign-extensions.md)
+* [Creazione di mappature di moduli personalizzati](/help/sites-developing/extending-campaign-form-mapping.md)
