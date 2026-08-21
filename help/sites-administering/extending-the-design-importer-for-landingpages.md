@@ -12,8 +12,8 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 0%
+source-wordcount: '3524'
+ht-degree: 1%
 
 ---
 
@@ -41,17 +41,17 @@ Di seguito sono riportati i passaggi logici per fare in modo che Importazione pr
 
 >[!CAUTION]
 >
->Importazione progettazione, utilizzata per importare le pagine di destinazione, [è stata dichiarata obsoleta con AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>Importazione progettazione, utilizzata per importare pagine di destinazione, [è stata dichiarata obsoleta con AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 ## Preparazione di HTML per l&#39;importazione {#preparing-the-html-for-import}
 
-Dopo aver creato una pagina di importazione, puoi importare la pagina di destinazione completa di HTML. Per importare la pagina di destinazione di HTML, devi prima comprimerne il contenuto in un pacchetto di progettazione. Il pacchetto progettazione contiene la pagina di destinazione di HTML e le risorse di riferimento (immagini, CSS, icone, script e così via).
+Dopo aver creato una pagina di importazione, puoi importare la pagina di destinazione completa di HTML. Per importare la pagina di destinazione di HTML, devi prima comprimerne il contenuto in un pacchetto di progettazione. Il pacchetto di progettazione contiene la pagina di destinazione di HTML e le risorse di riferimento (immagini, CSS, icone, script e così via).
 
 La seguente scheda di riferimento rapido fornisce un esempio di come preparare il HTML per l’importazione:
 
 Scheda di riferimento rapido della pagina di destinazione
 
-[Ottieni file](assets/cheatsheet.zip)
+[Ottieni il file](assets/cheatsheet.zip)
 
 ### Layout e requisiti dei file ZIP {#zip-file-layout-and-requirements}
 
@@ -72,13 +72,13 @@ Il layout si basa sul layout delle best practice per le boilerplate di HTML5. Ul
 >
 >Il pacchetto di progettazione **deve** contenere almeno un file **index.html** a livello radice. Nel caso in cui la pagina di destinazione da importare abbia anche una versione mobile, il file ZIP deve contenere un **mobile.index.html** insieme a **index.html** a livello radice.
 
-### Preparazione di Landing Page HTML {#preparing-the-landing-page-html}
+### Preparazione del HTML della pagina di destinazione {#preparing-the-landing-page-html}
 
-Per importare il HTML, devi aggiungere un div canvas al HTML della pagina di destinazione.
+Per importare HTML, devi aggiungere un div canvas alla pagina di destinazione HTML.
 
 Il div canvas è un tag html **div** con `id="cqcanvas"` che deve essere inserito nel tag HTML `<body>` e deve racchiudere il contenuto da convertire.
 
-Di seguito è riportato un frammento di esempio di HTML della pagina di destinazione dopo l’aggiunta dell’area di lavoro:
+Di seguito è riportato un frammento di esempio della pagina di destinazione HTML dopo l’aggiunta dell’area di lavoro div:
 
 ```xml
 <!doctype html>
@@ -96,7 +96,7 @@ Di seguito è riportato un frammento di esempio di HTML della pagina di destinaz
 </html>
 ```
 
-### Preparazione delle HTML per includere componenti AEM modificabili {#preparing-the-html-to-include-editable-aem-components}
+### Preparazione di HTML all’inclusione di componenti AEM modificabili {#preparing-the-html-to-include-editable-aem-components}
 
 Quando importi una pagina di destinazione, puoi scegliere di importarla così com’è, il che significa che dopo l’importazione della pagina di destinazione non puoi modificare nessuno degli elementi importati in AEM (puoi comunque aggiungere altri componenti AEM nella pagina).
 
@@ -108,7 +108,7 @@ La sezione seguente descrive come modificare il file HTML in modo da convertire 
 
 >[!NOTE]
 >
->Il markup HTML per convertire parti della pagina di destinazione in componenti AEM ha sia una forma lunga che una dichiarazione di tag abbreviata. Entrambi sono descritti per ogni componente.
+>Il markup HTML per convertire parti della pagina di destinazione in componenti AEM dispone di una dichiarazione di tag sia in formato lungo che breve. Entrambi sono descritti per ogni componente.
 
 ### Limitazioni {#limitations}
 
@@ -132,21 +132,21 @@ I browser che supportano il &quot;trascinamento&quot; dello zip di progettazione
 
 Qualsiasi proprietà di pagina (ad esempio, Dominio personalizzato, Applicazione di HTTPS e così via) impostata per una pagina (che utilizza il modello Pagina di destinazione vuota) prima dell’importazione del pacchetto di progettazione viene persa dopo l’importazione della progettazione. Pertanto, si consiglia di impostare le proprietà della pagina dopo l’importazione del pacchetto di progettazione.
 
-### Presunto markup solo HTML {#html-only-markup-assumed}
+### Presunto solo markup HTML {#html-only-markup-assumed}
 
-Durante l’importazione, il markup viene bonificato per motivi di sicurezza e per evitare di importare e pubblicare markup non validi. Ciò presuppone che il markup solo HTML e tutti gli altri tipi di elementi, ad esempio SVG in linea o Componenti Web, vengano esclusi.
+Durante l’importazione, il markup viene bonificato per motivi di sicurezza e per evitare di importare e pubblicare markup non validi. Ciò presuppone che il markup solo HTML e tutti gli altri tipi di elementi, come SVG in linea o Componenti Web, vengano filtrati.
 
 ### Testo {#text}
 
-Markup HTML per inserire un componente di testo ( `foundation/components/text`) nel HTML all&#39;interno del pacchetto di progettazione:
+Markup HTML per inserire un componente di testo ( `foundation/components/text`) nel pacchetto di progettazione di HTML:
 
 ```xml
 <div data-cq-component="text"> <p>This is some editable text</p> </div>
 ```
 
-Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
+L’inclusione del markup sopra riportato in HTML comporta le seguenti operazioni:
 
-* Crea un componente testo AEM modificabile ( `sling:resourceType=foundation/components/text`) nella pagina di destinazione creata dopo l&#39;importazione del pacchetto di progettazione.
+* Crea un componente di testo AEM modificabile ( `sling:resourceType=foundation/components/text`) nella pagina di destinazione creata dopo l&#39;importazione del pacchetto di progettazione.
 * Imposta la proprietà `text` del componente testo creato sul HTML racchiuso in `div`.
 
 **Dichiarazione tag componente abbreviato**:
@@ -178,13 +178,13 @@ Per aggiungere un testo con un colore (rosa) modificabile nell’editor Rich Tex
 
 ### Titolo {#title}
 
-Markup HTML per inserire un componente titolo ( `wcm/landingpage/components/title`) nel HTML all&#39;interno del pacchetto di progettazione:
+Markup HTML per inserire un componente titolo ( `wcm/landingpage/components/title`) nel pacchetto di progettazione di HTML:
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
 ```
 
-Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
+L’inclusione del markup sopra riportato in HTML comporta le seguenti operazioni:
 
 * Crea un componente titolo AEM modificabile ( `sling:resourceType=wcm/landingpage/components/title`) nella pagina di destinazione creata dopo l&#39;importazione del pacchetto di progettazione.
 * Imposta la proprietà `jcr:title` del componente Titolo creato sul testo all&#39;interno del tag titolo racchiuso in div.
@@ -200,7 +200,7 @@ Il componente Titolo supporta sette tipi: `h1, h2, h3, h4, h5, h6` e `default`.
 
 ### Immagine {#image}
 
-Markup HTML per inserire un componente immagine (foundation/components/image) nel pacchetto progettazione di HTML:
+Markup HTML per inserire un componente immagine (base/componenti/immagine) nel pacchetto di progettazione di HTML within:
 
 ```xml
 <div data-cq-component="image">
@@ -208,7 +208,7 @@ Markup HTML per inserire un componente immagine (foundation/components/image) ne
 </div>
 ```
 
-Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
+L’inclusione del markup sopra riportato in HTML comporta le seguenti operazioni:
 
 * Crea un componente immagine AEM modificabile ( `sling:resourceType=foundation/components/image`) nella pagina di destinazione creata dopo l&#39;importazione del pacchetto di progettazione.
 * Imposta la proprietà `fileReference` del componente immagine creato sul percorso in cui viene importata l&#39;immagine specificata nell&#39;attributo src.
@@ -235,9 +235,9 @@ Se si tenta di convertire un tag `<img>` con URL assoluto, viene generata un&#39
 
 In caso contrario, sono supportate le immagini URL assolute per i tag immagine che non fanno parte dell’elemento div del componente Immagine.
 
-### Componenti dell’invito all’azione {#call-to-action-components}
+### Componenti call-to-action {#call-to-action-components}
 
-È possibile contrassegnare una parte della pagina di destinazione per l’importazione come &quot;componente di invito all’azione modificabile&quot;: tali componenti di invito all’azione importati possono essere modificati dopo l’importazione della pagina di destinazione. L’AEM include i seguenti componenti CTA:
+È possibile contrassegnare una parte della pagina di destinazione per l’importazione come &quot;componente Call to action modificabile&quot;: i componenti call-to-action importati possono essere modificati dopo l’importazione della pagina di destinazione. AEM include i seguenti componenti CTA:
 
 * Collegamento Click-through: consente di aggiungere un collegamento di testo che, se selezionato, porta il visitatore a un URL di destinazione.
 * Collegamento grafico: consente di aggiungere un’immagine che, se selezionata, porta il visitatore a un URL di destinazione.
@@ -276,7 +276,7 @@ Questo componente può essere utilizzato in qualsiasi applicazione autonoma o pu
 
 #### Collegamento grafico {#graphical-link}
 
-Questo componente CTA può essere utilizzato per aggiungere qualsiasi immagine grafica con collegamento nella pagina di destinazione. L&#39;immagine può essere un semplice pulsante o qualsiasi immagine grafica come sfondo. Quando si fa clic sull’immagine, l’utente viene indirizzato all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo &quot;Invito all&#39;azione&quot;.
+Questo componente CTA può essere utilizzato per aggiungere qualsiasi immagine grafica con collegamento nella pagina di destinazione. L&#39;immagine può essere un semplice pulsante o qualsiasi immagine grafica come sfondo. Quando si fa clic sull’immagine, l’utente viene indirizzato all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo &quot;Call to action&quot;.
 
 Proprietà supportate
 
@@ -285,7 +285,7 @@ Proprietà supportate
 * URL di Target, supporta URL di terze parti e AEM
 * Opzioni di rendering della pagina (stessa finestra, nuova finestra e così via)
 
-Tag HTML per includere il componente collegamento grafico nello zip importato. Qui href corrisponde all’URL di destinazione, img src corrisponde all’immagine di rendering, &quot;title&quot; viene preso come testo al passaggio del mouse e così via.
+Tag HTML per includere il componente collegamento grafico nel file zip importato. Qui href corrisponde all’URL di destinazione, img src corrisponde all’immagine di rendering, &quot;title&quot; viene preso come testo al passaggio del mouse e così via.
 
 ```xml
 <div id="cqcanvas">
@@ -323,9 +323,9 @@ Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profi
 **Funzioni supportate**
 
 * Campi lead predefiniti: nome, cognome, indirizzo, dominio, genere, informazioni, ID utente, ID e-mail, pulsante di invio sono disponibili nella barra laterale. È sufficiente trascinare il componente richiesto nel modulo del lead.
-* Con l’aiuto di questi componenti, l’autore può progettare un modulo lead indipendente; questi campi corrispondono ai campi del modulo lead. In un’applicazione zip indipendente o importata, l’utente può aggiungere campi aggiuntivi utilizzando i campi del modulo cq:form o cta lead, il nome e progettarli in base ai requisiti.
+* Con l’aiuto di questi componenti, l’autore può progettare un modulo lead indipendente; questi campi corrispondono ai campi del modulo lead. In un&#39;applicazione zip indipendente o importata, l&#39;utente può aggiungere campi aggiuntivi utilizzando i campi del modulo cq:form o cta lead, il nome e progettarli in base ai requisiti.
 * Mappare i campi del modulo lead utilizzando nomi predefiniti specifici del modulo lead di CTA, ad esempio - firstName per nome nel modulo lead e così via.
-* I campi non mappati ai componenti modulo lead vengono mappati su cq:form: testo, radio, casella di controllo, menu a discesa, nascosto, password.
+* I campi non mappati ai moduli lead vengono mappati ai componenti cq:form: testo, radio, casella di controllo, elenco a discesa, nascosto, password.
 * L’utente può fornire il titolo utilizzando il tag &quot;label&quot; e lo stile utilizzando l’attributo di stile &quot;class&quot; (disponibile solo per i componenti del modulo lead di CTA).
 * La pagina di ringraziamento e l’elenco delle iscrizioni possono essere forniti come parametro nascosto del modulo (presente nel file index.htm) oppure possono essere aggiunti/modificati dalla barra di modifica di &quot;Inizio del modulo lead&quot;
 
@@ -335,7 +335,7 @@ Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profi
 
 * I vincoli come - obbligatorio possono essere forniti dalla configurazione di modifica di ciascun componente.
 
-Tag HTML per includere il componente collegamento grafico nello zip importato. Qui &quot;firstName&quot; è mappato al firstName del modulo lead e così via, tranne che per le caselle di controllo: queste due caselle di controllo sono mappate al componente a discesa cq:form.
+Tag HTML per includere il componente collegamento grafico nel file zip importato. Qui &quot;firstName&quot; è mappato a lead form firstName e così via, ad eccezione delle caselle di controllo. Queste due caselle di controllo sono mappate al componente a discesa cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -372,7 +372,7 @@ Il componente AEM Parsys è un componente contenitore che può contenere altri c
 
 Il sistema paragrafo consente agli utenti di aggiungere componenti utilizzando la barra laterale.
 
-Markup HTML per inserire un componente Parsys ( `foundation/components/parsys`) nel HTML all&#39;interno del pacchetto di progettazione:
+Markup HTML per inserire un componente Parsys ( `foundation/components/parsys`) nel pacchetto di progettazione di HTML:
 
 ```xml
 <div data-cq-component="parsys">
@@ -381,13 +381,13 @@ Markup HTML per inserire un componente Parsys ( `foundation/components/parsys`) 
 </div>
 ```
 
-L’inclusione del markup sopra riportato nel HTML comporta le seguenti operazioni:
+L’inclusione del markup sopra riportato in HTML consente di:
 
 * Inserisce un componente AEM Parsys (foundation/components/parsys) nella pagina di destinazione creata dopo l’importazione del pacchetto di progettazione.
 * Inizializza la barra laterale con i componenti predefiniti. È possibile aggiungere nuovi componenti alla pagina di destinazione trascinandoli dalla barra laterale al componente Parsys.
 * Anche due componenti titolo fanno parte di Parsys.
 
-### Destinazione {#target}
+### Target {#target}
 
 Il componente Target mostra il contenuto di un’esperienza sulla pagina. È possibile creare più esperienze in una campagna e il componente Target può mostrare in modo dinamico il contenuto di esperienze diverse ai vari utenti che visitano la pagina.
 
@@ -413,23 +413,23 @@ Il markup html per inserire un componente target e creare anche esperienze diver
 
 Oltre a specificare se i componenti importati sono componenti AEM modificabili, è possibile configurare quanto segue prima di importare il pacchetto di progettazione:
 
-* Impostazione delle proprietà di pagina mediante l&#39;estrazione dei metadati definiti nelle HTML importate.
-* Specifica della codifica charset nel HTML.
+* Impostazione delle proprietà di pagina mediante l&#39;estrazione dei metadati definiti nel HTML importato.
+* Specifica della codifica charset in HTML.
 * Sovrapposizione del modello della pagina di importazione.
 
-### Impostazione delle proprietà di pagina mediante l&#39;estrazione dei metadati definiti nelle HTML importate {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
+### Impostazione delle proprietà di pagina mediante l&#39;estrazione dei metadati definiti nel HTML importato {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-I seguenti metadati dichiarati nel capo del HTML importato sono estratti e conservati dall’importatore di progettazione come proprietà &quot;jcr:description&quot;:
+I seguenti metadati dichiarati nel head del HTML importato vengono estratti e conservati dall&#39;importazione di progetti come proprietà &quot;jcr:description&quot;:
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-L’attributo della lingua impostato nel tag HTML viene estratto e mantenuto dall’importazione di progetti come proprietà &quot;jcr:language&quot;
+L&#39;attributo della lingua impostato nel tag HTML deve essere estratto e mantenuto dall&#39;importazione progettazione come proprietà &quot;jcr:language&quot;
 
 * &lt;html lang=&quot;it&quot;>
 
 ### Specifica della codifica charset nel codice HTML {#specifying-the-charset-encoding-in-the-html}
 
-L&#39;utilità di importazione della progettazione legge la codifica specificata nel HTML importato. La codifica può essere specificata come segue:
+L&#39;utilità di importazione progettazione legge la codifica specificata nel HTML importato. La codifica può essere specificata come segue:
 
 `<meta charset="UTF-8">`
 
@@ -443,11 +443,11 @@ Se nel HTML importato non è specificata alcuna codifica, la codifica predefinit
 
 Il modello Pagina di destinazione vuota può essere sovrapposto creando un layout in: `/apps/<appName>/designimporter/templates/<templateName>`
 
-I passaggi per creare un modello in AEM sono descritti in [Modelli](/help/sites-developing/templates.md).
+I passaggi per la creazione di un modello in AEM sono descritti in [Modelli](/help/sites-developing/templates.md).
 
 ### Riferimento a un componente dalla pagina di destinazione {#referring-a-component-from-landing-page}
 
-Supponiamo di avere un componente a cui desideri fare riferimento nel HTML utilizzando l’attributo data-cq-component in modo che l’importazione progettazione esegua il rendering di un componente che includi in questa posizione. Ad esempio, si desidera fare riferimento al componente tabella ( `resourceType = /libs/foundation/components/table`). È necessario aggiungere quanto segue in HTML:
+Supponiamo di avere un componente a cui desideri fare riferimento nel HTML utilizzando l’attributo data-cq-component in modo che l’importazione della progettazione esegua il rendering di un componente incluso in questa posizione. Ad esempio, si desidera fare riferimento al componente tabella ( `resourceType = /libs/foundation/components/table`). È necessario aggiungere quanto segue in HTML:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -461,17 +461,17 @@ L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con el
 |---|---|---|
 | E + F | un elemento F immediatamente preceduto da un elemento E | [Combinatore di pari livello adiacente](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | un elemento F preceduto da un elemento E | [Combinatore di pari livello generale](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:radice | un elemento E, radice del documento | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:n-esimo figlio/i | un elemento E, l’n-esimo elemento figlio del relativo elemento padre | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | un elemento E, radice del documento | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child(n) | un elemento E, l’n-esimo elemento figlio del relativo elemento padre | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-child(n) | un elemento E, l’n-esimo figlio del padre, a partire dall’ultimo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-of-type(n) | un elemento E, l’n-esimo elemento di pari livello del suo tipo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-of-type(n) | un elemento E, l’n-esimo pari livello del suo tipo, a partire dall’ultimo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
 Questo perché dopo l’importazione vengono aggiunti all’HTML generato elementi HTML aggiuntivi come il tag &lt;div>.
 
-* Anche gli script che si basano su una struttura simile a quella descritta sopra non sono consigliati per l’uso con elementi contrassegnati per la conversione in componenti AEM.
-* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&ast;&quot;> non è consigliato.
-* Il layout del progetto deve seguire le best practice di HTML5 Boilerplate. Ulteriori informazioni su: [https://html5boilerplate.com/](https://html5boilerplate.com/).
+* Anche gli script che si basano su una struttura simile a quella descritta sopra non sono consigliati per l’utilizzo con elementi contrassegnati per la conversione in componenti AEM.
+* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&amp;ast;&quot;> non è consigliato.
+* Il layout del design deve seguire le best practice di HTML5 Boilerplate. Ulteriori informazioni su: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configurazione dei moduli OSGI {#configuring-osgi-modules}
 
@@ -494,7 +494,7 @@ La tabella seguente descrive brevemente le proprietà:
   <tr>
    <td>Importazione progettazione pagina di destinazione</td>
    <td>Extract Filter</td>
-   <td>L’elenco delle espressioni regolari da utilizzare per filtrare i file dall’estrazione. <br /> le voci ZIP corrispondenti a uno dei pattern specificati sono escluse dall'estrazione</td>
+   <td>L’elenco delle espressioni regolari da utilizzare per filtrare i file dall’estrazione. <br /> Le voci ZIP che corrispondono a uno dei pattern specificati sono escluse dall’estrazione</td>
   </tr>
   <tr>
    <td>Landing Page Builder</td>
@@ -514,12 +514,12 @@ La tabella seguente descrive brevemente le proprietà:
   <tr>
    <td>Preprocessore di ingresso pagina di destinazione</td>
    <td>Pattern di ricerca </td>
-   <td>Pattern da cercare, nei contenuti della voce archivio. Questa espressione regolare viene associata alla voce contenuto riga per riga. In caso di corrispondenza, il testo corrispondente viene sostituito con il pattern di sostituzione specificato.<br /> <br /> Consulta la nota seguente sulle limitazioni attuali del preprocessore di ingresso della pagina di destinazione.</td>
+   <td>Pattern da cercare, nei contenuti della voce archivio. Questa espressione regolare viene associata alla voce contenuto riga per riga. Alla corrispondenza, il testo corrispondente viene sostituito con il pattern di sostituzione specificato.<br /> <br /> Consulta la nota seguente sulle limitazioni attuali del preprocessore di accesso alla pagina di destinazione.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Sostituisci pattern</td>
-   <td>Pattern che sostituisce le corrispondenze trovate. Puoi utilizzare riferimenti a gruppi regex come $1, $2. Inoltre, questo modello supporta parole chiave come {designPath} che vengono risolte con il valore effettivo durante l'importazione.</td>
+   <td>Pattern che sostituisce le corrispondenze trovate. Puoi utilizzare riferimenti a gruppi regex come $1, $2. Inoltre, questo modello supporta parole chiave come {designPath} che vengono risolte con il valore effettivo durante l’importazione.</td>
   </tr>
  </tbody>
 </table>
@@ -531,13 +531,13 @@ La tabella seguente descrive brevemente le proprietà:
 >
 >Ad esempio, se la configurazione predefinita è
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >E devi sostituire `CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il tuo modello di ricerca dovrebbe essere simile al seguente:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 Durante l&#39;importazione del pacchetto di progettazione, è possibile che si verifichino diversi errori, descritti in questa sezione.
 
@@ -554,7 +554,7 @@ In caso di errori, ad esempio se il pacchetto importato non è un file ZIP valid
 
 ### Avvisi visualizzati dopo l’importazione {#warnings-displayed-after-import}
 
-Se sono presenti avvertenze (ad esempio, HTML fa riferimento a immagini che non esistono nel pacchetto), l’importazione di progetti importa lo zip ma allo stesso tempo visualizza un elenco di problemi/avvertenze nel riquadro dei risultati. Facendo clic sul collegamento dei problemi, viene visualizzato un elenco di avvertenze che segnalano eventuali problemi all’interno del pacchetto di progettazione. Di seguito sono riportati i diversi scenari in cui gli avvisi vengono rilevati e visualizzati dall&#39;utilità di importazione della progettazione:
+Se sono presenti avvertenze (ad esempio, HTML fa riferimento a immagini che non esistono nel pacchetto), l’importazione di progetti importa lo zip, ma allo stesso tempo visualizza un elenco di problemi/avvertenze nel riquadro dei risultati. Facendo clic sul collegamento dei problemi, viene visualizzato un elenco di avvertenze che segnalano eventuali problemi all’interno del pacchetto di progettazione. Di seguito sono riportati i diversi scenari in cui gli avvisi vengono rilevati e visualizzati dall&#39;utilità di importazione della progettazione:
 
 * HTML fa riferimento a immagini che non esistono all’interno del pacchetto.
 * HTML fa riferimento a script che non esistono nel pacchetto.
@@ -562,7 +562,7 @@ Se sono presenti avvertenze (ad esempio, HTML fa riferimento a immagini che non 
 
 ### Dove vengono memorizzati i file del file ZIP in AEM? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-Dopo l’importazione della pagina di destinazione, i file (immagini, css, js e così via) all’interno del pacchetto di progettazione vengono memorizzati nel seguente percorso in AEM:
+Dopo l’importazione della pagina di destinazione, i file (immagini, css, js e così via) all’interno del pacchetto di progettazione vengono memorizzati nella seguente posizione in AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
@@ -591,7 +591,7 @@ con un CSS applicato alla classe `box` come segue:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-`box img` viene quindi utilizzato nell&#39;utilità di importazione progettazione. La formattazione della pagina di destinazione risultante non sembra essere stata mantenuta. Per ovviare a questo problema, l’AEM aggiunge tag div nel CSS e riscrive il codice di conseguenza. In caso contrario, alcune regole CSS non saranno valide.
+`box img` viene quindi utilizzato nell&#39;utilità di importazione progettazione. La formattazione della pagina di destinazione risultante non sembra essere stata mantenuta. Per ovviare a questo problema, AEM aggiunge tag div nel CSS e riscrive il codice di conseguenza. In caso contrario, alcune regole CSS non saranno valide.
 
 ```xml
 .box img

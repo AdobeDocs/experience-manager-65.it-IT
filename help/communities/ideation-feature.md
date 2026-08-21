@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 0%
+source-wordcount: '1142'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-La funzione di ideazione fornisce un’area per i visitatori del sito connessi (membri della community) nell’ambiente Publish per:
+La funzione di ideazione fornisce un’area per i visitatori del sito connessi (membri della community) nell’ambiente di pubblicazione per:
 
 * Creare idee da condividere con la community.
 * Visualizzare e commentare le idee.

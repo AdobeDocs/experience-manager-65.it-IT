@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Viene visualizzato il pulsante **Segui**:
 * Quando si visualizza il profilo di un altro membro.
 * In una pagina delle funzioni principali, ad esempio forum, domande e blog.
 
-   * Segue tutte le attività per quella funzione generale.
+  * Segue tutte le attività per quella funzione generale.
 
 * Per una voce specifica, ad esempio un argomento forum, una domanda di controllo qualità o un articolo di blog.
 
-   * Segue tutte le attività per quella voce specifica.
+  * Segue tutte le attività per quella voce specifica.
 
 ### Informazioni aggiuntive {#additional-information}
 

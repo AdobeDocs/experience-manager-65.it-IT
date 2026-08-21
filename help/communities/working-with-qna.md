@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 0%
+source-wordcount: '1403'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ La funzione del forum di QnA (domande e risposte) offre ai membri della communit
 
 La documentazione descrive:
 
-* Aggiunta della funzione di forum di controllo qualità a un sito AEM.
+* Aggiunta della funzione di forum QnA a un sito AEM.
 * Impostazioni di configurazione per il componente `QnA`.
 
 ## Aggiunta di un forum domande e risposte a una pagina {#adding-a-q-a-forum-to-a-page}
@@ -163,7 +163,7 @@ Nella scheda **Impostazioni**, specifica le impostazioni per gli argomenti (doma
 
 * **Pattern menzioni interfaccia utente**
 
-  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
+  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Ad esempio, `~{{familyName}}{{givenName}}`.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -210,7 +210,7 @@ Nella scheda **Campo tag**, i tag che possono essere applicati, se consentiti ne
 
 * **Limite suggerimenti**
 
-  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore **-**&#x200B;1 indica nessun limite. Il valore predefinito è 0.
+  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore **-**1 indica nessun limite. Il valore predefinito è 0.
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
@@ -248,7 +248,7 @@ Possono anche identificare le risposte.
 
 Quando i visitatori del sito hanno effettuato l’accesso, a seconda della configurazione, possono:
 
-* Post una nuova domanda.
+* Pubblica una nuova domanda.
 * Modificare o eliminare le domande create.
 * Contrassegna domande o risposte di altri membri.
 * Identifica le risposte alle domande che hanno creato.

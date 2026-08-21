@@ -7,14 +7,14 @@ exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3bb516289dbff4fb3b94685b9e25360e7717776e
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 63%
+source-wordcount: '270'
+ht-degree: 64%
 
 ---
 
 # Connetti a Microsoft Translator {#connecting-to-microsoft-translator}
 
-AEM fornisce un connettore integrato per [Microsoft Translator](https://www.microsoft.com/it-it/translator/business/) per tradurre il contenuto o le risorse della pagina. Dopo aver ottenuto una licenza da Microsoft per utilizzare Microsoft Translator, configura il connettore seguendo le istruzioni riportate in questa pagina.
+AEM fornisce un connettore integrato per [Microsoft Translator](https://www.microsoft.com/it-it/translator/business/) per tradurre il contenuto o le risorse di una pagina. Dopo aver ottenuto una licenza da Microsoft per utilizzare Microsoft Translator, configura il connettore seguendo le istruzioni riportate in questa pagina.
 
 | Proprietà | Descrizione |
 |---|---|
@@ -25,7 +25,7 @@ AEM fornisce un connettore integrato per [Microsoft Translator](https://www.micr
 
 La procedura seguente crea una configurazione di Microsoft Translator.
 
-1. Nel [pannello di navigazione,](/help/sites-authoring/basic-handling.md#first-steps) fai clic su **Strumenti** > **Cloud Service** > **Cloud Service di traduzione**.
+1. Nel [pannello di navigazione,](/help/sites-authoring/basic-handling.md#first-steps) fai clic su **Strumenti** > **Servizi cloud** > **Servizi cloud di traduzione**.
 1. Passa alla posizione in cui desideri creare la configurazione. Normalmente si trova nel sito principale oppure può essere una configurazione globale predefinita.
 1. Fai clic sul pulsante **Crea**.
 1. Definisci la configurazione.

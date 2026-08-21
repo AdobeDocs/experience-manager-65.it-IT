@@ -12,8 +12,8 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
+source-wordcount: '1802'
+ht-degree: 2%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->L’Adobe non prevede di migliorare ulteriormente il tracciamento dei messaggi e-mail di messaggi aperti/non recapitati (non consegnabili) inviati dal servizio SMTP dell’AEM.
+>Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/non recapitate (non consegnabili) inviate dal servizio SMTP di AEM.
 >Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 Il marketing via e-mail (ad esempio le newsletter) è una parte importante di qualsiasi campagna di marketing, in quanto viene utilizzato per inviare contenuti ai lead. In AEM, puoi creare newsletter da contenuti AEM esistenti e aggiungere nuovi contenuti, specifici alle newsletter.
 
 Una volta create, è possibile inviare newsletter a un gruppo specifico di utenti immediatamente o in un altro momento pianificato (tramite un flusso di lavoro). Inoltre, gli utenti possono iscriversi alle newsletter nel formato scelto.
 
-AEM consente inoltre di gestire la funzionalità delle newsletter, inclusi la gestione di argomenti, l&#39;archiviazione di newsletter e la visualizzazione di statistiche sulle newsletter.
+Inoltre, AEM consente di amministrare la funzionalità delle newsletter, inclusi la gestione di argomenti, l’archiviazione di newsletter e la visualizzazione di statistiche sulle newsletter.
 
 >[!NOTE]
 >
@@ -37,14 +37,14 @@ AEM consente inoltre di gestire la funzionalità delle newsletter, inclusi la ge
 
 Questo documento descrive le nozioni di base sulla creazione di newsletter in AEM. Per informazioni più dettagliate su come utilizzare il marketing via posta elettronica, vedere i seguenti documenti:
 
-* [Creazione di una pagina di destinazione efficace per la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
-* [Gestione delle sottoscrizioni](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-* [Pubblicazione di un messaggio e-mail ai provider di servizi e-mail](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
-* [Tracciamento delle e-mail non recapitate](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
+* [Creazione di una pagina di destinazione efficace per una newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [Gestione delle registrazioni](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
+* [Pubblicazione di un’e-mail ai provider di servizi e-mail](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+* [Tracciamento dei messaggi e-mail non pervenuti a destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
->Se aggiorni i provider di posta elettronica, esegui un test di volo o invii una newsletter, queste operazioni non riusciranno se la newsletter non viene pubblicata prima nell’istanza di Publish o se l’istanza di Publish non è disponibile. Assicurati di pubblicare la newsletter e assicurati che l’istanza di Publish sia funzionante.
+>Se aggiorni i provider di posta elettronica, esegui un test di volo o invii una newsletter, queste operazioni non riusciranno se la newsletter non viene pubblicata prima nell’istanza Publish o se l’istanza Publish non è disponibile. Assicurati di pubblicare la newsletter e assicurati che l’istanza Publish sia attiva e in esecuzione.
 
 ## Creazione di un’esperienza newsletter {#creating-a-newsletter-experience}
 
@@ -72,26 +72,26 @@ Questo documento descrive le nozioni di base sulla creazione di newsletter in AE
 
    ![Finestra di dialogo proprietà pagina](assets/mcm_newnewsletterdialog.png)
 
-   * **Da nome**
-Nome che deve apparire come mittente della newsletter.
+   * **Nome mittente**
+     Nome che deve apparire come mittente della newsletter.
 
-   * **Indirizzo Da**
-Indirizzo e-mail che deve apparire come mittente della newsletter.
+   * **Indirizzo mittente**
+     Indirizzo e-mail che deve apparire come mittente della newsletter.
 
    * **Oggetto**
-Oggetto della newsletter.
+     Oggetto della newsletter.
 
    * **Rispondi a**
-Indirizzo e-mail a cui devono essere inviate le risposte per la newsletter inviata.
+     Indirizzo e-mail a cui devono essere inviate le risposte per la newsletter inviata.
 
    * **Descrizione**
-Descrizione della newsletter.
+     Descrizione della newsletter.
 
    * **Ora di attivazione**
-L’ in tempo per l’invio della newsletter.
+     L’ in tempo per l’invio della newsletter.
 
-   * **Elenco destinatari predefinito**
-Elenco predefinito che deve ricevere la newsletter.
+   * **Elenco destinatari predefiniti**
+     Elenco predefinito che deve ricevere la newsletter.
 
    È possibile aggiornarli in una fase successiva dalla finestra di dialogo **Proprietà...**.
 
@@ -99,12 +99,12 @@ Elenco predefinito che deve ricevere la newsletter.
 
 ## Aggiunta di contenuto alle newsletter {#adding-content-to-newsletters}
 
-Puoi aggiungere contenuti, incluso il contenuto dinamico, alla newsletter come faresti in qualsiasi componente AEM. In Geometrixx, il modello Newsletter include alcuni componenti disponibili per aggiungere e modificare contenuti nelle newsletter.
+Puoi aggiungere contenuto, incluso il contenuto dinamico, alla newsletter come faresti in qualsiasi componente di AEM. In Geometrixx, il modello Newsletter presenta alcuni componenti disponibili per aggiungere e modificare contenuti nelle newsletter.
 
 1. In MCM, fai clic sulla scheda **Campagne** e fai doppio clic sulla newsletter a cui desideri aggiungere o modificare il contenuto. Viene visualizzata la newsletter.
 
 1. Se i componenti non sono visibili, vai alla vista Progettazione e abilita i componenti necessari (ad esempio, i componenti Newsletter) prima di iniziare la modifica.
-1. Inserisci il testo, le immagini o altri componenti nuovi, a seconda delle necessità. Geometrixx Nell’esempio sono disponibili 4 componenti: Testo, Immagine, Intestazione e 2 Colonne. La newsletter può contenere più o meno componenti a seconda della configurazione.
+1. Inserisci il testo, le immagini o altri componenti nuovi, a seconda delle necessità. Nell’esempio di Geometrixx, sono disponibili 4 componenti: testo, immagine, intestazione e 2 colonne. La newsletter può contenere più o meno componenti a seconda della configurazione.
 
    >[!NOTE]
    >
@@ -144,7 +144,7 @@ Per personalizzare una newsletter e simulare il suo aspetto:
 >
 >Per impostazione predefinita, il valore del parametro è `localhost:4502` e l&#39;operazione non può essere completata se la porta per l&#39;istanza in esecuzione viene modificata.
 
-Passa da un client di posta elettronica comune all’altro per vedere come la newsletter verrà visualizzata dai lead. Per impostazione predefinita, la newsletter si apre senza che sia selezionato nessuno dei client di posta elettronica.
+Passa ai diversi client e-mail più diffusi per vedere come la newsletter verrà visualizzata dai lead. Per impostazione predefinita, la newsletter si apre senza che sia selezionato nessuno dei client di posta elettronica.
 
 Attualmente è possibile visualizzare le newsletter nei seguenti client di posta elettronica:
 
@@ -205,7 +205,7 @@ I test di volo consentono di effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Se aggiorni i provider di posta elettronica, esegui un test di volo o invii una newsletter, queste operazioni non riusciranno se la newsletter non viene pubblicata prima nell’istanza di Publish o se l’istanza di Publish non è disponibile. Assicurati di pubblicare la newsletter e assicurati che l’istanza di Publish sia funzionante.
+>Se aggiorni i provider di posta elettronica, esegui un test di volo o invii una newsletter, queste operazioni non riusciranno se la newsletter non viene pubblicata prima nell’istanza Publish o se l’istanza Publish non è disponibile. Assicurati di pubblicare la newsletter e assicurati che l’istanza Publish sia attiva e in esecuzione.
 
 Per visualizzare i notiziari di prova di volo:
 
@@ -221,7 +221,7 @@ Per visualizzare i notiziari di prova di volo:
 
 >[!NOTE]
 >
->L’Adobe non prevede di migliorare ulteriormente il tracciamento dei messaggi e-mail di messaggi aperti/non recapitati (non consegnabili) inviati dal servizio SMTP dell’AEM.
+>Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/non recapitate (non consegnabili) inviate dal servizio SMTP di AEM.
 >Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con AEM](/help/sites-administering/campaign.md).
 
 Puoi inviare una newsletter dalla newsletter o dall’elenco. Entrambe le procedure sono descritte.
@@ -234,7 +234,7 @@ Puoi inviare una newsletter dalla newsletter o dall’elenco. Entrambe le proced
 
 >[!NOTE]
 >
->Se aggiorni i provider di posta elettronica, esegui un test di volo o invii una newsletter, queste operazioni non riusciranno se la newsletter non viene pubblicata prima nell’istanza di Publish o se l’istanza di Publish non è disponibile. Assicurati di pubblicare la newsletter e assicurati che l’istanza di Publish sia funzionante.
+>Se aggiorni i provider di posta elettronica, esegui un test di volo o invii una newsletter, queste operazioni non riusciranno se la newsletter non viene pubblicata prima nell’istanza Publish o se l’istanza Publish non è disponibile. Assicurati di pubblicare la newsletter e assicurati che l’istanza Publish sia attiva e in esecuzione.
 
 ### Invio di newsletter da una campagna {#sending-newsletters-from-a-campaign}
 
@@ -295,10 +295,10 @@ Questa sezione descrive come abbonarsi a una newsletter.
 
 ### Iscrizione a una newsletter {#subscribing-to-a-newsletter-1}
 
-Per iscriversi a una newsletter (utilizzando il sito Web Geometrixx come esempio):
+Per iscriversi a una newsletter (utilizzando come esempio il sito Web Geometrixx):
 
-1. Fare clic su **Siti Web**, passare alla **Barra degli strumenti** del Geometrixx e aprirla.
+1. Fare clic su **Siti Web**, passare alla **Barra degli strumenti** di Geometrixx e aprirla.
 
    ![Esempio di abbonamento](assets/chlimage_1-121.png)
 
-1. Nel campo Geometrixx **Registrati**, immetti il tuo indirizzo di posta elettronica e fai clic su **Registrati**. Sei abbonato alla newsletter.
+1. Nel campo Newsletter Geometrixx **Registrati**, immetti il tuo indirizzo di posta elettronica e fai clic su **Registrati**. Sei abbonato alla newsletter.
