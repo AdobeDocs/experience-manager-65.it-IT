@@ -29,7 +29,7 @@ AEM Mobile è pronta ad assistere i clienti con i loro obblighi di conformità a
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Il prodotto di pubblicazione digitale di Adobe (che precede AEM Mobile) supporta le iniziative di preparazione al RGPD di Adobe. Vedi [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). Di seguito sono riportate le specifiche sul supporto delle funzioni relative al RGPD nel prodotto Digital Publishing Suite, incluso come lavorare con Adobe per avviare le richieste del RGPD.
+Il prodotto di pubblicazione digitale di Adobe (che precede AEM Mobile) supporta le iniziative di preparazione al RGPD di Adobe. Vedi [https://business.adobe.com/it/privacy/general-data-protection-regulation.html](https://business.adobe.com/it/privacy/general-data-protection-regulation.html). Di seguito sono riportate le specifiche sul supporto delle funzioni relative al RGPD nel prodotto Digital Publishing Suite, incluso come lavorare con Adobe per avviare le richieste del RGPD.
 
 Per evitare di confondere AEM Mobile con il prodotto Digital Publishing Suite precedente, puoi accedere al prodotto Digital Publishing Suite facendo clic qui:
 
