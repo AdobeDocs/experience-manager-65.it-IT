@@ -78,7 +78,7 @@ A seconda dei componenti di AEM Form che hai installato, puoi includere i seguen
 
 **Amministratore dell’area di lavoro di AEM Forms:** può visualizzare e modificare le impostazioni nella pagina dell’area di lavoro nella console di amministrazione
 
-***nota **: Flex Workspace è obsoleto per la versione di AEM Forms.*
+***nota &#x200B;**: Flex Workspace è obsoleto per la versione di AEM Forms.*
 
 **Utente dell’area di lavoro:** può accedere all’applicazione per utenti finali dell’area di lavoro
 
