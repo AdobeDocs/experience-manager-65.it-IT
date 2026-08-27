@@ -9,10 +9,10 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '2029'
-ht-degree: 100%
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '2131'
+ht-degree: 98%
 
 ---
 
@@ -81,9 +81,9 @@ AEM Forms Workspace corrisponde alle funzionalità di (obsoleto per AEM Forms su
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
-Consente la gestione delle attività sui client senza Flash Player e Adobe Reader. Semplifica il rendering di HTML Forms, oltre a PDF forms e Flex Forms.
+Consente la gestione delle attività sui client senza Flash Player e Adobe Reader. Semplifica il rendering di moduli HTML, oltre a moduli PDF e Flex Forms.
 
 ## Database di AEM Forms {#aem-forms-database}
 
@@ -95,7 +95,7 @@ Per eseguire il backup del database in tempo reale, è necessario utilizzare la 
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta [il documento sul ciclo di vita del prodotto Adobe](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+>Adobe® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulla persona. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta il [documento sul ciclo di vita del prodotto Adobe](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
 
 ### DB2 {#db2}
 
@@ -114,7 +114,7 @@ DB2 dispone di funzionalità incorporate per eseguire il backup di un database i
 
 ### Oracle {#oracle}
 
-Utilizza i backup delle copie istantanee o configura il database Oracle per l’esecuzione in modalità registro archivio. (Consulta [Backup di Oracle: introduzione](https://www.databasedesign-resource.com/oracle-backup.md)). Per ulteriori informazioni sul backup e il ripristino del database di Oracle, visita i seguenti siti:
+Utilizza i backup delle copie istantanee o configura il database Oracle per l’esecuzione in modalità registro archivio. (Vedi [Oracle Backup: Introduzione](https://www.databasedesign-resource.com/oracle-backup.md).) Per ulteriori informazioni sul backup e il ripristino del database Oracle, visitare i siti seguenti:
 
 [Backup e ripristino di Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) illustra i concetti di backup e ripristino e le tecniche più comuni per l’utilizzo di Recovery Manager (RMAN) per il backup, il ripristino e il reporting in modo più dettagliato e fornisce ulteriori informazioni su come pianificare una strategia di backup e ripristino.
 
@@ -135,7 +135,7 @@ Per ulteriori informazioni, consulta [Backup e ripristino](https://msdn.microsof
 
 ### MySQL {#mysql}
 
-Utilizza MySQLAdmin o modifica i file INI in Windows per configurare il database MySQL in modo che venga eseguito in modalità registro binario. Consulta [Registrazione binaria MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html). È disponibile anche uno strumento di backup a caldo per MySQL dal software InnoBase. Consulta [Backup a caldo Innobase](https://www.innodb.com/hot-backup/features.md).
+Utilizza MySQLAdmin o modifica i file INI in Windows per configurare il database MySQL in modo che venga eseguito in modalità registro binario. (Vedi [Registrazione binaria MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) È inoltre disponibile uno strumento di backup a caldo per MySQL dal software InnoBase. Consulta [Backup a caldo Innobase](https://www.innodb.com/hot-backup/features.md).
 
 >[!NOTE]
 >

@@ -9,9 +9,9 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '484'
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '493'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Per informazioni sul miglioramento delle prestazioni di sincronizzazione di data
 
 ## Configurazione della gestione degli utenti per un server LDAP abilitato per SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-Se disponi di un server LDAP abilitato per SSL, configura la gestione utenti per utilizzarlo. (Consulta [Configurare la gestione degli utenti per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Se disponi di un server LDAP abilitato per SSL, configura la gestione utenti per utilizzarlo. Consulta [Configurare la gestione utenti per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).
 
 ## Impostazione dei privilegi utente per l’utilizzo con Protezione documenti {#setting-user-privileges-for-use-with-document-security}
 
@@ -58,4 +58,4 @@ Per motivi di sicurezza gli utenti con determinati tipi di privilegi di amminist
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.

@@ -9,10 +9,10 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '2495'
-ht-degree: 100%
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '2503'
+ht-degree: 99%
 
 ---
 
@@ -78,7 +78,7 @@ A seconda dei componenti di AEM Form che hai installato, puoi includere i seguen
 
 **Amministratore dell’area di lavoro di AEM Forms:** può visualizzare e modificare le impostazioni nella pagina dell’area di lavoro nella console di amministrazione
 
-***Nota **: Flex Workspace è obsoleto per AEM Forms.*
+***nota &#x200B;**: Flex Workspace è obsoleto per la versione di AEM Forms.*
 
 **Utente dell’area di lavoro:** può accedere all’applicazione per utenti finali dell’area di lavoro
 
@@ -96,7 +96,7 @@ A seconda dei componenti di AEM Form che hai installato, puoi includere i seguen
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 ## Creare un ruolo {#create-a-role}
 
