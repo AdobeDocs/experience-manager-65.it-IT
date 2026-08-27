@@ -9,7 +9,7 @@ exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 94%
@@ -26,7 +26,7 @@ Puoi importare ed esportare le definizioni dei modelli di ricerca e le impostazi
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 Ad esempio, puoi spostarti da un ambiente di sviluppo a un ambiente di produzione esportando le definizioni dei modelli di ricerca e le impostazioni globali da un ambiente e importandole nell’altro.
 
@@ -70,7 +70,7 @@ Puoi modificare il file delle impostazioni globali. Tuttavia, le uniche impostaz
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 Il file delle impostazioni globali dell’area di lavoro include le impostazioni seguenti:
 

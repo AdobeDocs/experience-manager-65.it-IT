@@ -1,5 +1,5 @@
 ---
-title: ' Configurazione delle impostazioni del server'
+title: Configurazione delle impostazioni del server
 description: La pagina Impostazioni server consente di accedere alle impostazioni di notifica e-mail, attività e amministratore.
 contentOwner: admin
 content-type: reference
@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '2643'
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '2665'
 ht-degree: 100%
 
 ---
@@ -86,7 +86,7 @@ Per generare notifiche e-mail per un gruppo, specifica un indirizzo e-mail per i
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 ### Configurare i promemoria per utenti o gruppi {#configure-reminders-for-users-or-groups}
 
@@ -198,7 +198,7 @@ Solo per le notifiche di attività, Forms Workflow include due configurazioni di
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 Se la soluzione viene distribuita in un ambiente cluster, sostituire `@@notification-host@@` con l’indirizzo del cluster.
 

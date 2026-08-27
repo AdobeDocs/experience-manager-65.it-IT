@@ -7,10 +7,10 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1739'
-ht-degree: 100%
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Le informazioni di utenti e gruppi vengono gestite in un sistema di archiviazion
 
 Quando crei degli utenti, puoi aggiungerli ai gruppi e assegnare loro ruoli.
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Gestione utente > Utenti e gruppi]**, quindi su **[!UICONTROL Nuovo utente]**.
+1. Nella console di amministrazione, fare clic su **[!UICONTROL Impostazioni > Gestione utente > Utenti e gruppi]**, quindi su **[!UICONTROL Nuovo utente]**.
 .
 1. In **[!UICONTROL Impostazioni generali]**, fornisci le informazioni richieste, quindi fai clic su **[!UICONTROL Avanti]**. Per informazioni dettagliate sulle impostazioni, consulta [Impostazioni utente](adding-configuring-users.md#user-settings).
 1. (Facoltativo) Per aggiungere l’utente a un gruppo, fai clic su **[!UICONTROL Trova gruppi]** ed esegui queste attività:
