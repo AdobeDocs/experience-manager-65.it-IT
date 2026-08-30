@@ -1,6 +1,6 @@
 ---
 title: Configurazione di analisi e rapporti
-description: Scopri come configurare Adobe Analytics per individuare i pattern di interazione e i problemi che gli utenti devono affrontare durante l’utilizzo di moduli adattivi, documenti adattivi e moduli HTML5.
+description: Scopri come configurare Adobe Analytics per individuare i pattern di interazione e i problemi riscontrati dagli utenti durante l’utilizzo di moduli adattivi, documenti adattivi e moduli HTML5.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
@@ -9,28 +9,34 @@ exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 1%
+source-wordcount: '1611'
+ht-degree: 2%
 
 ---
 
-# Analytics tramite Cloud Service Framework {#analyticsusingcloudframework}
+# Analytics con Cloud Service Framework {#analyticsusingcloudframework}
 
-AEM Forms si integra con Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate in base ai dati sulle modifiche necessarie per rendere i moduli o i documenti più utilizzabili.
+>[!CAUTION]
+>
+>La dashboard di Analytics per AEM Forms è obsoleta. Non è più possibile visualizzare i rapporti di analisi in AEM Forms. Per visualizzare i dati di analisi dei moduli, utilizza l’interfaccia utente di Adobe Analytics.
+>
+>Inoltre, l&#39;API [Adobe Analytics 1.4 ha raggiunto la fine del ciclo di vita](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Di conseguenza, le configurazioni di Adobe Analytics che utilizzano le credenziali utente (nome utente e password) non sono più supportate.
+
+AEM Forms si integra con Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili.
 
 >[!NOTE]
 >
 >La funzione di analisi di AEM Forms è disponibile come parte del pacchetto del componente aggiuntivo AEM Forms. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo, vedere [Installazione e configurazione di AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 >
->Oltre al pacchetto del componente aggiuntivo, è necessario disporre di un account Adobe Analytics e dei privilegi di amministratore per l’istanza AEM. Per informazioni sulla soluzione, vedere [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+>Oltre al pacchetto del componente aggiuntivo, è necessario disporre di un account Adobe Analytics e di privilegi di amministratore per l’istanza AEM. Per informazioni sulla soluzione, vedere [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
 Puoi anche eseguire analisi utilizzando Adobe Launch. Per ulteriori informazioni su come integrare AEM Forms con Adobe Launch, vedi [Analytics utilizzando Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 
 ## Panoramica {#overview}
 
-Puoi utilizzare Adobe Analytics per scoprire i pattern di interazione e i problemi che gli utenti devono affrontare durante l’utilizzo di moduli adattivi, moduli HTML5 e comunicazione interattiva. Adobe Analytics tiene traccia e memorizza informazioni sui seguenti parametri:
+Puoi utilizzare Adobe Analytics per scoprire i pattern di interazione e i problemi che gli utenti devono affrontare durante l’utilizzo di moduli adattivi, moduli HTML5 e comunicazione interattiva. Con Adobe Analytics puoi tenere traccia e memorizzare informazioni sui seguenti parametri:
 
 * **Tempo medio di compilazione**: tempo medio impiegato per compilare il modulo.
 * **Rappresentazioni**: numero di volte in cui un modulo viene aperto.
@@ -38,7 +44,7 @@ Puoi utilizzare Adobe Analytics per scoprire i pattern di interazione e i proble
 * **Invii**: numero di volte in cui un modulo viene inviato.
 * **Interrompi**: numero di volte in cui gli utenti se ne vanno senza completare il modulo.
 
-Puoi personalizzare Adobe Analytics per aggiungere/rimuovere altri parametri. Oltre alle informazioni di cui sopra, il rapporto contiene le seguenti informazioni su ogni pannello di HTML5 e del modulo adattivo:
+Puoi personalizzare Adobe Analytics per aggiungere/rimuovere altri parametri. Oltre alle informazioni precedenti, il rapporto contiene le seguenti informazioni su ogni pannello di HTML5 e del modulo adattivo:
 
 * **Tempo**: tempo trascorso sul pannello e sui campi del pannello.
 * **Errore**: numero di errori riscontrati nel pannello e nei campi del pannello.
@@ -51,7 +57,7 @@ I dati di Analytics vengono memorizzati negli archivi specifici del cliente deno
 Per creare una suite di rapporti, effettua le seguenti operazioni.
 
 1. Accedi a [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
-1. Nel Marketing Cloud, seleziona **Amministratore** > **Admin Console** > **Suite per report**.
+1. In Marketing Cloud, seleziona **Amministratore** > **Admin Console** > **Suite per report**.
 1. Selezionare **Crea nuovo** > **Suite di rapporti** in Report Suite Manager.
 
    ![Crea nuova suite di rapporti](assets/newreportsuite_new.png)
@@ -102,16 +108,16 @@ Per creare una suite di rapporti, effettua le seguenti operazioni.
 
    >[!NOTE]
    >
-   >Il numero evento e il numero proprietà utilizzati per configurare AEM Forms Analytics devono essere diversi dal numero evento e dal numero proprietà utilizzati nella configurazione [AEM Analytics](/help/sites-administering/adobeanalytics.md).
+   >Il numero evento e il numero proprietà utilizzati per configurare AEM Forms Analytics devono essere diversi dal numero evento e dal numero proprietà utilizzati nella configurazione di [AEM Analytics](/help/sites-administering/adobeanalytics.md).
 
 1. Esci dall’account Adobe Marketing Cloud.
 
-## Creazione della configurazione del Cloud Service {#creating-cloud-service-configuration}
+## Creazione configurazione Cloud Service {#creating-cloud-service-configuration}
 
 Per configurazione di Cloud Service si intendono le informazioni sul tuo account Adobe Analytics. La configurazione consente a Adobe Experience Manager (AEM) di connettersi ad Adobe Analytics. Crea una configurazione separata per ogni account Analytics utilizzato.
 
-1. Accedi all’istanza di authoring dell’AEM come amministratore.
-1. Nell&#39;angolo in alto a sinistra, fare clic su **Adobe Experience Manager** > **Strumenti** ![icona martello](/help/forms/using/assets/tools.png) > **Cloud Service** > **Cloud Service precedenti**.
+1. Accedi all’istanza di authoring di AEM come amministratore.
+1. Nell&#39;angolo in alto a sinistra, fai clic su **Adobe Experience Manager** > **Strumenti** ![icona martello](/help/forms/using/assets/tools.png) > **Servizi cloud** > **Servizi cloud precedenti**.
 1. Individua l&#39;icona **Adobe Analytics**. Fare clic su **Mostra configurazioni**, quindi fare clic su **[+]** per aggiungere una nuova configurazione.
 
    Se sei un nuovo utente, fai clic su **Configura ora**.
@@ -127,11 +133,11 @@ Per configurazione di Cloud Service si intendono le informazioni sul tuo account
 
 1. Fai clic su **Connetti ad Analytics**. Viene visualizzata una finestra di dialogo con il messaggio che la connessione è riuscita. Fai clic su **OK**.
 
-## Creazione framework Cloud Service {#creating-cloud-service-framework}
+## Creazione di Cloud Service Framework {#creating-cloud-service-framework}
 
 Un framework Adobe Analytics è un set di mappature tra variabili Adobe Analytics e variabili AEM. Utilizza un framework per configurare il modo in cui i moduli compilano i dati nei rapporti di Adobe Analytics. I framework sono associati a una configurazione Adobe Analytics. Puoi creare più framework per ogni configurazione.
 
-1. Nella console Servizi cloud AEM, fare clic su **Mostra configurazioni**, in Adobe Analytics.
+1. Nella console di AEM Cloud Services, fai clic su **Mostra configurazioni**, in Adobe Analytics.
 1. Fai clic sul collegamento **[+]** accanto alla configurazione di Analytics.
 
    ![Configurazione Adobe Analytics](assets/adobe-analytics-cloud-services.png)
@@ -144,16 +150,16 @@ Un framework Adobe Analytics è un set di mappature tra variabili Adobe Analytic
 
    ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
-1. Trascina un componente **Analisi modulo** dalla categoria **altro** dal Sidekick al framework.
-1. Per mappare le variabili di Analytics con le variabili definite nel componente, trascina una variabile da AEM Content Finder su un campo del componente di tracciamento.
+1. Trascina un componente **Analisi modulo** dalla categoria **altro** da Sidekick al framework.
+1. Per mappare le variabili di Analytics con le variabili definite nel componente, trascina una variabile da AEM Content Finder in un campo del componente di tracciamento.
 
-   ![Mappatura delle variabili AEM con le variabili Adobe Analytics](assets/analytics_new.png)
+   ![Mappatura delle variabili di AEM con le variabili di Adobe Analytics](assets/analytics_new.png)
 
 1. Attiva il framework utilizzando la **scheda pagina** nella barra laterale e fai clic su **Attiva framework**.
 
 ## Configurazione del servizio di configurazione di AEM Forms Analytics {#configuring-aem-forms-analytics-configuration-service}
 
-1. Nell&#39;istanza di authoring, aprire Gestione configurazione console Web AEM in `https://<server>:<port>;/system/console/configMgr`.
+1. Nell&#39;istanza di authoring, aprire Gestione configurazione della console Web AEM in `https://<server>:<port>;/system/console/configMgr`.
 1. Individuare e aprire Configurazione di AEM Forms Analytics
 
    ![Servizio di configurazione di AEM Forms Analytics](assets/analytics_configuration.png)
@@ -162,7 +168,7 @@ Un framework Adobe Analytics è un set di mappature tra variabili Adobe Analytic
 
 1. Specificare i valori appropriati per i campi seguenti e fare clic su **Salva**.
 
-   * **Framework di SiteCatalyst**: selezionare il framework o la configurazione definita nella sezione Configurare un framework per il tracciamento.
+   * **Framework SiteCatalyst**: selezionare il framework o la configurazione definiti nella sezione Configurare un framework per il tracciamento.
    * **Linea di base di tempo per il tracciamento del campo**: specifica la durata in secondi dopo la quale deve essere tracciata la visita sul campo. Il valore predefinito è 0. Quando il valore è maggiore di 0 (zero), due eventi di tracciamento separati vengono inviati al server Adobe Analytics. Il primo evento indica al server di analisi di interrompere il tracciamento del campo in uscita. Il secondo evento viene inviato dopo la scadenza della durata specificata. Il secondo evento indica al server di analisi di iniziare a tracciare il campo visitato. L’utilizzo di due eventi separati consente di misurare con precisione il tempo trascorso su un campo. Quando il valore è 0 (zero), viene inviato un singolo evento di tracciamento al server Adobe Analytics.
 
    * **Cron di sincronizzazione report di Analytics**: specifica l&#39;espressione cron per recuperare i report da Adobe Analytics. Il valore predefinito è 0 0 2 ? &#42; &#42;.
