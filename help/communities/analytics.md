@@ -10,9 +10,9 @@ role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 86ce8d1ead6f2b760eb0d037042ddfc2af418913
 workflow-type: tm+mt
-source-wordcount: '2785'
+source-wordcount: '2821'
 ht-degree: 1%
 
 ---
@@ -31,14 +31,14 @@ Inoltre, Analytics è necessario per:
 
 * Nell’ambiente di pubblicazione:
 
-   * Generazione di rapporti sulle [tendenze](/help/communities/trends.md) della community
-   * Consentire ai visitatori del sito di ordinare per &quot;più visualizzati&quot;, &quot;più attivi&quot;, &quot;più apprezzati&quot;
-   * Visualizza conteggi in elenchi UGC (User-Generated Content)
+  * Generazione di rapporti sulle [tendenze](/help/communities/trends.md) della community
+  * Consentire ai visitatori del sito di ordinare per &quot;più visualizzati&quot;, &quot;più attivi&quot;, &quot;più apprezzati&quot;
+  * Visualizza conteggi in elenchi UGC (User-Generated Content)
 
 * Nell’ambiente di authoring:
 
-   * Visualizzazione dei dati di partecipazione nella [console di gestione membri](/help/communities/members.md) (visualizzazioni, post, operazioni seguenti, Mi piace)
-   * Riepilogo tendenze, heartbeat video e dispositivo video per la risorsa di abilitazione [rapporti](/help/communities/reports.md)
+  * Visualizzazione dei dati di partecipazione nella [console di gestione membri](/help/communities/members.md) (visualizzazioni, post, operazioni seguenti, Mi piace)
+  * Riepilogo tendenze, heartbeat video e dispositivo video per la risorsa di abilitazione [rapporti](/help/communities/reports.md)
 
 Le funzioni supportate per Communities includono:
 
@@ -71,7 +71,7 @@ Per configurare le funzionalità di Analytics for Communities, è necessario col
 * **Nome utente**
 
   Nome utente di accesso per l’utente autorizzato a gestire l’account Analytics
-(deve includere i privilegi di accesso al servizio Web).
+  (deve includere i privilegi di accesso al servizio Web).
 
 * **Password**
 
@@ -93,31 +93,31 @@ Accedendo a [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/ana
 
 * [11 Variabili di conversione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=it) (eVars)
 
-   * Da **`evar1`** a **`evar11`** abilitato
+  * Da **`evar1`** a **`evar11`** abilitato
 
-   * Possibilità di riutilizzare (rinominare) le eVar esistenti o crearne di da utilizzare per le funzioni community
+  * Possibilità di riutilizzare (rinominare) le eVar esistenti o crearne di da utilizzare per le funzioni community
 
 * [7 eventi di successo](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=it) (eventi)
 
-   * Da **`event1`** a **`event7`** abilitato
+  * Da **`event1`** a **`event7`** abilitato
 
-   * tipo **`Counter`**
+  * tipo **`Counter`**
 
-      * non **`Counter (no subrelations)`**
+    * non **`Counter (no subrelations)`**
 
-   * È possibile riutilizzare (rinominare) gli eventi esistenti o crearne di nuovi da utilizzare per le funzioni di Communities
+  * È possibile riutilizzare (rinominare) gli eventi esistenti o crearne di nuovi da utilizzare per le funzioni di Communities
 
 * [Gestione video](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it)
 
-   * Console di reporting video
+  * Console di reporting video
 
-      * Abilita `Video Core`
-      * Seleziona Salva
+    * Abilita `Video Core`
+    * Seleziona Salva
 
-   * Console di misurazione Core video
+  * Console di misurazione Core video
 
-      * Seleziona `Use Solution Variables`
-      * Seleziona Salva
+    * Seleziona `Use Solution Variables`
+    * Seleziona Salva
 
 Se utilizzi una **nuova suite di rapporti**, una nuova suite di rapporti può contenere solo 4 eVar e 6 variabili evento, mentre per le community sono necessarie 11 e 7 variabili evento.
 
@@ -159,6 +159,10 @@ Se non è abilitata, non viene mai creata un&#39;istanza del codice heartbeat vi
 
 ## Configurazione del servizio AEM Analytics Cloud {#aem-analytics-cloud-service-configuration}
 
+>[!CAUTION]
+>
+>L&#39;API [Adobe Analytics 1.4 ha raggiunto la fine del ciclo di vita](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Di conseguenza, le configurazioni di Adobe Analytics che utilizzano le credenziali utente (nome utente e password) non sono più supportate.
+
 Per creare un’integrazione Analytics, che integri Adobe Analytics con il sito della community AEM, utilizzando l’interfaccia utente standard nell’istanza di authoring:
 
 * Dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Servizi cloud]**
@@ -177,11 +181,13 @@ Nella finestra di dialogo Crea configurazione, i valori da immettere identifican
 
 * **Titolo**
 
-  (Obbligatorio) Titolo da visualizzare per la configurazione.Ad esempio, immetti *Analytics community*
+  (Obbligatorio) Titolo da visualizzare per la configurazione.
+  Ad esempio, immetti *Analytics community*
 
 * **Nome**
 
-  (Facoltativo) Se non viene specificato, per impostazione predefinita il nome corrisponde a un nome di nodo valido derivato dal titolo.Ad esempio, immettere *community*
+  (Facoltativo) Se non viene specificato, per impostazione predefinita il nome corrisponde a un nome di nodo valido derivato dal titolo.
+  Ad esempio, immettere *community*
 
 * **Modello**
 
@@ -189,7 +195,7 @@ Nella finestra di dialogo Crea configurazione, i valori da immettere identifican
 
 * Seleziona **Crea**
 
-   * Avvia la pagina di configurazione e apre la finestra di dialogo `Analytics Settings`
+  * Avvia la pagina di configurazione e apre la finestra di dialogo `Analytics Settings`
 
 ### Finestra di dialogo Impostazioni di Analytics {#analytics-settings-dialog}
 
@@ -233,10 +239,10 @@ Per salvare le impostazioni:
 
 * Seleziona **Connetti ad Analytics**
 
-   * In caso contrario,
+  * In caso contrario,
 
-      * Verificare che le voci non contengano spazi iniziali.
-      * Prova con un altro centro dati.
+    * Verificare che le voci non contengano spazi iniziali.
+    * Prova con un altro centro dati.
 
 * Selezionare **OK**.
 
@@ -253,11 +259,12 @@ Dopo aver configurato correttamente la connessione di base ad Adobe Analytics, �
 * **Titolo**
 
   (Obbligatorio) Titolo da visualizzare per il framework
-Ad esempio, immettere *Framework community*.
+  Ad esempio, immettere *Framework community*.
 
 * **Nome**
 
-  (Facoltativo) Se non viene specificato, per impostazione predefinita il nome corrisponde a un nome di nodo valido derivato dal titolo.Ad esempio, immettere *community*.
+  (Facoltativo) Se non viene specificato, per impostazione predefinita il nome corrisponde a un nome di nodo valido derivato dal titolo.
+  Ad esempio, immettere *community*.
 
 * *Modello*
 
@@ -316,8 +323,8 @@ Il servizio cloud Analytics e il framework sono stati completati. Le mappature v
 Per aggiungere il servizio Analytics Cloud durante la [creazione di un sito community](/help/communities/sites-console.md):
 
 * Nel passaggio 3, nella [scheda ANALYTICS](/help/communities/sites-console.md#analytics):
-   * Selezionare la casella di controllo **Abilita analisi**.
-   * Selezionare il framework dalla casella a discesa.
+  * Selezionare la casella di controllo **Abilita analisi**.
+  * Selezionare il framework dalla casella a discesa.
 
 * Se necessario, torna alla configurazione del framework Analytics per regolare le mappature delle variabili.
 
@@ -329,8 +336,8 @@ Per aggiungere il servizio Analytics Cloud a un [sito community esistente](/help
 * Selezionare l&#39;icona Modifica sito del sito community.
 * Selezionare SETTINGS.
 * Nella sezione Analytics:
-   * Selezionare la casella di controllo **Abilita analisi**.
-   * Scegliere il framework dalla casella a discesa.
+  * Selezionare la casella di controllo **Abilita analisi**.
+  * Scegliere il framework dalla casella a discesa.
 
 * Se necessario, torna alla configurazione del framework Analytics per regolare le mappature delle variabili.
 
@@ -634,18 +641,19 @@ L’argomento del forum è attualmente l’unico esempio di questa personalizzaz
 * Nel server di pubblicazione principale, accedere con privilegi amministrativi.
 * Passa a [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
-* Nel nodo `jcr:content` della directory principale della lingua (ad esempio, `/content/sites/engage/en/jcr:content`), passa al componente configurato per la generazione di rapporti di Analytics.Ad esempio **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+* Nel nodo `jcr:content` della directory principale della lingua (ad esempio, `/content/sites/engage/en/jcr:content`), passa al componente configurato per la generazione di rapporti di Analytics.
+Ad esempio **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Osserva i periodi di tempo creati:
 
-   * `last30Days`
-   * `last90Days`
-   * `thisYear`
+  * `last30Days`
+  * `last90Days`
+  * `thisYear`
 
 * Osserva il nodo `total`.
 
-   * La modifica della proprietà **`interval`** sovrascrive l&#39;intervallo di Importazione report.
-   * Il valore è in secondi ed è impostato su quattro ore (14400 secondi).
+  * La modifica della proprietà **`interval`** sovrascrive l&#39;intervallo di Importazione report.
+  * Il valore è in secondi ed è impostato su quattro ore (14400 secondi).
 
 ![component-report](assets/component-report.png)
 
