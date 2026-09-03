@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 37%
+source-wordcount: '2559'
+ht-degree: 36%
 
 ---
 
@@ -27,16 +27,16 @@ Le proprietà sono distribuite su più schede.
 #### Titolo e tag {#tile}
 
 * **Titolo** - Il titolo della pagina viene visualizzato in varie posizioni
-   * Ad esempio, l&#39;elenco di schede **Siti Web** e le visualizzazioni **Siti** per schede/elenchi.
-   * Questo campo è obbligatorio.
+  * Ad esempio, l&#39;elenco di schede **Siti Web** e le visualizzazioni **Siti** per schede/elenchi.
+  * Questo campo è obbligatorio.
 * **Tag** - Qui puoi aggiungere o rimuovere tag dalla pagina aggiornando l&#39;elenco nella casella di selezione.
-   * Dopo aver selezionato un tag, questo viene elencato sotto la casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
-   * È possibile immettere un nuovo tag digitandone il nome in una casella di selezione vuota.
-      * Il nuovo tag viene creato quando premi Invio.
-      * Il nuovo tag viene visualizzato con una piccola stella sulla destra che indica che si tratta di un nuovo tag.
-   * Con il menu a discesa, puoi selezionare tra i tag esistenti.
-   * Quando passi il mouse su uno dei tag nella casella di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere quel tag per quella pagina.
-   * Per ulteriori informazioni sui tag, vedere [Utilizzo dei tag.](/help/sites-authoring/tags.md)
+  * Dopo aver selezionato un tag, questo viene elencato sotto la casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
+  * È possibile immettere un nuovo tag digitandone il nome in una casella di selezione vuota.
+    * Il nuovo tag viene creato quando premi Invio.
+    * Il nuovo tag viene visualizzato con una piccola stella sulla destra che indica che si tratta di un nuovo tag.
+  * Con il menu a discesa, puoi selezionare tra i tag esistenti.
+  * Quando passi il mouse su uno dei tag nella casella di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere quel tag per quella pagina.
+  * Per ulteriori informazioni sui tag, vedere [Utilizzo dei tag.](/help/sites-authoring/tags.md)
 * **Nascondi in navigazione** - Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito risultante
 
 #### Branding {#branding}
@@ -44,17 +44,17 @@ Le proprietà sono distribuite su più schede.
 Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
 * **Override**: selezionalo per definire il marchio su questa pagina.
-   * Il valore viene ereditato da tutte le pagine secondarie a meno che non abbiano impostati anche i loro valori **Override**.
+  * Il valore viene ereditato da tutte le pagine secondarie a meno che non abbiano impostati anche i loro valori **Override**.
 * **Valore di override** - Testo del marchio da aggiungere al titolo della pagina
-   * Il valore viene aggiunto al titolo della pagina dopo un carattere barra verticale come `Cycling Tuscany | Always ready for the WKND`
+  * Il valore viene aggiunto al titolo della pagina dopo un carattere barra verticale come `Cycling Tuscany | Always ready for the WKND`
 
 #### Altri titoli e descrizioni {#more}
 
 * **Titolo pagina** - Titolo da utilizzare nella pagina
-   * Generalmente utilizzato dai componenti titolo
-   * Se vuoto, il **Titolo** è utilizzato.
+  * Generalmente utilizzato dai componenti titolo
+  * Se vuoto, il **Titolo** è utilizzato.
 * **Titolo navigazione** - È possibile specificare un titolo separato da utilizzare nella navigazione (ad esempio, se si desidera un titolo più conciso).
-   * Se vuoto, il **Titolo** è utilizzato.
+  * Se vuoto, il **Titolo** è utilizzato.
 * **Sottotitolo** - Sottotitolo da utilizzare nella pagina
 * **Descrizione** - Descrizione della pagina, il suo scopo o altri dettagli da aggiungere
 
@@ -64,20 +64,22 @@ L’ora di attivazione/disattivazione di una pagina è un modo comodo per nascon
 
 * **Ora di attivazione**: la data e l’ora in cui la pagina pubblicata viene resa visibile (renderizzata) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o tramite replica automatica preconfigurata.
 
-   * Se [pubblicato,](/help/sites-authoring/publishing-pages.md) questa pagina è già disponibile nell&#39;istanza di pubblicazione, ma è rimasta inattiva (nascosta) fino al rendering all&#39;ora specificata.
-   * Se non è pubblicata e [configurata per la replica automatica,](/help/sites-deploying/replication.md) la pagina viene pubblicata automaticamente e quindi sottoposta a rendering alla data e all&#39;ora specificate.
-   * Se non è pubblicata e non è configurata per la replica automatica, la pagina non viene pubblicata automaticamente, quindi viene visualizzato un errore 404 quando si tenta di accedere alla pagina.
+  * Se [pubblicato,](/help/sites-authoring/publishing-pages.md) questa pagina è già disponibile nell&#39;istanza di pubblicazione, ma è rimasta inattiva (nascosta) fino al rendering all&#39;ora specificata.
+  * Se non è pubblicata e [configurata per la replica automatica,](/help/sites-deploying/replication.md) la pagina viene pubblicata automaticamente e quindi sottoposta a rendering alla data e all&#39;ora specificate.
+  * Se non è pubblicata e non è configurata per la replica automatica, la pagina non viene pubblicata automaticamente, quindi viene visualizzato un errore 404 quando si tenta di accedere alla pagina.
 
 * **Ora di disattivazione**: simile e spesso utilizzata in combinazione con l’**Ora di attivazione**, definisce l’ora in cui la pagina pubblicata viene nascosta nell’ambiente di pubblicazione.
 
 Lascia questi campi (**Ora di attivazione** e **Ora di disattivazione**) vuoti per le pagine da pubblicare e disponibili immediatamente e disponibili nell&#39;ambiente di pubblicazione fino a quando non vengono disattivate (lo scenario normale).
+
+Quando sono configurati gli orari di attivazione/disattivazione, verranno visualizzate icone e informazioni aggiuntive relative agli orari di attivazione/disattivazione nelle visualizzazioni [elenco e schede della console Sites](/help/sites-authoring/basic-handling.md#views) e nella visualizzazione [timeline del pannello laterale della console.](/help/sites-authoring/basic-handling.md#timeline)
 
 >[!NOTE]
 >Se l’**Ora di attivazione** o l’**Ora di disattivazione** è nel passato e la replica automatica è configurata, l’azione pertinente verrà attivata immediatamente.
 
 >[!TIP]
 >
->I tempi di attivazione/disattivazione riguardano esclusivamente i contenuti già pubblicati (manualmente o tramite replica automatica). Per questo motivo, i flussi di lavoro di pubblicazione come quelli per l’approvazione del contenuto non vengono attivati da a orari di attivazione/disattivazione e da orari di attivazione/disattivazione non influiscono sullo stato di pubblicazione della pagina. Per questo motivo, i tempi di attivazione/disattivazione sono più appropriati per mostrare/nascondere temporaneamente il contenuto già approvato e pubblicato.
+>I tempi di attivazione/disattivazione riguardano esclusivamente i contenuti già pubblicati (manualmente o tramite replica automatica). Per questo motivo, i flussi di lavoro di pubblicazione come quelli per l’approvazione del contenuto non vengono attivati da a orari di attivazione/disattivazione e da orari di attivazione/disattivazione non influiscono sullo stato di pubblicazione della pagina. Pertanto, i tempi di attivazione/disattivazione sono più appropriati per mostrare/nascondere temporaneamente il contenuto già approvato e pubblicato.
 >
 >Se desideri pubblicare nuovi contenuti con tutti i flussi di lavoro associati o rimuovere completamente (annullare la pubblicazione) dal sito, [gestisci la pubblicazione.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
@@ -95,7 +97,7 @@ Ad esempio, se l&#39;URL personalizzato è impostato su `welcome` per la pagina 
 >* non supportano le espressioni regolari;
 >* non devono essere impostati su una pagina esistente.
 
-Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
+Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell&#39;accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
 
 * **Aggiungi** - Tocca o fai clic per aggiungere un URL personalizzato.
 * **Rimuovi** - Tocca o fai clic per rimuovere un URL personalizzato.
@@ -110,10 +112,10 @@ Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Ab
 * **Reindirizza**: indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente
 * **Progettazione** - Indica la [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
 * **Alias**: specifica un alias da utilizzare per la pagina
-   * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
-   * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
-   * Le pagine accessibili da alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-authoring/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
-   * Per ulteriori dettagli, consulta [Nomi di pagina localizzati in Best practice per la gestione di SEO e URL](/help/managing/seo-and-url-management.md#localized-page-names).
+  * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
+  * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
+  * Le pagine accessibili da alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-authoring/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
+  * Per ulteriori dettagli, consulta [Nomi di pagina localizzati in Best practice per la gestione di SEO e URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 #### Configurazione {#configuration}
 
@@ -147,9 +149,9 @@ Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Ab
 #### SEO {#seo}
 
 * **URL canonico** - Utilizzato per sovrascrivere l&#39;URL canonico della pagina
-   * Se lasciato vuoto, l’URL della pagina corrisponde al suo URL canonico.
-* **Tag robot** - Utilizzare il menu a discesa per selezionare i tag robot per controllare il comportamento dei crawler dei motori di ricerca
-   * Alcune opzioni sono in conflitto tra loro, nel qual caso l’opzione più permissiva ha la precedenza.
+  * Se lasciato vuoto, l’URL della pagina corrisponde al suo URL canonico.
+* **Tag robot**: utilizza il menu a discesa per selezionare i tag robot per controllare il comportamento dei crawler di motori di ricerca
+  * Alcune opzioni sono in conflitto tra loro, nel qual caso l’opzione più permissiva ha la precedenza.
 * **Genera mappa del sito** - Se selezionata, viene generato un `sitemap.xml` per questa pagina e i relativi discendenti.
 
 ### Immagini {#images}
@@ -162,7 +164,7 @@ Questa sezione viene utilizzata per selezionare e configurare l’immagine da vi
 * **Testo alternativo** - Testo utilizzato per rappresentare il significato e/o la funzione dell&#39;immagine, comunemente utilizzato dagli assistenti vocali
 * **Eredita - Valore tratto dalla risorsa DAM** - Se questa opzione è selezionata, nel testo alternativo viene inserito il valore dei metadati `dc:description` in DAM.
 
-#### Miniatura  {#thumbnail}
+#### Miniatura {#thumbnail}
 
 Questa sezione viene utilizzata per selezionare e configurare la miniatura dell’immagine per la pagina. Viene utilizzata nei componenti che fanno riferimento alla pagina; ad esempio teaser, elenchi di pagine e così via.
 
@@ -175,14 +177,14 @@ Questa sezione viene utilizzata per selezionare e configurare la miniatura dell�
 
 * **Configurazioni Cloud Service** - Definisce quale configurazione viene utilizzata per i servizi cloud per la pagina
 * **Ereditato da** - Per le Live Copy e le copie per lingua, le configurazioni cloud vengono ereditate dalla blueprint per impostazione predefinita.
-   * Deseleziona per ignorare l’ereditarietà
+  * Deseleziona per ignorare l’ereditarietà
 
 ### Personalizzazione {#personalization}
 
 #### Configurazioni ContextHub {#contexthub}
 
 * **Ereditato da** - Per impostazione predefinita, le configurazioni ContextHub vengono ereditate dalla pagina padre.
-   * Deseleziona questa opzione per ignorare l’ereditarietà.
+  * Deseleziona questa opzione per ignorare l’ereditarietà.
 * **Percorso ContextHub** - Seleziona la [configurazione ContextHub](/help/sites-developing/ch-configuring.md)
 * **Percorso segmenti** - Seleziona il [Percorso segmenti](/help/sites-administering/segmentation.md).
 
@@ -193,7 +195,7 @@ Seleziona un marchio [per specificare un ambito per il targeting.](/help/sites-a
 >[!NOTE]
 >Questa opzione richiede che l’account utente appartenga al gruppo `Target Adminstrators`.
 
-### Autorizzazioni  {#permissions}
+### Autorizzazioni {#permissions}
 
 Utilizzare la scheda **Autorizzazioni** per definire quali utenti, gruppi o [gruppi di utenti chiusi (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=it) possono accedere alla pagina e/o modificarla.
 
@@ -221,7 +223,7 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
 * **Live Copy correnti** - Elenco di pagine basate sulla pagina blueprint selezionata (ovvero Live Copy di)
 * **Configurazione rollout** - Definisce la configurazione di rollout per la pagina
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 Questa scheda è visibile solo per le pagine configurate come Live Copy. Come per [blueprint,](#blueprint) Live Copy fanno parte di [Gestione multisito.](/help/sites-administering/msm.md)
 
@@ -251,16 +253,16 @@ Puoi definire le proprietà di pagina:
 
 * Dalla console **Sites**:
 
-   * [Creazione di una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un sottoinsieme delle proprietà)
+  * [Creazione di una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un sottoinsieme delle proprietà)
 
-   * Tocca o fai clic su **Proprietà**
+  * Tocca o fai clic su **Proprietà**
 
-      * Per una singola pagina
-      * Per più pagine (solo un sottoinsieme delle proprietà è disponibile per la modifica in blocco)
+    * Per una singola pagina
+    * Per più pagine (solo un sottoinsieme delle proprietà è disponibile per la modifica in blocco)
 
 * Dall’editor di pagine:
 
-   * Tramite **Informazioni pagina** (quindi **Apri proprietà**)
+  * Tramite **Informazioni pagina** (quindi **Apri proprietà**)
 
 ### Dalla console Sites - Pagina singola {#from-the-sites-console-single-page}
 
@@ -322,7 +324,7 @@ Puoi eseguire la modifica in serie solo su pagine che:
 * condividono lo stesso tipo di risorsa;
 * non fanno parte di una Live Copy.
 
-   * Se una delle pagine fa parte di una Live Copy, all’apertura delle proprietà viene visualizzato un messaggio di avviso.
+  * Se una delle pagine fa parte di una Live Copy, all’apertura delle proprietà viene visualizzato un messaggio di avviso.
 
 Dopo aver inserito Modifica in serie, potete effettuare le seguenti operazioni:
 
@@ -330,23 +332,23 @@ Dopo aver inserito Modifica in serie, potete effettuare le seguenti operazioni:
 
   Quando si visualizzano le proprietà di pagina per più pagine, è possibile visualizzare quanto segue:
 
-   * Un elenco delle pagine interessate
+  * Un elenco delle pagine interessate
 
-      * Se necessario, puoi selezionare/deselezionare
+    * Se necessario, puoi selezionare/deselezionare
 
-   * Schede
+  * Schede
 
-      * Come per la visualizzazione delle proprietà di una singola pagina, le proprietà sono ordinate in schede.
+    * Come per la visualizzazione delle proprietà di una singola pagina, le proprietà sono ordinate in schede.
 
-   * Un sottoinsieme di proprietà
+  * Un sottoinsieme di proprietà
 
-      * Puoi vedere le proprietà che sono disponibili su tutte le pagine selezionate e che sono state esplicitamente definite come disponibili per la modifica in serie.
-      * Se la tua selezione include una sola pagina, tutte le proprietà sono visibili.
+    * Puoi vedere le proprietà che sono disponibili su tutte le pagine selezionate e che sono state esplicitamente definite come disponibili per la modifica in serie.
+    * Se la tua selezione include una sola pagina, tutte le proprietà sono visibili.
 
-   * Proprietà condivise con un valore comune
+  * Proprietà condivise con un valore comune
 
-      * Nella modalità Visualizza vengono mostrate solo le proprietà con un valore comune.
-      * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo se *tutti* sono comuni. Se solo alcune sono comuni, vengono visualizzate solo durante la modifica.
+    * Nella modalità Visualizza vengono mostrate solo le proprietà con un valore comune.
+    * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo se *tutti* sono comuni. Se solo alcune sono comuni, vengono visualizzate solo durante la modifica.
 
   Se non esiste nessuna proprietà con un valore comune, viene visualizzato un messaggio.
 
@@ -354,12 +356,12 @@ Dopo aver inserito Modifica in serie, potete effettuare le seguenti operazioni:
 
   Quando si modificano le proprietà di pagina per più pagine:
 
-   * Puoi aggiornare i valori nei campi disponibili.
+  * Puoi aggiornare i valori nei campi disponibili.
 
-      * I nuovi valori vengono applicati a tutte le pagine selezionate quando selezioni **Fine**.
-      * Quando il campo ha più valori (ad esempio Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
+    * I nuovi valori vengono applicati a tutte le pagine selezionate quando selezioni **Fine**.
+    * Quando il campo ha più valori (ad esempio Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
 
-   * I campi in comune, ma con valori diversi nelle varie pagine, sono indicati con un valore speciale, ad esempio il testo `<Mixed Entries>`.
+  * I campi in comune, ma con valori diversi nelle varie pagine, sono indicati con un valore speciale, ad esempio il testo `<Mixed Entries>`.
 
 >[!NOTE]
 >

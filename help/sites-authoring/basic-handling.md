@@ -10,10 +10,10 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 8cb06cb2240f4ba460493dda1615cb64006d4646
+source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 40%
+source-wordcount: '3122'
+ht-degree: 38%
 
 ---
 
@@ -122,7 +122,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=it">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> ti consente di gestire tutti gli schermi rivolti al cliente, di qualsiasi dimensione e in qualsiasi luogo.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
-* [Soluzioni](https://business.adobe.com/it/)
+* [Soluzioni](https://business.adobe.com/)
 
   ![Soluzioni](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -253,11 +253,11 @@ Sono disponibili diverse risorse di Aiuto:
 
   Dalla console **Strumenti**, puoi anche accedere alle **Risorse** esterne:
 
-   * **Documentazione**
-Consulta la documentazione su Web Experience Management.
+  * **Documentazione**
+    Consulta la documentazione su Web Experience Management.
 
-   * **Risorse per sviluppatori**
-Risorse per sviluppatori e download
+  * **Risorse per sviluppatori**
+    Risorse per sviluppatori e download
 
   >[!NOTE]
   >
@@ -408,29 +408,30 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
 * Per spostarti verso l’alto o il basso nella struttura, tocca o fai clic sul nome della risorsa o sulla freccia a destra del nome della risorsa.
 
-   * Il nome e la freccia della risorsa vengono evidenziati quando tocca o fai clic su di essi.
+  * Il nome e la freccia della risorsa vengono evidenziati quando tocca o fai clic su di essi.
 
-     ![Vista a colonne](assets/bh-17.png)
+    ![Vista a colonne](assets/bh-17.png)
 
-   * Gli elementi secondari della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
-   * Se fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
+  * Gli elementi secondari della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
+  * Se fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
 
 * Toccando o facendo clic sulla miniatura viene selezionata la risorsa.
 
-   * Se questa opzione è selezionata, sulla miniatura viene visualizzato un segno di spunta e viene evidenziato anche il nome della risorsa.
-   * I dettagli della risorsa selezionata vengono visualizzati nella colonna finale.
-   * La barra degli strumenti delle azioni diventa disponibile.
+  * Se questa opzione è selezionata, sulla miniatura viene visualizzato un segno di spunta e viene evidenziato anche il nome della risorsa.
+  * I dettagli della risorsa selezionata vengono visualizzati nella colonna finale.
+  * La barra degli strumenti delle azioni diventa disponibile.
 
-     ![Vista a colonne](assets/bh-18.png)
+    ![Vista a colonne](assets/bh-18.png)
 
   Quando una pagina viene selezionata nella vista a colonne, la pagina selezionata viene visualizzata nella colonna finale insieme ai dettagli seguenti:
 
-   * Titolo pagina
-   * Nome pagina (parte dell’URL della pagina)
-   * Modello su cui si basa la pagina
-   * Dettagli di modifica
-   * Lingua della pagina
-   * Dettagli pubblicazione
+  * Titolo pagina
+  * Nome pagina (parte dell’URL della pagina)
+  * Modello su cui si basa la pagina
+  * Dettagli di modifica
+  * Lingua della pagina
+  * Dettagli pubblicazione
+  * [Ora di attivazione/disattivazione pagina](/help/sites-authoring/editing-page-properties.md#on-off-time) (se impostata)
 
 ### Vista a schede {#card-view}
 
@@ -438,13 +439,13 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
 * La vista a schede mostra le schede informative per ogni elemento al livello corrente, che forniscono informazioni quali:
 
-   * Una rappresentazione visiva del contenuto della pagina.
-   * Titolo della pagina.
-   * Date importanti (ad esempio ultima modifica, ultima pubblicazione).
-   * Se la pagina è bloccata, nascosta o fa parte di una Live Copy.
-   * Se appropriato, quando devi eseguire un’azione nell’ambito di un flusso di lavoro.
+  * Una rappresentazione visiva del contenuto della pagina.
+  * Titolo della pagina.
+  * Date importanti (ad esempio ultima modifica, ultima pubblicazione).
+  * Se la pagina è bloccata, nascosta o fa parte di una Live Copy.
+  * Se appropriato, quando devi eseguire un’azione nell’ambito di un flusso di lavoro.
 
-      * Alle voci della [Casella in entrata](/help/sites-authoring/inbox.md) possono essere correlati dei marcatori che indicano le azioni necessarie.
+    * Alle voci della [Casella in entrata](/help/sites-authoring/inbox.md) possono essere correlati dei marcatori che indicano le azioni necessarie.
 
 * In questa vista sono disponibili anche [azioni rapide](#quick-actions), per effettuare selezioni ed eseguire le operazioni più comuni, come la modifica.
 
@@ -463,26 +464,31 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
   ![Visualizzazione elenco - Seleziona tutto](assets/bh-20.png)
 
-   * Quando tutti gli elementi dell’elenco sono selezionati, viene selezionata la casella di controllo.
+  * Quando tutti gli elementi dell’elenco sono selezionati, viene selezionata la casella di controllo.
 
-      * Per deselezionare tutti gli elementi, fare clic sulla casella di controllo.
+    * Per deselezionare tutti gli elementi, fare clic sulla casella di controllo.
 
-   * Se sono selezionati solo alcuni elementi, viene visualizzato un segno meno.
+  * Se sono selezionati solo alcuni elementi, viene visualizzato un segno meno.
 
-      * Per selezionare tutto, fare clic sulla casella di controllo.
-      * Per deselezionare tutti gli elementi, fare di nuovo clic sulla casella di controllo.
+    * Per selezionare tutto, fare clic sulla casella di controllo.
+    * Per deselezionare tutti gli elementi, fare di nuovo clic sulla casella di controllo.
 
 * Selezionare le colonne da visualizzare utilizzando l&#39;opzione **Visualizza impostazioni** sotto il pulsante Viste. È possibile visualizzare le colonne seguenti:
 
-   * **Nome**: nome della pagina, utile in un ambiente di authoring multilingue poiché fa parte dell’URL della pagina e non viene modificato indipendentemente dalla lingua
-   * **Modificato**: data dell’ultima modifica e dell’utente che l’ha eseguita
-   * **Pubblicato**: stato della pubblicazione
-   * **Modello**: modello su cui si basa la pagina
-   * **Flusso di lavoro**: flusso di lavoro attualmente applicato alla pagina. Ulteriori informazioni sono disponibili quando passate il mouse o aprite la timeline.
+  * **Nome**: nome della pagina, utile in un ambiente di authoring multilingue poiché fa parte dell’URL della pagina e non viene modificato indipendentemente dalla lingua
+  * **Modificato**: data dell’ultima modifica e dell’utente che l’ha eseguita
+    * Se la pagina è stata aggiornata dall’ultima pubblicazione, la voce della colonna verrà contrassegnata con un’icona di avviso.
+    * ![Modificato dall&#39;ultima pubblicazione](assets/modified.png)
+  * **Pubblicato**: stato della pubblicazione
+    * La voce della colonna verrà contrassegnata con un&#39;icona dell&#39;orologio se per la pagina sono impostati [orari di attivazione/disattivazione](/help/sites-authoring/editing-page-properties.md#on-time).
+    * Passa il puntatore del mouse sull’icona per visualizzare i dettagli.
+    * ![Ora di disattivazione impostata](assets/on-off-time.png)
+  * **Modello**: modello su cui si basa la pagina
+  * **Flusso di lavoro**: flusso di lavoro attualmente applicato alla pagina. Ulteriori informazioni sono disponibili quando passate il mouse o aprite la timeline.
 
-   * **Dati analitici della pagina**
-   * **Visitatori univoci**
-   * **Tempo sulla pagina**
+  * **Dati analitici della pagina**
+  * **Visitatori univoci**
+  * **Tempo sulla pagina**
 
   ![Visualizza impostazioni - Configura colonne](assets/bh-21.png)
 
@@ -542,25 +548,27 @@ La colonna della timeline consente di:
 
 * [Visualizza vari eventi](#timelineviewevents) relativi a un elemento selezionato.
 
-   * I tipi di evento possono essere selezionati dall’elenco a discesa:
+  * I tipi di evento possono essere selezionati dall’elenco a discesa:
 
-      * [Commenti](#timelineaddingandviewingcomments)
-      * Annotazioni
-      * Attività
-      * [Lanci](/help/sites-authoring/launches.md)
-      * [Versioni](/help/sites-authoring/working-with-page-versions.md)
-      * [Flussi di lavoro](/help/sites-authoring/workflows-applying.md)
+    * [Commenti](#timelineaddingandviewingcomments)
+    * Annotazioni
+    * Attività comprese le modifiche e la pubblicazione
+      * Se per la pagina sono impostati [orari di attivazione/disattivazione](/help/sites-authoring/editing-page-properties.md#on-off-time) e l&#39;ora corrente non rientra nell&#39;intervallo di tempo di attivazione/disattivazione, è possibile che venga visualizzata un&#39;attività Pagina non valida.
+      * Questo indica solo che la pagina non rientra nella finestra di validità, non necessariamente che la pagina non sia stata pubblicata.
+    * [Lanci](/help/sites-authoring/launches.md)
+    * [Versioni](/help/sites-authoring/working-with-page-versions.md)
+    * [Flussi di lavoro](/help/sites-authoring/workflows-applying.md)
 
-         * ad eccezione di [flussi di lavoro transitori](/help/sites-developing/workflows.md#transient-workflows) perché per questi non vengono salvate informazioni sulla cronologia
+      * ad eccezione di [flussi di lavoro transitori](/help/sites-developing/workflows.md#transient-workflows) perché per questi non vengono salvate informazioni sulla cronologia
 
-      * e Mostra tutto
+    * e Mostra tutto
 
 * [Aggiungi/visualizza commenti](#timelineaddingandviewingcomments) sull&#39;elemento selezionato. La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Se digiti un commento e premi Invio, il commento verrà registrato. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
 
 * Alcune console offrono funzionalità aggiuntive. Ad esempio, nella console Sites puoi effettuare le seguenti operazioni:
 
-   * [Salva una versione](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
-   * [Avvia un flusso di lavoro](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+  * [Salva una versione](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
+  * [Avvia un flusso di lavoro](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
 Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**.
 
@@ -576,8 +584,8 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 * [Copie per lingua](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Riferimenti ai contenuti:
 
-   * Collegamenti diretti da altre pagine alla pagina selezionata
-   * Contenuto preso in prestito da, prestato a, o entrambi, nella pagina selezionata dal componente Riferimento
+  * Collegamenti diretti da altre pagine alla pagina selezionata
+  * Contenuto preso in prestito da, prestato a, o entrambi, nella pagina selezionata dal componente Riferimento
 
 ![bh-28](assets/bh-28.png)
 
