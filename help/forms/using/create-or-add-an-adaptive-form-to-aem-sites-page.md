@@ -6,9 +6,9 @@ feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f67bc6dce0f923294fba7d543eb3b170f992182f
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2983'
 ht-degree: 4%
 
 ---
@@ -88,6 +88,10 @@ Per abilitare la funzionalità completa del componente Contenitore Forms adattiv
        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
        </sly> 
    ```
+
+   >[!NOTE]
+   >
+   >`core.forms.components.runtime.all` include tutti i componenti predefiniti. Creare invece una libreria client personalizzata che includa solo i componenti che fanno parte del criterio di progettazione e che devono essere inclusi nel modulo, quindi aggiungerla alla pagina.
 
 1. Aprire il file `/apps/[your-sites-project]/components/page/customfooterlibs.html` e aggiungere il codice seguente al file:
 
