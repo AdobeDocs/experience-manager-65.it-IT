@@ -228,7 +228,7 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 #### Lanci {#launches}
 
 * Nuovo flusso di lavoro di revisione e approvazione per i lanci e possibilità di promuovere solo le pagine di lancio approvate
-* È stata aggiunta l&#39;opzione [ nell&#39;interfaccia utente per scegliere di eliminare il lancio subito dopo il passaggio di promozione](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
+* È stata aggiunta l&#39;opzione [&#x200B; nell&#39;interfaccia utente per scegliere di eliminare il lancio subito dopo il passaggio di promozione](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
 #### Targeting e simulazione dei contenuti {#content-targeting-simulation}
 
@@ -308,7 +308,7 @@ Gli amministratori del sito possono creare un gruppo a qualsiasi livello gerarch
 
 Supporto di **SCORM 2017.1**
 
-La funzionalità di abilitazione di AEM 6.5 Communities supporta il motore SCORM (Shared Content Object Reference Model) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).[
+La funzionalità di abilitazione di AEM 6.5 Communities supporta il motore SCORM (Shared Content Object Reference Model) 2017.1[&#128279;](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Supporto della navigazione tramite tastiera nei componenti di attivazione
 * I componenti di abilitazione (ad esempio, Riproduzione di cataloghi e corsi, Assegnazioni, Libreria file) in AEM Communities supportano la navigazione da tastiera per migliorare l’accessibilità.
