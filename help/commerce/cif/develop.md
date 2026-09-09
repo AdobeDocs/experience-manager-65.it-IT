@@ -1,6 +1,6 @@
 ---
 title: Sviluppare AEM Commerce
-description: Scopri come generare un progetto AEM abilitato per il commercio utilizzando l’archetipo di progetto AEM. Scopri come generare e distribuire il progetto in un ambiente di sviluppo locale.
+description: Scopri come generare un progetto AEM abilitato per il commerce utilizzando l’archetipo di progetto AEM. Scopri come generare e distribuire il progetto in un ambiente di sviluppo locale.
 topics: Commerce, Development
 feature: Commerce Integration Framework
 doc-type: tutorial
@@ -11,29 +11,29 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 25%
+source-wordcount: '941'
+ht-degree: 33%
 
 ---
 
 # Sviluppo di AEM Commerce {#develop}
 
-Lo sviluppo di progetti Commerce dell&#39;AEM basati su Commerce integration framework (CIF) per l&#39;AEM segue le stesse regole e migliori pratiche di altri progetti AEM. Rivedi prima questi:
+Lo sviluppo di progetti AEM Commerce basati su Commerce integration framework (CIF) per AEM segue le stesse regole e best practice di altri progetti AEM. Rivedi prima questi:
 
 - [Guida utente allo sviluppo in AEM 6.5](/help/sites-developing/getting-started.md)
-- [Concetti di base dell’AEM](/help/sites-developing/the-basics.md)
-- [Sviluppo AEM: linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md)
-- [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)
+- [Concetti di base di AEM](/help/sites-developing/the-basics.md)
+- [Sviluppo AEM - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md)
+- [Creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## Sviluppo locale per AEM Commerce {#local}
 
-Si raccomanda l’utilizzo di un ambiente di sviluppo locale per i progetti CIF.
+Si consiglia di utilizzare un ambiente di sviluppo locale con progetti CIF.
 
 >[!NOTE]
 >
->Le istruzioni seguenti sono utili per creare un ambiente locale per lo sviluppo di AEM per AEM Commerce utilizzando CIF (con particolare attenzione per AEM 6.5). Se utilizzi AEM as a Cloud Service, consulta la documentazione di [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=it).
+>Le istruzioni seguenti sono utili per configurare un ambiente di sviluppo AEM locale per AEM Commerce utilizzando CIF (con particolare attenzione per AEM 6.5). Se utilizzi AEM as a Cloud Service, consulta la documentazione di [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=it).
 
-Il componente aggiuntivo AEM Commerce per AEM 6.5, alias. Il componente aggiuntivo CIF è disponibile anche per lo sviluppo locale ed è fornito come pacchetto AEM. Può essere scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) come feature pack.
+Il componente aggiuntivo AEM Commerce per AEM 6.5, alias. Il componente aggiuntivo CIF è disponibile anche per lo sviluppo locale e viene fornito come pacchetto AEM. Può essere scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) come feature pack.
 
 ### Software richiesto
 
@@ -49,7 +49,7 @@ Il componente aggiuntivo AEM Commerce per AEM 6.5, alias. Il componente aggiunti
 
 ### Accesso al componente aggiuntivo CIF
 
-Il componente aggiuntivo CIF può essere scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html), cercare &#39;componente aggiuntivo Commerce AEM&#39;.
+Il componente aggiuntivo CIF può essere scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html), cercare &#39;componente aggiuntivo AEM Commerce&#39;.
 
 >[!TIP]
 >
@@ -57,9 +57,9 @@ Il componente aggiuntivo CIF può essere scaricato dal [portale di distribuzione
 
 ### Configurazione locale
 
-Per lo sviluppo locale di progetti CIF utilizzando l’AEM e il componente aggiuntivo CIF, procedere come segue:
+Per lo sviluppo di progetti CIF locali utilizzando i componenti aggiuntivi AEM e CIF, procedere come segue:
 
-1. Scarica la versione AEM 6.5 e installa il Service Pack AEM 6.5. È richiesto AEM 6.5 Service Pack 7, tuttavia l’Adobe consiglia di installare l’ultimo service pack disponibile.
+1. Scarica AEM 6.5 e installa AEM 6.5 Service Pack. È richiesto AEM 6.5 Service Pack 7, tuttavia Adobe consiglia di installare l’ultimo service pack disponibile.
 
 1. Decomprimi il file AEM.jar per creare la cartella `crx-quickstart` ed esegui:
 
@@ -73,15 +73,15 @@ Per lo sviluppo locale di progetti CIF utilizzando l’AEM e il componente aggiu
 
 >[!TIP]
 >
->In alternativa, il pacchetto del componente aggiuntivo CIF può essere installato tramite Gestione pacchetti.
+>In alternativa, il pacchetto del componente aggiuntivo CIF può essere installato anche tramite Gestione pacchetti.
 
-1. Avviare l’avvio rapido dell’AEM
+1. Avvia quickstart di AEM
 
 Verifica la configurazione tramite la console OSGI:`http://localhost:4502/system/console/osgi-installer`. L’elenco deve includere i bundle relativi al componente aggiuntivo CIF, il pacchetto di contenuti e le configurazioni OSGI. Assicurati che tutti i bundle siano avviati.
 
 ## Configurazione del progetto {#project}
 
-Esistono due modi per avviare il progetto AEM Commerce utilizzando l’CIF.
+Esistono due modi per avviare il progetto AEM Commerce utilizzando CIF.
 
 ### Usare AEM Project Archetype
 
@@ -152,13 +152,13 @@ Per iniziare a utilizzare Venia Reference Store, è sufficiente clonare l&#39;ar
 
 ### Collegare AEM al sistema Commerce
 
-Per collegare il progetto al sistema commerciale, l’AEM deve essere configurato con l’endpoint GraphQL del sistema commerciale.
+Per collegare il progetto al sistema commerce, AEM deve essere configurato con l’endpoint GraphQL del sistema commerce.
 
-Entrambi, un progetto generato da [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) o [Archivio riferimento Venia AEM](https://github.com/adobe/aem-cif-guides-venia), include già una [configurazione predefinita](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) che deve essere modificata.
+Entrambi, un progetto generato da [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) o [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia), include già una [configurazione predefinita](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) che deve essere modificata.
 
 Sostituire il valore di `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` con l&#39;endpoint GraphQL del sistema commerce utilizzato dal progetto.
 
-Il componente aggiuntivo Commerce AEM e i componenti core CIF si connettono all’endpoint GraphQL di commerce tramite il server AEM e direttamente tramite il browser. Per impostazione predefinita, i componenti core CIF lato client e gli strumenti di creazione del componente aggiuntivo CIF si connettono a `/api/graphql`. Se necessario, questo può essere regolato tramite la configurazione del Cloud Service CIF (vedi sotto).
+Il componente aggiuntivo AEM Commerce e i componenti core CIF si connettono all’endpoint commerce GraphQL tramite il server AEM e direttamente tramite il browser. Per impostazione predefinita, i componenti core CIF lato client e gli strumenti di creazione dei componenti aggiuntivi CIF si connettono a `/api/graphql`. Se necessario, questo può essere regolato tramite la configurazione di CIF Cloud Service (vedi sotto).
 
 Il componente aggiuntivo CIF fornisce un servlet proxy GraphQL in `/api/graphql`. Se non prevedi di utilizzare un Dispatcher AEM locale, è consigliabile configurare anche il servlet proxy di GraphQL.
 
@@ -166,5 +166,5 @@ Passare a http://localhost:4502/system/console/configMgr e creare una configuraz
 
 ## Risorse aggiuntive
 
-- [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
+- [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)

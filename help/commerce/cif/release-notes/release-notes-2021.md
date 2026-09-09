@@ -127,9 +127,9 @@ Esaminare i requisiti minimi di sistema nella tabella seguente per la versione d
 ### Novità {#what-is-new-july}
 
 * Componenti core CIF v2
-   * Configurazioni semplificate e migliorate per URL PDP/PLP e SEO
-   * Indicatore visivo per i dati di prodotto in staging in modalità di authoring per una migliore visibilità delle modifiche imminenti
-   * Nuovo componente sitemap per contenuti e pagine commerce
+  * Configurazioni semplificate e migliorate per URL PDP/PLP e SEO
+  * Indicatore visivo per i dati di prodotto in staging in modalità di authoring per una migliore visibilità delle modifiche imminenti
+  * Nuovo componente sitemap per contenuti e pagine commerce
 
 * Supporto per [consigli sui prodotti Adobe Commerce AI, basati su Adobe AI](https://business.adobe.com/ai/adobe-genai.html) in AEM Storefront con consigli predefiniti o creati al volo
 
