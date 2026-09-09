@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '891'
 ht-degree: 88%
 
 ---
@@ -35,7 +35,7 @@ I brand possono integrare Experience Manager con Adobe Commerce, parte di Adobe 
 Poiché questi progetti devono affrontare la complessità dell’integrazione di una soluzione per l’e-commerce. Una soluzione commerciale può essere qualsiasi cosa, da una soluzione commerciale come Adobe Commerce a un set di servizi di e-commerce personalizzati. L’integrazione dipende fortemente dai casi d’uso e dall’ecosistema. Di solito riguarda strumenti vari e assume caratteristiche diverse:
 
 * Integrazione di un ecosistema complesso e dinamico (ad esempio cataloghi di prodotti)
-* Le aziende devono gestire i contenuti dei prodotti con il proprio ciclo di vita in modo efficiente e omnicanale
+* Esigenza di gestire i contenuti dei prodotti con il proprio ciclo di vita in modo efficiente e omnicanale
 * Costruire percorsi di shopping complessi e personalizzati per utenti diversi
 * Possibilità di adattare e innovare rapidamente sul back-end e sul front-end
 * Esecuzione di un’infrastruttura E2E scalabile e stabile realizzata per prestazioni di picco (vendita Flash, Black Friday, ecc.). Ciò include la ricerca unificata e la gestione della cache.
@@ -75,8 +75,8 @@ Collega l’ecosistema (ad esempio, la soluzione per l’e-commerce) con Experie
 CIF supporta la clientela con modelli di integrazione standardizzati basati sulle best practice. Questo aiuta la clientela ad avere successo oggi ed è flessibile per crescere con la clientela e adattarsi alle esigenze future:
 
 * Elimina i problemi tipici relativi alle integrazioni dei cataloghi di prodotti che possono verificarsi. Esempi:
-   * Problemi di prestazioni con volume o complessità del catalogo maggiori
-   * Nessun accesso ai dati in fase di sviluppo
-   * Necessità di dati ed esperienze sui prodotti in tempo reale
+  * Problemi di prestazioni con volume o complessità del catalogo maggiori
+  * Nessun accesso ai dati in fase di sviluppo
+  * Necessità di dati ed esperienze sui prodotti in tempo reale
 * Una crescente maturità digitale rende necessaria la gestione dell’esperienza. CIF offre funzionalità di gestione dell’esperienza dei prodotti che possono essere incorporate in modo incrementale senza ulteriore sforzo IT.
 * Pronto per omnicanale: CIF supporta una varietà di tecnologie per punti di contatto (lato server, ibrido, lato client) con modelli, acceleratori e componenti core.
