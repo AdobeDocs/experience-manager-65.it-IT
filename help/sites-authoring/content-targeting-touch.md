@@ -14,9 +14,7 @@ source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 71%
-
 ---
-
 # Creazione di contenuti di destinazione utilizzando la modalità di targeting{#authoring-targeted-content-using-targeting-mode}
 
 Con la modalità di targeting è possibile creare contenuti mirati per AEM. La modalità di targeting e il componente Target forniscono gli strumenti per la creazione di contenuti per esperienze:
