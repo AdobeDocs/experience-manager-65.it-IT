@@ -8,16 +8,15 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: ebb61f2c5056a780e829e64031f8eba69a8ae25b
+exl-id: 31b52a82-5062-403e-bba7-e6a7e32ee961
+source-git-commit: 913e249ba52f1ee262ed78167ce3b2a857e86213
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 1%
-
+source-wordcount: '334'
+ht-degree: 11%
 ---
-
 # Come aprire PDF forms basato su XFA su Firefox e Chrome
 
-## Problema  
+## Problema
 
 Il visualizzatore PDF incorporato introdotto con Mozilla Firefox e Google Chrome non supporta PDF forms basato su XFA. Pertanto, i PDF forms basati su XFA non si aprono nelle versioni successive di Firefox e Chrome.
 
@@ -39,7 +38,7 @@ Per utilizzare PDF forms basato su XFA su Firefox e Chrome, esegui i seguenti pa
 
 1. Per il tipo di contenuto PDF (Portable Document Format) nel risultato della ricerca, selezionare **Usa Adobe Acrobat (in Firefox)** dall&#39;elenco a discesa Azione.
    ![use-adobe-acrobat](/help/forms/using/assets/use-adobe-acrobat.png)
-1. Fare clic su OK.
+1. Fai clic su OK.
 
 1. Riavvia Firefox.
 
@@ -48,12 +47,12 @@ Per utilizzare PDF forms basato su XFA su Firefox e Chrome, esegui i seguenti pa
 1. In Chrome, vai su chrome://plugins/.
 
 1. Fai clic su Disattiva in Visualizzatore PDF di Chrome, quindi su Abilita in Plug-in di Adobe PDF.
-   ![chrome-pdf-viewer](/help/forms/using/assets/chrome-image.png)
-Per ulteriori informazioni, consulta la documentazione del [plug-in Adobe PDF](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) di Google.
+   ![visualizzatore-chrome-pdf](/help/forms/using/assets/chrome-image.png)
+   Per ulteriori informazioni, consulta la documentazione del [plug-in di Adobe PDF](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) in Google.
 
 >[!NOTE]
 > 
 > LiveCycle ES4 fornisce il supporto per il rendering di moduli basati su XFA in HTML5 in modo che i moduli possano essere aperti in browser con supporto per HTML5, inclusi quelli in esecuzione su dispositivi mobili come iPad. La rappresentazione HTML5 dei moduli mantiene il layout della struttura del modulo e supporta la maggior parte delle logiche del modulo (come JavaScript, calcolo dei moduli e convalide dei moduli) incorporate nel modello di modulo XFA. In questo modo, gli investimenti tecnologici nei moduli XFA vengono facilmente trasferiti su dispositivi in cui non è possibile eseguire il plug-in Adobe Reader.
->Per ulteriori informazioni, consulta la [documentazione del prodotto LiveCycle](https://business.adobe.com/it/products/experience-manager/forms/aem-forms.html).
+>Per ulteriori informazioni, consulta la [documentazione del prodotto LiveCycle](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
 
-[Note legali](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [Informativa sulla privacy online](https://www.adobe.com/it/privacy.html)
+[Note legali](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    | [Informativa sulla privacy online](https://www.adobe.com/it/privacy.html)
