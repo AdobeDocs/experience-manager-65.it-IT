@@ -2,17 +2,15 @@
 title: Distribuzione EAR non riuscita sul server WebLogic JEE
 seo-title: EAR Deployment failing on JEE Weblogic Server
 description: Passaggi per risolvere un errore di distribuzione EAR nel server JEE WebLogic
-source-git-commit: 05712cfcef1d9c37b7cd015133abaf6df0e351d2
+exl-id: 109d9182-5e3f-477e-9417-abc83d5ea3bc
+source-git-commit: 04cdc51ea2059daed6573987052feb893bd5f634
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 7%
-
+source-wordcount: '98'
+ht-degree: 14%
 ---
-
-
 # Distribuzione EAR non riuscita sul server WebLogic JEE {#ear-deployment-failing-on-jee-weblogic-server}
 
-## Problema   {#issue}
+## Problema {#issue}
 
 Quando un utente tenta di distribuire `adobe-livecycle-weblogic.ear`, si verifica l&#39;eccezione `Null Pointer`.
 
