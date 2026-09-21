@@ -63,7 +63,7 @@ Anche i frammenti di contenuto e l’API GraphQL ricevono miglioramenti in termi
   > * [Aggiornamento di JBoss EAP dal 7.4.10 al 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) per ambienti autonomi.
   > * [Aggiorna il cluster EAP JBoss da 7.4.10 a 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) per gli ambienti cluster.
 
-* **Richiesta credenziali modalità Express di Configuration Manager (LCM):** Quando si configura AEM Forms su JEE utilizzando Configuration Manager (LCM) in modalità Express, LCM ora visualizza una nuova schermata in cui viene richiesto di immettere le credenziali dell&#39;amministratore AEM durante la configurazione anziché utilizzare le credenziali predefinite incorporate. Questa modifica è disponibile tramite [hotfix](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.25.0. Per i passaggi di configurazione, consulta [Installazione e distribuzione di AEM Forms su JEE utilizzando JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65). (FORMS-26365)
+* **Richiesta credenziali modalità Express di Configuration Manager (LCM):** Quando si configura AEM Forms su JEE utilizzando Configuration Manager (LCM) in modalità Express, LCM ora visualizza una nuova schermata in cui viene richiesto di immettere le credenziali dell&#39;amministratore AEM durante la configurazione anziché utilizzare le credenziali predefinite incorporate. Questa modifica è disponibile tramite [hotfix](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.25.0. Per i passaggi di configurazione, consulta [Installazione e distribuzione di AEM Forms su JEE utilizzando JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_it). (FORMS-26365)
 
 ## Problemi risolti in Service Pack 25 {#fixed-issues}
 
@@ -635,7 +635,7 @@ I seguenti file zip contengono i documenti di testo che elencano i bundle OSGi e
 Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
