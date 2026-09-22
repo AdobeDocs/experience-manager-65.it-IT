@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 15%
-
+source-wordcount: '211'
+ht-degree: 16%
 ---
-
 # Nozioni di base su componenti, funzioni e funzioni  {#component-function-and-feature-essentials}
 
 Le funzionalità di Adobe Experience Manager (AEM) Communities richiedono che i visitatori del sito diventino membri e accedano al [sito community](overview.md#communitiessites) prima di poter pubblicare il contenuto. Pertanto, i [modelli di sito community](sites.md), da cui un sito community è [creato](sites-console.md), sono progettati per includere una funzionalità di accesso e profili utente, messaggistica, ricerca, moderazione e traduzione.
@@ -30,10 +28,10 @@ Di seguito sono riportati collegamenti a informazioni essenziali per componenti,
 * [Recensioni](reviews-basics.md)
 * [Tally](tally.md)
 
-   * [Con Mi piace](essentials-liking.md)
-   * [Valutazione](rating-basics.md)
-   * [Votazione](essentials-voting.md)
-   * *Sondaggio (non più disponibile)*
+  * [Con Mi piace](essentials-liking.md)
+  * [Valutazione](rating-basics.md)
+  * [Votazione](essentials-voting.md)
+  * *Sondaggio (non più disponibile)*
 
 ## Componenti con funzioni {#components-with-functions}
 
@@ -62,11 +60,11 @@ Di seguito sono riportati collegamenti a informazioni essenziali per componenti,
 * [Grafico social](essentials-socialgraph.md)
 * [Provider risorsa di archiviazione](srp-and-ugc.md) `(SRP)`
 
-* [Assegnazione dei tag](tag.md)
+* [Assegnazione tag](tag.md)
 
 ## JavaScript {#javadocs}
 
-I [documenti Java online](../../help/sites-developing/reference-materials.md) riflettono le API disponibili nella versione 6.3 di AEM.
+I [documenti Java online](../../help/sites-developing/reference-materials.md) riflettono le API disponibili nella versione di AEM 6.3.
 Le API delle community si trovano in `com.adobe.cq.social.*` pacchetti.
 
 Per ogni [feature pack](deploy-communities.md#latestfeaturepack), è disponibile un file javadoc jar. Per ulteriori informazioni, visita [Utilizzo di Maven per le community](maven.md#javadocs).
@@ -75,10 +73,10 @@ Per ogni [feature pack](deploy-communities.md#latestfeaturepack), è disponibile
 
 * [Framework componenti social network (SCF)](scf.md)
 
-   * [Personalizzazioni lato client](client-customize.md)
-   * [Personalizzazioni lato server](server-customize.md)
-   * [Panoramica del provider di risorse di archiviazione](srp.md)
+  * [Personalizzazioni lato client](client-customize.md)
+  * [Personalizzazioni lato server](server-customize.md)
+  * [Panoramica del provider di risorse di archiviazione](srp.md)
 
 * [Linee guida per la codifica](code-guide.md)
 * [Tutorial](tutorials.md)
-* [Risoluzione dei problemi](troubleshooting.md)
+* [Risoluzione di problemi](troubleshooting.md)

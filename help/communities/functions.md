@@ -12,16 +12,14 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2253'
 ht-degree: 2%
-
 ---
-
 # Funzioni community{#community-functions}
 
 Il tipo di funzioni previste da un’esperienza della community sono ben note. Le funzioni della community sono disponibili come funzioni della community. In sostanza, si tratta di una o più pagine collegate per implementare una funzione per la community che richiede molto di più della semplice aggiunta di un componente a una pagina in modalità di authoring. Si tratta dei blocchi predefiniti utilizzati per definire la struttura di un [modello di sito community](/help/communities/sites.md) da cui vengono creati [siti community](/help/communities/sites-console.md).
 
-Una volta creato il sito della community, il contenuto può essere aggiunto alle pagine risultanti utilizzando la [modalità di creazione AEM standard](/help/sites-authoring/editing-content.md). Sono disponibili diverse funzioni per la community, come illustrato nella console delle funzioni per la community.
+Dopo la creazione di un sito della community, è possibile aggiungere contenuto alle pagine risultanti utilizzando la [modalità di creazione AEM ](/help/sites-authoring/editing-content.md) standard. Sono disponibili diverse funzioni per la community, come illustrato nella console delle funzioni per la community.
 
 >[!NOTE]
 >
@@ -37,7 +35,7 @@ Per raggiungere la console delle funzioni community nell’ambiente di authoring
 
 ## Funzioni predefinite {#pre-built-functions}
 
-Segue una breve descrizione delle funzioni fornite con AEM Communities. Ogni funzione include una o più pagine AEM contenenti componenti Communities collegati tra loro in una funzione che viene facilmente incorporata in un [modello di sito community](/help/communities/sites.md).
+Segue una breve descrizione delle funzioni fornite con AEM Communities. Ogni funzione include una o più pagine di AEM contenenti componenti di Communities collegati tra loro in una funzione facilmente incorporabile in un [modello di sito community](/help/communities/sites.md).
 
 Un modello di sito community fornisce la struttura di un sito community, incluse le funzioni di accesso, profili utente, notifiche, messaggistica, menu del sito, ricerca, temi e branding.
 
@@ -226,10 +224,10 @@ Quando si aggiunge un modello, viene visualizzata la seguente finestra di dialog
 
   Se viene selezionato, il forum consente solo ai membri con privilegi di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza dei membri con privilegi](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
 
-* **Consenti creazione Publish**
+* **Consenti creazione pubblicazione**
 
   Se questa opzione è selezionata, i membri autorizzati della community possono creare un gruppo nell’ambiente di pubblicazione. Se questa opzione è deselezionata, è possibile creare nuovi gruppi (sottocomunità) nell’ambiente di authoring solo dalla console Gruppi di siti community.
-L&#39;opzione Predefinita è selezionata.
+  L&#39;opzione Predefinita è selezionata.
 
 ### Funzione ideazione {#ideation-function}
 
@@ -272,21 +270,21 @@ Quando viene aggiunto a un modello, viene visualizzata la seguente finestra di d
 * **Distintivo visualizzato**
 
   Se questa opzione è selezionata, nella classifica verrà inclusa una colonna per le icone dei badge.
-Il valore predefinito è deselezionato.
+  Il valore predefinito è deselezionato.
 
 * **Nome badge visualizzato**
 
   Se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del badge.
-Il valore predefinito è deselezionato.
+  Il valore predefinito è deselezionato.
 
 * **Visualizza avatar**
 
   Se l&#39;opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al suo profilo membro.
-Il valore predefinito è deselezionato.
+  Il valore predefinito è deselezionato.
 
 ### Funzione Pagina {#page-function}
 
-La funzione di pagina aggiunge una pagina vuota al sito community da collegare alle funzioni del sito community: accesso, menu, notifiche, messaggi, temi e branding. Il contenuto viene aggiunto alla pagina utilizzando la [modalità di creazione AEM standard](/help/sites-authoring/editing-content.md).
+La funzione di pagina aggiunge una pagina vuota al sito community da collegare alle funzioni del sito community: accesso, menu, notifiche, messaggi, temi e branding. Il contenuto viene aggiunto alla pagina utilizzando la [modalità di authoring standard di AEM](/help/sites-authoring/editing-content.md).
 
 Quando viene aggiunta a un modello, l&#39;unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
@@ -322,7 +320,7 @@ Quando viene aggiunta a un modello, la configurazione consente di limitare i mem
 
 ## Crea funzione community {#create-community-function}
 
-È possibile creare una funzione community selezionando l&#39;icona `Create Community Function` nella parte superiore della console Funzioni community. È possibile creare più funzioni basate sulla stessa blueprint AEM e personalizzarle in modo univoco aprendo la modalità di modifica dell’autore.
+È possibile creare una funzione community selezionando l&#39;icona `Create Community Function` nella parte superiore della console Funzioni community. È possibile creare più funzioni basate sulla stessa blueprint di AEM e quindi personalizzarle in modo univoco aprendo in modalità di modifica di authoring.
 
 ![create-community-function](assets/create-community-function.png)
 
@@ -356,7 +354,7 @@ Poiché la funzione community è implementata come [Live Copy](/help/sites-admin
 
 Vedere anche [Gestione multisito](/help/sites-administering/msm.md).
 
-### Miniatura  {#thumbnail}
+### Miniatura {#thumbnail}
 
 ![funzione-miniatura](assets/funtion-thumbnail.png)
 

@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '520'
 ht-degree: 1%
-
 ---
-
 # Nozioni di base sul sito community {#community-site-essentials}
 
 ## Modello di sito personalizzato {#custom-site-template}
@@ -78,7 +76,7 @@ La procedura consigliata per la replica del codice personalizzato è [creare un 
 
 ## Esportazione di un sito community {#exporting-a-community-site}
 
-Una volta creato un sito community, è possibile esportarlo come pacchetto AEM memorizzato in Gestione pacchetti e disponibile per il download e il caricamento.
+Una volta creato il sito della community, è possibile esportarlo come pacchetto AEM memorizzato in Gestione pacchetti e disponibile per il download e il caricamento.
 
 È disponibile dalla console [Siti community](sites-console.md#exporting-the-site).
 
@@ -106,9 +104,9 @@ Per identificare l&#39;ID sito univoco associato al sito community, utilizzando 
 
   Ad esempio, se `rep:principalName = community-enable-nrh9h-members`
 
-   * **nome sito** = *abilita*
-   * **ID sito** = *nrh9h*
-   * **ID sito univoco** = *enable-nrh9h*
+  * **nome sito** = *abilita*
+  * **ID sito** = *nrh9h*
+  * **ID sito univoco** = *enable-nrh9h*
 
 ### Contenuti generati dall&#39;utente {#user-generated-content}
 
@@ -131,4 +129,4 @@ In tutte le istanze di authoring e pubblicazione, dalla [console di sicurezza](.
 * Con prefisso `community`
 * Seguito da [id sito univoco](#community-unique-site-id)
 
-Esempio: `community-engage-x0e11-members`.
+Ad esempio, `community-engage-x0e11-members`.

@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '458'
 ht-degree: 3%
-
 ---
-
 # Modelli per siti {#site-templates}
 
 La console Modelli sito è simile alla console [Modelli gruppo](tools-groups.md), che si concentra su funzioni di interesse per i gruppi della community.
@@ -34,7 +32,7 @@ Questa console visualizza i modelli da cui è possibile creare un [sito communit
 
 ![modello-sito](assets/site-template.png)
 
-## Crea modello sito {#create-site-template}
+## Crea modello per siti {#create-site-template}
 
 Per iniziare a creare un modello di sito, selezionare `Create`.
 
@@ -58,7 +56,7 @@ Nel pannello Informazioni di base, vengono configurati un nome, una descrizione 
 
   Un interruttore che controlla se il modello è referenziabile.
 
-### Miniatura  {#thumbnail}
+### Miniatura {#thumbnail}
 
 ![miniatura-sito](assets/site-thumbnail.png)
 

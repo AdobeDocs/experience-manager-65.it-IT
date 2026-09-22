@@ -11,11 +11,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # Crea una pagina di esempio {#create-a-sample-page}
 
 A partire da AEM 6.1 Communities, il modo più semplice per creare una pagina di esempio è quello di creare un sito community semplice, costituito semplicemente da una funzione Pagina.
@@ -41,19 +39,19 @@ Dalla navigazione globale in un&#39;istanza Autore, seleziona **[!UICONTROL Stru
 * Seleziona `Create button`
 * INFORMAZIONI DI BASE
 
-   * `Name`: modello a pagina singola
-   * `Description`: modello costituito da una singola funzione Page.
-   * Seleziona `Enabled`
+  * `Name`: modello a pagina singola
+  * `Description`: modello costituito da una singola funzione Page.
+  * Seleziona `Enabled`
 
 ![editor-modello-sito](assets/site-template-editor.png)
 
 * STRUTTURA
 
-   * Trascina una funzione `Page` nel Generatore di modelli
-   * Per Dettagli funzione di configurazione, immetti
+  * Trascina una funzione `Page` nel Generatore di modelli
+  * Per Dettagli funzione di configurazione, immetti
 
-      * `Title`: pagina singola
-      * `URL`: pagina
+    * `Title`: pagina singola
+    * `URL`: pagina
 
 ![site-template-editor-structure](assets/site-template-editor1.png)
 
@@ -72,22 +70,22 @@ Dopo aver creato il modello di sito, dalla navigazione globale selezionare **[!U
 
 * Passaggio `1 - Site Template`
 
-   * `Title`: sito community semplice
-   * `Description`: sito community costituito da una singola pagina per la sperimentazione.
-   * `Community Site Root: (leave blank)`
-   * `Community Site Base Language: English`
-   * `Name`: esempio
+  * `Title`: sito community semplice
+  * `Description`: sito community costituito da una singola pagina per la sperimentazione.
+  * `Community Site Root: (leave blank)`
+  * `Community Site Base Language: English`
+  * `Name`: esempio
 
-      * url = http://localhost:4502/content/sites/sample
+    * url = http://localhost:4502/content/sites/sample
 
-      * `Template`: scegli `Single Page Template`
+    * `Template`: scegli `Single Page Template`
 
-     ![create-community-site-template](assets/create-community-site-template.png)
+    ![create-community-site-template](assets/create-community-site-template.png)
 
 * Seleziona `Next`
 * Passaggio `2 - Design`
 
-   * Seleziona qualsiasi design
+  * Seleziona qualsiasi design
 
 * Seleziona `Next`
 * Seleziona `Next`
@@ -98,7 +96,7 @@ Dopo aver creato il modello di sito, dalla navigazione globale selezionare **[!U
 
   ![create-community-site](assets/create-community-site.png)
 
-## Publish del sito {#publish-the-site}
+## Pubblicare il sito {#publish-the-site}
 
 ![sito di pubblicazione](assets/publish-site.png)
 
@@ -116,6 +114,6 @@ URL: [http://localhost:4502/editor.html/content/sites/sample/en.html](http://loc
 
 Nella semplice home page è possibile vedere cosa è preconnesso tramite le funzioni e i modelli della community e giocare con l&#39;aggiunta e la configurazione di componenti della community.
 
-## Visualizza sito su Publish {#view-site-on-publish}
+## Visualizza sito alla pubblicazione {#view-site-on-publish}
 
 Dopo aver pubblicato la pagina, apri la pagina nell&#39;[istanza di pubblicazione](http://localhost:4503/content/sites/sample/en.html) per sperimentare le funzionalità come visitatore anonimo del sito, membro connesso o amministratore. Il collegamento Amministrazione visibile nell’ambiente di authoring non viene visualizzato nell’ambiente di pubblicazione a meno che un amministratore non effettui l’accesso.

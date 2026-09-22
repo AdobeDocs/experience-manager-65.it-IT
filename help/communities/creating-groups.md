@@ -1,6 +1,6 @@
 ---
 title: Gruppi community
-description: Scopri in che modo la funzione Gruppi community consente di creare dinamicamente una sottocommunity all’interno di un sito community da parte di utenti autorizzati in Publish e Author.
+description: Scopri in che modo la funzione Gruppi community consente di creare dinamicamente una sottocommunity all’interno di un sito community da parte di utenti autorizzati in Pubblicazione e authoring.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '565'
 ht-degree: 1%
-
 ---
-
 # Gruppi community {#community-groups}
 
 La funzione Gruppi community consente la creazione dinamica di una sottocommunity all’interno di un sito community da parte di utenti autorizzati (membri e autori della community) dagli ambienti di pubblicazione e authoring.
