@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Il tipo di funzioni previste da un’esperienza della community sono ben note. Le funzioni della community sono disponibili come funzioni della community. In sostanza, si tratta di una o più pagine collegate per implementare una funzione per la community che richiede molto di più della semplice aggiunta di un componente a una pagina in modalità di authoring. Si tratta dei blocchi predefiniti utilizzati per definire la struttura di un [modello di sito community](/help/communities/sites.md) da cui vengono creati [siti community](/help/communities/sites-console.md).
 
-Dopo la creazione di un sito della community, è possibile aggiungere contenuto alle pagine risultanti utilizzando la [modalità di creazione AEM ](/help/sites-authoring/editing-content.md) standard. Sono disponibili diverse funzioni per la community, come illustrato nella console delle funzioni per la community.
+Dopo la creazione di un sito della community, è possibile aggiungere contenuto alle pagine risultanti utilizzando la [modalità di creazione AEM &#x200B;](/help/sites-authoring/editing-content.md) standard. Sono disponibili diverse funzioni per la community, come illustrato nella console delle funzioni per la community.
 
 >[!NOTE]
 >
