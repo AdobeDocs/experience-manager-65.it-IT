@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '326'
 ht-degree: 0%
-
 ---
-
 # Console community {#communities-consoles}
 
 Le console di AEM Communities, disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere ad attività amministrative quali:
@@ -34,7 +32,7 @@ Nell&#39;ambiente di authoring, dopo aver effettuato l&#39;accesso con privilegi
 
 >[!NOTE]
 >
->Nell&#39;ambiente Publish, un [sito community](sites-console.md) visualizza una voce di menu `Administration` quando il membro connesso dispone dei privilegi appropriati.
+>Nell&#39;ambiente di pubblicazione, un [sito community](sites-console.md) visualizza una voce di menu `Administration` quando il membro connesso dispone dei privilegi appropriati.
 
 ## Pannello di navigazione globale {#global-navigation-panel}
 
@@ -55,11 +53,11 @@ Per accedere alle varie console Communities, dalla navigazione globale seleziona
 
 * [Moderazione](moderation.md)
 
-  La console di moderazione è per la moderazione in blocco di contenuti generati dagli utenti (UGC, User-Generated Content) e nell’ambiente di authoring. Una console di moderazione in blocco simile è accessibile nell&#39;ambiente Publish ai membri della comunità a cui è stato assegnato il ruolo di [moderatore della comunità](users.md#publishenvironmentusersandgroups) per uno o più siti della comunità.
+  La console di moderazione è per la moderazione in blocco di contenuti generati dagli utenti (UGC, User-Generated Content) e nell’ambiente di authoring. Una console di moderazione in blocco simile è accessibile nell&#39;ambiente di pubblicazione ai membri della comunità a cui è stato assegnato il ruolo di [moderatore della comunità](users.md#publishenvironmentusersandgroups) per uno o più siti della comunità.
 
 * [Membri, Gruppi](members.md)
 
-  Le console Membri e Gruppi consentono di gestire i membri della community e i gruppi di membri esistenti nell&#39;ambiente Publish dall&#39;ambiente di authoring.
+  Le console Membri e Gruppi consentono di gestire i membri della community e i gruppi di membri esistenti nell&#39;ambiente di pubblicazione dall&#39;ambiente di authoring.
 
 * [Rapporti](reports.md)
 

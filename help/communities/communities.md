@@ -11,16 +11,14 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '399'
 ht-degree: 5%
-
 ---
-
 # Comunità in via di sviluppo  {#developing-communities}
 
 ## Panoramica {#overview}
 
-Le community Adobe Experience Manager (AEM) semplificano la creazione e la personalizzazione di funzioni quali forum, gruppi di utenti, blog, domande e risposte, calendari, commenti, recensioni, votazioni, valutazioni e assegnazioni. Queste funzioni consentono di immettere nell’ambiente di pubblicazione i contenuti generati dagli utenti (UGC, User-Generated Content).
+Le community di Adobe Experience Manager (AEM) semplificano la creazione e la personalizzazione di funzioni quali forum, gruppi di utenti, blog, domande e risposte, calendari, commenti, recensioni, voti, valutazioni e assegnazioni. Queste funzioni consentono di immettere nell’ambiente di pubblicazione i contenuti generati dagli utenti (UGC, User-Generated Content).
 
 La base di un [sito community](overview.md#communitiessites) è il [framework per componenti social](scf.md) (SCF). La creazione di un sito community inizia con la selezione di un [modello di sito community](sites-console.md) composto da [funzioni community](functions.md).
 
@@ -56,12 +54,12 @@ I componenti, le funzioni e le funzionalità di AEM Communities forniscono i blo
 * [Clientlibs per i componenti Communities](clientlibs.md)
 * [Funzioni community](functions.md)
 * [Modelli per gruppi community](tools-groups.md)
-* [Modelli per sito community](sites.md)
+* [Modelli per siti community](sites.md)
 
 ## Membri community {#community-members}
 
 * [Gestione di utenti e gruppi di utenti](users.md)
-* [Accesso social network con Facebook e Twitter](social-login.md)
+* [Accesso social network tramite Facebook e Twitter](social-login.md)
 
 ## Gruppi community {#community-groups}
 
@@ -84,9 +82,9 @@ I componenti, le funzioni e le funzionalità di AEM Communities forniscono i blo
 * [Tutorial lato server](tutorials.md#server-side-customization)
 * [Istruzioni pratiche](tutorials.md#how-to-instructions)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
-* [Risoluzione dei problemi](troubleshooting.md)
+* [Risoluzione di problemi](troubleshooting.md)
 * [Problemi noti](/help/release-notes/release-notes.md)
 
 ## Documentazione delle community correlate {#related-communities-documentation}

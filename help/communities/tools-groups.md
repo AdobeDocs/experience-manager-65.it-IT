@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 2%
-
 ---
-
 # Modelli per gruppi {#group-templates}
 
 La console Modelli gruppo è simile alla console [Modelli sito](/help/communities/sites.md). Entrambi sono blueprint per un set di pagine e funzionalità precollegate che costituiscono un sito della community. La differenza sta nel fatto che un modello di sito è per la community principale e un modello di gruppo è per un gruppo community, una sottocommunity nidificata all’interno della community principale.
@@ -33,9 +31,9 @@ Quando si esegue un&#39;azione per creare un gruppo community, viene selezionato
 
 ## Console Modelli per gruppi {#group-templates-console}
 
-Per raggiungere la console dei modelli di gruppo nell’ambiente di authoring AEM:
+Per raggiungere la console dei modelli di gruppo nell’ambiente AEM Author:
 
-* Seleziona **strumenti | Community | Modelli di gruppo,** dalla navigazione globale.
+* Seleziona **strumenti | Comunità | Modelli di gruppo,** dalla navigazione globale.
 
 Questa console visualizza i modelli da cui è possibile creare un [sito community](/help/communities/sites-console.md) e consente la creazione di nuovi modelli di gruppo.
 
@@ -65,7 +63,7 @@ Nel pannello Informazioni di base, vengono configurati un nome, una descrizione 
 
   Un interruttore che controlla se il modello è referenziabile.
 
-#### Miniatura  {#thumbnail}
+#### Miniatura {#thumbnail}
 
 ![miniatura-sito](assets/site-thumbnail.png)
 
@@ -75,7 +73,7 @@ Nel pannello Informazioni di base, vengono configurati un nome, una descrizione 
 
 >[!CAUTION]
 >
->Se si lavora con AEM 6.1 Communities FP4 o versioni precedenti, non aggiungere una funzione di gruppo a un modello di gruppo.
+>Se utilizzi AEM 6.1 Communities FP4 o versioni precedenti, non aggiungere una funzione di gruppi a un modello di gruppo.
 >
 >La funzionalità dei gruppi nidificati è disponibile a partire da Communities [FP1](/help/communities/communities.md#latestfeaturepack).
 >
