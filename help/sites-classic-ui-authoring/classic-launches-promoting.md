@@ -1,10 +1,12 @@
 ---
 title: Promozione dei lanci
 description: Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
+
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
 solution: Experience Manager, Experience Manager Sites
@@ -13,23 +15,21 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 57%
-
+ht-degree: 64%
 ---
-
 # Promozione dei lanci{#promoting-launches}
 
 Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa. Quando promuovi una pagina di lancio sono disponibili le seguenti opzioni:
 
 * Promuovere solo la pagina corrente o l’intero lancio.
-* Promuovere le pagine figlie della pagina corrente.
+* Promuovere le pagine secondarie della pagina corrente.
 * Promuovere il lancio completo o solo le pagine che sono state modificate.
 
 ## Promozione delle pagine di lancio {#promoting-launch-pages}
 
 Per promuovere le pagine, effettua le seguenti operazioni durante la modifica della pagina di lancio che desideri promuovere:
 
-1. Nella scheda **Pagina** del Sidekick, fai clic su **Promuovi lancio**.
+1. Nella scheda **Pagina** di Sidekick, fai clic su **Promuovi lancio**.
 1. Specifica le pagine da promuovere:
 
    * Impostazione predefinita. Per promuovere solo la pagina corrente, selezionare **Promuovi modifiche pagina alla versione di produzione**.
