@@ -63,7 +63,7 @@ Il percorso di una risorsa nell’archivio AEM Forms è:
 
 >[!NOTE]
 >
->Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un&#39;applicazione tramite Workbench, vedere [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65).
+>Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un&#39;applicazione tramite Workbench, vedere [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65_it).
 
 ## Guida rapida (modalità SOAP): creazione di una cartella tramite l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
