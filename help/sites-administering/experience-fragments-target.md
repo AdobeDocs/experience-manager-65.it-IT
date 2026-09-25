@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 41%
-
+source-wordcount: '1487'
+ht-degree: 40%
 ---
-
 # Esportazione di frammenti di esperienza in Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 Puoi esportare [Frammenti esperienza](/help/sites-authoring/experience-fragments.md), creati in Adobe Experience Manager (AEM), in Adobe Target (Target). Possono quindi essere utilizzate come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
@@ -27,7 +25,7 @@ Sono disponibili tre opzioni di formato per esportare un frammento di esperienza
 * JSON: supporto per la distribuzione di contenuti headless
 * HTML e JSON
 
-I Frammenti esperienza AEM possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target. Questa operazione viene eseguita utilizzando Adobe Developer Console, per il quale AEM deve essere [integrato con Adobe Target utilizzando IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+I Frammenti di esperienza AEM possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target. Questa operazione viene eseguita utilizzando Adobe Developer Console, per il quale AEM deve essere [integrato con Adobe Target utilizzando IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 
 >[!NOTE]
 >
@@ -48,7 +46,7 @@ I Frammenti esperienza AEM possono essere esportati nell’area di lavoro predef
 >Per ulteriori informazioni, consulta:
 >
 >* [Sviluppo Adobe Target](https://developers.adobetarget.com/)
->* [Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=it)
+>* [Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
 
 ## Prerequisiti {#prerequisites}
@@ -63,7 +61,7 @@ Sono necessarie diverse azioni:
    >
    >Le configurazioni precedenti sono state create con [credenziali JWT che ora sono soggette a deprecazione in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
-1. I frammenti di esperienza vengono esportati dall&#39;istanza di creazione dell&#39;AEM, pertanto devi [Configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) nell&#39;istanza di authoring per garantire che tutti i riferimenti all&#39;interno del frammento di esperienza siano esternalizzati per la distribuzione Web.
+1. I frammenti di esperienza vengono esportati dall&#39;istanza di authoring di AEM, pertanto devi [Configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) nell&#39;istanza di authoring per garantire che tutti i riferimenti all&#39;interno del frammento di esperienza siano esternalizzati per la distribuzione web.
 
    >[!NOTE]
    >
@@ -100,7 +98,7 @@ Le opzioni richieste possono essere selezionate in **Proprietà pagina** della c
    >
    >Consulta il componente core:
    >
-   >[Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=it)
+   >[Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 
    Sotto **Adobe Target** seleziona:
 
@@ -113,7 +111,7 @@ Le opzioni richieste possono essere selezionate in **Proprietà pagina** della c
    >
    >Il dominio esternalizzatore è facoltativo.
    >
-   >Un esternalizzatore AEM è configurato quando desideri che il contenuto esportato punti a uno specifico dominio *publish*. Per ulteriori dettagli, vedere [Configurazione di AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >AEM Externalizer è configurato quando desideri che il contenuto esportato punti a uno specifico dominio *publish*. Per ulteriori dettagli, vedere [Configurazione di AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
    >
    >Inoltre, i domini esternalizzatori sono rilevanti solo per il contenuto del Frammento di esperienza inviato a Target, e non per i metadati come Visualizza contenuto offerta.
 
@@ -146,11 +144,11 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
    >
    >Se il frammento di esperienza è già stato esportato, seleziona **Aggiorna in Adobe Target**.
 
-1. Fai clic su **Esporta senza pubblicare** o **Publish** come richiesto.
+1. Fai clic su **Esporta senza pubblicare** o **Pubblica** come richiesto.
 
    >[!NOTE]
    >
-   >Selezionando **Publish** il frammento di esperienza viene pubblicato immediatamente e inviato a Target.
+   >Selezionando **Pubblica**, il frammento di esperienza viene pubblicato immediatamente e inviato a Target.
 
 1. Fare clic su **OK** nella finestra di conferma.
 
@@ -170,7 +168,7 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
 
 ## Utilizzo dei frammenti di esperienza in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Dopo aver eseguito le attività precedenti, il frammento di esperienza viene visualizzato nella pagina Offerte di Adobe Target. Consulta la [documentazione specifica di Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=it) per scoprire cosa puoi ottenere.
+Dopo aver eseguito le attività precedenti, il frammento di esperienza viene visualizzato nella pagina Offerte di Adobe Target. Consulta la [documentazione specifica di Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) per scoprire cosa puoi ottenere.
 
 >[!NOTE]
 >
@@ -183,23 +181,23 @@ L’eliminazione di un frammento di esperienza già esportato in Target può cau
 Per evitare tali situazioni:
 
 * Se il frammento di esperienza non è attualmente utilizzato in un’attività, AEM consente all’utente di eliminarlo senza un messaggio di avviso.
-* Se il frammento di esperienza è utilizzato da un’attività in Adobe Target, un messaggio di errore avvisa l’utente AEM delle possibili conseguenze che l’eliminazione del frammento avrà sull’attività.
+* Se il frammento di esperienza è utilizzato da un’attività in Adobe Target, un messaggio di errore avvisa l’utente di AEM delle possibili conseguenze che l’eliminazione del frammento avrà sull’attività.
 
   Il messaggio di errore in AEM non impedisce all’utente di (forzare) eliminare il frammento di esperienza. Se il frammento di esperienza viene eliminato:
 
-   * L’offerta Target con il frammento di esperienza AEM può mostrare un comportamento indesiderato
+  * L’offerta Target con il frammento di esperienza AEM può mostrare un comportamento indesiderato
 
-      * L&#39;offerta sarà probabilmente ancora visualizzata, poiché l&#39;HTML del frammento di esperienza è stato inviato su Target
-      * Eventuali riferimenti nel frammento di esperienza potrebbero non funzionare correttamente se le risorse di riferimento sono state eliminate anche in AEM.
+    * L&#39;offerta sarà probabilmente ancora visualizzata, poiché l&#39;HTML del frammento di esperienza è stato inviato su Target
+    * Eventuali riferimenti nel frammento di esperienza potrebbero non funzionare correttamente se le risorse di riferimento sono state eliminate anche in AEM.
 
-   * Qualsiasi ulteriore modifica al frammento di esperienza è impossibile in quanto non esiste più nel AEM.
+  * Eventuali ulteriori modifiche al frammento di esperienza sono impossibili in quanto non esiste più in AEM.
 
 
 ## Rimozione delle ClientLibs dai frammenti esperienza esportati in Target {#removing-clientlibs-from-fragments-exported-target}
 
 I frammenti di esperienza contengono tag HTML completi e tutte le librerie client (CSS/JS) necessarie per eseguire il rendering del frammento esattamente come è stato creato dall’autore del contenuto dei frammenti di esperienza. Questo è by-design.
 
-Quando si utilizza un’offerta Frammento di esperienza con Adobe Target in una pagina consegnata dall’AEM, la pagina Target contiene già tutte le librerie client necessarie. Inoltre, nemmeno l&#39;HTML estraneo nell&#39;offerta Frammento di esperienza è necessario (vedi [Considerazioni](#considerations)).
+Quando si utilizza un’offerta Frammento di esperienza con Adobe Target in una pagina consegnata da AEM, la pagina Target contiene già tutte le librerie client necessarie. Inoltre, nemmeno l&#39;HTML estraneo nell&#39;offerta Frammento di esperienza è necessario (vedi [Considerazioni](#considerations)).
 
 Di seguito è riportato uno pseudo esempio dell’html in un’offerta per frammenti di esperienza:
 
@@ -217,7 +215,7 @@ Di seguito è riportato uno pseudo esempio dell’html in un’offerta per framm
 </html>
 ```
 
-Ad alto livello, quando l’AEM esporta un frammento di esperienza in Adobe Target, lo fa utilizzando diversi selettori Sling aggiuntivi. Ad esempio, l&#39;URL per il frammento di esperienza esportato potrebbe essere simile al seguente (avviso `nocloudconfigs.atoffer`):
+Ad alto livello, quando AEM esporta un frammento di esperienza in Adobe Target, lo fa utilizzando diversi selettori Sling aggiuntivi. Ad esempio, l&#39;URL per il frammento di esperienza esportato potrebbe essere simile al seguente (avviso `nocloudconfigs.atoffer`):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
@@ -269,7 +267,7 @@ Il contenuto di questi file è il seguente:
 
 ### Considerazioni {#considerations}
 
-Se devi supportare sia i siti AEM che i siti non AEM utilizzando le Offerte di frammenti di esperienza in Adobe Target, devi creare due Frammenti di esperienza (due diversi tipi di modelli):
+Se devi supportare sia siti AEM che siti non AEM utilizzando le Offerte con frammenti di esperienza in Adobe Target, devi creare due Frammenti di esperienza (due diversi tipi di modelli):
 
 * Uno con la sovrapposizione per rimuovere clientlibs/html aggiuntivo
 

@@ -1,5 +1,5 @@
 ---
-title: Salvataggio automatico di un modulo adattivo
+title: Salvare in automatico un modulo adattivo
 description: Puoi configurare un modulo adattivo in modo che inizi automaticamente a salvare il contenuto in base a un evento o a un intervallo di tempo predefinito
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -9,12 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 0%
-
+source-wordcount: '770'
+ht-degree: 3%
 ---
-
-# Salvataggio automatico di un modulo adattivo {#auto-save-an-adaptive-form}
+# Salvare in automatico un modulo adattivo {#auto-save-an-adaptive-form}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -50,7 +48,7 @@ Per un modulo adattivo, l’opzione di salvataggio automatico non è attivata co
 
 1. (Solo salvataggio automatico basato su eventi) Per configurare le opzioni per il salvataggio automatico basato su eventi, effettuare le seguenti operazioni.
 
-   1. Nella casella **Salvataggio automatico dopo l&#39;evento** specificare un evento [GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
+   1. Nella casella **Salvataggio automatico dopo l&#39;evento** specificare un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
 
 1. (Facoltativo) Per salvare automaticamente il contenuto per utenti anonimi, selezionare l&#39;opzione **Abilita salvataggio automatico per utenti anonimi** e fare clic su **[!UICONTROL OK]**.
 
@@ -58,7 +56,7 @@ Per un modulo adattivo, l’opzione di salvataggio automatico non è attivata co
    >
    >Affinché l&#39;opzione di salvataggio automatico funzioni per gli utenti anonimi, accertati di configurare il servizio Configurazione comune di Forms per consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
    >
-   >Per configurare il servizio, passare alla configurazione della console Web AEM in `https://server:port/system/console/configMgr` e modificare il **[!UICONTROL Servizio di configurazione comune di Forms]** per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvare la configurazione.
+   >Per configurare il servizio, passare alla configurazione della console Web AEM all&#39;indirizzo `https://server:port/system/console/configMgr` e modificare il **[!UICONTROL Servizio di configurazione comune di Forms]** per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvare la configurazione.
 
 ## Implementare una strategia personalizzata per abilitare il salvataggio automatico per i moduli adattivi {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 

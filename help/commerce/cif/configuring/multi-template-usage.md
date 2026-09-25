@@ -11,16 +11,14 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 71%
-
+source-wordcount: '110'
+ht-degree: 69%
 ---
-
 # Creazione di più pagine per categorie e prodotti
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) offrono agli autori dei contenuti la possibilità di creare ulteriori pagine di prodotti e categorie. Queste pagine possono essere arricchite con contenuti di marketing aggiuntivi e configurate per categorie e prodotti specifici. Il seguente video illustra la configurazione di questa funzione.
 
->[!VIDEO](https://video.tv.adobe.com/v/36979/?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 Per ulteriori informazioni su questo argomento, consulta la risorsa seguente:
 

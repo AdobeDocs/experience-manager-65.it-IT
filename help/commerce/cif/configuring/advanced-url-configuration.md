@@ -13,28 +13,26 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 24%
-
+source-wordcount: '958'
+ht-degree: 30%
 ---
-
 # Configurazioni URL avanzate {#url}
 
 >[!NOTE]
 >
->L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, le preoccupazioni in materia di SEO devono essere affrontate in molti progetti AEM. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=it).
+>L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi alla SEO devono essere affrontati in molti Progetti AEM. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html).
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Molte implementazioni personalizzano questi URL a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
->[!VIDEO](https://video.tv.adobe.com/v/38587/?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configurazione {#configuration}
 
-Per configurare il servizio `UrlProvider` in base ai requisiti e alle esigenze SEO (Search Engine Optimization), un progetto deve fornire una configurazione OSGI per la &quot;configurazione provider URL CIF&quot;.
+Per configurare il servizio `UrlProvider` in base ai requisiti e alle esigenze SEO (Search Engine Optimization), un progetto deve fornire una configurazione OSGI per la &quot;configurazione del provider URL di CIF&quot;.
 
 >[!NOTE]
 >
->A partire dalla versione 2.0.0 dei Componenti core CIF dell’AEM, la configurazione del provider URL fornisce solo formati URL predefiniti, invece dei formati configurabili a testo libero noti dalle versioni 1.x. Inoltre, l’utilizzo dei selettori per trasmettere i dati negli URL è stato sostituito dai suffissi.
+>A partire dalla versione 2.0.0 dei Componenti core di AEM CIF, la configurazione del provider URL fornisce solo formati URL predefiniti, invece dei formati configurabili a testo libero noti dalle versioni 1.x. Inoltre, l’utilizzo dei selettori per trasmettere i dati negli URL è stato sostituito dai suffissi.
 
 ### Formato URL pagina prodotto {#product}
 
@@ -83,7 +81,7 @@ Con i dati dell&#39;esempio precedente, l&#39;URL di una pagina categoria format
 
 `UrlProvider` è preconfigurato per generare collegamenti profondi a tali pagine nelle istanze del livello di authoring. Questa funzione è utile per gli editor che navigano in un sito utilizzando la modalità Anteprima, per passare a una pagina di prodotto o categoria specifica e tornare alla modalità Modifica per modificare la pagina.
 
-Nelle istanze del livello di pubblicazione, invece, gli URL delle pagine del catalogo devono essere mantenuti stabili per non perdere i guadagni, ad esempio, nella classificazione dei motori di ricerca. Per questo motivo, per impostazione predefinita, le istanze del livello di pubblicazione non eseguiranno il rendering dei collegamenti profondi a pagine di catalogo specifiche. Per modificare questo comportamento, è possibile configurare _Strategia pagina specifica per il provider URL CIF_ per generare sempre URL di pagina specifici.
+Nelle istanze del livello di pubblicazione, invece, gli URL delle pagine del catalogo devono essere mantenuti stabili per non perdere i guadagni, ad esempio, nella classificazione dei motori di ricerca. Per questo motivo, per impostazione predefinita, le istanze del livello di pubblicazione non eseguiranno il rendering dei collegamenti profondi a pagine di catalogo specifiche. Per modificare questo comportamento, è possibile configurare la _strategia di pagina specifica per il provider URL di CIF_ per generare sempre URL di pagina specifici.
 
 ## Formati URL personalizzati {#custom-url-format}
 
@@ -97,7 +95,7 @@ Oltre a `UrlProvider`, è anche possibile configurare [mappature Sling](https://
 
 ## Combinare con AEM Dispatcher {#dispatcher}
 
-Le riscritture URL possono essere ottenute anche utilizzando il server HTTP Dispatcher dell&#39;AEM con il modulo `mod_rewrite`. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) fornisce una configurazione di AEM Dispatcher di riferimento che include [regole di riscrittura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) di base per la dimensione generata.
+Le riscritture URL possono essere ottenute anche utilizzando il server HTTP di AEM Dispatcher con il modulo `mod_rewrite`. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) fornisce una configurazione di AEM Dispatcher di riferimento che include [regole di riscrittura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) di base per la dimensione generata.
 
 ## Esempio
 
@@ -110,5 +108,5 @@ Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-veni
 ## Risorse aggiuntive
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappature delle risorse di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=it)
+* [Mappatura risorse AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

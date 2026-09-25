@@ -1,5 +1,5 @@
 ---
-title: API per richiamare il servizio modello dati modulo da moduli adattivi
+title: API per richiamare il servizio Modello dati modulo (FDM) nei moduli adattivi
 description: Spiega l’API invokeWebServices che è possibile utilizzare per richiamare i servizi web scritti in WSDL dall’interno di un campo modulo adattivo.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 0%
-
+source-wordcount: '543'
+ht-degree: 6%
 ---
-
-# API per richiamare il servizio modello dati modulo da moduli adattivi {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API per richiamare il servizio Modello dati modulo (FDM) nei moduli adattivi {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 

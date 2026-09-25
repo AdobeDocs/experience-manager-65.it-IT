@@ -1,31 +1,34 @@
 ---
-title: Forms con diritti di rendering
+title: Rendering di moduli con diritti
+
 description: Utilizza il servizio Forms per eseguire il rendering dei moduli a cui sono applicati diritti di utilizzo. Puoi eseguire il rendering di moduli abilitati per i diritti utilizzando l’API Java e l’API del servizio web.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
-
+source-wordcount: '1488'
+ht-degree: 2%
 ---
+# Rendering di moduli con diritti {#rendering-rights-enabled-forms}
 
-# Forms con diritti di rendering {#rendering-rights-enabled-forms}
+Il servizio Forms può eseguire il rendering di moduli a cui sono applicati diritti di utilizzo. I diritti di utilizzo riguardano funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I Forms a cui sono applicati diritti di utilizzo sono denominati moduli abilitati per i diritti. L’utente che apre un modulo abilitato ai diritti in Adobe Reader può eseguire operazioni abilitate per tale modulo.
 
-Il servizio Forms può eseguire il rendering di moduli a cui sono applicati diritti di utilizzo. I diritti di utilizzo riguardano funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I Forms a cui sono applicati diritti di utilizzo sono denominati moduli abilitati per i diritti. L’utente che apre un modulo abilitato ai diritti in Adobe Reader può eseguire operazioni che sono abilitate per tale modulo.
-
-Per applicare i diritti di utilizzo a un modulo, il servizio Acrobat Reader DC extensions deve far parte dell’installazione dei moduli AEM. Inoltre, è necessario disporre di una credenziale valida che consenta di applicare i diritti di utilizzo ai documenti PDF. In altre parole, è necessario configurare correttamente il servizio Estensioni di Acrobat Reader DC prima di poter eseguire il rendering di un modulo abilitato per i diritti. (Vedi [Informazioni sul servizio estensioni di Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Per applicare i diritti di utilizzo a un modulo, il servizio Acrobat Reader DC extensions deve far parte dell’installazione di AEM Forms. È inoltre necessario disporre di credenziali valide che consentano di applicare i diritti di utilizzo ai documenti di PDF. In altre parole, è necessario configurare correttamente il servizio Acrobat Reader DC extensions prima di poter eseguire il rendering di un modulo abilitato ai diritti. (Vedi [Informazioni sul servizio Acrobat Reader DC extensions](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
 
 >[!NOTE]
 >
->Per eseguire il rendering di un modulo che contiene diritti di utilizzo, è necessario utilizzare un file XDP come input, non un file PDF. Se si utilizza un file PDF come input, il modulo viene comunque sottoposto a rendering, ma non sarà un modulo abilitato per i diritti.
+>Per eseguire il rendering di un modulo che contiene diritti di utilizzo, è necessario utilizzare un file XDP come input, non un file PDF. Se si utilizza un file PDF come input, il modulo viene comunque sottoposto a rendering; tuttavia, non sarà un modulo abilitato per i diritti.
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Per eseguire il rendering di un modulo abilitato per i diritti, utilizzare la st
 
 **Scrivere il flusso di dati del modulo nel browser Web client**
 
-Quando il servizio Forms esegue il rendering di un modulo abilitato ai diritti, restituisce un flusso di dati del modulo che è necessario scrivere nel browser Web client. Una volta scritto sul browser web client, il modulo è visibile all’utente. Un utente che visualizza il modulo abilitato ai diritti in Adobe Reader è in grado di eseguire operazioni abilitate per tale modulo.
+Quando il servizio Forms esegue il rendering di un modulo abilitato ai diritti, restituisce un flusso di dati del modulo che è necessario scrivere nel browser Web client. Una volta scritto sul browser web client, il modulo è visibile all’utente. L’utente che visualizza il modulo con abilitazione per i diritti in Adobe Reader è in grado di eseguire le operazioni abilitate per tale modulo.
 
 **Consulta anche**
 
@@ -79,9 +82,9 @@ Quando il servizio Forms esegue il rendering di un modulo abilitato ai diritti, 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering dei PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -132,7 +135,7 @@ Eseguire il rendering di un modulo abilitato ai diritti tramite l’API Forms (J
 
 **Consulta anche**
 
-[Quick Start (modalità SOAP): rendering di un modulo abilitato ai diritti tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Guida rapida (modalità SOAP): rendering di un modulo abilitato ai diritti tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -180,6 +183,6 @@ Eseguire il rendering di un modulo abilitato ai diritti tramite l’API di Forms
 
 **Consulta anche**
 
-[Forms con diritti di rendering](#rendering-rights-enabled-forms)
+[Rendering di moduli con diritti](#rendering-rights-enabled-forms)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

@@ -1,6 +1,8 @@
 ---
 title: Creazione e gestione delle revisioni nei moduli
+
 description: Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti a un modulo.
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -11,11 +13,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 2%
-
+source-wordcount: '730'
+ht-degree: 6%
 ---
-
 # Creazione e gestione delle revisioni ai moduli{#creating-and-managing-reviews-to-forms}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
@@ -25,7 +25,7 @@ ht-degree: 2%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
-## Rivedi {#review}
+## Rivedere {#review}
 
 Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti ai moduli.
 
@@ -33,7 +33,7 @@ Una revisione è un meccanismo che consente a uno o più revisori di aggiungere 
 
 1. Passare al browser Moduli e selezionare un modulo da rivedere.
 1. Se per il modulo non è in corso una revisione, nella barra delle azioni verrà visualizzata l&#39;icona **Avvia revisione** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png). Fai clic sull&#39;icona **Avvia revisione** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
-1. Immettere le seguenti informazioni:
+1. Immetti le seguenti informazioni:
 
    * **Titolo**: obbligatorio, può contenere caratteri alfanumerici, trattini e trattini bassi.
    * **Descrizione**: facoltativo, descrizione dello scopo/contenuto da rivedere.

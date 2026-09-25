@@ -8,18 +8,16 @@ exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 4%
-
+source-wordcount: '1901'
+ht-degree: 6%
 ---
-
-# Creazione di moduli adattivi tramite lo schema JSON {#creating-adaptive-forms-using-json-schema}
+# Creare moduli adattivi con lo schema JSON {#creating-adaptive-forms-using-json-schema}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -87,7 +85,7 @@ La mappatura degli elementi JSON con i componenti dei moduli adattivi è la segu
   </tr>
   <tr>
    <td><p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>}</code></p> </td>
-   <td><br /> <br /> Campo di testo<br /> <br /> <br /> </td>
+   <td><br /> <br /> Campo testo<br /> <br /> <br /> </td>
   </tr>
   <tr>
    <td>proprietà numero<br /> </td>
@@ -367,7 +365,7 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia
 
 JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. È possibile preconfigurare gli oggetti modulo per [valutare un&#39;espressione](adaptive-form-expressions.md) in un evento modulo.
 
-Utilizza la proprietà aem:afproperties per preconfigurare espressioni o script di moduli adattivi per i componenti dei moduli adattivi. Ad esempio, quando si attiva l&#39;evento di inizializzazione, il codice seguente imposta il valore del campo telefono e stampa un valore nel registro:
+Utilizzare la proprietà aem:afproperties per preconfigurare espressioni o script di moduli adattivi per i componenti di moduli adattivi. Ad esempio, quando si attiva l&#39;evento di inizializzazione, il codice seguente imposta il valore del campo telefono e stampa un valore nel registro:
 
 ```json
 "telephone": {
@@ -735,7 +733,7 @@ Per limitare i valori accettabili per un componente modulo adattivo, puoi aggiun
 
 Per abilitare tutti i Forms adattivi basati su schema JSON a generare dati conformi allo schema al momento dell’invio del modulo, effettua le seguenti operazioni:
 
-1. Passa alla console Web Experience Manager all&#39;indirizzo `https://server:host/system/console/configMgr`.
+1. Passa alla console Web di Experience Manager all&#39;indirizzo `https://server:host/system/console/configMgr`.
 1. Individua **[!UICONTROL Configurazione canale web per modulo adattivo e comunicazione interattiva]**.
 1. Seleziona per aprire la configurazione in modalità di modifica.
 1. Selezionare la casella di controllo **[!UICONTROL Genera dati conformi allo schema]**.

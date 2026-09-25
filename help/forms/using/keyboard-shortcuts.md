@@ -1,5 +1,5 @@
 ---
-title: Scelte rapide da tastiera per AEM Forms
+title: Scelte rapide da tastiera in AEM Forms
 description: Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzate con l’Editor di moduli adattivi, l’Editor temi, il Browser contenuti e la Gestione della corrispondenza per i sistemi operativi Windows e Macintosh.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 1%
-
+source-wordcount: '1208'
+ht-degree: 3%
 ---
-
-# Scelte rapide da tastiera per AEM Forms {#aem-forms-keyboard-shortcuts}
+# Scelte rapide da tastiera in AEM Forms {#aem-forms-keyboard-shortcuts}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -29,22 +27,22 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 | Chiude il browser Proprietà per il componente modulo adattivo selezionato | Ctrl+Alt+W | Comando+Alt+W |
 | Salva le modifiche nel browser Proprietà per il componente modulo adattivo selezionato | Ctrl+S | Comando+S |
 | Modifica regola per il componente modulo adattivo selezionato | CTRL+ALT+INVIO | Comando+Alt+Invio |
-| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&ast; |
-| Annulla ultima modifica | Ctrl+Z | CTRL+Z&ast; |
-| Ripristina ultima modifica | CTRL+Y | CTRL+A&P;ast; |
+| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&amp;ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
+| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
 | Selezione di più componenti | Maiusc+clic | Maiusc+clic |
-| Copia componente selezionato | Ctrl-C | CTRL&C;ast; |
-| Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&ast; |
+| Copia componente selezionato | Ctrl-C | Ctrl&amp;ast; |
+| Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&amp;ast; |
 | Incolla componenti | Ctrl+V | Ctrl+V |
-| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&AMMA;ast; |
-| Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | CTRL+B&ast; |
-| Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&ast; |
+| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&amp;O; |
+| Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&amp;ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | Ctrl+B&amp;ast; |
+| Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&amp;ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&amp;ST; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con un &#39;&ast;&#39; funzionano sia con i tasti Ctrl che con i tasti Comando in macOS.
+>I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 >[!NOTE]
 >
@@ -60,13 +58,13 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 |---|---|---|
 | Apri il browser Proprietà per il componente selezionato in un tema | ALT+INVIO | ALT+INVIO |
 | Chiude il browser Proprietà per il componente selezionato in un tema | Ctrl+Alt+W | Comando+Alt+W |
-| Annulla ultima modifica | Ctrl+Z | CTRL+Z&ast; |
-| Ripristina ultima modifica | CTRL+Y | CTRL+A&P;ast; |
-| Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
+| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
+| Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&amp;ast; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con un &#39;&ast;&#39; funzionano sia con i tasti Ctrl che con i tasti Comando in macOS.
+>I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 ## Browser contenuti  {#contentbrowser}
 

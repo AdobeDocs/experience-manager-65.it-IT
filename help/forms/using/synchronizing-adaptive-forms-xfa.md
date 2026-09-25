@@ -1,8 +1,10 @@
 ---
-title: Sincronizzazione di Forms adattivo con i modelli di modulo XFA
+title: Sincronizzazione di moduli adattivi con i modelli di modulo XFA
 description: Scopri come sincronizzare i moduli con i file XFA/XDP. Riutilizza i campi dei moduli sincronizzati con le modifiche apportate ai campi corrispondenti nei file XFA/XDP.
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
@@ -10,12 +12,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 0%
-
+source-wordcount: '1241'
+ht-degree: 2%
 ---
-
-# Sincronizzazione di Forms adattivo con i modelli di modulo XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Sincronizzazione di moduli adattivi con i modelli di modulo XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -140,4 +140,4 @@ Anche il campo che è stato eliminato è contrassegnato da un&#39;icona per indi
 
 Pacchetto di contenuti per l’esempio in questo articolo
 
-[Ottieni file](assets/sample-xfa-af-sync-1.0.zip)
+[Ottieni il file](assets/sample-xfa-af-sync-1.0.zip)

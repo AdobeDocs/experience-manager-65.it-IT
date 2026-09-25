@@ -7,18 +7,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 1%
-
+source-wordcount: '1181'
+ht-degree: 2%
 ---
-
 # Utilizzare la modalità Layout per ridimensionare i componenti {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?lang=it&) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -30,7 +28,7 @@ Puoi utilizzare la modalità Layout per ridimensionare i componenti per tutti i 
 
 Seleziona **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore dell&#39;interfaccia di authoring dei moduli adattivi accanto all&#39;opzione **Anteprima**. Il modulo viene visualizzato in modalità Layout.
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Accedi all&#39;istanza di AEM Author e passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
 1. Crea un [modulo adattivo](../../forms/using/creating-adaptive-form.md) o aprirne uno esistente.
 1. Seleziona **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore accanto all&#39;opzione **Anteprima**. Il modulo viene visualizzato in modalità Layout.
 

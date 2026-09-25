@@ -6,11 +6,9 @@ role: User, Developer, Admin
 exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
 source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 7%
-
+source-wordcount: '222'
+ht-degree: 6%
 ---
-
 # Confrontare i moduli adattivi {#compare-two-forms}
 
 <!--
@@ -23,7 +21,7 @@ La funzione Confronto nei componenti core di Forms adattivi consente agli autori
 
 ## Prerequisito {#prerequisite-versioning}
 
-Per utilizzare la funzione Confronta in un modulo adattivo basato su componenti core, accertati che [Componenti core modulo adattivo](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sia abilitato nell&#39;ambiente Forms AEM 6.5.
+Per utilizzare la funzione Confronta in un modulo adattivo basato su componenti core, accertati che [Componenti core modulo adattivo](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sia abilitato nell&#39;ambiente Forms AEM 6.5.
 
 ## Confrontare moduli adattivi distinti {#compare-af-65}
 

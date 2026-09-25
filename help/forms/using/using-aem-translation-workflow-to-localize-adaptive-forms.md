@@ -1,8 +1,12 @@
 ---
-title: Utilizzo del flusso di lavoro di traduzione AEM per localizzare i moduli adattivi e i documenti di record
-description: Scopri come utilizzare i flussi di lavoro di traduzione dell’AEM per localizzare i moduli adattivi e i documenti di record.
+title: Utilizzare il flusso di lavoro per traduzione di AEM per localizzare i moduli adattivi e il documento record
+
+description: Scopri come utilizzare i flussi di lavoro di traduzione AEM per localizzare i moduli adattivi e i documenti di record.
+
+
 content-type: reference
 topic-tags: develop
+
 noindex: true
 feature: Adaptive Forms,Foundation Components
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
@@ -10,18 +14,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 14%
-
+source-wordcount: '814'
+ht-degree: 18%
 ---
-
-# Utilizzo del flusso di lavoro di traduzione AEM per localizzare i moduli adattivi e i documenti di record {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Utilizzare il flusso di lavoro per traduzione di AEM per localizzare i moduli adattivi e il documento record {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 I moduli localizzati consentono di fornire servizi a un pubblico più ampio in aree geografiche diverse. Il flusso di lavoro di traduzione Adobe Experience Manager consente di localizzare i moduli adattivi e i relativi documenti di record . Puoi utilizzare **traduzione automatica** o **traduttori umani** per localizzare un modulo adattivo.
 
-Questo articolo spiega il processo per utilizzare il flusso di lavoro di traduzione AEM con moduli adattivi e documenti di record.
+Questo articolo spiega il processo di utilizzo del flusso di lavoro di traduzione AEM con moduli adattivi e documenti di record.
 
 ## Localizzazione di un modulo adattivo e di un documento di record tramite traduzione automatica {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
@@ -46,9 +48,9 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in form
 
    Per ulteriori informazioni sulle impostazioni e sulla configurazione del documento record, vedi:
 
-[Configurazione modello del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [Configurazione modello del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
-[Impostazioni del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [Impostazioni del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Personalizzare le informazioni di branding del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e assicurarsi che le impostazioni locali del browser siano impostate sulla stessa lingua in cui è stato localizzato il modulo adattivo utilizzando la lingua del computer. Le impostazioni locali del browser consentono di localizzare le informazioni di branding nel documento di record.
 1. Per visualizzare il documento di record localizzato, selezionare Genera anteprima. Il documento di record PDF viene generato e aperto in una nuova scheda nel browser.
