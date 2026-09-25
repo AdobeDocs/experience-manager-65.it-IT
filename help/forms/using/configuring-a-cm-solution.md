@@ -49,4 +49,4 @@ Segui questi passaggi per definire l’URL dell’istanza Publish per la gestion
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-Per ulteriori informazioni sulla configurazione di Gestione corrispondenza, vedere [Proprietà di configurazione di Gestione corrispondenza](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).
+Per ulteriori informazioni sulla configurazione di Gestione corrispondenza, vedere [Proprietà di configurazione di Gestione corrispondenza](https://helpx.adobe.com/it/aem-forms/6-2/cm-configuration-properties.html).
