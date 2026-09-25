@@ -75,7 +75,7 @@ L&#39;interfaccia del modello deve essere annotata correttamente per definire qu
 
 ## Esempio {#example}
 
-I Componenti core hanno supportato l&#39;esportazione JSON dalla versione [1.1.0 dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e possono essere utilizzati come riferimento.
+I Componenti core hanno supportato l&#39;esportazione JSON dalla versione [1.1.0 dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e possono essere utilizzati come riferimento.
 
 Ad esempio, consulta l’implementazione del modello Sling del componente core Immagine e la relativa interfaccia con annotazioni.
 
@@ -90,9 +90,9 @@ Puoi trovare il codice di questa pagina su GitHub
 
 Per ulteriori dettagli, vedi:
 
-* L&#39;argomento [Frammenti di contenuto nella guida utente di Assets](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* L&#39;argomento [Frammenti di contenuto nella guida utente di Assets](https://helpx.adobe.com/it/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 * [Esportatore JSON per Content Services](/help/sites-developing/json-exporter.md)
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://helpx.adobe.com/it/experience-manager/core-components/using/content-fragment-component.html)

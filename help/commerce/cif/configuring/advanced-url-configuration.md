@@ -20,7 +20,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi alla SEO devono essere affrontati in molti Progetti AEM. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html).
+>L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi alla SEO devono essere affrontati in molti Progetti AEM. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=it).
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Molte implementazioni personalizzano questi URL a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
@@ -108,5 +108,5 @@ Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-veni
 ## Risorse aggiuntive
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappatura risorse AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Mappatura risorse AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=it)
 * [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
