@@ -28,7 +28,7 @@ Con i frammenti di contenuto che utilizzano contenuti strutturati, puoi fornire 
 
 >[!NOTE]
 >
->La funzionalità qui descritta è disponibile per tutti i Componenti core a partire dalla [versione 1.1.0 dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+>La funzionalità qui descritta è disponibile per tutti i Componenti core a partire dalla [versione 1.1.0 dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
 ## Esportatore JSON con componenti core per frammenti di contenuto {#json-exporter-with-content-fragment-core-components}
 
@@ -100,4 +100,4 @@ Per maggiori dettagli, cfr.:
 * [Authoring con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 * [Abilitazione dell’esportazione JSON per un componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e [Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)
