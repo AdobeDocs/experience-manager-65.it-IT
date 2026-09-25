@@ -1,6 +1,6 @@
 ---
 title: Utilizzo della reindicizzazione offline per ridurre i tempi di inattività durante un aggiornamento
-description: Scopri come utilizzare la metodologia di reindicizzazione offline per ridurre i tempi di inattività del sistema durante l’esecuzione di un aggiornamento dell’AEM.
+description: Scopri come utilizzare la metodologia di reindicizzazione offline per ridurre i tempi di inattività del sistema durante l’esecuzione di un aggiornamento AEM.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 0%
-
+source-wordcount: '1384'
+ht-degree: 2%
 ---
-
 # Utilizzo della reindicizzazione offline per ridurre i tempi di inattività durante un aggiornamento {#offline-reindexing-to-reduce-downtime-during-upgrades}
 
 ## Introduzione {#introduction}
@@ -26,7 +24,7 @@ Questa sezione descrive come utilizzare lo strumento Oak-run per reindicizzare l
 
 ## Panoramica {#overview}
 
-Le nuove versioni dell’AEM introducono modifiche alle definizioni dell’indice Oak man mano che il set di funzioni viene espanso. Le modifiche agli indici Oak forzano la reindicizzazione durante l’aggiornamento dell’istanza AEM. La reindicizzazione è costosa per le distribuzioni delle risorse in quanto il testo nelle risorse (ad esempio, il testo nel file PDF) viene estratto e indicizzato. Con gli archivi MongoMK, i dati vengono mantenuti sulla rete, aumentando ulteriormente il tempo necessario per la reindicizzazione.
+Le nuove versioni di AEM introducono modifiche alle definizioni dell’indice di Oak man mano che il set di funzioni viene espanso. Le modifiche agli indici Oak forzano la reindicizzazione durante l’aggiornamento dell’istanza AEM. La reindicizzazione è costosa per le distribuzioni delle risorse in quanto il testo nelle risorse (ad esempio, il testo nel file PDF) viene estratto e indicizzato. Con gli archivi MongoMK, i dati vengono mantenuti sulla rete, aumentando ulteriormente il tempo necessario per la reindicizzazione.
 
 Il problema che la maggior parte dei clienti si trova ad affrontare durante un aggiornamento è la riduzione della finestra di inattività. La soluzione consiste nel **saltare** l&#39;attività di reindicizzazione durante l&#39;aggiornamento. A tale scopo, crea i nuovi indici **prior** per eseguire l&#39;aggiornamento e importali semplicemente durante l&#39;aggiornamento.
 
@@ -105,9 +103,9 @@ Crea l’indice Lucene offline prima dell’aggiornamento. Se utilizzi MongoMK, 
 
 Per creare l’indice offline, effettua le seguenti operazioni:
 
-**1. Genera le definizioni dell&#39;indice Oak Lucene per la versione dell&#39;AEM di destinazione**
+**1. Genera le definizioni dell&#39;indice Oak Lucene per la versione AEM di destinazione**
 
-Effettua il dump delle definizioni di indice esistenti. Le definizioni degli indici che hanno subito modifiche sono state generate utilizzando il bundle dell’archivio Adobe Granite della versione dell’AEM di destinazione e oak-run.
+Effettua il dump delle definizioni di indice esistenti. Le definizioni degli indici che hanno subito modifiche sono state generate utilizzando il bundle dell’archivio Adobe Granite della versione AEM di destinazione e oak-run.
 
 Per eseguire il dump della definizione dell&#39;indice dall&#39;istanza AEM **source**, eseguire il comando seguente:
 
@@ -121,7 +119,7 @@ java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index
 
 Dove `datastore path` e `nodestore path` provengono dall&#39;istanza AEM **source**.
 
-Quindi, genera le definizioni dell&#39;indice dalla versione dell&#39;AEM **target** utilizzando il bundle dell&#39;archivio Granite della versione di destinazione.
+Quindi, genera le definizioni dell&#39;indice dalla versione di AEM **target** utilizzando il bundle dell&#39;archivio Granite della versione di destinazione.
 
 ```
 java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabbit.oak.index.IndexDefinitionUpdater --in indexing-definitions_source.json --out merge-index-definitions_target.json --initializer com.adobe.granite.repository.impl.GraniteContent
@@ -168,7 +166,7 @@ Ulteriori dettagli tecnici sono disponibili nella [documentazione oak-run per l&
 
 ### Importazione degli indici {#importing-indexes}
 
-Con AEM 6.4 e versioni più recenti, AEM ha la funzionalità incorporata di importare gli indici dal disco nella sequenza di avvio. La cartella `<repository>/indexing-result/indexes` viene controllata per verificare la presenza di dati di indice durante l&#39;avvio. È possibile copiare l&#39;indice precreato nella posizione precedente durante il [processo di aggiornamento](in-place-upgrade.md#performing-the-upgrade) prima di iniziare con la nuova versione del file jar dell&#39;AEM **target**. AEM lo importa nell’archivio e rimuove il punto di controllo corrispondente dal sistema. Pertanto, una reindicizzazione è completamente evitata.
+Con AEM 6.4 e versioni più recenti, AEM ha la funzionalità integrata per importare indici dal disco nella sequenza di avvio. La cartella `<repository>/indexing-result/indexes` viene controllata per verificare la presenza di dati di indice durante l&#39;avvio. È possibile copiare l&#39;indice precreato nella posizione precedente durante il [processo di aggiornamento](in-place-upgrade.md#performing-the-upgrade) prima di iniziare con la nuova versione del file jar di AEM **target**. AEM lo importa nell’archivio e rimuove il punto di controllo corrispondente dal sistema. Pertanto, una reindicizzazione è completamente evitata.
 
 ## Ulteriori suggerimenti e risoluzione dei problemi {#troubleshooting}
 
@@ -178,7 +176,7 @@ Di seguito sono riportati alcuni suggerimenti utili e istruzioni per la risoluzi
 
 Si consiglia di clonare il sistema di produzione e creare l’indice offline utilizzando il clone. Questo elimina qualsiasi potenziale impatto sul sistema di produzione. Tuttavia, il punto di controllo necessario per l’importazione dell’indice deve essere presente nel sistema di produzione. Pertanto, è fondamentale creare un punto di controllo prima di eseguire il clone.
 
-### Preparare un Runbook e un’esecuzione di prova {#prepare-a-runbook-and-trial-run}
+### Preparare un’esecuzione di Runbook e di prova {#prepare-a-runbook-and-trial-run}
 
 È consigliabile preparare un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=it#building-the-upgrade-and-rollback-runbook) ed eseguire alcune prove prima di eseguire l&#39;aggiornamento in produzione.
 

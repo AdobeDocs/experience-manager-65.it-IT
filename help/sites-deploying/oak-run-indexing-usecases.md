@@ -1,5 +1,5 @@
 ---
-title: Casi di utilizzo dell’indicizzazione Oak-run.jar
+title: Casi di utilizzo dell’indicizzazione oak-run.jar
 description: Scopri i vari casi d’uso per l’esecuzione dell’indicizzazione con lo strumento eseguito da Oak.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,30 +11,28 @@ feature: Deploying
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1435'
 ht-degree: 0%
-
 ---
+# Casi di utilizzo dell’indicizzazione oak-run.jar{#oak-run-jar-indexing-use-cases}
 
-# Casi di utilizzo dell’indicizzazione Oak-run.jar{#oak-run-jar-indexing-use-cases}
-
-Oak-run supporta l’indicizzazione dei casi d’uso sulla riga di comando senza dover orchestrare l’esecuzione di tali casi d’uso tramite la console JMX dell’AEM.
+Oak-run supporta l’indicizzazione dei casi d’uso sulla riga di comando senza dover orchestrare l’esecuzione di tali casi d’uso tramite la console JMX di AEM.
 
 I vantaggi principali dell’utilizzo dell’approccio del comando dell’indice oak-run.jar per la gestione degli indici di Oak sono:
 
 1. Il comando Oak-run index fornisce un nuovo set di strumenti di indicizzazione per AEM 6.4.
 1. L’esecuzione di Oak riduce il tempo di reindicizzazione, riducendo i tempi di reindicizzazione su archivi più grandi.
-1. Oak-run riduce il consumo di risorse durante la reindicizzazione nell&#39;AEM, con conseguente miglioramento generale delle prestazioni del sistema.
+1. Oak-run riduce il consumo di risorse durante la reindicizzazione in AEM, con conseguente miglioramento generale delle prestazioni del sistema.
 1. Oak-run fornisce la reindicizzazione fuori banda, supportando situazioni in cui la produzione deve essere disponibile e non può tollerare interventi di manutenzione o tempi di inattività altrimenti necessari per la reindicizzazione.
 
 Le sezioni seguenti forniscono comandi di esempio. Il comando di indicizzazione eseguito da Oak supporta tutte le impostazioni di NodeStore e BlobStore. Gli esempi forniti di seguito riguardano le impostazioni con FileDataStore e SegmentNodeStore.
 
 ## Caso d’uso 1: verifica di coerenza dell’indice {#usercase1indexconsistencycheck}
 
-Questo è un caso d’uso relativo al danneggiamento dell’indice. A volte non era possibile determinare quali degli indici fossero danneggiati. Adobe ha pertanto fornito strumenti che:
+Questo è un caso d’uso relativo al danneggiamento dell’indice. A volte non era possibile determinare quali degli indici fossero danneggiati. Pertanto, Adobe ha fornito strumenti che:
 
 1. Esegue controlli di coerenza dell’indice su tutti gli indici e fornisce una relazione sugli indici validi e non validi;
-1. Gli strumenti sono utilizzabili anche se l’AEM non è accessibile;
+1. La strumentazione è utilizzabile anche se AEM non è accessibile;
 1. È facile da usare.
 
 La ricerca di indici danneggiati può essere eseguita tramite l&#39;operazione `--index-consistency-check`:
@@ -73,7 +71,7 @@ Questo strumento può ora essere utilizzato dal supporto tecnico e dall&#39;ammi
 
 ## Caso d’uso 2: statistiche dell’indice {#usecase2indexstatistics}
 
-Per diagnosticare alcuni dei casi relativi all’Adobe delle prestazioni delle query, spesso era necessario disporre di una definizione di indice esistente e di statistiche relative all’indice provenienti dalla configurazione del cliente. Finora queste informazioni erano disseminate su più risorse. Per semplificare la risoluzione dei problemi, Adobe ha creato una serie di strumenti che:
+Per diagnosticare alcuni dei casi relativi alle prestazioni delle query, Adobe spesso richiedeva una definizione di indice esistente e statistiche relative all’indice provenienti dalla configurazione del cliente. Finora queste informazioni erano disseminate su più risorse. Per semplificare la risoluzione dei problemi, Adobe ha creato una serie di strumenti che:
 
 1. Scarica tutte le definizioni di indice presenti sul sistema in un singolo file JSON;
 
@@ -81,7 +79,7 @@ Per diagnosticare alcuni dei casi relativi all’Adobe delle prestazioni delle q
 
 1. Dump del contenuto dell’indice per l’analisi offline;
 
-1. È utilizzabile anche se l’AEM non è accessibile
+1. È utilizzabile anche se AEM non è accessibile
 
 Le operazioni di cui sopra possono ora essere eseguite mediante i seguenti comandi di indice delle operazioni:
 
@@ -116,7 +114,7 @@ Alcuni punti da notare sulla reindicizzazione:
 * La reindicizzazione è molto più lenta nelle `DocumentNodeStore` impostazioni rispetto alle `SegmentNodeStore` impostazioni in cui tutto il contenuto è locale;
 
 * Con la progettazione corrente, mentre si verifica la reindicizzazione, l’indicizzatore asincrono viene bloccato e tutti gli altri indici asincroni diventano obsoleti e non vengono aggiornati durante l’indicizzazione. Per questo motivo, se il sistema è in uso, gli utenti potrebbero non vedere risultati aggiornati;
-* La reindicizzazione comporta la navigazione dell’intero archivio che può comportare un carico elevato sulla configurazione dell’AEM e quindi incidere sull’esperienza dell’utente finale;
+* La reindicizzazione comporta la navigazione dell’intero archivio, che può comportare un carico elevato sulla configurazione di AEM e quindi influire sull’esperienza dell’utente finale;
 * Per un&#39;installazione di `DocumentNodeStore` in cui la reindicizzazione potrebbe richiedere molto tempo, se la connessione al database Mongo non riesce nel bel mezzo dell&#39;operazione, l&#39;indicizzazione dovrebbe essere riavviata da zero;
 
 * A volte, la reindicizzazione può richiedere molto tempo a causa dell’estrazione del testo. Questo è specifico per le configurazioni con molti file PDF, in cui il tempo impiegato per l’estrazione del testo può influire sul tempo di indicizzazione.
@@ -141,7 +139,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 Questo offre i seguenti vantaggi
 
-* Impatto minimo sull’esecuzione delle istanze AEM. La maggior parte delle letture può essere effettuata da server secondari e l’esecuzione di cache AEM non è influenzata negativamente a causa di tutte le traversali necessarie per la reindicizzazione;
+* Impatto minimo sull’esecuzione delle istanze di AEM. La maggior parte delle letture può essere effettuata da server secondari e l’esecuzione delle cache di AEM non subisce alcun impatto negativo a causa di tutti gli attraversamenti necessari per la reindicizzazione;
 * Gli utenti possono inoltre fornire un JSON di un indice nuovo o aggiornato tramite l&#39;opzione `--index-definitions-file`.
 
 ### Reindicizza - SegmentNodeStore {#reindexsegmentnodestore}
@@ -152,7 +150,7 @@ Per le installazioni `SegmentNodeStore` la reindicizzazione può essere eseguita
 
 Seguire la modalità stabilita per la reindicizzazione impostando il flag `reindex`.
 
-#### Reindicizzazione online - SegmentNodeStore - L’istanza AEM è in esecuzione {#onlinereindexsegmentnodestoretheaeminstanceisrunning}
+#### Reindicizzazione online - SegmentNodeStore - L’istanza di AEM è in esecuzione {#onlinereindexsegmentnodestoretheaeminstanceisrunning}
 
 Per le installazioni di `SegmentNodeStore`, solo un processo può accedere ai file dei segmenti in modalità di lettura-scrittura. Per questo motivo, alcune operazioni nell’indicizzazione oak-run richiedono l’esecuzione di passaggi manuali aggiuntivi.
 
@@ -169,9 +167,9 @@ Ciò comporterebbe quanto segue:
 
 In questo scenario, non è necessario arrestare il server AEM o eseguire il provisioning di una nuova istanza. Tuttavia, poiché l’indicizzazione comporta l’attraversamento dell’intero archivio, aumenta il carico di I/O sull’installazione, con un impatto negativo sulle prestazioni di runtime.
 
-#### Reindicizzazione online - SegmentNodeStore - L’istanza AEM è chiusa {#onlinereindexsegmentnodestoreaeminstanceisdown}
+#### Reindicizzazione online - SegmentNodeStore - L’istanza di AEM è chiusa {#onlinereindexsegmentnodestoreaeminstanceisdown}
 
-Per le installazioni di `SegmentNodeStore`, la reindicizzazione può essere eseguita tramite un singolo comando oak-run. Tuttavia, l’istanza AEM deve essere chiusa.
+Per le installazioni di `SegmentNodeStore`, la reindicizzazione può essere eseguita tramite un singolo comando oak-run. Tuttavia, l’istanza di AEM deve essere chiusa.
 
 Puoi attivare la reindicizzazione con il seguente comando:
 
@@ -179,7 +177,7 @@ Puoi attivare la reindicizzazione con il seguente comando:
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore  /path/to/segmentstore/
 ```
 
-La differenza tra questo approccio e quello descritto in precedenza è che la creazione di punti di controllo e l’importazione degli indici vengono eseguite automaticamente. Il rovescio della medaglia è che l&#39;AEM deve essere abbassato durante il processo.
+La differenza tra questo approccio e quello descritto in precedenza è che la creazione di punti di controllo e l’importazione degli indici vengono eseguite automaticamente. L’inconveniente è che AEM deve essere inattivo durante il processo.
 
 #### Reindicizzazione fuori banda - SegmentNodeStore {#outofbandreindexsegmentnodestore}
 
@@ -209,4 +207,4 @@ Il processo da considerare per questo caso d’uso è:
 
 1. Il JSON aggiornato viene quindi assegnato all’amministratore di sistema
 1. L&#39;amministratore di sistema adotta l&#39;approccio out-of-band e prepara l&#39;indice su un&#39;installazione diversa
-1. Al termine dell&#39;operazione, i file di indice generati vengono importati in un&#39;installazione AEM in esecuzione.
+1. Al termine dell’operazione, i file di indice generati vengono importati in un’installazione AEM in esecuzione.

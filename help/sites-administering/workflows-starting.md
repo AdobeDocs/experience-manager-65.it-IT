@@ -1,5 +1,5 @@
 ---
-title: Avvio dei flussi di lavoro
+title: Avviare i flussi di lavoro
 description: Scopri come amministrare i flussi di lavoro in Adobe Experience Manager in modo da poterli avviare utilizzando vari metodi, manualmente o automaticamente.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,23 +11,21 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 2%
-
+source-wordcount: '820'
+ht-degree: 3%
 ---
-
-# Avvio dei flussi di lavoro{#starting-workflows}
+# Avviare i flussi di lavoro{#starting-workflows}
 
 Durante l’amministrazione dei flussi di lavoro puoi avviarli utilizzando vari metodi:
 
 * Manualmente:
 
-   * Da un [modello flusso di lavoro](#workflow-models).
-   * Utilizzo di un pacchetto flusso di lavoro per [elaborazione batch](#workflow-packages-for-batch-processing).
+  * Da un [modello flusso di lavoro](#workflow-models).
+  * Utilizzo di un pacchetto flusso di lavoro per [elaborazione batch](#workflow-packages-for-batch-processing).
 
 * Automaticamente:
 
-   * In risposta alle modifiche al nodo; [utilizzo di un modulo di avvio](#workflows-launchers).
+  * In risposta alle modifiche al nodo; [utilizzo di un modulo di avvio](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -65,7 +63,7 @@ Utilizzando il **modulo di avvio** è possibile:
 * `/var/mobile`
 * `/var/statistics`
 
-   * Eccezione: le modifiche apportate ai nodi sottostanti `/var/statistics/tracking` *do* causano l&#39;avvio dei flussi di lavoro.
+  * Eccezione: le modifiche apportate ai nodi sottostanti `/var/statistics/tracking` *do* causano l&#39;avvio dei flussi di lavoro.
 
 Varie definizioni sono incluse nell&#39;installazione standard. Questi vengono utilizzati per attività di gestione delle risorse digitali e collaborazione social:
 
@@ -122,9 +120,9 @@ Un pacchetto di flusso di lavoro:
 
      Tipo di evento che avvia il flusso di lavoro:
 
-      * Creato
-      * Modificato
-      * Rimosso
+     * Creato
+     * Modificato
+     * Rimosso
 
    * **Tipo di nodo**
 
@@ -136,7 +134,7 @@ Un pacchetto di flusso di lavoro:
 
    * **Modalità di esecuzione**
 
-     Tipo di server a cui si applica il modulo di avvio del flusso di lavoro. Seleziona **Autore**, **Publish** o **Autore e Publish**.
+     Tipo di server a cui si applica il modulo di avvio del flusso di lavoro. Seleziona **Autore**, **Pubblica** o **Autore e pubblica**.
 
    * **Condizioni**
 
@@ -144,7 +142,7 @@ Un pacchetto di flusso di lavoro:
 
      name==User
 
-   * **Caratteristiche**
+   * **Funzioni**
 
      Elenco di funzionalità da attivare. Seleziona le funzioni richieste utilizzando il selettore a discesa.
 
@@ -164,8 +162,8 @@ Un pacchetto di flusso di lavoro:
 
      Controlla se il modulo di avvio del flusso di lavoro è attivato:
 
-      * Selezionare **Abilita** per avviare i flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
-      * Selezionare **Disattiva** quando il flusso di lavoro non deve essere eseguito (anche quando le proprietà di configurazione sono soddisfatte).
+     * Selezionare **Abilita** per avviare i flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
+     * Selezionare **Disattiva** quando il flusso di lavoro non deve essere eseguito (anche quando le proprietà di configurazione sono soddisfatte).
 
    * **Escludi elenco**
 
@@ -173,8 +171,8 @@ Un pacchetto di flusso di lavoro:
 
      Questa proprietà di avvio è un elenco di elementi separato da virgole: &quot;
 
-      * `property-name` ignora qualsiasi evento `jcr` attivato sul nome della proprietà specificato. &quot;
-      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `property-name` ignora qualsiasi evento `jcr` attivato sul nome della proprietà specificato. &quot;
+     * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Ad esempio:
 
