@@ -1,22 +1,24 @@
 ---
-title: Configurazione della pagina per la modifica in blocco delle proprietà di pagina
+title: Configurazione della pagina per la modifica in blocco delle proprietà pagina
+
 description: La modifica in blocco delle proprietà di pagina consente di modificare le proprietà di più pagine contemporaneamente
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Developer
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 0%
-
+source-wordcount: '419'
+ht-degree: 7%
 ---
-
-# Configurazione della pagina per la modifica in blocco delle proprietà di pagina {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configurazione della pagina per la modifica in blocco delle proprietà pagina {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [La modifica in blocco delle proprietà della pagina](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
 

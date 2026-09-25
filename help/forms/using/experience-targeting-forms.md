@@ -10,18 +10,16 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 0%
-
+source-wordcount: '846'
+ht-degree: 2%
 ---
-
 # Creare esperienze mirate in AEM Forms {#create-targeted-experiences-in-aem-forms}
 
 ## Integrare Adobe Target con AEM Forms {#integrate-adobe-target-with-aem-forms}
 
-Adobe Target integrato con AEM consente di creare esperienze personalizzate per un pubblico specifico. Con Adobe Target, puoi creare test A/B, misurare la risposta degli utenti e generare contenuti web personalizzati per gli utenti di destinazione. È possibile integrare Adobe Target con AEM Forms per eseguire il targeting dei componenti immagine dei moduli adattivi e delle comunicazioni interattive.
+L’integrazione di Adobe Target con AEM consente di creare esperienze personalizzate per un pubblico specifico. Con Adobe Target, puoi creare test A/B, misurare la risposta degli utenti e generare contenuti web personalizzati per gli utenti di destinazione. È possibile integrare Adobe Target con AEM Forms per eseguire il targeting dei componenti immagine dei moduli adattivi e delle comunicazioni interattive.
 
-Configurare Adobe Target nell&#39;AEM per utilizzarlo con moduli adattivi e comunicazioni interattive. Vedere [Creazione di una configurazione di destinazione nell&#39;AEM](/help/sites-administering/target.md) e [Aggiungere un framework](/help/sites-administering/target.md).
+Configura Adobe Target in AEM per utilizzarlo con moduli adattivi e comunicazioni interattive. Vedi [Creazione di una configurazione di destinazione in AEM](/help/sites-administering/target.md) e [Aggiungi un framework](/help/sites-administering/target.md).
 
 >[!NOTE]
 >
@@ -36,8 +34,8 @@ Configurare Adobe Target nell&#39;AEM per utilizzarlo con moduli adattivi e comu
 1. Nella pagina Attività, seleziona **Crea > Crea marchio**.
 1. Viene chiesto di scegliere un modello e di immettere le proprietà.
 
-   Selezionare un modello, quindi selezionare **Avanti.** Immetti il titolo del tuo marchio nella sezione Proprietà e seleziona **Crea.**
-Il tuo marchio è ora elencato nella pagina Attività.
+   Seleziona un modello, seleziona **Avanti.** Immetti il titolo del tuo marchio nella sezione Proprietà e seleziona **Crea.**
+   Il tuo marchio è ora elencato nella pagina Attività.
 
 1. Seleziona il brand nella pagina Attività.
 1. Nell&#39;area master del tuo marchio, seleziona **Crea** > **Crea attività**.
@@ -58,7 +56,7 @@ Il tuo marchio è ora elencato nella pagina Attività.
 
 1. Per abilitare Target, modifica il file .jsp per includere le librerie client utilizzate dal modello di moduli adattivi.
 
-   Nell&#39;implementazione predefinita, ad esempio, fai clic su **Strumenti** > **CRXDE Liti**.
+   Ad esempio, nell&#39;implementazione predefinita, fai clic su **Strumenti** > **CRXDE Lite**.
 
    Nella barra degli indirizzi di CRXDE Lite, digita /libs/fd/af/components/page/base/head.jsp per modificare il file head.jsp.
 

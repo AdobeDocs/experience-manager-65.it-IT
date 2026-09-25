@@ -11,14 +11,12 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 0%
-
+source-wordcount: '1125'
+ht-degree: 1%
 ---
-
 # Traduzione di contenuti generati dall&#39;utente {#translating-user-generated-content}
 
-La funzionalità di traduzione per le community Adobe Experience Manager (AEM) estende il concetto di [traduzione del contenuto della pagina](../../help/sites-administering/translation.md) ai contenuti generati dagli utenti (UGC) pubblicati nei siti della community tramite [componenti SCF (Social Component Framework)](scf.md).
+La funzione di traduzione per le community Adobe Experience Manager (AEM) estende il concetto di [traduzione del contenuto della pagina](../../help/sites-administering/translation.md) ai contenuti generati dagli utenti (UGC) pubblicati sui siti della community tramite [componenti SCF (Social Component Framework)](scf.md).
 
 La traduzione di UGC consente ai visitatori e ai membri del sito di sperimentare una community globale rimuovendo le barriere linguistiche.
 
@@ -32,7 +30,7 @@ Ad esempio, supponiamo che:
 
 ## Panoramica {#overview}
 
-Questa sezione descrive in modo specifico come funziona il servizio di traduzione con UGC. Si presuppone inoltre che tu abbia familiarità con le modalità di connessione di AEM a un [fornitore di servizi di traduzione](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) e di integrazione di tale servizio in un sito Web configurando un [framework di integrazione della traduzione](../../help/sites-administering/tc-tic.md).
+Questa sezione descrive in modo specifico come funziona il servizio di traduzione con UGC. Si presuppone inoltre che tu abbia familiarità con le modalità di connessione di AEM a un [fornitore di servizi di traduzione](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) e di integrazione del servizio in un sito Web configurando un [framework di integrazione della traduzione](../../help/sites-administering/tc-tic.md).
 
 Quando un fornitore di servizi di traduzione è associato al sito, ogni copia per lingua del sito mantiene i propri thread di UGC pubblicati tramite componenti SCF come i commenti.
 
@@ -77,7 +75,7 @@ Per creare un’integrazione di traduzione, che integra un connettore del serviz
 * Seleziona **[!UICONTROL Strumenti]**
 * Seleziona **[!UICONTROL Operazioni]**
 * Seleziona **[!UICONTROL Cloud]**
-* Seleziona **[!UICONTROL Cloud Service]**
+* Seleziona **[!UICONTROL Servizi cloud]**
 * Scorri verso il basso fino a **[!UICONTROL Integrazione traduzione]**
 
   ![integrazione-traduzione](assets/translation-integration.png)
@@ -115,21 +113,21 @@ Per istruzioni dettagliate, vedere [Creazione di una configurazione dell&#39;int
 * Scheda **[!UICONTROL Siti]**: può lasciare come valori predefiniti.
 
 * Scheda **[!UICONTROL Communities]**:
-   * **[!UICONTROL Provider traduzione]**
-Seleziona il fornitore di traduzione dall’elenco a discesa. Il valore predefinito è `microsoft`, il servizio di prova.
+  * **[!UICONTROL Provider traduzione]**
+    Seleziona il fornitore di traduzione dall’elenco a discesa. Il valore predefinito è `microsoft`, il servizio di prova.
 
-   * **[!UICONTROL Categoria contenuto]**
-Seleziona una categoria che descrive il contenuto da tradurre. Il valore predefinito è `General.`
+  * **[!UICONTROL Categoria contenuto]**
+    Seleziona una categoria che descrive il contenuto da tradurre. Il valore predefinito è `General.`
 
-   * **[!UICONTROL Scegli una lingua...]**
-(Facoltativo) Selezionando una lingua per l&#39;archiviazione dei contenuti generati dagli utenti (UGC), i post di tutte le copie per lingua vengono visualizzati in un&#39;unica conversazione globale. Per convenzione, scegliere le impostazioni locali per la [lingua base](sites-console.md#translation) del sito Web. La scelta di `No Common Store` disabilita la traduzione globale. Per impostazione predefinita, la traduzione globale è disabilitata.
+  * **[!UICONTROL Scegli una lingua...]**
+    (Facoltativo) Selezionando una lingua per l&#39;archiviazione dei contenuti generati dagli utenti (UGC), i post di tutte le copie per lingua vengono visualizzati in un&#39;unica conversazione globale. Per convenzione, scegliere le impostazioni locali per la [lingua base](sites-console.md#translation) del sito Web. La scelta di `No Common Store` disabilita la traduzione globale. Per impostazione predefinita, la traduzione globale è disabilitata.
 
 * Scheda **[!UICONTROL Assets]**: può lasciare come valori predefiniti.
 * Seleziona **[!UICONTROL OK]**
 
 #### Attivazione {#activation}
 
-Il nuovo servizio cloud di integrazione della traduzione deve essere attivato nell’ambiente Publish. Se associata a un sito web, se non ancora attivata, il flusso di lavoro di attivazione richiede di pubblicare questa configurazione del servizio cloud quando viene pubblicata la pagina a cui è associata.
+Il nuovo servizio cloud di integrazione della traduzione deve essere attivato nell’ambiente di pubblicazione. Se associata a un sito web, se non ancora attivata, il flusso di lavoro di attivazione richiede di pubblicare questa configurazione del servizio cloud quando viene pubblicata la pagina a cui è associata.
 
 ## Gestione delle impostazioni di traduzione {#managing-translation-settings}
 

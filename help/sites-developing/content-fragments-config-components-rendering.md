@@ -1,9 +1,13 @@
 ---
 title: Componenti di configurazione dei frammenti di contenuto per il rendering
+
 description: Componenti di configurazione dei frammenti di contenuto per il rendering
+
+
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 solution: Experience Manager, Experience Manager Sites
@@ -11,11 +15,9 @@ feature: Content Fragments
 role: Developer
 source-git-commit: 2e141ab04be33fea09ed7f6608dc9dcfaf2e50f1
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 6%
-
+source-wordcount: '475'
+ht-degree: 5%
 ---
-
 # Componenti di configurazione dei frammenti di contenuto per il rendering{#content-fragments-configuring-components-for-rendering}
 
 Esistono diversi [servizi avanzati](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relativi al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono farsi conoscere nel framework dei frammenti di contenuto.
@@ -132,7 +134,7 @@ Per alcune funzionalità (ad esempio, per eseguire il rendering solo di un inter
 
 ## Esempio {#example}
 
-Ad esempio, consulta quanto segue (su un’istanza di AEM preconfigurata):
+Ad esempio, consulta quanto segue (su un’istanza predefinita di AEM):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config

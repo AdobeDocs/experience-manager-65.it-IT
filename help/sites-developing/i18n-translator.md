@@ -11,14 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 1%
-
+source-wordcount: '2350'
+ht-degree: 2%
 ---
-
 # Utilizzo di Translator per gestire i dizionari{#using-translator-to-manage-dictionaries}
 
-L’AEM fornisce una console per gestire le varie traduzioni di testi utilizzati nell’interfaccia utente dei componenti. Questa console è disponibile all’indirizzo
+AEM fornisce una console per gestire le varie traduzioni di testi utilizzati nell’interfaccia utente dei componenti. Questa console è disponibile all’indirizzo
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
@@ -30,13 +28,13 @@ Lo strumento Traduttore e i dizionari gestiti servono per presentare l’interfa
 >
 >Modificare solo i dizionari creati per il progetto e presenti in `/apps`.
 >
->In questo strumento sono disponibili anche i dizionari di sistema per l’AEM. Non modificare i dizionari di sistema dell’AEM in quanto ciò può causare problemi con l’interfaccia utente dell’AEM. Inoltre, le modifiche possono andare perse in seguito a un aggiornamento. I dizionari di sistema AEM si trovano in `/libs`.
+>In questo strumento sono disponibili anche i dizionari di sistema di AEM. Non modificare i dizionari di sistema di AEM in quanto ciò può causare problemi con l’interfaccia utente di AEM. Inoltre, le modifiche possono andare perse in seguito a un aggiornamento. I dizionari di sistema di AEM si trovano in `/libs`.
 
 >[!NOTE]
 >
 >Anche se lo strumento Translator ha un’interfaccia utente classica, viene utilizzato per la traduzione di frasi indipendentemente dall’interfaccia in cui si trovano tali frasi.
 
-La traduttrice elenca i testi utilizzati in AEM insieme alle varie traduzioni linguistiche:
+Il traduttore elenca i testi utilizzati in AEM con le varie traduzioni in lingua insieme:
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
@@ -64,7 +62,7 @@ Da questa console è inoltre possibile aggiungere i dizionari i18n a un progetto
 
 Crea un dizionario per la gestione delle stringhe localizzate dell’interfaccia utente. Dopo aver creato un dizionario, puoi utilizzarlo per gestirlo con lo strumento di traduzione.
 
-1. Utilizzando CRXDE Lite, aggiungi il nodo principale ( `sling:Folder`) per il nuovo dizionario come struttura per contenere le definizioni del linguaggio:
+1. Utilizzando CRXDE Lite, aggiungi il nodo principale ( `sling:Folder`) per il nuovo dizionario come struttura per contenere le definizioni della lingua:
 
    ` /apps/<projectName>/i18n`
 
@@ -100,7 +98,7 @@ Utilizzare lo strumento di traduzione per gestire le stringhe nei dizionari. È 
 >
 >Modificare solo i dizionari creati per il progetto e presenti in `/apps`.
 >
->Non modificare i dizionari di sistema dell’AEM in quanto ciò può causare problemi con l’interfaccia utente dell’AEM. Inoltre, le modifiche possono andare perse in seguito a un aggiornamento. I dizionari di sistema AEM si trovano in `/libs`.
+>Non modificare i dizionari di sistema di AEM in quanto ciò può causare problemi con l’interfaccia utente di AEM. Inoltre, le modifiche possono andare perse in seguito a un aggiornamento. I dizionari di sistema di AEM si trovano in `/libs`.
 
 ### Aggiunta, modifica e rimozione di stringhe {#adding-changing-and-removing-strings}
 
@@ -142,7 +140,7 @@ Per aggiungere una stringa, attenersi alla procedura descritta di seguito.
    ![chlimage_1-209](assets/chlimage_1-209.png)
 
 1. Nella casella Stringa della finestra di dialogo Aggiungi stringa digitare la stringa inglese. Nella casella Commento digitare un suggerimento di traduzione per il traduttore, se necessario.
-1. Fare clic su OK.
+1. Fai clic su OK.
 1. Fai clic su Salva.
 
    ![chlimage_1-210](assets/chlimage_1-210.png)
@@ -178,11 +176,11 @@ La barra di ricerca nella parte inferiore dello strumento Translator fornisce le
 * **Filtra per testo:** Schema da associare alla stringa inglese, al commento o alle traduzioni. Nella tabella vengono visualizzati solo gli elementi che corrispondono in tutto o in parte alla serie.
 * **Modifiche: Qualsiasi, Modificato, Nuovo, Eliminato:** Mostra gli elementi modificati e non salvati.
 
-   * Qualsiasi: mostra gli elementi modificati, aggiunti o rimossi.
-   * Modificato: mostra gli elementi modificati.
-   * Nuovo: mostra gli elementi aggiunti.
-   * Eliminato: mostra gli elementi da rimuovere.
-   * Selezioni multiple: mostra gli elementi che hanno tutte le proprietà selezionate.
+  * Qualsiasi: mostra gli elementi modificati, aggiunti o rimossi.
+  * Modificato: mostra gli elementi modificati.
+  * Nuovo: mostra gli elementi aggiunti.
+  * Eliminato: mostra gli elementi da rimuovere.
+  * Selezioni multiple: mostra gli elementi che hanno tutte le proprietà selezionate.
 
 * **Ha un commento**: mostra gli elementi con commenti per i traduttori.
 * **Traduzioni mancanti:** mostra gli elementi in cui almeno una lingua non dispone di una traduzione.
@@ -205,7 +203,7 @@ Dopo aver aggiunto la stringa inglese a un dizionario, è possibile aggiungere l
    >
    >Modificare solo i dizionari creati per il progetto e presenti in `/apps`.
    >
-   >In questo strumento sono disponibili anche i dizionari di sistema per l’AEM. Non modificare i dizionari di sistema dell’AEM in quanto ciò può causare problemi con l’interfaccia utente dell’AEM. Inoltre, le modifiche possono andare perse in seguito a un aggiornamento. I dizionari di sistema AEM si trovano in `/libs`.
+   >In questo strumento sono disponibili anche i dizionari di sistema di AEM. Non modificare i dizionari di sistema di AEM in quanto ciò può causare problemi con l’interfaccia utente di AEM. Inoltre, le modifiche possono andare perse in seguito a un aggiornamento. I dizionari di sistema di AEM si trovano in `/libs`.
 
 1. Per modificare i testi tradotti di una delle stringhe, puoi effettuare le seguenti operazioni:
 
@@ -292,14 +290,14 @@ Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito
    * **Tipo**: `Multi-String`
    * **Valore**: l&#39;elenco delle lingue che si desidera visualizzare. Ad esempio:
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >
    >I codici della lingua devono essere in minuscolo.
 
-1. Fai clic su **Salva tutto** in CRXDE Lite e ricarica il traduttore. La griglia verrà aggiornata per mostrare le lingue definite.
+1. Fare clic su **Salva tutto** in CRXDE Lite e ricaricare il convertitore. La griglia verrà aggiornata per mostrare le lingue definite.
 
    >[!NOTE]
    >
@@ -309,7 +307,7 @@ Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito
 
 ### Come rendere le lingue disponibili agli autori {#making-languages-available-to-authors}
 
-Dopo aver definito un dizionario per una lingua nuova per l&#39;istanza AEM, è necessario renderlo disponibile per la selezione da parte degli autori (ad esempio, per l&#39;utilizzo in **Preferenze**):
+Dopo aver definito un dizionario per una lingua nuova per l&#39;istanza di AEM, è necessario renderlo disponibile per la selezione da parte degli autori (ad esempio, per l&#39;utilizzo in **Preferenze**):
 
 1. Per modificare l&#39;elenco delle lingue disponibili in **Preferenze** della console **Sicurezza**:
 
@@ -372,7 +370,7 @@ Per modificare le definizioni predefinite:
 
 ## Pubblicazione dei dizionari {#publishing-dictionaries}
 
-Integrare i dizionari nel processo di gestione del rilascio delle applicazioni AEM. Ad esempio, includi il dizionario nel pacchetto di contenuti dell’applicazione per la distribuzione nell’istanza Publish. Questa strategia offre i seguenti vantaggi:
+Incorpora i dizionari nel processo di gestione del rilascio delle applicazioni AEM. Ad esempio, includi il dizionario nel pacchetto di contenuti dell’applicazione per la distribuzione nell’istanza Publish. Questa strategia offre i seguenti vantaggi:
 
 * I dizionari sono disponibili per i componenti nel loro ambiente di pubblicazione.
 * Le modifiche alle stringhe dell’interfaccia utente del componente vengono distribuite insieme alle traduzioni aggiornate.
@@ -385,4 +383,4 @@ Analogamente, il test delle stringhe di dizionario deve essere eseguito come par
 
 >[!NOTE]
 >
->Quando si utilizza Dispatcher, è necessario [annullare la validità delle pagine memorizzate in cache](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html) per includere nuove stringhe di dicationary nelle stringhe dei componenti renderizzati.
+>Quando si utilizza Dispatcher, è necessario [annullare la validità delle pagine memorizzate in cache](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) per includere nuove stringhe di dicationary nelle stringhe dei componenti renderizzati.

@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 74%
-
+source-wordcount: '257'
+ht-degree: 73%
 ---
-
 # Traduzione di contenuti per siti multilingue {#translating-content-for-multilingual-sites}
 
 Automatizza la traduzione di contenuti di pagina, risorse e contenuti generati dall&#39;utente per creare e gestire siti web multilingue. Per automatizzare i flussi di lavoro di traduzione, puoi integrare fornitori di servizi di traduzione con AEM e creare progetti per la traduzione dei contenuti in più lingue. AEM supporta flussi di lavoro di traduzione umana e automatica.
@@ -35,6 +33,6 @@ Se il provider di servizi di traduzione non fornisce un connettore per l’integ
 >
 >Per utilizzare le funzioni Copia in lingua, l’utente deve essere membro del gruppo amministratori dei progetti.
 
-## Best practice   {#best-practices}
+## Best practice {#best-practices}
 
 La pagina [Best practice per la traduzione](/help/sites-administering/tc-bp.md) contiene informazioni importanti sull’implementazione.

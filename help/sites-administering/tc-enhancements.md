@@ -9,14 +9,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 26%
-
+source-wordcount: '687'
+ht-degree: 29%
 ---
-
 # Miglioramenti alla traduzione{#translation-enhancements}
 
-Questa pagina presenta miglioramenti e perfezionamenti incrementali delle funzionalità di gestione della traduzione AEM.
+Questa pagina presenta miglioramenti e perfezionamenti incrementali delle funzionalità di gestione della traduzione di AEM.
 
 ## Automazione progetto di traduzione {#translation-project-automation}
 
@@ -80,8 +78,8 @@ Per utilizzare questa funzione:
 
 * deve essere configurato un TMS per l’utilizzo in AEM.
 * Il connettore deve implementare il metodo [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * Il codice all’interno di questo metodo determina cosa accade alla richiesta di aggiornamento della memoria di traduzione.
-   * Il framework di traduzione di AEM invia nuovamente le coppie di valori stringa (traduzione originale e aggiornata) al TMS tramite questa implementazione del metodo.
+  * Il codice all’interno di questo metodo determina cosa accade alla richiesta di aggiornamento della memoria di traduzione.
+  * Il framework di traduzione di AEM invia nuovamente le coppie di valori stringa (traduzione originale e aggiornata) al TMS tramite questa implementazione del metodo.
 
 Nei casi in cui viene utilizzata una memoria di traduzione proprietaria, gli aggiornamenti della memoria di traduzione possono essere intercettati e inviati a una destinazione personalizzata.
 
@@ -102,7 +100,7 @@ Le directory principali della lingua possono ora essere raggruppate in nodi, ad 
 
 >[!NOTE]
 >
->Le radici della lingua possono avere qualsiasi nome di pagina, anziché solo il codice ISO della lingua. L&#39;AEM controlla sempre il percorso e il nome, ma se il nome della pagina non identifica una lingua, l&#39;AEM controlla la proprietà cq:language della pagina per l&#39;identificazione della lingua.
+>Le radici della lingua possono avere qualsiasi nome di pagina, anziché solo il codice ISO della lingua. AEM controlla sempre il percorso e il nome. Se tuttavia il nome della pagina non identifica una lingua, AEM controllerà la proprietà cq:language della pagina per l&#39;identificazione della lingua.
 
 ## Reporting sullo stato della traduzione {#translation-status-reporting}
 

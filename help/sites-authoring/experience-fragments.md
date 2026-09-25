@@ -7,11 +7,9 @@ feature: Authoring,Experience Fragments
 role: User
 source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 73%
-
+source-wordcount: '1541'
+ht-degree: 72%
 ---
-
 # Frammenti di esperienza{#experience-fragments}
 
 In Adobe Experience Manager (AEM) un frammento di esperienza è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all’interno delle pagine. Possono contenere qualsiasi componente.
@@ -32,7 +30,7 @@ Un frammento di esperienza:
 Puoi utilizzare Frammenti esperienza:
 
 * Se un autore desidera riutilizzare parti di una pagina (un frammento di un’esperienza), deve copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
-* Per supportare il caso d’uso di CMS headless. Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. È possibile che un sistema o punto di contatto di terzi prenda in carico questa particolare esperienza e in seguito la trasmetta all’utente finale.
+* Per supportare il caso d’uso del CMS headless. Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. È possibile che un sistema o punto di contatto di terzi prenda in carico questa particolare esperienza e in seguito la trasmetta all’utente finale.
 * Con [Gestione multisito (MSM)](/help/sites-administering/msm.md); come frammento di esperienza fa parte di una pagina. Questo vale sia per i singoli frammenti che per le cartelle in cui risiedono.
 
 >[!NOTE]
@@ -43,28 +41,28 @@ Puoi utilizzare Frammenti esperienza:
 >
 >Se riscontri problemi, contatta l’amministratore di sistema.
 
-## Quando utilizzare i frammenti esperienza?   {#when-should-you-use-experience-fragments}
+## Quando utilizzare i frammenti esperienza? {#when-should-you-use-experience-fragments}
 
 I Frammenti di esperienza sono indicati nei seguenti casi:
 
 * Quando desideri riutilizzare le esperienze.
 
-   * Per esperienze che riutilizzerai con contenuti simili o uguali. 
+  * Per esperienze che riutilizzerai con contenuti simili o uguali.
 
 * Quando utilizzi AEM come piattaforma di distribuzione di contenuti per terze parti.
 
-   * Per qualsiasi soluzione che utilizza AEM come piattaforma di distribuzione di contenuti. 
-   * Incorporazione di contenuti nei punti di contatto di terze parti
+  * Per qualsiasi soluzione che utilizza AEM come piattaforma di distribuzione di contenuti.
+  * Incorporazione di contenuti nei punti di contatto di terze parti
 
 * Se usi un’esperienza con diverse varianti o rappresentazioni.
 
-   * Varianti per un canale o per un contesto specifico. 
-   * Esperienze che è utile raggruppare (ad esempio, una campagna con esperienze diverse per i diversi canali)
+  * Varianti per un canale o per un contesto specifico.
+  * Esperienze che è utile raggruppare (ad esempio, una campagna con esperienze diverse per i diversi canali)
 
-* Quando utilizzi Commerce omnichannel.
+* Quando utilizzi Commerce omnicanale.
 
-   * Per condividere contenuti commerciali sui canali di [social media](/help/sites-developing/experience-fragments.md#social-variations) su larga scala
-   * Rendere i punti di contatto transazionali
+  * Per condividere contenuti commerciali sui canali di [social media](/help/sites-developing/experience-fragments.md#social-variations) su larga scala
+  * Rendere i punti di contatto transazionali
 
 ## Organizzazione dei frammenti esperienza {#organizing-your-experience-fragments}
 
@@ -303,7 +301,7 @@ Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per cias
 
 * Vai a master: apri la variante della pagina root in una nuova scheda
 * Rinomina
-* Elimina
+* Eliminare
 
 ![xf-13](assets/xf-13.png)
 
@@ -336,31 +334,31 @@ I dettagli del frammento vengono visualizzati in diverse posizioni:
 
    * **Base**
 
-      * **Titolo** - obbligatorio
+     * **Titolo** - obbligatorio
 
-      * **Descrizione**
-      * **Tag**
-      * **Numero totale di varianti** - solo informativo
+     * **Descrizione**
+     * **Tag**
+     * **Numero totale di varianti** - solo informativo
 
-      * **Numero di varianti web** - solo informativo
-      * **Numero di varianti non Web** - inf **solo informazioni**
+     * **Numero di varianti web** - solo informativo
+     * **Numero di varianti non Web** - inf **solo informazioni**
 
-      * **Numero di pagine che utilizzano questo frammento** - solo informazioni
+     * **Numero di pagine che utilizzano questo frammento** - solo informazioni
 
    * **Servizi cloud**
 
-      * **Configurazione cloud**
-      * **Configurazioni Cloud Service**
-      * **ID pagina Facebook**
-      * **Bacheca Pinterest**
+     * **Configurazione cloud**
+     * **Configurazioni Cloud Service**
+     * **ID pagina Facebook**
+     * **Bacheca Pinterest**
 
    * **Riferimenti**
 
-      * Un elenco di riferimenti.
+     * Un elenco di riferimenti.
 
    * **Stato social media**
 
-      * Dettagli delle varianti per social media.
+     * Dettagli delle varianti per social media.
 
 ## Rendering HTML semplice {#the-plain-html-rendition}
 
@@ -370,7 +368,7 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 >
 >Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
+## Esportazione di frammenti esperienza {#exporting-experience-fragments}
 
 Per impostazione predefinita, i frammenti di esperienza vengono forniti nel formato HTML. che può essere utilizzato sia da AEM che da canali di terze parti.
 
