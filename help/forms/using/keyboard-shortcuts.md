@@ -27,22 +27,22 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 | Chiude il browser Proprietà per il componente modulo adattivo selezionato | Ctrl+Alt+W | Comando+Alt+W |
 | Salva le modifiche nel browser Proprietà per il componente modulo adattivo selezionato | Ctrl+S | Comando+S |
 | Modifica regola per il componente modulo adattivo selezionato | CTRL+ALT+INVIO | Comando+Alt+Invio |
-| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&amp;ast; |
-| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
-| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
+| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&ast; |
+| Ripristina ultima modifica | CTRL+Y | Ctrl+S&ast; |
 | Selezione di più componenti | Maiusc+clic | Maiusc+clic |
-| Copia componente selezionato | Ctrl-C | Ctrl&amp;ast; |
-| Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&amp;ast; |
+| Copia componente selezionato | Ctrl-C | Ctrl&ast; |
+| Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&ast; |
 | Incolla componenti | Ctrl+V | Ctrl+V |
-| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&amp;O; |
-| Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&amp;ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | Ctrl+B&amp;ast; |
-| Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&amp;ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&amp;ST; |
+| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&O; |
+| Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | Ctrl+B&ast; |
+| Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&ST; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
+>I tasti di scelta rapida contrassegnati con &#39;&ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 >[!NOTE]
 >
@@ -58,13 +58,13 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 |---|---|---|
 | Apri il browser Proprietà per il componente selezionato in un tema | ALT+INVIO | ALT+INVIO |
 | Chiude il browser Proprietà per il componente selezionato in un tema | Ctrl+Alt+W | Comando+Alt+W |
-| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
-| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
-| Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&amp;ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&ast; |
+| Ripristina ultima modifica | CTRL+Y | Ctrl+S&ast; |
+| Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&ast; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
+>I tasti di scelta rapida contrassegnati con &#39;&ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 ## Browser contenuti  {#contentbrowser}
 
