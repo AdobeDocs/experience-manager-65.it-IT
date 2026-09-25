@@ -1,29 +1,31 @@
 ---
 title: Sviluppo ed estensione dei flussi di lavoro
-description: L’AEM fornisce diversi strumenti e risorse per creare modelli di flusso di lavoro, sviluppare passaggi del flusso di lavoro e interagire in modo programmatico con i flussi di lavoro
+
+description: AEM fornisce diversi strumenti e risorse per la creazione di modelli di flusso di lavoro, lo sviluppo di passaggi del flusso di lavoro e per l’interazione programmatica con i flussi di lavoro
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1460'
-ht-degree: 3%
-
+source-wordcount: '1494'
+ht-degree: 4%
 ---
-
 
 # Sviluppo ed estensione dei flussi di lavoro{#developing-and-extending-workflows}
 
-L’AEM fornisce diversi strumenti e risorse per creare modelli di flusso di lavoro, sviluppare passaggi del flusso di lavoro e interagire in modo programmatico con i flussi di lavoro.
+AEM fornisce diversi strumenti e risorse per la creazione di modelli di flusso di lavoro, lo sviluppo di passaggi del flusso di lavoro e per l’interazione programmatica con i flussi di lavoro.
 
 I flussi di lavoro consentono di automatizzare i processi per la gestione delle risorse e la pubblicazione dei contenuti nell’ambiente AEM. I flussi di lavoro sono composti da una serie di passaggi, ognuno dei quali esegue un task discreto. È possibile utilizzare dati logici e di runtime per decidere quando un processo può continuare e selezionare il passaggio successivo da uno dei vari passaggi possibili.
 
-Ad esempio, i processi aziendali per la creazione e la pubblicazione di pagine Web includono attività di approvazione e approvazione da parte di vari partecipanti. Questi processi possono essere modellati utilizzando i flussi di lavoro dell’AEM e applicati a contenuti specifici.
+Ad esempio, i processi aziendali per la creazione e la pubblicazione di pagine Web includono attività di approvazione e approvazione da parte di vari partecipanti. Questi processi possono essere modellati utilizzando i flussi di lavoro di AEM e applicati a contenuti specifici.
 
 Gli aspetti principali sono trattati di seguito, mentre le pagine che seguono forniscono ulteriori dettagli:
 
@@ -41,7 +43,7 @@ Gli aspetti principali sono trattati di seguito, mentre le pagine che seguono fo
 >* Partecipazione ai flussi di lavoro, vedi [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
 >* Per l&#39;amministrazione dei flussi di lavoro e delle istanze dei flussi di lavoro, vedere [Amministrazione dei flussi di lavoro](/help/sites-administering/workflows.md).
 >* Per un articolo della community end-to-end, vedi [Modifica di Digital Assets tramite i flussi di lavoro di Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=it)
->* Guarda il webinar [Ask the AEM Experts webinar on Workflows](https://communities.adobeconnect.com/p5s33iburd54/) (Domande agli esperti sui flussi di lavoro).
+>* Vedi [Webinar Ask the AEM Experts webinar on Workflows](https://communities.adobeconnect.com/p5s33iburd54/) (Domande agli esperti di sui flussi di lavoro).
 >* Le modifiche alle posizioni delle informazioni sono riportate in [Ristrutturazione dell&#39;archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) e [Best practice per i flussi di lavoro - Posizioni](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
@@ -132,7 +134,7 @@ Esistono vari tipi di flusso di lavoro, come indicato nella console Modelli di f
 
 * **Legacy**
 
-  Flussi di lavoro creati in una versione precedente dell’AEM. Questi flussi di lavoro possono essere mantenuti durante un aggiornamento, oppure esportati come pacchetto di flusso di lavoro dalla versione precedente, quindi importati nella nuova versione.
+  Flussi di lavoro creati in una versione precedente di AEM. Questi flussi di lavoro possono essere mantenuti durante un aggiornamento, oppure esportati come pacchetto di flusso di lavoro dalla versione precedente, quindi importati nella nuova versione.
 
 ### Flussi di lavoro transitori {#transient-workflows}
 
@@ -197,8 +199,8 @@ Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
    |---|---|
    | Passaggio 1 | Creare |
    | Passaggio 2 | Creare |
-   | Passaggio 3 | Rivedi |
-   | Passaggio 4 | Approva |
+   | Passaggio 3 | Rivedere |
+   | Passaggio 4 | Approvazione |
    | Passaggio 5 | Completato |
    | Passaggio 6 | Completato |
 
@@ -206,7 +208,7 @@ Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
 
 ### Flussi di lavoro e Forms {#workflows-and-forms}
 
-In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con i [componenti core modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=it) disponibili in un&#39;istanza AEM standard o con la [soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
+In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con i [componenti core del modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=it) disponibili in un&#39;istanza AEM standard o con la [soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Durante la creazione di un modulo, l’invio del modulo può essere facilmente associato a un modello di flusso di lavoro. Ad esempio, per archiviare il contenuto in una posizione specifica del repository o per notificare a un utente l&#39;invio del modulo e il relativo contenuto.
 

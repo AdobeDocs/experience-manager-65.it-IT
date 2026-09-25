@@ -11,14 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1078'
 ht-degree: 1%
-
 ---
-
 # Guida di riferimento per il processo dei flusso di lavoro{#workflow-process-reference}
 
-L’AEM fornisce diverse fasi del processo che possono essere utilizzate per creare modelli di flusso di lavoro. È inoltre possibile aggiungere passaggi di processo personalizzati per attività non incluse nei passaggi predefiniti (vedere [Creazione di modelli di flussi di lavoro](/help/sites-developing/workflows-models.md)).
+AEM fornisce diversi passaggi del processo che possono essere utilizzati per la creazione di modelli di flusso di lavoro. È inoltre possibile aggiungere passaggi di processo personalizzati per attività non incluse nei passaggi predefiniti (vedere [Creazione di modelli di flussi di lavoro](/help/sites-developing/workflows-models.md)).
 
 ## Caratteristiche del processo {#process-characteristics}
 
@@ -35,7 +33,7 @@ I passaggi del processo sono definiti da una classe Java™ o da un ECMAScript.
 
 Il payload è l’entità su cui agisce un’istanza del flusso di lavoro. Il payload viene selezionato in modo implicito dal contesto all’interno del quale viene avviata un’istanza di flusso di lavoro.
 
-Ad esempio, se un flusso di lavoro viene applicato a una pagina AEM *P*, *P* viene passato da un passaggio all&#39;altro con l&#39;avanzare del flusso di lavoro, con ogni passaggio che può facoltativamente agire su *P* in qualche modo.
+Ad esempio, se un flusso di lavoro viene applicato a una pagina di AEM *P*, *P* viene passato da un passaggio all&#39;altro man mano che il flusso di lavoro avanza, con ogni passaggio che, facoltativamente, agisce su *P* in qualche modo.
 
 Nel caso più comune, il payload è un nodo JCR nell’archivio (ad esempio, una pagina o una risorsa AEM). Un payload del nodo JCR viene passato come stringa costituita da un percorso JCR o da un identificatore JCR (UUID). A volte il payload può essere una proprietà JCR (passata come percorso JCR), un URL, un oggetto binario o un oggetto Java™ generico. Singoli passaggi del processo che agiscono sul payload solitamente si aspettano un payload di un determinato tipo, oppure agiscono in modo diverso a seconda del tipo di payload. Per ogni processo descritto di seguito, viene descritto il tipo di payload previsto, se presente.
 
@@ -135,7 +133,7 @@ Ad esempio:
 
 * Estrai i metadati dalla risorsa.
 * Crea tre miniature delle tre dimensioni specificate.
-* Crea un’immagine JPEG dalla risorsa, supponendo che la risorsa non sia originariamente un GIF o un PNG (in tal caso non viene creato alcun JPEG).
+* Crea un’immagine JPEG dalla risorsa, supponendo che la risorsa non sia originariamente un GIF o un PNG (nel qual caso non viene creato alcun JPEG).
 * Imposta la data dell’ultima modifica sulla risorsa.
 
 ```shell

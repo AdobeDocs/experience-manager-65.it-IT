@@ -1,37 +1,40 @@
 ---
 title: Importazione ed esportazione di risorse in AEM Forms
-description: Puoi importare ed esportare modelli e moduli adattivi da e verso le istanze AEM. Ciò consente di migrare i moduli o spostarli tra i sistemi.
+
+description: Puoi importare ed esportare moduli e modelli adattivi da e verso le istanze di AEM. Ciò consente di migrare i moduli o spostarli tra i sistemi.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 0%
-
+source-wordcount: '2540'
+ht-degree: 1%
 ---
-
 # Importazione ed esportazione di risorse in AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
-È possibile spostare moduli e risorse, temi, dizionari dati, frammenti di documenti e lettere correlati tra diverse istanze di AEM Forms. Tale spostamento è necessario per la migrazione di sistemi o lo spostamento di moduli da un server stage a un server di produzione. Per le risorse di cui è supportato il caricamento e l’importazione tramite l’interfaccia utente di AEM Forms, l’utilizzo dell’interfaccia utente di Forms è il metodo consigliato per l’esportazione o l’importazione. Non è consigliabile utilizzare Gestione pacchetti AEM per esportare o importare tali risorse.
+È possibile spostare moduli e risorse, temi, dizionari dati, frammenti di documenti e lettere correlati tra diverse istanze di AEM Forms. Tale spostamento è necessario per la migrazione di sistemi o lo spostamento di moduli da un server stage a un server di produzione. Per le risorse di cui è supportato il caricamento e l’importazione tramite l’interfaccia utente di AEM Forms, l’utilizzo dell’interfaccia utente di Forms è il metodo consigliato per l’esportazione o l’importazione. L’utilizzo di Gestione pacchetti di AEM per l’esportazione o l’importazione di tali risorse non è consigliato.
 
 >[!NOTE]
 >
->* In AEM 6.4 Forms, la struttura e i percorsi dell’archivio crx sono cambiati. Se importi risorse da una versione precedente a Forms AEM 6.4 e il modulo presenta alcune dipendenze dalla struttura precedente, devi esportare manualmente le dipendenze. Per informazioni dettagliate sulle modifiche apportate alla struttura e ai percorsi del repository, vedere [Ristrutturazione del repository in AEM](/help/sites-deploying/repository-restructuring.md).
+>* In AEM 6.4 Forms, la struttura e i percorsi dell’archivio crx sono cambiati. Se importi risorse da una versione precedente di in AEM 6.4 Forms e il modulo presenta alcune dipendenze dalla struttura precedente, devi esportare manualmente le dipendenze. Per informazioni dettagliate sulle modifiche apportate alla struttura e ai percorsi del repository, vedere [Ristrutturazione del repository in AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
 ## Scaricare o caricare risorse Forms &amp; Documents {#download-or-upload-forms-amp-documents-assets}
 
-L’interfaccia utente di AEM Forms consente di esportare le risorse da un’istanza AEM scaricandole come file binari o in un pacchetto CRX dell’AEM. Puoi quindi importare il pacchetto CRX dell’AEM scaricato o il file binario in un’altra istanza AEM.
+L’interfaccia utente di AEM Forms consente di esportare le risorse da un’istanza AEM scaricandole come file binari o in un pacchetto CRX di AEM. Puoi quindi importare il pacchetto CRX di AEM scaricato o il file binario in un’altra istanza di AEM.
 
 L’esportazione e l’importazione tramite l’interfaccia utente di AEM Forms sono supportate per tutte le risorse, ad eccezione dei modelli di moduli adattivi e dei criteri per il contenuto dei moduli adattivi. Pertanto, all’esportazione di un modulo adattivo dall’interfaccia utente di AEM Forms, il modello di modulo adattivo e i criteri del contenuto correlati non vengono esportati automaticamente come altre risorse correlate.
 
-Per questi tipi di risorse, devi utilizzare Gestione pacchetti AEM per creare un pacchetto CRX sul server AEM di origine e installare il pacchetto sul server di destinazione. Per informazioni sulla creazione e l&#39;installazione dei pacchetti, vedere [Utilizzo dei pacchetti](/help/sites-administering/package-manager.md).
+Per questi tipi di risorse, devi utilizzare Gestione pacchetti di AEM per creare un pacchetto CRX sul server AEM di origine e installare il pacchetto sul server di destinazione. Per informazioni sulla creazione e l&#39;installazione dei pacchetti, vedere [Utilizzo dei pacchetti](/help/sites-administering/package-manager.md).
 
 ### Scaricare risorse Forms e Documents {#download-forms-amp-documents-assets}
 
@@ -43,10 +46,10 @@ Per scaricare le risorse Forms e Documents:
 1. In Scarica risorse, scegli una delle seguenti opzioni e seleziona **Scarica**.
 
    * **Scarica come pacchetto CRX:** Utilizza l&#39;opzione per scaricare e spostare tutte le risorse selezionate e le relative dipendenze da un&#39;istanza AEM Forms a un&#39;altra. Scarica tutte le risorse e le cartelle come pacchetto crx. Qualsiasi risorsa di modulo, compresi i moduli creati in AEM (moduli adattivi, comunicazioni interattive e frammenti di moduli adattivi), i set di moduli, i modelli di modulo, i documenti PDF e le risorse (XSD, XFS, immagini) può essere scaricata come pacchetto dall’interfaccia utente di AEM Forms.
-Il vantaggio di scaricare le risorse come pacchetto è che scarica anche le risorse utilizzate dalla risorsa selezionata per il download. Ad esempio, se disponi di un modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando selezioni questo modulo adattivo e lo scarichi come pacchetto, il pacchetto scaricato contiene anche il modello del modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
+     Il vantaggio di scaricare le risorse come pacchetto è che scarica anche le risorse utilizzate dalla risorsa selezionata per il download. Ad esempio, se disponi di un modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando selezioni questo modulo adattivo e lo scarichi come pacchetto, il pacchetto scaricato contiene anche il modello del modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
 
    * **Scarica risorse come file binari:** Utilizza l&#39;opzione per scaricare solo modelli di modulo (XDP), PDF forms (PDF), documento (PDF) e risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file .zip le risorse dei moduli che hanno file binari, come XSD, XDP, immagini, PDF e XDP.
-Non puoi scaricare moduli adattivi, comunicazioni interattive, frammenti di moduli adattivi, temi e set di moduli con **Scarica risorse come file binari**. Per scaricare queste risorse, è necessario utilizzare l&#39;opzione **Scarica come pacchetto CRX**.
+     Non puoi scaricare moduli adattivi, comunicazioni interattive, frammenti di moduli adattivi, temi e set di moduli con **Scarica risorse come file binari**. Per scaricare queste risorse, è necessario utilizzare l&#39;opzione **Scarica come pacchetto CRX**.
 
    Le risorse selezionate vengono scaricate come archivio (file .zip).
 
@@ -79,7 +82,7 @@ Con AEM Forms puoi creare, scaricare o caricare temi. Un tema viene creato come 
 
 ### Download di un tema {#downloading-a-theme}
 
-In AEM Forms puoi esportare temi che puoi utilizzare in altri progetti o istanze. AEM consente di scaricare il tema come file zip, che puoi caricare sull’istanza.
+In AEM Forms puoi esportare temi che puoi utilizzare in altri progetti o istanze. AEM ti consente di scaricare il tema come file zip, che puoi caricare sull’istanza.
 
 Per scaricare un tema:
 
@@ -93,7 +96,7 @@ Puoi utilizzare i temi creati con predefiniti di stile sul progetto. Puoi import
 
 Per caricare un tema:
 
-1. Ad Experience Manager, passa a **Forms > Temi**.
+1. In Experience Manager, passa a **Forms > Temi**.
 1. Nella pagina Temi fare clic su **Crea > Caricamento file**.
 1. Nella richiesta di caricamento file, sfoglia e seleziona un pacchetto tema nel computer e fai clic su **Carica**.
 Il tema caricato è disponibile nella pagina dei temi.
@@ -123,7 +126,7 @@ Per condividere risorse, come dizionari dati, lettere e frammenti di documento, 
 
 ### Esporta tutte le risorse di Gestione della corrispondenza come pacchetto {#export-all-the-correspondence-management-assets-as-a-package}
 
-Utilizza questa opzione per scaricare tutte le risorse di Gestione della corrispondenza e le relative dipendenze come pacchetto da un’istanza di AEM forms.
+Utilizza questa opzione per scaricare tutte le risorse di Gestione della corrispondenza e le relative dipendenze come pacchetto da un’istanza di AEM Forms.
 
 Ad esempio, se Gestione corrispondenza include una lettera che utilizza un’immagine e un testo, il pacchetto scaricato contiene anche l’immagine e il testo relativi alla lettera. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa. Dopo aver scaricato il pacchetto (.cmp), puoi [importare il pacchetto in un&#39;istanza di AEM Forms diversa](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
@@ -158,7 +161,7 @@ Puoi importare le risorse esportate in un file .cmp. Un file con estensione cmp 
 
 >[!NOTE]
 >
->Durante l’importazione delle vecchie risorse di Gestione della corrispondenza per la migrazione, accedi con un account amministratore. Per ulteriori informazioni sulla migrazione delle vecchie risorse di Gestione della corrispondenza, consulta [Migrare le risorse di Gestione della corrispondenza ai moduli AEM 6.1](/help/forms/using/migration-utility.md).
+>Durante l’importazione delle vecchie risorse di Gestione della corrispondenza per la migrazione, accedi con un account amministratore. Per ulteriori informazioni sulla migrazione delle vecchie risorse di Gestione della corrispondenza, consulta [Migrare le risorse di Gestione della corrispondenza ai moduli di AEM 6.1](/help/forms/using/migration-utility.md).
 
 1. Nella pagina del dizionario dati, delle lettere o dei frammenti di documento, selezionare **Crea > Carica file** e selezionare il file .cmp.
 1. Gestione corrispondenza visualizza la finestra di dialogo Importa Assets con l’elenco delle risorse importate. Seleziona **Importa**.
@@ -174,7 +177,7 @@ Puoi importare le risorse esportate in un file .cmp. Un file con estensione cmp 
 
 ## Esportare un’applicazione del flusso di lavoro {#export-a-workflow-application}
 
-Puoi utilizzare Gestione pacchetti AEM per esportare le applicazioni del flusso di lavoro. La procedura è descritta di seguito:
+Puoi utilizzare AEM Package Manager per esportare le applicazioni del flusso di lavoro. La procedura è descritta di seguito:
 
 1. Apri Gestione pacchetti di AEM Forms. L&#39;URL di Gestione pacchetti è https://&lt;server>:&lt;porta>/crx/packmgr.
 1. Fare clic su **[!UICONTROL Crea pacchetto]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Nuovo pacchetto]**.
@@ -251,7 +254,7 @@ Nel pannello laterale puoi usare quanto segue per limitare i risultati della ric
 
 * Directory di ricerca
 * Tag
-* Criteri di ricerca, ad esempio Date modificate, Stato Publish, Stato LiveCopy.
+* Criteri di ricerca, ad esempio Date modificate, Stato pubblicazione, Stato LiveCopy.
 
 Il pannello laterale consente inoltre di salvare le impostazioni di ricerca con i nomi desiderati.
 

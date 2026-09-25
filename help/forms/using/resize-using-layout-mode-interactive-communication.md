@@ -1,5 +1,5 @@
 ---
-title: Utilizza la modalità Layout per ridimensionare i componenti per la comunicazione interattiva
+title: Utilizzare la modalità Layout per ridimensionare i componenti per la comunicazione interattiva
 description: Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
@@ -7,11 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
-
+source-wordcount: '898'
+ht-degree: 1%
 ---
-
 # Utilizzare la modalità Layout per ridimensionare i componenti {#use-layout-mode-to-resize-components}
 
 L’interfaccia di authoring del canale web di comunicazione interattiva consente di ridimensionare i componenti utilizzando la modalità Layout. Trascinate i punti blu all&#39;interno delle colonne per definire i punti iniziale e finale per posizionare i componenti. I punti blu vengono visualizzati dopo aver toccato il componente nella griglia reattiva. La griglia reattiva è costituita da 12 colonne uguali. L&#39;ombreggiatura dei colori bianco e blu nelle colonne alternative differenzia una colonna dall&#39;altra.
@@ -26,7 +24,7 @@ Puoi utilizzare la modalità Layout per ridimensionare i componenti per tutti i 
 
 Seleziona **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore dell&#39;interfaccia di creazione delle comunicazioni interattive accanto all&#39;opzione **Anteprima**. Il modulo viene visualizzato in modalità Layout.
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Accedi all&#39;istanza di AEM Author e passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
 1. Crea una [comunicazione interattiva](../../forms/using/create-interactive-communication.md) o apri una comunicazione esistente.
 1. Seleziona **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore accanto all&#39;opzione **Anteprima**. Il modulo viene visualizzato in modalità Layout.
 

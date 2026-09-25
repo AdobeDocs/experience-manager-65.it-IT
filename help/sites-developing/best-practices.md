@@ -1,44 +1,46 @@
 ---
-title: Best practice per gli sviluppatori AEM
-description: I team di progettazione e consulenza Adobe hanno sviluppato un set completo di best practice per gli sviluppatori AEM.
+title: Best practice per gli sviluppatori di AEM
+
+description: I team tecnici e di consulenza di Adobe hanno sviluppato un set completo di best practice per sviluppatori AEM.
+
+
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
-
+source-wordcount: '497'
+ht-degree: 7%
 ---
-
 # Best practice{#best-practices}
 
 ## Procedure consigliate per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
-I team di progettazione e consulenza Adobe hanno sviluppato un set completo di best practice per gli sviluppatori AEM. Gli sviluppatori Adobe aderiscono a queste best practice durante lo sviluppo di aggiornamenti di base dei prodotti AEM e del codice cliente per le implementazioni dei clienti.
+I team tecnici e di consulenza di Adobe hanno sviluppato un set completo di best practice per sviluppatori AEM. Gli sviluppatori di Adobe si attengono a queste best practice durante lo sviluppo di aggiornamenti di base dei prodotti AEM e del codice cliente per le implementazioni dei clienti.
 
-Prima di iniziare il progetto di sviluppo dell’AEM, esamina le seguenti best practice:
+Prima di iniziare il progetto di sviluppo AEM, rivedi le best practice:
 
 * [Procedure di sviluppo](/help/sites-developing/development-practices.md)
 * [Architettura dei contenuti](/help/sites-developing/content-architecture.md)
-* [Architettura software](/help/sites-developing/software-architecture.md)
+* [Architettura del software](/help/sites-developing/software-architecture.md)
 * [Suggerimenti per la codifica](/help/sites-developing/coding-tips.md)
 * [Insidie del codice](/help/sites-developing/code-pitfalls.md)
 * [Interazione JCR](/help/sites-developing/jcr-integration.md)
 * [Bundle OSGi](/help/sites-developing/osgi-bundles.md)
-* [Best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=it)
+* [Best practice per l’API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=it)
 
 ### Informazioni aggiuntive sulle best practice {#additional-best-practices-information}
 
 Nelle seguenti aree è disponibile una documentazione specifica per lo sviluppo di best practice:
 
 * [Sites](#sites)
-* [Communities](/help/sites-developing/best-practices.md#communities)
+* [Community](/help/sites-developing/best-practices.md#communities)
 * [Strumenti/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
 I documenti specifici sono descritti e collegati nelle tabelle seguenti.
@@ -46,7 +48,7 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 Per le best practice sull’amministrazione, la distribuzione e la manutenzione o l’authoring, consulta una delle seguenti sezioni:
 
 * [Amministrazione delle best practice](/help/sites-administering/administer-best-practices.md)
-* [Best practice di authoring](/help/sites-authoring/best-practices.md)
+* [Authoring delle best practice](/help/sites-authoring/best-practices.md)
 * [Implementazione delle best practice](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}
@@ -78,7 +80,7 @@ Per la gestione e l’authoring dei contenuti del sito web, vengono descritte al
  </tbody>
 </table>
 
-## Communities {#communities}
+## Community {#communities}
 
 [AEM Communities](/help/communities/overview.md) semplifica la creazione e la gestione di comunità locali.
 
@@ -91,7 +93,7 @@ Di seguito sono descritte alcune best practice per le community:
 
 ## Strumenti/HTL {#tooling-htl}
 
-HTL (HTML Template Language) è un nuovo sistema di modelli di HTML introdotto con AEM 6.0. Sostituisce JSP ed ESP come sistema di modelli preferito dell’AEM.
+HTML Template Language (HTL) è un nuovo sistema di modelli di HTML, introdotto con AEM 6.0. Sostituisce JSP ed ESP come sistema di modelli preferito di AEM.
 
 |  |  |  |
 |---|---|---|

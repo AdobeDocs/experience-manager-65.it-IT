@@ -1,6 +1,8 @@
 ---
 title: Strumenti AEM Modernization Tools
-description: Gli strumenti di modernizzazione dell’AEM consentono di convertire le funzioni legacy dell’AEM alla tecnologia più recente
+
+description: Gli strumenti di modernizzazione AEM consentono di convertire le funzioni legacy di AEM alla tecnologia più recente
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
@@ -9,14 +11,12 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 46%
-
+source-wordcount: '95'
+ht-degree: 54%
 ---
+# Strumenti di modernizzazione AEM {#modernization-tools}
 
-# Strumenti AEM Modernization Tools {#modernization-tools}
-
-[Gli strumenti di modernizzazione dell&#39;AEM](https://opensource.adobe.com/aem-modernize-tools/) consentono di convertire facilmente:
+[Gli strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/) consentono di convertire facilmente:
 
 * [Modelli statici](page-templates-static.md) in [modelli modificabili](page-templates-editable.md)
 * [Configurazioni progettazione](page-templates-static.md) in [Criteri](page-templates-editable.md)

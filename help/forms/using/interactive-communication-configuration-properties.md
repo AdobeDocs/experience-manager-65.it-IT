@@ -1,22 +1,25 @@
 ---
 title: Proprietà di configurazione delle comunicazioni interattive
+
 description: Modificare le proprietà di configurazione predefinite per le comunicazioni interattive
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 6%
-
+source-wordcount: '614'
+ht-degree: 9%
 ---
-
 # Proprietà di configurazione delle comunicazioni interattive{#interactive-communications-configuration-properties}
 
 Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del pacchetto del componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Gli autori di comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando la pagina **Configurazione console Web Adobe Experience Manager**.
@@ -55,7 +58,7 @@ Selezionare **Configurazione frammenti di documento** nella pagina **Configurazi
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>Rientro</td> 
@@ -104,7 +107,7 @@ Selezionare **Crea configurazione corrispondenza** nella pagina **Configurazione
   </tr> 
   <tr> 
    <td>Abilitare l’incorporamento di font in PDF</td> 
-   <td><p>Selezionare la casella di controllo per abilitare l'incorporamento dei caratteri nei documenti PDF. Dopo aver selezionato questa opzione, puoi incorporare nuovi font dopo aver generato o visualizzato in anteprima i documenti PDF utilizzando l’interfaccia utente di Agent. Utilizza il canale Stampa di comunicazione interattiva per generare e visualizzare in anteprima i documenti PDF.</p> <p>L'incorporamento di tipi di carattere in un documento PDF è utile se un tipo di carattere è disponibile in un computer utilizzato per generare il PDF e non è disponibile nel computer client che accede al PDF.</p> <p>Per ulteriori informazioni sull'incorporamento dei caratteri, vedere <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizzare l'editor di testo</a>.</p> </td> 
+   <td><p>Selezionare la casella di controllo per abilitare l'incorporamento dei caratteri nei documenti di PDF. Dopo aver selezionato questa opzione, puoi incorporare nuovi font dopo aver generato o visualizzato in anteprima i documenti di PDF utilizzando l’interfaccia utente di Agent. Utilizza il canale di stampa della comunicazione interattiva per generare e visualizzare in anteprima documenti PDF.</p> <p>L'incorporamento di tipi di carattere in un documento PDF è utile se un tipo di carattere è disponibile in un computer utilizzato per generare PDF e non è disponibile nel computer client che accede a PDF.</p> <p>Per ulteriori informazioni sull'incorporamento dei caratteri, vedere <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizzare l'editor di testo</a>.</p> </td> 
    <td>Non selezionato</td> 
    <td>Non applicabile</td> 
   </tr> 
@@ -137,7 +140,7 @@ Selezionare **Configurazione tema modulo adattivo e canale web comunicazione int
    <td>Nome elenco tipi di carattere</td> 
    <td>Elenco di font disponibili per la creazione di Forms adattivi e comunicazioni interattive.</td> 
    <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impatto</p> <p>Palatino Linotype</p> </td> 
-   <td>Tutti i font server Adobe validi</td> 
+   <td>Tutti i font validi per server Adobe</td> 
   </tr> 
  </tbody> 
 </table>

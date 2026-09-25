@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 6%
-
+source-wordcount: '325'
+ht-degree: 10%
 ---
-
 # AEM Forms su gruppi e privilegi OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
 | Versione | Collegamento articolo |
@@ -40,7 +38,7 @@ Dopo aver installato il pacchetto del componente aggiuntivo [AEM Forms](../../fo
     <ul> 
      <li>Creare, visualizzare in anteprima, pubblicare e inviare moduli adattivi</li> 
      <li>Creare, visualizzare in anteprima e pubblicare comunicazioni interattive e frammenti di documenti</li> 
-     <li>Caricare risorse in un’istanza AEM</li> 
+     <li>Caricare risorse in un’istanza di AEM</li> 
      <li>Creare temi</li> 
     </ul> </td> 
   </tr>
@@ -97,7 +95,7 @@ Dopo aver installato il pacchetto del componente aggiuntivo [AEM Forms](../../fo
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utilizza le applicazioni della casella in entrata AEM<br /> <strong>Nota: </strong>Per accedere all'interfaccia utente di Interactive Communications Agent nella casella in entrata AEM è necessario disporre di assegnazioni di gruppi di utenti di cm-agent e utenti del flusso di lavoro.</li> 
+     <li>Utilizza le applicazioni Casella in entrata AEM<br /> <strong>Nota: </strong>Per accedere all'interfaccia utente di Interactive Communications Agent nella Casella in entrata AEM è necessario disporre di assegnazioni di gruppi cm-agent-users e workflow-users.</li> 
      <li>Gestire le istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>

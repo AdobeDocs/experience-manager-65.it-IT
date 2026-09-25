@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 6%
-
+source-wordcount: '266'
+ht-degree: 10%
 ---
-
 # Parole chiave per moduli adattivi {#adaptive-forms-keywords}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
@@ -76,7 +74,7 @@ Le parole chiave per i moduli adattivi sono identificatori predefiniti e riserva
   <tr>
    <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
-   <td><p>elementi figlio</p> </td>
+   <td><p>elementi secondari</p> </td>
   </tr>
   <tr>
    <td><p>valore</p> </td>

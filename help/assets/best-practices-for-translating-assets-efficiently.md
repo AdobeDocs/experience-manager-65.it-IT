@@ -8,11 +8,9 @@ exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
-
+source-wordcount: '423'
+ht-degree: 3%
 ---
-
 # Best practice per tradurre le risorse {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] supporta flussi di lavoro multilingue per la traduzione di file binari, metadati e tag per risorse digitali in più lingue e per la gestione delle risorse tradotte. Per informazioni dettagliate, vedere [Assets multilingue](multilingual-assets.md).
@@ -29,7 +27,7 @@ File Data Store e Amazon S3 Data Store forniscono un&#39;infrastruttura di stora
 
 Puoi anche apportare alcune modifiche alla configurazione di un paio di flussi di lavoro e al framework di integrazione della traduzione per semplificare ulteriormente il processo.
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * [Configura archivio dati file](/help/sites-deploying/data-store-config.md)
    * [Configurare Amazon S3 Data Store](/help/sites-deploying/data-store-config.md)

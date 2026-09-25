@@ -1,8 +1,12 @@
 ---
-title: Creazione della Guida contestuale per i campi modulo
+title: Creazione di una guida contestuale per i campi modulo
+
 description: AEM Forms consente di aggiungere assistenza contestuale ai campi e ai pannelli dei moduli adattivi, come testo o contenuti multimediali avanzati, inclusi i video.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
@@ -10,12 +14,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
-
+source-wordcount: '444'
+ht-degree: 7%
 ---
-
-# Creazione della Guida contestuale per i campi modulo{#authoring-in-context-help-for-form-fields}
+# Creazione di una guida contestuale per i campi modulo{#authoring-in-context-help-for-form-fields}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -56,7 +58,7 @@ Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazio
 
 ![Aggiunta di rich media come guida contestuale per i campi modulo](assets/long-descriptions.png)
 
-Se si aggiunge una descrizione lunga, verrà visualizzato **?Icona** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
+Se si aggiunge una descrizione lunga, verrà visualizzata una **?** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
 
 ![Esempio di aiuto nel contesto di rich media](assets/photoshop.png)
 
@@ -66,6 +68,6 @@ Oltre alla guida contestuale per i campi modulo, è possibile specificare la gui
 
 ![Aggiunta della guida contestuale a un pannello del modulo](assets/panel-level-help.png)
 
-L&#39;aggiunta della Guida per il pannello visualizza **?Icona** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
+L&#39;aggiunta della Guida per il pannello visualizza un **?** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
 
 ![Esempio di guida contestuale a livello di pannello del modulo](assets/photoshop-1.png)

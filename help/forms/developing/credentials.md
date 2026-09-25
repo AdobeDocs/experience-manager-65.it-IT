@@ -1,21 +1,24 @@
 ---
 title: Utilizzo delle credenziali
+
 description: Importa le credenziali in AEM Forms utilizzando l’API di Trust Manager e l’API Java. Inoltre, scopri come eliminare le credenziali utilizzando l’API di Trust Manager e l’API Java.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 0%
-
+source-wordcount: '1100'
+ht-degree: 2%
 ---
-
 # Utilizzo delle credenziali {#working-with-credentials}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -25,7 +28,7 @@ ht-degree: 0%
 Una credenziale contiene le informazioni sulla chiave privata necessarie per la firma o l&#39;identificazione dei documenti. Un certificato è costituito da informazioni sulla chiave pubblica configurate per l&#39;attendibilità. AEM Forms utilizza certificati e credenziali per diversi scopi:
 
 * Le estensioni Acrobat Reader DC utilizzano una credenziale per abilitare i diritti di utilizzo di Adobe Reader nei documenti PDF. (Vedi [Applicazione dei diritti di utilizzo ai documenti di PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
-* Il servizio di firma accede a certificati e credenziali durante l&#39;esecuzione di operazioni quali la firma digitale di documenti PDF. (Vedi [Documenti PDF Con Firma Digitale](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+* Il servizio di firma accede a certificati e credenziali durante l&#39;esecuzione di operazioni quali la firma digitale di documenti PDF. (Vedi [Firma digitale dei documenti di PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 È possibile interagire in modo programmatico con il servizio Credential utilizzando l’API Java di Trust Manager. Puoi eseguire le seguenti attività:
 
@@ -38,7 +41,7 @@ Una credenziale contiene le informazioni sulla chiave privata necessarie per la 
 
 ## Importazione delle credenziali tramite l&#39;API di Gestione trust {#importing-credentials-by-using-the-trust-manager-api}
 
-È possibile importare in modo programmatico una credenziale in AEM Forms utilizzando l’API di Trust Manager. È ad esempio possibile importare le credenziali utilizzate per firmare un documento PDF. (Vedi [Documenti Di PDF Con Firma Digitale](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
+È possibile importare in modo programmatico una credenziale in AEM Forms utilizzando l’API di Trust Manager. È ad esempio possibile importare le credenziali utilizzate per firmare un documento di PDF. (Vedi [Firma digitale dei documenti di PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
 Quando si importa una credenziale, è necessario specificare un alias per la credenziale. L&#39;alias viene utilizzato per eseguire un&#39;operazione Forms che richiede una credenziale. Una volta importata, è possibile visualizzare una credenziale nella console di amministrazione, come illustrato nella figura seguente. L&#39;alias per le credenziali è *Secure*.
 
@@ -118,10 +121,10 @@ Importa una credenziale in AEM Forms utilizzando l’API di Trust Manager (Java)
    * Creare una matrice di stringhe contenente un elemento. Assegnare il valore `truststore.usage.type.sign` all&#39;elemento.
    * Richiama il metodo `importCredential` dell&#39;oggetto `CredentialServiceClient` e passa i seguenti valori:
 
-      * Valore stringa che specifica il valore alias per le credenziali.
-      * L&#39;istanza `com.adobe.idp.Document` che memorizza le credenziali.
-      * Valore stringa che specifica la password associata alle credenziali.
-      * Matrice di stringhe contenente il valore di utilizzo. È ad esempio possibile specificare il valore `truststore.usage.type.sign`. Per importare le credenziali di un&#39;estensione di Reader, specificare `truststore.usage.type.lcre`.
+     * Valore stringa che specifica il valore alias per le credenziali.
+     * L&#39;istanza `com.adobe.idp.Document` che memorizza le credenziali.
+     * Valore stringa che specifica la password associata alle credenziali.
+     * Matrice di stringhe contenente il valore di utilizzo. È ad esempio possibile specificare il valore `truststore.usage.type.sign`. Per importare le credenziali di un&#39;estensione Reader, specificare `truststore.usage.type.lcre`.
 
 **Consulta anche**
 
@@ -200,7 +203,7 @@ Eliminare una credenziale da AEM Forms utilizzando l’API di gestione del trust
 
 [Eliminazione delle credenziali tramite l’API di Gestione trust](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[Quick Start (modalità SOAP): eliminazione delle credenziali tramite l’API Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Guida rapida (modalità SOAP): eliminazione delle credenziali tramite l’API Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

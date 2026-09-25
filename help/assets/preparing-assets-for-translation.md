@@ -8,11 +8,9 @@ exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 1%
-
+source-wordcount: '449'
+ht-degree: 4%
 ---
-
 # Preparare le risorse per la traduzione {#preparing-assets-for-translation}
 
 Risorse multilingue significa risorse con binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag per le risorse esistono in una lingua e vengono quindi tradotti in altre lingue per l’utilizzo in progetti multilingue.

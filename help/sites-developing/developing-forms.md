@@ -1,10 +1,14 @@
 ---
-title: Sviluppo di Forms (interfaccia classica)
+title: Sviluppo di moduli (interfaccia classica)
+
 description: Scopri come sviluppare moduli per l’interfaccia classica di Adobe Experience Manager
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
+
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
 solution: Experience Manager, Experience Manager Sites
@@ -12,12 +16,10 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 0%
-
+source-wordcount: '1953'
+ht-degree: 1%
 ---
-
-# Sviluppo di Forms (interfaccia classica){#developing-forms-classic-ui}
+# Sviluppo di moduli (interfaccia classica){#developing-forms-classic-ui}
 
 La struttura di base di un modulo è la seguente:
 
@@ -25,7 +27,7 @@ La struttura di base di un modulo è la seguente:
 * Elementi modulo
 * Fine modulo
 
-Tutti questi elementi vengono realizzati con una serie di [componenti modulo](/help/sites-authoring/default-components.md#form) predefiniti, disponibili in un&#39;installazione AEM standard.
+Tutti questi elementi vengono realizzati con una serie di [componenti modulo](/help/sites-authoring/default-components.md#form) predefiniti, disponibili in un&#39;installazione standard di AEM.
 
 Oltre a [sviluppare nuovi componenti](/help/sites-developing/developing-components-samples.md) da utilizzare nei moduli, è possibile:
 
@@ -39,7 +41,7 @@ Oltre a [sviluppare nuovi componenti](/help/sites-developing/developing-componen
 
 >[!NOTE]
 >
->Questo documento si concentra sullo sviluppo di moduli utilizzando [Componenti Foundation](/help/sites-authoring/default-components-foundation.md) nell&#39;interfaccia utente classica. L&#39;Adobe consiglia di utilizzare i nuovi [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Nascondi condizioni](/help/sites-developing/hide-conditions.md) per lo sviluppo di moduli nell&#39;interfaccia utente touch.
+>Questo documento si concentra sullo sviluppo di moduli utilizzando [Componenti Foundation](/help/sites-authoring/default-components-foundation.md) nell&#39;interfaccia utente classica. Adobe consiglia di utilizzare i nuovi [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Nascondi condizioni](/help/sites-developing/hide-conditions.md) per lo sviluppo di moduli nell&#39;interfaccia utente touch.
 
 ## Precaricamento dei valori modulo {#preloading-form-values}
 
@@ -80,7 +82,7 @@ Nota che se i valori in `String[]` sono del formato seguente:
 * `AL=Alabama`
 * `AK=Alaska`
 
-e così via, l&#39;AEM genera l&#39;elenco come:
+e così via, AEM genera l’elenco come:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
@@ -91,7 +93,7 @@ Questa funzione può, ad esempio, essere utilizzata in un ambiente multilingue.
 
 Un modulo richiede un&#39;azione. Un&#39;azione definisce l&#39;operazione eseguita quando il modulo viene inviato con i dati utente.
 
-Una serie di azioni è fornita con un impianto AEM standard, come si può vedere in:
+Con un’installazione standard di AEM è disponibile una serie di azioni, descritte in:
 
 `/libs/foundation/components/form/actions`
 
@@ -117,9 +119,9 @@ Puoi aggiungere la tua azione in `/apps` come segue:
 
    * Facoltativamente:
 
-      * `jcr:title` - specifica un titolo desiderato da visualizzare nell&#39;elenco a discesa. Se non è impostato, viene visualizzato il nome del nodo
+     * `jcr:title` - specifica un titolo desiderato da visualizzare nell&#39;elenco a discesa. Se non è impostato, viene visualizzato il nome del nodo
 
-      * `jcr:description` - immetti una descrizione a tua scelta
+     * `jcr:description` - immetti una descrizione a tua scelta
 
 1. Nella cartella crea un nodo di dialogo:
 
@@ -128,12 +130,12 @@ Puoi aggiungere la tua azione in `/apps` come segue:
 1. Nella cartella crea:
 
    1. Uno script post.
-Il nome dello script è `post.POST.<extension>`, ad esempio `post.POST.jsp`
-Lo script post viene richiamato quando un modulo viene inviato per elaborare il modulo, contiene il codice che gestisce i dati provenienti dal modulo `POST`.
+      Il nome dello script è `post.POST.<extension>`, ad esempio `post.POST.jsp`
+      Lo script post viene richiamato quando un modulo viene inviato per elaborare il modulo, contiene il codice che gestisce i dati provenienti dal modulo `POST`.
 
    1. Aggiungi uno script di inoltro che viene richiamato al momento dell’invio del modulo.
-Il nome dello script è `forward.<extension`>, ad esempio `forward.jsp`
-Questo script può definire un percorso. La richiesta corrente viene quindi inoltrata al percorso specificato.
+      Il nome dello script è `forward.<extension`>, ad esempio: `forward.jsp`
+      Questo script può definire un percorso. La richiesta corrente viene quindi inoltrata al percorso specificato.
 
    La chiamata necessaria è `FormsHelper#setForwardPath` (2 varianti). Un caso tipico è quello di eseguire una convalida, o logica, per trovare il percorso di destinazione e quindi inoltrarlo a tale percorso, consentendo al servlet Sling POST predefinito di eseguire l’archiviazione effettiva in JCR.
 
@@ -148,35 +150,35 @@ Questo script può definire un percorso. La richiesta corrente viene quindi inol
 
    * Al rendering del modulo ( `GET`):
 
-      1. `init.jsp`
-      1. per tutti i vincoli del campo: `clientvalidation.jsp`
-      1. validationRT del modulo: `clientvalidation.jsp`
-      1. il modulo viene caricato tramite la risorsa di caricamento se impostata
-      1. `addfields.jsp` durante il rendering di `<form></form>`
+     1. `init.jsp`
+     1. per tutti i vincoli del campo: `clientvalidation.jsp`
+     1. validationRT del modulo: `clientvalidation.jsp`
+     1. il modulo viene caricato tramite la risorsa di caricamento se impostata
+     1. `addfields.jsp` durante il rendering di `<form></form>`
 
    * durante la gestione di un modulo `POST`:
 
-      1. `init.jsp`
-      1. per tutti i vincoli del campo: `servervalidation.jsp`
-      1. validationRT del modulo: `servervalidation.jsp`
-      1. `forward.jsp`
-      1. se è stato impostato un percorso di inoltro ( `FormsHelper.setForwardPath`), inoltrare la richiesta, quindi chiamare `cleanup.jsp`
+     1. `init.jsp`
+     1. per tutti i vincoli del campo: `servervalidation.jsp`
+     1. validationRT del modulo: `servervalidation.jsp`
+     1. `forward.jsp`
+     1. se è stato impostato un percorso di inoltro ( `FormsHelper.setForwardPath`), inoltrare la richiesta, quindi chiamare `cleanup.jsp`
 
-      1. se non è stato impostato alcun percorso di inoltro, chiamare `post.POST.jsp` (termina qui, non è stato chiamato `cleanup.jsp`)
+     1. se non è stato impostato alcun percorso di inoltro, chiamare `post.POST.jsp` (termina qui, non è stato chiamato `cleanup.jsp`)
 
 1. Sempre nella cartella, se lo desideri, aggiungi:
 
    1. Script per l’aggiunta di campi.
-Il nome dello script è `addfields.<extension>`, ad esempio `addfields.jsp`
-Uno script `addfields` viene richiamato immediatamente dopo la scrittura del HTML per l&#39;avvio del modulo. Questo consente all’azione di aggiungere campi di input personalizzati o altri HTML di questo tipo all’interno del modulo.
+      Il nome dello script è `addfields.<extension>`, ad esempio `addfields.jsp`
+      Uno script `addfields` viene richiamato immediatamente dopo la scrittura del HTML per l&#39;avvio del modulo. Questo consente all’azione di aggiungere campi di input personalizzati o altri HTML all’interno del modulo.
 
    1. Uno script di inizializzazione.
-Il nome dello script è `init.<extension>`, ad esempio `init.jsp`
-Questo script viene richiamato al momento del rendering del modulo. Può essere utilizzato per inizializzare le specifiche dell’azione.
+      Il nome dello script è `init.<extension>`, ad esempio `init.jsp`
+      Questo script viene richiamato al momento del rendering del modulo. Può essere utilizzato per inizializzare le specifiche dell’azione.
 
    1. Uno script di pulizia.
-Il nome dello script è `cleanup.<extension>`, ad esempio `cleanup.jsp`
-Questo script può essere utilizzato per eseguire la pulizia.
+      Il nome dello script è `cleanup.<extension>`, ad esempio `cleanup.jsp`
+      Questo script può essere utilizzato per eseguire la pulizia.
 
 1. Utilizza il componente **Forms** in un parsys. Il menu a discesa **Tipo azione** includerà ora la nuova azione.
 
@@ -212,18 +214,18 @@ I vincoli possono essere imposti a due livelli:
 
    * Facoltativamente:
 
-      * `jcr:title` - specifica un titolo desiderato da visualizzare nell&#39;elenco di selezione. Se non è impostato, viene visualizzato il nome del nodo
-      * `hint` - ulteriori informazioni per l&#39;utente su come utilizzare il campo
+     * `jcr:title` - specifica un titolo desiderato da visualizzare nell&#39;elenco di selezione. Se non è impostato, viene visualizzato il nome del nodo
+     * `hint` - ulteriori informazioni per l&#39;utente su come utilizzare il campo
 
 1. All&#39;interno di questa cartella, possono essere necessari i seguenti script:
 
    * Uno script di convalida client:
-Il nome dello script è `clientvalidation.<extension>`, ad esempio `clientvalidation.jsp`
-Viene richiamato quando viene eseguito il rendering del campo modulo. Può essere utilizzato per creare JavaScript client per convalidare il campo sul client.
+     Il nome dello script è `clientvalidation.<extension>`, ad esempio `clientvalidation.jsp`
+     Viene richiamato quando viene eseguito il rendering del campo modulo. Può essere utilizzato per creare JavaScript client per convalidare il campo sul client.
 
    * Uno script di convalida del server:
-Il nome dello script è `servervalidation.<extension>`, ad esempio `servervalidation.jsp`
-Viene richiamato al momento dell’invio del modulo. Può essere utilizzato per convalidare il campo sul server dopo l’invio.
+     Il nome dello script è `servervalidation.<extension>`, ad esempio `servervalidation.jsp`
+     Viene richiamato al momento dell’invio del modulo. Può essere utilizzato per convalidare il campo sul server dopo l’invio.
 
 >[!NOTE]
 >
@@ -281,8 +283,8 @@ In JavaScript, le condizioni utilizzano il valore della proprietà Nome elemento
 
    * Nell’elenco a discesa alla fine della riga superiore, seleziona:
 
-      * **all** - se tutte le condizioni devono essere true per mostrare o nascondere il componente
-      * **any** - se solo una o più condizioni devono essere true per mostrare o nascondere il componente
+     * **all** - se tutte le condizioni devono essere true per mostrare o nascondere il componente
+     * **any** - se solo una o più condizioni devono essere true per mostrare o nascondere il componente
 
    * Nella riga della condizione, visualizzata come predefinita, selezionare un componente, un operatore e quindi specificare un valore.
    * Se necessario, aggiungere altre condizioni facendo clic su **Aggiungi condizione**.
@@ -311,7 +313,7 @@ In JavaScript, le condizioni utilizzano il valore della proprietà Nome elemento
 
 Le condizioni Show/hide utilizzano il valore della proprietà Element Name per fare riferimento ad altri componenti del modulo. La configurazione Mostra/Nascondi non è valida quando una delle condizioni fa riferimento a un componente eliminato o la cui proprietà Nome elemento è stata modificata. Quando si verifica questa situazione, è necessario aggiornare manualmente le condizioni o si verifica un errore durante il caricamento del modulo.
 
-Quando la configurazione Mostra/Nascondi non è valida, viene fornita solo come codice JavaScript. Modifica il codice per risolvere i problemi. Il codice utilizza la proprietà Nome elemento utilizzata in origine per fare riferimento ai componenti.
+Quando la configurazione Mostra/Nascondi non è valida, viene fornita solo come codice JavaScript. Modifica il codice per risolvere i problemi.Il codice utilizza la proprietà Nome elemento utilizzata in origine per fare riferimento ai componenti.
 
 ### Sviluppo di script da utilizzare con Forms {#developing-scripts-for-use-with-forms}
 
@@ -322,4 +324,4 @@ Per ulteriori informazioni sugli elementi API che possono essere utilizzati dura
 * Definire il tipo di risorsa di convalida
 * Includi uno script per la convalida:
 
-   * Nel JSP, chiamare il servizio Web e creare un oggetto `com.day.cq.wcm.foundation.forms.ValidationInfo` contenente i messaggi di errore. In caso di errori, i dati del modulo non verranno registrati.
+  * Nel JSP, chiamare il servizio Web e creare un oggetto `com.day.cq.wcm.foundation.forms.ValidationInfo` contenente i messaggi di errore. In caso di errori, i dati del modulo non verranno registrati.

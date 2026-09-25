@@ -1,8 +1,12 @@
 ---
-title: Supporto XFA nei moduli adattivi basati su XDP
+title: Supporto XFA in moduli adattivi basati su XDP
+
 description: Elenca eventi, proprietà, script e convalida XFA supportati nei moduli adattivi.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
@@ -10,12 +14,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 5%
-
+source-wordcount: '748'
+ht-degree: 8%
 ---
-
-# Supporto XFA nei moduli adattivi basati su XDP{#xfa-support-in-xdp-based-adaptive-forms}
+# Supporto XFA in moduli adattivi basati su XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introduzione {#introduction}
 

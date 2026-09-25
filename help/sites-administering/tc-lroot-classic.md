@@ -1,5 +1,5 @@
 ---
-title: Creazione di una directory principale della lingua tramite l’interfaccia classica
+title: Creazione di una directory principale della lingua tramite interfaccia classica
 description: Scopri come creare una directory principale della lingua in Adobe Experience Manager utilizzando l’interfaccia classica.
 contentOwner: Guillaume Carlino
 feature: Language Copy
@@ -8,12 +8,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 0%
-
+source-wordcount: '328'
+ht-degree: 5%
 ---
-
-# Creazione di una directory principale della lingua tramite l’interfaccia classica{#creating-a-language-root-using-the-classic-ui}
+# Creazione di una directory principale della lingua tramite interfaccia classica{#creating-a-language-root-using-the-classic-ui}
 
 La procedura seguente utilizza l’interfaccia utente classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, vedere [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
 

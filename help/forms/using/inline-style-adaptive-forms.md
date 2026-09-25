@@ -1,8 +1,12 @@
 ---
-title: Stile in linea dei componenti di moduli adattivi
+title: Stile in linea dei componenti dei moduli adattivi
+
 description: Sebbene sia possibile applicare stili personalizzati a un modulo adattivo, è anche possibile applicare proprietà CSS in linea ai singoli componenti di un modulo adattivo.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
@@ -10,12 +14,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 4%
-
+source-wordcount: '638'
+ht-degree: 8%
 ---
-
-# Stile in linea dei componenti di moduli adattivi {#inline-styling-of-adaptive-form-components}
+# Stile in linea dei componenti dei moduli adattivi {#inline-styling-of-adaptive-form-components}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -41,7 +43,7 @@ Per aggiungere stili in linea a un componente:
 
 1. Fai clic su una scheda nella barra laterale per specificare le proprietà CSS. Puoi specificare proprietà quali:
 
-   * Dimension e posizione (impostazione di visualizzazione, spaziatura interna, altezza, larghezza, margine, posizione, indice z, mobile, deflusso)
+   * Dimensioni e posizione (impostazione di visualizzazione, spaziatura interna, altezza, larghezza, margine, posizione, indice z, virgola mobile, cancellazione, riversamento)
    * Testo (famiglia di caratteri, peso, colore, dimensioni, altezza della linea e allineamento)
    * Sfondo (immagine e sfumatura, colore di sfondo)
    * Bordo (larghezza, stile, colore, raggio)
@@ -84,7 +86,7 @@ Osserva la modifica dello stile della casella di testo come mostrato nell’imma
   <tr>
    <td><p>Etichetta</p> </td>
    <td><p>Dimensioni e posizione &gt; larghezza</p> </td>
-   <td><p>100 px</p> </td>
+   <td><p>100px</p> </td>
    <td><p>Imposta la larghezza come 100 px per l'etichetta</p> </td>
   </tr>
   <tr>

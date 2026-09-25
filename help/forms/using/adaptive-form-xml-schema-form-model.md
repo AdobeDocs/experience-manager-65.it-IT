@@ -8,12 +8,10 @@ exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 5%
-
+source-wordcount: '1143'
+ht-degree: 7%
 ---
-
-# Creazione di moduli adattivi tramite lo schema XML {#creating-adaptive-forms-using-xml-schema}
+# Creare moduli adattivi con lo schema XML {#creating-adaptive-forms-using-xml-schema}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -70,7 +68,7 @@ Di seguito è riportata la mappatura degli elementi XML con i componenti dei mod
   <tr>
    <td><code class="code">xs:enumeration
       </code></td>
-   <td>Elenchi a discesa</td>
+   <td>Elenco a discesa</td>
   </tr>
   <tr>
    <td>Qualsiasi elemento di tipo complesso</td>
@@ -297,7 +295,7 @@ Quando si fa doppio clic su un elemento in Content Finder, in una finestra popup
 
 >[!NOTE]
 >
->Il valore `bindRef` degli attributi contiene un simbolo `@` per distinguerli dagli elementi. Esempio: `/config/projectDetails/@duration`.
+>Il valore `bindRef` degli attributi contiene un simbolo `@` per distinguerli dagli elementi. Ad esempio, `/config/projectDetails/@duration`.
 
 **Perché non è possibile trascinare singoli elementi di una sottomaschera (struttura generata da qualsiasi tipo complesso) per sottomaschere ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 

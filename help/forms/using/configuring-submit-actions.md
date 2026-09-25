@@ -1,5 +1,5 @@
 ---
-title: Configurazione dell’azione Invia
+title: Configurazione dell’azione di invio
 description: Forms consente di configurare un’azione di invio per definire come viene elaborato un modulo adattivo dopo l’invio. Puoi utilizzare azioni di invio incorporate o scriverne una da zero.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2593'
-ht-degree: 3%
-
+source-wordcount: '2691'
+ht-degree: 6%
 ---
-
-# Configurazione dell’azione Invia {#configuring-the-submit-action}
+# Configurazione dell’azione di invio {#configuring-the-submit-action}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -37,12 +35,12 @@ Configura azione di invio
 
 Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 
-* Invia all’endpoint REST
+* Invia a endpoint REST
 * Invia e-mail
 * Invia PDF tramite e-mail
 * Richiama un Forms Workflow
-* Invia usando il modello dati modulo
-* Azione di invio Forms Portal
+* Inviare utilizzando il modello dati modulo
+* Azione Invio al portale dei moduli
 * Richiama un flusso di lavoro AEM
 * Invia a Power Automate
 
@@ -61,7 +59,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 
 Per soddisfare il tuo caso d’uso, puoi scrivere un’azione di invio personalizzata per i moduli adattivi. Per ulteriori informazioni, vedere [Scrittura di un&#39;azione di invio personalizzata per i moduli adattivi](../../forms/using/custom-submit-action-form.md).
 
-## Invia all’endpoint REST {#submit-to-rest-endpoint}
+## Inviare all’endpoint REST {#submit-to-rest-endpoint}
 
 L&#39;opzione di invio **Invia all&#39;endpoint REST** trasmette i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta HTTP GET. Puoi aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
 
@@ -69,7 +67,7 @@ L&#39;opzione di invio **Invia all&#39;endpoint REST** trasmette i dati compilat
 
 Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati come parametri con valori copiati dai campi **textbox** e **numeric box** per l&#39;azione successiva.
 
-Puoi anche **abilitare la richiesta di POST** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server Experience Manager che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso principale del server Experience Manager. Ad esempio, /content/forms/af/SampleForm.html. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
+Puoi anche **abilitare la richiesta POST** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server Experience Manager che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server Experience Manager. Ad esempio, /content/forms/af/SampleForm.html. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
 ![Configurazione dell&#39;azione di invio dell&#39;endpoint REST](assets/action-config.png)
 
@@ -79,13 +77,13 @@ Configurazione dell’azione di invio endpoint REST
 >
 >Per passare i campi come parametri in un URL REST, tutti i campi devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi.
 
-### Post ha inviato dati a una risorsa o a un endpoint di riposo esterno  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Registra i dati inviati a una risorsa o a un endpoint di riposo esterno  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Utilizzare l&#39;azione **Invia all&#39;endpoint REST** per inviare i dati inviati a un URL rest. L’URL può essere interno (il server sul quale viene eseguito il rendering del modulo) o esterno.
 
-Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste successive, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste POST, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
-Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è https://host:port/path_to_rest_end_point. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
+Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell&#39;URL è https://host:port/path_to_rest_end_point. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
 
 ![Mappatura dei valori dei campi passati come parametri della pagina di ringraziamento](assets/post-enabled-actionconfig.png)
 
@@ -102,7 +100,7 @@ Ad esempio, questi due parametri vengono utilizzati nello script per analizzare 
 
 In questo esempio, `data` memorizza i dati XML e `att` i dati dell&#39;allegato.
 
-## Invia e-mail {#send-email}
+## Inviare e-mail {#send-email}
 
 L&#39;azione di invio **Invia e-mail** invia un&#39;e-mail a uno o più destinatari quando il modulo viene inviato correttamente. L’e-mail generata può contenere dati del modulo in un formato predefinito.
 
@@ -112,7 +110,7 @@ L&#39;azione di invio **Invia e-mail** invia un&#39;e-mail a uno o più destinat
 
 ## Invia PDF tramite e-mail {#send-pdf-via-email}
 
-L&#39;azione di invio **Invia PDF tramite e-mail** invia un messaggio e-mail con un PDF contenente i dati del modulo a uno o più destinatari non appena il modulo viene inviato correttamente.
+L&#39;azione di invio **Invia PDF tramite e-mail** invia un&#39;e-mail con un PDF contenente i dati del modulo a uno o più destinatari non appena il modulo viene inviato correttamente.
 
 >[!NOTE]
 >
@@ -120,11 +118,11 @@ L&#39;azione di invio **Invia PDF tramite e-mail** invia un messaggio e-mail con
 
 ## Richiama un Forms Workflow {#invoke-a-forms-workflow}
 
-L&#39;opzione di invio **Invia al Forms Workflow** invia un file XML dati e gli eventuali allegati a un LiveCycle di Adobi o AEM Forms esistente in JEE.
+L&#39;opzione di invio **Invia a Forms Workflow** invia un file XML dati e gli eventuali allegati a un processo Adobe LiveCycle o AEM Forms su JEE esistente.
 
-Per informazioni su come configurare l&#39;azione Invia al Forms Workflow, vedere [Invio ed elaborazione dei dati del modulo tramite flussi di lavoro moduli](../../forms/using/submit-form-data-livecycle-process.md).
+Per informazioni su come configurare l&#39;azione Invia a Forms Workflow, vedere [Invio ed elaborazione dei dati del modulo tramite flussi di lavoro moduli](../../forms/using/submit-form-data-livecycle-process.md).
 
-## Invia usando il modello dati modulo {#submit-using-form-data-model}
+## Inviare utilizzando il modello dati modulo {#submit-using-form-data-model}
 
 L&#39;azione di invio **Invia tramite modello dati modulo** scrive i dati del modulo adattivo inviati per l&#39;oggetto modello dati specificato in un modello dati modulo nella relativa origine dati. Durante la configurazione dell’azione di invio, puoi scegliere un oggetto modello dati di cui desideri riscrivere i dati inviati nella relativa origine dati.
 
@@ -132,13 +130,13 @@ Inoltre, è possibile inviare un allegato del modulo utilizzando un modello di d
 
 Per informazioni sul modello dati modulo, vedere [Integrazione dati AEM Forms](../../forms/using/data-integration.md).
 
-## Azione di invio Forms Portal {#forms-portal-submit-action}
+## Azione Invio al portale dei moduli {#forms-portal-submit-action}
 
 L&#39;opzione **Azione invio portale Forms** rende disponibili i dati del modulo tramite un portale AEM Forms.
 
 Per ulteriori informazioni sul portale Forms e sull&#39;azione di invio, vedere [Componente bozze e invii](../../forms/using/draft-submission-component.md).
 
-## Richiama un flusso di lavoro AEM {#invoke-an-aem-workflow}
+## Richiamare un flusso di lavoro AEM {#invoke-an-aem-workflow}
 
 L&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]** associa un modulo adattivo a un [flusso di lavoro AEM](/help/sites-developing/workflows-models.md). Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente nell’istanza Autore. Puoi salvare il file di dati, gli allegati e il documento di record nella cartella relativa o sotto il payload del flusso di lavoro o in una variabile. Se il flusso di lavoro è contrassegnato per l’archiviazione dati esterna, l’opzione della variabile è disponibile e non l’opzione payload. Puoi effettuare una selezione dall’elenco di variabili disponibili per il modello di flusso di lavoro. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni in una fase successiva e non al momento della creazione del flusso di lavoro, assicurati che siano presenti le configurazioni di variabili richieste.
 
@@ -158,7 +156,7 @@ L’azione Invia inserisce quanto segue nella posizione del payload del flusso d
 
 ## Invia a Power Automate {#microsoft-power-automate}
 
-È possibile configurare un modulo adattivo per eseguire un flusso cloud di Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business basate sui dati acquisiti e automatizzare i flussi di lavoro dei clienti. Di seguito sono riportati alcuni esempi di cosa è possibile fare dopo l’integrazione di un modulo adattivo con Microsoft® Power Automate:
+È possibile configurare un modulo adattivo per eseguire un flusso cloud di Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business sulla base dei dati acquisiti e automatizzare i flussi di lavoro dei clienti. Di seguito sono riportati alcuni esempi di cosa è possibile fare dopo l’integrazione di un modulo adattivo con Microsoft® Power Automate:
 
 * Utilizzare dati Forms adattivi in processi aziendali Power Automate
 * Utilizza Power Automate per inviare i dati acquisiti a più di 500 origini dati o a qualsiasi API disponibile pubblicamente
@@ -173,7 +171,7 @@ Dopo una configurazione corretta, utilizzare l&#39;azione di invio [Richiama un 
 
 >[!NOTE]
 >
->La funzione Submit to Microsoft® SharePoint List è stata introdotta con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> La funzionalità Invia a elenco SharePoint di Microsoft® è stata introdotta con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 L&#39;azione di invio **[!UICONTROL Invia a SharePoint]** collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso.
 
@@ -188,18 +186,18 @@ Per collegare un modulo adattivo a Microsoft® SharePoint List:
 
 Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
-1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
 1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l&#39;ID client, il segreto client e l&#39;ID tenant per l&#39;URL OAuth, consulta la [documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * Puoi recuperare `Client ID` e `Client Secret` dell&#39;app dal portale Microsoft® Azure.
-   * Nel portale Microsoft® Azure, aggiungere l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
+   * Nel portale Microsoft® Azure, aggiungi l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
    * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` nella scheda **Microsoft® Graph** per fornire le autorizzazioni di lettura/scrittura. Aggiungere l&#39;autorizzazione `AllSites.Manage` nella scheda **Sharepoint** per interagire in remoto con i dati di SharePoint.
-   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale di Microsoft® Azure.
+   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale Microsoft® Azure.
 
      >[!NOTE]
      >
-     >Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+     > Il campo **segreto client** è obbligatorio o facoltativo a seconda della configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
 
 1. Fai clic su **[!UICONTROL Connetti]**. Se la connessione ha esito positivo, viene visualizzato il messaggio `Connection Successful`.
 1. Selezionare **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa.
@@ -209,7 +207,7 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
 È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare una configurazione di archiviazione Elenco SharePoint in un modulo adattivo, effettua le seguenti operazioni:
 
-1. [Creare un modello di dati modulo con Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Creare un modello dati modulo utilizzando la configurazione Elenco Microsoft® SharePoint](/help/forms/using/create-form-data-model.md)
 1. [Configurare il modello dati modulo per recuperare e inviare dati](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Crea un modulo adattivo](/help/forms/using/create-adaptive-form.md).
 1. [Configurare l’azione di invio utilizzando un modello dati modulo](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
@@ -218,16 +216,16 @@ Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Mi
 
 >[!NOTE]
 >
->In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
->* colonna immagine
->* colonna metadati
->* colonna persona
->* colonna di dati esterni
+> In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
+> * colonna immagine
+> * colonna metadati
+> * colonna persona
+> * colonna di dati esterni
 
 
 >[!NOTE]
 >
->Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando l&#39;SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza di Cloud Service.
+> Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
 
 ## Riconvalida lato server in modulo adattivo {#server-side-revalidation-in-adaptive-form}
 
@@ -255,11 +253,11 @@ Se l&#39;utente finale ignora tali convalide e invia i moduli, il server esegue 
 
 >[!NOTE]
 >
->La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile HTML e la manipolazione DOM nella stessa libreria client.
+>La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile di HTML e la manipolazione DOM nella stessa libreria client.
 
 ### Supporto di funzioni personalizzate nelle espressioni di convalida {#supporting-custom-functions-in-validation-expressions-br}
 
-Talvolta, in presenza di regole di convalida complesse, lo script di convalida esatto risiede in funzioni personalizzate e l’autore chiama tali funzioni personalizzate dall’espressione di convalida del campo. Per rendere nota e disponibile questa libreria di funzioni personalizzata durante l&#39;esecuzione delle convalide lato server, l&#39;autore del modulo può configurare il nome della libreria client AEM nella scheda **Base** delle proprietà del contenitore di moduli adattivi, come illustrato di seguito.
+Talvolta, in presenza di regole di convalida complesse, lo script di convalida esatto risiede in funzioni personalizzate e l’autore chiama tali funzioni personalizzate dall’espressione di convalida del campo. Per rendere nota e disponibile questa libreria di funzioni personalizzata durante l&#39;esecuzione delle convalide lato server, l&#39;autore del modulo può configurare il nome della libreria client di AEM nella scheda **Base** delle proprietà del contenitore di moduli adattivi, come illustrato di seguito.
 
 ![Supporto di funzioni personalizzate nelle espressioni di convalida](assets/clientlib-cat.png)
 
@@ -269,6 +267,6 @@ L’autore può configurare una libreria JavaScript personalizzata per modulo ad
 
 ## Gestione degli errori durante l’azione di invio {#error-handling-on-submit-action}
 
-Come parte delle linee guida sulla sicurezza e l’irrigidimento di Experience Manager, configura pagine di errore personalizzate come 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 404 o 500. I gestori vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish.
+Come parte delle linee guida sulla sicurezza e l’irrigidimento di Experience Manager, configura pagine di errore personalizzate come 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 404 o 500. Gli handler vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish.
 
 Per ulteriori informazioni, vedere [Personalizzazione delle pagine visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md).

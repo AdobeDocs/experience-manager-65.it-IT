@@ -10,11 +10,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1188'
 ht-degree: 4%
-
 ---
-
 # Spazi ed entità{#spaces-and-entities}
 
 {{ue-over-mobile}}
@@ -35,7 +33,7 @@ Per la prima volta che un utente non ha configurato Content Services per l&#39;u
 >
 >**Prerequisiti per l&#39;aggiunta di uno spazio**
 >
->Controlla **Abilita Servizi di contenuti AEM** per lavorare con Spaces e abilitalo nel tuo dashboard dell&#39;applicazione AEM Mobile.
+>Controlla **Abilita AEM Content Services** per lavorare con Spaces e abilitalo nel tuo dashboard dell&#39;applicazione AEM Mobile.
 >
 >Per ulteriori dettagli, vedere [Amministrazione di Content Services](/help/mobile/developing-content-services.md).
 
@@ -55,7 +53,7 @@ Dopo aver configurato gli spazi nel dashboard, effettua le seguenti operazioni p
 
 Dopo aver creato uno spazio, fare clic a sinistra per gestirlo nell&#39;elenco.
 
-È possibile visualizzare le proprietà dello spazio, eliminarlo o pubblicarlo e il relativo contenuto in un&#39;istanza di pubblicazione AEM.
+Puoi visualizzare le proprietà dello spazio, eliminarlo o pubblicarlo e il relativo contenuto in un’istanza AEM Publish.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -68,7 +66,7 @@ Dopo aver creato uno spazio, fare clic a sinistra per gestirlo nell&#39;elenco.
 **Pubblicazione di uno spazio** Quando viene pubblicato uno spazio, vengono pubblicate anche tutte le cartelle e le entità in tale spazio.
 
 1. Selezionare lo spazio facendo clic sulla relativa icona nell&#39;elenco Console spazio
-1. Scegli **Albero Publish**
+1. Scegli **Pubblica struttura**
 
 >[!NOTE]
 >
@@ -118,7 +116,7 @@ La funzione **Copia lingua** consente agli autori di copiare la copia master in 
    >
    >I nodi della copia lingua possono esistere solo come figlio diretto dello spazio.
 
-1. Scegliere **Lingua pacchetto contenuti&ast;** e immettere **Titolo&ast;** nella finestra di dialogo **Crea copia lingua**.
+1. Scegli **Lingua pacchetto contenuti&ast;** e immetti **Titolo&ast;** nella finestra di dialogo **Crea copia lingua**.
 
    Fai clic su **Crea**.
 
@@ -143,7 +141,7 @@ La funzione **Copia lingua** consente agli autori di copiare la copia master in 
 
 ## Utilizzo delle entità in uno spazio {#working-with-entities-in-a-space}
 
-Le entità rappresentano il contenuto esposto tramite l’endpoint del servizio web. Le entità sono memorizzate in spazi in modo da poter essere facilmente trovate e sono mantenute indipendenti dalla struttura dell’archivio dell’AEM che contiene i relativi contenuti.
+Le entità rappresentano il contenuto esposto tramite l’endpoint del servizio web. Le entità sono memorizzate in spazi in modo da poter essere facilmente trovate e sono mantenute indipendenti dalla struttura dell’archivio AEM che contiene il contenuto correlato.
 
 È possibile raggruppare le entità in un insieme logico. A questo scopo, puoi creare un numero qualsiasi di cartelle.
 
@@ -235,12 +233,12 @@ Se per la modellazione dei dati vengono raccolti elementi secondari di entità, 
 
 ### Pubblicazione di un&#39;entità {#publishing-an-entity}
 
-È possibile scegliere **Albero Publish** o **Publish rapido** per pubblicare l&#39;entità.
+È possibile scegliere **Pubblica struttura** o **Pubblicazione rapida** per pubblicare l&#39;entità.
 
-1. Selezionate un&#39;entità dall&#39;elenco della console dello spazio e fate clic su **Albero Publish (Tree) &#x200B;** per pubblicare l&#39;entità e i relativi elementi figlio.
+1. Selezionate un&#39;entità dall&#39;elenco della console dello spazio e fate clic su **Pubblica albero (Publish Tree) &#x200B;** per pubblicare l&#39;entità e i relativi elementi figlio.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **O**,
 
-   Fai clic su **Publish rapido** per pubblicare l&#39;entità specifica.
+   Fai clic su **Pubblicazione rapida** per pubblicare l&#39;entità specifica.

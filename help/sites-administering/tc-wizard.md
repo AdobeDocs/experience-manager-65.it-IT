@@ -1,5 +1,5 @@
 ---
-title: Creazione guidata copia lingua
+title: Creazione guidata della copia per lingua
 description: Scopri come utilizzare la Creazione guidata copia in lingua in Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
@@ -7,12 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 27%
-
+source-wordcount: '220'
+ht-degree: 35%
 ---
-
-# Creazione guidata copia lingua{#language-copy-wizard}
+# Creazione guidata della copia per lingua{#language-copy-wizard}
 
 La Creazione guidata copia in lingua è un’esperienza guidata per la creazione e la strumentazione di una struttura di contenuto multilingue. La creazione di una copia per lingua è ora molto più semplice e veloce.
 
@@ -50,6 +48,6 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. Il pulsante **Crea** termina la procedura guidata.
+1. Il pulsante **Crea** termina la creazione guidata.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)

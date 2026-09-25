@@ -1,8 +1,12 @@
 ---
-title: Associazione dei revisori di invio a un modulo
+title: Associare i revisori di invio a un modulo
+
 description: Scopri come associare i revisori per l’invio a un modulo in AEM Forms. I revisori associati esaminano un modulo inviato tramite il portale dei moduli.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
@@ -10,12 +14,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 0%
-
+source-wordcount: '554'
+ht-degree: 5%
 ---
-
-# Associazione dei revisori di invio a un modulo {#associating-submission-reviewers-with-a-form}
+# Associare i revisori di invio a un modulo {#associating-submission-reviewers-with-a-form}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -33,8 +35,8 @@ Per associare un gruppo di revisori a un modulo, modifica lo schema di metadati 
 
 Per modificare lo schema metadati:
 
-1. In modalità Creazione, nell&#39;Experience Manager, fare clic su **Strumenti** > **Assets** > **Schemi metadati**.
-1. Nella pagina Forms dello schema, passa a **Forms** > **Forms creato nell&#39;AEM.**
+1. In modalità Creazione, in Experience Manager, fai clic su **Strumenti** > **Assets** > **Schemi metadati**.
+1. Nella pagina Forms dello schema, passa a **Forms** > **Forms creato in AEM.**
 
    L’URL della pagina è:
 
@@ -52,7 +54,7 @@ Per modificare lo schema metadati:
 
    Il campo gruppo revisore invio nelle proprietà avanzate del modulo adattivo è abilitato con il nome specificato in Etichetta campo.
 
-## Associazione dei revisori di invio a un modulo {#associating-submission-reviewers-with-a-form-1}
+## Associare i revisori di invio a un modulo {#associating-submission-reviewers-with-a-form-1}
 
 Per associare i revisori per l’invio a un modulo adattivo, crea un gruppo di revisori e aggiungi gli utenti. Aggiungi il gruppo di revisori creato nel campo revisore invio modulo nelle proprietà avanzate del modulo.
 I gruppi di utenti consentono di associare diversi gruppi di revisori per l’invio a diversi moduli adattivi. Questa funzione impedisce a un utente non autorizzato di inviare un messaggio di revisione.
@@ -66,7 +68,7 @@ Assicurati di aggiungere il gruppo creato come membro del gruppo di utenti prede
 Per associare gruppi di utenti a un modulo adattivo:
 
 1. In modalità creazione, passa a **Forms** > **Forms e documenti**.
-1. Utilizza l&#39;opzione **Seleziona &#x200B;** per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
+1. Utilizza l&#39;opzione **Seleziona** per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
 1. Nella finestra Proprietà del modulo fare clic su **Modifica** e quindi su **AVANZATE**.
 1. Immettere il gruppo nel campo gruppo revisore invio e fare clic su **Fine**.
 

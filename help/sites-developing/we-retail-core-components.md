@@ -11,18 +11,16 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 4%
-
+source-wordcount: '561'
+ht-degree: 8%
 ---
-
 # Prova dei componenti core in We.Retail{#trying-out-core-components-in-we-retail}
 
 I componenti core sono componenti moderni e flessibili, facilmente estensibili e semplici da integrare nei progetti. I componenti core sono stati progettati in base a diversi principi di progettazione principali, come HTL, facilità d’uso, configurabilità, controllo delle versioni ed estensibilità. We.Retail è stato creato su componenti core.
 
 ## Prova {#trying-it-out}
 
-1. Avvia Adobe Experience Manager (AEM) con il contenuto di esempio We.Retail e apri [la console Componenti](/help/sites-authoring/default-components-console.md).
+1. Avvia Adobe Experience Manager (AEM) con il contenuto di esempio We.Retail e apri la [console Componenti](/help/sites-authoring/default-components-console.md).
 
    **Navigazione globale > Strumenti > Componenti**
 
@@ -35,7 +33,7 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Tutti i componenti core sono denominati **v1**, a indicare che si tratta della prima versione di questo componente core. Versioni regolari verranno rilasciate in futuro, che saranno compatibili con le versioni di AEM e consentiranno un facile aggiornamento in modo da poter sfruttare le funzioni più recenti.
+1. Tutti i componenti core sono denominati **v1**, a indicare che si tratta della prima versione di questo componente core. Versioni regolari verranno rilasciate in futuro, che saranno compatibili con le versioni di AEM e consentiranno un facile aggiornamento, in modo da poter sfruttare le funzioni più recenti.
 1. Fare clic su **Testo (v1)**.
 
    Vedi che il **tipo di risorsa** del componente è `/apps/core/wcm/components/text/v1/text`. I componenti core si trovano in `/apps/core/wcm/components` e dispongono di versioni per componente.

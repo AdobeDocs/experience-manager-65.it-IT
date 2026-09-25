@@ -1,36 +1,37 @@
 ---
 title: Flussi di lavoro incentrati su Forms su OSGi | Gestione dei dati utente
+
 description: Flussi di lavoro incentrati su Forms su OSGi | Gestione dei dati utente
+
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1032'
 ht-degree: 1%
-
 ---
-
 # Flussi di lavoro incentrati su Forms su OSGi | Gestione dei dati utente {#forms-centric-workflows-on-osgi-handling-user-data}
 
 I flussi di lavoro AEM incentrati su Forms consentono di automatizzare i processi aziendali basati su Forms. I flussi di lavoro sono costituiti da una serie di passaggi eseguiti in un ordine specificato nel modello di flusso di lavoro associato. Ogni passaggio esegue un’azione specifica, ad esempio l’assegnazione di un’attività a un utente o l’invio di un messaggio e-mail. I flussi di lavoro possono interagire con le risorse nel repository, gli account utente e i servizi. Pertanto, i flussi di lavoro possono coordinare attività complicate che coinvolgono qualsiasi aspetto di Experience Manager.
 
 Un flusso di lavoro incentrato sui moduli può essere attivato o avviato tramite uno dei seguenti metodi:
 
-* Invio di una domanda dalla casella in entrata AEM
-* Invio di un&#39;applicazione dall&#39;app [!DNL Forms] dell&#39;AEM
+* Invio di un’applicazione dalla casella in entrata di AEM
+* Invio di un&#39;applicazione dall&#39;app AEM [!DNL Forms]
 * Invio di un modulo adattivo
 * Utilizzo di una cartella controllata
 * Invio di una comunicazione interattiva o di una lettera
 
-Per ulteriori informazioni sui flussi di lavoro e le funzionalità dell&#39;AEM incentrati su Forms, vedere [Flusso di lavoro incentrato su Forms in OSGi](/help/forms/using/aem-forms-workflow.md).
+Per ulteriori informazioni sui flussi di lavoro e le funzionalità di AEM incentrati su Forms, consulta [Flusso di lavoro incentrato su Forms in OSGi](/help/forms/using/aem-forms-workflow.md).
 
 ## Dati utente e archivi dati {#user-data-and-data-stores}
 
-Quando viene attivato un flusso di lavoro, viene generato automaticamente un payload per l’istanza di flusso di lavoro. A ogni istanza del flusso di lavoro viene assegnato un ID istanza univoco e un ID payload associato. Il payload contiene le posizioni dell’archivio per i dati utente e del modulo associati a un’istanza del flusso di lavoro. Inoltre, le bozze e i dati storici di un’istanza del flusso di lavoro vengono memorizzati anche nell’archivio dell’AEM.
+Quando viene attivato un flusso di lavoro, viene generato automaticamente un payload per l’istanza di flusso di lavoro. A ogni istanza del flusso di lavoro viene assegnato un ID istanza univoco e un ID payload associato. Il payload contiene le posizioni dell’archivio per i dati utente e del modulo associati a un’istanza del flusso di lavoro. Inoltre, le bozze e i dati storici di un’istanza del flusso di lavoro vengono memorizzati anche nell’archivio di AEM.
 
 I percorsi predefiniti dell’archivio in cui risiedono il payload, le bozze e la cronologia di un’istanza del flusso di lavoro sono i seguenti:
 
@@ -75,13 +76,13 @@ Puoi accedere ed eliminare i dati utente da un’istanza del flusso di lavoro ne
 Tuttavia, non è possibile identificare o i risultati possono essere ambigui quando si identificano i flussi di lavoro associati a un iniziatore nei seguenti scenari:
 
 * **Flusso di lavoro attivato tramite una cartella controllata**: impossibile identificare un&#39;istanza del flusso di lavoro utilizzando il relativo iniziatore se il flusso di lavoro è attivato da una cartella controllata. In questo caso, le informazioni utente vengono codificate nei dati memorizzati.
-* **Flusso di lavoro avviato dall&#39;istanza AEM di pubblicazione**: tutte le istanze del flusso di lavoro vengono create utilizzando un utente del servizio quando moduli adattivi, comunicazioni interattive o lettere vengono inviati dall&#39;istanza di pubblicazione AEM. In questi casi, il nome utente dell’utente connesso non viene acquisito nei dati dell’istanza del flusso di lavoro.
+* **Flusso di lavoro avviato dall&#39;istanza AEM di pubblicazione**: tutte le istanze del flusso di lavoro vengono create utilizzando un utente del servizio quando moduli adattivi, comunicazioni interattive o lettere vengono inviati dall&#39;istanza AEM Publish. In questi casi, il nome utente dell’utente connesso non viene acquisito nei dati dell’istanza del flusso di lavoro.
 
 ### Accedere ai dati utente {#access}
 
 Per identificare e accedere ai dati utente memorizzati per un’istanza del flusso di lavoro, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza dell&#39;autore AEM, vai a `https://'[server]:[port]'/crx/de` e passa a **[!UICONTROL Strumenti > Query]**.
+1. Nell&#39;istanza Autore AEM, vai a `https://'[server]:[port]'/crx/de` e passa a **[!UICONTROL Strumenti > Query]**.
 
    Selezionare **[!UICONTROL SQL2]** dal menu a discesa **[!UICONTROL Tipo]**.
 
@@ -125,7 +126,7 @@ Per identificare e accedere ai dati utente memorizzati per un’istanza del flus
 
 ### Elimina dati utente {#delete-user-data}
 
-Per eliminare i dati utente dalle istanze del flusso di lavoro, è necessario essere un amministratore AEM ed effettuare le seguenti operazioni:
+Per eliminare i dati utente dalle istanze del flusso di lavoro, è necessario essere un amministratore di AEM ed effettuare le seguenti operazioni:
 
 1. Segui le istruzioni in [Accedi ai dati utente](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) e prendi nota di quanto segue:
 
@@ -152,10 +153,10 @@ Per eliminare i dati utente dalle istanze del flusso di lavoro, è necessario es
    >Se si elimina il nodo dell’istanza del flusso di lavoro, verrà rimossa l’istanza del flusso di lavoro per tutti i partecipanti al flusso di lavoro.
 
 1. Ripeti i passaggi da 2 a 6 per tutte le istanze del flusso di lavoro identificate per un utente.
-1. Identificare ed eliminare i dati relativi alle bozze e agli invii non in linea dalla cartella Posta in uscita dell&#39;app [!DNL Forms] dell&#39;AEM dei partecipanti al flusso di lavoro per evitare l&#39;invio al server.
+1. Identificare ed eliminare i dati di bozza e invio non in linea dalla cartella Posta in uscita dell&#39;app AEM [!DNL Forms] dei partecipanti al flusso di lavoro per evitare l&#39;invio al server.
 
 Puoi inoltre utilizzare le API per accedere e rimuovere nodi e proprietà. Per ulteriori informazioni, consulta i seguenti documenti.
 
-* [Come accedere a livello di programmazione al JCR per AEM](/help/sites-developing/access-jcr.md)
+* [Come accedere a livello di programmazione a AEM JCR](/help/sites-developing/access-jcr.md)
 * [Rimozione di nodi e proprietà](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [Riferimento API](https://helpx.adobe.com/it/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

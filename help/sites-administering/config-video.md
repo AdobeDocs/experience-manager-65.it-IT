@@ -11,20 +11,18 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 0%
-
+source-wordcount: '534'
+ht-degree: 1%
 ---
-
 # Configurare il componente Video {#configure-the-video-component}
 
 Il [componente video](/help/sites-authoring/default-components-foundation.md#video) ti consente di inserire nella pagina una risorsa video predefinita e pronta all&#39;uso.
 
-Affinché la trascodifica venga eseguita correttamente, l&#39;amministratore installa FFmpeg separatamente. Vedere [Installare FFmpeg e configurare AEM](#install-ffmpeg). Gli amministratori possono anche [configurare i profili video](#configure-video-profiles) per l&#39;utilizzo con gli elementi HTML5.
+Affinché la trascodifica venga eseguita correttamente, l&#39;amministratore installa FFmpeg separatamente. Consulta [Installare FFmpeg e configurare AEM](#install-ffmpeg). Gli amministratori possono anche [configurare i profili video](#configure-video-profiles) per l&#39;utilizzo con elementi HTML5.
 
 >[!CAUTION]
 >
->Questo componente di base è stato dichiarato obsoleto. L&#39;Adobe consiglia di utilizzare il [Componente core Incorpora &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=it).
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare invece il [Componente core Incorpora](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=it).
 
 >[!CAUTION]
 >
@@ -32,7 +30,7 @@ Affinché la trascodifica venga eseguita correttamente, l&#39;amministratore ins
 
 ## Configurare i profili video {#configure-video-profiles}
 
-Per l’utilizzo degli elementi HTML5, definisci i profili video. Quelli scelti qui sono usati in ordine. Per accedere, utilizza [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) (solo interfaccia classica) e seleziona la scheda **[!UICONTROL Profili]**:
+Per l’utilizzo di elementi HTML5, definisci i profili video. Quelli scelti qui sono usati in ordine. Per accedere, utilizza [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) (solo interfaccia classica) e seleziona la scheda **[!UICONTROL Profili]**:
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
@@ -40,14 +38,14 @@ Da questa finestra di dialogo puoi anche configurare la progettazione del compon
 
 ## Installare FFmpeg e configurare AEM {#install-ffmpeg}
 
-Il componente Video si basa sul prodotto open-source FFmpeg per la transcodifica dei video. Scaricato da [https://ffmpeg.org/](https://ffmpeg.org/). Dopo aver installato FFmpeg, configurare AEM per utilizzare un codec audio specifico e opzioni di runtime specifiche.
+Il componente Video si basa sul prodotto open-source FFmpeg per la transcodifica dei video. Scaricato da [https://ffmpeg.org/](https://ffmpeg.org/). Dopo aver installato FFmpeg, configura AEM per l’utilizzo di un codec audio specifico e di opzioni di runtime specifiche.
 
 Per installare FFmpeg in **Windows**, eseguire la procedura seguente:
 
 1. Scaricare il file binario compilato come `ffmpeg.zip`.
 1. Annulla l’archiviazione in una cartella.
 1. Impostare la variabile di ambiente di sistema `PATH` su &lt;*percorso-ffmpeg*>`\bin`.
-1. Riavviare AEM.
+1. Riavvia AEM.
 
 Per installare FFmpeg in **macOS X**, eseguire la procedura seguente:
 
@@ -68,7 +66,7 @@ Per **configurare AEM**, eseguire la procedura seguente:
 >
 >Questi passaggi sono necessari solo se è richiesta un’ulteriore personalizzazione dei codec.
 
-1. Apri [!UICONTROL CRXDE Liti] nel browser Web. Accedi a [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. Apri [!UICONTROL CRXDE Lite] nel browser Web. Accedi a [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
 2. Selezionare il nodo `/libs/settings/dam/video/format_aac/jcr:content` e assicurarsi che le proprietà del nodo siano le seguenti:
 
    * `audioCodec` è `aac`.
@@ -84,4 +82,4 @@ Per **configurare AEM**, eseguire la procedura seguente:
 
 >[!NOTE]
 >
->Le modifiche ai modelli di flusso di lavoro predefiniti non vengono mantenute quando si aggiorna l’istanza AEM. L’Adobe consiglia di copiare i modelli di flusso di lavoro modificati prima di modificarli. Ad esempio, copia il modello predefinito [!UICONTROL Risorsa di aggiornamento DAM] prima di modificare il passaggio di trascodifica FFmpeg nel modello [!UICONTROL Risorsa di aggiornamento DAM] per scegliere i nomi dei profili video esistenti prima dell&#39;aggiornamento. Quindi, puoi sovrapporre il nodo `/apps` per consentire all&#39;AEM di recuperare le modifiche personalizzate al modello preconfigurato.
+>Le modifiche ai modelli di flusso di lavoro predefiniti non vengono mantenute quando aggiorni l’istanza di AEM. Adobe consiglia di copiare i modelli di flusso di lavoro modificati prima di modificarli. Ad esempio, copia il modello predefinito [!UICONTROL Risorsa di aggiornamento DAM] prima di modificare il passaggio di trascodifica FFmpeg nel modello [!UICONTROL Risorsa di aggiornamento DAM] per scegliere i nomi dei profili video esistenti prima dell&#39;aggiornamento. Quindi puoi sovrapporre il nodo `/apps` per consentire ad AEM di recuperare le modifiche personalizzate al modello preconfigurato.

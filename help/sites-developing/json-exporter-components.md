@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 6%
-
+source-wordcount: '570'
+ht-degree: 12%
 ---
-
 # Abilitazione dell’esportazione JSON per un componente{#enabling-json-export-for-a-component}
 
 I componenti possono essere adattati per generare l’esportazione JSON dei contenuti in base a un framework modellatore.
@@ -85,7 +83,7 @@ CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri il progetto aem-core-wcm-components su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
+* [Apri progetto aem-core-wcm-components su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
 * Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)
 
 ## Documentazione correlata {#related-documentation}
