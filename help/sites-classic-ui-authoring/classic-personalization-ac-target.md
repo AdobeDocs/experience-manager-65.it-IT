@@ -1,5 +1,5 @@
 ---
-title: Targeting del tuo Adobe Campaign
+title: Targeting con Adobe Campaign
 description: L’impostazione della segmentazione include la creazione di segmenti, un marchio, una campagna e esperienze.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,14 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 0%
-
+source-wordcount: '816'
+ht-degree: 1%
 ---
-
-# Targeting del tuo Adobe Campaign{#targeting-your-adobe-campaign}
+# Targeting con Adobe Campaign{#targeting-your-adobe-campaign}
 
 Per eseguire il targeting della newsletter Adobe Campaign, devi prima impostare la segmentazione, che è disponibile solo nell’interfaccia classica. Dopodiché, puoi creare esperienze mirate per Adobe Campaign.
 
-## Impostazione della segmentazione nell’AEM {#setting-up-segmentation-in-aem}
+## Impostazione della segmentazione in AEM {#setting-up-segmentation-in-aem}
 
 L’impostazione della segmentazione include la creazione di segmenti, un marchio, una campagna e esperienze. Puoi creare un segmento solo nell’interfaccia classica. Puoi creare marchi, campagne ed esperienze nell’interfaccia utente touch.
 
@@ -73,11 +71,11 @@ Puoi creare la newsletter con contenuti mirati sia nell’interfaccia utente tou
 
 Per creare una newsletter con contenuti mirati:
 
-1. Crea una newsletter con contenuti di destinazione: sotto Campagne e-mail in Geometrixx Outdoors, fai clic su **Crea** > **Pagina** e seleziona uno dei modelli di Adobe Campaign Mail.
+1. Crea una newsletter con contenuti di destinazione: di seguito Campagne e-mail in Geometrixx Outdoors, fai clic su **Crea** > **Pagina** e seleziona uno dei modelli di Adobe Campaign Mail.
 
    >[!NOTE]
    >
-   >[Gli esempi di e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scarica il contenuto di esempio di un Geometrixx da Condivisione pacchetti.
+   >[Gli esempi di e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scarica contenuti Geometrixx di esempio da Package Share.
 
 1. Nella newsletter, aggiungi un componente Testo e Personalization.
 1. Aggiungi del testo al componente Testo e Personalization, ad esempio &quot;Impostazione predefinita&quot;.
@@ -87,7 +85,7 @@ Per creare una newsletter con contenuti mirati:
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, gli esempi e-mail inclusi nell’AEM utilizzano Adobe Campaign come motore di targeting. Per le newsletter personalizzate, potrebbe essere necessario selezionare Adobe Campaign come motore di targeting. Durante il targeting, fai clic su + nella barra degli strumenti, immetti un titolo per la nuova attività e seleziona **Adobe Campaign** come motore di targeting.
+   >Per impostazione predefinita, gli esempi e-mail inclusi in AEM utilizzano Adobe Campaign come motore di targeting. Per le newsletter personalizzate, potrebbe essere necessario selezionare Adobe Campaign come motore di targeting. Durante il targeting, fai clic su + nella barra degli strumenti, immetti un titolo per la nuova attività e seleziona **Adobe Campaign** come motore di targeting.
 
 1. Fai clic su **Default**, quindi sul componente Testo e Personalization aggiunto e visualizzerai il bullseye con una freccia. Fai clic sull’icona per eseguire il targeting di questo componente.
 
@@ -97,7 +95,7 @@ Per creare una newsletter con contenuti mirati:
 1. Passa a un altro segmento (Femmina) e fai clic su **Aggiungi offerta** e sull&#39;icona più +. Quindi modifica questa offerta.
 1. Fai clic su **Avanti** per visualizzare la mappatura, quindi fai clic su **Avanti** per visualizzare le impostazioni, che non si applicano ad Adobe Campaign, quindi fai clic su **Salva**.
 
-   AEM genera automaticamente il codice di targeting corretto per Adobe Campaign quando il contenuto viene utilizzato in una consegna all’interno di Adobe Campaign
+   AEM genera automaticamente il codice di targeting corretto per Adobe Campaign quando il contenuto viene utilizzato in una consegna in Adobe Campaign
 
 1. In Adobe Campaign, crea la consegna - seleziona **Consegna e-mail con contenuto AEM**, seleziona l&#39;account AEM locale, come appropriato, e conferma le modifiche.
 

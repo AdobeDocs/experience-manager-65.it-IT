@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare un modello di dati modulo '
+title: 'Tutorial: creare un modello dati modulo '
 description: Scopri come configurare MySQL come origine dati, creare un modello dati del modulo (FDM), configurarlo e testare per AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -10,20 +10,18 @@ feature: Form Data Model
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 1%
-
+source-wordcount: '1629'
+ht-degree: 2%
 ---
-
-# Tutorial: creare un modello di dati modulo {#tutorial-create-form-data-model}
+# Tutorial: creare un modello dati modulo {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
 Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](../../forms/using/create-your-first-adaptive-form.md). Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
-## Informazioni sull’esercitazione {#about-the-tutorial}
+## Informazioni sul tutorial {#about-the-tutorial}
 
-Il modulo di integrazione dei dati [!DNL Forms] dell&#39;AEM consente di creare un modello di dati modulo da diverse origini dati back-end, ad esempio il profilo utente dell&#39;AEM, i servizi Web RESTful, i servizi Web basati su SOAP, i servizi OData e i database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi del modulo adattivo sono associati alle proprietà dell’oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e riscrivere i dati del modulo inviato nell’oggetto modello dati.
+Il modulo di integrazione dei dati di AEM [!DNL Forms] consente di creare un modello di dati modulo da diverse origini dati back-end, come profilo utente AEM, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi del modulo adattivo sono associati alle proprietà dell’oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e riscrivere i dati del modulo inviato nell’oggetto modello dati.
 
 Per ulteriori informazioni sull&#39;integrazione dei dati del modulo e sul modello dati del modulo, vedere [Integrazione dati di AEM Forms](../../forms/using/data-integration.md).
 
@@ -54,39 +52,39 @@ Prima di iniziare, assicurati di disporre dei seguenti elementi:
 
 Per configurare il database [!DNL MySQL], eseguire le operazioni seguenti:
 
-1. Installa il driver JDBC per [!DNL MySQL] il database come bundle OSGi:
+1. Installare il driver JDBC per il database [!DNL MySQL] come bundle OSGi:
 
-   1. Scarica [!DNL MySQL] JDBC Driver OSGi Bundle da `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
-   1. Accedere all&#39;istanza dell&#39;autore [!DNL Forms] dell&#39;AEM come amministratore e passare ai bundle della console Web dell&#39;AEM. URL predefinito: [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Scarica il bundle OSGi del driver JDBC [!DNL MySQL] da `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
+   1. Accedere all&#39;istanza Autore AEM [!DNL Forms] come amministratore e passare ai bundle della console Web AEM. URL predefinito: [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Selezionare **[!UICONTROL Installa/Aggiorna]**. Viene visualizzata la finestra di dialogo [!UICONTROL Carica/Installa bundle].
 
-   1. Selezionare **[!UICONTROL Scegli file]** per sfogliare e selezionare il bundle OSGi del driver JDBC [!DNL MySQL]. Selezionare **[!UICONTROL Avvia bundle]** e **[!UICONTROL Aggiorna pacchetti]**, quindi selezionare **[!UICONTROL Installa o aggiorna]**. Assicurati che il [!DNL Oracle Corporation's] driver JDBC per [!DNL MySQL] sia attivo. Il driver è installato.
+   1. Selezionare **[!UICONTROL Scegli file]** per sfogliare e selezionare il bundle OSGi del driver JDBC [!DNL MySQL]. Selezionare **[!UICONTROL Avvia bundle]** e **[!UICONTROL Aggiorna pacchetti]**, quindi selezionare **[!UICONTROL Installa o aggiorna]**. Verificare che il driver JDBC [!DNL Oracle Corporation's] per [!DNL MySQL] sia attivo. Il driver è installato.
 
-1. Configurare [!DNL MySQL] il database come origine dati:
+1. Configurare il database [!DNL MySQL] come origine dati:
 
-   1. Vai a AEM console Web all&#39;indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Individua **la configurazione Apache Sling Connection Pooled DataSource** . Selezionare questa opzione per aprire la configurazione in modalità di modifica.
+   1. Vai alla console Web AEM all&#39;indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Individua la configurazione dell&#39;origine dati in pool di connessione **Apache Sling**. Seleziona per aprire la configurazione in modalità di modifica.
    1. Nella finestra di dialogo di configurazione, specifica i dettagli seguenti:
 
       * **Nome origine dati:** È possibile specificare qualsiasi nome. Specificare ad esempio **WeRetailMySQL**.
       * **Nome proprietà servizio DataSource**: specificare il nome della proprietà del servizio contenente il nome DataSource. Viene specificato durante la registrazione dell’istanza dell’origine dati come servizio OSGi. **datasource.name**.
       * **Classe driver JDBC**: specificare il nome della classe Java™ del driver JDBC. Per il database [!DNL MySQL], specificare **com.mysql.jdbc.Driver**.
-      * **URI** connessione JDBC: specifica il URL di connessione del database. Per [!DNL MySQL] il database in esecuzione su porta 3306 e lo schema `weretail`, il URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI connessione JDBC**: specificare l&#39;URL di connessione del database. Per il database [!DNL MySQL] in esecuzione sulla porta 3306 e lo schema `weretail`, l&#39;URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Quando il [!DNL MySQL] database è protetto da un firewall, il nome host del database non è un DNS pubblico. L&#39;indirizzo *IP del database deve essere aggiunto nel file /etc/hosts* del computer host AEM.
+      > Quando il database [!DNL MySQL] è protetto da un firewall, il nome host del database non è un DNS pubblico. L&#39;indirizzo IP del database deve essere aggiunto nel file */etc/hosts* del computer host AEM.
 
-      * **Nome utente:** Nome utente del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
+      * **Nome utente:** Nome utente del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
       * **Password:** Password del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
 
       >[!NOTE]
       >
-      >AEM Forms non supporta l&#39;autenticazione NT per [!DNL MySQL]. Vai alla console Web all AEM indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e ricerca &quot;Apache Sling Connection Pooled Datasource&quot;. Per la proprietà &quot;JDBC connection URI&quot;, imposta il valore di &quot;integratedSecurity&quot; su False e utilizza il nome utente e il password creati per la connessione al [!DNL MySQL] database.
+      >AEM Forms non supporta l&#39;autenticazione NT per [!DNL MySQL]. Vai alla console web di AEM all&#39;indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e cerca &quot;Origine dati in pool di connessione Apache Sling&quot;. Per la proprietà &quot;JDBC connection URI&quot;, impostare il valore di &quot;integratedSecurity&quot; su False e utilizzare il nome utente e la password creati per la connessione al database [!DNL MySQL].
 
-      * **Test in prestito:** attiva l&#39;opzione **[!UICONTROL Test su prestito]** .
-      * **Test on Return:** consente di abilitare l&#39;opzione **[!UICONTROL Test on Return.]**
+      * **Test sul prestito:** Abilitare l&#39;opzione **[!UICONTROL Test sul prestito]**.
+      * **Test su restituzione:** Abilita l&#39;opzione **[!UICONTROL Test su restituzione]**.
       * **Query di convalida:** Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. **selezionare &#42; da customerdetails**.
       * **Isolamento transazione**: impostare il valore su **READ_COMMitted**.
 
@@ -102,7 +100,7 @@ AEM [!DNL Forms] fornisce un&#39;interfaccia utente intuitiva per [creare un mod
 
 Per creare il modello dati del modulo, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza di authoring AEM, passa a **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni dati]**.
+1. Nell&#39;istanza Autore AEM, passa a **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni dati]**.
 1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Modello dati modulo]**.
 1. Nella finestra di dialogo Crea modello dati modulo, specifica un **nome** per il modello dati del modulo. Ad esempio, **dettagli-fatturazione-spedizione-cliente**. Seleziona **[!UICONTROL Avanti]**.
 1. Nella schermata Seleziona origine dati sono elencate tutte le origini dati configurate. Selezionare l&#39;origine dati **WeRetailMySQL** e selezionare **[!UICONTROL Crea]**.
@@ -120,7 +118,7 @@ La configurazione del modello dati del modulo prevede:
 
 Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
-1. Nell&#39;istanza di authoring AEM, passa a **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni dati]**. URL predefinito: [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Nell&#39;istanza Autore AEM, passa a **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni dati]**. URL predefinito: [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Il modello dati del modulo **customer-shipping-billing-details** creato in precedenza è elencato qui. Apri in modalità di modifica.
 
    L&#39;origine dati selezionata **WeRetailMySQL** è configurata nel modello dati del modulo.
@@ -131,17 +129,17 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
    * **Oggetti modello dati**:
 
-      * id
-      * nome
-      * shippingAddress
-      * città
-      * stato
-      * zipcode
+     * id
+     * nome
+     * shippingAddress
+     * città
+     * stato
+     * zipcode
 
    * **Servizi:**
 
-      * ottenere
-      * aggiorna
+     * ottenere
+     * aggiorna
 
    Selezionare **Aggiungi selezionati** per aggiungere gli oggetti e i servizi del modello dati selezionati al modello dati del modulo.
 
@@ -162,11 +160,11 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
       ![write-default](assets/write-default.png)
 
-      Aggiungi e configura l&#39;argomento **id** come segue.
+      Aggiungere e configurare l&#39;argomento **id** come indicato di seguito.
 
       ![id-arg](assets/id-arg.png)
 
-   1. Selezionare **[!UICONTROL Fine]** per salvare le proprietà dell&#39;oggetto modello dati. **[!UICONTROL Selezionare quindi Salva]** per salvare il modello dati modulo.
+   1. Seleziona **[!UICONTROL Fine]** per salvare le proprietà dell&#39;oggetto modello dati. Quindi, seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
       I servizi **[!UICONTROL get]** e **[!UICONTROL update]** vengono aggiunti come servizi predefiniti per l&#39;oggetto modello dati.
 
@@ -175,7 +173,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 1. Vai alla scheda **[!UICONTROL Servizi]** e configura i servizi **[!UICONTROL get]** e **[!UICONTROL update]**.
 
    1. Selezionare il servizio **[!UICONTROL get]** e selezionare **[!UICONTROL Modifica proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
-   1. Nella finestra di dialogo Proprietà Modifica, specifica quanto segue:
+   1. Nella finestra di dialogo Modifica proprietà, specifica quanto segue:
 
       * **Titolo**: specifica il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
       * **Descrizione**: specificare la descrizione contenente il funzionamento dettagliato del servizio. Ad esempio:

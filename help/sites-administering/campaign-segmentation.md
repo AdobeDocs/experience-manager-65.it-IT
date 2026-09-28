@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 7%
-
+source-wordcount: '1139'
+ht-degree: 8%
 ---
-
 
 # Configurazione della segmentazione {#configuring-segmentation}
 
@@ -146,7 +144,7 @@ Per definire il nuovo segmento:
 
 ### Utilizzo dei contenitori AND e OR {#using-and-and-or-containers}
 
-Puoi costruire segmenti complessi in AEM. È utile tenere presenti alcuni punti di base:
+Puoi creare segmenti complessi in AEM. È utile tenere presenti alcuni punti di base:
 
 * Il livello superiore della definizione è sempre il contenitore AND creato inizialmente; questo non può essere modificato, ma non ha alcun effetto sul resto della definizione del segmento.
 * Assicurati che la nidificazione del contenitore abbia una logica. I contenitori possono essere visualizzati come parentesi dell’espressione boolean.
@@ -182,7 +180,7 @@ Oppure no:
 
 >[!NOTE]
 >
->Tutte le caratteristiche vengono risolte immediatamente, anche se la maggior parte si modifica solo al ricaricamento della pagina. Le modifiche apportate alla posizione del mouse sono immediatamente visibili e risultano quindi utili a scopo di test.
+>Tutte le caratteristiche vengono risolte immediatamente, anche se la maggior parte si modifica solamente quando la pagina viene ricaricata. Le modifiche apportate alla posizione del mouse sono immediatamente visibili e risultano quindi utili a scopo di test.
 
 Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con i componenti **Teaser**.
 
