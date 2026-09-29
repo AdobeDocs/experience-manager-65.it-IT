@@ -9,13 +9,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 10%
-
 ---
-
 # Utilizzo di CAPTCHA nei moduli adattivi{#using-captcha-in-adaptive-forms}
 
 | Versione | Collegamento articolo |
@@ -238,7 +236,7 @@ Selezionare il campo **[!UICONTROL Valore valuta]** nel modulo e creare le regol
 
 >[!NOTE]
 >
-> * Se selezioni la configurazione reCAPTCHA v2 con dimensioni pari a **[!UICONTROL Invisible]** o le chiavi basate su punteggio Enterprise reCAPTCHA, l&#39;opzione mostra/nascondi non è applicabile.
+>* Se selezioni la configurazione reCAPTCHA v2 con dimensioni pari a **[!UICONTROL Invisible]** o le chiavi basate su punteggio Enterprise reCAPTCHA, l&#39;opzione mostra/nascondi non è applicabile.
 
 ### Convalida CAPTCHA {#validate-captcha}
 

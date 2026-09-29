@@ -1,6 +1,6 @@
 ---
 title: Configurazione del tracciamento video per Adobe Analytics
-description: Scopri come configurare il tracciamento video per il SiteCatalyst.
+description: Scopri come configurare il tracciamento video per SiteCatalyst.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -10,13 +10,11 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 0%
-
+source-wordcount: '1817'
+ht-degree: 1%
 ---
-
 # Configurazione del tracciamento video per Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Sono disponibili diversi metodi per il tracciamento degli eventi video, due dei quali sono opzioni legacy per le versioni precedenti di Adobe Analytics. Queste opzioni legacy sono: Milestone legacy e Secondi legacy.
@@ -25,7 +23,7 @@ Sono disponibili diversi metodi per il tracciamento degli eventi video, due dei 
 >
 >Prima di continuare, assicurati di avere un **video riproducibile** caricato in AEM.
 >
->Per assicurarsi che i tuoi video vengano riprodotti sulla pagina, consulta **[questo tutorial](/help/sites-authoring/default-components-foundation.md#video)** per informazioni su come trascodificare i file video in AEM.
+>Per assicurarsi che i tuoi video vengano riprodotti sulla pagina, consulta **[questo tutorial](/help/sites-authoring/default-components-foundation.md#video)** per informazioni su come transcodificare i file video in AEM.
 
 Utilizza la procedura seguente per impostare un framework per il tracciamento video utilizzando ogni metodo.
 
@@ -139,7 +137,7 @@ Nella tabella seguente vengono descritte le variabili CQ predefinite fornite per
 
 1. Per mappare le variabili CQ alle proprietà di Adobe Analytics, trascina le proprietà di Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it).
+   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 1. [Aggiungere il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
 1. Per verificare l&#39;installazione in **Modalità anteprima**, riprodurre il video per attivare le chiamate di Adobe Analytics.
@@ -202,15 +200,15 @@ Gli esempi di dati di tracciamento di Adobe Analytics riportati di seguito si ap
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>EVAR 3</td>
+   <td>EVAR3</td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
-   <td>eVar 1, prop1 </td>
+   <td>eVar1, prop1 </td>
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>EVAR 2</td>
+   <td>EVAR2</td>
   </tr>
  </tbody>
 </table>
@@ -227,7 +225,7 @@ Le chiamate ad Adobe Analytics che utilizzano l&#39;esempio fornito dovrebbero e
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Questa è la **prima chiamata**&#x200B;effettuata ad Adobe Analytics contenente i seguenti valori:*
+*Questa è la **prima chiamata**effettuata ad Adobe Analytics contenente i seguenti valori:*
 
 * *prop1 e eVar1 per eventdata.a.media.name,*
 * *props2-4, insieme a eVar2 e eVar3 contenenti contentType (video) e segmento (1:O:1-4)*
@@ -235,7 +233,7 @@ Le chiamate ad Adobe Analytics che utilizzano l&#39;esempio fornito dovrebbero e
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Questa è la **terza chiamata**&#x200B;effettuata ad Adobe Analytics:*
+*Questa è la **terza chiamata**effettuata ad Adobe Analytics:*
 
 * *prop1 e eVar1 contengono a.media.name;*
 * *evento1 perché è stato visualizzato un segmento*
@@ -274,7 +272,7 @@ eventdata.events.milestoneXX
 
 1. Per mappare le variabili CQ alle proprietà di Adobe Analytics, trascina le proprietà di Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it).
+   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 1. [Aggiungere il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
 1. Per verificare l&#39;installazione in **Modalità anteprima**, riprodurre il video per attivare le chiamate di Adobe Analytics.
@@ -293,26 +291,26 @@ Questo metodo è simile al metodo Milestones, con la differenza che le milestone
 
    Inoltre, le informazioni inviate ad Adobe Analytics sono meno personalizzabili; sono disponibili solo 3 variabili per la mappatura:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Le variabili mappate a questo conterranno il nome <strong>descrittivo</strong> (<strong>Titolo</strong>) del video se impostato in DAM; se il Titolo non è impostato, verrà inviato il <strong>nome file</strong> del video. Inviato una sola volta, all'inizio della riproduzione di un video.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Le variabili mappate a questo conterranno il nome del file. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variabile mappata a questo conterrà il percorso del file sul server. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Le variabili mappate a questo conterranno il nome <strong>descrittivo</strong> (<strong>Titolo</strong>) del video se impostato in DAM; se il Titolo non è impostato, verrà inviato il <strong>nome file</strong> del video. Inviato una sola volta, all'inizio della riproduzione di un video.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Le variabili mappate a questo conterranno il nome del file. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variabile mappata a questo conterrà il percorso del file sul server. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Puoi impostare il nome **descrittivo** di un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. Al termine, è inoltre necessario salvare le modifiche apportate.
+   >[!NOTE]
+   >
+   >Puoi impostare il nome **descrittivo** di un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. Al termine, è inoltre necessario salvare le modifiche apportate.
 
 1. Mappa queste variabili su prop da 1 a 3
 
@@ -322,13 +320,13 @@ Questo metodo è simile al metodo Milestones, con la differenza che le milestone
 
    ![milestones1](assets/lmilestones1.png)
 
-   *La variabile **pev3**&#x200B;inviata nella chiamata contiene le seguenti informazioni:*
+   *La variabile **pev3**inviata nella chiamata contiene le seguenti informazioni:*
 
    * *Nome* - Nome del file video (*film.avi*)
 
    * *Lunghezza* - Lunghezza del file video, in secondi (*100*)
 
-   * *Nome lettore* - Il lettore video utilizzato per riprodurre il file video (*HTML5 video*)
+   * *Nome lettore* - Il lettore video utilizzato per riprodurre il file video (*video HTML5*)
 
    * *Totale secondi riprodotti* - Numero totale di secondi di riproduzione del video (*25*)
 
@@ -338,7 +336,7 @@ Questo metodo è simile al metodo Milestones, con la differenza che le milestone
 
 ## Secondi legacy {#legacy-seconds}
 
-Quando si utilizza il metodo **&#x200B; secondi precedenti**, le chiamate di Adobe Analytics vengono attivate ogni N-esimo secondo, dove N è specificato nel campo Offset tracciamento.
+Quando si utilizza il metodo ** secondi precedenti**, le chiamate di Adobe Analytics vengono attivate ogni N-esimo secondo, dove N è specificato nel campo Offset tracciamento.
 
 1. Impostare lo scostamento del brano su un numero qualsiasi di secondi,
 
@@ -350,26 +348,26 @@ Quando si utilizza il metodo **&#x200B; secondi precedenti**, le chiamate di Ado
 
    Le informazioni inviate ad Adobe Analytics sono meno personalizzabili. Sono disponibili solo 3 variabili per la mappatura:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Le variabili mappate a questo conterranno il nome <strong>descrittivo</strong> (<strong>Titolo</strong>) del video se impostato in DAM; se il Titolo non è impostato, verrà inviato il <strong>nome file</strong> del video. Inviato una sola volta, all'inizio della riproduzione di un video.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>La variabile mappata a questo conterrà il nome del file. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variabile mappata a questo conterrà il percorso del file sul server. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Le variabili mappate a questo conterranno il nome <strong>descrittivo</strong> (<strong>Titolo</strong>) del video se impostato in DAM; se il Titolo non è impostato, verrà inviato il <strong>nome file</strong> del video. Inviato una sola volta, all'inizio della riproduzione di un video.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>La variabile mappata a questo conterrà il nome del file. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variabile mappata a questo conterrà il percorso del file sul server. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Puoi impostare il nome **descrittivo** di un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. Al termine, è inoltre necessario salvare le modifiche apportate.
+   >[!NOTE]
+   >
+   >Puoi impostare il nome **descrittivo** di un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. Al termine, è inoltre necessario salvare le modifiche apportate.
 
 1. Mappa queste variabili su prop1, prop2 e prop3
 
@@ -383,4 +381,4 @@ Quando si utilizza il metodo **&#x200B; secondi precedenti**, le chiamate di Ado
 
 **Riferimenti utilizzati in questa esercitazione:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

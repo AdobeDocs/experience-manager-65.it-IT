@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 14%
@@ -20,7 +20,7 @@ ht-degree: 14%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -38,6 +38,7 @@ ht-degree: 14%
 Dopo aver selezionato l&#39;icona Fine![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) nella finestra della firma scarabocchio, non è possibile modificare la firma. Nel caso in cui desideri modificare la firma, è necessario ignorare quella corrente e riapporla utilizzando l’opzione Pennello/Tastiera.
 
 È possibile selezionare l&#39;icona **Configura** ![configura](assets/configure.png) per impostare le proporzioni dell&#39;area di lavoro Firma scarabocchio.
+
 * Quando le proporzioni dell’area di lavoro Firma a mano sono inferiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte nella parte inferiore dell’area di lavoro Firma a mano.
 
 * Quando le proporzioni dell’area di lavoro Firma scarabocchio sono superiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte al lato destro dell’area di lavoro Firma scarabocchio.
@@ -48,7 +49,6 @@ Dopo aver selezionato l&#39;icona Fine![aem_6_3_forms_save](assets/aem_6_3_forms
 >[!NOTE]
 >
 >Le firme vengono sempre salvate in formato PNG.
->
 
 ## Configurare un modulo adattivo per l’utilizzo della firma scarabocchio {#configure-an-adaptive-form-to-use-scribble-signature}
 
