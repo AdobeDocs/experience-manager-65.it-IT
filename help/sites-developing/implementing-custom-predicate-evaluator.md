@@ -12,11 +12,9 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
-
+source-wordcount: '816'
+ht-degree: 2%
 ---
-
 # Implementazione di un valutatore del predicato personalizzato per Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 Questa sezione descrive come estendere [Query Builder](/help/sites-developing/querybuilder-api.md) implementando un valutatore di predicati personalizzato.

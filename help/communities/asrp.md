@@ -1,5 +1,5 @@
 ---
-title: ASRP - Provider risorsa di archiviazione Adobe
+title: ASRP - Provider risorse di archiviazione Adobe
 description: Impostare AEM Communities per l'utilizzo di un database relazionale come archivio comune
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,12 +12,10 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '825'
 ht-degree: 1%
-
 ---
-
-# ASRP - Provider risorsa di archiviazione Adobe {#asrp-adobe-storage-resource-provider}
+# ASRP - Provider risorse di archiviazione Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Informazioni su ASRP {#about-asrp}
 
@@ -44,7 +42,7 @@ Le chiavi consumer e segrete vengono condivise in tutte le suite di rapporti per
 
 La [console Configurazione archiviazione](/help/communities/srp-config.md) consente di selezionare la configurazione di archiviazione predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
 
-**Sull&#39;istanza di creazione AEM:**
+**Sull&#39;istanza Autore AEM:**
 
 * Dalla navigazione globale, passare a **[!UICONTROL Strumenti > Community > Configurazione archiviazione]** e selezionare **[!UICONTROL Provider risorse di archiviazione Adobe (ASRP)]**.
 
@@ -73,7 +71,7 @@ Dopo aver inviato la configurazione, verifica la connessione:
 
 ### Replica la chiave di crittografia {#replicate-the-crypto-key}
 
-La chiave consumer e la chiave segreta sono crittografate. Affinché le chiavi possano essere crittografate o decrittografate correttamente, la chiave primaria di Granite Crypto deve essere la stessa su tutte le istanze AEM.
+La chiave consumer e la chiave segreta sono crittografate. Affinché le chiavi possano essere crittografate o decrittografate correttamente, la chiave primaria di Granite Crypto deve essere la stessa in tutte le istanze di AEM.
 
 Segui le istruzioni in [Replica la chiave di crittografia](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
@@ -93,7 +91,7 @@ ASRP deve essere identificato come archivio comune su tutte le istanze di author
 
 Per rendere disponibile la configurazione identica nell’ambiente di pubblicazione:
 
-Sull’istanza dell’autore AEM:
+Nell’istanza Autore di AEM:
 
 * Passa dal menu principale a **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]**
 * Seleziona **Attiva albero**
@@ -107,7 +105,7 @@ Sull’istanza dell’autore AEM:
 >
 >Se si abilita ASRP in un sito community pubblicato, qualsiasi UGC già archiviato in [JCR](/help/communities/jsrp.md) non sarà più visibile, in quanto non esiste alcuna sincronizzazione dei dati tra l&#39;archiviazione locale e l&#39;archiviazione cloud.
 
-**`AEM Communities Extension`** è stato introdotto in precedenza nelle social community AEM 6.0 come servizio cloud. A partire da AEM 6.1 Communities, non è necessaria alcuna configurazione cloud. È sufficiente selezionare ASRP dalla [console di configurazione di archiviazione](/help/communities/srp-config.md).
+**`AEM Communities Extension`** è stato precedentemente introdotto in AEM 6.0 social Communities as a Cloud Service. A partire da AEM 6.1 Communities, non è necessaria alcuna configurazione cloud. È sufficiente selezionare ASRP dalla [console di configurazione di archiviazione](/help/communities/srp-config.md).
 
 A causa della nuova struttura di archiviazione, è necessario seguire le istruzioni [aggiorna](/help/communities/upgrade.md#adobe-cloud-storage) durante l&#39;aggiornamento da Social community a Communities.
 
@@ -118,7 +116,7 @@ Per informazioni relative a *utenti*, *profili utente* e *gruppi di utenti*, spe
 * [Sincronizzazione utente](/help/communities/sync.md)
 * [Gestione di utenti e gruppi di utenti](/help/communities/users.md)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### UGC scompare dopo l’aggiornamento {#ugc-disappears-after-upgrade}
 
@@ -126,13 +124,13 @@ Se si esegue l&#39;aggiornamento da un sito di social community AEM 6.0 esistent
 
 ### Errori di autenticazione {#authentication-errors}
 
-Se ricevi errori di autenticazione rispetto all’URL del centro dati e il file error.log dell’AEM contiene messaggi su marche temporali non aggiornate, verifica che la sincronizzazione dell’ora sia in corso.
+Se ricevi errori di autenticazione rispetto all’URL del centro dati e il file error.log di AEM contiene messaggi su marche temporali non aggiornate, verifica che la sincronizzazione dell’ora sia in corso.
 
-Utilizzare uno strumento come [Network Time Protocol (NTP)](https://www.ntp.org/) per sincronizzare in tempo tutti i server di creazione e pubblicazione AEM.
+Utilizza uno strumento come [Network Time Protocol (NTP)](https://www.ntp.org/) per sincronizzare ora tutti i server di authoring e pubblicazione di AEM.
 
 ### Il nuovo contenuto non viene visualizzato nelle ricerche {#new-content-does-not-appear-in-searches}
 
-L&#39;infrastruttura di archiviazione cloud Adobe utilizza *coerenza finale* per raggiungere gli obiettivi di scalabilità e prestazioni. Per questo motivo, i nuovi contenuti non sono immediatamente disponibili e la loro visualizzazione nei risultati di ricerca richiede diversi secondi.
+L&#39;infrastruttura di archiviazione cloud di Adobe utilizza *coerenza finale* per raggiungere gli obiettivi di scalabilità e prestazioni. Per questo motivo, i nuovi contenuti non sono immediatamente disponibili e la loro visualizzazione nei risultati di ricerca richiede diversi secondi.
 
 Anche se l’intervallo che influisce sulla coerenza finale è monitorato, contatta il rappresentante del tuo account se la visualizzazione dei nuovi contenuti nelle ricerche richiede più di qualche secondo.
 
@@ -140,7 +138,7 @@ Anche se l’intervallo che influisce sulla coerenza finale è monitorato, conta
 
 Verificare che ASRP sia stato configurato come provider predefinito controllando la configurazione dell&#39;opzione di archiviazione. Per impostazione predefinita, il provider di risorse di archiviazione è JSRP, non ASRP.
 
-Su tutte le istanze AEM di authoring e pubblicazione, visita nuovamente la console Configurazione di archiviazione o controlla l’archivio AEM.
+Su tutte le istanze di authoring e pubblicazione di AEM, visita nuovamente la console Configurazione di archiviazione o controlla l’archivio AEM.
 
 In JCR, se [/conf/global/settings/Communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 

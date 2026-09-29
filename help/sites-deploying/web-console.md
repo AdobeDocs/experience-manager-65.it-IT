@@ -11,24 +11,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '718'
 ht-degree: 1%
-
 ---
+# Console web{#web-console}
 
-# Console Web{#web-console}
-
-La console Web in Adobe Experience Manager (AEM) si basa sulla [console di gestione Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della community per implementare la piattaforma di servizio OSGi R4, che include il framework OSGi e i servizi standard.
+La console Web in Adobe Experience Manager (AEM) è basata sulla [console di gestione Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della community per implementare la piattaforma di servizio OSGi R4, che include il framework OSGi e i servizi standard.
 
 >[!NOTE]
 >
 >Nella console Web, tutte le descrizioni che menzionano le impostazioni predefinite si riferiscono alle impostazioni predefinite di Sling.
 >
->I valori predefiniti dell’AEM sono propri, pertanto quelli impostati potrebbero essere diversi da quelli documentati nella console.
+>AEM dispone di proprie impostazioni predefinite; pertanto, le impostazioni predefinite potrebbero essere diverse da quelle documentate nella console.
 
 La console Web offre una selezione di schede per la gestione dei bundle OSGi, tra cui:
 
-* [Configurazione](#configuration): utilizzato per la configurazione dei bundle OSGi ed è pertanto il meccanismo sottostante per la configurazione dei parametri di sistema AEM
+* [Configurazione](#configuration): utilizzato per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare i parametri di sistema di AEM
 * [Bundle](#bundles): utilizzati per l&#39;installazione dei bundle
 * [Componenti](#components): utilizzati per controllare lo stato dei componenti necessari per AEM
 
@@ -40,7 +38,7 @@ Tutte le modifiche apportate vengono immediatamente applicate al sistema in esec
 
 ## Configurazione {#configuration}
 
-La scheda **Configurazione** viene utilizzata per la configurazione dei bundle OSGi ed è pertanto il meccanismo sottostante per la configurazione dei parametri di sistema AEM.
+La scheda **Configurazione** viene utilizzata per configurare i bundle OSGi ed è pertanto il meccanismo sottostante per configurare i parametri di sistema di AEM.
 
 >[!NOTE]
 >
@@ -65,10 +63,10 @@ Esistono due tipi di configurazioni disponibili dagli elenchi a discesa in quest
 * **Configurazioni**
 Consente di aggiornare le configurazioni esistenti. Hanno un’identità persistente (PID) e possono essere:
 
-   * standard e integrale per AEM; questi sono richiesti, se eliminati i valori tornano alle impostazioni predefinite.
-   * istanze create da Configurazioni di fabbrica; queste istanze vengono create dall&#39;utente; l&#39;eliminazione rimuove l&#39;istanza.
+  * standard e integrale per AEM; questi sono richiesti, se eliminati i valori tornano alle impostazioni predefinite.
+  * istanze create da Configurazioni di fabbrica; queste istanze vengono create dall&#39;utente; l&#39;eliminazione rimuove l&#39;istanza.
 
-* **Configurazioni factory**
+* **Configurazioni di fabbrica**
 Consente di creare un&#39;istanza dell&#39;oggetto funzionalità richiesto.
 
   Viene allocata a un’identità persistente e quindi elencata nell’elenco a discesa Configurazioni.
@@ -103,7 +101,7 @@ Puoi quindi aggiornare i parametri come richiesto e:
 
 ## Bundle {#bundles}
 
-La scheda **Bundle** è il meccanismo per installare i bundle OSGi necessari per l&#39;AEM. È possibile accedere alla scheda utilizzando uno dei metodi seguenti:
+La scheda **Bundle** è il meccanismo per installare i bundle OSGi necessari per AEM. È possibile accedere alla scheda utilizzando uno dei metodi seguenti:
 
 * Il menu a discesa:
 
