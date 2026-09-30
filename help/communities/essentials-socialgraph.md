@@ -9,13 +9,11 @@ exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '267'
 ht-degree: 2%
-
 ---
-
 # Nozioni di base sui grafici social  {#social-graph-essentials}
 
 La possibilità per un membro della community di seguire [attività](essentials-activities.md) è stabilita tramite due componenti:
@@ -82,8 +80,8 @@ Il componente `following` elenca i membri che seguono il membro corrente o sono 
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API grafico social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [API del grafico social network](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Endpoint grafico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Endpoint grafico social network](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Personalizzazioni lato server](server-customize.md)

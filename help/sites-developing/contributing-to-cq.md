@@ -9,13 +9,11 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 1%
-
 ---
-
 # Apportare contributi in AEM{#contributing-to-aem}
 
 ## Metodologia di sviluppo {#development-methodology}
@@ -44,7 +42,7 @@ Al livello più alto, dovresti avere una solida conoscenza di:
 * Cookie del browser
 * e altri concetti moderni di sviluppo web
 
-Lo stack tecnologico di Adobe Experience Manager si basa sul contenitore OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) con il framework web [Apache Sling](https://sling.apache.org/index.html) e incorpora un archivio di contenuti Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basato su [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Acquisisci familiarità con questi singoli progetti e con qualsiasi altro componente open-source (ad esempio, Apache Lucene) utilizzato nell’area in cui intendi contribuire.
+Lo stack tecnologico di Adobe Experience Manager si basa sul contenitore OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) con il framework web [Apache Sling](https://sling.apache.org/index.html) e incorpora un archivio di contenuti Java™ ([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)) basato su [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Acquisisci familiarità con questi singoli progetti e con qualsiasi altro componente open-source (ad esempio, Apache Lucene) utilizzato nell’area in cui intendi contribuire.
 
 ## Conoscenza tribale {#tribal-knowledge}
 

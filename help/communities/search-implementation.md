@@ -9,13 +9,11 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1210'
 ht-degree: 3%
-
 ---
-
 # Search Essentials {#search-essentials}
 
 ## Panoramica {#overview}
@@ -26,11 +24,11 @@ Per le comunità, le due cose generalmente cercate sono:
 
 * Contenuto pubblicato dai membri della community
 
-   * Utilizza l’API di ricerca UGC di AEM Communities.
+  * Utilizza l’API di ricerca UGC di AEM Communities.
 
 * Utenti e gruppi di utenti (dati utente)
 
-   * Utilizza le funzionalità di ricerca della piattaforma AEM.
+  * Utilizza le funzionalità di ricerca della piattaforma AEM.
 
 Questa sezione della documentazione è interessante per gli sviluppatori che creano componenti personalizzati per la creazione o la gestione di contenuti generati dagli utenti (UGC, User-Generated Content).
 
@@ -44,7 +42,7 @@ Per informazioni sui metodi di utilità utilizzati per accedere ai nodi shadow U
 
 ## API di ricerca UGC {#ugc-search-api}
 
-L&#39;archivio comune [UGC](working-with-srp.md) è fornito da uno dei vari provider di risorse di archiviazione (SRP), ciascuno con un linguaggio di query nativo diverso. Pertanto, indipendentemente dall&#39;SRP scelto, il codice personalizzato deve utilizzare i metodi del pacchetto API [UGC](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) che richiama il linguaggio di query appropriato per l&#39;SRP scelto.
+L&#39;archivio comune [UGC](working-with-srp.md) è fornito da uno dei vari provider di risorse di archiviazione (SRP), ciascuno con un linguaggio di query nativo diverso. Pertanto, indipendentemente dall&#39;SRP scelto, il codice personalizzato deve utilizzare i metodi del pacchetto API [UGC](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) che richiama il linguaggio di query appropriato per l&#39;SRP scelto.
 
 ### Ricerche ASRP {#asrp-searches}
 
@@ -160,8 +158,8 @@ Solr è un esempio di linguaggio di query che utilizza uno schema.
 
 * Per i tipi con più valori, aggiungi &quot;s&quot; al suffisso, ad esempio:
 
-   * `viewDate_dt`: proprietà data singola
-   * `viewDates_dts`: proprietà list of dates
+  * `viewDate_dt`: proprietà data singola
+  * `viewDates_dts`: proprietà list of dates
 
 ## Filtri {#filters}
 
@@ -171,13 +169,13 @@ La sintassi del filtro per la logica AND e OR è espressa come segue (visualizza
 
 * Per specificare OR, utilizza un parametro di filtro con valori separati da virgola:
 
-   * `filter=name eq 'Jennifer',name eq 'Jen'`
+  * `filter=name eq 'Jennifer',name eq 'Jen'`
 
 * Per specificare E utilizzare più parametri di filtro:
 
-   * `filter = name eq 'Jackson'&filter=message eq 'testing'`
+  * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
-L&#39;implementazione predefinita del [componente Ricerca](search.md) utilizza questa sintassi, come riportato nell&#39;URL che apre la pagina Risultati ricerca nella [guida dei componenti community](components-guide.md). Per fare prove, passa a [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
+L&#39;implementazione predefinita del [componente Ricerca](search.md) utilizza questa sintassi, come riportato nell&#39;URL che apre la pagina Risultati ricerca nella [guida dei componenti community](components-guide.md). Per fare delle prove, passa a [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
 Gli operatori filtro sono:
 
@@ -193,9 +191,9 @@ Gli operatori filtro sono:
 È importante che l’URL faccia riferimento al componente Communities (risorsa) e non alla pagina in cui il componente viene inserito:
 
 * Corretto: componente forum
-   * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
+  * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * Pagina forum errata
-   * `/content/community-components/en/forum.social.json`
+  * `/content/community-components/en/forum.social.json`
 
 ## Strumenti SRP {#srp-tools}
 

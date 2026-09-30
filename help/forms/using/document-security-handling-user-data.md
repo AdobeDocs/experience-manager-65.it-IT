@@ -7,13 +7,11 @@ role: Admin,User
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
-
 ---
-
 # Document Security | Gestione dei dati utente {#document-security-handling-user-data}
 
 AEM Forms document security consente di creare, archiviare e applicare impostazioni di protezione predefinite ai documenti. In questo modo solo gli utenti autorizzati possono utilizzare i documenti. È possibile proteggere i documenti utilizzando i criteri. Una policy è una raccolta di informazioni che includono impostazioni di sicurezza e un elenco di utenti autorizzati. Puoi applicare una policy a uno o più documenti e autorizzare gli utenti aggiunti nella gestione utenti di AEM Forms JEE.
@@ -125,7 +123,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Per esportare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per esportare i dati di controllo in base a `principalId`, `policyId` o `licenseId`.
+>Per esportare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per esportare i dati di controllo in base a `principalId`, `policyId` o `licenseId`.
 
 Per ottenere dati completi su un utente nel sistema, è necessario accedere ed esportare i dati dal database di gestione utenti. Per ulteriori informazioni, vedere [Gestione utenti di Forms: gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
 
@@ -150,7 +148,7 @@ Per eliminare i dati di Document Security relativi a un ID entità dalle tabelle
 
    >[!NOTE]
    >
-   >Per eliminare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per eliminare i dati di controllo basati su `principalId`, `policyId` o `licenseId`.
+   >Per eliminare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per eliminare i dati di controllo basati su `principalId`, `policyId` o `licenseId`.
 
 1. I file XML dei criteri attivi e archiviati sono archiviati rispettivamente nelle tabelle di database `EdcPolicyXmlEntity` e `EdcPolicyArchiveEntity`. Per eliminare i dati di un utente da queste tabelle, eseguire le operazioni seguenti:
 

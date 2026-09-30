@@ -10,13 +10,11 @@ exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '702'
 ht-degree: 12%
-
 ---
-
 # Migrazione all’interfaccia utente touch{#migration-to-the-touch-ui}
 
 A partire dalla versione 6.0, Adobe Experience Manager (AEM) ha introdotto una nuova interfaccia utente denominata *interfaccia touch* (nota anche semplicemente come *interfaccia touch*). È allineato alle linee guida di Adobe Experience Cloud e dell’interfaccia utente generale di Adobe. Questa è diventata l&#39;interfaccia utente standard in AEM con l&#39;interfaccia legacy orientata al desktop denominata *interfaccia classica*.
@@ -119,7 +117,7 @@ Le finestre di dialogo sono un fattore importante durante la migrazione dei comp
 * [Migrazione da un componente classico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) - per aiutarti a convertire le finestre di dialogo dei componenti dell&#39;interfaccia classica in interfaccia touch
 
-   * Nell’interfaccia touch è disponibile un livello di compatibilità per aprire una finestra di dialogo dell’interfaccia classica all’interno di un &quot;wrapper dell’interfaccia touch&quot;, ma questa opzione ha funzionalità limitate e non è consigliata a lungo termine.
+  * Nell’interfaccia touch è disponibile un livello di compatibilità per aprire una finestra di dialogo dell’interfaccia classica all’interno di un &quot;wrapper dell’interfaccia touch&quot;, ma questa opzione ha funzionalità limitate e non è consigliata a lungo termine.
 
 * [Personalizzazione dei campi delle finestre di dialogo nell’interfaccia utente touch](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creazione di un nuovo componente campo dell’interfaccia utente Granite](/help/sites-developing/granite-ui-component.md)
@@ -137,7 +135,7 @@ Sebbene non siano direttamente correlate a una migrazione all’interfaccia uten
 
 * [Modelli](/help/sites-developing/templates.md) - [Modelli modificabili](/help/sites-developing/page-templates-editable.md)
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
 
 >[!NOTE]
 >
@@ -148,7 +146,7 @@ Sebbene non siano direttamente correlate a una migrazione all’interfaccia uten
 Per informazioni complete sullo sviluppo di AEM, consulta la raccolta di risorse in:
 
 * [Guida utente sullo sviluppo](/help/sites-developing/getting-started.md)
-* [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Documentazione dell’interfaccia utente Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutorial e video su AEM 6.5 Sites](https://experienceleague.adobe.com/it/docs/experience-manager-learn/sites/overview)
 * [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=it)

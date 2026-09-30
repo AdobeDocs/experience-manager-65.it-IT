@@ -1,22 +1,24 @@
 ---
 title: Guida di riferimento per i passaggi dei flussi di lavoro
+
 description: Fai riferimento a questo riferimento di passaggio per i flussi di lavoro in Adobe Experience Manager.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3288'
 ht-degree: 2%
-
 ---
-
 # Guida di riferimento per i passaggi dei flussi di lavoro {#workflow-step-reference}
 
 I modelli di flusso di lavoro sono costituiti da una serie di passaggi di vari tipi. A seconda del tipo, questi passaggi possono essere configurati ed estesi con parametri e script per fornire le funzionalità e il controllo necessari.
@@ -52,7 +54,7 @@ Descrizione del passaggio.
 * **Timeout**
 
   Il periodo dopo il quale il passaggio &quot;scade&quot;.
-Puoi scegliere tra: **Off**, **Immediate**, **1h**, **6h**, **12h**, **24h**.
+  Puoi scegliere tra: **Off**, **Immediate**, **1h**, **6h**, **12h**, **24h**.
 
 * **Gestore timeout**
 
@@ -68,15 +70,15 @@ Le seguenti proprietà sono disponibili per molti componenti del passaggio del f
 
 * **Notifica all&#39;utente via e-mail**
 
-   * Avvisa i partecipanti inviando loro un’e-mail quando il flusso di lavoro raggiunge il passaggio.
-   * Se l&#39;opzione è abilitata, viene inviata un&#39;e-mail all&#39;utente definito dalla proprietà **Utente/Gruppo** o a ogni membro del gruppo se è definito un gruppo.
+  * Avvisa i partecipanti inviando loro un’e-mail quando il flusso di lavoro raggiunge il passaggio.
+  * Se l&#39;opzione è abilitata, viene inviata un&#39;e-mail all&#39;utente definito dalla proprietà **Utente/Gruppo** o a ogni membro del gruppo se è definito un gruppo.
 
 * **Utente/Gruppo**
 
-   * Una casella di selezione a discesa consente di individuare e selezionare un utente o un gruppo.
-   * Se assegni il passaggio a un utente specifico, solo questo utente può agire sul passaggio.
-   * Se si assegna il passaggio a un intero gruppo, quando il flusso di lavoro raggiunge questo passaggio, tutti gli utenti di questo gruppo dispongono dell&#39;azione nella propria **Posta in arrivo flusso di lavoro**.
-   * Vedi [Partecipazione ai flussi di lavoro](/help/sites-authoring/workflows-participating.md) per ulteriori informazioni.
+  * Una casella di selezione a discesa consente di individuare e selezionare un utente o un gruppo.
+  * Se assegni il passaggio a un utente specifico, solo questo utente può agire sul passaggio.
+  * Se si assegna il passaggio a un intero gruppo, quando il flusso di lavoro raggiunge questo passaggio, tutti gli utenti di questo gruppo dispongono dell&#39;azione nella propria **Posta in arrivo flusso di lavoro**.
+  * Vedi [Partecipazione ai flussi di lavoro](/help/sites-authoring/workflows-participating.md) per ulteriori informazioni.
 
 ## Suddivisione E {#and-split}
 
@@ -90,8 +92,8 @@ Per configurare la suddivisione:
 
 * Modifica le proprietà **AND Split**:
 
-   * **Dividi nome**: assegna un nome a scopo esplicativo
-   * Selezionare il numero di filiali richieste: 2, 3, 4 o 5.
+  * **Dividi nome**: assegna un nome a scopo esplicativo
+  * Selezionare il numero di filiali richieste: 2, 3, 4 o 5.
 
 * Aggiungi i passaggi del flusso di lavoro ai rami in base alle esigenze.
 
@@ -112,7 +114,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Comune](#step-properties-common-tab)
 * **Contenitore**
 
-   * **Flusso di lavoro secondario**: selezionare il flusso di lavoro da avviare.
+  * **Flusso di lavoro secondario**: selezionare il flusso di lavoro da avviare.
 
 ## Passaggio {#goto-step}
 
@@ -130,12 +132,12 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Comune](#step-properties-common-tab)
 * **Processo**
 
-   * **Passaggio di destinazione**: selezionare il passaggio da eseguire dopo aver valutato la condizione per l&#39;espressione di routing.
-   * **Espressione di indirizzamento**: selezionare Definizione regola, Script esterno o uno script ECMA che determina se eseguire il **passaggio di destinazione**.
+  * **Passaggio di destinazione**: selezionare il passaggio da eseguire dopo aver valutato la condizione per l&#39;espressione di routing.
+  * **Espressione di indirizzamento**: selezionare Definizione regola, Script esterno o uno script ECMA che determina se eseguire il **passaggio di destinazione**.
 
-      * **Definizione regola:** Utilizza l&#39;editor [espressioni](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) per definire la regola.
-      * **Script esterno:** il percorso dello script esterno.
-      * **Script ECMA**: lo script che determina se eseguire il **passaggio Goto**.
+    * **Definizione regola:** Utilizza l&#39;editor [espressioni](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) per definire la regola.
+    * **Script esterno:** il percorso dello script esterno.
+    * **Script ECMA**: lo script che determina se eseguire il **passaggio Goto**.
 
 #### Simulazione di un ciclo for {#simulating-a-for-loop}
 
@@ -198,18 +200,18 @@ Per configurare la suddivisione:
 
 * Modifica le proprietà di suddivisione **OR**:
 
-   * **Comune**
+  * **Comune**
 
-      * Specifica il nome della divisione.
+    * Specifica il nome della divisione.
 
-   * **Rami (*x)***
+  * **Rami (*x)***
 
-      * **Aggiungi ramo:** Aggiungi altri rami al passaggio.
-      * **Seleziona espressione di routing**: per valutare il ramo attivo, selezionare l&#39;espressione di routing. I valori possibili includono: Definizione regola, Script esterno e script ECMA.
-      * **Fare clic per aggiungere l&#39;espressione**: aggiungere l&#39;espressione per valutare il ramo attivo se si seleziona **Definizione regola** come espressione di routing.
-      * **Percorso script**: percorso di un file contenente lo script per valutare il ramo attivo se si seleziona **Script esterno** come espressione di routing.
-      * **Script**: Se si seleziona **Script ECMA** come espressione di routing, aggiungere lo script nella casella per valutare il ramo attivo.
-      * **Route predefinita**: se sono presenti più rami, viene seguito il ramo predefinito. Per impostazione predefinita, è possibile specificare un solo ramo.
+    * **Aggiungi ramo:** Aggiungi altri rami al passaggio.
+    * **Seleziona espressione di routing**: per valutare il ramo attivo, selezionare l&#39;espressione di routing. I valori possibili includono: Definizione regola, Script esterno e script ECMA.
+    * **Fare clic per aggiungere l&#39;espressione**: aggiungere l&#39;espressione per valutare il ramo attivo se si seleziona **Definizione regola** come espressione di routing.
+    * **Percorso script**: percorso di un file contenente lo script per valutare il ramo attivo se si seleziona **Script esterno** come espressione di routing.
+    * **Script**: Se si seleziona **Script ECMA** come espressione di routing, aggiungere lo script nella casella per valutare il ramo attivo.
+    * **Route predefinita**: se sono presenti più rami, viene seguito il ramo predefinito. Per impostazione predefinita, è possibile specificare un solo ramo.
 
   >[!NOTE]
   >
@@ -269,7 +271,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Utente/Gruppo](#step-properties-user-group-tab)
 * **Finestra di dialogo**
 
-   * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [&#x200B; creata](#dialog-participant-step-creating-a-dialog).
+  * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [&#x200B; creata](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante finestra di dialogo - Creazione di una finestra di dialogo {#dialog-participant-step-creating-a-dialog}
 
@@ -284,20 +286,18 @@ Puoi memorizzare i dati del widget nel payload del flusso di lavoro o nei metada
 
 * **Archivia dati con payload**
 
-   * Per memorizzare i dati del widget come proprietà del payload del flusso di lavoro, utilizzate il seguente formato per il valore della proprietà name del nodo del widget:
+  * Per memorizzare i dati del widget come proprietà del payload del flusso di lavoro, utilizzate il seguente formato per il valore della proprietà name del nodo del widget:
+    `./jcr:content/nodename`
 
-     `./jcr:content/nodename`
-
-   * I dati vengono memorizzati nella proprietà `nodename` del nodo payload. Se il nodo non contiene tale proprietà, la proprietà viene creata.
-   * Quando viene memorizzato con il payload, gli utilizzi successivi della finestra di dialogo con lo stesso payload sovrascrivono il valore della proprietà.
+  * I dati vengono memorizzati nella proprietà `nodename` del nodo payload. Se il nodo non contiene tale proprietà, la proprietà viene creata.
+  * Quando viene memorizzato con il payload, gli utilizzi successivi della finestra di dialogo con lo stesso payload sovrascrivono il valore della proprietà.
 
 * **Archivia dati con elemento di lavoro**
 
-   * Per memorizzare i dati del widget come proprietà dei metadati dell&#39;elemento di lavoro, utilizzate il seguente formato per il valore della proprietà name:
+  * Per memorizzare i dati del widget come proprietà dei metadati dell&#39;elemento di lavoro, utilizzate il seguente formato per il valore della proprietà name:
+    `nodename`
 
-     `nodename`
-
-   * I dati vengono archiviati nella proprietà `nodename` dell&#39;elemento di lavoro `metadata`. I dati vengono conservati se la finestra di dialogo viene successivamente utilizzata con lo stesso payload.
+  * I dati vengono archiviati nella proprietà `nodename` dell&#39;elemento di lavoro `metadata`. I dati vengono conservati se la finestra di dialogo viene successivamente utilizzata con lo stesso payload.
 
 #### Passaggio partecipante finestra di dialogo - Definizione finestra di dialogo {#dialog-participant-step-dialog-definition}
 
@@ -342,7 +342,7 @@ Puoi memorizzare i dati del widget nel payload del flusso di lavoro o nei metada
 
 1. **Esempio di definizione della finestra di dialogo**
 
-   Il seguente frammento di codice XML rappresenta una finestra di dialogo in cui è memorizzato un valore `String` nel nodo `watchEmail` del contenuto del payload. Il nodo titolo rappresenta il componente [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html):
+   Il seguente frammento di codice XML rappresenta una finestra di dialogo in cui è memorizzato un valore `String` nel nodo `watchEmail` del contenuto del payload. Il nodo titolo rappresenta il componente [TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html):
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -387,13 +387,13 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Comune](#step-properties-common-tab)
 * **Selettore partecipanti**
 
-   * **Selettore partecipanti**: nome del selettore partecipanti [creato](#developingtheparticipantchooser).
-   * **Argomenti**: tutti gli argomenti richiesti.
-   * **E-mail**: indica se una notifica e-mail deve essere inviata all&#39;utente.
+  * **Selettore partecipanti**: nome del selettore partecipanti [creato](#developingtheparticipantchooser).
+  * **Argomenti**: tutti gli argomenti richiesti.
+  * **E-mail**: indica se una notifica e-mail deve essere inviata all&#39;utente.
 
 * **Finestra di dialogo**
 
-   * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [&#x200B; creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
+  * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [&#x200B; creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante dinamico: sviluppo del selettore partecipanti {#dynamic-participant-step-developing-the-participant-chooser}
 
@@ -430,11 +430,11 @@ Crea un servizio OSGi o un ECMAScript che seleziona un utente a cui assegnare l�
 
 * **Servizio OSGi**
 
-  I servizi devono implementare l&#39;interfaccia [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). L’interfaccia definisce i seguenti membri:
+  I servizi devono implementare l&#39;interfaccia [com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). L’interfaccia definisce i seguenti membri:
 
-   * Campo `SERVICE_PROPERTY_LABEL`: utilizzare questo campo per specificare il nome del selettore partecipanti. Il nome viene visualizzato in un elenco di selettori partecipanti disponibili nelle proprietà **Passaggio partecipante dinamico**.
+  * Campo `SERVICE_PROPERTY_LABEL`: utilizzare questo campo per specificare il nome del selettore partecipanti. Il nome viene visualizzato in un elenco di selettori partecipanti disponibili nelle proprietà **Passaggio partecipante dinamico**.
 
-   * Metodo `getParticipant`: restituisce l&#39;ID entità risolto dinamicamente come valore `String`.
+  * Metodo `getParticipant`: restituisce l&#39;ID entità risolto dinamicamente come valore `String`.
 
   >[!CAUTION]
   >
@@ -516,7 +516,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Utente/Gruppo](#step-properties-user-group-tab)
 * **Modulo**
 
-   * **Percorso modulo**: percorso del [modulo creato](#form-participant-step-creating-the-form).
+  * **Percorso modulo**: percorso del [modulo creato](#form-participant-step-creating-the-form).
 
 #### Passaggio partecipante modulo: creazione del modulo {#form-participant-step-creating-the-form}
 
@@ -555,7 +555,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Comune](#step-properties-common-tab)
 * **Argomenti**
 
-   * **Partecipanti**: specifica l&#39;elenco di utenti disponibili per la selezione. Per aggiungere un utente all&#39;elenco, fare clic su **Aggiungi elemento** e digitare il percorso principale del nodo utente o l&#39;ID utente. L’ordine degli utenti non influisce sulla probabilità che venga assegnato un elemento di lavoro.
+  * **Partecipanti**: specifica l&#39;elenco di utenti disponibili per la selezione. Per aggiungere un utente all&#39;elenco, fare clic su **Aggiungi elemento** e digitare il percorso principale del nodo utente o l&#39;ID utente. L’ordine degli utenti non influisce sulla probabilità che venga assegnato un elemento di lavoro.
 
 ### Selettore partecipante iniziatore flusso di lavoro {#workflow-initiator-participant-chooser}
 
@@ -580,14 +580,14 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Comune](#step-properties-common-tab)
 * **Processo**
 
-   * **Processo**: implementazione del processo da eseguire. Utilizza il menu a discesa per selezionare il servizio ECMAScript o OSGi. Per informazioni su:
+  * **Processo**: implementazione del processo da eseguire. Utilizza il menu a discesa per selezionare il servizio ECMAScript o OSGi. Per informazioni su:
 
-      * I servizi standard ECMAScripts e OSGi. Vedere [Processi incorporati per le fasi del processo](/help/sites-developing/workflows-process-ref.md).
-      * Creazione di ECMAScript per un passaggio del processo. Vedere [Implementazione di un passaggio del processo con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * Creazione di servizi OSGi per un passaggio del processo. Vedere [Implementazione di un passaggio del processo con una classe Java™](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+    * I servizi standard ECMAScripts e OSGi. Vedere [Processi incorporati per le fasi del processo](/help/sites-developing/workflows-process-ref.md).
+    * Creazione di ECMAScript per un passaggio del processo. Vedere [Implementazione di un passaggio del processo con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+    * Creazione di servizi OSGi per un passaggio del processo. Vedere [Implementazione di un passaggio del processo con una classe Java™](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
 
-   * **Avanzamento gestore**: selezionare questa opzione per far avanzare automaticamente il flusso di lavoro al passaggio successivo dopo l&#39;esecuzione. Se non viene selezionato, lo script di implementazione deve gestire l’avanzamento del flusso di lavoro.
-   * **Argomenti**: argomenti da passare al processo.
+  * **Avanzamento gestore**: selezionare questa opzione per far avanzare automaticamente il flusso di lavoro al passaggio successivo dopo l&#39;esecuzione. Se non viene selezionato, lo script di implementazione deve gestire l’avanzamento del flusso di lavoro.
+  * **Argomenti**: argomenti da passare al processo.
 
 ## Imposta variabile {#set-variable}
 
@@ -602,15 +602,15 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Comune](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
 * **Mappatura**
 
-   * **Seleziona variabile:** Utilizzare questa opzione per selezionare una variabile per impostarne il valore.
-   * **Seleziona modalità di mapping:** Per impostare il valore per la variabile, selezionare una modalità di mapping. A seconda del tipo di dati della variabile, puoi utilizzare le seguenti opzioni per impostare il valore di una variabile:
+  * **Seleziona variabile:** Utilizzare questa opzione per selezionare una variabile per impostarne il valore.
+  * **Seleziona modalità di mapping:** Per impostare il valore per la variabile, selezionare una modalità di mapping. A seconda del tipo di dati della variabile, puoi utilizzare le seguenti opzioni per impostare il valore di una variabile:
 
-      * **Valore letterale:** Utilizzare l&#39;opzione quando si conosce il valore esatto da specificare.
-      * **Espressione:** Utilizzare l&#39;opzione quando il valore da utilizzare viene calcolato in base a un&#39;espressione. L’espressione viene creata nell’editor di espressioni fornito.
-      * **Notazione punti JSON:** Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo JSON o FDM.
-      * **XPATH:** Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo XML.
-      * **Relativo al payload:** Utilizzare l&#39;opzione quando il valore da salvare nella variabile è disponibile in un percorso relativo al payload.
-      * **Percorso assoluto:** Utilizzare l&#39;opzione quando il valore da salvare nella variabile è disponibile in un percorso assoluto.
+    * **Valore letterale:** Utilizzare l&#39;opzione quando si conosce il valore esatto da specificare.
+    * **Espressione:** Utilizzare l&#39;opzione quando il valore da utilizzare viene calcolato in base a un&#39;espressione. L’espressione viene creata nell’editor di espressioni fornito.
+    * **Notazione punti JSON:** Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo JSON o FDM.
+    * **XPATH:** Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo XML.
+    * **Relativo al payload:** Utilizzare l&#39;opzione quando il valore da salvare nella variabile è disponibile in un percorso relativo al payload.
+    * **Percorso assoluto:** Utilizzare l&#39;opzione quando il valore da salvare nella variabile è disponibile in un percorso assoluto.
 
-   * **Specificare il valore:** Per eseguire il mapping alla variabile, specificare un valore. Il valore specificato in questo campo dipende dalla modalità di mappatura.
-   * **Aggiungi mapping:** Utilizzare questa opzione per aggiungere altri mapping per impostare un valore per la variabile.
+  * **Specificare il valore:** Per eseguire il mapping alla variabile, specificare un valore. Il valore specificato in questo campo dipende dalla modalità di mappatura.
+  * **Aggiungi mapping:** Utilizzare questa opzione per aggiungere altri mapping per impostare un valore per la variabile.

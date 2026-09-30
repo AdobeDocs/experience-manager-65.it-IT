@@ -1,23 +1,23 @@
 ---
-title: Verifica dell’interfaccia utente
-description: AEM fornisce un framework per automatizzare i test per l’interfaccia utente dell’AEM
+title: Test dell’interfaccia utente
+description: AEM fornisce un framework per automatizzare i test per l’interfaccia utente di AEM
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
+
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 2%
-
+source-wordcount: '795'
+ht-degree: 3%
 ---
-
-# Verifica dell’interfaccia utente{#testing-your-ui}
+# Test dell’interfaccia utente{#testing-your-ui}
 
 >[!NOTE]
 >
@@ -25,17 +25,17 @@ ht-degree: 2%
 >
 >Vedere [Funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-L’AEM fornisce un framework per automatizzare i test per l’interfaccia utente dell’AEM. Utilizzando il framework, puoi scrivere ed eseguire test dell’interfaccia utente direttamente in un browser web. Il framework fornisce un’API JavaScript per la creazione di test.
+AEM fornisce un framework per automatizzare i test per l’interfaccia utente di AEM. Utilizzando il framework, puoi scrivere ed eseguire test dell’interfaccia utente direttamente in un browser web. Il framework fornisce un’API JavaScript per la creazione di test.
 
-Il framework di test dell&#39;AEM utilizza Hobbes.js, una libreria di test scritta in JavaScript. Il framework Hobbes.js è stato sviluppato per testare l&#39;AEM come parte del processo di sviluppo. Il framework è ora disponibile per l’uso pubblico per testare le applicazioni AEM.
+Il framework di test di AEM utilizza Hobbes.js, una libreria di test scritta in JavaScript. Il framework Hobbes.js è stato sviluppato per testare AEM come parte del processo di sviluppo. Il framework è ora disponibile per l’uso pubblico e consente di testare le applicazioni AEM.
 
 >[!NOTE]
 >
->Per informazioni complete sull&#39;API, consulta la [documentazione](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) di Hobbes.js.
+>Per informazioni complete sull&#39;API, consulta la [documentazione](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) di Hobbes.js.
 
 ## Struttura delle prove {#structure-of-tests}
 
-Quando si utilizzano test automatizzati all’interno dell’AEM, è importante comprendere i seguenti termini:
+Quando si utilizzano test automatizzati in AEM, è importante comprendere i seguenti termini:
 
 | Azione | Un&#39;azione **Azione** è un&#39;attività specifica in una pagina Web, ad esempio la selezione di un collegamento o di un pulsante. |
 |---|---|
@@ -104,7 +104,7 @@ Le suite di test vengono eseguite in sequenza nell’ordine in cui compaiono nel
 
 La procedura seguente illustra la creazione e l&#39;esecuzione di una suite di test utilizzando il contenuto [We.Retail](/help/sites-developing/we-retail.md), ma è possibile modificare facilmente il test per utilizzare una pagina Web diversa.
 
-Per informazioni dettagliate sulla creazione di suite di test personalizzate, consulta la [documentazione API Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Per informazioni dettagliate sulla creazione di suite di test personalizzate, consulta la [documentazione API Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
 1. Apri CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Fare clic con il pulsante destro del mouse sulla cartella `/etc/clientlibs` e scegliere **Crea > Crea cartella**. Digitare `myTests` per il nome e fare clic su **OK**.

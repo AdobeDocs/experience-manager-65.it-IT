@@ -6,13 +6,11 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '10688'
-ht-degree: 3%
-
+source-wordcount: '10825'
+ht-degree: 2%
 ---
-
 # Installazione e configurazione dei servizi documentali {#installing-and-configuring-document-services}
 
 AEM Forms fornisce un set di servizi OSGi per eseguire diverse operazioni a livello di documento, ad esempio servizi per creare, assemblare, distribuire e archiviare documenti PDF, aggiungere firme digitali per limitare l’accesso ai documenti e decodificare Forms in codice a barre. Questi servizi sono inclusi nel pacchetto del componente aggiuntivo AEM Forms. Nel complesso, questi servizi sono noti come servizi di documentazione. Di seguito è riportato un elenco dei servizi documentali disponibili e delle relative principali funzionalità:
@@ -37,9 +35,9 @@ AEM Forms fornisce un set di servizi OSGi per eseguire diverse operazioni a live
 
 * **Servizio di firma:** consente di utilizzare le firme digitali e i documenti nel server AEM. Ad esempio, il servizio di firma viene utilizzato in genere nelle situazioni seguenti:
 
-   * Il server AEM certifica un modulo prima che venga inviato a un utente per l’apertura tramite Acrobat o Adobe Reader.
-   * Il server AEM convalida una firma aggiunta a un modulo tramite Acrobat o Adobe Reader.
-   * Il server AEM firma un modulo per conto di un notaio pubblico.
+  * Il server AEM certifica un modulo prima che venga inviato a un utente per l’apertura tramite Acrobat o Adobe Reader.
+  * Il server AEM convalida una firma aggiunta a un modulo tramite Acrobat o Adobe Reader.
+  * Il server AEM firma un modulo per conto di un notaio pubblico.
 
   Il servizio di firma accede ai certificati e alle credenziali archiviati nell&#39;archivio fonti attendibili. Per ulteriori informazioni, vedere [Servizio firma](/help/forms/using/aem-document-services-programmatically.md).
 
@@ -64,18 +62,18 @@ Prima di iniziare l’installazione e la configurazione dei servizi documentali 
 * Il percorso di installazione dell’istanza di AEM non contiene spazi vuoti.
 * Un’istanza di AEM è attiva e in esecuzione. Nella terminologia di AEM, per &quot;istanza&quot; si intende una copia di AEM in esecuzione su un server in modalità di authoring o pubblicazione. In genere, per eseguire i servizi documentali di AEM Forms è necessaria una sola istanza di AEM (authoring o pubblicazione):
 
-   * **Autore**: istanza di AEM utilizzata per creare, caricare e modificare contenuti e amministrare il sito Web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
-   * **Pubblicazione**: istanza di AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
+  * **Autore**: istanza di AEM utilizzata per creare, caricare e modificare contenuti e amministrare il sito Web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
+  * **Pubblicazione**: istanza di AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
 
 * I requisiti di memoria sono soddisfatti. Il pacchetto del componente aggiuntivo AEM Forms richiede:
 
-   * 15 GB di spazio temporaneo per le installazioni basate su Microsoft® Windows.
-   * 6 GB di spazio temporaneo per installazioni basate su UNIX.
+  * 15 GB di spazio temporaneo per le installazioni basate su Microsoft® Windows.
+  * 6 GB di spazio temporaneo per installazioni basate su UNIX.
 
 * Il software client necessario affinché il generatore PDF esegua la conversione su Microsoft® Windows e Linux® è installato:
 
-   * **Microsoft® Windows**: installa [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**: installa [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+  * **Microsoft® Windows**: installa [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+  * **Linux®**: installa [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
 
 >[!NOTE]
 >
@@ -165,26 +163,30 @@ Se si utilizza un sistema operativo basato su UNIX, installare i seguenti pacche
 
 * **(solo PDF Generator**) Installa la versione a 32 bit delle librerie libcurl, libcrypto e libssl e crea i symlink seguenti. I collegamenti simbolici puntano alla versione più recente delle rispettive librerie:
 
-   * /usr/lib/libcurl.so
-   * /usr/lib/libcrypto.so
-   * /usr/lib/libssl.so
+  * /usr/lib/libcurl.so
+  * /usr/lib/libcrypto.so
+  * /usr/lib/libssl.so
 
 * **(solo PDF Generator)** Il servizio PDF Generator supporta le route WebKit e WebToPDF per la conversione di file HTML in documenti PDF. Per abilitare la conversione per la route WebToPDF, installare le librerie a 64 bit elencate di seguito. In genere, queste librerie sono già installate. Se manca una libreria, installala manualmente:
 
-   * linux-gate.so.1
-   * libz.so.1
-   * libfontconfig.so.1
-   * libfreetype.so.6
-   * libdl.so.2
-   * librt.so.1
-   * libpthread.so.0
-   * libstdc++.so.6
-   * libm.so.6
-   * libgcc_s.so.1
-   * libc.so.6
-   * ld-linux.so.2
-   * libexpat.so.1
+  * linux-gate.so.1
+  * libz.so.1
+  * libfontconfig.so.1
+  * libfreetype.so.6
+  * libdl.so.2
+  * librt.so.1
+  * libpthread.so.0
+  * libstdc++.so.6
+  * libm.so.6
+  * libgcc_s.so.1
+  * libc.so.6
+  * ld-linux.so.2
+  * libexpat.so.1
 * (Solo per PDF Generator) Per abilitare la route WebKit nelle impostazioni RHEL 8 o RHEL 9, SLES15, è possibile che la libreria `nspr` a 32 bit non sia disponibile per impostazione predefinita; installarla se non è presente.
+
+* Su Red Hat® Enterprise Linux® 9, la build OpenOffice a 32 bit richiede `libcrypt.so.1`, che non è installato per impostazione predefinita. Se manca, OpenOffice non viene avviato con l&#39;errore `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` e le conversioni da OpenOffice a PDF non riescono. Installare il pacchetto `libxcrypt-compat` (32 bit) per fornire la libreria:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 * (Solo per PDF Generator) Se la conversione WebToPDF non riesce sul server Unix® con il seguente errore:
 
@@ -1405,13 +1407,13 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 * Accertati che un utente PDF Generator sia aggiunto nell’interfaccia utente di configurazione di PDF.
 * Verificare che l&#39;utente PDF Generator sia membro del gruppo Administrators e che il privilegio [Sostituisci token a livello di processo](#grant-the-replace-a-process-level-token-privilege) sia impostato per l&#39;utente.
 * Assicurati che l’utente sia configurato nell’interfaccia utente di PDF Generator ed esegua le azioni seguenti:
-   1. Accedere a Microsoft® Windows con l&#39;utente PDF Generator.
-   1. Aprire applicazioni Microsoft® Office o OpenOffice e annullare tutte le finestre di dialogo.
-   1. Imposta Adobe PDF come stampante predefinita.
-   1. Imposta Acrobat come programma predefinito per i file PDF.
-   1. Eseguire la conversione manuale utilizzando le opzioni File > Stampa e Acrobat barra multifunzione nelle applicazioni di Microsoft Office e annullare tutte le finestre di dialogo.
-   1. Terminare tutti i processi correlati alla conversione, ad esempio winword.exe, powerpoint.exe ed excel.exe.
-   1. Riavvia il server AEM Forms.
+  1. Accedere a Microsoft® Windows con l&#39;utente PDF Generator.
+  1. Aprire applicazioni Microsoft® Office o OpenOffice e annullare tutte le finestre di dialogo.
+  1. Imposta Adobe PDF come stampante predefinita.
+  1. Imposta Acrobat come programma predefinito per i file PDF.
+  1. Eseguire la conversione manuale utilizzando le opzioni File > Stampa e Acrobat barra multifunzione nelle applicazioni di Microsoft Office e annullare tutte le finestre di dialogo.
+  1. Terminare tutti i processi correlati alla conversione, ad esempio winword.exe, powerpoint.exe ed excel.exe.
+  1. Riavvia il server AEM Forms.
 
 **Linux®**
 
@@ -1419,6 +1421,10 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 * Creare una variabile di ambiente `OpenOffice_PATH` e impostarla in modo che punti all&#39;installazione di OpenOffice è impostata nel profilo [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o nel profilo dt (Device Tree).
 * In caso di problemi durante l&#39;installazione di OpenOffice, verificare che siano disponibili le [librerie a 32 bit](#extrarequirements) necessarie per l&#39;installazione di OpenOffice.
+
+* Su Red Hat® Enterprise Linux® 9, la build OpenOffice a 32 bit richiede `libcrypt.so.1`, che non è installato per impostazione predefinita. Se manca, OpenOffice non viene avviato con l&#39;errore `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` e le conversioni da OpenOffice a PDF non riescono. Installare il pacchetto `libxcrypt-compat` (32 bit) per fornire la libreria:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 
@@ -1451,29 +1457,29 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 * Verifica che nel sistema siano installate le versioni più recenti delle librerie lib curl, libcrypto e libssl a 32 bit. Creare anche i symlink `/usr/lib/libcurl.so` (o libcurl.a per AIX®), `/usr/lib/libcrypto.so` (o libcrypto.a per AIX®) e `/usr/lib/libssl.so` (o libssl.a per AIX®) che puntano alle versioni più recenti (32 bit) delle rispettive librerie.
 
 * Effettua le seguenti operazioni per il provider di socket SSL IBM®:
-   1. Copiare il file java.security da `<WAS_Installed_JAVA>\jre\lib\security` in qualsiasi posizione sul server AEM Forms. La posizione predefinita è Posizione predefinita = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
+  1. Copiare il file java.security da `<WAS_Installed_JAVA>\jre\lib\security` in qualsiasi posizione sul server AEM Forms. La posizione predefinita è Posizione predefinita = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
-   1. Modificare il file java.security nella posizione copiata e modificare le factory SSL Socket predefinite con factory JSSE2 (utilizzare factory JSSE2 invece di WebSphere®).
+  1. Modificare il file java.security nella posizione copiata e modificare le factory SSL Socket predefinite con factory JSSE2 (utilizzare factory JSSE2 invece di WebSphere®).
 
-      Modificare i seguenti socket factory JSSE predefiniti:
+     Modificare i seguenti socket factory JSSE predefiniti:
 
-      ```
-      #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
-      con
+     con
 
-      ```
-      ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
 +++
 

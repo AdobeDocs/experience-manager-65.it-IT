@@ -9,13 +9,11 @@ exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '351'
 ht-degree: 1%
-
 ---
-
 # Elementi di base recensioni {#reviews-essentials}
 
 Questa funzione è costituita da due componenti che lavorano insieme: revisioni e riepilogo delle revisioni.
@@ -40,7 +38,7 @@ La pubblicazione anonima di una revisione non è supportata. Per aggiungere una 
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.reviews</td>
+   <td>cq.social.hbs.Reviews</td>
   </tr>
   <tr>
    <td> <strong>modelli</strong></td>
@@ -62,7 +60,7 @@ La pubblicazione anonima di una revisione non è supportata. Per aggiungere una 
 | **tiporisorsa** | social/recensioni/componenti/hbs/riepilogo |
 |---|---|
 | [**includibile**](scf.md#add-or-include-a-communities-component) | Sì - le proprietà sono modificabili nel modo *design * |
-| [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
+| [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.Reviews |
 | **modelli** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **proprietà** | Vedi [Utilizzo delle recensioni](reviews.md) |
@@ -71,9 +69,9 @@ La pubblicazione anonima di una revisione non è supportata. Per aggiungere una 
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [Rivedi API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [API di revisione](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Endpoint revisione](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Endpoint di revisione](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 

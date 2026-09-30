@@ -11,13 +11,11 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '785'
 ht-degree: 1%
-
 ---
-
 # Creazione di filtri per gruppo dispositivi{#creating-device-group-filters}
 
 {{ue-over-mobile}}
@@ -30,7 +28,7 @@ Dopo aver creato un filtro, è possibile utilizzarlo nella configurazione del gr
 
 ## Classe Java™ Filter {#the-filter-java-class}
 
-Un filtro gruppo di dispositivi è un componente OSGi che implementa l&#39;interfaccia [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Quando distribuita, la classe di implementazione fornisce un servizio di filtro disponibile per le configurazioni dei gruppi di dispositivi.
+Un filtro gruppo di dispositivi è un componente OSGi che implementa l&#39;interfaccia [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Quando distribuita, la classe di implementazione fornisce un servizio di filtro disponibile per le configurazioni dei gruppi di dispositivi.
 
 La soluzione descritta in questo articolo utilizza il plug-in Apache Felix Maven SCR per facilitare lo sviluppo del componente e del servizio. Pertanto, la classe Java™ di esempio utilizza le annotazioni `@Component` e `@Service`. La classe ha la seguente struttura:
 
@@ -94,7 +92,7 @@ La funzione `matches` restituisce `true` se le funzionalità del dispositivo sod
 * Nome dell’agente utente
 * Oggetto Map contenente le funzionalità del dispositivo. Le chiavi della mappa sono i nomi delle funzionalità WURFL™ e i valori sono i valori corrispondenti del database WURFL™.
 
-L&#39;interfaccia [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contiene un sottoinsieme dei nomi delle funzionalità WURFL™ nei campi statici. Utilizza queste costanti di campo come chiavi per recuperare i valori dalla mappa delle funzionalità del dispositivo.
+L&#39;interfaccia [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contiene un sottoinsieme dei nomi delle funzionalità WURFL™ nei campi statici. Utilizza queste costanti di campo come chiavi per recuperare i valori dalla mappa delle funzionalità del dispositivo.
 
 Ad esempio, il seguente esempio di codice determina se il dispositivo supporta i fogli di stile CSS:
 
@@ -188,7 +186,7 @@ Il seguente codice POM è utile se utilizzi Maven per creare le applicazioni. Il
 
 Le interfacce DeviceGroup e DeviceGroupFilter sono incluse nel bundle Day Communique 5 WCM Mobile API. Le annotazioni Felix sono incluse nel bundle Apache Felix Declarative Services. Puoi ottenere questo file JAR dall’archivio Adobe pubblico.
 
-Al momento dell’authoring, 5.5.2 è la versione del bundle API WCM Mobile disponibile nell’ultima versione di AEM. Utilizza la console web di Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) per assicurarti che questa sia la versione del bundle distribuita nel tuo ambiente.
+Al momento dell’authoring, 5.5.2 è la versione del bundle API WCM Mobile disponibile nell’ultima versione di AEM. Utilizza la console Web di Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) per assicurarti che questa sia la versione del bundle distribuita nell&#39;ambiente.
 
 **POM:** (il POM utilizza un groupId e una versione diversi).
 

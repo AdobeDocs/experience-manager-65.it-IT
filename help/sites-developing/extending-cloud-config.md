@@ -1,5 +1,5 @@
 ---
-title: Configurazioni Cloud Service
+title: Configurazioni servizi cloud
 description: Puoi estendere le istanze esistenti per creare configurazioni personalizzate
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,12 @@ exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 3%
-
+source-wordcount: '570'
+ht-degree: 4%
 ---
-
-# Configurazioni Cloud Service{#cloud-service-configurations}
+# Configurazioni servizi cloud{#cloud-service-configurations}
 
 Le configurazioni sono progettate per fornire la logica e la struttura per l’archiviazione delle configurazioni del servizio.
 
@@ -49,8 +47,8 @@ Per fornire una configurazione per i nuovi servizi, eseguire le operazioni segue
 
 * Sotto questo:
 
-   * un modello di configurazione
-   * un componente di configurazione
+  * un modello di configurazione
+  * un componente di configurazione
 
 Il modello e il componente devono ereditare `sling:resourceSuperType` dal modello base:
 
@@ -136,11 +134,11 @@ propertyname
 
 ### API {#api}
 
-Per la documentazione di riferimento sull&#39;API, consulta [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Per la documentazione di riferimento sull&#39;API, consulta [com.day.cq.wcm.webservicesupport](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
-### Integrazione AEM {#aem-integration}
+### Integrazione di AEM {#aem-integration}
 
-I servizi disponibili sono elencati nella scheda **Cloud Service** della finestra di dialogo **Proprietà pagina** (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
+I servizi disponibili sono elencati nella scheda **Servizi cloud** della finestra di dialogo **Proprietà pagina** (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
 
 La scheda fornisce anche:
 
@@ -165,7 +163,7 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando il serviz
 >
 >Per impostazione predefinita, `EcryptionPostProcessor` crittografa solo `POST` richieste effettuate a `/etc/cloudservices`.
 
-#### Proprietà aggiuntive per i nodi jcr:content della pagina del servizio {#additional-properties-for-service-page-jcr-content-nodes}
+#### Proprietà aggiuntive per i nodi JCR:content della pagina del servizio {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>
@@ -175,7 +173,7 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando il serviz
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Questo viene utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui è incluso <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del tag <code>body</code>).<br /> Nel caso di Adobe Analytics e Adobe Target, utilizziamo questa funzione per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
+   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui è incluso <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del tag <code>body</code>).<br /> Nel caso di Adobe Analytics e Adobe Target, utilizziamo questo per includere funzionalità aggiuntive, come le chiamate di JavaScript per monitorare il comportamento dei visitatori.</td>
   </tr>
   <tr>
    <td>descrizione</td>
@@ -224,4 +222,4 @@ Questi servizi sono forniti per impostazione predefinita:
 
 >[!NOTE]
 >
->Vedi anche [Creazione di un Cloud Service personalizzato](/help/sites-developing/extending-cloud-config-custom-cloud.md).
+>Vedere anche [Creazione di un Cloud Service personalizzato](/help/sites-developing/extending-cloud-config-custom-cloud.md).

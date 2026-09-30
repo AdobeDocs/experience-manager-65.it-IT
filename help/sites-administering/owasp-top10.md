@@ -9,13 +9,11 @@ exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 4%
-
 ---
-
 # OWASP Top 10{#owasp-top}
 
 Il [progetto di sicurezza dell&#39;applicazione Web aperta](https://owasp.org/) (OWASP) mantiene un elenco dei [principali dieci rischi di sicurezza dell&#39;applicazione Web](https://owasp.org/www-project-top-ten/).
@@ -62,7 +60,7 @@ I dati sensibili, come le credenziali di terze parti, vengono archiviati in form
 
 ## &#x200B;8. Errore nel limitare l’accesso agli URL {#failure-to-restrict-url-access}
 
-L&#39;archivio consente l&#39;impostazione di [privilegi granulari (come specificato da JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo specificato in un determinato percorso, tramite le voci di controllo di accesso. Le restrizioni di accesso vengono applicate dall’archivio.
+L&#39;archivio consente l&#39;impostazione di [privilegi granulari (come specificato da JCR)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo specificato in un determinato percorso, tramite le voci di controllo di accesso. Le restrizioni di accesso vengono applicate dall’archivio.
 
 ## &#x200B;9. Protezione livello di trasporto insufficiente {#insufficient-transport-layer-protection}
 

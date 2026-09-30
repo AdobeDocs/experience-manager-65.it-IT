@@ -9,13 +9,11 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 3%
-
 ---
-
 # Utilizzo di Nascondi condizioni {#using-hide-conditions}
 
 È possibile utilizzare le condizioni Nascondi per determinare se una risorsa componente è sottoposta o meno a rendering. Un esempio potrebbe essere quando un autore di modelli configura il componente core [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it) nell&#39;[editor modelli](/help/sites-authoring/templates.md) e decide di disabilitare le opzioni per creare l&#39;elenco in base alle pagine figlie. La disattivazione di questa opzione nella finestra di dialogo per progettazione imposta una proprietà in modo che, quando viene eseguito il rendering del componente elenco, venga valutata la condizione Nascondi e non venga visualizzata l’opzione per visualizzare le pagine figlie.
@@ -34,7 +32,7 @@ Utilizzando le condizioni di nascondi, gli amministratori, gli sviluppatori e gl
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` è responsabile del filtraggio delle risorse in base all&#39;esistenza e al valore della proprietà `granite:hide`, situata nel campo da filtrare. L&#39;implementazione di `/libs/cq/gui/components/authoring/dialog/dialog.jsp` include un&#39;istanza di `FilteringResourceWrapper.`
 
-L&#39;implementazione utilizza l&#39;API Granite [ELResolver](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) e aggiunge una variabile personalizzata `cqDesign` tramite ExpressionCustomizer.
+L&#39;implementazione utilizza l&#39;API Granite [ELResolver](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) e aggiunge una variabile personalizzata `cqDesign` tramite ExpressionCustomizer.
 
 Di seguito sono riportati alcuni esempi di condizioni di Nascondi in un nodo di progettazione che si trova in `etc/design` o come criterio del contenuto.
 

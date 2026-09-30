@@ -1,22 +1,24 @@
 ---
 title: Utilizzo ed estensione dei widget (interfaccia classica)
+
 description: L’interfaccia basata sul web di Adobe Experience Manager utilizza AJAX e altre tecnologie moderne del browser per consentire agli autori di modificare e formattare i contenuti WYSIWYG direttamente sulla pagina web
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
+
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5042'
+source-wordcount: '5049'
 ht-degree: 0%
-
 ---
-
 # Utilizzo ed estensione dei widget (interfaccia classica){#using-and-extending-widgets-classic-ui}
 
 >[!NOTE]
@@ -31,7 +33,7 @@ AEM utilizza la libreria di widget [ExtJS](https://www.sencha.com/), che fornisc
 
 Questi widget sono inclusi in AEM e, oltre ad essere utilizzati da AEM, possono essere utilizzati da qualsiasi sito web creato utilizzando AEM.
 
-Per un riferimento completo di tutti i widget disponibili in AEM, consulta la [documentazione API widget](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) o l&#39;[elenco degli xtype esistenti](/help/sites-developing/xtypes.md). Inoltre, molti esempi che mostrano come utilizzare il framework ExtJS sono disponibili sul sito [Sencha](https://examples.sencha.com/extjs/7.6.0/), il proprietario del framework.
+Per un riferimento completo di tutti i widget disponibili in AEM, consulta la [documentazione API widget](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) o l&#39;[elenco degli xtype esistenti](/help/sites-developing/xtypes.md). Inoltre, molti esempi che mostrano come utilizzare il framework ExtJS sono disponibili sul sito [Sencha](https://examples.sencha.com/extjs/7.6.0/), il proprietario del framework.
 
 Questa pagina fornisce informazioni su come utilizzare ed estendere i widget. Descrive innanzitutto come [includere codice lato client in una pagina](#including-the-client-sided-code-in-a-page). Vengono quindi descritti alcuni componenti di esempio creati per illustrare alcuni utilizzi e estensioni di base. Questi componenti sono disponibili nel pacchetto **Using ExtJS Widgets** in **Package Share**.
 
@@ -98,7 +100,7 @@ Per includere la libreria client nel componente jsp della pagina:
 
 * per includere sia il codice JavaScript che i fogli di stile:
   `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
-dove `<category-nameX>` è il nome della libreria lato client.
+  dove `<category-nameX>` è il nome della libreria lato client.
 
 * per includere solo il codice JavaScript:
   `<ui:includeClientLib js="<category-name>"/>`
@@ -119,7 +121,8 @@ Per seguire i tutorial su questa pagina, installa il pacchetto **Utilizzo dei wi
 
 1. Nell&#39;istanza di AEM scaricare il pacchetto denominato **Utilizzo dei widget ExtJS (v01)** da Condivisione pacchetti e installarlo. Crea il progetto `extjstraining` sotto `/apps` nell&#39;archivio.
 1. Includi la libreria client contenente gli script (js) e il foglio di stile (css) nel tag head della pagina Geometrixx jsp. Stai per includere i componenti di esempio in una nuova pagina del ramo **Geometrixx**:
-in **CRXDE Lite** apri il file `/apps/geometrixx/components/page/headlibs.jsp` e aggiungi la categoria `cq.extjstraining` al tag `<ui:includeClientLib>` esistente come segue:   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
+in **CRXDE Lite** apri il file `/apps/geometrixx/components/page/headlibs.jsp` e aggiungi la categoria `cq.extjstraining` al tag `<ui:includeClientLib>` esistente come segue:
+   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. Crea una pagina nel ramo **Geometrixx** sotto `/content/geometrixx/en/products` e chiamala **utilizzando i widget ExtJS**.
 1. Passa alla modalità progettazione e aggiungi tutti i componenti del gruppo denominato **Utilizzo dei widget ExtJS** alla progettazione di Geometrixx
 1. Torna indietro in modalità di modifica: i componenti del gruppo **con widget ExtJS** sono disponibili in Sidekick.
@@ -309,7 +312,8 @@ Le sue caratteristiche principali sono:
 
 La logica viene implementata tramite i listener di eventi e il codice JavaScript come segue:
 
-* Il widget `ownerdraw` ha un listener &quot; `loadcontent`&quot; che mostra informazioni sulla pagina contenente il componente. Ossia, la risorsa a cui fa riferimento il widget smartfile al caricamento del contenuto:  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
+* Il widget `ownerdraw` ha un listener &quot; `loadcontent`&quot; che mostra informazioni sulla pagina contenente il componente. Ossia, la risorsa a cui fa riferimento il widget smartfile al caricamento del contenuto:
+  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
   `field` è impostato con l&#39;oggetto `ownerdraw`
   `path` è impostato con il percorso del contenuto del componente (ad esempio, `/content/geometrixx/en/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs`)
 * L&#39;oggetto `Ejst.x2` è definito nel file `exercises.js` in:
@@ -355,7 +359,7 @@ La logica viene implementata tramite i listener di eventi e il codice JavaScript
   `panel` è il pannello contenente la selezione e i widget di set di campi di dialogo;
   `fieldSet` è l&#39;oggetto dialogfieldset;
   `show` è il valore della selezione (vero o falso);
-in base a &#39; `show`&#39; il dialogfieldset viene visualizzato o meno
+  in base a &#39; `show`&#39; il dialogfieldset viene visualizzato o meno
 
 Per utilizzare la finestra di dialogo **Attiva/disattiva campi**, eseguire le operazioni seguenti:
 
@@ -376,7 +380,8 @@ I widget predefiniti forniti con AEM dovrebbero coprire la maggior parte dei cas
 I widget personalizzati e il plug-in sono inclusi nel componente denominato **3. Widget personalizzati** del pacchetto **Utilizzo dei widget ExtJS**. Per includere questo componente nella pagina di esempio:
 
 1. Aggiungi **3. Componente Widget** personalizzato nella pagina di esempio dalla scheda **Utilizzo di widget ExtJS** in **Sidekick**.
-1. Il componente visualizza un titolo, del testo e, quando si fa clic sul collegamento **PROPRIETÀ**, le proprietà del paragrafo memorizzate nel repository. Facendo di nuovo clic, le proprietà vengono nascoste.Il componente viene visualizzato come segue:
+1. Il componente visualizza un titolo, del testo e, quando si fa clic sul collegamento **PROPRIETÀ**, le proprietà del paragrafo memorizzate nel repository. Facendo di nuovo clic, le proprietà vengono nascoste.
+Il componente viene visualizzato come segue:
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -390,9 +395,10 @@ Finestra di dialogo **Multifield personalizzato** basato su widget:
 * Visualizza un widget `tabpanel` (tipo nodo = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) contenente un pannello (tipo nodo = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
 * Il pannello ha un widget `multifield` (tipo di nodo = `cq:Widget`, xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`).
 * Il widget `multifield` dispone di un file fieldconfig (tipo di nodo = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) basato sull&#39;xtype personalizzato &#39; `ejstcustom`&#39;:
-   * &#39;`fieldconfig`&#39; è un&#39;opzione di configurazione dell&#39;oggetto ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`.
-   * &#39;`optionsProvider`&#39; è una configurazione del widget `ejstcustom`. È impostato con il metodo `Ejst.x3.provideOptions` definito in `exercises.js` in:     `/apps/extjstraining/clientlib/js/exercises.js`
-e restituisce due opzioni.
+  * &#39;`fieldconfig`&#39; è un&#39;opzione di configurazione dell&#39;oggetto ` [CQ.form.MultiField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.MultiField)`.
+  * &#39;`optionsProvider`&#39; è una configurazione del widget `ejstcustom`. È impostato con il metodo `Ejst.x3.provideOptions` definito in `exercises.js` in:
+    `/apps/extjstraining/clientlib/js/exercises.js`
+    e restituisce due opzioni.
 * È definito dal nodo `multifield` in:
   `/apps/extjstraining/components/customwidgets/multifield`
 * Viene eseguito in formato json richiedendo:
@@ -403,12 +409,12 @@ Il widget `multifield` personalizzato (xtype = `ejstcustom`):
 * È un oggetto JavaScript denominato `Ejst.CustomWidget`
 * È definito nel file JavaScript `CustomWidget.js` in:
   `/apps/extjstraining/clientlib/js/CustomWidget.js`
-* Estende il widget ` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)`.
+* Estende il widget ` [CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField)`.
 * Ha tre campi: `hiddenField` (Textfield), `allowField` (ComboBox) e `otherField` (Textfield)
 * Sostituisce `CQ.Ext.Component#initComponent` per aggiungere i tre campi:
-   * `allowField` è un oggetto [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) di tipo &#39;select&#39;. optionsProvider è una configurazione dell&#39;oggetto Selection di cui viene creata un&#39;istanza con la configurazione optionsProvider dell&#39;oggetto CustomWidget definito nella finestra di dialogo
-   * `otherField` è un oggetto [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)
-* Sostituisce i metodi `setValue`, `getValue` e `getRawValue` di [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) per impostare e recuperare il valore di CustomWidget con il formato:
+  * `allowField` è un oggetto [CQ.form.Selection](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.Selection) di tipo &#39;select&#39;. optionsProvider è una configurazione dell&#39;oggetto Selection di cui viene creata un&#39;istanza con la configurazione optionsProvider dell&#39;oggetto CustomWidget definito nella finestra di dialogo
+  * `otherField` è un oggetto [CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)
+* Sostituisce i metodi `setValue`, `getValue` e `getRawValue` di [CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField) per impostare e recuperare il valore di CustomWidget con il formato:
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`.
 * Registra se stesso come xtype &#39; `ejstcustom`&#39;:
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
@@ -436,15 +442,15 @@ Il widget personalizzato per la ricerca ad albero (xtype = `ejstbrowse`):
 * È un oggetto JavaScript denominato `Ejst.CustomWidget`
 * È definito nel file JavaScript `CustomBrowseField.js` in:
   `/apps/extjstraining/clientlib/js/CustomBrowseField.js`
-* Estende ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`.
+* Estende ` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`.
 * Definisce una finestra di esplorazione denominata `browseWindow`.
-* Sostituisce ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick` per visualizzare la finestra Sfoglia quando si fa clic sulla freccia.
-* Definisce un oggetto [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel):
-   * Ottiene i dati chiamando il servlet registrato in `/bin/wcm/siteadmin/tree.json`.
-   * La radice è &quot; `apps/extjstraining`&quot;.
-* Definisce un oggetto `window` ( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`):
-   * In base al pannello predefinito.
-   * Ha un pulsante **OK** che imposta il valore del percorso selezionato e nasconde il pannello.
+* Sostituisce ` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick` per visualizzare la finestra Sfoglia quando si fa clic sulla freccia.
+* Definisce un oggetto [CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel):
+  * Ottiene i dati chiamando il servlet registrato in `/bin/wcm/siteadmin/tree.json`.
+  * La radice è &quot; `apps/extjstraining`&quot;.
+* Definisce un oggetto `window` ( ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`):
+  * In base al pannello predefinito.
+  * Ha un pulsante **OK** che imposta il valore del percorso selezionato e nasconde il pannello.
 * La finestra è ancorata sotto il campo **Percorso**.
 * Il percorso selezionato viene passato dal campo Sfoglia alla finestra nell&#39;evento `show`.
 * Registra se stesso come xtype &#39; `ejstbrowse`&#39;:
@@ -475,12 +481,12 @@ Il plug-in dell’editor Rich Text:
 * È un oggetto JavaScript denominato `Ejst.InsertTextPlugin`
 * È definito nel file JavaScript `InsertTextPlugin.js` in:
   `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
-* Estende l&#39;oggetto ` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`.
-* I seguenti metodi definiscono l&#39;oggetto ` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` e vengono sostituiti nel plug-in di implementazione:
-   * `getFeatures()` restituisce un array di tutte le funzionalità rese disponibili dal plug-in.
-   * `initializeUI()` aggiunge il nuovo pulsante alla barra degli strumenti dell&#39;editor Rich Text.
-   * `notifyPluginConfig()` visualizza il titolo e il testo quando si passa il puntatore sul pulsante.
-   * `execute()` viene chiamato quando si fa clic sul pulsante ed esegue l&#39;azione del plug-in: viene visualizzata una finestra utilizzata per definire il testo da includere.
+* Estende l&#39;oggetto ` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`.
+* I seguenti metodi definiscono l&#39;oggetto ` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` e vengono sostituiti nel plug-in di implementazione:
+  * `getFeatures()` restituisce un array di tutte le funzionalità rese disponibili dal plug-in.
+  * `initializeUI()` aggiunge il nuovo pulsante alla barra degli strumenti dell&#39;editor Rich Text.
+  * `notifyPluginConfig()` visualizza il titolo e il testo quando si passa il puntatore sul pulsante.
+  * `execute()` viene chiamato quando si fa clic sul pulsante ed esegue l&#39;azione del plug-in: viene visualizzata una finestra utilizzata per definire il testo da includere.
 * `insertText()` inserisce un testo utilizzando l&#39;oggetto finestra di dialogo corrispondente `Ejst.InsertTextPlugin.Dialog` (vedere in seguito).
 * `executeInsertText()` è chiamato dal metodo `apply()` della finestra di dialogo, che viene attivato quando si fa clic sul pulsante **OK**.
 * Registra se stesso come plug-in &#39; `inserttext`&#39;:
@@ -506,7 +512,7 @@ La finestra di dialogo basata sul plug-in **Editor Rich Text** viene visualizzat
 
 ### Panoramica struttura {#tree-overview}
 
-L&#39;oggetto predefinito ` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` fornisce una rappresentazione dell&#39;interfaccia utente con struttura ad albero dei dati con struttura ad albero. Il componente Panoramica struttura incluso nel pacchetto **Utilizzo di widget ExtJS** mostra come utilizzare l&#39;oggetto `TreePanel` per visualizzare una struttura JCR al di sotto di un determinato percorso. La finestra stessa può essere ancorata/scollegata. In questo esempio, la logica della finestra è incorporata nel componente jsp tra i tag &lt;script>&lt;/script>.
+L&#39;oggetto predefinito ` [CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` fornisce una rappresentazione dell&#39;interfaccia utente con struttura ad albero dei dati con struttura ad albero. Il componente Panoramica struttura incluso nel pacchetto **Utilizzo di widget ExtJS** mostra come utilizzare l&#39;oggetto `TreePanel` per visualizzare una struttura JCR al di sotto di un determinato percorso. La finestra stessa può essere ancorata/scollegata. In questo esempio, la logica della finestra è incorporata nel componente jsp tra i tag &lt;script>&lt;/script>.
 
 Per includere il componente **Panoramica struttura** nella pagina di esempio:
 
@@ -538,13 +544,13 @@ Il componente jsp:
 Il codice JavaScript incorporato nel componente jsp:
 
 * Definisce un oggetto `tree` tentando di recuperare una finestra della struttura dalla pagina.
-* Se la finestra che visualizza la struttura non esiste, viene creato `treePanel` ([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)):
-   * `treePanel` contiene i dati utilizzati per creare la finestra.
-   * I dati vengono recuperati chiamando il servlet registrato in:
-     `/bin/wcm/siteadmin/tree.json`
+* Se la finestra che visualizza la struttura non esiste, viene creato `treePanel` ([CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)):
+  * `treePanel` contiene i dati utilizzati per creare la finestra.
+  * I dati vengono recuperati chiamando il servlet registrato in:
+    `/bin/wcm/siteadmin/tree.json`
 * Il listener `beforeload` verifica che il nodo selezionato sia caricato.
 * L&#39;oggetto `root` imposta il percorso `apps/extjstraining` come directory principale della struttura.
-* `tree` ( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`) è impostato in base a `treePanel` predefinito e viene visualizzato con:
+* `tree` ( ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`) è impostato in base a `treePanel` predefinito e viene visualizzato con:
   `tree.show();`
 * Se la finestra esiste, viene visualizzata in base alla larghezza, all&#39;altezza e alle proprietà ancorate recuperate dal repository.
 
@@ -615,21 +621,21 @@ Il codice JavaScript incorporato nel componente jsp:
 
 * Definisce l&#39;oggetto `grid` tentando di recuperare il componente finestra dalla pagina:
   `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
-* Se `grid` non esiste, viene definito un oggetto [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) ( `gridPanel`) chiamando il metodo `getGridPanel()` (vedere di seguito). Metodo definito in `defaultgrid.js`.
-* `grid` è un oggetto ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)` basato sul GridPanel predefinito ed è visualizzato: `grid.show();`
+* Se `grid` non esiste, viene definito un oggetto [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) ( `gridPanel`) chiamando il metodo `getGridPanel()` (vedere di seguito). Metodo definito in `defaultgrid.js`.
+* `grid` è un oggetto ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)` basato sul GridPanel predefinito ed è visualizzato: `grid.show();`
 * Se `grid` esiste, viene visualizzato in base alla larghezza, all&#39;altezza e alle proprietà ancorate recuperate dal repository.
 
-Il file JavaScript ( `defaultgrid.js`) a cui si fa riferimento nel componente jsp definisce il metodo `getGridPanel()` chiamato dallo script incorporato nel JSP e restituisce un oggetto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`, basato su dati statici. La logica è la seguente:
+Il file JavaScript ( `defaultgrid.js`) a cui si fa riferimento nel componente jsp definisce il metodo `getGridPanel()` chiamato dallo script incorporato nel JSP e restituisce un oggetto ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`, basato su dati statici. La logica è la seguente:
 
 * `myData` è un array di dati statici formattati come tabella di cinque colonne e quattro righe.
 * `store` è un oggetto `CQ.Ext.data.Store` che utilizza `myData`.
 * `store` è caricato in memoria:
   `store.load();`
-* `gridPanel` è un oggetto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` che utilizza `store`:
-   * le larghezze delle colonne vengono sempre riproporzionate:
-     `forceFit: true`
-   * è possibile selezionare una sola riga alla volta:
-     `singleSelect:true`
+* `gridPanel` è un oggetto ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` che utilizza `store`:
+  * le larghezze delle colonne vengono sempre riproporzionate:
+    `forceFit: true`
+  * è possibile selezionare una sola riga alla volta:
+    `singleSelect:true`
 
 #### Esempio 2: griglia di ricerca di riferimento {#example-reference-search-grid}
 
@@ -639,7 +645,7 @@ Quando si installa il pacchetto, `content.jsp` del componente **Panoramica grigl
 * Si basa sui dati recuperati dall’archivio chiamando un servlet.
 * È possibile modificare le celle dell&#39;ultima colonna. Il valore viene mantenuto in una proprietà `test` sotto il nodo definito dal percorso visualizzato nella prima colonna.
 
-Come spiegato nella sezione precedente, l&#39;oggetto window ottiene l&#39;oggetto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` chiamando il metodo `getGridPanel()` definito nel file `defaultgrid.js` in `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Il componente **Panoramica griglia &#x200B;** fornisce un&#39;implementazione diversa per il metodo `getGridPanel()`, definito nel file `referencesearch.js` in `/apps/extjstraining/components/gridoverview/referencesearch.js`. Cambiando il file .js a cui si fa riferimento nel componente jsp, la griglia si basa sui dati recuperati dall’archivio.
+Come spiegato nella sezione precedente, l&#39;oggetto window ottiene l&#39;oggetto ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` chiamando il metodo `getGridPanel()` definito nel file `defaultgrid.js` in `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Il componente **Panoramica griglia &#x200B;** fornisce un&#39;implementazione diversa per il metodo `getGridPanel()`, definito nel file `referencesearch.js` in `/apps/extjstraining/components/gridoverview/referencesearch.js`. Cambiando il file .js a cui si fa riferimento nel componente jsp, la griglia si basa sui dati recuperati dall’archivio.
 
 Cambia il file .js a cui si fa riferimento nel jsp del componente:
 
@@ -654,20 +660,22 @@ Il componente viene visualizzato come segue:
 
 ![schermata_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
-Il codice JavaScript a cui si fa riferimento nel componente jsp ( `referencesearch.js`) definisce il metodo `getGridPanel()` chiamato dal componente jsp e restituisce un oggetto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`, in base ai dati recuperati dinamicamente dall&#39;archivio. La logica in `referencesearch.js` definisce alcuni dati dinamici come base per GridPanel:
+Il codice JavaScript a cui si fa riferimento nel componente jsp ( `referencesearch.js`) definisce il metodo `getGridPanel()` chiamato dal componente jsp e restituisce un oggetto ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`, in base ai dati recuperati dinamicamente dall&#39;archivio. La logica in `referencesearch.js` definisce alcuni dati dinamici come base per GridPanel:
 
-* `reader` è un oggetto ` [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)` che legge la risposta del servlet in formato json per tre colonne.
-* `cm` è un oggetto ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` per tre colonne.Le celle della colonna &quot;Test&quot; possono essere modificate così come sono definite con un editor:  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
+* `reader` è un oggetto ` [CQ.Ext.data.JsonReader](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)` che legge la risposta del servlet in formato json per tre colonne.
+* `cm` è un oggetto ` [CQ.Ext.grid.ColumnModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` per tre colonne.
+Le celle della colonna &quot;Test&quot; possono essere modificate così come sono definite con un editor:
+  `editor: new [CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * le colonne possono essere ordinate:
   `cm.defaultSortable = true;`
-* `store` è un oggetto ` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)`:
-   * ottiene i dati chiamando il servlet registrato in &quot; `/bin/querybuilder.json`&quot; con alcuni parametri utilizzati per filtrare la query
-   * si basa su `reader`, definito in precedenza
-   * la tabella è ordinata in base alla colonna &#39;**jcr:path**&#39; in ordine crescente
-* `gridPanel` è un oggetto ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` che può essere modificato:
-   * è basato su `store` predefinito e sul modello di colonna `cm`
-   * è possibile selezionare una sola riga alla volta:
-     `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
-   * il listener `afteredit` si assicura che dopo la modifica di una cella nella colonna &quot;**Test**&quot;:
-      * la proprietà &#39;`test`&#39; del nodo nel percorso definito dalla colonna &quot;**jcr:path**&quot; è impostata nell&#39;archivio con il valore della cella
-      * se il POST ha esito positivo, il valore viene aggiunto all&#39;oggetto `store`, altrimenti viene rifiutato
+* `store` è un oggetto ` [CQ.Ext.data.GroupingStore](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)`:
+  * ottiene i dati chiamando il servlet registrato in &quot; `/bin/querybuilder.json`&quot; con alcuni parametri utilizzati per filtrare la query
+  * si basa su `reader`, definito in precedenza
+  * la tabella è ordinata in base alla colonna &#39;**jcr:path**&#39; in ordine crescente
+* `gridPanel` è un oggetto ` [CQ.Ext.grid.EditorGridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` che può essere modificato:
+  * è basato su `store` predefinito e sul modello di colonna `cm`
+  * è possibile selezionare una sola riga alla volta:
+    `sm: new [CQ.Ext.grid.RowSelectionModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
+  * il listener `afteredit` si assicura che dopo la modifica di una cella nella colonna &quot;**Test**&quot;:
+    * la proprietà &#39;`test`&#39; del nodo nel percorso definito dalla colonna &quot;**jcr:path**&quot; è impostata nell&#39;archivio con il valore della cella
+    * se il POST ha esito positivo, il valore viene aggiunto all&#39;oggetto `store`, altrimenti viene rifiutato

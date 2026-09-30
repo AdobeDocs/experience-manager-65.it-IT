@@ -5,13 +5,11 @@ exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1072'
 ht-degree: 1%
-
 ---
-
 # Esportazione della pagina{#the-page-exporter}
 
 Adobe Experience Manager (AEM) consente di esportare una pagina come pagina Web completa che include immagini, `.js` e `.css` file.
@@ -64,7 +62,7 @@ Seleziona il modello richiesto per il sito, quindi conferma con **OK**.
 
 ## Creazione di una configurazione di Page Exporter per il sito {#creating-a-page-exporter-configuration-for-your-site}
 
-L&#39;utilità di esportazione delle pagine si basa sul [framework di sincronizzazione dei contenuti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Le configurazioni disponibili nella finestra di dialogo **Proprietà pagina** sono modelli di esportazione che definiscono le dipendenze richieste per una pagina.
+L&#39;utilità di esportazione delle pagine si basa sul [framework di sincronizzazione dei contenuti](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Le configurazioni disponibili nella finestra di dialogo **Proprietà pagina** sono modelli di esportazione che definiscono le dipendenze richieste per una pagina.
 
 Quando viene attivata un’esportazione di pagine, viene fatto riferimento al modello di esportazione. Sia il percorso della pagina che il percorso della progettazione vengono applicati in modo dinamico. Il file zip viene quindi creato utilizzando la funzionalità standard di sincronizzazione dei contenuti.
 
@@ -108,7 +106,7 @@ Quando il modello è configurato, lo rendi disponibile:
 
 ### Nodi di configurazione di Page Exporter {#page-exporter-configuration-nodes}
 
-Il modello è costituito da una struttura di nodi, in quanto utilizza il framework [Content Sync](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Ogni nodo ha una proprietà `type` che definisce un&#39;azione specifica nel processo di creazione del file zip.
+Il modello è costituito da una struttura di nodi, in quanto utilizza il framework [Content Sync](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Ogni nodo ha una proprietà `type` che definisce un&#39;azione specifica nel processo di creazione del file zip.
 
 <!--
 For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
@@ -179,7 +177,7 @@ Sono possibili anche configurazioni personalizzate.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Per soddisfare alcuni requisiti specifici, implementa un [gestore di aggiornamento personalizzato](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
+Per soddisfare alcuni requisiti specifici, implementa un [gestore di aggiornamento personalizzato](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
 <!--
 To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
@@ -187,7 +185,7 @@ To meet some specific requirements, you may need to implement a custom `type` pr
 
 ## Esportazione di una pagina a livello di programmazione {#programmatically-exporting-a-page}
 
-Per esportare una pagina a livello di programmazione, puoi utilizzare il servizio OSGI [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html). Questo servizio consente di:
+Per esportare una pagina a livello di programmazione, puoi utilizzare il servizio OSGI [PageExporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html). Questo servizio consente di:
 
 * Esporta una pagina e scrivi nella risposta del servlet HTTP.
 * Esporta una pagina e salva il file zip in una posizione specifica.

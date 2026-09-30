@@ -11,13 +11,11 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3807'
-ht-degree: 0%
-
+source-wordcount: '3844'
+ht-degree: 1%
 ---
-
 # Creazione di siti per dispositivi mobili{#creating-sites-for-mobile-devices}
 
 {{ue-over-mobile}}
@@ -33,7 +31,7 @@ Per creare un sito mobile, procedi come segue:
 1. Creare il componente Pagina:
 
    * Imposta la proprietà `sling:resourceSuperType` su `wcm/mobile/components/page`
-In questo modo il componente si basa sul componente Pagina mobile.
+     In questo modo il componente si basa sul componente Pagina mobile.
 
    * Crea `body.jsp` con la logica specifica del progetto.
 
@@ -68,11 +66,11 @@ Utilizza Multi Site Manager (MSM) per creare una Live Copy mobile da un sito sta
 
 I pacchetti Java™ contenenti le classi mobili sono:
 
-* [com.day.cq.wcm.mobile.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - definisce MobileConstants.
-* [com.day.cq.wcm.mobile.api.device](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - definisce Device, DeviceGroup e DeviceGroupList.
-* [com.day.cq.wcm.mobile.api.device.capability](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - definisce DeviceCapability.
-* [com.day.cq.wcm.mobile.api.wurfl](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - definisce WurflQueryEngine.
-* [com.day.cq.wcm.mobile.core](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - definisce MobileUtil, che fornisce vari metodi di utilità che ruotano intorno a WCM Mobile.
+* [com.day.cq.wcm.mobile.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - definisce MobileConstants.
+* [com.day.cq.wcm.mobile.api.device](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - definisce Device, DeviceGroup e DeviceGroupList.
+* [com.day.cq.wcm.mobile.api.device.capability](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - definisce DeviceCapability.
+* [com.day.cq.wcm.mobile.api.wurfl](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - definisce WurflQueryEngine.
+* [com.day.cq.wcm.mobile.core](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - definisce MobileUtil, che fornisce vari metodi di utilità che ruotano intorno a WCM Mobile.
 
 ### Componenti mobili {#mobile-components}
 
@@ -148,7 +146,7 @@ Il framework mobile di AEM consente di sviluppare componenti sensibili al dispos
 * Verifica se il gruppo di dispositivi supporta le immagini
   `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
 ...
-OPPURE
+OR
   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
 ...
 

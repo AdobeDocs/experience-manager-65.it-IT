@@ -10,13 +10,11 @@ exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2240'
 ht-degree: 1%
-
 ---
-
 # Concetti dell’interfaccia utente di Adobe Experience Manager con funzionalità touch{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM) dispone di un&#39;interfaccia utente touch con [design reattivo](/help/sites-authoring/responsive-layout.md) per l&#39;ambiente di authoring, progettata per funzionare sia su dispositivi touch che desktop.
@@ -28,24 +26,24 @@ Adobe Experience Manager (AEM) dispone di un&#39;interfaccia utente touch con [d
 L’interfaccia touch include:
 
 * L’intestazione della suite che:
-   * Mostra il logo
-   * Fornisce un collegamento alla navigazione globale
-   * Fornisce un collegamento ad altre azioni generiche, come Ricerca, Aiuto, Soluzioni Experience Cloud, Notifiche e Impostazioni utente.
+  * Mostra il logo
+  * Fornisce un collegamento alla navigazione globale
+  * Fornisce un collegamento ad altre azioni generiche, come Ricerca, Aiuto, Soluzioni Experience Cloud, Notifiche e Impostazioni utente.
 * La barra a sinistra (visualizzata quando necessario e nascosta), che può mostrare:
-   * Timeline
-   * Riferimenti
-   * Filtri
+  * Timeline
+  * Riferimenti
+  * Filtri
 * L’intestazione di navigazione, che è nuovamente sensibile al contesto e può mostrare:
-   * Indica quale console stai utilizzando attualmente, o la tua posizione, o entrambe, all’interno di tale console
-   * Selezione per la barra a sinistra
-   * Breadcrumb
-   * Accedi alle azioni **Crea** appropriate
-   * Visualizza selezioni
+  * Indica quale console stai utilizzando attualmente, o la tua posizione, o entrambe, all’interno di tale console
+  * Selezione per la barra a sinistra
+  * Breadcrumb
+  * Accedi alle azioni **Crea** appropriate
+  * Visualizza selezioni
 * L’area del contenuto che:
-   * Elenca gli elementi di contenuto (pagine, risorse, post in forum e così via)
-   * Può essere formattato come richiesto, ad esempio colonna, scheda o elenco
-   * Utilizza un design reattivo (il display si ridimensiona automaticamente in base al dispositivo e/o alle dimensioni della finestra)
-   * Utilizza lo scorrimento infinito (nessuna più impaginazione, tutti gli elementi sono elencati in un&#39;unica finestra)
+  * Elenca gli elementi di contenuto (pagine, risorse, post in forum e così via)
+  * Può essere formattato come richiesto, ad esempio colonna, scheda o elenco
+  * Utilizza un design reattivo (il display si ridimensiona automaticamente in base al dispositivo e/o alle dimensioni della finestra)
+  * Utilizza lo scorrimento infinito (nessuna più impaginazione, tutti gli elementi sono elencati in un&#39;unica finestra)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -200,7 +198,7 @@ Anche le differenze tra l’interfaccia utente Granite e ExtJS (utilizzata per l
 
 ### Componenti Foundation dell’interfaccia utente Granite {#granite-ui-foundation-components}
 
-I [componenti di base dell&#39;interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) forniscono i blocchi predefiniti di base necessari per la creazione di qualsiasi interfaccia utente. Esse comprendono, tra l&#39;altro:
+I [componenti di base dell&#39;interfaccia utente Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) forniscono i blocchi predefiniti di base necessari per la creazione di qualsiasi interfaccia utente. Esse comprendono, tra l&#39;altro:
 
 * Pulsante
 * Collegamento ipertestuale
@@ -257,7 +255,7 @@ Quando si aggiorna il codice ExtJS per utilizzare l’interfaccia utente Granite
 
 ### Componenti di amministrazione dell’interfaccia utente Granite {#granite-ui-administration-components}
 
-I [componenti di amministrazione dell&#39;interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) si basano sui componenti di base per fornire blocchi predefiniti generici che qualsiasi applicazione di amministrazione può implementare. Tra queste figurano:
+I [componenti di amministrazione dell&#39;interfaccia utente Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) si basano sui componenti di base per fornire blocchi predefiniti generici che qualsiasi applicazione di amministrazione può implementare. Tra queste figurano:
 
 * Barra di navigazione globale
 * Barra (ossatura)

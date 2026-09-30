@@ -10,16 +10,14 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 2%
-
+source-wordcount: '475'
+ht-degree: 1%
 ---
-
 # Nozioni di base sul blog {#blog-essentials}
 
-Dalle comunità AEM 6.1, un blog è un&#39;attività della comunità. Gli articoli di blog vengono ora pubblicati nell’ambiente di pubblicazione, dove in precedenza era possibile crearli e pubblicarli solo nell’ambiente di authoring.
+In AEM 6.1 Communities, un blog è un’attività della community. Gli articoli di blog vengono ora pubblicati nell’ambiente di pubblicazione, dove in precedenza era possibile crearli e pubblicarli solo nell’ambiente di authoring.
 
 Gli articoli di blog possono ora essere creati da qualsiasi membro della community, a meno che non siano limitati ai membri privilegiati.
 
@@ -78,9 +76,9 @@ La funzionalità blog è composta da due componenti principali disponibili aggiu
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [API blog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Endpoint blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Endpoint blog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](/help/communities/server-customize.md)
 
@@ -112,11 +110,11 @@ Per ulteriori dettagli, vedere [Autore primario](/help/communities/deploy-commun
 
 ## Consentire contenuti multimediali avanzati {#allowing-rich-media}
 
-La piattaforma AEM blocca i collegamenti da altri siti web per prevenire gli attacchi XSS come descritto in
+La piattaforma AEM blocca i collegamenti da altri siti web per evitare attacchi XSS come descritto in
 
-* [Protect contro il cross-site scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protezione da vulnerabilità cross-site scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-A partire da AEM 6.2, le modifiche precedentemente necessarie da apportare manualmente sono incluse nel file di configurazione predefinito AntiSamy.
+A partire da AEM 6.2, le modifiche precedentemente necessarie per essere apportate manualmente vengono incluse nel file di configurazione AntiSamy di default.
 
 Rich Media è incorporato in un articolo di blog selezionando l&#39;icona `Embed Media from External Sites`:
 

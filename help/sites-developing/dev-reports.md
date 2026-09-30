@@ -9,13 +9,11 @@ exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5297'
+source-wordcount: '5299'
 ht-degree: 1%
-
 ---
-
 
 # Sviluppo di rapporti {#developing-reports}
 
@@ -108,7 +106,7 @@ Ogni colonna è un&#39;istanza del componente [`columnbase`](#column-base-compon
 La query:
 
 * È definito come parte del componente [`reportbase`](#report-base).
-* È basato su [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
+* È basato su [CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
 * Recupera i dati utilizzati come base del rapporto. Ogni riga del set di risultati (tabella) è associata a un nodo come restituito dalla query. Le informazioni specifiche per [singole colonne](#column-base-component) vengono quindi estratte da questo set di dati.
 
 * Di solito è costituito da:
@@ -382,7 +380,7 @@ N:charting
 
 Ogni rapporto può avere una finestra di dialogo di configurazione, che consente all’utente di specificare vari parametri per il rapporto. Questa finestra di dialogo è accessibile tramite il pulsante **Modifica** quando la pagina del report è aperta.
 
-Questa finestra di dialogo è un CQ standard [dialog](/help/sites-developing/components-basics.md#dialogs) e può essere configurata come tale (vedi [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) per ulteriori informazioni).
+Questa finestra di dialogo è un CQ standard [dialog](/help/sites-developing/components-basics.md#dialogs) e può essere configurata come tale (vedi [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog) per ulteriori informazioni).
 
 Di seguito è riportato un esempio di finestra di dialogo:
 

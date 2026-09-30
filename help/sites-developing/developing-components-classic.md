@@ -10,13 +10,11 @@ exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 1%
-
+source-wordcount: '2450'
+ht-degree: 2%
 ---
-
 # Sviluppo di componenti Adobe Experience Manager (AEM) (interfaccia classica){#developing-aem-components-classic-ui}
 
 L’interfaccia classica utilizza ExtJS per creare widget che forniscono l’aspetto dei componenti. A causa della natura di questi widget, ci sono alcune differenze tra il modo in cui i componenti interagiscono con l&#39;interfaccia classica e l&#39;[interfaccia touch](/help/sites-developing/developing-components.md).
@@ -27,13 +25,13 @@ L’interfaccia classica utilizza ExtJS per creare widget che forniscono l’asp
 
 >[!NOTE]
 >
->Anche se sia HTL (HTML Template Language) che JSP possono essere utilizzati per lo sviluppo di componenti per l’interfaccia utente classica, questa pagina illustra lo sviluppo con JSP. Ciò è dovuto esclusivamente alla cronologia dell’utilizzo di JSP nell’interfaccia classica.
+>Anche se sia HTML Template Language (HTL) che JSP possono essere utilizzati per lo sviluppo di componenti per l’interfaccia utente classica, questa pagina illustra lo sviluppo con JSP. Ciò è dovuto esclusivamente alla cronologia dell’utilizzo di JSP nell’interfaccia classica.
 >
->HTL è ora il linguaggio di script consigliato per l’AEM. Vedere [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) e [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) per confrontare i metodi.
+>HTL è ora il linguaggio di script consigliato per AEM. Consulta [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview) e [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) per confrontare i metodi.
 
 ## Struttura {#structure}
 
-La struttura di base di un componente è illustrata nella pagina [Componenti AEM - Nozioni di base](/help/sites-developing/components-basics.md#structure), che applica sia l&#39;interfaccia utente touch che l&#39;interfaccia utente classica. Anche se non devi utilizzare le impostazioni per l’interfaccia utente touch nel nuovo componente, può essere utile conoscerle quando si ereditano i componenti esistenti.
+La struttura di base di un componente è illustrata nella pagina [Componenti di AEM - Nozioni di base](/help/sites-developing/components-basics.md#structure), che applica sia l&#39;interfaccia utente touch che l&#39;interfaccia utente classica. Anche se non devi utilizzare le impostazioni per l’interfaccia utente touch nel nuovo componente, può essere utile conoscerle quando si ereditano i componenti esistenti.
 
 ## Script JSP {#jsp-scripts}
 
@@ -63,24 +61,24 @@ Riepilogo:
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` - Oggetto richiesta racchiuso ( `SlingHttpServletRequest`).
-   * `slingResponse` - Oggetto risposta racchiuso ( `SlingHttpServletResponse`).
-   * `resource` - Oggetto Risorsa Sling ( `slingRequest.getResource();`).
-   * `resourceResolver` - Oggetto Sling Resource Resolver ( `slingRequest.getResoucreResolver();`).
-   * `currentNode` - Nodo JCR risolto per la richiesta.
-   * `log` - Logger predefinito ().
-   * `sling` - Helper dello script Sling.
-   * `properties` - Proprietà della risorsa indirizzata ( `resource.adaptTo(ValueMap.class);`).
-   * `pageProperties` - Proprietà della pagina della risorsa indirizzata.
-   * `pageManager` - Gestore pagine per l&#39;accesso alle pagine di contenuto AEM ( `resourceResolver.adaptTo(PageManager.class);`).
-   * `component` - L&#39;oggetto componente del componente AEM corrente.
-   * `designer` - Oggetto Designer per il recupero delle informazioni di progettazione ( `resourceResolver.adaptTo(Designer.class);`).
-   * `currentDesign` - Progettazione della risorsa indirizzata.
-   * `currentStyle` - Stile della risorsa indirizzata.
+  * `slingRequest` - Oggetto richiesta racchiuso ( `SlingHttpServletRequest`).
+  * `slingResponse` - Oggetto risposta racchiuso ( `SlingHttpServletResponse`).
+  * `resource` - Oggetto Risorsa Sling ( `slingRequest.getResource();`).
+  * `resourceResolver` - Oggetto Sling Resource Resolver ( `slingRequest.getResoucreResolver();`).
+  * `currentNode` - Nodo JCR risolto per la richiesta.
+  * `log` - Logger predefinito ().
+  * `sling` - Helper dello script Sling.
+  * `properties` - Proprietà della risorsa indirizzata ( `resource.adaptTo(ValueMap.class);`).
+  * `pageProperties` - Proprietà della pagina della risorsa indirizzata.
+  * `pageManager` - Gestore pagine per l&#39;accesso alle pagine di contenuto AEM ( `resourceResolver.adaptTo(PageManager.class);`).
+  * `component` - L&#39;oggetto componente del componente AEM corrente.
+  * `designer` - Oggetto Designer per il recupero delle informazioni di progettazione ( `resourceResolver.adaptTo(Designer.class);`).
+  * `currentDesign` - Progettazione della risorsa indirizzata.
+  * `currentStyle` - Stile della risorsa indirizzata.
 
 ### Accesso al contenuto {#accessing-content}
 
-Esistono tre metodi per accedere al contenuto in WCM AEM:
+Esistono tre metodi per accedere al contenuto in AEM WCM:
 
 * Tramite l&#39;oggetto proprietà introdotto in `global.jsp`:
 
@@ -146,7 +144,7 @@ Un esempio di come sviluppare un componente è descritto in dettaglio in [Estens
 
 ### Sviluppare un nuovo componente (adattare componente esistente) {#develop-a-new-component-adapt-existing-component}
 
-Per sviluppare nuovi componenti per AEM basati su componenti esistenti, è possibile copiare il componente, creare un file JavaScript per il nuovo componente e memorizzarlo in una posizione accessibile all&#39;AEM (vedere anche [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
+Per sviluppare nuovi componenti per AEM basati su componenti esistenti, è possibile copiare il componente, creare un file JavaScript per il nuovo componente e memorizzarlo in una posizione accessibile ad AEM (vedere anche [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
 
 1. Utilizzando CRXDE Lite, crea una cartella di componenti in:
 
@@ -164,8 +162,8 @@ Per sviluppare nuovi componenti per AEM basati su componenti esistenti, è possi
 
    * aggiunta di un campo nella finestra di dialogo
 
-      * `cq:dialog` - finestra di dialogo per l&#39;interfaccia touch
-      * `dialog` - finestra di dialogo per l&#39;interfaccia classica
+     * `cq:dialog` - finestra di dialogo per l&#39;interfaccia touch
+     * `dialog` - finestra di dialogo per l&#39;interfaccia classica
 
    * sostituzione del file `.jsp` (denominalo dopo il nuovo componente)
    * o rielaborazione completa dell&#39;intero componente, se si desidera
@@ -176,8 +174,8 @@ Per sviluppare nuovi componenti per AEM basati su componenti esistenti, è possi
    >
    >Un componente per:
    >
-   >* L&#39;interfaccia touch utilizza [componenti Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-   >* L&#39;interfaccia classica utilizza [widget ExtJS](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* L&#39;interfaccia touch utilizza [componenti Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+   >* L&#39;interfaccia classica utilizza [widget ExtJS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >
@@ -199,7 +197,7 @@ Per sviluppare nuovi componenti per AEM basati su componenti esistenti, è possi
    * utilizzo di CRXDE Lite per aggiungere il valore `<path-to-component>` (ad esempio, `/apps/geometrixx/components/myComponent`) ai componenti proprietà del nodo `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * seguendo le istruzioni in [Aggiunta di nuovi componenti ai sistemi paragrafo](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. In WCM per AEM, apri una pagina del sito web e inserisci un paragrafo del tipo creato per assicurarti che il componente funzioni correttamente.
+1. In AEM WCM, apri una pagina del sito web e inserisci un paragrafo del tipo creato per assicurarti che il componente funzioni correttamente.
 
 >[!NOTE]
 >
@@ -216,7 +214,7 @@ Una volta sviluppato il componente, questo viene aggiunto al sistema paragrafo, 
 
      `<contextPath>/ Test.html?wcmmode=design`
 
-   * clic su Progettazione nel Sidekick
+   * clic su Progettazione in Sidekick
 
    Ora sei in modalità progettazione e puoi modificare il sistema paragrafo.
 
@@ -251,11 +249,11 @@ In questo esercizio sono descritte le tecniche riportate di seguito.
 
 >[!NOTE]
 >
->Questo esempio si basa sul contenuto del Geometrixx, che non viene più fornito con AEM ed è stato sostituito da We.Retail. Per informazioni su come scaricare e installare Geometrixx, consulta il documento [Implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx).
+>Questo esempio si basa sul contenuto di esempio di Geometrixx, che non viene più fornito con AEM, essendo stato sostituito da We.Retail. Per informazioni su come scaricare e installare Geometrixx, consulta il documento [Implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx).
 
 #### Estensione del componente textimage esistente {#extending-the-existing-textimage-component}
 
-Per creare il componente, utilizzate il componente textimage standard come base e modificatelo. Il nuovo componente viene memorizzato nell&#39;applicazione di esempio WCM per AEM Geometrixx.
+Per creare il componente, utilizzate il componente textimage standard come base e modificatelo. Il nuovo componente viene archiviato nell’applicazione di esempio WCM Geometrixx AEM.
 
 1. Copiare il componente textimage standard da `/libs/foundation/components/textimage` nella cartella del componente Geometrixx, `/apps/geometrixx/components`, utilizzando textimage come nome del nodo di destinazione. Per copiare il componente, fai clic con il pulsante destro del mouse sul componente e seleziona Copia, quindi individua la directory di destinazione.
 
@@ -278,16 +276,16 @@ Per creare il componente, utilizzate il componente textimage standard come base 
 
    * Nome componente
 
-      * Imposta `jcr:description` su `Text Image Component (Extended)`
-      * Imposta `jcr:title` su `Text Image (Extended)`
+     * Imposta `jcr:description` su `Text Image Component (Extended)`
+     * Imposta `jcr:title` su `Text Image (Extended)`
 
    * Gruppo, in cui il componente è elencato nella barra laterale (lascia invariato)
 
-      * Lascia `componentGroup` impostato su `General`
+     * Lascia `componentGroup` impostato su `General`
 
    * Componente padre del nuovo componente (il componente textimage standard)
 
-      * Imposta `sling:resourceSuperType` su `foundation/components/textimage`
+     * Imposta `sling:resourceSuperType` su `foundation/components/textimage`
 
    Dopo questo passaggio, il nodo del componente si presenta così:
 
@@ -305,24 +303,24 @@ Per creare il componente, utilizzate il componente textimage standard come base 
 
    * Per le prime due schede (tab1 e tab2):
 
-      * Cambia xtype in cqinclude (per ereditare dal componente standard).
-      * Aggiungere una proprietà di percorso con i valori `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` e `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, rispettivamente.
-      * Rimuovi tutte le altre proprietà o sottonodi.
+     * Cambia xtype in cqinclude (per ereditare dal componente standard).
+     * Aggiungere una proprietà di percorso con i valori `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` e `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, rispettivamente.
+     * Rimuovi tutte le altre proprietà o sottonodi.
 
    * Per tab3:
 
-      * Lascia le proprietà e i sottonodi senza modifiche
-      * Aggiungi una definizione di campo a `tab3/items`, posizione nodo di tipo `cq:Widget`
-      * Impostare le seguenti proprietà (di tipo String) per il nuovo nodo `tab3/items/position`:
+     * Lascia le proprietà e i sottonodi senza modifiche
+     * Aggiungi una definizione di campo a `tab3/items`, posizione nodo di tipo `cq:Widget`
+     * Impostare le seguenti proprietà (di tipo String) per il nuovo nodo `tab3/items/position`:
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * Aggiungere il sottonodo `position/options` di tipo `cq:WidgetCollection` per rappresentare le due scelte per il posizionamento dell&#39;immagine e sotto di esso creare due nodi, o1 e o2 di tipo `nt:unstructured`.
-      * Per il nodo `position/options/o1` impostare le proprietà: `text` su `Left` e `value` su `left.`
-      * Per il nodo `position/options/o2` impostare le proprietà: `text` su `Right` e `value` su `right`.
+     * Aggiungere il sottonodo `position/options` di tipo `cq:WidgetCollection` per rappresentare le due scelte per il posizionamento dell&#39;immagine e sotto di esso creare due nodi, o1 e o2 di tipo `nt:unstructured`.
+     * Per il nodo `position/options/o1` impostare le proprietà: `text` su `Left` e `value` su `left.`
+     * Per il nodo `position/options/o2` impostare le proprietà: `text` su `Right` e `value` su `right`.
 
    * Elimina scheda4.
 
@@ -358,7 +356,7 @@ Per creare il componente, utilizzate il componente textimage standard come base 
 Una volta sviluppato il componente, è possibile aggiungerlo al sistema paragrafo, consentendo agli autori di selezionare e utilizzare il componente durante la modifica di una pagina. Questi passaggi ti consentono di testare il componente.
 
 1. Apri una pagina in Geometrixx, ad esempio Inglese/Azienda.
-1. Passare alla modalità progettazione facendo clic su Progettazione nel Sidekick.
+1. Passa alla modalità progettazione facendo clic su Progettazione in Sidekick.
 1. Modificate la struttura del sistema paragrafo facendo clic su Modifica (Edit) nel sistema paragrafo al centro della pagina. Viene visualizzato un elenco di componenti, che possono essere inseriti nel sistema paragrafo, e che dovrebbero includere il componente appena sviluppato, Immagine testo (estesa) . Attivarla per il sistema paragrafo selezionandola e facendo clic su OK.
 1. Torna alla modalità di modifica.
 1. Aggiungi il paragrafo Immagine di testo (estesa) al sistema paragrafo, inizializza il testo e l’immagine con contenuti di esempio. Salva le modifiche.
@@ -370,7 +368,7 @@ Il componente memorizza il proprio contenuto in un paragrafo della pagina Aziend
 
 ### Disabilita la funzionalità di caricamento del componente Immagine {#disable-upload-capability-of-the-image-component}
 
-Per disabilitare questa funzionalità, utilizza il componente immagine standard come base e modificalo. Il nuovo componente viene memorizzato nell&#39;applicazione di Geometrixx.
+Per disabilitare questa funzionalità, utilizza il componente immagine standard come base e modificalo. Il nuovo componente viene memorizzato nell&#39;applicazione di esempio Geometrixx.
 
 1. Copiare il componente immagine standard da `/libs/foundation/components/image` nella cartella del componente Geometrixx, `/apps/geometrixx/components`, utilizzando l&#39;immagine come nome del nodo di destinazione.
 

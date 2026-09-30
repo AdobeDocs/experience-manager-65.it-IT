@@ -1,25 +1,23 @@
 ---
-title: Integra [!DNL Assets]  con flusso attività
-description: Descrive le funzionalità di registrazione di  [!DNL Experience Manager]  e come configurarle per registrare eventi specifici.
+title: Integra [!DNL Assets] con il flusso di attività
+description: Descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurarlo per registrare eventi specifici.
 contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # Integra [!DNL Assets] con il flusso di attività {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets] utenti eseguono molte azioni come la creazione, il caricamento e l&#39;eliminazione di Assets. Puoi registrare queste azioni in modo da fornire una cronologia di ciò che è stato fatto da un utente. In questa sezione vengono descritte le funzionalità di registrazione di [!DNL Experience Manager] e viene descritto come configurare [!DNL Experience Manager] per registrare eventi specifici.
 
 ## Considerazioni sulle prestazioni e comportamento predefinito {#performance-considerations-and-default-behavior}
 
-Questa integrazione potrebbe richiedere l’utilizzo di CPU e spazio su disco, ad esempio durante l’importazione in blocco. Per questi motivi, l&#39;integrazione di [!DNL Assets] con il flusso di attività è disabilitata per impostazione predefinita.
+Questa integrazione potrebbe essere CPU e occupare spazio su disco, ad esempio, durante l’importazione in blocco. Per questi motivi, l&#39;integrazione di [!DNL Assets] con il flusso di attività è disabilitata per impostazione predefinita.
 
 ## Eventi di azione supportati {#supported-action-events}
 
@@ -59,4 +57,4 @@ La [console Web](/help/sites-deploying/configuring-osgi.md) fornisce l&#39;acces
 
 ## Leggi eventi registrati {#reading-recorded-events}
 
-Gli eventi registrati vengono memorizzati come attività. È possibile leggerli a livello di programmazione utilizzando l&#39;[API ActivityManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Gli eventi registrati vengono memorizzati come attività. È possibile leggerli a livello di programmazione utilizzando l&#39;[API ActivityManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

@@ -9,13 +9,11 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '4096'
+source-wordcount: '4259'
 ht-degree: 3%
-
 ---
-
 
 
 # Piattaforme supportate per AEM Forms su JEE {#supported-platforms-for-aem-forms-on-jee}
@@ -107,7 +105,8 @@ Adobe consiglia queste configurazioni e fornisce supporto completo o limitato co
 >[!NOTE]
 >
 >Per aiutare i clienti AEM Forms a ridurre il costo di proprietà, semplificare l’architettura di distribuzione e modernizzare lo stack di sviluppo, la piattaforma aziendale Adobe Experience Manager si sta allontanando dalle implementazioni basate su server applicazioni a favore delle implementazioni autonome basate su OSGi. Adobe continua a supportare lo stack AEM Forms JEE con una matrice ridotta di componenti dell’infrastruttura.
-><br>>Con la versione 6.5, i componenti dell&#39;infrastruttura che hanno il minore utilizzo tra i clienti Adobe non sono più supportati, come segue:
+><br>
+>Con il rilascio della versione 6.5, i componenti dell’infrastruttura che hanno l’utilizzo più basso tra i clienti di Adobe non sono più supportati, come segue:
 >
 > - Database IBM® DB2®
 > - Sistemi operativi IBM® AIX® e Sun Solaris™
@@ -207,7 +206,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
  <tr>
   <td><p>Microsoft® SQL Server 2019 (obsoleto) </p> </td>
   <td><p>Microkernel archivio</p> </td>
-  <td><p>Supportato</p> </td>
+  <td><p>Funzione supportata</p> </td>
  </tr>
  <tr>
   <td><p>Microsoft® SQL Server 2022 </p> </td>
@@ -383,6 +382,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 ( 2.17 o versione successiva)
 > - OpenSSL 3 (richiesto nella posizione predefinita sul sistema operativo).
+> - Su Red Hat® Enterprise Linux® 9, la build OpenOffice a 32 bit richiede `libcrypt.so.1`, che non è installato per impostazione predefinita. Se manca, OpenOffice non viene avviato con l&#39;errore `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` e le conversioni da OpenOffice a PDF non riescono. Installare il pacchetto `libxcrypt-compat` (32 bit) per fornire la libreria: `sudo dnf install -y libxcrypt-compat.i686`.
 
 Per l’installazione di OpenSSL 3: le librerie libcrypto.so.3 e libssl.so.3 devono essere disponibili nel percorso predefinito della libreria rappresentato dalla variabile di ambiente LD_LIBRARY_PATH. Se sono installati in un percorso non standard, assicurarsi che questo percorso venga aggiunto a LD_LIBRARY_PATH prima di avviare il server.
 

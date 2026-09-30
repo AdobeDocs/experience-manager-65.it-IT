@@ -9,13 +9,11 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 1%
-
 ---
-
 # Riferimento predicato di Query Builder{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ Concettualmente `fulltext AND ( (path AND type) OR (path AND type) )`. Tali join
 
 ### hasPermission {#haspermission}
 
-Limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca. Non supporta l’estrazione dei facet.
 
@@ -269,7 +267,7 @@ Supporta l’estrazione facet e fornisce due bucket per le risorse principali e 
 
 ### memberOf {#memberof}
 
-Trova elementi che sono membri di una raccolta di risorse [sling specifica](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+Trova elementi che sono membri di una raccolta di risorse [sling specifica](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca. Non supporta l&#39;estrazione dei facet.
 
@@ -473,17 +471,17 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query, è implicito.
 
   (solo per il servlet JSON) seleziona il modo in cui gli hit vengono scritti come JSON, con questi standard (estensibili tramite il servizio ResultHitWriter):
 
-   * **semplice**:
+  * **semplice**:
 
-     Elementi minimi come `path`, `title`, `lastmodified`, `excerpt` (se impostato).
+    Elementi minimi come `path`, `title`, `lastmodified`, `excerpt` (se impostato).
 
-   * **completo**:
+  * **completo**:
 
-     Rendering Sling JSON del nodo, con `jcr:path` che indica il percorso dell&#39;hit: per impostazione predefinita elenca solo le proprietà dirette del nodo, include una struttura più profonda con `p.nodedepth=N`, con 0 che indica la sottostruttura intera e infinita; aggiungi `p.acls=true` per includere le autorizzazioni JCR della sessione corrente sull&#39;elemento risultato specificato (mappature: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    Rendering Sling JSON del nodo, con `jcr:path` che indica il percorso dell&#39;hit: per impostazione predefinita elenca solo le proprietà dirette del nodo, include una struttura più profonda con `p.nodedepth=N`, con 0 che indica la sottostruttura intera e infinita; aggiungi `p.acls=true` per includere le autorizzazioni JCR della sessione corrente sull&#39;elemento risultato specificato (mappature: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
-   * **selettivo**:
+  * **selettivo**:
 
-     Solo le proprietà specificate in `p.properties`, che è un elenco di percorsi relativi separato da spazi (utilizzare &quot;+&quot; negli URL). Se il percorso relativo ha una profondità > 1, questi sono rappresentati come oggetti figlio. La proprietà jcr:path speciale include il percorso dell&#39;hit
+    Solo le proprietà specificate in `p.properties`, che è un elenco di percorsi relativi separato da spazi (utilizzare &quot;+&quot; negli URL). Se il percorso relativo ha una profondità > 1, questi sono rappresentati come oggetti figlio. La proprietà jcr:path speciale include il percorso dell&#39;hit
 
 ### savedquery {#savedquery}
 

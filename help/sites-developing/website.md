@@ -10,13 +10,11 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4923'
+source-wordcount: '5032'
 ht-degree: 3%
-
 ---
-
 # Creare un sito web completo (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -140,7 +138,7 @@ Un modello definisce il contenuto predefinito di una nuova pagina. I siti web co
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   Il valore della proprietà del percorso consentito è un&#39;espressione regolare *.* Le pagine con un percorso corrispondente all&#39;espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le pagine secondarie.
+   Il valore della proprietà del percorso consentito è un&#39;espressione regolare *.* Le pagine con un percorso che corrisponde all’espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le pagine secondarie.
 
    Quando un autore crea una pagina sotto /content, il modello **contentpage** viene visualizzato in un elenco di modelli disponibili da utilizzare.
 
@@ -329,7 +327,7 @@ In questa sezione vengono creati diversi script che generano ciascuno una parte 
 
 1. In CRXDE Lite, creare il file `left.jsp` in `/apps/mywebsite/components/contentpage`:
 
-   1. Fare clic con il pulsante destro del mouse sul nodo `/apps/mywebsite/components/contentpage`, quindi selezionare **Crea &#x200B;** quindi **Crea file**.
+   1. Fare clic con il pulsante destro del mouse sul nodo `/apps/mywebsite/components/contentpage`, quindi selezionare **Crea** quindi **Crea file**.
 
    1. Nella finestra, digita `left.jsp` come **Nome** e fai clic su **OK**.
 
@@ -493,7 +491,7 @@ Migliora lo script di rendering del componente topnav per utilizzare collegament
 
 Questo esercizio illustra [l&#39;elaborazione della richiesta Sling](/help/sites-developing/the-basics.md#sling-request-processing). Lo script topnav.jsp viene modificato per chiamare uno script che genera dinamicamente immagini da utilizzare per i collegamenti di navigazione della pagina. In questo esercizio, Sling analizza l’URL dei file di origine delle immagini per determinare lo script da utilizzare per il rendering delle immagini.
 
-Ad esempio, l&#39;origine del collegamento immagine alla pagina Prodotti potrebbe essere https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling analizza questo URL per determinare il tipo di risorsa e lo script da utilizzare per il rendering della risorsa:
+Ad esempio, l’origine del collegamento immagine alla pagina Prodotti potrebbe essere https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling analizza questo URL per determinare il tipo di risorsa e lo script da utilizzare per il rendering della risorsa:
 
 1. Sling determina il percorso della risorsa da `/content/mwebysite/en/products.png.`
 1. Sling corrisponde a questo percorso con il nodo `/content/mywebsite/en/products`.
@@ -523,9 +521,9 @@ In questo esercizio, Sling confronta questi URL con lo script /apps/mywebsite/co
 
 1. Copiare il codice seguente in `navimage.png.java.`Il codice estende la classe AbstractImageServlet:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un oggetto ImageContext che memorizza le proprietà della risorsa corrente.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un oggetto ImageContext che memorizza le proprietà della risorsa corrente.
    * La pagina padre della risorsa viene estratta dall&#39;oggetto ImageContext. Vengono quindi ottenuti il titolo e il sottotitolo della pagina.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) viene utilizzato per generare l&#39;immagine dal file navimage_bg.jpg della progettazione del sito, dal titolo della pagina e dal sottotitolo della pagina.
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/ImageHelper.html) viene utilizzato per generare l&#39;immagine dal file navimage_bg.jpg della progettazione del sito, dal titolo della pagina e dal sottotitolo della pagina.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -834,7 +832,7 @@ Per vedere il funzionamento completo di questo componente, puoi visualizzare la 
 
 1. ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. Come Percorso della directory principale dell&#39;elenco, immettere: `/content/mywebsite/en`. Fare clic su OK. Il componente Listchildren sulla pagina ora si presenta come segue:
+1. Come Percorso della directory principale dell&#39;elenco, immettere: `/content/mywebsite/en`. Fai clic su OK. Il componente Listchildren sulla pagina ora si presenta come segue:
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 

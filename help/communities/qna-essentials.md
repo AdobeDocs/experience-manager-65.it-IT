@@ -9,13 +9,11 @@ exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 2%
-
+source-wordcount: '273'
+ht-degree: 1%
 ---
-
 # Nozioni di base su QnA {#qna-essentials}
 
 Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzione del forum Domande e risposte (QnA).
@@ -55,9 +53,9 @@ Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzi
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [API QnA](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Endpoint QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Endpoint D/R](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
