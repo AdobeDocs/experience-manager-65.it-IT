@@ -10,20 +10,18 @@ exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 1%
 ---
-
 # Esternalizzazione degli URL{#externalizing-urls}
 
 In Adobe Experience Manager (AEM), **Externalizer** è un servizio OSGI che consente di trasformare in modo programmatico un percorso di risorsa (ad esempio, `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
 
 Poiché un’istanza non può conoscere il proprio URL visibile esternamente se è in esecuzione dietro un livello web e poiché a volte è necessario creare un collegamento al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 
-In questa pagina viene illustrato come configurare e utilizzare il servizio **Externalizer**. Per ulteriori dettagli, vedi [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+In questa pagina viene illustrato come configurare e utilizzare il servizio **Externalizer**. Per ulteriori dettagli, vedi [Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
@@ -51,12 +49,12 @@ Per definire un mapping di dominio per il servizio **Externalizer**:
 
    * **lo schema** è http o https, ma può anche essere ftp e così via.
 
-      * se necessario, utilizza https per applicare i collegamenti https
-      * viene utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
+     * se necessario, utilizza https per applicare i collegamenti https
+     * viene utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
 
    * **server** è il nome host (può essere un nome di dominio o un indirizzo ip).
    * **porta** (facoltativo) è il numero di porta.
-   * **contextpath** (facoltativo) è impostato solo se AEM è installato come WebApp in un percorso di contesto diverso.
+   * **contextpath** (facoltativo) è impostato solo se AEM è installato come app Web in un percorso di contesto diverso.
 
    Esempio: `production https://my.production.instance`
 
@@ -74,7 +72,7 @@ Per definire un mapping di dominio per il servizio **Externalizer**:
 
 >[!NOTE]
 >
->L&#39;Adobe consiglia di [aggiungere la configurazione all&#39;archivio](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
+>Adobe consiglia di [aggiungere la configurazione all&#39;archivio](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
 
 ### Utilizzo del servizio Externalizer {#using-the-externalizer-service}
 
@@ -128,4 +126,4 @@ In questa sezione vengono illustrati alcuni esempi di utilizzo del servizio **Ex
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. Puoi trovare altri esempi nei [JavaScript](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+1. Puoi trovare altri esempi nei [JavaScript](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/Externalizer.html).

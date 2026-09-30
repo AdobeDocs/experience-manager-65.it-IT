@@ -7,13 +7,11 @@ exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1534'
 ht-degree: 2%
-
 ---
-
 # Helper Handlebars SCF {#scf-handlebars-helpers}
 
 | **[⇐ caratteristiche di base](essentials.md)** | **[Personalizzazione lato server ⇒](server-customize.md)** |
@@ -180,7 +178,7 @@ Un helper per restituire il contenuto a seconda di un condizionale di uguaglianz
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Helper per blocchi che verifica il valore corrente di [modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) in base a un elenco di modalità separato da stringhe.
+Helper per blocchi che verifica il valore corrente di [modalità WCM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) in base a un elenco di modalità separato da stringhe.
 
 ### Parametri {#parameters-4}
 
@@ -190,7 +188,7 @@ Helper per blocchi che verifica il valore corrente di [modalità WCM](https://de
 
 * **modalità**: stringa
 
-  (Facoltativo) Un elenco separato da virgole di [modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) da verificare se impostate.
+  (Facoltativo) Un elenco separato da virgole di [modalità WCM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) da verificare se impostate.
 
 ### Esempio {#example-2}
 
@@ -458,10 +456,10 @@ NOTA: questo helper potrebbe restituire una stringa vuota.
 
 * Handlebars fornisce un parametro finale agli helper chiamato &#39;options&#39;. L’oggetto speciale &quot;options&quot; include
 
-   * Dati privati facoltativi (options.data)
-   * Proprietà chiave-valore facoltative dalla chiamata (options.hash)
-   * Possibilità di richiamarsi (options.fn())
-   * Possibilità di richiamare l’inverso di se stesso (options.inverse())
+  * Dati privati facoltativi (options.data)
+  * Proprietà chiave-valore facoltative dalla chiamata (options.hash)
+  * Possibilità di richiamarsi (options.fn())
+  * Possibilità di richiamare l’inverso di se stesso (options.inverse())
 
 * È consigliabile che il contenuto di HTML String restituito da un helper sia un SafeString.
 
@@ -523,7 +521,7 @@ Gli helper personalizzati devono essere implementati sul lato server e sul lato 
 
 ### Helper personalizzati lato server {#server-side-custom-helpers}
 
-Per implementare e registrare un helper SCF personalizzato sul lato server, è sufficiente implementare l&#39;interfaccia Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), trasformarlo in [servizio OSGi](../../help/sites-developing/the-basics.md#osgi) e installarlo come parte di un bundle OSGi.
+Per implementare e registrare un helper SCF personalizzato sul lato server, è sufficiente implementare l&#39;interfaccia Java™ [TemplateHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), trasformarlo in [servizio OSGi](../../help/sites-developing/the-basics.md#osgi) e installarlo come parte di un bundle OSGi.
 
 Ad esempio:
 

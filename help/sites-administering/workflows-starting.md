@@ -9,9 +9,9 @@ exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 3%
 ---
 # Avviare i flussi di lavoro{#starting-workflows}
@@ -33,7 +33,7 @@ Durante l’amministrazione dei flussi di lavoro puoi avviarli utilizzando vari 
 >
 >* [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md)
 >* [Applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/it/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Progetti di traduzione](/help/sites-administering/tc-manage.md)
 >
 
@@ -172,7 +172,7 @@ Un pacchetto di flusso di lavoro:
      Questa proprietà di avvio è un elenco di elementi separato da virgole: &quot;
 
      * `property-name` ignora qualsiasi evento `jcr` attivato sul nome della proprietà specificato. &quot;
-     * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Ad esempio:
 

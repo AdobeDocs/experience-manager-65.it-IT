@@ -9,13 +9,11 @@ exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 2%
-
 ---
-
 # Creazione di un nuovo componente campo dell’interfaccia utente Granite{#creating-a-new-granite-ui-field-component}
 
 L&#39;interfaccia utente Granite fornisce una serie di componenti progettati per essere utilizzati nei moduli; questi sono denominati *campi* nel vocabolario dell&#39;interfaccia utente Granite. I componenti del modulo Granite standard sono disponibili in:
@@ -28,35 +26,35 @@ L&#39;interfaccia utente Granite fornisce una serie di componenti progettati per
 
 >[!NOTE]
 >
->Per informazioni dettagliate sui campi, consulta la [documentazione dell&#39;interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Per informazioni dettagliate sui campi, consulta la [documentazione dell&#39;interfaccia utente Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Utilizza il framework Granite UI Foundation per sviluppare e/o estendere i componenti Granite. Ciò si basa su due elementi:
 
 * lato server:
 
-   * una raccolta di componenti di base
+  * una raccolta di componenti di base
 
-      * foundation: modulare, componibile, a più livelli, riutilizzabile
-      * componenti: componenti Sling
+    * foundation: modulare, componibile, a più livelli, riutilizzabile
+    * componenti: componenti Sling
 
-   * assistenti per lo sviluppo delle applicazioni
+  * assistenti per lo sviluppo delle applicazioni
 
 * lato client:
 
-   * una raccolta di clientlibs che fornisce un vocabolario (ovvero un’estensione del linguaggio HTML) per ottenere modelli di interazione generici tramite un’interfaccia utente guidata da Hypermedia.
+  * una raccolta di clientlibs che fornisce un vocabolario (ovvero un’estensione del linguaggio HTML) per ottenere modelli di interazione generici tramite un’interfaccia utente guidata da Hypermedia.
 
 Il componente generico dell&#39;interfaccia utente Granite `field` è composto da due file di interesse:
 
 * `init.jsp`: gestisce l&#39;elaborazione generica, l&#39;etichettatura, la descrizione e fornisce il valore del modulo necessario per il rendering del campo.
 * `render.jsp`: viene eseguito il rendering effettivo del campo, che deve essere sostituito per il campo personalizzato; è incluso da `init.jsp`.
 
-Per informazioni dettagliate, consulta la [documentazione dell&#39;interfaccia utente Granite - Campo](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
+Per informazioni dettagliate, consulta la [documentazione dell&#39;interfaccia utente Granite - Campo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
 
 Per esempi, consulta:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 

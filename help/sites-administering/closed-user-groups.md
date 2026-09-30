@@ -10,13 +10,11 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '6780'
+source-wordcount: '6781'
 ht-degree: 1%
-
 ---
-
 # Gruppi di utenti chiusi in AEM{#closed-user-groups-in-aem}
 
 ## Introduzione {#introduction}
@@ -101,10 +99,10 @@ Le seguenti best practice devono tenere conto della definizione di accesso in le
 * Crea un modello di minaccia per i dati o i contenuti che devono essere protetti per identificare i limiti della minaccia e ottenere un quadro chiaro della sensibilità dei dati e dei ruoli associati all’accesso autorizzato
 * Modellare il contenuto dell’archivio e i gruppi di utenti chiusi (CUG) tenendo presenti gli aspetti generali relativi alle autorizzazioni e le best practice:
 
-   * Ricorda che l’autorizzazione di lettura viene concessa solo se un determinato CUG e la valutazione di altri moduli distribuiti nella concessione dell’impostazione consentono a un determinato soggetto di leggere un determinato elemento dell’archivio
-   * Evita la creazione di CUG ridondanti in cui l’accesso in lettura è già limitato da altri moduli di autorizzazione
-   * L’eccessiva necessità di CUG nidificati potrebbe potenzialmente evidenziare problemi nella progettazione del contenuto
-   * Un’eccessiva necessità di gruppi di utenti chiusi (ad esempio, su ogni pagina) può indicare la necessità di un modello di autorizzazione personalizzato potenzialmente più adatto alle esigenze di sicurezza specifiche dell’applicazione e del contenuto a portata di mano.
+  * Ricorda che l’autorizzazione di lettura viene concessa solo se un determinato CUG e la valutazione di altri moduli distribuiti nella concessione dell’impostazione consentono a un determinato soggetto di leggere un determinato elemento dell’archivio
+  * Evita la creazione di CUG ridondanti in cui l’accesso in lettura è già limitato da altri moduli di autorizzazione
+  * L’eccessiva necessità di CUG nidificati potrebbe potenzialmente evidenziare problemi nella progettazione del contenuto
+  * Un’eccessiva necessità di gruppi di utenti chiusi (ad esempio, su ogni pagina) può indicare la necessità di un modello di autorizzazione personalizzato potenzialmente più adatto alle esigenze di sicurezza specifiche dell’applicazione e del contenuto a portata di mano.
 
 * Limita i percorsi supportati per i criteri CUG ad alcune strutture nell’archivio per ottimizzare le prestazioni. Ad esempio, consenti solo i CUG sotto il nodo /content come valore predefinito a partire da AEM 6.3.
 * I criteri CUG sono progettati per consentire l&#39;accesso in lettura a un piccolo insieme di entità principali. La necessità di un numero elevato di utenti/gruppi/ruoli può evidenziare problemi nel contenuto o nella progettazione dell’applicazione e dovrebbe essere riconsiderata.
@@ -146,10 +144,10 @@ Quando si chiama `AuthenticationHandler.requestCredentials`, il gestore tenta di
 * distinguere tra password scaduta e necessità di accesso regolare come motivo del reindirizzamento;
 * Se l’accesso è regolare, verifica se è possibile ottenere un percorso di accesso nell’ordine seguente:
 
-   * dal LoginPathProvider implementato dal nuovo `com.adobe.granite.auth.requirement.impl.RequirementService`,
-   * dalla precedente implementazione obsoleta di CUG,
-   * dalle mappature pagina di accesso, come definite con `LoginSelectorHandler`,
-   * e infine, tornare alla pagina di accesso predefinita, come definita con `LoginSelectorHandler`.
+  * dal LoginPathProvider implementato dal nuovo `com.adobe.granite.auth.requirement.impl.RequirementService`,
+  * dalla precedente implementazione obsoleta di CUG,
+  * dalle mappature pagina di accesso, come definite con `LoginSelectorHandler`,
+  * e infine, tornare alla pagina di accesso predefinita, come definita con `LoginSelectorHandler`.
 
 * Quando si ottiene un percorso di accesso valido tramite le chiamate elencate sopra, la richiesta dell’utente viene reindirizzata a tale pagina.
 
@@ -158,10 +156,10 @@ La destinazione di questa documentazione è la valutazione del percorso di acces
 * La registrazione dei percorsi di accesso dipende dalla distinzione tra password scaduta e necessità di accesso regolare come motivo del reindirizzamento
 * Se l’accesso è regolare, verifica se è possibile ottenere un percorso di accesso nell’ordine seguente:
 
-   * da `LoginPathProvider` come implementato dal nuovo `com.adobe.granite.auth.requirement.impl.RequirementService`,
-   * dalla precedente implementazione obsoleta di CUG,
-   * dalle mappature pagina di accesso definite con `LoginSelectorHandler`,
-   * e infine tornare alla pagina di accesso predefinita come definita con `LoginSelectorHandler`.
+  * da `LoginPathProvider` come implementato dal nuovo `com.adobe.granite.auth.requirement.impl.RequirementService`,
+  * dalla precedente implementazione obsoleta di CUG,
+  * dalle mappature pagina di accesso definite con `LoginSelectorHandler`,
+  * e infine tornare alla pagina di accesso predefinita come definita con `LoginSelectorHandler`.
 
 * Quando si ottiene un percorso di accesso valido tramite le chiamate elencate sopra, la richiesta dell’utente viene reindirizzata a tale pagina.
 
@@ -179,9 +177,9 @@ Nel definire i requisiti di autenticazione è necessario tenere conto delle segu
 * Contenuto dell’archivio del modello tale che i requisiti di autenticazione si applichino all’intera struttura senza dover escludere nuovamente le sottostrutture nidificate dai requisiti.
 * Per evitare di specificare e quindi registrare percorsi di accesso ridondanti:
 
-   * affidarsi all’ereditarietà ed evitare di definire percorsi di accesso nidificati,
-   * non impostare il percorso di accesso facoltativo su un valore corrispondente al valore predefinito o ereditato,
-   * gli sviluppatori di applicazioni devono identificare i percorsi di accesso da configurare nelle configurazioni dei percorsi di accesso globali (sia predefiniti che mappati) associate a `LoginSelectorHandler`.
+  * affidarsi all’ereditarietà ed evitare di definire percorsi di accesso nidificati,
+  * non impostare il percorso di accesso facoltativo su un valore corrispondente al valore predefinito o ereditato,
+  * gli sviluppatori di applicazioni devono identificare i percorsi di accesso da configurare nelle configurazioni dei percorsi di accesso globali (sia predefiniti che mappati) associate a `LoginSelectorHandler`.
 
 ## Rappresentazione nel repository {#representation-in-the-repository}
 
@@ -205,7 +203,7 @@ La pagina associata al percorso di accesso può trovarsi all’interno o all’e
 
 ### Gestione dei criteri CUG {#managing-cug-policies}
 
-Il nuovo tipo di criteri di controllo di accesso per limitare l&#39;accesso in lettura per un CUG viene gestito utilizzando l&#39;API di gestione del controllo di accesso JCR e segue i meccanismi descritti con la specifica [JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+Il nuovo tipo di criteri di controllo di accesso per limitare l&#39;accesso in lettura per un CUG viene gestito utilizzando l&#39;API di gestione del controllo di accesso JCR e segue i meccanismi descritti con la specifica [JCR 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Imposta un nuovo criterio per gruppi utenti chiusi {#set-a-new-cug-policy}
 
@@ -817,7 +815,7 @@ Il modello di autorizzazione CUG consente di attivare singolarmente la gestione 
 * la gestione del controllo di accesso è abilitata se il modulo dispone di uno o più percorsi supportati in cui è possibile creare gruppi utenti chiusi (CUG)
 * la valutazione delle autorizzazioni è abilitata solo se è selezionata anche l&#39;opzione **Valutazione CUG abilitata**.
 
-Nella nuova valutazione predefinita dell’installazione di AEM dei criteri per gruppi utenti chiusi (CUG), è abilitata solo con la modalità di esecuzione &quot;pubblicazione&quot;. Per ulteriori dettagli, vedi i dettagli sulla configurazione predefinita [&#x200B; da AEM 6.3](#default-configuration-since-aem). Questo può essere verificato confrontando i criteri efficaci per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i gruppi di utenti chiusi (CUG).
+Nella nuova valutazione predefinita dell’installazione di AEM dei criteri per gruppi utenti chiusi (CUG), è abilitata solo con la modalità di esecuzione &quot;pubblicazione&quot;. Per ulteriori dettagli, vedi i dettagli sulla configurazione predefinita [ da AEM 6.3](#default-configuration-since-aem). Questo può essere verificato confrontando i criteri efficaci per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i gruppi di utenti chiusi (CUG).
 
 Come spiegato in precedenza, i criteri di controllo dell&#39;accesso ai gruppi utenti chiusi (CUG) ora sono sempre memorizzati nel contenuto, ma la valutazione delle autorizzazioni effettive risultanti da tali criteri verrà applicata solo se **Valutazione gruppi utenti chiusi (CUG) abilitata** è attivata nella console di sistema in Apache Jackrabbit Oak **Configurazione gruppi utenti chiusi (CUG).** Per impostazione predefinita, è abilitato solo con la modalità di esecuzione &quot;pubblicazione&quot;.
 

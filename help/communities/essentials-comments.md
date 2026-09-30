@@ -9,13 +9,11 @@ exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 4%
-
+source-wordcount: '373'
+ht-degree: 3%
 ---
-
 # Commenti essenziali {#comments-essentials}
 
 Questa pagina fornisce le nozioni di base sull’utilizzo del sistema dei commenti (componente commenti) e le opzioni per la gestione dei contenuti generati dagli utenti (UGC) generati quando i membri pubblicano commenti o risposte.
@@ -78,9 +76,9 @@ Ciò si applica a qualsiasi componente che estende un sistema di commenti.
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API commenti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [API Commenti](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Endpoint commenti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Endpoint commenti](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 

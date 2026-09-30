@@ -6,13 +6,11 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4567'
 ht-degree: 1%
-
 ---
-
 # Concetti{#concepts}
 
 Il framework di integrazione fornisce i meccanismi e i componenti necessari per:
@@ -40,7 +38,7 @@ Ciò significa che:
 
 >[!CAUTION]
 >
->[eCommerce Integration Framework](https://business.adobe.com/it/products/experience-manager/sites/ecommerce-integrations.html) è un componente aggiuntivo di AEM.
+>[eCommerce Integration Framework](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) è un componente aggiuntivo di AEM.
 >
 >Il vostro rappresentante commerciale è in grado di fornire tutti i dettagli, secondo il motore appropriato.
 
@@ -60,33 +58,33 @@ Per ottimizzare il funzionamento, AEM e il motore di e-commerce si concentrano s
 
 * AEM può:
 
-   * Richiesta:
+  * Richiesta:
 
-      * Informazioni sul prodotto dal motore di eCommerce.
+    * Informazioni sul prodotto dal motore di eCommerce.
 
-   * Fornisci:
+  * Fornisci:
 
-      * Visualizzazioni utente per informazioni sul prodotto, carrello e pagamento.
-      * Carrello acquisti e informazioni di pagamento al motore di eCommerce.
-      * Ottimizzazione dei motori di ricerca (SEO).
-      * Funzionalità community.
-      * Interazioni di marketing non strutturate.
+    * Visualizzazioni utente per informazioni sul prodotto, carrello e pagamento.
+    * Carrello acquisti e informazioni di pagamento al motore di eCommerce.
+    * Ottimizzazione dei motori di ricerca (SEO).
+    * Funzionalità community.
+    * Interazioni di marketing non strutturate.
 
 * Il motore di eCommerce può:
 
-   * Fornisci:
+  * Fornisci:
 
-      * Informazioni sul prodotto dal database.
-      * Gestione varianti prodotto.
-      * Order Management.
-      * ERP (Enterprise Resource Planning).
-      * Cerca nelle informazioni sul prodotto.
+    * Informazioni sul prodotto dal database.
+    * Gestione varianti prodotto.
+    * Order Management.
+    * ERP (Enterprise Resource Planning).
+    * Cerca nelle informazioni sul prodotto.
 
-   * Processo:
+  * Processo:
 
-      * Il carrello.
-      * Il pagamento.
-      * Evasione dell&#39;ordine.
+    * Il carrello.
+    * Il pagamento.
+    * Evasione dell&#39;ordine.
 
 >[!NOTE]
 >
@@ -126,7 +124,7 @@ AEM eCommerce è implementato con un motore di eCommerce:
 >
 >L’eCommerce AEM implementato all’interno di AEM utilizzando uno sviluppo generico basato su JCR è:
 >
->* Un esempio di e-commerce indipendente nativo per AEM che illustra l’utilizzo dell’API. Questa può essere utilizzata per controllare i dati di prodotto, i carrelli e il pagamento con le campagne di marketing e visualizzazione dati esistenti. In questo caso, il database dei prodotti viene archiviato nell&#39;archivio nativo di AEM (implementazione di Adobe di [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* Un esempio di e-commerce indipendente nativo per AEM che illustra l’utilizzo dell’API. Questa può essere utilizzata per controllare i dati di prodotto, i carrelli e il pagamento con le campagne di marketing e visualizzazione dati esistenti. In questo caso, il database dei prodotti viene archiviato nell&#39;archivio nativo di AEM (implementazione di Adobe di [JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)).
 >
 >  L&#39;installazione standard di AEM contiene le nozioni di base dell&#39;[implementazione eCommerce generica](/help/commerce/cif-classic/administering/generic.md).
 
@@ -150,7 +148,7 @@ Anche se in genere un progetto deve sviluppare un proprio provider di e-commerce
 >
 >Gli importatori Geometrixx utilizzano file CSV; esiste una descrizione dello schema accettato (con proprietà personalizzate consentite) nei commenti sopra la loro implementazione.
 
-[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (tramite [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) un elenco di implementazioni delle interfacce [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html). Questi sono elencati nel campo a discesa **Importer/Commerce Provider** della procedura guidata di importazione (utilizzando la proprietà `commerceProvider` come nome).
+[ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (tramite [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) un elenco di implementazioni delle interfacce [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [CatalogBlueprintImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html). Questi sono elencati nel campo a discesa **Importer/Commerce Provider** della procedura guidata di importazione (utilizzando la proprietà `commerceProvider` come nome).
 
 Quando uno specifico provider di importazione/commercio è disponibile dal menu a discesa, tutti i dati supplementari necessari devono essere definiti (a seconda del tipo di importatore) in:
 
@@ -169,24 +167,24 @@ Il sistema integrato gestisce i seguenti ruoli per mantenere i dati:
 
 * Gestione delle informazioni sul prodotto (PIM) Utente che gestisce:
 
-   * Informazioni sul prodotto.
-   * Tassonomia, classificazione, approvazione.
-   * Interagisce direttamente con la gestione delle risorse digitali.
-   * Determinazione dei prezzi: spesso questo deriva da un sistema ERP e non viene mantenuto esplicitamente nel sistema commerciale.
+  * Informazioni sul prodotto.
+  * Tassonomia, classificazione, approvazione.
+  * Interagisce direttamente con la gestione delle risorse digitali.
+  * Determinazione dei prezzi: spesso questo deriva da un sistema ERP e non viene mantenuto esplicitamente nel sistema commerciale.
 
 * Autore/Marketing Manager che gestisce:
 
-   * Contenuti di marketing per tutti i canali.
-   * Promozioni
-   * Voucher.
-   * Campagne.
+  * Contenuti di marketing per tutti i canali.
+  * Promozioni
+  * Voucher.
+  * Campagne.
 
 * Acquirente che:
 
-   * Visualizza le informazioni sul prodotto.
-   * Inserisce gli articoli nel carrello.
-   * Esegue il check-out degli ordini.
-   * Prevista evasione ordine.
+  * Visualizza le informazioni sul prodotto.
+  * Inserisce gli articoli nel carrello.
+  * Esegue il check-out degli ordini.
+  * Prevista evasione ordine.
 
 Anche se la posizione effettiva può dipendere dall’implementazione; ad esempio, generica o con un motore di eCommerce:
 
@@ -265,15 +263,15 @@ I singoli attributi di ciascun prodotto possono dipendere dal motore di eCommerc
 
   Informazioni ERP (Enterprise Resource Planning).
 
-   * **SKU**
+  * **SKU**
 
-     Informazioni sulle SKU (Stock Keeping Unit).
+    Informazioni sulle SKU (Stock Keeping Unit).
 
-   * **Colore**
-   * **Dimensione**
-   * **Prezzo**
+  * **Colore**
+  * **Dimensione**
+  * **Prezzo**
 
-     Il prezzo unitario del prodotto.
+    Il prezzo unitario del prodotto.
 
 * **Riepilogo**
 
@@ -394,19 +392,19 @@ Tieni presente che questo test delle prestazioni richiede la conoscenza e l’an
 
 * Volumi di contenuto
 
-   * Risorse
-   * Prodotti e SKU localizzati I18ned
+  * Risorse
+  * Prodotti e SKU localizzati I18ned
 
 * Attività utente:
 
-   * Modifica in serie
-   * Pubblicazione in blocco
-   * Richieste di ricerca intense
+  * Modifica in serie
+  * Pubblicazione in blocco
+  * Richieste di ricerca intense
 
 * Processi in background
 
-   * Importazioni
-   * Aggiornamenti della sincronizzazione (ad esempio, determinazione prezzi)
+  * Importazioni
+  * Aggiornamenti della sincronizzazione (ad esempio, determinazione prezzi)
 
 * Requisiti di manutenzione (backup, ottimizzazione Tar PM, raccolta rifiuti del datastore e così via)
 
@@ -505,9 +503,9 @@ I voucher sono un metodo collaudato per offrire sconti al fine di attirare gli a
 
 * Fornitura voucher:
 
-   * Un codice voucher (che deve essere digitato nel carrello dall’acquirente).
-   * Etichetta del voucher (da mostrare dopo che l&#39;acquirente l&#39;ha inserito nel carrello).
-   * Un percorso di promozione (che definisce l’azione applicata dal voucher).
+  * Un codice voucher (che deve essere digitato nel carrello dall’acquirente).
+  * Etichetta del voucher (da mostrare dopo che l&#39;acquirente l&#39;ha inserito nel carrello).
+  * Un percorso di promozione (che definisce l’azione applicata dal voucher).
 
 * Anche i motori di commercio esterno possono fornire voucher.
 
@@ -516,9 +514,9 @@ In AEM:
 * Un voucher è un componente basato su pagina che viene creato/modificato con la console Siti Web.
 * Il componente **Voucher** fornisce:
 
-   * Un renderer per l&#39;amministrazione dei voucher; questo mostra tutti i voucher attualmente nel carrello.
-   * Le finestre di dialogo per modifica (modulo) per l’amministrazione (aggiunta/rimozione) dei voucher.
-   * Azioni necessarie per aggiungere o rimuovere i voucher dal carrello.
+  * Un renderer per l&#39;amministrazione dei voucher; questo mostra tutti i voucher attualmente nel carrello.
+  * Le finestre di dialogo per modifica (modulo) per l’amministrazione (aggiunta/rimozione) dei voucher.
+  * Azioni necessarie per aggiungere o rimuovere i voucher dal carrello.
 
 * I voucher non hanno date/ore di attivazione e disattivazione, ma utilizzano quelle delle campagne principali.
 
@@ -541,16 +539,16 @@ Le promozioni non vengono gestite dai responsabili dell&#39;informazione sui pro
 * Una promozione è un componente basato su pagina che viene creato/modificato con la console Siti web. &quot;
 * Offerta promozioni:
 
-   * Una priorità
-   * Un percorso del gestore delle promozioni
+  * Una priorità
+  * Un percorso del gestore delle promozioni
 
 * È possibile collegare le promozioni a una campagna per definirne data/ora di attivazione/disattivazione.
 * Puoi collegare le promozioni a un’esperienza per definirne i segmenti.
 * Le promozioni non collegate a un’esperienza non si attivano da sole, ma possono comunque essere attivate da un voucher.
 * Il componente Promozione contiene:
 
-   * renderer e finestre di dialogo per l&#39;amministrazione della promozione
-   * sottocomponenti per il rendering e la modifica dei parametri di configurazione specifici dei gestori di promozioni
+  * renderer e finestre di dialogo per l&#39;amministrazione della promozione
+  * sottocomponenti per il rendering e la modifica dei parametri di configurazione specifici dei gestori di promozioni
 
 In AEM le promozioni sono integrate anche nella [Gestione campagne](/help/sites-authoring/personalization.md):
 
@@ -707,8 +705,8 @@ Il carrello fornisce:
 * collegamenti alle pagine dei prodotti per gli elementi selezionati
 * la capacità di:
 
-   * aggiorna il numero/quantità dei singoli articoli
-   * rimuovere singoli elementi
+  * aggiorna il numero/quantità dei singoli articoli
+  * rimuovere singoli elementi
 
 ![ecommerce_shoppingcart](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 

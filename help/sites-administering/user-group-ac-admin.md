@@ -9,13 +9,11 @@ exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 0%
-
 ---
-
 # Amministrazione di utenti, gruppi e diritti di accesso{#user-group-and-access-rights-administration}
 
 L’abilitazione dell’accesso a un archivio CRX prevede diversi argomenti:
@@ -60,7 +58,7 @@ CRX consente di configurare i diritti di accesso sia per gli account utente che 
 
 >[!NOTE]
 >
->CRX implementa il controllo degli accessi [come definito da JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementa il controllo degli accessi [come definito da JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Un’installazione standard di un archivio CRX è configurata per utilizzare elenchi di controllo di accesso basati sulle risorse. Questa è una possibile implementazione del controllo degli accessi JSR-283 e una delle implementazioni presenti con Jackrabbit.
 
@@ -70,22 +68,22 @@ CRX utilizza due concetti chiave per valutare i diritti di accesso:
 
 * Un&#39;entità **principal** è un&#39;entità che dispone di diritti di accesso. Gli utenti/gruppi/ruoli includono:
 
-   * Un account utente
-   * Un account di gruppo
+  * Un account utente
+  * Un account di gruppo
 
-     Se un account utente appartiene a uno o più gruppi, viene associato anche a ciascuno di tali gruppi principali.
+    Se un account utente appartiene a uno o più gruppi, viene associato anche a ciascuno di tali gruppi principali.
 
 * **oggetto** utilizzato per rappresentare l&#39;origine di una richiesta.
 
   Viene utilizzato per consolidare i diritti di accesso applicabili a tale richiesta. Questi sono presi da:
 
-   * Entità utente principale
+  * Entità utente principale
 
-     I diritti assegnati direttamente all’account utente.
+    I diritti assegnati direttamente all’account utente.
 
-   * Tutte le entità di gruppo associate all&#39;utente
+  * Tutte le entità di gruppo associate all&#39;utente
 
-     Tutti i diritti vengono assegnati a uno qualsiasi dei gruppi a cui appartiene l&#39;utente.
+    Tutti i diritti vengono assegnati a uno qualsiasi dei gruppi a cui appartiene l&#39;utente.
 
   Il risultato viene quindi utilizzato per consentire o negare l’accesso alla risorsa richiesta.
 
@@ -124,8 +122,8 @@ I diritti di accesso in CRX vengono valutati come segue:
 
 * Le entità utente hanno sempre la precedenza sulle entità gruppo indipendentemente da:
 
-   * l’ordine nell’elenco di controllo di accesso
-   * la loro posizione nella gerarchia dei nodi
+  * l’ordine nell’elenco di controllo di accesso
+  * la loro posizione nella gerarchia dei nodi
 
 * Per una determinata entità principale, esiste (al massimo) una negazione e 1 consenti l’ingresso in un determinato nodo. L’implementazione cancella sempre le voci ridondanti e si assicura che lo stesso privilegio non sia elencato sia nelle voci consentite che in quelle negate.
 
@@ -163,7 +161,7 @@ Nel caso di cui sopra:
 In questo caso:
 
 * A `aUser` non è concessa l&#39;autorizzazione di scrittura per `grandChildNode`.
-* La seconda voce ACE per `aUser` è ridondante.
+* Il secondo ACE per `aUser` è ridondante.
 
 I diritti di accesso di più entità di gruppo vengono valutati in base al loro ordine, sia all&#39;interno della gerarchia che all&#39;interno di un singolo elenco di controllo di accesso.
 
@@ -491,7 +489,7 @@ I criteri possono essere selezionati per:
 
 ### Privilegi {#privileges}
 
-Durante l&#39;aggiunta di una voce di controllo di accesso è possibile selezionare i privilegi seguenti (per informazioni dettagliate, vedere l&#39;[API di protezione](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)):
+Durante l&#39;aggiunta di una voce di controllo di accesso è possibile selezionare i privilegi seguenti (per informazioni dettagliate, vedere l&#39;[API di protezione](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)):
 
 <table>
  <tbody>

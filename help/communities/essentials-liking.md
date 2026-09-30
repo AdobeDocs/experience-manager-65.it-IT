@@ -10,13 +10,11 @@ exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 1%
-
+source-wordcount: '327'
+ht-degree: 0%
 ---
-
 # Nozioni di base su Mi piace {#liking-essentials}
 
 Il componente Mi piace, una sottoclasse [tally](tally.md), è uno strumento utile che consente ai membri di esprimere un&#39;opinione positiva su un particolare contenuto semplicemente selezionando l&#39;icona del cuore.
@@ -60,9 +58,9 @@ La pubblicazione anonima di un elemento simile non è supportata. I visitatori d
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API Tally](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Endpoint conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Punti finali conteggio](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 

@@ -9,13 +9,11 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1471'
 ht-degree: 2%
-
 ---
-
 # Personalizzazione dell’authoring pagina{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,8 +26,8 @@ Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la fu
 
   Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare la tua libreria client in `/apps.`. La nuova libreria client deve:
 
-   * dipende dalla libreria client di authoring `cq.authoring.editor.sites.page`
-   * fai parte della categoria `cq.authoring.editor.sites.page.hook` appropriata
+  * dipende dalla libreria client di authoring `cq.authoring.editor.sites.page`
+  * fai parte della categoria `cq.authoring.editor.sites.page.hook` appropriata
 
 * Sovrapposizioni
 
@@ -37,7 +35,7 @@ Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la fu
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [Set di documentazione JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+>Per ulteriori informazioni, consulta [Set di documentazione JS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Questi possono essere utilizzati in molti modi per estendere la funzionalità di authoring delle pagine nell’istanza AEM. Di seguito è riportata una selezione (ad alto livello).
 
@@ -47,7 +45,7 @@ Questi possono essere utilizzati in molti modi per estendere la funzionalità di
 >
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Struttura dell&#39;interfaccia utente touch di AEM](/help/sites-developing/touch-ui-structure.md) per i dettagli delle aree strutturali utilizzate per l&#39;authoring delle pagine.
 >
 
@@ -107,9 +105,9 @@ Puoi trovare il codice di questa pagina su GitHub
 
 Durante l’authoring delle pagine, l’utente deve spesso selezionare tra le risorse (ad esempio pagine, componenti e risorse). Può assumere la forma di un elenco, ad esempio, dal quale l’autore deve scegliere un elemento.
 
-Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Ad esempio, se il componente [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) viene utilizzato per consentire all&#39;utente di selezionare il percorso di una particolare risorsa, i percorsi presentati possono essere filtrati nel modo seguente:
+Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Ad esempio, se il componente [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) viene utilizzato per consentire all&#39;utente di selezionare il percorso di una particolare risorsa, i percorsi presentati possono essere filtrati nel modo seguente:
 
-* Implementare il predicato personalizzato implementando l&#39;interfaccia [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Implementare il predicato personalizzato implementando l&#39;interfaccia [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Specificare un nome per il predicato e fare riferimento a tale nome quando si utilizza `pathbrowser`.
 
 Per ulteriori dettagli sulla creazione di un predicato personalizzato, vedere [Implementazione di un valutatore del predicato personalizzato per Query Builder](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -151,12 +149,12 @@ In un’installazione standard di AEM:
 
      ad esempio:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * proprietà: `editorType`
+       * proprietà: `editorType`
 
-           Definisce il tipo di editor in linea utilizzato quando viene attivata la modifica diretta per quel componente, ad esempio `text`, `textimage`, `image`, `title`.
+         Definisce il tipo di editor in linea utilizzato quando viene attivata la modifica diretta per quel componente, ad esempio `text`, `textimage`, `image`, `title`.
 
 1. Ulteriori dettagli di configurazione dell&#39;editor possono essere configurati utilizzando un nodo `config` contenente configurazioni e un nodo `plugin` per contenere i dettagli di configurazione del plug-in necessari.
 

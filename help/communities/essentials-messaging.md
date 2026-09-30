@@ -10,13 +10,11 @@ exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '422'
 ht-degree: 1%
-
 ---
-
 # Nozioni di base sulla messaggistica {#messaging-essentials}
 
 Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica per includere una funzione di messaggistica su un sito web.
@@ -92,9 +90,9 @@ Vedi anche [Personalizzazioni lato client](/help/communities/client-customize.md
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
 * [Configurazione della messaggistica](/help/communities/configure-messaging.md)
-* [API client di messaggistica](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) per i componenti SCF
-* [API di messaggistica](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) per il servizio
-* [Endpoint di messaggistica](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [API client di messaggistica](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) per i componenti SCF
+* [API di messaggistica](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) per il servizio
+* [Endpoint di messaggistica](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizzazioni lato server](/help/communities/server-customize.md)
 
 >[!CAUTION]

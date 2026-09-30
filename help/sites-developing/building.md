@@ -1,26 +1,28 @@
 ---
 title: Creazione di tag in un’applicazione AEM
+
 description: Utilizzare i tag a livello di programmazione o estenderli all’interno di un’applicazione AEM personalizzata
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 feature: Developing,Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 0%
-
+source-wordcount: '936'
+ht-degree: 1%
 ---
-
 # Creazione di tag in un’applicazione AEM{#building-tagging-into-an-aem-application}
 
 Per lavorare in modo programmatico con i tag o estenderli all’interno di un’applicazione AEM personalizzata, questa pagina descrive l’utilizzo di
 
-* [API di assegnazione tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
+* [API di assegnazione tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
 che interagisce con il
 
@@ -33,7 +35,7 @@ Per informazioni correlate sull’assegnazione tag, consulta:
 
 ## Panoramica dell’API di assegnazione tag {#overview-of-the-tagging-api}
 
-L&#39;implementazione del [framework dei tag](/help/sites-developing/framework.md) nell&#39;AEM consente la gestione di tag e contenuti di tag tramite l&#39;API JCR. TagManager garantisce che i tag immessi come valori nella proprietà dell&#39;array di stringhe `cq:tags` non siano duplicati, rimuove i TagID che puntano a tag non esistenti e aggiorna i TagID per i tag spostati o uniti. TagManager utilizza un listener di osservazione JCR che ripristina eventuali modifiche non corrette. Le classi principali si trovano nel pacchetto [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
+L&#39;implementazione del [framework dei tag](/help/sites-developing/framework.md) in AEM consente la gestione di tag e contenuti di tag tramite l&#39;API JCR. TagManager garantisce che i tag immessi come valori nella proprietà dell&#39;array di stringhe `cq:tags` non siano duplicati, rimuove i TagID che puntano a tag non esistenti e aggiorna i TagID per i tag spostati o uniti. TagManager utilizza un listener di osservazione JCR che ripristina eventuali modifiche non corrette. Le classi principali si trovano nel pacchetto [com.day.cq.tagging](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
 
 * JcrTagManagerFactory: restituisce un&#39;implementazione basata su JCR di `TagManager`. È l’implementazione di riferimento dell’API di assegnazione tag.
 * `TagManager` - consente di risolvere e creare tag in base a percorsi e nomi.
@@ -156,29 +158,29 @@ Quando il tag **Animals** viene aggiunto alla pagina **Products**, il valore `st
 
 L&#39;API lato server ha localizzato `title` metodi correlati:
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
-   * getLocalizedTitle(Locale locale)
-   * getLocalizedTitlePaths()
-   * getLocalizedTitles()
-   * getTitle(Lingua locale)
-   * getTitlePath(impostazioni locali)
+  * getLocalizedTitle(Locale locale)
+  * getLocalizedTitlePaths()
+  * getLocalizedTitles()
+  * getTitle(Lingua locale)
+  * getTitlePath(impostazioni locali)
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
-   * canCreateTagByTitle(String tagTitlePath, impostazioni locali)
-   * createTagByTitle(String tagTitlePath, impostazioni locali)
-   * resolveByTitle(String tagTitlePath, impostazioni locali)
+  * canCreateTagByTitle(String tagTitlePath, impostazioni locali)
+  * createTagByTitle(String tagTitlePath, impostazioni locali)
+  * resolveByTitle(String tagTitlePath, impostazioni locali)
 
-In AEM, la lingua può essere ottenuta o dalla lingua della pagina o dalla lingua dell’utente:
+In AEM, la lingua può essere ottenuta dalla lingua della pagina o dalla lingua dell’utente:
 
 * per recuperare la lingua della pagina in una JSP:
 
-   * `currentPage.getLanguage(false)`
+  * `currentPage.getLanguage(false)`
 
 * per recuperare la lingua utente in una JSP:
 
-   * `slingRequest.getLocale()`
+  * `slingRequest.getLocale()`
 
 `currentPage` e `slingRequest` sono disponibili in una JSP tramite il tag [&lt;cq:definedObjects>](/help/sites-developing/taglib.md).
 
@@ -196,7 +198,7 @@ La nuova lingua (finlandese) è ora disponibile nella finestra di dialogo dei ta
 
 >[!NOTE]
 >
->La nuova lingua deve essere una delle lingue riconosciute dall&#39;AEM. Deve quindi essere disponibile come nodo sotto `/libs/wcm/core/resources/languages`.
+>La nuova lingua deve essere una delle lingue riconosciute da AEM. Deve quindi essere disponibile come nodo sotto `/libs/wcm/core/resources/languages`.
 
 >[!CAUTION]
 >

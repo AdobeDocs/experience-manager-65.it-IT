@@ -1,22 +1,25 @@
 ---
 title: Che cos’è la protezione dei documenti?
+
 description: Scopri come creare, archiviare e applicare impostazioni di riservatezza predefinite e distribuire le informazioni in modo sicuro utilizzando la protezione dei documenti.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3301'
-ht-degree: 100%
-
+source-wordcount: '3302'
+ht-degree: 99%
 ---
-
 # Informazioni sulla protezione dei documenti {#about-document-security}
 
 La protezione dei documenti garantisce che solo gli utenti autorizzati possano utilizzare i documenti. Grazie alla protezione dei documenti è possibile distribuire in modo sicuro le informazioni salvate in un formato supportato. I formati di file supportati includono:
@@ -75,15 +78,15 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
 
   Gli utenti con questo ruolo possono accedere a tutte le impostazioni di protezione dei documenti nella console di amministrazione. Queste autorizzazioni sono associate al ruolo:
 
-   * Gestione della configurazione
-   * Gestione dei criteri
-   * Gestione dei set di criteri
-   * Gestione dei documenti
-   * Gestione degli editori di documenti
-   * Gestione degli utenti invitati e locali
-   * Visualizzazione degli eventi
-   * Delega
-   * Invito per utenti esterni
+  * Gestione della configurazione
+  * Gestione dei criteri
+  * Gestione dei set di criteri
+  * Gestione dei documenti
+  * Gestione degli editori di documenti
+  * Gestione degli utenti invitati e locali
+  * Visualizzazione degli eventi
+  * Delega
+  * Invito per utenti esterni
 
   **Amministratore della protezione dei documenti**
 
@@ -97,12 +100,12 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
 
   Gli utenti con questo ruolo possono utilizzare la sezione della protezione dei documenti della console di amministrazione per modificare i criteri di altri utenti, nonché creare, modificare ed eliminare set di criteri. Quando un amministratore dei set di criteri ne crea uno, può assegnargli un coordinatore. Queste autorizzazioni sono associate al ruolo:
 
-   * Gestione dei criteri
-   * Gestione dei set di criteri
-   * Gestione dei documenti
-   * Gestione degli editori di documenti
-   * Visualizzazione degli eventi
-   * Delega
+  * Gestione dei criteri
+  * Gestione dei set di criteri
+  * Gestione dei documenti
+  * Gestione degli editori di documenti
+  * Visualizzazione degli eventi
+  * Delega
 
   >[!NOTE]
   >
@@ -112,9 +115,9 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
 
   Gli utenti con questo ruolo possono eseguire le attività necessarie per gestire tutti gli utenti invitati e locali sulle pagine web della protezione dei documenti pertinenti. Queste autorizzazioni sono associate al ruolo:
 
-   * Gestione degli utenti invitati e locali
-   * Invito per utenti esterni
-   * Accesso alle pagine web degli utenti finali
+  * Gestione degli utenti invitati e locali
+  * Invito per utenti esterni
+  * Accesso alle pagine web degli utenti finali
 
   >[!NOTE]
   >
@@ -124,8 +127,8 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
 
   Gli utenti con questo ruolo possono invitare gli utenti. Queste autorizzazioni sono associate al ruolo:
 
-   * Invito per utenti esterni
-   * Accesso alle pagine web degli utenti finali
+  * Invito per utenti esterni
+  * Accesso alle pagine web degli utenti finali
 
   **Protezione dei documenti e utenti finali**
 
@@ -251,28 +254,28 @@ Aggiungi gruppi di utenti ai criteri anziché singoli utenti. Semplifica la gest
 
   L’utilizzo dei set di criteri semplifica l’assegnazione e la gestione dei criteri correlati a utenti specifici di un’organizzazione o di un reparto. Ad esempio, set di criteri separati per il reparto finanze e risorse umane possono facilitare la gestione e l’applicazione dei criteri correlati ai documenti designati per i reparti corrispondenti.
 
-* **Utilizzo di un handler per l’autorizzazione esterna per l’applicazione dinamica delle autorizzazioni:** puoi utilizzare l’[handler per l’autorizzazione esterna](https://help.adobe.com/it_IT/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) per valutare e applicare in modo dinamico le autorizzazioni in base alla condizione esterna. Quando le autorizzazioni vengono valutate in modo dinamico, in base alla condizione esterna, puoi:
+* **Utilizzo di un handler per l’autorizzazione esterna per l’applicazione dinamica delle autorizzazioni:** puoi utilizzare l’[handler per l’autorizzazione esterna](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) per valutare e applicare in modo dinamico le autorizzazioni in base alla condizione esterna. Quando le autorizzazioni vengono valutate in modo dinamico, in base alla condizione esterna, puoi:
 
-   * Assicurare un controllo degli accessi centralizzato ai documenti dell’organizzazione.
+  * Assicurare un controllo degli accessi centralizzato ai documenti dell’organizzazione.
 
-   * Controlla l’accesso ai documenti protetti tramite criteri determinando in modo dinamico se un utente può accedere a un documento protetto tramite criteri. Ad esempio, puoi decidere in modo dinamico se un utente può stampare un documento protetto tramite criteri.
+  * Controlla l’accesso ai documenti protetti tramite criteri determinando in modo dinamico se un utente può accedere a un documento protetto tramite criteri. Ad esempio, puoi decidere in modo dinamico se un utente può stampare un documento protetto tramite criteri.
 
-   * Sfrutta un meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti, oltre al processo standard di valutazione dei criteri. Ad esempio, quando il servizio determina se un utente può stampare un documento protetto tramite criteri, può utilizzare il processo standard di valutazione dei criteri. Può inoltre sfruttare il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti.
+  * Sfrutta un meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti, oltre al processo standard di valutazione dei criteri. Ad esempio, quando il servizio determina se un utente può stampare un documento protetto tramite criteri, può utilizzare il processo standard di valutazione dei criteri. Può inoltre sfruttare il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti.
 
-  Sebbene sia possibile sostituire completamente il processo di valutazione dei criteri della protezione dei documenti con un handler per l’autorizzazione esterna, si consiglia di utilizzare quest’ultimo con il processo di valutazione dei criteri. Di conseguenza, l’accesso ai documenti può essere controllato mediante lo stesso meccanismo di controllo utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio di protezione dei documenti determina se un utente può stampare un documento protetto tramite criteri, utilizza il processo standard di valutazione dei criteri. Utilizza anche il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Per ulteriori informazioni, consulta [Creazione di handler per l’autorizzazione esterna](https://help.adobe.com/it_IT/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Sebbene sia possibile sostituire completamente il processo di valutazione dei criteri della protezione dei documenti con un handler per l’autorizzazione esterna, si consiglia di utilizzare quest’ultimo con il processo di valutazione dei criteri. Di conseguenza, l’accesso ai documenti può essere controllato mediante lo stesso meccanismo di controllo utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio di protezione dei documenti determina se un utente può stampare un documento protetto tramite criteri, utilizza il processo standard di valutazione dei criteri. Utilizza anche il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Per ulteriori informazioni, consulta [Creazione di handler per l’autorizzazione esterna](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantenimento di un numero limitato di set di criteri:** diversi fattori determinano la crescita costante di criteri e dei relativi set. Di seguito sono riportati alcuni fattori comuni:
 
-   * Aumento di ruoli utente, reparti e documenti all’interno di un’organizzazione in un periodo.
-   * I dipartimenti di un’organizzazione lavorano in modo isolato e mantengono un rigido controllo sui criteri specifici del dipartimento. Questa condizione assicura criteri identici all’interno di un’organizzazione.
+  * Aumento di ruoli utente, reparti e documenti all’interno di un’organizzazione in un periodo.
+  * I dipartimenti di un’organizzazione lavorano in modo isolato e mantengono un rigido controllo sui criteri specifici del dipartimento. Questa condizione assicura criteri identici all’interno di un’organizzazione.
 
   Adobe consiglia di mantenere al minimo il numero di criteri e set di criteri. In questo modo, è più semplice gestire i criteri e set di criteri, nonché garantire prestazioni migliori. Per ridurre il numero al minimo:
 
-   * Crea criteri riutilizzabili. Questi criteri possono essere condivisi tra più reparti.
-   * Se alcuni criteri vengono applicati a più reparti, prendi in considerazione la creazione di set di criteri a livello di organizzazione, anziché di un singolo set di criteri per ogni reparto.
-   * Criteri correlati al gruppo in un set di criteri. Non creare un set di criteri separato per ogni criterio.
-   * Utilizza un handler per l’autorizzazione esterna per controllare in modo dinamico le autorizzazioni utente.
+  * Crea criteri riutilizzabili. Questi criteri possono essere condivisi tra più reparti.
+  * Se alcuni criteri vengono applicati a più reparti, prendi in considerazione la creazione di set di criteri a livello di organizzazione, anziché di un singolo set di criteri per ogni reparto.
+  * Criteri correlati al gruppo in un set di criteri. Non creare un set di criteri separato per ogni criterio.
+  * Utilizza un handler per l’autorizzazione esterna per controllare in modo dinamico le autorizzazioni utente.
 
   >[!NOTE]
   >
-  >Puoi utilizzare l’API [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il chiamante di API dispone dell’autorizzazione di editore del documento, quindi crea e ti restituisce un elenco di nomi univoci di set di criteri associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e questi sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.
+  >Puoi utilizzare l’API [getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il chiamante di API dispone dell’autorizzazione di editore del documento, quindi crea e ti restituisce un elenco di nomi univoci di set di criteri associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e questi sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.

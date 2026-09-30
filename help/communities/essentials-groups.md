@@ -9,9 +9,9 @@ exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 1%
 ---
 # Nozioni di base sul gruppo community  {#community-group-essentials}
@@ -76,9 +76,9 @@ A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepac
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API gruppo community](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [API gruppo community](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Endpoint gruppo community](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Endpoint gruppo community](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 

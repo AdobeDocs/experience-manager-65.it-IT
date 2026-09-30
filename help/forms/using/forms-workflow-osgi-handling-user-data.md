@@ -10,9 +10,9 @@ role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1033'
 ht-degree: 1%
 ---
 # Flussi di lavoro incentrati su Forms su OSGi | Gestione dei dati utente {#forms-centric-workflows-on-osgi-handling-user-data}
@@ -158,5 +158,5 @@ Per eliminare i dati utente dalle istanze del flusso di lavoro, è necessario es
 Puoi inoltre utilizzare le API per accedere e rimuovere nodi e proprietà. Per ulteriori informazioni, consulta i seguenti documenti.
 
 * [Come accedere a livello di programmazione a AEM JCR](/help/sites-developing/access-jcr.md)
-* [Rimozione di nodi e proprietà](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Riferimento API](https://helpx.adobe.com/it/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Rimozione di nodi e proprietà](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Riferimento API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

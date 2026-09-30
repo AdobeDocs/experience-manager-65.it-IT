@@ -9,13 +9,11 @@ exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '244'
 ht-degree: 2%
-
 ---
-
 # Elementi di base di Calendar {#calendar-essentials}
 
 Questa pagina fornisce informazioni essenziali sull&#39;utilizzo della funzione calendario.
@@ -56,9 +54,9 @@ Questa pagina fornisce informazioni essenziali sull&#39;utilizzo della funzione 
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API calendario](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [API calendario](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [Endpoint calendario](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [Endpoint calendario](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
