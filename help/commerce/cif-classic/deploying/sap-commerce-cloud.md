@@ -10,12 +10,10 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 1%
-
+source-wordcount: '742'
+ht-degree: 2%
 ---
-
-# COMMERCE CLOUD SAP{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -56,24 +54,24 @@ L&#39;estensione hybris di eCommerce Integration Framework è stata aggiornata p
 Per installare la funzionalità eCommerce, è necessario:
 
 * Il server ibrido
-* Quadro per l’eCommerce dell’AEM:
+* Framework di eCommerce AEM:
 
-   * fa parte di un impianto AEM standard
+  * fa parte di un’installazione standard di AEM
 
-* Pacchetto Geometrixx AEM:
+* Pacchetto Geometrixx-all per AEM:
 
-   * `cq-geometrixx-all-pkg`
+  * `cq-geometrixx-all-pkg`
 
-* Pacchetti di contenuti AEM-hybris:
+* Pacchetti di contenuti AEM hybris:
 
-   * `cq-hybris-content-6.3.2`
-   * implementazione API specifica per hybris
-   * `cq-geometrixx-hybris-content-6.3.2`
-   * implementazione di riferimento per illustrare l&#39;utilizzo di hybris ( `geometrixx-outdoors/en_US`)
+  * `cq-hybris-content-6.3.2`
+  * implementazione API specifica per hybris
+  * `cq-geometrixx-hybris-content-6.3.2`
+  * implementazione di riferimento per illustrare l&#39;utilizzo di hybris ( `geometrixx-outdoors/en_US`)
 
 ### Installazione di eCommerce con hybris {#installation-of-ecommerce-with-hybris}
 
-Per installare una configurazione completa (utilizzando il catalogo dimostrativo, i Geometrixx Outdoors), i passaggi di base sono i seguenti:
+Per installare una configurazione completa (utilizzando il catalogo dimostrativo di Geometrixx Outdoors), segui i passaggi di base:
 
 1. [Installa AEM](/help/sites-deploying/deploy.md).
 1. Installare il pacchetto Geometrixx-all
@@ -88,9 +86,9 @@ Per installare una configurazione completa (utilizzando il catalogo dimostrativo
 1. [Scarica e crea il tuo server ibrido](#download-and-build-your-hybris-server).
 1. Crea il catalogo nel motore di eCommerce:
 
-   1. [Configura l&#39;archivio Geometrixx Outdoor](#setup-the-geometrixx-outdoors-store).
+   1. [Configura Geometrixx Outdoor Store](#setup-the-geometrixx-outdoors-store).
 
-1. [Autore](/help/sites-authoring/qg-page-authoring.md) delle pagine supplementari necessarie per l&#39;AEM.
+1. [Crea](/help/sites-authoring/qg-page-authoring.md) le pagine supplementari necessarie in AEM.
 
 >[!CAUTION]
 >
@@ -143,7 +141,7 @@ I passaggi descritti in questa procedura consentono di scaricare e generare il s
    ```
 
 
-[Ottieni file](/help/sites-deploying/assets/setup.groovy)
+   [Ottieni il file](/help/sites-deploying/assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -151,7 +149,7 @@ I passaggi descritti in questa procedura consentono di scaricare e generare il s
 
    5.6.0 e versioni successive
 
-[Ottieni file](/help/sites-deploying/assets/setup-1.groovy)
+   [Ottieni il file](/help/sites-deploying/assets/setup-1.groovy)
 
 1. Dalla riga di comando, eseguire le operazioni seguenti:
 
@@ -182,7 +180,7 @@ I passaggi descritti in questa procedura consentono di scaricare e generare il s
    >
    >A seconda del sistema, il completamento dell&#39;operazione potrebbe richiedere alcuni minuti.
 
-### Configurare l’archivio Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
+### Configurare Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
 
 Questa procedura consente di caricare e configurare il negozio di dimostrazione - Geometrixx Online.
 
@@ -204,7 +202,7 @@ Questa procedura consente di caricare e configurare il negozio di dimostrazione 
 1. Dalla navigazione della barra laterale, espandi **Sistema** e **Strumenti**. Quindi seleziona **Importa** per aprire la finestra **Procedura guidata: Importazione CSV**.
 1. Nella scheda **Configurazione**, **Carica** il seguente **File di importazione**:
 
-[Ottieni file](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
+   [Ottieni il file](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
 1. Impostare **Impostazioni internazionali** su:
 
@@ -213,7 +211,7 @@ Questa procedura consente di caricare e configurare il negozio di dimostrazione 
 1. Apri la scheda **Risorse**.
 1. **Carica** i seguenti **File-ZIP**:
 
-[Ottieni file](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
+   [Ottieni il file](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
 1. Fare clic su **Inizio** per importare i file specificati. La scheda **Risultato** mostra tutte le voci di registro.
 
@@ -223,11 +221,11 @@ Questa procedura consente di caricare e configurare il negozio di dimostrazione 
 
 1. **Carica** il seguente **file di importazione**:
 
-[Ottieni file](/help/sites-deploying/assets/base-store.csv)
+   [Ottieni il file](/help/sites-deploying/assets/base-store.csv)
 
    Per hybris 5.7, utilizzare quanto segue:
 
-[Ottieni file](/help/sites-deploying/assets/base-store-5_7.csv)
+   [Ottieni il file](/help/sites-deploying/assets/base-store-5_7.csv)
 
 1. Impostare **Impostazioni internazionali** su:
 

@@ -6,13 +6,11 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1920'
 ht-degree: 0%
-
 ---
-
 # Analisi con [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
 AEM Forms si integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=it) per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati. L’obiettivo dell’analisi di queste metriche è consentire agli utenti aziendali di ottenere informazioni sul comportamento degli utenti finali e ottimizzare l’esperienza di acquisizione dei dati. Puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms.
@@ -239,8 +237,8 @@ Per utilizzare la configurazione [!DNL Adobe Launch] in un modulo adattivo esist
 Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo, puoi [convalidare](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=it#validate-the-page-view-beacon) se esiste un flusso di eventi dati appropriato tra AEM Forms e [!DNL Adobe Analytics]. L’integrazione di AEM Forms con Adobe Analytics è completa. Ora puoi [configurare e visualizzare i rapporti in Adobe Analytics](#view-reports-adobe-analytics).
 
 >[!NOTE]
+>
 >Nel caso in cui le funzionalità [Analytics con Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) e **Analytics con Adobe Launch** siano abilitate contemporaneamente, **Analytics con Adobe Launch** avrà la precedenza.
-> 
 
 ### Creare regole per acquisire eventi personalizzati (facoltativo) {#capture-custom-events}
 

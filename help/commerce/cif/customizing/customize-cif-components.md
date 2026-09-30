@@ -5,13 +5,11 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 14%
-
 ---
-
 # Personalizzare i componenti core di Adobe Experience Manager CIF {#customize-cif-components}
 
 Il [progetto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) è una base di codice di riferimento per l&#39;utilizzo di [componenti core CIF](https://github.com/adobe/aem-core-cif-components). In questa esercitazione, estendi ulteriormente il componente [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) per visualizzare un attributo personalizzato da Adobe Commerce. Scopri anche l’integrazione di GraphQL tra Adobe Experience Manager (AEM) e Adobe Commerce e gli hook di estensione forniti dai componenti core di CIF.
@@ -494,5 +492,5 @@ Esamina la funzionalità del badge **Nuovo** che è già stato implementato nel 
 - [Componenti core di AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalizzazione dei componenti core di AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalizzazione dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=it)
-- [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
+- [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 - [Utilizzo del selettore prodotti e categorie di CIF](use-cif-pickers.md)

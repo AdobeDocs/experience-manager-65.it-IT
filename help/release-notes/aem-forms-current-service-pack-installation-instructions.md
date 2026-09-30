@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2149'
 ht-degree: 10%
-
 ---
-
 # Istruzioni di installazione di AEM 6.5 Forms Service Pack {#aem-form-patch-installation-instructions}
 
 ## Informazioni sulla versione
@@ -95,15 +93,15 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. Estrai l&#39;archivio del programma di installazione di **AEM Forms su JEE Service Pack** sul disco rigido:
 
    * **Windows**
-Passare alla directory appropriata sul supporto di installazione o sulla cartella del disco rigido in cui è stato copiato il programma di installazione, quindi fare doppio clic sul file `aemforms65_cfp_install.exe`.
+     Passare alla directory appropriata sul supporto di installazione o sulla cartella del disco rigido in cui è stato copiato il programma di installazione, quindi fare doppio clic sul file `aemforms65_cfp_install.exe`.
 
-      * (Windows a 32 bit) `Windows\Disk1\InstData\VM`
-      * (Windows a 64 bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows a 32 bit) `Windows\Disk1\InstData\VM`
+     * (Windows a 64 bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Passare alla directory appropriata e da una shell e digitare `./aem65_cfp_install.bin`.
+     Passare alla directory appropriata e da una shell e digitare `./aem65_cfp_install.bin`.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Viene avviata una procedura di installazione guidata.
 
@@ -189,9 +187,9 @@ Il pacchetto viene installato automaticamente.
 
   Per informazioni sulle piattaforme certificate per l&#39;utilizzo di questa versione, vedere i [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
-   1. Nella pagina delle informazioni sul prodotto (`/system/console/productinfo`) viene visualizzata la stringa di versione aggiornata `Adobe Experience Manager (spversion)` in [!UICONTROL Prodotti installati].<!-- UPDATE FOR EACH NEW RELEASE -->
-   1. Tutti i bundle OSGi sono **[!UICONTROL ACTIVE]** o **[!UICONTROL FRAGMENT]** nella console OSGi (usa la console Web: `/system/console/bundles`).
-   1. La versione del bundle OSGi `org.apache.jackrabbit.oak-core` è 1.22.14 o successiva (utilizzare WebConsole: `/system/console/bundles`).
+  1. Nella pagina delle informazioni sul prodotto (`/system/console/productinfo`) viene visualizzata la stringa di versione aggiornata `Adobe Experience Manager (spversion)` in [!UICONTROL Prodotti installati].<!-- UPDATE FOR EACH NEW RELEASE -->
+  1. Tutti i bundle OSGi sono **[!UICONTROL ACTIVE]** o **[!UICONTROL FRAGMENT]** nella console OSGi (usa la console Web: `/system/console/bundles`).
+  1. La versione del bundle OSGi `org.apache.jackrabbit.oak-core` è 1.22.14 o successiva (utilizzare WebConsole: `/system/console/bundles`).
 
 +++
 
@@ -262,11 +260,11 @@ Esistono due metodi diversi che è possibile utilizzare per installare automatic
 
   Per informazioni sulle piattaforme certificate per l&#39;utilizzo di questa versione, vedere i [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
-   1. Nella pagina delle informazioni sul prodotto (`/system/console/productinfo`) viene visualizzata la stringa di versione aggiornata `Adobe Experience Manager (spversion)` in [!UICONTROL Prodotti installati]. <!-- UPDATE FOR EACH NEW RELEASE -->
+  1. Nella pagina delle informazioni sul prodotto (`/system/console/productinfo`) viene visualizzata la stringa di versione aggiornata `Adobe Experience Manager (spversion)` in [!UICONTROL Prodotti installati]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   1. Tutti i bundle OSGi sono **[!UICONTROL ACTIVE]** o **[!UICONTROL FRAGMENT]** nella console OSGi (usa la console Web: `/system/console/bundles`).
+  1. Tutti i bundle OSGi sono **[!UICONTROL ACTIVE]** o **[!UICONTROL FRAGMENT]** nella console OSGi (usa la console Web: `/system/console/bundles`).
 
-      1. La versione del bundle OSGi `org.apache.jackrabbit.oak-core` è 1.22.14 o successiva (utilizzare la console Web: `/system/console/bundles`).
+     1. La versione del bundle OSGi `org.apache.jackrabbit.oak-core` è 1.22.14 o successiva (utilizzare la console Web: `/system/console/bundles`).
 
 +++
 

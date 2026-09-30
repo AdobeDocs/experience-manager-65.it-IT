@@ -12,13 +12,11 @@ role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '8511'
+source-wordcount: '8519'
 ht-degree: 1%
-
 ---
-
 # Configurare Dynamic Media - Modalità ibrida {#configuring-dynamic-media-hybrid-mode}
 
 ## Dynamic Media - Pacchetto del componente aggiuntivo ibrido (AEM 6.5.23 e versioni successive)
@@ -629,7 +627,7 @@ Assicurati che il pacchetto di predefiniti di Analytics video dal primo nodo Aut
 1. Eseguire una delle operazioni seguenti per verificare e, se necessario, eseguire il debug dell&#39;installazione del pacchetto:
 
    * **Controlla il predefinito di Video Analytics tramite JCR**
-Per verificare il predefinito per Video Analytics tramite JCR, devi avere accesso a CRXDE Lite.
+     Per verificare il predefinito per Video Analytics tramite JCR, devi avere accesso a CRXDE Lite.
 
      Experience Manager - In CRXDE Lite, passa a `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
@@ -640,7 +638,7 @@ Per verificare il predefinito per Video Analytics tramite JCR, devi avere access
    * **Controlla il predefinito di Video Analytics tramite il server immagini**
 
      Per convalidare direttamente il predefinito per analisi video, effettua una richiesta Image Server req=userdata.
-Ad esempio, per visualizzare il predefinito di Analytics sul nodo Author, puoi effettuare la seguente richiesta:
+     Ad esempio, per visualizzare il predefinito di Analytics sul nodo Author, puoi effettuare la seguente richiesta:
 
      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
@@ -654,7 +652,7 @@ Ad esempio, per visualizzare il predefinito di Analytics sul nodo Author, puoi e
      ```
 
    * **Controlla il predefinito per Video Analytics tramite lo strumento Video Reporting in Experience Manager**
-Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Reporting]**
+     Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Reporting]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -1001,248 +999,248 @@ Dopo aver installato il feature pack, configurare i profili colore predefiniti a
 
    **Tabella proprietà correzione colore**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Proprietà</strong></td>
-   <td><strong>Tipo</strong></td>
-   <td><strong>Predefiniti</strong></td>
-   <td><strong>Descrizione</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=it">iccprofilergb</a></td>
-   <td>Stringa</td>
-   <td>&lt;vuoto&gt;</td>
-   <td>Nome del profilo colore predefinito di RGB.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=it">iccprofilecmyk</a></td>
-   <td>Stringa</td>
-   <td>&lt;vuoto&gt;</td>
-   <td>Nome del profilo colore CMYK predefinito.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=it">iccprofilegray</a></td>
-   <td>Stringa</td>
-   <td>&lt;vuoto&gt;</td>
-   <td>Nome del profilo colore grigio predefinito.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=it">iccprofilesrcrgb</a></td>
-   <td>Stringa</td>
-   <td>&lt;vuoto&gt;</td>
-   <td>Nome del profilo colore predefinito di RGB utilizzato per le immagini RGB che non hanno un profilo colore incorporato</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=it">iccprofilesrccmyk</a></td>
-   <td>Stringa</td>
-   <td>&lt;vuoto&gt;</td>
-   <td>Nome del profilo colore CMYK predefinito utilizzato per le immagini CMYK che non hanno un profilo colore incorporato.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=it">iccprofilesrcgray</a></td>
-   <td>Stringa</td>
-   <td>&lt;vuoto&gt;</td>
-   <td>Nome del profilo colore grigio predefinito utilizzato per le immagini CMYK che non hanno un profilo colore incorporato.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=it">iccblackpointCOMPENSATION</a></td>
-   <td>Booleano</td>
-   <td>Vero</td>
-   <td>Specifica se la compensazione del punto nero viene eseguita durante la correzione del colore. Adobe consiglia di attivare questa impostazione.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=it">iccdither</a></td>
-   <td>Booleano</td>
-   <td>Falso</td>
-   <td>Specifica se il dithering viene eseguito durante la correzione del colore.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=it">iccrenderintent</a></td>
-   <td>Stringa</td>
-   <td>relativo</td>
-   <td><p>Specifica l'intento di rendering. I valori accettabili sono: <strong>percettivo, relativo, saturazione, assoluto. </strong><i></i>Per impostazione predefinita, Adobe consiglia <strong>relativo </strong><i></i>.</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Proprietà</strong></td>
+      <td><strong>Tipo</strong></td>
+      <td><strong>Predefiniti</strong></td>
+      <td><strong>Descrizione</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=it">iccprofilergb</a></td>
+      <td>Stringa</td>
+      <td>&lt;vuoto&gt;</td>
+      <td>Nome del profilo colore predefinito di RGB.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=it">iccprofilecmyk</a></td>
+      <td>Stringa</td>
+      <td>&lt;vuoto&gt;</td>
+      <td>Nome del profilo colore CMYK predefinito.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=it">iccprofilegray</a></td>
+      <td>Stringa</td>
+      <td>&lt;vuoto&gt;</td>
+      <td>Nome del profilo colore grigio predefinito.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=it">iccprofilesrcrgb</a></td>
+      <td>Stringa</td>
+      <td>&lt;vuoto&gt;</td>
+      <td>Nome del profilo colore predefinito di RGB utilizzato per le immagini RGB che non hanno un profilo colore incorporato</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=it">iccprofilesrccmyk</a></td>
+      <td>Stringa</td>
+      <td>&lt;vuoto&gt;</td>
+      <td>Nome del profilo colore CMYK predefinito utilizzato per le immagini CMYK che non hanno un profilo colore incorporato.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=it">iccprofilesrcgray</a></td>
+      <td>Stringa</td>
+      <td>&lt;vuoto&gt;</td>
+      <td>Nome del profilo colore grigio predefinito utilizzato per le immagini CMYK che non hanno un profilo colore incorporato.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=it">iccblackpointCOMPENSATION</a></td>
+      <td>Booleano</td>
+      <td>Vero</td>
+      <td>Specifica se la compensazione del punto nero viene eseguita durante la correzione del colore. Adobe consiglia di attivare questa impostazione.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=it">iccdither</a></td>
+      <td>Booleano</td>
+      <td>Falso</td>
+      <td>Specifica se il dithering viene eseguito durante la correzione del colore.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=it">iccrenderintent</a></td>
+      <td>Stringa</td>
+      <td>relativo</td>
+      <td><p>Specifica l'intento di rendering. I valori accettabili sono: <strong>percettivo, relativo, saturazione, assoluto. </strong><i></i>Per impostazione predefinita, Adobe consiglia <strong>relativo </strong><i></i>.</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->I nomi delle proprietà fanno distinzione tra maiuscole e minuscole e devono essere tutti minuscoli.
+   >[!NOTE]
+   >
+   >I nomi delle proprietà fanno distinzione tra maiuscole e minuscole e devono essere tutti minuscoli.
 
-**Tabella profili colore**
+   **Tabella profili colore**
 
-Sono installati i seguenti profili colore:
+   Sono installati i seguenti profili colore:
 
-<table>
- <tbody>
-  <tr>
-   <th><p>Nome</p> </th>
-   <th><p>Spazio colori</p> </th>
-   <th><p>Descrizione</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RGB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>AppleRGB</td>
-   <td>RGB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RGB</td>
-   <td>RGB CIE</td>
-  </tr>
-  <tr>
-   <td>Fogra27 rivestito</td>
-   <td>CMYK</td>
-   <td>FOGRA27 rivestito (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>Fogra39 rivestito</td>
-   <td>CMYK</td>
-   <td>FOGRA39 rivestita (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>GraCol rivestito</td>
-   <td>CMYK</td>
-   <td>GracoL 2006 rivestito (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>ColorMatchRGB</td>
-   <td>RGB</td>
-   <td>RGB ColorMatch</td>
-  </tr>
-  <tr>
-   <td>EuropaISOCoato</td>
-   <td>CMYK</td>
-   <td>Europa FOGRA27 con rivestimento ISO</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMYK</td>
-   <td>Euro scale Coated v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleNon rivestite</td>
-   <td>CMYK</td>
-   <td>Euro scale senza rivestimento v2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoated</td>
-   <td>CMYK</td>
-   <td>Rivestito colore Giappone 2001</td>
-  </tr>
-  <tr>
-   <td>JapanColorNewspaper</td>
-   <td>CMYK</td>
-   <td>Giornale Japan Color 2002</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 non patinata</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoated</td>
-   <td>CMYK</td>
-   <td>Rivestimento Web Japan Color 2003</td>
-  </tr>
-  <tr>
-   <td>JapanWebCoated</td>
-   <td>CMYK</td>
-   <td>Rivestito Web Giappone (Ad)</td>
-  </tr>
-  <tr>
-   <td>NewsprintSNAP2007</td>
-   <td>CMYK</td>
-   <td>US Newsprint (SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RGB</td>
-   <td>NTSC, 1953</td>
-  </tr>
-  <tr>
-   <td>PAL</td>
-   <td>RGB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RGB</td>
-   <td>RGB ProPhoto</td>
-  </tr>
-  <tr>
-   <td>PS4Default</td>
-   <td>CMYK</td>
-   <td>CMYK predefinito di Photoshop 4</td>
-  </tr>
-  <tr>
-   <td>PS5Default</td>
-   <td>CMYK</td>
-   <td>CMYK predefinito di Photoshop 5</td>
-  </tr>
-  <tr>
-   <td>SheetfedCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>SheetfedUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed non rivestito v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RGB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRGB</td>
-   <td>RGB</td>
-   <td>sRGB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>Fogra non rivestito29</td>
-   <td>CMYK</td>
-   <td>FOGRA29 non rivestito (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoated</td>
-   <td>CMYK</td>
-   <td>SWOP (U.S. Web Coated) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMYK</td>
-   <td>FOGRA28 rivestito con web (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMYK</td>
-   <td>Carta rivestita SWOP 2006 Grado 3</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMYK</td>
-   <td>Carta rivestita SWOP 2006 Grado 5</td>
-  </tr>
-  <tr>
-   <td>WebUncoated</td>
-   <td>CMYK</td>
-   <td>Web statunitense non rivestito v2</td>
-  </tr>
-  <tr>
-   <td>WideGamutRGB</td>
-   <td>RGB</td>
-   <td>RGB ad ampia gamma</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>Nome</p> </th>
+      <th><p>Spazio colori</p> </th>
+      <th><p>Descrizione</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>AppleRGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>RGB CIE</td>
+   </tr>
+   <tr>
+      <td>Fogra27 rivestito</td>
+      <td>CMYK</td>
+      <td>FOGRA27 rivestito (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>Fogra39 rivestito</td>
+      <td>CMYK</td>
+      <td>FOGRA39 rivestita (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>GraCol rivestito</td>
+      <td>CMYK</td>
+      <td>GracoL 2006 rivestito (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>ColorMatchRGB</td>
+      <td>RGB</td>
+      <td>RGB ColorMatch</td>
+   </tr>
+   <tr>
+      <td>EuropaISOCoato</td>
+      <td>CMYK</td>
+      <td>Europa FOGRA27 con rivestimento ISO</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>Euro scale Coated v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleNon rivestite</td>
+      <td>CMYK</td>
+      <td>Euro scale senza rivestimento v2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoated</td>
+      <td>CMYK</td>
+      <td>Rivestito colore Giappone 2001</td>
+   </tr>
+   <tr>
+      <td>JapanColorNewspaper</td>
+      <td>CMYK</td>
+      <td>Giornale Japan Color 2002</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 non patinata</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoated</td>
+      <td>CMYK</td>
+      <td>Rivestimento Web Japan Color 2003</td>
+   </tr>
+   <tr>
+      <td>JapanWebCoated</td>
+      <td>CMYK</td>
+      <td>Rivestito Web Giappone (Ad)</td>
+   </tr>
+   <tr>
+      <td>NewsprintSNAP2007</td>
+      <td>CMYK</td>
+      <td>US Newsprint (SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC, 1953</td>
+   </tr>
+   <tr>
+      <td>PAL</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>RGB ProPhoto</td>
+   </tr>
+   <tr>
+      <td>PS4Default</td>
+      <td>CMYK</td>
+      <td>CMYK predefinito di Photoshop 4</td>
+   </tr>
+   <tr>
+      <td>PS5Default</td>
+      <td>CMYK</td>
+      <td>CMYK predefinito di Photoshop 5</td>
+   </tr>
+   <tr>
+      <td>SheetfedCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>SheetfedUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed non rivestito v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>Fogra non rivestito29</td>
+      <td>CMYK</td>
+      <td>FOGRA29 non rivestito (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoated</td>
+      <td>CMYK</td>
+      <td>SWOP (U.S. Web Coated) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>FOGRA28 rivestito con web (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Carta rivestita SWOP 2006 Grado 3</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>Carta rivestita SWOP 2006 Grado 5</td>
+   </tr>
+   <tr>
+      <td>WebUncoated</td>
+      <td>CMYK</td>
+      <td>Web statunitense non rivestito v2</td>
+   </tr>
+   <tr>
+      <td>WideGamutRGB</td>
+      <td>RGB</td>
+      <td>RGB ad ampia gamma</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. Seleziona **[!UICONTROL Salva tutto]**.
 

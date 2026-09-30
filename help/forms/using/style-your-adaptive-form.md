@@ -6,13 +6,11 @@ feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2193'
 ht-degree: 10%
-
 ---
-
 # Definire lo stile del modulo adattivo {#do-not-publish-style-your-adaptive-form}
 
 Scopri come creare un tema personalizzato, assegnare uno stile ai singoli componenti e utilizzare Web Fonts in un tema.
@@ -102,7 +100,7 @@ In questo tutorial potrai applicare stili a intestazione e piè di pagina, compo
 
 ### Creare un tema {#create-a-theme}
 
-1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**. L&#39;URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-theme](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**. URL predefinito: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Seleziona **[!UICONTROL Crea]** e **[!UICONTROL Tema]**. Viene visualizzata la pagina [!UICONTROL Crea tema] con i campi necessari per creare un tema. I campi **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** sono obbligatori:
 
    * **Titolo:** Specificare un titolo per il tema. Ad esempio, **Tema globale.** Il titolo consente di identificare il tema dall’elenco dei temi.
@@ -351,7 +349,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Informazioni di base</td> 
+      <td>Esperienza pregressa</td> 
       <td>Colore di sfondo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +423,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Informazioni di base</td> 
+      <td>Esperienza pregressa</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -444,16 +442,18 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
 Puoi utilizzare vari font per progettare un modulo adattivo. È possibile che in tutti i dispositivi su cui viene visualizzato il modulo adattivo non siano presenti i font utilizzati per progettarlo. È possibile utilizzare un servizio di caratteri Web per fornire i caratteri richiesti al dispositivo di destinazione.
 
 [!DNL Adobe Fonts] è un servizio Web Fonts. Puoi configurare e utilizzare il servizio con i moduli adattivi. Per utilizzare [!DNL Adobe Fonts] in un modulo adattivo:
-1. Sfoglia la [libreria di tipi di carattere di Adobe](https://fonts.adobe.com/) e scegli il tipo di carattere con cui applicare lo stile al modulo.
+
 <!--
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
 -->
 
->[!NOTE]
->
-> È possibile aggiungere tag o filtri per perfezionare l&#39;elenco dei caratteri.
+1. Sfoglia la [libreria di tipi di carattere di Adobe](https://fonts.adobe.com/) e scegli il tipo di carattere con cui applicare lo stile al modulo.
+
+   >[!NOTE]
+   >
+   > È possibile aggiungere tag o filtri per perfezionare l&#39;elenco dei caratteri.
 
 1. Fai clic sul pulsante &lt;/> per aggiungere la famiglia a un progetto web, nel caso in cui trovi un font che ti piace.
 
@@ -465,23 +465,25 @@ Puoi utilizzare vari font per progettare un modulo adattivo. È possibile che in
    >
    > È possibile aggiungere caratteri al progetto Web solo se il pulsante &lt;/> è disponibile.
 
-2. Assegna un nome al progetto web.
-3. Selezionare le caselle di controllo per selezionare i pesi e gli stili dei caratteri che si desidera includere.
+1. Assegna un nome al progetto web.
+1. Selezionare le caselle di controllo per selezionare i pesi e gli stili dei caratteri che si desidera includere.
 
    ![aggiungi una libreria di tipi di carattere](assets/add-a-font-window.png)
 
-4. Seleziona **Fai clic** per creare il progetto.
-5. Copia il codice da incorporare e l’URL dalla schermata.
+1. Seleziona **Fai clic** per creare il progetto.
+1. Copia il codice da incorporare e l’URL dalla schermata.
    ![codice di incorporamento e URL](assets/font-add-url.png)
 
-6. Fai clic su **Fine** per chiudere la finestra del progetto Web.
-7. Accedi all&#39;istanza di AEM e vai all&#39;URL `http://server:port/crx/de/index.jsp#`
-8. Creare una struttura di cartelle in CRXDE, ad esempio `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
-9. Passare alla cartella `clientlibs` appena creata e aggiungere le proprietà `allowProxy` e `categories`.
-10. Passare a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e creare una cartella css.
-11. Vai alla cartella CSS creata e crea un file. Ad esempio, crea un file come `fonts.css` e incolla il codice di incorporamento insieme all&#39;URL.
-    ![Struttura cartella](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. Salva le modifiche.
+1. Fai clic su **Fine** per chiudere la finestra del progetto Web.
+1. Accedi all&#39;istanza di AEM e vai all&#39;URL `http://server:port/crx/de/index.jsp#`
+1. Creare una struttura di cartelle in CRXDE, ad esempio `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+1. Passare alla cartella `clientlibs` appena creata e aggiungere le proprietà `allowProxy` e `categories`.
+1. Passare a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e creare una cartella css.
+1. Vai alla cartella CSS creata e crea un file. Ad esempio, crea un file come `fonts.css` e incolla il codice di incorporamento insieme all&#39;URL.
+
+   ![Struttura cartella](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. Salva le modifiche.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Descrizione oggetto JSON dell’area di lavoro di AEM Forms
-description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell’area di lavoro di LiveCycle AEM Forms per la personalizzazione, l’estensione, la modifica e il riutilizzo.
+description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell’area di lavoro di AEM Forms LiveCycle per la personalizzazione, l’estensione, la modifica e il riutilizzo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,13 +8,11 @@ exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2168'
 ht-degree: 8%
-
 ---
-
 # Descrizione oggetto JSON dell’area di lavoro di AEM Forms {#aem-forms-workspace-json-object-description}
 
 Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di AEM Forms.
@@ -23,49 +21,49 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
 
    Le categorie sono presenti nella scheda del processo iniziale dell&#39;area di lavoro. Queste categorie vengono utilizzate per classificare i punti d&#39;inizio.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Proprietà</strong></td>
-   <td><strong>Solo client</strong></td>
-   <td><strong>Commenti</strong></td>
-  </tr>
-  <tr>
-   <td>nome</td>
-   <td>V</td>
-   <td>Nome categoria</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>V</td>
-   <td>ID categoria<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>descrizione<br type="_moz" /> </td>
-   <td>V</td>
-   <td>Descrizione categoria<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>V</td>
-   <td>Contiene un ID della categoria padre<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>M</td>
-   <td>Contiene un elenco di tutti i punti d'inizio presenti in una categoria</td>
-  </tr>
-  <tr>
-   <td>categoryList</td>
-   <td>M</td>
-   <td>Contiene l'elenco delle categorie figlio dirette di una categoria<br type="_moz" /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Proprietà</strong></td>
+      <td><strong>Solo client</strong></td>
+      <td><strong>Commenti</strong></td>
+   </tr>
+   <tr>
+      <td>nome</td>
+      <td>V</td>
+      <td>Nome categoria</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>V</td>
+      <td>ID categoria<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>descrizione<br type="_moz" /> </td>
+      <td>V</td>
+      <td>Descrizione categoria<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>V</td>
+      <td>Contiene un ID della categoria padre<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>M</td>
+      <td>Contiene un elenco di tutti i punti d'inizio presenti in una categoria</td>
+   </tr>
+   <tr>
+      <td>categoryList</td>
+      <td>M</td>
+      <td>Contiene l'elenco delle categorie figlio dirette di una categoria<br type="_moz" /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Tutti i punti iniziali e i Preferiti sono categorie definite sul lato client. La categoria Preferiti contiene tutti i punti d&#39;inizio contrassegnati dall&#39;utente come preferiti. La categoria Tutti i punti iniziali contiene tutti i punti iniziali.
+   >[!NOTE]
+   >
+   >Tutti i punti iniziali e i Preferiti sono categorie definite sul lato client. La categoria Preferiti contiene tutti i punti d&#39;inizio contrassegnati dall&#39;utente come preferiti. La categoria Tutti i punti iniziali contiene tutti i punti iniziali.
 
 1. Punto d&#39;inizio
 
@@ -193,7 +191,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>priorità<br /> </td>
    <td>V</td>
-   <td>Contiene la priorità dell'attività.<br /> 1 = Priorità più alta<br /> 2 = Priorità alta<br /> 3 = Priorità normale<br /> 4 = Priorità bassa<br /> 5 = Priorità più bassa<br /> </td>
+   <td>Contiene la priorità dell'attività.<br /> 1 = Priorità massima<br /> 2 = Priorità alta<br /> 3 = Priorità normale<br /> 4 = Priorità bassa<br /> 5 = Priorità più bassa<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -238,7 +236,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>stato<br /> </td>
    <td>V</td>
-   <td>1 = Creato (l'attività viene creata dal punto iniziale).<br /> 2 = Creato e salvato (l'attività viene creata dal punto iniziale e salvata).<br /> 3 = Assegnato (l'attività viene assegnata all'utente dopo l'avvio del processo).<br /> 4 = Assegnato e salvato (l'attività viene assegnata e salvata)<br /> 100 = Completata (attività completata).<br /> 101 = Scaduto (l'attività ha raggiunto la scadenza).<br /> 102 = Terminato<br /> </td>
+   <td>1 = Creato (l'attività viene creata dal punto iniziale)<br /> 2 = Creato e salvato (l'attività viene creata dal punto iniziale e salvata)<br /> 3 = Assegnato (l'attività viene assegnata all'utente dopo l'avvio del processo)<br /> 4 = Assegnato e salvato (l'attività è assegnata e salvata)<br /> 100 = Completato (attività completata)<br /> 101 = Scaduto (l'attività ha raggiunto la scadenza)<br /> 102 = Terminato<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -412,7 +410,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>tipo</td>
    <td>V</td>
-   <td>Contiene il tipo di coda.<br /> 0 - Coda utenti.<br /> 1 Coda condivisa.<br /> 2. Coda gruppo.<br type="_moz" /> </td>
+   <td>Contiene il tipo di coda.<br /> 0 - Coda utente.<br /> 1. Coda condivisa.<br /> 2. Coda del gruppo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
@@ -606,7 +604,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>V</td>
-   <td>0 = Assegnazione iniziale<br /> 1 = Inoltra (l'attività è stata inoltrata al proprietario corrente dell'attività).<br /> 2 = Restituita (l'attività è stata restituita al proprietario corrente dell'attività dal proprietario precedente).<br /> 3 = Richiesto (l'attività è stata richiesta dal proprietario corrente dell'attività).<br /> 4 = riassegnazione (l'attività è stata assegnata al proprietario corrente dell'attività dopo l'escalation)<br /> 5 = Amministratore assegnato (l'attività è stata assegnata dall'amministratore al proprietario corrente dell'attività).<br /> 6 = Consultato ( L'attività è stata consultata dall'attuale proprietario)<br type="_moz" /> </td>
+   <td>0 = Assegnazione iniziale<br /> 1 = Inoltra (l'attività è stata inoltrata al proprietario corrente dell'attività.)<br /> 2 = Restituita (l'attività è stata restituita al proprietario corrente dell'attività dal proprietario precedente dell'attività)<br /> 3 = Richiesto (l'attività è stata richiesta dal proprietario corrente dell'attività)<br /> 4 = Riassegnazione (l'attività è stata assegnata al proprietario corrente dell'attività dopo l'escalation.)<br /> 5 = Amministratore assegnato (l'attività è stata assegnata dall'amministratore al proprietario corrente dell'attività)<br /> 6 = Consultato ( l'attività è stata consultata dall'attuale proprietario)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>

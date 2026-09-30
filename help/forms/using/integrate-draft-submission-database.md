@@ -1,5 +1,5 @@
 ---
-title: Esempio per integrare il componente Bozze e invii con il database
+title: Esempio di integrazione del componente bozze e invii con il database
 description: Implementazione di riferimento di servizi personalizzati per dati e metadati al fine di integrare il componente Bozze e richieste con un database.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,18 +8,16 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 1%
-
+source-wordcount: '1537'
+ht-degree: 4%
 ---
-
-# Esempio per integrare il componente Bozze e invii con il database {#sample-for-integrating-drafts-submissions-component-with-database}
+# Esempio di integrazione del componente bozze e invii con il database {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Panoramica di esempio {#sample-overview}
 
-Il componente Bozze e invii del portale AEM Forms consente agli utenti di salvare i moduli come bozze e inviarli successivamente da qualsiasi dispositivo. Gli utenti possono inoltre visualizzare i moduli inviati nel portale. Per abilitare questa funzionalità, AEM Forms fornisce servizi di dati e metadati per memorizzare i dati compilati da un utente nel modulo e i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati vengono memorizzati nell’archivio di CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite l’istanza di pubblicazione dell’AEM, che in genere si trova al di fuori del firewall aziendale, le organizzazioni potrebbero voler personalizzare l’archiviazione dei dati per renderla più sicura e affidabile.
+Il componente Bozze e invii del portale AEM Forms consente agli utenti di salvare i moduli come bozze e inviarli successivamente da qualsiasi dispositivo. Gli utenti possono inoltre visualizzare i moduli inviati nel portale. Per abilitare questa funzionalità, AEM Forms fornisce servizi di dati e metadati per memorizzare i dati compilati da un utente nel modulo e i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati vengono memorizzati nell’archivio di CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite l’istanza di pubblicazione di AEM, che in genere si trova al di fuori del firewall aziendale, le organizzazioni potrebbero voler personalizzare l’archiviazione dei dati per renderla più sicura e affidabile.
 
 L’esempio, discusso in questo documento, è un’implementazione di riferimento di servizi di dati e metadati personalizzati per integrare bozze e componenti di invio con un database. Il database utilizzato nell&#39;implementazione di esempio è **MySQL 5.6.24**. Tuttavia, è possibile integrare il componente Bozze e invii con qualsiasi database desiderato.
 
@@ -37,14 +35,14 @@ Per installare e configurare l’esempio in tutte le istanze di authoring e pubb
 
    Pacchetto di esempio per l’integrazione del database
 
-[Ottieni file](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Ottieni il file](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Vai a Gestione pacchetti AEM all&#39;indirizzo https://[*host*]:[*porta*]/crx/packmgr/.
 1. Fare clic su **[!UICONTROL Carica pacchetto]**.
 
 1. Individua il pacchetto **aem-fp-db-integration-sample-pkg-6.1.2.zip** e fai clic su **[!UICONTROL OK]**.
 1. Fai clic su **[!UICONTROL Installa]** accanto al pacchetto per installarlo.
-1. Vai a **[!UICONTROL Configurazione console Web AEM]**
+1. Passa a **[!UICONTROL Configurazione console Web AEM]**
 pagina all&#39;indirizzo https://[*host*]:[*porta*]/system/console/configMgr.
 1. Fare clic per aprire **[!UICONTROL Configurazione bozza e invio portale Forms]** in modalità di modifica.
 
@@ -89,79 +87,79 @@ pagina all&#39;indirizzo https://[*host*]:[*porta*]/system/console/configMgr.
 1. La connessione al database può essere effettuata tramite Apache Sling Connection Pooled Data Source.
 1. Per la connessione Apache Sling, individua e fai clic per aprire **[!UICONTROL Origine dati in pool di connessione Apache Sling]** in modalità di modifica nella configurazione della console Web. Specificare i valori per le proprietà come descritto nella tabella seguente:
 
-<table>
- <tbody>
-  <tr>
+   <table>
+   <tbody>
+   <tr>
    <td><strong>Proprietà</strong></td>
    <td><strong>Valore</strong></td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nome origine dati</td>
    <td><p>Nome di origine dati per filtrare i driver dal pool di origini dati</p> <p><strong>Nota: </strong><em>L'implementazione di esempio utilizza FormsPortal come nome dell'origine dati.</em></p> </td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Classe driver JDBC</td>
    <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>URI connessione JDBC <br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>nome_schema</em>]</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nome utente</td>
    <td>Un nome utente per autenticare ed eseguire azioni sulle tabelle del database</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Password</td>
    <td>Password associata al nome utente</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Isolamento transazione</td>
    <td>READ_COMMIT</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Numero massimo connessioni attive</td>
    <td>1000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Numero massimo di connessioni inattive</td>
    <td>100</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Connessioni inattive minime</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Dimensione iniziale</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Attesa massima</td>
    <td>100000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Test su prestito</td>
    <td>Selezionato</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Test durante inattività</td>
    <td>Selezionato</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Query di convalida</td>
    <td>I valori di esempio sono SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Timeout query di convalida</td>
    <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->* Il driver JDBC per MySQL non viene fornito con l&#39;esempio. Verificare di aver eseguito il provisioning e fornire le informazioni necessarie per configurare il connection pool JDBC.
->* Indirizza le istanze di authoring e pubblicazione per utilizzare lo stesso database. Il valore del campo URI connessione JDBC deve essere lo stesso per tutte le istanze di authoring e pubblicazione.
+   >[!NOTE]
+   >
+   >* Il driver JDBC per MySQL non viene fornito con l&#39;esempio. Verificare di aver eseguito il provisioning e fornire le informazioni necessarie per configurare il connection pool JDBC.
+   >* Indirizza le istanze di authoring e pubblicazione per utilizzare lo stesso database. Il valore del campo URI connessione JDBC deve essere lo stesso per tutte le istanze di authoring e pubblicazione.
 
 1. Lascia invariate le altre configurazioni e fai clic su **[!UICONTROL Salva]**.
 
@@ -315,13 +313,13 @@ Per installare il file mysql-connector-java-5.1.39-bin.jar, effettua le seguenti
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ## Codice di esempio per il servizio metadati e i dati del portale Forms {#sample-code-for-forms-portal-data-and-metadata-service}
 
 Il seguente file zip contiene `FormsPortalSampleDataServiceImpl` e `FormsPortalSampleMetadataServiceImpl` (classi di implementazione) per le interfacce del servizio dati e metadati. Inoltre, contiene tutte le classi richieste per la compilazione delle classi di implementazione sopra menzionate.
 
-[Ottieni file](assets/sample_package.zip)
+[Ottieni il file](assets/sample_package.zip)
 
 ## Verifica la lunghezza del nome del file  {#verify-length-of-the-file-name}
 
@@ -330,7 +328,7 @@ L’implementazione del database di Forms Portal utilizza una tabella di metadat
 Per creare [una libreria client](/help/sites-developing/clientlibs.md) e utilizzare lo script, effettuare le seguenti operazioni:
 
 1. Accedi a CRXDE e passa a /etc/clientlibs/
-1. Creare un nodo di tipo **cq:ClientLibraryFolder** e fornire il nome del nodo. Esempio: `validation`.
+1. Crea un nodo di tipo **cq:ClientLibraryFolder** e fornisci il nome del nodo. Ad esempio, `validation`.
 
    Fare clic su **[!UICONTROL Salva tutto]**.
 
@@ -343,7 +341,7 @@ Per creare [una libreria client](/help/sites-developing/clientlibs.md) e utilizz
 
    Nel codice precedente, `util` è il nome della cartella e `util.js` il nome del file nella cartella `util`. La cartella `util` e il file `util.js` vengono creati nei passaggi seguenti.
 
-1. Fare clic con il pulsante destro del mouse sul nodo `cq:ClientLibraryFolder` creato nel passaggio 2, selezionare Crea > Crea cartella. Creare una cartella denominata `util`. Fare clic su **[!UICONTROL Salva tutto]**. Fare clic con il pulsante destro del mouse sulla cartella `util`, selezionare Crea > Crea file. Creare un file denominato `util.js`. Fare clic su **[!UICONTROL Salva tutto]**.
+1. Fare clic con il pulsante destro del mouse sul nodo `cq:ClientLibraryFolder` creato nel passaggio 2, selezionare Crea > Crea cartella. Creare una cartella denominata `util`. Fare clic su **[!UICONTROL Salva tutto]**. Fare clic con il pulsante destro del mouse sulla cartella `util`, selezionare Crea > Crea file. Crea un file denominato `util.js`. Fare clic su **[!UICONTROL Salva tutto]**.
 
 1. Aggiungi il codice seguente al file util.js e fai clic su **[!UICONTROL Salva tutto]**. Lunghezza di convalida del codice del nome file.
 
@@ -420,4 +418,4 @@ Per creare [una libreria client](/help/sites-developing/clientlibs.md) e utilizz
    >
    >Se utilizzi librerie client personalizzate invece delle librerie client guideRuntime e guideRuntimeWithXfa, utilizza il nome della categoria per incorporare la libreria client creata in questa procedura nelle librerie personalizzate caricate in fase di esecuzione.
 
-1. Fare clic su **[!UICONTROL Salva tutto.]** Ora, quando il nome del file supera i 150 caratteri (inclusa l&#39;estensione) viene visualizzato un messaggio.
+1. Fai clic su **[!UICONTROL Salva tutto.]** Ora, quando il nome del file supera i 150 caratteri (inclusa l’estensione) viene visualizzato un messaggio.

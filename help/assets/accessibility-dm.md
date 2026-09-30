@@ -12,20 +12,23 @@ autotag-review: '2026-05-18T18:39:42.457Z'
 TQID: 'https://experienceleague.adobe.com/f9-0rO4QHX7kbx7xwptmuOW1W7WzduM3tOlL2YgHXxI'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: 647
+source-wordcount: '666'
 ht-degree: 0%
-
 ---
-
 # Accessibilità in [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] supporta il controllo da tastiera e le tecnologie per l&#39;accessibilità, ad esempio le utilità di lettura dello schermo JAWS e NVDA, nell&#39;interfaccia utente di creazione.
@@ -44,10 +47,10 @@ L&#39;attraversamento della messa a fuoco segue la posizione naturale degli elem
 * Nell’editor dei punti attivi è possibile utilizzare la pressione di alcuni tasti personalizzati, ad esempio i tasti di direzione, per interagire con elementi complessi dell’interfaccia utente e riposizionare i punti attivi.
 * Nell&#39;editor video interattivo è possibile utilizzare `Spacebar` per selezionare un&#39;immagine e aggiungerla a un segmento. È inoltre possibile utilizzare la chiave `Backspace` per eliminare l&#39;elemento selezionato dalla scheda **[!UICONTROL Contenuto]**. Inoltre, premendo `Tab` è possibile spostarsi tra gli elementi interattivi della pagina.
 * Nell’editor di ritaglio immagine/ritaglio avanzato, puoi effettuare le seguenti operazioni:
-   * Usate i tasti freccia per ritagliare le dimensioni del fotogramma, o riposizionare l&#39;immagine, o entrambi.
-   * La prima interruzione di `Tab` evidenzia l&#39;intero frame dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare il fotogramma.
-   * Le prossime quattro `Tab` interruzioni sono i quattro angoli del frame. Quando lo stato attivo viene posizionato su un angolo del fotogramma, l&#39;angolo viene evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo attivo.
-Vedi [Modifica il ritaglio avanzato o il campione avanzato di una singola immagine](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+  * Usate i tasti freccia per ritagliare le dimensioni del fotogramma, o riposizionare l&#39;immagine, o entrambi.
+  * La prima interruzione di `Tab` evidenzia l&#39;intero frame dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare il fotogramma.
+  * Le prossime quattro `Tab` interruzioni sono i quattro angoli del frame. Quando lo stato attivo viene posizionato su un angolo del fotogramma, l&#39;angolo viene evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo attivo.
+    Vedi [Modifica il ritaglio avanzato o il campione avanzato di una singola immagine](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 

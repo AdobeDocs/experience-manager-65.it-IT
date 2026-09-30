@@ -1,6 +1,6 @@
 ---
 title: Usa Assets connesso per condividere risorse DAM in [!DNL Sites]
-description: Utilizza le risorse disponibili in una  [!DNL Adobe Experience Manager Assets] distribuzione remota quando crei le tue pagine Web in un'altra [!DNL Adobe Experience Manager Sites] distribuzione.
+description: Utilizzare le risorse disponibili in una distribuzione remota di [!DNL Adobe Experience Manager Assets] durante la creazione di pagine Web in un'altra distribuzione di [!DNL Adobe Experience Manager Sites].
 contentOwner: AK
 mini-toc-levels: 2
 role: User, Admin, Leader
@@ -10,11 +10,9 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4025'
 ht-degree: 15%
-
 ---
-
 # Usa Assets connesso per condividere risorse DAM in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | Versione | Collegamento articolo |
