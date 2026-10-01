@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione del framework Adobe Analytics
+title: Personalizzazione del framework di Adobe Analytics
 description: Scopri come personalizzare il framework Adobe Analytics per Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Integration
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1638'
 ht-degree: 0%
-
 ---
-
-# Personalizzazione del framework Adobe Analytics{#customizing-the-adobe-analytics-framework}
+# Personalizzazione del framework di Adobe Analytics{#customizing-the-adobe-analytics-framework}
 
 Il framework Adobe Analytics determina le informazioni tracciate con Adobe Analytics. Per personalizzare il framework predefinito, puoi utilizzare JavaScript per aggiungere il tracciamento personalizzato, integrare i plug-in di Adobe Analytics e modificare le impostazioni generali nel framework utilizzato per il tracciamento.
 
@@ -126,7 +124,7 @@ Il codice nel file [analytics.sitecatalyst.js](/help/sites-developing/extending-
 
 `if (s.usePlugins) s.doPlugins(s)`
 
-La procedura seguente illustra come utilizzare la casella JavaScript per personalizzare il tracciamento di Adobe Analytics. Se il tuo JavaScript deve utilizzare i plug-in di Adobe Analytics, [integrali](/help/sites-administering/adobeanalytics.md) nell&#39;AEM.
+La procedura seguente illustra come utilizzare la casella JavaScript per personalizzare il tracciamento di Adobe Analytics. Se il tuo JavaScript deve utilizzare i plug-in di Adobe Analytics, [integrali](/help/sites-administering/adobeanalytics.md) in AEM.
 
 1. Aggiungere il codice JavaScript seguente alla casella in modo che `s.doPlugins` venga eseguito:
 
@@ -189,11 +187,11 @@ Il codice nel file analytics.sitecatalyst.js (che include il contenuto del file 
 
 if (s.usePlugins) s.doPlugins(s)
 
-Pertanto, il tuo JavaScript deve impostare `s.usePlugins` su `true` in modo che venga eseguito qualsiasi codice nella funzione `s_doPlugins`. Per personalizzare il codice, sovrapponi il file config.js.jsp con uno che utilizza il tuo JavaScript. Se il tuo JavaScript deve utilizzare i plug-in di Adobe Analytics, [integrali](/help/sites-administering/adobeanalytics.md) nell&#39;AEM.
+Pertanto, il tuo JavaScript deve impostare `s.usePlugins` su `true` in modo che venga eseguito qualsiasi codice nella funzione `s_doPlugins`. Per personalizzare il codice, sovrapponi il file config.js.jsp con uno che utilizza il tuo JavaScript. Se il tuo JavaScript deve utilizzare i plug-in di Adobe Analytics, [integrali](/help/sites-administering/adobeanalytics.md) in AEM.
 
 >[!NOTE]
 >
->Non modificare il file /libs/cq/analytics/components/sitecatalyst/config.js.jsp. Alcune attività di aggiornamento o manutenzione AEM possono reinstallare il file originale, rimuovendo le modifiche.
+>Non modificare il file /libs/cq/analytics/components/sitecatalyst/config.js.jsp. Alcune attività di aggiornamento o manutenzione di AEM possono reinstallare il file originale, rimuovendo le modifiche.
 
 1. In CRXDE Lite, crea la struttura di cartelle /apps/cq/analytics/components:
 
@@ -238,11 +236,11 @@ Pertanto, il tuo JavaScript deve impostare `s.usePlugins` su `true` in modo che 
 >
 >Se nel JavaScript in formato libero del framework di una pagina è presente del testo (anche solo uno spazio vuoto), config.js.jsp viene ignorato.
 
-### Utilizzo dei plug-in di Adobe Analytics nell’AEM {#using-adobe-analytics-plugins-in-aem}
+### Utilizzo dei plug-in di Adobe Analytics in AEM {#using-adobe-analytics-plugins-in-aem}
 
 Ottieni il codice JavaScript per i plug-in di Adobe Analytics e integrali nel framework Adobe Analytics in AEM. Aggiungere il codice a una cartella della libreria client della categoria `sitecatalyst.plugins` in modo che sia disponibile per il codice JavaScript personalizzato.
 
-Se ad esempio si integra il plug-in `getQueryParams`, è possibile chiamare il plug-in dalla funzione `s_doPlugins` del JavaScript personalizzato. Il codice di esempio seguente invia la stringa di query in **&quot;pid&quot;** dall&#39;URL del referente come **eVar1** quando viene attivata una chiamata Adobe Analytics.
+Se ad esempio si integra il plug-in `getQueryParams`, è possibile chiamare il plug-in dalla funzione `s_doPlugins` del JavaScript personalizzato. Il codice di esempio seguente invia la stringa di query in **&quot;pid&quot;** dall&#39;URL del referente come **eVar1**, quando viene attivata una chiamata Adobe Analytics.
 
 ```
 s.usePlugins=true;
@@ -263,7 +261,7 @@ La cartella della libreria client /libs/cq/analytics/clientlibs/sitecatalyst/plu
 
 >[!NOTE]
 >
->Crea una cartella della libreria client per i plug-in. Non aggiungere plug-in alla cartella `/libs/cq/analytics/clientlibs/sitecatalyst/plugins`. Questa procedura garantisce che il contributo alla categoria `sitecatalyst.plugins` non venga sovrascritto durante le reinstallazioni o le attività di aggiornamento AEM.
+>Crea una cartella della libreria client per i plug-in. Non aggiungere plug-in alla cartella `/libs/cq/analytics/clientlibs/sitecatalyst/plugins`. Questa procedura garantisce che il contributo alla categoria `sitecatalyst.plugins` non venga sovrascritto durante le reinstallazioni o le attività di aggiornamento di AEM.
 
 Utilizza la procedura seguente per creare la cartella della libreria client per i plug-in. È necessario eseguire questa procedura una sola volta. Per aggiungere un plug-in alla cartella della libreria client, attenersi alla procedura seguente.
 

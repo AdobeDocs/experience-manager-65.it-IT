@@ -9,18 +9,16 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 0%
-
+source-wordcount: '1176'
+ht-degree: 1%
 ---
-
 # Tutorial: applicare regole ai campi del modulo adattivo {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
-Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md). L’Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
+Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md). Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
-## Informazioni sull’esercitazione {#about-the-tutorial}
+## Informazioni sul tutorial {#about-the-tutorial}
 
 È possibile utilizzare le regole per aggiungere interattività, logica di business e convalide intelligenti a un modulo adattivo. I moduli adattivi hanno un editor di regole integrato. L’editor di regole fornisce una funzionalità di trascinamento della selezione, simile alle visite guidate. Il metodo di trascinamento della selezione è il metodo più rapido e semplice per creare regole. L’editor di regole fornisce anche una finestra di codice per gli utenti interessati a testare le loro abilità di codifica o a portare le regole a un livello successivo.
 
@@ -63,7 +61,7 @@ A ogni cliente viene assegnato un numero ID cliente univoco, che consente di ide
 
    ![dropobjectstooutputfield-recuperedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
+   Per salvare la regola, fai clic su **[!UICONTROL Fine]**. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
 
 1. Visualizza l’anteprima del modulo adattivo. Immetti un ID nel campo **[!UICONTROL ID cliente]**. Il modulo ora può recuperare i dettagli del cliente dal database.
 
@@ -96,7 +94,7 @@ Dopo aver recuperato i dettagli del cliente dal database, puoi aggiornare l’in
    >Non trascinare i campi **[!UICONTROL Nome]** e **[!UICONTROL ID cliente]** nella proprietà tablename.property corrispondente, ad esempio customerdetails.name. Consente di evitare di aggiornare il nome e l’ID del cliente per errore.
 
 1. Trascina il campo **[!UICONTROL ID cliente]** dalla scheda [!UICONTROL Oggetti modulo] al campo ID nella casella **[!UICONTROL INPUT]**. I campi senza un nome di tabella preceduto (ad esempio, customerdetails in questo caso d’uso) fungono da parametro di ricerca per il servizio di aggiornamento. Il campo **[!UICONTROL id]** in questo caso d&#39;uso identifica in modo univoco un record nella tabella **customerdetails**.
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
+1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
 1. Visualizza l’anteprima del modulo adattivo. Recupera i dettagli di un cliente, aggiorna l’indirizzo di spedizione e invia il modulo. Quando recuperi nuovamente i dettagli dello stesso cliente, viene visualizzato l’indirizzo di spedizione aggiornato.
 
 ## Passaggio 3: (sezione Bonus) Utilizza l’editor di codice per eseguire convalide e visualizzare messaggi di errore {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}

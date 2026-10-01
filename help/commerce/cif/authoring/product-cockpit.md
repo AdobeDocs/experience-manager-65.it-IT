@@ -7,11 +7,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 1%
-
 ---
-
 # Cockpit prodotto {#product-cockpit}
 
 ## Panoramica {#overview}
@@ -36,7 +34,7 @@ L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazio
 
 ## Apertura della cabina di comando del prodotto {#opening-product-cockpit}
 
-Il modo più semplice per accedere al pannello di comando del prodotto è tramite il menu &quot;Commerce&quot; nel menu principale dell’AEM. È inoltre possibile utilizzare Omnisearch (cerca Commerce) o aprire `https://<yourAEMInstance>/commerce.html`.
+Il modo più semplice per accedere al pannello di comando del prodotto è tramite il menu &quot;Commerce&quot; nel menu principale di AEM. È inoltre possibile utilizzare Omnisearch (cerca Commerce) o aprire `https://<yourAEMInstance>/commerce.html`.
 
 ![Menu AEM](/help/commerce/cif/assets/aem-menu.png)
 
@@ -56,7 +54,7 @@ Facendo clic su un prodotto vengono caricate le varianti di prodotto, se disponi
 
 >[!NOTE]
 >
->I dati del catalogo dei prodotti nell’AEM sono dati recuperati in tempo reale tramite l’endpoint commerce configurato. Nessun dato del catalogo dei prodotti viene memorizzato nell’AEM.
+>I dati del catalogo dei prodotti in AEM sono dati recuperati in tempo reale tramite l’endpoint commerce configurato. In AEM non viene memorizzato alcun dato del catalogo dei prodotti.
 
 ## Ricerca nei cataloghi di prodotti {#searching-product-catalog}
 
@@ -76,7 +74,7 @@ Facendo clic sull&#39;icona delle proprietà di un prodotto o di una categoria s
 
 ### Schede Commerce {#tabs}
 
-Le schede Generale e Variante mostrano le proprietà commerce predefinite provenienti dal backend di e-commerce. Questi dati (inclusi variants) è un dato di sola lettura in AEM in quanto il sistema di registrazione è il back-end commerciale. La scheda Variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
+Le schede Generale e Variante mostrano le proprietà commerce predefinite provenienti dal backend di e-commerce. Questi dati (incluse le varianti) sono dati di sola lettura in AEM, in quanto il sistema di registrazione è il backend per e-commerce. La scheda Variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
 
 ![proprietà catalogo](/help/commerce/cif/assets/catalog-properties.png)
 

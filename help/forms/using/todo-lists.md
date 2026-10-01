@@ -1,5 +1,5 @@
 ---
-title: Utilizzo degli elenchi Attività
+title: Utilizzo degli elenchi attività
 description: Come aprire, lavorare e completare le attività in base alle esigenze, ad esempio approvare o rifiutare una richiesta o aggiungere ulteriori informazioni.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,10 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4125'
 ht-degree: 0%
-
 ---
-
-# Utilizzo degli elenchi Attività{#working-with-to-do-lists}
+# Utilizzo degli elenchi attività{#working-with-to-do-lists}
 
 Quando si visualizzano gli elenchi attività, è possibile che vengano visualizzate le attività di un processo aziendale assegnate all&#39;utente o a qualsiasi gruppo a cui l&#39;utente appartiene o che siano attività condivise di altri utenti. È possibile aprire, lavorare e completare le attività in base alle esigenze, ad esempio approvando o rifiutando una richiesta o aggiungendo ulteriori informazioni. Dopo aver completato un&#39;attività, questa viene inviata alla persona successiva nel processo aziendale,
 
@@ -45,17 +43,17 @@ Quando apri e lavori su un’attività, gli strumenti disponibili dipendono dall
 
 * **Revisione multiutente**: l&#39;attività viene ricevuta contemporaneamente da altri utenti. Tu e gli altri utenti dovete fornire informazioni o rivedere il contenuto, o entrambi. Con questo tipo di attività possono essere disponibili i seguenti strumenti:
 
-   * Visualizzazione delle istruzioni per l&#39;attività
-   * Visualizzazione dello stato di completamento di tutti gli utenti assegnati all&#39;attività
-   * Visualizzazione dei commenti di tutti gli utenti assegnati all&#39;attività
-   * Aggiunta di commenti all&#39;attività
+  * Visualizzazione delle istruzioni per l&#39;attività
+  * Visualizzazione dello stato di completamento di tutti gli utenti assegnati all&#39;attività
+  * Visualizzazione dei commenti di tutti gli utenti assegnati all&#39;attività
+  * Aggiunta di commenti all&#39;attività
 
 Altri strumenti che possono essere disponibili con una qualsiasi delle attività di cui sopra includono:
 
 * Inoltra
 * Condividi
 * Consulta
-* Ritorno
+* A capo
 * Note
 * Allegati
 
@@ -147,7 +145,7 @@ Quando lavori su un’attività, di seguito sono descritti gli strumenti che pot
 
 ### Disconnetti un&#39;attività {#take-a-task-offline}
 
-Può essere consentito lavorare su un&#39;attività offline e successivamente inviare il relativo modulo da Adobe® Reader® o Adobe® Acrobat® Professional o Adobe® Acrobat® Standard. Quando il modulo viene inviato, il client e-mail viene avviato con l’indirizzo e-mail del server appropriato. A questo punto potrai inviare il modulo completato via e-mail al server.
+Può essere consentito lavorare su un’attività offline e successivamente inviare il modulo da Adobe® Reader® o Adobe® Acrobat® Professional o Adobe® Acrobat® Standard. Quando il modulo viene inviato, il client e-mail viene avviato con l’indirizzo e-mail del server appropriato. A questo punto potrai inviare il modulo completato via e-mail al server.
 
 1. In qualsiasi scheda, fai clic su **Non in linea**.
 1. Specifica un nome file in cui salvare il modulo e fai clic su **Salva**. Il modulo associato all&#39;attività viene salvato localmente e l&#39;attività rimane nell&#39;elenco attività fino all&#39;invio del modulo.
@@ -245,7 +243,7 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività, potrebbe esse
 
 >[!NOTE]
 >
->È possibile che venga visualizzato un pulsante Invia all&#39;interno dei moduli HTML quando in un modulo vengono utilizzate le proprietà del processo. Questo pulsante non è visibile quando viene eseguito il rendering dello stesso modulo come PDF. Per completare un’attività, fai clic sul pulsante Invia disponibile nella parte inferiore dell’area di lavoro di AEM Forms, all’esterno del modulo e non sul pulsante Invia all’interno del modulo.
+>È possibile che venga visualizzato un pulsante Invia all&#39;interno di HTML Form quando in un modulo vengono utilizzate le proprietà del processo. Questo pulsante non è visibile quando viene eseguito il rendering dello stesso modulo di PDF. Per completare un’attività, fai clic sul pulsante Invia disponibile nella parte inferiore dell’area di lavoro di AEM Forms, all’esterno del modulo e non sul pulsante Invia all’interno del modulo.
 
 ### Approva in blocco le attività {#bulk-approve-tasks}
 

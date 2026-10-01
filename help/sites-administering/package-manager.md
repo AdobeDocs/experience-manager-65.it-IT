@@ -11,17 +11,15 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
-
 
 # Gestione pacchetti {#working-with-packages}
 
 I pacchetti consentono l&#39;importazione e l&#39;esportazione del contenuto del repository. È possibile utilizzare i pacchetti per installare nuovi contenuti, installare nuove funzionalità, trasferire contenuti tra le istanze ed eseguire il backup del contenuto del repository.
 
-Gestione pacchetti consente di trasferire i pacchetti tra l’istanza AEM e il file system locale a scopo di sviluppo.
+Gestione pacchetti consente di trasferire i pacchetti tra l’istanza di AEM e il file system locale a scopo di sviluppo.
 
 ## Cosa sono i pacchetti? {#what-are-packages}
 
@@ -31,11 +29,11 @@ Un pacchetto contiene anche metainformazioni di Vault, tra cui le definizioni de
 
 >[!NOTE]
 >
->I pacchetti rappresentano la versione corrente del contenuto al momento della creazione del pacchetto. Non includono alcuna versione precedente del contenuto conservato dall’AEM nell’archivio.
+>I pacchetti rappresentano la versione corrente del contenuto al momento della creazione del pacchetto. Non includono versioni precedenti del contenuto conservato da AEM nell’archivio.
 
 ## Gestione pacchetti {#package-manager}
 
-Gestione pacchetti gestisce i pacchetti nell’installazione AEM. Dopo aver [assegnato le autorizzazioni necessarie](#permissions-needed-for-using-the-package-manager), puoi utilizzare Gestione pacchetti per varie azioni, tra cui la configurazione, la creazione, il download e l&#39;installazione dei pacchetti.
+Gestione pacchetti gestisce i pacchetti nell’installazione di AEM. Dopo aver [assegnato le autorizzazioni necessarie](#permissions-needed-for-using-the-package-manager), puoi utilizzare Gestione pacchetti per varie azioni, tra cui la configurazione, la creazione, il download e l&#39;installazione dei pacchetti.
 
 ### Autorizzazioni richieste {#required-permissions}
 
@@ -54,8 +52,8 @@ Per creare, modificare, caricare e installare pacchetti, gli utenti devono dispo
 
 È possibile accedere a Gestione pacchetti in tre modi:
 
-1. Dal menu principale AEM > **Strumenti** > **Distribuzione** > **Pacchetti**
-1. Da [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md) utilizzando la barra del commutatore superiore
+1. Dal menu principale di AEM > **Strumenti** > **Distribuzione** > **Pacchetti**
+1. Da [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) utilizzando la barra del commutatore superiore
 1. Accedendo direttamente a `http://<host>:<port>/crx/packmgr/`
 
 ### Interfaccia utente di Gestione pacchetti {#ui}
@@ -65,8 +63,8 @@ Gestione pacchetti è suddiviso in quattro aree funzionali principali:
 * **Pannello di navigazione sinistro** - Consente di filtrare e ordinare l&#39;elenco dei pacchetti.
 * **Elenco pacchetti**: questo è l&#39;elenco dei pacchetti nell&#39;istanza filtrati e ordinati in base alle selezioni effettuate nel pannello di navigazione a sinistra.
 * **Registro attività** - Questo pannello viene ridotto a icona e si espande per descrivere in dettaglio l&#39;attività di Gestione pacchetti, ad esempio quando un pacchetto viene generato o installato. Nella scheda Registro attività sono disponibili pulsanti aggiuntivi per:
-   * **Cancella registro**
-   * **Mostra/Nascondi**
+  * **Cancella registro**
+  * **Mostra/Nascondi**
 * **Barra degli strumenti** - La barra degli strumenti contiene i pulsanti di aggiornamento per il pannello di navigazione sinistro e l&#39;elenco dei pacchetti, nonché i pulsanti per la ricerca, la creazione e il caricamento dei pacchetti.
 
 ![Interfaccia utente Gestione pacchetti](assets/package-manager-ui.png)
@@ -87,7 +85,7 @@ Se si fa clic sul nome di un pacchetto, la voce nell&#39;elenco dei pacchetti vi
 
 Ulteriori azioni sono disponibili sotto il pulsante **Altro**.
 
-* [Elimina](#deleting-packages)
+* [Eliminare](#deleting-packages)
 * [Copertura](#package-coverage)
 * [Contenuti](#viewing-package-contents-and-testing-installation)
 * [Ripeti adattamento](#rewrapping-a-package)
@@ -95,7 +93,7 @@ Ulteriori azioni sono disponibili sotto il pulsante **Altro**.
 * [Disinstalla](#uninstalling-packages)
 * [Installazione di test](#viewing-package-contents-and-testing-installation)
 * [Convalida](#validating-packages)
-* [Replica](#replicating-packages)
+* [Replicare](#replicating-packages)
 
 ### Stato pacchetto {#package-status}
 
@@ -129,7 +127,7 @@ La finestra di dialogo **Impostazioni pacchetto** è disponibile tramite il puls
 | Gruppo | Per organizzare i pacchetti, è possibile digitare il nome di un nuovo gruppo o selezionare un gruppo esistente |
 | Versione | Testo da utilizzare per la versione |
 | Descrizione | Breve descrizione del pacchetto che consente il markup HTML per la formattazione |
-| Miniatura  | Icona visualizzata con l&#39;elenco dei pacchetti |
+| Miniatura | Icona visualizzata con l&#39;elenco dei pacchetti |
 
 #### Miniature pacchetto {#thumbnails}
 
@@ -141,15 +139,15 @@ Hotfix ufficiale
 
 ![Miniatura hotfix ufficiale](assets/official-hotfix.png)
 
-Installazione ufficiale dell’estensione per AEM
+Installazione ufficiale dell’estensione AEM
 
 ![Miniatura ufficiale dell&#39;estensione o dell&#39;installazione di AEM](assets/official-installation.png)
 
 Service Pack ufficiale
 
-![Icona del Service Pack ufficiale dell&#39;AEM](assets/official-service-pack.png)
+![Icona ufficiale del service pack di AEM](assets/official-service-pack.png)
 
-Utilizza un’icona univoca per il pacchetto. Non riutilizzare un&#39;icona utilizzata da Adobe.
+Utilizza un’icona univoca per il pacchetto. Non riutilizzare un’icona utilizzata da Adobe.
 
 ### Filtri per pacchetti {#package-filters}
 
@@ -175,7 +173,7 @@ Durante la creazione di regole, viene definita un&#39;espressione regolare (nota
 | include | Include includerà tutti i file e le cartelle nella directory specificata che corrispondono all&#39;espressione regolare. Includi **non** includerà altri file o cartelle dal percorso radice specificato. |
 | escludi | Escludi escluderà tutti i file e le cartelle che corrispondono all’espressione regolare. |
 
-I filtri dei pacchetti vengono spesso definiti al momento della creazione del pacchetto [.](#creating-a-new-package) Tuttavia, è anche possibile modificarli in un secondo momento, dopodiché il pacchetto deve essere ricompilato per aggiornarne il contenuto in base alle nuove definizioni di filtro.
+I filtri dei pacchetti vengono spesso definiti al momento della creazione del pacchetto [.](#creating-a-new-package) Tuttavia, possono anche essere modificate in un secondo momento, dopodiché il pacchetto deve essere ricompilato per aggiornarne il contenuto in base alle nuove definizioni di filtro.
 
 >[!TIP]
 >
@@ -205,7 +203,7 @@ I filtri dei pacchetti vengono spesso definiti al momento della creazione del pa
 | Nome | Nome del provider del pacchetto | `WKND Media Group` |
 | URL | URL del provider | `https://wknd.site` |
 | Collegamento | Collegamento specifico del pacchetto alla pagina di un provider | `https://wknd.site/package/` |
-| Richiede | Definisce se esistono restrizioni durante l’installazione del pacchetto | **Amministratore** - Il pacchetto deve essere installato solo con privilegi di amministratore <br>**Riavvia** - È necessario riavviare AEM dopo l&#39;installazione del pacchetto |
+| Richiede | Definisce se esistono restrizioni durante l’installazione del pacchetto | **Amministratore** - Il pacchetto deve essere installato solo con privilegi di amministratore <br>**Riavvia** - AEM deve essere riavviato dopo l&#39;installazione del pacchetto |
 | Gestione AC | Specifica la modalità di gestione delle informazioni di controllo di accesso definite nel pacchetto durante l&#39;importazione del pacchetto | **Ignora** - Mantieni ACL nel repository <br>**Sovrascrivi** - Sovrascrivi ACL nel repository <br>**Unisci** - Unisci entrambi i set di ACL <br>**MergePreserve** - Unisci il controllo di accesso nel contenuto con quello fornito con il pacchetto aggiungendo le voci di controllo di accesso delle entità non presenti nel contenuto <br>**Cancella** - Cancella ACL |
 
 ### Schermate del pacchetto {#package-screenshots}
@@ -240,11 +238,11 @@ Puoi allegare più schermate al pacchetto per fornire una rappresentazione visiv
 
 1. Fare clic su **OK** per creare il pacchetto.
 
-1. L’AEM elenca il nuovo pacchetto all’inizio dell’elenco.
+1. AEM elenca il nuovo pacchetto nella parte superiore dell’elenco dei pacchetti.
 
    ![Nuovo pacchetto](assets/new-package.png)
 
-1. Fai clic su **Modifica** per definire il contenuto del [pacchetto.](#package-contents) Fare clic su **Salva** al termine della modifica delle impostazioni.
+1. Fai clic su **Modifica** per definire il contenuto del [pacchetto.](#package-contents) Fai clic su **Salva** dopo aver completato la modifica delle impostazioni.
 
 1. Ora puoi [Generare](#building-a-package) il tuo pacchetto.
 
@@ -260,7 +258,7 @@ Un pacchetto viene spesso creato contemporaneamente alla [creazione del pacchett
 
 1. Fare clic su **Build**. Una finestra di dialogo richiede la conferma che desideri creare il pacchetto poiché tutti i contenuti del pacchetto esistenti verranno sovrascritti.
 
-1. Fare clic su **OK**. L’AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato AEM, viene visualizzata una conferma che il pacchetto è stato creato e, quando si chiude la finestra di dialogo, vengono aggiornate le informazioni sull’elenco dei pacchetti.
+1. Fai clic su **OK**. AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato, AEM mostra una conferma che il pacchetto è stato creato e (quando si chiude la finestra di dialogo) aggiorna le informazioni sull’elenco dei pacchetti.
 
 ### Modifica di un pacchetto {#edit-package}
 
@@ -347,7 +345,7 @@ Package Share era un servizio pubblico centralizzato per la distribuzione di pac
 
 1. Fare clic su **OK** e il pacchetto selezionato viene caricato e l&#39;elenco dei pacchetti viene aggiornato di conseguenza.
 
-Il contenuto del pacchetto esiste ora in AEM, ma per renderlo disponibile per l&#39;uso, assicurati di [installare il pacchetto](#installing-packages).
+Il contenuto del pacchetto ora esiste in AEM, ma per renderlo disponibile per l&#39;uso, assicurati di [installare il pacchetto](#installing-packages).
 
 ### Convalida dei pacchetti {#validating-packages}
 
@@ -369,7 +367,7 @@ Questa convalida esamina il pacchetto per tutti i file JAR (bundle OSGi), estrae
 
 **Modalità di segnalazione**
 
-Tutte le dipendenze con versione che non possono essere soddisfatte dall’istanza AEM sono elencate nel registro attività di Gestione pacchetti.
+Tutte le dipendenze con versione che non possono essere soddisfatte dall’istanza di AEM sono elencate nel registro attività di Gestione pacchetti.
 
 **Stati di errore**
 
@@ -423,7 +421,7 @@ Utilizzando le informazioni fornite dalla convalida, i nodi interessati possono 
 
 >[!CAUTION]
 >
->Come best practice, si consiglia che i pacchetti non influiscano sugli ACL forniti dall’AEM, in quanto ciò potrebbe causare un comportamento imprevisto.
+>Come best practice, si consiglia che i pacchetti non influiscano sugli ACL forniti da AEM, in quanto ciò potrebbe causare un comportamento imprevisto.
 
 #### Esecuzione della convalida {#performing-validation}
 
@@ -448,7 +446,7 @@ La convalida deve sempre avvenire dopo il caricamento del pacchetto, ma prima de
 
 ##### Convalida del pacchetto tramite richiesta HTTP POST {#via-post-request}
 
-La richiesta POST ha il seguente formato.
+La richiesta POST assume il seguente formato.
 
 ```
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
@@ -528,9 +526,9 @@ La reinstallazione dei pacchetti esegue gli stessi passaggi in un pacchetto già
 
 ### Caricamento e installazione basati su file system {#file-system-based-upload-and-installation}
 
-Durante l’installazione dei pacchetti, puoi rinunciare completamente a Gestione pacchetti. L’AEM può rilevare i pacchetti posizionati in una posizione specifica sul file system locale del computer host e caricarli e installarli automaticamente.
+Durante l’installazione dei pacchetti, puoi rinunciare completamente a Gestione pacchetti. AEM può rilevare i pacchetti posizionati in una posizione specifica sul file system locale del computer host e caricarli e installarli automaticamente.
 
-1. Nella cartella di installazione AEM è presente una cartella `crx-quicksart` accanto al file jar e al file `license.properties`. Creare una cartella denominata `install` in `crx-quickstart` con il percorso `<aem-home>/crx-quickstart/install`.
+1. Nella cartella di installazione di AEM è presente una cartella `crx-quicksart` accanto al file jar e al file `license.properties`. Creare una cartella denominata `install` in `crx-quickstart` con il percorso `<aem-home>/crx-quickstart/install`.
 
 1. In questa cartella, aggiungi i pacchetti. Verranno caricati e installati automaticamente nell’istanza.
 
@@ -578,13 +576,13 @@ Replica il contenuto di un pacchetto per installarlo nell’istanza Publish.
 
 1. Il pacchetto viene replicato e i dettagli vengono riportati nel registro attività.
 
-## Distribuzione di software {#software-distribution}
+## Distribuzione del software {#software-distribution}
 
-I pacchetti AEM possono essere utilizzati per creare e condividere contenuti tra gli ambienti AEM.
+I pacchetti AEM possono essere utilizzati per creare e condividere contenuti tra ambienti AEM.
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com) è un servizio centralizzato progettato per semplificare la ricerca e il download di pacchetti AEM.
 
-Per ulteriori informazioni, vedere la [documentazione sulla distribuzione software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
+Per ulteriori informazioni, vedere la [documentazione sulla distribuzione software.](https://experienceleague.adobe.com/it/docs/experience-cloud/software-distribution/home)
 
 >[!NOTE]
 >

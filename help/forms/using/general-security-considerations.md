@@ -1,21 +1,24 @@
 ---
 title: Considerazioni generali sulla sicurezza per AEM Forms su JEE
+
 description: Scopri come prepararti per irrigidire l’ambiente AEM Forms su JEE.
+
+
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
+
 docset: aem65
+
 role: Admin,User
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 1%
-
+source-wordcount: '1135'
+ht-degree: 6%
 ---
-
 # Considerazioni generali sulla sicurezza per AEM Forms su JEE{#general-security-considerations-for-aem-forms-on-jee}
 
 Questo articolo fornisce informazioni introduttive utili per prepararti a rendere più solido l’ambiente AEM Forms. Include informazioni sui prerequisiti di AEM Forms per JEE, il sistema operativo, il server applicazioni e la sicurezza del database. Rivedi queste informazioni prima di continuare a bloccare l’ambiente.
@@ -62,7 +65,7 @@ Per informazioni sulla sicurezza dei sistemi operativi supportati da AEM Forms s
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Linee guida per la protezione e la protezione</a></p> </td>
   </tr>
   <tr>
-   <td>Oracle Linux® 7 Aggiornamento 3</td>
+   <td>Aggiornamento 3 di Oracle Linux® 7</td>
    <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Guida alla sicurezza per la versione 7</a><br /> </td>
   </tr>
   <tr>
@@ -141,8 +144,8 @@ Per informazioni sulla sicurezza dei database supportati da AEM Forms su JEE, co
    <td><p><a href="https://dev.mysql.com/doc/refman/5.0/en/security.html">Problemi generali di sicurezza di MySQL 5.0</a></p> <p><a href="https://dev.mysql.com/doc/refman/5.1/en/security.html">Problemi generali di sicurezza di MySQL 5.1</a></p> </td>
   </tr>
   <tr>
-   <td><p>Oracle ® 12 quater</p> </td>
-   <td><p>Consulta il capitolo sulla sicurezza nella <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">documentazione di Oracle 12g</a></p> </td>
+   <td><p>Oracle® 12c</p> </td>
+   <td><p>Consulta il capitolo Sicurezza nella <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">documentazione di Oracle 12g</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -223,7 +226,7 @@ JBoss® Application Server utilizza 8080 come porta HTTP predefinita. JBoss® di
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ## Considerazioni sulla sicurezza di AEM Forms su JEE {#aem-forms-on-jee-security-considerations}
 
@@ -233,7 +236,7 @@ Questa sezione descrive alcune AEM Forms sui problemi di sicurezza specifici di 
 
 Le credenziali e-mail archiviate dalle applicazioni non vengono crittografate prima di essere memorizzate nel database AEM Forms su JEE. Quando si configura un endpoint di servizio per l&#39;utilizzo di posta elettronica, tutte le informazioni sulla password utilizzate come parte della configurazione dell&#39;endpoint non vengono crittografate quando vengono memorizzate nel database.
 
-### Contenuto riservato per il Rights Management nel database {#sensitive-content-for-rights-management-in-the-database}
+### Contenuto riservato per Rights Management nel database {#sensitive-content-for-rights-management-in-the-database}
 
 AEM Forms su JEE utilizza il database AEM Forms su JEE per memorizzare le informazioni sensibili relative alle chiavi di documenti e altro materiale crittografico utilizzato per i documenti relativi alle policy. Proteggere il database dalle intrusioni è utile per proteggere le informazioni riservate.
 

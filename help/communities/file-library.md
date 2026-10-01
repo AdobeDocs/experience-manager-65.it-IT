@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 1%
-
+source-wordcount: '754'
+ht-degree: 2%
 ---
-
 # Funzione Libreria file{#file-library-feature}
 
 ## Introduzione {#introduction}
@@ -25,7 +23,7 @@ La funzionalità raccolta file consente ai visitatori del sito (membri della com
 
 Questa sezione della documentazione descrive:
 
-* Aggiunta della funzionalità di libreria file a un sito AEM.
+* Aggiunta della funzionalità di raccolta file a un sito AEM.
 * Impostazioni di configurazione per il componente `File Library`.
 
 ### Aggiunta di una libreria di file a una pagina {#adding-a-file-library-to-a-page}
@@ -112,7 +110,7 @@ Nella scheda **Commenti**, specifica se e come vengono visualizzati i commenti p
 
 * **Pattern menzioni interfaccia utente**
 
-  Specifica la stringa di pattern consentita in modo da assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
+  Specifica la stringa di pattern consentita in modo da assegnare tag (@mention) all’utente registrato in un post. Ad esempio, `~{{familyName}}{{givenName}}`.
 
 * **Consenti risposte concatenate**
 
@@ -162,7 +160,7 @@ Nella scheda **Moderazione utente** configura la moderazione dei commenti, se i 
 
 Ordina per
 
-Imposta come predefinito
+Imposta come predefinita
 
 ### Informazioni aggiuntive {#additional-information}
 

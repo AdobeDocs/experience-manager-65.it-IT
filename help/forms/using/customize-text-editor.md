@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 0%
-
+source-wordcount: '623'
+ht-degree: 1%
 ---
-
 # Personalizzare l’editor di testo{#customize-text-editor}
 
 ## Panoramica {#overview}
@@ -57,7 +55,7 @@ Per personalizzare i tipi di carattere modificando il file tbxeditor-config.xml,
 
       ![Sovrapponi nodo](assets/2.png)
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Fare clic su **Salva tutto**.
 
@@ -178,8 +176,8 @@ Quando si accede a un tipo di carattere nell&#39;editor di testo Gestione corris
 
 Per ulteriori informazioni sull&#39;installazione dei tipi di carattere, vedere:
 
-* [Installa o disinstalla i tipi di carattere in Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [Nozioni di base di Mac: Rubrica caratteri](https://support.apple.com/en-us/HT201749)
+* [Installare o disinstallare i tipi di carattere in Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
+* [Nozioni di base su Mac: Rubrica](https://support.apple.com/en-us/HT201749)
 
 ## Accedere alle personalizzazioni dei caratteri {#access-font-customizations}
 

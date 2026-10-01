@@ -11,11 +11,9 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 66%
-
+source-wordcount: '1015'
+ht-degree: 63%
 ---
-
 # Amministrazione delle istanze dei flussi di lavoro{#administering-workflow-instances}
 
 La console Flusso di lavoro fornisce diversi strumenti per l’amministrazione delle istanze del flusso di lavoro, in modo che vengano eseguite come previsto.
@@ -69,7 +67,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
    ![wf-96-1](assets/wf-96-1.png)
 
-1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, a seconda del caso; conferma e/o ulteriori dettagli richiesti:
+1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, a seconda del caso; verrà richiesto di confermare e/o fornire ulteriori dettagli:
 
    ![wf-97-1](assets/wf-97-1.png)
 
@@ -93,7 +91,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
 ## Correzione degli errori di un&#39;istanza del flusso di lavoro {#fixing-workflow-instance-failures}
 
-Quando un flusso di lavoro non riesce, AEM fornisce la console **Errori** per consentirti di indagare e intraprendere azioni appropriate una volta gestita la causa originale:
+Quando un flusso di lavoro non riesce, AEM fornisce la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
 Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio** e **Stack errori**.
@@ -169,7 +167,7 @@ Per configurare il servizio, è possibile utilizzare la [console Web](/help/site
 
 ## Impostazione della dimensione massima della casella in entrata {#setting-the-maximum-size-of-the-inbox}
 
-Puoi impostare la dimensione massima della casella in entrata configurando il **Servizio flusso di lavoro Adobe Granite**, utilizzando la [Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungi una configurazione OSGi al repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente viene descritta la proprietà configurata per entrambi i metodi.
+Puoi impostare la dimensione massima della casella in entrata configurando il **Servizio flusso di lavoro di Adobe Granite**, utilizzando la [Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungi una configurazione OSGi al repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente viene descritta la proprietà configurata per entrambi i metodi.
 
 >[!NOTE]
 >
@@ -189,7 +187,7 @@ I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione f
 
 Viene fornito un flag a livello di modello di flusso di lavoro per indicare che tale modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. Le variabili del flusso di lavoro non vengono rese persistenti in JCR per le istanze del flusso di lavoro dei modelli contrassegnati per l’archiviazione esterna.
 
-La proprietà *userMetadataPersistenceEnabled* viene memorizzata nel *nodo jcr:content* del modello di flusso di lavoro. Questo flag viene reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
+La proprietà *userMetadataPersistenceEnabled* è archiviata nel nodo *jcr:content* del modello di flusso di lavoro. Questo flag è persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustrazione seguente mostra come configurare il flag in un flusso di lavoro.
 

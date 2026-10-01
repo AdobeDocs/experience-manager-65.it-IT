@@ -1,5 +1,5 @@
 ---
-title: Procedura dettagliata sul sito di riferimento We.Gov FOIA
+title: Procedura dettagliata FOIA sul sito di riferimento We.Gov
 description: Consulta la procedura dettagliata sul sito di riferimento We.Gov per capire in che modo AEM Forms aiuta i governi a ricevere e comunicare le informazioni richieste da singoli individui in base al Freedom of Information Act.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,10 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 0%
-
+source-wordcount: '854'
+ht-degree: 1%
 ---
-
-# Procedura dettagliata sul sito di riferimento We.Gov FOIA {#we-gov-reference-site-foia-walkthrough}
+# Procedura dettagliata FOIA sul sito di riferimento We.Gov {#we-gov-reference-site-foia-walkthrough}
 
 ## Scenario del Freedom of Information Act per il sito di riferimento {#reference-site-freedom-of-information-act-scenario}
 
@@ -36,7 +34,7 @@ Lo scenario coinvolge i seguenti utenti tipo:
 
 ## Sarah avvia una richiesta di informazioni in base alla FOIA {#sarah-initiates-request-for-information-under-foia}
 
-Ai sensi del Freedom of Information Act, Sarah richiede una copia dei registri dell&#39;Administration for Children and Families dal 2013 al 2016. Sarah presenta tale richiesta al Dipartimento di giustizia - Ufficio delle politiche dell&#39;informazione e si dichiara altresì disposta a pagare fino a 100 USD per le spese di stampa e di spedizione.
+Ai sensi del Freedom of Information Act, Sarah richiede una copia dei registri dell&#39;Administration for Children and Families dal 2013 al 2016. Sarah presenta tale richiesta al Department of Justice - Office Of Information Policy e indica inoltre di essere in grado di pagare fino a USD 100 per le spese di stampa e di spedizione.
 
 ### Come funziona {#how-it-works}
 
@@ -50,7 +48,7 @@ Sarah fa clic su **Applica** e nella pagina del modulo di richiesta Freedom of I
 
 * **Agenzia:** Sarah specifica l&#39;agenzia a cui è stata indirizzata la richiesta come Department of Justice - Office of Information Policy.
 
-* **Pagherà fino a**: Sarah specifica di essere disposta a pagare fino a 100 USD per le spese di stampa e di spedizione.
+* **Pagherà fino a**: Sarah specifica di essere disposta a pagare fino a USD 100 per le spese di stampa e di spedizione.
 * **Descrivere la richiesta in dettaglio**: Sarah specifica &quot;Richiesta di copia dei registri dei casi relativi all&#39;amministrazione per figli e famiglie per gli anni fiscali dal 2013 al 2016&quot;.
 
 ![Richiesta della copia dei registri dei casi relativi all&#39;amministrazione per figli e famiglie per gli anni fiscali dal 2013 al 2016](assets/sarahfiosform.png)
@@ -65,7 +63,7 @@ In qualsiasi momento, Sarah può selezionare **Salva** per salvare una bozza del
 
 ## John Jacobs riceve e approva la richiesta {#john-jacobs-receives-and-approves-the-application}
 
-John Jacobs riceve la richiesta e la indirizza alla persona giusta. La casella in entrata AEM consente a John di visualizzare tutte le domande inviate in un’unica posizione.
+John Jacobs riceve la richiesta e la indirizza alla persona giusta. Casella in entrata AEM consente a John di visualizzare tutte le applicazioni inviate in un’unica posizione.
 
 ### Come funziona {#how-it-works-1}
 
@@ -73,7 +71,7 @@ Quando Sarah compila e invia l&#39;applicazione FOIA, un record dell&#39;applica
 
 ### Vedi tu stesso {#see-it-yourself-1}
 
-Puoi accedere alla casella in entrata AEM all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata dell’AEM, utilizzando jjacobs/password come nome utente/password per John Jacobs, e controlla l’applicazione FOIA. Per informazioni sull&#39;utilizzo della Posta in arrivo AEM per le attività del flusso di lavoro incentrate sui moduli, vedere [Gestione delle applicazioni e delle attività Forms nella Posta in arrivo AEM](/help/forms/using/manage-applications-inbox.md).
+Puoi accedere alla casella in entrata di AEM all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata di AEM utilizzando jjacobs/password come nome utente/password per John Jacobs e controlla l’applicazione FOIA. Per informazioni sull&#39;utilizzo della Posta in arrivo di AEM per le attività del flusso di lavoro incentrate sui moduli, vedere [Gestione delle applicazioni e delle attività di Forms nella Posta in arrivo di AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -95,11 +93,11 @@ Dopo che John Jacobs compila le informazioni richieste e approva la richiesta di
 
 ### Come funziona {#how-it-works-2}
 
-Quando John Jacobs approva la richiesta FOIA, viene creato un PDF o un documento di record dell’applicazione che viene inviato alla casella in entrata di Gloria Rios. Gloria può visualizzare la richiesta inviata e approvarla o rifiutarla.
+Quando John Jacobs approva la richiesta FOIA, viene creato un PDF o un documento di record dell’applicazione e inviato alla casella in entrata di Gloria Rios. Gloria può visualizzare la richiesta inviata e approvarla o rifiutarla.
 
 ### Vedi tu stesso {#see-for-yourself}
 
-Puoi accedere alla casella in entrata AEM all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata dell’AEM utilizzando grios/password come nome utente/password per Gloria Rios e controlla la richiesta FOIS.
+Puoi accedere alla casella in entrata di AEM all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata di AEM utilizzando grios/password come nome utente/password per Gloria Rios e controlla la richiesta FOIS.
 
 Gloria apre la richiesta ed esamina i dettagli della richiesta FOIA. Dopo aver esaminato i dettagli della richiesta e verificato la fattibilità di fornire i documenti richiesti, Gloria approva la richiesta.
 

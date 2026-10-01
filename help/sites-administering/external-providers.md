@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 1%
-
+source-wordcount: '451'
+ht-degree: 3%
 ---
-
 
 # Analytics con provider esterni {#analytics-with-external-providers}
 
@@ -67,14 +65,14 @@ Tali snippet consentono la raccolta dei dati e la generazione dei rapporti. I da
 Per la configurazione di base:
 
 1. Apri la console **Strumenti**.
-1. Dal riquadro di sinistra, espandere **Configurazioni Cloud Service**.
+1. Dal riquadro di sinistra, espandere **Configurazioni servizi cloud**.
 1. Fai doppio clic su **Frammento generico di Analytics** per aprire la pagina:
 
    ![Snippet generico di analisi](assets/analytics_genericoverview.png)
 
 1. Fate clic su + per aggiungere una nuova configurazione utilizzando la finestra di dialogo. Come minimo, assegna un nome, ad esempio Google Analytics:
 
-   ![Crea configurazione](assets/analytics_addconfig.png)
+   ![Creare una configurazione](assets/analytics_addconfig.png)
 
 1. Fai clic su **Crea**. Viene visualizzata immediatamente la finestra di dialogo dello snippet. Incolla lo snippet di JavaScript appropriato nel campo:
 
@@ -87,13 +85,13 @@ Per la configurazione di base:
 Dopo aver creato la configurazione del servizio, è necessario configurare le pagine richieste per utilizzarla:
 
 1. Passa alla pagina.
-1. Apri **Proprietà pagina** dalla barra laterale, quindi la scheda **Cloud Service**.
+1. Apri **Proprietà pagina** dalla barra laterale, quindi la scheda **Servizi cloud**.
 1. Fai clic su **Aggiungi servizio**, quindi seleziona il servizio richiesto. Ad esempio, il **frammento generico di Analytics**:
 
    ![Aggiunta di un servizio cloud](assets/analytics_selectservice.png)
 
 1. Fare clic su **OK** per salvare.
-1. Sei tornato alla scheda **Cloud Service**. Lo snippet **Generic Analytics** è ora elencato con il messaggio `Configuration reference missing`. Utilizza l’elenco a discesa per selezionare la tua istanza di servizio specifica. Ad esempio, google-analytics:
+1. Sei tornato alla scheda **Servizi cloud**. Lo snippet **Generic Analytics** è ora elencato con il messaggio `Configuration reference missing`. Utilizza l’elenco a discesa per selezionare la tua istanza di servizio specifica. Ad esempio, google-analytics:
 
    ![Aggiunta della configurazione del servizio cloud](assets/analytics_selectspecificservice.png)
 

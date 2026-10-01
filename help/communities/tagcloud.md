@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '579'
 ht-degree: 1%
-
 ---
-
 # Utilizzo di Tag cloud per social network {#using-social-tag-cloud}
 
 ## Introduzione {#introduction}
@@ -53,8 +51,8 @@ Nella scheda **[!UICONTROL Tag cloud per social network]**, specifica i tag da v
 * **[!UICONTROL Tag per social network da visualizzare]**
 Identifica i tag UGC da visualizzare. Le opzioni di pull-down sono:
 
-   * `From page and child pages`
-   * `All tags`
+  * `From page and child pages`
+  * `All tags`
 
   Il valore predefinito è `From page and child pages`, dove &quot;page&quot; fa riferimento all&#39;impostazione **Page** riportata di seguito.
 
@@ -84,8 +82,8 @@ Utilizzando la scheda **[!UICONTROL Tag Cloud per social network (Progettazione)
 
   Ad esempio:
 
-   * Selezionato: `Geometrixx Media: Gadgets / Cars`
-   * Deselezionato: `Cars`
+  * Selezionato: `Geometrixx Media: Gadgets / Cars`
+  * Deselezionato: `Cars`
 
   Non c’è differenza per un tag semplice.
 
@@ -103,8 +101,8 @@ Utilizzando la scheda **[!UICONTROL Tag Cloud per social network (Progettazione)
 
   `Geometrixx Media (the namespace)`, `Gadgets` e `Cars`
 
-   * Spunta: vengono visualizzati solo `Cars`, se applicati.
-   * Deselezionato: `Geometrixx Media`, `Gadgets` e `Cars` sono visualizzati, se applicati.
+  * Spunta: vengono visualizzati solo `Cars`, se applicati.
+  * Deselezionato: `Geometrixx Media`, `Gadgets` e `Cars` sono visualizzati, se applicati.
 
   Un tag semplice è un tag foglia.
 

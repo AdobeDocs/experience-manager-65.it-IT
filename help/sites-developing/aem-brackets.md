@@ -1,5 +1,5 @@
 ---
-title: Estensione parentesi AEM
+title: Estensione AEM Brackets
 description: Scopri come utilizzare l’estensione Adobe Experience Manager per Brackets.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,29 +11,27 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 2%
-
+source-wordcount: '987'
+ht-degree: 4%
 ---
-
-# Estensione parentesi AEM{#aem-brackets-extension}
+# Estensione AEM Brackets{#aem-brackets-extension}
 
 ## Panoramica {#overview}
 
-L&#39;estensione per Brackets AEM fornisce un flusso di lavoro fluido per modificare i componenti AEM e le librerie client e utilizza la potenza dell&#39;editor di codice [Brackets](https://brackets.io/), che consente l&#39;accesso ai file e ai livelli Photoshop dall&#39;interno dell&#39;editor di codice. La facile sincronizzazione fornita dall’estensione (non è richiesto alcun Maven o File Vault) aumenta l’efficienza degli sviluppatori e aiuta anche gli sviluppatori front-end con conoscenze AEM limitate a partecipare ai progetti. Questa estensione fornisce anche un po&#39; di supporto per [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), che elimina la complessità di JSP per rendere lo sviluppo dei componenti più semplice e sicuro.
+L&#39;estensione AEM Brackets offre un flusso di lavoro fluido per modificare i componenti e le librerie client di AEM e sfrutta la potenza dell&#39;editor di codice [Brackets](https://brackets.io/), che consente l&#39;accesso ai file e ai livelli di Photoshop dall&#39;interno dell&#39;editor di codice. La facile sincronizzazione fornita dall’estensione (non è richiesto Maven o File Vault) aumenta l’efficienza degli sviluppatori e aiuta gli sviluppatori front-end con conoscenze AEM limitate a partecipare ai progetti. Questa estensione fornisce anche supporto per [HTML Template Language (HTL)](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview), che elimina la complessità di JSP per rendere lo sviluppo dei componenti più semplice e sicuro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
 ### Funzioni {#features}
 
-Le caratteristiche principali dell’estensione per Brackets dell’AEM sono:
+Le caratteristiche principali dell’estensione AEM Brackets sono:
 
 * Sincronizzazione automatizzata dei file modificati con l’istanza di sviluppo AEM.
 * Sincronizzazione bidirezionale manuale di file e cartelle.
 * Sincronizzazione completa del pacchetto di contenuti del progetto.
 * Completamento del codice HTL per espressioni e `data-sly-*` istruzioni di blocco.
 
-Brackets offre inoltre molte funzioni utili per gli sviluppatori di font-end AEM:
+Inoltre, Brackets include molte funzioni utili per gli sviluppatori di font-end di AEM:
 
 * Supporto di file Photoshop per estrarre informazioni da un file PSD, come livelli, misure, colori, font, testi e così via.
 * Suggerimenti sul codice dal PSD, per riutilizzare facilmente queste informazioni estratte nel codice.
@@ -44,7 +42,7 @@ Brackets offre inoltre molte funzioni utili per gli sviluppatori di font-end AEM
 
 ### Parentesi {#brackets}
 
-L&#39;estensione per Brackets AEM supporta Brackets versione 1.0 o successiva.
+L’estensione AEM Brackets supporta la versione 1.0 o successiva di Brackets.
 
 Scarica la versione più recente di Brackets da [brackets.io](https://brackets.io/).
 
@@ -53,18 +51,18 @@ Scarica la versione più recente di Brackets da [brackets.io](https://brackets.i
 Per installare l’estensione, procedi come segue:
 
 1. Aprire Parentesi. Nel menu **File**, selezionare **Extension Manager...**
-1. Immetti **AEM** nella barra di ricerca e cerca **l&#39;estensione delle parentesi graffe AEM**.
+1. Immetti **AEM** nella barra di ricerca e cerca **l&#39;estensione AEM Brackets**.
 
    ![chlimage_1-54](assets/chlimage_1-54a.png)
 
 1. Fare clic su **Installa**.
-1. Chiudere la finestra di dialogo e l&#39;Extension Manager al termine dell&#39;installazione.
+1. Al termine dell’installazione, chiudi la finestra di dialogo e Extension Manager.
 
 ## Guida introduttiva {#getting-started}
 
 ### Il progetto Content-Package {#the-content-package-project}
 
-Una volta installata l’estensione, puoi iniziare a sviluppare componenti AEM aprendo una cartella di pacchetti di contenuti dal file system con Brackets.
+Dopo l’installazione dell’estensione, puoi iniziare a sviluppare componenti AEM aprendo una cartella di pacchetti di contenuti dal file system con Brackets.
 
 Il progetto deve contenere almeno:
 
@@ -76,13 +74,13 @@ Nel menu **File** di Brackets, scegli **Apri cartella...** e scegli la cartella 
 
 >[!NOTE]
 >
->Se non disponi di un tuo progetto con un pacchetto di contenuti, puoi provare l&#39;[Esempio HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Su GitHub, fai clic su **Scarica ZIP**, estrai i file localmente e, come indicato in precedenza, apri la cartella `jcr_root` in Brackets. Quindi segui i passaggi seguenti per configurare le **Impostazioni progetto** e infine caricare l&#39;intero pacchetto nell&#39;istanza di sviluppo AEM eseguendo un **Esporta pacchetto contenuto** come indicato più avanti nella sezione Sincronizzazione completa pacchetto contenuti.
+>Se non disponi di un tuo progetto con un pacchetto di contenuti, puoi provare l&#39;[Esempio HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Su GitHub, fai clic su **Scarica ZIP**, estrai i file localmente e, come indicato in precedenza, apri la cartella `jcr_root` in Brackets. Quindi segui i passaggi indicati di seguito per configurare le **Impostazioni progetto** e infine caricare l&#39;intero pacchetto nell&#39;istanza di sviluppo AEM eseguendo un **Esporta pacchetto contenuto** come indicato più avanti nella sezione Sincronizzazione completa pacchetto contenuti.
 >
->Dopo questi passaggi, dovresti essere in grado di accedere all&#39;URL `/content/todo.html` nell&#39;istanza di sviluppo AEM e di iniziare a modificare il codice in Brackets per vedere come, dopo aver eseguito un aggiornamento nel browser web, le modifiche sono state immediatamente sincronizzate con il server AEM.
+>Dopo questi passaggi, dovresti essere in grado di accedere all&#39;URL `/content/todo.html` nell&#39;istanza di sviluppo di AEM e di iniziare a modificare il codice in Brackets per vedere come, dopo aver eseguito un aggiornamento nel browser web, le modifiche sono state immediatamente sincronizzate con il server AEM.
 
 ### Impostazioni progetto {#project-settings}
 
-Per sincronizzare i contenuti con e da un’istanza di sviluppo AEM, devi definire le Impostazioni del progetto. Per eseguire questa operazione, vai al menu **AEM** e scegli **Impostazioni progetto...**
+Per sincronizzare i contenuti con e da un’istanza di sviluppo di AEM, devi definire le impostazioni del progetto. Per eseguire questa operazione, vai al menu **AEM** e scegli **Impostazioni progetto...**
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
@@ -95,11 +93,11 @@ Le Impostazioni progetto consentono di definire quanto segue:
 
 ## Sincronizzazione dei contenuti {#synchronizing-content}
 
-L&#39;estensione Brackets AEM fornisce i seguenti tipi di sincronizzazione del contenuto per file e cartelle consentiti dalle regole di filtro definite in `filter.xml`:
+L&#39;estensione AEM Brackets fornisce i seguenti tipi di sincronizzazione del contenuto per file e cartelle consentiti dalle regole di filtro definite in `filter.xml`:
 
 ### Sincronizzazione Automatizzata Dei File Modificati {#automated-synchronization-of-changed-files}
 
-In questo modo verranno sincronizzate solo le modifiche da Brackets all’istanza AEM, ma mai il contrario.
+In questo modo le modifiche verranno sincronizzate solo da Brackets all’istanza di AEM, ma non viceversa.
 
 ### Sincronizzazione bidirezionale manuale {#manual-bidirectional-synchronization}
 
@@ -113,13 +111,13 @@ In Esplora progetti aprire il menu contestuale facendo clic con il pulsante dest
 
 ### Sincronizzazione completa dei pacchetti di contenuti {#full-content-package-synchronization}
 
-Nel menu **AEM**, le opzioni **Esporta pacchetto contenuti** o **Importa pacchetto contenuti** consentono di sincronizzare l&#39;intero progetto con il server.
+Nel menu **AEM**, le opzioni **Esporta pacchetto contenuti** o **Importa pacchetto contenuti** ti consentono di sincronizzare l&#39;intero progetto con il server.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 
 ### Stato di sincronizzazione {#synchronization-status}
 
-L&#39;estensione per parentesi quadre AEM presenta un&#39;icona di notifica nella barra degli strumenti a destra della finestra Parentesi quadre, che indica lo stato dell&#39;ultima sincronizzazione:
+L’estensione AEM Brackets include un’icona di notifica nella barra degli strumenti a destra della finestra Brackets, che indica lo stato dell’ultima sincronizzazione:
 
 * verde - tutti i file sono stati sincronizzati correttamente
 * blu: è in corso un’operazione di sincronizzazione

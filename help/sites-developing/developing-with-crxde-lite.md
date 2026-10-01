@@ -12,35 +12,33 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 1%
-
+source-wordcount: '2116'
+ht-degree: 2%
 ---
-
 # Sviluppo con CRXDE Lite{#developing-with-crxde-lite}
 
 Questa sezione descrive come sviluppare l’applicazione Adobe Experience Manager (AEM) utilizzando CRXDE Lite.
 
 Per ulteriori informazioni sui diversi ambienti di sviluppo disponibili, consulta la documentazione della panoramica.
 
-CRXDE Lite è incorporato nell’AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite puoi creare un progetto, creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione.
-CRXDE Lite è consigliato quando non si dispone di accesso diretto al server AEM. Oppure, quando sviluppi un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java™, oppure quando non hai bisogno di un debugger dedicato, del completamento del codice e dell’evidenziazione della sintassi.
+CRXDE Lite è incorporato in AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite, puoi creare un progetto, creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione.
+CRXDE Lite è consigliato quando non hai accesso diretto al server AEM. Oppure, quando sviluppi un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java™, oppure quando non hai bisogno di un debugger dedicato, del completamento del codice e dell’evidenziazione della sintassi.
 
 >[!NOTE]
 >
->A partire dalla versione 6.5.5.0 dell&#39;AEM, l&#39;accesso anonimo alla CRXDE Liti non è più possibile.
+>A partire da AEM 6.5.5.0, l&#39;accesso anonimo a CRXDE Lite non è più possibile.
 >Gli utenti vengono reindirizzati alla schermata di accesso.
 
 
 >[!NOTE]
 >
->L&#39;Adobe consiglia di utilizzare [Strumenti per sviluppatori AEM per Eclipse](/help/sites-developing/aem-eclipse.md) e l&#39;estensione per parentesi HTL [AEM](/help/sites-developing/aem-brackets.md) durante lo sviluppo del progetto.
+>Adobe consiglia di utilizzare [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) e [AEM HTL Brackets Extension](/help/sites-developing/aem-brackets.md) durante lo sviluppo del progetto.
 
-## Guida introduttiva di CRXDE Lite {#getting-started-with-crxde-lite}
+## Guida introduttiva a CRXDE Lite {#getting-started-with-crxde-lite}
 
 Per iniziare a utilizzare CRXDE Lite, procedere come segue:
 
-1. Installare AEM.
+1. Installa AEM.
 1. Nel browser immettere `https://<host>:<port>/crx/de`. Per impostazione predefinita è `https://localhost:4502/crx/de`.
 1. Immetti **username** e **password**. Per impostazione predefinita sono `admin` e `admin`.
 
@@ -72,7 +70,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Riquadro di modifica</td>
-   <td><p>Scheda <strong>Home</strong>: consente di cercare contenuti e/o documentazione e di accedere alle risorse per sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (home page e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file nel riquadro <strong>Explorer</strong> per visualizzarne il contenuto. Ad esempio, un file .jsp o .java. Puoi quindi modificarlo e salvare le modifiche.</p> <p>Dopo aver modificato un file nel riquadro <strong>Modifica</strong>, nella barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura dell'archivio.<br /> - <strong>Ricerca/Sostituisci ...</strong>: eseguire la ricerca o la sostituzione.<br /> <br /> Fare doppio clic sulla riga di stato del riquadro <strong>Modifica</strong> per aprire la finestra di dialogo <strong>Vai alla riga</strong>, in modo da poter immettere un numero di riga specifico da utilizzare.<br /> </td>
+   <td><p>Scheda <strong>Home</strong>: consente di cercare contenuti e/o documentazione e di accedere alle risorse per sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (home page e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file nel riquadro <strong>Explorer</strong> per visualizzarne il contenuto. Ad esempio, un file .jsp o .java. Puoi quindi modificarlo e salvare le modifiche.</p> <p>Dopo aver modificato un file nel riquadro <strong>Modifica</strong>, nella barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura dell'archivio.<br /> - <strong>Ricerca/Sostituisci ...</strong>: eseguire la ricerca o la sostituzione.<br /> <br /> Fare doppio clic sulla riga di stato del riquadro <strong>Modifica</strong> per aprire la finestra di dialogo <strong>Vai alla riga</strong> in modo da poter immettere un numero di riga specifico da utilizzare.<br /> </td>
   </tr>
   <tr>
    <td>Scheda Proprietà<br /> </td>
@@ -104,14 +102,14 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Crea ...<br /> </td>
-   <td><p>Menu a discesa per creare i seguenti elementi nel nodo selezionato:<br /> </p> <p>- <strong>Nodo</strong>: nodo con tipo di nodo arbitrario<br /> </p> <p>- <strong>File</strong>: nodo nt:file e relativo sottonodo nt:resource</p> <p>- <strong>Cartella</strong>: nt:folder node</p> <p>- <strong>Modello</strong>: modello AEM</p> <p>- <strong>Componente</strong>: componente AEM</p> <p>- <strong>Finestra di dialogo</strong>: finestra di dialogo AEM</p> </td>
+   <td><p>Menu a discesa per creare i seguenti elementi nel nodo selezionato:<br /> </p> <p>- <strong>Nodo</strong>: nodo con tipo di nodo arbitrario<br /> </p> <p>- <strong>File</strong>: nodo nt:file e relativo sottonodo nt:resource</p> <p>- <strong>Cartella</strong>: nt:folder node</p> <p>- <strong>Modello</strong>: modello AEM</p> <p>- <strong>Componente</strong>: componente AEM</p> <p>- <strong>Finestra di dialogo</strong>: finestra di dialogo di AEM</p> </td>
   </tr>
   <tr>
    <td>Elimina<br /> </td>
    <td>Elimina il nodo selezionato.<br /> </td>
   </tr>
   <tr>
-   <td>Copiare</td>
+   <td>Copia</td>
    <td>Copia il nodo selezionato.<br /> </td>
   </tr>
   <tr>
@@ -132,7 +130,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Strumenti<br /> </td>
-   <td><p>Menu a discesa con i seguenti strumenti:</p> <p>- <strong>Configurazione server ...</strong>: per accedere alla console Felix.</p> <p>- <strong>Query ...</strong>: per eseguire una query nell'archivio.</p> <p>- <strong>Privilegi ...</strong>: per aprire Gestione privilegi, in cui è possibile visualizzare e aggiungere privilegi.</p> <p>- <strong>Verifica controllo dell'accesso ...</strong>: posizione in cui è possibile verificare l'autorizzazione per un determinato percorso e/o entità.</p> <p>- <strong>Esporta tipo di nodo</strong>: per esportare i tipi di nodo nel sistema come notazione cnd.</p> <p>- <strong>Importa tipo di nodo ...</strong>: per importare tipi di nodo utilizzando la notazione cnd.</p> <p>- <strong>Installare Debugger di SiteCatalyst ...</strong>: istruzioni sull'installazione di Analytics Debugger.</p> </td>
+   <td><p>Menu a discesa con i seguenti strumenti:</p> <p>- <strong>Configurazione server ...</strong>: per accedere alla console Felix.</p> <p>- <strong>Query ...</strong>: per eseguire una query nell'archivio.</p> <p>- <strong>Privilegi ...</strong>: per aprire Gestione privilegi, in cui è possibile visualizzare e aggiungere privilegi.</p> <p>- <strong>Verifica controllo dell'accesso ...</strong>: posizione in cui è possibile verificare l'autorizzazione per un determinato percorso e/o entità.</p> <p>- <strong>Esporta tipo di nodo</strong>: per esportare i tipi di nodo nel sistema come notazione cnd.</p> <p>- <strong>Importa tipo di nodo ...</strong>: per importare tipi di nodo utilizzando la notazione cnd.</p> <p>- <strong>Installare SiteCatalyst Debugger ...</strong>: istruzioni per l'installazione di Analytics Debugger.</p> </td>
   </tr>
   <tr>
    <td>Widget di accesso<br /> </td>
@@ -244,7 +242,7 @@ Per creare una proprietà con CRXDE Lite:
 
 1. Apri CRXDE Lite nel browser.
 1. Nel riquadro di spostamento selezionare il nodo in cui si desidera aggiungere la nuova proprietà.
-1. Nella scheda **Proprietà** nel riquadro inferiore, immettere **Nome**, **Tipo** e **Valore**. Fare clic su **Aggiungi**.
+1. Nella scheda **Proprietà** nel riquadro inferiore, immettere **Nome**, **Tipo** e **Valore**. Fai clic su **Aggiungi**.
 
 1. Fai clic su **Salva tutto** per salvare le modifiche sul server.
 
@@ -263,7 +261,7 @@ Per creare uno script:
 
 ## Esportazione e importazione di tipi di nodo {#exporting-and-importing-node-types}
 
-Con CRXDE Lite è possibile importare e/o esportare le definizioni dei tipi di nodo nella notazione [CND (Compact Namespace and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Con CRXDE Lite è possibile importare e/o esportare definizioni dei tipi di nodo nella notazione [CND (Compact Namespace and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Per esportare la definizione di un tipo di nodo:
 
@@ -298,7 +296,7 @@ Operazioni disponibili:
 * Fissare il messaggio alla selezione facendo clic sull&#39;icona **Fissa**.
 * Attiva o disattiva la visualizzazione dei messaggi facendo clic sull&#39;icona **Interrompi**.
 
-## Controllo accesso {#access-control}
+## Controllo degli accessi {#access-control}
 
 >[!NOTE]
 >
