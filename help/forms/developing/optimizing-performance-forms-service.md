@@ -1,22 +1,25 @@
 ---
 title: Ottimizzazione delle prestazioni del servizio Forms
+
 description: Imposta le opzioni di runtime durante il rendering di un modulo e archivia i file XDP nell’archivio per ottimizzare le prestazioni del servizio Forms.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 0%
-
+source-wordcount: '1442'
+ht-degree: 2%
 ---
-
 # Ottimizzazione delle prestazioni del servizio Forms {#optimizing-the-performance-of-theforms-service}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -73,11 +76,11 @@ Dopo che il servizio Forms esegue il rendering di un modulo, restituisce un flus
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering dei PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendering di Forms come HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendering dei moduli come HTML](/help/forms/developing/rendering-forms-html.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -157,7 +160,7 @@ Esegui il rendering di un modulo con prestazioni ottimizzate utilizzando l’API
    * Un oggetto `PDFFormRenderSpecc` che memorizza le opzioni di runtime.
    * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
    * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
-   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato eseguito il rendering.
+   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo di PDF sottoposto a rendering.
    * Oggetto `javax.xml.rpc.holders.LongHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
    * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
    * Oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.

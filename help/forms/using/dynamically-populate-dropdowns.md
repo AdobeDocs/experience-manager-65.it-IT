@@ -11,16 +11,14 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
-
+source-wordcount: '351'
+ht-degree: 3%
 ---
-
 # Compilazione dinamica di elenchi a discesa {#dynamically-populating-drop-down-lists}
 
 ## Prerequisiti {#prerequisites}
 
-* [Creazione di bundle OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [Creazione di bundle OSGi](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [Sviluppo di componenti AEM](/help/sites-developing/components.md)
 * [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md)
 * [Authoring di un modulo adattivo](../../forms/using/introduction-forms-authoring.md)
@@ -174,4 +172,4 @@ Considera uno scenario in cui desideri popolare l&#39;elenco a discesa **Stato**
 
 Il pacchetto Content che contiene un modulo adattivo di esempio (demo/AFdemo) con il codice di cui sopra implementato.
 
-[Ottieni file](assets/dropdown-demo-content-1.0.1-snapshot.zip)
+[Ottieni il file](assets/dropdown-demo-content-1.0.1-snapshot.zip)

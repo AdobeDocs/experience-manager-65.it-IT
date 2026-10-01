@@ -1,27 +1,30 @@
 ---
-title: Rendering di Forms nel client
+title: Rendering dei moduli nel client
+
 description: Ottimizza la distribuzione dei contenuti PDF e migliora la capacità del servizio Forms di gestire il carico di rete utilizzando la funzionalità di rendering lato client di Acrobat o Adobe Reader
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 0%
-
+source-wordcount: '1715'
+ht-degree: 2%
 ---
-
-# Rendering di Forms nel client {#rendering-forms-at-the-client}
+# Rendering dei moduli nel client {#rendering-forms-at-the-client}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-## Rendering di Forms nel client {#rendering-forms-at-the-client-inner}
+## Rendering dei moduli nel client {#rendering-forms-at-the-client-inner}
 
 Puoi ottimizzare la distribuzione dei contenuti PDF e migliorare la capacità del servizio Forms di gestire il carico di rete utilizzando la funzionalità di rendering lato client di Acrobat o Adobe Reader. Questo processo è noto come rendering di un modulo sul client. Per eseguire il rendering di un modulo sul client, il dispositivo client (in genere un browser web) deve utilizzare Acrobat 7.0 o Adobe Reader 7.0 o versione successiva.
 
@@ -53,17 +56,17 @@ Prima di poter eseguire a livello di programmazione un&#39;operazione API client
 
 Impostare l&#39;opzione runtime di rendering del client per eseguire il rendering di un modulo sul client impostando l&#39;opzione runtime `RenderAtClient` su `true`. In questo modo il modulo viene consegnato al dispositivo client in cui viene eseguito il rendering. Se `RenderAtClient` è `auto` (valore predefinito), la struttura del modulo determina se il rendering del modulo viene eseguito nel client. La struttura del modulo deve essere una struttura di modulo con un layout scorrevole.
 
-È possibile impostare un&#39;opzione di runtime facoltativa come `SeedPDF`. L&#39;opzione `SeedPDF` combina il contenitore PDF (documento di seed PDF) con la struttura del modulo e i dati XML. Sia la struttura del modulo che i dati XML vengono inviati ad Acrobat o Adobe Reader, dove viene eseguito il rendering del modulo. L&#39;opzione `SeedPDF` può essere utilizzata quando il computer client non dispone di tipi di carattere utilizzati nel modulo, ad esempio quando un utente finale non dispone della licenza per utilizzare un tipo di carattere che il proprietario del modulo può utilizzare con licenza.
+È possibile impostare un&#39;opzione di runtime facoltativa come `SeedPDF`. L&#39;opzione `SeedPDF` combina il contenitore PDF (documento seed PDF) con la struttura del modulo e i dati XML. Sia la struttura del modulo che i dati XML vengono inviati ad Acrobat o Adobe Reader, dove viene eseguito il rendering del modulo. L&#39;opzione `SeedPDF` può essere utilizzata quando il computer client non dispone di tipi di carattere utilizzati nel modulo, ad esempio quando un utente finale non dispone della licenza per utilizzare un tipo di carattere che il proprietario del modulo può utilizzare con licenza.
 
-È possibile utilizzare Designer per creare un semplice file di PDF dinamico da utilizzare come file di PDF seed. Per eseguire questa attività sono necessari i seguenti passaggi:
+È possibile utilizzare Designer per creare un semplice file PDF dinamico da utilizzare come file PDF di seed. Per eseguire questa attività sono necessari i seguenti passaggi:
 
-1. Determinare se è necessario incorporare i tipi di carattere nel file di PDF seed. Il file di seed PDF deve contenere i font aggiuntivi richiesti dal modulo sottoposto a rendering. Quando si incorporano font nel file di PDF seed, assicurarsi di non violare alcun contratto di licenza per i font. In Designer, è possibile determinare se è possibile incorporare legalmente i tipi di carattere. Al momento del salvataggio, se sono presenti tipi di carattere che non è possibile incorporare nel modulo, in Designer viene visualizzato un messaggio in cui sono elencati i tipi di carattere che non è possibile incorporare. Questo messaggio non viene visualizzato in Designer per i documenti statici di PDF.
-1. Se si sta creando il file di PDF seed in Designer, è consigliabile aggiungere almeno un campo di testo contenente un messaggio. Il messaggio deve essere indirizzato agli utenti delle versioni precedenti di Adobe Reader in cui si dichiara che per visualizzare il documento è necessario Acrobat 7.0 o versione successiva oppure Adobe Reader 7.0 o versione successiva.
-1. Salvare il file di seed PDF come file di dynamic PDF con l&#39;estensione PDF.
+1. Determinare se è necessario incorporare i tipi di carattere nel file di seed PDF. Il file di seed PDF deve contenere i font aggiuntivi richiesti dal modulo di cui si esegue il rendering. Quando si incorporano font nel file di seed PDF, assicurarsi di non violare alcun contratto di licenza per i font. In Designer, è possibile determinare se è possibile incorporare legalmente i tipi di carattere. Al momento del salvataggio, se sono presenti tipi di carattere che non è possibile incorporare nel modulo, in Designer viene visualizzato un messaggio in cui sono elencati i tipi di carattere che non è possibile incorporare. Questo messaggio non viene visualizzato in Designer per i documenti PDF statici.
+1. Se si sta creando il file di seed PDF in Designer, è consigliabile aggiungere almeno un campo di testo contenente un messaggio. Il messaggio deve essere indirizzato agli utenti delle versioni precedenti di Adobe Reader e indicare che per visualizzare il documento è necessario disporre di Acrobat 7.0 o versione successiva o di Adobe Reader 7.0 o versione successiva.
+1. Salvare il file di seed PDF come file PDF dinamico con l&#39;estensione PDF.
 
 >[!NOTE]
 >
->Non è necessario definire l’opzione runtime di seed PDF per eseguire il rendering di un modulo sul client. Se non specifichi un PDF di seed, il servizio Forms crea un PDF shell che non contiene oggetti COS, ma un wrapper PDF con il contenuto XDP effettivo incorporato all’interno. I passaggi descritti in questa sezione non impostano l&#39;opzione di runtime di seed PDF. Per informazioni sugli oggetti COS, consultate la guida di riferimento di Adobe PDF.
+>Non è necessario definire l’opzione di runtime seed di PDF per eseguire il rendering di un modulo sul client. Se non si specifica un valore di inizializzazione per il PDF, il servizio Forms crea un PDF della shell che non conterrà oggetti COS, ma un wrapper PDF con il contenuto XDP effettivo incorporato all&#39;interno. I passaggi descritti in questa sezione non consentono di impostare l&#39;opzione di runtime di seed PDF. Per informazioni sugli oggetti COS, consultate la guida di riferimento di Adobe PDF.
 
 **Eseguire il rendering di un modulo nel client**
 
@@ -71,7 +74,7 @@ Per eseguire il rendering di un modulo sul client, è necessario assicurarsi che
 
 **Scrivere il flusso di dati del modulo nel browser Web client**
 
-Il servizio Forms crea un flusso di dati modulo che è necessario scrivere nel browser Web client. Quando viene scritto nel browser web client, il modulo viene renderizzato da Acrobat 7.0 o Adobe Reader 7.0 o versione successiva ed è visibile all’utente.
+Il servizio Forms crea un flusso di dati modulo che è necessario scrivere nel browser Web client. Quando viene scritto nel browser Web del client, il modulo viene riprodotto da Acrobat 7.0 o Adobe Reader 7.0 o versione successiva ed è visibile all’utente.
 
 **Consulta anche**
 
@@ -83,7 +86,7 @@ Il servizio Forms crea un flusso di dati modulo che è necessario scrivere nel b
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -164,7 +167,7 @@ Esegui il rendering di un modulo sul client utilizzando l’API Forms (servizio 
    * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime necessarie per eseguire il rendering di un modulo nel client.
    * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
    * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
-   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Questo parametro viene utilizzato per memorizzare il modulo PDF di cui è stato eseguito il rendering.
+   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Questo parametro viene utilizzato per memorizzare il modulo di PDF sottoposto a rendering.
    * Oggetto `javax.xml.rpc.holders.LongHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
    * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
    * Oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.
@@ -183,6 +186,6 @@ Esegui il rendering di un modulo sul client utilizzando l’API Forms (servizio 
 
 **Consulta anche**
 
-[Rendering di Forms nel client](#rendering-forms-at-the-client)
+[Rendering dei moduli nel client](#rendering-forms-at-the-client)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

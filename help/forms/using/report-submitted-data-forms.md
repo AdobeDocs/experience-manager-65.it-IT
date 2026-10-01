@@ -1,20 +1,22 @@
 ---
 title: API per lavorare con i moduli inviati sul portale dei moduli
+
 description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
+
 feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 5%
-
+source-wordcount: '544'
+ht-degree: 8%
 ---
-
 # API per lavorare con i moduli inviati sul portale dei moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 AEM Forms fornisce API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale Forms. Inoltre, puoi pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.

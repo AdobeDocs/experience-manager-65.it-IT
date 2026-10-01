@@ -13,9 +13,7 @@ source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 0%
-
 ---
-
 # Internazionalizzazione delle stringhe dell’interfaccia utente {#internationalizing-ui-strings}
 
 Le API Java™ e JavaScript consentono di internazionalizzare le stringhe nei seguenti tipi di risorse:
@@ -169,7 +167,7 @@ Analogamente agli [hint di traduzione nell&#39;API Java™](#using-translation-h
 
 `${prop}_commentI18n`
 
-Ad esempio, un nodo `cq:page` include la proprietà jcr:title che viene localizzata. L’hint viene fornito come valore della proprietà denominata jcr:title_commentI18n.
+Ad esempio, un nodo `cq:page` include la proprietà jcr:title che è in corso di localizzazione. L&#39;hint viene fornito come valore della proprietà denominata jcr:title_commentI18n.
 
 ### Verifica della copertura dell&#39;internazionalizzazione {#testing-internationalization-coverage}
 
@@ -177,7 +175,7 @@ Verifica se hai internazionalizzato tutte le stringhe nell’interfaccia utente.
 
 `USR_*Default-String*_尠`
 
-L’immagine seguente mostra la traduzione stub per la home page dell’AEM:
+L’immagine seguente mostra la traduzione stub per la home page di AEM:
 
 ![chlimage_1](assets/chlimage_1a.jpeg)
 

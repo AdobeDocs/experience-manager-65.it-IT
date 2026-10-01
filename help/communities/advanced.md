@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1104'
 ht-degree: 1%
-
 ---
-
 # Punteggio avanzato e badge{#advanced-scoring-and-badges}
 
 ## Panoramica {#overview}
@@ -33,7 +31,7 @@ L’impostazione del punteggio avanzato è praticamente identica al punteggio di
 
 * Le regole di base e avanzate per il punteggio e il contrassegno vengono [applicate al contenuto](/help/communities/implementing-scoring.md#apply-rules-to-content) nello stesso modo.
 
-   * Le regole di base e avanzate per il punteggio e i badge possono essere applicate allo stesso contenuto.
+  * Le regole di base e avanzate per il punteggio e i badge possono essere applicate allo stesso contenuto.
 
 * [L&#39;abilitazione dei badge per i componenti](/help/communities/implementing-scoring.md#enable-badges-for-component) è generica.
 
@@ -42,14 +40,14 @@ Le differenze nell’impostazione delle regole di punteggio e badge sono:
 * Motore di punteggio avanzato configurabile
 * Regole di punteggio avanzate:
 
-   * `scoringType` impostato su `advanced`
-   * Richiede `stopwords`
+  * `scoringType` impostato su `advanced`
+  * Richiede `stopwords`
 
 * Regole di badge avanzate:
 
-   * `badgingType` impostato su `advanced`
-   * `badgingLevels` impostato su **numero di livelli esperti da assegnare**
-   * Richiede `badgingPaths` array di badge invece di soglie. La mappatura degli array punta ai badge.
+  * `badgingType` impostato su `advanced`
+  * `badgingLevels` impostato su **numero di livelli esperti da assegnare**
+  * Richiede `badgingPaths` array di badge invece di soglie. La mappatura degli array punta ai badge.
 
 >[!NOTE]
 >
@@ -66,7 +64,7 @@ Il motore di punteggio avanzato fornisce una configurazione OSGi con parametri c
   Per un argomento, specifica il verbo a cui assegnare la priorità più elevata durante il calcolo del punteggio. È possibile immettere uno o più argomenti, ma è possibile specificarne solo **un verbo per argomento**. Consulta [Argomenti e verbi](/help/communities/implementing-scoring.md#topics-and-verbs).
 Inserito come `topic,verb` con escape virgola. Ad esempio:
   `/social/forum/hbs/social/forum\,ADD`
-Il valore predefinito è impostato sul verbo ADD per i componenti QnA e forum.
+  Il valore predefinito è impostato sul verbo ADD per i componenti QnA e forum.
 
 * **Intervallo punteggio**
 
@@ -148,7 +146,7 @@ Invece di associare i punti a un’immagine del badge, è sufficiente identifica
   <tr>
    <td>scoringRules</td>
    <td>String[]</td>
-   <td><em>(Facoltativo)</em> Stringa con più valori per limitare la regola di assegnazione dei badge agli eventi di punteggio identificati da una o più regole di assegnazione dei punteggi elencate.<br /> Voce di esempio:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> L'impostazione predefinita non prevede alcuna restrizione.</td>
+   <td><em>(Facoltativo)</em> Stringa con più valori per limitare la regola di assegnazione dei badge agli eventi di punteggio identificati da una o più regole di assegnazione dei punteggi elencate.<br /> Voce di esempio:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Il valore predefinito non è una restrizione.</td>
   </tr>
  </tbody>
 </table>

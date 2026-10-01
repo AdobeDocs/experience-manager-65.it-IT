@@ -1,5 +1,5 @@
 ---
-title: Archiviazione personalizzata per il componente Bozze e invii
+title: Archiviazione personalizzata per il componente bozze e invii
 description: Scopri come personalizzare l’archiviazione dei dati utente per le bozze e gli invii.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
-
+source-wordcount: '337'
+ht-degree: 4%
 ---
-
-# Archiviazione personalizzata per il componente Bozze e invii {#custom-storage-for-drafts-and-submissions-component}
+# Archiviazione personalizzata per il componente bozze e invii {#custom-storage-for-drafts-and-submissions-component}
 
 ## Panoramica {#overview}
 
 AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza consente di mantenere un modulo work-in-progress, che puoi completare e inviare successivamente da qualsiasi dispositivo.
 
-Per impostazione predefinita, AEM Forms archivia i dati utente associati alla bozza e all&#39;invio di un modulo nel nodo `/content/forms/fp` dell&#39;istanza di Publish. Inoltre, i componenti del portale AEM Forms forniscono servizi di dati che è possibile utilizzare per personalizzare l’implementazione della memorizzazione dei dati utente per bozze e invii. Ad esempio, puoi memorizzare i dati utente in un archivio dati.
+Per impostazione predefinita, AEM Forms archivia i dati utente associati alla bozza e all&#39;invio di un modulo nel nodo `/content/forms/fp` dell&#39;istanza Publish. Inoltre, i componenti del portale AEM Forms forniscono servizi di dati che è possibile utilizzare per personalizzare l’implementazione della memorizzazione dei dati utente per bozze e invii. Ad esempio, puoi memorizzare i dati utente in un archivio dati.
 
 ## Prerequisiti  {#prerequisites}
 
@@ -97,7 +95,7 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->Il valore minimo per la lunghezza del campo ID bozza è di 26 caratteri. L&#39;Adobe consiglia di impostare la lunghezza dell&#39;ID bozza su 26 o più caratteri.
+>Il valore minimo per la lunghezza del campo ID bozza è di 26 caratteri. Adobe consiglia di impostare la lunghezza dell&#39;ID bozza su 26 o più caratteri.
 
 ## Servizio dati di invio {#submission-data-service}
 

@@ -1,21 +1,24 @@
 ---
 title: Utilizzo di moduli con codice a barre
-description: Decodificare dati da un modulo PDF o da un’immagine che contiene un codice a barre utilizzando l’API Java e l’API del servizio Web.
+
+description: Decodificare dati da un modulo di PDF o da un’immagine che contiene un codice a barre utilizzando l’API Java e l’API di servizio web.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,Barcoded Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 0%
-
+source-wordcount: '1934'
+ht-degree: 1%
 ---
-
 # Utilizzo di moduli con codice a barre {#working-with-barcoded-forms}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -24,13 +27,13 @@ ht-degree: 0%
 
 Il servizio di moduli con codice a barre automatizza l&#39;acquisizione dei dati dai moduli di compilazione e stampa e integra le informazioni acquisite nei principali sistemi IT di un&#39;organizzazione.
 
-Utilizzando il servizio Forms con codice a barre, è possibile aggiungere codici a barre unidimensionali e bidimensionali ai PDF forms interattivi. Puoi quindi pubblicare i moduli con codice a barre su un sito web o distribuirli tramite e-mail o CD. Quando un utente compila un modulo codificato a barre utilizzando Adobe Reader, Acrobat Professional o Acrobat Standard, il codice a barre viene aggiornato automaticamente per codificare i dati del modulo forniti dall’utente. L’utente può inviare il modulo elettronicamente o stamparlo su carta e inviarlo per posta, fax o mano. In seguito sarà possibile estrarre i dati forniti dall&#39;utente come parte di un flusso di lavoro automatizzato, indirizzando i dati tra i processi di approvazione e i sistemi aziendali.
+Utilizzando il servizio Forms con codice a barre, è possibile aggiungere codici a barre unidimensionali e bidimensionali a PDF forms interattivo. Puoi quindi pubblicare i moduli con codice a barre su un sito web o distribuirli tramite e-mail o CD. Quando un utente compila un modulo codificato a barre utilizzando Adobe Reader, Acrobat Professional o Acrobat Standard, il codice a barre viene aggiornato automaticamente per codificare i dati del modulo forniti dall’utente. L’utente può inviare il modulo elettronicamente o stamparlo su carta e inviarlo per posta, fax o mano. In seguito sarà possibile estrarre i dati forniti dall&#39;utente come parte di un flusso di lavoro automatizzato, indirizzando i dati tra i processi di approvazione e i sistemi aziendali.
 
 Per ulteriori informazioni sul servizio Forms con codice a barre, vedere [Riferimento ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Decodifica dei dati del modulo con codice a barre {#decoding-barcoded-form-data}
 
-Puoi utilizzare l’API del servizio Forms con codice a barre per decodificare dati da un modulo PDF o da un’immagine che contiene un codice a barre. Per decodificare i dati del modulo si intende l&#39;estrazione dei dati contenuti nel codice a barre. Prima di poter decodificare i dati da un modulo (o un’immagine) di PDF, l’utente deve inserire nel modulo i dati necessari.
+È possibile utilizzare l’API del servizio Forms con codice a barre per decodificare dati da un modulo di PDF o da un’immagine che contiene un codice a barre. Per decodificare i dati del modulo si intende l&#39;estrazione dei dati contenuti nel codice a barre. Prima che i dati possano essere decodificati da un modulo (o un’immagine) di PDF, l’utente deve compilare il modulo con i dati.
 
 >[!NOTE]
 >
@@ -38,12 +41,12 @@ Puoi utilizzare l’API del servizio Forms con codice a barre per decodificare d
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
-Per decodificare dati da un modulo PDF, effettuare le seguenti operazioni:
+Per decodificare dati da un modulo di PDF, effettuare le seguenti operazioni:
 
 1. Includi file di progetto.
 1. Crea un oggetto API formsClient con codice a barre.
-1. Ottieni un modulo PDF contenente dati con codice a barre.
-1. Decodifica i dati dal modulo PDF.
+1. Ottenere un modulo di PDF contenente dati con codice a barre.
+1. Decodificare i dati da PDF Form.
 1. Convertire i dati in un&#39;origine dati XML.
 1. Elabora i dati decodificati.
 
@@ -58,7 +61,7 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (richiesto se AEM Forms è implementato su JBoss)
 * jbossall-client.jar (obbligatorio se AEM Forms è distribuito su JBoss)
-* xercesImpl.jar (in &lt;directory di installazione>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (in &lt;directory di installazione>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\third-party)
 
 Se AEM Forms viene distribuito su un server applicazioni J2EE supportato che non è JBOSS, è necessario sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazioni J2EE in cui viene distribuito AEM Forms. Per informazioni sulla posizione di tutti i file JAR di AEM Forms, vedi [Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -66,13 +69,13 @@ Se AEM Forms viene distribuito su un server applicazioni J2EE supportato che non
 
 Prima di poter eseguire a livello di programmazione un&#39;operazione del servizio Forms codificata a barre, è necessario creare un client del servizio Forms codificato a barre. Se si utilizza l&#39;API Java, creare un oggetto `BarcodedFormsServiceClient`. Se si utilizza l&#39;API del servizio Web Forms con codice a barre, creare un oggetto `BarcodedFormsServiceService`.
 
-**Ottieni un modulo PDF contenente dati con codice a barre**
+**Ottieni un modulo di PDF contenente dati con codice a barre**
 
-Ottenere un modulo PDF contenente un codice a barre che è stato compilato con dati utente.
+Ottenere un modulo di PDF contenente un codice a barre popolato con dati utente.
 
-**Decodificare i dati dal modulo PDF**
+**Decodifica i dati dal modulo PDF**
 
-Dopo aver ottenuto un modulo PDF (o un&#39;immagine) contenente un codice a barre, è possibile decodificare i dati. Il servizio Barcoded Forms supporta i seguenti tipi di codici a barre:
+Dopo aver ottenuto un modulo (o un&#39;immagine) di PDF contenente un codice a barre, è possibile decodificare i dati. Il servizio Barcoded Forms supporta i seguenti tipi di codici a barre:
 
 * Codici a barre PDF417.
 * Codici a barre della matrice dati.
@@ -121,7 +124,7 @@ Decodificare i dati del modulo utilizzando l’API (Java) dei moduli codificati 
 
 1. Ottieni un modulo PDF contenente dati con codice a barre
 
-   * Creare un oggetto `java.io.FileInputStream` che rappresenta il modulo PDF contenente dati con codice a barre utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento PDF.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta il modulo di PDF contenente dati con codice a barre utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento di PDF.
    * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Decodificare i dati dal modulo PDF
@@ -164,7 +167,7 @@ Decodificare i dati del modulo utilizzando l’API (Java) dei moduli codificati 
 
 **Consulta anche**
 
-[Quick Start (modalità SOAP): decodifica dei dati dei moduli codificati a barre tramite l’API Java](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Quick Start (modalità SOAP): decodifica dei dati dei moduli con codice a barre tramite l’API Java](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -186,7 +189,7 @@ Decodificare i dati del modulo utilizzando l’API (servizio web) dei moduli cod
 1. Ottieni un modulo PDF contenente dati con codice a barre
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento PDF contenente un codice a barre.
-   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
+   * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore stringa che rappresenta la posizione del file del documento di PDF e la modalità di apertura del file.
    * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni della matrice di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
    * Compilare la matrice di byte con i dati di flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando la matrice di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando la relativa proprietà `binaryData` al contenuto della matrice di byte.

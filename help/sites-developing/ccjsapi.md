@@ -1,22 +1,24 @@
 ---
-title: API JavaScript ClientContext
+title: API di JavaScript per ClientContext
+
 description: Scopri l’API JavaScript per ClientContext in Adobe Experience Manager.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 feature: Context Hub,Developing,Personalization
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3125'
 ht-degree: 2%
-
 ---
-
-# API JavaScript ClientContext{#client-context-javascript-api}
+# API di JavaScript per ClientContext{#client-context-javascript-api}
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
 
@@ -131,7 +133,7 @@ Recupera l&#39;URL del servizio JSONP utilizzato da questo oggetto per recuperar
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -208,7 +210,7 @@ Rimuove i dati dell&#39;archivio di sessione e tutte le proprietà di inizializz
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -233,7 +235,7 @@ Recupera i dati dell’archivio sessione in formato JSON.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -245,7 +247,7 @@ Cancella l&#39;archivio di sessione e lo inizializza con la proprietà di inizia
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -360,7 +362,7 @@ Recupera l&#39;URL del servizio JSONP utilizzato da questo oggetto per recuperar
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -446,7 +448,7 @@ Recupera i dati dell’archivio sessione in formato JSON.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -522,7 +524,7 @@ Recupera la proprietà `STOREKEY`.
 
 **Parametri**
 
-Nessuno
+Nessuna
 
 **Restituisce**
 
@@ -550,7 +552,7 @@ Attiva l&#39;evento `persist` al completamento.
 
 **Parametri**
 
-Nessuno
+Nessuna
 
 **Restituisce**
 
@@ -617,7 +619,7 @@ Rimuove tutte le proprietà dei dati dall&#39;archivio.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -653,7 +655,7 @@ Restituisce il nome dell&#39;archivio sessione.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -690,7 +692,7 @@ Restituisce l&#39;archivio di sessione associato all&#39;oggetto corrente.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -702,7 +704,7 @@ Contrassegna l&#39;archivio come inizializzato e attiva l&#39;evento `initialize
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -714,7 +716,7 @@ Indica se l&#39;archivio sessioni è inizializzato.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -751,7 +753,7 @@ Ripristina i valori iniziali dell&#39;archivio dati. L’implementazione predefi
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
